@@ -2,11 +2,11 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/encompass/Makefile,v 1.3 2000/08/04 10:57:52 sobomax Exp $
+# $FreeBSD: ports/www/encompass/Makefile,v 1.4 2000/08/17 16:42:40 ade Exp $
 #
 
 PORTNAME=	encompass
-PORTVERSION=	0.1.2
+PORTVERSION=	0.2.0
 CATEGORIES=	www gnome
 MASTER_SITES=	http://www.geocities.com/lordzephyroth/
 
