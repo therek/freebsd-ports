@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.19 2001/03/06 13:39:39 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.20 2001/03/11 16:56:47 demon Exp $
 #
 
 PORTNAME=	kdevelop
@@ -22,6 +22,7 @@ RUN_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf \
 		ktranslator:${PORTSDIR}/devel/ktranslator \
 		kdoc:${PORTSDIR}/textproc/kdoc \
 		kiconedit:${PORTSDIR}/graphics/kdegraphics2 \
+		ark:${PORTSDIR}/misc/kdeutils2 \
 		glimpse:${PORTSDIR}/textproc/glimpse \
 		designer:${PORTSDIR}/devel/qt-designer \
 		linguist:${PORTSDIR}/devel/linguist \
