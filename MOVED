@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.566 2004/11/27 09:01:56 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.567 2004/11/28 05:18:23 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1326,3 +1326,6 @@ math/ruby-math3d||2004-11-27|deleted due to build failure
 misc/biblereader||2004-11-27|deleted due to fetch failure
 misc/grdb||2004-11-27|depended on GTK1, which is obsolete
 print/acroread|print/acroread5|2004-11-27|removed due to security problems
+java/phpeclipse_phphelp|java/phpeclipse|2004-11-28|merged
+java/phpeclipse_sql|java/phpeclipse|2004-11-28|merged
+java/phpeclipse_tidy|java/phpeclipse|2004-11-28|merged
