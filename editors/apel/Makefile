@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.20 2000/04/14 06:20:11 asami Exp $
+# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.21 2000/05/10 16:04:26 shige Exp $
 #
 
 PORTNAME=	apel-${EMACS_PORT_NAME}
@@ -38,8 +38,8 @@ ALL_TARGET?=	elc
 
 # depends on custom: emacs-19.34 or mule-19.34
 .if (${EMACS_VER} == "19.34")
-BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp/custom.el:${PORTSDIR}/editors/custom-${EMACS_PORT}
-RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp/custom.el:${PORTSDIR}/editors/custom-${EMACS_PORT}
+BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp/custom.el:${PORTSDIR}/editors/custom-${EMACS_PORT_NAME}
+RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp/custom.el:${PORTSDIR}/editors/custom-${EMACS_PORT_NAME}
 .endif
 .if defined(EMACS_PACKAGESDIR)
 BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/xemacs-packages/lisp/xemacs-base/advice.el:${PORTSDIR}/editors/xemacs-sumo-packages
