@@ -1,9 +1,9 @@
 # New ports collection makefile for:	apel for xemacs-mule
-# Version required:	9.20
+# Version required:	9.22
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.7 1999/09/10 15:35:39 shige Exp $
+# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.8 1999/09/18 10:04:08 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
