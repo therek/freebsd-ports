@@ -2,7 +2,7 @@
 # Date created:				25 Jan 2000
 # Whom:					mike@fate.com
 #
-# $FreeBSD: ports/security/pgp6/Makefile,v 1.37 2001/01/16 17:32:20 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgp
@@ -27,6 +27,8 @@ USE_GMAKE=	yes
 RESTRICTED=	"Crypto"
 
 MAN1=		pgp.1
+
+LATEST_LINK=	pgp6
 
 # the distfile is actually a tar of three compressed tars and their
 # signatures
