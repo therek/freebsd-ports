@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.25 2001/03/01 06:37:57 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.26 2001/04/11 15:43:44 kevlo Exp $
 #
 
 PORTNAME=	Image-Size
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Image
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tolid@plab.ku.dk
 
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS=	PREFIX=${PREFIX}
