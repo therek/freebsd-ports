@@ -3,7 +3,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.34 1999/08/31 06:51:53 mharo Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.35 1999/10/08 17:17:34 sada Exp $
 #
 
 DISTNAME?=	netscape-3.04
@@ -42,8 +42,9 @@ pre-install:
 
 post-install:
 .if defined(USE_128BIT)
-	cd ${WRKDIR}/${FORTIFY} && \
-		(${ECHO} yes ; ${ECHO} no ; ${ECHO} no) | ./Fortify.sh ${PREFIX}/lib/netscape/netscape.bin
+	cd ${WRKDIR}/${FORTIFY} \
+	&& (${ECHO}; ${ECHO} yes; ${ECHO} no; ${ECHO} no) \
+	| ./Fortify.sh ${PREFIX}/lib/netscape/netscape.bin
 .endif
 	@${CAT} ${PKGDIR}/DESCR
 

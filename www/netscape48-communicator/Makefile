@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.51 1999/10/08 17:17:35 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.52 1999/10/09 15:51:21 sada Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -89,9 +89,9 @@ do-install:
 	tar zxf ${DISTDIR}/${AUTOADMIN} -C ${NDIR}
 .endif
 .if defined(USE_128BIT) && !defined(NO_FORTIFY)
-	cd ${WRKDIR}/${FORTIFY} && \
-		(${ECHO} yes ; ${ECHO} no ; ${ECHO} no) \
-		| ./Fortify.sh ${NDIR}/${BROWSER}-${BROWSER_VER}.bin
+	cd ${WRKDIR}/${FORTIFY} \
+	&& (${ECHO}; ${ECHO} yes; ${ECHO} no; ${ECHO} no) \
+	| ./Fortify.sh ${NDIR}/${BROWSER}-${BROWSER_VER}.bin
 .endif
 	${CHOWN} -R root:wheel ${NDIR}
 
