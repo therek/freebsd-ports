@@ -2,7 +2,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.21 2000/04/30 20:01:40 steve Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.22 2000/07/07 19:27:24 steve Exp $
 #
 
 PORTNAME=	stunnel
@@ -17,7 +17,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/run

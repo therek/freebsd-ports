@@ -2,7 +2,7 @@
 # Date created:			16 Aug 1999
 # Whom:				Patrick Bihan-Faou <patrick@mindstep.com>
 #
-# $FreeBSD: ports/net/pipsecd/Makefile,v 1.7 2000/02/06 22:11:33 kris Exp $
+# $FreeBSD: ports/net/pipsecd/Makefile,v 1.8 2000/04/09 18:13:06 cpiazza Exp $
 #
 
 PORTNAME=	pipsecd
@@ -14,7 +14,7 @@ DISTNAME=	pipsec-19991014
 
 MAINTAINER=	patrick@mindstep.com
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 ALL_TARGET=	pipsecd
 

@@ -2,7 +2,7 @@
 # Date created:		4 July 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/security/racoon/Makefile,v 1.2 2000/07/18 02:36:27 sumikawa Exp $
+# $FreeBSD: ports/security/racoon/Makefile,v 1.3 2000/07/19 05:29:36 sumikawa Exp $
 #
 
 PORTNAME=	racoon
@@ -16,7 +16,7 @@ MAINTAINER=	sumikawa@FreeBSD.org
 BROKEN=		"You must upgrade the OS"
 .endif
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/racoon
 GNU_CONFIGURE=	yes

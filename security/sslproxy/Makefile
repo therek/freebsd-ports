@@ -2,7 +2,7 @@
 # Date created:		11 February 1999
 # Whom:			Alex Le Heux
 #
-# $FreeBSD: ports/security/sslproxy/Makefile,v 1.8 2000/04/09 18:30:34 cpiazza Exp $
+# $FreeBSD: ports/security/sslproxy/Makefile,v 1.9 2000/04/21 08:19:05 mharo Exp $
 #
 
 PORTNAME=	sslproxy
@@ -13,7 +13,7 @@ DISTNAME=	sslproxy.2000_Jan_29
 
 MAINTAINER=	alexlh@funk.org
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sslproxy ${PREFIX}/bin/sslproxy

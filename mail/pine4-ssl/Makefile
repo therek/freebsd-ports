@@ -2,7 +2,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.16 2000/02/10 07:29:39 kris Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.17 2000/04/13 20:00:28 cpiazza Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -33,19 +33,12 @@ FILESDIR=	${.CURDIR}/files
 
 EXTRA_PATCHES=	${FILESDIR}/extrapatch-*
 
-USE_OPENSSL=	RSA
-
-.include <bsd.port.pre.mk>
+USE_OPENSSL=	YES
 
 post-extract:
 	( cd ${WRKSRC} ; tar xfz ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} )
 
 do-build:
-.if defined(OPENSSL_RSAREF)
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl RSAREF=yes)
-.else
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl)
-.endif
 
-PRE_MK_INCLUDED=	yes
 .include "${MASTERDIR}/Makefile"

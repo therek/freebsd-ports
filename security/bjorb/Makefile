@@ -2,7 +2,7 @@
 # Date created:		May 16, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/security/bjorb/Makefile,v 1.12 2000/04/09 18:29:23 cpiazza Exp $
+# $FreeBSD: ports/security/bjorb/Makefile,v 1.13 2000/06/02 03:18:37 will Exp $
 #
 
 PORTNAME=	bjorb
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.hitachi-ms.co.jp/pub/bjorb/
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 .if !defined(BATCH)
 INSTALL_TARGET=		install certificate

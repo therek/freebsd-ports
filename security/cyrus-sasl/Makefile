@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.12 2000/08/12 19:14:49 nbm Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.13 2000/09/19 02:59:24 ade Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -16,7 +16,7 @@ MASTER_SITE_SUBDIR=	stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail
 
 MAINTAINER=	hetzels@westbend.net
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 INSTALLS_SHLIB=	yes
 

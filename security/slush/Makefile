@@ -2,7 +2,7 @@
 # Date created:			  Sun May 3, 1999
 # Whom:                 	shipley@dis.org
 #
-# $FreeBSD: ports/security/slush/Makefile,v 1.8 2000/04/21 08:18:58 mharo Exp $
+# $FreeBSD: ports/security/slush/Makefile,v 1.9 2000/06/02 03:18:45 will Exp $
 #
 
 PORTNAME=	slush
@@ -15,7 +15,7 @@ MAINTAINER=	shipley@dis.org
 
 GNU_CONFIGURE=	yes
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} <= 300000

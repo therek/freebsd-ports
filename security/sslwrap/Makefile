@@ -2,7 +2,7 @@
 # Date created:		1999 november 7.
 # Whom:			Zahemszky, Gabor <ZGabor at CoDe dot HU>
 #
-# $FreeBSD: ports/security/sslwrap/Makefile,v 1.4 2000/02/06 21:58:20 kris Exp $
+# $FreeBSD: ports/security/sslwrap/Makefile,v 1.5 2000/04/09 18:30:35 cpiazza Exp $
 #
 
 PORTNAME=	sslwrap
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ZGabor@CoDe.HU
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 WRKSRC=		${WRKDIR}/sslwrap205
 

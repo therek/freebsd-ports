@@ -2,7 +2,7 @@
 # Date created:         7 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.13 2000/02/25 10:11:30 peter Exp $
+# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.14 2000/04/08 23:17:45 mharo Exp $
 #
 
 PORTNAME=	hpack
@@ -13,7 +13,6 @@ DISTNAME=	hpack79src
 
 MAINTAINER=	ache@FreeBSD.org
 
-RESTRICTED=	"Using this code inside USA will violate RSA patents"
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	freebsd

@@ -2,7 +2,7 @@
 # Date created:		Mar 29, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.13 2000/02/06 22:09:04 kris Exp $
+# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.14 2000/04/09 18:10:02 cpiazza Exp $
 
 PORTNAME=		SSLtelnet
 PORTVERSION=		0.13
@@ -11,7 +11,7 @@ MASTER_SITES=		ftp://ftp.psy.uq.oz.au/pub/Crypto/SSLapps/
 
 MAINTAINER=		issei@jp.FreeBSD.org
 
-USE_OPENSSL=   RSA
+USE_OPENSSL=		YES
 
 .if !defined(BATCH)
 INSTALL_TARGET=		install certificate

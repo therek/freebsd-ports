@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.95 2000/08/26 09:46:47 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.96 2000/08/29 01:32:15 obrien Exp $
 #
 
 PORTNAME=	mutt
@@ -50,7 +50,7 @@ LIB_DEPENDS+=	ncurses.4:${PORTSDIR}/devel/ncurses
 CFLAGS+=	-I${PREFIX}/include/ncurses
 .endif
 .if defined(WITH_SSL)
-USE_OPENSSL=    RSA
+USE_OPENSSL=    YES
 .endif
 .if defined(WITH_DOCS)
 BUILD_DEPENDS+=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat

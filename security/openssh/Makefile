@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.52 2000/06/02 03:18:41 will Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.53 2000/06/27 21:30:34 green Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -16,14 +16,11 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	green@FreeBSD.org
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 
 .include <bsd.port.pre.mk>
 
 CRYPTOLIBS=	-L${OPENSSLLIB} -lcrypto
-.if defined(OPENSSL_RSAREF)
-CRYPTOLIBS+=	-lRSAglue -L${LOCALBASE}/lib -lrsaref
-.endif
 # Here, MANDIR is concetenated to DESTDIR which all forms the man install dir...
 MAKE_ENV+=	DESTDIR=${PREFIX} MANDIR=/man/man CRYPTOLIBS="${CRYPTOLIBS}"
 .if ${OSVERSION} < 400014

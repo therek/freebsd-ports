@@ -2,7 +2,7 @@
 # Date created:                         02 September 1999
 # Whom:                                 se
 #
-# $FreeBSD: ports/security/keynote/Makefile,v 1.5 2000/04/21 08:18:26 mharo Exp $
+# $FreeBSD: ports/security/keynote/Makefile,v 1.6 2000/04/30 08:13:56 kris Exp $
 #
 
 PORTNAME=	keynote
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.cis.upenn.edu/~angelos/Code/
 
 MAINTAINER=	kris@FreeBSD.org
 
-USE_OPENSSL=	RSA
+USE_OPENSSL=	YES
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.pre.mk>

@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			Greg Hewgill <greg@hewgill.com>
 #
-# $FreeBSD: ports/security/zebedee/Makefile,v 1.4 2000/04/09 18:30:47 cpiazza Exp $
+# $FreeBSD: ports/security/zebedee/Makefile,v 1.5 2000/04/21 08:19:15 mharo Exp $
 #
 
 PORTNAME=	zebedee
@@ -15,7 +15,7 @@ MAINTAINER=	greg@hewgill.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libbz2.a:${PORTSDIR}/archivers/bzip2
 
-USE_OPENSSL=	NORSA
+USE_OPENSSL=	YES
 USE_PERL5=	yes
 
 MAN1=		zebedee.1 ftpgw.tcl.1
