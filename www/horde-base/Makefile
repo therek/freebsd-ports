@@ -3,7 +3,7 @@
 # Whom:				  Thierry Thomas (<thierry@thomas.as>)
 # N.B.: parts of this ports come from the Horde's port by NetBSD (jlam@netbsd.org)
 #
-# $FreeBSD: ports/www/horde/Makefile,v 1.2 2001/08/19 16:47:30 ijliao Exp $
+# $FreeBSD: ports/www/horde/Makefile,v 1.3 2001/09/03 22:35:25 dwcjr Exp $
 #
 
 PORTNAME=	horde
@@ -108,11 +108,11 @@ do-install:
 	@(if [ -f ${APACHE_CONF} ] ; then \
 	    (if [ ! -f ${APACHE_CONF}.beforeHorde ] ; then \
 		${ECHO} "===> Updating httpd.conf..." ; \
-		${CP} -p ${.CURDIR}/httpd.conf.phplib ${.CURDIR}/httpd.conf.phplib.orig ; \
-		${PERL} -pi -e "s:/home/httpd/html/horde:${HORDEDIR}:g" ${.CURDIR}/httpd.conf.phplib ; \
-		${PERL} -pi -e "s:/home/httpd/phplib:${PHPLIBDIR}:g" ${.CURDIR}/httpd.conf.phplib ; \
+		${CP} -p ${.CURDIR}/httpd.conf.phplib ${WRKDIR}/httpd.conf.phplib.orig ; \
+		${PERL} -pi -e "s:/home/httpd/html/horde:${HORDEDIR}:g" ${WRKDIR}/httpd.conf.phplib ; \
+		${PERL} -pi -e "s:/home/httpd/phplib:${PHPLIBDIR}:g" ${WRKDIR}/httpd.conf.phplib ; \
 		${CP} -p ${APACHE_CONF} ${APACHE_CONF}.beforeHorde ; \
-		${GREP} -qw 'phplib' ${APACHE_CONF} || ${CAT} ${.CURDIR}/httpd.conf.phplib >> ${APACHE_CONF} ; \
+		${GREP} -qw 'phplib' ${APACHE_CONF} || ${CAT} ${WRKDIR}/httpd.conf.phplib >> ${APACHE_CONF} ; \
 		${RM} ${.CURDIR}/httpd.conf.phplib ; \
 		${MV} ${.CURDIR}/httpd.conf.phplib.orig ${.CURDIR}/httpd.conf.phplib ; \
 	    fi) ; \
