@@ -2,7 +2,7 @@
 # Date created:				07 Mar 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.3 2001/06/10 15:49:47 kevlo Exp $
+# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.4 2001/06/15 13:09:30 kevlo Exp $
 #
 
 PORTNAME=	yawmppp
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.seul.org/pub/yawmppp/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 USE_GTK=	yes
@@ -32,5 +33,7 @@ pre-configure:
 pre-patch:
 	@${PERL} -pi -e "s|\@prefix\@/doc/|\@prefix\@/share/doc/|g" \
 		${WRKSRC}/Makefile.in
+	@${PERL} -pi -e 's!\/usr\/local!${PREFIX}!; \
+		s!/usr/bin!${PREFIX}/bin!' ${WRKSRC}/src/ycommon.c
 
 .include <bsd.port.mk>
