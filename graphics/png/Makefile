@@ -3,7 +3,7 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.27 2000/07/03 08:54:23 sobomax Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.28 2000/07/04 07:13:14 sobomax Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # png version number) when updating this port.  Thank you.
@@ -27,7 +27,7 @@ SHLIB_VER=	4
 MAKE_ENV=	SHLIB_VER="${SHLIB_VER}"
 PLIST_SUB=	SHLIB_VER="${SHLIB_VER}"
 
-MAN3=           libpng.4 libpngpf.3
+MAN3=           libpng.3 libpngpf.3
 MAN5=           png.5
 
 do-configure:
