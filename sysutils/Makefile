@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.216 2001/09/11 08:09:04 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -80,6 +80,7 @@
     SUBDIR += libretto-config
     SUBDIR += lmmon
     SUBDIR += log_analysis
+    SUBDIR += logmon
     SUBDIR += logrotate
     SUBDIR += logtool
     SUBDIR += lsmlib
