@@ -2,32 +2,29 @@
 # Date created:		10 Jan 2000
 # Whom:			Matthew Pounsett <mattp@conundrum.com>
 #
-# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.2 2000/01/18 00:33:24 jedgar Exp $
+# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.3 2000/04/09 19:08:25 cpiazza Exp $
 #
 
-PORTNAME=		sarah
-PORTVERSION=		0.3b
-CATEGORIES=		sysutils
-MASTER_SITES=		ftp://ftp.conundrum.com/pub/sarah/
+PORTNAME=	sarah
+PORTVERSION=	0.4b
+CATEGORIES=	sysutils
+MASTER_SITES=	ftp://ftp.conundrum.com/pub/sarah/
 
-MAINTAINER=		mattp@conundrum.com
+MAINTAINER=	mattp@conundrum.com
 
-MAN1=			sarah.1
-USE_PERL5=		yes
-NO_BUILD=		yes
+USE_PERL5=	yes
+NO_BUILD=	yes
+
+MAN1=		sarah.1
 
 do-configure:
 	@${PERL} -pi.orig -e "s|/usr/local|${PREFIX}|" ${WRKSRC}/sarah
 
 do-install:
 	cd ${WRKSRC} && \
-		${INSTALL_SCRIPT} sarah ${PREFIX}/bin
-	cd ${WRKSRC} && \
-		${INSTALL_DATA} sarah.conf.sample ${PREFIX}/etc
-	cd ${WRKSRC} && \
+		${INSTALL_SCRIPT} sarah ${PREFIX}/bin && \
+		${INSTALL_DATA} sarah.conf.sample ${PREFIX}/etc && \
 		${INSTALL_MAN} ${MAN1} ${PREFIX}/man/man1
-
-post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/sarah
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/sarah
