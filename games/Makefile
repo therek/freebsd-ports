@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.248 2000/01/23 03:05:18 jedgar Exp $
+# $FreeBSD: ports/games/Makefile,v 1.249 2000/01/24 03:35:53 jedgar Exp $
 #
 
     SUBDIR += 3dc
@@ -90,6 +90,7 @@
     SUBDIR += miscom
     SUBDIR += nethack
     SUBDIR += nethack-qt
+    SUBDIR += nethack3
     SUBDIR += netrek-BRMH-bin
     SUBDIR += netrek-COW3-bin
     SUBDIR += netris
