@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.356 2000/10/23 15:24:14 imura Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.357 2000/10/28 02:48:45 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -63,6 +63,7 @@
     SUBDIR += doxygen
     SUBDIR += dryad
     SUBDIR += elftoaout
+    SUBDIR += entity
     SUBDIR += f77flow
     SUBDIR += fastcrc
     SUBDIR += fhist
