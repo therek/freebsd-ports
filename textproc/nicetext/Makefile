@@ -3,16 +3,17 @@
 # Date created:		20 February 1998
 # Whom:			Mark Chapman <markc@ctgi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/nicetext/Makefile,v 1.4 1999/08/31 02:09:36 peter Exp $
 
 DISTNAME=	nicetext-0.9
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ctgi.net/pub/ctgi/nicetext/src/ \
-		ftp://nicetext.com/pub/nicetext/src/
+#MASTER_SITES=	ftp://ctgi.net/pub/ctgi/nicetext/src/ \
+#		ftp://nicetext.com/pub/nicetext/src/
 
 MAINTAINER=	markc@ctgi.net
 
 USE_GMAKE=	YES
+MAKE_FLAGS=	CXXFLAGS="${CXXFLAGS} -pedantic" CFLAGS="${CFLAGS} -pedantic"
 
 MAN1=		bitcp.1 dct2mstr.1 expgram.1 genmodel.1 gramtest.1 impkimmo.1 \
 		impmsc.1 impwbstr.1 listword.1 nicetext.1 nttpd.1 printint.1 \
