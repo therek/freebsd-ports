@@ -2,24 +2,26 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.20 2000/11/07 02:40:17 jeh Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.21 2000/11/07 06:56:03 dougb Exp $
 #
 
-PORTNAME=	cdrdao
-PORTVERSION=	1.1.4
-CATEGORIES=	audio
-MASTER_SITES=	ftp://cdrdao.sourceforge.net/pub/cdrdao/
-EXTRACT_SUFX=	.src.tar.gz
+PORTNAME=		cdrdao
+PORTVERSION=		1.1.4
+CATEGORIES=		audio
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	cdrdao
+EXTRACT_SUFX=           .src.tar.gz
 
-MAINTAINER=	lebel@lebel.org
+MAINTAINER=		lebel@lebel.org
 
-BUILD_DEPENDS=	antlr:${PORTSDIR}/devel/pccts\
-		dlg:${PORTSDIR}/devel/pccts
+BUILD_DEPENDS=		antlr:${PORTSDIR}/devel/pccts\
+			dlg:${PORTSDIR}/devel/pccts
 
-WRKSRC=		${WRKDIR}/cdrdao-1.1.4
+WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+
 MAN1=		cdrdao.1
 
 .include <bsd.port.pre.mk>
