@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/sympa/pkg-install,v 1.1 2003/12/09 09:07:36 demon Exp $
 #
 
 if [ "$2" != "PRE-INSTALL" ]; then
@@ -23,7 +23,7 @@ fi
 if ! pw usershow "${USER}" 2>/dev/null 1>&2; then
 	if pw useradd ${USER} -u ${UID} -g ${GROUP} -h - \
 		-s "/sbin/nologin" -d "/nonexistent" \
-		-c "Simpa Owner"; \
+		-c "Sympa Owner"; \
 	then
 		echo "Added user \"${USER}\"."
 	else
