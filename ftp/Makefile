@@ -1,7 +1,8 @@
-# $FreeBSD: ports/ftp/Makefile,v 1.6 2000/04/01 12:26:11 will Exp $
+# $FreeBSD: ports/ftp/Makefile,v 1.7 2000/05/18 16:07:57 ade Exp $
 #
 
     SUBDIR += IglooFTP
+    SUBDIR += axyftp
     SUBDIR += cftp
     SUBDIR += curl
     SUBDIR += downloader
@@ -30,7 +31,6 @@
     SUBDIR += spegla
     SUBDIR += wget
     SUBDIR += wu-ftpd
-    SUBDIR += wxftp
     SUBDIR += xrmftp
     SUBDIR += yafc
     SUBDIR += yale-tftpd
