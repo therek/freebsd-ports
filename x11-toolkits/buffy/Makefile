@@ -2,7 +2,7 @@
 # Date Created:				13 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/x11-toolkits/buffy/Makefile,v 1.1.1.1 2000/06/13 15:32:03 sobomax Exp $
 #
 
 PORTNAME=	buffy
@@ -18,7 +18,6 @@ FETCH_BEFORE_ARGS=	-b
 
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
-#USE_GMAKE=	yes
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
