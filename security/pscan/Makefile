@@ -2,12 +2,12 @@
 # Date created:				02 September 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/pscan/Makefile,v 1.2 2000/09/22 23:13:31 kris Exp $
+# $FreeBSD: ports/security/pscan/Makefile,v 1.3 2001/07/07 23:12:29 kris Exp $
 #
 
 PORTNAME=	pscan
 PORTVERSION=	1.3
-CATEGORIES=	security
+CATEGORIES=	security devel
 MASTER_SITES=	http://www.striker.ottawa.on.ca/~aland/pscan/
 DISTNAME=	${PORTNAME}
 

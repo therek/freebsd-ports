@@ -2,12 +2,12 @@
 # Date created:			  22 August 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/rats/Makefile,v 1.1 2001/08/23 09:03:03 kris Exp $
 #
 
 PORTNAME=	rats
 PORTVERSION=	1.1
-CATEGORIES=    	devel security
+CATEGORIES=	security devel
 MASTER_SITES=	http://www.securesw.com/rats/
 
 MAINTAINER=	kris@FreeBSD.org
