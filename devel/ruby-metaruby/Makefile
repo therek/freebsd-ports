@@ -2,11 +2,11 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-metaruby/Makefile,v 1.1 2001/03/08 13:09:29 knu Exp $
 #
 
 PORTNAME=	metaruby
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://hostname.2y.net/~matju/MetaRuby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
