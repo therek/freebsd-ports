@@ -2,7 +2,7 @@
 # Date created:		13 September 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/xrn/Makefile,v 1.1 2001/09/14 13:50:58 markp Exp $
 #
 
 PORTNAME=	xrn
@@ -17,6 +17,7 @@ MAINTAINER=	anders@fix.no
 USE_IMAKE=	yes
 MAN1=		xrn.1
 MANCOMPRESSED=	no
+XFREE86_HTML_MAN=	no
 
 DOCS=		COMMON-PROBLMS COPYRIGHT CREDITS ChangeLog
 
@@ -26,6 +27,7 @@ post-patch:
 
 do-install:
 	${INSTALL_MAN} ${WRKSRC}/xrn.man ${PREFIX}/man/man1/xrn.1
+	${INSTALL_MAN} ${WRKSRC}/xrn.1.html ${PREFIX}/lib/X11/doc/html/
 	${INSTALL_PROGRAM} ${WRKSRC}/xrn ${PREFIX}/bin/
 	${INSTALL_DATA}	${WRKSRC}/XRn.ad ${PREFIX}/lib/X11/app-defaults/XRn
 .if !defined(NOPORTDOCS)
