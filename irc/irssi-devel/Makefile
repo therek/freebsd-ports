@@ -2,17 +2,16 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.44 2001/03/26 16:23:55 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.45 2001/03/29 16:34:03 sobomax Exp $
 #
 
 PORTNAME=	irssi
 PORTVERSION=	0.7.98.3
+PORTREVISION=	1
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://irssi.org/files/
 
 MAINTAINER=	ports@FreeBSD.org
-
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_BZIP2=	yes
 USE_PERL5=	yes
@@ -20,7 +19,6 @@ USE_GLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-socks --with-bot --without-servertest \
 		--enable-perl-path=${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-
 CONFIGURE_ENV= LIBS="-L${LOCALBASE}/lib -lintl"
 
 .include <bsd.port.pre.mk>
