@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/sdl-devel/files/patch-src_video_Makefile.in,v 1.2 2001/01/27 19:22:02 sobomax Exp $
 
 --- src/video/Makefile.in	2001/01/21 20:10:22	1.1
 +++ src/video/Makefile.in	2001/01/21 20:10:38
