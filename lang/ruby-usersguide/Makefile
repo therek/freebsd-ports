@@ -2,7 +2,7 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.4 2000/09/11 02:40:20 knu Exp $
+# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.5 2000/09/16 08:22:46 knu Exp $
 #
 
 PORTNAME=	ruby-usersguide
@@ -15,7 +15,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 SHORTNAME=	${PORTNAME:S/usersguide/uguide/}
-VERSION?=	20000915
+VERSION?=	20000917
 
 PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
