@@ -2,13 +2,13 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.13 2000/09/29 16:09:29 kevlo Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.14 2000/10/05 07:22:28 reg Exp $
 #
 
 PORTNAME=	xhippo
-PORTVERSION=	2.7
+PORTVERSION=	2.8
 CATEGORIES=	audio
-MASTER_SITES=	http://zenchaos.netpedia.net/software/ \
+MASTER_SITES=	http://zenchaos.netpedia.net/files/ \
 		http://www.us-lot.org/~azz/xhippo/
 
 MAINTAINER=	rod@zort.on.ca
@@ -19,6 +19,7 @@ USE_XLIB=	yes
 USE_GTK=	yes
 WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
+MAKE_ARGS=	CFLAGS="${CFLAGS}"
 
 .include <bsd.port.pre.mk>
 
