@@ -2,14 +2,15 @@
 # Date created:				Wed Dec 22 18:20:05 CET 1999
 # Whom:					berend@pobox.com
 #
-# $FreeBSD: ports/lang/smalleiffel/Makefile,v 1.2 2000/04/19 12:30:39 nectar Exp $
+# $FreeBSD: ports/lang/smalleiffel/Makefile,v 1.3 2000/10/08 10:21:55 asami Exp $
 #
 
 PORTNAME=	smalleiffel
-PORTVERSION=	0.77
+PORTVERSION=	0.76
+PORTEPOCH=	1	# Version numbering is negative
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.loria.fr/pub/loria/genielog/SmallEiffel/
-DISTNAME=	se
+MASTER_SITES=	ftp://ftp.loria.fr/pub/loria/genielog/SmallEiffel/Oldies/
+DISTNAME=	se-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	berend@pobox.com
@@ -17,7 +18,7 @@ MAINTAINER=	berend@pobox.com
 WRKSRC=		${WRKDIR}/SmallEiffel
 
 # We install in this directory
-SEDIR=		${PREFIX}/${PKGNAME}
+SEDIR=		${PREFIX}/${PORTNAME}-${PORTVERSION}
 
 # We alias a directory to the installation directory
 # so it is possible to easily switch between different builds
