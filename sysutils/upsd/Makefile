@@ -2,15 +2,13 @@
 # Date created:         11 Jul 1996
 # Whom:                 alexis
 #
-# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.5 2000/01/24 04:52:59 steve Exp $
+# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.6 2000/04/09 19:08:40 cpiazza Exp $
 #
 
 PORTNAME=	upsd
 PORTVERSION=	2.0.1.6
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://www.ww.net/pub/wildwind/upsd/ \
-		http://www.cre8tivegroup.com/ \
-		ftp://ftp.sw.ru/pub/unix/upsd/
+MASTER_SITES=	ftp://ftp.rge.com/pub/admin/upsd/
 
 MAINTAINER=	ports@FreeBSD.org
 
