@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.101 2000/10/23 15:24:19 imura Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.102 2000/10/23 15:38:13 imura Exp $
 #
 
     SUBDIR += FWF
@@ -79,6 +79,7 @@
     SUBDIR += v
     SUBDIR += vdk
     SUBDIR += vdkbuilder
+    SUBDIR += whistlerk
     SUBDIR += wxgtk
     SUBDIR += xbae
     SUBDIR += xclasses
