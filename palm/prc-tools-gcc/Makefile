@@ -2,7 +2,7 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/prc-tools-gcc/Makefile,v 1.5 2000/04/28 00:30:43 kuriyama Exp $
+# $FreeBSD: ports/palm/prc-tools-gcc/Makefile,v 1.6 2001/01/19 08:12:46 kuriyama Exp $
 #
 
 PORTNAME=	prc-tools-gcc
@@ -13,8 +13,8 @@ MASTER_SITES=	http://www.palmos.com/dev/tech/tools/gcc/dist/ \
 MASTER_SITE_SUBDIR=	gcc/releases/gcc-2.95.2 gdb/releases
 DISTNAME=	prc-tools-${PORTVERSION}
 DISTFILES=	${DISTNAME}.tar.gz \
-		gdb-4.18.tar.bz2 gcc-2.95.2.tar.bz2
-EXTRACT_ONLY=	gdb-4.18.tar.bz2 gcc-2.95.2.tar.bz2
+		gdb-4.18.tar.bz2 gcc-core-2.95.2.tar.bz2 gcc-g++-2.95.2.tar.bz2
+EXTRACT_ONLY=	gdb-4.18.tar.bz2 gcc-core-2.95.2.tar.bz2 gcc-g++-2.95.2.tar.bz2
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
