@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.403 2000/09/16 04:38:17 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.404 2000/09/16 17:38:50 nsayer Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -53,7 +53,6 @@
     SUBDIR += dgd-net
     SUBDIR += dhid
     SUBDIR += dhcpconf
-    SUBDIR += dip
     SUBDIR += dlint
     SUBDIR += dnscache
     SUBDIR += dnsutl
