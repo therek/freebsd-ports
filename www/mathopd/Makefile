@@ -2,17 +2,17 @@
 # Date created:         Sun Oct 31 1999
 # Whom:                 tobez@plab.ku.dk
 #
-# $FreeBSD: ports/www/mathopd/Makefile,v 1.6 2000/06/08 09:16:07 knu Exp $
+# $FreeBSD: ports/www/mathopd/Makefile,v 1.7 2000/07/05 12:37:01 tg Exp $
 #
 
 PORTNAME=	mathopd
-PORTVERSION= 	1.3p4
+PORTVERSION= 	1.3p5
 CATEGORIES=	www
 MASTER_SITES=	http://mathop.diva.nl/dist/ \
 		ftp://ftp.prima.eu.org/pub/mirrored_files/mathop.diva.nl/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/pl/}
 
-MAINTAINER=	tobez@plab.ku.dk
+MAINTAINER=	tobez@tobez.org
 
 post-install:
 	@${INSTALL_DATA} ${FILESDIR}/mathopd.conf.sample ${PREFIX}/etc
