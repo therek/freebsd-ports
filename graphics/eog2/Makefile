@@ -2,11 +2,11 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.13 2000/08/11 15:25:26 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.14 2000/08/21 14:59:32 ade Exp $
 #
 
 PORTNAME=	eog
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/eog
