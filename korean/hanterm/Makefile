@@ -3,13 +3,13 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.9 1999/09/03 18:25:09 sada Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.10 1999/09/05 17:39:12 sada Exp $
 #
 
 DISTNAME=	hanterm-3.1.3
 PKGNAME=	ko-hanterm-3.1.3
 CATEGORIES=	korean x11
-MASTER_SITES=	http://elf.kaist.ac.kr/hanterm/pub/ \
+MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/ \
 		http://www.freebsd.org/~sada/distfiles/
 
 MAINTAINER=	cjh@kr.freebsd.org
