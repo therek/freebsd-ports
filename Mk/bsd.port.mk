@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.463 2003/08/27 04:35:39 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.464 2003/08/27 04:42:45 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1534,7 +1534,7 @@ MYSQL41_LIBVER=		14
 MYSQL_VER=	${WANT_MYSQL_VER}
 .elif defined(WITH_MYSQL_VER)
 MYSQL_VER=	${WITH_MYSQL_VER}
-.elif exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.${MYSQL_323_LIBVER})
+.elif exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.${MYSQL323_LIBVER})
 MYSQL_VER=	323
 .elif exists(${LOCALBASE}/lib/mysql/libmysqlclient.so.${MYSQL40_LIBVER})
 MYSQL_VER=	40
