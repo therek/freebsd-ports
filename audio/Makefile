@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.134 2000/06/02 06:46:46 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.135 2000/06/02 15:11:13 will Exp $
 #
 
     SUBDIR += afsp
@@ -18,6 +18,7 @@
     SUBDIR += dap
     SUBDIR += esound
     SUBDIR += extace
+    SUBDIR += gdcd
     SUBDIR += gmixer
     SUBDIR += gnapster
     SUBDIR += gnomeaudio
