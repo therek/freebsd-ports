@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.252 2004/07/13 15:35:58 eik Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.253 2004/07/19 07:32:16 eik Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -613,10 +613,9 @@ MASTER_SITE_PGSQL+= \
 	ftp://ftp.postgresql.org/pub/%SUBDIR%/
 
 MASTER_SITE_PHP+= \
-	http://www.php.net/%SUBDIR%/ \
-	http://at.php.net/%SUBDIR%/ \
-	http://au.php.net/%SUBDIR%/ \
 	http://br.php.net/%SUBDIR%/ \
+	http://cn.php.net/%SUBDIR%/ \
+	http://dk.php.net/%SUBDIR%/ \
 	http://de.php.net/%SUBDIR%/ \
 	http://es.php.net/%SUBDIR%/ \
 	http://fi.php.net/%SUBDIR%/ \
@@ -624,8 +623,10 @@ MASTER_SITE_PHP+= \
 	http://gr.php.net/%SUBDIR%/ \
 	http://it.php.net/%SUBDIR%/ \
 	http://jp.php.net/%SUBDIR%/ \
+	http://nl.php.net/%SUBDIR%/ \
 	http://se.php.net/%SUBDIR%/ \
 	http://uk.php.net/%SUBDIR%/ \
+	http://us2.php.net/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/www/php/&,}
 
 MASTER_SITE_PYTHON+= \
