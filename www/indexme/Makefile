@@ -3,13 +3,14 @@
 # Version required:	0.1
 # Whom:			Carl Johan Madestrand
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/indexme/Makefile,v 1.1.1.1 2000/01/31 23:53:59 jedgar Exp $
 #
 
 DISTNAME=	indexme
 PKGNAME=	indexme-0.1
 CATEGORIES=	www
-MASTER_SITES=	http://kyb.homepage.com/perl/
+MASTER_SITES=	ftp://ukug.uk.freebsd.org/pub/lord_cj/	\
+		http://kyb.homepage.com/perl/
 
 MAINTAINER=	calle.madestrand@norrgarden.se
 
