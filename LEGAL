@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.280 2003/05/01 16:16:04 arved Exp $
+# $FreeBSD: ports/LEGAL,v 1.281 2003/05/01 16:27:37 arved Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -291,5 +291,6 @@ xteddy-*		ports/games/xteddy	Don't sell for profit
 zh-chitex		ports/chinese/chitex	Don't sell for profit
 zh-moettf/*		ports/chinese/moettf	Contact Taiwan Ministry of
 						Education for commercial use
+zh-ntuttf/*		ports/chinese/ntuttf	No commercial use
 ztelnet-*		ports/net/ztelnet	zmodem code has 
 						restrictive copyright
