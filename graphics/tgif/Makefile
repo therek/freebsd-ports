@@ -1,12 +1,12 @@
 # New ports collection makefile for:    tgif
-# Version required:     4.1.25
+# Version required:     4.1.27
 # Date created:         30 Jan 1999
 # Whom:                 bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/graphics/tgif/Makefile,v 1.22 1999/11/26 23:12:34 billf Exp $
+# $FreeBSD: ports/graphics/tgif/Makefile,v 1.23 1999/12/06 00:32:15 cpiazza Exp $
 #
 
-DISTNAME=	tgif-4.1.25
+DISTNAME=	tgif-4.1.27
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
 		ftp://ftp.cs.ucla.edu/pub/tgif/
