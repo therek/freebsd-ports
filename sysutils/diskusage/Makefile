@@ -2,7 +2,7 @@
 # Whom:			maske
 # Date created:		23 August 1999
 #
-# $FreeBSD: ports/sysutils/diskusage/Makefile,v 1.4 2000/04/22 10:12:03 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diskusage
@@ -10,7 +10,7 @@ PORTVERSION=	1.01
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://freebsd.radioslot.com/pub/FreeBSD/distfiles/
 
-MAINTAINER=	maske@freebsd.radioslost.com
+MAINTAINER=	ports@FreeBSD.Org
 
 MAN1=		diskusage.1
 MANCOMPRESSED=	yes
