@@ -2,7 +2,7 @@
 # Date created:        22 December 2000
 # Whom:                Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD: ports/java/orion/Makefile,v 1.7 2001/05/26 22:07:43 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	orion
@@ -30,7 +30,7 @@ PORTTITLE=	Orion Server
 ORIONCTL_NAME=	orionctl
 ORIONCTL_DEST=	${PREFIX}/bin/${ORIONCTL_NAME}
 RC_SCRIPT=	${PREFIX}/etc/rc.d/${PORTNAME}.sh
-JAVA_HOME?=	${LOCALBASE}/linux-jdk1.3.0
+JAVA_HOME?=	${LOCALBASE}/linux-jdk1.3.1
 TARGET_PREFIX?=	${PREFIX}/${PKGBASE}${PORTVERSION}
 
 .include <bsd.port.pre.mk>

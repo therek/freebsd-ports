@@ -2,7 +2,7 @@
 # Date created:        22 December 2000
 # Whom:                Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD: ports/java/bugseeker/Makefile,v 1.1 2001/01/05 17:42:23 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bugseeker
@@ -16,7 +16,7 @@ PATCHFILES=	bugseeker2.sh.diff
 
 MAINTAINER=	ernst@jollem.com
 
-RUN_DEPENDS=	${LOCALBASE}/linux-jdk1.3.0/bin/java:${PORTSDIR}/java/linux-jdk13
+RUN_DEPENDS=	${LOCALBASE}/linux-jdk1.3.1/bin/java:${PORTSDIR}/java/linux-jdk13
 
 NO_BUILD=	YES
 
