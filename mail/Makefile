@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.126 2000/03/31 15:21:23 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.127 2000/04/14 23:12:59 knu Exp $
 #
 
     SUBDIR += adcomplain
@@ -32,6 +32,7 @@
     SUBDIR += hbiff
     SUBDIR += im
     SUBDIR += imap-uw
+    SUBDIR += junkfilter
     SUBDIR += kbiff
     SUBDIR += knewmail
     SUBDIR += lbdb
