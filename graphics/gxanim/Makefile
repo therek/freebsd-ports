@@ -2,14 +2,14 @@
 # Date created:         Sat Nov 5 11:43:03 PST 1994
 # Whom:                 Rod Taylor
 #
-# $FreeBSD: ports/graphics/gxanim/Makefile,v 1.2 2000/02/25 02:16:49 ade Exp $
+# $FreeBSD: ports/graphics/gxanim/Makefile,v 1.3 2000/04/14 10:46:15 asami Exp $
 #
 
 PORTNAME=	gxanim
 PORTVERSION=	0.50
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.iag.net/~aleris/ \
-		http://www.zort.on.ca/software/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	rbt@zort.on.ca
 
