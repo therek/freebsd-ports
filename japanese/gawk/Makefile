@@ -2,32 +2,32 @@
 # Date created:		5 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gawk/Makefile,v 1.19 1999/09/08 13:32:25 taoka Exp $
+# $FreeBSD: ports/japanese/gawk/Makefile,v 1.20 2000/04/11 14:13:40 knu Exp $
 #
 
 PORTNAME=	gawk
 PORTVERSION=	3.0.4
+PORTREVISION=	1
 CATEGORIES=	japanese lang
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	gawk
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g
 
-PATCH_SITES=	http://member.nifty.ne.jp/wills/program/
-PATCHFILES=	gawkmb112.diff.gz
+PATCH_SITES=	http://www.hinadori.dyn.to/~wills/program/
+PATCHFILES=	${PORTNAME}mb114.diff.gz
 PATCH_DIST_STRIP=	-p1
-FETCH_BEFORE_ARGS=	-b
 
 MAN1=		gawk.1 igawk.1
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/ja/awk
-	${INSTALL_DATA} ${WRKSRC}/OREADME.MB ${PREFIX}/share/doc/ja/awk
-	${INSTALL_DATA} ${WRKSRC}/README.MB ${PREFIX}/share/doc/ja/awk
+	${MKDIR} ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/OREADME.MB ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/README.MB ${PREFIX}/share/doc/${PKGBASE}
 .endif
 
 .include <bsd.port.mk>
