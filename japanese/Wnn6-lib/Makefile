@@ -2,14 +2,14 @@
 # Date created:		11 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.29 2001/07/07 05:53:29 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Wnn6-lib
-PORTVERSION=	98.10.28
+PORTVERSION=	2000.9.1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/Wnn6/sdk_source/
-DISTNAME=	Wnn6-SDK-sources
+DISTNAME=	Wnn6-SDK
 
 MAINTAINER=	taoka@FreeBSD.org
 
