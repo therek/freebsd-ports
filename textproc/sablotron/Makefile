@@ -2,11 +2,11 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.3 2001/02/05 16:35:11 olgeni Exp $
+# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.4 2001/02/23 03:06:25 vanilla Exp $
 #
 
 PORTNAME=	Sablot
-PORTVERSION=	0.51
+PORTVERSION=	0.52
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.gingerall.cz/sablot/
 
@@ -21,17 +21,5 @@ CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include LDFLAGS=-L${LOCALBASE}/lib
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
 USE_LIBTOOL=	yes
-
-post-patch:
-.if defined(WITH_RUSSIAN)
-	@${ECHO_MSG} "Patching for russian support..."
-	@cd ${WRKDIR} ; \
-	if ${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/rus-patch ; then \
-		${ECHO_MSG} ">> Patch applied cleanly." ; \
-	else \
-		${ECHO_MSG} ">> Patch failed to apply cleanly." ; \
-		${FALSE} ; \
-	fi
-.endif
 
 .include <bsd.port.mk>
