@@ -2,12 +2,12 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.121 2000/09/13 20:51:06 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.122 2000/11/30 03:34:09 ache Exp $
 #
 
 PORTNAME=	lynx
 PORTVERSION=    2.8.4d14
-CATEGORIES=     www #ipv6
+CATEGORIES=     www ipv6
 MASTER_SITES=   http://lynx.isc.org/current/
 DISTNAME=       ${PORTNAME}2.8.4dev.14
 
@@ -25,11 +25,11 @@ CONFIGURE_ARGS= --with-screen=ncurses --with-zlib --libdir="${L_LIB}" \
 
 .include <bsd.port.pre.mk>
 
-#.if ${OSVERSION} >= 400014
-#CONFIGURE_ARGS+=--enable-ipv6
-#.else
-#CONFIGURE_ARGS+=--disable-ipv6
-#.endif
+.if ${OSVERSION} >= 400014
+CONFIGURE_ARGS+=--enable-ipv6
+.else
+CONFIGURE_ARGS+=--disable-ipv6
+.endif
 CONFIGURE_ENV=  CC="${CC} -I${LOCALBASE}/include" LDFLAGS=-L${LOCALBASE}/lib
 MAKE_FLAGS=     helpdir=${L_HELP} docdir=${L_DOC} -f
 MAKEFILE=       makefile
