@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/glimmer/Makefile,v 1.6 2000/09/11 07:01:00 sobomax Exp $
+# $FreeBSD: ports/editors/glimmer/Makefile,v 1.7 2000/09/13 08:28:29 sobomax Exp $
 #
 
 PORTNAME=	glimmer
-PORTVERSION= 	0.9.16
+PORTVERSION= 	0.9.17
 CATEGORIES=	editors gnome python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
