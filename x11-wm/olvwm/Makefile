@@ -2,7 +2,7 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11-wm/olvwm/Makefile,v 1.23 2000/08/03 09:28:11 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	olvwm
@@ -20,6 +20,8 @@ PATCHFILES=	olvwm4.Patch01.Z \
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	green@FreeBSD.org
+
+BROKEN=		"Does not package correctly"
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
