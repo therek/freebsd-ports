@@ -2,7 +2,7 @@
 # Date created:         Oct 3, 2001
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base-7/Makefile,v 1.1 2001/10/04 03:54:21 marcel Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		linux_base
@@ -148,9 +148,12 @@ do-install:
 	done
 	@/sbin/sysctl -w ${FALLBACK_ELF_MIB}=${PREVIOUS_ELF}
 #
-# Install yp.conf as a hint to NIS users
+# Install yp.conf as a hint to NIS users and make sure there's a
+# mtab in etc, albeit an empty one. This is needed in a couple of
+# cases. Most notably staroffice6.
 #
 	${INSTALL} ${COPY} -m 644 ${FILESDIR}/yp.conf ${LINUXBASE}/etc
+	${TOUCH} ${LINUXBASE}/etc/mtab
 #
 # Finish
 #
