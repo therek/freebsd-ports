@@ -2,7 +2,7 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.30 2001/01/23 17:28:58 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.31 2001/01/24 09:43:34 sobomax Exp $
 #
 
 PORTNAME=	sdl-devel
@@ -25,10 +25,15 @@ INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	NASM="${LOCALBASE}/bin/nasm"
 CONFIGURE_ARGS=	--enable-video-aalib \
-		--enable-video-svga \
-		--enable-video-vgl
+		--enable-video-svga
 
 CFLAGS+=	-D_THREAD_SAFE
+
+.if exists(/usr/lib/libvgl.so.3)
+CONFIGURE_ARGS+=--enable-video-vgl
+.else
+CONFIGURE_ARGS+=--disable-video-vgl
+.endif
 
 .if defined(WITHOUT_GL)
 CONFIGURE_ARGS+=--disable-video-opengl
