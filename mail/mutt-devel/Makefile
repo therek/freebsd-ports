@@ -3,7 +3,7 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.127 2001/09/03 05:49:13 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mutt-devel
@@ -74,6 +74,13 @@ USE_OPENSSL=	yes
 .if defined(WITH_MUTT_HTML)
 BUILD_DEPENDS+=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
 .endif
+.if defined(WITH_MUTT_NNTP)
+.if ! exists(${LOCALBASE}/bin/inews)
+BUILD_DEPENDS+=	nn-inews:${PORTSDIR}/news/nn
+pre-configure::
+	${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-inews
+.endif
+.endif
 
 .if defined(WITH_MUTT_LOCALES_FIX)
 CONFIGURE_ARGS+=	--enable-locales-fix
@@ -122,7 +129,7 @@ post-patch::
 	 @${PERL} -pi.fbsd -e 's,/usr/bin/gpg,${LOCALBASE}/bin/gpg,g' \
 		${WRKSRC}/contrib/gpg.rc
 
-pre-configure:
+pre-configure::
 	(cd ${WRKSRC}; aclocal -I m4)
 
 .if !defined(NOPORTDOCS)
