@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.281 2000/07/13 08:16:41 kbyanc Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.282 2000/07/30 02:26:12 sada Exp $
 #
 
     SUBDIR += 221upgrade
@@ -59,6 +59,7 @@
     SUBDIR += gone
     SUBDIR += gplbp
     SUBDIR += grdb
+    SUBDIR += grub
     SUBDIR += grun
     SUBDIR += gtkfind
     SUBDIR += gtl
