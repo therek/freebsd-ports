@@ -2,7 +2,7 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.16 2001/01/28 01:29:12 clive Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.17 2001/04/02 13:20:19 kevlo Exp $
 #
 
 PORTNAME=	xhippo
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	xhippo
 
-MAINTAINER=	rod@zort.on.ca
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
