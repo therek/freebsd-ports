@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.383 2001/07/17 16:40:29 tobez Exp $
+# $FreeBSD: ports/www/Makefile,v 1.384 2001/07/19 05:59:23 markp Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -281,7 +281,7 @@
     SUBDIR += w3-4
     SUBDIR += w3c-httpd
     SUBDIR += w3m
-    SUBDIR += w3m-ssl
+    SUBDIR += w3m-image
     SUBDIR += w3mir
     SUBDIR += wb0
     SUBDIR += wcol
