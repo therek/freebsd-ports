@@ -2,7 +2,7 @@
 # Date created:                17 Sep 1999
 # Whom:                        HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/sl/Makefile,v 1.3 2000/08/11 01:23:53 will Exp $
+# $FreeBSD: ports/games/sl/Makefile,v 1.4 2001/01/16 17:30:34 sobomax Exp $
 #
 
 PORTNAME=	sl
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/sl/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	th@cis.ibaraki.ac.jp
+MAINTAINER=	cbc06942@pop06.odn.ne.jp
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 
