@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mcrypt
-# Version required:	2.2
+# Version required:	2.2.4
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.6 1999/12/25 16:01:53 nsayer Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.7 1999/12/25 18:46:42 steve Exp $
 #
 
-DISTNAME=	libmcrypt-2.2
+DISTNAME=	libmcrypt-2.2.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://argeas.cs-net.gr/pub/unix/mcrypt/ \
 		ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
