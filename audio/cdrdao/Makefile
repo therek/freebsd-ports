@@ -3,7 +3,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.7 1999/08/25 04:35:23 obrien Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.8 1999/08/29 04:45:19 cpiazza Exp $
 #
 # If You don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
@@ -22,7 +22,6 @@ BUILD_DEPENDS=		antlr:${PORTSDIR}/devel/pccts\
 
 WRKSRC=         	${WRKDIR}/cdrdao-1.1.2
 
-USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAN1=		cdrdao.1
@@ -38,9 +37,14 @@ XCDRDAO=		yes
 .endif
 
 .if defined(XCDRDAO)
+USE_NEWGCC=	yes
 LIB_DEPENDS+=		gtkmm-1.0.5:${PORTSDIR}/x11-toolkits/gtk--
 .else
 CONFIGURE_ARGS= 	--disable-gtkmmtest
+.endif
+
+.if defined(USE_NEWGCC) && ${USE_NEWGCC} == yes && ${OSVERSION} < 400004
+CFLAGS+=		-fpermissive
 .endif
 
 .if defined(DONT_USE_SCGLIB) && ${OSVERSION} > 300000
