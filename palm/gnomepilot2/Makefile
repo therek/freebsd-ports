@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnomepilot
-# Version required:	0.1.49
+# Version required:	0.1.50
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.2 2000/01/22 04:41:53 ade Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.3 2000/03/21 17:51:57 ade Exp $
 
-DISTNAME=	gnome-pilot-0.1.49
-PKGNAME=	gnomepilot-0.1.49
+DISTNAME=	gnome-pilot-0.1.50
+PKGNAME=	gnomepilot-0.1.50
 CATEGORIES=	palm comms gnome
 MASTER_SITES=	http://www.gnome.org/gnome-pilot/download/
 
