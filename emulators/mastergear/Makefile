@@ -3,7 +3,7 @@
 # Date created:        02 November 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/mastergear/Makefile,v 1.9 1999/08/25 05:49:27 obrien Exp $
+# $FreeBSD: ports/emulators/mastergear/Makefile,v 1.10 1999/10/12 06:16:55 nakai Exp $
 #
 
 DISTNAME=	MG13-FreeBSD-80x86-bin
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/SMS
+NO_WRKSUBDIR=	yes
 ONLY_FOR_ARCHS=	i386
 
 NO_BUILD=	yes
@@ -23,7 +23,9 @@ USE_X_PREFIX=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mg ${PREFIX}/bin
+.if(!defined(NOPORTDOCS))
 	@${MKDIR} ${PREFIX}/share/mastergear
-	${INSTALL_DATA} ${WRKSRC}/MG.doc ${PREFIX}/share/mastergear
+	${INSTALL_DATA} ${WRKSRC}/MG.html ${PREFIX}/share/mastergear
+.endif
 
 .include <bsd.port.mk>
