@@ -3,7 +3,7 @@
 # Date created:			  Tue Mar 25, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/fping/Makefile,v 1.10 2000/04/20 20:18:57 mharo Exp $
+# $FreeBSD: ports/net/fping/Makefile,v 1.11 2000/08/27 03:23:47 obrien Exp $
 #
 
 PORTNAME=	fping
@@ -17,6 +17,10 @@ MAINTAINER=	obrien@FreeBSD.org
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --bindir="${PREFIX}/sbin"
 MAN8=		fping.8
+
+post-patch:
+	${PERL} -pi.fbsd -e 's/fping@/${MAINTAINER:S/@/\\@/g} or fping@/g' \
+	    ${WRKSRC}/fping.c
 
 post-install:
 	@strip ${PREFIX}/sbin/fping
