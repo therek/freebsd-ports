@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.197 2001/02/21 02:25:54 clive Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.198 2001/02/26 05:17:54 steve Exp $
 #
 
     SUBDIR += abook
@@ -8,6 +8,7 @@
     SUBDIR += autorespond
     SUBDIR += balsa
     SUBDIR += bbmail
+    SUBDIR += biabam
     SUBDIR += biffer
     SUBDIR += bsmtp
     SUBDIR += bulk_mailer
