@@ -4,14 +4,13 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.8 2001/04/02 23:24:27 trevor Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.9 2001/04/10 05:23:59 trevor Exp $
 #
 
 PORTNAME=	festival
 PORTVERSION=	1.4.1
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.cstr.ed.ac.uk/pub/festival/${PORTVERSION}/ \
-		http://www.speech.cs.cmu.edu/festival/cstr/festival/${PORTVERSION}/ \
+MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/${PORTVERSION}/ \
 		ftp://ftp.leb.net/pub/blinux/${SUB} \
 		ftp://ftp.mayn.de/pub/linux/BLinux/${SUB} \
 		ftp://ftp.tuwien.ac.at/opsys/linux/blinux/${SUB}
@@ -106,16 +105,22 @@ pre-patch:
 post-patch:
 	${CP} ${FILESDIR}/top-Makefile ${WRKSRC}/Makefile
 	${CP} ${FILESDIR}/FreeBSD.mak ${SPEECHTOOLS}/config/systems/FreeBSD.mak
+.for arch in alpha ix86
 .for i in 4 5
 	${LN} -fs ${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.3.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.${i}.mak
+		${SPEECHTOOLS}/config/systems/${arch}_FreeBSD3.${i}.mak
 .endfor
+.endfor
+.for arch in alpha ix86
 .for i in 1 2 3 4 5 6 7 8 9
 	${LN} -fs ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.${i}.mak
+		${SPEECHTOOLS}/config/systems/${arch}_FreeBSD4.${i}.mak
 .endfor
+.endfor
+.for arch in alpha ix86
 	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
-		${SPEECHTOOLS}/config/systems/ix86_FreeBSD5.0.mak
+		${SPEECHTOOLS}/config/systems/${arch}_FreeBSD5.0.mak
+.endfor
 
 pre-install:
 .if defined (WITH_OGI)
