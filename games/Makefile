@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.390 2001/06/26 12:27:31 tg Exp $
+# $FreeBSD: ports/games/Makefile,v 1.391 2001/07/01 22:42:23 greid Exp $
 #
 
     SUBDIR += 0verkill
@@ -123,6 +123,7 @@
     SUBDIR += hlserver-glbwar
     SUBDIR += hlserver-heroes
     SUBDIR += hlserver-opfor
+    SUBDIR += hlserver-oz
     SUBDIR += hlserver-si
     SUBDIR += hlserver-svencoop
     SUBDIR += hlserver-wasteland
