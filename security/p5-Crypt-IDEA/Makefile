@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-IDEA/Makefile,v 1.16 2000/06/17 02:36:47 will Exp $
+# $FreeBSD: ports/security/p5-Crypt-IDEA/Makefile,v 1.17 2000/10/23 21:03:06 will Exp $
 #
 
 PORTNAME=	Crypt-IDEA
@@ -16,13 +16,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"Crypto; export-controlled"
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Crypt::IDEA.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>
