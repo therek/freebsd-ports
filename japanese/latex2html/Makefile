@@ -2,7 +2,7 @@
 # Date created:		3 Apr 1999
 # Whom:			Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD: ports/japanese/latex2html/Makefile,v 1.9 2000/07/19 00:23:51 knu Exp $
+# $FreeBSD$
 #
 # Default image format is PNG.
 # If you prefer GIF to PNG, define WITH_GIF (`make -DWITH_GIF`).
@@ -10,7 +10,7 @@
 PORTNAME=	latex2html
 PORTVERSION=	${VERSION}j${JP_VERSION}
 CATEGORIES=	japanese textproc
-MASTER_SITES=	http://www.topstudio.co.jp/~kmuto/debian/private/dists/unstable/contrib/source/
+MASTER_SITES=	http://www.topstudio.co.jp/~kmuto/debian/private/dists/stable/contrib/source/
 DISTNAME=	jlatex2html_${VERSION}+${JP_VERSION}.orig
 
 PATCH_SITES=	http://www.topstudio.co.jp/~kmuto/software/latex2html/patch/99-1/
