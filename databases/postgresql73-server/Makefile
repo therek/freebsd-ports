@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.60 2000/06/20 05:08:06 knu Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.61 2000/07/11 19:03:58 andreas Exp $
 #
 
 PORTNAME=	postgresql
@@ -21,10 +21,6 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}.base${EXTRACT_SUFX} \
 DIST_SUBDIR=	postgresql
 
 MAINTAINER=	andreas@FreeBSD.org
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN=		doesn\'t build on the alpha yet
-.endif
 
 Y2K=		http://www.postgresql.org/y2k.html
 
