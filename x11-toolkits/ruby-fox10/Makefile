@@ -2,16 +2,16 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.1 2001/03/06 14:13:50 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.2 2001/03/20 09:44:01 knu Exp $
 #
 
 PORTNAME=	fox
-PORTVERSION=	0.99.166
+PORTVERSION=	${FXRUBY_PORTVERSION}
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	fxruby
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	FXRuby-${PORTVERSION}
+DISTNAME=	${FXRUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -20,6 +20,16 @@ MAINTAINER=	knu@FreeBSD.org
 LIB_DEPENDS=	FOX.1:${PORTSDIR}/x11-toolkits/fox \
 		png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
+
+FOX_VERSION=	0.99.166
+FXRUBY_REVISION=	1
+.if defined(FXRUBY_REVISION) && !empty(FXRUBY_REVISION)
+FXRUBY_PORTVERSION=	${FOX_VERSION}.${FXRUBY_REVISION}
+FXRUBY_DISTNAME=	FXRuby-${FOX_VERSION}-${FXRUBY_REVISION}
+.else
+FXRUBY_PORTVERSION=	${FOX_VERSION}
+FXRUBY_DISTNAME=	FXRuby-${FOX_VERSION}
+.endif
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
@@ -45,7 +55,7 @@ pre-build:
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/fox
-	${INSTALL_DATA} ${WRKSRC}/../examples/* ${RUBY_EXAMPLESDIR}/fox/
+	${CP} -R ${WRKSRC}/../examples/* ${RUBY_EXAMPLESDIR}/fox/
 	${MKDIR} ${RUBY_DOCDIR}/fox
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/../${f} ${RUBY_DOCDIR}/fox/
