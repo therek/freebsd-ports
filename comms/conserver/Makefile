@@ -3,7 +3,7 @@
 # Date created:         22 November 1997
 # Whom:                 Peter Wemm <peter@netplex.com.au>
 #
-# $FreeBSD: ports/comms/conserver/Makefile,v 1.15 2000/11/11 06:34:38 obrien Exp $
+# $FreeBSD: ports/comms/conserver/Makefile,v 1.16 2000/11/23 12:03:35 obrien Exp $
 #
 
 PORTNAME=	conserver
@@ -34,8 +34,8 @@ do-build:
 	(cd ${WRKSRC}/$d && ${SETENV} ${MAKE_ENV} makeme \
 	    ${MAKE_ARGS} ${ALL_TARGET})
 .endfor
-	@${SED} -e 's:/usr/local:${PREFIX}:g'  \
-	    ${.CURDIR}/pkg-message > ${PKGMESSAGE}
+	#@${SED} -e 's:/usr/local:${PREFIX}:g'  \
+	#    ${.CURDIR}/pkg-message > ${PKGMESSAGE}
 
 do-install:
 .for d in etc/conserver etc/console etc/autologin
