@@ -2,7 +2,7 @@
 # Date created:         Mon Dec  9 09:42:37 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.14 2000/04/14 12:26:02 asami Exp $
+# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.15 2000/04/23 22:59:24 kris Exp $
 #
 
 PORTNAME=	linuxdoom
@@ -14,6 +14,8 @@ DISTNAME=	doom-${PORTVERSION}
 DISTFILES=	linux-doom-1.8.tar.gz musserver.tgz smooth-joystick4doom.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		"Linux dynamic linker problems"
 
 BUILD_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
