@@ -2,12 +2,12 @@
 # Date created:		Sun Apr 22 14:51:32 CEST 2001
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/php_doc/Makefile,v 1.1 2001/04/24 18:06:38 dirk Exp $
+# $FreeBSD: ports/lang/php_doc/Makefile,v 1.2 2001/04/29 13:31:34 dirk Exp $
 #
 
 PORTNAME=	php_doc
 PORTVERSION=	1.0
-CATEGORIES=	lang
+CATEGORIES?=	lang
 MASTER_SITES=	http://www.php.net/${PHP_DISTDIR}/ \
 		http://php.he.net/${PHP_DISTDIR}/ \
 		http://www.php3.de/${PHP_DISTDIR}/ \
@@ -25,6 +25,7 @@ PHP_DISTDIR=	manual/${PHP_LANG}
 DIST_SUBDIR=	php/${PHP_LANG}
 NO_BUILD=	YES
 NO_WRKSUBDIR=	YES
+SLAVEDIRS=	french/php_doc german/php_doc
 
 PHP_LANG?=	en
 PHPDOCDIR=	${PREFIX}/share/doc/php
