@@ -2,7 +2,7 @@
 # Date created:		19 August 1995
 # Whom:			peter
 #
-# $FreeBSD: ports/net/rdist6/Makefile,v 1.20 2000/04/09 18:13:20 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rdist
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.magnicomp.com/download/rdist/ \
 		ftp://ftp.rge.com/pub/admin/rdist/ \
 		ftp://ftp.sunet.se/pub/unix/admin/mirror-magnicomp/download/rdist/
 
-MAINTAINER=	peter@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400000
