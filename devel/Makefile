@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.608 2001/07/31 09:56:54 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.609 2001/08/04 10:00:14 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -545,6 +545,7 @@
     SUBDIR += ucpp
     SUBDIR += uds
     SUBDIR += uisp
+    SUBDIR += understand_ada
     SUBDIR += understand_c
     SUBDIR += ups-debug
     SUBDIR += varconf
