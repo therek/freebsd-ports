@@ -2,13 +2,14 @@
 # Date created:         5 Dec 2000
 # Whom:                 mi
 #
-# $FreeBSD: ports/textproc/ua-ispell/Makefile,v 1.1 2001/03/12 23:20:03 mi Exp $
+# $FreeBSD: ports/textproc/ua-ispell/Makefile,v 1.2 2001/03/14 01:30:13 mi Exp $
 #
 
 PORTNAME=	ispell
 PORTVERSION=	0.0.2b
-CATEGORIES=     textproc
+CATEGORIES=     textproc ukrainian
 MASTER_SITES=   http://virtual-estates.net/port-stuff/ \
+		http://www.brama.com/compute/unix/ \
 		ftp://cad.ntu-kpi.kiev.ua/soft/lingvist/UkrIspell/
 PKGNAMEPREFIX=	ua-
 DISTNAME=	ua-ispell.${PORTVERSION}
