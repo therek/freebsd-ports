@@ -2,8 +2,10 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-canna/Makefile,v 1.8 2000/10/08 10:21:13 asami Exp $
+# $FreeBSD$
 #
+
+COMMENT=	A library for Japanese Input Method Canna
 
 CANNA=		yes
 

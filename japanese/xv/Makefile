@@ -2,12 +2,13 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xv/Makefile,v 1.8 2000/04/14 17:10:37 knu Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	An X11 program that displays images of various formats with japanization
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
 PKGDIR=		${.CURDIR}

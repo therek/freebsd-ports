@@ -2,12 +2,13 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.7 2000/04/13 08:13:59 knu Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-m17n
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	An X11 program that displays images of various formats with multilingualization
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
 PKGDIR=		${.CURDIR}

@@ -2,11 +2,12 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-canna+sj3+wnn6/Makefile,v 1.10 2000/09/08 04:34:45 taoka Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-canna+sj3+wnn6
 CATEGORIES=	japanese
+COMMENT=	Multilingual emacs, with Canna, sj3, Wnn4, and Wnn6 support built-in
 
 CANNA=		yes
 SJ3=		yes

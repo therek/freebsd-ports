@@ -2,7 +2,7 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.13 2000/04/15 04:22:34 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jlatex209
@@ -18,6 +18,7 @@ DISTFILES=	jtex-${NTT_VERSION}.tar.gz \
 		pTeX-JIS-patch
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT?=	Japanese TeX based on LaTeX-209 with both NTT and ASCII
 
 ASCII_VERSION=	1.7
 NTT_VERSION=	1.52

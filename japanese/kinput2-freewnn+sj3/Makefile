@@ -2,8 +2,10 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-freewnn+sj3/Makefile,v 1.7 2000/09/08 04:34:29 taoka Exp $
+# $FreeBSD$
 #
+
+COMMENT=	Input server of Japanese text (FreeWnn+SJ3)
 
 SJ3=		yes
 FREEWNN=	yes

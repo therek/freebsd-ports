@@ -2,7 +2,7 @@
 # Date created:                 Jun 28 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatexp-pkfonts300/Makefile,v 1.1.1.1 2000/07/02 14:59:12 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hLaTeXp-pkfonts
@@ -14,6 +14,7 @@ DISTFILES=	han.${RESOLUTION}pk.tar.gz hanja.${RESOLUTION}pk.tar.gz symb.${RESOLU
 DIST_SUBDIR=	htex
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT?=	Korean pk fonts collection of hLaTeXp(300dpi)
 
 # it depends hLaTeXp
 RUN_DEPENDS=	hlatex:${PORTSDIR}/korean/hlatexp

@@ -2,11 +2,12 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-freewnn+sj3/Makefile,v 1.9 2000/09/08 04:34:47 taoka Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-freewnn+sj3
 CATEGORIES=	japanese
+COMMENT=	A multilingual emacs, with sj3 and FreeWnn support built in (Only the executables)
 
 SJ3=		yes
 FREEWNN=	yes

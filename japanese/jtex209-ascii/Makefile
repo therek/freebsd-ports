@@ -2,8 +2,10 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jtex209-ascii/Makefile,v 1.6 2000/04/11 14:14:01 knu Exp $
+# $FreeBSD$
 #
+
+COMMENT=	ASCII Japanese pTeX based on LaTeX-209
 
 BATCH_TEX=	ASCII
 

@@ -2,11 +2,12 @@
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/mule-freewnn/Makefile,v 1.9 2000/09/08 04:34:18 taoka Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	korean
 PKGNAMESUFFIX=	-freewnn
+COMMENT=	A multilingual emacs, with FreeWnn support built in (Only the executables)
 
 MASTERDIR=	${.CURDIR}/../../editors/mule
 PKGDIR=		${.CURDIR}

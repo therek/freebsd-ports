@@ -2,8 +2,10 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-canna+freewnn/Makefile,v 1.7 2000/09/08 04:34:25 taoka Exp $
+# $FreeBSD$
 #
+
+COMMENT=	Input server of Japanese text (Canna+FreeWnn)
 
 CANNA=		yes
 FREEWNN=	yes

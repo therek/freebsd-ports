@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-freewnn/Makefile,v 1.10 2001/08/27 01:48:41 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	onew
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Japan/onew/ \
 DISTNAME=	jvim2.0r+${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT?=	A library for a Japanese Input Method: FreeWnn
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 # A value 'all' must not be set to TARGET.

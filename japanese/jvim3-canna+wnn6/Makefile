@@ -2,8 +2,10 @@
 # Date created:		98/11/17
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3-canna+wnn6/Makefile,v 1.9 2000/04/11 14:14:13 knu Exp $
+# $FreeBSD$
 #
+
+COMMENT=	Japanized Vim-3.0 (with Canna and Wnn6)
 
 CANNA=		yes
 WNN6=		yes

@@ -2,11 +2,12 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-sj3/Makefile,v 1.15 2000/09/08 04:34:48 taoka Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-sj3
 CATEGORIES=	japanese
+COMMENT=	A multilingual emacs, with SJ3 support built in (Only the executables)
 
 SJ3=		yes
 

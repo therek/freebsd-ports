@@ -2,10 +2,11 @@
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.7 2000/07/17 02:40:09 shige Exp $
+# $FreeBSD$
 #
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	The Custom Library for mule
 
 # This is a slave port.
 PORTCLASS=	slave

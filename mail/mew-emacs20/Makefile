@@ -2,10 +2,11 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew-emacs20/Makefile,v 1.7 2000/04/13 19:59:59 cpiazza Exp $
+# $FreeBSD$
 #
 
 MAINTAINER=	kiri@FreeBSD.org
+COMMENT=	Message interface to Emacs Window for emacs20
 
 # This is a slave port.
 MASTERDIR=	${.CURDIR}/../mew

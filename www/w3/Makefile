@@ -2,7 +2,7 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/w3/Makefile,v 1.11 2000/04/14 17:24:55 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	w3
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/network/WWW/w3/ \
 		ftp://ftp.cs.indiana.edu/pub/elisp/w3/
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
+COMMENT?=	WWW browser based on emacs/mule
 
 BUILD_DEPENDS?=	emacs-19.34:${PORTSDIR}/editors/emacs
 RUN_DEPENDS?=	emacs-19.34:${PORTSDIR}/editors/emacs

@@ -2,10 +2,11 @@
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif2tex/Makefile,v 1.6 2000/06/23 09:30:10 taoka Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
+COMMENT=	Converting texts in figure by tgif to LaTeX commands (for Japanese)
 
 RUN_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

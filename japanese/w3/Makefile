@@ -2,9 +2,10 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/w3/Makefile,v 1.11 2000/04/14 17:24:52 knu Exp $
+# $FreeBSD$
 #
 
+COMMENT=	WWW browser based on emacs/mule
 CATEGORIES=	japanese
 
 # Don't RUN_DEPENDS on mule because we don't know which version the

@@ -2,8 +2,10 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jtex209-ntt/Makefile,v 1.6 2000/04/11 14:14:03 knu Exp $
+# $FreeBSD$
 #
+
+COMMENT=	NTT Japanese TeX based on LaTeX-209
 
 BATCH_TEX=	NTT
 

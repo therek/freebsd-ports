@@ -2,11 +2,12 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-sj3+wnn6/Makefile,v 1.10 2000/09/08 04:34:49 taoka Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-sj3+wnn6
 CATEGORIES=	japanese
+COMMENT=	Multilingual emacs, with sj3, Wnn4, and Wnn6 support built-in
 
 SJ3=		yes
 WNN6=		yes
