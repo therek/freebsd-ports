@@ -3,17 +3,17 @@
 # Date created:		14 December 1994
 # Whom:			wollman
 #
-# $FreeBSD: ports/mbone/vic/Makefile,v 1.21 1999/08/25 07:09:46 obrien Exp $
+# $FreeBSD: ports/mbone/vic/Makefile,v 1.22 1999/08/31 06:48:07 mharo Exp $
 #
 
 DISTNAME=	vic-2.8
-CATEGORIES=	mbone tk80
+CATEGORIES=	mbone tk82
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vic/
 DISTFILES=	vicsrc-2.8.tar.gz
 
 MAINTAINER=	fenner@FreeBSD.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 USE_AUTOCONF=	yes
 USE_X_PREFIX=	yes
