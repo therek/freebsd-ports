@@ -2,11 +2,12 @@
 # Date created:		14 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/converters/recode/Makefile,v 1.12 2000/06/16 21:50:26 asami Exp $
+# $FreeBSD: ports/converters/recode/Makefile,v 1.13 2000/12/07 12:19:21 sobomax Exp $
 #
 
 PORTNAME=	recode
 PORTVERSION=	3.5
+PORTREVISION=	1
 CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	recode
@@ -23,6 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		recode.1
 
 pre-patch:
+	@${CP} ${FILESDIR}/ru.po ${WRKSRC}/po/
 	@${PERL} -pi -e 's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>
