@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.94 2000/04/13 19:59:40 cpiazza Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.95 2000/05/14 18:50:16 sumikawa Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
@@ -17,9 +17,13 @@ MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/
 
 MAINTAINER=	ve@sci.fi
 
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS
-CONFIGURE_ENV=  LDFLAGS="${CFLAGS}"
+CONFIGURE_ARGS= --enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS \
+		--enable-nls
+CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib" \
+		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}"
 MAN1=		fetchmail.1
 MLINKS=		fetchmail.1 fetchmailconf.1
 
