@@ -2,12 +2,15 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.8 2001/06/24 04:28:30 dinoex Exp $
+# $FreeBSD$
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.7
 CATEGORIES=	net gnome
-MASTER_SITES=	http://crescendo.lyrical.net/files/
+# Master Site broken
+#MASTER_SITES=	http://crescendo.lyrical.net/files/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	dinoex
 
 MAINTAINER=	dinoex@FreeBSD.org
 
