@@ -2,11 +2,12 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.12 2001/05/04 21:39:56 ade Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.13 2001/05/11 16:36:48 ade Exp $
 #
 
 PORTNAME=	guile-gtk
 PORTVERSION=	0.20
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-guile
@@ -22,6 +23,6 @@ USE_GTK=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib" HAVE_PKG_CONFIG="no"
 
 .include <bsd.port.mk>
