@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.380 2000/12/26 05:36:51 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.381 2000/12/30 16:43:40 alex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -186,6 +186,12 @@
     SUBDIR += mips64orion-rtems-gcj
     SUBDIR += mips64orion-rtems-gdb
     SUBDIR += mips64orion-rtems-objc
+    SUBDIR += mips-rtems-binutils
+    SUBDIR += mips-rtems-chill
+    SUBDIR += mips-rtems-g77
+    SUBDIR += mips-rtems-gcc
+    SUBDIR += mips-rtems-gcj
+    SUBDIR += mips-rtems-objc
     SUBDIR += mkcmd
     SUBDIR += mkmf
     SUBDIR += mm
