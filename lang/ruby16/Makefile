@@ -3,7 +3,7 @@
 # Date created:         04 September 1997
 # Whom:                 Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.14 1999/11/14 01:37:13 steve Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.15 1999/12/24 04:30:26 steve Exp $
 #
 
 DISTNAME=	ruby-1.4.3
@@ -19,6 +19,9 @@ MAINTAINER=	yasuf@big.or.jp
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-shared
+.if defined(USE_INET6)
+CONFIGURE_ARGS+= --enable-ipv6
+.endif
 MAN1=		ruby.1
 PLIST_SUB+=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
