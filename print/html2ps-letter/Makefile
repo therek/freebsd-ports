@@ -2,7 +2,7 @@
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.15 2001/01/04 22:36:05 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	html2ps-${PAPERSIZE}
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick \
 		tex:${PORTSDIR}/print/teTeX \
 		${site_perl}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		weblint:${PORTSDIR}/www/weblint
+RUN_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick
 
 site_perl=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 USE_PERL5=	YES
