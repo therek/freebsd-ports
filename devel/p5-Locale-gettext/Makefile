@@ -2,11 +2,12 @@
 # Date created:			1 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.4 2000/11/13 12:43:26 demon Exp $
+# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.5 2001/03/01 06:38:00 vanilla Exp $
 #
 
 PORTNAME=	gettext
 PORTVERSION=	1.01
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Locale
@@ -14,7 +15,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
 PERL_CONFIGURE=	yes
+CONFIGURE_ENV+=	LOCALBASE=${LOCALBASE}
 
 MAN3=		Locale::gettext.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
