@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.292 2000/08/12 00:28:04 nbm Exp $
+# $FreeBSD: ports/games/Makefile,v 1.293 2000/08/15 11:54:59 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -79,6 +79,7 @@
     SUBDIR += gtetrinet
     SUBDIR += gtkabale
     SUBDIR += gtkballs
+    SUBDIR += gtktetcolor
     SUBDIR += halflifeserver
     SUBDIR += heretic
     SUBDIR += heroes
