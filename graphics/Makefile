@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.290 2001/03/28 03:47:54 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.291 2001/03/29 21:45:25 will Exp $
 #
 
     SUBDIR += 4va
@@ -160,6 +160,7 @@
     SUBDIR += photopc
     SUBDIR += piddle
     SUBDIR += pixmap
+    SUBDIR += plasma-kmod
     SUBDIR += plotmtv
     SUBDIR += plotutils
     SUBDIR += png
