@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.120 2001/03/20 11:04:35 sobomax Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -10,7 +10,7 @@
 # want fetchmailconf to work, define WITH_X11
 
 PORTNAME=	fetchmail
-PORTVERSION=	5.7.4
+PORTVERSION=	5.7.6
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://www.tuxedo.org/~esr/fetchmail/ \
 		ftp://ftp.ccil.org/pub/esr/fetchmail/
@@ -37,9 +37,10 @@ MLINKS=		fetchmail.1 fetchmailconf.1
 
 .if ${OSVERSION} >= 400014
 CONFIGURE_ARGS+=--enable-inet6
+.endif
+
 .if exists(/usr/lib/libssl.a) && exists(/usr/lib/libcrypto.a)
 CONFIGURE_ARGS+=--with-ssl=/usr
-.endif
 .elif exists(${LOCALBASE}/lib/libssl.a) && exists(${LOCALBASE}/lib/libcrypto.a)
 CONFIGURE_ARGS+=-with-includes=${LOCALBASE}/include/openssl --with-ssl=${LOCALBASE}
 .endif
