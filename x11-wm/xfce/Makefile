@@ -2,11 +2,11 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.27 2000/04/10 19:50:44 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.28 2000/04/16 03:36:08 nakai Exp $
 #
 
 PORTNAME=	xfce
-PORTVERSION= 	3.3.3
+PORTVERSION= 	3.4.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/
 
@@ -29,6 +29,7 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share \
 		--with-xpm=${X11BASE}
 
 MAN1=	xfbd.1 xfce.1 xfclock.1 xfgnome.1 xfhelp.1 xflock.1 xfmouse.1 \
-	xfpager.1 xfprint.1 xfsound.1 xfterm.1 xftrash.1 xftree.1 xfwm.1
+	xfpager.1 xfprint.1 xfsound.1 xfterm.1 xftrash.1 xftree.1 xfwm.1 \
+	xfmountdev.1
 
 .include <bsd.port.mk>
