@@ -3,7 +3,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.56 2000/02/28 08:32:12 obrien Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.57 2000/02/29 22:13:29 sada Exp $
 #
 
 .if !defined(PRE_MK_INCLUDED)
@@ -31,7 +31,6 @@ BROWSER_VER=	4.72
 #	taken from ,${BLDVERS} in ns-install
 INFILE_HEAD?=	'Communicator,4.72.0.20000131'
 NO_AUTOADMIN=	yes
-NO_FORTIFY=	yes
 
 PRE_MK_INCLUDED=	yes
 .include "${MASTERDIR}/Makefile"

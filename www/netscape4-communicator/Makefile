@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.57 2000/01/25 03:21:57 asami Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.58 2000/02/28 08:34:04 asami Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -31,7 +31,7 @@ PKGREQ?=	${MASTERDIR}/pkg/REQ
 AUTOADMIN?=	autoadmin-v408.x86-unknown-freebsd.tar.gz
 BROWSER?=	communicator
 BROWSER_VER?=	4.08
-FORTIFY=	Fortify-1.4.5-unix-x86
+FORTIFY=	Fortify-1.4.6-unix-x86
 NDIR=		${PREFIX}/${NSUBDIR}
 NSUBDIR?=	lib/netscape
 BINDIR=		${PREFIX}/bin
