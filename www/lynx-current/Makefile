@@ -3,23 +3,26 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.112 2000/04/16 03:22:25 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.113 2000/04/16 09:16:17 kris Exp $
 #
 
 PORTNAME=	lynx
-PORTVERSION=    2.8.3pre.5
+PORTVERSION=    2.8.4dev.1
 CATEGORIES=	www
 MASTER_SITES=   http://lynx.isc.org/current/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ache@FreeBSD.org
 
+BUILD_DEPENDS=  xgettext:${PORTSDIR}/devel/gettext
+
 USE_BZIP2=      YES
 NO_LATEST_LINK=	YES
-WRKSRC=         ${WRKDIR}/lynx2-8-3
+WRKSRC=         ${WRKDIR}/lynx2-8-4
 GNU_CONFIGURE=  YES
 CONFIGURE_ARGS= --with-screen=ncurses --with-zlib --libdir="${L_LIB}" \
-		--enable-nsl-fork --enable-persistent-cookies
+		--enable-nsl-fork --enable-persistent-cookies \
+		--enable-nls
 MAKE_FLAGS=     helpdir=${L_HELP} docdir=${L_DOC} -f
 MAKEFILE=       makefile
 INSTALL_TARGET= install-full
