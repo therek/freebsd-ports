@@ -3,7 +3,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.11 2000/02/07 14:26:24 taoka Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.12 2000/02/13 17:03:35 steve Exp $
 #
 
 DISTNAME=	eb-2.3.7
@@ -11,6 +11,9 @@ PKGNAME=	ja-eb-2.3.7
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
 DISTFILES=	${EBFILES} ${APPENDIXFILES}
+
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	eb-2.3.7+.diff
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
