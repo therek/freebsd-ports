@@ -2,16 +2,16 @@
 # Date created:        			22 December 2000
 # Whom:					alex
 #
-# $FreeBSD: ports/graphics/xmms-gforce/Makefile,v 1.4 2000/12/25 11:13:28 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmms-gforce
 PORTVERSION=	1.1.6.x.p.3
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.mnsi.net/~bgjenero/gforce/
+MASTER_SITES=	http://dl.droso.net/ports/
 DISTNAME=	gforce-1.1.6xp3
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	erwin@lansing.dk
 
 BUILD_DEPENDS=	xmms-config:${PORTSDIR}/audio/xmms
 RUN_DEPENDS=	xmms:${PORTSDIR}/audio/xmms
