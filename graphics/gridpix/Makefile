@@ -2,7 +2,7 @@
 # Date created:		19 July 1999
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.4 2000/04/02 00:04:20 mharo Exp $
+# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.5 2000/04/14 10:46:09 asami Exp $
 #
 
 PORTNAME=	gridpix
@@ -13,7 +13,8 @@ DISTNAME=	GridPix-${PORTVERSION}
 
 MAINTAINER=	asami@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libpnm.a:${PORTSDIR}/graphics/netpbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libpnm.a:${PORTSDIR}/graphics/netpbm \
+		${LOCALBASE}/include/shhopt.h:${PORTSDIR}/devel/libshhopt
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 # create necessary directories -- don't want to depend on an http
