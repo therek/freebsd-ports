@@ -2,13 +2,13 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.24 2000/09/22 16:55:01 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.25 2000/09/22 17:22:23 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
 PORTVERSION=	2.0.2.621
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		http://vmware-svca.www.conxion.com/software/ \
@@ -84,8 +84,6 @@ setoptions:
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
 		-e 's;@@LINUXBASE@@;${LINUXBASE};' \
 		-e 's;@@NETWORKING@@;${VMNET_NETWORKING};' \
-		-e 's;@@HOST_IP@@;${VMNET_HOST_IP};' \
-		-e 's;@@NETMASK@@;${VMNET_NETMASK};' \
 		${FILESDIR}/vmware.sh > ${WRKDIR}/vmware.sh
 
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
