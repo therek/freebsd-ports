@@ -2,11 +2,11 @@
 # Date created:				11 February 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlines/Makefile,v 1.10 2000/04/14 12:27:38 asami Exp $
+# $FreeBSD: ports/games/xlines/Makefile,v 1.11 2000/06/22 09:34:44 sobomax Exp $
 #
 
 PORTNAME=	xlines
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.trolltech.com/contrib/
 DISTNAME=	${PORTNAME}
@@ -16,9 +16,6 @@ MAINTAINER=	ports@FreeBSD.org
 USE_QT=		yes
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
-
-post-extract:
-	@${RM} ${WRKSRC}/lines.moc
 
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/*.cpp
