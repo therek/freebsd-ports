@@ -4,7 +4,7 @@
 # Date created:			  Sun Jan 31, 1997
 # Whom:               		  shipley@dis.org
 #
-# $FreeBSD: ports/net/tdetect/Makefile,v 1.7 1999/10/25 04:03:28 obrien Exp $
+# $FreeBSD: ports/net/tdetect/Makefile,v 1.8 1999/10/25 08:08:32 obrien Exp $
 #
 
 DISTNAME=	tdetect-0.2
@@ -28,17 +28,13 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tdetect ${PREFIX}/sbin/tdetect
 
 post-install:
-	strip ${PREFIX}/sbin/tdetect
 	@if [ ! -f ${PREFIX}/etc/rc.d/tdetect.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/tdetect.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${ECHO} "ETHERNETDEV=ed0" >> ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${ECHO} '[ -x ${PREFIX}/sbin/tdetect ] && ${PREFIX}/sbin/tdetect $$ETHERNETDEV && ${ECHO} -n " tdetect"' >> ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${CHMOD} 750 ${PREFIX}/etc/rc.d/tdetect.sh; \
-		${ECHO} ''; \
-		${ECHO} 'IMPORTANT edit ${PREFIX}/etc/rc.d/tdetect.sh and set "ETHERNETDEV" to'; \
-		${ECHO} "the name of the ethernetdev you wish to monitor"; \
-		${ECHO} ''; \
+		${SED} -e 's,/usr/local,${PREFIX},g' ${PKGMESSAGE}; \
 	fi
 
 .include <bsd.port.post.mk>
