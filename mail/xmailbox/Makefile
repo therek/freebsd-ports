@@ -2,7 +2,7 @@
 # Date created:				23 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.7 2000/03/29 07:18:36 kris Exp $
+# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.8 2000/04/13 20:01:04 cpiazza Exp $
 #
 
 PORTNAME=		xmailbox
@@ -17,19 +17,18 @@ LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_IMAKE=		yes
 MAN1=			xmailbox.1
-MANCOMPRESSED=		no
 
-do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/xmailbox ${PREFIX}/bin
-	@ ${INSTALL_MAN} ${WRKSRC}/xmailbox.man ${PREFIX}/man/man1/xmailbox.1
-	@ ${INSTALL_DATA} ${WRKSRC}/XMailbox.ad ${PREFIX}/lib/X11/app-defaults/XMailbox
-	@ ${MKDIR} ${PREFIX}/share/xmailbox
-	@ ${INSTALL_DATA} ${WRKSRC}/dingdong.au ${PREFIX}/share/xmailbox
-	@ ${INSTALL_DATA} ${WRKSRC}/ugotmail.au ${PREFIX}/share/xmailbox
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/XMailbox.ad
+
+post-install:
+	@${MKDIR} ${PREFIX}/share/xmailbox
+	${INSTALL_DATA} ${WRKSRC}/dingdong.au ${PREFIX}/share/xmailbox
+	${INSTALL_DATA} ${WRKSRC}/ugotmail.au ${PREFIX}/share/xmailbox
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/xmailbox
-	@ ${INSTALL_DATA} ${WRKSRC}/DISCLAIMER ${PREFIX}/share/doc/xmailbox
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xmailbox
+	@${MKDIR} ${PREFIX}/share/doc/xmailbox
+	${INSTALL_DATA} ${WRKSRC}/DISCLAIMER ${PREFIX}/share/doc/xmailbox
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xmailbox
 .endif
 
 .include <bsd.port.mk>
