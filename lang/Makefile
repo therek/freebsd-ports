@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.159 2000/01/05 18:33:09 jseger Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.160 2000/02/01 19:47:15 asami Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -70,6 +70,10 @@
     SUBDIR += perl5
     SUBDIR += pgcc
     SUBDIR += pike
+    SUBDIR += pm3-base
+    SUBDIR += pm3-forms
+    SUBDIR += pm3-gui
+    SUBDIR += pm3-net
     SUBDIR += ptoc
     SUBDIR += python
     SUBDIR += python+ipv6
