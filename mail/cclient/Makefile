@@ -2,17 +2,18 @@
 # Date created:				2 July 2000
 # Whom:					Kelly Yancey <kbyanc@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cclient/Makefile,v 1.3 2000/11/01 14:23:09 jeh Exp $
+# $FreeBSD: ports/mail/cclient/Makefile,v 1.4 2000/12/18 09:52:19 kbyanc Exp $
 #
 
 PORTNAME=	cclient
 PORTVERSION=	4.8
+PORTREVISION=	1
 CATEGORIES=	mail devel
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		http://mirror.nucba.ac.jp/mirror/%SUBDIR%/
-MASTER_SITE_SUBDIR= . old
-DISTNAME=	imap-2000a
+MASTER_SITE_SUBDIR=	. old
+DISTNAME=	imap-2000b
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
