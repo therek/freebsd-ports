@@ -3,7 +3,7 @@
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.33 2000/10/11 22:58:19 obrien Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.34 2000/11/11 22:18:36 obrien Exp $
 #
 
 PORTNAME=	minicom
