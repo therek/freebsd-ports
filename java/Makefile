@@ -1,4 +1,4 @@
-# $FreeBSD: ports/java/Makefile,v 1.17 2000/10/13 12:41:25 sobomax Exp $
+# $FreeBSD: ports/java/Makefile,v 1.18 2000/10/16 21:35:06 ade Exp $
 #
 
     SUBDIR += collections
@@ -21,6 +21,7 @@
     SUBDIR += jlex
     SUBDIR += jre
     SUBDIR += jsdk
+    SUBDIR += junit
     SUBDIR += kaffe
     SUBDIR += linux-jdk
     SUBDIR += netrexx
