@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.427 2001/02/04 04:43:11 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.428 2001/02/07 20:00:56 knu Exp $
 #
     SUBDIR += zziplib
 
@@ -32,6 +32,7 @@
     SUBDIR += boaconstructor
     SUBDIR += boehm-gc
     SUBDIR += bonobo
+    SUBDIR += bonobo-conf
     SUBDIR += bugbuddy
     SUBDIR += c_c++_reference
     SUBDIR += camlp4
