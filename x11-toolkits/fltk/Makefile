@@ -2,7 +2,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.23 2001/04/17 10:14:58 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.24 2001/07/15 08:21:17 demon Exp $
 #
 
 PORTNAME=	fltk
@@ -58,7 +58,7 @@ post-install:
 	@ ${INSTALL_MAN} ${WRKSRC}/documentation/fluid.1 \
 		${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${DICSDIR}
+	@ ${MKDIR} ${DOCSDIR}
 	for ext in html gif jpg ; do \
 		${INSTALL_DATA} ${WRKSRC}/documentation/*.$$ext \
 		${DOCSDIR}; \
