@@ -2,11 +2,11 @@
 # Date created:			Apr 13, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/iview/Makefile,v 1.1 2001/04/17 17:56:11 will Exp $
 #
 
 PORTNAME=	iview
-PORTVERSION=	1.01
+PORTVERSION=	1.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://math.smsu.edu/~erik/files/
 
