@@ -2,7 +2,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.23 2001/01/14 01:37:16 mita Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.24 2001/01/21 03:10:31 mita Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -54,7 +54,7 @@ post-install:
 	(cd ${WRKSRC}/contrib/xmindpath; make install)
 	${GZIP_CMD} ${PREFIX}/man/man1/xmindpath.1
 .if ${XFREE86_VERSION} == 4
-	(cd ${WRKSRC}/contrib/xmindpath;
+	(cd ${WRKSRC}/contrib/xmindpath; \
 	 ${INSTALL_MAN} xmindpath.1.html ${PREFIX}/lib/X11/doc/html)
 .endif
 .if !defined(NOPORTDOCS)
