@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.304 2000/09/29 13:52:33 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.305 2000/10/06 09:09:32 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -128,6 +128,7 @@
     SUBDIR += oneko
     SUBDIR += oneko-sakura
     SUBDIR += oonsoo
+    SUBDIR += pentix
     SUBDIR += phalanx
     SUBDIR += pmars
     SUBDIR += powerpak
