@@ -3,7 +3,7 @@
 # Date created:			  29 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/lang/nawk/Makefile,v 1.15 2000/11/11 06:13:03 obrien Exp $
+# $FreeBSD: ports/lang/nawk/Makefile,v 1.16 2001/02/21 20:33:18 obrien Exp $
 #
 
 PORTNAME=	nawk
@@ -21,6 +21,7 @@ MAN1=		nawk.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/a.out ${PREFIX}/bin/nawk
-	${INSTALL_MAN} ${WRKSRC}/awk.1 ${PREFIX}/man/man1/nawk.1
+	${SED} -e 's|awk|nawk|g' ${WRKSRC}/awk.1 > ${WRKSRC}/nawk.1
+	${INSTALL_MAN} ${WRKSRC}/nawk.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
