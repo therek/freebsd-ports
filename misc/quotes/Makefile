@@ -2,14 +2,14 @@
 # Date created:         9 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/misc/quotes/Makefile,v 1.6 2000/02/17 01:23:54 mharo Exp $
+# $FreeBSD: ports/misc/quotes/Makefile,v 1.7 2000/04/14 08:46:34 asami Exp $
 #
 
 PORTNAME=	quotes
-PORTVERSION=	1.5.2
+PORTVERSION=	1.6.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.iae.nl/pub/users/grimaldo/
-DISTNAME=	quotes-1.5-2
+DISTNAME=	quotes-1.6-2
 
 MAINTAINER=	dima@Chg.RU
 
@@ -18,6 +18,8 @@ USE_PERL5=	yes
 
 post-patch:
 	@ ${PERL} -pi -e "s:/usr/bin/perl:${PERL}:g" ${WRKSRC}/quotes
+	@ ${PERL} -pi -e "s:/usr/local/lib/Quotes:${PREFIX}/etc:g" ${WRKSRC}/quotes
+	@ ${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/quotes
 	@ ${PERL} -pi -e "s:/usr/bin/perl:${PERL}:g" ${WRKSRC}/quotesmailer
 	@ ${PERL} -pi -e "s:/usr/bin/perl:${PERL}:g" ${WRKSRC}/QuExample.pm
 
