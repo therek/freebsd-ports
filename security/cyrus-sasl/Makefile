@@ -2,12 +2,12 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.19 2000/11/01 11:59:16 jeh Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.20 2000/11/02 00:16:45 jeh Exp $
 #
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	1.5.24
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		${MASTER_SITE_LOCAL} \
@@ -72,6 +72,8 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 
 .if defined(KRB5_HOME) && exists(${KRB5_HOME})
 CONFIGURE_ARGS+=	--enable-gssapi=${KRB5_HOME}
+.elif defined(HEIMDAL_HOME) && exists(${HEIMDAL_HOME})
+CONFIGURE_ARGS+=	--enable-gssapi=${HEIMDAL_HOME}
 .else
 CONFIGURE_ARGS+=	--disable-gssapi
 GSSAPI=	"@comment "
