@@ -2,7 +2,7 @@
 # Date created:		11 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.28 2000/09/17 15:59:09 taoka Exp $
+# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.29 2001/07/07 05:53:29 taoka Exp $
 #
 
 PORTNAME=	Wnn6-lib
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/Wnn6/sdk_source/
 DISTNAME=	Wnn6-SDK-sources
 
 MAINTAINER=	taoka@FreeBSD.org
+
+.include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 3
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
@@ -26,9 +28,7 @@ INSTALLS_SHLIB=	yes
 
 # Warning: we cannot use USE_IMAKE.
 do-build:
-	( cd $(WRKSRC) ; make World -f Makefile.ini )
-
-.include <bsd.port.pre.mk>
+	( cd ${WRKSRC} ; make World -f Makefile.ini )
 
 post-install:
 .if ${PORTOBJFORMAT} == "aout"
