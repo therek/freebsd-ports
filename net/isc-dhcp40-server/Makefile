@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.39 2000/09/27 10:36:12 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.40 2000/09/30 18:42:32 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -27,6 +27,9 @@ MAN8=		dhclient.8 dhclient-script.8 dhcpd.8 dhcrelay.8
 post-patch:
 	@${PERL} -pi.fbsd -e 's.!!PREFIX!!.${PREFIX}.g' ${WRKSRC}/includes/dhcpd.h
 	@${PERL} -pi.fbsd -e 's.!!PREFIX!!.${PREFIX}.g' ${WRKSRC}/client/scripts/freebsd
+.for MF in relay/Makefile.dist server/Makefile.dist client/Makefile.dist common/Makefile.dist dhcpctl/Makefile.dist minires/Makefile.dist omapip/Makefile.dist 
+	@${PERL} -pi.fbsd -e 's|^DEBUG[	 ]*=|DEBUG ?=|g ; s|^CFLAGS[	 ]*=|CFLAGS +=|g' ${WRKSRC}/${MF}
+.endfor
 
 post-install:
 	${TOUCH} /var/db/dhcpd.leases
