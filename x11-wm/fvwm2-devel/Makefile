@@ -2,15 +2,15 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.27 2000/08/03 09:27:54 asami Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.28 2000/10/08 10:23:47 asami Exp $
 #
 
 PORTNAME=	fvwm
-PORTVERSION=	2.3.19
+PORTVERSION=	2.3.20
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		fvwm_icons.tgz
+MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/ \
+		http://www.fvwm.org/generated/icon_download/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm_icons.tgz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
