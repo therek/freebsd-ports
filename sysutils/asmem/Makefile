@@ -2,11 +2,11 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.8 2000/04/23 05:36:08 will Exp $
+# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.9 2000/08/03 09:26:19 asami Exp $
 #
 
 PORTNAME=		asmem
-PORTVERSION=		1.6
+PORTVERSION=		1.8
 CATEGORIES=		sysutils afterstep
 MASTER_SITES=		${MASTER_SITE_AFTERSTEP} \
 			http://www.bewoner.dma.be/Albert/software/
@@ -16,14 +16,11 @@ MAINTAINER=	jack@germanium.xtalwind.net
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-MAKEFILE=	Makefile.UNIX
+GNU_CONFIGURE=	yes
 MAN1=		asmem.1
 MAKE_ENV=	PCFLAGS="${CFLAGS}"
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} >= 400000
-BROKEN=		"missing sys/rlist.h on 4.0 and later"
-.endif
 
 do-install:
 	${INSTALL_MAN} ${WRKSRC}/asmem.man ${PREFIX}/man/man1/asmem.1
