@@ -1,9 +1,8 @@
-@comment $FreeBSD: ports/audio/libogg/pkg-plist,v 1.7 2002/01/16 14:42:22 naddy Exp $
+@comment $FreeBSD: ports/audio/libogg/pkg-plist,v 1.8 2002/07/20 15:29:22 naddy Exp $
 include/ogg/config_types.h
 include/ogg/ogg.h
 include/ogg/os_types.h
 lib/libogg.a
-lib/libogg.la
 lib/libogg.so
 lib/libogg.so.4
 share/aclocal/ogg.m4
