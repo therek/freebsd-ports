@@ -2,7 +2,7 @@
 # Date created:		3 December 1998
 # Whom:			Yoshihiko Sarumaru <mistral@imasy.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/rogue_s/Makefile,v 1.1.1.1 2000/07/18 17:38:04 sada Exp $
 #
 
 PORTNAME=	rogue_s
@@ -29,7 +29,6 @@ BUILD_DEPENDS=  nkf:${PORTSDIR}/japanese/nkf
 WRKSRC=		${WRKDIR}/rogue_s
 MAKEFILE=	Makefile.nix
 ALL_TARGET=	rogue
-NO_CDROM=	yes
 
 MAN6=		rogue_s.6
 MANLANG=	ja
