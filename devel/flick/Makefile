@@ -1,15 +1,15 @@
 # New ports collection makefile for:	flick
-# Version required:	2.0
+# Version required:	2.1
 # Date created:		21 Mar 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/devel/flick/Makefile,v 1.4 1999/08/31 06:41:42 mharo Exp $
+# $FreeBSD: ports/devel/flick/Makefile,v 1.5 1999/09/27 02:27:33 steve Exp $
 #
 
-DISTNAME=	flick-2.0-src
-PKGNAME=	flick-2.0
+DISTNAME=	flick-2.1-src
+PKGNAME=	flick-2.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://flux.cs.utah.edu/flux/flick/2.0/
+MASTER_SITES=	ftp://flux.cs.utah.edu/flux/flick/2.1/
 
 MAINTAINER=     ports@FreeBSD.org
 
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
 
-WRKSRC=	${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 post-install:
 .if !defined(NOPORTDOCS)
