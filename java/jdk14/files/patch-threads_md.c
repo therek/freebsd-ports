@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/java/jdk13/files/patch-threads_md.c,v 1.1 2003/02/28 17:16:21 glewis Exp $
 
 --- ../src/solaris/hpi/native_threads/src/threads_md.c	21 Nov 2001 04:02:04 -0000	1.4
 +++ ../src/solaris/hpi/native_threads/src/threads_md.c	24 Feb 2003 03:17:30 -0000
