@@ -2,11 +2,11 @@
 # Date created:				Sun Jul 18 1999
 # Whom:					domi@saargate.de
 #
-# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.11 2000/06/01 16:25:23 ade Exp $
+# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.12 2000/06/14 13:21:10 sobomax Exp $
 #
 
 PORTNAME=	gnofin
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.1
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -19,7 +19,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 GTK_CONFIG?=    ${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 
 MAN1=		gnofin.1
