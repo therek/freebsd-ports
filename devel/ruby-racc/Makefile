@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.15 2000/12/15 15:10:09 knu Exp $
+# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.16 2000/12/21 19:12:39 knu Exp $
 #
 
 PORTNAME=	racc
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.3
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www1.u-netsurf.ne.jp/~brew/mine/soft/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -29,15 +29,17 @@ DOCS_JA=	changes.html command.html debug.html grammer.html \
 EXAMPLES=	calc-ja.y calc.y conflict.y lalr.y syntax.y yyerr.y
 
 post-extract:
-	${RM} -rf ${WRKSRC}/ext
 	${PERL} -i -ne '/^amstd\b/ || /^strscan\b/ || print' ${WRKSRC}/lib/PATHCONV
 	${RM} -rf ${WRKSRC}/lib/amstd ${WRKSRC}/lib/strscan
 .if defined(RUNTIME)
 	${PERL} -i -ne '/^racc\b/ || print' ${WRKSRC}/bin/PATHCONV
 	${RM} -rf ${WRKSRC}/bin/racc
+	${PERL} -i -ne '/^strscanso\b/ || print' ${WRKSRC}/ext/PATHCONV
+	${RM} -rf ${WRKSRC}/ext/strscanso
 	${PERL} -i -ne '/^racc\b/ || print' ${WRKSRC}/lib/PATHCONV
 	${RM} -rf ${WRKSRC}/lib/racc
 .else
+	${RM} -rf ${WRKSRC}/ext
 	${PERL} -i -ne '/^raccrt\b/ || print' ${WRKSRC}/lib/PATHCONV
 	${RM} -rf ${WRKSRC}/lib/raccrt
 .endif
