@@ -1,12 +1,10 @@
 # New ports collection makefile for:	Wnn for Korea
-# Version required:	4.2
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/Wnn/Makefile,v 1.8 1999/08/30 12:08:35 peter Exp $
 #
 
-PKGNAME=	ko-Wnn-4.2
 CATEGORIES=	korean
 
 ## COMMENT, DESCR, PLIST is used in a local 'pkg' directory
