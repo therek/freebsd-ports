@@ -2,7 +2,7 @@
 # Date created:		4 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/games/xrisk/Makefile,v 1.18 2001/02/28 14:28:38 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xrisk
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://my.pages.de/pub/comp/games/xrisk/ \
 		http://www.mikro.biologie.tu-muenchen.de/pub/rec/games/xrisk/
 
-MAINTAINER=	adam@alameda.edu
+MAINTAINER=	adam@blacktabby.org
 
 USE_IMAKE=	yes
 MAN6=		xrisk.6
