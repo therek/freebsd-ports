@@ -2,11 +2,11 @@
 # Date created:        	2000.07.12
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.7 2001/02/06 13:21:59 olgeni Exp $
+# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.8 2001/03/08 05:44:23 taoka Exp $
 #
 
 PORTNAME=	wdic-fpw
-PORTVERSION=	1.1b
+PORTVERSION=	1.2b
 CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wdic/
 DISTNAME=	${PORTNAME}${PORTVERSION}

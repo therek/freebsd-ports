@@ -2,11 +2,11 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jargon-fpw/Makefile,v 1.4 2001/02/06 13:21:53 olgeni Exp $
+# $FreeBSD: ports/japanese/jargon-fpw/Makefile,v 1.5 2001/03/08 05:50:36 taoka Exp $
 #
 
 PORTNAME=	jargon-fpw
-PORTVERSION=	1.1a
+PORTVERSION=	1.2a
 CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/jargon/
 DISTNAME=	jarg-fpw${PORTVERSION}
