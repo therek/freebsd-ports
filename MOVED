@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.135 2003/05/20 06:49:02 keichii Exp $
+# $FreeBSD: ports/MOVED,v 1.136 2003/05/20 10:59:55 paul Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -338,3 +338,4 @@ chinese/rxvt||2003-05-20|no longer needed
 chinese/rxvt-big5||2003-05-20|no longer needed
 chinese/rxvt-gb||2003-05-20|no longer needed
 misc/p5-DataCash||2003-05-20|No longer available
+net/p5-Net-BGP4|net/p5-Net-BGP|module was renamed
