@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.25 1999/11/28 22:40:16 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.26 1999/11/29 07:09:39 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -15,8 +15,6 @@ MASTER_SITES=	ftp://internat.FreeBSD.org/pub/Crypto/OpenSSH/
 MAINTAINER=	green@FreeBSD.org
 
 LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
-
-RESTRICTED=	"Links with cryptographic code."
 
 .include <bsd.port.pre.mk>
 CAT?=		/bin/cat
