@@ -2,11 +2,11 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.10 2000/12/05 08:44:55 sobomax Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.11 2000/12/18 16:59:31 sobomax Exp $
 #
 
 PORTNAME=	opengl
-PORTVERSION=	1.5.6.b1
+PORTVERSION=	1.5.6
 CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	py${PORTNAME}
