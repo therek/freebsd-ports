@@ -2,7 +2,7 @@
 # Date created:				September 11th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Authen-Radius/Makefile,v 1.12 2000/10/23 21:03:05 will Exp $
+# $FreeBSD: ports/security/p5-Authen-Radius/Makefile,v 1.13 2001/03/01 06:37:01 vanilla Exp $
 #
 
 PORTNAME=	Authen-Radius
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MD5.pm:${PORTSDIR}/security/p5-MD5
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/MD5.pm:${PORTSDIR}/security/p5-MD5
 
 PERL_CONFIGURE=	yes
 MAN3=		Authen::Radius.3
