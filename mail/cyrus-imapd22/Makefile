@@ -2,7 +2,7 @@
 # Date created:					May 4th 1997
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus/Makefile,v 1.27 2000/04/13 19:59:30 cpiazza Exp $
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.28 2000/05/13 17:18:08 paul Exp $
 #
 
 PORTNAME=	cyrus
@@ -18,7 +18,8 @@ MAINTAINER=	stb@FreeBSD.org
 Y2K=		http://andrew2.andrew.cmu.edu/cyrus/imapd/y2k.html
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
-BUILD_DEPENDS=	makedepend:${PORTSDIR}/devel/makedepend
+BUILD_DEPENDS=	makedepend:${PORTSDIR}/devel/makedepend \
+		pwcheck:${PORTSDIR}/security/cyrus-sasl
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--with-cyrus-prefix=${PREFIX}/cyrus \
