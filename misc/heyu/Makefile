@@ -2,17 +2,19 @@
 # Date created:		27 December 1999
 # Whom:			plambert@plambert.net
 #
-# $FreeBSD: ports/misc/heyu/Makefile,v 1.4 2000/05/28 03:26:19 steve Exp $
+# $FreeBSD: ports/misc/heyu/Makefile,v 1.5 2000/12/21 06:31:44 will Exp $
 #
 
 PORTNAME=	heyu
-PORTVERSION=	1.29
+PORTVERSION=	1.31.3
 CATEGORIES=	misc
 MASTER_SITES=	http://heyu.tanj.com/
 DISTNAME=	x10_heyu
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	plambert@plambert.net
+
+BROKEN=		"Patches need to be upgraded."
 
 ALL_TARGET=	heyu
 WRKSRC=		${WRKDIR}/heyu.dir
