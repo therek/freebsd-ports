@@ -2,13 +2,14 @@
 # Date created:        2 November 2000
 # Whom:                cnh@ivmg.net
 #
-# $FreeBSD: ports/net/tcpreplay/Makefile,v 1.1 2000/11/29 02:29:03 msmith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcpreplay
 PORTVERSION=	1.0.1
 CATEGORIES=	net
-MASTER_SITES=	http://www.anzen.com/research/nidsbench/
+MASTER_SITES=	http://synfin.net/aturner/tcpreplay/ \
+		http://www.anzen.com/research/nidsbench/
 
 MAINTAINER=	ports@FreeBSD.org
 

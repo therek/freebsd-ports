@@ -2,13 +2,14 @@
 # Date created:		1-Aug-1995
 # Whom:			pst
 #
-# $FreeBSD: ports/net/zephyr/Makefile,v 1.13 2001/03/29 19:36:35 mikeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zephyr
 PORTVERSION=	20000421
 CATEGORIES=	net
-MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/
+MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/ \
+		ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/old/
 
 MAINTAINER=	ports@FreeBSD.org
 
