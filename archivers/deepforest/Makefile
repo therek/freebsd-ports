@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.6 2000/07/14 13:27:07 alex Exp $
+# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.7 2000/10/04 06:39:58 sobomax Exp $
 #
 
 PORTNAME=	deepforest
@@ -31,8 +31,8 @@ PIXMAPPATH?=	${PREFIX}/share/WindowMaker/Pixmaps
 LANGUAGE?=
 .if (${LANGUAGE} == "Japanese")
 CATEGORY_LIST=	japanese windowmaker tkstep80 japanese
-RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80
-LIB_DEP_LIST=	img.1:${PORTSDIR}/japanese/libimg
+RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80 \
+		${LOCALBASE}/lib/Img1.2/libimg12.so.1:${PORTSDIR}/japanese/libimg
 .else
 CATEGORY_LIST=	archivers windowmaker tkstep80
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0/tkstep.tcl:${PORTSDIR}/x11-toolkits/tkstep80

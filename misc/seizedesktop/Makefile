@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/misc/seizedesktop/Makefile,v 1.3 2000/04/13 12:42:12 knu Exp $
+# $FreeBSD: ports/misc/seizedesktop/Makefile,v 1.4 2000/07/14 13:28:58 alex Exp $
 #
 
 PORTNAME=	seizedesktop
@@ -28,8 +28,8 @@ SCRIPTS_ENV=	LANG=C LN=${LN} PERL=${PERL} LANGUAGE=${LANGUAGE} VERSION=${TKSTEPV
 TKSTEPVERSION=	8.0
 LANGUAGE?=
 .if (${LANGUAGE} == "Japanese")
-RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80
-LIB_DEP_LIST=	img.1:${PORTSDIR}/japanese/libimg
+RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80 \
+		${LOCALBASE}/lib/Img1.2/libimg12.so.1:${PORTSDIR}/japanese/libimg
 .else
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0/tkstep.tcl:${PORTSDIR}/x11-toolkits/tkstep80
 LIB_DEP_LIST=	img.1:${PORTSDIR}/graphics/libimg
