@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fonts/Makefile,v 1.13 2000/09/16 04:34:42 will Exp $
+# $FreeBSD: ports/x11-fonts/Makefile,v 1.14 2000/11/18 12:23:11 sanpei Exp $
 #
 
     SUBDIR += XFree86-4-font100dpi
@@ -12,6 +12,7 @@
     SUBDIR += bitmap-fonts
     SUBDIR += etlfonts
     SUBDIR += freefonts
+    SUBDIR += geminifonts
     SUBDIR += getbdf
     SUBDIR += intlfonts
     SUBDIR += jmk-x11-fonts
