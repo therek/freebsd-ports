@@ -3,7 +3,7 @@
 # Date created:		19 Feb 1998
 # Whom:			eivind
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xscavenger/Makefile,v 1.12 1999/08/25 06:06:07 obrien Exp $
 #
 
 DISTNAME=	xscavenger-135
@@ -13,10 +13,6 @@ MASTER_SITES=	http://www.xdr.com/dash/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eivind@FreeBSD.org
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN=		no sound support on the alpha yet
-.endif
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_IMAKE=	yes

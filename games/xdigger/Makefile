@@ -3,7 +3,7 @@
 # Date created:				29 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xdigger/Makefile,v 1.6 1999/08/25 06:05:05 obrien Exp $
 #
 
 DISTNAME=		xdigger-1.0.9
@@ -13,10 +13,6 @@ MASTER_SITE_SUBDIR=	games/arcade
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		andy@icc.surw.chel.su
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN=			no sound support on the alpha yet
-.endif
 
 USE_IMAKE=		yes
 MAN6=			xdigger.6

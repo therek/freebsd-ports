@@ -3,7 +3,7 @@
 # Date created:		27 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xgalaga/Makefile,v 1.12 1999/08/25 06:05:12 obrien Exp $
+# $FreeBSD: ports/games/xgalaga/Makefile,v 1.13 1999/08/31 06:44:40 mharo Exp $
 #
 
 DISTNAME=	xgalaga-2.0
@@ -14,10 +14,6 @@ MASTER_SITE_SUBDIR=	games
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
-.if ${MACHINE_ARCH} == "alpha"
-NOSOUND=	yes
-.endif
 
 HAS_CONFIGURE=	yes
 USE_X_PREFIX=	yes
