@@ -2,25 +2,27 @@
 # Date created:                         17 Oct 2000
 # Whom:                                 Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.3 2001/05/09 09:37:07 alex Exp $
+# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.4 2001/05/22 17:03:10 roam Exp $
 #
 
 PORTNAME=	gtk+licq
-PORTVERSION=	0.50.1
-PORTREVISION=	3
+PORTVERSION=	0.51
 CATEGORIES=	net
 MASTER_SITES=	http://gtk.licq.org/download/
 
 MAINTAINER=	roman@xpert.com
 
 BUILD_DEPENDS=	${LOCALBASE}/include/licq/licq_icqd.h:${PORTSDIR}/net/licq
-LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell
+LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell \
+		iconv.2:${PORTSDIR}/converters/libiconv
 RUN_DEPENDS=	licq:${PORTSDIR}/net/licq
 
+# It breaks the build for some reason
+#USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 USE_GTK=	yes
 WANT_GNOME=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
@@ -28,9 +30,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
-CONFIGURE_ARGS=	--enable-gnome
+CONFIGURE_ARGS+=	--enable-gnome
 .else
-CONFIGURE_ARGS=	--disable-gnome
+CONFIGURE_ARGS+=	--disable-gnome
 .endif
 
 post-patch:
@@ -42,11 +44,8 @@ post-patch:
 .if !defined(HAVE_GNOME)
 	@${PERL5} -pi -e \
 		's|^SUBDIRS =.*|SUBDIRS =|' ${WRKSRC}/doc/Makefile.in
-.endif
-
-post-configure:
 	@${PERL5} -pi -e \
-		's|^deplibs_check_method=.*|deplibs_check_method=pass_all|' \
-		${WRKSRC}/libtool
+		's|\sinstall-menuDATA||;s|\sinstall-ximianmenuDATA||' ${WRKSRC}/Makefile.in
+.endif
 
 .include <bsd.port.post.mk>
