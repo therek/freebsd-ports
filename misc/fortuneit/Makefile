@@ -2,7 +2,7 @@
 # Date created:        25-01-1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/fortuneit/Makefile,v 1.5 1999/11/12 21:04:53 jim Exp $
+# $FreeBSD: ports/misc/fortuneit/Makefile,v 1.6 2000/04/14 08:45:44 asami Exp $
 #
 
 PORTNAME=	fortuneit
@@ -18,7 +18,7 @@ NO_BUILD=	yes
 STRCMD=		/usr/games/strfile
 
 .if defined(INSTALL_OFFENSIVE)
-PLIST=		${PKGDIR}/PLIST.off
+PLIST=		${PKGDIR}/pkg-plist.off
 .endif
 
 pre-fetch:
