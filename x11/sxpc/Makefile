@@ -3,7 +3,7 @@
 # Date created:		22nd March 1995
 # Whom:			jkh@FreeBSD.org
 #
-# $FreeBSD: ports/x11/sxpc/Makefile,v 1.7 1999/08/31 02:50:39 peter Exp $
+# $FreeBSD: ports/x11/sxpc/Makefile,v 1.8 1999/12/24 03:59:00 jedgar Exp $
 #
 
 DISTNAME=	sxpc-1.4
@@ -18,7 +18,7 @@ USE_IMAKE=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=		${GZIP_CMD}
 EXTRACT_BEFORE_ARGS=	-dc
-EXTRACT_AFTER_ARGS=	|sh
+EXTRACT_AFTER_ARGS=	| ${SH}
 
 MAN1=		sxpc.1
 
