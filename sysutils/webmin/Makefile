@@ -2,12 +2,12 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.41 2001/04/04 20:44:17 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.42 2001/04/11 15:27:59 olgeni Exp $
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.85
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://webadmin.sourceforge.net/webmin/updates/ \
 		http://webadmin.sourceforge.net/webmin/download/
@@ -23,7 +23,7 @@ USE_PERL5=	yes
 SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
 .if defined(WITH_UPDATES)
-WEBMIN_MODULES=	net-0.85-1.wbm.gz apache-0.85-1.wbm.gz
+WEBMIN_MODULES=	net-0.85-1.wbm.gz apache-0.85-1.wbm.gz quota-0.85-1.wbm.gz bind8-0.85-1.wbm.gz
 .endif
 
 post-extract:
