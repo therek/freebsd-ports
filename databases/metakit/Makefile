@@ -2,26 +2,37 @@
 # Date created:		25 December 1999
 # Whom:			Russell L. Carter <rcarter@pinyon.org>
 #
-# $FreeBSD: ports/databases/metakit/Makefile,v 1.4 2000/06/16 08:48:07 sobomax Exp $
+# $FreeBSD: ports/databases/metakit/Makefile,v 1.5 2000/06/16 21:50:35 asami Exp $
 #
 
 PORTNAME=	metakit
-PORTVERSION=	2.0
-CATEGORIES=	databases
+PORTVERSION=	2.01
+CATEGORIES=	databases python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	rcarter@pinyon.org
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/builds
-USE_LIBTOOL=	yes
-INSTALLS_SHLIB=	yes
-LIBTOOLFILES=	../unix/aclocal.m4
-CONFIGURE_SCRIPT= ../unix/configure
-MAKE_ARGS=	CXXFLAGS="-Dq4_STD ${CFLAGS}"
+BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
-post-configure:
-	@cd ${WRKSRC} ; \
-	${PATCH} < ${FILESDIR}/patch.Makefile
+WRKSRC=		${WRKDIR}/${DISTNAME}/builds
+
+USE_LIBTOOL=	yes
+CONFIGURE_SCRIPT=	../unix/configure
+LIBTOOLFILES=	${CONFIGURE_SCRIPT}
+INSTALLS_SHLIB=	yes
+
+CONFIGURE_ARGS=	--enable-python
+MAKE_ARGS=	CXXFLAGS="-Dq4_STD ${CFLAGS} -fpermissive"
+ALL_TARGET=	all Mk4py.so
+
+post-install:
+	@${INSTALL_PROGRAM} ${WRKSRC}/Mk4py.so ${PREFIX}/lib/python1.5/site-packages
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/metakit
+	(cd ${WRKSRC}/../doc && ${TAR} -c -f - .) \
+		| (cd ${PREFIX}/share/doc/metakit && ${TAR} --unlink -x -f -)
+.endif
 
 .include <bsd.port.mk>
