@@ -4,7 +4,7 @@
 # Date created:			  Mon Oct 31 22:04:12 PST 1994
 # Whom:				  hsu
 #
-# $FreeBSD: ports/lang/Sather/Makefile,v 1.17 2000/02/13 03:22:57 obrien Exp $
+# $FreeBSD: ports/lang/Sather/Makefile,v 1.18 2000/02/13 19:55:01 obrien Exp $
 #
 
 DISTNAME=	sather-1.2.1
@@ -22,10 +22,10 @@ MAN1=		sacomp.1
 
 pre-configure:
 	@${PERL} -pi.in \
-		-e 's:%%CC%%:${CC}:g' \
-	        's:%%CFLAGS%%:${CFLAGS}:g' \
-	        's:%%LOCALBASE%%:${LOCALBASE}:g' \
-	        's:%%GMAKE%%:${GMAKE}:g' \
+		-e "s:%%CC%%:${CC}:g			;" \
+	        -e "s:%%CFLAGS%%:${CFLAGS}:g		;" \
+	        -e "s:%%LOCALBASE%%:${LOCALBASE}:g	;" \
+	        -e "s:%%GMAKE%%:${GMAKE}:g		;" \
 		${WRKSRC}/System/Common/CONFIG.proto
 
 do-install:
