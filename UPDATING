@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040605:
+  AFFECTS: users of www/apache2
+
+  The apache2 port must now be enabled / disabled and configured in
+  rc.conf.  See the pkg-message or script for details.
+
 20040602:
   AFFECTS: users of sysutils/mkisofs and sysutils/mkisofs-devel
 
@@ -249,4 +255,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.26 2004/06/01 21:03:28 lth Exp $
+$FreeBSD: ports/UPDATING,v 1.27 2004/06/02 17:17:45 netchild Exp $
