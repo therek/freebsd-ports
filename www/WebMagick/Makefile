@@ -2,11 +2,11 @@
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/WebMagick/Makefile,v 1.20 2001/08/09 03:44:23 ache Exp $
 #
 
 PORTNAME=	WebMagick
-PORTVERSION=    2.0
+PORTVERSION=    2.01
 CATEGORIES=	www graphics
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=     webmagick
@@ -36,7 +36,5 @@ post-install:
 		${INSTALL_DATA} webmagickrc ${PREFIX}/etc; \
 	fi; \
 	${INSTALL_DATA} webmagickrc ${PREFIX}/etc/webmagickrc.dist
-	cd ${WRKSRC}/icons; \
-		${INSTALL_DATA} blue_help.gif ${PREFIX}/www/data/webmagick/blue_c.gif
 
 .include <bsd.port.mk>
