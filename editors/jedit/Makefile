@@ -2,7 +2,7 @@
 # Date created:				22 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jedit/Makefile,v 1.11 2001/04/09 08:15:40 sobomax Exp $
+# $FreeBSD: ports/editors/jedit/Makefile,v 1.12 2001/04/23 10:39:42 sobomax Exp $
 #
 
 PORTNAME=	jedit
@@ -37,5 +37,9 @@ do-install:
 		${LOCALBASE}/bin/javavm installer.Install text
 	@${INSTALL_DATA} ${DISTDIR}/swingall.jar ${PREFIX}/share/java/jedit
 	@${INSTALL_SCRIPT} ${WRKDIR}/jedit.sh ${PREFIX}/bin/jedit
+
+.if defined(PARALLEL_PACKAGE_BUILD)
+FORBIDDEN=	hang
+.endif
 
 .include <bsd.port.mk>
