@@ -2,13 +2,14 @@
 # Date Created:				6 July 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkbe/Makefile,v 1.2 2000/07/06 13:37:13 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtkbe/Makefile,v 1.3 2000/07/21 17:46:54 sobomax Exp $
 #
 
 PORTNAME=	gtkbe
 PORTVERSION= 	200007091019
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/
+MASTER_SITES=	${MASTER_SITE_THEMES}
+MASTER_SITE_SUBDIR=	gtk
 DISTNAME=	GTK-Be-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org

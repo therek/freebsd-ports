@@ -2,13 +2,14 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtk-Mac2-theme/Makefile,v 1.1 2000/07/06 14:47:24 sobomax Exp $
 #
 
 PORTNAME=	gtk-Mac2-theme
 PORTVERSION= 	200003050858
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/
+MASTER_SITES=	${MASTER_SITE_THEMES}
+MASTER_SITE_SUBDIR=	gtk
 DISTNAME=	Mac2-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org

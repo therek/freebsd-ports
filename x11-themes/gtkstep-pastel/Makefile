@@ -2,13 +2,14 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkstep-pastel/Makefile,v 1.1.1.1 2000/06/13 09:24:29 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtkstep-pastel/Makefile,v 1.2 2000/08/21 11:35:30 sobomax Exp $
 #
 
 PORTNAME=	gtkstep-pastel
 PORTVERSION= 	200007290343
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/
+MASTER_SITES=	${MASTER_SITE_THEMES}
+MASTER_SITE_SUBDIR=	gtk
 DISTNAME=	${PORTNAME}-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org

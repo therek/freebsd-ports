@@ -2,13 +2,14 @@
 # Date Created:				21 August 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/engradient/Makefile,v 1.1 2000/08/21 12:16:44 sobomax Exp $
 #
 
 PORTNAME=	engradient
 PORTVERSION= 	200008151005
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/
+MASTER_SITES=	${MASTER_SITE_THEMES}
+MASTER_SITE_SUBDIR=	gtk
 DISTNAME=	EnGradient-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org

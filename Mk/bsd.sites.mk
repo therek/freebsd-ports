@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.8 2000/09/03 17:14:00 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.9 2000/09/05 01:04:52 steve Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -171,6 +171,10 @@ MASTER_SITE_RUBY+= \
 	ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/%SUBDIR%/ \
 	ftp://ftp.krnet.ne.jp/pub/ruby/%SUBDIR%/ \
 	ftp://mirror.nucba.ac.jp/mirror/ruby/%SUBDIR%/
+
+MASTER_SITE_THEMES+= \
+	ftp://ftp.themes.org/pub/themes/%SUBDIR%/ \
+	ftp://ftp.tuwien.ac.at/opsys/linux/themes.org/%SUBDIR%/
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \

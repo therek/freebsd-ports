@@ -2,13 +2,14 @@
 # Date Created:				21 August 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/colorstep/Makefile,v 1.1 2000/08/21 11:56:52 sobomax Exp $
 #
 
 PORTNAME=	colorstep
 PORTVERSION= 	200008190715
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.themes.org/pub/themes/gtk/
+MASTER_SITES=	${MASTER_SITE_THEMES}
+MASTER_SITE_SUBDIR=	gtk
 DISTNAME=	ColorStep-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
