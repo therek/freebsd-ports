@@ -2,7 +2,7 @@
 # Date created:				Wed Apr 25 11:45:11 SAST 2001
 # Whom:					markm@freebsd.org et al
 #
-# $FreeBSD: ports/games/hlserver-action/Makefile,v 1.1 2001/04/25 11:06:06 markm Exp $
+# $FreeBSD: ports/games/hlserver-action/Makefile,v 1.2 2001/04/25 17:14:58 lioux Exp $
 #
 
 PORTNAME=	action
@@ -16,7 +16,8 @@ MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/
 		ftp://ftp.gamesurf.de/pub/gamesurf/halflife/mods/actionhl/beta4/ \
 		ftp://ftp.wireplay.net/pub/downloads/fps/halflife/mods/action/linux/ \
 		ftp://ftp.blackmesa.de/mods/ahl/
-DISTFILES=	action.tgz
+DISTNAME=	action
+EXTRACT_SUFX=	.tgz
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
 
