@@ -2,11 +2,12 @@
 # Date created:			6 July 2001
 # Whom:				dd
 #
-# $FreeBSD: ports/editors/nvi-devel/Makefile,v 1.1 2001/07/07 23:45:40 dd Exp $
+# $FreeBSD: ports/editors/nvi-devel/Makefile,v 1.2 2001/07/11 08:49:24 dd Exp $
 #
 
 PORTNAME=	nvi
 PORTVERSION=	1.81.4
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	http://www.kotnet.org/~skimo/nvi/devel/ \
 		${MASTER_SITE_LOCAL}
@@ -15,7 +16,7 @@ MASTER_SITE_SUBDIR=	dd
 MAINTAINER=	dd@FreeBSD.org
 
 BUILD_DEPENDS=	iconv:${PORTSDIR}/converters/iconv
-LIB_DEPENDS=	db3.2:${PORTSDIR}/databases/db3
+LIB_DEPENDS=	db3.3:${PORTSDIR}/databases/db3
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/build.unix
 PATCH_WRKSRC=		${WRKDIR}
