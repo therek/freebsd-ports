@@ -2,7 +2,7 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.56 2001/05/28 12:39:01 sobomax Exp $
 #
 
 PORTNAME=	qpopper
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/%SUBDIR%/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.qualcomm.com/eudora/servers/unix/popper/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old
 DISTNAME=	${PORTNAME}${PORTVERSION}
+
+FORBIDDEN=	"Software contains buffer overflow"
 
 .include <bsd.port.pre.mk>
 
