@@ -3,11 +3,11 @@
 # Date created:			Mar 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/fastdb/Makefile,v 1.2 2001/07/11 16:43:13 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fastdb
-PORTVERSION=	2.23
+PORTVERSION=	2.41
 CATEGORIES=	databases
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 
