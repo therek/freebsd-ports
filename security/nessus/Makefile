@@ -3,7 +3,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.3 1999/08/31 01:51:19 peter Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.4 1999/12/01 05:26:53 foxfair Exp $
 #
 
 DISTNAME=	nessus-core-0.99.1
@@ -35,15 +35,15 @@ CONFIGURE_ENV=  GTKCONFIG="${GTK_CONFIG}"
 MAN1=		nessus.1
 MAN8=		nessusd.8
 
-.include <bsd.port.pre.mk>  
-                            
+.include <bsd.port.pre.mk>
+
 .if ${OSVERSION} >= 400001
 BROKEN=		"Can't be built successfully in -CURRENT"
-.endif 
+.endif
 
 post-install:
 		@${ECHO} "=========================================================="
-		@${ECHO} "Be sure to erase your old /usr/local/share/nessus!"
+		@${ECHO} "Be sure to erase your old ${PREFIX}/share/nessus!"
 		@${ECHO} "The syntax of nessusd.users and nessusd.rules has changed!"
 		@${ECHO} "=========================================================="
 
