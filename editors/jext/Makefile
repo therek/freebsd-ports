@@ -2,7 +2,7 @@
 # Date created:		17 Febrary 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jext/Makefile,v 1.5 2000/05/18 13:21:37 sobomax Exp $
+# $FreeBSD: ports/editors/jext/Makefile,v 1.6 2000/05/24 14:33:38 sobomax Exp $
 #
 
 PORTNAME=	jext
@@ -13,7 +13,8 @@ DISTFILES=	${PORTNAME}${EXTRACT_SUFX} swingall.jar
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/javavmwrapper \
+		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre
 
 FETCH_BEFORE_ARGS=	-b
 
@@ -24,7 +25,7 @@ USE_XLIB=	yes
 NO_BUILD=	yes
 
 JDK_VERSION=	1.1.8
-JAVAVM?=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java
+JAVAVM?=	${LOCALBASE}/bin/javavm
 
 .if defined(USE_JIT)
 RUN_DEPENDS+=	${LOCALBASE}/jdk${JDK_VERSION}/lib/${ARCH}/green_threads/libshujit.so:${PORTSDIR}/java/shujit
