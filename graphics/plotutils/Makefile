@@ -3,10 +3,10 @@
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.8 1999/09/10 12:20:43 asami Exp $
+# $FreeBSD$
 #
 
-DISTNAME=	plotutils-2.2
+DISTNAME=	plotutils-2.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	plotutils
@@ -15,8 +15,9 @@ MAINTAINER=	chuckr@FreeBSD.org
 
 USE_XLIB=	yes
 USE_LIBTOOL=	yes
+USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-libplotter
+CONFIGURE_ARGS=	--enable-libplotter --enable-libxmi
 
 .ifdef HAVE_MOTIF
 CONFIGURE_ARGS+=	--with-motif
