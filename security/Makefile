@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.139 2000/10/28 06:14:37 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.140 2000/10/28 12:44:14 jeh Exp $
 #
 
     SUBDIR += aafid2
@@ -44,6 +44,7 @@
     SUBDIR += krb5
     SUBDIR += kssh
     SUBDIR += l0pht-watch
+    SUBDIR += l0phtcrack
     SUBDIR += libident
     SUBDIR += libmcrypt
     SUBDIR += libmcrypt-nm
