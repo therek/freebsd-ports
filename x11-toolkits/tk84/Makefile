@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.40 2000/06/16 08:19:29 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.41 2000/06/16 21:52:17 asami Exp $
 #
 
 PORTNAME=	tk
@@ -23,8 +23,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.3
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=libtk83.so.1
 MAKE_ENV=	SHORT_TK_VER=83
-PKGINSTALL=     ${PKGDIR}/INSTALL.wish
-PKGDEINSTALL=	${PKGDIR}/DEINSTALL.wish
+PKGINSTALL=     ${PKGDIR}/pkg-install.wish
+PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.wish
 
 PLIST_SUB=	TK_VER=8.3 SHORT_TK_VER=83
 
