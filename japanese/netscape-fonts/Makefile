@@ -2,7 +2,7 @@
 # Date created:		22 Jun 1998
 # Whom:                 sada
 #
-# $FreeBSD: ports/japanese/netscape-fonts/Makefile,v 1.8 2000/04/11 14:15:34 knu Exp $
+# $FreeBSD: ports/japanese/netscape-fonts/Makefile,v 1.9 2000/09/12 11:08:02 asami Exp $
 #
 
 PORTNAME=	netscape-fonts
@@ -23,7 +23,7 @@ USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 4
-RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS+=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
 .endif
 
 NO_BUILD=	yes
