@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.314 2000/10/28 08:14:43 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.315 2000/10/29 06:42:57 will Exp $
 #
 
     SUBDIR += 3dc
@@ -167,6 +167,7 @@
     SUBDIR += starlanes
     SUBDIR += sxsame
     SUBDIR += tank
+    SUBDIR += teg
     SUBDIR += tetrinet-x
     SUBDIR += tinymux
     SUBDIR += tkmoo
