@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.101 1999/12/29 07:21:31 steve Exp $
+# $FreeBSD: ports/print/Makefile,v 1.102 1999/12/29 07:26:50 steve Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -23,6 +23,7 @@
     SUBDIR += detex
     SUBDIR += dvi2tty
     SUBDIR += dvi2xx
+    SUBDIR += dvipdfm
     SUBDIR += dvips
     SUBDIR += dvips2ascii
     SUBDIR += dviselect
