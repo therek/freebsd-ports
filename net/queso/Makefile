@@ -4,16 +4,15 @@
 # Whom:				  Wu Ching-hong <woju@freebsd.ee.ntu.edu.tw>
 # 				  and David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/queso/Makefile,v 1.8 2000/03/22 00:27:35 obrien Exp $
+# $FreeBSD: ports/net/queso/Makefile,v 1.9 2000/04/09 18:13:15 cpiazza Exp $
 #
 
 PORTNAME=	queso
 PORTVERSION=	980922
 CATEGORIES=	net security
-MASTER_SITES=	ftp://ftp.ee.lbl.gov/  \
-		${MASTER_SITE_SUNSITE} \
-		ftp://freebsd.ntu.edu.tw/freebsd/_distfiles/
-MASTER_SITE_SUBDIR=	distributions/trinux/src/netmap
+MASTER_SITES=	ftp://freebsd.ntu.edu.tw/FreeBSD/distfiles/  \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	obrien
 
 MAINTAINER=	obrien@FreeBSD.org
 
