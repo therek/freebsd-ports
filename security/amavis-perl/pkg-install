@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Roman Shterenzon <roman@xpert.com> 27/12/2000 
-# $FreeBSD$
+# $FreeBSD: ports/security/amavis-perl/pkg-install,v 1.1 2001/01/07 07:38:32 will Exp $
 
 use strict;
 
@@ -20,7 +20,7 @@ elsif ( -f '/etc/sendmail.cf' ) {
 my $cf="$cfg/sendmail.cf";
 my $new="$cfg/amavis.cf";
 
-print "===> Adding neccessary hooks to sendmail.cf file\n";
+print "===> Adding necessary hooks to sendmail.cf file\n";
 
 open(IN, $cf) || die "Cannot open $cf";
 open(OUT, ">$new") || die "Cannot create $new";
