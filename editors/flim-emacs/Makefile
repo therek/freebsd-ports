@@ -2,7 +2,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-emacs/Makefile,v 1.12 2000/04/14 06:20:21 asami Exp $
+# $FreeBSD: ports/editors/flim-emacs/Makefile,v 1.13 2000/07/12 15:51:13 shige Exp $
 #
 
 PORTNAME=	flim
@@ -46,6 +46,10 @@ PLIST_SUB+=	FLIMDOCDIR=${FLIMDOCDIR} FLIM_SETUPEL=${FLIM_SETUPEL} \
 .if defined(EMACS_PACKAGESDIR)
 BUILD_DEPENDS+=	${LOCALBASE}/${EMACS_PACKAGESDIR}/lisp/apel/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
 RUN_DEPENDS+=	${LOCALBASE}/${EMACS_PACKAGESDIR}/lisp/apel/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
+.elif (${EMACS_PORT_NAME} == "xemacs") || (${EMACS_PORT_NAME} == "xemacs20")
+# depends on apel (case of xemacs-20.x or former)
+BUILD_DEPENDS+=	${LOCALBASE}/${EMACS_LIBDIR}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
+RUN_DEPENDS+=	${LOCALBASE}/${EMACS_LIBDIR}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
 .else
 # depends on apel (case of other emacsen etc...)
 BUILD_DEPENDS+=	${LOCALBASE}/${EMACS_LIBDIR_WITH_VER}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
