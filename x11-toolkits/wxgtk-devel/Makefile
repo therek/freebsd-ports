@@ -3,7 +3,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.3 1999/09/19 20:05:34 nectar Exp $
 #
 
 DISTNAME=	wxGTK-2.1.0-b9
@@ -15,7 +15,7 @@ EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	nectar@FreeBSD.ORG
 
-LIB_DEPENDS=	gtk12.1:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
