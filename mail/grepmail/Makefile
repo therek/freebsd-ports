@@ -2,7 +2,7 @@
 # Date created:				20 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/mail/grepmail/Makefile,v 1.21 2001/07/31 19:59:17 jedgar Exp $
+# $FreeBSD: ports/mail/grepmail/Makefile,v 1.22 2001/08/24 21:32:50 tobez Exp $
 #
 
 PORTNAME=	grepmail
@@ -26,5 +26,6 @@ post-extract:
 
 post-patch:
 	@${PERL} -pi -e 's!<STDIN>!"n"!' ${WRKSRC}/Makefile.PL
+	@${PERL} -pi -e 's|_PERL_|${PERL}|' ${WRKSRC}/grepmail
 
 .include <bsd.port.mk>
