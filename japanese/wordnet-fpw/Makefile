@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.2 2000/04/11 14:13:13 knu Exp $
+# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.1.1.1 2000/06/23 18:23:04 taoka Exp $
 #
 
 PORTNAME=	wordnet-fpw
@@ -34,7 +34,7 @@ post-extract:
 
 do-build:
 		cd ${WRKSRC}; \
-		fpwmake; \
+		fpwmake > /dev/null; \
 		fpwmake catalogs
 
 do-install:

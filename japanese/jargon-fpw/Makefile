@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.2 2000/04/11 14:13:13 knu Exp $
+# $FreeBSD: ports/japanese/jargon-fpw/Makefile,v 1.1.1.1 2000/06/23 18:31:05 taoka Exp $
 #
 
 PORTNAME=	jargon-fpw
@@ -44,7 +44,7 @@ post-patch:
 
 do-build:
 	cd ${WRKSRC}; \
-	fpwmake -f ${MAKEFILE}; \
+	fpwmake -f ${MAKEFILE} > /dev/null; \
 	fpwmake -f ${MAKEFILE} catalogs
 
 do-install:
