@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.629 2005/01/31 16:37:59 girgen Exp $
+# $FreeBSD: ports/MOVED,v 1.630 2005/02/02 20:27:43 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1387,3 +1387,4 @@ databases/postgresql73|databases/postgresql73-server|2005-01-30|port split into 
 databases/postgresql7|databases/postgresql74-server|2005-01-30|port split into postgresql74-server and -client
 x11-themes/lila-xffm||2005-02-02|don't work with new xfce4
 x11-themes/lila-xfce4-panel||2005-02-02|don't work with new xfce4
+print/teTeX-latex2e||2005-02-06|obsolete by new teTeX-texmf
