@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mutt-devel/pkg-plist,v 1.38 2001/12/03 15:20:21 petef Exp $
+@comment $FreeBSD: ports/mail/mutt-devel/pkg-plist,v 1.39 2002/01/05 00:23:20 jim Exp $
 bin/flea
 bin/mutt
 bin/mutt_dotlock
@@ -50,6 +50,7 @@ share/locale/zh_TW/LC_MESSAGES/mutt.mo
 %%PORTDOCS%%share/doc/mutt/language.txt
 %%PORTDOCS%%share/doc/mutt/language50.txt
 %%PORTDOCS%%share/doc/mutt/manual.txt
+%%PORTDOCS%%share/doc/mutt/manual.latin1
 %%PORTDOCS%%share/doc/mutt/patch-notes.txt
 %%PORTDOCS%%share/doc/mutt/samples/iconv/iconv.aix-3.2.5.rc
 %%PORTDOCS%%share/doc/mutt/samples/iconv/iconv.aix-4.1.5.rc
@@ -81,7 +82,6 @@ share/locale/zh_TW/LC_MESSAGES/mutt.mo
 %%PORTDOCS%%share/doc/mutt/samples/sample.muttrc-tlr
 %%PORTDOCS%%@dirrm share/doc/mutt/samples/iconv
 %%PORTDOCS%%@dirrm share/doc/mutt/samples
-%%SUB_HTML%%share/doc/mutt/manual.latin1
 %%SUB_HTML%%share/doc/mutt/html/manual.html
 %%SUB_HTML%%share/doc/mutt/html/manual_toc.html
 %%SUB_HTML%%share/doc/mutt/html/manual1.html
