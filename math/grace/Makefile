@@ -2,7 +2,7 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Köller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.18 2001/04/25 05:59:19 lkoeller Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.19 2001/07/09 08:16:48 lkoeller Exp $
 #
 
 PORTNAME=	grace
@@ -26,7 +26,7 @@ LIB_DEPENDS=	Xbae.8:${PORTSDIR}/x11-toolkits/xbae 	\
 		tiff.4:${PORTSDIR}/graphics/tiff	\
 		jpeg.9:${PORTSDIR}/graphics/jpeg	\
 		png.4:${PORTSDIR}/graphics/png		\
-		t1.2:${PORTSDIR}/devel/t1lib		\
+		t1.3:${PORTSDIR}/devel/t1lib		\
 		XmHTML.1:${PORTSDIR}/x11-toolkits/xmhtml \
 		pdf.3:${PORTSDIR}/print/pdflib3
 
