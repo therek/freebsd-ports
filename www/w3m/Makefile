@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.9 2000/02/03 03:28:22 obrien Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.10 2000/02/06 22:24:32 kris Exp $
 #
 
 DISTNAME=	w3m-${W3M_VER}
@@ -48,11 +48,15 @@ SSL_CFLAGS=	-I${OPENSSLINC}/openssl -I${OPENSSLINC}
 SSL_LIBS=	-L${OPENSSLLIB} -lssl -lcrypto
 
 SED_CMD+=	-e "s,undef USE_SSL,define USE_SSL,g"
-.endif
 
-EXTRA_SSL_LIBS=	-lRSAglue -lrsaref -L${LOCALBASE}/lib 
+.if defined(OPENSSL_RSAREF)
+EXTRA_SSL_LIBS=	-lRSAglue -L${LOCALBASE}/lib -lrsaref
+.endif
 MAKE_FLAGS+=	DEFS="${SSL_CFLAGS} -I${LOCALBASE}/include" \
 		LIBS="${SSL_LIBS} ${EXTRA_SSL_LIBS}"
+.else
+MAKE_FLAGS+=	DEFS="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib"
+.endif
 
 post-configure:
 	@${CP} ${TARGET} ${TARGET}.in
