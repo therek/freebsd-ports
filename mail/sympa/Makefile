@@ -2,11 +2,11 @@
 # Date created:				29 November 2003
 # Whom:					Autrijus Tang <autrijus@autrijus.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sympa/Makefile,v 1.6 2004/03/17 07:11:06 demon Exp $
 #
 
 PORTNAME=	sympa
-PORTVERSION?=	4.0.b2
+PORTVERSION?=	4.1.1
 CATEGORIES=	mail
 MASTER_SITES?=	http://www.sympa.org/distribution/
 
