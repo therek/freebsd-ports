@@ -3,12 +3,11 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.1.1.1 1999/12/01 05:35:28 foxfair Exp $
 #
 
 DISTNAME=	libnasl-0.99.1
 PKGNAME=	nessus-libnasl-0.99.1
-
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \
@@ -31,9 +30,9 @@ WRKSRC=		${WRKDIR}/libnasl
 
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.pre.mk>  
-                            
-.if ${OSVERSION} >= 400001     
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400001
 BROKEN=		"Can't be built successfully in -CURRENT"
 .endif
 
