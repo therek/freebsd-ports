@@ -3,7 +3,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex-xemacs/Makefile,v 1.8 1999/08/31 01:45:31 peter Exp $
+# $FreeBSD: ports/print/yatex-xemacs/Makefile,v 1.9 1999/09/30 07:02:26 taoka Exp $
 #
 
 PKGNAME=	yatex-xemacs-1.67
@@ -12,6 +12,5 @@ XEMACS=		yes
 
 MASTERDIR=	${.CURDIR}/../yatex
 COMMENT=	${.CURDIR}/pkg/COMMENT
-PLIST=		${.CURDIR}/pkg/PLIST
 
 .include	"${MASTERDIR}/Makefile"
