@@ -2,7 +2,7 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew2-xemacs21-mule/Makefile,v 1.1 2001/08/25 07:47:05 kiri Exp $
+# $FreeBSD$
 #
 
 MAINTAINER=	kiri@FreeBSD.org
@@ -11,7 +11,7 @@ MAINTAINER=	kiri@FreeBSD.org
 MEW_MAJOR_VER=	2
 
 # This is a slave port.
-MASTERDIR=	${.CURDIR}/../mew${MEW_MAJOR_VER}-emacs20
+MASTERDIR=	${.CURDIR}/../mew${MEW_MAJOR_VER}
 
 # Set emacs port
 EMACS_PORT_NAME=	xemacs21-mule
