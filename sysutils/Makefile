@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.132 2000/10/28 02:18:06 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.133 2000/10/29 01:14:36 will Exp $
 #
 
     SUBDIR += LPRng
@@ -76,6 +76,7 @@
     SUBDIR += psmisc
     SUBDIR += pwgen
     SUBDIR += rdate
+    SUBDIR += rotate
     SUBDIR += rtty
     SUBDIR += roottail
     SUBDIR += ruby-syslog
