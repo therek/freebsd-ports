@@ -2,7 +2,7 @@
 # Date created:         7 November 1996
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.19 2000/09/21 08:36:28 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XFree86-contrib
@@ -14,6 +14,7 @@ DISTNAME=	X336contrib
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	XFree86 contrib programs
 
 # Define FORCE_PACKAGE from the command line if you want to override
 # this and build a package

@@ -2,7 +2,7 @@
 # Date created:				4 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/finder/Makefile,v 1.4 2000/12/07 15:10:16 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	finder
@@ -11,6 +11,7 @@ CATEGORIES=	x11 gnome
 MASTER_SITES=	http://lfh.hkcampus.net/~lfh-lck/programs/finder/
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A small program that creates a finder bar on your Gnome system
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

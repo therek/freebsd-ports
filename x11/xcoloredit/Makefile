@@ -2,7 +2,7 @@
 # Date created:		6 Jun 1997
 # Whom:			Satoshi TAOKA
 #
-# $FreeBSD: ports/x11/xcoloredit/Makefile,v 1.6 2001/02/05 16:18:27 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcoloredit
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Find colour values by graphical colour mixing
 
 USE_IMAKE=	yes
 MAN1=		xcoloredit.1

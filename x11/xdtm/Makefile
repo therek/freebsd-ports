@@ -2,7 +2,7 @@
 # Date created:         		26th April 1995
 # Whom:                 		gpalmer
 #
-# $FreeBSD: ports/x11/xdtm/Makefile,v 1.11 2000/08/03 09:28:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xdtm
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=		gpalmer@FreeBSD.org
+COMMENT=	A graphical shell for the X Window System
 
 USE_IMAKE=		yes
 USE_XPM=		yes

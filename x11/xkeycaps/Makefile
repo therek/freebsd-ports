@@ -2,7 +2,7 @@
 # Date created:         12 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xkeycaps/Makefile,v 1.15 2001/02/05 16:18:32 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xkeycaps
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.jwz.org/xkeycaps/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Graphically display and edit the keyboard mapping
 
 USE_IMAKE=	yes
 MAN1=		xkeycaps.1

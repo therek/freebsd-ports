@@ -2,7 +2,7 @@
 # Date created:        23 March 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/x11/xprompt/Makefile,v 1.8 2000/06/14 05:44:53 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xprompt
@@ -12,6 +12,7 @@ MASTER_SITES=   ${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	mph@freebsd.org
+COMMENT=	Displays a dialog box and prompts user for text
 
 USE_IMAKE=	yes
 

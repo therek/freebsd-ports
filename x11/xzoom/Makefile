@@ -2,7 +2,7 @@
 # Date created:        30 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11/xzoom/Makefile,v 1.6 2000/04/13 19:11:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xzoom
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	libs/X
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Magnify, rotate, mirror the image on the X screen
 
 USE_IMAKE=	yes
 MAN1=		xzoom.1

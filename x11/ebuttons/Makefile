@@ -2,7 +2,7 @@
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/ebuttons/Makefile,v 1.2 2000/04/13 19:09:17 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	E-buttons
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.moodfarm.demon.co.uk/download/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jhb@FreeBSD.org
+COMMENT=	A simple epplet that contains several buttons used to launch programs
 
 LIB_DEPENDS=	epplet.1:${PORTSDIR}/x11-wm/epplets
 

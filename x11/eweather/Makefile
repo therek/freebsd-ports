@@ -2,7 +2,7 @@
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/eweather/Makefile,v 1.2 2000/04/13 19:09:22 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	E-Weather
@@ -11,6 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	http://pfnet.org/~cy/
 
 MAINTAINER=	jhb@FreeBSD.org
+COMMENT=	Weather epplet for Enlightenment similar to wmWeather
 
 RUN_DEPENDS=	GrabWeather:${PORTSDIR}/misc/wmweather
 LIB_DEPENDS=	epplet.1:${PORTSDIR}/x11-wm/epplets

@@ -2,7 +2,7 @@
 # Date created:				5 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnomeres_applet/Makefile,v 1.2 2000/10/05 07:17:24 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomeres_applet
@@ -11,6 +11,7 @@ CATEGORIES=	x11 gnome
 MASTER_SITES=	http://www.sci.fi/~syrjala/gnomeres/
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A GNOME applet for changing display modes
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
