@@ -1,14 +1,14 @@
 # New ports collection makefile for:    speak_freely
 # Original WWW site: http://www.fourmilab.ch/speakfree/unix/index.html
-# Version required:     6.1c
+# Version required:     7.1
 # Date created:         18 Apr 1996
 #
-# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.8 1999/08/31 06:48:05 mharo Exp $
+# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.9 1999/12/23 07:56:58 ache Exp $
 #
 
-DISTNAME=       speak_freely-6.1c
+DISTNAME=       speak_freely-7.1
 CATEGORIES=     mbone audio security
-MASTER_SITES=   http://www.fourmilab.ch/speakfree/unix/prior-releases/6.1/
+MASTER_SITES=   http://www.fourmilab.ch/speakfree/unix/
 
 MAINTAINER=     ports@FreeBSD.org
 
