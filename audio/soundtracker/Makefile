@@ -2,20 +2,20 @@
 # Date created:        28 November 1999
 # Whom:                kzentner
 #
-# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.3 2000/02/20 04:18:24 ade Exp $
+# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.4 2000/04/08 21:24:27 mharo Exp $
 #
 
 PORTNAME=	soundtracker
-PORTVERSION=	0.3.10
+PORTVERSION=	0.5.3
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.3/
+MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.5/
 
 MAINTAINER=	kzentner@u.washington.edu
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 .if defined(USE_GNOME)
-LIB_DEPENDS+=	gnome.3:${PORTSIDR}/x11/gnomelibs
+LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
 .endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -23,7 +23,7 @@ GNU_CONFIGURE=	YES
 
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
-USE_X_PREFIX=   yes
+USE_X_PREFIX=	yes
 
 .if defined(USE_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
