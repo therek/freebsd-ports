@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.267 2004/10/03 15:51:49 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.268 2004/10/03 22:49:55 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -351,7 +351,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<name>samba</name>
 	<name>ja-samba</name>
 	<range><lt>2.2.12</lt></range>
-	<range><ge>3</ge><lt>3.0.6</lt></range>
+	<range><ge>3.a</ge><lt>3.0.6,1</lt></range>
       </package>
     </affects>
     <description>
