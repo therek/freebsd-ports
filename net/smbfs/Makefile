@@ -2,15 +2,23 @@
 # Date created:				2th Dec 2000
 # Whom:					Jaedoc Lee <tokky@fdns.org>
 #
-# $FreeBSD: ports/net/smbfs/Makefile,v 1.1 2001/01/30 12:16:05 bp Exp $
+# $FreeBSD: ports/net/smbfs/Makefile,v 1.2 2001/01/31 03:36:09 bp Exp $
 #
 
 PORTNAME=	smbfs
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.butya.kz/pub/smbfs/
 
-MAINTAINER=	tokky@fdns.org
+MAINTAINER=	bp@freebsd.org
+
+NO_PACKAGE=     "Depends on kernel"
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
+BROKEN=		"OS versions prior to 400000 is not supported"
+.endif
 
 .if defined(WITH_ICONV)
 pre-fetch:
@@ -40,4 +48,4 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/examples/dot.nsmbrc ${LOCALBASE}/etc/nsmb.conf.sample
 	@${INSTALL_SCRIPT} ${WRKSRC}/examples/smbfs.sh.sample ${LOCALBASE}/etc/rc.d/smbfs.sh.sample
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
