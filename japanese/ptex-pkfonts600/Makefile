@@ -1,9 +1,8 @@
 # New ports collection makefile for:   ptex-pkfonts
-# Version required:    ?
 # Date created:        24 Dec 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/ptex-pkfonts600/Makefile,v 1.1 1999/12/27 01:15:39 steve Exp $
+# $FreeBSD: ports/japanese/ptex-pkfonts600/Makefile,v 1.2 2000/01/02 01:50:56 steve Exp $
 #
 
 RESOLUTION=	600

@@ -1,17 +1,16 @@
 # New ports collection makefile for:	PostgreSQL-j
-# Version required:	6.5.3
 # Date created:		09 Nov 1999
 # Whom:			Ichiro Fukuhara <ichiro@ichiro.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.11 1999/11/23 11:04:31 kuriyama Exp $
 #
 
-DISTNAME=	postgresql-6.5.3
-PKGNAME=	ja-postgresql-6.5.3
+PORTNAME=	postgresql
+PORTVERSION=	6.5.3
 CATEGORIES=	japanese databases
-MASTER_SITES=	ftp://ftp.postgresql.org/pub/ \
-		ftp://ftp.jaist.ac.jp/pub/dbms/PostgreSQL/ \
-		ftp://ftp.sra.co.jp/pub/cmd/postgres/6.5.3/
+MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/dbms/PostgreSQL/ \
+		ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION}/ \
+		ftp://ftp.postgresql.org/pub/
 
 MAINTAINER=	ichiro@ichiro.org
 

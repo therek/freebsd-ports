@@ -1,16 +1,15 @@
 # New ports collection makefile for:   recjis
-# Version required:    1.0
 # Date created:        05 February 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/recjis/Makefile,v 1.4 1999/08/25 05:26:43 obrien Exp $
+# $FreeBSD: ports/japanese/recjis/Makefile,v 1.5 2000/01/07 02:27:24 nakai Exp $
 #
 
-DISTNAME=	recjis-1.0
-PKGNAME=	ja-recjis-1.0
+PORTNAME=	recjis
+PORTVERSION=	1.0
 CATEGORIES+=	japanese
 MASTER_SITES=	ftp://ftp.leo.chubu.ac.jp/pub/tools/
-DISTFILES=	recjis.tar.gz
+DISTFILES=	${PORTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nakai@FreeBSD.org
 

@@ -1,21 +1,16 @@
 # New ports collection makefile for:	ja-tcsh NLS catalog (Rishu)
-# Version required:	6.08.05
 # Date created:		19 August 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-rishu/Makefile,v 1.4 1999/08/25 05:27:23 obrien Exp $
+# $FreeBSD: ports/japanese/tcsh-nls-rishu/Makefile,v 1.5 1999/08/31 06:46:29 mharo Exp $
 #
 
-DISTNAME=	tcsh-6.08.05.add2
-PKGNAME=	ja-tcsh-nls-rishu-6.08.05
-CATEGORIES=	japanese shells
-MASTER_SITES=	${MASTER_SITE_PORTS_JP}
+CATALOGNAME=	rishu
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../tcsh-nls-generic
 PKGDIR=		${.CURDIR}/pkg
 PLIST=		${MASTERDIR}/pkg/PLIST
-NLSSRC=		${DISTNAME}/nls/ja.rishu
 
 .include	"${MASTERDIR}/Makefile"

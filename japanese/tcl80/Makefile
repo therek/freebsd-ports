@@ -1,22 +1,22 @@
 # New ports collection makefile for:	ja-tcl8.0
-# Version required:	8.0
 # Date created:		23 Jan 1998
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.11 1999/09/07 00:09:36 taoka Exp $
+# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.12 1999/12/23 18:18:11 steve Exp $
 #
 
-DISTNAME=	tcl8.0.5
-PKGNAME=	ja-tcl-8.0.5
+PORTNAME=	tcl
+PORTVERSION=	8.0.5
 CATEGORIES=	japanese lang tcl80
-MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
+MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl${VERSION:S/./_/}/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 PATCH_SITES=	ftp://ftp.sra.co.jp/pub/lang/tcl/jp/
-PATCHFILES=	tcl8.0.5jp1.7.patch.gz
+PATCHFILES=	${PORTNAME}${PORTVERSION}jp1.7.patch.gz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
-VERSION=	8.0
+VERSION=	${PORTVERSION:R}
 TOPDIR=		${WRKDIR}/${DISTNAME}
 WRKSRC=		${TOPDIR}/unix
 .if defined(PATCH_DEBUG)

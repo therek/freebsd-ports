@@ -1,12 +1,10 @@
 # New ports collection makefile for:	ONEW for Canna and Wnn6
-# Version required:	jvim2.0r+onew2.2.10
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/onew-canna+wnn6/Makefile,v 1.5 1999/08/25 05:26:05 obrien Exp $
 #
 
-PKGNAME=	ja-onew-canna+wnn6-2.2.10
 CANNA=		yes
 WNN6=		yes
 

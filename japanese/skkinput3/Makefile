@@ -1,13 +1,12 @@
 # New ports collection makefile for:	skkinput
-# Version required:	2.00
 # Date created:		28 Jan 1998
 # Whom:			Murata Shuuichirou <mrt@mickey.ai.kyutech.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/skkinput/Makefile,v 1.7 1999/08/25 05:27:03 obrien Exp $
 #
 
-DISTNAME=	skkinput-2.03
-PKGNAME=	ja-skkinput-2.03
+PORTNAME=	skkinput
+PORTVERSION=	2.03
 CATEGORIES=	japanese x11
 MASTER_SITES=	http://member.nifty.ne.jp/Tatari_SAKAMOTO/
 

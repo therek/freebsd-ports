@@ -1,21 +1,16 @@
 # New ports collection makefile for:	ja-tcsh NLS catalog (Merril)
-# Version required:	6.08.05
 # Date created:		6 January 1999
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-merril/Makefile,v 1.4 1999/08/25 05:27:20 obrien Exp $
+# $FreeBSD: ports/japanese/tcsh-nls-merril/Makefile,v 1.5 1999/08/31 06:46:26 mharo Exp $
 #
 
-DISTNAME=	tcsh-6.08.05.add2
-PKGNAME=	ja-tcsh-nls-merril-6.08.05
-CATEGORIES=	japanese shells
-MASTER_SITES=	${MASTER_SITE_PORTS_JP}
+CATALOGNAME=	merril
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../tcsh-nls-generic
 PKGDIR=		${.CURDIR}/pkg
 PLIST=		${MASTERDIR}/pkg/PLIST
-NLSSRC=		${DISTNAME}/nls/ja.merril
 
 .include	"${MASTERDIR}/Makefile"

@@ -1,21 +1,22 @@
 # New ports collection makefile for:	platex209-euc
-# Version required:	2.09
 # Date created:		01 Jan 1998
 # Whom:			Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/platex209-euc/Makefile,v 1.2 1999/08/25 05:26:26 obrien Exp $
+# $FreeBSD: ports/japanese/platex209-euc/Makefile,v 1.3 1999/08/28 01:57:19 mharo Exp $
 #
 
-DISTNAME=	platex209
-PKGNAME=	ja-platex209-euc-1.0
+PORTNAME=	platex209
+PORTVERSION=	1.0
+PKGNAMESUFFIX=	-euc
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/platex/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
 
-BUILD_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex-euc \
+BUILD_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex${PKGNAMESUFFIX} \
 		nkf:${PORTSDIR}/japanese/nkf
-RUN_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex-euc
+RUN_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex${PKGNAMESUFFIX}
 
 MANUAL_PACKAGE_BUILD=	incompatible with other versions of platex209-*
 

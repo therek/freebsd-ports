@@ -1,15 +1,15 @@
 # New ports collection makefile for:   ptex-pkfonts
-# Version required:    ?
 # Date created:        24 Dec 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/ptex-pkfonts300/Makefile,v 1.1 1999/12/27 01:15:33 steve Exp $
+# $FreeBSD: ports/japanese/ptex-pkfonts300/Makefile,v 1.2 2000/01/02 01:50:54 steve Exp $
 #
 
-DISTNAME=	ptex-pkfonts
-PKGNAME?=	ja-ptex-pkfonts${RESOLUTION}-1.0
+PORTNAME=	ptex-pkfonts
+PORTVERSION=	1.0
+PKGNAMESUFFIX=	${RESOLUTION}
 CATEGORIES=	japanese print
-DISTFILES=	#null
+DISTFILES=	# none
 
 MAINTAINER=	inagaki@tg.rim.or.jp
 

@@ -1,13 +1,12 @@
 # New ports collection makefile for: tvi
-# Version required:	0.9.2
 # Date created:		3 Jan 1999
 # Whom:			SUGIMURA Takashi <sugimura@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tvi/Makefile,v 1.4 1999/08/25 05:27:34 obrien Exp $
+# $FreeBSD: ports/japanese/tvi/Makefile,v 1.5 1999/08/31 06:46:34 mharo Exp $
 #
 
-DISTNAME=	tvi-0.9.2
-PKGNAME=	ja-tvi-0.9.2
+PORTNAME=	tvi
+PORTVERSION=	0.9.2
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.kt.rim.or.jp/~motomu/tvi/Arc/
 

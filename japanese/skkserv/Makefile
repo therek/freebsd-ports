@@ -1,15 +1,15 @@
 # New ports collection makefile for:	skkserv
-# Version required:	9.6
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skkserv/Makefile,v 1.7 1999/08/25 05:27:04 obrien Exp $
+# $FreeBSD: ports/japanese/skkserv/Makefile,v 1.8 1999/08/27 22:29:29 mharo Exp $
 #
 
-DISTNAME=	skk9.6
-PKGNAME=	ja-skkserv-9.6
+PORTNAME=	skkserv
+PORTVERSION=	9.6
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/9.6/
+MASTER_SITES=	ftp://skk.kuis.kyoto-u.ac.jp/skk/${PORTVERSION}/
+DISTNAME=	skk${PORTVERSION}
 
 MAINTAINER=	matusita@jp.freebsd.org
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${PREFIX}/share/skk/${SKKJISYO}:${SKK_MASTERDIR}
 SKKJISYO_SIZE?=	L
 SKKJISYO?=	SKK-JISYO.${SKKJISYO_SIZE}
 SKK_MASTERDIR=	${.CURDIR}/../../japanese/skk-jisyo
-WRKSRC=		${WRKDIRPREFIX}${SKK_MASTERDIR}/work/skk-9.6
+WRKSRC=		${WRKDIRPREFIX}${SKK_MASTERDIR}/work/skk-${PORTVERSION}
 MAKE_ARGS=	SUBDIRS='skkserv'
 
 STARTUP_SCRIPT= ${PREFIX}/etc/rc.d/skkserv.sh
