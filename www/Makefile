@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.269 2000/11/13 17:27:21 sobomax Exp $
+# $FreeBSD: ports/www/Makefile,v 1.270 2000/11/25 20:19:18 demon Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -35,6 +35,7 @@
     SUBDIR += checkbot
     SUBDIR += chimera
     SUBDIR += chimera2
+    SUBDIR += comclear
     SUBDIR += comline
     SUBDIR += css-mode.el
     SUBDIR += decss
