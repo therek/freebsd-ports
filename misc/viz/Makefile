@@ -3,12 +3,12 @@
 # Date created:                      8 Mar 1997
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/viz/Makefile,v 1.2 1999/08/25 07:23:00 obrien Exp $
 #
 
 DISTNAME=	viz-1.1.1
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.ptc.spbu.ru/pub/unix/text/misc/
+MASTER_SITES=	http://people.FreeBSD.org/~fenner/distfiles/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	bjn@visi.com
