@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.33 2001/06/11 04:39:53 will Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.34 2001/06/16 14:22:15 joe Exp $
 #
 
     SUBDIR += bitchx
@@ -26,6 +26,7 @@
     SUBDIR += ninja
     SUBDIR += olirc
     SUBDIR += p5-IRC
+    SUBDIR += p5-POE-Component-IRC
     SUBDIR += party
     SUBDIR += pure-emacs20
     SUBDIR += pure-xemacs21-mule
