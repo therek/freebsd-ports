@@ -1,4 +1,6 @@
 #!/usr/local/bin/python
+# ex:ts=4
+#-*- mode: Fundamental; tab-width: 4; -*-
 #
 # patchtool.py - a tool to automate common operation with patchfiles in the
 # FreeBSD Ports Collection.
@@ -12,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.8 2002/04/15 21:04:58 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.9 2002/04/17 10:58:57 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -50,7 +52,7 @@ class Vars:
 	DEV_NULL = '/dev/null'
 	ETC_MAKE_CONF = '/etc/make.conf'
 	
-	SLASH_REPL_SYMBOL = '::'	# The sysmbol to replace '/' when auto-generating
+	SLASH_REPL_SYMBOL = '_'	# The symbol to replace '/' when auto-generating
 							# patchnames
 
 
