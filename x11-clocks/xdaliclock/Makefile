@@ -2,11 +2,11 @@
 # Date created:				10th February 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/x11-clocks/xdaliclock/Makefile,v 1.16 2000/01/29 20:12:55 gpalmer Exp $
+# $FreeBSD: ports/x11-clocks/xdaliclock/Makefile,v 1.17 2000/04/10 00:33:06 cpiazza Exp $
 #
 
 PORTNAME=	xdaliclock
-PORTVERSION= 	2.18
+PORTVERSION=	2.18
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.jwz.org/xdaliclock/ \
 		${MASTER_SITE_XCONTRIB}

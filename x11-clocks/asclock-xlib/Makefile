@@ -2,11 +2,11 @@
 # Date created:		24 April 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.11 2000/11/02 04:21:02 kuriyama Exp $
+# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.12 2000/12/11 01:38:14 kuriyama Exp $
 #
 
 PORTNAME=	asclock-xlib
-PORTVERSION= 	2.0.11
+PORTVERSION=	2.0.11
 CATEGORIES=	x11-clocks afterstep windowmaker
 MASTER_SITES=	http://www.asclock.org/tar/ \
 		${MASTER_SITE_LOCAL}

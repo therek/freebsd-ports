@@ -2,11 +2,11 @@
 # Date created:		15 March 1995
 # Whom:			Nobuhiro Yasutomi
 #
-# $FreeBSD: ports/x11-clocks/emiclock/Makefile,v 1.17 2000/04/10 00:32:35 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/emiclock/Makefile,v 1.18 2000/10/08 06:35:55 asami Exp $
 #
 
 PORTNAME=	emiclock
-PORTVERSION= 	2.0.2
+PORTVERSION=	2.0.2
 CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.noge.com/pub/EmiClock/X11/
 

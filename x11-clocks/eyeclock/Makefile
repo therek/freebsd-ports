@@ -2,11 +2,11 @@
 # Date created:        4 September 1998
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/eyeclock/Makefile,v 1.8 2000/04/10 00:32:36 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/eyeclock/Makefile,v 1.9 2000/08/03 09:26:54 asami Exp $
 #
 
 PORTNAME=	eyeclock
-PORTVERSION= 	2.0
+PORTVERSION=	2.0
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/
 

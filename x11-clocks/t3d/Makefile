@@ -2,11 +2,11 @@
 # Date created:		20 Apr 1998
 # Whom:			J Han <hjh@best.com>
 #
-# $FreeBSD: ports/x11-clocks/t3d/Makefile,v 1.7 2000/04/10 00:32:51 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/t3d/Makefile,v 1.8 2000/10/21 13:15:36 kevlo Exp $
 #
 
 PORTNAME=	t3d
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.jwdt.com/~paysan/
 DISTNAME=	t3d

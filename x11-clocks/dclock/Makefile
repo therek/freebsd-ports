@@ -2,11 +2,11 @@
 # Date created:		15 Aug 1996
 # Whom:			David Leonard <leonard@dstc.edu.au>
 #
-# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.10 1999/12/24 04:39:04 steve Exp $
+# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.11 2000/04/10 00:32:33 cpiazza Exp $
 #
 
 PORTNAME=	dclock
-PORTVERSION= 	pl6
+PORTVERSION=	pl6
 CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
 DISTNAME=	Dclock

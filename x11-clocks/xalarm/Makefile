@@ -2,11 +2,11 @@
 # Date created:		4 December 1996
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/x11-clocks/xalarm/Makefile,v 1.5 1999/08/31 02:58:09 peter Exp $
+# $FreeBSD: ports/x11-clocks/xalarm/Makefile,v 1.6 2000/04/10 00:33:04 cpiazza Exp $
 #
 
 PORTNAME=	xalarm
-PORTVERSION= 	3.06
+PORTVERSION=	3.06
 CATEGORIES=	x11-clocks
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

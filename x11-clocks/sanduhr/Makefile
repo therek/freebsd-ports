@@ -2,11 +2,11 @@
 # Date created:				14 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/sanduhr/Makefile,v 1.1 2000/09/14 06:53:19 sobomax Exp $
+# $FreeBSD: ports/x11-clocks/sanduhr/Makefile,v 1.2 2000/10/05 07:17:25 reg Exp $
 #
 
 PORTNAME=	sanduhr
-PORTVERSION= 	0.3.50
+PORTVERSION=	0.3.50
 CATEGORIES=	x11-clocks gnome
 MASTER_SITES=	http://www.mathematik.uni-kl.de/~wwwstoch/voss/
 

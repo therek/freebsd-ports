@@ -2,11 +2,11 @@
 # Date created:				15 August 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/abclock/Makefile,v 1.1 2000/08/15 16:14:17 jedgar Exp $
 #
 
 PORTNAME=	abclock
-PORTVERSION= 	1.0a
+PORTVERSION=	1.0a
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://odur.let.rug.nl/~kleiweg/abclock/
 

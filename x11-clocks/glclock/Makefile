@@ -2,11 +2,11 @@
 # Date created:		20 September 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/x11-clocks/glclock/Makefile,v 1.2 2000/04/10 00:32:38 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/glclock/Makefile,v 1.3 2000/08/03 09:26:55 asami Exp $
 #
 
 PORTNAME=	glclock
-PORTVERSION= 	5.0
+PORTVERSION=	5.0
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.daionet.gr.jp/~masa/archives/ \
 		http://hp.vector.co.jp/authors/VA013133/archives/ \

@@ -2,11 +2,11 @@
 # Date created:         16 December 1995
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/swisswatch/Makefile,v 1.11 2000/07/02 14:09:34 sanpei Exp $
+# $FreeBSD: ports/x11-clocks/swisswatch/Makefile,v 1.12 2000/08/03 14:28:33 sanpei Exp $
 #
 
 PORTNAME=	swisswatch
-PORTVERSION= 	0.06
+PORTVERSION=	0.06
 CATEGORIES=	x11-clocks
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 EXTRACT_SUFX=	.tar.Z

@@ -2,11 +2,11 @@
 # Date created:			24 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.10 2000/06/29 07:02:57 obrien Exp $
+# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.11 2000/08/03 09:27:04 asami Exp $
 #
 
 PORTNAME=	wmtz
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	x11-clocks windowmaker afterstep
 MASTER_SITES=	http://www.algonet.se/~jlin/wmtz/ \
 		${MASTER_SITE_LOCAL}

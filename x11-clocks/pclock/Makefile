@@ -2,11 +2,11 @@
 # Date created:			15 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.8 2000/08/03 09:26:56 asami Exp $
+# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.9 2000/08/13 09:36:03 jim Exp $
 #
 
 PORTNAME=	pclock
-PORTVERSION= 	0.13.1
+PORTVERSION=	0.13.1
 CATEGORIES=	x11-clocks windowmaker afterstep
 MASTER_SITES=	ftp://ftp.kourakos.com/pub/pclock/
 EXTRACT_SUFX=	.tgz
