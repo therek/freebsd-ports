@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.54 2000/10/24 12:09:17 knu Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.55 2001/01/19 15:14:04 kiri Exp $
 #
 
 PORTNAME=	xemacs
@@ -21,7 +21,7 @@ LIB_DEPENDS+=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 XEMACS_REL=	21.1
-XEMACS_VER=	21.1.13
+XEMACS_VER=	21.1.14
 XEMACS_ARCH=	${CONFIGURE_TARGET}
 
 SLAVEDIRS+=	editors/xemacs21-mule
@@ -37,6 +37,7 @@ CONFIGURE_ARGS?=--with-clash-detection \
 		--with-session=yes \
 		--site-includes=${LOCALBASE}/include \
 		--site-libraries=${LOCALBASE}/lib \
+		--gung-ho=yes \
 		--with-png=yes \
 		--with-tiff=yes \
 		--with-site-lisp \
