@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.222 2001/09/27 23:53:34 brian Exp $
+# $FreeBSD: ports/LEGAL,v 1.223 2001/10/03 14:47:05 sada Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -21,6 +21,7 @@ adom-*			ports/games/adom	Copy of CD must be sent to
 						author
 agsatellite		ports/audio/agsatellite	Unsure of licensing issues
 alephone-data		ports/games/alephone-data Don't sell for profit
+altivore		ports/security/altivore	No redistribution allowed
 aswedit-*		ports/www/aswedit	Commercial software.
 atari800-*		ports/emulators/atari800 xf25 contains copyright ROMs
 						and cannot be distributed.
