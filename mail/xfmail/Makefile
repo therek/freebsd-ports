@@ -3,7 +3,7 @@
 # Date created:		30 June 1996
 # Whom:			gena
 #
-# $FreeBSD: ports/mail/xfmail/Makefile,v 1.21 1999/09/04 06:19:40 cpiazza Exp $
+# $FreeBSD: ports/mail/xfmail/Makefile,v 1.22 1999/11/13 18:47:50 jmas Exp $
 #
 
 DISTNAME=       xfmail-1.4.0
@@ -18,6 +18,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-dead-keys --with-xkb-dead-keys
 MAN1=		xfmail.1
 
 .include <bsd.port.mk>
