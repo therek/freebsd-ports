@@ -2,22 +2,19 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.15 2000/06/22 14:06:24 nectar Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.16 2000/09/21 00:36:36 nectar Exp $
 #
 
 PORTNAME=		grail
 PORTVERSION= 		0.6
 CATEGORIES=		www python
 MASTER_SITES=		http://grail.cnri.reston.va.us/grail/source/
-DISTNAME=		${PORTNAME}-06
-EXTRACT_SUFX=		.tgz
+DISTFILES=		${PORTNAME}-06.tgz
 
 MAINTAINER=		nectar@freebsd.org
 
 USE_PYTHON=		yes
-RUN_DEPENDS=		${PYTHON_LIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
-
-WRKSRC=			${WRKDIR}/${PKGNAME}
+RUN_DEPENDS=		${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 GRAILSUBDIR=		share/grail
 GRAILDIR=		${PREFIX}/${GRAILSUBDIR}
