@@ -3,7 +3,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.8 1999/11/15 06:35:26 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.9 1999/11/24 06:32:29 nakai Exp $
 #
 
 DISTNAME=	gogo223
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.kurims.kyoto-u.ac.jp/~shigeo/soft/gogo2/src/
 MAINTAINER=	nakai@FreeBSD.org
 
 # More than version 0.98
-BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
+BUILD_DEPENDS=	nasm-0.98:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=	yes
 MAKEFILE=	makefile.unx
