@@ -2,11 +2,11 @@
 # Date created:			18 August 1999
 # Whom:				dannyman@dannyland.org
 #
-# $FreeBSD: ports/net/gtkyahoo/Makefile,v 1.6 2001/05/17 08:21:09 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkyahoo
-PORTVERSION=	0.18.0
+PORTVERSION=	0.18.2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gtkyahoo
