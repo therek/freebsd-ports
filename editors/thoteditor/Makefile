@@ -3,7 +3,7 @@
 # Date created:		1 Aug 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.13 1999/09/25 18:05:50 chuckr Exp $
 #
 
 DISTNAME=	thoteditor-src-2.1e
@@ -22,6 +22,8 @@ MAINTAINER=	chuckr@FreeBSD.org
 THOT_SUBDIR=	Target
 REQUIRES_MOTIF=	yes
 WRKSRC=		$(WRKDIR)/Thot/$(THOT_SUBDIR)
+
+BROKEN=		initialization issues not finished yet
 
 REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
