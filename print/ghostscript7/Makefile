@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.38 1999/11/26 16:25:06 andreas Exp $
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.39 2000/02/13 17:07:38 andreas Exp $
 #
 
 DISTNAME=	ghostscript-5.50
@@ -87,7 +87,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/readme.hp8 \
 		${PREFIX}/share/ghostscript/5.50/doc
 .if defined(PDFENCRYPT)
-        ${INSTALL_DATA} ${DISTDIR}/pdf_sec.ps ${PREFIX}/share/ghostscript/5.50
+	${INSTALL_DATA} ${DISTDIR}/pdf_sec.ps ${PREFIX}/share/ghostscript/5.50
 .endif
 
 # encrypted PDF support.  can't be packaged due to export control issues.
