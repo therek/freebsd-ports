@@ -3,7 +3,7 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.25 1999/09/06 23:29:22 steve Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.26 1999/11/26 18:25:15 steve Exp $
 #
 
 DISTNAME=	c-news
@@ -29,6 +29,7 @@ PATCHFILES=	c-news-patch-fileart.c c-news-patch-namecheck.awk \
 		c-news-patch-doexpire c-news-patch-queuelen.tay \
 		c-news-patch-bunzip2 \
 		c-news-patch-ctl-underscore \
+		c-news-patch-y2k \
 		c-news-patch-pgpverify-1.12
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
@@ -60,8 +61,11 @@ PGPVERIFY?=	pgpverify-1.12
 
 .if ${OSVERSION} < 300000
 .else
-BROKEN=		gawk need to be updated to 3.0.4
+PATCHFILES+=	c-news-patch-gawk3
 .endif
+
+check:
+	cd ${WRKSRC} && ${MAKE} -$(MAKEFLAGS) r
 
 pre-patch:
 	@${CP} ${DISTDIR}/${DIST_SUBDIR}/${PGPVERIFY} ${WRKSRC}/${PGPVERIFY}
