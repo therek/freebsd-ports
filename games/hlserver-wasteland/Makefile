@@ -2,11 +2,12 @@
 # Date created:				Fri May	4 17:43:25 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-wasteland/Makefile,v 1.2 2001/05/21 03:14:49 lioux Exp $
+# $FreeBSD: ports/games/hlserver-wasteland/Makefile,v 1.3 2001/07/14 23:14:21 lioux Exp $
 #
 
 PORTNAME=	wasteland
 PORTVERSION=	0.2b
+PORTREVISION=	1
 MASTER_SITES=	http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/modifications/wasteland/ \
 		ftp://ftp.gigabell.net/pub/exp/hl/mod/wastelandhl/ \
 		ftp://ftp.task.gda.pl/mirror/ftp.extreme-players.de/exp/hl/mod/wastelandhl/ \
