@@ -2,12 +2,11 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.5 2001/01/12 23:36:31 mharo Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.6 2001/02/12 10:01:06 knu Exp $
 #
 
 PORTNAME=	netsaint
-PORTVERSION=	0.0.6
-PORTREVISION=	1
+PORTVERSION=	0.0.7b2
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/
 
