@@ -2,7 +2,7 @@
 # Date created:				March 17, 2001
 # Whom:	      				fenner
 #
-# $FreeBSD: ports/palm/syncmal/Makefile,v 1.2 2001/03/29 00:17:47 fenner Exp $
+# $FreeBSD: ports/palm/syncmal/Makefile,v 1.3 2001/04/18 00:27:33 fenner Exp $
 #
 
 PORTNAME=	syncmal
@@ -15,7 +15,7 @@ MAINTAINER=	fenner@FreeBSD.Org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/palm/jpilot:patch \
 		${NONEXISTENT}:${PORTSDIR}/palm/malsync:patch
-RUN_DEPENDS=	jpilot:${PORTSDIR}/palm/jpilot
+RUN_DEPENDS=	${PREFIX}/bin/jpilot:${PORTSDIR}/palm/jpilot
 
 PREFIX=		${LOCALBASE}/pilot
 USE_GMAKE=	YES
