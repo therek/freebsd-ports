@@ -2,12 +2,12 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.62 2001/09/22 22:40:03 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.88
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://webadmin.sourceforge.net/webmin/updates/ \
 		http://webadmin.sourceforge.net/webmin/download/
@@ -24,7 +24,8 @@ SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
 WEBMIN_MODULES=	proftpd-0.88-1.wbm.gz majordomo-0.88-1.wbm.gz \
 		useradmin-0.88-1.wbm.gz status-0.88-1.wbm.gz \
-		samba-0.88-1.wbm.gz
+		samba-0.88-1.wbm.gz proc-0.88-1.wbm.gz \
+		custom-0.88-1.wbm.gz
 WEBMIN_THEMES=
 		
 post-extract:
