@@ -2,7 +2,7 @@
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.23 2000/08/03 09:25:02 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yagirc
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	mph@freebsd.org
+
+BROKEN=		"Does not build"
 
 USE_XPM=	yes
 USE_GMAKE=	yes
