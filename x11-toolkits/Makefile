@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.103 2000/10/26 16:15:47 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.104 2000/10/29 21:29:56 vanilla Exp $
 #
 
     SUBDIR += FWF
@@ -49,6 +49,7 @@
     SUBDIR += open-motif
     SUBDIR += open-motif-devel
     SUBDIR += p5-GdkImlib
+    SUBDIR += p5-GdkPixbuf
     SUBDIR += p5-Gtk
     SUBDIR += p5-Tcl-Tk
     SUBDIR += p5-Tk
