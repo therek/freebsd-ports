@@ -2,7 +2,7 @@
 # Date Created:		8 April 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-chart/Makefile,v 1.9 2000/04/14 10:46:57 asami Exp $
+# $FreeBSD: ports/graphics/p5-chart/Makefile,v 1.10 2000/06/17 02:36:44 will Exp $
 #
 
 PORTNAME=	Chart
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dan@trinsec.com
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/GD.pm:${PORTSDIR}/graphics/p5-GD
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				Nov 9, 1998
 # Whom:					laskavy@gambit.msk.su
 #
-# $FreeBSD: ports/graphics/GIFgraph/Makefile,v 1.4 2000/03/31 03:12:35 mharo Exp $
+# $FreeBSD: ports/graphics/GIFgraph/Makefile,v 1.5 2000/04/13 06:27:58 obrien Exp $
 #
 
 PORTNAME=	p5-GIFgraph
@@ -14,7 +14,7 @@ DISTNAME=	GIFgraph-${PORTVERSION}
 
 MAINTAINER=	laskavy@gambit.msk.su
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/GD.pm:${PORTSDIR}/graphics/p5-GD
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD
 
 USE_PERL5=	YES
 

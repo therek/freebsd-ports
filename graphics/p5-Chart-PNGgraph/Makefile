@@ -2,7 +2,7 @@
 # Date Created:		15 December 1999
 # Whom:			Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/graphics/p5-Chart-PNGgraph/Makefile,v 1.3 2000/04/14 10:46:53 asami Exp $
+# $FreeBSD: ports/graphics/p5-Chart-PNGgraph/Makefile,v 1.4 2000/04/23 12:24:20 vanilla Exp $
 #
 
 PORTNAME=	Chart-PNGgraph
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/GD.pm:${PORTSDIR}/graphics/p5-GD
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD
 
 USE_PERL5=	YES
 
