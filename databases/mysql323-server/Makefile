@@ -2,11 +2,11 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.91 2000/12/18 16:32:14 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.92 2001/01/01 10:14:58 will Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
-PORTVERSION=	3.23.29a
+PORTVERSION=	3.23.30
 CATEGORIES=	databases
 MASTER_SITES=	http://www.wipol.uni-bonn.de/MySQL/Downloads/MySQL-3.23/ \
 		http://www.mysql.net/Downloads/MySQL-3.23/ \
@@ -85,7 +85,9 @@ post-install:
 
 # MySQL-Client part
 .else
-MAN1=		mysql.1
+MAN1=		isamchk.1 isamlog.1 mysql.1.gz mysql_zap.1 mysqlaccess.1  \
+		mysqladmin.1 mysqld.1 mysqld_multi.1 mysqldump.1 mysqlshow.1 \
+		perror.1 replace.1 safe_mysqld.1
 
 INSTALLS_SHLIB=	yes
 LDCONFIG_DIRS=	%%PREFIX%%/lib/mysql
