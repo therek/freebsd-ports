@@ -2,16 +2,16 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.56 2001/06/28 22:57:38 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.57 2001/06/30 08:51:39 olgeni Exp $
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.87
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://webadmin.sourceforge.net/webmin/updates/ \
 		http://webadmin.sourceforge.net/webmin/download/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${WEBMIN_MODULES}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${WEBMIN_MODULES} ${WEBMIN_THEMES}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	olgeni@FreeBSD.org
@@ -22,7 +22,8 @@ NO_BUILD=	yes
 USE_PERL5=	yes
 SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
-WEBMIN_MODULES=	bind8-0.87-1.wbm.gz net-0.87-1.wbm.gz software-0.87-1.wbm.gz
+WEBMIN_MODULES=	bind8-0.87-2.wbm.gz net-0.87-1.wbm.gz software-0.87-1.wbm.gz
+WEBMIN_THEMES=	caldera-0.87-1.wbt.gz
 		
 post-extract:
 	@if [ "${WEBMIN_MODULES}" != "" ]; then \
