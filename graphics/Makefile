@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.346 2001/08/26 16:46:19 petef Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.347 2001/08/29 11:53:46 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -67,6 +67,7 @@
     SUBDIR += gimp-manual-ps
     SUBDIR += gimp1
     SUBDIR += giram
+    SUBDIR += gkrellkam
     SUBDIR += glass
     SUBDIR += gle
     SUBDIR += glide3
