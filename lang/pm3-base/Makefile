@@ -2,11 +2,11 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.5 2000/06/28 15:35:53 jdp Exp $
+# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.6 2000/07/26 03:40:27 jdp Exp $
 #
 
 PORTNAME=	pm3-base
-PORTVERSION=	1.1.14
+PORTVERSION=	1.1.15
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=jdp/pm3

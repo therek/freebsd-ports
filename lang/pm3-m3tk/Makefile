@@ -2,11 +2,11 @@
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-m3tk/Makefile,v 1.3 2000/04/12 06:20:01 obrien Exp $
+# $FreeBSD: ports/lang/pm3-m3tk/Makefile,v 1.4 2000/07/26 03:40:44 jdp Exp $
 #
 
 PORTNAME=	pm3-m3tk
-PORTVERSION=	1.1.14
+PORTVERSION=	1.1.15
 CATEGORIES=	lang
 DISTFILES=
 
