@@ -2,11 +2,11 @@
 # Date created:		27 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/safecat/Makefile,v 1.1 2000/12/27 11:06:40 roam Exp $
 #
 
 PORTNAME=	safecat
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	sysutils mail
 MASTER_SITES=	http://www.nb.net/~lbudney/linux/software/safecat/
 
