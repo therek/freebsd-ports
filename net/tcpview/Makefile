@@ -2,7 +2,7 @@
 # Date created:        18 Aug 2000
 # Whom:                Chung-Kie Tung <tung@turtle.ee.ncku.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tcpview/Makefile,v 1.1 2001/03/07 12:40:06 ijliao Exp $
 #
 
 PORTNAME=	tcpview
