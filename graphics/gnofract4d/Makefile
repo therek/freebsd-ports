@@ -2,11 +2,11 @@
 # Date created:				30 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.10 2000/12/22 16:49:45 kevlo Exp $
+# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.11 2001/03/29 16:33:57 sobomax Exp $
 #
 
 PORTNAME=	gnofract4d
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
