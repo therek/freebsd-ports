@@ -2,13 +2,13 @@
 # Date created:		20 Oct 2000
 # Whom:			des
 #
-# $FreeBSD: ports/www/jakarta-tomcat/Makefile,v 1.7 2001/05/21 08:05:37 dirk Exp $
+# $FreeBSD: ports/www/jakarta-tomcat/Makefile,v 1.8 2001/08/05 09:37:23 dirk Exp $
 #
 
 PORTNAME=	jakarta-tomcat
 PORTVERSION=	3.2.3
 CATEGORIES=	www
-MASTER_SITES=	http://jakarta.apache.org/builds/jakarta-tomcat/release/v${PORTVERSION}/bin/
+MASTER_SITES=	http://www.apache.org/dist/jakarta/jakarta-tomcat/release/v${PORTVERSION}/bin/
 DIST_SUBDIR=	jakarta/tomcat/${PORTVERSION}
 
 MAINTAINER=	dirk@FreeBSD.org
