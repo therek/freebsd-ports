@@ -1,19 +1,16 @@
-
-$FreeBSD: ports/graphics/giblib/files/patch-ltmain.sh,v 1.2 2001/10/31 08:20:42 sobomax Exp $
-
---- ltmain.sh	2001/08/27 09:51:26	1.1
-+++ ltmain.sh	2001/08/27 09:51:42
-@@ -2408,6 +2408,9 @@
- 	  *-*-netbsd*)
- 	    # Don't link with libc until the a.out ld.so is fixed.
+--- ltmain.sh.orig	Wed Jan  9 13:26:41 2002
++++ ltmain.sh	Sat Jan 26 10:40:27 2002
+@@ -2359,6 +2359,9 @@
+ 	    # problems, so we reset it completely
+ 	    verstring=""
  	    ;;
 +	  *-*-freebsd*)
 +	    # FreeBSD doesn't need this...
 +	    ;;
  	  *)
- 	    # Add libc to deplibs on all other systems if necessary.
- 	    if test "$build_libtool_need_lc" = "yes"; then
-@@ -4175,10 +4178,12 @@
+ 	    verstring="0.0"
+ 	    ;;
+@@ -4247,10 +4250,12 @@
  	fi
  
  	# Install the pseudo-library for information purposes.
