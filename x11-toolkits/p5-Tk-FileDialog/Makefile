@@ -2,7 +2,7 @@
 # Date created:		1 July 2001
 # Whom:			minter
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/p5-Tk-FileDialog/Makefile,v 1.1 2001/08/06 15:15:45 sada Exp $
 
 PORTNAME=	Tk-FileDialog
 PORTVERSION=	1.3
@@ -17,5 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Tk.pm:$
 PERL_CONFIGURE=	yes
 MAN3PREFIX=	${LOCALBASE}/lib/perl5/${PERL_VERSION}
 MAN3=		Tk::FileDialog.3
+
+PLIST_SUB=	PERL_VERSION=${PERL_VERSION}
 
 .include <bsd.port.mk>
