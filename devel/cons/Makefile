@@ -2,7 +2,7 @@
 # Date created:		11 December 1998
 # Whom:			rv@gnu.org
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.19 2000/09/21 22:03:26 rv Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.20 2001/03/29 14:02:42 rv Exp $
 #
 
 PORTNAME=	cons
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rv@gnu.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${ARCH}-freebsd/MD5.pm:${PORTSDIR}/security/p5-MD5
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${ARCH}-freebsd/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
 
 USE_PERL5=	yes
 NO_BUILD=	yes
