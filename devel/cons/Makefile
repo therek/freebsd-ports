@@ -1,8 +1,8 @@
 # New ports collection makefile for:	cons
 # Date created:		11 December 1998
-# Whom:			rv@dsmit.com
+# Whom:			rv@gnu.org
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.13 2000/08/11 00:34:21 will Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.14 2000/08/11 00:42:27 will Exp $
 #
 
 PORTNAME=	cons
