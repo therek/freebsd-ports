@@ -2,11 +2,11 @@
 # Date created:		99/06/16
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.4 2000/02/28 08:33:43 asami Exp $
+# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.5 2000/04/11 14:12:51 knu Exp $
 #
 
 DISTNAME=	jpnfont
-CATEGORIES=	japanese linux
+CATEGORIES=	japanese
 
 MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
 
