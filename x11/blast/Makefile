@@ -2,7 +2,7 @@
 # Date created:         9 Jul 1996
 # Whom:            searle
 #
-# $FreeBSD: ports/x11/blast/Makefile,v 1.11 2000/12/11 03:00:45 steve Exp $
+# $FreeBSD: ports/x11/blast/Makefile,v 1.12 2001/02/05 16:17:57 olgeni Exp $
 #
 
 PORTNAME=	blast
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://hpux.csc.liv.ac.uk/hpux/X11/Demos/blast-1.0/ \
 		ftp://hpftp.cict.fr/hpux/X11/Demos/blast-1.0/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-ss-10.20
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_X_PREFIX=	yes

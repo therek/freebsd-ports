@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.39 2000/10/14 15:23:00 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.40 2001/01/16 17:33:17 sobomax Exp $
 #
 
 PORTNAME=	tk
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcl8_2
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 

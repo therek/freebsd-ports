@@ -2,7 +2,7 @@
 # Date created:		6 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.26 2000/10/03 00:53:58 reg Exp $
+# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.27 2001/01/16 17:30:57 sobomax Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # version number) when updating this port.  Thank you.
@@ -13,7 +13,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.uu.net/graphics/jpeg/
 DISTNAME=	jpegsrc.v${PORTVERSION}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/jpeg-6b
 

@@ -2,7 +2,7 @@
 # Date created:		9 October 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/net/rmsg/Makefile,v 1.9 1999/08/31 06:49:14 mharo Exp $
+# $FreeBSD: ports/net/rmsg/Makefile,v 1.10 2000/04/09 18:13:24 cpiazza Exp $
 #
 
 PORTNAME=	rmsg
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/tcpip/ \
 		ftp://proton.elka.pw.edu.pl/pub/unix/network/
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/rmsg
 MAN1=		rmsg.1

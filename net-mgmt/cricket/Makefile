@@ -2,7 +2,7 @@
 # Date created:		20 November 1999
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cricket/Makefile,v 1.7 2001/03/16 19:30:52 sobomax Exp $
 #
 
 PORTNAME=	cricket
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${SITE_PERL}/SNMP_Session.pm:${PORTSDIR}/net/p5-SNMP_Session \
 		${SITE_PERL_ARCH}/RRDs.pm:${PORTSDIR}/net/rrdtool \

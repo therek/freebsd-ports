@@ -2,7 +2,7 @@
 # Date created:		23 Sep 1996
 # Whom:			proff
 #
-# $FreeBSD: ports/security/strobe/Makefile,v 1.9 2000/04/21 08:19:06 mharo Exp $
+# $FreeBSD: ports/security/strobe/Makefile,v 1.10 2000/06/02 03:18:51 will Exp $
 #
 
 PORTNAME=	strobe
@@ -11,7 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.win.or.jp/pub/network/misc/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/strobe
 ALL_TARGET=	strobe

@@ -2,7 +2,7 @@
 # Date created:		16 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/smail/Makefile,v 1.31 2000/04/13 20:00:47 cpiazza Exp $
+# $FreeBSD: ports/mail/smail/Makefile,v 1.32 2001/02/05 15:11:10 olgeni Exp $
 #
 
 PORTNAME=	smail
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.uu.net/networking/mail/smail/ \
 		ftp://ftp.planix.com/pub/Smail/ \
 		ftp://ftp.fu-berlin.de/unix/mail/smail/
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libident.a:${PORTSDIR}/security/libident
 .if !exists(/usr/include/tcpd.h)

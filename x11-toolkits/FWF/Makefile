@@ -2,7 +2,7 @@
 # Date created:		14 July 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.25 2001/02/05 16:48:44 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.26 2001/08/20 06:27:49 kris Exp $
 #
 
 PORTNAME=	fwf
@@ -11,7 +11,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=libs/X/fwf
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BROKEN=		"Does not compile"
 

@@ -2,7 +2,7 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.33 2001/01/01 10:14:59 will Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.34 2001/01/16 17:30:18 sobomax Exp $
 #
 
 PORTNAME=	gmake
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	make
 DISTNAME=	make-${PORTVERSION}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	portmgr@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 

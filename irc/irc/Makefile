@@ -2,7 +2,7 @@
 # Date created:		23 August 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/irc/Makefile,v 1.26 2000/07/05 12:36:30 tg Exp $
+# $FreeBSD: ports/irc/irc/Makefile,v 1.27 2000/10/19 13:36:29 shige Exp $
 #
 
 PORTNAME=	irc
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/networking/services/irc/server/ \
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # the NOTE command is disabled by default
 # ENABLE_NOTE=yes

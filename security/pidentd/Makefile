@@ -2,7 +2,7 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.34 2000/06/02 22:06:20 will Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.35 2001/02/05 16:00:18 olgeni Exp $
 #
 
 PORTNAME=	pidentd
@@ -15,7 +15,7 @@ PATCH_SITES=	http://www.imasy.or.jp/~ume/ipv6/
 PATCHFILES=	pidentd-2.8.5-ipv6-1.5.diff.gz
 PATCH_DIST_STRIP=	-p2
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	freebsd
 MAKE_ENV=	REALPREFIX=${PREFIX}

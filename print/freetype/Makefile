@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.22 2000/11/23 14:23:53 knu Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.23 2001/01/09 09:09:42 sobomax Exp $
 #
 
 PORTNAME=	freetype
@@ -17,7 +17,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:S,%SUBDIR%,freetype,} \
 		ftp://ftp.freetype.org/pub/%SUBDIR%/
 MASTER_SITE_SUBDIR=	freetype1
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

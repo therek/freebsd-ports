@@ -2,7 +2,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx/Makefile,v 1.95 2001/01/16 17:32:56 sobomax Exp $
+# $FreeBSD: ports/www/lynx/Makefile,v 1.96 2001/09/03 22:49:21 dwcjr Exp $
 #
 
 PORTNAME=	lynx
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://lynx.isc.org/current/
 DISTNAME=	${PORTNAME}2.8.4rel.1
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}2-8-4

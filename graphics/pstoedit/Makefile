@@ -2,7 +2,7 @@
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.15 2001/09/01 18:00:06 dwcjr Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.16 2001/09/11 21:23:45 knu Exp $
 #
 
 PORTNAME=	pstoedit
@@ -11,7 +11,7 @@ CATEGORIES=	graphics print
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Network/1958/pstoedit/
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 LIB_DEPENDS=	plot.4:${PORTSDIR}/graphics/plotutils \

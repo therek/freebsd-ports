@@ -2,7 +2,7 @@
 # Date created:		03-Mar-1997
 # Whom:			tenser@spitfire.ecsel.psu.edu
 #
-# $FreeBSD: ports/emulators/bsvc/Makefile,v 1.12 2000/04/12 04:55:16 mharo Exp $
+# $FreeBSD: ports/emulators/bsvc/Makefile,v 1.13 2000/09/25 12:21:21 asami Exp $
 #
 
 PORTNAME=	bsvc
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/emulators
 DISTFILES=	${DISTNAME}-src.tar.gz
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs20/Makefile,v 1.50 2001/01/01 10:15:02 will Exp $
+# $FreeBSD: ports/editors/emacs20/Makefile,v 1.51 2001/05/22 18:16:56 sobomax Exp $
 #
 
 PORTNAME=	emacs
@@ -11,7 +11,7 @@ CATEGORIES+=	editors ipv6
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes

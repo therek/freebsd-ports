@@ -2,7 +2,7 @@
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/xpm/Makefile,v 1.31 2001/01/16 17:31:07 sobomax Exp $
+# $FreeBSD: ports/graphics/xpm/Makefile,v 1.32 2001/08/30 14:11:22 kevlo Exp $
 #
 
 PORTNAME=	xpm
@@ -11,7 +11,7 @@ CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	libraries
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 INSTALLS_SHLIB=	yes

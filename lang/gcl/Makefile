@@ -2,7 +2,7 @@
 # Date created:         Feb  8 1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/lang/gcl/Makefile,v 1.16 2000/02/27 17:44:01 green Exp $
+# $FreeBSD: ports/lang/gcl/Makefile,v 1.17 2000/04/12 06:18:37 obrien Exp $
 #
 
 PORTNAME=	gcl
@@ -11,7 +11,7 @@ CATEGORIES=	lang tk82
 MASTER_SITES=	ftp://ftp.ma.utexas.edu/pub/gcl/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

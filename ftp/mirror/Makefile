@@ -2,7 +2,7 @@
 # Date created:		15 May 1995
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/mirror/Makefile,v 1.14 2000/04/04 01:31:29 will Exp $
+# $FreeBSD: ports/ftp/mirror/Makefile,v 1.15 2000/04/12 05:31:15 mharo Exp $
 #
 
 PORTNAME=	mirror
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://src.doc.ic.ac.uk/computing/archiving/mirror/
 PATCH_SITES=	http://sunsite.org.uk/packages/mirror/
 PATCHFILES=	ftp.pl_wupatch
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 NO_WRKSUBDIR=	yes

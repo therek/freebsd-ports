@@ -2,7 +2,7 @@
 # Date created:		4 January 1997
 # Whom:			mike@binghamton.edu
 #
-# $FreeBSD: ports/net/tinyfugue/Makefile,v 1.19 1999/08/30 14:24:22 peter Exp $
+# $FreeBSD: ports/net/tinyfugue/Makefile,v 1.20 2000/04/09 18:13:46 cpiazza Exp $
 #
 
 PORTNAME=	tf
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://tf.tcp.com/pub/tinyfugue/ \
 		ftp://ftp.ci.uminho.pt/pub/mirrors/tinyfugue/
 DISTNAME=	tf-40s1
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if defined(PARALLEL_PACKAGE_BUILD)
 BROKEN=		tries to cd to directory that do not exist yet

@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/www/libwww/Makefile,v 1.23 2000/08/12 02:56:32 jseger Exp $
+# $FreeBSD: ports/www/libwww/Makefile,v 1.24 2001/02/05 15:33:27 olgeni Exp $
 #
 
 PORTNAME=	libwww
@@ -11,7 +11,7 @@ CATEGORIES=	www devel
 MASTER_SITES=	http://www.w3.org/Library/Distribution/
 DISTNAME=	w3c-${PKGNAME}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.39 2001/01/05 02:51:27 jeh Exp $
+# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.40 2001/04/20 18:31:52 shige Exp $
 #
 
 PORTNAME=	isc-dhcp
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.isc.org/isc/dhcp/ \
 		ftp://ftp.isc.org/isc/dhcp/dhcp-2.0-history/
 DISTNAME=	dhcp-2.0pl5
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 
