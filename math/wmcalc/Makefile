@@ -2,7 +2,7 @@
 # Date created:				28 March 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/math/wmcalc/Makefile,v 1.1.1.1 2000/03/28 12:46:19 jedgar Exp $
+# $FreeBSD: ports/math/wmcalc/Makefile,v 1.2 2000/04/14 07:20:49 asami Exp $
 #
 
 PORTNAME=	wmcalc
@@ -14,7 +14,7 @@ MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
-ALL_TARGET=	wmcalc
+ALL_TARGET=	clean wmcalc
 USE_X_PREFIX=   yes
 WRKSRC=		${WRKDIR}/wmcalc
 
