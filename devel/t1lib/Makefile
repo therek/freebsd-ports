@@ -2,18 +2,18 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.8 1999/12/25 01:58:28 steve Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.9 2000/04/14 05:44:29 asami Exp $
 #
 
 PORTNAME=	t1lib
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
-WRKSRC=		${WRKDIR}/T1-1.0
+WRKSRC=		${WRKDIR}/T1-1.0.1
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
