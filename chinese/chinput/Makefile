@@ -3,7 +3,7 @@
 # Date created:                          09/07/2000
 # Whom:                                  Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD: ports/chinese/chinput/Makefile,v 1.5 2000/09/23 07:52:53 vanilla Exp $
+# $FreeBSD: ports/chinese/chinput/Makefile,v 1.6 2000/11/16 15:36:06 keith Exp $
 #
 
 PORTNAME=	chinput
@@ -16,6 +16,11 @@ DISTNAME=	zh-chinput-2.1
 MAINTAINER=	phj@cn.FreeBSD.org
 
 USE_XLIB=	yes
+
+.if defined(XFREE86_VERSION) && ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	xmkmf:${PORTSDIR}/devel/imake-4 \
+		mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
