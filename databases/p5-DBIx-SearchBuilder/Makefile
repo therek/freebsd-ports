@@ -2,11 +2,11 @@
 # Date created:				29 May 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/databases/p5-DBIx-SearchBuilder/Makefile,v 1.4 2001/07/27 15:29:23 tobez Exp $
+# $FreeBSD: ports/databases/p5-DBIx-SearchBuilder/Makefile,v 1.5 2001/08/03 20:22:17 tobez Exp $
 #
 
 PORTNAME=	DBIx-SearchBuilder
-PORTVERSION=	0.41
+PORTVERSION=	0.43
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBIx
