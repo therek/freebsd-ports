@@ -2,12 +2,12 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.15 2000/10/08 10:22:51 asami Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.16 2000/10/24 02:03:08 jeh Exp $
 #
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	1.5.24
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		${MASTER_SITE_LOCAL} \
