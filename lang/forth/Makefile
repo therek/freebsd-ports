@@ -2,24 +2,31 @@
 # Date created:         23 November 1994
 # Whom:                 mr
 #
-# $FreeBSD: ports/lang/forth/Makefile,v 1.14 1999/12/24 04:43:29 steve Exp $
+# $FreeBSD: ports/lang/forth/Makefile,v 1.15 2000/04/12 06:18:28 obrien Exp $
 #
 
 PORTNAME=	pfe
-PORTVERSION=	0.9.14
+PORTVERSION=	0.29.1
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.taygeta.com/pub/Forth/Compilers/native/unix/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
-HAS_CONFIGURE=	yes
-CONFIGURE_SCRIPT=	config.sh
-CONFIGURE_ARGS=	${OPSYS}
+
+USE_BZIP2=	yes
+USE_GMAKE=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--disable-float
+
 MAN1=		pfe.1
 
 post-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/pfe ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/../doc/pfe.1 ${PREFIX}/man/man1/pfe.1
+	${INSTALL_MAN} ${WRKSRC}/../doc/pfe.1 ${PREFIX}/man/man1
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/pfe
+	${INSTALL_DATA} ${WRKSRC}/../doc/*.html ${PREFIX}/share/doc/pfe
+.endif
 
 .include <bsd.port.mk>
