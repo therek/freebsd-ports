@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.50 2001/02/11 22:05:16 sf Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.51 2001/03/25 20:17:46 trevor Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -15,7 +15,7 @@ CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME?=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER?=	petef@databits.net
+MAINTAINER?=	ports@freebsd.org
 
 MAN1=		pine.1 pico.1 pilot.1
 
@@ -28,6 +28,11 @@ LIB_DEPENDS=	c-client4.8:${PORTSDIR}/mail/cclient
 .if defined(WITH_LDAP)
 LDAP_PREFIX?=	${LOCALBASE}
 BUILD_DEPENDS+=	${LDAP_PREFIX}/lib/libldap.a:${PORTSDIR}/net/ldap
+.endif
+
+.if defined(WITH_SSL)
+USE_OPENSSL=	yes
+EXTRA_OPTS=	SSL_LINK="-L${OPENSSLLIB} -lssl -lcrypto"
 .endif
 
 pre-fetch:
@@ -60,7 +65,7 @@ post-patch:
 .endif
 
 do-build:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf)
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf $(EXTRA_OPTS))
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/pico ${PREFIX}/bin/pico
