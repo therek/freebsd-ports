@@ -2,15 +2,16 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane-backends/Makefile,v 1.30 2001/02/05 15:57:18 olgeni Exp $
+# $FreeBSD: ports/graphics/sane-backends/Makefile,v 1.31 2001/03/22 09:13:25 vanilla Exp $
 #
 
 PORTNAME=	sane-backends
 PORTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		ftp://ftp.mostang.com/pub/sane/
-MASTER_SITE_SUBDIR=	apps/graphics/capture
+MASTER_SITES=	ftp://ftp.mostang.com/pub/sane/ \
+		ftp://ftp.de.mostang.com/pub/sane/ \
+		ftp://ftp.no.mostang.com/pub/sane/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -18,6 +19,7 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
