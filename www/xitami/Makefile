@@ -2,7 +2,7 @@
 # Date created:		15 Oct 1997
 # Whom:			Ian Vaudrey <i.vaudrey@cableinet.co.uk>
 #
-# $FreeBSD: ports/www/xitami/Makefile,v 1.5 2001/02/05 15:33:58 olgeni Exp $
+# $FreeBSD: ports/www/xitami/Makefile,v 1.6 2001/02/26 05:00:08 steve Exp $
 #
 
 PORTNAME=	xitami
@@ -12,7 +12,7 @@ MASTER_SITES=	http://users.skynet.be/sky37432/
 DISTNAME=	suni24d7
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	i.vaudrey@cableinet.co.uk
+MAINTAINER=	bdluevel@heitec.net
 
 NO_WRKSUBDIR=	yes
 
