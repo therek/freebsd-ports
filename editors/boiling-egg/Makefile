@@ -2,7 +2,7 @@
 # Date created:		9 January 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/editors/boiling-egg/Makefile,v 1.1 2001/04/09 10:30:31 knu Exp $
+# $FreeBSD: ports/editors/boiling-egg/Makefile,v 1.2 2001/04/14 07:57:39 knu Exp $
 #
 
 PORTNAME=	boiling-egg
@@ -17,10 +17,13 @@ MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
 
 RUN_DEPENDS=	${ELISPDIR}/egg/egg.el:${PORTSDIR}/editors/tamago
 
+EMACS_PORT_NAME?=	emacs20
+
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
-ELISPDIR=	${PREFIX}/share/emacs/site-lisp
+ELISPDIR=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp
+PLIST_SUB=	ELISPDIR="${EMACS_LIBDIR_WITH_VER}/site-lisp"
 
 do-install:
 	${MKDIR} ${ELISPDIR}
