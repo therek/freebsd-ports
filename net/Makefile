@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.340 2000/02/29 04:03:16 dburr Exp $
+# $FreeBSD: ports/net/Makefile,v 1.341 2000/03/02 09:29:30 jim Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -124,6 +124,7 @@
     SUBDIR += nocol
     SUBDIR += ns
     SUBDIR += nslint
+    SUBDIR += nsping
     SUBDIR += nstreams
     SUBDIR += ntimelord
     SUBDIR += ntop
