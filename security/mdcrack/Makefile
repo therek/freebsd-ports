@@ -3,17 +3,16 @@
 # Date created:			Apr 19, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/security/mdcrack/Makefile,v 1.2 2001/07/16 04:31:24 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mdcrack
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	security
-MASTER_SITES=	http://mdcrack.multimania.com/
+MASTER_SITES=	http://mdcrack.multimania.com/download/
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
-ALL_TARGET=	# empth
+ALL_TARGET=	little
 
 .include <bsd.port.mk>
