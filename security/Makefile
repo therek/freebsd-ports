@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.243 2001/09/21 05:56:37 knu Exp $
+# $FreeBSD: ports/security/Makefile,v 1.244 2001/10/04 03:39:56 petef Exp $
 #
 
     SUBDIR += aafid2
@@ -118,6 +118,7 @@
     SUBDIR += p5-Crypt-OpenPGP
     SUBDIR += p5-Crypt-OpenSSL-RSA
     SUBDIR += p5-Crypt-OpenSSL-Random
+    SUBDIR += p5-Crypt-PassGen
     SUBDIR += p5-Crypt-Primes
     SUBDIR += p5-Crypt-RIPEMD160
     SUBDIR += p5-Crypt-RSA
