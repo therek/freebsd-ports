@@ -2,44 +2,43 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.28 2000/10/03 18:35:24 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.29 2000/10/05 07:22:45 reg Exp $
 #
 
-PORTNAME=	gaim
-PORTVERSION=	0.10.1
-PORTREVISION=	1
-CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.marko.net/pub/gaim/ \
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+PORTNAME=		gaim
+PORTVERSION=		0.10.2
+CATEGORIES=		net
+MASTER_SITES=		ftp://ftp.marko.net/pub/gaim/ \
+			${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	jim@FreeBSD.org
+MAINTAINER=		jim@FreeBSD.org
 
-USE_BZIP2=	yes
-USE_X_PREFIX=	yes
-USE_GMAKE=	yes
-USE_GTK=	yes
-WANT_ESOUND=	yes
-WANT_GNOME=	yes
-USE_LIBTOOL=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+USE_BZIP2=		yes
+USE_X_PREFIX=		yes
+USE_GMAKE=		yes
+USE_GTK=		yes
+WANT_ESOUND=		yes
+WANT_GNOME=		yes
+USE_LIBTOOL=		yes
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LIBS="-L${LOCALBASE}/lib"
 
-MAN1=		gaim.1
+MAN1=			gaim.1
 
 .include <bsd.port.pre.mk>
 
 .if defined(HAVE_GNOME)
-USE_GNOME=	yes
-CONFIGURE_ARGS+=--enable-gnome --enable-panel
+USE_GNOME=		yes
+CONFIGURE_ARGS+=	--enable-gnome --enable-panel
 .else
-CONFIGURE_ARGS+=--disable-gnome
+CONFIGURE_ARGS+=	--disable-gnome
 .endif
 .if defined(HAVE_ESOUND)
-USE_ESOUND=	yes
-CONFIGURE_ARGS+=--enable-esd
+USE_ESOUND=		yes
+CONFIGURE_ARGS+=	--enable-esd
 .else
-CONFIGURE_ARGS+=--disable-esd
+CONFIGURE_ARGS+=	--disable-esd
 .endif
 
 pre-patch:
