@@ -2,11 +2,11 @@
 # Date created:		24 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/evas/Makefile,v 1.2 2000/11/06 14:10:49 kevlo Exp $
+# $FreeBSD: ports/graphics/evas/Makefile,v 1.3 2000/12/11 02:38:13 steve Exp $
 #
 
 PORTNAME=	evas
-PORTVERSION=	0.0.2
+PORTVERSION=	0.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
