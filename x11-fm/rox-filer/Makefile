@@ -2,10 +2,10 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.10 2001/05/27 15:10:04 olgeni Exp $
+# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.11 2001/06/09 21:41:50 olgeni Exp $
 
 PORTNAME=	rox
-PORTVERSION=	1.1.5
+PORTVERSION=	1.1.6
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	rox
