@@ -3,12 +3,12 @@
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.18 1999/10/08 02:41:23 nakai Exp $
+# $FreeBSD: ports/irc/yagirc/Makefile,v 1.19 1999/10/08 03:29:52 nakai Exp $
 #
 
 DISTNAME=	yagirc-0.66.1
 CATEGORIES=	irc
-MASTER_SITES=	http://www.elpaso.net/~spoon/yagirc/
+MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
 
 MAINTAINER=	mph@freebsd.org
 
