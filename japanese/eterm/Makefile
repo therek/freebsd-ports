@@ -2,8 +2,10 @@
 # Date created:        11th December 1998
 # Whom:                MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/eterm/Makefile,v 1.14 2000/10/05 06:57:40 reg Exp $
+# $FreeBSD: ports/japanese/eterm/Makefile,v 1.15 2001/09/18 07:36:04 knu Exp $
 #
+
+CATEGORIES=	japanese
 
 MASTERDIR=      ${.CURDIR}/../../x11/eterm
 
@@ -27,7 +29,7 @@ THEMES=		Eterm auto chooser trans
 post-configure:
 	for theme in ${THEMES} ; do \
 		${CP} ${WRKSRC}/themes/$$theme/theme.cfg ${WRKSRC}/themes/$$theme/theme.cfg.bak ; \
-		${SED} -e "s,term_name Eterm,term_name kterm," < ${WRKSRC}/themes/$$theme/theme.cfg.bak > ${WRKSRC}/themes/$$theme/theme.cfg ; \
+		${SED} -e "s,term_name xterm-color,term_name kterm," < ${WRKSRC}/themes/$$theme/theme.cfg.bak > ${WRKSRC}/themes/$$theme/theme.cfg ; \
 		${RM} ${WRKSRC}/themes/$$theme/theme.cfg.bak ; \
 	done
 
