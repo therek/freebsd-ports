@@ -3,12 +3,12 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.33 2000/09/25 19:48:22 kris Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.34 2000/11/07 23:28:00 asami Exp $
 #
 
 PORTNAME=	ddd
-PORTVERSION=	3.2.1
-PORTREVISION=	1
+PORTVERSION=	3.3
+PORTREVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= ddd
