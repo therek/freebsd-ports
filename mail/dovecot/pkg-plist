@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.9 2004/02/01 16:01:29 sergei Exp $
 etc/dovecot-example.conf
 etc/rc.d/dovecot.sh
 libexec/dovecot/dovecot-auth
@@ -15,6 +15,7 @@ sbin/dovecot
 %%PORTDOCS%%%%DOCSDIR%%/dovecot-ldap.conf
 %%PORTDOCS%%%%DOCSDIR%%/dovecot-openssl.cnf
 %%PORTDOCS%%%%DOCSDIR%%/dovecot-pgsql.conf
+%%PORTDOCS%%%%DOCSDIR%%/dovecot-mysql.conf
 %%PORTDOCS%%%%DOCSDIR%%/index.txt
 %%PORTDOCS%%%%DOCSDIR%%/mail-storages.txt
 %%PORTDOCS%%%%DOCSDIR%%/mkcert.sh
