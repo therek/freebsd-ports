@@ -2,14 +2,13 @@
 # Date created:				16 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/gliv/Makefile,v 1.2 2001/03/23 14:08:40 kevlo Exp $
+# $FreeBSD: ports/graphics/gliv/Makefile,v 1.3 2001/04/05 10:07:33 mharo Exp $
 #
 
 PORTNAME=	gliv
-PORTVERSION=	1.0b7
+PORTVERSION=	1.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://gliv.tuxfamily.org/
-DISTNAME=	GLiv-1.0beta7
 
 MAINTAINER=	ishmael27@home.com
 
@@ -21,9 +20,10 @@ USE_GMAKE=	yes
 USE_MESA=	yes
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
-CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib -lgnugetopt" \
-		CPPFLAGS="-I${LOCALBASE}/include"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-lm" \
+		LIBS="-L${LOCALBASE}/lib -lgnugetopt"
 
-MAN1=		GLiv.1
+MAN1=		gliv.1
 
 .include <bsd.port.mk>
