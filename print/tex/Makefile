@@ -2,13 +2,15 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/tex/Makefile,v 1.42 2000/04/16 10:44:51 asami Exp $
+# $FreeBSD: ports/print/tex/Makefile,v 1.43 2000/05/04 20:48:49 jmz Exp $
 #
 
 PORTNAME=	tex
 PORTVERSION=	3.14159
 CATEGORIES=	print
-MASTER_SITES=   ftp://ftp.freesoftware.com/pub/tex/package/
+MASTER_SITES=   ftp://ftp.freesoftware.com/pub/tex/package/  \
+		${MASTER_SITE_TEX_CTAN}
+MASTER_SITE_SUBDIR=	systems/web2c
 DISTNAME=	web2c-7.2
 DISTFILES=	web2c-7.2b.tar.gz web-7.2a.tar.gz tex_base.tar.gz cm_tfm.tar.gz \
 		mf_lib.tar.gz cm_mf.tar.gz modes.mf
