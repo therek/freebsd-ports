@@ -2,12 +2,12 @@
 # Date created:				15 January 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.10 2001/08/13 13:20:28 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aureal-kmod
 PORTVERSION=	1.5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	audio
 MASTER_SITES=	http://home.columbus.rr.com/amatey/au88x0/
 DISTNAME=	au88x0-${PORTVERSION}_${PORTREVISION}
@@ -60,18 +60,26 @@ PORTREVISION=	2
 MAKE_ENV+=	HAVE_KOBJ_PCM=1
 .endif
 
-.elif ${OSVERSION} < 500000
-# FreeBSD 4.4
+.elif ${OSVERSION} < 450004
+# FreeBSD 4.4, 4.5-
 PORTVERSION=	1.3
 PORTREVISION=	3
 MAKE_ENV+=	HAVE_KOBJ_PCM=1
 
+.elif ${OSVERSION} < 500000
+# FreeBSD 4.5+
+.if ${VERSION_SOUND_C_STABLE} < 12
+BROKEN=		"Base system is outdated. This port needs -STABLE after 2002-04-22."
+.endif
+PORTVERSION=	1.3
+PORTREVISION=	4
+MAKE_ENV+=	HAVE_KOBJ_PCM=1
 .endif
 
 .if ${OSVERSION} > 500000
 # FreeBSD 5-CURRENT
-.if ${VERSION_SOUND_C_CURRENT} < 52
-BROKEN=		"Base system is outdated. This port needs -CURRENT after 6/17/2001."
+.if ${VERSION_SOUND_C_CURRENT} < 70
+BROKEN=		"Base system is outdated. This port needs -CURRENT after 2002-04-04."
 .endif
 .endif
 
