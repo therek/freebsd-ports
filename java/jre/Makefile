@@ -2,7 +2,7 @@
 # Date created:		8 May 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jre/Makefile,v 1.4 2000/06/29 07:02:59 obrien Exp $
+# $FreeBSD: ports/java/jre/Makefile,v 1.5 2000/06/30 01:23:22 will Exp $
 #
 
 PORTNAME=	jre
@@ -54,7 +54,7 @@ pre-extract:
 		${ECHO_MSG} "          the \`compat3x' package. If you have FreeBSD source code installed" ; \
 		${ECHO_MSG} "          then you can use the following command to install it:" ; \
 		${ECHO_MSG} ; \
-		${ECHO_MSG} "          # cd /usr/src/lib/compat/compat3x ; make install" ; \
+		${ECHO_MSG} "          # cd /usr/src/lib/compat/compat3x.${ARCH} ; make install" ; \
 		${ECHO_MSG} ; \
 	fi
 .endif
