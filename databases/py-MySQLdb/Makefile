@@ -2,7 +2,7 @@
 # Date created:				04 April 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/py-MySQLdb/Makefile,v 1.3 2000/06/24 15:39:13 sobomax Exp $
+# $FreeBSD: ports/databases/py-MySQLdb/Makefile,v 1.4 2000/09/08 12:23:52 tg Exp $
 #
 
 PORTNAME=	py-MySQLdb
@@ -17,7 +17,6 @@ BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
 RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
-FETCH_BEFORE_ARGS=	-b
 ALL_TARGET=	_mysqlmodule.o
 
 pre-configure:
