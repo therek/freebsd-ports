@@ -1,15 +1,17 @@
 # New ports collection makefile for:	qico
-# Version required:	0.46.2
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/qico/Makefile,v 1.2 2000/08/23 14:32:10 kevlo Exp $
 #
 
 PORTNAME=	qico
-PORTVERSION=	0.46.2
+PORTVERSION=	0.48
+DISTNAME=	${PORTNAME}-${PORTVERSION}.0
 CATEGORIES=	comms
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	${PORTNAME}-${PORTVERSION}.0-stable.patch.gz
 
 MAINTAINER=	dsh@vlink.ru
 
