@@ -3,7 +3,7 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.9 1999/08/31 06:47:51 mharo Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.10 1999/11/08 13:01:34 tg Exp $
 #
 
 DISTNAME=       plplot4p99j
@@ -23,8 +23,7 @@ CONFIGURE_ARGS= --with-gcc=yes --with-double=yes
 .include <bsd.port.pre.mk>
 
 post-patch:
-	@perl -pi.bak -e "s|/usr/local/plplot/lib|${PREFIX}/lib/plplot|g;" \
-		${WRKSRC}/src/plctrl.c
+	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/src/*.c
 
 post-install:
 .if ${PORTOBJFORMAT} == "elf"
@@ -32,5 +31,6 @@ post-install:
 .else
 	${LN} -sf libplplotdX.so.4.99 ${PREFIX}/lib/libplplotdX.so
 .endif
+	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>
