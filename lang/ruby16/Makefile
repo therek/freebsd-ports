@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.70 2001/07/11 12:08:36 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.71 2001/07/31 16:46:55 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -119,10 +119,10 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/COPYING* ${RUBY_DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/LEGAL ${RUBY_DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README* ${RUBY_DOCDIR}
+	${MKDIR} ${RUBY_DOCDIR}/digest
+	${INSTALL_DATA} ${WRKSRC}/ext/digest/digest.txt* ${RUBY_DOCDIR}/digest
 	${MKDIR} ${RUBY_DOCDIR}/etc
 	${INSTALL_DATA} ${WRKSRC}/ext/etc/etc.txt* ${RUBY_DOCDIR}/etc
-	${MKDIR} ${RUBY_DOCDIR}/md5
-	${INSTALL_DATA} ${WRKSRC}/ext/md5/md5.txt* ${RUBY_DOCDIR}/md5
 	${MKDIR} ${RUBY_DOCDIR}/pty
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/README* ${RUBY_DOCDIR}/pty
 	${MKDIR} ${RUBY_DOCDIR}/readline
