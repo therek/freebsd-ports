@@ -2,7 +2,7 @@
 # Date created:        08 June 2001
 # Whom:                greid
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/sbagen/Makefile,v 1.1 2001/06/08 21:46:56 greid Exp $
 #
 
 PORTNAME=	sbagen
@@ -26,6 +26,11 @@ DOCFILES=	sbagen.txt theory.txt theory2.txt
 
 do-build:
 	(cd ${WRKSRC} && ${CC} ${CFLAGS} sbagen.c -o sbagen -lm)
+
+post-patch:
+.for F in ${SHAREFILES}
+	@${PERL} -pi -e 's,/bin/bash,/bin/sh,g' ${WRKSRC}/$F
+.endfor
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sbagen ${PREFIX}/bin
