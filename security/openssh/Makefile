@@ -2,12 +2,11 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.69 2001/06/24 04:28:48 dinoex Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.70 2001/06/25 06:28:44 dinoex Exp $
 #
 
-PORTNAME=	OpenSSH
-PORTVERSION=	2.9
-PORTREVISION=	3
+PORTNAME=	openssh
+PORTVERSION=	2.9.9
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/ \
 		ftp://ftp.usa.openbsd.org/pub/OpenBSD/OpenSSH/ \
@@ -67,6 +66,8 @@ MAKE_ENV+=	SKEY=yes
 WRKSRC=		${WRKDIR}/ssh
 
 post-extract:
+	@${PERL5} -pi -e "s=/etc/ssh=${PREFIX}/etc/ssh=" ${WRKSRC}/sshd_config
+	@${PERL5} -pi -e "s=/usr/libex=${PREFIX}/libex=" ${WRKSRC}/sshd_config
 	@${CP} ${FILESDIR}/strlcat.c ${FILESDIR}/strlcpy.c ${WRKSRC}/lib/
 	@${CP} ${FILESDIR}/sshd.sh ${WRKSRC}/
 .if ${OSVERSION} < 400014
@@ -85,11 +86,15 @@ post-patch:
 post-configure:
 .for i in ${FIXME}
 	@${PERL5} -pi -e "s=KERBEROS[:]L=KERBEROS=" ${WRKSRC}/${i}
+	@${PERL5} -pi -e "s=KERBEROS5[:]L=KERBEROS5=" ${WRKSRC}/${i}
 	@${PERL5} -pi -e "s=AFS[:]L=AFS=" ${WRKSRC}/${i}
 	@${PERL5} -pi -e "s=TCP_WRAPPERS[:]L=TCP_WRAPPERS=" ${WRKSRC}/${i}
 	@${PERL5} -pi -e "s=SKEY[:]L=SKEY=" ${WRKSRC}/${i}
 .endfor
 .endif
+
+pre-install:
+	${MKDIR} ${PREFIX}/libdata/ssh
 
 post-install:
 .if !defined(BATCH)
