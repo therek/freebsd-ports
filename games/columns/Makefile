@@ -3,7 +3,7 @@
 # Date created:				26 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/columns/Makefile,v 1.1.1.1 1999/09/09 01:42:05 taoka Exp $
 #
 
 DISTNAME=	columns-1.1
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.phreax.net/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	SDL.0:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.0.0:${PORTSDIR}/devel/sdl
 
 ALL_TARGET=
 
