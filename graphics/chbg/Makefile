@@ -2,7 +2,7 @@
 # Date created:		10 Dec 1999
 # Whom:			Peter Jones <p@dancris.com>
 #
-# $FreeBSD: ports/graphics/chbg/Makefile,v 1.3 2000/10/05 06:57:36 reg Exp $
+# $FreeBSD: ports/graphics/chbg/Makefile,v 1.4 2000/12/18 17:33:03 sobomax Exp $
 #
 
 PORTNAME=	chbg
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	p@dancris.com
+
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
