@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.195 2001/06/21 14:29:15 knu Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.196 2001/06/24 23:46:25 dd Exp $
 #
     SUBDIR += yawho
 
@@ -38,6 +38,7 @@
     SUBDIR += dirdiff
     SUBDIR += diskusage
     SUBDIR += doconfig
+    SUBDIR += du2ps
     SUBDIR += dvdtape
     SUBDIR += eject
     SUBDIR += extipl
