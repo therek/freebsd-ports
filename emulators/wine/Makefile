@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.95 2000/10/15 07:32:37 trevor Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.96 2000/11/02 15:05:13 kevlo Exp $
 #
 
 PORTNAME=	wine
@@ -24,7 +24,6 @@ LDCONFIG_DIRS=	%%PREFIX%%/lib/wine
 MAN1=		wine.1
 MAN5=		wine.conf.5
 ONLY_FOR_ARCHS=	i386
-USE_BISON=	yes
 USE_XPM=	yes
 USE_MESA=	yes
 
@@ -67,10 +66,10 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/wine.ini ${PREFIX}/etc/wine.conf.sample
 	[ -f ${PREFIX}/etc/wine.conf ] \
 		|| ${INSTALL_DATA} ${WRKSRC}/wine.ini ${PREFIX}/etc/wine.conf
-.if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/documentation/wine.man ${PREFIX}/man/man1/wine.1
 	${INSTALL_DATA} ${WRKSRC}/documentation/wine.conf.man ${PREFIX}/man/man5/wine.conf.5
-	-@${MKDIR} ${PREFIX}/lib/wine/documentation ${PREFIX}/lib/wine/reg 2>/dev/null
+.if !defined(NOPORTDOCS)
+	-@${MKDIR} ${PREFIX}/lib/wine/documentation
 .for i in README ANNOUNCE AUTHORS LICENSE WARRANTY documentation/psdrv.reg
 	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/lib/wine/documentation
 .endfor
@@ -81,6 +80,7 @@ do-install:
 .endif
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/bug_report.pl \
 		${PREFIX}/lib/wine
+	-@${MKDIR} ${PREFIX}/lib/wine/reg
 	${INSTALL_SCRIPT} \
 		${WRKSRC}/programs/regapi/regFixer.pl \
 		${WRKSRC}/programs/regapi/regRestorer.pl \
