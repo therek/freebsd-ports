@@ -2,10 +2,10 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.12 2001/05/29 14:56:31 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.13 2001/06/14 14:36:05 sf Exp $
 #
 
-BROKEN=		out of sync with mozilla(0.9.1)
+BROKEN=		"out of sync with mozilla(0.9.1)"
 PORTNAME=	mozilla
 PORTVERSION=	0.9
 PORTEPOCH=	1
