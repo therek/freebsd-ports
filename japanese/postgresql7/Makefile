@@ -2,7 +2,7 @@
 # Date created:		09 Nov 1999
 # Whom:			Ichiro Fukuhara <ichiro@ichiro.org>
 #
-# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.13 2000/04/17 00:17:59 reg Exp $
+# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.14 2000/06/17 05:34:00 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/dbms/PostgreSQL/ \
 		ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION}/ \
 		ftp://ftp.postgresql.org/pub/
 
-MAINTAINER=	ichiro@ichiro.org
+MAINTAINER=	kuriyama@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 PLISTS=
