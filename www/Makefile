@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.224 2000/06/06 20:49:14 dirk Exp $
+# $FreeBSD: ports/www/Makefile,v 1.225 2000/06/06 22:04:53 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -50,6 +50,7 @@
     SUBDIR += gnuinfo
     SUBDIR += gnujsp
     SUBDIR += grail
+    SUBDIR += gtkhtml
     SUBDIR += harvest
     SUBDIR += hotjava
     SUBDIR += htmlpp
