@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.355 2001/09/24 23:46:31 lioux Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.356 2001/09/25 00:06:29 lioux Exp $
 #
 
     SUBDIR += 4va
@@ -41,6 +41,7 @@
     SUBDIR += evas
     SUBDIR += fbm
     SUBDIR += feh
+    SUBDIR += ffmpeg
     SUBDIR += flashplayer
     SUBDIR += fli2gif
     SUBDIR += fly
