@@ -3,16 +3,14 @@
 # Date created:        31 December 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/net/xwhois/Makefile,v 1.10 1999/11/15 02:40:24 kris Exp $
+# $FreeBSD: ports/net/xwhois/Makefile,v 1.11 1999/12/10 02:39:45 billf Exp $
 #
 
 DISTNAME=	xwhois-0.4.0
 CATEGORIES=	net
 MASTER_SITES=	http://c64.org/~nr/ \
 		http://www.goatnet.ml.org/ \
-		ftp://sangis.kalix.net/pub/nr/xwhois/ \
-		ftp://c64.org/pub/nr/xwhois/ \
-		http://www.physics.adelaide.edu.au/~kkennawa/
+		ftp://sangis.kalix.net/pub/nr/xwhois/
 
 MAINTAINER=	billf@FreeBSD.org
 
