@@ -2,14 +2,13 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.1 2001/03/14 01:14:44 sobomax Exp $
+# $FreeBSD: ports/net/flowscan/Makefile,v 1.2 2001/03/14 07:53:22 andreas Exp $
 #
 
 PORTNAME=	flowscan
 PORTVERSION=    1.006
 CATEGORIES=	net
-MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/
-DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
+MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/ DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
 
 MAINTAINER=	andreas@freebsd.org
 
@@ -24,6 +23,7 @@ BUILD_DEPENDS=	ksh:${PORTSDIR}/shells/pdksh \
 CFLOWD_FLOWSCAN_PATCH=	yes
 HAS_CONFIGURE=		yes
 CONFIGURE_ARGS+=	--prefix=${PREFIX}/var/flows
+WRKSRC=			${WRKDIR}/FlowScan-${PORTVERSION}
 
 pre-install:
 	${MKDIR} -p ${PREFIX}/var/flows/bin
