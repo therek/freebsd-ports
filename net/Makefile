@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.439 2000/12/14 03:27:32 jeh Exp $
+# $FreeBSD: ports/net/Makefile,v 1.440 2000/12/14 03:40:26 jeh Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -301,6 +301,7 @@
     SUBDIR += xtradius
     SUBDIR += xwhois
     SUBDIR += yaz
+    SUBDIR += ymessenger
     SUBDIR += ytalk
     SUBDIR += zebra
     SUBDIR += zebra-server
