@@ -1,11 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-fonts/webfonts/pkg-plist,v 1.2 2002/01/20 22:31:03 jim Exp $
 %%FONTSDIR%%/LICENSE
 %%FONTSDIR%%/andalemo.ttf
 %%FONTSDIR%%/arial.ttf
 %%FONTSDIR%%/arialbd.ttf
 %%FONTSDIR%%/arialbi.ttf
 %%FONTSDIR%%/ariali.ttf
-%%PKG_UNICODE%%%%FONTSDIR%%/arialuni.ttf
 %%FONTSDIR%%/ariblk.ttf
 %%FONTSDIR%%/comic.ttf
 %%FONTSDIR%%/comicbd.ttf
