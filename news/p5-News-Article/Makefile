@@ -2,7 +2,7 @@
 # Date created: January 2, 1998
 # Whom: Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.10 2000/06/17 02:36:45 will Exp $
+# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.11 2000/08/19 21:37:16 steve Exp $
 #
 
 PORTNAME=	News-Article
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	croyle@gelemna.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Net/NNTP.pm:${PORTSDIR}/net/p5-Net \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/NNTP.pm:${PORTSDIR}/net/p5-Net \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/PGP/Sign.pm:${PORTSDIR}/security/p5-PGP-Sign
 
 USE_PERL5=	yes
