@@ -2,15 +2,15 @@
 # Date created:		2000/08/12
 # Whom:			makeport.pl
 #
-# $FreeBSD: ports/games/bzflag/Makefile,v 1.5 2000/11/03 23:48:03 nbm Exp $
+# $FreeBSD: ports/games/bzflag/Makefile,v 1.6 2001/03/26 16:51:54 nsayer Exp $
 #
 
 PORTNAME=	bzflag
 PORTVERSION=	1.7e.1
-DISTNAME=	${PORTNAME}_1.7e1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	bzflag
+DISTNAME=	${PORTNAME}_1.7e1
 EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	nsayer@FreeBSD.org
