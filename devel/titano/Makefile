@@ -2,11 +2,11 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/titano/Makefile,v 1.2 2000/09/25 13:58:23 sobomax Exp $
+# $FreeBSD: ports/devel/titano/Makefile,v 1.3 2000/10/02 06:43:50 sobomax Exp $
 #
 
 PORTNAME=	titano
-PORTVERSION= 	0.0.5b
+PORTVERSION=	0.0.5b
 PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}

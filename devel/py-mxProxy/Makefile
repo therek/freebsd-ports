@@ -2,11 +2,11 @@
 # Date created:		2 November 2000
 # Whom:			Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-mxProxy/Makefile,v 1.1 2001/01/03 13:56:52 nbm Exp $
 #
 
 PORTNAME=	mxProxy
-PORTVERSION= 	0.2.0
+PORTVERSION=	0.2.0
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.lemburg.com/files/python/
 PKGNAMEPREFIX=	py-

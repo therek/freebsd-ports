@@ -2,11 +2,11 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake/Makefile,v 1.4 2000/05/14 05:40:47 billf Exp $
+# $FreeBSD: ports/devel/imake/Makefile,v 1.5 2000/05/28 03:31:26 steve Exp $
 #
 
-PORTNAME= 	imake
-PORTVERSION= 	1.0
+PORTNAME=	imake
+PORTVERSION=	1.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
 		ftp://ftp.freesoftware.com/pub/XFree86/3.3.6/source/ \

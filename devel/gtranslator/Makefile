@@ -2,11 +2,11 @@
 # Date created:				16 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.2 2000/10/05 07:10:31 reg Exp $
+# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.3 2000/10/21 15:49:34 sobomax Exp $
 #
 
 PORTNAME=	gtranslator
-PORTVERSION= 	0.30
+PORTVERSION=	0.30
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://gtranslator.sourceforge.net/${PORTVERSION}/tarbz2/ \
 		${MASTER_SITE_SOURCEFORGE}

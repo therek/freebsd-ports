@@ -2,11 +2,11 @@
 # Date created:				27 Apr 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/devel/tcllib/Makefile,v 1.1 2000/06/09 03:35:20 will Exp $
+# $FreeBSD: ports/devel/tcllib/Makefile,v 1.2 2000/12/11 02:37:13 steve Exp $
 #
 
 PORTNAME=		tcllib
-PORTVERSION= 		0.8
+PORTVERSION=		0.8
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcllib

@@ -2,12 +2,12 @@
 # Date created:		31 Jan 1999
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/devel/astyle/Makefile,v 1.9 2000/04/11 21:27:04 mharo Exp $
+# $FreeBSD: ports/devel/astyle/Makefile,v 1.10 2000/05/21 11:52:02 knu Exp $
 #
 
 PORTNAME=	astyle
 PORTVERSION=	1.11.6
-CATEGORIES= 	devel textproc
+CATEGORIES=	devel textproc
 MASTER_SITES=	ftp://astyle.sourceforge.net/pub/astyle/stable/src/\
 		http://www.gelemna.org/ports/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src
