@@ -2,13 +2,13 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-clibpdf/Makefile,v 1.2 2000/09/07 14:39:22 knu Exp $
+# $FreeBSD: ports/print/ruby-clibpdf/Makefile,v 1.3 2000/09/26 08:01:51 knu Exp $
 #
 
 PORTNAME=	clibpdf
-PORTVERSION=	19991016
+PORTVERSION=	20010519
 CATEGORIES=	print ruby
-MASTER_SITES=	http://www2s.biglobe.ne.jp/~Nori/ruby/
+MASTER_SITES=	http://www2s.biglobe.ne.jp/~Nori/ruby/dist/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ClibPDF-ALPHA-${PORTVERSION}
 DIST_SUBDIR=	ruby
@@ -23,18 +23,15 @@ USE_RUBY_EXTCONF=	yes
 WRKSRC=		${WRKDIR}/ClibPDF-${PORTVERSION}
 INSTALL_TARGET=	site-install
 
-EXAMPLES_EN=	Arcs.rb		DomainDemo.rb	MarkerTest.rb	Minimal.rb \
-		beziertest.rb	charwidth.rb	cover.rb	dashtest.rb \
-		filltest.rb	fontlist.rb	helloworld.rb	linkpdfpage.rb \
-		outline.rb	textalign.rb	textboxfit.rb	timeaxis.rb \
-		weather.rb
-EXAMPLES_JA=	jpntest.rb
+EXAMPLES_EN=	*.rb
+EXAMPLES_JA=	ja/*.rb
 
 DOCS_EN=	README
-DOCS_JA=	ChangeLog.ja	README.ja	TODO.ja
+DOCS_JA=	ChangeLog.ja	README.ja	TODO.ja		doc/*
 
 post-extract:
-	${RM} ${WRKSRC}/examples/*.pdf
+	${MKDIR} ${WRKSRC}/examples/ja
+	${MV} ${WRKSRC}/examples/jpntest.rb ${WRKSRC}/examples/ja/
 
 post-install:
 .if !defined(NOPORTDOCS)
