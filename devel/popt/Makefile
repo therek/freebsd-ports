@@ -2,7 +2,7 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/devel/popt/Makefile,v 1.2 2000/04/11 21:30:08 mharo Exp $
+# $FreeBSD: ports/devel/popt/Makefile,v 1.3 2000/04/21 22:07:26 fenner Exp $
 #
 
 PORTNAME=	popt
