@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/databases/postgresql7/pkg-install,v 1.7 2003/01/04 01:10:13 seanc Exp $
+# $FreeBSD: ports/databases/postgresql7/pkg-install,v 1.8 2003/12/04 12:00:48 seanc Exp $
 
 PATH=/bin:/usr/sbin
 
@@ -8,6 +8,11 @@ DB_DIR=${PKG_PREFIX}/pgsql
 
 backupwarning() {
 	echo "
+NOTICE: unlike most minor versions, this version does require
+some updates to the pg_* system tables.  Full instructions for
+how to do this are included in the full HISTORY file.
+DO NOT UPGRADE WITHOUT READING THESE INSTRUCTIONS.
+
   =========== BACKUP YOUR DATA! =============
   As always, backup your data before
   upgrading. If the upgrade leads to a higher
