@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/x11/kdebase3/pkg-install,v 1.2 2004/08/30 19:55:40 lofi Exp $
+# $FreeBSD$
 #
 
 if [ "$2" != "POST-INSTALL" ]; then
