@@ -2,7 +2,7 @@
 # Date created:				01 Sep 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gnomebreakout/Makefile,v 1.1 2000/09/12 14:59:20 ade Exp $
+# $FreeBSD: ports/games/gnomebreakout/Makefile,v 1.2 2000/11/03 16:19:24 ade Exp $
 #
 
 PORTNAME=	gnomebreakout
@@ -13,15 +13,11 @@ DISTNAME=	gnome-breakout-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-
-USE_X_PREFIX=	YES
-GNU_CONFIGURE=	YES
+USE_X_PREFIX=	yes
+USE_GNOME=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome/ \
-		--datadir=${PREFIX}/share/gnome
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
