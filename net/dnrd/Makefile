@@ -2,7 +2,7 @@
 # Date created:        06 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/net/dnrd/Makefile,v 1.2 2001/03/29 16:34:20 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       	dnrd
@@ -15,6 +15,7 @@ MAINTAINER=		greid@FreeBSD.org
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 
 USE_GMAKE=		yes
+USE_REINPLACE=	yes
 
 MAN8=			dnrd.8
 
@@ -23,6 +24,6 @@ post-patch:
 	@(cd ${WRKSRC} && ${SED} -e 's,%%PREFIX%%,${PREFIX},g' $F > foo && \
 		${MV} foo $F)
 .endfor
-	${PERL} -pi -e "s@cc@${CC}@g; s@-lc_r@${PTHREAD_LIBS}@g" ${WRKSRC}/Makefile
+	${REINPLACE_CMD} -e "s@cc@${CC}@g; s@-lc_r@${PTHREAD_LIBS}@g" ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

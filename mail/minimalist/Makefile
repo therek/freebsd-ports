@@ -2,7 +2,7 @@
 # Date created:        15 September 1999
 # Whom:                gmarco@scotty.masternet.it
 #
-# $FreeBSD: ports/mail/minimalist/Makefile,v 1.7 2001/02/05 15:10:55 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	minimalist
@@ -16,9 +16,10 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	gmarco@giovannelli.it
 
 NO_BUILD=	yes
+USE_REINPLACE=	yes
 
 post-patch:
-	@(cd ${WRKSRC}; ${PERL} -i.bak -p -e 's,/usr/local,${PREFIX},' README \
+	@(cd ${WRKSRC}; ${REINPLACE_CMD} -e 's,/usr/local,${PREFIX},' README \
 		minimalist.conf-sample minimalist.pl)
 
 do-install:
