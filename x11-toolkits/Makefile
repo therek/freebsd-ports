@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.86 2000/08/12 16:48:42 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.87 2000/08/17 14:59:30 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -7,6 +7,7 @@
     SUBDIR += blt
     SUBDIR += buffy
     SUBDIR += clean-theme-gtk
+    SUBDIR += colorstep
     SUBDIR += fltk
     SUBDIR += fox
     SUBDIR += gnome--
