@@ -2,11 +2,11 @@
 # Date created:				November 19th 2000
 # Whom:					Blaz Zupan <blaz@amis.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/p5-Unix-Syslog/Makefile,v 1.1 2000/12/19 10:45:03 will Exp $
 #
 
 PORTNAME=	Unix-Syslog
-PORTVERSION= 	0.94
+PORTVERSION=	0.94
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Unix
