@@ -2,12 +2,13 @@
 # Date created:        15 Jun 1998
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/xdvik-vflib-pk300/Makefile,v 1.12 2000/01/25 14:23:10 taoka Exp $
+# $FreeBSD: ports/japanese/xdvik-vflib-pk300/Makefile,v 1.13 2000/04/13 08:33:39 knu Exp $
 #
 
 RUN_DEPENDS=	${LOCALBASE}/share/texmf/fonts/pk/${MF_MODE}/pk${BDPI}:${PORTSDIR}/japanese/ptex-pkfonts${BDPI}
 
 FONTTYPE=	pkfont
+USEPK_MODE=	cx
 BDPI=		300
 SHRINK=		6
 MASTERDIR=	${.CURDIR}/../xdvik-vflib

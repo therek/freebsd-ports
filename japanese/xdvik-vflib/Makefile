@@ -2,7 +2,7 @@
 # Date created:        15 Jun 1998
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.13 2000/04/13 08:33:38 knu Exp $
+# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.14 2000/06/09 21:59:00 asami Exp $
 #
 
 PORTNAME=	xdvik-vflib
@@ -100,8 +100,8 @@ DOCS=		FAQ xdvi.icon CHANGES.xdvik-jp \
 #  ${PREFIX}/libexec/xdviprint, any kind of program can be used.
 # ******************
 FONTTYPE?=	metafont
-USEPK_MODE?=	preview
-MAKETEX_MODE?=	ljfour
+USEPK_MODE?=	cx
+MAKETEX_MODE?=	cx
 SHRINK?=	6
 BDPI?=		300
 DVIPS?=		dvips
