@@ -2,11 +2,11 @@
 # Date created:				2000-09-23
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11-fm/xdiskusage/Makefile,v 1.1 2000/10/04 05:15:34 trevor Exp $
+# $FreeBSD: ports/x11-fm/xdiskusage/Makefile,v 1.2 2001/08/29 00:40:51 trevor Exp $
 #
 
 PORTNAME=	xdiskusage
-PORTVERSION=	1.41
+PORTVERSION=	1.44
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://xdiskusage.sourceforge.net/
 EXTRACT_SUFX=	.tgz
