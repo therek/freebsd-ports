@@ -2,7 +2,7 @@
 # Date created:		7 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-acl/Makefile,v 1.3 2000/09/26 08:01:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	acl
@@ -15,16 +15,13 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 USE_RUBY=	yes
-
-.if !defined(NOPORTDOCS)
-USE_RUBY_RD=	yes
-.endif
+USE_RUBY_RDTOOL=	yes
 
 do-build:
 .if !defined(NOPORTDOCS)
 .for f in acl.rd acl.rd.ja
 	@cd ${WRKSRC}/doc; \
-	${RUBY_RD} ${f} > ${f:S/.rd/.html/}
+	${RUBY_RD2} ${f} > ${f:S/.rd/.html/}
 .endfor
 .endif
 
