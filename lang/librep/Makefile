@@ -2,7 +2,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/librep/Makefile,v 1.9 2000/04/19 15:09:18 ade Exp $
+# $FreeBSD: ports/lang/librep/Makefile,v 1.10 2000/06/14 13:21:38 sobomax Exp $
 #
 
 PORTNAME=	librep
@@ -20,6 +20,7 @@ PLIST_SUB=	GNUHOST=${ARCH}--freebsd${OSREL} VERSION=${PORTVERSION}
 
 USE_NEWGCC=	yes
 USE_GMAKE=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lxpg4 -lintl"

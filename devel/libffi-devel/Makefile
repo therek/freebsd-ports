@@ -2,7 +2,7 @@
 # Date created:			14, June, 1998
 # Whom:				Horance Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/libffi/Makefile,v 1.11 1999/11/26 17:33:15 steve Exp $
+# $FreeBSD: ports/devel/libffi/Makefile,v 1.12 2000/04/11 21:28:35 mharo Exp $
 #
 
 PORTNAME=	libffi
@@ -13,9 +13,7 @@ MASTER_SITES=	ftp://sourceware.cygnus.com/pub/libffi/
 MAINTAINER=	horance@freedom.ie.cycu.edu.tw
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_TARGET=	# empty
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

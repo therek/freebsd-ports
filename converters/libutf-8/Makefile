@@ -2,7 +2,7 @@
 # Date created:				1 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.4 2000/04/08 23:24:32 mharo Exp $
+# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.5 2000/04/20 10:45:33 mharo Exp $
 #
 
 PORTNAME=	libutf
@@ -15,6 +15,8 @@ DISTNAME=	libutf-8-1.0
 
 MAINTAINER=	adam@whizkidtech.net
 
+INSTALLS_SHLIBS=	yes
+
 MAN3=		libutf-8.3 fgetu8.3 fputu8.3 sgetu8.3 sputu8.3
 
 do-install:
@@ -26,8 +28,5 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/fputu8.3 ${PREFIX}/man/man3
 	${INSTALL_MAN} ${WRKSRC}/sgetu8.3 ${PREFIX}/man/man3
 	${INSTALL_MAN} ${WRKSRC}/sputu8.3 ${PREFIX}/man/man3
-
-post-install:
-	${SETENV} OBFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

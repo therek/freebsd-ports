@@ -2,7 +2,7 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.10 2000/04/21 08:18:34 mharo Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.11 2000/05/19 18:22:42 nsayer Exp $
 #
 
 PORTNAME=	libmcrypt
@@ -13,14 +13,12 @@ MASTER_SITES=	ftp://argeas.cs-net.gr/pub/unix/mcrypt/old/ \
 
 MAINTAINER=	nsayer@freebsd.org
 
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-posix-threads
 
 MAN3=		mcrypt.3
 
 RESTRICTED=	"yes - cryptography"
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

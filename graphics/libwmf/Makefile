@@ -2,7 +2,7 @@
 # Date Created:		22 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.10 2000/05/29 02:23:40 cpiazza Exp $
+# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.11 2000/05/30 19:47:16 cpiazza Exp $
 #
 
 PORTNAME=	libwmf
@@ -19,12 +19,10 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/freetype \
 		          -I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}"/lib
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

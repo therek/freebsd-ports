@@ -2,7 +2,7 @@
 # Date created:         11 July 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/libslang/Makefile,v 1.18 2000/02/10 06:56:12 taoka Exp $
+# $FreeBSD: ports/devel/libslang/Makefile,v 1.19 2000/04/11 21:28:48 mharo Exp $
 #
 
 PORTNAME=	libslang
@@ -15,12 +15,10 @@ MAINTAINER=	xaa+ports@timewasters.nl
 
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
+INSTALLS_SHLIBS=	yes
 #WRKSRC=		${WRKDIR}/slang
 
 ALL_TARGET=	all elf
 INSTALL_TARGET=	install install-elf
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date Created:			8 October 1998
 # Whom:				Glenn Johnson <gjohnson@nola.srrc.usda.gov>
 #
-# $FreeBSD: ports/devel/libU77/Makefile,v 1.5 2000/03/23 20:06:55 mharo Exp $
+# $FreeBSD: ports/devel/libU77/Makefile,v 1.6 2000/04/11 21:28:30 mharo Exp $
 #
 
 PORTNAME=	libU77
@@ -11,6 +11,8 @@ CATEGORIES=	devel
 MASTER_SITES=	http://flo.mech.eng.usyd.edu.au/~norris/src/
 
 MAINTAINER=	ports@FreeBSD.org
+
+INSTALLS_SHLIBS=	yes
 
 pre-build:
 	${CP} ${FILESDIR}/makefile.lib ${WRKSRC}/Makefile
@@ -25,7 +27,6 @@ MAN3=   access.3f alarm.3f chdir.3f chmod.3f ctime.3f drand.3f dsecnd.3f    \
 	system.3f time.3f unlink.3f wait.3f wclock.3f
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 	${INSTALL_MAN} ${WRKSRC}/man/*.3f ${PREFIX}/man/man3
 
 .if !defined(NOPORTDOCS)

@@ -2,7 +2,7 @@
 # Date created:                8 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11/libdnd/Makefile,v 1.7 2000/01/29 22:46:04 reg Exp $
+# $FreeBSD: ports/x11/libdnd/Makefile,v 1.8 2000/04/13 19:09:48 cpiazza Exp $
 #
 
 PORTNAME=	libdnd
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	lukin@okbmei.msk.su
 
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/DND/DNDlib
 GNU_CONFIGURE=	yes
 
@@ -23,6 +24,5 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/libdnd
 	${INSTALL_MAN} ${WRKDIR}/DND/DNDdoc/* ${PREFIX}/share/doc/libdnd
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

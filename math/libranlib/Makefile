@@ -2,7 +2,7 @@
 # Date created:		06 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/libranlib/Makefile,v 1.8 2000/04/14 07:20:13 asami Exp $
+# $FreeBSD: ports/math/libranlib/Makefile,v 1.9 2000/06/07 08:40:09 tg Exp $
 #
 
 PORTNAME=	ranlib
@@ -13,6 +13,7 @@ DISTNAME=	ranlib.c
 
 MAINTAINER=	tg@FreeBSD.org
 
+INSTALLS_SHLIBS=	yes
 MAKE_ENV=	NOPROFILE=true
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
@@ -29,6 +30,5 @@ post-install:
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libranlib.so.1.0 ${PREFIX}/lib/libranlib.so
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

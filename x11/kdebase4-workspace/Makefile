@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.47 2000/05/24 00:33:07 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.48 2000/06/05 06:20:41 kris Exp $
 #
 
 PORTNAME=	kdebase
@@ -20,6 +20,7 @@ LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2 \
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_QT2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+="--with-xdmdir=${X11BASE}/lib/X11/xdm" \
 		--with-qt-dir=${X11BASE} \

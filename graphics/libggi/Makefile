@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/graphics/libggi/Makefile,v 1.1 2000/01/29 05:11:02 steve Exp $
+# $FreeBSD: ports/graphics/libggi/Makefile,v 1.2 2000/04/14 10:46:34 asami Exp $
 #
 
 PORTNAME=	libggi
@@ -16,6 +16,7 @@ LIB_DEPENDS=	gii.0:${PORTSDIR}/devel/libgii
 
 USE_BZIP2=	yes
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gii=${PREFIX}
 
@@ -48,8 +49,5 @@ MAN3=		ggiAddFlags.3ggi ggiCheckGraphMode.3ggi ggiCheckMode.3ggi \
 		ggiResourceRelease.3ggi ggiResourceMustAcquire.3ggi
 MAN6=		cube3d.6
 MAN7=		libggi.7ggi
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

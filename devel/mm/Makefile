@@ -2,7 +2,7 @@
 # Date Created:			14 March 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/mm/Makefile,v 1.19 2000/04/30 18:40:28 rse Exp $
+# $FreeBSD: ports/devel/mm/Makefile,v 1.20 2000/05/21 09:36:41 rse Exp $
 #
 
 PORTNAME=	mm
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/mm/ \
 
 MAINTAINER=	rse@engelschall.com
 
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		mm-config.1
@@ -23,8 +24,5 @@ post-build:
 
 test:
 	@cd ${WRKSRC} && ${MAKE} test
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

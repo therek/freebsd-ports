@@ -2,7 +2,7 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.13 1999/08/31 06:41:51 mharo Exp $
+# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.14 2000/04/11 21:28:34 mharo Exp $
 #
 
 PORTNAME=	dlmalloc
@@ -14,14 +14,12 @@ DISTFILES=	malloc-2.6.5.c
 MAINTAINER=	roberto@FreeBSD.org
 
 NO_WRKSUBDIR=   yes
+INSTALLS_SHLIBS=	yes
 
 do-extract:
 	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
 	${CP} -p ${DISTDIR}/${DISTFILES} ${WRKDIR}
 	${CP} -p ${FILESDIR}/Makefile ${WRKDIR}
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

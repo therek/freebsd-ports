@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/devel/libgii/Makefile,v 1.1 2000/01/29 04:57:40 steve Exp $
+# $FreeBSD: ports/devel/libgii/Makefile,v 1.2 2000/04/11 21:28:39 mharo Exp $
 #
 
 PORTNAME=	libgii
@@ -14,6 +14,7 @@ MAINTAINER=	mwest@uct.ac.za
 
 USE_BZIP2=	yes
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 # NOTE: We can not define USE_LIBTOOL for this port to build.
 #USE_LIBTOOL=	yes
@@ -39,7 +40,6 @@ post-configure:
 	@${PERL} -p -i.bak -e 's/deplibs -lc/deplibs/;' ${WRKSRC}/libtool
 
 post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@${MAKE} install-examples
 .if !defined(NOPORTDOCS)
 	@${MAKE} install-documents

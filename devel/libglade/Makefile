@@ -2,7 +2,7 @@
 # Date created:				18 August 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/libglade/Makefile,v 1.12 2000/05/22 18:54:39 ade Exp $
+# $FreeBSD: ports/devel/libglade/Makefile,v 1.13 2000/06/01 16:10:36 ade Exp $
 #
 
 PORTNAME=	libglade
@@ -21,6 +21,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"

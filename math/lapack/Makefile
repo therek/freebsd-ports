@@ -2,7 +2,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.17 1999/10/13 22:59:09 jmz Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.18 2000/04/14 07:20:12 asami Exp $
 #
 
 PORTNAME=	lapack
@@ -15,6 +15,8 @@ DISTFILES=	lapack.tgz manpages.tgz
 MAINTAINER=	jmz@FreeBSD.org
 
 DIST_SUBDIR=	lapack
+
+INSTALLS_SHLIBS=	yes
 
 MANCOMPRESSED=	maybe
 MANL=	cbdsqr.l cgbbrd.l cgbcon.l cgbequ.l cgbmv.l cgbrfs.l cgbsv.l cgbsvx.l \
@@ -219,7 +221,6 @@ do-install:
 	${LN} -sf libblas.so.2.0 ${PREFIX}/lib/libblas.so
 	${LN} -sf liblapack.so.3.0 ${PREFIX}/lib/liblapack.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${INSTALL_MAN} ${WRKDIR}/blas/man/manl/*.l ${PREFIX}/man/manl
 	${INSTALL_MAN} ${WRKDIR}/man/manl/[a-c]*.l ${PREFIX}/man/manl
 	${INSTALL_MAN} ${WRKDIR}/man/manl/[d-l]*.l ${PREFIX}/man/manl

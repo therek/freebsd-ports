@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.30 2000/05/23 02:31:35 will Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.31 2000/05/27 15:45:37 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -16,6 +16,7 @@ MAINTAINER=	will@FreeBSD.org
 MOC=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_QT2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \

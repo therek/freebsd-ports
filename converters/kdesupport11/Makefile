@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.28 2000/04/08 23:24:31 mharo Exp $
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.29 2000/05/17 11:37:37 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -18,12 +18,9 @@ USE_BZIP2=	yes
 
 USE_QT=		yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--without-libjpeg --without-libgif \
 		--without-libgdbm --without-libuulib
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

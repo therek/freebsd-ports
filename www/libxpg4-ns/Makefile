@@ -2,7 +2,7 @@
 # Date created:		27 February 1999
 # Whom:			sada
 #
-# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.6 2000/02/08 09:29:21 peter Exp $
+# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.7 2000/04/10 00:05:37 cpiazza Exp $
 #
 
 PORTNAME=	libxpg4-ns
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 DISTNAME=	libxpg4-3.3
 
 MAINTAINER=	sada@FreeBSD.ORG
+
+INSTALLS_SHLIBS=	yes
 
 MAKE_ENV+=	OBJFORMAT=aout SHLIB_MAJOR=2 SHLIB_MINOR=0
 PORTOBJFORMAT=	aout
@@ -28,9 +30,6 @@ pre-build:
 
 pre-install:
 	${MKDIR} ${LIBDIR}
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${LIBDIR}
 
 extract-from-freebsd: # only for port maintainer.
 .if exists(/usr/src/lib)

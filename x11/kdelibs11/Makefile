@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.43 2000/04/03 07:12:36 will Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.44 2000/04/13 19:09:42 cpiazza Exp $
 #
 
 PORTNAME=	kdelibs
@@ -25,6 +25,7 @@ MAKE_ENV+=	SOMAJOR="${LIBVER}" SOMINOR="0"
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_QT=		yes
+INSTALLS_SHLIBS=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFLAGS=
 CONFIGURE_ARGS=	--enable-shared --x-includes="$(X11BASE)/include" \

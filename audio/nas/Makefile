@@ -2,7 +2,7 @@
 # Date created:		03 Nov 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/audio/nas/Makefile,v 1.14 2000/04/08 21:24:09 mharo Exp $
+# $FreeBSD: ports/audio/nas/Makefile,v 1.15 2000/05/02 15:31:36 jedgar Exp $
 #
 
 PORTNAME=	nas
@@ -16,6 +16,7 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
+INSTALLS_SHLIBS=	yes
 ALL_TARGET=	World
 # no need to "xmkmf -a" and create the Makefiles twice -- see above
 XMKMF=		xmkmf
@@ -74,7 +75,6 @@ post-patch:
 		${PERL} -pi -e "s|<malloc.h>|<stdlib.h>|g"
 
 post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

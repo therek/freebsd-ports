@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.39 2000/05/16 23:57:02 will Exp $
 #
 
 PORTNAME=	kdeutils
@@ -19,6 +19,7 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_QT2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \

@@ -2,7 +2,7 @@
 # Date created:			8 August 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libworkman/Makefile,v 1.5 2000/03/21 23:01:10 asami Exp $
+# $FreeBSD: ports/audio/libworkman/Makefile,v 1.6 2000/04/08 21:23:55 mharo Exp $
 #
 
 PORTNAME=	libworkman
@@ -16,13 +16,11 @@ MAINTAINER=	jim@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/libworkman
 USE_IMAKE=	yes
+INSTALLS_SHLIBS=	yes
 
 post-patch:
 	@${CP} ${WRKSRC}/Config ${WRKSRC}/Config.orig;
 	@${SED} -e 's^/usr/local/^${PREFIX}/^g' \
 		${WRKSRC}/Config.orig > ${WRKSRC}/Config
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        Sun Apr 11 13:06:01 PDT 1999
 # Whom:                Michael Haro <mharo@area51.fremont.ca.us>
 #
-# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.11 2000/03/07 21:08:33 mharo Exp $
+# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.12 2000/04/08 21:23:54 mharo Exp $
 #
 
 PORTNAME=	libmikmod
@@ -15,6 +15,7 @@ MAINTAINER=	mharo@FreeBSD.org
 LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 USE_GMAKE=	yes
 
 MAN1=	libmikmod-config.1

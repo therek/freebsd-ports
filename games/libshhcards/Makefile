@@ -2,7 +2,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/libshhcards/Makefile,v 1.10 2000/03/29 07:17:32 kris Exp $
+# $FreeBSD: ports/games/libshhcards/Makefile,v 1.11 2000/04/14 12:26:00 asami Exp $
 #
 
 PORTNAME=		libshhcards
@@ -20,6 +20,7 @@ LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_GMAKE=		yes
 USE_X_PREFIX=		yes
+INSTALLS_SHLIBS=		yes
 SOLIB=			libshhcards.so
 
 .include <bsd.port.pre.mk>
@@ -34,7 +35,6 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/shhcards.h ${PREFIX}/include
 	@ ${INSTALL_DATA} ${WRKSRC}/${SOLIB}.${SOVERSION} ${PREFIX}/lib
 	@ ${LN} -sf ${SOLIB}.${SOVERSION} ${PREFIX}/lib/${SOLIB}
-	@ ${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 post-install:
 .if !defined(NOPORTDOCS)

@@ -2,7 +2,7 @@
 # Date created:		14 May 1997
 # Whom:			ejc@bazzle.com
 #
-# $FreeBSD: ports/devel/omniORB/Makefile,v 1.10 2000/04/01 05:42:50 mharo Exp $
+# $FreeBSD: ports/devel/omniORB/Makefile,v 1.11 2000/04/11 21:29:17 mharo Exp $
 #
 
 PORTNAME=	omniORB
@@ -18,8 +18,9 @@ MAN1=		catior.1 genior.1 nameclt.1 obuildtree.1 ols.1 omake.1 \
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
-USE_NEWGCC=	YES
-USE_GMAKE=	YES
+USE_NEWGCC=	yes
+USE_GMAKE=	yes
+INSTALLS_SHLIBS=	yes
 MAKEFILE=	GNUmakefile
 ALL_TARGET=	export
 MAKE_ENV=	CDEBUGFLAGS="${CFLAGS}" CXXDEBUGFLAGS="${CXXFLAGS}" \
@@ -56,6 +57,5 @@ do-install:
 	cd ${WRKSRC}/../doc && \
 		find . |cpio -pdum -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/omniORB
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

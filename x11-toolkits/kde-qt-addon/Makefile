@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/kde-qt-addon/Makefile,v 1.1 2000/05/16 21:55:28 will Exp $
 #
 
 PORTNAME=	kde-qt-addon
@@ -17,6 +17,7 @@ SOMAJOR=	4
 SOMINOR=	0
 USE_BZIP2=	yes
 USE_QT2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \

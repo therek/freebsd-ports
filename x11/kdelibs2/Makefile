@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.48 2000/05/29 19:49:45 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.49 2000/06/01 16:43:22 asami Exp $
 #
 
 PORTNAME=	kdelibs
@@ -23,6 +23,7 @@ SOMAJOR=	4
 SOMINOR=	0
 USE_BZIP2=	yes
 USE_QT2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} --enable-shared \
 		--with-qt-includes=${X11BASE}/include/qt2 \

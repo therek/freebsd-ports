@@ -2,7 +2,7 @@
 # Date created:				04 Jun 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.1 2000/06/09 19:57:59 will Exp $
 #
 
 PORTNAME=	libjsearch
@@ -22,6 +22,7 @@ LIB_DEPENDS=	jx-1_5_3.1:${JXPORT}
 WRKSRC=		${WRKDIR}/JX-1.5.3
 
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	JX_INSTALL_ROOT="${PREFIX}/bin" \
 		JX_LIB_ROOT="${PREFIX}/lib" \

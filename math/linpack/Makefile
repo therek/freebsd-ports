@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/linpack/Makefile,v 1.24 2000/03/23 21:09:26 mharo Exp $
+# $FreeBSD: ports/math/linpack/Makefile,v 1.25 2000/04/14 07:20:15 asami Exp $
 #
 
 PORTNAME=	linpack
@@ -17,6 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=    blas.1:${PORTSDIR}/math/blas
 
+INSTALLS_SHLIBS=	yes
 DIST_SUBDIR=	${PORTNAME}
 NO_WRKSUBDIR=	yes
 
@@ -52,8 +53,5 @@ do-extract:
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

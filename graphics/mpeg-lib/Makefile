@@ -2,7 +2,7 @@
 # Date created:		16 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.15 1999/12/23 16:14:41 steve Exp $
+# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.16 2000/04/14 10:46:40 asami Exp $
 #
 
 PORTNAME=	mpeg_lib
@@ -13,10 +13,8 @@ MASTER_SITES=	ftp://ftp.bic.mni.mcgill.ca/pub/mpeg/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	OPTIMIZE="${CFLAGS}"
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

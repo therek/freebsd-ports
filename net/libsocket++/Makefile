@@ -4,7 +4,7 @@
 # Whom:				  Narvi <narvi@haldjas.folklore.ee>
 #				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/net/libsocket++/Makefile,v 1.9 2000/04/29 21:53:59 kris Exp $
+# $FreeBSD: ports/net/libsocket++/Makefile,v 1.10 2000/05/28 04:07:21 steve Exp $
 #
 
 PORTNAME=	libsocket++
@@ -18,13 +18,13 @@ DISTNAME=	socket++-1.10
 MAINTAINER=	narvi@haldjas.folklore.ee
 
 GNU_CONFIGURE=	yes
+INSTALLS_SHLIBS=	yes
 NOPROFILE=	true
 
 post-configure:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
 
 post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/libsocket++
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/libsocket++

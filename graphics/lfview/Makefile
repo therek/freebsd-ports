@@ -2,7 +2,7 @@
 # Date created:		24 February 1999
 # Whom:			Yuu Yashiki
 #
-# $FreeBSD: ports/graphics/lfview/Makefile,v 1.3 1999/10/10 02:22:09 flathill Exp $
+# $FreeBSD: ports/graphics/lfview/Makefile,v 1.4 2000/04/14 10:46:32 asami Exp $
 #
 
 PORTNAME=	lfview
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	s974123@cc.matsuyama-u.ac.jp
 
 USE_IMAKE=	yes
+INSTALLS_SHLIBS=	yes
 NO_INSTALL_MANPAGES=	yes
 
 do-install:
@@ -25,8 +26,5 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/ja/lfview
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/ja/lfview
 .endif
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

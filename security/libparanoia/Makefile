@@ -3,7 +3,7 @@
 # Date created:				1 Jan 1999
 # Whom:					Alexandre Snarskii <snar@paranoia.ru>
 #
-# $FreeBSD: ports/security/libparanoia/Makefile,v 1.4 2000/04/09 18:29:54 cpiazza Exp $
+# $FreeBSD: ports/security/libparanoia/Makefile,v 1.5 2000/04/30 20:17:38 steve Exp $
 
 PORTNAME=	libparanoia
 PORTVERSION=	1.4
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.lexa.ru/pub/domestic/snar/
 MAINTAINER=	snar@paranoia.ru
 
 ONLY_FOR_ARCHS=	i386
+
+INSTALLS_SHLIBS=	yes
 
 # this library depends on system-defined headers "SYS.h" and "DEFS.h"
 # which may differ from release to release.

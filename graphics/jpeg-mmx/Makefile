@@ -2,7 +2,7 @@
 # Date created:		6 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.20 2000/04/14 10:46:26 asami Exp $
+# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.21 2000/05/19 07:05:29 cpiazza Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # version number) when updating this port.  Thank you.
@@ -16,13 +16,13 @@ DISTNAME=       jpegsrc.v${PORTVERSION}
 MAINTAINER=	jseger@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/jpeg-6b
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static
 MAN1=		cjpeg.1 djpeg.1 jpegtran.1 rdjpgcom.1 wrjpgcom.1
 USE_LIBTOOL=	yes
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/jpeg
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/jpeg

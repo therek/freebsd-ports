@@ -2,7 +2,7 @@
 # Date Created:		20 July 1999
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/libdjvu++/Makefile,v 1.1 2000/03/29 21:22:46 ade Exp $
+# $FreeBSD: ports/graphics/libdjvu++/Makefile,v 1.2 2000/04/14 10:46:33 asami Exp $
 #
 
 PORTNAME=	libdjvu++
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.djvu.com/open/
 
 MAINTAINER=	mi@aldan.algebra.com
 
+INSTALLS_SHLIBS=	yes
 IS_INTERACTIVE=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
@@ -30,7 +31,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${lib} ${PREFIX}/lib
 .endfor
 	${LN} -sf libdjvu++.so.2 ${PREFIX}/lib/libdjvu++.so
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/djvu
 	${INSTALL_DATA} ${WRKSRC}/@Doc/* ${PREFIX}/share/doc/djvu

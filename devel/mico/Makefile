@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.41 2000/01/31 14:39:49 scrappy Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.42 2000/04/11 21:29:04 mharo Exp $
 #
 
 PORTNAME=	mico
@@ -19,6 +19,7 @@ MICOVER=	`${ECHO} ${DISTNAME} | ${SED} 's/mico-//'`
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
+INSTALLS_SHLIBS=	yes
 USE_NEWGCC=	yes
 
 .if defined(QT2)
@@ -55,7 +56,6 @@ post-install:
 	${LN} -sf ${PREFIX}/lib/libmicoqt${MICOVER}.so.1 ${PREFIX}/lib/libmicoqt.${MICOVER}.so
 	${LN} -sf ${PREFIX}/lib/libmicotcl${MICOVER}.so.1 ${PREFIX}/lib/libmicotcl.${MICOVER}.so
 	${LN} -sf ${PREFIX}/lib/libmicox${MICOVER}.so.1 ${PREFIX}/lib/libmicox.${MICOVER}.so
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@strip ${PREFIX}/bin/containmentd
 	@strip ${PREFIX}/bin/eventd
 	@strip ${PREFIX}/bin/idl

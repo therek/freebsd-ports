@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.42 2000/04/21 08:18:37 mharo Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.43 2000/04/25 22:16:22 dirk Exp $
 #
 
 PORTNAME=	openssl
@@ -94,7 +94,6 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/$i.so.${SHLIBVER} ${PREFIX}/lib
 	@${LN} -sf $i.so.${SHLIBVER} ${PREFIX}/lib/$i.so
 .endfor
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .endif
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/openssl
