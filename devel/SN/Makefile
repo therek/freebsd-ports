@@ -2,7 +2,7 @@
 # Date created:			23 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/devel/SN/Makefile,v 1.4 2000/10/31 14:59:58 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SN
@@ -23,6 +23,8 @@ MASTER_SITE_SUBDIR=	sourcenav/releases/
 DISTNAME=	SN452
 
 MAINTAINER=	dburr@FreeBSD.ORG
+
+BROKEN=		"Does not build"
 
 PREFIX=		${LOCALBASE}/SN
 GNU_CONFIGURE=	yes
