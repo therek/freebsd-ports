@@ -2,13 +2,13 @@
 # Date created:		5 January 1998
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.6 2000/04/14 08:49:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rtptools
 PORTVERSION=	1.17
 CATEGORIES=	mbone
-MASTER_SITES=	http://www.cs.columbia.edu/IRT/software/rtptools/src/
+MASTER_SITES=	http://www.cs.columbia.edu/IRT/software/rtptools/download/
 
 MAINTAINER=	fenner@FreeBSD.org
 
