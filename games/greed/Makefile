@@ -2,13 +2,13 @@
 # Date created:			Apr 2, 2001
 # Whom:				Mark Pulford «mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/greed/Makefile,v 1.2 2001/04/07 08:52:11 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	greed
 PORTVERSION=	3.3
 CATEGORIES=	games
-MASTER_SITES=	http://www.tuxedo.org/~esr/greed/
+MASTER_SITES=	http://catb.org/~esr/greed/
 PKGNAMESUFFIX=	-game
 
 MAINTAINER=	markp@FreeBSD.org
