@@ -2,7 +2,7 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.17 2000/06/01 17:39:35 will Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.18 2000/06/09 22:14:41 will Exp $
 #
 
 PORTNAME=		vnc
@@ -33,6 +33,10 @@ post-install:
 		< ${WRKSRC}/vncserver \
 		> ${WRKSRC}/vncserver.local
 	${INSTALL_SCRIPT} ${WRKSRC}/vncserver.local ${PREFIX}/bin/vncserver
+# Go install Java classes
+	${MKDIR} ${PREFIX}/share/vnc
+	${CP} -R ${WRKSRC}/classes ${PREFIX}/share/vnc
+.if !defined(NOPORTDOCS)
 # The documentation comes with bogus ownerships; this is a little leaky
 # security-wise
 	${TAR} -C ${PREFIX}/share/doc -xzf ${DISTDIR}/vnc-latest_doc.tgz
@@ -42,7 +46,5 @@ post-install:
 # distfile.
 	(cd ${PREFIX}; ls share/doc/vnc/* >> ${TMPPLIST})
 	${ECHO} '@dirrm share/doc/vnc' >> ${TMPPLIST}
-# Go install Java classes
-	${MKDIR} ${PREFIX}/share/vnc
-	${CP} -R ${WRKSRC}/classes ${PREFIX}/share/vnc
+.endif
 .include <bsd.port.mk>
