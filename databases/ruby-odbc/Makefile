@@ -2,12 +2,11 @@
 # Date created:		17 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-odbc/Makefile,v 1.6 2001/06/20 06:48:37 knu Exp $
+# $FreeBSD: ports/databases/ruby-odbc/Makefile,v 1.7 2001/07/02 14:51:46 knu Exp $
 #
 
 PORTNAME=	odbc
-PORTVERSION=	0.7
-PORTREVISION=	1
+PORTVERSION=	0.8
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.ch-werner.de/rubyodbc/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
