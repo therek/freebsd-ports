@@ -3,7 +3,7 @@
 # Whom:			kuriyama
 #
 # $NetBSD: Makefile,v 1.2 1999/06/07 09:54:39 sakamoto Exp $
-# $FreeBSD: ports/japanese/chasen/Makefile,v 1.13 2001/03/02 05:48:42 knu Exp $
+# $FreeBSD: ports/japanese/chasen/Makefile,v 1.14 2001/03/02 07:01:59 knu Exp $
 #
 
 PORTNAME=	chasen
@@ -16,6 +16,7 @@ DISTNAME=	${PORTNAME}-sys${PORTVERSION}-ipadic2.1
 MAINTAINER=	knu@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+MAKE_ARGS=	NOPROFILE=true
 INSTALLS_SHLIB=	yes
 
 DOCS_EN=	README doc/manual.pdf doc/manual.tex

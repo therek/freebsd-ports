@@ -2,7 +2,7 @@
 # Date created:		12 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/libjconv/Makefile,v 1.1 2001/01/16 18:27:25 knu Exp $
+# $FreeBSD: ports/japanese/libjconv/Makefile,v 1.2 2001/01/16 18:34:19 knu Exp $
 #
 
 PORTNAME=	libjconv
@@ -20,6 +20,7 @@ MAINTAINER=	knu@FreeBSD.org
 LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 RUN_DEPENDS=	${LOCALBASE}/libexec/iconv/iso-2022-jp.so:${PORTSDIR}/converters/iconv-extra
 
+MAKE_ARGS=	NOPROFILE=true
 INSTALLS_SHLIB=	yes
 
 post-patch:
