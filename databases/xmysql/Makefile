@@ -3,7 +3,7 @@
 # Date created:			Tue Sep  2 15:46:09 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmysql/Makefile,v 1.22 1999/08/31 06:41:26 mharo Exp $
+# $FreeBSD: ports/databases/xmysql/Makefile,v 1.23 2000/02/20 17:01:25 andreas Exp $
 #
 
 DISTNAME=	xmysql-1.9
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.tcx.se/Contrib/ \
 		http://www.buoy.com/mysql/Contrib/ \
 		http://web.tryc.on.ca/mysql/Downloads/Contrib/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dirk@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		xforms.0:${PORTSDIR}/x11-toolkits/xforms \

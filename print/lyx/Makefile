@@ -3,7 +3,7 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.35 2000/01/29 22:46:02 reg Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.36 2000/02/20 17:01:05 andreas Exp $
 #
 
 DISTNAME=	lyx-1.0.4
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
 		ftp://alpha.tat.physik.uni-tuebingen.de/pub/lyx/stable/ \
 		ftp://ftp.sdsc.edu/pub/other/lyx/stable/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dirk@FreeBSD.org
 
 BUILD_DEPENDS=	latex:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=	latex:${PORTSDIR}/print/teTeX
