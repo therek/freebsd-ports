@@ -2,11 +2,11 @@
 # Date created:				15 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/heroes/Makefile,v 1.8 2001/03/29 16:33:51 sobomax Exp $
+# $FreeBSD: ports/games/heroes/Makefile,v 1.9 2001/05/07 11:38:00 sobomax Exp $
 #
 
 PORTNAME=	heroes
-PORTVERSION=	0.10
+PORTVERSION=	0.11
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -22,7 +22,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 LIB_DEPENDS=	SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
-DATAVERSION=	1.0
+DATAVERSION=	1.1
 SOUNDVERSION=	1.0
 MUSICVERSION=	1.0
 DATADISTNAME=	${PORTNAME}-data-${DATAVERSION}
