@@ -2,7 +2,7 @@
 # Date created:		24 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-romp/Makefile,v 1.2 2001/08/25 20:38:29 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	romp
@@ -31,7 +31,7 @@ DOCS=		romp.html
 
 post-extract:
 	${MKDIR} ${WRKSRC}/lib
-.for f in druby4.rb romp.rb
+.for f in romp.rb
 	${MV} ${WRKSRC}/${f} ${WRKSRC}/lib/
 .endfor
 	${CP} ${_DISTDIR}/romp.html ${WRKSRC}/
