@@ -2,7 +2,7 @@
 # Date created:        29 July 2000
 # Whom:                Sakai Hiroaki <sakai@seki.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/games/xfireworks/Makefile,v 1.1.1.1 2000/07/31 09:25:37 shige Exp $
+# $FreeBSD: ports/games/xfireworks/Makefile,v 1.2 2000/07/31 10:26:19 shige Exp $
 #
 
 PORTNAME=	xfireworks
@@ -20,8 +20,8 @@ MAN1=		xfireworks.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xfireworks ${PREFIX}/bin/xfireworks
-	${INSTALL_MAN} ${WRKSRC}/xfireworks.man ${PREFIX}/bin/xfireworks.1
-	${INSTALL_DATA} ${WRKSRC}/xfireworks.conf ${PREFIX}/etc/xfirewokrs.conf.sample
+	${INSTALL_MAN} ${WRKSRC}/xfireworks.man ${PREFIX}/man/man1/xfireworks.1
+	${INSTALL_DATA} ${WRKSRC}/xfireworks.conf ${PREFIX}/etc/xfireworks.conf.sample
 .if !exists(${PREFIX}/etc/xfireworks.conf)
 	${CP} ${PREFIX}/etc/xfireworks.conf.sample ${PREFIX}/etc/xfireworks.conf
 .endif
