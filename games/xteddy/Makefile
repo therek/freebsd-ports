@@ -3,12 +3,12 @@
 # Date created:        3 June 1998
 # Whom:                Eckart "Isegrim" Hofmann
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xteddy/Makefile,v 1.6 1999/08/25 06:06:19 obrien Exp $
 #
 
 DISTNAME=	xteddy-1.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.leo.org:/pub/comp/usenet/comp.sources.x/xteddy/
+MASTER_SITES=	ftp://ftp.leo.org/pub/comp/usenet/comp.sources.x/xteddy/
 
 MAINTAINER=	Isegrim@Wunder-Nett.org
 
