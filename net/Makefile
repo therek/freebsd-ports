@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.498 2001/03/31 02:28:23 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.499 2001/03/31 03:12:55 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -168,6 +168,7 @@
     SUBDIR += mpich
     SUBDIR += mrt
     SUBDIR += mrtg
+    SUBDIR += msn-transport
     SUBDIR += mtr
     SUBDIR += mudix
     SUBDIR += naim
