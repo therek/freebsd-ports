@@ -1,9 +1,9 @@
 # New ports collection makefile for:	pidentd
-# Version required:     2.8.2
+# Version required:     2.8.5
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.26 1999/08/31 01:51:34 peter Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.27 1999/08/31 06:50:20 mharo Exp $
 #
 
 DISTNAME=       pidentd-2.8.5
