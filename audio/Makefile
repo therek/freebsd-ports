@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.141 2000/06/10 06:58:31 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.142 2000/06/11 19:06:57 cpiazza Exp $
 #
 
     SUBDIR += afsp
@@ -79,6 +79,7 @@
     SUBDIR += s3mod
     SUBDIR += sdl_mixer
     SUBDIR += shorten
+    SUBDIR += shout
     SUBDIR += sidplay
     SUBDIR += snowstar
     SUBDIR += soundtracker
