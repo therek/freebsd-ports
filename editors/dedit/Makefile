@@ -2,7 +2,7 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.6 2000/07/16 14:18:13 nakai Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.7 2000/09/07 08:09:27 nakai Exp $
 #
 
 PORTNAME=	dedit
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	iconv.0:${PORTSDIR}/converters/iconv \
+LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv \
 		gnome.4:${PORTSDIR}/x11/gnomelibs
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

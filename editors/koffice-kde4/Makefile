@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.5 2000/07/29 02:44:57 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.6 2000/08/29 23:44:29 will Exp $
 #
 
 PORTNAME=	koffice
@@ -14,7 +14,7 @@ MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2 \
-		iconv.0:${PORTSDIR}/converters/iconv
+		iconv.1:${PORTSDIR}/converters/iconv
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
