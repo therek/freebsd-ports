@@ -2,7 +2,7 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.8 2000/09/22 17:22:22 knu Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.9 2001/01/16 17:30:28 sobomax Exp $
 #
 
 PORTNAME=	rtc
@@ -14,6 +14,8 @@ DISTFILES=	# none
 MAINTAINER=	freebsd-emulation@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/files
+
+USE_LINUX=	yes
 
 KMODDIR=	${PREFIX}/modules
 
@@ -29,7 +31,7 @@ SRC_BASE?=	/usr/src
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 400013
-BROKEN=		"Systems prior to 400013 is out of support"
+BROKEN=		"Systems prior to 400013 are out of support"
 .endif
 
 .if !exists(${SRC_BASE}/sys/Makefile)
