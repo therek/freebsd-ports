@@ -4,11 +4,12 @@
 # Date created:         Sat June 29, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.56 1999/11/03 08:10:53 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.57 1999/11/17 06:52:12 obrien Exp $
 #
 
+PKGVER=		5.5.38
 DISTNAME=	vim-5.5
-PKGNAME?=	vim-5.5.38
+PKGNAME?=	vim-${PKGVER}
 CATEGORIES=	editors
 MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
 		ftp://ftp.nuxi.com/pub/vim/unix/ \
