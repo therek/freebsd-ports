@@ -2,7 +2,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray/Makefile,v 1.21 2000/04/24 07:41:52 kris Exp $
+# $FreeBSD: ports/graphics/povray/Makefile,v 1.22 2000/07/04 07:13:18 sobomax Exp $
 #
 
 PORTNAME=	povray
@@ -10,8 +10,7 @@ PORTVERSION=	3.0.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Old-Versions/Official-3.0/Unix/ \
 		ftp://ftp.gigabell.net/pub/unix/apps/graphics/povray/Old-Versions/Official-3.0/Unix/ \
-		ftp://www.hensa.ac.uk/mirrors/povray/Old-Versions/Official-3.0/Unix/ \
-		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/pov-ray/pub2/pov-ray/Official-3.0/Unix/
+		ftp://www.hensa.ac.uk/mirrors/povray/Old-Versions/Official-3.0/Unix/
 DISTNAME=	povray3
 DISTFILES=	povuni_s.tgz povuni_d.tgz
 
