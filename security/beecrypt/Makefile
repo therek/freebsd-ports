@@ -3,11 +3,11 @@
 # Date created:			Mar 4, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/beecrypt/Makefile,v 1.1 2001/03/04 04:37:05 ijliao Exp $
 #
 
 PORTNAME=	beecrypt
-PORTVERSION=	2.0.0
+PORTVERSION=	2.1.0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.virtualunlimited.com/download/
