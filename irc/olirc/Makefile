@@ -2,13 +2,14 @@
 # Date created:		Sat Jul 24 03:04:46 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/irc/olirc/Makefile,v 1.5 2000/07/07 19:59:15 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	olirc
-PORTVERSION=	0.0.37
+PORTVERSION=	0.0.38.a3.2
 CATEGORIES=	irc
-MASTER_SITES=	http://olirc.hexanet.fr/
+MASTER_SITES=	http://olirc.sourceforge.net/
+DISTNAME=	olirc-0.0.38-alpha-3.2
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
