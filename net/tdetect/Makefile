@@ -4,7 +4,7 @@
 # Date created:			  Sun Jan 31, 1997
 # Whom:               		  shipley@dis.org
 #
-# $FreeBSD: ports/net/tdetect/Makefile,v 1.6 1999/10/25 03:31:12 obrien Exp $
+# $FreeBSD: ports/net/tdetect/Makefile,v 1.7 1999/10/25 04:03:28 obrien Exp $
 #
 
 DISTNAME=	tdetect-0.2
@@ -33,7 +33,7 @@ post-install:
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/tdetect.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${ECHO} "ETHERNETDEV=ed0" >> ${PREFIX}/etc/rc.d/tdetect.sh; \
-		${ECHO} '[ -x ${PREFIX}/sbin/tdetect ] && ${PREFIX}/sbin/tdetect \$ETHERNETDEV && ${ECHO} -n " tdetect"' >> ${PREFIX}/etc/rc.d/tdetect.sh; \
+		${ECHO} '[ -x ${PREFIX}/sbin/tdetect ] && ${PREFIX}/sbin/tdetect $$ETHERNETDEV && ${ECHO} -n " tdetect"' >> ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${CHMOD} 750 ${PREFIX}/etc/rc.d/tdetect.sh; \
 		${ECHO} ''; \
 		${ECHO} 'IMPORTANT edit ${PREFIX}/etc/rc.d/tdetect.sh and set "ETHERNETDEV" to'; \
