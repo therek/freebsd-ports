@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache2/files/apache.sh,v 1.8 2004/07/30 17:04:47 clement Exp $
+# $FreeBSD: ports/www/apache2/files/apache.sh,v 1.9 2004/08/23 15:44:51 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -19,7 +19,7 @@
 #                             Set it to yes to run `limits $limits_args`
 #                             just before apache starts.
 # apache2_flags (str):        Set to "" by default.
-#                             Extra flags passed to start command
+#                             Extra flags passed to start command.
 # apache2limits_args (str):   Default to "-e -C daemon"
 #                             Arguments of pre-start limits run.
 #
