@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cocoon/files/cocoon.sh,v 1.1 2004/07/01 22:30:19 glewis Exp $
 #
 
 # PROVIDE: %%APP_NAME%%
@@ -19,7 +19,7 @@ rcvar=`set_rcvar`
 command=%%PREFIX%%/sbin/%%APP_NAME%%ctl
 command_args="$1"
 pidfile=%%PID_FILE%%
-procname=java
+procname=%%JAVA%%
 
 # set defaults
 
