@@ -1,8 +1,8 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.1 1999/09/25 17:12:03 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.2 1999/11/08 19:35:44 andreas Exp $
 
-# runs if BATCH is NOT defined
+if [ "$BATCH" != "yes" ]; then
 
 #
 # configure - apsfilter package dependency configuration
@@ -128,6 +128,13 @@ while [ "$1" ]; do
     shift
 done
 
+fi # if $BATCH
+
+# if batch, then start creating Makefile.inc here
+if [ "$BATCH" = "yes" ]; then
+	/bin/mkdir -p ${WRKDIRPREFIX}${CURDIR}
+	exec > ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
+fi
 echo "post-install:"
 echo "	@\${MKDIR} ${PREFIX}/apsfilter/filter"
 echo "	@touch ${PREFIX}/apsfilter/filter/.keep_me"
