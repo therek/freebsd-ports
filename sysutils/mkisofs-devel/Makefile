@@ -2,11 +2,12 @@
 # Date created:		07 Aug 1996
 # Whom:			jhk
 #
-# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.26 2000/06/29 07:02:51 obrien Exp $
+# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.27 2000/07/30 17:43:27 dirk Exp $
 #
 
 PORTNAME=	mkisofs
 PORTVERSION=	1.13
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/mkisofs/ \
 		ftp://ftp.gwdg.de/pub/linux/misc/cdrecord/mkisofs/ \
