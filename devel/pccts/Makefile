@@ -1,13 +1,13 @@
 # New ports collection makefile for:	pccts
-# Version required:			1.33.20
+# Version required:			1.33.21
 # Date created:				22 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/pccts/Makefile,v 1.6 1999/08/25 05:49:47 obrien Exp $
+# $FreeBSD: ports/devel/pccts/Makefile,v 1.7 1999/09/17 18:21:03 steve Exp $
 #
 
 DISTNAME=		pccts133mr
-PKGNAME=		pccts-1.33.20
+PKGNAME=		pccts-1.33.21
 CATEGORIES=		devel
 MASTER_SITES=		http://www.polhode.com/
 
