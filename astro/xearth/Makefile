@@ -1,8 +1,8 @@
 # New ports collection makefile for:    xearth
-# Date created:         29 October 1995
+# Date created:         29 October 1994
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.21 2000/06/22 05:51:52 will Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.22 2000/07/13 08:13:04 green Exp $
 #
 
 PORTNAME=	xearth
