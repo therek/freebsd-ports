@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.369 2000/12/05 15:20:58 joerg Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.370 2000/12/05 15:23:06 joerg Exp $
 #
 
     SUBDIR += ElectricFence
@@ -121,6 +121,7 @@
     SUBDIR += kdbg
     SUBDIR += kdelibdocs
     SUBDIR += kdevelop
+    SUBDIR += kelp
     SUBDIR += kpp
     SUBDIR += ktranslator
     SUBDIR += lclint
