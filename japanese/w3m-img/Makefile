@@ -2,10 +2,10 @@
 # Date Created:                22 July 2001
 # Whom:                        MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/w3m-img/Makefile,v 1.1 2001/07/21 18:21:55 sf Exp $
 #
 
-PKGNAMESUFFIX=	-image
+PKGNAMESUFFIX=	-img
 CATEGORIES=	japanese
 
 MASTERDIR=	${.CURDIR}/../../www/w3m

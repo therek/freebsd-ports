@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.376 2001/08/23 05:30:44 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.377 2001/08/27 01:24:30 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -376,7 +376,7 @@
     SUBDIR += vje30-trial
     SUBDIR += w3
     SUBDIR += w3m
-    SUBDIR += w3m-image
+    SUBDIR += w3m-img
     SUBDIR += wdic-fpw
     SUBDIR += weather-emacs20
     SUBDIR += web1913-fpw

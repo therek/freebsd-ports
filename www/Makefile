@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.398 2001/08/23 15:37:28 petef Exp $
+# $FreeBSD: ports/www/Makefile,v 1.399 2001/08/24 06:28:09 knu Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -291,7 +291,7 @@
     SUBDIR += w3-4
     SUBDIR += w3c-httpd
     SUBDIR += w3m
-    SUBDIR += w3m-image
+    SUBDIR += w3m-img
     SUBDIR += w3mir
     SUBDIR += wb0
     SUBDIR += wcol
