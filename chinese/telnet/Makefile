@@ -2,16 +2,27 @@
 # Date created:		13 Feb 1999
 # Whom:			Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/telnet/Makefile,v 1.3 2000/04/13 08:28:16 asami Exp $
+# $FreeBSD: ports/chinese/telnet/Makefile,v 1.4 2000/08/05 16:41:57 kevlo Exp $
 #
 
 PORTNAME=	telnet
 PORTVERSION=	1.0
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://bsd.sinica.edu.tw/pub/FreeBSD/taiwan/users/woju/source/
-DISTNAME=	telnet8-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	# none
+DISTFILES=	# none
 
-MAINTAINER=	woju@freebsd.ntu.edu.tw
+MAINTAINER=	leeym@caece.net
+
+SRCDIR=		/usr/src/usr.bin/telnet
+
+do-extract:
+.if exists (${SRCDIR})
+	@${MKDIR} work
+	@${CP} -R ${SRCDIR} ${WRKSRC}
+.else
+BROKEN=	"You need to build this port with ${SRCDIR}"
+.endif
+
+MAN1=		telnet.1
 
 .include <bsd.port.mk>
