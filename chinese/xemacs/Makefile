@@ -2,7 +2,7 @@
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.5 2000/08/03 09:22:42 asami Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.6 2000/10/24 12:09:08 knu Exp $
 #
 
 PORTNAME=	xemacs
@@ -33,17 +33,12 @@ CONFIGURE_ARGS=	${XEMACS_ARCH} --prefix=${PREFIX} \
 		--site-includes=${PREFIX}/include \
 		--site-libraries=${PREFIX}/lib \
 		--sitelispdir="${PREFIX}/lib/xemacs/site-lisp ${PREFIX}/share/emacs/site-lisp" \
-		--with-session=yes
+		--with-session=yes \
+		--with-menubars=lucid --with-xim=xlib
 MAN1=		ctags.1 etags.1 gnuattach.1 gnuclient.1 gnudoit.1 \
 		gnuserv.1 xemacs.1
 ALL_TARGET=	all dist
 PLIST_SUB=	XEMACS_VER=20.4 XEMACS_ARCH=${XEMACS_ARCH}
-
-.if defined(REAL_MOTIF)
-CONFIGURE_ARGS+= --with-menubars=lucid --with-xim=motif
-.else
-CONFIGURE_ARGS+= --with-menubars=lucid --with-xim=xlib
-.endif
 
 # Have
 pre-configure:
