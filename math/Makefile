@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.134 2001/07/06 16:30:35 ijliao Exp $
+# $FreeBSD: ports/math/Makefile,v 1.135 2001/07/06 16:36:43 ijliao Exp $
 #
     SUBDIR += yacas
 
@@ -16,6 +16,7 @@
     SUBDIR += ccmath
     SUBDIR += cln
     SUBDIR += concorde
+    SUBDIR += cxsc
     SUBDIR += dcdflib
     SUBDIR += eispack
     SUBDIR += eval
