@@ -2,7 +2,7 @@
 # Date created:			17 May 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/palm/hdconv/Makefile,v 1.5 2000/07/13 06:49:23 knu Exp $
+# $FreeBSD: ports/palm/hdconv/Makefile,v 1.6 2000/09/22 17:22:24 knu Exp $
 #
 
 PORTNAME=	hdconv
@@ -23,7 +23,9 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/hd ${PREFIX}/bin/hdconv
 	${LINUXBASE}/usr/bin/strip ${PREFIX}/bin/hdconv
 	brandelf -t Linux ${PREFIX}/bin/hdconv
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/hdconv/
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/hdconv/
+.endif
 
 .include <bsd.port.mk>

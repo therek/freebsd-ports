@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.16 2000/10/26 20:56:25 knu Exp $
+# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.17 2000/12/20 21:14:31 knu Exp $
 #
 
 PORTNAME=	namazu2
@@ -43,5 +43,8 @@ DEPEND_MSOFFICE=	xlHtml:${PORTSDIR}/textproc/xlhtml \
 
 post-install:
 	${LN} -sf ${PREFIX}/lib/libnmz.so.4 ${PREFIX}/lib/libnmz.so
+.if defined(NOPORTDOCS)
+	${RM} -rf ${PREFIX}/share/namazu/doc
+.endif
 
 .include <bsd.port.mk>

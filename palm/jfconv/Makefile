@@ -2,7 +2,7 @@
 # Date created:			14 May 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/palm/jfconv/Makefile,v 1.5 2000/06/29 02:31:42 asami Exp $
+# $FreeBSD: ports/palm/jfconv/Makefile,v 1.6 2001/02/08 09:41:04 knu Exp $
 #
 
 PORTNAME=	jfconv
@@ -20,7 +20,9 @@ ALL_TARGET=	# none
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/jconv ${PREFIX}/bin/jfconv
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/jfconv/
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/jfconv/
+.endif
 
 .include <bsd.port.mk>

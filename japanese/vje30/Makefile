@@ -2,7 +2,7 @@
 # Date created:		29 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30/Makefile,v 1.13 2000/10/08 10:21:29 asami Exp $
+# $FreeBSD: ports/japanese/vje30/Makefile,v 1.14 2001/01/11 12:52:08 knu Exp $
 #
 
 PORTNAME=	vje
@@ -86,6 +86,9 @@ post-patch:
 	@find ${WRKSRC} -name '*.orig' -delete
 	@${CP} ${FILESDIR}/vje.sh ${WRKSRC}/etc/rc.d/
 	@${PERL} -i -pe 's,/usr/X11R6,${X11BASE},g' ${BUILD_WRKSRC}/${MAKEFILE}
+.if defined(NOPORTDOCS)
+	@cd ${WRKSRC}/vje30 && ${RM} -rf doc README FAQ REQUEST
+.endif
 
 post-build:
 	@${CP} ${BUILD_WRKSRC}/vje ${WRKSRC}/vje30/bin/
