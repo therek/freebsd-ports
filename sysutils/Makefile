@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.161 2001/03/13 15:08:44 demon Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.162 2001/03/15 13:36:29 kuriyama Exp $
 #
     SUBDIR += yawho
 
@@ -111,6 +111,7 @@
     SUBDIR += stat
     SUBDIR += stmpclean
     SUBDIR += stow
+    SUBDIR += stowES
     SUBDIR += su2
     SUBDIR += symlinks
     SUBDIR += syslog-ng
