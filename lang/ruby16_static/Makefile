@@ -2,12 +2,11 @@
 # Date created:			19 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.4 2001/06/04 14:54:32 knu Exp $
+# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.5 2001/06/11 05:04:09 knu Exp $
 #
 
 PORTNAME=	ruby_static
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -24,10 +23,13 @@ USE_AUTOCONF=	yes
 # which means you can't link such modules as ruby-gdbm within.
 EXT_PORTS=	archivers/ruby-zlib \
 		devel/ruby-strscan \
-		devel/ruby-fnmatch \
 		sysutils/ruby-syslog
 _PORTSDIR=	${.CURDIR}/../..
 _RUBY_PORTDIR=	${_PORTSDIR}/${RUBY_PORT}
+
+.if !defined(HAVE_FNMATCH)
+EXT_PORTS+=	devel/ruby-fnmatch
+.endif
 
 .for p in ${EXT_PORTS}
 BUILD_DEPENDS+=	${NONEXISTENT}:${_PORTSDIR}/${p}:patch
