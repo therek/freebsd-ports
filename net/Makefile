@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.584 2001/08/02 15:35:47 nbm Exp $
+# $FreeBSD: ports/net/Makefile,v 1.585 2001/08/11 17:37:41 yar Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -133,6 +133,7 @@
     SUBDIR += hesiod
     SUBDIR += hlmaster
     SUBDIR += host
+    SUBDIR += http_ping
     SUBDIR += hx
     SUBDIR += icb
     SUBDIR += icmpinfo
