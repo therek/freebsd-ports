@@ -3,7 +3,7 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/aleph/Makefile,v 1.1 2001/03/06 17:50:10 ijliao Exp $
+# $FreeBSD: ports/lang/aleph/Makefile,v 1.2 2001/03/10 18:53:20 ijliao Exp $
 #
 
 PORTNAME=	aleph
@@ -15,16 +15,21 @@ DISTNAME=	${PORTNAME}-src-${PORTVERSION:S,.,-,g}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_GMAKE=	yes
 USE_NEWGCC=	yes
-
+USE_GMAKE=	yes
+MAKE_ARGS=	CC="${CXX}" LD="${CXX}" LK="${CXX}" OPTCCFLAGS="${CXXFLAGS}" \
+		DYNCCFLAGS="-fPIC -DPIC" DEBUGFLAGS="" DBGDEFINES="" \
+		STDDEFINES="${PTHREAD_CFLAGS}" EXELDFLAGS="${PTHREAD_LIBS}"
 INSTALLS_SHLIB=	yes
 
-PLIST_SUB=	PORTVER=${PORTVERSION}
+PLIST_SUB=	PORTVER=${PORTVERSION:R}
 
 MAN1=	aleph.1
 
 do-configure:
 	@(cd ${WRKSRC}; ./cnf/bin/aleph-setup -o)
+
+post-install:
+	@strip ${PREFIX}/bin/aleph
 
 .include <bsd.port.mk>
