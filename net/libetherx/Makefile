@@ -2,7 +2,7 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/libetherx/Makefile,v 1.4 2000/06/16 21:51:49 asami Exp $
+# $FreeBSD: ports/net/libetherx/Makefile,v 1.5 2000/07/07 16:14:18 steve Exp $
 #
 
 PORTNAME=	libetherx
@@ -14,7 +14,7 @@ MAINTAINER=	lukin@okbmei.msk.su
 
 LIB_DEPENDS=	jabber.1:${PORTSDIR}/net/libjabber \
 		pth.13:${PORTSDIR}/devel/pth \
-		adns.0:${PORTSDIR}/net/adns
+		adns.1:${PORTSDIR}/net/adns
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
