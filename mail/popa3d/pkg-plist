@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/mail/popa3d/pkg-plist,v 1.7 2003/01/08 06:45:48 dinoex Exp $
+@comment $FreeBSD: ports/mail/popa3d/pkg-plist,v 1.8 2003/01/28 22:04:18 dinoex Exp $
+%%STANDALONE_POP3%%etc/rc.d/popa3d.sh-dist
 libexec/popa3d
-%%PORTDOCS%%share/doc/popa3d/DESIGN
-%%PORTDOCS%%share/doc/popa3d/LICENSE
-%%SMTP_AFTER_POP3%%%%PORTDOCS%%share/doc/popa3d/POPAUTH
-%%PORTDOCS%%@dirrm share/doc/popa3d
+%%PORTDOCS%%%%DOCSDIR%%/DESIGN
+%%PORTDOCS%%%%DOCSDIR%%/LICENSE
+%%SMTP_AFTER_POP3%%%%PORTDOCS%%%%DOCSDIR%%/POPAUTH
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
