@@ -2,13 +2,14 @@
 # Date created: 			11 September 1998
 # Whom: 				jabley@clear.co.nz
 #
-# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.6 2000/06/29 07:02:35 obrien Exp $
+# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.7 2001/02/17 15:23:22 kevlo Exp $
 #
 
 PORTNAME=	ciscoconf
 PORTVERSION=	1.1
 CATEGORIES=	net
-MASTER_SITES=	http://www.automagic.org/~jabley/
+MASTER_SITES=	http://buffoon.automagic.org/dist/ \
+		http://maggie.automagic.org/dist/
 
 MAINTAINER=	jabley@automagic.org
 
