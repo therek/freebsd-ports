@@ -2,7 +2,7 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.35 2000/09/04 12:19:53 sobomax Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.36 2000/10/05 06:57:56 reg Exp $
 #
 
 PORTNAME=	xfce
@@ -11,6 +11,8 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/
 
 MAINTAINER=	nakai@FreeBSD.org
+
+FORBIDDEN=	"Installs stupid xinitrc file containing xhost +$HOSTNAME"
 
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
