@@ -2,13 +2,13 @@
 # Date created:		Mar 26 1995
 # Whom:			jmacd@FreeBSD.org
 #
-# $FreeBSD: ports/lang/mit-scheme/Makefile,v 1.22 2001/02/05 15:04:03 olgeni Exp $
+# $FreeBSD: ports/lang/mit-scheme/Makefile,v 1.23 2001/02/28 15:38:19 kevlo Exp $
 #
 
 PORTNAME=	mit-scheme
 PORTVERSION=	7.5.13
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.swiss.ai.mit.edu/pub/scheme-7.5/%SUBDIR%/
+MASTER_SITES=	ftp://ftp.swiss.ai.mit.edu/pub/scheme-7.5/OLD/%SUBDIR%/
 MASTER_SITE_SUBDIR=	${PORTVERSION}
 DISTNAME=	scheme-${PORTVERSION}-ix86-freebsd
 
