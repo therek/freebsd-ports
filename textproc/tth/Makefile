@@ -2,22 +2,23 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.14 2000/02/08 09:29:05 peter Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.15 2000/04/09 21:53:14 cpiazza Exp $
 #
 
 PORTNAME=	tth
-PORTVERSION= 	2.22
+PORTVERSION= 	2.72
 CATEGORIES=	textproc
-MASTER_SITES=	http://people.FreeBSD.org/~tg/ \
+MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/tg/ \
 		http://hutchinson.belmont.ma.us/tth/tth-noncom/
 DISTNAME=	tth_C
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5 \
-		ppmtogif:${PORTSDIR}/graphics/netpbm \
-		latex:${PORTSDIR}/print/teTeX
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6 \
+		latex:${PORTSDIR}/print/teTeX \
+		pnmtopng:${PORTSDIR}/graphics/pnmtopng \
+		ppmtogif:${PORTSDIR}/graphics/netpbm
 
 MAN1=		tth.1
 
@@ -29,6 +30,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/l2h ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/latex2gif ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/ps2gif ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/ps2png ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/tth.1 ${PREFIX}/man/man1
 	${MKDIR} ${PREFIX}/share/doc/tth
 	${INSTALL_SCRIPT} ${WRKSRC}/license.txt ${PREFIX}/share/doc/tth
