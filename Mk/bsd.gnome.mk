@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.41 2003/06/15 21:19:09 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.42 2003/06/16 20:47:13 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -98,14 +98,14 @@ libxml_LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml
 libxml_CONFIGURE_ENV=	XML_CONFIG="${XML_CONFIG}"
 libxml_MAKE_ENV=	XML_CONFIG="${XML_CONFIG}"
 libxml_DETECT=		${XML_CONFIG}
-libxml_USE_GNOME_IMPL=	glib12 pkgconfig
+libxml_USE_GNOME_IMPL=	glib12
 
 ORBIT_CONFIG?=		${LOCALBASE}/bin/orbit-config
 orbit_LIB_DEPENDS=	ORBit.2:${PORTSDIR}/devel/ORBit
 orbit_CONFIGURE_ENV=	ORBIT_CONFIG="${ORBIT_CONFIG}"
 orbit_MAKE_ENV=		ORBIT_CONFIG="${ORBIT_CONFIG}"
 orbit_DETECT=		${ORBIT_CONFIG}
-orbit_USE_GNOME_IMPL=	glib12 pkgconfig
+orbit_USE_GNOME_IMPL=	glib12
 
 GDK_PIXBUF_CONFIG?=	${X11BASE}/bin/gdk-pixbuf-config
 gdkpixbuf_LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
