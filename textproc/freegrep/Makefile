@@ -2,15 +2,14 @@
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.16 2000/06/30 09:34:08 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freegrep
 PORTVERSION=	0.16
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/grep/ \
-		http://www.wam.umd.edu/~howardjp/software/grep/ \
-		ftp://dragon.ham.muohio.edu/pub/howardjp/software/grep/
+MASTER_SITES=	http://www.vocito.com/downloads/software/grep/ \
+		ftp://ftp.vocito.com/pub/vocito.com/software/grep/
 DISTNAME=	grep-${PORTVERSION}
 
 MAINTAINER=	howardjp@wam.umd.edu

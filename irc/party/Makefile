@@ -1,18 +1,17 @@
 # New ports collection makefile for:	party
 # Date created:		4 December 1999
-# Whom:			James Howard <howardj@wam.umd.edu>
+# Whom:			James Howard <ports@vocito.com>
 #
-# $FreeBSD: ports/irc/party/Makefile,v 1.1 1999/12/25 15:59:34 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	party
 PORTVERSION=	2.12
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/party/ \
-		http://www.wam.umd.edu/~howardjp/software/party/ \
-		ftp://dragon.ham.muohio.edu/pub/howardjp/software/party/
+MASTER_SITES=	http://www.vocito.com/downloads/software/party/ \
+		ftp://ftp.vocito.com/pub/vocito.com/software/party/
 
-MAINTAINER=	howardjp@wam.umd.edu
+MAINTAINER=	ports@vocito.com
 
 MAN1=	party.1
 
