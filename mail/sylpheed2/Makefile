@@ -2,11 +2,11 @@
 # Date created:                 15 June 2000
 # Whom:                         shigeri <shigeri@m10.alpha-net.ne.jp>
 #
-# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.15 2001/04/15 18:54:03 dougb Exp $
+# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.16 2001/04/30 15:35:56 kevlo Exp $
 #
 
 PORTNAME=	sylpheed
-PORTVERSION=	0.4.64
+PORTVERSION=	0.4.66
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://sylpheed.good-day.net/sylpheed/
 
