@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.383 2001/06/10 13:41:52 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.384 2001/06/10 21:52:34 alex Exp $
 #
 
     SUBDIR += 0verkill
@@ -141,6 +141,7 @@
     SUBDIR += krogue
     SUBDIR += krubik
     SUBDIR += ktamaga
+    SUBDIR += kxl
     SUBDIR += ladder
     SUBDIR += lbreakout
     SUBDIR += lexter
