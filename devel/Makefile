@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.637 2001/09/07 19:54:08 olgeni Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.638 2001/09/08 14:30:23 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -360,6 +360,7 @@
     SUBDIR += p5-IPC-Run
     SUBDIR += p5-IPC-ShareLite
     SUBDIR += p5-IPC-Shareable
+    SUBDIR += p5-IPC-SharedCache
     SUBDIR += p5-Include
     SUBDIR += p5-Ioctl
     SUBDIR += p5-Locale-Maketext
