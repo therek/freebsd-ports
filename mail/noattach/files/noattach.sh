@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.4 2003/09/25 18:31:25 dinoex Exp $
+# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.5 2003/09/26 07:17:47 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/noattach
 then
@@ -8,7 +8,7 @@ then
 fi
 case "$1" in
 start)
-	rm -f /var/run/noattach.pid
+	rm -f /var/run/noattach.pid /var/run/noattach
 	%%PREFIX%%/libexec/noattach -p local:/var/run/noattach &&
 	echo -n ' noattach'
 	;;
