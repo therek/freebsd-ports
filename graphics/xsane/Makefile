@@ -2,11 +2,11 @@
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
 # Whom:				Dominik Brettnacher <domi@saargate.de>
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.24 2001/04/04 10:54:01 brian Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.25 2001/04/10 22:10:55 dirk Exp $
 #
 
 PORTNAME=	xsane
-PORTVERSION=	0.75
+PORTVERSION=	0.76
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.xsane.org/download/ \
 		http://gd.tuwien.ac.at/hci/sane/xsane/ \
