@@ -4,7 +4,7 @@
 # very likely to apply outside of KDE core modules.  Nonetheless, also
 # provide variables to remove one or more of these.
 #
-# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.9 2003/01/12 20:34:45 alane Exp $
+# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.10 2003/01/28 18:36:56 alane Exp $
 
 CONFIGURE_ARGS?=
 
@@ -68,12 +68,12 @@ CONFIGURE_ARGS+=--enable-final
 .endif
 
 .if !defined(_NO_KDE_NDEBUG)
-#.if defined(PARALLEL_PACKAGE_BUILD) || !defined(WANT_KDE_DEBUG)
-#CONFIGURE_ARGS+=--disable-debug
-#.else
+.if defined(PARALLEL_PACKAGE_BUILD) || !defined(WANT_KDE_DEBUG)
+CONFIGURE_ARGS+=--disable-debug
+.else
 CONFIGURE_ARGS+=--enable-debug
 STRIP=''
-#.endif # defined(PARALLEL_PACKAGE_BUILD) || !defined(WANT_KDE_DEBUG)
+.endif # defined(PARALLEL_PACKAGE_BUILD) || !defined(WANT_KDE_DEBUG)
 .endif # !defined(_NO_KDE_NDEBUG)
 
 .if !defined(_NO_KDE_NON_I386_OPTS)
