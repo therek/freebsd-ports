@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq/Makefile.inc,v 1.2 2002/01/25 20:26:56 dinoex Exp $
+# $FreeBSD: ports/net/licq-devel/Makefile.inc,v 1.3 2002/02/07 14:17:09 fjoe Exp $
 
 PKGNAMEPREFIX=		licq-
 TIMESTAMP=		20020128
@@ -48,3 +48,5 @@ pre-patch:
 .else
 WRKSRC?=		${WRKDIR}/licq-${TIMESTAMP}/plugins/${PORTNAME}
 .endif
+
+PLIST_SUB+=		LICQ_DEVEL=""

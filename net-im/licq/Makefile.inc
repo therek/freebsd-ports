@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq/Makefile.inc,v 1.1 2001/04/10 20:52:08 green Exp $
+# $FreeBSD: ports/net/licq/Makefile.inc,v 1.2 2002/01/25 20:26:56 dinoex Exp $
 
 PKGNAMEPREFIX=		licq-
 LICQ_VER=		1.0.4
@@ -27,3 +27,4 @@ USE_GMAKE=		yes
 USE_NEWGCC=		yes
 USE_BZIP2=		yes
 WRKSRC?=		${WRKDIR}/${DISTNAME}/plugins/${PORTNAME}-${PORTVERSION}
+PLIST_SUB+=		LICQ_DEVEL="@comment "
