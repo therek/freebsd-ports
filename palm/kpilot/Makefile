@@ -3,7 +3,7 @@
 # Date created:        09 April 1998
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/palm/kpilot/Makefile,v 1.27 2000/02/19 22:13:20 dima Exp $
+# $FreeBSD: ports/palm/kpilot/Makefile,v 1.28 2000/02/24 07:01:07 asami Exp $
 #
 
 DISTNAME=	kpilot-3.0.2
@@ -22,6 +22,5 @@ USE_GMAKE=	yes
 CONFIGURE_ENV=	KDEDIR="${KDEDIR}"
 
 MAKE_ENV=	KDEDIR="${KDEDIR}"
-
 
 .include <bsd.port.mk>
