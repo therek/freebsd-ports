@@ -2,11 +2,11 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.7 2001/03/20 09:32:54 knu Exp $
+# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.8 2001/07/06 19:57:43 knu Exp $
 #
 
 PORTNAME=	ming
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2a
 CATEGORIES=	graphics python
 MASTER_SITES=	# none
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -15,7 +15,7 @@ DISTFILES=	# none
 MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/ming:patch
-LIB_DEPENDS=	ming.2:${PORTSDIR}/graphics/ming
+LIB_DEPENDS=	ming.3:${PORTSDIR}/graphics/ming
 
 USE_PYTHON=	yes
 
