@@ -2,11 +2,11 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.28 2001/03/11 18:29:18 nik Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.29 2001/07/13 12:09:12 nik Exp $
 #
 
 PORTNAME=	docproj
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	textproc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,7 +18,6 @@ RUN_DEPENDS=	instant:${PORTSDIR}/textproc/sgmlformat \
 		${PREFIX}/share/sgml/docbook/dsssl/modular:${PORTSDIR}/textproc/dsssl-docbook-modular \
 		${PREFIX}/share/sgml/html/catalog:${PORTSDIR}/textproc/html \
 		${PREFIX}/share/sgml/linuxdoc:${PORTSDIR}/textproc/linuxdoc \
-		${PREFIX}/share/sgml/docbook/3.1/docbook.dtd:${PORTSDIR}/textproc/docbook-310 \
 		${PREFIX}/share/sgml/docbook/4.1/docbook.dtd:${PORTSDIR}/textproc/docbook-410 \
 		${PREFIX}/share/sgml/iso8879:${PORTSDIR}/textproc/iso8879 \
 		${PREFIX}/bin/peps:${PORTSDIR}/graphics/peps \
