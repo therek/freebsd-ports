@@ -2,15 +2,15 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.58 2001/01/15 21:34:59 vanilla Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.59 2001/01/15 23:20:29 vanilla Exp $
 #
 
 PORTNAME=	icewm
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	${PORTNAME}-${PORTVERSION}-4
+DISTNAME=	${PORTNAME}-${PORTVERSION}-7
 
 MAINTAINER=	nakai@FreeBSD.org
 
@@ -26,7 +26,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--enable-i18n --enable-nls \
 		--with-cfgdir=${PREFIX}/share/icewm \
-		--with-libdir=${PREFIX}/share/icewm
+		--with-libdir=${PREFIX}/share/icewm \
+		--with-kdedatadir=${LOCALBASE}/share \
+		--with-docdir=${PREFIX}/share/doc
 
 .include <bsd.port.pre.mk>
 
