@@ -2,7 +2,7 @@
 # Date created:		12 Jan 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/webfonts/Makefile,v 1.1 2001/01/20 11:14:29 clive Exp $
 #
 
 PORTNAME=	webfonts
@@ -21,7 +21,6 @@ BUILD_DEPENDS=	ttmkfdir:${PORTSDIR}/x11-fonts/ttmkfdir \
 
 RESTRICTED=	"Restrictive license \(can\'t place on server for distribution\)"
 NO_CDROM=	"Restrictive license \(can\'t sell for profit\)"
-NO_PACKAGE=	"Restrictive license \(can\'t distribute in forms other than the original\)"
 
 USE_X_PREFIX=	yes
 
