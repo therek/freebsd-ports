@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.100 2000/11/23 01:58:25 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.101 2000/11/23 13:35:56 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -24,6 +24,7 @@ INSTALL_TARGET=	install install.man
 DIST_SUBDIR=	xc
 PATCH_DIST_ARGS=-p0 -E -d ${WRKDIR} --quiet
 SCRIPTS_ENV=	OSVERSION=${OSVERSION}
+MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 .ifdef DISTRIB
 DESTDIR=	${WRKDIR}/distrib
 MAKE_ENV+=	DESTDIR=${DESTDIR}
