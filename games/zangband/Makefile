@@ -2,7 +2,7 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.7 2000/12/22 09:45:09 roam Exp $
+# $FreeBSD: ports/games/zangband/Makefile,v 1.8 2001/01/16 17:30:53 sobomax Exp $
 #
 
 PORTNAME=	zangband
@@ -44,7 +44,7 @@ ANGBANDBIN?=	bin/${PORTNAME}
 E_VERSION=	${PORTVERSION:S/${JA_VERSION}//}
 
 .if defined(JAPANESE)
-PATCH_VERSION?=	000922
+PATCH_VERSION?=	010122
 JA_VERSION=	.j${PATCH_VERSION}
 JA_DISTFILE=	zj${E_VERSION:S/.//g}ux-${PATCH_VERSION}.tgz
 .endif
