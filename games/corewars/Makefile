@@ -3,7 +3,7 @@
 # Date created:			29 February 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/corewars/Makefile,v 1.2 2000/03/02 19:59:27 jim Exp $
+# $FreeBSD: ports/games/corewars/Makefile,v 1.3 2000/03/03 19:45:12 jim Exp $
 #
 
 DISTNAME=	corewars-0.9.2
@@ -22,6 +22,7 @@ GNU_CONFIGURE=	yes
 
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
+MAKE_ENV=	FREEBSD_CFLAGS="${CFLAGS}"
 
 post-install:
 	@strip ${PREFIX}/bin/corewars
