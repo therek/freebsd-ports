@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/xmltex/pkg-plist,v 1.1 2002/05/28 18:11:03 nik Exp $
+@comment $FreeBSD: ports/print/xmltex/pkg-plist,v 1.2 2004/02/02 16:20:29 nork Exp $
 %%PORTDOCS%%%%DOCSDIR%%/manual.html
 %%PORTDOCS%%%%DOCSDIR%%/manual.tex
 %%PORTDOCS%%%%DOCSDIR%%/manual.xml
@@ -32,6 +32,8 @@
 %%CLASSDIR%%/portugeselatin1.xml
 %%CLASSDIR%%/englishutf16.xml
 %%CLASSDIR%%/englishutf8.xml
+@exec ln -s -f %D/bin/latex %D/bin/xmltex
+@unexec rm -f %D/bin/xmltex > /dev/null 2>&1 || true
 @dirrm %%CLASSDIR%%
 @exec %%MKTEXLSR%%
 @unexec %%MKTEXLSR%%
