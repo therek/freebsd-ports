@@ -2,12 +2,12 @@
 # Date created:				6 June 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/led/Makefile,v 1.2 2001/06/07 09:26:49 sobomax Exp $
 #
 
 PORTNAME=	led
-PORTVERSION=	0.9
-PORTREVISION=	1
+PORTVERSION=	0.9.1
+PORTREVISION=	0
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}-editor
