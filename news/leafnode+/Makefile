@@ -2,13 +2,13 @@
 # Date created:		19 November 1998
 # Whom:			Tom Hukins <tom@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode+/Makefile,v 1.14 2000/03/08 21:23:59 sada Exp $
+# $FreeBSD: ports/news/leafnode+/Makefile,v 1.15 2000/04/09 17:33:01 cpiazza Exp $
 #
 
 PORTNAME=	leafnode+
 PORTVERSION=	2.10
 CATEGORIES=	news
-MASTER_SITES=	ftp://hiroshima.isdn.uiuc.edu/leafnode+/
+MASTER_SITES=	http://www.io.com/~kazushi/leafnode+/
 
 MAINTAINER=	tom@FreeBSD.org
 
