@@ -2,11 +2,12 @@
 # Date created:        12 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gdm/Makefile,v 1.13 2001/10/02 12:18:33 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdm
 PORTVERSION=	2.2.4.2
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=		stable/sources/gdm
