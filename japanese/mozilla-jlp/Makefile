@@ -2,7 +2,7 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.1 2000/10/29 14:19:38 knu Exp $
 #
 
 PORTNAME=	mozilla
@@ -59,7 +59,7 @@ do-install:
 	${CP} installed-chrome.txt.orig installed-chrome.txt; \
 	${CAT} ${FILESDIR}/installed-chrome.txt >> installed-chrome.txt)
 	(cd ${PREFIX}/lib/mozilla; \
-	${ENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom; \
-	${ENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regchrome)
+	${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom; \
+	${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regchrome)
 
 .include <bsd.port.post.mk>
