@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:    ical
 # Date created:         Mon Aug 28 13:35:31 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/deskutils/ical/Makefile,v 1.27 2000/04/23 22:59:18 kris Exp $
+# $FreeBSD: ports/deskutils/ical/Makefile,v 1.28 2000/05/14 05:06:56 billf Exp $
 #
 
 PORTNAME=	ical
@@ -14,7 +15,7 @@ MASTER_SITES=	ftp://ftp.sco.com/skunkware/src/shellutil/ \
 		ftp://ftp.kddlabs.co.jp/sourceforge/ical/ \
 		ftp://ftp.sunsite.org.uk/Mirrors/ftp.sco.com/skunkware/src/shellutil/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
