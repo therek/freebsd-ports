@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.18 2004/06/04 18:54:22 mezz Exp $
+@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.19 2004/07/08 07:07:10 osa Exp $
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DOCSDIR%%/help
