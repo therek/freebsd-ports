@@ -2,7 +2,7 @@
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
 # Whom:				Dominik Brettnacher <domi@saargate.de>
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.20 2000/10/05 06:36:20 reg Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.21 2001/01/15 04:01:24 kris Exp $
 #
 
 PORTNAME=	xsane
@@ -15,7 +15,7 @@ MASTER_SITES=	http://www.wolfsburg.de/~rauch/sane/ \
 MAINTAINER=	domi@saargate.de
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		sane.1:${PORTSDIR}/graphics/sane \
+		sane.1:${PORTSDIR}/graphics/sane-backends \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.4:${PORTSDIR}/graphics/png
