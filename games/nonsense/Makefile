@@ -2,11 +2,11 @@
 # Date created:		15 December 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/nonsense/Makefile,v 1.1 2000/12/15 16:56:07 roam Exp $
 #
 
 PORTNAME=	nonsense
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	games
 MASTER_SITES=	http://i-want-a-website.com/about-linux/
 
