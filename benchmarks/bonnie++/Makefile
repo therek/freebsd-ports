@@ -3,16 +3,16 @@
 # Date created:			Mar 24, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/benchmarks/bonnie++/Makefile,v 1.2 2001/06/10 13:13:55 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bonnie++
-PORTVERSION=	1.01d
+PORTVERSION=	1.02
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.coker.com.au/bonnie++/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
