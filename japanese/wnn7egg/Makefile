@@ -2,11 +2,12 @@
 # Date created:		01/07/16
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/wnn7egg/Makefile,v 1.1 2001/08/08 17:35:03 taoka Exp $
 #
 
 PORTNAME=	wnn7egg
 PORTVERSION=	1.00
+PORTREVISION=	1
 CATEGORIES=	japanese elisp
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	taoka
