@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.1 1999/12/24 15:56:31 andreas Exp $
+# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.2 2001/01/12 18:29:08 andreas Exp $
 #
 # zebra start/stop script by "Andreas Klemm <andreas@FreeBSD.ORG>"
 #
@@ -20,16 +20,16 @@ fi
 case $1 in
 	start)
 		[ -f !!PREFIX!!/etc/zebra/zebra.conf ] && ( \
-			!!PREFIX!!/sbin/zebra > /dev/null 2>&1 & \
+			!!PREFIX!!/sbin/zebra -d > /dev/null 2>&1 & \
 			echo -n ' zebra' )
 		[ -f !!PREFIX!!/etc/zebra/ripd.conf ] && ( \
-			!!PREFIX!!/sbin/ripd > /dev/null 2>&1 & \
+			!!PREFIX!!/sbin/ripd -d > /dev/null 2>&1 & \
 			echo -n ' ripd' )
 		[ -f !!PREFIX!!/etc/zebra/ospfd.conf ] && ( \
-			!!PREFIX!!/sbin/ospfd > /dev/null 2>&1 & \
+			!!PREFIX!!/sbin/ospfd -d > /dev/null 2>&1 & \
 			echo -n ' ospfd' )
 		[ -f !!PREFIX!!/etc/zebra/bgpd.conf ] && ( \
-			!!PREFIX!!/sbin/bgpd > /dev/null 2>&1 & \
+			!!PREFIX!!/sbin/bgpd -d > /dev/null 2>&1 & \
 			echo -n ' bgpd' )
 		;;
 
