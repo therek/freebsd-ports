@@ -3,10 +3,10 @@
 # Date created:				6/5/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/krb5/Makefile,v 1.15 1999/10/04 14:32:21 nectar Exp $
 #
 
-DISTNAME=		krb5-1.1
+DISTNAME=		krb5-1.1.1
 CATEGORIES=		security
 MASTER_SITES=		# manual download
 EXTRACT_SUFX=		.tar
