@@ -2,11 +2,11 @@
 # Date created:				28 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/madbomber/Makefile,v 1.2 2000/09/28 08:39:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	madbomber
-PORTVERSION=	0.1.8
+PORTVERSION=	0.2.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/madbomber/
 
