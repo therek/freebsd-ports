@@ -2,7 +2,7 @@
 # Date created:         11 Apr 1997
 # Whom:                 Makoto Matsushita <matusita@jp.freebsd.org>
 #
-# $FreeBSD: ports/japanese/kon2-16dot/Makefile,v 1.25 2000/03/08 15:21:35 shige Exp $
+# $FreeBSD: ports/japanese/kon2-16dot/Makefile,v 1.26 2000/04/11 14:14:34 knu Exp $
 #
 
 PORTNAME=	kon2
@@ -11,6 +11,7 @@ PKGNAMESUFFIX=	-${KONFONT}
 CATEGORIES=	japanese
 # note kon is only in first directory and fonts are only in second directory
 MASTER_SITES=	ftp://ftp.tut.ac.jp/Linux/Packages/Utils/ \
+		${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.xfree86.org/pub/XFree86/3.3.3/untarred/xc/fonts/bdf/misc/ \
 		ftp://ftp.iij.ad.jp/pub/X/XFree86/3.3.3/untarred/xc/fonts/bdf/misc/
 DISTNAME=	kon2-${PORTVERSION}
