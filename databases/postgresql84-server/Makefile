@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.56 2000/04/20 05:04:29 mharo Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.57 2000/05/24 14:11:18 andreas Exp $
 #
 
 PORTNAME=	postgresql
@@ -182,6 +182,9 @@ post-install:
 	@ ${ECHO_MSG} "Putting postgresql.jar in"
 	@ ${ECHO_MSG} "${PREFIX}/share/java/classes/postgresql.jar"
 	@ ${ECHO_MSG} "Add this to your CLASSPATH!"
+	@ ${ECHO_MSG} "ALSO NOTE: path inside jar file modified from 6.5.x:"
+	@ ${ECHO_MSG} "  'postgresql.*' -> 'org.postgresql.*'!"
+	@ ${ECHO_MSG} "You will need to modify you applications' props files."
 	@ ${ECHO_MSG} "---------------------------------------------------------"
 	@ ${CAT} ${PKGDIR}/PLIST.jdbc >> ${TMPPLIST}
 .if !defined(NOPORTDOCS)
