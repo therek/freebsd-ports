@@ -2,11 +2,11 @@
 # Date created:			18 May 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/teapop/Makefile,v 1.3 2000/08/26 16:34:17 andreas Exp $
+# $FreeBSD: ports/mail/teapop/Makefile,v 1.4 2000/12/04 05:50:25 jim Exp $
 #
 
 PORTNAME=	teapop
-PORTVERSION= 	0.27
+PORTVERSION= 	0.28
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.toontown.org/pub/teapop/ \
 		http://www.toontown.org/pub/teapop/
