@@ -2,7 +2,7 @@
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/xtail/Makefile,v 1.4 2000/04/14 08:47:16 asami Exp $
+# $FreeBSD: ports/misc/xtail/Makefile,v 1.5 2000/09/19 18:30:17 ade Exp $
 #
 
 PORTNAME=	xtail
@@ -14,7 +14,6 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	gmarco@giovannelli.it
 
-PATCHDIR=
 HAS_CONFIGURE=	yes
 
 MAN1=	xtail.1
