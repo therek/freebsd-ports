@@ -2,15 +2,15 @@
 # Date created:		13 April 1997
 # Whom:			peter
 #
-# $FreeBSD: ports/net/echoping/Makefile,v 1.9 2001/03/10 07:23:49 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	echoping
-PORTVERSION=	4.2.0
-CATEGORIES=	net
+PORTVERSION=	5.0.0
+CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.internatif.org/pub/unix/echoping/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sumikawa@FreeBSD.org
 
 USE_OPENSSL=	yes
 GNU_CONFIGURE=	yes
