@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.194 2000/12/19 09:41:15 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.195 2000/12/19 10:02:05 will Exp $
 #
 
     SUBDIR += afsp
@@ -87,6 +87,7 @@
     SUBDIR += linux-realplayer
     SUBDIR += litestream
     SUBDIR += lopster
+    SUBDIR += mad
     SUBDIR += maplay
     SUBDIR += mikmod
     SUBDIR += mixer.app
