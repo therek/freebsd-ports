@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.294 2004/01/07 19:46:13 adamw Exp $
+# $FreeBSD: ports/MOVED,v 1.295 2004/01/07 19:50:53 adamw Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -740,3 +740,4 @@ devel/simpleparse|devel/py-simpleparse|2004-01-06|readd as py-simpleparse
 devel/anjuta-devel|devel/anjuta|2004-01-07|moved to devel/anjuta as new stable release
 x11-toolkits/guile-gobject||2004-01-07|Broken for a while, with no new versions
 devel/glade||2004-01-07|Superseded by devel/glade2
+devel/p5-Glade-Perl||2004-01-07|No longer works under new glade2
