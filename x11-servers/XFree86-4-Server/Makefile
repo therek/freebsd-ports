@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.94 2001/06/12 15:01:06 sf Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.95 2001/06/12 16:08:20 sf Exp $
 #
 
 PORTNAME=	Server
@@ -169,7 +169,7 @@ pre-install:
 .endif
 
 post-build:
-	@${RM} ${PKGMESSAGE}
+	@${RM} -f ${PKGMESSAGE}
 .if ${BuildXF86DRM} == "YES"
 	@${CAT} ${.CURDIR}/pkg-message-drm > ${PKGMESSAGE}
 .endif
