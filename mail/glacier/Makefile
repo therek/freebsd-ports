@@ -3,12 +3,12 @@
 # Date created:		30 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/glacier/Makefile,v 1.1 2000/02/06 23:33:54 ade Exp $
+# $FreeBSD: ports/mail/glacier/Makefile,v 1.2 2000/03/22 01:59:22 will Exp $
 #
 
 DISTNAME=	glacier-0.0.2
 CATEGORIES=	mail gnome
-MASTER_SITES=	http://glacier.linuxbox.com/
+MASTER_SITES=	http://glacier.linuxave.net/
 
 MAINTAINER=	will@FreeBSD.org
 
