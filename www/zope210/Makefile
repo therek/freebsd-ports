@@ -2,7 +2,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.13 2000/09/06 22:12:33 nbm Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.14 2000/09/07 11:04:44 nbm Exp $
 #
 
 PORTNAME=	zope
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nbm@FreeBSD.org
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
 #RUN_DEPENDS=	${LOCALBASE}/sbin/apache:${PORTSDIR}/www/apache13-modssl
 
