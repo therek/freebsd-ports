@@ -2,7 +2,7 @@
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/games/xboing/Makefile,v 1.13 1999/08/25 06:04:51 obrien Exp $
+# $FreeBSD: ports/games/xboing/Makefile,v 1.14 2000/04/14 12:27:06 asami Exp $
 
 PORTNAME=	xboing
 PORTVERSION=	2.4
@@ -13,13 +13,12 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	janek@gaja.ipan.lublin.pl
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 .if ${MACHINE_ARCH} == "alpha"
 PLIST=		${PKGDIR}/PLIST.alpha
 .endif
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 WRKSRC= ${WRKDIR}/xboing
 MAN1=		xboing.1
 

@@ -2,7 +2,7 @@
 # Date created:				15 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xcogitate/Makefile,v 1.10 2000/04/14 12:27:11 asami Exp $
+# $FreeBSD: ports/games/xcogitate/Makefile,v 1.11 2000/06/14 05:44:51 mph Exp $
 #
 
 PORTNAME=	xcogitate
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/XCOGITATE_SOURCE
 
 do-build:

@@ -2,7 +2,7 @@
 # Date created:		28 Jul 1996
 # Whom:			shanee
 #
-# $FreeBSD: ports/editors/xed/Makefile,v 1.11 1999/08/25 05:44:51 obrien Exp $
+# $FreeBSD: ports/editors/xed/Makefile,v 1.12 2000/04/14 00:25:54 mharo Exp $
 #
 
 PORTNAME=	xed
@@ -15,9 +15,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		xed.1
 
 .include <bsd.port.mk>

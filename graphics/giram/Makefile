@@ -2,7 +2,7 @@
 # Date created:        17 June 1999
 # Whom:                Brandon Fosdick <bfoz@glue.umd.edu>
 #
-# $FreeBSD: ports/graphics/giram/Makefile,v 1.5 2000/07/11 10:30:04 kevlo Exp $
+# $FreeBSD: ports/graphics/giram/Makefile,v 1.6 2000/07/15 16:14:38 kevlo Exp $
 #
 
 PORTNAME=	giram
@@ -13,12 +13,12 @@ DISTNAME=	Giram-${PORTVERSION}
 
 MAINTAINER=	bfoz@glue.umd.edu
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		GL:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray31
 
 GTK_CONFIG?=    ${X11BASE}/bin/gtk12-config
 
+USE_MESA=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \

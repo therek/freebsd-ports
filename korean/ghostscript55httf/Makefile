@@ -2,7 +2,7 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.17 2000/07/16 10:36:07 cjh Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.18 2000/07/19 17:05:43 asami Exp $
 #
 
 PORTNAME=	ghostscript
@@ -26,11 +26,11 @@ Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract \
 		unzip:${PORTSDIR}/archivers/unzip
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
-		ttf.4:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	$(X11BASE)/lib/X11/fonts/TrueType/gulim.ttf:${PORTSDIR}/korean/baekmukfonts-ttf
 
 USE_XLIB=	yes
+USE_FREETYPE=	yes
 EXTRACT_ONLY=	${GS_SOURCES}
 WRKSRC=		${WRKDIR}/gs5.50
 USE_GMAKE=	yes

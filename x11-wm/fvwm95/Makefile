@@ -2,7 +2,7 @@
 # Date created:		Sa   1 Feb 1997 14:46:05 MET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11-wm/fvwm95/Makefile,v 1.25 2000/02/21 12:53:05 andreas Exp $
+# $FreeBSD: ports/x11-wm/fvwm95/Makefile,v 1.26 2000/04/10 19:49:51 cpiazza Exp $
 #
 
 PORTNAME=	fvwm95
@@ -14,11 +14,11 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=	${LOCALBASE}/lib/librplay.a:${PORTSDIR}/audio/rplay
 RUN_DEPENDS=	${X11BASE}/icons/chuck.xpm:${PORTSDIR}/x11/fbsd-icons
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --includedir=${LOCALBASE}/include \
 		--libdir=${LOCALBASE}/lib

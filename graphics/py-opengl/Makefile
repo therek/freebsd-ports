@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.6 2000/04/30 00:39:01 kris Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.7 2000/05/16 09:07:56 tg Exp $
 #
 
 PORTNAME=	opengl
@@ -19,10 +19,9 @@ BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
+USE_MESA=	yes
 ALL_TARGET=	default
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 OSMAJOR!=	/usr/bin/uname -r | sed -e 's/\..*//'

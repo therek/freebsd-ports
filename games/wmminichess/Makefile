@@ -2,7 +2,7 @@
 # Date created:		24 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/wmminichess/Makefile,v 1.3 2000/04/14 12:26:48 asami Exp $
+# $FreeBSD: ports/games/wmminichess/Makefile,v 1.4 2000/06/22 05:51:59 will Exp $
 #
 
 PORTNAME=	wmminichess
@@ -13,11 +13,11 @@ DISTNAME=	miniCHESS-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	${LOCALBASE}/bin/gnuchessx:${PORTSDIR}/games/gnuchess
 
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
+USE_XPM=	YES
 MAKE_ENV=	PREFIX="${PREFIX}" INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		LOCAL="${LOCALBASE}" MKDIR="${MKDIR}" \
 		INSTALL_DATA="${INSTALL_DATA}"

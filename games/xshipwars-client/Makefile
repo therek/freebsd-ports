@@ -2,7 +2,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.4 2000/03/08 22:49:06 kris Exp $
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.5 2000/04/14 12:28:17 asami Exp $
 #
 
 PORTNAME=	xshipwars-client
@@ -13,10 +13,9 @@ DISTFILES=	xsw1.23.tgz stimages1.3.tgz
 
 MAINTAINER=	troll@digitalspark.net
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/xsw1.23/client
 USE_XLIB=	YES
+USE_XPM=	yes
 USE_GMAKE=	YES
 MAKEFILE=	Makefile.FreeBSD
 

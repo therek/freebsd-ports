@@ -2,7 +2,7 @@
 # Date created:				2 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xnibbles/Makefile,v 1.12 2000/04/14 12:27:51 asami Exp $
+# $FreeBSD: ports/games/xnibbles/Makefile,v 1.13 2000/06/22 05:52:00 will Exp $
 #
 
 PORTNAME=	xnibbles
@@ -13,11 +13,10 @@ DISTNAME=	xnibbles-1.0BETA3
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 ALL_TARGET=	linux
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/xnibbles
 
 MAN6=		xnibbles.6

@@ -2,7 +2,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.34 2000/04/14 00:45:48 mharo Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.35 2000/06/29 07:02:13 obrien Exp $
 #
 
 PORTNAME=	crossfire
@@ -21,11 +21,11 @@ DISTFILES=	${CF_SOURCES} ${CF_DOC} ${CF_MAPS} ${CF_SOUNDS} \
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	rplay:${PORTSDIR}/audio/rplay
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 EXTRACT_ONLY=	${CF_SOURCES} ${CF_DOC}
 USE_PERL5=	yes
 USE_IMAKE=	yes
+USE_XPM=	yes
 PREFIX=		${LOCALBASE}
 MAN6=		crossfire.6 crossedit.6
 

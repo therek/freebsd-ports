@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.10 1999/09/04 20:22:25 cpiazza Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.11 2000/04/12 04:56:13 mharo Exp $
 #
 
 PORTNAME=	xmame
@@ -15,8 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=     dburr@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
+USE_XPM=	YES
 USE_GMAKE=	YES
 MAKEFILE=	makefile.unix
 

@@ -2,7 +2,7 @@
 # Date created:		10 Aug 1999
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xeji/Makefile,v 1.1.1.1 1999/10/10 23:54:47 steve Exp $
+# $FreeBSD: ports/games/xeji/Makefile,v 1.2 2000/04/14 12:27:17 asami Exp $
 #
 
 PORTNAME=	xeji
@@ -14,9 +14,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	th@cis.ibaraki.ac.jp
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 WRKSRC=		${WRKDIR}/xeji

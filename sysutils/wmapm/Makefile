@@ -2,7 +2,7 @@
 # Date created:		99/07/02
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/wmapm/Makefile,v 1.4 2000/04/09 19:08:45 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmapm/Makefile,v 1.5 2000/04/22 10:13:34 mharo Exp $
 #
 
 PORTNAME=	wmapm
@@ -12,12 +12,11 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	taoka@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmapm
 USE_GMAKE=	yes
 ONLY_FOR_ARCHS=	i386
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 BINMODE=	2755
 BINGRP=		operator

@@ -2,7 +2,7 @@
 # Date created:			24 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.9 2000/04/10 00:33:03 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.10 2000/06/29 07:02:57 obrien Exp $
 #
 
 PORTNAME=	wmtz
@@ -14,11 +14,10 @@ MASTER_SITE_SUBDIR=	jim
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmtz
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-install:
 	@${ECHO} "===>   Installing wmtzrc in ${PREFIX}/share/examples/wmtz"

@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.7 2000/01/07 02:27:28 nakai Exp $
+# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.8 2000/04/13 08:34:08 knu Exp $
 #
 
 PORTNAME=	xnetmaj
@@ -15,9 +15,8 @@ DISTFILES=	netmaj-${PORTVERSION}.tar.gz \
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	libs all
 INSTALL_TARGET=	install install-pf
 

@@ -2,7 +2,7 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.25 2000/06/16 21:50:36 asami Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.26 2000/06/22 15:09:54 nbm Exp $
 #
 
 PORTNAME=	cooledit
@@ -14,12 +14,12 @@ MASTER_SITE_SUBDIR=	apps/editors/X
 
 MAINTAINER=	brett@peloton.runet.edu
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 USE_XLIB=       yes
+USE_XPM=       yes
 USE_GMAKE=      yes
 
 CONFIGURE_ARGS=	--disable-mail-author --with-libs='-lcrypt -lreadline' \

@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.4 2000/04/08 22:02:00 mharo Exp $
+# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
 
 PORTNAME=	wmspaceweather
 PORTVERSION=	1.04
@@ -12,12 +12,11 @@ DISTNAME=	wmSpaceWeather-1.04
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSpaceWeather
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=	wmSpaceWeather.1

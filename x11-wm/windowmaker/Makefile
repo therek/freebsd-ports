@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.71 2000/06/16 21:52:35 asami Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.72 2000/07/04 07:13:24 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -16,8 +16,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		ungif.5:${PORTSDIR}/graphics/libungif \
+LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
@@ -25,6 +24,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE} LIBS=-L${LOCALBASE}/lib \

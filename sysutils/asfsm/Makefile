@@ -2,7 +2,7 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asfsm/Makefile,v 1.3 1999/08/31 01:59:30 peter Exp $
+# $FreeBSD: ports/sysutils/asfsm/Makefile,v 1.4 2000/04/09 19:07:08 cpiazza Exp $
 
 PORTNAME=	asfsm
 PORTVERSION=	1.0.p15
@@ -12,11 +12,10 @@ DISTNAME=	asfsm-1.0pre15
 
 MAINTAINER=	jack@germanium.xtalwind.net
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--x-includes=${X11BASE}/include/X11
+CONFIGURE_ARGS=	--x-includes=${X11BASE}/include/X11
 
 MAN1=		asfsm.1
 

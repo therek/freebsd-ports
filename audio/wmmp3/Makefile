@@ -2,7 +2,7 @@
 # Date created:		09 December 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/wmmp3/Makefile,v 1.3 2000/04/14 12:55:05 asami Exp $
+# $FreeBSD: ports/audio/wmmp3/Makefile,v 1.4 2000/05/08 19:48:03 jim Exp $
 
 PORTNAME=	wmmp3
 PORTVERSION=	0.12
@@ -12,10 +12,10 @@ MASTER_SITES= 	http://www.dotfiles.com/software/wmmp3/
 MAINTAINER=	jim@FreeBSD.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
-LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-install:
 	@${ECHO} "===>   Installing sample.wmmp3 in ${PREFIX}/share/examples/wmmp3"

@@ -2,7 +2,7 @@
 # Date created:				5 November 1996
 # Whom:					fenner
 #
-# $FreeBSD: ports/graphics/geomview/Makefile,v 1.21 2000/03/20 23:25:11 jseger Exp $
+# $FreeBSD: ports/graphics/geomview/Makefile,v 1.22 2000/04/14 10:45:52 asami Exp $
 #
 
 PORTNAME=	geomview
@@ -15,12 +15,12 @@ DISTFILES=	geomview-1.6.1-src.tar.gz
 MAINTAINER=	fenner@freebsd.org
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		GL.14:${PORTSDIR}/graphics/Mesa3 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/Geomview
 REQUIRES_MOTIF=	yes
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 
 MAN1=		addbbox.1 animate.1 anytooff.1 anytoucd.1 bdy.1 clip.1 \
 		cplxview.1 crayola.1 example.1 flythrough.1 geomview.1 \

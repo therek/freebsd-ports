@@ -2,7 +2,7 @@
 # Date created:		5th December 1994
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/x11-wm/tvtwm/Makefile,v 1.17 1999/08/31 06:53:15 mharo Exp $
+# $FreeBSD: ports/x11-wm/tvtwm/Makefile,v 1.18 2000/04/10 19:50:19 cpiazza Exp $
 #
 
 PORTNAME=	tvtwm
@@ -14,10 +14,9 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	gpalmer@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/tvtwm
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		tvtwm.1
 
 .include <bsd.port.mk>

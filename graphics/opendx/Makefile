@@ -2,7 +2,7 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.6 2000/04/14 10:46:51 asami Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.7 2000/05/29 02:33:25 steve Exp $
 #
 
 PORTNAME=	opendx
@@ -13,10 +13,10 @@ DISTNAME=	dx-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
-		netcdf.1:${PORTSDIR}/math/netcdf
+LIB_DEPENDS=	netcdf.1:${PORTSDIR}/math/netcdf
 
 USE_XLIB=	yes
+USE_MESA=	yes
 REQUIRES_MOTIF=	yes
 USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:         Feb 8th, 1988
 # Whom:                 jkh
 #
-# $FreeBSD: ports/net/cnet/Makefile,v 1.11 2000/04/09 18:10:31 cpiazza Exp $
+# $FreeBSD: ports/net/cnet/Makefile,v 1.12 2000/07/22 07:22:56 will Exp $
 #
 
 PORTNAME=	cnet
@@ -12,10 +12,10 @@ MASTER_SITES=	http://www.cs.uwa.edu.au/cnet/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	# empty
 MAN1=		cnet.1

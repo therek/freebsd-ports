@@ -2,7 +2,7 @@
 # Date created:		October 29th 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.32 2000/04/10 19:49:28 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.33 2000/04/17 00:18:54 reg Exp $
 #
 
 PORTNAME=	afterstep
@@ -15,10 +15,9 @@ DISTNAME=	AfterStep-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 NO_LATEST_LINK= yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 INSTALL_TARGET=	install install.man
 MANCOMPRESSED=	yes
 MAN1=		afterstep.1 asclock.1 Animate.1 Audio.1 Auto.1 Banner.1 Pager.1 Wharf.1

@@ -2,7 +2,7 @@
 # Date created:         14 Jan 1998
 # Whom:			Takashi Uozu <j1594016@ed.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/japanese/wine/Makefile,v 1.8 2000/04/08 18:05:36 fenner Exp $
+# $FreeBSD: ports/japanese/wine/Makefile,v 1.9 2000/04/13 08:33:36 knu Exp $
 
 PORTNAME=	wine
 PORTVERSION=	99.01.31
@@ -14,8 +14,7 @@ DISTNAME=	ja-Wine-${PORTVERSION:S/.//g}
 DISTFILES=	Wine-${PORTVERSION:S/.//g}.tar.gz \
 		Wine${PORTVERSION:S/.//g}-ja.tar.gz
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/.//g}
 PATCH_STRIP=	-p1
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmmand/Makefile,v 1.4 2000/04/14 08:47:02 asami Exp $
+# $FreeBSD: ports/misc/wmmand/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
 
 PORTNAME=	wmmand
 PORTVERSION=	1.0
@@ -12,12 +12,11 @@ DISTNAME=	wmMand-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmMand
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=		wmMand.1

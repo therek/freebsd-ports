@@ -2,7 +2,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.29 2000/04/14 12:26:10 asami Exp $
+# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.30 2000/04/29 23:58:07 kris Exp $
 #
 
 PORTNAME=	qt-nethack
@@ -19,7 +19,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	auplay:${PORTSDIR}/audio/nas \
 		xpmtoppm:${PORTSDIR}/graphics/netpbm
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	auplay:${PORTSDIR}/audio/nas
 
 QT_PATCH=	qnethack-3.2.2.1.0.1.src.tar.gz
@@ -27,6 +26,7 @@ QT_SOUND=	nhs.tar.gz
 EXTRACT_ONLY=	nethack-3.2.2.tar.gz
 
 USE_QT=		yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
 

@@ -2,7 +2,7 @@
 # Date created:			09 Aug 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/youbin/Makefile,v 1.24 1999/09/17 18:24:55 steve Exp $
+# $FreeBSD: ports/mail/youbin/Makefile,v 1.25 2000/04/13 20:01:07 cpiazza Exp $
 #
 
 PORTNAME=	youbin
@@ -13,9 +13,8 @@ MASTER_SITES=	ftp://ftp.nuie.nagoya-u.ac.jp/pub/nagoya-u/ \
 
 MAINTAINER=	max@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 PREFIX?=         ${LOCALBASE}
 MTREE_FILE?=	/etc/mtree/BSD.local.dist
 

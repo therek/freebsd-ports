@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1998
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/print/mgv/Makefile,v 1.15 2000/04/09 17:40:44 cpiazza Exp $
+# $FreeBSD: ports/print/mgv/Makefile,v 1.16 2000/04/09 17:50:13 cpiazza Exp $
 #
 
 PORTNAME=	mgv
@@ -12,9 +12,8 @@ MASTER_SITES=	http://www.trends.net/~mu/srcs/
 
 MAINTAINER=	handy@physics.montana.edu
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE}

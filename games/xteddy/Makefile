@@ -2,7 +2,7 @@
 # Date created:        3 June 1998
 # Whom:                Eckart "Isegrim" Hofmann
 #
-# $FreeBSD: ports/games/xteddy/Makefile,v 1.7 2000/03/20 22:30:05 mharo Exp $
+# $FreeBSD: ports/games/xteddy/Makefile,v 1.8 2000/04/14 12:28:26 asami Exp $
 #
 
 PORTNAME=	xteddy
@@ -12,11 +12,10 @@ MASTER_SITES=	ftp://ftp.leo.org/pub/comp/usenet/comp.sources.x/xteddy/
 
 MAINTAINER=	Isegrim@Wunder-Nett.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 NO_CDROM=	"Can only be distributed for free"
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		xteddy.1
 
 post-install:

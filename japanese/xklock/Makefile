@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.9 2000/04/13 08:34:07 knu Exp $
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.10 2000/04/14 18:40:21 knu Exp $
 #
 
 PORTNAME=	xklock
@@ -18,10 +18,9 @@ PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	${DISTNAME}+lx.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 pre-configure:
 	@${MV} ${WRKDIR}/jnames.c ${WRKDIR}/jnames.c.in

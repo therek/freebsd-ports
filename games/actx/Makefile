@@ -2,7 +2,7 @@
 # Date created:        19 Feb 1999
 # Whom:                Shinya Esu <esu@yk.rim.or.jp>
 #
-# $FreeBSD: ports/games/actx/Makefile,v 1.4 1999/10/20 17:38:02 flathill Exp $
+# $FreeBSD: ports/games/actx/Makefile,v 1.5 2000/04/14 00:45:19 mharo Exp $
 #
 
 PORTNAME=	actx
@@ -12,9 +12,8 @@ MASTER_SITES=	http://www.astr.tohoku.ac.jp/~taji/ActX/
 
 MAINTAINER=	esu@yk.rim.or.jp
 
-LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=yes
 NO_CDROM=	'contains commercial character data'
 ACTXDIR=	${PREFIX}/share/examples/actx

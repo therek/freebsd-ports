@@ -2,7 +2,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.52 2000/04/27 08:31:21 tg Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.53 2000/05/19 08:58:41 tg Exp $
 #
 
 PORTNAME=	xlockmore
@@ -13,8 +13,6 @@ MASTER_SITES=	ftp://ftp.tux.org/pub/tux/bagleyd/xlockmore/ \
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	tg@FreeBSD.org
-
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --without-gl --without-motif --without-sx \
@@ -27,6 +25,7 @@ CONFIGURE_ARGS+= --enable-kerberos4
 CONFIGURE_ARGS+= --enable-kerberos5
 .endif
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 MAN1=		xlock.1
 
 .include <bsd.port.pre.mk>
@@ -38,7 +37,7 @@ MAN1=		xlock.1
 WITH_MESAGL?=	yes
 .if ${WITH_MESAGL} == yes
 CONFIGURE_ARGS+=	--with-mesagl
-LIB_DEPENDS+=		GL.14:${PORTSDIR}/graphics/Mesa3
+USE_MESA=	yes
 .else
 CONFIGURE_ARGS+=	--without-mesagl
 .endif

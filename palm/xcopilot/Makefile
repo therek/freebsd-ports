@@ -2,7 +2,7 @@
 # Date created:			July 17 1997
 # Whom:				Nick Sayer <nsayer@quack.kfu.com>
 #
-# $FreeBSD: ports/palm/xcopilot/Makefile,v 1.10 2000/04/13 19:19:05 cpiazza Exp $
+# $FreeBSD: ports/palm/xcopilot/Makefile,v 1.11 2000/04/21 07:52:11 mharo Exp $
 #
 
 PORTNAME=	xcopilot
@@ -12,9 +12,8 @@ MASTER_SITES=	http://xcopilot.cuspy.com/build/
 
 MAINTAINER=	nsayer@quack.kfu.com
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 

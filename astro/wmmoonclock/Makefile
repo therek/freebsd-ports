@@ -2,7 +2,7 @@
 # Date created:        14 March 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/astro/wmmoonclock/Makefile,v 1.7 2000/01/30 08:15:25 kris Exp $
+# $FreeBSD: ports/astro/wmmoonclock/Makefile,v 1.8 2000/04/08 22:01:58 mharo Exp $
 #
 
 PORTNAME=	wmMoonClock
@@ -12,11 +12,10 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/Src
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 
 MAN1=		wmmoonclock.1

@@ -2,7 +2,7 @@
 # Date created:		28 December 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xdeblock/Makefile,v 1.8 2000/01/22 11:45:57 nakai Exp $
+# $FreeBSD: ports/games/xdeblock/Makefile,v 1.9 2000/04/14 12:27:14 asami Exp $
 #
 
 PORTNAME=	xdeblock
@@ -13,10 +13,9 @@ DISTFILES=	${PORTNAME}.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/xdeblo_v1.0
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 post-patch:

@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.26 2000/06/16 21:50:44 asami Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.27 2000/07/04 07:12:48 sobomax Exp $
 #
 
 PORTNAME=       gd
@@ -16,10 +16,9 @@ MAINTAINER=	billf@FreeBSD.org
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 .if defined(WITH_X11)
-LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
-		Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_XLIB=	yes
+USE_XPM=	yes
+USE_FREETYPE=	yes
 .endif
 
 INSTALLS_SHLIB=	yes

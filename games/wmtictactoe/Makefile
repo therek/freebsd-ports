@@ -2,7 +2,7 @@
 # Date created:			28 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtictactoe/Makefile,v 1.7 2000/04/14 12:26:48 asami Exp $
+# $FreeBSD: ports/games/wmtictactoe/Makefile,v 1.8 2000/06/29 07:02:19 obrien Exp $
 #
 
 PORTNAME=	wmtictactoe
@@ -15,11 +15,10 @@ DISTNAME=	wmtictactoe-1.1-1
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/wmtictactoe.app/wmtictactoe
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-install:
 	@${ECHO} "===>   Run 'wmtictactoe --help' for the available options"

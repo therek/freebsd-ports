@@ -2,7 +2,7 @@
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/swarm/Makefile,v 1.11 2000/06/16 21:50:11 asami Exp $
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.12 2000/07/04 07:13:20 sobomax Exp $
 #
 
 PORTNAME=	swarm
@@ -14,10 +14,10 @@ MAINTAINER=	horance@freedom.ie.cycu.edu.tw
 
 LIB_DEPENDS=	ffi.2:${PORTSDIR}/devel/libffi \
 		png.4:${PORTSDIR}/graphics/png \
-		Xpm.4:${PORTSDIR}/graphics/xpm \
 		BLT24.2:${PORTSDIR}/x11-toolkits/blt
 
 USE_GMAKE=	yes
+USE_XPM=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-defaultdir=${PREFIX} \

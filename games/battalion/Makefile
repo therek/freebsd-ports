@@ -2,7 +2,7 @@
 # Date created:				17 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battalion/Makefile,v 1.11 2000/04/14 00:45:27 mharo Exp $
+# $FreeBSD: ports/games/battalion/Makefile,v 1.12 2000/06/08 10:09:02 sobomax Exp $
 #
 
 PORTNAME=	battalion
@@ -13,10 +13,9 @@ DISTFILES=	battalionSource1.4.tar.Z battalionSUN4.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 ALL_TARGET=	# empty
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 WRKSRC=		${WRKDIR}/battalionSource
 
 MAN6=		battalion.6

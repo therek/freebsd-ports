@@ -2,7 +2,7 @@
 # Date created:		Sa  01 May 1999 15:00:00 MET
 # Whom:			Tobias Reifenberger <treif@mayn.de>
 #
-# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.3 2000/07/19 13:46:59 alex Exp $
+# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.4 2000/07/19 13:49:38 alex Exp $
 #
 
 PORTNAME=	xmrm
@@ -17,9 +17,9 @@ MAINTAINER=	treif@mayn.de
 
 RUN_DEPENDS=	mpeg:${PORTSDIR}/graphics/mpeg
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
+USE_XPM=	yes
 NO_WRKSUBDIR=	yes
 
 do-install:

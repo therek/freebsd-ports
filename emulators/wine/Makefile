@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.87 2000/07/22 09:47:30 alex Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.88 2000/07/24 10:20:43 alex Exp $
 #
 
 PORTNAME=	wine
@@ -15,9 +15,6 @@ DISTNAME=	Wine-${PORTVERSION:S/.//g}
 
 MAINTAINER=	pfeifer@dbai.tuwien.ac.at
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		GL.14:${PORTSDIR}/graphics/Mesa3
-
 WRKSRC=		${WRKDIR}/wine-${PORTVERSION:S/.//g}
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-opengl
@@ -28,6 +25,8 @@ MAN1=		wine.1
 MAN5=		wine.conf.5
 ONLY_FOR_ARCHS=	i386
 USE_BISON=	yes
+USE_XPM=	yes
+USE_MESA=	yes
 
 .if !defined(NDEBUG)
 STRIP=

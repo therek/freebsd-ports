@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.7 2000/06/22 05:52:15 will Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.8 2000/07/04 07:12:48 sobomax Exp $
 #
 
 PORTNAME=	fox
@@ -15,9 +15,9 @@ MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
-		GL.14:${PORTSDIR}/graphics/Mesa3
+		png.4:${PORTSDIR}/graphics/png
 
+USE_MESA=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-opengl=mesa --with-x

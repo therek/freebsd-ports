@@ -2,7 +2,7 @@
 # Date created:		26 June 1999
 # Whom:			Brian Buchanan <brian@CSUA.Berkeley.EDU>
 #
-# $FreeBSD: ports/x11-toolkits/plib/Makefile,v 1.7 2000/04/10 01:10:44 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/plib/Makefile,v 1.8 2000/07/05 06:19:32 will Exp $
 #
 
 PORTNAME=		plib
@@ -12,12 +12,11 @@ MASTER_SITES=		http://plib.sourceforge.net/dist/
 
 MAINTAINER=		ports@FreeBSD.org
 
-LIB_DEPENDS=		GL.14:${PORTSDIR}/graphics/Mesa3
-
 USE_X_PREFIX=		yes
+USE_MESA=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV+=		CPPFLAGS=-I${X11BASE}/include
-CONFIGURE_ARGS+=	--includedir=$(PREFIX)/include/plib \
+CONFIGURE_ENV=		CPPFLAGS=-I${X11BASE}/include
+CONFIGURE_ARGS=		--includedir=$(PREFIX)/include/plib \
 			--with-glut=${PREFIX}
 USE_GMAKE=		yes
 USE_NEWGCC=		yes

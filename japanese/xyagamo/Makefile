@@ -2,7 +2,7 @@
 # Date created:		5 Nov 1999
 # Whom:			Morita Shinya <shinmaru@dokidoki.ne.jp>
 #
-# $FreeBSD: ports/japanese/xyagamo/Makefile,v 1.1.1.1 1999/11/14 03:58:12 steve Exp $
+# $FreeBSD: ports/japanese/xyagamo/Makefile,v 1.2 2000/04/13 08:34:10 knu Exp $
 #
 
 PORTNAME=	xyagamo
@@ -12,9 +12,8 @@ MASTER_SITES=	http://www.dokidoki.ne.jp/home2/shinmaru/mahjong/
 
 MAINTAINER=	shinmaru@dokidoki.ne.jp
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	YES
+USE_XPM=	yes
 
 MAN6=		xyagamo.6
 MANLANG=	ja

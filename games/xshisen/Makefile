@@ -2,7 +2,7 @@
 # Date created:               9 Oct 1996
 # Whom:                 Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xshisen/Makefile,v 1.15 2000/03/09 12:46:31 nakai Exp $
+# $FreeBSD: ports/games/xshisen/Makefile,v 1.16 2000/04/14 12:28:18 asami Exp $
 #
 
 PORTNAME=	xshisen
@@ -12,11 +12,10 @@ MASTER_SITES=	http://www.techfirm.co.jp/~masaoki/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 # runs fine on ssh connection
 #IS_INTERACTIVE=	YES	# Has to create an app-defaults file
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-lxpg4"
 CONFIGURE_ARGS=	--datadir="${X11BASE}/lib/X11" \

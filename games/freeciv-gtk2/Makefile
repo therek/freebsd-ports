@@ -2,7 +2,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.33 2000/04/17 00:17:38 reg Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.34 2000/07/24 11:33:52 sheldonh Exp $
 #
 
 PORTNAME=	freeciv
@@ -17,11 +17,11 @@ PKGNAMESUFFIX=	-gtk
 
 MAINTAINER=	sheldonh@freebsd.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 .if defined(WITH_GTK)
-LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 .endif
 
+USE_XPM=	yes
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 .if defined(WITH_GTK)

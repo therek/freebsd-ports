@@ -2,7 +2,7 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.8 2000/05/18 18:26:18 will Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.9 2000/05/29 01:14:50 will Exp $
 #
 
 PORTNAME=	battleball
@@ -14,9 +14,8 @@ DISTNAME=	${PORTNAME}.${PORTVERSION:S/.//}.src
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 WRKSRC=		${WRKDIR}/battleball-2.1-src
 
 do-install:

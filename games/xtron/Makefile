@@ -2,7 +2,7 @@
 # Date created:				29 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xtron/Makefile,v 1.5 2000/04/02 01:00:02 mharo Exp $
+# $FreeBSD: ports/games/xtron/Makefile,v 1.6 2000/04/14 12:28:31 asami Exp $
 #
 
 PORTNAME=	xtron
@@ -14,9 +14,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/xtronrc

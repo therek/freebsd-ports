@@ -2,7 +2,7 @@
 # Date created:		07 May 2000
 # Whom:			Dan Piponi <wmtop@tanelorn.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/wmtop/Makefile,v 1.1 2000/05/07 21:06:08 jedgar Exp $
+# $FreeBSD: ports/sysutils/wmtop/Makefile,v 1.2 2000/06/14 13:21:35 sobomax Exp $
 
 PORTNAME=	wmtop
 PORTVERSION=	0.81
@@ -12,9 +12,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	wmtop@tanelorn.demon.co.uk
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	freebsd
 
 MAN1=		wmtop.1

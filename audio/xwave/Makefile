@@ -2,7 +2,7 @@
 # Date created:				11 June 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/xwave/Makefile,v 1.2 2000/06/30 08:30:11 sobomax Exp $
+# $FreeBSD: ports/audio/xwave/Makefile,v 1.3 2000/07/13 13:32:24 sobomax Exp $
 #
 
 PORTNAME=	xwave
@@ -13,10 +13,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/./v/}
 
 MAINTAINER=	martin.kraft@fal.de
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${PORTNAME}2-981109
 USE_IMAKE=	yes
+USE_XPM=	yes
 
 DOC_FILES=	README README-XWAVE2 README.v06 INSTALL
 

@@ -2,7 +2,7 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.9 2000/06/14 13:21:05 sobomax Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.10 2000/07/04 05:34:51 will Exp $
 #
 
 PORTNAME=	xplanet
@@ -17,10 +17,10 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		GL.14:${PORTSDIR}/graphics/Mesa3 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-map-extension=jpg

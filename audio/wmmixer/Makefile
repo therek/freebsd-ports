@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/audio/wmmixer/Makefile,v 1.9 2000/04/08 21:24:43 mharo Exp $
+# $FreeBSD: ports/audio/wmmixer/Makefile,v 1.10 2000/07/21 23:25:04 jedgar Exp $
 #
 
 PORTNAME=	wmmixer
@@ -14,11 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rneswold@enteract.com
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=			${WRKDIR}/wmmixer
 FETCH_BEFORE_ARGS=	-t
 USE_IMAKE=		yes
+USE_XPM=		yes
 NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>

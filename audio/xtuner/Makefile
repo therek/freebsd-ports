@@ -2,7 +2,7 @@
 # Date created:		19 December 96
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/audio/xtuner/Makefile,v 1.9 1999/08/25 04:36:31 obrien Exp $
+# $FreeBSD: ports/audio/xtuner/Makefile,v 1.10 2000/04/08 21:25:02 mharo Exp $
 #
 
 PORTNAME=	xtuner
@@ -13,10 +13,10 @@ DISTNAME=	Xtuner-${PORTVERSION}
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_IMAKE=	YES
+USE_XPM=	YES
 NO_INSTALL_MANPAGES=	YES
 
 .include <bsd.port.mk>

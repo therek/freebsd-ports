@@ -2,7 +2,7 @@
 # Date created:		5 March 1997
 # Whom:			Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/xpat2/Makefile,v 1.10 1999/08/25 06:05:53 obrien Exp $
+# $FreeBSD: ports/games/xpat2/Makefile,v 1.11 2000/04/14 12:27:59 asami Exp $
 #
 
 PORTNAME=	xpat2
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	games/solitaires
 
 MAINTAINER=	mph@freebsd.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 MAN6=		xpat2.6
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.52 2000/04/10 19:49:42 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.53 2000/05/18 21:23:26 jim Exp $
 #
 
 PORTNAME=	enlightenment
@@ -18,12 +18,12 @@ MAINTAINER=	vanilla@FreeBSD.org
 LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound \
 		Fnlib.0:${PORTSDIR}/graphics/fnlib \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
-		ttf.4:${PORTSDIR}/print/freetype \
 		ghttp.1:${PORTSDIR}/www/libghttp \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_FREETYPE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-fsstd --with-included-gettext
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \

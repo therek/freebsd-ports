@@ -3,7 +3,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.29 2000/04/11 21:27:45 mharo Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.30 2000/06/27 09:38:12 sobomax Exp $
 #
 
 PORTNAME=	ddd
@@ -14,13 +14,12 @@ MASTER_SITE_SUBDIR= ddd
 
 MAINTAINER=	obrien@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 GNU_CONFIGURE=	yes
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 CONFIGURE_ARGS=	--with-motif-libraries="${LIBXMDIR}" \
 		--with-readline-libraries=/usr/lib
 USE_GMAKE=	yes
+USE_XPM=	yes
 REQUIRES_MOTIF=	yes
 
 MAN1=		ddd.1

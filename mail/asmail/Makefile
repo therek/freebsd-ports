@@ -2,7 +2,7 @@
 # Date created:		15 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/mail/asmail/Makefile,v 1.12 2000/05/19 08:11:26 cpiazza Exp $
+# $FreeBSD: ports/mail/asmail/Makefile,v 1.13 2000/06/14 13:21:24 sobomax Exp $
 #
 
 PORTNAME=	asmail
@@ -14,9 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	brett@peloton.runet.edu
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shaping
 

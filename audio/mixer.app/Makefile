@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.9 2000/01/08 04:08:06 cpiazza Exp $
+# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.10 2000/04/08 21:23:58 mharo Exp $
 #
 
 PORTNAME=	mixer.app
@@ -13,9 +13,8 @@ DISTNAME=	Mixer.app-${PORTVERSION}
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/Mixer ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/astro/ssystem/Makefile,v 1.14 2000/03/29 09:01:53 will Exp $
+# $FreeBSD: ports/astro/ssystem/Makefile,v 1.15 2000/04/08 22:01:49 mharo Exp $
 #
 
 PORTNAME=		ssystem
@@ -14,12 +14,12 @@ MASTER_SITES=		http://plasma.gsfc.nasa.gov/Ssystem/ \
 
 MAINTAINER=		will@FreeBSD.org
 
-LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg \
-			GL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 MAKEFILE=		Makefile.FreeBSD
 FETCH_BEFORE_ARGS=	-b
 USE_X_PREFIX=		yes
+USE_MESA=		yes
 USE_BISON=		yes
 
 do-install:

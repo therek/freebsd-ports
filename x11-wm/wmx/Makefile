@@ -2,7 +2,7 @@
 # Date created:		11. Jan 1998
 # Whom:			Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11-wm/wmx/Makefile,v 1.8 1999/08/31 03:00:24 peter Exp $
+# $FreeBSD: ports/x11-wm/wmx/Makefile,v 1.9 2000/04/10 19:50:43 cpiazza Exp $
 #
 
 PORTNAME=	wmx
@@ -14,10 +14,9 @@ DISTNAME=	${PORTNAME}-5sec6
 
 MAINTAINER=	sec@42.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	YES
+USE_XPM=	yes
+GNU_CONFIGURE=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/wmx ${PREFIX}/bin

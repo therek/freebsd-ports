@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/vrweb/Makefile,v 1.16 2000/04/10 00:07:03 cpiazza Exp $
+# $FreeBSD: ports/www/vrweb/Makefile,v 1.17 2000/07/19 13:34:35 alex Exp $
 #
 
 PORTNAME=	vrweb
@@ -15,10 +15,9 @@ DISTFILES=	vrweb-src-1.5.tar.gz help-1.5.tar.gz
 
 MAINTAINER=	saper@system.pl
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 
 do-configure:
 	(cd ${WRKSRC}; \

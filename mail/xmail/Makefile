@@ -2,7 +2,7 @@
 # Date created:		15 July 1997
 # Whom:			Stephen Roznowski <sjr1@flash.net>
 #
-# $FreeBSD: ports/mail/xmail/Makefile,v 1.7 2000/02/20 17:01:22 andreas Exp $
+# $FreeBSD: ports/mail/xmail/Makefile,v 1.8 2000/04/13 20:01:03 cpiazza Exp $
 #
 
 PORTNAME=	xmail
@@ -14,9 +14,8 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		xmail.1
 MANCOMPRESSED=	no
 

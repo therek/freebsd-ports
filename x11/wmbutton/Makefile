@@ -2,7 +2,7 @@
 # Date created:			10 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wmbutton/Makefile,v 1.7 2000/04/13 19:10:07 cpiazza Exp $
+# $FreeBSD: ports/x11/wmbutton/Makefile,v 1.8 2000/06/29 07:02:57 obrien Exp $
 #
 
 PORTNAME=	wmbutton
@@ -14,9 +14,8 @@ MASTER_SITE_SUBDIR=	jim
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 do-build:
 	@(cd ${WRKSRC} && make)

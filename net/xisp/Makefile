@@ -2,7 +2,7 @@
 # Date created:		June 24, 1999
 # Whom:			morishim@cig.mot.com
 #
-# $FreeBSD: ports/net/xisp/Makefile,v 1.3 2000/04/09 18:14:02 cpiazza Exp $
+# $FreeBSD: ports/net/xisp/Makefile,v 1.4 2000/04/17 00:18:35 reg Exp $
 #
 
 PORTNAME=	xisp
@@ -14,9 +14,9 @@ DISTFILES=	xisp-2.6-noufc.tar.gz \
 
 MAINTAINER=	morishim@cig.mot.com
 
-LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms
 
+USE_XPM=	yes
 WRKSRC=         ${WRKDIR}/xisp-2.6
 MAN1=		xisp.1
 HAS_CONFIGURE=	yes

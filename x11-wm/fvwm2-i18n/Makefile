@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.20 2000/04/17 00:18:59 reg Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.21 2000/04/17 23:17:55 mharo Exp $
 #
 
 PORTNAME=	fvwm2-i18n
@@ -17,7 +17,7 @@ PATCHFILES=	fvwm-${PORTVERSION}-I18N_MB-${FVWM_PATCHVER}.patch
 MAINTAINER=	matusita@jp.freebsd.org
 
 .if !defined(WITHOUT_XPM)
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+USE_XPM=	yes
 .endif
 
 GNU_CONFIGURE=	yes

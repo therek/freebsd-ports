@@ -2,7 +2,7 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xeyesplus/Makefile,v 1.12 2000/01/22 11:46:04 nakai Exp $
+# $FreeBSD: ports/games/xeyesplus/Makefile,v 1.13 2000/04/14 12:27:20 asami Exp $
 #
 
 PORTNAME=	xeyes+
@@ -14,9 +14,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 post-install:

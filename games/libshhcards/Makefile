@@ -2,7 +2,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/libshhcards/Makefile,v 1.14 2000/06/29 07:02:13 obrien Exp $
+# $FreeBSD: ports/games/libshhcards/Makefile,v 1.15 2000/07/16 14:31:51 alex Exp $
 #
 
 PORTNAME=	libshhcards
@@ -13,10 +13,9 @@ DISTNAME=	shhcards-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 INSTALLS_SHLIB=	yes
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/math/abs/Makefile,v 1.5 1999/11/12 21:04:43 jim Exp $
+# $FreeBSD: ports/math/abs/Makefile,v 1.6 2000/04/14 07:19:46 asami Exp $
 #
 
 PORTNAME=	abs
@@ -14,9 +14,8 @@ DISTNAME=	abs-src-0.6a
 
 MAINTAINER=	gmarco@giovannelli.it
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_XLIB=	yes
+USE_XPM=	yes
 WRKSRC=         ${WRKDIR}/abs-src-0.6a/src
 
 do-install:

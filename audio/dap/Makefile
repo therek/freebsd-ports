@@ -2,7 +2,7 @@
 # Date created:				23 August 1998
 # Whom:					yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/dap/Makefile,v 1.9 2000/04/08 21:23:26 mharo Exp $
+# $FreeBSD: ports/audio/dap/Makefile,v 1.10 2000/06/28 13:43:00 alex Exp $
 #
 
 PORTNAME=	dap
@@ -13,10 +13,10 @@ EXTRACT_SUFX=.tgz
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/main/DAP ${PREFIX}/bin/

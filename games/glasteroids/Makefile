@@ -2,7 +2,7 @@
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/glasteroids/Makefile,v 1.6 2000/04/14 06:42:59 mharo Exp $
+# $FreeBSD: ports/games/glasteroids/Makefile,v 1.7 2000/06/22 05:51:57 will Exp $
 #
 
 PORTNAME=	glasteroids
@@ -13,13 +13,12 @@ DISTNAME=	Glasteriods
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 MAKEFILE=	Makefile.FreeBSD
 
 WRKSRC=		${WRKDIR}/Glasteroids
 
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 
 pre-build:
 	@ ${CP} ${FILESDIR}/Makefile.FreeBSD ${WRKSRC}

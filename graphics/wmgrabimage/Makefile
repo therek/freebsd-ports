@@ -2,7 +2,7 @@
 # Date created:		4th November 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/graphics/wmgrabimage/Makefile,v 1.1 2000/01/05 19:57:00 ade Exp $
+# $FreeBSD: ports/graphics/wmgrabimage/Makefile,v 1.2 2000/04/14 10:47:39 asami Exp $
 #
 
 PORTNAME=	wmGrabImage
@@ -12,13 +12,13 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	ozz@FreeBSD.org.ru
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmGrabImage
 
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
+USE_XPM=	YES
 
 MAN1=		wmGrabImage.1
 

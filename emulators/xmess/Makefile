@@ -2,7 +2,7 @@
 # Date created:				Tue Aug 17 00:21:10 MET DST 1999
 # Whom:					nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/emulators/xmess/Makefile,v 1.1.1.1 1999/12/24 14:01:14 jedgar Exp $
+# $FreeBSD: ports/emulators/xmess/Makefile,v 1.2 2000/04/12 04:56:15 mharo Exp $
 #
 
 PORTNAME=	xmess
@@ -16,11 +16,10 @@ DISTFILES=	${DISTNAME}.tgz pdp1.zip
 #MAINTAINER=	mycroft@NetBSD.ORG	# NetBSD
 MAINTAINER=	nox@jelal.kn-bremen.de
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 EXTRACT_ONLY=	${DISTNAME}.tgz
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 MAKE_ENV+=	OPSYS=${OPSYS} ARCH=${ARCH} MACHINE_ARCH=${ARCH} \
 		DESTDIR=${DESTDIR} \

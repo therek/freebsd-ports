@@ -2,7 +2,7 @@
 # Date created:				2 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/3dc/Makefile,v 1.10 2000/03/29 07:17:33 kris Exp $
+# $FreeBSD: ports/games/3dc/Makefile,v 1.11 2000/04/14 12:25:45 asami Exp $
 #
 
 PORTNAME=		3dc
@@ -14,10 +14,10 @@ DISTNAME=		3Dc-${PORTVERSION}
 
 MAINTAINER=		ports@FreeBSD.org
 
-LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm \
-			Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=		Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
 
 USE_X_PREFIX=		yes
+USE_XPM=		yes
 WRKSRC=			${WRKDIR}/3Dc/src
 
 do-install:

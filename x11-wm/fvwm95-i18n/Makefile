@@ -2,7 +2,7 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.32 2000/04/17 00:19:00 reg Exp $
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.33 2000/06/29 07:02:58 obrien Exp $
 #
 
 PORTNAME=	fvwm95-i18n
@@ -25,12 +25,12 @@ PATCHFILES=	fvwm95-2.0.43a-Autoconf.I18N.diff.gz
 
 MAINTAINER=	ryo2@on.rim.or.jp
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=	${LOCALBASE}/lib/librplay.a:${PORTSDIR}/audio/rplay
 RUN_DEPENDS=	${X11BASE}/icons/chuck.xpm:${PORTSDIR}/x11/fbsd-icons
 
 EXTRACT_ONLY=	${DISTNAME}.tgz ${PKGNAME}-portKit-19981123.tgz
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--x-includes=${X11BASE}/include \
 		--mandir=${MANPREFIX}/man \

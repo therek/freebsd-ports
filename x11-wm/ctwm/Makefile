@@ -2,7 +2,7 @@
 # Date created:		13 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.24 2000/02/13 19:29:13 torstenb Exp $
+# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.25 2000/04/10 19:49:39 cpiazza Exp $
 #
 
 PORTNAME=	ctwm
@@ -13,13 +13,13 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ctwm-images${EXTRACT_SUFX}
 
 MAINTAINER=	torstenb@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=  gm4:${PORTSDIR}/devel/m4
 RUN_DEPENDS=    gm4:${PORTSDIR}/devel/m4
 
 MAKE_ENV=	LOCALBASE=${LOCALBASE}
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		ctwm.1
 
 post-extract:

@@ -2,7 +2,7 @@
 # Date created:		4 January 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/graphics/xfig/Makefile,v 1.34 2000/04/14 10:47:45 asami Exp $
+# $FreeBSD: ports/graphics/xfig/Makefile,v 1.35 2000/08/02 00:09:02 jedgar Exp $
 #
 
 PORTNAME=	xfig
@@ -15,14 +15,14 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}.full
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
 RUN_DEPENDS=	fig2dev:${PORTSDIR}/print/transfig
 
 WRKSRC=		${WRKDIR}/${PORTNAME}.${PORTVERSION}
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		xfig.1
 
 pre-fetch:

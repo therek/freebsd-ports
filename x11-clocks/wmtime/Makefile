@@ -2,7 +2,7 @@
 # Date created:        1 July 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/x11-clocks/wmtime/Makefile,v 1.10 2000/04/10 00:32:59 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/wmtime/Makefile,v 1.11 2000/04/22 19:59:38 will Exp $
 #
 
 PORTNAME=	wmtime
@@ -12,10 +12,9 @@ MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 
 MAINTAINER=	rneswold@enteract.com
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/wmtime.app/wmtime
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES= 1
 
 post-extract:

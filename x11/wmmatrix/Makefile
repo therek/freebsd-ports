@@ -2,7 +2,7 @@
 # Date created:		13 October 1999
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.2 1999/12/22 23:00:16 jedgar Exp $
+# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.3 2000/04/13 19:10:09 cpiazza Exp $
 #
 
 PORTNAME=	wmmatrix
@@ -13,10 +13,9 @@ DISTNAME=	wmMatrix-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	clean all
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:		09 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xminehunter/Makefile,v 1.11 1999/08/31 06:44:45 mharo Exp $
+# $FreeBSD: ports/games/xminehunter/Makefile,v 1.12 2000/04/14 12:27:44 asami Exp $
 #
 
 PORTNAME=	xminehunter
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	tg@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/xminehunter
 REQUIRES_MOTIF=	yes
 ALL_TARGET=	xminehunter

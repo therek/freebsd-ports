@@ -2,7 +2,7 @@
 # Date created:		14 March 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmitime/Makefile,v 1.5 2000/03/21 20:30:15 jim Exp $
+# $FreeBSD: ports/x11-clocks/wmitime/Makefile,v 1.6 2000/04/10 00:32:57 cpiazza Exp $
 #
 
 PORTNAME=	wmitime
@@ -12,10 +12,9 @@ MASTER_SITES=	http://www.neotokyo.org/illusion/downloads/
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 WRKSRC=		${WRKDIR}/wmitime/wmitime
 

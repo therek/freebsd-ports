@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-wm/piewm/Makefile,v 1.20 2000/01/22 13:55:12 mharo Exp $
+# $FreeBSD: ports/x11-wm/piewm/Makefile,v 1.21 2000/04/10 19:50:08 cpiazza Exp $
 #
 
 PORTNAME=	piewm
@@ -12,9 +12,8 @@ MASTER_SITES=	ftp://ftp.crynwr.com/piewm/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		piewm.1
 
 .include <bsd.port.mk>

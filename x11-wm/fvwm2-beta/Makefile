@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.25 2000/07/06 15:40:50 sada Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.26 2000/07/06 16:24:30 sada Exp $
 #
 
 PORTNAME=	fvwm
@@ -15,9 +15,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 PLIST_SUB=	VER=${PORTVERSION}

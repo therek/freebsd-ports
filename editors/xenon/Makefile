@@ -2,7 +2,7 @@
 # Date created:				22 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/editors/xenon/Makefile,v 1.5 2000/02/18 03:24:16 jedgar Exp $
+# $FreeBSD: ports/editors/xenon/Makefile,v 1.6 2000/04/14 06:21:00 asami Exp $
 #
 
 PORTNAME=	xenon
@@ -12,9 +12,8 @@ MASTER_SITES=	ftp://ftp.proximity.com.au/pub/xenon/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 MAN1=		xe.1
 

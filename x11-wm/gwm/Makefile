@@ -2,7 +2,7 @@
 # Date created:		14 November 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/x11-wm/gwm/Makefile,v 1.10 1999/08/31 06:53:11 mharo Exp $
+# $FreeBSD: ports/x11-wm/gwm/Makefile,v 1.11 2000/04/10 19:49:57 cpiazza Exp $
 #
 
 PORTNAME=	gwm
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	window_managers/gwm
 
 MAINTAINER=	markm@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		gwm.1
 
 .include <bsd.port.mk>

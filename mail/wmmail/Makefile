@@ -2,7 +2,7 @@
 # Date created:        7 Jun 1998
 # Whom:                rom
 #
-# $FreeBSD: ports/mail/wmmail/Makefile,v 1.12 1999/10/07 03:58:30 cpiazza Exp $
+# $FreeBSD: ports/mail/wmmail/Makefile,v 1.13 2000/04/13 20:00:57 cpiazza Exp $
 #
 
 PORTNAME=	wmmail
@@ -13,14 +13,14 @@ DISTNAME=	WMMail.app-${PORTVERSION}
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		PropList.2:${PORTSDIR}/devel/libPropList
+LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-PL-libs="-L${LOCALBASE}/lib" \
+CONFIGURE_ARGS=	--with-PL-libs="-L${LOCALBASE}/lib" \
 		--with-PL-incs="-I${LOCALBASE}/include"
 WRKSRC=	${WRKDIR}/WMMail.app-0.63a
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-install:
 	@${ECHO} "		"

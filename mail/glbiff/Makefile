@@ -2,7 +2,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/glbiff/Makefile,v 1.13 2000/04/13 19:59:43 cpiazza Exp $
+# $FreeBSD: ports/mail/glbiff/Makefile,v 1.14 2000/04/30 00:28:02 steve Exp $
 #
 
 PORTNAME=	glbiff
@@ -13,9 +13,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL:${PORTSDIR}/graphics/Mesa3
-
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		glbiff.1

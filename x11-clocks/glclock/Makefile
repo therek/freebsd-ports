@@ -2,7 +2,7 @@
 # Date created:		20 September 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/x11-clocks/glclock/Makefile,v 1.1.1.1 1999/09/25 22:29:13 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/glclock/Makefile,v 1.2 2000/04/10 00:32:38 cpiazza Exp $
 #
 
 PORTNAME=	glclock
@@ -14,9 +14,8 @@ MASTER_SITES=	http://www.daionet.gr.jp/~masa/archives/ \
 
 MAINTAINER=	aa8vb@ipass.net
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	glclock
 

@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.10 2000/06/16 08:19:41 sobomax Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.11 2000/06/16 21:51:38 asami Exp $
 #
 
 PORTNAME=	vtk
@@ -13,9 +13,9 @@ DISTNAME=	vtk312Unix
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3	\
-		tk82.1:${PORTSDIR}/x11-toolkits/tk82
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
+USE_MESA=	yes
 WRKSRC=		${WRKDIR}/vtk31
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes

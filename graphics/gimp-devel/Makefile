@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.76 2000/06/26 16:06:14 sobomax Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.77 2000/07/04 07:12:52 sobomax Exp $
 #
 
 PORTNAME=	gimp
@@ -15,8 +15,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		aa.1:${PORTSDIR}/graphics/aalib \
+LIB_DEPENDS=	aa.1:${PORTSDIR}/graphics/aalib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		mpeg.1:${PORTSDIR}/graphics/mpeg-lib \
@@ -29,6 +28,7 @@ SHLIBVER?=	${PORTVERSION:S/1.//g}
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

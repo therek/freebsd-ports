@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.23 2000/07/19 15:34:21 shige Exp $
+# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.24 2000/07/25 08:56:25 shige Exp $
 #
 
 PORTNAME=	kterm16c
@@ -20,7 +20,6 @@ MASTER_SITE_SUBDIR=	applications
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	kterm
@@ -31,6 +30,7 @@ PATCHFILES=	${DISTNAME}.NFS-xauth.patch \
 PATCH_DIST_STRIP= -p1
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 
 DOCDIR=		${PREFIX}/share/doc/kterm16c
 

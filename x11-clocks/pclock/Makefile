@@ -2,7 +2,7 @@
 # Date created:			15 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.6 1999/12/22 21:27:34 steve Exp $
+# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.7 2000/04/10 00:32:47 cpiazza Exp $
 #
 
 PORTNAME=	pclock
@@ -13,10 +13,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/src/pclock ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		19 September 1997
 # Whom:			steve@farrell.org
 #
-# $FreeBSD: ports/x11/tycoon/Makefile,v 1.8 1999/08/31 02:50:40 peter Exp $
+# $FreeBSD: ports/x11/tycoon/Makefile,v 1.9 2000/04/13 19:10:04 cpiazza Exp $
 #
 
 PORTNAME=	tycoon
@@ -13,10 +13,10 @@ MASTER_SITE_SUBDIR=	X11/desktop
 
 MAINTAINER=	steve@farrell.org
 
-LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 pre-install:

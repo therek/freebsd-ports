@@ -2,7 +2,7 @@
 # Date created:		27 Sep 1999
 # Whom:			jack
 #
-# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.7 2000/07/18 16:14:56 alex Exp $
+# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.8 2000/08/03 07:59:31 asami Exp $
 #
 
 PORTNAME=	asmon
@@ -13,12 +13,11 @@ MASTER_SITE_SUBDIR=	apps/asmon
 
 MAINTAINER=	jack@germanium.xtalwind.net
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
 
 .include <bsd.port.pre.mk>
 
+USE_XPM=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	clean all
 

@@ -3,7 +3,7 @@
 # Date created:			  12 September 1995
 # Whom:				  asami
 #
-# $FreeBSD: ports/games/xbill/Makefile,v 1.14 2000/03/22 00:28:13 obrien Exp $
+# $FreeBSD: ports/games/xbill/Makefile,v 1.15 2000/04/14 12:27:00 asami Exp $
 #
 
 PORTNAME=	xbill
@@ -15,9 +15,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		xbill.1
 
 post-install:

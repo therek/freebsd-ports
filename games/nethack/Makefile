@@ -2,7 +2,7 @@
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack/Makefile,v 1.23 2000/01/05 03:06:10 cpiazza Exp $
+# $FreeBSD: ports/games/nethack/Makefile,v 1.24 2000/04/14 12:26:09 asami Exp $
 #
 
 PORTNAME=	nethack
@@ -19,8 +19,7 @@ PATCHFILES=	nh-3.2.2-3.2.3.diff
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
+USE_XPM=	yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
 

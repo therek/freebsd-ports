@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.25 2000/04/17 00:17:55 reg Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.26 2000/06/29 07:02:22 obrien Exp $
 #
 
 PORTNAME=	kterm
@@ -18,7 +18,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	shige@FreeBSD.org
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	kterm
@@ -29,6 +28,7 @@ PATCHFILES=	${DISTNAME}.NFS-xauth.patch \
 PATCH_DIST_STRIP= -p1
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		kterm.1
 MANCOMPRESSED=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.15 2000/04/10 00:39:16 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.16 2000/07/08 00:46:51 steve Exp $
 #
 
 PORTNAME=	dfm
@@ -12,13 +12,13 @@ MASTER_SITES=	http://linux.tucows.com/files/x11/file/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		gdk_imlib.5:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \

@@ -2,7 +2,7 @@
 # Date created:		28 Jun 1997
 # Whom:			Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/x11/offix-execute/Makefile,v 1.6 1999/08/31 02:50:36 peter Exp $
+# $FreeBSD: ports/x11/offix-execute/Makefile,v 1.7 2000/04/13 19:09:57 cpiazza Exp $
 #
 
 PORTNAME=	offix-execute
@@ -14,11 +14,11 @@ DISTNAME=	Execute-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 
-LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
+USE_XPM=	YES
 
 .include <bsd.port.mk>

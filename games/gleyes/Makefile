@@ -2,7 +2,7 @@
 # Date created:		2 December 1998
 # Whom:			Malte Lance <malte.lance@gmx.net>
 #
-# $FreeBSD: ports/games/gleyes/Makefile,v 1.3 1999/08/25 06:03:30 obrien Exp $
+# $FreeBSD: ports/games/gleyes/Makefile,v 1.4 2000/04/14 06:43:00 mharo Exp $
 #
 
 PORTNAME=	gleyes
@@ -16,10 +16,9 @@ MASTER_SITES=	ftp://ftp.kddlabs.co.jp/.1/X11/acontrib/gleyes/ \
 
 MAINTAINER=	malte.lance@gmx.net
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 MAN1=		gleyes.1
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/gleyes ${PREFIX}/bin

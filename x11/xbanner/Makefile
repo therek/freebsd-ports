@@ -2,7 +2,7 @@
 # Date created:		13 Jan 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/x11/xbanner/Makefile,v 1.6 1999/12/25 01:43:10 steve Exp $
+# $FreeBSD: ports/x11/xbanner/Makefile,v 1.7 2000/04/13 19:10:20 cpiazza Exp $
 #
 
 PORTNAME=	xbanner
@@ -16,9 +16,8 @@ DISTNAME=	XBanner${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 #USE_IMAKE=	yes
 
 post-patch:

@@ -2,7 +2,7 @@
 # Date created:				June 15, 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.1 2000/07/10 03:31:34 steve Exp $
 #
 
 PORTNAME=	nethack
@@ -21,9 +21,9 @@ PATCHFILES=	nh-3.2.2-3.2.3.diff \
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
+USE_XPM=	yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
 

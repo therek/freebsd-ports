@@ -2,7 +2,7 @@
 # Date created:				28 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/audio/wmtune/Makefile,v 1.7 2000/04/08 21:24:46 mharo Exp $
+# $FreeBSD: ports/audio/wmtune/Makefile,v 1.8 2000/04/17 00:17:09 reg Exp $
 #
 
 PORTNAME=	wmtune
@@ -16,11 +16,10 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 PATCH_ARGS	=-p0 -d ${WRKDIR}
 

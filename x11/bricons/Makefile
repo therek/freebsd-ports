@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/x11/bricons/Makefile,v 1.8 2000/04/01 01:45:49 mharo Exp $
+# $FreeBSD: ports/x11/bricons/Makefile,v 1.9 2000/04/13 19:09:13 cpiazza Exp $
 #
 
 PORTNAME=	bricons
@@ -15,9 +15,8 @@ EXTRACT_SUFX=	-athena-3.0.tar.gz
 
 MAINTAINER=     shanee@augusta.de
 
-LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		bricons.1
 
 post-patch:

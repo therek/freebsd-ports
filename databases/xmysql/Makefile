@@ -2,7 +2,7 @@
 # Date created:			Tue Sep  2 15:46:09 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmysql/Makefile,v 1.25 2000/03/11 21:06:37 dirk Exp $
+# $FreeBSD: ports/databases/xmysql/Makefile,v 1.26 2000/04/08 22:49:05 mharo Exp $
 #
 
 PORTNAME=	xmysql
@@ -13,10 +13,10 @@ MASTER_SITES=	http://web.wt.net/~dblhack/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		xforms.0:${PORTSDIR}/x11-toolkits/xforms \
+LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 		mysqlclient.6:${PORTSDIR}/databases/mysql322-client
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.17 2000/06/16 08:18:52 sobomax Exp $
+# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.18 2000/06/16 21:52:37 asami Exp $
 #
 
 PORTNAME=	scwm
@@ -14,8 +14,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	guile.6:${PORTSDIR}/lang/guile \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
-		esd.2:${PORTSDIR}/audio/esound \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+		esd.2:${PORTSDIR}/audio/esound
 RUN_DEPENDS=	${X11BASE}/share/scwm/pixmaps/Animator.xpm:${PORTSDIR}/graphics/scwm-icons
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -35,6 +34,7 @@ CONFIGURE_ENV+=	LIBS="-L${X11BASE}/lib -lxpg4"
 .endif
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 MAN1=		scwm.1 scwmexec.1 scwmrepl.1
 

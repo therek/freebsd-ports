@@ -2,7 +2,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/print/offix-printer/Makefile,v 1.8 2000/04/09 17:40:53 cpiazza Exp $
+# $FreeBSD: ports/print/offix-printer/Makefile,v 1.9 2000/04/09 17:50:20 cpiazza Exp $
 #
 
 PORTNAME=	offix-printer
@@ -14,12 +14,12 @@ DISTNAME=	Printer-2.4
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 
-LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
+USE_XPM=	YES
 MAN1=		printer.1
 
 .include <bsd.port.mk>

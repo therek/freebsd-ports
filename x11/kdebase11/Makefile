@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.46 2000/05/17 11:37:43 will Exp $
+# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.47 2000/05/30 03:59:31 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -14,10 +14,10 @@ MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_XLIB=	yes
+USE_XPM=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes

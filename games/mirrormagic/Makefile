@@ -2,7 +2,7 @@
 # Date created:				1 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/mirrormagic/Makefile,v 1.5 2000/04/02 00:58:45 mharo Exp $
+# $FreeBSD: ports/games/mirrormagic/Makefile,v 1.6 2000/04/14 12:26:06 asami Exp $
 #
 
 PORTNAME=	mirrormagic
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 post-extract:
 .for file in DoubleRayDoor DoubleRayFont DoubleRayFont2 DoubleRayScreen

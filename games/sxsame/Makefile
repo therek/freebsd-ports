@@ -2,7 +2,7 @@
 # Date created:         11 December 1999
 # Whom:                 Yuichi Narahara
 #
-# $FreeBSD: ports/games/sxsame/Makefile,v 1.3 2000/05/01 04:50:40 kris Exp $
+# $FreeBSD: ports/games/sxsame/Makefile,v 1.4 2000/07/15 16:36:51 will Exp $
 #
 
 PORTNAME=	sxsame
@@ -15,9 +15,8 @@ MASTER_SITES=	ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/\
 
 MAINTAINER=	aconitum@po.teleway.ne.jp
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 INSTALL_TARGET=	install install.dir
 BINOWN=		root

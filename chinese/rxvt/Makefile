@@ -2,7 +2,7 @@
 # Date created:         Nov 16 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.16 2000/04/01 00:05:43 mharo Exp $
+# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.17 2000/04/13 08:28:15 asami Exp $
 #
 
 PORTNAME=	rxvt
@@ -15,9 +15,8 @@ MASTER_SITE_SUBDIR= X11/terms
 
 MAINTAINER=	frankch@waru.life.nthu.edu.tw
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 USE_BZIP2=	yes
 MAN1=		crxvt.1

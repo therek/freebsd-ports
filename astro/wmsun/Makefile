@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmsun/Makefile,v 1.4 2000/04/08 22:02:02 mharo Exp $
+# $FreeBSD: ports/astro/wmsun/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
 
 PORTNAME=	wmsun
 PORTVERSION=	1.03
@@ -12,12 +12,11 @@ DISTNAME=	wmSun-1.03
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSun
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=	wmSun.1

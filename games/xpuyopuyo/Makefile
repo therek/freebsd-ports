@@ -2,7 +2,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.13 2000/06/30 20:36:07 green Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.14 2000/07/18 14:50:21 green Exp $
 #
 
 PORTNAME=	xpuyopuyo
@@ -13,8 +13,7 @@ MASTER_SITES=	http://chaos2.org/xpuyopuyo/ \
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 .if defined(WITH_GNOME)
 LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
@@ -27,6 +26,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"

@@ -2,7 +2,7 @@
 # Date created:		17 January 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/aterm/Makefile,v 1.10 2000/07/03 03:14:45 jim Exp $
+# $FreeBSD: ports/x11/aterm/Makefile,v 1.11 2000/07/04 07:12:43 sobomax Exp $
 #
 
 PORTNAME=	aterm
@@ -12,11 +12,11 @@ MASTER_SITES=	http://download.sourceforge.net/aterm/
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-transparency --enable-background-image \
 		--disable-delete-key --disable-backspace-key \

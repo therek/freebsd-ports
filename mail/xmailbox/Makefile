@@ -2,7 +2,7 @@
 # Date created:				23 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.8 2000/04/13 20:01:04 cpiazza Exp $
+# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.9 2000/04/30 19:35:52 steve Exp $
 #
 
 PORTNAME=		xmailbox
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=		ports@FreeBSD.org
 
-LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=		yes
+USE_XPM=		yes
 MAN1=			xmailbox.1
 
 post-patch:

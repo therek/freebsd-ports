@@ -2,7 +2,7 @@
 # Date created:		19 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/wmstock/Makefile,v 1.5 2000/04/14 08:47:02 asami Exp $
+# $FreeBSD: ports/misc/wmstock/Makefile,v 1.6 2000/05/20 05:42:15 will Exp $
 #
 
 PORTNAME=	wmstock
@@ -12,9 +12,8 @@ MASTER_SITES=	http://mattfischer.com/wmstock/src/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 WRKSRC=		${WRKDIR}/wmstock/src
 USE_GMAKE=	yes

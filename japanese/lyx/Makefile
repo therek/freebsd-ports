@@ -2,7 +2,7 @@
 # Date created:		27 April 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lyx/Makefile,v 1.7 2000/04/11 14:14:56 knu Exp $
+# $FreeBSD: ports/japanese/lyx/Makefile,v 1.8 2000/05/02 22:49:53 flathill Exp $
 #
 
 PORTNAME=	lyx
@@ -22,9 +22,9 @@ MAINTAINER=	flathill@FreeBSD.ORG
 #.if defined(WITH_ISPELL)
 #RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 #.endif
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
+USE_XPM=	yes
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LYX_LIBS="-lxpg4"

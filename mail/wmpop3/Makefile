@@ -2,7 +2,7 @@
 # Date created:			28 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.7 2000/01/07 16:40:07 asami Exp $
+# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.8 2000/04/13 20:00:58 cpiazza Exp $
 #
 
 PORTNAME=	wmpop3
@@ -13,11 +13,10 @@ DISTNAME=	WMPop3-${PORTVERSION}
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}/wmpop3
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 .include <bsd.port.pre.mk>
 

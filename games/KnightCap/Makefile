@@ -2,7 +2,7 @@
 # Date created:				10 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/KnightCap/Makefile,v 1.10 2000/04/14 12:25:49 asami Exp $
+# $FreeBSD: ports/games/KnightCap/Makefile,v 1.11 2000/07/07 18:48:28 steve Exp $
 #
 
 PORTNAME=	knightcap
@@ -15,10 +15,7 @@ DISTNAME=	KnightCap-${PORTVERSION}
 
 MAINTAINER=	bugg@bugg.strangled.net
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3\
-		GLU.14:${PORTSDIR}/graphics/Mesa3 \
-		glut.3:${PORTSDIR}/graphics/Mesa3
-
+USE_MESA=	yes
 ALL_TARGET=	KnightCap
 WRKSRC=		${WRKDIR}/Export
 

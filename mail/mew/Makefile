@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.22 2000/05/08 13:13:15 shige Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.23 2000/06/09 21:21:52 asami Exp $
 #
 
 PORTNAME=	mew-${EMACS_PORT_NAME}
@@ -15,7 +15,8 @@ DISTNAME=	mew-${PORTVERSION}
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
 
-RESTRICTED=	"USA ITAR export restrictions (has PGP hooks)"
+### crypto
+#RESTRICTED=	"USA ITAR export restrictions (has PGP hooks)"
 
 RUN_DEPENDS=	imali:${PORTSDIR}/mail/im
 

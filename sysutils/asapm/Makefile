@@ -2,7 +2,7 @@
 # Date created:		6 Aug 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.14 2000/06/23 13:14:35 sobomax Exp $
+# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.15 2000/07/10 15:32:59 sobomax Exp $
 #
 
 PORTNAME=	asapm
@@ -13,11 +13,10 @@ MASTER_SITE_SUBDIR=	apps/asapm
 
 MAINTAINER=	handy@physics.montana.edu
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 ONLY_FOR_ARCHS=	i386
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install install.man
 

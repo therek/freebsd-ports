@@ -2,7 +2,7 @@
 # Date created:		18 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.7 2000/05/19 11:53:13 sobomax Exp $
+# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.8 2000/06/22 05:52:07 will Exp $
 #
 
 PORTNAME=	wmbattery
@@ -13,12 +13,10 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
-
+USE_XPM=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	PREFIX="${PREFIX}" INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_DATA="${INSTALL_DATA}" INSTALL_MAN="${INSTALL_MAN}"

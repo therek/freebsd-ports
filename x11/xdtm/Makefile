@@ -2,7 +2,7 @@
 # Date created:         		26th April 1995
 # Whom:                 		gpalmer
 #
-# $FreeBSD: ports/x11/xdtm/Makefile,v 1.9 1999/08/31 06:53:24 mharo Exp $
+# $FreeBSD: ports/x11/xdtm/Makefile,v 1.10 2000/04/13 19:10:30 cpiazza Exp $
 #
 
 PORTNAME=		xdtm
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=		gpalmer@FreeBSD.org
 
-LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=		yes
+USE_XPM=		yes
 WRKSRC=			${WRKDIR}/xdtm
 MAN1=			xdtm.1
 

@@ -2,7 +2,7 @@
 # Date created:			29 November 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/ascd/Makefile,v 1.13 1999/09/25 13:34:01 jim Exp $
+# $FreeBSD: ports/audio/ascd/Makefile,v 1.14 2000/04/08 21:23:17 mharo Exp $
 #
 
 PORTNAME=	ascd
@@ -13,11 +13,11 @@ DISTFILES=	${DISTNAME}-src.tgz ${DATAFILES}
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		workman.1:${PORTSDIR}/audio/libworkman
+LIB_DEPENDS=	workman.1:${PORTSDIR}/audio/libworkman
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_IMAKE=	yes
+USE_XPM=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	default
 DATAFILES=	ascd-0.13pr6-themes.tgz

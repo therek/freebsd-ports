@@ -2,7 +2,7 @@
 # Date created:         4 Mar 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tank/Makefile,v 1.12 2000/03/20 23:25:10 jseger Exp $
+# $FreeBSD: ports/games/tank/Makefile,v 1.13 2000/04/14 12:26:40 asami Exp $
 #
 
 PORTNAME=	tank
@@ -13,12 +13,11 @@ DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	dburr@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 BROKEN=	can\'t find glaux.h
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
+USE_MESA=	YES
 USE_GMAKE=	YES
 ALL_TARGET=	linux-mesa-elf
 

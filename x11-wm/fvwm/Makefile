@@ -2,7 +2,7 @@
 # Date created:		12 May 1995
 # Whom:			me
 #
-# $FreeBSD: ports/x11-wm/fvwm/Makefile,v 1.29 1999/08/31 03:00:01 peter Exp $
+# $FreeBSD: ports/x11-wm/fvwm/Makefile,v 1.30 2000/04/10 19:49:46 cpiazza Exp $
 #
 
 PORTNAME=	fvwm
@@ -13,10 +13,9 @@ MASTER_SITES=	ftp://ftp.hpc.uh.edu/pub/fvwm/version-1/ \
 
 MAINTAINER=	me@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 NO_LATEST_LINK=	yes
 USE_IMAKE=	yes
+USE_XPM=	yes
 XMKMF=		xmkmf
 ALL_TARGET=	Makefiles all
 MAN1=		FvwmAudio.1 FvwmAuto.1 FvwmBacker.1 FvwmBanner.1 FvwmClean.1 \

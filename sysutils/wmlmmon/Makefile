@@ -2,7 +2,7 @@
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.9 2000/04/22 10:13:44 mharo Exp $
+# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.10 2000/07/08 03:25:23 jedgar Exp $
 #
 
 PORTNAME=	wmlmmon
@@ -12,9 +12,8 @@ MASTER_SITES=	http://www.fxp.org/~jedgar/wmlmmon/
 
 MAINTAINER=	jedgar@fxp.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 GNU_CONFIGURE=	yes
 MAN8=		wmlmmon.8

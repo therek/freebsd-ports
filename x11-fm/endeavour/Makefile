@@ -2,7 +2,7 @@
 # Date created:		7 Oct 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.5 2000/06/20 21:45:52 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.6 2000/06/30 11:52:11 nbm Exp $
 #
 
 PORTNAME=	endeavour
@@ -14,12 +14,12 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/endeavour
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/endeavour ${PREFIX}/bin

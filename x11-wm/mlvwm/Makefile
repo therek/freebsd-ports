@@ -2,7 +2,7 @@
 # Date created:        19 Januruary 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.18 2000/04/10 19:50:04 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.19 2000/07/16 12:39:38 nakai Exp $
 #
 
 PORTNAME=	mlvwm
@@ -15,9 +15,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		mlvwm.1
 
 MLVWMLIBDIR=	${PREFIX}/lib/X11/mlvwm

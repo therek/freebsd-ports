@@ -2,7 +2,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD: ports/math/siag/Makefile,v 1.26 2000/04/30 19:16:44 steve Exp $
+# $FreeBSD: ports/math/siag/Makefile,v 1.27 2000/05/29 02:41:54 steve Exp $
 #
 
 PORTNAME=	siag
@@ -15,8 +15,7 @@ MASTER_SITES=	ftp://ftp.siag.nu/pub/siag/ \
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d \
-		Magick:${PORTSDIR}/graphics/ImageMagick \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+		Magick:${PORTSDIR}/graphics/ImageMagick
 RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot \
 		mswordview:${PORTSDIR}/textproc/mswordview \
 		catdoc:${PORTSDIR}/textproc/catdoc
@@ -51,6 +50,7 @@ CONFIGURE_ENV+= LOCALBASE=${LOCALBASE} \
 			CPPFLAGS="${CPPFLAGS}"
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 MAN1=	xedplus.1 xfiler.1 gvu.1 siod.1 siag.1 pw.1 egon.1 \
 	dummy_plugin.1 runcmd.1

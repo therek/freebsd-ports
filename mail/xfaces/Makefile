@@ -4,7 +4,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/xfaces/Makefile,v 1.18 2000/04/13 20:01:00 cpiazza Exp $
+# $FreeBSD: ports/mail/xfaces/Makefile,v 1.19 2000/06/09 21:59:03 asami Exp $
 #
 
 PORTNAME=	xfaces
@@ -20,10 +20,10 @@ DISTFILES=	${DISTNAME}.tar.Z xfaces-sounds.tar.gz
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 BUILD_DEPENDS=	${X11BASE}/lib/libaudio.a:${PORTSDIR}/audio/nas
-LIB_DEPENDS=	compface.1:${PORTSDIR}/mail/faces \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	compface.1:${PORTSDIR}/mail/faces
 
 USE_IMAKE=	YES
+USE_XPM=	YES
 MAN1=		xfaces.1
 
 pre-configure:

@@ -2,7 +2,7 @@
 # Date created:		27 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xgalaga/Makefile,v 1.14 1999/09/25 17:23:31 steve Exp $
+# $FreeBSD: ports/games/xgalaga/Makefile,v 1.15 2000/04/14 12:27:23 asami Exp $
 #
 
 PORTNAME=	xgalaga
@@ -13,10 +13,9 @@ MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 HAS_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 # xgalaga has a very strange usage of these variables...
 CONFIGURE_ARGS=	--prefix=${X11BASE}/lib/X11/xgalaga \
 		--exec_prefix=${X11BASE}/bin

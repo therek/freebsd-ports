@@ -4,7 +4,7 @@
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/net/ppxp/Makefile,v 1.12 2000/04/14 17:10:46 knu Exp $
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.14 2000/04/17 00:18:33 reg Exp $
 #
 
 PORTNAME=	ppxp
@@ -16,8 +16,7 @@ MASTER_SITES=	http://www.dsl.gr.jp/~manabe/PPxP/packages/	\
 
 MAINTAINER=	nosuzuki@e-mail.ne.jp
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 .if defined(WITH_TCLJP)
 BUILD_DEPENDS=	wish8.0jp:${PORTSDIR}/japanese/tk80 \
 		tclsh8.0jp:${PORTSDIR}/japanese/tcl80
@@ -32,6 +31,7 @@ RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
 		tclsh8.2:${PORTSDIR}/lang/tcl82
 .endif
 
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/ppxp
 USE_GMAKE=	yes
 MAKEFILE=	makefile

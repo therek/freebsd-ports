@@ -2,7 +2,7 @@
 # Date created:		2 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/cjk-lyx/Makefile,v 1.1 2000/07/05 14:58:09 cjh Exp $
 #
 
 PORTNAME=	lyx
@@ -20,9 +20,9 @@ RUN_DEPENDS=	latex:${PORTSDIR}/print/teTeX
 RUN_DEPENDS+=	ispell:${PORTSDIR}/textproc/ispell
 .endif
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
+USE_XPM=	yes
 USE_NEWGCC=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes

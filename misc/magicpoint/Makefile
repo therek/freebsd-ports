@@ -2,7 +2,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.19 2000/06/09 08:17:41 sobomax Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.20 2000/07/04 07:13:10 sobomax Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -13,10 +13,10 @@ MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 
 MAINTAINER?=	mita@jp.FreeBSD.org
 
-LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
-		png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS+=	png.4:${PORTSDIR}/graphics/png
 
 USE_IMAKE=	yes
+USE_FREETYPE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS?=--disable-vflib
 

@@ -2,7 +2,7 @@
 # Date created:			10 February 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmcp/Makefile,v 1.5 1999/08/25 07:23:02 obrien Exp $
+# $FreeBSD: ports/misc/wmcp/Makefile,v 1.6 2000/04/14 08:47:01 asami Exp $
 #
 
 PORTNAME=	wmcp
@@ -12,10 +12,9 @@ MASTER_SITES=	http://users.linuxbox.com/~bac/src/wmcp/
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 pre-build:
 	(cd ${WRKSRC} && ${GMAKE} clean)

@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1999
 # Whom:			Keith Jang (keith@freebsd.sinica.edu.tw)
 #
-# $FreeBSD: ports/chinese/CJK/Makefile,v 1.13 2000/04/13 08:27:48 asami Exp $
+# $FreeBSD: ports/chinese/CJK/Makefile,v 1.14 2000/04/24 06:27:39 vanilla Exp $
 #
 
 PORTNAME=	CJK
@@ -16,12 +16,12 @@ MAINTAINER=	keith@freebsd.sinica.edu.tw
 BUILD_DEPENDS=	latex:${PORTSDIR}/print/teTeX \
 		${X11BASE}/lib/X11/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/arphicttf \
 		ttf2pk:${PORTSDIR}/print/freetype:build
-LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 RUN_DEPENDS=	latex:${PORTSDIR}/print/teTeX
 
 NO_PACKAGE=	"Needs ttf2pk source from FreeType"
 
 USE_GMAKE=	yes
+USE_FREETYPE=	yes
 WRKSRC=		${WRKDIR}/cjk-current
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.8 2000/04/13 19:10:10 cpiazza Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.9 2000/04/23 04:06:56 cpiazza Exp $
 #
 
 PORTNAME=	wterm
@@ -14,9 +14,9 @@ MASTER_SITES= 	ftp://ftp.kddlabs.co.jp/.10/X11/acontrib/wterm/ \
 MAINTAINER=	cpiazza@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/libWINGs.a:${PORTSDIR}/x11-wm/windowmaker
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-transparency --enable-xpm-background \
 		--disable-delete-key --disable-backspace-key \

@@ -2,7 +2,7 @@
 # Date created:		16 Feb 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gltk/Makefile,v 1.1 2000/02/24 00:54:28 asami Exp $
+# $FreeBSD: ports/graphics/gltk/Makefile,v 1.2 2000/04/14 10:46:02 asami Exp $
 #
 
 PORTNAME=	gltk
@@ -15,9 +15,8 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 USE_IMAKE=	yes
+USE_MESA=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libtk.a ${PREFIX}/lib/libgltk.a

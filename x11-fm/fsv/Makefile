@@ -2,7 +2,7 @@
 # Date created:        06 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.4 2000/05/17 11:07:02 sobomax Exp $
+# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.5 2000/06/02 07:43:39 sobomax Exp $
 #
 
 PORTNAME=	fsv
@@ -13,12 +13,12 @@ MASTER_SITES=	http://fox.mit.edu/skunk/soft/src/
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		GL.14:${PORTSDIR}/graphics/Mesa3 \
 		gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-GL-prefix=${X11BASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,7 +2,7 @@
 # Date created:		26 April 1999
 # Whom:			Chia-Hsing Yu <davidyu@ken.csie.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/aterm/Makefile,v 1.8 2000/06/29 07:02:06 obrien Exp $
+# $FreeBSD: ports/chinese/aterm/Makefile,v 1.9 2000/07/30 18:03:10 steve Exp $
 #
 
 PORTNAME=	aterm
@@ -15,11 +15,11 @@ MASTER_SITE_SUBDIR=	foxfair
 
 MAINTAINER=	davidyu@ken.csie.ntu.edu.tw
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-transparency --enable-background-image \
 		--disable-delete-key --disable-backspace-key \

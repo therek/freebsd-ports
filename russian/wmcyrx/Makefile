@@ -2,7 +2,7 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.6 2000/05/19 12:25:11 sobomax Exp $
+# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.7 2000/05/25 16:04:51 sobomax Exp $
 #
 
 PORTNAME=	wmcyrx
@@ -16,8 +16,7 @@ DISTNAME=	cyrx-${PORTVERSION}
 
 MAINTAINER=     ozz@FreeBSD.org.ru
 
-LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
-
+USE_XPM=	yes
 NO_INSTALL_MANPAGES= yes
 
 .include <bsd.port.pre.mk>

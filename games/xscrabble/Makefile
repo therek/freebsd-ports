@@ -2,7 +2,7 @@
 # Date created:		27 July 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xscrabble/Makefile,v 1.11 2000/04/14 12:28:15 asami Exp $
+# $FreeBSD: ports/games/xscrabble/Makefile,v 1.12 2000/06/14 05:44:52 mph Exp $
 #
 
 PORTNAME=	xscrabble
@@ -15,9 +15,8 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=		yes
+USE_XPM=		yes
 NO_INSTALL_MANPAGES=	yes
 
 post-patch:

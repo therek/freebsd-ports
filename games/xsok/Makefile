@@ -2,7 +2,7 @@
 # Date created:         07 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xsok/Makefile,v 1.7 2000/04/14 12:28:21 asami Exp $
+# $FreeBSD: ports/games/xsok/Makefile,v 1.8 2000/05/14 05:40:52 billf Exp $
 #
 
 PORTNAME=       xsok
@@ -15,9 +15,8 @@ EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 MAN6=		xsok.6x
 
 post-install:

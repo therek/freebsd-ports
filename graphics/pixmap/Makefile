@@ -2,7 +2,7 @@
 # Date created:		19 February 1995
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pixmap/Makefile,v 1.12 1999/08/25 06:14:37 obrien Exp $
+# $FreeBSD: ports/graphics/pixmap/Makefile,v 1.13 2000/04/14 10:47:01 asami Exp $
 #
 
 PORTNAME=	pixmap
@@ -14,10 +14,9 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/pixmap
 USE_IMAKE=	yes
+USE_XPM=	yes
 MAN1=		pixmap.1
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.7 2000/04/09 19:07:10 cpiazza Exp $
+# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.8 2000/04/23 05:36:08 will Exp $
 #
 
 PORTNAME=		asmem
@@ -14,12 +14,11 @@ MASTER_SITE_SUBDIR=	apps/asmem
 
 MAINTAINER=	jack@germanium.xtalwind.net
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 MAKEFILE=	Makefile.UNIX
 MAN1=		asmem.1
-MAKE_ENV+=	PCFLAGS="${CFLAGS}"
+MAKE_ENV=	PCFLAGS="${CFLAGS}"
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400000

@@ -2,7 +2,7 @@
 # Date created:		7 December 1998
 # Whom:			Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/audio/wmcdplay/Makefile,v 1.6 1999/08/25 04:36:17 obrien Exp $
+# $FreeBSD: ports/audio/wmcdplay/Makefile,v 1.7 2000/04/08 21:24:42 mharo Exp $
 #
 
 PORTNAME=	wmcdplay
@@ -14,11 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	clkao@CirX.ORG
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 WRKSRC=		${WRKDIR}/wmcdplay
 
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		21 December 1998
 # Whom:			bmah@ca.sandia.gov
 #
-# $FreeBSD: ports/x11-wm/vtwm/Makefile,v 1.3 2000/04/10 19:50:27 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/vtwm/Makefile,v 1.4 2000/06/02 01:09:59 will Exp $
 #
 
 PORTNAME=	vtwm
@@ -12,9 +12,8 @@ MASTER_SITES=	ftp://ftp.visi.com/users/hawkeyd/X/
 
 MAINTAINER=	bmah@acm.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_IMAKE=	yes
+USE_XPM=	yes
 
 MAN1=		vtwm.1
 

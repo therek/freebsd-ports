@@ -2,7 +2,7 @@
 # Date created:                17 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.12 2000/04/10 00:39:13 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.13 2000/06/23 13:14:36 sobomax Exp $
 #
 
 PORTNAME=	asfiles
@@ -14,11 +14,11 @@ DISTNAME=	ASFiles-${PORTVERSION}
 
 MAINTAINER=	lukin@okbmei.msk.su
 
-LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 MAN1=	files.1
 MAN3=	regexp.3
 

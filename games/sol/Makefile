@@ -2,7 +2,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/sol/Makefile,v 1.6 2000/04/14 12:26:34 asami Exp $
+# $FreeBSD: ports/games/sol/Makefile,v 1.7 2000/07/16 14:31:53 alex Exp $
 #
 
 PORTNAME=	sol
@@ -12,14 +12,14 @@ MASTER_SITES=	http://shh.thathost.com/pub-unix/files/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		shhopt.1:${PORTSDIR}/devel/libshhopt \
+LIB_DEPENDS=	shhopt.1:${PORTSDIR}/devel/libshhopt \
 		shhmsg.1:${PORTSDIR}/devel/libshhmsg \
 		xalloc.1:${PORTSDIR}/devel/libxalloc \
 		shhcards.1:${PORTSDIR}/games/libshhcards
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 MAN6=		sol.6
 

@@ -2,7 +2,7 @@
 # Date created:			10 May 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/asbutton/Makefile,v 1.6 2000/04/14 08:45:18 asami Exp $
+# $FreeBSD: ports/misc/asbutton/Makefile,v 1.7 2000/06/23 13:14:36 sobomax Exp $
 #
 
 PORTNAME=	asbutton
@@ -13,9 +13,8 @@ MASTER_SITE_SUBDIR=	apps/asbutton
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 ALL_TARGET=	asbutton
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.32 2000/07/10 15:31:43 sobomax Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.33 2000/07/17 07:15:49 sobomax Exp $
 #
 
 PORTNAME=	xfce
@@ -12,14 +12,14 @@ MASTER_SITES=	http://www.xfce.org/archive/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		Imlib.5:${PORTSDIR}/graphics/imlib \
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	${LOCALBASE}/bin/esdplay:${PORTSDIR}/audio/esound
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \

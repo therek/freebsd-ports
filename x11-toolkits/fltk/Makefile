@@ -2,7 +2,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.15 2000/06/16 21:52:20 asami Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.16 2000/07/07 19:33:52 steve Exp $
 #
 
 PORTNAME=	fltk
@@ -18,8 +18,6 @@ DISTNAME=	${PKGNAME}-source
 
 MAINTAINER=	dima@chg.ru
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 VERSION=	1.0.9
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
@@ -27,6 +25,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-shared
 WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 MAN1=		fluid.1
 
 post-install:

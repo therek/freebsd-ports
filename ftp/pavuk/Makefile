@@ -2,7 +2,7 @@
 # Date created:				19 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.16 2000/04/12 05:31:20 mharo Exp $
+# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.17 2000/04/17 00:17:36 reg Exp $
 #
 
 PORTNAME=		pavuk
@@ -24,7 +24,7 @@ USE_AUTOCONF=		yes
 CONFIGURE_ARGS=		--disable-gtk
 .else
 CONFIGURE_ARGS=		--with-xpm-includes=${X11BASE}/include --disable-gtk
-LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
+USE_XPM=		yes
 .endif
 
 USE_GMAKE=		yes

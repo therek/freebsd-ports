@@ -2,7 +2,7 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.19 2000/06/16 08:18:53 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.20 2000/06/16 21:50:15 asami Exp $
 #
 
 PORTNAME=		sdl-devel
@@ -15,8 +15,7 @@ DISTNAME=		SDL-${PORTVERSION}
 MAINTAINER=		sobomax@FreeBSD.org
 
 LIB_DEPENDS=		esd.2:${PORTSDIR}/audio/esound \
-			aa.1:${PORTSDIR}/graphics/aalib \
-			${GL_DEPENDS}
+			aa.1:${PORTSDIR}/graphics/aalib
 BUILD_DEPENDS=		nasm:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=		yes
@@ -31,10 +30,9 @@ CONFIGURE_ARGS=		--enable-video-aalib
 CFLAGS+=		-D_THREAD_SAFE
 
 .if defined(WITHOUT_GL)
-GL_DEPENDS=
 CONFIGURE_ARGS+=	--disable-video-opengl
 .else
-GL_DEPENDS=		GL.14:${PORTSDIR}/graphics/Mesa3
+USE_MESA=		yes
 CONFIGURE_ARGS+=	--enable-video-opengl
 .endif
 

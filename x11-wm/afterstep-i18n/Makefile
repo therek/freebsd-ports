@@ -2,7 +2,7 @@
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.13 2000/06/12 08:42:18 kuriyama Exp $
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.14 2000/06/29 02:31:41 asami Exp $
 #
 
 PORTNAME=	afterstep-i18n
@@ -23,12 +23,11 @@ PATCH_DIST_STRIP=       -p1
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 EXTRACT_ONLY=	${DISTNAME}.tar.gz \
 		unofficial-I18N.98Feb27.tar.gz
 DIST_SUBDIR=	afterstep
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 INSTALL_TARGET=	install install.man
 MANCOMPRESSED=	yes
 MAN1=		afterstep.1 asclock.1 Animate.1 Audio.1 Auto.1 Banner.1 \

@@ -2,7 +2,7 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.62 2000/06/21 17:39:07 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.63 2000/07/06 15:31:51 ade Exp $
 #
 
 PORTNAME=	gnomelibs
@@ -15,7 +15,6 @@ DISTNAME=	gnome-libs-${PORTVERSION}
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib \
-		Xpm.4:${PORTSDIR}/graphics/xpm \
 		ORBit.2:${PORTSDIR}/devel/ORBit \
 		esd.2:${PORTSDIR}/audio/esound
 
@@ -23,6 +22,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

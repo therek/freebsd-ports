@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.28 2000/06/16 21:52:39 asami Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.29 2000/06/22 13:19:31 knu Exp $
 #
 
 PORTNAME?=	xtt-common
@@ -15,7 +15,6 @@ DISTFILES=	X336src-1.tgz xtt-${VERSION}.tgz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
-LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype
 RUN_DEPENDS+=	mkttfdir:${PORTSDIR}/print/perlftlib
 
 VERSION=	1.3
@@ -33,6 +32,7 @@ DISTFILES+=	Wraphelp.c
 IGNOREFILES=	Wraphelp.c
 .endif
 USE_X_PREFIX=	YES
+USE_FREETYPE=	YES
 EXTRACT_ONLY=	X336src-1.tgz xtt-${VERSION}.tgz
 BINOWN=		root
 BINGRP=		wheel

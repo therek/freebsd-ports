@@ -2,7 +2,7 @@
 # Date created:			19 Nov 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.4 2000/04/13 20:00:57 cpiazza Exp $
+# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.5 2000/06/29 07:02:30 obrien Exp $
 #
 
 PORTNAME=	wmbiff
@@ -14,11 +14,10 @@ MASTER_SITE_SUBDIR=	jim
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
-
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmbiff
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 pre-build:
 	@(cd ${WRKSRC} && ${GMAKE} clean)

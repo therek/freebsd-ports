@@ -2,7 +2,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.28 2000/04/14 10:47:58 asami Exp $
+# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.29 2000/07/19 07:15:34 obrien Exp $
 #
 
 PORTNAME=       xpdf
@@ -19,12 +19,15 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	chuckr@freebsd.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		t1x.1:${PORTSDIR}/devel/t1lib
+LIB_DEPENDS=	t1x.1:${PORTSDIR}/devel/t1lib
 
-###RESTRICTED=     "Contains cryptography"
+### crypto
+#.if !defined(PACKAGE_BUILDING)
+#RESTRICTED=     "Contains cryptography"
+#.endif
 USE_XLIB=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--with-gzip --enable-japanese		\
 		--with-t1-library=${LOCALBASE}/lib	\
