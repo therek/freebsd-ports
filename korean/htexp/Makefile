@@ -2,7 +2,7 @@
 # Date created:                 Jun 29 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/htexp/Makefile,v 1.1.1.1 2000/07/02 15:03:28 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hTeXp
@@ -46,7 +46,7 @@ do-install:
 	${INSTALL_DATA} ${_DISTDIR}/tex.poo ${TEXMF}/htexpformats
 	### build hlatex.fmt
 	( cd ${WRKDIR}/unpacked && \
-	  ${ECHO} "R\n" | ${PREFIX}/bin/htexpini hlatex.ltx || \
+	  ${ECHO_CMD} "R\n" | ${PREFIX}/bin/htexpini hlatex.ltx || \
 	  ${TRUE} )
 	${INSTALL_DATA} ${WRKDIR}/unpacked/hlatex.fmt \
 			${TEXMF}/htexpformats/

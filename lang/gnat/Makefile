@@ -4,7 +4,7 @@
 # Porter (original):	nils@guru.ims.uni-stuttgart.de
 # Porter (version 3):	maurice@serc.rmit.edu.au
 #
-# $FreeBSD: ports/lang/gnat/Makefile,v 1.25 2000/11/03 10:03:09 asami Exp $
+# $FreeBSD$
 #
 # Note:
 # - FreeBSD tasking libraries created by Dan Eischen have been incorporated
@@ -51,18 +51,18 @@ MAN1=		adagcc.1 cccp.1
 # For the GNAT compiler, we look in ${PREFIX} and in ${LOCALBASE}.
 .ifdef PREFIX
 have_boot!=	if [ -x ${PREFIX}/bin/adagcc -a -x ${PREFIX}/bin/gnatbind ]; then \
-			${ECHO} "${PREFIX}/bin"; \
+			${ECHO_CMD} "${PREFIX}/bin"; \
 		else \
-			${ECHO} ""; \
+			${ECHO_CMD} ""; \
 		fi
 .else
 have_boot=
 .endif
 .if empty(have_boot)
 have_boot!=	if [ -x ${LOCALBASE}/bin/adagcc -a -x ${LOCALBASE}/bin/gnatbind ]; then \
-			${ECHO} "${LOCALBASE}/bin"; \
+			${ECHO_CMD} "${LOCALBASE}/bin"; \
 		else \
-			${ECHO} ""; \
+			${ECHO_CMD} ""; \
 		fi
 .endif
 
@@ -70,19 +70,19 @@ have_boot!=	if [ -x ${LOCALBASE}/bin/adagcc -a -x ${LOCALBASE}/bin/gnatbind ]; t
 # Check for attempts to cross-compile or build an aout GNAT compiler.
 .if empty(have_boot)
 have_boot!=	if [ ${PORTOBJFORMAT} = "aout" ]; then \
-			${ECHO} "borken for aout"; \
+			${ECHO_CMD} "borken for aout"; \
 		else \
-			${ECHO} ""; \
+			${ECHO_CMD} ""; \
 		fi
 .else
 have_boot!=	if [ `file ${have_boot}/adagcc | awk ' { print $$2 }'` = "ELF" ]; then \
 			if [ ${PORTOBJFORMAT} = "elf" ]; then \
-				${ECHO} ${have_boot}; \
+				${ECHO_CMD} ${have_boot}; \
 			else \
-				${ECHO} "borken for aout"; \
+				${ECHO_CMD} "borken for aout"; \
 			fi \
 		else \
-			${ECHO} "borken for aout"; \
+			${ECHO_CMD} "borken for aout"; \
 		fi
 .endif
 

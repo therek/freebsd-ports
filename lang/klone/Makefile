@@ -2,7 +2,7 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/klone/Makefile,v 1.2 2001/09/01 12:16:11 tom Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	klone
@@ -22,7 +22,7 @@ do-configure:
 		-e 's:%%CFLAGS%%:${CFLAGS}:' \
 		${FILESDIR}/freebsd > ${WRKSRC}/Configs/freebsd
 	@${CP} -f ${WRKSRC}/Configs/freebsd ${WRKSRC}/Config.freebsd
-	@${ECHO} "freebsd" > ${WRKSRC}/.dir
+	@${ECHO_CMD} "freebsd" > ${WRKSRC}/.dir
 	@${RM} -f makefile
 
 do-install:

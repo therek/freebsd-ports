@@ -2,7 +2,7 @@
 # Date created:		Fri Mar 27 17:26:42 KST 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.11 2000/09/12 13:03:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kaistfonts-ksc
@@ -33,7 +33,7 @@ do-extract:
 	${MKDIR} ${WRKDIR} && \
 	cd ${WRKDIR} && \
 	for file in ${DISTFILES}; do \
-		${GUNZIP_CMD} -c < ${_DISTDIR}/$$file > `${ECHO} $$file | ${SED} -e 's/\.Z//' -e 's/\.gz//'`; \
+		${GUNZIP_CMD} -c < ${_DISTDIR}/$$file > `${ECHO_CMD} $$file | ${SED} -e 's/\.Z//' -e 's/\.gz//'`; \
 	done
 
 post-install:
