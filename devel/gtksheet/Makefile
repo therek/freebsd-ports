@@ -3,12 +3,12 @@
 # Date created:			Jun 22 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/gtksheet/Makefile,v 1.5 1999/10/03 00:05:16 cpiazza Exp $
+# $FreeBSD: ports/devel/gtksheet/Makefile,v 1.6 1999/10/26 03:42:40 mharo Exp $
 #
 
 DISTNAME=	gtksheet-8.0
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ripley.ifir.edu.ar/pub/gtk/gtksheet/
+MASTER_SITES=	http://magnet.fsu.edu/~feiguin/gtk/src/
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
