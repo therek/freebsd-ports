@@ -3,7 +3,7 @@
 # Date created:		29 Dec 1998
 # Whom:			Boris Popov <bp@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.6 1999/08/30 14:23:14 peter Exp $
+# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.7 1999/09/27 05:27:54 foxfair Exp $
 #
 
 DISTNAME=       mars_nwe-0.99.pl17
@@ -23,6 +23,7 @@ do-build:
 
 do-install:
 	@(cd ${WRKSRC} && ./mk.li install)
+	@${INSTALL_DATA} ${WRKSRC}/examples/nw.ini ${PREFIX}/etc/nwserv.conf.example
 	@${ECHO} "You'll need to create a startup file to load MARS_NWE Server when booting."
 	@${ECHO}  "Create a nwserv.sh in ${PREFIX}/etc/rc.d directory and modify"
 	@${ECHO}  "${PREFIX}/etc/nwserv.conf manually before you loading server."
