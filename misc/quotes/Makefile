@@ -2,14 +2,14 @@
 # Date created:         9 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/misc/quotes/Makefile,v 1.8 2000/07/07 19:17:55 steve Exp $
+# $FreeBSD: ports/misc/quotes/Makefile,v 1.9 2000/11/13 12:44:16 demon Exp $
 #
 
 PORTNAME=	quotes
-PORTVERSION=	1.6.2
+PORTVERSION=	1.7.2
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.iae.nl/pub/users/grimaldo/
-DISTNAME=	quotes-1.6-2
+MASTER_SITES=	ftp://ftp.coralys.com/pub/free/
+DISTNAME=	${PORTNAME}-1.7-2
 
 MAINTAINER=	demon@FreeBSD.org
 
