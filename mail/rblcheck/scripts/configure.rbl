@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/rblcheck/scripts/configure.rbl,v 1.1 2001/08/18 06:04:35 ijliao Exp $
+# $FreeBSD: ports/mail/rblcheck/scripts/configure.rbl,v 1.2 2001/08/19 14:50:01 ijliao Exp $
 
 if [ -f ${WRKSRC}/rblsites.h ]; then
 	exit
@@ -22,7 +22,7 @@ if [ "${BATCH}" ]; then
 	if [ ${TODAY} -lt 20010801 ]; then
 		OPTIONS="\"MAPS_RBL\" \"MAPS_DUL\" \"MAPS_RSS\""
 	else
-		OPTIONS="ORBZ"
+		OPTIONS="\"ORBZ\""
 	fi
 	if [ "x${OPTIONS}" != "x" ]; then
 		set ${OPTIONS}
