@@ -2,7 +2,7 @@
 # Date created:		15 Sep 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.14 2000/10/08 10:20:30 asami Exp $
+# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.15 2001/05/27 09:27:52 mita Exp $
 #
 
 PORTNAME=	dvi2ps
@@ -13,7 +13,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}j
 
 MAINTAINER=	mita@jp.FreeBSD.org
 
-BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
+BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf \
+		${PREFIX}/lib/libkpathsea.a:${PORTSDIR}/japanese/ptex-common
 LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
 MAN1=		dvi2ps.1 ../ja/man1/dvi2ps.1
