@@ -2,12 +2,12 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.19 2001/03/31 13:10:26 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.20 2001/05/24 14:43:37 nbm Exp $
 #
 
 PORTNAME=	courier-imap
 PORTVERSION=	1.3.8.1
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -25,12 +25,8 @@ PLIST_SUB=	OPENSSLFLAG=
 PLIST_SUB=	OPENSSLFLAG="@comment "
 .endif
 
-#.if !exists(/usr/include/openssl/idea.h)
-#CFLAGS+=	-DNO_IDEA
-#.endif
-
 CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
-		--without-authpam --without-authshadow \
+		--without-authshadow \
 		--without-authcram \
 		--without-authmysql \
 		--sysconfdir=${PREFIX}/etc/courier-imap \
@@ -46,6 +42,16 @@ CONFIGURE_ARGS+=	\
 PLIST_SUB+=	VPOPMAILFLAG="@comment "
 .else
 PLIST_SUB+=	VPOPMAILFLAG=""
+.endif
+
+.if !defined(WITHOUT_PAM)
+CONFIGURE_ARGS+=	\
+		--with-authpam
+PLIST_SUB+=	PAMFLAG=""
+.else
+CONFIGURE_ARGS+=	\
+		--without-authpam
+PLIST_SUB+=	PAMFLAG="@comment"
 .endif
 
 MAN1=		maildirmake.1
