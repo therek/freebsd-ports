@@ -2,7 +2,7 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/mail/pop3lite/Makefile,v 1.3 2001/01/23 07:26:53 kevlo Exp $
+# $FreeBSD: ports/mail/pop3lite/Makefile,v 1.4 2001/02/03 17:44:35 dannyboy Exp $
 #
 
 PORTNAME=	pop3lite
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	greid@ukug.uk.freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 USE_GLIB=	yes
 USE_GMAKE=	yes
