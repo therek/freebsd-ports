@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.28 2001/03/25 13:38:26 ijliao Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.29 2001/06/11 06:14:19 markp Exp $
 #
 
     SUBDIR += bibelot
@@ -20,6 +20,7 @@
     SUBDIR += pilot_makedoc
     SUBDIR += pilrc
     SUBDIR += pose
+    SUBDIR += ppmtoTbmp
     SUBDIR += prc-tools
     SUBDIR += prc-tools-binutils
     SUBDIR += prc-tools-gcc
