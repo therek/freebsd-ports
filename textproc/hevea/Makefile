@@ -2,7 +2,7 @@
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.7 2001/06/27 06:07:14 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		hevea
@@ -34,6 +34,7 @@ post-install:
 	${INSTALL_DATA} ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual.ps.gz ${PREFIX}/share/doc/hevea
 	(cd ${PREFIX}/share/doc/hevea; ${TAR} xvfz ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual.tar.gz)
 	(cd ${PREFIX}/share/doc/hevea; ${TAR} xvfz ${DISTDIR}/${PORTNAME}-${PORTVERSION}-manual-dvi.tar.gz)
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/hevea
 .endif
 	${CAT} ${PKGMESSAGE}
 
