@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.167 2001/09/11 20:31:50 knu Exp $
+# $FreeBSD: ports/print/Makefile,v 1.168 2001/09/12 13:17:57 knu Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -87,7 +87,6 @@
     SUBDIR += offix-printer
     SUBDIR += p5-GnomePrint
     SUBDIR += p5-Text-PDF
-    SUBDIR += pnm2ppa
     SUBDIR += panda
     SUBDIR += pcal
     SUBDIR += pclprint
@@ -118,6 +117,7 @@
     SUBDIR += pkfonts360
     SUBDIR += pkfonts400
     SUBDIR += pkfonts600
+    SUBDIR += pnm2ppa
     SUBDIR += poster
     SUBDIR += pscal
     SUBDIR += pstotext

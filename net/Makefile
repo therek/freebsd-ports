@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.616 2001/09/17 18:49:50 sada Exp $
+# $FreeBSD: ports/net/Makefile,v 1.617 2001/09/18 06:21:27 petef Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -69,10 +69,10 @@
     SUBDIR += dgd
     SUBDIR += dgd-lpmud
     SUBDIR += dgd-net
+    SUBDIR += dhcpconf
     SUBDIR += dhcpdump
     SUBDIR += dhcping
     SUBDIR += dhid
-    SUBDIR += dhcpconf
     SUBDIR += dhisd
     SUBDIR += dictd
     SUBDIR += dictd-database
@@ -441,8 +441,8 @@
     SUBDIR += xipmsg
     SUBDIR += xisp
     SUBDIR += xmlrpc-c
-    SUBDIR += xsmbrowser
     SUBDIR += xprobe
+    SUBDIR += xsmbrowser
     SUBDIR += xtraceroute
     SUBDIR += xtradius
     SUBDIR += xwhois

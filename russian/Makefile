@@ -1,4 +1,4 @@
-# $FreeBSD: ports/russian/Makefile,v 1.35 2001/07/02 09:04:18 demon Exp $
+# $FreeBSD: ports/russian/Makefile,v 1.36 2001/09/17 19:38:26 sada Exp $
 #
 
     SUBDIR += X.language
@@ -16,9 +16,9 @@
     SUBDIR += pgp.language
     SUBDIR += pine.language
     SUBDIR += pscyr
-    SUBDIR += tac+ia
     SUBDIR += rispell
     SUBDIR += rus-ispell
+    SUBDIR += tac+ia
     SUBDIR += wmcyrx
     SUBDIR += xcode
     SUBDIR += xcyrBGR

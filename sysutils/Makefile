@@ -1,6 +1,5 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.216 2001/09/11 08:09:04 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.217 2001/09/16 17:04:57 kevlo Exp $
 #
-    SUBDIR += yawho
 
     SUBDIR += LPRng
     SUBDIR += abck
@@ -23,7 +22,7 @@
     SUBDIR += clockspeed
     SUBDIR += colorize
     SUBDIR += comconsole
-    SUBDIR += consolehm 
+    SUBDIR += consolehm
     SUBDIR += contool
     SUBDIR += copytape
     SUBDIR += cpbk
@@ -124,17 +123,17 @@
     SUBDIR += prips
     SUBDIR += procmap
     SUBDIR += pslist
-    SUBDIR += pstree
     SUBDIR += psmisc
+    SUBDIR += pstree
     SUBDIR += pwgen
     SUBDIR += pyfind
     SUBDIR += qtpkg
     SUBDIR += rdate
-    SUBDIR += rotate
-    SUBDIR += rtty
     SUBDIR += readlink
     SUBDIR += rmonitor
     SUBDIR += roottail
+    SUBDIR += rotate
+    SUBDIR += rtty
     SUBDIR += ruby-application.rb
     SUBDIR += ruby-quota
     SUBDIR += ruby-syslog
@@ -203,5 +202,6 @@
     SUBDIR += xw
     SUBDIR += xwatch
     SUBDIR += xwipower
+    SUBDIR += yawho
 
 .include <bsd.port.subdir.mk>

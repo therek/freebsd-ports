@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.149 2001/09/03 18:41:37 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.150 2001/09/03 18:46:32 knu Exp $
 #
 
     SUBDIR += FWF
@@ -48,8 +48,8 @@
     SUBDIR += guile-gtk
     SUBDIR += icegradient
     SUBDIR += itk
-    SUBDIR += iwidgets
     SUBDIR += iv
+    SUBDIR += iwidgets
     SUBDIR += jx
     SUBDIR += lesstif
     SUBDIR += libgtkeditor
@@ -128,7 +128,7 @@
     SUBDIR += xforms
     SUBDIR += xg
     SUBDIR += xmhtml
-    SUBDIR += xview-clients
     SUBDIR += xview
+    SUBDIR += xview-clients
 
 .include <bsd.port.subdir.mk>

@@ -1,5 +1,6 @@
-# $FreeBSD: ports/science/Makefile,v 1.5 2001/06/11 03:27:00 will Exp $
+# $FreeBSD: ports/science/Makefile,v 1.6 2001/09/12 16:36:24 sada Exp $
 #
+
     SUBDIR += chemtool
     SUBDIR += clhep
     SUBDIR += mpqc
