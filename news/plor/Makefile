@@ -2,7 +2,7 @@
 # Date Created:		30 Dec 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/news/plor/Makefile,v 1.8 2000/04/21 07:51:52 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	plor
@@ -17,6 +17,7 @@ RUN_DEPENDS=	zip:${PORTSDIR}/archivers/zip
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_PERL5=	yes
 
 MAN1=		plor.1
 

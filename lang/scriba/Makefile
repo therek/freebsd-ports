@@ -2,7 +2,7 @@
 # Date created:        07 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/lang/scriba/Makefile,v 1.1 2001/01/14 19:45:31 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scriba
@@ -19,6 +19,7 @@ PRFXFILES=	variations/standard/basiccmd.c \
 		testconf.c
 
 WRKSRC=		${WRKDIR}
+USE_PERL5=	yes
 
 post-patch:
 .for P in ${PRFXFILES}
