@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.617 2001/09/18 06:21:27 petef Exp $
+# $FreeBSD: ports/net/Makefile,v 1.618 2001/09/21 05:56:36 knu Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -267,6 +267,7 @@
     SUBDIR += p5-Net-DNS
     SUBDIR += p5-Net-Daemon
     SUBDIR += p5-Net-IPv4Addr
+    SUBDIR += p5-Net-IPv6Addr
     SUBDIR += p5-Net-Jabber
     SUBDIR += p5-Net-Netmask
     SUBDIR += p5-Net-Patricia
