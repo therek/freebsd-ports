@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.238 2000/08/03 04:09:41 sada Exp $
+# $FreeBSD: ports/www/Makefile,v 1.239 2000/08/03 11:19:02 nbm Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -21,9 +21,7 @@
     SUBDIR += bkmrkconv
     SUBDIR += bluefish
     SUBDIR += bsdi-netscape47-communicator
-    SUBDIR += bsdi-netscape47-communicator.us
     SUBDIR += bsdi-netscape47-navigator
-    SUBDIR += bsdi-netscape47-navigator.us
     SUBDIR += boa
     SUBDIR += cadaver
     SUBDIR += calamaris
