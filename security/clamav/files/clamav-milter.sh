@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/clamav/files/clamav-milter.sh,v 1.1 2003/12/08 14:06:49 netchild Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -11,7 +11,7 @@
 #
 # Add the following lines to /etc/rc.conf to enable clamav-milter:
 #
-#clamav_milter="YES"
+#clamav_milter_enable="YES"
 #
 # See clamav-milter(1) for flags
 #
