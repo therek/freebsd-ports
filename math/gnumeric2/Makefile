@@ -2,11 +2,11 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.56 2001/05/04 21:51:09 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.57 2001/05/11 16:36:29 ade Exp $
 #
 
 PORTNAME=	gnumeric
-PORTVERSION=	0.64
+PORTVERSION=	0.65
 CATEGORIES?=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnumeric
@@ -15,9 +15,11 @@ MAINTAINER?=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
 		gnomeole2.0:${PORTSDIR}/devel/libole2 \
-		gal.6:${PORTSDIR}/x11-toolkits/gal \
-		gb.0:${PORTSDIR}/lang/gnomebasic \
-		gda-common.0:${PORTSDIR}/databases/libgda
+		gal.7:${PORTSDIR}/x11-toolkits/gal \
+		gb.0:${PORTSDIR}/lang/gnomebasic
+
+# Temporarily take this out until libgda 0.2.4 or higher is released
+#		gda-common.0:${PORTSDIR}/databases/libgda
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
