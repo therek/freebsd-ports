@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.331 2004/01/31 23:02:27 maho Exp $
+# $FreeBSD: ports/LEGAL,v 1.332 2004/02/18 02:25:45 trevor Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -172,6 +172,7 @@ jdk*-src.tar.gz		ports/java/jdk12-beta	Redistribution of sources and
 jdk-tutorial-*		ports/java/jdk-tutorial	This software is under license and export control.
 JRE-*			ports/java/jre		Put copyright on packaging!
 kaffe-*			ports/java/kaffe	Restrictive copyright
+kde-icons-*		ports/x11-themes/kde-icons-*	Unclear about licensing status
 ksh93			ports/shells/ksh93	User must agree to "regularly monitor the Website".
 ksocrat			ports/russian/ksocrat	No redistribution allowed
 l_cc_p*_*.*.*.tar.gz	ports/lang/icc		No redistribution allowed
