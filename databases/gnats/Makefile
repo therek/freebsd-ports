@@ -3,7 +3,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.24 1999/09/27 19:58:51 pst Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.25 1999/10/29 16:26:33 jseger Exp $
 #
 
 DISTNAME=	gnats-3.112.1
@@ -18,8 +18,7 @@ BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
 WRKSRC=	${WRKDIR}/3.112
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --prefix=${PREFIX} \
-		--with-lispdir=${PREFIX}/share/emacs/site-lisp \
+CONFIGURE_ARGS= --with-lispdir=${PREFIX}/share/emacs/site-lisp \
 		--with-full-gnats \
 		--with-release-based
 
@@ -46,7 +45,7 @@ pre-install:
 post-install:
 	(cd ${WRKSRC}/gnats;   ${MAKE} install-info)
 	(cd ${WRKSRC}/send-pr; ${MAKE} install-info)
-	install-info ${PREFIX}/info/gnats.info   ${PREFIX}/info/dir
-	install-info ${PREFIX}/info/send-pr.info ${PREFIX}/info/dir
+	install-info ${PREFIX}/info/gnats.info   ${PREFIX}/info
+	install-info ${PREFIX}/info/send-pr.info ${PREFIX}/info
 
 .include <bsd.port.mk>
