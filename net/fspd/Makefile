@@ -2,13 +2,13 @@
 # Date created:				2001-04-10
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/fspd/Makefile,v 1.1 2001/04/11 02:32:52 trevor Exp $
 #
 
 PORTNAME=	fspd
 PORTVERSION=	2.8.1.3
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.netsw.org/netsw/Network/IP/FileTrans/FSP/
+MASTER_SITES=	ftp://ftp.netsw.org/net/ip/filetrans/fsp/
 DISTNAME=	fsp.281-B3
 
 MAINTAINER=	trevor@FreeBSD.org
