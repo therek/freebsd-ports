@@ -2,11 +2,11 @@
 # Date created:        28 May 1998
 # Whom:                Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD: ports/games/qstat/Makefile,v 1.10 2001/07/02 16:11:12 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qstat
-PORTVERSION=	2.4.d
+PORTVERSION=	2.4.e
 CATEGORIES=	games net
 MASTER_SITES=	http://www.qstat.org/
 DISTNAME=	qstat${PORTVERSION:S/.//g}
