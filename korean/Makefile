@@ -1,5 +1,6 @@
-# $FreeBSD: ports/korean/Makefile,v 1.56 2000/10/01 13:03:22 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.57 2000/10/06 15:06:15 ade Exp $
 #
+    SUBDIR += uniksc
     SUBDIR += texinfo
 
     SUBDIR += FreeWnn-lib
