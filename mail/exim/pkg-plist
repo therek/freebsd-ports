@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.35 2004/03/09 18:35:55 eik Exp $
+@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.36 2004/03/31 22:33:42 eik Exp $
 @unexec [ ! -f /var/run/exim.pid ] || %%RC_DIR%%/exim%%RC_SUFX%% stop || true
 sbin/exim
 sbin/exim-%%EXIM_VERSION%%
@@ -16,6 +16,8 @@ sbin/exipick
 sbin/exiqgrep
 sbin/exiqsumm
 sbin/exiwhat
+%%EXIMON%%sbin/eximon
+%%EXIMON%%sbin/eximon.bin
 %%PORTDOCS%%%%DOCSDIR%%/ACKNOWLEDGMENTS
 %%PORTDOCS%%%%DOCSDIR%%/NOTICE
 %%PORTDOCS%%%%DOCSDIR%%/README.UPDATING
