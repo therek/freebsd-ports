@@ -2,15 +2,15 @@
 # Date created:		22 April 2000
 # Whom:			Sakai Hiroaki <sakai@seki.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/games/nadar/Makefile,v 1.2 2000/08/03 09:23:39 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nadar
 PORTVERSION=	1.0
 CATEGORIES=	games
-MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/myfreesoft/
+MASTER_SITES=	http://www.seki.ee.kagu.tus.ac.jp/~sakai/myfreesoft/
 
-MAINTAINER=	sakai@seki.ee.kagu.sut.ac.jp
+MAINTAINER=	sakai@seki.ee.kagu.tus.ac.jp
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

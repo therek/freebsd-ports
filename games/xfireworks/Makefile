@@ -2,17 +2,17 @@
 # Date created:        29 July 2000
 # Whom:                Sakai Hiroaki <sakai@seki.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/games/xfireworks/Makefile,v 1.3 2000/07/31 18:54:31 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfireworks
 PORTVERSION=	1.3
 CATEGORIES=	games
-MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/myfreesoft/ \
+MASTER_SITES=	http://www.seki.ee.kagu.tus.ac.jp/~sakai/myfreesoft/ \
 		http://hp.vector.co.jp/authors/VA014157/myfreesoft/ \
 		http://www.people.or.jp/~hsakai/myfreesoft/
 
-MAINTAINER=	sakai@seki.ee.kagu.sut.ac.jp
+MAINTAINER=	sakai@seki.ee.kagu.tus.ac.jp
 
 USE_X_PREFIX=	yes
 
