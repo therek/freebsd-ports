@@ -2,7 +2,7 @@
 # Date created:				2 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/sokoban/Makefile,v 1.5 2000/03/29 07:17:08 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		sokoban
@@ -26,10 +26,6 @@ do-install:
 	@ ${MKDIR} ${PREFIX}/share/sokoban/screens
 	@ ${CHOWN} root:games ${PREFIX}/share/sokoban/screens
 	@ ${INSTALL_DATA} ${WRKSRC}/screens/* ${PREFIX}/share/sokoban/screens
-	@ if [ ! -f ${PREFIX}/share/sokoban/highscore ]; then \
-		dd if=/dev/zero of=${PREFIX}/share/sokoban/highscore bs=1 count=2; \
-	  fi
-	@ ${CHOWN} root:games ${PREFIX}/share/sokoban/highscore
-	@ ${CHMOD} 0600 ${PREFIX}/share/sokoban/highscore
+	@ ${SH} pkg-install ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>
