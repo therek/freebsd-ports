@@ -2,13 +2,14 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-amstd/Makefile,v 1.9 2001/03/20 08:51:03 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amstd
 PORTVERSION=	1.10.0
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://www.loveruby.net/archive/
+MASTER_SITES=	http://www.loveruby.net/archive/%SUBDIR%/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
