@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.79 2001/03/14 01:29:15 des Exp $
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.80 2001/03/24 22:15:51 will Exp $
 #
 
 PORTNAME?=	qt
@@ -43,11 +43,11 @@ CONFIG=		${WRKSRC}/configs/freebsd-g++-${STATIC}
 .if defined(WANT_STATIC)
 STATIC=static
 CONFIGURE_ARGS+=-static
-PLIST_SUB+=	STATIC="@comment " SHARED=""
+PLIST_SUB+=	SHARED="@comment " STATIC=""
 .else
 STATIC=shared
 INSTALLS_SHLIB=yes
-PLIST_SUB+=	STATIC="" STATIC="@comment "
+PLIST_SUB+=	SHARED="" STATIC="@comment "
 .endif
 
 .include <bsd.port.pre.mk>
