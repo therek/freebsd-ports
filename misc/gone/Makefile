@@ -2,11 +2,11 @@
 # Date created:        19 April 1998
 # Whom:                marcus
 #
-# $FreeBSD: ports/misc/gone/Makefile,v 1.8 2001/01/16 17:31:40 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gone
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	misc
 MASTER_SITES=	http://jaguar.ir.miami.edu/~marcus/
 
