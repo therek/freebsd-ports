@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.265 2001/02/12 21:16:44 lioux Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.266 2001/02/12 21:18:13 lioux Exp $
 #
 
     SUBDIR += 4va
@@ -236,6 +236,7 @@
     SUBDIR += xmovie
     SUBDIR += xmps
     SUBDIR += xmps-opendivx-plugin
+    SUBDIR += xmps-win32-plugin
     SUBDIR += xmrm
     SUBDIR += xpaint
     SUBDIR += xpdf
