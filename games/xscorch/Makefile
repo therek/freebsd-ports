@@ -2,7 +2,7 @@
 # Date created:				19 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/games/xscorch/Makefile,v 1.6 2000/10/05 07:22:36 reg Exp $
+# $FreeBSD: ports/games/xscorch/Makefile,v 1.7 2001/09/06 17:58:13 petef Exp $
 #
 
 PORTNAME=	xscorch
@@ -17,6 +17,7 @@ LIB_DEPENDS=	mikmod.2:${PORTSDIR}/audio/libmikmod
 
 WRKSRC=	${WRKDIR}/xscorch-0.1.13
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 USE_GMAKE=	yes
 USE_GTK=	yes
 WANT_GNOME=	yes
