@@ -3,7 +3,7 @@
 # Date created:		24 October 1997
 # Whom:			Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/mail/tkrat/Makefile,v 1.18 1999/08/25 06:50:54 obrien Exp $
+# $FreeBSD: ports/mail/tkrat/Makefile,v 1.19 1999/11/29 03:57:09 steve Exp $
 #
 
 DISTNAME=	tkrat-1.2
@@ -16,7 +16,7 @@ MAINTAINER=	appleseed@his.com
 BUILD_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
-		c-client4.5:${PORTSDIR}/mail/imap-uw
+		c-client4.7:${PORTSDIR}/mail/imap-uw
 
 GNU_CONFIGURE=	yes
 
