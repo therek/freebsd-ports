@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.75 2000/10/10 17:15:21 reg Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.76 2000/11/08 07:48:47 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -49,7 +49,6 @@ DATAFILES=	WindowMaker-extra-0.1.tar.bz2
 
 .if defined(HAVE_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
-USE_GNOME=	yes
 .endif
 
 .if defined(WITH_KDE)
