@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.69 1999/10/28 06:07:31 billf Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.70 1999/11/07 11:33:31 kuriyama Exp $
 #
 
     SUBDIR += agrep
@@ -42,6 +42,7 @@
     SUBDIR += mswordview
     SUBDIR += nfbtrans
     SUBDIR += nicetext
+    SUBDIR += p5-Text-CSV_XS
     SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-DOM
     SUBDIR += p5-XML-Parser
