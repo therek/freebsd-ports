@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.39 2004/04/03 03:37:05 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -493,7 +493,9 @@ RUN_DEPENDS+=		${_DEPEND_JIKES}
 	@${FALSE}
 .		endif
 _DEPEND_JAVA=	${JAVA}:${PORTSDIR}/${JAVA_PORT}
-.		if !defined(JAVA_BUILD) && !defined(JAVA_RUN)
+.		if !defined(JAVA_EXTRACT) && !defined(JAVA_BUILD) && !defined(JAVA_RUN)
+# In general, an EXTRACT_DEPENDS on java is not wanted, so only
+# automatically set up BUILD_DEPENDS and RUN_DEPENDS
 .			if !defined(NO_BUILD_DEPENDS_JAVA) && !defined(NO_BUILD)
 BUILD_DEPENDS+=		${_DEPEND_JAVA}
 .			endif
@@ -501,6 +503,9 @@ BUILD_DEPENDS+=		${_DEPEND_JAVA}
 RUN_DEPENDS+=		${_DEPEND_JAVA}
 .			endif
 .		else
+.			if defined(JAVA_EXTRACT)
+EXTRACT_DEPENDS+=	${_DEPEND_JAVA}
+.			endif
 .			if defined(JAVA_BUILD)
 BUILD_DEPENDS+=		${_DEPEND_JAVA}
 .			endif
