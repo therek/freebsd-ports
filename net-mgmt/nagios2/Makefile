@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.1 2000/07/12 18:43:31 will Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.2 2000/07/12 22:08:01 will Exp $
 #
 
 PORTNAME=	netsaint
@@ -25,6 +25,5 @@ pre-fetch:
 
 pre-install:
 	${PERL} ${SCRIPTDIR}/createuser
-	${PERL} -pi -e "s@/bin/echo@echo@g" ${WRKSRC}/hosts.cfg.in
 
 .include <bsd.port.mk>
