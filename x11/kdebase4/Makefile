@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.72 2001/08/17 17:58:48 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.73 2001/08/18 23:54:35 olgeni Exp $
 #
 
 PORTNAME=	kdebase
@@ -29,6 +29,10 @@ CONFIGURE_ARGS+=--with-xdmdir=${X11BASE}/lib/X11/xdm \
 		--without-ldap \
 		--disable-closure
 USE_GMAKE=	yes
+
+post-extract:
+	@${ECHO} "#!/bin/sh" > ${WRKSRC}/mkpamserv
+	@${ECHO} "exit 0" >> ${WRKSRC}/mkpamserv
 
 pre-configure:
 	${PERL} -pi -e "s@version-info 3:0@version-info ${SOMAJOR}:${SOMINOR}@g" ${WRKSRC}/libkonq/Makefile.in
