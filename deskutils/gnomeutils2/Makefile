@@ -1,13 +1,13 @@
 # New ports collection makefile for:	gnomeutils
-# Version required:			1.0.50
+# Version required:			1.0.51
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.13 1999/12/04 19:08:01 steve Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.14 2000/01/07 02:06:25 nakai Exp $
 #
 
-DISTNAME=	gnome-utils-1.0.50
-PKGNAME=	gnomeutils-1.0.50
+DISTNAME=	gnome-utils-1.0.51
+PKGNAME=	gnomeutils-1.0.51
 CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-utils
