@@ -2,26 +2,21 @@
 # Date created:        28 August 1997
 # Whom:                Kapil Chowksey <kchowksey@hss.hns.com>
 #
-# $FreeBSD: ports/devel/gindent/Makefile,v 1.11 2000/04/11 21:28:04 mharo Exp $
+# $FreeBSD: ports/devel/gindent/Makefile,v 1.12 2000/08/28 21:12:43 fenner Exp $
 #
 
 PORTNAME=	gindent
-PORTVERSION=	2.2.2
+PORTVERSION=	2.2.6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	indent
 DISTNAME=	indent-${PORTVERSION}
 
+MAINTAINER=	ports@FreeBSD.org
+
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--program-prefix=g
 
-MAN1=		indent.1
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/indent ${PREFIX}/bin/gindent
-	${INSTALL_DATA} ${WRKSRC}/indent.info ${PREFIX}/info
-	${INSTALL_MAN} ${WRKSRC}/indent.1 ${PREFIX}/man/man1
-
-post-install:
-	@install-info ${PREFIX}/info/indent.info ${PREFIX}/info/dir
+MAN1=		gindent.1
 
 .include <bsd.port.mk>
