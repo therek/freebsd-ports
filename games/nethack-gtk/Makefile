@@ -2,28 +2,32 @@
 # Date created:				June 15, 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.3 2000/10/05 06:36:15 reg Exp $
+# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.4 2001/01/02 22:52:25 sf Exp $
 #
 
 PORTNAME=	nethack
 PORTVERSION=	1.1.5
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.jnethack.org/pub/jnethack/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	sf
+#MASTER_SITES=	ftp://ftp.jnethack.org/pub/jnethack/
 PKGNAMESUFFIX=	-gtk
-DISTNAME=	${PORTNAME}-3.2.2
+DISTNAME=	${PORTNAME}-3.2.2.1
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${GTK_PATCH}
-EXTRACT_ONLY=	nethack-3.2.2.tar.gz
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 PATCH_SITES=	ftp://ftp.jnethack.org/pub/nethack/
 PATCHFILES=	nh-3.2.2-3.2.3.diff \
 		nethack-gtk-1.1.5-nethack-3.2.3.patch.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sf@FreeBSD.org
 
 USE_XPM=	yes
 USE_GTK=	yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-3.2.2
 
 pre-configure:
 	@ ${ECHO} "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
