@@ -2,17 +2,17 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib12/Makefile,v 1.33 2001/03/06 12:29:27 vanilla Exp $
+# $FreeBSD: ports/devel/glib12/Makefile,v 1.34 2001/03/11 17:06:37 sf Exp $
 #
 
 PORTNAME=	glib
 PORTVERSION=	1.2.9
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
-		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \
-		http://www.ameth.org/gimp/gtk/v1.2/ \
-		${MASTER_SITE_RINGSERVER}
-MASTER_SITE_SUBDIR=	graphics/gimp/gtk/v1.2
+MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
+		ftp://ftp.cs.umn.edu/pub/gimp/%SUBDIR%/ \
+		http://www.ameth.org/gimp/%SUBDIR%/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,graphics/gimp/%SUBDIR%,}
+MASTER_SITE_SUBDIR=	gtk/v${PORTVERSION:R}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
