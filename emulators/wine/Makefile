@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.92 2000/08/24 08:17:24 sheldonh Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.93 2000/09/15 15:57:14 alex Exp $
 #
 
 PORTNAME=	wine
@@ -89,8 +89,8 @@ do-install:
 		${WRKSRC}/programs/regapi/regRestorer.pl \
 		${PREFIX}/lib/wine/reg
 	${INSTALL_DATA} ${FILESDIR}/README.patch \
-		${FILESDIR}/patch-3.3-sys-sigtrap \
-		${PREFIX}/lib/wine
+		${FILESDIR}/install-patch-3.3-sys-sigtrap \
+		${PREFIX}/lib/wine/patch-3.3-sys-sigtrap
 	${INSTALL_DATA} ${WRKSRC}/winedefault.reg ${PREFIX}/lib/wine
 	${ECHO}
 	@${SED} s+%%PREFIX%%+${PREFIX}+g <${PKGMESSAGE}
