@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.17 2000/06/29 02:31:27 asami Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.18 2000/07/22 20:55:26 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -23,7 +23,7 @@ PATCH_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://mirror.aarnet.edu.au/pub/vmware/freebsd/ \
 		http://mirror.aarnet.edu.au/pub/vmware/freebsd/
 PATCH_SITE_SUBDIR=	knu
-PATCHFILES=	vmmon-freebsd-0.95.1.tar.gz \
+PATCHFILES=	vmmon-freebsd-0.97-b1.tar.gz \
 		vmnet-freebsd-0.11.tar.gz
 
 # Feel free to post your questions/reports/suggestions on this port to
