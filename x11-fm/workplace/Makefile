@@ -2,21 +2,22 @@
 # Date created:				7 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/workplace/Makefile,v 1.14 2000/04/10 00:39:32 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/workplace/Makefile,v 1.15 2000/10/05 07:36:57 trevor Exp $
 #
 
 PORTNAME=	workplace
 PORTVERSION= 	1.0.a3
+PORTEPOCH=	1
 CATEGORIES=	x11-fm
-MASTER_SITES=	http://people.freebsd.org/~trevor/ports/distfiles/
+MASTER_SITES=	http://people.freebsd.org/~trevor/ports/
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	workplace-1.0.a3+tj1.diff.gz
 
 MAINTAINER=	trevor@FreeBSD.org
 
-BROKEN=		"patches are not yet correct"
-
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 GNU_CONFIGURE=	yes
+USE_GLIB=	yes
+USE_GTK=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/glib12 \
 		-I${X11BASE}/include/gtk12" \
@@ -30,9 +31,11 @@ do-install:
 	@ ${MKDIR} ${PREFIX}/include/X11/pixmaps
 	@ ${INSTALL_DATA} ${WRKSRC}/icons/*.xpm ${PREFIX}/include/X11/pixmaps
 	@ ${MKDIR} ${PREFIX}/share/doc/workplace
+.if !defined(NOPORTDOCS)
 .for file in AUTHORS INSTALL README TODO
 	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/workplace
 .endfor
+.endif
 	@ ${MKDIR} ${PREFIX}/share/examples/workplace
 	@ ${INSTALL_DATA} ${WRKSRC}/example/* ${PREFIX}/share/examples/workplace
 
