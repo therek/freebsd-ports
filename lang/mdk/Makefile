@@ -3,7 +3,7 @@
 # Date created:			Apr 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/mdk/Makefile,v 1.7 2001/08/31 14:20:25 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mdk
@@ -16,7 +16,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	ijliao@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt \
-		intl:${PORTSDIR}/devel/gettext \
+		intl:${PORTSDIR}/devel/gettext-old \
 		guile:${PORTSDIR}/lang/guile
 
 USE_X_PREFIX=	yes

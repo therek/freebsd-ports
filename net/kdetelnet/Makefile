@@ -2,7 +2,7 @@
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.14 2001/04/03 08:14:21 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ktelnet
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext-old
 
 USE_KDELIBS_VER=2
 USE_GMAKE=	yes

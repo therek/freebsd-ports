@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gettext-devel/files/patch-man::Makefile.in,v 1.1 2001/07/05 06:36:01 sobomax Exp $
 
 --- man/Makefile.in	2001/05/29 08:45:39	1.1
 +++ man/Makefile.in	2001/05/29 08:46:06

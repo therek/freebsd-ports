@@ -2,7 +2,7 @@
 # Date created:		14 May 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/textproc/textutils/Makefile,v 1.10 2001/02/05 16:35:16 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	textutils
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	textutils
 
 MAINTAINER=	aw1@stade.co.uk
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

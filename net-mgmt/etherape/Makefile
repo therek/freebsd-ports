@@ -2,7 +2,7 @@
 # Date created:				4 April 2001
 # Whom: 				Holger Lamm <holger@eit.uni-kl.de>
 #
-# $FreeBSD: ports/net/etherape/Makefile,v 1.5 2001/08/13 12:48:44 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	etherape
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	petef@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	yes

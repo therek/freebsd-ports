@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/sqsh/Makefile,v 1.4 2000/10/13 20:24:04 ade Exp $
+# $FreeBSD$
 
 PORTNAME=	sqsh
 PORTVERSION=	1.7
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	-src.tar.gz
 MAINTAINER=	midom@dammit.lt
 
 LIB_DEPENDS=	tds.0:${PORTSDIR}/databases/freetds \
-		intl.1:${PORTSDIR}/devel/gettext
+		intl.1:${PORTSDIR}/devel/gettext-old
 BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash1
 
 GNU_CONFIGURE=	yes

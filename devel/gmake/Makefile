@@ -2,7 +2,7 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.34 2001/01/16 17:30:18 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmake
@@ -14,7 +14,7 @@ DISTNAME=	make-${PORTVERSION}
 
 MAINTAINER=	portmgr@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g

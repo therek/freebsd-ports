@@ -2,7 +2,7 @@
 # Date created:        31 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/audio/normalize/Makefile,v 1.3 2001/02/20 13:59:56 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	normalize
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.cs.columbia.edu/~cvaill/normalize/
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 GNU_CONFIGURE=	yes
 

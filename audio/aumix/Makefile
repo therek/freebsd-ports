@@ -2,7 +2,7 @@
 # Date created:        21 May 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aumix/Makefile,v 1.25 2000/07/19 06:08:17 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aumix
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 WANT_GTK=	yes
 GNU_CONFIGURE=	yes

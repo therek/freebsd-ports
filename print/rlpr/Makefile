@@ -2,7 +2,7 @@
 # Date created:		11 April 1999
 # Whom:			Mikhail Teterin
 #
-# $FreeBSD: ports/print/rlpr/Makefile,v 1.7 2000/04/09 17:41:15 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rlpr
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	system/printing
 
 MAINTAINER=	mi@aldan.algebra.com
 
-#LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+#LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 GNU_CONFIGURE=	yes
 #CONFIGURE_ENV=	CPPFLAGS="-I${PREFIX}/include" LDFLAGS="-L${PREFIX}/lib -lintl"

@@ -2,7 +2,7 @@
 # Date created:				04 Feb 2000
 # Whom:					dhagan@cs.vt.edu
 #
-# $FreeBSD: ports/mail/elm/Makefile,v 1.63 2001/03/12 08:15:17 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elm
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	toasty@dragondata.com
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 WRKSRC=			${WRKDIR}/elm${PORTVERSION}

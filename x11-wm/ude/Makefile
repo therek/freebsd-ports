@@ -2,7 +2,7 @@
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.8 2000/11/13 15:06:59 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ude
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}-0.2.7b-BETA
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/kmud/Makefile,v 1.9 2001/04/03 08:14:22 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kmud
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
+BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext-old
 
 USE_KDEBASE_VER=1
 USE_LIBTOOL=	yes

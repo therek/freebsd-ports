@@ -2,7 +2,7 @@
 # Date created:				28 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/print/ktexshell/Makefile,v 1.1 2001/03/28 09:50:40 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ktexshell
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	ktexshell
 
 MAINTAINER=	demon@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_KDELIBS_VER=2
 USE_GMAKE=	yes

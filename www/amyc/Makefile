@@ -2,7 +2,7 @@
 # Date Created:				10 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/www/amyc/Makefile,v 1.2 2001/07/08 04:34:18 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amyc
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.crevola.com/about/current/
 
 MAINTAINER=	petef@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes

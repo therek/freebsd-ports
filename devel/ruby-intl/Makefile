@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.6 2000/09/26 08:01:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	intl
@@ -16,7 +16,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes

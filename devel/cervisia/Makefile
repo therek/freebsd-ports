@@ -2,7 +2,7 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.15 2001/03/29 16:32:56 sobomax Exp $
+# $FreeBSD$
 
 PORTNAME=	cervisia
 PORTVERSION=	1.4.1
@@ -19,7 +19,7 @@ QT_VER=		""
 USE_KDELIBS_VER=2
 QT_VER=		2
 .endif
-LIB_DEPENDS+=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS+=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		Sun Nov 22 12:08:18 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.25 2001/08/23 09:20:03 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtksee
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.linux.tucows.com/files/x11/graphics/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff

@@ -2,7 +2,7 @@
 # Date created:		6 April 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-tgif/Makefile,v 1.3 2001/04/08 13:47:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tgif
@@ -17,7 +17,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/${TGIF_PORT}:build
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes

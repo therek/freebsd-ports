@@ -2,7 +2,7 @@
 # Date created:		14 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/converters/recode/Makefile,v 1.14 2001/05/21 11:05:17 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	recode
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	recode
 
 MAINTAINER=	demon@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext-old
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

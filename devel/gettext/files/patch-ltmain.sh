@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/devel/gettext-devel/files/patch-ltmain.sh,v 1.1 2001/11/26 13:06:21 sobomax Exp $
+$FreeBSD: ports/devel/gettext-devel/files/patch-ltmain.sh,v 1.3 2001/12/20 06:18:45 sobomax Exp $
 
 --- ltmain.sh	2001/08/27 09:51:26	1.1
 +++ ltmain.sh	2001/08/27 09:51:42
