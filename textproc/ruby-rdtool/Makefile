@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.10 2000/09/26 08:02:04 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.11 2000/10/20 21:15:56 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -62,7 +62,9 @@ post-install:
 	${LN} -sf ${EMACSLISPDIR}/rd-mode.el ${XEMACSLISPDIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/utils/rdswap.rb ${PREFIX}/bin/rdswap
 .if !defined(NOPORTDOCS)
-	rd2 ${RUBY_DOCDIR}/optparse/ja/optparse.ja.rd \
+#	${RUBY_RD} ${RUBY_DOCDIR}/amstd/ja/amstd-ja.rd \
+#		> ${RUBY_DOCDIR}/amstd/ja/amstd-ja.html
+	${RUBY_RD} ${RUBY_DOCDIR}/optparse/ja/optparse.ja.rd \
 		> ${RUBY_DOCDIR}/optparse/ja/optparse.ja.html
 	${MKDIR} ${RUBY_EXAMPLESDIR}/rd
 	${CP} ${RUBY_SITELIBDIR}/rd/dot.rd2rc ${RUBY_EXAMPLESDIR}/rd/
