@@ -2,7 +2,7 @@
 # Date created:         20 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xbomb/Makefile,v 1.7 2000/01/24 06:02:05 steve Exp $
+# $FreeBSD: ports/games/xbomb/Makefile,v 1.8 2000/04/14 12:27:07 asami Exp $
 #
 
 PORTNAME=       xbomb
@@ -21,6 +21,9 @@ post-install:
 	@${TOUCH} ${PREFIX}/lib/X11/xbomb/xbomb3.hi
 	@${TOUCH} ${PREFIX}/lib/X11/xbomb/xbomb4.hi
 	@${TOUCH} ${PREFIX}/lib/X11/xbomb/xbomb6.hi
-	@${CHMOD} 666 ${PREFIX}/lib/X11/xbomb/xbomb?.hi
+	@${CHOWN} root:games ${PREFIX}/lib/X11/xbomb/xbomb?.hi
+	@${CHMOD} 664 ${PREFIX}/lib/X11/xbomb/xbomb?.hi
+	@${CHOWN} root:games ${PREFIX}/bin/xbomb
+	@${CHMOD} 2755 ${PREFIX}/bin/xbomb
 
 .include <bsd.port.mk>
