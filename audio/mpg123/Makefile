@@ -3,15 +3,19 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.18 1999/09/20 04:55:24 jkoshy Exp $
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.19 1999/11/11 05:41:24 jkoshy Exp $
 #
 
 DISTNAME=	mpg123-0.59r
-CATEGORIES=	audio
+CATEGORIES=	audio ipv6
 MASTER_SITES=	http://www.mpg123.de/mpg123/ \
 		http://www-ti.informatik.uni-tuebingen.de/~hippm/mpg123/ \
 		ftp://ftp.tu-clausthal.de/pub/unix/audio/mpg123/ \
 		http://ftp.tu-clausthal.de/pub/unix/audio/mpg123/
+
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCHFILES=	mpg123-059r-v6-20000111.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	jkoshy@freebsd.org
 
@@ -24,6 +28,10 @@ ONLY_FOR_ARCHS=	i386
 MAN1=		mpg123.1
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+MAKE_ENV+=	USE_INET6=yes
+.endif
 
 .if defined(OPT_ESOUND)
 ALL_TARGET=	freebsd-esd
