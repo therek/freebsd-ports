@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/wwwoffle/files/wwwoffled.sh,v 1.4 2004/05/04 10:44:05 sumikawa Exp $
 
 # PROVIDE: wwwoffled
 # REQUIRE: DAEMON
@@ -29,5 +29,6 @@ load_rc_config $name
 pidfile="${wwwoffled_pidfile}"
 command_args="-p > ${pidfile} 2> /dev/null"
 required_files="${wwwoffled_conffile}"
+stop_postcmd="/bin/rm -f ${pidfile}"
 
 run_rc_command "$1"
