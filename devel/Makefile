@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.432 2001/02/11 19:14:56 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.433 2001/02/12 14:59:53 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -172,6 +172,7 @@
     SUBDIR += libxalloc
     SUBDIR += lincvs
     SUBDIR += linguist
+    SUBDIR += linux-libglade
     SUBDIR += linux_devtools
     SUBDIR += linux_kdump
     SUBDIR += linuxthreads
