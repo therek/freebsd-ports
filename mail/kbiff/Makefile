@@ -3,7 +3,7 @@
 # Date created:		So  14 Jun 1998 13:09:18 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/mail/kbiff/Makefile,v 1.13 1999/08/31 06:47:22 mharo Exp $
+# $FreeBSD: ports/mail/kbiff/Makefile,v 1.14 2000/01/16 21:41:25 kris Exp $
 #
 
 DISTNAME=	kbiff-2.3.12
@@ -12,7 +12,7 @@ MASTER_SITES=	http://home.sprintmail.com/~granroth/kbiff/
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	kdeui.2:${PORTSDIR}/x11/kdelibs11 \
+LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11 \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_QT=		yes

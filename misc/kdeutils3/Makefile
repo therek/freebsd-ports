@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.35 1999/09/18 09:02:06 se Exp $
+# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.36 2000/02/15 13:45:04 imura Exp $
 #
 
 DISTNAME=	kdeutils-1.1.2
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 MAINTAINER=	se@freebsd.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11
+		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_BZIP2=	yes
 USE_QT=		yes

@@ -3,7 +3,7 @@
 # Date created:        18 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ksamba/Makefile,v 1.11 1999/08/30 14:23:07 peter Exp $
 #
 
 DISTNAME=	ksamba-0.3.3
@@ -13,10 +13,10 @@ MASTER_SITE_SUBDIR= unstable/apps/network
 
 MAINTAINER=	hanspb@persbraten.vgs.no
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
-		kfm.2:${PORTSDIR}/x11/kdelibs11 \
-		kfile.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
+		kfm.3:${PORTSDIR}/x11/kdelibs11 \
+		kfile.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes

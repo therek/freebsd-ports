@@ -4,7 +4,7 @@
 # Date created:			  Fri Sep 10, 1999
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/security/kmap/Makefile,v 1.4 2000/01/13 20:13:49 obrien Exp $
+# $FreeBSD: ports/security/kmap/Makefile,v 1.5 2000/02/13 03:23:35 obrien Exp $
 #
 
 DISTNAME=	kmap-0.7.1
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.islc.net/~icszepp/downloads/
 
 MAINTAINER=	obrien@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_XLIB=	yes

@@ -3,7 +3,7 @@
 # Date created:				30 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/kplot3d/Makefile,v 1.2 1999/12/26 23:33:35 jedgar Exp $
+# $FreeBSD: ports/graphics/kplot3d/Makefile,v 1.3 2000/01/07 16:40:04 asami Exp $
 #
 
 DISTNAME=	kplot3d-0.70
@@ -12,7 +12,7 @@ MASTER_SITES=	http://members.xoom.com/kplot3d/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 FETCH_BEFORE_ARGS=	-b  # members.xoom.com is broken
 USE_QT=		yes

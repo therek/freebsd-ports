@@ -3,7 +3,7 @@
 # Date created:        6 June 1999
 # Whom:                Tomer Weller
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/knewmail/Makefile,v 1.2 1999/08/25 06:50:15 obrien Exp $
 #
 
 DISTNAME=      knewmail-3.1
@@ -13,7 +13,7 @@ EXTRACT_SUFX=  .src.tar.gz
 
 MAINTAINER=    wellers@netvision.net.il
 
-LIB_DEPENDS=    kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=    kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 HAS_CONFIGURE=	yes
 KDEDIR=         ${PREFIX}

@@ -3,7 +3,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.1.1.1 2000/02/12 21:50:42 jedgar Exp $
 #
 
 DISTNAME=	kdevelop-1.0
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://fara.cs.uni-potsdam.de/pub/kdevelop/ \
 
 MAINTAINER=	andrews@technologist.com
 
-LIB_DEPENDS=	kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
 
 GNU_CONFIGURE=	yes

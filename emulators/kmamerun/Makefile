@@ -3,7 +3,7 @@
 # Date created:		24 Nov 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/emulators/kmamerun/Makefile,v 1.4 2000/01/22 18:20:40 nsayer Exp $
+# $FreeBSD: ports/emulators/kmamerun/Makefile,v 1.5 2000/02/23 00:14:11 asami Exp $
 #
 
 DISTNAME=	kmamerun-0.3.0pre1
@@ -14,8 +14,8 @@ MASTER_SITES=	ftp://ftp.sad.it/pub/kde/local/
 MAINTAINER=	nsayer@freebsd.org
 
 RUN_DEPENDS=	xmame:${PORTSDIR}/emulators/xmame
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11
 
 GNU_CONFIGURE=	yes
 USE_QT=		yes

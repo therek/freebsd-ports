@@ -3,7 +3,7 @@
 # Date created:        24 May 1999
 # Whom:                Oscar Bonilla <obonilla@fisicc-ufm.edu>
 #
-# $FreeBSD: ports/audio/kmp3/Makefile,v 1.2 1999/08/25 04:35:40 obrien Exp $
+# $FreeBSD: ports/audio/kmp3/Makefile,v 1.3 2000/01/28 10:38:40 reg Exp $
 #
 
 DISTNAME=	kmp3-0.2.2
@@ -13,8 +13,8 @@ MASTER_SITE_SUBDIR=	stable/1.1/apps/multimedia/sound
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:        15 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.5 1999/12/10 01:31:56 imura Exp $
+# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.6 2000/02/05 10:55:43 dirk Exp $
 #
 
 DISTNAME=	kvidtune-0.4.1
@@ -13,10 +13,10 @@ MASTER_SITE_SUBDIR= unstable/apps/admin
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
-		kfm.2:${PORTSDIR}/x11/kdelibs11 \
-		kfile.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
+		kfm.3:${PORTSDIR}/x11/kdelibs11 \
+		kfile.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes

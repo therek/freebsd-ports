@@ -3,7 +3,7 @@
 # Date created:        09 April 1998
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/palm/kpilot/Makefile,v 1.26 2000/02/15 14:37:13 imura Exp $
+# $FreeBSD: ports/palm/kpilot/Makefile,v 1.27 2000/02/19 22:13:20 dima Exp $
 #
 
 DISTNAME=	kpilot-3.0.2
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.slac.com/pilone/kpilot_home/download/
 MAINTAINER=	dima@freebsd.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11
+		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 KDEDIR?=	$(PREFIX)

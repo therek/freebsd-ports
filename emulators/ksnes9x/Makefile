@@ -3,7 +3,7 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.1 2000/01/05 02:31:48 cpiazza Exp $
+# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.2 2000/02/13 13:05:47 jedgar Exp $
 #
 
 DISTNAME=	ksnes9x-1.2
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.esquadro.com.br/~ismore/
 
 MAINTAINER=	andrews@technologist.com
 
-LIB_DEPENDS=	kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	snes9x:${PORTSDIR}/emulators/snes9x
 
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.39 1999/09/18 09:02:07 se Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.40 2000/02/15 13:45:02 imura Exp $
 #
 
 DISTNAME=	kdenetwork-1.1.2
@@ -17,11 +17,11 @@ BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		uu.1:${PORTSDIR}/converters/uulib \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		QwSpriteField.6:${PORTSDIR}/converters/kdesupport11 \
-		js.2:${PORTSDIR}/converters/kdesupport11 \
-		mimelib.1:${PORTSDIR}/converters/kdesupport11 \
-		rdb.55:${PORTSDIR}/converters/kdesupport11
+		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		QwSpriteField.7:${PORTSDIR}/converters/kdesupport11 \
+		js.3:${PORTSDIR}/converters/kdesupport11 \
+		mimelib.2:${PORTSDIR}/converters/kdesupport11 \
+		rdb.56:${PORTSDIR}/converters/kdesupport11
 
 USE_BZIP2=	yes
 USE_QT=		yes

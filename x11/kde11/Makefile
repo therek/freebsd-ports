@@ -3,7 +3,7 @@
 # Date created:        4 November 1997
 # Whom:                Satoshi Asami <asami@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde11/Makefile,v 1.23 1999/08/31 02:50:23 peter Exp $
+# $FreeBSD: ports/x11/kde11/Makefile,v 1.24 1999/09/18 09:02:09 se Exp $
 #
 
 DISTNAME=	kde-1.1.2
@@ -13,7 +13,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	se@freebsd.org
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase11 \
 		kcalc:${PORTSDIR}/misc/kdeutils11 \
 		kmahjongg:${PORTSDIR}/games/kdegames11 \

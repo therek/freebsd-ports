@@ -3,7 +3,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/klyx/Makefile,v 1.12 1999/08/31 01:44:55 peter Exp $
 #
 
 DISTNAME=	klyx-0.10.0
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR= unstable/apps/office
 
 MAINTAINER=	tom@eborcom.com
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes

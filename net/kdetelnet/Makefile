@@ -3,7 +3,7 @@
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.6 2000/02/15 13:45:02 imura Exp $
+# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.7 2000/02/21 23:40:32 cpiazza Exp $
 #
 
 DISTNAME=	ktelnet-0.61
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hanspb@persbraten.vgs.no
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="$(CXXFLAGS)" \

@@ -3,7 +3,7 @@
 # Date created:        12 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/x11/kworldwatch/Makefile,v 1.15 1999/09/18 03:12:08 steve Exp $
+# $FreeBSD: ports/x11/kworldwatch/Makefile,v 1.16 2000/02/15 13:45:22 imura Exp $
 #
 
 DISTNAME=	kworldwatch-0.6
@@ -14,9 +14,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	scrappy@freebsd.org
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
-		kfm.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
+		kfm.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes

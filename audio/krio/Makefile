@@ -3,7 +3,7 @@
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD: ports/audio/krio/Makefile,v 1.1 2000/01/29 22:19:15 steve Exp $
+# $FreeBSD: ports/audio/krio/Makefile,v 1.2 2000/02/20 20:48:51 steve Exp $
 #
 
 DISTNAME=	Krio-19990721
@@ -13,10 +13,10 @@ MASTER_SITES=	ftp://ftp.13th-floor.org/pub/krio/
 
 MAINTAINER=	ak@freenet.co.uk
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
-		kfm.2:${PORTSDIR}/x11/kdelibs11 \
-		kfile.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
+		kfm.3:${PORTSDIR}/x11/kdelibs11 \
+		kfile.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 

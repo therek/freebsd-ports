@@ -3,7 +3,7 @@
 # Date created:        8 Feb 2000
 # Whom:                imura@FreeBSD.org
 #
-# $FreeBSD: ports/devel/kdelibdocs/Makefile,v 1.1 2000/02/08 16:19:36 imura Exp $
+# $FreeBSD: ports/devel/kdelibdocs/Makefile,v 1.2 2000/02/24 05:48:19 imura Exp $
 #
 
 DISTNAME=	kdelibdocs-1.1beta2
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://129.187.206.68/pub/unix/ide/KDevelop/documentation/ \
 
 MAINTAINER=	imura@FreeBSD.org
 
-LIB_DEPENDS?=	kdecore.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS?=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:				17 Oct 1998
 # Whom:					Frank Gruender
 #
-# $FreeBSD: ports/devel/qtarch/Makefile,v 1.4 1999/08/25 05:50:01 obrien Exp $
+# $FreeBSD: ports/devel/qtarch/Makefile,v 1.5 1999/10/27 09:02:48 mharo Exp $
 #
 
 DISTNAME=	qtarch-1.4-4
@@ -13,8 +13,8 @@ MASTER_SITES=	http://www.qtarch.intranova.net/
 
 MAINTAINER=	elwood@mc5sys.in-berlin.de
 
-LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11
 
 FETCH_BEFORE_ARGS=	-b
 USE_QT=		yes

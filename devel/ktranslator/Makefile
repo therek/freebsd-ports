@@ -3,7 +3,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.4 1999/08/25 05:48:14 obrien Exp $
+# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.5 2000/02/23 00:14:05 asami Exp $
 #
 
 DISTNAME=	ktranslator-0.4.0
@@ -13,12 +13,11 @@ MASTER_SITE_SUBDIR= stable/1.1/apps/utils
 
 MAINTAINER=	hanspb@persbraten.vgs.no
 
-BUILD_DEPENDS=	moc:${PORTSDIR}/x11-toolkits/qt142 \
-		msgfmt:${PORTSDIR}/devel/gettext
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
-		kfm.2:${PORTSDIR}/x11/kdelibs11
+		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
+		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
+		kfm.3:${PORTSDIR}/x11/kdelibs11
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
