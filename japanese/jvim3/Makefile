@@ -2,7 +2,7 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.22 2001/06/30 09:44:15 taoka Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.23 2001/07/05 19:49:03 taoka Exp $
 #
 
 PORTNAME=	jvim
@@ -71,6 +71,11 @@ FEPLIBS+=	-L${LOCALBASE}/lib -ljd -lcrypt
 INPUT_METHOD+=	wnn6
 LIB_DEPENDS+=	jd.0:${PORTSDIR}/japanese/FreeWnn-lib
 RUN_DEPENDS+=	${LOCALBASE}/lib/wnn/ja_JP/rk.wnn6/2B_ROMKANA:${PORTSDIR}/japanese/onew${INPUT_METHOD}
+FEPLIBS+=	-L${LOCALBASE}/lib -ljd -lcrypt
+.elif defined(WNN7)
+INPUT_METHOD+=	wnn7
+LIB_DEPENDS+=	jd.0:${PORTSDIR}/japanese/FreeWnn-lib
+RUN_DEPENDS+=	${LOCALBASE}/lib/wnn/ja_JP/rk.wnn7/2B_ROMKANA:${PORTSDIR}/japanese/onew${INPUT_METHOD}
 FEPLIBS+=	-L${LOCALBASE}/lib -ljd -lcrypt
 .endif
 .endif # DIRECT_CANNA

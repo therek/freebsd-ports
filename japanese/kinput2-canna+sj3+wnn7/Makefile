@@ -1,13 +1,13 @@
-# New ports collection makefile for:	kinput2-canna+sj3+wnn6
-# Date created:		19 Dec 1997
+# New ports collection makefile for:	kinput2-canna+sj3+wnn7
+# Date created:		01/07/18
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-canna+sj3+wnn6/Makefile,v 1.7 2000/09/08 04:34:27 taoka Exp $
+# $FreeBSD$
 #
 
 CANNA=		yes
 SJ3=		yes
-WNN6=		yes
+WNN7=		yes
 
 MASTERDIR=	${.CURDIR}/../kinput2-freewnn/
 PKGDIR=		${.CURDIR}

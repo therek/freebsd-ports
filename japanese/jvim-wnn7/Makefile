@@ -1,12 +1,11 @@
-# New ports collection makefile for:	jvim for Wnn6
-# Date created:		5 Sep 1997
+# New ports collection makefile for:	jvim for Wnn7
+# Date created:		01/07/18
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim-wnn6/Makefile,v 1.5 2000/04/11 14:14:09 knu Exp $
+# $FreeBSD$
 #
 
-PKGNAMESUFFIX=	-wnn6
-WNN6=		yes
+WNN7=		yes
 
 MASTERDIR=	${.CURDIR}/../jvim
 PKGDIR=		${.CURDIR}
