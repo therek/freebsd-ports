@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.147 2001/01/01 01:31:47 grog Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.148 2001/01/03 10:28:00 nbm Exp $
 #
 
     SUBDIR += agrep
@@ -121,6 +121,7 @@
     SUBDIR += sgmltools-lite
     SUBDIR += sgrep
     SUBDIR += sp
+    SUBDIR += tdtd.el
     SUBDIR += texi2html
     SUBDIR += textutils
     SUBDIR += tkdiff
