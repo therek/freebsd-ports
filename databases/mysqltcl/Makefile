@@ -2,20 +2,20 @@
 # Date created:				August 31, 1999
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/mysqltcl/Makefile,v 1.1 2000/04/06 04:07:44 will Exp $
+# $FreeBSD: ports/databases/mysqltcl/Makefile,v 1.2 2000/04/08 22:48:36 mharo Exp $
 #
 
 PORTNAME=	mysqltcl
 PORTVERSION=	1.53
-CATEGORIES=	databases tcl80
-MASTER_SITES=	http://www.mysql.com/Contrib/
+CATEGORIES=	databases tcl83
+MASTER_SITES=	http://www.mysql.com/Downloads/Contrib/
 
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client \
 		${TCL_NODOT}:${PORTSDIR}/lang/${TCL_NODOT}
 
-TCL_VERSION?=	tcl8.0
+TCL_VERSION?=	tcl8.3
 TCL_NODOT=	${TCL_VERSION:S/.//}
 SQL_DIR=	${PREFIX}/lib/${TCL_VERSION}/mysqltcl
 PLIST_SUB+=	TCL_VERSION=${TCL_VERSION} LIB_NAME=${LIB_NAME}
