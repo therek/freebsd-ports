@@ -2,7 +2,7 @@
 # Date created:         19 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.20 2001/07/07 04:42:33 okazaki Exp $
+# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.21 2001/07/11 11:22:51 tg Exp $
 #
 
 PORTNAME=	gnustep-gui
@@ -38,7 +38,8 @@ GNU_ARCH=	ix86
 .else
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
-PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION}
+PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION} \
+		MAJORVERSION=${PORTVERSION:C/([0-9]).*/\1/1}
 
 SYSLIBDIR=	${PREFIX}/System/Libraries
 
