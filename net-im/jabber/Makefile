@@ -2,7 +2,7 @@
 # Date created:			5 February 2001
 # Whom:				joe
 #
-# $FreeBSD: ports/net/jabber/Makefile,v 1.10 2001/09/11 14:51:14 sf Exp $
+# $FreeBSD: ports/net/jabber/Makefile,v 1.11 2001/10/05 00:38:41 petef Exp $
 #
 
 PORTNAME=	jabber
@@ -19,7 +19,7 @@ DISTFILES+=	jabber-1.4.1.tar.gz \
 		msn-transport-1.1.tar.gz \
 		yahoo-transport-0.8-1.4.linux.tar.gz
 
-MAINTAINER=	joe@FreeBSD.org
+MAINTAINER=	sean@chittenden.org
 
 LIB_DEPENDS=	pth:${PORTSDIR}/devel/pth
 
