@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.198 2000/12/23 11:17:42 alex Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.199 2000/12/23 15:32:44 alex Exp $
 #
 
     SUBDIR += afsp
@@ -22,6 +22,7 @@
     SUBDIR += csound-manual
     SUBDIR += dagrab
     SUBDIR += dap
+    SUBDIR += ecasound
     SUBDIR += esound
     SUBDIR += extace
     SUBDIR += fcplay
