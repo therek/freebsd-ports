@@ -25,7 +25,7 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.\"	$FreeBSD$
+.\"	$FreeBSD: ports/sysutils/etcmerge/src/etcmerge.8,v 1.1 2003/07/30 16:55:35 eivind Exp $
 .\"
 .Dd July 5, 2003
 .Dt ETCMERGE 1
@@ -95,7 +95,12 @@ First, ensure you have a copy of the /etc distributed by FreeBSD (BEFORE you or
 .Xr sysinstall 8
 started modifying it) stored in
 .Pa /var/db/etc .
-The easiest way to do this is to run
+There are two easy ways to do this: Either download a copy matching your
+installation from
+.Pa http://people.freebsd.org/~eivind/etc/
+and extract this in
+.Pa /var/db/
+or run
 .Xr mergemaster 8
 one last time, and copy
 .Pa /var/tmp/temproot/etc
