@@ -1,16 +1,16 @@
 # New ports collection makefile for:    astrolog
-#
+# See some useful stuff at:
 # http://rpkalf2.mach.uni-karlsruhe.de/~ferber/astrolog/
-# http://www.magitech.com/~cruiser1/astrolog.htm
 #
 # Date created:         31 July 1995
 # Whom:                 faulkner@cactus.org
 #
-# $FreeBSD: ports/misc/astrolog/Makefile,v 1.20 2000/04/14 08:45:20 asami Exp $
+# $FreeBSD: ports/misc/astrolog/Makefile,v 1.21 2001/01/16 17:31:37 sobomax Exp $
 #
 
 PORTNAME=	astrolog
 PORTVERSION=	5.40
+PORTREVISION=   1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.astrolog.org/ftp/ephem/ \
 		http://www.astrolog.org/ftp/ \
