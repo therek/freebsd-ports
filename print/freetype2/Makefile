@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/freetype2/Makefile,v 1.22 2000/11/13 17:06:48 sobomax Exp $
 #
 
 PORTNAME=	freetype2
@@ -17,7 +17,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ring.nacsis.ac.jp/pub/graphics/freetype/ \
 		ftp://ring.so-net.ne.jp/pub/graphics/freetype/ \
 		ftp://ftp.freetype.org/pub/freetype1/
-MASTER_SITE_SUBDIR=	${PORTNAME}
+MASTER_SITE_SUBDIR=	${PORTNAME:S/2//}
+DISTNAME=	${PORTNAME:S/2//}-${PORTVERSION}
 
 MAINTAINER=	jseger@FreeBSD.org
 
