@@ -2,7 +2,7 @@
 # Date created:         22 March 2000
 # Whom:                 Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/graphics/pvmpov/Makefile,v 1.1.1.1 2000/05/29 08:47:48 sobomax Exp $
 #
 
 PORTNAME=	pvmpov
@@ -26,7 +26,8 @@ BUILDBASE=	${WRKSRC}/povray31/source/pvm
 PVM_ROOT=	${LOCALBASE}/lib/pvm
 
 pre-configure:
-		@ (cd ${PORTSDIR}/graphics/povray31/work && ${TAR} -c -f - povray31 ) \
+		@ (cd ${WRKDIRPREFIX}${.CURDIR}/../../graphics/povray31/work && \
+			 ${TAR} -c -f - povray31 ) \
 			| (cd ${WRKSRC} && ${TAR} --unlink -x -f -)
 		@ cd ${WRKSRC} && ${PATCH} -p0 -s < pvmpov.patch
 		@ ${PERL} -pi -e "s|%X11BASE%|${X11BASE}| ; s|%LOCALBASE%|${LOCALBASE}|" \
