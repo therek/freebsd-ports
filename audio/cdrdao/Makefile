@@ -3,7 +3,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.8 1999/08/29 04:45:19 cpiazza Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.9 1999/08/29 06:25:05 cpiazza Exp $
 #
 # If You don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
@@ -61,6 +61,12 @@ pre-fetch:
 	@${ECHO_MSG} "    make XCDRDAO=yes"
 .else
 	@${ECHO_MSG} "Building with xcdrdao"
+.endif
+
+.if ${MACHINE_ARCH} == "alpha"
+post-extract:
+	@(cd ${WRKSRC}/scsilib/RULES; \
+	  ln -sf i386-freebsd-cc.rul alpha-freebsd-cc.rul)
 .endif
 
 post-install:
