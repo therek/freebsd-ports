@@ -2,11 +2,11 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.24 2000/06/16 10:37:15 sobomax Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.25 2000/06/16 21:50:36 asami Exp $
 #
 
 PORTNAME=	cooledit
-PORTVERSION=	3.14.1
+PORTVERSION=	3.15.3
 CATEGORIES=	editors
 MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://www.netins.net/showcase/Comput-IT/cooledit/src/
