@@ -3,7 +3,7 @@
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
 # $NetBSD: Makefile,v 1.2 2000/03/16 14:08:38 wiz Exp $
-# $FreeBSD$
+# $FreeBSD: ports/textproc/cdif/Makefile,v 1.1.1.1 2000/07/22 13:51:22 sanpei Exp $
 #
 
 PORTNAME=		cdif
@@ -25,7 +25,7 @@ do-extract:
 
 # assumes perl is in ${LOCALBASE}/bin/perl
 do-patch:
-	${SED} -e '1s@/usr/local/bin/perl@${LOCALBASE}/bin/perl@' \
+	${SED} -e '1s@/usr/local/bin/perl@/usr/bin/perl@' \
 		< ${WRKSRC}/${DISTNAME}.dist > ${WRKSRC}/${DISTNAME}
 
 do-install:
