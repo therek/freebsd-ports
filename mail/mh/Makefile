@@ -3,7 +3,7 @@
 # Date created:		Oct 4, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/mh/Makefile,v 1.14 1999/08/25 06:50:29 obrien Exp $
+# $FreeBSD: ports/mail/mh/Makefile,v 1.15 1999/08/31 06:47:29 mharo Exp $
 #
 
 DISTNAME=	mh-6.8.3
@@ -16,6 +16,8 @@ PATCH_SITES=	ftp://ftp.ics.uci.edu/pub/mh/updates/
 PATCHFILES=	MH.6.8.4.Z
 
 MAINTAINER=	pst@FreeBSD.org
+
+FORBIDDEN=	"Buffer overflow in MIME parsing code, exploitable via email."
 
 MAN1=	ali.1 anno.1 burst.1 comp.1 dist.1 folder.1 forw.1 inc.1 mark.1  \
 	mh-chart.1 mh.1 mhl.1 mhook.1 mhmail.1 mhn.1 mhparam.1 mhpath.1  \
