@@ -3,26 +3,25 @@
 # Date created:			So   2 M-Aär 1997 18:10:49 MET$)B
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/wwwstat/Makefile,v 1.13 1999/08/31 06:52:24 mharo Exp $
+# $FreeBSD: ports/www/wwwstat/Makefile,v 1.14 1999/09/10 20:46:59 taoka Exp $
 #
 
-DISTNAME=	wwwstat-2.01
+DISTNAME=	wwwstat-2.0
+PKGNAME=	wwwstat-2.01
 CATEGORIES=	www
 MASTER_SITES=	ftp://www.ics.uci.edu/pub/websoft/wwwstat/ \
 		ftp://ftp.gwdg.de/pub/misc/www-stat/websoft/wwwstat/
-DISTFILES=	wwwstat-2.0.tar.gz
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	patch-2.01.txt
 
 MAINTAINER=	andreas@FreeBSD.org
 
-RUN_DEPENDS=    ${PREFIX}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
+RUN_DEPENDS=    ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
 
 USE_PERL5=	yes
 MAKE_ENV+=	PERL5=${PERL5}
 DIST_SUBDIR=	wwwstat
-WRKSRC=		${WRKDIR}/wwwstat-2.0
 MAN1=		wwwstat.1 splitlog.1
 SITEPERL=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}
 
