@@ -3,12 +3,12 @@
 # Date created:			  Thu Aug 23, 2001
 # Whom:				  David W. Chapman Jr. (dwcjr@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.2 2001/08/28 16:52:45 dwcjr Exp $
+# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.3 2001/08/29 05:16:22 dwcjr Exp $
 #
 
 PORTNAME=	diskcheckd
 PORTVERSION=	20010823
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	sysutils
 MASTER_SITES=	# part of port
 DISTFILES=	# part of port
@@ -24,7 +24,7 @@ MANCOMPRESSED=	no
 
 NO_WRKSUBDIR=	yes
 
-CFLAGS+=	-D_PATH_CONF='\"${PREFIX}/etc\"'
+CFLAGS+=	-D_PATH_CONF='\"${PREFIX}/etc/diskcheckd.conf\"'
 
 .include <bsd.port.pre.mk>
 
