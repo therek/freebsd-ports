@@ -3,7 +3,7 @@
 # Date created:		27 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/icqnix/Makefile,v 1.1.1.1 1999/08/28 02:36:03 jim Exp $
 #
 
 DISTNAME=	icqnix-beta1
@@ -13,11 +13,11 @@ MASTER_SITES=	http://icqnix.linuxbox.com/
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
-LIB_DEPENDS=	qt.2:${PORTSDIR}/x11-toolkits/qt142
 RUN_DEPENDS=	esdplay:${PORTSDIR}/audio/esound
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_QT=		yes
 
 post-install:
 	@strip ${PREFIX}/bin/icqnix

@@ -3,7 +3,7 @@
 # Date created:		24 Nov 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/kmamerun/Makefile,v 1.4 2000/01/22 18:20:40 nsayer Exp $
 #
 
 DISTNAME=	kmamerun-0.3.0pre1
@@ -14,12 +14,11 @@ MASTER_SITES=	ftp://ftp.sad.it/pub/kde/local/
 MAINTAINER=	nsayer@freebsd.org
 
 RUN_DEPENDS=	xmame:${PORTSDIR}/emulators/xmame
-LIB_DEPENDS=	qt.2:${PORTSDIR}/x11-toolkits/qt142 \
-		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
+LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)"
+GNU_CONFIGURE=	yes
+USE_QT=		yes
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
 		INSTALL_SCRIPT="install -c -m 555"
 
