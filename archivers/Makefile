@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.38 2000/06/20 15:04:28 sobomax Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.39 2000/06/28 05:01:45 wes Exp $
 #
 
     SUBDIR += 9e
@@ -24,6 +24,7 @@
     SUBDIR += pkzip
     SUBDIR += ppunpack
     SUBDIR += rar
+    SUBDIR += ruby-zlib
     SUBDIR += unace
     SUBDIR += unarj
     SUBDIR += undms
