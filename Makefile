@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.55 2000/07/19 18:16:10 asami Exp $
+# $FreeBSD: ports/Makefile,v 1.56 2000/07/20 03:04:15 asami Exp $
 #
 
 SUBDIR += archivers
@@ -19,6 +19,7 @@ SUBDIR += ftp
 SUBDIR += games
 SUBDIR += german
 SUBDIR += graphics
+SUBDIR += hebrew
 SUBDIR += irc
 SUBDIR += japanese
 SUBDIR += java
