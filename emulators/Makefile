@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.53 2000/07/17 00:28:22 steve Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.54 2000/07/28 20:27:42 sada Exp $
 #
 
     SUBDIR += aftp
@@ -37,6 +37,7 @@
     SUBDIR += tuxnes
     SUBDIR += twin
     SUBDIR += vgb
+    SUBDIR += vgb-bin
     SUBDIR += vice
     SUBDIR += vMac
     SUBDIR += vmsbackup
