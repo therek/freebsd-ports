@@ -3,19 +3,17 @@
 # Date created:			Jul 11, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/devel/p5-Date-Leapyear/Makefile,v 1.2 2001/08/05 04:43:58 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Date-Leapyear
-PORTVERSION=	1.06
+PORTVERSION=	1.7
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
-
-WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION:S/0//}
 
 PERL_CONFIGURE=	yes
 
