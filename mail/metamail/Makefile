@@ -2,13 +2,14 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.15 2000/09/12 13:03:55 asami Exp $
+# $FreeBSD: ports/mail/metamail/Makefile,v 1.16 2000/11/10 11:52:32 sanpei Exp $
 #
 
 PORTNAME=	metamail
 PORTVERSION=	2.7
 CATEGORIES=	mail
-MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
+MASTER_SITES=	http://ftp.dmz.digex.net/pub/packages/mail/metamail/ \
+		ftp://thumper.bellcore.com/pub/nsb/
 DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
