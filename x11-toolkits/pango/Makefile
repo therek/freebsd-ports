@@ -2,7 +2,7 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.5 2001/05/11 16:36:49 ade Exp $
+# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.6 2001/05/14 12:15:32 sobomax Exp $
 #
 
 PORTNAME=	pango
@@ -27,8 +27,16 @@ CONFIGURE_ARGS=	--with-qt=no
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 3
+PLIST_SUB+=	XFREE4:="@comment "
+.else
+PLIST_SUB+=	XFREE4:=""
+.endif
+
 pre-patch:
 	@find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
 		's|\$\(libdir\)/pkgconfig|\$\(prefix\)/libdata/pkgconfig|g'
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
