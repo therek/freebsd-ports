@@ -2,7 +2,7 @@
 # Date created:		January 24, 1999
 # Whom:		mi@aldan.algebra.com
 #
-# $FreeBSD: ports/audio/raproxy/Makefile,v 1.7 2000/10/08 10:19:15 asami Exp $
+# $FreeBSD: ports/audio/raproxy/Makefile,v 1.8 2000/12/09 00:03:55 nsayer Exp $
 #
 
 PORTNAME=	raproxy
@@ -24,9 +24,7 @@ MAN8=		raproxy.8
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/raproxy ${PREFIX}/libexec
-.if !defined(NO_INSTALL_MANPAGES)
 	${INSTALL_MAN} ${WRKSRC}/raproxy.man ${PREFIX}/man/man8/raproxy.8
-.endif
 
 .if !defined(NOPORTDOCS)
 	-${MKDIR} ${PREFIX}/share/doc/raproxy
