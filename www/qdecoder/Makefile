@@ -2,11 +2,11 @@
 # Date created:         Sep 10 1999
 # Whom:                 CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/qdecoder/Makefile,v 1.4 2000/04/15 02:03:06 asami Exp $
+# $FreeBSD: ports/www/qdecoder/Makefile,v 1.5 2000/06/25 14:02:12 cjh Exp $
 #
 
 PORTNAME=	qDecoder
-PORTVERSION= 	6.0.2
+PORTVERSION= 	6.0.3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.qDecoder.org/pub/qDecoder/\
 		ftp://ftp2.qDecoder.org/pub/qDecoder/
@@ -24,7 +24,7 @@ post-install:
 .endfor
 	${MKDIR} ${PREFIX}/share/examples/qDecoder
 	-${RM} ${WRKSRC}/examples/*.o ${WRKSRC}/examples/*.cgi \
-	      ${WRKSRC}/examples/Makefile.in ${WRKSRC}/examples/maketest
+	      ${WRKSRC}/examples/Makefile.in
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/qDecoder
 
 
