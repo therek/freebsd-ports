@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.583 2001/07/02 08:14:08 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.584 2001/07/02 17:33:44 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -468,6 +468,7 @@
     SUBDIR += ruby-tzfile
     SUBDIR += ruby-unit
     SUBDIR += rudiments
+    SUBDIR += rvi
     SUBDIR += rvm
     SUBDIR += scandoc
     SUBDIR += sdcc
