@@ -2,11 +2,11 @@
 # Date created:         26 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/lha/Makefile,v 1.15 2000/04/08 23:17:46 mharo Exp $
+# $FreeBSD: ports/archivers/lha/Makefile,v 1.16 2000/07/31 10:20:08 kevlo Exp $
 #
 
 PORTNAME=	lha
-PORTVERSION=	1.14g
+PORTVERSION=    1.14h
 CATEGORIES=	archivers
 MASTER_SITES=	http://www2m.biglobe.ne.jp/~dolphin/lha/prog/ \
 		ftp://ftp.win.ne.jp/pub/misc/
