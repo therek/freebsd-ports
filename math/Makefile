@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.78 2000/07/10 03:44:11 steve Exp $
+# $FreeBSD: ports/math/Makefile,v 1.79 2000/08/07 06:09:18 knu Exp $
 #
 
     SUBDIR += PDL
@@ -45,6 +45,7 @@
     SUBDIR += p5-Set-IntSpan
     SUBDIR += pari
     SUBDIR += parmetis
+    SUBDIR += physcalc
     SUBDIR += plplot
     SUBDIR += pspp
     SUBDIR += py-gnuplot
