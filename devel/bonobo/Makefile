@@ -2,11 +2,11 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.27 2000/12/15 17:52:13 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.28 2001/01/05 15:36:09 ade Exp $
 #
 
 PORTNAME=	bonobo
-PORTVERSION=	0.31
+PORTVERSION=	0.33
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/bonobo
@@ -25,6 +25,8 @@ INSTALLS_SHLIB=	yes
 LIBTOOLFILES=	configure libefs/configure
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+MAN1=		bonobo-idl.1
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
