@@ -2,7 +2,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.99 2000/06/02 03:18:54 will Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.100 2000/09/02 03:56:56 kris Exp $
 #
 
 PORTNAME=	ssh2
@@ -55,11 +55,13 @@ post-install:
 .endfor
 .endif
 #
-	@if [ ! -f ${PREFIX}/etc/rc.d/sshd.sh ]; then \
+	@if [ "`grep ssh /etc/inetd.conf|grep -v ^#ssh`" = "" ]; then \
+	    if [ ! -f ${PREFIX}/etc/rc.d/sshd.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/sshd.sh startup file."; \
 		${SED} -e 's+!!PREFIX!!+${PREFIX}+' < ${FILESDIR}/sshd.sh \
 			> ${PREFIX}/etc/rc.d/sshd.sh; \
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/sshd.sh; \
+	    fi; \
 	fi
 
 .include <bsd.port.post.mk>
