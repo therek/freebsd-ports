@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.59 2001/06/16 20:02:08 roam Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -176,6 +176,7 @@ MASTER_SITE_PERL_CPAN+=	\
 #	ring.data-hotel.net		ring.yamanashi.ac.jp
 #	ring.nihon-u.ac.jp		ring.ctc.jp
 #	ring.riken.go.jp		ring.hosei.ac.jp
+#	ring.dcs.pref.mie.jp		ring.wakwak.com
 #
 # (The latest list is available at http://www.ring.gr.jp/)
 #
