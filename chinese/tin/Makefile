@@ -3,7 +3,7 @@
 # Date created:		2 Dec 1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/tin/Makefile,v 1.17 1999/08/25 04:58:02 obrien Exp $
 #
 
 DISTNAME=       tinpre-1.4-980818
@@ -15,8 +15,6 @@ MASTER_SITES=   ftp://ftp.tin.org/pub/news/clients/tin/current/ \
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=     yssu@CCCA.NCTU.edu.tw
-
-BROKEN_ELF=	build
 
 WRKSRC=         ${WRKDIR}/${DISTNAME:S/pre-1.4//}
 GNU_CONFIGURE=	yes
