@@ -2,7 +2,7 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.31 2001/05/21 07:43:25 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gqview
@@ -22,7 +22,9 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-.if defined(WITH_GNOME)
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
 USE_GNOME=	yes
 .endif
 
@@ -40,4 +42,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gqview
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
