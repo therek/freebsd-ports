@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.247 2001/08/24 18:29:54 petef Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.248 2001/08/25 07:44:27 kiri Exp $
 #
 
     SUBDIR += abook
@@ -88,6 +88,7 @@
     SUBDIR += mew-xemacs21
     SUBDIR += mew-xemacs21-mule
     SUBDIR += mew2-xemacs21
+    SUBDIR += mew2-xemacs21-mule
     SUBDIR += mh
     SUBDIR += minimalist
     SUBDIR += ml
