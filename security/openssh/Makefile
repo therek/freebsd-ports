@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.49 2000/04/20 22:24:08 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.50 2000/05/13 17:10:55 green Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -88,7 +88,7 @@ post-install:
 	${PREFIX}/bin/ssh-keygen -d -N "" -f ${PREFIX}/etc/ssh_host_dsa_key
 .endif
 .if !exists(${PREFIX}/etc/rc.d/sshd.sh)
-	@${NSTALL_SCRIPT} ${WRKSRC}/sshd.sh ${PREFIX}/etc/rc.d/
+	@${INSTALL_SCRIPT} ${WRKSRC}/sshd.sh ${PREFIX}/etc/rc.d/
 .endif
 .if !exists(${PREFIX}/etc/ssh_config) && !exists(${PREFIX}/etc/sshd_config)
 	@cd ${WRKSRC}; \
