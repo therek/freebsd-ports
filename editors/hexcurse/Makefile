@@ -3,11 +3,11 @@
 # Date created:			Jun 3, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/hexcurse/Makefile,v 1.1 2001/06/03 11:45:50 ijliao Exp $
 #
 
 PORTNAME=	hexcurse
-PORTVERSION=	1.01
+PORTVERSION=	1.2
 CATEGORIES=	editors
 MASTER_SITES=	http://jewfish.net/downloads/
 
