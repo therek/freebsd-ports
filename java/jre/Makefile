@@ -2,7 +2,7 @@
 # Date created:		8 May 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jre/Makefile,v 1.5 2000/06/30 01:23:22 will Exp $
+# $FreeBSD: ports/java/jre/Makefile,v 1.6 2000/07/06 13:35:39 sobomax Exp $
 #
 
 PORTNAME=	jre
@@ -78,5 +78,7 @@ do-install:
 
 post-install:
 	${LOCALBASE}/bin/registervm "${PREFIX}/jre${JRE_VERSION}/bin/java # JRE${JRE_VERSION}"
+	${LN} -sf ${LOCALBASE}/lib/shujit/libshujit.so ${PREFIX}/jre${JRE_VERSION}/lib/i386/green_threads/libshujit.so
+	${LN} -sf ${LOCALBASE}/lib/tya/libtya.so ${PREFIX}/jre${JRE_VERSION}/lib/i386/green_threads/libtya.so
 
 .include <bsd.port.post.mk>
