@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.101 2000/04/17 18:49:52 andreas Exp $
+# $FreeBSD: ports/security/Makefile,v 1.102 2000/04/22 10:42:43 kris Exp $
 #
 
     SUBDIR += bjorb
@@ -74,6 +74,7 @@
     SUBDIR += rsaref
     SUBDIR += saint
     SUBDIR += seahorse
+    SUBDIR += siphon
     SUBDIR += skip
     SUBDIR += slurpie
     SUBDIR += slush
