@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.385 2001/06/16 10:33:55 nakai Exp $
+# $FreeBSD: ports/games/Makefile,v 1.386 2001/06/16 10:34:39 nakai Exp $
 #
 
     SUBDIR += 0verkill
@@ -12,7 +12,6 @@
     SUBDIR += actx
     SUBDIR += adom
     SUBDIR += affenspiel
-    SUBDIR += agm
     SUBDIR += alephone
     SUBDIR += alephone-data
     SUBDIR += amphetamine
