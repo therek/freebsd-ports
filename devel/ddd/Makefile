@@ -4,7 +4,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.22 2000/02/07 02:35:27 obrien Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.23 2000/02/13 03:23:14 obrien Exp $
 #
 
 DISTNAME=	ddd-3.2
@@ -43,10 +43,10 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/PROBLEMS ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/doc/README ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/doc/ddd-paper.ps ${PREFIX}/share/doc/ddd
-	${INSTALL_DATA} ${WRKSRC}/doc/ddd.man.ps ${PREFIX}/share/doc/ddd
+	${INSTALL_DATA} ${WRKSRC}/doc/ddd.ps ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/doc/sample.dddinit ${PREFIX}/share/doc/ddd
 	${GZIP_CMD} ${PREFIX}/share/doc/ddd/ddd-paper.ps
-	${GZIP_CMD} ${PREFIX}/share/doc/ddd/ddd.man.ps
+	${GZIP_CMD} ${PREFIX}/share/doc/ddd/ddd.ps
 .endif
 
 check:
