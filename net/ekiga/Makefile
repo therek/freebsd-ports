@@ -2,7 +2,7 @@
 # Date created:				24/07/2001
 # Whom:					roger@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomemeeting/Makefile,v 1.1 2001/07/26 16:09:04 roger Exp $
+# $FreeBSD: ports/net/gnomemeeting/Makefile,v 1.2 2001/08/17 17:37:21 roger Exp $
 #
 
 PORTNAME=	gnomemeeting
@@ -22,7 +22,6 @@ BUILD_DEPENDS=  ${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 # it all over again which can take several hours.
 NOCLEANDEPENDS= yes
 
-#USE_X_PREFIX=   yes
 USE_NEWGCC=     yes
 USE_GNOME=	yes
 USE_AUTOCONF=	yes
@@ -30,8 +29,6 @@ USE_GTK=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	LIBS=-L${PREFIX}/lib \
 		PWLIBDIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/pwlib \
-		OPENH323DIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/openh323
-post-patch:
-		rm ${WRKSRC}/config.cache
+		OPENH323DIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/openh323 \
 
 .include <bsd.port.mk>
