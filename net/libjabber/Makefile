@@ -2,17 +2,17 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/libjabber/Makefile,v 1.1 2000/05/01 03:20:16 steve Exp $
 #
 
 PORTNAME=	libjabber
-PORTVERSION=	0.9
+PORTVERSION=	1.0
 CATEGORIES=     net
-MASTER_SITES=	http://download.jabber.org/dists/0.9/final/
+MASTER_SITES=	http://download.jabber.org/dists/1.0/
 
 MAINTAINER=	lukin@okbmei.msk.su
 
-LIB_DEPENDS=	xode.0:${PORTSDIR}/textproc/libxode
+LIB_DEPENDS=	xode.1:${PORTSDIR}/textproc/libxode
 
 USE_LIBTOOL=	yes
 
