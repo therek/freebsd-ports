@@ -3,7 +3,7 @@
 # Date created:			Apr 25, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/pfinger/Makefile,v 1.1 2001/04/26 17:20:33 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pfinger
@@ -14,7 +14,8 @@ MASTER_SITES=	ftp://ftp.xelia.ch/pub/unix/ \
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 MAN1=	finger.1 pfinger.1

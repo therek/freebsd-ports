@@ -2,7 +2,7 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/net/gnome-vnc/Makefile,v 1.5 2001/02/05 15:50:39 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnome-vnc
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/gnome/
 
 MAINTAINER=	domi@saargate.de
 
-USE_GNOMELIBS=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomelibs
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 

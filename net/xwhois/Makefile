@@ -2,7 +2,7 @@
 # Date created:        31 December 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/net/xwhois/Makefile,v 1.13 2000/04/09 18:14:04 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwhois
@@ -15,7 +15,8 @@ MASTER_SITES=	http://c64.org/~nr/ \
 MAINTAINER=	billf@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 do-install:
