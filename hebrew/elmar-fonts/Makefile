@@ -2,7 +2,7 @@
 # Date created:        23 March 2000
 # Whom:                nadav@cs.technion.ac.il
 #
-# $FreeBSD: ports/hebrew/elmar-fonts/Makefile,v 1.1 2000/08/02 11:05:18 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elmar-fonts
@@ -13,6 +13,7 @@ DISTNAME=	H.fonts
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	nadav@cs.technion.ac.il
+COMMENT=	A collection of Hebrew fonts from El-Mar software Ltd
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

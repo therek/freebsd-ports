@@ -2,7 +2,7 @@
 # Date created:				October 25 2000
 # Whom:					bremner@unb.ca
 #
-# $FreeBSD: ports/graphics/ipe/Makefile,v 1.2 2001/04/21 13:59:25 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Ipe
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.cs.uni-magdeburg.de/pub/ipe/ \
 		ftp://ftp.cs.ust.hk/pub/ipe/
 
 MAINTAINER=	bremner@unb.ca
+COMMENT=	Extensible drawing editor
 
 RUN_DEPENDS= 	gs:${PORTSDIR}/print/ghostscript-gnu \
 		latex:${PORTSDIR}/print/teTeX

@@ -2,7 +2,7 @@
 # Date created:			 	Jun 20th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/irc/trickyirc/Makefile,v 1.6 2000/04/12 06:28:32 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trickyirc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.leb.net/~troll/
 DISTNAME=	TrickyIRC-${PORTVERSION}
 
 MAINTAINER=	troll@digitalspark.net
+COMMENT=	Allows client independent detaching and reattaching of IRC sessions
 
 MAKEFILE=	GNUmakefile
 WRKSRC=		${WRKDIR}/trickyirc

@@ -2,7 +2,7 @@
 # Date created:				30 May 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/gracula/Makefile,v 1.5 1999/08/28 19:41:21 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gracula
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.whizkidtech.net/cgi/gcl/ \
 		http://www.whizkidtech.net/gcl/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	A Graphic Counter Language compiler/interpreter
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gracula ${PREFIX}/bin

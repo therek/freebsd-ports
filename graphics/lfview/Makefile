@@ -2,7 +2,7 @@
 # Date created:		24 February 1999
 # Whom:			Yuu Yashiki
 #
-# $FreeBSD: ports/graphics/lfview/Makefile,v 1.7 2000/10/29 17:47:23 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lfview
@@ -12,6 +12,7 @@ MASTER_SITES=	http://hoshina.denpa.org/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	s974123@cc.matsuyama-u.ac.jp
+COMMENT=	Graphic viewer for Leaf products
 
 USE_IMAKE=	yes
 INSTALLS_SHLIB=	yes

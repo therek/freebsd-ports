@@ -2,7 +2,7 @@
 # Date created:		26 July 1998
 # Whom:			Malte Lance <malte.lance@gmx.net>
 #
-# $FreeBSD: ports/graphics/4va/Makefile,v 1.5 2000/04/13 06:27:55 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	4va
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	apps/graphics/hacks/X
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	malte.lance@gmx.net
+COMMENT=	Four-Dimensional graphics tumbler for X11
 
 USE_XLIB=	yes
 MAN1=		4va.1

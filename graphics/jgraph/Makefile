@@ -2,7 +2,7 @@
 # Date created:		6 August 1999
 # Whom:			wolman@cs.washington.edu
 #
-# $FreeBSD: ports/graphics/jgraph/Makefile,v 1.1.1.1 1999/09/06 23:32:59 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jgraph
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://cs.utk.edu/pub/plank/jgraph/  \
 DISTFILES=	${PORTNAME}.shar.Z
 
 MAINTAINER=	wolman@cs.washington.edu
+COMMENT=	A program that generates postscript graphs
 
 EXTRACT_CMD=	uncompress
 EXTRACT_BEFORE_ARGS=	-c

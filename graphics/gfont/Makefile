@@ -2,7 +2,7 @@
 # Date created:			09-Sep-1997
 # Whom:				Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/graphics/gfont/Makefile,v 1.10 2000/01/07 16:40:02 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gfont
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/gfont/distrib/ \
 		http://www.hyperreal.org/software/engelschall/gfont/
 
 MAINTAINER=	rse@engelschall.com
+COMMENT=	Graphics Font - Create GIF image rendered with TeX-available Font
 
 RUN_DEPENDS=	mf:${PORTSDIR}/print/teTeX \
 		gftopk:${PORTSDIR}/print/teTeX \

@@ -2,7 +2,7 @@
 # Date created:				Nov 9, 1998
 # Whom:					laskavy@gambit.msk.su
 #
-# $FreeBSD: ports/graphics/GIFgraph/Makefile,v 1.8 2001/01/27 15:52:39 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GIFgraph
@@ -15,6 +15,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	GIFgraph-${PORTVERSION}
 
 MAINTAINER=	ls@gambit.com.ru
+COMMENT=	A Perl package to generate PNG charts
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD
 

@@ -2,7 +2,7 @@
 # Date created:         30 December 1997
 # Whom:                 Juergen Unger <j.unger@choin.net>
 #
-# $FreeBSD: ports/graphics/fly/Makefile,v 1.4 1999/09/04 20:07:01 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fly
@@ -11,6 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://www.unimelb.edu.au/pub/www/tools/unix/fly/
 
 MAINTAINER=	j.unger@choin.net
+COMMENT=	Simple drawing language to generate GIFs on the fly
 
 #this doesn't matter.. the program builds its own libgd.a.
 #BUILD_DEPENDS=	${PREFIX}/lib/libgd\.a #can't use ports' gd..

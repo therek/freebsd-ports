@@ -2,7 +2,7 @@
 # Date created:         Mar 15 1999
 # Whom:                 rox@fearme.com
 #
-# $FreeBSD: ports/irc/roxirc/Makefile,v 1.10 2001/01/07 17:49:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	roxirc
@@ -11,6 +11,7 @@ CATEGORIES=	irc tk83
 MASTER_SITES=	http://roxirc.lighter.net/download/
 
 MAINTAINER=	rox@fearme.com
+COMMENT=	A tcl/tk irc client
 
 RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 

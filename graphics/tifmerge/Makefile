@@ -2,7 +2,7 @@
 # Date created:		29 April 1999
 # Whom:			G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.9 2000/06/16 08:19:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tifmerge
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.whizkidtech.net/fports/
 DISTNAME=	tiff
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Library to merge TIFF files into multi-page TIFF files
 
 BUILD_DEPENDS=	tuc:${PORTSDIR}/converters/tuc
 

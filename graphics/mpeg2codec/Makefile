@@ -2,7 +2,7 @@
 # Date created:		November 25, 1996
 # Whom:			"Philippe Charnier" <charnier@lirmm.fr>
 #
-# $FreeBSD: ports/graphics/mpeg2codec/Makefile,v 1.6 1999/08/25 06:14:28 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpeg2codec
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.mpeg.org/pub/mpeg/mssg/
 DISTFILES=	mpeg2vidcodec_v12.tar.gz
 
 MAINTAINER=	charnier@lirmm.fr
+COMMENT=	An MPEG-2 Encoder and Decoder
 
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/mpeg2
