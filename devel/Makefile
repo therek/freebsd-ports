@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.272 2000/03/07 16:34:26 imura Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.273 2000/03/08 03:52:13 green Exp $
 #
 
     SUBDIR += ElectricFence
@@ -209,6 +209,7 @@
     SUBDIR += tkcon
     SUBDIR += tkcvs
     SUBDIR += tkref
+    SUBDIR += tmake
     SUBDIR += tvision
     SUBDIR += uclmmbase
     SUBDIR += ups-debug
