@@ -3,13 +3,13 @@
 # Whom:			ejc@bazzle.com
 # Version required:	3.0
 #
-# $FreeBSD: ports/devel/ORBacus/Makefile,v 1.26 1999/11/01 01:48:31 steve Exp $
+# $FreeBSD: ports/devel/ORBacus/Makefile,v 1.27 2000/01/11 21:10:49 ejc Exp $
 #
 
 DISTNAME=	OB-3.2.1
 PKGNAME=	ORBacus-3.2.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.ooc.com/pub/OB/3.2
+MASTER_SITES=	ftp://ftp.ooc.com/pub/OB/3.2/
 
 MAINTAINER=	ejc@bazzle.com
 
