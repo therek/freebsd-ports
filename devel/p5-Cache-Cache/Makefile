@@ -2,11 +2,11 @@
 # Date created:				29 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Cache-Cache/Makefile,v 1.1 2001/05/24 14:08:19 ijliao Exp $
+# $FreeBSD: ports/devel/p5-Cache-Cache/Makefile,v 1.2 2001/06/12 19:24:31 tobez Exp $
 #
 
 PORTNAME=	Cache-Cache
-PORTVERSION=	0.08
+PORTVERSION=	0.09
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Cache
