@@ -2,7 +2,7 @@
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.13 2001/03/06 11:39:27 sheldonh Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.14 2001/03/06 17:15:02 sheldonh Exp $
 #
 
 PORTNAME=	mod_perl
@@ -37,10 +37,6 @@ MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 PERLSITEDIR=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 
 .include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400000
-BROKEN=		"see PR 14924; use p5-Apache instead"
-.endif
 
 do-configure:
 	@ cd ${WRKSRC}; \
