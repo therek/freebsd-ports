@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.16 2002/01/11 12:05:29 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.17 2002/01/16 12:23:24 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -104,7 +104,7 @@ PYTHON_DISTFILE=	Python-2.1.1.tgz
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python21
 PYTHON_REL=			211
 PYTHON_SUFFIX=		21
-PYTHON_WRKSRC=		${WRKDIR}/Python-2.1
+PYTHON_WRKSRC=		${WRKDIR}/Python-2.1.1
 
 # Python-2.0
 .elif ${PYTHON_VERSION} == "python2.0"
