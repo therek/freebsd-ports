@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.357 2000/11/03 10:26:32 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.358 2000/11/07 23:27:49 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -834,7 +834,7 @@ USE_XLIB=				yes
 LIB_DEPENDS+=			GLU.1:${PORTSDIR}/graphics/Mesa3
 .endif
 XAWVER=					7
-PKG_IGNORE_DEPENDS?=	'()'
+PKG_IGNORE_DEPENDS?=	'this_port_does_not_exist'
 .endif
 PLIST_SUB+=				XAWVER=${XAWVER}
 
