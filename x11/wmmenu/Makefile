@@ -2,11 +2,11 @@
 # Date created:		16 November 2000
 # Whom:			Jeremy <karlj000@unbc.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wmmenu/Makefile,v 1.1 2000/11/21 06:52:56 dougb Exp $
 #
 
 PORTNAME=	wmmenu
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	x11
 MASTER_SITES=	http://www.fcoutant.freesurf.fr/download/
 
