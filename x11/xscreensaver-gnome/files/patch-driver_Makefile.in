@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11/xscreensaver-gnome/files/patch-driver_Makefile.in,v 1.2 2002/08/05 11:55:57 sobomax Exp $
 
 --- driver/Makefile.in.orig	Tue Jun 11 12:09:07 2002
 +++ driver/Makefile.in	Mon Aug  5 14:55:05 2002
@@ -19,7 +19,7 @@ $FreeBSD$
               echo $(INSTALL_DIRS) "$(install_prefix)$(GNOME_CCDIR)"          ;\
                    $(INSTALL_DIRS) "$(install_prefix)$(GNOME_CCDIR)"          ;\
             fi                                                                ;\
-+	   /usr/bin/sed 's|xscreensaver-demo|screensaver-properties-capplet|' \
++	   /usr/bin/sed 's|xscreensaver-demo.*|screensaver-properties-capplet|'\
 +			screensaver-properties.desktop >                      \
 +				screensaver-properties.desktop1              ;\
  	                                                                      \
