@@ -2,7 +2,7 @@
 # Date created:				3 March 2000
 # Whom:					Patrick Seal (patseal@hyperhost.net)
 #
-# $FreeBSD: ports/misc/boxes/Makefile,v 1.2 2000/04/14 08:45:24 asami Exp $
+# $FreeBSD: ports/misc/boxes/Makefile,v 1.3 2000/04/16 01:50:44 will Exp $
 #
 
 PORTNAME=	boxes
@@ -17,6 +17,7 @@ MAINTAINER=	patseal@hyperhost.net
 
 MAN1=		boxes.1
 USE_GMAKE=	yes
+USE_BISON=	yes
 ALL_TARGET=
 
 do-install:
