@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.8 2002/11/01 12:41:01 alane Exp $
+# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.9 2002/11/01 18:14:37 alane Exp $
 ######################################################################
 # standard opts from README
 export MOZ_PHOENIX=1
