@@ -2,11 +2,11 @@
 # Date created:				28 July 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/mmucl/Makefile,v 1.1 2000/09/16 04:21:20 will Exp $
 #
 
 PORTNAME=	mmucl
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/mmucl/
 
