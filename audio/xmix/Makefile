@@ -2,7 +2,7 @@
 # Date created:		30 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/audio/xmix/Makefile,v 1.7 1999/08/25 04:36:25 obrien Exp $
+# $FreeBSD: ports/audio/xmix/Makefile,v 1.8 2000/04/08 21:24:54 mharo Exp $
 #
 
 PORTNAME=	xmix
@@ -21,8 +21,10 @@ WRKSRC=		$(WRKDIR)/xmix
 
 MAN1=		xmix.1
 
-pre-install:
+pre-build:
 	${CP} ${WRKSRC}/xmix.1 ${WRKSRC}/xmix.man
+
+pre-install:
 	${INSTALL_DATA} $(WRKSRC)/XMix ${PREFIX}/lib/X11/app-defaults
 
 .include <bsd.port.mk>
