@@ -4,12 +4,12 @@
 # Date created:			  23-Aug-1995
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/mail/xlbiff/Makefile,v 1.9 1999/08/25 06:51:10 obrien Exp $
+# $FreeBSD: ports/mail/xlbiff/Makefile,v 1.10 2000/02/13 03:24:47 obrien Exp $
 
 DISTNAME=	xlbiff-3.0
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/  \
-		ftp://ftp.funet.fi/pub/X11/R5contrib/
+		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
