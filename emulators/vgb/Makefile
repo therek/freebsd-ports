@@ -3,16 +3,18 @@
 # Date created:        31 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vgb/Makefile,v 1.8 1999/08/25 05:49:43 obrien Exp $
 #
 
-DISTNAME=	GB
+DISTNAME=	VGB
 PKGNAME=	vgb-0.7
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_LOCAL}
-DISTFILES=	VGB.tar.Z
+EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/GB
 
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=  X11BASE=${X11BASE}
