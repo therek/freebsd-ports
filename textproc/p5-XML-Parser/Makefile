@@ -1,15 +1,17 @@
 # New ports collection makefile for:	XML::Parser
-# Version required:	2.26
+# Version required:	2.27
 # Date created:		15 Nov 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.5 1999/08/31 06:51:25 mharo Exp $
+# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.6 1999/09/06 14:11:21 kuriyama Exp $
 #
 
-DISTNAME=	XML-Parser-2.26
-PKGNAME=	p5-XML-Parser-2.26
+DISTNAME=	XML-Parser-2.27
+PKGNAME=	p5-XML-Parser-2.27
 CATEGORIES=	textproc perl5
-MASTER_SITES=	http://wwwx.netheaven.com/~coopercc/xmlparser/
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
+		http://wwwx.netheaven.com/~coopercc/xmlparser/
+MASTER_SITE_SUBDIR=	../by-authors/id/C/CO/COOPERCL
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
