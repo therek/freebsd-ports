@@ -2,7 +2,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.38 2001/06/12 11:05:45 mharo Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.39 2001/07/16 18:36:23 ben Exp $
 #
 
 PORTNAME=	analog
@@ -26,6 +26,8 @@ LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 MAN1=		analog.1
 ALL_TARGET=	analog
 
+.include <bsd.port.pre.mk>
+
 do-install:
 	${MKDIR} ${PREFIX}/share/analog/lang
 	${MKDIR} ${PREFIX}/www/data/images
@@ -42,4 +44,4 @@ do-install:
 .endif
 	${INSTALL_MAN} ${WRKSRC}/analog.man ${PREFIX}/man/man1/analog.1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
