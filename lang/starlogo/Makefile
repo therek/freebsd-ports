@@ -2,7 +2,7 @@
 # Date created:		14th November 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/lang/starlogo/Makefile,v 1.5 2001/04/05 10:17:17 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	starlogo
@@ -25,6 +25,6 @@ do-install:
 	@${MKDIR} ${PREFIX}/share/java/starlogo
 	@${INSTALL_SCRIPT} ${WRKSRC}/starlogo-unix ${PREFIX}/bin/starlogo
 	@(cd ${WRKSRC} && ${TAR} -c -f - .) \
-		| (cd ${PREFIX}/share/java/starlogo && && ${TAR} --unlink -x -f -)
+		| (cd ${PREFIX}/share/java/starlogo && ${TAR} --unlink -x -f -)
 
 .include <bsd.port.mk>
