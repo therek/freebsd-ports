@@ -3,7 +3,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.3 2000/02/25 07:49:16 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.4 2000/02/25 08:06:46 roger Exp $
 #
 
 DISTNAME=	openh323_1.1alpha1
@@ -20,7 +20,8 @@ MAINTAINER=	roger@freebsd.org
 WRKSRC=         ${WRKDIR}/openh323
 
 USE_BISON=	yes
-USE_GMAKE=      yes
+USE_XLIB=	yes
+USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIR}/pwlib \
 		OPENH323DIR=${WRKDIR}/openh323
