@@ -2,11 +2,11 @@
 # Date Created:			24 Mar 2001
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/emacs-w3m-emacs20/Makefile,v 1.3 2001/05/24 02:30:11 knu Exp $
+# $FreeBSD: ports/www/emacs-w3m-emacs20/Makefile,v 1.4 2001/07/23 13:33:10 okazaki Exp $
 #
 
 PORTNAME=	emacs-w3m
-PORTVERSION=	1.0
+PORTVERSION=	1.1.100
 CATEGORIES=	www elisp
 MASTER_SITES=	http://emacs-w3m.namazu.org/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -40,7 +40,7 @@ DOCSDIR_JA=	${PREFIX}/share/doc/ja/${PORTNAME}
 
 .include <bsd.port.pre.mk>
 
-.if ${EMACS_NAME} == xemacs
+.if (${EMACS_NAME} == "xemacs")
 XEMACS_ONLY?=		""
 EMACS_ONLY?=		"@comment "
 SEMI_FILE=		${LOCALBASE}/${EMACS_PACKAGESDIR}/lisp/semi/mime-setup.el
