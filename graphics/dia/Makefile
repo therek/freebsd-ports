@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dia
-# Version required:    0.82
+# Version required:    0.83
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.1.1.1 1999/11/25 14:52:50 nakai Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.2 1999/12/23 01:53:12 jedgar Exp $
 #
 
-DISTNAME=	dia-0.82
+DISTNAME=	dia-0.83
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/dia
@@ -23,7 +23,8 @@ USE_X_PREFIX=   yes
 USE_LIBTOOL=	yes
 
 GNU_CONFIGURE=	yes
-
+CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
