@@ -2,12 +2,11 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.36 2001/05/04 00:49:15 mharo Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.37 2001/05/04 12:23:28 mharo Exp $
 #
 
 PORTNAME=	analog
-PORTVERSION=	5.0
-PORTREVISION=	1
+PORTVERSION=	5.01
 CATEGORIES=	www
 MASTER_SITES=	http://www.analog.cx/ \
 		http://www.monash.edu.au/mirror/analog/ \
@@ -23,6 +22,7 @@ LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 
+MAN1=		analog.1
 ALL_TARGET=	analog
 
 do-install:
@@ -39,5 +39,6 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/analog
 	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/analog
 .endif
+	${INSTALL_MAN} ${WRKSRC}/analog.man ${PREFIX}/man/man1/analog.1
 
 .include <bsd.port.mk>
