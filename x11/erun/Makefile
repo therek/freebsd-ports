@@ -2,7 +2,7 @@
 # Date created:				17 June 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/x11/erun/Makefile,v 1.1 2000/07/10 04:01:52 steve Exp $
+# $FreeBSD: ports/x11/erun/Makefile,v 1.2 2000/07/18 07:02:57 kbyanc Exp $
 #
 
 PORTNAME=	E-Run
@@ -17,5 +17,6 @@ LIB_DEPENDS=    epplet.1:${PORTSDIR}/x11-wm/libepplet
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 
 .include <bsd.port.mk>
