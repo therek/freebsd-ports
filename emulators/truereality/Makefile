@@ -2,7 +2,7 @@
 # Date Created:		28 November 1999
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/truereality/Makefile,v 1.8 2000/10/09 14:47:52 lioux Exp $
+# $FreeBSD: ports/emulators/truereality/Makefile,v 1.9 2001/02/22 02:49:44 lioux Exp $
 #
 
 PORTNAME=	truereality
@@ -26,7 +26,8 @@ DATE=		1999121400
 .include <bsd.port.pre.mk>
 
 .if ${ARCH} == "alpha"
-EXTRA_PATCHES=	${PATCHDIR}/extra-patch-alpha
+post-patch:
+	@cd ${WRKSRC} ; ${PATCH} < ${PATCHDIR}/extra-patch-alpha
 .endif
 
 do-install:
