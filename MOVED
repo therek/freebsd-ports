@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.382 2004/03/22 01:02:26 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.383 2004/03/23 06:12:59 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -990,3 +990,4 @@ editors/openoffice-1.1-gr|editors/openoffice-1.1-el|2004-03-20|correct ISO code
 print/rubber|textproc/rubber|2004-03-22|remove duplicate port
 print/libgnomeprint20||2004-03-23|removed obsolete port
 x11-toolkits/libgnomeprintui20||2004-03-23|removed obsolete port
+textproc/whitespace.el||2004-03-24|removed obsolete port
