@@ -1,7 +1,8 @@
-# $FreeBSD: ports/biology/Makefile,v 1.20 2000/07/31 19:13:53 nbm Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.21 2000/10/10 02:56:57 jeh Exp $
 #
 
     SUBDIR += babel
+    SUBDIR += biojava
     SUBDIR += chemeq
     SUBDIR += clustalw
     SUBDIR += deft
