@@ -2,11 +2,11 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.8 2000/12/03 16:13:22 knu Exp $
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.9 2001/01/26 06:26:49 knu Exp $
 #
 
 PORTNAME=	tmail
-PORTVERSION=	0.8.17
+PORTVERSION=	0.8.18
 CATEGORIES=	mail ruby
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www1.u-netsurf.ne.jp/~brew/mine/soft/
@@ -17,7 +17,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/racc/parser.rb:${PORTSDIR}/devel/ruby-racc-runtime \
-		${RUBY_SITEARCHLIBDIR}/strscan.so:${PORTSDIR}/devel/ruby-strscan
+		${RUBY_SITELIBDIR}/strscan.rb:${PORTSDIR}/devel/ruby-strscan
 
 USE_RUBY=	yes
 USE_RUBY_AMSTD=	yes
@@ -26,7 +26,7 @@ USE_RUBY_SETUP=	yes
 post-patch:
 	${RUBY} -i -ne '/\btmail\b/ and print' \
 		${WRKSRC}/ext/PATHCONV ${WRKSRC}/lib/PATHCONV
-	for d in cparse strscanso; do ${RM} -rf ${WRKSRC}/ext/$$d; done
+	for d in cparse cscan; do ${RM} -rf ${WRKSRC}/ext/$$d; done
 	for d in amstd raccrt strscan; do ${RM} -rf ${WRKSRC}/lib/$$d; done
 
 do-install:
