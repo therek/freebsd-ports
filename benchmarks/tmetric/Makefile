@@ -2,18 +2,17 @@
 # Date created:				June 5th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/benchmarks/tmetric/Makefile,v 1.4 2000/12/04 09:04:35 roam Exp $
+# $FreeBSD: ports/benchmarks/tmetric/Makefile,v 1.5 2001/08/18 06:55:57 mharo Exp $
 #
 
 PORTNAME=	tmetric
-PORTVERSION=	v0.99
+PORTVERSION=	v0.5
+PORTEPOCH=	1
 CATEGORIES=	benchmarks net
-MASTER_SITES=	http://netgraft.com/downloads/tmetric/
-DISTNAME=	${PORTNAME}
+MASTER_SITES=	http://michael.bacarella.com/software/tmetric/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mbac@nyct.net
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 HAS_CONFIGURE=	yes
 ALL_TARGET=	${PORTNAME}
 
