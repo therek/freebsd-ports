@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.352 2000/04/20 05:40:28 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.353 2000/04/23 06:08:23 will Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -149,6 +149,7 @@
     SUBDIR += p5-Net-RawIP
     SUBDIR += p5-Net-Telnet
     SUBDIR += p5-Net-Whois
+    SUBDIR += p5-Net-ext
     SUBDIR += p5-PlRPC
     SUBDIR += p5-SNMP
     SUBDIR += p5-SNMP-Util
