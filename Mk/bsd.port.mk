@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.445 2003/04/06 22:14:38 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.446 2003/04/17 10:27:06 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1259,7 +1259,7 @@ BUILD_DEPENDS+=	gcc32:${PORTSDIR}/lang/gcc32
 
 .if defined(USE_GETOPT_LONG)
 .if ${OSVERSION} < 500041
-LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
+LIB_DEPENDS+=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 CPPFLAGS+=		-I${LOCALBASE}/include
 LDFLAGS+=		-L${LOCALBASE}/lib -lgnugetopt
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
