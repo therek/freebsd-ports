@@ -2,17 +2,22 @@
 # Date created:				2th Dec 2000
 # Whom:					Jaedoc Lee <tokky@fdns.org>
 #
-# $FreeBSD: ports/net/smbfs/Makefile,v 1.2 2001/01/31 03:36:09 bp Exp $
+# $FreeBSD: ports/net/smbfs/Makefile,v 1.3 2001/02/10 02:27:50 bp Exp $
 #
 
 PORTNAME=	smbfs
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.butya.kz/pub/smbfs/
 
 MAINTAINER=	bp@freebsd.org
 
 NO_PACKAGE=     "Depends on kernel"
+
+HAS_CONFIGURE=	yes
+CONFIGURE_SCRIPT=configure
+
+PLIST_SUB=	KMODDIR=${KMODDIR}
 
 .include <bsd.port.pre.mk>
 
@@ -21,26 +26,22 @@ BROKEN=		"OS versions prior to 400000 is not supported"
 .endif
 
 .if defined(WITH_ICONV)
-pre-fetch:
-	@${ECHO}
-	@${ECHO} "Using iconv library"
-	@${ECHO}
-
 LIB_DEPENDS= iconv.2:${PORTSDIR}/converters/iconv
+CONFIGURE_ARGS+= -DWITH_ICONV
+.endif
 
-post-configure:
-	@${SED} -e 's/# USE_ICONV=yes/USE_ICONV=yes/g' < ${WRKSRC}/config.mk.in > ${WRKSRC}/config.mk
-.else
+.if defined(SMP_SUPPORT)
+CONFIGURE_ARGS+= -DSMP_SUPPORT
+.endif
+
 pre-fetch:
-	@${ECHO}
-	@${ECHO} "Not Using iconv library"
-	@${ECHO}
-	@${ECHO} "You may set iconv library (make WITH_ICONV=yes)"
-	@${ECHO} "to compile smbfs with the supplied iconv."
-	@${ECHO}
-
-post-configure:
-	@${CP} ${WRKSRC}/config.mk.in ${WRKSRC}/config.mk
+.if !defined(WITH_ICONV)
+	@${ECHO_MSG} "NOTE: To enable support for various charsets "
+	@${ECHO_MSG} "add \"WITH_ICONV=yes\" to argument of make."
+.endif
+.if !defined(SMP_SUPPORT)
+	@${ECHO_MSG} "NOTE: SMP suppport can be enabled by adding "
+	@${ECHO_MSG} "\"SMB_SUPPORT=yes\" to argument of make."
 .endif
 
 post-install:
