@@ -2,7 +2,7 @@
 # Date created:		7 August 1996
 # Whom:			asami
 #
-# $FreeBSD: ports/net/cvsup/Makefile,v 1.39 2000/10/04 06:40:01 sobomax Exp $
+# $FreeBSD: ports/net/cvsup/Makefile,v 1.40 2001/04/28 20:32:15 jdp Exp $
 #
 
 PORTNAME=	cvsup
@@ -14,13 +14,21 @@ MASTER_SITES?=	ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
 
 MAINTAINER=	jdp@FreeBSD.org
 
+.ifdef PACKAGE_BUILDING
+STATIC=		yes
+.endif
+
 .ifdef WITHOUT_X11
 M3FLAGS+=	-DNOGUI
 BUILD_DEPENDS=	${L1}libm3tcp${L2}:${PORTSDIR}/lang/pm3-net
+.ifndef STATIC
 RUN_DEPENDS=	${L1}libm3tcp${L2}:${PORTSDIR}/lang/pm3-net
+.endif
 .else
 BUILD_DEPENDS=	${L1}libm3formsvbt${L2}:${PORTSDIR}/lang/pm3-forms
+.ifndef STATIC
 RUN_DEPENDS=	${L1}libm3formsvbt${L2}:${PORTSDIR}/lang/pm3-forms
+.endif
 .endif
 
 MAKE_ARGS+=	PREFIX=${PREFIX} M3FLAGS="${M3FLAGS}"
@@ -30,8 +38,9 @@ MAN8=		cvsupd.8
 L1=		${PREFIX}/lib/m3/${TARGET}/
 SOVERSION=	7
 
-# To link the programs statically:
-#M3FLAGS+=	-DSTATIC
+.ifdef STATIC
+M3FLAGS+=	-DSTATIC
+.endif
 
 .include <bsd.port.pre.mk>
 
