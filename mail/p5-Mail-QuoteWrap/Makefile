@@ -2,7 +2,7 @@
 # Date created:		Fri Sep 21 21:56:03 PDT 2001
 # Whom:			Michael Haro <mharo@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-QuoteWrap/Makefile,v 1.1 2001/09/22 05:09:10 mharo Exp $
 #
 
 PORTNAME=	Mail-QuoteWrap
@@ -15,6 +15,8 @@ DISTNAME=	MailQuoteWrap${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mharo@FreeBSD.org
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/Format.pm:${PORTSDIR}/textproc/p5-Text-Format
 
 PERL_CONFIGURE=	yes
 
