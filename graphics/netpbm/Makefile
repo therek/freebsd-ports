@@ -2,11 +2,11 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.36 2000/07/04 07:13:11 sobomax Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.37 2000/07/15 17:04:35 will Exp $
 #
 
 PORTNAME=	netpbm
-PORTVERSION=	9.6
+PORTVERSION=	9.7
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
