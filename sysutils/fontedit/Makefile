@@ -2,12 +2,12 @@
 # Date created:		21 June 2000
 # Whom:			Ben Smithurst <ben@scientia.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/fontedit/Makefile,v 1.3 2000/07/10 22:35:26 ben Exp $
+# $FreeBSD: ports/sysutils/fontedit/Makefile,v 1.4 2000/11/01 20:37:02 will Exp $
 
 PORTNAME=	fontedit
 PORTVERSION=	1.1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.scientia.demon.co.uk/users/ben/tarballs/ \
+MASTER_SITES=	http://www.smithurst.org/ben/tarballs/ \
 		ftp://ukug.uk.freebsd.org/pub/mark/fontmake/
 
 MAINTAINER=	ports@FreeBSD.org
