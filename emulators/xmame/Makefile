@@ -2,11 +2,11 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.33 2001/07/12 13:03:58 olgeni Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.34 2001/08/03 13:21:21 olgeni Exp $
 #
 
 PORTNAME?=	xmame
-PORTVERSION?=	0.37b16.1
+PORTVERSION?=	0.53.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://x.mame.net/download/ \
 		ftp://ftp.kaupp.cx/pub/xmame/ \
