@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.4 2000/10/02 03:10:02 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.5 2000/10/08 00:21:30 asami Exp $
 #
 
 PORTNAME=	gcc
@@ -45,15 +45,12 @@ CONFIGURE_ARGS?=	--with-gnu-as --with-gnu-ld --with-newlib --verbose \
 CONFIGURE_WRKSRC?=	${WRKDIR}/build-${LCLTARGET}
 CONFIGURE_SCRIPT?=	../${GCCNAME}/configure
 
+PATCH_WRKSRC=		${WRKDIR}
+PATCH_STRIP=		-p
+
 MAKE_FLAGS=	LANGUAGES="c c++"
 
 MAN1=		${LCLTARGET}-gcc.1 cccp.1 ${LCLTARGET}-g++.1
-
-.if defined(PATCH_DEBUG)
-PATCH_DIST_ARGS=   -d ${WRKDIR} -E ${PATCH_DIST_STRIP}
-.else
-PATCH_DIST_ARGS=   -d ${WRKDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
-.endif
 
 pre-configure:
 	@(cd ${WRKDIR} ; \
