@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.64 2000/09/23 16:13:56 andreas Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.65 2000/10/08 00:04:36 asami Exp $
 #
 
 PORTNAME=	postgresql
@@ -20,12 +20,18 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}.base${EXTRACT_SUFX} \
 #		${PORTNAME}-${PORTVERSION}.test${EXTRACT_SUFX}
 DIST_SUBDIR=	postgresql
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://www.postgresql.org/y2k.html
 
 INSTALLS_SHLIB=	YES
 LDCONFIG_DIRS=	%%PREFIX%%/pgsql/lib
+BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
+
+.if defined(KRB5_HOME) && exists(${KRB5_HOME})
+CONFIGURE_KRB=	--with-krb5=${KRB5_HOME} \
+		--with-krb-keytab=FILE:${PREFIX}/pgsql/etc/keytab
+.endif
 
 # if you want to use the tcl/tk frontend pgaccess, then you need to build
 # postgresql with tcl support by typing: make -DWITH_TCL
@@ -80,6 +86,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}/pgsql \
 		--enable-locale \
 		--with-template=`uname -s | ${TR} '[A-Z]' '[a-z]'` \
 		--with-includes="${PREFIX}/include ${TCL_INCDIR} ${TK_INCDIR}" \
+		${CONFIGURE_KRB} \
 		${CONFIGURE_TCL} \
 		${CONFIGURE_MULTIBYTE} \
 		${CONFIGURE_PERL} \
@@ -163,6 +170,13 @@ post-patch:
 	@ ${SED} -e 's=!!PREFIX!!=${PREFIX}=g' \
 		${WRKSRC}/Makefile.global.in.old \
 		>> ${WRKSRC}/Makefile.global.in
+
+#
+# USE_AUTOCONF implies GNU_CONFIGURE, which we don't want, so we have
+# to do it by hand.
+#
+pre-configure:
+	@(cd ${WRKSRC} && ${AUTOCONF})
 
 post-build:
 .if defined(WITH_JDBC)
