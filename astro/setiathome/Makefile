@@ -3,10 +3,11 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.14 2000/01/03 01:58:10 steve Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.15 2000/02/08 09:25:46 peter Exp $
 #
 
-PKGNAME=	setiathome-1.2
+PORTNAME=	setiathome
+PORTVERSION=	1.2
 CATEGORIES=	astro
 MASTER_SITES=   http://setiathome.ssl.berkeley.edu/software/ \
 		ftp://ftp.cdrom.com/pub/setiathome/ \
