@@ -1,8 +1,8 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/news/leafnode+/files/INSTALL.in,v 1.3 1999/08/30 14:31:42 peter Exp $
 LIBDIR=@LIBDIR@
 SPOOLDIR=@SPOOLDIR@
-if [ x$2 = xPOST-INSTALL -a x$LEAFNODE_SETUP_WRKDIRS != x ]; then
+if [ x$2 = xPOST-INSTALL ]; then
  if [ ! -d $LIBDIR ]; then
 	mkdir -p $LIBDIR
 	chown -R news.news $LIBDIR/.
