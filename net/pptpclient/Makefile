@@ -2,7 +2,7 @@
 # Date created:		19 June 1999
 # Whom:			John Polstra <jdp@freebsd.org>
 #
-# $FreeBSD: ports/net/pptpclient/Makefile,v 1.4 2001/05/12 22:29:15 jdp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pptpclient
@@ -14,7 +14,7 @@ DISTFILES=	pptp-linux-1.0.3-1.tar.gz
 
 MAINTAINER=	thomas@cuivre.fr.eu.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgnugetopt.a:${PORTSDIR}/devel/libgnugetopt
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 MAKE_ARGS=	DEBUG="" \
 		INCLUDE="-I${LOCALBASE}/include" \
