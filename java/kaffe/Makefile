@@ -3,12 +3,12 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.44 1999/09/18 03:12:03 steve Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.45 1999/10/18 22:38:03 archie Exp $
 #
 
 DISTNAME=	kaffe-1.0.5
 CATEGORIES=	java
-MASTER_SITES=	ftp://ftp.transvirtual.com/pub/kaffe/
+MASTER_SITES=	ftp://ftp.kaffe.org/pub/kaffe/
 
 MAINTAINER=	xaa@xaa.iae.nl
 
