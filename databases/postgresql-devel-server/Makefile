@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql/Makefile,v 1.51 2000/01/03 06:45:51 andreas Exp $
+# $FreeBSD: ports/databases/postgresql/Makefile,v 1.52 2000/04/08 22:48:52 mharo Exp $
 #
 
 PORTNAME=	postgresql
@@ -42,7 +42,6 @@ BUILD_DEPENDS=	${JAVA_HOME}/bin/javac:${PORTSDIR}/java/jdk
 SCRIPTS_ENV+=	JAVA_HOME=${JAVA_HOME}
 .endif
 
-NO_PACKAGE=	"Requires pgsql uid"
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 USE_GMAKE=	YES
