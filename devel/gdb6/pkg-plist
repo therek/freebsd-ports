@@ -1,2 +1,2 @@
-@comment $FreeBSD: ports/devel/gdb6/pkg-plist,v 1.5 2002/10/12 18:58:07 obrien Exp $
-bin/gdb53
+@comment $FreeBSD: ports/devel/gdb6/pkg-plist,v 1.6 2003/11/12 07:59:57 obrien Exp $
+bin/gdb6
