@@ -1,6 +1,6 @@
 #
 # Example entry for inetd.conf for the Cyrus IMAP server.
-# $FreeBSD: ports/mail/cyrus/files/inetd.conf.cyrus,v 1.3 1999/08/30 12:06:19 peter Exp $
+# $FreeBSD: ports/mail/cyrus/files/inetd.conf.cyrus,v 1.4 2000/12/21 08:25:50 will Exp $
 #
 # Replace /usr/local with the path where you've installed the package.
 #
@@ -15,5 +15,5 @@ pop3	stream	tcp	nowait	cyrus	/usr/local/cyrus/bin/pop3d	pop3d
 # NOTE: you will need to add "sieve" to /etc/services.
 #       timsieved uses port 2000.
 #
-sieve   strean  tcp     nowait  cyrus   /usr/local/cyrus/bin/timsieved  sieve
+sieve   stream  tcp     nowait  cyrus   /usr/local/cyrus/bin/timsieved  sieve
 
