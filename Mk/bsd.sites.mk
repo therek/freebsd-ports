@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.79 2002/03/16 19:32:02 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.80 2002/03/17 04:51:20 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -64,7 +64,6 @@ MASTER_SITE_FREEBSD_ORG+=	\
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,FreeBSD/&,}
 
 MASTER_SITE_GNOME+=	\
-	ftp://ftp.yggdrasil.com/mirrors/site/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
 	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/X11/GNOME/%SUBDIR%/ \
@@ -75,6 +74,7 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.informatik.hu-berlin.de/pub/Mirrors/www.gnome.org/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/gnome/&,} \
+	ftp://ftp.yggdrasil.com/mirrors/site/ftp.gnome.org/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/gnome/%SUBDIR%/
 
 MASTER_SITE_GNU+=	\
