@@ -3,7 +3,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.12 1999/08/25 04:22:42 obrien Exp $
 #
 
 PKGNAME=	setiathome-1.2
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	i386
 
 EXTRACT_CMD=		tar
 EXTRACT_BEFORE_ARGS=	-xf
-EXTRACT_AFTER_ARGS=	
+EXTRACT_AFTER_ARGS=
 
 MAN1=		setiathome.1
 
@@ -60,10 +60,11 @@ NO_BUILD=	"binary distribution"
 
 MAN1=		setiathome.1
 
+NO_CDROM=	"interactive install"
+
 .if !defined(PACKAGE_BUILDING)
 IS_INTERACTIVE=	yes
 .endif
-
 
 pre-fetch:
 	@if [ -z "${DISTFILES}" ]; then \
