@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.17 2001/05/04 21:39:28 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomeaudio
@@ -15,7 +15,8 @@ DISTNAME=	gnome-audio-${PORTVERSION}
 MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GNOMELIBS=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomehack gnomeprefix gnomehier
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/sounds
 

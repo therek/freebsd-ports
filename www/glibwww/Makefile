@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/glibwww/Makefile,v 1.4 2001/05/11 16:36:37 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glibwww
@@ -18,7 +18,8 @@ LIB_DEPENDS=	wwwzip.1:${PORTSDIR}/www/libwww
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GNOMECTRL=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomelibs
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
