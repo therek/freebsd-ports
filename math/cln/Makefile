@@ -3,11 +3,11 @@
 # Date created:                Fab 11, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/cln/Makefile,v 1.1 2001/02/12 14:55:37 ijliao Exp $
 #
 
 PORTNAME=	cln
-PORTVERSION=	1.1
+PORTVERSION=	1.1.1
 CATEGORIES=	math devel
 MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/ \
 		ftp://ftp.santafe.edu/pub/gnu/ \
