@@ -2,17 +2,17 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.41 2000/04/09 18:33:53 cpiazza Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.42 2000/04/21 08:19:18 mharo Exp $
 #
 
 PORTNAME=	bash
-PORTVERSION=	2.03
+PORTVERSION=    2.04
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cwru.edu/pub/bash/
 MASTER_SITE_SUBDIR=	bash
 .if !defined(NOPORTDOCS)
-DISTFILES=	bash-2.03.tar.gz bash-doc-2.03.tar.gz
+DISTFILES=      bash-${PORTVERSION}.tar.gz bash-doc-${PORTVERSION}.tar.gz
 .endif
 
 MAINTAINER=	ache@FreeBSD.org
