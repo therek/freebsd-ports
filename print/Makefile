@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.106 2000/02/21 22:18:14 jedgar Exp $
+# $FreeBSD: ports/print/Makefile,v 1.107 2000/03/27 20:12:34 asami Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -6,6 +6,7 @@
     SUBDIR += a2ps-letterdj
     SUBDIR += a2ps43-a4
     SUBDIR += a2ps43-letter
+    SUBDIR += acrobatviewer
     SUBDIR += acroread
     SUBDIR += acroread-commfont
     SUBDIR += acroread4
