@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */
 
-/* $FreeBSD: ports/devel/gdb6/files/freebsd-uthread.c,v 1.2 2004/06/20 18:45:36 obrien Exp $ */
+/* $FreeBSD: ports/devel/gdb6/files/freebsd-uthread.c,v 1.3 2004/08/23 06:34:48 obrien Exp $ */
 
 /* This module implements a sort of half target that sits between the
    machine-independent parts of GDB and the ptrace interface (infptrace.c) to
@@ -664,14 +664,14 @@ freebsd_uthread_store_registers (int regno)
 	  /* Hang onto cached value */
 /*DEO:XXX*/
 	  memcpy(reg, deprecated_registers /*regcache_collect ()*/+ DEPRECATED_REGISTER_BYTE (regno),
-		 DEPRECATED_REGISTER_RAW_SIZE (regno));
+		 register_size (current_gdbarch, regno));
 
 	  /* And push out to inferior */
 	  off = (char *) reg - (char *) thread;
 	  write_memory (ptr + off, 
 /*DEO:XXX*/
 			deprecated_registers /*regcache_collect ()*/+ DEPRECATED_REGISTER_BYTE (regno),
-			DEPRECATED_REGISTER_RAW_SIZE (regno));
+			register_size (current_gdbarch, regno));
 	}
     }
 }
