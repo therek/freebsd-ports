@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.158 2003/06/18 20:36:56 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.159 2003/06/19 20:57:59 marcus Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -453,6 +453,28 @@ MASTER_SITE_PGSQL+= \
 	ftp://ftp3.tw.postgresql.org/pub/postgresql/%SUBDIR%/ \
 	ftp://ftp.tr.postgresql.org/pub/SQL/postgresql/%SUBDIR%/ \
 	ftp://ftp.postgresql.org/pub/%SUBDIR%/
+
+MASTER_SITE_PYTHON+= \
+	http://www.python.org/%SUBDIR%/ \
+	http://python.planetmirror.com/%SUBDIR%/ \
+	http://python.ilisys.com.au/%SUBDIR%/ \
+	http://gd.tuwien.ac.at/www.python.org/%SUBDIR%/ \
+	http://ftp.easynet.be/python/%SUBDIR%/ \
+	http://www.linux.org.hk/mirror/python/%SUBDIR%/ \
+	http://mirrors.sunsite.dk/pythonwww/%SUBDIR%/ \
+	http://python.emdia.fi/%SUBDIR%/ \
+	http://python.via.ecp.fr/%SUBDIR%/ \
+	http://SunSITE.Informatik.RWTH-Aachen.DE/python/%SUBDIR%/ \
+	http://www.auth.gr/mirrors/python/%SUBDIR%/ \
+	http://www.cwi.nl/www.python.org/%SUBDIR%/ \
+	http://gnu.kookel.org/ftp/www.python.org/%SUBDIR%/ \
+	http://python.holywar.net/%SUBDIR%/ \
+	http://python.unam.mx/%SUBDIR%/ \
+	http://python.cdpa.nsysu.edu.tw/%SUBDIR%/ \
+	http://www.mirror.ac.uk/sites/ftp.python.org/pub/www.python.org/%SUBDIR%/ \
+	http://python.mirrors.pair.com/%SUBDIR%/ \
+	http://mirrors.ccs.neu.edu/Python/pub/www.python.org/%SUBDIR%/ \
+	http://shattered.teched.net/www.python.org/%SUBDIR%/
 
 MASTER_SITE_REDHAT_LINUX+= \
 	ftp://ftp.rutgers.edu/pub/redhat/linux/%SUBDIR%/ \
