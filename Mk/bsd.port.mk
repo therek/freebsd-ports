@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.390 2001/11/17 20:08:05 knu Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.391 2001/11/17 21:05:50 knu Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -68,7 +68,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  patches (default: none).  make will look for them at
 #				  PATCH_SITES (see below).  They will automatically be
 #				  uncompressed before patching if the names end with
-#				  ".gz" or ".Z".
+#				  ".gz", ".bz2" or ".Z".
 # PATCH_SITES	- Primary location(s) for distribution patch files
 #				  if not found locally.
 # DIST_SUBDIR	- Suffix to ${DISTDIR}.  If set, all ${DISTFILES} 
@@ -809,7 +809,13 @@ MANCOMPRESSED?=	yes
 MANCOMPRESSED?=	no
 .endif
 
-.if defined(USE_BZIP2) && !exists(/usr/bin/bzip2)
+.if defined(PATCHFILES)
+.if ${PATCHFILES:M*.bz2}x != x
+HAVE_BZIP2_PATCHES=	yes
+.endif
+.endif
+
+.if (defined(USE_BZIP2) || defined(HAVE_BZIP2_PATCHES)) && !exists(/usr/bin/bzip2)
 BUILD_DEPENDS+=		bzip2:${PORTSDIR}/archivers/bzip2
 .endif
 .if defined(USE_ZIP)
@@ -1789,6 +1795,9 @@ do-patch:
 		case $$i in \
 			*.Z|*.gz) \
 				${GZCAT} $$i | ${PATCH} ${PATCH_DIST_ARGS}; \
+				;; \
+			*.bz2) \
+				${BZCAT} $$i | ${PATCH} ${PATCH_DIST_ARGS}; \
 				;; \
 			*) \
 				${PATCH} ${PATCH_DIST_ARGS} < $$i; \
