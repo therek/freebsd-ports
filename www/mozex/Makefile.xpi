@@ -1,7 +1,7 @@
 # Date created:			  Sun Oct 26, 2003
 # Whom:				  Thierry Thomas (<thierry@pompo.net>)
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozex/Makefile.xpi,v 1.1 2004/07/03 06:37:01 thierry Exp $
 #
 
 EXTRACT_SUFX=   .xpi
@@ -38,7 +38,7 @@ MOZDIR!=	${FIND} ${X11BASE}/lib -name firefox-bin -exec dirname {} \; | ${HEAD} 
 MOZDIR=
 . endif
 . if empty(MOZDIR)
-MOZVER=		firefox-0.9	# Warning! chase this when upgrading firefox.
+MOZVER=		firefox-1.0	# Warning! chase this when upgrading firefox.
 . else
 MOZVER!=	${BASENAME} ${MOZDIR}
 . endif
