@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.71 2001/07/31 16:46:55 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.72 2001/08/16 11:38:45 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -84,7 +84,7 @@ post-install:
 	${MV} -f ${IRB_WITHOUT_SUFFIX} ${IRB_WITH_SUFFIX}
 	if [ -x ${RUBY_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX}${RUBY_R} ]; then \
 		${LN} -fs ${RUBY_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX}${RUBY_R} ${RUBY_WITHOUT_SUFFIX}${RUBY_R}; \
-		${LN} -fs ruby${RUBY_DEFAULT_SUFFIX}${RUBY_R}.1 ${PREFIX}/man/man1/ruby${RUBY_R}.1; \
+		${LN} -fs ruby${RUBY_DEFAULT_SUFFIX}${RUBY_R}.1${MANEXT} ${PREFIX}/man/man1/ruby${RUBY_R}.1${MANEXT}; \
 	fi
 	if [ -x ${RUBY_WITHOUT_SUFFIX} ]; then \
 		${LN} -fs ${IRB_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX} ${IRB_WITHOUT_SUFFIX}; \

@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.16 2001/07/11 12:14:06 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.17 2001/07/31 16:46:55 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -86,7 +86,7 @@ post-install:
 	${MV} -f ${IRB_WITHOUT_SUFFIX} ${IRB_WITH_SUFFIX}
 	if [ -x ${RUBY_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX}${RUBY_R} ]; then \
 		${LN} -fs ${RUBY_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX}${RUBY_R} ${RUBY_WITHOUT_SUFFIX}${RUBY_R}; \
-		${LN} -fs ruby${RUBY_DEFAULT_SUFFIX}${RUBY_R}.1 ${PREFIX}/man/man1/ruby${RUBY_R}.1; \
+		${LN} -fs ruby${RUBY_DEFAULT_SUFFIX}${RUBY_R}.1${MANEXT} ${PREFIX}/man/man1/ruby${RUBY_R}.1${MANEXT}; \
 	fi
 	if [ -x ${RUBY_WITHOUT_SUFFIX} ]; then \
 		${LN} -fs ${IRB_WITHOUT_SUFFIX}${RUBY_DEFAULT_SUFFIX} ${IRB_WITHOUT_SUFFIX}; \
