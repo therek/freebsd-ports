@@ -1,7 +1,8 @@
-# $FreeBSD: ports/converters/Makefile,v 1.43 2000/10/28 00:03:46 scrappy Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.44 2000/10/28 01:16:36 scrappy Exp $
 #
 
     SUBDIR += aish
+    SUBDIR += base64
     SUBDIR += btoa
     SUBDIR += dumpasn1
     SUBDIR += fconv
