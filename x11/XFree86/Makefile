@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.93 2001/02/05 20:58:32 olgeni Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.94 2001/02/18 04:47:55 obrien Exp $
 #
 
 PORTNAME=	XFree86
@@ -90,7 +90,7 @@ IS_INTERACTIVE=	yes	# configure script asks questions
 pre-configure:
 	@${MKDIR} ${SCRIPTDIR}
 .if defined(BUILD_XDIST)
-	@${CP} ${MASTERDIR}/scripts/configure.build_xdist ${SCRIPTDIR}
+	@${CP} ${MASTERDIR}/scripts/configure.build_xdist ${SCRIPTDIR}/configure
 .else
 	@${CP} ${MASTERDIR}/scripts/configure ${SCRIPTDIR}
 .endif
