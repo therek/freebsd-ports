@@ -2,13 +2,14 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/flowscan/Makefile,v 1.1 2001/03/14 01:14:44 sobomax Exp $
 #
 
 PORTNAME=	flowscan
 PORTVERSION=    1.006
 CATEGORIES=	net
 MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/
+DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
 
 MAINTAINER=	andreas@freebsd.org
 
