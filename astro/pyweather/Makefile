@@ -2,13 +2,13 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/pyweather/Makefile,v 1.3 2000/04/08 22:01:44 mharo Exp $
+# $FreeBSD: ports/astro/pyweather/Makefile,v 1.4 2000/04/16 18:38:01 will Exp $
 #
 
 PORTNAME=	pyWeather
 PORTVERSION=	0.1b
 CATEGORIES=	astro python
-MASTER_SITES=	http://people.FreeBSD.org/~will/distfiles/
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/will/
 DISTNAME=	pyWeather
 
 MAINTAINER=	will@FreeBSD.org
