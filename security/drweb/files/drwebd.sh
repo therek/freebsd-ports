@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/drweb/files/drwebd.sh,v 1.4 2001/08/25 12:33:53 ache Exp $
+# $FreeBSD$
 
 drwebd='!!PREFIX!!/drwebd'
 
@@ -9,11 +9,12 @@ start)
 	if [ -x $drwebd ]; then
 	    echo -n ' drwebd'
 	    $drwebd
+	    /bin/chmod 660 /var/run/drwebd.sock
 	fi
 	;;
 stop)
 	/usr/bin/killall drwebd
-	/bin/rm -f /var/run/drwebd
+	/bin/rm -f /var/run/drwebd.sock
 	echo -n ' drwebd'
 	;;
 *)

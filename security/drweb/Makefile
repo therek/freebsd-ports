@@ -2,11 +2,12 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb/Makefile,v 1.7 2001/09/01 08:41:22 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	drweb
 PORTVERSION=    4.26
+PORTREVISION=   1
 CATEGORIES=	security
 MASTER_SITES=	http://www.drweb.ru/ftp/web_pub/
 DISTNAME=	${PORTNAME}d-${PORTVERSION}-freebsd4
@@ -25,15 +26,22 @@ do-install:
 	-@${MKDIR} -v ${DRWEB_PREFIX}
 	@cd ${DRWEB_PREFIX}; ${RM} -f drw*.txt drw*.vdb drweb drwebd
 	${TAR} -xzf ${WRKSRC}/${DISTNAME}.tar.gz -C ${DRWEB_PREFIX} --exclude *.ini
-	${TAR} -xzOf ${WRKSRC}/${DISTNAME}.tar.gz drweb32.ini | \
+	${TAR} -xzOf ${WRKSRC}/${DISTNAME}.tar.gz drweb32.ini \
+		> ${DRWEB_PREFIX}/drweb32.ini-tmpl
+	cd ${DRWEB_PREFIX}; \
+		${PATCH} -s < ${FILESDIR}/ini-patch && \
+		${RM} drweb32.ini-tmpl.orig
+	cd ${DRWEB_PREFIX}; \
 		${SED} 's#__INSTALL_DIR__#${DRWEB_PREFIX}#' \
-		> ${DRWEB_PREFIX}/drweb32.ini-dist
+		< drweb32.ini-tmpl > drweb32.ini-dist && \
+		${RM} drweb32.ini-tmpl
 	if [ ! -f ${DRWEB_PREFIX}/drweb32.ini ] ; then \
 		${CP} ${DRWEB_PREFIX}/drweb32.ini-dist \
 		      ${DRWEB_PREFIX}/drweb32.ini; \
 	fi
 	${SED} 's#!!PREFIX!!#${DRWEB_PREFIX}#' < ${FILESDIR}/drwebd.sh >${WRKSRC}/drwebd.sh
-	cd ${DRWEB_PREFIX}/update; patch -s < ${FILESDIR}/update-patch && ${RM} update.pl.orig
-	${INSTALL_DATA} ${WRKSRC}/drwebd.sh ${PREFIX}/etc/rc.d/drwebd.sh-dist
+	cd ${DRWEB_PREFIX}/update; \
+		${PATCH} -s < ${FILESDIR}/update-patch && ${RM} update.pl.orig
+	${INSTALL_SCRIPT} ${WRKSRC}/drwebd.sh ${PREFIX}/etc/rc.d/
 
 .include <bsd.port.mk>
