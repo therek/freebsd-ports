@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.51 2000/09/08 04:34:11 taoka Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.52 2000/09/12 03:37:19 vanilla Exp $
 #
     SUBDIR += xmms
 
@@ -13,7 +13,6 @@
     SUBDIR += bg5ps
     SUBDIR += big5con
     SUBDIR += c2t
-    SUBDIR += cdict
     SUBDIR += celvis
     SUBDIR += chinput
     SUBDIR += cless
@@ -35,6 +34,7 @@
     SUBDIR += pine3
     SUBDIR += pine4
     SUBDIR += rxvt
+    SUBDIR += stardict
     SUBDIR += ted
     SUBDIR += telnet
     SUBDIR += tin
