@@ -2,7 +2,7 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.33 2001/08/14 20:49:46 jim Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.34 2001/09/04 16:21:21 kuriyama Exp $
 #
 
 PORTNAME=	docproj
@@ -36,7 +36,9 @@ RUN_DEPENDS+=	openjade:${PORTSDIR}/textproc/openjade
 RUN_DEPENDS+=	jade:${PORTSDIR}/textproc/jade
 .endif
 
+.if !defined(JADETEX)
 IS_INTERACTIVE= "user must set JADETEX variable to 'yes' or 'no'"
+.endif
 
 JADETEX?=
 
