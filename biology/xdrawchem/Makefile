@@ -2,7 +2,7 @@
 # Date created:				13 April 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.3 2000/09/18 23:14:46 ade Exp $
+# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.4 2000/10/02 05:39:31 trevor Exp $
 #
 
 PORTNAME=	xdrawchem
@@ -20,5 +20,10 @@ USE_NEWGCC=	yes
 USE_QT2=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/xdrawchem ${PREFIX}/bin
+	@${MKDIR} ${PREFIX}/share/xdrawchem
+	${INSTALL_DATA} ${WRKSRC}/ring/* ${PREFIX}/share/xdrawchem
 
 .include <bsd.port.mk>
