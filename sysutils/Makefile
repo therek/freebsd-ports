@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.158 2001/03/04 17:08:53 dannyboy Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.159 2001/03/05 12:10:41 demon Exp $
 #
     SUBDIR += yawho
 
@@ -68,6 +68,7 @@
     SUBDIR += mei
     SUBDIR += memtest
     SUBDIR += mkisofs
+    SUBDIR += mksunbootcd
     SUBDIR += monitord
     SUBDIR += muse
     SUBDIR += no-login
