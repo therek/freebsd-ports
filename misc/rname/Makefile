@@ -2,13 +2,13 @@
 # Date created:		26 October 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/misc/rname/Makefile,v 1.2 2000/12/29 15:45:16 roam Exp $
+# $FreeBSD: ports/misc/rname/Makefile,v 1.3 2001/01/17 07:41:52 roam Exp $
 #
 
 PORTNAME=	rname
 PORTVERSION=	1.0
 CATEGORIES=	misc
-MASTER_SITES=	http://ringwraith.online.bg/~roam/devel/sysutils/rname/
+MASTER_SITES=	http://ringwraith.online.bg/devel/sysutils/rname/
 
 MAINTAINER=	roam@FreeBSD.org
 
