@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.72 2000/08/20 19:37:37 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.73 2000/09/03 06:54:03 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -27,7 +27,7 @@ MASTER_SITES+=	ftp://ftp.bu.edu/pub/mirrors/ftp.netscape.com/pub/${NETSCAPE_DIST
 		ftp://ftp.cica.es/pub5/netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.calvacom.fr/pub1/browser/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.ciril.fr/pub1/netscape/${NETSCAPE_DIST_SUBDIR}/ \
-		ftp://ftp.uniroma2.it/%7bC/Netscape/${NETSCAPE_DIST_SUBDIR}/ \
+		ftp://ftp.uniroma2.it/Netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.nluug.nl/vol/2/netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.ntnu.no/pub/www/Netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://sunsite.uio.no/pub/network/web/netscape/${NETSCAPE_DIST_SUBDIR}/ \
