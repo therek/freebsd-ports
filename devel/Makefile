@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.624 2001/08/28 06:10:50 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.625 2001/08/28 10:17:42 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -89,6 +89,7 @@
     SUBDIR += cvsgraph
     SUBDIR += cvsmapfs
     SUBDIR += cvspadm
+    SUBDIR += cvsstat
     SUBDIR += cvsutils
     SUBDIR += cvsweb
     SUBDIR += cweb
