@@ -2,7 +2,7 @@
 # Date created:		2000/08/12
 # Whom:			makeport.pl
 #
-# $FreeBSD: ports/games/bzflag/Makefile,v 1.3 2000/08/12 22:01:39 nbm Exp $
+# $FreeBSD: ports/games/bzflag/Makefile,v 1.4 2000/08/18 15:04:08 nbm Exp $
 #
 
 PORTNAME=	bzflag
@@ -14,11 +14,10 @@ EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	nbm@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
-
 WRKSRC=		${WRKDIR}/bzflag
 
 USE_XLIB=	yes
+USE_MESA=	yes
 
 MAKE_ENV=	PORTCFLAGS="${CFLAGS}" PORTCXXFLAGS="${CXXFLAGS}" \
 		PORTPREFIX="${PREFIX}" OSVERSION="${OSVERSION}"
