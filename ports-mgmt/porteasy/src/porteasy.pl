@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.1 2000/09/19 19:25:04 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.2 2000/09/19 19:35:48 des Exp $
 #
 
 use strict;
@@ -34,7 +34,7 @@ use Data::Dumper;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "1.6";
+my $VERSION	= "1.7";
 
 # Constants
 sub ANONCVS_ROOT	{ ":pserver:anoncvs\@anoncvs.FreeBSD.org:/home/ncvs" }
@@ -146,7 +146,7 @@ sub cvs($;@) {
 
     my @args;			# Arguments to CVS
 
-    push(@args, "-f", "-z3", "-R",
+    push(@args, "-f", "-z3", "-R", "-d$cvsroot",
 	 $verbose ? "-q" : "-Q", $cmd, "-A");
     if ($cmd eq "checkout") {
 	push(@args, "-P");
@@ -354,7 +354,7 @@ sub show_port_info($) {
     local *FILE;		# File handle
     my $info;			# Port info
 
-    sysopen(FILE, "$portsdir/$ports{$port}/pkg/DESCR", O_RDONLY)
+    sysopen(FILE, "$portsdir/$ports{$port}/pkg-descr", O_RDONLY)
 	or err(1, "can't read description for $port");
     $info = join("| ", <FILE>);
     close(FILE);
@@ -552,10 +552,10 @@ MAIN:{
     if ($anoncvs) {
 	$cvsroot = &ANONCVS_ROOT;
     }
-    if ($cvsroot) {
-	$ENV{'CVSROOT'} = $cvsroot;
+    if (!$cvsroot) {
+	$cvsroot = $ENV{'CVSROOT'};
     }
-    if (!$ENV{'CVSROOT'}) {
+    if (!$cvsroot) {
 	errx(1, "No CVS root, please use the -r option or set \$CVSROOT");
     }
     
