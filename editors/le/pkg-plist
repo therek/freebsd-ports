@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/editors/le/pkg-plist,v 1.6 2000/11/22 00:21:50 obrien Exp $
 bin/le
 share/doc/le/FEATURES
 share/doc/le/HISTORY
@@ -11,6 +11,7 @@ share/le/colors-defbg
 share/le/colors-green
 share/le/colors-white
 share/le/le.hlp
+share/le/mainmenu
 share/le/syntax
 @dirrm share/le
 @dirrm share/doc/le
