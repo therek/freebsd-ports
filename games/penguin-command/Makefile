@@ -2,7 +2,7 @@
 # Date created:			Apr 4, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/penguin-command/Makefile,v 1.2 2001/06/08 05:36:32 markp Exp $
+# $FreeBSD: ports/games/penguin-command/Makefile,v 1.3 2001/06/14 05:49:13 markp Exp $
 #
 
 PORTNAME=	penguin-command
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.linux-games.com/penguin-command/
 MAINTAINER=	markp@FreeBSD.org
 
 LIB_DEPENDS=	SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 

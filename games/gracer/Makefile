@@ -2,7 +2,7 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.13 2001/02/05 14:51:41 olgeni Exp $
+# $FreeBSD: ports/games/gracer/Makefile,v 1.14 2001/06/10 15:28:40 kevlo Exp $
 #
 
 PORTNAME=	gracer
@@ -15,7 +15,7 @@ MAINTAINER=	nox@jelal.kn-bremen.de
 
 BUILD_DEPENDS=	${X11BASE}/lib/libplibsl.a:${PORTSDIR}/x11-toolkits/plib
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tcl82.1:${PORTSDIR}/lang/tcl82
 
