@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 2000/01/05 17:56:46 wiz Exp $
-# $FreeBSD: ports/audio/festdoc/Makefile,v 1.1 2000/09/16 08:39:39 will Exp $
+# $FreeBSD: ports/audio/festdoc/Makefile,v 1.2 2000/10/02 05:37:37 trevor Exp $
 #
 
 PORTNAME=	festdoc
@@ -30,6 +30,7 @@ post-extract:
 
 do-install:
 	${MKDIR} ${FDOC}
+	${RM} ${WRKSRC}/festival/info/festival.info.orig
 	cd ${WRKSRC} && info=`find . -name '*.info*' -type f` && \
 	  ${CP} $$info ${PREFIX}/info && \
 	  ${CP} -r ${WRKSRC}/* ${FDOC} && \
