@@ -2,7 +2,7 @@
 # Date created:		28 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.1 2001/04/01 21:43:25 knu Exp $
+# $FreeBSD: ports/print/ruby-panda/Makefile,v 1.2 2001/04/04 14:09:38 knu Exp $
 #
 
 PORTNAME=	panda
@@ -22,10 +22,9 @@ LIB_DEPENDS=	panda.0:${PORTSDIR}/print/panda \
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+RUBY_WITH_PTHREAD=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-CONFIGURE_ARGS=	--with-cflags="${PTHREAD_CFLAGS}" \
-		--with-ldflags="${PTHREAD_LIBS}"
 INSTALL_TARGET=	site-install
 
 DOCS_EN=	README
