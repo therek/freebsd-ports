@@ -2,11 +2,11 @@
 # Date Created:		6 Mar 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/deskutils/mhc-emacs20/Makefile,v 1.1 2001/04/08 15:33:08 shige Exp $
+# $FreeBSD: ports/deskutils/mhc-emacs20/Makefile,v 1.2 2001/05/27 13:03:34 ijliao Exp $
 #
 
 PORTNAME=	mhc
-PORTVERSION=	20010510
+PORTVERSION=	20010625
 CATEGORIES=	deskutils elisp
 MASTER_SITES=	http://www.quickhack.net/mhc/arc/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
