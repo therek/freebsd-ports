@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/www/webalizer/Makefile,v 1.13 1999/12/27 21:28:28 steve Exp $
+# $FreeBSD: ports/www/webalizer/Makefile,v 1.14 2000/04/10 00:07:13 cpiazza Exp $
 #
 
 PORTNAME=	webalizer
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-gdlib=${PREFIX}/lib \

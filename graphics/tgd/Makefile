@@ -2,7 +2,7 @@
 # Date created:				22 February 1999
 # Whom:	      				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/graphics/tgd/Makefile,v 1.8 1999/12/27 21:28:27 steve Exp $
+# $FreeBSD: ports/graphics/tgd/Makefile,v 1.9 2000/04/14 10:47:26 asami Exp $
 #
 
 PORTNAME=	tgd
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	mharo@FreeBSD.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 BROKEN=	gd changes
 FORBIDDEN=	author hadn\'t had time to update for gd changes

@@ -2,7 +2,7 @@
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.18 2000/05/29 23:34:28 will Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.19 2000/06/05 15:23:50 ache Exp $
 #
 
 PORTNAME=	webalizer
@@ -13,7 +13,7 @@ DISTNAME=       ${PORTNAME}-2.00-12-src
 
 MAINTAINER=     ache@FreeBSD.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 NO_LATEST_LINK=	yes
 USE_BZIP2=      yes

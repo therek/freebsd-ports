@@ -2,7 +2,7 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/zimg/Makefile,v 1.3 2000/04/14 10:48:02 asami Exp $
+# $FreeBSD: ports/graphics/zimg/Makefile,v 1.4 2000/05/20 05:05:49 will Exp $
 #
 
 PORTNAME=	zimg
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.zellner.org/zimg/download/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--disable-edf --with-gd-includes=${LOCALBASE}/include
