@@ -3,7 +3,7 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by Dirk Froemberg <dirk@FreeBSD.org> and girgen@partitur.se
 #
-# $FreeBSD: ports/www/bsdi-netscape47-navigator/Makefile,v 1.50 2000/06/06 21:54:11 will Exp $
+# $FreeBSD: ports/www/bsdi-netscape47-navigator/Makefile,v 1.51 2000/08/08 16:20:33 sada Exp $
 #
 
 BROWSER=	navigator
