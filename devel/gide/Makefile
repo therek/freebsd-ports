@@ -2,20 +2,19 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.33 2000/04/11 21:28:03 mharo Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.34 2000/04/29 23:59:19 steve Exp $
 #
 
 PORTNAME= 	gide
-PORTVERSION= 	0.1.7
+PORTVERSION= 	0.3.0
 CATEGORIES=	devel gnome
-MASTER_SITES=	${MASTER_SITE_GNOME} \
-		http://gide.pn.org/
+MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gIDE
-DISTNAME= 	gIDE-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs \
+		glade.3:${PORTSDIR}/devel/libglade \
 		guile.6:${PORTSDIR}/lang/guile
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -23,10 +22,11 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib -lgnuregex"
-CONFIGURE_ARGS=	--with-gnome=${PREFIX}
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		gide.1 gdbio.1
 
