@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/netpbm/pkg-plist,v 1.44 2003/08/28 09:49:12 osa Exp $
+@comment $FreeBSD: ports/graphics/netpbm/pkg-plist,v 1.45 2003/12/04 19:41:29 dinoex Exp $
 bin/411toppm
 bin/anytopnm
 bin/asciitopgm
@@ -50,6 +50,7 @@ bin/pamfunc
 bin/pamlookup
 bin/pamoil
 bin/pampop9
+bin/pamscale
 bin/pamseq
 bin/pamslice
 bin/pamstack
@@ -298,6 +299,6 @@ share/netpbm/palmgray1.map
 share/netpbm/palmgray2.map
 share/netpbm/palmgray4.map
 share/netpbm/rgb.txt
-%%PORTDOCS%%share/doc/netpbm/USERDOC
-%%PORTDOCS%%@dirrm share/doc/netpbm
+%%PORTDOCS%%%%DOCSDIR%%/USERDOC
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm share/netpbm
