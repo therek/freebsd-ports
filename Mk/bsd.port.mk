@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.365 2001/04/16 10:28:15 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.366 2001/04/22 16:47:55 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -677,7 +677,7 @@ MAKE_ARGS+=		OPENSSL_CFLAGS="${OPENSSL_CFLAGS}"
 .endif
 .endif
 .else
-LIB_DEPENDS+=	crypto.1:${PORTSDIR}/security/openssl
+LIB_DEPENDS+=	crypto.2:${PORTSDIR}/security/openssl
 OPENSSLBASE?=	${LOCALBASE}
 OPENSSLDIR?=	${OPENSSLBASE}/openssl
 .endif
