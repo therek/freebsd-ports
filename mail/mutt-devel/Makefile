@@ -3,7 +3,7 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.124 2001/09/02 17:03:22 dwcjr Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.125 2001/09/02 17:13:09 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
@@ -120,7 +120,7 @@ MAN1=		flea.1 mutt.1 mutt_dotlock.1 muttbug.1
 MAN5=		muttrc.5 mbox.5
 
 post-patch:
-	 @${PERL} -pi.fbsd -e 's,/usr/bin/gpg,${PREFIX}/bin/gpg,g' \
+	 @${PERL} -pi.fbsd -e 's,/usr/bin/gpg,${LOCALBASE}/bin/gpg,g' \
 		${WRKSRC}/contrib/gpg.rc
 
 pre-configure:
