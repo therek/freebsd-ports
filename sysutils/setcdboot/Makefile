@@ -4,7 +4,7 @@
 # Date created:			  Mon Jan 17, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/setcdboot/Makefile,v 1.1.1.1 2000/01/18 03:25:05 obrien Exp $
 #
 
 DISTNAME=	setcdboot
