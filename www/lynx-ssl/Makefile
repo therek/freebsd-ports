@@ -2,39 +2,15 @@
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.13 2000/10/04 15:13:20 kevlo Exp $
+# $FreeBSD$
 #
 
-PORTNAME=	lynx-ssl
-PORTVERSION=	2.8.3.1
-CATEGORIES=	www
-MASTER_SITES=	ftp://lynx.isc.org/current/
-DISTNAME=	lynx2.8.3rel.1
+PKGNAMESUFFIX =	-ssl
 
-USE_OPENSSL=	yes
-USE_BZIP2=	yes
+MASTERDIR=	${.CURDIR}/../lynx
+COMMENT=	${.CURDIR}/pkg-comment
+DESCR=		${.CURDIR}/pkg-descr
 
-.include <bsd.port.pre.mk>
+.include "${MASTERDIR}/Makefile"
 
-PATCH_SITES=	http://www.moxienet.com/lynx/
-PATCHFILES=	lynx-283-ssl.patch.gz
-PATCH_DIST_STRIP=	-p1
-
-MAINTAINER=	sec@42.org
-
-GNU_CONFIGURE=	yes
-CFLAGS+=	-I${OPENSSLINC}/openssl
-CONFIGURE_ARGS=	--with-screen=ncurses --with-zlib --libdir="${PREFIX}/etc" \
-		--enable-nsl-fork
-MAKEFILE=	makefile
-INSTALL_TARGET=	install-full
-MAN1=		lynx.1
-
-WRKSRC=		${WRKDIR}/lynx2-8-3
-
-post-install:
-	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/lynx_help
-	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/lynx
-	${CHOWN} ${SHAREOWN}:${SHAREGRP} ${PREFIX}/etc/lynx.cfg
-
-.include <bsd.port.post.mk>
+CONFIGURE_ARGS+= --with-ssl
