@@ -2,13 +2,13 @@
 # Date created:		20 June 2000
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/global/Makefile,v 1.1.1.1 2000/06/28 01:04:12 chuckr Exp $
 #
 
 PORTNAME=	global
-PORTVERSION=	3.55
+PORTVERSION=	3.56
 CATEGORIES=	devel
-MASTER_SITES=	http://www.tamacom.com/unix/
+MASTER_SITES=	http://www.tamacom.com/global/
 
 MAINTAINER=	chuckr@freebsd.org
 
