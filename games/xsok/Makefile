@@ -2,7 +2,7 @@
 # Date created:         07 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xsok/Makefile,v 1.8 2000/05/14 05:40:52 billf Exp $
+# $FreeBSD: ports/games/xsok/Makefile,v 1.9 2000/08/03 09:24:27 asami Exp $
 #
 
 PORTNAME=       xsok
@@ -14,6 +14,12 @@ MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin.X11/ \
 EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+.if defined(XFREE86_VERSION) && (${XFREE86_VERSION} == 4)
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86-4
+.else
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86
+.endif
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
