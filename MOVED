@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.26 2002/11/28 17:29:49 lioux Exp $
+# $FreeBSD: ports/MOVED,v 1.27 2002/12/06 16:06:59 lioux Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -105,3 +105,4 @@ editors/ooodict-pt_BR|portuguese/ooodict-pt_BR|2002-12-06|new category
 editors/ooodict-pt_PT|portuguese/ooodict-pt_PT|2002-12-06|new category
 editors/openoffice-pt|portuguese/openoffice|2002-12-06|new category
 editors/staroffice52-pt|portuguese/staroffice52|2002-12-06|new category
+www/frontpage-pt_BR|portuguese/frontpage-pt_BR|2002-12-06|new category
