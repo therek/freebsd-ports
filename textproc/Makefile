@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.77 1999/12/27 02:07:36 steve Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.78 1999/12/27 02:09:53 steve Exp $
 #
 
     SUBDIR += agrep
@@ -72,6 +72,7 @@
     SUBDIR += urlview
     SUBDIR += wdiff
     SUBDIR += word2x
+    SUBDIR += xls2xml
     SUBDIR += xml4j
     SUBDIR += xp
     SUBDIR += xt
