@@ -2,7 +2,7 @@
 # Date created:				31 Mar 2001
 # Whom:					Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/glide3/Makefile,v 1.1 2001/04/01 03:38:40 nsayer Exp $
 #
 
 PORTNAME=	Glide3-64Bit
@@ -18,7 +18,7 @@ EXTRACT_ONLY=	${PORTNAME}-20010331.tgz
 PATCH_SITES=	http://www.teleport.com/~anholt/devel/dri/
 PATCHFILES=	${PORTNAME:S/G/g/}-2001-01-06.diff
 
-MAINTAINER=	nsayer@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/Glide3
 USE_X_PREFIX=	yes
