@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.8 2000/09/17 21:26:11 steve Exp $
+# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.9 2000/10/03 05:12:45 lioux Exp $
 #
 
 PORTNAME=	JX
@@ -73,7 +73,7 @@ EXTRALIBFILES_MAKE_DIR=		. sys
 # odd behavior
 POSTBUILD_WRKSRC=	makemake jxlayout
 # post patch preprocessing
-POSTPATCH_FILES=	patch-aa
+POSTPATCH_FILES=	post-patch-aa
 # post configure placement directory
 POSTCONFIGURE_WRKSRC=		include/make/sys
 # configuration preprocessing
@@ -102,7 +102,7 @@ PLIST_SUB+=	PORTDOCS:=
 post-patch:
 .for i in ${CONFIGURE_PREPROCESSING_FILES}
 	@${CP} ${WRKSRC}/${POSTCONFIGURE_WRKSRC}/${i} ${WRKDIR}/${i}.in
-	@cd ${WRKDIR}; ${PATCH} -s ${i}.in < ${FILESDIR}/${POSTPATCH_FILES}
+	@cd ${WRKDIR}; ${PATCH} -s ${i}.in < ${PATCHDIR}/${POSTPATCH_FILES}
 .endfor
 
 pre-configure:
