@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.87 2000/02/14 02:19:27 obrien Exp $
+# $FreeBSD: ports/security/Makefile,v 1.88 2000/02/14 02:59:59 obrien Exp $
 #
 
     SUBDIR += bjorb
@@ -64,6 +64,7 @@
     SUBDIR += rsaref
     SUBDIR += saint
     SUBDIR += skip
+    SUBDIR += slurpie
     SUBDIR += slush
     SUBDIR += smurflog
     SUBDIR += sniff
@@ -78,6 +79,7 @@
     SUBDIR += super
     SUBDIR += swatch
     SUBDIR += tcp_wrapper
+    SUBDIR += trinokiller
     SUBDIR += tripwire
     SUBDIR += vscan
     SUBDIR += whisker
