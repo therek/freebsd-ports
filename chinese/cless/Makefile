@@ -3,7 +3,7 @@
 # Date created:         Sat Aug 10, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/cless/Makefile,v 1.8 1999/08/25 04:57:43 obrien Exp $
 #
 
 DISTNAME=	cless-290
@@ -11,8 +11,7 @@ PKGNAME=	zh-${DISTNAME}
 CATEGORIES=	chinese misc
 MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/c-utils/  \
 		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/ \
-		ftp://ftp.edu.tw/Chinese/ifcss/software/unix/c-utils/  \
-		ftp://ftp.mpi-sb.mpg.de/pub/chinese/mirror/ftp.ifcss.org/software/unix/c-utils/
+		ftp://ftp.edu.tw/Chinese/ifcss/software/unix/c-utils/
 
 MAINTAINER=     obrien@FreeBSD.org
 
