@@ -4,11 +4,12 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.9 2001/04/10 05:23:59 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festival
 PORTVERSION=	1.4.1
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/${PORTVERSION}/ \
 		ftp://ftp.leb.net/pub/blinux/${SUB} \
@@ -33,7 +34,7 @@ PATCHFILES=	OGIfestpatch-${PORTVERSION}.tar.gz
 
 MAINTAINER=	trevor@FreeBSD.org
 
-LIB_DEPENDS=	audio.1:${PORTSDIR}/audio/nas \
+LIB_DEPENDS=	audio.2:${PORTSDIR}/audio/nas \
 		esd.2:${PORTSDIR}/audio/esound
 
 DIST_SUBDIR=	festival
