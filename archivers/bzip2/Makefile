@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.24 2000/04/08 23:17:41 mharo Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.25 2000/05/19 00:32:43 obrien Exp $
 #
 
 PORTNAME=	bzip2
@@ -32,7 +32,7 @@ do-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/bzip2
 	${INSTALL_DATA} ${WRKSRC}/manual* ${PREFIX}/share/doc/bzip2
-	${PREFIX}/bin/bzip2 ${PREFIX}/share/doc/bzip2/manual.ps
+	${PREFIX}/bin/bzip2 -f ${PREFIX}/share/doc/bzip2/manual.ps
 .endif
 
 .include <bsd.port.mk>
