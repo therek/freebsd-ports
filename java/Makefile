@@ -1,4 +1,4 @@
-# $FreeBSD: ports/java/Makefile,v 1.29 2001/06/11 09:39:46 roam Exp $
+# $FreeBSD: ports/java/Makefile,v 1.30 2001/06/18 21:03:53 ijliao Exp $
 #
     SUBDIR += xalan-j
 
@@ -29,6 +29,7 @@
     SUBDIR += jsdk
     SUBDIR += junit
     SUBDIR += kaffe
+    SUBDIR += linux-ibm-jdk13
     SUBDIR += linux-jdk
     SUBDIR += linux-jdk13
     SUBDIR += linux-jdk14
