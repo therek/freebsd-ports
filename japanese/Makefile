@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.314 2000/11/30 15:02:58 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.315 2000/11/30 15:05:19 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -15,6 +15,7 @@
     SUBDIR += addttfont
     SUBDIR += another-htmllint
     SUBDIR += balsa
+    SUBDIR += bible_names-fpw
     SUBDIR += binder
     SUBDIR += bookview
     SUBDIR += canuum
