@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.12 2000/04/15 00:18:29 will Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.13 2000/08/21 10:07:27 sobomax Exp $
 #
 
 PORTNAME=	kvirc
@@ -14,9 +14,9 @@ MASTER_SITES=	http://www.kvirc.org/ \
 
 MAINTAINER=	will@FreeBSD.org
 
-BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext \
-		qt2.3:${PORTSDIR}/x11-toolkits/qt21
+BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 
+USE_QT2=	yes
 USE_NEWGCC=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

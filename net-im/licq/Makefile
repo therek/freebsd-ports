@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.21 2000/08/10 18:23:43 green Exp $
+# $FreeBSD: ports/net/licq/Makefile,v 1.22 2000/08/15 18:56:30 green Exp $
 #
 
 PORTNAME=	licq
@@ -18,9 +18,9 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
 MAINTAINER=	green@FreeBSD.org
 
-LIB_DEPENDS=	qt2.3:${PORTSDIR}/x11-toolkits/qt21
 BUILD_DEPENDS=	aclocal:${PORTSDIR}/devel/automake
 
+USE_QT2=	yes
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
 USE_NEWGCC=     yes
