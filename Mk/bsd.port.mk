@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.381 2001/09/23 00:35:08 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.382 2001/09/28 16:45:15 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -720,8 +720,12 @@ MAKE_ENV+=		OPENSSLLIB=${OPENSSLLIB} OPENSSLINC=${OPENSSLINC} \
 
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 
-# defaults to 3.3.6; will be changed to 4.0 when it is ready
+# defaults to 4.x for -CURRENT; and 3.3.6 for all other branches
+.if ${OSVERSION} > 500025
+XFREE86_VERSION?=	4
+.else
 XFREE86_VERSION?=	3
+.endif
 
 .endif
 # End of pre-makefile section.
