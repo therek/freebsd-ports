@@ -2,11 +2,11 @@
 # Date created:                         June 21th 1997
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/converters/p5-MIME-Base64/Makefile,v 1.16 2000/06/09 23:59:28 will Exp $
+# $FreeBSD: ports/converters/p5-MIME-Base64/Makefile,v 1.17 2001/03/01 06:38:07 vanilla Exp $
 #
 
 PORTNAME=	MIME-Base64
-PORTVERSION=	2.11
+PORTVERSION=	2.12
 CATEGORIES=	converters perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MIME
