@@ -2,14 +2,14 @@
 # Date Created:				24 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/www/libghttp/Makefile,v 1.24 2001/03/23 05:42:30 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libghttp
 PORTVERSION=	1.0.9
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	stable/sources/libghttp
+MASTER_SITE_SUBDIR=	sources/libghttp/1.0
 
 MAINTAINER=	gnome@FreeBSD.org
 
