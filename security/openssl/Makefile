@@ -3,7 +3,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/openssl/Makefile,v 1.35 1999/08/31 01:51:23 peter Exp $
 #
 
 DISTNAME=	openssl-0.9.4
@@ -43,6 +43,6 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/doc/openssl
 	@${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/openssl
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${SED} -e 's#/usr/local#${PREFIX}#g' ${PKGDIR}/MESSAGE
 
 .include <bsd.port.mk>
