@@ -2,7 +2,7 @@
 # Date created:				29 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/math/scigraphica/Makefile,v 1.3 2000/09/11 07:00:59 sobomax Exp $
+# $FreeBSD: ports/math/scigraphica/Makefile,v 1.4 2000/10/05 07:17:04 reg Exp $
 #
 
 PORTNAME=	scigraphica
@@ -13,16 +13,15 @@ DISTNAME=	sg-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python15 \
-		${LOCALBASE}/include/python1.5/Numeric/arrayobject.h:${PORTSDIR}/math/numpy
+BUILD_DEPENDS=	${LOCALBASE}/include/${PYTHON_VERSION}/Numeric/arrayobject.h:${PORTSDIR}/math/numpy
 LIB_DEPENDS=	gtkextra.10:${PORTSDIR}/x11-toolkits/gtkextra \
 		xml.5:${PORTSDIR}/textproc/libxml
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python15 \
-		${LOCALBASE}/include/python1.5/Numeric/arrayobject.h:${PORTSDIR}/math/numpy
+RUN_DEPENDS=	${LOCALBASE}/include/${PYTHON_VERSION}/Numeric/arrayobject.h:${PORTSDIR}/math/numpy
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_GNOME=	yes
+USE_PYTHON=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
