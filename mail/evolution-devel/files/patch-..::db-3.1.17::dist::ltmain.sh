@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/mail/evolution/files/patch-..::db-3.1.17::dist::ltmain.sh,v 1.1 2001/12/15 04:40:13 sobomax Exp $
 
 --- ../db-3.1.17/dist/ltmain.sh.orig	Sun Jul 30 20:45:53 2000
 +++ ../db-3.1.17/dist/ltmain.sh	Fri Dec 14 19:32:11 2001
