@@ -2,11 +2,11 @@
 # Date created:         17 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.27 1999/08/31 06:40:21 mharo Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.28 2000/04/08 23:17:55 mharo Exp $
 #
 
-PORTNAME=	unzip-5.40
-PORTVERSION=	unzip-5.40
+PORTNAME=	unzip
+PORTVERSION=	5.40
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/infozip/src/
 DISTNAME=	unzip540
