@@ -2,7 +2,7 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.22 2001/03/24 22:38:38 nsayer Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.23 2001/05/16 14:08:50 nsayer Exp $
 #
 
 PORTNAME=	libmcrypt
