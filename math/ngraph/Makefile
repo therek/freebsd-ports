@@ -2,12 +2,11 @@
 # Date created:         18 Aug 1999
 # Whom:                 nobu@rd.isac.co.jp
 #
-# $FreeBSD: ports/math/ngraph/Makefile,v 1.12 2001/05/26 11:42:44 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ngraph
-PORTVERSION=	6.3.14
-PORTREVISION=	1
+PORTVERSION=	6.3.16
 CATEGORIES=	math
 MASTER_SITES=	http://www2e.biglobe.ne.jp/~isizaka/bin/ \
 		${MASTER_SITE_PORTS_JP}
