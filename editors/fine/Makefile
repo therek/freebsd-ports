@@ -2,13 +2,15 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.7 1999/11/26 21:21:33 cpiazza Exp $
+# $FreeBSD: ports/editors/fine/Makefile,v 1.8 2000/04/14 00:25:28 mharo Exp $
 #
 
 PORTNAME=	fine
 PORTVERSION=	2.3
 CATEGORIES=	editors
-MASTER_SITES=	ftp://razor.fer.uni-lj.si/pub/software/bojank/fine/
+# DEAD MASTER_SITES=	ftp://razor.fer.uni-lj.si/pub/software/bojank/fine/
+MASTER_SITES=	http://idig.linux.tucows.com/files/x11/office/ \
+		http://dccnet.linux.tucows.com/files/x11/office/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	cpiazza@FreeBSD.org
