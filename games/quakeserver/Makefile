@@ -2,15 +2,15 @@
 # Date created:				October 26th 1996
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/quakeserver/Makefile,v 1.23 2000/07/05 12:36:29 tg Exp $
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.24 2000/10/23 21:02:58 will Exp $
 #
 
 PORTNAME=	quakeserver
 PORTVERSION=	1.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/quake/planetquake/threewave/unix/ \
+MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/quakeworld/unix/old/ \
 		ftp://ftp.idsoftware.com/idstuff/quake/
-DISTFILES=	unixded-1.0-i386-unknown-bsdi3.0.tar.gz \
+DISTFILES=	unixded-${PORTVERSION}-i386-unknown-bsdi3.0.tar.gz \
 		quake106.zip
 
 MAINTAINER=	ports@freebsd.org
@@ -28,7 +28,7 @@ do-extract:
 		@ unzip -q -o ${DISTDIR}/quake106.zip -d ${WRKDIR} resource.*
 		@ ${CAT} ${WRKDIR}/resource.dat ${WRKDIR}/resource.1 > ${WRKDIR}/resource.exe
 		@ cd ${WRKDIR}; lha xfq resource.exe id1/pak0.pak
-		@ cd ${WRKDIR}; tar zxf ${DISTDIR}/unixded-1.0-i386-unknown-bsdi3.0.tar.gz
+		@ cd ${WRKDIR}; tar zxf ${DISTDIR}/unixded-${PORTVERSION}-i386-unknown-bsdi3.0.tar.gz
 
 do-configure:
 		@ ${CP} ${FILESDIR}/readme.port ${WRKSRC}
