@@ -2,11 +2,11 @@
 # Date created:				27 Feb 2000
 # Whom:	      				Vanilla I. Shu <vanilla@FreeBSD.ORG>
 #
-# $FreeBSD: ports/net/p5-Net-Daemon/Makefile,v 1.2 2000/04/09 18:12:50 cpiazza Exp $
+# $FreeBSD: ports/net/p5-Net-Daemon/Makefile,v 1.3 2000/06/17 02:36:36 will Exp $
 #
 
 PORTNAME=	Net-Daemon
-PORTVERSION=	0.29
+PORTVERSION=	0.31
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
