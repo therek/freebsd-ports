@@ -2,11 +2,11 @@
 # Date created:        25 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gob/Makefile,v 1.12 2000/07/06 15:32:33 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gob/Makefile,v 1.13 2000/08/04 01:30:59 ade Exp $
 #
 
 PORTNAME=	gob
-PORTVERSION= 	1.0.4
+PORTVERSION= 	1.0.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://ftp.5z.com/pub/gob/
 
