@@ -2,22 +2,22 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.6 2000/11/12 12:46:00 sada Exp $
+# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.7 2000/12/13 05:49:42 will Exp $
 #
 
 PORTNAME=	cvs2html
-PORTVERSION=	1.74
+PORTVERSION=	1.82
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sada
 EXTRACT_SUFX=	.gz
-EXTRACT_AFTER_ARGS=	> ${PORTNAME}
 
 MAINTAINER=	sada@FreeBSD.org
 
 USE_PERL5=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
+EXTRACT_AFTER_ARGS=	> ${PORTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${PREFIX}/bin
