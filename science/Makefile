@@ -1,8 +1,9 @@
-# $FreeBSD: ports/science/Makefile,v 1.6 2001/09/12 16:36:24 sada Exp $
+# $FreeBSD$
 #
 
     SUBDIR += chemtool
     SUBDIR += clhep
+    SUBDIR += libsvm
     SUBDIR += mpqc
     SUBDIR += xmakemol
 
