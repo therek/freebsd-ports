@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2/Makefile,v 1.28 2001/05/05 21:54:48 olgeni Exp $
+# $FreeBSD: ports/x11-wm/fvwm2/Makefile,v 1.29 2001/06/17 10:46:31 olgeni Exp $
 #
 
 PORTNAME=	fvwm
@@ -32,7 +32,7 @@ post-install:
 	@${MKDIR} ${PREFIX}/etc
 	@${CP} ${WRKSRC}/sample.fvwmrc/system.fvwm2rc ${PREFIX}/etc/system.fvwm2rc.dist
 	@if [ ! -e ${PREFIX}/etc/system.fvwm2rc ]; then \
-		${CP} ${WRKSRC}/sample.fvwmrc/system.fvwm2rc ${PREFIX}/etc/system.fvwm2rc.dist; \
+		${CP} ${WRKSRC}/sample.fvwmrc/system.fvwm2rc ${PREFIX}/etc/system.fvwm2rc; \
 	fi
 	@${MKDIR} ${PREFIX}/lib/X11/fvwm2/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/icons/*.xpm \
