@@ -2,11 +2,11 @@
 # Date created:		26 May 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.7 2000/06/30 08:27:06 sobomax Exp $
+# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.8 2000/07/11 22:02:19 ade Exp $
 #
 
 PORTNAME=	gnomefind
-PORTVERSION= 	0.6
+PORTVERSION= 	1.0
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gnome-find
