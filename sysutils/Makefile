@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.144 2001/01/03 23:54:04 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.145 2001/01/06 14:28:05 alex Exp $
 #
     SUBDIR += yawho
 
@@ -73,6 +73,7 @@
     SUBDIR += nwclient
     SUBDIR += obliterate
     SUBDIR += p5-Quota
+    SUBDIR += p5-Schedule-At
     SUBDIR += p5-Schedule-Cron
     SUBDIR += p5-Schedule-Match
     SUBDIR += p5-SyslogScan
