@@ -2,7 +2,7 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.11 2001/08/24 13:06:50 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zangband
@@ -35,7 +35,13 @@ BINMODE=	2755
 ANGBANDLIB?=	lib/${PORTNAME}
 ANGBANDBIN?=	bin/${PORTNAME}
 
-post-patch:
+pre-patch:
+	@${PERL} -pi.orig -e 's|aclocal|${ACLOCAL}|; \
+		s|autoheader|${AUTOHEADER}|; \
+		s|automake|${AUTOMAKE}|; s|autoconf|${AUTOCONF}|' \
+		${WRKSRC}/bootstrap
+
+pre-configure:
 	(cd ${WRKSRC} ; ${SH} bootstrap)
 
 post-install:
