@@ -2,14 +2,15 @@
 # Date created:		18 Feb 2001
 # Whom:			Yarema <yds@dppl.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ruby-csv/Makefile,v 1.1 2001/02/23 16:40:25 knu Exp $
 #
 
 PORTNAME=	csv
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/CSV/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/g}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
