@@ -2,10 +2,11 @@
 # Date created:		23 September 2000
 # Whom:			Jeremy Chadwick <yoshi@parodius.com>
 #
-# $FreeBSD: ports/games/nethack3-tty/Makefile,v 1.26 2000/08/03 09:23:49 asami Exp $
+# $FreeBSD: ports/games/nethack3-tty/Makefile,v 1.27 2000/10/26 11:41:43 jeh Exp $
 #
 
 PORTNAME=	nethack
+PKGNAMESUFFIX=	-tty
 PORTVERSION=	3.3.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/nh331/src/ \
