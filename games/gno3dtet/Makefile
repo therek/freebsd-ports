@@ -2,11 +2,11 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.8 2000/10/05 07:10:36 reg Exp $
+# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.9 2001/01/09 00:06:21 will Exp $
 #
 
 PORTNAME=	gno3dtet
-PORTVERSION=	1.6.0
+PORTVERSION=	1.6.1
 CATEGORIES=	games gnome
 MASTER_SITES=	ftp://webdat.com/pub/seb/gno3dtet/
 EXTRACT_SUFX=	.tgz
@@ -26,9 +26,6 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
 		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
-
-pre-configure:
-	@${RM} -f ${WRKSRC}/config.cache
 
 post-install:
 	${CHOWN} root:games ${PREFIX}/bin/gno3dtet
