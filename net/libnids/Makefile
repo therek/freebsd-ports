@@ -2,13 +2,13 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/net/libnids/Makefile,v 1.4 2000/04/09 18:12:03 cpiazza Exp $
+# $FreeBSD: ports/net/libnids/Makefile,v 1.5 2000/04/24 07:42:58 kris Exp $
 #
 
 PORTNAME=	libnids
-PORTVERSION=	1.13
+PORTVERSION=	1.14
 CATEGORIES=	net security
-MASTER_SITES=	http://www.packetfactory.net/Projects/libnids/dist/
+MASTER_SITES=	http://www.packetfactory.net/Projects/Libnids/dist/
 
 MAINTAINER=	kris@FreeBSD.org
 
