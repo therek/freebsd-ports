@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xtimer
-# Date created:		05 Apr 1997
-# Whom:			candy@fct.kgc.co.jp
+# Date created:		19 May 2000
+# Whom:			candy@kgc.co.jp
 #
-# $FreeBSD: ports/x11-clocks/xtimer/Makefile,v 1.7 1999/08/31 02:58:10 peter Exp $
+# $FreeBSD: ports/x11-clocks/xtimer/Makefile,v 1.8 2000/04/10 00:33:08 cpiazza Exp $
 #
 
 PORTNAME=	xtimer
-PORTVERSION= 	0.8087
+PORTVERSION= 	0.8089
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA004959/xtimer/
-DISTNAME=	${PORTNAME}-8087
+DISTNAME=	${PORTNAME}-8089
 
 MAINTAINER=	candy@kgc.co.jp
 
