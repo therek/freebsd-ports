@@ -2,21 +2,20 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-flf/Makefile,v 1.5 2001/05/03 01:37:05 lioux Exp $
+# $FreeBSD: ports/games/hlserver-flf/Makefile,v 1.6 2001/05/08 20:26:58 lioux Exp $
 #
 
 PORTNAME=	flf
-PORTVERSION=	1.2a
+PORTVERSION=	1.3
 MASTER_SITES=	ftp://ftp2.3ddownloads.com/90380/valveworld/mods/frontline/ \
 		ftp://ftp.3ddownloads.com/90380/valveworld/mods/frontline/ \
-		ftp://ftp.gamesurf.de/pub/gamesurf/halflife/mods/frontlineforce/ \
+		http://www.flfmod.net/site/info/files/ \
 		ftp://ftp.jolt.co.uk/pub/dls/ \
-		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/modifications/frontlineforce/ \
 		ftp://ftp.task.gda.pl/vol/d33/ftp.extreme-players.de/exp/hl/mod/frontlineforce/ \
-		http://laddermonkey.net/files/ \
+		http://www.spies.com/flf/downloads/ \
 		http://62.27.37.102/ftp1_1/halflife/multiplayermods/flf/server/
 DISTFILES=	frontline_linux_12a.zip \
-		frontline_12a_fix_linux.zip
+		frontline13_up.zip
 
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-o -qq
