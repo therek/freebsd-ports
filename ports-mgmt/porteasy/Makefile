@@ -2,13 +2,13 @@
 # Date created:					September 19th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/misc/porteasy/Makefile,v 1.8 2001/05/16 09:28:50 des Exp $
+# $FreeBSD: ports/misc/porteasy/Makefile,v 1.9 2001/06/09 15:50:05 des Exp $
 #
 # This port is self contained in the src directory.
 #
 
 PORTNAME=	porteasy
-PORTVERSION=	2.4
+PORTVERSION=	2.5
 CATEGORIES=	misc
 MASTER_SITES=	# none
 DISTFILES=	# none

@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.11 2001/05/16 09:28:51 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.12 2001/06/09 15:50:05 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.4";
+my $VERSION	= "2.5";
 my $COPYRIGHT	= "Copyright (c) 2000 Dag-Erling Smørgrav. All rights reserved.";
 
 # Constants
@@ -550,11 +550,14 @@ sub find_dependencies($) {
 	or bsd::errx(1, "failed to obtain dependency list");
     %depends = ();
     foreach $item (split(' ', $dependvars)) {
-	if ($item !~ m|^([^:]+):$portsdir/([^/:]+/[^/:]+)/?(:[^:]+)?$|) {
+	if ($item !~ m|^(?:([^:]+):)?$portsdir/([^/:]+/[^/:]+)/?(:[^:]+)?$|) {
 	    bsd::warnx("invalid dependency: %s", $item);
+	    next;
 	}
 	($lhs, $rhs) = ($1, $2);
-	if ($exclude) {
+	# XXX this isn't quite right; lhs-less dependencies should be
+	# XXX checked against /var/db/pkg or something.
+	if ($exclude && defined($lhs)) {
 	    if ($have_dep{$rhs}) {
 		next;
 	    }
