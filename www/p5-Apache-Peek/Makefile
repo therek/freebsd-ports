@@ -2,7 +2,7 @@
 # Date created:		24-Jul-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-Peek/Makefile,v 1.1 2000/08/11 05:07:56 will Exp $
 #
 
 PORTNAME=	Apache-Peek
@@ -13,6 +13,9 @@ MASTER_SITE_SUBDIR=Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	leo@florida.sarang.net
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/src.pm:${PORTSDIR}/www/mod_perl \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/B/Graph.pm:${PORTSDIR}/devel/p5-B-Graph
 
 USE_PERL5=	YES
 MAN3=		Apache::Peek.3
