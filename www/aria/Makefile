@@ -2,14 +2,16 @@
 # Date created:        30 March 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/www/aria/Makefile,v 1.1 2001/03/31 11:04:34 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aria
 PORTVERSION=	0.10.1
+PORTREVISION=	1
 CATEGORIES=	www
-MASTER_SITES=	http://aria.rednoah.com/storage/sources/
-DISTNAME=	${PORTNAME}-0.10.1test9
+MASTER_SITES=	http://rabien.virtualave.net/linux/storage/sources/ \
+		http://aria.rednoah.com/storage/sources/
+DISTNAME=	${PORTNAME}-0.10.1test21
 
 MAINTAINER=	nakai@FreeBSD.org
 
@@ -18,15 +20,18 @@ USE_GTK=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=    yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share \
-		--datadir=${PREFIX}/share
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
-		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		 's|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+
+post-install:
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.euc ${PREFIX}/share/doc/${PORTNAME}/
+.endif
 
 .include <bsd.port.mk>
