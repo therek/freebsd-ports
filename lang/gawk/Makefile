@@ -2,7 +2,7 @@
 # Date created:		Mi  21 Okt 1998 13:53:18 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/lang/gawk/Makefile,v 1.9 2000/08/13 02:57:10 kris Exp $
+# $FreeBSD: ports/lang/gawk/Makefile,v 1.10 2001/01/03 22:19:35 andreas Exp $
 
 PORTNAME=	gawk
 PORTVERSION=	3.0.6
@@ -12,7 +12,6 @@ MASTER_SITE_SUBDIR=	gawk
 
 MAINTAINER=	ports@FreeBSD.org
 
-MANUAL_PACKAGE_BUILD=	confuses zsh
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--program-prefix=g \
 			--enable-bitops \
