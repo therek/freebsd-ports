@@ -2,7 +2,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.29 2000/04/15 07:19:46 billf Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.30 2000/07/05 18:31:22 billf Exp $
 #
 
 PORTNAME=	ethereal
@@ -26,6 +26,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-snmp=no
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 MAN1=		ethereal.1 tethereal.1 editcap.1
 
