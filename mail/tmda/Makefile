@@ -2,11 +2,11 @@
 # Date created:				08 June 2001
 # Whom:					Jason R. Mastaler <jason@mastaler.com>
 #
-# $FreeBSD: ports/mail/tmda/Makefile,v 1.1 2001/06/27 02:56:36 dwcjr Exp $
+# $FreeBSD: ports/mail/tmda/Makefile,v 1.2 2001/06/29 14:44:30 kevlo Exp $
 #
 
 PORTNAME=	tmda
-PORTVERSION=	0.22
+PORTVERSION=	0.34
 CATEGORIES=	mail python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	tmda
@@ -14,7 +14,15 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jason@mastaler.com
 
+RUN_DEPENDS=    ${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
+
 USE_PYTHON=	yes
+
+.if exists(${PREFIX}/qmail/bin/qmail-send)
+QMAIL_DIR?=     ${PREFIX}/qmail
+.else
+QMAIL_DIR?=     /var/qmail
+.endif
 
 do-build:
 	(cd ${WRKSRC}; ${PYTHON_CMD} ./setup)
