@@ -33,7 +33,7 @@
 # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 # POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/phoenix/files/mkdistfile,v 1.1 2002/10/21 18:37:12 alane Exp $
 #
 # 2002/10/21 alane@geeksrus.net
 #
@@ -130,6 +130,12 @@ cat >>$exfile <<'EOF'
 */package
 */package/*
 */.cvsignore
+*/windows
+*/windows/*
+*/os2
+*/os2/*
+*/solaris
+*/solaris/*
 mozilla/apache
 mozilla/calendar
 mozilla/cck
