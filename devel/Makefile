@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.412 2001/01/04 00:26:08 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.413 2001/01/04 11:14:37 nbm Exp $
 #
     SUBDIR += zziplib
 
@@ -14,6 +14,7 @@
     SUBDIR += amulet
     SUBDIR += arm-aout-binutils
     SUBDIR += arm-aout-gcc295
+    SUBDIR += arm-elf-binutils
     SUBDIR += asis
     SUBDIR += asl
     SUBDIR += astyle
