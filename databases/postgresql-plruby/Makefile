@@ -2,12 +2,11 @@
 # Date created:		28 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/postgresql-plruby/Makefile,v 1.1 2001/06/28 08:52:18 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	plruby
-PORTVERSION=	0.2.3
-PORTREVISION=	1
+PORTVERSION=	0.2.4
 CATEGORIES=	databases ruby
 MASTER_SITES=	ftp://moulon.inra.fr/pub/ruby/
 PKGNAMEPREFIX=	postgresql-
