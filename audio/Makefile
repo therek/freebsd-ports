@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.229 2001/04/17 17:35:04 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.230 2001/04/18 11:09:52 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -109,6 +109,7 @@
     SUBDIR += mp3chew
     SUBDIR += mp3encode
     SUBDIR += mp3info
+    SUBDIR += mp3mover
     SUBDIR += mp3rename
     SUBDIR += mpegaudio
     SUBDIR += mpg123
