@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.329 2001/03/02 11:30:33 demon Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.330 2001/03/10 03:46:48 grog Exp $
 #
 
     SUBDIR += 40upgrade
@@ -83,6 +83,7 @@
     SUBDIR += kwatch
     SUBDIR += lc
     SUBDIR += less
+    SUBDIR += libh
     SUBDIR += lifelines
     SUBDIR += lile
     SUBDIR += logsurfer
