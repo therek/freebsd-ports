@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.243 2001/07/20 03:28:06 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.244 2001/07/20 11:21:14 knu Exp $
 #
 
     SUBDIR += Maaate
@@ -162,6 +162,7 @@
     SUBDIR += rplay
     SUBDIR += rsynth
     SUBDIR += ruby-audiofile
+    SUBDIR += ruby-mp3tag
     SUBDIR += s3mod
     SUBDIR += sbagen
     SUBDIR += sdl_mixer
