@@ -2,14 +2,14 @@
 # Date created:				9 May 2000
 # Whom:					Ask Bjoern Hansen <ask@valueclick.com>
 #
-# $FreeBSD: ports/www/http_load/Makefile,v 1.1 2000/07/29 12:22:39 alex Exp $
+# $FreeBSD: ports/www/http_load/Makefile,v 1.2 2001/04/27 17:01:04 mi Exp $
 #
 
 PORTNAME=	http_load
 PORTVERSION=	20010405
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/http_load/
-DISTNAME=	http_load_05apr2001
+DISTNAME=	${PORTNAME}-05apr2001
 
 MAINTAINER=	ask@valueclick.com
 
