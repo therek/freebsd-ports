@@ -2,14 +2,13 @@
 # Date created:				2000-09-05
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.2 2000/10/02 05:39:29 trevor Exp $
+# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.3 2000/10/04 05:09:17 trevor Exp $
 #
 
 PORTNAME=	spiralsynth
-PORTVERSION=	0.1.6
+PORTVERSION=	0.1.7
 CATEGORIES=	audio
-MASTER_SITES=	http://www.blueammonite.f9.co.uk/SpiralSynth/dload/ \
-		http://jpj.net/~trevor/freebsd/ports/
+MASTER_SITES=	http://www.pawfal.org/SpiralSynth/dload/
 DISTNAME=	SpiralSynth-${PORTVERSION}
 
 MAINTAINER=	trevor@FreeBSD.org
