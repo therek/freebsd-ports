@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.123 2001/05/24 01:19:05 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unreleased/unix/ \
 		ftp://ftp.vim.org/pub/vim/unreleased/unix/  \
 		ftp://ftp.is.co.za/applications/editors/unreleased/vim/  \
 		ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unreleased/unix/  \
+		ftp://ftp.mirror.ac.uk/sites/ftp.vim.org/pub/vim/unreleased/unix/ \
 		ftp://ftp.progsoc.uts.edu.au/pub/vim/unreleased/unix/
 DISTNAME=	vim-${PORTVERSION}
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX} ${DISTNAME}-rt${EXTRACT_SUFX}
