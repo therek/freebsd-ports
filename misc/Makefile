@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.338 2001/04/07 06:46:37 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.339 2001/04/07 19:37:31 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -62,6 +62,7 @@
     SUBDIR += gnomeutils
     SUBDIR += gnuls
     SUBDIR += gone
+    SUBDIR += gonvert
     SUBDIR += gplbp
     SUBDIR += granulate
     SUBDIR += grc
