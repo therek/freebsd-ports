@@ -1,13 +1,12 @@
 # New ports collection makefile for:   angband
-# Version required:    2.8.3
 # Date created:        21 Feb 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/angband/Makefile,v 1.10 1999/12/02 19:18:59 mph Exp $
+# $FreeBSD: ports/games/angband/Makefile,v 1.11 2000/02/08 09:26:19 peter Exp $
 #
 
-DISTNAME=	angband-283
-PKGNAME=	angband-2.8.3
+PORTNAME=	angband
+PORTVERSION=	2.8.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Source/ \
 		http://people.FreeBSD.org/~mph/distfiles/

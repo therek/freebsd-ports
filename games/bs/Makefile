@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bs
-# Version required:			2.2
 # Date created:				11 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bs/Makefile,v 1.4 2000/03/29 07:17:01 kris Exp $
+# $FreeBSD: ports/games/bs/Makefile,v 1.5 2000/04/02 00:57:17 mharo Exp $
 #
 
-DISTNAME=	bs-2.2
+PORTNAME=	bs
+PORTVERSION=	2.2
 CATEGORIES=	games
 MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
 

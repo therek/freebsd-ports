@@ -1,12 +1,12 @@
 # New ports collection makefile for:	crossfire
-# Version required:     0.93.0
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.32 2000/02/20 17:01:01 andreas Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.33 2000/03/11 06:23:33 kris Exp $
 #
 
-DISTNAME=	crossfire-${MAJ}.${MIN}.${PL}
+PORTNAME=	crossfire
+PORTVERSION=	${MAJ}.${MIN}.${PL}
 CATEGORIES=	games
 MASTER_SITES=	http://people.FreeBSD.org/~andreas/download/ \
 		ftp://ftp.real-time.com/pub/games/crossfire/ \

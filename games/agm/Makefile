@@ -1,12 +1,12 @@
 # New ports collection makefile for:	agm
-# Version required:			1.4
 # Date created:				4 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/agm/Makefile,v 1.4 1999/08/25 06:02:49 obrien Exp $
+# $FreeBSD: ports/games/agm/Makefile,v 1.5 2000/03/29 07:16:59 kris Exp $
 #
 
-DISTNAME=		agm-1.4
+PORTNAME=		agm
+PORTVERSION=		1.4
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://users.gtn.net/fraserm/

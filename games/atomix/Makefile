@@ -1,15 +1,15 @@
 # New ports collection makefile for:   atomix
-# Version required:    0.2.0-1
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/games/atomix/Makefile,v 1.1.1.1 2000/02/04 13:02:44 nakai Exp $
+# $FreeBSD: ports/games/atomix/Makefile,v 1.2 2000/02/12 14:47:46 nakai Exp $
 #
 
-DISTNAME=	atomix-0.2.0-1
-PKGNAME=	atomix-0.2.0.1
+PORTNAME=	atomix
+PORTVERSION=	0.2.0.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.informatik.uni-oldenburg.de/~pearl/download/
+DISTNAME=	atomix-0.2.0-1
 
 MAINTAINER=	nakai@FreeBSD.org
 

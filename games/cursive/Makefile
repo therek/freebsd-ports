@@ -1,15 +1,15 @@
 # New ports collection makefile for:	cursive
-# Version required:	1.0
 # Date created:		4 December 1999
 # Whom:			James Howard <howardj@wam.umd.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/cursive/Makefile,v 1.1 1999/12/25 03:03:37 steve Exp $
 #
 
-DISTNAME=	cursive
-PKGNAME=	cursive-1.0
+PORTNAME=	cursive
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://puck.nether.net/pub/janc/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	howardjp@wam.umd.edu

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	acm
-# Version required:	1.0
 # Date created:		23 February 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/blackjack/Makefile,v 1.6 1999/08/25 06:02:57 obrien Exp $
 #
 
-DISTNAME=	blackjack-1.1
+PORTNAME=	blackjack
+PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy

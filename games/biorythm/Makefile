@@ -1,12 +1,12 @@
 # New ports collection makefile for:	biorythm
-# Version required:			1.1.1
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/biorythm/Makefile,v 1.2 1999/08/25 06:02:56 obrien Exp $
+# $FreeBSD: ports/games/biorythm/Makefile,v 1.3 2000/03/29 07:18:15 kris Exp $
 #
 
-DISTNAME=		biorythm-1.1.1
+PORTNAME=		biorythm
+PORTVERSION=		1.1.1
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://home.sol.no/~sverrehu/pub-unix/files/

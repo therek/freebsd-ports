@@ -3,10 +3,11 @@
 # Date created:		5 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/acm/Makefile,v 1.18 1999/08/25 06:02:46 obrien Exp $
+# $FreeBSD: ports/games/acm/Makefile,v 1.19 1999/09/29 18:32:17 se Exp $
 #
 
-DISTNAME=	acm-5.0
+PORTNAME=	acm
+PORTVERSION=	5.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.websimulations.com/pub/download/
 

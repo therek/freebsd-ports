@@ -1,12 +1,12 @@
 # New ports collection makefile for:	columns
-# Version required:			1.1
 # Date created:				26 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/columns/Makefile,v 1.4 2000/03/29 07:18:21 kris Exp $
+# $FreeBSD: ports/games/columns/Makefile,v 1.5 2000/04/02 00:57:21 mharo Exp $
 #
 
-DISTNAME=	columns-1.1
+PORTNAME=	columns
+PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.phreax.net/
 

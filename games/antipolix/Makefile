@@ -1,16 +1,16 @@
 # New ports collection makefile for:	antipolix
-# Version required:		2.1
 # Date created:			2 December 1998
 # Whom:				Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/antipolix/Makefile,v 1.2 1999/08/25 06:02:53 obrien Exp $
+# $FreeBSD: ports/games/antipolix/Makefile,v 1.3 2000/03/29 07:18:01 kris Exp $
 #
 
-DISTNAME=		AntipoliX_2.1
-PKGNAME=		antipolix-2.1
+PORTNAME=		antipolix
+PORTVERSION=		2.1
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/multiplayer
+DISTNAME=		AntipoliX_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

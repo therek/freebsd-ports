@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bogged
-# Version required:			1.0.0
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bogged/Makefile,v 1.5 1999/11/28 18:30:49 steve Exp $
+# $FreeBSD: ports/games/bogged/Makefile,v 1.6 2000/03/29 07:17:52 kris Exp $
 #
 
-DISTNAME=		bogged-1.0.0
+PORTNAME=		bogged
+PORTVERSION=		1.0.0
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy

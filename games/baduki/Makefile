@@ -1,12 +1,12 @@
 # New ports collection makefile for:   baduki
-# Version required:    0.2.9
 # Date created:        11 December 1999
 # Whom:                spcoltri@unm.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/baduki/Makefile,v 1.1 1999/12/25 03:00:06 steve Exp $
 #
 
-DISTNAME=	baduki-0.2.9
+PORTNAME=	baduki
+PORTVERSION=	0.2.9
 CATEGORIES=	games
 MASTER_SITES=	http://soback.kornet21.net/~artist/baduk/
 

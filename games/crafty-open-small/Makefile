@@ -1,15 +1,15 @@
 # New ports collection makefile for:	crafty-open-small
-# Version required:			1 March 1997
 # Date created:				1 June 1998
 # Whom:					Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/crafty-open-small/Makefile,v 1.3 1999/08/25 06:03:13 obrien Exp $
 #
 
-DISTNAME=	small
-PKGNAME=	crafty-open-small-19970301
+PORTNAME=	crafty-open-small
+PORTVERSION=	19970301
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/common/
+DISTNAME=	small
 
 MAINTAINER=	seggers@semyam.dinoco.de
 

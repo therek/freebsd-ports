@@ -1,12 +1,12 @@
 # New ports collection makefile for:	blue
-# Version required:			2.4
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/blue/Makefile,v 1.4 2000/03/29 07:17:07 kris Exp $
+# $FreeBSD: ports/games/blue/Makefile,v 1.5 2000/04/02 00:57:07 mharo Exp $
 #
 
-DISTNAME=	blue-2.4
+PORTNAME=	blue
+PORTVERSION=	2.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
 

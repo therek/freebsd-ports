@@ -1,16 +1,16 @@
 # New ports collection makefile for:	awele
-# Version required:	1.0
 # Date created:		01 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/awele/Makefile,v 1.5 1999/08/31 06:44:11 mharo Exp $
+# $FreeBSD: ports/games/awele/Makefile,v 1.6 1999/11/28 18:30:46 steve Exp $
 #
 
-DISTNAME=	awele
-PKGNAME=	awele-1.0
+PORTNAME=	awele
+PORTVERSION=	1.0
 CATEGORIES=	games tk82
 MASTER_SITES=	http://www-air.inria.fr/ftp/Jean-Paul/
-EXTRACT_SUFX=	1.0.tgz
+DISTNAME=	${PORTNAME}${PORTVERSION}
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tg@FreeBSD.org
 
