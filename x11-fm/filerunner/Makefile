@@ -2,7 +2,7 @@
 # Date created:		3 August 1996
 # Whom:			lukin
 #
-# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.22 2000/04/10 00:39:20 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.23 2001/02/05 21:00:51 olgeni Exp $
 #
 
 PORTNAME=	filerunner
@@ -26,8 +26,10 @@ pre-build:
 do-install:
 	@ ${MKDIR} ${PREFIX}/lib/FileRunner/bitmaps
 	@ ${INSTALL_SCRIPT} ${WRKSRC}/fr ${PREFIX}/lib/FileRunner
+	@ ${INSTALL_SCRIPT} ${WRKSRC}/frcolor ${PREFIX}/lib/FileRunner
+	@ ${INSTALL_SCRIPT} ${WRKSRC}/frftp ${PREFIX}/lib/FileRunner
 	@ ${LN} -sf ${PREFIX}/lib/FileRunner/fr ${PREFIX}/bin
-.for file in FAQ HISTORY QuickStart.txt Tips.txt Users_Guide.txt chmod.tcl cmd.tcl config.tcl dialog_about.tcl ext.so font.tcl frcolor frftp ftp.tcl http.tcl tclIndex
+.for file in FAQ HISTORY QuickStart.txt Tips.txt Users_Guide.txt chmod.tcl cmd.tcl config.tcl dialog_about.tcl ext.so font.tcl ftp.tcl http.tcl tclIndex
 		@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/lib/FileRunner
 .endfor
 .for map in cross.bit frterm.bit larger.bit left.bit max.bit pgdown.bit pgup.bit right.bit smaller.bit toggle.bit tree.bit up.bit update.bit xterm.bit
