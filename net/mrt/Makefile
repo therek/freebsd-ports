@@ -3,7 +3,7 @@
 # Date created:		Sat Jun  6 00:09:52 JST 1998
 # Whom:			Jun-ichiro itojun Hagino <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/mrt/Makefile,v 1.3 1999/08/30 14:23:18 peter Exp $
 #
 
 DISTNAME=	mrt-${VERBASE}-src
@@ -15,8 +15,9 @@ MAINTAINER=	itojun@itojun.org
 
 WRKSRC=		${WRKDIR}/mrt-${VERBASE}/src
 GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 
-VERBASE=	1.5.1a
+VERBASE=	2.1.2a
 
 MAN8=	mrtd.8
 EXAMPLES=	programs/bgpsim/bgpsim.conf programs/bgpsim/bgpsim6.conf \
