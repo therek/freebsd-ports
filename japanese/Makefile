@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.303 2000/10/07 15:32:13 imura Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.304 2000/10/24 14:08:04 imura Exp $
 #
 
     SUBDIR += Canna
@@ -151,6 +151,7 @@
     SUBDIR += mnews
     SUBDIR += mnews-gnspool
     SUBDIR += mnews-im
+    SUBDIR += mozilla-jlp
     SUBDIR += msdosfs
     SUBDIR += mtools
     SUBDIR += muggy
