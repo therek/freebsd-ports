@@ -2,7 +2,7 @@
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/postilion/Makefile,v 1.7 2000/04/01 02:05:11 mharo Exp $
+# $FreeBSD: ports/mail/postilion/Makefile,v 1.8 2000/04/13 20:00:33 cpiazza Exp $
 #
 
 PORTNAME=	postilion
@@ -10,7 +10,7 @@ PORTVERSION= 	0.9.3c
 CATEGORIES=	mail tk82
 MASTER_SITES=	http://www.postilion.org/
 
-MAINTAINER=	gljohns@bellsouth.net
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
 		img.1:${PORTSDIR}/graphics/libimg
