@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.434 2004/05/16 21:47:20 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.435 2004/05/18 14:48:31 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1087,3 +1087,4 @@ lang/tclX80|lang/tclX|2004-05-14|replaced by lang/tclX
 misc/libelysium||2004-05-14|ancient version of this software
 audio/traymp|audio/gmpc|2004-05-16|project renamed
 security/avmailgate||2004-05-18|removed due to licensing concerns
+databases/postgresql-client|databases/postgresql7|2004-05-25|Remove the -client port because of dependencies problem
