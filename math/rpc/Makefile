@@ -3,11 +3,11 @@
 # Date created:			Mar 21, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/rpc/Makefile,v 1.1 2001/03/21 13:25:20 ijliao Exp $
+# $FreeBSD: ports/math/rpc/Makefile,v 1.2 2001/06/08 17:18:36 ijliao Exp $
 #
 
 PORTNAME=	rpc
-PORTVERSION=	0.94
+PORTVERSION=	0.95
 CATEGORIES=	math
 MASTER_SITES=	http://www.eecs.umich.edu/~pelzlpj/rpc/
 
