@@ -2,13 +2,16 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.60 2001/08/01 05:03:54 dinoex Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.61 2001/08/01 12:00:36 jmz Exp $
 #
 
 PORTNAME?=	ispell
 PORTVERSION?=	3.2.05
+PORTREVISION=	1
 CATEGORIES+=	textproc
 MASTER_SITES=	http://fmg-www.cs.ucla.edu/geoff/tars/
+DISTNAME=	ispell-3.2.05		# needed for slave ports / options
+DISTFILES=	ispell-3.2.05.tar.gz    # needed for slave ports / options
 
 MAINTAINER?=	jmz@FreeBSD.org
 ISPELL_FILES= 	ispell-3.2.05.tar.gz
@@ -24,7 +27,7 @@ MAKE_FLAGS=	TMPDIR=${WRKDIR} -f
 ALL_TARGET=
 
 BUILDHASH=	${WRKSRC}/buildhash
-UNSQ?=		${WRKSRC}/unsq
+UNSQ?=		${WRKDIR}/${DENEUDISTFILE:S=.tar.bz2$==}/bin/unsq.pl
 MUNCHLIST=	${WRKSRC}/munchlist
 DATADIR=	${PREFIX}/share/ispell
 
