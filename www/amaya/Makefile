@@ -2,11 +2,11 @@
 # Date created:		26 Dec 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.18 2001/03/20 05:54:34 dinoex Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.19 2001/03/25 18:00:54 dinoex Exp $
 #
 
 PORTNAME=	amaya
-PORTVERSION=	4.3.2
+PORTVERSION=	5.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/Amaya/Distribution/ \
 		ftp://ftp.w3.org/pub/amaya/
@@ -27,7 +27,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	../configure
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--with-more-shared
+CONFIGURE_ARGS=	--without-graphic-libs
 
 DICT?=		none
 
