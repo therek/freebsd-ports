@@ -2,11 +2,12 @@
 # Date created:			Tue Feb 22 00:06:07 CET 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/malsync/Makefile,v 1.6 2000/12/31 17:23:30 dirk Exp $
+# $FreeBSD: ports/palm/malsync/Makefile,v 1.7 2001/02/23 11:29:15 dirk Exp $
 #
 
 PORTNAME=	malsync
 PORTVERSION=	2.06
+PORTREVISION=	1
 CATEGORIES=	palm
 MASTER_SITES=	http://www.tomw.org/%SUBDIR%/ \
 		${MASTER_SITE_LOCAL}
@@ -15,7 +16,7 @@ DISTNAME=	malsync_2.0.6.src
 
 MAINTAINER=	dirk@FreeBSD.org
 
-LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link
+LIB_DEPENDS=	pisock.4:${PORTSDIR}/palm/pilot-link
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/malsync/mal/client/unix
