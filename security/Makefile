@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.179 2001/03/31 02:17:37 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.180 2001/03/31 11:36:33 dinoex Exp $
 #
 
     SUBDIR += aafid2
@@ -15,6 +15,7 @@
     SUBDIR += calife
     SUBDIR += cfs
     SUBDIR += checkpassword
+    SUBDIR += chkrootkit
     SUBDIR += chrootuid
     SUBDIR += cksfv
     SUBDIR += cops
