@@ -2,7 +2,7 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-dbd_sybase/Makefile,v 1.1 2001/06/02 18:51:44 knu Exp $
+# $FreeBSD: ports/databases/ruby-dbd_sybase/Makefile,v 1.2 2001/06/09 14:23:30 knu Exp $
 #
 
 PORTNAME=	dbd_sybase
@@ -17,6 +17,8 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	tds.0:${.CURDIR}/../freetds
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/dbi.rb:${RUBY_DBI_PORTDIR}
+
+BROKEN=		"This module does not work with Ruby/DBI 0.0.5 yet"
 
 USE_RUBY=	yes
 USE_RUBY_SETUP=	yes
