@@ -2,7 +2,7 @@
 # Date created:		June 2, 2001
 # Whom:			Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jlint/Makefile,v 1.1 2001/06/25 04:00:58 kevlo Exp $
 #
 
 PORTNAME=	jlint
@@ -10,7 +10,6 @@ PORTVERSION=	2.1
 CATEGORIES=	java
 MASTER_SITES=	http://artho.com/jlint/ \
 		http://jollem.com/~ernst/
-DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ernst@jollem.com
 
