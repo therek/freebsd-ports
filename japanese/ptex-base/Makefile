@@ -3,7 +3,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.27 1999/08/25 05:26:36 obrien Exp $
 #
 
 DISTNAME=	web2c-7.2
@@ -44,8 +44,8 @@ pre-install:
 .else
 	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
 .endif
-	@${TAR} --exclude 'texmf/tex/latex/base/*' -C ${PREFIX}/share \
-	  -zxf ${DISTDIR}/${DIST_SUBDIR}/texmflib-7.3.tar.gz
+	@${TAR} --exclude 'texmf/tex/latex/base/*' --exclude 'texmf/dvips/*' \
+	  -C ${PREFIX}/share -zxf ${DISTDIR}/${DIST_SUBDIR}/texmflib-7.3.tar.gz
 	#@${RMDIR} ${PREFIX}/share/texmf/tex/generic/images ${PREFIX}/share/texmf/bibtex/bib/misc
 
 post-install:
