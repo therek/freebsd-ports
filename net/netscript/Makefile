@@ -3,23 +3,31 @@
 # Date created:			May 30, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/net/netscript/Makefile,v 1.3 2001/06/30 18:21:33 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscript
 PORTVERSION=	1.6.3
+PORTREVISION=	1
 CATEGORIES=	net
-MASTER_SITES=	http://www.realhalo.org/netscript/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-ALL_TARGET=	bsd
+EXAMPLESDIR=	${PREFIX}/share/examples/${PORTNAME}
+
+do-build:
+	cd ${WRKSRC} && ${CC} ${CFLAGS} -DARPA -DBSD_T netscript.c -o netscript 
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/netscript ${PREFIX}/bin
-	${MKDIR} ${PREFIX}/share/examples/netscript
-	(cd ${WRKSRC}/examples ; \
-	 ${INSTALL_DATA} * ${PREFIX}/share/examples/netscript)
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+	@${MKDIR} ${EXAMPLESDIR}
+	${INSTALL_DATA} ${WRKSRC}/examples/* ${EXAMPLESDIR}
+.endif
 
 .include <bsd.port.mk>
