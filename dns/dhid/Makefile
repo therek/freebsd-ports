@@ -2,15 +2,19 @@
 # Date created:		Sat Aug 21 06:13:59 EDT 1999
 # Whom:			Oryx Gazella <oryx@ungulate.net>
 #
-# $FreeBSD: ports/net/dhid/Makefile,v 1.6 2000/04/20 20:17:33 mharo Exp $
+# $FreeBSD: ports/net/dhid/Makefile,v 1.7 2000/07/05 12:36:40 tg Exp $
 #
 
 PORTNAME=		dhid
-PORTVERSION=		3.1
+PORTVERSION=		4.0.2
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.dhis.org/pub/dhis/
+DISTFILES=		${DISTNAME}${EXTRACT_SUFX} \
+			${PORTNAME}-3.1${EXTRACT_SUFX}
 
 MAINTAINER=		oryx@ungulate.net
+
+OLDWRKSRC=		${WRKDIR}/${PORTNAME}-3.1
 
 MAN8=			dhid.8
 
@@ -20,18 +24,14 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dhid ${PREFIX}/sbin
-	${INSTALL_MAN} ${WRKSRC}/dhid.8 ${PREFIX}/man/man8
-	${INSTALL} ${COPY} -o root -g wheel -m 600 ${WRKSRC}/dhid.conf ${PREFIX}/etc/dhid.conf.sample
+	${INSTALL_MAN} ${OLDWRKSRC}/dhid.8 ${PREFIX}/man/man8
+	${INSTALL} ${COPY} -o root -g wheel -m 600 ${OLDWRKSRC}/dhid.conf ${PREFIX}/etc/dhid.conf.sample
 
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/dhid.sh ]; then \
 		${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/dhid.sh startup file."; \
 		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/dhid.sh ${PREFIX}/etc/rc.d/dhid.sh; \
 	fi;
-	@${ECHO} "--------------------------------------------------------------------------"
-	@${ECHO} "Before dhid can run, you will need to register with a DHIS provider."
-	@${ECHO} "See http://www.dhis.org/dhis/services/ for a list of providers."
-	@${ECHO} "Enter the DHIS account information into the ${PREFIX}/etc/dhid.conf file."
-	@${ECHO} "--------------------------------------------------------------------------"
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
