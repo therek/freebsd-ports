@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.510 2005/01/21 18:30:14 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.511 2005/01/22 00:55:04 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -43,7 +43,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>An Hyperdose Security Advisory reports:</p>
+	<p>A Hyperdose Security Advisory reports:</p>
 	<blockquote cite="http://lists.horde.org/archives/announce/2005/000159.html">
 	  <p>Horde contains two XSS attacks that can be exploited
 	    through GET requests.  Once exploited, these requests
