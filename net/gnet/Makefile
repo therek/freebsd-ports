@@ -3,7 +3,7 @@
 # Date created:        16 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gnet/Makefile,v 1.1.1.1 2000/02/16 12:01:25 nakai Exp $
 #
 
 DISTNAME=	gnet-0.1.9
@@ -11,6 +11,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.eecs.umich.edu/~dhelder/misc/gnet/src/
 
 MAINTAINER=	nakai@FreeBSD.org
+
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
 
 GLIB_CONFIG=	${LOCALBASE}/bin/glib12-config
 
