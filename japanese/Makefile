@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.362 2001/06/01 14:25:58 sf Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.363 2001/06/23 18:09:13 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -293,6 +293,7 @@
     SUBDIR += sdic
     SUBDIR += sed
     SUBDIR += seizedesktop
+    SUBDIR += shinonome
     SUBDIR += sj3
     SUBDIR += sjxa
     SUBDIR += skk
