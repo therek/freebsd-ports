@@ -3,7 +3,7 @@
 # Date created:			Jul 9, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/print/gfontview/Makefile,v 1.1 2001/07/26 18:57:56 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gfontview
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	t1.3:${PORTSDIR}/devel/t1lib
+LIB_DEPENDS=	t1.4:${PORTSDIR}/devel/t1lib
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

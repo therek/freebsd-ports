@@ -2,7 +2,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.37 2001/08/31 23:34:46 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpdf
@@ -20,7 +20,7 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-LIB_DEPENDS=	t1.3:${PORTSDIR}/devel/t1lib
+LIB_DEPENDS=	t1.4:${PORTSDIR}/devel/t1lib
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
