@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/afsp/files/Makefile,v 1.1 2000/06/02 02:16:33 will Exp $
+# $FreeBSD: ports/audio/afsp/files/Makefile,v 1.2 2000/12/14 16:00:08 kevlo Exp $
 
 LIBRARIES =	lib/libAO.a \
 		lib/libtsp.a
@@ -11,8 +11,7 @@ BINARIES =	bin/CompAudio \
 		bin/LPanal \
 		bin/LPsyn \
 		bin/ResampAudio
-MAINHEADERS =	include/AD.h \
-		include/AO.h \
+MAINHEADERS =	include/AO.h \
 		include/AObase.h \
 		include/libtsp.h
 SUBHEADERS =	include/libtsp/AFdataio.h \

@@ -2,15 +2,14 @@
 # Date created:				30 May 2000
 # Whom:					Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD: ports/audio/afsp/Makefile,v 1.2 2000/12/14 16:00:04 kevlo Exp $
+# $FreeBSD: ports/audio/afsp/Makefile,v 1.3 2001/01/04 17:48:42 sf Exp $
 #
 
 PORTNAME=	afsp
-PORTVERSION=	5.0
-PORTREVISION=	1
+PORTVERSION=	5.2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.tsp.ece.mcgill.ca/pub/AFsp/
-DISTNAME=	AFsp-v5r0
+DISTNAME=	AFsp-v5r2
 
 MAINTAINER=	ginga@athena.club.ne.jp
 
@@ -23,7 +22,7 @@ MAN3=	AFclose.3tsp AFopenRead.3tsp AFopenWrite.3tsp AFreadData.3tsp \
 	AFsetFileType.3tsp AFsetHinfo.3tsp AFwriteData.3tsp AFsetNHpar.3tsp
 
 post-extract:
-	@${CP} ${FILESDIR}/Makefile ${WRKSRC}
+	@${CP} -f ${FILESDIR}/Makefile ${WRKSRC}
 
 post-patch:
 	cd ${WRKSRC} && find . -name Makefile | \
