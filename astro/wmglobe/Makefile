@@ -3,7 +3,7 @@
 # Date created:		23 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.3 1999/09/07 10:45:29 steve Exp $
+# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.4 1999/09/18 03:12:10 steve Exp $
 #
 
 DISTNAME=	wmglobe-1.0
@@ -18,7 +18,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		gif.5:${PORTSDIR}/graphics/giflib \
+		ungif.5:${PORTSDIR}/graphics/libungif \
 		wraster.3:${PORTSDIR}/x11-wm/windowmaker
 
 USE_X_PREFIX=	yes
