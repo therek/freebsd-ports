@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.28 2001/03/20 20:54:24 knu Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.29 2002/09/14 18:57:41 mharo Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -99,16 +99,16 @@ sub version {
 }
 
 
-getopts('abchtvB:M:NV');
+getopts('AabchtvB:M:NV');
 
 &usage if $opt_h;
 &version if $opt_V;
-$extrafile = 1 if $opt_a;
-$parenwarn = 1 if $opt_b;
-$committer = 1 if $opt_c;
+$extrafile = 1 if $opt_a || $opt_A;
+$parenwarn = 1 if $opt_b || $opt_A;
+$committer = 1 if $opt_c || $opt_A;
 $verbose = 1 if $opt_v;
-$newport = 1 if $opt_N;
-$usetabs = 1 if $opt_t;
+$newport = 1 if $opt_N || $opt_A;
+$usetabs = 1 if $opt_t || $opt_A;
 $contblank = $opt_B if $opt_B;
 $makeenv = $opt_M;
 
