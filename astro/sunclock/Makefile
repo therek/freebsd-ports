@@ -3,16 +3,18 @@
 # Date created:		15 September 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/astro/sunclock/Makefile,v 1.12 2001/04/02 14:10:59 ijliao Exp $
+# $FreeBSD: ports/astro/sunclock/Makefile,v 1.13 2001/04/22 14:35:29 ijliao Exp $
 #
 
 PORTNAME=	sunclock
-PORTVERSION=	3.38
+PORTVERSION=	3.45
 CATEGORIES=	astro x11-clocks
 MASTER_SITES=	ftp://ftp.ac-grenoble.fr/ge/geosciences/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	torstenb@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/${DISTNAME}v2
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
