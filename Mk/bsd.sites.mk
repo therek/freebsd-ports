@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.245 2004/05/30 23:28:00 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.246 2004/05/31 00:02:29 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -901,6 +901,14 @@ MASTER_SITE_XFREE+= \
 	ftp://ftp.task.gda.pl/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.physics.uvt.ro/pub/XFree86/%SUBDIR%/source/ \
 	ftp://ftp.chg.ru/pub/XFree86/%SUBDIR%/source/
+
+MASTER_SITE_XORG+= \
+	ftp://ftp.x.org/pub/%SUBDIR%/ \
+	ftp://ftp.gwdg.de/pub/x11/x.org/pub/%SUBDIR%/ \
+	ftp://ftp.cica.es/pub/X/pub/%SUBDIR%/ \
+	ftp://ftp.cs.cuhk.edu.hk/pub/X11/%SUBDIR%/ \
+	ftp://sunsite.sut.ac.jp/pub/archives/X11/%SUBDIR%/ \
+	ftp://ftp.unicamp.br/pub/X11/releases/%SUBDIR%/
 
 MASTER_SITE_GNUSTEP+= \
 	http://python.planetmirror.com/pub/gnustep/gnustep/%SUBDIR%/ \
