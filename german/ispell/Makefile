@@ -2,7 +2,7 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/german/ispell/Makefile,v 1.11 2001/08/14 20:04:08 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ispell
@@ -10,6 +10,8 @@ CATEGORIES=	german
 PKGNAMESUFFIX=	-20001109
 
 MAINTAINER=	alex@FreeBSD.org
+
+USE_PERL5=	yes
 
 ISPELL_DEALT=	yes
 ISPELL_DENEU=	yes

@@ -2,7 +2,7 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/german/ispell-neu/Makefile,v 1.9 2001/08/14 20:06:11 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ispell
@@ -13,6 +13,7 @@ MAINTAINER=	alex@FreeBSD.org
 
 ISPELL_DENEU=	yes
 MASTERDIR=	${.CURDIR}/../../textproc/ispell
+USE_PERL5=	yes
 
 .if exists(${.CURDIR}/Makefile.local)
 .include "${.CURDIR}/Makefile.local"
