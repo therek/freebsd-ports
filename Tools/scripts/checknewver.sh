@@ -5,14 +5,14 @@
 #
 # ----------------------------------------------------------------------------
 # "THE BEER-WARE LICENSE" (Revision 42, (c) Poul-Henning Kamp):
-# Maxim Sobolev <sobomax@FreeBSD.org wrote this file.  As long as you retain
+# Maxim Sobolev <sobomax@FreeBSD.org> wrote this file.  As long as you retain
 # this notice you can do whatever you want with this stuff. If we meet some
 # day, and you think this stuff is worth it, you can buy me a beer in return.
 #
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/checknewver.sh,v 1.1 2000/07/07 15:00:38 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/checknewver.sh,v 1.3 2000/07/19 15:41:50 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 
