@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.139 2001/03/01 05:45:56 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.140 2001/03/01 05:46:50 taoka Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -18,6 +18,7 @@
     SUBDIR += bibcard
     SUBDIR += bibview
     SUBDIR += bjfilter850
+    SUBDIR += bjfilter860
     SUBDIR += bjfiltercom
     SUBDIR += c2ps-a4
     SUBDIR += c2ps-letter
