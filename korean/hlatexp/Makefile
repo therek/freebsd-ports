@@ -2,13 +2,14 @@
 # Date created:                 Jun 28 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.1.1.1 2000/07/02 14:57:25 cjh Exp $
 #
 
 PORTNAME=	hLaTeXp
 PORTVERSION=	1998.11.20
 CATEGORIES=	korean print
-MASTER_SITES=	ftp://knot.kaist.ac.kr/pub/htex/hlatexp/
+MASTER_SITES=	ftp://knot.kaist.ac.kr/pub/htex/hlatexp/ \
+		ftp://knot.kaist.ac.kr/pub/htex/htex-fonts/
 DISTFILES=	unpacked.tar.gz htex.tfm.tar.gz
 DIST_SUBDIR=	htex
 
