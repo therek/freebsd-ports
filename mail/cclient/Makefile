@@ -2,11 +2,11 @@
 # Date created:				2 July 2000
 # Whom:					Kelly Yancey <kbyanc@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cclient/Makefile,v 1.7 2001/03/23 15:57:14 lioux Exp $
+# $FreeBSD: ports/mail/cclient/Makefile,v 1.8 2001/04/05 03:21:37 nsayer Exp $
 #
 
 PORTNAME=	cclient
-PORTVERSION=	0104031813
+PORTVERSION=	0104051333
 CATEGORIES=	mail devel
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/imap/%SUBDIR%/ \
