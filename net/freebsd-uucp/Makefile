@@ -2,7 +2,7 @@
 # Date created:			  08 Sep 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/freebsd-uucp/Makefile,v 1.1 2001/09/09 03:46:13 kris Exp $
 #
 
 PORTNAME=	freebsd-uucp
@@ -23,6 +23,8 @@ MANCOMPRESSED=	maybe
 post-install:
 	@${ECHO} "Use the 'make upgrade' command to copy your old configuration"
 	@${ECHO} "files from /etc/uucp to the new location in ${PREFIX}/etc/uucp"
+	@${ECHO}
+	@${CAT} ${PKGMESSAGE}
 
 upgrade:
 	@${ECHO} "Copying old configuration files from /etc/uucp to ${PREFIX}/etc/uucp"
