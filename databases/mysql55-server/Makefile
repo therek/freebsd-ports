@@ -3,16 +3,18 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.74 2000/02/20 20:53:54 steve Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.75 2000/04/02 22:15:11 dirk Exp $
 #
 
-DISTNAME=	mysql-3.22.32
-PKGNAME?=	${DISTNAME:S/-/-server-/}
+MASTERPORTNAME=	mysql-server
+PORTNAME?=	${MASTERPORTNAME}
+PORTVERSION=	3.22.32
 CATEGORIES=	databases
 MASTER_SITES=	http://www.fh-wolfenbuettel.de/ftp/pub/database/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.digex.net/pub/packages/database/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.plig.net/pub/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/mysql/Downloads/MySQL-3.22/
+DISTNAME=	mysql-${PORTVERSION}
 
 MAINTAINER=	dirk@FreeBSD.org
 
