@@ -3,11 +3,11 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.74 1999/08/31 02:42:38 peter Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.75 1999/09/03 16:07:23 ache Exp $
 #
 
-DISTNAME=       apache_1.3.9
-PKGNAME=        apache-1.3.9
+DISTNAME=       apache_1.3.11
+PKGNAME=        apache-1.3.11
 CATEGORIES=	www
 MASTER_SITES=   http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -36,6 +36,7 @@ Y2K=		http://www.apache.org/docs/misc/FAQ.html#year2000
 HAS_CONFIGURE=  yes
 CONFIGURE_ARGS= \
 		 --prefix=${PREFIX} \
+		 --server-gid=nogroup \
 		 --with-perl=${PERL} \
 		 --with-layout=${FILESDIR}/FreeBSD.layout:FreeBSD \
 		 --suexec-docroot=${PREFIX}/www/data \
