@@ -2,13 +2,14 @@
 # Date created:				02 October 1999
 # Whom:					jedgar@fxp.org
 #
-# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.5 2001/02/07 18:26:09 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dbf2mysql
 PORTVERSION=	1.14
 CATEGORIES=	databases
-MASTER_SITES=	http://download.sourceforge.net/pub/mirrors/mysql/Downloads/Contrib/
+MASTER_SITES=	ftp://mysql.nixc.net/pub/mysql/Downloads/Contrib/ \
+		ftp://ftp.plig.org/pub/mysql/Downloads/Contrib/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
