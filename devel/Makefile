@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.270 2000/03/01 20:30:30 flathill Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.271 2000/03/02 04:18:41 max Exp $
 #
 
     SUBDIR += ElectricFence
@@ -18,6 +18,8 @@
     SUBDIR += boehm-gc
     SUBDIR += bonobo
     SUBDIR += bugbuddy
+    SUBDIR += c_c++_reference
+    SUBDIR += c_c++_reference-i18n
     SUBDIR += cccc
     SUBDIR += cdecl
     SUBDIR += cdk
