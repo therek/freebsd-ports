@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.1 2004/04/28 18:27:52 nork Exp $
+# $FreeBSD: ports/sysutils/smartmontools/files/smartd.sh,v 1.2 2004/04/29 02:46:13 nork Exp $
 
 # PROVIDE: smartd
 # REQUIRE: DAEMON
@@ -22,10 +22,11 @@ smartd_pidfile="/var/run/smartd.pid"
 name="smartd"
 rcvar=`set_rcvar`
 command="%%PREFIX%%/sbin/smartd"
-pidfile="${smartd_pidfile}"
 required_files="%%PREFIX%%/etc/smartd.conf"
 
 load_rc_config $name
+
+pidfile="${smartd_pidfile}"
 
 case "${smartd_flags}" in
 *-p\ *)
