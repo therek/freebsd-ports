@@ -2,7 +2,7 @@
 # Date created:		30 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/pygist/Makefile,v 1.13 2000/04/14 07:20:31 asami Exp $
+# $FreeBSD: ports/math/pygist/Makefile,v 1.14 2000/04/20 20:46:19 mharo Exp $
 #
 
 PORTNAME=	gist
@@ -30,7 +30,7 @@ MAKE_FLAGS+=	'OPT=${CFLAGS}'
 
 PYTHONSCRIPTDIR=	${PREFIX}/lib/python1.5
 GISTDIR=	${PYTHONSCRIPTDIR}/site-packages/PyGist
-NUMPYDIR=	${PYTHONSCRIPTDIR}/site-packages/numerical
+NUMPYDIR=	${PYTHONSCRIPTDIR}/site-packages/Numeric
 RNGDIR=		${PYTHONSCRIPTDIR}/site-packages/RNG
 EXAMPLEDIR=	${PREFIX}/share/examples/PyGist
 
