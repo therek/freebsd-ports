@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.61 2000/11/02 03:13:30 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.62 2000/11/02 03:27:09 foxfair Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -29,6 +29,7 @@
     SUBDIR += mule-freewnn
     SUBDIR += muni
     SUBDIR += mutt
+    SUBDIR += netscape47-communicator
     SUBDIR += nvi-big5
     SUBDIR += nvi-euc-cn
     SUBDIR += nvi-euc-tw
