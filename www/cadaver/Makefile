@@ -2,20 +2,32 @@
 # Date created:		13 January 2000
 # Whom:			Alex Povolotsky <tarkhil@over.ru>
 #
-# $FreeBSD: ports/www/cadaver/Makefile,v 1.2 2000/04/10 00:04:35 cpiazza Exp $
+# $FreeBSD: ports/www/cadaver/Makefile,v 1.3 2001/02/05 15:33:15 olgeni Exp $
 #
 
 PORTNAME=	cadaver
-PORTVERSION=	0.10.0
+PORTVERSION=	0.17.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/cadaver/
 
 MAINTAINER=	tarkhil@over.ru
 
-LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml
+LIB_DEPENDS=	neon.12:${PORTSDIR}/www/neon
+
+.ifndef NO_OPENSSL
+USE_OPENSSL=	yes
+.endif
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-netrc
+CONFIGURE_ENV=	CC="${CC} -I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib -lintl"
+CONFIGURE_ARGS=	--with-ssl=${OPENSSLBASE} \
+		--enable-netrc \
+		--with-neon=${LOCALBASE}
 ALL_TARGET=	cadaver
+
+post-install:
+	${INSTALL_MAN} ${WRKSRC}/doc/cadaver.1 ${PREFIX}/man/man1
+
+MAN1=	cadaver.1
 
 .include <bsd.port.mk>
