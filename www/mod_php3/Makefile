@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.105 2000/02/25 23:53:02 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.106 2000/02/27 19:50:27 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -48,7 +48,7 @@ Y2K=		http://www.php.net/y2k.php3
 PHP_DISTDIR=	distributions
 
 VERSION_APACHE=	1.3.12
-VERSION_PHP=	3.0.14
+VERSION_PHP=	3.0.15
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
