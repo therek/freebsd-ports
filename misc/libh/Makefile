@@ -2,14 +2,14 @@
 # Date Created:		19 September 2000
 # Whom:			nra
 #
-# $FreeBSD: ports/misc/libh/Makefile,v 1.3 2001/03/25 04:18:47 will Exp $
+# $FreeBSD: ports/misc/libh/Makefile,v 1.4 2001/04/03 08:14:19 will Exp $
 #
 
 PORTNAME=	libh
 PORTVERSION=	0.2
 CATEGORIES=	misc
-# ${MASTER_SITES} is only for if CVS won't work, period.
-MASTER_SITES=	${MASTER_SITE_LOCAL}
+# ${MASTER_SITES} is unavailable for CVS only projects.
+# MASTER_SITES=	${MASTER_SITE_LOCAL}
 DISTNAME=	libh
 
 MAINTAINER=	nra@FreeBSD.org
