@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.132 2000/10/21 21:02:52 asami Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.133 2000/11/02 15:42:44 sobomax Exp $
 #
 
     SUBDIR += AbiWord
@@ -75,6 +75,7 @@
     SUBDIR += psgml-mule
     SUBDIR += psgml-xemacs21-mule
     SUBDIR += sam
+    SUBDIR += scite
     SUBDIR += semi-emacs
     SUBDIR += semi-emacs-current
     SUBDIR += semi-emacs20
