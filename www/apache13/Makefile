@@ -2,12 +2,11 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.92 2001/03/06 22:51:34 ache Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.93 2001/04/07 00:41:51 ache Exp $
 #
 
 PORTNAME=	apache
-PORTVERSION=    1.3.19
-PORTREVISION=   1
+PORTVERSION=    1.3.20
 CATEGORIES=	www
 MASTER_SITES=   http://httpd.apache.org/dist/httpd/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/httpd/ \
