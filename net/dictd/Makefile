@@ -3,7 +3,7 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/dictd/Makefile,v 1.2 2001/01/28 03:06:08 ijliao Exp $
+# $FreeBSD: ports/net/dictd/Makefile,v 1.3 2001/01/28 19:16:41 clive Exp $
 #
 
 PORTNAME=	dictd
@@ -35,7 +35,7 @@ post-patch:
 	@${PERL} -pi -e "s|/usr|${PREFIX}|g" ${WRKSRC}/$i
 .endfor
 	@${PERL} -pi -e "s|%%CFLAGS%%|${CFLAGS}|g" ${WRKSRC}/zlib/Makefile
-	@${PERL} -pi -e "s|[\ \t]T_USER| T_USERNAME|g" ${WRKSRC}/servparse.*
+	@${PERL} -pi -e "s|[\ \t]T_USER| T_USERNAME|g" ${WRKSRC}/*.[chly]
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/${PORTNAME}
