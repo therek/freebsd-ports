@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.421 2001/01/20 22:28:19 clive Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.422 2001/01/21 15:45:38 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -144,6 +144,7 @@
     SUBDIR += libcii
     SUBDIR += libcoro
     SUBDIR += libdlmalloc
+    SUBDIR += libdsp
     SUBDIR += libffi
     SUBDIR += libg++
     SUBDIR += libgetline
