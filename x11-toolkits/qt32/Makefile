@@ -3,7 +3,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt201/Makefile,v 1.34 1999/08/30 07:12:43 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/qt201/Makefile,v 1.35 1999/08/30 07:13:49 cpiazza Exp $
 #
 
 DISTNAME=	qt-2.0.1
@@ -26,6 +26,7 @@ MAKE_ENV+=	QTDIR=${WRKSRC} SYS_CXX=${CXX} SYS_CC=${CC} SYS_CXXFLAGS="${CXXFLAGS}
 
 .if defined(QT_GIF_AVAILABLE)
 CONFIGURE_ARGS+=-gif
+RESTRICTED=	'Requires a license from UNISYS'
 .endif
 
 USE_NEWGCC=	YES
