@@ -2,7 +2,7 @@
 # Date created:				Mar 31, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/graphics/isreal/Makefile,v 1.3 2001/06/08 05:36:35 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	isreal
@@ -15,7 +15,8 @@ EXTRACT_SUFX=	.tar
 MAINTAINER=	markp@FreeBSD.org
 
 USE_XLIB=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/isreal ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:			    	25 December 2000
 # Whom:				    	Takanori Watanabe <takawata@FreeBSD.ORG>
 #
-# $FreeBSD: ports/graphics/picturebook/Makefile,v 1.1 2001/04/24 17:13:23 takawata Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	picturebook
@@ -16,7 +16,8 @@ EXTRACT_SUFX=  .tgz
 MAINTAINER=	alan@clegg.com
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 
 post-build:
 	cd ${WRKSRC}; \

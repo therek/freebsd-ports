@@ -2,7 +2,7 @@
 # Date created:		29 Oct 1997
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.19 2001/08/05 18:37:59 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cqcam
@@ -18,7 +18,8 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 ONLY_FOR_ARCHS=	i386
 
 USE_XLIB=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"

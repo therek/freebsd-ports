@@ -2,7 +2,7 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.17 2000/10/05 06:57:38 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gview
@@ -15,7 +15,8 @@ MASTER_SITES=	http://netpedia.net/hosting/gview/ \
 MAINTAINER=	cpiazza@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"

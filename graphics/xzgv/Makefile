@@ -2,7 +2,7 @@
 # Date created:				7 Oct 2000
 # Whom:					Norio Suzuki <nosuzuki@e-mail.ne.jp>
 #
-# $FreeBSD: ports/graphics/xzgv/Makefile,v 1.3 2000/11/11 06:52:22 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xzgv
@@ -15,7 +15,8 @@ MASTER_SITE_SUBDIR=	apps/graphics/viewers/X
 MAINTAINER=	nosuzuki@e-mail.ne.jp
 
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 USE_GMAKE=	yes
 
 MAN1=		xzgv.1
