@@ -3,13 +3,13 @@
 # Date created:		Nov 28 ,1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/xcin/Makefile,v 1.10 1999/08/25 04:58:03 obrien Exp $
 #
 
 DISTNAME=	xcin-2.3.03
 PKGNAME=	zh-xcin-2.3.03
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/ \
+MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/old/ \
 		ftp://ftp.ncu.edu.tw/OS/Linux/Chinese/xcin/xcin/ \
 		ftp://linux.cis.nctu.edu.tw/packages/chinese/X/xcin/xcin/
 
