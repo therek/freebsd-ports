@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.19 2000/11/03 16:29:27 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.20 2000/11/06 05:45:05 knu Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -228,6 +228,7 @@ MASTER_SITE_TCLTK+= \
 MASTER_SITE_SOURCEFORGE+= \
 	ftp://download.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://download.sourceforge.net/%SUBDIR%/ \
+	ftp://projects.sourceforge.net/pub/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/
 
 MASTER_SITE_RUBY+= \
