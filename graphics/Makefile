@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.186 2000/02/25 09:39:13 reg Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.187 2000/03/21 01:25:29 will Exp $
 #
 
     SUBDIR += 4va
@@ -91,6 +91,7 @@
     SUBDIR += linux_glide
     SUBDIR += linux_glx
     SUBDIR += linux_mesa
+    SUBDIR += mpeg
     SUBDIR += mpeg-lib
     SUBDIR += mpeg2codec
     SUBDIR += mpeg2play
