@@ -5,7 +5,7 @@
  *
  * Work has started on 7th Sep 1998 on Northsea island Föhr.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/sysutils/xperfmon3/files/freebsd_system.c,v 1.9 1999/08/31 02:00:40 peter Exp $
  */
 
 /*
@@ -105,7 +105,7 @@
  */
 
 #ifndef LINT
-static char rcsid[] = "$FreeBSD$";
+static char rcsid[] = "$FreeBSD: ports/sysutils/xperfmon3/files/freebsd_system.c,v 1.9 1999/08/31 02:00:40 peter Exp $";
 #endif
 
 #include "fbsd_vers.h"
@@ -129,7 +129,9 @@ static char rcsid[] = "$FreeBSD$";
 #include <netinet/in.h>
 #include <sys/stat.h>
 #include <sys/conf.h>
+#if __FreeBSD_version < 400000
 #include <sys/rlist.h>
+#endif
 #include <sys/mount.h>
 #include <nfs/rpcv2.h>
 #include <nfs/nfsproto.h>
