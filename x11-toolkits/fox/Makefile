@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.21 2001/05/11 20:39:46 knu Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.22 2001/07/20 12:44:46 knu Exp $
 #
 
 PORTNAME=	fox
@@ -64,8 +64,8 @@ MAKE_ENV+=	LT_CURRENT="${SHLIB_MAJ}" LT_REVISION="${SHLIB_MIN}"
 PLIST_SUB+=	LIBVER="${SHLIB_MAJ}"
 MAN1=		reswrap.1
 
-# Uncomment this to turn the default optimization flags on.
-CXXFLAGS=	-O2 -Wuninitialized -ffast-math -finline-functions -fomit-frame-pointer -fexpensive-optimizations
+# Uncomment this to turn the distribution-recommended optimization flags on.
+#CXXFLAGS=	-O2 -Wuninitialized -ffast-math -finline-functions -fomit-frame-pointer -fexpensive-optimizations
 
 .if defined(WITH_XUNICODE)
 post-extract:
