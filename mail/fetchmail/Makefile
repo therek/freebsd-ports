@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.100 2000/06/20 18:43:34 ade Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.101 2000/07/09 13:48:00 dannyboy Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
