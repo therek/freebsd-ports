@@ -1,6 +1,6 @@
-@comment $FreeBSD: ports/audio/daapd/pkg-plist,v 1.1 2003/10/23 20:24:42 sergei Exp $
+@comment $FreeBSD: ports/audio/daapd/pkg-plist,v 1.2 2003/10/28 10:06:50 sergei Exp $
 etc/daapd.conf.sample
 etc/rc.d/daapd.sh
-sbin/daapd
+bin/daapd
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
