@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.237 2004/05/23 20:27:28 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.238 2004/05/23 20:30:12 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -503,9 +503,7 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.sra.co.jp/pub/os/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.itjit.ne.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
-	ftp://ftp.nihon-u.ac.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.spin.ad.jp/.02/NetBSD/packages/distfiles/%SUBDIR%/ \
-	ftp://zoffy.asahi-net.or.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://melanoma.cs.rmit.edu.au/pub/NetBSD/packages/distfiles/%SUBDIR%/
 
 MASTER_SITE_NETSCAPE+= \
