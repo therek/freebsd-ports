@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/gabber/files/patch-am,v 1.3 2002/01/14 15:03:11 sobomax Exp $
 
 --- src/Makefile.in	2002/01/14 13:22:27	1.1
 +++ src/Makefile.in	2002/01/14 13:21:55
@@ -8,7 +8,7 @@ $FreeBSD$
  	../jabberoo/src/libjabberoo.a \
  	../jabberoo/expat/libexpat.a \
 -	-lxml
-+	-lxml -lgiconv
++	-lxml -liconv
  
  
  gabber_LDFLAGS = @GABBER_STATIC@
