@@ -2,7 +2,7 @@
 # Date created:				20 April 1998
 # Whom:					rkw
 #
-# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.30 1999/08/27 17:22:33 vanilla Exp $
+# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.31 2000/04/08 23:22:34 mharo Exp $
 #
 
 PORTNAME=	mgetty
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.leo.org/pub/comp/os/unix/networking/mgetty/
 DISTNAME=	mgetty1.1.21-Jul24
 
 MAINTAINER=	jmz@FreeBSD.org
+
+FORBIDDEN=	"Insecure tempfile handling: can overwrite any file on the system"
 
 WRKSRC=		${WRKDIR}/mgetty-1.1.21
 MAKE_FLAGS=	prefix=${PREFIX} -f
