@@ -2,7 +2,7 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.57 2000/10/25 09:47:06 nakai Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.58 2001/01/15 21:34:59 vanilla Exp $
 #
 
 PORTNAME=	icewm
@@ -34,17 +34,15 @@ CONFIGURE_ARGS=	--enable-i18n --enable-nls \
 USE_GNOME=	yes
 CONFIGURE_ARGS+=	--with-imlib --without-xpm --with-gnome-menus
 INSTALL_TARGET=		install install-gnome
-PLIST_SUB+=	GNOME=""
 .else
 USE_XPM=	yes
 CONFIGURE_ARGS+=	--without-imlib --with-xpm --without-gnome-menus
-PLIST_SUB+=	GNOME="@comment "
 .endif
 
 .if defined(NOPORTDOCS)
-PLIST_SUB+=	NODOCS="@comment "
+PLIST_SUB+=	NODOCS:="@comment "
 .else
-PLIST_SUB+=	NODOCS=""
+PLIST_SUB+=	NODOCS:=""
 .endif
 
 post-install:
