@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  kmap
-# Version required:		  0.4
 # Date created:			  Fri Sep 10, 1999
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/security/kmap/Makefile,v 1.5 2000/02/13 03:23:35 obrien Exp $
+# $FreeBSD: ports/security/kmap/Makefile,v 1.6 2000/02/24 07:01:09 asami Exp $
 #
 
 DISTNAME=	kmap-0.7.1

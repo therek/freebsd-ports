@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  pchar
-# Version required:		  1.0
 # Date created:			  Wed Nov 03, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/pchar/Makefile,v 1.6 2000/01/26 18:45:36 sumikawa Exp $
+# $FreeBSD: ports/net/pchar/Makefile,v 1.7 2000/02/13 03:24:07 obrien Exp $
 #
 
 DISTNAME=	pchar-1.1.1

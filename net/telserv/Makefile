@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  telserv
-# Version required:		  1.0
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/telserv/Makefile,v 1.4 2000/02/08 09:28:00 peter Exp $
+# $FreeBSD: ports/net/telserv/Makefile,v 1.5 2000/02/13 03:24:27 obrien Exp $
 #
 
 DISTNAME=	telserv

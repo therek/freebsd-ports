@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  iozone
-# Version required:		  2.01
 # Date created:			  26 September 1994
 # Whom:				  jmz
 #
-# $FreeBSD: ports/benchmarks/iozone21/Makefile,v 1.30 2000/02/03 15:36:19 obrien Exp $
+# $FreeBSD: ports/benchmarks/iozone21/Makefile,v 1.31 2000/02/13 03:23:30 obrien Exp $
 #
 
 DISTNAME=       iozone-2.01

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  bison
-# Version required:		  1.28
 # Date created:			  27 Mar 1999
 # Whom:				  Jerry Hicks
 #
-# $FreeBSD: ports/devel/bison/Makefile,v 1.7 2000/01/19 16:01:53 asami Exp $
+# $FreeBSD: ports/devel/bison/Makefile,v 1.8 2000/02/13 03:23:04 obrien Exp $
 #
 
 DISTNAME=		bison-1.28

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  vnTeX
-# Version required:	2.0
 # Date created:		Monday, Dec 9, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.7 1999/08/31 02:11:53 peter Exp $
+# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.8 2000/02/13 03:24:36 obrien Exp $
 #
 
 DISTNAME=	vnroff

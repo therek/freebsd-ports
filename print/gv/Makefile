@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  gv
-# Version required:		  gv-3.5.8
 # Date created:			  16 Apr 1996
 # Whom:				  tg@freebsd.org
 #
-# $FreeBSD: ports/print/gv/Makefile,v 1.22 1999/10/31 23:47:45 obrien Exp $
+# $FreeBSD: ports/print/gv/Makefile,v 1.23 2000/02/13 03:23:26 obrien Exp $
 #
 
 DISTNAME=	gv-3.5.8

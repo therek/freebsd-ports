@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  bash
-# Version required:		  1.14.7
 # Date created:			  21 August 1994
 # Whom:				  jkh
 #
-# $FreeBSD: ports/shells/bash1/Makefile,v 1.32 1999/08/31 01:53:15 peter Exp $
+# $FreeBSD: ports/shells/bash1/Makefile,v 1.33 2000/02/13 03:23:01 obrien Exp $
 #
 
 DISTNAME=	bash-1.14.7

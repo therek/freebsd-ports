@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  mp (letter)
-# Version required:		  3.0.1
 # Date created:			  11 July 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/print/mp-letter/Makefile,v 1.11 1999/08/31 01:45:06 peter Exp $
+# $FreeBSD: ports/print/mp-letter/Makefile,v 1.12 2000/02/13 03:23:48 obrien Exp $
 #
 
 DISTNAME=	mp-3.0.1

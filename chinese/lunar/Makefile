@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  lunar
-# Version required:		  2.1
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/lunar/Makefile,v 1.4 1999/08/25 04:57:51 obrien Exp $
+# $FreeBSD: ports/chinese/lunar/Makefile,v 1.5 2000/02/13 03:25:04 obrien Exp $
 #
 
 DISTNAME=	lunar-2.1

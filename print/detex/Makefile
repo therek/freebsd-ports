@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  detex
-# Version required:		  2.6
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/print/detex/Makefile,v 1.3 1999/08/31 01:44:36 peter Exp $
+# $FreeBSD: ports/print/detex/Makefile,v 1.4 2000/02/13 03:23:16 obrien Exp $
 #
 
 DISTNAME=	detex-2.6

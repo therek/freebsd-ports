@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:    vn7to8
-# Version required:     1.1.1
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.7 1999/09/05 22:16:42 obrien Exp $
+# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.8 2000/02/13 03:24:31 obrien Exp $
 #
 #	version # is VISCII version supported + .<edit_revision>
 

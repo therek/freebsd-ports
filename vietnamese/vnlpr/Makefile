@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  vnlpr
-# Version required:	2.0
 # Date created:		Sat Dec 7, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnlpr/Makefile,v 1.8 1999/09/05 22:21:16 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnlpr/Makefile,v 1.9 2000/02/13 03:24:34 obrien Exp $
 #
 
 DISTNAME=	vnlpr

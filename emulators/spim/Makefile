@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  spim
-# Version required:		  5.8
 # Date created:			  Mon Oct 28, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.10 1999/09/05 22:12:35 obrien Exp $
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.11 2000/02/13 03:24:19 obrien Exp $
 #
 
 DISTNAME=	spim5.9

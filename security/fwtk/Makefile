@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  fwtk
-# Version required:		  1.3
 # Date created:			  15th June 1996
 # Whom:				  gpalmer
 #
-# $FreeBSD: ports/security/fwtk/Makefile,v 1.14 1999/08/31 01:51:04 peter Exp $
+# $FreeBSD: ports/security/fwtk/Makefile,v 1.15 2000/02/13 03:23:24 obrien Exp $
 #
 
 DISTNAME=	fwtk2.1

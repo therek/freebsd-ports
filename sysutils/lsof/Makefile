@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  lsof
-# Version required:		  3.87
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.57 2000/01/15 01:37:48 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.58 2000/02/13 03:23:40 obrien Exp $
 #
 
 DISTNAME=	lsof_4.48_W

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  cxterm
-# Version required:		  5.0
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.11 1999/08/25 04:57:45 obrien Exp $
+# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.12 2000/02/13 03:25:00 obrien Exp $
 #
 
 DISTNAME=	cxterm5.0.p3

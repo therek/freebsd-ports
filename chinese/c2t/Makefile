@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  c2t
-# Version required:		  1.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/c2t/Makefile,v 1.5 1999/08/25 04:57:41 obrien Exp $
+# $FreeBSD: ports/chinese/c2t/Makefile,v 1.6 2000/02/13 03:24:54 obrien Exp $
 #
 
 DISTNAME=	c2t

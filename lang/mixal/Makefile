@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  mixal
-# Version required:		  1.06
 # Date created:			  21-Dec-1996
 # Whom:                 	  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/lang/mixal/Makefile,v 1.4 1999/08/28 02:17:15 mharo Exp $
+# $FreeBSD: ports/lang/mixal/Makefile,v 1.5 2000/02/13 03:23:44 obrien Exp $
 #
 
 DISTNAME=	mixal-1.06

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  lrzsz
-# Version required:		  0.12.x
 # Date created:			  29 Sept 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/comms/lrzsz/Makefile,v 1.13 1999/09/22 06:45:57 obrien Exp $
+# $FreeBSD: ports/comms/lrzsz/Makefile,v 1.14 2000/02/13 03:23:39 obrien Exp $
 
 DISTNAME=	lrzsz-0.12.20
 CATEGORIES=	comms

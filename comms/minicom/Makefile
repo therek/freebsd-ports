@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  minicom
-# Version required:		  1.74
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.24 2000/02/01 11:40:05 obrien Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.25 2000/02/13 03:23:43 obrien Exp $
 #
 
 DISTNAME=	${PKGNAME}.src

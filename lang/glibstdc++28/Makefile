@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:	GNU libstdc++
-# Version required:			2.8.1.1
 # Date created:				03 Mar 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.20 1999/08/25 06:34:38 obrien Exp $
+# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.21 1999/09/04 20:33:36 obrien Exp $
 #
 
 DISTNAME=	libstdc++-2.8.1.1

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  fping
-# Version required:		  1.20
 # Date created:			  Tue Mar 25, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/fping/Makefile,v 1.5 1999/09/20 20:18:07 obrien Exp $
+# $FreeBSD: ports/net/fping/Makefile,v 1.6 2000/02/13 03:23:22 obrien Exp $
 #
 
 DISTNAME=	part01

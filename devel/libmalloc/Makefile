@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  Mark Moraes malloc library
-# Version required:		  1.18
 # Date created:			  11 January 1995
 # Whom:				  jkh
 #
-# $FreeBSD: ports/devel/libmalloc/Makefile,v 1.18 1999/08/28 01:57:04 mharo Exp $
+# $FreeBSD: ports/devel/libmalloc/Makefile,v 1.19 2000/02/13 03:23:37 obrien Exp $
 #
 
 DISTNAME=	malloc-1.18

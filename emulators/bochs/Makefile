@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  bochs
-# Version required:		  990219a
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.25 2000/02/13 16:48:24 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.26 2000/02/29 10:02:29 obrien Exp $
 #
 
 DISTNAME=	bochs-${DATE}c

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  Splitvt
-# Version required:		  1.6.1
 # Date created:			  Fri Oct 4, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/misc/splitvt/Makefile,v 1.6 1999/08/25 07:22:39 obrien Exp $
+# $FreeBSD: ports/misc/splitvt/Makefile,v 1.7 2000/02/13 03:24:20 obrien Exp $
 #
 
 DISTNAME=	splitvt-1.6.3

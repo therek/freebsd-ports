@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  mopd
-# Version required:		  2.5.3
 # Date created:			  Sun Nov 14, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/mopd/Makefile,v 1.2 2000/02/13 03:23:45 obrien Exp $
+# $FreeBSD: ports/net/mopd/Makefile,v 1.3 2000/03/05 17:50:18 obrien Exp $
 #
 
 DISTNAME=	mopd-2.5.3

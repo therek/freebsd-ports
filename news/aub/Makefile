@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  aub
-# Version required:		  v2.0.5
 # Date created:			  Sun Oct 12, 1997
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/news/aub/Makefile,v 1.7 1999/08/31 06:49:27 mharo Exp $
+# $FreeBSD: ports/news/aub/Makefile,v 1.8 2000/02/13 03:23:01 obrien Exp $
 #
 
 DISTNAME=	aub

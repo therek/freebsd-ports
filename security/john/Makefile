@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  ufcjohn
-# Version required:		  1.4
 # Date created:			  Sun Mar 09, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/security/john/Makefile,v 1.9 1999/08/31 01:51:09 peter Exp $
+# $FreeBSD: ports/security/john/Makefile,v 1.10 2000/02/13 03:23:34 obrien Exp $
 #
 
 DISTNAME=	john-1.6

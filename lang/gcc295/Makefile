@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:	egcs
-# Version required: 			1998-09-14
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/egcs/Makefile,v 1.66 1999/09/04 20:14:11 obrien Exp $
+# $FreeBSD: ports/lang/egcs/Makefile,v 1.67 1999/11/01 06:28:48 obrien Exp $
 #
 
 DISTNAME=	gcc-2.95.2

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  vscan
-# Version required:		  1.0.2
 # Date created:			  Thur Sept 25, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/security/vscan/Makefile,v 1.13 2000/02/08 09:28:34 peter Exp $
+# $FreeBSD: ports/security/vscan/Makefile,v 1.14 2000/02/13 03:24:40 obrien Exp $
 #
 
 DISTNAME=	nlxb318e

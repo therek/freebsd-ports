@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  Rawio
-# Version required:		  1.0
 # Date created:			  Sun Aug 08, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.3 2000/01/03 03:19:59 obrien Exp $
+# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.4 2000/02/13 03:24:10 obrien Exp $
 #
 
 DISTNAME=	rawio-1.1

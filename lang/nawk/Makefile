@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  nawk
-# Version required:		  99.04.16
 # Date created:			  29 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/lang/nawk/Makefile,v 1.9 2000/02/13 03:23:53 obrien Exp $
+# $FreeBSD: ports/lang/nawk/Makefile,v 1.10 2000/03/01 07:13:49 billf Exp $
 #
 
 DISTNAME=	awk

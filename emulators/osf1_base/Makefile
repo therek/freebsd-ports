@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  osf1_base
-# Version required:		  5.0
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.5 2000/03/08 02:12:42 gallatin Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.6 2000/03/08 04:14:51 gallatin Exp $
 #
 
 DISTNAME=	netscape-4.7-1.alpha

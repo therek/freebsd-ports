@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  clog
-# Version required:		  1.6
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/clog/Makefile,v 1.2 1999/08/30 14:22:19 peter Exp $
+# $FreeBSD: ports/net/clog/Makefile,v 1.3 2000/02/13 03:23:10 obrien Exp $
 #
 
 DISTNAME=	clog-1.6

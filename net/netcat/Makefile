@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  netcat
-# Version required:		  1.10
 # Date created:			  Thur Nov 21, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/netcat/Makefile,v 1.5 1999/09/05 21:50:45 obrien Exp $
+# $FreeBSD: ports/net/netcat/Makefile,v 1.6 2000/02/13 03:23:57 obrien Exp $
 #
 
 DISTNAME=	nc110

@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  dlx
-# Version required:		  2.0
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/dlx/Makefile,v 1.4 1999/08/25 05:49:13 obrien Exp $
+# $FreeBSD: ports/emulators/dlx/Makefile,v 1.5 2000/02/13 03:23:20 obrien Exp $
 #
 
 DISTNAME=	dlx

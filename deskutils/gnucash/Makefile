@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  gnucash
-# Version required:     	  1.0.18
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.7 1999/08/25 05:26:38 obrien Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.8 2000/02/29 09:21:41 obrien Exp $
 #
 
 DISTNAME=	xacc-1.0.18

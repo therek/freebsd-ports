@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  relay
-# Version required:		  1.10
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/relay/Makefile,v 1.4 2000/02/08 09:27:45 peter Exp $
+# $FreeBSD: ports/net/relay/Makefile,v 1.5 2000/02/13 03:24:11 obrien Exp $
 #
 
 DISTNAME=	relay

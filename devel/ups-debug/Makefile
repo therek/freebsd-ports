@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  UPS
-# Version required:		  3.32
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/devel/ups-debug/Makefile,v 1.14 1999/08/25 05:50:28 obrien Exp $
+# $FreeBSD: ports/devel/ups-debug/Makefile,v 1.15 2000/02/13 03:24:29 obrien Exp $
 #
 
 DISTNAME=	ups-3.34beta

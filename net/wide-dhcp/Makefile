@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  dhcp
-# Version required:		  1.4.0p1
 # Date created:			  21 November 1995
 # Whom:				  Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.20 1999/09/06 19:26:40 obrien Exp $
+# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.21 2000/02/13 03:24:43 obrien Exp $
 #
 
 DISTNAME=       dhcp-1.4.0p6

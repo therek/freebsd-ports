@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  netscape (full communicator version)
-# Version required:		  4.04-us
 # Date created:			  14 Feb 1998
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.17 2000/02/13 03:23:58 obrien Exp $
+# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.18 2000/02/28 08:34:03 asami Exp $
 #
 
 DISTNAME=	communicator-v407-us.x86-unknown-linux2.0_libc5

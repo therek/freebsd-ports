@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  cdecl
-# Version required:		  2.5
 # Date created:			  Sat Sep 04, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/cdecl/Makefile,v 1.2 1999/09/10 18:49:38 peter Exp $
+# $FreeBSD: ports/devel/cdecl/Makefile,v 1.3 2000/02/13 03:23:10 obrien Exp $
 #
 
 DISTNAME=	cdecl-2.5

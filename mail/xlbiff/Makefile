@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  xlbiff
-# Version required:		  3.0
 # Date created:			  23-Aug-1995
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/mail/xlbiff/Makefile,v 1.10 2000/02/13 03:24:47 obrien Exp $
+# $FreeBSD: ports/mail/xlbiff/Makefile,v 1.11 2000/03/05 23:23:37 obrien Exp $
 
 DISTNAME=	xlbiff-3.0
 CATEGORIES=	mail

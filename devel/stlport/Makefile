@@ -1,10 +1,9 @@
 # ex:ts=8
 # Ports collection makefile for:  stlport
-# Version required:		  3.01
 # Date Created:			  2 December 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/devel/stlport/Makefile,v 1.5 1999/10/26 07:51:24 obrien Exp $
+# $FreeBSD: ports/devel/stlport/Makefile,v 1.6 2000/02/13 03:24:22 obrien Exp $
 #
 
 DISTNAME=	STLport-3.01
