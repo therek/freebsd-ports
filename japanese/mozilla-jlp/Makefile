@@ -2,7 +2,7 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.15 2001/06/18 14:31:40 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.16 2001/06/22 14:24:18 sf Exp $
 #
 
 PORTNAME=	mozilla
@@ -67,7 +67,6 @@ do-install:
 	${MV} -f all-locales.rdf all-locales.rdf.orig; \
 	${MV} -f all-packages.rdf all-packages.rdf.orig; \
 	${MV} -f all-skins.rdf all-skins.rdf.orig; \
-	${MV} -f user-locales.rdf user-locales.rdf.orig; \
 	${MV} -f user-skins.rdf user-skins.rdf.orig; \
 	${MV} -f installed-chrome.txt installed-chrome.txt.orig)
 	(cd ${PREFIX}/lib/mozilla/defaults/pref; \
