@@ -3,7 +3,7 @@
 # Date created:			  Thur Aug 15, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/celvis/Makefile,v 1.13 2000/03/22 00:28:21 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	celvis
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.edu.cn/pub/Chinese/
 #	different.
 DISTNAME=	celvis
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=		celvis.1
 MLINKS=		celvis.1 cvi.1

@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.17 2000/09/12 13:03:59 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cxterm
@@ -19,7 +19,7 @@ PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	cxterm-5.0.p3-color.patch.gz	# cxterm-5.0-hz-patch.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/cxterm-5.0
 USE_IMAKE=	yes
