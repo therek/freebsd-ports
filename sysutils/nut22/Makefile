@@ -2,7 +2,7 @@
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.11 2001/01/04 06:14:57 bp Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.12 2001/01/16 17:32:36 sobomax Exp $
 #
 
 PORTNAME=	nut
@@ -10,7 +10,7 @@ PORTVERSION=	0.44.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.exploits.org/nut/release/
 
-MAINTAINER=	bp@butya.kz
+MAINTAINER=	ports@freebsd.org
 
 .if defined(CGI)
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
