@@ -2,7 +2,7 @@
 # Date created:		24 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/lang/ocaml/Makefile,v 1.17 2001/01/16 17:31:13 sobomax Exp $
+# $FreeBSD: ports/lang/ocaml/Makefile,v 1.18 2001/02/17 23:01:10 jeh Exp $
 #
 
 PORTNAME=	ocaml
@@ -56,6 +56,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ocaml/html
 	@cd ${WRKDIR}/htmlman; ${INSTALL_DATA} * ${PREFIX}/share/doc/ocaml/html
+	@${RM} ${PREFIX}/share/doc/ocaml/html/*~
 	@${CP} ${DISTDIR}/${DISTNAME}-refman.ps.gz ${PREFIX}/share/doc/ocaml
 .endif
 	@strip ${PREFIX}/bin/ocamlrun ${PREFIX}/bin/ocamlyacc
