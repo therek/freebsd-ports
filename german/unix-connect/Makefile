@@ -2,7 +2,7 @@
 # Date created:         01.May 1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/unix-connect/Makefile,v 1.2 2001/08/20 06:36:29 dinoex Exp $
+# $FreeBSD: ports/german/unix-connect/Makefile,v 1.3 2001/08/21 18:38:22 dinoex Exp $
 
 PORTNAME=	unix-connect
 PORTVERSION=	0.92
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.dinoex.org/pub/unix-connect/ \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=     dinoex@freebsd.org
+
+BUILD_DEPENDS=	lrz:${PORTSDIR}/comms/lrzsz
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 #USE_GMAKE=     yes
