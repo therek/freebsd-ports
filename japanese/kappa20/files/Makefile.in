@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/kappa20/files/Makefile.in,v 1.3 2003/06/18 04:47:31 daichi Exp $
+# $FreeBSD: ports/japanese/kappa20/files/Makefile.in,v 1.4 2003/11/05 23:32:27 jeh Exp $
 
 GZIP_CMD?=	gzip
 MKBOLD_CMD?=	mkbold
@@ -53,11 +53,10 @@ fonts.alias: Makefile.dist
 	${SED} -n '/^.*echo \(.*\) >>.*$$/ s//\1/p' $> > $@
 	${SED} -n '/^.*echo \(.*\) >>.*$$/ s//\1/p' $> | ${SED} 's/-r-/-i-/g;s/\(^[^-][^ 	]*\) /\1i /' >> $@
 	${CAT} fonts.alias.ayu >> $@
-	egrep -iv '^(-(kappa|ayu)-[^ 	]*--20-|(v?k|a|r)20g?[mb]i?[ 	]*|(ipa-)?10x20g?(rk|L[1-9]0?)?[mb]i?[ 	]*)' ${PREFIX}/${FONTSDIR}/fonts.alias >> fonts.alias || true
 
 install:
 	mkdir -p ${PREFIX}/${FONTSDIR}
-	${BSD_INSTALL_DATA} ${PCF_ALL} fonts.alias ${PREFIX}/${FONTSDIR}
+	${BSD_INSTALL_DATA} ${PCF_ALL} ${PREFIX}/${FONTSDIR}
 
 clean::
 	rm ${MADE_BOLD} ${MADE_ITALIC} ${PCF_ALL}
