@@ -3,7 +3,7 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.82 2001/03/21 01:29:54 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.83 2001/04/24 17:02:42 obrien Exp $
 #
 
 PORTNAME=	ncftp3
@@ -28,11 +28,6 @@ MAN3=		Strn.3
 
 LIBNCFTP=	libncftp.so.2
 LIBSTRN=	libStrn.so.1
-
-post-patch:
-	@${MV} ${WRKSRC}/ncftp/pref.h ${WRKSRC}/ncftp/pref.h.in
-	@${SED} -e 's:/etc/ncftp.firewall:${PREFIX}/etc/ncftp.firewall:' \
-		${WRKSRC}/ncftp/pref.h.in > ${WRKSRC}/ncftp/pref.h
 
 pre-build:
 	cd ${WRKSRC}/Strn ; make so
