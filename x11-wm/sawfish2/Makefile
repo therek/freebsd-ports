@@ -2,7 +2,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.25 2000/07/25 11:08:43 sobomax Exp $
+# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.26 2000/09/22 07:11:55 sobomax Exp $
 #
 
 PORTNAME=	sawfish
@@ -11,7 +11,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sawmill
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
