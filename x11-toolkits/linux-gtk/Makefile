@@ -5,7 +5,7 @@
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.1.1.1 2000/04/15 17:20:47 sada Exp $
 #
 
 PORTNAME?=	gtk
@@ -28,7 +28,8 @@ NO_MTREE=	yes
 ONLY_FOR_ARCHS=	i386
 PREFIX=		/compat/linux
 
-RPM_MIRRORS=	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/
+RPM_MIRRORS=	ftp://ftp.freesoftware.com/pub/linux/redhat/old-releases/__DIR__/ \
+		ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/
 STDDIR=		redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
 UPDDIR=		updates/6.1/${MACHINE_ARCH}
 RPM_SET?=	gtk+-1.2.5-2.${MACHINE_ARCH}.rpm
