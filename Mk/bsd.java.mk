@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.36 2003/12/15 07:04:50 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.37 2004/01/20 09:14:09 marcus Exp $
 #
 
 .if !defined(Java_Include)
@@ -451,8 +451,7 @@ check-makevers::
 # Only define JAVAC if NEED_JAVAC is defined
 .		undef JAVAC
 
-# The default value for NEED_JAVAC is temporarily (!) YES
-# This will change as soon as the affecting ports have NEED_JAVAC=YES
+# By default a port does not need the Java compiler
 .		if !defined(NEED_JAVAC)
 NEED_JAVAC=	NO
 .		endif
