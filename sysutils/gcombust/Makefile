@@ -2,11 +2,11 @@
 # Date created:		Tue Jun 22 21:17:03 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.11 2000/04/09 19:07:37 cpiazza Exp $
+# $FreeBSD: ports/sysutils/gcombust/Makefile,v 1.12 2000/04/22 10:12:13 mharo Exp $
 #
 
 PORTNAME=	gcombust
-PORTVERSION=	0.1.28
+PORTVERSION=	0.1.32
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.abo.fi/~jmunsin/gcombust/
 
