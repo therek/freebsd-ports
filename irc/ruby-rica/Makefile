@@ -2,11 +2,11 @@
 # Date created:		10 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/irc/ruby-rica/Makefile,v 1.1 2001/03/10 06:05:31 knu Exp $
+# $FreeBSD: ports/irc/ruby-rica/Makefile,v 1.2 2001/03/28 12:03:49 knu Exp $
 #
 
 PORTNAME=	rica
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	irc ruby
 MASTER_SITES=	http://www.koka-in.org/%7Ezophos/lib/rica/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -21,9 +21,9 @@ NO_BUILD=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-MODULES=	rica.rb rica_utils.rb
-DOCS=		classes_and_methods.txt	event.txt
-EXAMPLES=	ricaco.rb	ricatest.rb
+MODULES=	ctcpresponcer.rb	rica.rb
+DOCS=		README	classes_and_methods.txt	event.txt
+EXAMPLES=	ricaco.rb
 
 do-install:
 .for f in ${MODULES}
