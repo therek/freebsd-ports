@@ -2,7 +2,7 @@
 # Date created:         30 December 1996
 # Whom:                 Mike Smith <msmith@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/pib/Makefile,v 1.19 2000/06/29 07:02:52 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pib
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	msmith
 
 MAINTAINER=	msmith@freebsd.org
+
+BROKEN=	"This needs to be updated to work with the newer ports layout"
 
 BUILD_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
