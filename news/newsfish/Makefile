@@ -2,13 +2,14 @@
 # Date created:		17 January 1999
 # Whom:			asaddi@philosophysw.com
 #
-# $FreeBSD: ports/news/newsfish/Makefile,v 1.6 2000/04/09 17:33:03 cpiazza Exp $
+# $FreeBSD: ports/news/newsfish/Makefile,v 1.7 2000/08/02 00:23:47 jedgar Exp $
 #
 
 PORTNAME=	newsfish
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.philosophysw.com/pub/software/
+MASTER_SITES=	http://download.sourceforge.net/newsfish/ \
+		ftp://ftp.philosophysw.com/pub/software/
 
 MAINTAINER=	asaddi@philosophysw.com
 
