@@ -2,11 +2,11 @@
 # Date created:				April 27 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.8 2000/04/11 21:29:40 mharo Exp $
+# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.9 2000/04/22 22:25:19 vanilla Exp $
 #
 
 PORTNAME=	IO-stringy
-PORTVERSION=	1.210
+PORTVERSION=	1.212
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
@@ -16,7 +16,7 @@ MAINTAINER=	eivind@FreeBSD.org
 
 USE_PERL5=	YES
 
-MAN3=		IO::AtomicFile.3 IO::Lines.3 IO::Scalar.3 \
+MAN3=		IO::AtomicFile.3 IO::InnerFile.3 IO::Lines.3 IO::Scalar.3 \
 		IO::ScalarArray.3 IO::Stringy.3 \
 		IO::Wrap.3 IO::WrapTie.3
 
