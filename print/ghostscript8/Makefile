@@ -2,12 +2,12 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.65 2001/03/20 08:08:19 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.66 2001/03/26 17:11:40 andreas Exp $
 #
 
 PORTNAME=	ghostscript
 PORTVERSION=	6.50
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/gs650/ \
 	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/fonts/ \
@@ -73,17 +73,19 @@ GS_FONTS_OTHER=	ghostscript-fonts-other-6.0.tar.gz
 # Ghostscript Driver for HP DeskJet 812C/815C/832C/880C/882C/895C
 # http://www.gelhaus.net/hp880c/
 # driver names:	cdj880
+HP8XX=		cdj850
 HP8XX_DRV=	gdevcd8.tar.gz
 
 # HPDJ, additional driver for HP PCL3 Printers, by Martin Lottermoser
 # ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/pcl3.html
+# still present, just for the case pcl3 is missing some hpdj feature
 HPDJ=		hpdj
 HPDJ_VERS=	2.6
 HPDJ_NAME=	${HPDJ}-${HPDJ_VERS}
 HPDJ_SRC=	${HPDJ_NAME}.tar.gz
 HPDJ_MAN1=	gs-hpdj.1
 
-# PCL3 (hpdj successor in BETA state)
+# PCL3 (hpdj successor now in RELEASE quality)
 # additional driver for HP PCL3 Printers, by Martin Lottermoser
 # http://home.t-online.de/home/Martin.Lottermoser/pcl3.html
 PCL3=		pcl3
@@ -166,6 +168,10 @@ post-patch:
 # advantage: you see unmodified makefiles after a pure make extract
 pre-configure:
 	@${ECHO} ">>> in pre-configure ..."
+# for HP8XX driver
+	@${ECHO} ">>>   adding ${HP8XX} driver to contrib.mak ..."
+	@${CAT} ${FILESDIR}/cdj850.contrib.mak \
+		>> ${WRKSRC}/src/contrib.mak
 # for HPDJ driver
 	@${ECHO} ">>>   adding ${HPDJ} driver to contrib.mak ..."
 	@${CAT} ${WRKSRC}/src/contrib.mak-5.94.add \
