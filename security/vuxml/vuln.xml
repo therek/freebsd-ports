@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.555 2005/02/13 09:21:00 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.556 2005/02/13 09:59:02 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -3699,11 +3699,11 @@ http_access deny Gopher</pre>
   </vuln>
 
   <vuln vid="cdf14b68-3ff9-11d9-8405-00065be4b5b6">
-    <topic>Open Dc Hub -- remote buffer overflow vulnerability</topic>
+    <topic>Open DC Hub -- remote buffer overflow vulnerability</topic>
     <affects>
       <package>
 	<name>opendchub</name>
-	<range><le>0.7.14_1</le></range>
+	<range><lt>0.7.14_2</lt></range>
       </package>
     </affects>
     <description>
@@ -3721,6 +3721,7 @@ http_access deny Gopher</pre>
     <dates>
       <discovery>2004-11-24</discovery>
       <entry>2004-11-27</entry>
+      <modified>2005-02-13</modified>
     </dates>
   </vuln>
 
