@@ -2,15 +2,14 @@
 # Date created:			Di   2 Sep 1997 16:29:27 CEST
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmysqladmin/Makefile,v 1.31 2001/01/21 15:40:39 dirk Exp $
+# $FreeBSD: ports/databases/xmysqladmin/Makefile,v 1.32 2001/03/11 13:04:07 dirk Exp $
 #
 
 PORTNAME=	xmysqladmin
 PORTVERSION=	1.0
 CATEGORIES=	databases
-MASTER_SITES=	http://www.mysql.com/Downloads/Contrib/ \
-		http://www.mysql.net/Downloads/Contrib/ \
-		ftp://ftp.wipol.uni-bonn.de/pub/mirror/MySQL/Contrib/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	mirrors/mysql/Downloads/Contrib
 
 MAINTAINER=	dirk@FreeBSD.org
 
