@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.92 2000/11/06 21:53:55 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.93 2000/11/07 23:28:03 asami Exp $
 #
 
 PORTNAME?=	vim
@@ -53,10 +53,7 @@ MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 
 MAKE_ARGS+=	X_LIBS=-lxpg4 CONF_OPT_MAX="--enable-max-features"
 
-.if defined(WITH_GTK)
-USE_GTK=	yes
-MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=gtk --with-gtk-prefix=${X11BASE} --enable-multibyte --enable-fontset --enable-multibyte --enable-xim"
-.elif defined(HAVE_MOTIF)
+.if defined(HAVE_MOTIF)
 USE_MOTIF=	yes
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=motif --with-motif-lib=\"${MOTIFLIB}\" --enable-multibyte --enable-fontset --enable-multibyte --enable-xim" MOTIFHOME=${X11BASE}
 .else
