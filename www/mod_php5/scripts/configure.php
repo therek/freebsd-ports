@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.82 2000/03/02 11:33:10 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.83 2000/03/27 20:39:01 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -109,7 +109,7 @@ while [ "$1" ]; do
 			echo "PHP_CONF_ARGS+=	--with-mysql=\${PREFIX}"
 			;;
 		\"PostgreSQL\")
-			echo "BUILD_DEPENDS+=	\${PREFIX}/pgsql/bin/psql:\${PORTSDIR}/databases/postgresql"
+			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql"
 			echo "PHP_CONF_ARGS+=	--with-pgsql=\${PREFIX}/pgsql"
 			;;
 		\"mSQL\")
