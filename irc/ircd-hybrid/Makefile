@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ircd-hybrid
-# Version required:	5.3p6
 # Date created:		9 January 1998
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.12 1999/08/25 06:12:44 obrien Exp $
+# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.13 1999/09/04 19:52:27 cpiazza Exp $
 #
 
-DISTNAME=	ircd-hybrid-5.3p7
+PORTNAME=	ircd-hybrid
+PORTVERSION=	5.3p7
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/hybrid/
 

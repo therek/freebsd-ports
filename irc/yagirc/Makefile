@@ -1,12 +1,12 @@
 # New ports collection makefile for:   	yagirc
-# Version required:			0.66.1
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.19 1999/10/08 03:29:52 nakai Exp $
+# $FreeBSD: ports/irc/yagirc/Makefile,v 1.20 2000/03/22 21:32:24 mph Exp $
 #
 
-DISTNAME=	yagirc-0.66.1
+PORTNAME=	yagirc
+PORTVERSION=	0.66.1
 CATEGORIES=	irc
 MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:   bnc
-# Version required:    2.4.3
 # Date created:        06 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/bnc/Makefile,v 1.6 1999/08/25 06:12:37 obrien Exp $
 #
 
-DISTNAME=	bnc2.6.2
-PKGNAME=	bnc-2.6.2
+PORTNAME=	bnc
+PORTVESION=	2.6.2
 CATEGORIES=	irc
 MASTER_SITES=	http://www.psn.net/~andrews/dist/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
 

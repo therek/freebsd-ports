@@ -1,15 +1,15 @@
 # New ports collection makefile for:   muh
-# Version required:    2.05
 # Date created:        25 Sept 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/irc/muh/Makefile,v 1.7 1999/08/25 06:12:48 obrien Exp $
+# $FreeBSD: ports/irc/muh/Makefile,v 1.8 2000/03/08 02:56:46 billf Exp $
 #
 
-DISTNAME=	muh2.05a
-PKGNAME=	muh-2.05a
+PORTNAME=	muh
+PORTVERSION=	2.05a
 CATEGORIES=	irc
 MASTER_SITES=	http://mind.riot.org/muh/download/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
 

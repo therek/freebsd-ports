@@ -1,15 +1,15 @@
 # New ports collection makefile for:    tkirc
-# Version required:     1.151
 # Date created:         Jan 15 1998
 # Whom:                 brianfeldman@hotmail.com
 #
-# $FreeBSD: ports/irc/tkirc/Makefile,v 1.10 1999/08/25 06:13:00 obrien Exp $
+# $FreeBSD: ports/irc/tkirc/Makefile,v 1.11 1999/11/28 18:32:12 steve Exp $
 #
 
-DISTNAME=	tkirc1.202
-PKGNAME=	tkirc-1.202
+PORTNAME=	tkirc
+PORTVERSION=	1.202
 CATEGORIES=	irc tk82
 MASTER_SITES=	ftp://ftp.informatik.uni-oldenburg.de/pub/tkirc/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	green@FreeBSD.org
 

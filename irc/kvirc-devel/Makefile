@@ -1,12 +1,12 @@
 # New ports collection makefile for:	kvirc
-# Version required:	1.0.0
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.9 2000/03/22 01:59:19 will Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.10 2000/03/22 23:45:54 will Exp $
 #
 
-DISTNAME=	kvirc-1.0.0
+PORTNAME=	kvirc
+PORTVERSION=	1.0.0
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.kvirc.bz.nu/pub/mirror/kvirc/ \
 		http://www.kvirc.org/

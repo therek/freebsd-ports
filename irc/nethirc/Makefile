@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nethirc
-# Version required:	0.04
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/nethirc/Makefile,v 1.3 2000/02/08 09:29:29 peter Exp $
+# $FreeBSD: ports/irc/nethirc/Makefile,v 1.4 2000/03/22 01:59:20 will Exp $
 #
 
-DISTNAME=	nethirc-0.04
+PORTNAME=	nethirc
+PORTVERSION=	0.04
 CATEGORIES=	irc
 # broken - MASTER_SITES=	ftp://ftp.nog.net/pub/tony/nethirc/
 MASTER_SITES=	http://people.FreeBSD.org/~cpiazza/distfiles/

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	TrickyIRC
-# Version required:		 	1.1
 # Date created:			 	Jun 20th 1999
 # Whom:					troll
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/trickyirc/Makefile,v 1.5 1999/08/25 06:13:01 obrien Exp $
 #
 
-DISTNAME=	TrickyIRC-1.1.0
-PKGNAME=	trickyirc-1.1.0
+PORTNAME=	trickyirc
+PORTVERSION=	1.1.0
 CATEGORIES=	irc
 MASTER_SITES=	http://www.leb.net/~troll/
+DISTNAME=	TrickyIRC-${PORTVERSION}
 
 MAINTAINER=	troll@digitalspark.net
 

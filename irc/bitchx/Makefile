@@ -1,12 +1,12 @@
 # New ports collection makefile for:	BitchX ircII client
-# Version required:	1.0c16
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.11 2000/03/11 15:25:38 jedgar Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.12 2000/03/21 00:13:18 jedgar Exp $
 #
 
-DISTNAME=	BitchX-1.0c16
+PORTNAME=	BitchX
+PORTVERSION=	1.0c16
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
