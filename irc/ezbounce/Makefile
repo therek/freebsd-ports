@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ezbounce
-# Version required: 	0.99.2
+# Version required: 	0.99.3
 # Date created:	 	19 February 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/ezbounce/Makefile,v 1.8 1999/08/25 06:12:40 obrien Exp $
 #
 
-DISTNAME=	ezbounce-0.99.2
+DISTNAME=	ezbounce-0.99.3
 CATEGORIES=	irc
 MASTER_SITES=  	http://druglord.freelsd.org/ezbounce/
 
