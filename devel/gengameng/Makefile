@@ -2,19 +2,26 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gengameng/Makefile,v 1.1 2001/04/17 17:44:13 will Exp $
 #
 
 PORTNAME=	gengameng
-PORTVERSION=	2.0
+PORTVERSION=	3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://sites.netscape.net/sarrazip/
 
 MAINTAINER=	mark@kyne.com.au
 
+LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image
+
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include" LDFLAGS="${LDFLAGS} -L${X11BASE}/lib"
+
+pre-patch:
+	${PERL} -pi -e "s|sdl-config|${SDL_CONFIG}|g; \
+		s|include/SDL/|include/SDL11/|g" ${WRKSRC}/configure
 
 .include <bsd.port.mk>
