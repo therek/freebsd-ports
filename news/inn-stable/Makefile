@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.55 2000/07/09 19:25:06 andreas Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.56 2000/08/15 05:15:12 andreas Exp $
 
 PORTNAME=	inn
 PORTVERSION=	2.2.${STABLE}
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 MASTER_SITE_SUBDIR=	andreas
 DISTNAME=	inn-STABLE-${STABLE}
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://www.isc.org/inn-y2k.html
 
