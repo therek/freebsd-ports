@@ -1,20 +1,28 @@
-# New ports collection makefile for: TinyMUX
+# New ports collection makefile for:	TinyMUX
 # Date created:		1998/05/28
 # Whom:			cjohnson
 #
-# $FreeBSD: ports/games/tinymux/Makefile,v 1.6 2000/04/14 12:26:42 asami Exp $
+# $FreeBSD: ports/games/tinymux/Makefile,v 1.7 2001/01/22 05:52:25 fenner Exp $
 #
 
 PORTNAME=	tinymux
 PORTVERSION=	1.6p0
+PORTREVISION=	1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.digex.net/pub/mud/tinymux/
+MASTER_SITES=	http://www.moosh.net/pub/mush/servers/tinymux/TinyMUX-1.x/
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
+MAINTAINER=	ports@FreeBSD.org
+
+LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 WRKSRC=		${WRKDIR}/src
-#GNU_CONFIGURE=	YES
-USE_AUTOCONF=	YES
+
+USE_AUTOCONF=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+post-extract:
+	@${RM} -f ${WRKSRC}/gdbm.h
 
 #
 # Distribution does not include an install target.  So here it is.
