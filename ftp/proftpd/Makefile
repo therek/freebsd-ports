@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.25 2000/02/18 18:24:31 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.26 2000/04/12 05:31:21 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -15,6 +15,8 @@ MASTER_SITES=	ftp://ftp.tos.net/pub/proftpd/ \
 DISTNAME=	${PORTNAME}-1.2.0pre10
 
 MAINTAINER=	mharo@FreeBSD.org
+
+FORBIDDEN=	"Remote root hole, exploitable anonymously"
 
 MAN1=	ftpcount.1 ftpwho.1
 MAN5=	xferlog.5
