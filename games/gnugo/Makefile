@@ -2,21 +2,23 @@
 # Date created:		29 December 1996
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/games/gnugo/Makefile,v 1.7 2000/05/01 13:48:45 jseger Exp $
+# $FreeBSD: ports/games/gnugo/Makefile,v 1.8 2001/09/17 17:40:13 dwcjr Exp $
 #
 
 PORTNAME=	gnugo
-PORTVERSION=	2.6
+PORTVERSION=	3.0.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gnugo
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	spcoltri@omcl.org
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
 MAN6=		gnugo.6
-MANCOMPRESSED=	no
+
+post-extract:
+	${RM} -f ${WRKSRC}/doc/gnugo.info*
 
 .include <bsd.port.mk>
