@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.50 2000/08/03 09:23:05 asami Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.51 2000/08/09 17:45:08 gj Exp $
 #
 
 PORTNAME=	xemacs
@@ -44,6 +44,7 @@ CONFIGURE_ARGS?=${XEMACS_ARCH} --prefix=${PREFIX} \
 		--with-png=yes \
 		--with-tiff=yes \
 		--with-site-lisp \
+		--with-database=berkdb \
 		${WITH_XFACE} ${WITH_DIALOGS} ${WITH_OFFIX}
 MAKE_ARGS=	prefix=${PREFIX}
 .if !defined(MULE_SLAVE)

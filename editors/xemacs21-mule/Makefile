@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.30 2000/08/01 09:18:25 shige Exp $
+# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.31 2000/09/07 08:01:29 knu Exp $
 #
 
 # This is the MASTER port of XEmacs Mule slave ports(japanese/xemacs${XEMACS_MAJOR_VER}-*)
@@ -60,6 +60,7 @@ CONFIGURE_ARGS?=${XEMACS_ARCH} \
 		--infopath=${PREFIX}/lib/xemacs/info:${PREFIX}/info:${X11BASE}/info:/usr/info:${PREFIX}/lib/texmf/doc/info:/usr/lib/texmf/doc:/usr/share/info \
 		--with-clash-detection \
 		--lockdir=/var/run/emacs/lock \
+		--with-database=berkdb \
 		${WITH_INPUT_METHOD}
 MAKE_ENV=	LANG=C
 INSTALL_COOKIE=	${WRKDIR}/.install_done-${PKGNAME}
