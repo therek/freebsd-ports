@@ -3,7 +3,7 @@
 # Date created:         29 October 1995
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.15 1999/10/25 06:21:08 jkoshy Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.16 1999/11/01 00:09:12 green Exp $
 #
 
 DISTNAME=	xearth-1.0
@@ -22,6 +22,7 @@ MAN1=		xearth.1
 # Copy the list of FreeBSD sites
 post-install:
 	${MKDIR} ${PREFIX}/lib/X11/xearth
+	${CP} ${FILESDIR}/freebsd.core.markers ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.committers.markers ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.ftp.markers ${PREFIX}/lib/X11/xearth
 
