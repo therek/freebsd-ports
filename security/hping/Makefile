@@ -2,12 +2,12 @@
 # Date Created:				5 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/security/hping/Makefile,v 1.5 2001/09/15 04:13:33 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hping
 PORTVERSION=	2.0.0r1
-PORTREVISION=	1
+PORTREVISION=	2
 PORTEPOCH=	1
 CATEGORIES=	security net
 MASTER_SITES=	http://www.hping.org/
@@ -18,7 +18,7 @@ MAINTAINER=	Nicolas.Jombart@hsc-labs.com
 WRKSRC=		${WRKDIR}/hping2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--force-libpcap
-USE_GMAKE= 	yes
+USE_GMAKE=	yes
 
 MAN8=	hping.8
 
