@@ -2,7 +2,7 @@
 # Date created:         02 November 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.12 2000/10/27 11:18:16 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imaging
@@ -35,7 +35,6 @@ PILINCDIR=	${PREFIX}/include/${PYTHON_VERSION}
 
 post-extract:
 	@${CP} ${FILESDIR}/Setup ${WRKSRC}/..
-	@${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}/..
 
 post-configure:
 	@(cd ${WRKSRC}/..; ${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
