@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.348 2001/03/16 03:51:48 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.349 2001/03/17 07:52:05 kuriyama Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -107,6 +107,7 @@
     SUBDIR += jvim3-direct_canna
     SUBDIR += jvim3-freewnn
     SUBDIR += jvim3-wnn6
+    SUBDIR += jyuroku
     SUBDIR += k10
     SUBDIR += k12
     SUBDIR += kakasi
