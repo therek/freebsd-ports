@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.279 2000/12/26 22:16:43 ade Exp $
+# $FreeBSD: ports/www/Makefile,v 1.280 2000/12/27 06:54:27 trevor Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -18,6 +18,7 @@
     SUBDIR += ashe           # requires Motif
     SUBDIR += asp2php
     SUBDIR += aswedit
+    SUBDIR += august
     SUBDIR += bacon
     SUBDIR += bk2site
     SUBDIR += bkmrkconv
