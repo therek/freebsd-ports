@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mailgraph/files/mailgraph.sh.tmpl,v 1.1 2004/05/12 11:59:07 vs Exp $
+# $FreeBSD: ports/mail/mailgraph/files/mailgraph.sh.tmpl,v 1.2 2004/05/13 07:04:53 kuriyama Exp $
 #
 # PROVIDE: mailgraph
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ name=mailgraph
 rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/mailgraph.pl > /dev/null 2>&1
-command_interpreter=perl
+command_interpreter=/usr/bin/perl
 stop_postcmd=stop_postcmd
 
 stop_postcmd()
