@@ -2,11 +2,11 @@
 # Date created:				29 January 2000
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/games/gnomechess/Makefile,v 1.3 2000/04/14 06:53:04 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomechess
-PORTVERSION=	0.2.4
+PORTVERSION=	0.3.2
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-chess
@@ -23,5 +23,12 @@ USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in*" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
