@@ -2,7 +2,7 @@
 # Date created:				6 October 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/bind9/Makefile,v 1.38 2001/05/28 08:27:10 dougb Exp $
+# $FreeBSD: ports/net/bind9/Makefile,v 1.39 2001/07/24 18:10:31 dougb Exp $
 #
 
 # I stay very aware of developments with BIND in general, and with
@@ -15,6 +15,8 @@ PORTNAME=	bind
 PORTVERSION=	9.1.3
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${PORTVERSION}/ \
+		ftp://ftp.nominum.com/pub/isc/bind9/${PORTVERSION}/ \
+		ftp://ftp.nerdc.ufl.edu/pub/mirrors/ftp.isc.org/isc/bind9/${PORTVERSION}/ \
 		ftp://ftp.sunet.se/pub/network/isc/bind9/${PORTVERSION}/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/bind9/${PORTVERSION}/,}
 
