@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 04:09:18 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-Icon/Makefile,v 1.1 2001/01/01 10:19:42 will Exp $
 #
 
 PORTNAME=	Apache-Icon
@@ -18,5 +18,6 @@ USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Apache::Icon.3
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 05:22:52 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-Language/Makefile,v 1.1 2001/01/01 10:36:22 will Exp $
 #
 
 PORTNAME=	Apache-Language
@@ -18,5 +18,7 @@ USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Apache::Language.3 Apache::Language::Constants.3 \
+		Apache::Language::DBI.3 Apache::Language::PlainFile.3
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:55:36 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthCookie/Makefile,v 1.1 2001/01/01 08:28:28 will Exp $
+# $FreeBSD: ports/www/p5-Apache-AuthCookie/Makefile,v 1.2 2001/01/01 08:40:58 will Exp $
 #
 
 PORTNAME=	Apache-AuthCookie
@@ -30,5 +30,6 @@ CONFIGURE_ENV+=	APACHE="${PREFIX}/sbin/apache" \
 		TESTPORT="${TESTPORT}"
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Apache::AuthCookie.3
 
 .include <bsd.port.mk>

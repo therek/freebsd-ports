@@ -2,7 +2,7 @@
 # Date created:				15 Nov 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-AI-NeuralNet-BackProp/Makefile,v 1.1 2001/01/01 08:00:37 will Exp $
 #
 
 PORTNAME=	AI-NeuralNet-BackProp
@@ -20,5 +20,6 @@ NO_WRKSUBDIR=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		AI::NeuralNet::BackProp.3
 
 .include <bsd.port.mk>
