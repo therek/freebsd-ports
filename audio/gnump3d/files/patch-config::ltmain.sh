@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/gnump3d/files/patch-config::ltmain.sh,v 1.2 2002/08/14 00:03:26 naddy Exp $
 
 --- config/ltmain.sh.orig	Sun Jul 14 01:53:50 2002
 +++ config/ltmain.sh	Tue Aug 13 18:00:19 2002
@@ -20,16 +20,3 @@ $FreeBSD$
  	    # Do not include libc_r directly, use -pthread flag.
  	    continue
  	    ;;
-@@ -4273,10 +4274,12 @@
- 	fi
- 
- 	# Install the pseudo-library for information purposes.
-+	if false; then
- 	name=`$echo "X$file" | $Xsed -e 's%^.*/%%'`
- 	instname="$dir/$name"i
- 	$show "$install_prog $instname $destdir/$name"
- 	$run eval "$install_prog $instname $destdir/$name" || exit $?
-+	fi
- 
- 	# Maybe install the static library, too.
- 	test -n "$old_library" && staticlibs="$staticlibs $dir/$old_library"
