@@ -2,7 +2,7 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.25 2000/06/10 10:25:49 alex Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.26 2000/07/09 08:45:38 alex Exp $
 #
 
 PORTNAME=	smalltalk
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	smalltalk
 
-MAINTAINER=	alex@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
