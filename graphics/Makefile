@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.158 1999/11/25 14:54:32 nakai Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.159 1999/11/26 20:28:31 steve Exp $
 #
 
     SUBDIR += 4va
@@ -75,6 +75,7 @@
     SUBDIR += kdegraphics11
     SUBDIR += kdegraphics11-i18n
     SUBDIR += killustrator
+    SUBDIR += kplot3d
     SUBDIR += lfview
     SUBDIR += libimg
     SUBDIR += libwmf
