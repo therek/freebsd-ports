@@ -2,13 +2,14 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.16 2001/01/16 17:32:45 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iso8879
 PORTVERSION=	1986
 CATEGORIES=	textproc
-MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kuriyama
 DISTNAME=	isoENTS
 EXTRACT_SUFX=	.zip
 
