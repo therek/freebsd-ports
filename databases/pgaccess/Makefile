@@ -3,10 +3,10 @@
 # Date created:		Sat Oct  4 20:03:46 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.22 1999/10/25 02:51:10 cpiazza Exp $
+# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.23 2000/01/03 06:51:56 andreas Exp $
 #
 
-DISTNAME=	pgaccess-0.98
+DISTNAME=	pgaccess-0.98.4
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.flex.ro/pub/pgaccess/
 
