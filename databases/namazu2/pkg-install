@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/namazu2/pkg-install,v 1.1 2003/01/14 11:10:07 knu Exp $
 
 PATH=/bin:/usr/bin
 
@@ -21,7 +21,7 @@ case $2 in
 	    if [ -f $f$sfx ]; then
 		touch $f$sfx
 	    else
-		cp $f $fsfx
+		cp $f $f$sfx
 	    fi
 	done
 	;;
