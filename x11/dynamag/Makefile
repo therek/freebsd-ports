@@ -2,7 +2,7 @@
 # Date created:        			2000-09-22
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/dynamag/Makefile,v 1.2 2000/10/06 21:05:24 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dynamag
@@ -13,6 +13,7 @@ DISTNAME=	unwindows
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	trevor@FreeBSD.org
+COMMENT=	Magnifying utility which updates continuously
 
 ALL_TARGET=	dynamag
 NO_INSTALL_MANPAGES=	yes

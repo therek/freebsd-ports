@@ -2,7 +2,7 @@
 # Date created:				2000-07-09
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.4 2001/03/01 06:37:06 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		Class-MethodMaker
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Class
 PKGNAMEPREFIX=		p5-
 
 MAINTAINER=		trevor@FreeBSD.org
+COMMENT=		Perl module for creating generic methods
 
 PERL_CONFIGURE=		yes
 

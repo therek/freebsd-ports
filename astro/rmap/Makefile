@@ -2,7 +2,7 @@
 # Date created:				29 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD: ports/astro/rmap/Makefile,v 1.2 2000/10/02 05:28:27 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rmap
@@ -12,6 +12,7 @@ CATEGORIES=	astro
 MASTER_SITES=	http://www.reza.net/rmap/
 
 MAINTAINER=	trevor@FreeBSD.org
+COMMENT=	Generates images of the Earth centered at a particular location
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
