@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.40 1999/09/18 09:02:09 se Exp $
+# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.41 1999/12/07 15:46:35 imura Exp $
 #
 
 DISTNAME=	kdebase-1.1.2
@@ -19,6 +19,7 @@ LIB_DEPENDS=	gif.5:${PORTSDIR}/graphics/giflib \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
+USE_XLIB=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 HAS_CONFIGURE=	yes
@@ -35,7 +36,7 @@ KSSES=	kattraction.kss kbanner.kss kbat.kss kblankscrn.kss \
 	kblob.kss kbouboule.kss kbsod.kss kflame.kss kforest.kss \
 	khop.kss klaser.kss klines.kss klissie.kss kmatrix.kss \
 	kmorph3d.kss kpipes.kss kpolygon.kss kpyro.kss krock.kss \
-	kscience.kss kslidescreen.kss kslip.kss kspace.kss kswarm.kss 
+	kscience.kss kslidescreen.kss kslip.kss kspace.kss kswarm.kss
 
 post-install:
 .for KSS in $(KSSES)
