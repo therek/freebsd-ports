@@ -3,7 +3,7 @@
 # Date created:		5 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/nkf/Makefile,v 1.17 1999/08/31 06:46:01 mharo Exp $
+# $FreeBSD: ports/japanese/nkf/Makefile,v 1.18 2000/02/23 05:05:47 max Exp $
 #
 
 DISTNAME=	nkf171
