@@ -2,7 +2,7 @@
 # Date created:			09 Aug 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/youbin/Makefile,v 1.26 2000/08/03 09:25:35 asami Exp $
+# $FreeBSD: ports/mail/youbin/Makefile,v 1.27 2000/10/08 10:22:10 asami Exp $
 #
 
 PORTNAME=	youbin
@@ -15,14 +15,17 @@ MAINTAINER=	max@FreeBSD.org
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-PREFIX?=         ${LOCALBASE}
-MTREE_FILE?=	/etc/mtree/BSD.local.dist
+#PREFIX?=         ${LOCALBASE}
+#MTREE_FILE?=	/etc/mtree/BSD.local.dist
 
 MAN1=		youbin.1
 MAN3=		youbin_sub.3
 MAN8=		youbind.8
 
 STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/youbind.sh.sample
+
+post-extract:
+	(cd ${WRKSRC}; ${CP} -p Doc/*.man .)
 
 pre-build:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${PKGREQ} ${PKGNAME} BUILD
