@@ -2,13 +2,13 @@
 # Date created:		15 May 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/print/pdq/Makefile,v 1.7 2000/10/05 06:42:22 reg Exp $
+# $FreeBSD: ports/print/pdq/Makefile,v 1.8 2000/10/09 21:20:42 asami Exp $
 #
 
 PORTNAME=	pdq
 PORTVERSION=	2.2.1
 CATEGORIES=	print
-MASTER_SITES=	ftp://feynman.tam.uiuc.edu/pub/pdq/
+MASTER_SITES=	http://pdq.sourceforge.net/ftp/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
@@ -21,11 +21,9 @@ MAN1=		lpd_cancel.1 lpd_print.1 lpd_status.1 pdq.1 xpdq.1
 MAN5=		printrc.5
 
 post-install:
-	strip ${PREFIX}/bin/pdq
-	strip ${PREFIX}/bin/xpdq
-	strip ${PREFIX}/bin/lpd_cancel
-	strip ${PREFIX}/bin/lpd_print
-	strip ${PREFIX}/bin/lpd_status
+.for file in lpd_cancel lpd_print lpd_status pdq xpdq
+	@strip ${PREFIX}/bin/${file}
+.endfor
 	@${SED} 's|%%PREFIX%%|${PREFIX}|g' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
