@@ -1,17 +1,18 @@
-# New ports collection makefile for:	mozilla
-# Date created:		31 Mar 1998
-# Whom:			eivind/dima/jseger
+# New ports collection makefile for:	mozilla+ipv6
+# Date created:		25 Aug 2000
+# Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.45 2000/08/03 17:37:31 reg Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.46 2000/08/14 00:04:10 reg Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION= 	M17
-CATEGORIES=	www
+PKGNAMESUFFIX=	+ipv6
+CATEGORIES=	www ipv6
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/${PORTVERSION:S/M/m/}/src/
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
-MAINTAINER=	reg@FreeBSD.org
+MAINTAINER=	sumikawa@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		IDL.2:${PORTSDIR}/devel/ORBit
