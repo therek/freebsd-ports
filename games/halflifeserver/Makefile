@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.12 2001/04/10 15:49:55 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.13 2001/04/17 19:49:07 sf Exp $
 #
 
 PORTNAME=	hlds
@@ -28,7 +28,6 @@ PLIST_SUB=	HLDSDIR="${HLDSDIR:S/^\///}" LDCONFIG="${LDCONFIG_LINUX}"
 
 INSTALL_DIR=	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m ${BINMODE}
 LDCONFIG_LINUX=	${LINUXBASE}/sbin/ldconfig
-STRIP_LINUX=	${LINUXBASE}/usr/bin/strip
 
 HLDSDIR=	/usr/games/hlds_l/
 HL_DIRS=	valve/maps valve/events valve/dlls valve/cl_dlls \
@@ -66,7 +65,6 @@ install-files:
 	done
 # trim/set permissions
 	@${CHMOD} ${BINMODE} ${PREFIX}${HLDSDIR}${HL_PROGRAM}
-	@${STRIP_LINUX} ${PREFIX}${HLDSDIR}${HL_PROGRAM}
 # libraries
 # this should go in a pkg-install, should be checked later
 	@if ! (${GREP} -E \"^${HLDSDIR}$$\" ${PREFIX}/etc/ld.so.conf >/dev/null 2>/dev/null) ;\
