@@ -2,11 +2,11 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.19 2001/04/19 19:07:30 knu Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.20 2001/04/30 16:39:02 knu Exp $
 #
 
 PORTNAME=	fox
-PORTVERSION=	0.99.167
+PORTVERSION?=	0.99.172
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
 		ftp://SunSITE.Informatik.RWTH-Aachen.DE/pub/Linux/fox/
@@ -19,6 +19,8 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 .if defined(WITH_XUNICODE)
 PKGNAMESUFFIX=	-unicode
 
+PATCHVERSION?=	${PORTVERSION}
+
 PATCH_SITES=	http://www.ab.wakwak.com/~tino/jatk/fox/
 PATCHFILES=	${PORTNAME}${PKGNAMESUFFIX}-${PATCHVERSION}.diff
 PATCH_DIST_STRIP=	-p1
@@ -26,9 +28,11 @@ PATCH_DIST_STRIP=	-p1
 BUILD_DEPENDS=	${X11BASE}/include/xunicode/xunicode.h:${PORTSDIR}/converters/xunicode
 
 CONFIGURE_ENV=	X_CFLAGS=-DUSE_XUNICODE
-.endif
 
-PATCHVERSION=	${PORTVERSION}
+PLIST_SUB=	NEWFILE="@comment "
+.else
+PLIST_SUB=	NEWFILE=""
+.endif
 
 USE_MESA=	yes
 INSTALLS_SHLIB=	yes
