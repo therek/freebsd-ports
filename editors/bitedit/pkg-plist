@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/editors/bitedit/pkg-plist,v 1.1 2002/07/30 13:17:04 naddy Exp $
 bin/bitedit
-%%PORTDOCS%%share/doc/bitedit/bitedit.txt
-%%PORTDOCS%%@dirrm share/doc/bitedit
+%%PORTDOCS%%%%DOCSDIR%%/bitedit.txt
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
