@@ -1,8 +1,4 @@
-@comment $FreeBSD: ports/net/nvnet/pkg-plist,v 1.1 2003/12/07 05:34:23 obrien Exp $
+@comment $FreeBSD: ports/net/nvnet/pkg-plist,v 1.2 2004/04/10 16:07:06 trevor Exp $
 @comment We just copy the file in the kernel module dir.
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/nvidia_pci.c.diff
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
-%%FREEBSD4%%@cwd /modules
-%%FREEBSD5%%@cwd /boot/kernel
-if_nv.ko
+@cwd /
+%%KMODDIR%%/if_nv.ko
