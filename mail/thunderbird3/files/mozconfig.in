@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD: ports/mail/thunderbird/files/mozconfig.in,v 1.7 2004/10/11 23:45:43 marcus Exp $
+# $FreeBSD: ports/mail/thunderbird/files/mozconfig.in,v 1.8 2004/11/07 23:29:33 marcus Exp $
 ######################################################################
 # standard opts from README
 export MOZ_THUNDERBIRD=1
@@ -18,6 +18,9 @@ ac_add_options --enable-extensions=wallet,spellcheck,xmlextras,webservices
 ac_add_options --enable-necko-protocols=http,file,jar,viewsource,res,data
 ac_add_options --enable-image-decoders=default,-xbm
 ac_add_options --enable-default-toolkit=gtk2
+# See the following URL for approval email for using official branding
+# http://people.freebsd.org/~ahze/firefox_thunderbird-approved.txt
+ac_add_options --enable-official-branding
 ######################################################################
 # FBSD specific
 export CPPFLAGS="@CPPFLAGS@"
