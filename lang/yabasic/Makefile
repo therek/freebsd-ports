@@ -2,11 +2,11 @@
 # Date created:		11 Nov 1999
 # Whom:			Frank Gruender
 #
-# $FreeBSD: ports/lang/yabasic/Makefile,v 1.10 2001/03/10 05:27:50 kris Exp $
+# $FreeBSD: ports/lang/yabasic/Makefile,v 1.11 2001/06/14 07:40:20 markp Exp $
 #
 
 PORTNAME=	yabasic
-PORTVERSION=	2.681
+PORTVERSION=	2.697
 CATEGORIES=	lang
 MASTER_SITES=	http://www.yabasic.de/download/
 
@@ -15,18 +15,17 @@ MAINTAINER=	ports@FreeBSD.org
 USE_BISON=	yes
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include"
+CONFIGURE_ENV+=	CPPFLAGS="-I${X11BASE}/include" \
+		LIBS="-L${X11BASE}/lib"
 MAN1=		yabasic.1
 
 post-patch:
-	${PERL} -pi -e "s|<malloc.h>|<stdlib.h>|g" ${WRKSRC}/bison.c
+	@${PERL} -pi -e "s|<malloc.h>|<stdlib.h>|g" ${WRKSRC}/bison.c
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/yabasic ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/yabasic.1 ${MANPREFIX}/man/man1
+post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/yabasic
-	${INSTALL_DATA} ${WRKSRC}/yabasic.htm ${PREFIX}/share/doc/yabasic
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/yabasic.htm ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
