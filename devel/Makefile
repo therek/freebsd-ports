@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.449 2001/03/02 15:17:21 demon Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.450 2001/03/02 15:43:26 demon Exp $
 #
     SUBDIR += zziplib
 
@@ -313,6 +313,7 @@
     SUBDIR += pcl-cvs-emacs20
     SUBDIR += pcre
     SUBDIR += perforce
+    SUBDIR += perltidy
     SUBDIR += pharmacy
     SUBDIR += picprog
     SUBDIR += pinstall
