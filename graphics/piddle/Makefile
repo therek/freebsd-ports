@@ -2,14 +2,15 @@
 # Date created:				29 Feb 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.1 2000/04/06 09:06:19 tg Exp $
+# $FreeBSD: ports/graphics/piddle/Makefile,v 1.2 2000/04/14 10:47:00 asami Exp $
 #
 
 PORTNAME=	piddle
 PORTVERSION=	1.0b1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://download.sourceforge.net/piddle/
-DISTFILES=	piddle-1.0b1-5.tgz
+DISTNAME=	${PORTNAME}-${PORTVERSION}-5
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
@@ -32,8 +33,11 @@ post-extract:
 .endfor
 
 do-install:
-	${MKDIR} ${PIDDLEDIR}
+	${MKDIR} ${PIDDLEDIR}/pilfonts
 	${INSTALL_DATA} ${WRKSRC}/*.py ${PIDDLEDIR}
+	${INSTALL_DATA} ${WRKSRC}/pilfonts/*.pil ${PIDDLEDIR}/pilfonts
+	${INSTALL_DATA} ${WRKSRC}/pilfonts/*.pbm ${PIDDLEDIR}/pilfonts
+	${INSTALL_DATA} ${WRKSRC}/pilfonts/metrics.dat ${PIDDLEDIR}/pilfonts
 	${ECHO} 'piddle' > ${PIDDLEDIR}.pth
 	@${PYTHON} ${PYTHONLIBDIR}/compileall.py ${PIDDLEDIR}
 	@${PYTHON} -O ${PYTHONLIBDIR}/compileall.py ${PIDDLEDIR}
