@@ -2,12 +2,12 @@
 # Date created:         29.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/rus-ispell/Makefile,v 1.5 2001/04/16 07:55:09 ache Exp $
+# $FreeBSD: ports/russian/rus-ispell/Makefile,v 1.6 2001/04/28 04:14:43 ache Exp $
 #
 
 PORTNAME=	rus-ispell
 PORTVERSION=    0.99d9
-PORTREVISION=   1
+PORTREVISION=   2
 CATEGORIES=	russian textproc
 MASTER_SITES=   ftp://mch5.chem.msu.su/pub/russian/ispell/
 
@@ -16,7 +16,7 @@ MAINTAINER=	ache@FreeBSD.org
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 USE_GMAKE=      yes
-.if defined(RUS_ISPELL_WITH_YO)
+.if defined(RUS_ISPELL_WITH_YO_ONLY)
 MAKE_ARGS+=     YO=1
 .endif
 .if defined(RUS_ISPELL_LOCAL_DICT)
