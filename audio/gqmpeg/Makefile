@@ -2,7 +2,7 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.27 2000/12/24 04:16:41 nakai Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.28 2001/01/21 21:04:03 clive Exp $
 #
 
 PORTNAME=	gqmpeg
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	lyngbol@candid.dk
 
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
 USE_X_PREFIX=	yes
