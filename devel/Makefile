@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.439 2001/02/21 00:15:06 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.440 2001/02/21 05:00:54 knu Exp $
 #
     SUBDIR += zziplib
 
@@ -66,6 +66,7 @@
     SUBDIR += cutils
     SUBDIR += cvs2cl
     SUBDIR += cvs2html
+    SUBDIR += cvsgraph
     SUBDIR += cvsmapfs
     SUBDIR += cvsutils
     SUBDIR += cvsweb
