@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/id3lib/Makefile,v 1.2 2000/12/21 07:07:39 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id3lib
@@ -21,7 +21,7 @@ USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 post-extract:
 .for i in zlib popt
