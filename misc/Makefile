@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.272 2000/05/17 23:39:53 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.273 2000/05/29 19:57:40 hoek Exp $
 #
 
     SUBDIR += 221upgrade
@@ -45,6 +45,7 @@
     SUBDIR += fd
     SUBDIR += fep
     SUBDIR += figlet
+    SUBDIR += findutils
     SUBDIR += fortuneit
     SUBDIR += freedialog
     SUBDIR += geekcode
