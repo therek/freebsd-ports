@@ -1,13 +1,13 @@
 # New ports collection makefile for:	quotes
-# Version required:	1.5-1
+# Version required:	1.5-2
 # Date created:         9 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/misc/quotes/Makefile,v 1.4 1999/08/25 07:22:25 obrien Exp $
+# $FreeBSD: ports/misc/quotes/Makefile,v 1.5 1999/12/31 02:15:28 steve Exp $
 #
 
-DISTNAME=	quotes-1.5-1
-PKGNAME=	quotes-1.5.1
+DISTNAME=	quotes-1.5-2
+PKGNAME=	quotes-1.5.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.iae.nl/pub/users/grimaldo/
 
