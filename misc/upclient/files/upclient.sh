@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.2 2001/11/19 06:38:34 pat Exp $
+# $FreeBSD: ports/misc/upclient/files/upclient.sh,v 1.3 2003/01/03 06:35:32 petef Exp $
 #
 # Start or stop upclient.
 #
@@ -49,7 +49,7 @@ start)
 			"${config_path}."
                 exit 72
 	fi
-	if grep -qs "^[$ws]*AuthKey[$ws]*=[$ws]*<your_authkey>" ${config_path}
+	if grep -qs "^[$ws]*AuthKey[$ws]*=[$ws]*your_authkey" ${config_path}
 	then
 		logger -sp ${syslog_facility} -t ${program_file} \
 			"unable to start: AuthKey isn't configured in" \
