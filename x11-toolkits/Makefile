@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.125 2001/03/12 19:03:12 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.126 2001/03/14 01:30:14 des Exp $
 #
 
     SUBDIR += FWF
@@ -25,6 +25,7 @@
     SUBDIR += gtk-engines
     SUBDIR += gtk-engines-collection
     SUBDIR += gtk-flat-theme
+    SUBDIR += gtk-qn-x11-theme
     SUBDIR += gtk12
     SUBDIR += gtk13
     SUBDIR += gtkada
