@@ -2,7 +2,7 @@
 # Date created:                 Jun 28 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.1.1.1 2000/07/02 14:57:25 cjh Exp $
+# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.2 2000/07/08 12:08:07 cjh Exp $
 #
 
 PORTNAME=	hLaTeXp
@@ -29,9 +29,7 @@ do-install:
 	${MKDIR} ${TEXMF}/fonts/pk
 	### TFM files
 	${MKDIR} ${TEXMF}/fonts/tfm/public/xhan
-	${CHMOD} a+rwxt ${TEXMF}/fonts/tfm/public/xhan
 	${INSTALL_DATA} ${WRKDIR}/htex.tfm/* ${TEXMF}/fonts/tfm/public/xhan/
-	${CHMOD} a+r ${TEXMF}/fonts/tfm/public/xhan/*
 	### build hlatex script
 	${SED} -e "s@%%PATH_HTEXPINI%%@${PREFIX}/bin/htexpini@g" \
 	       -e "s@%%PK300_SAMPLE%%@${TEXMF}/fonts/pk/xhan300@g" \
