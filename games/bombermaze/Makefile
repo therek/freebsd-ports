@@ -2,11 +2,11 @@
 # Date created:		25 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/games/bombermaze/Makefile,v 1.1 2000/07/25 10:08:17 sobomax Exp $
+# $FreeBSD: ports/games/bombermaze/Makefile,v 1.2 2000/07/31 06:53:11 sobomax Exp $
 #
 
 PORTNAME=	bombermaze
-PORTVERSION= 	0.4.2
+PORTVERSION= 	0.5.0
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -15,12 +15,11 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
-		gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
