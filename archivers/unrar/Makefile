@@ -2,7 +2,7 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/unrar/Makefile,v 1.18 2000/06/28 18:14:40 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unrar
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	ache
 MAINTAINER=	ache@FreeBSD.org
 
 NO_WRKSUBDIR=	Yes
+NO_LATEST_LINK= yes
 
 do-build:
 	cd ${WRKSRC} && \
