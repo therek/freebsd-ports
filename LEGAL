@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.193 2000/12/27 06:55:37 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.194 2000/12/31 06:49:19 trevor Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -137,6 +137,8 @@ molden			ports/biology/molden	free for academic,
 						non profit usage
 						do not re-distribute source and
 						 executable
+Mmsaic			ports/www/Mosaic	Do not sell.  Do not distribute
+						binaries.
 mmosaic			ports/www/mmosaic	Do not sell (per NCSA).  Do not
 						distribute binary (GPL/BSD
 						conflict).
