@@ -2,7 +2,7 @@
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.13 2001/07/22 03:01:22 dwcjr Exp $
+# $FreeBSD$
 
 PORTNAME=	freetds
 PORTVERSION=	0.52
@@ -24,6 +24,7 @@ post-patch:
 		's| install-includeHEADERS||g'
 	@${PERL} -pi -e 's!/freetds.conf!/freetds.conf.dist!g' \
 		${WRKSRC}/Makefile.in
+	@${PERL} -pi -e 's!malloc.h!stdlib.h!' ${WRKSRC}/include/tds.h.in
 
 post-install:
 .if !exists(${PREFIX}/etc/freetds.conf)
