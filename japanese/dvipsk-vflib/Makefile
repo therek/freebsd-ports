@@ -2,7 +2,7 @@
 # Date created:         25 Aug 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/dvipsk-vflib/Makefile,v 1.9 2000/04/11 14:13:06 knu Exp $
+# $FreeBSD: ports/japanese/dvipsk-vflib/Makefile,v 1.10 2000/10/08 10:20:30 asami Exp $
 #
 
 PORTNAME=	dvipsk
@@ -20,7 +20,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
 
-RUN_DEPENDS=	ptex-common:${PORTSDIR}/japanese/ptex-common
+RUN_DEPENDS=	MakeTeXPK:${PORTSDIR}/japanese/ptex-common
 LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
 MANUAL_PACKAGE_BUILD=	incompatible with other versions of dvipsk-*
