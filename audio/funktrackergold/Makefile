@@ -2,13 +2,13 @@
 # Date created:                 Apr 1, 2001
 # Whom:                         Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/audio/funktrackergold/Makefile,v 1.1 2001/04/07 06:10:55 will Exp $
+# $FreeBSD: ports/audio/funktrackergold/Makefile,v 1.2 2001/06/08 05:36:26 markp Exp $
 #
 
 PORTNAME=	funktrackergold
 PORTVERSION=	1.5.2
 CATEGORIES=	audio
-MASTER_SITES=	${MASTER_SITE_SUNSITE} http://jsno.downunder.net.au/rel/unix_projects/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} http://lothar.arafura.net.au/~jsno/rel/unix_projects/
 MASTER_SITE_SUBDIR=	apps/sound/players
 DISTNAME=	funktrackergold-1.5-2
 EXTRACT_SUFX=	.tgz
