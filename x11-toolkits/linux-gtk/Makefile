@@ -4,14 +4,14 @@
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.9 2001/03/20 20:28:10 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	gtk
 PORTVERSION?=	1.2
 PORTREVISION=	1
 CATEGORIES?=	x11-toolkits linux
-MASTER_SITES=	${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
+MASTER_SITES?=	${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 PKGNAMEPREFIX=	linux-
 DISTFILES=	${RPM_SET}
 
