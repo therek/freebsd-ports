@@ -1,12 +1,12 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/vbsfilter/files/vbsfilter.sh,v 1.1 2001/03/13 06:47:30 dinoex Exp $
+# $FreeBSD: ports/mail/vbsfilter/files/vbsfilter.sh,v 1.2 2001/10/07 06:33:30 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/vbsfilter
 then
 	exit 0
 fi
-case $1 in
+case "$1" in
 start)
 	rm -f /var/run/vbsfilter
 	%%PREFIX%%/libexec/vbsfilter -p local:/var/run/vbsfilter &&
@@ -17,7 +17,7 @@ stop)
 	rm -f /var/run/vbsfilter
 	;;
 *)
-	echo "Usage: $0: [ start | stop ]" 2>&1
+	echo "Usage: ${0##*/}: { start | stop }" 2>&1
 	exit 65
 	;;
 esac
