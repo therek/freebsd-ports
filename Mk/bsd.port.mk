@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.329 2000/02/24 07:03:31 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.330 2000/03/03 01:23:49 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -966,7 +966,7 @@ MASTER_SITE_XCONTRIB+=	\
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
-	ftp://ftp.cdrom.com/pub/gnu/%SUBDIR%/ \
+	ftp://ftp.freesoftware.com/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.digital.com/pub/GNU/%SUBDIR%/ \
 	ftp://ftp.uu.net/archive/systems/gnu/%SUBDIR%/ \
 	ftp://ftp.de.uu.net/pub/gnu/%SUBDIR%/ \
@@ -979,10 +979,10 @@ MASTER_SITE_GNU+=	\
 
 MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.digital.com/pub/plan/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.cdrom.com/pub/perl/CPAN/modules/by-module/%SUBDIR%/
+	ftp://ftp.freesoftware.com/pub/perl/CPAN/modules/by-module/%SUBDIR%/
 
 MASTER_SITE_TEX_CTAN+=  \
-	ftp://ftp.cdrom.com/pub/tex/ctan/%SUBDIR%/  \
+	ftp://ftp.freesoftware.com/pub/tex/ctan/%SUBDIR%/  \
 	ftp://wuarchive.wustl.edu/packages/TeX/%SUBDIR%/  \
 	ftp://ftp.funet.fi/pub/TeX/CTAN/%SUBDIR%/  \
 	ftp://ftp.tex.ac.uk/tex-archive/%SUBDIR%/  \
@@ -991,7 +991,7 @@ MASTER_SITE_TEX_CTAN+=  \
 MASTER_SITE_SUNSITE+=	\
 	ftp://metalab.unc.edu/pub/Linux/%SUBDIR%/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/sunsite/%SUBDIR%/ \
-	ftp://ftp.cdrom.com/pub/linux/sunsite/%SUBDIR%/
+	ftp://ftp.freesoftware.com/pub/linux/sunsite/%SUBDIR%/
 
 MASTER_SITE_KDE+=	\
 	ftp://ftp.us.kde.org/pub/kde/%SUBDIR%/ \
