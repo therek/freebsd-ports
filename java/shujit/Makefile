@@ -2,11 +2,11 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.19 2000/09/25 07:32:41 sobomax Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.20 2000/09/26 13:06:30 sobomax Exp $
 #
 
 PORTNAME=	shujit
-PORTVERSION=	0.6.7
+PORTVERSION=	0.6.8
 CATEGORIES=	java
 MASTER_SITES=	http://www.shudo.net/jit/dist/
 
