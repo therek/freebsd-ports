@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.93 2000/03/03 05:13:31 shin Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.94 2000/04/13 19:59:40 cpiazza Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
@@ -11,7 +11,7 @@
 # this Makefile.
 
 PORTNAME=	fetchmail
-PORTVERSION= 	5.3.0
+PORTVERSION= 	5.3.8
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/
 
