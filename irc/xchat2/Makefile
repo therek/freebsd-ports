@@ -3,13 +3,13 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.26 1999/08/31 04:01:25 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.27 1999/09/01 08:35:07 jim Exp $
 #
 
 DISTNAME=	xchat-1.2.0
 CATEGORIES=	irc
-MASTER_SITES=	http://xchat.org/files/beta/ \
-		http://xchat.linuxpower.org/files/beta/
+MASTER_SITES=	http://xchat.org/files/ \
+		http://xchat.linuxpower.org/files/
 
 MAINTAINER=	jim@FreeBSD.org
 
