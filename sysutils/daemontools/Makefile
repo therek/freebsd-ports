@@ -2,11 +2,12 @@
 # Date created:		09 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.7 2000/07/29 16:27:31 nbm Exp $
+# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.8 2000/12/03 05:16:41 steve Exp $
 #
 
 PORTNAME=	daemontools
 PORTVERSION=	0.70
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://cr.yp.to/daemontools/ \
 		ftp://cr.yp.to/daemontools/
