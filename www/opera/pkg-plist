@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.16 2004/05/14 14:53:29 sf Exp $
+@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.17 2004/06/03 18:42:12 mezz Exp $
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DOCSDIR%%/help
@@ -114,8 +114,8 @@ bin/opera
 %%DATADIR%%/styles/user/textonly.css
 %%DATADIR%%/styles/user/userstyle.ini
 %%DATADIR%%/styles/wml.css
-%%GNOME%%share/gnome/apps/Internet/linux-opera.desktop
-%%GNOME%%share/gnome/pixmaps/linux-opera.xpm
+%%GNOME%%share/gnome/apps/Internet/opera.desktop
+%%GNOME%%share/gnome/pixmaps/opera.xpm
 @dirrm %%DATADIR%%/styles/user
 @dirrm %%DATADIR%%/styles
 @dirrm %%DATADIR%%/skin
