@@ -2,7 +2,7 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.9 2001/03/19 19:52:04 okazaki Exp $
+# $FreeBSD: ports/comms/qico/Makefile,v 1.10 2001/04/05 10:09:24 mharo Exp $
 #
 
 PORTNAME=	qico
@@ -35,8 +35,8 @@ do-install:
 
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/qico
-	${INSTALL_MAN} ${WRKSRC}/FAQ ${PREFIX}/share/doc/qico/FAQ.ru
-	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/qico/README.ru
+	${INSTALL_DATA} ${WRKSRC}/FAQ ${PREFIX}/share/doc/qico/FAQ.ru
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/qico/README.ru
 .endif
 
 .include <bsd.port.mk>
