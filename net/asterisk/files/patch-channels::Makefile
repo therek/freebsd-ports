@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/asterisk/files/patch-channels::Makefile,v 1.6 2004/10/17 18:00:02 sobomax Exp $
 
 --- channels/Makefile.orig	Tue Aug 31 19:33:00 2004
 +++ channels/Makefile	Sun Oct 10 16:18:05 2004
@@ -72,7 +72,7 @@ $FreeBSD$
 -chan_h323.so: chan_h323.o h323/libchanh323.a
 -	$(CC) $(SOLINK) -o $@ $< h323/libchanh323.a $(CHANH323LIB) -L$(PWLIBDIR)/lib $(PTLIB) -L$(OPENH323DIR)/lib $(H323LIB) -L/usr/lib -lcrypto -lssl -lexpat
 +chan_h323.so: chan_h323.o h323/ast_h323.o
-+	$(CC) $(SOLINK) -o $@ $< h323/ast_h323.o -L$(OPENH323DIR)/lib $(H323LIB) -L$(PWLIBDIR)/lib $(PTLIB) -lcrypto -lssl -L$(LOCALBASE)/lib -lexpat -llber -lldap -lldap_r
++	$(CXX) $(SOLINK) -o $@ $< h323/ast_h323.o -L$(OPENH323DIR)/lib $(H323LIB) -L$(PWLIBDIR)/lib $(PTLIB) -lcrypto -lssl -L$(LOCALBASE)/lib -lexpat -llber -lldap -lldap_r
  
 +h323/ast_h323.o:
 +	$(MAKE) -C h323 ast_h323.o
