@@ -2,11 +2,11 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-sdic/Makefile,v 1.4 2000/08/24 13:36:19 taoka Exp $
+# $FreeBSD: ports/japanese/edict-sdic/Makefile,v 1.5 2001/02/06 13:21:51 olgeni Exp $
 #
 
 PORTNAME=	edict-sdic
-PORTVERSION=	20000622
+PORTVERSION=	20010615
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://pine.kuee.kyoto-u.ac.jp/pub/tsuchiya/sdic/ \
 		ftp://ftp.cc.monash.edu.au/pub/nihongo/ \
