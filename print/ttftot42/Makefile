@@ -2,7 +2,7 @@
 # Date created:        22 April 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/print/ttftot42/Makefile,v 1.1 2001/04/22 00:16:47 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ttftot42
@@ -12,8 +12,7 @@ MASTER_SITES=	http://www.giga.or.at/pub/nih/ttftot42/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
-
+USE_FREETYPE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	"CFLAGS=-I${LOCALBASE}/include/freetype"
 
