@@ -1,9 +1,9 @@
 
-$FreeBSD$
+$FreeBSD: ports/graphics/wings/files/patch-plugins__src_fonts_Makefile,v 1.1 2003/07/20 13:27:47 olgeni Exp $
 
 --- plugins_src/fonts/Makefile.orig	Fri May 30 12:58:06 2003
 +++ plugins_src/fonts/Makefile	Fri May 30 12:59:02 2003
-@@ -37,7 +37,7 @@
+@@ -39,7 +39,7 @@
  # FLAGS
  # ----------------------------------------------------
  ERL_FLAGS += -I $(WINGS_SRC) -I $(WINGS_E3D) -pa $(ESDL)/ebin
