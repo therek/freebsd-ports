@@ -2,16 +2,16 @@
 # Date created:		Oct 23, 1997
 # Whom:			jhanna@home.com
 #
-# $FreeBSD: ports/math/spin/Makefile,v 1.16 2000/12/10 15:38:05 roam Exp $
+# $FreeBSD: ports/math/spin/Makefile,v 1.17 2001/02/12 12:57:57 kevlo Exp $
 #
 
 PORTNAME=	spin
-PORTVERSION=	3.4.4
+PORTVERSION=	3.4.5
 CATEGORIES=	math
 MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/spin/ \
 		ftp://www.netlib.org/spin/ \
 		ftp://ftp.freesoftware.com/pub/netlib/spin/
-DISTFILES=	spin344.tar.gz html.tar.gz
+DISTFILES=	spin345.tar.gz html.tar.gz
 
 MAINTAINER=	jhanna@home.com
 
