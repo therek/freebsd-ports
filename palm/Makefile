@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.5 1999/08/30 18:14:17 sumikawa Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.6 1999/08/31 14:05:46 sumikawa Exp $
 #
 
     SUBDIR += imgvtopgm
@@ -6,7 +6,6 @@
     SUBDIR += kpilot
     SUBDIR += pilot-link
     SUBDIR += pilot_makedoc
-    SUBDIR += prc-tools
     SUBDIR += syncal
     SUBDIR += xcopilot
 
