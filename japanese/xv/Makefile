@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ja-xv
 # Version required:	3.10a
 # Date created:		07 Oct 1998
-# Whom:			Shigeyuki FUKUSHIMA (shige@kuis.kyoto-u.ac.jp)
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xv/Makefile,v 1.4 1999/08/25 05:28:00 obrien Exp $
+# $FreeBSD: ports/japanese/xv/Makefile,v 1.5 1999/08/31 06:46:38 mharo Exp $
 #
 
 PKGNAME=	ja-xv-3.10a

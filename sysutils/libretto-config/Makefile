@@ -1,9 +1,9 @@
 # New ports collection makefile for:	libretto-config
 # Version required:	1.0
 # Date created:		19 Nov 1998
-# Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
+# Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.4 1999/08/31 01:59:49 peter Exp $
+# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.5 1999/08/31 06:50:53 mharo Exp $
 #
 
 DISTNAME=	libapm-linux-1.0beta5
