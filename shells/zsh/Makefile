@@ -3,7 +3,7 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.36 1999/12/06 20:14:38 billf Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.37 1999/12/07 18:43:06 billf Exp $
 #
 
 DISTNAME=       zsh-3.0.7
