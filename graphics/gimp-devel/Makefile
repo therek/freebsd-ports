@@ -2,11 +2,11 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.67 2000/04/14 18:13:44 jim Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.68 2000/04/17 00:17:46 reg Exp $
 #
 
 PORTNAME=	gimp
-PORTVERSION=	1.1.19
+PORTVERSION=	1.1.20
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.insync.net/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-.if !defined(WITHOUT_PERL)
+.if defined(WITH_PERL)
 BUILD_DEPENDS=	perldl:${PORTSDIR}/math/PDL \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
 RUN_DEPENDS=	perldl:${PORTSDIR}/math/PDL \
@@ -39,7 +39,7 @@ USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-ignore
 
-.if defined(WITHOUT_PERL)
+.if !defined(WITH_PERL)
 CONFIGURE_ARGS=	--disable-perl
 .endif
 
@@ -51,7 +51,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		gimp.1 gimptool.1
 MAN5=		gimprc.5
 
-.if defined(WITHOUT_PERL)
+.if !defined(WITH_PERL)
 PLISTORIG=		${PKGDIR}/PLIST
 PLIST=			${WRKDIR}/PLIST
 .else
