@@ -2,11 +2,12 @@
 # Date created:				14 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/databases/p5-MyObject/Makefile,v 1.5 2000/05/08 15:37:24 jedgar Exp $
+# $FreeBSD: ports/databases/p5-MyObject/Makefile,v 1.6 2000/07/14 12:45:23 jedgar Exp $
 #
 
 PORTNAME=	MyObject
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	databases perl5
 MASTER_SITES=	http://www.frontierworld.com/perl/
 PKGNAMEPREFIX=	p5-
