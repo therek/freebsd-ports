@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.2 2002/03/29 11:22:41 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.3 2002/03/30 10:48:23 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -192,7 +192,7 @@ JAVA_VENDOR=	FreeBSD
 JAVA_VER=		1.2.2
 JAVA_OS=		FreeBSD
 JAVA_HOME=		${_JAVA_HOME_FREEBSD_1_2}
-JAVA_PORT=		${_JAVA_PORT_BLACKDOWN_LINUX_1_2}
+JAVA_PORT=		${_JAVA_PORT_FREEBSD_1_2}
 .			endif
 
 # If the port needs Java 1.3, then there are 3 choices. They are, in order or
