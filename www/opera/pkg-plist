@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.17 2004/06/03 18:42:12 mezz Exp $
+@comment $FreeBSD: ports/www/opera/pkg-plist,v 1.18 2004/06/04 18:54:22 mezz Exp $
 bin/opera
 %%DOCSDIR%%/LICENSE
 %%DOCSDIR%%/help
@@ -82,7 +82,8 @@ bin/opera
 %%DATADIR%%/locale/english.lng
 %%DATADIR%%/opera6.adr
 %%DATADIR%%/plugins/libnpp.so
-%%DATADIR%%/plugins/operamotifwrapper
+%%DATADIR%%/plugins/operamotifwrapper-1
+%%DATADIR%%/plugins/operamotifwrapper-2
 %%DATADIR%%/plugins/operaplugincleaner
 %%DATADIR%%/search.ini
 %%DATADIR%%/skin/standard_skin.zip
