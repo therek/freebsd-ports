@@ -2,14 +2,14 @@
 # Date created:		02 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/ines/Makefile,v 1.16 2000/11/11 22:10:00 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ines
-PORTVERSION=	1.2
+PORTVERSION=	2.2
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.komkon.org/fms/iNES/
-DISTNAME=	iNES12-FreeBSD-80x86-bin
+MASTER_SITES=	http://fms.komkon.org/iNES/
+DISTNAME=	iNES22-FreeBSD-80x86-bin
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org
@@ -25,10 +25,10 @@ STRIP=
 .endif
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/NES/ines ${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/NES/ines-debug ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/ines ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/ines-debug ${PREFIX}/bin
 	@${MKDIR} ${PREFIX}/share/ines
-	@${INSTALL_DATA} ${WRKSRC}/NES/iNES.html ${PREFIX}/share/ines
-	@${INSTALL_DATA} ${WRKSRC}/NES/CART.NES ${PREFIX}/share/ines
+	@${INSTALL_DATA} ${WRKSRC}/iNES.html ${PREFIX}/share/ines
+	@${INSTALL_DATA} ${WRKSRC}/CART.NES ${PREFIX}/share/ines
 
 .include <bsd.port.post.mk>
