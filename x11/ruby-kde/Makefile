@@ -2,11 +2,11 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.12 2001/01/09 10:17:17 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.13 2001/02/27 03:30:02 knu Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	0.14b
+PORTVERSION=	0.15
 CATEGORIES=	x11 kde ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -17,8 +17,6 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	${LOCALBASE}/lib/ruby/site_ruby/${RUBY_VER}/qt.rb:${PORTSDIR}/x11-toolkits/ruby-qt
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
