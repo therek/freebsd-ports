@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.232 2000/10/16 10:42:35 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.233 2000/10/18 10:00:56 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -218,6 +218,7 @@
     SUBDIR += xv
     SUBDIR += xv-m17n
     SUBDIR += xwpick
+    SUBDIR += xzgv
     SUBDIR += zimg
 
 .include <bsd.port.subdir.mk>
