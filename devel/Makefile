@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.422 2001/01/21 15:45:38 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.423 2001/01/22 16:33:01 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -83,6 +83,7 @@
     SUBDIR += fhist
     SUBDIR += flick
     SUBDIR += flux
+    SUBDIR += fnccheck
     SUBDIR += fnorb
     SUBDIR += fortran-utils
     SUBDIR += fpp
