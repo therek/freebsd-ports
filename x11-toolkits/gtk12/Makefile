@@ -3,7 +3,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.51 1999/08/31 02:59:17 peter Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.52 1999/08/31 06:52:46 mharo Exp $
 #
 
 DISTNAME=	gtk+-1.2.3
@@ -23,6 +23,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
+LIBTOOLFLAGS=	--disable-ltlibs --release-suffix
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/gtk12
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		X_CFLAGS="-I${LOCALBASE}/include" \
