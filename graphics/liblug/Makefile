@@ -2,7 +2,7 @@
 # Date created:				27 December 2000
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/graphics/liblug/Makefile,v 1.1 2000/12/30 02:15:35 will Exp $
+# $FreeBSD: ports/graphics/liblug/Makefile,v 1.2 2001/01/12 15:38:49 alex Exp $
 #
 
 PORTNAME=		liblug
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	libs/graphics
 MAINTAINER=		greid@ukug.uk.freebsd.org
 
 LIB_DEPENDS=		tiff.4:${PORTSDIR}/graphics/tiff
+
+USE_XLIB=		yes
 
 WRKSRC=			${WRKDIR}/lug
 MAKEFILE=		Makefile.linux
