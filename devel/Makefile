@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.261 2000/02/19 13:40:03 jedgar Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.262 2000/02/20 22:03:22 jedgar Exp $
 #
 
     SUBDIR += ElectricFence
@@ -17,6 +17,7 @@
     SUBDIR += bison
     SUBDIR += boehm-gc
     SUBDIR += bonobo
+    SUBDIR += bugbuddy
     SUBDIR += cccc
     SUBDIR += cdecl
     SUBDIR += cdk
