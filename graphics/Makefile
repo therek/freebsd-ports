@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.137 1999/09/05 18:28:19 chuckr Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.138 1999/09/06 19:41:35 cpiazza Exp $
 #
 
     SUBDIR += 4va
@@ -58,6 +58,7 @@
     SUBDIR += hpscan
     SUBDIR += imlib
     SUBDIR += jbigkit
+    SUBDIR += jgraph
     SUBDIR += jgv
     SUBDIR += jpeg
     SUBDIR += kdegraphics11
