@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13+ipv6/files/apache.sh,v 1.4 2004/06/09 17:04:00 sumikawa Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -13,9 +13,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-apache_enable="NO"
-apache_flags=""
-apache_pidfile="/var/run/httpd.pid"
+apache_enable=${apache_enable-"NO"}
+apache_flags=${apache_flags-""}
+apache_pidfile=${apache_pidfile-"/var/run/httpd.pid"}
 
 . %%RC_SUBR%%
 
@@ -27,6 +27,6 @@ load_rc_config $name
 
 pidfile="${apache_pidfile}"
 
-start_precmd="`/usr/bin/limits -e -U www`"
+start_cmd="echo \"Starting ${name}.\"; /usr/bin/limits -U www ${command} ${apache_flags} ${command_args}"
 
 run_rc_command "$1"
