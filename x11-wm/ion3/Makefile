@@ -2,11 +2,11 @@
 # Date created:        20 January 2001
 # Whom:                ricci@cs.utah.edu
 #
-# $FreeBSD: ports/x11-wm/ion/Makefile,v 1.4 2001/02/18 15:32:09 kevlo Exp $
+# $FreeBSD: ports/x11-wm/ion/Makefile,v 1.5 2001/03/29 20:26:00 clive Exp $
 #
 
 PORTNAME=	ion
-PORTVERSION=	20010314
+PORTVERSION=	20010523
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.students.tut.fi/~tuomov/dl/
 
