@@ -3,10 +3,10 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.11 1999/10/11 20:38:53 steve Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.12 1999/12/23 18:14:56 steve Exp $
 #
 
-DISTNAME=	wmakerconf-2.4
+DISTNAME=	wmakerconf-2.5
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://ulli.linuxbox.com/wmakerconf/
 
