@@ -2,7 +2,7 @@
 # Date created:				6 May 2000
 # Whom:					Scott A. Moberly <smoberly@xavier.dyndns.org>
 #
-# $FreeBSD: ports/x11/powershell/Makefile,v 1.2 2000/06/14 13:21:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	powershell
@@ -13,10 +13,12 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	smoberly@xavier.dyndns.org
 
-ALL_TARGET=	powershell
-
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
+IMLIB_CONFIG?=	${X11BASE}/bin/imlib-config
 USE_AUTOCONF=	yes
+CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS} -I${LOCALBASE}/include `${IMLIB_CONFIG} --cflags`" \
+		LDFLAGS="-L${LOCALBASE}/lib `${IMLIB_CONFIG} --libs`"
+ALL_TARGET=	powershell
 
 .include <bsd.port.mk>
