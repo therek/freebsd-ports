@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.223 2001/04/07 04:59:20 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.224 2001/04/07 05:04:42 will Exp $
 #
 
     SUBDIR += Maaate
@@ -74,6 +74,7 @@
     SUBDIR += id3el
     SUBDIR += id3lib
     SUBDIR += id3ren
+    SUBDIR += id3tool
     SUBDIR += juke
     SUBDIR += kdemultimedia2
     SUBDIR += kmikmod
