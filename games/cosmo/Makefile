@@ -2,15 +2,14 @@
 # Date created:		28 December 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/cosmo/Makefile,v 1.9 2000/08/16 11:31:47 kris Exp $
+# $FreeBSD: ports/games/cosmo/Makefile,v 1.10 2000/10/17 23:15:33 nakai Exp $
 #
 
 PORTNAME=	cosmo
 PORTVERSION=	2.0.4
 PORTREVISION=	1
 CATEGORIES=	games
-MASTER_SITES=	http://taraco.u-aizu.ac.jp/~eiju/cosmo/ \
-		ftp://ftp.jinr.ru/pub/PD/cosmo/
+MASTER_SITES=	ftp://ftp.riken.go.jp/pub/Linux/vine/VinePlus/1.1/JG-0.9.1/other-sources/jp/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}  moon.tif.gz
 
 MAINTAINER=	nakai@FreeBSD.org
