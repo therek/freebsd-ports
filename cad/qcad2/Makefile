@@ -3,15 +3,15 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.1 1999/12/22 10:40:51 tg Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.2 2000/01/05 20:02:11 jedgar Exp $
 #
 
 DISTNAME=	qcad_source
 PKGNAME=	qcad-1.3.3
 CATEGORIES=	cad
-MASTER_SITES=	http://www2.active.ch/~ribbon/
+MASTER_SITES=	http://www.ultraviolet.org/qcad/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	andrews@technologist.com
 
 USE_XLIB=	yes
 MAKEFILE=	makefile
