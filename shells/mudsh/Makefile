@@ -2,11 +2,11 @@
 # Date created:        28 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/mudsh/Makefile,v 1.1 2001/03/01 15:57:14 clive Exp $
 #
 
 PORTNAME=	mudsh
-PORTVERSION=	20010228
+PORTVERSION=	20010311
 CATEGORIES=	shells
 MASTER_SITES=	http://www.xirium.com/tech/mud-shell/download/
 DISTNAME=	mudsh
