@@ -2,7 +2,7 @@
 # Date created:		Nov 2, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libmng/Makefile,v 1.1 2000/11/03 17:08:18 trevor Exp $
 #
 
 PORTNAME=	libmng
@@ -18,12 +18,14 @@ MAINTAINER=     mi@aldan.algebra.com
 LIB_DEPENDS=	jpeg:${PORTSDIR}/graphics/jpeg \
 		lcms:${PORTSDIR}/graphics/lcms
 
-INSTALLS_SHLIB=	yes
 SHLIB_VER=	0
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-jpeg=${LOCALBASE} --with-lcms=${LOCALBASE}
 WRKSRC=		${WRKDIR}/${PORTNAME}
+
+INSTALLS_SHLIB=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--with-jpeg=${LOCALBASE} \
+		--with-lcms=${LOCALBASE}
 
 PLIST_SUB=	SHLIB_VER="${SHLIB_VER}"
 
