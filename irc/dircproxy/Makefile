@@ -2,15 +2,15 @@
 # Date created:				11 January 2001
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/dircproxy/Makefile,v 1.1 2001/03/10 19:49:24 will Exp $
 #
 
 PORTNAME=       	dircproxy
-PORTVERSION=		1.0.0
+PORTVERSION=		1.0.1
 CATEGORIES=     	irc
 MASTER_SITES=   	ftp://dircproxy.sourceforge.net/pub/dircproxy/1.0/
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=		greid@FreeBSD.org
 
 GNU_CONFIGURE=		yes
 
