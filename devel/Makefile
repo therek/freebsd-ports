@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.621 2001/08/22 08:04:04 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.622 2001/08/23 12:54:47 kris Exp $
 #
 
     SUBDIR += ElectricFence
@@ -389,6 +389,7 @@
     SUBDIR += p5-Sort-Versions
     SUBDIR += p5-Storable
     SUBDIR += p5-String-Approx
+    SUBDIR += p5-String-CRC32
     SUBDIR += p5-String-Checker
     SUBDIR += p5-String-Random
     SUBDIR += p5-String-RexxParse
