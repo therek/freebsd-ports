@@ -2,13 +2,14 @@
 # Date created:         17 Nov 1999
 # Whom:                 Wes Peters <wes@FreeBSD.ORG>
 #
-# $FreeBSD: ports/sysutils/obliterate/Makefile,v 1.5 2000/04/22 10:12:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	obliterate
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.bsdconspiracy.net/pub/softweyr/
+MASTER_SITES=	ftp://ftp.softweyr.com/pub/softweyr/
 
 MAINTAINER=	wes@softweyr.com
 
