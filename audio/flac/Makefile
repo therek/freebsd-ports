@@ -3,7 +3,7 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.9 2001/08/31 14:20:16 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flac
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 .if defined(WITH_XMMS)
 BUILD_DEPENDS+=	xmms-config:${PORTSDIR}/audio/xmms

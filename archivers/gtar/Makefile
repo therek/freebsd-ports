@@ -2,7 +2,7 @@
 # Date created:		Sa   6 Jun 1998 10:24:51 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/archivers/gtar/Makefile,v 1.20 2001/09/11 12:09:12 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tar
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
 		ftp://ftp.sunsite.org.uk/Mirrors/alpha.gnu.org/gnu/tar/ \
 		ftp://ftp.funet.fi/pub/mirrors/alpha.gnu.org/gnu/tar/
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 

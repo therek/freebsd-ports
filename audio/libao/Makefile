@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libao/Makefile,v 1.9 2001/07/19 06:29:33 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libao
@@ -10,7 +10,7 @@ PORTVERSION=	0.8.0
 CATEGORIES=	audio
 MASTER_SITES=	http://www.vorbis.com/files/rc2/unix/
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 WANT_ESOUND=	yes
 

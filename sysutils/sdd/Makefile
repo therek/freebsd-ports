@@ -2,7 +2,7 @@
 # Date created:		1999-05-05
 # Whom:			Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/sysutils/sdd/Makefile,v 1.5 2000/04/30 18:36:53 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdd
@@ -10,7 +10,7 @@ PORTVERSION=	1.31
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/sdd/
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 USE_GMAKE=	yes
 MAKE_ENV=	MAKEPROG=gmake CCOM=${CC}

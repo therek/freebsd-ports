@@ -2,14 +2,14 @@
 # Date created:                2000-10-05
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD: ports/mail/bsmtp/Makefile,v 1.1 2000/10/28 01:22:47 jeh Exp $
+# $FreeBSD$
 
 PORTNAME=	bsmtp
 PORTVERSION=	1.02
 CATEGORIES=	mail
 MASTER_SITES=	http://www.stud.uni-karlsruhe.de/~uk1o/bsmtp/
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:                2000-12-26
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD: ports/shells/ksh93/Makefile,v 1.12 2001/09/27 14:23:56 roam Exp $
+# $FreeBSD$
 
 PORTNAME=	ksh93
 PORTVERSION=	${VERSION:S/-//g}
@@ -10,7 +10,7 @@ VERSION=	2001-07-04.0000
 CATEGORIES=	shells
 MASTER_SITES=	http://www.research.att.com/~gsf/download/tgz/
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 RESTRICTED=	"Source recipient must acknowledge license"
 DISTNAME=	${PORTNAME}-${VERSION}

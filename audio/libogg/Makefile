@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libogg/Makefile,v 1.8 2001/07/19 06:29:33 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libogg
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.vorbis.com/files/rc2/unix/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.r/rc/}
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 USE_LIBTOOL=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				22 August 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis/Makefile,v 1.9 2001/07/19 06:29:34 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vorbis
@@ -13,7 +13,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# none
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	naddy@mips.inka.de
+MAINTAINER=	naddy@FreeBSD.org
 
 LIB_DEPENDS=	ao.2:${PORTSDIR}/audio/libao \
 		ogg.2:${PORTSDIR}/audio/libogg \
