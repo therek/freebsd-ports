@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.234 2004/09/19 23:23:49 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.235 2004/09/19 23:32:05 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -122,7 +122,6 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <url>http://www.osvdb.org/6834</url>
       <url>http://www.osvdb.org/6835</url>
       <url>http://www.osvdb.org/6836</url>
-      <url>http://www.packetstormsecurity.org/0405-exploits/cvs_linux_freebsd_HEAP.c</url>
       <bid>10499</bid>
       <freebsdsa>SA-04:14.cvs</freebsdsa>
     </references>
