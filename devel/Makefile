@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.357 2000/10/28 02:48:45 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.358 2000/10/28 14:03:29 trevor Exp $
 #
 
     SUBDIR += ElectricFence
@@ -146,6 +146,7 @@
     SUBDIR += libunicode
     SUBDIR += libxalloc
     SUBDIR += lincvs
+    SUBDIR += linguist
     SUBDIR += linux_devtools
     SUBDIR += linux_kdump
     SUBDIR += linuxthreads
