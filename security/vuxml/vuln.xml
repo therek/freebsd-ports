@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.180 2004/08/17 12:07:30 eik Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.181 2004/08/17 18:01:37 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -72,6 +72,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </description>
     <references>
       <url>http://cvsweb.netbsd.org/bsdweb.cgi/src/libexec/ftpd/ftpd.c#rev1.158</url>
+      <url>ftp://ftp.netbsd.org/pub/NetBSD/security/advisories/NetBSD-SA2004-009.txt.asc</url>
     </references>
     <dates>
       <discovery>2004-08-17</discovery>
