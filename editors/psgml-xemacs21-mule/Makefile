@@ -2,7 +2,7 @@
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs21-mule/Makefile,v 1.11 2000/04/14 06:20:37 asami Exp $
+# $FreeBSD: ports/editors/psgml-xemacs21-mule/Makefile,v 1.12 2000/07/10 01:18:45 steve Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org
@@ -13,16 +13,9 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../psgml-emacs
 
 # emacs port setup
-EMACS_NAME=	xemacs
-EMACS_PORT=	xemacs21-mule
-EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
-EMACS_VER=	21.1.10
-EMACS_LIBDIR=	lib/xemacs
+EMACS_PORT_NAME=	xemacs21-mule
 
 # pkg/* files are used in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
-
-# whether emacs has a *-common port
-HAS_COMMON_PORT=	YES
 
 .include <${MASTERDIR}/Makefile>
