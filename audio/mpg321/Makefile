@@ -3,13 +3,14 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg321/Makefile,v 1.4 2001/06/10 10:20:18 kevlo Exp $
+# $FreeBSD: ports/audio/mpg321/Makefile,v 1.5 2001/07/17 15:25:59 ijliao Exp $
 #
 
 PORTNAME=	mpg321
-PORTVERSION=	0.1.0
+PORTVERSION=	0.1.1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.linuxberg.com/files/
+MASTER_SITES=	http://www.linuxberg.com/files/ \
+		http://gemini.woot.net/~hosehead/packages/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
