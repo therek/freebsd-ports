@@ -3,7 +3,7 @@
 # Date created:			26 Jan 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/delegate/Makefile,v 1.20 1999/09/07 20:22:05 max Exp $
+# $FreeBSD: ports/net/delegate/Makefile,v 1.21 1999/12/23 22:24:11 max Exp $
 #
 
 DISTNAME=	delegate5.9.12
@@ -12,6 +12,8 @@ CATEGORIES=	net www japanese
 MASTER_SITES=	ftp://etlport.etl.go.jp/pub/DeleGate/
 
 MAINTAINER=	max@FreeBSD.org
+
+#FORBIDDEN=	"Remote buffer overflow yielding setuid nobody shell"
 
 MAKE_ENV=	PATH=$${PATH}:.
 
