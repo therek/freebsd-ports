@@ -3,14 +3,14 @@
 # Date created:         15 March 1995
 # Whom:                 asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xlife/Makefile,v 1.12 1999/08/25 06:05:28 obrien Exp $
 #
 
 DISTNAME=       xlife
 PKGNAME=	xlife-3.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/X11/R5contrib/ \
-		ftp://ftp.kddlabs.co.jp/pub/X11/R5contrib
+		ftp://ftp.kddlabs.co.jp/pub/X11/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.ORG
