@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.354 2000/04/24 02:05:52 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.355 2000/04/28 08:29:22 nbm Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -86,12 +86,14 @@
     SUBDIR += icmpquery
     SUBDIR += icqlib
     SUBDIR += icqnix
+    SUBDIR += ip-tun
     SUBDIR += ipfm
     SUBDIR += iplog
     SUBDIR += ipw
     SUBDIR += isc-dhcp2
     SUBDIR += isic
     SUBDIR += ivs
+    SUBDIR += jabber-transport
     SUBDIR += kdenetwork11
     SUBDIR += kdenetwork11-i18n
     SUBDIR += kdetelnet
@@ -101,7 +103,9 @@
     SUBDIR += lambdamoo
     SUBDIR += ldap
     SUBDIR += ldapsdk
+    SUBDIR += libetherx
     SUBDIR += libicq
+    SUBDIR += libjabber
     SUBDIR += libnet
     SUBDIR += libnids
     SUBDIR += libsmi
