@@ -2,15 +2,16 @@
 # Date created:		15 September 2000
 # Whom:			roam@orbitel.bg
 #
-# $FreeBSD: ports/misc/bogosort/Makefile,v 1.1 2000/09/16 05:15:35 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bogosort
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.lysator.liu.se/~qha/bogosort/ \
 		ftp://l82.ryd.student.liu.se/pub/unix/bogosort/
 DISTNAME=	${PORTNAME}
+DIST_SUBDIR=	${PORTNAME}/${PORTVERSION}
 
 MAINTAINER=	roam@FreeBSD.org
 
