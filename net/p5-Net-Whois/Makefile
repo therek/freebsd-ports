@@ -2,15 +2,15 @@
 # Date created:				June 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net-Whois/Makefile,v 1.7 1999/08/31 06:49:01 mharo Exp $
+# $FreeBSD: ports/net/p5-Net-Whois/Makefile,v 1.8 2000/04/09 18:12:54 cpiazza Exp $
 #
 
-PORTNAME=	p5-Net-Whois
-PORTVERSION=	0.22
+PORTNAME=	Net-Whois
+PORTVERSION=	1.9
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
-DISTNAME=	Net-Whois-${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

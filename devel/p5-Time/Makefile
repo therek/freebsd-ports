@@ -2,11 +2,11 @@
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.14 2000/04/11 21:29:57 mharo Exp $
+# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.15 2000/04/15 01:36:27 asami Exp $
 #
 
 PORTNAME=	Time
-PORTVERSION=	98.112901
+PORTVERSION=	100.010301
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
@@ -17,8 +17,11 @@ MAINTAINER=	jfitz@FreeBSD.org
 
 USE_PERL5=	YES
 
-MAN3=		Time::CTime.3 Time::JulianDay.3 Time::ParseDate.3 \
-		Time::Timezone.3 Time::DaysInMonth.3
+MAN3=		Time::CTime.3 \
+		Time::DaysInMonth.3 \
+		Time::JulianDay.3 \
+		Time::ParseDate.3 \
+		Time::Timezone.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:

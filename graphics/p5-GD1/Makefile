@@ -2,11 +2,11 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.11 2000/02/27 07:28:53 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.12 2000/04/14 10:46:54 asami Exp $
 #
 
 PORTNAME=	GD
-PORTVERSION=	1.25
+PORTVERSION=	1.27
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	GD

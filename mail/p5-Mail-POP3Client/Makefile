@@ -2,16 +2,16 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-POP3Client/Makefile,v 1.14 2000/04/15 04:37:08 asami Exp $
+# $FreeBSD: ports/mail/p5-Mail-POP3Client/Makefile,v 1.15 2000/04/15 08:43:40 asami Exp $
 #
 
 PORTNAME=	Mail-POP3Client
-PORTVERSION=	1.15
+PORTVERSION=	2.6
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
-DISTNAME=	POP3Client-1_15
+DISTNAME=	POP3Client-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

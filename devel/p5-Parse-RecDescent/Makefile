@@ -2,11 +2,11 @@
 # Date created:				July 9th 1999
 # Whom:	      				Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.4 2000/02/21 19:46:16 green Exp $
+# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.5 2000/04/11 21:29:45 mharo Exp $
 #
 
 PORTNAME=	Parse-RecDescent
-PORTVERSION=	1.66
+PORTVERSION=	1.78
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Parse

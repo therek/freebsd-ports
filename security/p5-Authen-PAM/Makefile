@@ -2,15 +2,15 @@
 # Date created:				Mon Oct  4 1999
 # Whom:	      				Matt Behrens <matt@zigg.com>
 #
-# $FreeBSD: ports/security/p5-Authen-PAM/Makefile,v 1.1.1.1 1999/11/26 20:32:25 steve Exp $
+# $FreeBSD: ports/security/p5-Authen-PAM/Makefile,v 1.2 2000/04/09 18:30:08 cpiazza Exp $
 #
 
-PORTNAME=	p5-Authen-PAM
-PORTVERSION=	0.08
+PORTNAME=	Authen-PAM
+PORTVERSION=	0.09
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Authen
-DISTNAME=	Authen-PAM-0.08	
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	matt@zigg.com
 

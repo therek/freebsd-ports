@@ -2,15 +2,15 @@
 # Date created:				October 27th 1999
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/p5-FastCGI/Makefile,v 1.2 2000/03/20 21:48:43 mharo Exp $
+# $FreeBSD: ports/www/p5-FastCGI/Makefile,v 1.3 2000/04/10 00:06:24 cpiazza Exp $
 #
 
 PORTNAME=	p5-FastCGI
-PORTVERSION= 	0.48
+PORTVERSION= 	0.52
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	FCGI
-DISTNAME=	FCGI-0.48
+DISTNAME=	FCGI-${PORTVERSION}
 
 MAINTAINER=	kbyanc@posi.net
 

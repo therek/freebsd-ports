@@ -2,11 +2,11 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.6 2000/04/12 06:28:22 obrien Exp $
+# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.7 2000/04/12 16:16:27 mharo Exp $
 #
 
 PORTNAME=	p5-IRC
-PORTVERSION=	0.62
+PORTVERSION=	0.63
 CATEGORIES=	irc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net

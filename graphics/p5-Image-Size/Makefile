@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.19 1999/08/31 06:45:06 mharo Exp $
+# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.20 2000/04/14 10:46:56 asami Exp $
 #
 
 PORTNAME=	Image-Size
-PORTVERSION=	2.9
+PORTVERSION=	2.901
 CATEGORIES=	graphics www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Image
