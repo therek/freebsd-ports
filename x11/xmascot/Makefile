@@ -2,11 +2,12 @@
 # Date created:		20 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11/xmascot/Makefile,v 1.7 2000/04/13 19:10:47 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmascot
 PORTVERSION=	2.6a
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://cclub.tutcc.tut.ac.jp/pub/xmascot/ \
 		http://cclub-flying.dsl.gr.jp/products/xmascot/
@@ -16,5 +17,9 @@ MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xmascot.1
+
+post-install:
+	-@${MKDIR} ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults
+	${CP} ${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults/XMascot ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults/
 
 .include <bsd.port.mk>
