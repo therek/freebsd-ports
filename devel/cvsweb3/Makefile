@@ -2,7 +2,7 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.10 2000/04/11 21:27:40 mharo Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.11 2000/04/24 15:51:07 knu Exp $
 #
 
 PORTNAME=	cvsweb
@@ -47,6 +47,9 @@ do-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/cvsweb
 	cd ${WRKSRC} && ${INSTALL_DATA} INSTALL README TODO ${PREFIX}/share/doc/cvsweb/
+.endif
+.if defined(PACKAGE_BUILDING)
+	@${ECHO} "@dirrm share/apache" >> ${TMPPLIST}
 .endif
 
 post-install:
