@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.98 2003/04/14 04:22:49 will Exp $
+# $FreeBSD: ports/MOVED,v 1.99 2003/04/14 06:53:45 max Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -263,3 +263,4 @@ japanese/ptex-common|japanese/ptex-base|2003-04-13|only used by one port
 misc/kde3-i18n-he|hebrew/kde3-i18n|2003-04-13|new category
 misc/kde3-i18n-hu|hungarian/kde3-i18n|2003-04-13|new category
 misc/kde3-i18n-vi|vietnamese/kde3-i18n|2003-04-13|new category
+devel/linux_devtools|linux/linux_devtools-6|2003-04-17|finished repocopy
