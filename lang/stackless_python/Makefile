@@ -2,7 +2,7 @@
 # Date created:			  29 March 2001
 # Whom:				  Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/lang/stackless_python/Makefile,v 1.3 2001/05/02 11:34:23 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	python
@@ -16,7 +16,7 @@ PATCH_SITES=	http://www3.kr.freebsd.org/~perky/distfiles/ \
 PATCHFILES=	stackless-010514.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	perky@python.or.kr
+MAINTAINER=	perky@fallin.lv
 
 MASTERDIR=	${.CURDIR}/../../lang/python20
 

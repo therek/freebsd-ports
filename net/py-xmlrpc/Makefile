@@ -2,7 +2,7 @@
 # Date created:				22 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/net/py-xmlrpc/Makefile,v 1.4 2001/08/16 15:18:50 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmlrpc
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	py-${PORTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	py-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	perky@python.or.kr
+MAINTAINER=	perky@fallin.lv
 
 BUILD_DEPENDS=	${PYDISTUTILS}
 

@@ -2,7 +2,7 @@
 # Date created:				8 July 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/graphics/py-paint/Makefile,v 1.2 2001/07/09 03:07:47 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	paint
@@ -11,7 +11,7 @@ CATEGORIES=	graphics python
 MASTER_SITES=	http://object-craft.com.au/projects/paint/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	perky@python.or.kr
+MAINTAINER=	perky@fallin.lv
 
 BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype \

@@ -2,7 +2,7 @@
 # Date created:		18 June 2001
 # Whom:			Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/graphics/py-gdchart/Makefile,v 1.1 2001/07/16 07:25:22 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	gdchart
 PORTVERSION=	0.6
@@ -11,7 +11,7 @@ MASTER_SITES=	http://athani.pair.com/msteed/software/gdchart/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-py-${PORTVERSION}
 
-MAINTAINER=	perky@python.or.kr
+MAINTAINER=	perky@fallin.lv
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgdchart.a:${PORTSDIR}/graphics/gdchart
 
