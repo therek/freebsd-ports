@@ -2,32 +2,33 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.2 2000/05/29 07:11:59 sobomax Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.3 2000/06/14 13:21:05 sobomax Exp $
 #
 
-PORTNAME=		extace
-PORTVERSION=		1.2.23
-CATEGORIES=		audio
-MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+PORTNAME=	extace
+PORTVERSION=	1.3.0
+CATEGORIES=	audio
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	eXtace
 
-MAINTAINER=		sobomax@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-			gdk_imlib.5:${PORTSDIR}/graphics/imlib \
-			esd.2:${PORTSDIR}/audio/esound \
-			fftw.2:${PORTSDIR}/math/fftw
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		gdk_imlib.5:${PORTSDIR}/graphics/imlib \
+		esd.2:${PORTSDIR}/audio/esound \
+		fftw.2:${PORTSDIR}/math/fftw
 
-USE_X_PREFIX=		yes
-GNU_CONFIGURE=		yes
+USE_X_PREFIX=	yes
+USE_LIBTOOL=	yes
 
-GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
-GLIB_CONFIG?=		${LOCALBASE}/bin/glib12-config
-ESD_CONFIG?=		${LOCALBASE}/bin/esd-config
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
+ESD_CONFIG?=	${LOCALBASE}/bin/esd-config
 
-CONFIGURE_ENV=		GTK_CONFIG="${GTK_CONFIG}" \
-			GLIB_CONFIG="${GLIB_CONFIG}" \
-			ESD_CONFIG="${ESD_CONFIG}" \
-			LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
+		GLIB_CONFIG="${GLIB_CONFIG}" \
+		ESD_CONFIG="${ESD_CONFIG}" \
+		LIBS="-L${LOCALBASE}/lib" \
+		CPPFLAGS="-I${LOCALBASE}/include -DHAVE_LIBFFTW"
 
 .include <bsd.port.mk>
