@@ -2,11 +2,11 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.12 2000/06/16 10:37:47 sobomax Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.13 2000/06/16 21:50:54 asami Exp $
 #
 
 PORTNAME=	gdk-pixbuf
-PORTVERSION=	0.8.0
+PORTVERSION=	0.9.0
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gdk-pixbuf
