@@ -2,7 +2,7 @@
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.14 2001/03/10 17:48:41 sf Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.15 2001/03/21 20:43:43 fenner Exp $
 #
 
 PORTNAME=	ntp
@@ -10,7 +10,7 @@ PORTVERSION=	4.0.99k
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/
 
-MAINTAINER=	pat@databits.net
+MAINTAINER=	ports@FreeBSD.org
 
 # ntp's configure script created by autoconf 2.14.1 doesn't work
 # if GNU_CONFIGURE is defined
