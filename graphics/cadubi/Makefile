@@ -2,13 +2,13 @@
 # Date created:			  24 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/cadubi/Makefile,v 1.1 2001/08/25 07:17:59 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cadubi
-PORTVERSION=	1.1b1
+PORTVERSION=	1.2
 CATEGORIES=	graphics editors
-MASTER_SITES=	ftp://logicallemon.com/pub/
+MASTER_SITES=	ftp://logicallemon.com/pub/cadubi/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -16,7 +16,6 @@ MAINTAINER=	ports@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Term/ReadKey.pm:${PORTSDIR}/devel/p5-Term-ReadKey
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/cadubi ${PREFIX}/bin
