@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.52 2000/04/25 16:14:24 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.53 2000/05/25 19:02:05 jim Exp $
 #
 
 PORTNAME=		xchat
@@ -30,7 +30,7 @@ USE_BZIP2=		yes
 USE_GMAKE=		yes
 USE_PERL5=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--disable-nls --disable-python
+CONFIGURE_ARGS=		--disable-python
 
 .if defined(WITH_SOCKS)
 CONFIGURE_ARGS+=	--enable-socks
