@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/daapd/pkg-install,v 1.1 2003/10/23 20:24:42 sergei Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -23,17 +23,8 @@ PRE-INSTALL)
   else
     echo "---> Adding user \"%%USER%%\""
     pw adduser %%USER%% -g %%GROUP%% -h - \
-      -d "%%LOGDIR%%" -s "/sbin/nologin" -c "daapd User" || exit 1
+      -d "/nonexistent" -s "/sbin/nologin" -c "daapd User" || exit 1
   fi
-
-  ;;
-
-POST-INSTALL)
-  echo "---> Starting post-install script:"
-
-  echo "---> Creating directory \"%%LOGDIR%%\""
-  mkdir %%LOGDIR%%
-  chown %%USER%% %%LOGDIR%%
 
   ;;
 

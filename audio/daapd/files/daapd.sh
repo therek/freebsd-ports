@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.1 2003/10/23 20:24:42 sergei Exp $
 
 DAAPD_USER=%%USER%%
 DAAPD=%%PREFIX%%/sbin/daapd
@@ -10,8 +10,7 @@ DAAPD_CONF=%%PREFIX%%/etc/daapd.conf
 case "$1" in
 	start)
 		if [ -r "${DAAPD_CONF}" ]; then
-			su -m ${DAAPD_USER} -c "${DAAPD} -c ${DAAPD_CONF}" \
-				>> ${DAAPD_LOG} 2>&1 &
+			su -m ${DAAPD_USER} -c "${DAAPD} -c ${DAAPD_CONF}" >> ${DAAPD_LOG} 2>&1 &
 			echo $(($!+1)) > "${DAAPD_PID}"
 			echo -n ' daapd'
 		fi
