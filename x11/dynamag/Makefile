@@ -2,7 +2,7 @@
 # Date created:        			2000-09-22
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/dynamag/Makefile,v 1.1 2000/10/04 04:45:14 trevor Exp $
+# $FreeBSD: ports/x11/dynamag/Makefile,v 1.2 2000/10/06 21:05:24 trevor Exp $
 #
 
 PORTNAME=	dynamag
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	trevor@FreeBSD.org
 
+ALL_TARGET=	dynamag
 NO_INSTALL_MANPAGES=	yes
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
