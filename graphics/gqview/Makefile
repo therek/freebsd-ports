@@ -2,28 +2,26 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.19 2000/01/22 11:46:26 nakai Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.20 2000/04/14 10:46:07 asami Exp $
 #
 
 PORTNAME=	gqview
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://gqview.netpedia.net/ \
-		http://www.geocities.com/SiliconValley/Haven/5235/
-DISTNAME=	${PKGNAME}.src
+MASTER_SITES=	http://download.sourceforge.net/gqview/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		Imlib.5:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
-ALL_TARGET=	gqview
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		GTK_CONFIG="${GTK_CONFIG}" \
+		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS=	--without-gnome --disable-imlibtest --disable-gtktest
 
 post-install:
 .if !defined(NOPORTDOCS)
