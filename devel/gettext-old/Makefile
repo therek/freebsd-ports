@@ -3,7 +3,7 @@
 # Date created:        16 March 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/devel/gettext/Makefile,v 1.15 2000/01/07 02:05:43 nakai Exp $
+# $FreeBSD: ports/devel/gettext/Makefile,v 1.16 2000/01/07 19:47:03 ade Exp $
 #
 
 DISTNAME=	gettext-0.10.35
@@ -22,8 +22,9 @@ pre-configure:
 
 post-install:
 	@install-info ${PREFIX}/info/gettext.info ${PREFIX}/info/dir
+	${MKDIR} ${PREFIX}/share/emacs/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/misc/po-mode.el \
-		${PREFIX}/share/gettext/po-mode.el
+		${PREFIX}/share/emacs/site-lisp/po-mode.el
 	${MKDIR} ${X11BASE}/share/locale
 
 .include <bsd.port.mk>
