@@ -2,13 +2,13 @@
 # Date created:		23 Sep 1996
 # Whom:			proff
 #
-# $FreeBSD: ports/security/strobe/Makefile,v 1.10 2000/06/02 03:18:51 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	strobe
 PORTVERSION=	1.06
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.win.or.jp/pub/network/misc/
+MASTER_SITES=	ftp://ftp.win.ne.jp/pub/network/misc/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
