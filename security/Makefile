@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.76 1999/12/01 05:42:11 foxfair Exp $
+# $FreeBSD: ports/security/Makefile,v 1.77 1999/12/09 10:40:46 truckman Exp $
 #
 
     SUBDIR += bjorb
@@ -27,6 +27,7 @@
     SUBDIR += libident
     SUBDIR += libmcrypt
     SUBDIR += libparanoia
+    SUBDIR += logcheck
     SUBDIR += mhash
     SUBDIR += nbaudit
     SUBDIR += nessus
