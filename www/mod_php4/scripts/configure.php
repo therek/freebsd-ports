@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.184 2003/02/27 16:30:25 mbr Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.185 2003/03/06 15:01:15 demon Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -47,6 +47,7 @@ FTP		"File Transfer Protocol support" OFF \
 CURL		"CURL support" OFF \
 gettext		"gettext library support" OFF \
 iconv		"iconv support" OFF \
+recode		"recode support" OFF \
 pspell		"pspell support" OFF \
 mbregex		"multibyte regular expressions module" OFF \
 mbstring	"multibyte string module" OFF \
@@ -314,6 +315,10 @@ while [ "$1" ]; do
 				echo "CONFIGURE_ARGS+=--with-iconv=\${LOCALBASE}"
 				ICONV=1
 			fi
+			;;
+		\"recode\")
+			echo "LIB_DEPENDS+=	recode.3:\${PORTSDIR}/converters/recode"
+			echo "CONFIGURE_ARGS+=--with-recode=\${LOCALBASE}"
 			;;
 		\"pspell\")
 			echo "LIB_DEPENDS+=	aspell.15:\${PORTSDIR}/textproc/aspell"
