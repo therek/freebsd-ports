@@ -2,7 +2,7 @@
 # Date created:		18 Oct 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/tcs/Makefile,v 1.2 2000/04/08 23:24:37 mharo Exp $
+# $FreeBSD: ports/converters/tcs/Makefile,v 1.3 2001/02/14 05:42:09 lioux Exp $
 #
 
 PORTNAME=	tcs
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://plan9.bell-labs.com/plan9/unixsrc/ \
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.shar.Z
 
-MAINTAINER=	kuriyama@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}
