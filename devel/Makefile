@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.620 2001/08/17 08:16:47 wjv Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.621 2001/08/22 08:04:04 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -117,7 +117,6 @@
     SUBDIR += fastcrc
     SUBDIR += ffcall
     SUBDIR += fhist
-    SUBDIR += flawfinder
     SUBDIR += flick
     SUBDIR += flux
     SUBDIR += fnccheck
