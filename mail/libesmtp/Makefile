@@ -2,19 +2,29 @@
 # Date created:         Sun Feb 21 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.1 2001/03/07 10:52:02 roam Exp $
+# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.2 2001/06/12 19:24:49 tobez Exp $
 #
+# Modified for 0.8.3 on Fri July 13 2001
+# Whom:			jmcoopr@webmail.bmi.net
 
 PORTNAME=	libesmtp
-PORTVERSION=	0.5
+PORTVERSION=	0.8.3
 CATEGORIES=	mail
 MASTER_SITES=	http://www.stafford.uklinux.net/libesmtp/ \
+		http://www.theochem.kth.se/~pawsa/balsa/ \
 		http://www.tobez.org/download/port-mirrors/mail/libesmtp/
 
-MAINTAINER=	tobez@FreeBSD.org
+MAINTAINER=	jmcoopr@webmail.bmi.net
 
+USE_BZIP2=	yes
+USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+# the following is required for Balsa-1.17
+CONFIGURE_ARGS=	--enable-require-all-recipients
 
 post-install:
 .ifndef(NOPORTDOCS)
