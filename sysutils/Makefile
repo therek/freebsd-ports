@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.119 2000/06/22 10:33:46 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.120 2000/06/30 10:05:21 alex Exp $
 #
 
     SUBDIR += LPRng
@@ -114,5 +114,6 @@
     SUBDIR += xsysinfo
     SUBDIR += xsysstats
     SUBDIR += xwatch
+    SUBDIR += xwipower
 
 .include <bsd.port.subdir.mk>
