@@ -1,7 +1,4 @@
-@comment $FreeBSD$
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%%%DOCSDIR%%/xcolor.pdf
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
+@comment $FreeBSD: ports/print/latex-xcolor/pkg-plist,v 1.1 2004/01/24 09:53:00 krion Exp $
 %%CLASSDIR%%/xcolor.dtx
 %%CLASSDIR%%/xcolor.ins
 %%CLASSDIR%%/xcolor.sty
