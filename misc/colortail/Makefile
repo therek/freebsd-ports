@@ -2,7 +2,7 @@
 # Date created:                25 February 1999
 # Whom:                        Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/colortail/Makefile,v 1.9 2000/06/20 21:45:52 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	colortail
@@ -15,6 +15,10 @@ MAINTAINER=	bugg@bugg.strangled.net
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 GNU_CONFIGURE=	yes
+
+pre-patch:
+	@${PERL} -pi.orig -e "s@malloc.h@stdlib.h@g" \
+        ${WRKSRC}/CfgFileParser.cc
 
 post-install:
 	@ ${MKDIR} ${PREFIX}/share/colortail

@@ -5,7 +5,7 @@
 # Date created:         31 July 1995
 # Whom:                 faulkner@cactus.org
 #
-# $FreeBSD: ports/misc/astrolog/Makefile,v 1.21 2001/01/16 17:31:37 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	astrolog
@@ -28,6 +28,10 @@ EXTRACT_AFTER_ARGS=	# empty
 DIST_SUBDIR=	astrolog
 ALL_TARGET=	astrolog
 NO_WRKSUBDIR=	yes
+
+pre-patch:
+	@${PERL} -pi.orig -e "s@malloc.h@stdlib.h@g" \
+	${WRKSRC}/astrolog.h ${WRKSRC}/placalc.h
 
 do-install:
 	-@${MKDIR} ${PREFIX}/lib/astrolog
