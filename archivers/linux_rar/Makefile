@@ -1,10 +1,11 @@
 # New ports collection makefile for:    linux_rar
-# http://www.rarsoft.com/rar_archiver.htm
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.19 2001/03/15 21:16:18 sf Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.20 2001/03/16 22:18:43 sf Exp $
 #
+# Version 2.90 has been released but this port retains 2.80 becaust newer
+# version requires newer glibc and FreeBSD port does not have it for now.
 
 PORTNAME=	linux_rar
 PORTVERSION=	2.80
