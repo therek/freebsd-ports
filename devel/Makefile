@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.500 2001/04/09 11:54:49 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -367,10 +367,6 @@
     SUBDIR += py-htmlkit
     SUBDIR += py-kjbuckets
     SUBDIR += py-kqueue
-    SUBDIR += py-mxDateTime
-    SUBDIR += py-mxProxy
-    SUBDIR += py-mxStack
-    SUBDIR += py-mxTools
     SUBDIR += py-ncurses
     SUBDIR += qtarch
     SUBDIR += py-omniorb

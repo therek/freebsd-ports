@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.193 2001/04/07 06:24:38 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.194 2001/04/07 08:01:39 will Exp $
 #
 
     SUBDIR += agrep
@@ -130,7 +130,6 @@
     SUBDIR += py-csv
     SUBDIR += py-expat
     SUBDIR += py-martel
-    SUBDIR += py-mxTextTools
     SUBDIR += py-trex
     SUBDIR += py-xml
     SUBDIR += rand
