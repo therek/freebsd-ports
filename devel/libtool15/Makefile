@@ -2,12 +2,12 @@
 # Date created:		6 May 1998
 # Whom:			Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/devel/libtool/Makefile,v 1.14 2001/02/05 08:21:50 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libtool
 PORTVERSION=	1.3.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	libtool
