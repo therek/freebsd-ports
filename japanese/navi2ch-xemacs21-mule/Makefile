@@ -2,8 +2,10 @@
 # Date created:		13 May 2001
 # Whom:			FUJISHIMA Satsuki <sf@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/navi2ch-xemacs21-mule/Makefile,v 1.4 2001/06/02 22:03:10 sf Exp $
+# $FreeBSD$
 #
+
+PORTREVISION=	0
 
 MASTERDIR=	${.CURDIR}/../navi2ch-emacs20
 
