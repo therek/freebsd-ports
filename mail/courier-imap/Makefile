@@ -2,7 +2,7 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.3 2000/05/16 16:38:17 nectar Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.4 2000/06/21 13:36:10 nbm Exp $
 #
 
 PORTNAME=	courier-imap
@@ -29,4 +29,15 @@ MLINKS=		authlib.8 authpwd.8 \
 		makeuserdb.8 pw2userdb.8 \
 		makeuserdb.8 vchkpw2userdb.8
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+post-patch:
+	@perl -i -pe s'@^if test -w confmdtest1$$@if test -z 0@' \
+		${WRKSRC}/configure
+.if ${OSVERSION} >= 400016
+	@perl -i -pe 's@^#include\s*<netinet6/in6.h>$$@@' \
+		${WRKSRC}/rfc1035/configure \
+		${WRKSRC}/rfc1035/rfc1035.h.in
+.endif
+
+.include <bsd.port.post.mk>
