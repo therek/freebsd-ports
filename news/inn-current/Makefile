@@ -1,12 +1,12 @@
 # New ports collection makefile for:	inn
-# Version required:	2.2
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn/Makefile,v 1.37 1999/09/11 10:09:47 asami Exp $
+# $FreeBSD: ports/news/inn/Makefile,v 1.38 2000/01/28 21:04:32 torstenb Exp $
 #
 
-DISTNAME=	inn-2.2.2
+PORTNAME=	inn
+PORTVERSION=	2.2.2
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/
 

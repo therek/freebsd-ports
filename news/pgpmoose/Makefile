@@ -1,15 +1,16 @@
 # New ports collection makefile for:	pgpmoose
-# Version required:	1.19 in pmapp
 # Date created:		28 Nov 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.5 1999/08/30 14:31:50 peter Exp $
+#
 
-DISTNAME=	PGPMoose
-PKGNAME=	pgpmoose-1.19
+PORTNAME=	pgpmoose
+PORTVERSION=	1.19
 CATEGORIES=	news security
 MASTER_SITES=	http://people.qualcomm.com/ggr/ \
 		ftp://ftp.dinoex.sub.de/pub/approved/
+DISTNAME=	PGPMoose
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org

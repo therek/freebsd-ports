@@ -1,12 +1,12 @@
 # New ports collection makefile for:	knews
-# Version required:     0.9.8
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.25 1999/08/30 14:31:39 peter Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.26 1999/08/31 06:49:34 mharo Exp $
 #
 
-DISTNAME=	knews-1.0b.1
+PORTNAME=	knews
+PORTVERSION=	1.0.b1
 CATEGORIES=	news
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 

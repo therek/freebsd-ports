@@ -1,12 +1,12 @@
 # New ports collection makefile for:	leafnode+
-# Version required:	2.10
 # Date created:		19 November 1998
 # Whom:			Tom Hukins <tom@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode+/Makefile,v 1.13 2000/01/24 21:26:47 tom Exp $
+# $FreeBSD: ports/news/leafnode+/Makefile,v 1.14 2000/03/08 21:23:59 sada Exp $
 #
 
-DISTNAME=	leafnode+-2.10
+PORTNAME=	leafnode+
+PORTVERSION=	2.10
 CATEGORIES=	news
 MASTER_SITES=	ftp://hiroshima.isdn.uiuc.edu/leafnode+/
 

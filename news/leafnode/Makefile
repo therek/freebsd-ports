@@ -1,12 +1,12 @@
 # New ports collection makefile for:	leafnode
-# Version required:	1.9.7
 # Date created:		10 April 1996
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/news/leafnode/Makefile,v 1.11 2000/01/31 02:02:13 brian Exp $
+# $FreeBSD: ports/news/leafnode/Makefile,v 1.12 2000/02/27 15:45:57 brian Exp $
 #
 
-DISTNAME=	leafnode-1.9.11
+PORTNAME=	leafnode
+PORTVERSION=	1.9.11
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.Awfulhak.org/leafnode/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xvnews
-# Version required:	2.3.2
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/xvnews/Makefile,v 1.7 1999/08/30 14:32:03 peter Exp $
 #
 
-DISTNAME=	xvnews-2.3.2
+PORTNAME=	xvnews
+PORTVERSION=	2.3.2
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

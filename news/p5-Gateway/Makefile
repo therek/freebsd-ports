@@ -1,16 +1,16 @@
 # New ports collection makefile for: p5-Gateway
-# Version required: 0.42
 # Date created: January 2, 1998
 # Whom: Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/p5-Gateway/Makefile,v 1.4 1999/08/30 14:31:47 peter Exp $
 #
 
-DISTNAME=		Gateway-0.42
-PKGNAME=		p5-Gateway-0.42
+PORTNAME=		p5-Gateway
+PORTVERSION=		0.42	
 CATEGORIES=		news perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	News
+DISTNAME=		Gateway-0.42
 
 MAINTAINER=		croyle@gelemna.ft-wayne.in.us
 

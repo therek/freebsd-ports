@@ -1,12 +1,12 @@
 # New ports collection makefile for:	unpoost
-# Version required:	2.3.4
 # Date created:		14 october 1997
 # Whom:			volf@oasis.IAEhv.nl
 #
-# $FreeBSD: ports/news/unpost/Makefile,v 1.4 1999/08/30 14:32:02 peter Exp $
+# $FreeBSD: ports/news/unpost/Makefile,v 1.5 2000/02/08 09:28:19 peter Exp $
 #
 
-DISTNAME=	unpost-2.3.4
+PORTNAME=	unpost
+PORTVERSION=	2.3.4
 CATEGORIES=	news
 MASTER_SITES=	http://people.FreeBSD.org/~steve/distfiles/
 

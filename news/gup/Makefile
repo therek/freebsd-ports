@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gup
-# Version required:	0.4
 # Date created:		22 November 1998
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/gup/Makefile,v 1.3 1999/08/30 14:31:36 peter Exp $
 #
 
-DISTNAME=	gup-0.4
+PORTNAME=	gup
+PORTVERSION=	0.4
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/unoff-contrib/
 

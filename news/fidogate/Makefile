@@ -1,12 +1,12 @@
 # New ports collection makefile for:    fidogate
-# Version required:     fidogate-4.4.0
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.9 2000/02/20 15:58:49 taoka Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.10 2000/03/08 16:47:07 jedgar Exp $
 #
 
-DISTNAME=	fidogate-4.4.0
+PORTNAME=	fidogate
+PORTVERSION=	4.4.0
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.fido.de/pub/fidogate/ \

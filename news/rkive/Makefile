@@ -1,15 +1,15 @@
 # New ports collection makefile for:	rkive
-# Version required:	3.1
 # Date created:		03 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/news/rkive/Makefile,v 1.7 1999/08/31 06:49:37 mharo Exp $
+# $FreeBSD: ports/news/rkive/Makefile,v 1.8 2000/02/13 18:18:30 torstenb Exp $
 #
 
-DISTNAME=	rkive3.1
-PKGNAME=	rkive-3.1
+PORTNAME=	rkive
+PORTVERSION=	3.1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.vmunix.org/pub/misc/rkive/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	torstenb@FreeBSD.org

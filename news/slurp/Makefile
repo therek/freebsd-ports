@@ -1,12 +1,12 @@
 # New ports collection makefile for:	slurp
-# Version required:	1.10
 # Date created:		30 Jun 1996
 # Whom:			jraynard
 #
-# $FreeBSD: ports/news/slurp/Makefile,v 1.8 1999/12/22 17:31:01 fenner Exp $
+# $FreeBSD: ports/news/slurp/Makefile,v 1.9 2000/02/05 10:55:46 dirk Exp $
 #
 
-DISTNAME=	slurp-1.10
+PORTNAME=	slurp
+PORTVERSION=	1.10
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/news/slurp/
 EXTRACT_SUFX=	.tar.Z

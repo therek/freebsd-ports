@@ -1,12 +1,12 @@
 # New ports collection makefile for:	newsfetch
-# Version required:	1.21
 # Date created:		12 September 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/newsfetch/Makefile,v 1.6 1999/08/30 14:31:42 peter Exp $
 #
 
-DISTNAME=	newsfetch-1.21
+PORTNAME=	newsfetch
+PORTVERSION= 	1.21
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/news/readers

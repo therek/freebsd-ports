@@ -1,12 +1,12 @@
 # New ports collection makefile for:	trn
-# Version required:	3.6
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn/Makefile,v 1.15 1999/08/30 14:31:58 peter Exp $
+# $FreeBSD: ports/news/trn/Makefile,v 1.16 1999/08/31 06:49:40 mharo Exp $
 #
 
-DISTNAME=	trn-3.6
+PORTNAME=	trn
+PORTVERSION= 	3.6
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/readers/trn/
 
