@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.293 2001/04/01 03:38:37 nsayer Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.294 2001/04/06 11:21:46 knu Exp $
 #
 
     SUBDIR += 4va
@@ -111,6 +111,7 @@
     SUBDIR += libdjvu++
     SUBDIR += libflash
     SUBDIR += libfpx
+    SUBDIR += libgdgeda
     SUBDIR += libggi
     SUBDIR += libgrass5
     SUBDIR += libimg
