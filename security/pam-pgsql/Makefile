@@ -2,7 +2,7 @@
 # Date created:				Nov 16, 2000
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pam-pgsql/Makefile,v 1.1 2001/02/26 23:09:20 mi Exp $
 #
 
 PORTNAME=	pam-pgsql
@@ -26,15 +26,12 @@ MAKE_ARGS+=	-j 2
 post-install:
 	${CAT} ${PKGMESSAGE}
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${DOCDIR}
+	@${MKDIR} ${LOCALBASE}/${DOCDIR}
 	@${INSTALL_DATA} ${WRKSRC}/README ${WRKSRC}/debian/changelog \
-		${WRKSRC}/debian/copyright ${DOCDIR}
+		${WRKSRC}/debian/copyright ${LOCALBASE}/${DOCDIR}
 
-PLIST_SUB+=	DOC=''
-DOCDIR=	${LOCALBASE}/share/doc/pam-pgsql
-
-.else
-PLIST_SUB+=	DOC='@comment '
+DOCDIR=		share/doc/pam-pgsql
+PLIST_SUB+=	DOCDIR=${DOCDIR}
 .endif
 
 .include <bsd.port.mk>
