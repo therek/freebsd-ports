@@ -2,14 +2,15 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.6 2001/03/05 16:49:53 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.7 2001/03/08 11:12:09 des Exp $
 #
 
 PORTNAME=	linux-opera
-PORTVERSION=	5.0b6
+PORTVERSION=	5.0b7
 CATEGORIES=	www linux
 MASTER_SITES=	http://opera.online.no/linux/tgz/
-DISTNAME=	opera-5.0-b6-20010212.017-static.i386
+DISTNAME=	opera-5.0-b7-20010320.018-static.i386
+WRKSRC=		${WRKDIR}/${DISTNAME:S/018/020/}
 
 MAINTAINER=	des@FreeBSD.org
 
