@@ -2,13 +2,13 @@
 # Date created:		19 August 1998
 # Whom:			Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/binkd/Makefile,v 1.11 2000/04/30 19:29:19 steve Exp $
+# $FreeBSD: ports/net/binkd/Makefile,v 1.12 2000/08/01 23:57:30 jedgar Exp $
 #
 
 PORTNAME=	binkd
 PORTVERSION=	0.9.4
 CATEGORIES=	net
-MASTER_SITES=	ftp://happy.kiev.ua/pub/fidosoft/mailer/binkd/
+MASTER_SITES=	http://2f.ru/binkd/
 DISTNAME=	binkd094
 
 MAINTAINER=	dsh@vlink.ru
