@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.68 2002/02/10 18:12:38 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.69 2002/02/12 09:23:05 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -173,7 +173,7 @@ RUBY_RD_PORT?=		textproc/ruby-rdtool
 # Depends
 DEPEND_LIBRUBY?=	${RUBY_NAME}.${RUBY_SHLIBVER}:${PORTSDIR}/${RUBY_PORT}
 DEPEND_RUBY?=		${RUBY}:${PORTSDIR}/${RUBY_PORT}
-DEPEND_RUBY_AMSTD?=	${RUBY_SITELIBDIR}/amstd/info.rb:${PORTSDIR}/${RUBY_AMSTD_PORT}
+DEPEND_RUBY_AMSTD?=	${RUBY_SITELIBDIR}/amstd/version.rb:${PORTSDIR}/${RUBY_AMSTD_PORT}
 DEPEND_RUBY_RD2?=	${RUBY_RD}:${PORTSDIR}/${RUBY_RD_PORT}
 
 # Directories
