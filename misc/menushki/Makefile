@@ -2,7 +2,7 @@
 # Date created:				Fri Jul 13 22:59:59 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/misc/menushki/Makefile,v 1.4 2001/09/12 22:20:05 lioux Exp $
+# $FreeBSD: ports/misc/menushki/Makefile,v 1.5 2001/09/18 14:14:39 lioux Exp $
 #
 
 PORTNAME=	menushki
