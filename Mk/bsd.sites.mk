@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.193 2003/10/28 09:51:11 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.194 2003/10/28 10:06:21 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -406,6 +406,13 @@ MASTER_SITE_GNUPG+= 	\
 	ftp://sunsite.cnlab-switch.ch/mirror/gcrypt/%SUBDIR%/ \
 	ftp://ftp.iasi.roedu.net/pub/mirrors/ftp.gnupg.org/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/gnupg/&,}
+
+MASTER_SITE_GNU_ALPHA+=	\
+	ftp://alpha.gnu.org/pub/gnu/%SUBDIR%/ \
+	ftp://ftp.funet.fi/pub/mirrors/alpha.gnu.org/gnu/%SUBDIR%/ \
+	ftp://ftp.lublin.pl/mirror/alpha.gnu.org/gnu/%SUBDIR%/ \
+	ftp://ftp.ps.pl/mirrors/alpha.gnu.org/pub/gnu/%SUBDIR%/ \
+	http://public.planetmirror.com/pub/gnu-alpha/%SUBDIR%/
 
 MASTER_SITE_ISC+=	\
 	ftp://ftp.isc.org/isc/%SUBDIR%/ \
