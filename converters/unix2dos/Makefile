@@ -2,13 +2,14 @@
 # Date created:		1 February 1999
 # Whom:			obonilla@fisicc-ufm.edu
 #
-# $FreeBSD: ports/converters/unix2dos/Makefile,v 1.2 1999/08/25 05:16:31 obrien Exp $
+# $FreeBSD: ports/converters/unix2dos/Makefile,v 1.3 2000/04/08 23:24:39 mharo Exp $
 #
 
 PORTNAME=	unix2dos
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	converters
-MASTER_SITES=	http://www.fisicc-ufm.edu/~obonilla/files/
+MASTER_SITES=	http://www.fisicc-ufm.edu/~obonilla/files/ \
+		ftp://ftp.guug.org/pub/
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
@@ -17,7 +18,7 @@ NO_WRKSUBDIR=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/unix2dos ${PREFIX}/bin/unix2dos
-	${INSTALL_PROGRAM} ${WRKDIR}/dos2unix ${PREFIX}/bin/dos2unix
+	${LN} -f ${PREFIX}/bin/unix2dos ${PREFIX}/bin/dos2unix
 	${INSTALL_MAN} ${WRKDIR}/man1/unix2dos.1 ${MANPREFIX}/man/man1
 	${INSTALL_MAN} ${WRKDIR}/man1/dos2unix.1 ${MANPREFIX}/man/man1
 
