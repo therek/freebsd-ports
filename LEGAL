@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.191 2000/12/21 06:29:11 taoka Exp $
+# $FreeBSD: ports/LEGAL,v 1.192 2000/12/23 10:16:04 alex Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -137,6 +137,9 @@ molden			ports/biology/molden	free for academic,
 						non profit usage
 						do not re-distribute source and
 						 executable
+mmosaic			ports/www/mmosaic	Do not sell (per NCSA).  Do not
+						distribute binary (GPL/BSD
+						conflict).
 msql-*			ports/databases/msql	Not free for commercial org.
 mypaedia		ports/japanese/mypaedia-fpw The original dictionary is not free
 netscape-*-us-*		ports/www/netscape*	Crypto; export-controlled
