@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.86 2000/09/27 12:28:35 tg Exp $
+# $FreeBSD: ports/math/Makefile,v 1.87 2000/10/28 12:36:04 jeh Exp $
 #
 
     SUBDIR += PDL
@@ -56,6 +56,7 @@
     SUBDIR += pygist
     SUBDIR += rcalc
     SUBDIR += ruby-bigfloat
+    SUBDIR += ruby-bitvector
     SUBDIR += sc
     SUBDIR += scigraphica
     SUBDIR += siag
