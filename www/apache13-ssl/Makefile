@@ -5,7 +5,7 @@
 #			and apache-ssl port by Mark Murray <mark@grondar.za>.
 #			Oh, and with a little bit of help from Ben :)
 #
-# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.64 2000/04/10 00:04:25 cpiazza Exp $
+# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.65 2000/04/27 15:20:09 knu Exp $
 
 PORTNAME=	apache+ssl
 PORTVERSION=	${APACHE_VERSION}.${APACHE_SSL_VERSION}
