@@ -2,11 +2,11 @@
 # Date created:				19 June 2000
 # Whom:				Sergey Samoyloff <gonza@techline.ru>
 #
-# $FreeBSD: ports/mail/smapi/Makefile,v 1.2 2000/08/01 12:26:10 nbm Exp $
+# $FreeBSD: ports/mail/smapi/Makefile,v 1.3 2000/08/25 16:15:48 kevlo Exp $
 #
 
 PORTNAME=	smapi
-PORTVERSION=	000823
+PORTVERSION=	000919
 CATEGORIES=	mail
 MASTER_SITES=	http://cvs.physcip.uni-stuttgart.de/cvs2/
 
@@ -18,7 +18,7 @@ MAKEFILE=	makefile.bsd
 ALL_TARGET=	libsmapibsd.a
 
 FILES=		alc.h api_brow.h compiler.h ffind.h msgapi.h patmat.h prog.h  \
-		progprot.h stamp.h typedefs.h unused.h
+		progprot.h stamp.h typedefs.h unused.h semaphor.h
 
 do-install:
 	${MKDIR} ${PREFIX}/include/smapi

@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/smapi/pkg/PLIST,v 1.1 2000/07/03 07:47:39 sobomax Exp $
 include/smapi/alc.h
 include/smapi/api_brow.h
 include/smapi/compiler.h
@@ -8,6 +8,7 @@ include/smapi/patmat.h
 include/smapi/prog.h
 include/smapi/progprot.h
 include/smapi/stamp.h
+include/smapi/semaphor.h
 include/smapi/typedefs.h
 include/smapi/unused.h
 @dirrm include/smapi
