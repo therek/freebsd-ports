@@ -2,12 +2,12 @@
 # Date created:		12 October 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/misc/dejagnu/Makefile,v 1.15 2001/07/16 23:26:50 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dejagnu
-PORTVERSION=	1.4.1
-PORTREVISION=	1
+PORTVERSION=	1.4.2
+PORTREVISION=	0
 CATEGORIES=	misc tcl83 tk83
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	dejagnu
