@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.34 2000/07/22 08:42:17 alex Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.35 2000/09/25 12:21:39 asami Exp $
 #
 
 PORTNAME=	tcsh
@@ -18,7 +18,7 @@ Y2K=		ftp://ftp.astron.com/pub/tcsh/Y2K
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400021
 NO_BUILD=	yes
-PLIST=		${PKGDIR}/PLIST.nobuild
+PLIST=		${PKGDIR}/pkg-plist.nobuild
 DISTFILES=	# empty
 
 do-patch:
