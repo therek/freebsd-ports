@@ -2,7 +2,7 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.48 2000/08/03 09:26:04 asami Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.49 2000/08/04 12:41:49 dirk Exp $
 #
 
 PORTNAME=	lyx
@@ -27,6 +27,7 @@ RUN_DEPENDS+=	ispell:${PORTSDIR}/textproc/ispell
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 		intl.1:${PORTSDIR}/devel/gettext
 
+USE_GMAKE=	yes
 USE_XPM=	yes
 USE_NEWGCC=	yes
 USE_PERL5=	yes
