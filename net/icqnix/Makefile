@@ -2,13 +2,13 @@
 # Date created:		27 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/net/icqnix/Makefile,v 1.4 2000/04/29 20:58:43 kris Exp $
+# $FreeBSD: ports/net/icqnix/Makefile,v 1.5 2000/05/28 03:29:00 steve Exp $
 #
 
 PORTNAME=	icqnix
 PORTVERSION=	b1
 CATEGORIES=	net
-MASTER_SITES=	http://icqnix.linuxbox.com/
+MASTER_SITES=	http://www.csie.nctu.edu.tw/~yinjieh/
 DISTNAME=	icqnix-beta1
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
