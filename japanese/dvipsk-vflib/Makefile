@@ -2,7 +2,7 @@
 # Date created:         25 Aug 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/dvipsk-vflib/Makefile,v 1.10 2000/10/08 10:20:30 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvipsk
@@ -81,6 +81,8 @@ post-install:
 	    ${INSTALL_DATA} $$i ${TEXDIR}/latex209/dvips ; \
 	  done \
 	)
+# rebuild tex ls-R file
+	@mktexlsr
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/dvips
 	@for i in ${DOCS} ; do \
