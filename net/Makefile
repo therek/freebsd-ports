@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.555 2001/06/11 05:06:54 markp Exp $
+# $FreeBSD: ports/net/Makefile,v 1.556 2001/06/12 15:14:53 markp Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -335,6 +335,7 @@
     SUBDIR += sendip
     SUBDIR += sharity-light
     SUBDIR += sing
+    SUBDIR += sleuth
     SUBDIR += slirp
     SUBDIR += smbfs
     SUBDIR += smbtcpdump
