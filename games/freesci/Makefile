@@ -2,7 +2,7 @@
 # Date created:				17 December 2000
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/emulators/freesci/Makefile,v 1.4 2001/02/27 04:57:35 steve Exp $
+# $FreeBSD: ports/emulators/freesci/Makefile,v 1.5 2001/04/22 10:54:12 greid Exp $
 #
 
 PORTNAME=		freesci
@@ -15,7 +15,7 @@ MASTER_SITES=		ftp://ftp.task.gda.pl/pub/games/linuxgames/freesci/ \
 MAINTAINER=		greid@FreeBSD.org
 
 LIB_DEPENDS=		ggi.2:${PORTSDIR}/graphics/libggi \
-			png.4:${PORTSDIR}/graphics/png
+			png.5:${PORTSDIR}/graphics/png
 
 GNU_CONFIGURE=		yes
 

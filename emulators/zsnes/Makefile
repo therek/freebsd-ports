@@ -2,7 +2,7 @@
 # Date created:				Fri May  4 13:10:11 CEST 2001
 # Whom:					Stijn Hoop <stijn@win.tue.nl>
 #
-# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.5 2001/06/29 23:29:55 dwcjr Exp $
+# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.6 2001/07/07 04:10:52 dwcjr Exp $
 #
 
 PORTNAME=	zsnes
@@ -17,7 +17,7 @@ MAINTAINER=	stijn@win.tue.nl
 # This must be >= 0.98!
 BUILD_DEPENDS=	nasm-0.98:${PORTSDIR}/devel/nasm
 LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

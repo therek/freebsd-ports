@@ -2,7 +2,7 @@
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.41 2001/02/21 22:10:11 gj Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.42 2001/03/23 21:05:48 gj Exp $
 #
 
 PORTNAME=	xemacs
@@ -16,7 +16,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${MULEDISTFILE}
 MAINTAINER=	gj@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_XPM=	yes
 USE_GMAKE=	yes

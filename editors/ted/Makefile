@@ -2,7 +2,7 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ted/Makefile,v 1.1 2001/08/24 08:32:19 kris Exp $
+# $FreeBSD: ports/editors/ted/Makefile,v 1.2 2001/08/28 06:36:25 petef Exp $
 #
 
 PORTNAME=	ted
@@ -13,7 +13,7 @@ DISTNAME=	ted-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff
 

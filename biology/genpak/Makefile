@@ -3,7 +3,7 @@
 # Date created:			Feb 28, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/biology/genpak/Makefile,v 1.2 2001/03/05 07:39:05 ijliao Exp $
+# $FreeBSD: ports/biology/genpak/Makefile,v 1.3 2001/08/09 17:37:03 ijliao Exp $
 #
 
 PORTNAME=	genpak
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_GMAKE=	yes
 MAKE_ENV=	GMAKE="${GMAKE}" MANPREFIX="${MANPREFIX}"

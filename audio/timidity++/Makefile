@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++/Makefile,v 1.31 2001/03/12 17:59:53 sf Exp $
+# $FreeBSD: ports/audio/timidity++/Makefile,v 1.32 2001/03/20 13:05:31 knu Exp $
 #
 
 PORTNAME=	timidity++
@@ -27,7 +27,7 @@ WANT_ESOUND=	yes
 GNU_CONFIGURE=	yes
 .if !defined(WITHOUT_X11)
 USE_XLIB=	yes
-LIB_DEPENDS+=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS+=	png.5:${PORTSDIR}/graphics/png
 .endif
 
 DIST_SUBDIR=	timidity

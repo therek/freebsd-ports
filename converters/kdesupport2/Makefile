@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.51 2001/08/25 02:17:56 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
 MAINTAINER=	kde@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_QT_VER=	2

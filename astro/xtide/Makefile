@@ -2,7 +2,7 @@
 # Date created:        30 August 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/astro/xtide/Makefile,v 1.18 2000/08/29 15:50:03 kevlo Exp $
+# $FreeBSD: ports/astro/xtide/Makefile,v 1.19 2001/09/01 17:55:08 dwcjr Exp $
 #
 
 PORTNAME=	xtide
@@ -14,7 +14,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	patseal@hyperhost.net
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 IGNOREFILES=	harmonics.txt.gz
 

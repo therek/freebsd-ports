@@ -2,7 +2,7 @@
 # Date created:		15 January 2000
 # Whom:			reg
 #
-# $FreeBSD: ports/databases/grass/Makefile,v 1.5 2000/09/07 15:58:25 reg Exp $
+# $FreeBSD: ports/databases/grass/Makefile,v 1.6 2000/09/28 07:01:53 reg Exp $
 #
 
 PORTNAME=	grass
@@ -15,7 +15,7 @@ DISTNAME=	grass5.0beta8_src
 MAINTAINER=	reg@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 BUILD_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
 RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
