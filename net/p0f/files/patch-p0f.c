@@ -1,6 +1,6 @@
-$FreeBSD$
+$FreeBSD: ports/net/p0f/files/patch-p0f.c,v 1.3 2004/02/17 21:03:11 trevor Exp $
 On FreeBSD, the loopback interface is normally called lo0.
-author:  Sanatana Dharma
+author:  Radim Kolar
 
 --- p0f.c.orig	Mon Oct 13 18:57:21 2003
 +++ p0f.c	Tue Feb 17 20:56:15 2004
