@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.314 2000/12/31 05:48:35 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.315 2001/01/04 10:58:56 nbm Exp $
 #
 
     SUBDIR += 221upgrade
@@ -137,6 +137,7 @@
     SUBDIR += sh-utils
     SUBDIR += sls
     SUBDIR += sma
+    SUBDIR += smssend
     SUBDIR += snowflake
     SUBDIR += splitvt
     SUBDIR += sshbuddy
