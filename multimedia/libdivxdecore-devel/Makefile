@@ -2,11 +2,12 @@
 # Date created:		03 Feb 20001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libdivxdecore-devel/Makefile,v 1.1 2001/02/12 21:16:50 lioux Exp $
+# $FreeBSD: ports/graphics/libdivxdecore-devel/Makefile,v 1.2 2001/03/13 21:40:37 lioux Exp $
 #
 
 PORTNAME=	libdivxdecore
 PORTVERSION=	0.4.0.48
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.projectmayo.com/dnload/divxcore/
 PKGNAMESUFFIX=	-devel
