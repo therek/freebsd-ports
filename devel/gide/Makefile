@@ -1,13 +1,13 @@
 # New ports collection makefile for:	gIDE
-# Version required:			0.1.2
+# Version required:			0.1.5
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.27 1999/08/25 05:48:03 obrien Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.28 1999/10/17 13:44:59 asami Exp $
 #
 
-DISTNAME= 	gIDE-0.1.2
-PKGNAME= 	gide-0.1.2
+DISTNAME= 	gIDE-0.1.5
+PKGNAME= 	gide-0.1.5
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://gide.gdev.net/ \
 		http://gide.pn.org/
@@ -22,18 +22,22 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 FETCH_BEFORE_ARGS=	-b
 
 USE_X_PREFIX=	yes
-USE_GMAKE= 	yes
-GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+USE_GMAKE=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
+		--datadir=${PREFIX}/share/gnome \
+		--with-gnome=${PREFIX}
 
 MAN1=		gide.1 gdbio.1
 
-pre-install:
-	@${MKDIR} ${PREFIX}/share/gnome/gIDE/extra
+post-patch:
+	@${PERL} -pi -e 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/src/*.c
+	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/src/*.c
+
+post-install:
+	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
