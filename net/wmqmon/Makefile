@@ -2,12 +2,12 @@
 # Date created:				Mon May 28 13:59:51 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/net/wmqmon/Makefile,v 1.2 2001/06/02 02:38:19 lioux Exp $
+# $FreeBSD: ports/net/wmqmon/Makefile,v 1.3 2001/06/02 22:46:54 lioux Exp $
 #
 
 PORTNAME=	wmqmon
 PORTVERSION=	0.7
-CATEGORIES=	net windowmaker
+CATEGORIES=	net windowmaker games
 MASTER_SITES=	http://www.gibfest.org/~w1nter/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
