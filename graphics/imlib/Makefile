@@ -2,7 +2,7 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.76 2001/08/03 07:23:58 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imlib
@@ -22,7 +22,9 @@ USE_X_PREFIX=	yes
 USE_GTK=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/imlib --disable-modules
+CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/imlib --disable-modules \
+		--x-includes=${X11BASE}/include \
+		--x-libraries=${X11BASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
