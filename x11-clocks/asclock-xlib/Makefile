@@ -2,7 +2,7 @@
 # Date created:		24 April 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.7 2000/08/03 09:26:49 asami Exp $
+# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.8 2000/08/08 08:14:16 kuriyama Exp $
 #
 
 PORTNAME=	asclock-xlib
@@ -27,7 +27,7 @@ HAS_CONFIGURE=	YES
 post-patch:
 	@(cd ${WRKSRC}; \
 	  ${MV} config.c config.c.tmp; \
-	  ${SED} -e s@/usr/local/@${X11BASE}/@ -e s@/usr/share/asclock@${LOCALBASE}/share/asclock@ < config.c.tmp > config.c )
+	  ${SED} -e s@/usr/local/@${PREFIX}/@ -e s@/usr/share/asclock@${PREFIX}/share/asclock@ < config.c.tmp > config.c )
 
 .if defined(BATCH)
 pre-configure:
