@@ -2,7 +2,7 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.6 2000/04/14 16:12:11 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.7 2000/04/17 00:18:44 reg Exp $
 #
 
 PORTNAME=	gkrellm
@@ -46,7 +46,9 @@ BINMODE=	2111
 
 post-patch:
 	@${MV} ${WRKSRC}/gkrellm.h ${WRKSRC}/gkrellm.h.orig
-	@${SED} -e "s^/usr/share/^${PREFIX}/share/^" \
+	@${SED} \
+	-e "s^/usr/share/gkrellm/themes^${PREFIX}/share/gkrellm/themes^" \
+	-e "s^/usr/share/gkrellm/plugins^${PREFIX}/libexec/gkrellm/plugins^" \
 		${WRKSRC}/gkrellm.h.orig > ${WRKSRC}/gkrellm.h
 
 do-install:
