@@ -2,7 +2,7 @@
 # Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkextra--/Makefile,v 1.4 2000/11/22 11:56:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkextramm
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtkextra.12:${PORTSDIR}/x11-toolkits/gtkextra \
+LIB_DEPENDS=	gtkextra.13:${PORTSDIR}/x11-toolkits/gtkextra \
 		gtkmm.1:${PORTSDIR}/x11-toolkits/gtk--
 
 USE_X_PREFIX=	yes
