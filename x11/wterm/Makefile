@@ -2,7 +2,7 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.13 2000/08/28 21:39:17 cpiazza Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.14 2001/01/09 16:06:55 sobomax Exp $
 #
 
 PORTNAME=	wterm
@@ -25,7 +25,7 @@ CONFIGURE_ARGS= --enable-transparency --enable-xpm-background \
 		--disable-delete-key --disable-backspace-key \
 		--enable-next-scrollbar --enable-utmp --enable-wtmp \
 		--enable-menubar --enable-graphics
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include/WINGs"
 
 MAN1=		wterm.1
 
