@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.61 2000/07/11 19:03:58 andreas Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.62 2000/08/31 13:36:32 andreas Exp $
 #
 
 PORTNAME=	postgresql
@@ -193,6 +193,7 @@ post-install:
 			>> ${PREFIX}/pgsql/.profile; \
 	fi
 	@ ${CHOWN} -R pgsql:pgsql ${PREFIX}/pgsql
+	@ ${CHOWN} root:pgsql ${PREFIX}/pgsql/lib
 	@ ${ECHO} 'Initializing PostgreSQL Databases - this may take a few minutes...'
 	@ ${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/pgsql/lib
 	@ su -l pgsql -c 'PATH=${PREFIX}/pgsql/bin:${PATH} LD_LIBRARY_PATH=${PREFIX}/pgsql/lib ${PREFIX}/pgsql/bin/initdb --pglib=${PREFIX}/pgsql/lib --pgdata=${PREFIX}/pgsql/data'
