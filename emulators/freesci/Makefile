@@ -2,12 +2,11 @@
 # Date created:				17 December 2000
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/emulators/freesci/Makefile,v 1.2 2000/12/31 14:57:08 sf Exp $
+# $FreeBSD: ports/emulators/freesci/Makefile,v 1.3 2000/12/31 15:41:23 sf Exp $
 #
 
 PORTNAME=		freesci
-PORTVERSION=		0.3.0
-PORTREVISION=		1
+PORTVERSION=		0.3.1
 CATEGORIES=		emulators
 MASTER_SITES=		ftp://ftp.linuxgames.com/freesci/
 
@@ -21,10 +20,12 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
-USE_GLIB=		yes
+MAN6=			freesci-tools.6 sciv.6
 
 post-install:
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/freesci
 	@${INSTALL_DATA} ${WRKSRC}/doc/sci.sgml ${PREFIX}/share/freesci
+.endif
 
 .include <bsd.port.mk>
