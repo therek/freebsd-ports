@@ -2,11 +2,11 @@
 # Date created:        28 November 1999
 # Whom:                Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.4 2000/10/10 05:07:17 kevlo Exp $
+# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.5 2000/10/22 23:12:01 jeh Exp $
 #
 
 PORTNAME=	xsidplay
-PORTVERSION=	1.5.2
+PORTVERSION=	1.5.4
 CATEGORIES=	audio emulators
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/ \
 		http://www.freenix.no/~anders/
