@@ -2,10 +2,10 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/net-snmp/Makefile,v 1.51 2001/01/17 23:48:44 billf Exp $
+# $FreeBSD: ports/net/net-snmp/Makefile,v 1.52 2001/01/18 09:58:30 billf Exp $
 #
 
-PORTNAME=	ucd-snmp
+PORTNAME=	net-snmp
 PORTVERSION=	4.2
 CATEGORIES=	net ipv6
 MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE} \
