@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.1 2000/06/07 16:52:00 will Exp $
 #
 
 PORTNAME=	JX
@@ -29,9 +29,7 @@ MAKE_ENV+=	JX_INSTALL_ROOT="${PREFIX}/bin" \
 		X11PREFIX="${X11PREFIX}" \
 		PATH="${WRKSRC}/programs/makemake:${PATH}" \
 		PORTCFLAGS="${CFLAGS}" \
-		PORTCXXFLAGS="${CXXFLAGS}" \
-		CC="${CC}" CXX="${CXX}"
-MAKE_ARGS+=	-e
+		PORTCXXFLAGS="${CXXFLAGS}"
 PLIST_SUB=	LIBACE="${LIBACE}" \
 		LIBJTOOL="${LIBJTOOL}" \
 		LIBJX="${LIBJX}" \
