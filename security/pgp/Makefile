@@ -2,7 +2,7 @@
 # Date created:         8 Jul 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/security/pgp/Makefile,v 1.36 2000/04/23 05:42:03 ache Exp $
+# $FreeBSD: ports/security/pgp/Makefile,v 1.37 2000/09/22 01:59:00 kris Exp $
 #
 
 PORTNAME=	pgp
@@ -15,8 +15,6 @@ DISTNAME=	pgp263is
 MAINTAINER=	ache@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/src
-FILESDIR=	${.CURDIR}/files.non_usa
-PATCHDIR=	${.CURDIR}/patches.non_usa
 
 MAKEFILE=	makefile
 ALL_TARGET=	freebsd-${MACHINE_ARCH} OS_CFLAGS="${CFLAGS}"
@@ -32,8 +30,10 @@ do-install:
 	cd ${WRKSRC}/..; \
 	    ${INSTALL_DATA} -c -o bin -g bin -m 444 pgp.hlp \
 			      doc/pgpdoc1.txt doc/pgpdoc2.txt ${PGPLIB}; \
+	    ${INSTALL_DATA} -c -o bin -g bin -m 444 language.txt ${PGPLIB}/language.txt-dist; \
 	    [ -f ${PGPLIB}/language.txt ] || \
 		      ${INSTALL_DATA} -c -o bin -g bin -m 444 language.txt ${PGPLIB}; \
+	    ${INSTALL_DATA} -c -o bin -g bin -m 444 config.txt ${PGPLIB}/config.txt-dist; \
 	    [ -f ${PGPLIB}/config.txt ] || \
 		      ${INSTALL_DATA} -c -o bin -g bin -m 444 config.txt ${PGPLIB}
 	-${PREFIX}/bin/pgp > /dev/null  2>&1  # update .idx file
