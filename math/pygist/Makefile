@@ -2,7 +2,7 @@
 # Date created:		30 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/pygist/Makefile,v 1.14 2000/04/20 20:46:19 mharo Exp $
+# $FreeBSD: ports/math/pygist/Makefile,v 1.15 2000/05/04 09:33:08 tg Exp $
 #
 
 PORTNAME=	gist
@@ -18,10 +18,10 @@ MAINTAINER=	tg@FreeBSD.org
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${LOCALBASE}/lib/yorick/1.4/lib/libgist.a:${PORTSDIR}/lang/yorick \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
-		${RNGDIR}/Ranf.py:${PORTSDIR}/math/rng
+		${RNGDIR}/RNG.so:${PORTSDIR}/math/numpy
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
-		${RNGDIR}/Ranf.py:${PORTSDIR}/math/rng
+		${RNGDIR}/RNG.so:${PORTSDIR}/math/numpy
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Graphics
 CONFIGURE_ENV=	PREFIX=${PREFIX}
@@ -33,6 +33,13 @@ GISTDIR=	${PYTHONSCRIPTDIR}/site-packages/PyGist
 NUMPYDIR=	${PYTHONSCRIPTDIR}/site-packages/Numeric
 RNGDIR=		${PYTHONSCRIPTDIR}/site-packages/RNG
 EXAMPLEDIR=	${PREFIX}/share/examples/PyGist
+
+post-patch:
+.for file in Gist3D/Demo/demo5.py Gist3D/Demo/gistmeshtest.py \
+		Narcisse/Demo/meshtest.py OOG/Demo/eztest.py \
+		OOG/Demo/surftest3d.py OOG/Demo/surftest4d.py
+	${PERL} -pi -e 's/from Ranf import/from RNG import/' ${WRKSRC}/${file}
+.endfor
 
 do-configure:
 	@(cd ${WRKSRC} && ${CONFIGURE_ENV} python makethis.py)
