@@ -2,7 +2,7 @@
 # Date created:		4 January 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/graphics/xfig/Makefile,v 1.39 2000/12/07 08:14:58 roam Exp $
+# $FreeBSD: ports/graphics/xfig/Makefile,v 1.40 2001/06/17 18:22:46 steve Exp $
 #
 
 PORTNAME=	xfig
@@ -31,13 +31,13 @@ INSTALL_TARGET=	install install.all
 .endif
 
 pre-fetch:
-.if !defined(NO_GSBIT)
+.if !defined(WITHOUT_GHOSTSCRIPT)
 	@${ECHO_MSG} "To build this port without Ghostscript support,"
 	@${ECHO_MSG} "define \"NO_GSBIT\"."
 .endif
 
 post-patch:
-.if defined(NO_GSBIT)
+.if defined(WITHOUT_GHOSTSCRIPT)
 	@${PERL} -pi -e 's|-DGSBIT ||g' ${WRKSRC}/Imakefile
 .endif
 
