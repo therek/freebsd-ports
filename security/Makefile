@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.124 2000/09/04 22:06:24 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.125 2000/09/05 17:36:39 nsayer Exp $
 #
 
     SUBDIR += aafid2
@@ -44,7 +44,6 @@
     SUBDIR += libmcrypt
     SUBDIR += libmcrypt-nm
     SUBDIR += libparanoia
-    SUBDIR += librsaintl
     SUBDIR += logcheck
     SUBDIR += lsh
     SUBDIR += lxnb
