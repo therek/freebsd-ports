@@ -2,22 +2,22 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD: ports/devel/mingw-bin-msvcrt/Makefile,v 1.1 2000/06/26 19:19:06 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bin-msvcrt
-PORTVERSION=	1.0
+PORTVERSION=	1.2
 PORTEPOCH=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	mingw
 PKGNAMEPREFIX= 	mingw-
+DISTFILES=	mingw-runtime-${PORTVERSION}${EXTRACT_SUFX} \
+		w32api-${PORTVERSION}${EXTRACT_SUFX}
 DIST_SUBDIR=	mingw
 
 MAINTAINER=	doc@hisio.safenet.pl
 
-DISTFILES = mingw-runtime-1.0-20010604${EXTRACT_SUFX} \
-		w32api-1.0-20010606${EXTRACT_SUFX}
 
 NO_MTREE=	yes
 NO_WRKSUBDIR=	yes
