@@ -2,7 +2,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.56 2000/05/25 21:31:53 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.57 2000/06/29 07:02:42 obrien Exp $
 #
 
 PORTNAME=	apsfilter
@@ -24,6 +24,7 @@ RUN_DEPENDS+=	bunzip2:${PORTSDIR}/archivers/bzip2
 RUN_DEPENDS+=	a2ps:${PORTSDIR}/print/a2ps-letter
 RUN_DEPENDS+=	psnup:${PORTSDIR}/print/psutils-letter
 RUN_DEPENDS+=	smbclient:${PORTSDIR}/net/samba
+RUN_DEPENDS+=	pap:${PORTSDIR}/net/netatalk
 .endif
 
 USE_BZIP2=	yes
