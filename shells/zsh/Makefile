@@ -2,11 +2,11 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.44 2000/05/19 19:03:06 will Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.45 2000/06/15 10:24:55 sobomax Exp $
 #
 
 PORTNAME=	zsh
-PORTVERSION=	3.0.7
+PORTVERSION=	3.0.8
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.sterling.com/zsh/ \
@@ -31,7 +31,6 @@ CONFIGURE_ENV+=	"LDFLAGS=-static"
 
 post-build:
 # Fix ".so" macro problem by using "soelim" command.
-	@echo HERE!!!
 	@(cd ${WRKSRC} ; \
 		${LN} -sf ./Doc man1 ; \
 		if [ ! -f ./man1/zshall.1.source ]; then \
