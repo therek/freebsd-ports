@@ -2,11 +2,12 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.5 2000/11/25 16:57:29 lioux Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.6 2000/12/11 14:55:48 lioux Exp $
 #
 
 PORTNAME=	qmail
 PORTVERSION= 	${QMAIL_VERSION}.${LDAP_PATCH_DATE}
+PORTREVISION=	1
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-ldap
 
@@ -17,7 +18,8 @@ MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS+=	ldap.1:${PORTSDIR}/net/openldap
 
-NO_PACKAGE=	Unsure of djb\'s packaging license
+NO_PACKAGE=	djb\'s packaging license does not allow non-standard\
+		qmail distributions
 
 .if !defined(PRE_MK_INCLUDED)
 .include <bsd.port.pre.mk>
@@ -42,6 +44,10 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-automaildirmake
 .if defined(WITH_AUTOHOMEDIRMAKE)
 EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-autohomedirmake
 .endif # WITH_AUTOHOMEDIRMAKE
+#
+.if defined(WITH_LDAP_DEBUG)
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-debug
+.endif # WITH_LDAP_DEBUG
 
 # Local overrides
 MASTERDIR=	${PORTSDIR}/mail/qmail

@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.188 2000/12/09 20:12:44 keith Exp $
+# $FreeBSD: ports/LEGAL,v 1.189 2000/12/19 10:23:06 will Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -149,6 +149,8 @@ pklin*			ports/archivers/pkzip	Shareware
 platon-*		ports/biology/platon	US$ 5000 for commercial users,
 						(free for academic)
 prodosemu.*		ports/emulators/prodosemu	Restrictive copyright on the ROM image
+qmail-*			ports/mail/qmail-*	Restricted binary distribution
+						of modified versions
 qvplay-*		ports/graphics/qvplay	No redistribution due to
 						beta status
 quake106.zip		ports/games/quakeserver	Shareware
