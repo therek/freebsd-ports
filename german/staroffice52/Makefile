@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice52/Makefile,v 1.15 2000/10/08 10:20:19 asami Exp $
+# $FreeBSD: ports/german/staroffice52/Makefile,v 1.16 2000/10/14 20:15:17 obrien Exp $
 #
 
 PORTNAME=	staroffice
@@ -110,7 +110,7 @@ do-install:
 		${ECHO} Bitte schicken Sie ein Mail mit dem Fehlerbeschrieb an mb@imp.ch. Danke ; \
 		${ECHO} ; \
 		${FALSE} ; \
-	endif
+	fi
 .endif
 
 post-install:
