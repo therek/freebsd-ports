@@ -2,7 +2,7 @@
 # Date created:        05 June 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/spager/Makefile,v 1.6 2001/04/01 11:49:22 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spager
@@ -15,7 +15,8 @@ MAINTAINER=	nakai@FreeBSD.org
 RUN_DEPENDS=	sawfish:${PORTSDIR}/x11-wm/sawfish
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 ALL_TARGET=	spager
 
