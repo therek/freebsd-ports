@@ -2,7 +2,7 @@
 # Date created:		13 Feb 1999
 # Whom:			Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/telnet/Makefile,v 1.4 2000/08/05 16:41:57 kevlo Exp $
+# $FreeBSD: ports/chinese/telnet/Makefile,v 1.5 2000/10/03 14:31:22 kevlo Exp $
 #
 
 PORTNAME=	telnet
@@ -11,7 +11,7 @@ CATEGORIES=	chinese
 MASTER_SITES=	# none
 DISTFILES=	# none
 
-MAINTAINER=	leeym@caece.net
+MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
 SRCDIR=		/usr/src/usr.bin/telnet
 
