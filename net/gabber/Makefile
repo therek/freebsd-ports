@@ -2,7 +2,7 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/net/gabber/Makefile,v 1.9 2001/01/30 14:06:44 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gabber
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	erich@tacni.net
 
-LIB_DEPENDS=	gtkmm.1:${PORTSDIR}/x11-toolkits/gtk-- \
+LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk-- \
 		gnomemm.3:${PORTSDIR}/x11-toolkits/gnome-- \
 		sigc.1:${PORTSDIR}/devel/libsigc++ \
 		gal.4:${PORTSDIR}/x11-toolkits/gal \

@@ -2,7 +2,7 @@
 # Date created:			23 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/news/PicMonger/Makefile,v 1.3 2000/09/11 14:29:53 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	PicMonger
@@ -12,7 +12,7 @@ MASTER_SITES=	http://download.sourceforge.net/PicMonger/
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
-LIB_DEPENDS=	gtkmm.1:${PORTSDIR}/x11-toolkits/gtk--
+LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk--
 RUN_DEPENDS=	mpack:${PORTSDIR}/converters/mpack
 
 USE_X_PREFIX=	yes

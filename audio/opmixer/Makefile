@@ -2,7 +2,7 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/opmixer/Makefile,v 1.5 2001/01/11 18:10:49 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	opmixer
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	optronic
 
 MAINTAINER=	trevor@FreeBSD.org
 
-LIB_DEPENDS=	gtkmm.1:${PORTSDIR}/x11-toolkits/gtk-- \
+LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk-- \
 		intl.1:${PORTSDIR}/devel/gettext
 
 DOCDIR=		share/doc/${PORTNAME}

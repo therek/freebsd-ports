@@ -2,7 +2,7 @@
 # Date created:				7th October 2000
 # Whom:			Shinya FUJIE <fujie@tk.elec.waseda.ac.jp>
 #
-# $FreeBSD: ports/devel/glade--/Makefile,v 1.3 2001/01/16 17:30:18 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glademm
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/5./5_/}
 MAINTAINER=	fujie@tk.elec.waseda.ac.jp
 
 RUN_DEPENDS=	glade:${PORTSDIR}/devel/glade
-LIB_DEPENDS=	gtkmm.1:${PORTSDIR}/x11-toolkits/gtk--
+LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk--
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
