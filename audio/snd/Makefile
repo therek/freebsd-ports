@@ -2,7 +2,7 @@
 # Date created:				2000-10-05
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/snd/Makefile,v 1.8 2001/07/27 12:52:28 sobomax Exp $
 #
 
 PORTNAME=		snd
@@ -48,7 +48,9 @@ CONFIGURE_ARGS+=	--with-gtk-extra
 CONFIGURE_ARGS+=	--without-gui
 .endif
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+		LDFLAGS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}" \
+		CFLAGS="${CFLAGS} ${PTHREAD_CFLAGS}"
+
 GNU_CONFIGURE=	yes
 MAKEFILE=	makefile
 PLIST=		${WRKDIR}/pkg-plist
