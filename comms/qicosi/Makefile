@@ -2,11 +2,11 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.4 2000/11/02 13:45:05 jedgar Exp $
+# $FreeBSD: ports/comms/qico/Makefile,v 1.5 2000/11/04 14:14:43 kevlo Exp $
 #
 
 PORTNAME=	qico
-PORTVERSION=	0.48.2
+PORTVERSION=	0.48.3
 CATEGORIES=	comms
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/0.48/
 
