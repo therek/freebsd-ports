@@ -2,7 +2,7 @@
 # Date created:				September 10 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.2 2000/10/24 17:09:00 jeh Exp $
+# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.3 2000/10/24 18:52:01 jeh Exp $
 #
 
 PORTNAME=	apache-contrib
@@ -49,5 +49,6 @@ AP_LIBEXEC?=    ${PREFIX}/libexec/apache
 .endif
 
 ALL_TARGET=	APXS=${APXS} all
+INSTALL_TARGET=	APXS=${APXS} install
 
 .include <bsd.port.mk>
