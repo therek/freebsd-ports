@@ -2,7 +2,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.50 2000/06/30 08:12:39 knu Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.51 2000/09/06 15:07:31 knu Exp $
 #
 
 PORTNAME=	zsh
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		${MASTER_SITE_LOCAL} \
 		ftp://ftp.zsh.org/%SUBDIR%/ \
 		ftp://ftp.sterling.com/%SUBDIR%/ \
-		ftp://ftp.rge.com/pub/%SUBDIR%/ \
+		ftp://ftp.rge.com/pub/shells/%SUBDIR%/ \
 		ftp://ftp.fu-berlin.de/pub/unix/shells/%SUBDIR%/ \
 		ftp://ftp.ips.oz.au/pub/packages/%SUBDIR%/ \
 		ftp://ftp.uit.no/pub/unix/shells/%SUBDIR%/
