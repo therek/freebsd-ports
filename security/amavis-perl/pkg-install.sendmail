@@ -1,6 +1,6 @@
 #!/usr/bin/perl
 # Roman Shterenzon <roman@xpert.com> 27/12/2000 
-# $FreeBSD: ports/security/amavis-perl/pkg-install,v 1.1 2001/01/07 07:38:32 will Exp $
+# $FreeBSD: ports/security/amavis-perl/pkg-install,v 1.2 2001/05/31 12:08:54 olgeni Exp $
 
 use strict;
 
@@ -83,12 +83,6 @@ if ( ! -d "/var/spool/mqamavis" ) {
 }
 my $gid=getgrnam('daemon');
 chown 0, $gid, "/var/spool/mqamavis";
-
-print "===> Creating /var/spool/quarantine directory\n";
-if ( ! -d "/var/spool/quarantine" ) {
-  mkdir "/var/spool/quarantine",0755 || die "Can't create /var/spool/quarantine\n";
-}
-chown 0, $gid, "/var/spool/quarantine";
 
 die "There's already a $cf.pre-amavis, is amavis already installed?\n"
   if -f "$cf.pre-amavis";

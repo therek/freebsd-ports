@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/security/amavis-perl/pkg-deinstall,v 1.1 2001/01/07 07:38:32 will Exp $
 
 prefix=/usr/local
 PATH="/bin:/usr/bin"
