@@ -3,10 +3,10 @@
 # Date created:         Sep 10 1999
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/qdecoder/Makefile,v 1.1 2000/01/29 22:38:41 steve Exp $
 #
 
-DISTNAME=	qDecoder-5.0.7
+DISTNAME=	qDecoder-5.0.8
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hongik.com/pub/qDecoder/
 EXTRACT_SUFX=	.tar.Z
