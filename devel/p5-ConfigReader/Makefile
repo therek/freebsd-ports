@@ -2,11 +2,12 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-ConfigReader/Makefile,v 1.10 2000/04/11 21:29:21 mharo Exp $
+# $FreeBSD: ports/devel/p5-ConfigReader/Makefile,v 1.11 2000/10/23 21:02:44 will Exp $
 #
 
 PORTNAME=	ConfigReader
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	ConfigReader
@@ -19,10 +20,10 @@ USE_PERL5=	YES
 NO_BUILD=	YES
 
 do-install:
-		@ ${MKDIR} ${PREFIX}/lib/perl5/site_perl/ConfigReader/
-		@ ${INSTALL_DATA} ${WRKSRC}/DirectiveStyle.pm ${PREFIX}/lib/perl5/site_perl/ConfigReader/
-		@ ${INSTALL_DATA} ${WRKSRC}/Spec.pm ${PREFIX}/lib/perl5/site_perl/ConfigReader/
-		@ ${INSTALL_DATA} ${WRKSRC}/Values.pm ${PREFIX}/lib/perl5/site_perl/ConfigReader/
-		@ ${INSTALL_DATA} ${WRKSRC}/ConfigReader.pod ${PREFIX}/lib/perl5/site_perl/
+		@ ${MKDIR} ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/
+		@ ${INSTALL_DATA} ${WRKSRC}/DirectiveStyle.pm ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/
+		@ ${INSTALL_DATA} ${WRKSRC}/Spec.pm ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/
+		@ ${INSTALL_DATA} ${WRKSRC}/Values.pm ${PREFIX}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/
+		@ ${INSTALL_DATA} ${WRKSRC}/ConfigReader.pod ${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 
 .include <bsd.port.mk>
