@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.106 2000/02/27 19:50:27 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.107 2000/02/27 20:53:31 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -40,6 +40,10 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.blatzheim.com/pub/mod_ssl/ \
 		ftp://ftp.fu-berlin.de/unix/security/mod_ssl/
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
+
+PATCH_SITES=	http://people.FreeBSD.org/~dirk/ports/distfiles/ \
+		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles
+PATCHFILES=	php_exec.c.diff
 
 MAINTAINER=	dirk@FreeBSD.org
 
