@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.276 2003/03/28 10:47:46 netchild Exp $
+# $FreeBSD: ports/LEGAL,v 1.277 2003/04/04 04:49:37 lioux Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -216,6 +216,7 @@ qtools-*		ports/mail/qtools	Possibly restricted binary
 qvplay-*		ports/graphics/qvplay	No redistribution due to
 						beta status
 quake106.zip		ports/games/quakeserver	Shareware
+radiator		ports/net/radiator	Commercial software
 radius*			ports/net/radius	Binary redistribution only,
 						no fee allowed
 rarlnx*			ports/archivers/linux_rar	Only unmodified original package can be distributed
