@@ -2,11 +2,11 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.12 2000/06/16 08:18:46 sobomax Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.13 2000/06/16 21:51:42 asami Exp $
 #
 
 PORTNAME=	rrdtool
-PORTVERSION=	1.0.13
+PORTVERSION=	1.0.24
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub/
 
@@ -15,6 +15,7 @@ MAINTAINER=	dima@Chg.RU
 USE_PERL5=	yes
 MAKE_ENV+=	PERL=${PERL}
 
+USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared=yes
@@ -23,7 +24,7 @@ CONFIGURE_ENV=	PERL=${PERL}
 MAN1=		RRDp.1 RRDs.1 bin_dec_hex.1 rrdcgi.1 rrdcreate.1 rrddump.1 \
 		rrdfetch.1 rrdgraph.1 rrdlast.1 rrdresize.1 rrdrestore.1 \
 		rrdtool.1 rrdtune.1 rrdtutorial.1 rrdupdate.1 cdeftutorial.1 \
-		rpntutorial.1
+		rpntutorial.1 rrdinfo.1
 MAN3=		RRDp.3 RRDs.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
