@@ -1,7 +1,8 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.22 2000/01/24 04:10:57 steve Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.23 2000/01/24 04:14:54 steve Exp $
 #
 
     SUBDIR += abacus
+    SUBDIR += bulb
     SUBDIR += cal
     SUBDIR += cbb
     SUBDIR += gaddr
@@ -14,6 +15,7 @@
     SUBDIR += korganizer
     SUBDIR += korganizer11-i18n
     SUBDIR += kproject
+    SUBDIR += moneydance
     SUBDIR += offix-trash
     SUBDIR += plan
     SUBDIR += sliderule
