@@ -2,11 +2,11 @@
 # Date created:		14th November 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/lang/starlogo/Makefile,v 1.3 2000/04/12 06:20:51 obrien Exp $
+# $FreeBSD: ports/lang/starlogo/Makefile,v 1.4 2000/07/03 14:24:10 sobomax Exp $
 #
 
 PORTNAME=	starlogo
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	lang java
 MASTER_SITES=	http://el.www.media.mit.edu/groups/el/Projects/starlogo/download/
 
