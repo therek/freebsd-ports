@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.172 2003/09/03 15:35:58 osa Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.173 2003/09/03 19:46:57 obrien Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -155,7 +155,7 @@ MASTER_SITE_ECLIPSE+= \
 	http://eclipse.planetmirror.com/downloads/drops/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/softeng/eclipse/%SUBDIR%/ \
 	http://gd.tuwien.ac.at/softeng/eclipse/%SUBDIR%/ \
-	ftp://ftp.ring.gr.jp/pub/misc/eclipse/downloads/drops/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/eclipse/downloads/drops/&,} \
 	http://mirror.island.liu.se/eclipse/downloads/drops/%SUBDIR%/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/downloads/drops/%SUBDIR%/ \
 	ftp://eclipse.cis.sinica.edu.tw/eclipse.org/%SUBDIR%/ \
