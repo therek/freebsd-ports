@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gnujsp
 # Version required:	0.9.10
 # Date created:		1999-07-15
-# Whom:			Palle Girgensohn <girgne@partitur.se>
+# Whom:			Palle Girgensohn <girgen@partitur.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/gnujsp/Makefile,v 1.1 1999/12/31 20:26:26 steve Exp $
 #
 
 DISTNAME=	gnujsp-0.9.10
