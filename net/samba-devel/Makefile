@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.50 2001/02/12 11:02:47 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	samba
@@ -17,6 +17,8 @@ MASTER_SITE_SUBDIR= alpha
 DISTNAME=       samba-2.2.0-alpha2
 
 MAINTAINER=	dwcjr@inethouston.net
+
+NO_LATEST_LINK=	"Unstable, development version."
 
 # directories
 VARDIR=		/var
