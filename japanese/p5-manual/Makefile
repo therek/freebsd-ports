@@ -2,13 +2,14 @@
 # Date created:		29 June 1998
 # Whom:			SADA Kenji <sada@e-mail.ne.jp>
 #
-# $FreeBSD: ports/japanese/p5-manual/Makefile,v 1.4 1999/08/27 22:29:27 mharo Exp $
+# $FreeBSD: ports/japanese/p5-manual/Makefile,v 1.5 2000/04/12 14:36:39 knu Exp $
 #
 
 PORTNAME=	man
 PORTVERSION=	5.000
 CATEGORIES=	japanese perl5
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/lang/perl/
+PKGNAMEPREFIX=	p5-
 DISTNAME=	perl${PORTVERSION}${PORTNAME}-j
 
 MAINTAINER=	sada@FreeBSD.org
@@ -29,10 +30,6 @@ CAT3=		Abbrev.3pm AnyDBMFile.3pm AutoLoader.3pm AutoSplit.3pm \
 		Open2.3pm Open3.3pm POSIX.3pm Ping.3pm Socket.3pm \
 		integer.3pm less.3pm sigtrap.3pm strict.3pm subs.3pm
 
-.include <bsd.port.pre.mk>
-
-PKGNAMEPREFIX:=	${PKGNAMEPREFIX}p5-
-
 post-extract:
 	@cd ${WRKDIR} && ${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} \
 		perl5man.tgz ${EXTRACT_AFTER_ARGS}
@@ -49,7 +46,7 @@ do-install:
 .endfor
 .endfor
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
 
 plist:
 	@${ECHO} -n >${PLIST}

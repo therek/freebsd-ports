@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/p5-nkf/Makefile,v 1.3 2000/04/12 14:36:40 knu Exp $
+# $FreeBSD: ports/japanese/p5-nkf/Makefile,v 1.4 2000/06/17 02:36:43 will Exp $
 #
 
 PORTNAME=	nkf
@@ -11,8 +11,9 @@ CATEGORIES=	japanese perl5
 MASTER_SITES=	ftp://ftp.ie.u-ryukyu.ac.jp/pub/software/kono/ \
 		ftp://ftp.win.ne.jp/pub/misc/ \
 		ftp://ftp.eos.hokudai.ac.jp/pub/tools/code-conv/nkf/
-EXTRACT_SUFX=	.shar
+PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}171
+EXTRACT_SUFX=	.shar
 
 MAINTAINER=	max@FreeBSD.org
 
@@ -25,12 +26,8 @@ WRKSRC=	${WRKDIR}/NKF
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		NKF.3
 
-.include <bsd.port.pre.mk>
-
-PKGNAMEPREFIX:=	${PKGNAMEPREFIX}p5-
-
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
 		CC="${CC}" CCFLAGS="${CFLAGS}"
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

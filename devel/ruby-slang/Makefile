@@ -2,13 +2,14 @@
 # Date created:		23 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.1 2000/08/23 04:35:47 knu Exp $
+# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.2 2000/08/23 07:51:39 knu Exp $
 #
 
 PORTNAME=	slang
 PORTVERSION=	0.33.a
 CATEGORIES+=	devel ruby
 MASTER_SITES=	http://kondara.sdri.co.jp/~kikutani/
+PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PORTNAME}lib
 DIST_SUBDIR=	ruby
 
@@ -38,12 +39,6 @@ DOCS_EN=	README		changes.txt
 DOCS_JA=	README.euc
 
 .include <bsd.port.pre.mk>
-
-.if defined(PKGNAMEPREFIX)
-PKGNAMEPREFIX:=	${PKGNAMEPREFIX}ruby-
-.else
-PKGNAMEPREFIX=	ruby-
-.endif
 
 do-configure:
 	@cd ${WRKSRC}; \

@@ -1,4 +1,8 @@
-# $FreeBSD: ports/german/Makefile.inc,v 1.1 2000/04/10 16:34:41 asami Exp $
+# $FreeBSD: ports/german/Makefile.inc,v 1.2 2000/04/11 06:59:23 asami Exp $
 #
 
-PKGNAMEPREFIX?=	de-
+.if defined(PKGNAMEPREFIX)
+PKGNAMEPREFIX:=	de-${PKGNAMEPREFIX}
+.else
+PKGNAMEPREFIX=	de-
+.endif
