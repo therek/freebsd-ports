@@ -3,11 +3,11 @@
 # Date created:		3 November 2000
 # Whom:			Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/devel/arm-elf-binutils/Makefile,v 1.1 2001/01/04 12:29:50 obrien Exp $
+# $FreeBSD: ports/devel/arm-elf-binutils/Makefile,v 1.2 2001/04/09 00:01:05 obrien Exp $
 #
 
 PORTNAME=	binutils
-PORTVERSION=	2.11
+PORTVERSION=	2.11.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	binutils/releases
