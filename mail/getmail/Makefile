@@ -2,11 +2,11 @@
 # Date created:        06 May 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/getmail/Makefile,v 1.3 2001/08/22 23:05:58 petef Exp $
+# $FreeBSD: ports/mail/getmail/Makefile,v 1.4 2001/09/08 01:50:52 petef Exp $
 #
 
 PORTNAME=	getmail
-PORTVERSION=	2.1.4
+PORTVERSION=	2.1.5
 CATEGORIES=	mail python
 MASTER_SITES=	http://www.qcc.sk.ca/~charlesc/software/getmail-2.0/
 
