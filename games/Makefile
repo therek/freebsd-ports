@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.298 2000/09/12 14:59:15 ade Exp $
+# $FreeBSD: ports/games/Makefile,v 1.299 2000/09/22 12:25:42 tg Exp $
 #
 
     SUBDIR += 3dc
@@ -76,6 +76,7 @@
     SUBDIR += gnugo
     SUBDIR += gnushogi
     SUBDIR += golddig
+    SUBDIR += gomoku.app
     SUBDIR += gracer
     SUBDIR += gru
     SUBDIR += gtetrinet
