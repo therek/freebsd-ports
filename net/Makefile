@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.447 2001/01/03 23:43:24 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.448 2001/01/06 14:23:48 alex Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -16,7 +16,6 @@
     SUBDIR += arts++
     SUBDIR += ascend-radius
     SUBDIR += balance
-    SUBDIR += bb
     SUBDIR += bind8
     SUBDIR += bind9
     SUBDIR += bing
