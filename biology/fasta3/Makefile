@@ -2,11 +2,11 @@
 # Date created:		29 January 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/fasta3/Makefile,v 1.4 2001/03/22 09:04:47 sobomax Exp $
 #
 
 PORTNAME=	fasta3
-PORTVERSION=	33.t08.d3
+PORTVERSION=	33.t08.d4
 CATEGORIES=	biology
 MASTER_SITES=	http://ftp.virginia.edu/pub/fasta/
 DISTNAME=	fasta${PORTVERSION:S/.//g}
