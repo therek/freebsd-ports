@@ -2,22 +2,21 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.41 2001/05/06 04:24:54 kris Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.42 2001/05/07 21:53:47 kris Exp $
 #
 
 PORTNAME=	hylafax
-PORTVERSION=	4.1.b3
+PORTVERSION=	4.1.b2
+PORTREVISION=	2
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.hylafax.org/source/
-DISTNAME=	${PORTNAME}-4.1beta3
+DISTNAME=	${PORTNAME}-4.1beta2
 
 PATCH_SITES=	http://www.hylafax.org/patches/
 PATCHFILES=	tiff-3.5-interfaces.patch cvtDateTime.patch
 PATCH_DIST_STRIP=	-p0
 
 MAINTAINER=	ports@FreeBSD.org
-
-BROKEN=		"Oops, botched upgrade"
 
 BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash2 \
 		${LOCALBASE}/lib/afm/Courier:${PORTSDIR}/print/afm
