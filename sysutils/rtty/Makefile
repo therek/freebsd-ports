@@ -2,17 +2,20 @@
 # Date created:		24 Aug 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/sysutils/rtty/Makefile,v 1.7 2000/04/22 10:13:08 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rtty
-PORTVERSION=	3.2
+PORTVERSION=	4.0
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.vix.com/pub/vixie/ \
-		ftp://ftp.digital.com/pub/misc/vixie/
+MASTER_SITES=	ftp://ftp.vix.com/pub/vixie/
+EXTRACT_SUFX=	.shar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
+EXTRACT_CMD=	${GZCAT}
+EXTRACT_BEFORE_ARGS=
+EXTRACT_AFTER_ARGS=	|sh
 NO_WRKSUBDIR=	yes
 
 .include <bsd.port.mk>
