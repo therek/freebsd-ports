@@ -2,7 +2,7 @@
 # Date created:		1 August 1999
 # Whom:			Michael Sardo <jaeger16@yahoo.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtkglarea/Makefile,v 1.10 2000/10/05 06:42:45 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkglarea
@@ -17,5 +17,6 @@ USE_GTK=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-lib-GL
+CONFIGURE_ENV=	LIBS="${PTHREAD_LIBS}"
 
 .include <bsd.port.mk>
