@@ -2,7 +2,7 @@
 # Date created:				26 April 2001
 # Whom:					Nick Johnson <freebsd@spatula.net>
 #
-# $FreeBSD: ports/games/sex/Makefile,v 1.1 2001/05/20 03:36:45 will Exp $
+# $FreeBSD: ports/games/sex/Makefile,v 1.2 2001/05/29 14:56:42 roam Exp $
 #
 
 PORTNAME=	sex
@@ -15,5 +15,8 @@ MAINTAINER=	freebsd@spatula.net
 
 MAN6=		sex.6
 MANCOMPRESSED=	yes
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
