@@ -2,7 +2,7 @@
 # Date created:		4 May 1998
 # Whom:			kargl@apl.washington.edu
 #
-# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.9 2000/04/11 21:27:59 mharo Exp $
+# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.10 2000/04/24 09:27:18 kris Exp $
 
 PORTNAME=	ftnchek
 PORTVERSION=	2.12.0
@@ -15,7 +15,7 @@ MAINTAINER=     kargl@apl.washington.edu
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
-MAN1=		dcl2inc.1 ftnchek.1
+MAN1=		dcl2inc.1 ftnchek.1 ftnpp.1
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	ac_cv_dir_lispdir=${PREFIX}/share/emacs/site-lisp
