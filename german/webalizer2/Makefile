@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/german/webalizer2/Makefile,v 1.12 2000/07/18 07:08:49 alex Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.0.12
@@ -14,7 +14,7 @@ DISTNAME=	webalizer-2.00-12-src
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 NO_LATEST_LINK=	yes
 
