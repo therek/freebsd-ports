@@ -2,11 +2,11 @@
 # Date created:		26 Dec 1998
 # Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.8 1999/12/26 14:23:24 sada Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.9 2000/04/10 00:04:12 cpiazza Exp $
 #
 
 PORTNAME=	amaya
-PORTVERSION= 	2.4
+PORTVERSION=	3.1
 CATEGORIES= 	www
 MASTER_SITES=	http://www.w3.org/Amaya/Distribution/ \
 		ftp://ftp.w3.org/pub/amaya/ \
