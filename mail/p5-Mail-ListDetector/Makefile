@@ -2,11 +2,11 @@
 # Date created:				13 August 2001
 # Whom:					petef
 #
-# $FreeBSD: ports/mail/p5-Mail-ListDetector/Makefile,v 1.1 2001/08/23 15:41:27 petef Exp $
+# $FreeBSD: ports/mail/p5-Mail-ListDetector/Makefile,v 1.2 2001/08/24 21:32:50 tobez Exp $
 #
 
 PORTNAME=	Mail-ListDetector
-PORTVERSION=	0.15
+PORTVERSION=	0.18
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
