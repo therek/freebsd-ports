@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.10 2003/09/24 08:49:20 edwin Exp $
+# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.11 2003/10/30 01:52:15 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -41,7 +41,6 @@ IMAP		"IMAP support" ${WITH_IMAP:-OFF} \
 INIFILE		"INI file support (dba)" ${WITH_INIFILE:-OFF} \
 INTERBASE	"Interbase 6 database support (Firebird)" ${WITH_INTERBASE:-OFF} \
 MBSTRING	"multibyte string support" ${WITH_MBSTRING:-OFF} \
-MCAL		"Modular Calendar Access Library support" ${WITH_MCAL:-OFF} \
 MCVE		"MCVE support (implies OPENSSL)" ${WITH_MCVE:-OFF} \
 MCRYPT		"Encryption support" ${WITH_MCRYPT:-OFF} \
 MHASH		"Crypto-hashing support" ${WITH_MHASH:-OFF} \
@@ -71,6 +70,7 @@ SYBASEDB	"Sybase/MS-SQL database support (DB-lib)" ${WITH_SYBASEDB:-OFF} \
 SYBASECT	"Sybase/MS-SQL database support (CT-lib)" ${WITH_SYBASECT:-OFF} \
 SYSVSEM		"System V semaphore support" ${WITH_SYSVSEM:-OFF} \
 SYSVSHM		"System V shared memory support" ${WITH_SYSVSHM:-OFF} \
+TIDY		"TIDY support" ${WITH_TIDY:-OFF} \
 TOKENIZER	"tokenizer support" ${WITH_TOKENIZER:-OFF} \
 UNIXODBC	"unixODBC support" ${WITH_UNIXODBC:-OFF} \
 WDDX		"WDDX support (implies XML)" ${WITH_WDDX:-OFF} \
