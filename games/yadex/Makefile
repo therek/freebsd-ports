@@ -2,7 +2,7 @@
 # Date created:				17 June 2001
 # Whom:					Jordan DeLong <fracture@allusion.net>
 #
-# $FreeBSD: ports/games/yadex/Makefile,v 1.2 2001/07/07 05:54:56 dwcjr Exp $
+# $FreeBSD: ports/games/yadex/Makefile,v 1.3 2001/07/07 19:41:27 dwcjr Exp $
 #
 
 PORTNAME=	yadex
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.teaser.fr/~amajorel/yadex/
 
 MAINTAINER=	fracture@allusion.net
 
+USE_XLIB=	yes
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}

@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/fkiss/Makefile,v 1.10 2000/04/14 06:53:03 mharo Exp $
+# $FreeBSD: ports/games/fkiss/Makefile,v 1.11 2001/04/17 12:42:37 flathill Exp $
 #
 
 PORTNAME=	fkiss
@@ -15,10 +15,12 @@ MAINTAINER=	flathill@FreeBSD.org
 
 RUN_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 
+USE_XLIB=	yes
+GNU_CONFIGURE=	yes
+
 NOT_FOR_ARCHS=	alpha
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
-GNU_CONFIGURE=	yes
 MAN1=		fkiss.1
 
 INSTALL_TARGET=	install
