@@ -1,14 +1,14 @@
 # New ports collection makefile for:		cdiff
 # Date created:					September 20th 2000
-# Whom:						des
+# Whom:						eivind
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/cdiff/Makefile,v 1.1 2000/09/20 11:37:27 eivind Exp $
 #
 # This port is self contained in the src directory.
 #
 
 PORTNAME=	cdiff
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	# none
 DISTFILES=	# none
