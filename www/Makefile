@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.157 1999/10/02 18:42:01 dan Exp $
+# $FreeBSD: ports/www/Makefile,v 1.158 1999/10/03 14:20:42 dan Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -61,9 +61,11 @@
     SUBDIR += netscape4-communicator
     SUBDIR += netscape4-communicator.us
     SUBDIR += netscape4-navigator
-    SUBDIR += netscape47-communicator.us
     SUBDIR += netscape46-communicator
     SUBDIR += netscape46-navigator
+    SUBDIR += netscape47-communicator
+    SUBDIR += netscape47-communicator.us
+    SUBDIR += netscape47-navigator
     SUBDIR += npc
     SUBDIR += p5-Apache
     SUBDIR += p5-Apache-Radius

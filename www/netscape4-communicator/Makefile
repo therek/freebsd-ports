@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.46 1999/08/31 06:51:57 mharo Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.47 1999/09/10 23:35:38 sada Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -22,7 +22,6 @@ NO_BUILD=	yes
 NO_FILTER_SHLIBS=	yes
 STRIP=
 WRKSRC?=	${WRKDIR}/${BROWSER}-v408.x86-unknown-freebsd
-FILESDIR=	${.CURDIR}/files
 PKGDIR=		${.CURDIR}/pkg
 PKGREQ=		${MASTERDIR}/pkg/REQ
 
@@ -52,6 +51,10 @@ RESTRICTED=     "Contains strong cryptography"
 .endif
 
 .SILENT:
+
+makesum:
+	${ECHO} "You should make ${FILESDIR}/md5 by hand"
+	${FALSE}
 
 .if !defined(USE_128BIT) && !defined(NO_FORTIFY)
 pre-extract:

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.224 1999/09/19 08:33:45 asami Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.225 1999/09/21 14:46:55 shige Exp $
 #
 
     SUBDIR += Canna
@@ -151,6 +151,8 @@
     SUBDIR += netscape4-navigator
     SUBDIR += netscape46-communicator
     SUBDIR += netscape46-navigator
+    SUBDIR += netscape47-communicator
+    SUBDIR += netscape47-navigator
     SUBDIR += newosaka
     SUBDIR += ng
     SUBDIR += ng-canna
