@@ -3,7 +3,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.63 2000/02/24 07:32:21 reg Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.64 2000/04/02 19:14:24 vanilla Exp $
 #
 
 DISTNAME=	gimp-${VERSION}
@@ -55,11 +55,11 @@ WITH_GNOME=	yes
 .endif
 
 .if defined(WITHOUT_PERL)
-PLISTORIG=		${WRKDIR}/PLIST
-PLIST=			${PKGDIR}/PLIST
+PLISTORIG=		${PKGDIR}/PLIST
+PLIST=			${WRKDIR}/PLIST
 .else
-PLISTORIG=		${WRKDIR}/PLIST.perl
-PLIST=			${SRCDIR}/PLIST.perl
+PLISTORIG=		${PKGDIR}/PLIST.perl
+PLIST=			${WRKDIR}/PLIST.perl
 pre-fetch:
 	@${ECHO} -n "If you want to compile without perl support "
 	@${ECHO} "'make -DWITHOUT_PERL' instead"
@@ -67,6 +67,8 @@ pre-fetch:
 
 .if defined(WITH_GNOME) && ${WITH_GNOME} == yes
 LIB_DEPENDS+=	gtkxmhtml.3:${PORTSDIR}/x11/gnomelibs
+pre-install:
+	@${CAT} ${PLISTORIG} > ${PLIST}
 .else
 pre-install:
 	@${SED} -e '/helpbrowser/d' ${PLISTORIG} > ${PLIST}
