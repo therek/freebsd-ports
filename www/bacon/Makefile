@@ -3,7 +3,7 @@
 # Date created:        9 September 1999
 # Whom:                Justin Robinson <jmrobins@samurai.ruin.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/bacon/Makefile,v 1.1.1.1 1999/09/09 14:55:08 taoka Exp $
 #
 
 DISTNAME=      bacon-1.071999
@@ -22,6 +22,7 @@ do-build:
 			${DIST}.orig > ${DIST}
 
 do-install:
+	${MKDIR} ${PREFIX}/www/cgi-bin
 	${INSTALL_SCRIPT} ${WRKSRC}/bacon.pl ${PREFIX}/www/cgi-bin/bacon.pl
 
 post-install:
