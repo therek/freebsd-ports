@@ -2,7 +2,7 @@
 # Date created:				29th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/pspell-ispell/Makefile,v 1.2 2000/08/08 21:49:47 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pspell-ispell
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}-.10.2
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
-LIB_DEPENDS=	pspell.2:${PORTSDIR}/textproc/pspell
+LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell
 
 USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
