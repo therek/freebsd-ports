@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.444 2000/12/19 12:17:20 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.445 2000/12/26 05:46:54 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -253,6 +253,7 @@
     SUBDIR += sing
     SUBDIR += slirp
     SUBDIR += smbtcpdump
+    SUBDIR += smm++
     SUBDIR += sniffit
     SUBDIR += sntop
     SUBDIR += socks5
