@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.9 2000/09/07 07:23:43 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.10 2000/09/26 08:02:04 knu Exp $
 #
 
 PORTNAME=	rdtool
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.6
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -23,6 +23,8 @@ RUN_DEPENDS=	${RUBY_SITELIBDIR}/racc/parser.rb:${PORTSDIR}/devel/ruby-racc-runti
 
 USE_RUBY=	yes
 
+RUBY_SHEBANG_FILES=	 ${WRKSRC}/rmi2html.rb
+
 EMACSLISPDIR=	${PREFIX}/share/emacs/site-lisp
 XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
 
@@ -35,7 +37,7 @@ do-configure:
 	${SETENV} ${CONFIGURE_ENV} ${RUBY} rdtoolconf.rb
 
 post-patch:
-	${PERL} -i -pe 's,/usr/local,${PREFIX},g' ${WRKSRC}/utils/rdswap.rb
+	${RUBY} -i -pe 'gsub %r"/usr/local\b", "${PREFIX}"' ${WRKSRC}/utils/rdswap.rb
 
 pre-build:
 	@cd ${WRKSRC}; \
