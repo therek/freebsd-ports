@@ -2,11 +2,12 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.35 2000/09/25 12:21:39 asami Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.36 2000/10/08 06:05:59 asami Exp $
 #
 
 PORTNAME=	tcsh
 PORTVERSION=	6.09.03
+PORTREVISION=	1
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_TCSH}
 DISTNAME=	${DISTNAME_TCSH}
