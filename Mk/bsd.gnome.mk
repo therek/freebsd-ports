@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.5 2000/10/11 02:44:08 reg Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.6 2000/10/13 07:16:22 reg Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -190,7 +190,7 @@ pre-everything::
 # using USE_GNOMELIBS or USE_GNOMECTRL, unless they have a very good reason. 
 # Most GNOME ports require USE_GNOME for the correct remove of directories
 # in ${X11BASE}/share/gnome.  Ports using GNOME should also have
-# USE_X_PREFIX definied.
+# USE_X_PREFIX defined.
  
 .if defined(USE_GNOME)
 USE_GNOMECTRL=	yes
