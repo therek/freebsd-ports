@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.252 2003/11/06 10:53:45 netchild Exp $
+# $FreeBSD: ports/MOVED,v 1.253 2003/11/07 21:00:06 anholt Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -654,3 +654,5 @@ print/pktrace|print/mftrace|2003-11-05|program renamed
 databases/mysql-jdbc-mm|databases/mysql-connector-java|2003-11-05|renamed
 sysutils/prune|sysutils/fileprune|2003-11-06|renamed because of conflict with graphviz
 graphics/Mesa3|graphics/libglut|2003-11-06|split into graphics/mesagl and graphics/libglut
+japanese/openoffice|japanese/openoffice-1.0|2003-01-07|renamed 
+japanese/openoffice-devel|japanese/openoffice-1.1|2003-01-07|renamed 
