@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.76 2001/09/17 17:54:19 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -104,6 +104,7 @@ post-install:
 		-e ' end;' \
 		-e 'end' \
 		${IRB_WITH_SUFFIX}
+	${CHMOD} ${BINMODE} ${IRB_WITH_SUFFIX}
 	${MKDIR} ${RUBY_ELISPDIR}
 	${TOUCH} ${RUBY_ELISPDIR}/.keep_me
 	${MKDIR} ${RUBY_EXAMPLESDIR}
