@@ -3,10 +3,10 @@
 # Date created:			May 31, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/awka/Makefile,v 1.1 2001/05/31 16:33:18 ijliao Exp $
 
 PORTNAME=	awka
-PORTVERSION=	0.7.3
+PORTVERSION=	0.7.4
 CATEGORIES=	lang
 MASTER_SITES=	http://awka.sourceforge.net/
 
