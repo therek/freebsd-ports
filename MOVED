@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.567 2004/11/28 05:18:23 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.568 2004/11/28 10:37:12 clive Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1329,3 +1329,4 @@ print/acroread|print/acroread5|2004-11-27|removed due to security problems
 java/phpeclipse_phphelp|java/phpeclipse|2004-11-28|merged
 java/phpeclipse_sql|java/phpeclipse|2004-11-28|merged
 java/phpeclipse_tidy|java/phpeclipse|2004-11-28|merged
+java/jakarta-log4j|devel/log4j|2004-11-28|no longer part of the Jakarta project
