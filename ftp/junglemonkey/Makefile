@@ -2,7 +2,7 @@
 # Date created:        			21st April 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.11 2001/03/29 16:33:35 sobomax Exp $
+# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.12 2001/05/04 21:41:09 ade Exp $
 #
 
 PORTNAME=	junglemonkey
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.junglemonkey.net/src/
 DISTNAME=	jm-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+LIB_DEPENDS=	gnet.0:${PORTSDIR}/net/gnet
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
