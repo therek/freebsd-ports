@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.15 2000/07/15 16:14:00 andreas Exp $
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.16 2000/10/07 22:36:33 asami Exp $
 #
 
 PORTNAME=	tac_plus
@@ -21,6 +21,11 @@ MAN1=		tac_plus.1
 # a username, set appropriately TAC_CHANGE_PROMPT variable.
 .if defined(TAC_CHANGE_PROMPT) && ${TAC_CHANGE_PROMPT} == YES
 EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ba
+.endif
+
+# check expiration dates against 'expire' field of master.passwd file
+.if defined(TAC_EXPIRE_MASTER_PASSWD) && ${TAC_EXPIRE_MASTER_PASSWD} == YES
+EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-bb
 .endif
 
 do-install:
