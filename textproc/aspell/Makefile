@@ -1,13 +1,13 @@
 # New ports collection makefile for:	aspell
-# Version required:	0.29
+# Version required:	0.29.1
 # Date created:		7 December 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/aspell/Makefile,v 1.12 2000/01/22 17:59:40 ade Exp $
+# $FreeBSD: ports/textproc/aspell/Makefile,v 1.13 2000/02/18 02:11:40 ade Exp $
 #
 
-DISTNAME=	aspell-.29
-PKGNAME=	aspell-0.29
+DISTNAME=	aspell-.29.1
+PKGNAME=	aspell-0.29.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.sourceforge.net/aspell/
 
