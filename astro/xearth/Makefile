@@ -2,7 +2,7 @@
 # Date created:         29 October 1995
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.20 2000/04/08 22:02:05 mharo Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.21 2000/06/22 05:51:52 will Exp $
 #
 
 PORTNAME=	xearth
@@ -25,5 +25,10 @@ post-install:
 	${CP} ${FILESDIR}/freebsd.core.markers ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.committers.markers ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.ftp.markers ${PREFIX}/lib/X11/xearth
+	${ECHO} "# All of FreeBSD's committers, including core :)" > \
+	    ${PREFIX}/lib/X11/xearth/freebsd.core_and_committers.markers
+	${GREP} -hv '^[[:space:]]*#' ${FILESDIR}/freebsd.core.markers \
+	    ${FILESDIR}/freebsd.committers.markers >> \
+	    ${PREFIX}/lib/X11/xearth/freebsd.core_and_committers.markers
 
 .include <bsd.port.mk>
