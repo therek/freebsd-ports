@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.176 2001/04/07 06:05:55 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.177 2001/04/10 19:51:44 will Exp $
 #
     SUBDIR += yawho
 
@@ -32,6 +32,7 @@
     SUBDIR += daemontools53
     SUBDIR += deleted
     SUBDIR += detach
+    SUBDIR += dim
     SUBDIR += diskusage
     SUBDIR += doconfig
     SUBDIR += dvdtape
