@@ -2,11 +2,12 @@
 # Date created:         5 October 1995
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/japanese/elvis/Makefile,v 1.18 2000/08/03 14:28:21 sanpei Exp $
+# $FreeBSD: ports/japanese/elvis/Makefile,v 1.19 2000/10/08 10:20:32 asami Exp $
 #
 
 PORTNAME=	elvis
 PORTVERSION=	1.8.4
+PORTREVISION=	1
 CATEGORIES=    japanese editors
 MASTER_SITES=   ftp://ftp.cs.pdx.edu/pub/elvis/
 EXTRACT_SUFX=	.tgz
