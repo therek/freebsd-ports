@@ -2,11 +2,11 @@
 # Date created:				Mon Jan  1 11:26:17 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-CGI-Cache/Makefile,v 1.4 2001/08/01 09:33:46 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CGI-Cache
-PORTVERSION=	1.10
+PORTVERSION=	1.20
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI
@@ -14,7 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
 
-BUILD_DEPENDS=	${SITE_PERL}/File/Cache.pm:${PORTSDIR}/devel/p5-File-Cache
+BUILD_DEPENDS=	${SITE_PERL}/File/Cache.pm:${PORTSDIR}/devel/p5-File-Cache \
+		${SITE_PERL}/File/Spec/Functions.pm:${PORTSDIR}/devel/p5-File-Spec \
+		${SITE_PERL}/Cache/SizeAwareFileCache.pm:${PORTSDIR}/devel/p5-Cache-Cache
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
