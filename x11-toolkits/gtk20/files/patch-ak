@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-toolkits/gtk13/files/patch-ak,v 1.2 2002/02/14 11:27:15 sobomax Exp $
+$FreeBSD$
 
 --- gdk/Makefile.in.orig	Thu Feb 14 12:38:26 2002
 +++ gdk/Makefile.in	Thu Feb 14 12:45:37 2002

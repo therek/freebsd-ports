@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-toolkits/eel/files/patch-eel::eel-vfs-extensions.c,v 1.1 2001/12/20 14:04:25 sobomax Exp $
+$FreeBSD$
 
 --- eel/eel-vfs-extensions.c	2001/12/20 13:41:21	1.1
 +++ eel/eel-vfs-extensions.c	2001/12/20 13:47:36
