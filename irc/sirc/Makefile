@@ -2,7 +2,7 @@
 # Date created:                      4 May 1998
 # Whom:                              Doug Barton <Doug@gorean.org>
 #
-# $FreeBSD: ports/irc/sirc/Makefile,v 1.8 2000/04/12 06:28:28 obrien Exp $
+# $FreeBSD: ports/irc/sirc/Makefile,v 1.9 2000/11/03 09:06:59 dougb Exp $
 #
 # If you need SOCKS support, define SOCKS_SERVER with
 # the name of your SOCKS proxy and remove the '#'.
@@ -15,7 +15,7 @@ PORTNAME=	sirc
 PORTVERSION=	2.211
 CATEGORIES=	irc
 MASTER_SITES=	http://www.iagora.com/~espel/sirc/ \
-		http://freebsd.simplenet.com/Downloads/
+		http://dougbarton.net/FreeBSD/Downloads/
 
 MAINTAINER=	DougB@FreeBSD.org
 
