@@ -2,7 +2,7 @@
 # Date created:		10 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/x11/xcolors/Makefile,v 1.19 2000/06/29 02:31:41 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcolors
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	ade
 DISTNAME=	${PORTNAME}	
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xcolors
 USE_IMAKE=	yes
