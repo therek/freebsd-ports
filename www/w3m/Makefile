@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.7 2000/01/24 01:11:12 sumikawa Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.8 2000/01/30 16:23:51 imura Exp $
 #
 
 DISTNAME=	w3m-${W3M_VER}
@@ -16,7 +16,9 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
 
 MAINTAINER=	nobutaka@nobutaka.com
 
+.if defined(USE_SSL)
 RESTRICTED=     "Contains cryptography"
+.endif
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 
