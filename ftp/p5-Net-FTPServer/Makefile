@@ -3,11 +3,11 @@
 # Date created:			Jul 30, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.7 2001/08/24 21:32:49 tobez Exp $
+# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.8 2001/08/26 05:28:54 petef Exp $
 #
 
 PORTNAME=	Net-FTPServer
-PORTVERSION=	1.029
+PORTVERSION=	1.031
 CATEGORIES=	ftp perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
