@@ -2,7 +2,7 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/znavigator/Makefile,v 1.1 2000/09/18 20:02:54 nbm Exp $
 #
 
 PORTNAME=	znavigator
@@ -27,6 +27,8 @@ ZOPEPRODUCTNAME=	ZNavigator
 ZOPEPRODUCTDIR=		lib/python/Products
 
 ZOPEPRODUCTSRC=		${WRKDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
+
+PKGMESSAGE=	${WRKDIR}/.pkg-message
 
 PLIST_SUB=	ZOPEBASEDIR=${SZOPEBASEDIR}
 
