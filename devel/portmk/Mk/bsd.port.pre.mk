@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.pre.mk,v 1.2 2004/07/07 09:55:56 eik Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.pre.mk,v 1.3 2004/07/17 14:24:58 eik Exp $
 #
 
 PORTMK_VERSION=	20040717
@@ -393,11 +393,13 @@ PERL=		${LOCALBASE}/bin/perl
 .include "${PORTSDIR}/Mk/bsd.sdl.mk"
 .endif
 
-# defaults to 4.x for 5.0-CURRENT and 4.5-STABLE; and 3.3.6 for all other branches
-.if ${OSVERSION} > 500025 || ( ${OSVERSION} >= 450005 && ${OSVERSION} < 500000 )
-XFREE86_VERSION?=	4
+.if ${OSVERSION} >= 502123
+X_WINDOW_SYSTEM ?= xorg
+.elif (${OSVERSION} >= 450005 && !defined(XFREE86_VERSION)) || \
+	(defined(XFREE86_VERSION) && ${XFREE86_VERSION} == 4)
+X_WINDOW_SYSTEM ?= xfree86-4
 .else
-XFREE86_VERSION?=	3
+X_WINDOW_SYSTEM ?= xfree86-3
 .endif
 
 # Location of mounted CDROM(s) to search for files
