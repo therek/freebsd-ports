@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.113 2001/03/12 16:04:00 lioux Exp $
+# $FreeBSD: ports/math/Makefile,v 1.114 2001/03/12 16:05:36 lioux Exp $
 #
 
     SUBDIR += GiNaC
@@ -12,6 +12,7 @@
     SUBDIR += blas
     SUBDIR += calc
     SUBDIR += calctool
+    SUBDIR += ccmath
     SUBDIR += cln
     SUBDIR += concorde
     SUBDIR += dcdflib
