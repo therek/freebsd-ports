@@ -2,7 +2,7 @@
 # Date Created:			23 May 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/pth/Makefile,v 1.53 2001/03/25 14:12:16 rse Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pth
@@ -15,9 +15,8 @@ MASTER_SITE_SUBDIR=	pth
 MAINTAINER=	ports@FreeBSD.org
 
 INSTALLS_SHLIB=	yes
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=${PREFIX} \
-		--enable-pthread \
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-pthread \
 		--enable-syscall-soft \
 		--enable-optimize \
 		--enable-batch
