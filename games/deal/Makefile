@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/deal/Makefile,v 1.1 2001/04/07 04:36:47 will Exp $
 #
 
 PORTNAME=	deal
@@ -10,7 +10,7 @@ PORTVERSION=	2.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.tuxedo.org/~esr/deal/
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 ALL_TARGET=	deal
 MAN1=		deal.1

@@ -2,7 +2,7 @@
 # Date created:			Apr 13, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/burgerspace/Makefile,v 1.1 2001/04/17 17:47:17 will Exp $
+# $FreeBSD: ports/games/burgerspace/Makefile,v 1.2 2001/05/27 09:57:35 ijliao Exp $
 #
 
 PORTNAME=	burgerspace
@@ -10,7 +10,7 @@ PORTVERSION=	1.5
 CATEGORIES=	games
 MASTER_SITES=	http://sites.netscape.net/sarrazip/
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 LIB_DEPENDS=	gengameng.3:${PORTSDIR}/devel/gengameng \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt

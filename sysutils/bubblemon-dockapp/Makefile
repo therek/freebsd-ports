@@ -2,7 +2,7 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/bubblemon-dockapp/Makefile,v 1.1 2001/04/17 18:23:49 will Exp $
 #
 
 PORTNAME=	bubblemon-dockapp
@@ -10,7 +10,7 @@ PORTVERSION=	1.32
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

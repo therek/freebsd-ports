@@ -2,7 +2,7 @@
 # Date created:				Apr 1, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/cpuburn/Makefile,v 1.1 2001/04/07 06:05:55 will Exp $
+# $FreeBSD: ports/sysutils/cpuburn/Makefile,v 1.2 2001/04/15 04:07:50 steve Exp $
 #
 
 PORTNAME=	cpuburn
@@ -12,7 +12,7 @@ MASTER_SITES=	http://users.ev1.net/~redelm/
 DISTNAME=	cpuburn_${PORTVERSION:S/./_/g}
 EXTRACT_SUFX=	_tar.gz
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 ONLY_FOR_ARCHS=	i386

@@ -2,7 +2,7 @@
 # Date created:			Feb 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/games/lexter/Makefile,v 1.3 2001/03/29 20:03:13 mharo Exp $
+# $FreeBSD: ports/games/lexter/Makefile,v 1.4 2001/06/01 06:04:49 obrien Exp $
 #
 
 PORTNAME=	lexter
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 

@@ -2,7 +2,7 @@
 # Date created:			Apr 1, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/crashme/Makefile,v 1.1 2001/04/07 06:03:49 will Exp $
 #
 
 PORTNAME=	crashme
@@ -12,7 +12,7 @@ MASTER_SITES=	http://people.delphi.com/gjc/
 DISTNAME=	crashme
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 USE_GMAKE=	yes
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/audio/mp3check/Makefile,v 1.1 2001/04/17 17:35:04 will Exp $
+# $FreeBSD: ports/audio/mp3check/Makefile,v 1.2 2001/05/28 20:44:03 dannyboy Exp $
 #
 
 PORTNAME=	mp3check
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	dannyboy
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/bin/id3tool:${PORTSDIR}/audio/id3tool \
 		${LOCALBASE}/bin/mp3_check:${PORTSDIR}/audio/mp3_check

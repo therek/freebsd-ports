@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/xrot/Makefile,v 1.2 2001/04/15 04:03:31 steve Exp $
+# $FreeBSD: ports/games/xrot/Makefile,v 1.3 2001/06/01 06:04:52 obrien Exp $
 #
 
 PORTNAME=	xrot
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.kobe-u.ac.jp/pub/Linux/packages/Vine/VinePlus/1.1/JG-0.9.1/sources/
 MASTER_SITE_SUBDIR=	will
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xrot
 USE_IMAKE=	yes

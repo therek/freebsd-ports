@@ -2,7 +2,7 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/devel/gengameng/Makefile,v 1.1 2001/04/17 17:44:13 will Exp $
+# $FreeBSD: ports/devel/gengameng/Makefile,v 1.2 2001/05/27 09:46:15 ijliao Exp $
 #
 
 PORTNAME=	gengameng
@@ -10,7 +10,7 @@ PORTVERSION=	3.0
 CATEGORIES=	devel
 MASTER_SITES=	http://sites.netscape.net/sarrazip/
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image
 

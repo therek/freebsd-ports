@@ -2,7 +2,7 @@
 # Date created:                 Apr 1, 2001
 # Whom:                         Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/funktrackergold/Makefile,v 1.1 2001/04/07 06:10:55 will Exp $
 #
 
 PORTNAME=	funktrackergold
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	apps/sound/players
 DISTNAME=	funktrackergold-1.5-2
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/funkgold
 MAKE_ARGS=	EXTRA_CFLAGS="${PTHREAD_CFLAGS}" \

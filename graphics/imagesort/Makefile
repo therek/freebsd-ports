@@ -2,7 +2,7 @@
 # Date created:			Apr 10, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/graphics/imagesort/Makefile,v 1.1 2001/04/10 19:50:00 will Exp $
+# $FreeBSD: ports/graphics/imagesort/Makefile,v 1.2 2001/05/04 21:41:12 ade Exp $
 #
 
 PORTNAME=	imagesort
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/graphics/viewers/X
 
-MAINTAINER=	mark@kyne.com.au
+MAINTAINER=	markp@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
