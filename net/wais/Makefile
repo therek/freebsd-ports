@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD: ports/net/wais/Makefile,v 1.15 2000/04/09 18:13:56 cpiazza Exp $
+# $FreeBSD: ports/net/wais/Makefile,v 1.16 2001/08/28 19:55:32 petef Exp $
 #
 
 PORTNAME=	freeWAIS
@@ -16,7 +16,6 @@ MASTER_SITES=	ftp://ftp.cnidr.org/software/freewais/ \
 		ftp://ftp.gu.net/pub/unix/wais/ \
 		ftp://ftp.uni-stuttgart.de/pub/unix/comm/infosystems/wais/ \
 		ftp://ftp.cuhk.edu.hk/pub/unix/ \
-		ftp://ftp.ptb.de/pub/infosystems/ \
 		ftp://ftp.uni-koeln.de/net/inet/wais/freeWAIS-sf-old/ \
 		ftp://ftp.netsw.org/infosys/wais/freewais/
 
