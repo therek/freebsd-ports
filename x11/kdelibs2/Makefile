@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.45 2000/05/16 22:08:59 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.46 2000/05/17 23:15:07 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -33,5 +33,15 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 USE_GMAKE=	yes
 MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}" \
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
+
+.for LIB in DCOP kab kdecore kdesu kdeui kfile kformula khtml kio kjs kmid \
+	    kparts kspell ksycoca kwrite
+	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.${SOMAJOR} ${PREFIX}/lib/lib${LIB}.so
+.endfor
+.for LIB in artsc artscbackend artsdsp artsflow artsflow_idl kmedia2_idl qtmcop \
+	    soundserver_idl x11globalcomm
+	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.0 ${PREFIX}/lib/lib${LIB}.so
+.endfor
+	@${LN} -sf ${PREFIX}/lib/libkjava.so.1 ${PREFIX}/lib/libkjava.so
 
 .include <bsd.port.mk>
