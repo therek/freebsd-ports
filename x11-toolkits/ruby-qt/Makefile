@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.11 2000/09/28 10:49:45 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.12 2000/10/23 18:44:31 knu Exp $
 #
 
 PORTNAME=	qt
@@ -23,12 +23,11 @@ USE_RUBY_EXTCONF=	yes
 USE_GMAKE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-CONFIGURE_ARGS=	--with-qt-include=${X11BASE}/include/X11/qt \
+CONFIGURE_ARGS=	--with-qti18n \
+		--with-qt-include=${X11BASE}/include/X11/qt \
 		--with-qt-lib=${X11BASE}/lib
 MAKE_ARGS=	LOCAL_LIBS=-lgcc
 INSTALL_TARGET=	site-install
-
-CONFIGURE_ARGS+=	--with-qti18n
 
 post-patch:
 	${RUBY} -i -pe 'gsub %r"/usr/X11\b", "${X11BASE}"' ${WRKSRC}/lib/qt.rb
