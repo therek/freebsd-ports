@@ -2,12 +2,11 @@
 # Date created:		27 February 2001
 # Whom:			Michael Alyn Miller <malyn@strangeGizmo.com>
 #
-# $FreeBSD: ports/games/alephone/Makefile,v 1.4 2001/04/17 17:21:29 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	alephone
-PORTVERSION=	0.11.1
-PORTREVISION=	2
+PORTVERSION=	0.12.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	marathon
