@@ -3,11 +3,11 @@
 # Date created:         Sun Apr 19 16:17:25 PDT 1998
 # Whom:                 Jordan Hubbard <jkh@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/spegla/Makefile,v 1.8 1999/10/09 21:38:09 jdp Exp $
+# $FreeBSD: ports/ftp/spegla/Makefile,v 1.9 2000/04/12 05:31:22 mharo Exp $
 #
 
 PORTNAME=	spegla
-PORTVERSION=	1.04p1
+PORTVERSION=	1.1p4
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.luth.se/pub/unix/mirror/ \
 		ftp://subzero.campus.luth.se/pub/spegla/
