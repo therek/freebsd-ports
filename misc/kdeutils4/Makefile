@@ -2,11 +2,11 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.51 2001/03/05 12:17:06 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdeutils
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2
 CATEGORIES=	misc kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
@@ -18,5 +18,6 @@ USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+MAN1=		efax.1 efix.1 fax.1
 
 .include <bsd.port.mk>

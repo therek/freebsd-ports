@@ -2,11 +2,11 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.59 2001/03/29 16:34:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	2.1.1
+PORTVERSION=	2.2
 CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
