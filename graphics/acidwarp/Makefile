@@ -2,7 +2,7 @@
 # Date created:				2000-10-22
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/acidwarp/Makefile,v 1.1 2000/10/22 10:54:36 trevor Exp $
 #
 
 PORTNAME=	acidwarp
@@ -37,7 +37,7 @@ pre-install:
 .endif
 
 do-install:
-	${INSTALL} -c -g wheel -o root -m 1755 ${WRKSRC}/acidwarp ${PREFIX}/bin
+	${INSTALL} -c -g wheel -o root -m 4755 ${WRKSRC}/acidwarp ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/acidwarp
 .for i in ${DOCFILES}
