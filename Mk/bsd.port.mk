@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.443 2003/03/19 06:26:14 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.444 2003/03/22 04:45:24 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -328,13 +328,9 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 ##
 # USE_GNOME		- A list of the Gnome dependencies the port has (e.g.,
 #				  glib12, gtk12).  Implies that the port needs Gnome.
-#				  Implies inclusion of bsd.gnome.mk or bsd.gnomeng.mk.
-#				  (Also see those files for more information about
-#				  USE_GNOMELIBS, USE_GLIB, and USE_GTK).
-#				  Default: not set.
-# USE_GNOMENG	- Set to yes to use bsd.gnomeng.mk, otherwise, the
-#				  older bsd.gnome.mk is used.  The former is preferred
-#				  for new work.  Meaningless without USE_GNOME.
+#				  Implies inclusion of bsd.gnome.mk.  See bsd.gnome.mk
+#				  or http://www.FreeBSD.org/gnome/docs/porting.html
+#				  for more details.
 #				  Default: not set.
 #
 # USE_KDEBASE_VER	- Set to either 2 or 3 to use the KDE windowing system.
