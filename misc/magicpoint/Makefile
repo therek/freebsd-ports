@@ -2,7 +2,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.20 2000/07/04 07:13:10 sobomax Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.21 2000/08/03 09:25:45 asami Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -19,6 +19,7 @@ USE_IMAKE=	yes
 USE_FREETYPE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS?=--disable-vflib
+XFREE86_HTML_MAN=	no
 
 MAN1=	mgp.1 mgp2ps.1 mgpembed.1 mgpnet.1 xwintoppm.1 xmindpath.1
 
