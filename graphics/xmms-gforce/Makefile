@@ -2,7 +2,7 @@
 # Date created:        			22 December 2000
 # Whom:					alex
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmms-gforce/Makefile,v 1.1 2000/12/23 10:12:24 alex Exp $
 #
 
 PORTNAME=	xmms-gforce
@@ -19,5 +19,7 @@ RUN_DEPENDS=	xmms:${PORTSDIR}/audio/xmms
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+
+RESTRICTED=	"Non-commercial use only"
 
 .include <bsd.port.mk>
