@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.32 2000/02/29 03:04:27 jedgar Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.33 2000/04/11 21:28:03 mharo Exp $
 #
 
 PORTNAME= 	gide
@@ -30,8 +30,7 @@ CONFIGURE_ARGS=	--with-gnome=${PREFIX}
 
 MAN1=		gide.1 gdbio.1
 
-VERSION=	${DISTNAME:S/gIDE-//}
-PLIST_SUB=	VERSION=${VERSION}
+PLIST_SUB=	VERSION=${PORTVERSION}
 
 post-patch:
 	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/src/*.c
