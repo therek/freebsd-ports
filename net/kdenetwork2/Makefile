@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.37 1999/08/30 14:23:03 peter Exp $
 #
 
 DISTNAME=	kdenetwork-1.1.1
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR= stable/1.1.1/distribution/tar/generic/source/bz2
 MAINTAINER=	se@freebsd.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
-LIB_DEPENDS=	gif.3:${PORTSDIR}/graphics/giflib \
+LIB_DEPENDS=	gif.5:${PORTSDIR}/graphics/giflib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		uu.1:${PORTSDIR}/converters/uulib \

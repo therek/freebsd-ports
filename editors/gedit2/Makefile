@@ -3,7 +3,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.3 1999/08/25 05:43:51 obrien Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.4 1999/09/07 10:45:22 steve Exp $
 #
 
 DISTNAME=		gedit-0.5.4
@@ -22,7 +22,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		esd.1:${PORTSDIR}/audio/esound \
 		gdk_imlib.4:${PORTSDIR}/graphics/imlib \
 		gdk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gif.3:${PORTSDIR}/graphics/png \
+		gif.5:${PORTSDIR}/graphics/png \
 		glib12.2:${PORTSDIR}/devel/glib12 \
 		gmodule12.2:${PORTSDIR}/devel/glib12 \
 		gnome.2:${PORTSDIR}/x11/gnomelibs \

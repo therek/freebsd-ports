@@ -3,7 +3,7 @@
 # Date created:		Tue June 8 15:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/videotext/Makefile,v 1.3 1999/08/25 07:22:59 obrien Exp $
 #
 
 DISTNAME=	videotext-0.6.971023
@@ -12,7 +12,7 @@ MASTER_SITES=	http://elektra.e-technik.uni-ulm.de/~mbuck/download/
 
 MAINTAINER=	roger@freebsd.org
 
-LIB_DEPENDS=	gif.3:${PORTSDIR}/graphics/giflib \
+LIB_DEPENDS=	gif.5:${PORTSDIR}/graphics/giflib \
 		png.3:${PORTSDIR}/graphics/png \
 		xview.3:${PORTSDIR}/x11-toolkits/xview
 

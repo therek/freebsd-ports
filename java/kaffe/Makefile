@@ -3,7 +3,7 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.43 1999/08/25 06:16:30 obrien Exp $
 #
 
 DISTNAME=	kaffe-1.0.b4
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.transvirtual.com/pub/kaffe/
 MAINTAINER=	xaa@xaa.iae.nl
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		gif.3:${PORTSDIR}/graphics/giflib \
+		gif.5:${PORTSDIR}/graphics/giflib \
 		png.3:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/kaffe-1.0b4
