@@ -2,7 +2,7 @@
 # Date created:		18 July 1997
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/net/bind8/Makefile,v 1.27 2001/05/25 08:23:16 dougb Exp $
+# $FreeBSD$
 #
 
 # I stay very aware of developments regarding BIND. I frequently delay updating
@@ -12,7 +12,7 @@
 
 PORTNAME=	bind
 PORTVERSION=	8.2.5
-CATEGORIES=	net
+CATEGORIES?=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind/src/${PORTVERSION}/ \
 		ftp://ftp.epix.net/pub/isc/bind/src/${PORTVERSION}/ \
 		ftp://ftp.nominum.com/pub/isc/bind/src/${PORTVERSION}/ \
