@@ -3,11 +3,11 @@
 # Date created:		Jul 6, 2001
 # Whom:			ijliao
 #
-# $FreeBSD: ports/graphics/libdvdcss/Makefile,v 1.1 2001/07/06 04:26:39 ijliao Exp $
+# $FreeBSD: ports/graphics/libdvdcss/Makefile,v 1.2 2001/07/29 08:24:41 ijliao Exp $
 #
 
 PORTNAME=	libdvdcss
-PORTVERSION=	0.0.2
+PORTVERSION=	0.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.videolan.org/pub/videolan/%SUBDIR%/
 MASTER_SITE_SUBDIR=	${PORTNAME}/${PORTVERSION}
