@@ -2,14 +2,14 @@
 # Date created:		04 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/byeoroo/Makefile,v 1.4 2000/06/23 15:21:19 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	byeoroo
 PORTVERSION=	0.0.19990605.3
 PORTREVISION=	1
 CATEGORIES=	korean x11
-MASTER_SITES=	http://master.debian-kr.org/~cwryu/archive/byeoroo/
+MASTER_SITES=	http://master.debian.or.kr/~cwryu/archive/byeoroo/
 
 MAINTAINER=	cjh@FreeBSD.org
 
