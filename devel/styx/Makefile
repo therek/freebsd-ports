@@ -3,11 +3,11 @@
 # Date created:			Apr 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/styx/Makefile,v 1.1 2001/04/16 19:40:58 ijliao Exp $
 #
 
 PORTNAME=	styx
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.speculate.de/styx/
 EXTRACT_SUFX=	.tgz
