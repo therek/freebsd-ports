@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD$
+#	$FreeBSD: ports/security/amavisd/pkg-install,v 1.1 2002/05/15 13:19:02 ijliao Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -12,7 +12,7 @@ GROUP=$2
 if /usr/sbin/pw groupshow "${GROUP}" 2>/dev/null; then
     echo "You already have a group \"${GROUP}\", so I will use it."
 else
-    if /usr/sbin/pw groupadd ${GROUP} -h -
+    if /usr/sbin/pw groupadd ${GROUP} -h -g 110 -
     then
 	echo "Added group \"${GROUP}\"."
     else
@@ -28,7 +28,8 @@ else
     if /usr/sbin/pw useradd ${USER} -g ${GROUP} -h - \
        -d /var/amavis \
        -s /bin/sh \
-       -c "Scanning Virus Account"
+       -c "Scanning Virus Account" \
+       -u 110
     then
 	echo "Added user \"${USER}\"."
     else
