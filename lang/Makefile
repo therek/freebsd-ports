@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.209 2001/02/19 15:55:35 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.210 2001/02/25 21:26:52 dirk Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -84,7 +84,7 @@
     SUBDIR += perl5
     SUBDIR += pfe-devel
     SUBDIR += pgcc
-    SUBDIR += php
+    SUBDIR += php3
     SUBDIR += php4
     SUBDIR += pike
     SUBDIR += pm3-base
