@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/net/Makefile,v 1.476 2001/03/10 15:04:20 sobomax Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -47,6 +47,7 @@
     SUBDIR += coda_server
     SUBDIR += crescendo
     SUBDIR += cricket
+    SUBDIR += cryptcat
     SUBDIR += cvsup
     SUBDIR += cvsup-bin
     SUBDIR += cvsup-mirror
