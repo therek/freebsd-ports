@@ -2,11 +2,12 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.35 2000/06/27 11:59:34 alex Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.36 2000/07/07 19:09:19 steve Exp $
 #
 
 PORTNAME=	hylafax
 PORTVERSION=	4.1.b2
+PORTREVISION=	1
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.hylafax.org/hylafax/source/BETA/
 DISTNAME=	${PORTNAME}-4.1beta2
