@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.550 2005/02/11 13:37:26 danfe Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.551 2005/02/11 21:59:05 naddy Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -44,7 +44,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>Erik Sj&ouml;lund discovered several issues in enscript:
+	<p>Erik Sjölund discovered several issues in enscript:
 	  it suffers from several buffer overflows, quotes and shell
 	  escape characters are insufficiently sanitized in filenames,
 	  and it supported taking input from an arbitrary command
