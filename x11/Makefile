@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.282 2000/03/10 23:41:06 billf Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.283 2000/03/11 00:22:16 jmz Exp $
 #
 
     SUBDIR += 9term
@@ -12,8 +12,11 @@
     SUBDIR += bricons
     SUBDIR += dgs
     SUBDIR += dxpc
+    SUBDIR += ebuttons
+    SUBDIR += efancylauncher
     SUBDIR += emu
     SUBDIR += eterm
+    SUBDIR += eweather
     SUBDIR += fbsd-icons
     SUBDIR += gmessage
     SUBDIR += gnome
