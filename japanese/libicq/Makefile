@@ -2,13 +2,15 @@
 # Date Created:			22 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/libicq/Makefile,v 1.12 2000/06/20 13:37:36 nectar Exp $
+# $FreeBSD: ports/japanese/libicq/Makefile,v 1.13 2000/06/29 07:02:22 obrien Exp $
 #
 
 PORTNAME=	libicq
 PORTVERSION=	0.33
 CATEGORIES=	japanese net
-MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
+		ftp://ftp.korsoft.com/pub/gicq/
+MASTER_SITE_SUBDIR=	flathill
 
 PATCH_SITES=	${MASTER_SITE_LOCAL} \
 		http://www-nagao.kuee.kyoto-u.ac.jp/member/taku/soft/
