@@ -3,7 +3,7 @@
 # Date Created:		4 Febuary 1999
 # Whom:			Justin Robinson
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/jmirror/Makefile,v 1.3 1999/08/25 05:55:12 obrien Exp $
 #
 
 DISTNAME=	jmirror-1.0b
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ruin.org/pub/All/
 
 MAINTAINER=	jmrobins@jmirror.ruin.org
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/FTP.pm:${PORTSDIR}/net/p5-Net
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/FTP.pm:${PORTSDIR}/net/p5-Net
 
 USE_PERL5=	YES
 NO_BUILD=       YES
