@@ -2,15 +2,19 @@
 # Date created:         5 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/mtools/Makefile,v 1.35 2000/11/26 04:13:14 jmz Exp $
+# $FreeBSD: ports/emulators/mtools/Makefile,v 1.36 2001/01/12 01:53:02 jmz Exp $
 #
 
 PORTNAME=	mtools
 PORTVERSION=	3.9.7
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.tux.org/pub/knaff/mtools/  \
 		http://mtools.linux.lu/
+
+PATCH_SITES=	http://mtools.linux.lu/
+PATCHFILES=	mtools-3.9.7-20001213.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	jmz@FreeBSD.org
 
@@ -38,7 +42,7 @@ post-install:
 	@#	mwrite has been removed by author, but we'll keep it just a bit longer
 	@${LN} -sf ${PREFIX}/bin/mtools ${PREFIX}/bin/mwrite
 	@${LN} -sf ${PREFIX}/man/man1/mcopy.1.gz ${PREFIX}/man/man1/mwrite.1.gz
-	@${INSTALL_DATA} ${WRKSRC}/mtools.conf ${PREFIX}/etc
+	@${INSTALL_DATA} ${WRKSRC}/mtools.conf ${PREFIX}/etc/mtools.conf.sample
 	@${ECHO} "Please verify ${PREFIX}/etc/mtools.conf for your machine."
 	@install-info ${PREFIX}/info/mtools.info ${PREFIX}/info/dir
 
