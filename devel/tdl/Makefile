@@ -2,7 +2,7 @@
 # Date created:				30 August 2001
 # Whom:					petef
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tdl/Makefile,v 1.1 2001/08/30 05:39:51 petef Exp $
 #
 
 PORTNAME=	tdl
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.rrbcurnow.freeuk.com/tdl/
 MAINTAINER=	petef@FreeBSD.org
 
 ALL_TARGET=	tdl
+
+MAN1=	tdl.1
 
 post-patch:
 	@${PERL} -pi -e 's,/usr/local,${PREFIX},; s,gcc,${CC},; \
