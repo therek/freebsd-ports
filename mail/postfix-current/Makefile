@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.31 2000/11/11 17:37:21 jedgar Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.32 2000/11/22 11:44:53 sobomax Exp $
 #
 
 PORTNAME=	postfix
@@ -110,8 +110,8 @@ CONF2+=			sample-tls.cf
 BIN1+=			tlsmgr
 POSTFIX_CCARGS+=	-DHAS_SSL -I/usr/include/openssl
 POSTFIX_AUXLIBS+=	-lssl -lcrypto
-DISTFILES+=		${DISTNAME}.tar.gz pfixtls-0.6.23-snap20001030-0.9.6.tar.gz
-EXTRA_PATCHES+=		${WRKDIR}/pfixtls-0.6.23-snap20001030-0.9.6/pfixtls.diff
+DISTFILES+=		${DISTNAME}.tar.gz pfixtls-0.6.24-snap20001121-0.9.6.tar.gz
+EXTRA_PATCHES+=		${WRKDIR}/pfixtls-0.6.24-snap20001121-0.9.6/pfixtls.diff
 PATCH_STRIP=		-p1
 PLIST_SUB+=		WITH_TLS=""
 .else
