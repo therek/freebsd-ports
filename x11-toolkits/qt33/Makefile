@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.87 2001/08/25 02:17:59 will Exp $
 #
 
 PORTNAME?=	qt
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/ \
 		ftp://ftp.chg.ru/pub/X11/qt/source/
 DISTNAME=	qt-x11-${PORTVERSION}
 
-MAINTAINER=	kde@FreeBSD.org
+MAINTAINER?=	kde@FreeBSD.org
 
 LIB_DEPENDS=	mng.1:${PORTSDIR}/graphics/libmng \
 		png.4:${PORTSDIR}/graphics/png \
