@@ -1,6 +1,7 @@
-# $FreeBSD: ports/palm/Makefile,v 1.23 2000/10/12 12:18:58 jeh Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.24 2001/01/08 19:04:00 clive Exp $
 #
 
+    SUBDIR += bibelot
     SUBDIR += coldsync
     SUBDIR += gnomepilot
     SUBDIR += gnomepilot-conduits
