@@ -2,18 +2,17 @@
 # Date created:         30 Oct 1997
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/net/sendfile/Makefile,v 1.13 2000/03/09 20:00:32 ade Exp $
+# $FreeBSD: ports/net/sendfile/Makefile,v 1.14 2000/04/09 18:13:32 cpiazza Exp $
 #
 
 PORTNAME=	sendfile
 PORTVERSION=	2.1
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.belwue.de/pub/unix/sendfile/current/
-DISTNAME=	sendfile-20000102
+DISTFILES=	sendfile-20000102.tar.gz
 
 MAINTAINER=	sec@42.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=makeconfig
 CONFIGURE_ENV=	PREFIX="${PREFIX}"

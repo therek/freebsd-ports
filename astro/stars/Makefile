@@ -2,7 +2,7 @@
 # Date created:		10 Jul 1996
 # Whom:			searle
 #
-# $FreeBSD: ports/astro/stars/Makefile,v 1.11 2000/04/08 22:01:51 mharo Exp $
+# $FreeBSD: ports/astro/stars/Makefile,v 1.12 2000/05/26 14:20:22 jseger Exp $
 #
 
 PORTNAME=	stars
@@ -10,12 +10,11 @@ PORTVERSION=	1.0
 CATEGORIES=	astro
 MASTER_SITES=	ftp://hpux.csc.liv.ac.uk/hpux/X11/Demos/stars-1.0/ \
 		ftp://askdonald.ask.uni-karlsruhe.de/hpux/X11/Demos/stars-1.0/
-DISTNAME=	stars-1.0-ss-11.00
+DISTFILES=	stars-1.0-ss-11.00.tar.gz
 
 MAINTAINER=	jseger@FreeBSD.org
 
 USE_X_PREFIX=	yes
-WRKSRC=		$(WRKDIR)/$(PKGNAME)
 
 CC?=		cc
 CFLAGS?=	-O2

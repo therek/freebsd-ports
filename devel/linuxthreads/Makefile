@@ -2,7 +2,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.13 2000/04/16 23:12:29 mharo Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.14 2000/05/24 04:14:41 jasone Exp $
 #
 
 PORTNAME=	linuxthreads
@@ -10,7 +10,7 @@ PORTVERSION=	2.1.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	glibc
-DISTNAME=	glibc-linuxthreads-${PORTVERSION}
+DISTFILES=	glibc-linuxthreads-${PORTVERSION}.tar.gz
 
 MAINTAINER=    jasone@freebsd.org
 
@@ -26,8 +26,6 @@ BROKEN="Requires FreeBSD 4.0 or newer"
 threads_files := README.FreeBSD clone.S clone.h freebsd-compat.h getgr_r.c \
 	gethostby_r.c getnetby_r.c getprotoby_r.c getpw_r.c getservby_r.c \
 	lclone.c libc_calls.c libc_thread.c sched.c uthread_file.c
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 SRC_BASE=	/usr/src
 LIBSRC_BASE=	${SRC_BASE}/lib

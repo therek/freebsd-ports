@@ -2,7 +2,7 @@
 # Date created:		Thu Jan 14 23:28:40 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/bladeenc/Makefile,v 1.11 2000/02/28 21:59:06 dirk Exp $
+# $FreeBSD: ports/audio/bladeenc/Makefile,v 1.12 2000/04/08 21:23:18 mharo Exp $
 #
 
 PORTNAME=	bladeenc
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.0-src-stable.tar.gz
 
 MAINTAINER=	dirk@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}.0
+WRKSRC=		${WRKDIR}/${DISTNAME}.0
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

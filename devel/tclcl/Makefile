@@ -2,21 +2,19 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/devel/tclcl/Makefile,v 1.5 2000/02/23 14:04:13 imura Exp $
+# $FreeBSD: ports/devel/tclcl/Makefile,v 1.6 2000/04/14 05:44:31 asami Exp $
 #
 
 PORTNAME=	tclcl
 PORTVERSION=	1.0b9
 CATEGORIES=	devel
 MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/
-DISTNAME=	tclcl-src-1.0b9
+DISTFILES=	tclcl-src-${PORTVERSION}.tar.gz
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
 LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 		otcl.1:${PORTSDIR}/lang/otcl
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2

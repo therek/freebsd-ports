@@ -2,18 +2,17 @@
 # Date created:		29 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/games/blockade/Makefile,v 1.3 1999/08/25 06:02:59 obrien Exp $
+# $FreeBSD: ports/games/blockade/Makefile,v 1.4 2000/04/14 00:45:32 mharo Exp $
 #
 
 PORTNAME=	blockade
 PORTVERSION=	1.00
 CATEGORIES=	games
 MASTER_SITES=	http://www.geocities.com/TimesSquare/Zone/5267/
-DISTNAME=	blockade-1_00-linux
+DISTFILES=	blockade-1_00-linux.tar.gz
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_XLIB=	yes
 
 MAN6=	blockade.6

@@ -5,7 +5,7 @@
 #
 # $Id: Makefile,v 1.5 2000/05/24 05:40:31 gsutter Exp $
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/junkfilter/Makefile,v 1.1 2000/05/24 06:12:43 gsutter Exp $
 #
 
 PORTNAME=	junkfilter
@@ -17,7 +17,6 @@ MAINTAINER=	gsutter@zer0.org
 
 RUN_DEPENDS=	procmail:${PORTSDIR}/mail/procmail
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 NO_BUILD=	yes
 BINDIR=		${PREFIX}/etc/${PORTNAME}
 

@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.9 2000/08/03 09:27:39 asami Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.10 2000/08/21 10:07:24 sobomax Exp $
 #
 
 PORTNAME=	fox
@@ -34,7 +34,6 @@ CONFIGURE_ARGS+=--enable-release
 CONFIGURE_ARGS+=--with-profiling=gprof
 .endif
 USE_LIBTOOL=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
 SHLIB_MAJ=	1
 SHLIB_MIN=	0
 MAKE_ENV+=	LT_CURRENT="${SHLIB_MAJ}" LT_REVISION="${SHLIB_MIN}"

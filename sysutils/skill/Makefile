@@ -2,7 +2,7 @@
 # Date created:         20 Oct 1998
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/sysutils/skill/Makefile,v 1.10 2000/04/22 10:13:14 mharo Exp $
+# $FreeBSD: ports/sysutils/skill/Makefile,v 1.11 2000/09/17 18:53:42 ade Exp $
 #
 
 PORTNAME=	skill
@@ -15,7 +15,6 @@ MAINTAINER=	jonny@jonny.eng.br
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	Config
-WRKSRC=			${WRKDIR}/${PKGNAME}
 
 MAN1=		skill.1
 MLINKS=		skill.1 snice.1

@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvier/Makefile,v 1.5 2000/04/02 01:00:22 mharo Exp $
+# $FreeBSD: ports/games/xvier/Makefile,v 1.6 2000/04/14 12:28:32 asami Exp $
 #
 
 PORTNAME=	xvier
@@ -14,7 +14,6 @@ DISTFILES=	xvier.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_IMAKE=	yes
 MAN6=		xvier.6
 MANCOMPRESSED=	no

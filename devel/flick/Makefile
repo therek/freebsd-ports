@@ -2,22 +2,20 @@
 # Date created:		21 Mar 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/devel/flick/Makefile,v 1.6 1999/12/25 01:46:09 steve Exp $
+# $FreeBSD: ports/devel/flick/Makefile,v 1.7 2000/04/11 21:27:53 mharo Exp $
 #
 
 PORTNAME=	flick
 PORTVERSION=	2.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://flux.cs.utah.edu/flux/flick/2.1/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-src
+DISTFILES=	${PORTNAME}-${PORTVERSION}-src.tar.gz
 
 MAINTAINER=     ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 post-install:
 .if !defined(NOPORTDOCS)

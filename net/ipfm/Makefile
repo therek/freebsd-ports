@@ -2,7 +2,7 @@
 # Date Created:				4 Mar 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/ipfm/Makefile,v 1.1.1.1 2000/03/11 15:36:23 jedgar Exp $
+# $FreeBSD: ports/net/ipfm/Makefile,v 1.2 2000/04/09 18:11:44 cpiazza Exp $
 #
 
 PORTNAME=	ipfm
@@ -13,7 +13,6 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	roman@xpert.com
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 PATCH_STRIP=	-p1
 
 GNU_CONFIGURE=	yes

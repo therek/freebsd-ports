@@ -2,7 +2,7 @@
 # Date created:		5 February 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.7 2000/07/13 07:19:31 sobomax Exp $
+# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.8 2000/07/19 13:32:01 alex Exp $
 #
 
 PORTNAME=	xnc
@@ -11,7 +11,7 @@ CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.xnc.dubna.su/src/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
-DISTNAME=	${PKGNAME}.src
+DISTFILES=	${DISTNAME}.src.tar.gz
 
 MAINTAINER=	dima@Chg.RU
 
@@ -26,7 +26,6 @@ MAINTAINER=	dima@Chg.RU
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

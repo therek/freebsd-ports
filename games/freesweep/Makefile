@@ -2,18 +2,17 @@
 # Date created:				25 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/freesweep/Makefile,v 1.4 2000/04/02 00:57:39 mharo Exp $
+# $FreeBSD: ports/games/freesweep/Makefile,v 1.5 2000/04/14 06:42:55 mharo Exp $
 #
 
 PORTNAME=	freesweep
 PORTVERSION=	0.87
 CATEGORIES=	games
 MASTER_SITES=	http://www.upl.cs.wisc.edu/~hartmann/sweep/
-DISTNAME=	${PORTNAME}
+DISTFILES=	${PORTNAME}.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-prefsdir=${PREFIX}/share/freesweep \

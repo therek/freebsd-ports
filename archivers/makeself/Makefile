@@ -2,15 +2,14 @@
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.4 2000/04/08 23:17:48 mharo Exp $
+# $FreeBSD: ports/archivers/makeself/Makefile,v 1.5 2000/06/22 05:51:50 will Exp $
 #
 
 PORTNAME=	makeself
 PORTVERSION=	1.5.3
 CATEGORIES=	archivers
 MASTER_SITES=	http://www.lokigames.com/~megastep/makeself/
-DISTNAME=	makeself
-EXTRACT_SUFX=	.gz.sh
+DISTFILES=	makeself.gz.sh
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -18,12 +17,11 @@ EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	${WRKDIR}
 NO_BUILD=	yes
-WRKSRC=                ${WRKDIR}/${PKGNAME}
 
 # The DISPLAY thing is to prevent the script from trying to launch a xterm
 # just to extract the source.
 pre-patch:
-	(cd ${WRKDIR} && ${SETENV} DISPLAY="" ${SH} ${DISTNAME}${EXTRACT_SUFX})
+	(cd ${WRKDIR} && ${SETENV} DISPLAY="" ${SH} ${DISTFILES})
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/makeself.sh ${PREFIX}/bin/makeself

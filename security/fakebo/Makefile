@@ -2,7 +2,7 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.9 2000/04/21 08:18:18 mharo Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.10 2000/09/21 23:43:44 kris Exp $
 #
 
 PORTNAME=	fakebo
@@ -15,8 +15,6 @@ MASTER_SITES=	ftp://ftp.deva.net/pub/sources/networking/ids/ \
 		ftp://ftp.linux.hr/pub/fakebo/
 
 MAINTAINER=	kris@FreeBSD.org
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
 

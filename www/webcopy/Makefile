@@ -2,7 +2,7 @@
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.14 2000/06/17 00:14:41 steve Exp $
+# $FreeBSD: ports/www/webcopy/Makefile,v 1.15 2000/07/07 18:44:46 steve Exp $
 #
 
 PORTNAME=	webcopy
@@ -15,7 +15,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 NO_PACKAGE=	"This program cannot be distributed if modified in any way"
 NO_CDROM=	"Don't sell for profit without written permission"
-WRKSRC=		${WRKDIR}/${PKGNAME}
 ALL_TARGET=
 
 do-install:

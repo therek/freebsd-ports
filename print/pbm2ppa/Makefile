@@ -2,21 +2,20 @@
 # Date created:		18 November 1998
 # Whom:			smace@freebsd.org
 #
-# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.8 2000/04/09 17:40:54 cpiazza Exp $
+# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.9 2000/04/09 17:50:21 cpiazza Exp $
 #
 
 PORTNAME=	pbm2ppa
 PORTVERSION=	0.8.6
 CATEGORIES=	print
 MASTER_SITES=	http://www.httptech.com/ppa/files/
-DISTNAME=	ppa-0.8.6
+DISTFILES=	ppa-${PORTVERSION}.tar.gz
 
 MAINTAINER=	smace@freebsd.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5 \
 		enscript:${PORTSDIR}/print/enscript-letter
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_GMAKE=	yes
 
 HPMODEL?=	720

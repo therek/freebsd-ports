@@ -2,20 +2,19 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.2 2000/03/29 20:09:31 will Exp $
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.3 2000/04/10 00:04:31 cpiazza Exp $
 #
 
 PORTNAME=	bkmrkconv
 PORTVERSION= 	1.08
 CATEGORIES=	www
 MASTER_SITES=	http://www.dcs.warwick.ac.uk/~csube/bkmrkconv/
-DISTNAME=	${PORTNAME}
+DISTFILES=	${PORTNAME}.tar.gz
 
 MAINTAINER=	will@FreeBSD.org
 
 USE_PERL5=	yes
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 pre-install:
 	@${PERL} -pi -e "s:/usr/local/bin/perl:${PERL}:g" ${WRKSRC}/*.pl

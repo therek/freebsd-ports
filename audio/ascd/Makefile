@@ -2,7 +2,7 @@
 # Date created:			29 November 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/ascd/Makefile,v 1.15 2000/08/03 09:22:24 asami Exp $
+# $FreeBSD: ports/audio/ascd/Makefile,v 1.16 2000/08/06 20:27:05 jim Exp $
 #
 
 PORTNAME=	ascd
@@ -14,8 +14,6 @@ DISTFILES=	${DISTNAME}-src.tgz ${DATAFILES}
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	workman.1:${PORTSDIR}/audio/libworkman
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 USE_IMAKE=	yes
 USE_XPM=	yes

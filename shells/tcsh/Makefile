@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.33 2000/07/21 13:00:24 alex Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.34 2000/07/22 08:42:17 alex Exp $
 #
 
 PORTNAME=	tcsh
@@ -24,7 +24,7 @@ DISTFILES=	# empty
 do-patch:
 .else
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 ALL_TARGET=	all catalogs
 INSTALL_TARGET=	install install.man
 MAN1=		tcsh.1

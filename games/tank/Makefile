@@ -2,20 +2,18 @@
 # Date created:         4 Mar 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tank/Makefile,v 1.13 2000/04/14 12:26:40 asami Exp $
+# $FreeBSD: ports/games/tank/Makefile,v 1.14 2000/08/03 09:23:52 asami Exp $
 #
 
 PORTNAME=	tank
 PORTVERSION=	0.4a
 CATEGORIES=	games
 MASTER_SITES=	http://step.polymtl.ca/~coyote/tank/
-DISTNAME=	${PKGNAME}-src
+DISTFILES=	${DISTNAME}-src.tar.gz
 
 MAINTAINER=	dburr@FreeBSD.org
 
 BROKEN=	can\'t find glaux.h
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 USE_MESA=	YES
 USE_GMAKE=	YES

@@ -2,7 +2,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ntop/Makefile,v 1.12 2000/08/09 01:59:48 kris Exp $
+# $FreeBSD: ports/net/ntop/Makefile,v 1.13 2000/08/13 06:32:58 kris Exp $
 #
 
 PORTNAME=	ntop
@@ -11,14 +11,13 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.unipi.it/pub/local/ntop/source/ \
 		http://www.freenix.no/~anders/ \
 		ftp://totem.fix.no/pub/mirrors/misc/
-DISTNAME=	ntop-1.1-src
+DISTFILES=	${DISTNAME}-src.tar.gz
 
 MAINTAINER=	billf@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 ALL_TARGET=
 INSTALL_TARGET=	install install-man
-WRKSRC=		${WRKDIR}/${PKGNAME}
 
 MAN8=		ntop.8
 

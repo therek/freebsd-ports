@@ -2,7 +2,7 @@
 # Date created:				29 Feb 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.4 2000/06/14 13:21:23 sobomax Exp $
+# $FreeBSD: ports/graphics/piddle/Makefile,v 1.5 2000/09/08 12:23:50 tg Exp $
 #
 
 PORTNAME=	piddle
@@ -10,14 +10,12 @@ PORTVERSION=	1.0b1
 CATEGORIES=	graphics python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	${PORTNAME}-${PORTVERSION}-5
-EXTRACT_SUFX=	.tgz
+DISTFILES=	${DISTNAME}-5.tgz
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
 RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 NO_BUILD=	yes
 
 PYTHON?=	${LOCALBASE}/bin/python

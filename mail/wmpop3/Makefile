@@ -2,18 +2,18 @@
 # Date created:			28 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.9 2000/08/03 09:25:29 asami Exp $
+# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.10 2000/08/13 09:33:20 jim Exp $
 #
 
 PORTNAME=	wmpop3
 PORTVERSION= 	0.5.6a
 CATEGORIES=	mail windowmaker
 MASTER_SITES=	http://www.cs.mun.ca/~scotth/download/
-DISTNAME=	WMPop3-${PORTVERSION}
+DISTFILES=	WMPop3-${PORTVERSION}.tar.gz
 
 MAINTAINER=	jim@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}/wmpop3
+WRKSRC=		${WRKDIR}/${DISTNAME}/wmpop3
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

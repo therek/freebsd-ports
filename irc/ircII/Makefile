@@ -2,7 +2,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/ircII/Makefile,v 1.24 2000/07/06 10:32:14 asmodai Exp $
+# $FreeBSD: ports/irc/ircII/Makefile,v 1.25 2000/08/13 16:44:01 alex Exp $
 #
 
 PORTNAME=	ircii
@@ -17,7 +17,6 @@ CONFIGURE_ENV=	IRCLIB=${PREFIX}/share/irc
 
 USE_BZIP2=	yes
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 MAN1=		ircII.1 ircbug.1
 
 .include <bsd.port.mk>

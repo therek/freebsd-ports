@@ -3,19 +3,18 @@
 # Date created:				6 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cdk/Makefile,v 1.11 2000/08/27 00:15:46 obrien Exp $
+# $FreeBSD: ports/devel/cdk/Makefile,v 1.12 2000/09/22 09:51:32 kris Exp $
 #
 
 PORTNAME=		cdk
 PORTVERSION=		4.9.10
 PORTREVISION=		1
 CATEGORIES=		devel
-MASTER_SITES=	http://www.vexus.ca/release/
-DISTNAME=	cdk
+MASTER_SITES=		http://www.vexus.ca/release/
+DISTFILES=		cdk.tar.gz
 
 MAINTAINER=	obrien@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 ALL_TARGET=	default
