@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.214 2001/08/30 04:24:21 lioux Exp $
+# $FreeBSD$
 #
     SUBDIR += yawho
 
@@ -69,7 +69,6 @@
     SUBDIR += guitar
     SUBDIR += gupsc
     SUBDIR += healthd
-    SUBDIR += heat
     SUBDIR += idled
     SUBDIR += installwatch
     SUBDIR += ipa
