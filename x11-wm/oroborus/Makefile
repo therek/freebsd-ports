@@ -2,11 +2,11 @@
 # Date created:				19 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/oroborus/Makefile,v 1.1 2001/04/19 08:10:09 sobomax Exp $
+# $FreeBSD: ports/x11-wm/oroborus/Makefile,v 1.2 2001/05/21 07:58:03 sobomax Exp $
 #
 
 PORTNAME=	oroborus
-PORTVERSION=	1.10
+PORTVERSION=	1.11.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.kensden.pwp.blueyonder.co.uk/Oroborus/
 DISTNAME=	${PORTNAME}-src-v${PORTVERSION}
@@ -18,17 +18,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_XPM=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-
-do-install:
-	${MKDIR} ${PREFIX}/share/${PORTNAME}
-	${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${PREFIX}/bin
-	${WRKSRC}/install_rc ${PREFIX}/share/${PORTNAME}/pixmaps/default > \
-		${WRKDIR}/${PORTNAME}rc
-	${INSTALL_DATA} ${WRKDIR}/${PORTNAME}rc ${PREFIX}/share/${PORTNAME}
-.for dir in agua default defold mac next win95
-	${MKDIR} ${PREFIX}/share/${PORTNAME}/pixmaps/${dir}
-	${INSTALL_DATA} ${WRKSRC}/pixmaps/${dir}/[^.]* \
-		${PREFIX}/share/${PORTNAME}/pixmaps/${dir}
-.endfor
+MAKE_ENV=	MKDIR="${MKDIR}"
 
 .include <bsd.port.mk>
