@@ -3,7 +3,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.2 1999/08/25 05:43:28 obrien Exp $
+# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.3 1999/10/11 06:19:13 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VENDOR}-${BITMAP_SNAPSHOT_VER}
@@ -14,7 +14,7 @@ MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
 BITMAP_VER=		7.19
-BITMAP_SNAPSHOT_VER=	05
+BITMAP_SNAPSHOT_VER=	07
 BITMAP_VENDOR=		kory
 BITMAP_PKG_VER=		${BITMAP_VER}.${BITMAP_SNAPSHOT_VER}
 BITMAPDOCDIR=	share/doc/bitmap
