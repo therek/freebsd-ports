@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.88 2000/08/21 11:56:52 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.89 2000/08/21 12:16:43 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -28,6 +28,7 @@
     SUBDIR += gtkstep-pastel
     SUBDIR += guile-gnome
     SUBDIR += guile-gtk
+    SUBDIR += icegradient
     SUBDIR += itk
     SUBDIR += iwidgets
     SUBDIR += iv
