@@ -2,16 +2,16 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.49 2000/05/23 09:23:44 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.50 2000/05/31 07:27:49 sheldonh Exp $
 #
 
 PORTNAME=	exim
-PORTVERSION= 	3.14
+PORTVERSION= 	3.15
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cus.cam.ac.uk/pub/software/programs/exim/ \
 		http://www.exim.org/ftp/ \
 		ftp://ftp.is.co.za/networking/mail/transport/exim/
-DISTFILES=	exim-3.14.tar.gz exim-texinfo-3.10.tar.gz
+DISTFILES=	exim-3.15.tar.gz exim-texinfo-3.10.tar.gz
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
