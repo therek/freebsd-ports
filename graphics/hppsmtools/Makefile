@@ -3,10 +3,10 @@
 # Date created:		2 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.1.1.1 1999/10/07 03:25:59 cpiazza Exp $
+# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.2 2000/02/01 00:02:21 mharo Exp $
 #
 
-DISTNAME=	hppsmtools-0.92
+DISTNAME=	hppsmtools-1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://unimut.fsk.uni-heidelberg.de/unimut/photosmart/ \
 		http://www.freenix.no/~anders/ \
