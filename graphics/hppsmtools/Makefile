@@ -2,13 +2,13 @@
 # Date created:		2 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.3 2000/03/21 00:25:30 jedgar Exp $
+# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.4 2000/04/14 10:46:21 asami Exp $
 #
 
 PORTNAME=	hppsmtools
 PORTVERSION=	1.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://unimut.fsk.uni-heidelberg.de/unimut/photosmart/ \
+MASTER_SITES=	http://unimut.fsk.uni-heidelberg.de/demi/photosmart/ \
 		http://www.freenix.no/~anders/ \
 		ftp://totem.fix.no/pub/mirrors/misc/
 
