@@ -2,7 +2,7 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake-4/Makefile,v 1.11 2001/03/29 12:04:20 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imake
@@ -58,6 +58,7 @@ SCRIPTS_ENV+=	OSVERSION=${OSVERSION} \
 		BuildCIDFonts=${BuildCIDFonts} \
 		BuildTTFonts=${BuildTTFonts}
 INSTALL_TARGET=	install install.man
+LATEST_LINK=	imake-4
 # ---
 # User Config:
 # All variables are same as Imake config macros.
