@@ -3,7 +3,7 @@
 # Date created:		11 Dez 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/emulators/frodo/Makefile,v 1.5 1999/08/25 05:49:16 obrien Exp $
+# $FreeBSD: ports/emulators/frodo/Makefile,v 1.6 1999/11/28 18:30:59 steve Exp $
 #
 
 DISTNAME=	FrodoV4_1a.Src
@@ -25,7 +25,7 @@ do-configure:
 	@(cd ${WRKSRC}; ${SH} ./configure)
 
 do-install:
-	${SED} -e 's/\$${PREFIX}/${PREFIX:S/\//\\\//g}/g' \
+	${SED} -e 's=\$${PREFIX}=${PREFIX}=g' \
 		 < ${FILESDIR}/frodo > ${WRKDIR}/frodo
 	${INSTALL_SCRIPT} ${WRKDIR}/frodo ${PREFIX}/bin
 	${MKDIR} ${PREFIX}/libexec/frodo
