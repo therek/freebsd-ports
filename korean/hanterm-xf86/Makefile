@@ -3,14 +3,13 @@
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hanterm-xf86/Makefile,v 1.15 1999/08/30 12:08:53 peter Exp $
 #
 
-DISTNAME=	hanterm-xf-p16
-PKGNAME=	ko-hanterm-xf-16
+DISTNAME=	hanterm-xf-p17
+PKGNAME=	ko-hanterm-xf-17
 CATEGORIES=	korean x11
-MASTER_SITES=	http://pseudo.snu.ac.kr/~hwang/ \
-		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
+MASTER_SITES=	http://www.kr.FreeBSD.org/~hwang/hanterm/
 
 MAINTAINER=	cjh@kr.freebsd.org
 
