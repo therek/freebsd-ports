@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.568 2001/06/21 14:51:28 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.569 2001/06/22 07:23:39 kevlo Exp $
 #
 
     SUBDIR += ElectricFence
@@ -103,6 +103,7 @@
     SUBDIR += elib-emacs
     SUBDIR += elib-emacs20
     SUBDIR += entity
+    SUBDIR += error
     SUBDIR += f77flow
     SUBDIR += fam
     SUBDIR += fampp
