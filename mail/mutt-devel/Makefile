@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.85 2000/05/13 18:27:43 ache Exp $
 #
 
 PORTNAME=	mutt
@@ -57,7 +57,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_TARGET=${ARCH}-portbld-freebsd${OSREL}
 CONFIGURE_ARGS= --enable-pop --enable-imap --enable-flock --disable-fcntl  \
 		--with-sharedir=${PREFIX}/share/mutt \
-		--with-docdir=${PREFIX}/share/doc/mutt --with-charmaps
+		--with-docdir=${PREFIX}/share/doc/mutt --with-charmaps \
+		--enable-locales-fix
 .if defined(BATCH) || defined(WITH_SLANG)
 CONFIGURE_ARGS+=	--with-slang=${PREFIX}
 .elif defined(WITH_NCURSES_PORT)
