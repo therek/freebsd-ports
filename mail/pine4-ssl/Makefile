@@ -2,7 +2,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.19 2000/09/29 08:07:31 kris Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.20 2000/10/30 03:47:10 kris Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -18,8 +18,6 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
 		http://www.kfu.com/~nsayer/encryption/software/
 DISTNAME=	pine4+ssl-1.4
 DISTFILES=	pine4.21${EXTRACT_SUFX}
-
-FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 PATCH_SITES=	http://www.kfu.com/~nsayer/encryption/software/
 PATCHFILES=	${DISTNAME}${EXTRACT_SUFX}
