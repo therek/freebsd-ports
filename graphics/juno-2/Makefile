@@ -2,13 +2,13 @@
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/juno-2/Makefile,v 1.1.1.1 2000/02/13 23:51:49 jdp Exp $
+# $FreeBSD: ports/graphics/juno-2/Makefile,v 1.2 2000/04/14 10:46:27 asami Exp $
 #
 
 PORTNAME=	juno-2
 PORTVERSION=	1.23
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.research.digital.com/SRC/juno-2/
+MASTER_SITES=	http://www.research.compaq.com/SRC/juno-2/
 DISTNAME=	juno-sources
 
 MAINTAINER=	jdp@FreeBSD.org

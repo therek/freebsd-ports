@@ -2,13 +2,13 @@
 # Date created:		13 June 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/print/virtualpaper/Makefile,v 1.14 2000/04/09 17:41:30 cpiazza Exp $
+# $FreeBSD: ports/print/virtualpaper/Makefile,v 1.15 2000/04/09 17:50:47 cpiazza Exp $
 #
 
 PORTNAME=	virtualpaper
 PORTVERSION=	1.4
 CATEGORIES=	print
-MASTER_SITES=	http://www.research.digital.com:80/SRC/virtualpaper/cgi-bin/nph-download.tcl/sources.tar.Z?object=Virtual+Paper/
+MASTER_SITES=	http://www.research.compaq.com/SRC/virtualpaper/cgi-bin/nph-download.tcl/sources.tar.Z?object=Virtual+Paper/
 DISTFILES=	sources.tar.Z
 
 MAINTAINER=	jdp@FreeBSD.org
