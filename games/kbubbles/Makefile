@@ -3,7 +3,7 @@
 # Date created:		15 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/kbubbles/Makefile,v 1.1.1.1 2000/02/22 22:16:04 jedgar Exp $
+# $FreeBSD: ports/games/kbubbles/Makefile,v 1.2 2000/02/23 23:51:50 jedgar Exp $
 #
 
 DISTNAME=	kbubbles-0.8.6
@@ -17,10 +17,4 @@ BUILD_DEPENDS=	${LOCALBASE}/include/QwSpriteField.h:${PORTSDIR}/converters/kdesu
 GNU_CONFIGURE=	yes
 USE_QT=		yes
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400004
-BROKEN=		"Requires NEWGCC-compiled KDE libs"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
