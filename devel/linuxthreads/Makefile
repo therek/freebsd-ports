@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.5 1999/12/04 18:44:59 julian Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.6 1999/12/28 15:18:32 jasone Exp $
 #
 
 DISTNAME=      glibc-linuxthreads-2.1.2
@@ -15,9 +15,9 @@ ONLY_FOR_ARCHS= i386
 
 MAINTAINER=    jasone@freebsd.org
 
-threads_files := README.FreeBSD _atomic_lock.S clone.S clone.h getgr_r.c \
-	lclone.c libc_calls.c libc_private.h libc_spinlock.c libc_spinlock.h \
-	libc_thread.c sched.c uthread_file.c
+threads_files := README.FreeBSD clone.S clone.h freebsd-compat.h getgr_r.c \
+	gethostby_r.c getnetby_r.c getprotoby_r.c getpw_r.c getservby_r.c \
+	lclone.c libc_calls.c libc_thread.c sched.c uthread_file.c
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
@@ -26,7 +26,7 @@ LIBSRC_BASE=	${SRC_BASE}/lib
 
 post-extract:
 	@mv ${WRKDIR}/linuxthreads ${WRKDIR}/${PKGNAME}
-.for src in no-tsd.c oldsemaphore.c sysdeps/pthread/semaphore.h
+.for src in no-tsd.c oldsemaphore.c weaks.c sysdeps/pthread/semaphore.h
 	@mv ${WRKSRC}/$(src) ${WRKSRC}/$(src).unused
 .endfor
 	@cd ${FILESDIR} ; \
