@@ -2,11 +2,11 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.5 2000/02/14 13:05:06 tg Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.6 2000/04/14 10:46:51 asami Exp $
 #
 
 PORTNAME=	opendx
-PORTVERSION=	4.0.10
+PORTVERSION=	4.1.0
 CATEGORIES=	graphics math
 MASTER_SITES=	http://opendx.npaci.edu/source/
 DISTNAME=	dx-${PORTVERSION}
@@ -29,6 +29,6 @@ PLIST_SUB=	ARCH=${MACHINE_ARCH}
 
 post-patch:
 	@find ${WRKSRC} -name Makefile.in | \
-	  xargs /usr/bin/perl -pi -e 's/-lXm /\$${MOTIFLIB} /g'
+	  xargs ${PERL} -pi -e 's/-lXm /\$${MOTIFLIB} /g'
 
 .include <bsd.port.mk>
