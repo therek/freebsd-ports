@@ -2,7 +2,7 @@
 # Date created:		19 August 1998
 # Whom:			Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/binkd/Makefile,v 1.9 2000/04/01 21:29:29 mharo Exp $
+# $FreeBSD: ports/net/binkd/Makefile,v 1.10 2000/04/09 18:10:17 cpiazza Exp $
 #
 
 PORTNAME=	binkd
@@ -20,7 +20,9 @@ GNU_CONFIGURE=	yes
 MAN8=		binkd.8
 
 .if defined(WITH_AMIGA4D)
-EXTRA_PATCHES+=	${FILESDIR}/patch-amiga4d
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	binkdaso.diff
+PATCH_DIST_STRIP=	-l
 DEFINES+=	-DAMIGADOS_4D_OUTBOUND
 MAKE_ENV+=	DEFINES="${DEFINES}"
 .endif
