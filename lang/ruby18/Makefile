@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.12 2001/06/09 02:33:13 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.13 2001/06/11 09:32:02 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -104,10 +104,12 @@ post-install:
 		-e ' end;' \
 		-e 'end' \
 		${IRB_WITH_SUFFIX}
-	${MKDIR} ${LOCALBASE}/lib/xemacs/site-lisp
 	${MKDIR} ${RUBY_ELISPDIR}
+	${TOUCH} ${RUBY_ELISPDIR}/.keep_me
 	${MKDIR} ${RUBY_EXAMPLESDIR}
+	${TOUCH} ${RUBY_EXAMPLESDIR}/.keep_me
 	${MKDIR} ${RUBY_DOCDIR}
+	${TOUCH} ${RUBY_DOCDIR}/.keep_me
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}
 	${MKDIR} ${RUBY_EXAMPLESDIR}/curses
