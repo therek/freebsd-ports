@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.86 2000/04/16 18:56:22 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.87 2000/05/02 14:02:03 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -98,6 +98,9 @@ while [ "$1" ]; do
 			fi
 			;;
 		\"IMAP\")
+			echo "IMAP is DISABLED for now. Ignoring." > /dev/stderr
+			;;
+		\"nothing\")
 			echo "BUILD_DEPENDS+=	\${PREFIX}/lib/libc-client4.a:\${PORTSDIR}/mail/imap-uw"
 			echo "PHP_CONF_ARGS+=	--with-imap=\${PREFIX}"
 			;;
