@@ -2,7 +2,7 @@
 # Date created:		30 August 1999
 # Whom:			markm
 #
-# $FreeBSD: ports/net/tn3270/Makefile,v 1.1.1.1 1999/08/30 20:27:50 markm Exp $
+# $FreeBSD: ports/net/tn3270/Makefile,v 1.2 2000/04/09 18:13:47 cpiazza Exp $
 #
 
 PORTNAME=	tn3270
@@ -18,6 +18,17 @@ MAINTAINER=	markm@FreeBSD.ORG
 MAN1=		tn3270.1 mset.1
 MAN5=		map3270.5
 MANCOMPRESSED=	maybe
+
+LIBTELNETDIR?=	/usr/src/lib/libtelnet
+
+post-extract:
+	@if [ ! -d ${LIBTELNETDIR} ]; then \
+		${ECHO} "You need libtelnet sources in"; \
+		${ECHO} "${LIBTELNETDIR}"; \
+		${ECHO} "to build this port."; \
+	exit 1; \
+	fi
+	${CP} -rp ${LIBTELNETDIR} ${WRKSRC}
 
 do-configure:
 	${ECHO} "BINDIR=	${PREFIX}/bin" > ${WRKDIR}/Makefile.inc
