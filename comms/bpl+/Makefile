@@ -3,13 +3,13 @@
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/comms/bpl+/Makefile,v 1.6 1999/08/31 06:40:53 mharo Exp $
+# $FreeBSD: ports/comms/bpl+/Makefile,v 1.7 2000/03/08 07:17:54 max Exp $
 #
 
 DISTNAME=	bpl+
 PKGNAME=	bpl+-1.0
 CATEGORIES=	comms
-MASTER_SITES=	http://www.FreeBSD.org/~max/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~max/distfiles/
 
 MAINTAINER=	max@FreeBSD.org
 

@@ -3,14 +3,14 @@
 # Date created:			8 August 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libworkman/Makefile,v 1.3 2000/01/27 20:28:25 jim Exp $
+# $FreeBSD: ports/audio/libworkman/Makefile,v 1.4 2000/02/07 23:07:30 jim Exp $
 #
 
 DISTNAME=	libworkman-1999-06-20
 PKGNAME=	libworkman-1.4
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.midwinter.com/WorkMan/SNAPSHOTS/ \
-		http://www.FreeBSD.org/~jim/distfiles/
+		http://people.FreeBSD.org/~jim/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
