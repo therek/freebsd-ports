@@ -1,6 +1,6 @@
 # ex:ts=8	-*-mode: makefile-*-
 # Common file for CUPS ports
-# $FreeBSD: ports/print/cups/Makefile.common,v 1.9 2003/01/23 22:16:06 alane Exp $
+# $FreeBSD: ports/print/cups/Makefile.common,v 1.10 2003/01/25 07:22:30 alane Exp $
 
 CUPS_MASTER_SITES=\
   ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${CUPS_VERSION}/ \
@@ -12,7 +12,7 @@ CUPS_MASTER_SITES=\
 CUPS_VERSION=	1.1.18
 CUPS_REVISION=	0
 CUPS_PORTVER=	${CUPS_VERSION}.${CUPS_REVISION}
-CUPS_PORTREV=	3
+CUPS_PORTREV=	4
 CUPS_PORTEPOCH=	0
 CUPS_FILESDIR=	${.CURDIR}/../../print/cups/files
 CUPS_ETCDIR=	${PREFIX}/etc/cups
