@@ -2,11 +2,11 @@
 # Date created:		31 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-soap/Makefile,v 1.1 2001/03/31 12:04:26 knu Exp $
 #
 
 PORTNAME=	soap
-PORTVERSION=	1.2.0
+PORTVERSION=	1.3.0
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/SOAP4R/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -17,7 +17,8 @@ MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/uri.rb:${PORTSDIR}/net/ruby-uri \
 		${RUBY_SITELIBDIR}/http-access.rb:${PORTSDIR}/www/ruby-http-access \
-		${RUBY_SITELIBDIR}/date3.rb:${PORTSDIR}/devel/ruby-date2
+		${RUBY_SITELIBDIR}/date3.rb:${PORTSDIR}/devel/ruby-date2 \
+		${RUBY_SITELIBDIR}/nqxml/info.rb:${PORTSDIR}/textproc/ruby-nqxml
 
 USE_RUBY=	yes
 
@@ -36,7 +37,7 @@ do-install:
 	${CP} -R ${WRKSRC}/lib/* ${RUBY_SITELIBDIR}/
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${CP} -R ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${CP} -R ${WRKSRC}/sample/* ${WRKSRC}/test ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
