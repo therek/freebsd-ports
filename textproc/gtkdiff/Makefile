@@ -2,7 +2,7 @@
 # Date created:		17 November 1999
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.3 2000/04/09 21:52:37 cpiazza Exp $
+# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.4 2000/05/17 11:18:26 sobomax Exp $
 #
 
 PORTNAME=	gtkdiff
@@ -18,7 +18,9 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}"
+		GTK_CONFIG="${GTK_CONFIG}" \
+		CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
