@@ -2,11 +2,12 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/expat2/Makefile,v 1.7 2000/10/24 09:51:37 kuriyama Exp $
 #
 
 PORTNAME=	expat
 PORTVERSION= 	1.95.1
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	expat
@@ -20,7 +21,7 @@ USE_GMAKE=	yes
 
 INSTALLS_SHLIBS=	yes
 
-SHLIB_MAJOR=	0
+SHLIB_MAJOR=	2
 
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
 
