@@ -1,10 +1,11 @@
-# $FreeBSD: ports/comms/Makefile,v 1.39 1999/12/27 01:36:38 steve Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.40 2000/01/04 22:11:31 phk Exp $
 #
 
     SUBDIR += asmodem
     SUBDIR += bpl+
     SUBDIR += conserver
     SUBDIR += ecu
+    SUBDIR += gkermit
     SUBDIR += gnokii
     SUBDIR += hylafax
     SUBDIR += kermit
