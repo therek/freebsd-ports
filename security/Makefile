@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.91 2000/02/20 10:29:07 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.92 2000/02/22 20:46:02 jedgar Exp $
 #
 
     SUBDIR += bjorb
@@ -45,6 +45,7 @@
     SUBDIR += nmap
     SUBDIR += nmapfe
     SUBDIR += openssh
+    SUBDIR += openssh-askpass
     SUBDIR += openssl
     SUBDIR += p5-Authen-PAM
     SUBDIR += p5-Authen-Radius
