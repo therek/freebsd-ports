@@ -2,13 +2,13 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/jove/Makefile,v 1.18 2000/04/14 00:25:35 mharo Exp $
+# $FreeBSD: ports/editors/jove/Makefile,v 1.19 2000/04/23 22:59:25 kris Exp $
 #
 
 PORTNAME=	jove
 PORTVERSION=	4.16
 CATEGORIES=	editors
-MASTER_SITES=	ftp://relay.cs.toronto.edu/pub/moraes/jove/
+MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/jove/
 
 MAINTAINER=	ports@FreeBSD.org
 
