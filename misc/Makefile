@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.292 2000/09/16 15:36:46 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.293 2000/09/16 19:40:58 will Exp $
 #
 
     SUBDIR += 221upgrade
@@ -96,6 +96,7 @@
     SUBDIR += moviedb
     SUBDIR += mshell
     SUBDIR += muuz
+    SUBDIR += nsf
     SUBDIR += numchar
     SUBDIR += nwrite
     SUBDIR += orville-write
