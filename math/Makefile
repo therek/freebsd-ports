@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.129 2001/06/05 05:22:15 ade Exp $
+# $FreeBSD: ports/math/Makefile,v 1.130 2001/06/11 03:01:31 will Exp $
 #
 
     SUBDIR += GiNaC
@@ -24,6 +24,7 @@
     SUBDIR += freefem
     SUBDIR += fudgit
     SUBDIR += geg
+    SUBDIR += gexpr
     SUBDIR += glove
     SUBDIR += glpk
     SUBDIR += gnumeric
