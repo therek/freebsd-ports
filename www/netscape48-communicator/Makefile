@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.60 2000/03/07 06:46:24 reg Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.61 2000/03/07 07:23:32 reg Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -12,8 +12,6 @@ MASTER_SITES?=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/unsuppo
 DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 
 MAINTAINER?=	sada@FreeBSD.org
-
-RUN_DEPENDS?=	${X11BASE}/lib/aout/libX11.so.6.1:${PORTSDIR}/x11/XFree86-aoutlibs
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 
@@ -28,7 +26,6 @@ NO_FILTER_SHLIBS=	yes
 STRIP=
 WRKSRC?=	${WRKDIR}/${BROWSER}-v408.x86-unknown-freebsd
 PKGDIR=		${.CURDIR}/pkg
-PKGREQ?=	${MASTERDIR}/pkg/REQ
 
 AUTOADMIN?=	autoadmin-v408.x86-unknown-freebsd.tar.gz
 BROWSER?=	communicator
@@ -55,6 +52,16 @@ DISTFILES+=	${FORTIFY}.tar.gz
 RESTRICTED=     "Contains strong cryptography"
 .endif
 
+.if !defined(_PREMKINCLUDED)
+.include <bsd.port.pre.mk>
+.endif
+
+.if (${ARCH} == "i386") && !defined(USE_LINUX_LIB)
+USE_AOUT_LIB=	yes
+PKGREQ=		${MASTERDIR}/pkg/REQ.aout
+RUN_DEPENDS=	${X11BASE}/lib/aout/libX11.so.6.1:${PORTSDIR}/x11/XFree86-aoutlibs
+.endif
+
 .SILENT:
 
 .if !defined(USE_128BIT) && !defined(NO_FORTIFY)
@@ -70,8 +77,10 @@ post-configure:
 	${CHMOD} +x ${WRKSRC}/netscape
 	${ECHO} -n ${INFILE_HEAD},${NDIR} >${WRKSRC}/infile
 
+.if defined(USE_AOUT_LIB)
 pre-install:
 	PKG_PREFIX=${PREFIX} ${SH} ${PKGREQ} ${PKGNAME} INSTALL
+.endif
 
 do-install:
 	${MKDIR} ${NDIR}/java/classes
@@ -104,7 +113,7 @@ post-install:
 	${CAT} ${PKGDIR}/DESCR
 
 # hack to allow slave ports to include bsd.port.pre.mk and then this file
-.if defined(PRE_MK_INCLUDED)
+.if defined(_PREMKINCLUDED)
 .include <bsd.port.post.mk>
 .else
 .include <bsd.port.mk>

@@ -4,7 +4,7 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.17 2000/02/28 08:34:01 asami Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.18 2000/03/04 23:58:11 cpiazza Exp $
 #
 
 DISTNAME=	linux-netscape-communicator-${BROWSER_VER}
@@ -24,8 +24,7 @@ BROWSER=	communicator-linux
 
 WRKSRC=		${WRKDIR}/communicator-v472.x86-unknown-linux2.0
 
-# use fake shell REQ script, since we don't require X aout libs.
-PKGREQ=		${.CURDIR}/pkg/REQ
+USE_LINUX_LIB=	yes
 
 MAILCAP=	${.CURDIR}/files/mailcap
 NSUBDIR=	lib/netscape-linux
