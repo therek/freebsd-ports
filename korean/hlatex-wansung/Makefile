@@ -2,14 +2,13 @@
 # Date created:                 Sun Aug  9 18:05:29 KST 1998
 # Whom:                         CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/hlatex-wansungstd/Makefile,v 1.1.1.1 1999/09/03 16:11:59 sada Exp $
+# $FreeBSD: ports/korean/hlatex-wansungstd/Makefile,v 1.2 2000/04/13 09:16:44 asami Exp $
 #
 
 PORTNAME=		HLaTeX-${HLATEX_ENCODING}std
 PORTVERSION=		0.98
 CATEGORIES=             korean print
-MASTER_SITES=           ftp://ftp.linguistik.uni-erlangen.de/pub/HLaTeX/ \
-			ftp://ftp.linguistik.uni-erlangen.de/pub/HLaTeX/${HLATEX_ENCODING}/
+MASTER_SITES=           ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/hlatex98/
 DISTNAME=               HLaTeX-${HLATEX_ENCODING}-0.98
 DISTFILES=              HLaTeX-0.98.tar.bz2 ${HLATEX_FONTS_BASE}
 
