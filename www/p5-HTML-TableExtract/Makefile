@@ -2,7 +2,7 @@
 # Date created:				October 21th 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-TableExtract/Makefile,v 1.3 2001/02/05 15:33:43 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-TableExtract
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ozz@FreeBSD.org.ru
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/HTML/HeadParser.pm:${PORTSDIR}/www/p5-HTML-Parser
 
 PERL_CONFIGURE=	yes
 
