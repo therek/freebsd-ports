@@ -1,4 +1,4 @@
-$FreeBSD: ports/emulators/psim-freebsd/files/README.patches,v 1.2 2001/10/13 20:06:27 mp Exp $
+$FreeBSD: ports/emulators/psim-freebsd/files/README.patches,v 1.3 2002/03/10 21:04:40 obrien Exp $
 
 Patch comments:
 
@@ -13,7 +13,3 @@ OpenFirmware callback.
 
 sim/ppc/hw_init.c:
 Allow the simulator to load a dynamically linked OEA environment.
-
-sim/ppc/hw_tab.c:
-Ignore warnings for the improper alignment of the htab. A better fix would be
-to properly align the htab when the memory is allocated in the first place.
