@@ -2,13 +2,14 @@
 # Date created:		19 November 1998
 # Whom:			Tom Hukins <tom@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode+/Makefile,v 1.18 2000/10/20 13:48:37 tom Exp $
+# $FreeBSD: ports/news/leafnode+/Makefile,v 1.19 2001/02/26 14:09:33 tom Exp $
 #
 
 PORTNAME=	leafnode+
-PORTVERSION=	2.12
+PORTVERSION=	2.14
 CATEGORIES=	news
-MASTER_SITES=	http://www.io.com/~kazushi/leafnode+/
+MASTER_SITES=	http://www.io.com/~kazushi/leafnode+/ \
+		ftp://ftp.io.com/pub/usr/kazushi/leafnode+/
 
 MAINTAINER=	tom@FreeBSD.org
 
@@ -20,9 +21,9 @@ PLIST=	${PKGDIR}/pkg-plist.nodocs
 .endif
 
 LEAFLIBDIR?=	${PREFIX}/lib/leafnode
-LEAFSPOOLDIR?=	/var/spool/leafnode
+SPOOLDIR?=	/var/spool/leafnode
 REWRITE=	${SED} -e "s:@LIBDIR@:${LEAFLIBDIR}:g" \
-		-e "s:@SPOOLDIR@:${LEAFSPOOLDIR}:g" \
+		-e "s:@SPOOLDIR@:${SPOOLDIR}:g" \
 		-e "s:@PREFIX@:${PREFIX}:g"
 
 post-patch:
