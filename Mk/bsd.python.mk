@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.20 2002/04/11 11:29:52 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.21 2002/04/12 10:33:42 tg Exp $
 #
 
 .if !defined(Python_Include)
