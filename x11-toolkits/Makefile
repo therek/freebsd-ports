@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.80 2000/07/06 11:29:22 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.81 2000/07/06 14:47:24 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -30,6 +30,8 @@
     SUBDIR += jx
     SUBDIR += kde-qt-addon
     SUBDIR += lesstif
+    SUBDIR += libj2dplot
+    SUBDIR += libjparser
     SUBDIR += libjsearch
     SUBDIR += libjtoolbar
     SUBDIR += libjtree
