@@ -1,12 +1,12 @@
 # New ports collection makefile for:	lmmon
-# Version required:			0.50
+# Version required:			0.52
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/lmmon/Makefile,v 1.1.1.1 1999/09/27 17:18:47 cpiazza Exp $
+# $FreeBSD: ports/sysutils/lmmon/Makefile,v 1.2 1999/09/27 17:39:58 cpiazza Exp $
 #
 
-DISTNAME=	lmmon-0.50
+DISTNAME=	lmmon-0.52
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.fxp.org/~jedgar/
 
