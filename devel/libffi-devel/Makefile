@@ -3,16 +3,16 @@
 # Date created:			14, June, 1998
 # Whom:				Horance Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libffi/Makefile,v 1.10 1999/08/25 05:48:20 obrien Exp $
 #
 
-DISTNAME=       libffi-1.20
+DISTNAME=	libffi-1.20
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.cygnus.com/pub/green/
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/libffi/
 
-MAINTAINER=     horance@freedom.ie.cycu.edu.tw
+MAINTAINER=	horance@freedom.ie.cycu.edu.tw
 
-USE_LIBTOOL=  yes
+USE_LIBTOOL=	yes
 CONFIGURE_TARGET=	# empty
 
 post-install:
