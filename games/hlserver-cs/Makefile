@@ -2,13 +2,14 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.1 2001/03/23 10:16:47 markm Exp $
 #
 
 PORTNAME=	CS
 PORTVERSION=	1.1b
 CATEGORIES=	games linux
-MASTER_SITES=	ftp://ftp.icrontic.com/pub/ \
+MASTER_SITES=	http://hex.databits.net/~pat/ \
+		ftp://ftp.icrontic.com/pub/ \
 		http://flf.playnet.com/
 DISTNAME=	cs_11b_full
 EXTRACT_ONLY=	

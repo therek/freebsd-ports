@@ -2,13 +2,14 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-flf/Makefile,v 1.1 2001/03/23 10:16:47 markm Exp $
 #
 
 PORTNAME=	FLF
 PORTVERSION=	1.2
 CATEGORIES=	games linux
-MASTER_SITES=	ftp://ftp.icrontic.com/pub/ \
+MASTER_SITES=	http://hex.databits.net/~pat/ \
+		ftp://ftp.icrontic.com/pub/ \
 		ftp://ftp.task.gda.pl/vol/d33/ftp.extreme-players.de/exp/hl/mod/frontlineforce/
 DISTNAME=	frontline_linux_1.2
 EXTRACT_ONLY=
