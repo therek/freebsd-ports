@@ -3,11 +3,11 @@
 # Date created:		11 Nov 1999
 # Whom:			Frank Gruender
 #
-# $FreeBSD: ports/lang/yabasic/Makefile,v 1.1 1999/12/25 15:08:59 steve Exp $
+# $FreeBSD: ports/lang/yabasic/Makefile,v 1.2 2000/01/02 13:52:19 vanilla Exp $
 #
 
 DISTNAME=	yab
-PKGNAME=	yabasic-2.61
+PKGNAME=	yabasic-2.62
 CATEGORIES=	lang
 MASTER_SITES=	http://www.yabasic.de/download/
 EXTRACT_SUFX=	.tar.Z
@@ -16,6 +16,6 @@ MAINTAINER=	elwood@mc5sys.in-berlin.de
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/yabasic-2.61
+WRKSRC=		${WRKDIR}/${PKGNAME}
 
 .include <bsd.port.mk>
