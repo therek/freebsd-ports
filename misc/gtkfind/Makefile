@@ -2,7 +2,7 @@
 # Date created:				28 Sept 1998
 # Whom:					Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/misc/gtkfind/Makefile,v 1.12 2000/09/15 22:29:01 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkfind
@@ -14,6 +14,8 @@ MASTER_SITES=	http://www.oz.net/~mattg/
 #MASTER_SITE_SUBDIR=	X11/gtkbuffet/apps/gtkfind
 
 MAINTAINER=	billf@FreeBSD.org
+
+BROKEN=		"Missing dependency on xterm"
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
