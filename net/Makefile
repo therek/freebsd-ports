@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.314 1999/11/26 20:21:47 steve Exp $
+# $FreeBSD: ports/net/Makefile,v 1.315 1999/11/26 23:23:55 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -45,6 +45,7 @@
     SUBDIR += dlint
     SUBDIR += dnsutl
     SUBDIR += dnswalk
+    SUBDIR += doc
     SUBDIR += domtools
     SUBDIR += echoping
     SUBDIR += elsa
