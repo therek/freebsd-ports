@@ -2,10 +2,11 @@
 # Date created:				January 27, 1999
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/lang/gpc/Makefile,v 1.2 2000/10/09 15:36:59 lioux Exp $
+# $FreeBSD: ports/lang/gpc/Makefile,v 1.3 2000/11/14 13:38:38 asami Exp $
 
 PORTNAME=	gpc
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://agnes.dida.physik.uni-essen.de/gnu-pascal/beta/
 DISTNAME=	gpc-19990118
@@ -22,6 +23,7 @@ ALL_TARGET=	bootstrap
 INSTALL_TARGET=	pascal.install
 
 MAN1=		gpc.1
+MLINKS=		gpc.1 bpc.1 gpc.1 epc.1 gpc.1 pc.1
 
 .include <bsd.port.pre.mk>
 
@@ -32,5 +34,11 @@ CONFIGURE_ARGS=	--with-gxx-include-dir=${PREFIX}/lib/gcc-lib/${GNUHOST}/2.8.1/in
 
 post-extract:
 	@(${CP} -R ${WRKDIRPREFIX}${.CURDIR}/../../lang/gcc28/work/gcc-2.8.1/* ${WRKSRC})
+
+pre-install:
+	@${RM} -f ${WRKSRC}/p/doc/gpc.info*
+
+post-install:
+	install-info ${PREFIX}/info/gpc.info ${PREFIX}/info/dir
 
 .include <bsd.port.post.mk>
