@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.51 2001/04/08 18:00:08 ijliao Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.52 2001/04/17 18:01:39 will Exp $
 #
 
     SUBDIR += 9e
@@ -44,6 +44,7 @@
     SUBDIR += unrar
     SUBDIR += unzip
     SUBDIR += xdms
+    SUBDIR += xpk
     SUBDIR += zip
     SUBDIR += zoo
 
