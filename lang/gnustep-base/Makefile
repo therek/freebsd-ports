@@ -2,11 +2,11 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.11 2000/02/22 12:29:05 tg Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.12 2000/04/11 21:28:09 mharo Exp $
 #
 
 PORTNAME=	gnustep
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.6
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 		ftp://ftp.peanuts.org/Mirrors/GNUstep/gnustep/core/
@@ -25,15 +25,15 @@ BROKEN=		"Sorry, this port does not work on FreeBSD-2.2.x"
 
 USE_NEWGCC=	yes
 PREFIX=		${LOCALBASE}/GNUstep
-WRKSRC=		${WRKDIR}/gstep-0.6.5
+WRKSRC=		${WRKDIR}/${DISTNAME}
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	INSTALL_PROGRAM="${INSTALL} -c" INSTALL_DATA="${INSTALL} -c"
 CONFIGURE_ARGS=	--with-library-combo=gnu-gnu-gnu-xgps \
 		--with-jpeg-library=${LOCALBASE}/lib \
 		--with-jpeg-include=${LOCALBASE}/include \
 		--with-tiff-library=${LOCALBASE}/lib \
-		--with-tiff-include=${LOCALBASE}/include \
-		--enable-threads=posix
+		--with-tiff-include=${LOCALBASE}/include # --enable-threads=posix
+CONFIGURE_TARGET=
 USE_GMAKE=	yes
 USE_XLIB=	yes
 MAKEFILE=
@@ -45,7 +45,6 @@ GNU_ARCH=	ix86
 .else
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
-GNU_HOST=	freebsd${OSREL}
-PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} GNU_HOST=${GNU_HOST}
+PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} VERSION=${PORTVERSION}
 
 .include <bsd.port.post.mk>
