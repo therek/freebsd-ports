@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.73 2000/04/07 12:11:03 tg Exp $
+# $FreeBSD: ports/math/Makefile,v 1.74 2000/05/13 14:15:10 hoek Exp $
 #
 
     SUBDIR += PDL
@@ -28,6 +28,7 @@
     SUBDIR += gsl
     SUBDIR += hexcalc
     SUBDIR += lapack
+    SUBDIR += libneural
     SUBDIR += libranlib
     SUBDIR += linalg
     SUBDIR += linpack
