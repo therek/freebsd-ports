@@ -2,7 +2,7 @@
 # Date created:		05 August 2000
 # Whom:			Matt Emmerton <matt@gsicomp.on.ca>
 #
-# $FreeBSD: ports/net/sntop/Makefile,v 1.3 2000/10/15 08:27:05 kevlo Exp $
+# $FreeBSD: ports/net/sntop/Makefile,v 1.4 2000/10/21 13:20:46 kevlo Exp $
 #
 
 PORTNAME=	sntop
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	sntop
 
 MAINTAINER=	matt@gsicomp.on.ca
 
-RUN_DEPENDS=	fping:${PORTSDIR}/net/fping
+RUN_DEPENDS=	${LOCALBASE}/sbin/fping:${PORTSDIR}/net/fping
 
 GNU_CONFIGURE=	yes
 
