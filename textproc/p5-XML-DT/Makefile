@@ -2,11 +2,11 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-DT/Makefile,v 1.2 2001/03/01 06:39:10 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-DT
-PORTVERSION=	0.19
+PORTVERSION=	0.20
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
