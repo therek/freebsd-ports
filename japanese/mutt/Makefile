@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt/Makefile,v 1.9 2000/04/11 14:15:26 knu Exp $
+# $FreeBSD: ports/japanese/mutt/Makefile,v 1.10 2000/07/18 19:31:10 knu Exp $
 #
 
 PORTNAME=	mutt
@@ -41,7 +41,6 @@ ALL_TARGET=	all
 CONFIGURE_ARGS=	--with-slang --enable-locales-fix --with-included-gettext \
 		--enable-flock --disable-fcntl \
 		--sysconfdir=${PREFIX}/etc \
-		--with-sharedir=${PREFIX}/share/mutt \
 		--with-docdir=${PREFIX}/share/doc/mutt \
 		--enable-pop --enable-imap
 
