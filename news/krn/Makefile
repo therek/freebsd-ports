@@ -2,7 +2,7 @@
 # Date created:				Sun Apr 16 14:19:19 PDT 2000
 # Whom:					adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/news/krn/Makefile,v 1.8 2001/04/04 07:52:37 will Exp $
+# $FreeBSD: ports/news/krn/Makefile,v 1.9 2001/04/28 15:05:50 alex Exp $
 #
 
 PORTNAME=	krn
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	adsharma@sharmas.dhs.org
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
-		uu.1:${PORTSDIR}/converters/uulib
+		uu.1:${PORTSDIR}/converters/uulib \
 		mimelib.1:${PORTSDIR}/converters/mimelib
 
 USE_KDELIBS_VER=1
