@@ -1,8 +1,8 @@
-# New ports collection makefile for:    mnoGoSearch-current
+# New ports collection makefile for:    mnogosearch
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.27 2001/07/02 15:22:45 ache Exp $
+# $FreeBSD: ports/www/mnogosearch/Makefile,v 1.28 2001/08/11 17:17:22 ache Exp $
 #
 
 PORTNAME=	mnogosearch
