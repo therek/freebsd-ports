@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.259 2004/09/29 16:48:15 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.262 2004/09/30 23:29:22 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -321,7 +321,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </body>
     </description>
     <references>
-      <cvename>CAN-2004-9893</cvename>
+      <cvename>CAN-2004-0903</cvename>
       <url>http://bugzilla.mozilla.org/show_bug.cgi?id=257314</url>
       <uscertta>TA04-261A</uscertta>
       <certvu>414240</certvu>
@@ -329,6 +329,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-09-13</discovery>
       <entry>2004-09-28</entry>
+      <modified>2004-09-30</modified>
     </dates>
   </vuln>
 
