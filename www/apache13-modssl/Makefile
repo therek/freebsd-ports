@@ -2,7 +2,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.78 2001/01/30 20:45:48 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.79 2001/02/05 15:33:12 olgeni Exp $
 #
 
 PORTNAME=	apache+mod_ssl
@@ -48,8 +48,8 @@ USE_OPENSSL=	YES
 
 LIB_DEPENDS=	mm.11:${PORTSDIR}/devel/mm
 
-VERSION_APACHE=	1.3.17
-VERSION_MODSSL=	2.8.0
+VERSION_APACHE=	1.3.19
+VERSION_MODSSL=	2.8.1
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
