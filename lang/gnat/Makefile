@@ -4,7 +4,7 @@
 # Porter (original):	nils@guru.ims.uni-stuttgart.de
 # Porter (version 3):	maurice@serc.rmit.edu.au
 #
-# $FreeBSD: ports/lang/gnat/Makefile,v 1.23 2000/04/12 06:18:45 obrien Exp $
+# $FreeBSD: ports/lang/gnat/Makefile,v 1.24 2000/11/01 18:56:57 deischen Exp $
 #
 # Note:
 # - FreeBSD tasking libraries created by Dan Eischen have been incorporated
@@ -18,7 +18,7 @@ PORTVERSION=	3.13p
 CATEGORIES=	lang
 MASTER_SITES=	ftp://cs.nyu.edu/pub/gnat/${PORTVERSION}/ \
 		${MASTER_SITE_LOCAL} ${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	gcc
+MASTER_SITE_SUBDIR=	deischen/gcc .
 DISTFILES=	${GNATNAME}.tgz gcc-2.8.1.tar.gz
 
 MAINTAINER=	eischen@vigrid.com
