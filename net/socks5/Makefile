@@ -2,7 +2,7 @@
 # Date created:				24 Apr 1996
 # Whom:					pst
 #
-# $FreeBSD: ports/net/socks5/Makefile,v 1.33 2000/10/10 05:05:27 imp Exp $
+# $FreeBSD: ports/net/socks5/Makefile,v 1.34 2000/10/10 05:27:14 imp Exp $
 #
 
 PORTNAME=	socks5
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	net security
 DISTNAME=	socks5-v1.0r11
 
-MAINTAINER=	imp@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 NO_CDROM=	"NEC has a funky license for this software"
 RESTRICTED=	"no commercial use"
