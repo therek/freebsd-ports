@@ -2,22 +2,23 @@
 # Date created:				16 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/deco/Makefile,v 1.7 2000/04/14 08:45:32 asami Exp $
+# $FreeBSD: ports/misc/deco/Makefile,v 1.8 2000/11/13 12:44:05 demon Exp $
 #
 
-PORTNAME=		deco
-PORTVERSION=		3.8.3
-CATEGORIES=		misc
-MASTER_SITES=		ftp://ftp.cronyx.ru/cronyx/deco/
-DISTNAME=		deco383
-EXTRACT_SUFX=		.tgz
+PORTNAME=	deco
+PORTVERSION=	3.8.3
+PORTREVISION=	1
+CATEGORIES=	misc
+MASTER_SITES=	ftp://ftp.cronyx.ru/cronyx/deco/
+DISTNAME=	deco383
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	demon@FreeBSD.org
 
-WRKSRC=			${WRKDIR}/deco383
-GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--libdir=${PREFIX}/share
-CONFIGURE_ENV=		ac_cv_lib_ncurses_tgetent=no
-MAN1=			deco.1 deco-r.1
+WRKSRC=		${WRKDIR}/deco383
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--libdir=${PREFIX}/share
+CONFIGURE_ENV=	ac_cv_lib_ncurses_tgetent=no
+MAN1=		deco.1 deco-r.1
 
 .include <bsd.port.mk>
