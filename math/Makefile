@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.144 2001/09/21 05:51:47 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += GiNaC
@@ -65,6 +65,7 @@
     SUBDIR += p5-Graph
     SUBDIR += p5-Math-Base85
     SUBDIR += p5-Math-Bezier
+    SUBDIR += p5-Math-BigInt
     SUBDIR += p5-Math-BigIntFast
     SUBDIR += p5-Math-Currency
     SUBDIR += p5-Math-Expr
