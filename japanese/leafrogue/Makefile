@@ -2,11 +2,12 @@
 # Date created:				2 Oct 2000
 # Whom:					TAKAHASHI Kaoru
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/leafrogue/Makefile,v 1.1 2000/11/03 17:31:18 sada Exp $
 #
 
 PORTNAME=	leafrogue
 PORTVERSION=	0.72
+PORTREVISION=	1
 CATEGORIES=	japanese games
 MASTER_SITES=	http://www.lab3.kuis.kyoto-u.ac.jp/~roguelike/leaf/dl/
 DISTNAME=	lfrog${PORTVERSION:S/.//}
