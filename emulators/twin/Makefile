@@ -3,7 +3,7 @@
 # Date created:		5 June 1999
 # Whom:			Pedro F. Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/twin/Makefile,v 1.1 1999/12/29 09:12:28 steve Exp $
 #
 
 DISTNAME=	twin-19990616
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.willows.com/pub/development/
 MAINTAINER=	giffunip@asme.org
 
 WRKSRC=		$(WRKDIR)/twin
+USE_XLIB=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	depend world
