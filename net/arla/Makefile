@@ -2,11 +2,12 @@
 # Date created:			09 Sep 1998
 # Whom:				Peter Hawkins <thepish@FreeBSD.org>
 #
-# $FreeBSD: ports/net/arla/Makefile,v 1.18 2001/08/01 04:21:04 assar Exp $
+# $FreeBSD: ports/net/arla/Makefile,v 1.19 2001/08/02 07:55:20 assar Exp $
 #
 
 PORTNAME=	arla
 PORTVERSION=	0.35.5
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.stacken.kth.se/pub/arla/
 
@@ -25,7 +26,7 @@ BROKEN=		requires kernel source
 GNU_CONFIGURE=	yes
 MAN1=		rxdebug.1 tokens.1 unlog.1 aklog.1 klog.1 fs.1 kalog.1 pts.1 \
 		udebug.1
-MAN3=		cmd.3 log_log.3
+MAN3=		cmd.3
 MAN5=		CellServDB.5 DynRootDB.5 ThisCell.5 SuidCells.5
 MAN8=		mount_xfs.8 umount_xfs.8 arlad.8 arla-cli.8 vos.8 bos.8
 
