@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.79 2001/08/17 18:07:26 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.80 2001/08/18 23:49:50 olgeni Exp $
 #
 
 PORTNAME=	kdelibs
@@ -19,8 +19,10 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		fam.0:${PORTSDIR}/devel/fam \
 		cups.2:${PORTSDIR}/print/cups \
 		xml2.5:${PORTSDIR}/textproc/libxml2 \
-		bz2.1:${PORTSDIR}/archivers/bzip2 \
 		pcre.0:${PORTSDIR}/devel/pcre
+.if !exists(/usr/bin/bzip2)
+LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
+.endif
 
 USE_OPENSSL=	yes
 USE_QT_VER=	2
