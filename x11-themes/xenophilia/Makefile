@@ -2,7 +2,7 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/x11-toolkits/xenophilia/Makefile,v 1.1.1.1 2000/06/01 08:04:42 sobomax Exp $
 #
 
 PORTNAME=	xenophilia
@@ -17,5 +17,8 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_X_PREFIX=	yes
 ALL_TARGET=
+
+pre-install:
+		@${MKDIR} ${PREFIX}/lib/gtk/themes/engines
 
 .include <bsd.port.mk>
