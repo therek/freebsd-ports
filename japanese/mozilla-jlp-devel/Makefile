@@ -2,7 +2,7 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.18 2001/07/12 17:31:54 knu Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.19 2001/08/24 23:46:58 taoka Exp $
 #
 
 PORTNAME=	mozilla
@@ -33,8 +33,8 @@ MOZILLA_PORT=	${PORTSDIR}/www/mozilla+ipv6
 .else
 MOZILLA_PORT=	${PORTSDIR}/www/mozilla
 .endif
-JLP_SRC=	${PORTNAME}${PORTVERSION}-langjajp-RC2.xpi \
-		${PORTNAME}${PORTVERSION}-regjp-RC2.xpi
+JLP_SRC=	${PORTNAME}${PORTVERSION:S/.r2$//}-langjajp-RC2.xpi \
+		${PORTNAME}${PORTVERSION:S/.r2$//}-regjp-RC2.xpi
 
 .include <bsd.port.pre.mk>
 
