@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.615 2001/09/17 09:06:51 wjv Exp $
+# $FreeBSD: ports/net/Makefile,v 1.616 2001/09/17 18:49:50 sada Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -133,6 +133,7 @@
     SUBDIR += gtk+licq
     SUBDIR += gtk-gnutella
     SUBDIR += gtkyahoo
+    SUBDIR += gutenfetch
     SUBDIR += h2n
     SUBDIR += hagelslag
     SUBDIR += hesiod
