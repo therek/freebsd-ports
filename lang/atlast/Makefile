@@ -3,12 +3,13 @@
 # Date created:         26 Ag 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/atlast/Makefile,v 1.3 1999/08/25 06:34:15 obrien Exp $
 #
 
 DISTNAME=	atlast-1.0
 CATEGORIES=	lang
-MASTER_SITES=	http://www.fourmilab.ch/atlast/
+MASTER_SITES=	http://www.fourmilab.ch/atlast/ \
+		http://www.fourmilab.to/atlast/
 
 MAINTAINER=	giffunip@asme.org
 
