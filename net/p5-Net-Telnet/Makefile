@@ -2,7 +2,7 @@
 # Date created:			March 3 1998
 # Whom:	      			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.8 2000/07/10 08:10:08 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-Telnet
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
+COMMENT=	Perl5 module to access and use telnet protocol
 
 PERL_CONFIGURE=	yes
 

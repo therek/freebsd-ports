@@ -2,7 +2,7 @@
 # Date created:		29 Sep 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/another-htmllint/Makefile,v 1.2 2000/10/08 10:20:28 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	another-htmllint
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kuriyama
 
 MAINTAINER=	kuriyama@FreeBSD.org
+COMMENT=	Another HTML-lint (all messages are written in Japanese)
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Jcode.pm:${PORTSDIR}/japanese/p5-Jcode
 

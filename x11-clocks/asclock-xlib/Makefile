@@ -2,7 +2,7 @@
 # Date created:		24 April 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.13 2001/02/05 17:05:20 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asclock-xlib
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kuriyama
 
 MAINTAINER=	kuriyama@FreeBSD.org
+COMMENT=	New flavor of asclock
 
 WRKSRC=		${WRKDIR}/asclock-xlib
 USE_XPM=	YES

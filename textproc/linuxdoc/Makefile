@@ -2,7 +2,7 @@
 # Date created:		July 8, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.13 2001/01/16 17:32:45 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linuxdoc
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 
 MAINTAINER=	kuriyama@FreeBSD.org
+COMMENT=	The Linuxdoc SGML DTD
 
 RUN_DEPENDS=	${ISOCAT}:${PORTSDIR}/textproc/iso8879 \
 		${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog

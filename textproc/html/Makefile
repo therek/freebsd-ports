@@ -2,7 +2,7 @@
 # Date created:		Sept 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/html/Makefile,v 1.11 2001/01/16 17:32:44 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	html
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	kuriyama
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	kuriyama@FreeBSD.org
+COMMENT=	All W3C published SGML DTDs for HTML
 
 RUN_DEPENDS=	${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
