@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.20 2001/01/05 15:37:16 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.21 2001/01/25 23:32:54 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -11,7 +11,7 @@ CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 BROKEN=		"Build failures with bonobo-0.31"
 
