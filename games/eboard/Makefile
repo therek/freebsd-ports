@@ -2,13 +2,12 @@
 # Date created:				22 June 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/games/eboard/Makefile,v 1.4 2001/08/12 03:24:48 dwcjr Exp $
+# $FreeBSD: ports/games/eboard/Makefile,v 1.5 2001/08/22 23:05:47 petef Exp $
 #
 
 PORTNAME=	eboard
-PORTVERSION=	0.3.1
-PORTREVISION=	1
-EXTRASVERSION=	1
+PORTVERSION=	0.3.2pl1
+EXTRASVERSION=	1pl2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
