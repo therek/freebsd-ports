@@ -3,7 +3,7 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.1.1.1 2000/01/31 08:43:45 nakai Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.2 2000/02/12 15:18:15 nakai Exp $
 #
 
 DISTNAME=	dedit_0.5.6
@@ -15,7 +15,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	iconv.0:${PORTSDIR}/converters/iconv \
 		gnome.3:${PORTSDIR}/x11/gnomelibs
-BUILD_DEPENDS=	automake:${PORTSDIR}/devel/autoconf
+BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake
 
 WRKSRC=		${WRKDIR}/dedit-0.5.6
 
@@ -23,7 +23,6 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
