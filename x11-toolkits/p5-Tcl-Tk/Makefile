@@ -3,7 +3,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.13 1999/08/31 06:52:49 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.14 1999/11/28 18:31:33 steve Exp $
 
 DISTNAME=	TclTk-b2
 PKGNAME=	p5-Tcl-Tk-b2
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Tcl
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS= 	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Tcl.pm:${PORTSDIR}/lang/p5-Tcl
+BUILD_DEPENDS= 	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Tcl.pm:${PORTSDIR}/lang/p5-Tcl
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 USE_PERL5=	YES
