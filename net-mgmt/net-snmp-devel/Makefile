@@ -3,7 +3,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.35 1999/11/15 18:27:37 jmb Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.36 1999/11/15 18:30:56 jmb Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -46,7 +46,7 @@ STARTUP_FILE=	${PREFIX}/etc/rc.d/snmpd.sh.sample
 BROKEN=		"aout build breaks: ld: internal error: RRS relocs exceed allocation 343"
 .endif
 .if ${OSVERSION} >= 400000
-BROKEN=		"Uses the old VM system interfaces"
+CONFIGURE_ARGS+=	--with-out-mib-modules="ucd-snmp/vmstat_freebsd2 ucd-snmp/memory_freebsd2"
 .endif
 
 SHLIB_VERSION=4
