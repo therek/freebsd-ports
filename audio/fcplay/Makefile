@@ -2,16 +2,15 @@
 # Date created:			17 September 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/fcplay/Makefile,v 1.2 2001/01/02 15:25:37 kevlo Exp $
+# $FreeBSD: ports/audio/fcplay/Makefile,v 1.3 2001/01/09 16:43:19 kevlo Exp $
 #
 
 PORTNAME=	fcplay
 PORTVERSION=	0.0.1
 PORTREVISION=	1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/mod/ \
-		http://www.freenix.no/~anders/ \
-		ftp://totem.fix.no/pub/mirrors/misc/
+MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/ \
+		http://www.freenix.no/~anders/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	anders@fix.no
