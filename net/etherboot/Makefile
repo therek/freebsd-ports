@@ -2,11 +2,11 @@
 # Date created:        16 April 1999
 # Whom:                Doug Ambrisko <ambrisko@whistle.com>
 #
-# $FreeBSD: ports/net/etherboot/Makefile,v 1.17 2001/05/11 11:57:32 luigi Exp $
+# $FreeBSD: ports/net/etherboot/Makefile,v 1.18 2001/07/31 17:17:15 mp Exp $
 #
 
 PORTNAME=	etherboot
-PORTVERSION=	5.0.1
+PORTVERSION=	5.0.3
 CATEGORIES=	net
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 #MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -17,6 +17,7 @@ CATEGORIES=	net
 MAINTAINER=	ambrisko@ambrisko.com
 
 NO_PACKAGE=	lots of configuration necessary
+USE_BZIP2=1
 USE_GMAKE=1
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
