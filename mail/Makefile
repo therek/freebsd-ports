@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.209 2001/03/29 13:11:02 nbm Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.210 2001/03/31 13:47:10 nakai Exp $
 #
 
     SUBDIR += abook
@@ -110,7 +110,6 @@
     SUBDIR += pgp4pine
     SUBDIR += pgpsendmail
     SUBDIR += pine4
-    SUBDIR += pine4-ssl
     SUBDIR += pmail
     SUBDIR += pop3gwd
     SUBDIR += pop3lite
