@@ -2,11 +2,11 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.2 2000/06/26 09:01:00 sobomax Exp $
+# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.3 2000/10/05 06:57:33 reg Exp $
 #
 
 PORTNAME=	gkrellmvolume
-PORTVERSION= 	0.6
+PORTVERSION= 	0.7
 CATEGORIES=	audio
 MASTER_SITES=	http://gkrellm.luon.net/files/
 DISTNAME=	volume-${PORTVERSION}
