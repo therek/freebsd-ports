@@ -3,7 +3,7 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.24 1999/08/31 06:53:28 mharo Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.25 1999/11/02 16:15:03 jseger Exp $
 #
 
 DISTNAME=	xscreensaver-3.19
@@ -12,10 +12,11 @@ MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
 MAINTAINER=	jseger@FreeBSD.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
+		MesaGL.14:${PORTSDIR}/graphics/Mesa3
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--without-pam
+CONFIGURE_ARGS=	--without-pam --with-gl --with-gle --with-xpm
 USE_X_PREFIX=	yes
 MAN1= 		attraction.1 blitspin.1 bouboule.1 braid.1 \
 		bsod.1 bubbles.1 critical.1 decayscreen.1 \
