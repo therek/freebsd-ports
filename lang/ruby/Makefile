@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.36 2000/09/26 08:02:14 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.37 2000/09/26 09:34:52 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
 DIST_SUBDIR=	ruby
 
-MAINTAINER=	yasuf@bsdclub.org
+MAINTAINER=	knu@FreeBSD.org
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes

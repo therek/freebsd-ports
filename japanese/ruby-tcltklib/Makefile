@@ -2,12 +2,12 @@
 # Date created:         15 March 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/japanese/ruby-tcltklib/Makefile,v 1.8 2000/04/25 07:01:59 knu Exp $
+# $FreeBSD: ports/japanese/ruby-tcltklib/Makefile,v 1.9 2000/09/07 00:03:28 knu Exp $
 #
 
 CATEGORIES=	japanese
 
-MAINTAINER=	yasuf@bsdclub.org
+MAINTAINER=	knu@FreeBSD.org
 
 TCL_VERSION?=	80
 TK_VERSION?=	80

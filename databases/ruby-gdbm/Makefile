@@ -2,7 +2,7 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-gdbm/Makefile,v 1.5 2000/09/19 15:20:13 knu Exp $
+# $FreeBSD: ports/databases/ruby-gdbm/Makefile,v 1.6 2000/09/26 08:01:53 knu Exp $
 #
 
 PORTNAME=	gdbm
@@ -20,6 +20,8 @@ LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+
+MD5_FILE=	${PORTSDIR}/lang/ruby/files/md5
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/ext/gdbm
 

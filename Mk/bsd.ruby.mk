@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.3 2000/09/07 07:20:02 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.4 2000/09/16 11:37:37 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -64,7 +64,7 @@ _RUBY_SUFFIX=		${RUBY_VER:S/.//}
 RUBY_VERSION?=		1.4.6
 RUBY_SUFFIX?=		${_RUBY_SUFFIX}
 .else
-RUBY_VERSION?=		1.6.0
+RUBY_VERSION?=		1.6.1
 RUBY_SUFFIX?=		# empty
 .endif
 
