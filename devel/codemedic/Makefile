@@ -2,13 +2,14 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codemedic/Makefile,v 1.2 2000/10/03 05:00:28 lioux Exp $
+# $FreeBSD: ports/devel/codemedic/Makefile,v 1.3 2000/10/03 05:12:21 lioux Exp $
 #
 
 PORTNAME=	code_medic
 PORTVERSION=	1.0.4
 CATEGORIES=	devel
-MASTER_SITES=	http://people.FreeBSD.org/~sobomax/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	Code_Medic_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
