@@ -2,11 +2,11 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/mail/pop3lite/Makefile,v 1.2 2001/01/16 17:31:22 sobomax Exp $
+# $FreeBSD: ports/mail/pop3lite/Makefile,v 1.3 2001/01/23 07:26:53 kevlo Exp $
 #
 
 PORTNAME=	pop3lite
-PORTVERSION=	0.1.4.2
+PORTVERSION=	0.1.90
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
