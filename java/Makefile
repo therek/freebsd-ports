@@ -1,4 +1,4 @@
-# $FreeBSD: ports/java/Makefile,v 1.11 2000/03/08 12:09:22 kuriyama Exp $
+# $FreeBSD: ports/java/Makefile,v 1.12 2000/05/16 01:48:06 chuckr Exp $
 #
 
     SUBDIR += collections
@@ -10,6 +10,7 @@
     SUBDIR += java-cup
     SUBDIR += javac_netscape
     SUBDIR += javamail
+    SUBDIR += javavmwrapper
     SUBDIR += jce-aba
     SUBDIR += jdbcpool
     SUBDIR += jdk
