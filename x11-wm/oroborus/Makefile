@@ -2,18 +2,16 @@
 # Date created:				19 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/oroborus/Makefile,v 1.2 2001/05/21 07:58:03 sobomax Exp $
+# $FreeBSD: ports/x11-wm/oroborus/Makefile,v 1.3 2001/05/28 11:08:23 sobomax Exp $
 #
 
 PORTNAME=	oroborus
-PORTVERSION=	1.11.1
+PORTVERSION=	1.13.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.kensden.pwp.blueyonder.co.uk/Oroborus/
-DISTNAME=	${PORTNAME}-src-v${PORTVERSION}
+#DISTNAME=	${PORTNAME}-src-v${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_XPM=	yes
 USE_X_PREFIX=	yes
