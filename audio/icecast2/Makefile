@@ -3,7 +3,7 @@
 # Date created:		28 Jan 1999
 # Whom:			Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/audio/icecast/Makefile,v 1.6 1999/08/25 04:35:34 obrien Exp $
+# $FreeBSD: ports/audio/icecast/Makefile,v 1.7 1999/10/05 04:59:10 dburr Exp $
 #
 
 DISTNAME=	icecast-1.3.0
@@ -18,14 +18,13 @@ WRKSRC=		${WRKDIR}/icecast-1.3
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-libwrap
 
-do-configure:
-	cd ${WRKSRC} && ${SH} ./configure ${CONFIGURE_ARGS}
-	cd ${WRKSRC}/liveice && ${SH} ./configure ${CONFIGURE_ARGS}
+ALL_TARGET=	all mkpasswd
 
-do-build:
-	cd ${WRKSRC} && ${MAKE}
-	cd ${WRKSRC} && ${MAKE} mkpasswd
-	cd ${WRKSRC}/liveice && ${MAKE}
+post-configure:
+	@${MAKE} WRKSRC=${WRKSRC}/liveice do-configure
+
+post-build:
+	@${MAKE} WRKSRC=${WRKSRC}/liveice ALL_TARGET=all do-build
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/icecast ${PREFIX}/sbin
