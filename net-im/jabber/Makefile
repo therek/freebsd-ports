@@ -2,11 +2,12 @@
 # Date created:			5 February 2001
 # Whom:				joe
 #
-# $FreeBSD: ports/net/jabber/Makefile,v 1.5 2001/02/12 19:44:37 joe Exp $
+# $FreeBSD: ports/net/jabber/Makefile,v 1.6 2001/03/11 13:28:54 joe Exp $
 #
 
 PORTNAME=	jabber
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.jabber.org/dists/1.4/final/
 
