@@ -3,7 +3,7 @@
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/faces/Makefile,v 1.15 2001/02/05 15:10:36 olgeni Exp $
+# $FreeBSD: ports/mail/faces/Makefile,v 1.16 2001/02/26 20:48:55 lkoeller Exp $
 #
 
 PORTNAME=	faces
@@ -24,7 +24,7 @@ RUN_DEPENDS=	rplay:${PORTSDIR}/audio/rplay
 SED_REPL=rplay
 .endif
 
-USE_XLIB=	yes
+USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/faces
 MAN1=		compface.1 faces.1 face_update.1
