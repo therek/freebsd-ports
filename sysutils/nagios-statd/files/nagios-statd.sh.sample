@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/nagios-statd/files/nagios-statd.sh.sample,v 1.1 2003/12/13 21:53:50 sergei Exp $
 
 case "${1}" in
 start)
@@ -7,7 +7,7 @@ start)
         echo -n " nagios-statd"
         ;;
 stop)
-        /usr/bin/killall nagios-statd
+        kill -3 `ps -x | grep nagios-statd | grep python | awk '{print $1}'`
         ;;
 restart)
         $0 stop
