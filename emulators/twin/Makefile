@@ -3,11 +3,11 @@
 # Date created:		5 June 1999
 # Whom:			Pedro F. Giffuni
 #
-# $FreeBSD: ports/emulators/twin/Makefile,v 1.1 1999/12/29 09:12:28 steve Exp $
+# $FreeBSD: ports/emulators/twin/Makefile,v 1.2 2000/01/02 08:50:59 asami Exp $
 #
 
-DISTNAME=	twin-19990616
-PKGNAME=	twin-1999.06.16
+DISTNAME=	twin-19991230
+PKGNAME=	twin-1999.12.30
 CATEGORIES=	emulators devel
 MASTER_SITES=	ftp://ftp.willows.com/pub/development/
 
