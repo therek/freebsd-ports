@@ -3,7 +3,7 @@
 # Whom:				  Thierry Thomas (<thierry@thomas.as>)
 # N.B.: parts of this ports come from the Horde's port by NetBSD (jlam@netbsd.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/horde/Makefile,v 1.1 2001/08/18 04:17:52 ijliao Exp $
 #
 
 PORTNAME=	horde
@@ -49,7 +49,7 @@ APACHE_CNFDIR?=	${LOCALBASE}/etc/apache
 APACHE_CONF=	${APACHE_CNFDIR}/httpd.conf
 MIMETYPES=	${APACHE_CNFDIR}/mime.types
 
-pre-everything:
+pre-everything::
 .if !defined(WITHOUT_SSL)
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "Press CTRL-C and define WITHOUT_SSL"
