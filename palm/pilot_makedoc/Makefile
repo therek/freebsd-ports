@@ -1,15 +1,18 @@
 # New ports collection makefile for:	pilot_makedoc
-# Version required:			0.7
+# Version required:			0.7a
 # Date created:				May 10th 1997
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/palm/pilot_makedoc/Makefile,v 1.6 1999/08/30 14:33:01 peter Exp $
+# $FreeBSD: ports/palm/pilot_makedoc/Makefile,v 1.7 1999/08/31 06:49:42 mharo Exp $
 #
 
-PKGNAME=	pilot_makedoc-0.7
+DISTNAME=	makedoc7
+PKGNAME=	pilot_makedoc-0.7a
 CATEGORIES=	palm textproc
-MASTER_SITES=	http://www.concentric.net/~rbram/
-DISTFILES=	makedoc7.cpp
+MASTER_SITES=	ftp://ftp.forth.org/pub/PalmOS/ \
+		ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/ \
+		ftp://ftp.cso.uiuc.edu/pub/systems/PalmOS/
+EXTRACT_SUFX=	.cpp
 
 MAINTAINER=	jfitz@FreeBSD.org
 
