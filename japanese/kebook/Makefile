@@ -2,7 +2,7 @@
 # Date created:        13 Novenver 1999
 # Whom:                SUZUKI, Mitsuhiro <hige@higesoft.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/kebook/Makefile,v 1.4 2000/10/23 15:23:36 imura Exp $
+# $FreeBSD: ports/japanese/kebook/Makefile,v 1.5 2000/10/24 14:08:04 imura Exp $
 #
 
 PORTNAME=	kebook
@@ -17,6 +17,8 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		eb.3:${PORTSDIR}/japanese/eb
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	kfm:${PORTSDIR}/x11/kdebase11
+
+BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
