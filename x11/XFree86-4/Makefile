@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.95 2000/11/07 01:05:49 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.96 2000/11/09 04:33:13 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -48,10 +48,6 @@ SCRIPTS_ENV+=	MACHINE=alpha
 PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
-.if ${OSVERSION} < 410000
-BROKEN=	"can't be compiled on this system (missing headers)"
-.endif
-
 .if defined(XDM_DES) && (${USA_RESIDENT} != YES && ${USA_RESIDENT} != NO)
 pre-fetch:
 	@${ECHO}
@@ -75,6 +71,10 @@ pre-fetch:
 .endif
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 410000
+BROKEN=	"can't be compiled on this system (missing headers)"
+.endif
 
 .if ${OSVERSION} > 500012
 post-patch:
