@@ -2,11 +2,11 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/devel/popt/Makefile,v 1.9 2000/06/16 21:50:12 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	popt
-PORTVERSION=	1.5
+PORTVERSION=	1.5.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/ \
 		ftp://ftp.mirror.ac.uk/sites/ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-3.0.x/ \
 MAINTAINER=	ycheng@sinica.edu.tw
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-1.5
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
