@@ -1,10 +1,11 @@
-# $FreeBSD: ports/benchmarks/Makefile,v 1.12 1999/09/19 04:20:19 obrien Exp $
+# $FreeBSD: ports/benchmarks/Makefile,v 1.13 1999/11/07 22:57:35 ghelmer Exp $
 #
 
     SUBDIR += bonnie
     SUBDIR += bytebench
     SUBDIR += dbs
     SUBDIR += iozone
+    SUBDIR += iozone21
     SUBDIR += lmbench
     SUBDIR += nbench
     SUBDIR += netperf
