@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1997
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/security/cfs/Makefile,v 1.9 2000/05/23 01:02:34 green Exp $
+# $FreeBSD: ports/security/cfs/Makefile,v 1.10 2000/07/18 03:20:03 ache Exp $
 #
 
 PORTNAME=	cfs
@@ -28,7 +28,9 @@ do-install:
 	    ${INSTALL_MAN} ${MAN1} ${PREFIX}/man/man1; \
 	    ${INSTALL_MAN} ${MAN8} ${PREFIX}/man/man8; \
 	    ${MKDIR} ${PREFIX}/share/doc/cfs; \
-	    ${INSTALL_DATA} README.install notes.ms ${PREFIX}/share/doc/cfs; \
-	    ${INSTALL_SCRIPT} ${FILESDIR}/cfsd.sh ${PREFIX}/etc/rc.d
+	    ${INSTALL_DATA} README.install notes.ms ${PREFIX}/share/doc/cfs
+	@if [ ! -f ${PREFIX}/etc/rc.d/cfsd.sh ]; then \
+		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/cfsd.sh ${PREFIX}/etc/rc.d/cfsd.sh; \
+	fi
 
 .include <bsd.port.mk>
