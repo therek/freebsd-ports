@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.414 2001/01/04 12:29:48 obrien Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.415 2001/01/06 08:05:28 obrien Exp $
 #
     SUBDIR += zziplib
 
@@ -88,6 +88,7 @@
     SUBDIR += fpp
     SUBDIR += freelibiberty
     SUBDIR += ftnchek
+    SUBDIR += funnelweb
     SUBDIR += g-wrap
     SUBDIR += gaa
     SUBDIR += gcc-6811
