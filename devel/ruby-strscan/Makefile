@@ -2,15 +2,14 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.12 2000/12/15 15:07:17 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.13 2001/01/27 09:41:20 knu Exp $
 #
 
 PORTNAME=	strscan
 PORTVERSION=	0.6.1
 CATEGORIES=	devel ruby
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www1.u-netsurf.ne.jp/~brew/mine/soft/
-MASTER_SITE_SUBDIR=	knu
+MASTER_SITES=	http://www.ruby-lang.org/~knu/
+#		http://www1.u-netsurf.ne.jp/~brew/mine/soft/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
