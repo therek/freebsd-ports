@@ -2,7 +2,7 @@
 # Date created:         3 May 1999
 # Whom:                 one@netlab.is.tsukuba.ac.jp
 #
-# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.8 2000/04/14 10:47:28 asami Exp $
+# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.9 2000/05/29 03:43:56 steve Exp $
 #
 
 PORTNAME=	tgif
@@ -14,18 +14,21 @@ PKGNAMESUFFIX=	-nls
 
 MAINTAINER=	one@netlab.is.tsukuba.ac.jp
 
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	giftopnm:${PORTSDIR}/graphics/netpbm \
 		pnmtopng:${PORTSDIR}/graphics/pnmtopng
 
 USE_IMAKE=	yes
-XMKMF=		LOCALBASE=${LOCALBASE} xmkmf -a
 MAN1=		tgif.1
+
+.if !defined(NOPORTDOCS)
 TGIFDOC=	${PREFIX}/share/doc/tgif
 TGIFDEMO=	${PREFIX}/share/examples/tgif
 DEMO_FILES=	an-sr-flip-flop.obj launch-demo-1.obj \
 		fonts.obj launch-demo.obj keys.obj slide-demo.obj example.tex
 READMES=	Copyright HISTORY README
+.endif
 
 post-extract:
 		${RM} -f ${WRKDIR}/${DISTNAME}/Tgif.tmpl
@@ -41,11 +44,13 @@ pre-install:
 		)
 
 post-install:
+.if !defined(NOPORTDOCS)
 		${MKDIR} ${TGIFDOC}; ${MKDIR} ${TGIFDEMO}
 		(cd ${WRKSRC} ;\
 		  ${INSTALL_DATA} ${DEMO_FILES} ${TGIFDEMO} ;\
 		  ${INSTALL_DATA} ${READMES} ${TGIFDOC} ;\
 		)
+.endif
 		${LN} -fs tgif ${PREFIX}/bin/tgif-nls
 
 .include <bsd.port.mk>
