@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.559 2001/06/09 12:38:22 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.560 2001/06/10 17:24:09 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -372,6 +372,7 @@
     SUBDIR += p5-Time-Period
     SUBDIR += p5-TimeDate
     SUBDIR += p5-TraceFuncs
+    SUBDIR += p5-VCS-CVS
     SUBDIR += patch
     SUBDIR += pccts
     SUBDIR += pcl-cvs-emacs
