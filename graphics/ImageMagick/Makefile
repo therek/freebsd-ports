@@ -3,7 +3,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.78 2000/03/05 15:38:20 ache Exp $
 #
 
 DISTNAME=       ImageMagick-5.1.1
@@ -46,6 +46,10 @@ CONFIGURE_ARGS+= --enable-lzw
 USE_PERL5=	YES
 USE_XLIB=       YES
 CONFIGURE_ENV=  LDFLAGS="$(LDFLAGS) -L${WRKSRC}/magick/.libs"
+
+pre-configure:
+	${RM} -f ${WRKSRC}/config.cache
+
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
