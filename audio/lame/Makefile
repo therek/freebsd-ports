@@ -2,7 +2,7 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.17 2001/01/07 14:06:56 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lame
@@ -11,7 +11,7 @@ PORTREVISION=	2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://lame.sourceforge.net/pub/
-MASTER_SITE_SUBDIR=	lame/src
+MASTER_SITE_SUBDIR=	lame
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
