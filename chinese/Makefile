@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.52 2000/09/12 03:37:19 vanilla Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.53 2000/09/19 14:57:50 ade Exp $
 #
     SUBDIR += xmms
 
@@ -38,6 +38,7 @@
     SUBDIR += ted
     SUBDIR += telnet
     SUBDIR += tin
+    SUBDIR += tintin++
     SUBDIR += tocps
     SUBDIR += ve
     SUBDIR += xa+cv
