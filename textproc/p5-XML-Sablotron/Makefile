@@ -2,11 +2,12 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-Sablotron/Makefile,v 1.7 2001/08/25 04:57:53 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-Sablotron
 PORTVERSION=	0.65
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
@@ -14,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@protey.ru
 
-LIB_DEPENDS=	sablot.65:${PORTSDIR}/textproc/sablotron \
+LIB_DEPENDS=	sablot.70:${PORTSDIR}/textproc/sablotron \
 		iconv.2:${PORTSDIR}/converters/iconv
 
 PERL_CONFIGURE=	yes
