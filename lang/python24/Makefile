@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.67 2000/07/28 11:08:07 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.68 2000/09/08 11:41:41 tg Exp $
 #
 
 PORTNAME=	python
@@ -21,6 +21,7 @@ INSTALL_TARGET=	install
 PLIST=		${WRKDIR}/PLIST
 MAN1=		python.1
 
+USE_PYTHON=	yes
 PYTHON_VERSION=	python1.6
 PYTHON_NO_DEPENDS=	yes
 
