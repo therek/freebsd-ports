@@ -2,7 +2,7 @@
 # Date created:        28 November 1999
 # Whom:                Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.5 2000/10/22 23:12:01 jeh Exp $
+# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.6 2001/01/02 15:40:05 kevlo Exp $
 #
 
 PORTNAME=	xsidplay
@@ -30,7 +30,13 @@ CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-x-includes=${X11BASE}/include \
 		--with-x-libraries=${X11BASE}/lib
 
+.include <bsd.port.pre.mk>
+
+.if ${MACHINE_ARCH} == "alpha"
+CFLAGS+=	-O0
+.endif
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/xsidplay ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

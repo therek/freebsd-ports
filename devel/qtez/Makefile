@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/qtez/Makefile,v 1.18 2000/07/14 14:06:06 alex Exp $
+# $FreeBSD: ports/devel/qtez/Makefile,v 1.19 2000/09/16 17:52:57 ade Exp $
 #
 
 PORTNAME=	qtez
@@ -25,6 +25,12 @@ CONFIGURE_ENV=	QTDIR="${X11BASE}" MOC="${X11BASE}/bin/moc2" \
 CONFIGURE_ARGS=	--disable-shared
 MAKE_ENV=	QTEZ="${X11BASE}/share/qtez"
 
+.include <bsd.port.pre.mk>
+
+.if ${MACHINE_ARCH} == "alpha"
+CFLAGS+=	-O0
+.endif
+
 post-patch:
 	@find ${WRKSRC} -name "Makefile.am" | xargs ${PERL} -pi -e \
 		's|\@DEBUG\@|\@CXXFLAGS\@ \@DEBUG\@|g'
@@ -35,4 +41,4 @@ pre-configure:
 post-install:
 	@${SED} -e "s:/usr/X11R6:${PREFIX}:g" ${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
