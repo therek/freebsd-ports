@@ -2,7 +2,7 @@
 # Date created:		18 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmp/Makefile,v 1.8 2001/02/26 04:41:19 steve Exp $
+# $FreeBSD: ports/audio/xmp/Makefile,v 1.9 2001/04/17 11:02:01 roam Exp $
 #
 
 PORTNAME=	xmp
@@ -25,7 +25,7 @@ WANT_ESOUND=	yes
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} > 500013
+.if ${OSVERSION} > 500013 || ${MACHINE_ARCH} == "alpha"
 USE_ESOUND=	yes
 CONFIGURE_ARGS+=	--disable-oss --enable-esd
 .elif defined(HAVE_ESOUND)
