@@ -2,11 +2,12 @@
 # Date Created:		3 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/pure-emacs20/Makefile,v 1.2 2001/06/14 15:13:41 knu Exp $
+# $FreeBSD: ports/irc/pure-emacs20/Makefile,v 1.3 2001/09/13 15:11:04 knu Exp $
 #
 
 PORTNAME=	pure
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	irc elisp
 MASTER_SITES=	ftp://ftp.fan.gr.jp/pub/elisp/irchat-pj/2.5/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
