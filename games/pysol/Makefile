@@ -2,11 +2,11 @@
 # Date created:         11 September 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/pysol/Makefile,v 1.34 2000/09/22 12:05:10 tg Exp $
+# $FreeBSD: ports/games/pysol/Makefile,v 1.35 2001/05/08 11:53:55 tg Exp $
 #
 
 PORTNAME=	pysol
-PORTVERSION=	4.71
+PORTVERSION=	4.72
 CATEGORIES=	games
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/
 
