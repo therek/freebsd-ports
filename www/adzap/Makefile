@@ -2,10 +2,10 @@
 # Date created:		03 March 2001
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/adzap/Makefile,v 1.1 2001/03/04 05:07:22 kris Exp $
 
 PORTNAME=	adzap
-PORTVERSION=	20010227
+PORTVERSION=	20010417
 CATEGORIES=	www perl5
 MASTER_SITES=	http://www.zip.com.au/~cs/adzap/
 
@@ -23,11 +23,11 @@ do-configure:
 	       -e "s:@@PREFIX@@:${PREFIX}:g" \
 		<${WRKSRC}/${FILE}.orig >${WRKSRC}/${FILE}
 .endfor
-	${SED} s,%PREFIX%,${PREFIX}, < ${WRKSRC}/wrapzap > ${WRKSRC}/adzap
+#	${SED} s,%PREFIX%,${PREFIX}, < ${WRKSRC}/wrapzap > ${WRKSRC}/adzap
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/squid_redirect ${PREFIX}/libexec
-	${INSTALL_SCRIPT} ${WRKSRC}/adzap ${PREFIX}/libexec
+	${INSTALL_SCRIPT} ${WRKSRC}/wrapzap ${PREFIX}/libexec/adzap
 	${MKDIR} ${PREFIX}/share/examples/adzap
 .for FILE in adzap.conf proxy-cisra.pac proxy-home.pac proxy-zip.pac \
 	closepopup-clear.html no-op-clear.html closepopup.html no-op.html \
