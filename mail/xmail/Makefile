@@ -3,7 +3,7 @@
 # Date created:		15 July 1997
 # Whom:			Stephen Roznowski <sjr1@flash.net>
 #
-# $FreeBSD: ports/mail/xmail/Makefile,v 1.5 1999/08/25 06:51:12 obrien Exp $
+# $FreeBSD: ports/mail/xmail/Makefile,v 1.6 1999/08/31 06:47:43 mharo Exp $
 #
 
 DISTNAME=	xmail_1.6
@@ -12,7 +12,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

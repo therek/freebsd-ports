@@ -3,14 +3,14 @@
 # Date created:		Sat 18 Apr 1998 10:12:20 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/databases/tkgnats/Makefile,v 1.12 1999/08/31 06:41:24 mharo Exp $
+# $FreeBSD: ports/databases/tkgnats/Makefile,v 1.13 1999/11/02 03:51:37 jseger Exp $
 #
 
 DISTNAME=	tkgnats-3.0.14
 CATEGORIES=	databases tk82
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkgnats/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	nedit-pr:${PORTSDIR}/databases/gnats
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82

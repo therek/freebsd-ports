@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 30 13:29:42 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.8 1999/08/25 05:21:38 obrien Exp $
+# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.9 1999/08/31 06:41:25 mharo Exp $
 #
 
 DISTNAME=	xmbase-grok-1.4.1
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		ftp://ftp.fu-berlin.de/pub/unix/databases/xmbase-grok/
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 REQUIRES_MOTIF=	yes
 USE_IMAKE=	yes

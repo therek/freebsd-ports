@@ -3,7 +3,7 @@
 # Date created:			So   2 M-Aär 1997 18:10:49 MET$)B
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/wwwstat/Makefile,v 1.14 1999/09/10 20:46:59 taoka Exp $
+# $FreeBSD: ports/www/wwwstat/Makefile,v 1.15 2000/02/15 23:58:19 mharo Exp $
 #
 
 DISTNAME=	wwwstat-2.0
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://www.ics.uci.edu/pub/websoft/wwwstat/ \
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	patch-2.01.txt
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=    ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
 
