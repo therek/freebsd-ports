@@ -1,5 +1,6 @@
-# $FreeBSD: ports/french/Makefile,v 1.4 2001/04/13 09:22:08 demon Exp $
+# $FreeBSD$
 #
+    SUBDIR += xtel
 
     SUBDIR += ispell
     SUBDIR += kde2-i18n
