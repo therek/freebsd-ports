@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.148 2000/12/31 10:37:42 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.149 2000/12/31 10:42:42 trevor Exp $
 #
 
     SUBDIR += aafid2
@@ -38,6 +38,7 @@
     SUBDIR += ident2
     SUBDIR += identify
     SUBDIR += inflex
+    SUBDIR += integrit
     SUBDIR += its4
     SUBDIR += john
     SUBDIR += keynote
