@@ -3,24 +3,24 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.17 1999/11/30 08:47:34 sheldonh Exp $
+# $FreeBSD: ports/irc/epic4/Makefile,v 1.18 1999/12/01 10:07:41 sheldonh Exp $
 #
 
-DISTNAME=	epic-4.pre2.400
+DISTNAME=	epic-4.pre2.500
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.epicsol.org/pub/epic/EPIC4-BETA/ \
 		ftp://mirror.pipex.net/pub/epic/EPIC4-BETA/ \
 		ftp://totem.fix.no/pub/mirrors/epic/EPIC4-BETA/ \
 		ftp://ftp.sanyusan.se/pub/epic/EPIC4-BETA/
-DISTFILES=	epic4pre2.400.tar.gz epic4pre2-help.tar.gz
+DISTFILES=	epic4pre2.500.tar.gz epic4pre2-help.tar.gz
 
 MAINTAINER=	anders@sanyusan.se
 
 DIST_SUBDIR=	epic4
 
-EXTRACT_ONLY=	epic4pre2.400.tar.gz
+EXTRACT_ONLY=	epic4pre2.500.tar.gz
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/ircii-EPIC4pre2.400
+WRKSRC=		${WRKDIR}/ircii-EPIC4pre2.500
 
 MAN1=		epic.1
 
