@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.17 2000/12/23 18:58:28 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.18 2001/03/07 07:52:11 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -165,15 +165,11 @@ then
  echo "	@\${ECHO} \"    chmod 555 /usr/bin/grog                             \""
  echo "	@\${ECHO} \"--------------------------------------------------------\""
 fi
- echo "	@\${ECHO} \"*** Please Note                                    ***  \""
- echo "	@\${ECHO} \"To enable so called CLASS support without printing      \""
- echo "	@\${ECHO} \"the banner page (/etc/printcap: :sh:)                   \""
- echo "	@\${ECHO} \"apply the patch for lpr.c, see file INSTALL !!!         \""
- echo "	@\${ECHO} \"--------------------------------------------------------\""
  echo "	@\${ECHO} \"*** Printer installation / apsfilter setup         ***  \""
  echo "	@\${ECHO} \"    cd ${PREFIX}/share/apsfilter; ./SETUP               \""
  echo "	@\${ECHO} \"--------------------------------------------------------\""
  echo "	@\${ECHO} \"*** In any case of trouble please read             ***  \""
- echo "	@\${ECHO} \"   FAQ, HOWTO-BUGREPORTS, TROUBLESHOOTING               \""
+ echo "	@\${ECHO} \"   the apsfilter handbook: handbook.html                \""
+ echo "	@\${ECHO} \"   and FAQ, HOWTO-BUGREPORTS, TROUBLESHOOTING           \""
  echo "	@\${ECHO} \"   under ${PREFIX}/share/doc/apsfilter/                 \""
  echo "	@\${ECHO} \"   or visit http://www.apsfilter.org/support.html       \""

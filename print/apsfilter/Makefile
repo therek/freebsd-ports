@@ -2,16 +2,16 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.80 2001/03/07 07:19:33 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.81 2001/03/07 07:52:11 andreas Exp $
 #
 
 PORTNAME=	apsfilter
 PORTVERSION=	6.0.0
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	print
 MASTER_SITES=	http://www.apsfilter.org/download/
 PATCH_SITES=	http://www.apsfilter.org/download/
-PATCHFILES=	diff-6.0.0-09.01.2001.gz
+PATCHFILES=	diff-6.0.0-17.03.2001.gz
 
 MAINTAINER=	andreas@FreeBSD.org
 
