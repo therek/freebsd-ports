@@ -3,7 +3,7 @@
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 # Based on ports by:			Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD: ports/games/crafty-open-rock/Makefile,v 1.3 1999/08/25 06:03:12 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crafty-open-rock
@@ -22,11 +22,15 @@ DIST_SUBDIR=		crafty
 NO_WRKSUBDIR=		yes
 EXTRACT_ONLY=
 
+MKFIFO=		/usr/bin/mkfifo
+GAMEFIFO=	${WRKDIR}/gamefifo
+
 do-build:
 	@${ECHO_MSG} '================================================================'
 	@${ECHO_MSG} 'Ignore warnings about illegal moves.  These warnings are normal.'
 	@${ECHO_MSG} '================================================================'
-	(cd ${DISTDIR}/${DIST_SUBDIR} && ${CAT} ${DISTFILES} | ${GUNZIP_CMD}) | (cd ${WRKDIR}; crafty 3<&0 < ${FILESDIR}/book-building)
+	${MKFIFO} ${GAMEFIFO}
+	(cd ${DISTDIR}/${DIST_SUBDIR} && ${CAT} ${DISTFILES} | ${GUNZIP_CMD} > ${GAMEFIFO}) & (cd ${WRKDIR}; crafty < ${FILESDIR}/book-building)
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/crafty
