@@ -2,7 +2,7 @@
 # Date created:        06 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.7 2000/10/05 06:42:33 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fsv
@@ -19,7 +19,7 @@ USE_MESA=	yes
 USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-GL-prefix=${X11BASE}/lib
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}" \
+		LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
 
 .include <bsd.port.mk>
