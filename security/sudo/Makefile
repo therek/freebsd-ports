@@ -2,11 +2,12 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.38 2001/03/07 10:31:39 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.39 2001/06/22 08:48:47 mharo Exp $
 #
 
 PORTNAME=	sudo
 PORTVERSION=	1.6.3.7
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/ \
 		ftp://ftp.stikman.com/pub/sudo/ \
@@ -25,11 +26,12 @@ CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc \
 		--with-insults \
 		--with-all-insults \
 		--with-logincap \
-		--disable-root-sudo
+		--disable-root-sudo \
+		--with-long-otp-prompt \
+		--with-pam
 
 .ifdef(WITH_OPIE)
-CONFIGURE_ARGS+=--with-opie \
-		--with-long-otp-prompt
+CONFIGURE_ARGS+=--with-opie
 .else
 CONFIGURE_ARGS+=--with-skey
 .endif
