@@ -2,7 +2,7 @@
 # Date created:				17 Oct 1998
 # Whom:					Frank Gruender
 #
-# $FreeBSD: ports/devel/qtarch/Makefile,v 1.8 2000/06/08 09:08:17 knu Exp $
+# $FreeBSD: ports/devel/qtarch/Makefile,v 1.9 2000/08/09 16:52:02 cpiazza Exp $
 #
 
 PORTNAME=	qtarch
@@ -16,7 +16,6 @@ MAINTAINER=	elwood@mc5sys.in-berlin.de
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.3:${PORTSDIR}/x11/kdelibs11
 
-FETCH_BEFORE_ARGS=	-b
 USE_QT=		yes
 USE_GMAKE=	yes
 USE_XLIB=	yes

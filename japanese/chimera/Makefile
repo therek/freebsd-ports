@@ -2,7 +2,7 @@
 # Date created:		26 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/chimera/Makefile,v 1.13 1999/08/31 06:45:27 mharo Exp $
+# $FreeBSD: ports/japanese/chimera/Makefile,v 1.14 2000/04/11 14:12:57 knu Exp $
 #
 
 PORTNAME=	chimera
@@ -21,7 +21,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 PREV_VERSION=	${PORTVERSION:S/p1/p0/}
 
-FETCH_BEFORE_ARGS=	-b
 USE_IMAKE=	yes
 MAN1=		chimera.1
 

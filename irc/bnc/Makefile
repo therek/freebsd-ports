@@ -2,7 +2,7 @@
 # Date created:        06 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/irc/bnc/Makefile,v 1.8 2000/04/12 11:19:03 asami Exp $
+# $FreeBSD: ports/irc/bnc/Makefile,v 1.9 2000/05/22 06:38:58 will Exp $
 #
 
 PORTNAME=	bnc
@@ -13,7 +13,6 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
 
-FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	YES
 
 post-patch:

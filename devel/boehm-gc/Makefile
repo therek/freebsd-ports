@@ -2,7 +2,7 @@
 # Date created:		15 November 1996
 # Whom:			Mike McGaughey <mmcg@cs.monash.edu.au>
 #
-# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.12 2001/01/03 20:17:06 sf Exp $
+# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.13 2001/01/10 14:02:12 sf Exp $
 #
 
 PORTNAME=	boehm-gc
@@ -16,8 +16,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386	# XXX can't figure out whether to define
 #			# XXX SEARCH_FOR_DATA_START on other platforms
-
-FETCH_BEFORE_ARGS=	-b
 
 WRKSRC=		${WRKDIR}/gc
 MAN3=		gc.3

@@ -2,7 +2,7 @@
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.11 2000/03/09 10:09:09 tg Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.12 2000/04/14 10:47:10 asami Exp $
 #
 
 PORTNAME=	pstoedit
@@ -17,7 +17,6 @@ RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 LIB_DEPENDS=	plot.3:${PORTSDIR}/graphics/plotutils \
 		plotter.3:${PORTSDIR}/graphics/plotutils
 
-FETCH_BEFORE_ARGS=	-t
 USE_ZIP=		yes
 WRKSRC=		${WRKDIR}/pstoedit_3.17/src
 GNU_CONFIGURE=	yes

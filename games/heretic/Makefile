@@ -2,7 +2,7 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/heretic/Makefile,v 1.7 2001/01/09 21:51:27 trevor Exp $
+# $FreeBSD: ports/games/heretic/Makefile,v 1.8 2001/01/10 16:09:23 kevlo Exp $
 #
 
 PORTNAME=	heretic
@@ -18,7 +18,6 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 
-FETCH_BEFORE_ARGS+=	-b
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:        21 Jan 2001
 # Whom:                clive
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/qkmj/Makefile,v 1.1 2001/01/21 17:08:18 clive Exp $
 #
 
 PORTNAME=	qkmj
@@ -19,8 +19,6 @@ MAINTAINER=	clive@FreeBSD.org
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 NO_CDROM=	'Do not sell for profit.'
-
-FETCH_BEFORE_ARGS=	-b
 
 do-install:
 	${INSTALL} -c ${DISTDIR}/${DISTNAME} ${PREFIX}/bin/${DISTNAME}

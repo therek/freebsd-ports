@@ -2,7 +2,7 @@
 # Date created:        25 August 1998
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/xhime/Makefile,v 1.4 1999/08/31 06:44:41 mharo Exp $
+# $FreeBSD: ports/games/xhime/Makefile,v 1.5 2000/04/14 12:27:27 asami Exp $
 #
 
 PORTNAME=	xhime
@@ -20,8 +20,6 @@ MANLANG=	. ja
 MAN6=		xhime.6
 
 NO_CDROM=	'contains commercial character data'
-
-FETCH_BEFORE_ARGS=	-b
 
 post-install:
 	strip ${PREFIX}/bin/xhime
