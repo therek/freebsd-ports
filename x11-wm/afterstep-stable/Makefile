@@ -2,7 +2,7 @@
 # Date created:		1 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.44 2001/02/05 21:05:34 olgeni Exp $
+# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.45 2001/07/12 20:15:55 demon Exp $
 #
 
 PORTNAME=	afterstep
@@ -44,6 +44,10 @@ CONFIGURE_ARGS+=	--disable-savewindows
 MAN1=	Animate.1x Audio.1x Banner.1x Cascade.1x Clean.1x Form.1x Gnome.1x \
 	Ident.1x Pager.1x Save.1x Script.1x Scroll.1x Tile.1x Wharf.1x \
 	WinList.1x Zharf.1x afterstep.1x asetroot.1x
+
+post-patch:
+	${PERL} -pi.orig -e 's,/usr/X11/,${X11BASE}/,' \
+		${WRKSRC}/src/afterstep/afterstep.man
 
 post-install:
 	@${INSTALL_DATA} ${FILESDIR}/monitor_bsd.xpm ${PREFIX}/share/afterstep/desktop/icons/common/
