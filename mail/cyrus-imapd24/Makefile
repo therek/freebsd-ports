@@ -2,7 +2,7 @@
 # Date created:					Jan 4th 2001
 # Whom:						ume@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.41 2001/03/22 11:17:16 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.42 2001/04/06 17:51:12 ume Exp $
 #
 
 PORTNAME=	cyrus-imapd
@@ -87,24 +87,9 @@ post-install:
 			${PREFIX}/etc/imapd.conf.dist
 		${INSTALL_DATA} ${WRKSRC}/master/conf/normal.conf \
 			${PREFIX}/etc/cyrus.conf.dist
-		${WRKSRC}/tools/mkimap ${FILESDIR}/imapd.conf
-		${CHOWN} -R cyrus:cyrus /var/imap
-		${CHOWN} -R cyrus:cyrus /var/spool/imap
-		@${ECHO} "@cwd /var" >>${TMPPLIST}
-		@${ECHO} "@exec ${MKDIR} imap" >>${TMPPLIST}
-.for dir in user socket sieve quota proc msg log deliverdb/db deliverdb db
-		@${ECHO} "@exec ${MKDIR} imap/${dir}" >>${TMPPLIST}
-		@${ECHO} "@dirrm imap/${dir}" >>${TMPPLIST}
-.endfor
-		@${ECHO} "@dirrm imap" >>${TMPPLIST}
-		@${ECHO} "@exec ${CHOWN} -R cyrus:cyrus imap" >>${TMPPLIST}
-		@${ECHO} "@exec ${CHMOD} -R g-w,o= imap" >>${TMPPLIST}
-		@${ECHO} "@mode u=rwx,go=" >>${TMPPLIST}
-		@${ECHO} "@exec ${MKDIR} spool/imap" >>${TMPPLIST}
-		@${ECHO} "@exec ${CHOWN} cyrus:cyrus spool/imap" >>${TMPPLIST}
-		@${ECHO} "@exec ${CHMOD} g-w,o= spool/imap" >>${TMPPLIST}
-		@${ECHO} "@dirrm spool/imap/stage." >>${TMPPLIST}
-		@${ECHO} "@dirrm spool/imap" >>${TMPPLIST}
+		${INSTALL_SCRIPT} ${WRKSRC}/tools/mkimap \
+			${PREFIX}/cyrus/bin/mkimap
 		@PKG_PREFIX=${PREFIX} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
+		@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
