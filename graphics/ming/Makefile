@@ -2,7 +2,7 @@
 # Date created:		14 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ming/Makefile,v 1.10 2001/09/11 02:22:46 ache Exp $
+# $FreeBSD: ports/graphics/ming/Makefile,v 1.11 2001/09/18 05:57:16 knu Exp $
 #
 
 PORTNAME=	ming
@@ -19,6 +19,7 @@ LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAKE_ARGS=	NOPROFILE=true
+INSTALLS_SHLIB=	yes
 
 UTILS=		gif2dbl \
 		gif2mask \
