@@ -2,13 +2,14 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-dbd_mysql/Makefile,v 1.2 2001/06/02 17:05:45 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dbd_mysql
 PORTVERSION=	${RUBY_DBI_PORTVERSION}
 CATEGORIES=	databases ruby
 MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
+MASTER_SITE_SUBDIR=	${RUBY_DBI_MASTER_SITE_SUBDIR}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${RUBY_DBI_DISTNAME}
 DIST_SUBDIR=	ruby
