@@ -2,7 +2,7 @@
 # Date created:		01 April 2001
 # Whom:			Bruce A. Mah <bmah@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/marathon-evil/Makefile,v 1.1 2001/04/10 20:36:17 will Exp $
 #
 
 PORTNAME=	marathon-evil
@@ -14,7 +14,7 @@ DISTNAME=	MarathonEvil-3
 
 MAINTAINER=	bmah@freebsd.org
 
-#RUN_DEPENDS=	alephone:${PORTSDIR}/games/alephone
+RUN_DEPENDS=	alephone:${PORTSDIR}/games/alephone
 
 USE_X_PREFIX=	yes
 NO_CDROM=	Bungie/Microsoft do not allow charging for Marathon data files.
