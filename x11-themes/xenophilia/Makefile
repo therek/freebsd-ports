@@ -2,11 +2,11 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/xenophilia/Makefile,v 1.7 2001/02/07 15:14:31 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/xenophilia/Makefile,v 1.8 2001/05/29 16:40:30 sobomax Exp $
 #
 
 PORTNAME=	xenophilia
-PORTVERSION=	200105060708
+PORTVERSION=	200105061008
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_THEMES}
 MASTER_SITE_SUBDIR=	gtk
