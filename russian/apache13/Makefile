@@ -3,13 +3,13 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.7 1999/11/14 03:10:16 steve Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.8 1999/12/23 18:35:01 steve Exp $
 #
 
 VERSION=	1.3.9
 RA_VERSION=	29.2
 DISTNAME=       apache_${VERSION}
-PKGNAME=        rapache-${VERSION}
+PKGNAME=        ru-apache-${VERSION}
 CATEGORIES=	www russian
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
