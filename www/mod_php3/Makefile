@@ -2,7 +2,7 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.115 2000/06/07 20:10:46 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.116 2000/10/18 10:07:07 dirk Exp $
 #
 
 PORTNAME=	mod_php
@@ -33,6 +33,7 @@ APXS=		${PREFIX}/sbin/apxs
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-apxs=${APXS} \
+		--enable-versioning \
 		--with-system-regex \
 		--with-config-file-path=${PREFIX}/etc \
 		--disable-debug \
