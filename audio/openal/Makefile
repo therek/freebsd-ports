@@ -2,13 +2,13 @@
 # Date created:		25 September 2000
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/openal/Makefile,v 1.1 2000/09/26 12:12:48 tg Exp $
+# $FreeBSD: ports/audio/openal/Makefile,v 1.2 2000/10/17 20:07:22 ade Exp $
 #
 
 PORTNAME=	openal
 PORTVERSION= 	20000908
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.openal.org/
+MASTER_SITES=	ftp://ftp.openal.org/pub/openal/
 
 MAINTAINER=	ports@FreeBSD.org
 
