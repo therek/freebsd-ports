@@ -3,7 +3,7 @@
 # Date created:			  29 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/lang/nawk/Makefile,v 1.13 2000/04/12 06:19:33 obrien Exp $
+# $FreeBSD: ports/lang/nawk/Makefile,v 1.14 2000/11/03 10:01:01 obrien Exp $
 #
 
 PORTNAME=	nawk
@@ -14,7 +14,6 @@ DISTNAME=	awk
 
 MAINTAINER=	obrien@FreeBSD.org
 
-USE_BISON=	yes
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	a.out
