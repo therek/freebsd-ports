@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.241 2004/05/24 20:03:31 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.242 2004/05/25 20:47:10 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -38,7 +38,7 @@ MASTER_SITE_PORTS_JP+=	\
 
 MASTER_SITE_AFTERSTEP+=	\
 	ftp://ftp.afterstep.org/%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/X11/AfterStep/%SUBDIR%/ \
+	ftp://ftp.kddlabs.co.jp/X11/window_manager/AfterStep/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/X/AfterStep/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/windowmanagers/afterstep/%SUBDIR%/
 
@@ -78,7 +78,7 @@ MASTER_SITE_APACHE+=	\
 	ftp://ftp.rge.com/pub/infosystems/apache/%SUBDIR%/ \
 	ftp://ftp.tux.org/pub/net/apache/dist/%SUBDIR%/ \
 	ftp://ftp.saix.net/pub/apache/dist/%SUBDIR%/ \
-	http://nagoya.apache.org/dist/mirror/%SUBDIR%/
+	http://nagoya.apache.org/mirror/%SUBDIR%/
 
 MASTER_SITE_APACHE_HTTPD+=	\
 	${MASTER_SITE_APACHE:S,%SUBDIR%,httpd/&,}
