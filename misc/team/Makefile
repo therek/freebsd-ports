@@ -3,13 +3,14 @@
 # Date created:		1 July 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/misc/team/Makefile,v 1.10 2000/04/14 17:43:59 knu Exp $
+# $FreeBSD: ports/misc/team/Makefile,v 1.11 2000/04/15 15:13:52 knu Exp $
 #
 
 PORTNAME=	team
 PORTVERSION=	3.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	joerg@FreeBSD.org
 

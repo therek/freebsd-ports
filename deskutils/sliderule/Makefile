@@ -2,13 +2,14 @@
 # Date created:         4 Aug 1997
 # Whom:                 joerg
 #
-# $FreeBSD: ports/deskutils/sliderule/Makefile,v 1.6 2000/04/08 22:03:51 mharo Exp $
+# $FreeBSD: ports/deskutils/sliderule/Makefile,v 1.7 2000/04/10 03:59:12 mharo Exp $
 #
 
 PORTNAME=	sliderule
 PORTVERSION=	1.0
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	joerg@FreeBSD.org

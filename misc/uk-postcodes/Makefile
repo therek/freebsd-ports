@@ -2,7 +2,7 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.4 2000/04/14 08:46:54 asami Exp $
+# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.5 2000/04/15 08:51:56 asami Exp $
 #
 
 PORTNAME=       postcodes
@@ -10,6 +10,7 @@ PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_LOCAL} \
 		http://people.FreeBSD.org/~wosch/src/
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 PKGNAMEPREFIX=	uk-
 DISTFILES=	uk.postcodes.gz
 

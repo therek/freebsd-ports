@@ -3,13 +3,14 @@
 # Date created:		8 March 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/colorls/Makefile,v 1.21 2000/04/15 15:13:49 knu Exp $
+# $FreeBSD: ports/misc/colorls/Makefile,v 1.22 2000/06/02 15:16:52 joe Exp $
 #
 
 PORTNAME=	colorls
 PORTVERSION=	2.2.7
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami
 DISTFILES=	ls-${PORTVERSION}.tar.gz
 
 MAINTAINER=	asami@FreeBSD.org

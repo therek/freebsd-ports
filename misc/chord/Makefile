@@ -2,13 +2,14 @@
 # Date created:		24 April 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/chord/Makefile,v 1.8 1999/08/31 06:48:14 mharo Exp $
+# $FreeBSD: ports/misc/chord/Makefile,v 1.9 2000/04/14 08:45:26 asami Exp $
 #
 
 PORTNAME=	chord
 PORTVERSION=	3.6
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org

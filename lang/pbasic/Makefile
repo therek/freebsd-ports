@@ -2,13 +2,14 @@
 # Date created:		13th August 1995
 # Whom:			Julian Stacey <jhs@freebsd.org>
 #
-# $FreeBSD: ports/lang/pbasic/Makefile,v 1.10 1999/08/28 02:42:26 mharo Exp $
+# $FreeBSD: ports/lang/pbasic/Makefile,v 1.11 2000/04/12 06:19:49 obrien Exp $
 #
 
 PORTNAME=	pbasic
 PORTVERSION=	2.0
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}-${PORTVERSION}-950813
 
 MAINTAINER=	asami@FreeBSD.org

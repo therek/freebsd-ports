@@ -2,13 +2,14 @@
 # Date created:		3 April 1997
 # Whom:			eserte
 #
-# $FreeBSD: ports/astro/ephem/Makefile,v 1.4 1999/08/27 21:13:30 mharo Exp $
+# $FreeBSD: ports/astro/ephem/Makefile,v 1.5 2000/04/08 22:01:41 mharo Exp $
 #
 
 PORTNAME=	ephem
 PORTVERSION=	4.28
 CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}_${PORTVERSION}_unix
 
 MAINTAINER=	eserte@cs.tu-berlin.de

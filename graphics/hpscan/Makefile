@@ -3,7 +3,7 @@
 # Date created:		12 January 1996
 # Whom:			nate
 #
-# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.20 2000/04/14 17:43:53 knu Exp $
+# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.21 2000/04/15 15:13:43 knu Exp $
 #
 
 PORTNAME=	hpscan
@@ -11,6 +11,7 @@ PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.cogsci.ed.ac.uk/pub/richard/
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	scanner
 
 MAINTAINER=	jkh@FreeBSD.org

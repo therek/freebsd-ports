@@ -2,13 +2,14 @@
 # Date created:			26 November 1996
 # Whom:				Sandro Sigala
 #
-# $FreeBSD: ports/devel/cutils/Makefile,v 1.7 1999/08/25 05:47:44 obrien Exp $
+# $FreeBSD: ports/devel/cutils/Makefile,v 1.8 2000/04/11 21:27:37 mharo Exp $
 #
 
 PORTNAME=	cutils
 PORTVERSION=	1.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	ssigala@globalnet.it
 

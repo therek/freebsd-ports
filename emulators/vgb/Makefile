@@ -2,13 +2,14 @@
 # Date created:        31 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/vgb/Makefile,v 1.10 2000/01/22 11:45:46 nakai Exp $
+# $FreeBSD: ports/emulators/vgb/Makefile,v 1.11 2000/04/12 04:56:00 mharo Exp $
 #
 
 PORTNAME=	vgb
 PORTVERSION=	0.7
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	VGB
 EXTRACT_SUFX=	.tar.Z
 

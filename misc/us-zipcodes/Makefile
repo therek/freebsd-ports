@@ -2,7 +2,7 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/us-zipcodes/Makefile,v 1.5 2000/02/08 09:28:10 peter Exp $
+# $FreeBSD: ports/misc/us-zipcodes/Makefile,v 1.6 2000/04/14 08:46:57 asami Exp $
 #
 
 PORTNAME=       zipcodes
@@ -10,6 +10,7 @@ PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_LOCAL} \
 		http://people.FreeBSD.org/~wosch/src/
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 PKGNAMEPREFIX=	us-
 DISTFILES=	${PORTNAME}.gz
 

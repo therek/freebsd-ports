@@ -2,7 +2,7 @@
 # Date created:        15 Jun 1998
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.12 2000/01/25 14:22:51 taoka Exp $
+# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.13 2000/04/13 08:33:38 knu Exp $
 #
 
 PORTNAME=	xdvik-vflib
@@ -17,6 +17,7 @@ MASTER_SITES=	ftp://ftp.appi.keio.ac.jp/pub/xdvi/ \
 		ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/jvf/ \
 		ftp://ftp.tex.ac.uk/tex-archive/dviware/xdvik/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	xdvik-${PORTVERSION}
 
 PATCH_SITES=	ftp://ftp.appi.keio.ac.jp/pub/xdvi/ \
@@ -24,6 +25,7 @@ PATCH_SITES=	ftp://ftp.appi.keio.ac.jp/pub/xdvi/ \
 		ftp://komadori.planet.sci.kobe-u.ac.jp/pub/xdvi/ \
 		ftp://ftp.chem.eng.himeji-tech.ac.jp/pub/xdvi/ \
 		${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	asami/LOCAL_PORTS
 PATCHFILES=	${DISTNAME}-j1.03.patch.gz
 PATCH_DIST_STRIP=	-p1
 

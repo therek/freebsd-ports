@@ -2,13 +2,14 @@
 # Date created:        20 Oct 1996
 # Whom:                Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.6 2000/01/07 02:26:52 nakai Exp $
+# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.7 2000/04/14 10:45:54 asami Exp $
 #
 
 PORTNAME=	gifmerge
 PORTVERSION=	1.33
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTFILES=	gifmerge.tar
 
 MAINTAINER=	nakai@FreeBSD.org

@@ -2,7 +2,7 @@
 # Date created:        26 Feb 1998
 # Whom:                Kentaro Inagaki <JBD01226@niftyserve.ne.jp>
 #
-# $FreeBSD: ports/print/xdvik/Makefile,v 1.6 2000/04/09 17:41:32 cpiazza Exp $
+# $FreeBSD: ports/print/xdvik/Makefile,v 1.7 2000/04/09 17:50:50 cpiazza Exp $
 #
 
 PORTNAME=	xdvik
@@ -10,6 +10,7 @@ PORTVERSION=	20a
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/xdvik-20/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	JBD01226@niftyserve.ne.jp
 

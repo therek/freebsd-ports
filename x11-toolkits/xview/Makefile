@@ -2,7 +2,7 @@
 # Date created:		22 November 1994
 # Whom:			ljo (orig)
 #
-# $FreeBSD: ports/x11-toolkits/xview/Makefile,v 1.13 1999/08/31 06:53:03 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/xview/Makefile,v 1.14 2000/04/10 01:11:23 cpiazza Exp $
 #
 
 PORTNAME=	xview
@@ -10,7 +10,8 @@ PORTVERSION= 	3.2.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_LOCAL}	\
 		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	libraries
+# former for ${MASER_SITE_LOCAL}, latter for ${MASTER_SITE_XCONTRIB}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS libraries
 DISTNAME=	xview3.2p1-X11R6
 
 MAINTAINER=	ports@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/emulators/cpmtools/Makefile,v 1.18 2000/02/07 22:09:12 mharo Exp $
+# $FreeBSD: ports/emulators/cpmtools/Makefile,v 1.19 2000/04/12 04:55:19 mharo Exp $
 #
 
 PORTNAME=	cpmtools
 PORTVERSION=	1.1
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	cpm-${PORTVERSION}
 
 MAINTAINER=	joerg@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:         Sep 1, 1996
 # Whom:                 joerg
 #
-# $FreeBSD: ports/comms/xcept/Makefile,v 1.10 1999/08/31 06:40:58 mharo Exp $
+# $FreeBSD: ports/comms/xcept/Makefile,v 1.11 2000/04/08 23:22:43 mharo Exp $
 #
 
 PORTNAME=	xcept
 PORTVERSION=	2.1.2
 CATEGORIES=	comms
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	joerg@FreeBSD.org
 

@@ -2,7 +2,7 @@
 # Date created:			05 Oct 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/platex-common/Makefile,v 1.28 1999/12/22 14:39:09 max Exp $
+# $FreeBSD: ports/japanese/platex-common/Makefile,v 1.29 2000/04/12 14:37:04 knu Exp $
 #
 
 PORTNAME=	platex2e
@@ -12,6 +12,7 @@ CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/platex/${PORTVERSION:S/./-/g}/ \
 		ftp://ftp.ams.org/pub/tex/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTFILES=	base-9906.tar.gz \
 		ecfonts-1.0.tar.gz \
 		tfm.tar \

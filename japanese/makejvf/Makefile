@@ -2,7 +2,7 @@
 # Date created:        6 Oct 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/makejvf/Makefile,v 1.3 2000/02/12 20:14:19 imura Exp $
+# $FreeBSD: ports/japanese/makejvf/Makefile,v 1.4 2000/04/11 14:14:59 knu Exp $
 #
 
 PORTNAME=	makejvf-fkr
@@ -11,6 +11,7 @@ CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.tooyoo.l.u-tokyo.ac.jp/pub/TeX/ \
 		ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/jvf/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	makejvf-${PORTVERSION}-fkr
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		standard${EXTRACT_SUFX} nmin-ngoth${EXTRACT_SUFX} \

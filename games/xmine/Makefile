@@ -2,7 +2,7 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xmine/Makefile,v 1.19 2000/04/14 12:27:43 asami Exp $
+# $FreeBSD: ports/games/xmine/Makefile,v 1.20 2000/04/14 17:43:48 knu Exp $
 #
 
 PORTNAME=	xmine
@@ -10,6 +10,7 @@ PORTVERSION=	1.0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sw.ru/pub/x11/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PKGNAME}-Xaw
 
 MAINTAINER=	joerg@FreeBSD.org

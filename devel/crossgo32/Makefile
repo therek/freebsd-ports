@@ -4,7 +4,7 @@
 # Date updated: 	Sun Jun 22 16:11:40 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/devel/crossgo32/Makefile,v 1.10 2000/04/11 21:27:28 mharo Exp $
+# $FreeBSD: ports/devel/crossgo32/Makefile,v 1.11 2000/04/16 09:38:34 asami Exp $
 #
 
 PORTNAME=	crossgo32
@@ -12,6 +12,7 @@ PORTVERSION=	1.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://sourceware.cygnus.com/pub/crossgcc/
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	crosstree-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} dosrel-1.0${EXTRACT_SUFX}
 

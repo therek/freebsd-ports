@@ -2,13 +2,14 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.22 2000/04/12 06:19:29 obrien Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.23 2000/04/17 00:18:04 reg Exp $
 #
 
 PORTNAME=	modula-3-lib
 PORTVERSION=	3.6
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTFILES=	m3-fbsd-src-3.6.tar.gz \
 		m3-fbsd-m3cc-3.6.tar.gz \
 		m3-fbsd-m3ccelf-3.6.tar.gz \

@@ -2,13 +2,14 @@
 # Date created:                      6 Apr 1996
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/astro/sattrack/Makefile,v 1.11 2000/01/29 20:01:17 mharo Exp $
+# $FreeBSD: ports/astro/sattrack/Makefile,v 1.12 2000/04/08 22:01:47 mharo Exp $
 #
 
 PORTNAME=	sattrack
 PORTVERSION=	3.1.6
 CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	bjn@visi.com
 

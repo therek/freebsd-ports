@@ -2,7 +2,7 @@
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/telnetx/Makefile,v 1.9 2000/01/29 05:30:41 asami Exp $
+# $FreeBSD: ports/net/telnetx/Makefile,v 1.10 2000/04/09 18:13:42 cpiazza Exp $
 #
 
 PORTNAME=	telnetx
@@ -10,6 +10,7 @@ PORTVERSION=	940401
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.sfc.wide.ad.jp/~max/FreeBSD/ports/distfiles/
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	telnetx+transit.src.940401
 
 MAINTAINER=	max@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:                      4 Apr 1996
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/converters/btoa/Makefile,v 1.7 1999/08/25 05:16:17 obrien Exp $
+# $FreeBSD: ports/converters/btoa/Makefile,v 1.8 2000/04/08 23:24:29 mharo Exp $
 #
 
 PORTNAME=	btoa
 PORTVERSION=	5.2.1
 CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	btoa-5.2
 
 PATCH_SITES=	${MASTER_SITES}

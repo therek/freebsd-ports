@@ -4,7 +4,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/xfaces/Makefile,v 1.17 1999/08/31 06:47:42 mharo Exp $
+# $FreeBSD: ports/mail/xfaces/Makefile,v 1.18 2000/04/13 20:01:00 cpiazza Exp $
 #
 
 PORTNAME=	xfaces
@@ -14,6 +14,7 @@ CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/xfaces/ \
 		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/ \
 		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTFILES=	${DISTNAME}.tar.Z xfaces-sounds.tar.gz
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE

@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					hmpierce <hmpierce@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_client/Makefile,v 1.4 1999/08/30 14:22:23 peter Exp $
+# $FreeBSD: ports/net/coda_client/Makefile,v 1.5 2000/04/09 18:10:36 cpiazza Exp $
 #
 
 PORTNAME=	coda-client
@@ -10,6 +10,7 @@ PORTVERSION=	4.6.6.1
 CATEGORIES=	net
 #MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	coda-4.6.6
 EXTRACT_SUFX=	.tgz
 

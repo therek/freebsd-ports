@@ -2,13 +2,14 @@
 # Date created:		10 February 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/dore/Makefile,v 1.11 1999/12/23 18:07:18 steve Exp $
+# $FreeBSD: ports/graphics/dore/Makefile,v 1.12 2000/04/13 06:28:15 obrien Exp $
 #
 
 PORTNAME=	pdore
 PORTVERSION=	6.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
