@@ -3,12 +3,12 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.16 1999/08/29 20:01:24 steve Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.17 1999/08/31 06:41:32 mharo Exp $
 #
 
 DISTNAME=	swig1.1p5
 PKGNAME=	swig-1.1p5
-CATEGORIES=	devel python tcl81
+CATEGORIES=	devel python tcl80
 MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/beazley/SWIG/ \
 		ftp://ftp.rge.com/pub/languages/swig/ \
 		ftp://ftp.mcc.ac.uk/pub/mvc/swig/
