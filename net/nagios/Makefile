@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.6 2001/02/12 10:01:06 knu Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.7 2001/03/09 21:06:32 sf Exp $
 #
 
 PORTNAME=	netsaint
@@ -10,7 +10,7 @@ PORTVERSION=	0.0.7b2
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	blaz@amis.net
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
