@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.54 2004/10/12 23:58:50 edwin Exp $
+# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.55 2004/10/26 14:23:33 pav Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -219,6 +219,9 @@ while [ "$1" ]; do
 ##			echo "README+=	SPF_README"
 			echo ""
 			SUB_SPF=""
+			if [ X$SUB_TLS != "X" ]; then
+				echo "EXTRA_PATCHES+=	${FILESDIR}/extra-libspf2_and_tls.patch"
+			fi
 			;;
 		IPv6)
 			if [ X$SUB_TLS = "X" ]; then
