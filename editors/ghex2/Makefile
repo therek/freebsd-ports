@@ -2,11 +2,11 @@
 # Date created:				9th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ghex/Makefile,v 1.6 2000/09/28 18:02:30 ade Exp $
+# $FreeBSD: ports/editors/ghex/Makefile,v 1.7 2000/10/05 07:10:34 reg Exp $
 #
 
 PORTNAME=	ghex
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.4
 CATEGORIES=	editors gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ghex
@@ -14,8 +14,6 @@ MASTER_SITE_SUBDIR=	stable/sources/ghex
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint
-
-BROKEN=		"Uses internals from gnomeprint that are no longer present"
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
