@@ -3,7 +3,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/skip/Makefile,v 1.13 1999/08/31 01:51:41 peter Exp $
 
 DISTNAME=		skip-1.0
 CATEGORIES=		security
@@ -12,7 +12,7 @@ CATEGORIES=		security
 #    http://skip.incog.com/src-form.html
 # The site below is outside of the U.S.
 
-MASTER_SITES=		ftp://ftp.replay.com/pub/replay/crypto/APPS/skip/ \
+MASTER_SITES=		ftp://ftp.replaytv.com/pub/replay/crypto/APPS/skip/ \
 			ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
 
 DISTFILES=		skipsrc-1.0.tar.Z
