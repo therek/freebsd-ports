@@ -3,7 +3,7 @@
 # Date created:			Mar 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xmlrpc-c/Makefile,v 1.3 2001/08/31 14:20:27 sobomax Exp $
+# $FreeBSD: ports/net/xmlrpc-c/Makefile,v 1.4 2001/09/11 07:19:46 ijliao Exp $
 #
 
 PORTNAME=	xmlrpc-c
@@ -20,6 +20,10 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Frontier/Client.pm:${P
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
+
+MAN1=	meerkat-app-list.1 xml-rpc-api2cpp.1 xmlrpc-c-config.1 \
+	query-meerkat.1 xml-rpc-api2txt.1
+MAN7=	xmlrpc-c.7
 
 post-install:
 	@${RM} -f ${PREFIX}/lib/*.la
