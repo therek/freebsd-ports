@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.648 2001/10/07 10:53:14 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.649 2001/10/08 16:25:48 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -103,6 +103,7 @@
     SUBDIR += dmake
     SUBDIR += dmalloc
     SUBDIR += doc++
+    SUBDIR += domc
     SUBDIR += dotconf
     SUBDIR += doxygen
     SUBDIR += ebnf2yacc
