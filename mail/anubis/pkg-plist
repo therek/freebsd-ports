@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/anubis/pkg-plist,v 1.5 2003/01/07 14:09:18 edwin Exp $
+@comment $FreeBSD: ports/mail/anubis/pkg-plist,v 1.6 2003/08/06 21:44:23 krion Exp $
 sbin/anubis
 etc/rc.d/anubis.sh.sample
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
@@ -15,5 +15,5 @@ etc/rc.d/anubis.sh.sample
 %%PAM%%%%EXAMPLESDIR%%/pam/anubis.deny
 %%PAM%%@dirrm %%EXAMPLESDIR%%/pam
 @dirrm %%EXAMPLESDIR%%
-share/locale/fr/LC_MESSAGES/anubis.mo
-share/locale/tr/LC_MESSAGES/anubis.mo
+%%NLS%%share/locale/fr/LC_MESSAGES/anubis.mo
+%%NLS%%share/locale/tr/LC_MESSAGES/anubis.mo
