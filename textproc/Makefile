@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.145 2000/12/31 05:42:03 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.146 2000/12/31 05:45:45 will Exp $
 #
 
     SUBDIR += agrep
@@ -38,6 +38,7 @@
     SUBDIR += gaspell
     SUBDIR += gdict
     SUBDIR += glimpse
+    SUBDIR += gmat
     SUBDIR += grap
     SUBDIR += gsed
     SUBDIR += gtkdiff
