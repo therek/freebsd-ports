@@ -2,7 +2,7 @@
 # Date created:			Jun 15, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/sleuth/Makefile,v 1.1 2001/06/15 12:46:45 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sleuth
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
 
 MAINTAINER=	markp@FreeBSD.org
+COMMENT=	A tool for checking DNS zones
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS
 

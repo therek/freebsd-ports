@@ -2,7 +2,7 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/corkscrew/Makefile,v 1.4 2001/06/15 05:13:22 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	corkscrew
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.agroman.net/corkscrew/
 
 MAINTAINER=	markp@FreeBSD.org
+COMMENT=	A HTTP tunnelling utility for SSH
 
 GNU_CONFIGURE=	yes
 

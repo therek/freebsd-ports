@@ -2,7 +2,7 @@
 # Date created:			Apr 10, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/redir/Makefile,v 1.1 2001/04/10 19:47:52 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	redir
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://sammy.net/~sammy/hacks/
 
 MAINTAINER=	markp@FreeBSD.org
+COMMENT=	A tcp connection redirection utility
 
 MAN1=		redir.1
 

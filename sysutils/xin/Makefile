@@ -2,7 +2,7 @@
 # Date created:			Apr 27, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/xin/Makefile,v 1.1 2001/05/27 17:22:39 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xin
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/file
 
 MAINTAINER=	markp@FreeBSD.org
+COMMENT=	Splits standard input and pipes into a command
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

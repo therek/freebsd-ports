@@ -2,7 +2,7 @@
 # Date created:				Apr 1, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/cpuburn/Makefile,v 1.3 2001/06/08 05:36:43 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cpuburn
@@ -13,6 +13,7 @@ DISTNAME=	cpuburn_${PORTVERSION:S/./_/g}
 EXTRACT_SUFX=	_tar.gz
 
 MAINTAINER=	markp@FreeBSD.org
+COMMENT=	CPU/memory stress testing utilities
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 ONLY_FOR_ARCHS=	i386
