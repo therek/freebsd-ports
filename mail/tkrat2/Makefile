@@ -2,7 +2,7 @@
 # Date created:		9 November 1999
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/mail/tkrat2/Makefile,v 1.28 2000/09/05 01:28:38 steve Exp $
+# $FreeBSD: ports/mail/tkrat2/Makefile,v 1.29 2000/12/11 03:06:53 steve Exp $
 #
 
 PORTNAME=	tkrat
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82:${PORTSDIR}/lang/tcl82 \
 		tk82:${PORTSDIR}/x11-toolkits/tk82 \
-		c-client4.7:${PORTSDIR}/mail/cclient
+		c-client4.8:${PORTSDIR}/mail/cclient
 
 GNU_CONFIGURE=	yes
 
@@ -25,6 +25,8 @@ CONFIGURE_ARGS=	--with-tcl-config=${PREFIX}/lib/tcl8.2 \
 
 DOCFILES=	CONFIGURATION COPYRIGHT README doc/interface doc/userprocs \
 		doc/userproc.example
+
+MAN1=		tkrat.1
 
 post-install:
 .if !defined(NOPORTDOCS)
