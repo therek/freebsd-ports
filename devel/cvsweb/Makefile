@@ -2,13 +2,14 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.12 2000/06/05 05:47:02 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.13 2000/06/05 06:59:26 knu Exp $
 #
 
 PORTNAME=	cvsweb
-PORTVERSION=	1.80
+PORTVERSION=	1.85
 CATEGORIES=	devel www
-MASTER_SITES=	http://stud.fh-heilbronn.de/~zeller/download/
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/local-distfiles/knu/ \
+		http://people.FreeBSD.org/~knu/ports/distfiles/
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -29,7 +30,7 @@ ICONSDIR?=	share/apache/icons
 
 PLIST_SUB=	CGIDIR="${CGIDIR}" ICONSDIR="${ICONSDIR}"
 
-WRKSRC=		${WRKDIR}/cvsweb
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 do-configure:
 	cd ${WRKSRC} && ${PERL} -i -pe "\
