@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/misc/Makefile,v 1.378 2001/09/06 11:17:01 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -128,6 +128,7 @@
     SUBDIR += orville-write
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Business-CreditCard
+    SUBDIR += p5-Data-Buffer
     SUBDIR += p5-DataCash
     SUBDIR += p5-File-CounterFile
     SUBDIR += p5-Finance-Quote
