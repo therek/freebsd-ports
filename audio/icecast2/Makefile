@@ -2,11 +2,11 @@
 # Date created:         28 Jan 1999
 # Whom:                 Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/icecast/Makefile,v 1.11 2000/06/01 17:11:33 will Exp $
 #
 
 PORTNAME=	icecast
-PORTVERSION=	1.3.5
+PORTVERSION=	1.3.7
 CATEGORIES=	audio net
 MASTER_SITES=	http://www.icecast.org/releases/
 
@@ -24,7 +24,8 @@ do-install:
 .endfor
 .for TEMPL in 306.html 400.html 403.html 404.html 504.html bodytag.html info.html \
 	      list_directory.html mountlist.html statistics.html admin_describe.html \
-	      admin.html alias_add.html manual.html alias_del.html
+	      admin.html alias_add.html manual.html alias_del.html header.html \
+	      footer.html admin_change.html
 	${INSTALL_DATA} ${WRKSRC}/templates/${TEMPL} ${PREFIX}/etc/icecast/templates
 .endfor
 	${MKDIR} ${PREFIX}/share/doc/icecast/
