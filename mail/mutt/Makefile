@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.86 2000/05/22 05:31:45 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.87 2000/05/23 11:40:19 ache Exp $
 #
 
 PORTNAME=	mutt
@@ -55,7 +55,7 @@ RUN_DEPENDS+=	urlview:${PORTSDIR}/textproc/urlview
 DIST_SUBDIR=	mutt
 GNU_CONFIGURE=	yes
 CONFIGURE_TARGET=${ARCH}-portbld-freebsd${OSREL}
-CONFIGURE_ENV=  CC="${CC} -I${PREFIX}/include" LDFLAGS=-L${PREFIX}/lib
+CONFIGURE_ENV=  CC="${CC} -I${LOCALBASE}/include" LDFLAGS=-L${LOCALBASE}/lib
 CONFIGURE_ARGS= --enable-pop --enable-imap --enable-flock --disable-fcntl  \
 		--with-sharedir=${PREFIX}/share/mutt \
 		--with-docdir=${PREFIX}/share/doc/mutt --with-charmaps \
