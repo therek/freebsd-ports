@@ -1,8 +1,9 @@
 # New ports collection makefile for:	hexcalc
+# Version required:	1.11 (taken from sccsid in hexcalc.c)
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/hexcalc/Makefile,v 1.12 2000/04/14 07:20:11 asami Exp $
+# $FreeBSD: ports/math/hexcalc/Makefile,v 1.13 2000/04/14 17:43:56 knu Exp $
 #
 
 PORTNAME=	hexcalc

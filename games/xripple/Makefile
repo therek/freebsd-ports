@@ -1,8 +1,9 @@
 # New ports collection makefile for:	xripple
+# Version required:			1.0 <no version #>
 # Date created:				6 Oct 1996
 # Whom:					oly
 #
-# $FreeBSD: ports/games/xripple/Makefile,v 1.9 2000/04/14 12:28:09 asami Exp $
+# $FreeBSD: ports/games/xripple/Makefile,v 1.10 2000/04/14 17:43:49 knu Exp $
 #
 
 PORTNAME=	xripple

@@ -1,8 +1,9 @@
 # New ports collection makefile for:	acm
+# Version required:	comp.sources.x/volume12 (ver 2.0)
 # Date created:		5 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/acm/Makefile,v 1.20 2000/04/14 00:45:18 mharo Exp $
+# $FreeBSD: ports/games/acm/Makefile,v 1.21 2000/04/14 17:43:46 knu Exp $
 #
 
 PORTNAME=	acm
