@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.53 1999/10/09 22:11:24 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.54 2000/01/03 09:15:07 billf Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -14,8 +14,6 @@ DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 MAINTAINER?=	sada@FreeBSD.org
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
-
-ONLY_FOR_ARCHS=	i386
 
 USE_XLIB=	yes
 NO_BUILD=	yes
