@@ -2,7 +2,7 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.32 2000/07/04 07:13:09 sobomax Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.33 2000/08/03 09:25:59 asami Exp $
 #
 
 PORTNAME=	knews
@@ -21,5 +21,6 @@ USE_IMAKE=	yes
 USE_XPM=	yes
 MAKE_FLAGS=	BINDIR=${PREFIX}/bin MANDIR=${PREFIX}/man/man1 \
 		XAPPLOADDIR=${PREFIX}/lib/X11/app-defaults  -f
+MAN1=		knews.1
 
 .include <bsd.port.mk>
