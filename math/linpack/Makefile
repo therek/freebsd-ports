@@ -2,14 +2,13 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/linpack/Makefile,v 1.26 2000/06/16 08:48:05 sobomax Exp $
+# $FreeBSD: ports/math/linpack/Makefile,v 1.27 2000/06/16 21:51:35 asami Exp $
 #
 
 PORTNAME=	linpack
 PORTVERSION=	1.0
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.netlib.org/linpack/ \
-		ftp://netlib.bell-labs.com/netlib/linpack/ \
+MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/linpack/ \
 		ftp://www.hensa.ac.uk/mirrors/netlib/linpack/
 DISTFILES=	${SRCS:.f=.f.gz}
 
