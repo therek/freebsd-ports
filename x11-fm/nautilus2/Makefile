@@ -2,11 +2,12 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.19 2001/05/05 14:14:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nautilus
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/nautilus
