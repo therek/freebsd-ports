@@ -2,7 +2,7 @@
 # Date created:			Mon Mai 10 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/security/gpasman/Makefile,v 1.5 2000/07/07 19:59:00 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gpasman
@@ -14,7 +14,8 @@ MAINTAINER=	domi@saargate.de
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	GTKCONFIG="${GTK_CONFIG}"
 

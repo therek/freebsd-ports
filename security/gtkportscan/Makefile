@@ -2,7 +2,7 @@
 # Date created:		11 March 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.14 2000/07/15 16:45:15 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkportscan
@@ -15,6 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 .include <bsd.port.mk>
