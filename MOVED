@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.480 2004/07/25 08:04:47 nork Exp $
+# $FreeBSD: ports/MOVED,v 1.481 2004/07/26 07:29:31 vs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1211,3 +1211,4 @@ x11-toolkits/qt2-static||2004-07-23|QT2 is obsolete
 x11-toolkits/qt23||2004-07-23|QT2 is obsolete
 java/eclipse-xsd|java/eclipse-emf|2004-07-25|merged 
 emulators/freesci|games/freesci|2004-07-26|Moved to better category games
+net/zebra-devel||2004-07-27|The same as net/zebra for some time
