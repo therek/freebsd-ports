@@ -2,7 +2,7 @@
 # Date created:				2000-09-23
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11-fm/xdiskusage/Makefile,v 1.2 2001/08/29 00:40:51 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdiskusage
@@ -12,6 +12,8 @@ MASTER_SITES=	http://xdiskusage.sourceforge.net/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	trevor@FreeBSD.org
+
+BROKEN=		"needs fltk 1.0.10"
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 
