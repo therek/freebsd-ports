@@ -3,14 +3,14 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.29 1999/08/25 06:50:14 obrien Exp $
 #
 
 DISTNAME=	imap-4.5
 PKGNAME=	imap-uw-4.5
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/ \
-		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/ \
+MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/old/ \
+		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/old/ \
 		ftp://ftp.uni-halle.de/pub/mail/pine/
 EXTRACT_SUFX=	.tar.Z
 
