@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.285 2001/03/20 02:32:40 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.286 2001/03/20 03:12:54 will Exp $
 #
 
     SUBDIR += 4va
@@ -200,6 +200,7 @@
     SUBDIR += sketch
     SUBDIR += smpeg
     SUBDIR += smpeg-xmms
+    SUBDIR += sng
     SUBDIR += sodipodi
     SUBDIR += spigot
     SUBDIR += splitmpg
