@@ -3,7 +3,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.1.1.1 1999/10/14 05:00:14 nakai Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.2 1999/10/27 10:26:12 nakai Exp $
 #
 
 DISTNAME=	gdk-pixbuf-0.3
