@@ -2,11 +2,11 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-runit/Makefile,v 1.4 2000/09/09 11:06:01 knu Exp $
+# $FreeBSD: ports/devel/ruby-runit/Makefile,v 1.5 2000/09/26 08:02:07 knu Exp $
 #
 
 PORTNAME=	runit
-PORTVERSION=	0.2.5
+PORTVERSION=	0.2.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://homepage1.nifty.com/markey/ruby/rubyunit/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,8 +20,11 @@ USE_RUBY=	yes
 USE_RUBY_RD=	yes
 .endif
 
-BINS=		c2t	runtest
-DOCS=		HISTORY	README	ToDo
+RUBY_SHEBANG_FILES=	${WRKSRC}/bin/c2t.rb	\
+			${WRKSRC}/bin/runtest.rb
+
+BINS=		c2t		runtest
+DOCS=		ChangeLog	README		ToDo
 
 do-build:
 .if !defined(NOPORTDOCS)
