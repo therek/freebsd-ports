@@ -3,10 +3,10 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.26 1999/09/19 12:14:56 andreas Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.27 1999/11/08 21:47:57 andreas Exp $
 #
 
-DISTNAME=	zebra-0.81
+DISTNAME=	zebra-0.83a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.zebra.org/pub/zebra/
 # you might need debugging, it's a developer release !
