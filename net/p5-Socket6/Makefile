@@ -2,11 +2,11 @@
 # Date created:		24 May 2000
 # Whom:	      		Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Socket6/Makefile,v 1.1.1.1 2000/05/24 19:52:01 ume Exp $
 #
 
 PORTNAME=	Socket6
-PORTVERSION=	0.06
+PORTVERSION=	0.07
 CATEGORIES=	net perl5 ipv6
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Socket6
