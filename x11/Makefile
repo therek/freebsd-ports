@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.319 2001/03/09 01:59:25 grog Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.320 2001/03/17 16:31:26 vanilla Exp $
 #
 
     SUBDIR += 9term
@@ -10,6 +10,7 @@
     SUBDIR += XFree86-4-manuals
     SUBDIR += XFree86-aoutlibs
     SUBDIR += XFree86-contrib
+    SUBDIR += accessx
     SUBDIR += aterm
     SUBDIR += bgrot
     SUBDIR += blast
