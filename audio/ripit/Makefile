@@ -2,11 +2,12 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/ripit/Makefile,v 1.8 2000/06/01 17:46:48 will Exp $
+# $FreeBSD: ports/audio/ripit/Makefile,v 1.9 2000/06/04 22:37:22 will Exp $
 #
 
 PORTNAME=	ripit
 PORTVERSION=	1.8
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.initio.no/~oyvindmo/distfiles/
 
