@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.154 2001/01/04 00:04:39 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.155 2001/01/04 00:05:13 will Exp $
 #
 
     SUBDIR += agrep
@@ -68,6 +68,7 @@
     SUBDIR += mswordview
     SUBDIR += nfbtrans
     SUBDIR += nicetext
+    SUBDIR += nl-ispell
     SUBDIR += no-ispell
     SUBDIR += openjade
     SUBDIR += p5-DelimMatch
