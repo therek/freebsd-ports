@@ -3,7 +3,7 @@
 # Date created:		16 Jan 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/pike/Makefile,v 1.2 1999/08/25 06:35:14 obrien Exp $
 #
 
 DISTNAME=	Pike-v0.6.110
@@ -32,5 +32,8 @@ CONFIGURE_ARGS?= \
 
 pre-configure:
 	@${ECHO} ${CONFIGURE_ARGS}
+
+pre-clean:
+	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 .include <bsd.port.mk>
