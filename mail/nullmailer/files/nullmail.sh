@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/mail/nullmailer/files/nullmail.sh,v 1.5 2004/10/12 09:09:24 clive Exp $
 #
 # PROVIDE: nullmailer
 # REQUIRE: DAEMON
@@ -16,7 +16,7 @@ name=nullmailer
 rcvar=`set_rcvar`
 nullmailer_user=nullmail
 command=%%PREFIX%%/sbin/nullmailer-send
-command_args=" | /usr/bin/logger -i -p local5.info -t nullmail &"
+command_args=" 2>&1 | /usr/bin/logger -i -p local5.info -t nullmail &"
 load_rc_config $name
 run_rc_command "$1"
 
