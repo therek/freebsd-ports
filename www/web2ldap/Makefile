@@ -2,7 +2,7 @@
 # Date created:        21 July 2000
 # Whom:                Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/www/web2ldap/Makefile,v 1.4 2000/10/08 10:23:18 asami Exp $
+# $FreeBSD: ports/www/web2ldap/Makefile,v 1.5 2000/10/09 01:29:07 lioux Exp $
 #
 
 PORTNAME=      web2ldap
@@ -13,10 +13,11 @@ MASTER_SITES=  http://sites.inka.de/ms/python/web2ldap/download/ \
 
 MAINTAINER=    oddbjorn@tricknology.org
 
-RUN_DEPENDS=   ${LOCALBASE}/bin/python:${PORTSDIR}/lang/python \
-	       ${LOCALBASE}/lib/python1.5/site-packages/ldapmodule.so:${PORTSDIR}/net/ldapmodule
+RUN_DEPENDS=   ${PYTHON_SITELIBDIR}/_ldapmodule.so:${PORTSDIR}/net/ldapmodule
 
 NO_BUILD=      yes
+USE_PYTHON=    yes
+PYTHON_VERSION= python1.5
 
 do-install:
 	@${MKDIR} ${PREFIX}/${PORTNAME}
