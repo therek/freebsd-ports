@@ -2,11 +2,11 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-mmap/Makefile,v 1.1 2001/03/07 19:12:08 knu Exp $
+# $FreeBSD: ports/devel/ruby-mmap/Makefile,v 1.2 2001/03/15 19:16:03 knu Exp $
 #
 
 PORTNAME=	mmap
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	ftp://moulon.inra.fr/pub/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -19,7 +19,7 @@ USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
-DOCS=		README.en	mmap.html	mmap.rd
+DOCS=		Changes		README.en	mmap.html	mmap.rd
 EXAMPLES=	b.rb
 
 post-install:
