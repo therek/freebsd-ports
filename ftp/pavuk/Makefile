@@ -2,16 +2,16 @@
 # Date created:				19 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.19 2000/09/22 01:58:53 kris Exp $
+# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.20 2000/12/02 15:49:53 kevlo Exp $
 #
 
 PORTNAME=	pavuk
-PORTVERSION=	0.9.26
+PORTVERSION=	0.9.27
 CATEGORIES=	ftp www
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.idata.sk/~ondrej/sw/
 MASTER_SITE_SUBDIR=	apps/www/mirroring
-DISTNAME=	${PORTNAME}-0.9pl26
+DISTNAME=	${PORTNAME}-0.9pl27
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
@@ -32,7 +32,7 @@ MAN1=		pavuk.1
 
 .if defined(HAVE_GTK)
 USE_GTK=	yes
-CONFIGURE_ARGS+=	--with-gtk-config="${GTK_CONFIG:T}"
+CONFIGURE_ARGS+=	--with-gtk-config="${GTK_CONFIG}"
 .else
 CONFIGURE_ARGS+=	--disable-gtk
 .endif
