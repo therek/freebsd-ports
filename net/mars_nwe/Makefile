@@ -1,26 +1,36 @@
-# $Id: Makefile,v 1.4 1998/12/28 19:22:01 ache Exp $
+# New ports collection makefile for:	mars_nwe
+# Version required:     0.99.pl14
+# Date created:		29 Dec 1998
+# Whom:			Boris Popov <bp@butya.kz>
+#
+# $Id$
+#
 
-SUBDIR=	FAQ handbook
+DISTNAME=       mars_nwe-0.99.pl14
+PKGNAME=	mars_nwe-0.99b14
+CATEGORIES=	net
+MASTER_SITES=	http://www.compu-art.de/download/ \
+		ftp://ftp.gwdg.de/pub/linux/misc/ncpfs/mars_nwe/ \
+		ftp://ftp.butya.kz/pub/mars_nwe/
+EXTRACT_SUFX=	.tgz
 
-# List of all language-specific subdirs.
-LANGSUBDIR=     es ja ru zh
+MAINTAINER=	bp@butya.kz
 
-# If ALLLANG is defined, descend to all language-specific subdirs too.
-# If ALLLANG is not defined, but DOC_LANG is defined and a subdirectory with
-# that name exists, descend to that directory too.
-# In either case, the default subdirectories are always traversed.
+WRKSRC=		${WRKDIR}/mars_nwe
 
-.if defined(ALLLANG)
-SUBDIR+=	${LANGSUBDIR}
-.elif defined(DOC_LANG)
-.if exists(${.CURDIR}/${DOC_LANG})
-SUBDIR+=	${DOC_LANG}
-.endif
-.endif
+NO_PACKAGE=	ignores cflags
 
-# Default output formats are ascii for troff documents, and 
-# ascii and html for sgml documents.  
-# To specify generate postscript versions of troff documents, use: 
-#  make PRINTER=ps
+do-build:
+	@(cd ${WRKSRC} && ${MAKE} all)
 
-.include <bsd.subdir.mk>
+do-install:
+	@(cd ${WRKSRC} && ./mk.li install)
+	@${ECHO} "You need to create a startup file to load MARS_NWE Server when booting."
+	@${ECHO}  "Create a nwserv.sh in ${PREFIX}/etc/rc.d directory and modify"
+	@${ECHO}  "${PREFIX}/etc/nwserv.conf manually before you loading server."
+	@${ECHO}  "Your kernel _must_ support IPXRoute!"
+	@${ECHO}  ""
+	@${ECHO}  "After building look details into ${WORKDIR}/mars_nwe/doc directory."
+	@${ECHO}  "((Especially this file : README.FREEBSD))"
+
+.include <bsd.port.mk>
