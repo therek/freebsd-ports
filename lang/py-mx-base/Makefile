@@ -2,7 +2,7 @@
 # Date created:		18 March 2001
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.13 2001/05/07 11:54:46 tg Exp $
+# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.14 2001/07/17 11:32:13 tg Exp $
 #
 
 PORTNAME=	mx-base
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	${PYDISTUTILS}
 USE_PYTHON=	yes
 
 DOCDIR=		${PREFIX}/share/doc/py-mx
+MXHDRDIR=	${PYTHON_SITELIBDIR}/mx/stdlib
 
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
@@ -29,12 +30,13 @@ do-install:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py install)
 
 post-install:
-.for dir in DateTime Proxy Stack TextTools Tools
-	@cd ${PYTHON_SITELIBDIR} && ${LN} -sf mx/${dir} ${dir}
-.endfor
 	@${MKDIR} ${DOCDIR}
 	@${SED} -e "s;%%PYTHON_SITELIBDIR%%;${PYTHON_SITELIBDIR};g" \
 		< ${FILESDIR}/index.html.in > ${DOCDIR}/index.html
 	@${CHMOD} 644 ${DOCDIR}/index.html
+	@${MKDIR} ${MXHDRDIR}
+.for file in mx.h mxh.h mxpyapi.h mxstdlib.h
+	${INSTALL_DATA} ${WRKSRC}/mx/stdlib/${file} ${MXHDRDIR}
+.endfor
 
 .include <bsd.port.mk>
