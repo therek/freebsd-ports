@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.280 2000/06/30 22:43:55 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.281 2000/07/10 03:31:30 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -66,6 +66,7 @@
     SUBDIR += gnocatan
     SUBDIR += gnomechess
     SUBDIR += gnomegames
+    SUBDIR += gnomememoryblocks
     SUBDIR += gnuchess
     SUBDIR += gnugo
     SUBDIR += gnushogi
