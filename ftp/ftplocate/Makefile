@@ -2,7 +2,7 @@
 # Date created:				7 December 1999
 # Whom:					tung@turtle.ee.ncku.edu.tw
 #
-# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.8 2000/04/12 05:31:05 mharo Exp $
+# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.9 2001/08/23 19:26:56 alex Exp $
 #
 
 PORTNAME=	ftplocate
@@ -30,7 +30,7 @@ post-patch:
 .for f in ${PL_FILES}
 	@${PERL} -pi -e 's,/usr/local/bin/perl,${PERL},' ${WRKSRC}/${f}
 .endfor
-	@${PERL} -pi -e "s,/usr/local,${LOCALBASE},g" ${WRKSRC}/install.pl
+	@${PERL} -pi -e "s,/usr/local,${PREFIX},g" ${WRKSRC}/install.pl
 
 do-install:
 	cd ${WRKSRC}; ${PERL} install.pl -y -c -bsdport
