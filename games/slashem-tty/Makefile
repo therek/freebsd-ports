@@ -2,23 +2,23 @@
 # Date created:	15th April 2001
 # Whom:	Adam Kranzel (adam@alameda.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/slashem-tty/Makefile,v 1.1 2001/05/19 18:34:36 ijliao Exp $
 #
 
 PORTNAME=	slashem
-PORTVERSION=	0.0.6E.4F.3
+PORTVERSION=	0.0.6E.4F.4
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 PKGNAMESUFFIX=	-tty
-DISTNAME=	se006e4f3
+DISTNAME=	se006e4f4
 
 MAINTAINER=	adam@alameda.edu
 
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 slashem-tty.6 recover.6
 
-WRKSRC=		${WRKDIR}/slashem-0.0.6E4F3
+WRKSRC=		${WRKDIR}/slashem-0.0.6E4F4
 
 post-patch:
 	${PERL} -pi -e "s@/usr/local@${PREFIX}@g" ${WRKSRC}/include/config.h
