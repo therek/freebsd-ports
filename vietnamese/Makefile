@@ -1,5 +1,6 @@
-# $FreeBSD: ports/vietnamese/Makefile,v 1.5 1999/08/31 02:11:43 peter Exp $
+# $FreeBSD: ports/vietnamese/Makefile,v 1.6 2001/01/06 07:20:07 obrien Exp $
 #
+    SUBDIR += vntex
 
     SUBDIR += vn7to8
     SUBDIR += vnconvert
