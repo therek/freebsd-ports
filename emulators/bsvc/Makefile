@@ -2,13 +2,14 @@
 # Date created:		03-Mar-1997
 # Whom:			tenser@spitfire.ecsel.psu.edu
 #
-# $FreeBSD: ports/emulators/bsvc/Makefile,v 1.13 2000/09/25 12:21:21 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bsvc
 PORTVERSION=	2.1
 CATEGORIES=	emulators tk82
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITES=	ftp://ftp.redlinelabs.com/pub/bsvc/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/emulators
 DISTFILES=	${DISTNAME}-src.tar.gz
 
