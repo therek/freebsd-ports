@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/games/tank/files/patch-Makefile.Linux.Mesa,v 1.1 2001/03/14 12:20:49 sobomax Exp $
+$FreeBSD: ports/games/tank/files/patch-Makefile.Linux.Mesa,v 1.2 2001/06/09 21:48:57 mjacob Exp $
 
 --- Makefile.Linux.Mesa.orig	Sun Feb  2 19:59:42 1997
 +++ Makefile.Linux.Mesa	Wed Mar 14 13:02:41 2001
@@ -16,7 +16,7 @@ $FreeBSD: ports/games/tank/files/patch-Makefile.Linux.Mesa,v 1.1 2001/03/14 12:2
 +INCLUDE = -I$(X11BASE)/include -I$(X11BASE)/include/GL
  
 -CFLAGS = $(INCLUDE) $(ARCH) -O2 -m486 -Wall -pipe \
-+CFLAGS += $(INCLUDE) $(ARCH) -DSOUND -Wall -pipe \
++CFLAGS += $(INCLUDE) $(ARCH) -DSOUND -Wall -pipe ${PTHREAD_CFLAGS} \
  	-pedantic -funroll-loops -mieee-fp
  
 -LDFLAGS = -L/usr/X11R6/lib -L$(MESA)/lib
@@ -38,7 +38,7 @@ $FreeBSD: ports/games/tank/files/patch-Makefile.Linux.Mesa,v 1.1 2001/03/14 12:2
  	$(CC) -o $(EXECNAME) $(Obj) $(LDFLAGS) \
 -	-lMesaaux -lMesatk -lMesaGLU -lMesaGL \
 -	-lXext -lX11 -lm
-+	-laux -lGLU -lGL -lXext -lX11 -lm -pthread
++	-laux -lGLU -lGL -lXext -lX11 -lm $(PTHREAD_LIBS)
  	@echo "****** Done ******"
  
  linux: $(Obj)
