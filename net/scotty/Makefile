@@ -2,7 +2,7 @@
 # Date created:		18 February 1995
 # Whom:			Gennady Sorokopud <gena@netvisions.net.il>
 #
-# $FreeBSD: ports/net/scotty/Makefile,v 1.41 2000/06/08 20:25:45 alex Exp $
+# $FreeBSD: ports/net/scotty/Makefile,v 1.42 2000/06/14 18:37:20 will Exp $
 #
 
 PORTNAME=	scotty
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 MAINTAINER=	dima@Chg.RU
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+
+FORBIDDEN=	"Buffer overflow in ntping yielding setuid root"
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS=	--with-tcl-config=${LOCALBASE}/lib/tcl8.2 \
