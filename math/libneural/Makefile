@@ -2,7 +2,7 @@
 # Date created:				14 Jun 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/libneural/Makefile,v 1.1 2000/06/29 02:08:20 will Exp $
 #
 
 PORTNAME=	libneural
@@ -13,5 +13,6 @@ MASTER_SITES=	http://ieee.uow.edu.au/documents/contrib/
 MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>
