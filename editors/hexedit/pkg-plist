@@ -1,6 +1,2 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/editors/hexedit/pkg-plist,v 1.3 2000/11/22 00:21:48 obrien Exp $
 bin/hexedit
-share/doc/hexedit/COPYING
-share/doc/hexedit/Changes
-share/doc/hexedit/TODO
-@dirrm share/doc/hexedit

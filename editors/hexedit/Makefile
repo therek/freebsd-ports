@@ -3,36 +3,25 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/hexedit/Makefile,v 1.10 2001/02/07 14:51:13 obrien Exp $
+# $FreeBSD: ports/editors/hexedit/Makefile,v 1.11 2001/06/24 20:53:28 obrien Exp $
 #
 
-PORTNAME=		hexedit
-PORTVERSION=		1.2.1
-CATEGORIES=		editors
-MASTER_SITES=		http://www.chez.com/prigaux/ \
-			${MASTER_SITE_SUNSITE}
+PORTNAME=	hexedit
+PORTVERSION=	1.2.1
+CATEGORIES=	editors
+MASTER_SITES=	http://www.chez.com/prigaux/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/file/hex
-EXTRACT_SUFX=		.src.tgz
+EXTRACT_SUFX=	.src.tgz
 
-MAINTAINER=		obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
-GNU_CONFIGURE=		yes
-
-ALL_TARGET=
-WRKSRC=			${WRKDIR}/hexedit
-
-MAN1=			hexedit.1
+WRKSRC=		${WRKDIR}/${DISTNAME:S/-${PORTVERSION}//}
+GNU_CONFIGURE=	yes
+MAN1=		hexedit.1
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/hexedit ${PREFIX}/bin
 	@ ${INSTALL_MAN} ${WRKSRC}/hexedit.1 ${PREFIX}/man/man1
-
-post-install:
-.if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/hexedit
-.for file in COPYING Changes TODO
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/hexedit
-.endfor
-.endif
 
 .include <bsd.port.mk>
