@@ -2,7 +2,7 @@
 # Date created:		Tue June 8 15:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/videotext/Makefile,v 1.9 2000/06/08 06:48:01 roger Exp $
+# $FreeBSD: ports/misc/videotext/Makefile,v 1.10 2000/07/04 07:13:24 sobomax Exp $
 #
 
 PORTNAME=	videotext
@@ -12,7 +12,7 @@ MASTER_SITES=	http://elektra.e-technik.uni-ulm.de/~mbuck/download/
 
 MAINTAINER=	roger@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		xview.3:${PORTSDIR}/x11-toolkits/xview
 
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/alevt/Makefile,v 1.9 2000/10/16 08:14:52 roger Exp $
+# $FreeBSD: ports/misc/alevt/Makefile,v 1.10 2001/02/21 06:35:17 roger Exp $
 #
 
 PORTNAME=	alevt
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	apps/video
 
 MAINTAINER=	roger@freebsd.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:         17 Aug 1998
 # Whom:                 gsm@infosite.ru
 #
-# $FreeBSD: ports/russian/gd/Makefile,v 1.7 2000/07/30 18:03:09 steve Exp $
+# $FreeBSD: ports/russian/gd/Makefile,v 1.8 2001/01/16 17:32:13 sobomax Exp $
 #
 
 PORTNAME=	gd
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.boutell.com/gd/http/ \
 
 MAINTAINER=	gsm@infosite.ru
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 pre-install:
