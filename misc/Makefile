@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.251 1999/12/25 16:05:46 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.252 1999/12/26 22:54:21 dbaker Exp $
 #
 
     SUBDIR += 221upgrade
@@ -62,6 +62,7 @@
     SUBDIR += kdeutils11-i18n
     SUBDIR += kp
     SUBDIR += kwatch
+    SUBDIR += lc
     SUBDIR += less
     SUBDIR += lile
     SUBDIR += logsurfer
