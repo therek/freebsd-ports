@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.23 2000/06/14 13:21:25 sobomax Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.24 2000/09/04 12:35:30 tg Exp $
 #
 
 PORTNAME=	numeric
@@ -26,8 +26,8 @@ PLIST_SUB=	PYVERSION="python${PYVERSION}"
 
 DOCDIR=		${PREFIX}/share/doc/py-numeric
 EXAMPLEDIR=	${PREFIX}/share/examples/py-numeric
-PYVERSION!=	python -c 'import string, sys; \
-			   print string.split(sys.version)[0][:3]' \
+PYVERSION!=	(python -c 'import string, sys; \
+			   print string.split(sys.version)[0][:3]') 2> /dev/null \
 			|| echo "1.5"
 
 .if ${PYVERSION} == "2.0"
