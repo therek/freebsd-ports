@@ -2,7 +2,7 @@
 # Date created:		25 Oct 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/netscape4-communicator/Makefile,v 1.16 2000/06/25 13:22:29 cjh Exp $
+# $FreeBSD: ports/korean/netscape4-communicator/Makefile,v 1.17 2000/07/15 13:41:48 cjh Exp $
 #
 # based on japanese/netscape4-*
 
@@ -17,8 +17,7 @@ MAINTAINER?=	cjh@FreeBSD.org
 
 # ?= for ports that include this Makefile
 RUN_DEPENDS?=	${LOCALBASE}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape${BROWSER_VER}-${BROWSER}
-RUN_DEPENDS+=	${X11BASE}/lib/X11/fonts/local/gulim12.pcf.gz:${PORTSDIR}/korean/baekmukfonts-bdf \
-		${X11BASE}/lib/X11/fonts/local/mzgt16h1.pcf.gz:${PORTSDIR}/korean/mizifont
+RUN_DEPENDS+=	${X11BASE}/lib/X11/fonts/local/gulim12.pcf.gz:${PORTSDIR}/korean/baekmukfonts-bdf
 
 NO_BUILD=	yes
 PKGINSTALL=	${WRKDIR}/INSTALL
