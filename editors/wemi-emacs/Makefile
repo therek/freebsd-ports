@@ -3,12 +3,14 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-emacs/Makefile,v 1.8 1999/10/16 06:06:12 shige Exp $
+# $FreeBSD: ports/editors/wemi-emacs/Makefile,v 1.9 1999/10/18 16:21:08 shige Exp $
 #
 
 DISTNAME=	wemi-${WEMI_VER}
 CATEGORIES=	editors elisp
-MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/wemi/
+MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/wemi/ \
+		${MASTER_SITE_PORTS_JP} \
+		http://www.freebsd.org/~shige/ports/distfiles/
 
 MAINTAINER?=	shige@FreeBSD.org
 
