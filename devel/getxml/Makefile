@@ -3,11 +3,11 @@
 # Date created:			Jul 30, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/getxml/Makefile,v 1.1 2001/07/30 17:18:56 ijliao Exp $
 #
 
 PORTNAME=	getxml
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://toutdoux.sourceforge.net/pub/toutdoux/
 
