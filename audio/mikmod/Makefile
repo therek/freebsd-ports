@@ -2,15 +2,13 @@
 # Date created:        16 November 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mikmod/Makefile,v 1.17 2001/04/19 14:10:20 sobomax Exp $
 #
 
 PORTNAME=	mikmod
 PORTVERSION=	3.1.6
 CATEGORIES=	audio
-MASTER_SITES=	http://mikmod.online.fr/mikmod/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	sada
+MASTER_SITES=	http://mikmod.online.fr/mikmod/
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
