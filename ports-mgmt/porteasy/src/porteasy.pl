@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.31 2003/04/07 13:23:50 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.32 2003/05/23 00:21:11 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.7";
+my $VERSION	= "2.7.8";
 my $COPYRIGHT	= "Copyright (c) 2000-2003 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -611,6 +611,8 @@ sub find_dependencies($) {
 	    or bsd::errx(1, "failed to obtain dependency list");
 	add_dependencies($port, \&find_library, split(' ', $dependvars));
 	$dependvars = capture(\&make, ($port,
+				       "-VEXTRACT_DEPENDS",
+				       "-VPATCH_DEPENDS",
 				       "-VFETCH_DEPENDS",
 				       "-VBUILD_DEPENDS",
 				       "-VRUN_DEPENDS",
