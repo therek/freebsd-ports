@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.37 2001/05/05 22:17:33 olgeni Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.38 2001/06/24 19:49:50 olgeni Exp $
 #
 
 PORTNAME=	fvwm
@@ -14,6 +14,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} fvwm_icons.tgz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
+
+BROKEN=		"No development versions, go to the stable version"
 
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 RUN_DEPENDS=	gm4:${PORTSDIR}/devel/m4
