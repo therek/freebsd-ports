@@ -3,15 +3,18 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.8 1999/08/25 07:13:37 obrien Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.9 1999/08/31 06:47:51 mharo Exp $
 #
 
 DISTNAME=       plplot4p99j
 PKGNAME=	plplot-4.99j
 CATEGORIES=	math
-MASTER_SITES=	ftp://dino.ph.utexas.edu/plplot/distrib/alpha/
+MASTER_SITES=	ftp://dino.ph.utexas.edu/plplot/distrib/alpha/ \
+		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/plot/plplot/distrib/alpha/ \
+		ftp://ftp.che.utexas.edu/pub/graphics/ \
+		ftp://ftp.uniovi.es/pub6/graphics/plotting/
 
-MAINTAINER=	tg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
