@@ -2,10 +2,10 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/textproc/deneu-ispell/Makefile,v 1.2 2000/04/09 21:52:18 cpiazza Exp $
+# $FreeBSD: ports/textproc/deneu-ispell/Makefile,v 1.3 2000/04/15 10:26:25 asami Exp $
 #
 
-MAINTAINER=     alex@big.endian.de
+MAINTAINER=     alex@FreeBSD.org
 
 ISPELL_DENEU=	yes
 PORTNAME=	ispell
