@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.36 1999/08/25 04:57:33 obrien Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.37 1999/08/31 18:16:38 foxfair Exp $
 #
 
     SUBDIR += CJK
@@ -20,6 +20,7 @@
     SUBDIR += hc
     SUBDIR += hztty
     SUBDIR += kcfonts
+    SUBDIR += libtabe
     SUBDIR += lunar
     SUBDIR += moettf
     SUBDIR += mule-wnn4
