@@ -2,27 +2,40 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/rasmol/Makefile,v 1.9 2001/03/12 19:16:15 sf Exp $
+# $FreeBSD: ports/biology/rasmol/Makefile,v 1.10 2001/06/11 05:53:41 markp Exp $
 #
 
 PORTNAME=	rasmol
 PORTVERSION=	2.7.2
+PORTREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.bernstein-plus-sons.com/software/RasMol_2.7.2/
 DISTNAME=	RasMol
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		$(WRKDIR)/RasMol_2.7.2/src/
-USE_IMAKE=	yes
+WRKSRC=		${WRKDIR}/RasMol_2.7.2/src
+
+USE_X_PREFIX=	yes
+
+.if ${XFREE86_VERSION} == 3
+BUILD_DEPENDS+=	imake:${PORTSDIR}/devel/imake
+.elif ${XFREE86_VERSION} == 4
+BUILD_DEPENDS+=	imake:${PORTSDIR}/devel/imake-4
+.endif
 
 MAN1=		rasmol.1
 
-pre-extract:
-	@${ECHO} ""
-	@${ECHO} You can set the color depth to match your X server in
-	@${ECHO} ${WRKSRC}Imakefile
-	@${ECHO} before building.
-	@${ECHO} ""
+do-build:
+	${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/build_viewer
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/rasmol-* ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${FILESDIR}/rasmol ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/rasmol.man ${PREFIX}/man/man1/rasmol.1
+	${MKDIR} ${PREFIX}/lib/X11/rasmol
+	${INSTALL_DATA} ${WRKSRC}/rasmol.hlp ${PREFIX}/lib/X11/rasmol
+	${INSTALL_DATA} ${WRKSRC}/../data/1crn.pdb ${PREFIX}/lib/X11/rasmol
+	${INSTALL_DATA} ${WRKSRC}/../data/3cro.pdb ${PREFIX}/lib/X11/rasmol
 
 .include <bsd.port.mk>
