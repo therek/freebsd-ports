@@ -1,5 +1,6 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.47 1999/11/26 20:54:14 steve Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.48 2000/01/04 03:26:52 foxfair Exp $
 #
+    SUBDIR += xmms
 
     SUBDIR += CJK
     SUBDIR += Wnn
