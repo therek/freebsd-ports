@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.7 2000/04/13 20:00:14 cpiazza Exp $
+# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.8 2000/11/10 17:56:26 obrien Exp $
 #
 
 PORTNAME=	muttzilla
@@ -12,8 +12,6 @@ CATEGORIES=	mail www
 MASTER_SITES=	http://www3.bc.sympatico.ca/brian_winters/mutt/
 
 MAINTAINER=	obrien@FreeBSD.org
-
-USE_GMAKE=	yes
 
 pre-configure:
 	@${PERL} -pi.orig \
