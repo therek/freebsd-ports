@@ -3,16 +3,16 @@
 # Date Created:		29 May 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/devel/vtcl/Makefile,v 1.18 1999/08/25 05:50:29 obrien Exp $
+# $FreeBSD: ports/devel/vtcl/Makefile,v 1.19 1999/08/31 06:42:42 mharo Exp $
 #
 
 DISTNAME=	vtcl-1.2.0
-CATEGORIES=	devel tk80
+CATEGORIES=	devel tk82
 MASTER_SITES=	ftp://ftp.neuron.com/pub/vtcl/development/1.2/
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
 

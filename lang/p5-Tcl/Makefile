@@ -3,7 +3,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/p5-Tcl/Makefile,v 1.10 1999/08/25 06:35:09 obrien Exp $
+# $FreeBSD: ports/lang/p5-Tcl/Makefile,v 1.11 1999/08/31 06:46:53 mharo Exp $
 #
 
 DISTNAME=	Tcl-b2
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	Tcl
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80
+LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 USE_PERL5=	YES
 

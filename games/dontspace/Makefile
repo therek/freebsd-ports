@@ -3,21 +3,21 @@
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/dontspace/Makefile,v 1.7 1999/08/25 06:03:15 obrien Exp $
 #
 
 DISTNAME=       dontspace-1.2
-CATEGORIES=     games tk80
+CATEGORIES=     games tk82
 MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 
 MAINTAINER=     johnh@isi.edu
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 GNU_CONFIGURE=  Yes
 CONFIGURE_ARGS= --bindir=${PREFIX}/bin --datadir=${PREFIX}/share/games \
 		--mandir=${PREFIX}/man
-CONFIGURE_ENV=  WISHX=${PREFIX}/bin/wish8.0
+CONFIGURE_ENV=  WISHX=${PREFIX}/bin/wish8.2
 MAN6=           dontspace.6
 
 .include <bsd.port.mk>

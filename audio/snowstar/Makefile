@@ -3,7 +3,7 @@
 # Date created:				21 April 1999
 # Whom:					fenner
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/snowstar/Makefile,v 1.2 1999/08/25 04:36:11 obrien Exp $
 
 DISTNAME=	snowstar-0.75.5
 CATEGORIES=	audio
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tar
 MAINTAINER=	fenner@FreeBSD.Org
 
 RUN_DEPENDS=	rio:${PORTSDIR}/audio/rio \
-		wish8.0:${PORTSDIR}/x11-toolkits/tk80
+		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	true
 NO_WRKSUBDIR=	true

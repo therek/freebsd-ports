@@ -1,18 +1,18 @@
 # Ports collection makefile for:	tkseti
-# Version required:	1.36
+# Version required:	1.42
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.5 1999/09/09 03:03:15 cpiazza Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.6 1999/11/20 21:45:56 cpiazza Exp $
 #
 
 DISTNAME=	tkseti-1.46
-CATEGORIES=	astro tk80
+CATEGORIES=	astro tk82
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 
 MAINTAINER=	brett@peloton.runet.edu
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80 \
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
 		setiathome:${PORTSDIR}/astro/setiathome
 
 NO_BUILD=	yes

@@ -3,7 +3,7 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/devel/tclcl/Makefile,v 1.2 1999/08/25 05:50:20 obrien Exp $
+# $FreeBSD: ports/devel/tclcl/Makefile,v 1.3 1999/08/28 01:57:06 mharo Exp $
 #
 
 DISTNAME=	tclcl-src-1.0b8
@@ -13,12 +13,14 @@ MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
-LIB_DEPENDS=    tk80.1:${PORTSDIR}/x11-toolkits/tk80 \
+LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 		otcl.1:${PORTSDIR}/lang/otcl
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tcl2c++ ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKSRC}/otcldoc ${PREFIX}/bin

@@ -3,17 +3,17 @@
 # Date created:         26 June 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tksol/Makefile,v 1.14 1999/08/25 06:04:32 obrien Exp $
+# $FreeBSD: ports/games/tksol/Makefile,v 1.15 1999/08/31 06:44:29 mharo Exp $
 #
 
 DISTNAME=       tksol-1.0
-CATEGORIES=	games tk80
+CATEGORIES=	games tk82
 MASTER_SITES=	ftp://ftp.cs.umd.edu/pub/misc_software/tksol/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tg@FreeBSD.org
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 PATCH_STRIP=	-p1
 WRKSRC=		${WRKDIR}/release

@@ -3,7 +3,7 @@
 # Date created:				13 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xchain/Makefile,v 1.5 1999/08/25 06:04:56 obrien Exp $
 #
 
 DISTNAME=	xchain_1.0-2
@@ -13,7 +13,7 @@ MASTER_SITES=	http://thor.cam.ac.uk/~ac212/xchain/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/xchain-1.0

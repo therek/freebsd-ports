@@ -3,17 +3,17 @@
 # Date created:		15 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/x3arth/Makefile,v 1.3 1999/08/25 04:22:46 obrien Exp $
 #
 
 DISTNAME=	x3arth-1.1
-CATEGORIES=	astro
+CATEGORIES=	astro tcl82
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/bin/tclsh8.0:${PORTSDIR}/lang/tcl80 \
+RUN_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82 \
 		${X11BASE}/bin/xv:${PORTSDIR}/graphics/xv
 
 USE_X_PREFIX=	yes

@@ -3,17 +3,17 @@
 # Date created:		Fri Oct  3 18:50:53 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.8 1999/08/25 05:47:18 obrien Exp $
+# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.9 1999/08/31 06:41:34 mharo Exp $
 #
 
 DISTNAME=	SpecTcl1.1
 PKGNAME=	SpecTcl-1.1
-CATEGORIES=	devel tk80
+CATEGORIES=	devel tk82
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/guitools/
 
 MAINTAINER=	andreas@FreeBSD.org
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
 

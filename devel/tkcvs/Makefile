@@ -3,17 +3,17 @@
 # Date created:         02 Aug 1996
 # Whom:                 shanee@augusta.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tkcvs/Makefile,v 1.16 1999/08/25 05:50:24 obrien Exp $
 #
 
 DISTNAME=	tkcvs-6.0
-CATEGORIES=	devel tk80
+CATEGORIES=	devel tk82
 MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/apps/tkcvs-6.0/ \
 		http://ftp.sunet.se/pub/lang/tcl/sorted/apps/tkcvs-6.0/
 
 MAINTAINER=	shanee@augusta.de
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
 MAN1=		tkcvs.1 tkdiff.1

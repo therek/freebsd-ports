@@ -3,7 +3,7 @@
 # Date created:         19 Apr 1998
 # Whom:                 brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/audio/splaytk/Makefile,v 1.3 1999/08/25 04:36:13 obrien Exp $
+# $FreeBSD: ports/audio/splaytk/Makefile,v 1.4 1999/09/09 03:03:17 cpiazza Exp $
 #
 
 DISTNAME=		splaytk-2.0
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	apps/sound/players
 MAINTAINER=		brett@peloton.runet.edu
 
 RUN_DEPENDS=	splay:${PORTSDIR}/audio/splay \
-		wish8.0:${PORTSDIR}/x11-toolkits/tk80
+		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC= ${WRKDIR}/splay-tk-2.0
 

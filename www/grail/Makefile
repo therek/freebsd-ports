@@ -3,7 +3,7 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.10 1999/08/31 02:42:50 peter Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.11 1999/08/31 06:51:42 mharo Exp $
 #
 
 DISTNAME=		grail-06
@@ -16,7 +16,7 @@ MAINTAINER=		nectar@freebsd.org
 
 BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
 RUN_DEPENDS=		python:${PORTSDIR}/lang/python
-LIB_DEPENDS=		tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=			${WRKDIR}/${PKGNAME}
 

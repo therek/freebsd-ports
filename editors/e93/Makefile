@@ -1,20 +1,20 @@
 # New ports collection makefile for:	e93
-# Version required:	1.2r6X
+# Version required:	1.2r7X
 # Date created:		21 June 1995
 # Whom:			Satoshi Asami (asami)
 #
-# $FreeBSD: ports/editors/e93/Makefile,v 1.22 1999/08/25 05:43:34 obrien Exp $
+# $FreeBSD: ports/editors/e93/Makefile,v 1.23 1999/08/31 06:42:55 mharo Exp $
 #
 
 DISTNAME=	e93-1.2r7X
 PKGNAME=	e93-1.2.7
-CATEGORIES=	editors tcl80
+CATEGORIES=	editors tcl82
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	editors
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80
+LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 MAKEFILE=	makefile
 USE_X_PREFIX=	yes

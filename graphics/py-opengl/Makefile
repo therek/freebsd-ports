@@ -3,7 +3,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/pyopengl/Makefile,v 1.1.1.1 1999/11/01 03:38:32 steve Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.1.1.1 1999/11/07 16:59:54 steve Exp $
 #
 
 DISTNAME=	PyOpenGL-1.5.5
@@ -43,7 +43,7 @@ SETUP_FILES=	${FILESDIR}/Setup.base
 WITH_TOGL?=	yes
 .if defined(WITH_TOGL) && $(WITH_TOGL) == yes
 SETUP_FILES+=	${FILESDIR}/Setup.add.togl
-LIB_DEPENDS+=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS+=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 .endif
 
 .include <bsd.port.pre.mk>

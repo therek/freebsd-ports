@@ -3,7 +3,7 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ns/Makefile,v 1.2 1999/08/30 14:23:30 peter Exp $
 #
 
 DISTNAME=	ns-src-2.1b5
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
 BUILD_DEPENDS=	${PREFIX}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
-RUN_DEPENDS=	${PREFIX}/bin/tclsh8.0:${PORTSDIR}/lang/tcl80
+RUN_DEPENDS=	${PREFIX}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
 
 MAN1=		ns.1
 MANCOMPRESSED=	no
@@ -22,6 +22,7 @@ MANCOMPRESSED=	no
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
 
 ALL_TARGET=
 

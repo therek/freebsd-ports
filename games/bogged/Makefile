@@ -3,7 +3,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/bogged/Makefile,v 1.4 1999/08/25 06:03:02 obrien Exp $
 #
 
 DISTNAME=		bogged-1.0.0
@@ -14,7 +14,7 @@ EXTRACT_SUFX=		.gz
 
 MAINTAINER=		andy@icc.surw.chel.su
 
-RUN_DEPENDS=		wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 EXTRACT_CMD=		${CP}
 EXTRACT_BEFORE_ARGS=

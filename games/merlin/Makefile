@@ -3,7 +3,7 @@
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/merlin/Makefile,v 1.2 1999/08/25 06:04:00 obrien Exp $
 #
 
 DISTNAME=	merlin
@@ -13,7 +13,7 @@ MASTER_SITES=	http://outoften.doc.ic.ac.uk/~np2/software/download/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
 USE_X_PREFIX=	yes

@@ -3,16 +3,16 @@
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/sdr/Makefile,v 1.14 1999/08/31 06:48:04 mharo Exp $
+# $FreeBSD: ports/mbone/sdr/Makefile,v 1.15 1999/09/09 05:48:27 fenner Exp $
 #
 
 DISTNAME=	sdr-2.7
-CATEGORIES=	mbone tk80
+CATEGORIES=	mbone tk82
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.7/
 
 MAINTAINER=	fenner@FreeBSD.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes

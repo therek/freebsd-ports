@@ -3,7 +3,7 @@
 # Date created:         15 March 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.3 1999/08/31 02:59:34 peter Exp $
+# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.4 1999/11/14 01:38:53 steve Exp $
 #
 
 DISTNAME=	ruby-${VERSION}
@@ -45,8 +45,8 @@ EXAMPLESDIR=	${PREFIX}/share/examples/ruby
 # Set these vars as the version numbers (without decimal points) of Tcl/Tk
 # you want to use with Ruby/Tk.
 # e.g.: make TCL_VERSION=42 TK_VERSION=76 WITH_TCL_JP=yes build
-TCL_VERSION?=	80
-TK_VERSION?=	80
+TCL_VERSION?=	82
+TK_VERSION?=	82
 .if defined(WITH_TCL_JP)
 TCL_CATEGORY=	japanese
 TK_CATEGORY=	japanese

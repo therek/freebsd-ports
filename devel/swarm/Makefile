@@ -3,7 +3,7 @@
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.5 1999/08/25 05:50:17 obrien Exp $
 #
 
 DISTNAME=	swarm-1.4.1
@@ -20,10 +20,10 @@ LIB_DEPENDS=	ffi.2:${PORTSDIR}/devel/libffi \
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-defaultdir=${PREFIX} \
-		--with-tclincludedir=${PREFIX}/include/tcl8.0 \
-		--with-tkincludedir=${PREFIX}/include/tk8.0 \
-		--with-tclscriptdir=${PREFIX}/lib/tcl8.0 \
-		--with-tkscriptdir=${PREFIX}/lib/tk8.0
+		--with-tclincludedir=${PREFIX}/include/tcl8.2 \
+		--with-tkincludedir=${PREFIX}/include/tk8.2 \
+		--with-tclscriptdir=${PREFIX}/lib/tcl8.2 \
+		--with-tkscriptdir=${PREFIX}/lib/tk8.2
 
 post-install:
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib

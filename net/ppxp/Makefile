@@ -5,11 +5,11 @@
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.8 1999/08/30 14:23:53 peter Exp $
 #
 
 DISTNAME=	ppxp-0.99072807
-CATEGORIES=	net tk80
+CATEGORIES=	net tk82
 .if defined(USE_TCLJP)
 CATEGORIES+=	japanese
 .endif
@@ -28,11 +28,11 @@ LIB_DEPENDS+=	tcl80jp.1:${PORTSDIR}/japanese/tcl80
 RUN_DEPENDS=	wish8.0jp:${PORTSDIR}/japanese/tk80 \
 		tclsh8.0jp:${PORTSDIR}/japanese/tcl80
 .else
-BUILD_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80 \
-		tclsh8.0:${PORTSDIR}/lang/tcl80
-LIB_DEPENDS+=	tcl80.1:${PORTSDIR}/lang/tcl80
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80 \
-		tclsh8.0:${PORTSDIR}/lang/tcl80
+BUILD_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
+		tclsh8.2:${PORTSDIR}/lang/tcl82
+LIB_DEPENDS+=	tcl82.1:${PORTSDIR}/lang/tcl82
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
+		tclsh8.2:${PORTSDIR}/lang/tcl82
 .endif
 
 WRKSRC=		${WRKDIR}/ppxp
@@ -46,11 +46,11 @@ CONFIGURE_ARGS+= --with-tclsh=${PREFIX}/bin/tclsh8.0jp \
 		--with-tcl-config=${PREFIX}/lib/tcl8.0jp/tclConfig.sh \
 		--with-tk-config=${PREFIX}/lib/tk8.0jp/tkConfig.sh
 .else
-CONFIGURE_ARGS+= --with-tclsh=${PREFIX}/bin/tclsh8.0 \
-		--with-wish=${PREFIX}/bin/wish8.0 \
-		--with-tcl-includes=${PREFIX}/include/tcl8.0 \
-		--with-tcl-config=${PREFIX}/lib/tcl8.0/tclConfig.sh \
-		--with-tk-config=${PREFIX}/lib/tk8.0/tkConfig.sh
+CONFIGURE_ARGS+= --with-tclsh=${PREFIX}/bin/tclsh8.2 \
+		--with-wish=${PREFIX}/bin/wish8.2 \
+		--with-tcl-includes=${PREFIX}/include/tcl8.2 \
+		--with-tcl-config=${PREFIX}/lib/tcl8.2/tclConfig.sh \
+		--with-tk-config=${PREFIX}/lib/tk8.2/tkConfig.sh
 .endif
 MAN1=		PPxP.1 plast.1
 MAN5=		ppxp-files.5

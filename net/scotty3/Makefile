@@ -3,20 +3,20 @@
 # Date created:		18 February 1995
 # Whom:			Gennady Sorokopud <gena@netvisions.net.il>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/scotty/Makefile,v 1.37 1999/08/30 14:24:07 peter Exp $
 #
 
 DISTNAME=	scotty-2.1.9
-CATEGORIES=	net tk80
+CATEGORIES=	net tk82
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 
 MAINTAINER=	phk@freebsd.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS=	--with-tcl-config=/usr/local/lib/tcl8.0 \
-		--with-tk-config=/usr/local/lib/tk8.0
+CONFIGURE_ARGS=	--with-tcl-config=/usr/local/lib/tcl8.2 \
+		--with-tk-config=/usr/local/lib/tk8.2
 
 
 WRKSRC=${WRKDIR}/${DISTNAME}/unix
