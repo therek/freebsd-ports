@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.26 2002/10/15 01:19:48 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.27 2002/10/29 10:22:38 des Exp $
 #
 
 use strict;
@@ -442,7 +442,7 @@ sub add_installed() {
     foreach $port (readdir(DIR)) {
 	next if ($port eq "." || $port eq ".." || ! -d "$dbdir/$port");
 	if (!defined($origin = get_origin($port))) {
-	    bsd::warnx("$port has no \@origin line\n");
+	    bsd::warnx("$port has no \@origin line");
 	    if (!defined($origin = $ports{$port})) {
 		bsd::warnx("installed port %s is unknown", $port);
 	    }
