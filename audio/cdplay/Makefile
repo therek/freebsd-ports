@@ -2,13 +2,14 @@
 # Date created:        8 July 1997
 # Whom:                Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD: ports/audio/cdplay/Makefile,v 1.5 1999/08/25 04:35:22 obrien Exp $
+# $FreeBSD: ports/audio/cdplay/Makefile,v 1.6 2000/04/08 21:23:23 mharo Exp $
 #
 
 PORTNAME=	cdplay
 PORTVERSION=	0.92
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.one.sci.fi/pub/cdplay/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	dannyboy
 
 MAINTAINER=	anttik@iki.fi
 
