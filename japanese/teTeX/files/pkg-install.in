@@ -1,18 +1,14 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/japanese/teTeX/files/pkg-install.in,v 1.1 2004/06/18 16:02:47 hrs Exp $
 
 MODE=%%MODE%%
 TETEX_MODESW=%%TETEX_MODESW%%
 
 case $2 in
 POST-INSTALL)
-	${TETEX_MODESW} ${MODE} dvips       forceinstall
 	${TETEX_MODESW} default dvipdfm     forceinstall
-	${TETEX_MODESW} ${MODE} xdvi        forceinstall
 	;;
 DEINSTALL)
-	${TETEX_MODESW} default dvips      forceinstall
 	${TETEX_MODESW} default dvipdfm    forceinstall
-	${TETEX_MODESW} default xdvi       forceinstall
 	;;
 esac
