@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.592 2001/08/18 06:47:25 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.593 2001/08/22 23:58:44 petef Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -203,6 +203,7 @@
     SUBDIR += naim
     SUBDIR += nam
     SUBDIR += nat
+    SUBDIR += nbtscan
     SUBDIR += nc
     SUBDIR += ncat
     SUBDIR += ncplib
