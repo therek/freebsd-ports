@@ -2,7 +2,7 @@
 # Date created:		15 November 1996
 # Whom:			Mike McGaughey <mmcg@cs.monash.edu.au>
 #
-# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.14 2001/04/02 08:30:37 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	boehm-gc
@@ -18,8 +18,12 @@ ONLY_FOR_ARCHS=	i386	# XXX can't figure out whether to define
 
 HAS_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 MAN3=		gc.3
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/doc/gc.man
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/include/gc.h ${PREFIX}/include
