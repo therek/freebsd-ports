@@ -2,13 +2,13 @@
 # Date created:         28 December 1995
 # Whom:                 se
 #
-# $FreeBSD: ports/benchmarks/bytebench/Makefile,v 1.12 1999/08/28 02:42:16 mharo Exp $
+# $FreeBSD: ports/benchmarks/bytebench/Makefile,v 1.13 2000/04/08 22:04:07 mharo Exp $
 #
 
 PORTNAME=	bytebench
 PORTVERSION=	3.1
 CATEGORIES=	benchmarks
-MASTER_SITES	ftp://ftp.inria.fr/system/benchmark/
+MASTER_SITES=	ftp://ftp.inria.fr/system/benchmark/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	se@FreeBSD.org
