@@ -2,11 +2,11 @@
 # Date created:		June 15 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/shinonome/Makefile,v 1.1 2001/06/23 19:14:58 knu Exp $
+# $FreeBSD: ports/japanese/shinonome/Makefile,v 1.2 2001/06/24 05:12:40 knu Exp $
 #
 
 PORTNAME=	shinonome
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://openlab.ring.gr.jp/efont/dist/shinonome/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old
