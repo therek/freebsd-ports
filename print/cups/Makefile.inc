@@ -1,5 +1,5 @@
 # Common file for CUPS ports
-# $FreeBSD: ports/print/cups/Makefile.inc,v 1.1 2002/02/23 16:46:58 nectar Exp $
+# $FreeBSD: ports/print/cups/Makefile.inc,v 1.3 2002/07/02 09:44:59 alane Exp $
 
 MASTER_SITES=	\
 		ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${CUPS_VERSION}/ \
@@ -30,6 +30,7 @@ DISTNAME=	cups-${CUPS_VERSION}-${CUPS_REVISION}-source
 DISTFILES=	${DISTNAME}.tar.bz2
 WRKSRC=		${WRKDIR}/cups-${CUPS_VERSION}
 
+USE_PERL5=	yes
 USE_BZIP2=	yes
 #Breaks build.. USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
