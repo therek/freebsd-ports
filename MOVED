@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.356 2004/03/02 09:48:35 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.357 2004/03/02 11:05:00 ale Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -962,3 +962,4 @@ games/linux_nwnclient|games/linux-nwnclient|2004-03-01|Misnamed
 sysutils/linux-e2fsprogs|sysutils/e2fsprogs|2004-03-01|Native version available
 sysutils/fsck_ext2fs|sysutils/e2fsprogs|2004-03-01|Better utility
 graphics/gqview-devel|graphics/gqview|2004-03-02|merged
+audio/audacity-devel||2004-03-03|removed (obsolete)
