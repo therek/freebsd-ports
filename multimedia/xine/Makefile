@@ -2,7 +2,7 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.1 2000/10/14 10:05:34 alex Exp $
 #
 
 PORTNAME=		xine
@@ -16,5 +16,8 @@ MAINTAINER=		alex@FreeBSD.org
 GNU_CONFIGURE=		yes
 USE_X_PREFIX=		yes
 USE_IMLIB=		yes
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
