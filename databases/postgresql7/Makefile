@@ -3,7 +3,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql/Makefile,v 1.47 1999/08/31 06:41:22 mharo Exp $
+# $FreeBSD: ports/databases/postgresql/Makefile,v 1.48 1999/10/10 22:06:27 cpiazza Exp $
 #
 
 DISTNAME=	postgresql-6.5.2
@@ -141,7 +141,7 @@ post-install:
 	@ if [ ! -f ${PREFIX}/pgsql/.profile ]; then \
 		${ECHO} "PATH=${PATH}:${PREFIX}/pgsql/bin" \
 			> ${PREFIX}/pgsql/.profile; \
-		${ECHO} "MANPATH=${MANPATH}:${PREFIX}/pgsql/bin" \
+		${ECHO} "MANPATH=${MANPATH}:${PREFIX}/pgsql/man" \
 			>> ${PREFIX}/pgsql/.profile; \
 		${ECHO} "PGLIB=${PREFIX}/pgsql/lib" \
 			>> ${PREFIX}/pgsql/.profile; \
