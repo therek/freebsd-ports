@@ -2,11 +2,11 @@
 # Date created:				2 April 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/koncd/Makefile,v 1.2 2001/04/13 08:54:49 demon Exp $
+# $FreeBSD: ports/sysutils/koncd/Makefile,v 1.3 2001/08/02 09:14:28 dirk Exp $
 #
 
 PORTNAME=	koncd
-PORTVERSION=	0.7.1
+PORTVERSION=	0.9.2
 CATEGORIES=	sysutils kde
 MASTER_SITES=	http://www.koncd.de/download/ \
 		ftp://apps.kde.com/pub/Multimedia/Audio/Burners_Rippers/KOnCD/
@@ -14,7 +14,8 @@ MASTER_SITES=	http://www.koncd.de/download/ \
 MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrtools \
-		mkisofs:${PORTSDIR}/sysutils/mkisofs
+		mkisofs:${PORTSDIR}/sysutils/mkisofs \
+		mpg123:${PORTSDIR}/audio/mpg123
 
 USE_KDELIBS_VER=2
 USE_GMAKE=	yes
