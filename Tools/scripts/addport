@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.34 2003/09/02 15:33:46 mat Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.35 2003/09/29 02:39:50 bland Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -143,7 +143,7 @@ if ($addlchk && -f $portlint) {
 	$passenv = $passenv . " PORTSDIR=\"$tmpdir\"" if !$nomkdir;
 	push(@commands, "$make $passenv clean check-categories");
 	push(@commands, "$portlint $plint_args");
-	push(@commands, "$make $passenv FETCH_BEFORE_ARGS='-btA' checksum") if !$nofetch;
+	push(@commands, "$make $passenv FETCH_BEFORE_ARGS='-A' checksum") if !$nofetch;
 	if ($more_testing) {
 		push(@commands, "$make $passenv distclean");
 		push(@commands, "$make $passenv build");
