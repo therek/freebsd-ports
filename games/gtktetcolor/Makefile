@@ -2,17 +2,19 @@
 # Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gtktetcolor/Makefile,v 1.4 2001/02/05 14:51:41 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtktetcolor
-PORTVERSION=	0.4.3
+PORTVERSION=	0.5.0
 CATEGORIES=	games gnome
-MASTER_SITES=	http://www.dvgu.ru/ifit/~panov/gtktetcolor/ \
+MASTER_SITES=	ftp://canopus.iacp.dvo.ru/pub/Games/gtktetcolor/ \
+		http://www.dvgu.ru/ifit/~panov/gtktetcolor/ \
 		http://metalab.unc.edu/pub/Linux/games/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
@@ -25,9 +27,5 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
-
-post-install:
-	@${MKDIR} ${PREFIX}/share/gnome/pixmaps
-	@${INSTALL_DATA} ${WRKSRC}/src/gtktetcolor.xpm ${PREFIX}/share/gnome/pixmaps
 
 .include <bsd.port.mk>
