@@ -3,7 +3,7 @@
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.16 1999/11/08 20:40:09 andreas Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.17 2000/02/20 17:01:13 andreas Exp $
 #
 
 DISTNAME=		star-1.2
@@ -12,7 +12,7 @@ MASTER_SITES=		ftp://ftp.fokus.gmd.de/pub/unix/star/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/compress
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 USE_GMAKE=	yes
 MAKE_ENV=	MAKEPROG=gmake CCOM=${CC}
