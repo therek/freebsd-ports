@@ -2,13 +2,14 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/publicfile/Makefile,v 1.3 2000/04/27 23:10:01 nbm Exp $
+# $FreeBSD: ports/www/publicfile/Makefile,v 1.4 2000/06/21 12:37:51 nbm Exp $
 #
 
 PORTNAME=	publicfile
 PORTVERSION= 	0.52
 CATEGORIES=	ftp
-MASTER_SITES=	http://cr.yp.to/publicfile/
+MASTER_SITES=	http://cr.yp.to/publicfile/ \
+		ftp://cr.yp.to/publicfile/
 
 MAINTAINER=	nbm@FreeBSD.org
 
