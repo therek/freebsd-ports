@@ -2,7 +2,7 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.31 2000/10/11 21:50:13 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.32 2000/11/15 00:22:22 jedgar Exp $
 #
 
 PORTNAME=		gaim
@@ -31,13 +31,12 @@ MAN1=			gaim.1
 
 .if defined(HAVE_GNOME)
 USE_GNOME=		yes
-CONFIGURE_ARGS+=	--enable-gnome --enable-panel
+CONFIGURE_ARGS+=	--enable-panel
 .else
 CONFIGURE_ARGS+=	--disable-gnome
 .endif
 .if defined(HAVE_ESOUND)
 USE_ESOUND=		yes
-CONFIGURE_ARGS+=	--enable-esd
 .else
 CONFIGURE_ARGS+=	--disable-esd
 .endif
