@@ -2,11 +2,11 @@
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/mod_mp3/Makefile,v 1.7 2001/05/09 09:55:53 alex Exp $
+# $FreeBSD: ports/www/mod_mp3/Makefile,v 1.8 2001/05/14 00:20:57 jeh Exp $
 #
 
 PORTNAME=	mod_mp3
-PORTVERSION=	0.16
+PORTVERSION=	0.19
 CATEGORIES=	www audio
 MASTER_SITES=	http://media.tangent.org/ \
 		ftp://ftp.tangent.org/pub/apache/ \
