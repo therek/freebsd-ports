@@ -3,7 +3,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.13 1999/10/18 16:21:05 shige Exp $
+# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.14 2000/01/02 14:20:45 shige Exp $
 #
 
 DISTNAME=	semi-${SEMI_VER}
@@ -100,6 +100,11 @@ MAKEINFO=		makeinfo --no-split --no-validate
 MAKEINFO_EMACS=		${EMACS_CMD} -no-site-file -no-init-file -batch
 MAKEINFO_EMACS_FLAGS=	-e texinfo-format-buffer -f save-buffer
 
+pre-build:
+.if defined(EMACS_PACKAGESDIR) && defined(XEMACS_PKGNAME)
+	@${MAKE} pkg-el-copy
+.endif
+
 post-build:
 .if defined(BUILD_INFO_BY_EMACS) && (${BUILD_INFO_BY_EMACS} == "YES")
 	@${MAKE} info-build-by-emacs
@@ -110,6 +115,9 @@ post-build:
 pre-install:
 .if defined(EMACS_PACKAGESDIR) && defined(EMACS_PACKAGES_SUBDIRS)
 	@${MAKE} mkdir-site-packages
+.endif
+.if defined(EMACS_PACKAGESDIR) && defined(XEMACS_PKGNAME)
+	@${MAKE} pkg-el-install
 .endif
 
 post-install:
@@ -160,6 +168,18 @@ info-build-by-emacs:
 		${MAKEINFO_EMACS} $${i} ${MAKEINFO_EMACS_FLAGS} || ${TRUE} ; \
 	done)
 .endif
+
+pkg-el-copy:
+	@(if [ -f ${FILESDIR}/_pkg.el ] ; then \
+	${CP} ${FILESDIR}/_pkg.el ${WRKSRC}/_pkg.el ;\
+	fi)
+
+pkg-el-install:
+	@(if [ -f ${FILESDIR}/_pkg.el ] ; then \
+	${MKDIR} ${PREFIX}/${EMACS_PACKAGESDIR}/lisp/${XEMACS_PKGNAME} ;\
+	${INSTALL_DATA} ${FILESDIR}/_pkg.el \
+		${PREFIX}/${EMACS_PACKAGESDIR}/lisp/${XEMACS_PKGNAME}/_pkg.el ;\
+	fi)
 
 mkdir-site-packages:
 	@(for i in ${EMACS_PACKAGES_SUBDIRS} ; do \
