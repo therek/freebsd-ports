@@ -2,7 +2,7 @@
 # Date created:				5 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/kdeadmin/Makefile,v 1.4 2001/08/15 16:25:12 will Exp $
+# $FreeBSD: ports/sysutils/kdeadmin/Makefile,v 1.5 2001/08/20 10:33:20 demon Exp $
 #
 
 PORTNAME=	kdeadmin
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 
 USE_KDELIBS_VER=2
 USE_BZIP2=	yes
