@@ -1,15 +1,14 @@
-# New ports collection makefile for:	gtksamba
+# New ports collection makefile for:	gnosamba
 # Date created:				4 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/gtksamba/Makefile,v 1.12 2000/04/15 01:42:33 asami Exp $
+# $FreeBSD: ports/net/gtksamba/Makefile,v 1.13 2000/04/15 12:57:13 imura Exp $
 #
 
-PORTNAME=	gtksamba
-PORTVERSION=	0.3.2.1
+PORTNAME=	gnosamba
+PORTVERSION=	0.3.3
 CATEGORIES=	net
-MASTER_SITES=	http://www.open-systems.com/gtksamba/
-DISTNAME=	${PORTNAME}-0.3.2pl1
+MASTER_SITES=	http://www.open-systems.com/gnosamba/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -20,5 +19,8 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/src/*.c
 
 .include <bsd.port.mk>
