@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.32 2000/06/03 04:21:03 will Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.33 2000/06/03 04:42:52 will Exp $
 #
 
     SUBDIR += arc
@@ -21,6 +21,7 @@
     SUBDIR += nulib
     SUBDIR += p5-Compress-Zlib
     SUBDIR += pkzip
+    SUBDIR += ppunpack
     SUBDIR += rar
     SUBDIR += unace
     SUBDIR += unarj
