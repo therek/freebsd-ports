@@ -2,11 +2,11 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.34 2001/02/05 16:49:06 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.35 2001/03/01 06:37:47 vanilla Exp $
 #
 
 PORTNAME=	Gtk
-PORTVERSION=	0.7004
+PORTVERSION=	0.7005
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
@@ -17,8 +17,9 @@ MAINTAINER=	vanilla@FreeBSD.org
 
 USE_GTK=	yes
 PERL_CONFIGURE=	yes
+CONFIGURE_ARGS=	--without-guessing --lazy-load
 
-MAN3=		Gtk::GtkColorSelectButton.3
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		cookbook.3pm
 
 .include <bsd.port.mk>

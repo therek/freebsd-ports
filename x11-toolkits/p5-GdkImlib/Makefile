@@ -2,11 +2,11 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-GdkImlib/Makefile,v 1.4 2001/02/05 16:49:05 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/p5-GdkImlib/Makefile,v 1.5 2001/03/01 06:37:44 vanilla Exp $
 #
 
 PORTNAME=	GdkImlib
-PORTVERSION=	0.7004
+PORTVERSION=	0.7005
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
