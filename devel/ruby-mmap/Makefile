@@ -2,11 +2,11 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-mmap/Makefile,v 1.2 2001/03/15 19:16:03 knu Exp $
+# $FreeBSD: ports/devel/ruby-mmap/Makefile,v 1.3 2001/06/28 16:47:27 knu Exp $
 #
 
 PORTNAME=	mmap
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.3
 CATEGORIES=	devel ruby
 MASTER_SITES=	ftp://moulon.inra.fr/pub/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
