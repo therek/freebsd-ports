@@ -1,5 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/lmtpd/pkg-plist,v 1.3 2003/12/04 13:02:41 sergei Exp $
 bin/filtercheck
+bin/lmtpdlogsum
 etc/lmtpd.conf.dist
 libexec/lmtpd
 share/nls/C/filtercheck.cat
