@@ -3,13 +3,13 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.40 1999/08/31 03:00:09 peter Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.41 1999/10/09 19:23:22 vanilla Exp $
 #
 
 DISTNAME=	icewm-0.9.49
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.kiss.uni-lj.si/~k4fr0235/icewm/devel/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/icewm/
+		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	nacai@iname.com
