@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.463 2004/06/30 08:06:26 eik Exp $
+# $FreeBSD: ports/MOVED,v 1.464 2004/07/01 17:06:33 ade Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1182,3 +1182,4 @@ www/drivel|deskutils/drivel|2004-06-30|moved to category deskutils
 devel/autoconf257||2004-07-01|autotools cleanup
 devel/automake17||2004-07-01|autotools cleanup
 devel/libtool14||2004-07-01|autotools cleanup
+math/libgmp-freebsd|math/libgmp4|2004-07-02|superseded by API compatible version
