@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.15 2002/06/18 13:14:30 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.16 2002/06/25 13:12:13 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -44,7 +44,7 @@ _JAVA_HOME_FREEBSD_1_1=			${LOCALBASE}/jdk1.1.8
 _JAVA_HOME_FREEBSD_1_2=			${LOCALBASE}/jdk1.2.2
 _JAVA_HOME_FREEBSD_1_3=			${LOCALBASE}/jdk1.3.1
 _JAVA_HOME_BLACKDOWN_LINUX_1_2=	${LOCALBASE}/linux-jdk1.2.2
-_JAVA_HOME_SUN_LINUX_1_2=		${LOCALBASE}/linux-sun-jdk1.2.2.012
+_JAVA_HOME_SUN_LINUX_1_2=		${LOCALBASE}/linux-sun-jdk1.2.2
 _JAVA_HOME_BLACKDOWN_LINUX_1_3=	${LOCALBASE}/linux-blackdown-jdk1.3.1
 _JAVA_HOME_IBM_LINUX_1_3=		${LOCALBASE}/linux-ibm-jdk1.3.1
 _JAVA_HOME_SUN_LINUX_1_3=		${LOCALBASE}/linux-jdk1.3.1
