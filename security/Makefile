@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.130 2000/09/19 16:10:50 ade Exp $
+# $FreeBSD: ports/security/Makefile,v 1.131 2000/09/21 22:40:20 kris Exp $
 #
 
     SUBDIR += aafid2
@@ -48,6 +48,7 @@
     SUBDIR += lsh
     SUBDIR += lxnb
     SUBDIR += mhash
+    SUBDIR += mindterm-binary
     SUBDIR += nbaudit
     SUBDIR += nessus
     SUBDIR += nessus-libraries
