@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.609 2005/01/10 11:04:50 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.610 2005/01/10 14:05:44 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1374,3 +1374,4 @@ palm/rapip|palm/synce-kde|2005-01-08|renamed
 benchmarks/bytebench|benchmarks/unixbench|2005-01-08|revived under new name
 audio/trm|audio/libtunepimp|2005-01-09|trm is now part of libtunepimp
 java/kaffe-devel|java/kaffe|2005-01-10|merge kaffe-devel into kaffe
+audio/gqmpeg|audio/gqmpeg-devel|2005-01-12|finished repocopy
