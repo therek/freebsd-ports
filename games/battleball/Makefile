@@ -2,13 +2,14 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.5 2000/04/14 00:45:28 mharo Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.6 2000/04/16 22:02:54 will Exp $
 #
 
 PORTNAME=	battleball
 PORTVERSION=	2.1
 CATEGORIES=	games
-MASTER_SITES=	http://fundy.linux.tucows.com/files/x11/entertain/
+MASTER_SITES=	http://tzo.linux.tucows.com/files/x11/entertain/ \
+		http://fundy.linux.tucows.com/files/x11/entertain/
 DISTNAME=	${PORTNAME}.${PORTVERSION:S/.//}.src
 
 MAINTAINER=	will@FreeBSD.org
