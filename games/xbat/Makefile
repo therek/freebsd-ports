@@ -2,7 +2,7 @@
 # Date created:        30 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xbat/Makefile,v 1.6 2000/01/07 02:26:00 nakai Exp $
+# $FreeBSD: ports/games/xbat/Makefile,v 1.7 2000/04/14 12:26:58 asami Exp $
 #
 
 PORTNAME=	xbat
@@ -18,5 +18,12 @@ NO_CDROM=	Possible copyright infringement
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/Xev111
 ALL_TARGET=	xbat
+
+post-install:
+	${CHOWN} root:games ${PREFIX}/bin/xbat
+	${CHMOD} 2755 ${PREFIX}/bin/xbat
+	${CHOWN} -R root:games ${PREFIX}/lib/X11/Xbat/Score/
+	${CHMOD} 664 ${PREFIX}/lib/X11/Xbat/Score/*
+	${CHMOD} 755 ${PREFIX}/lib/X11/Xbat/Score/
 
 .include <bsd.port.mk>
