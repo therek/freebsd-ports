@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.143 2001/01/03 23:45:02 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.144 2001/01/03 23:54:04 will Exp $
 #
     SUBDIR += yawho
 
@@ -37,6 +37,7 @@
     SUBDIR += fontedit
     SUBDIR += fortunelock
     SUBDIR += fsck_ext2fs
+    SUBDIR += ftrace
     SUBDIR += gcombust
     SUBDIR += gkrellm
     SUBDIR += glload
