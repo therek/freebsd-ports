@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit.functions,v 1.5 2004/03/31 22:52:01 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit.functions,v 1.6 2004/06/18 08:07:29 eik Exp $
 #
 
 portaudit_confs()
@@ -49,7 +49,6 @@ portaudit_confs()
 		ftp://ftp.cz.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		ftp://ftp1.ro.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
-		ftp://ftp.at.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		ftp://ftp.jp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		ftp://ftp.tw.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/
 		http://public.planetmirror.com/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/

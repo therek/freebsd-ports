@@ -28,11 +28,12 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/fetchaudit.sh,v 1.1 2004/01/27 19:24:52 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/fetchaudit.sh,v 1.2 2004/02/21 21:19:41 eik Exp $
 #
 
 # defaults
 daily_status_portaudit_enable="YES"
+daily_status_portaudit_expiry="2"
 
 # If there is a global system configuration file, suck it in.
 #
@@ -48,7 +49,7 @@ portaudit_confs
 rc=0
 case "$daily_status_portaudit_enable" in
 	""|[Yy][Ee][Ss])
-		if [ ! -f "${portaudit_dir}/${portaudit_filename}" ] || ! checkexpiry_auditfile 3; then
+		if [ ! -f "${portaudit_dir}/${portaudit_filename}" ] || ! checkexpiry_auditfile "${daily_status_portaudit_expiry}"; then
 			echo ""
 			echo "Updating audit database."
 			fetch_auditfile && rc=1 || rc=2
