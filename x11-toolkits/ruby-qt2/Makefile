@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.15 2001/01/09 10:13:47 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.16 2001/01/09 20:59:47 knu Exp $
 #
 
 PORTNAME=	qt2
@@ -14,6 +14,8 @@ DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
+
+BROKEN=		"Weird problem on 4-STABLE + XFree86 4.0.2 + Mesa 3.2.1"
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22
 
