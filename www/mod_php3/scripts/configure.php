@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.80 2000/02/29 21:46:06 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.81 2000/03/01 22:45:34 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -165,7 +165,7 @@ USE_OPENSSL=	RSA
 BUILD_DEPENDS+=	mm-config:\${PORTSDIR}/devel/mm \\
 		\${PREFIX}/lib/libmm.a:\${PORTSDIR}/devel/mm
 
-VERSION_MODSSL=	2.6.1
+VERSION_MODSSL=	2.6.2
 
 CONFIGURE_ARGS+=--enable-module=ssl \\
 		--enable-module=define
