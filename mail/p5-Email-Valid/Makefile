@@ -2,11 +2,11 @@
 # Date created:				28 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/mail/p5-Email-Valid/Makefile,v 1.3 2001/03/01 06:37:28 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Email-Valid
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Email
