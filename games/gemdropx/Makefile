@@ -2,7 +2,7 @@
 # Date created:				9 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gemdropx/Makefile,v 1.8 2000/04/14 06:42:58 mharo Exp $
+# $FreeBSD: ports/games/gemdropx/Makefile,v 1.9 2000/04/22 21:58:24 vanilla Exp $
 #
 
 PORTNAME=	gemdropx
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/gemdropx/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	SDL.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

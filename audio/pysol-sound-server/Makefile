@@ -2,7 +2,7 @@
 # Date created:		7 January 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.3 2000/04/08 21:24:12 mharo Exp $
+# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.4 2000/04/22 21:58:27 vanilla Exp $
 #
 
 PORTNAME=	pysol-sound-server
@@ -13,7 +13,7 @@ MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/pysol-sound-s
 MAINTAINER=	sobomax@altavista.net
 
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-LIB_DEPENDS=	SDL.2:${PORTSDIR}/devel/sdl \
+LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl \
 		smpeg.0:${PORTSDIR}/graphics/smpeg
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
