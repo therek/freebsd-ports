@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.152 2001/02/04 22:44:32 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -45,7 +45,6 @@
     SUBDIR += gnomefind
     SUBDIR += gpart
     SUBDIR += grub
-    SUBDIR += gtar
     SUBDIR += gtoaster
     SUBDIR += gtop
     SUBDIR += guitar

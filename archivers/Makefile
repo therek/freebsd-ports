@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.47 2001/01/23 07:04:33 ijliao Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.48 2001/01/29 19:39:14 sobomax Exp $
 #
 
     SUBDIR += 9e
@@ -10,6 +10,7 @@
     SUBDIR += fastjar
     SUBDIR += freeze
     SUBDIR += gshar+gunshar
+    SUBDIR += gtar
     SUBDIR += ha
     SUBDIR += hpack.non-usa.only
     SUBDIR += lha
