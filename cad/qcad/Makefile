@@ -2,11 +2,11 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.8 2000/06/20 08:06:06 will Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.9 2000/06/22 05:51:52 will Exp $
 #
 
 PORTNAME=	qcad
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.4
 CATEGORIES=	cad
 MASTER_SITES=	http://www.qcad.org/archives/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -14,29 +14,27 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-MAKE_ENV=	CC="${CXX}"
 USE_QT2=	yes
-WRKSRC=		${WRKDIR}/${DISTNAME}
+MAKE_ENV=	QTDIR="${X11BASE}"
 
-QCADDIR=	${PREFIX}/lib/qcad
-QCADDOCDIR=	${PREFIX}/share/doc/qcad
-QCADSAMPLEDIR=	${PREFIX}/share/examples/qcad
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/*.cpp
 
 do-install:
-	@${MKDIR} ${QCADDIR}
-	${INSTALL_PROGRAM} ${WRKSRC}/qcad ${QCADDIR}
+	${INSTALL_PROGRAM} ${WRKSRC}/qcad ${PREFIX}/bin
+	@${MKDIR} ${PREFIX}/share/qcad
 .for dir in cur fonts hatches messages xpm
-	${CP} -R ${WRKSRC}/${dir} ${QCADDIR}
+	${TAR} -C ${WRKSRC} -cf - ${dir} | \
+		${TAR} -C ${PREFIX}/share/qcad --unlink -xf -
 .endfor
+	@${MKDIR} ${PREFIX}/share/examples/qcad
+	${TAR} -C ${WRKSRC}/examples -cf - . | \
+		${TAR} -C ${PREFIX}/share/examples/qcad --unlink -xf -
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${QCADDOCDIR}
-	${CP} -R ${WRKSRC}/doc/* ${QCADDOCDIR}
-	@${LN} -sf ${QCADDOCDIR} ${QCADDIR}/doc
+	@${MKDIR} ${PREFIX}/share/doc/qcad
+	${TAR} -C ${WRKSRC}/doc -cf - . | \
+		${TAR} -C ${PREFIX}/share/doc/qcad --unlink -xf -
+	@${LN} -sf ${PREFIX}/share/doc/qcad ${PREFIX}/share/qcad/doc
 .endif
-	@${MKDIR} ${QCADSAMPLEDIR}
-	${CP} -R ${WRKSRC}/examples/* ${QCADSAMPLEDIR}
-	${SED} -e "s;%%PREFIX%%;${PREFIX};g" \
-		< ${FILESDIR}/qcad.in > ${PREFIX}/bin/qcad
-	${CHMOD} +x ${PREFIX}/bin/qcad
 
 .include <bsd.port.mk>
