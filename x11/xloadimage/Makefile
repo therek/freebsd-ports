@@ -2,11 +2,12 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.20 2001/02/05 16:18:33 olgeni Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.21 2001/06/07 00:15:36 jmz Exp $
 #
 
 VERSION=	4.1
 REVISION=	6
+PORTREVISION=	1
 
 PORTNAME=	xloadimage
 PORTVERSION=	${VERSION}.${REVISION}
