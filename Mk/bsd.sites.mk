@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.189 2003/10/27 07:31:54 sergei Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.190 2003/10/28 06:18:52 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -647,9 +647,9 @@ MASTER_SITE_PYTHON+= \
 	http://shattered.teched.net/www.python.org/%SUBDIR%/
 
 MASTER_SITE_REDHAT_LINUX+= \
+	http://mirrors.usc.edu/pub/linux/distributions/redhat/redhat/linux/%SUBDIR%/ \
 	http://www.gtlib.cc.gatech.edu/pub/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.rutgers.edu/pub/redhat/linux/%SUBDIR%/ \
-	http://mirrors.usc.edu/pub/linux/distributions/redhat/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
