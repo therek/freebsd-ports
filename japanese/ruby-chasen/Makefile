@@ -2,7 +2,7 @@
 # Date created:		1 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ruby-chasen/Makefile,v 1.1 2001/03/02 05:20:55 knu Exp $
 #
 
 PORTNAME=	chasen
@@ -14,7 +14,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	chasen.0:${PORTSDIR}/japanese/chasen
+LIB_DEPENDS=	chasen.0:${PORTSDIR}/japanese/chasen-base
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
