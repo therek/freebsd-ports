@@ -1,13 +1,12 @@
 # New ports collection makefile for:	zsh
-# Version required:     	3.0.5
+# Version required:     	3.0.7
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.34 1999/09/11 10:00:15 asami Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.35 1999/11/25 09:03:32 jkoshy Exp $
 #
 
 DISTNAME=       zsh-3.0.7
-PKGNAME=	zsh-3.0.7
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sterling.com/zsh/ \
 		ftp://ftp.rge.com/pub/shells/zsh/ \
@@ -22,7 +21,7 @@ MAINTAINER=	torstenb@FreeBSD.org
 GNU_CONFIGURE=	yes
 MAN1=		zsh.1 zshbuiltins.1 zshcompctl.1 zshexpn.1 zshmisc.1 \
 		zshoptions.1 zshall.1 zshparam.1 zshzle.1
-PLIST_SUB=	ZSH_VERSION=3.0.6
+PLIST_SUB=	ZSH_VERSION=${DISTNAME:S/zsh-//}
 
 # If you want to build a static binary, uncomment the following line
 #CONFIGURE_ENV+=	"LDFLAGS=-static"
