@@ -1,13 +1,13 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.29 2002/11/21 15:33:00 alane Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.30 2003/06/04 08:36:47 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
 
 Python_Pre_Include=			bsd.python.mk
-Python_Include_MAINTAINER=	alane@FreeBSD.org
+Python_Include_MAINTAINER=	perky@FreeBSD.org
 
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the Python
