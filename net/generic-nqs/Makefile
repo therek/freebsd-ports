@@ -3,7 +3,7 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.3 1999/08/30 14:22:46 peter Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.4 1999/12/27 00:45:55 steve Exp $
 #
 # View this file with tabstop=4
 #
@@ -123,10 +123,10 @@ post-install:
 			${PREFIX}/bin/qpr			${PREFIX}/bin/qrls \
 			${PREFIX}/bin/qstat			${PREFIX}/bin/qsub \
 			${PREFIX}/bin/qsuspend; \
-	${SYSINST} ${CONFIGFILE} ${FILESDIR}/${STARTUP} ${RCDIR}/${STARTUP}; \
-	${SYSLOGFIX}; \
-	${PLISTFIX} ${CONFIGFILE} ${WRKDIR}; \
-	${ECHO} "You may want run ${CREATEQ} to actually make some queues"; \
+	${SH} ${SYSINST} ${CONFIGFILE} ${FILESDIR}/${STARTUP} ${RCDIR}/${STARTUP}; \
+	${SH} ${SYSLOGFIX}; \
+	${SH} ${PLISTFIX} ${CONFIGFILE} ${WRKDIR}; \
+	${ECHO} "You may want run ${SH} ${CREATEQ} to actually make some queues"; \
 	${ECHO} ""
 
 .include <bsd.port.mk>
