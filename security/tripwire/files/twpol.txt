@@ -1,7 +1,7 @@
 #
 #                       Policy file for FreeBSD
 #
-$FreeBSD$
+# $FreeBSD: ports/security/tripwire/files/twpol.txt,v 1.1 2002/03/01 01:47:15 cy Exp $
 
 
 #
