@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.52 2001/08/31 14:20:29 sobomax Exp $
+# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.53 2001/10/06 16:43:09 lioux Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
@@ -22,7 +22,7 @@ DISTNAME=	rxvt-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
 
-BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtoo
+BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
