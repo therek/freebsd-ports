@@ -2,17 +2,23 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/x11/xskyroot/Makefile,v 1.4 2000/03/11 14:29:28 jedgar Exp $
+# $FreeBSD: ports/x11/xskyroot/Makefile,v 1.5 2000/04/13 19:10:57 cpiazza Exp $
 #
 
 PORTNAME=	xskyroot
 PORTVERSION= 	920428
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.fit.ac.jp/pub/X/contrib/
-EXTRACT_SUFX=	.tar.Z
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/news/fj.sources/V10/
+DISTFILES=	1079.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
+EXTRACT_CMD=	${GZIP_CMD}
+EXTRACT_BEFORE_ARGS=	-dc
+EXTRACT_AFTER_ARGS=	| ${SED} -e "/^...bin.sh/,/exit 0/!d" | ${SH}
+
+DIST_SUBDIR=	${PORTNAME}
+NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 
