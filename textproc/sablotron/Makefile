@@ -2,13 +2,18 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.5 2001/04/29 18:58:57 vanilla Exp $
+# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.6 2001/06/18 18:13:11 dannyboy Exp $
 #
 
 PORTNAME=	Sablot
 PORTVERSION=	0.60
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.gingerall.cz/sablot/
+
+PATCH_SITES=	http://www.gingerall.com/download/
+PATCHFILES=	${DISTNAME}.1.patch
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	skv@protey.ru
 
