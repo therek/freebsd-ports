@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/pear-PEAR/pkg-install,v 1.1 2003/06/07 23:00:40 nork Exp $
+# $FreeBSD: ports/devel/pear-PEAR/pkg-install,v 1.2 2004/11/22 16:45:25 thierry Exp $
 #
 # Register the package $1 in the port registry
 
@@ -17,5 +17,5 @@ fi
 
 [ "x$1" = "x" ] && exit 1
 if [ "x$2" = "xPOST-INSTALL" ]; then
-	${PEAR_INSTALLER} install -r -f ${PKGREGDIR}/package.xml
+	${PEAR_INSTALLER} install -r -n -f ${PKGREGDIR}/package.xml
 fi
