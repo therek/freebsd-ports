@@ -1,6 +1,5 @@
-@comment $FreeBSD: ports/lang/gcc32/pkg-plist,v 1.47 2003/05/22 19:54:19 gerald Exp $
+@comment $FreeBSD: ports/lang/g95/pkg-plist,v 1.1 2004/02/01 23:20:22 maho Exp $
 bin/cpptree-ssa
-bin/g95
 bin/gccbugtree-ssa
 bin/gcctree-ssa
 bin/gcovtree-ssa
