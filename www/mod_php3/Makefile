@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.96 1999/11/18 23:02:51 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.97 1999/11/23 11:59:04 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -118,7 +118,7 @@ post-extract:
 
 pre-configure:
 	@cd ${WRKSRC} \
-	&& ./configure > /dev/null \
+	&&  CC="${CC}" CFLAGS="${CFLAGS}" ./configure > /dev/null \
 	&& cd ${WRKDIR}/php-${VERSION_PHP} \
 	&& ${ECHO_MSG} "===>  Configuring for PHP-${VERSION_PHP}" \
 	&& CC="${CC}" \
