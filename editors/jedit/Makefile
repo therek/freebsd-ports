@@ -2,17 +2,19 @@
 # Date created:				22 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/jedit/Makefile,v 1.11 2001/04/09 08:15:40 sobomax Exp $
 #
 
 PORTNAME=	jedit
-PORTVERSION=	3.0.2
+PORTVERSION=	3.1.0
 CATEGORIES=	editors java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://members.nbci.com/romainguy/ \
 		http://members.xoom.com/romainguy/
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTFILES=	${PORTNAME}${PORTVERSION:S/.//g}install.jar swingall.jar
+_DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}install
+DISTNAME=	${_DISTNAME:S/0install$/install/}
+DISTFILES=	${DISTNAME}.jar swingall.jar
 EXTRACT_ONLY=	
 
 MAINTAINER=	sobomax@FreeBSD.org
@@ -31,7 +33,7 @@ do-configure:
 
 do-install:
 	@${SED} "s|%%PREFIX%%|${PREFIX}| ; s|%%WRKDIR%%|${WRKDIR}|" ${FILESDIR}/instscript | \
-		${SETENV} CLASSPATH=${DISTDIR}/${PORTNAME}${PORTVERSION:S/.//g}install.jar:${DISTDIR}/swingall.jar \
+		${SETENV} CLASSPATH=${DISTDIR}/${DISTNAME}.jar:${DISTDIR}/swingall.jar \
 		${LOCALBASE}/bin/javavm installer.Install text
 	@${INSTALL_DATA} ${DISTDIR}/swingall.jar ${PREFIX}/share/java/jedit
 	@${INSTALL_SCRIPT} ${WRKDIR}/jedit.sh ${PREFIX}/bin/jedit
