@@ -2,11 +2,11 @@
 # Date created:				11 March 2001
 # Whom:					vanilla
 #
-# $FreeBSD: ports/print/p5-GnomePrint/Makefile,v 1.2 2001/05/04 21:41:21 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GnomePrint
-PORTVERSION=	0.7006
+PORTVERSION=	0.7008
 CATEGORIES=	print lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk

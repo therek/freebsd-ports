@@ -2,11 +2,11 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-GdkPixbuf/Makefile,v 1.7 2001/05/04 21:41:30 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GdkPixbuf
-PORTVERSION=	0.7006
+PORTVERSION=	0.7008
 CATEGORIES=	x11-toolkits lang perl5 gnome
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk

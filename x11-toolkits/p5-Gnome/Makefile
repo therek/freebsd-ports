@@ -2,11 +2,11 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gnome/Makefile,v 1.7 2001/05/27 21:00:29 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Gnome
-PORTVERSION=	0.7006
+PORTVERSION=	0.7008
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk/Gdk
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_GNOME=	yes
+USE_GNOMELIBS=	yes
 PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
 
