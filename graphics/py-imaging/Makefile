@@ -2,16 +2,16 @@
 # Date created:         02 November 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.10 2000/06/16 09:58:47 tg Exp $
+# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.11 2000/09/12 11:54:00 tg Exp $
 #
 
 PORTNAME=	imaging
-PORTVERSION=	1.1
+PORTVERSION=	1.1.1
 CATEGORIES=	graphics python
 MASTER_SITES=	http://www.pythonware.com/downloads/ \
 		ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
-PKGNAMEPREFIX=	py-
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Imaging-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
