@@ -3,14 +3,14 @@
 # Date created:			  Sun Oct 12, 1997
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/news/aub/Makefile,v 1.12 2000/05/14 05:40:46 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aub
 PORTVERSION=	2.0.5
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.digital.com/pub/plan/perl/CPAN/scripts/news/nntpstuff/aub/ \
-		ftp://ftp.perl.org/pub/CPAN/scripts/news/nntpstuff/aub/
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
+MASTER_SITE_SUBDIR=	../../../scripts/news/nntpstuff/aub
 DISTFILES=	aub aub.1 BUG_FIXES
 
 MAINTAINER=	obrien@FreeBSD.org
