@@ -3,7 +3,7 @@
 # Date created:			23 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mnews/Makefile,v 1.17 1999/12/26 14:58:46 sada Exp $
+# $FreeBSD: ports/japanese/mnews/Makefile,v 1.18 2000/01/03 19:36:06 sada Exp $
 #
 
 DISTNAME=	mnews122
@@ -14,6 +14,9 @@ MASTER_SITES=	ftp://ftp.leo.chubu.ac.jp/pub/network/mnews/
 MAINTAINER=	seiken@ARGV.AC
 
 WRKSRC=		${WRKDIR}/mnews-1.22/build
+.ifdef (USE_INET6)
+MAKE_ENV	= USE_INET6=1
+.endif
 MAN1=		mnews.1
 MANLANG=	ja
 
