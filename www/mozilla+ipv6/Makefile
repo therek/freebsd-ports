@@ -2,11 +2,11 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.65 2001/08/09 14:09:24 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.66 2001/09/11 02:38:24 ache Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 PORTEPOCH=	1
 PKGNAMESUFFIX=	+ipv6
 CATEGORIES=	www ipv6
