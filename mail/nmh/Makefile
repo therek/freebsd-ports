@@ -2,7 +2,7 @@
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.25 2000/10/08 08:47:41 asami Exp $
+# $FreeBSD$
 #
 # Makefile variables of interest:
 #
@@ -93,6 +93,10 @@ MAN5=	mh-alias.5 mh-draft.5 mh-format.5 mh-mail.5 mh-profile.5 \
 MLINKS=	mh-profile.5 mh_profile.5
 
 MAN8=	ap.8 conflict.8 dp.8 fmtdump.8 install-mh.8 mh-mts.8 post.8
+
+post-patch:
+	@${PERL} -pi -e "s|autoconf|${AUTOCONF}|;\
+		s|autoheader|${AUTOHEADER}|" ${WRKSRC}/Makefile.in
 
 post-install:
 	@PKG_PREFIX='${PREFIX}' ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
