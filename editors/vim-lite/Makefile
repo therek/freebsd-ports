@@ -3,10 +3,8 @@
 # Date created:			  Fri Jun 25, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/editors/vim-lite/Makefile,v 1.10 2000/03/22 00:28:05 obrien Exp $
+# $FreeBSD: ports/editors/vim-lite/Makefile,v 1.11 2000/04/14 00:25:50 mharo Exp $
 #
-
-PORTNAME=	vim-lite
 
 LITE=		yes
 

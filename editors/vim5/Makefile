@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.100 2001/02/15 12:42:35 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.101 2001/02/15 12:47:40 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -50,7 +50,7 @@ MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 # Determine if we need xpg4.
 # No xpg4 in libc below 400020 and 500005
 .if ${OSVERSION} < 400020 && ${OSVERSION} < 500005
-LIBS=-lxpg4
+MAKE_ARGS+=	LIBS=-lxpg4
 .endif
 
 .if !defined(LITE)
@@ -77,6 +77,7 @@ MAKE_ARGS+=	CONF_OPT_PERL="--enable-perlinterp --enable-pythoninterp --enable-tc
 .endif
 
 .else	# LITE
+PKGNAMESUFFIX=	-lite
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=no --without-x --enable-multibyte"
 MAKE_ARGS+=	CONF_OPT_PERL="--disable-perlinterp --disable-pythoninterp --disable-tclinterp"
 .endif	# LITE
