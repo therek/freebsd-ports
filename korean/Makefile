@@ -1,10 +1,11 @@
-# $FreeBSD$
+# $FreeBSD: ports/korean/Makefile,v 1.37 1999/08/30 12:08:34 peter Exp $
 #
 
     SUBDIR += Wnn
     SUBDIR += acroread-korfont
     SUBDIR += afterstep
     SUBDIR += ami
+    SUBDIR += baekmuk-bdf
     SUBDIR += bitchx
     SUBDIR += byeoroo
     SUBDIR += elm
@@ -24,7 +25,9 @@
     SUBDIR += hanyangfonts
     SUBDIR += hcode
     SUBDIR += helvis
-    SUBDIR += hlatexpsfonts
+    SUBDIR += hlatex-wansungstd
+    SUBDIR += hlatexfonts-ocf
+    SUBDIR += hlatexpsfonts-wansungstd
     SUBDIR += hmconv
     SUBDIR += hpscat
     SUBDIR += johabfonts
@@ -33,6 +36,7 @@
     SUBDIR += linux_locale
     SUBDIR += mizifont
     SUBDIR += mule-wnn4
+    SUBDIR += munhwafonts-cid
     SUBDIR += netscape3
     SUBDIR += netscape4-communicator
     SUBDIR += netscape4-navigator
