@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.117 2001/03/08 12:03:08 roam Exp $
+# $FreeBSD$
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -27,7 +27,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-opie --enable-RPA --enable-POP2 --enable-SDPS \
 		--enable-nls --with-hesiod=no
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib" \
+		LDFLAGS="-L${LOCALBASE}/lib -lintl" \
 		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}"
 MAKE_ENV+=	${CONFIGURE_ENV}
 MAN1=		fetchmail.1
@@ -60,8 +60,9 @@ FDOC=	${PREFIX}/share/doc/fetchmail
 
 pre-patch:
 	@${CP} -f  /usr/include/md5.h ${WRKSRC}
-	@perl -pi.bak -e 's|^#!/.*/python|#!${PREFIX}/bin/python|;' ${WRKSRC}/fetchmailconf
+	@${PERL} -pi.bak -e 's|^#!/.*/python|#!${PREFIX}/bin/python|;' ${WRKSRC}/fetchmailconf
 	@${SED} -e "s|@PREFIX@|${PREFIX}|" ${FILESDIR}/fetchmailconf > ${WRKDIR}/fetchmailconf
+	@${PERL} -pi.bak -e 's|\$$missing_dir/missing|${TRUE}|g' ${WRKSRC}/configure
 
 post-install:
 .if !defined(NOPORTDOCS)
