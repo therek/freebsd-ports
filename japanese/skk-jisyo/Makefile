@@ -3,7 +3,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/skk-jisyo/Makefile,v 1.2 1999/08/25 05:26:57 obrien Exp $
 #
 
 DISTNAME=	skk9.6
@@ -31,8 +31,8 @@ PLIST_SUB=	JISYONAME=${SKKJISYO}
 
 pre-fetch:
 .if defined(SKKJISYO_SIZE_INVALID)
-	@echo "Error: invalid SKKJISYO_SIZE: ${SKKJISYO_SIZE}"
-	@echo "SKKJISYO_SIZE should be L, M, or S."
+	@${ECHO_MSG} "Error: invalid SKKJISYO_SIZE: ${SKKJISYO_SIZE}"
+	@${ECHO_MSG} "SKKJISYO_SIZE should be L, M, or S."
 	@${FALSE}
 .endif
 

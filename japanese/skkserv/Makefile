@@ -3,7 +3,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/skkserv/Makefile,v 1.7 1999/08/25 05:27:04 obrien Exp $
 #
 
 DISTNAME=	skk9.6
@@ -32,14 +32,14 @@ post-install:
 		${ECHO} "start)" >> ${STARTUP_SCRIPT}; \
 		${ECHO} "	if [ -f ${PREFIX}/sbin/skkserv ]; then" >> \
 			${STARTUP_SCRIPT}; \
-		${ECHO} "		echo -n ' skkserv'; ${PREFIX}/sbin/skkserv" >> \
+		${ECHO} "		${ECHO} -n ' skkserv'; ${PREFIX}/sbin/skkserv" >> \
 			${STARTUP_SCRIPT}; \
 		${ECHO} "	fi" >> ${STARTUP_SCRIPT}; \
 		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
 		${ECHO} "stop)" >> ${STARTUP_SCRIPT}; \
 		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
 		${ECHO} "*)" >> ${STARTUP_SCRIPT}; \
-		${ECHO} '	echo "usage: $$0 {start|stop}" 1>&2' >> ${STARTUP_SCRIPT}; \
+		${ECHO} '	${ECHO} "usage: $$0 {start|stop}" 1>&2' >> ${STARTUP_SCRIPT}; \
 		${ECHO} "	;;" >> ${STARTUP_SCRIPT}; \
 		${ECHO} 'esac' >> ${STARTUP_SCRIPT}; \
 		${CHMOD} ${BINMODE} ${STARTUP_SCRIPT}; \

@@ -3,7 +3,7 @@
 # Date created:		25 Dec 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.10 1999/08/25 05:25:20 obrien Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/magicpoint
@@ -20,5 +20,5 @@ CATEGORIES=	japanese misc
 MAINTAINER=	itojun@itojun.org
 
 # dirty, but this is required for version independent-ness
-CONFIGURE_ARGS=		--with-vfontcap=`echo ${LOCALBASE}/share/VFlib/*/vfontcap | tail -1`
+CONFIGURE_ARGS=		--with-vfontcap=`${ECHO} ${LOCALBASE}/share/VFlib/*/vfontcap | tail -1`
 CONFIGURE_ARGS+=	--enable-freetype-charset16

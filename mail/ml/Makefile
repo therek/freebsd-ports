@@ -3,7 +3,7 @@
 # Date created:		15 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/ml/Makefile,v 1.3 1999/08/25 06:50:30 obrien Exp $
 #
 
 DISTNAME=		ml-3.4
@@ -18,7 +18,7 @@ REQUIRES_MOTIF=		yes
 NO_INSTALL_MANPAGES=	yes
 
 pre-configure:
-	@echo "===>  Building c-client"
+	@${ECHO_MSG} "===>  Building c-client"
 	@( cd ${WRKSRC}/../imap-4; make bsi )
 	@( cd ${WRKSRC}; ${RM} -f makeproto )
 

@@ -3,7 +3,7 @@
 # Date created:			03 Feb 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.3 1999/08/25 05:23:35 obrien Exp $
 #
 
 DISTNAME=	euc
@@ -20,7 +20,7 @@ DOCS=		errata.doc gaiji.txt index.doc install.doc kekka.txt \
 		ruigo.doc x_option.doc
 
 do-configure:
-	@echo "Copying custom Makefile."
+	@${ECHO_MSG} "Copying custom Makefile."
 	@${CP} ${FILESDIR}/Makefile ${WRKSRC}
 
 .if !defined(NOPORTDOCS)

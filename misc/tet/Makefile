@@ -3,7 +3,7 @@
 # Date created:		02 Oct 1998
 # Whom:			jkoshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/tet/Makefile,v 1.9 1999/08/25 07:22:44 obrien Exp $
 #
 
 DISTNAME=		tet3.2e-unsup
@@ -27,11 +27,11 @@ do-build:
 
 pre-extract:
 .if !defined(TET_ROOT)
-	@echo
-	@echo "The environment variable \"TET_ROOT\" is not set."
-	@echo "You must set it to the directory where you would like "
-	@echo "this port to reside before attempting extraction."
-	@echo
+	@${ECHO_MSG}
+	@${ECHO_MSG} "The environment variable \"TET_ROOT\" is not set."
+	@${ECHO_MSG} "You must set it to the directory where you would like "
+	@${ECHO_MSG} "this port to reside before attempting extraction."
+	@${ECHO_MSG}
 	@${FALSE}
 .else
 	@${TRUE}

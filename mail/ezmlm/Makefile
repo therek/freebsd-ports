@@ -3,7 +3,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/ezmlm/Makefile,v 1.4 1999/08/25 06:50:09 obrien Exp $
 #
 
 DISTNAME=	ezmlm-0.53
@@ -50,7 +50,7 @@ post-patch:
 pre-install:
 	@${ECHO} ${PREFIX} > ${WRKDIR}/.IPREFIX
 	@${ECHO} ${QMAIL_DIR} >> ${WRKDIR}/.IPREFIX
-	@diff ${WRKDIR}/.[PI]PREFIX || (echo ${DIFF_MSG} && exit 1)
+	@diff ${WRKDIR}/.[PI]PREFIX || (${ECHO} ${DIFF_MSG} && exit 1)
 
 do-install:
 .for file in ${MY_PROGRAMS}

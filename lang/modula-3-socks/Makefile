@@ -3,7 +3,7 @@
 # Date created:		31 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.4 1999/08/25 06:35:00 obrien Exp $
 #
 
 DISTNAME=	modula-3-socks
@@ -44,9 +44,9 @@ pre-install:
 
 post-install:
 	@if [ ! -f ${PREFIX}/etc/m3socks.conf ]; then \
-	    echo -n "Please create a configuration file in "; \
-	    echo "${PREFIX}/etc/m3socks.conf"; \
-	    echo "Read m3socks.conf(5) for details"; \
+	    ${ECHO_MSG} -n "Please create a configuration file in "; \
+	    ${ECHO_MSG} "${PREFIX}/etc/m3socks.conf"; \
+	    ${ECHO_MSG} "Read m3socks.conf(5) for details"; \
 	fi
 
 .include <bsd.port.mk>

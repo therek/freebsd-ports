@@ -3,7 +3,7 @@
 # Date created:        17 February 1999
 # Whom:                wagner@luthien.in-berlin.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.3 1999/08/25 06:34:54 obrien Exp $
 #
 
 DISTNAME=      m3gdb-4.17
@@ -17,7 +17,7 @@ MANCOMPRESSED= yes
 
 pre-fetch:
 	@if [ ! -d /usr/src/contrib/gdb ]; then \
-	    echo "To build this port you must have the FreeBSD" \
+	    ${ECHO_MSG} "To build this port you must have the FreeBSD" \
 		"sources in \"/usr/src\"."; \
 	    exit 1; \
 	fi

@@ -3,7 +3,7 @@
 # Date created:		29 June 1998
 # Whom:			SADA Kenji <sada@e-mail.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/p5-manual/Makefile,v 1.3 1999/08/25 05:26:10 obrien Exp $
 #
 
 DISTNAME=	perl5.000man-j
@@ -48,9 +48,9 @@ do-install:
 .include <bsd.port.mk>
 
 plist:
-	@echo -n >${PLIST}
+	@${ECHO} -n >${PLIST}
 .for item in 1 3
 .for file in ${CAT${item}}
-	@echo man/ja/cat${item}/${file}.gz >>${PLIST}
+	@${ECHO} man/ja/cat${item}/${file}.gz >>${PLIST}
 .endfor
 .endfor
