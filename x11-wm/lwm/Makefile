@@ -2,18 +2,18 @@
 # Date created:		17 March 1998
 # Whom:			J Han <hjh@photino.com>
 #
-# $FreeBSD: ports/x11-wm/lwm/Makefile,v 1.6 1999/08/31 03:00:12 peter Exp $
+# $FreeBSD: ports/x11-wm/lwm/Makefile,v 1.7 2000/04/10 19:50:02 cpiazza Exp $
 #
 
 PORTNAME=	lwm
-PORTVERSION= 	0.06
+PORTVERSION= 	1.00
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://users.ch.genedata.com/~enh/
+MASTER_SITES=	http://users.ch.genedata.com/~enh/lwm/
 DISTNAME=	${PORTNAME}
-EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	hjh@photino.com
+MAINTAINER=	ports@FreeBSD.org
 
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 
