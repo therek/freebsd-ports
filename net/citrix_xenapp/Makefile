@@ -1,9 +1,9 @@
 # New ports collection makefile for:	Citrix(R) ICA(R) Client
-# Version required:     2.80.76
+# Version required:     3.0.15
 # Date created:         20 Sep 1998
 # Whom:                 msmith
 #
-# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.15 1999/08/31 06:48:41 mharo Exp $
+# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.16 2000/02/28 08:33:51 asami Exp $
 #
 
 DISTNAME=       linux
