@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.126 2003/02/02 21:33:14 arved Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.127 2003/02/05 10:50:04 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -449,6 +449,14 @@ MASTER_SITE_THEMES+= \
 	ftp://ftp.tuwien.ac.at/opsys/linux/themes.org/%SUBDIR%/ \
 	ftp://ftp.debian.org/pub/mirrors/themes.org/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/themes/%SUBDIR%/
+
+MASTER_SITE_VIM+= \
+	ftp://ftp.vim.org/pub/vim/unix/  \
+	ftp://ftp.is.co.za/applications/editors/vim/unix/  \
+	ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unix/  \
+	ftp://ftp.mirror.ac.uk/sites/ftp.vim.org/pub/vim/unix/  \
+	ftp://relay.nuxi.com/pub/vim/unix/  \
+	ftp://nuxi.ucdavis.edu/pub/vim/unix/
 
 MASTER_SITE_WINDOWMAKER+= \
 	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
