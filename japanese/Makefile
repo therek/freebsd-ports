@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.351 2001/04/07 23:48:58 will Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.352 2001/04/09 09:46:38 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -345,6 +345,7 @@
     SUBDIR += w3m
     SUBDIR += w3m-ssl
     SUBDIR += wdic-fpw
+    SUBDIR += weather-emacs20
     SUBDIR += web1913-fpw
     SUBDIR += weblint97
     SUBDIR += word
