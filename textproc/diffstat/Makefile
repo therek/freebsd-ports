@@ -2,21 +2,20 @@
 # Date created:		Oct 23, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.1.1.1 1999/11/26 20:40:38 steve Exp $
+# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.2 2000/04/09 21:52:20 cpiazza Exp $
 #
 
 PORTNAME=	diffstat
-PORTVERSION= 	1.27
+PORTVERSION= 	1.28
 CATEGORIES=	textproc devel
-MASTER_SITES=	ftp://ftp.clark.net/pub/dickey/diffstat/ \
-		http://www.clark.net/pub/dickey/diffstat/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	ftp://dickey.his.com/diffstat/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	trevor@jpj.net
 
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAKEFILE=	makefile
 GNU_CONFIGURE=	yes
-#USE_AUTOCONF=	yes
 
 MAN1=		diffstat.1
 
