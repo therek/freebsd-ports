@@ -2,7 +2,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.14 2000/04/13 09:16:15 asami Exp $
+# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.15 2000/06/30 13:29:55 cjh Exp $
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -26,18 +26,19 @@ DISTNAME=	${PKGNAME}
 DISTFILES=	${PCL3_DRV} ${DECRYPT_PDF} ${GS_SOURCES} \
 		${VFLIB_GS} ${KFFTYPE} ${KFFTYPE_PATCH} \
 		${HFFTYPE} ${GS_CID_PATCH}
+EXTRACT_ONLY=	${GS_SOURCES} ${PCL3_DRV}
 
-MAINTAINER=	cjh@kr.FreeBSD.org
+MAINTAINER=	cjh@FreeBSD.org
 
-RUN_DEPENDS=	$(LOCALBASE)/share/ghostscript/fonts/CMap:${PORTSDIR}/korean/munhwafonts-cid \
-		$(LOCALBASE)/share/ghostscript/fonts:${PORTSDIR}/print/gsfonts
+RUN_DEPENDS=	$(LOCALBASE)/share/ghostscript/fonts:${PORTSDIR}/print/gsfonts \
+		$(LOCALBASE)/share/ghostscript/fonts/CMap:${PORTSDIR}/korean/munhwafonts-cid \
+		$(X11BASE)/lib/X11/fonts/TrueType/gulim.ttf:${PORTSDIR}/korean/baekmukfonts-ttf
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 		ttf.4:${PORTSDIR}/print/freetype
 
-USE_XLIB=	yes
-EXTRACT_ONLY=	${GS_SOURCES} ${PCL3_DRV}
+USE_XLIB=	YES
 WRKSRC=		${WRKDIR}/gs5.10
 
 MAKEFILE=	unix-gcc.mak
@@ -91,6 +92,11 @@ pre-patch:
 
 do-configure:
 	@(cd ${WRKSRC}; ${SH} tar_cat )
+
+pre-build:
+	${SED}  -e "s@%%PREFIX%%@${X11BASE}@g" \
+		${FILESDIR}/hconfig.ps.in > \
+		${WRKSRC}/hangul/hconfig.ps
 
 pre-install:
 	@${MKDIR} ${PREFIX}/share/ghostscript ${PREFIX}/bin ${PREFIX}/man/man1
