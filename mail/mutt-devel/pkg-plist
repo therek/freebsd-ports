@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mutt-devel/pkg-plist,v 1.24 2000/11/22 00:23:38 obrien Exp $
+@comment $FreeBSD: ports/mail/mutt/pkg-plist,v 1.24 2000/11/22 00:23:38 obrien Exp $
 bin/flea
 bin/mutt
 bin/mutt_dotlock
