@@ -2,15 +2,13 @@
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.11 2000/03/20 21:27:30 mharo Exp $
+# $FreeBSD: ports/www/webcopy/Makefile,v 1.12 2000/04/10 00:07:14 cpiazza Exp $
 #
 
 PORTNAME=	webcopy
 PORTVERSION=	0.98b7
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.inf.utfsm.cl/pub/utfsm/perl/
-DISTNAME=	${PORTNAME}
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	http://people.freebsd.org/~steve/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 
