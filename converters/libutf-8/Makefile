@@ -2,7 +2,7 @@
 # Date created:				1 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.3 1999/08/28 01:56:59 mharo Exp $
+# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.4 2000/04/08 23:24:32 mharo Exp $
 #
 
 PORTNAME=	libutf
@@ -21,11 +21,11 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/libutf-8.so.1 ${PREFIX}/lib
 	${LN} -fs ${PREFIX}/lib/libutf-8.so.1 ${PREFIX}/lib/libutf-8.so
 	${INSTALL_DATA} ${WRKSRC}/utf-8.h ${PREFIX}/include
-	$(INSTALL_MAN) ${WRKSRC}/libutf-8.3 ${PREFIX}/man/man3
-	$(INSTALL_MAN) ${WRKSRC}/fgetu8.3 ${PREFIX}/man/man3
-	$(INSTALL_MAN) ${WRKSRC}/fputu8.3 ${PREFIX}/man/man3
-	$(INSTALL_MAN) ${WRKSRC}/sgetu8.3 ${PREFIX}/man/man3
-	$(INSTALL_MAN) ${WRKSRC}/sputu8.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/libutf-8.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/fgetu8.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/fputu8.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/sgetu8.3 ${PREFIX}/man/man3
+	${INSTALL_MAN} ${WRKSRC}/sputu8.3 ${PREFIX}/man/man3
 
 post-install:
 	${SETENV} OBFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
