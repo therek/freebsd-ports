@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.43 2001/03/30 21:09:37 olgeni Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.44 2001/04/02 20:15:41 mharo Exp $
 #
 
     SUBDIR += abacus
@@ -21,6 +21,7 @@
     SUBDIR += korganizer
     SUBDIR += kproject
     SUBDIR += loserjabber
+    SUBDIR += mhc-emacs20
     SUBDIR += moneydance
     SUBDIR += notebook
     SUBDIR += offix-trash
