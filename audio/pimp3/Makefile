@@ -2,7 +2,7 @@
 # Date created:				23 February 2000
 # Whom:					rbt@zort.on.ca
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.5 2001/04/02 06:13:17 mharo Exp $
+# $FreeBSD: ports/audio/pimp3/Makefile,v 1.6 2001/04/03 03:59:57 lioux Exp $
 #
 
 PORTNAME=	pimp3
