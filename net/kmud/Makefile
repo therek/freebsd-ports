@@ -2,17 +2,18 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/kmud/Makefile,v 1.1.1.1 2000/03/23 03:32:48 will Exp $
+# $FreeBSD: ports/net/kmud/Makefile,v 1.2 2000/04/14 06:53:23 mharo Exp $
 #
 
 PORTNAME=	kmud
-PORTVERSION=	0.3
-CATEGORIES=	games
+PORTVERSION=	0.4.1
+CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kmud.de/pub/kmud/
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
+BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
