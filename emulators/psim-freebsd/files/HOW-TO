@@ -1,4 +1,4 @@
-$FreeBSD: ports/emulators/psim-freebsd/files/HOW-TO,v 1.1 2001/10/12 21:42:54 obrien Exp $
+$FreeBSD: ports/emulators/psim-freebsd/files/HOW-TO,v 1.2 2001/10/13 20:03:18 mp Exp $
 
 Instructions for building and running the FreeBSD kernel under PSIM:
 
@@ -16,7 +16,7 @@ Instructions for building and running the FreeBSD kernel under PSIM:
 
 	# ./write_mfs_in_kernel kernel.debug ppcdisk
 
-5. Run the simulator. The following .gdbinit is available as
+4. Run the simulator. The following .gdbinit is available as
    /usr/local/share/examples/psim-freebsd/dot.gdbinit:
 
 	display/i $pc
@@ -65,3 +65,5 @@ Breakpoint 1, 0x001d8d58 in cpu_switch ()
 #4  0x0011d720 in mi_startup () at ../../../kern/init_main.c:209
 #5  0x00114880 in kernel_text ()
 (gdb) 
+
+More information on PSIM can be found here: <http://sources.redhat.com/psim>
