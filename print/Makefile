@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/print/Makefile,v 1.146 2001/03/08 19:05:52 sobomax Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -74,6 +74,7 @@
     SUBDIR += musixtex
     SUBDIR += nenscript
     SUBDIR += offix-printer
+    SUBDIR += p5-GnomePrint
     SUBDIR += p5-Text-PDF
     SUBDIR += pnm2ppa
     SUBDIR += pclprint
