@@ -2,7 +2,7 @@
 # Date created:			25 April 2000
 # Whom:				Daniel Harris <dannyboy@subdimension.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fortunelock/Makefile,v 1.1.1.1 2000/04/30 00:35:15 steve Exp $
 #
 
 PORTNAME=	fortunelock
@@ -10,7 +10,7 @@ PORTVERSION=	0.1.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://capsi.cx/src/fortunelock/
 
-MAINTAINER=	dannyboy@subdimension.com
+MAINTAINER=	dannyboy@FreeBSD.org
 
 USE_BZIP2=	yes
 
