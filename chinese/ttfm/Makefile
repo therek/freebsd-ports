@@ -2,13 +2,13 @@
 # Date created:		12 Nov 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/ttfm/Makefile,v 1.1 2000/11/13 08:48:09 keith Exp $
 #
 
 PORTNAME=	ttfm
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.1
 CATEGORIES=	chinese print
-MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
+MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/ttfm/
 
 MAINTAINER=	keith@FreeBSD.org
 
@@ -25,7 +25,7 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/${doc} ${PREFIX}/share/doc/ttfm
 .endfor
 	@${MKDIR} ${MODULESDIR}
-.for module in xfreetype.ttfm xttfm.ttfm
+.for module in ghostscript6.ttfm xfreetype.ttfm xttfm.ttfm
 	@${INSTALL_SCRIPT} ${WRKSRC}/modules/${module} ${MODULESDIR}
 .endfor
 .for module in chitex.ttfm ttf2pk.ttfm xttfm-tcl.ttfm
