@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.44 2000/10/23 15:24:04 imura Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.45 2000/10/23 16:09:05 imura Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -33,7 +33,8 @@ CONFIGURE_ARGS=	"--with-qt-includes=${QTDIR}/include/X11/qt" \
 		"--with-extra-includes=${LOCALBASE}/include" \
 		"--with-extra-libs=${LOCALBASE}/lib"
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555" \
-		QTDIR=${QTDIR}
+		QTDIR=${QTDIR} \
+		DO_NOT_COMPILE=ksirc
 USE_GMAKE=	yes
 CFLAGS+=	"-I${PREFIX}/include"
 
