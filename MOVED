@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.560 2004/11/08 18:03:36 trevor Exp $
+# $FreeBSD: ports/MOVED,v 1.561 2004/11/09 13:43:06 skv Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1310,3 +1310,5 @@ devel/p5-POE-Component-DBIAgent|databases/p5-POE-Component-DBIAgent|2004-11-09|m
 devel/p5-POE-Component-Client-POP3|mail/p5-POE-Component-Client-POP3|2004-11-09|moved to mail category
 devel/p5-POE-Component-Client-HTTP|www/p5-POE-Component-Client-HTTP|2004-11-09|moved to www category
 devel/p5-POE-Component-Client-UserAgent|www/p5-POE-Component-Client-UserAgent|2004-11-09|moved to www category
+www/galeon2|www/galeon|2004-11-09|renamed to galeon
+www/mozilla-gtk1||2004-11-09|obsoleted by gtk2 version
