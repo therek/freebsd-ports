@@ -3,7 +3,7 @@
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/naim/Makefile,v 1.6 1999/08/30 14:23:22 peter Exp $
 #
 
 DISTNAME=	naim-0.9.4
@@ -16,7 +16,7 @@ MAINTAINER=	mharo@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
-MAN1=		naim.1
+#MAN1=		naim.1
 
 post-install:
 	@ ${MKDIR} ${PREFIX}/share/examples/naim
