@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.90 2000/08/21 14:17:04 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.91 2000/08/25 16:38:02 knu Exp $
 #
 
     SUBDIR += FWF
@@ -10,6 +10,7 @@
     SUBDIR += colorstep
     SUBDIR += engradient
     SUBDIR += fltk
+    SUBDIR += fltk-xunicode
     SUBDIR += fox
     SUBDIR += gnome--
     SUBDIR += gnome-look
