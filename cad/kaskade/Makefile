@@ -3,7 +3,7 @@
 # Date created:		19 Sept. 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/kaskade/Makefile,v 1.9 1999/08/25 04:52:32 obrien Exp $
+# $FreeBSD: ports/cad/kaskade/Makefile,v 1.10 1999/09/09 10:40:13 asami Exp $
 #
 
 DISTNAME=	3.1.1
@@ -12,7 +12,7 @@ CATEGORIES=	cad
 MASTER_SITES=	ftp://ftp.zib.de/pub/kaskade/3.x/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 
