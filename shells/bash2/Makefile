@@ -2,7 +2,7 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.42 2000/04/21 08:19:18 mharo Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.43 2000/05/07 20:33:28 ache Exp $
 #
 
 PORTNAME=	bash
@@ -19,6 +19,7 @@ MAINTAINER=	ache@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--with-installed-readline
+CONFIGURE_ENV=  LDFLAGS=-static
 MAN1=		bash.1 bashbug.1
 
 post-install:
