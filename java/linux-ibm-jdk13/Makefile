@@ -2,12 +2,12 @@
 # Date created:				22 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/java/linux-ibm-jdk13/Makefile,v 1.1 2001/06/24 21:53:43 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}
-PORTREVISION=	1 # Service Release 9 : cx130-20010626 
+PORTREVISION=	2 # Service Release 10 : cx130-20010925
 CATEGORIES=	java
 MASTER_SITES=	#
 PKGNAMEPREFIX=	linux-ibm-
