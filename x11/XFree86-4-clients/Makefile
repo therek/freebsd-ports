@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.67 1999/11/16 19:29:01 billf Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.68 1999/11/23 04:49:34 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -17,11 +17,6 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/ \
 DISTFILES=	X335src-1.tgz X335src-2.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
-
-.include <bsd.port.pre.mk>
-.if ${OSVERSION} > 400011
-BROKEN=                problem with /usr/libexec/cpp
-.endif
 
 IS_INTERACTIVE=	yes	# configure script asks questions
 .if (${MACHINE} != "alpha")
