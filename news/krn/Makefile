@@ -2,7 +2,7 @@
 # Date created:				Sun Apr 16 14:19:19 PDT 2000
 # Whom:					adsharma@sharmas.dhs.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/krn/Makefile,v 1.1 2000/06/09 17:38:56 will Exp $
 #
 
 PORTNAME=	krn
@@ -12,6 +12,10 @@ MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/krn/ \
 		http://download.sourceforge.net/krn/
 
 MAINTAINER=	adsharma@sharmas.dhs.org
+
+LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
+		uu.1:${PORTSDIR}/converters/uulib \
+		mimelib.2:${PORTSDIR}/converters/kdesupport11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes
