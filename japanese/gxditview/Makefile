@@ -2,11 +2,12 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gxditview/Makefile,v 1.21 2001/08/06 01:09:20 okazaki Exp $
+# $FreeBSD: ports/japanese/gxditview/Makefile,v 1.22 2001/08/17 06:22:44 okazaki Exp $
 #
 
 PORTNAME=	gxditview
 PORTVERSION=	1.17.2
+PORTREVISION=	1
 CATEGORIES=	japanese print
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	groff
@@ -14,7 +15,7 @@ DISTNAME=	groff-${PORTVERSION}
 
 PATCH_SITES=	${MASTER_SITE_LOCAL}
 PATCH_SITE_SUBDIR=	okazaki/groff
-PATCHFILES=	${DISTNAME}-jgroff-0.0.1.diff.gz
+PATCHFILES=	${DISTNAME}-jgroff-0.0.2.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	okazaki@FreeBSD.org
