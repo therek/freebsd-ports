@@ -2,7 +2,7 @@
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.27 2000/04/14 07:20:22 asami Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.28 2000/06/23 02:28:16 chuckr Exp $
 #
 
 PORTNAME=	octave
@@ -10,10 +10,10 @@ PORTVERSION=	2.1.30
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/bleeding-edge/ \
 		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/misc/octave/bleeding-edge/
-USE_BZIP2=	yes
 
 MAINTAINER=	chuckr@FreeBSD.org
 
+USE_BZIP2=	yes
 BUILD_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 
