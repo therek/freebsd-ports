@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.166 1999/12/29 07:11:21 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.167 1999/12/31 21:55:46 jedgar Exp $
 #
 
     SUBDIR += 4va
@@ -140,6 +140,7 @@
     SUBDIR += urt
     SUBDIR += vcg
     SUBDIR += whirlgif
+    SUBDIR += wmgrabimage
     SUBDIR += wmicons
     SUBDIR += xanim
     SUBDIR += xaos
