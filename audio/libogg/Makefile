@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libogg/Makefile,v 1.2 2000/11/13 10:22:54 asami Exp $
+# $FreeBSD: ports/audio/libogg/Makefile,v 1.3 2000/11/16 13:06:28 asami Exp $
 #
 
 PORTNAME=	libogg
@@ -17,16 +17,12 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
+AUTOMAKE_ARGS=	--add-missing
 WRKSRC=		${WRKDIR}/ogg
 
-ACLOCAL?=	${LOCALBASE}/bin/aclocal
 AUTOHEADER?=	${LOCALBASE}/bin/autoheader
-AUTOMAKE_ARGS=	--add-missing
 
-post-patch:
-	cd ${WRKSRC} && ${ACLOCAL}
+pre-configure:
 	cd ${WRKSRC} && ${AUTOHEADER}
-	cd ${WRKSRC} && ${AUTOMAKE} --add-missing
-	cd ${WRKSRC} && ${AUTOCONF}
 
 .include <bsd.port.mk>
