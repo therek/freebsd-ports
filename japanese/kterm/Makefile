@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.29 2000/10/07 22:15:01 asami Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.30 2001/05/08 16:56:25 shige Exp $
 #
 
 PORTNAME=	kterm
@@ -42,12 +42,12 @@ DOCDIR=		${PREFIX}/share/doc/kterm
 	@${ECHO} "Error: \$${WITH_XAW3DLIB} and \$${WITH_NEXTAWLIB} cannot be specified simultaneously!"
 	@${FALSE}
 .elif defined(WITH_XAW3DLIB)
-LIB_DEPENDS+=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS+=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 post-patch:
 	@${ECHO_MSG}  "===>  Applying Xaw3d scrollbar patch"
 	@${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-Xaw3d
 .elif defined(WITH_NEXTAWLIB)
-LIB_DEPENDS+=	neXtaw.7:${PORTSDIR}/x11-toolkits/neXtaw
+LIB_DEPENDS+=	neXtaw.${XAWVER}:${PORTSDIR}/x11-toolkits/neXtaw
 post-patch:
 	@${ECHO_MSG}  "===>  Applying neXtaw scrollbar patch"
 	@${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-neXtaw
