@@ -2,14 +2,14 @@
 # Date created:				31 Jan 2000
 # Whom:					Archie Cobbs
 #
-# $FreeBSD: ports/net/mpd-netgraph/Makefile,v 1.6 2000/04/09 18:12:17 cpiazza Exp $
+# $FreeBSD: ports/net/mpd-netgraph/Makefile,v 1.7 2000/04/15 08:57:37 asami Exp $
 #
 
 PORTNAME=	mpd
-PORTVERSION=	3.0.b5
+PORTVERSION=	3.0.b6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.whistle.com/pub/archie/mpd/
-DISTNAME=	mpd-3.0b5
+DISTNAME=	mpd-3.0b6
 
 MAINTAINER=	archie@freebsd.org
 
