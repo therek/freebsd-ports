@@ -2,7 +2,7 @@
 # Date created:		6 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/devel/yacl/Makefile,v 1.8 2000/04/14 18:40:15 knu Exp $
+# $FreeBSD: ports/devel/yacl/Makefile,v 1.9 2000/11/07 23:28:01 asami Exp $
 #
 
 PORTNAME=		yacl
@@ -10,8 +10,6 @@ PORTVERSION=		1.7b
 CATEGORIES=		devel
 MASTER_SITES=		ftp://ftp.cs.sc.edu/pub/yacl/
 DISTNAME=		yacl-0170-beta
-
-MAINTAINER=		albast@xs4all.nl
 
 NO_WRKSUBDIR=		yes
 USE_ZIP=		yes
