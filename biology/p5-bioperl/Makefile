@@ -2,11 +2,12 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/p5-bioperl/Makefile,v 1.3 2001/06/26 15:09:39 wjv Exp $
+# $FreeBSD: ports/biology/p5-bioperl/Makefile,v 1.4 2001/07/04 13:22:10 wjv Exp $
 #
 
 PORTNAME=	bioperl
 PORTVERSION=	0.7.1
+PORTREVISION=	1
 CATEGORIES=	biology perl5
 MASTER_SITES=	ftp://bioperl.org/pub/DIST/ \
 		http://bioperl.org/Core/Latest/ \
@@ -17,6 +18,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	wjv@FreeBSD.org
 
+# These are all run-time dependencies, but listing them in ${BUILD_DEPENDS}
+# prevents a flood of build-time warnings.
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Ace.pm:${PORTSDIR}/biology/p5-AcePerl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/File/Temp.pm:${PORTSDIR}/devel/p5-File-Temp \
@@ -27,6 +30,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Ace.pm:
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/Node.pm:${PORTSDIR}/textproc/p5-XML-Node \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/Parser/PerlSAX.pm:${PORTSDIR}/textproc/p5-libxml \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/Writer.pm:${PORTSDIR}/textproc/p5-XML-Writer
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	YES
 
@@ -44,9 +48,11 @@ EXT_WRKSRC=	${WRKDIR}/bioperl-ext-06/Bio/Ext/Align
 
 .if defined(WITH_CORBA_CLIENT)
 BUILD_DEPENDS+=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/CORBA/ORBit.pm:${PORTSDIR}/devel/p5-ORBit
+RUN_DEPENDS+=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/CORBA/ORBit.pm:${PORTSDIR}/devel/p5-ORBit
 .endif
 .if defined(WITH_CORBA_SERVER)
 BUILD_DEPENDS+=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/CORBA/ORBit.pm:${PORTSDIR}/devel/p5-ORBit
+RUN_DEPENDS+=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/CORBA/ORBit.pm:${PORTSDIR}/devel/p5-ORBit
 .endif
 .if defined(WITH_GUI)
 RUN_DEPENDS+=	ptksh:${PORTSDIR}/x11-toolkits/p5-Tk
