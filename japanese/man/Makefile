@@ -2,12 +2,12 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man/Makefile,v 1.28 2001/07/26 05:01:11 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	man
 PORTVERSION=	1.1j
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://daemon.jp.freebsd.org/pub/FreeBSD-jp/man-jp/ \
 		${MASTER_SITE_PORTS_JP}
