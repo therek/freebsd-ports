@@ -2,13 +2,16 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.3 2000/08/21 10:07:33 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.4 2000/11/23 11:56:11 sobomax Exp $
 #
 
 PORTNAME=	py-kde
 PORTVERSION=	0.12
 CATEGORIES=	x11-toolkits kde python
-MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	sf
+#MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
+#There is new version of PyKDE but it is not yet KDE2 compliant.
 DISTNAME=	PyKDE-${PORTVERSION}
 
 MAINTAINER=	adsharma@sharmas.dhs.org
