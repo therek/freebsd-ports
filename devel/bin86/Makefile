@@ -2,11 +2,11 @@
 # Date created:				2000-10-19
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/bin86/Makefile,v 1.1 2000/11/03 00:22:08 trevor Exp $
 #
 
 PORTNAME=	bin86
-PORTVERSION=	0.15.3
+PORTVERSION=	0.15.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.cix.co.uk/~mayday/
 
