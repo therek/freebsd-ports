@@ -2,7 +2,7 @@
 # Date created:		03 Feb 20001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libdivxdecore-devel/Makefile,v 1.4 2001/08/31 14:20:24 sobomax Exp $
+# $FreeBSD: ports/graphics/libdivxdecore-devel/Makefile,v 1.5 2001/09/24 18:02:17 lioux Exp $
 #
 
 PORTNAME=	libdivxdecore
@@ -19,7 +19,7 @@ BUILD_DEPENDS=	${NONEXISTENT}:${LIBDIVXDECORE_PORT}:patch
 WRKSRC=		${WRKDIR}/${LIBDIVXDECORE_PORT_WRKSRC:C/.+\///}
 
 USE_ZIP=	yes
-EXTRACT_BEFORE_ARGS=	-a -L
+EXTRACT_BEFORE_ARGS=	-q -a -L
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
