@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.607 2001/07/30 17:18:50 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.608 2001/07/31 09:56:54 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -222,6 +222,7 @@
     SUBDIR += libshhopt
     SUBDIR += libsigc++
     SUBDIR += libslang
+    SUBDIR += libstrfunc
     SUBDIR += libtai
     SUBDIR += libtar
     SUBDIR += libtecla
