@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.372 2001/05/04 21:00:27 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.373 2001/05/06 04:56:07 kris Exp $
 #
 
     SUBDIR += 0verkill
@@ -192,6 +192,7 @@
     SUBDIR += seabattle
     SUBDIR += seahaven
     SUBDIR += sl
+    SUBDIR += slashem-tty
     SUBDIR += smacx
     SUBDIR += sokoban
     SUBDIR += sol
