@@ -3,14 +3,14 @@
 # Date created:		9 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/wmsound/Makefile,v 1.6 1999/08/25 04:36:19 obrien Exp $
 #
 
 DISTNAME=	wmsound-0.9.5
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 
-MAINTAINER=	gljohns@bellsouth.net
+MAINTAINER=	ports@FreeBSD.org	
 
 BUILD_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 LIB_DEPENDS=	PropList.1:${PORTSDIR}/devel/libPropList
