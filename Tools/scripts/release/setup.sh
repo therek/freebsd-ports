@@ -1,7 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/scripts/release/setup.sh,v 1.1 2002/03/27 00:45:47 will Exp $
+# $FreeBSD: ports/Tools/scripts/release/setup.sh,v 1.2 2002/05/16 03:21:44 will Exp $
 
 dir=$@
+if [ -z $dir ]; then
+	echo "Usage: $0 <path to dir with ports and packages to split>"
+	exit 1
+fi
 if [ ! -d $dir ]; then
 	echo "Directory not found.  Aborting."
 	exit 1
