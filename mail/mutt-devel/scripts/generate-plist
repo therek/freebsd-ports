@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.27 2005/02/14 10:08:16 krion Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.28 2005/03/14 10:36:44 krion Exp $
 #
 # set -x
 
@@ -97,7 +97,6 @@ if [ "$MUTT_PORTDOCS" = "yes" ]; then
 %%EXAMPLESDIR%%/colors.linux
 %%EXAMPLESDIR%%/gpg.rc
 %%EXAMPLESDIR%%/pgp2.rc
-%%EXAMPLESDIR%%/pgp5.rc
 %%EXAMPLESDIR%%/pgp6.rc
 %%EXAMPLESDIR%%/sample.mailcap
 %%EXAMPLESDIR%%/sample.muttrc
