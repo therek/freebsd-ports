@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.453 2001/01/20 08:04:21 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.454 2001/01/25 15:55:33 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -60,6 +60,7 @@
     SUBDIR += dhid
     SUBDIR += dhcpconf
     SUBDIR += dictd
+    SUBDIR += dictd-database
     SUBDIR += djbdns
     SUBDIR += dlint
     SUBDIR += dnsutl
