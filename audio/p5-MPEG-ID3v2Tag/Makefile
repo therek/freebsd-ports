@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 08:38:34 2001
 # Whom:					will
 #
-# $FreeBSD: ports/audio/p5-MPEG-ID3v2Tag/Makefile,v 1.1 2001/01/03 23:32:22 will Exp $
+# $FreeBSD: ports/audio/p5-MPEG-ID3v2Tag/Makefile,v 1.2 2001/03/01 06:38:09 vanilla Exp $
 #
 
 PORTNAME=	MPEG-ID3v2Tag
-PORTVERSION=	0.20
+PORTVERSION=	0.32
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MPEG
