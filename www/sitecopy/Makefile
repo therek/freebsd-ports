@@ -3,10 +3,10 @@
 # Date created:		15 January 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/www/sitecopy/Makefile,v 1.11 1999/08/31 06:52:17 mharo Exp $
+# $FreeBSD: ports/www/sitecopy/Makefile,v 1.12 1999/09/09 00:32:35 ache Exp $
 #
 
-DISTNAME=       sitecopy-0.8.0
+DISTNAME=       sitecopy-0.8.1
 CATEGORIES=	www
 MASTER_SITES=   http://www.lyra.org/sitecopy/
 
