@@ -2,7 +2,7 @@
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.9 2001/03/01 15:29:29 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xemacs
@@ -16,6 +16,7 @@ MASTER_SITE_SUBDIR=	${DISTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-mule${EXTRACT_SUFX}
 
 MAINTAINER=	keith@FreeBSD.org
+COMMENT=	XEmacs text editor version 20, with XIM support and Big5 settings
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.5:${PORTSDIR}/graphics/png

@@ -2,12 +2,14 @@
 # Date created:		00/08/25
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/FreeWnn-lib/Makefile,v 1.10 2000/09/12 17:08:24 taoka Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-lib
 CATEGORIES=	chinese
 MASTERDIR=	${.CURDIR}/../../japanese/FreeWnn-lib
+COMMENT=	A Japanese/Chinese/Korean input method (Chinese client libraries)
+
 PKGDIR=		${.CURDIR}
 WNN=		cWnn
 

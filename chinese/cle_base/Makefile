@@ -2,7 +2,7 @@
 # Date created:		Nov 17, 1999
 # Whom:			keith@FreeBSD.org
 #
-# $FreeBSD: ports/chinese/cle_base/Makefile,v 1.4 2000/11/30 13:49:15 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		cle_base
@@ -16,6 +16,7 @@ DISTFILES=		${RPM_SET1} ${RPM_LDCONFIG} ${RPM_BASH2} ${RPM_SET2} \
 EXTRACT_ONLY=
 
 MAINTAINER=		keith@FreeBSD.org
+COMMENT=		The base set of CLE packages needed in Linux mode, support both GB & Big5
 
 RUN_DEPENDS=		rpm:${PORTSDIR}/archivers/rpm
 
