@@ -2,7 +2,7 @@
 # Date created:				9th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ghex/Makefile,v 1.12 2001/05/11 16:36:23 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghex
@@ -15,16 +15,14 @@ MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GNOME=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomeprefix gnomehack gnomelibs gnomeprint
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-pre-patch:
+post-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
-		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
