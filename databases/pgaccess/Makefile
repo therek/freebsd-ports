@@ -3,12 +3,12 @@
 # Date created:		Sat Oct  4 20:03:46 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.19 1999/08/25 05:21:31 obrien Exp $
+# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.20 1999/08/31 06:41:21 mharo Exp $
 #
 
-DISTNAME=	pgaccess-0.96
+DISTNAME=	pgaccess-0.98
 CATEGORIES=	databases
-MASTER_SITES=	http://www.flex.ro/pgaccess/
+MASTER_SITES	ftp://ftp.flex.ro/pub/pgaccess/
 
 MAINTAINER=	andreas@FreeBSD.org
 
@@ -20,6 +20,12 @@ NO_BUILD=		yes
 FETCH_BEFORE_ARGS=	-b
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/pgaccess.tcl ${PREFIX}/bin/pgaccess
-
+	@${MKDIR} ${PREFIX}/share/pgaccess
+	@cd ${WRKSRC} && /bin/pax -rwp p copyright.html main.tcl lib images ${PREFIX}/share/pgaccess
+.if !defined(NOPORTDOCS)
+	@cd ${WRKSRC} && /bin/pax -rwp p README demo doc ${PREFIX}/share/pgaccess
+.endif
+	@${SED} -e 's:!!LOCALBASE!!:${LOCALBASE}:' ${WRKSRC}/pgaccess |\
+	 ${SED} -e 's:!!PREFIX!!:${PREFIX}:' > ${PREFIX}/bin/pgaccess
+	@${CHMOD} 555 ${PREFIX}/bin/pgaccess
 .include <bsd.port.mk>
