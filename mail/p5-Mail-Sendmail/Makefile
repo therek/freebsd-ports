@@ -2,11 +2,11 @@
 # Date created:				Jan 28 2000
 # Whom:					Wei-chun Chao
 #
-# $FreeBSD: ports/mail/p5-Mail-Sendmail/Makefile,v 1.1 2000/06/02 03:29:40 will Exp $
+# $FreeBSD: ports/mail/p5-Mail-Sendmail/Makefile,v 1.2 2001/03/01 06:38:16 vanilla Exp $
 #
 
 PORTNAME=	Mail-Sendmail
-PORTVERSION=	0.77
+PORTVERSION=	0.78
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
