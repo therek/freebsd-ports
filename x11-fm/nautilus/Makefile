@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.18 2001/05/04 21:51:14 ade Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.19 2001/05/05 14:14:59 sobomax Exp $
 #
 
 PORTNAME=	nautilus
@@ -37,8 +37,8 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -fno-rtti -fno-exceptions" \
 		LIBS="${PTHREAD_LIBS} -L${LOCALBASE}/lib -L${X11BASE}/lib" \
 		LIBPNG="-L${LOCALBASE}/lib -lpng -lz ${MOZILLA_LIBS}"
-CONFIGURE_ARGS=	--with-freetype2-lib-place=${X11BASE}/lib \
-		--with-freetype2-include-place=${X11BASE}/include/freetype2
+CONFIGURE_ARGS=	--with-freetype2-lib-place=${LOCALBASE}/lib \
+		--with-freetype2-include-place=${LOCALBASE}/include/freetype2
 
 .if !defined(WITHOUT_MOZILLA)
 CONFIGURE_ARGS+= --with-mozilla-lib-place=${X11BASE}/lib/${MOZILLA} \
