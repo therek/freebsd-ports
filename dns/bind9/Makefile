@@ -2,12 +2,11 @@
 # Date created:				6 October 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/bind9/Makefile,v 1.22 2000/11/19 19:21:02 dougb Exp $
+# $FreeBSD: ports/net/bind9/Makefile,v 1.23 2000/12/01 23:42:12 ade Exp $
 #
 
 PORTNAME=	bind
-PORTVERSION=	9.0.1
-PORTREVISION=	2
+PORTVERSION=	9.1.0
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${PORTVERSION}/ \
 		ftp://ftp.sunet.se/pub/network/isc/bind9/${PORTVERSION}/
@@ -21,6 +20,9 @@ MAN1=	host.1 dig.1
 MAN5=	rndc.conf.5
 MAN8=	lwresd.8 named.8 nsupdate.8 rndc.8 dnssec-keygen.8 dnssec-makekeyset.8 \
 	dnssec-signkey.8 dnssec-signzone.8
+
+pre-configure:
+	${PERL} -pi -e "s@{INSTALL_PROGRAM}@{INSTALL_DATA} -m 555@g" ${WRKSRC}/Makefile.in
 
 post-install:
 .for NUM in 1 5 8
