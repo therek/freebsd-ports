@@ -2,11 +2,11 @@
 # Date created:		23 October 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/devel/cxref/Makefile,v 1.12 2000/04/11 21:27:42 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cxref
-PORTVERSION=	1.5c
+PORTVERSION=	1.5d
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.demon.co.uk/pub/unix/tools/
