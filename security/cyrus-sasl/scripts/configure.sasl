@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.7 2001/07/25 15:05:11 knu Exp $
+# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.8 2001/08/01 11:56:24 knu Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -21,8 +21,7 @@ if [ "${BATCH}" ]; then
 		set ${OPTIONS}
 	fi
 else
-
-	if [ "x${ENABLE_DB3}" = "xYES" -o -f ${PREFIX}/lib/libdb3.so.1 ] ; then
+	if [ "x${ENABLE_DB3}" = "xYES" -o -f ${PREFIX}/lib/libdb3.so ] ; then
 		SET_DB3="ON"
 	else
 		SET_DB3="OFF"
