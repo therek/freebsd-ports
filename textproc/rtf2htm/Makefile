@@ -3,13 +3,13 @@
 # Date created:			Sep 3, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/rtf2htm/Makefile,v 1.1 2001/09/03 05:48:06 ijliao Exp $
 #
 
 PORTNAME=	rtf2htm
 PORTVERSION=	0.17.1
 CATEGORIES=	textproc
-MASTER_SITES=	http://recycle.50megs.com/
+MASTER_SITES=	http://www.geocities.com/tuorfa/
 
 MAINTAINER=	ports@FreeBSD.org
 
