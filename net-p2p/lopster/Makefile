@@ -2,7 +2,7 @@
 # Date created:		19 Oct 2000
 # Whom:			Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/lopster/Makefile,v 1.1 2000/10/19 07:01:32 trevor Exp $
 #
 
 PORTNAME=	lopster
@@ -19,7 +19,7 @@ USE_GTK=	yes
 USE_X_PREFIX=	yes
 
 post-extract:
-.for i in aclocal.m4 stamp-h.in Makefile.in configure
+.for i in aclocal.m4 stamp-h.in Makefile.in configure src/Makefile.in
 	${TOUCH} ${WRKSRC}/${i}
 .endfor
 
