@@ -2,11 +2,12 @@
 # Date created:		16 November 2000
 # Whom:			Edwin Groothuis (edwin@mavetju.org)
 #
-# $FreeBSD: ports/net/smm++/Makefile,v 1.2 2001/04/05 15:28:48 kevlo Exp $
+# $FreeBSD: ports/net/smm++/Makefile,v 1.3 2001/07/15 15:24:07 kevlo Exp $
 #
 
 PORTNAME=	smm++
 PORTVERSION=	5r0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.issever.de/smm/downloads/
 DISTNAME=	smm
