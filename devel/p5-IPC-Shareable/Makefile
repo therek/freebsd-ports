@@ -2,11 +2,11 @@
 # Date created:				May 25th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/devel/p5-IPC-Shareable/Makefile,v 1.4 2000/12/03 01:35:04 vanilla Exp $
+# $FreeBSD: ports/devel/p5-IPC-Shareable/Makefile,v 1.5 2001/01/14 20:06:43 vanilla Exp $
 #
 
 PORTNAME=	IPC-Shareable
-PORTVERSION=	0.54
+PORTVERSION=	0.60
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IPC
@@ -16,7 +16,7 @@ MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable
 
-PERL_CONFIGURE=	YES
+PERL_CONFIGURE=	yes	
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		IPC::Shareable.3 IPC::Shareable::SharedMem.3
