@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.548 2001/05/27 05:41:29 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.549 2001/05/28 14:54:39 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -10,6 +10,7 @@
     SUBDIR += SpecTcl
     SUBDIR += a2dev
     SUBDIR += adabroker
+    SUBDIR += ald
     SUBDIR += allegro
     SUBDIR += amulet
     SUBDIR += anjuta
