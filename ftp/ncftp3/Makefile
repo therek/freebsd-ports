@@ -4,11 +4,11 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.72 2000/03/22 00:27:22 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.73 2000/03/22 14:41:34 obrien Exp $
 #
 
-DISTNAME=	ncftp-3.0.0-src
-PKGNAME=	ncftp3-3.0.0
+DISTNAME=	ncftp-3.0.1-src
+PKGNAME=	ncftp3-3.0.1
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 
