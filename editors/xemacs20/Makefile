@@ -3,7 +3,7 @@
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.31 1999/08/27 21:13:51 mharo Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.32 1999/11/30 20:21:44 gj Exp $
 #
 
 DISTNAME=	xemacs-20.4
@@ -16,7 +16,7 @@ MASTER_SITES=	\
 		ftp://ftp.th-darmstadt.de:/pub/editors/xemacs/${DISTNAME}/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${MULEDISTFILE}
 
-MAINTAINER=	me@FreeBSD.org
+MAINTAINER=	gj@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
