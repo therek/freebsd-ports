@@ -2,7 +2,7 @@
 # Date created:         Thu Jun 11 22:38:52 PDT 1998
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/netshow/Makefile,v 1.10 2000/04/14 10:46:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netshow
@@ -14,15 +14,14 @@ EXTRACT_SUFX=	.gz
 
 MAINTAINER=	dburr@FreeBSD.org
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
-
-ONLY_FOR_ARCHS=	i386
 RESTRICTED=	"Commercial software"
 NO_CDROM=	${RESTRICTED}
 NO_PACKAGE=	${RESTRICTED}
 
-NO_BUILD=	yes
+ONLY_FOR_ARCHS=	i386
 
+USE_LINUX=	yes
+NO_BUILD=	yes
 USE_X_PREFIX=	yes
 
 pre-extract:

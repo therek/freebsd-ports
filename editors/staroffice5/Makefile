@@ -2,7 +2,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.14 2000/10/08 10:19:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	staroffice
@@ -17,10 +17,11 @@ DISTFILES=	applicat.rdb.gz libofa517li.so libsdb517li.so
 MAINTAINER=	mb@imp.ch
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 NO_CDROM=	'Must be downloaded direct from Sun via www interface'
+
+USE_LINUX=	yes
 IS_INTERACTIVE=	yes
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 EXTRACT_CMD=	${CAT}

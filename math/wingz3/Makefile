@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz3/Makefile,v 1.13 2000/09/07 05:18:43 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wingzpro
@@ -13,13 +13,13 @@ EXTRACT_ONLY=
 
 MAINTAINER=	mi@aldan.algebra.com
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+NO_PACKAGE=	"nothing to build. commercial software"
 
 ONLY_FOR_ARCHS=	i386
 
+USE_LINUX=	yes
 USE_X_PREFIX=	yes
 NO_BUILD=	yes
-NO_PACKAGE=	"nothing to build. commercial software"
 
 do-fetch:
 	#

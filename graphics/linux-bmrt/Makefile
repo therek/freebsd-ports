@@ -2,7 +2,7 @@
 # Date created:                        4 May 2000
 # Whom:                                R Joseph Wright
 #
-# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.5 2001/02/08 12:19:57 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linux-bmrt
@@ -13,9 +13,9 @@ DISTNAME=	BMRT${PORTVERSION}.linux-glibc2
 
 MAINTAINER=	rjoseph@mammalia.org
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base \
-		/compat/linux/usr/X11R6/lib/libGL.so:${PORTSDIR}/graphics/linux_mesa3
+RUN_DEPENDS=	/compat/linux/usr/X11R6/lib/libGL.so:${PORTSDIR}/graphics/linux_mesa3
 
+USE_LINUX=	yes
 WRKSRC=		${WRKDIR}/BMRT2.6
 NO_BUILD=	yes
 ONLY_FOR_ARCHS=	i386

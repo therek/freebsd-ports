@@ -2,7 +2,7 @@
 # Date created:		25 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/aswedit/Makefile,v 1.10 2000/10/04 06:40:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asWedit
@@ -16,12 +16,13 @@ DISTNAME=	asWedit-4.0-i386.linux
 
 MAINTAINER=	brett@peloton.runet.edu
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
-
-ONLY_FOR_ARCHS=	i386
 RESTRICTED=	"Commercial software"
 NO_BUILD=	yes
 NO_PACKAGE=	${RESTRICTED}
+
+ONLY_FOR_ARCHS=	i386
+
+USE_LINUX=	yes
 WRKSRC=		${WRKDIR}/asWedit-4.0.1
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz/Makefile,v 1.14 2001/01/16 17:31:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Wingz
@@ -15,12 +15,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
-
 ONLY_FOR_ARCHS=	i386
 
+USE_LINUX=	yes
 NO_WRKSUBDIR=	yes
-
 USE_X_PREFIX=	yes
 
 post-install:
