@@ -2,7 +2,7 @@
 # Date created:        24 Feb 2001
 # Whom:                Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/satellite/Makefile,v 1.2 2001/06/08 05:36:40 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       satellite
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR= system/network
 
 MAINTAINER=	markp@FreeBSD.org
 
-LIB_DEPENDS=    gdbm.2:${PORTSDIR}/databases/gdbm
+LIB_DEPENDS=    gdbm.3:${PORTSDIR}/databases/gdbm
 
 GNU_CONFIGURE=  yes
 CONFIGURE_ENV=  CPPFLAGS='-I${LOCALBASE}/include' \
