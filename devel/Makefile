@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.638 2001/09/08 14:30:23 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.639 2001/09/11 08:38:44 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -484,6 +484,7 @@
     SUBDIR += ruby-flex_rb
     SUBDIR += ruby-fnmatch
     SUBDIR += ruby-gemfinder
+    SUBDIR += ruby-gnustep
     SUBDIR += ruby-intl
     SUBDIR += ruby-lapidary
     SUBDIR += ruby-libglade
