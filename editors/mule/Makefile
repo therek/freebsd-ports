@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.42 2000/04/20 10:23:17 mharo Exp $
+# $FreeBSD: ports/editors/mule/Makefile,v 1.43 2000/09/17 15:29:19 taoka Exp $
 #
 
 PORTNAME=	mule
