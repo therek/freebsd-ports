@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.156 2001/03/01 15:31:40 clive Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.157 2001/03/01 16:33:12 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -53,6 +53,7 @@
     SUBDIR += healthd
     SUBDIR += heat
     SUBDIR += idled
+    SUBDIR += installwatch
     SUBDIR += ipa
     SUBDIR += ipsc
     SUBDIR += lavaps
