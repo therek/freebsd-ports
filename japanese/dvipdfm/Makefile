@@ -2,7 +2,7 @@
 # Date created:		07 July 2001
 # Whom:			HIRATA Yasuyuki <yasu@asuka.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/dvipdfm/Makefile,v 1.1 2001/09/03 17:50:54 knu Exp $
 #
 
 PORTNAME=		dvipdfm
@@ -18,10 +18,10 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=		yasu@asuka.net
 
 BUILD_DEPENDS=		${LOCALBASE}/lib/libkpathsea.a:${PORTSDIR}/japanese/ptex-common \
-			${LOCALBASE}/share/doc/cmpsfont/READ.ME:${PORTSDIR}/print/cmpsfont
+			${LOCALBASE}/share/doc/cmpsfont/README:${PORTSDIR}/print/cmpsfont
 LIB_DEPENDS=		png:${PORTSDIR}/graphics/png
 RUN_DEPENDS=		kpsewhich:${PORTSDIR}/japanese/ptex-common \
-			${LOCALBASE}/share/doc/cmpsfont/READ.ME:${PORTSDIR}/print/cmpsfont
+			${LOCALBASE}/share/doc/cmpsfont/README:${PORTSDIR}/print/cmpsfont
 
 MAN1=			dvipdfm.1
 
