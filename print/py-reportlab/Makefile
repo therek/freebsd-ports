@@ -2,31 +2,45 @@
 # Date created:		17 August 2000
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/py-reportlab/Makefile,v 1.1 2000/08/22 11:45:40 tg Exp $
+# $FreeBSD: ports/print/py-reportlab/Makefile,v 1.2 2000/09/12 11:54:08 tg Exp $
 #
 
 PORTNAME=	reportlab
-PORTVERSION=	1.0
+PORTVERSION=	1.01
 CATEGORIES=	print python
 MASTER_SITES=	ftp://ftp.reportlab.com/
-PKGNAMEPREFIX=	py-
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_PYTHON=	yes
-NO_BUILD=	yes
+CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
+ALL_TARGET=	sharedmods
+MAKE_FLAGS=	OPT="${CFLAGS}"
 
 REPORTLABDIR=	${PYTHON_SITELIBDIR}/reportlab
 DOCDIR=		${PREFIX}/share/doc/reportlab
 EXAMPLEDIR=	${PREFIX}/share/examples/reportlab
+
+post-extract:
+	@${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}/lib
+
+do-configure:
+	@(cd ${WRKSRC}/lib; \
+		${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
+
+do-build:
+	@(cd ${WRKSRC}/lib; \
+		${SETENV} ${MAKE_ENV} ${MAKE} ${ALL_TARGET})
 
 do-install:
 	@${MKDIR} ${REPORTLABDIR}
 .for dir in . lib pdfbase pdfgen platypus
 	@${MKDIR} ${REPORTLABDIR}/${dir}
 	${INSTALL_DATA} ${WRKSRC}/${dir}/*.py ${REPORTLABDIR}/${dir}
+	-${INSTALL_DATA} ${WRKSRC}/${dir}/*.so ${REPORTLABDIR}/${dir}
 .endfor
 	@${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${REPORTLABDIR}
 	@${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${REPORTLABDIR}
