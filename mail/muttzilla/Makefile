@@ -4,7 +4,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.1.1.1 2000/02/05 00:01:06 obrien Exp $
+# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.2 2000/02/13 03:23:52 obrien Exp $
 #
 
 DISTNAME=	muttzilla-0.40
@@ -13,7 +13,22 @@ MASTER_SITES=	http://www3.bc.sympatico.ca/brian_winters/mutt/
 
 MAINTAINER=	obrien@FreeBSD.org
 
-RUN_DEPENDS=	mutt:${PORTSDIR}/mail/mutt
+pre-configure:
+	@${PERL} -pi.orig \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		${WRKSRC}/muttzilla.h
+	@${PERL} -pi.orig \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		${WRKSRC}/mzmail.sh
+	@${PERL} -pi.orig \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		${WRKSRC}/mzmail.py
+	@${PERL} -pi.orig \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		${WRKSRC}/mznews.sh
+	@${PERL} -pi.orig \
+		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:"  \
+		${WRKSRC}/mznews.py
 
 post-install:
 .if !defined(NOPORTDOCS)
