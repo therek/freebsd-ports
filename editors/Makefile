@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.100 1999/12/29 07:21:23 steve Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.101 2000/01/06 11:50:59 asami Exp $
 #
 
     SUBDIR += AbiWord
@@ -104,8 +104,6 @@
     SUBDIR += xcoral
     SUBDIR += xed
     SUBDIR += xemacs
-    SUBDIR += xemacs-mule
-    SUBDIR += xemacs-mule-common
     SUBDIR += xemacs-mule-packages
     SUBDIR += xemacs-mule-sumo
     SUBDIR += xemacs-mule-sumo-packages

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.246 2000/01/03 19:58:42 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.247 2000/01/06 11:50:54 asami Exp $
 #
 
     SUBDIR += Canna
@@ -265,16 +265,11 @@
     SUBDIR += weblint97
     SUBDIR += wine
     SUBDIR += word
-    SUBDIR += xemacs-canna
-    SUBDIR += xemacs-canna+wnn4
-    SUBDIR += xemacs-canna+wnn6
     SUBDIR += xemacs-sumo-canna
     SUBDIR += xemacs-sumo-canna+wnn4
     SUBDIR += xemacs-sumo-canna+wnn6
     SUBDIR += xemacs-sumo-wnn4
     SUBDIR += xemacs-sumo-wnn6
-    SUBDIR += xemacs-wnn4
-    SUBDIR += xemacs-wnn6
     SUBDIR += xemacs21-canna
     SUBDIR += xemacs21-canna+wnn4
     SUBDIR += xemacs21-canna+wnn6
