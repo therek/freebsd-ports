@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.307 2003/10/26 22:09:16 kris Exp $
+# $FreeBSD: ports/LEGAL,v 1.308 2003/10/26 23:38:24 kris Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -217,6 +217,7 @@ newkind*		ports/games/newkind	Reverse-engineered version of
 nntpcache-*		ports/news/nntpcache	Commercial or government use
 						requires licence
 nte-1.*			ports/mbone/nte		Crypto; export-controlled
+ORBacus			ports/devel/ORBacus	non commercial use only.
 openssl-*		ports/security/openssl	Crypto; export/import-controlled
 opera-*			ports/www/opera		No redistribution, commercial
 						software
