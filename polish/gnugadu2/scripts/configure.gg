@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/gnugadu/scripts/configure.gg,v 1.1 2003/05/10 20:02:43 petef Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -14,7 +14,7 @@ if [ "${BATCH}" ]; then
 		set \"esd\"
 	fi
 else
-	/usr/bin/dialog --title "configuration options" --clear \
+	/usr/bin/dialog --title "gnugadu configuration options" --clear \
 		--checklist "\n\
 Please select desired options:" -1 -1 16 \
 esd		"esd support" ON \
