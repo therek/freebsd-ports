@@ -2,16 +2,16 @@
 # Date created:				7 August 2001
 # Whom:					will
 #
-# $FreeBSD: ports/misc/kdeaddons/Makefile,v 1.2 2001/08/15 16:25:11 will Exp $
+# $FreeBSD: ports/misc/kdeaddons/Makefile,v 1.3 2001/08/20 20:48:10 will Exp $
 #
 
 PORTNAME=	kdeaddons
 PORTVERSION=	2.2
-CATEGORIES=	misc
+CATEGORIES?=	misc kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 
 USE_KDELIBS_VER=2
 USE_BZIP2=	yes
