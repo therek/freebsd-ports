@@ -2,7 +2,7 @@
 # Date created:         Mon Dec 14 21:03:01 MET 1998
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/doom/Makefile,v 1.17 1999/08/25 06:03:16 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	doom
@@ -37,6 +37,9 @@ do-fetch:
 .endif
 post-extract:
 	@cd ${WRKDIR} && tar xzf linuxdoom-1.10.src.tgz && tar xzf sndserv.tgz
+
+post-patch:
+	@${FIND} ${WRKSRC} -type f | ${XARGS} ${PERL} -pi -e "s@#include +<malloc.h>@#include <stdlib.h>@g"
 
 do-build:
 	@cd ${WRKDIR}/linuxdoom-1.10 && ${GMAKE}
