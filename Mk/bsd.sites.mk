@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.227 2004/03/12 13:06:42 eik Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.228 2004/03/17 17:22:47 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -745,7 +745,7 @@ MASTER_SITE_SAVANNAH+= \
 	ftp://ftp.gnu.org/pub/savannah/files/%SUBDIR%/
 
 # currently belnet has corrupted distfiles, add when the problems have gone away
-.for mirror in heanet aleron unc umn
+.for mirror in heanet aleron umn
 MASTER_SITE_SOURCEFORGE+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
