@@ -1,13 +1,13 @@
 # New ports collection makefile for:	opendx-samples
-# Version required:	4.0
+# Version required:	4.0.7
 # Date created:		06 Oct 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx-samples/Makefile,v 1.2 1999/10/06 09:11:00 tg Exp $
+# $FreeBSD: ports/graphics/opendx-samples/Makefile,v 1.3 1999/10/15 13:18:44 tg Exp $
 #
 
-DISTNAME=	dxsamples-4.0
-PKGNAME=	opendx-samples-4.0
+DISTNAME=	dxsamples-4.0.7
+PKGNAME=	opendx-samples-4.0.7
 CATEGORIES=	graphics math
 MASTER_SITES=	http://opendx.npaci.edu/source/
 
@@ -15,5 +15,10 @@ MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	SHELL=/bin/sh
+
+# XXX
+# someone with some knowledge of Java should make this work
+post-configure:
+	@touch ${WRKSRC}/java/samples/samples.jar
 
 .include <bsd.port.mk>
