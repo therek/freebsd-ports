@@ -2,11 +2,11 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/py-scientific/Makefile,v 1.5 2000/09/28 11:19:00 tg Exp $
+# $FreeBSD: ports/math/py-scientific/Makefile,v 1.6 2001/03/29 12:22:55 tg Exp $
 #
 
 PORTNAME=	scientific
-PORTVERSION=	2.0.1
+PORTVERSION=	2.2
 CATEGORIES=	math python
 MASTER_SITES=	http://starship.python.net/crew/hinsen/ \
 		http://dirac.cnrs-orleans.fr/programs/
@@ -27,9 +27,6 @@ SCIENTIFICDIR=	${PYTHON_SITELIBDIR}/Scientific
 DOCDIR=		${PREFIX}/share/doc/py-scientific
 EXAMPLEDIR=	${PREFIX}/share/examples/py-scientific
 
-post-extract:
-	@${CP} ${FILESDIR}/setup.* ${WRKSRC}
-
 do-build:
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
 
@@ -37,12 +34,13 @@ do-install:
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py install)
 
 post-install:
-.if !defined(NOPORTDOCS)
-	@${MKDIR} ${EXAMPLEDIR}
-	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/Examples/* ${EXAMPLEDIR}
 	@${MKDIR} ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${DOCDIR}
+.if !defined(NOPORTDOCS)
 	cd ${WRKDIR}/${DISTNAME}/Doc; tar cf - . | \
 	    (cd ${DOCDIR}; tar xf -)
+	@${MKDIR} ${EXAMPLEDIR}
+	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/Examples/* ${EXAMPLEDIR}
 .endif
 
 .include <bsd.port.mk>
