@@ -3,7 +3,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.7 1999/08/31 06:47:37 mharo Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.8 1999/09/10 20:41:44 torstenb Exp $
 #
 
 DISTNAME=	postfix-19990906-pl02
@@ -56,13 +56,13 @@ do-install:
 	@${MKDIR} -m 0755 ${PREFIX}/libexec/postfix
 	@for f in bounce cleanup error local master pickup pipe qmgr \
 		 showq smtp smtpd trivial-rewrite ; do \
-		${INSTALL} -C -o root -g wheel -m 0755 ${WRKSRC}/libexec/$$f \
-			${PREFIX}/libexec/postfix/$$f ;\
+		${INSTALL} -C -o root -g wheel -m 0755 -s \
+			${WRKSRC}/libexec/$$f ${PREFIX}/libexec/postfix/$$f ;\
 	done
 	@for f in postalias postcat postconf postdrop postfix postkick \
 		postlock postlog postmap postsuper sendmail smtp-sink \
 		smtp-source ; do \
-		${INSTALL} -C -o root -g wheel -m 0755 ${WRKSRC}/bin/$$f \
+		${INSTALL} -C -o root -g wheel -m 0755 -s ${WRKSRC}/bin/$$f \
 			${PREFIX}/sbin/$$f ;\
 	done
 	@for f in ${MAN1} ; do \
