@@ -2,11 +2,11 @@
 # Date created:        13 June 2000
 # Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.4 2000/07/06 14:50:40 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.5 2000/08/21 14:29:16 sobomax Exp $
 #
 
 PORTNAME=	gtk-engines-collection
-PORTVERSION= 	1.3
+PORTVERSION= 	1.4
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -27,7 +27,8 @@ RUN_DEPENDS=	${THEMESBASE}/libbuffy.so:${PORTSDIR}/x11-toolkits/buffy \
 		${THEMESBASE}/libstep.so:${PORTSDIR}/x11-toolkits/gtkstep \
 		${THEMESBASE}/libsteppastel.so:${PORTSDIR}/x11-toolkits/gtkstep-pastel \
 		${THEMESBASE}/libthinice.so:${PORTSDIR}/x11-toolkits/thinice \
-		${THEMESBASE}/libxeno.so:${PORTSDIR}/x11-toolkits/xenophilia
+		${THEMESBASE}/libxeno.so:${PORTSDIR}/x11-toolkits/xenophilia \
+		${THEMESBASE}/libwhistler.so:${PORTSDIR}/x11-toolkits/whistlerk
 
 THEMESBASE=	${X11BASE}/lib/gtk/themes/engines
 
