@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.48 1999/11/27 05:06:27 steve Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.49 1999/12/22 23:21:32 jedgar Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -14,6 +14,7 @@
     SUBDIR += msql
     SUBDIR += mysql322-client
     SUBDIR += mysql322-server
+    SUBDIR += p5-DBD-CSV
     SUBDIR += p5-DBD-Pg
     SUBDIR += p5-DBI
     SUBDIR += p5-GDBM
