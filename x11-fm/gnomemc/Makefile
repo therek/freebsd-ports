@@ -2,11 +2,11 @@
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.18 2000/05/24 03:02:55 ade Exp $
+# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.19 2000/06/01 16:10:16 ade Exp $
 #
 
 PORTNAME=	gnomemc
-PORTVERSION= 	4.5.50
+PORTVERSION= 	4.5.51
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
