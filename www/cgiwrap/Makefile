@@ -2,7 +2,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.8 2001/04/21 16:14:39 fenner Exp $
+# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.9 2001/05/23 05:49:00 ijliao Exp $
 #
 
 PORTNAME=	cgiwrap
