@@ -3,10 +3,10 @@
 # Date created:		1998/05/28
 # Whom:			cjohnson
 #
-# $FreeBSD: ports/games/tinymux/Makefile,v 1.3 1999/08/25 06:04:32 obrien Exp $
+# $FreeBSD: ports/games/tinymux/Makefile,v 1.4 2000/03/20 22:42:17 mharo Exp $
 #
 
-DISTNAME=	tinymux-1.4p13
+DISTNAME=	tinymux-1.6p0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.digex.net/pub/mud/tinymux/
 
