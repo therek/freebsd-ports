@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.26 2001/08/01 11:56:19 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cyrus-sasl
@@ -36,7 +36,7 @@ MAN8=		sasldblistusers.8 saslpasswd.8
 USE_AUTOMAKE=	YES
 USE_LIBTOOL=	YES
 AUTOHEADER=	autoheader
-AUTOMAKE=	automake --add-missing --include-deps
+AUTOMAKE_ARGS=	--add-missing --include-deps
 
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc \
 		--with-plugindir=${PREFIX}/lib/sasl \
