@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/execline/pkg-plist,v 1.1 2003/10/24 21:41:31 sergei Exp $
+@comment $FreeBSD: ports/lang/execline/pkg-plist,v 1.2 2004/04/13 22:15:26 kris Exp $
 bin/background
 bin/backtick
 bin/cd
@@ -38,6 +38,7 @@ bin/wait
 include/execline/execline.h
 include/execline/exls1.h
 lib/libexecline.a
+lib/libexlp.a
 lib/libexls1.a
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
 %%PORTDOCS%%%%DOCSDIR%%/README
@@ -51,8 +52,8 @@ lib/libexls1.a
 %%PORTDOCS%%%%DOCSDIR%%/dollarat.html
 %%PORTDOCS%%%%DOCSDIR%%/el_pushenv.html
 %%PORTDOCS%%%%DOCSDIR%%/el_semicolon.html
-%%PORTDOCS%%%%DOCSDIR%%/el_split.html
 %%PORTDOCS%%%%DOCSDIR%%/el_substitute.html
+%%PORTDOCS%%%%DOCSDIR%%/el_transform.html
 %%PORTDOCS%%%%DOCSDIR%%/elgetopt.html
 %%PORTDOCS%%%%DOCSDIR%%/elgetpositionals.html
 %%PORTDOCS%%%%DOCSDIR%%/elglob.html
