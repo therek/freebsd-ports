@@ -3,15 +3,14 @@
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD: ports/devel/cscope/Makefile,v 1.8 2000/06/14 13:21:10 sobomax Exp $
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.9 2000/06/18 18:47:46 obrien Exp $
 #
 
 PORTNAME=	cscope
-PORTVERSION=	15.0.bl2
+PORTVERSION=	15.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/cscope/  \
-		http://download.sourceforge.net/cscope/
-DISTNAME=	${PORTNAME}-15.0bl2
+#MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/cscope/  \
+MASTER_SITES=	http://download.sourceforge.net/cscope/
 
 MAINTAINER=	obrien@FreeBSD.org
 
