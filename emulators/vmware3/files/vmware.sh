@@ -2,7 +2,7 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.16 2003/10/21 15:46:37 fjoe Exp $
+# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.17 2003/11/03 16:50:03 fjoe Exp $
 
 vmware_config_file=@@PREFIX@@/etc/vmware/config
 
@@ -28,7 +28,7 @@ bridged=@@BRIDGED@@
 bridge_interface=@@BRIDGE_INTF@@
 host_ip=`vmware_config vmnet1.HostOnlyAddress`
 netmask=`vmware_config vmnet1.HostOnlyNetMask`
-dev_vmnet1=@@LINUXBASE@@/dev/vmnet1
+dev_vmnet1=/dev/vmnet1
 
 if [ ! -x $vmware ]; then
     echo "$vmware does not exist!" >&2
@@ -84,6 +84,7 @@ stop)
 	    ngctl msg ${bridge_interface}: setautosrc 1
 	    ngctl msg ${bridge_interface}: setpromisc 0
 	fi
+	kldunload vmnet.ko
     fi
     ;;
 
