@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.35 2002/12/14 05:48:41 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.36 2002/12/16 12:41:37 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -131,3 +131,4 @@ net/radius||2002-12-08|security vulnerability
 net/xtradius||2002-12-08|security vulnerability
 net/gated||2002-12-13|no longer distributed by vendor
 japanese/gnomecore|x11/gnomecore|2002-12-16|patches integrated into the upstream
+www/comline|www/libwww|2003-01-03|part of libwww
