@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.406 2002/03/28 11:24:43 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.407 2002/04/02 05:24:33 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2112,7 +2112,7 @@ do-fetch:
 				exit 1; \
 			fi ; \
 			${ECHO_MSG} ">> $$file doesn't seem to exist in ${_DISTDIR}."; \
-			if [ ! -z $$select ] ; then \
+			if [ ! -z "$$select" ] ; then \
 				__PATCH_SITES_TMP= ; \
 				for group in $$select; do \
 					if [ ! -z \$${_PATCH_SITES_$${group}} ] ; then \
