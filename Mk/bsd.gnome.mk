@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.21 2003/04/04 06:44:22 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -201,18 +201,18 @@ libpanel_DETECT=	${X11BASE}/etc/appletsConf.sh
 libpanel_USE_GNOME_IMPL=gnomelibs
 libpanel_GNOME_DESKTOP_VERSION=1
 
-glib20_LIB_DEPENDS=	glib-2.0.0:${PORTSDIR}/devel/glib20
+glib20_LIB_DEPENDS=	glib-2.0.200:${PORTSDIR}/devel/glib20
 glib20_DETECT=		${LOCALBASE}/libdata/pkgconfig/glib-2.0.pc
 
-atk_LIB_DEPENDS=	atk-1.0.0:${PORTSDIR}/devel/atk
+atk_LIB_DEPENDS=	atk-1.0.200:${PORTSDIR}/devel/atk
 atk_DETECT=		${LOCALBASE}/libdata/pkgconfig/atk.pc
 atk_USE_GNOME_IMPL=	glib20
 
-pango_LIB_DEPENDS=	pango-1.0.0:${PORTSDIR}/x11-toolkits/pango
+pango_LIB_DEPENDS=	pango-1.0.200:${PORTSDIR}/x11-toolkits/pango
 pango_DETECT=		${X11BASE}/libdata/pkgconfig/pango.pc
 pango_USE_GNOME_IMPL=	glib20
 
-gtk20_LIB_DEPENDS=	gtk-x11-2.0.0:${PORTSDIR}/x11-toolkits/gtk20
+gtk20_LIB_DEPENDS=	gtk-x11-2.0.200:${PORTSDIR}/x11-toolkits/gtk20
 gtk20_DETECT=		${X11BASE}/libdata/pkgconfig/gtk+-x11-2.0.pc
 gtk20_USE_GNOME_IMPL=	atk pango
 
