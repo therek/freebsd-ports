@@ -2,7 +2,7 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/german/ispell/Makefile,v 1.9 2001/08/01 05:06:44 dinoex Exp $
+# $FreeBSD: ports/german/ispell/Makefile,v 1.10 2001/08/01 15:16:00 dinoex Exp $
 #
 
 MAINTAINER=	alex@FreeBSD.org
@@ -12,8 +12,6 @@ ISPELL_DENEU=	yes
 PORTNAME=	ispell
 PORTVERSION=	20001109
 PORTREVISION=	3
-DISTNAME=	${PORTNAME}-3.2.05
-UNSQ=		${WRKDIR}/${DENEUDISTFILE:S=.tar.bz2$==}/bin/unsq.pl
 CATEGORIES=	german
 MASTERDIR=	${.CURDIR}/../../textproc/ispell
 
