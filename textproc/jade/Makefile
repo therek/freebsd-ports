@@ -3,7 +3,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.20 2000/02/11 01:52:20 kuriyama Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.21 2000/02/12 01:21:11 kuriyama Exp $
 #
 
 DISTNAME=	jade-1.2.1
@@ -21,9 +21,13 @@ BROKEN=		nsgmls coredumps in static constructors
 .endif
 
 USE_GMAKE=	YES
+USE_LIBTOOL=	YES
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog
+
+post-extract:
+	@${CHMOD} u+w ${WRKSRC}/configure
 
 pre-install:
 	@find ${WRKSRC} \( -name \*.orig -o -name \*~ \) -exec ${RM} -f \{} \;
