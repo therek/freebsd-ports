@@ -2,7 +2,7 @@
 # Date created:		19 November 1998
 # Whom:			Tom Hukins <tom@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode+/Makefile,v 1.19 2001/02/26 14:09:33 tom Exp $
+# $FreeBSD: ports/news/leafnode+/Makefile,v 1.20 2001/07/07 15:12:38 tom Exp $
 #
 
 PORTNAME=	leafnode+
@@ -21,9 +21,9 @@ PLIST=	${PKGDIR}/pkg-plist.nodocs
 .endif
 
 LEAFLIBDIR?=	${PREFIX}/lib/leafnode
-SPOOLDIR?=	/var/spool/leafnode
+LEAFSPOOLDIR?=	/var/spool/leafnode
 REWRITE=	${SED} -e "s:@LIBDIR@:${LEAFLIBDIR}:g" \
-		-e "s:@SPOOLDIR@:${SPOOLDIR}:g" \
+		-e "s:@SPOOLDIR@:${LEAFSPOOLDIR}:g" \
 		-e "s:@PREFIX@:${PREFIX}:g"
 
 post-patch:
