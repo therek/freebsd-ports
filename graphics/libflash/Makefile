@@ -2,7 +2,7 @@
 # Date created:		10 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/libflash/Makefile,v 1.7 2000/10/14 09:28:52 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libflash
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.swift-tools.com/Flash/
 DISTNAME=	flash-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	knu@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
