@@ -3,11 +3,12 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.2 2001/04/03 06:18:44 ijliao Exp $
+# $FreeBSD: ports/audio/flac/Makefile,v 1.3 2001/05/20 14:07:27 ijliao Exp $
 #
 
 PORTNAME=	flac
 PORTVERSION=	0.9
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -34,9 +35,9 @@ post-install:
 .if !defined(NO_PORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/flac
 	${MKDIR} ${PREFIX}/share/doc/flac/images
-	${CP} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/flac
+	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/flac
 .for file in logo.jpg 1x1.gif
-	${CP} ${WRKSRC}/doc/images/${file} ${PREFIX}/share/doc/flac/images
+	${INSTALL_DATA} ${WRKSRC}/doc/images/${file} ${PREFIX}/share/doc/flac/images
 .endfor
 .endif
 
