@@ -2,14 +2,14 @@
 # Date created:				Wed 6 Dec 2000
 # Whom:					Joseph Scott <joseph@randomnetworks.com>
 #
-# $FreeBSD: ports/net/balance/Makefile,v 1.3 2001/08/12 03:26:13 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	balance
-PORTVERSION=	2.33
+PORTVERSION=	3.6
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=  balance
+MASTER_SITE_SUBDIR=	balance
 
 MAINTAINER=	joseph@randomnetworks.com
 
