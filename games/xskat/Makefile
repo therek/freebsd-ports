@@ -2,7 +2,7 @@
 # Date created:		27 Apr 1996
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xskat/Makefile,v 1.14 2000/04/14 12:28:19 asami Exp $
+# $FreeBSD: ports/games/xskat/Makefile,v 1.15 2000/04/26 11:13:16 tg Exp $
 #
 
 PORTNAME=	xskat
@@ -13,7 +13,6 @@ MASTER_SITES=	http://www.gulu.net/xskat/
 MAINTAINER=	tg@FreeBSD.org
 
 USE_IMAKE=	yes
-MANN=		xskat.n
-MANCOMPRESSED=	no
+MAN1=		xskat.1
 
 .include <bsd.port.mk>
