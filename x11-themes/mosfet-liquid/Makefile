@@ -2,7 +2,7 @@
 # Date created:		August 22 2001
 # Whom:			Michiel De Wilde <michiel.dewilde@rug.ac.be>
 #
-# $FreeBSD: ports/x11-wm/mosfet-liquid/Makefile,v 1.1 2001/08/27 11:13:14 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mosfet-liquid
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	Michiel De Wilde <michiel.dewilde@rug.ac.be>
 
-BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake \
+BUILD_DEPENDS=	automake14:${PORTSDIR}/devel/automake14 \
 		autoconf:${PORTSDIR}/devel/autoconf
 
 GNU_CONFIGURE=	yes
