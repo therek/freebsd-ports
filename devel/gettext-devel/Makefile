@@ -3,13 +3,13 @@
 # Date created:        16 March 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gettext/Makefile,v 1.12 1999/08/25 05:48:01 obrien Exp $
 #
 
 DISTNAME=	gettext-0.10.35
 CATEGORIES=	devel
-MASTER_SITES=	ftp://alpha.gnu.ai.mit.edu/gnu/ \
-		ftp://alpha.gnu.org/pub/gnu/
+MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITE_SUBDIR=	gettext
 
 MAINTAINER=	nacai@iname.com
 
