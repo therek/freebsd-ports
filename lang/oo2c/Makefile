@@ -2,13 +2,13 @@
 # Date created:				December 17, 1999
 # Whom:					Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/oo2c/Makefile,v 1.3 2001/05/28 19:45:46 fenner Exp $
+# $FreeBSD: ports/lang/oo2c/Makefile,v 1.4 2001/07/11 16:33:46 fenner Exp $
 
 PORTNAME=	oo2c
 PORTVERSION=	1.5.2
 CATEGORIES=	lang
 MASTER_SITES=	http://www.uni-kl.de/OOC/files/oo2c/ \
-		ftp://ftp.de.uu.net/pub/programming/languages/oberon/www.uni-kl.de/OOC/files/oo2c/ \
+		http://www.breuninger.org/files/distfiles/ \
 		http://reality.sgi.com/boehm_mti/gc_source/
 DISTNAME=	${PORTNAME}_32-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} gc4.14.tar.gz
