@@ -2,7 +2,7 @@
 # Date created:                        4 May 2000
 # Whom:                                R Joseph Wright
 #
-# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.1.1.1 2000/05/07 14:27:01 sada Exp $
+# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.2 2000/05/14 01:40:07 sada Exp $
 #
 
 PORTNAME=	linux-bmrt
@@ -18,6 +18,10 @@ RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulat
 WRKSRC=		${WRKDIR}/BMRT2.5
 NO_BUILD=	yes
 NO_CDROM=	"See the License"
+
+# Linux binary should not be stripped by INSTALL_PROGRAM as it uses
+# /usr/bin/strip which then brands the binary as a FreeBSD ELF one.
+STRIP=
 
 DOC_DIR=	${PREFIX}/share/doc/bmrt
 FETCH_CMD=	/usr/bin/fetch -Ab
