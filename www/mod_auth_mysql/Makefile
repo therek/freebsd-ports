@@ -2,7 +2,7 @@
 # Date created:		2000/05/19
 # Whom:			jim@thehouselys.net
 #
-# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.1 2000/08/03 11:19:03 nbm Exp $
+# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.2 2000/08/12 11:22:00 jedgar Exp $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	2.20
@@ -22,6 +22,9 @@ APXS=		${LOCALBASE}/sbin/apxs
 
 AP_PORT?=       apache13
 .if exists(${APXS})
+APXS_WORKS!=	${APXS} -q TARGET 2>/dev/null || echo no
+.endif
+.if exists(${APXS}) && ${APXS_WORKS} != no
 AP_TARGET!=	${APXS} -q TARGET
 AP_SYSCONF!=	${APXS} -q SYSCONFDIR
 AP_INCLUDE!=	${APXS} -q INCLUDEDIR
