@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.434 2000/11/22 13:53:18 roger Exp $
+# $FreeBSD: ports/net/Makefile,v 1.435 2000/11/22 17:51:37 roger Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -261,6 +261,7 @@
     SUBDIR += tcpflow
     SUBDIR += tcpillust
     SUBDIR += tcpmssd
+    SUBDIR += tcpreplay
     SUBDIR += tcpshow
     SUBDIR += tcptrace
     SUBDIR += tcserver
