@@ -2,13 +2,13 @@
 # Date created:         7 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/emulators/sim/Makefile,v 1.11 2000/06/08 14:03:41 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sim
 PORTVERSION=	2.3d
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://minnie.cs.adfa.oz.au/pub/PDP-11/Sims/Supnik_2.3/sources/ \
+MASTER_SITES=	ftp://minnie.tuhs.org/pub/PDP-11/Sims/Supnik_2.3/sources/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=jedgar
 DISTNAME=	${PORTNAME}_${PORTVERSION}
