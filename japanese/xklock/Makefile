@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.13 2001/01/29 00:26:16 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xklock
@@ -24,10 +24,11 @@ MAINTAINER=	ports@FreeBSD.org
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
+USE_REINPLACE=	yes
 
 pre-configure:
 .for file in jnames.c xklock.h
-	@${PERL} -pi -e "s:%%PREFIX%%:${PREFIX}:" ${WRKSRC}/${file}
+	@${REINPLACE_CMD} -e "s:%%PREFIX%%:${PREFIX}:" ${WRKSRC}/${file}
 .endfor
 
 do-install:

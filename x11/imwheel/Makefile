@@ -2,7 +2,7 @@
 # Date created:		18 Feb 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/imwheel/Makefile,v 1.4 2001/02/05 16:18:03 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imwheel
@@ -12,6 +12,7 @@ MASTER_SITES=	http://jonatkins.org/imwheel/files/
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
 GNU_CONFIGURE=	YES
@@ -21,7 +22,7 @@ MAN1=		imwheel.1
 
 post-patch:
 .for i in imwheel.1 util.c
-	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/${i}
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/${i}
 .endfor
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:		5 May 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/kuickshow/Makefile,v 1.2 2001/08/26 07:30:44 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kuickshow
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
+USE_REINPLACE=	yes
 USE_IMLIB=	yes
 USE_KDELIBS_VER=	2
 USE_GMAKE=	yes
@@ -24,7 +25,7 @@ CONFIGURE_ENV+=	KDEDIR="${LOCALBASE}"
 CONFIGURE_ARGS+=	--with-imlib-config=${X11BASE}/bin
 
 post-patch:
-	@${PERL} -pi -e 's,-O2,,g' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's,-O2,,g' ${WRKSRC}/configure
 
 .if !defined(NOPORTDOCS)
 post-install:
