@@ -2,7 +2,7 @@
 # Date created:         6 Apr 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/misc/xpns/Makefile,v 1.9 2000/10/13 20:22:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpns
@@ -13,13 +13,14 @@ DISTFILES=	pns_source.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	pns
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/xpns
+	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/xpns
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/xpns ${PREFIX}/bin/xpns

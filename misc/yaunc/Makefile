@@ -2,7 +2,7 @@
 # Date created:		5 March 2000
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/misc/yaunc/Makefile,v 1.5 2000/12/26 15:20:35 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yaunc
@@ -13,13 +13,14 @@ MASTER_SITES=	http://www.redterror.net/code/yaunc/
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 GNU_CONFIGURE=	yes
 MAN1=		yaunc.1
 
 post-patch:
 	@${CP} -f ${FILESDIR}/startup ${WRKSRC}/yaunc.sh
 .for file in yaunc.1 yaunc.sh
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${file}
+	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${file}
 .endfor
 
 do-install:

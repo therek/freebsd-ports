@@ -2,7 +2,7 @@
 # Date created:		17 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/ewipe/Makefile,v 1.20 2000/05/23 13:22:22 itojun Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ewipe
@@ -19,6 +19,7 @@ RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 .endif
 
 NO_BUILD=	YES
+USE_REINPLACE=	yes
 TCLLIBS=	definefont.tcl edittable.tcl setpointer.tcl viewer.tcl tclIndex
 PORTDOCS=	Changes.jp README README.jp dot.ewipe
 EXAMPLES=	a1.gif a2.gif a3.gif a4.gif blue1.gif sample.ewp test.ewp \
@@ -31,7 +32,7 @@ WISH=		${LOCALBASE}/bin/wish8.2
 .endif
 
 post-patch:
-	@${PERL} -pi \
+	@${REINPLACE_CMD} \
 		-e "s|%%PREFIX%%|${PREFIX}|g;" \
 		-e "s|%%WISH%%|${WISH}|g;" ${WRKSRC}/ewipe
 

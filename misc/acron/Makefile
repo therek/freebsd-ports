@@ -2,7 +2,7 @@
 # Date created:         13 Dec 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/acron/Makefile,v 1.8 2000/04/14 08:45:15 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	acron
@@ -15,9 +15,10 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 NO_BUILD=	yes
+USE_REINPLACE=	yes
 
 post-patch:
-	@${PERL} -pi -e "s|\@\@PREFIX\@\@|${PREFIX}|g;" ${WRKSRC}/whats
+	@${REINPLACE_CMD} -e "s|\@\@PREFIX\@\@|${PREFIX}|g;" ${WRKSRC}/whats
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/whats ${PREFIX}/bin
