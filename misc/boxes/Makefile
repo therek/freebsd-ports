@@ -2,7 +2,7 @@
 # Date created:				3 March 2000
 # Whom:					Patrick Seal (patseal@hyperhost.net)
 #
-# $FreeBSD: ports/misc/boxes/Makefile,v 1.1 2000/04/02 23:56:26 mharo Exp $
+# $FreeBSD: ports/misc/boxes/Makefile,v 1.2 2000/04/14 08:45:24 asami Exp $
 #
 
 PORTNAME=	boxes
@@ -17,9 +17,7 @@ MAINTAINER=	patseal@hyperhost.net
 
 MAN1=		boxes.1
 USE_GMAKE=	yes
-
-do-build:
-	cd $(WRKSRC); $(GMAKE)
+ALL_TARGET=
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/boxes ${PREFIX}/bin
