@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.44 2000/02/02 21:24:50 jhb Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.45 2000/02/05 20:03:26 obrien Exp $
 #
 
     SUBDIR += aftp
@@ -34,6 +34,7 @@
     SUBDIR += stonx
     SUBDIR += tkhfs
     SUBDIR += truereality
+    SUBDIR += tuxnes
     SUBDIR += twin
     SUBDIR += vgb
     SUBDIR += vice
