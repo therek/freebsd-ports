@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/ftp/curl/Makefile,v 1.16 2000/04/17 00:17:35 reg Exp $
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.17 2000/04/22 09:57:34 mharo Exp $
 #
 
 PORTNAME=	curl
@@ -16,6 +16,8 @@ MASTER_SITES=	http://curl.haxx.nu/stuff/ \
 		ftp://crydee.sai.msu.ru/zeus/unix/WWW/tools/mirror/
 
 MAINTAINER=	kris@FreeBSD.org
+
+MAN1=		curl.1
 
 .if defined(WITH_SSL)
 USE_OPENSSL=	RSA
