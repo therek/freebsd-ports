@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/graphics/netpbm/pkg-plist,v 1.39 2002/08/17 19:58:38 naddy Exp $
+@comment $FreeBSD: ports/graphics/netpbm/pkg-plist,v 1.40 2002/10/06 18:03:01 ijliao Exp $
 bin/411toppm
 bin/anytopnm
 bin/asciitopgm
@@ -102,6 +102,8 @@ bin/pgmedge
 bin/pgmenhance
 bin/pgmhist
 bin/pgmkernel
+bin/pgmminkowski
+bin/pgmmorphconv
 bin/pgmnoise
 bin/pgmnorm
 bin/pgmoil
