@@ -1,8 +1,9 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.48 2000/03/29 21:25:41 knu Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.49 2000/04/03 15:32:13 knu Exp $
 #
 
     SUBDIR += aftp
     SUBDIR += atari800
+    SUBDIR += basiliskII
     SUBDIR += bfe
     SUBDIR += bochs
     SUBDIR += bsvc
