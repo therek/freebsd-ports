@@ -2,7 +2,7 @@
 # Date created:		6 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.11 1999/11/23 02:13:55 billf Exp $
+# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.12 2000/04/08 22:04:15 mharo Exp $
 #
 
 PORTNAME=	lmbench
@@ -30,6 +30,17 @@ test: build
 
 retest: build
 	@(cd ${WRKSRC}; make rerun)
+
+# The distribution comes with unwritable files; patch's magic RCS behavior
+# causes files to be checked out of RCS before being patched.  If an $Id$
+# string is in the patch, this behavior causes the string to change to
+# reflect the locker, meaning that the patch will probably fail.  Instead,
+# just chmod +w the files.
+PATCHEDFILES=	src/Makefile scripts/config-run scripts/getbg
+pre-patch:
+.for f in ${PATCHEDFILES}
+	@${CHMOD} +w ${WRKSRC}/${f}
+.endfor
 
 pre-install:
 	[ -d ${PREFIX}/lib/lmbench ] || ${MKDIR} ${PREFIX}/lib/lmbench
