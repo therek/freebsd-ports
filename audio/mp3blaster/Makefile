@@ -2,11 +2,11 @@
 # Date created:		5 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.4 2000/11/16 13:14:23 tg Exp $
+# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.5 2001/01/27 15:23:13 ijliao Exp $
 #
 
 PORTNAME=	mp3blaster
-PORTVERSION=	3.0p4
+PORTVERSION=	3.0p5
 CATEGORIES=	audio
 MASTER_SITES=	ftp://mud.stack.nl/pub/mp3blaster/ \
 		http://mp3blaster.linuxave.net/src/
