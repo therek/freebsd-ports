@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.138 2004/08/12 08:57:52 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.139 2004/08/12 09:45:08 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -148,13 +148,11 @@ RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
 .error "Ruby 1.7 is obsolete; set RUBY_VER to 1.8 instead."
 .else
 RUBY_VERSION?=		1.6.8
-#RUBY_DISTVERSION?=	${RUBY_VERSION}
-RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-2003.04.19.diff.bz2 \
-			ruby-${RUBY_DISTVERSION}-2003.04.19-2003.10.15.diff.bz2 \
-			ruby-${RUBY_DISTVERSION}-2003.10.15-2004.04.16.diff.bz2
-RUBY_PORTVERSION?=	${RUBY_VERSION}.2004.04.16
+RUBY_DISTVERSION?=	${RUBY_VERSION}-2004.07.28
+#RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-${RUBY_PORTVERSION}.diff.bz2
+RUBY_PORTVERSION?=	${RUBY_VERSION}.2004.07.28
 #RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
-#MASTER_SITE_SUBDIR_RUBY=	snapshots
+MASTER_SITE_SUBDIR_RUBY=	snapshots
 .endif
 #      defined(RUBY_VER) && ${RUBY_VER} == 1.8
 
