@@ -2,11 +2,11 @@
 # Date created:				13 April 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.8 2001/02/19 23:32:42 trevor Exp $
+# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.9 2001/03/12 08:33:42 trevor Exp $
 #
 
 PORTNAME=	xdrawchem
-PORTVERSION=	0.84
+PORTVERSION=	0.85
 CATEGORIES=	biology
 MASTER_SITES=	http://www.prism.gatech.edu/~gte067k/xdrawchem/
 EXTRACT_SUFX=	.tgz
