@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.392 2001/07/02 23:58:59 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.393 2001/07/08 08:08:06 ijliao Exp $
 #
 
     SUBDIR += 0verkill
@@ -182,6 +182,7 @@
     SUBDIR += powerpak
     SUBDIR += pp
     SUBDIR += ptkei
+    SUBDIR += pyching
     SUBDIR += pysol
     SUBDIR += pysol-cardsets
     SUBDIR += pysol-music
