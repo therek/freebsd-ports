@@ -2,11 +2,12 @@
 # Date created: 10th February, 2001
 # Whom:		Thierry Thomas <tthomas@mail.dotcom.fr>
 #
-# $FreeBSD: ports/news/newsx/Makefile,v 1.2 2001/04/08 18:51:32 dinoex Exp $
+# $FreeBSD: ports/news/newsx/Makefile,v 1.3 2001/08/07 16:25:27 lioux Exp $
 #
 
 PORTNAME=	newsx
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.kvaleberg.com/pub/
 
