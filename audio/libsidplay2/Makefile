@@ -2,27 +2,21 @@
 # Date created:        31 October 1996
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/audio/sidplay/Makefile,v 1.6 1999/11/14 02:48:36 steve Exp $
+# $FreeBSD: ports/audio/sidplay/Makefile,v 1.7 2000/04/08 21:24:25 mharo Exp $
 #
 
 PORTNAME=	sidplay
-PORTVERSION=	1.36.35
+PORTVERSION=	1.36.38
 CATEGORIES=	audio emulators
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/
-DISTNAME=	${PORTNAME}-1_36_35
+DISTNAME=	lib${PORTNAME}-${PORTVERSION:S/./_/g}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sec@42.org
 
-BUILD_DEPENDS=	makedepend:${PORTSDIR}/x11/XFree86
-
-GNU_CONFIGURE=	YES
-
-USE_GMAKE=	YES
-
-WRKSRC=		${WRKDIR}/${PKGNAME}
-
-post-install:
-	strip ${PREFIX}/bin/sidplay ${PREFIX}/bin/sid2wav ${PREFIX}/bin/sidcon
+WRKSRC=		${WRKDIR}/lib${PKGNAME}
+USE_XLIB=	yes
+USE_LIBTOOL=	yes
+USE_GMAKE=	yes
 
 .include <bsd.port.mk>
