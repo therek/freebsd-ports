@@ -1,11 +1,12 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.13 2002/01/13 12:05:07 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.14 2002/06/07 18:44:50 lioux Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
 
+.if !defined(USE_GNOMENG)
 .if !defined(_POSTMKINCLUDED)
 
 # Please make sure all changes to this file are past through the maintainer. 
@@ -351,3 +352,6 @@ pre-install::
 
 .endif
 # End of use part.
+.else
+.include "${PORTSDIR}/Mk/bsd.gnomeng.mk"
+.endif
