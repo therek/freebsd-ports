@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD$
+# $FreeBSD: ports/MOVED,v 1.1 2002/11/11 07:31:55 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -16,3 +16,4 @@
 # be added at the tail.
 #
 # Port|Moved to|Date|Why
+net/ratoolset|net/irrtoolset|2002-11-16|software was renamed
