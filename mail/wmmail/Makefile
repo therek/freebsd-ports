@@ -2,13 +2,13 @@
 # Date created:        7 Jun 1998
 # Whom:                rom
 #
-# $FreeBSD: ports/mail/wmmail/Makefile,v 1.13 2000/04/13 20:00:57 cpiazza Exp $
+# $FreeBSD: ports/mail/wmmail/Makefile,v 1.14 2000/08/03 09:25:28 asami Exp $
 #
 
 PORTNAME=	wmmail
 PORTVERSION= 	0.63a
 CATEGORIES=	mail windowmaker
-MASTER_SITES=	http://www.eecg.utoronto.ca/~chanb/
+MASTER_SITES=	http://soupnazi.org/FreeBSD/ports/distfiles/
 DISTNAME=	WMMail.app-${PORTVERSION}
 
 MAINTAINER=	jim@FreeBSD.org
