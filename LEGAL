@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.391 2005/03/11 15:07:23 danfe Exp $
+# $FreeBSD: ports/LEGAL,v 1.392 2005/03/11 15:20:54 danfe Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -34,6 +34,8 @@ Dist			Port			Why
 						interface
 5400s_fbsd_cli_v10.zip	sysutils/aaccli		May not be redistributed in
 						binary form
+ac3dlx*			graphics/linux-ac3d	Commercial license, no
+						distribution
 actx-*			games/actx		Contains commercial character
 						data
 adom-*			games/adom		Copy of CD must be sent to
