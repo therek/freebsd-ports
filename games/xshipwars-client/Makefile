@@ -1,12 +1,12 @@
 # New ports collection makefile for:	XShipWars-Game-Client
-# Version required:		 	1.23
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.3 2000/01/09 09:46:20 cpiazza Exp $
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.4 2000/03/08 22:49:06 kris Exp $
 #
 
-DISTNAME=	xshipwars-client-1.23
+PORTNAME=	xshipwars-client
+PORTVERSION=	1.23
 CATEGORIES=	games
 MASTER_SITES=	ftp://fox.mit.edu/pub/xsw/
 DISTFILES=	xsw1.23.tgz stimages1.3.tgz

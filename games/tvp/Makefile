@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tvp
-# Version Required:	0.9.7.1
 # Date Created:		3 Jul 1996
 # Whom:			Tim Vanderhoek <ac199@hwcn.org>
 #
-# $FreeBSD: ports/games/tvp/Makefile,v 1.9 1999/08/25 06:04:33 obrien Exp $
+# $FreeBSD: ports/games/tvp/Makefile,v 1.10 1999/11/28 18:32:27 steve Exp $
 #
 
-DISTNAME=	tvp-0.9.7.1
+PORTNAME=	tvp
+PORTVERSION=	0.9.7.1
 CATEGORIES=	games tk82
 MASTER_SITES=	http://www3.sympatico.ca/john.vanderhoek/tim/src/president/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xroach
-# Version required:	4.4BSD-Lite
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/games/xroach/Makefile,v 1.10 1999/08/25 06:06:02 obrien Exp $
+# $FreeBSD: ports/games/xroach/Makefile,v 1.11 1999/08/31 06:44:48 mharo Exp $
 #
 
-DISTNAME=	xroach
-PKGNAME=	xroach-4.4
+PORTNAME=	xroach
+PORTVERSION=	4.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/games/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	markm@FreeBSD.org
 

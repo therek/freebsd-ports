@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nethack
-# Version required:	3.3.0
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack3/Makefile,v 1.23 2000/01/05 03:06:10 cpiazza Exp $
+# $FreeBSD: ports/games/nethack3/Makefile,v 1.24 2000/01/24 05:40:41 steve Exp $
 #
 
-DISTNAME=	nethack-3.3.0
+PORTNAME=	nethack
+PORTVERSION=	3.3.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/src/ \
 		${MASTER_SITE_GNU}

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xcogitate
-# Version required:			1.02
 # Date created:				15 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xcogitate/Makefile,v 1.8 2000/02/08 09:26:23 peter Exp $
+# $FreeBSD: ports/games/xcogitate/Makefile,v 1.9 2000/03/29 07:17:30 kris Exp $
 #
 
-DISTNAME=	xcogitate-1.02
+PORTNAME=	xcogitate
+PORTVERSION=	1.02
 CATEGORIES=	games
 MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
 

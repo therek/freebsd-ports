@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xisola
-# Version required:			1.0
 # Date created:				9 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xisola/Makefile,v 1.3 1999/08/25 06:05:20 obrien Exp $
+# $FreeBSD: ports/games/xisola/Makefile,v 1.4 2000/03/29 07:17:40 kris Exp $
 #
 
-DISTNAME=		xisola-1.0
+PORTNAME=		xisola
+PORTVERSION=		1.0
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	oneko
-# Version required:	1.2
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/games/oneko/Makefile,v 1.14 1999/08/25 06:04:10 obrien Exp $
+# $FreeBSD: ports/games/oneko/Makefile,v 1.15 1999/08/27 21:13:57 mharo Exp $
 #
 
-DISTNAME=	oneko-1.2
+PORTNAME=	oneko
+PORTVERSION=	1.2
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cin.nihon-u.ac.jp/pub/Linux/PJE/PJE-0.1.5/sources/xclt/oneko/ \
 		http://hp.vector.co.jp/authors/VA004959/oneko/

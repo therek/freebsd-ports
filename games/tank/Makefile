@@ -1,15 +1,15 @@
 # New ports collection makefile for:    tank
-# Version required:     0.4a
 # Date created:         4 Mar 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tank/Makefile,v 1.11 1999/08/31 06:44:27 mharo Exp $
+# $FreeBSD: ports/games/tank/Makefile,v 1.12 2000/03/20 23:25:10 jseger Exp $
 #
 
-DISTNAME=	tank-0.4a-src
-PKGNAME=	tank-0.4a
+PORTNAME=	tank
+PORTVERSION=	0.4a
 CATEGORIES=	games
 MASTER_SITES=	http://step.polymtl.ca/~coyote/tank/
+DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	dburr@FreeBSD.org
 

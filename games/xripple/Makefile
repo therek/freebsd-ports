@@ -3,11 +3,11 @@
 # Date created:				6 Oct 1996
 # Whom:					oly
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xripple/Makefile,v 1.8 1999/08/25 06:06:00 obrien Exp $
 #
 
-DISTNAME=	xripple
-PKGNAME=	xripple-1.0
+PORTNAME=	xripple
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://crydee.sai.msu.ru/zeus/X11/contrib/ \
 		ftp://ftp.cin.nihon-u.ac.jp/pub/X11/enlightenment/misc/ \
@@ -17,6 +17,7 @@ MASTER_SITES=	ftp://crydee.sai.msu.ru/zeus/X11/contrib/ \
 		ftp://ftp.gui.uva.es/pub/linux.new/software/X11/winman/enlightenment/ \
 		ftp://ftp.gwdg.de/pub/linux/tux/x/enlightenment/enlightenment/misc/ \
 		ftp://ftp.pconline.com/users/gjerde/enlightenment/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	oly@world.std.com
 

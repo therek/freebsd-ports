@@ -1,12 +1,12 @@
 # New ports collection makefile for:	speyes
-# Version required:			1.2.0
 # Date created:				03 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/games/speyes/Makefile,v 1.1.1.1 1999/11/26 19:23:25 steve Exp $
+# $FreeBSD: ports/games/speyes/Makefile,v 1.2 1999/11/26 22:38:39 steve Exp $
 #
 
-DISTNAME=	speyes-1.2.0
+PORTNAME=	speyes
+PORTVERSION=	1.2.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.halcyon.com/amalmin/speyes/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xboing
-# Version required:	2.4
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xboing/Makefile,v 1.13 1999/08/25 06:04:51 obrien Exp $
 
-DISTNAME=	xboing2.4
-PKGNAME=	xboing-2.4
+PORTNAME=	xboing
+PORTVERSION=	2.4
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	janek@gaja.ipan.lublin.pl
 

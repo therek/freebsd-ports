@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xchain
-# Version required:			1.0.2
 # Date created:				13 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xchain/Makefile,v 1.6 1999/11/28 18:32:38 steve Exp $
+# $FreeBSD: ports/games/xchain/Makefile,v 1.7 2000/03/29 07:17:28 kris Exp $
 #
 
-DISTNAME=	xchain_1.0-2
-PKGNAME=	xchain-1.0.2
+PORTNAME=	xchain
+PORTVERSION=	1.0.2
 CATEGORIES=	games
 MASTER_SITES=	http://thor.cam.ac.uk/~ac212/xchain/
+DISTNAME=	xchain_1.0-2
 
 MAINTAINER=	ports@FreeBSD.org
 

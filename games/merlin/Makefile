@@ -1,15 +1,15 @@
 # New ports collection makefile for:	merlin
-# Version required:			1.0
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/merlin/Makefile,v 1.3 1999/11/28 18:31:24 steve Exp $
+# $FreeBSD: ports/games/merlin/Makefile,v 1.4 2000/03/29 07:17:04 kris Exp $
 #
 
-DISTNAME=	merlin
-PKGNAME=	merlin-1.0
+PORTNAME=	merlin
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	http://outoften.doc.ic.ac.uk/~np2/software/download/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

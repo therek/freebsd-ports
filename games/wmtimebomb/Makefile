@@ -1,14 +1,14 @@
 # New ports collection makefile for:	wmtimebomb
-# Version required:	0.2.0
 # Date created:		10 August 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.12 2000/02/17 00:18:14 ade Exp $
+# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.13 2000/02/18 03:36:27 jedgar Exp $
 
-DISTNAME=	wmtimebomb.20
-PKGNAME=	wmtimebomb-0.2.0
+PORTNAME=	wmtimebomb
+PORTVERSION=	0.2.0
 CATEGORIES=	games windowmaker
 MASTER_SITES=	ftp://ftp.netmug.org/pub/FreeBSD/distfiles/
+DISTNAME=	wmtimebomb.20
 
 MAINTAINER=	ports@FreeBSD.org
 

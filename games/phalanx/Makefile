@@ -1,12 +1,12 @@
 # New ports collection makefile for:	phalanx
-# Version required:			22
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/phalanx/Makefile,v 1.3 2000/03/29 07:18:16 kris Exp $
+# $FreeBSD: ports/games/phalanx/Makefile,v 1.4 2000/04/02 00:58:53 mharo Exp $
 #
 
-DISTNAME=	phalanx-22
+PORTNAME=	phalanx
+PORTVERSION=	22
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.math.muni.cz/pub/math/people/Dobes/ \
 		http://www.crosswinds.net/~dobes/phalanx/

@@ -1,17 +1,16 @@
 # New ports collection makefile for:	xvmahjongg
-# Version required:			2.0
 # Date created:				21 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvmahjongg/Makefile,v 1.8 2000/03/29 07:17:35 kris Exp $
+# $FreeBSD: ports/games/xvmahjongg/Makefile,v 1.9 2000/04/01 01:00:51 mharo Exp $
 #
 
-DISTNAME=	xvmahjongg2.1
-PKGNAME=	xvmahjongg-2.1
+PORTNAME=	xvmahjongg
+PORTVERSION=	2.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
-EXTRACT_SUFX=	.tar.Z
+DISTFILES=	${PORTNAME}${PORTVERSION}.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 

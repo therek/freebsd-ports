@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Rollemup
-# Version required:	1.0
 # Date created:		22 October 1999
 # Whom:			Kazuki Sakamoto <sakamoto@netbsd.org>
 #
-# $FreeBSD: ports/games/rollemup/Makefile,v 1.1.1.1 1999/12/10 06:32:43 imura Exp $
+# $FreeBSD: ports/games/rollemup/Makefile,v 1.2 2000/02/28 08:33:34 asami Exp $
 # $NetBSD: Makefile,v 1.4 1999/11/23 16:54:40 hubertf Exp $
 #
 
-DISTNAME=	Rollemup
-PKGNAME=	rollemup-1.0
+PORTNAME=	rollemup
+PORTVERSION=	1.0
 CATEGORIES=	games linux
 MASTER_SITES=	ftp://usa.lostboys.nl/pub/medialab/rollemup/Linux/
+DISTNAME=	Rollemup
 
 MAINTAINER=	sanpei@jp.FreeBSD.org
 

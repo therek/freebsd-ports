@@ -3,10 +3,11 @@
 # Date created:		02 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xgammon/Makefile,v 1.15 1999/08/25 06:05:14 obrien Exp $
 #
 
-DISTNAME=	xgammon-0.98
+PORTNAME=	xgammon
+PORTVERSION=	0.98
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/current/SRPMS/SRPMS/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/linux/mirror/ftp.redhat.com/redhat/current/SRPMS/SRPMS/ \

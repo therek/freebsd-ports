@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xqf
-# Version required:			0.9.0
 # Date created:				08 February 1999
 # Whom:					steve farrell
 #
-# $FreeBSD: ports/games/xqf/Makefile,v 1.6 1999/08/25 06:05:58 obrien Exp $
+# $FreeBSD: ports/games/xqf/Makefile,v 1.7 1999/12/25 02:04:34 steve Exp $
 #
 
-DISTNAME=	xqf-0.9.1
+PORTNAME=	xqf
+PORTVERSION=	0.9.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.linuxgames.com/xqf/
 

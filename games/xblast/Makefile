@@ -1,19 +1,19 @@
 # New ports collection makefile for:    xblast
-# Version required:     2.6
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD: ports/games/xblast/Makefile,v 1.6 1999/08/25 06:04:48 obrien Exp $
+# $FreeBSD: ports/games/xblast/Makefile,v 1.7 1999/08/31 06:44:33 mharo Exp $
 #
 
-DISTNAME=       xblast-2.6.beta
-PKGNAME=	xblast-2.6b
+PORTNAME=	xblast
+PORTVERSION=	2.6b
 CATEGORIES=	games
 # after end of beta test period:
 # MASTER_SITES= ${MASTER_SITE_XCONTRIB}
 # MASTER_SITE_SUBDIR= games/multiplayer
 # but right now only available from:
 MASTER_SITES=	http://www.ikp.uni-koeln.de/~vogel/archive/
+DISTNAME=       xblast-2.6.beta
 
 MAINTAINER=	se@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xkobo
-# Version required:	1.11
 # Date created:		18 Jul 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/games/xkobo/Makefile,v 1.15 2000/01/28 00:45:30 jedgar Exp $
+# $FreeBSD: ports/games/xkobo/Makefile,v 1.16 2000/03/21 22:46:59 will Exp $
 #
 
-DISTNAME=       xkobo-1.11
+PORTNAME=       xkobo
+PORTVERSION=	1.11
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
 		ftp://ftp.uoknor.edu/mirrors/X/contrib/games/

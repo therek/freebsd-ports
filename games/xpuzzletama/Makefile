@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xpuzzletama
-# Version required:	1.5b
 # Date created:		18 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xpuzzletama/Makefile,v 1.7 2000/01/07 02:26:28 nakai Exp $
+# $FreeBSD: ports/games/xpuzzletama/Makefile,v 1.8 2000/01/22 11:46:11 nakai Exp $
 #
 
-DISTNAME=	xpuzzletama-1.5b
+PORTNAME=	xpuzzletama
+PORTVERSION=	1.5b
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/os/linux/JG/JG-0.9.1/sources/
 

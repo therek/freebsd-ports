@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xbattle
-# Version required:     15.4.1
 # Date created:         6 Apr 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/games/xbattle/Makefile,v 1.5 1999/08/25 06:04:42 obrien Exp $
+# $FreeBSD: ports/games/xbattle/Makefile,v 1.6 1999/10/01 18:42:06 cpiazza Exp $
 #
 
-DISTNAME=	xbattle-5.4.1
+PORTNAME=	xbattle
+PORTVERSION=	5.4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://cns-ftp.bu.edu/pub/xbattle/
 

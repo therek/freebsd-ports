@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xcubes
-# Version required:	5.5.2
 # Date created:		12 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xcubes/Makefile,v 1.9 2000/01/07 02:26:04 nakai Exp $
+# $FreeBSD: ports/games/xcubes/Makefile,v 1.10 2000/01/22 11:45:54 nakai Exp $
 #
 
-DISTNAME=	xcubes-5.5.2
+PORTNAME=	xcubes
+PORTVERSION=	5.5.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles

@@ -1,14 +1,14 @@
 # New ports collection makefile for:	xbaby
-# Version required:		1.2
 # Date created:			21 January 2000
 # Whom:				HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xbaby/Makefile,v 1.1 2000/01/29 05:08:04 steve Exp $
+# $FreeBSD: ports/games/xbaby/Makefile,v 1.2 2000/02/17 01:10:37 cpiazza Exp $
 #
 
-DISTNAME=	xbaby-pl2
+PORTNAME=	xbaby
+PORTVERSION=	pl2
 CATEGORIES=	games
-MASTER_SITES=  ftp://ftp.inria.fr/X/contrib-R5/games/
+MASTER_SITES=	ftp://ftp.inria.fr/X/contrib-R5/games/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	th@cis.ibaraki.ac.jp

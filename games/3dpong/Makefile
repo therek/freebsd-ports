@@ -1,15 +1,15 @@
 # New ports collection makefile for:	3dpong
-# Version required:			0.3
 # Date created:				10 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/3dpong/Makefile,v 1.6 1999/08/25 06:02:43 obrien Exp $
+# $FreeBSD: ports/games/3dpong/Makefile,v 1.7 2000/03/29 07:17:24 kris Exp $
 #
 
-DISTNAME=	3dpong.0.3
-PKGNAME=	3dpong-0.3
+PORTNAME=	3dpong
+PORTVERSION=	0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/3dpong/
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

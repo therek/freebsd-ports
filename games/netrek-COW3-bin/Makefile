@@ -1,16 +1,15 @@
 # New ports collection makefile for:    netrek
-# Version required:     COW 3.00pl0
 # Date created:         15 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.2 1999/08/25 06:04:07 obrien Exp $
+# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.3 1999/08/31 06:44:20 mharo Exp $
 #
 
-DISTNAME=	COW.3.00pl0.FreeBSD
-PKGNAME=	netrek-COW-3.00p0
+PORTNAME=	netrek-COW
+PORTVERSION=	3.00.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://bigbang.astro.indiana.edu/pub/netrek/COW/COW-bin/
-EXTRACT_SUFX=	.gz
+DISTFILES=	COW.3.00pl0.FreeBSD.gz
 
 MAINTAINER=	dburr@FreeBSD.org
 
@@ -20,7 +19,7 @@ NO_WRKSUBDIR=		YES
 
 do-extract:
 	${MKDIR} ${WRKDIR}
-	${GUNZIP_CMD} < ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} > ${WRKDIR}/netrek
+	${GUNZIP_CMD} < ${DISTDIR}/${DISTFILES} > ${WRKDIR}/netrek
 
 do-install:
 	${INSTALL} -c -o root -g wheel -m 555 ${WRKDIR}/netrek ${PREFIX}/bin

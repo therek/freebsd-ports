@@ -1,18 +1,18 @@
 # New ports collection makefile for:	nethack
-# Version required:	3.2.3
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack/Makefile,v 1.22 1999/08/31 06:44:17 mharo Exp $
+# $FreeBSD: ports/games/nethack/Makefile,v 1.23 2000/01/05 03:06:10 cpiazza Exp $
 #
 
-DISTNAME=	nethack-3.2.2
-PKGNAME=	nethack-3.2.3
+PORTNAME=	nethack
+PORTVERSION=	3.2.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/oldver/3.2.2/src/ \
 		ftp://ftp.wtower.com/nethack/sources/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	nethack
+DISTNAME=	nethack-3.2.2
 
 PATCH_SITES=	ftp://ftp.nethack.org/pub/nethack/oldver/3.2.3/src/
 PATCHFILES=	nh-3.2.2-3.2.3.diff

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    ptkei
-# Version required:                     1.10
 # Date created:                         26 October 1999
 # Whom:                                 Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/ptkei/Makefile,v 1.1.1.1 1999/11/26 19:18:53 steve Exp $
 #
 
-DISTNAME=	ptkei-1.10
+PORTNAME=	ptkei
+PORTVERSION=	1.10
 CATEGORIES=	games
 MASTER_SITES=	http://www.cse.buffalo.edu/~koconnor/ptkei/download/
 

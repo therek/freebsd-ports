@@ -1,15 +1,15 @@
 # New ports collection makefile for:		qcc
-# Version required:				1.01
 # Date created:					October 25th 1996
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/qcc/Makefile,v 1.5 1999/08/25 06:04:19 obrien Exp $
+# $FreeBSD: ports/games/qcc/Makefile,v 1.6 1999/08/31 06:44:22 mharo Exp $
 #
 
-DISTNAME=	qcc
-PKGNAME=	qcc-1.01
+PORTNAME=	qcc
+PORTVERSION=	1.01
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/source/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jfitz@freebsd.org
 

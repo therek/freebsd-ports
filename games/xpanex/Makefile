@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xpanex
-# Version required:			5.5.2
 # Date created:				27 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xpanex/Makefile,v 1.6 2000/03/29 07:17:45 kris Exp $
+# $FreeBSD: ports/games/xpanex/Makefile,v 1.7 2000/03/31 07:39:09 mharo Exp $
 #
 
-DISTNAME=	xpanex-5.5.2
+PORTNAME=	xpanex
+PORTVERSION=	5.5.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles

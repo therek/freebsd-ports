@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xmastermind
-# Version required:			0.1
 # Date created:				23 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xmastermind/Makefile,v 1.9 1999/08/25 06:05:31 obrien Exp $
+# $FreeBSD: ports/games/xmastermind/Makefile,v 1.10 2000/03/29 07:17:41 kris Exp $
 #
 
-DISTNAME=		xmastermind-0.1
+PORTNAME=		xmastermind
+PORTVERSION=		0.1
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy

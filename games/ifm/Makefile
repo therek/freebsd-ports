@@ -2,10 +2,10 @@
 # Date created:				Mon Oct 12 12:32:07 EDT 1998
 # Whom:					Dave Chapeskie <dchapes@ddm.on.ca>
 #
-# $FreeBSD: ports/games/ifm/Makefile,v 1.4 1999/11/28 18:31:08 steve Exp $
+# $FreeBSD: ports/games/ifm/Makefile,v 1.5 2000/04/14 06:53:15 mharo Exp $
 #
 
-PKGNAME=	ifm
+PORTNAME=	ifm
 PORTVERSION=	4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.gmd.de/if-archive/mapping-tools/

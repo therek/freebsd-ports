@@ -1,15 +1,15 @@
 # New ports collection makefile for:	KnightCap
-# Version required:			3.5
 # Date created:				10 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/KnightCap/Makefile,v 1.8 2000/03/20 23:25:06 jseger Exp $
+# $FreeBSD: ports/games/KnightCap/Makefile,v 1.9 2000/03/29 07:17:36 kris Exp $
 #
 
-DISTNAME=	KnightCap-3.5
-PKGNAME=	knightcap-3.5
+PORTNAME=	knightcap
+PORTVERSION=	3.5
 CATEGORIES=	games
 MASTER_SITES=	ftp://samba.anu.edu.au/pub/KnightCap/
+DISTNAME=	KnightCap-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

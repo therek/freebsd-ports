@@ -2,10 +2,10 @@
 # Date created:         27. April 1996
 # Whom:                 Ronald Kuehn <kuehn@rz.tu-clausthal.de>
 #
-# $FreeBSD: ports/games/imaze/Makefile,v 1.17 1999/08/27 21:13:55 mharo Exp $
+# $FreeBSD: ports/games/imaze/Makefile,v 1.18 2000/04/14 06:53:16 mharo Exp $
 #
 
-PKGNAME=	imaze
+PORTNAME=	imaze
 PORTVERSION=	1.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/games/imaze/ \

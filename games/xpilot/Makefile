@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xpilot
-# Version required:	4.1.0
 # Date created:         18 July 1995
 # Whom:                 jmacd
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpilot/Makefile,v 1.18 1999/08/25 06:05:54 obrien Exp $
 #
 
-DISTNAME=       xpilot-4.1.0
+PORTNAME=       xpilot
+PORTVERSION=	4.1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/ \
 		${MASTER_SITE_XCONTRIB}

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	xscrabble
-# Version required:	1.0
 # Date created:		27 July 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xscrabble/Makefile,v 1.9 2000/01/24 06:00:57 steve Exp $
+# $FreeBSD: ports/games/xscrabble/Makefile,v 1.10 2000/02/08 09:26:25 peter Exp $
 #
 
-DISTNAME=	xscrabble
-PKGNAME=	xscrabble-1.0
+PORTNAME=	xscrabble
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.belgarath.demon.co.uk/programs/ \
 		http://people.FreeBSD.org/~mph/distfiles/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

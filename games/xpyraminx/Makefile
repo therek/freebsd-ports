@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xpyraminx
-# Version required:			5.5.2
 # Date created:				26 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xpyraminx/Makefile,v 1.6 2000/03/29 07:17:46 kris Exp $
+# $FreeBSD: ports/games/xpyraminx/Makefile,v 1.7 2000/03/31 07:41:39 mharo Exp $
 #
 
-DISTNAME=	xpyraminx-5.5.2
+PORTNAME=	xpyraminx
+PORTVERSION=	5.5.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xbl
-# Version required:	1.0j
 # Date created:		May 25 1997
 # Whom:			pgs (original)
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xbl/Makefile,v 1.7 1999/08/25 06:04:45 obrien Exp $
 #
 
-DISTNAME=	xbl-1.0j
+PORTNAME=	xbl
+PORTVERSION=	1.0j
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp710.univ-lyon1.fr/pub/xbl/
 EXTRACT_SUFX=	.tar.Z

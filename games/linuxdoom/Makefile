@@ -1,16 +1,16 @@
 # New ports collection makefile for:    linux doom
-# Version required:	1.8
 # Date created:         Mon Dec  9 09:42:37 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.12 1999/08/28 02:17:10 mharo Exp $
+# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.13 2000/02/28 08:33:33 asami Exp $
 #
 
-DISTNAME=	doom-1.8
-PKGNAME=	linuxdoom-1.8
+PORTNAME=	linuxdoom
+PORTVERSION=	1.8
 CATEGORIES=	games linux
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/doom
+DISTNAME=	doom-${PORTVERSION}
 DISTFILES=	linux-doom-1.8.tar.gz musserver.tgz smooth-joystick4doom.tgz
 
 MAINTAINER=	erich@FreeBSD.org

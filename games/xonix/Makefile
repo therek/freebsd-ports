@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xonix
-# Version required:	1.4
 # Date created:		3 May 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xonix/Makefile,v 1.8 1999/08/25 06:05:47 obrien Exp $
+# $FreeBSD: ports/games/xonix/Makefile,v 1.9 2000/02/19 19:38:01 joerg Exp $
 #
 
-DISTNAME=	xonix-1.4
+PORTNAME=	xonix
+PORTVERSION=	1.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 

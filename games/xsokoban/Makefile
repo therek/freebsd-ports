@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xsokoban
-# Version required:	3.3c
 # Date created:		16 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xsokoban/Makefile,v 1.11 2000/01/07 02:26:40 nakai Exp $
+# $FreeBSD: ports/games/xsokoban/Makefile,v 1.12 2000/01/22 11:46:18 nakai Exp $
 #
 
-DISTNAME=	xsokoban-3.3c
+PORTNAME=	xsokoban
+PORTVERSION=	3.3c
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.pmg.lcs.mit.edu/pub/xsokoban/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:    uox3
-# Version required:     0.69.02
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.9 1999/10/07 04:29:15 dburr Exp $
+# $FreeBSD: ports/games/uox3/Makefile,v 1.10 2000/02/27 23:12:05 steve Exp $
 #
 
-DISTNAME=	uox3v6902-linux
-PKGNAME=	uox3-0.69.02
+PORTNAME=	uox3
+PORTVERSION=	0.69.02
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.borg-cube.com/pub/uox3/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} tqpsworld${EXTRACT_SUFX}
+DISTNAME=	uox3v6902-linux
 
 MAINTAINER=	dburr@FreeBSD.org
 

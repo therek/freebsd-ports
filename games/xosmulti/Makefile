@@ -1,15 +1,15 @@
 # ports collection makefile for:   xosmulti
-# Version required:    1.00
 # Date created:        17 February 1999
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/xosmulti/Makefile,v 1.2 1999/08/25 06:05:49 obrien Exp $
+# $FreeBSD: ports/games/xosmulti/Makefile,v 1.3 1999/08/31 06:44:47 mharo Exp $
 #
 
-DISTNAME=	xosmulti_1.00_tar
-PKGNAME=	xosmulti-1.00
+PORTNAME=	xosmulti
+PORTVERSION=	1.00
 CATEGORIES=	games
 MASTER_SITES=	http://www01.u-page.so-net.ne.jp/ka2/nakanita/multi/
+DISTNAME=	${PORTNAME}_${PORTVERSION}_tar
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	flathill@FreeBSD.org

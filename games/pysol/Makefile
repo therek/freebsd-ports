@@ -1,12 +1,12 @@
 # New ports collection makefile for:    PySol
-# Version required:     3.40
 # Date created:         11 September 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/pysol/Makefile,v 1.24 2000/02/15 12:46:33 tg Exp $
+# $FreeBSD: ports/games/pysol/Makefile,v 1.25 2000/04/05 08:35:44 tg Exp $
 #
 
-DISTNAME=       pysol-3.40
+PORTNAME=       pysol
+PORTVERSION=	3.40
 CATEGORIES=	games
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CARDSETS}${EXTRACT_SUFX}

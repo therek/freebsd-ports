@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mindfocus
-# Version required:    0.86.1
 # Date created:        3 December 1998
 # Whom:                Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/mindfocus/Makefile,v 1.2 1999/08/25 06:04:01 obrien Exp $
 #
 
-DISTNAME=	mindfocus-0.86.1
+PORTNAME=	mindfocus
+PORTVERSION=	0.86.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.tk.xaxon.ne.jp/~toyoshim/mf/files/
 DISTFILES=	mindfocus-0.86.1.tar.gz mindfocus-data1.tar.gz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	quakeserver
-# Version required:			0.991
 # Date created:				October 26th 1996
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/quakeserver/Makefile,v 1.20 1999/08/31 06:44:23 mharo Exp $
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.21 2000/03/30 21:04:28 mharo Exp $
 #
 
-DISTNAME=	quakeserver-1.0
+PORTNAME=	quakeserver
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/quake/planetquake/threewave/unix/ \
 		ftp://ftp.idsoftware.com/idstuff/quake/

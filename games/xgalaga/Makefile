@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xgalaga
-# Version required:	2.0
 # Date created:		27 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xgalaga/Makefile,v 1.13 1999/08/31 06:44:40 mharo Exp $
+# $FreeBSD: ports/games/xgalaga/Makefile,v 1.14 1999/09/25 17:23:31 steve Exp $
 #
 
-DISTNAME=	xgalaga-2.0
+PORTNAME=	xgalaga
+PORTVERSION=	2.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games

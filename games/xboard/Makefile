@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xboard
-# Version required:     4.0.7
 # Date created:         5 Jan 1997
 # Whom:                 xaa@stack.nl
 #
-# $FreeBSD: ports/games/xboard/Makefile,v 1.21 2000/01/08 01:39:36 ade Exp $
+# $FreeBSD: ports/games/xboard/Makefile,v 1.22 2000/03/08 16:53:22 jedgar Exp $
 #
 
-DISTNAME=       xboard-4.0.7
+PORTNAME=       xboard
+PORTVERSION=	4.0.7
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.gnu.org/gnu/xboard/ \
 		http://www.research.compaq.com/SRC/personal/Tim_Mann/xboard/

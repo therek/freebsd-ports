@@ -1,12 +1,12 @@
 # New ports collection makefile for:   xteddy
-# Version required:    1.0
 # Date created:        3 June 1998
 # Whom:                Eckart "Isegrim" Hofmann
 #
-# $FreeBSD: ports/games/xteddy/Makefile,v 1.6 1999/08/25 06:06:19 obrien Exp $
+# $FreeBSD: ports/games/xteddy/Makefile,v 1.7 2000/03/20 22:30:05 mharo Exp $
 #
 
-DISTNAME=	xteddy-1.0
+PORTNAME=	xteddy
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.leo.org/pub/comp/usenet/comp.sources.x/xteddy/
 

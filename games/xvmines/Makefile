@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xvmines
-# Version required:			1.0
 # Date created:				18 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvmines/Makefile,v 1.7 2000/03/29 07:17:17 kris Exp $
+# $FreeBSD: ports/games/xvmines/Makefile,v 1.8 2000/04/01 01:02:30 mharo Exp $
 #
 
-DISTNAME=	xvmines-1.0
+PORTNAME=	xvmines
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.csd.uch.gr/pub/X11/games/ \
 		ftp://ftp.x.org/R5contrib/ \

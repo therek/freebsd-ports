@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xlaby
-# Version required:			2.0.1
 # Date created:				3 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlaby/Makefile,v 1.5 2000/03/29 07:17:12 kris Exp $
+# $FreeBSD: ports/games/xlaby/Makefile,v 1.6 2000/03/29 09:01:51 will Exp $
 #
 
-DISTNAME=		xlaby-2.0.1
+PORTNAME=		xlaby
+PORTVERSION=		2.0.1
 CATEGORIES=		games
 MASTER_SITES=		http://www.eleves.ens.fr:8080/home/madore/ \
 			${MASTER_SITE_SUNSITE}

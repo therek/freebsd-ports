@@ -3,14 +3,15 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpipeman/Makefile,v 1.12 1999/08/25 06:05:55 obrien Exp $
 #
 
-DISTNAME=       xpipeman
-PKGNAME=        xpipeman-1.0
+PORTNAME=       xpipeman
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
+DISTNAME=       ${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jseger@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xmlink
-# Version required:			5.5.2
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xmlink/Makefile,v 1.4 2000/03/29 07:17:55 kris Exp $
+# $FreeBSD: ports/games/xmlink/Makefile,v 1.5 2000/03/31 07:24:01 mharo Exp $
 #
 
-DISTNAME=	xmlink-5.5.2
+PORTNAME=	xmlink
+PORTVERSION=	5.5.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles

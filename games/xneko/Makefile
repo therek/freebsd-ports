@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xneko
-# Version required:	4.4BSD-Lite
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/games/xneko/Makefile,v 1.10 1999/08/25 06:05:43 obrien Exp $
+# $FreeBSD: ports/games/xneko/Makefile,v 1.11 1999/08/31 06:44:46 mharo Exp $
 #
 
-DISTNAME=	xneko
-PKGNAME=	xneko-4.4
+PORTNAME=	xneko
+PORTVERSION=	4.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/games/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	markm@FreeBSD.org
 

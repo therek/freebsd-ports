@@ -1,22 +1,20 @@
 # New ports collection makefile for:   games/pmars
-# Version required:    pmars v0.8
 # Date created:        15 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/pmars/Makefile,v 1.3 1999/08/25 06:04:15 obrien Exp $
+# $FreeBSD: ports/games/pmars/Makefile,v 1.4 1999/11/12 21:04:54 jim Exp $
 #
 
-DISTNAME=	pmars08s
-PKGNAME=	pmars-0.8
+PORTNAME=	pmars
+PORTVERSION=	0.8
 CATEGORIES=	games
 MASTER_SITES=	http://www.koth.org/pmars/ \
 		http://www.giovannelli.it/~gmarco/files/
-EXTRACT_SUFX=	.tar.Z
+DISTFILES=	pmars08s.tar.Z
 
 MAINTAINER=	gmarco@giovannelli.it
 
 USE_XLIB=	yes
-NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	pmars
 MAN6=		pmars.6

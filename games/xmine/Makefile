@@ -3,14 +3,15 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xmine/Makefile,v 1.18 1999/08/25 06:05:35 obrien Exp $
 #
 
-DISTNAME=	xmine-1.0.3-Xaw
-PKGNAME=	xmine-1.0.3
+PORTNAME=	xmine
+PORTVERSION=	1.0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sw.ru/pub/x11/ \
 		${MASTER_SITE_LOCAL}
+DISTNAME=	${PKGNAME}-Xaw
 
 MAINTAINER=	joerg@FreeBSD.org
 

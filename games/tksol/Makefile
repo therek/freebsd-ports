@@ -1,12 +1,12 @@
 # New ports collection makefile for:    tksol
-# Version required:     1.0
 # Date created:         26 June 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tksol/Makefile,v 1.15 1999/08/31 06:44:29 mharo Exp $
+# $FreeBSD: ports/games/tksol/Makefile,v 1.16 1999/11/28 18:32:19 steve Exp $
 #
 
-DISTNAME=       tksol-1.0
+PORTNAME=       tksol
+PORTVERSION=	1.0
 CATEGORIES=	games tk82
 MASTER_SITES=	ftp://ftp.cs.umd.edu/pub/misc_software/tksol/
 EXTRACT_SUFX=	.tar.Z

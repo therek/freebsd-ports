@@ -1,16 +1,16 @@
 # New ports collection makefile for:	3Dc
-# Version required:			0.8.1
 # Date created:				2 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/3dc/Makefile,v 1.9 1999/08/25 06:02:42 obrien Exp $
+# $FreeBSD: ports/games/3dc/Makefile,v 1.10 2000/03/29 07:17:33 kris Exp $
 #
 
-DISTNAME=		3Dc-0.8.1
-PKGNAME=		3dc-0.8.1
+PORTNAME=		3dc
+PORTVERSION=		0.8.1
 CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
+DISTNAME=		3Dc-${PORTVERSION}
 
 MAINTAINER=		ports@FreeBSD.org
 

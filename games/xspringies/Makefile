@@ -1,12 +1,12 @@
 # Ports collection makefile for:	xspringies
-# Version required:			1.1
 # Date created:				12 January 1997
 # Whom:					jkh
 #
-# $FreeBSD: ports/games/xspringies/Makefile,v 1.3 1999/08/25 06:06:18 obrien Exp $
+# $FreeBSD: ports/games/xspringies/Makefile,v 1.4 1999/08/31 06:44:51 mharo Exp $
 #
 
-DISTNAME=	xspringies-1.1
+PORTNAME=	xspringies
+PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	http://aixpdslib.seas.ucla.edu/pub/xspringies/RISC/3.2/src/
 DISTFILES=	xspringies.1.1.tar.Z

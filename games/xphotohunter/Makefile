@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xphotohunter
-# Version required:	1.4
 # Date created:		12 Aug 1999
 # Whom:			clive
 #
-# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.4 1999/10/10 23:24:42 steve Exp $
+# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.5 2000/03/19 03:10:20 foxfair Exp $
 #
 
-DISTNAME=	xphotohunter-1.4
+PORTNAME=	xphotohunter
+PORTVERSION=	1.4
 CATEGORIES=	games
 MASTER_SITES=	http://www.oz.nthu.edu.tw/~u860905/Xphotohunter/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xsoldier
-# Version required:	0.96
 # Date created:		22 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xsoldier/Makefile,v 1.9 1999/08/25 06:06:16 obrien Exp $
+# $FreeBSD: ports/games/xsoldier/Makefile,v 1.10 2000/01/07 02:26:44 nakai Exp $
 #
 
-DISTNAME=	xsoldier-0.96
+PORTNAME=	xsoldier
+PORTVERSION=	0.96
 CATEGORIES=	games
 MASTER_SITES=	http://www.surfline.ne.jp/hachi/xsoldier/
 

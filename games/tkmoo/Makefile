@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tkMOO
-# Version required:	0.3.23
 # Date created:		20 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/tkmoo/Makefile,v 1.1 2000/02/13 02:03:25 imura Exp $
+# $FreeBSD: ports/games/tkmoo/Makefile,v 1.2 2000/03/22 01:59:11 will Exp $
 #
 
-DISTNAME=	tkMOO-light-0.3.23
-PKGNAME=	tkmoo-0.3.23
+PORTNAME=	tkmoo
+PORTVERSION=	0.3.23
 CATEGORIES=	games tk82
 MASTER_SITES=	http://www.awns.com/tkMOO-light/Source/
+DISTNAME=	tkMOO-light-${PORTVERSION}
 
 MAINTAINER=	will@FreeBSD.org
 

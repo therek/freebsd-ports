@@ -1,12 +1,12 @@
 # New ports collection makefile for: xpat2
-# Version required:	1.06
 # Date created:		5 March 1997
 # Whom:			Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpat2/Makefile,v 1.10 1999/08/25 06:05:53 obrien Exp $
 #
 
-DISTNAME=	xpat2-1.06
+PORTNAME=	xpat2
+PORTVERSION=	1.06
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/solitaires

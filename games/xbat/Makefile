@@ -1,15 +1,15 @@
 # New ports collection makefile for:   xbat
-# Version required:    1.11
 # Date created:        30 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xbat/Makefile,v 1.5 1999/08/25 06:04:41 obrien Exp $
+# $FreeBSD: ports/games/xbat/Makefile,v 1.6 2000/01/07 02:26:00 nakai Exp $
 #
 
-DISTNAME=	xev111
-PKGNAME=	xbat-1.11
+PORTNAME=	xbat
+PORTVERSION=	1.11
 CATEGORIES=	games
 MASTER_SITES=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/Xbat/
+DISTNAME=	xev111
 
 MAINTAINER=	nakai@FreeBSD.org
 

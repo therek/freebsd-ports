@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xtris
-# Version required:     1.15
 # Date created:         24. Sep 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/games/xtris/Makefile,v 1.4 1999/12/27 05:22:53 sumikawa Exp $
+# $FreeBSD: ports/games/xtris/Makefile,v 1.5 2000/01/24 01:35:40 sumikawa Exp $
 #
 
-DISTNAME=       xtris-1.15
+PORTNAME=       xtris
+PORTVERSION=	1.15
 CATEGORIES=	games ipv6
 MASTER_SITES=	http://www.iagora.com/~espel/xtris/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   xshisen
-# Version required:           1.36
 # Date created:               9 Oct 1996
 # Whom:                 Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xshisen/Makefile,v 1.14 1999/11/24 07:20:03 nakai Exp $
+# $FreeBSD: ports/games/xshisen/Makefile,v 1.15 2000/03/09 12:46:31 nakai Exp $
 #
 
-DISTNAME=	xshisen-1.36
+PORTNAME=	xshisen
+PORTVERSION=	1.36
 CATEGORIES=	games
 MASTER_SITES=	http://www.techfirm.co.jp/~masaoki/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   xtet42
-# Version required:    2.21
 # Date created:        14 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/xtet42/Makefile,v 1.4 1999/11/12 21:04:56 jim Exp $
+# $FreeBSD: ports/games/xtet42/Makefile,v 1.5 2000/03/09 07:11:24 kris Exp $
 #
 
-DISTNAME= 	xtet42-2.21
+PORTNAME= 	xtet42
+PORTVERSION=	2.21
 CATEGORIES=	games
 MASTER_SITES=	http://www.pvv.ntnu.no/~oyvindmo/xtet42/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xlines
-# Version required:			1.0
 # Date created:				11 February 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlines/Makefile,v 1.8 1999/08/25 06:05:29 obrien Exp $
+# $FreeBSD: ports/games/xlines/Makefile,v 1.9 2000/03/29 07:17:11 kris Exp $
 #
 
-DISTNAME=	xlines
-PKGNAME=	xlines-1.0
+PORTNAME=	xlines
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://risq.belcaf.minsk.by/pub/genie/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
