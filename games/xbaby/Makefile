@@ -2,7 +2,7 @@
 # Date created:			21 January 2000
 # Whom:				HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xbaby/Makefile,v 1.2 2000/02/17 01:10:37 cpiazza Exp $
+# $FreeBSD: ports/games/xbaby/Makefile,v 1.3 2000/04/14 12:26:57 asami Exp $
 #
 
 PORTNAME=	xbaby
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.inria.fr/X/contrib-R5/games/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	th@cis.ibaraki.ac.jp
+MAINTAINER=	cbc06942@pop06.odn.ne.jp
 
 USE_IMAKE=	yes
 
