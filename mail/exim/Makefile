@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.55 2000/12/21 08:02:23 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.56 2000/12/21 08:56:52 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -85,7 +85,7 @@ SEDLIST+=	-e 's,XX_LDAP_[^ ]*_XX,,' \
 .endif
 
 .if defined(WITH_MYSQL)
-LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 SEDLIST+=	-e 's,XX_MYSQL_LIBS_XX,-L${PREFIX}/lib/mysql -lmysqlclient,' \
 		-e 's,XX_MYSQL_INCLUDE_XX,-I${PREFIX}/include/mysql,' \
 		-e 's,^\# LOOKUP_MYSQL,LOOKUP_MYSQL,'

@@ -2,7 +2,7 @@
 # Date created:			18 May 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/teapop/Makefile,v 1.4 2000/12/04 05:50:25 jim Exp $
+# $FreeBSD: ports/mail/teapop/Makefile,v 1.5 2000/12/22 17:58:48 jim Exp $
 #
 
 PORTNAME=	teapop
@@ -18,7 +18,7 @@ LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 .endif
 
 .if defined(WITH_MYSQL)
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 .endif
 
 GNU_CONFIGURE=	yes

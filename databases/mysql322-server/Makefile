@@ -2,7 +2,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.89 2001/01/07 14:51:48 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.90 2001/01/21 11:49:48 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -16,6 +16,8 @@ MASTER_SITES=	http://www.wipol.uni-bonn.de/MySQL/Downloads/MySQL-3.22/ \
 DISTNAME=	mysql-${PORTVERSION}
 
 MAINTAINER=	dirk@FreeBSD.org
+
+FORBIDDEN=	'Use mysql323-{client,server} instead.'
 
 SLAVEDIRS=	databases/mysql322-client
 MASTERPORTNAME=	mysql-server

@@ -2,7 +2,7 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.11 2000/10/13 20:23:05 ade Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.12 2000/11/13 12:45:25 demon Exp $
 #
 
 PORTNAME=	udmsearch
@@ -35,7 +35,7 @@ CONFIGURE_ARGS+=	--with-msql=${LOCALBASE}
 .else
 # default to mysql
 
-LIB_DEPENDS=		mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=		mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 CONFIGURE_ARGS+=	--with-mysql=${LOCALBASE}
 
 .if !defined(WITH_MYSQL)

@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.31 2000/10/12 19:59:19 jedgar Exp $
+# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.32 2001/01/01 10:14:58 will Exp $
 #
 
 PORTNAME=	Mysql-modules
@@ -18,7 +18,7 @@ MAINTAINER=	jedgar@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Data/ShowTable.pm:${PORTSDIR}/devel/p5-Data-ShowTable \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI
 RUN_DEPENDS=	${BUILD_DEPENDS}
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 CONFIGURE_ARGS=	PREFIX=${PREFIX} CC="${CC}" CCFLAGS="${CFLAGS}" \
 		--noprompt --mysql-install --nomsql-install

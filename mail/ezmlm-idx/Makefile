@@ -2,7 +2,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.11 2000/10/08 02:19:07 asami Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.12 2000/10/08 10:21:57 asami Exp $
 #
 
 PORTNAME=	ezmlm-idx
@@ -36,7 +36,7 @@ RUN_DEPENDS=	${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
 # If WITH_MYSQL is defined, build with MySQL extensions
 .if defined(WITH_MYSQL)
 ALL_TARGET=	it ${LANGUAGE} mysql
-LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 .else
 ALL_TARGET=	it ${LANGUAGE}
 .endif

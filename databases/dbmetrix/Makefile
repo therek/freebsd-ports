@@ -2,7 +2,7 @@
 # Date created:                Tue Sep  5 15:30:00 PDT 2000
 # Whom:                        Joseph Scott <joseph@randomnetworks.com>
 #
-# $FreeBSD: ports/databases/dbmetrix/Makefile,v 1.1 2000/09/19 18:19:19 ade Exp $
+# $FreeBSD: ports/databases/dbmetrix/Makefile,v 1.2 2000/10/05 06:36:03 reg Exp $
 #
 
 PORTNAME=	dbmetrix
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.tamos.net/pub/dbMetrix/ \
 
 MAINTAINER=	joseph@randomnetworks.com
 
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 

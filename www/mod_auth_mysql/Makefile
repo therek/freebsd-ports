@@ -2,7 +2,7 @@
 # Date created:		2000/05/19
 # Whom:			jim@thehouselys.net
 #
-# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.5 2000/10/05 21:23:36 jeh Exp $
+# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.6 2001/01/16 17:32:57 sobomax Exp $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	2.20
@@ -14,7 +14,7 @@ MASTER_SITES=	http://bourbon.netvision.net.il/mysql/mod_auth_mysql/ \
 MAINTAINER=	jeh@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/${AP_PORT}
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 RUN_DEPENDS=	${LOCALBASE}/sbin/${AP_TARGET}:${PORTSDIR}/www/${AP_PORT}
 
 .include <bsd.port.pre.mk>

@@ -2,7 +2,7 @@
 # Date created:		19 Jan 2001
 # Whom:			nbm
 #
-# $FreeBSD: ports/databases/phpmyadmin/Makefile,v 1.1 2001/01/19 12:53:37 nbm Exp $
+# $FreeBSD: ports/databases/phpmyadmin/Makefile,v 1.2 2001/01/19 14:51:11 nbm Exp $
 #
 
 PORTNAME=	phpmyadmin
@@ -13,7 +13,7 @@ DISTNAME=	phpMyAdmin_${PORTVERSION}
 
 MAINTAINER=	nbm@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/mysql/libmysqlclient.so:${PORTSDIR}/databases/mysql322-client
+RUN_DEPENDS=	${LOCALBASE}/lib/mysql/libmysqlclient.so:${PORTSDIR}/databases/mysql323-client
 .if defined(WITH_PHP4)
 RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4
 .else

@@ -2,7 +2,7 @@
 # Date created:				24 August 1999
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.6 2000/09/18 21:44:42 ade Exp $
+# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.7 2001/01/16 17:30:12 sobomax Exp $
 #
 
 PORTNAME=	tcl-sql
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mi@aldan.algebra.com
 
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 RUN_DEPENDS=	${TCL_VERSION:S/tcl/tclsh/}:${PORTSDIR}/lang/${TCL_NODOT}
 
 TCL_VERSION?=	tcl8.3	# Only this needs changing to switch TCL-version

@@ -2,7 +2,7 @@
 # Date created:				20th July 2000
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD: ports/databases/mysql++/Makefile,v 1.2 2000/07/21 05:12:16 will Exp $
+# $FreeBSD: ports/databases/mysql++/Makefile,v 1.3 2000/08/01 23:28:34 jedgar Exp $
 #
 
 PORTNAME=	mysql++
@@ -13,7 +13,7 @@ MASTER_SITES=	http://gd.tuwien.ac.at/db/mysql/mysql++/ \
 
 MAINTAINER=	mico@bsd.hu
 
-LIB_DEPENDS=	mysqlclient:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient:${PORTSDIR}/databases/mysql323-client
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS} -D_FIX_FOR_BSD_ "

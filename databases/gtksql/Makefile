@@ -2,7 +2,7 @@
 # Date created:				19 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/gtksql/Makefile,v 1.9 2000/10/05 06:36:05 reg Exp $
+# $FreeBSD: ports/databases/gtksql/Makefile,v 1.10 2000/11/08 04:47:33 murray Exp $
 #
 
 PORTNAME=	gtksql
@@ -24,7 +24,7 @@ USE_GTK=	yes
 .if defined(WITH_MYSQL) || (exists(${LOCALBASE}/lib/mysql/libmysqlclient.a) \
      && !defined(WITHOUT_MYSQL))
 HAVE_MYSQL=	yes
-LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 .endif
 .if defined(WITH_PGSQL) || (exists(${LOCALBASE}/lib/libpq.a) \
      && !defined(WITHOUT_PGSQL))

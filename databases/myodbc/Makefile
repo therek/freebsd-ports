@@ -2,7 +2,7 @@
 # Date created:				24 Oct 2000
 # Whom:					ebakke@trolltech.com
 #
-# $FreeBSD: ports/databases/myodbc/Makefile,v 1.1 2000/05/30 00:12:25 will Exp $
+# $FreeBSD: ports/databases/myodbc/Makefile,v 1.2 2000/10/25 13:11:09 kevlo Exp $
 #
 
 PORTNAME=	MyODBC
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.sunet.se/pub/unix/databases/relational/mysql/Downloads/M
 MAINTAINER=	ebakke@trolltech.com
 
 LIB_DEPENDS=	iodbc.2:${PORTSDIR}/databases/libiodbc \
-		mysqlclient.6:${PORTSDIR}/databases/mysql323-client
+		mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-mysql-libs=${PREFIX}/lib/mysql \

@@ -2,7 +2,7 @@
 # Date created:		19 Jan 2001
 # Whom:			mkptools
 #
-# $FreeBSD: ports/misc/achievo/Makefile,v 1.1 2001/01/19 13:35:59 nbm Exp $
+# $FreeBSD: ports/misc/achievo/Makefile,v 1.2 2001/01/19 14:49:30 nbm Exp $
 #
 
 PORTNAME=	achievo
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}-stable-${PORTVERSION}
 MAINTAINER=	nbm@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3 \
-	${LOCALBASE}/lib/mysql/libmysqlclient.so:${PORTSDIR}/databases/mysql322-client
+	${LOCALBASE}/lib/mysql/libmysqlclient.so:${PORTSDIR}/databases/mysql323-client
 
 WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION}
 NO_BUILD=	YES

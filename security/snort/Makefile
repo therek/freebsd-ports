@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.13 2000/08/03 06:11:34 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.14 2000/12/31 15:07:49 dirk Exp $
 #
 
 PORTNAME=	snort
@@ -24,7 +24,7 @@ LDFLAGS+=	"-L${LOCALBASE}/lib"
 .endif
 
 .if defined(WITH_MYSQL)
-LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 CONFIGURE_ARGS+=--with-mysql-includes=${LOCALBASE}/include/mysql \
 		--with-mysql-libraries=${LOCALBASE}/lib/mysql
 .endif

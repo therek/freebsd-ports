@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.6 2000/09/07 16:16:56 knu Exp $
+# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.7 2000/09/26 08:01:56 knu Exp $
 #
 
 PORTNAME=	mysql
@@ -15,7 +15,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes

@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.36 2000/12/19 05:37:09 dwhite Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.37 2001/01/19 01:11:07 kuriyama Exp $
 #
 
 PORTNAME=	postfix
@@ -62,7 +62,7 @@ MAKEFILEFLAGS+=	CC="${CC}"
 MAKEFILEFLAGS+=	OPT="${CFLAGS}"
 
 .if defined(WITH_MYSQL)
-BUILD_DEPENDS+=		${LOCALBASE}/lib/mysql/libmysqlclient.a:${PORTSDIR}/databases/mysql322-client
+BUILD_DEPENDS+=		${LOCALBASE}/lib/mysql/libmysqlclient.a:${PORTSDIR}/databases/mysql323-client
 POSTFIX_CCARGS+=	-DHAS_MYSQL -I${LOCALBASE}/include/mysql
 POSTFIX_AUXLIBS+=	${LOCALBASE}/lib/mysql/libmysqlclient.a -lm
 .endif

@@ -2,7 +2,7 @@
 # Date created:				02 October 1999
 # Whom:					jedgar@fxp.org
 #
-# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.2 2000/04/08 22:48:22 mharo Exp $
+# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.3 2000/07/07 20:46:05 jedgar Exp $
 #
 
 PORTNAME=	dbf2mysql
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 NO_WRKSUBDIR=	yes
 

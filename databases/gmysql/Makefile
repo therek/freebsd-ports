@@ -2,7 +2,7 @@
 # Date created:		Sun Nov 15 22:07:12 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD: ports/databases/gmysql/Makefile,v 1.17 2000/04/08 22:48:27 mharo Exp $
+# $FreeBSD: ports/databases/gmysql/Makefile,v 1.18 2000/10/05 06:36:04 reg Exp $
 #
 
 PORTNAME=	gmysql
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.loth.demon.co.uk/gmysql/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 USE_GTK=	yes
 GNU_CONFIGURE=	yes
