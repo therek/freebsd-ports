@@ -2,10 +2,10 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/w3/Makefile,v 1.9 1999/08/25 05:27:47 obrien Exp $
+# $FreeBSD: ports/japanese/w3/Makefile,v 1.10 2000/04/13 08:33:33 knu Exp $
 #
 
-CATEGORIES=	japanese www elisp
+CATEGORIES=	japanese
 
 # Don't RUN_DEPENDS on mule because we don't know which version the
 # user would want.  We can't omit the BUILD_DEPENDS because it needs

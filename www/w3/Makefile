@@ -2,12 +2,12 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/w3/Makefile,v 1.9 1999/08/31 02:43:22 peter Exp $
+# $FreeBSD: ports/www/w3/Makefile,v 1.10 2000/04/10 00:07:06 cpiazza Exp $
 #
 
 PORTNAME=	w3
 PORTVERSION= 	2.2.26
-CATEGORIES?=	www elisp
+CATEGORIES+=	www elisp
 MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/network/WWW/w3/ \
 		ftp://ftp.cs.indiana.edu/pub/elisp/w3/
 
@@ -37,11 +37,11 @@ INFOFILE=	w3.info
 post-build:
 .for f in DEINSTALL INSTALL dot.emacs user-install
 	@${SED} -e "s,%VERSION%,${VERSION},g" \
- 		-e "s,%PREFIX%,${PREFIX},g" \
- 		-e "s,%INFODIR%,${INFODIR},g" \
- 		-e "s,%ELISPDIR%,${ELISPDIR},g" \
+		-e "s,%PREFIX%,${PREFIX},g" \
+		-e "s,%INFODIR%,${INFODIR},g" \
+		-e "s,%ELISPDIR%,${ELISPDIR},g" \
 		-e "s,%INFOFILE%,${INFOFILE},g" \
- 		-e "s,%ADDIR%,${ADDIR},g" \
+		-e "s,%ADDIR%,${ADDIR},g" \
 		-e "s,%TOUCH%,${TOUCH},g" \
 		-e "s,%MKDIR%,${MKDIR},g" \
 		-e "s,%SAMPLEDIR%,${SAMPLEDIR},g" \
