@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.219 2001/05/02 05:54:59 dburr Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.220 2001/05/05 23:38:03 nakai Exp $
 #
 
     SUBDIR += abook
@@ -87,6 +87,7 @@
     SUBDIR += muttzilla
     SUBDIR += nail
     SUBDIR += namg
+    SUBDIR += nbsmtp
     SUBDIR += newmail
     SUBDIR += nmh
     SUBDIR += nullmailer
