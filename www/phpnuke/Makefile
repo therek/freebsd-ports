@@ -2,7 +2,7 @@
 # Date created:				10 April 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/phpnuke/Makefile,v 1.1 2001/04/10 20:56:15 will Exp $
 #
 
 PORTNAME=	phpnuke
@@ -13,6 +13,13 @@ MASTER_SITE_SUBDIR=	phpnuke
 DISTNAME=	PHP-Nuke-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
+.if defined(WITH_PHP4)
+RUN_DEPENDS+=	$(LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4
+.else
+RUN_DEPENDS+=	$(LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3
+.endif
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
