@@ -2,13 +2,14 @@
 # Date created:        17 February 1999
 # Whom:                wagner@luthien.in-berlin.de
 #
-# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.7 2000/02/08 09:27:14 peter Exp $
+# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.8 2000/04/12 06:19:19 obrien Exp $
 #
 
 PORTNAME=	m3gdb
 PORTVERSION=	4.17
 CATEGORIES=	lang devel
-MASTER_SITES=	http://people.FreeBSD.org/~jdp/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=jdp/m3gdb
 DISTFILES=	m3gdb-4.17.tar.gz \
 		m3gdb-fbsd-4.17.tar.gz
 
