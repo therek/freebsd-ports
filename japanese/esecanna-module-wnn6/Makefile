@@ -2,12 +2,12 @@
 # Date created:		26 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-module-wnn6/Makefile,v 1.12 2000/09/09 10:25:11 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	esecanna-module-wnn6
 PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese
 MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 		${MASTER_SITE_LOCAL}
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	wnn6.1:${PORTSDIR}/japanese/Wnn6-lib
+LIB_DEPENDS=	wnn6.2:${PORTSDIR}/japanese/Wnn6-lib
 RUN_DEPENDS=	${LOCALBASE}/sbin/esecannaserver:${PORTSDIR}/japanese/esecanna
 
 USE_AUTOCONF=	yes
