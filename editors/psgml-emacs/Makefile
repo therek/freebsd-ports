@@ -2,7 +2,7 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.10 2000/05/11 14:35:47 shige Exp $
+# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.11 2000/07/12 15:57:07 shige Exp $
 #
 
 PORTNAME=	psgml
@@ -16,7 +16,6 @@ MAINTAINER?=	shige@FreeBSD.org
 # distfile version
 PSGML_VER=		1.2.1
 PSGML_STARTUPEL=	psgml-startup.el
-CATALOG=		${LOCALBASE}/share/sgml/catalog
 
 SCRIPTS_ENV=		TARGETS="${PSGML_STARTUPEL}"
 PLIST_SUB=		PSGML_STARTUPEL=${PSGML_STARTUPEL}
@@ -44,11 +43,6 @@ CONFIGURE_ENV=	EMACS=${EMACS_CMD}
 	@${ECHO} "You must define EMACS_PORT_NAME."
 	@${FALSE}
 .endif
-
-#
-# DTD catalogs
-#
-RUN_DEPENDS+=	${CATALOG}:${PORTSDIR}/textproc/dtd-catalogs
 
 pre-configure:
 	(cd ${WRKSRC} ; \
