@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/sparc-rtems-gdb/Makefile,v 1.2 2000/09/21 14:18:22 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdb
@@ -11,4 +11,7 @@ MAINTAINER=	jeh@FreeBSD.org
 
 LCLTARGET=	sparc-rtems
 CONFIGURE_ARGS+=	--verbose --enable-sim
+
+MAN1=		${LCLTARGET}-run.1
+
 .include "${.CURDIR}/../i386-rtems-gdb/Makefile"
