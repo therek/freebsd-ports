@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.315 2000/11/30 15:05:19 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.316 2000/11/30 15:06:17 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -25,6 +25,7 @@
     SUBDIR += csrd
     SUBDIR += dbskkd-cdb
     SUBDIR += deepforest
+    SUBDIR += devil-fpw
     SUBDIR += diclookup-mule
     SUBDIR += dserver
     SUBDIR += dvi2dvi
