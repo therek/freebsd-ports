@@ -2,7 +2,7 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.39 2001/04/15 21:18:08 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xscreensaver
@@ -44,6 +44,9 @@ post-patch:
 	@ ${CP} ${WRKSRC}/configure ${WRKSRC}/configure.Patched
 	@ ${SED} -e 's#-lpthread#${PTHREAD_LIBS}#g' \
 		${WRKSRC}/configure.Patched > ${WRKSRC}/configure
+.for file in pulsar.c extrusion.c extrusion.c
+	@${PERL} -pi -e "s/malloc.h/stdlib.h/g" ${WRKSRC}/hacks/glx/${file}
+.endfor
 
 .include <bsd.port.pre.mk>
 
