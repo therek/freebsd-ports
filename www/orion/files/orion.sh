@@ -2,9 +2,9 @@
 # -*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# Orion startup script.
+# %%APP_TITLE%% startup script.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/orion/files/orion.sh,v 1.4 2002/03/29 12:54:15 znerd Exp $
 #
 
 
