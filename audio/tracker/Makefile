@@ -3,7 +3,7 @@
 # Date created:         2 Oct 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/audio/tracker/Makefile,v 1.32 1999/08/25 04:36:15 obrien Exp $
+# $FreeBSD: ports/audio/tracker/Makefile,v 1.33 1999/08/31 06:40:45 mharo Exp $
 #
 
 DISTNAME=       tracker-5.3
@@ -26,7 +26,7 @@ MAKE_FLAGS=     MACHINE=freebsd CC=$(CC) INSTALL="$(INSTALL)" \
 post-install:
 	cd ${WRKSRC}/Docs && \
 	makeinfo --no-split tracker.texinfo -o tracker.info && \
-	gzip -f tracker.info && \
+	${GZIP_CMD} tracker.info && \
 	$(INSTALL_MAN) tracker.info.gz ${PREFIX}/info && \
 	${RM} -f tracker.info.gz *.orig
 	-${MKDIR} ${PREFIX}/share/doc/tracker

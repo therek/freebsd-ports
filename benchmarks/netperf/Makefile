@@ -3,7 +3,7 @@
 # Date created:		19 July 1996
 # Whom:			koshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.8 1999/08/25 04:45:45 obrien Exp $
 #
 
 DISTNAME=	netperf-2.1pl3
@@ -25,7 +25,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/netperf
 	${MINSTALL} ${WRKSRC}/netperf.ps ${PREFIX}/share/doc/netperf
-	gzip -9nf ${PREFIX}/share/doc/netperf/netperf.ps
+	${GZIP_CMD} ${PREFIX}/share/doc/netperf/netperf.ps
 .endif
 
 .include <bsd.port.mk>

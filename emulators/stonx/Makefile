@@ -3,7 +3,7 @@
 # Date created:         3rd August, 1997
 # Whom:                 Tobias Reifenberger <tr@freebsd.mayn.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/stonx/Makefile,v 1.3 1999/08/25 05:49:41 obrien Exp $
 #
 
 DISTNAME=       STonX-0.6.7-epsilon
@@ -64,7 +64,7 @@ do-install:
 	@${ECHO_MSG} "===> Installing fonts"
 .for f in ${FONTS}
 	@${INSTALL_DATA} ${WRKSRC}/data/$f ${FNTDIR}
-	@gzip -f ${FNTDIR}/$f
+	@${GZIP_CMD} ${FNTDIR}/$f
 .endfor
 	@mkfontdir ${FNTDIR}
 

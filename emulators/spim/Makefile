@@ -4,7 +4,7 @@
 # Date created:         Mon Oct 28, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.7 1999/08/25 05:49:38 obrien Exp $
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.8 1999/08/28 01:57:12 mharo Exp $
 #
 
 DISTNAME=	spim5.9
@@ -42,7 +42,7 @@ post-install:
 		${PREFIX}/share/doc/spim
 	${INSTALL_DATA} ${WRKSRC}/Documentation/cycle.ps  \
 		${PREFIX}/share/doc/spim
-	gzip -9nf ${PREFIX}/share/doc/spim/*.ps
+	${GZIP_CMD} ${PREFIX}/share/doc/spim/*.ps
 .endif
 
 .include <bsd.port.mk>

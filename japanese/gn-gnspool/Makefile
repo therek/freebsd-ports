@@ -3,7 +3,7 @@
 # Date created:				14 Feb. 1997
 # Whom:					Kiroh HARADA <kiroh@kh.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.11 1999/08/25 05:24:11 obrien Exp $
 #
 
 DISTNAME=	gn-1.40
@@ -38,7 +38,7 @@ post-install:
 	@${CP} ${FILESDIR}/Changes.FreeBSD.port ${PREFIX}/share/doc/gn-gnspool
 .endif
 .if !defined(NOMANCOMPRESS)
-	@gzip -9nf ${PREFIX}/man/ja/cat1/gn.1 \
+	@${GZIP_CMD} ${PREFIX}/man/ja/cat1/gn.1 \
 	${PREFIX}/man/ja/cat1/gnspool.1 ${PREFIX}/man/ja/cat1/gnloops.1
 .endif
 	@${MKDIR} ${PREFIX}/share/examples/gn-gnspool

@@ -3,7 +3,7 @@
 # Date created:        30 August 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/xtide/Makefile,v 1.8 1999/08/25 04:22:48 obrien Exp $
 #
 
 DISTNAME=	xtide-1.6.2
@@ -23,7 +23,7 @@ MAN1=		xtide.1
 MANCOMPRESSED=	no
 
 post-extract:
-	@gzip -dc ${DISTDIR}/harmonics.gz > ${WRKSRC}/harmonics
+	@${GZCAT} ${DISTDIR}/harmonics.gz > ${WRKSRC}/harmonics
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xtide ${PREFIX}/bin
