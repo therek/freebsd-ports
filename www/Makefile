@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.400 2001/08/27 23:45:07 sf Exp $
+# $FreeBSD: ports/www/Makefile,v 1.401 2001/08/31 11:42:13 jedgar Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -269,6 +269,7 @@
     SUBDIR += smb2www
     SUBDIR += smb_auth
     SUBDIR += snarf
+    SUBDIR += sqmgrlog
     SUBDIR += squid22
     SUBDIR += squid23
     SUBDIR += squid24
