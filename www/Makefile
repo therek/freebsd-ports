@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.210 2000/04/03 22:08:19 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.211 2000/04/15 17:31:46 sada Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -147,6 +147,7 @@
     SUBDIR += wcol
     SUBDIR += web500gw
     SUBDIR += webalizer
+    SUBDIR += webalizer2
     SUBDIR += webcopy
     SUBDIR += webcrawl
     SUBDIR += webfs
