@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.39 2001/09/21 05:43:55 knu Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.40 2001/09/22 06:42:18 lioux Exp $
 #
 
     SUBDIR += SETIsupport
@@ -18,6 +18,7 @@
     SUBDIR += p5-Astro-Sunrise
     SUBDIR += p5-GPS
     SUBDIR += p5-Geo-METAR
+    SUBDIR += p5-SETI-Stats
     SUBDIR += pyweather
     SUBDIR += rmap
     SUBDIR += saoimage
