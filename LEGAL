@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.239 2002/02/26 03:16:53 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.240 2002/02/27 03:11:20 ijliao Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -39,6 +39,7 @@ bzip-*			ports/archivers/bzip	Some algorithms used may
 						use could render you liable 
 						to unfriendly legal action.
 cap60/*			ports/net/cap		Don't sell for profit
+cc010911rh71.tar	ports/lang/icc		No redistribution allowed
 cfs-*			ports/security/cfs	Crypto; export-controlled
 classes111_01.zip	ports/databases/jdbc-oracle816  This software is 
 						under license and export 
