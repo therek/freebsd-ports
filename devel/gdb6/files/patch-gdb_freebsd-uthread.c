@@ -1,10 +1,9 @@
-
-$FreeBSD$
+$FreeBSD: ports/devel/gdb52/files/patch-gdb_freebsd-uthread.c,v 1.1 2002/06/06 03:56:34 mp Exp $
 
 --- gdb/freebsd-uthread.c.orig	Sat May 25 13:05:56 2002
 +++ gdb/freebsd-uthread.c	Sat May 25 13:09:09 2002
 @@ -0,0 +1,915 @@
-+/* $FreeBSD: src/gnu/usr.bin/binutils/gdb/freebsd-uthread.c,v 1.7 2002/02/23 19:28:01 deischen Exp $ */
++/* $FreeBSD: ports/devel/gdb52/files/patch-gdb_freebsd-uthread.c,v 1.1 2002/06/06 03:56:34 mp Exp $ */
 +/* Low level interface for debugging FreeBSD user threads for GDB, the GNU debugger.
 +   Copyright 1996, 1999 Free Software Foundation, Inc.
 +
