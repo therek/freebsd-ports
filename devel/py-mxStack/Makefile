@@ -2,7 +2,7 @@
 # Date created:		14 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxStack/Makefile,v 1.4 2000/04/11 21:30:14 mharo Exp $
+# $FreeBSD: ports/devel/py-mxStack/Makefile,v 1.5 2000/06/16 09:06:49 tg Exp $
 #
 
 PORTNAME=	mxStack
@@ -32,9 +32,13 @@ post-extract:
 do-configure:
 	@(cd ${WRKSRC} && ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
 
-post-install:
+do-install:
 	@${MKDIR} ${STACKDIR}
 	${INSTALL_DATA} ${WRKDIR}/Stack/*.py ${STACKDIR}
+	@${MKDIR} ${STACKDIR}/mxStack
+.for file in __init__.py mxStack.so
+	${INSTALL_DATA} ${WRKDIR}/Stack/mxStack/${file} ${STACKDIR}/mxStack
+.endfor
 	@${PREFIX}/bin/python ${PYTHONSCRIPTDIR}/compileall.py ${STACKDIR}
 	@${PREFIX}/bin/python -O ${PYTHONSCRIPTDIR}/compileall.py ${STACKDIR}
 .if !defined(NOPORTDOCS)
