@@ -1,17 +1,18 @@
 # New ports collection makefile for:	VJE-Delta 3.0 Trial
-# Version required:     3.0 trial
 # Date created:		14 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.5 2000/02/02 16:49:37 flathill Exp $
+# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.6 2000/02/12 16:31:48 flathill Exp $
 #
 
-DISTNAME=	vje-delta-3.0t
-PKGNAME=	ja-vje-trial-3.0
+PORTNAME=	vje
+PORTVERSION=	3.0
+PKGNAMESUFFIX=	-trial
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.vacs.co.jp/pub/unix/vje30/FreeBSD/	\
 		http://www.green.machida.ne.jp/vacs/unix/FreeBSD/
-EXTRACT_SUFX=	-${DISTOBJFORMAT}.tgz
+EXTRACT_SUFX=	.tgz
+DISTNAME=	${PORTNAME}-delta-${PORTVERSION}t-${DISTOBJFORMAT}
 
 MAINTAINER=	knu@idaemons.org
 

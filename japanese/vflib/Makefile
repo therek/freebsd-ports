@@ -1,16 +1,17 @@
 # New ports collection makefile for:	vflib + FreeType
-# Version required:	2.24 Patchlevel 2
 # Date created:		10 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vflib/Makefile,v 1.22 1999/11/25 03:41:51 jseger Exp $
+# $FreeBSD: ports/japanese/vflib/Makefile,v 1.23 1999/12/27 00:27:30 steve Exp $
 #
 
-DISTNAME=	VFlib2-2.24.2
-PKGNAME=	ja-vflib-2.24.2
+PORTNAME=	vflib
+PORTVERSION=	${VFLIB_VERSION}
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://gull.se.hiroshima-u.ac.jp/pub/TypeHack/
-DISTFILES=	VFlib2-2.24.2.tar.gz watanabe-vf.tar.Z
+DISTNAME=	VFlib2-${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		watanabe-vf.tar.Z
 
 MAINTAINER=	mita@jp.FreeBSD.org
 

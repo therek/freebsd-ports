@@ -1,17 +1,17 @@
 # New ports collection makefile for:	ja-zipcodes
-# Version required:	19980130
 # Date created:		5 Nov 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/zipcodes/Makefile,v 1.11 1999/08/25 05:28:01 obrien Exp $
 #
 
-DISTNAME=	ken_all
-PKGNAME=	ja-zipcodes-19980130
+PORTNAME=	zipcodes
+PORTVERSION=	19980130
 CATEGORIES=	japanese misc
 MASTER_SITES=	http://www.postal.mpt.go.jp/lzh/ \
 		http://freefall.freebsd.org/~itojun/distfiles/
 EXTRACT_SUFX=	.lzh
+DISTNAME=	ken_all
 
 MAINTAINER=	itojun@itojun.org
 

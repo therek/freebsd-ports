@@ -1,13 +1,12 @@
 # New ports collection makefile for:   XShodou
-# Version required:    1.11
 # Date created:        11 January 1999
 # Whom:                Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xshodou/Makefile,v 1.2 1999/08/25 05:27:59 obrien Exp $
 #
 
-DISTNAME=	xshodou-1.11
-PKGNAME=	ja-${DISTNAME}
+PORTNAME=	xshodou
+PORTVERSION=	1.11
 CATEGORIES=	japanese tk80
 MASTER_SITES=	http://wwwmiya.ee.kagu.sut.ac.jp/~sakai/
 

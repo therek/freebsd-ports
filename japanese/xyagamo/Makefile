@@ -1,12 +1,12 @@
 # New ports collection makefile for: xyagamo
-# Version required:	0.1
 # Date created:		5 Nov 1999
 # Whom:			Morita Shinya <shinmaru@dokidoki.ne.jp>
 #
-# $FreeBSD:$
+# $FreeBSD: ports/japanese/xyagamo/Makefile,v 1.1.1.1 1999/11/14 03:58:12 steve Exp $
 #
 
-DISTNAME=	xyagamo-0.1b
+PORTNAME=	xyagamo
+PORTVERSION=	0.1b
 CATEGORIES=	japanese games
 MASTER_SITES=	http://www.dokidoki.ne.jp/home2/shinmaru/mahjong/
 
