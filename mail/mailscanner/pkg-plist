@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/MailScanner/pkg-plist,v 1.4 2003/12/05 15:34:38 sergei Exp $
+@comment $FreeBSD: ports/mail/MailScanner/pkg-plist,v 1.5 2003/12/24 16:03:38 sergei Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -380,6 +380,7 @@ libexec/MailScanner/update_virus_scanners
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/README.FreeBSD.port
 %%PORTDOCS%%%%DOCSDIR%%/README.sql-logging
+%%PORTDOCS%%%%DOCSDIR%%/Sophos.install.freebsd
 %%PORTDOCS%%%%DOCSDIR%%/building.txt
 %%PORTDOCS%%%%DOCSDIR%%/donations.shtml
 %%PORTDOCS%%%%DOCSDIR%%/downloadgraphs.shtml
