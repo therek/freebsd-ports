@@ -3,7 +3,7 @@
 # Date created:        21 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/guileobjc/Makefile,v 1.8 1999/08/25 06:34:42 obrien Exp $
 #
 
 DISTNAME=	guileobjc-0.3.8
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/pub/personal/masata-y/gyve/fullkit/gyve-
 MAINTAINER=	nacai@iname.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libobjects.a:${PORTSDIR}/lang/libobjects
-LIB_DEPENDS=	guile.4:${PORTSDIR}/lang/guile
+LIB_DEPENDS=	guile.6:${PORTSDIR}/lang/guile
 
 BROKEN=		Doesn\'t work with the latest guile.
 

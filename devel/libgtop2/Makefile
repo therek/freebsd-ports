@@ -3,7 +3,7 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.23 1999/10/14 03:45:02 nakai Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.24 1999/10/26 04:16:13 nakai Exp $
 #
 
 DISTNAME=	libgtop-1.0.6
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	sources/libgtop
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
-		guile.4:${PORTSDIR}/lang/guile
+		guile.6:${PORTSDIR}/lang/guile
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 

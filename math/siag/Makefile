@@ -3,7 +3,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD: ports/math/siag/Makefile,v 1.20 1999/09/10 03:21:51 asami Exp $
+# $FreeBSD: ports/math/siag/Makefile,v 1.21 1999/09/11 00:46:39 asami Exp $
 #
 
 DISTNAME=	siag-3.1.18
@@ -25,7 +25,7 @@ GNU_CONFIGURE=	yes
 CPPFLAGS+=	-I${LOCALBASE}/include
 
 .if defined(GUILE)
-LIB_DEPENDS+=	guile.4:${PORTSDIR}/lang/guile
+LIB_DEPENDS+=	guile.6:${PORTSDIR}/lang/guile
 .endif
 
 .if !defined(NOGDBM)
