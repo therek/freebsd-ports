@@ -2,7 +2,7 @@
 # Date created:				16 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.11 2001/05/21 18:06:30 ade Exp $
+# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.12 2001/06/19 09:43:02 ade Exp $
 #
 
 PORTNAME=	gtranslator
@@ -32,5 +32,9 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+
+.if defined(PARALLEL_PACKAGE_BUILD)
+FORBIDDEN=	hang
+.endif
 
 .include <bsd.port.mk>
