@@ -2,7 +2,7 @@
 # Date created:		29 Sep 1999
 # Whom:			Andrew Stevenson <andrew@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/gpart/Makefile,v 1.4 2000/04/22 10:12:24 mharo Exp $
+# $FreeBSD: ports/sysutils/gpart/Makefile,v 1.5 2000/09/16 09:15:15 knu Exp $
 #
 
 PORTNAME=	gpart
@@ -18,7 +18,7 @@ USE_GMAKE=	yes
 MAN8=		gpart.8
 
 .if defined(WANT_STATIC)
-LDFLAGS=	-static
+MAKE_ARGS+= LDFLAGS=-static
 .endif
 
 .include <bsd.port.mk>
