@@ -2,7 +2,7 @@
 # Date created:		22 dec 2000
 # Whom:			The Anarcat <anarcat@tao.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/ecasound/Makefile,v 1.1 2000/12/26 05:52:15 will Exp $
 #
 
 PORTNAME=	ecasound
@@ -14,11 +14,30 @@ MASTER_SITE_SUBDIR=	ecawave
 
 MAINTAINER=	anarcat@tao.ca
 
-# RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123 \
-#		lame:${PORTSDIR}/audio/lame \
-#		mikmod:${PORTSDIR}/audio/mikmod
+.if defined(WITH_MPG123)
+RUN_DEPENDS+=	mpg123:${PORTSDIR}/audio/mpg123
+.endif
 
-# LIB_DEPENDS=	audiofile.0:${PORTSDIR}/audio/libaudiofile
+.if defined(WITH_LAME)
+RUN_DEPENDS+=	lame:${PORTSDIR}/audio/lame
+.endif
+
+.if defined(WITH_MIKMOD)
+RUN_DEPENDS+=	mikmod:${PORTSDIR}/audio/mikmod
+.endif
+
+.if defined(WITH_AUDIOFILE)
+LIB_DEPENDS+=  audiofile.0:${PORTSDIR}/audio/libaudiofile
+.else
+CONFIGURE_ARGS+= --disable-audiofile
+.endif
+
+.if defined(WITH_PYECASOUND)
+USE_PYTHON=    yes
+PLIST?=                ${PKGDIR}/pkg-plist.py
+.else
+CONFIGURE_ARGS+= --disable-pyecasound
+.endif
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
