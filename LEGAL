@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.339 2004/03/09 23:09:22 linimon Exp $
+# $FreeBSD: ports/LEGAL,v 1.340 2004/03/18 01:05:20 trevor Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -257,6 +257,8 @@ ORBacus			ports/devel/ORBacus	non commercial use only.
 openssl-*		ports/security/openssl	Crypto; export/import-controlled
 orion-*			ports/java/orion	Redistribution of binaries is not permitted
 otojiro*.txt		ports/japanese/otojiro-fpw The original dictionary is not free
+ovt			ports/science/ovt	Registration is needed to download the
+						tarball.
 Crypt-*			ports/security/p5-Crypt-*	Crypto; export-controlled
 perforce-*		ports/devel/perforce	Restricted distribution
 perltools		ports/java/perltools	No redistribution
