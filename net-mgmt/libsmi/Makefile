@@ -2,11 +2,11 @@
 # Date created:			Tue Jan 27 2000
 # Whom:				Marcin Cieslak <saper@system.pl>
 #
-# $FreeBSD: ports/net/libsmi/Makefile,v 1.3 2000/06/16 08:47:53 sobomax Exp $
+# $FreeBSD: ports/net/libsmi/Makefile,v 1.4 2000/06/16 21:51:47 asami Exp $
 #
 
 PORTNAME=	libsmi
-PORTVERSION=	0.1.8
+PORTVERSION=	0.2.6
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/libsmi/
 
@@ -21,8 +21,7 @@ INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 MIBDIR=		${PREFIX}/share/smi/mibs
 CONFIGURE_ARGS+=--with-data-dir=${PREFIX}/share/smi \
-		--with-mibdir=${MIBDIR} \
-		--with-smipath=${MIBDIR}/ietf:${MIBDIR}/iana:${MIBDIR}/irtf:${MIBDIR}/site
+		--with-mibdir=${MIBDIR}
 
 MAN1=	smiquery.1 smilint.1 smidump.1 smistrip.1
 MAN3=	libsmi.3 smi_config.3 smi_module.3 smi_macro.3 smi_node.3 smi_type.3
