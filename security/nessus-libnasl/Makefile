@@ -2,7 +2,7 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.19 2001/05/24 11:08:04 olgeni Exp $
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.20 2001/08/08 13:38:13 olgeni Exp $
 #
 
 PORTNAME=	libnasl
@@ -27,6 +27,7 @@ DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/libnasl
 
 USE_LIBTOOL=	YES
+INSTALLS_SHLIB=	YES
 
 MAN1=		nasl.1 nasl-config.1
 
