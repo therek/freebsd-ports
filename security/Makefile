@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.169 2001/03/04 04:37:01 ijliao Exp $
+# $FreeBSD: ports/security/Makefile,v 1.170 2001/03/05 06:57:39 ijliao Exp $
 #
 
     SUBDIR += aafid2
@@ -23,6 +23,7 @@
     SUBDIR += cryptopp
     SUBDIR += cyrus-sasl
     SUBDIR += ddos_scan
+    SUBDIR += digest
     SUBDIR += donkey
     SUBDIR += dsniff
     SUBDIR += fakebo
