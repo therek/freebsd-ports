@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.190 2001/05/27 17:22:38 dannyboy Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.191 2001/05/30 03:11:33 lioux Exp $
 #
     SUBDIR += yawho
 
@@ -138,6 +138,7 @@
     SUBDIR += symlinks
     SUBDIR += syslog-ng
     SUBDIR += tcplist
+    SUBDIR += timelimit
     SUBDIR += truncate
     SUBDIR += tua
     SUBDIR += ucspi-tcp
