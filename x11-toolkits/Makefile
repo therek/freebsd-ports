@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.143 2001/05/28 13:43:39 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.144 2001/06/23 06:53:33 olgeni Exp $
 #
 
     SUBDIR += FWF
@@ -21,6 +21,8 @@
     SUBDIR += gevas
     SUBDIR += gnome--
     SUBDIR += gnome-look
+    SUBDIR += gnustep-gui
+    SUBDIR += gnustep-xgps
     SUBDIR += gob
     SUBDIR += gtk--
     SUBDIR += gtk-Mac2-theme

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.571 2001/06/23 15:55:59 dwcjr Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.572 2001/06/25 15:37:11 iwasaki Exp $
 #
 
     SUBDIR += ElectricFence
@@ -145,6 +145,7 @@
     SUBDIR += gnomecrash
     SUBDIR += gnomevfs
     SUBDIR += gnustep
+    SUBDIR += gnustep-make
     SUBDIR += gpasm
     SUBDIR += gperf
     SUBDIR += gtgt
