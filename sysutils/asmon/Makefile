@@ -2,7 +2,7 @@
 # Date created:		27 Sep 1999
 # Whom:			jack
 #
-# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.5 2000/04/22 10:11:32 mharo Exp $
+# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.6 2000/06/23 13:14:37 sobomax Exp $
 #
 
 PORTNAME=	asmon
@@ -16,9 +16,6 @@ MAINTAINER=	jack@germanium.xtalwind.net
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} >= 400000
-BROKEN=	'Sorry, asmom can not yet handle 4.0+ new VM system interfaces'
-.endif
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
