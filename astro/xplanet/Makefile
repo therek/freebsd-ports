@@ -2,28 +2,34 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.8 2000/05/28 03:42:48 steve Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.9 2000/06/14 13:21:05 sobomax Exp $
 #
 
 PORTNAME=	xplanet
-PORTVERSION=	0.60
+PORTVERSION=	0.70
 CATEGORIES=	astro x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.radcyberzine.com/xglobe/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} depths_800.jpg
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		GL.14:${PORTSDIR}/graphics/Mesa3
-
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+		GL.14:${PORTSDIR}/graphics/Mesa3 \
+		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-map-extension=jpg
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib -lm"
+MAKE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib -lm"
 MAN1=		xplanet.1 xplanetbg.1
 
 .include <bsd.port.pre.mk>
