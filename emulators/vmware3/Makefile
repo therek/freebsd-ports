@@ -2,13 +2,12 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.14 2000/06/03 07:27:10 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.15 2000/06/19 18:02:58 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
-#PORTVERSION=	2.0.1.559	# 2.0.1 RC2
-PORTVERSION=	2.0.476
+PORTVERSION=	2.0.1.570
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		http://vmware-svca.www.conxion.com/software/ \
@@ -23,8 +22,7 @@ PATCH_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/ \
 		http://www.mindspring.com/~vsilyaev/vmware/files/ \
 		ftp://mirror.aarnet.edu.au/pub/vmware/freebsd/ \
 		http://mirror.aarnet.edu.au/pub/vmware/freebsd/
-#PATCHFILES=	vmmon-freebsd-0.95.1.tar.gz \
-PATCHFILES=	vmmon-freebsd-0.95.tar.gz \
+PATCHFILES=	vmmon-freebsd-0.95.1.tar.gz \
 		vmnet-freebsd-0.11.tar.gz
 
 # Feel free to post your questions/reports/suggestions on this port to
