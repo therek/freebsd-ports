@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.22 2001/03/10 19:49:24 will Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.23 2001/03/31 03:48:30 will Exp $
 #
 
     SUBDIR += bitchx
@@ -15,6 +15,8 @@
     SUBDIR += ircd-hybrid
     SUBDIR += iroffer
     SUBDIR += irssi
+    SUBDIR += liece-emacs20
+    SUBDIR += liece-xemacs21-mule
     SUBDIR += kvirc
     SUBDIR += muh
     SUBDIR += nethirc
