@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.327 2000/02/06 16:27:38 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.328 2000/02/21 01:59:45 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -667,7 +667,8 @@ MANCOMPRESSED?=	no
 .endif
 
 .if defined(USE_QT)
-LIB_DEPENDS+=	qt.2:${PORTSDIR}/x11-toolkits/qt142
+LIB_DEPENDS+=	qt.3:${PORTSDIR}/x11-toolkits/qt145
+USE_NEWGCC=	yes
 .endif
 
 .if defined(USE_QT2)
@@ -1317,7 +1318,7 @@ _MANPAGES:=	${_MANPAGES:S/$/.gz/}
 
 .if ${OSVERSION} >= 300000
 # You need an upgrade kit or make world newer than this
-BSDPORTMKVERSION=	19990501
+BSDPORTMKVERSION=	20000201
 .if exists(/var/db/port.mkversion)
 VERSIONFILE=	/var/db/port.mkversion
 .else
