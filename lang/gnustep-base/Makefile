@@ -2,7 +2,7 @@
 # Date created:         17 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnustep-base/Makefile,v 1.17 2001/04/07 18:03:56 ben Exp $
+# $FreeBSD: ports/lang/gnustep-base/Makefile,v 1.18 2001/06/26 11:59:01 tg Exp $
 #
 
 PORTNAME=	gnustep-base
@@ -15,6 +15,7 @@ MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/libobjc.so:${PORTSDIR}/lang/gnustep-objc
+LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 RUN_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/libobjc.so:${PORTSDIR}/lang/gnustep-objc
 
 .include <bsd.port.pre.mk>
