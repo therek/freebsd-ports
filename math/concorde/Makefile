@@ -2,7 +2,7 @@
 # Date created:				3 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/concorde/Makefile,v 1.1 2000/07/04 02:38:00 will Exp $
 #
 
 PORTNAME=	concorde
@@ -18,8 +18,18 @@ WRKSRC=		${WRKDIR}/concorde
 
 GNU_CONFIGURE=  yes
 
+INCFILES=	bigguy.h combs.h config.h consec1.h cut.h cuttree.h \
+		delaunay.h edgegen.h fmatch.h heldkarp.h kdtree.h \
+		linkern.h localcut.h lp.h machdefs.h macrorus.h mlinkern.h \
+		necklace.h pq.h pqsets.h profdata.h profrus.h tinytsp.h \
+		tsp.h util.h verify.h
+
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/concorde.a ${PREFIX}/lib/libconcorde.a
-	${INSTALL_DATA} ${WRKSRC}/concorde.h ${PREFIX}/include
+	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 755 ${PREFIX}/include/concorde
+	${INSTALL_DATA} ${WRKSRC}/concorde.h ${PREFIX}/include/concorde
+.for f in ${INCFILES}
+	${INSTALL_DATA} ${WRKSRC}/INCLUDE/${f} ${PREFIX}/include/concorde
+.endfor
 
 .include <bsd.port.mk>
