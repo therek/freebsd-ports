@@ -2,7 +2,7 @@
 # Date created:         15 August 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/textproc/latte/Makefile,v 1.4 2000/04/09 21:52:48 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	latte
@@ -13,7 +13,6 @@ MASTER_SITES=	http://www.latte.org/ \
 
 MAINTAINER=	dr@domix.de
 
-USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
 MAKE_FLAGS=	CONF_ARGS="--prefix=${PREFIX}"
 CONFIGURE_ARGS+=	--enable-shared

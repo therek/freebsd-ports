@@ -2,7 +2,7 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/arts++/Makefile,v 1.6 2001/07/06 10:31:20 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	arts++
@@ -16,7 +16,6 @@ MAINTAINER=	lyngbol@wheel.dk
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-USE_NEWGCC=	yes
 CONFIGURE_ARGS+=--enable-shared
 
 MANL=		artsportagg.l artsports.l artsprotos.l artsnets.l artsdump.l \

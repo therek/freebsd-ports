@@ -2,7 +2,7 @@
 # Date created:		26 June 1999
 # Whom:			Brian Buchanan <brian@CSUA.Berkeley.EDU>
 #
-# $FreeBSD: ports/x11-toolkits/plib/Makefile,v 1.11 2001/02/05 16:49:10 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	plib
@@ -14,7 +14,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-L${X11BASE}/lib ${PTHREAD_LIBS}"

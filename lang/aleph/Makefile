@@ -3,7 +3,7 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/aleph/Makefile,v 1.6 2001/07/07 22:01:59 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aleph
@@ -15,7 +15,6 @@ DISTNAME=	${PORTNAME}-src-${PORTVERSION:S,.,-,g}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
 MAKE_ARGS=	CC="${CXX}" LD="${CXX}" LK="${CXX}" OPTCCFLAGS="${CXXFLAGS}" \
 		DYNCCFLAGS="-fPIC -DPIC" DEBUGFLAGS="" DBGDEFINES="" \

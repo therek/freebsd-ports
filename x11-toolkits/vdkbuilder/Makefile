@@ -2,7 +2,7 @@
 # Date created:        29 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/vdkbuilder/Makefile,v 1.9 2000/10/05 07:22:50 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vdkbuilder
@@ -14,7 +14,6 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	vdk.3:${PORTSDIR}/x11-toolkits/vdk
 
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_GTK=	yes

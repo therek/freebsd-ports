@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq/Makefile.inc,v 1.3 2002/02/08 10:10:39 fjoe Exp $
+# $FreeBSD: ports/net/licq/Makefile.inc,v 1.4 2002/08/09 18:42:47 dinoex Exp $
 
 PKGNAMEPREFIX=		licq-
 LICQ_VER=		1.2.0a
@@ -19,7 +19,6 @@ MD5_FILE?=		${PORTSDIR}/net/licq/distinfo
 # USE_LIBTOOL doesn't work for these ports
 #USE_LIBTOOL=		yes
 USE_GMAKE=		yes
-USE_NEWGCC=		yes
 USE_BZIP2=		yes
 WRKSRC?=		${WRKDIR}/${DISTNAME}/plugins/${PORTNAME}-${PORTVERSION}
 PLIST_SUB+=		LICQ_DEVEL="@comment "
