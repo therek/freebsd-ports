@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.2 2004/01/21 10:01:54 krion Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.3 2004/02/04 04:27:04 marcus Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -78,7 +78,7 @@ _VERSION_net=	0
 _SUBDIR_net=	net
 _REQUIRES_net=	sdl
 
-_VERSION_sdl=	5
+_VERSION_sdl=	7
 _SUBDIR_sdl=	devel
 _LIB_sdl=		SDL-1.1
 _PORTDIR_sdl=	sdl12
