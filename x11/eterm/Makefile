@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.38 2001/09/23 11:00:35 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eterm
@@ -26,7 +26,8 @@ USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS?=--enable-trans --enable-utmp \
 		--enable-xim --with-theme-update \
-		--with-backspace=bs --without-terminfo
+		--with-backspace=bs --without-terminfo \
+		--enable-multi-charset
 
 MAN1=		Eterm.1
 
