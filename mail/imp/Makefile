@@ -3,7 +3,7 @@
 # Whom:				  Thierry Thomas (<thierry@thomas.as>)
 # N.B.: parts of this ports come from the Horde's port by NetBSD (jlam@netbsd.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/imp/Makefile,v 1.1 2001/08/17 17:29:28 ijliao Exp $
 #
 
 PORTNAME=	imp
@@ -78,7 +78,7 @@ PLIST_SUB=	HORDEDIR=${LHORDEDIR} IMPDIR=${LIMPDIR}
 HORDEDIR=	${PREFIX}/${LHORDEDIR}
 IMPDIR=		${PREFIX}/${LIMPDIR}
 
-pre-everything:
+pre-everything::
 .if !defined(WITHOUT_IMAPSERVER)
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "Press CTRL-C and define WITHOUT_IMAPSERVER"
