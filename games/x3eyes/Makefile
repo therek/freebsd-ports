@@ -2,13 +2,13 @@
 # Date created:		18 Aug 1999
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/x3eyes/Makefile,v 1.1 1999/12/25 19:21:13 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	x3eyes
 PORTVERSION=	1.0
 CATEGORIES=	games
-MASTER_SITES=	http://puma.cis.ibaraki.ac.jp/~th/pub/X11/
+MASTER_SITES=	http://puma.cis.ibaraki.ac.jp/pub/X11/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
