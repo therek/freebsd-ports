@@ -2,7 +2,7 @@
 # Date created:		31 December 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/textproc/gmat/Makefile,v 1.2 2001/01/11 03:37:02 grog Exp $
+# $FreeBSD: ports/textproc/gmat/Makefile,v 1.3 2001/01/26 07:06:31 grog Exp $
 #
 
 PORTNAME=	gmat
@@ -17,7 +17,7 @@ MAINTAINER=	grog
 RUN_DEPENDS=	${LOCALBASE}/bin/nsgmls:${PORTSDIR}/textproc/sp		\
 		${LOCALBASE}/bin/procmail:${PORTSDIR}/mail/procmail	\
 		${LOCALBASE}/share/sgml/docbook/3.1/docbook.dtd:${PORTSDIR}/textproc/docbook-310 \
-		${LOCALBASE}/bin/ghostview:${PORTSDIR}/print/ghostview
+		ghostview:${PORTSDIR}/print/ghostview
 
 post-install:
 	(cd ${WRKSRC}; tar cf - test) | (cd ${LOCALBASE}/share/gmat; tar xvf -)
