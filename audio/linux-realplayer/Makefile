@@ -2,7 +2,7 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.19 2001/03/20 20:27:57 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linux-realplayer
@@ -35,7 +35,7 @@ STRIP=
 IGNORE=		may not be automatically fetched due to licensing\
 		restrictions.  You MUST manually fetch the Linux RPM version after\
 		reading and agreeing to the license at:\
-		http://www.real.com/ \
+		http://scopes.real.com/real/player/unix/unix.html\
 		- once ${DISTFILES} has been downloaded, move it to\
 		${DISTDIR} and then restart this build.
 .endif
