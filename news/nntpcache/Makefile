@@ -3,13 +3,13 @@
 # Date created:		6 January 1997
 # Whom:			proff@suburbia.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/nntpcache/Makefile,v 1.15 1999/08/30 14:31:47 peter Exp $
 #
 
-DISTNAME=	nntpcache-2.3.2
+DISTNAME=	nntpcache-2.4.0b2
 CATEGORIES=	news
 MASTER_SITES=	ftp://nntpcache.org/pub/nntpcache/ \
-		ftp://ftp.ntnu.no/pub/unix/news/ \
+		ftp://ftp.ntnu.no/pub/unix/news/nntpcache/ \
 		ftp://ftp.nethelp.no/pub/unix/news/ \
 		ftp://suburbia.net/pub/nntpcache/
 
