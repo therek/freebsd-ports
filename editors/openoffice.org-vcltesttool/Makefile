@@ -3,7 +3,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.3 1999/12/10 16:28:35 obrien Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.4 1999/12/14 23:14:28 asami Exp $
 #
 
 DISTNAME=	so51a_lnx_01
@@ -47,7 +47,7 @@ IGNORE="Please manually download ${DISTNAME}${EXTRACT_SUFX} from http://www.sun.
 .if defined(USE_CDROM)
 do-extract:
 	@${MKDIR} ${WRKSRC}/office51
-	@cd ${WRKSRC}/office51 && ${LN} -s -v /cdrom/linux/office51/* .
+	@cd ${WRKSRC}/office51 && ${LN} -s /cdrom/linux/office51/* .
 .endif
 
 post-extract:
