@@ -3,7 +3,7 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.35 1999/11/25 09:03:32 jkoshy Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.36 1999/12/06 20:14:38 billf Exp $
 #
 
 DISTNAME=       zsh-3.0.7
@@ -25,6 +25,17 @@ PLIST_SUB=	ZSH_VERSION=${DISTNAME:S/zsh-//}
 
 # If you want to build a static binary, uncomment the following line
 #CONFIGURE_ENV+=	"LDFLAGS=-static"
+
+post-build:
+# Fix ".so" macro problem by using "soelim" command.
+	@(cd ${WRKSRC} ; \
+		${LN} -sf ./Doc man1 ; \
+		if [ ! -f ./man1/zshall.1.source ]; then \
+			${MV} -f ./man1/zshall.1 ./man1/zshall.1.source ; \
+		fi ; \
+		${RM} -f ./man1/zshall.1 ; \
+		/usr/bin/soelim ./man1/zshall.1.source > ./man1/zshall.1 ; \
+	)
 
 post-install:
 	@install-info ${PREFIX}/info/zsh.info ${PREFIX}/info/dir
