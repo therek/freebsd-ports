@@ -3,7 +3,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.15 1999/10/27 20:53:32 billf Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.16 1999/10/28 08:06:00 mharo Exp $
 #
 
 DISTNAME=	mtr-0.41
@@ -11,9 +11,20 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
 
+.if defined(USE_INET6)
+PATCHFILES=	mtr-041-v6-20000113.diff.gz
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCH_DIST_STRIP=	-p1
+.endif
+
 MAINTAINER=	billf@FreeBSD.org
 
 HAS_CONFIGURE=	yes
+.if defined(USE_INET6)
+CONFIGURE_ARGS+=--enable-ipv6
+.else
+CONFIGURE_ARGS+=--disable-ipv6
+.endif
 
 MAN8=	mtr.8
 
@@ -23,7 +34,7 @@ pre-patch:
 	@${ECHO} "If you want to compile with GTK support,"
 	@${ECHO} "hit Ctrl-C right now and use \"make USE_GTK=yes\" "
 	@${ECHO} ""
-CONFIGURE_ARGS=--with-gtk-prefix=/nopath
+CONFIGURE_ARGS+=--with-gtk-prefix=/nopath
 .else
 USE_XLIB=	yes
 LIB_DEPENDS=    gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
