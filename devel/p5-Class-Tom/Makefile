@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Class-Tom/Makefile,v 1.1 2001/01/01 09:32:01 will Exp $
 #
 
 PORTNAME=	Class-Tom
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${SITE_PERL}/Devel/Symdump.pm:${PORTSDIR}/devel/p5-Devel-Symdump \
 		${SITE_PERL}/${PERL_ARCH}/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
 
-SITE_PERL=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/
+SITE_PERL=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
