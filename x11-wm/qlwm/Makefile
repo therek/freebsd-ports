@@ -4,11 +4,11 @@
 # based on the OpenBSD port by Marc Espie <espie@openbsd.org>
 #
 # $OpenBSD: Makefile,v 1.2 2000/10/20 12:27:06 espie Exp $
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/qlwm/Makefile,v 1.2 2001/04/03 08:14:32 will Exp $
 #
 
 PORTNAME=	qlwm
-PORTVERSION=	2.1
+PORTVERSION=	2.3
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.netcologne.de/~nc-lindenal/qlwm/
 
