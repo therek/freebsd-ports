@@ -2,13 +2,14 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.15 2000/04/13 19:59:23 cpiazza Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.16 2000/05/26 13:54:45 sobomax Exp $
 #
 
 PORTNAME=	balsa
 PORTVERSION= 	0.8.0
 CATEGORIES=	mail gnome
-MASTER_SITES=	ftp://ftp.balsa.net/pub/balsa/
+MASTER_SITES=	ftp://ftp.newton.cx/pub/balsa/ \
+		http://www.theochem.kth.se/~pawsa/balsa/
 
 MAINTAINER=	ports@FreeBSD.org
 
