@@ -3,7 +3,7 @@
 # Date created:                 Sun Aug  9 18:05:29 KST 1998
 # Whom:                         CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hlatexpsfonts-wansungstd/Makefile,v 1.5 1999/09/03 18:01:24 sada Exp $
 #
 
 DISTNAME=               HLaTeXpsfonts-wansung-0.98
@@ -33,7 +33,7 @@ HLATEX_PSFONTS_BASE     = pkmj.tar.bz2 pkgt.tar.bz2 \
 			  phsym.tar.bz2 ptaza.tar.bz2
 
 # it is a trick
-post-fetch:
+pre-extract:
 	${MKDIR} ${WRKDIR}
 
 # Installation according to readme.ks
