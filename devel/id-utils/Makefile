@@ -2,14 +2,13 @@
 # Date created:		22 Aug 1996
 # Whom:			pst@freebsd.org
 #
-# $FreeBSD: ports/devel/id-utils/Makefile,v 1.13 2001/01/01 10:15:00 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id-utils
-PORTVERSION=	3.2
+PORTVERSION=	3.2d
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	id-utils
+MASTER_SITES=	ftp://alpha.gnu.org/pub/gnu/
 
 MAINTAINER=	ports@FreeBSD.org
 
