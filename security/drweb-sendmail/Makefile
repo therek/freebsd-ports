@@ -2,8 +2,10 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.8 2001/08/25 11:40:57 ache Exp $
 #
+
+# WARNING: viruses in mail not detected with evaluation key!
 
 PORTNAME=	drweb_sendmail
 PORTVERSION=	4.25
