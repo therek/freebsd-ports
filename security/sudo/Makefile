@@ -3,10 +3,10 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.28 1999/12/22 17:53:38 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.29 2000/02/05 08:37:43 mharo Exp $
 #
 
-DISTNAME=	sudo-1.6.2p1
+DISTNAME=	sudo-1.6.2p3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/
 
@@ -20,6 +20,8 @@ CONFIGURE_ARGS=	--with-skey \
 		--with-ignore-dot \
 		--with-tty-tickets \
 		--with-env-editor \
+  		--with-insults \
+  		--with-all-insults \
 		--disable-root-sudo
 
 MAN5=		sudoers.5
