@@ -2,7 +2,7 @@
 # Date created:		20 August 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/eblook/Makefile,v 1.4 2000/04/11 14:13:10 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eblook
@@ -14,7 +14,7 @@ MAINTAINER=	shige@FreeBSD.org
 
 DOCDIR=		share/doc/eblook
 
-LIB_DEPENDS=    eb.3:${PORTSDIR}/japanese/eb
+LIB_DEPENDS=    eb.3:${PORTSDIR}/japanese/eb2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-eb-includes=${PREFIX}/include \
