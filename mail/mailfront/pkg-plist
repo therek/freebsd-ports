@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/mailfront/pkg-plist,v 1.3 2003/09/09 19:40:05 erwin Exp $
 bin/imapfront-auth
 bin/pop3front-auth
 bin/pop3front-maildir
@@ -14,8 +14,8 @@ bin/smtpfront-reject
 %%PORTDOCS%%%%DOCSDIR%%/imapfront.html
 %%PORTDOCS%%%%DOCSDIR%%/mailfront.html
 %%PORTDOCS%%%%DOCSDIR%%/mailrules.html
-%%PORTDOCS%%%%DOCSDIR%%/mailrules2.html
 %%PORTDOCS%%%%DOCSDIR%%/mailrulesx.html
+%%PORTDOCS%%%%DOCSDIR%%/patterns.html
 %%PORTDOCS%%%%DOCSDIR%%/pop3front.html
 %%PORTDOCS%%%%DOCSDIR%%/qmail-backend.html
 %%PORTDOCS%%%%DOCSDIR%%/qmail-validate.html
