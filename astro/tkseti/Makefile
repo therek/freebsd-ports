@@ -2,29 +2,30 @@
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.8 2000/04/08 22:01:55 mharo Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.9 2000/05/03 09:48:56 sheldonh Exp $
 #
 
 PORTNAME=	tkseti
-PORTVERSION=	2.12
-CATEGORIES=	astro tk82
+PORTVERSION=	3.04
+CATEGORIES=	astro tk83
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 
-MAINTAINER=	brett@peloton.runet.edu
+MAINTAINER=	petef@databits.net
 
-RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
+RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83 \
 		setiathome:${PORTSDIR}/astro/setiathome
 
 NO_BUILD=	yes
 
+MAN1=	tkseti.1
+
 do-install:
-	${MKDIR} ${PREFIX}/share/doc/tkseti
 	${INSTALL_SCRIPT} ${WRKSRC}/tkseti ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/tkseti.1 ${PREFIX}/man/man1
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/tkseti
 	${INSTALL_DATA}	${WRKSRC}/DOC ${PREFIX}/share/doc/tkseti/DOC
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/tkseti/README
-
-post-install:
-	@${ECHO} "Please read the documentation for tkseti located in"
-	@${ECHO} "${PREFIX}/share/doc/tkseti/DOC and ${PREFIX}/share/doc/tkseti/README."
+.endif
 
 .include <bsd.port.mk>
