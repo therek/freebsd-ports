@@ -2,7 +2,7 @@
 # Date created:		16 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.1 2001/08/17 08:16:49 wjv Exp $
+# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.2 2001/08/17 14:50:14 wjv Exp $
 #
 
 PORTNAME=	twisted
@@ -23,6 +23,10 @@ USE_PYTHON=	yes
 EXAMPLESDIR=	${PREFIX}/share/examples/twisted
 
 MAN1=		faucet.1 gnusto.1 im.1 mktap.1 twistd.1
+
+post-patch:
+	@ ${PERL} -pi.orig -e 's/from pyunit import/import/g' \
+	  ${WRKSRC}/bin/runtests ${WRKSRC}/twisted/test/*.py
 
 do-build:
 	@ cd ${WRKSRC} && ${PYTHON_CMD} setup.py build
