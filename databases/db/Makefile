@@ -2,13 +2,13 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/db/Makefile,v 1.21 2000/06/16 21:50:32 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	db
 PORTVERSION=	2.7.7
 CATEGORIES=	databases
-MASTER_SITES=	http://www.sleepycat.com/update/${PORTVERSION}/
+MASTER_SITES=	http://www.sleepycat.com/update/snapshot/
 
 MAINTAINER=	josh@ican.net
 
