@@ -3,7 +3,7 @@
 # Date created:			May 15, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/net/net-http/Makefile,v 1.1 2001/05/15 04:57:00 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	net-http
@@ -21,6 +21,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes
 
 do-install:
-	${CP} -R ${WRKSRC}/net ${LOCALBASE}/share/guile/1.4/net
+	${CP} -R ${WRKSRC}/net/ ${LOCALBASE}/share/guile/1.4.1/net/
 
 .include <bsd.port.mk>
