@@ -2,11 +2,11 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.19 2001/03/12 10:33:50 nbm Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.20 2001/05/07 12:18:57 jeh Exp $
 #
 
 PORTNAME=	emboss
-PORTVERSION=	1.12.0
+PORTVERSION=	1.13.1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.uk.embnet.org/pub/EMBOSS/ \
 		ftp://ftp.no.embnet.org/pub/EMBOSS/ \
@@ -42,6 +42,7 @@ MSE_VERSION=	0.0.4
 TOPO_VERSION=	0.1
 PHYLIP_VERSION=	3.573c
 DOC_DIRS=	doc/manuals doc/tutorials doc/programs/text doc/programs/html
+CONFIG_FILE=	${WRKSRC}/emboss/emboss.default.template
 
 .for app in EMNU MSE PHYLIP TOPO
 SCRIPTS_ENV+=	${app}_VERSION="${${app}_VERSION}"
@@ -104,8 +105,7 @@ post-install:
 	  ${MAKE_ARGS} ${INSTALL_TARGET})
 .endfor
 	@ ${PERL} -pe 's#%%PREFIX%%#${PREFIX}#' \
-	  ${WRKSRC}/emboss/acd/emboss.default > \
-	  ${PREFIX}/etc/emboss.default.sample && \
+	  ${CONFIG_FILE} > ${PREFIX}/etc/emboss.default.sample && \
 	  ${CHOWN} ${SHAREOWN}:${SHAREGRP} \
 	  ${PREFIX}/etc/emboss.default.sample
 .if !defined(BATCH)
