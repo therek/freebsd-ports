@@ -2,19 +2,19 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-QuickCheck/Makefile,v 1.10 1999/08/31 06:52:07 mharo Exp $
+# $FreeBSD: ports/www/p5-HTML-QuickCheck/Makefile,v 1.11 2000/04/10 00:06:29 cpiazza Exp $
 #
 
-PORTNAME=	p5-HTML-QuickCheck
+PORTNAME=	HTML-QuickCheck
 PORTVERSION= 	1.0b1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
-DISTNAME=	HTML-QuickCheck-1.0b1
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		HTML::QuickCheck.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

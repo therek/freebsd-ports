@@ -2,21 +2,21 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.2 1999/11/10 12:46:37 kuriyama Exp $
+# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.3 2000/04/09 21:52:58 cpiazza Exp $
 #
 
-PORTNAME=	p5-XML-DOM
+PORTNAME=	XML-DOM
 PORTVERSION= 	1.25
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	../../authors/id/E/EN/ENNO
-DISTNAME=	XML-DOM-1.25
+MASTER_SITE_SUBDIR=	XML
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		XML::DOM.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:			1 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.1 2000/02/09 04:42:54 ade Exp $
+# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.2 2000/04/11 21:29:43 mharo Exp $
 #
 
 PORTNAME=	gettext
@@ -14,12 +14,13 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@Chg.RU
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Locale::gettext.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

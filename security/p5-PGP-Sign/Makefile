@@ -2,15 +2,15 @@
 # Date created:		January 2, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/security/p5-PGP-Sign/Makefile,v 1.12 2000/04/21 08:18:44 mharo Exp $
+# $FreeBSD: ports/security/p5-PGP-Sign/Makefile,v 1.13 2000/05/21 11:52:05 knu Exp $
 #
 
-PORTNAME=	p5-PGP-Sign
+PORTNAME=	PGP-Sign
 PORTVERSION=	0.16
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGP
-DISTNAME=	PGP-Sign-0.16
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	croyle@gelemna.org
 
@@ -61,6 +61,7 @@ PGPV=	${PGP}
 CONFIG_ARGS=	PGPS=${PGPS} PGPV=${PGPV} PGPSTYLE=${PGPSTYLE}
 
 do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL ${CONFIG_ARGS}
+	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		${CONFIG_ARGS}
 
 .include <bsd.port.mk>

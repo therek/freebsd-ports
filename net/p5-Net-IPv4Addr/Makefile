@@ -2,15 +2,15 @@
 # Date created:				25 February 2000
 # Whom:                			Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.1 2000/02/25 16:38:56 ade Exp $
+# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.2 2000/04/09 18:12:52 cpiazza Exp $
 #
 
-PORTNAME=	p5-Net-IPv4Addr
-PORTVERSION=	0.08
+PORTNAME=	Net-IPv4Addr
+PORTVERSION=	0.09
 CATEGORIES=	net perl5
-# not using CPAN due to them messing up the filename and version numbers
-MASTER_SITES=	http://indev.insu.com/sources/
-DISTNAME=	Net-IPv4Addr-${PORTVERSION}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
+MASTER_SITE_SUBDIR=	Net
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bradh@uunet.co.za
 
@@ -21,6 +21,7 @@ MAN3=		Net::IPv4Addr.3
 
 do-configure:
 
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL PREFIX=${PREFIX}
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

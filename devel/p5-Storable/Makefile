@@ -2,7 +2,7 @@
 # Date created:				July 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.17 2000/04/11 21:29:54 mharo Exp $
+# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.18 2000/04/22 22:25:26 vanilla Exp $
 #
 
 PORTNAME=	Storable
@@ -14,12 +14,13 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Storable.3
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

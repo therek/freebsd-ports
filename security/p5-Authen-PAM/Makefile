@@ -2,7 +2,7 @@
 # Date created:				Mon Oct  4 1999
 # Whom:	      				Matt Behrens <matt@zigg.com>
 #
-# $FreeBSD: ports/security/p5-Authen-PAM/Makefile,v 1.2 2000/04/09 18:30:08 cpiazza Exp $
+# $FreeBSD: ports/security/p5-Authen-PAM/Makefile,v 1.3 2000/04/23 12:24:19 vanilla Exp $
 #
 
 PORTNAME=	Authen-PAM
@@ -14,12 +14,13 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	matt@zigg.com
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Authen::PAM.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

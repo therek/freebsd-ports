@@ -2,22 +2,21 @@
 # Date Created:			01 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-TableLayout/Makefile,v 1.1 2000/02/09 04:46:05 ade Exp $
+# $FreeBSD: ports/www/p5-HTML-TableLayout/Makefile,v 1.2 2000/04/10 00:06:33 cpiazza Exp $
 #
 
-PORTNAME=	p5-HTML-TableLayout
+PORTNAME=	HTML-TableLayout
 PORTVERSION= 	1.001008
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
-DISTNAME=	HTML-TableLayout-1.001008
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@Chg.RU
 
 USE_PERL5=	yes
 
 MAN3=		HTML::TableLayout.3
-
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:

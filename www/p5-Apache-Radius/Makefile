@@ -2,29 +2,29 @@
 # Date created:				Mon 20 Sep 19:46:21 SAST 1999
 # Whom:					Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.4 2000/03/22 09:19:26 sheldonh Exp $
+# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.5 2000/04/10 00:06:17 cpiazza Exp $
 #
 
-PORTNAME=	p5-Apache-Radius
+PORTNAME=	Apache-Radius
 PORTVERSION= 	0.3
 CATEGORIES=	www security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
-DISTNAME=	Apache-AuthenRadius-0.3
+DISTNAME=	Apache-AuthenRadius-${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Authen/Radius.pm:${PORTSDIR}/security/p5-Authen-Radius
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Authen/Radius.pm:${PORTSDIR}/security/p5-Authen-Radius
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Apache::AuthenRadius.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

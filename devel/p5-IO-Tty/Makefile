@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-IO-Tty/Makefile,v 1.3 2000/04/11 21:29:39 mharo Exp $
+# $FreeBSD: ports/devel/p5-IO-Tty/Makefile,v 1.4 2000/04/22 22:25:17 vanilla Exp $
 #
 
 PORTNAME=	IO-Tty
@@ -20,6 +20,8 @@ MAN3=		IO::Pty.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL LDDLFLAGS=-shared LDFLAGS=-L/usr/lib)
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		CC="${CC}" CCFLAGS="${CFLAGS}" \
+		LDDLFLAGS=-shared LDFLAGS=-L/usr/lib
 
 .include <bsd.port.mk>

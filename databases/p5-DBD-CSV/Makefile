@@ -2,15 +2,15 @@
 # Date created:				20 June 1999
 # Whom:	      				dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/databases/p5-DBD-CSV/Makefile,v 1.1.1.1 1999/12/29 03:37:40 jedgar Exp $
+# $FreeBSD: ports/databases/p5-DBD-CSV/Makefile,v 1.2 2000/04/08 22:48:38 mharo Exp $
 #
 
-PORTNAME=	p5-DBD-CSV
+PORTNAME=	DBD-CSV
 PORTVERSION=	0.1022
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
-DISTNAME=	DBD-CSV-${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 

@@ -2,21 +2,21 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.16 2000/04/09 18:30:15 cpiazza Exp $
+# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.17 2000/04/21 08:18:43 mharo Exp $
 #
 
-PORTNAME=	p5-PGP
+PORTNAME=	PGP
 PORTVERSION=	0.3a
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGP
-DISTNAME=	PGP-0.3a
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		PGP::Pipe.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -4,7 +4,7 @@
 #
 # Heavy input from eivind@freebsd.org
 #
-# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.1.1.1 1999/11/09 19:07:56 nsayer Exp $
+# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.2 2000/04/08 22:48:41 mharo Exp $
 #
 
 PORTNAME=	p5-GDBM
@@ -18,16 +18,15 @@ MAINTAINER=	nsayer@FreeBSD.ORG
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 WRKSRC=         ${WRKDIR}/${DISTNAME}/ext/GDBM_File
 
 MAN3=           GDBM_File.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-.include <bsd.port.pre.mk>
-
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.9 1999/08/31 06:42:09 mharo Exp $
+# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.10 2000/04/11 21:29:30 mharo Exp $
 #
 
 PORTNAME=	File-Lock
@@ -14,9 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

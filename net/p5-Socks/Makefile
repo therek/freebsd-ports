@@ -2,24 +2,24 @@
 # Date created:        22 January 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/net/p5-Socks/Makefile,v 1.3 2000/01/08 11:23:53 nakai Exp $
+# $FreeBSD: ports/net/p5-Socks/Makefile,v 1.4 2000/04/09 18:13:00 cpiazza Exp $
 #
 
-PORTNAME=	p5-Socks
+PORTNAME=	SOCKS
 PORTVERSION=	0.03
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
-DISTNAME=	SOCKS-0.03
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	nakai@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Net::SOCKS.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

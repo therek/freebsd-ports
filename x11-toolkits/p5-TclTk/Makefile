@@ -2,29 +2,29 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.15 2000/03/21 18:07:06 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tcl-Tk/Makefile,v 1.16 2000/04/10 01:10:40 cpiazza Exp $
 #
 
-PORTNAME=	p5-Tcl-Tk
+PORTNAME=	TclTk
 PORTVERSION=	b2
 CATEGORIES=	x11-toolkits lang perl5 tk82
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Tcl
-DISTNAME=	TclTk-b2
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
 BUILD_DEPENDS= 	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/i386-freebsd/Tcl.pm:${PORTSDIR}/lang/p5-Tcl
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
-USE_PERL5=	YES
-
-WRKSRC=		${WRKDIR}/TclTk
+USE_PERL5=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Tcl::Tk.3
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,15 +2,15 @@
 # Date Created:				27 Feb 2000
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-PlRPC/Makefile,v 1.1.1.1 2000/02/27 06:03:13 vanilla Exp $
+# $FreeBSD: ports/net/p5-PlRPC/Makefile,v 1.2 2000/04/09 18:12:55 cpiazza Exp $
 #
 
-PORTNAME=	p5-PlRPC
+PORTNAME=	PlRPC
 PORTVERSION=	0.2012
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	RPC
-DISTNAME=	PlRPC-0.2012
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vanilla@FreeBSD.org
 

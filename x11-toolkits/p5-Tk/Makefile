@@ -2,20 +2,21 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.27 2000/04/10 01:10:41 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.28 2000/04/23 12:25:08 vanilla Exp $
 #
 
-PORTNAME=	p5-Tk
+PORTNAME=	Tk
 PORTVERSION= 	800.021
 CATEGORIES=	x11-toolkits tk80 perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Tk
-DISTNAME=	Tk${PORTVERSION}
+DISTNAME=	${PORTNAME}${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_XLIB=	YES
-USE_PERL5=	YES
+USE_XLIB=	yes
+USE_PERL5=	yes
 
 MAN1=	ptked.1 \
 	ptksh.1 \
@@ -124,6 +125,11 @@ MAN3=	Tk.3 \
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL PREFIX=${PREFIX} INSTALLSCRIPT=${PREFIX}/bin INSTALLMAN1DIR=${PREFIX}/man/man1
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		PREFIX=${PREFIX} CC="${CC}" CCFLAGS="${CFLAGS}"
+	@${PERL} -i -p \
+		-e 's/^(CC = ).*/$$1 ${CC}/;' \
+		-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' \
+		`find ${WRKSRC} -name Makefile`
 
 .include <bsd.port.mk>

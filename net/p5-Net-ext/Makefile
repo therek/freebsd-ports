@@ -2,7 +2,7 @@
 # Date created:				25 March 2000
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.1 2000/04/24 02:05:53 will Exp $
 #
 
 PORTNAME=	Net-ext
@@ -26,6 +26,7 @@ MAN3=		Net::Gen.3 \
 		Net::UNIX::Server.3
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/p5-Text-Kakasi/Makefile,v 1.3 2000/04/20 18:23:56 knu Exp $
+# $FreeBSD: ports/japanese/p5-Text-Kakasi/Makefile,v 1.4 2000/04/24 15:51:18 knu Exp $
 #
 
 PORTNAME=	Text-Kakasi
@@ -14,7 +14,7 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	kakasi.2:${PORTSDIR}/japanese/kakasi
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Text::Kakasi.3
@@ -24,6 +24,7 @@ MAN3=		Text::Kakasi.3
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}p5-
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.post.mk>

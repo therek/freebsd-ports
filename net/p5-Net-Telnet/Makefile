@@ -2,23 +2,24 @@
 # Date created:			March 3 1998
 # Whom:	      			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.5 2000/01/06 13:50:32 kuriyama Exp $
+# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.6 2000/04/09 18:12:53 cpiazza Exp $
 #
 
-PORTNAME=	p5-Net-Telnet
+PORTNAME=	Net-Telnet
 PORTVERSION=	3.01
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
-DISTNAME=	Net-Telnet-3.01
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Net::Telnet.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
 		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+
 .include <bsd.port.mk>

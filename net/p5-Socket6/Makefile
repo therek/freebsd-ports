@@ -2,7 +2,7 @@
 # Date created:		24 May 2000
 # Whom:	      		Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Socket6/Makefile,v 1.1.1.1 2000/05/24 19:52:01 ume Exp $
+# $FreeBSD: ports/net/p5-Socket6/Makefile,v 1.2 2000/06/03 15:44:07 ume Exp $
 #
 
 PORTNAME=	Socket6
@@ -18,6 +18,6 @@ USE_PERL5=	yes
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CCFLAGS="${CFLAGS}"
+		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

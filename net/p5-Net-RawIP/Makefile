@@ -2,17 +2,17 @@
 # Date created:				18 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.4 1999/12/24 04:52:24 steve Exp $
+# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.5 2000/04/09 18:12:52 cpiazza Exp $
 #
 
-PORTNAME=	p5-Net-RawIP
+PORTNAME=	Net-RawIP
 PORTVERSION=	0.09
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
 		http://quake.skif.net/RawIP/files/ \
 		http://www.ic.al.lg.ua/~ksv/
 MASTER_SITE_SUBDIR=	Net
-DISTNAME=	Net-RawIP-${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@chg.ru
 
@@ -21,7 +21,7 @@ MAN3=		Net::RawIP.3 Net::RawIP::libpcap.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

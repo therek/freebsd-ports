@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-Peek/Makefile,v 1.12 2000/04/11 21:29:27 mharo Exp $
+# $FreeBSD: ports/devel/p5-Devel-Peek/Makefile,v 1.13 2000/04/22 22:15:11 vanilla Exp $
 #
 
 PORTNAME=	Devel-Peek
@@ -14,12 +14,13 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Devel::Peek.3
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				17 January 2000
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.2 2000/04/08 23:24:34 mharo Exp $
+# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.3 2000/04/13 06:20:09 asami Exp $
 #
 
 PORTNAME=	Convert-Recode
@@ -19,14 +19,13 @@ RUN_DEPENDS=	recode:${PORTSDIR}/converters/recode
 USE_PERL5=	YES
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
 MAN3=		Convert::Recode.3
 
 post-patch:
-		${PERL} -pi -e 's#recode -\$$#${PREFIX}/bin/recode -\$$#' \
+		${PERL} -pi -e 's#recode -\$$#${LOCALBASE}/bin/recode -\$$#' \
 		${WRKSRC}/Recode.pm
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL PREFIX=${PREFIX}
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,15 +2,17 @@
 # Date created: January 2, 1998
 # Whom: Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.8 2000/04/21 07:51:50 mharo Exp $
+# $FreeBSD: ports/news/p5-News-Article/Makefile,v 1.9 2000/05/21 11:52:03 knu Exp $
 #
 
-PORTNAME=	p5-News-Article
+PORTNAME=	News-Article
 PORTVERSION=	1.21
 CATEGORIES=	news perl5
 MASTER_SITES=	http://www.erlenstar.demon.co.uk/perl/ \
 		http://www.gelemna.org/ports/
-DISTNAME=	News-Article-1.21
+PKGNAMEPREFIX=	p5-
+
+BROKEN=		unfetchable distfile
 
 MAINTAINER=	croyle@gelemna.org
 

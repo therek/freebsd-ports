@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.13 2000/04/23 12:24:26 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.14 2000/06/06 17:56:49 will Exp $
 #
 
 PORTNAME=	GD
@@ -16,12 +16,13 @@ MAINTAINER=	jfitz@FreeBSD.org
 
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		GD.3
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

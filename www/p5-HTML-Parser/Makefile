@@ -2,7 +2,7 @@
 # Date Created:				28 April 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-Parser/Makefile,v 1.16 2000/04/22 22:25:16 vanilla Exp $
+# $FreeBSD: ports/www/p5-HTML-Parser/Makefile,v 1.17 2000/06/09 22:52:31 will Exp $
 #
 
 PORTNAME=	HTML-Parser
@@ -26,6 +26,7 @@ MAN3=		HTML::Entities.3 \
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

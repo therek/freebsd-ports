@@ -2,7 +2,7 @@
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.11 1999/08/31 06:42:01 mharo Exp $
+# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.12 2000/04/11 21:29:24 mharo Exp $
 #
 
 PORTNAME=	Data-ShowTable
@@ -14,14 +14,14 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
-CONFIGURE_ARGS=	PREFIX=${PREFIX} INSTALLSCRIPT=${PREFIX}/bin INSTALLMAN1DIR=${PREFIX}/man/man1
+USE_PERL5=	yes
 
 MAN1=		showtable.1
 MAN3=		Data::ShowTable.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL ${CONFIGURE_ARGS}
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			PREFIX="${PREFIX}"
 
 .include <bsd.port.mk>

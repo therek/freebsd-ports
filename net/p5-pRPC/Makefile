@@ -2,15 +2,15 @@
 # Date Created:				Aug 18 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-pRPC/Makefile,v 1.7 1999/08/31 06:49:07 mharo Exp $
+# $FreeBSD: ports/net/p5-pRPC/Makefile,v 1.8 2000/04/09 18:13:01 cpiazza Exp $
 #
 
-PORTNAME=	p5-pRPC-modules
+PORTNAME=	pRPC-modules
 PORTVERSION=	0.1005
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	RPC
-DISTNAME=	pRPC-modules-0.1005
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vanilla@FreeBSD.org
 
@@ -24,6 +24,6 @@ MAN3=		Bundle::pRPC-modules.3 \
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

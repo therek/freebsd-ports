@@ -2,19 +2,19 @@
 # Date created:				April 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.13 1999/08/31 06:48:59 mharo Exp $
+# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.14 2000/04/09 18:12:49 cpiazza Exp $
 #
 
-PORTNAME=	p5-Net-DNS
+PORTNAME=	Net-DNS
 PORTVERSION=	0.12
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
-DISTNAME=	Net-DNS-0.12
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		Net::DNS.3 Net::DNS::Header.3 Net::DNS::Packet.3 \
 		Net::DNS::Question.3 Net::DNS::RR.3 Net::DNS::RR::A.3 \

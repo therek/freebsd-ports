@@ -2,15 +2,15 @@
 # Date created:				October 20th 1996
 # Whom:	      				Mark Murray <markm@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.4 2000/04/21 08:18:39 mharo Exp $
+# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.5 2000/04/22 22:08:35 vanilla Exp $
 #
 
-PORTNAME=	p5-Crypt-CBC
+PORTNAME=	Crypt-CBC
 PORTVERSION=	1.23
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
-DISTNAME=	Crypt-CBC-1.23
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	markm@FreeBSD.org
 
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/5.005/i386-freebsd/MD5.pm:${PORTSD
 
 RESTRICTED=	"Crypto; export-controlled"
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Crypt::CBC.3

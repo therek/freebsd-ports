@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.14 2000/04/11 21:29:19 mharo Exp $
+# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.15 2000/04/22 22:04:35 vanilla Exp $
 #
 
 PORTNAME=	BSD-Resource
@@ -14,12 +14,13 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		BSD::Resource.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>
