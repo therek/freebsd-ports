@@ -2,13 +2,13 @@
 # Date created:			24 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/news/ubh/Makefile,v 1.1.1.1 2000/07/24 10:02:02 dburr Exp $
+# $FreeBSD: ports/news/ubh/Makefile,v 1.2 2000/07/26 09:09:06 dburr Exp $
 #
 
 PORTNAME=	ubh
-PORTVERSION=	1.0
+PORTVERSION=	1.3
 CATEGORIES=	news graphics
-MASTER_SITES=	http://www.lanois.com/ubh/download/
+MASTER_SITES=	http://ubh.sourceforge.net/download/
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
@@ -20,8 +20,6 @@ pre-patch:
 	@${MV} ${WRKSRC}/ubh ${WRKSRC}/ubh.old
 	@${SED} -e '1,1s:/usr/bin/perl:${PERL5}:' \
 		${WRKSRC}/ubh.old > ${WRKSRC}/ubh
-	@${MV} ${WRKSRC}/examples/.ubhrc ${WRKSRC}/examples/dot.ubhrc
-	@${MV} ${WRKSRC}/examples/.newsrc ${WRKSRC}/examples/dot.newsrc
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ubh ${PREFIX}/bin
