@@ -2,11 +2,11 @@
 # Date created:			  Nov 05, 1998
 # Whom:				  Karl Dietz (Karl.Dietz@frankfurt.netsurf.de)
 #
-# $FreeBSD: ports/net/dnsutl/Makefile,v 1.4 1999/12/27 01:08:22 steve Exp $
+# $FreeBSD: ports/net/dnsutl/Makefile,v 1.5 2000/04/09 18:11:03 cpiazza Exp $
 #
 
 PORTNAME=	dnsutl
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	net
 MASTER_SITES=	http://www.canb.auug.org.au/~millerp/dnsutl/ \
 		http://www.tip.net.au/~millerp/dnsutl/  \
@@ -18,8 +18,9 @@ MAINTAINER=	Karl.Dietz@frankfurt.netsurf.de
 GNU_CONFIGURE=	yes
 ALL_TARGET=	all sure
 
-MAN1=		dns-bootp.1 dns-bootparams.1 dns-ethers-import.1 \
-		dns-ethers.1 dns-filter.1 dns-hosts-import.1 \
-		dns-hosts.1 dns-license.1 dns-ng.1 dns-rev.1
+MAN1=		dns-boot-check.1 dns-bootp.1 dns-bootparams.1 \
+		dns-ethers-import.1 dns-ethers.1 dns-filter.1 \
+		dns-hosts-import.1 dns-hosts.1 dns-license.1 \
+		dns-ng.1 dns-rev.1
 
 .include <bsd.port.mk>
