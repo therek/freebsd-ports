@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.177 2001/04/10 19:51:44 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.178 2001/04/17 18:17:48 will Exp $
 #
     SUBDIR += yawho
 
@@ -12,6 +12,7 @@
     SUBDIR += battstat-applet
     SUBDIR += bchunk
     SUBDIR += bkpupsd
+    SUBDIR += bubblemon-dockapp
     SUBDIR += cd-write
     SUBDIR += cd9660_unicode
     SUBDIR += cdrecord
