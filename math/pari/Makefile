@@ -3,14 +3,13 @@
 # Date created:		19 January 1999
 # Whom:	Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/pari/Makefile,v 1.9 1999/08/25 07:13:15 obrien Exp $
 #
 
 DISTNAME=	pari-2.0.16.beta
 PKGNAME=	pari-2.0.16b
 CATEGORIES=	math
-MASTER_SITES=   ftp://megrez.math.u-bordeaux.fr/pub/pari/unix/ \
-				ftp://hasse.mathematik.tu-muenchen.de/pub/pari/
+MASTER_SITES=	ftp://hasse.mathematik.tu-muenchen.de/pub/pari/
 
 MAINTAINER=     yoshiaki@kt.rim.or.jp
 
