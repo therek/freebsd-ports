@@ -2,11 +2,11 @@
 # Date created:        17 November 1999
 # Whom:                ajk@waterspout.com
 #
-# $FreeBSD: ports/devel/msrc0/Makefile,v 1.1 1999/12/27 01:40:55 steve Exp $
+# $FreeBSD: ports/devel/msrc0/Makefile,v 1.2 2000/04/11 21:29:12 mharo Exp $
 #
 
 PORTNAME=	msrc0
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/
 EXTRACT_SUFX=	.tgz
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ajk@waterspout.com
 
 NO_BUILD=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}-0.6
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/makeme ${PREFIX}/bin
