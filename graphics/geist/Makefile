@@ -2,7 +2,7 @@
 # Date created:				24 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/geist/Makefile,v 1.1 2000/12/03 20:21:20 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	geist
@@ -10,7 +10,7 @@ PORTVERSION=	0.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2 \
 		xml2.5:${PORTSDIR}/textproc/libxml2
