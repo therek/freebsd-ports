@@ -2,14 +2,13 @@
 # Date created:		13 Jan 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/x11/xbanner/Makefile,v 1.7 2000/04/13 19:10:20 cpiazza Exp $
+# $FreeBSD: ports/x11/xbanner/Makefile,v 1.8 2000/08/03 09:28:47 asami Exp $
 #
 
 PORTNAME=	xbanner
 PORTVERSION= 	1.31
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.digital.com/pub/linux/XBanner/ \
-		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/xutils
 DISTNAME=	XBanner${PORTVERSION}
