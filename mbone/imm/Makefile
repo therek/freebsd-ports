@@ -3,19 +3,20 @@
 # Date created:		13 October 1994
 # Whom:			wollman
 #
-# $FreeBSD$
+# $FreeBSD: ports/mbone/imm/Makefile,v 1.21 1999/08/25 07:09:36 obrien Exp $
 #
 
-DISTNAME=	imm-3.5a1
+DISTNAME=	imm.source
+PKGNAME=	imm-3.5a1
 CATEGORIES=	mbone tk80
 MASTER_SITES=	ftp://ftp.hawaii.edu/paccom/imm-3.5a1/
-DISTFILES=	imm.source.tar.Z
-WRKSRC=		${WRKDIR}/mnm
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	fenner@freebsd.org
 
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 
+WRKSRC=		${WRKDIR}/mnm
 USE_X_PREFIX=	yes
 
 post-extract:
