@@ -2,7 +2,7 @@
 # Date created:		9 January 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/boiling-egg/Makefile,v 1.1 2001/04/09 10:30:31 knu Exp $
 #
 
 PORTNAME=	boiling-egg
@@ -15,7 +15,7 @@ EXTRACT_ONLY=	# empty
 
 MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
 
-RUN_DEPENDS=	tamago:${PORTSDIR}/editors/tamago
+RUN_DEPENDS=	${ELISPDIR}/egg/egg.el:${PORTSDIR}/editors/tamago
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
