@@ -4,7 +4,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/vnxfonts/Makefile,v 1.1 2001/02/10 23:21:00 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnxfonts/Makefile,v 1.2 2001/02/10 23:53:32 obrien Exp $
 #
 #	version # is VISCII version supported + .<edit_revision>
 
@@ -32,6 +32,8 @@ do-install:
 	@${MKDIR} ${PREFIX}/lib/X11/fonts/vietnamese
 	@cd ${WRKSRC} ; \
 		${INSTALL_DATA} fonts.dir *.pcf.Z  \
+		${PREFIX}/lib/X11/fonts/vietnamese
+	@${INSTALL_DATA} ${FILESDIR}/fonts.alias \
 		${PREFIX}/lib/X11/fonts/vietnamese
 	@${SETENV} PKG_PREFIX=${PREFIX} \
 		${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
