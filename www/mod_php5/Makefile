@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.114 2000/05/29 19:25:03 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.115 2000/06/07 20:10:46 dirk Exp $
 #
 
 PORTNAME=	mod_php
@@ -77,7 +77,7 @@ post-install:
 	@${ECHO} "DirectoryIndex index.php index.html"
 	@${ECHO} "[...]"
 	@${ECHO} "AddType application/x-httpd-php .php"
-	@${ECHO} "AddType application/x-httpd-php-source .php3"
+	@${ECHO} "AddType application/x-httpd-php-source .phps"
 	@${ECHO} "[...]"
 	@${ECHO} "*****************************************************************************"
 
