@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.110 2000/07/16 17:35:42 asami Exp $
+# $FreeBSD: ports/print/Makefile,v 1.111 2000/07/17 05:32:15 taoka Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -13,6 +13,7 @@
     SUBDIR += afm
     SUBDIR += amspsfnt
     SUBDIR += apsfilter
+    SUBDIR += apsfilter6
     SUBDIR += asprint
     SUBDIR += auctex
     SUBDIR += bibcard
