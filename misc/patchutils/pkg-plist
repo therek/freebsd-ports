@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/misc/patchutils/pkg-plist,v 1.4 2003/01/03 19:05:26 ijliao Exp $
+@comment $FreeBSD: ports/misc/patchutils/pkg-plist,v 1.5 2003/01/24 14:42:54 ijliao Exp $
 bin/combinediff
 bin/dehtmldiff
 bin/editdiff
 bin/filterdiff
 bin/fixcvsdiff
+bin/flipdiff
 bin/grepdiff
 bin/interdiff
 bin/lsdiff
