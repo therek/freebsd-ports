@@ -2,7 +2,7 @@
 # Date created:		01 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/vscan/Makefile,v 1.24 2001/04/14 14:16:20 jeh Exp $
+# $FreeBSD: ports/security/vscan/Makefile,v 1.25 2001/08/04 16:26:11 jeh Exp $
 #
 
 PORTNAME=	uvscan
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	jeh@FreeBSD.org
 
 RUN_DEPENDS+=	${LOCALBASE}/sbin/update_dat:${PORTSDIR}/security/uvscan-dat
+LIB_DEPENDS+=	c.3:${PORTSDIR}/misc/compat3x
 
 ONLY_FOR_ARCHS=	i386
 NO_BUILD=	YES
@@ -22,10 +23,6 @@ NO_WRKSUBDIR=	YES
 
 LICENSE=	shareware
 RESTRICTED=	"restrictive 30 day evaluation license"
-
-.if !exists(/usr/lib/compat/libc.so.3)
-BROKEN=		"You must have the compat3x libraries installed."
-.endif
 
 do-configure:
 	${SED} <${FILESDIR}/uvscan.sh >${WRKSRC}/uvscan.sh \
