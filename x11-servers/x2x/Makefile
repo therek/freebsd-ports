@@ -2,7 +2,7 @@
 # Date created:		3 September 2000
 # Whom:			grog
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/x2x/Makefile,v 1.1.1.1 2000/09/03 08:06:08 grog Exp $
 #
 
 PORTNAME=	x2x
@@ -15,11 +15,7 @@ MAINTAINER=	grog@FreeBSD.org
 
 USE_IMAKE=	yes
 USE_GMAKE=	yes
-MAKE_ENV+=	MAKE=${GMAKE}
-MANCOMPRESSED=	yes
+MAKE_ENV=	MAKE=${GMAKE}
 MAN1=		x2x.1
-
-do-install:
-	cd ${WRKSRC}; make install; make install.man
 
 .include <bsd.port.mk>
