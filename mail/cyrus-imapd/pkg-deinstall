@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.4 2004/03/30 15:28:06 ume Exp $
+#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.5 2004/03/31 16:56:31 ume Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -52,11 +52,10 @@ modify_cyrus_user() {
 	uhome=/nonexistent
 
 	if ! ${PW} mod user ${USER} -d "${uhome}" -s "${shell}"; then
-		e=$?
 		echo "*** Failed to update user \`${USER}'."
-		exit ${e}
+	else
+		echo "*** Updated user \`${USER}'."
 	fi
-	echo "*** Updated user \`${USER}'."
 }
 
 case $2 in
