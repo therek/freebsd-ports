@@ -2,11 +2,11 @@
 # Date created:        12 July 2000
 # Whom:                Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/devel/camlp4/Makefile,v 1.4 2000/10/13 20:17:07 ade Exp $
+# $FreeBSD: ports/devel/camlp4/Makefile,v 1.5 2001/04/20 15:00:14 olgeni Exp $
 #
 
 PORTNAME=	camlp4
-PORTVERSION=	3.01
+PORTVERSION=	3.02
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/camlp4/ \
 		http://cristal.inria.fr/~ddr/Camlp4/ftp/ \
