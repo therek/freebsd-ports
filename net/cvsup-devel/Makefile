@@ -2,10 +2,10 @@
 # Date created:		28 April 2001
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.4 2001/08/02 23:32:08 jdp Exp $
+# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.5 2001/09/09 17:47:10 jdp Exp $
 #
 
-PORTVERSION=	16.1d
+PORTVERSION=	16.1e
 PORTREVISION=	0
 CATEGORIES=	net
 MASTER_SITES=	http://people.freebsd.org/~jdp/s1g/ \
