@@ -2,11 +2,12 @@
 # Date created:		7 October 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/devel/autoconf/Makefile,v 1.20 1999/08/31 06:41:35 mharo Exp $
+# $FreeBSD: ports/devel/autoconf/Makefile,v 1.21 2000/04/11 21:27:06 mharo Exp $
 #
 
 PORTNAME=	autoconf
 PORTVERSION=	2.13
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	autoconf
