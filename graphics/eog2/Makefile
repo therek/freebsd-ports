@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.15 2000/09/05 17:21:41 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.16 2000/10/03 17:37:49 ade Exp $
 #
 
 PORTNAME=	eog
@@ -14,16 +14,14 @@ MASTER_SITE_SUBDIR=	unstable/sources/eog
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
-		glade.4:${PORTSDIR}/devel/libglade \
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
 		gconf-1.1:${PORTSDIR}/devel/gconf
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

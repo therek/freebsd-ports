@@ -2,7 +2,7 @@
 # Date created:        			21st April 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.7 2000/08/04 16:11:35 ade Exp $
+# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.8 2000/08/11 15:25:32 ade Exp $
 #
 
 PORTNAME=	junglemonkey
@@ -13,21 +13,16 @@ DISTNAME=	jm-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
-		gnet.0:${PORTSDIR}/net/gnet \
+LIB_DEPENDS=	gnet.0:${PORTSDIR}/net/gnet \
 		popt.0:${PORTSDIR}/devel/popt \
 		glade.4:${PORTSDIR}/devel/libglade
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--enable-gnome
+CONFIGURE_ARGS=	--enable-gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		jm.1 jmlite.1 jmsearchserver.1 mtprendezvous.1

@@ -2,7 +2,7 @@
 # Date created:                         03/09/2000
 # Whom:                                 smoberly@xavier.dyndns.org
 #
-# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.1 2000/05/01 03:06:14 steve Exp $
+# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.2 2000/06/01 16:25:12 ade Exp $
 #
 
 PORTNAME=	bulb
@@ -12,13 +12,16 @@ MASTER_SITES=	http://www.idiap.ch/~gobry/bulb/
 
 MAINTAINER=	smoberly@xavier.dyndns.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
+USE_X_PREFIX=	yes
+USE_GNOME=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-USE_X_PREFIX=	YES
-GNU_CONFIGURE=	YES
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" LDFLAGS="-L${LOCALBASE}/lib -lintl"
-CONFIGURE_ARGS=	--datadir=${PREFIX}/share/gnome
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.16 2000/08/21 19:52:40 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.17 2000/09/23 18:54:08 cpiazza Exp $
 #
 
 PORTNAME=	gnapster
@@ -12,19 +12,15 @@ MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		ungif.5:${PORTSDIR}/graphics/libungif
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 USE_XPM=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib" \
-		GTK_CONFIG="${GTK_CONFIG}"
+		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \

@@ -2,7 +2,7 @@
 # Date created:			15 June 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.1.1.1 2000/06/15 10:48:01 sobomax Exp $
 #
 
 PORTNAME=	xmps
@@ -12,22 +12,26 @@ MASTER_SITES=	http://www-eleves.enst-bretagne.fr/~chavarri/xmps/sources/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	smpeg.0:${PORTSDIR}/graphics/smpeg \
-		gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+LIB_DEPENDS=	smpeg.0:${PORTSDIR}/graphics/smpeg
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
-USE_X_PREFIX=	yes
-USE_LIBTOOL=	yes
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
- 		GLIB_CONFIG="${GLIB_CONFIG}" \
+USE_X_PREFIX=	yes
+USE_GNOME=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		SDL_CONFIG="${SDL_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
+		 s|\$$\(datadir\)/aclocal|\$$\(prefix\)/share/aclocal|g ; \
+		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>

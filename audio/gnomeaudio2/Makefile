@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.12 1999/12/04 19:07:48 steve Exp $
+# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.13 2000/04/08 21:23:32 mharo Exp $
 #
 
 PORTNAME=	gnomeaudio
@@ -14,14 +14,10 @@ DISTNAME=	gnome-audio-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-BUILD_DEPENDS=	gnome-config:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	gnome-config:${PORTSDIR}/x11/gnomelibs
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOMELIBS=	yes
 NO_BUILD=	yes
-
-INSTALL_TARGET=	INSTALL_DATA="${INSTALL_DATA}" install
 
 post-extract:
 	@${RM} -fr ${WRKSRC}/sounds/sounds

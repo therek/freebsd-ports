@@ -2,7 +2,7 @@
 # Date created:		12 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.1 2000/09/02 12:54:03 sobomax Exp $
 #
 
 PORTNAME=	gmanedit
@@ -14,20 +14,14 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
 ALL_TARGET=	clean all
 
 post-extract:

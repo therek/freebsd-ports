@@ -2,7 +2,7 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.1 2000/07/10 03:07:29 steve Exp $
+# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.2 2000/07/13 10:58:19 sobomax Exp $
 #
 
 PORTNAME=	seti_applet
@@ -13,24 +13,23 @@ MASTER_SITE_SUBDIR=	${PORTNAME:S/_/-/}
 
 MAINTAINER=	th@cis.ibaraki.ac.jp
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
-		gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gtop.1:${PORTSDIR}/devel/libgtop
-RUN_DEPENDS=	setiathome:${PORTSDIR}/astro/setiathome \
-		gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
+RUN_DEPENDS=	setiathome:${PORTSDIR}/astro/setiathome
 
 USE_X_PREFIX=	yes
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 post-install:
-	${SED} "s|%%LOCALBASE%%|${LOCALBASE}|g" ${PKGMESSAGE}
+	@${SED} "s|%%LOCALBASE%%|${LOCALBASE}|g" ${PKGMESSAGE}
 
 .include <bsd.port.mk>

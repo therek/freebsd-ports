@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.20 2000/08/17 16:40:17 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.21 2000/09/28 18:01:10 ade Exp $
 #
 
 PORTNAME=	bonobo
@@ -14,26 +14,17 @@ MASTER_SITE_SUBDIR=	unstable/sources/bonobo
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
+LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint \
 		oaf.0:${PORTSDIR}/devel/oaf
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 LIBTOOLFILES=	configure libefs/configure
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:

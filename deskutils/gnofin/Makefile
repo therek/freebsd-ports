@@ -2,7 +2,7 @@
 # Date created:				Sun Jul 18 1999
 # Whom:					domi@saargate.de
 #
-# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.12 2000/06/14 13:21:10 sobomax Exp $
+# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.13 2000/09/28 11:50:57 jedgar Exp $
 #
 
 PORTNAME=	gnofin
@@ -13,17 +13,24 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		xml.5:${PORTSDIR}/textproc/libxml
-
-GTK_CONFIG?=    ${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
-USE_LIBTOOL=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		gnofin.1
 
-CONFIGURE_ENV=  GTK_CONFIG="${GTK_CONFIG}"
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
+		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
+	@find ${WRKSRC}/plugins -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|_la_LDFLAGS =|_la_LDFLAGS = -avoid-version|g'
 
 .include <bsd.port.mk>

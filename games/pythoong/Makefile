@@ -2,7 +2,7 @@
 # Date created:		24 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/games/pythoong/Makefile,v 1.1 2000/07/24 15:48:22 sobomax Exp $
+# $FreeBSD: ports/games/pythoong/Makefile,v 1.2 2000/09/12 17:07:10 sobomax Exp $
 #
 
 PORTNAME=	pythoong
@@ -13,28 +13,21 @@ MASTER_SITES=	http://perso.wanadoo.fr/christophe.cressend/tarballs/
 MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	xbmtopbm:${PORTSDIR}/graphics/netpbm
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
-
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\$\(datadir\)/pixmaps|\$\(datadir\)/gnome/pixmaps|g ; \
-		 s|\$\(localstatedir\)/games|\$\(datadir\)/gnome/games|g'
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>

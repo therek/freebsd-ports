@@ -2,7 +2,7 @@
 # Date created:				20 January 1999
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.12 2000/08/04 01:19:13 ade Exp $
+# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.13 2000/08/04 16:11:20 ade Exp $
 #
 
 PORTNAME=	gnomemedia
@@ -14,16 +14,13 @@ DISTNAME=	gnome-media-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
 
-BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
-		sox:${PORTSDIR}/audio/sox
+RUN_DEPENDS=	sox:${PORTSDIR}/audio/sox
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--without-ncurses \
-		--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
+CONFIGURE_ARGS=	--without-ncurses
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

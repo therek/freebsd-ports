@@ -2,7 +2,7 @@
 # Date created:				9th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ghex/Makefile,v 1.5 2000/08/04 16:11:12 ade Exp $
+# $FreeBSD: ports/editors/ghex/Makefile,v 1.6 2000/09/28 18:02:30 ade Exp $
 #
 
 PORTNAME=	ghex
@@ -13,22 +13,15 @@ MASTER_SITE_SUBDIR=	stable/sources/ghex
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint
 
 BROKEN=		"Uses internals from gnomeprint that are no longer present"
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:

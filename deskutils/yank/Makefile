@@ -2,7 +2,7 @@
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/yank/Makefile,v 1.8 2000/07/23 14:06:24 jedgar Exp $
+# $FreeBSD: ports/deskutils/yank/Makefile,v 1.9 2000/08/21 16:40:12 jedgar Exp $
 #
 
 PORTNAME=	yank
@@ -12,18 +12,23 @@ MASTER_SITES=	http://home.ins.de/~m.hussmann/software/yank/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's^\$\(datadir\)/gnome/^\$\(datadir\)/^g ; \
+		 s^\$\(datadir\)/locale^\$\(prefix\)/share/locale^g'
+	@find ${WRKSRC}/src/Plugins -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|_la_LDFLAGS =|_la_LDFLAGS = -avoid-version|g'
 
 .include <bsd.port.mk>
