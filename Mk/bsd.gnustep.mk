@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.13 2004/06/16 08:17:22 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.14 2004/10/12 04:32:33 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -85,7 +85,7 @@ DEFAULT_LIBVERSION?=	0.0.1
 .else
 PLIST_SUB+=	GNUSTEP_DEVEL="@comment "
 PLIST_SUB+=	GNUSTEP_STABLE=""
-DEFAULT_LIBVERSION?=	1.0.0
+DEFAULT_LIBVERSION?=	0.0.1
 .endif
 
 PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION}
