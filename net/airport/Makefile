@@ -2,7 +2,7 @@
 # Date created:		2000/09/16
 # Whom:			Nick Sayer
 #
-# $FreeBSD: ports/net/airport/Makefile,v 1.5 2001/03/07 14:29:56 nsayer Exp $
+# $FreeBSD: ports/net/airport/Makefile,v 1.6 2001/04/24 19:21:58 nsayer Exp $
 #
 
 PORTNAME=	airport
@@ -32,8 +32,10 @@ do-install:
 	@cd ${WRKSRC}; \
 		${MKDIR} ${PREFIX}/share/airport; \
 		${CP} -r ${WRKSRC}/* ${PREFIX}/share/airport; \
-		${SED} -e s,%%PREFIX%%,${PREFIX},g \
+		${SED} \
+			-e s,%%PREFIX%%,${PREFIX},g \
 			-e s/%%JFC_VERSION%%/${JFC_VERSION}/ \
+			-e s/%%JDK_VERSION%%/${JDK_VERSION}/ \
 			< ${FILESDIR}/airport > ${PREFIX}/bin/airport; \
 		${CHMOD} a+x ${PREFIX}/bin/airport
 
