@@ -3,7 +3,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.3 2000/02/24 14:07:21 imura Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.4 2000/03/07 16:55:07 imura Exp $
 #
 
 DISTNAME=	kdevelop-1.1
@@ -53,9 +53,9 @@ LIBVER="${SOMAJOR}"
 PLIST_SUB+=	LIBVER="${LIBVER}"
 
 pre-patch:
-.if !defined(USE_OPTIONAL_RUNDEPENDS)
+.if !defined(USE_OPTIONAL_DEPENDS)
 	@${ECHO}
-	@${ECHO} "You may define USE_OPTIONAL_RUNDEPENDS (make USE_OPTIONAL_RUNDEPENDS=YES)"
+	@${ECHO} "You may define USE_OPTIONAL_DEPENDS (make USE_OPTIONAL_DEPENDS=YES)"
 	@${ECHO} "to automatically build the suggested programs to compliment kdevelop."
 	@${ECHO}
 	@sleep 1
