@@ -2,13 +2,13 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/audio/gdcd/Makefile,v 1.5 2000/10/05 06:35:48 reg Exp $
+# $FreeBSD: ports/audio/gdcd/Makefile,v 1.6 2000/10/13 09:27:45 reg Exp $
 #
 
 PORTNAME=	gdcd
 PORTVERSION=	0.2.1
 CATEGORIES=	audio
-MASTER_SITES=	http://cdcd.undergrid.net/gdcd/source_archive/
+MASTER_SITES=	http://gdcd.undergrid.net/source_archive/
 
 MAINTAINER=	ports@FreeBSD.org
 
