@@ -2,17 +2,17 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Data-Flow/Makefile,v 1.13 2000/10/23 21:02:45 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Data-Flow
-PORTVERSION=	0.05
+PORTVERSION=	0.07
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	Data
+MASTER_SITE_SUBDIR=	../by-authors/id/T/TB/TBONE/
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	YES
 
