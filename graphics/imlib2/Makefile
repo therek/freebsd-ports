@@ -2,11 +2,11 @@
 # Date created:		16 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/imlib2-tmp/Makefile,v 1.72 2001/01/25 01:55:33 vanilla Exp $
+# $FreeBSD: ports/graphics/imlib2/Makefile,v 1.73 2001/03/06 17:26:22 sf Exp $
 #
 
 PORTNAME=	imlib2
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
