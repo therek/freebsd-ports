@@ -2,7 +2,7 @@
 # Date created:		16 November 2000
 # Whom:			Jeremy <karlj000@unbc.ca>
 #
-# $FreeBSD: ports/x11/wmmenu/Makefile,v 1.1 2000/11/21 06:52:56 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmenu
@@ -12,7 +12,8 @@ MASTER_SITES=	http://www.fcoutant.freesurf.fr/download/
 
 MAINTAINER=	karlj000@unbc.ca
 
-LIB_DEPENDS=	dockapp.1:${PORTSDIR}/x11-wm/libdockapp:install
+LIB_DEPENDS=	dockapp.1:${PORTSDIR}/x11-wm/libdockapp:install \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_X_PREFIX=	yes
