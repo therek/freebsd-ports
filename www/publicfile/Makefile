@@ -2,7 +2,7 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/publicfile/Makefile,v 1.7 2001/01/30 08:19:26 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	publicfile
@@ -20,8 +20,8 @@ ALL_TARGET=	it
 INSTALL_TARGET=	setup check
 
 post-patch:
-	@${ECHO} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
-	@${ECHO} "${CC} -s" > ${WRKSRC}/conf-ld
-	@${ECHO} "${PREFIX}" > ${WRKSRC}/conf-home
+	@${ECHO_CMD} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
+	@${ECHO_CMD} "${CC} -s" > ${WRKSRC}/conf-ld
+	@${ECHO_CMD} "${PREFIX}" > ${WRKSRC}/conf-home
 
 .include <bsd.port.mk>

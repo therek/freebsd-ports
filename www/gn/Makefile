@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/gn/Makefile,v 1.30 2001/08/18 07:56:51 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gn
@@ -47,7 +47,7 @@ post-install:
 	  tar -cf - -C ${WRKSRC} gnroot libexec bin etc | tar xpf - && \
 		(cd gnroot; ${WRKSRC}/bin/mkcache -r); \
 	  ${AWK} '$$1 ~ /#*gopher/ && $$6 == "${PREFIX}/libexec/gn" { exit 1 }' \
-		${INETD_CONF} || { \ ${ECHO} '#'gopher${CONF} >>${INETD_CONF}
+		${INETD_CONF} || { \ ${ECHO_CMD} '#'gopher${CONF} >>${INETD_CONF}
 	  }
 
 .include <bsd.port.mk>

@@ -4,7 +4,7 @@
 #
 # based on the OpenBSD port by Kevin Lo <kevlo@openbsd.org>
 # $OpenBSD: Makefile,v 1.6 2000/12/10 15:00:14 kevlo Exp $
-# $FreeBSD: ports/www/august/Makefile,v 1.2 2001/01/09 16:43:01 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	august
@@ -27,10 +27,10 @@ do-patch:
 		${WRKSRC}/august
 
 pre-install:
-	${ECHO} bin/august > ${PLIST}
+	${ECHO_CMD} bin/august > ${PLIST}
 .if !defined(NOPORTDOCS)
-	${ECHO} share/doc/august/specchars.txt >> ${PLIST}
-	${ECHO} @dirrm share/doc/august >> ${PLIST}
+	${ECHO_CMD} share/doc/august/specchars.txt >> ${PLIST}
+	${ECHO_CMD} @dirrm share/doc/august >> ${PLIST}
 .endif
 
 do-install:

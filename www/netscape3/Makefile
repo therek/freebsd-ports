@@ -2,7 +2,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.42 2001/01/01 10:15:16 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	netscape
@@ -43,7 +43,7 @@ pre-install:
 post-install:
 .if defined(WITH_128BIT)
 	cd ${WRKDIR}/${FORTIFY} \
-	&& (${ECHO}; ${ECHO} yes; ${ECHO} no; ${ECHO} no) \
+	&& (${ECHO_CMD}; ${ECHO_CMD} yes; ${ECHO_CMD} no; ${ECHO_CMD} no) \
 	| ./Fortify.sh ${PREFIX}/lib/netscape/netscape.bin
 .endif
 	@${CAT} ${DESCR}

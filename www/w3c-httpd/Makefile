@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			pst (orig)
 #
-# $FreeBSD: ports/www/w3c-httpd/Makefile,v 1.25 2001/02/05 15:33:54 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	w3c-httpd
@@ -26,7 +26,7 @@ pre-configure:
 	@${ECHO_MSG} "Set the environment variable MD5_PW if you want MD5 encrypted passwords."
 	@${ECHO_MSG} ""
 .else
-	@${ECHO} "CFLAGS += -DMD5_PW" >> ${WRKDIR}/All/${OSNAME}/Makefile.include
+	@${ECHO_CMD} "CFLAGS += -DMD5_PW" >> ${WRKDIR}/All/${OSNAME}/Makefile.include
 .endif
 
 do-install:

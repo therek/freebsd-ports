@@ -2,7 +2,7 @@
 # Date created:				18 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/webfs/Makefile,v 1.11 2001/06/03 12:27:51 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webfs
@@ -31,7 +31,7 @@ do-install:
 	@${INSTALL_MAN} ${WRKSRC}/webfsd.man ${PREFIX}/man/man1/webfsd.1
 .if !exists(${PREFIX}/etc/webfsd/mime.types)
 	@${MKDIR} ${PREFIX}/etc/webfsd
-	@${ECHO} "# Insert mime types here" > ${PREFIX}/etc/webfsd/mime.types
+	@${ECHO_CMD} "# Insert mime types here" > ${PREFIX}/etc/webfsd/mime.types
 .endif
 
 .include <bsd.port.post.mk>
