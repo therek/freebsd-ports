@@ -26,9 +26,6 @@ upgrades.
         | xargs -0 pkg_which -fv | sed -e '/: ?/d' -e 's/.*: //')|sort -u`
       This is likely to fail for a few ports, you'll have to upgrade them
       afterwards by hand.
-      Please note, that this last step is, strictly speaking, not necessary,
-      if you are upgrading from 5.8.[45] to 5.8.6, or from 5.6.1 to
-      5.6.2.  But it is cleaner to do so anyway.
 
 20050130:
   AFFECTS: users of PostgreSQL
@@ -1557,4 +1554,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.143 2005/01/31 00:35:38 girgen Exp $
+$FreeBSD: ports/UPDATING,v 1.144 2005/02/01 13:37:19 tobez Exp $
