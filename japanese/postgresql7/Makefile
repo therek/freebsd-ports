@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.26 2001/06/01 06:04:56 obrien Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.27 2001/06/12 14:45:12 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -190,7 +190,7 @@ post-install:
 .endif
 
 post-clean:
-	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/work/Makefile.inc
+	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 post-extract: ${POSTEXTRACT}
 
