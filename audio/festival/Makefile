@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.2 2000/09/17 10:06:24 green Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.3 2000/10/02 05:38:36 trevor Exp $
 #
 
 PORTNAME=	festival
@@ -45,9 +45,9 @@ EXTRA_PATCHES=	${FILESDIR}/patch-aa-ogi
 RESTRICTED=	no-commercial-use
 .endif
 
-PLIST=		${PKGDIR}/PLIST
+PLIST=		${PKGDIR}/pkg-plist
 .if defined (WITH_OGI)
-PLIST=		${PKGDIR}/PLIST-ogi
+PLIST=		${PKGDIR}/pkg-plist-ogi
 .endif
 
 WRKSRC=		${WRKDIR}
