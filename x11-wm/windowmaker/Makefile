@@ -3,7 +3,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.58 1999/09/21 00:59:37 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.59 1999/09/21 01:00:55 cpiazza Exp $
 
 DISTNAME=	WindowMaker-0.61.0
 PKGNAME=	windowmaker-0.61.0
@@ -44,6 +44,10 @@ CONFIGURE_ARGS+=	--enable-gnome
 
 .if defined(USE_KDE)
 CONFIGURE_ARGS+=	--enable-kde
+.endif
+
+.if defined(USE_SINGLE_ICON)
+CONFIGURE_ARGS+=	--enable-single-icon
 .endif
 
 .SILENT:
