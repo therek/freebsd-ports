@@ -3,11 +3,11 @@
 # Date created:			Feb 21, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/filepp/Makefile,v 1.1 2001/02/21 06:05:31 ijliao Exp $
 #
 
 PORTNAME=	filepp
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.2
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.cabaret.demon.co.uk/filepp/
 
