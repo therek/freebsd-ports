@@ -3,12 +3,13 @@
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/nethirc/Makefile,v 1.1.1.1 1999/12/22 19:42:16 jedgar Exp $
 #
 
 DISTNAME=	nethirc-0.04
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.nog.net/pub/tony/nethirc/
+# broken - MASTER_SITES=	ftp://ftp.nog.net/pub/tony/nethirc/
+MASTER_SITES=	http://www.freebsd.org/~cpiazza/distfiles/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	andrews@technologist.com
