@@ -2,13 +2,13 @@
 # Date created:				14 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/morpheus/Makefile,v 1.1 2000/09/14 09:04:27 sobomax Exp $
+# $FreeBSD: ports/graphics/morpheus/Makefile,v 1.2 2000/10/05 07:10:47 reg Exp $
 #
 
 PORTNAME=	morpheus
 PORTVERSION= 	0.3
 CATEGORIES=	graphics gnome
-MASTER_SITES=	http://wine.sexcity.pl/morpheus/
+MASTER_SITES=	http://wine.sexcity.pl/morpheus/meat/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
