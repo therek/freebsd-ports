@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.14 2000/04/17 00:17:50 reg Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.15 2000/06/01 16:25:11 ade Exp $
 #
 
 PORTNAME=	BitchX
@@ -11,7 +11,7 @@ CATEGORIES=	irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
 
-MAINTAINER=	calle.madestrand@norrgarden.se
+MAINTAINER=	cj@vallcom.net
 
 .if defined(WITH_GNOME)
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs

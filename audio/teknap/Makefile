@@ -2,7 +2,7 @@
 # Date created:				29 Mar 2000
 # Whom:					Carl Johan Madestrand
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/bwap/Makefile,v 1.1 2000/06/10 06:58:32 will Exp $
 #
 
 PORTNAME=	BWap
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BWap/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
 
-MAINTAINER=	calle.madestrand@norrgarden.se
+MAINTAINER=	cj@vallcom.net
 
 WRKSRC=		${WRKDIR}/BWap
 GNU_CONFIGURE=	yes
