@@ -2,7 +2,7 @@
 # Date created:		19 August 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-generic/Makefile,v 1.8 1999/08/31 06:46:23 mharo Exp $
+# $FreeBSD: ports/japanese/tcsh-nls-generic/Makefile,v 1.9 2000/04/12 14:37:52 knu Exp $
 #
 
 PORTNAME=	tcsh-nls
@@ -15,7 +15,11 @@ DISTNAME=	tcsh-${PORTVERSION}.add2
 MAINTAINER=	issei@jp.FreeBSD.org
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
-RUN_DEPENDS=	tcsh:${PORTSDIR}/japanese/tcsh
+
+.include <bsd.port.pre.mk>
+.if ${OSVERSION} >= 500006 || ${OSVERSION} < 500000 && ${OSVERSION} >= 400021
+FORBIDDEN=	tcsh in base system cannot deal with local message catalogs yet
+.endif
 
 CATALOGNAME?=	generic
 
@@ -64,4 +68,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

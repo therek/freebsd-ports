@@ -2,7 +2,7 @@
 # Date created:		29 November 1997
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh/Makefile,v 1.11 1999/08/31 06:46:32 mharo Exp $
+# $FreeBSD: ports/japanese/tcsh/Makefile,v 1.12 2000/04/12 14:37:49 knu Exp $
 #
 
 PORTNAME=	tcsh
@@ -11,6 +11,11 @@ CATEGORIES=	japanese shells
 MASTER_SITES=	ftp://ftp.astron.com/pri/
 
 MAINTAINER=	issei@jp.FreeBSD.org
+
+.include <bsd.port.pre.mk>
+.if ${OSVERSION} >= 500006 || ${OSVERSION} < 500000 && ${OSVERSION} >= 400021
+FORBIDDEN=	"Japanese support is already in the base system"
+.endif
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	all catalogs
@@ -34,4 +39,4 @@ post-install:
 	@(${GREP} -v ${PREFIX}/bin/tcsh /etc/shells.bak; ${ECHO} ${PREFIX}/bin/tcsh) >/etc/shells
 	@${CAT} ${PKGDIR}/MESSAGE
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
