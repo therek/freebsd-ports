@@ -2,14 +2,14 @@
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/alevt/Makefile,v 1.8 2000/07/04 07:12:42 sobomax Exp $
+# $FreeBSD: ports/misc/alevt/Makefile,v 1.9 2000/10/16 08:14:52 roger Exp $
 #
 
 PORTNAME=	alevt
 PORTVERSION=	1.6.0
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://user.exit.de/froese/alevt/
+		http://user.exit.mytoday.de/froese/alevt/
 MASTER_SITE_SUBDIR=	apps/video
 
 MAINTAINER=	roger@freebsd.org
