@@ -4,7 +4,7 @@
 # Date created:         14 Feb 1998
 # Whom:                 obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.13 1999/08/31 02:43:03 peter Exp $
+# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.14 1999/08/31 06:51:55 mharo Exp $
 #
 
 DISTNAME=	communicator-v407-us.x86-unknown-linux2.0_libc5
@@ -33,7 +33,7 @@ BINDIR=		${PREFIX}/bin
 .if !defined(USA_RESIDENT) || (${USA_RESIDENT} != YES && ${USA_RESIDENT} != yes && ${USA_RESIDENT} != NO && ${USA_RESIDENT} != no)
 pre-fetch:
 	@${ECHO}
-	@${ECHO} You must set variable USA_RESIDENT to YES, if you are USA or 
+	@${ECHO} You must set variable USA_RESIDENT to YES, if you are USA or
 	@${ECHO} Canadian resident, in order to build this package.
 	@${ECHO} There is no version of this port for NON-USA and NON-Canadian users.
 	@${ECHO}
