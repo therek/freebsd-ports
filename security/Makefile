@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.211 2001/07/20 09:07:31 ijliao Exp $
+# $FreeBSD: ports/security/Makefile,v 1.212 2001/07/23 09:03:40 ijliao Exp $
 #
 
     SUBDIR += aafid2
@@ -167,6 +167,7 @@
     SUBDIR += snort
     SUBDIR += snort-rep
     SUBDIR += srm
+    SUBDIR += srp
     SUBDIR += ssh
     SUBDIR += ssh-multiadd
     SUBDIR += ssh2
