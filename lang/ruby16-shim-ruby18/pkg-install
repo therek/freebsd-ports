@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby16-shim-ruby18/pkg-install,v 1.1 2002/06/08 17:24:55 knu Exp $
 
 PKGNAME=$1
 PKG_DBDIR=${PKG_DBDIR:-/var/db/pkg}
@@ -15,6 +15,7 @@ delete_modules () {
 	dl
 	fileutils
 	fnmatch
+	optparse
 	racc-runtime
 	strscan
     "
