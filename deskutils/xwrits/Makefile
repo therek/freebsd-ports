@@ -2,11 +2,11 @@
 # Date created:		02 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/deskutils/xwrits/Makefile,v 1.4 2000/04/30 00:18:24 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwrits
-PORTVERSION=	2.15
+PORTVERSION=	2.21
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/xwrits/
 
