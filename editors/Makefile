@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.149 2001/06/12 07:34:38 ijliao Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.150 2001/06/26 01:45:06 dwcjr Exp $
 #
 
     SUBDIR += AbiWord
@@ -69,6 +69,7 @@
     SUBDIR += le
     SUBDIR += led
     SUBDIR += leim20
+    SUBDIR += lfhex
     SUBDIR += lpe
     SUBDIR += manedit
     SUBDIR += mg
