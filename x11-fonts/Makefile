@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/Makefile,v 1.6 1999/08/31 02:58:26 peter Exp $
 #
 
     SUBDIR += Xg
@@ -6,6 +6,7 @@
     SUBDIR += etlfonts
     SUBDIR += freefonts
     SUBDIR += getbdf
+    SUBDIR += nexfontsel
     SUBDIR += p5-type1inst
     SUBDIR += sharefonts
     SUBDIR += tkfont
