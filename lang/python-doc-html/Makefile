@@ -3,7 +3,7 @@
 # Date created:         12 May 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.4 1999/08/31 06:46:55 mharo Exp $
+# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.5 2000/04/06 11:51:23 tg Exp $
 #
 
 DISTNAME=	${DOCFORMAT}-${VERSION}
