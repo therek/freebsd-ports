@@ -2,13 +2,15 @@
 # Date created:			  6 May 2000
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/siphon/Makefile,v 1.1 2000/05/06 22:51:31 kris Exp $
+# $FreeBSD: ports/security/siphon/Makefile,v 1.2 2000/06/02 03:18:45 will Exp $
 #
 
 PORTNAME=	siphon
 PORTVERSION=	0.666
 CATEGORIES=	security
-MASTER_SITES=	http://www.subterrain.net/projects/siphon/
+MASTER_SITES=	ftp://ftp.man.szczecin.pl/pub7/security/network-mapping/siphon/ \
+		ftp://the.ausmac.net/sd3a/security/network-mapping/siphon/
+# http://www.subterrain.net/projects/siphon/
 DISTFILES=	siphon-v.666.tar.gz siphon-report.pl
 EXTRACT_ONLY=	siphon-v.666.tar.gz
 
