@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.104 2001/03/11 00:03:01 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.105 2001/05/22 18:16:57 sobomax Exp $
 #
 
 PORTNAME=	mutt
@@ -109,7 +109,8 @@ post-install:
 	@cd ${WRKSRC}/doc ; ${INSTALL_MAN} manual.txt PGP-Notes.txt \
 		${PREFIX}/share/doc/mutt
 .if defined(WITH_DOCS)
-	env MANMODE=0755 ${INSTALL_MAN} -d ${PREFIX}/share/doc/mutt/html
+	${INSTALL} ${COPY} -o ${MANOWN} -g ${MANGRP} -m 0755 \
+	    -d ${PREFIX}/share/doc/mutt/html
 	${INSTALL_MAN} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/mutt/html
 	${INSTALL_MAN} ${WRKSRC}/doc/*.latin1 ${PREFIX}/share/doc/mutt
 .endif
