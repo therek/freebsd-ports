@@ -2,7 +2,7 @@
 # Date created:				January 27, 1999
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/lang/gpc/Makefile,v 1.4 2001/01/10 14:02:24 sf Exp $
+# $FreeBSD$
 
 PORTNAME=	gpc
 PORTVERSION=	2.0
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://agnes.dida.physik.uni-essen.de/gnu-pascal/beta/
 DISTNAME=	gpc-19990118
 
 MAINTAINER=	antonz@library.ntu-kpi.kiev.ua
+
+BROKEN=		"Does not package correctly"
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/lang/gcc28:patch
 
