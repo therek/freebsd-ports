@@ -6,6 +6,18 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041208:
+  AFFECTS: users of mail/getmail
+  AUTHOR: question+fbsdports@closedsrc.org
+
+  There is a known quirk when using mail/getmail with Python 2.4
+  where the DeprecationWarning is printed regarding the use of
+  the 'strict' keyword when a message is being retrieved.
+
+  You can redirect stdout/stderr to /dev/null to quelch the warning.
+
+  The quirk may be fixed in a future version of getmail.
+
 20041205:
   AFFECTS: users of multimedia/ffmpeg
   AUTHOR: lioux@FreeBSD.org
@@ -1195,4 +1207,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.109 2004/12/05 18:40:34 lioux Exp $
+$FreeBSD: ports/UPDATING,v 1.110 2004/12/06 05:32:04 perky Exp $
