@@ -2,11 +2,11 @@
 # Date created:		2000/02/19
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/java/cryptix-jce/Makefile,v 1.3 2000/02/22 05:37:05 kuriyama Exp $
+# $FreeBSD: ports/java/cryptix-jce/Makefile,v 1.4 2000/04/12 06:13:47 obrien Exp $
 #
 
 PORTNAME=	cryptix-jce
-PORTVESION=	20000211
+PORTVERSION=	20000211
 CATEGORIES=	java security
 MASTER_SITES=	http://cvs.cryptix.org/~gelderen/
 
