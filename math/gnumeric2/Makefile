@@ -2,12 +2,11 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.45 2000/11/02 21:20:23 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.46 2000/11/14 14:10:14 ade Exp $
 #
 
 PORTNAME=	gnumeric
-PORTVERSION=	0.57
-PORTREVISION=	2
+PORTVERSION=	0.58
 CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnumeric
