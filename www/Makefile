@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.372 2001/06/18 14:11:20 wjv Exp $
+# $FreeBSD: ports/www/Makefile,v 1.373 2001/06/19 01:59:09 jeh Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -47,6 +47,7 @@
     SUBDIR += chimera2
     SUBDIR += comclear
     SUBDIR += comline
+    SUBDIR += crawl
     SUBDIR += css-mode.el
     SUBDIR += decss
     SUBDIR += demoroniser
