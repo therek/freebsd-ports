@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/editors/AbiWord/files/patch-src::wp::ap::unix::ap_UnixApp.cpp,v 1.2 2001/12/17 12:54:07 sobomax Exp $
 
 --- src/wp/ap/unix/ap_UnixApp.cpp.orig	Thu Dec  6 09:00:14 2001
 +++ src/wp/ap/unix/ap_UnixApp.cpp	Mon Dec 17 13:49:48 2001

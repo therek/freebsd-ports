@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/editors/AbiWord/files/patch-..::wv::magick::Makefile.in,v 1.1 2001/08/08 15:46:45 sobomax Exp $
 
 --- ../wv/magick/Makefile.in	2001/08/08 11:44:02	1.1
 +++ ../wv/magick/Makefile.in	2001/08/08 11:44:13

@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/editors/AbiWord/files/patch-an,v 1.4 2002/06/05 20:05:40 marcus Exp $
 
 --- src/Makefile.orig	Thu May 30 17:51:53 2002
 +++ src/Makefile	Wed Jun  5 15:47:41 2002
