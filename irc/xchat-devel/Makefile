@@ -2,11 +2,11 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.76 2001/05/17 20:12:05 jim Exp $
+# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.77 2001/06/02 15:39:13 jim Exp $
 #
 
 PORTNAME=		xchat
-PORTVERSION=		1.7.6
+PORTVERSION=		1.7.7
 CATEGORIES=		irc gnome
 MASTER_SITES=		http://xchat.org/files/source/1.7/ \
 			http://xchat.linuxpower.org/files/source/1.7/
