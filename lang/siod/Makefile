@@ -2,15 +2,16 @@
 # Date created:        28 April 1999
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/lang/siod/Makefile,v 1.8 2000/06/16 08:18:55 sobomax Exp $
+# $FreeBSD: ports/lang/siod/Makefile,v 1.9 2000/06/16 21:51:25 asami Exp $
 #
 
 PORTNAME=	siod
 PORTVERSION=	3.4
 CATEGORIES=	lang
 MASTER_SITES=	http://people.delphi.com/gjc/\
-		ftp://ftp.std.com/pub/gjc/ \
-		http://freefall.freebsd.org/~jkoshy/PORTS/
+		http://siag.nu/online-docs/siod/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR= jkoshy
 DISTNAME=	siod
 EXTRACT_SUFX=	.tgz
 
