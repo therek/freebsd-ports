@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.136 2001/09/18 14:58:12 wjv Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.137 2001/09/21 05:43:55 knu Exp $
 #
 
     SUBDIR += adodb
@@ -28,6 +28,7 @@
     SUBDIR += jdbc-oracle816
     SUBDIR += libgda
     SUBDIR += libiodbc
+    SUBDIR += libodbc++
     SUBDIR += libsdb
     SUBDIR += mdbtools
     SUBDIR += metakit
