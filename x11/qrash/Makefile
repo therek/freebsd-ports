@@ -2,7 +2,7 @@
 # Date created:		Oct 27, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/qrash/Makefile,v 1.2 2000/03/31 08:01:57 mharo Exp $
+# $FreeBSD: ports/x11/qrash/Makefile,v 1.3 2000/04/13 19:09:59 cpiazza Exp $
 #
 
 PORTNAME=	qrash
@@ -19,7 +19,12 @@ MAINTAINER=	trevor@jpj.net
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=      yes
-ALL_TARGET=	qrash
 USE_X_PREFIX=	yes
+
+ALL_TARGET=	qrash
+
+post-patch:
+	@${PERL} -pi -e "s=PREFIX=${PREFIX}=g" ${WRKSRC}/resource.cc
+	@${PERL} -pi -e "s=/usr/X11=${PREFIX}=g" ${WRKSRC}/configure
 
 .include <bsd.port.mk>
