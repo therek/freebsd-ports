@@ -2,7 +2,7 @@
 # Date created:        30 August 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/astro/xtide/Makefile,v 1.12 2000/04/30 00:04:29 steve Exp $
+# $FreeBSD: ports/astro/xtide/Makefile,v 1.13 2000/06/11 19:26:00 alex Exp $
 #
 
 PORTNAME=	xtide
@@ -18,12 +18,15 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		png.3:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 MAN1=	xtide.1 tide.1
 MANCOMPRESSED=	no
 
 post-extract:
 	@${GZCAT} ${DISTDIR}/harmonics.world.gz > ${WRKSRC}/harmonics
+
+post-patch:
+	@${PERL} -pi -e "s:%%PREFIX%%:${PREFIX}:g" ${WRKSRC}/TideContext.cc
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xtide ${PREFIX}/bin
