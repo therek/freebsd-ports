@@ -3,7 +3,7 @@
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.8 2000/06/07 17:44:38 obrien Exp $
+# $FreeBSD: ports/devel/libg++/Makefile,v 1.9 2000/06/29 02:31:25 asami Exp $
 #
 
 PORTNAME=	libg++
@@ -16,10 +16,11 @@ MASTER_SITES=	http://www.m-hollstein.de/libgxx/  \
 		ftp://ftp.ninemoons.com/pub/mirrors/egcs/infrastructure/  \
 		${MASTER_SITE_GNU}
 
-PATCH_SITES=	http://www.m-hollstein.de/libgxx/  \
-		${MASTER_SITE_LOCAL}
-PATCH_SITE_SUBDIR=	obrien
-PATCHFILES=	${DISTNAME}-20000312.diff.gz
+PATCH_SITES=	http://www.cygnus.com/~manfredh/libgxx/  \
+PATCHFILES=	${DISTNAME}-20000312.diff.gz  \
+		${DISTNAME}-20000419.diff.gz  \
+		${DISTNAME}-20000816.diff.gz  \
+		${DISTNAME}-20000914.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
@@ -27,8 +28,6 @@ MAINTAINER=	obrien@FreeBSD.org
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 PLIST_SUB=	GCC28SUBDIR=${GCC28DIR}
 USE_NEWGCC=	yes
-
-BROKEN=		"Does not build - compiler error"
 
 pre-configure:
 	@${CP} -p ${FILESDIR}/Makefile.libg++ ${WRKSRC}/Makefile
