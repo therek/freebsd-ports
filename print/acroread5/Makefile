@@ -2,13 +2,13 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.25 2000/04/14 13:18:13 asami Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.26 2000/05/14 22:06:33 obrien Exp $
 #
 
 PORTNAME=	acroread
 PORTVERSION=	4.05
 CATEGORIES=	print linux
-MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
+MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 .include <bsd.port.pre.mk>
 .if ${ARCH} == "i386"
 DISTNAME=	linux-ar-405
