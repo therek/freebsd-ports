@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.338 2004/03/05 15:03:41 netchild Exp $
+# $FreeBSD: ports/LEGAL,v 1.339 2004/03/09 23:09:22 linimon Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -252,6 +252,7 @@ newkind*		ports/games/newkind	Reverse-engineered version of
 nntpcache-*		ports/news/nntpcache	Commercial or government use
 						requires licence
 nte-1.*			ports/mbone/nte		Crypto; export-controlled
+nwrite			ports/misc/nwrite	ownership in dispute
 ORBacus			ports/devel/ORBacus	non commercial use only.
 openssl-*		ports/security/openssl	Crypto; export/import-controlled
 orion-*			ports/java/orion	Redistribution of binaries is not permitted
