@@ -2,7 +2,7 @@
 # Date created:				10 June 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/fpm/Makefile,v 1.1 2001/06/27 21:40:54 will Exp $
 #
 
 PORTNAME=	fpm
@@ -47,5 +47,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/fpm
 .endfor
 .endif
+	@${ECHO} "========================================================================="
+	@${ECHO} "Make sure you set up a few IRQ's for random generation with rndcontrol before"
+	@${ECHO} "expecting password generation to work well."
+	@${ECHO} "========================================================================="
 
 .include <bsd.port.mk>
