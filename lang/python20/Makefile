@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.70 2000/10/08 02:21:24 asami Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.71 2000/10/18 11:58:44 tg Exp $
 #
 
 PORTNAME=	python
@@ -75,6 +75,12 @@ post-configure:
 .endfor
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
+LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
+CFLAGS+=	-I${LOCALBASE}/include/ncurses -I${LOCALBASE}/include
+CONFIGURE_ENV+=	LDFLAGS="-L${LOCALBASE}/lib"
+.endif
 
 .if ${OSVERSION} >= 500000 && ${OSVERSION} < 500005
 CONFIGURE_ARGS+= --with-libs='-lxpg4'
