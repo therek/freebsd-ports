@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.109 2000/10/29 21:52:11 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.110 2000/10/31 17:28:21 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -91,6 +91,7 @@
     SUBDIR += xbae
     SUBDIR += xclasses
     SUBDIR += xenophilia
+    SUBDIR += xenostep
     SUBDIR += xforms
     SUBDIR += xg
     SUBDIR += xmhtml
