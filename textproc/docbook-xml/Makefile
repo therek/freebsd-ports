@@ -2,14 +2,14 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.8 1999/12/04 02:08:53 kuriyama Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.9 2000/04/09 21:52:27 cpiazza Exp $
 #
 
 PORTNAME=	docbook-xml
-PORTVERSION= 	3.1.7
+PORTVERSION= 	4.0
 CATEGORIES=	textproc
-MASTER_SITES=	http://nwalsh.com/docbook/xml/3.1.7/
-DISTNAME=	db3x317
+MASTER_SITES=	http://www.oasis-open.org/docbook/xml/4.0/
+DISTNAME=	docbkx40
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
@@ -24,7 +24,7 @@ ENTDIR=		${INSTDIR}/entity
 MISCDIR=	${INSTDIR}/misc/docbook
 DTDFILES=	calstblx.dtd dbcentx.mod dbgenent.ent dbhierx.mod \
 		dbnotnx.mod dbpoolx.mod docbookx.dtd soextblx.dtd
-MISCFILES=	COPYRIGHT ChangeLog README VERSION test.xml
+MISCFILES=	40chg.txt readme.txt
 
 pre-install:
 	@[ -d ${INSTDIR} ] || ${MKDIR} ${INSTDIR}
