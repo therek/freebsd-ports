@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.3 2000/08/18 02:12:31 knu Exp $
+# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.4 2000/09/07 07:44:32 knu Exp $
 #
 
 PORTNAME=	tcpwrap
@@ -10,7 +10,7 @@ PORTVERSION=	0.1
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.ruby-lang.org/~shugo/ruby-tcpwrap/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
+DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -23,7 +23,7 @@ LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-WRKSRC=		${WRKDIR}/${PKGNAMEPREFIX}${PORTNAME}
+WRKSRC=		${WRKDIR}/ruby-${PORTNAME}
 CONFIGURE_ARGS=	--with-ident-dir="${LOCALBASE}"
 .if !exists(/usr/include/tcpd.h)
 CONFIGURE_ARGS+=	--with-libwrap-dir="/usr"
