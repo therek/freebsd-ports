@@ -2,14 +2,15 @@
 # Date created:				16 December 1999
 # Whom:					Matt Behrens <matt@zigg.com>
 #
-# $FreeBSD: ports/security/pgpgpg/Makefile,v 1.1 1999/12/27 01:58:10 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgpgpg
 PORTVERSION=	0.13
 CATEGORIES=	security
-MASTER_SITES=	http://www.nessie.de/mroth/pgpgpg/ \
-		ftp://ftp.gnupg.org/pub/gcrypt/pgpgpg/
+MASTER_SITES=	${MASTER_SITE_GNUPG} \
+		http://www.nessie.de/mroth/%SUBDIR%/
+MASTER_SITE_SUBDIR=	pgpgpg
 
 MAINTAINER=	matt@zigg.com
 
