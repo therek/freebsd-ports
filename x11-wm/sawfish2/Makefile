@@ -2,11 +2,11 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.44 2001/03/29 16:35:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sawfish
-PORTVERSION=	0.38
+PORTVERSION=	0.99
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sawmill
