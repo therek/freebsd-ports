@@ -2,7 +2,7 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.13 2000/06/18 19:25:56 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.14 2000/06/22 17:08:02 ume Exp $
 #
 
 PORTNAME=	gkrellm
@@ -59,6 +59,8 @@ do-install:
 .for file in ${INCLUDES}
 	${INSTALL_DATA} ${WRKSRC}/src/${file} ${PREFIX}/include/gkrellm
 .endfor
+	@${MKDIR} ${PREFIX}/libexec/gkrellm/plugins
+	@${MKDIR} ${PREFIX}/share/gkrellm/themes
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/gkrellm
 .for file in ${DOCS}
