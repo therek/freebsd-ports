@@ -6,6 +6,14 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040512:
+  AFFECTS: users of print/teTeX
+
+  The print/teTeX no longer installs dvipsk by default.  To build and
+  install dvipsk, you have to specify WITH_DVIPSK, or the dvipsk utility
+  in the print/teTeX is also available print/dvipsk-tetex separately.
+  This change is to resolve conflicts between various versions of dvips.
+
 20040504:
   AFFECTS: users of mail/drac
 
@@ -179,4 +187,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.15 2004/04/30 21:44:50 nork Exp $
+$FreeBSD: ports/UPDATING,v 1.16 2004/05/04 12:56:55 nork Exp $
