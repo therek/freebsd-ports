@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.219 1999/09/06 12:47:02 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.220 1999/09/07 06:26:32 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -19,6 +19,7 @@
     SUBDIR += chasen
     SUBDIR += chimera
     SUBDIR += csrd
+    SUBDIR += dbskkd-cdb
     SUBDIR += deepforest
     SUBDIR += diclookup-mule
     SUBDIR += dserver
