@@ -2,15 +2,15 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.7 2001/05/06 17:01:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	syslog
-PORTVERSION=	20010130
-PORTREVISION=	1
+PORTVERSION=	20011121
 CATEGORIES=	sysutils ruby
-MASTER_SITES=	http://www.utdallas.edu/~amos/ruby/
+MASTER_SITES=	http://www.ruby-lang.org/~knu/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
+DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -20,13 +20,16 @@ USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
-post-extract:
-	${RM} ${WRKSRC}/depend
+DOCS=		ChangeLog syslog.txt
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/syslog/
-	${INSTALL_DATA} ${WRKSRC}/0README ${RUBY_DOCDIR}/syslog/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/
+.for f in ${DOCS}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+.endfor
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/test.rb ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endif
 
 .include <bsd.port.mk>
