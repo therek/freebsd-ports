@@ -2,7 +2,7 @@
 # Date created:			17 May 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/palm/hdconv/Makefile,v 1.6 2000/09/22 17:22:24 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hdconv
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.SilberSoft.com/pub/Software/Database/HanDBase/
 DISTNAME=	handbase_desktop_${PORTVERSION:S/./_/}.i386-any-linux2.0
 
 MAINTAINER=	knu@FreeBSD.org
+
+BUILD_DEPENDS=	${LINUXBASE}/usr/bin/strip:${PORTSDIR}/devel/linux_devtools-7
 
 USE_LINUX=	yes
 
