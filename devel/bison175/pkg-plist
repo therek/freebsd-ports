@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/bison/pkg-plist,v 1.15 2003/07/29 06:35:27 daichi Exp $
+@comment $FreeBSD: ports/devel/bison/pkg-plist,v 1.16 2004/03/28 16:26:57 krion Exp $
 bin/bison
 %%DATADIR%%/c.m4
 %%DATADIR%%/glr.c
@@ -19,5 +19,6 @@ bin/bison
 %%NLS%%share/locale/ru/LC_MESSAGES/bison.mo
 %%NLS%%share/locale/sv/LC_MESSAGES/bison.mo
 %%NLS%%share/locale/tr/LC_MESSAGES/bison.mo
+%%NLS%%@unexec rmdir %D/share/locale/hr/LC_MESSAGES 2> /dev/null || true
 @dirrm %%DATADIR%%/m4sugar
 @dirrm %%DATADIR%%
