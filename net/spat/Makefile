@@ -2,11 +2,11 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/spat/Makefile,v 1.1 2000/10/31 12:41:16 sobomax Exp $
 #
 
 PORTNAME=	spat
-PORTVERSION= 	0.9.9.1
+PORTVERSION= 	1.0
 CATEGORIES=	net gnome
 MASTER_SITES=	http://spat.codehost.com/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.1$/-1/}.src
@@ -21,15 +21,13 @@ USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-lcompat -L${LOCALBASE}/lib"
+
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
-
-pre-configure:
-	@${RM} -f ${WRKSRC}/config.cache
 
 post-install:
 	${MKDIR} ${PREFIX}/share/gnome/apps/Applications \
