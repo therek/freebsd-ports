@@ -2,7 +2,7 @@
 # Date created:		03 Apr 2001
 # Whom:			brian
 #
-# $FreeBSD: ports/sysutils/dvdtape/Makefile,v 1.4 2001/07/07 17:47:57 brian Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvdtape
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/dvdtape/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/disk-management
 
-MAINTAINER=	brian@FreeBSD.org
+MAINTAINER=	ports@freebsd-services.com
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
