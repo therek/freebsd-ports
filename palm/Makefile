@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.14 2000/03/21 17:59:42 ade Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.15 2000/03/31 03:40:36 kuriyama Exp $
 #
 
     SUBDIR += coldsync
@@ -12,6 +12,9 @@
     SUBDIR += palmos-sdk
     SUBDIR += pilot-link
     SUBDIR += pilot_makedoc
+    SUBDIR += prc-tools
+    SUBDIR += prc-tools-binutils
+    SUBDIR += prc-tools-gcc
     SUBDIR += syncal
     SUBDIR += xcopilot
 
