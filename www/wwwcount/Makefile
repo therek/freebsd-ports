@@ -2,7 +2,7 @@
 # Date created:         16 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/wwwcount/Makefile,v 1.17 2000/04/10 00:07:25 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wwwcount
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.muquit.com/muquit/software/Count/src/wwwcount2.5/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	dervish@ikhala.tcimet.net
+MAINTAINER=	ports@freebsd.org
 
 GNU_CONFIGURE=	yes
 IS_INTERACTIVE=	yes
