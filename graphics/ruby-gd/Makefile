@@ -2,7 +2,7 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.1 2000/10/02 14:43:54 knu Exp $
 #
 
 PORTNAME=	GD
@@ -29,7 +29,11 @@ INSTALL_TARGET=	site-install
 .include <bsd.port.pre.mk>
 
 # Hmm, GREP and TRUE seem to be defined in the bsd.port.post.mk stage.
+.if exists(${LOCALBASE}/bin/gd2topng)
 WITH_X11_CHECK!=	ldd ${LOCALBASE}/bin/gd2topng | grep -w 'libX11\.so' || true
+.else
+WITH_X11_CHECK=	#empty
+.endif
 
 .if !empty(WITH_X11_CHECK)
 USE_XLIB=	yes
