@@ -2,11 +2,12 @@
 # Date created:        8 July 1997
 # Whom:                Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD: ports/audio/cdplay/Makefile,v 1.6 2000/04/08 21:23:23 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdplay
 PORTVERSION=	0.92
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dannyboy
