@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.75 2000/12/01 04:55:26 keith Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.76 2000/12/02 16:31:48 vanilla Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -58,6 +58,7 @@
     SUBDIR += tocps
     SUBDIR += ttfm
     SUBDIR += ve
+    SUBDIR += vflib
     SUBDIR += wangttf
     SUBDIR += xa+cv
     SUBDIR += xcin
