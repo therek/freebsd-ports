@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE vuxml PUBLIC "-//vuxml.org//DTD VuXML 1.1//EN" "http://www.vuxml.org/dtd/vuxml-1/vuxml-11.dtd">
 <!--
-Copyright 2003, 2004 Jacques Vidrine and contributors
+Copyright 2003-2005 Jacques Vidrine and contributors
 
 Redistribution and use in source (VuXML) and 'compiled' forms (SGML,
 HTML, PDF, PostScript, RTF and so forth) with or without modification,
@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.452 2005/01/10 22:20:50 niels Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.453 2005/01/11 00:33:20 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
