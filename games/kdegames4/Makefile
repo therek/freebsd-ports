@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/games/kdegames11/Makefile,v 1.34 1999/09/18 03:12:05 steve Exp $
+# $FreeBSD: ports/games/kdegames11/Makefile,v 1.35 1999/09/18 09:02:04 se Exp $
 #
 
 DISTNAME=	kdegames-1.1.2
@@ -13,8 +13,7 @@ MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	se@freebsd.org
 
-LIB_DEPENDS=	gif.5:${PORTSDIR}/graphics/giflib \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		QwSpriteField.6:${PORTSDIR}/converters/kdesupport11
 

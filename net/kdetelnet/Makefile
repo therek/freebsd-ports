@@ -3,7 +3,7 @@
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.4 1999/08/30 14:23:05 peter Exp $
+# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.5 1999/09/18 03:12:07 steve Exp $
 #
 
 DISTNAME=	ktelnet-0.61
@@ -16,7 +16,6 @@ MAINTAINER=	hanspb@persbraten.vgs.no
 
 BUILD_DEPENDS=	moc:${PORTSDIR}/x11-toolkits/qt142
 LIB_DEPENDS=	qt.2:${PORTSDIR}/x11-toolkits/qt142 \
-		gif.5:${PORTSDIR}/graphics/giflib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11

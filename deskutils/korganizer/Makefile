@@ -3,7 +3,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/deskutils/korganizer/Makefile,v 1.14 1999/08/25 05:26:42 obrien Exp $
+# $FreeBSD: ports/deskutils/korganizer/Makefile,v 1.15 1999/09/18 03:12:08 steve Exp $
 #
 
 DISTNAME=	korganizer-1.1
@@ -13,8 +13,7 @@ MASTER_SITE_SUBDIR=stable/1.1/distribution/tar/generic/source/bz2
 
 MAINTAINER=	hanspb@persbraten.vgs.no
 
-LIB_DEPENDS=	gif.5:${PORTSDIR}/graphics/giflib \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11
 
