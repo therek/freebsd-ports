@@ -3,7 +3,7 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.35 1999/08/31 06:45:23 mharo Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.36 1999/09/07 10:45:31 steve Exp $
 #
 
 DISTNAME=	xv-3.10a
@@ -48,6 +48,9 @@ post-patch:
 	@${PATCH} ${PATCH_ARGS} -p1 < ${XVDIST}/xv-png-1.2d.patch
 	@${PATCH} ${PATCH_ARGS} -p1 < ${XVDIST}/png-1.2d-fix.patch
 	@${PATCH} ${PATCH_ARGS} -p1 < ${XVDIST}/jp-ext-bzip2.patch
+	@${MV} ${WRKSRC}/config.h ${WRKSRC}/config.h.in
+	@${CAT} ${WRKSRC}/config.h.in | \
+		${SED} -e "s@%%LOCALBASE%%@${LOCALBASE}@" > ${WRKSRC}/config.h
 
 post-install:
 .if !defined(NOPORTDOCS)
