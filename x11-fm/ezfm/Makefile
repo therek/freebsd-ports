@@ -2,7 +2,7 @@
 # Date created:				27 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/ezfm/Makefile,v 1.8 2000/03/29 07:18:54 kris Exp $
+# $FreeBSD: ports/x11-fm/ezfm/Makefile,v 1.9 2000/04/10 00:39:19 cpiazza Exp $
 #
 
 PORTNAME=	ezfm
@@ -20,6 +20,8 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 WRKSRC=		${WRKDIR}/EZFM-0.4
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+
+BROKEN=		"Distfile changed: patches no longer apply"
 
 MAN1=		ezfm.1
 
