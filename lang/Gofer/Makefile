@@ -2,7 +2,7 @@
 # Date created:         Wed Feb  1 01:51:59 PST 1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/lang/Gofer/Makefile,v 1.13 2001/01/27 05:40:03 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gofer
@@ -17,12 +17,14 @@ WRKSRC=		${WRKDIR}/src
 LIBDIR=		${PREFIX}/lib/Gofer
 MAN1=		gofer.1
 
+USE_REINPLACE=	yes
+
 do-install:
 	@${MKDIR} ${LIBDIR}
 	${INSTALL_DATA} ${WRKDIR}/*.prelude ${LIBDIR}
 	${INSTALL_DATA} ${WRKDIR}/src/prelude.h ${LIBDIR}
+	${REINPLACE_CMD} -e "s|#include \"prelude.h\"|#include \"${LIBDIR}/prelude.h\"|" ${WRKDIR}/src/gofc.h
 	${INSTALL_DATA} ${WRKDIR}/src/gofc.h ${LIBDIR}
-	${PERL} -pi -e "s|#include \"prelude.h\"|#include \"${LIBDIR}/prelude.h\"|" ${LIBDIR}/gofc.h
 	${INSTALL_DATA} ${WRKDIR}/src/runtime.o ${LIBDIR}
 	${INSTALL_SCRIPT} ${WRKDIR}/scripts/gofer ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKDIR}/scripts/goferc ${PREFIX}/bin
