@@ -3,7 +3,7 @@
 # Date created:				10/23/1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.1.1.1 1999/10/30 23:38:04 nectar Exp $
 #
 
 DISTNAME=		heimdal-0.2a
@@ -23,5 +23,9 @@ MAKE_ENV=		INSTALL_TMP="${INSTALL} -m 444"
 .if defined(HEIMDAL_HOME)
 PREFIX=			${HEIMDAL_HOME}
 .endif
+
+# XXX  I patched Makefile*, but I want to avoid rerunning automake
+post-patch:
+	find ${WRKSRC} -name Makefile.in -print | xargs ${TOUCH}
 
 .include <bsd.port.mk>
