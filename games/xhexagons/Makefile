@@ -2,7 +2,7 @@
 # Date created:				20 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xhexagons/Makefile,v 1.4 2000/03/30 03:45:42 jedgar Exp $
+# $FreeBSD: ports/games/xhexagons/Makefile,v 1.5 2000/04/14 12:27:26 asami Exp $
 #
 
 PORTNAME=	xhexagons
@@ -16,7 +16,8 @@ MAINTAINER=	ports@FreeBSD.org
 WRKSRC=		${WRKDIR}/xhexagons
 USE_IMAKE=	yes
 MAN1=		xhexagons.1
-MANCOMPRESSED=	no
+XFREE86_HTML_MAN=	no
+NO_INSTALL_MANPAGES=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xhexagons ${PREFIX}/bin
