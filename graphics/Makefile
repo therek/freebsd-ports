@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.187 2000/03/21 01:25:29 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.188 2000/03/28 22:39:18 ade Exp $
 #
 
     SUBDIR += 4va
@@ -174,6 +174,7 @@
     SUBDIR += xmorph
     SUBDIR += xmountains
     SUBDIR += xmovie
+    SUBDIR += xmrm
     SUBDIR += xpaint
     SUBDIR += xpdf
     SUBDIR += xpm
