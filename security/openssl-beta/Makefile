@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.45 2000/07/16 09:18:40 dirk Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.46 2000/09/17 11:06:30 dirk Exp $
 #
 
 PORTNAME=	openssl
@@ -26,7 +26,7 @@ NOSHARED=	yes
 
 USE_PERL5=	yes
 .if defined(NOSHARED)
-PLIST=		${PKGDIR}/PLIST.noshared
+PLIST=		${PKGDIR}/pkg-plist.noshared
 .else
 ALL_TARGET=	freebsd-shared all
 SHLIBVER=	1
