@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.42 2004/01/09 01:43:29 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.43 2004/01/20 09:14:09 marcus Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -351,7 +351,8 @@ PLIST_SUB+=		PYTHON_INCLUDEDIR=${PYTHONPREFIX_INCLUDEDIR:S;${PREFIX}/;;} \
 
 # Zope specific substitutions
 .if defined(USE_ZOPE)
-PLIST_SUB+=		ZOPEBASEDIR=${SZOPEBASEDIR}
+PLIST_SUB+=		ZOPEBASEDIR=${SZOPEBASEDIR} \
+				ZOPEPRODUCTDIR=${SZOPEBASEDIR}/${ZOPEPRODUCTDIR}
 .endif
 
 # XXX Hm, should I export some of the variables above to *_ENV?
