@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.160 2001/03/10 19:24:43 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.161 2001/03/13 15:08:44 demon Exp $
 #
     SUBDIR += yawho
 
@@ -25,6 +25,7 @@
     SUBDIR += cpbk
     SUBDIR += cpdup
     SUBDIR += cronolog
+    SUBDIR += cvsweb-converters
     SUBDIR += daemontools
     SUBDIR += daemontools53
     SUBDIR += deleted
