@@ -1,14 +1,14 @@
 # New ports collection makefile for:	nn
-# Version required:	6.5.5
+# Version required:	6.5.6
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nn/Makefile,v 1.22 1999/08/31 06:49:35 mharo Exp $
+# $FreeBSD: ports/news/nn/Makefile,v 1.23 2000/01/29 21:57:01 steve Exp $
 #
 
-DISTNAME=	nn-6.5.5
+DISTNAME=	nn-6.5.6
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.visi.com/users/mtpins/
+MASTER_SITES=	ftp://ftp.visi.com/users/mtpins/nn/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jooji@nickelkid.com
