@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.185 2001/05/08 08:32:49 roam Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.186 2001/05/10 03:37:08 lioux Exp $
 #
     SUBDIR += yawho
 
@@ -82,6 +82,7 @@
     SUBDIR += mkisofs
     SUBDIR += mksunbootcd
     SUBDIR += monitord
+    SUBDIR += msyslog
     SUBDIR += muse
     SUBDIR += no-login
     SUBDIR += npadmin
