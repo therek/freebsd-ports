@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.22 2001/03/21 11:02:32 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.23 2001/03/28 11:45:08 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -95,7 +95,7 @@ RUBY_VERSION?=		1.6.3
 RUBY_SUFFIX?=		# empty
 .endif
 
-RUBY_SNAPSHOTDATE=	2001.03.28
+RUBY_SNAPSHOTDATE=	2001.04.01
 
 .if defined(RUBY_SNAPSHOTDATE) && !empty(RUBY_SNAPSHOTDATE)
 RUBY_PORTVERSION=	${RUBY_VERSION}.${RUBY_SNAPSHOTDATE}
