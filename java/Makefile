@@ -1,7 +1,8 @@
-# $FreeBSD: ports/java/Makefile,v 1.33 2001/06/25 04:00:56 kevlo Exp $
+# $FreeBSD: ports/java/Makefile,v 1.34 2001/06/27 01:50:38 jeh Exp $
 #
     SUBDIR += xalan-j
 
+    SUBDIR += bluej
     SUBDIR += bugseeker
     SUBDIR += bugseeker-demo
     SUBDIR += collections
