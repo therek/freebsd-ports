@@ -2,14 +2,14 @@
 # Date created:		13 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.4 2000/04/13 08:27:53 asami Exp $
+# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.5 2000/04/22 11:24:55 vanilla Exp $
 #
 
 PORTNAME=	arphicttf
 PORTVERSION=	2.11
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
-DISTNAME=	zh-${PKGNAME}
+DISTNAME=	${PKGNAME}
 
 MAINTAINER=	keith@freebsd.sinica.edu.tw
 
