@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/dns/skadns/pkg-plist,v 1.1 2004/01/01 23:12:39 sergei Exp $
+@comment $FreeBSD: ports/dns/skadns/pkg-plist,v 1.2 2004/01/02 22:28:35 sergei Exp $
 bin/skadnsd
 bin/skadnsfilter
 bin/skadnsip
@@ -20,6 +20,7 @@ lib/libskadns.a
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/service/log/run
 %%EXAMPLESDIR%%/service/run
+@dirrm include/skadns
 @dirrm %%EXAMPLESDIR%%/service/log
 @dirrm %%EXAMPLESDIR%%/service
 @dirrm %%EXAMPLESDIR%%
