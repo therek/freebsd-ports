@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.296 2000/06/10 06:22:53 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.297 2000/06/14 07:47:50 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -120,6 +120,7 @@
     SUBDIR += m4
     SUBDIR += makedepend
     SUBDIR += mico
+    SUBDIR += mime
     SUBDIR += mkcmd
     SUBDIR += mkmf
     SUBDIR += mm
