@@ -2,11 +2,11 @@
 # Date created:				13 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/deskutils/dailystrips/Makefile,v 1.3 2001/08/19 09:30:15 olgeni Exp $
+# $FreeBSD: ports/deskutils/dailystrips/Makefile,v 1.4 2001/08/22 23:05:20 petef Exp $
 #
 
 PORTNAME=	dailystrips
-PORTVERSION=	1.0.17
+PORTVERSION=	1.0.18
 CATEGORIES=	deskutils www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -22,10 +22,10 @@ USE_PERL5=	yes
 post-patch:
 	@${PERL} -pi -e 's|^#!/usr/bin/perl|#!${PERL}|; \
 		s!/usr/share/dailystrips/strips.def!${DATADIR}/strips.def!' \
-		${WRKSRC}/dailystrips.pl
+		${WRKSRC}/dailystrips
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/dailystrips.pl ${PREFIX}/bin/dailystrips
+	${INSTALL_SCRIPT} ${WRKSRC}/dailystrips ${PREFIX}/bin
 	@${MKDIR} ${DATADIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/strips.def ${DATADIR}
 .if !defined(NOPORTDOCS)
