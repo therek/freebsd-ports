@@ -2,11 +2,12 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.6 2001/05/14 12:15:32 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.7 2001/05/21 09:22:42 sobomax Exp $
 #
 
 PORTNAME=	pango
 PORTVERSION=	0.16
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.3/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.3/ \
@@ -24,7 +25,13 @@ USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-qt=no
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
+
+# Hmm.. tough one.  Found this one when I had graphics/hdf installed
+# (which installs glist.h) which is picked up before the glib-2.0
+# stuff, with Bad Results[tm]
+#
+GLIB2_CFLAGS=	`pkg-config glib-2.0 --cflags`
+CONFIGURE_ENV=	CPPFLAGS="${GLIB2_CFLAGS} -I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 .include <bsd.port.pre.mk>
