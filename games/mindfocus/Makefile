@@ -2,13 +2,13 @@
 # Date created:        3 December 1998
 # Whom:                Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD: ports/games/mindfocus/Makefile,v 1.6 2000/12/30 19:04:59 sf Exp $
+# $FreeBSD: ports/games/mindfocus/Makefile,v 1.7 2001/01/16 17:30:33 sobomax Exp $
 #
 
 PORTNAME=	mindfocus
 PORTVERSION=	0.88
 CATEGORIES=	games
-MASTER_SITES=	http://www.tk.xaxon.ne.jp/~toyoshim/mf/files/
+MASTER_SITES=	http://www.toyoshima-house.net/classic/mf/files/
 DISTFILES=	mindfocus-0.88.tar.gz mindfocus-data1.tar.gz
 
 MAINTAINER=	ixtl@utmc.or.jp
