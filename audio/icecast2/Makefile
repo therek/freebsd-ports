@@ -2,11 +2,11 @@
 # Date created:         28 Jan 1999
 # Whom:                 Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/audio/icecast/Makefile,v 1.17 2001/04/20 15:25:30 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icecast
-PORTVERSION=	1.3.10
+PORTVERSION=	1.3.11
 CATEGORIES=	audio net
 MASTER_SITES=	http://www.icecast.org/releases/
 
