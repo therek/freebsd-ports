@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.308 1999/11/01 02:08:48 steve Exp $
+# $FreeBSD: ports/net/Makefile,v 1.309 1999/11/01 03:56:14 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -124,6 +124,7 @@
     SUBDIR += p5-URI
     SUBDIR += p5-pRPC
     SUBDIR += pathchar
+    SUBDIR += pchar
     SUBDIR += pcnfsd
     SUBDIR += perldap
     SUBDIR += pipsecd
