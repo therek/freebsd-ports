@@ -2,7 +2,7 @@
 # Date created:         Sat Nov 5 11:43:03 PST 1994
 # Whom:                 Rod Taylor
 #
-# $FreeBSD: ports/graphics/gxanim/Makefile,v 1.3 2000/04/14 10:46:15 asami Exp $
+# $FreeBSD: ports/graphics/gxanim/Makefile,v 1.4 2000/09/07 23:05:27 fenner Exp $
 #
 
 PORTNAME=	gxanim
@@ -13,14 +13,10 @@ MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	rbt@zort.on.ca
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
 
-GTK_CONFIG= 	${X11BASE}/bin/gtk12-config
-
-USE_XLIB=	yes
-
 USE_BZIP2=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_XLIB=	yes
+USE_GTK=	yes
 
 .include <bsd.port.mk>

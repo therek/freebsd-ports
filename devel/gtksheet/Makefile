@@ -2,7 +2,7 @@
 # Date created:			Jun 22 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/gtksheet/Makefile,v 1.7 1999/11/26 17:35:16 steve Exp $
+# $FreeBSD: ports/devel/gtksheet/Makefile,v 1.8 2000/04/11 21:28:11 mharo Exp $
 #
 
 PORTNAME=	gtksheet
@@ -12,11 +12,8 @@ MASTER_SITES=	http://magnet.fsu.edu/~feiguin/gtk/src/
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 USE_X_PREFIX=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-MAKE_ENV+=	GTK_CONFIG=${GTK_CONFIG}
+USE_GTK=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/libgtksheet.a ${PREFIX}/lib

@@ -2,7 +2,7 @@
 # Date created:				01 Jul 1998
 # Whom:					Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/editors/gxedit/Makefile,v 1.24 2000/04/14 00:25:31 mharo Exp $
+# $FreeBSD: ports/editors/gxedit/Makefile,v 1.25 2000/07/07 19:59:01 steve Exp $
 #
 
 PORTNAME=	gxedit
@@ -14,12 +14,9 @@ DISTNAME=	GXedit${PORTVERSION}
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
+
 ALL_TARGET=	gxedit
 
 post-patch:

@@ -2,7 +2,7 @@
 # Date created:        25 February 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gmixer/Makefile,v 1.11 2000/06/29 02:31:25 asami Exp $
+# $FreeBSD: ports/audio/gmixer/Makefile,v 1.12 2000/07/07 19:58:59 steve Exp $
 #
 
 PORTNAME=	gmixer
@@ -13,12 +13,9 @@ MASTER_SITE_SUBDIR=	cpiazza
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 ALL_TARGET=	gmixer
+
+USE_GTK=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gmixer ${PREFIX}/bin

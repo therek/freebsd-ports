@@ -2,7 +2,7 @@
 # Date created:        11 December 1999
 # Whom:                spcoltri@unm.edu
 #
-# $FreeBSD: ports/games/baduki/Makefile,v 1.2 2000/04/14 00:45:27 mharo Exp $
+# $FreeBSD: ports/games/baduki/Makefile,v 1.3 2000/07/16 14:18:07 alex Exp $
 #
 
 PORTNAME=	baduki
@@ -12,12 +12,17 @@ MASTER_SITES=	ftp://autoinst.acs.uci.edu/pub/go/
 
 MAINTAINER=	spcoltri@omcl.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GNU_CONFIGURE=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		29 Oct 1997
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.15 2000/06/08 15:34:21 sobomax Exp $
+# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.16 2000/07/14 12:46:26 alex Exp $
 #
 
 PORTNAME=	cqcam
@@ -14,20 +14,17 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		jpeg.9:${PORTSDIR}/graphics/jpeg
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 ONLY_FOR_ARCHS=	i386
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+INSTALL_TARGET=	bininstall
 
 USE_XLIB=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -pedantic" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--disable-asm
-INSTALL_TARGET=	bininstall
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -pedantic" \
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 MAN1=		cqcam.1
 MLINKS=		cqcam.1 webcam.1 \

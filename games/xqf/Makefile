@@ -2,7 +2,7 @@
 # Date created:				08 February 1999
 # Whom:					steve farrell
 #
-# $FreeBSD: ports/games/xqf/Makefile,v 1.8 2000/04/14 12:28:06 asami Exp $
+# $FreeBSD: ports/games/xqf/Makefile,v 1.9 2000/07/07 19:59:24 steve Exp $
 #
 
 PORTNAME=	xqf
@@ -13,11 +13,8 @@ MASTER_SITES=	ftp://ftp.linuxgames.com/xqf/
 MAINTAINER=	steve@farrell.org
 
 RUN_DEPENDS=	qstat:${PORTSDIR}/games/qstat
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.16 2000/08/11 01:14:10 will Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.17 2000/08/29 15:42:05 kevlo Exp $
 #
 
 PORTNAME=	downloader
@@ -15,13 +15,14 @@ DISTNAME=	nt-${PORTVERSION}
 
 MAINTAINER=	andrew@chg.ru
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 MSGFMT_CMD=	${LOCALBASE}/bin/msgfmt
+
 WRKSRC=		${WRKDIR}/${DISTNAME}/main
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
-		MSGFMT_CMD="${MSGFMT_CMD}"
+
+USE_GTK=	yes
+MAKE_ENV=	MSGFMT_CMD="${MSGFMT_CMD}"
 
 MAN1=		nt.1
 

@@ -2,7 +2,7 @@
 # Date created:			Oct 27 1998
 # Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/replay/Makefile,v 1.17 2000/04/08 21:24:15 mharo Exp $
+# $FreeBSD: ports/audio/replay/Makefile,v 1.18 2000/04/17 00:17:05 reg Exp $
 #
 
 PORTNAME=	replay
@@ -15,15 +15,11 @@ DISTNAME=	${PORTNAME}-source-dgtk_${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		esd.2:${PORTSDIR}/audio/esound
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_GTK=	yes
+USE_ESOUND=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .if defined(WITH_I18N)

@@ -2,7 +2,7 @@
 # Date created:		Sun Nov 22 12:08:18 CET 1998
 # Whom:			Dirk Froemberg <ibex@physik.TU-Berlin.DE>
 #
-# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.20 2000/04/14 10:46:13 asami Exp $
+# $FreeBSD: ports/graphics/gtksee/Makefile,v 1.21 2000/07/04 07:12:54 sobomax Exp $
 #
 
 PORTNAME=	gtksee
@@ -13,18 +13,16 @@ MASTER_SITES=	http://hotaru.clinuxworld.com/gtksee/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 RUN_DEPENDS=	bzip:${PORTSDIR}/archivers/bzip \
 		bzip2:${PORTSDIR}/archivers/bzip2
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="${CFLAGS} -I${PREFIX}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		LDFLAGS=-L${PREFIX}/lib
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

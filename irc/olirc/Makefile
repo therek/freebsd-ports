@@ -2,7 +2,7 @@
 # Date created:		Sat Jul 24 03:04:46 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/irc/olirc/Makefile,v 1.4 2000/04/12 06:28:21 obrien Exp $
+# $FreeBSD: ports/irc/olirc/Makefile,v 1.5 2000/07/07 19:59:15 steve Exp $
 #
 
 PORTNAME=	olirc
@@ -12,16 +12,10 @@ MASTER_SITES=	http://olirc.hexanet.fr/
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/olirc ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		27 October 1999
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/xmixer/Makefile,v 1.4 2000/07/07 19:59:22 steve Exp $
+# $FreeBSD: ports/audio/xmixer/Makefile,v 1.5 2000/10/02 05:39:30 trevor Exp $
 #
 
 PORTNAME=	xmixer
@@ -13,16 +13,11 @@ MASTER_SITE_SUBDIR=	apps/sound/mixers
 
 MAINTAINER=	trevor@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_GMAKE=	yes
+USE_GTK=	yes
 USE_AUTOCONF=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 MAN1=		xmixer.1
 

@@ -2,7 +2,7 @@
 # Date Created:			31 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/gicq/Makefile,v 1.14 2000/06/29 07:02:21 obrien Exp $
+# $FreeBSD: ports/japanese/gicq/Makefile,v 1.15 2000/07/07 19:59:09 steve Exp $
 #
 
 PORTNAME=	gicq
@@ -20,18 +20,13 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	flathill@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12	\
-		icq.0:${PORTSDIR}/japanese/libicq
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+LIB_DEPENDS=	icq.0:${PORTSDIR}/japanese/libicq
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-gnome --disable-nls
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

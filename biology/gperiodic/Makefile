@@ -2,7 +2,7 @@
 # Date created:				16 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.4 2000/03/29 07:19:09 kris Exp $
+# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.5 2000/04/08 22:04:36 mharo Exp $
 #
 
 PORTNAME=	gperiodic
@@ -12,25 +12,23 @@ MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/gperiodic
+
+USE_X_PREFIX=	yes
+USE_GMAKE=	yes
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		gperiodic.1
 
-USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
-		GLIB_CONFIG="${LOCALBASE}/bin/glib12-config" \
-		GTK_CONFIG="${X11BASE}/bin/gtk12-config"
-
 post-install:
-	@ ${INSTALL_MAN} ${WRKSRC}/man/gperiodic.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/man/gperiodic.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/gperiodic
+	@${MKDIR} ${PREFIX}/share/doc/gperiodic
 .for file in AUTHORS COPYING Changes README
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gperiodic
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gperiodic
 .endfor
 .endif
 

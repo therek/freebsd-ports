@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.12 2000/06/27 16:07:15 sobomax Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.13 2000/07/04 07:12:40 sobomax Exp $
 #
 
 PORTNAME=	AbiWord
@@ -18,8 +18,7 @@ MAINTAINER=	wolman@cs.washington.edu
 
 # unzip is needed during the installation process
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 DIST_SUBDIR=	AbiWord
@@ -27,6 +26,7 @@ DIST_SUBDIR=	AbiWord
 WRKSRC=		${WRKDIR}/abi-${PORTVERSION}/src
 USE_XLIB=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
 MAKE_ENV=	prefix="${PREFIX}"
 
 .include <bsd.port.pre.mk>

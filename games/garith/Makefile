@@ -2,7 +2,7 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/garith/Makefile,v 1.5 2000/04/02 00:58:07 mharo Exp $
+# $FreeBSD: ports/games/garith/Makefile,v 1.6 2000/04/14 06:42:57 mharo Exp $
 #
 
 PORTNAME=	garith
@@ -12,13 +12,9 @@ MASTER_SITES=	http://www.cnm-vra.com/micah/garith/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 ALL_TARGET=	# empty
 USE_X_PREFIX=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
 WRKSRC=		${WRKDIR}/garith
 
 do-install:

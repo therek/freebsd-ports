@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/audio/grip/Makefile,v 1.1 2000/07/10 03:09:49 steve Exp $
+# $FreeBSD: ports/audio/grip/Makefile,v 1.2 2000/07/15 17:16:04 will Exp $
 #
 
 PORTNAME=	grip
@@ -13,12 +13,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_GMAKE=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
+
 ALL_TARGET=	gripnopar gcd
 
 MAN1=		grip.1

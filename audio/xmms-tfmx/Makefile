@@ -2,7 +2,7 @@
 # Date created:			21 May 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmms-tfmx/Makefile,v 1.1 2000/08/05 13:45:33 nbm Exp $
 #
 
 PORTNAME=	xmms-tfmx
@@ -15,11 +15,9 @@ MAINTAINER=	anders@fix.no
 
 LIB_DEPENDS=	xmms.1:${PORTSDIR}/audio/xmms
 
-USE_LIBTOOL=	yes
+USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
+USE_LIBTOOL=	yes
 
 .include <bsd.port.mk>

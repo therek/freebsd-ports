@@ -2,7 +2,7 @@
 # Date created:        21 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/gtkdps/Makefile,v 1.16 2000/06/16 10:38:15 sobomax Exp $
+# $FreeBSD: ports/graphics/gtkdps/Makefile,v 1.17 2000/06/16 21:50:45 asami Exp $
 #
 
 PORTNAME=	gtkdps
@@ -13,13 +13,13 @@ DISTNAME=	gtkDPS-${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=    gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 BUILD_DEPENDS=	pswrap:${PORTSDIR}/x11/dgs
+RUN_DEPENDS=	pswrap:${PORTSDIR}/x11/dgs
 
-CONFIGURE_ARGS=	--with-dps-includes=${X11BASE}/include \
-		--with-dps-libraries=${X11BASE}/lib
-CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
+USE_GTK=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ARGS=	--with-dps-includes=${X11BASE}/include \
+		--with-dps-libraries=${X11BASE}/lib
 
 .include <bsd.port.mk>

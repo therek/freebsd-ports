@@ -2,7 +2,7 @@
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
 # Whom:				Dominik Brettnacher <domi@saargate.de>
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.18 2000/08/07 06:54:13 kevlo Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.19 2000/09/16 18:10:54 ade Exp $
 #
 
 PORTNAME=	xsane
@@ -14,23 +14,27 @@ MASTER_SITES=	http://www.wolfsburg.de/~rauch/sane/ \
 
 MAINTAINER=	domi@saargate.de
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		sane.1:${PORTSDIR}/graphics/sane \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.4:${PORTSDIR}/graphics/png
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_AUTOCONF=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--enable-intl-patch
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		xsane.1
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/aclocal.m4
 
 post-install:
 	@${CAT} ${PKGMESSAGE}

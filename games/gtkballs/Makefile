@@ -2,7 +2,7 @@
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gtkballs/Makefile,v 1.10 2000/07/19 15:10:20 dannyboy Exp $
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.11 2000/08/17 06:25:03 kris Exp $
 #
 
 PORTNAME=	gtkballs
@@ -14,11 +14,8 @@ MASTER_SITE_SUBDIR=	games/strategy
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+USE_GTK=	yes
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 MAN6=		gtkballs.6
 
 do-install:

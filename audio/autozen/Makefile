@@ -2,7 +2,7 @@
 # Date created:				2000-09-16
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/autozen/Makefile,v 1.1 2000/09/16 17:29:54 ade Exp $
+# $FreeBSD: ports/audio/autozen/Makefile,v 1.2 2000/10/02 05:28:47 trevor Exp $
 #
 
 PORTNAME=	autozen
@@ -13,12 +13,10 @@ DISTNAME=	AutoZen-${PORTVERSION}
 
 MAINTAINER=	trevor@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+WRKSRC=		${WRKDIR}/${PORTNAME}-1.2
 
 USE_X_PREFIX=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-MAKE_ENV=	GTK_CONFIG=${GTK_CONFIG}
-WRKSRC=		${WRKDIR}/${PORTNAME}-1.2
+USE_GTK=	yes
 
 DOC_FILES=	CHANGES COPYING
 DATA_FILES=	deep-relax.seq relax.seq test.seq test2.seq test3.seq
@@ -39,4 +37,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/share/doc/autozen
 .endfor
 .endif
+
 .include <bsd.port.mk>

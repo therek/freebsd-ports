@@ -2,7 +2,7 @@
 # Date created:		30 August 1999
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/word/Makefile,v 1.3 1999/10/09 16:58:28 sada Exp $
+# $FreeBSD: ports/japanese/word/Makefile,v 1.4 2000/04/13 08:33:37 knu Exp $
 #
 
 PORTNAME=	word
@@ -12,14 +12,14 @@ MASTER_SITES=	http://www.linet.gr.jp/~mituiwa/
 
 MAINTAINER=	sada@FreeBSD.ORG
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+USE_GTK=	yes
 
 DOCDIR=		${PREFIX}/share/doc/ja-word
 EXAMPLEDIR=	${PREFIX}/share/examples/ja-word
 
 do-build:
 	(cd ${WRKSRC}; \
-	 ${CC} -o word `gtk12-config --cflags` `gtk12-config --libs` word.c )
+	 ${CC} -o word `${GTK_CONFIG} --cflags` `${GTK_CONFIG} --libs` word.c )
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/word ${PREFIX}/bin

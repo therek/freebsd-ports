@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.9 2000/07/08 07:37:19 knu Exp $
+# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.10 2000/08/16 15:26:59 kevlo Exp $
 #
 
 PORTNAME=	timidity++
@@ -38,16 +38,14 @@ PKGMESSAGE=	${PKGDIR}/MESSAGE
 PLIST_SUB=	TIMID_LIBDIR=${TIMID_LIBDIR}
 DIST_SUBDIR=	timidity
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 TIMID_LIBDIR=	${PREFIX}/lib/timidity
 
 .if ${INTERFACE} == "emacs"
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
 .elif ${INTERFACE} == "gtk"
 LINK=		gtkmidi
-INTERFACE_DEPS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-CONFIGURE_ENV=	GTK_CONFIG=${GTK_CONFIG} SHLD="gcc -shared"
+USE_GTK=	yes
+CONFIGURE_ENV=	SHLD="gcc -shared"
 .elif ${INTERFACE} == "motif"
 LINK=		xmmidi
 REQUIRES_MOTIF=	yes

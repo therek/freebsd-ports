@@ -2,7 +2,7 @@
 # Date created: 		22 October 1998
 # Whom: 			Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/axyftp/Makefile,v 1.13 2000/06/03 00:15:36 kris Exp $
 #
 
 PORTNAME=	axyftp
@@ -14,12 +14,10 @@ MASTER_SITES=	ftp://ftp.wxftp.seul.org/pub/wxftp/${PORTVERSION}/ \
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
+USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=  yes
-CONFIGURE_ENV=  GTK_CONFIG=${X11BASE}/bin/gtk12-config
-USE_X_PREFIX=   yes
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=		axyftp.1
 

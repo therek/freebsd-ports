@@ -2,7 +2,7 @@
 # Date created:			24 Nov 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/geda/Makefile,v 1.19 2000/06/16 21:50:17 asami Exp $
+# $FreeBSD: ports/cad/geda/Makefile,v 1.20 2000/08/04 01:05:08 ade Exp $
 #
 
 PORTNAME=	geda
@@ -15,12 +15,10 @@ DISTNAME=	gEDA-19990516
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		guile.9:${PORTSDIR}/lang/guile
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-gtk-config=${GTK_CONFIG}
