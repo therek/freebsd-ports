@@ -1,8 +1,8 @@
 # New ports collection makefile for:   xtraceroute
 # Date created:        17 February 2000
-# Whom:                Maxim Sobolev <sobomax@altavista.net>
+# Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.2 2000/03/20 23:25:15 jseger Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.3 2000/04/09 18:14:03 cpiazza Exp $
 #
 
 PORTNAME=	xtraceroute
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.dtek.chalmers.se/~d3august/xt/dl/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		GL.14:${PORTSDIR}/graphics/Mesa3 \

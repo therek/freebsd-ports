@@ -2,7 +2,7 @@
 # Date created:        06 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.2 2000/02/15 03:58:40 nakai Exp $
+# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.3 2000/04/10 00:39:22 cpiazza Exp $
 #
 
 PORTNAME=	fsv
@@ -10,7 +10,7 @@ PORTVERSION= 	0.9
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://fox.mit.edu/skunk/soft/src/
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		GL.14:${PORTSDIR}/graphics/Mesa3 \
