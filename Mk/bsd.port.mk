@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.367 2001/05/23 02:46:52 dougb Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -14,7 +14,9 @@
 # listed below in the FreeBSD_MAINTAINER entry.  You should consult
 # them if you have any questions/suggestions regarding this file.
 #
-# DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF!
+# DO NOT COMMIT CHANGES TO THIS FILE BY YOURSELF, EVEN IF DID NOT GET
+# A RESPONSE FROM MAINTAINER(S) WITHIN A REASONABLE TIMEFRAME! ALL
+# UNAUTHORISED CHANGES WILL BE UNCONDITIONALLY REVERTED!
 
 FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 
