@@ -3,7 +3,7 @@
 # Date created:				12 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.3 1999/12/22 14:15:09 jedgar Exp $
+# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.4 1999/12/26 13:52:00 jedgar Exp $
 #
 
 DISTNAME=	gtkgraph-0.5.3
@@ -23,7 +23,6 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-x
 CONFIGURE_ENV+=	CFLAGS="-I${LOCALBASE}/include ${CFLAGS}" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
