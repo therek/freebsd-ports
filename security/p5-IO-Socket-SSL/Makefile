@@ -2,11 +2,11 @@
 # Date created:				October 27th 2000
 # Whom:	      				Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-IO-Socket-SSL/Makefile,v 1.3 2001/03/05 14:27:48 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IO-Socket-SSL
-PORTVERSION=	0.78
+PORTVERSION=	0.80
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
