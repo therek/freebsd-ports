@@ -3,7 +3,7 @@
 # Whom:                 Martin Blapp
 # Translation:		Eric Masson
 #
-# $FreeBSD: ports/french/staroffice52/Makefile,v 1.8 2000/12/24 14:37:25 alex Exp $
+# $FreeBSD: ports/french/staroffice52/Makefile,v 1.9 2001/03/02 00:27:38 jhb Exp $
 #
 
 PORTNAME=	staroffice
@@ -144,6 +144,7 @@ post-install:
 	    < ${INSTDB.INS}.orig > ${INSTDB.INS}
 
 install-user:
-	${PREFIX}/office52/program/setup
+	@-SAL_IGNOREXERRORS=1 PATH="/bin:${PATH}" ${LINUXBASE}/bin/sh -c \
+		${PREFIX}/office52/program/setup
 
 .include <bsd.port.post.mk>

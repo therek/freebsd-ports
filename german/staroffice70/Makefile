@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.24 2000/12/24 14:28:59 alex Exp $
+# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.25 2001/03/02 00:27:40 jhb Exp $
 #
 
 PORTNAME=	staroffice
@@ -149,6 +149,7 @@ post-install:
 	    < ${INSTDB.INS}.orig > ${INSTDB.INS}
 
 install-user:
-	${PREFIX}/office52/program/setup
+	@-SAL_IGNOREXERRORS=1 PATH="/bin:${PATH}" ${LINUXBASE}/bin/sh -c \
+		${PREFIX}/office52/program/setup
 
 .include <bsd.port.post.mk>
