@@ -3,13 +3,13 @@
 # Date created:         16 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/wwwcount/Makefile,v 1.14 1999/08/31 02:43:33 peter Exp $
+# $FreeBSD: ports/www/wwwcount/Makefile,v 1.15 1999/10/05 04:52:20 flathill Exp $
 #
 
 DISTNAME=       wwwcount2.5
 PKGNAME=        wwwcount-2.5
 CATEGORIES=     www
-MASTER_SITES=   http://www.fccc.edu/users/muquit/src/wwwcount2.5/
+MASTER_SITES=   http://www.muquit.com/muquit/software/Count/src/wwwcount2.5/
 
 MAINTAINER=     dervish@ikhala.tcimet.net
 
