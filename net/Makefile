@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.532 2001/05/15 04:56:43 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.533 2001/05/19 14:01:42 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -20,6 +20,7 @@
     SUBDIR += arpwatch
     SUBDIR += arts++
     SUBDIR += ascend-radius
+    SUBDIR += asfrecorder
     SUBDIR += balance
     SUBDIR += bind8
     SUBDIR += bind9
