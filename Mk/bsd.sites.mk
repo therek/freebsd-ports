@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.39 2001/03/22 08:55:32 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.40 2001/03/24 17:21:47 fenner Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -84,6 +84,7 @@ MASTER_SITE_KDE+=	\
 	ftp://ftp.chg.ru/pub/X11/kde/%SUBDIR%/ \
 	ftp://ftp.synesis.net/pub/mirrors/kde/%SUBDIR%/ \
 	ftp://ftp.twoguys.org/pub/kde/%SUBDIR%/ \
+	ftp://ftp.mirror.ac.uk/sites/ftp.kde.org/pub/kde/%SUBDIR%/ \
 	ftp://ftp.dataplus.se/pub/linux/kde/%SUBDIR%/
 
 MASTER_SITE_MOZILLA+= \
