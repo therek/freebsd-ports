@@ -4,7 +4,7 @@
 # Date created:         Sat June 29, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.48 1999/08/25 05:44:35 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.49 1999/09/01 18:35:53 obrien Exp $
 #
 
 DISTNAME=	vim-5.4
@@ -46,7 +46,7 @@ MAN1=		vim.1 vimtutor.1 xxd.1 ectags.1
 MLINKS=		vim.1 rvim.1  vim.1 rview.1  ectags.1 etags.1
 
 .if !defined(LITE)
-MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1  
+MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 
 MAKE_FLAGS:=	CONF_OPT_MAX="--enable-max-features" ${MAKE_FLAGS}
 
