@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.361 2004/09/03 21:14:17 nork Exp $
+# $FreeBSD: ports/LEGAL,v 1.362 2004/09/10 02:25:07 linimon Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -179,6 +179,8 @@ ezmlm-*			ports/mail/ezmlm-idx	no license--see
 f-prot-sig*		ports/security/f-prot-sig Free for personal use only
 f6kuzzzz.taz		ports/databases/libudbc	Downloading and redistribution
 						terms are unclear
+faad			ports/audio/faad	Restrictive copyright (do not
+						sell for profit)
 fasta2*			ports/biology/fasta	May not be sold or incorporated
 						into a commercial product
 fasta3*			ports/biology/fasta3	May not be sold or incorporated
