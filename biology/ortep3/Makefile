@@ -2,7 +2,7 @@
 # Date created:		1999-05-08
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/biology/ortep3/Makefile,v 1.6 2000/06/20 10:04:12 alex Exp $
+# $FreeBSD: ports/biology/ortep3/Makefile,v 1.7 2000/07/03 02:50:58 kris Exp $
 #
 
 PORTNAME=	ortep3
@@ -29,8 +29,8 @@ post-extract:
 pre-patch:
 	${CP} ${FILESDIR}/Makefile.ortep3 ${WRKDIR}/${DISTNAME}/src/Makefile
 .if defined(USEPGPLOT)
-	cd ${WRKSRC} && ${PATCH} < ${FILESDIR}/patch-aa
-	cd ${WRKSRC} && ${PATCH} < ${FILESDIR}/patch-ab
+	cd ${WRKSRC} && ${PATCH} < ${PATCHDIR}/extra-patch-aa
+	cd ${WRKSRC} && ${PATCH} < ${PATCHDIR}/extra-patch-ab
 .endif
 
 pre-install:
