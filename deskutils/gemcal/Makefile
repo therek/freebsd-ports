@@ -2,11 +2,11 @@
 # Date Created:				10 May 2001
 # Whom:					Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/deskutils/gemcal/Makefile,v 1.2 2001/06/03 06:26:28 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gemcal
-PORTVERSION=	20010625
+PORTVERSION=	20020411
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.quickhack.net/mhc/arc/
 DISTNAME=	mhc-current-snap${PORTVERSION}
