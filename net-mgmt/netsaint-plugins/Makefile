@@ -2,17 +2,16 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.9 2001/04/10 09:32:37 dirk Exp $
+# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.10 2001/04/16 11:42:06 dirk Exp $
 #
 
 PORTNAME=	netsaint-plugins
-PORTVERSION=	1.2.9.3
-PORTREVISION=	2
+PORTVERSION=	1.2.9.4
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/netsaintplug/
-DISTNAME=	${PORTNAME}-1.2.9-3
+DISTNAME=	${PORTNAME}-1.2.9-4
 
-MAINTAINER=	blaz@amis.net
+MAINTAINER=	blaz@si.FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sbindir=${PREFIX}/share/netsaint/sbin \
@@ -30,9 +29,6 @@ pre-fetch:
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
-
-pre-install:
-	${PERL} ${SCRIPTDIR}/createuser
 
 post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
