@@ -2,7 +2,7 @@
 # Date created:				Sun 2 Jul 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ecg2png/Makefile,v 1.1 2000/07/04 05:09:39 will Exp $
 #
 
 PORTNAME=	ecg2png
@@ -20,5 +20,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include -I${X11BASE}/include/qt2 -I${LOCALBASE}/include/gd" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 USE_GMAKE=	yes
+USE_AUTOMAKE=	yes
 
 .include <bsd.port.mk>
