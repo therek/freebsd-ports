@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.254 1999/12/29 09:28:55 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.255 1999/12/29 09:34:17 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -56,6 +56,7 @@
     SUBDIR += gtl
     SUBDIR += gyvescm
     SUBDIR += hello
+    SUBDIR += heyu
     SUBDIR += iselect
     SUBDIR += jargon
     SUBDIR += jive
