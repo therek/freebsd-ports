@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/editors/sam/Makefile,v 1.8 1999/08/25 05:44:12 obrien Exp $
+# $FreeBSD: ports/editors/sam/Makefile,v 1.9 2000/04/14 00:25:39 mharo Exp $
 #
 
 PORTNAME=	sam
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.msg.gz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:         
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mpeg_encode/Makefile,v 1.8 1999/08/25 06:14:29 obrien Exp $
+# $FreeBSD: ports/graphics/mpeg_encode/Makefile,v 1.9 2000/04/14 10:46:42 asami Exp $
 #
 
 PORTNAME=	mpeg_encode
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://mm-ftp.CS.Berkeley.EDU/pub/multimedia/mpeg/encode/
 DISTNAME=	${PKGNAME}-src
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.20 2000/02/02 22:51:00 mharo Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.21 2000/04/11 21:26:58 mharo Exp $
 #
 
 PORTNAME=	swig
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/beazley/SWIG/ \
 		ftp://ftp.mcc.ac.uk/pub/mvc/swig/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/python:${PORTSDIR}/lang/python \
 		${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82

@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/x11-wm/9menu/Makefile,v 1.9 1999/08/31 02:59:50 peter Exp $
+# $FreeBSD: ports/x11-wm/9menu/Makefile,v 1.10 2000/04/10 19:49:22 cpiazza Exp $
 #
 
 PORTNAME=	9menu
@@ -11,7 +11,7 @@ CATEGORIES=	x11-wm plan9
 MASTER_SITES=	ftp://ftp.mathcs.emory.edu/pub/arnold/
 EXTRACT_SUFX=	.shar.gz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes

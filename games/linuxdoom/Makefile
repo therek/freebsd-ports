@@ -2,7 +2,7 @@
 # Date created:         Mon Dec  9 09:42:37 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.13 2000/02/28 08:33:33 asami Exp $
+# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.14 2000/04/14 12:26:02 asami Exp $
 #
 
 PORTNAME=	linuxdoom
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	games/doom
 DISTNAME=	doom-${PORTVERSION}
 DISTFILES=	linux-doom-1.8.tar.gz musserver.tgz smooth-joystick4doom.tgz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base

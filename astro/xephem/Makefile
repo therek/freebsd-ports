@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/astro/xephem/Makefile,v 1.16 2000/02/27 23:15:06 steve Exp $
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.17 2000/04/08 22:02:07 mharo Exp $
 #
 
 PORTNAME=	xephem
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://iraf.noao.edu/contrib/xephem/ \
 		ftp://iphcip1.physik.uni-mainz.de/pub/xephem/ \
 		ftp://wolf.ifj.edu.pl/mirror/xephem/
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

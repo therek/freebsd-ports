@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  5 10:54:25 CDT 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/audio/xmmix/Makefile,v 1.8 1999/08/25 04:36:26 obrien Exp $
+# $FreeBSD: ports/audio/xmmix/Makefile,v 1.9 2000/04/08 21:24:56 mharo Exp $
 #
 
 PORTNAME=	xmmix
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 REQUIRES_MOTIF=	yes

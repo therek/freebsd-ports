@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz/Makefile,v 1.10 2000/02/28 08:33:50 asami Exp $
+# $FreeBSD: ports/math/wingz/Makefile,v 1.11 2000/04/14 07:20:48 asami Exp $
 #
 
 PORTNAME=	Wingz
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/financial/spreadsheet
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 

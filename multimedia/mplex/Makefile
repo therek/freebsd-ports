@@ -2,7 +2,7 @@
 # Date created:         Wed Jul 31 20:54:54 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mplex/Makefile,v 1.5 1999/08/25 06:14:31 obrien Exp $
+# $FreeBSD: ports/graphics/mplex/Makefile,v 1.6 2000/04/14 10:46:46 asami Exp $
 #
 
 PORTNAME=	mplex
@@ -10,7 +10,7 @@ PORTVERSION=	1.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.informatik.tu-muenchen.de/pub/comp/graphics/mpeg/mplex/
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=		mplex.1
 

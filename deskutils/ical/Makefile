@@ -2,7 +2,7 @@
 # Date created:         Mon Aug 28 13:35:31 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/deskutils/ical/Makefile,v 1.25 1999/12/24 18:39:19 mharo Exp $
+# $FreeBSD: ports/deskutils/ical/Makefile,v 1.26 2000/04/08 22:03:38 mharo Exp $
 #
 
 PORTNAME=	ical
@@ -10,7 +10,7 @@ PORTVERSION=	2.2
 CATEGORIES=	deskutils tk82
 MASTER_SITES=	http://www.research.digital.com/SRC/personal/Sanjay_Ghemawat/ical/icalbins/
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

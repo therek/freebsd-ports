@@ -2,7 +2,7 @@
 # Date created:		Tue Nov 12 15:54:21 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/audio/cam/Makefile,v 1.6 1999/08/25 04:35:20 obrien Exp $
+# $FreeBSD: ports/audio/cam/Makefile,v 1.7 2000/04/08 21:23:19 mharo Exp $
 #
 
 PORTNAME=	cam
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/mixers
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=	cam.1
 

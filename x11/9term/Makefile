@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/x11/9term/Makefile,v 1.14 1999/08/31 02:50:05 peter Exp $
+# $FreeBSD: ports/x11/9term/Makefile,v 1.15 2000/04/13 19:09:03 cpiazza Exp $
 #
 
 PORTNAME=	9term
@@ -11,7 +11,7 @@ CATEGORIES=	x11 plan9
 MASTER_SITES=   ftp://ftp.ecf.toronto.edu/pub/plan9/matty/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # needs library and private header, but not during runtime
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/editors/sam:build

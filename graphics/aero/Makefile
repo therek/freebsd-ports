@@ -2,7 +2,7 @@
 # Date created:         Mon Aug 28 13:35:31 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/graphics/aero/Makefile,v 1.15 1999/08/25 06:13:41 obrien Exp $
+# $FreeBSD: ports/graphics/aero/Makefile,v 1.16 2000/04/13 06:28:02 obrien Exp $
 #
 
 PORTNAME=	aero
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.ee.uwa.edu.au/users/braunl/aero/
 DISTNAME=	${PORTNAME}_${PORTVERSION}_src
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/libfwf.a:${PORTSDIR}/x11-toolkits/FWF
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray

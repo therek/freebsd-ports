@@ -2,7 +2,7 @@
 # Date created:         Tue Aug 15 17:57:48 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/xlispstat/Makefile,v 1.10 2000/04/14 07:20:54 asami Exp $
+# $FreeBSD: ports/math/xlispstat/Makefile,v 1.11 2000/04/20 20:41:44 mharo Exp $
 #
 
 PORTNAME=	xlispstat
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.stat.umn.edu/pub/xlispstat/current/   \
 		ftp://statlab.uni-heidelberg.de/pub/mirrors/umn/xlispstat/current/
 DISTNAME=	xlispstat-3-52-9
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 HAS_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		Wed Dec 11 15:16:19 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/databases/typhoon/Makefile,v 1.8 2000/03/27 17:28:39 mharo Exp $
+# $FreeBSD: ports/databases/typhoon/Makefile,v 1.9 2000/04/08 22:49:03 mharo Exp $
 #
 
 PORTNAME=	typhoon
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/db
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=     yes
 MAN3=d_close.3 d_crget.3 d_crread.3 d_crset.3 d_dbdpath.3 d_dbfpath.3 \

@@ -2,7 +2,7 @@
 # Date created:         1995/10/02
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/editors/xcoral/Makefile,v 1.11 2000/02/07 22:14:04 mharo Exp $
+# $FreeBSD: ports/editors/xcoral/Makefile,v 1.12 2000/04/14 00:25:53 mharo Exp $
 #
 
 PORTNAME=	xcoral
@@ -11,7 +11,7 @@ CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	editors
 
-MAINTAINER=	erich@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 
