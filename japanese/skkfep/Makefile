@@ -2,7 +2,7 @@
 # Date created:		22 Jul 1998
 # Whom:			Yusuke Nawano <azuki@azkey.org>
 #
-# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.2 1999/08/25 05:27:01 obrien Exp $
+# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.3 2000/04/12 14:37:44 knu Exp $
 #
 
 PORTNAME=	skkfep
@@ -17,7 +17,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	azuki@azkey.org
 
-RUN_DEPENDS=	${LOCALBASE}/libexec/skkserv:${PORTSDIR}/japanese/skk
+RUN_DEPENDS=	${LOCALBASE}/sbin/skkserv:${PORTSDIR}/japanese/skk
 
 NO_WRKSUBDIR=	yes
 
