@@ -2,12 +2,11 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.41 2001/02/09 13:31:56 olgeni Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.42 2001/02/09 21:39:51 olgeni Exp $
 #
 
 PORTNAME=	xfce
-PORTVERSION=	3.7.2
-PORTREVISION=	1
+PORTVERSION=	3.8.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/
 
