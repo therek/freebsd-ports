@@ -2,7 +2,7 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-sumo/Makefile,v 1.10 2000/08/01 09:16:25 shige Exp $
+# $FreeBSD: ports/editors/xemacs21-sumo/Makefile,v 1.11 2000/08/25 00:27:00 asami Exp $
 #
 
 PORTNAME=	xemacs-${NAMEPREFIX}sumo
@@ -12,7 +12,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+MAINTAINER=	kiri@FreeBSD.org
 
 .if defined(NAMEPREFIX) && ${NAMEPREFIX} == "mule-" || \
 	defined(PKGNAMEPREFIX) && ${PKGNAMEPREFIX} != ""
@@ -28,7 +28,7 @@ NO_BUILD=	yes
 
 XEMACS_MAJOR_VER=	21
 XEMACS_REL=		21.1
-XEMACS_VER=		21.1.12
+XEMACS_VER=		21.1.13
 XEMACS_ARCH=		${MACHINE_ARCH}--freebsd
 
 do-install:		# empty

@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.33 2000/10/08 07:20:57 asami Exp $
+# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.34 2000/10/24 10:53:38 knu Exp $
 #
 
 # This is the MASTER port of XEmacs Mule slave ports(japanese/xemacs${XEMACS_MAJOR_VER}-*)
@@ -23,7 +23,7 @@
 MULE_SLAVE=	yes
 .endif
 
-MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
+MAINTAINER=	kiri@FreeBSD.org
 
 BUILD_DEPENDS=	${BUILD_INPUT_METHOD}
 .if defined(MULE_SLAVE)
