@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.3 2000/08/12 20:09:37 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.4 2000/08/16 12:21:20 knu Exp $
 #
 
 PORTNAME=	strscan
@@ -42,11 +42,11 @@ do-build:
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/ext/strscanso/strscan.so \
 		${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/${RUBY_ARCH}/
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/examples/ruby/strscan
 .for f in ${EXAMPLES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/examples/ruby/strscan/
 .endfor
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/strscan/ja
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/ruby/strscan/
