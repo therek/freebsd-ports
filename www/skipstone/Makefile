@@ -2,13 +2,15 @@
 # Date created:				16 November 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/www/skipstone/Makefile,v 1.2 2001/02/01 11:48:35 sobomax Exp $
+# $FreeBSD: ports/www/skipstone/Makefile,v 1.3 2001/04/17 13:34:07 eric Exp $
 #
+
+BROKEN=		"out-of-sync with mozilla, next release will fix"
 
 PORTNAME=	skipstone
 PORTVERSION=	0.7.2
 CATEGORIES=	www
-MASTER_SITES=	http://muhri.net/skipstone/
+MASTER_SITES=	http://www.muhri.net/skipstone/
 
 MAINTAINER=	eric@FreeBSD.org
 
