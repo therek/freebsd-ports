@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/security/Makefile,v 1.185 2001/04/18 16:24:16 sobomax Exp $
 #
 
     SUBDIR += aafid2
@@ -22,6 +22,7 @@
     SUBDIR += cops
     SUBDIR += crack
     SUBDIR += cracklib
+    SUBDIR += crank
     SUBDIR += cryptopp
     SUBDIR += cyrus-sasl
     SUBDIR += ddos_scan
