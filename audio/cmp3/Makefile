@@ -2,7 +2,7 @@
 # Date created:		10 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/cmp3/Makefile,v 1.11 2000/12/26 15:07:51 kevlo Exp $
+# $FreeBSD: ports/audio/cmp3/Makefile,v 1.12 2001/01/16 15:13:20 kevlo Exp $
 #
 
 PORTNAME=	cmp3
@@ -12,9 +12,9 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.personal.psu.edu/users/n/k/nkk104/cmp3/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/pre/}
 
-MAINTAINER= 	ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS= 	mpg123:${PORTSDIR}/audio/mpg123
+RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

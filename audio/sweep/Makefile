@@ -2,11 +2,11 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/sweep/Makefile,v 1.1 2000/09/25 09:46:14 sobomax Exp $
+# $FreeBSD: ports/audio/sweep/Makefile,v 1.2 2000/10/23 07:29:48 sobomax Exp $
 #
 
 PORTNAME=	sweep
-PORTVERSION= 	0.1.1
+PORTVERSION=	0.1.1
 CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

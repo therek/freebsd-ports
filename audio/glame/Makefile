@@ -2,11 +2,11 @@
 # Date created:				26 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/glame/Makefile,v 1.1 2000/09/26 17:37:38 sobomax Exp $
 #
 
 PORTNAME=	glame
-PORTVERSION= 	0.2.0
+PORTVERSION=	0.2.0
 CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

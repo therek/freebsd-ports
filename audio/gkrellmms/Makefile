@@ -2,11 +2,11 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gkrellmms/Makefile,v 1.1 2000/09/14 19:03:22 ume Exp $
+# $FreeBSD: ports/audio/gkrellmms/Makefile,v 1.2 2000/10/05 06:57:33 reg Exp $
 #
 
 PORTNAME=	gkrellmms
-PORTVERSION= 	0.5.4
+PORTVERSION=	0.5.4
 CATEGORIES=	audio
 MASTER_SITES=	http://gkrellm.luon.net/files/
 
