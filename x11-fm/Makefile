@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.19 2000/11/26 04:52:09 dougb Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.20 2000/11/26 04:53:46 dougb Exp $
 #
 
     SUBDIR += asfiles
@@ -10,7 +10,7 @@
     SUBDIR += fsv
     SUBDIR += gnomemc
     SUBDIR += jafm
-    SUBDIR += mfm
+    SUBDIR += mtoolsfm
     SUBDIR += nautilus
     SUBDIR += offix-files
     SUBDIR += rox-base
