@@ -1,22 +1,20 @@
 # New ports collection makefile for: texinfo
-# Version required: 3.12s
+# Version required: 4.0
 # Date created: 18 Aug 1999
 # Whom: Mitsuru Yoshida <mitsuru@riken.go.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/texinfo/Makefile,v 1.1.1.1 1999/09/07 04:52:54 taoka Exp $
 #
 
-DISTNAME=	texinfo-3.12s
-PKGNAME=	ja-texinfo-3.12s
+DISTNAME=	texinfo-4.0
+PKGNAME=	ja-texinfo-4.0
 CATEGORIES=	japanese print
-MASTER_SITES=	ftp://ftp.cs.umb.edu/private/tex/ \
-		ftp://texinfo.org/ \
-		ftp://alpha.gnu.org/gnu/gnu/ \
-		ftp://ftp.funet.fi/pub/gnu/alpha/
+MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITE_SUBDIR=	texinfo
 
 PATCH_SITES=	ftp://jupiter.fsci.fuk.kindai.ac.jp/pub/ptex/utils/ \
 		http://www.fsci.fuk.kindai.ac.jp/aftp/pub/ptex/utils/
-PATCHFILES=	texinfo-3.12s-j.diff.gz
+PATCHFILES=	texinfo-4.0-j.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	mitsuru@riken.go.jp
