@@ -2,10 +2,10 @@
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-netobj/Makefile,v 1.2 2000/02/20 23:46:25 asami Exp $
+# $FreeBSD: ports/lang/pm3-netobj/Makefile,v 1.3 2000/04/12 06:20:04 obrien Exp $
 #
 
-PORTVERSION=	pm3-netobj
+PORTNAME=	pm3-netobj
 PORTVERSION=	1.1.13
 CATEGORIES=	lang
 DISTFILES=
