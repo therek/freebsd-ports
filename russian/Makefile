@@ -1,8 +1,9 @@
-# $FreeBSD: ports/russian/Makefile,v 1.25 2000/01/29 05:41:42 steve Exp $
+# $FreeBSD: ports/russian/Makefile,v 1.26 2000/06/04 23:08:17 will Exp $
 #
 
     SUBDIR += X.language
     SUBDIR += apache13
+    SUBDIR += apache13-modssl
     SUBDIR += cyrproxy
     SUBDIR += d1489
     SUBDIR += elm.language
