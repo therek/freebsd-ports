@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.16 2001/08/12 06:45:11 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	optparse
-PORTVERSION=	0.8.4
+PORTVERSION=	0.8.5
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://member.nifty.ne.jp/nokada/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
