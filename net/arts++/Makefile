@@ -2,11 +2,12 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/arts++/Makefile,v 1.1 2000/11/08 05:13:25 andreas Exp $
 #
 
 PORTNAME=	arts++
 PORTVERSION=	1-1-a6
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.caida.org/pub/arts++/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
