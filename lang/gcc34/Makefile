@@ -3,10 +3,10 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.91 2000/11/28 18:55:05 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.92 2000/12/05 21:36:59 obrien Exp $
 #
 
-SNAPDATE=	2000-11-20
+SNAPDATE=	2000-12-11
 SNAPVER=	${SNAPDATE:S/-//g}
 
 PORTNAME=	gcc-devel
