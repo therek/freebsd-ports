@@ -3,15 +3,13 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/plain2/Makefile,v 1.3 1999/08/25 05:26:19 obrien Exp $
 #
 
 DISTNAME=	plain2-2.54
 PKGNAME=	ja-plain2-2.54
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.nec.co.jp/pub/packages/plain2/
-
-MAINTAINER=	nkazushi@highway.or.jp
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 ALL_TARGET=	plain2
