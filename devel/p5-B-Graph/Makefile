@@ -2,11 +2,11 @@
 # Date created:		24-Jul-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-B-Graph/Makefile,v 1.1 2000/08/01 14:06:28 nbm Exp $
 #
 
 PORTNAME=	B-Graph
-PORTVERSION=	0.50
+PORTVERSION=	0.51
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=B
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	leo@florida.sarang.net
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 MAN3=		B::Graph.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
