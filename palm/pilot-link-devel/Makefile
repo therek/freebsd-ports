@@ -3,17 +3,18 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.29 1999/09/10 07:39:11 asami Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.30 1999/09/10 18:55:54 fenner Exp $
 
 DISTNAME=	pilot-link.0.9.3
 PKGNAME=	pilot-link-0.9.3
-CATEGORIES=	palm comms tk80
+CATEGORIES=	palm comms tk82
 MASTER_SITES=	ftp://ryeham.ee.ryerson.ca/pub/PalmOS/
 
 MAINTAINER=	dima@freebsd.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
+USE_LIBTOOL=	yes
 USE_PERL5=	yes
 PREFIX=		${LOCALBASE}/pilot
 GNU_CONFIGURE=	yes
