@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/archivers/gtar/pkg-plist,v 1.6 2001/02/01 14:48:43 sf Exp $
+@comment $FreeBSD: ports/archivers/gtar/pkg-plist,v 1.7 2001/09/11 12:09:13 knu Exp $
 bin/gtar
 @unexec install-info --delete %D/info/tar.info %D/info/dir
 info/tar.info
@@ -13,6 +13,7 @@ share/locale/fr/LC_MESSAGES/tar.mo
 share/locale/id/LC_MESSAGES/tar.mo
 share/locale/it/LC_MESSAGES/tar.mo
 share/locale/ja/LC_MESSAGES/tar.mo
+share/locale/ko/LC_MESSAGES/tar.mo
 share/locale/nl/LC_MESSAGES/tar.mo
 share/locale/no/LC_MESSAGES/tar.mo
 share/locale/pl/LC_MESSAGES/tar.mo
