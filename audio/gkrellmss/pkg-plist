@@ -1,6 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/audio/gkrellmss/pkg-plist,v 1.2 2002/08/21 19:47:59 naddy Exp $
 libexec/gkrellm/plugins/gkrellmss.so
-%%PORTDOCS%%share/doc/gkrellmss/Changelog
-%%PORTDOCS%%share/doc/gkrellmss/README
-%%PORTDOCS%%share/doc/gkrellmss/Themes
-%%PORTDOCS%%@dirrm share/doc/gkrellmss
+%%PORTDOCS%%%%DOCSDIR%%/Changelog
+%%PORTDOCS%%%%DOCSDIR%%/README
+%%PORTDOCS%%%%DOCSDIR%%/Themes
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
