@@ -2,21 +2,23 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/netcdf/Makefile,v 1.6 2000/06/16 08:48:13 sobomax Exp $
+# $FreeBSD: ports/math/netcdf/Makefile,v 1.7 2000/06/16 21:51:39 asami Exp $
 #
 
 PORTNAME=	netcdf
-PORTVERSION=	3.5b3
+PORTVERSION=	3.5.b6
 CATEGORIES=	math
 MASTER_SITES=	ftp://unidata.ucar.edu/pub/netcdf/
-DISTFILES=	${PORTNAME}-3.5-beta3.tar.Z
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.b/-beta/}
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-3.5-beta3/src
-INSTALLS_SHLIB=	yes
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-fPIC -DPIC -Df2cFortran"
+INSTALLS_SHLIB=	yes
 
 MAN1=	ncdump.1 ncgen.1
 MAN3=	netcdf.3
