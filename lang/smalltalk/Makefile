@@ -1,9 +1,9 @@
 # New ports collection makefile for:	smalltalk
-# Version required:	1.1.1
+# Version required:	1.1.5
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.18 1999/08/27 22:29:39 mharo Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.19 1999/08/31 06:47:06 mharo Exp $
 #
 
 DISTNAME=	smalltalk-1.1.5
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	smalltalk
 
-MAINTAINER=	jraynard@FreeBSD.org
+MAINTAINER=	alex@big.endian.de
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 
