@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.58 2005/01/09 10:12:07 krion Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.59 2005/02/07 11:17:50 krion Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories.
@@ -239,7 +239,7 @@ describe:
 .if defined(PORTSTOP)
 readmes: readme ${SUBDIR:S/^/_/:S/$/.readmes/}
 	@${ECHO_MSG} "===>   Creating README.html for all ports"
-	@perl ${.CURDIR}/Tools/make_readmes < ${.CURDIR}/${INDEXFILE}
+	@perl ${PORTSDIR}/Tools/make_readmes < ${PORTSDIR}/${INDEXFILE}
 .else
 readmes: readme
 .endif
