@@ -3,7 +3,7 @@
 # Date created:		Wed Dec 11 15:16:19 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/typhoon/Makefile,v 1.7 1999/08/25 05:21:36 obrien Exp $
 #
 
 DISTNAME=	typhoon-1.10.3
@@ -22,15 +22,10 @@ MAN3=d_close.3 d_crget.3 d_crread.3 d_crset.3 d_dbdpath.3 d_dbfpath.3 \
      d_recwrite.3 d_setfiles.3
 MAN1=ddlp.1
 
-.include <bsd.port.pre.mk>
-
 post-install:
 	@${MKDIR} ${PREFIX}/share/typhoon
 	@${INSTALL_DATA} ${WRKSRC}/man/manual.asc ${PREFIX}/share/typhoon
 	@${INSTALL_DATA} ${WRKSRC}/include/environ.h ${WRKSRC}/include/typhoon.h ${PREFIX}/include
-.if ${PORTOBJFORMAT} == "aout"
-	${LN} -sf libtyphoon.so.1.10 ${PREFIX}/lib/libtyphoon.so
-.endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+	@${LDCONFIG} -m ${PREFIX}/lib
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
