@@ -2,13 +2,13 @@
 # Date created:		12 Aug 1999
 # Whom:			clive
 #
-# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.7 2000/10/05 06:57:35 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xphotohunter
 PORTVERSION=	1.4
 CATEGORIES=	games
-MASTER_SITES=	http://www.oz.nthu.edu.tw/~u860905/Xphotohunter/
+MASTER_SITES=	http://micro.ee.nthu.edu.tw/~tomcat/Xphotohunter/
 
 MAINTAINER=	clive@FreeBSD.org
 
