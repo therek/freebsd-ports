@@ -1,16 +1,16 @@
-# New ports collection makefile for:   qt201
-# Version required:	2.0.1
+# New ports collection makefile for:   qt20
+# Version required:	2.0.2
 # Date created:		17 Jul 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt201/Makefile,v 1.36 1999/08/31 18:44:01 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/qt20/Makefile,v 1.37 1999/09/20 14:15:17 imura Exp $
 #
 
-DISTNAME=	qt-2.0.1
+DISTNAME=	qt-2.0.2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.troll.no/qt/source/
 
-MAINTAINER=	imura@cs.titech.ac.jp
+MAINTAINER=	imura@FreeBSD.org
 
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
 
@@ -34,7 +34,7 @@ USE_NEWGCC=	YES
 .if ${PORTOBJFORMAT} == "elf"
 VERSION=	2
 .else
-VERSION=	2.01
+VERSION=	2.02
 .endif
 PLIST_SUB=	VERSION=${VERSION}
 
@@ -60,7 +60,9 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/LICENSE.QPL ${PREFIX}/share/doc/qt2
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/qt2
 	${INSTALL_DATA} ${WRKSRC}/README.QT ${PREFIX}/share/doc/qt2
-	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/qt2/html
+	${INSTALL_DATA} ${WRKSRC}/doc/[^q]* ${PREFIX}/share/doc/qt2/html
+	${INSTALL_DATA} ${WRKSRC}/doc/q[a-m]* ${PREFIX}/share/doc/qt2/html
+	${INSTALL_DATA} ${WRKSRC}/doc/q[n-z]* ${PREFIX}/share/doc/qt2/html
 .endif
 
 .include <bsd.port.post.mk>
