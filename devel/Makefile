@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.392 2001/01/03 23:15:44 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.393 2001/01/03 23:16:16 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -248,6 +248,7 @@
     SUBDIR += p5-IO-stringy
     SUBDIR += p5-IPC-Shareable
     SUBDIR += p5-Include
+    SUBDIR += p5-Ioctl
     SUBDIR += p5-Locale-Maketext
     SUBDIR += p5-Locale-PGetText
     SUBDIR += p5-Locale-gettext
