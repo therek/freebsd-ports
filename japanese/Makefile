@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.228 1999/10/12 17:46:48 flathill Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.229 1999/10/13 06:57:16 flathill Exp $
 #
 
     SUBDIR += Canna
@@ -28,6 +28,8 @@
     SUBDIR += dvi2tty
     SUBDIR += dvipsk
     SUBDIR += dvipsk-vflib
+    SUBDIR += e2ps
+    SUBDIR += easypr
     SUBDIR += eb
     SUBDIR += eblook
     SUBDIR += ebw3
