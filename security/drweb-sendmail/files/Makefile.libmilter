@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/drweb-sendmail/files/Makefile,v 1.1 2001/08/24 15:57:23 ache Exp $
+# $FreeBSD$
 #
 SENDMAIL_DIR=/usr/src/contrib/sendmail
 .PATH:  ${SENDMAIL_DIR}/libmilter
