@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.34 2001/02/22 21:10:34 olgeni Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.35 2001/05/01 19:29:50 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -98,6 +98,10 @@ post-patch:
 		${WRKSRC}/vmmon-only/freebsd/*.c
 .endif
 	cd ${WRKSRC}/vmmon-only/freebsd && ${TOUCH} bus_if.h device_if.h
+.if ${OSVERSION} >= 500018
+	${PERL} -i -pe 's,<sys/lock\.h>,<sys/mutex.h>,' \
+		${WRKSRC}/vmmon-only/freebsd/*.c
+.endif
 
 setoptions:
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
