@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.63 2004/04/05 02:52:41 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.64 2004/04/29 00:04:47 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -326,7 +326,7 @@ libwnck_LIB_DEPENDS=	wnck-1.13:${PORTSDIR}/x11-toolkits/libwnck
 libwnck_DETECT=		${X11BASE}/libdata/pkgconfig/libwnck-1.0.pc
 libwnck_USE_GNOME_IMPL=	gtk20
 
-vte_LIB_DEPENDS=	vte.5:${PORTSDIR}/x11-toolkits/vte
+vte_LIB_DEPENDS=	vte.8:${PORTSDIR}/x11-toolkits/vte
 vte_DETECT=		${X11BASE}/libdata/pkgconfig/vte.pc
 vte_USE_GNOME_IMPL=	gtk20
 
