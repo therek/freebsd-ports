@@ -2,13 +2,13 @@
 # Date created:		Thu Aug  1 10:50:57 CDT 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.16 2000/04/29 21:52:52 kris Exp $
+# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.17 2000/06/28 13:34:35 alex Exp $
 #
 
 PORTNAME=	mpegedit
 PORTVERSION=	2.2
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/tools/
+MASTER_SITES=	ftp://ftp.netsw.org/netsw/Graphic/Movie/MPEG/mpegedit/
 DISTNAME=	${PORTNAME}_v${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
