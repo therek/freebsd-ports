@@ -2,24 +2,25 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/lbreakout/Makefile,v 1.1 2000/10/20 07:32:36 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lbreakout
-PORTVERSION=	001104
+PORTVERSION=	010315
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	lgames
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel
 
-SDL_CONFIG?=	${LOCALBASE}/bin/sdl-config
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="-lcompat"
+CONFIGURE_ENV=	LIBS="-lcompat" \
+		SDL_CONFIG="${SDL_CONFIG}"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
