@@ -2,7 +2,7 @@
 # Date created:				28 Augest 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/databases/mytop/Makefile,v 1.2 2000/10/07 21:33:54 asami Exp $
+# $FreeBSD: ports/databases/mytop/Makefile,v 1.3 2000/12/04 08:57:58 roam Exp $
 #
 
 PORTNAME=	mytop
@@ -20,7 +20,6 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Term/Read
 USE_PERL5=	yes
 
 NO_WRKSUBDIR=	yes
-NO_BUILD=	yes
 
 MAN1=		mytop.1
 POD2MAN?=	/usr/bin/pod2man
@@ -28,6 +27,8 @@ POD2MAN?=	/usr/bin/pod2man
 do-extract:
 	@${MKDIR} ${WRKDIR}
 	@${GUNZIP_CMD} -c ${DISTDIR}/${DISTFILES} > ${WRKDIR}/${PORTNAME}
+
+do-build:
 	@${POD2MAN} ${WRKDIR}/${PORTNAME} > ${WRKDIR}/${PORTNAME}.1
 
 do-install:
