@@ -2,17 +2,19 @@
 # Date created:         Feb  5 2000
 # Whom:                 Jeff Brown <jabrown@caida.org>
 #
-# $FreeBSD: ports/lang/clisp/Makefile,v 1.1 2000/02/13 02:18:15 imura Exp $
+# $FreeBSD: ports/lang/clisp/Makefile,v 1.2 2000/04/12 06:17:59 obrien Exp $
 #
 
 PORTNAME=	clisp
-PORTVERSION=	1999.07.22
+PORTVERSION=	2000.03.06
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp2.cons.org/pub/lisp/clisp/source/ \
 		ftp://ftp.cdrom.com/pub/lisp/clisp/source/
-DISTNAME=	clisp-1999-07-22
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/./-/g}
 
 MAINTAINER=	jabrown@caida.org
+
+USE_BZIP2=	yes
 
 # Build subdirectory
 BUILD_DIRNAME=obj
@@ -26,7 +28,8 @@ DATA_PATHS=${PREFIX}/lib/clisp ${PREFIX}/share/doc/clisp \
 	${PREFIX}/share/locale/de/LC_MESSAGES/clisp.mo \
 	${PREFIX}/share/locale/en/LC_MESSAGES/clisp.mo \
 	${PREFIX}/share/locale/es/LC_MESSAGES/clisp.mo \
-	${PREFIX}/share/locale/fr/LC_MESSAGES/clisp.mo
+	${PREFIX}/share/locale/fr/LC_MESSAGES/clisp.mo \
+	${PREFIX}/share/locale/nl/LC_MESSAGES/clisp.mo
 PROG_PATHS=${PREFIX}/bin/clisp
 MAN_PATHS=${PREFIX}/man/man1/clisp.1 ${PREFIX}/man/man3/clreadline.3
 
@@ -39,13 +42,13 @@ post-extract:
 # by the environment it gets from GNU_CONFIGURE=YES, so we'll call it here.
 #
 # The 'configure' wants the CC environment variable to include CFLAGS; but
-# I'll ignore it since if CFLAGS includes "-pipe", configure gets stuck reading
+# I'll edit it since if CFLAGS includes "-pipe", configure gets stuck reading
 # from stdin, using the assembler in gcc 2.7.2.3
 pre-configure:
 	@cd ${WRKSRC} && \
 	${RM} -rf ${BUILD_DIRNAME} && \
-	env CC="${CC}" ./configure --prefix=${PREFIX} ${BUILD_DIRNAME}
-#	env CC="${CC} ${CFLAGS}"
+	${SETENV} CC="${CC} `echo ${CFLAGS} | ${SED} s/-pipe//`" \
+		./configure --prefix=${PREFIX} ${BUILD_DIRNAME}
 
 # The 'configure' script stops short of doing this for us.
 post-configure:
