@@ -2,14 +2,14 @@
 # Date created:				19 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/gtksql/Makefile,v 1.12 2001/02/14 05:42:12 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtksql
 PORTVERSION=	0.3
 PORTREVISION=	1
 CATEGORIES=	databases
-MASTER_SITES=	http://www.multimania.com/bbrox/GtkSQL/
+MASTER_SITES=	http://membres.lycos.fr/bbrox/GtkSQL/
 
 MAINTAINER=	domi@saargate.de
 
