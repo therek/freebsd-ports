@@ -2,11 +2,11 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.44 2000/04/16 11:56:27 knu Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.45 2000/04/17 00:18:24 reg Exp $
 #
 
 PORTNAME=	mc
-PORTVERSION=	4.5.44
+PORTVERSION=	4.5.48
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
