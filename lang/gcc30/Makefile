@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc30/Makefile,v 1.108 2001/08/30 19:12:04 obrien Exp $
+# $FreeBSD: ports/lang/gcc30/Makefile,v 1.109 2001/09/11 15:59:34 sf Exp $
 #
 
 PORTNAME=	gcc30
@@ -112,7 +112,7 @@ post-install:
 #.if defined(WANT_SHAREDLIBS)
 #	${MV} -f ${PREFIX}/lib/libstdc++.so* ${TARGLIB}
 #.endif
-.for info in cpp g77 gcc
+.for info in cpp cppinternals g77 gcc gcj
 	install-info ${PREFIX}/info/${info}.info ${PREFIX}/info/dir
 .endfor
 	cd ${PREFIX} ;\
