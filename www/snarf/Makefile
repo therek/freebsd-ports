@@ -2,11 +2,11 @@
 # Date created:        2 January 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/snarf/Makefile,v 1.4 1999/08/31 06:52:18 mharo Exp $
+# $FreeBSD: ports/www/snarf/Makefile,v 1.5 2000/04/10 00:06:50 cpiazza Exp $
 #
 
 PORTNAME=	snarf
-PORTVERSION= 	2.0.5
+PORTVERSION= 	7.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.xach.com/snarf/
 
