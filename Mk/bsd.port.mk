@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.412 2002/06/04 21:34:43 obrien Exp $
+# $FreeBSD$
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -621,6 +621,13 @@ OSVERSION!=	/sbin/sysctl -n kern.osreldate
 .else
 OSVERSION!=	/usr/sbin/sysctl -n kern.osreldate
 .endif
+.endif
+
+# Special macro for doing in-place file editing using regexps
+.if ${OSVERSION} <= 500033
+REINPLACE_CMD?=	${PERL} -p -i.bak
+.else
+REINPLACE_CMD?=	${SED}  -i.bak
 .endif
 
 # Get the object format.
