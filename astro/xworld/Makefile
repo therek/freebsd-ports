@@ -2,7 +2,7 @@
 # Date created:			  24 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/xworld/Makefile,v 1.1 2001/08/25 09:55:43 kris Exp $
 #
 
 PORTNAME=	xworld
@@ -11,7 +11,7 @@ CATEGORIES=	astro
 MASTER_SITES=	ftp://gutemine.geo.uni-koeln.de/pub/xworld/ \
 		ftp://ftp.Uni-Koeln.DE/misc/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	naddy@mips.inka.de
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	CAT=${CAT} \
