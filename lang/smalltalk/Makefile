@@ -2,23 +2,30 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.26 2000/07/09 08:45:38 alex Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.27 2000/12/31 17:00:04 alex Exp $
 #
 
 PORTNAME=	smalltalk
-PORTVERSION=	1.8.1
+PORTVERSION=	1.95.1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	smalltalk
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+ALL_TARGET=	all optimize
 
 MAN1=		gst.1
 
-# Set all-target to test the stuff
-ALL_TARGET=	optimize info check
+pre-patch:
+	@${PERL} -pi -e 's| install-data-local||g' ${WRKSRC}/kernel/Makefile.in
+
+pre-build:
+	${RM} ${WRKSRC}/docs/gst.info*
+
+post-install:
+	@cd ${PREFIX}/share/gnu-smalltalk && ${PREFIX}/bin/gst -Vi dummyFile
 
 .include <bsd.port.mk>
