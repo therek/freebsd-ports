@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.158 2004/08/05 14:27:36 eik Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.159 2004/08/05 23:35:33 eik Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -4137,6 +4137,10 @@ misc.c:
       <package>
         <name>firefox</name>
         <range><lt>0.9.3</lt></range>
+      </package>
+      <package>
+        <name>thunderbird</name>
+        <range><lt>0.7.3</lt></name>
       </package>
       <package>
         <name>linux-mozilla</name>
