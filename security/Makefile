@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.228 2001/08/29 11:29:25 ijliao Exp $
+# $FreeBSD: ports/security/Makefile,v 1.229 2001/08/30 13:55:36 dd Exp $
 #
 
     SUBDIR += aafid2
@@ -133,6 +133,7 @@
     SUBDIR += pam-pgsql
     SUBDIR += pam_krb5
     SUBDIR += pam_ldap
+    SUBDIR += pam_pwdfile
     SUBDIR += pam_smb
     SUBDIR += pam_ssh
     SUBDIR += pgp
