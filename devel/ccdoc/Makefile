@@ -2,7 +2,7 @@
 # Date created:        9 October 2000
 # Whom:                lonewolf@flame.org
 #
-# $FreeBSD: $
+# $FreeBSD$
 #
 
 PORTNAME=	ccdoc
@@ -17,7 +17,7 @@ EXTRACT_SUFX=	.exe
 MAINTAINER=	lonewolf@flame.org
 
 WRKSRC=		${WRKDIR}/ccdoc_v07a
-USE_PERL=	yes
+USE_PERL5=	yes
 
 DOCDIR=${PREFIX}/share/doc/ccdoc
 
