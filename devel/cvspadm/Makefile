@@ -2,7 +2,7 @@
 # Date Created:				17 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/cvspadm/Makefile,v 1.3 2001/08/22 23:05:24 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvspadm
@@ -16,7 +16,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 NO_BUILD=	yes
 USE_PERL5=	yes
-POD2TEXT?=	/usr/bin/pod2text
+POD2TEXT?=	pod2text
 
 post-patch:
 	@${PERL} -pi -e "s,#!/usr/bin/perl,#!${PERL}," ${WRKSRC}/cvspadm
