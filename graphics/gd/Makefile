@@ -3,7 +3,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.14 1999/11/01 01:00:54 steve Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.15 1999/12/25 02:01:47 steve Exp $
 #
 
 DISTNAME=       gd-1.7.3
@@ -21,5 +21,8 @@ USE_XLIB=	YES
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/gd
+
+post-install:
+	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
