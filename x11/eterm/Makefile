@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.27 2000/10/03 11:54:47 murray Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.28 2000/10/05 06:57:47 reg Exp $
 #
 
 PORTNAME=	eterm
@@ -27,9 +27,8 @@ CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
 
 MAN1=		Eterm.1
 
-pre-patch:
 .if ( defined(KANJI) )
-	${CP} ${FILESDIR}/patch-kanji ${PATCHDIR}
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-kanji
 .endif
 
 # this is needed to remove leftover files from applied patches.
