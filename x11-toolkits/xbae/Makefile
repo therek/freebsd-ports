@@ -5,7 +5,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
 #
-# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.9 1998/11/14 09:43:33 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.10 1999/09/10 21:19:32 peter Exp $
 #
 
 DISTNAME=	Xbae-4.7
@@ -27,6 +27,8 @@ post-install:
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libXbae.so.6.2 ${PREFIX}/lib/libXbae.so
 .endif
+	${RM} -rf ${PREFIX}/include/Xbae
+	${LN} -sf Xbae-4.7 ${PREFIX}/include/Xbae
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>
