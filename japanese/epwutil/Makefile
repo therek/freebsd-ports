@@ -3,14 +3,14 @@
 # Date created:		22 January 1999
 # Whom:			Kazutoki TAKAMUNE <takamune@avrl.mei.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/epwutil/Makefile,v 1.2 1999/08/25 05:23:59 obrien Exp $
 #
 
 DISTNAME=	epwutil-1.0
 PKGNAME=	ja-epwutil-1.0
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.nerimadors.or.jp/pub/epwutil/ \
-		ftp://ring.aist.go.jp/openlab/lookup/edict/
+		ftp://ftp.mei.co.jp/free/others/Dictionary/epwutil/
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
