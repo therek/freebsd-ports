@@ -3,10 +3,8 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.29 2000/07/04 15:18:29 ade Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.30 2000/07/26 07:33:23 sobomax Exp $
 #
-# PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
-# png version number) when updating this port.  Thank you.
 
 PORTNAME=	png
 PORTVERSION=    1.0.8
@@ -36,8 +34,11 @@ MAN5=           png.5
 MAKE_ENV+=	USE_MMX=yes
 .endif
 
-.if !defined(WITH_MMX) && (${ARCH} == "i386")
 post-extract:
+# Please don't delete the following line - this link used by ghostscript* ports
+	@${LN} -sf ${WRKSRC} ${WRKDIR}/libpng
+#
+.if !defined(WITH_MMX) && (${ARCH} == "i386")
 	@${ECHO_MSG}
 	@${ECHO_MSG} " If you have a CPU with MMX instruction set (Pentium/P55C and higher) you can"
 	@${ECHO_MSG} " try to add \"-DWITH_MMX\" to build libpng with MMX-optimized assembler routines."

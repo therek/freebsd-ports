@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.42 2000/04/09 17:49:42 cpiazza Exp $
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.43 2000/07/04 07:12:49 sobomax Exp $
 #
 
 PORTNAME=	ghostscript
@@ -55,7 +55,7 @@ pre-fetch:
 
 post-extract:
 	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/jpeg/work/jpeg-6b ${WRKSRC}/jpeg
-	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng-* ${WRKSRC}/libpng
+	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng ${WRKSRC}/libpng
 	${MV} ${WRKSRC}/devs.mak ${WRKSRC}/devs.mak.bak
 	cd ${WRKSRC} && unzip -Lao ${DISTDIR}/${HP850_DRV}
 	${MV} ${WRKSRC}/devs.mak.bak ${WRKSRC}/devs.mak
