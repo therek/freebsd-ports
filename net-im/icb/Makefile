@@ -3,7 +3,7 @@
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.7 2000/04/09 18:11:38 cpiazza Exp $
+# $FreeBSD: ports/net/icb/Makefile,v 1.8 2001/01/06 08:09:14 obrien Exp $
 #
 
 PORTNAME=	icb
@@ -14,6 +14,8 @@ MASTER_SITES=	http://ftp.obfuscation.org/ftp/pub/icb/  \
 DISTNAME=	cicb-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	tclsh8.3:${PORTSDIR}/lang/tcl83
 
 GNU_CONFIGURE=	yes
 
