@@ -2,11 +2,11 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.11 2000/11/13 23:58:11 asami Exp $
+# $FreeBSD: ports/games/gracer/Makefile,v 1.12 2001/01/25 14:17:09 ijliao Exp $
 #
 
-PORTNAME= 	gracer
-PORTVERSION= 	0.1.4
+PORTNAME=	gracer
+PORTVERSION=	0.1.4
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/games/xboing/Makefile,v 1.16 2000/09/09 11:01:14 kris Exp $
+# $FreeBSD: ports/games/xboing/Makefile,v 1.17 2000/10/08 01:43:20 asami Exp $
 
 PORTNAME=	xboing
 PORTVERSION=	2.4
@@ -19,7 +19,7 @@ PLIST=		${PKGDIR}/pkg-plist.alpha
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-WRKSRC= ${WRKDIR}/xboing
+WRKSRC=		${WRKDIR}/xboing
 MAN1=		xboing.1
 
 post-install:

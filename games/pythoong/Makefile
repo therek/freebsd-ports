@@ -2,11 +2,11 @@
 # Date created:				24 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/pythoong/Makefile,v 1.3 2000/10/05 07:10:42 reg Exp $
+# $FreeBSD: ports/games/pythoong/Makefile,v 1.4 2000/11/01 15:51:05 sobomax Exp $
 #
 
 PORTNAME=	pythoong
-PORTVERSION= 	0.99
+PORTVERSION=	0.99
 CATEGORIES=	games gnome
 MASTER_SITES=	http://perso.wanadoo.fr/christophe.cressend/tarballs/
 

@@ -2,11 +2,11 @@
 # Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gtktetcolor/Makefile,v 1.2 2000/08/23 10:30:58 sobomax Exp $
+# $FreeBSD: ports/games/gtktetcolor/Makefile,v 1.3 2000/10/05 07:10:42 reg Exp $
 #
 
 PORTNAME=	gtktetcolor
-PORTVERSION= 	0.4.3
+PORTVERSION=	0.4.3
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.dvgu.ru/ifit/~panov/gtktetcolor/ \
 		http://metalab.unc.edu/pub/Linux/games/

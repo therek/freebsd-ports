@@ -2,7 +2,7 @@
 # Date created:        11 Apr 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/tetrinet-x/Makefile,v 1.3 1999/11/12 21:04:54 jim Exp $
+# $FreeBSD: ports/games/tetrinet-x/Makefile,v 1.4 2000/04/14 12:26:41 asami Exp $
 #
 
 PORTNAME=	tetrinet-x
@@ -12,11 +12,11 @@ MASTER_SITES=	http://www.giovannelli.it/~gmarco/files/ \
 	     	ftp://ftp.dementia.nu/tetrinet/servers/tetrix/
 DISTFILES=	${PORTNAME}.${PORTVERSION}.tgz
 
-MAINTAINER= gmarco@giovannelli.it
+MAINTAINER=	gmarco@giovannelli.it
 
 WRKSRC=		${WRKDIR}/tetrinetx-${PORTVERSION}
 
-INSTALLDIR= ${PREFIX}/tetrinet-x
+INSTALLDIR=	${PREFIX}/tetrinet-x
 
 do-build:
 	(cd ${WRKDIR}/tetrinetx-1.13.16/src && \

@@ -2,12 +2,12 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.18 2000/08/03 09:23:49 asami Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.19 2000/10/01 15:29:02 kevlo Exp $
 #
 
 PORTNAME=	powerpak
 PORTVERSION=	991203
-CATEGORIES= 	games
+CATEGORIES=	games
 MASTER_SITES=	http://www.imperialpenguin.com/software/powerpak/
 DISTNAME=	PowerPak
 

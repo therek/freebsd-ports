@@ -2,7 +2,7 @@
 # Date created:        9 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/gnushogi/Makefile,v 1.7 2000/01/07 02:25:56 nakai Exp $
+# $FreeBSD: ports/games/gnushogi/Makefile,v 1.8 2000/04/14 06:53:06 mharo Exp $
 #
 
 PORTNAME=	gnushogi
@@ -14,7 +14,7 @@ DISTNAME=	gnushogi-1.2p03
 
 MAINTAINER=	nakai@FreeBSD.org
 
-DOCFILES= BOOKFILES CHANGES CONTRIB COPYING GENERAL INSTALL PORTING \
+DOCFILES=	BOOKFILES CHANGES CONTRIB COPYING GENERAL INSTALL PORTING \
 	README-FIRST listserv.ref shogi.rules tutorial1.gam tutorial2.gam
 MAN6=		gnushogi.6
 
