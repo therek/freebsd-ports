@@ -2,7 +2,7 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man/Makefile,v 1.20 1999/09/08 13:24:23 kuriyama Exp $
+# $FreeBSD: ports/japanese/man/Makefile,v 1.21 2000/04/11 14:15:00 knu Exp $
 #
 
 PORTNAME=	man
@@ -14,10 +14,16 @@ DISTNAME=	jp-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/bin/groff:${PORTSDIR}/japanese/groff \
+RUN_DEPENDS=	${LOCALBASE}/bin/groff:${PORTSDIR}/japanese/groff \
 		jless:${PORTSDIR}/japanese/less
 
 MAKE_ENV=	GZCAT=${GZCAT} GZIP_CMD="${GZIP_CMD}"
+
+MANLANG=	"" ja
+MAN1=		jman.1 jmanpath.1 japropos.1 \
+		jwhatis.1 jmakewhatis.1 jcatman.1
+MAN8=		jmakewhatis.local.8 jcatman.local.8
+MANCOMPRESSED=	yes
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
