@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.153 1999/11/11 10:19:54 nakai Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.154 1999/12/07 21:19:30 jmz Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -96,6 +96,7 @@
     SUBDIR += tclX80
     SUBDIR += tclplugin
     SUBDIR += wamcc
+    SUBDIR += yabasic
     SUBDIR += yorick
 
 .include <bsd.port.subdir.mk>
