@@ -2,12 +2,12 @@
 # Date created:         23 Jul 1997
 # Whom:                 stb
 #
-# $FreeBSD: ports/net/netatalk/Makefile,v 1.16 2000/10/08 10:22:35 asami Exp $
+# $FreeBSD: ports/net/netatalk/Makefile,v 1.17 2001/01/27 05:08:04 kris Exp $
 #
 
 PORTNAME=	netatalk
 PORTVERSION=	1.4b2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net print
 MASTER_SITES=   ftp://terminator.rs.itd.umich.edu/unix/netatalk/ \
 		${MASTER_SITE_LOCAL} \
@@ -17,7 +17,7 @@ MASTER_SITE_SUBDIR=	stb/mirror/terminator.rs.itd.umich.edu/unix/netatalk
 PATCH_SITES=	http://www.umich.edu/~rsug/netatalk/patches/1.4b2/ \
 		${MASTER_SITE_LOCAL} \
 		ftp://ftp.hanse.de/sites/transit/mirror/www.umich.edu/%257Ersug/netatalk/patches/1.4b2/
-PATCH_SITE_SUBDIR=	stb/mirror/www.umich.edu/%7Ersug/netatalk/patches/1.4b2/ \
+PATCH_SITE_SUBDIR=	stb/mirror/www.umich.edu/%7Ersug/netatalk/patches/1.4b2/
 PATCHFILES=	afpd-macos8.diff afpd-bfree.diff
 
 MAINTAINER=	ports@freebsd.org
