@@ -2,7 +2,7 @@
 # Date created:		3 July 2000
 # Whom:			Ryuichiro IMURA <imura@af.airnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.3 2000/10/14 23:29:54 imura Exp $
+# $FreeBSD: ports/japanese/msdosfs/Makefile,v 1.4 2000/10/23 16:29:19 imura Exp $
 #
 
 PORTNAME=	msdosfs
@@ -22,7 +22,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/msdosfs.ja
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 410001 && ${OSVERSION} < 500000
-LAST_UPDATED=	20001007
+LAST_UPDATED=	20001027
 PATCHDIR=	${MASTERDIR}/patches.4
 .elif ${OSVERSION} >= 500013
 LAST_UPDATED=	20001022
