@@ -2,31 +2,35 @@
 # Date created:		13 January 2000
 # Whom:			Matthew Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.9 2000/10/27 16:11:21 kevlo Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.10 2001/06/01 06:05:14 obrien Exp $
 #
 
 PORTNAME=	aolserver
-PORTVERSION=	3.2
+PORTVERSION=	3.4
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.aolserver.com/server/aolserver3_2/
-DISTNAME=	aolserver3_2-source
+MASTER_SITES=	ftp://ftp.aolserver.com/server/ \
+		http://aolserver.com/archive/server/
+DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	mab@red-bean.com
 
-WRKSRC=		${WRKDIR}/aolserver3_2
+WRKSRC=	${WRKDIR}/${DISTNAME}
 
 USE_GMAKE=	yes
 
-INSTALL_TARGET=	install INST=${PREFIX}/aolserver
+INSTALL_TARGET=	install INST=${PREFIX}/${PORTNAME}
 
 post-extract:
+	${MV} ${WRKSRC}/include/Makefile.global ${WRKSRC}/include/Makefile.global.orig
+	${SED} s/tcl83/tcl8.3/ ${WRKSRC}/include/Makefile.global.orig > ${WRKSRC}/include/Makefile.global
+	${RM} ${WRKSRC}/include/Makefile.global.orig
 	find ${WRKSRC} -name CVS | xargs ${RM} -rf
 
 post-install:
 # Headers
 # nsd.h is needed for, e.g., building the Postgres driver
 .for header in nsd/nsd.h
-	 ${INSTALL_DATA} ${WRKSRC}/${header} ${PREFIX}/aolserver/include
+	 ${INSTALL_DATA} ${WRKSRC}/${header} ${PREFIX}/${PORTNAME}/include
 .endfor
 
 # Other documentation
