@@ -1,21 +1,22 @@
 # New ports collection Makefile for: ja-ng-canna
-# Version required:	ng1.3Lcanna1.0.2
 # Date created:		11 January 1999
 # Whom:				HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ng-canna/Makefile,v 1.2 1999/08/25 05:25:56 obrien Exp $
 #
 
-DISTNAME=	ng13Lcanna1.0.2
-PKGNAME=	ja-ng-canna-1.3l
+PORTNAME=	ng
+PORTVERSION=	1.3L
+PKGNAMESUFFIX=	-canna
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://www3.tky.3web.ne.jp/~quiver/ng/
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}canna1.0.2
 
 MAINTAINER=	honda@kashio.info.mie-u.ac.jp
 
 LIB_DEPENDS=    canna:${PORTSDIR}/japanese/Canna
 
-WRKSRC=		${WRKDIR}/ng
+WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	ng
 
 post-patch:

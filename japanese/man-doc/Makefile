@@ -1,13 +1,12 @@
 # New ports collection makefile for:	Japanese man documents
-# Version required:	3.4
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.30 1999/12/11 02:01:36 asami Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.31 2000/01/10 02:18:48 kuriyama Exp $
 #
 
-DISTNAME=	jpman-3.4
-PKGNAME=	ja-man-doc-3.4
+PORTNAME=	man-doc
+PORTVERSION=	3.4
 CATEGORIES=	japanese
 DISTFILES=	# none
 

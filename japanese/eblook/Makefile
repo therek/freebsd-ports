@@ -1,13 +1,12 @@
 # New ports collection makefile for:	eblook
-# Version required:	1.3
 # Date created:		20 August 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/eblook/Makefile,v 1.2 1999/08/25 05:23:49 obrien Exp $
+# $FreeBSD: ports/japanese/eblook/Makefile,v 1.3 2000/01/23 11:41:16 taoka Exp $
 #
 
-DISTNAME=	eblook-1.3
-PKGNAME=	ja-eblook-1.3
+PORTNAME=	eblook
+PORTVERSION=	1.3
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://openlab.ring.gr.jp/lookup/DIST/eblook/
 

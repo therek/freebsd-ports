@@ -1,13 +1,12 @@
 # New ports collection makefile for:	namazu
-# Version required:	1.3.0.11
 # Date created:		17 March 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/namazu/Makefile,v 1.5 2000/02/01 13:39:37 flathill Exp $
+# $FreeBSD: ports/japanese/namazu/Makefile,v 1.6 2000/03/07 22:26:54 flathill Exp $
 #
 
-DISTNAME=	namazu-1.3.0.11
-PKGNAME=	ja-namazu-1.3.0.11
+PORTNAME=	namazu
+PORTVERSION=	1.3.0.11
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://www.namazu.org/stable/ \
 		http://people.FreeBSD.org/~flathill/distfiles/
@@ -22,6 +21,6 @@ RUN_DEPENDS=	kakasi:${PORTSDIR}/japanese/kakasi \
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
 
-WRKSRC=		${WRKDIR}/namazu-1.3.0.11/src
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 .include <bsd.port.mk>

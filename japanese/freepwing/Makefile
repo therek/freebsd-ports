@@ -1,20 +1,22 @@
 # New ports collection makefile for: FreePWING
-# Version required:	1.2beta2
 # Date created:		00/01/24
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.4 2000/01/27 16:52:30 taoka Exp $
+# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.5 2000/03/26 14:56:41 taoka Exp $
 #
 
-DISTNAME=	freepwing-1.2beta2
-PKGNAME=	ja-freepwing-1.2.b2
+PORTNAME=	freepwing
+PORTVERSION=	${VERSION:S/beta/.b/}
 CATEGORIES=	japanese textproc
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/freepwing/ \
 		ftp://ftp.sra.co.jp/pub/misc/freepwing/freepwing/beta/
+DISTNAME=	${PORTNAME}-${VERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
 
 RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
+
+VERSION=	1.2beta2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/doc

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	e2ps
-# Version required:	4.0
 # Date created:		27 Nov 1998
 # Whom:			Daisuke Kawahara <kawahara@pine.kuee.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/e2ps/Makefile,v 1.1.1.1 1999/10/22 00:43:29 taoka Exp $
 #
 
-DISTNAME=	e2ps-4.0
-PKGNAME=	ja-e2ps-4.0
+PORTNAME=	e2ps
+PORTVERSION=	4.0
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://pine.kuee.kyoto-u.ac.jp/pub/e2ps/
 

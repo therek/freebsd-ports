@@ -1,12 +1,11 @@
 # New ports collection makefile for:	nvi-1.79 + multilingual patch(sjis)
-# Version required:	1.79
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/nvi-sjis/Makefile,v 1.17 1999/08/25 05:26:00 obrien Exp $
+# $FreeBSD: ports/japanese/nvi-sjis/Makefile,v 1.18 2000/02/12 20:31:21 imura Exp $
 #
 
-PKGNAME=	ja-nvi-sjis-1.79.19991117
+PKGNAMESUFFIX=	-sjis
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
 COMMENT=	${.CURDIR}/pkg/COMMENT

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	kinput2-canna
-# Version required:	3.0
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/kinput2-canna/Makefile,v 1.10 1999/08/25 05:24:54 obrien Exp $
 #
 
 CANNA=		yes

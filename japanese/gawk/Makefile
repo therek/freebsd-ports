@@ -1,13 +1,12 @@
 # New ports collection makefile for:	gawk+mb
-# Version required:	3.0.4+mb1.12
 # Date created:		5 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gawk/Makefile,v 1.18 1999/09/07 02:35:44 taoka Exp $
+# $FreeBSD: ports/japanese/gawk/Makefile,v 1.19 1999/09/08 13:32:25 taoka Exp $
 #
 
-DISTNAME=	gawk-3.0.4
-PKGNAME=	ja-gawk-3.0.4
+PORTNAME=	gawk
+PORTVERSION=	3.0.4
 CATEGORIES=	japanese lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gawk

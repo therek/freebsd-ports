@@ -1,13 +1,12 @@
 # New ports collection makefile for:	dbskkd-cdb
-# Version required:	1.01
 # Date created:		17 Jun 1999
 # Whom:			Makoto Matsushita <matusita@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.1.1.1 1999/09/08 17:08:42 taoka Exp $
+# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.2 1999/10/26 03:23:17 mharo Exp $
 #
 
-DISTNAME=	dbskkd-cdb-1.01
-PKGNAME=	ja-dbskkd-cdb-1.01
+PORTNAME=	dbskkd-cdb
+PORTVERSION=	1.01
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.k2r.org/kenji/software/
 

@@ -1,20 +1,19 @@
 # New ports collection makefile for:	libicq
-# Version required:		0.33
 # Date Created:			22 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/libicq/Makefile,v 1.8 1999/11/18 23:54:15 flathill Exp $
+# $FreeBSD: ports/japanese/libicq/Makefile,v 1.9 2000/02/08 09:27:01 peter Exp $
 #
 
-DISTNAME=	libicq-0.33
-PKGNAME=	ja-libicq-0.33
+PORTNAME=	libicq
+PORTVERSION=	0.33
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/ \
 		http://www.nectar.com/distfiles/
 
 PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
 		http://www-nagao.kuee.kyoto-u.ac.jp/member/taku/soft/
-PATCHFILES=	libicq-0.33ja.patch
+PATCHFILES=	${DISTNAME}ja.patch
 PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	flathill@FreeBSD.org

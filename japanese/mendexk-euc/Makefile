@@ -1,16 +1,17 @@
 # New ports collection makefile for:    mendexk-euc
-# Version required:     2.4d
 # Date created:         1 Dec 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/mendexk-euc/Makefile,v 1.4 1999/08/25 05:25:23 obrien Exp $
+# $FreeBSD: ports/japanese/mendexk-euc/Makefile,v 1.5 2000/04/01 20:33:49 mharo Exp $
 #
 
-DISTNAME=	mendexk2.4d
-PKGNAME=	ja-mendexk-euc-2.4d
+PORTNAME=	mendexk
+PORTVERSION=	2.4d
+PKGNAMESUFFIX=	-euc
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/mendex/ \
 		ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/ptex218/web2c/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${KPATHSEA_PARENT}${EXTRACT_SUFX}
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp

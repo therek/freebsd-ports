@@ -1,9 +1,8 @@
 # New ports collection makefile for:	acroread-jpnfont
-# Version required:	1999.7.20
 # Date created:		99/06/16
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.3 1999/08/25 05:23:30 obrien Exp $
+# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.4 2000/02/28 08:33:43 asami Exp $
 #
 
 DISTNAME=	jpnfont

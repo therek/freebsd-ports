@@ -1,18 +1,18 @@
 # New ports collection makefile for:	nkf
-# Version required:	1.71
 # Date created:		5 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/nkf/Makefile,v 1.18 2000/02/23 05:05:47 max Exp $
+# $FreeBSD: ports/japanese/nkf/Makefile,v 1.19 2000/02/23 05:07:43 max Exp $
 #
 
-DISTNAME=	nkf171
-PKGNAME=	ja-nkf-1.71
+PORTNAME=	nkf
+PORTVERSION=	1.71
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.ie.u-ryukyu.ac.jp/pub/software/kono/ \
 		ftp://ftp.win.ne.jp/pub/misc/ \
 		ftp://ftp.eos.hokudai.ac.jp/pub/tools/code-conv/nkf/
 EXTRACT_SUFX=	.shar
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
 MAINTAINER=	max@FreeBSD.org
 

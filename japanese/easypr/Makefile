@@ -1,15 +1,15 @@
 # New ports collection makefile for:	easypr
-# Version required:	0.25
 # Date created:		99/10/19
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/easypr/Makefile,v 1.1.1.1 1999/10/22 05:30:46 taoka Exp $
+# $FreeBSD: ports/japanese/easypr/Makefile,v 1.2 1999/10/25 03:57:16 asami Exp $
 #
 
-DISTNAME=	print-0.25
-PKGNAME=	ja-easypr-0.25
+PORTNAME=	easypr
+PORTVERSION=	0.25
 CATEGORIES=	japanese print
 MASTER_SITES=	http://www.linet.gr.jp/~mituiwa/
+DISTNAME=	print-${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
 

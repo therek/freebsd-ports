@@ -1,19 +1,18 @@
 # New ports collection makefile for:    Ng
-# Version required:     1.3L
 # Date created:         18 November 1998
 # Whom:                 Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD: ports/japanese/ng/Makefile,v 1.2 1999/08/25 05:25:55 obrien Exp $
+# $FreeBSD: ports/japanese/ng/Makefile,v 1.3 2000/04/01 03:49:54 mharo Exp $
 #
 
-DISTNAME=       ng-1.3L
-PKGNAME=        ja-ng-1.3l
+PORTNAME=	ng
+PORTVERSION=	1.3L
 CATEGORIES=     japanese editors
 MASTER_SITES=   ftp://ftp.iis.u-tokyo.ac.jp/unix/Editor/
 
 MAINTAINER=     ginga@athena.club.ne.jp
 
-WRKSRC=         ${WRKDIR}/Ng-1.3L
+WRKSRC=         ${WRKDIR}/Ng-${PORTVERSION}
 ALL_TARGET=	ng
 
 post-patch:

@@ -1,12 +1,10 @@
 # New ports collection makefile for: ja-jlatex209
-# Version required:	a1.7-n1.52
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/jtex209-ascii/Makefile,v 1.5 1999/08/25 05:24:29 obrien Exp $
 #
 
-DISTNAME=	ja-jlatex209-a17
 BATCH_TEX=	ASCII
 
 MANUAL_PACKAGE_BUILD=	incompatible with other versions of jtex-*

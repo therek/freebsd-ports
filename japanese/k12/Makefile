@@ -1,17 +1,18 @@
 # New ports collection makefile for:	k12font
-# Version required:	1.1
 # Date created:		24 June 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/k12/Makefile,v 1.9 1999/08/25 05:24:47 obrien Exp $
+# $FreeBSD: ports/japanese/k12/Makefile,v 1.10 1999/11/01 01:10:34 steve Exp $
 #
 
-DISTNAME=	kaname_k12_bdf
-PKGNAME=	ja-kaname12-1.1
+PORTNAME=	kaname12
+PORTVERSION=	1.1
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://www.din.or.jp/~storm/fonts/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} knm_new_linux.tar.gz
+DISTNAME=	kaname_k12_bdf
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		knm_new_linux.tar.gz
 
 MAINTAINER=	mita@jp.FreeBSD.org
 

@@ -1,13 +1,12 @@
 # New ports collection makefile for:    nxedit
-# Version required:    3.04
 # Date created:        15 Nov 1999
 # Whom:                SASAKI Shunsuke <ele@pop17.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/ne/Makefile,v 1.3 1999/12/09 01:49:02 sumikawa Exp $
+# $FreeBSD: ports/japanese/ne/Makefile,v 1.4 2000/03/24 21:54:28 knu Exp $
 #
 
-DISTNAME=	ne-3.04
-PKGNAME=	ja-ne-3.04
+PORTNAME=	ne
+PORTVERSION=	3.04
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA018758/archive/
 

@@ -1,13 +1,12 @@
 # New ports collection makefile for: csrd
-# Version required:	1.0
 # Date created:		99/08/18
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/csrd/Makefile,v 1.2 1999/08/25 05:23:39 obrien Exp $
 #
 
-DISTNAME=	csrd-1.0
-PKGNAME=	ja-csrd-1.0
+PORTNAME=	csrd
+PORTVERSION=	1.0
 CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/csrd/
 

@@ -1,16 +1,14 @@
 # New ports collection makefile for:	ewipe
-# Version required:	1.1.0
 # Date created:		17 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ewipe/Makefile,v 1.15 1999/08/25 05:24:02 obrien Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/ewipe
 PATCHDIR=	${.CURDIR}/patches
 COMMENT=	${.CURDIR}/pkg/COMMENT
 
-PKGNAME=	ja-ewipe-1.1.0
 KANJI=		yes
 
 .include "${MASTERDIR}/Makefile"

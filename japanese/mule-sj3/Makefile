@@ -1,12 +1,11 @@
 # New ports collection makefile for:	mule 2.3@19.34 with sj3
-# Version required:	2.3@19.34
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/mule-sj3/Makefile,v 1.12 1999/08/25 05:25:40 obrien Exp $
 #
 
-PKGNAME=	ja-mule-sj3-2.3
+PKGNAMESUFFIX=	-sj3
 CATEGORIES=	japanese editors
 
 SJ3=		yes

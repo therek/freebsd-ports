@@ -1,23 +1,26 @@
 # New ports collection makefile for:	Jed text editor w/ Japanese support
-# Version required:	0.99.8.j067
 # Date created:		2 Feb 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/jed/Makefile,v 1.1.1.1 2000/02/08 16:03:53 taoka Exp $
+# $FreeBSD: ports/japanese/jed/Makefile,v 1.2 2000/03/23 07:11:52 knu Exp $
 #
 
-DISTNAME=	jed-B0.99-8__J067
-PKGNAME=	ja-jed-0.99.8.j067
+PORTNAME=	jed
+PORTVERSION=	${VERSION}.j${JP_VERSION}
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://people.FreeBSD.org/~knu/ports/distfiles/ \
 		http://kondara.sdri.co.jp/~kikutani/slang/
+DISTNAME=	${PORTNAME}-B${VERSION:R}-${VERSION:E}__J${JP_VERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		jed-extralibs-0.99.8${EXTRACT_SUFX}
+		${PORTNAME}-extralibs-${VERSION}.tar.gz
 
 MAINTAINER=	knu@idaemons.org
 
 LIB_DEPENDS=	slang.2:${PORTSDIR}/japanese/libslang \
 		${LIBDEP_CANNA}
+
+VERSION=	0.99.8
+JP_VERSION=	067
 
 DIST_SUBDIR=	jed
 GNU_CONFIGURE=	yes

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	head files and libraries of Wnn6
-# Version required:	99.10.28
 # Date created:		11 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.23 1999/08/25 05:23:26 obrien Exp $
+# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.24 2000/03/08 10:56:36 max Exp $
 #
 
-DISTNAME=	Wnn6-SDK-sources
-PKGNAME=	ja-Wnn6-lib-98.10.28
+PORTNAME=	Wnn6-lib
+PORTVERSION=	98.10.28
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/Wnn6/sdk_source/
+DISTNAME=	Wnn6-SDK-sources
 
 MAINTAINER=	taoka@FreeBSD.org
 

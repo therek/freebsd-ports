@@ -1,12 +1,10 @@
 # New ports collection makefile for:	exmh (Japanese)
-# Version required:	2.0.2
 # Date created:		15 Mar 1999
 # Whom:		Takeshi WATANABE <watanabe@komadori.planet.sci.kobe-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/exmh2/Makefile,v 1.3 1999/08/25 05:24:03 obrien Exp $
+# $FreeBSD: ports/japanese/exmh2/Makefile,v 1.4 1999/08/31 06:45:29 mharo Exp $
 #
 
-PKGNAME=	ja-${DISTNAME}
 CATEGORIES=	japanese mail tk80
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,16 +1,16 @@
 # New ports collection Makefile for: esecanna
-# Version required:	0.99.1
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna/Makefile,v 1.10 2000/03/26 21:19:19 knu Exp $
+# $FreeBSD: ports/japanese/esecanna/Makefile,v 1.11 2000/04/04 13:36:28 knu Exp $
 #
 
-DISTNAME=	esecanna_0.99.1
-PKGNAME=	ja-esecanna-0.99.1
+PORTNAME=	esecanna
+PORTVERSION=	0.99.1
 CATEGORIES=	japanese
 MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 		http://people.FreeBSD.org/~knu/ports/distfiles/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	knu@idaemons.org
 

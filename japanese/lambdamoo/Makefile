@@ -1,24 +1,25 @@
 # New ports collection makefile for:	LambdaMOO
-# Version required:	1.8.0r8
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.2 2000/01/28 01:44:25 flathill Exp $
+# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.3 2000/02/08 09:27:07 peter Exp $
 #
 
-DISTNAME=	LambdaMOO-1.8.0r8
-PKGNAME=	ja-lambdamoo-1.8.0r8
+PORTNAME=	lambdamoo
+PORTVERSION=	1.8.0r8
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.place.org/pub/moo/unofficial/ \
 		ftp://ftp.leo.chubu.ac.jp/pub/network/mnews/
-DISTFILES=	LambdaMOO-1.8.0r8.tar.gz mnews122.tar.gz
+DISTNAME=	LambdaMOO-${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		mnews122.tar.gz
 
 PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/
 PATCHFILES=	ja-lambdamoo-19990704.patch.gz
 
 MAINTAINER=	flathill@FreeBSD.ORG
 
-WRKSRC=		${WRKDIR}/MOO-1.8.0r8
+WRKSRC=		${WRKDIR}/MOO-${PORTVERSION}
 GNU_CONFIGURE=	yes
 ALL_TARGET=
 

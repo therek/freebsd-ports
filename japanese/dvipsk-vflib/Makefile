@@ -1,21 +1,22 @@
 # New ports collection makefile for:    dvipsk + jpatch + vflib-patch
-# Version required:     5.78a + p1.4d + 1.1alpha
 # Date created:         25 Aug 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/dvipsk-vflib/Makefile,v 1.7 1999/11/29 06:37:29 sumikawa Exp $
+# $FreeBSD: ports/japanese/dvipsk-vflib/Makefile,v 1.8 2000/04/01 22:10:13 mharo Exp $
 #
 
-DISTNAME=	dvipsk-5.78a
-PKGNAME=	ja-dvipsk-vflib-5.78a
+PORTNAME=	dvipsk
+PORTVERSION=	5.78a
+PKGNAMESUFFIX=	-vflib
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/dvips/ \
 		ftp://ftp.center.osaka-u.ac.jp/CTAN/dviware/dvipsk/ \
 		ftp://ftp.riken.go.jp/pub/CTAN/dviware/dvipsk/ \
 		ftp://ftp.u-aizu.ac.jp/pub/tex/CTAN/dviware/dvipsk/ \
 		http://math.shinshu-u.ac.jp/~nakayama/howto/tex/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} dvipsk-jpatch-p1.4d.tar.gz \
-		dvipsk-vflib-1.1alpha.patch.tgz
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
+		dvipsk-jpatch-p1.4d.tar.gz \
+		${PORTNAME}${PKGNAMESUFFIX}-1.1alpha.patch.tgz
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
 

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	edict
-# Version required:	19981007
 # Date created:		18 August 1997
 # Whom:			Jonathan Hanna
 #
-# $FreeBSD: ports/japanese/edict/Makefile,v 1.9 1999/08/25 05:23:51 obrien Exp $
+# $FreeBSD: ports/japanese/edict/Makefile,v 1.10 1999/08/28 01:57:18 mharo Exp $
 #
 
-DISTNAME=	edict-19990714
-PKGNAME=	ja-edict-19990714
+PORTNAME=	edict
+PORTVERSION=	19990714
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/japanese/monash/ \
 		ftp://ftp.sedl.org/pub/mirrors/nihongo/ \

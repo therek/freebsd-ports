@@ -1,15 +1,15 @@
 # New ports collection makefile for:	gn-mnews
-# Version required:		1.20
 # Date created:			7 Feb 1997
 # Whom:				Kiroh HARADA <kiroh@jp.freebsd.org>
 #
-# $FreeBSD: ports/japanese/gn-mnews/Makefile,v 1.5 1999/08/25 05:24:12 obrien Exp $
+# $FreeBSD: ports/japanese/gn-mnews/Makefile,v 1.6 1999/12/26 15:06:09 sada Exp $
 #
 
-DISTNAME=	mnews120
-PKGNAME=	ja-gn-mnews-1.20
+PORTNAME=	gn-mnews
+PORTVERSION=	1.20
 CATEGORIES=	japanese news
 MASTER_SITES=	ftp://ftp.mei.co.jp/free/Network/news/readers/
+DISTNAME=	mnews${PORTVERSION:S/.//}
 
 MAINTAINER=	seiken@ARGV.AC
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	gninews:${PORTSDIR}/japanese/gn-gnspool \
 NO_PACKAGE=	"Redistribution of binary built from modified source is prohibited"
 BROKEN=		"Couldn't fetch now"
 
-WRKSRC=		${WRKDIR}/mnews-1.20/build
+WRKSRC=		${WRKDIR}/mnews-${PORTVERSION}/build
 
 do-configure:
 	@for f in Makefile site_dep.h ; do \

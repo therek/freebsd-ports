@@ -1,12 +1,11 @@
 # New ports collection makefile for:	mnews-im
-# Version required:		1.22
 # Date created:			03 Jan 2000
 # Whom:				SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/mnews-im/Makefile,v 1.1.1.1 2000/01/03 19:57:22 sada Exp $
 #
 
-PKGNAME=	ja-mnews-im-1.22
+PKGNAMESUFFIX=	-im
 
 RUN_DEPENDS=	imput:${PORTSDIR}/mail/im
 

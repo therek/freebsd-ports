@@ -1,9 +1,8 @@
 # New ports collection makefile for: Netscape browser with Japanese resources
-# Version required:	4.7x
 # Date created:		26 Mar 2000
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/linux-netscape47-navigator/Makefile,v 1.1.1.1 2000/03/26 20:09:40 sada Exp $
 #
 
 BROWSER=	navigator

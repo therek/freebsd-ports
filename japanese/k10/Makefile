@@ -1,15 +1,15 @@
 # New ports collection makefile for:	naga10
-# Version required:	1.1
 # Date created:		25 Feb 1998
 # Whom:	Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/japanese/k10/Makefile,v 1.6 1999/08/25 05:24:46 obrien Exp $
+# $FreeBSD: ports/japanese/k10/Makefile,v 1.7 2000/01/22 13:24:17 mharo Exp $
 #
 
-DISTNAME=	knj10-1.1
-PKGNAME=	ja-naga10-1.1
+PORTNAME=	naga10
+PORTVERSION=	1.1
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA013391/fonts/
+DISTNAME=	knj10-${PORTVERSION}
 
 MAINTAINER=	usagi@clave.gr.jp
 

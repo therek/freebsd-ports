@@ -1,20 +1,20 @@
 # New ports collection makefile for:	iv
-# Version required:	3.1
 # Date created:		23.Feb.1996
 # Whom:			sanpei@yy.cs.keio.ac.jp
 #
-# $FreeBSD: ports/japanese/iv/Makefile,v 1.13 1999/08/25 05:24:23 obrien Exp $
+# $FreeBSD: ports/japanese/iv/Makefile,v 1.14 1999/09/20 05:36:52 taoka Exp $
 #
 
-DISTNAME=	iv-3.1
-PKGNAME=	ja-iv-3.1
+PORTNAME=	iv
+PORTVERSION=	3.1
 CATEGORIES=	japanese graphics
 MASTER_SITES=	ftp://interviews.stanford.edu/pub/ \
 		${MASTER_SITE_PORTS_JP}
-DISTFILES=	3.1.tar.Z iv3_1j_gamma.tar.gz
+DISTFILES=	${PORTVERSION}.tar.Z \
+		${PORTNAME}${PORTVERSION:S/./_/g}j_gamma.tar.gz
 
 PATCH_SITES=	${MASTER_SITE_PORTS_JP}
-PATCHFILES=	iv-3.1j-gamma-fixcmpfont.patch
+PATCHFILES=	${DISTNAME}j-gamma-fixcmpfont.patch
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sanpei@sanpei.org

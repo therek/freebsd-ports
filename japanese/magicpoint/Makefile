@@ -1,9 +1,8 @@
 # New ports collection makefile for:	magicpoint (with vflib)
-# Version required:	1.05a
 # Date created:		25 Dec 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.15 2000/02/12 20:34:48 imura Exp $
+# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.16 2000/02/13 16:50:54 itojun Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/magicpoint
@@ -11,7 +10,8 @@ COMMENT=	${.CURDIR}/pkg/COMMENT
 
 LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
-PKGNAME=	ja-magicpoint-1.06a
+PORTNAME=	magicpoint
+PORTVERSION=	1.06a
 CATEGORIES=	japanese
 
 MAINTAINER=	itojun@itojun.org

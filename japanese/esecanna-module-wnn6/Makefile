@@ -1,16 +1,16 @@
 # New ports collection Makefile for: esecanna module for Wnn6
-# Version required:	0.14.2
 # Date created:		26 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-module-wnn6/Makefile,v 1.2 2000/03/23 07:11:51 knu Exp $
+# $FreeBSD: ports/japanese/esecanna-module-wnn6/Makefile,v 1.3 2000/03/26 21:22:42 knu Exp $
 #
 
-DISTNAME=	esecanna-module-wnn6_0.14.2
-PKGNAME=	ja-esecanna-module-wnn6-0.14.2
+PORTNAME=	esecanna-module-wnn6
+PORTVERSION=	0.14.2
 CATEGORIES=	japanese
 MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 		http://people.FreeBSD.org/~knu/ports/distfiles/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	knu@idaemons.org
 

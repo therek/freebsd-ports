@@ -1,17 +1,19 @@
 # New ports collection makefile for:    ebw3
-# Version required:     0.2-b4
 # Date created:         23 Jun 1997
 # Whom:                 Hironori Ikura <hikura@kaisei.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ebw3/Makefile,v 1.3 1999/08/25 05:23:50 obrien Exp $
 #
 
-DISTNAME=	ebw3-0.2-b4
-PKGNAME=	ja-ebw3-0.2b4
+PORTNAME=	ebw3
+PORTVERSION=	${VERSION:S/-//}
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.imasy.or.jp/pub/unix/net/www/ebw3/
+DISTNAME=	${PORTNAME}-${VERSION}
 
 MAINTAINER=	hikura@kaisei.org
+
+VERSION=	0.2-b4
 
 STARTUP_SCRIPT=	$(PREFIX)/etc/rc.d/ebw3d.sh.sample
 

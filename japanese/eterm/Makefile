@@ -1,18 +1,18 @@
 # New ports collection makefile for:	eterm
-# Version required:    0.9
 # Date created:        11th December 1998
 # Whom:                MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/eterm/Makefile,v 1.9 2000/01/29 23:14:12 flathill Exp $
+# $FreeBSD: ports/japanese/eterm/Makefile,v 1.10 2000/02/13 15:18:07 taoka Exp $
 #
 
-DISTNAME=	Eterm-0.9
-PKGNAME=	ja-eterm-0.9
+PORTNAME=	eterm
+PORTVERSION=	0.9
 CATEGORIES=	japanese x11
 MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/Eterm/ \
 		ftp://ftp.dti.ad.jp/pub/X/enlightenment/Eterm/ \
 		ftp://ftp.kddlabs.co.jp/.10/X11/window_manager/enlightenment/Eterm/ \
 		ftp://ftp.sogang.ac.kr/.c/tools/X11/Enlightenment/Eterm/
+DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	nobutaka@nobutaka.com
 

@@ -1,9 +1,8 @@
 # New ports collection makefile for: Netscape browser with Japanese resources
-# Version required:	4.7*
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.16 2000/02/29 22:17:06 sada Exp $
+# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.17 2000/03/26 19:59:46 sada Exp $
 #
 
 DISTNAME=	communicator-ja-euc-v472-export.generic-generic-generic

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	jls
-# Version required:	0.x
 # Date created:		4 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/jls/Makefile,v 1.5 1999/11/13 17:44:23 shige Exp $
+# $FreeBSD: ports/japanese/jls/Makefile,v 1.6 2000/02/08 09:26:52 peter Exp $
 #
 
-DISTNAME=	jls-0.1
-PKGNAME=	ja-ls-0.1
+PORTNAME=	ls
+PORTVERSION=	0.1
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://people.FreeBSD.org/~shige/ports/
+DISTNAME=	j${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	shige@FreeBSD.org
 

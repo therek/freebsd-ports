@@ -1,16 +1,16 @@
 # New ports collection makefile for:	hex
-# Version required:	2.04
 # Date created:		Nov 5, 1996
 # Whom:			IMAMURA Tomoaki (yu@pastel.club.or.jp)
 #
-# $FreeBSD: ports/japanese/hex/Makefile,v 1.9 1999/08/25 05:24:21 obrien Exp $
+# $FreeBSD: ports/japanese/hex/Makefile,v 1.10 2000/02/21 16:32:18 taoka Exp $
 #
 
-DISTNAME=	hex204
-PKGNAME=	ja-hex-2.04
+PORTNAME=	hex
+PORTVERSION=	2.04
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.yl.is.s.u-tokyo.ac.jp/~nayuta/S/hex/
 EXTRACT_SUFX=	.tgz
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
 MAINTAINER=	yu@pastel.club.or.jp
 

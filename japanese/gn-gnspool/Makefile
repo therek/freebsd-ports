@@ -1,19 +1,19 @@
 # New ports collection makefile for: 	gn(Gon's Newsreader with gnspool)
-# Version required:			1.40
 # Date created:				14 Feb. 1997
 # Whom:					Kiroh HARADA <kiroh@kh.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.11 1999/08/25 05:24:11 obrien Exp $
+# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.12 1999/09/04 23:39:28 mharo Exp $
 #
 
-DISTNAME=	gn-1.40
-PKGNAME=	ja-gn-gnspool-1.40
+PORTNAME=	gn-gnspool
+PORTVERSION=	1.40
 CATEGORIES=	japanese news
 MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/misc/gn/
+DISTNAME=	gn-${PORTVERSION}
 
 MAINTAINER=	seiken@ARGV.AC
 
-# The program ``configur'' sometimes issue questions and
+# The program ``configure'' sometimes issue questions and
 # batch-mode build would fail.
 IS_INTERACTIVE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src

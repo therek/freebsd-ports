@@ -1,17 +1,17 @@
 # New ports collection makefile for:    ja-emacs-manual
-# Version required:     13
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.9 2000/03/10 21:31:11 asami Exp $
+# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.10 2000/03/11 20:07:44 asami Exp $
 #
 
-DISTNAME=	emacs-20.5-man-jp
-PKGNAME=	ja-emacs-manual-13.2000.01.13
+PORTNAME=	emacs-manual
+PORTVERSION=	13.2000.01.13
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/GNU/emacs-20.x/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
+DISTNAME=	emacs-20.5-man-jp
 DISTFILES=	${DISTNAME}.tgz ${EMACS_ARC}
 
 MAINTAINER=	okazaki@be.to
