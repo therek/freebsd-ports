@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.534 2001/05/12 20:29:13 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.535 2001/05/14 12:12:35 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -456,6 +456,7 @@
     SUBDIR += st
     SUBDIR += stlport
     SUBDIR += str
+    SUBDIR += strace
     SUBDIR += styx
     SUBDIR += swarm
     SUBDIR += swigruby
