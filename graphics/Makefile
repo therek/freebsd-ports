@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.327 2001/07/06 04:26:34 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.328 2001/07/07 03:52:09 markp Exp $
 #
 
     SUBDIR += 4va
@@ -123,6 +123,7 @@
     SUBDIR += libdivxdecore-devel
     SUBDIR += libdjvu++
     SUBDIR += libdvdcss
+    SUBDIR += libdvdread
     SUBDIR += libflash
     SUBDIR += libfpx
     SUBDIR += libgdgeda
