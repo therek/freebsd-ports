@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.368 2001/05/03 03:02:39 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.369 2001/05/04 02:09:05 lioux Exp $
 #
 
     SUBDIR += 3dc
@@ -192,6 +192,7 @@
     SUBDIR += smacx
     SUBDIR += sokoban
     SUBDIR += sol
+    SUBDIR += solarwolf
     SUBDIR += speak
     SUBDIR += spellcast
     SUBDIR += speyes
