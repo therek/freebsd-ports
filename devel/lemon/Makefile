@@ -2,7 +2,7 @@
 # Date created:			  June 4, 2001
 # Whom:				  Mikhail Teterin
 #
-# $FreeBSD: ports/devel/lemon/Makefile,v 1.1 2001/06/05 03:48:39 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lemon
@@ -23,7 +23,7 @@ do-extract:
 do-build:
 	cd ${WRKSRC} && ${MAKE} VPATH=${DISTDIR} PROG=lemon NOMAN=1 \
 		CFLAGS="${CFLAGS} -DLEMPAR='\"${PREFIX}/share/lemon/lempar.c\"'" \
-			-f bsd.prog.mk
+			-f /usr/share/mk/bsd.prog.mk
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/${PORTNAME} ${PREFIX}/bin/
