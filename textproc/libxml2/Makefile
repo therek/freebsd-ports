@@ -2,7 +2,7 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.33 2000/11/14 21:49:33 ade Exp $
+# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.34 2000/11/15 16:29:19 ade Exp $
 #
 
 PORTNAME=	libxml2
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	stable/sources/libxml
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

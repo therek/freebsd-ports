@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.8 2000/10/20 16:26:38 ade Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.9 2000/11/02 21:21:22 ade Exp $
 #
 
 PORTNAME=	gconf
@@ -17,7 +17,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt \
 		guile.9:${PORTSDIR}/lang/guile \
 		oaf.0:${PORTSDIR}/devel/oaf \
-		iconv.1:${PORTSDIR}/converters/iconv
+		iconv.2:${PORTSDIR}/converters/iconv
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/converters/ruby-iconv/Makefile,v 1.10 2000/09/26 07:14:52 knu Exp $
+# $FreeBSD: ports/converters/ruby-iconv/Makefile,v 1.11 2000/10/12 13:52:18 knu Exp $
 #
 
 PORTNAME=	iconv
@@ -14,7 +14,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes

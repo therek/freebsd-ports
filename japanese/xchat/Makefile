@@ -2,7 +2,7 @@
 # Date created:		30 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/xchat/Makefile,v 1.3 2000/11/06 19:39:43 knu Exp $
+# $FreeBSD: ports/japanese/xchat/Makefile,v 1.4 2000/11/23 19:59:13 knu Exp $
 #
 
 PORTNAME=	xchat
@@ -18,7 +18,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 
 MASTERDIR=	${.CURDIR}/../../irc/xchat
 MD5_FILE=	${.CURDIR}/distinfo
