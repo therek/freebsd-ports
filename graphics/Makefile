@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.243 2000/11/03 17:08:13 trevor Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.244 2000/11/03 17:13:12 sada Exp $
 #
 
     SUBDIR += 4va
@@ -149,7 +149,6 @@
     SUBDIR += png2html
     SUBDIR += pngcheck
     SUBDIR += pngcrush
-    SUBDIR += pnmtopng
     SUBDIR += povray
     SUBDIR += povray31
     SUBDIR += ppm2fli
