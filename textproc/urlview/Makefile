@@ -3,11 +3,12 @@
 # Date created:			  21 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/urlview/Makefile,v 1.12 2001/02/05 16:35:18 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	urlview
 PORTVERSION=	0.9
+PORTREVISION=	1
 CATEGORIES=	textproc www
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/contrib/ \
 		ftp://ftp.cs.hmc.edu/pub/me/ \
@@ -27,5 +28,8 @@ MAN1=		urlview.1
 post-patch:
 	${PERL} -pi.prefix -e 's.!!PREFIX!!.${PREFIX}.g' \
 		${WRKSRC}/url_handler.sh
+
+post-install:
+	${INSTALL_SCRIPT} ${WRKSRC}/url_handler.sh ${PREFIX}/bin
 
 .include <bsd.port.mk>
