@@ -2,7 +2,7 @@
 # Date created:		1 October 2000
 # Whom:			Jing-Tang Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.1 2000/10/20 15:48:49 kevlo Exp $
 #
 
 CATEGORIES=	chinese editors
@@ -21,7 +21,7 @@ WRKDIR=		${.CURDIR}/../../editors/xemacs21-mule/work
 # Fix mule-init.el
 post-patch::
 	@${RM} ${WRKSRC}/lisp/mule/mule-init.elc
-	@(cd ${WRKSRC}; ${PATCH} -q < ${.CURDIR}/files/mule-init.el.diff)
+	@(cd ${WRKSRC}; ${PATCH} --quiet < ${.CURDIR}/files/mule-init.el.diff)
 
 post-install::
 	@${MKDIR} ${PREFIX}/lib/xemacs-${XEMACS_VER}/etc/app-defaults/zh_TW.Big5
