@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/xrot/Makefile,v 1.3 2001/06/01 06:04:52 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xrot
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	markp@FreeBSD.org
+
+BROKEN=		"Does not build manpages with XFree86-4"
 
 WRKSRC=		${WRKDIR}/xrot
 USE_IMAKE=	yes
