@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.486 2001/04/02 22:09:58 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.487 2001/04/02 22:10:53 vanilla Exp $
 #
 
     SUBDIR += ElectricFence
@@ -152,6 +152,7 @@
     SUBDIR += ilu
     SUBDIR += imake
     SUBDIR += imake-4
+    SUBDIR += jakarta-ant
     SUBDIR += jam
     SUBDIR += kdbg
     SUBDIR += kdelibdocs
