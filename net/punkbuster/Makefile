@@ -2,7 +2,7 @@
 # Date created:		29 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/punkbuster/Makefile,v 1.1 2001/09/01 18:52:47 lioux Exp $
 #
 
 PORTNAME=	punkbuster
@@ -36,7 +36,7 @@ PUNKBUSTER_DATA!=	cd ${PUNKBUSTER_DATA_PORT} && ${MAKE} -V PUNKBUSTER_DATA
 PUNKBUSTER_DATA_DISTFILES!=	cd ${PUNKBUSTER_DATA_PORT} && ${MAKE} -V DISTFILES
 PUNKBUSTER_DOC_DIR=	usr/doc/${PKGNAME}/
 
-pre-everything: pkgmessage-output
+pre-everything:: pkgmessage-output
 
 post-extract:
 .for file in ${PUNKBUSTER_DATA_DISTFILES}
