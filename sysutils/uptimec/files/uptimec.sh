@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/uptimec/files/uptimec.sh,v 1.1 2004/04/06 13:13:58 krion Exp $
+# $FreeBSD: ports/sysutils/uptimec/files/uptimec.sh,v 1.2 2004/04/07 18:34:44 krion Exp $
 #
 
 # PROVIDE: uptimec
@@ -14,13 +14,13 @@
 #uptimec_enable="NO"
 #
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name=uptimec
 rcvar=`set_rcvar`
 
-command=/usr/local/sbin/uptimec
-required_files=/usr/local/etc/uptimecrc
+command=%%PREFIX%%/sbin/uptimec
+required_files=%%PREFIX%%/etc/uptimecrc
 
 # default to enable
 uptimec_enable=${uptimec_enable:-"YES"}
