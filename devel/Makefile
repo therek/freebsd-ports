@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.519 2001/04/23 12:16:32 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.520 2001/04/23 16:02:03 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -404,6 +404,7 @@
     SUBDIR += ruby-locale
     SUBDIR += ruby-metaruby
     SUBDIR += ruby-mmap
+    SUBDIR += ruby-mo
     SUBDIR += ruby-mutexm
     SUBDIR += ruby-optparse
     SUBDIR += ruby-property
