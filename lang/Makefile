@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.226 2001/04/28 15:08:04 joe Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.227 2001/04/29 14:43:01 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -111,6 +111,7 @@
     SUBDIR += python-doc-postscript-a4
     SUBDIR += python-doc-postscript-letter
     SUBDIR += python15
+    SUBDIR += python20
     SUBDIR += ratfor
     SUBDIR += rexx-imc
     SUBDIR += rotfl
