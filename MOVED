@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.205 2003/08/19 10:03:14 arved Exp $
+# $FreeBSD: ports/MOVED,v 1.206 2003/08/20 01:37:20 leeym Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -532,3 +532,4 @@ misc/kde3-i18n-pl|polish/kde3-i18n|2003-08-19|moved to new polish category
 misc/koffice-i18n-pl|polish/koffice-i18n|2003-08-19|moved to new polish category
 textproc/pl-aspell|polish/pl-aspell|2003-08-19|moved to new polish category
 www/bmsync||2003-08-19|obsolete
+shells/tcsh||2003-08-21|removed, already in base system, not really maintained
