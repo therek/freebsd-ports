@@ -2,11 +2,11 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.12 2000/10/23 18:44:31 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.13 2000/10/23 18:57:05 knu Exp $
 #
 
 PORTNAME=	qt
-PORTVERSION=	0.13
+PORTVERSION=	0.14a
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -35,9 +35,14 @@ post-patch:
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/qt
-	${CP} -R ${WRKSRC}/examples/ ${RUBY_EXAMPLESDIR}/qt/
+	${TAR} -C ${WRKSRC}/examples -cf - \
+		--exclude .cvsignore --exclude a.out . \
+			| ${TAR} -C ${RUBY_EXAMPLESDIR}/qt -xvf -
 	${MKDIR} ${RUBY_DOCDIR}/qt/ja
-	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/qt/
+	${TAR} -C ${WRKSRC} -cf - \
+		./tutorial \
+			| ${TAR} -C ${RUBY_DOCDIR}/qt -xvf -
+	${CHOWN} -R 0:0 ${RUBY_EXAMPLESDIR}/qt ${RUBY_DOCDIR}/qt
 	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/qt/
 	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/qt/ja/
 .endif
