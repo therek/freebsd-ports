@@ -2,7 +2,7 @@
 # Date created:		08 Oct 2000
 # Whom:			George Reid <services@nevernet.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/vlock/Makefile,v 1.1 2000/10/22 15:36:24 trevor Exp $
 #
 
 PORTNAME=		vlock
@@ -11,7 +11,7 @@ CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/console
 
-MAINTAINER=		services@nevernet.net
+MAINTAINER=		greid@ukug.uk.freebsd.org
 
 MAN1=			vlock.1
 
