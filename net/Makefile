@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.430 2000/11/15 18:26:28 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.431 2000/11/16 20:11:48 demon Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -270,6 +270,7 @@
     SUBDIR += tinyfugue
     SUBDIR += tn3270
     SUBDIR += tn5250
+    SUBDIR += totd
     SUBDIR += traceroute
     SUBDIR += trafd
     SUBDIR += trafshow
