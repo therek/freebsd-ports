@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.31 2001/02/12 09:34:33 knu Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.32 2001/02/12 11:28:35 knu Exp $
 #
 
 PORTNAME=	gd
@@ -31,8 +31,5 @@ pre-everything:
 	@${ECHO_MSG} "If you want to compile in X support use "
 	@${ECHO_MSG} "'make -DWITH_X11' instead"
 .endif
-
-post-extract:
-	@${RM} -f ${WRKSRC}/*.o
 
 .include <bsd.port.mk>
