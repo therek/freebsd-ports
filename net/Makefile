@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.594 2001/08/23 07:30:42 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.595 2001/08/23 11:33:55 kris Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -384,6 +384,7 @@
     SUBDIR += tdetect
     SUBDIR += telnetx
     SUBDIR += telserv
+    SUBDIR += thcrut
     SUBDIR += tik
     SUBDIR += tintin++
     SUBDIR += tintin++-devel
