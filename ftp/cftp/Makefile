@@ -2,13 +2,13 @@
 # Date created:				14 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/cftp/Makefile,v 1.10 2000/04/12 05:31:01 mharo Exp $
+# $FreeBSD: ports/ftp/cftp/Makefile,v 1.11 2000/06/29 07:03:02 obrien Exp $
 #
 
 PORTNAME=	cftp
 PORTVERSION=	0.9.3
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://ftp.giga.or.at/pub/nih/cftp/ \
+MASTER_SITES=	ftp://sunsite.univie.ac.at/pub/nih/cftp/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	andy
 
