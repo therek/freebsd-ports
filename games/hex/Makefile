@@ -2,14 +2,13 @@
 # Date created:		9 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/hex/Makefile,v 1.9 2000/09/05 01:18:45 steve Exp $
+# $FreeBSD: ports/games/hex/Makefile,v 1.10 2000/10/05 06:57:35 reg Exp $
 #
 
 PORTNAME=	hex
 PORTVERSION=	0.0.2
 CATEGORIES=	games
-MASTER_SITES=	http://www.nott.ac.uk/~psystrj/ \
-		http://www.psn.net/~andrews/dist/
+MASTER_SITES=	http://www.earth.li/projectpurple/files/
 
 MAINTAINER=	ports@FreeBSD.org
 
