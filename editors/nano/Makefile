@@ -2,11 +2,11 @@
 # Date created:				12 June 2000
 # Whom:				Philippe Lefebvre <nemesis@balistik.net>
 #
-# $FreeBSD: ports/editors/nano/Makefile,v 1.8 2001/05/27 16:09:44 ijliao Exp $
+# $FreeBSD: ports/editors/nano/Makefile,v 1.9 2001/07/03 09:32:27 demon Exp $
 #
 
 PORTNAME=	nano
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	editors
 MASTER_SITES=	http://www.nano-editor.org/dist/v1.0/ \
 		http://www.asty.org/nano/dist/ \
