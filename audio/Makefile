@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.236 2001/05/24 12:24:31 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.237 2001/06/01 18:19:02 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -157,6 +157,7 @@
     SUBDIR += rplay
     SUBDIR += rsynth
     SUBDIR += s3mod
+    SUBDIR += sbagen
     SUBDIR += sdl_mixer
     SUBDIR += shntool
     SUBDIR += shorten
