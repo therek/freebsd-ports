@@ -2,11 +2,11 @@
 # Date created:				19 February 1998
 # Whom:	      				Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/devel/p5-ReadLine-Gnu/Makefile,v 1.12 2000/06/17 02:37:03 will Exp $
+# $FreeBSD: ports/devel/p5-ReadLine-Gnu/Makefile,v 1.13 2001/03/01 06:38:31 vanilla Exp $
 #
 
 PORTNAME=	ReadLine-Gnu
-PORTVERSION=	1.09
+PORTVERSION=	1.10
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Term
@@ -17,7 +17,7 @@ MAINTAINER=	mph@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 
-MAN3=		Term::ReadLine::Gnu.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Term::ReadLine::Gnu.3
 
 .include <bsd.port.mk>
