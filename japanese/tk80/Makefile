@@ -3,7 +3,7 @@
 # Date created:		26 Dec 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/tk80/Makefile,v 1.15 1999/08/25 05:27:29 obrien Exp $
 #
 
 DISTNAME=	tk8.0.5
@@ -12,7 +12,7 @@ CATEGORIES=	japanese x11-toolkits tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
 
 PATCH_SITES=	ftp://ftp.sra.co.jp/pub/lang/tcl/jp/
-PATCHFILES=	tk8.0.5jp1.5fix1.patch.gz
+PATCHFILES=	tk8.0.5jp1.6a.patch.gz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
@@ -28,7 +28,8 @@ PATCH_DIST_ARGS=-d ${TOPDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
 .endif
 USE_AUTOCONF=	yes
 USE_XLIB=	yes
-CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl${VERSION}jp
+CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl${VERSION}jp \
+	--enable-xlibHack --enable-onTheSpot
 
 .include <bsd.port.pre.mk>
 
