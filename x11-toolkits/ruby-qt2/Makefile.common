@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.5 2001/04/01 18:07:11 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.6 2001/04/05 19:26:20 knu Exp $
 
 RUBY_QT2_VERSION=	0.12
 RUBY_QT2_PORTVERSION=	${RUBY_QT2_VERSION}a.2
@@ -16,7 +16,7 @@ RUBY_QT2_CONFIGURE_ARGS= \
 
 MD5_FILE=		${RUBY_QT2_PORTDIR}/distinfo
 
-pre-build: pre-pre-build
+post-patch: post-patch-cflags
 
-pre-pre-build:
-	${RUBY} -i -pe 'sub /-lc\b/, "-pthread"' ${WRKSRC}/Makefile
+post-patch-cflags:
+	${RUBY} -i -pe '~ /^\$$CFLAGS\b.*/ and $$_.sub!(/-O\w*/, "")' ${WRKSRC}/extconf.rb
