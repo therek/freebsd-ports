@@ -3,11 +3,11 @@
 # Date created:				03/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.27 1999/08/31 02:59:30 peter Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.28 1999/08/31 06:52:53 mharo Exp $
 #
 
-DISTNAME=	gnome-python-1.0.3
-PKGNAME=	py-gnome-1.0.3
+DISTNAME=	gnome-python-1.0.4
+PKGNAME=	py-gnome-1.0.4
 CATEGORIES=	x11-toolkits python gnome
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/python/ \
 		ftp://ftp.gimp.org/pub/gtk/python/ \
