@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.107 2003/01/11 10:16:22 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.108 2003/01/11 12:13:05 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -203,7 +203,7 @@ RUBY_RD2?=		${LOCALBASE}/bin/rd2
 RUBY_RDOC?=		${LOCALBASE}/bin/rdoc
 
 # Ports
-RUBY_PORT?=		lang/ruby${RUBY_SUFFIX}
+RUBY_PORT?=		lang/ruby${RUBY_R}
 RUBY_SHIM18_PORT?=	lang/ruby16-shim-ruby18
 RUBY_AMSTD_PORT?=	devel/ruby-amstd
 RUBY_RDTOOL_PORT?=	textproc/ruby-rdtool
