@@ -2,7 +2,7 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD: ports/graphics/xine/Makefile,v 1.1 2000/10/14 10:05:34 alex Exp $
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.2 2000/10/14 16:20:52 alex Exp $
 #
 
 PORTNAME=		xine
@@ -11,7 +11,7 @@ CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=		alex@FreeBSD.org
+MAINTAINER=		roman@xpert.com
 
 GNU_CONFIGURE=		yes
 USE_X_PREFIX=		yes
