@@ -2,11 +2,11 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.10 2001/05/23 05:50:49 ijliao Exp $
+# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.11 2001/06/10 15:40:48 kevlo Exp $
 #
 
 PORTNAME=	cgiwrap
-PORTVERSION=	3.6.4
+PORTVERSION=	3.7
 CATEGORIES=	www security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
