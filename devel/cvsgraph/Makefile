@@ -2,7 +2,7 @@
 # Date created:				2001-02-21
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.1 2001/02/21 09:17:10 trevor Exp $
+# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.2 2001/02/25 03:13:06 trevor Exp $
 #
 
 PORTNAME=	cvsgraph
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.akhphd.au.dk/~bertho/cvsgraph/
 MAINTAINER=	trevor@FreeBSD.org
 
 BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd \
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 
