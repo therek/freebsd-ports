@@ -2,11 +2,12 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.14 2001/01/28 03:56:11 ijliao Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.15 2001/02/14 20:51:00 okazaki Exp $
 #
 
 PORTNAME=	kdevelop
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.e-technik.fh-muenchen.de/pub/unix/ide/KDevelop/ \
 		ftp://ftp.chg.ru/pub/X11/kdevelop/ \
