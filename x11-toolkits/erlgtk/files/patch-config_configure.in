@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/erlgtk/files/patch-config_configure.in,v 1.2 2003/09/01 19:39:34 olgeni Exp $
 
 --- config/configure.in.orig	Thu May  2 01:42:15 2002
 +++ config/configure.in	Mon Sep  1 11:11:00 2003
