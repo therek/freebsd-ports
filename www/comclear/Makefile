@@ -2,7 +2,7 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/www/comclear/Makefile,v 1.2 2001/01/16 19:08:36 will Exp $
+# $FreeBSD: ports/www/comclear/Makefile,v 1.3 2001/01/16 19:22:23 will Exp $
 #
 
 PORTNAME=	comclear
@@ -24,9 +24,9 @@ USE_AUTOMAKE=	yes
 post-configure:
 		${PERL} -pi.fbsd -e 's/^install-data-am:.*/install-data-am:/' ${WRKSRC}/Makefile
 
+.if		!defined(NOPORTDOCS)
 post-install:
-.if !defined(NOPORTDOCS)
-	cd ${WRKSRC} && ${GMAKE} install-docDATA
+		cd ${WRKSRC} && ${GMAKE} install-docDATA
 .endif
 
 .include <bsd.port.mk>

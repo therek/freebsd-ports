@@ -2,7 +2,7 @@
 # Date created:		7 Sep 2000
 # Whom:			Peter Pentchev <roam@orbitel.bg>
 #
-# $FreeBSD: ports/lang/php/Makefile,v 1.1 2000/12/19 14:00:02 will Exp $
+# $FreeBSD: ports/lang/php/Makefile,v 1.2 2000/12/19 16:08:17 roam Exp $
 #
 
 PORTNAME=	php
@@ -37,11 +37,6 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 
 PHPDOCDIR=	${PREFIX}/share/doc/php
 PLIST_SUB=	PHPDOCDIR=${PHPDOCDIR:S/^${PREFIX}\///}
-.if		defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif
 
 pre-fetch:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.php
