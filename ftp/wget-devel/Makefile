@@ -2,7 +2,7 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.30 2001/01/14 20:11:05 sf Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.31 2001/01/14 20:51:15 sf Exp $
 #
 
 PORTNAME=	wget
