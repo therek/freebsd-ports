@@ -2,13 +2,13 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xclasses/Makefile,v 1.1 2000/10/04 04:52:56 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xclasses
-PORTVERSION=	1.1.0
+PORTVERSION=	1.3.0
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://fsai.fh-trier.de/~schmitzj/Xclasses/arc/
+MASTER_SITES=	ftp://trier.linux.de/pub/Xclasses/
 DISTNAME=	Xclasses-public-${PORTVERSION}.src
 
 MAINTAINER=	trevor@FreeBSD.org
