@@ -2,7 +2,7 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.1 2000/06/26 19:19:09 knu Exp $
+# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.2 2000/07/11 15:03:44 knu Exp $
 #
 
 PORTNAME=	gcc
@@ -36,24 +36,20 @@ MAN1=	cccp.1                 \
 	i386-mingw32msvc-g77.1 \
 	i386-mingw32msvc-gcc.1
 
-post-configure:
-	cd ${WRKSRC}/gcc; ${GMAKE} installdirs
-
 post-install:
 	@for file in \
-	  c++ cpp g++ g77 gcc gcj gcjh gcov \
-	  jcf-dump jv-scan protoize unprotoize; \
+	  cpp gcjh gcov jcf-dump jv-scan \
+	  i386-mingw32msvc-c++ \
+	  i386-mingw32msvc-c++filt \
+	  i386-mingw32msvc-g++ \
+	  i386-mingw32msvc-g77 \
+	  i386-mingw32msvc-gcc \
+	  i386-mingw32msvc-gcj \
+	  i386-mingw32msvc-protoize \
+	  i386-mingw32msvc-unprotoize; \
 	do \
-	  file1=${PREFIX}/bin/$${file}; \
-	  file2=${PREFIX}/bin/i386-mingw32msvc-$${file}; \
-	  if [ -f $${file1} ] && [ ! -f $${file2} ]; \
-	  then \
-	    ${CP} $${file1} $${file2}; \
-	  fi; \
-	  strip $${file2}; \
+	  strip ${PREFIX}/bin/$${file}; \
 	done
-.for f in chill.info cpp.info g77.info gcc.info
-	@install-info ${PREFIX}/info/${f} ${PREFIX}/info/dir
-.endfor
+	@rm ${PREFIX}/info/chill.info
 
 .include <bsd.port.mk>
