@@ -2,11 +2,11 @@
 # Date Created:			23 May 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/pth/Makefile,v 1.50 2000/06/16 21:50:09 asami Exp $
+# $FreeBSD: ports/devel/pth/Makefile,v 1.51 2000/07/01 14:27:19 rse Exp $
 #
 
 PORTNAME=	pth
-PORTVERSION=	1.3.6
+PORTVERSION=	1.3.7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.engelschall.com/sw/pth/
