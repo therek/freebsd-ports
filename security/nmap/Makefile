@@ -3,16 +3,16 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.32 2000/04/06 22:16:12 obrien Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.33 2000/04/09 18:30:04 cpiazza Exp $
 #
 
 PORTNAME=	nmap
-PORTVERSION=	2.3.b18
+PORTVERSION=	2.3.b20
 CATEGORIES=	security net
 MASTER_SITES=	http://www.insecure.org/nmap/dist/  \
 		ftp://nuxi.ucdavis.edu/pub/misc/  \
 		http://www.mobis.com/ajax/projects/
-DISTNAME=	nmap-2.30BETA18
+DISTNAME=	${PORTNAME}-2.30BETA20
 EXTRACT_SUFX=	.tgz
 
 #PATCH_SITES=	http://www.mobis.com/ajax/projects/
