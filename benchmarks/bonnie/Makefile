@@ -3,7 +3,7 @@
 # Date created:         26 September 1994
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/bonnie/Makefile,v 1.6 1999/08/25 04:45:39 obrien Exp $
 #
 
 DISTNAME=       Bonnie
@@ -17,5 +17,10 @@ MAINTAINER=	se@FreeBSD.org
 MAN1=		bonnie.1
 
 CFLAGS+=	-static
+MAKE_ARGS+=	CFLAGS="${CFLAGS}"
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/Bonnie ${PREFIX}/bin/bonnie
+	${INSTALL_DATA} ${WRKSRC}/bonnie.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
