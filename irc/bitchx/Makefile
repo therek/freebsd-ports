@@ -3,7 +3,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.9 2000/01/22 14:12:17 mharo Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.10 2000/01/29 21:54:20 steve Exp $
 #
 
 DISTNAME=	BitchX-1.0c16
@@ -43,6 +43,9 @@ MAKE_ENV+=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 pre-extract:
 	@${ECHO} "You can add hooks for GNOME by defining USE_GNOME"
 .endif
+
+pre-patch:
+	@${PERL} -pi -e "s!#undef WANT_CHAN_NICK_SERV!#define WANT_CHAN_NICK_SERV!" ${WRKSRC}/include/config.h
 
 post-install:
 .if !defined(NOPORTDOCS)
