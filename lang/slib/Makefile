@@ -2,31 +2,23 @@
 # Date created:        01 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/lang/slib/Makefile,v 1.10 2000/10/20 04:50:54 nakai Exp $
+# $FreeBSD: ports/lang/slib/Makefile,v 1.11 2001/03/20 13:38:47 nakai Exp $
 #
 
 PORTNAME=	slib
-PORTVERSION=	2c9
-PORTREVISION=	1
+PORTVERSION=	2d1
 CATEGORIES=	lang
 MASTER_SITES=	http://swissnet.ai.mit.edu/ftpdir/scm/
+DISTNAME=	slib2d1
 
 MAINTAINER=	nakai@FreeBSD.org
-DISTNAME=	slib2c9
-
-BUILD_DEPENDS=	scheme48:${PORTSDIR}/lang/scheme48 \
-		scm:${PORTSDIR}/lang/scm
 
 WRKSRC=		${WRKDIR}/slib
 
 USE_ZIP=	yes
-ALL_TARGET=	slib48
-INSTALL_TARGET=	install48
+NO_BUILD=	yes
 
-post-install:
-	# 	moved here from author's makefile
-	${MKDIR} ${PREFIX}/lib/scheme48
-	${TOUCH} -r ${WRKSRC}/slibcat ${PREFIX}/lib/scheme48/slibcat
+do-install:
 	${MKDIR} ${PREFIX}/share/slib
 	${INSTALL_DATA} ${WRKSRC}/*.scm ${PREFIX}/share/slib
 
