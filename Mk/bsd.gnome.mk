@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.83 2004/11/20 22:35:32 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.84 2004/11/29 23:23:18 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -428,6 +428,7 @@ intltool_BUILD_DEPENDS=	${intltool_DETECT}:${PORTSDIR}/textproc/intltool
 intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${REINPLACE_CMD} -e \
 				's|mkdir $$lang or|mkdir $$lang, 0777 or| ; \
 				 s|^push @INC, "/.*|push @INC, "${LOCALBASE}/share/intltool";| ; \
+				 s|/usr/bin/iconv|${LOCALBASE}/bin/iconv|g ; \
 				 s|unpack *[(]'"'"'U\*'"'"'|unpack ('"'"'C*'"'"'|'
 intlhack_USE_GNOME_IMPL=intltool
 
