@@ -2,13 +2,14 @@
 # Date created:		18 Feb 2001
 # Whom:			vess /Veselin Slavov/ <vess@btc.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/xcyrBGR/Makefile,v 1.1 2001/04/12 15:36:01 roam Exp $
 #
 
 PORTNAME=	xcyrBGR
 PORTVERSION=	1.0
 CATEGORIES=	russian
-MASTER_SITES=   ftp://aladdin.cblink.net/pub/FreeBSD/X11/cyrillic/
+MASTER_SITES=	ftp://aladdin.cblink.net/pub/FreeBSD/X11/cyrillic/ \
+		ftp://ftp.cit.bg/pub/FreeBSD/X11/cyrillic/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	vess@btc.net
