@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.219 2001/10/10 02:50:13 lioux Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.220 2001/10/10 10:29:17 markp Exp $
 #
 
     SUBDIR += LPRng
@@ -120,6 +120,7 @@
     SUBDIR += personality
     SUBDIR += pib
     SUBDIR += pkg_remove
+    SUBDIR += pkg_tree
     SUBDIR += portupgrade
     SUBDIR += prips
     SUBDIR += procmap
