@@ -2,11 +2,11 @@
 # Date created:		Sat Aug 30 13:29:42 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.10 2000/02/20 17:01:24 andreas Exp $
+# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.11 2000/04/08 22:49:04 mharo Exp $
 #
 
 PORTNAME=	xmbase-grok
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.3
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		ftp://ftp.fu-berlin.de/pub/unix/databases/xmbase-grok/
@@ -16,5 +16,13 @@ MAINTAINER=	ports@FreeBSD.org
 
 REQUIRES_MOTIF=	yes
 USE_IMAKE=	yes
+
+GLOK_DATADIR=	${PREFIX}/lib/X11/xmbase-grok
+
+post-install:
+	${TAR} -C ${WRKSRC} -cf - grokdir | \
+		${TAR} -C ${GLOK_DATADIR} --unlink -xf -
+	find ${GLOK_DATADIR} | xargs ${CHOWN} ${SHAREOWN}:${SHAREGRP}
+	find ${GLOK_DATADIR} -type f | xargs ${CHMOD} ${SHAREMODE}
 
 .include <bsd.port.mk>
