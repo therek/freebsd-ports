@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.49 2001/03/31 01:36:29 will Exp $
+# $FreeBSD$
 #
 
     SUBDIR += asmodem
@@ -24,6 +24,7 @@
     SUBDIR += sms_client
     SUBDIR += snooper
     SUBDIR += sredird
+    SUBDIR += tits
     SUBDIR += tkhylafax
     SUBDIR += viewfax
     SUBDIR += vpb2
