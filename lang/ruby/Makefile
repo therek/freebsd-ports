@@ -2,15 +2,14 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.33 2000/09/06 22:46:12 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.34 2000/09/06 23:17:09 knu Exp $
 #
 
 PORTNAME=	ruby
-PORTVERSION=	${RUBY_VERSION}.p3
+PORTVERSION=	${RUBY_VERSION}
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
-#MASTER_SITE_SUBDIR=	${RUBY_VER}
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/-preview/}
+MASTER_SITE_SUBDIR=	${RUBY_VER}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@bsdclub.org
@@ -20,8 +19,6 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared
 MAN1=		ruby${_RUBY_SUFFIX}.1
 MLINKS=		ruby${_RUBY_SUFFIX}.1 ruby.1
-
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}
 
 ELISP_FILES=	inf-ruby.el ruby-mode.el rubydb3x.el
 
@@ -36,7 +33,7 @@ CONFIGURE_ARGS+=	--program-suffix="${RUBY_SUFFIX}"
 .endif
 
 .if ${OSVERSION} >= 400014
-CONFIGURE_ARGS+= --enable-ipv6
+CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
 post-patch:

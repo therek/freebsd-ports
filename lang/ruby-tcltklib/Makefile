@@ -2,15 +2,15 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.15 2000/09/05 12:44:13 knu Exp $
+# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.16 2000/09/07 00:03:30 knu Exp $
 #
 
 PORTNAME=	tcltklib
-PORTVERSION=	${RUBY_VERSION}.p3
+PORTVERSION=	${RUBY_VERSION}
 CATEGORIES+=	lang x11-toolkits ruby tcl${TCL_VERSION} tk${TK_VERSION}
 MASTER_SITES=	${MASTER_SITE_RUBY}
 #MASTER_SITE_SUBDIR=	${RUBY_VER}
-DISTNAME=	ruby-${PORTVERSION:S/.p/-preview/}
+DISTNAME=	ruby-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER?=	yasuf@bsdclub.org
@@ -21,7 +21,7 @@ LIB_DEPENDS=	${TCL_LIB}.1:${PORTSDIR}/${TCL_CATEGORY}/tcl${TCL_VERSION} \
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 USE_XLIB=	yes
-WRKSRC=		${WRKDIR}/ruby-${PORTVERSION:R}/ext/tcltklib
+WRKSRC=		${WRKDIR}/${DISTNAME}/ext/tcltklib
 CONFIGURE_ARGS=	--with-tcllib="${TCL_LIB}" --with-tklib="${TK_LIB}" \
 		--with-tcl-lib="${LOCALBASE}/lib/${TCL_DIR}" \
 		--with-tk-lib="${LOCALBASE}/lib/${TK_DIR}" \
