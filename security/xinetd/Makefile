@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xinetd
-# Version required:			2.1.8.8.pre5
+# Version required:			2.1.8.8.pre8
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.14 1999/11/13 07:42:52 vanilla Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.15 2000/01/02 06:14:21 vanilla Exp $
 #
 
-DISTNAME=	xinetd-2.1.8.8pre5
+DISTNAME=	xinetd-2.1.8.8pre8
 CATEGORIES=	security
 MASTER_SITES=	http://synack.net/xinetd/
 
@@ -24,9 +24,9 @@ post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/xinetd.sh ]; then \
 		${ECHO} "Install ${PREFIX}/etc/rc.d/xinetd.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/xinetd.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/xinetd ] " >> ${PREFIX}/etc/rc.d/xinetd.sh; \
-		${ECHO} "&& ${PREFIX}/sbin/xinetd -pid 2> /var/run/xinetd.pid " >> ${PREFIX}/etc/rc.d/xinetd.sh; \
-		${ECHO} "&& ${ECHO} -n ' xinetd'" >> ${PREFIX}/etc/rc.d/xinetd.sh; \
+		${ECHO} "[ -x ${PREFIX}/sbin/xinetd ] &&" >> ${PREFIX}/etc/rc.d/xinetd.sh; \
+		${ECHO} "${PREFIX}/sbin/xinetd -pid 2> /var/run/xinetd.pid &&" >> ${PREFIX}/etc/rc.d/xinetd.sh; \
+		${ECHO} "${ECHO} -n ' xinetd'" >> ${PREFIX}/etc/rc.d/xinetd.sh; \
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/xinetd.sh; \
 	fi
 	strip ${PREFIX}/sbin/xinetd
