@@ -3,7 +3,7 @@
 # Date created:		24 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.18 1999/08/25 05:49:54 obrien Exp $
+# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.19 1999/12/04 23:22:05 cpiazza Exp $
 #
 
 DISTNAME=	xsystem35-1.2.4
