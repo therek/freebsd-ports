@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/py-bittornado/files/extra-gui-patch-setup.py,v 1.2 2004/05/25 13:47:28 pav Exp $
 
 --- setup.py.orig	Sun May 16 13:40:26 2004
 +++ setup.py	Tue May 25 10:14:43 2004
@@ -10,7 +10,7 @@ $FreeBSD$
 -        ]
 +        ],
 +    data_files = [('share/BitTornado', 
-+	['alloc.gif','black1.ico','black.ico','blue.ico','green1.ico','green.ico',
-+          'icon_bt.ico','icon_done.ico','red.ico','white.ico',
-+         'yellow1.ico','yellow.ico'])]
++	['icons/alloc.gif','icons/black1.ico','icons/black.ico','icons/blue.ico','icons/green1.ico','icons/green.ico',
++          'icons/icon_bt.ico','icons/icon_done.ico','icons/red.ico','icons/white.ico',
++         'icons/yellow1.ico','icons/yellow.ico'])]
      )
