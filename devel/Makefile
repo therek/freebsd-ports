@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.371 2000/12/06 16:39:18 clive Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.372 2000/12/08 21:48:11 deischen Exp $
 #
 
     SUBDIR += ElectricFence
@@ -67,6 +67,8 @@
     SUBDIR += doxygen
     SUBDIR += dryad
     SUBDIR += elftoaout
+    SUBDIR += elib-emacs
+    SUBDIR += elib-emacs20
     SUBDIR += entity
     SUBDIR += f77flow
     SUBDIR += fastcrc
