@@ -2,13 +2,13 @@
 # Date created:        06 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/irc/bnc/Makefile,v 1.9 2000/05/22 06:38:58 will Exp $
+# $FreeBSD: ports/irc/bnc/Makefile,v 1.10 2001/04/02 08:30:53 mharo Exp $
 #
 
 PORTNAME=	bnc
-PORTVERSION=	2.8.2
+PORTVERSION=	2.8.4
 CATEGORIES=	irc
-MASTER_SITES=	http://www.psn.net/~andrews/dist/
+MASTER_SITES=	http://www.gotbnc.com/files/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
