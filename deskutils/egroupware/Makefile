@@ -2,7 +2,7 @@
 # Date created:        27 March 2001
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/phpgroupware/Makefile,v 1.1 2001/03/27 23:06:00 olgeni Exp $
 
 PORTNAME=	phpgroupware
 PORTVERSION=	0.9.9p1
@@ -12,6 +12,8 @@ MASTER_SITE_SUBDIR=	phpgroupware
 DISTNAME=	phpGroupWare-${PORTVERSION}
 
 MAINTAINER=	olgeni@FreeBSD.org
+
+RUN_DEPENDS=	${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/phpgroupware
