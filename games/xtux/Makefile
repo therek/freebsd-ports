@@ -2,15 +2,14 @@
 # Date created:        23 December 2000
 # Whom:    Göran Runfeldt <goranrunfeldt@home.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtux/Makefile,v 1.1 2000/12/26 05:31:25 will Exp $
 #
 
 PORTNAME=	xtux
-PORTVERSION=	2000.11.25
+PORTVERSION=	2000.12.30
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=xtux
-DISTNAME=	xtux-arena-src-nov-25
+MASTER_SITES=	http://xtux.sourceforge.net/
+DISTNAME=	xtux-src-20001230
 
 MAINTAINER=	goranrunfeldt@home.se
 
