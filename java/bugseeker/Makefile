@@ -1,8 +1,8 @@
 # New ports collection makefile for:   bugseeker
 # Date created:        22 December 2000
-# Whom:                Ernst de Haan <ernst@jollem.com>
+# Whom:                Ernst de Haan <znerd@FreeBSD.org>
 #
-# $FreeBSD: ports/java/bugseeker/Makefile,v 1.3 2001/06/05 09:45:34 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bugseeker
@@ -12,7 +12,7 @@ CATEGORIES=	java
 MASTER_SITES=	#
 DISTNAME=	bugseeker2ee-1_0_2
 
-MAINTAINER=	ernst@jollem.com
+MAINTAINER=	znerd@FreeBSD.org
 
 RUN_DEPENDS=	${JAVA_HOME}/bin/java:${PORTSDIR}/java/linux-jdk13
 
