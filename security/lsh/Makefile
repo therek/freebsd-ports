@@ -2,7 +2,7 @@
 # Date created:				29 MAY 2000
 # Whom:					Eric Schwertfeger <eric@cybernut.com>
 #
-# $FreeBSD: ports/security/lsh/Makefile,v 1.2 2000/06/02 19:53:22 will Exp $
+# $FreeBSD$
 
 PORTNAME=	lsh
 PORTVERSION=	1.0
@@ -11,6 +11,8 @@ MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/security/lsh/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	eric@cybernut.com
+
+BROKEN=		"Does not fetch"
 
 RESTRICTED=	"Crypto; export-controlled"
 GNU_CONFIGURE=	yes
