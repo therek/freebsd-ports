@@ -2,13 +2,14 @@
 # Date created:			  13 Dec 1999
 # Whom:				  Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/net/merlinmon/Makefile,v 1.1.1.1 1999/12/25 15:58:11 nsayer Exp $
+# $FreeBSD: ports/net/merlinmon/Makefile,v 1.2 2000/04/09 18:12:13 cpiazza Exp $
 #
 
 PORTNAME=	merlinmon
 PORTVERSION=	1.0
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.kfu.com/pub/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	nsayer
 DISTNAME=	merlin-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 

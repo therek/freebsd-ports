@@ -2,13 +2,14 @@
 # Date created:         2 Dec 1996
 # Whom:                 nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/sysutils/contool/Makefile,v 1.10 2000/04/09 19:07:22 cpiazza Exp $
+# $FreeBSD: ports/sysutils/contool/Makefile,v 1.11 2000/04/22 10:11:50 mharo Exp $
 #
 
 PORTNAME=	contool
 PORTVERSION=	3.3a
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.kfu.com/pub/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	nsayer
 
 MAINTAINER=	nsayer@quack.kfu.com
 
