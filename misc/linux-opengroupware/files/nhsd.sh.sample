@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/misc/linux-opengroupware/files/nhsd.sh.sample,v 1.1 2003/10/13 21:35:59 se Exp $
 #
 # Frank Reppin <frank.reppin@boerde.de>
 
@@ -7,7 +7,7 @@ OGO_USER='ogo'
 OGO_GROUP='skyrix'
 NHSD_BIN='/compat/linux/opt/opengroupware.org/Tools/ix86/linux-gnu/gnu-fd-nil/nhsd'
 OGO_DIR='/compat/linux/opt/opengroupware.org'
-LOG='/var/log/opengroupware/xmlrpcd.log'
+LOG='/var/log/opengroupware/nhsd.log'
 
 
 case $1 in
