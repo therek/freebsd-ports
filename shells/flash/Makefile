@@ -3,7 +3,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/flash/Makefile,v 1.1.1.1 2000/01/08 18:23:33 wes Exp $
 #
 
 DISTNAME=	flash-0.9.1
@@ -67,4 +67,4 @@ post-install:
 	@${ECHO} "it to work properly."
 	@${ECHO}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
