@@ -3,7 +3,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.3 1999/08/31 02:58:28 peter Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.4 1999/10/22 14:58:35 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-kory-${BITMAP_SNAP_VER}
