@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.19 2000/07/16 13:33:24 andreas Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.20 2000/11/01 13:09:33 andreas Exp $
 #
 
 PORTNAME=	webmin
@@ -10,7 +10,7 @@ PORTVERSION=	0.82
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/download/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSLeay.pm:${PORTSDIR}/security/p5-Net-SSLeay
 
