@@ -3,7 +3,7 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.25 1999/08/25 05:25:22 obrien Exp $
 #
 
 DISTNAME=	jpman-3.2
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/man
 PLIST=		${WRKDIR}/PLIST
 
 MANSECS=	1 5 6 7 8
-JAMANDIR?=	/usr/opt/doc/ja/man
+JAMANDIR?=	/usr/opt/doc/ja_JP.eucJP/man
 
 do-extract:
 	@if [ ! -d ${JAMANDIR} ]; then \
