@@ -2,16 +2,16 @@
 # Date created:		Fri Aug 18 19:29:00 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ohphone/Makefile,v 1.9 2001/10/08 05:11:30 roger Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ohphone
-PORTVERSION=	1.1.6
+PORTVERSION=	1.1.7
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTNAME=	ohphone_1.1.6
+DISTNAME=	ohphone_1.1.7
 
 MAINTAINER=	roger@FreeBSD.org
 
