@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.201 2003/11/03 08:12:59 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.202 2003/11/04 16:05:47 ijliao Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -189,7 +189,6 @@ MASTER_SITE_EXIM+=	\
 	http://www.no.exim.org/ftp/%SUBDIR%/ \
 	http://sunsite.icm.edu.pl/pub/unix/mail/exim/%SUBDIR%/ \
 	ftp://exim.directnet.ru/pub/exim/%SUBDIR%/ \
-	ftp://ftp.smux.net/pub/exim/%SUBDIR%/ \
 	ftp://ftp.is.co.za/networking/mail/mta/exim/%SUBDIR%/ \
 	ftp://ftp.reaper.org/pub/exim/%SUBDIR%/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/exim/%SUBDIR%/ \
