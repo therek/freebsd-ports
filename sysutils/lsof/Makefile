@@ -4,11 +4,11 @@
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.55 2000/01/12 09:02:18 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.56 2000/01/12 17:20:53 obrien Exp $
 #
 
-DISTNAME=	lsof_4.48C.freebsd
-PKGNAME=	lsof-4.47.4
+DISTNAME=	lsof_4.48_W
+PKGNAME=	lsof-4.48
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/  \
 		ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/NEW/ \
