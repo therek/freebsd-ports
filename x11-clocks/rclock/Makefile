@@ -4,11 +4,11 @@
 # Date created:			  24th Feburary 1997
 # Whom:				  obrien@NUXI.com
 #
-# $FreeBSD: ports/x11-clocks/rclock/Makefile,v 1.9 1999/08/31 02:58:01 peter Exp $
+# $FreeBSD: ports/x11-clocks/rclock/Makefile,v 1.10 1999/09/05 22:10:23 obrien Exp $
 #
 
-DISTNAME=	rxvt-2.6.1
-PKGNAME=	rclock-2.6.1
+DISTNAME=	rxvt-2.7.1
+PKGNAME=	rclock-2.7.1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/  \
 		ftp://mason.primenet.com.au/pub/rxvt/ \
