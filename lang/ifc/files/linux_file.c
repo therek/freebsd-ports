@@ -23,15 +23,12 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/lang/ifc/files/linux_file.c,v 1.1 2002/11/18 09:27:32 maho Exp $
+ * $FreeBSD: ports/lang/ifc/files/linux_file.c,v 1.2 2003/04/28 22:17:47 maho Exp $
  */
 
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
-
-static short unsigned int ctype_b[256] = { 0 };
-short unsigned int *__ctype_b = ctype_b;
 
 /* This matches struct stat64 in glibc2.1, hence the absolutely
  * insane amounts of padding around dev_t's.
