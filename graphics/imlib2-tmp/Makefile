@@ -2,7 +2,7 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.63 2000/04/14 10:46:24 asami Exp $
+# $FreeBSD: ports/graphics/imlib/Makefile,v 1.64 2000/06/01 16:10:30 ade Exp $
 #
 
 PORTNAME=	imlib
@@ -17,7 +17,6 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		ungif.5:${PORTSDIR}/graphics/libungif \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
