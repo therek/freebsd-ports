@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.298 2000/09/12 01:03:44 asami Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.299 2000/10/01 14:57:23 knu Exp $
 #
 
     SUBDIR += Canna
@@ -164,6 +164,7 @@
     SUBDIR += mule-sj3+wnn6
     SUBDIR += mule-wnn6
     SUBDIR += mutt
+    SUBDIR += mutt-devel
     SUBDIR += mypaedia-fpw
     SUBDIR += mypaedia-fpw-package
     SUBDIR += namazu
