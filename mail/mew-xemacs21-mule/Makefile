@@ -3,9 +3,10 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew-xemacs21-mule/Makefile,v 1.5 2000/01/04 14:29:28 shige Exp $
+# $FreeBSD: ports/mail/mew-xemacs21-mule/Makefile,v 1.6 2000/01/05 23:28:11 shige Exp $
 #
 
 EMACS_PORT_NAME=	xemacs21-mule
+BROKEN=			xemacs21-mule binary is not installed by editors/xemacs21-mule ports.
 
 .include "${.CURDIR}/../mew/Makefile"
