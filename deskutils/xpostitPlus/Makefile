@@ -2,7 +2,7 @@
 # Date created:		26 Sep 1997
 # Whom:			mi
 #
-# $FreeBSD: ports/deskutils/xpostitPlus/Makefile,v 1.7 2000/04/08 22:04:09 mharo Exp $
+# $FreeBSD: ports/deskutils/xpostitPlus/Makefile,v 1.8 2001/08/31 02:12:30 dwcjr Exp $
 #
 
 PORTNAME=	XPostitPlus
@@ -12,7 +12,7 @@ CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office
 
-MAINTAINER=	mi@aldan.algebra.com
+MAINTAINER=	ports@freebsd.org
 
 USE_IMAKE=	yes
 MAN1=		xpostit+.1
