@@ -2,7 +2,7 @@
 # Date created:		28 December 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/cosmo/Makefile,v 1.7 2000/01/22 11:45:51 nakai Exp $
+# $FreeBSD: ports/games/cosmo/Makefile,v 1.8 2000/04/14 00:45:42 mharo Exp $
 #
 
 PORTNAME=	cosmo
@@ -26,5 +26,7 @@ NO_INSTALL_MANPAGES=	yes
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/cosmorc ${PREFIX}/lib/X11/cosmo
 	${INSTALL_DATA} ${_DISTDIR}/moon.tif.gz ${PREFIX}/lib/X11/cosmo
+	${CHOWN} root:games ${PREFIX}/bin/cosmo
+	${CHMOD} g+s ${PREFIX}/bin/cosmo
 
 .include <bsd.port.mk>
