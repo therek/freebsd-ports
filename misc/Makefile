@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.330 2001/03/10 03:46:48 grog Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.331 2001/03/10 13:51:39 alex Exp $
 #
 
     SUBDIR += 40upgrade
@@ -90,6 +90,7 @@
     SUBDIR += lv
     SUBDIR += magicpoint
     SUBDIR += man.el
+    SUBDIR += matrix-kmod
     SUBDIR += mc
     SUBDIR += metatheme
     SUBDIR += mgp-mode.el
