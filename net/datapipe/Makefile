@@ -3,7 +3,7 @@
 # Date created:		04 January 2000
 # Whom:			Daniel Baker <dbaker@FreeBSD.org> <dbaker@cuckoo.com>
 #
-# $FreeBSD: ports/net/bing/Makefile,v 1.4 1999/08/30 14:22:10 peter Exp $
+# $FreeBSD: ports/net/datapipe/Makefile,v 1.1.1.1 2000/01/04 08:13:51 dbaker Exp $
 #
 
 DISTNAME=	datapipe-1.0
@@ -16,7 +16,7 @@ DISTFILE=	datapipe-1.0.tar.gz
 MAINTAINER=	dbaker@FreeBSD.org
 
 do-build:
-	${CC} -o ${WRKDIR}/${DISTNAME}/datapipe ${WRKDIR}/${DISTNAME}/datapipe.c
+	${CC} ${CFLAGS} -o ${WRKDIR}/${DISTNAME}/datapipe ${WRKDIR}/${DISTNAME}/datapipe.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/datapipe ${PREFIX}/bin
