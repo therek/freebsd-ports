@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.135 2000/12/06 22:48:44 alex Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.136 2000/12/16 20:33:10 dannyboy Exp $
 #
     SUBDIR += yawho
 
@@ -70,6 +70,7 @@
     SUBDIR += nwclient
     SUBDIR += obliterate
     SUBDIR += p5-SyslogScan
+    SUBDIR += p5-Unix-Syslog
     SUBDIR += pib
     SUBDIR += pkg_remove
     SUBDIR += prips
