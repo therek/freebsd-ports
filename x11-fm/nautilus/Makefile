@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.17 2001/04/09 18:20:17 sobomax Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.18 2001/05/04 21:51:14 ade Exp $
 #
 
 PORTNAME=	nautilus
@@ -19,7 +19,8 @@ BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
 # BUILD_DEPENDS+=rpm:${PORTSDIR}/archivers/rpm
 
 LIB_DEPENDS=	medusa.0:${PORTSDIR}/sysutils/medusa \
-		freetype.6:${PORTSDIR}/print/freetype2
+		freetype.6:${PORTSDIR}/print/freetype2 \
+		ghttp.1:${PORTSDIR}/www/libghttp
 
 .if !defined(WITHOUT_MOZILLA)
 MOZILLA=	mozilla
