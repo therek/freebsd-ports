@@ -2,7 +2,7 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.2 2001/03/20 09:44:01 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.3 2001/03/23 22:38:05 knu Exp $
 #
 
 PORTNAME=	fox
@@ -21,8 +21,8 @@ LIB_DEPENDS=	FOX.1:${PORTSDIR}/x11-toolkits/fox \
 		png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
-FOX_VERSION=	0.99.166
-FXRUBY_REVISION=	1
+FOX_VERSION=	0.99.167
+#FXRUBY_REVISION=	
 .if defined(FXRUBY_REVISION) && !empty(FXRUBY_REVISION)
 FXRUBY_PORTVERSION=	${FOX_VERSION}.${FXRUBY_REVISION}
 FXRUBY_DISTNAME=	FXRuby-${FOX_VERSION}-${FXRUBY_REVISION}
