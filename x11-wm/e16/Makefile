@@ -2,7 +2,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.62 2001/02/02 11:17:18 vanilla Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.63 2001/03/10 20:48:38 will Exp $
 #
 
 PORTNAME=	enlightenment
@@ -46,6 +46,9 @@ CONFIGURE_ARGS+=--disable-zoom
 .endif
 
 MAN1=		enlightenment.1
+
+pre-patch:
+	@${PERL} -pi -e 's/ wctype.h//' ${WRKSRC}/configure
 
 pre-build:
 .for i in Marble.etheme BlueSteel.etheme.zh_TW.Big5 BrushedMetal-Tigert.etheme.zh_TW.Big5 ShinyMetal.etheme.zh_TW.Big5
