@@ -1,8 +1,9 @@
-# $FreeBSD: ports/german/Makefile,v 1.13 2000/09/21 01:52:35 asami Exp $
+# $FreeBSD: ports/german/Makefile,v 1.14 2000/09/22 07:02:16 asami Exp $
 #
 
     SUBDIR += BBBike
     SUBDIR += cheapcall
+    SUBDIR += citrix_ica
     SUBDIR += dict
     SUBDIR += ispell
     SUBDIR += ispell-alt
