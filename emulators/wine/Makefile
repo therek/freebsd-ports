@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.98 2000/12/21 10:24:59 will Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.99 2000/12/23 03:18:28 jmz Exp $
 #
 
 PORTNAME=	wine
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=	--disable-opengl
 CONFIGURE_ENV=	LIBS=-Wl,-rpath,${PREFIX}/lib/wine
 INSTALLS_SHLIB=	yes
 LDCONFIG_DIRS=	%%PREFIX%%/lib/wine
-MAN1=		wine.1 wmc.1 wrc.1
+MAN1=		wine.1 winemaker.1 wmc.1 wrc.1
 MAN5=		wine.conf.5
 ONLY_FOR_ARCHS=	i386
 USE_XPM=	yes
