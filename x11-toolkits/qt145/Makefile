@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.41 2000/04/14 16:10:26 imura Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.42 2000/05/30 04:16:00 will Exp $
 #
 
 PORTNAME=	qt
@@ -25,7 +25,7 @@ MAKE_ENV+=	VERSION="${VERSION}" VER_MIN=${VER_MIN} VER_MAJ=${VER_MAJ}
 PLIST_SUB+=	VERSION="${VER_MAJ}"
 
 MAN1=	moc.1
-.include "files/man3"
+.include "${.CURDIR}/files/man3"
 
 post-configure:
 	@${PERL} -pi -e "s:g\+\+:${CXX}:g" ${WRKSRC}/configs/freebsd-g++-shared
