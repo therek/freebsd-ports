@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.236 2001/07/01 15:50:25 kevlo Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.237 2001/07/03 11:21:45 sheldonh Exp $
 #
 
     SUBDIR += abook
@@ -24,6 +24,7 @@
     SUBDIR += cyrus-imapd
     SUBDIR += demime
     SUBDIR += distribute
+    SUBDIR += dkimap4
     SUBDIR += drac
     SUBDIR += elm
     SUBDIR += elm+ME
