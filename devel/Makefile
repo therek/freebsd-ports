@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.537 2001/05/16 20:59:59 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.538 2001/05/19 11:05:26 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -300,6 +300,7 @@
     SUBDIR += p5-File-Tools
     SUBDIR += p5-Filter
     SUBDIR += p5-FreezeThaw
+    SUBDIR += p5-Heap
     SUBDIR += p5-IO
     SUBDIR += p5-IO-String
     SUBDIR += p5-IO-Stty
