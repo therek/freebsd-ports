@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.236 2001/06/26 09:19:43 jkoshy Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.237 2001/06/26 12:18:04 tg Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -52,6 +52,7 @@
     SUBDIR += gnustep-guile
     SUBDIR += gnustep-objc
     SUBDIR += gpc
+    SUBDIR += gprolog
     SUBDIR += guile
     SUBDIR += guileobjc
     SUBDIR += hugs
