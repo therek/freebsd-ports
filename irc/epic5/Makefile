@@ -3,7 +3,7 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.19 1999/12/03 13:26:17 sheldonh Exp $
+# $FreeBSD: ports/irc/epic4/Makefile,v 1.20 2000/01/04 15:54:56 sheldonh Exp $
 #
 
 DISTNAME=	epic4-2000
@@ -20,7 +20,6 @@ DIST_SUBDIR=	epic4
 
 EXTRACT_ONLY=	epic4-2000.tar.gz
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/epic4-2000
 
 MAN1=		epic.1
 
