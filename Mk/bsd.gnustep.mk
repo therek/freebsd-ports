@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.7 2003/10/19 11:14:17 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.8 2003/10/19 12:04:44 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -154,6 +154,9 @@ MAKE_FLAGS+=	GUI_BACKEND_LIB=art
 # source GNUstep.sh
 #
 .if defined(USE_GNUSTEP_CONFIGURE)
+run-autotools:
+	@${DO_NADA}
+
 do-configure:
 	@(cd ${CONFIGURE_WRKSRC}; . ${SYSMAKEDIR}/GNUstep.sh; \
 	    if ! ${SETENV} CC="${CC}" CXX="${CXX}" \

@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.41 2003/12/20 07:13:42 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.42 2004/01/09 01:43:29 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -250,8 +250,8 @@ PYTHON_SUFFIX!=		${PYTHON_CMD} -c 'import sys; h = "%x" % sys.hexversion; \
 						print h[0]+h[2]'
 
 .else
-.BEGIN:
-	@${ECHO} "Error: bad value for PYTHON_VERSION: ${PYTHON_VERSION}."
+check-makevars::
+	@${ECHO} "Makefile error: bad value for PYTHON_VERSION: ${PYTHON_VERSION}."
 	@${ECHO} "Legal values are:"
 	@${ECHO} "  python1.5"
 	@${ECHO} "  python1.6"
