@@ -2,7 +2,7 @@
 # Date created:		23-Jan-2001
 # Whom:			Dominic Mitchell <dom@happygiraffe.net>
 #
-# $FreeBSD: ports/www/p5-Apache-MP3/Makefile,v 1.2 2001/05/10 09:34:15 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-MP3
@@ -27,9 +27,8 @@ MAN3=		Apache::MP3.3 \
 		Apache::MP3::Resample.3 \
 		Apache::MP3::Sorted.3
 
-PKGDATADIR=	${PREFIX}/share/${PORTNAME}
 post-install:
-	${MKDIR} ${PKGDATADIR}
-	${INSTALL_DATA} ${WRKSRC}/apache_mp3/* ${PKGDATADIR}
+	${MKDIR} ${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/apache_mp3/* ${DATADIR}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				6 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/clustalw/Makefile,v 1.2 2000/10/03 01:10:19 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clustalw
@@ -20,7 +20,7 @@ ALL_TARGET=	# empty
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/clustalw ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/share/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/clustalw_help ${PREFIX}/share/${PORTNAME}
+	@${MKDIR} ${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/clustalw_help ${DATADIR}
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/dictd/Makefile,v 1.5 2001/01/30 19:17:02 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dictd
@@ -36,9 +36,9 @@ post-patch:
 	@${PERL} -pi -e "s|[\ \t]T_USER| T_USERNAME|g" ${WRKSRC}/*.[chly]
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/${PORTNAME}
+	@${MKDIR} ${DATADIR}
 .for i in example.conf example.dictrc example.site example2.conf example3.conf
-	${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/$i ${DATADIR}
 .endfor
 	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/${PORTNAME}.conf > ${PREFIX}/etc/${PORTNAME}.conf
 	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/${PORTNAME}.sh > ${PREFIX}/etc/rc.d/${PORTNAME}.sh

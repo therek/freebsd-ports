@@ -2,7 +2,7 @@
 # Date created:		27 Apr 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/tclhttpd/Makefile,v 1.7 2001/05/27 15:59:42 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclhttpd
@@ -38,24 +38,24 @@ do-build:
 		FILESDIR="${FILESDIR}" -f "${FILESDIR}/Makefile.lib"
 
 pre-install:
-	${MKDIR} ${LOCALBASE}/tclhttpd/custom
+	${MKDIR} ${PREFIX}/tclhttpd/custom
 
 post-install:
 	test -e ${RCD} || ${SED} \
 		"s%COMMAND_LINE%${LOCALBASE}/bin/tclsh${TCL_DVER} ${PREFIX}/bin/httpd.tcl%" \
 		< ${FILESDIR}/tclhttpd.sh > ${RCD}
-	${CHOWN} -R nobody ${LOCALBASE}/share/${PORTNAME}${PORTVERSION}
+	${CHOWN} -R nobody ${DATADIR}${PORTVERSION}
 	${CHMOD} +x ${RCD}
 	${INSTALL_DATA} ${WRKSRC}/${SHLIB_NAME} \
-		${LOCALBASE}/lib/${PORTNAME}${PORTVERSION}/${SHLIB_NAME}
+		${PREFIX}/lib/${PORTNAME}${PORTVERSION}/${SHLIB_NAME}
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/httpd.tcl \
-		${WRKSRC}/bin/httpdthread.tcl ${LOCALBASE}/bin/
+		${WRKSRC}/bin/httpdthread.tcl ${PREFIX}/bin/
 	${SED} 's%@VER@%${PORTVERSION}%g' < ${WRKSRC}/bin/tclhttpd.rc \
-		> ${LOCALBASE}/etc/tclhttpd.rc.default
-	cd ${LOCALBASE}/etc; test -e tclhttpd.rc || \
+		> ${PREFIX}/etc/tclhttpd.rc.default
+	cd ${PREFIX}/etc; test -e tclhttpd.rc || \
 		${CP} -p tclhttpd.rc.default tclhttpd.rc
 	${SED} 's%@LIB@%${SHLIB_NAME}%g' < \
 		${FILESDIR}/pkgIndex.tcl >> \
-		${LOCALBASE}/lib/${PORTNAME}${PORTVERSION}/pkgIndex.tcl
+		${PREFIX}/lib/${PORTNAME}${PORTVERSION}/pkgIndex.tcl
 
 .include <bsd.port.post.mk>

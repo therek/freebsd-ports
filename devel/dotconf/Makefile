@@ -3,7 +3,7 @@
 # Date created:                Jan 28, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dotconf/Makefile,v 1.3 2001/04/09 17:30:53 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dotconf
@@ -19,12 +19,12 @@ USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 
 post-install:
-	${MKDIR} ${PREFIX}/share/${PORTNAME}
+	${MKDIR} ${DATADIR}
 .if !defined(NOPORTDOCS)
 .for f in dotconf-api.txt dotconf-features.txt
-	@${INSTALL_DATA} ${WRKSRC}/doc/$f ${PREFIX}/share/${PORTNAME}
+	@${INSTALL_DATA} ${WRKSRC}/doc/$f ${DATADIR}
 .endfor
 .endif
-	${CP} -R ${WRKSRC}/examples ${PREFIX}/share/${PORTNAME}
+	${CP} -R ${WRKSRC}/examples ${DATADIR}
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/faces/Makefile,v 1.16 2001/02/26 20:48:55 lkoeller Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	faces
@@ -57,9 +57,9 @@ post-install:
 	    ${CP} -f ${WRKSRC}/README                 ${PREFIX}/share/doc/${PORTNAME}; \
 	    ${CP} -f ${WRKSRC}/scripts/README.kinzler ${PREFIX}/share/doc/${PORTNAME}; \
 	    ${CP} -f ${WRKSRC}/scripts/from.allrc-eg  ${PREFIX}/share/doc/${PORTNAME}; \
-	    ${MKDIR} ${PREFIX}/share/${PORTNAME}/lib; \
+	    ${MKDIR} ${DATADIR}/lib; \
 	    ${ECHO} ";# See ${PREFIX}/share/doc/${PORTNAME}/from.allrc-eg for an example" \
-		> ${PREFIX}/share/${PORTNAME}/lib/allrc; \
+		> ${DATADIR}/lib/allrc; \
 	fi
 .endif
 

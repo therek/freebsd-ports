@@ -2,7 +2,7 @@
 # Date created:				17 November 1999
 # Whom:					perlguy@perlguy.com
 #
-# $FreeBSD: ports/irc/infobot/Makefile,v 1.1 2000/05/19 22:14:21 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	infobot
@@ -21,9 +21,9 @@ NO_BUILD=	yes
 PLIST_SUB+=	VERSION="${PORTVERSION}"
 
 do-install:
-	@if [ ! -d ${PREFIX}/share/${DISTNAME} ]; then \
-		${MKDIR} ${PREFIX}/share/${PORTNAME}-${PORTVERSION}; \
+	@if [ ! -d ${DATADIR}-${PORTVERSION} ]; then \
+		${MKDIR} ${DATADIR}-${PORTVERSION}; \
 	fi
-	${CP} -R ${WRKSRC}/* ${PREFIX}/share/${PORTNAME}-${PORTVERSION}/
+	${CP} -R ${WRKSRC}/* ${DATADIR}-${PORTVERSION}/
 
 .include <bsd.port.mk>

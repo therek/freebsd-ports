@@ -2,7 +2,7 @@
 # Date created:                 10 Jun 1999
 # Whom:                         Hyper NIKKI System Project <hnsmaster@h14m.org>
 #
-# $FreeBSD: ports/japanese/hns/Makefile,v 1.4 2000/12/11 02:29:49 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hns
@@ -19,10 +19,10 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}-pl${PORTVERSION:E}
 
 do-install:
-	@if [ -d ${PREFIX}/share/${PORTNAME} ]; then ${RM} -rf ${PREFIX}/share/${PORTNAME}; fi
-	${MKDIR} ${PREFIX}/share/${PORTNAME}
-	${CP} -pR ${WRKSRC}/ ${PREFIX}/share/${PORTNAME}
-	${CHOWN} -R 0:0 ${PREFIX}/share/${PORTNAME}
+	@if [ -d ${DATADIR} ]; then ${RM} -rf ${DATADIR}; fi
+	${MKDIR} ${DATADIR}
+	${CP} -pR ${WRKSRC}/ ${DATADIR}
+	${CHOWN} -R 0:0 ${DATADIR}
 	${INSTALL_SCRIPT} ${WRKDIR}/hns-setup ${PREFIX}/bin/hns-setup
 	${INSTALL_SCRIPT} ${WRKSRC}/contrib/todayhns/todayhns ${PREFIX}/bin/todayhns
 
