@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.46 2000/05/16 22:18:55 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -14,12 +14,10 @@ MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2 \
-		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
 MOC?=		${X11BASE}/bin/moc2
-USE_XLIB=	yes
 USE_BZIP2=	yes
 USE_QT2=	yes
 GNU_CONFIGURE=	yes
