@@ -2,7 +2,7 @@
 # Date created:		16 January 2000
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.9 2001/05/29 12:26:14 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		dvipdfm
@@ -23,6 +23,8 @@ CONFIGURE_ENV+=		CPPFLAGS="${CXXFLAGS} -I${PREFIX}/include" \
 			CFLAGS="${CFLAGS} -I${PREFIX}/include" \
 			LDFLAGS=-L${PREFIX}/lib
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share
+
+MAN1=			dvipdfm.1
 
 post-install:
 	strip ${PREFIX}/bin/dvipdfm
