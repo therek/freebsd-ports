@@ -2,7 +2,7 @@
 # Date created:		07 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.1 2000/09/07 13:12:34 nbm Exp $
+# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.2 2000/09/22 11:43:04 nbm Exp $
 #
 
 PORTNAME=	zpygresqlda
@@ -15,6 +15,8 @@ MAINTAINER=	nbm@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/${SZOPEBASEDIR}/z2.py:${PORTSDIR}/www/zope
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
+
+PYTHON_VERSION=	python1.5
 
 # You can change this in the environment
 SZOPEBASEDIR?=		www/Zope
