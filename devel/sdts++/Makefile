@@ -2,22 +2,20 @@
 # Date created:         08 Feb 2000
 # Whom:                 erik@habatech.no
 #
-# $FreeBSD: ports/devel/sdts++/Makefile,v 1.1.1.1 2000/07/28 00:35:21 sada Exp $
+# $FreeBSD: ports/devel/sdts++/Makefile,v 1.2 2001/05/28 19:41:29 fenner Exp $
 #
 
 PORTNAME=	sdts++
-PORTVERSION=	1.0.4.1
+PORTVERSION=	1.3.1a
 CATEGORIES=	devel
-MASTER_SITES=	http://www.clark.net/~mcoletti/sdts/
-#		ftp://resdgw17.er.usgs.gov/pub/sdtsxx/
+MASTER_SITES=	ftp://sdts.er.usgs.gov/pub/sdts/software/sdtsxx/ \
+		http://lychnobite.org/sdts/ \
+		ftp://boost.sourceforge.net/pub/boost/release/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} boost_1_23_0.tar.gz
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes
-
-post-install:
-.for info in sdts++.info
-	install-info ${PREFIX}/info/${info} ${PREFIX}/info/dir
-.endfor
+USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--with-boost=${WRKDIR}/boost_1_23_0
 
 .include <bsd.port.mk>
