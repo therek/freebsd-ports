@@ -2,11 +2,12 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.36 2000/11/02 17:25:47 horikawa Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.37 2001/03/08 02:41:32 horikawa Exp $
 #
 
 PORTNAME=	man-doc
 PORTVERSION=	4.3
+PORTREVISION=   1
 CATEGORIES=	japanese
 DISTFILES=	# none
 
@@ -18,7 +19,7 @@ NO_MTREE=	yes
 WRKSRC=		${WRKDIR}/man
 PLIST=		${WRKDIR}/PLIST
 
-MANSECS=	1 5 6 7 8
+MANSECS=	1 2 5 6 7 8
 JAMANDIR?=	/usr/opt/doc/ja_JP.eucJP/man
 
 do-extract:
