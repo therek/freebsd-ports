@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/elm+ME/files/00elm.sh,v 1.3 2004/07/12 12:27:05 sem Exp $
 #
 # Configure the shared library cache
 #
@@ -8,8 +8,8 @@
 # REQUIRE: ldconfig
 # KEYWORD: FreeBSD
 
-elm_enable="YES"
-elm_shlib_dir="%%SHLIB_DIR%%"
+elm_enable=${elm_enable:-"YES"}
+elm_shlib_dir=${elm_shlib_dir:-"%%SHLIB_DIR%%"}
 
 . %%RC_SUBR%%
 
@@ -25,6 +25,8 @@ stop_cmd=":"
 
 elm_start ()
 {
+	local _ins
+
 	_ins=
 	ldconfig=${ldconfig_command}
 	checkyesno ldconfig_insecure && _ins="-i"
