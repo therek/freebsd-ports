@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.105 2000/12/28 14:38:34 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.106 2001/01/21 15:40:46 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -140,7 +140,7 @@ while [ "$1" ]; do
 			echo "SNMP is DISABLED for now. Ignoring." > /dev/stderr
 			;;
 		\"nothing\")
-			echo "LIB_DEPENDS+=	snmp.4:\${PORTSDIR}/net/ucd-snmp"
+			echo "LIB_DEPENDS+=	snmp.4:\${PORTSDIR}/net/net-snmp"
 			echo "CONFIGURE_ARGS+=--with-snmp=\${PREFIX} --enable-ucd-snmp-hack"
 			;;
 		\"XML\")
