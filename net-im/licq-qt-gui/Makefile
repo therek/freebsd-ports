@@ -2,7 +2,7 @@
 # Date created:                         18 October 2000
 # Whom:                                 Jeremy Norris <ishmael272home.com>
 #
-# $FreeBSD: ports/net/licq-qt-gui/Makefile,v 1.1 2001/04/10 20:09:52 green Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qt-gui
@@ -26,7 +26,7 @@ post-patch:
 		${WRKSRC}/src/Makefile.in
 
 pre-configure:
-	@(cd ${WRKSRC} && ${LOCALBASE}/bin/aclocal)
+	@(cd ${WRKSRC} && ${ACLOCAL})
 
 post-configure:
 	@(cd ${WRKSRC} && ${PERL5} am_edit)
