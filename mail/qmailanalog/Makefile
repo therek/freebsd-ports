@@ -3,13 +3,13 @@
 # Date created:		29 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.3 1999/08/25 06:50:46 obrien Exp $
+# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.4 1999/08/27 22:29:44 mharo Exp $
 
 DISTNAME=	qmailanalog-0.70
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qmail.org/pub/software/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	nbm@FreeBSD.org
 
 RUN_DEPENDS=	${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
 
