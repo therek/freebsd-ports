@@ -2,11 +2,12 @@
 # Date created:				8 July 2000
 # Whom:					Trevor Johnson
 #
-# $FreeBSD: ports/security/pad/Makefile,v 1.4 2000/10/15 14:23:23 trevor Exp $
+# $FreeBSD: ports/security/pad/Makefile,v 1.5 2001/09/01 17:44:16 dwcjr Exp $
 #
 
 PORTNAME=	pad
-PORTVERSION=	1.0.4
+PORTEPOCH=	1
+PORTVERSION=	0.7
 CATEGORIES=	security
 MASTER_SITES=	http://www.lammah.com/pad/
 EXTRACT_SUFX=	.tgz
