@@ -2,14 +2,14 @@
 # Date created:        16 Jan 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xmove/Makefile,v 1.7 2001/03/13 16:06:46 sobomax Exp $
 #
 
 PORTNAME=	xmove
 PORTVERSION=	2.0b2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.columbia.edu/pub/xmove/
-DISTNAME=	${PORTNAME}.2.0beta2
+DISTNAME=	${PORTNAME}.${PORTVERSION:S/b/beta/}
 
 MAINTAINER=	sec@42.org
 
@@ -20,12 +20,12 @@ USE_IMAKE=	yes
 
 MAN1=		xmove.1 xmovectrl.1
 
-post-extract:
-	${CP} ${FILESDIR}/Makefile ${WRKSRC}
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
-post-install:
-.for man in ${MAN1}
-	${INSTALL_MAN} ${WRKSRC}/man/man1/${man} ${X11BASE}/man/man1
-.endfor
+post-patch:
+	${CP} ${FILESDIR}/Imakefile ${WRKSRC}
+	(cd ${WRKSRC}; \
+	 ${CP} man/man1/xmove.1 xmove/xmove.man; \
+	 ${CP} man/man1/xmovectrl.1 xmovectrl/xmovectrl.man)
 
 .include <bsd.port.mk>
