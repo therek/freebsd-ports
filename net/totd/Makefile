@@ -2,14 +2,17 @@
 # Date created:        17 Nov 2000
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/totd/Makefile,v 1.2 2001/01/14 11:32:16 kris Exp $
+# $FreeBSD: ports/net/totd/Makefile,v 1.3 2001/05/06 04:20:11 kris Exp $
 
 PORTNAME=	totd
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.pasta.cs.uit.no/pub/Vermicelli/
 
 MAINTAINER=	kris@FreeBSD.org
+
+MAN8=		totd.8
 
 GNU_CONFIGURE=	YES
 
