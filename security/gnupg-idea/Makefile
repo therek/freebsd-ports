@@ -2,7 +2,7 @@
 # Date created:		10 May, 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.5 2000/10/02 14:23:03 kevlo Exp $
+# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.6 2000/11/06 06:42:01 knu Exp $
 #
 
 PORTNAME=	gnupg-idea
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/gpg:${PORTSDIR}/security/gnupg
 RESTRICTED=	"IDEA is Patented in the USA and many European countries"
 
 NO_WRKSUBDIR=	yes
-CFLAGS+=	-O2 -shared -fPIC -DIS_MODULE
+CFLAGS+=	-shared -fPIC -DIS_MODULE
 CFLAGS+=	-Wall -Wcast-align -Wshadow -Wstrict-prototypes
 PLIST=		${WRKDIR}/.PLIST.more
 
