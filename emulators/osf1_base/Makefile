@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.8 2000/03/22 00:27:30 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.9 2000/04/12 04:55:37 mharo Exp $
 #
 
 PORTNAME=	osf1_base
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm2cpio
 ONLY_FOR_ARCHS=	alpha
 RESTRICTED=	Not allowed to redistribute on our FTP site or CDROMs
 
-PREFIX=			/usr/compat/osf1
+PREFIX=			/compat/osf1
 EXTRACT_CMD=		rpm2cpio
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	|cpio -idum
