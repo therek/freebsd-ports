@@ -2,7 +2,7 @@
 # Date created:		14 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/converters/recode/Makefile,v 1.11 2000/06/16 08:18:40 sobomax Exp $
+# $FreeBSD: ports/converters/recode/Makefile,v 1.12 2000/06/16 21:50:26 asami Exp $
 #
 
 PORTNAME=	recode
@@ -13,9 +13,16 @@ MASTER_SITE_SUBDIR=	recode
 
 MAINTAINER=	torstenb@FreeBSD.org
 
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib -lintl"
 
 MAN1=		recode.1
+
+pre-patch:
+	@${PERL} -pi -e 's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>
