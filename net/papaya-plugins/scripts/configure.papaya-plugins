@@ -1,12 +1,12 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/papaya-plugins/scripts/configure.papaya-plugins,v 1.1 2001/12/19 09:48:32 petef Exp $
 
 tempfile=`mktemp -t checklist`
 
 if [ "${BATCH}" = "yes" ]; then
 	set \"common\"
 else
-	/usr/bin/dialog --title "Postfix configuration options" --clear \
+	/usr/bin/dialog --title "Papaya-plugins configuration options" --clear \
 			--checklist "\n\
 Please select desired options:" -1 -1 8 \
 common		"Enable common generic plugins" ON \
