@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.89 2001/08/06 13:34:15 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -17,7 +17,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt-new:${PORTSDIR}/devel/gettext-devel
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		PropList.2:${PORTSDIR}/devel/libPropList \
 		intl.1:${PORTSDIR}/devel/gettext \

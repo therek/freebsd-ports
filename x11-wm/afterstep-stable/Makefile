@@ -2,7 +2,7 @@
 # Date created:		1 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.45 2001/07/12 20:15:55 demon Exp $
+# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.46 2001/09/02 13:36:49 sf Exp $
 #
 
 PORTNAME=	afterstep
@@ -14,7 +14,7 @@ DISTNAME=	AfterStep-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		rplay.1:${PORTSDIR}/audio/rplay
 

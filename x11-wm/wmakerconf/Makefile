@@ -2,7 +2,7 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.28 2001/05/15 18:15:41 sobomax Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.29 2001/08/15 20:33:12 knu Exp $
 #
 
 PORTNAME=	wmakerconf
@@ -19,7 +19,7 @@ RUN_DEPENDS+=	bunzip2:${PORTSDIR}/archivers/bzip2
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		wraster.4:${PORTSDIR}/x11-wm/windowmaker
 
 USE_BZIP2=	yes

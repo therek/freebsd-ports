@@ -2,7 +2,7 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.53 2001/01/03 18:19:48 sf Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.54 2001/03/12 01:05:43 fenner Exp $
 #
 
 PORTNAME=	kaffe
@@ -14,7 +14,7 @@ MAINTAINER=	xaa+ports@madison-gurkha.com
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		ungif.5:${PORTSDIR}/graphics/libungif \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_LIBTOOL=	yes
 LIBTOOLFLAGS=
