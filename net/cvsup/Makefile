@@ -2,12 +2,12 @@
 # Date created:		7 August 1996
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cvsup/Makefile,v 1.43 2001/09/09 18:18:39 sobomax Exp $
 #
 
 PORTNAME=	cvsup
 PORTVERSION?=	16.1
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES=	net devel
 MASTER_SITES?=	ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
 		ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
