@@ -4,15 +4,17 @@
 # based on the OpenBSD port by Dug Song <dugsong@monkey.org>
 #
 # $OpenBSD: Makefile,v 1.7 2000/10/22 15:43:25 espie Exp $
-# $FreeBSD: ports/security/outguess/Makefile,v 1.2 2001/04/10 01:40:35 trevor Exp $
+# $FreeBSD: ports/security/outguess/Makefile,v 1.3 2001/05/02 01:00:56 trevor Exp $
 #
 
 PORTNAME=	outguess
 PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	http://www.outguess.org/ \
-		ftp://ftp.cryptoarchive.net/pub/cryptoarchive/mirrors/www-sites/www.outguess.org/ \
-		http://munitions.vipul.net/software/steganography/
+		http://www.internet2.edu/~shalunov/mirror/ \
+		http://cimarron.river.com/mirrors/www.outguess.org/ \
+		http://munitions.vipul.net/software/steganography/ \
+		http://the25200-1.gw.connect.com.au/security/steganography/
 
 MAINTAINER=	trevor@FreeBSD.org
 
