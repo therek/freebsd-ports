@@ -2,18 +2,18 @@
 # Date created:			26 Jan 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/delegate/Makefile,v 1.24 2000/02/22 07:55:43 max Exp $
+# $FreeBSD: ports/net/delegate/Makefile,v 1.25 2000/04/09 18:10:53 cpiazza Exp $
 #
 
 PORTNAME=	delegate
-PORTVERSION=	5.9.13
+PORTVERSION=	6.1.15
 CATEGORIES=	net www japanese
 MASTER_SITES=	ftp://etlport.etl.go.jp/pub/DeleGate/
-DISTNAME=	delegate5.9.13
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	max@FreeBSD.org
+
 NO_PACKAGE=	"Insecure program."
-MAKE_ENV=	PATH=$${PATH}:.
 IS_INTERACTIVE=	YES
 
 pre-fetch:
@@ -48,7 +48,7 @@ do-install:
 	   ${PREFIX}/share/examples/delegate
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/delegate
-	${INSTALL_DATA} ${WRKSRC}/doc/Manual.txt \
+	${INSTALL_DATA} ${WRKSRC}/doc/Manual.htm \
 	  ${PREFIX}/share/doc/delegate
 .endif
 	@${CAT} ${PKGDIR}/MESSAGE
