@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.41 2001/03/21 20:58:35 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xforms
@@ -12,7 +12,7 @@ CATEGORIES=	x11-toolkits graphics
 MASTER_SITES=	ftp://ncmir.ucsd.edu/pub/xforms/${MASTER_SITE_SUBDIR}/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	gena@NetVision.net.il
+MAINTAINER=	mikeh@FreeBSD.ORG
 
 LIB_DEPENDS=	c.3:${PORTSDIR}/misc/compat3x
 
