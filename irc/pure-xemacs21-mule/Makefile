@@ -2,13 +2,13 @@
 # Date Created:		4 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/pure-xemacs21-mule/Makefile,v 1.1 2001/05/06 10:41:44 knu Exp $
+# $FreeBSD$
 #
 
 MASTERDIR=	${.CURDIR}/../pure-emacs20
 
 EMACS_PORT_NAME=	xemacs21-mule
-LISPDIR=		lib/xemacs/site-packages/lisp/${PORTNAME}
+LISPDIR=		${EMACS_LIBDIR}/site-packages/lisp
 EMACS_ONLY=		"@comment "
 XEMACS_ONLY=		""
 ALL_TARGET=		package c
