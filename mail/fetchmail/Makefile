@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.116 2001/02/23 08:30:39 roam Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.117 2001/03/08 12:03:08 roam Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -10,7 +10,7 @@
 # want fetchmailconf to work, define WITH_X11
 
 PORTNAME=	fetchmail
-PORTVERSION=	5.7.2
+PORTVERSION=	5.7.4
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://www.tuxedo.org/~esr/fetchmail/ \
 		ftp://ftp.ccil.org/pub/esr/fetchmail/
@@ -22,12 +22,14 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	${LOCALBASE}/lib/python2.0/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 .endif
 
+USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-opie --enable-RPA --enable-POP2 --enable-SDPS \
 		--enable-nls --with-hesiod=no
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}"
+MAKE_ENV+=	${CONFIGURE_ENV}
 MAN1=		fetchmail.1
 MLINKS=		fetchmail.1 fetchmailconf.1
 
