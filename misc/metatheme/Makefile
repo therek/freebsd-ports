@@ -2,7 +2,7 @@
 # Date created:				25 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/metatheme/Makefile,v 1.2 2000/12/15 17:55:24 ade Exp $
+# $FreeBSD: ports/misc/metatheme/Makefile,v 1.3 2001/01/25 23:32:55 ade Exp $
 #
 
 PORTNAME=	metatheme
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.helixcode.com/pub/metatheme/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.7:${PORTSDIR}/www/gtkhtml \
+LIB_DEPENDS=	gtkhtml.8:${PORTSDIR}/www/gtkhtml \
 		gal.3:${PORTSDIR}/x11-toolkits/gal \
 		gnet.0:${PORTSDIR}/net/gnet
 

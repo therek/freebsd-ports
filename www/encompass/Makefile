@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/encompass/Makefile,v 1.10 2000/12/15 17:55:49 ade Exp $
+# $FreeBSD: ports/www/encompass/Makefile,v 1.11 2001/01/25 23:32:52 ade Exp $
 #
 
 PORTNAME=	encompass
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.one.net/pub/users/dobez/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.7:${PORTSDIR}/www/gtkhtml \
+LIB_DEPENDS=	gtkhtml.8:${PORTSDIR}/www/gtkhtml \
 		glibwww.1:${PORTSDIR}/www/glibwww \
 		gconf-1.1:${PORTSDIR}/devel/gconf \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
