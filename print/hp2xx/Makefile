@@ -3,7 +3,7 @@
 # Date created:         17 Jan 1999
 # Whom:                 Lars Koeller
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/hp2xx/Makefile,v 1.3 1999/08/31 01:44:52 peter Exp $
 #
 
 DISTNAME=	hp2xx-3.20-png
@@ -12,7 +12,7 @@ CATEGORIES=	print x11
 MASTER_SITES=	ftp://ftp.rz.uni-duesseldorf.de/pub/graphics/ \
 		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/
 
-MAINTAINER=	Lars.Koeller@Uni-Bielefeled.DE
+MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png
 

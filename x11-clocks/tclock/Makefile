@@ -3,7 +3,7 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/tclock/Makefile,v 1.2 1999/08/31 02:58:03 peter Exp $
 #
 
 DISTNAME=	tclock-1.0.1
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.uni-potsdam.de/pub/X11/tools/clocks/		\
 		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	Lars.Koeller@Uni-Bielefeled.DE
+MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
