@@ -2,7 +2,7 @@
 # Date created:		June 29 1998
 # Whom:			barnhart@genetics.wustl.edu
 #
-# $FreeBSD: ports/biology/hmmer/Makefile,v 1.6 2000/01/29 20:01:35 mharo Exp $
+# $FreeBSD: ports/biology/hmmer/Makefile,v 1.7 2000/04/08 22:04:37 mharo Exp $
 #
 
 PORTNAME=	hmmer
@@ -30,7 +30,7 @@ test:
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/hmmer
-	${INSTALL_MAN} ${WRKSRC}/Userguide/Userguide.ps ${PREFIX}/share/doc/hmmer
+	${INSTALL_DATA} ${WRKSRC}/Userguide/Userguide.ps ${PREFIX}/share/doc/hmmer
 .endif
 	@ ${CAT} ${PKGMESSAGE}
 
