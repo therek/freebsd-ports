@@ -1,4 +1,4 @@
-# $FreeBSD: src/etc/mtree/BSD.x11-4.dist,v 1.24.2.1 2004/12/07 02:53:49 kris Exp $
+# $FreeBSD: ports/x11-servers/xorg-server/files/BSD.x11-xorg.dist,v 1.1 2005/03/17 23:22:12 lesi Exp $
 #
 # Please see the file src/etc/mtree/README before making changes to this file.
 #
@@ -380,6 +380,10 @@
                 ..
             ..
             ms
+                LC_MESSAGES
+                ..
+            ..
+            mt
                 LC_MESSAGES
                 ..
             ..
