@@ -1,9 +1,9 @@
 # New ports collection makefile for:	gnats
-# Version required:     3.107-beta
+# Version required:     3.112.1
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.23 1999/08/25 05:21:13 obrien Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.24 1999/09/27 19:58:51 pst Exp $
 #
 
 DISTNAME=	gnats-3.112.1
