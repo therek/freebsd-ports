@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.440 2001/02/21 05:00:54 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.441 2001/02/21 09:17:05 trevor Exp $
 #
     SUBDIR += zziplib
 
@@ -196,13 +196,6 @@
     SUBDIR += mingw-bin-msvcrt
     SUBDIR += mingw-binutils
     SUBDIR += mingw-gcc
-    SUBDIR += mips64orion-rtems-binutils
-    SUBDIR += mips64orion-rtems-chill
-    SUBDIR += mips64orion-rtems-g77
-    SUBDIR += mips64orion-rtems-gcc
-    SUBDIR += mips64orion-rtems-gcj
-    SUBDIR += mips64orion-rtems-gdb
-    SUBDIR += mips64orion-rtems-objc
     SUBDIR += mips-rtems-binutils
     SUBDIR += mips-rtems-chill
     SUBDIR += mips-rtems-g77
