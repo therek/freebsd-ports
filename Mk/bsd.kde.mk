@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.26 2003/05/19 19:43:23 lioux Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.27 2003/06/23 18:14:38 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -33,11 +33,6 @@ USE_QT_VER=		2
 pre-everything::
 	@${ECHO} ">>> Warning:  this port needs to be updated as it uses the old-style USE_QT variable!"
 .endif # defined(USE_QT)
-.if defined(USE_QT2)
-USE_QT_VER=		2
-pre-everything::
-	@${ECHO} ">>> Warning:  this port needs to be updated as it uses the old-style USE_QT2 variable!"
-.endif # defined(USE_QT2)
 
 # tagged MASTER_SITE_KDE_kde
 kmaster=				${MASTER_SITE_KDE:S@%/@%/:kde@g}
