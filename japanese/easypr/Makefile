@@ -3,7 +3,7 @@
 # Date created:		99/10/19
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/easypr/Makefile,v 1.1.1.1 1999/10/22 05:30:46 taoka Exp $
 #
 
 DISTNAME=	print-0.25
@@ -16,7 +16,7 @@ MAINTAINER=	taoka@FreeBSD.org
 RUN_DEPENDS=	e2ps:${PORTSDIR}/japanese/e2ps \
 		wish4.2jp:${PORTSDIR}/japanese/tk42 \
 		psnup:${PORTSDIR}/print/psutils-a4 \
-		giftopnm::${PORTSDIR}/graphics/netpbm
+		giftopnm:${PORTSDIR}/graphics/netpbm
 
 do-build:
 	${ECHO} '#!${PREFIX}/bin/wish4.2jp' > ${WRKSRC}/easypr
