@@ -1,12 +1,12 @@
 # New ports collection makefile for: gif2png
-# Version required:    	2.2.5
+# Version required:    	2.3.0
 # Date created:         30 Aug 1999
 # Whom:                 saper@system.pl
 #
-# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.4 1999/11/01 05:54:57 steve Exp $
+# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.5 1999/12/23 18:53:04 billf Exp $
 #
 
-DISTNAME=       gif2png-2.2.5
+DISTNAME=       gif2png-2.3.0
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.tuxedo.org/~esr/gif2png/
 
