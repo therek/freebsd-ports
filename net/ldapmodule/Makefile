@@ -2,7 +2,7 @@
 # Date created:		05.Jul 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/ldapmodule/Makefile,v 1.8 2001/09/13 03:47:37 dinoex Exp $
+# $FreeBSD$
 
 PORTNAME=	ldapmodule
 PORTVERSION=	1.10alpha3
@@ -18,7 +18,8 @@ LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
-USE_PYTHON=	yes
+# BROKEN for python 2.2
+PYTHON_VERSION=	python2.1
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-ldap=${LOCALBASE}
 WRKSRC=		${WRKDIR}/${DISTNAME:S=-src==}
