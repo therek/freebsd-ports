@@ -3,7 +3,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.2 1999/12/09 15:34:45 asami Exp $
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.3 2000/01/09 09:46:20 cpiazza Exp $
 #
 
 DISTNAME=	xshipwars-client-1.23
@@ -27,8 +27,8 @@ post-install:
 	@ ${MKDIR} ${PREFIX}/share/xshipwars
 	@ ${CP} -R ${WRKSRC}/../../images \
 	   ${PREFIX}/share/xshipwars/
-	@ chmod -R 744 ${PREFIX}/share/xshipwars
-	@ chmod -R a+X ${PREFIX}/share/xshipwars
+	@ ${CHMOD} -R 744 ${PREFIX}/share/xshipwars
+	@ ${CHMOD} -R a+X ${PREFIX}/share/xshipwars
 	@ ${ECHO} "===>   Installing Documentation "
 	@ ${MKDIR} ${PREFIX}/share/doc/xshipwars
 	@${INSTALL_DATA} ${WRKSRC}/../README \

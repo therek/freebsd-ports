@@ -3,7 +3,7 @@
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/glasteroids/Makefile,v 1.1.1.1 1999/12/23 21:39:30 jedgar Exp $
 #
 
 DISTNAME=	Glasteriods
@@ -32,8 +32,8 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/gameText.txf ${PREFIX}/share/glasteroids
 	@ cd ${WRKSRC}; tar -cf - scores.txt textures | \
 		( cd ${PREFIX}/share/glasteroids; tar -xf - )
-	@ chmod a+rx ${PREFIX}/share/glasteroids/textures
-	@ chmod a+rw ${PREFIX}/share/glasteroids/scores.txt
+	@ ${CHMOD} a+rx ${PREFIX}/share/glasteroids/textures
+	@ ${CHMOD} a+rw ${PREFIX}/share/glasteroids/scores.txt
 
 post-install:
 .if !defined(NOPORTDOCS)

@@ -3,7 +3,7 @@
 # Date created:				Nov 6th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xracer/Makefile,v 1.1.1.1 1999/11/21 19:18:35 cpiazza Exp $
+# $FreeBSD: ports/games/xracer/Makefile,v 1.2 2000/01/09 10:00:46 cpiazza Exp $
 #
 
 DISTNAME=		xracer-0.94
@@ -27,8 +27,8 @@ post-install:
 	@ ${ECHO} "===>   Installing Tracks and Sound"
 	@ ${CP} -R ${WRKSRC}/../xracer-data \
 	   ${PREFIX}/lib/xracer
-	@ chmod -R 744 ${PREFIX}/lib/xracer
-	@ chmod -R a+X ${PREFIX}/lib/xracer
+	@ ${CHMOD} -R 744 ${PREFIX}/lib/xracer
+	@ ${CHMOD} -R a+X ${PREFIX}/lib/xracer
 	@ ${ECHO} "===>   Installing Documentation"
 	@ ${MKDIR} ${PREFIX}/share/doc/xracer
 	@${INSTALL_DATA} ${WRKSRC}/README \
