@@ -2,7 +2,7 @@
 # Date created:		13 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-libxml/Makefile,v 1.1 2001/04/07 08:01:40 will Exp $
 #
 
 PORTNAME=	libxml
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 DISTNAME=	libxml-perl-${PORTVERSION}
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/DOM.pm:${PORTSDIR}/textproc/p5-XML-DOM

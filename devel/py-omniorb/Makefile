@@ -2,7 +2,7 @@
 # Date created:		14 November 2000
 # Whom:			Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-omniorb/Makefile,v 1.1 2001/03/28 14:38:50 nbm Exp $
 #
 
 PORTNAME=	omniorb
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.uk.research.att.com/pub/omniORB/omniORBpy/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	omniORBpy_${PORTVERSION:S/./_/g}
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 LIB_DEPENDS=	omniORB3.0:${PORTSDIR}/devel/omniORB
 RUN_DEPENDS=	omniidl:${PORTSDIR}/devel/omniORB

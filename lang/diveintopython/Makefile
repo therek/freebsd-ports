@@ -2,7 +2,7 @@
 # Date created:		15 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.3 2001/05/30 14:21:11 kevlo Exp $
+# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.4 2001/06/10 15:46:25 kevlo Exp $
 #
 
 PORTNAME=	diveintopython
@@ -22,7 +22,7 @@ EXTRACT_ONLY=	${DISTNAME}-html-${VERSIONSTR}.tgz \
 		${DISTNAME}-pdf-${VERSIONSTR}.tgz \
 		${DISTNAME}-text-${VERSIONSTR}.tgz
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 NO_BUILD=	YES
 DIPDIR=		${PREFIX}/share/doc/diveintopython

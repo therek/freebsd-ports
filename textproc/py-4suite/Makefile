@@ -2,7 +2,7 @@
 # Date created:		16 March 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.1 2001/03/23 00:54:36 jeh Exp $
+# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.2 2001/05/11 12:24:19 jeh Exp $
 #
 
 PORTNAME=	4suite
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.4suite.org/pub/4Suite/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	4Suite-${PORTVERSION}
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 BUILD_DEPENDS=	${PYDISTUTILS} \
 		${PYXML}

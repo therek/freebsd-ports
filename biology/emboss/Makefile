@@ -2,7 +2,7 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.21 2001/05/30 14:34:48 kevlo Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.22 2001/06/15 12:11:33 wjv Exp $
 #
 
 PORTNAME=	emboss
@@ -16,7 +16,7 @@ DISTFILES=	${PORTNAME:U}-${PORTVERSION}${EXTRACT_SUFX}
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${PORTNAME:U}-${PORTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 

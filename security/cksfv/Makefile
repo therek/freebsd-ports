@@ -2,7 +2,7 @@
 # Date created:		18 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/security/cksfv/Makefile,v 1.1 2000/10/28 12:44:14 jeh Exp $
+# $FreeBSD: ports/security/cksfv/Makefile,v 1.2 2001/01/03 10:20:34 kevlo Exp $
 #
 
 PORTNAME=	cksfv
@@ -10,7 +10,7 @@ PORTVERSION=	1.2
 CATEGORIES=	security
 MASTER_SITES=	http://www.fodder.org/cksfv/
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 BUILD_WRKSRC=	${WRKSRC}/src
 INSTALL_WRKSRC=	${BUILD_WRKSRC}

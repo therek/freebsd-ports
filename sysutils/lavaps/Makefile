@@ -2,7 +2,7 @@
 # Date created:		11-Oct-99
 # Whom:			johnh@isi.edu
 #
-# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.11 2001/01/19 23:57:02 roam Exp $
+# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.12 2001/06/05 12:47:32 kevlo Exp $
 #
 
 PORTNAME=	lavaps
@@ -10,7 +10,7 @@ PORTVERSION=	1.17
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/LAVAPS/
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 

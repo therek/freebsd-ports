@@ -2,7 +2,7 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.15 2001/02/28 13:12:30 kevlo Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.16 2001/03/23 00:47:52 jeh Exp $
 #
 
 PORTNAME=		xml
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	pyxml
 PKGNAMEPREFIX=		${PYTHON_PKGNAMEPREFIX}
 DISTNAME=		PyXML-${PORTVERSION}
 
-MAINTAINER=		johann@egenetics.com
+MAINTAINER=		wjv@FreeBSD.org
 
 BUILD_DEPENDS=		${PYDISTUTILS}
 

@@ -2,7 +2,7 @@
 # Date created:		29 January 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/fasta3/Makefile,v 1.4 2001/03/22 09:04:47 sobomax Exp $
+# $FreeBSD: ports/biology/fasta3/Makefile,v 1.5 2001/05/07 12:16:33 jeh Exp $
 #
 
 PORTNAME=	fasta3
@@ -12,7 +12,7 @@ MASTER_SITES=	http://ftp.virginia.edu/pub/fasta/
 DISTNAME=	fasta${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.shar.Z
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 NO_CDROM=	May not be sold or incorporated into a commercial product
 WRKSRC=		${WRKDIR}/fasta3

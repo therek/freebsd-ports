@@ -2,7 +2,7 @@
 # Date created:		19 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.11 2001/03/22 13:36:50 tg Exp $
+# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.12 2001/05/03 14:43:13 kevlo Exp $
 #
 
 PORTNAME=	martel
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.biopython.org/~dalke/Martel/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Martel-${PORTVERSION}
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	wjv@FreeBSD.org
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/mx/TextTools/__init__.py:${PORTSDIR}/lang/py-mx-base
 
