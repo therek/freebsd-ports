@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/graphics/mplayer-skins/scripts/choice,v 1.2 2002/03/26 22:33:01 lioux Exp $
+# $FreeBSD: ports/multimedia/mplayer-skins/scripts/choice,v 1.3 2002/06/11 13:19:22 lioux Exp $
 # based on configure from mplayer-skins by Andreas Klemm <andreas@FreeBSD.org>
 
 if [ "$BATCH" != "yes" ]; then
@@ -21,17 +21,18 @@ only the skins you really want. \n\n\
   "BlueHeart"	"MPlayer conversion of a BlueHeart XMMS skin"	OFF \
   "CornerMP"	"CornerMP"					OFF \
   "CornerMP-agua"	"CornerMP agua"				OFF \
-  "CubicPlayer"	"CubicPlayer skin"				OFF \
   "Cyrus"	"Cyrus skin from XMMS"				OFF \
+  "gnome"	"Based on the GNOME logo"			OFF \
+  "hayraphon"	"no comment"					OFF \
   "hwsw-skin"	"no comment"					OFF \
   "Mentalic"	"Sharp and shiny"				OFF \
   "MidnightLove"	"MPlayer version of WinAMP/XMMS Rei Ayanami's skin"		OFF \
-  "Netscape4"	"Netscape \"unatkozok\" skin"			OFF \
   "Neutron"	"VERY nice skin!"				OFF \
   "Phony"	"Look-and-feel of a desktop DVD player"		OFF \
   "Plastic"	"Remote control-like skin with plastic feeling"	OFF \
   "Proton"	"Proton"					OFF \
   "Slim"	"Slim"						OFF \
+  "trium"	"Based on a mobile phone"			OFF \
   "WindowsMediaPlayer6"	"no comment"				OFF \
   "Xanim"	"xanim \"feeling\""					OFF \
   "Xine-LCD"	"MPlayer conversion of Xine's LCD skin"		OFF \
