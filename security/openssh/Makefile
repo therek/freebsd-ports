@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.43 2000/02/10 12:23:49 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.44 2000/02/12 23:55:33 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -34,7 +34,7 @@ CRYPTOLIBS=	-L${OPENSSLLIB} -lcrypto
 CRYPTOLIBS+=	-lRSAglue -L${LOCALBASE}/lib -lrsaref
 .endif
 # Here, MANDIR is concetenated to DESTDIR which all forms the man install dir...
-MAKE_ENV=	DESTDIR=${PREFIX} MANDIR=/man/man CRYPTOLIBS="${CRYPTOLIBS}"
+MAKE_ENV+=	DESTDIR=${PREFIX} MANDIR=/man/man CRYPTOLIBS="${CRYPTOLIBS}"
 .if ${OSVERSION} < 400014
 MAKE_ENV+=	COMPAT_GETADDRINFO=yes
 .else
