@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.97 2002/08/24 23:55:57 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.98 2002/08/25 00:19:32 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -278,9 +278,9 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.chg.ru/pub/lang/ruby/%SUBDIR%/
 
 MASTER_SITE_SOURCEWARE+= \
-	http://mirrors.rcn.net/mirrors/sources.redhat.com/%SUBDIR%/ \
+	http://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
 	ftp://mirrors.rcn.net/mirrors/sources.redhat.com/%SUBDIR%/ \
-	ftp://ftp.funet.fi/pub/mirrors/sourceware.cygnus.com/pub/%SUBDIR%/ \
+	ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/%SUBDIR%/ \
 	ftp://ftp.pvv.ntnu.no/pub/cygnus/sourceware.cygnus.com/%SUBDIR%/ \
 	ftp://ftp1.sinica.edu.tw/pub3/CYGNUS/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/ \
