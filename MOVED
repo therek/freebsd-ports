@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.585 2004/12/13 04:58:08 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.586 2004/12/13 05:10:36 mezz Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1353,3 +1353,4 @@ japanese/gnumeric|math/gnumeric|2004-12-11|obsoleted by gtk2 version
 sysutils/bacula|sysutils/bacula-server|2004-12-12|split into client and server
 x11-toolkits/gtkextra--||2004-12-12|removed obsolete port
 games/gnomoku||2004-12-12|removed obsolete port
+net/gabber||2004-12-12|removed obsolete port
