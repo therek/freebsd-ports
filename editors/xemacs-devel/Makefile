@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.37 2000/01/07 21:17:34 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.38 2000/01/07 22:19:00 gj Exp $
 #
 
 DISTNAME=	xemacs-${XEMACS_VER}
@@ -18,13 +18,11 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-elc${EXTRACT_SUFX} ${DISTNAME}
 
 MAINTAINER=	gj@FreeBSD.org
 
-.if !defined(MULE_COMMON)
 RUN_DEPENDS+=    ${PREFIX}/lib/xemacs/xemacs-packages/etc/enriched.doc:${PORTSDIR}/editors/xemacs-packages
 LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
-.endif
 
 XEMACS_REL=	21.1
 XEMACS_VER=	21.1.8
