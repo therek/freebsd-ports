@@ -3,7 +3,7 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.18 1999/08/31 06:40:31 mharo Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.19 1999/09/02 05:52:13 mharo Exp $
 #
 
 DISTNAME=	gqmpeg-0.6.3
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	nacai@iname.com
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_X_PREFIX=	yes
 ALL_TARGET=	gqmpeg

@@ -3,7 +3,7 @@
 # Date created:        2 January 1997
 # Whom:                Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.24 1999/09/10 20:46:31 taoka Exp $
+# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.25 1999/10/06 04:16:25 nakai Exp $
 #
 
 DISTNAME=	qvwm-1.1.1
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://www.qvwm.org/pub/qvwm/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-#LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_IMAKE=	yes
 MAN1=		qvwm.1
