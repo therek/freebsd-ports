@@ -1,8 +1,8 @@
-# New ports collection makefile for:    tclock
+# New ports collection makefile for:    syncal
 # Date created:		So   7 Feb 1999 20:50:43 MET
-# Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
+# Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/palm/syncal/Makefile,v 1.8 2000/09/11 20:09:10 fenner Exp $
+# $FreeBSD: ports/palm/syncal/Makefile,v 1.9 2000/12/22 19:53:30 lkoeller Exp $
 #
 
 PORTNAME=	syncal
