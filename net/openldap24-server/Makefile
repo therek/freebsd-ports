@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.23 2000/10/31 15:03:48 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.24 2000/11/02 01:44:43 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -38,14 +38,23 @@ CONFIGURE_ARGS=	--localstatedir=/var/run \
 CONFIGURE_ARGS+=	--enable-wrappers
 .endif
 
-.if defined(WITH_DB2)
-BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db/
+CPPFLAGS+=	-I${LOCALBASE}/include
+LDFLAGS+=	-L${LOCALBASE}/lib
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 -D_THREAD_SAFE" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+.if defined(WITH_DB2)
+BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db
+CPPFLAGS+=	-I${LOCALBASE}/include/db2 -D_THREAD_SAFE
 CONFIGURE_ARGS+=	--enable-ldbm \
 			--with-ldbm-api=db2
 .endif
+
+.if defined(WITH_SASL)
+LIB_DEPENDS=	sasl.8:${PORTSDIR}/security/cyrus-sasl
+CPPFLAGS+=	-I${LOCALBASE}/include/sasl
+.endif
+
+CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" \
+		LDFLAGS="${LDFLAGS}"
 
 BINS=		bin/ldapadd \
 		bin/ldapdelete \
