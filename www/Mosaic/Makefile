@@ -2,7 +2,7 @@
 # Date created:         7 August 1995
 # Whom:                 torstenb
 #
-# $FreeBSD: ports/www/Mosaic/Makefile,v 1.30 2001/01/16 17:32:51 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mosaic
@@ -23,6 +23,19 @@ WRKSRC=		${WRKDIR}/Mosaic-src
 ALL_TARGET=	bsdi
 USE_X_PREFIX=	yes
 USE_XPM=	yes
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+	${WRKSRC}/libXmx/Xmx.h ${WRKSRC}/libdtm/dtm.c \
+	${WRKSRC}/libdtm/dtm.c ${WRKSRC}/libdtm/dtm.c \
+	${WRKSRC}/libdtm/dtm.c ${WRKSRC}/libdtm/dtminit.c \
+	${WRKSRC}/libdtm/dtminit.c ${WRKSRC}/libdtm/dtminit.c \
+	${WRKSRC}/libdtm/dtminit.c ${WRKSRC}/libdtm/dtmnserv.c \
+	${WRKSRC}/libdtm/dtmnserv.c ${WRKSRC}/libhtmlw/HTML-PSformat.c \
+	${WRKSRC}/libhtmlw/HTML-PSformat.c ${WRKSRC}/libwww2/HTUtils.h \
+	${WRKSRC}/libwww2/HTUtils.h ${WRKSRC}/src/mosaic.h \
+	${WRKSRC}/src/mosaic.h ${WRKSRC}/src/proxy-dialogs.c \
+	${WRKSRC}/src/proxy-dialogs.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/Mosaic ${PREFIX}/bin
