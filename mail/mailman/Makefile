@@ -2,19 +2,20 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD: ports/mail/mailman/Makefile,v 1.10 2001/02/26 09:13:47 demon Exp $
+# $FreeBSD: ports/mail/mailman/Makefile,v 1.11 2001/03/12 09:47:36 demon Exp $
 #
 
 PORTNAME=	mailman
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	mail
-MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=   ${MASTER_SITE_GNU} \
+		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	mailman
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	demon@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13
+#RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS= --prefix=${MAILMANDIR} \
