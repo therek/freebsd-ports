@@ -2,12 +2,12 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/cflowd/Makefile,v 1.4 2001/03/13 22:20:15 andreas Exp $
+# $FreeBSD: ports/net/cflowd/Makefile,v 1.5 2001/03/17 11:30:07 andreas Exp $
 #
 
 PORTNAME=	cflowd
 PORTVERSION=	2-1-b1
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.caida.org/pub/cflowd/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
@@ -36,5 +36,9 @@ pre-everything:
 	@${ECHO} "you can compile cflowd with patches for FlowScan by typing:"
 	@${ECHO} "make CFLOWD_FLOWSCAN_PATCH=yes"
 .endif
+
+post-install:
+	${INSTALL_SCRIPT} ${FILESDIR}/cflowd.sh \
+		${PREFIX}/etc/rc.d/cflowd.sh.sample
 
 .include <bsd.port.mk>
