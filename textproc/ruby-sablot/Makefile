@@ -2,12 +2,11 @@
 # Date created:		9 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-sablot/Makefile,v 1.6 2001/08/25 04:57:56 petef Exp $
+# $FreeBSD: ports/textproc/ruby-sablot/Makefile,v 1.7 2001/09/17 17:54:24 knu Exp $
 #
 
 PORTNAME=	sablot
-PORTVERSION=	0.5.0
-PORTREVISION=	2
+PORTVERSION=	0.5.2
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.rubycolor.org/arc/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -27,15 +26,22 @@ CONFIGURE_ARGS=	--with-sablot-lib="${LOCALBASE}" \
 		--with-expat="${LOCALBASE}"
 INSTALL_TARGET=	site-install
 
-DOCS=		README		doc/*
+DOCS_EN=	README	\
+		doc/sablot.html \
+		doc/sablot.rd
+DOCS_JA=	doc/sablot_ja.html \
+		doc/sablot.rd.ja
 
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${CP} -R ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
-.for f in ${DOCS}
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+.for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+.endfor
+.for f in ${DOCS_JA}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endfor
 .endif
 
