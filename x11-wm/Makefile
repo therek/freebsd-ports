@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.28 2000/01/16 15:59:27 vanilla Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.29 2000/01/27 11:09:27 nakai Exp $
 #
 
     SUBDIR += 9menu
@@ -18,6 +18,7 @@
     SUBDIR += fvwm2-i18n
     SUBDIR += fvwm95
     SUBDIR += fvwm95-i18n
+    SUBDIR += gnome2wmaker
     SUBDIR += gwm
     SUBDIR += icewm
     SUBDIR += iconmaker
