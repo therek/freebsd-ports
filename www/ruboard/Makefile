@@ -2,7 +2,7 @@
 # Date created:                        5 October 1998
 # Whom:                                Andrew Maltsev <am@amsoft.ru>
 #
-# $FreeBSD: ports/www/ruboard/Makefile,v 1.5 2001/01/16 17:33:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ruboard
@@ -12,5 +12,8 @@ CATEGORIES=	www russian
 MASTER_SITES=	ftp://ftp.amsoft.ru/software/ruboard/
 
 MAINTAINER=	am@amsoft.ru
+
+USE_PERL5_BUILD=yes
+USE_PERL5_RUN	=yes
 
 .include <bsd.port.mk>
