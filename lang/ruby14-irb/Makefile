@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/irb/Makefile,v 1.6 2000/04/12 06:19:05 obrien Exp $
+# $FreeBSD: ports/lang/irb/Makefile,v 1.7 2000/08/12 20:09:21 knu Exp $
 #
 
 PORTNAME=	irb
@@ -15,6 +15,7 @@ MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \
 		ftp://ftp.krnet.ne.jp/pub/ruby/contrib/ \
 		ftp://mirror.nucba.ac.jp/mirror/ruby/contrib/
 EXTRACT_SUFX=	.tgz
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@big.or.jp
 
