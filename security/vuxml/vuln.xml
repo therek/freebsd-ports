@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.122 2004/06/14 21:05:15 fjoe Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.123 2004/06/21 20:04:18 pav Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -1040,7 +1040,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
 	<name>linux-png</name>
-	<range><lt>1.2.2</lt></range>
+	<range><le>1.2.2</le></range>
       </package>
       <package>
 	<name>png</name>
@@ -1059,6 +1059,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <references>
       <cvename>CAN-2004-0421</cvename>
       <url>http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=120508</url>
+      <url>http://rhn.redhat.com/errata/RHSA-2004-181.html</url>
+      <url>http://www.osvdb.org/5726</url>
+      <bid>10244</bid>
     </references>
     <dates>
       <discovery>2004-04-29</discovery>
