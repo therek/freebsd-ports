@@ -2,7 +2,7 @@
 # Date created:		29 Jul 2001
 # Whom:			Christopher Rued
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/xsb/Makefile,v 1.1 2001/08/18 08:42:17 ijliao Exp $
 #
 
 PORTNAME=	XSB
@@ -16,6 +16,7 @@ MAINTAINER=	c.rued@xsb.com
 WRKSRC=		${WRKDIR}/XSB/build
 
 PLIST_SUB+=     MACHINE_ARCH=${MACHINE_ARCH} OPSYS=${OPSYS:S/BSD/bsd/g:S/F/f/g:S/O/o/g:S/N/n/g}
+USE_GMAKE=	yes
 
 do-build:
 	@ cd ${WRKSRC} ; \
