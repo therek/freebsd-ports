@@ -2,15 +2,15 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner <nbm@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/autorespond/Makefile,v 1.3 2001/01/03 10:33:10 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	autorespond
-PORTVERSION=	1.0.0
+PORTVERSION=	2.0.2
 CATEGORIES=	mail
-MASTER_SITES=	http://www.vpopmail.cx/
+MASTER_SITES=	http://www.inter7.com/devel/
 
-MAINTAINER=	nbm@FreeBSD.org
+MAINTAINER=	roam@FreeBSD.org
 
 do-build:
 	@cd ${WRKSRC} && ${MAKE} autorespond
