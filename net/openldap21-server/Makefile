@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1998
 # Whom:                 Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.16 2000/07/07 18:30:16 steve Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.17 2000/08/21 10:07:32 sobomax Exp $
 #
 
 PORTNAME=	openldap
@@ -42,6 +42,9 @@ CONFIGURE_ARGS+= --enable-wrappers
 pre-build:
 	cd ${WRKSRC} ; make depend
 
+post-build:
+	${SED} 's,@@PREFIX@@,${PREFIX},g' ${FILESDIR}/slapd.sh >${WRKDIR}/slapd.sh
+
 post-install:
 	strip ${PREFIX}/bin/ldapadd ${PREFIX}/bin/ldapdelete \
 	${PREFIX}/bin/ldapmodrdn ${PREFIX}/bin/ldapsearch ${PREFIX}/bin/ud \
@@ -54,5 +57,6 @@ post-install:
 	${PREFIX}/sbin/ldif2id2children ${PREFIX}/sbin/ldif2id2entry \
 	${PREFIX}/sbin/ldif2index ${PREFIX}/sbin/ldif2ldbm \
 	${PREFIX}/bin/ldapmodify ${PREFIX}/bin/ldappasswd
+	${INSTALL_SCRIPT} ${WRKDIR}/slapd.sh ${PREFIX}/etc/rc.d/slapd.sh.sample
 
 .include <bsd.port.post.mk>
