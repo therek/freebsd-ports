@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.343 2001/08/22 06:11:03 dinoex Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.344 2001/08/25 07:17:59 kris Exp $
 #
 
     SUBDIR += 4va
@@ -180,6 +180,7 @@
     SUBDIR += p5-GD-TextUtil
     SUBDIR += p5-Gimp
     SUBDIR += p5-Graphics-ColorNames
+    SUBDIR += p5-Image-Info
     SUBDIR += p5-Image-Grab
     SUBDIR += p5-Image-Size
     SUBDIR += p5-Imager
