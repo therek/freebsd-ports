@@ -3,7 +3,7 @@
 # Date created:		21 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/znibbles/Makefile,v 1.2 1999/11/14 02:41:52 steve Exp $
+# $FreeBSD: ports/games/znibbles/Makefile,v 1.3 2000/02/26 21:13:27 ade Exp $
 #
 
 DISTNAME=	znibbles-0.0.7
@@ -17,6 +17,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
+REQUIRES_MOTIF=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
