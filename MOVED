@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.176 2003/07/24 02:50:20 kuriyama Exp $
+# $FreeBSD: ports/MOVED,v 1.177 2003/07/28 15:07:45 oliver Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -421,4 +421,4 @@ korean/acroread-korfont|korean/acroread5-korfont|2003-07-24|security vulnerabili
 chinese/acroread-chsfont|chinese/acroread5-chsfont|2003-07-24|security vulnerability
 chinese/acroread-chtfont|chinese/acroread5-chtfont|2003-07-24|security vulnerability
 x11-wm/xfwm4|x11-wm/xfce4-wm|2003-07-27|rename it to be consistent with other xfce4 ports
-
+misc/shc||2003-07-30|broken for nearly a year
