@@ -1,9 +1,9 @@
-@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.5 2005/02/05 18:46:16 pav Exp $
+@comment $FreeBSD: ports/security/osiris/pkg-plist,v 1.6 2005/02/08 15:41:07 pav Exp $
 %%CLI%%sbin/osiris
 %%OSIRISD%%sbin/osirisd
 %%OSIRISMD%%sbin/osirismd
-%%OSIRISD%%etc/rc.d/osirisd.sh.sample
-%%OSIRISMD%%etc/rc.d/osirismd.sh.sample
+%%OSIRISD%%etc/rc.d/osirisd.sh
+%%OSIRISMD%%etc/rc.d/osirismd.sh
 @exec mkdir -p %D/osiris
 @exec chown osiris:osiris %D/osiris
 %%OSIRISMD%%osiris/configs/default.aix
