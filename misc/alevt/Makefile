@@ -1,14 +1,15 @@
 # New ports collection makefile for:	alevt
-# Version required:	1.4.9
+# Version required:	1.5.0
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/alevt/Makefile,v 1.2 1999/08/25 07:21:04 obrien Exp $
 #
 
-DISTNAME=	alevt-1.4.9
+DISTNAME=	alevt-1.5.0
 CATEGORIES=	misc
-MASTER_SITES=	http://user.exit.de/froese/alevt/
+MASTER_SITES=	http://user.exit.de/froese/alevt/  \
+		ftp://metalab.unc.edu/pub/Linux/apps/video/
 
 MAINTAINER=	roger@freebsd.org
 
