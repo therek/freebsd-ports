@@ -2,7 +2,7 @@
 # Date created:				14 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-game/Makefile,v 1.5 2001/04/06 11:17:26 sobomax Exp $
+# $FreeBSD: ports/devel/py-game/Makefile,v 1.6 2001/05/03 08:55:08 sobomax Exp $
 #
 
 PORTNAME=	py-game
@@ -43,5 +43,13 @@ do-build:
 
 do-install:
 	@${SETUP_CMD} setup.py install
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/examples/py-game
+	${TAR} -C ${WRKSRC}/examples -cf - . | \
+		${TAR} --unlink -C ${PREFIX}/share/examples/py-game -xf -
+	${MKDIR} ${PREFIX}/share/doc/py-game
+	${TAR} -C ${WRKSRC}/docs -cf - . | \
+		${TAR} --unlink -C ${PREFIX}/share/doc/py-game -xf -
+.endif
 
 .include <bsd.port.post.mk>
