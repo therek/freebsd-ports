@@ -1,12 +1,12 @@
 # New ports collection makefile for:   soundtracker
-# Version required:    0.3.8
+# Version required:    0.3.10
 # Date created:        28 November 1999
 # Whom:                kzentner
 #
-# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.1 1999/12/25 15:35:41 steve Exp $
+# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.2 2000/01/09 23:24:19 ade Exp $
 #
 
-DISTNAME=	soundtracker-0.3.8
+DISTNAME=	soundtracker-0.3.10
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.3/
 
@@ -14,14 +14,26 @@ MAINTAINER=	kzentner@u.washington.edu
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
+.if defined(USE_GNOME)
+LIB_DEPENDS+=	gnome.3:${PORTSIDR}/x11/gnomelibs
+.endif
+
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GNU_CONFIGURE=	YES
 
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
+USE_X_PREFIX=   yes
+
 .if defined(USE_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
+PLIST=			${PKGDIR}/PLIST.gnome
+.else
+CONFIGURE_ARGS+=	--disable-gnome
 .endif
+
+CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
+			LIBS="-L${LOCALBASE}/lib"
 
 post-install:
 	@strip ${PREFIX}/bin/soundtracker
