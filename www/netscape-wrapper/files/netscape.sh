@@ -4,10 +4,10 @@
 #     (c) 1998,1999 Dave Cinege, H. Peter Anvin, and Red Hat, Inc.
 #         2000 Akinori MUSHA <knu@FreeBSD.org>, modified for FreeBSD.
 # 
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape-wrapper/files/netscape.sh,v 1.1.1.1 2000/05/08 19:02:55 knu Exp $
 #
 
-prefix=$(dirname $(dirname $0))
+prefix='%%PREFIX%%'
 
 lockfile=$HOME/.netscape/lock
 defs="-irix-session-management"
