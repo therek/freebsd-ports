@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.100 2000/01/27 13:04:22 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.101 2000/01/27 13:05:20 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -39,6 +39,9 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.blatzheim.com/pub/mod_ssl/ \
 		ftp://ftp.fu-berlin.de/unix/security/mod_ssl/
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
+
+PATCH_SITES=	http://www.apache.org/info/css-security/
+PATCHFILES=	apache_1.3.11_css_patch.txt
 
 MAINTAINER=	dirk@FreeBSD.org
 
