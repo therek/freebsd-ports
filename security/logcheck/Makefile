@@ -2,7 +2,7 @@
 # Date created:		9 December 1999
 # Whom:			Dan Langille <dan@freebsddiary.org>
 #
-# $FreeBSD: ports/security/logcheck/Makefile,v 1.1 1999/12/25 16:10:58 steve Exp $
+# $FreeBSD: ports/security/logcheck/Makefile,v 1.2 2000/04/09 18:29:57 cpiazza Exp $
 #
 
 PORTNAME=	logcheck
@@ -15,7 +15,7 @@ MAINTAINER=	ports@freebsddiary.org
 PKGMESSAGE=	${WRKDIR}/MESSAGE
 
 post-build:
-	@${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+	@${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${PKGDIR}/pkg-message > ${PKGMESSAGE}
 
 post-install:
 	@${CAT} ${PKGMESSAGE}

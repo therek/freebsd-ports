@@ -3,7 +3,7 @@
 # Date created:			  10 Dec 1998
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/pgcc/Makefile,v 1.26 2000/04/12 06:19:52 obrien Exp $
+# $FreeBSD: ports/lang/pgcc/Makefile,v 1.27 2000/04/16 04:14:10 asami Exp $
 #
 
 PORTNAME=	pgcc
@@ -74,7 +74,7 @@ pre-configure:
 	${SED} -e "s:__FreeBSD__[0-9=]*:__FreeBSD__=$${MAJ}:" ${FILESDIR}/freebsd.h \
 		>${WRKSRC}/gcc/config/freebsd.h )
 .if ${PORTOBJFORMAT} == "elf" && ${MACHINE_ARCH} == "i386"
-	@${SED} -e 's/^@comment ELF-only://' ${PKGDIR}/PLIST >${PLIST}
+	@${SED} -e 's/^@comment ELF-only://' ${PKGDIR}/pkg-plist >${PLIST}
 .endif
 
 pre-install:

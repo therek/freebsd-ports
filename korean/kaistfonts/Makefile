@@ -2,7 +2,7 @@
 # Date created:		Fri Mar 27 17:26:42 KST 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.10 2000/07/23 05:06:29 cjh Exp $
+# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.11 2000/09/12 13:03:53 asami Exp $
 #
 
 PORTNAME=	kaistfonts-ksc
@@ -37,6 +37,6 @@ do-extract:
 	done
 
 post-install:
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:        23. June 2000
 # Whom:                Mathias Picker <mathiasp@virtual-earth.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/mozart/Makefile,v 1.1 2000/07/10 03:37:36 steve Exp $
 #
 
 PORTNAME=		mozart
@@ -46,6 +46,6 @@ pre-extract:
 	@${ECHO}
 
 post-install:
-	@cat ${PKGDIR}/MESSAGE
+	@cat ${PKGMESSAGE}
 
 .include <bsd.port.mk>

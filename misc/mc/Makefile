@@ -2,7 +2,7 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.48 2000/07/05 22:04:51 ade Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.49 2000/10/05 06:22:57 reg Exp $
 #
 
 PORTNAME=	mc
@@ -39,7 +39,7 @@ MAN8=		mcserv.8
 .if defined(WITH_SLANG)
 PLIST=		${WRKDIR}/PLIST
 pre-install:
-	@${CAT} ${PKGDIR}/PLIST > ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist > ${PLIST}
 	@${ECHO} bin/mcedit >> ${PLIST}
 .endif
 

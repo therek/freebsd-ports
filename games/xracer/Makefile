@@ -2,7 +2,7 @@
 # Date created:				Nov 6th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xracer/Makefile,v 1.4 2000/04/14 12:28:08 asami Exp $
+# $FreeBSD: ports/games/xracer/Makefile,v 1.5 2000/08/03 09:24:21 asami Exp $
 #
 
 PORTNAME=		xracer
@@ -50,6 +50,6 @@ post-install:
 	@ strip ${PREFIX}/bin/perlin
 	@ strip ${PREFIX}/bin/test-poly-opts
 
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

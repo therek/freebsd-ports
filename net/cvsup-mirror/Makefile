@@ -2,7 +2,7 @@
 # Date created:		01 February 1997
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.11 2000/04/20 20:25:29 mharo Exp $
+# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.12 2000/07/09 17:57:27 jdp Exp $
 #
 
 PORTNAME=	cvsup-mirror
@@ -41,6 +41,6 @@ do-install:
 	@${CP} /dev/null ${base}/.start_server
 
 post-install:
-	@PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		20 Dezember 1999
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice5/Makefile,v 1.6 2000/04/14 23:53:20 asami Exp $
+# $FreeBSD: ports/german/staroffice5/Makefile,v 1.7 2000/04/17 00:17:40 reg Exp $
 #
 
 PORTNAME=	staroffice
@@ -75,7 +75,7 @@ do-install:
 	@PATH=${PATH}:${WRKDIR}/tmp
 	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${WRKDIR}/tmp:/usr/lib:/lib:/compat/linux/lib
 	@/compat/linux/sbin/ldconfig -f ${WRKDIR}/tmp/ld.so.conf.temp
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@-TEMP=${WRKDIR}/tmp ${WRKDIR}/so51inst/office51/setup /net
 	@ ${ECHO}
 	@ ${ECHO} Ignorieren Sie die Fehlermeldung. StarOffice5.1a wurde erfolgreich

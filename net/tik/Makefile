@@ -2,7 +2,7 @@
 # Date created:				13 January 1999
 # Whom:					Eugene M. Kim <astralblue@usa.net>
 #
-# $FreeBSD: ports/net/tik/Makefile,v 1.8 2000/06/20 13:37:37 nectar Exp $
+# $FreeBSD: ports/net/tik/Makefile,v 1.9 2000/07/10 01:34:26 steve Exp $
 #
 
 PORTNAME=	tik
@@ -66,7 +66,7 @@ DOCFILES=	CHANGES CONTRIBUTORS COPYING LICENSE README-LANG	   \
 # The packing list starts with just bin/tik.  As we install things,
 # build onto the list.
 do-install:
-	@${CP} ${PKGDIR}/PLIST ${PLIST}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .for d in ${SRCDIRS}
 	@${MKDIR} ${PREFIX}/${d}
 	@${ECHO} @dirrm ${d} >> ${PLIST}.dirrm

@@ -2,7 +2,7 @@
 # Date created:		16 November 1998
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.4 2000/04/12 14:38:11 knu Exp $
+# $FreeBSD: ports/japanese/truetypefonts/Makefile,v 1.5 2000/09/12 11:08:03 asami Exp $
 #
 
 PORTNAME=	truetypefonts
@@ -37,6 +37,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/watanabe-mincho.ttf ${FONTDIR}
 	${INSTALL_DATA} ${WRKSRC}/fonts.dir ${FONTDIR}/fonts.dir.truetype
 	${INSTALL_DATA} ${WRKSRC}/fonts.alias ${FONTDIR}/fonts.alias.truetype
-	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

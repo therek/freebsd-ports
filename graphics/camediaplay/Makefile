@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/camediaplay/Makefile,v 1.12 1999/12/02 03:24:20 itojun Exp $
+# $FreeBSD: ports/graphics/camediaplay/Makefile,v 1.13 2000/04/13 06:28:05 obrien Exp $
 #
 
 PORTNAME=	camediaplay
@@ -25,6 +25,6 @@ post-install:
 		${INSTALL_DATA} ${WRKSRC}/../$$i \
 			${PREFIX}/share/doc/camediaplay; \
 	done
-	${SED} -e 's@\/usr\/local@${PREFIX}@' < ${PKGDIR}/MESSAGE
+	${SED} -e 's@\/usr\/local@${PREFIX}@' < ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		16 January 1999
 # Whom:			Paul Chvostek <paul@it.ca>
 #
-# $FreeBSD: ports/mail/rlytest/Makefile,v 1.4 2000/04/13 20:00:45 cpiazza Exp $
+# $FreeBSD: ports/mail/rlytest/Makefile,v 1.5 2000/09/28 22:16:38 nbm Exp $
 #
 
 PORTNAME=	rlytest
@@ -25,6 +25,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/rlytest ${PREFIX}/bin/rlytest
 
 post-install:
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man/Makefile,v 1.21 2000/04/11 14:15:00 knu Exp $
+# $FreeBSD: ports/japanese/man/Makefile,v 1.22 2000/05/29 06:45:00 kuriyama Exp $
 #
 
 PORTNAME=	man
@@ -27,6 +27,6 @@ MANCOMPRESSED=	yes
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+		${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 .include <bsd.port.mk>

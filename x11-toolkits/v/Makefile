@@ -2,7 +2,7 @@
 # Date created:         8 Feb 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.14 1999/08/31 06:52:59 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.15 2000/04/10 01:11:12 cpiazza Exp $
 #
 
 PORTNAME=	v
@@ -41,6 +41,6 @@ post-install:
 	find ${PREFIX}/share/doc/v -type f -exec ${CHMOD} 644 {} \;
 	@${ECHO_MSG} "==> Extra docs installed.  Note, you will need *tex to read 'em."
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

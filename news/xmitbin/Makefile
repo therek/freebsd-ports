@@ -2,7 +2,7 @@
 # Date created:         29 Nov 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/news/xmitbin/Makefile,v 1.3 1999/08/31 06:49:41 mharo Exp $
+# $FreeBSD: ports/news/xmitbin/Makefile,v 1.4 2000/04/09 17:33:31 cpiazza Exp $
 #
 
 PORTNAME=	xmitbin
@@ -18,6 +18,6 @@ MAN1=		xmitBin.1
 NO_WRKSUBDIR=	YES
 
 post-install:
-		@${CAT} ${PKGDIR}/MESSAGE
+		@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

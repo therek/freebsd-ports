@@ -3,7 +3,7 @@
 # Date created:			  14 Feb 1998
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.20 2000/03/22 00:27:23 obrien Exp $
+# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.21 2000/04/10 00:06:02 cpiazza Exp $
 #
 
 PORTNAME=	netscape-communicator
@@ -72,6 +72,6 @@ do-install:
 	${CHOWN} -R ${BINOWN}.${BINGRP} ${NDIR}
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		22 April 2000
 # Whom:			Vince Valenti <vince@blue-box.net>
 #
-# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.4 2000/07/25 00:55:50 kevlo Exp $
+# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.5 2000/10/03 15:21:26 kevlo Exp $
 #
 
 PORTNAME=	syslog-ng
@@ -25,7 +25,7 @@ post-patch:
 	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/src/syslog-ng.h
 
 post-build:
-	@${SED} -e 's,__PREFIX__,${PREFIX},g' ${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+	@${SED} -e 's,__PREFIX__,${PREFIX},g' ${PKGDIR}/pkg-message > ${PKGMESSAGE}
 
 post-install:
 .if !defined(NOPORTDOCS)

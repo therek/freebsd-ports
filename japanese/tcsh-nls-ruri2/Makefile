@@ -2,7 +2,7 @@
 # Date created:		19 August 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-ruri2/Makefile,v 1.8 1999/08/31 06:46:31 mharo Exp $
+# $FreeBSD: ports/japanese/tcsh-nls-ruri2/Makefile,v 1.9 2000/04/12 14:38:01 knu Exp $
 #
 
 CATALOGNAME=	ruri2
@@ -10,7 +10,7 @@ CATALOGNAME=	ruri2
 MAINTAINER=	issei@jp.FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../tcsh-nls-generic
-PKGDIR=		${.CURDIR}/pkg
-PLIST=		${MASTERDIR}/pkg/PLIST
+PKGDIR=		${.CURDIR}
+PLIST=		${MASTERDIR}/pkg-plist
 
 .include	"${MASTERDIR}/Makefile"

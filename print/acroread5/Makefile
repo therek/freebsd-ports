@@ -2,7 +2,7 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.26 2000/05/14 22:06:33 obrien Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.27 2000/08/21 21:32:26 dima Exp $
 #
 
 PORTNAME=	acroread
@@ -44,7 +44,7 @@ pre-configure:
 	@${PERL} -pi.fbsd -e 's:Linux\):FreeBSD|Linux):g' ${WRKSRC}/INSTALL
 .elif ${ARCH} == "alpha"
 	@${PERL} -pi.fbsd -e 's:OSF1\):FreeBSD|OSF1):g' ${WRKSRC}/INSTALL
-	${SED} -e 's/@comment ALPHA-ONLY://g' ${PKGDIR}/PLIST > ${PLIST}
+	${SED} -e 's/@comment ALPHA-ONLY://g' ${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 do-build:

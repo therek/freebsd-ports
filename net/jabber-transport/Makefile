@@ -2,7 +2,7 @@
 # Date created:			7 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/jabber-transport/Makefile,v 1.2 2000/05/16 14:18:37 nbm Exp $
+# $FreeBSD: ports/net/jabber-transport/Makefile,v 1.3 2000/07/07 16:13:21 steve Exp $
 #
 
 PORTNAME=	jabber-transport
@@ -19,7 +19,7 @@ USE_LIBTOOL=	yes
 rc=${PREFIX}/etc/rc.d
 
 post-install:
-	@PREFIX=${PREFIX} ${PERL5} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PREFIX=${PREFIX} ${PERL5} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	@${INSTALL_SCRIPT} ${FILESDIR}/jserver.sh ${rc}
 
 .include <bsd.port.mk>

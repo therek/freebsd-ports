@@ -2,7 +2,7 @@
 # Date created:				Wed Dec 22 18:20:05 CET 1999
 # Whom:					berend@pobox.com
 #
-# $FreeBSD: ports/lang/smalleiffel/Makefile,v 1.1 2000/04/18 15:46:10 nectar Exp $
+# $FreeBSD: ports/lang/smalleiffel/Makefile,v 1.2 2000/04/19 12:30:39 nectar Exp $
 #
 
 PORTNAME=	smalleiffel
@@ -53,9 +53,9 @@ do-install:
 	    ${ECHO} ${SEDIR}/lib_number/ >> ${SEDIR}/sys/loadpath.UNIX; \
 	    ${ECHO} ${SEDIR}/lib_show/ >> ${SEDIR}/sys/loadpath.UNIX; \
 	    ${ECHO} ${SEDIR}/lib_se/ >> ${SEDIR}/sys/loadpath.UNIX)
-	@${SED} -e "s,%%PREFIX%%,${PREFIX},g" ${PKGDIR}/MESSAGE \
+	@${SED} -e "s,%%PREFIX%%,${PREFIX},g" ${PKGDIR}/pkg-message \
 		> ${PKGMESSAGE}
-	@${SED} -e "s,%%PREFIX%%,${PREFIX},g" ${PKGDIR}/INSTALL \
+	@${SED} -e "s,%%PREFIX%%,${PREFIX},g" ${PKGDIR}/pkg-install \
 		> ${PKGINSTALL}
 	@${CAT} ${PKGMESSAGE}
 

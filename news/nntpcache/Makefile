@@ -2,7 +2,7 @@
 # Date created:		6 January 1997
 # Whom:			proff@suburbia.net
 #
-# $FreeBSD: ports/news/nntpcache/Makefile,v 1.16 2000/02/14 10:19:29 phk Exp $
+# $FreeBSD: ports/news/nntpcache/Makefile,v 1.17 2000/04/09 17:33:09 cpiazza Exp $
 #
 
 PORTNAME=	nntpcache
@@ -38,7 +38,7 @@ post-install:
 .endif
 	${INSTALL_SCRIPT} ${WRKSRC}/nntpcached.sh \
 		${PREFIX}/etc/rc.d/nntpcached.sh.sample
-	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGDIR}/MESSAGE
+	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGMESSAGE}
 
 hardlink-pgp-files:
 	for i in ${PREFIX}/etc/nntpcache/*asc-dist ${PREFIX}/etc/nntpcache/*pgp-dist ; do \

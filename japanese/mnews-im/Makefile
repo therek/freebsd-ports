@@ -2,7 +2,7 @@
 # Date created:			03 Jan 2000
 # Whom:				SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mnews-im/Makefile,v 1.1.1.1 2000/01/03 19:57:22 sada Exp $
+# $FreeBSD: ports/japanese/mnews-im/Makefile,v 1.2 2000/04/11 14:15:11 knu Exp $
 #
 
 PKGNAMESUFFIX=	-im
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	-im
 RUN_DEPENDS=	imput:${PORTSDIR}/mail/im
 
 MASTERDIR=	${.CURDIR}/../mnews
-COMMENT=	${.CURDIR}/pkg/COMMENT
+COMMENT=	${.CURDIR}/pkg-comment
 
 GNSPOOL=	0
 IMPUT=		1

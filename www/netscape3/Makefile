@@ -2,7 +2,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.39 2000/04/10 00:06:00 cpiazza Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.40 2000/04/17 00:18:49 reg Exp $
 #
 
 PORTNAME?=	netscape
@@ -22,7 +22,7 @@ ONLY_FOR_ARCHS=	i386
 USE_XLIB=	yes
 NO_LATEST_LINK=	yes
 NO_WRKSUBDIR=	yes
-PKGREQ=		${PORTSDIR}/www/netscape4-communicator/pkg/REQ.aout
+PKGREQ=		${PORTSDIR}/www/netscape4-communicator/pkg-req.aout
 
 .if defined(WITH_128BIT)
 MASTER_SITES+=	ftp://ftp.fortify.net/pub/Fortify/ \
@@ -48,6 +48,6 @@ post-install:
 	&& (${ECHO}; ${ECHO} yes; ${ECHO} no; ${ECHO} no) \
 	| ./Fortify.sh ${PREFIX}/lib/netscape/netscape.bin
 .endif
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

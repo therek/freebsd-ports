@@ -2,7 +2,7 @@
 # Date created:		2 Febuary 1997
 # Whom:			reg@shale.csir.co.za
 #
-# $FreeBSD: ports/math/snns/Makefile,v 1.5 2000/01/24 00:49:26 reg Exp $
+# $FreeBSD: ports/math/snns/Makefile,v 1.6 2000/04/14 07:20:40 asami Exp $
 #
 
 PORTNAME=	snns
@@ -29,6 +29,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/default.cfg ${PREFIX}/snns
 	${INSTALL_DATA} ${WRKSRC}/help.hdoc ${PREFIX}/snns
 	${INSTALL_SCRIPT} ${WRKSRC}/snns ${PREFIX}/bin
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

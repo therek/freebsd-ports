@@ -2,7 +2,7 @@
 # Date created:         9 May 1997
 # Whom:                 Hironori Ikura <hikura@kaisei.org>
 #
-# $FreeBSD: ports/japanese/pgp.language/Makefile,v 1.8 1999/08/25 05:26:16 obrien Exp $
+# $FreeBSD: ports/japanese/pgp.language/Makefile,v 1.9 2000/04/12 14:36:43 knu Exp $
 #
 
 PORTNAME=	pgp
@@ -44,6 +44,6 @@ do-install:
 		${SH} ${SCRIPTDIR}/pgp.config.l10n.sh \
 			${PGPLIB} ${PGP_LANG} ${PGP_CHARSET}
 	-pgp > /dev/null  2>&1  # update .idx file
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

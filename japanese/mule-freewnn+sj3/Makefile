@@ -2,7 +2,7 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-freewnn+sj3/Makefile,v 1.8 2000/04/14 16:47:46 knu Exp $
+# $FreeBSD: ports/japanese/mule-freewnn+sj3/Makefile,v 1.9 2000/09/08 04:34:47 taoka Exp $
 #
 
 PKGNAMESUFFIX=	-freewnn+sj3
@@ -12,6 +12,6 @@ SJ3=		yes
 FREEWNN=	yes
 
 MASTERDIR=	${.CURDIR}/../../editors/mule
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include	"${MASTERDIR}/Makefile"

@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.10 2000/04/14 06:20:14 asami Exp $
+# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.11 2000/05/10 16:04:27 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -18,7 +18,7 @@ EMACS_PORT_NAME=	mule
 # emacs requires *-setupel.el
 REQUIRE_SETUPEL=	YES
 
-# use pkg/* files in ${.CURDIR}
-PKGDIR=		${.CURDIR}/pkg
+# use pkg-* files in ${.CURDIR}
+PKGDIR=		${.CURDIR}
 
 .include <${MASTERDIR}/Makefile>

@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/qvplay/Makefile,v 1.4 1999/11/24 03:16:02 billf Exp $
+# $FreeBSD: ports/graphics/qvplay/Makefile,v 1.5 2000/04/14 10:47:15 asami Exp $
 #
 
 PORTNAME=	qvplay
@@ -35,6 +35,6 @@ post-install:
 			${PREFIX}/share/doc/qvplay; \
 	done
 	@${ECHO} && ${ECHO}
-	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGDIR}/MESSAGE
+	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGMESSAGE}
 
 .include <bsd.port.mk>

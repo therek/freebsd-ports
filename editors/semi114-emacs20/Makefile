@@ -2,7 +2,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.16 2000/04/14 06:20:38 asami Exp $
+# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.17 2000/07/12 15:51:27 shige Exp $
 #
 
 PORTNAME=	semi
@@ -194,7 +194,7 @@ info-package-install:
 
 manifest-install:
 	@${RM} -f ${WRKDIR}/${MANIFEST}
-	@${CAT} ${PKGDIR}/PLIST | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
+	@${CAT} ${PLIST} | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
 		${SED} -e "s;^%%EMACS_PACKAGESDIR%%/;;" > ${WRKDIR}/${MANIFEST}
 	@${INSTALL_DATA} ${WRKDIR}/${MANIFEST} \
 		${LOCALBASE}/${EMACS_PACKAGESDIR}/pkginfo/

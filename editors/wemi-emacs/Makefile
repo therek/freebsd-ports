@@ -2,7 +2,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-emacs/Makefile,v 1.14 2000/06/29 07:02:12 obrien Exp $
+# $FreeBSD: ports/editors/wemi-emacs/Makefile,v 1.15 2000/07/12 15:51:35 shige Exp $
 #
 
 PORTNAME=	wemi
@@ -196,7 +196,7 @@ info-package-install:
 
 manifest-install:
 	@${RM} -f ${WRKDIR}/${MANIFEST}
-	@${CAT} ${PKGDIR}/PLIST | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
+	@${CAT} ${PLIST} | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
 		${SED} -e "s;^%%EMACS_PACKAGESDIR%%/;;" > ${WRKDIR}/${MANIFEST}
 	@${INSTALL_DATA} ${WRKDIR}/${MANIFEST} \
 		${LOCALBASE}/${EMACS_PACKAGESDIR}/pkginfo/

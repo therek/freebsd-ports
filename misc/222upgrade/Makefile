@@ -2,7 +2,7 @@
 # Date created:		18 Apr 1997
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/222upgrade/Makefile,v 1.8 1999/08/25 07:20:53 obrien Exp $
+# $FreeBSD: ports/misc/222upgrade/Makefile,v 1.9 2000/04/14 08:45:08 asami Exp $
 #
 
 PORTNAME=	222upgrade
@@ -25,7 +25,7 @@ NO_BUILD=	yes
 PKGINSTALL=	${WRKDIR}/INSTALL
 
 do-install:
-	${SED} -e "s/%%VERSION%%/${BSDPORTMKVERSION}/" ${PKGDIR}/INSTALL \
+	${SED} -e "s/%%VERSION%%/${BSDPORTMKVERSION}/" ${PKGDIR}/pkg-install \
 		> ${PKGINSTALL}
 
 deinstall:

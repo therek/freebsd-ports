@@ -2,7 +2,7 @@
 # Date created:		23 August 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/net/dgd/Makefile,v 1.83 2000/04/09 18:10:54 cpiazza Exp $
+# $FreeBSD: ports/net/dgd/Makefile,v 1.84 2000/04/15 01:40:10 asami Exp $
 #
 
 PORTNAME=	dgd
@@ -44,7 +44,7 @@ post-build:
 
 do-install:
 	@-${MV} ${PREFIX}/dgd/bin/driver ${PREFIX}/dgd/bin/driver.old
-	@tar -C ${WRKDIR} -cf - `${GREP} '^dgd/' ${PKGDIR}/PLIST` \
+	@tar -C ${WRKDIR} -cf - `${GREP} '^dgd/' ${PLIST}` \
 		| tar -C ${PREFIX} -xpf -
 
 .include <bsd.port.mk>

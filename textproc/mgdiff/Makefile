@@ -2,7 +2,7 @@
 # Date created:         		22 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.6 1999/08/31 02:09:34 peter Exp $
+# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.7 2000/04/09 21:52:52 cpiazza Exp $
 #
 
 PORTNAME=	mgdiff
@@ -21,6 +21,6 @@ MAN1=		mgdiff.1
 post-install:
 	@${MKDIR} ${PREFIX}/lib/X11/mgdiff
 	@${INSTALL_DATA} ${WRKSRC}/mgdiff.x[bp]m ${PREFIX}/lib/X11/mgdiff
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

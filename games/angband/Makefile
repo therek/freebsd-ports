@@ -2,7 +2,7 @@
 # Date created:        21 Feb 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/angband/Makefile,v 1.15 2000/04/24 17:51:24 mph Exp $
+# $FreeBSD: ports/games/angband/Makefile,v 1.16 2000/06/14 05:44:49 mph Exp $
 #
 
 PORTNAME=	angband
@@ -48,6 +48,6 @@ do-install:
 		${CHMOD} 1777 save user \
 		)
 	${INSTALL} -o ${SHAREOWN} -g ${SHAREGRP} -m 555 /dev/null ${PREFIX}/lib/X11/angband/apex/scores.raw
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

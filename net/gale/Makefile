@@ -2,7 +2,7 @@
 # Date created:         14 July 2000
 # Whom:                 Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD: ports/net/gale/Makefile,v 1.3 2000/09/22 01:58:57 kris Exp $
+# $FreeBSD: ports/net/gale/Makefile,v 1.4 2000/09/22 03:58:35 kris Exp $
 #
 
 PORTNAME=	gale
@@ -25,6 +25,6 @@ LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}" INSTALL=""
 
 post-install:
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

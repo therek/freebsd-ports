@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/netrek-BRMH-bin/Makefile,v 1.4 2000/04/14 12:26:13 asami Exp $
+# $FreeBSD: ports/games/netrek-BRMH-bin/Makefile,v 1.5 2000/04/15 11:28:18 asami Exp $
 #
 
 PORTNAME=	netrek-BRMH
@@ -24,6 +24,6 @@ do-extract:
 
 do-install:
 	${INSTALL} -c -o root -g wheel -m 555 ${WRKDIR}/netrek ${PREFIX}/bin
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

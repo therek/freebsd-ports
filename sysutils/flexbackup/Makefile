@@ -2,7 +2,7 @@
 # Date created:         Wed Nov  3 17:58:26 MST 1999
 # Whom:                 John Reynolds <jjreynold@home.com>
 #
-# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.7 2000/04/09 19:07:35 cpiazza Exp $
+# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.8 2000/04/22 10:12:12 mharo Exp $
 #
 
 PORTNAME=	flexbackup
@@ -32,6 +32,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/flexbackup.README ${PREFIX}/share/doc/flexbackup
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e 's:%%PREFIX%%:${PREFIX}:g'
+	@${CAT} ${PKGMESSAGE} | ${SED} -e 's:%%PREFIX%%:${PREFIX}:g'
 
 .include <bsd.port.mk>

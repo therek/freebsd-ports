@@ -2,7 +2,7 @@
 # Date created:		17 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.30 2000/04/13 20:00:49 cpiazza Exp $
+# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.31 2000/04/15 13:45:32 itojun Exp $
 #
 
 PORTNAME=	smtpfeed
@@ -54,7 +54,7 @@ post-install:
 		${INSTALL_DATA} ${WRKSRC}/$$i ${DOCDIR}; \
 	done
 .endif
-	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGDIR}/MESSAGE
+	@${SED} -e 's#/usr/local#${PREFIX}#' ${PKGMESSAGE}
 
 install-sendmail:
 	(cd ${WRKSRC_SENDMAIL}; sh makesendmail install)

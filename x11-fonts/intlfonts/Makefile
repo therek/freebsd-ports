@@ -2,7 +2,7 @@
 # Date created:		99/10/26
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.2 2000/01/15 17:45:00 taoka Exp $
+# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.3 2000/04/10 00:44:37 cpiazza Exp $
 #
 
 PORTNAME=	intlfonts
@@ -59,7 +59,7 @@ do-build:
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install:
 	(cd ${WRKSRC}; \

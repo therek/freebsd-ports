@@ -2,7 +2,7 @@
 # Date created:         Sat Oct 31 16:30:00 CDT 1997
 # Whom:                 hetzels@westbend.net
 #
-# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.19 2000/04/10 00:04:19 cpiazza Exp $
+# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.20 2000/09/02 07:29:29 billf Exp $
 #
 
 PORTNAME=	apache_fp
@@ -146,9 +146,9 @@ post-patch:
 
 post-configure:
 .if defined(SUEXEC)
-	${CP} ${PKGDIR}/PLIST ${PLIST}
+	${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .else
-	${CAT} ${PKGDIR}/PLIST | ${GREP} -v sbin/suexec > ${PLIST}
+	${CAT} ${PKGDIR}/pkg-plist | ${GREP} -v sbin/suexec > ${PLIST}
 .endif
 
 IMAGES=		apache_pb.gif fplogo.gif powerlogo.gif
@@ -174,6 +174,6 @@ post-install:
 	@${INSTALL_FILE} ${WRKSRC}/${FPINSTALL} ${PREFIX}/${FPINSTALL}-dist
 	@${INSTALL_FILE} ${WRKSRC}/${CHANGESERVER} ${PREFIX}/${CHANGESERVER}-dist
 	@${INSTALL_FILE} ${WRKSRC}/${FPSETPERM} ${PREFIX}/${FPSETPERM}
-	@PKG_PREFIX=${PREFIX} BATCH=${BATCH} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PKG_PREFIX=${PREFIX} BATCH=${BATCH} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		09 Nov 1999
 # Whom:			Ichiro Fukuhara <ichiro@ichiro.org>
 #
-# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.16 2000/10/08 01:40:32 asami Exp $
+# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.17 2000/10/08 08:33:29 asami Exp $
 #
 
 PORTNAME=	postgresql
@@ -129,7 +129,7 @@ pre-install:
 	@ ${SETENV} INSTALL_DIR=${INSTALL_DIR} \
 	     	    PGSQL_UID=${PGSQL_UID} PGSQL_GID=${PGSQL_GID} \
 		    PKG_PREFIX=${PREFIX} \
-			${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+			${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 post-install:
 	@ if [ ! -f ${PREFIX}/${INSTALL_DIR}/.profile ]; then \
 		${ECHO} "PATH=${PATH}:${PREFIX}/${INSTALL_DIR}/bin" \

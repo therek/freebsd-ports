@@ -2,7 +2,7 @@
 # Date created:		13 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.5 2000/05/29 03:00:26 steve Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.6 2000/07/25 00:59:35 kevlo Exp $
 #
 
 PORTNAME=	aolserver
@@ -43,6 +43,6 @@ post-install:
 			>${PREFIX}/etc/rc.d/aolserver.sh ; \
 		${CHMOD} 755 ${PREFIX}/etc/rc.d/aolserver.sh; \
 	fi
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

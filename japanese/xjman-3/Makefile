@@ -4,7 +4,7 @@
 #			japanese/man-doc
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xjman/Makefile,v 1.11 2000/02/07 14:10:38 taoka Exp $
+# $FreeBSD: ports/japanese/xjman/Makefile,v 1.12 2000/04/13 08:34:06 knu Exp $
 #
 
 PORTNAME=	xjman
@@ -60,6 +60,6 @@ post-install:
 .for i in COPYRIGHT COPYRIGHT.XJDP
 	@${INSTALL_DATA} ${FILESDIR}/$i ${PREFIX}/share/doc/xjman/
 .endfor
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

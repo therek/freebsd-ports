@@ -2,7 +2,7 @@
 # Date created:         Thu Jun 11 22:38:52 PDT 1998
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/netshow/Makefile,v 1.9 2000/02/28 08:33:39 asami Exp $
+# $FreeBSD: ports/graphics/netshow/Makefile,v 1.10 2000/04/14 10:46:50 asami Exp $
 #
 
 PORTNAME=	netshow
@@ -38,6 +38,6 @@ do-install:
 	${INSTALL} -c -o bin -g bin -m 555 ${WRKDIR}/netshow ${PREFIX}/bin/netshow
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

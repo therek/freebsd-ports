@@ -2,7 +2,7 @@
 # Date created:		24 June 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/k12/Makefile,v 1.12 2000/09/12 11:08:01 asami Exp $
+# $FreeBSD: ports/japanese/k12/Makefile,v 1.13 2000/09/12 13:03:48 asami Exp $
 #
 
 PORTNAME=	kaname12
@@ -37,7 +37,7 @@ post-extract:
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 post-install:
 	@(cd ${PREFIX}/${FONTSDIR} ; mkfontdir)

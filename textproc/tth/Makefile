@@ -2,7 +2,7 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.17 2000/06/16 11:48:19 tg Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.18 2000/09/29 12:20:33 tg Exp $
 #
 
 PORTNAME=	tth
@@ -38,6 +38,6 @@ do-install:
 .if !defined(NOPORTDOCS)
 	${INSTALL_SCRIPT} ${WRKSRC}/tth_manual.html ${PREFIX}/share/doc/tth
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

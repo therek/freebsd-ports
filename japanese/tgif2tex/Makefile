@@ -2,7 +2,7 @@
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif2tex/Makefile,v 1.5 2000/04/14 17:10:47 knu Exp $
+# $FreeBSD: ports/japanese/tgif2tex/Makefile,v 1.6 2000/06/23 09:30:10 taoka Exp $
 #
 
 CATEGORIES=	japanese
@@ -10,7 +10,7 @@ CATEGORIES=	japanese
 RUN_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 
 MASTERDIR=	${.CURDIR}/../../print/tgif2tex
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 PORTSDOCDIR=	${PREFIX}/share/doc/ja-tgif2tex
 DOCSRC=		Makefile \
 		example.obj \

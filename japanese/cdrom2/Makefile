@@ -2,7 +2,7 @@
 # Date created:			03 Feb 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.5 1999/08/31 06:45:26 mharo Exp $
+# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.6 2000/04/11 14:12:56 knu Exp $
 #
 
 PORTNAME=	cdrom2
@@ -29,7 +29,7 @@ post-install:
 .for f in ${DOCS}
 	@${INSTALL_DATA} ${WRKSRC}/$f ${PREFIX}/share/doc/cdrom2
 .endfor
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				21 November 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/print/auctex/Makefile,v 1.2 2000/04/09 17:39:38 cpiazza Exp $
+# $FreeBSD: ports/print/auctex/Makefile,v 1.3 2000/04/09 17:49:17 cpiazza Exp $
 #
 
 PORTNAME=		auctex
@@ -50,6 +50,6 @@ post-install:
 	cd ${WRKSRC} &&  ${SETENV} ${MAKE_ENV} ${MAKE} install-info >/dev/null
 	install-info --entry='* AUC-Tex mode: (auctex).	Emacs mode for editing TeX and LaTeX files.' --section='TeX' ${PREFIX}/info/auctex ${PREFIX}/info/dir
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} 's¦/usr/local¦${PREFIX}¦g'
+	@${CAT} ${PKGMESSAGE} | ${SED} 's¦/usr/local¦${PREFIX}¦g'
 
 .include <bsd.port.post.mk>

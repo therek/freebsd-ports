@@ -2,7 +2,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.9 2000/06/16 21:52:08 asami Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.10 2000/06/18 09:26:53 asami Exp $
 #
 
 PORTNAME=	XFree86-aoutlibs
@@ -23,8 +23,7 @@ PORTOBJFORMAT=	aout
 USE_X_PREFIX=	yes
 
 pre-configure:
-	@${SETENV} ${SCRIPTS_ENV} ${SH} \
-		${PKGDIR}/REQ ${PKGNAME} INSTALL
+	@${SETENV} ${SCRIPTS_ENV} ${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install:
 	@${MKDIR} ${PREFIX}/lib/aout

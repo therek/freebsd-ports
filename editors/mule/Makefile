@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.44 2000/09/17 15:47:02 taoka Exp $
+# $FreeBSD: ports/editors/mule/Makefile,v 1.45 2000/10/08 07:20:57 asami Exp $
 #
 
 PORTNAME=	mule
@@ -144,8 +144,8 @@ pre-install:
 post-install:
 	strip ${PREFIX}/bin/${EMACS_EXECUTABLE}-${EMACS_VERSION}
 # for freewnn+sj3 or wnn6+sj3
-	@if [ -e ${PKGDIR}/INSTALL ]; then \
-		${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL; \
+	@if [ -e ${PKGINSTALL} ]; then \
+		${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL; \
 	fi
 # Installing site-start.el
 #   (we redefun set-korean-environment etc)

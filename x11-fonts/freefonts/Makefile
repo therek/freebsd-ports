@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 21:32:14 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fonts/freefonts/Makefile,v 1.11 2000/04/23 22:59:49 kris Exp $
+# $FreeBSD: ports/x11-fonts/freefonts/Makefile,v 1.12 2000/09/17 18:20:39 ade Exp $
 #
 
 PORTNAME=	freefonts
@@ -18,6 +18,6 @@ USE_X_PREFIX=	yes
 
 post-install:
 	${RM} ${PREFIX}/lib/X11/fonts/freefont/fonts.dir.orig
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

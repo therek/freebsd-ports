@@ -2,7 +2,7 @@
 # Date created:        10 March 2000
 # Whom:                Andrey Novikov <andrey@novikov.com>
 #
-# $FreeBSD: ports/net/kxicq/Makefile,v 1.3 2000/06/14 13:21:30 sobomax Exp $
+# $FreeBSD: ports/net/kxicq/Makefile,v 1.4 2000/08/21 10:07:28 sobomax Exp $
 
 PORTNAME=	kxicq
 PORTVERSION=	0.3.97b
@@ -55,7 +55,7 @@ pre-install:
 	@${ECHO} @dirrm share/apps/kxicq/skins/${skin} >> ${PLIST}.dirrm
 .endfor
 	@${CAT} ${PLIST}.dirrm >> ${PLIST} && ${RM} ${PLIST}.dirrm
-	@${CAT} ${PKGDIR}/PLIST >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist >> ${PLIST}
 .endif
 
 post-install:

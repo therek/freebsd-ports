@@ -2,7 +2,7 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.42 2000/09/30 15:00:48 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.43 2000/10/05 06:57:52 reg Exp $
 #
 
 PORTNAME=	py-gtk
@@ -41,7 +41,7 @@ PLIST=		${WRKDIR}/PLIST.nodocs
 pre-install:
 	${RM} -f ${PLIST}
 	${GREP} -E -v '^(@dirrm )?(share/examples/)|(share/doc/)'       \
-		${PKGDIR}/PLIST > ${PLIST}
+		${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 .include <bsd.port.mk>

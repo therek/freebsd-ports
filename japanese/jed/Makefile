@@ -2,7 +2,7 @@
 # Date created:		2 Feb 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/jed/Makefile,v 1.9 2000/06/29 02:31:29 asami Exp $
+# $FreeBSD: ports/japanese/jed/Makefile,v 1.10 2000/10/04 16:29:50 knu Exp $
 #
 
 PORTNAME=	jed
@@ -106,6 +106,6 @@ do-install:
 .endif
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

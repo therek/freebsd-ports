@@ -3,7 +3,7 @@
 # Date created:			  Sat Jan 31, 1998
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/japanese/plan/Makefile,v 1.9 2000/04/12 14:37:03 knu Exp $
+# $FreeBSD: ports/japanese/plan/Makefile,v 1.10 2000/04/14 17:10:35 knu Exp $
 #
 
 BROKEN=		"doesn't build properly from version 1.7.1"
@@ -22,4 +22,4 @@ PLIST=		${WRKDIR}/PLIST
 
 pre-install:
 	${ECHO}	"share/doc/plan/plan_calSJ.ps" > ${PLIST}
-	${CAT}	${PKGDIR}/PLIST >> ${PLIST}
+	${CAT}	${PKGDIR}/pkg-plist >> ${PLIST}

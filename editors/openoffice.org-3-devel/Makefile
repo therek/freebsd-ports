@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.19 2000/09/15 16:33:34 alex Exp $
+# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.20 2000/09/23 10:32:30 jedgar Exp $
 #
 
 PORTNAME=	staroffice
@@ -101,7 +101,7 @@ do-install:
 .if exists(${LINUXBASE}/${PREFIX})
 	@${LN} -fs ${LINUXBASE}/${PREFIX}/office52 ${PREFIX}/office52
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@-SAL_IGNOREXERRORS=1 TEMP=${TMPDIR} LD_LIBRARY_PATH=${LD_PATH} ${LINUXBASE}/bin/sh -c '${WRKSRC}/setup /net'
 	@if [ -f ${PREFIX}/office52/program/setup ]; then \
 		${ECHO} ; \

@@ -2,7 +2,7 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.26 2000/09/11 11:24:11 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.27 2000/10/05 06:42:42 reg Exp $
 #
 
 PORTNAME=	gtkmm
@@ -27,6 +27,6 @@ CONFIGURE_ARGS=	--enable-static=yes \
 		--without-gnome
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

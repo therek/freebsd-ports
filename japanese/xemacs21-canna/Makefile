@@ -2,7 +2,7 @@
 # Date created:		5 Dec 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.14 2000/09/07 08:01:29 knu Exp $
+# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.15 2000/09/08 04:34:52 taoka Exp $
 #
 
 # This is the MASTER port of Japanese XEmacs slave ports
@@ -24,8 +24,8 @@ CATEGORIES=	japanese
 
 MANLANG=	ja
 MAN1=		xemacs-ja.1
-COMMENT?=	${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg/COMMENT
-DESCR=		${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg/DESCR
+COMMENT?=	${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg-comment
+DESCR=		${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg-descr
 
 XEMACS_MAJOR_VER?=	21
 DESCR_TMPL=		${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/files/DESCR.tmpl

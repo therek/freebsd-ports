@@ -2,7 +2,7 @@
 # Date created:		Sun Jun 22 16:57:39 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/devel/crossgo32-djgpp2/Makefile,v 1.10 2000/01/29 02:47:23 steve Exp $
+# $FreeBSD: ports/devel/crossgo32-djgpp2/Makefile,v 1.11 2000/04/11 21:27:29 mharo Exp $
 #
 
 PORTNAME=	crossgo32-djgpp2
@@ -78,7 +78,7 @@ do-install:
 	${MKDIR} ${DOCDIR}
 	${INSTALL_DATA} ${DJGPPDOC}/install ${DOCDIR}/
 	${INSTALL_DATA} ${DJGPPDOC}/readme ${DOCDIR}/
-	${INSTALL_DATA} ${PKGDIR}/DESCR ${DOCDIR}/README.FreeBSD
+	${INSTALL_DATA} ${DESCR} ${DOCDIR}/README.FreeBSD
 .endif
 
 .include <bsd.port.mk>

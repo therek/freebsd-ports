@@ -2,7 +2,7 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.33 2000/07/07 02:20:19 horikawa Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.34 2000/07/15 02:53:16 horikawa Exp $
 #
 
 PORTNAME=	man-doc
@@ -64,6 +64,6 @@ pre-install:
 .endfor
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

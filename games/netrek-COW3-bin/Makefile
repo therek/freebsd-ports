@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.3 1999/08/31 06:44:20 mharo Exp $
+# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.4 2000/04/14 12:26:14 asami Exp $
 #
 
 PORTNAME=	netrek-COW
@@ -23,6 +23,6 @@ do-extract:
 
 do-install:
 	${INSTALL} -c -o root -g wheel -m 555 ${WRKDIR}/netrek ${PREFIX}/bin
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

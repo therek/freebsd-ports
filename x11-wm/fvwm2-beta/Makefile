@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.26 2000/07/06 16:24:30 sada Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.27 2000/08/03 09:27:54 asami Exp $
 #
 
 PORTNAME=	fvwm
@@ -39,6 +39,6 @@ post-install:
 	@${MKDIR} ${PREFIX}/lib/X11/fvwm2/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/icons/*.xpm \
 		${PREFIX}/lib/X11/fvwm2/pixmaps
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		22 Jun 1998
 # Whom:                 sada
 #
-# $FreeBSD: ports/japanese/netscape-fonts/Makefile,v 1.9 2000/09/12 11:08:02 asami Exp $
+# $FreeBSD: ports/japanese/netscape-fonts/Makefile,v 1.10 2000/09/19 07:48:21 asami Exp $
 #
 
 PORTNAME=	netscape-fonts
@@ -30,6 +30,6 @@ NO_BUILD=	yes
 
 do-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		/usr/bin/perl ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+		/usr/bin/perl ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-W32/Makefile,v 1.11 1999/12/10 07:19:16 imura Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-W32/Makefile,v 1.12 2000/04/10 00:52:55 cpiazza Exp $
 #
 
 PORTNAME=	xtt-W32
@@ -18,6 +18,6 @@ ONLY_FOR_ARCHS=	i386
 SERVER=		XF86_W32
 
 MASTERDIR=	${.CURDIR}/../XttXF86srv-common
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include	"${MASTERDIR}/Makefile"

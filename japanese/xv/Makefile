@@ -2,7 +2,7 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xv/Makefile,v 1.7 2000/04/13 08:34:10 knu Exp $
+# $FreeBSD: ports/japanese/xv/Makefile,v 1.8 2000/04/14 17:10:37 knu Exp $
 #
 
 CATEGORIES=	japanese
@@ -10,7 +10,7 @@ CATEGORIES=	japanese
 MAINTAINER=	shige@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 MAKE_ENV=	LOCALE_EXTENSION=-DTV_L10N
 

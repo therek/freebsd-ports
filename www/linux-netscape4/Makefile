@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.13 2000/04/10 00:05:43 cpiazza Exp $
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.14 2000/05/08 19:20:32 knu Exp $
 #
 
 PORTNAME=	linux-netscape
@@ -39,6 +39,6 @@ do-install:
 	${CHOWN} -R ${BINOWN}.${BINGRP} ${NDIR}
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

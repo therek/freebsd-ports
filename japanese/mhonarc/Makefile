@@ -2,7 +2,7 @@
 # Date created:			17 March 1999
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/mhonarc/Makefile,v 1.6 2000/04/11 14:15:06 knu Exp $
+# $FreeBSD: ports/japanese/mhonarc/Makefile,v 1.7 2000/06/29 07:02:23 obrien Exp $
 #
 
 PORTNAME=	mhonarc
@@ -39,6 +39,6 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}/mhonarc.rc.sample ${PREFIX}/share/examples/MHonArc/
 
 post-install:
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

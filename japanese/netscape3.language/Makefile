@@ -2,7 +2,7 @@
 # Date created:		17 November 1997
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/netscape3.language/Makefile,v 1.10 2000/04/11 14:15:35 knu Exp $
+# $FreeBSD: ports/japanese/netscape3.language/Makefile,v 1.11 2000/07/13 15:05:58 sada Exp $
 #
 
 PORTNAME=	netscape
@@ -67,7 +67,7 @@ post-install:
 	${MKDIR} ${DOCDIR}
 	${INSTALL_DATA} ${FILESDIR}/setup.doc ${DOCDIR}
 .endif
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>
 

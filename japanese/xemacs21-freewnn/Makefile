@@ -2,10 +2,10 @@
 # Date created:		25 January 1998
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-freewnn/Makefile,v 1.10 2000/07/13 09:52:59 taoka Exp $
+# $FreeBSD: ports/japanese/xemacs21-freewnn/Makefile,v 1.11 2000/09/08 04:34:55 taoka Exp $
 #
 
-COMMENT=		${.CURDIR}/pkg/COMMENT
+COMMENT=		${.CURDIR}/pkg-comment
 
 XEMACS_MAJOR_VER=	21
 FREEWNN=		yes

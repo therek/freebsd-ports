@@ -2,7 +2,7 @@
 # Date created:         22 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.7 1999/08/30 12:09:11 peter Exp $
+# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.8 2000/04/13 09:17:22 asami Exp $
 #
 # This is based on ja-pgp.
 #
@@ -47,6 +47,6 @@ do-install:
 		${SH} ${SCRIPTDIR}/pgp.config.l10n.sh \
 			${PGPLIB} ${PGP_LANG} ${PGP_CHARSET}
 	-pgp > /dev/null  2>&1  # update .idx file
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

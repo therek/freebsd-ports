@@ -2,7 +2,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.14 2000/05/24 04:14:41 jasone Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.15 2000/09/25 12:21:14 asami Exp $
 #
 
 PORTNAME=	linuxthreads
@@ -54,8 +54,8 @@ pre-install:
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m /usr/lib
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
-#	@sh ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+#	@sh ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

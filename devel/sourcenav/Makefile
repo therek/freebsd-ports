@@ -2,7 +2,7 @@
 # Date created:			23 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/devel/SN/Makefile,v 1.1.1.1 2000/07/24 06:06:32 dburr Exp $
+# $FreeBSD: ports/devel/SN/Makefile,v 1.2 2000/07/24 22:08:25 dburr Exp $
 #
 
 PORTNAME=	SN
@@ -24,6 +24,6 @@ GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/SN451
 
 post-install:
-		@${CAT} ${PKGDIR}/MESSAGE
+		@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

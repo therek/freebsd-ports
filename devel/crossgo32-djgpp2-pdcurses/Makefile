@@ -2,7 +2,7 @@
 # Date created:		Sun Jun 22 16:57:39 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au)
 #
-# $FreeBSD: ports/devel/crossgo32-djgpp2-pdcurses/Makefile,v 1.8 2000/01/29 02:48:36 steve Exp $
+# $FreeBSD: ports/devel/crossgo32-djgpp2-pdcurses/Makefile,v 1.9 2000/04/11 21:27:30 mharo Exp $
 #
 
 PORTNAME=	crossgo32-djgpp2-pdcurses
@@ -52,7 +52,7 @@ do-install:
 	${INSTALL_DATA} ${PDDOC}/basics/intro.man ${DOCDIR}/intro.txt
 	${INSTALL_DATA} ${PDDOC}/basics/overview.man ${DOCDIR}/overview.txt
 	${INSTALL_DATA} ${PDDOC}/basics/xwindows.man ${DOCDIR}/xwindows.txt
-	${INSTALL_DATA} ${PKGDIR}/DESCR ${DOCDIR}/README.FreeBSD
+	${INSTALL_DATA} ${DESCR} ${DOCDIR}/README.FreeBSD
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.21 2000/08/20 21:38:44 jmz Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.22 2000/09/22 11:40:06 tg Exp $
 #
 
 PORTNAME=	lapack
@@ -215,9 +215,9 @@ pre-fetch:
 .endif
 pre-install:
 .if !defined(NOPROFILE)
-	@${CAT} ${PKGDIR}/PLIST > ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist > ${PLIST}
 .else
-	@${SED} -e /_p.a/d ${PKGDIR}/PLIST > ${PLIST}
+	@${SED} -e /_p.a/d ${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 do-install:

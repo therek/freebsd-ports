@@ -2,7 +2,7 @@
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/misc/fd/Makefile,v 1.20 2000/06/17 00:14:40 steve Exp $
+# $FreeBSD: ports/misc/fd/Makefile,v 1.21 2000/07/07 18:44:44 steve Exp $
 #
 
 PORTNAME=	fd
@@ -33,6 +33,6 @@ post-install:
 		${INSTALL_DATA} ${WRKSRC}/$$i ${PREFIX}/share/doc/fd; \
 	done
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

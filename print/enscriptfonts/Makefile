@@ -2,7 +2,7 @@
 # Date created:			15 June, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/print/enscriptfonts/Makefile,v 1.5 2000/04/09 17:40:07 cpiazza Exp $
+# $FreeBSD: ports/print/enscriptfonts/Makefile,v 1.6 2000/04/09 17:49:37 cpiazza Exp $
 #
 
 PORTNAME=	enscriptfonts
@@ -26,7 +26,7 @@ do-install:
 	@${CP} -p ${WRKDIR}/* ${PREFIX}/share/enscript/xenscript
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 	@sleep 2;
 	@${ECHO_MSG} "";
 	@${ECHO_MSG} "";

@@ -2,7 +2,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/sysutils/upsmon/Makefile,v 1.4 2000/04/09 19:08:42 cpiazza Exp $
+# $FreeBSD: ports/sysutils/upsmon/Makefile,v 1.5 2000/04/22 10:13:29 mharo Exp $
 #
 
 PORTNAME=	upsmon
@@ -29,6 +29,6 @@ do-install:
 .endif
 
 post-install:
-	${SED} -e 's#/usr/local#${PREFIX}#' ${PKGDIR}/MESSAGE
+	${SED} -e 's#/usr/local#${PREFIX}#' ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		Sun Feb  6 12:31:29 MSK 2000
 # Whom:			Sergey Samoyloff <gonza@techline.ru>
 #
-# $FreeBSD: ports/mail/popa3d/Makefile,v 1.2 2000/04/01 03:39:41 mharo Exp $
+# $FreeBSD: ports/mail/popa3d/Makefile,v 1.3 2000/04/13 20:00:30 cpiazza Exp $
 #
 
 PORTNAME=	popa3d
@@ -28,9 +28,9 @@ do-install:
 .endif
 
 pre-install:
-	@ ${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@ ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 post-install:
-	@ ${CAT} ${PKGDIR}/MESSAGE
+	@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

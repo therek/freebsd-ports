@@ -2,7 +2,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/web500gw/Makefile,v 1.10 2000/04/10 00:07:12 cpiazza Exp $
+# $FreeBSD: ports/www/web500gw/Makefile,v 1.11 2000/06/02 03:24:03 will Exp $
 #
 
 PORTNAME=	web500gw
@@ -36,6 +36,6 @@ WEB500GWDIR=	${PREFIX}/etc/web500gw
 
 post-install:
 	strip ${INSTDIR}/web500gw
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

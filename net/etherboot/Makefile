@@ -2,7 +2,7 @@
 # Date created:        16 April 1999
 # Whom:                Doug Ambrisko <ambrisko@whistle.com>
 #
-# $FreeBSD: ports/net/etherboot/Makefile,v 1.11 2000/05/29 03:18:36 steve Exp $
+# $FreeBSD: ports/net/etherboot/Makefile,v 1.12 2000/06/14 13:21:28 sobomax Exp $
 #
 
 PORTNAME=	etherboot
@@ -32,7 +32,7 @@ pre-build:
 	make
 
 do-install:
-	@${ECHO} Refer ${PKGDIR}/DESCR and ${WRKDIR}/${PKGNAME}/doc for how to
+	@${ECHO} Refer ${DESCR} and ${WRKDIR}/${PKGNAME}/doc for how to
 	@${ECHO} build and install the rom/floppy image.
 	@exit 1
 

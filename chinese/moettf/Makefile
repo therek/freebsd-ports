@@ -2,7 +2,7 @@
 # Date created:		9 July 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/moettf/Makefile,v 1.4 1999/11/01 18:02:23 foxfair Exp $
+# $FreeBSD: ports/chinese/moettf/Makefile,v 1.5 2000/04/13 08:28:08 asami Exp $
 #
 
 PORTNAME=	moettf
@@ -46,6 +46,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKDIR}/moe_lishu.ttf ${FONTDIR}
 	@${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/moe_kai.ttf ${FONTDIR}
 	@${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/moe_sung.ttf ${FONTDIR}
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

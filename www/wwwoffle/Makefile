@@ -2,7 +2,7 @@
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.9 2000/05/19 08:44:36 sobomax Exp $
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.10 2000/07/10 22:35:32 ben Exp $
 #
 
 PORTNAME=	wwwoffle
@@ -45,7 +45,7 @@ do-configure:
 	@find ${WRKSRC} -type f | \
 	  xargs perl -pi -e 's@/var/spool/wwwoffle@${SPOOL}/wwwoffle@g'
 	@${SED} 's@/var/spool/wwwoffle@${SPOOL}/wwwoffle@g' \
-	  ${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+	  ${PKGDIR}/pkg-message > ${PKGMESSAGE}
 .endif
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/juke/Makefile,v 1.3 2000/01/29 20:01:26 mharo Exp $
+# $FreeBSD: ports/audio/juke/Makefile,v 1.4 2000/04/08 21:23:44 mharo Exp $
 #
 
 PORTNAME=		juke
@@ -17,7 +17,7 @@ PKGMESSAGE=		${WRKSRC}/MESSAGE
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/juke.conf ${PREFIX}/etc/juke.conf.sample
-	@${SED} 's,PREFIX,${PREFIX},' ${PKGDIR}/MESSAGE > ${WRKSRC}/MESSAGE
+	@${SED} 's,PREFIX,${PREFIX},' ${PKGDIR}/pkg-message > ${WRKSRC}/MESSAGE
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

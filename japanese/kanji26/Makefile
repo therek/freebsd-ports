@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji26/Makefile,v 1.2 2000/03/06 13:57:40 sada Exp $
+# $FreeBSD: ports/japanese/kanji26/Makefile,v 1.3 2000/04/11 14:14:20 knu Exp $
 #
 
 PKGNAMESUFFIX=	26
@@ -10,7 +10,7 @@ DISTFILES?=	793.gz 794.gz 795.gz 796.gz 797.gz 798.gz 799.gz \
 		800.gz 802.gz 816.gz 817.gz 818.gz 819.gz 820.gz 821.gz
 
 FILESDIR=	${.CURDIR}/files
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 MASTERDIR=	${.CURDIR}/../kanji18
 README_FILE?=	793.gz
 RESIZESED_FILE?=	26to24.sed

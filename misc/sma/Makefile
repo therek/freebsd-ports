@@ -2,7 +2,7 @@
 # Date created:         8 May 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/sma/Makefile,v 1.6 1999/08/31 06:48:27 mharo Exp $
+# $FreeBSD: ports/misc/sma/Makefile,v 1.7 2000/04/14 08:46:43 asami Exp $
 #
 
 PORTNAME=	sma
@@ -32,6 +32,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/sma ${PREFIX}/bin
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

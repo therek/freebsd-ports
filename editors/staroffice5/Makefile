@@ -2,7 +2,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.12 2000/04/14 19:53:25 billf Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.13 2000/04/17 00:17:28 reg Exp $
 #
 
 PORTNAME=	staroffice
@@ -67,7 +67,7 @@ do-install:
 	@PATH=${PATH}:${TMPDIR}/sv001.tmp:/compat/linux/tmp/sv001.tmp:/compat/linux/tmp:/tmp
 	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${TMPDIR}:${WRKDIR}/tmp:/usr/lib:/lib:/tmp:/compat/linux/lib
 	@/compat/linux/sbin/ldconfig -f ${TMPDIR}/ld.so.conf.tmp
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@-TEMP=${TMPDIR} ${WRKDIR}/so51inst/office51/setup /net
 
 	@${INSTALL_DATA} ${WRKDIR}/applicat.rdb ${PREFIX}/Office51/bin

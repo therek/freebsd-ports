@@ -2,7 +2,7 @@
 # Date created:		30 September 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/net/ddup/Makefile,v 1.5 2000/02/23 02:52:30 taoka Exp $
+# $FreeBSD: ports/net/ddup/Makefile,v 1.6 2000/04/09 18:10:51 cpiazza Exp $
 #
 
 PORTNAME=	ddup
@@ -45,6 +45,6 @@ do-install:
 
 post-install:
 	strip ${PREFIX}/sbin/ddup
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

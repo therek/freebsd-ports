@@ -2,7 +2,7 @@
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/X.language/Makefile,v 1.29 2000/08/07 09:46:53 ache Exp $
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.30 2000/08/10 10:02:56 ache Exp $
 #
 
 PORTNAME=	X11
@@ -56,7 +56,7 @@ do-install:
 		${INSTALL_DATA} ${FILESDIR}/nls_C ${XLIB}/nls/C; \
 	fi
 	${MAKE} pre-package
-	${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	${MAKE} post-package
 
 pre-package:

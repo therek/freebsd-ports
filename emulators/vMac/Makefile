@@ -2,7 +2,7 @@
 # Date created:				Jul 11th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/emulators/vMac/Makefile,v 1.3 1999/08/31 05:45:15 peter Exp $
+# $FreeBSD: ports/emulators/vMac/Makefile,v 1.4 2000/04/12 04:55:59 mharo Exp $
 #
 
 PORTNAME=		vMac
@@ -38,6 +38,6 @@ post-install:
 	    ${PREFIX}/share/doc/vMac
 	${INSTALL_DATA} ${WRKSRC}/README.rom \
 	    ${PREFIX}/share/doc/vMac
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e s:/usr/local:${PREFIX}:
+	@${CAT} ${PKGMESSAGE} | ${SED} -e s:/usr/local:${PREFIX}:
 
 .include <bsd.port.mk>

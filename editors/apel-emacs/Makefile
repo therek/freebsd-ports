@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.23 2000/07/12 15:26:11 shige Exp $
+# $FreeBSD: ports/editors/apel-emacs/Makefile,v 1.24 2000/07/13 05:10:02 shige Exp $
 #
 
 PORTNAME=	apel
@@ -110,7 +110,7 @@ setupel-install:
 
 manifest-install:
 	@${RM} -f ${WRKDIR}/${MANIFEST}
-	@${CAT} ${PKGDIR}/PLIST | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
+	@${CAT} ${PLIST} | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
 		${SED} -e "s;^%%EMACS_PACKAGESDIR%%/;;" > ${WRKDIR}/${MANIFEST}
 	@${INSTALL_DATA} ${WRKDIR}/${MANIFEST} \
 		${LOCALBASE}/${EMACS_PACKAGESDIR}/pkginfo/

@@ -2,7 +2,7 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.21 2000/08/07 08:50:20 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.22 2000/10/05 06:57:45 reg Exp $
 #
 
 PORTNAME=	gkrellm
@@ -63,7 +63,7 @@ do-install:
 .endfor
 .endif
 .if !defined(WITHOUT_SENSOR)
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 .endif
 
 .include <bsd.port.post.mk>

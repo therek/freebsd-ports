@@ -2,7 +2,7 @@
 # Date created:		3 February 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/misc/bbjd/Makefile,v 1.3 1999/08/25 07:21:12 obrien Exp $
+# $FreeBSD: ports/misc/bbjd/Makefile,v 1.4 2000/04/14 08:45:22 asami Exp $
 #
 
 PORTNAME=	bbjd
@@ -25,6 +25,6 @@ do-install:
 		@ ${INSTALL_DATA} ${WRKSRC}/Theory ${PREFIX}/share/bbjd/
 
 post-install:
-		@ ${CAT} ${PKGDIR}/MESSAGE
+		@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

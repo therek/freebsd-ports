@@ -2,7 +2,7 @@
 # Date created:        9 September 1999
 # Whom:                Justin Robinson <jmrobins@samurai.ruin.org>
 #
-# $FreeBSD: ports/www/bacon/Makefile,v 1.2 1999/09/10 13:26:13 asami Exp $
+# $FreeBSD: ports/www/bacon/Makefile,v 1.3 2000/04/10 00:04:30 cpiazza Exp $
 #
 
 PORTNAME=	bacon
@@ -28,6 +28,6 @@ do-install:
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/bacon/
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/bacon/INSTALL
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			26 Jan 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/delegate/Makefile,v 1.26 2000/06/26 07:57:07 max Exp $
+# $FreeBSD: ports/net/delegate/Makefile,v 1.27 2000/07/13 09:21:35 max Exp $
 #
 
 PORTNAME=	delegate
@@ -51,6 +51,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/Manual.htm \
 	  ${PREFIX}/share/doc/delegate
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

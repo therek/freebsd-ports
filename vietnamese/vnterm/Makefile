@@ -3,7 +3,7 @@
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.21 2000/07/05 06:10:23 asami Exp $
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.22 2000/09/12 11:08:05 asami Exp $
 #
 
 PORTNAME=	vnterm
@@ -40,7 +40,7 @@ post-install:
 		${PREFIX}/lib/X11/fonts/vietnamese ; \
 	)
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+		${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/vnterm \
 		&& ${CHMOD} a+rx ${PREFIX}/share/doc/vnterm

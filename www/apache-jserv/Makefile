@@ -2,7 +2,7 @@
 # Date created:         1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.7 2000/05/29 03:24:52 steve Exp $
+# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.8 2000/07/07 19:23:32 steve Exp $
 #
 
 PORTNAME=	apache-jserv
@@ -46,6 +46,6 @@ pre-install:
 	${MKDIR} ${PREFIX}/share/java/classes
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		3 December 1998
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/www/npc/Makefile,v 1.2 1999/08/31 02:43:06 peter Exp $
+# $FreeBSD: ports/www/npc/Makefile,v 1.3 2000/04/10 00:06:12 cpiazza Exp $
 #
 
 PORTNAME=	npc
@@ -27,6 +27,6 @@ do-install:
 	${MKDIR} ${INDEX_DIR}
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

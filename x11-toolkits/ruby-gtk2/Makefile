@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.13 2000/09/26 08:01:53 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.14 2000/10/05 06:57:53 reg Exp $
 #
 
 PORTNAME=	gtk
@@ -32,7 +32,7 @@ USE_IMLIB=	yes
 .else
 PLIST=		${WRKDIR}/PLIST
 pre-install:
-	@${SED} -e '/gdkimlib/d' ${PKGDIR}/PLIST > ${PLIST}
+	@${SED} -e '/gdkimlib/d' ${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 post-configure:

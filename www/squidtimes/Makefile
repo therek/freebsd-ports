@@ -2,7 +2,7 @@
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidtimes/Makefile,v 1.6 2000/04/10 00:06:54 cpiazza Exp $
+# $FreeBSD: ports/www/squidtimes/Makefile,v 1.7 2000/06/29 07:02:56 obrien Exp $
 #
 
 PORTNAME=	squidtimes
@@ -27,6 +27,6 @@ do-install:
 		@ ${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${PREFIX}/bin/squidtimes
 
 post-install:
-		@ ${CAT} ${PKGDIR}/MESSAGE
+		@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

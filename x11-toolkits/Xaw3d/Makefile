@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.31 2000/06/16 08:18:13 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.32 2000/06/16 21:52:14 asami Exp $
 #
 
 PORTNAME=	Xaw3d
@@ -26,7 +26,7 @@ post-extract:
 
 .if exists(${X11BASE}/bin/XFree86)
 post-build:
-	${CP} ${PKGDIR}/PLIST ${WRKDIR}/PLIST
+	${CP} ${PKGDIR}/pkg-plist ${PLIST}
 	${ECHO} "lib/libXaw3d.so.7" >> ${PLIST}
 .endif
 

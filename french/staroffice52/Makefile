@@ -3,7 +3,7 @@
 # Whom:                 Martin Blapp
 # Translation:		Eric Masson
 #
-# $FreeBSD: ports/french/staroffice52/Makefile,v 1.2 2000/09/22 12:20:58 asami Exp $
+# $FreeBSD: ports/french/staroffice52/Makefile,v 1.3 2000/09/23 10:32:44 jedgar Exp $
 #
 
 PORTNAME=	staroffice
@@ -101,7 +101,7 @@ do-install:
 .if exists(${LINUXBASE}/${PREFIX})
 	@${LN} -fs ${LINUXBASE}/${PREFIX}/office52 ${PREFIX}/office52
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@-SAL_IGNOREXERRORS=1 TEMP=${TMPDIR} LD_LIBRARY_PATH=${LD_PATH} ${LINUXBASE}/bin/sh -c '${WRKSRC}/setup /net'
 	@if [ -f ${PREFIX}/office52/program/setup ]; then \
 		${ECHO} ; \

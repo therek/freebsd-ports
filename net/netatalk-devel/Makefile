@@ -2,7 +2,7 @@
 # Date created:         23 Jul 1997
 # Whom:                 stb
 #
-# $FreeBSD: ports/net/netatalk/Makefile,v 1.14 2000/06/29 07:02:36 obrien Exp $
+# $FreeBSD: ports/net/netatalk/Makefile,v 1.15 2000/09/17 12:06:38 kris Exp $
 #
 
 PORTNAME=	netatalk
@@ -31,6 +31,6 @@ MAN4=		atalk.4
 MAN8=		afpd.8 atalkd.8 papd.8 psf.8
 
 post-install:
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

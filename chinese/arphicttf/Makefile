@@ -2,7 +2,7 @@
 # Date created:		13 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.5 2000/04/22 11:24:55 vanilla Exp $
+# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.6 2000/04/22 11:30:22 vanilla Exp $
 #
 
 PORTNAME=	arphicttf
@@ -40,6 +40,6 @@ do-install:
 	@${MKDIR} ${FONTDIR}/arphic
 	@${CP} -fr ${WRKSRC}/license ${FONTDIR}/arphic
 	@${CP} -f ${WRKSRC}/logo.gif ${WRKSRC}/release.txt ${FONTDIR}/arphic
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

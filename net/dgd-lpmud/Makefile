@@ -2,7 +2,7 @@
 # Date created:		10 November 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/net/dgd-lpmud/Makefile,v 1.23 1999/08/30 14:22:32 peter Exp $
+# $FreeBSD: ports/net/dgd-lpmud/Makefile,v 1.24 2000/04/09 18:10:55 cpiazza Exp $
 #
 
 PORTNAME=	dgd-lpmud
@@ -22,15 +22,15 @@ RUN_DEPENDS=	${PREFIX}/dgd/bin/driver:${PORTSDIR}/net/dgd
 
 DIST_SUBDIR=	dgd
 WRKSRC=		${WRKDIR}/mud
-PKG_ARGS=	-v -c ${PKGDIR}/COMMENT -d ${PKGDIR}/DESCR -f ${PKGDIR}/PLIST \
+PKG_ARGS=	-v -c ${COMMENT} -d ${DESCR} -f ${PLIST} \
 		-p ${PREFIX}/dgd
-#		-r ${PKGDIR}/REQ
+#		-r ${PKGREQ}
 
 do-build:
 	@cd ${WRKDIR}/mud/bin; make
 
 do-install:
-	@tar -C ${WRKSRC} -cf - `${GREP} '^[a-z]' ${PKGDIR}/PLIST` \
+	@tar -C ${WRKSRC} -cf - `${GREP} '^[a-z]' ${PLIST}` \
 		| tar -C ${PREFIX}/dgd -xpf -
 
 .include <bsd.port.mk>

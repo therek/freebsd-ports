@@ -2,7 +2,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.20 2000/06/01 17:27:59 will Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.21 2000/06/01 17:29:38 will Exp $
 
 PORTNAME=	setiathome
 PORTVERSION=	2.4
@@ -63,6 +63,6 @@ do-install:
 
 post-install:
 	@PKG_PREFIX=${PREFIX} PACKAGE_BUILDING=${PACKAGE_BUILDING} \
-		${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+		${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

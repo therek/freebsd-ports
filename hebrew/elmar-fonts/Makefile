@@ -2,7 +2,7 @@
 # Date created:        23 March 2000
 # Whom:                nadav@cs.technion.ac.il
 #
-# $FreeBSD: $
+# $FreeBSD: ports/hebrew/elmar-fonts/Makefile,v 1.1 2000/08/02 11:05:18 nbm Exp $
 #
 
 PORTNAME=	elmar-fonts
@@ -23,6 +23,6 @@ do-install:
 	${TAR} -C ${PREFIX}/lib/X11/fonts/hebrew -xZpf \
 		${DISTDIR}/${DISTNAME}${EXTRACT_SUFX}
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

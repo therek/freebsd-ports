@@ -2,7 +2,7 @@
 # Date created:		17 Dec 1998
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/30upgrade/Makefile,v 1.16 2000/06/03 00:43:06 asami Exp $
+# $FreeBSD: ports/misc/30upgrade/Makefile,v 1.17 2000/08/25 10:26:46 asami Exp $
 #
 
 PORTNAME=	30upgrade
@@ -27,7 +27,7 @@ PKGINSTALL=	${WRKDIR}/INSTALL
 DATE!=		cat /var/db/port.mkversion
 
 do-install:
-	${SED} -e "s/%%VERSION%%/${DATE}/" ${PKGDIR}/INSTALL \
+	${SED} -e "s/%%VERSION%%/${DATE}/" ${PKGDIR}/pkg-install \
 		> ${PKGINSTALL}
 
 deinstall:

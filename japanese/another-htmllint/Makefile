@@ -2,7 +2,7 @@
 # Date created:		29 Sep 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/another-htmllint/Makefile,v 1.1 2000/10/02 05:18:59 kuriyama Exp $
 #
 
 PORTNAME=	another-htmllint
@@ -38,6 +38,6 @@ do-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} ${RULE} ${DIR}/rule
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@ad1440.net>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.11 2000/06/09 07:27:55 alex Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.12 2000/07/04 07:12:58 sobomax Exp $
 #
 
 PORTNAME=		jadetex
@@ -31,6 +31,6 @@ do-install:
 
 post-install:
 	${PREFIX}/bin/mktexlsr
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

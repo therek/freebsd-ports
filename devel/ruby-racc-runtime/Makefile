@@ -2,14 +2,14 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-racc-runtime/Makefile,v 1.1 2000/08/22 06:48:24 knu Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../ruby-racc
 
 PKGNAMESUFFIX=	-runtime
 
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 RUNTIME=	yes	
 

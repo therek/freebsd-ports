@@ -2,7 +2,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.12 2000/07/10 17:31:23 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.13 2000/07/11 03:50:32 taoka Exp $
 #
 
 PORTNAME=	lookup
@@ -16,8 +16,8 @@ MAINTAINER=	taoka@FreeBSD.org
 RUN_DEPENDS+=	eblook:${PORTSDIR}/japanese/eblook
 
 FILESDIR=	${.CURDIR}/../lookup-mule/files
-PKGDIR=		${.CURDIR}/../lookup-mule/pkg
-PLIST=		${.CURDIR}/pkg/PLIST
+PKGDIR=		${.CURDIR}/../lookup-mule
+PLIST=		${.CURDIR}/pkg-plist
 EMACS_PORT_NAME?=	mule
 
 .if (${EMACS_PORT_NAME} == "xemacs21-mule")

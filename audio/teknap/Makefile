@@ -2,7 +2,7 @@
 # Date created:				6 Jul 2000
 # Whom:					Carl Johan Madestrand
 #
-# $FreeBSD: ports/audio/teknap/Makefile,v 1.4 2000/09/17 18:58:40 ade Exp $
+# $FreeBSD: ports/audio/teknap/Makefile,v 1.5 2000/10/05 06:47:32 reg Exp $
 #
 
 PORTNAME=	TekNap
@@ -63,7 +63,7 @@ post-install:
 	${TAR} --directory ${PREFIX}/share/TekNap/help -xf -
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/TekNap
 	@${ECHO}
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e "s:%%PREFIX%%:${PREFIX}:g"
+	@${CAT} ${PKGMESSAGE} | ${SED} -e "s:%%PREFIX%%:${PREFIX}:g"
 	@${ECHO}
 .endif
 

@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz/Makefile,v 1.11 2000/04/14 07:20:48 asami Exp $
+# $FreeBSD: ports/math/wingz/Makefile,v 1.12 2000/04/23 22:59:43 kris Exp $
 #
 
 PORTNAME=	Wingz
@@ -23,6 +23,6 @@ NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 post-install:
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

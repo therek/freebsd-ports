@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.26 2000/08/30 05:26:09 asami Exp $
+# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.27 2000/10/07 22:15:03 asami Exp $
 #
 
 PORTNAME=	kterm16c
@@ -81,6 +81,6 @@ post-install:
 	@${INSTALL_DATA} ${FILESDIR}/dot.termcap ${DOCDIR}
 	@${INSTALL_DATA} ${FILESDIR}/kterm16c.doc ${DOCDIR}
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.81 2000/09/26 15:25:40 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.82 2000/10/05 06:47:37 reg Exp $
 #
 
 PORTNAME?=	vim
@@ -73,7 +73,7 @@ MAKE_ARGS+=	CONF_OPT_PERL="--disable-perlinterp --disable-pythoninterp --disable
 
 pre-build:
 	@(cd ${WRKSRC}; ${MAKE} distclean)
-	@${SED} -e '/gvi/d' ${PKGDIR}/PLIST > ${WRKDIR}/PLIST.nogui
+	@${SED} -e '/gvi/d' ${PKGDIR}/pkg-plist > ${WRKDIR}/PLIST.nogui
 
 post-install:
 .if !defined(LITE)

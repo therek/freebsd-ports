@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1998
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/print/mgv/Makefile,v 1.16 2000/04/09 17:50:13 cpiazza Exp $
+# $FreeBSD: ports/print/mgv/Makefile,v 1.17 2000/08/03 09:26:05 asami Exp $
 #
 
 PORTNAME=	mgv
@@ -24,6 +24,6 @@ PLIST_SUB=	MGV_VERSION=3.1.5
 MAN1=		mgv.1
 
 post-install:
-		@ ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+		@ ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

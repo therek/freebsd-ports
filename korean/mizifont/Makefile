@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/mizifont/Makefile,v 1.14 2000/07/15 13:25:00 cjh Exp $
+# $FreeBSD: ports/korean/mizifont/Makefile,v 1.15 2000/09/12 11:08:04 asami Exp $
 #
 
 PORTNAME=	mizifonts
@@ -54,6 +54,6 @@ do-install:
 	cd ${PREFIX}/lib/X11/fonts/local/ ; mkfontdir
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

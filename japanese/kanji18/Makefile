@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.7 2000/09/12 11:08:01 asami Exp $
+# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.8 2000/09/12 13:03:52 asami Exp $
 #
 
 PORTNAME=	kanji
@@ -58,7 +58,7 @@ do-build:
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install:
 	@${INSTALL_DATA} ${WRKSRC}/${DISTNAME}.pcf.gz ${PREFIX}/lib/X11/fonts/local/

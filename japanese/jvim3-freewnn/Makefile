@@ -2,12 +2,12 @@
 # Date created:		98/11/17
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3-freewnn/Makefile,v 1.9 2000/04/11 14:14:15 knu Exp $
+# $FreeBSD: ports/japanese/jvim3-freewnn/Makefile,v 1.10 2000/09/08 04:34:37 taoka Exp $
 #
 
 FREEWNN=	yes
 
 MASTERDIR=	${.CURDIR}/../jvim3
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include "${MASTERDIR}/Makefile"

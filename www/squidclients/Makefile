@@ -2,7 +2,7 @@
 # Date created:		05 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidclients/Makefile,v 1.4 1999/08/31 02:43:16 peter Exp $
+# $FreeBSD: ports/www/squidclients/Makefile,v 1.5 2000/04/10 00:06:53 cpiazza Exp $
 #
 
 PORTNAME=	squidclients
@@ -25,6 +25,6 @@ do-install:
 		@ ${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${PREFIX}/bin/squidclients
 
 post-install:
-		@ ${CAT} ${PKGDIR}/MESSAGE
+		@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

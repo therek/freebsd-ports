@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.42 2000/07/17 08:47:01 kbyanc Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.43 2000/09/05 02:03:50 steve Exp $
 #
 
 PORTNAME=	imap-uw
@@ -36,7 +36,7 @@ MAN8=		ipopd.8 imapd.8
 
 pre-extract:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-	@${SH} ${PKGDIR}/INSTALL foo PRE-INSTALL || ${FALSE}
+	@${SH} ${PKGINSTALL} foo PRE-INSTALL || ${FALSE}
 .endif
 
 post-build:

@@ -2,7 +2,7 @@
 # Date created:         2 Dec 1996
 # Whom:                 nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/sysutils/contool/Makefile,v 1.11 2000/04/22 10:11:50 mharo Exp $
+# $FreeBSD: ports/sysutils/contool/Makefile,v 1.12 2000/08/08 17:16:59 nsayer Exp $
 #
 
 PORTNAME=	contool
@@ -25,6 +25,6 @@ pre-install:
 	@${MKDIR} ${PREFIX}/lib/help
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		15 Jul 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/dc3play/Makefile,v 1.6 1999/12/02 03:24:17 itojun Exp $
+# $FreeBSD: ports/graphics/dc3play/Makefile,v 1.7 2000/04/13 06:28:12 obrien Exp $
 #
 
 PORTNAME=	dc3play
@@ -26,6 +26,6 @@ post-install:
 		${INSTALL_DATA} ${WRKSRC}/../$$i \
 			${PREFIX}/share/doc/dc3play; \
 	done
-	${SED} -e 's@\/usr\/local@${PREFIX}@' < ${PKGDIR}/MESSAGE
+	${SED} -e 's@\/usr\/local@${PREFIX}@' < ${PKGMESSAGE}
 
 .include <bsd.port.mk>

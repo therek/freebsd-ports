@@ -2,7 +2,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.18 2000/05/10 16:04:28 shige Exp $
+# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.19 2000/07/13 05:11:10 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -25,8 +25,8 @@ PLIST_SUB=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
 ALL_TARGET=	package
 INSTALL_TARGET=	install-package
 
-# use pkg/* files in ${.CURDIR}
-PKGDIR=		${.CURDIR}/pkg
+# use pkg-* files in ${.CURDIR}
+PKGDIR=		${.CURDIR}
 
 # package info manifest
 MANIFEST=	MANIFEST.apel

@@ -2,7 +2,7 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.7 1999/12/30 08:11:32 dburr Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.8 2000/04/08 21:24:08 mharo Exp $
 #
 
 PORTNAME=	napster
@@ -35,6 +35,6 @@ do-install:
 .endif
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

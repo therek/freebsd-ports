@@ -3,7 +3,7 @@
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/japanese/Canna/Makefile,v 1.32 2000/06/16 10:38:32 sobomax Exp $
+# $FreeBSD: ports/japanese/Canna/Makefile,v 1.33 2000/06/16 21:51:11 asami Exp $
 #
 
 PORTNAME=	Canna
@@ -60,6 +60,6 @@ post-install:
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; 	\
 		${INSTALL_SCRIPT} ${WRKDIR}/canna.sh ${STARTUP_SCRIPT};	\
 	fi
-	${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

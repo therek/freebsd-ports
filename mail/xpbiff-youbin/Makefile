@@ -2,7 +2,7 @@
 # Date created:         7 April 1997
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/mail/xpbiff-youbin/Makefile,v 1.6 2000/07/02 14:09:33 sanpei Exp $
+# $FreeBSD: ports/mail/xpbiff-youbin/Makefile,v 1.7 2000/08/03 14:28:31 sanpei Exp $
 #
 
 # can't use PORTSDIR here, since we haven't included bsd.port.mk
@@ -14,8 +14,8 @@ MAINTAINER=	sanpei@FreeBSD.org
 
 YOUBIN=		yes
 MASTERDIR=	${.CURDIR}/../xpbiff
-PKGDIR=		${.CURDIR}/pkg
-PLIST=		${MASTERDIR}/pkg/PLIST
+PKGDIR=		${.CURDIR}
+PLIST=		${MASTERDIR}/pkg-plist
 
 RUN_DEPENDS=	youbin:${PORTSDIR}/mail/youbin
 

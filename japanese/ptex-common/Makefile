@@ -2,7 +2,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.32 2000/06/16 10:38:41 sobomax Exp $
+# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.33 2000/06/16 21:51:14 asami Exp $
 #
 
 PORTNAME=	ptex
@@ -44,9 +44,9 @@ do-configure:
 
 pre-install:
 .if defined(BATCH)
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL BATCH
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGREQ} ${PKGNAME} INSTALL BATCH
 .else
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGREQ} ${PKGNAME} INSTALL
 .endif
 	@${TAR} --exclude 'texmf/tex/latex/base/*' --exclude 'texmf/dvips/*' \
 	  -C ${PREFIX}/share -zxf ${DISTDIR}/${DIST_SUBDIR}/texmflib-7.3.tar.gz

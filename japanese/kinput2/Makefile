@@ -2,7 +2,7 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-freewnn/Makefile,v 1.8 2000/09/17 15:11:12 taoka Exp $
+# $FreeBSD: ports/japanese/kinput2-freewnn/Makefile,v 1.9 2000/10/08 07:20:59 asami Exp $
 #
 
 PORTNAME=	kinput2
@@ -72,8 +72,8 @@ do-configure:
 
 post-install:
 # For FreeWnn or Wnn6
-	@if [ -e ${PKGDIR}/MESSAGE ]; then \
-		${CAT} ${PKGDIR}/MESSAGE; \
+	@if [ -e ${PKGMESSAGE} ]; then \
+		${CAT} ${PKGMESSAGE}; \
 	fi
 
 .include <bsd.port.mk>

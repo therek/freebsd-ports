@@ -2,7 +2,7 @@
 # Date created:		2 Apr 1997
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.12 2000/05/31 05:52:21 asami Exp $
+# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.13 2000/09/05 02:14:30 steve Exp $
 #
 
 PORTNAME=	LPRng
@@ -36,7 +36,6 @@ MANCOMPRESSED=	yes
 post-install:
 	${INSTALL} -d -g bin -o bin -m 0555 ${PREFIX}/share/doc/LPRng
 	${INSTALL} -c -g bin -o bin -m 0444 ${WRKSRC}/HOWTO/* ${PREFIX}/share/doc/LPRng
-	@${CAT} ${PKGDIR}/MESSAGE | \
-		${SED} -e "s|@@PREFIX@@|${PREFIX}|g"
+	@${CAT} ${PKGMESSAGE} | ${SED} -e "s|@@PREFIX@@|${PREFIX}|g"
 
 .include <bsd.port.mk>

@@ -4,7 +4,7 @@
 #			KUNISHIMA Takeo <kunishi@c.oka-pu.ac.jp>
 #			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/net/ppxp/Makefile,v 1.14 2000/04/17 00:18:33 reg Exp $
+# $FreeBSD: ports/net/ppxp/Makefile,v 1.15 2000/08/03 09:25:52 asami Exp $
 #
 
 PORTNAME=	ppxp
@@ -78,6 +78,6 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/console/tcltk/README ${PREFIX}/share/doc/tkppxp
 	@${MKDIR} ${PREFIX}/share/doc/xppxp
 	@${INSTALL_DATA} ${WRKSRC}/console/xppxp/README ${PREFIX}/share/doc/xppxp
-	csh ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	csh ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

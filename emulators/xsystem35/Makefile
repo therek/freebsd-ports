@@ -2,7 +2,7 @@
 # Date created:		24 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.23 2000/07/07 19:59:26 steve Exp $
+# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.24 2000/10/05 06:36:10 reg Exp $
 #
 
 PORTNAME=	xsystem35
@@ -52,7 +52,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/xsys35rc.sample ${PREFIX}/share/examples/xsystem35
 	@(cd ${WRKSRC}/../contrib; \
 		${INSTALL_DATA} ${EXAMPLES} ${PREFIX}/share/examples/xsystem35)
-	@${SED} -e s,PREFIX,${PREFIX}, ${PKGDIR}/MESSAGE > ${WRKSRC}/MESSAGE
+	@${SED} -e s,PREFIX,${PREFIX}, ${PKGDIR}/pkg-message > ${WRKSRC}/MESSAGE
 	@${CAT} ${WRKSRC}/MESSAGE
 
 .include <bsd.port.post.mk>

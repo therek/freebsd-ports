@@ -2,7 +2,7 @@
 # Date created:				10 Mar 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/mozilla-fonts/Makefile,v 1.1 2000/05/01 02:35:11 steve Exp $
 #
 
 PORTNAME=	mozilla-fonts
@@ -22,6 +22,6 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/mozilla-fonts
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/mozilla-fonts
 .endif
-	@ ${CAT} ${PKGDIR}/DESCR
+	@ ${CAT} ${DESCR}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		29 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30/Makefile,v 1.11 2000/07/05 17:05:21 knu Exp $
+# $FreeBSD: ports/japanese/vje30/Makefile,v 1.12 2000/07/25 07:24:17 knu Exp $
 #
 
 PORTNAME=	vje
@@ -104,6 +104,6 @@ do-install:
 	@${GREP} -qw '^vjed' /etc/services || ${ECHO} "vjed		11493/tcp		# VJE-Delta Server" >> /etc/services
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

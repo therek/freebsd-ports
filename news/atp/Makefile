@@ -2,7 +2,7 @@
 # Date created:         9 Nov 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/news/atp/Makefile,v 1.5 2000/04/21 07:51:39 mharo Exp $
+# $FreeBSD: ports/news/atp/Makefile,v 1.6 2000/09/25 12:21:33 asami Exp $
 #
 
 PORTNAME=		atp
@@ -26,6 +26,6 @@ MAN1=			atp.1 \
 MAN3=			editline.3
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nn/Makefile,v 1.25 2000/04/09 17:33:05 cpiazza Exp $
+# $FreeBSD: ports/news/nn/Makefile,v 1.26 2000/04/21 07:51:47 mharo Exp $
 #
 
 PORTNAME=	nn
@@ -25,6 +25,6 @@ pre-build:
 	    | ${SED} -e "s#SUB_MANPREFIX#${MANPREFIX}#" > ${WRKSRC}/config.h
 
 post-install:
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${DISTNAME} POST-INSTALL
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${DISTNAME} POST-INSTALL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		13 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/nethack/Makefile,v 1.30 2000/08/03 09:25:07 asami Exp $
+# $FreeBSD: ports/japanese/nethack/Makefile,v 1.31 2000/09/12 13:03:52 asami Exp $
 #
 
 PORTNAME=	nethack
@@ -55,6 +55,6 @@ post-install:
 	${RM} ${PREFIX}/share/examples/ja/nethack/$i.bdf
 	${GZIP_CMD} ${PREFIX}/share/examples/ja/nethack/$i.pcf
 .endfor
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

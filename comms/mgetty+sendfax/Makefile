@@ -2,7 +2,7 @@
 # Date created:				20 April 1998
 # Whom:					rkw
 #
-# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.32 2000/06/26 05:23:31 kris Exp $
+# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.33 2000/09/10 22:44:57 jmz Exp $
 #
 
 PORTNAME=	mgetty
@@ -38,7 +38,7 @@ pre-install:
 
 .if !defined(BATCH)
 post-install:
-	@(cd ${PKGDIR}; export PKG_PREFIX=${PREFIX}; ${PERL5} INSTALL _ POST-INSTALL)
+	@(cd ${PKGDIR}; export PKG_PREFIX=${PREFIX}; ${PERL5} ${PKGINSTALL} _ POST-INSTALL)
 .endif
 
 .include <bsd.port.mk>

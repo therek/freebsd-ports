@@ -2,7 +2,7 @@
 # Date created:			09 Nov 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/cap/Makefile,v 1.8 1999/09/08 18:17:04 sada Exp $
+# $FreeBSD: ports/net/cap/Makefile,v 1.9 2000/04/09 18:10:22 cpiazza Exp $
 #
 
 PORTNAME=	cap
@@ -100,6 +100,6 @@ post-install:
 	@${LN} -fs ${PREFIX}/man/man3/CAP.3${GZ} ${PREFIX}/man/man3/${f}.3${GZ}
 .endfor
 	@${LN} -fs ${PREFIX}/man/man8/papif.8${GZ} ${PREFIX}/man/man8/papof.8${GZ}
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include "bsd.port.mk"

@@ -2,7 +2,7 @@
 # Date created:		29th April, 1997
 # Whom:			Joel Sutton <jsutton@webnet.com.au>
 #
-# $FreeBSD: ports/emulators/atari800/Makefile,v 1.8 2000/02/06 21:46:25 jedgar Exp $
+# $FreeBSD: ports/emulators/atari800/Makefile,v 1.9 2000/04/12 04:55:10 mharo Exp $
 #
 
 PORTNAME=	atari800
@@ -74,7 +74,7 @@ post-install:
 	for file in ${DOC_FILES} ; do \
 		${INSTALL_DATA} ${WRKSRC}/$$file ${ATARI_DOC}/ ;\
 	done
-	${INSTALL_DATA} ${PKGDIR}/DESCR ${ATARI_DOC}/README.FreeBSD
+	${INSTALL_DATA} ${DESCR} ${ATARI_DOC}/README.FreeBSD
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		19 July 1999
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.9 2000/06/29 07:02:20 obrien Exp $
+# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.10 2000/07/21 17:57:38 asami Exp $
 #
 
 PORTNAME=	gridpix
@@ -27,7 +27,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${PREFIX}/share/doc/gridpix
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/gridpix
 	@${ECHO} "================================"
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@${ECHO} "================================"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		17 Aug. 1998
 # Whom: Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp> & ELISA Font Project
 #
-# $FreeBSD: ports/japanese/elisa8x8/Makefile,v 1.4 2000/04/11 14:13:20 knu Exp $
+# $FreeBSD: ports/japanese/elisa8x8/Makefile,v 1.5 2000/09/12 11:08:00 asami Exp $
 #
 
 PORTNAME=	elisa8x8
@@ -40,7 +40,7 @@ do-build:
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install:
 	@${MKDIR} ${INSTALLDIR} ${DOCDIR}

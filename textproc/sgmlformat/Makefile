@@ -2,7 +2,7 @@
 # Date created:		July 16, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.15 1999/08/31 06:51:28 mharo Exp $
+# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.16 2000/04/09 21:53:08 cpiazza Exp $
 #
 
 PORTNAME=	sgmlformat
@@ -34,6 +34,6 @@ MAN5=		transpec.5
 MANCOMPRESSED=	yes
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

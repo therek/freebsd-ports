@@ -2,13 +2,13 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/korean/nvi-iso-2022-kr/Makefile,v 1.16 2000/02/12 20:31:24 imura Exp $
+# $FreeBSD: ports/korean/nvi-iso-2022-kr/Makefile,v 1.17 2000/04/13 09:17:18 asami Exp $
 #
 
 PKGNAMESUFFIX=	-iso2022kr
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
-COMMENT=	${.CURDIR}/pkg/COMMENT
+COMMENT=	${.CURDIR}/pkg-comment
 
 .include "${MASTERDIR}/Makefile"
 

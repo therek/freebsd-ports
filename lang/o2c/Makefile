@@ -2,7 +2,7 @@
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.6 1999/10/27 09:17:21 mharo Exp $
+# $FreeBSD: ports/lang/o2c/Makefile,v 1.7 2000/04/12 06:19:36 obrien Exp $
 
 PORTNAME=	o2c
 PORTVERSION=	1.16
@@ -24,6 +24,6 @@ post-patch:
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/system/o2c.red.template ${PREFIX}/lib/o2c-1.16
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

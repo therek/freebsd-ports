@@ -2,7 +2,7 @@
 # Date created:		13 Dec 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-3DLabs/Makefile,v 1.6 1999/12/10 07:18:59 imura Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-3DLabs/Makefile,v 1.7 2000/04/10 00:52:43 cpiazza Exp $
 #
 
 PORTNAME=	xtt-3DLabs
@@ -16,6 +16,6 @@ RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 SERVER=		XF86_3DLabs
 
 MASTERDIR=	${.CURDIR}/../XttXF86srv-common
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include	"${MASTERDIR}/Makefile"

@@ -2,7 +2,7 @@
 # Date created:		7 February 1996
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/okphone/Makefile,v 1.15 1999/08/31 06:46:03 mharo Exp $
+# $FreeBSD: ports/japanese/okphone/Makefile,v 1.16 2000/04/11 14:15:52 knu Exp $
 #
 
 PORTNAME=	okphone
@@ -26,6 +26,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/$f ${PREFIX}/share/doc/okphone
 .endfor
 .endif
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.14 2000/05/29 03:57:08 steve Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.15 2000/07/07 19:16:23 steve Exp $
 #
 
 PORTNAME=	linux_rar
@@ -49,7 +49,7 @@ do-install:
 .if defined(WITH_UNRAR)
 	@${INSTALL_PROGRAM} ${WRKSRC}/unrar ${PREFIX}/bin
 	brandelf -t Linux ${PREFIX}/bin/unrar
-	@${ECHO} bin/unrar >> ${WRKSRC}/PLIST
+	@${ECHO} bin/unrar >> ${PLIST}
 .endif
 .for i in ${RARDOCS}
 	@${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/doc/rar
@@ -59,12 +59,12 @@ do-install:
 .endfor
 	@${INSTALL_MAN} ${WRKSRC}/rar.txt ${PREFIX}/man/cat1/rar.1
 
-	@${CP} ${PKGDIR}/PLIST ${WRKSRC}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .if !defined(NOMANCOMPRESS)
 	@${GZIP_CMD} ${PREFIX}/man/cat1/rar.1
-	@${ECHO} man/cat1/rar.1.gz >> ${WRKSRC}/PLIST
+	@${ECHO} man/cat1/rar.1.gz >> ${PLIST}
 .else
-	@${ECHO} man/cat1/rar.1 >> ${WRKSRC}/PLIST
+	@${ECHO} man/cat1/rar.1 >> ${PLIST}
 .endif
 
 post-install:

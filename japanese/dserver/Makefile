@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dserver/Makefile,v 1.11 2000/04/16 04:14:07 asami Exp $
+# $FreeBSD: ports/japanese/dserver/Makefile,v 1.12 2000/06/09 21:21:49 asami Exp $
 #
 
 PORTNAME=	dserver
@@ -35,6 +35,6 @@ post-install:
 	@${SED} s!PREFIX_DIR!${PREFIX}!g ${WRKSRC}/deinstall.sh.template \
 	  > ${PREFIX}/lib/dserver/deinstall.sh
 	@${INSTALL_DATA} ${FILESDIR}/README.FreeBSD-setup.euc ${PREFIX}/lib/dserver/doc/
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 .include <bsd.port.mk>

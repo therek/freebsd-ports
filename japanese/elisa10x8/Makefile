@@ -2,7 +2,7 @@
 # Date created:		26 Sep 1997
 # Whom: Dai ISHIJIMA & ELISA Font Project <ishijima@tri.pref.osaka.jp>
 #
-# $FreeBSD: ports/japanese/elisa10x8/Makefile,v 1.7 2000/04/11 14:13:17 knu Exp $
+# $FreeBSD: ports/japanese/elisa10x8/Makefile,v 1.8 2000/09/12 11:07:58 asami Exp $
 #
 
 PORTNAME=	elisa10x8
@@ -34,7 +34,7 @@ PLIST_SUB=	FONTSDIR=${FONTSDIR}
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 post-install:
 	@(cd ${PREFIX}/${FONTSDIR} ; mkfontdir)

@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.80 2000/09/26 16:15:43 sobomax Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.81 2000/10/05 07:22:38 reg Exp $
 #
 
 PORTNAME=	gimp
@@ -63,6 +63,6 @@ USE_GNOME=	yes
 
 post-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/gimp.setfont ${PREFIX}/bin
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>

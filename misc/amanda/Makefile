@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda/Makefile,v 1.15 1999/12/29 07:13:28 steve Exp $
+# $FreeBSD: ports/misc/amanda/Makefile,v 1.16 2000/04/14 08:45:16 asami Exp $
 #
 
 PORTNAME=	amanda
@@ -45,6 +45,6 @@ post-install:
 .endfor
 	@${MKDIR} ${PREFIX}/share/examples/amanda
 	${INSTALL_DATA} ${WRKSRC}/example/* ${PREFIX}/share/examples/amanda
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

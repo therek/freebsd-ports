@@ -2,7 +2,7 @@
 # Date created:         Dec 5 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/seaview/Makefile,v 1.15 1999/08/25 04:48:07 obrien Exp $
+# $FreeBSD: ports/biology/seaview/Makefile,v 1.16 2000/04/08 22:04:54 mharo Exp $
 #
 
 PORTNAME=	seaview
@@ -28,6 +28,6 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/seaview.help ${PREFIX}/lib/X11/seaview
 
 post-install:
-	@ ${CAT} ${PKGDIR}/DESCR
+	@ ${CAT} ${DESCR}
 
 .include <bsd.port.mk>

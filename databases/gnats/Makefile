@@ -2,7 +2,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.30 2000/05/29 04:05:05 steve Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.31 2000/09/17 00:41:28 paul Exp $
 #
 
 PORTNAME=	gnats
@@ -44,7 +44,7 @@ post-build:
 	(cd ${WRKSRC}/send-pr; ${MAKE} info)
 
 pre-install:
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 post-install:
 	(cd ${WRKSRC}/gnats;   ${MAKE} install-info)

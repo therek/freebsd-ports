@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.26 2000/10/07 22:17:57 asami Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.27 2000/10/08 02:16:32 asami Exp $
 #
 
 PORTNAME=	modula-3-lib
@@ -131,7 +131,7 @@ do-build:
 
 pre-install:
 	@${ECHO_MSG} "Checking for conflicting shared libraries"
-	@PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 do-install:
 	@${ECHO_MSG} "Installing shared libraries"

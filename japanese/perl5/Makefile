@@ -2,7 +2,7 @@
 # Date created:		7 January 1997
 # Whom:			Yoshiro MIHIRA
 #
-# $FreeBSD: ports/japanese/perl5/Makefile,v 1.24 2000/04/12 14:36:42 knu Exp $
+# $FreeBSD: ports/japanese/perl5/Makefile,v 1.25 2000/07/19 07:09:10 shige Exp $
 #
 
 PORTNAME=	perl
@@ -129,6 +129,6 @@ post-install:
 	@${LN} -fs ${PREFIX}/bin/sperl${JPERL_VERSION} ${PREFIX}/bin/suidperl
 	@${LN} -fs ${PREFIX}/bin/sperl${JPERL_VERSION} ${PREFIX}/bin/jsuidperl
 	@${LN} -fs ${PREFIX}/lib/perl5/${JPERL_VERSION}/i386-freebsd/CORE/libperl.so.${PERL_SHLIBVER} ${PREFIX}/lib/perl5/${JPERL_VERSION}/i386-freebsd/CORE/libperl.so
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

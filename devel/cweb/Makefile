@@ -2,7 +2,7 @@
 # Date created:		10 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cweb/Makefile,v 1.5 2000/04/19 10:56:04 tg Exp $
+# $FreeBSD: ports/devel/cweb/Makefile,v 1.6 2000/06/06 08:54:26 tg Exp $
 #
 
 PORTNAME=	cweb
@@ -26,6 +26,6 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/doc/cweb
 	@${INSTALL_DATA} ${WRKDIR}/cwebman.tex ${PREFIX}/share/doc/cweb
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

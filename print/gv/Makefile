@@ -3,7 +3,7 @@
 # Date created:			  16 Apr 1996
 # Whom:				  tg@freebsd.org
 #
-# $FreeBSD: ports/print/gv/Makefile,v 1.28 2000/08/27 04:18:33 obrien Exp $
+# $FreeBSD: ports/print/gv/Makefile,v 1.29 2000/08/28 23:57:34 obrien Exp $
 #
 
 PORTNAME=	gv
@@ -24,6 +24,6 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@(cd ${WRKSRC}; ${MAKE} install.doc)
 .endif
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

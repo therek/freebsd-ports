@@ -2,7 +2,7 @@
 # Date created:		7 March 2000
 # Whom:			support@kryltech.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/ssserver/Makefile,v 1.1 2000/07/21 13:43:36 nbm Exp $
 #
 
 PORTNAME=	ssserver
@@ -80,6 +80,6 @@ do-install:
 	@${CHMOD} -f 777 ${PREFIX}/www/cgi-bin/ssserverdata
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

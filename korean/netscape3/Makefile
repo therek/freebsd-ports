@@ -2,7 +2,7 @@
 # Date created:		6 Apr 1995
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/netscape3/Makefile,v 1.11 2000/04/21 22:03:54 fenner Exp $
+# $FreeBSD: ports/korean/netscape3/Makefile,v 1.12 2000/07/23 05:06:31 cjh Exp $
 #
 
 PORTNAME=	netscape
@@ -57,6 +57,6 @@ do-install:
 # by sada@e-mail.ne.jp
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

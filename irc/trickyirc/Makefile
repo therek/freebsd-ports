@@ -2,7 +2,7 @@
 # Date created:			 	Jun 20th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/irc/trickyirc/Makefile,v 1.5 1999/08/25 06:13:01 obrien Exp $
+# $FreeBSD: ports/irc/trickyirc/Makefile,v 1.6 2000/04/12 06:28:32 obrien Exp $
 #
 
 PORTNAME=	trickyirc
@@ -25,6 +25,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README \
 	    ${PREFIX}/share/doc/TrickyIRC
 	@strip ${PREFIX}/bin/trickyirc
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e s:/usr/local:${PREFIX}:
+	@${CAT} ${PKGMESSAGE} | ${SED} -e s:/usr/local:${PREFIX}:
 
 .include <bsd.port.mk>

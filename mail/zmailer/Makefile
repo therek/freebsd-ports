@@ -2,7 +2,7 @@
 # Date created:		4 January 1999
 # Whom:			Alex Perel <veers@disturbed.net>
 #
-# $FreeBSD: ports/mail/zmailer/Makefile,v 1.5 2000/07/05 12:36:38 tg Exp $
+# $FreeBSD: ports/mail/zmailer/Makefile,v 1.6 2000/09/22 01:58:56 kris Exp $
 #
 
 PORTNAME=	zmailer
@@ -60,7 +60,7 @@ PKGMESSAGE=	${WRKDIR}/MESSAGE
 
 post-configure:
 	${SED} -e s:@PREFIX@:${PREFIX}:g -e s:@PORTSDIR@:${PORTSDIR}:g \
-		${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+		${PKGDIR}/pkg-message > ${PKGMESSAGE}
 
 post-install:
 	@${INSTALL_SCRIPT} ${FILESDIR}/zmailer.sh.sample \

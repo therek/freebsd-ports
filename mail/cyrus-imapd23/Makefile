@@ -2,7 +2,7 @@
 # Date created:					May 4th 1997
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus/Makefile,v 1.30 2000/06/29 07:02:28 obrien Exp $
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.31 2000/09/03 16:09:58 wosch Exp $
 #
 
 PORTNAME=	cyrus
@@ -41,7 +41,7 @@ post-configure:
 
 pre-install:
 		@ ${CP} ${WRKSRC}/man/quota.8 ${WRKSRC}/man/cyrquota.8
-		@${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+		@${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 DOCS=	README acl-extension anoncvs bugs changes copyrights install \
 	mailing-list overview quota-extension server-design
@@ -101,6 +101,6 @@ post-install:
 		@${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/cyrus.sh \
 			>${PREFIX}/etc/rc.d/cyrus.sh
 		@${CHMOD} 0755 ${PREFIX}/etc/rc.d/cyrus.sh
-		@PKG_PREFIX=${PREFIX} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+		@PKG_PREFIX=${PREFIX} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

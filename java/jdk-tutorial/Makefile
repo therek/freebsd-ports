@@ -2,7 +2,7 @@
 # Date created:		Tue Mar 23 10:18:20 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.11 2000/04/14 18:40:24 knu Exp $
+# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.12 2000/05/28 03:32:38 steve Exp $
 #
 
 PORTNAME=	jdk-tutorial
@@ -26,7 +26,7 @@ do-install:
 	(cd ${WRKSRC} && ${TAR} -cf - * ) \
 	    | (cd ${PREFIX}/jdk${PORTVERSION}/docs/books/tutorial \
 	        && ${TAR} -xf -)
-	@${SED} s+!!PREFIX!!+${PREFIX}+g < ${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+	@${SED} s+!!PREFIX!!+${PREFIX}+g < ${PKGDIR}/pkg-message > ${PKGMESSAGE}
 	@${CAT} ${PKGMESSAGE}
 	@${RM} ${PKGMESSAGE}
 

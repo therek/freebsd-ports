@@ -2,7 +2,7 @@
 # Date created:		09 Apr 2000
 # Whom:			Peter Losher <plosher@wwiv.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/listar/Makefile,v 1.1 2000/07/20 13:49:25 nbm Exp $
 #
 
 PORTNAME=	listar
@@ -23,7 +23,7 @@ pre-patch:
 
 pre-install:
 
-	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 	@ ${MKDIR} ${PREFIX}/listar
 	@ ${CP} -R ${WRKDIR}/${DISTNAME}/* ${PREFIX}/listar
 	@ ${RM} -R ${PREFIX}/listar/src/

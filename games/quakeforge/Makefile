@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/games/quakeforge/Makefile,v 1.10 2000/06/14 13:21:13 sobomax Exp $
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.11 2000/10/08 01:28:10 asami Exp $
 #
 
 PORTNAME=	QuakeForge
@@ -56,7 +56,7 @@ pre-configure:
 .endif
 
 do-install:
-	@${CP} ${PKGDIR}/PLIST ${PLIST}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 
 .if defined(WITH_GLX)
 	@${CAT} ${PKGDIR}/pkg-plist.glx >>${PLIST}

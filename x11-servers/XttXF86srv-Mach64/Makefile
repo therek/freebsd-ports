@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-Mach64/Makefile,v 1.10 1999/12/10 07:19:06 imura Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-Mach64/Makefile,v 1.11 2000/04/10 00:52:49 cpiazza Exp $
 #
 
 PORTNAME=	xtt-Mach64
@@ -16,6 +16,6 @@ RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 SERVER=		XF86_Mach64
 
 MASTERDIR=	${.CURDIR}/../XttXF86srv-common
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include	"${MASTERDIR}/Makefile"

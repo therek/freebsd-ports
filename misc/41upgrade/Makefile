@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/41upgrade/Makefile,v 1.1 2000/08/25 10:23:14 asami Exp $
 #
 
 PORTNAME=	41upgrade
@@ -26,7 +26,7 @@ PKGINSTALL=	${WRKDIR}/INSTALL
 DATE!=		cat /var/db/port.mkversion
 
 do-install:
-	${SED} -e "s/%%VERSION%%/${DATE}/" ${PKGDIR}/INSTALL \
+	${SED} -e "s/%%VERSION%%/${DATE}/" ${PKGDIR}/pkg-install \
 		> ${PKGINSTALL}
 
 deinstall:

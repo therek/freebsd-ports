@@ -2,13 +2,13 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim-wnn6/Makefile,v 1.4 1999/08/25 05:24:38 obrien Exp $
+# $FreeBSD: ports/japanese/jvim-wnn6/Makefile,v 1.5 2000/04/11 14:14:09 knu Exp $
 #
 
 PKGNAMESUFFIX=	-wnn6
 WNN6=		yes
 
 MASTERDIR=	${.CURDIR}/../jvim
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include "${MASTERDIR}/Makefile"

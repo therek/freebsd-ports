@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.21 2000/09/07 08:01:29 knu Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.22 2000/09/08 04:34:51 taoka Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -51,10 +51,10 @@ CONFIGURE_ARGS=	--with-x11 \
 MAN1=		ctags.1 etags.1 gnuattach.1 gnuclient.1 gnudoit.1 \
 		gnuserv.1 xemacs.1
 
-PKGDIR=		${.CURDIR}/../../editors/xemacs${XEMACS_MAJOR_VER}-mule-common/pkg
+PKGDIR=		${.CURDIR}/../../editors/xemacs${XEMACS_MAJOR_VER}-mule-common
 
 INSTALL_TARGET=	install-arch-indep
-PLIST=		${PKGDIR}/PLIST
+PLIST=		${PKGDIR}/pkg-plist
 TMPPLIST=	${WRKDIR}/.PLIST.mktmp-${PKGNAME}
 
 MULE_COMMON=		yes
@@ -75,9 +75,9 @@ pre-install:
 	(cd ${PREFIX}/lib/xemacs; ${MKDIR} info etc site-lisp)
 
 post-install::
-	@if [ -f ${PKGDIR}/INSTALL ]; then \
+	@if [ -f ${PKGINSTALL} ]; then \
 		${SETENV} PKG_PREFIX=${PREFIX} \
-			${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL; \
+			${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL; \
 	fi
 	@${TOUCH} ${TOUCH_FLAGS} ${INSTALL_COOKIE}
 

@@ -2,7 +2,7 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-WABEP/Makefile,v 1.9 1999/12/10 07:19:39 imura Exp $
+# $FreeBSD: ports/x11-servers/XttXF98srv-WABEP/Makefile,v 1.10 2000/04/10 00:53:09 cpiazza Exp $
 #
 
 PORTNAME=	xtt-98WABEP
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	i386
 SERVER=		XF98_WABEP
 
 MASTERDIR=	${.CURDIR}/../XttXF86srv-common
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 X98SERVER=	yes
 

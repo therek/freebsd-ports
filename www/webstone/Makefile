@@ -2,7 +2,7 @@
 # Date created:        25 March 1997
 # Whom:                Soren Dossing <sauber@netcom.com>
 #
-# $FreeBSD: ports/www/webstone/Makefile,v 1.7 2000/09/05 01:45:31 steve Exp $
+# $FreeBSD: ports/www/webstone/Makefile,v 1.8 2000/09/21 19:58:47 fenner Exp $
 #
 
 PORTNAME=	webstone
@@ -39,6 +39,6 @@ do-install:
 .endfor
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

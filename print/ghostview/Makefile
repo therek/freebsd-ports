@@ -2,7 +2,7 @@
 # Date created:		21 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/print/ghostview/Makefile,v 1.14 2000/04/09 17:40:15 cpiazza Exp $
+# $FreeBSD: ports/print/ghostview/Makefile,v 1.15 2000/04/09 17:49:44 cpiazza Exp $
 #
 
 PORTNAME=	ghostview
@@ -17,6 +17,6 @@ USE_IMAKE=	yes
 MAN1=		ghostview.1
 
 post-install:
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

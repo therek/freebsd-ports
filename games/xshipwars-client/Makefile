@@ -2,7 +2,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.5 2000/04/14 12:28:17 asami Exp $
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.6 2000/08/03 09:24:25 asami Exp $
 #
 
 PORTNAME=	xshipwars-client
@@ -45,6 +45,6 @@ post-install:
 	@ ${ECHO} "===>   Stripping Binary "
 	@ strip ${PREFIX}/bin/xsw
 
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         Thu Mar 26 04:50:00 PST 1998
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fonts/sharefonts/Makefile,v 1.7 1999/08/31 06:52:36 mharo Exp $
+# $FreeBSD: ports/x11-fonts/sharefonts/Makefile,v 1.8 2000/04/10 00:44:40 cpiazza Exp $
 #
 
 PORTNAME=	sharefonts
@@ -27,6 +27,6 @@ do-install:
 	${CHMOD} 644 ${PREFIX}/lib/X11/fonts/sharefont/*
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

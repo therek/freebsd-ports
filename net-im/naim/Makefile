@@ -2,7 +2,7 @@
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/net/naim/Makefile,v 1.12 2000/04/09 18:12:23 cpiazza Exp $
+# $FreeBSD: ports/net/naim/Makefile,v 1.13 2000/07/03 05:01:26 kris Exp $
 #
 
 PORTNAME=	naim
@@ -28,7 +28,7 @@ post-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/doc/naim.hlp ${PREFIX}/share/doc/naim/
 .endif
 	@ ${ECHO} "************************************************************"
-	@ ${CAT} ${PKGDIR}/MESSAGE
+	@ ${CAT} ${PKGMESSAGE}
 	@ ${ECHO} "************************************************************"
 
 .include <bsd.port.mk>

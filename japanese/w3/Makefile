@@ -2,7 +2,7 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/w3/Makefile,v 1.10 2000/04/13 08:33:33 knu Exp $
+# $FreeBSD: ports/japanese/w3/Makefile,v 1.11 2000/04/14 17:24:52 knu Exp $
 #
 
 CATEGORIES=	japanese
@@ -17,6 +17,6 @@ EMACSCMD=	mule
 ELISPDIR=	${PREFIX}/lib/mule/site-lisp
 
 MASTERDIR=	${.CURDIR}/../../www/w3
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 .include "${MASTERDIR}/Makefile"

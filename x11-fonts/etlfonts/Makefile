@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.10 2000/04/10 00:44:34 cpiazza Exp $
+# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.11 2000/09/12 13:03:47 asami Exp $
 #
 
 PORTNAME=	etlfonts-noncjk
@@ -30,6 +30,6 @@ post-extract:
 	@${GUNZIP_CMD} ${WRKSRC}/*.gz
 
 post-install:
-	@${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+	@${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 .include <bsd.port.post.mk>

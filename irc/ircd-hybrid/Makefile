@@ -2,7 +2,7 @@
 # Date created:		9 January 1998
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.14 2000/04/12 06:28:12 obrien Exp $
+# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.15 2000/08/20 02:44:18 kris Exp $
 #
 
 PORTNAME=	ircd-hybrid
@@ -18,7 +18,7 @@ IS_INTERACTIVE=	yes
 MAN8=		ircd.8
 
 pre-install:
-	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tools/buildm4 ${PREFIX}/bin

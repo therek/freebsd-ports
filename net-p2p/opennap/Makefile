@@ -2,7 +2,7 @@
 # Date created:			26 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/opennap/Makefile,v 1.1.1.1 2000/07/27 08:21:25 dburr Exp $
 #
 
 PORTNAME=	opennap
@@ -34,6 +34,6 @@ post-install:
 	cd ${WRKSRC} ; for FILE in sample.*; do ${INSTALL_DATA} $${FILE} ${PREFIX}/share/opennap/examples ; done
 	@echo "===> Installing startup script into ${PREFIX}/etc/rc.d."
 	${INSTALL_SCRIPT} ${FILESDIR}/opennap.sh ${PREFIX}/etc/rc.d
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

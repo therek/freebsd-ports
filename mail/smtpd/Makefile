@@ -2,7 +2,7 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.6 1999/08/28 02:41:58 mharo Exp $
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.7 2000/04/13 20:00:48 cpiazza Exp $
 #
 
 PORTNAME=	smtpd
@@ -65,6 +65,6 @@ post-install:
 
 	@${ECHO} "Done!"
 
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

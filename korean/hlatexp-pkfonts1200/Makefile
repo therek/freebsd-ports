@@ -2,12 +2,12 @@
 # Date created:                 Jun 29 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hlatexp-pkfonts1200/Makefile,v 1.1.1.1 2000/07/02 15:02:36 cjh Exp $
 #
 
 MASTERDIR=      ${.CURDIR}/../hlatexp-pkfonts300
 FILESDIR=	${.CURDIR}/files
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 # pkfonts dpi
 RESOLUTION=	1200

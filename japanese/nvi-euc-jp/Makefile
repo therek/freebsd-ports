@@ -2,13 +2,13 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/nvi-euc-jp/Makefile,v 1.18 2000/02/12 20:31:18 imura Exp $
+# $FreeBSD: ports/japanese/nvi-euc-jp/Makefile,v 1.19 2000/04/11 14:15:49 knu Exp $
 #
 
 PKGNAMESUFFIX=	-eucjp
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
-COMMENT=	${.CURDIR}/pkg/COMMENT
+COMMENT=	${.CURDIR}/pkg-comment
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 

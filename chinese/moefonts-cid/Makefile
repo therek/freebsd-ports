@@ -2,7 +2,7 @@
 # Date created:		3 Mar 2000
 # Whom:			Jing-Tang Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/moefonts-cid/Makefile,v 1.1 2000/10/03 15:43:05 kevlo Exp $
 #
 
 PORTNAME=	moefonts-cid
@@ -38,6 +38,6 @@ do-install:
 		${PREFIX}/share/ghostscript/fonts/CMap
 	@${INSTALL_DATA} ${WRKDIR}/ag13/CMap/* \
 		${PREFIX}/share/ghostscript/fonts/CMap
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>

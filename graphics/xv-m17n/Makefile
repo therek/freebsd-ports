@@ -2,7 +2,7 @@
 # Date created:		07 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.6 2000/01/09 14:51:14 shige Exp $
+# $FreeBSD: ports/graphics/xv-m17n/Makefile,v 1.7 2000/04/13 08:13:59 knu Exp $
 #
 
 PKGNAMESUFFIX=	-m17n
@@ -10,7 +10,7 @@ PKGNAMESUFFIX=	-m17n
 MAINTAINER=	shige@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../../graphics/xv
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 MAKE_ENV=	LOCALE_EXTENSION=-DTV_MULTILINGUAL
 

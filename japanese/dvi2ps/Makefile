@@ -2,7 +2,7 @@
 # Date created:		15 Sep 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.12 1999/08/25 05:23:44 obrien Exp $
+# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.13 2000/04/11 14:13:03 knu Exp $
 #
 
 PORTNAME=	dvi2ps
@@ -40,6 +40,6 @@ post-install:
 	${INSTALL_SCRIPT} tools/psstrip ${PREFIX}/bin ;\
 	${INSTALL_SCRIPT} tools/MakePK ${PREFIX}/bin ;\
 	)
-	@${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+	@${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 .include <bsd.port.mk>

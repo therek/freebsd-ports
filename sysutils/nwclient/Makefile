@@ -2,7 +2,7 @@
 # Date created:         Wed Apr 19 21:54:51 PDT 2000
 # Whom:                 Matthew Jacob <mjacob@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.1 2000/04/23 06:28:09 mjacob Exp $
+# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.2 2000/09/05 15:41:15 mjacob Exp $
 #
 
 PORTNAME=	nwclient
@@ -41,7 +41,7 @@ do-install:
 		(cd /usr/local/man/cat8  && tar --unlink -xpf -)
 
 post-install:
-	@sed -e "s,ROOTDIR,${PREFIX}," < ${PKGDIR}/MESSAGE
+	@sed -e "s,ROOTDIR,${PREFIX}," < ${PKGMESSAGE}
 	@cd / && rm -f nsr && ln -s ${PREFIX}/nsr
 
 pre-deinstall:

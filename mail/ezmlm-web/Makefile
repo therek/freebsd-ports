@@ -2,7 +2,7 @@
 # Date Created: 			18 May 2000
 # Whom: 				Guy Antony Halse <guy@rucus.ru.za.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/ezmlm-web/Makefile,v 1.1 2000/08/09 19:04:59 will Exp $
 #
 
 PORTNAME=	ezmlm-web
@@ -37,7 +37,7 @@ do-install:
 .endfor
 
 post-install:
-	@${SED} s!%%PREFIX%%!${PREFIX}!g ${PKGDIR}/MESSAGE
+	@${SED} s!%%PREFIX%%!${PREFIX}!g ${PKGMESSAGE}
 	@${ECHO}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/xjewel/Makefile,v 1.20 2000/04/14 12:27:31 asami Exp $
+# $FreeBSD: ports/games/xjewel/Makefile,v 1.21 2000/09/12 13:03:59 asami Exp $
 #
 
 PORTNAME=	xjewel
@@ -31,7 +31,7 @@ PLIST_SUB=	FONTSDIR=${FONTSDIR}
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/bitmaps/seven_seg.pcf.gz ${PREFIX}/${FONTSDIR}

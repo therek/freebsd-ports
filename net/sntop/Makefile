@@ -2,7 +2,7 @@
 # Date created:		05 August 2000
 # Whom:			Matt Emmerton <matt@gsicomp.on.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/sntop/Makefile,v 1.1 2000/09/16 04:38:18 will Exp $
 #
 
 PORTNAME=	sntop
@@ -21,6 +21,6 @@ MANCOMPRESSED=	yes
 
 post-install:
 	@strip ${PREFIX}/bin/sntop
-	@cat ${PKGDIR}/MESSAGE
+	@cat ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:      11/12/96
 # Whom:              oly@world.std.com
 #
-# $FreeBSD: ports/misc/dotfile/Makefile,v 1.18 2000/04/14 08:45:38 asami Exp $
+# $FreeBSD: ports/misc/dotfile/Makefile,v 1.19 2000/06/23 13:43:56 sobomax Exp $
 #
 
 PORTNAME=	dotfile
@@ -32,7 +32,7 @@ post-configure:
 .if !defined(DISPLAY)
 PLIST=		${WRKDIR}/PLIST
 pre-install:
-	@${CAT} ${PKGDIR}/PLIST | ${SED} -e '/fvwm.\/bytecompile/d' > ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist | ${SED} -e '/fvwm.\/bytecompile/d' > ${PLIST}
 .endif
 
 post-install:

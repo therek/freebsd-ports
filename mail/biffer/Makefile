@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                jsellens
 #
-# $FreeBSD: ports/mail/biffer/Makefile,v 1.1.1.1 1999/11/01 03:26:37 steve Exp $
+# $FreeBSD: ports/mail/biffer/Makefile,v 1.2 2000/04/13 19:59:24 cpiazza Exp $
 #
 
 PORTNAME=	biffer
@@ -29,7 +29,7 @@ do-install:
 	cd ${WRKDIR}/${DISTNAME}/biffer_comsat && ${MAKE} ${MFLAGS} install
 
 post-install:
-	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} \
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} \
 	    POST-INSTALL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        19 Feb 1999
 # Whom:                Shinya Esu <esu@yk.rim.or.jp>
 #
-# $FreeBSD: ports/games/actx/Makefile,v 1.5 2000/04/14 00:45:19 mharo Exp $
+# $FreeBSD: ports/games/actx/Makefile,v 1.6 2000/08/03 09:23:20 asami Exp $
 #
 
 PORTNAME=	actx
@@ -38,6 +38,6 @@ post-install:
 	@ ${INSTALL_MAN} ${WRKSRC}/$i ${PREFIX}/share/doc/ja/actx
 .endfor
 .endif
-	@ ${CAT} ${PKGDIR}/MESSAGE
+	@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

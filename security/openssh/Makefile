@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.53 2000/06/27 21:30:34 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.54 2000/09/22 01:59:00 kris Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -70,7 +70,7 @@ post-patch:
 PLIST=		${WRKDIR}/PLIST
 
 do-configure:
-	@${CP} ${PKGDIR}/PLIST ${PLIST}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 	@${ECHO} "@cwd /usr" >> ${PLIST}
 	@${ECHO} "lib/pam_ssh.so" >> ${PLIST}
 .endif

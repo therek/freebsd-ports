@@ -2,7 +2,7 @@
 # Date created:		January 24, 1999
 # Whom:		mi@aldan.algebra.com
 #
-# $FreeBSD: ports/audio/raproxy/Makefile,v 1.5 1999/11/03 17:54:41 nsayer Exp $
+# $FreeBSD: ports/audio/raproxy/Makefile,v 1.6 2000/04/08 21:24:14 mharo Exp $
 #
 
 PORTNAME=	raproxy
@@ -33,6 +33,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/*.html ${WRKSRC}/*.pdf \
 		${PREFIX}/share/doc/raproxy
 .endif
-	-cat ${PKGDIR}/MESSAGE
+	-cat ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.10 2000/02/27 23:12:05 steve Exp $
+# $FreeBSD: ports/games/uox3/Makefile,v 1.11 2000/04/14 12:26:46 asami Exp $
 #
 
 PORTNAME=	uox3
@@ -45,6 +45,6 @@ do-install:
 		${INSTALL_DATA} $${FILE} ${PREFIX}/uox3/docs ;\
 	done
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

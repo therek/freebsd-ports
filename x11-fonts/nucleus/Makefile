@@ -2,7 +2,7 @@
 # Date created:				Sat Aug 12 15:02:03 CEST 2000
 # Whom:					olgeni@uli.it
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/nucleus/Makefile,v 1.1 2000/09/16 04:23:50 will Exp $
 #
 
 PORTNAME=	nucleus
@@ -16,6 +16,6 @@ NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 post-install:
-	@${CAT} ${PKGDIR}/DESCR
+	@${CAT} ${DESCR}
 
 .include <bsd.port.mk>

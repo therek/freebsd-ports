@@ -2,7 +2,7 @@
 # Date created:		8 Oct 1998
 # Whom: Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD: ports/japanese/kappa20/Makefile,v 1.9 2000/04/11 14:14:21 knu Exp $
+# $FreeBSD: ports/japanese/kappa20/Makefile,v 1.10 2000/09/12 11:08:02 asami Exp $
 #
 
 PORTNAME=	kappa20
@@ -29,7 +29,7 @@ PLIST_SUB=	FONTSDIR=${FONTSDIR}
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 post-install:
 	@(cd ${PREFIX}/${FONTSDIR} ; mkfontdir)

@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/egcs/Makefile,v 1.69 2000/03/22 00:26:49 obrien Exp $
+# $FreeBSD: ports/lang/egcs/Makefile,v 1.70 2000/04/12 06:18:08 obrien Exp $
 #
 
 PORTNAME=	gcc
@@ -64,7 +64,7 @@ pre-configure:
 		>${WRKSRC}/gcc/config/freebsd.h )
 	@${CP} ${FILESDIR}/alpha-freebsd.h ${WRKSRC}/gcc/config/alpha/freebsd.h
 .if ${PORTOBJFORMAT} == "elf" && ${MACHINE_ARCH} == "i386"
-	@${SED} -e 's/^@comment ELF-only://' ${PKGDIR}/PLIST >${PLIST}
+	@${SED} -e 's/^@comment ELF-only://' ${PKGDIR}/pkg-plist >${PLIST}
 .endif
 	@# Keep from running `autoconf' and `autoheader' since we modified
 	@# configure.in by patching it.

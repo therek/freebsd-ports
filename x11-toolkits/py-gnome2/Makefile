@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.41 2000/09/21 16:00:06 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.42 2000/10/05 07:17:29 reg Exp $
 #
 
 PORTNAME=	py-gnome
@@ -42,7 +42,7 @@ PLIST=		${WRKDIR}/PLIST.nodocs
 pre-install:
 	${RM} -f ${PLIST}
 	${GREP} -E -v '^(@dirrm )?(share/examples/)|(share/doc/)'       \
-		${PKGDIR}/PLIST > ${PLIST}
+		${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 .include <bsd.port.mk>

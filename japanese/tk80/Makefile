@@ -2,7 +2,7 @@
 # Date created:		26 Dec 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk80/Makefile,v 1.18 2000/04/12 14:38:07 knu Exp $
+# $FreeBSD: ports/japanese/tk80/Makefile,v 1.19 2000/06/17 05:34:03 knu Exp $
 #
 
 PORTNAME=	tk
@@ -57,7 +57,7 @@ post-install:
 	${LN} -sf libtk80jp.so.1.5 ${PREFIX}/lib/libtk80jp.so
 	${RANLIB} ${PREFIX}/lib/libtk80jp.so
 .endif
-	@${CAT}	${PKGDIR}/MESSAGE
+	@${CAT}	${PKGMESSAGE}
 
 test:
 	cd ${WRKSRC} && ${SETENV} PORTOBJFORMAT=${PORTOBJFORMAT} ${MAKE} test

@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.70 2000/06/18 10:00:07 asami Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.71 2000/10/08 06:34:00 asami Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -27,7 +27,7 @@ NO_BUILD=	yes
 NO_FILTER_SHLIBS=	yes
 STRIP=
 WRKSRC?=	${WRKDIR}/${BROWSER}-v408.x86-unknown-freebsd
-PKGDIR=		${.CURDIR}/pkg
+PKGDIR=		${.CURDIR}
 
 AUTOADMIN?=	autoadmin-v408.x86-unknown-freebsd.tar.gz
 BROWSER?=	communicator
@@ -113,7 +113,7 @@ do-install:
 	${CHOWN} -R root:wheel ${NDIR}
 
 post-install:
-	${CAT} ${PKGDIR}/DESCR
+	${CAT} ${DESCR}
 
 # hack to allow slave ports to include bsd.port.pre.mk and then this file
 .if defined(_PREMKINCLUDED)

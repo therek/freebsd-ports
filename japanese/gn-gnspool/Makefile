@@ -2,7 +2,7 @@
 # Date created:				14 Feb. 1997
 # Whom:					Kiroh HARADA <kiroh@kh.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.12 1999/09/04 23:39:28 mharo Exp $
+# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.13 2000/04/11 14:13:44 knu Exp $
 #
 
 PORTNAME=	gn-gnspool
@@ -43,6 +43,6 @@ post-install:
 .endif
 	@${MKDIR} ${PREFIX}/share/examples/gn-gnspool
 	@${CP} ${FILESDIR}/_gnrc ${PREFIX}/share/examples/gn-gnspool
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		17 Jan 2000
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-ttf/Makefile,v 1.2 2000/04/13 09:16:04 asami Exp $
+# $FreeBSD: ports/korean/baekmukfonts-ttf/Makefile,v 1.3 2000/06/23 12:23:31 cjh Exp $
 #
 
 PORTNAME=	baekmukfonts
@@ -41,6 +41,6 @@ do-install:
 	${INSTALL_DATA} ${FILESDIR}/fonts.dir ${FONTDIR}/fonts.dir.baekmuk
 	${INSTALL_DATA} ${FILESDIR}/fonts.alias ${FONTDIR}/fonts.alias.baekmuk
 	${INSTALL_DATA} ${FILESDIR}/hconfig.ps ${FONTDIR}/hconfig.ps.baekmuk
-	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

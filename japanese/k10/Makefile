@@ -2,7 +2,7 @@
 # Date created:		25 Feb 1998
 # Whom:	Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/japanese/k10/Makefile,v 1.9 2000/09/12 11:08:00 asami Exp $
+# $FreeBSD: ports/japanese/k10/Makefile,v 1.10 2000/09/12 13:03:51 asami Exp $
 #
 
 PORTNAME=	naga10
@@ -28,7 +28,7 @@ PLIST_SUB=	FONTSDIR=${FONTSDIR}
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 post-install:
 	@(cd ${PREFIX}/${FONTSDIR} ; mkfontdir)

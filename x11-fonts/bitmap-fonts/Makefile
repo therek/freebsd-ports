@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.13 2000/07/19 08:26:45 shige Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.14 2000/09/10 15:51:09 shige Exp $
 #
 
 PORTNAME=	bitmap-fonts
@@ -50,7 +50,7 @@ do-build:
 
 pre-install:
 	@${SETENV} PKG_PREFIX=${X11BASE} \
-		${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
+		${SH} ${PKGREQ} ${PKGNAME} INSTALL
 
 do-install:
 	@(cd ${WRKSRC}; \

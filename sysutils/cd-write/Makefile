@@ -2,7 +2,7 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.22 2000/06/11 17:20:37 jmz Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.23 2000/06/29 02:31:40 asami Exp $
 #
 
 PORTNAME=	cd-write
@@ -31,6 +31,6 @@ pre-build:
 		${SED} -e s:/usr/local:${PREFIX}:g <Makefile~ >Makefile
 
 post-install:
-	@PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
+	@PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:         28 Jan 1999
 # Whom:                 Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/audio/icecast/Makefile,v 1.11 2000/06/01 17:11:33 will Exp $
+# $FreeBSD: ports/audio/icecast/Makefile,v 1.12 2000/09/05 01:47:36 steve Exp $
 #
 
 PORTNAME=	icecast
@@ -30,6 +30,6 @@ do-install:
 .endfor
 	${MKDIR} ${PREFIX}/share/doc/icecast/
 	${INSTALL_DATA} ${WRKSRC}/doc/manual.html ${PREFIX}/share/doc/icecast/
-	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e 's,%%PREFIX%%,${PREFIX},g'
+	@${CAT} ${PKGMESSAGE} | ${SED} -e 's,%%PREFIX%%,${PREFIX},g'
 
 .include <bsd.port.mk>

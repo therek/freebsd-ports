@@ -2,7 +2,7 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.4 2000/10/01 16:12:34 kevlo Exp $
+# $FreeBSD: ports/games/zangband/Makefile,v 1.5 2000/10/08 02:29:06 asami Exp $
 #
 
 PORTNAME=	zangband
@@ -25,7 +25,7 @@ USE_XLIB=	yes
 
 NO_CDROM=	Possible copyright infringement
 
-PKGDIR?=	${.CURDIR}/pkg
+PKGDIR?=	${.CURDIR}
 WRKSRC=		${WRKDIR}/ZAngband
 PKGMESSAGE=	${WRKDIR}/MESSAGE
 PLIST=		${WRKDIR}/PLIST

@@ -2,7 +2,7 @@
 # Date created:		27 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.8 2000/04/09 21:52:14 cpiazza Exp $
+# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.9 2000/08/31 10:48:02 kuriyama Exp $
 #
 
 PORTNAME=	cocoon
@@ -64,6 +64,6 @@ do-install:
 .endif
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         25 Aug 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/dvipsk/Makefile,v 1.10 2000/04/01 22:06:25 mharo Exp $
+# $FreeBSD: ports/japanese/dvipsk/Makefile,v 1.11 2000/04/11 14:13:05 knu Exp $
 #
 
 PORTNAME=	dvipsk
@@ -82,6 +82,6 @@ post-install:
 	done
 	@${LN} -fs ${DVIPSDIR}/contrib ${PREFIX}/share/doc/dvips/contrib
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		1999-07-15
 # Whom:			Palle Girgensohn <girgen@partitur.se>
 #
-# $FreeBSD: ports/www/gnujsp/Makefile,v 1.3 2000/01/05 01:41:10 steve Exp $
+# $FreeBSD: ports/www/gnujsp/Makefile,v 1.4 2000/04/10 00:05:17 cpiazza Exp $
 #
 
 PORTNAME=	gnujsp
@@ -36,7 +36,7 @@ do-install:
 .endif
 
 post-install:
-		@${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${PKGDIR}/MESSAGE > ${PKGMESSAGE}
+		@${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${PKGDIR}/pkg-message > ${PKGMESSAGE}
 		@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

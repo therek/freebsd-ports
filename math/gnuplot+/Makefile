@@ -2,7 +2,7 @@
 # Date created:         May 18, 1999
 # Whom:                 NAKAJI Hiroyuki
 #
-# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.12 2000/06/06 17:56:50 will Exp $
+# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.13 2000/07/04 07:12:53 sobomax Exp $
 #
 
 PORTNAME=	gnuplot371+
@@ -86,6 +86,6 @@ post-install:
 	${INSTALL_DATA} ${GP_DOCS} ${PREFIX}/share/doc/gnuplot+
 	${INSTALL_DATA} ${WRKSRC}/docs/gnuplot.info ${PREFIX}/info
 	install-info ${PREFIX}/info/gnuplot.info ${PREFIX}/info/dir
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

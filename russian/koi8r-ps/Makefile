@@ -2,7 +2,7 @@
 # Date created:         22 July 1999
 # Whom:                 mi@aldan.algebra.com
 #
-# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.8 2000/04/21 07:52:18 mharo Exp $
+# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.9 2000/04/30 19:19:27 steve Exp $
 #
 
 PORTNAME=	koi8rPS
@@ -86,6 +86,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/Fontmap.diff ${CPS_DIR}
 	${INSTALL_DATA} ${WRKSRC}/fonts.dir ${CPS_DIR}
 	${LN} -s fonts.dir ${CPS_DIR}/fonts.scale
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.10 2000/04/17 00:18:11 reg Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.11 2000/10/08 02:19:07 asami Exp $
 #
 
 PORTNAME=	ezmlm-idx
@@ -120,6 +120,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/ezmlm-idx
 .endfor
 .endif
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

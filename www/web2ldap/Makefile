@@ -2,7 +2,7 @@
 # Date created:        21 July 2000
 # Whom:                Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/www/web2ldap/Makefile,v 1.2 2000/08/02 08:25:54 kevlo Exp $
+# $FreeBSD: ports/www/web2ldap/Makefile,v 1.3 2000/08/06 14:50:55 nbm Exp $
 #
 
 PORTNAME=      web2ldap
@@ -30,6 +30,6 @@ do-install:
 	@if [ -w /var/log ]; then ${MKDIR} /var/log/web2ldap; fi
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
