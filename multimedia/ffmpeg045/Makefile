@@ -2,11 +2,12 @@
 # Date created:		Tue Sep 25 15:52:09 BRT 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/ffmpeg/Makefile,v 1.1 2001/09/25 19:27:10 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ffmpeg
 PORTVERSION=	0.4.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -30,6 +31,8 @@ DOC_FILES=	README
 DOC_DOCFILES=	FAQ README.dev README.tech \
 		TODO bench.txt ffmpeg.txt \
 		ffserver.txt
+HEADER_FILES=	libavcodec/avcodec.h libavcodec/dsputil.h
+LIB_FILES=	libav/libav.a libavcodec/libavcodec.a
 
 .ifdef(WITHOUT_MMX)
 CONFIGURE_ARGS+=	--disable-mmx
@@ -56,5 +59,12 @@ post-install:
 .endif
 	@${INSTALL_DATA} ${WRKSRC}/doc/ffserver.conf \
 		${PREFIX}/etc/ffserver.conf.sample
+.for file in ${HEADER_FILES}
+	@${MKDIR} ${PREFIX}/include/${file:H}
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/include/${file}
+.endfor
+.for file in ${LIB_FILES}
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/lib/${file:T}
+.endfor
 
 .include <bsd.port.mk>
