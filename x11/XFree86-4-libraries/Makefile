@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.91 2001/01/16 17:33:09 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libraries
@@ -81,6 +81,7 @@ PLIST_SUB+=	OSMESA:=""
 .endif
 
 .if ${HasXdmAuth} == DEFAULT || ${HasXdmAuth} == YES
+.if defined(USA_RESIDENT)
 .if ${USA_RESIDENT} == YES
 pre-fetch:
 	@${ECHO}
@@ -92,6 +93,7 @@ MASTER_SITES+=	ftp://psych.psy.uq.oz.au/pub/X11R5/ \
 EXTRACT_ONLY=	X402src-1.tgz
 DISTFILES+=	Wraphelp.c
 IGNOREFILES=	Wraphelp.c
+.endif
 .endif
 .endif
 
