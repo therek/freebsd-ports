@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.105 2000/02/07 15:01:16 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.106 2000/02/21 22:18:14 jedgar Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -35,6 +35,7 @@
     SUBDIR += ggv
     SUBDIR += ghostscript5
     SUBDIR += ghostscript55
+    SUBDIR += ghostscript6
     SUBDIR += ghostview
     SUBDIR += gnomeprint
     SUBDIR += gp
