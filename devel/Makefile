@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.645 2001/09/27 14:11:41 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -51,6 +51,7 @@
     SUBDIR += bonobo
     SUBDIR += bonobo-conf
     SUBDIR += bugbuddy
+    SUBDIR += bugzilla
     SUBDIR += c2lib
     SUBDIR += c4
     SUBDIR += c_c++_reference
