@@ -2,7 +2,7 @@
 # Date created:		01 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/editors/joe/Makefile,v 1.7 2000/03/22 01:59:05 will Exp $
+# $FreeBSD: ports/editors/joe/Makefile,v 1.8 2000/04/14 00:25:34 mharo Exp $
 #
 
 PORTNAME=	joe
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.std.com/src/editors/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	toasty@dragondata.com
 
 WRKSRC=		${WRKDIR}/joe
 ALL_TARGET=	joe
