@@ -2,10 +2,10 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-fonts/XFree86-4-fontDefaultBitmaps/Makefile,v 1.1 2000/06/08 10:41:40 asami Exp $
+# $FreeBSD: ports/x11-fonts/XFree86-4-fontDefaultBitmaps/Makefile,v 1.2 2000/08/25 10:33:11 asami Exp $
 #
 
-PORTNAME=	fontDefaultBitmap
+PORTNAME=	fontDefaultBitmaps
 PORTVERSION=	4.0.1
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/${PORTVERSION}/source/ \
