@@ -2,11 +2,11 @@
 # Date created:		31 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-soap/Makefile,v 1.9 2001/08/12 06:42:26 knu Exp $
+# $FreeBSD: ports/net/ruby-soap/Makefile,v 1.10 2001/08/24 09:47:36 knu Exp $
 #
 
 PORTNAME=	soap
-PORTVERSION=	1.3.7
+PORTVERSION=	1.3.8
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/SOAP4R/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
