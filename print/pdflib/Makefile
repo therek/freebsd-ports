@@ -3,12 +3,12 @@
 # Date created:		Mon Jan 18 17:03:33 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pdflib/Makefile,v 1.5 1999/08/31 01:45:09 peter Exp $
+# $FreeBSD: ports/print/pdflib/Makefile,v 1.6 1999/09/07 10:45:26 steve Exp $
 #
 
-DISTNAME=	pdflib-2.0
+DISTNAME=	pdflib-2.01
 CATEGORIES=	print
-MASTER_SITES=	http://www.ifconnection.de/~tm/pdflib/ \
+MASTER_SITES=	http://www.pdflib.com/pdflib/download/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
 MAINTAINER=	dirk@FreeBSD.org
