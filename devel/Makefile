@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.276 2000/04/22 21:27:53 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.277 2000/04/25 04:13:16 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -197,6 +197,7 @@
     SUBDIR += scogdb
     SUBDIR += sdcc
     SUBDIR += sdl
+    SUBDIR += sdl-devel
     SUBDIR += sfio
     SUBDIR += shtool
     SUBDIR += sip
