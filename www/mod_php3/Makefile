@@ -2,7 +2,7 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.124 2001/04/21 11:43:05 vanilla Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.125 2001/04/22 23:08:05 dirk Exp $
 #
 
 PORTNAME?=	mod_php3
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.php.net/pub/${PHP_DISTDIR}/ \
 		http://us.php.net/${PHP_DISTDIR}/ \
 		http://php.he.net/${PHP_DISTDIR}/ \
 		http://www.php3.de/${PHP_DISTDIR}/ \
-		http://au.php.net:81/${PHP_DISTDIR}/ \
+		http://au.php.net/${PHP_DISTDIR}/ \
 		http://at.php.net/${PHP_DISTDIR}/ \
 		http://br.php.net/${PHP_DISTDIR}/ \
 		http://php.easydns.com/${PHP_DISTDIR}/ \
