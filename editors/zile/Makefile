@@ -2,14 +2,14 @@
 # Date created:		28 September 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/editors/zile/Makefile,v 1.7 2001/07/12 08:35:35 jasone Exp $
+# $FreeBSD: ports/editors/zile/Makefile,v 1.8 2001/07/19 04:54:47 jasone Exp $
 #
 
 PORTNAME=	zile
-PORTVERSION=	1.5.3
+PORTVERSION=	1.6
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://web.tiscalinet.it/ssigala/sandro/files/
+		http://prdownloads.sourceforge.net/zile/
 MASTER_SITE_SUBDIR=	apps/editors/emacs/clones
 
 MAINTAINER=	jasone@freebsd.org
