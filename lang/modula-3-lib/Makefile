@@ -3,7 +3,7 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.19 1999/08/27 22:29:37 mharo Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.20 1999/09/29 05:00:43 jdp Exp $
 #
 
 DISTNAME=	modula-3-lib-3.6
@@ -44,6 +44,16 @@ have_boot!=	/bin/sh scripts/check_files files/T.boot installed /usr/local
 .endif
 .if empty(have_boot)
 DISTFILES+=	m3-fbsd-boot-3.6.tar.gz
+.endif
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400011
+EXTRA_PATCHES=	${FILESDIR}/patch-new-sigset-aa \
+		${FILESDIR}/patch-new-sigset-ab \
+		${FILESDIR}/patch-new-sigset-ac
+.else
+EXTRA_PATCHES=	${FILESDIR}/patch-old-sigset-aa
 .endif
 
 # Startup script, run at boot time
@@ -151,4 +161,4 @@ do-install:
 	@${ECHO_MSG} "Running ldconfig"
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib/m3/FreeBSD2
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
