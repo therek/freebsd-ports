@@ -2,7 +2,7 @@
 # Date created:        21 Jan 2001
 # Whom:                clive
 #
-# $FreeBSD: ports/games/qkmj/Makefile,v 1.1 2001/01/21 17:08:18 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qkmj
@@ -15,6 +15,8 @@ EXTRACT_SUFX=
 EXTRACT_ONLY=
 
 MAINTAINER=	clive@FreeBSD.org
+
+LIB_DEPENDS=	c.2:${PORTSDIR}/misc/compat22
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
