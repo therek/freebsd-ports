@@ -2,17 +2,14 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.36 2000/04/10 01:10:48 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.37 2000/05/05 09:16:24 tg Exp $
 #
 
 PORTNAME=	py-gtk
 PORTVERSION=	0.6.6
 CATEGORIES=	x11-toolkits python
-MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/python/ \
-		ftp://ftp.gimp.org/pub/gtk/python/ \
-		ftp://infosoc.uni-koeln.de/pub/ftp.gimp.org/pub/gtk/python/ \
-		ftp://ftp.cs.umn.edu/pub/gimp/gtk/python/ \
-		ftp://stef.u-picardie.fr/mirror/ftp.gimp.org/gtk/python/
+MASTER_SITES=	${MASTER_SITE_GNOME}
+MASTER_SITE_SUBDIR=	stable/sources/gnome-python	
 DISTNAME=	gnome-python-1.0.53
 
 MAINTAINER=	nectar@FreeBSD.org
