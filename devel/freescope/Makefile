@@ -3,17 +3,19 @@
 # Date created:			Mar 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/freescope/Makefile,v 1.1 2001/03/17 16:59:19 ijliao Exp $
+# $FreeBSD: ports/devel/freescope/Makefile,v 1.2 2001/07/09 03:15:24 ijliao Exp $
 #
 
 PORTNAME=	freescope
-PORTVERSION=	0.1.1
+PORTVERSION=	0.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
