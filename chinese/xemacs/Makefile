@@ -2,7 +2,7 @@
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.2 2000/04/13 08:28:23 asami Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.3 2000/04/17 00:17:12 reg Exp $
 #
 
 PORTNAME=	xemacs
@@ -18,7 +18,7 @@ MAINTAINER=	keith@freebsd.sinica.edu.tw
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	xcin2.5:${PORTSDIR}/chinese/xcin25 \
 		${X11BASE}/lib/X11/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/arphicttf
 
