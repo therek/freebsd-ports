@@ -2,12 +2,12 @@
 # Date created:  18 Mar 1999
 # Whom:   dwcjr@inethouston.net
 #
-# $FreeBSD: ports/security/openssh-portable/Makefile,v 1.3 2001/06/09 08:22:15 dinoex Exp $
+# $FreeBSD: ports/security/openssh-portable/Makefile,v 1.4 2001/06/10 20:08:31 dwcjr Exp $
 #
 
 PORTNAME=	openssh
 PORTVERSION=	2.9p1
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/ \
 		ftp://ftp.op.net/pub/OpenBSD/OpenSSH/portable/ \
@@ -16,7 +16,7 @@ PKGNAMESUFFIX=	-portable
 
 MAINTAINER= dwcjr@FreeBSD.org
 
-MAN1=	sftp.1 ssh-add.1 ssh-agent.1 ssh-keygen.1 ssh-keyscan.1 scp.1 ssh.1
+MAN1=	sftp.1 ssh-add.1 ssh-agent.1 ssh-keygen.1 ssh-keyscan.1 scp.1 ssh.1 slogin.1
 MAN8=	sftp-server.8 sshd.8
 
 CRYPTOLIBS=	-L${OPENSSLLIB} -lcrypto
