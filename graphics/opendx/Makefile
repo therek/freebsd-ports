@@ -2,11 +2,12 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.16 2001/08/07 11:15:20 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	opendx
 PORTVERSION=	4.1.3
+PORTREVISION=	1
 CATEGORIES=	graphics math
 MASTER_SITES=	http://www.research.ibm.com/dx/srcDownload/srcArchive/ \
 	        http://opendx.npaci.edu/source/
