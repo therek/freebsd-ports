@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.84 2000/01/14 02:12:49 asami Exp $
+# $FreeBSD: ports/security/Makefile,v 1.85 2000/01/29 22:33:09 steve Exp $
 #
 
     SUBDIR += bjorb
@@ -10,12 +10,14 @@
     SUBDIR += cops
     SUBDIR += crack
     SUBDIR += cyrus-sasl
+    SUBDIR += ddos_scan
     SUBDIR += donkey
     SUBDIR += dsniff
     SUBDIR += fakebo
     SUBDIR += firewalk
     SUBDIR += fragrouter
     SUBDIR += fwtk
+    SUBDIR += gag
     SUBDIR += gnupg
     SUBDIR += gpasman
     SUBDIR += gtkportscan
