@@ -2,7 +2,7 @@
 # Date created:		26 June 1999
 # Whom:			Brian Buchanan <brian@CSUA.Berkeley.EDU>
 #
-# $FreeBSD: ports/games/flightgear/Makefile,v 1.7 2000/04/14 06:42:52 mharo Exp $
+# $FreeBSD: ports/games/flightgear/Makefile,v 1.8 2000/10/08 01:10:50 asami Exp $
 #
 
 PORTNAME=		FlightGear
@@ -15,7 +15,7 @@ DISTFILES=		${DISTNAME}.tar.gz \
 
 MAINTAINER=		brian@CSUA.Berkeley.EDU
 
-BUILD_DEPENDS=		${X11BASE}/lib/libsl.a:${PORTSDIR}/x11-toolkits/plib
+BUILD_DEPENDS=		${X11BASE}/lib/libplibsl.a:${PORTSDIR}/x11-toolkits/plib
 RUN_DEPENDS=		mpg123:${PORTSDIR}/audio/mpg123
 
 EXTRACT_ONLY=		${DISTNAME}.tar.gz
