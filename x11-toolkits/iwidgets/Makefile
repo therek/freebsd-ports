@@ -2,11 +2,12 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/iwidgets/Makefile,v 1.5 2001/02/05 16:49:03 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/iwidgets/Makefile,v 1.6 2001/07/28 14:53:46 mi Exp $
 #
 
 PORTNAME=	iwidgets
 PORTVERSION=	3.2
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits tk83
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=incrtcl
