@@ -3,11 +3,11 @@
 # Date created:		25 July 1996
 # Whom:			obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/news/tin/Makefile,v 1.81 2000/04/21 07:51:53 mharo Exp $
+# $FreeBSD: ports/news/tin/Makefile,v 1.82 2000/05/23 20:50:13 ache Exp $
 #
 
 PORTNAME=	tin
-PORTVERSION=    1.5.4
+PORTVERSION=    1.5.6
 CATEGORIES=	news
 MASTER_SITES=   ftp://ftp.tin.org/pub/news/clients/tin/v1.5/ \
 		ftp://nuxi.ucdavis.edu/pub/tin/v1.5/ \
