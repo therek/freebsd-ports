@@ -2,7 +2,7 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.20 2001/01/06 05:39:04 obrien Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.21 2001/01/10 15:57:35 kevlo Exp $
 #
 
 PORTNAME=	downloader
@@ -22,7 +22,7 @@ USE_GTK=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" DEST="${PREFIX}" \
 		GTKCONFIG="${GTK_CONFIG}" MAKE="${GMAKE}" \
-		MSGFMT_CMD="${LOCALBASE}/bin/msgfmt"
+		MSGFMT_CMD="${LOCALBASE}/bin/msgfmt" PTHREAD=-pthread
 MAN1=		nt.1
 
 PORTDOCS=	ChangeLog FAQ FAQ.de FAQ.es FAQ.fr FAQ.gr LICENSE     \
