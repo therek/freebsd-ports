@@ -1,12 +1,12 @@
 # New ports collection makefile for:	esound
-# Version required:	0.2.16
+# Version required:	0.2.17
 # Date created:		19 July 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/esound/Makefile,v 1.15 1999/11/09 09:52:56 nakai Exp $
+# $FreeBSD: ports/audio/esound/Makefile,v 1.16 1999/12/04 19:07:42 steve Exp $
 #
 
-DISTNAME=	esound-0.2.16
+DISTNAME=	esound-0.2.17
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/esound
