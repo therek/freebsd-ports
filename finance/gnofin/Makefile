@@ -2,11 +2,11 @@
 # Date created:				Sun Jul 18 1999
 # Whom:					domi@saargate.de
 #
-# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.15 2000/10/14 00:00:45 jedgar Exp $
+# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.16 2000/11/03 00:50:56 jedgar Exp $
 #
 
 PORTNAME=	gnofin
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
