@@ -2,18 +2,14 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.29 2000/08/18 02:19:00 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.30 2000/08/30 10:10:12 knu Exp $
 #
 
 PORTNAME=	ruby
 PORTVERSION=	1.4.6
 CATEGORIES=	lang ruby ipv6
-MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/${BRANCH_NAME}/ \
-		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/${BRANCH_NAME}/ \
-		ftp://ftp.iij.ad.jp/pub/lang/ruby/${BRANCH_NAME}/ \
-		ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/${BRANCH_NAME}/ \
-		ftp://ftp.krnet.ne.jp/pub/ruby/${BRANCH_NAME}/ \
-		ftp://mirror.nucba.ac.jp/mirror/ruby/${BRANCH_NAME}/
+MASTER_SITES=	${MASTER_SITE_RUBY}
+MASTER_SITE_SUBDIR=	1.4
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@bsdclub.org
@@ -26,8 +22,6 @@ PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
 RUBY_VER?=	1.4
 RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
-
-BRANCH_NAME=	1.4
 
 DOCDIR=		${PREFIX}/share/doc/ruby
 EXAMPLESDIR=	${PREFIX}/share/examples/ruby

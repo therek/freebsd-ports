@@ -2,18 +2,14 @@
 # Date created:			Sat Aug 17 17:10:02 CEST 2000
 # Whom:				olgeni@uli.it
 #
-# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.1 2000/08/18 18:53:11 knu Exp $
+# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.2 2000/09/05 01:50:35 steve Exp $
 #
 
 PORTNAME=	ruby-man
 PORTVERSION=	1.4.6
 CATEGORIES+=	lang ruby
-MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/doc/ \
-		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/doc/ \
-		ftp://ftp.iij.ad.jp/pub/lang/ruby/doc/ \
-		ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/doc/ \
-		ftp://ftp.krnet.ne.jp/pub/ruby/doc/ \
-		ftp://mirror.nucba.ac.jp/mirror/ruby/doc/
+MASTER_SITES=	${MASTER_SITE_RUBY}
+MASTER_SITE_SUBDIR=	doc
 DISTNAME=	${PORTNAME}-${PORTVERSION}${LANGSUFFIX}
 
 MAINTAINER=	olgeni@uli.it
