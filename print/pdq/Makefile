@@ -2,7 +2,7 @@
 # Date created:		15 May 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/print/pdq/Makefile,v 1.8 2000/10/09 21:20:42 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pdq
@@ -13,7 +13,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-pdqlibdir=${PREFIX}/etc/pdq
 
