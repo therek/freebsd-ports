@@ -2,11 +2,11 @@
 # Date created:         19 Sep 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gomoku.app/Makefile,v 1.1 2000/09/22 12:36:07 tg Exp $
 #
 
 PORTNAME=	gomoku.app
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.gnustep.it/nicola/Applications/Gomoku/
 DISTNAME=       Gomoku-${PORTVERSION}
