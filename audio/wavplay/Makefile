@@ -2,7 +2,7 @@
 # Date created:				14 January 2000
 # Whom:					greg
 #
-# $FreeBSD: ports/audio/wavplay/Makefile,v 1.1.1.1 2000/06/07 16:07:54 sobomax Exp $
+# $FreeBSD: ports/audio/wavplay/Makefile,v 1.2 2000/06/23 13:21:59 sobomax Exp $
 #
 
 PORTNAME=	wavplay
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
 
 MAINTAINER=	greg@rosevale.com.au
+
+ONLY_FOR_ARCHS=	i386
 
 MAN1=		wavplay.1
 
