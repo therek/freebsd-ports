@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.321 1999/10/01 09:28:32 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.322 1999/10/02 04:12:33 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -947,8 +947,7 @@ MASTER_SITE_WINDOWMAKER+= \
 MASTER_SITE_PORTS_JP+=	\
 	ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/ \
 	ftp://ftp4.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/ \
-	ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/ \
-	ftp://ftp.t-cnet.or.jp/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/
+	ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/FreeBSD-jp/ports-jp/LOCAL_PORTS/%SUBDIR%/
 
 MASTER_SITE_TCLTK+= \
 	ftp://ftp.scriptics.com/pub/tcl/%SUBDIR%/ \
