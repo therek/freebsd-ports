@@ -2,11 +2,11 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.75 2001/04/30 18:49:36 jim Exp $
+# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.76 2001/05/17 20:12:05 jim Exp $
 #
 
 PORTNAME=		xchat
-PORTVERSION=		1.7.4
+PORTVERSION=		1.7.6
 CATEGORIES=		irc gnome
 MASTER_SITES=		http://xchat.org/files/source/1.7/ \
 			http://xchat.linuxpower.org/files/source/1.7/
@@ -20,7 +20,7 @@ USE_PERL5=		yes
 USE_IMLIB=		yes
 WANT_GNOME=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--disable-python
+CONFIGURE_ARGS=		--disable-python --disable-nls
 
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LIBS="-L${LOCALBASE}/lib -lintl"
