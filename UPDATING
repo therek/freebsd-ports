@@ -25,7 +25,7 @@ upgrades.
   3) Reinstall ruby 1.8 (because the previous step kills symlinks)
         portupgrade -f lang/ruby18
 
-  4) Deinstall ruby 1.6 stuff (if you are paranoia)
+  4) Deinstall ruby 1.6 stuff (if you are paranoid)
         pkg_deinstall -ri lang/ruby16
 
 
@@ -40,4 +40,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.1 2004/03/01 22:34:22 kris Exp $
+$FreeBSD: ports/UPDATING,v 1.2 2004/03/02 16:31:14 obrien Exp $
