@@ -2,7 +2,7 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.43 2000/05/27 19:03:46 knu Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.44 2000/06/02 18:01:28 shige Exp $
 #
 
 PORTNAME=	zsh
@@ -22,6 +22,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	shige@FreeBSD.org
+
+USE_AUTOCONF=	yes
 
 ZSH_VER=	${PORTVERSION}
 ZSHFUNC_FILES=	zsh-functions-freebsd-2000.05.15.tar.gz
