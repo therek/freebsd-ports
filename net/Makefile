@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.446 2000/12/26 06:16:48 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.447 2001/01/03 23:43:24 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -70,6 +70,7 @@
     SUBDIR += ethereal
     SUBDIR += everybuddy
     SUBDIR += fidelio
+    SUBDIR += firetalk
     SUBDIR += flow-tools
     SUBDIR += fping
     SUBDIR += freewais-sf
