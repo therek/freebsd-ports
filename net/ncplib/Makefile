@@ -2,14 +2,14 @@
 # Date created:		9 Dec 1999
 # Whom:			Boris Popov <bp@butya.kz>
 #
-# $FreeBSD: ports/net/ncplib/Makefile,v 1.3 2000/04/09 18:12:26 cpiazza Exp $
+# $FreeBSD: ports/net/ncplib/Makefile,v 1.4 2000/10/08 03:57:48 asami Exp $
 #
 
 PORTNAME=	ncplib
 PORTVERSION=	1.3.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.butya.kz/pub/nwlib/ \
-		http://www.chat.ru/~rbp/pub/nwlib/
+		http://rbp.chat.ru/pub/nwlib/
 
 MAINTAINER=	bp@butya.kz
 
