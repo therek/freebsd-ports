@@ -2,7 +2,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.14 2000/06/16 10:37:32 sobomax Exp $
+# $FreeBSD: ports/math/fftpack/Makefile,v 1.15 2000/06/16 21:51:33 asami Exp $
 #
 
 PORTNAME=	fftpack
@@ -13,6 +13,8 @@ DISTNAME=	bihar
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	giffunip@asme.org
+
+LIB_DEPENDS=    linpack.1:${PORTSDIR}/math/linpack
 
 # ${DISTFILES} is automatically created from the directory contents
 IGNOREFILES=	${DISTFILES}
