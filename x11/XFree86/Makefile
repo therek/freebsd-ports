@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.96 2001/04/05 16:21:30 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.97 2001/04/26 20:27:16 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -69,6 +69,8 @@ post-extract:
 .if defined(BUILD_XDIST)
 	@${CP} ${WRKSRC}/programs/Xserver/hw/xfree86/LinkKit/README \
 		${WRKSRC}/programs/Xserver/hw/xfree86/doc/sgml
+	@${MV} ${WRKSRC}/programs/Xserver/hw/xfree86/doc/sgml/DGux.sgml \
+		${WRKSRC}/programs/Xserver/hw/xfree86/doc/sgml/DGUX.sgml
 .endif
 	@if [ -r ${FILESDIR}/config ]; then \
 		${ECHO} Using your existing ${FILESDIR}/config ; \
