@@ -2,11 +2,12 @@
 # Date created:         19 Feb 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/ifmail/Makefile,v 1.15 2000/10/10 04:05:33 kevlo Exp $
+# $FreeBSD: ports/news/ifmail/Makefile,v 1.16 2001/06/24 04:28:41 dinoex Exp $
 #
 
 PORTNAME=	ifmail
 PORTVERSION=	2.15
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.average.org/ifmail/
