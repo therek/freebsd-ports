@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.20 2000/09/09 13:14:50 kevlo Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.21 2000/09/16 17:27:36 ade Exp $
 #
 
 PORTNAME=	BitchX
@@ -33,8 +33,8 @@ CONFIGURE_ARGS+=	--without-gtk
 .endif
 .if defined(WITH_TCL)
 CONFIGURE_ARGS+=	--with-tcl \
-			--with-tcl-includes=/usr/local/include/tcl8.3 \
-			--with-tcl-libs=/usr/local/lib
+			--with-tcl-includes="${PREFIX}/include/tcl8.3" \
+			--with-tcl-libs="${PREFIX}/lib"
 .endif
 .if defined(WITH_ESD)
 CONFIGURE_ARGS+=	--enable-sound
@@ -61,11 +61,17 @@ MAKE_ENV+=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 		INSTALL_DATA="${INSTALL_DATA}"
 
 pre-extract:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${ECHO} "Available switches:"
+	@${ECHO} "-------------------"
+	@${ECHO} "WITH_GNOME - Build GTK BitchX"
+	@${ECHO} "WITH_ESD - Build GTK BitchX with ESD sound support"
+	@${ECHO} "WITH_PLUGINS - Build the plugins"
+	@${ECHO} "WITH_LATIN - Recommended if you are using an ISO-8859-1 display"
+	@${ECHO} "WITH_TCL - Build BitchX with TCL scripting"
 
 .if defined(WITH_TCL)
 post-extract:
-	@uudecode -p files/tcl-freebsd.o.uu > ${WRKSRC}/source/tcl.o
+	@uudecode -p ${FILESDIR}/tcl-freebsd.o.uu > ${WRKSRC}/source/tcl.o
 .endif
 
 .if defined(WITH_LATIN)
