@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.424 2000/10/31 18:37:08 jim Exp $
+# $FreeBSD: ports/net/Makefile,v 1.425 2000/10/31 20:57:30 knu Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -12,6 +12,7 @@
     SUBDIR += arla
     SUBDIR += arping
     SUBDIR += arpwatch
+    SUBDIR += arts++
     SUBDIR += ascend-radius
     SUBDIR += bb
     SUBDIR += bind8
