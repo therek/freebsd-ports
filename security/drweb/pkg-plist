@@ -1,16 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/drweb/pkg-plist,v 1.18 2004/02/28 15:17:44 pav Exp $
 drweb/ChangeLog
 drweb/README
 drweb/README.RUS
-drweb/bases/drw43001.vdb
-drweb/bases/drw43002.vdb
-drweb/bases/drw43003.vdb
-drweb/bases/drw43004.vdb
-drweb/bases/drw43005.vdb
-drweb/bases/drw43006.vdb
-drweb/bases/drw43007.vdb
-drweb/bases/drw43008.vdb
-drweb/bases/drw43009.vdb
+drweb/bases/drw43101.vdb
 drweb/bases/drwebase.vdb
 drweb/doc/readme.daemon
 drweb/doc/readme.daemon.rus
