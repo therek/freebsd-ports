@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.374 2004/12/06 20:47:17 sem Exp $
+# $FreeBSD: ports/LEGAL,v 1.375 2004/12/11 21:28:47 marius Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -467,7 +467,7 @@ robocode-*		ports/games/robocode	Restrictive license. Particularly,
 						redistribution isn't permitted
 						and user should delete software
 						after 60 days.
-rp*_linux20_libc6_i386_*_rpm ports/audio/linux-realplayer Redistribution not allowed.
+linux-realplayer-*.rpm	ports/audio/linux-realplayer Redistribution not allowed.
 rpm/i386/8.0/*		ports/emulators/linux_base-8 binaries under GNU GPL
 						without accompanying source
 rtplib-*		ports/devel/rtplib	Limited use license.
