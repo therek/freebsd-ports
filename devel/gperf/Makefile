@@ -2,7 +2,7 @@
 # Date created:         19.04.1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/devel/gperf/Makefile,v 1.4 2000/04/11 21:28:10 mharo Exp $
+# $FreeBSD: ports/devel/gperf/Makefile,v 1.5 2000/11/30 21:18:18 ade Exp $
 #
 
 PORTNAME=	gperf
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gperf
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 MAN1=		gperf.1

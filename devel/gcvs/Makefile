@@ -2,7 +2,7 @@
 # Date Created:				28 Mar 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/devel/gcvs/Makefile,v 1.1 2001/03/31 11:41:57 dinoex Exp $
+# $FreeBSD: ports/devel/gcvs/Makefile,v 1.2 2001/04/21 15:32:07 dinoex Exp $
 #
 
 PORTNAME=	gcvs
@@ -11,7 +11,8 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cvsgui
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
+
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 BUILD_DEPENDS+=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 RUN_DEPENDS+=	wish8.3:${PORTSDIR}/x11-toolkits/tk83

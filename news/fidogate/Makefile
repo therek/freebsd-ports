@@ -2,7 +2,7 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.18 2001/03/10 06:20:44 dinoex Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.19 2001/06/05 04:52:47 dinoex Exp $
 #
 
 PORTNAME=	fidogate
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.fidogate.org/pub/fidogate/ \
 		http://www.fidogate.org/pub/fidogate/
 MASTER_SITE_SUBDIR=	system/fido
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 # you may commet out this line if you have another transfer-agent
 RUN_DEPENDS=	${LOCALBASE}/libexec/ifmail/ifcico:${PORTSDIR}/news/ifmail

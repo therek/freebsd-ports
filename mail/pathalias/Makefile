@@ -2,7 +2,7 @@
 # Date created:		03 Dec 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/pathalias/Makefile,v 1.5 2001/01/24 06:31:33 dinoex Exp $
+# $FreeBSD: ports/mail/pathalias/Makefile,v 1.6 2001/02/23 05:48:09 dinoex Exp $
 #
 
 PORTNAME=	pathalias
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.lan-ks.de/pub/approved/ \
 DISTNAME=	${PORTNAME}11
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 ALL_TARGET=	pathalias
 

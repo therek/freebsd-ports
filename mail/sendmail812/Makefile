@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.18 2001/06/12 20:02:22 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.19 2001/06/15 17:27:58 dinoex Exp $
 #
 
 PORTNAME=	sendmail
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/mail/sendmail/&,}
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 WCONF=		${WRKSRC}/devtools/Site

@@ -2,7 +2,7 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.41 2001/05/26 16:50:06 dinoex Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.42 2001/06/01 06:05:13 obrien Exp $
 #
 
 PORTNAME=	cnews
@@ -31,7 +31,7 @@ PATCHFILES=	c-news-patch-fileart.c c-news-patch-namecheck.awk \
 		c-news-patch-y2k-2 \
 		c-news-patch-pgpverify-1.12-perl4
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 DIST_SUBDIR=	${DISTNAME}
 NO_WRKSUBDIR=	yes

@@ -2,14 +2,14 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.6 2001/03/10 06:16:36 dinoex Exp $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.7 2001/06/17 09:13:46 dinoex Exp $
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.6
 CATEGORIES=	net gnome
 MASTER_SITES=	http://crescendo.lyrical.net/files/
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 RUN_DEPENDS=	tf:${PORTSDIR}/net/tinyfugue
 

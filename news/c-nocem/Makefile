@@ -2,7 +2,7 @@
 # Date created:		19.May 1999
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/c-nocem/Makefile,v 1.9 2001/03/15 21:16:59 dinoex Exp $
+# $FreeBSD: ports/news/c-nocem/Makefile,v 1.10 2001/05/16 18:46:42 dinoex Exp $
 
 PORTNAME=	c-nocem
 PORTVERSION=	3.6
@@ -10,7 +10,7 @@ CATEGORIES=	news security
 MASTER_SITES=	http://sites.inka.de/~bigred/sw/ \
 		ftp://ftp.dinoex.de/pub/FreeBSD/distfiles/
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 BUILD_DEPENDS=	${WRKDIRPREFIX}${CNEWSSRC}/conf/substitutions:${PORTSDIR}/news/cnews:configure
 BUILD_DEPENDS+=	${LOCALBASE}/lib/libcnews.a:${PORTSDIR}/news/cnews \

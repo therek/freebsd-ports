@@ -2,7 +2,7 @@
 # Date created:				10.Mar 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/vbsfilter/Makefile,v 1.2 2001/03/29 16:34:14 sobomax Exp $
+# $FreeBSD: ports/mail/vbsfilter/Makefile,v 1.3 2001/06/15 17:28:11 dinoex Exp $
 #
 
 PORTNAME=	vbsfilter
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}
 EXTRACT_SUFX=	.c
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmilter.a:${PORTSDIR}/mail/sendmail
 

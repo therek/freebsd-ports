@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.67 2001/06/11 20:14:15 dinoex Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.68 2001/06/12 07:49:52 dinoex Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/ \
 DISTNAME=	openssh-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 USE_OPENSSL=	YES
 

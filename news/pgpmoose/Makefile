@@ -2,7 +2,7 @@
 # Date created:		28 Nov 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.7 2000/04/14 18:40:27 knu Exp $
+# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.8 2001/02/23 05:48:19 dinoex Exp $
 #
 
 PORTNAME=	pgpmoose
@@ -13,7 +13,7 @@ MASTER_SITES=	http://people.qualcomm.com/ggr/ \
 DISTNAME=	PGPMoose
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dirk.meyer@dinoex.sub.org
+MAINTAINER=	dinoex@FreeBSD.org
 
 MAN1=		pmapp.1 pmcanon.1 pmcheck.1 pmnewsgroups.1 \
 		pmdaemon.1 pmcancel.1
