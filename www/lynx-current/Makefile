@@ -3,15 +3,17 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.108 1999/11/23 04:27:28 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.109 2000/01/08 19:32:00 ache Exp $
 #
 
-DISTNAME=       lynx2.8.3dev.18
-PKGNAME=        lynx-2.8.3dev.18
+DISTNAME=       lynx2.8.3dev.20
+PKGNAME=        lynx-2.8.3dev.20
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	ache@FreeBSD.org
+
+FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
 
 USE_BZIP2=      YES
 NO_LATEST_LINK=	YES

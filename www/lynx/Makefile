@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx/Makefile,v 1.87 1999/08/31 02:42:57 peter Exp $
+# $FreeBSD: ports/www/lynx/Makefile,v 1.88 1999/08/31 06:51:50 mharo Exp $
 #
 
 DISTNAME=       lynx2.8.2rel.1
@@ -12,6 +12,8 @@ CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
 MAINTAINER=	jseger@FreeBSD.org
+
+FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
 
 USE_BZIP2=      YES
 WRKSRC=         ${WRKDIR}/lynx2-8-2
