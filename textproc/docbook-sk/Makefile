@@ -2,7 +2,7 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.13 2000/12/26 02:25:42 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	docbook-xml
@@ -14,9 +14,8 @@ DISTNAME=	docbkx412
 MAINTAINER=	kuriyama@FreeBSD.org
 
 USE_ZIP=	YES
-NO_MTREE=	yes
-NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
+NO_BUILD=	YES
+NO_WRKSUBDIR=	YES
 
 INSTDIR=	${PREFIX}/share/xml
 DTDDIR=		${INSTDIR}/docbook
