@@ -2,11 +2,12 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.35 2001/04/13 23:42:14 mharo Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.36 2001/05/04 00:49:15 mharo Exp $
 #
 
 PORTNAME=	analog
 PORTVERSION=	5.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.analog.cx/ \
 		http://www.monash.edu.au/mirror/analog/ \
@@ -17,6 +18,10 @@ MASTER_SITES=	http://www.analog.cx/ \
 		http://www.skreamsoft.com/analogmirror/ \
 
 MAINTAINER=	mharo@FreeBSD.org
+
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
+		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		png.4:${PORTSDIR}/graphics/png
 
 ALL_TARGET=	analog
 
