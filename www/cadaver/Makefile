@@ -2,11 +2,11 @@
 # Date created:		13 January 2000
 # Whom:			Alex Povolotsky <tarkhil@over.ru>
 #
-# $FreeBSD: ports/www/cadaver/Makefile,v 1.1 2000/01/29 05:54:08 steve Exp $
+# $FreeBSD: ports/www/cadaver/Makefile,v 1.2 2000/04/10 00:04:35 cpiazza Exp $
 #
 
 PORTNAME=	cadaver
-PORTVERSION= 	0.10.0
+PORTVERSION=	0.10.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/cadaver/
 

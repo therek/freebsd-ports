@@ -2,11 +2,11 @@
 # Date created:		1999-07-15
 # Whom:			Palle Girgensohn <girgen@partitur.se>
 #
-# $FreeBSD: ports/www/gnujsp/Makefile,v 1.5 2000/10/08 10:23:09 asami Exp $
+# $FreeBSD: ports/www/gnujsp/Makefile,v 1.6 2001/01/29 14:19:37 sf Exp $
 #
 
 PORTNAME=	gnujsp
-PORTVERSION= 	1.0.1
+PORTVERSION=	1.0.1
 CATEGORIES=	www java
 MASTER_SITES=	http://www.klomp.org/gnujsp/downloads/
 

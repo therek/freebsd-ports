@@ -2,11 +2,11 @@
 # Date created:		16 October 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/www/ashe/Makefile,v 1.11 2000/11/07 23:28:17 asami Exp $
+# $FreeBSD: ports/www/ashe/Makefile,v 1.12 2000/11/13 14:26:49 kevlo Exp $
 #
 
 PORTNAME=	ashe
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.rpi.edu/pub/puninj/ASHE/ASHE-1.3/%SUBDIR%/
 MASTER_SITE_SUBDIR=	src libcci libhtmlw-2.7

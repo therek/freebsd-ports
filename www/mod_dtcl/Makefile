@@ -2,11 +2,11 @@
 # Date created:				January 9, 1999
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_dtcl/Makefile,v 1.5 2000/04/10 00:05:54 cpiazza Exp $
+# $FreeBSD: ports/www/mod_dtcl/Makefile,v 1.6 2000/07/16 19:54:20 steve Exp $
 #
 
 PORTNAME=	mod_dtcl
-PORTVERSION= 	0.8.1.1
+PORTVERSION=	0.8.1.1
 CATEGORIES=	www tcl83
 MASTER_SITES=	http://master.debian.org/~davidw/mod_dtcl/
 DISTNAME=	libapache-mod-dtcl_0.8.1-1

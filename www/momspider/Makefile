@@ -2,11 +2,11 @@
 # Date created:         11 October 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/www/momspider/Makefile,v 1.5 1999/09/19 10:30:46 wosch Exp $
+# $FreeBSD: ports/www/momspider/Makefile,v 1.6 2000/04/10 00:05:56 cpiazza Exp $
 #
 
 PORTNAME=	momspider
-PORTVERSION= 	1.00
+PORTVERSION=	1.00
 CATEGORIES=	www
 MASTER_SITES=   ftp://www.ics.uci.edu/pub/websoft/libwww-perl/ \
 		ftp://www.ics.uci.edu/pub/websoft/MOMspider/ \

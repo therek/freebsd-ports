@@ -2,11 +2,11 @@
 # Date created:		31 December 1996
 # Whom:			MITA Yoshio <mita@ee.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/w3/Makefile,v 1.10 2000/04/10 00:07:06 cpiazza Exp $
+# $FreeBSD: ports/www/w3/Makefile,v 1.11 2000/04/14 17:24:55 knu Exp $
 #
 
 PORTNAME=	w3
-PORTVERSION= 	2.2.26
+PORTVERSION=	2.2.26
 CATEGORIES+=	www elisp
 MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/network/WWW/w3/ \
 		ftp://ftp.cs.indiana.edu/pub/elisp/w3/

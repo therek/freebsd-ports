@@ -2,11 +2,11 @@
 # Date created:				March 13, 2000
 # Whom:					Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.4 2000/06/17 02:37:07 will Exp $
+# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.5 2000/11/12 02:36:35 vanilla Exp $
 #
 
 PORTNAME=	Apache-Session
-PORTVERSION= 	1.53
+PORTVERSION=	1.53
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache

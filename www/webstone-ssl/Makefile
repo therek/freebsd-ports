@@ -2,11 +2,11 @@
 # Date created:				2 Nov 2000
 # Whom:					Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/webstone-ssl/Makefile,v 1.1 2000/12/03 21:01:58 will Exp $
 #
 
 PORTNAME=	webstone
-PORTVERSION= 	2.5
+PORTVERSION=	2.5
 CATEGORIES=	www benchmarks
 MASTER_SITES=	http://crypto.stanford.edu/~nagendra/projects/WebStone/download/
 PKGNAMESUFFIX=	-ssl

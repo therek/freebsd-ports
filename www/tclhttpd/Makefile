@@ -2,11 +2,11 @@
 # Date created:		27 Apr 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/tclhttpd/Makefile,v 1.1 2000/07/20 11:55:45 nbm Exp $
 #
 
 PORTNAME=	tclhttpd
-PORTVERSION= 	3.0.3
+PORTVERSION=	3.0.3
 CATEGORIES=	www tcl${TCL_VER}
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	httpd

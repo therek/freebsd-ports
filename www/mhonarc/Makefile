@@ -2,11 +2,11 @@
 # Date created:				18 June 1997
 # Whom:					koshy@india.hp.com
 #
-# $FreeBSD: ports/www/mhonarc/Makefile,v 1.15 2000/11/08 08:59:40 jkoshy Exp $
+# $FreeBSD: ports/www/mhonarc/Makefile,v 1.16 2001/01/01 10:15:15 will Exp $
 #
 
 PORTNAME=	mhonarc
-PORTVERSION= 	2.4.7
+PORTVERSION=	2.4.7
 CATEGORIES=	www mail
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/tar/ \
 		http://mirror.ncsa.uiuc.edu/mhonarc.org/\

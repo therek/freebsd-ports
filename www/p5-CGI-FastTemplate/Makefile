@@ -2,11 +2,11 @@
 # Date created:				27 Feb 2000
 # Whom:	      				Vanilla I. Shu <vanilla@FreeBSD.ORG>
 #
-# $FreeBSD: ports/www/p5-CGI-FastTemplate/Makefile,v 1.3 2000/06/17 02:37:08 will Exp $
+# $FreeBSD: ports/www/p5-CGI-FastTemplate/Makefile,v 1.4 2000/10/23 21:03:08 will Exp $
 #
 
 PORTNAME=	CGI-FastTemplate
-PORTVERSION= 	1.09
+PORTVERSION=	1.09
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI

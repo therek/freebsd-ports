@@ -2,11 +2,11 @@
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.13 2000/11/20 17:53:19 sumikawa Exp $
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.14 2000/12/26 18:12:15 sumikawa Exp $
 #
 
 PORTNAME=	wwwoffle
-PORTVERSION= 	2.6
+PORTVERSION=	2.6
 PORTREVISION=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/httpd/ \

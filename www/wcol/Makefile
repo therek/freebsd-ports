@@ -2,11 +2,11 @@
 # Date created:		17 July 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/www/wcol/Makefile,v 1.6 1999/09/04 17:18:32 shige Exp $
+# $FreeBSD: ports/www/wcol/Makefile,v 1.7 2000/04/10 00:07:11 cpiazza Exp $
 #
 
 PORTNAME=	wcolEpre
-PORTVERSION= 	1999.01.10
+PORTVERSION=	1999.01.10
 CATEGORIES=	www
 MASTER_SITES=	http://shika.aist-nara.ac.jp/products/DEST/Wcol/
 DISTNAME=	wcolEpre.990110_150126

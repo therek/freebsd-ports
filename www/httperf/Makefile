@@ -2,11 +2,11 @@
 # Date created:		28 Jul 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/httperf/Makefile,v 1.7 2000/06/22 05:52:08 will Exp $
+# $FreeBSD: ports/www/httperf/Makefile,v 1.8 2000/09/25 12:21:41 asami Exp $
 #
 
 PORTNAME=	httperf
-PORTVERSION= 	0.6
+PORTVERSION=	0.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 

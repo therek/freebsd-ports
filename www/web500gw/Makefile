@@ -2,11 +2,11 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/web500gw/Makefile,v 1.11 2000/06/02 03:24:03 will Exp $
+# $FreeBSD: ports/www/web500gw/Makefile,v 1.12 2000/10/08 10:23:19 asami Exp $
 #
 
 PORTNAME=	web500gw
-PORTVERSION= 	2.1b3
+PORTVERSION=	2.1b3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tu-chemnitz.de/pub/Local/urz/web500gw/ \
 		http://www.tu-chemnitz.de/ftp-home/pub/Local/urz/web500gw/ \

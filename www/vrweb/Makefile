@@ -2,11 +2,11 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/vrweb/Makefile,v 1.18 2000/08/03 09:26:48 asami Exp $
+# $FreeBSD: ports/www/vrweb/Makefile,v 1.19 2000/08/11 06:34:47 asami Exp $
 #
 
 PORTNAME=	vrweb
-PORTVERSION= 	1.5
+PORTVERSION=	1.5
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.iicm.edu/pub/VRweb/UNIX/vrweb-1.5/ \
 		ftp://ftp.sunet.se/pub/nir/Hyper-G/VRweb/UNIX/vrweb-1.5/ \

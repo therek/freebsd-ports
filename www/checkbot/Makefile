@@ -2,11 +2,11 @@
 # Date created:				2. Feb 1998
 # Whom:	      				wosch@FreeBSD.org
 #
-# $FreeBSD: ports/www/checkbot/Makefile,v 1.19 2000/06/09 05:20:00 will Exp $
+# $FreeBSD: ports/www/checkbot/Makefile,v 1.20 2001/01/14 23:49:32 kris Exp $
 #
 
 PORTNAME=	checkbot
-PORTVERSION= 	1.62
+PORTVERSION=	1.62
 CATEGORIES=	www perl5
 MASTER_SITES=	http://degraaff.org/checkbot/ \
 		http://www.de.freebsd.org/~wosch/src/

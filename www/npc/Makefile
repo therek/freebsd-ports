@@ -2,11 +2,11 @@
 # Date created:		3 December 1998
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/www/npc/Makefile,v 1.3 2000/04/10 00:06:12 cpiazza Exp $
+# $FreeBSD: ports/www/npc/Makefile,v 1.4 2000/10/08 10:23:14 asami Exp $
 #
 
 PORTNAME=	npc
-PORTVERSION= 	0.83
+PORTVERSION=	0.83
 CATEGORIES=	www
 MASTER_SITES=	http://www2.biglobe.ne.jp/%7Enir/soft/
 

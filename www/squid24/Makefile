@@ -2,11 +2,11 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.73 2001/01/05 10:49:01 peter Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.74 2001/01/12 06:46:04 peter Exp $
 #
 
 PORTNAME=	squid
-PORTVERSION= 	2.3
+PORTVERSION=	2.3
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://ftp.squid-cache.org/pub/squid-2/STABLE/ \

@@ -2,11 +2,11 @@
 # Date Created:			01 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-TableLayout/Makefile,v 1.3 2000/06/17 02:37:12 will Exp $
+# $FreeBSD: ports/www/p5-HTML-TableLayout/Makefile,v 1.4 2000/11/13 12:45:17 demon Exp $
 #
 
 PORTNAME=	HTML-TableLayout
-PORTVERSION= 	1.001008
+PORTVERSION=	1.001008
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML

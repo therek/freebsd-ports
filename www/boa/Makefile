@@ -2,11 +2,11 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/boa/Makefile,v 1.7 2000/10/06 21:53:41 jedgar Exp $
+# $FreeBSD: ports/www/boa/Makefile,v 1.8 2000/10/07 12:18:16 jedgar Exp $
 #
 
 PORTNAME=	boa
-PORTVERSION= 	0.94.8.3
+PORTVERSION=	0.94.8.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.boa.org/
 

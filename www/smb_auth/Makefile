@@ -2,11 +2,11 @@
 # Date created:				13 January 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/smb_auth/Makefile,v 1.3 2000/05/17 11:18:25 sobomax Exp $
+# $FreeBSD: ports/www/smb_auth/Makefile,v 1.4 2000/11/01 15:51:10 sobomax Exp $
 #
 
 PORTNAME=	smb_auth
-PORTVERSION= 	0.05
+PORTVERSION=	0.05
 CATEGORIES=	www
 MASTER_SITES=	http://www.hacom.nl/~richard/software/
 

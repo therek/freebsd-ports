@@ -2,11 +2,11 @@
 # Date created:         4 May 1995
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/wn/Makefile,v 1.35 2000/05/29 15:03:44 steve Exp $
+# $FreeBSD: ports/www/wn/Makefile,v 1.36 2001/01/08 18:51:40 trevor Exp $
 #
 
 PORTNAME=	wn
-PORTVERSION= 	1.18.6
+PORTVERSION=	1.18.6
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}	# ftp://ftp.acns.nwu.edu/pub/wn/
 MASTER_SITE_SUBDIR=	trevor

@@ -2,11 +2,11 @@
 # Date created:		25 November 1998
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/www/marc-search/Makefile,v 1.6 2000/02/05 10:31:02 sheldonh Exp $
+# $FreeBSD: ports/www/marc-search/Makefile,v 1.7 2000/04/10 00:05:50 cpiazza Exp $
 #
 
 PORTNAME=	marc-search
-PORTVERSION= 	4.3
+PORTVERSION=	4.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/contrib/marc-search/
 DISTNAME=	${PORTNAME}.${PORTVERSION}

@@ -2,11 +2,11 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.77 2001/01/01 10:15:12 will Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.78 2001/01/30 20:45:48 rse Exp $
 #
 
 PORTNAME=	apache+mod_ssl
-PORTVERSION= 	${VERSION_APACHE}+${VERSION_MODSSL}
+PORTVERSION=	${VERSION_APACHE}+${VERSION_MODSSL}
 PORTREVISION=	0
 CATEGORIES=	www security
 MASTER_SITES=	http://www.apache.org/dist/ \

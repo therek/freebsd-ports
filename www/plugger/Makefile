@@ -2,11 +2,11 @@
 # Date created:		11 Februrary 1999
 # Whom:			Jay Sachs <sachs@cs.williams.edu>
 #
-# $FreeBSD: ports/www/plugger/Makefile,v 1.5 2000/05/29 03:29:32 steve Exp $
+# $FreeBSD: ports/www/plugger/Makefile,v 1.6 2000/10/10 17:57:37 ade Exp $
 #
 
 PORTNAME=	plugger
-PORTVERSION= 	3.2
+PORTVERSION=	3.2
 CATEGORIES=	www
 MASTER_SITES=	http://fredrik.hubbe.net/plugger/ \
 		ftp://ftp.netscape.com/pub/sdk/plugin/unix/

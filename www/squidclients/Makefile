@@ -2,11 +2,11 @@
 # Date created:		05 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidclients/Makefile,v 1.6 2000/10/08 10:23:15 asami Exp $
+# $FreeBSD: ports/www/squidclients/Makefile,v 1.7 2000/11/13 12:45:21 demon Exp $
 #
 
 PORTNAME=	squidclients
-PORTVERSION= 	1.6
+PORTVERSION=	1.6
 CATEGORIES=	www
 MASTER_SITES=	http://www.cineca.it/~nico/binaries/
 DISTNAME=	squidclients-1.6-freebsd.bin

@@ -2,11 +2,11 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.120 2001/01/21 14:22:06 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.121 2001/01/21 14:24:29 dirk Exp $
 #
 
 PORTNAME=	mod_php3
-PORTVERSION= 	3.0.18
+PORTVERSION=	3.0.18
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.php.net/pub/${PHP_DISTDIR}/ \
 		http://us.php.net/${PHP_DISTDIR}/ \

@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-Stream/Makefile,v 1.15 2000/04/23 12:24:31 vanilla Exp $
+# $FreeBSD: ports/www/p5-HTML-Stream/Makefile,v 1.16 2000/10/23 21:03:09 will Exp $
 #
 
 PORTNAME=	HTML-Stream
-PORTVERSION= 	1.45
+PORTVERSION=	1.45
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML

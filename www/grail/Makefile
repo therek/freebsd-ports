@@ -2,11 +2,11 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.18 2000/11/23 18:45:28 sobomax Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.19 2000/12/07 18:15:38 nectar Exp $
 #
 
 PORTNAME=	grail
-PORTVERSION= 	0.6
+PORTVERSION=	0.6
 CATEGORIES=	www python
 MASTER_SITES=	ftp://ftp.python.org/pub/grail/
 DISTFILES=	${PORTNAME}-06.tgz

@@ -2,11 +2,11 @@
 # Date created:		3 Nov 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/www/cgihtml/Makefile,v 1.10 2000/10/04 06:40:05 sobomax Exp $
+# $FreeBSD: ports/www/cgihtml/Makefile,v 1.11 2000/11/22 10:20:14 roam Exp $
 #
 
 PORTNAME=	cgihtml
-PORTVERSION= 	1.69
+PORTVERSION=	1.69
 CATEGORIES=	www devel
 MASTER_SITES=	ftp://hcs.harvard.edu/pub/web/tools/cgihtml/
 

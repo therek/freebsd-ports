@@ -2,11 +2,11 @@
 # Date created:        13 May 1999
 # Whom:                kbyanc
 #
-# $FreeBSD: ports/www/fcgi/Makefile,v 1.6 2000/07/10 01:54:50 steve Exp $
+# $FreeBSD: ports/www/fcgi/Makefile,v 1.7 2000/08/20 21:41:49 kbyanc Exp $
 #
 
 PORTNAME=	fcgi-devkit
-PORTVERSION= 	2.2.0
+PORTVERSION=	2.2.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.fastcgi.com/dist/
 DISTNAME=	devkit_2.2.0

@@ -2,11 +2,11 @@
 # Date created:			31 July 1999
 # Whom:				Jim Mock <jimFreeBSD.org>
 #
-# $FreeBSD: ports/www/erwn/Makefile,v 1.5 2000/07/07 19:58:52 steve Exp $
+# $FreeBSD: ports/www/erwn/Makefile,v 1.6 2000/10/05 06:42:29 reg Exp $
 #
 
 PORTNAME=	erwn
-PORTVERSION= 	0.3.1
+PORTVERSION=	0.3.1
 CATEGORIES=	www editors
 MASTER_SITES=	http://www-stud.fht-esslingen.de/erwin/
 DISTNAME=	erwin-${PORTVERSION}

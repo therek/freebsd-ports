@@ -2,11 +2,11 @@
 # Date created:				30 March 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/www/cgiparse/Makefile,v 1.16 2000/10/04 06:40:05 sobomax Exp $
+# $FreeBSD: ports/www/cgiparse/Makefile,v 1.17 2000/11/13 23:20:00 asami Exp $
 #
 
 PORTNAME=	cgiparse
-PORTVERSION= 	0.9b
+PORTVERSION=	0.9b
 CATEGORIES=	www devel
 MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/jmpc/dist/	\
 		http://www.funkthat.com/~jmg/

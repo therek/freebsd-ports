@@ -2,7 +2,7 @@
 # Date created:		2 May 1998
 # Whom:			Ian Struble <ian@broken.net>
 #
-# $FreeBSD: ports/www/junkbuster/Makefile,v 1.8 2000/03/05 23:25:14 obrien Exp $
+# $FreeBSD: ports/www/junkbuster/Makefile,v 1.9 2000/04/10 00:05:30 cpiazza Exp $
 
 # You need to delete the old distfile if you are upgrading, as the tar ball
 # for ijb has not been changing names between minor revisions(ie 2.0->2.0.1).
@@ -10,7 +10,7 @@
 # in the next revision.
 
 PORTNAME=	junkbuster
-PORTVERSION= 	2.0.2
+PORTVERSION=	2.0.2
 CATEGORIES=	www
 MASTER_SITES=	http://www.junkbusters.com/ht/en/
 DISTNAME=	ijb20

@@ -2,11 +2,11 @@
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/nscache/Makefile,v 1.3 2000/07/07 19:59:14 steve Exp $
+# $FreeBSD: ports/www/nscache/Makefile,v 1.4 2000/10/05 06:42:29 reg Exp $
 #
 
 PORTNAME=	nscache
-PORTVERSION= 	0.2p2
+PORTVERSION=	0.2p2
 CATEGORIES=	www
 MASTER_SITES=	http://www.idata.sk/~ondrej/sw/
 DISTNAME=	nscache-0.2pl2

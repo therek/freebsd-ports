@@ -2,11 +2,11 @@
 # Date created:				01 Oct 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/www/adzapper/Makefile,v 1.3 2000/04/10 00:04:09 cpiazza Exp $
+# $FreeBSD: ports/www/adzapper/Makefile,v 1.4 2000/11/11 16:41:03 sobomax Exp $
 #
 
 PORTNAME=	adzapper
-PORTVERSION= 	0.3.0
+PORTVERSION=	0.3.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.zaplet.org/adzapper/ \
 		ftp://ftp.aquezada.com/pub/distrib/adzapper/

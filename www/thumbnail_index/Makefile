@@ -2,11 +2,11 @@
 # Date created:		Aug 14, 2000
 # Whom:			Yoshiro MIHIRA <sanpei@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/thumbnail_index/Makefile,v 1.1 2000/09/05 14:46:20 sanpei Exp $
 #
 
 PORTNAME=	thumbnail_index
-PORTVERSION= 	1998.08.10
+PORTVERSION=	1998.08.10
 CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/thumbnail_index/
 DISTNAME=	${PORTNAME}_10aug98

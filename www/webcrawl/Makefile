@@ -2,11 +2,11 @@
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/webcrawl/Makefile,v 1.4 2000/04/10 00:07:15 cpiazza Exp $
+# $FreeBSD: ports/www/webcrawl/Makefile,v 1.5 2000/11/13 12:45:29 demon Exp $
 #
 
 PORTNAME=	webcrawl
-PORTVERSION= 	1.10
+PORTVERSION=	1.10
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/mirroring

@@ -2,11 +2,11 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.18 2000/06/17 02:37:14 will Exp $
+# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.19 2000/10/23 21:03:10 will Exp $
 #
 
 PORTNAME=	WWW-Search
-PORTVERSION= 	2.10
+PORTVERSION=	2.10
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	WWW

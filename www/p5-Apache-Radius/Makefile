@@ -2,11 +2,11 @@
 # Date created:				Mon 20 Sep 19:46:21 SAST 1999
 # Whom:					Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.5 2000/04/10 00:06:17 cpiazza Exp $
+# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.6 2000/06/17 02:37:07 will Exp $
 #
 
 PORTNAME=	Apache-Radius
-PORTVERSION= 	0.3
+PORTVERSION=	0.3
 CATEGORIES=	www security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache

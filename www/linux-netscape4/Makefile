@@ -2,11 +2,11 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.14 2000/05/08 19:20:32 knu Exp $
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.15 2000/10/08 10:23:10 asami Exp $
 #
 
 PORTNAME=	linux-netscape
-PORTVERSION= 	4.08
+PORTVERSION=	4.08
 CATEGORIES=	www linux
 MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \

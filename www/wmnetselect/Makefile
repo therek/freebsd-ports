@@ -2,11 +2,11 @@
 # Date created:        7 March 1999
 # Whom:                David McNett <nugget@slacker.com>
 #
-# $FreeBSD: ports/www/wmnetselect/Makefile,v 1.5 2000/08/03 09:26:48 asami Exp $
+# $FreeBSD: ports/www/wmnetselect/Makefile,v 1.6 2000/12/30 19:10:31 sf Exp $
 #
 
 PORTNAME=	wmnetselect
-PORTVERSION= 	0.8
+PORTVERSION=	0.8
 CATEGORIES=	www windowmaker
 MASTER_SITES=	http://home.att.net/~apathos/code/
 

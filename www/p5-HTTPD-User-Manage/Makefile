@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTTPD-Tools/Makefile,v 1.14 2000/06/17 02:37:13 will Exp $
+# $FreeBSD: ports/www/p5-HTTPD-Tools/Makefile,v 1.15 2000/10/23 21:03:10 will Exp $
 #
 
 PORTNAME=	HTTPD-Tools
-PORTVERSION= 	0.55
+PORTVERSION=	0.55
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTTPD

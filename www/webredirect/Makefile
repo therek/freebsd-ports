@@ -2,11 +2,11 @@
 # Date created:		24 October 2000
 # Whom:			kaj@Raditex.se
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/webredirect/Makefile,v 1.1 2000/10/28 06:09:54 will Exp $
 #
 
 PORTNAME=	webredirect
-PORTVERSION= 	0.1
+PORTVERSION=	0.1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.Raditex.se/pub/kaj/
 

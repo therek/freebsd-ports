@@ -2,11 +2,11 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.12 2000/11/13 12:45:25 demon Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.13 2001/01/21 15:40:47 dirk Exp $
 #
 
 PORTNAME=	udmsearch
-PORTVERSION= 	3.0.23
+PORTVERSION=	3.0.23
 CATEGORIES=	www databases
 MASTER_SITES=	http://mysearch.udm.net/Download/	\
 		ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\

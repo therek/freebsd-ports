@@ -2,11 +2,11 @@
 # Date created:		15 Oct 1997
 # Whom:			Ian Vaudrey <i.vaudrey@cableinet.co.uk>
 #
-# $FreeBSD: ports/www/xitami/Makefile,v 1.3 1999/08/31 02:43:35 peter Exp $
+# $FreeBSD: ports/www/xitami/Makefile,v 1.4 2000/04/10 00:07:28 cpiazza Exp $
 #
 
 PORTNAME=	xitami
-PORTVERSION= 	2.3d
+PORTVERSION=	2.3d
 CATEGORIES=	www
 MASTER_SITES=	http://www.imatix.com/pub/xitami/
 DISTNAME=	xiuni23d

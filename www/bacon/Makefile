@@ -2,11 +2,11 @@
 # Date created:        9 September 1999
 # Whom:                Justin Robinson <jmrobins@samurai.ruin.org>
 #
-# $FreeBSD: ports/www/bacon/Makefile,v 1.3 2000/04/10 00:04:30 cpiazza Exp $
+# $FreeBSD: ports/www/bacon/Makefile,v 1.4 2000/10/08 10:23:09 asami Exp $
 #
 
 PORTNAME=	bacon
-PORTVERSION= 	1.071999
+PORTVERSION=	1.071999
 CATEGORIES=	www
 MASTER_SITES=	ftp://samurai.ruin.org/pub/All/
 

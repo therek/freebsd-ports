@@ -2,11 +2,11 @@
 # Date created:				18 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/webfs/Makefile,v 1.7 2000/11/29 22:39:49 jedgar Exp $
+# $FreeBSD: ports/www/webfs/Makefile,v 1.8 2001/01/05 18:23:08 jedgar Exp $
 #
 
 PORTNAME=	webfs
-PORTVERSION= 	1.6
+PORTVERSION=	1.6
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.strusel007.de/linux/misc/
 DISTNAME=	${PORTNAME}_${PORTVERSION}

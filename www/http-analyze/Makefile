@@ -2,10 +2,10 @@
 # Date created:		Fri Jul 11 06:11:41 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/http-analyze/Makefile,v 1.13 2000/06/06 17:56:51 will Exp $
+# $FreeBSD: ports/www/http-analyze/Makefile,v 1.14 2000/12/11 02:41:36 steve Exp $
 
 PORTNAME=	http-analyze
-PORTVERSION= 	2.01
+PORTVERSION=	2.01
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.rent-a-guru.de/pub/http-analyze2.01/
 DISTNAME=	${PORTNAME}${PORTVERSION}

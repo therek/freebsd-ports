@@ -2,11 +2,11 @@
 # Date created:        25 March 1997
 # Whom:                Soren Dossing <sauber@netcom.com>
 #
-# $FreeBSD: ports/www/webstone/Makefile,v 1.8 2000/09/21 19:58:47 fenner Exp $
+# $FreeBSD: ports/www/webstone/Makefile,v 1.9 2000/10/08 10:23:20 asami Exp $
 #
 
 PORTNAME=	webstone
-PORTVERSION= 	2.5
+PORTVERSION=	2.5
 CATEGORIES=	www benchmarks
 MASTER_SITES=	ftp://ftp.mindcraft.com/webstone/
 DISTNAME=	ws25_src

@@ -2,11 +2,11 @@
 # Date created:				October 21th 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-TableExtract/Makefile,v 1.1 2000/10/28 03:24:16 will Exp $
+# $FreeBSD: ports/www/p5-HTML-TableExtract/Makefile,v 1.2 2001/01/11 16:12:29 kevlo Exp $
 #
 
 PORTNAME=	HTML-TableExtract
-PORTVERSION= 	1.06
+PORTVERSION=	1.06
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML

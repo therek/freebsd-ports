@@ -2,11 +2,11 @@
 # Date created:			21 Jul 1999
 # Whom:				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/djvuplugin/Makefile,v 1.1 2000/03/29 03:03:42 ade Exp $
+# $FreeBSD: ports/www/djvuplugin/Makefile,v 1.2 2000/04/10 00:04:57 cpiazza Exp $
 #
 
 PORTNAME=	djvuplugin
-PORTVERSION= 	0.9
+PORTVERSION=	0.9
 CATEGORIES=	www graphics
 MASTER_SITES=	http://www.djvu.com/products/plugin/unix/
 DISTNAME=	npdjvu-freebsd

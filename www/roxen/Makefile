@@ -2,11 +2,11 @@
 # Date created:		26 February 1999
 # Whom:			Kai Voigt (k@123.org)
 #
-# $FreeBSD: ports/www/roxen/Makefile,v 1.7 1999/09/30 23:06:52 asami Exp $
+# $FreeBSD: ports/www/roxen/Makefile,v 1.8 2000/04/10 00:06:45 cpiazza Exp $
 #
 
 PORTNAME=	roxen
-PORTVERSION= 	1.3.111
+PORTVERSION=	1.3.111
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.roxen.com/roxen/source/
 DISTNAME=	roxen_1.3.111-0.6-40bit

@@ -3,7 +3,7 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by thepish and girgen@partitur.se
 #
-# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.70 2000/10/16 01:15:08 trevor Exp $
+# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.71 2000/11/04 23:08:07 trevor Exp $
 #
 
 PORTNAME=	bsdi-netscape-${BROWSER}
@@ -11,7 +11,7 @@ PORTVERSION=	4.75
 
 MAINTAINER=	trevor@FreeBSD.org
 
-FORBIDDEN= 	"buffer overflow in password field of HTML forms,\
+FORBIDDEN=	"buffer overflow in password field of HTML forms,\
 		reported by Michal Zalewski and fixed in 4.76--example at \
 		http://people.freebsd.org/~trevor/hostile-page.html"
 

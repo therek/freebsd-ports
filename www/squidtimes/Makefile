@@ -2,11 +2,11 @@
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidtimes/Makefile,v 1.8 2000/10/08 10:23:16 asami Exp $
+# $FreeBSD: ports/www/squidtimes/Makefile,v 1.9 2000/11/13 12:45:23 demon Exp $
 #
 
 PORTNAME=	squidtimes
-PORTVERSION= 	1.12
+PORTVERSION=	1.12
 CATEGORIES=	www
 MASTER_SITES=	http://www.cineca.it/~nico/binaries/ \
 		${MASTER_SITE_LOCAL}

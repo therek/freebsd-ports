@@ -2,11 +2,11 @@
 # Date created:        19 September 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/www/linbot/Makefile,v 1.9 2000/06/23 13:21:58 sobomax Exp $
+# $FreeBSD: ports/www/linbot/Makefile,v 1.10 2000/09/17 21:19:26 steve Exp $
 #
 
 PORTNAME=	linbot
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	${MASTER_SITE_SUNSITE}

@@ -2,11 +2,11 @@
 # Date created:        3 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/flashplugin/Makefile,v 1.8 2000/08/08 02:47:47 steve Exp $
+# $FreeBSD: ports/www/flashplugin/Makefile,v 1.9 2000/12/21 18:21:36 knu Exp $
 #
 
 PORTNAME=	flashplugin
-PORTVERSION= 	0.4.3
+PORTVERSION=	0.4.3
 CATEGORIES=	www graphics
 MASTER_SITES=	http://www.geocities.com/TimesSquare/Labyrinth/5084/flash/Linux/ \
 		http://perso.club-internet.fr/odebon/flash/Linux/

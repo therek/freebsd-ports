@@ -2,11 +2,11 @@
 # Date created:				27 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/cgic/Makefile,v 1.5 2000/06/16 08:18:24 sobomax Exp $
+# $FreeBSD: ports/www/cgic/Makefile,v 1.6 2000/06/16 21:52:07 asami Exp $
 #
 
 PORTNAME=	cgic
-PORTVERSION= 	1.06
+PORTVERSION=	1.06
 CATEGORIES=	www
 MASTER_SITES=	http://www.boutell.com/cgic/
 DISTNAME=	${PORTNAME}106

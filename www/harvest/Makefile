@@ -2,11 +2,11 @@
 # Date created:		Fri Mar  1 19:43:52 MET 1996
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/harvest/Makefile,v 1.12 2000/04/10 00:05:19 cpiazza Exp $
+# $FreeBSD: ports/www/harvest/Makefile,v 1.13 2001/01/03 22:17:11 andreas Exp $
 #
 
 PORTNAME=	harvest
-PORTVERSION= 	1.5
+PORTVERSION=	1.5
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tardis.ed.ac.uk/pub/harvest/ \
 		ftp://nic.nasa.gov/software/harvest-dist/ \

@@ -2,11 +2,11 @@
 # Date created:         1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.9 2000/10/08 10:23:08 asami Exp $
+# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.10 2000/11/13 04:48:16 steve Exp $
 #
 
 PORTNAME=	apache-jserv
-PORTVERSION= 	1.1.2
+PORTVERSION=	1.1.2
 CATEGORIES=	www java
 MASTER_SITES=	http://java.apache.org/jserv/dist/
 DISTNAME=	ApacheJServ-${PORTVERSION}

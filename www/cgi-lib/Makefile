@@ -2,11 +2,11 @@
 # Date created:				7 January 2000
 # Whom:					Sergey Samoyloff <gonza@techline.ru>
 #
-# $FreeBSD: ports/www/cgi-lib/Makefile,v 1.5 2000/04/10 00:04:38 cpiazza Exp $
+# $FreeBSD: ports/www/cgi-lib/Makefile,v 1.6 2000/07/14 11:22:45 alex Exp $
 #
 
 PORTNAME=	cgi-lib
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	www
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	alex

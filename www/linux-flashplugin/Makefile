@@ -2,11 +2,11 @@
 # Date created:		13 Feburary 2000
 # Whom:			Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/www/linux-flashplugin/Makefile,v 1.2 2000/04/10 00:05:42 cpiazza Exp $
+# $FreeBSD: ports/www/linux-flashplugin/Makefile,v 1.3 2000/07/19 15:55:20 knu Exp $
 #
 
 PORTNAME=	linux-flashplugin
-PORTVERSION= 	4.0.r12
+PORTVERSION=	4.0.r12
 CATEGORIES=	www graphics linux
 MASTER_SITES=	http://download.macromedia.com/pub/shockwave/flash/english/linux/4.0r12/
 DISTNAME=	flash_linux

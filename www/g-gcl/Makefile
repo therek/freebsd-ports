@@ -2,11 +2,11 @@
 # Date created:				21 Jun 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/www/g-gcl/Makefile,v 1.3 1999/08/31 02:42:49 peter Exp $
+# $FreeBSD: ports/www/g-gcl/Makefile,v 1.4 2000/04/10 00:05:12 cpiazza Exp $
 #
 
 PORTNAME=	g-gcl
-PORTVERSION= 	1.10
+PORTVERSION=	1.10
 CATEGORIES=	www graphics
 MASTER_SITES=	ftp://ftp.whizkidtech.net/cgi/gcl/ \
 		http://www.whizkidtech.net/gcl/

@@ -2,11 +2,11 @@
 # Date created:         9 Nov 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/www/htmlpp/Makefile,v 1.7 1999/08/31 06:51:45 mharo Exp $
+# $FreeBSD: ports/www/htmlpp/Makefile,v 1.8 2000/04/10 00:05:21 cpiazza Exp $
 #
 
 PORTNAME=	htmlpp
-PORTVERSION= 	4.2a
+PORTVERSION=	4.2a
 CATEGORIES=	www
 MASTER_SITES=	http://www.imatix.com/pub/tools/
 DISTNAME=	htmlp42a

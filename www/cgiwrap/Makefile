@@ -2,11 +2,11 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.5 1999/08/31 02:42:45 peter Exp $
+# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.6 2000/04/10 00:04:45 cpiazza Exp $
 #
 
 PORTNAME=	cgiwrap
-PORTVERSION= 	3.6.3
+PORTVERSION=	3.6.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.unixtools.org/cgiwrap/dist/ \
 		ftp://ftp.umr.edu/pub/cgi/cgiwrap/ \

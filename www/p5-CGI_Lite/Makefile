@@ -2,11 +2,11 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI_Lite/Makefile,v 1.15 2000/06/17 02:37:08 will Exp $
+# $FreeBSD: ports/www/p5-CGI_Lite/Makefile,v 1.16 2000/10/23 21:03:08 will Exp $
 #
 
 PORTNAME=	CGI_Lite
-PORTVERSION= 	1.8
+PORTVERSION=	1.8
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI_Lite
