@@ -2,7 +2,7 @@
 # Date created:		3 November 2000
 # Whom:			Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/devel/arm-elf-gcc295/Makefile,v 1.3 2001/04/17 09:53:12 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -26,6 +26,7 @@ RUN_DEPENDS=	${PKGNAMEPREFIX}as:${PORTSDIR}/devel/${PKGNAMEPREFIX}binutils \
 GCC_REV=	${DISTNAME:S/gcc-//g}
 PLIST_SUB+=	GCC_REV=${GCC_REV}
 USE_BZIP2=	yes
+CFLAGS:=	${CFLAGS:C/-m(arch|cpu)=[a-zA-Z0-9]+//}
 CONFIGURE_ARGS=	--target=${PKGNAMEPREFIX:S/-$//} --enable-languages="c,c++,objc"
 .if defined(DEFAULT_CPU)
 CONFIGURE_ARGS+=	--with-cpu="${DEFAULT_CPU}"
