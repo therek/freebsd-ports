@@ -2,11 +2,11 @@
 # Date created: 	16 September 2000
 # Whom: 		Holger Lamm
 #
-# $FreeBSD: ports/graphics/avifile/Makefile,v 1.1 2000/09/19 16:18:14 ade Exp $
+# $FreeBSD: ports/graphics/avifile/Makefile,v 1.2 2000/10/09 15:52:16 lioux Exp $
 #
 
 PORTNAME=	avifile
-PORTVERSION=	0.49
+PORTVERSION=	0.50
 CATEGORIES=	graphics
 MASTER_SITES=	http://ernie.eit.uni-kl.de/avifile/ \
 		http://divx.euro.ru/ \
@@ -27,6 +27,7 @@ ONLY_FOR_ARCHS= i386
 USE_QT2=	yes
 USE_XLIB=	yes
 USE_GMAKE=	yes
+USE_AUTOCONF=	yes
 INSTALLS_SHLIB=	yes
 
 HAS_CONFIGURE=	yes
