@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.508 2001/04/17 12:42:06 jeh Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.509 2001/04/17 12:43:25 jeh Exp $
 #
 
     SUBDIR += ElectricFence
@@ -19,6 +19,7 @@
     SUBDIR += arm-elf-gcc295
     SUBDIR += arm-rtems-binutils
     SUBDIR += arm-rtems-chill
+    SUBDIR += arm-rtems-g77
     SUBDIR += as80
     SUBDIR += asis
     SUBDIR += asl
