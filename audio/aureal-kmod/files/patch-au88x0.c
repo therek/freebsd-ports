@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.4 2003/08/31 10:18:57 sf Exp $
+$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37 sf Exp $
 
 --- au88x0.c.orig	Fri May 10 10:32:55 2002
 +++ au88x0.c	Thu Aug  5 05:44:30 2004
@@ -20,7 +20,16 @@ $FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.4 2003/08/31 10:18:57
 +#endif
  #include <sys/queue.h>
  
- SND_DECLARE_FILE("$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.4 2003/08/31 10:18:57 sf Exp $");
+ SND_DECLARE_FILE("$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.5 2004/08/04 21:15:37 sf Exp $");
+@@ -573,7 +579,7 @@
+ 	ch->channel = c;
+ 	ch->buffer = b;
+ 	ch->run = 0;
+-	if (sndbuf_alloc(ch->buffer, au->parent_dmat, AU_BUFFSIZE) == -1) {
++	if (sndbuf_alloc(ch->buffer, au->parent_dmat, AU_BUFFSIZE) != 0) {
+ 		printf("sndbuf_alloc failed\n");
+ 		return NULL;
+ 	}
 @@ -852,7 +858,11 @@
  		/*highaddr*/BUS_SPACE_MAXADDR,
  		/*filter*/NULL, /*filterarg*/NULL,
