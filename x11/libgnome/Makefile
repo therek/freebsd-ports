@@ -3,7 +3,7 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.43 1999/08/31 02:50:21 peter Exp $
 #
 
 DISTNAME=	gnome-libs-1.0.14
@@ -17,7 +17,7 @@ MAINTAINER=	nacai@iname.com
 LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		ORBit.2:${PORTSDIR}/devel/ORBit \
-		esd.1:${PORTSDIR}/audio/esound
+		esd.2:${PORTSDIR}/audio/esound
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
