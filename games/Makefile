@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.374 2001/05/19 18:34:31 ijliao Exp $
+# $FreeBSD: ports/games/Makefile,v 1.375 2001/05/20 03:01:00 will Exp $
 #
 
     SUBDIR += 0verkill
@@ -192,6 +192,7 @@
     SUBDIR += rubix
     SUBDIR += seabattle
     SUBDIR += seahaven
+    SUBDIR += sex
     SUBDIR += sl
     SUBDIR += slashem-tty
     SUBDIR += smacx
