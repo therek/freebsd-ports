@@ -2,11 +2,12 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/wingz/Makefile,v 1.13 2000/10/08 10:22:13 asami Exp $
+# $FreeBSD: ports/math/wingz/Makefile,v 1.14 2001/01/16 17:31:30 sobomax Exp $
 #
 
 PORTNAME=	Wingz
 PORTVERSION=	142
+PORTREVISION=	1
 CATEGORIES=	math linux
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/financial/spreadsheet
