@@ -3,7 +3,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jdk/Makefile,v 1.25 1999/08/25 06:16:21 obrien Exp $
 #
 
 DISTNAME=	jdk-${JDK_VERSION}
@@ -15,6 +15,7 @@ MAINTAINER=	nate@freebsd.org
 
 NO_CDROM=	"License doesn't allow distribution with fee"
 
+ONLY_FOR_ARCHS=	i386
 JDK_VERSION=	1.1.8
 PLIST_SUB+=	JDK_VERSION=${JDK_VERSION}
 
