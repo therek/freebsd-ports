@@ -2,17 +2,20 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/glimmer/Makefile,v 1.14 2000/10/31 09:07:23 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glimmer
-PORTVERSION= 	1.0
+PORTVERSION= 	1.0.1
 #PORTREVISION=	1
 CATEGORIES=	editors gnome python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+BUILD_DEPENDS=	${PYTHON_SITELIBDIR}/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
 
 USE_X_PREFIX=	yes
 USE_PYTHON=	yes
