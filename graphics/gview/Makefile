@@ -3,7 +3,7 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.6 1999/08/30 08:25:39 cpiazza Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.7 1999/09/17 17:35:34 cpiazza Exp $
 #
 
 DISTNAME=	gview-0.1.12
@@ -15,7 +15,7 @@ MASTER_SITES=	http://gview.netpedia.net/ \
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib \
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib \
 		intl.1:${PORTSDIR}/devel/gettext
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -3,7 +3,7 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.24 1999/08/31 02:59:25 peter Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.25 1999/08/31 06:52:48 mharo Exp $
 #
 
 DISTNAME=	Gtk-Perl-0.5121
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	Gtk
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_PERL5=	YES
 

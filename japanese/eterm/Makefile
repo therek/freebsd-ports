@@ -3,7 +3,7 @@
 # Date created:        11th December 1998
 # Whom:                MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/eterm/Makefile,v 1.7 1999/08/25 05:24:01 obrien Exp $
 #
 
 DISTNAME=	Eterm-0.8.9
@@ -17,7 +17,7 @@ MASTER_SITES=	http://www.eterm.org/download/ \
 
 MAINTAINER=	nobutaka@nobutaka.com
 
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

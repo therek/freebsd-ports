@@ -3,7 +3,7 @@
 # Date created:		9 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hex/Makefile,v 1.3 1999/08/25 06:03:42 obrien Exp $
 #
 
 DISTNAME=	hex-0.0.2
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.nott.ac.uk/~psystrj/ \
 
 MAINTAINER=	andrews@technologist.com
 
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib \
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_X_PREFIX=	YES

@@ -3,7 +3,7 @@
 # Date created:        25 December 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/qiv/Makefile,v 1.6 1999/08/25 06:14:49 obrien Exp $
 #
 
 DISTNAME=	qiv-1.1
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -3,7 +3,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.20 1999/09/04 19:30:28 cpiazza Exp $
 #
 
 DISTNAME=	Eterm-0.8.9
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.eterm.org/pub/Eterm/ \
 
 MAINTAINER=	murray@cdrom.com
 
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

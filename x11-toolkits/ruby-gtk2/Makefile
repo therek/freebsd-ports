@@ -3,7 +3,7 @@
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.3 1999/08/31 02:59:33 peter Exp $
 #
 
 DISTNAME=	ruby-gtk-0.21
@@ -33,7 +33,7 @@ RUBY_ARCH=	${ARCH}-freebsd${OSREL}
 .if defined(NO_IMLIB)
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 .else
-LIB_DEPENDS+=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
 GTK_CONFIG?=	${X11BASE}/bin/imlib-config
 .endif
 

@@ -3,7 +3,7 @@
 # Date Created:				23 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.14 1999/08/31 06:52:41 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.15 1999/09/17 17:34:22 cpiazza Exp $
 #
 
 DISTNAME=	gtk-engines-0.6
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	sources/gtk-engines
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -3,7 +3,7 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.15 1999/08/25 06:14:08 obrien Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.16 1999/08/31 06:44:58 mharo Exp $
 #
 
 DISTNAME=	gqview-0.7.0.src
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	nacai@iname.com
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		Imlib.4:${PORTSDIR}/graphics/imlib
+		Imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

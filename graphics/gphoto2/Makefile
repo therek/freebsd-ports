@@ -3,7 +3,7 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.3 1999/08/25 06:14:06 obrien Exp $
 #
 
 DISTNAME=	gphoto-0.3.2
@@ -15,7 +15,7 @@ MAINTAINER=	anders@fix.no
 
 BUILD_DEPENDS=	${X11BASE}/include/ppm.h:${PORTSDIR}/graphics/netpbm
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gdk_imlib.4:${PORTSDIR}/graphics/imlib
+		gdk_imlib.5:${PORTSDIR}/graphics/imlib
 RUN_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 
 USE_LIBTOOL=	yes

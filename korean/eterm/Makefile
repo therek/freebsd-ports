@@ -3,7 +3,7 @@
 # Date created:        8 Jun 1999
 # Whom:                Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/eterm/Makefile,v 1.2 1999/08/30 12:08:43 peter Exp $
 #
 
 DISTNAME=	Eterm-0.8.9
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.eterm.org/pub/Eterm/ \
 
 MAINTAINER=	hollywar@mail.holywar.net
 
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 RUN_DEPENDS=    ${PREFIX}/lib/X11/fonts/local/hmm12.pcf.gz:${PORTSDIR}/korean/hanyangfonts
 
 USE_GMAKE=	yes

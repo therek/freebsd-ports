@@ -3,7 +3,7 @@
 # Date created:				6 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/irc/yagirc/Makefile,v 1.17 1999/08/25 06:13:05 obrien Exp $
+# $FreeBSD: ports/irc/yagirc/Makefile,v 1.18 1999/10/08 02:41:23 nakai Exp $
 #
 
 DISTNAME=	yagirc-0.66.1
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.elpaso.net/~spoon/yagirc/
 
 MAINTAINER=	mph@freebsd.org
 
-LIB_DEPENDS=	Imlib.4:${PORTSDIR}/graphics/imlib \
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		esd.2:${PORTSDIR}/audio/esound
 

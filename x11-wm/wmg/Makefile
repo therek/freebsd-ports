@@ -3,7 +3,7 @@
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD:$
+# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.2 1999/09/09 01:33:54 taoka Exp $
 #
 
 DISTNAME=	wmG-0.14.0
@@ -11,11 +11,11 @@ PKGNAME=	wmg-0.14.0
 CATEGORIES=	x11-wm gnome
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Screen/4079/downloads/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gdk_imlib.4:${PORTSDIR}/graphics/imlib \
+LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
-		esd.1:${PORTSDIR}/audio/esound \
+		esd.2:${PORTSDIR}/audio/esound \
 		gnome.2:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
