@@ -2,11 +2,11 @@
 # Date created:				25 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.1 2000/07/27 10:03:56 sobomax Exp $
 #
 
 PORTNAME=	CommonC++
-PORTVERSION=	1.1.0
+PORTVERSION=	1.2.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cplusplus
