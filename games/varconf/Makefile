@@ -2,7 +2,7 @@
 # Date created:				29 March 2001
 # Whom:					Oliver Lehmann <lehmann@ans-netz.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/varconf/Makefile,v 1.1 2001/04/05 16:57:18 alex Exp $
 #
 
 PORTNAME=	varconf
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.ecs.soton.ac.uk/pub/worldforge/libs/varconf/ \
 MAINTAINER=	lehmann@ans-netz.de
 
 LIB_DEPENDS=	sigc.1:${PORTSDIR}/devel/libsigc++ \
-		Atlas.0:${PORTSDIR}/devel/Atlas
+		Atlas.0:${PORTSDIR}/devel/atlas
 
 USE_LIBTOOL=	YES
 CONFIGURE_ARGS=	--prefix=${PREFIX}
