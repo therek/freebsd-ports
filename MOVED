@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.343 2004/02/22 02:36:11 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.344 2004/02/23 04:41:00 wollman Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -946,3 +946,5 @@ net/trafd|net-mgmt/trafd|2004-02-22|new category
 net/whatmask|net-mgmt/whatmask|2004-02-22|new category
 net/wide-dhcp|net-mgmt/wide-dhcp|2004-02-22|new category
 net/zabbix|net-mgmt/zabbix|2004-02-22|new category
+graphics/hdf|science/hdf|2004-02-25|moved to better fitting category
+graphics/hdf5|science/hdf5|2004-02-25|moved to better fitting category
