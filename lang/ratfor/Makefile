@@ -1,8 +1,9 @@
+# ex:ts=8
 # Ports collection makefile for:  ratfor
 # Date created:			  Sat Aug 26, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/ratfor/Makefile,v 1.2 2000/11/03 10:21:49 obrien Exp $
+# $FreeBSD: ports/lang/ratfor/Makefile,v 1.3 2001/01/16 17:31:14 sobomax Exp $
 #
 
 PORTNAME=	ratfor
@@ -20,7 +21,6 @@ NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CAT}
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	| ${SH}
-#USE_GMAKE=	yes
 ALL_TARGET=	all tests
 MAN1=		ratfor.1
 
