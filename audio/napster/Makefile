@@ -3,7 +3,7 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.2 1999/11/18 11:57:35 dburr Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.3 1999/12/03 00:57:38 dburr Exp $
 #
 
 DISTNAME=	nap-bsd-0.7BETA
@@ -18,7 +18,7 @@ WRKSRC=		${WRKDIR}/nap
 NO_BUILD=	yes
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/nap ${PREFIX}/bin/nap
+	${INSTALL} -c -o root -g wheel -m 555 ${WRKSRC}/nap ${PREFIX}/bin/nap
 	${MKDIR} ${PREFIX}/share/nap
 	${INSTALL_DATA} ${WRKSRC}/nap.conf ${PREFIX}/share/nap
 .if (!defined(NOPORTDOCS))
