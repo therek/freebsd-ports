@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.8 2003/09/30 11:50:26 nork Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.9 2003/10/07 16:45:15 dinoex Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -28,6 +28,7 @@ CURL		"CURL support" ${WITH_CURL:-OFF} \
 DB4		"Berkeley DB4 support" ${WITH_DB4:-OFF} \
 DBASE		"dBase library support" ${WITH_DBASE:-OFF} \
 DBX		"dbx support" ${WITH_DBX:-OFF} \
+DEBUG		"debug support" ${WITH_DEBUG:-OFF} \
 DOMXML		"DOM support" ${WITH_DOMXML:-OFF} \
 DOMXSLT		"DOM XSLT and EXSLT support (implies DOMXML)" ${WITH_DOMXSLT:-OFF} \
 EXIF		"EXIF support" ${WITH_EXIF:-OFF} \
