@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.22 2001/07/20 12:44:46 knu Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.23 2001/07/29 16:04:19 knu Exp $
 #
 
 PORTNAME=	fox
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
 MAINTAINER?=	knu@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 .if defined(WITH_XUNICODE)
 PKGNAMESUFFIX=	-unicode

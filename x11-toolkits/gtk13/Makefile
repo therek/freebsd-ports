@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.79 2001/08/01 18:14:04 sobomax Exp $
 #
 
 PORTNAME=	gtk
@@ -22,7 +22,7 @@ BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 LIB_DEPENDS=	glib-1.3.6:${PORTSDIR}/devel/glib13 \
 		atk.2:${PORTSDIR}/devel/atk \
 		pango.0:${PORTSDIR}/x11-toolkits/pango \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		intl.1:${PORTSDIR}/devel/gettext

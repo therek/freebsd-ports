@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.13 2001/02/22 02:49:47 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.14 2001/03/11 01:18:16 lioux Exp $
 #
 
 PORTNAME=	JX
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}_source-${PORTVERSION}
 MAINTAINER=	lioux@FreeBSD.org
 
 BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

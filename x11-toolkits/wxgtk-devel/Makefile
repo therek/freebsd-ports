@@ -2,7 +2,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/wxgtk-devel/Makefile,v 1.26 2001/08/02 09:17:11 sobomax Exp $
 #
 
 PORTNAME=	wxgtk
@@ -15,7 +15,7 @@ DISTNAME=	wxGTK-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 NO_LATEST_LINK=	"Unstable, development version."

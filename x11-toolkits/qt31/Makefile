@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.88 2001/09/01 02:45:38 knu Exp $
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.89 2001/09/10 20:22:28 demon Exp $
 #
 
 PORTNAME?=	qt
@@ -16,7 +16,7 @@ DIST_SUBDIR=	KDE
 MAINTAINER?=	kde@FreeBSD.org
 
 LIB_DEPENDS=	mng.1:${PORTSDIR}/graphics/libmng \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}

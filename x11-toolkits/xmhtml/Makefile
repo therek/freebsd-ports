@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.15 2001/06/29 05:19:06 lkoeller Exp $
+# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.16 2001/07/02 07:19:02 lkoeller Exp $
 #
 
 PORTNAME=	XmHTML
@@ -16,7 +16,7 @@ MAINTAINER=	Lars.Koeller@Uni-Bielefeld.de
 # BUILD_DEPENDS is used instead of USE_LIBTOOL in order to avoid
 # GNU_CONFIGURE being set.
 BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 #USE_LIBTOOL=	yes
