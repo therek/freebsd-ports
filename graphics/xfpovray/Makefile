@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xfpovray/Makefile,v 1.17 2000/12/30 18:30:19 sf Exp $
+# $FreeBSD: ports/graphics/xfpovray/Makefile,v 1.18 2001/01/16 17:31:05 sobomax Exp $
 #
 
 PORTNAME=	xfpovray
@@ -22,6 +22,6 @@ USE_IMAKE=	yes
 USE_GMAKE=	yes
 
 post-patch:
-	${PERL} -pi -e "s|\@LOCALBASE\@|${LOCALBASE}|g;" ${WRKSRC}/src/xfpovray.h
+	${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g;" ${WRKSRC}/src/xfpovray.h
 
 .include <bsd.port.mk>
