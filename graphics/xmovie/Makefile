@@ -2,13 +2,13 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.10 2000/09/28 14:49:37 sanpei Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.11 2000/10/08 12:21:42 sanpei Exp $
 #
 
 PORTNAME=	xmovie
-PORTVERSION=	1.5.2.1
+PORTVERSION=	1.5.3.1
 CATEGORIES=	graphics linux
-MASTER_SITES=	http://heroine.linuxave.net/
+MASTER_SITES=	http://heroines.sourceforge.net/
 DISTFILES=	${PORTNAME}-${PORTVERSION:R}-${PORTVERSION:E}.i386.rpm
 
 MAINTAINER=	sanpei@FreeBSD.org
