@@ -3,7 +3,7 @@
 # Date created:         22 July 1999
 # Whom:                 mi@aldan.algebra.com
 #
-# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.4 1999/08/31 01:47:00 peter Exp $
+# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.5 1999/11/28 17:09:24 steve Exp $
 
 DISTNAME=	koi8rPS-1.0
 CATEGORIES=	russian print
@@ -20,7 +20,7 @@ DIST_SUBDIR=	koi8r-ps
 
 .if !defined(FONTMAP)
 FONTMAP!=	if which gs > /dev/null 2>&1 ; then \
-			d=`gs -h  | ${AWK} '/^Search path:$$/ { nl=1; next } \
+			d=`gs -h  | awk '/^Search path:$$/ { nl=1; next } \
 					nl { print $$3; exit }'`; \
 			if [ -e $$d/Fontmap ] ; then \
 				${ECHO} $$d/Fontmap; \
