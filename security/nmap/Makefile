@@ -4,11 +4,11 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.25 2000/01/04 08:00:15 obrien Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.26 2000/01/17 09:22:11 obrien Exp $
 #
 
-DISTNAME=	nmap-2.3BETA13
-PKGNAME=	nmap-2.3b13
+DISTNAME=	nmap-2.3BETA14
+PKGNAME=	nmap-2.3b14
 CATEGORIES=	security net
 MASTER_SITES=	http://www.insecure.org/nmap/dist/  \
 		ftp://relay.nuxi.com/pub/misc/
