@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.28 1999/12/04 18:20:06 steve Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.29 1999/12/05 06:45:59 jmz Exp $
 #
 
 DISTNAME=	Tix4.1.0.007
@@ -36,6 +36,8 @@ MANN=		BtnBox.n Balloon.n ChkList.n Destroy.n ComboBox.n Control.n \
 
 TIX_LIB=	libtix4182.so
 TIXSAM_LIB=	libtixsam4182.so
+TIX_LIB_FILE=	${TIX_LIB}.1
+TIXSAM_LIB_FILE=${TIXSAM_LIB}.1
 CFLAGS+=	-fwritable-strings
 
 .include <bsd.port.pre.mk>
