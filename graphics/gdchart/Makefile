@@ -2,11 +2,12 @@
 # Date created:         4 June 2001
 # Whom:                 Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gdchart/Makefile,v 1.1 2001/06/16 15:03:05 alex Exp $
+# $FreeBSD: ports/graphics/gdchart/Makefile,v 1.2 2001/06/18 07:02:59 mharo Exp $
 #
 
 PORTNAME=	gdchart
 PORTVERSION=	0.10.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.fred.net/brv/chart/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
