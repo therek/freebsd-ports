@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.105 2001/02/06 01:22:25 kris Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.106 2001/02/06 02:38:43 kris Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -22,6 +22,8 @@ MASTER_SITES=	ftp://ftp.cs.engr.uky.edu/cs/software/ \
 		ftp://ftp.dei.uc.pt/.disk2/Crypto/SSH/old/
 
 MAINTAINER=	ports@FreeBSD.org
+
+FORBIDDEN=	"Remote vulnerabilities"
 
 #RESTRICTED=	"Crypto: export-controlled"
 
