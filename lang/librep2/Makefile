@@ -2,11 +2,11 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/librep/Makefile,v 1.20 2000/10/02 08:06:32 sobomax Exp $
+# $FreeBSD: ports/lang/librep/Makefile,v 1.21 2000/11/09 08:57:35 sobomax Exp $
 #
 
 PORTNAME=	librep
-PORTVERSION=	0.13.2
+PORTVERSION=	0.13.3
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
