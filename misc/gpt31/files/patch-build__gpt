@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/misc/gpt31/files/patch-build__gpt,v 1.1 2004/02/26 19:44:13 krion Exp $
 
 --- build_gpt.orig	Fri Jan 16 15:11:51 2004
 +++ build_gpt	Fri Jan 16 15:13:12 2004

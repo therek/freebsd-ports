@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/misc/gpt31/files/patch-packaging__tools_Makefile.in,v 1.1 2004/02/26 19:44:13 krion Exp $
 
 --- packaging_tools/Makefile.in.orig	Tue Dec  9 07:36:07 2003
 +++ packaging_tools/Makefile.in	Thu Feb 26 09:49:04 2004
