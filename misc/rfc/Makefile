@@ -2,11 +2,11 @@
 # Date created:				05 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/rfc/Makefile,v 1.6 2000/04/14 08:46:35 asami Exp $
+# $FreeBSD: ports/misc/rfc/Makefile,v 1.7 2000/04/16 12:47:03 jedgar Exp $
 #
 
 PORTNAME=	rfc
-PORTVERSION=	2.21
+PORTVERSION=	2.22
 CATEGORIES=	misc
 MASTER_SITES=	http://www.dewn.com/rfc/
 DISTNAME=	${PORTNAME}
