@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/clamav/files/clamav-clamd.sh,v 1.1 2003/12/08 14:06:49 netchild Exp $
 #
 
 # PROVIDE: clamd
@@ -30,9 +30,9 @@ start_precmd=start_precmd
 
 start_precmd()
 {
-	if [ -S "$clamd_socket" ]; then
-		warn "Stale socket $clamd_socket removed."
-		rm "$clamd_socket"
+	if [ -S "$clamav_clamd_socket" ]; then
+		warn "Stale socket $clamav_clamd_socket removed."
+		rm "$clamav_clamd_socket"
 	fi
 }
 
