@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.111 1999/10/16 07:21:19 taoka Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.112 1999/11/03 22:22:52 nsayer Exp $
 #
 
     SUBDIR += amp
@@ -92,6 +92,7 @@
     SUBDIR += xhippo
     SUBDIR += xmcd
     SUBDIR += xmix
+    SUBDIR += xmixer
     SUBDIR += xmmix
     SUBDIR += xmms
     SUBDIR += xmp
