@@ -2,7 +2,7 @@
 # Date created:        3 March 2001
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/wyvern/Makefile,v 1.3 2001/03/09 12:19:42 knu Exp $
+# $FreeBSD: ports/www/wyvern/Makefile,v 1.4 2001/04/17 06:15:22 knu Exp $
 #
 
 PORTNAME=	wyvern
@@ -28,8 +28,14 @@ MAKE_ARGS=	rcdir="${LOCALBASE}/etc/rc.d"
 CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
+post-extract:
+	${MV} ${WRKSRC}/htdocs/index.html ${WRKSRC}/htdocs/index.html-dist
+
 post-install:
 	${LN} -sf ${PREFIX}/sbin/* ${LOCALBASE}/sbin/
+	if [ ! -f ${PREFIX}/htdocs/index.html ]; then \
+		${CP} -p ${PREFIX}/htdocs/index.html-dist ${PREFIX}/htdocs/index.html; \
+	fi
 	@${CAT} ${PKGMESSAGE}
 
 certificate:
