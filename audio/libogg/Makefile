@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/libogg/Makefile,v 1.1 2000/11/02 21:11:45 trevor Exp $
 #
 
 PORTNAME=	libogg
@@ -16,6 +16,7 @@ MAINTAINER=	t.vanklaveren@student.utwente.nl
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_AUTOMAKE=	yes
 WRKSRC=		${WRKDIR}/ogg
 
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
