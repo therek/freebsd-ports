@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.67 2000/07/21 05:06:47 will Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.68 2000/08/07 11:23:01 knu Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -7,6 +7,7 @@
     SUBDIR += freetds
     SUBDIR += gadfly
     SUBDIR += gdbm
+    SUBDIR += gigabase
     SUBDIR += gmysql
     SUBDIR += gnats
     SUBDIR += grass
