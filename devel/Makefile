@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.632 2001/09/01 21:53:05 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.633 2001/09/01 22:13:54 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -571,6 +571,7 @@
     SUBDIR += vtcl
     SUBDIR += wedit
     SUBDIR += xmake
+    SUBDIR += xtl
     SUBDIR += xwpe
     SUBDIR += xxgdb
     SUBDIR += yacl
