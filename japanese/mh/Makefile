@@ -3,7 +3,7 @@
 # Date created:		28 March 1995
 # Whom:			Akito FUJITA <fujita@zoo.ncl.omron.co.jp>
 #
-# $FreeBSD: ports/japanese/mh/Makefile,v 1.16 2000/03/04 22:34:35 kris Exp $
+# $FreeBSD: ports/japanese/mh/Makefile,v 1.17 2000/03/06 16:03:21 motoyuki Exp $
 #
 
 DISTNAME=	mh-6.8.4-JP-3.03
@@ -14,8 +14,6 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.chem.eng.himeji-tech.ac.jp/pub/net/mh/
 
 MAINTAINER=	motoyuki@freebsd.org
-
-FORBIDDEN=	"Buffer overflow in MIME parsing code, exploitable via email. mh-plus (japanese/mh) is now maintained by mh-plus project, so this bug will be fixed soon."
 
 BUILD_DEPENDS=	jless:${PORTSDIR}/japanese/less
 RUN_DEPENDS=	jless:${PORTSDIR}/japanese/less
