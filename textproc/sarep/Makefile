@@ -4,7 +4,7 @@
 # Date created:                   Feb 18, 1999
 # Whom:                           ache
 #
-# $FreeBSD: ports/textproc/sar/Makefile,v 1.6 1999/08/31 02:09:43 peter Exp $
+# $FreeBSD: ports/textproc/sarep/Makefile,v 1.7 1999/09/03 21:24:45 ache Exp $
 #
 
 DISTNAME=       sarep-0.5
@@ -16,7 +16,7 @@ MAINTAINER=     ache@freebsd.org
 
 EXTRACT_CMD=    $(SED)
 EXTRACT_BEFORE_ARGS= 's=^\#!/usr/bin/perl =\#!${PERL} =' <
-EXTRACT_AFTER_ARGS= > ${WRKSRC}/sarep
+EXTRACT_AFTER_ARGS= | tr -d '\r' > ${WRKSRC}/sarep
 
 NO_BUILD=       YES
 NO_WRKSUBDIR=   yes
