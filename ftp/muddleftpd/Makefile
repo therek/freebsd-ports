@@ -3,7 +3,7 @@
 # Date created:			Apr 22, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/muddleftpd/Makefile,v 1.1 2001/04/22 17:05:02 ijliao Exp $
 #
 
 PORTNAME=	muddleftpd
@@ -12,7 +12,7 @@ CATEGORIES=	ftp
 MASTER_SITES=	http://www.arach.net.au/~wildfire/muddleftpd/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
