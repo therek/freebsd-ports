@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.61 2000/10/28 23:22:14 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.62 2000/10/28 23:43:04 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -39,6 +39,8 @@ USE_GMAKE=	yes
 MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}"
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
 
+.include <bsd.port.pre.mk>
+
 pre-fetch:
 .if ${OSVERSION} <= 410002
 	@${ECHO}
@@ -66,4 +68,4 @@ post-install:
 	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.0 ${PREFIX}/lib/lib${LIB}.so
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
