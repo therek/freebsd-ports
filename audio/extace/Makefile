@@ -2,7 +2,7 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.8 2001/01/02 19:32:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	extace
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	eXtace
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+BROKEN=		"Configure fails"
 
 LIB_DEPENDS=	fftw.2:${PORTSDIR}/math/fftw
 
