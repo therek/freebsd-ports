@@ -2,13 +2,14 @@
 # Date created:				4 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/gnosamba/Makefile,v 1.15 2000/06/01 16:25:35 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnosamba
 PORTVERSION=	0.3.3
 CATEGORIES=	net gnome
-MASTER_SITES=	http://www.open-systems.com/gnosamba/
+MASTER_SITES=	http://linuxberg.ii.net/files/gnome/network/ \
+		http://www.open-systems.com/gnosamba/
 
 MAINTAINER=	ports@FreeBSD.org
 
