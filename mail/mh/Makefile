@@ -3,7 +3,7 @@
 # Date created:		Oct 4, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/mh/Makefile,v 1.15 1999/08/31 06:47:29 mharo Exp $
+# $FreeBSD: ports/mail/mh/Makefile,v 1.16 2000/03/04 06:52:42 kris Exp $
 #
 
 DISTNAME=	mh-6.8.3
