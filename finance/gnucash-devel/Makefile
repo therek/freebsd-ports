@@ -2,7 +2,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.25 2000/12/08 21:12:04 ade Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.26 2001/01/16 17:30:12 sobomax Exp $
 #
 
 PORTNAME=	gnucash
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.gnucash.org/pub/gnucash/sources/stable/ \
 		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gnucash
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	swig:${PORTSDIR}/devel/SWIG \
 		g-wrap:${PORTSDIR}/devel/g-wrap \

@@ -2,7 +2,7 @@
 # Date created:				12th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/bakery/Makefile,v 1.2 2000/10/05 07:17:26 reg Exp $
+# $FreeBSD: ports/x11-toolkits/bakery/Makefile,v 1.3 2000/12/05 20:01:56 ade Exp $
 #
 
 PORTNAME=	bakery
@@ -11,10 +11,9 @@ CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtkmm.1:${PORTSDIR}/x11-toolkits/gtk-- \
-		gnomemm.3:${PORTSDIR}/x11-toolkits/gnome--
+LIB_DEPENDS=	gnomemm.3:${PORTSDIR}/x11-toolkits/gnome--
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
