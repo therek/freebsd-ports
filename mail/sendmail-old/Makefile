@@ -2,13 +2,14 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.14 2001/05/13 07:26:10 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.15 2001/05/29 04:14:01 dinoex Exp $
 #
 
 PORTNAME=	sendmail
 PORTVERSION=	8.11.4
 CATEGORIES=	mail ipv6
-MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/
+MASTER_SITES=	ftp://ftp.sendmail.org/pub/sendmail/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/mail/sendmail/&,}
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
