@@ -2,14 +2,15 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.11 2000/06/16 10:38:08 sobomax Exp $
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.12 2000/06/16 21:50:45 asami Exp $
 #
 
 PORTNAME=	gphoto
 PORTVERSION=	0.4.3
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.gphoto.org/projects/gphoto/pub/tar/stable/
-
+MASTER_SITES=	ftp://ftp.gphoto.org/projects/gphoto/pub/tar/stable/ \
+		ftp://ftp.uk.linux.org/pub/gphoto/0.4/
+       
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib
