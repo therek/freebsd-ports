@@ -2,26 +2,25 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.11 2000/10/14 19:13:33 knu Exp $
+# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.12 2001/02/07 19:11:03 knu Exp $
 #
 
 PORTNAME=	ruby-usersguide
-PORTVERSION=	${VERSION}
-CATEGORIES+=	lang ruby
-MASTER_SITES?=	http://www.cs.iastate.edu/~slagell/ruby/
-DISTNAME?=	${SHORTNAME}-${VERSION}
+PORTVERSION=	20010131
+CATEGORIES=	lang ruby
+MASTER_SITES=	http://www.cs.iastate.edu/~slagell/ruby/
+DISTNAME=	${SHORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
 SHORTNAME=	${PORTNAME:S/usersguide/uguide/}
-VERSION?=	20010131
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
 RUBY_NO_RUN_DEPENDS=	yes
 
-WRKSRC?=	${WRKDIR}/rg
+WRKSRC=		${WRKDIR}/rg
 NO_BUILD=	yes
 PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
