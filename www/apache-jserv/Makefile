@@ -2,14 +2,14 @@
 # Date created:         1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.5 2000/04/10 00:04:15 cpiazza Exp $
+# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.6 2000/04/30 19:41:21 steve Exp $
 #
 
 PORTNAME=	apache-jserv
-PORTVERSION= 	1.1
+PORTVERSION= 	1.1.1
 CATEGORIES=	www java
 MASTER_SITES=	http://java.apache.org/jserv/dist/
-DISTNAME=	ApacheJServ-1.1
+DISTNAME=	ApacheJServ-1.1.1
 
 MAINTAINER=	greg@greg.rim.or.jp
 
@@ -37,7 +37,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}\
 		--with-gnu-ld\
 		--enable-compressed-jar\
 		--enable-EAPI
-.if defined (USE_JIKES)
+.if defined (WITH_JIKES)
 CONFIGURE_ARGS+=--with-javac=${LOCALBASE}/bin/jikes
 .endif
 
