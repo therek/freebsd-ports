@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.24 2001/08/21 14:52:59 sobomax Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.25 2001/09/11 03:05:05 ache Exp $
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -10,7 +10,7 @@
 # AbiWord build system.
 
 PORTNAME=	AbiWord
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.4
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.abisource.com/downloads/Version-${PORTVERSION}/lf/
@@ -44,6 +44,7 @@ FIXME=		find ${WRKSRC} -name GNUmakefile.in | xargs ${PERL} -pi -e \
 pre-configure:
 	@cd ${WRKSRC} && ${TOUCH} NEWS README AUTHORS ChangeLog
 	@cd ${WRKSRC}/ac-helpers && ${RM} -f install-sh mkinstalldirs missing
+	@${RM} -f ${WRKSRC}/configure.ac
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
