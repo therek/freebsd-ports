@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/amap/pkg-plist,v 1.2 2003/06/30 02:10:17 leeym Exp $
+@comment $FreeBSD: ports/security/amap/pkg-plist,v 1.3 2003/07/29 13:32:55 krion Exp $
 bin/amap
 bin/amapcrap
 share/amap/appdefs.resp
@@ -10,5 +10,5 @@ share/amap/appdefs.trig
 %%PORTDOCS%%%%DOCSDIR%%/TODO
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
 %%PORTDOCS%%%%DOCSDIR%%/LICENSE
-%%PORTDOCS%%@dirrm share/doc/amap
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm share/amap
