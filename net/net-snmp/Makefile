@@ -3,7 +3,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.36 1999/11/15 18:30:56 jmb Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.37 2000/02/21 19:19:03 fenner Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/ucd-snmp/ \
 		ftp://ftp.win.or.jp/pub/network/snmp/ucd-snmp/
+
 PATCH_SITES=	http://ucd-snmp.ucdavis.edu/patches/
 PATCHFILES=	012.patch
 PATCH_DIST_STRIP=	-p0 -d ${WRKSRC}/agent
