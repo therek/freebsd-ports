@@ -2,20 +2,23 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.49 2000/10/25 20:17:30 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.50 2000/10/27 09:24:08 sobomax Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION= 	M18
+PORTVERSION= 	0.7
+PORTEPOCH=	1
 PKGNAMESUFFIX=	+ipv6
 CATEGORIES=	www ipv6
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
-MASTER_SITE_SUBDIR=	mozilla/releases/${PORTVERSION:S/M/m/}/src
+MASTER_SITE_SUBDIR=	mozilla/releases/${PORTNAME}${PORTVERSION:S/M/m/}/src
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	sumikawa@FreeBSD.org
 
-LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit
+LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit \
+		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		png.4:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -30,6 +33,7 @@ CONFIGURE_ARGS=					\
 		--disable-cpp-rtti		\
 		--disable-debug			\
 		--disable-idltool		\
+		--disable-jar-packaging		\
 		--disable-md			\
 		--disable-pedantic		\
 		--disable-xterm-updates		\
@@ -47,7 +51,7 @@ CONFIGURE_ARGS=					\
 		--with-jpeg=${LOCALBASE}	\
 		--with-png=${LOCALBASE}
 MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
-		CC_ONLY_FLAGS="${FLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
+		CC_ONLY_FLAGS="${CFLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
 
 post-build:
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
