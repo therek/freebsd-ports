@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.29 2001/02/04 11:36:22 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.30 2001/02/06 11:28:29 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -57,5 +57,10 @@ do-install:
 	@cd ${PREFIX}/lib/webmin && ./setup.sh
 	@${MV} /tmp/webmin.sh ${PREFIX}/etc/rc.d/webmin.sh
 	@${CHMOD} 554 ${PREFIX}/etc/rc.d/webmin.sh
+
+post-install:
+	@${CP} ${PLIST} ${TMPPLIST}
+	@find ${PREFIX}/lib/webmin -type f | ${SED} -e "s@${PREFIX}/@@" | sort >> ${TMPPLIST}
+	@find ${PREFIX}/lib/webmin -type d | ${SED} -e "s@${PREFIX}/@@" | ${PERL} -e 'print (join ("\n", reverse map ("\@dirrm " . substr ($$_, 0, -1), <STDIN>)) . "\n");' >> ${TMPPLIST}
 
 .include <bsd.port.mk>
