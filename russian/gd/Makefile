@@ -2,11 +2,11 @@
 # Date created:         17 Aug 1998
 # Whom:                 gsm@infosite.ru
 #
-# $FreeBSD: ports/russian/gd/Makefile,v 1.8 2001/01/16 17:32:13 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gd
-PORTVERSION=	1.8.2
+PORTVERSION=	1.8.3
 CATEGORIES=	russian graphics
 MASTER_SITES=	http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
@@ -15,6 +15,13 @@ MAINTAINER=	gsm@infosite.ru
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
+
+USE_REINPLACE=	yes
+
+post-patch:
+	@${REINPLACE_CMD} -e 's|<malloc.h>|<stdlib.h>|g' \
+		${WRKSRC}/gdcache.h           		 \
+		${WRKSRC}/gd.c
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/gd
