@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.308 2000/11/27 16:44:30 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.309 2000/12/07 12:50:57 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -93,6 +93,7 @@
     SUBDIR += mc
     SUBDIR += metatheme
     SUBDIR += mgp-mode.el
+    SUBDIR += misterproper
     SUBDIR += mmv
     SUBDIR += most
     SUBDIR += moviedb
