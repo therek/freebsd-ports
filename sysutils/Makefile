@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.146 2001/01/10 03:04:45 kuriyama Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.147 2001/01/16 17:15:40 alex Exp $
 #
     SUBDIR += yawho
 
@@ -16,6 +16,7 @@
     SUBDIR += cd-write
     SUBDIR += cdrecord
     SUBDIR += cfengine
+    SUBDIR += checkservice
     SUBDIR += clockspeed
     SUBDIR += comconsole
     SUBDIR += consolehm 
