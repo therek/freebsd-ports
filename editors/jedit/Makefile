@@ -2,16 +2,16 @@
 # Date created:				22 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jedit/Makefile,v 1.6 2000/11/06 08:41:39 sobomax Exp $
+# $FreeBSD: ports/editors/jedit/Makefile,v 1.7 2000/12/25 13:09:22 sobomax Exp $
 #
 
 PORTNAME=	jedit
-PORTVERSION=	3.0.0
+PORTVERSION=	3.0.1
 CATEGORIES=	editors java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://members.xoom.com/romainguy/
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTFILES=	${PORTNAME}30install.jar swingall.jar
+DISTFILES=	${PORTNAME}${PORTVERSION:S/.//g}install.jar swingall.jar
 EXTRACT_ONLY=	
 
 MAINTAINER=	sobomax@FreeBSD.org
