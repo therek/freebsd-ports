@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.29 2001/02/26 05:06:09 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       BitchX
@@ -69,10 +69,11 @@ CONFIGURE_ARGS+=--without-plugins
 PLIST_SUB+=	PLUGINS:="@comment "
 .endif
 
-.if defined(WITH_LATIN)
 pre-patch:
+.if defined(WITH_LATIN)
 	@${PERL} -pi -e "s!#undef LATIN1!#define LATIN1!" ${WRKSRC}/include/config.h
 .endif
+	@${PERL} -pi -e "s!bzip2!true!g" ${WRKSRC}/Makefile.in
 
 pre-extract:
 	@${ECHO} "Available switches:"
