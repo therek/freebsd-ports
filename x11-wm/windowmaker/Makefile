@@ -3,7 +3,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.57 1999/09/18 03:12:10 steve Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.58 1999/09/21 00:59:37 cpiazza Exp $
 
 DISTNAME=	WindowMaker-0.61.0
 PKGNAME=	windowmaker-0.61.0
