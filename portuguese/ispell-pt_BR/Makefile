@@ -2,13 +2,14 @@
 # Date created:         5 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/textproc/br-ispell/Makefile,v 1.5 2000/04/09 21:52:10 cpiazza Exp $
+# $FreeBSD$
 #
 
-PORTNAME=	br-ispell
+PORTNAME=	ispell
 PORTVERSION=	2.4
-CATEGORIES=	textproc
+CATEGORIES=	portuguese textproc
 MASTER_SITES=	ftp://ftp.ime.usp.br/pub/ueda/br.ispell/
+PKGNAMEPREFIX=	pt_BR-
 DISTNAME=	br.ispell-2.4
 
 MAINTAINER=	jonny@jonny.eng.br
