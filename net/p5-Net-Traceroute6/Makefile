@@ -2,11 +2,11 @@
 # Date created:				13 August 2001
 # Whom:					petef
 #
-# $FreeBSD: ports/net/p5-Net-Traceroute6/Makefile,v 1.1 2001/08/22 23:58:54 petef Exp $
+# $FreeBSD: ports/net/p5-Net-Traceroute6/Makefile,v 1.2 2001/08/24 21:32:52 tobez Exp $
 #
 
 PORTNAME=	Net-Traceroute6
-PORTVERSION=	0.01
+PORTVERSION=	0.03
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
