@@ -3,13 +3,14 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-navigator/Makefile,v 1.42 1999/08/31 06:51:58 mharo Exp $
+# $FreeBSD: ports/www/netscape4-navigator/Makefile,v 1.43 1999/10/04 22:21:26 sada Exp $
 #
 
 MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/${BROWSER_VER}/english/unix/unsupported/freebsd/navigator_standalone/
 DISTFILES=	navigator-v408-export.x86-unknown-freebsd.tar.gz
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
+NO_LATEST_LINK=	yes
 
 BROWSER=	navigator
 INFILE_HEAD=	'Navigator,4.08.0.98306'

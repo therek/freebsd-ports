@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.55 2000/01/07 17:17:56 obrien Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.56 2000/01/17 12:39:58 asami Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -14,6 +14,11 @@ DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 MAINTAINER?=	sada@FreeBSD.org
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
+
+.if !defined(INFILE_HEAD)
+# not included from master ports
+NO_LATEST_LINK=	yes
+.endif
 
 USE_XLIB=	yes
 NO_BUILD=	yes

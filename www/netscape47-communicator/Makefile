@@ -3,7 +3,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.52 2000/01/07 18:40:48 obrien Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.53 2000/01/17 12:39:59 asami Exp $
 #
 
 .if !defined(PRE_MK_INCLUDED)
@@ -21,7 +21,6 @@ DISTFILES?=	communicator-v47-export.alpha-dec-osf4.0.tar.gz
 ONLY_FOR_ARCHS=	i386 alpha
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
-NO_LATEST_LINK=	yes
 .if ${ARCH} == "i386"
 WRKSRC?=	${WRKDIR}/${BROWSER}-v47.x86-unknown-freebsd
 .elif ${ARCH} == "alpha"
