@@ -2,7 +2,7 @@
 # Date created:				31 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xothello/Makefile,v 1.10 2000/03/29 07:17:23 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xothello
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 NO_CDROM=	Possible trademark infringement
 
