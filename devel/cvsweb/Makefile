@@ -2,7 +2,7 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.18 2000/07/12 19:13:51 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.19 2000/07/18 20:56:08 knu Exp $
 #
 
 PORTNAME=	cvsweb
@@ -19,7 +19,7 @@ NO_BUILD=	yes
 # Specify where your repository belongs.
 # (You can reconfigure it after installation anyway)
 .if defined(PACKAGE_BUILDING) || !defined(CVSROOT) || empty(CVSROOT)
-CVSROOT=	/home/ncvs
+CVSROOT=	/home/cvs
 .endif
 
 # Specify the title of your cvsweb site.
