@@ -1,5 +1,8 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/firedns/pkg-plist,v 1.2 2002/10/15 14:39:10 naddy Exp $
 include/firedns.h
 lib/libfiredns.so
 lib/libfiredns.so.0
 lib/libfiredns.a
+bin/fdnsip
+bin/fdnstxt
+bin/fdnsname
