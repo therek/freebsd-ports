@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/news/Makefile,v 1.51 1999/08/30 14:31:29 peter Exp $
 #
 
     SUBDIR += atp
@@ -23,6 +23,7 @@
     SUBDIR += nntpbtr
     SUBDIR += nntpcache
     SUBDIR += p5-Gateway
+    SUBDIR += p5-NNTPClient
     SUBDIR += p5-News-Article
     SUBDIR += p5-News-Newsrc
     SUBDIR += pan
