@@ -2,7 +2,7 @@
 # Date created:		7 Oct 2000
 # Whom:			"Michael C . Wu" <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.1 2000/11/08 01:07:04 kevlo Exp $
+# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.2 2000/11/08 07:07:06 keith Exp $
 
 PORTNAME=	auto-tw-l10n
 PORTVERSION=	1.0
@@ -33,7 +33,7 @@ RUN_DEPENDS=	${X11BASE}/lib/aout/zh-XFree86-aoutlibs-3.3.6:${PORTSDIR}/chinese/X
 		pyDict:${PORTSDIR}/chinese/pyDict \
 		rxvt-big5:${PORTSDIR}/chinese/rxvt-big5 \
 		aterm:${PORTSDIR}/chinese/aterm \
-		telnet:${PORTSDIR}/chinese/telnet \
+		zh-telnet:${PORTSDIR}/chinese/telnet \
 		tin:${PORTSDIR}/chinese/tin \
 		tintin++:${PORTSDIR}/chinese/tintin++ \
 		ve:${PORTSDIR}/chinese/ve \
