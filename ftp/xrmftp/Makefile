@@ -2,7 +2,7 @@
 # Date created:				28 March 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/ftp/xrmftp/Makefile,v 1.1 2000/04/01 12:31:37 will Exp $
+# $FreeBSD: ports/ftp/xrmftp/Makefile,v 1.2 2000/04/12 05:31:27 mharo Exp $
 #
 
 PORTNAME=	xrmftp
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.mat.uni.torun.pl/~rafmet/ \
 		ftp://ftp.netspring.net/pub/people/rafal-metkowski/
 EXTRACT_SUFX=	.src.tgz
 
-MAINTAINER=	matt@LUCIDA.QC.CA
+MAINTAINER=	matt@LUCIDA.CA
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 

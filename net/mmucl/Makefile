@@ -2,7 +2,7 @@
 # Date created:				28 July 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/net/mmucl/Makefile,v 1.1 2000/09/16 04:21:20 will Exp $
+# $FreeBSD: ports/net/mmucl/Makefile,v 1.2 2000/09/19 04:55:24 will Exp $
 #
 
 PORTNAME=	mmucl
@@ -10,7 +10,7 @@ PORTVERSION=	1.4.1
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/mmucl/
 
-MAINTAINER=	matt@LUCIDA.QC.CA
+MAINTAINER=	matt@LUCIDA.CA
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
