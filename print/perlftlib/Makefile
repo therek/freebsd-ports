@@ -2,13 +2,13 @@
 # Date created:		98/12/22
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/perlftlib/Makefile,v 1.11 2000/08/03 09:26:11 asami Exp $
+# $FreeBSD: ports/print/perlftlib/Makefile,v 1.12 2000/08/12 05:48:16 asami Exp $
 #
 
 PORTNAME=	perlftlib
 PORTVERSION=	1.2
 CATEGORIES=	print perl5
-MASTER_SITES=	ftp://ftp.big.or.jp/pub/usr2/jam/ft/ \
+MASTER_SITES=	http://www.io.com/~kazushi/xtt/ \
 		${MASTER_SITE_PORTS_JP} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sada
