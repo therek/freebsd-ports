@@ -1,4 +1,4 @@
-# $FreeBSD: ports/cad/Makefile,v 1.20 2001/02/13 11:02:02 ijliao Exp $
+# $FreeBSD: ports/cad/Makefile,v 1.21 2001/03/07 11:00:30 knu Exp $
 #
 
     SUBDIR += acs
@@ -20,6 +20,7 @@
     SUBDIR += sis
     SUBDIR += spice
     SUBDIR += tkgate
+    SUBDIR += vipec
     SUBDIR += xcircuit
 
 .include <bsd.port.subdir.mk>
