@@ -2,11 +2,11 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-games-packages/Makefile,v 1.16 2000/07/15 20:34:18 taoka Exp $
+# $FreeBSD: ports/editors/xemacs-games-packages/Makefile,v 1.17 2000/08/01 09:23:29 shige Exp $
 #
 
 PORTNAME=	xemacs-games-packages
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	editors elisp
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \
@@ -19,7 +19,7 @@ DISTFILES=	\
 		cookie-1.12-pkg.tar.gz \
 		games-1.12-pkg.tar.gz \
 		mine-1.12-pkg.tar.gz \
-		misc-games-1.13-pkg.tar.gz
+		misc-games-1.14-pkg.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 

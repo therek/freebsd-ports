@@ -2,11 +2,11 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-basic-mule-packages/Makefile,v 1.7 2000/07/13 09:53:00 taoka Exp $$
+# $FreeBSD: ports/editors/xemacs-basic-mule-packages/Makefile,v 1.8 2000/07/15 20:34:17 taoka Exp $$
 #
 
 PORTNAME=	xemacs-basic-mule-packages
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	editors elisp
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \
@@ -20,7 +20,7 @@ DISTFILES=	\
 		elib-1.06-pkg.tar.gz \
 		locale-1.16-pkg.tar.gz \
 		mule-base-1.34-pkg.tar.gz \
-		skk-1.15-pkg.tar.gz
+		skk-1.16-pkg.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
