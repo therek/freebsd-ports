@@ -2,11 +2,11 @@
 # Date created:				June 6th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/mail/abook/Makefile,v 1.3 2001/04/10 08:41:59 clive Exp $
+# $FreeBSD: ports/mail/abook/Makefile,v 1.4 2001/06/21 12:26:01 ijliao Exp $
 #
 
 PORTNAME=	abook
-PORTVERSION=	0.4.13
+PORTVERSION=	0.4.14
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -23,5 +23,11 @@ GNU_CONFIGURE=	yes
 
 MAN1=		abook.1
 MAN5=		abookrc.5
+
+post-install:
+	${MKDIR} ${DOCSDIR}
+.for file in FAQ README
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
+.endfor
 
 .include <bsd.port.post.mk>
