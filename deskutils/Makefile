@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.35 2000/12/19 11:44:46 will Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.36 2001/02/20 14:46:22 nbm Exp $
 #
 
     SUBDIR += abacus
@@ -16,6 +16,7 @@
     SUBDIR += gtimer
     SUBDIR += ical
     SUBDIR += ithought
+    SUBDIR += kdepim2
     SUBDIR += korganizer
     SUBDIR += kproject
     SUBDIR += loserjabber
