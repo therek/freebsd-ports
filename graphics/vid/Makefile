@@ -2,7 +2,7 @@
 # Date created:		Tue Dec  5 13:32:13 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org?
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vid/Makefile,v 1.1 2000/12/05 13:54:16 roger Exp $
 #
 
 PORTNAME=	vid
@@ -11,6 +11,8 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://members.home.com/housel/
 
 MAINTAINER=	roger@freebsd.org
+
+LIB_DEPENDS=    pbm:${PORTSDIR}/graphics/netpbm
 
 # The port does not understand 'make all' or 'make install'
 # so change the 'all_target' to be empty and use our own do-install handler.
