@@ -1,8 +1,8 @@
 # New ports collection makefile for:	pimp
 # Date created:				23 February 2000
-# Whom:					rbt
+# Whom:					rbt@zort.on.ca
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.2 2000/09/07 23:10:12 fenner Exp $
+# $FreeBSD: ports/audio/pimp3/Makefile,v 1.3 2000/11/14 00:36:39 asami Exp $
 #
 
 PORTNAME=	pimp3
@@ -10,7 +10,7 @@ PORTVERSION=	0.5.7
 CATEGORIES=	audio
 MASTER_SITES=	ftp://pimp3.sourceforge.net/pub/pimp3/
 
-MAINTAINER=	rbt@zort.on.ca
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
