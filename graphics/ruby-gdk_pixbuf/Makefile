@@ -2,14 +2,14 @@
 # Date created:		28 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gdk_pixbuf/Makefile,v 1.2 2001/05/04 21:41:13 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdk_pixbuf
 PORTVERSION=	${RUBY_GNOME_PORTVERSION}
-PORTREVISION=	2
 CATEGORIES=	graphics ruby gnome
 MASTER_SITES=	${RUBY_GNOME_MASTER_SITES}
+MASTER_SITE_SUBDIR=	${RUBY_GNOME_MASTER_SITE_SUBDIR}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${RUBY_GNOME_DISTNAME}
 DIST_SUBDIR=	ruby
@@ -27,6 +27,7 @@ USE_GLIB=	yes
 .include "${.CURDIR}/../../x11/ruby-gnome/Makefile.common"
 
 WRKSRC=		${RUBY_GNOME_WRKSRC}/${PORTNAME}
+CONFIGURE_ARGS=	--with-glib-config=${GLIB_CONFIG}
 INSTALL_TARGET=	site-install
 
 DOCS_EN=	ChangeLog	README
