@@ -3,10 +3,10 @@
 # Date created:		15 September 1996
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/sunclock/Makefile,v 1.9 1999/08/25 04:22:43 obrien Exp $
 #
 
-DISTNAME=	sunclock-1.4
+DISTNAME=	sunclock-1.5
 CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
