@@ -2,14 +2,12 @@
 # Date created:				2000-09-18
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/wrapper/Makefile,v 1.2 2000/10/02 05:39:35 trevor Exp $
+# $FreeBSD: ports/x11/wrapper/Makefile,v 1.3 2000/10/23 12:03:46 trevor Exp $
 #
 
 PORTNAME=	wrapper
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://jpj.net/~trevor/freebsd/ports/
-EXTRACT_SUFX=	.c.gz
 
 MAINTAINER=	trevor@FreeBSD.org
 
@@ -18,12 +16,10 @@ RUN_DEPENDS=	XFree86:${PORTSDIR}/x11-servers/XFree86-4-Server
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
-do-extract:
-	${MKDIR} ${WRKDIR}
-	${GUNZIP_CMD} -c ${_DISTDIR}${DISTFILES} > ${WRKSRC}/wrapper.c
+do-fetch:
 
 do-build:
-	cd ${WRKSRC} && ${CC} ${CFLAGS} -o Xwrapper wrapper.c
+	${CC} ${CFLAGS} -o ${WRKSRC}/Xwrapper ${FILESDIR}/wrapper.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/Xwrapper ${PREFIX}/bin
