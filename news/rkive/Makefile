@@ -2,7 +2,7 @@
 # Date created:		03 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/news/rkive/Makefile,v 1.8 2000/02/13 18:18:30 torstenb Exp $
+# $FreeBSD: ports/news/rkive/Makefile,v 1.9 2000/04/09 17:33:19 cpiazza Exp $
 #
 
 PORTNAME=	rkive
@@ -15,6 +15,9 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	torstenb@FreeBSD.org
 
 NO_CDROM=	"Don't make money from it"
+MAN1=		rkive.1 article.1 ckconfig.1
+MAN5=		rkive.5
+MANCOMPRESSED=	yes
 
 pre-patch:
 	@${CP} ${WRKSRC}/Makefile.dst ${WRKSRC}/Makefile
