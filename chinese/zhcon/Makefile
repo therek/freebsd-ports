@@ -2,7 +2,7 @@
 # Date created:                   Sun Sep 9, 2001
 # Whom:                           statue@freebsd.sinica.edu.tw
 #
-# $FreeBSD: ports/chinese/zhcon/Makefile,v 1.2 2001/09/09 18:08:16 clive Exp $
+# $FreeBSD: ports/chinese/zhcon/Makefile,v 1.3 2001/09/11 04:49:46 clive Exp $
 #
 
 PORTNAME=	zhcon
@@ -30,7 +30,7 @@ PLIST_SUB+=		BIG5IME="@comment "
 .endif
 
 .if !defined(WITH_BIG5)
-pre-everything:
+pre-everything::
 	@${ECHO_MSG}
 	@${ECHO_MSG} "If you want to compile with Big5 IME support,"
 	@${ECHO_MSG} "hit Ctrl-C right now and use \"make WITH_BIG5=yes\""
