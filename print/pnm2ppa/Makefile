@@ -2,11 +2,11 @@
 # Date created:		18 November 1998
 # Whom:			smace@freebsd.org
 #
-# $FreeBSD: ports/print/pnm2ppa/Makefile,v 1.14 2001/03/03 21:19:12 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pnm2ppa
-PORTVERSION=	1.04
+PORTVERSION=	1.10
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
