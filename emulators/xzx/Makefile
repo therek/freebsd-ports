@@ -2,14 +2,13 @@
 # Date created:         13 Nov 1997
 # Whom:                 Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/emulators/xzx/Makefile,v 1.17 2000/04/12 04:56:17 mharo Exp $
+# $FreeBSD: ports/emulators/xzx/Makefile,v 1.18 2000/08/02 07:44:00 sheldonh Exp $
 #
 
 PORTNAME=	xzx
-PORTVERSION=	2.9.1
+PORTVERSION=	2.9.3
 CATEGORIES=	emulators
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR= system/emulators/zx
+MASTER_SITES=	ftp://ftp.void.jump.org/pub/sinclair/emulators/unix/
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
