@@ -1,13 +1,13 @@
 # New ports collection makefile for:	ndtpd
-# Version required:		2.3.6
+# Version required:		2.3.7
 # Date created:			4 Aug 1998
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.14 1999/12/24 18:39:31 mharo Exp $
+# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.15 2000/01/22 06:40:16 sumikawa Exp $
 #
 
-DISTNAME=	ndtpd-2.3.6
-PKGNAME=	ja-ndtpd-2.3.6
+DISTNAME=	ndtpd-2.3.7
+PKGNAME=	ja-ndtpd-2.3.7
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/ndtpd/
 
