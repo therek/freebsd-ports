@@ -2,11 +2,11 @@
 # Date created:		7 January 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.6 2000/05/15 11:14:27 tg Exp $
+# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.7 2000/05/17 11:27:50 sobomax Exp $
 #
 
 PORTNAME=	pysol-sound-server
-PORTVERSION=	2.10
+PORTVERSION=	2.20
 CATEGORIES=	audio games
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/pysol-sound-server/
 
