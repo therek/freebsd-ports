@@ -2,7 +2,7 @@
 # Date Created:			31 May 2000
 # Whom:				Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/zangband/Makefile,v 1.3 2000/10/08 02:29:04 asami Exp $
+# $FreeBSD: ports/japanese/zangband/Makefile,v 1.4 2000/10/08 08:38:58 asami Exp $
 #
 
 CATEGORIES=	japanese
@@ -11,6 +11,7 @@ MAINTAINER=	makoto@pinpott.spnet.ne.jp
 
 MASTERDIR=	${.CURDIR}/../../games/zangband
 
+PKGDIR=		${MASTERDIR}
 COMMENT=	${.CURDIR}/pkg-comment
 DESCR=		${.CURDIR}/pkg-descr
 
