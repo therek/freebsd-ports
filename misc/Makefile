@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.319 2001/01/19 13:35:58 nbm Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.320 2001/02/01 01:21:42 jeh Exp $
 #
 
     SUBDIR += 221upgrade
@@ -11,6 +11,7 @@
     SUBDIR += 34upgrade
     SUBDIR += 40upgrade
     SUBDIR += 41upgrade
+    SUBDIR += 42upgrade
     SUBDIR += 44bsd-more
     SUBDIR += Howto
     SUBDIR += achievo
