@@ -2,11 +2,12 @@
 # Date created:        3 March 2001
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/wyvern/Makefile,v 1.1 2001/03/05 09:18:47 knu Exp $
 #
 
 PORTNAME=	wyvern
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.MysticWALL.com/software/src/
 
