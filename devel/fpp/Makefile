@@ -3,13 +3,14 @@
 # Date created:		30 January 1996
 # Whom:		 	vazquez@iqm.unicamp.br	
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/fpp/Makefile,v 1.3 1999/08/25 05:47:56 obrien Exp $
 #
 
 DISTNAME=	fdfpp
 PKGNAME=	fpp-1.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netlib.org/fortran/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	vazquez@iqm.unicamp.br
 
