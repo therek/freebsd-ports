@@ -2,7 +2,7 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.48 2001/05/28 15:41:40 olgeni Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.49 2001/08/02 21:39:14 olgeni Exp $
 #
 
 PORTNAME=	lftp
@@ -31,7 +31,7 @@ pre-patch:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/lftp.conf ${PREFIX}/etc/lftp.conf.sample
 # remove some empty directories
-	${RMDIR} ${PREFIX}/lib/lftp/2.4.0
+	${RMDIR} ${PREFIX}/lib/lftp/${PORTVERSION}
 	${RMDIR} ${PREFIX}/lib/lftp
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/lftp
