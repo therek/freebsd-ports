@@ -2,11 +2,11 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/ruby-application.rb/Makefile,v 1.1 2001/07/19 18:32:08 knu Exp $
+# $FreeBSD: ports/sysutils/ruby-application.rb/Makefile,v 1.2 2001/07/31 15:34:24 knu Exp $
 #
 
 PORTNAME=	application.rb
-PORTVERSION=	1.11
+PORTVERSION=	1.13
 CATEGORIES=	sysutils ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/Application/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
