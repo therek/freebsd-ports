@@ -2,11 +2,12 @@
 # Date created:		28 Nov 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.8 2001/02/23 05:48:19 dinoex Exp $
+# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.9 2001/06/24 04:28:44 dinoex Exp $
 #
 
 PORTNAME=	pgpmoose
 PORTVERSION=	1.19
+PORTREVISION=	1
 CATEGORIES=	news security
 MASTER_SITES=	http://people.qualcomm.com/ggr/ \
 		ftp://ftp.dinoex.de/pub/FreeBSD/distfiles/
@@ -21,6 +22,12 @@ BIN1=		pmapp pmcanon pmcheck pmnewsgroups \
 		pmdaemon pmcancel
 
 NO_WRKSUBDIR=	yes
+NEWSCTL?=	${PREFIX}/news/lib
+
+post-patch:
+	@${MV} ${WRKSRC}/pmapp ${WRKSRC}/pmapp.sed
+	${SED} -e "s=/usr/local/news=${NEWSCTL}=" \
+		${WRKSRC}/pmapp.sed >${WRKSRC}/pmapp
 
 do-install:
 .for i in ${BIN1}
