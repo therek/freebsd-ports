@@ -2,21 +2,19 @@
 # Date created:				16 November 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/www/skipstone/Makefile,v 1.3 2001/04/17 13:34:07 eric Exp $
+# $FreeBSD: ports/www/skipstone/Makefile,v 1.4 2001/06/05 18:48:53 eric Exp $
 #
 
-BROKEN=		"out-of-sync with mozilla, next release will fix"
-
 PORTNAME=	skipstone
-PORTVERSION=	0.7.2
+PORTVERSION=	0.7.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.muhri.net/skipstone/
 
 MAINTAINER=	eric@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/mozilla/gtkmozembed.h:${PORTSDIR}/www/mozilla-headers \
-		${X11BASE}/lib/mozilla/libgtkembedmoz.so:${PORTSDIR}/www/mozilla
-RUN_DEPENDS=	${X11BASE}/lib/mozilla/libgtkembedmoz.so:${PORTSDIR}/www/mozilla
+		${X11BASE}/lib/mozilla-embedded/libgtkembedmoz.so:${PORTSDIR}/www/mozilla-embedded
+RUN_DEPENDS=	${X11BASE}/lib/mozilla-embedded/libgtkembedmoz.so:${PORTSDIR}/www/mozilla-embedded
 
 USE_GTK=	yes
 USE_GMAKE=	yes
