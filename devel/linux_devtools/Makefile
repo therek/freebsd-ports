@@ -3,7 +3,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.16 2000/01/05 23:31:56 marcel Exp $
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.17 2000/01/10 13:04:34 marcel Exp $
 #
 
 DISTNAME=		linux_devtools
@@ -25,6 +25,7 @@ PATCHFILES=
 
 MAINTAINER=		marcel@FreeBSD.org
 
+BUILD_DEPENDS=		rpm:${PORTSDIR}/misc/rpm
 RUN_DEPENDS=		\
 	${PREFIX}/etc/redhat-release:${PORTSDIR}/emulators/linux_base
 
