@@ -2,7 +2,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.111 2000/05/17 21:54:48 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.112 2000/05/25 12:44:00 dirk Exp $
 #
 
 PORTNAME=	apache+php
@@ -41,6 +41,8 @@ DISTNAME=	apache_${VERSION_APACHE}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} php-${VERSION_PHP}${EXTRACT_SUFX}
 
 MAINTAINER=	dirk@FreeBSD.org
+
+FORBIDDEN=	"awaiting update"
 
 Y2K=		http://www.php.net/y2k.php3
 
