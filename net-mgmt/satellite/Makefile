@@ -2,7 +2,7 @@
 # Date created:        24 Feb 2001
 # Whom:                Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/satellite/Makefile,v 1.1 2001/03/10 07:39:29 dinoex Exp $
+# $FreeBSD: ports/net/satellite/Makefile,v 1.2 2001/06/08 05:36:40 markp Exp $
 #
 
 PORTNAME=       satellite
@@ -26,6 +26,6 @@ pre-install:
 	@${SH} pkg-install ${PKGNAME} PRE-INSTALL
 
 post-install:
-	@${SH} pkg-install ${PKGNAME} POST-INSTALL
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
