@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.96 2000/01/10 19:33:17 dbaker Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.97 2000/01/14 02:13:09 asami Exp $
 #
 
     SUBDIR += LPRng
@@ -54,6 +54,7 @@
     SUBDIR += nut
     SUBDIR += obliterate
     SUBDIR += pib
+    SUBDIR += pkg_remove
     SUBDIR += prips
     SUBDIR += psmisc
     SUBDIR += rdate
