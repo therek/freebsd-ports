@@ -2,7 +2,7 @@
 # Date created:         2 April 1997
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/mail/xpbiff/Makefile,v 1.7 1999/08/25 06:51:14 obrien Exp $
+# $FreeBSD: ports/mail/xpbiff/Makefile,v 1.8 2000/04/13 20:01:05 cpiazza Exp $
 #
 
 PORTNAME?=	xpbiff
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/xpbiff/
 DISTNAME=	xpbiff
 DISTFILES=	xpbiff-1.27-with-YOUBIN.tar.gz.uu
 
-MAINTAINER=	sanpei@yy.cs.keio.ac.jp
+MAINTAINER=	sanpei@sanpei.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -2,7 +2,7 @@
 # Date created:			28 November 1999
 # Whom:				MIHIRA Yoshiro <sanpei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/net/doc/Makefile,v 1.1.1.1 1999/12/04 20:43:27 cpiazza Exp $
+# $FreeBSD: ports/net/doc/Makefile,v 1.2 2000/04/09 18:11:06 cpiazza Exp $
 #
 
 PORTNAME=	doc
@@ -10,7 +10,7 @@ PORTVERSION=	2.1.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.his.com/pub/brad/dns/
 
-MAINTAINER=	sanpei@jp.FreeBSD.org
+MAINTAINER=	sanpei@sanpei.org
 
 AUX_DIR=	lib/doc
 AUX_FILES=	doc1.awk doc3.awk doc4.awk INFO RFC.XXXX

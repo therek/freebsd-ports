@@ -2,7 +2,7 @@
 # Date created:         18 Aug 1999
 # Whom:                 nobu@rd.isac.co.jp
 #
-# $FreeBSD: ports/math/ngraph/Makefile,v 1.3 1999/11/27 01:09:27 steve Exp $
+# $FreeBSD: ports/math/ngraph/Makefile,v 1.4 2000/04/14 07:20:19 asami Exp $
 #
 
 PORTNAME=       ngraph
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www2e.biglobe.ne.jp/~isizaka/bin/ \
 		${MASTER_SITE_PORTS_JP}
 DISTNAME=       Ngraph-${PORTVERSION}-src
 
-MAINTAINER=     sanpei@jp.FreeBSD.org
+MAINTAINER=     sanpei@sanpei.org
 
 REQUIRES_MOTIF=	yes
 USE_GMAKE=	yes
