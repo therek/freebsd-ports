@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.187 2000/09/06 23:07:07 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.188 2000/09/07 00:03:29 knu Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -45,7 +45,6 @@
     SUBDIR += icon
     SUBDIR += intel2gas
     SUBDIR += intercal
-    SUBDIR += irb
     SUBDIR += itcl
     SUBDIR += lcc
     SUBDIR += libobjects
@@ -104,6 +103,7 @@
     SUBDIR += ruby-tcltklib
     SUBDIR += ruby-usersguide
     SUBDIR += ruby14
+    SUBDIR += ruby14-irb
     SUBDIR += ruby14-tcltklib
     SUBDIR += scheme48
     SUBDIR += schemetoc
