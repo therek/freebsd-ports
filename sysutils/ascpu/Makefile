@@ -2,23 +2,25 @@
 # Date created:         18 February 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.7 2000/04/09 19:07:07 cpiazza Exp $
+# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.8 2000/04/22 10:11:29 mharo Exp $
 #
 
 PORTNAME=	ascpu
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	sysutils afterstep
-MASTER_SITES=	http://bewoner.dma.be/Albert/software/ \
-		http://www.tigr.net/afterstep/as-apps/download/ascpu/	\
+MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/ascpu/	\
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
+		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=	--with-xpm
+CONFIGURE_ARGS=	--with-xpm
+CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
+MAKE_ENV=	EXTRA_LIBRARIES="-L${LOCALBASE}/lib"
 
 MAN1=		ascpu.1
 
