@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.17 2002/07/05 09:14:53 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.18 2002/07/11 16:32:25 sobomax Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -325,7 +325,7 @@ RUN_DEPENDS+=	${X11BASE}/bin/gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 .endif
 .if defined(USE_GNOME)
 LIB_DEPENDS+=	panel_status.5:${PORTSDIR}/x11/gnomecore \
-		gtkhtml.21:${PORTSDIR}/www/gtkhtml
+		gtkhtml-1.1.3:${PORTSDIR}/www/gtkhtml
 .endif
 .if defined(WANT_GNOME) && !defined(HAVE_GNOME)
 PLIST_SUB+=		GNOME:="@comment " NOGNOME:="" DATADIR="share"
