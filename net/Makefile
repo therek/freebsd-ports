@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.588 2001/08/12 06:39:23 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.589 2001/08/12 11:20:24 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -38,6 +38,7 @@
     SUBDIR += cisco_conf
     SUBDIR += ciscoconf
     SUBDIR += citrix_ica
+    SUBDIR += click
     SUBDIR += clog
     SUBDIR += clusterit
     SUBDIR += cnet
