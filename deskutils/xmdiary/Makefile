@@ -2,15 +2,15 @@
 # Date created:		29 Sep 1997
 # Whom:			mi@aldan.ziplink.net
 #
-# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.9 2000/11/07 23:27:59 asami Exp $
+# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.10 2001/01/16 17:30:13 sobomax Exp $
 #
 
 PORTNAME=	xmdiary
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.3
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office
-DISTFILES=	${DISTNAME}.tar.gz xmdfix.gz
+DISTFILES=	${DISTNAME}.tar.gz
 
 MAINTAINER=	mi@aldan.algebra.com
 
@@ -21,13 +21,6 @@ USE_IMAKE=	yes
 MAN1=		xdaclunix.1 xdalarm.1 xdcustom.1 xddump.1 xdiary.1 xdinitdb.1 \
 		xdlight.1 xdnotify.1 xdprformat.1 xdremind.1 xdremove.1 \
 		xdrestore.1
-
-pre-patch:
-	@for node in `tar tzf ${DISTDIR}/xmdfix.gz` ; \
-	do \
-		test -f $(WRKSRC)/$$node && ${RM} -f $(WRKSRC)/$$node ; \
-	done
-	cd  $(WRKSRC) && tar xzpf ${DISTDIR}/xmdfix.gz
 
 post-patch:
 	@${ECHO_MSG} removing the "malloc.h" includes
