@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.37 2000/09/12 10:12:18 sobomax Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.38 2000/09/12 10:53:48 sobomax Exp $
 #
 
     SUBDIR += aish
@@ -22,6 +22,7 @@
     SUBDIR += p5-Convert-Recode
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
+    SUBDIR += p5-Unicode-String
     SUBDIR += recode
     SUBDIR += ruby-iconv
     SUBDIR += tcs
