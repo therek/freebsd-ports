@@ -1,9 +1,9 @@
 # New ports collection makefile for:	fetchmail
-# Version required:     5.2.8
-# Date created:		26 Oct 1996
+# Version required:     5.3.0
+# Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.91 2000/02/20 02:00:27 cpiazza Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.92 2000/02/25 21:58:33 cpiazza Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
