@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.103 2000/02/03 17:07:55 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.104 2000/02/22 07:26:34 kris Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -79,12 +79,6 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 
 OPTIM=		-DHARD_SERVER_LIMIT=512 \
 		-DDEFAULT_PATH=\\"${PREFIX}/bin:/bin:/usr/bin\\"
-
-.if defined(APACHE_PERF_TUNING) && ${APACHE_PERF_TUNING} == YES
-OPTIM+=		-DBUFFERED_LOGS -DFD_SETSIZE=1024
-CFLAGS+=	-O6 -funroll-loops -fstrength-reduce -fomit-frame-pointer \
-		-fexpensive-optimizations -ffast-math
-.endif
 
 CONFIGURE_ENV=	OPTIM='${OPTIM}' LIBS='-L${PREFIX}/lib'
 SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \

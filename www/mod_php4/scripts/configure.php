@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.76 2000/01/27 13:04:23 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.77 2000/02/25 23:43:27 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -53,7 +53,9 @@ exec > ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 while [ "$1" ]; do
 	case $1 in
 		\"tuning\")
-			echo "APACHE_PERF_TUNING=	YES"
+			echo "CFLAGS+=	-O6 -funroll-loops -fstrength-reduce -fomit-frame-pointer -fexpensive-optimizations -ffast-math"
+			echo "OPTIM+=		-DBUFFERED_LOGS -DFD_SETSIZE=1024"
+			echo "CONFIGURE_ENV+=	OPTIM='\${OPTIM}'"
 			;;
 		\"GD\")
 			echo "LIB_DEPENDS+=	gd.0:\${PORTSDIR}/graphics/gd"
