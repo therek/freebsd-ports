@@ -2,11 +2,12 @@
 # Date created:         23 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/gau/Makefile,v 1.6 2000/07/07 19:59:11 steve Exp $
+# $FreeBSD: ports/korean/gau/Makefile,v 1.7 2000/10/05 06:42:00 reg Exp $
 #
 
 PORTNAME=	gau
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	korean comms
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/gau/
 
