@@ -1,23 +1,20 @@
 # New ports collection makefile for:	tkman
 # Date created:         27 Dec 1994
-# Whom:                 Thomas Gellekum <tg@freebsd.org>
+# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/tkman/Makefile,v 1.40 2000/06/09 09:35:13 sobomax Exp $
+# $FreeBSD: ports/misc/tkman/Makefile,v 1.41 2000/06/23 13:43:59 sobomax Exp $
 #
 
 PORTNAME=	tkman
-PORTVERSION=	2.1b4
+PORTVERSION=	2.1
 CATEGORIES=	misc tk83
-MASTER_SITES=	ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
-EXTRACT_SUFX=	.tar.Z
+MASTER_SITES=	ftp://tkman.sourceforge.net/pub/tkman/
 
-MAINTAINER=	tg@freebsd.org
+MAINTAINER=	tg@FreeBSD.org
 
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 RUN_DEPENDS=	rman:${PORTSDIR}/textproc/rman \
 		glimpse:${PORTSDIR}/textproc/glimpse
-
-NO_CDROM=	"License required"
 
 post-patch:
 	${PERL} -pi -e "s;/usr/local/bin/wish;${LOCALBASE}/bin/wish8.3;" \
