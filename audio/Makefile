@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.215 2001/03/16 21:15:49 dannyboy Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.216 2001/03/17 14:35:01 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -171,6 +171,7 @@
     SUBDIR += timidity++-xskin
     SUBDIR += tosha
     SUBDIR += tracker
+    SUBDIR += umix
     SUBDIR += vorbis
     SUBDIR += vorbis-tools
     SUBDIR += waveplay
