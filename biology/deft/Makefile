@@ -2,7 +2,7 @@
 # Date created:				1999-01-11
 # Whom:					Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/deft/Makefile,v 1.4 2000/06/07 17:10:11 will Exp $
+# $FreeBSD: ports/biology/deft/Makefile,v 1.5 2000/06/11 19:51:58 alex Exp $
 #
 
 PORTNAME=	deft
@@ -22,6 +22,10 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/source
 # Using g77 is troublesome, then it is better to use f2c/cc.
 BUILD_DEPENDS=	ftn77:${PORTSDIR}/lang/f77
 .endif
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g \
+		${WRKDIR}/${DISTNAME}/examples/DeFT
 
 post-configure:
 	${CP} ${FILESDIR}/Makefile.deft ${WRKSRC}/Makefile
