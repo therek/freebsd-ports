@@ -2,11 +2,11 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.15 2001/07/24 01:57:50 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Jcode
-PORTVERSION=	0.75
+PORTVERSION=	0.79
 CATEGORIES=	japanese perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/id/D/DA/DANKOGAI
