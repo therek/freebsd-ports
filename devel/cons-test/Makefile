@@ -2,7 +2,7 @@
 # Date created:		15 September 2000
 # Whom:			rv@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cons-test/Makefile,v 1.1 2000/09/15 19:39:58 rv Exp $
 #
 
 PORTNAME=	cons-test
@@ -10,12 +10,12 @@ PORTVERSION=	2.0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dsmit.com/cons/stable/ \
 		http://www.gnu.org/software/cons/stable/ \
-		ftp://ftp.gnu.org/pub/gnu/cons/stable/${PORTVERSION} \
+		ftp://ftp.gnu.org/pub/gnu/cons/stable/${PORTVERSION}/ \
 		http://www.baldmt.com/cons/stable/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rv@FreeBSD.org
-BUILD_DEPENDS=	${PERL}
+
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${ARCH}-freebsd/MD5.pm:${PORTSDIR}/security/p5-MD5 ${LOCALBASE}/bin/cons:${PORTSDIR}/devel/cons
 
 USE_PERL5=	yes
