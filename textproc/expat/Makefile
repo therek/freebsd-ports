@@ -2,7 +2,7 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.9 2000/11/02 02:53:20 knu Exp $
+# $FreeBSD: ports/textproc/expat/Makefile,v 1.10 2001/02/05 16:34:34 olgeni Exp $
 #
 
 PORTNAME=	expat
@@ -17,6 +17,7 @@ SHLIB_MAJOR=	1
 MAKEFILES=	Makefile.lib Makefile.prog
 MAKE_ARGS=	SHLIB_MAJOR="${SHLIB_MAJOR}" \
 		NOPROFILE=true
+INSTALLS_SHLIB=	yes
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
 
 do-build:
