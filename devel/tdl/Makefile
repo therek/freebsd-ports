@@ -2,11 +2,11 @@
 # Date created:				30 August 2001
 # Whom:					petef
 #
-# $FreeBSD: ports/devel/tdl/Makefile,v 1.1 2001/08/30 05:39:51 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tdl
-PORTVERSION=	0.6
+PORTVERSION=	0.7.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.rrbcurnow.freeuk.com/tdl/
 
