@@ -2,7 +2,7 @@
 # Date created:				Thu Jul  5 17:13:11 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/jags/Makefile,v 1.1 2001/07/08 14:33:48 dwcjr Exp $
 #
 
 PORTNAME=	jags
@@ -18,10 +18,10 @@ USE_GTK=	yes
 USE_GLIB=	yes
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.mk>
-
-patch:
+pre-patch:
 	@${PERL} -pi.fbsd -e 's@/usr/local/share/jags/@${PREFIX}/share/jags/@g' \
 		${WRKSRC}/src/jagsconfig.cpp
 	@${PERL} -pi.fbsd -e 's@/usr/local/share/jags/pixmaps/@${PREFIX}/share/jags/pixmaps/@g' \
 		${WRKSRC}/src/gtk_common.cpp
+
+.include <bsd.port.mk>
