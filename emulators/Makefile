@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.64 2001/03/08 02:39:22 nsayer Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.65 2001/03/12 06:10:20 ijliao Exp $
 #
 
     SUBDIR += aftp
@@ -60,6 +60,7 @@
     SUBDIR += xgs
     SUBDIR += xmame
     SUBDIR += xmess
+    SUBDIR += xpinmame
     SUBDIR += xsystem35
     SUBDIR += xzx
 
