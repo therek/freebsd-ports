@@ -1,9 +1,14 @@
-@comment $FreeBSD$
-%%PORTDOCS%%%%DOCSDIR%%/README
+@comment $FreeBSD: ports/print/latex-lineno/pkg-plist,v 1.1 2004/03/06 09:20:44 krion Exp $
+%%PORTDOCS%%%%DOCSDIR%%/README.txt
+%%PORTDOCS%%%%DOCSDIR%%/CHANGES.txt
+%%PORTDOCS%%%%DOCSDIR%%/lineno.tex
+%%PORTDOCS%%%%DOCSDIR%%/lineno.pdf
+%%PORTDOCS%%%%DOCSDIR%%/ulineno.tex
+%%PORTDOCS%%%%DOCSDIR%%/ulineno.pdf
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%CLASSDIR%%/lineno.sty
-%%CLASSDIR%%/lineno.tex
-%%CLASSDIR%%/ulineno.tex
+%%CLASSDIR%%/edtable.sty
+%%CLASSDIR%%/ednmath0.sty
 @dirrm %%CLASSDIR%%
 @exec %%MKTEXLSR%%
 @unexec %%MKTEXLSR%%
