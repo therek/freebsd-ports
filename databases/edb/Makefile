@@ -2,13 +2,14 @@
 # Date created:		10/16/2000
 # Whom:			Brandon Fosdick <bfoz@glue.umd.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/edb/Makefile,v 1.1 2000/11/03 07:17:19 nakai Exp $
 #
 
 PORTNAME=	edb
 PORTVERSION=	1.0.1
 CATEGORIES=	databases
-MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/e17/libs/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	enlightenment
 
 MAINTAINER=	bfoz@glue.umd.edu
 
