@@ -2,7 +2,7 @@
 # Date created:         23 Jan 1999
 # Whom:                 Yoshihide SONODA <ysonoda@dontaku.csce.kyushu-u.ac.jp>
 #
-# $FreeBSD: ports/audio/waveplay/Makefile,v 1.4 2000/04/08 21:24:41 mharo Exp $
+# $FreeBSD: ports/audio/waveplay/Makefile,v 1.5 2000/12/10 15:36:23 roam Exp $
 #
 
 PORTNAME=		waveplay
@@ -15,6 +15,7 @@ MAINTAINER=		yshd@na.rim.or.jp
 
 MAN1=			waveplay.1
 MANLANG=		"" ja
+ONLY_FOR_ARCHS=		i386
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/waveplay ${PREFIX}/bin/waveplay
