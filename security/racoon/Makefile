@@ -2,11 +2,11 @@
 # Date created:		4 July 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/security/racoon/Makefile,v 1.7 2001/02/21 02:12:30 sumikawa Exp $
+# $FreeBSD: ports/security/racoon/Makefile,v 1.8 2001/02/22 17:09:52 sumikawa Exp $
 #
 
 PORTNAME=	racoon
-PORTVERSION=	20010222a
+PORTVERSION=	20010322a
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
