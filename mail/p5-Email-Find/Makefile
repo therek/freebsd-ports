@@ -2,11 +2,11 @@
 # Date created:				28 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/mail/p5-Email-Find/Makefile,v 1.4 2001/06/12 19:24:50 tobez Exp $
+# $FreeBSD: ports/mail/p5-Email-Find/Makefile,v 1.5 2001/06/26 14:54:09 tobez Exp $
 #
 
 PORTNAME=	Email-Find
-PORTVERSION=	0.04
+PORTVERSION=	0.06
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Email
@@ -15,6 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Email/Valid.pm:${PORTSDIR}/mail/p5-Email-Valid
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
