@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.516 2001/04/18 12:41:29 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -180,6 +180,7 @@
     SUBDIR += libcoro
     SUBDIR += libdlmalloc
     SUBDIR += libdsp
+    SUBDIR += libelf
     SUBDIR += libffi
     SUBDIR += libg++
     SUBDIR += libgetline
