@@ -2,7 +2,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm/Makefile,v 1.5 1999/08/27 22:29:40 mharo Exp $
+# $FreeBSD: ports/mail/ezmlm/Makefile,v 1.6 2000/04/13 19:59:37 cpiazza Exp $
 #
 
 PORTNAME=	ezmlm
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.ezmlm.org/pub/qmail/ \
 		ftp://ftp.rifkin.technion.ac.il/pub/qmail/ \
 		ftp://ftp.mira.net.au/unix/mail/qmail/
 
-MAINTAINER=	tom@eborcom.com
+MAINTAINER=	tom@FreeBSD.org
 
 # QMAIL_DIR is the directory where qmail is installed
 .if !defined(QMAIL_DIR)
