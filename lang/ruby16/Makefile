@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.28 2000/08/16 12:21:07 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.29 2000/08/18 02:19:00 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -44,6 +44,7 @@ CONFIGURE_ARGS+= --enable-ipv6
 .endif
 
 post-patch:
+	${RM} -f ${WRKSRC}/ext/gdbm/MANIFEST
 	${RM} -f ${WRKSRC}/ext/tcltklib/MANIFEST
 	${RM} -f ${WRKSRC}/ext/tk/MANIFEST
 	${RM} -rf ${WRKSRC}/lib/irb ${WRKSRC}/sample/irb.rb
