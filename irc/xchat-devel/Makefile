@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xchat
-# Version required:		1.3.8
+# Version required:		1.3.10
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.37 1999/11/22 21:15:24 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.38 1999/12/22 20:26:04 jim Exp $
 #
 
-DISTNAME=	xchat-1.3.8
+DISTNAME=	xchat-1.3.10
 CATEGORIES=	irc
 MASTER_SITES=	http://xchat.org/files/source/1.3/ \
 		http://xchat.linuxpower.org/files/source/1.3/
