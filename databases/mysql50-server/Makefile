@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.110 2001/03/17 10:35:49 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.111 2001/03/28 13:43:06 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -57,7 +57,7 @@ pre-fetch:
 	@${ECHO} ""
 	@${ECHO} "You may use the following build options:"
 	@${ECHO} ""
-	@${ECHO} "	WITH_CHARSET=charset	define the primary built-in charset (Latin1);"
+	@${ECHO} "	WITH_CHARSET=charset	define the primary built-in charset (latin1);"
 	@${ECHO} "	WITH_XCHARSET=list	define other built-in charsets (may be 'all');"
 	@${ECHO} "	DB_DIR=directory	Set alternate directory for database files."
 	@${ECHO} ""
