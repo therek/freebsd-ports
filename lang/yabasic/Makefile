@@ -2,11 +2,11 @@
 # Date created:		11 Nov 1999
 # Whom:			Frank Gruender
 #
-# $FreeBSD: ports/lang/yabasic/Makefile,v 1.7 2000/09/22 02:19:24 kris Exp $
+# $FreeBSD: ports/lang/yabasic/Makefile,v 1.8 2000/09/25 12:21:27 asami Exp $
 #
 
 PORTNAME=	yabasic
-PORTVERSION=	2.64
+PORTVERSION=	2.66
 CATEGORIES=	lang
 MASTER_SITES=	http://www.yabasic.de/download/
 DISTFILES=	yab.tar.Z
