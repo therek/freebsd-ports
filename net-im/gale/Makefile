@@ -2,24 +2,25 @@
 # Date created:         14 July 2000
 # Whom:                 Peter Haight <peterh@sapros.com>
 #
-# $FreeBSD: ports/net/gale/Makefile,v 1.7 2001/01/16 17:31:47 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gale
-PORTVERSION=	0.99d
-PORTREVISION=	1
+PORTVERSION=	0.99e
 CATEGORIES=	net
-MASTER_SITES=	http://download.gale.org/
-DISTNAME=	${PORTNAME}-${PORTVERSION}anger
+MASTER_SITES=	http://download.ofb.net/gale/
+DISTNAME=	${PORTNAME}-${PORTVERSION}gg
 
 MAINTAINER=	peterh@sapros.com
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
+BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc \
+		automake:${PORTSDIR}/devel/automake
 LIB_DEPENDS=	wwwcore.1:${PORTSDIR}/www/libwww \
 		adns.1:${PORTSDIR}/net/adns
 
 USE_OPENSSL=	yes
-GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
+INSTALLS_SHLIB=	yes
 
 CFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CPPFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib \
@@ -27,7 +28,10 @@ CPPFLAGS+=	-I${LOCALBASE}/include -L${LOCALBASE}/lib \
 LDFLAGS+=	-L${LOCALBASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" LDFLAGS="${LDFLAGS}"
 
+pre-configure:
+	cd ${WRKSRC} && aclocal
+
 post-install:
-	${CAT} ${PKGMESSAGE}
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
