@@ -3,13 +3,13 @@
 # Date created:		17 Oct 1997
 # Whom:			taguchi
 #
-# $FreeBSD: ports/japanese/expect/Makefile,v 1.14 1999/08/25 05:24:06 obrien Exp $
+# $FreeBSD: ports/japanese/expect/Makefile,v 1.15 1999/09/18 17:37:35 steve Exp $
 #
 
-DISTNAME=	expect
+DISTNAME=	expect-5.30
 PKGNAME=	ja-expect-5.30
 CATEGORIES=	japanese lang tk80
-MASTER_SITES=	http://expect.nist.gov/
+MASTER_SITES=	ftp://ftp.nist.gov/mel/div826/subject/expect/old/
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
