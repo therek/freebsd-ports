@@ -2,11 +2,11 @@
 # Date created:		21 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-mutexm/Makefile,v 1.1 2001/02/21 05:00:54 knu Exp $
 #
 
 PORTNAME=	mutexm
-PORTVERSION=	0.9.2
+PORTVERSION=	1.0
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www2a.biglobe.ne.jp/~seki/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
