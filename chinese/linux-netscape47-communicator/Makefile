@@ -2,7 +2,7 @@
 # Date created:		23 Oct 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/linux-netscape47-communicator/Makefile,v 1.1 2000/11/06 18:43:11 keith Exp $
+# $FreeBSD: ports/chinese/linux-netscape47-communicator/Makefile,v 1.2 2000/11/15 02:24:35 keith Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -26,7 +26,7 @@ LOCALE?=		zh_TW.Big5
 REGION?=		tw
 BROWSER?=		communicator
 BROWSER_VER?=		47
-BROWSER_VERSION?=	4.76
+BROWSER_VERSION?=	4.77
 BROWSER_ARC?=		${BROWSER}-linux
 BROWSER_BIN?=		${BROWSER_ARC}-${BROWSER_VERSION}.bin
 BROWSER_CMD?=		${REGION}-${BROWSER_ARC}-${BROWSER_VER}
