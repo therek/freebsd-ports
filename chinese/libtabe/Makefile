@@ -3,7 +3,7 @@
 # Date created:				2 Nov 1999
 # Whom:					Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.7 2000/02/27 11:50:35 vanilla Exp $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.8 2000/03/03 22:27:23 asami Exp $
 #
 
 DISTNAME=	libtabe-0.1-2
@@ -29,7 +29,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/tabe
+	${MKDIR} ${PREFIX}/share/doc/tab
 	${INSTALL_DATA} ${WRKSRC}/src/tsi-src/README ${PREFIX}/share/doc/tabe
 .for DOC in BoPoMoFo.shtml Changes Changes.pre-0.1 TODO ZuYinCode.txt \
 		et26.txt libtabe.sgml
