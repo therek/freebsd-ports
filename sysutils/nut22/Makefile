@@ -2,11 +2,11 @@
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.9 2000/10/08 06:02:30 asami Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.10 2000/10/16 06:09:57 bp Exp $
 #
 
 PORTNAME=	nut
-PORTVERSION=	0.44.1
+PORTVERSION=	0.44.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.exploits.org/nut/release/
 
@@ -19,7 +19,7 @@ LIB_DEPENDS=    gd.1:${PORTSDIR}/graphics/gd
 GNU_CONFIGURE=  yes
 CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc/nut \
 		--with-cgipath=${PREFIX}/share/nut/cgi \
-		--with-modelpath=${PREFIX}/sbin \
+		--with-modelpath=${PREFIX}/libexec/nut \
 		--with-statepath=/var/db
 
 ALL_TARGET=	all
@@ -50,8 +50,8 @@ pre-install:
 post-install:
 	@${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" \
 		${WRKSRC}/scripts/FreeBSD/upsd.sh.sample \
-		>${PREFIX}/etc/rc.d/upsd.sh.sample
-	@${CHMOD} 0755 ${PREFIX}/etc/rc.d/upsd.sh.sample
+		>${PREFIX}/etc/rc.d/nut.sh.sample
+	@${CHMOD} 0755 ${PREFIX}/etc/rc.d/nut.sh.sample
 .if !defined(NOPORTDOCS)
 	@if ! [ -d ${NDOCDIR} ]; then ${MKDIR} ${NDOCDIR}; fi
 	@if ! [ -d ${NDOCDIR}/cables ]; then ${MKDIR} ${NDOCDIR}/cables; fi
