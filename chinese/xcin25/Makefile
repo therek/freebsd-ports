@@ -2,10 +2,10 @@
 # Date created:		18 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.17 2000/04/13 08:28:22 asami Exp $
+# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.18 2000/04/24 06:25:48 vanilla Exp $
 #
 
-PORTNAME=	xcin
+PORTNAME=	zh-xcin
 PORTVERSION=	2.5.2p3
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/devel/
@@ -14,11 +14,11 @@ DISTNAME=	xcin-2.5.2-pre3
 MAINTAINER=	keith@freebsd.sinica.edu.tw
 
 LIB_DEPENDS=	tabe.0:${PORTSDIR}/chinese/libtabe \
-		intl.1:${PORTSDIR}/devel/gettext
-BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db
+		intl.1:${PORTSDIR}/devel/gettext \
+		db2.0:${PORTSDIR}/databases/db
 RUN_DEPENDS=	${X11BASE}/lib/X11/locale/zh_TW.Big5/XLC_LOCALE:${PORTSDIR}/x11/XFree86 \
 		${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts \
-		${LOCALBASE}/share/tabe/libtabe-0.1-4:${PORTSDIR}/chinese/libtabe
+		${LOCALBASE}/share/tabe/libtabe-0.1-5:${PORTSDIR}/chinese/libtabe
 
 WRKSRC=		${WRKDIR}/xcin-2.5
 USE_X_PREFIX=	yes
