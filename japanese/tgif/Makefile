@@ -2,11 +2,11 @@
 # Date created:		8 Dec 1995
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif/Makefile,v 1.20 2000/07/12 02:52:11 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tgif
-PORTVERSION=	4.1.40
+PORTVERSION=	4.1.41
 CATEGORIES=	japanese
 MASTER_SITES=	http://home.jp.FreeBSD.org/~mita/LOCAL_PORTS/
 DISTNAME=	ja-${PORTNAME}-980222
