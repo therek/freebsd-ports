@@ -2,11 +2,11 @@
 # Date created:				28 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/math/rcalc/Makefile,v 1.4 2000/06/01 16:25:43 ade Exp $
+# $FreeBSD: ports/math/rcalc/Makefile,v 1.5 2000/06/14 13:21:26 sobomax Exp $
 #
 
 PORTNAME=	rcalc
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -14,7 +14,7 @@ DISTNAME=	rCalc-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
