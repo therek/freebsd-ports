@@ -3,7 +3,7 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.2 1999/08/25 06:02:55 obrien Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.3 2000/03/29 07:18:13 kris Exp $
 #
 
 DISTNAME=	battleball.20.src
@@ -11,7 +11,7 @@ PKGNAME=	battleball-2.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.cs.utexas.edu/users/pahardin/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/bb-2.0

@@ -3,7 +3,7 @@
 # Date created:				3 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlaby/Makefile,v 1.4 1999/08/25 06:05:27 obrien Exp $
+# $FreeBSD: ports/games/xlaby/Makefile,v 1.5 2000/03/29 07:17:12 kris Exp $
 #
 
 DISTNAME=		xlaby-2.0.1
@@ -13,7 +13,7 @@ MASTER_SITES=		http://www.eleves.ens.fr:8080/home/madore/ \
 MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		will@FreeBSD.org
 
 USE_IMAKE=		yes
 NO_WRKSUBDIR=		yes

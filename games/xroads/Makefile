@@ -3,7 +3,7 @@
 # Date created:				21 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xroads/Makefile,v 1.5 1999/08/25 06:06:04 obrien Exp $
+# $FreeBSD: ports/games/xroads/Makefile,v 1.6 2000/03/29 07:17:47 kris Exp $
 #
 
 DISTNAME=	xroads-v0.3
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Way/1795/ \
 		http://www.autobahn.mb.ca/~foxtrot/ \
 		http://supernova.dyn.ml.org/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 USE_X_PREFIX=	yes
 FETCH_BEFORE_ARGS=	-t

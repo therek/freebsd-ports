@@ -3,34 +3,22 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/qtez/Makefile,v 1.11 1999/08/25 05:50:03 obrien Exp $
+# $FreeBSD: ports/devel/qtez/Makefile,v 1.12 2000/03/29 07:16:35 kris Exp $
 #
 
-DISTNAME=	QtEZ.current-src
-PKGNAME=	qtez-0.77a
+DISTNAME=	qtez-0.85.2
 CATEGORIES=	devel
-MASTER_SITES=	http://qtez.zax.net/qtez-extras/
-#EXTRACT_SUFX=	tar.gz
+MASTER_SITES=	http://www.ibl.sk/qtez/download/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
-USE_QT=		yes
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-WRKSRC=		${WRKDIR}/qtez_src
-
-do-install:
-	@ ${INSTALL_PROGRAM} ${WRKDIR}/qtez_src/bin/qtez ${PREFIX}/bin
-	@ ${MKDIR} ${PREFIX}/share/examples/qtez
-	@ cd ${WRKDIR}/qtez_src/demo; tar cf - . | (cd ${PREFIX}/share/examples/qtez; tar xf - )
-
-post-install:
-.if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/qtez
-.for file in INSTALL KDE.README README TODO
-	@ ${INSTALL_DATA} ${WRKDIR}/qtez_src/${file} ${PREFIX}/share/doc/qtez
-.endfor
-	@ cd ${WRKDIR}/qtez_src/docs; tar cf - . | (cd ${PREFIX}/share/doc/qtez; tar xf - )
-.endif
+USE_BZIP2=	yes
+USE_QT2=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} --with-qt-includes=${X11BASE}/include/qt2 \
+		--with-qt-libraries=${X11BASE}/lib
+USE_GMAKE=	yes
+MAKE_ENV+=	PCFLAGS="${CXXFLAGS}"
 
 .include <bsd.port.mk>
