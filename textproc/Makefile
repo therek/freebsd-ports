@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.254 2001/10/05 08:55:58 petef Exp $
+# $FreeBSD$
 #
 
     SUBDIR += agrep
@@ -135,6 +135,7 @@
     SUBDIR += p5-XML-DOM
     SUBDIR += p5-XML-DT
     SUBDIR += p5-XML-Dumper
+    SUBDIR += p5-XML-Encoding
     SUBDIR += p5-XML-LibXML
     SUBDIR += p5-XML-LibXSLT
     SUBDIR += p5-XML-Node
