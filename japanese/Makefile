@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.365 2001/06/27 14:33:19 shige Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.366 2001/07/21 18:23:48 sf Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -23,6 +23,7 @@
     SUBDIR += canuum
     SUBDIR += cdrom2
     SUBDIR += chasen
+    SUBDIR += chasen-base
     SUBDIR += chimera
     SUBDIR += csrd
     SUBDIR += dbskkd-cdb
@@ -85,6 +86,7 @@
     SUBDIR += hex
     SUBDIR += hns
     SUBDIR += ical
+    SUBDIR += ipadic
     SUBDIR += ircII
     SUBDIR += iv
     SUBDIR += japaneseAFM
