@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.112 1999/11/03 22:22:52 nsayer Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.113 1999/11/14 03:17:52 cpiazza Exp $
 #
 
     SUBDIR += amp
@@ -45,6 +45,7 @@
     SUBDIR += mpg123.el
     SUBDIR += mpmf20
     SUBDIR += mxv
+    SUBDIR += napster
     SUBDIR += nas
     SUBDIR += nspmod
     SUBDIR += play
