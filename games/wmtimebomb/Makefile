@@ -3,7 +3,7 @@
 # Date created:		10 August 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.6 1999/08/25 06:04:37 obrien Exp $
+# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.7 1999/08/31 06:44:31 mharo Exp $
 
 DISTNAME=	wmtimebomb.20
 PKGNAME=	wmtimebomb-0.2.0
@@ -14,7 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		PropList.1:${PORTSDIR}/devel/libPropList \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gif.3:${PORTSDIR}/graphics/giflib \
 		png.3:${PORTSDIR}/graphics/png

@@ -3,7 +3,7 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.21 1999/08/31 02:59:40 peter Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.22 1999/08/31 06:52:58 mharo Exp $
 #
 
 DISTNAME=	tk8.0.4
@@ -19,7 +19,7 @@ MAINTAINER=	tg@FreeBSD.org
 LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80 \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34
+		tiff.4:${PORTSDIR}/graphics/tiff
 FILE_DEPENDS=	${PORTSDIR}/x11-toolkits/tk80
 
 FETCH_BEFORE_ARGS=	-b

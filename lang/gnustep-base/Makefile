@@ -3,7 +3,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.7 1999/08/28 16:58:26 cpiazza Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.8 1999/08/31 06:41:49 mharo Exp $
 #
 
 DISTNAME=       gstep-core-0.5.5
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 BROKEN=		"Sets PREFIX in the Makefile"
 

@@ -3,7 +3,7 @@
 # Date Created:		20 February 1999
 # Whom:			Glenn Johnson
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libimg/Makefile,v 1.2 1999/08/25 06:14:26 obrien Exp $
 #
 
 DISTNAME=	img1.1.4
@@ -16,7 +16,7 @@ MAINTAINER=	gljohns@bellsouth.net
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80 \
 		png.3:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 WRKSRC=		${WRKDIR}/img1.1
 

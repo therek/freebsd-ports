@@ -3,7 +3,7 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.2 1999/08/28 17:07:48 cpiazza Exp $
 #
 
 DISTNAME=	wmakerconf-2.1
@@ -22,7 +22,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		PropList.1:${PORTSDIR}/devel/libPropList \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png \
 		wraster.3:${PORTSDIR}/x11-wm/windowmaker
 

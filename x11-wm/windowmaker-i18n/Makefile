@@ -3,7 +3,7 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.61 1999/08/31 03:00:22 peter Exp $
 #
 
 DISTNAME=	WindowMaker-0.60.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gif.3:${PORTSDIR}/graphics/giflib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		PropList.1:${PORTSDIR}/devel/libPropList \
 		intl.1:${PORTSDIR}/devel/gettext
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf

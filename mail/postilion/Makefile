@@ -3,7 +3,7 @@
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/postilion/Makefile,v 1.4 1999/08/25 06:50:43 obrien Exp $
 #
 
 DISTNAME=	postilion-0.9.2
@@ -24,7 +24,7 @@ CONFIGURE_ARGS=	--with-tcl-config=${PREFIX}/lib/tcl8.0
 .if defined(STEPIFY)
 LIB_DEPENDS+=	tkstep80.1:${PORTSDIR}/x11-toolkits/tkstep80 \
 		Dnd.1:${PORTSDIR}/x11/libdnd \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		Xpm.4:${PORTSDIR}/graphics/xpm
 CONFIGURE_ARGS+= --with-tk-config=${PREFIX}/lib/tkstep8.0

@@ -3,7 +3,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.3 1999/08/25 05:43:51 obrien Exp $
 #
 
 DISTNAME=		gedit-0.5.4
@@ -32,7 +32,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff34
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

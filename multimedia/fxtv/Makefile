@@ -3,7 +3,7 @@
 # Date created:		Sun Sep  7 17:55:07 EDT 1997
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.19 1999/08/25 06:13:54 obrien Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.20 1999/09/07 09:52:31 roger Exp $
 #
 
 DISTNAME=	fxtv-1.00
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	aa8vb@ipass.net
 
-LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff34 \
+LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d    \
 		Xpm.4:${PORTSDIR}/graphics/xpm
 

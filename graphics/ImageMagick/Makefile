@@ -3,7 +3,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.71 1999/08/25 06:13:38 obrien Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.72 1999/09/02 17:55:58 jseger Exp $
 #
 
 DISTNAME=       ImageMagick-4.2.8
@@ -19,7 +19,7 @@ MASTER_SITES=	ftp://ftp.wizards.dupont.com/pub/ImageMagick/ \
 MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png \
 		jbig.1:${PORTSDIR}/graphics/jbigkit \
 		ttf.3:${PORTSDIR}/print/freetype

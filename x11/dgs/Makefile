@@ -3,7 +3,7 @@
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/dgs/Makefile,v 1.13 1999/08/31 02:50:13 peter Exp $
 #
 
 DISTNAME=	dgs-0.5.0
@@ -15,7 +15,7 @@ MAINTAINER=	nacai@iname.com
 
 LIB_DEPENDS= 	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff34
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/dgs
 

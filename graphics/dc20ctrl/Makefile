@@ -3,7 +3,7 @@
 # Date created:		17 Feb 1998
 # Whom:			Ugo Paternostro <paterno@dsi.unifi.it>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.3 1999/08/25 06:13:45 obrien Exp $
 #
 
 DISTNAME=	dc20ctrl-0.4
@@ -13,7 +13,7 @@ MASTER_SITES=   http://aguirre.dsi.unifi.it/~paterno/binaries/
 MAINTAINER=	paterno@dsi.unifi.it
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png
 
 MAKE_FLAGS=	-DUSE_JPEG -DUSE_TIFF -DUSE_PNG

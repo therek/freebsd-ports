@@ -3,7 +3,7 @@
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.8 1999/08/25 06:15:34 obrien Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.9 1999/08/26 18:56:24 dirk Exp $
 #
 
 DISTNAME=	xsane-0.33
@@ -16,7 +16,7 @@ MAINTAINER=	domi@saargate.de
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		sane.1:${PORTSDIR}/graphics/sane \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

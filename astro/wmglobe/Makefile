@@ -3,7 +3,7 @@
 # Date created:		23 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.2 1999/08/25 04:22:44 obrien Exp $
 #
 
 DISTNAME=	wmglobe-1.0
@@ -17,7 +17,7 @@ MAINTAINER=	andrews@technologist.com
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		gif.3:${PORTSDIR}/graphics/giflib \
 		wraster.3:${PORTSDIR}/x11-wm/windowmaker
 

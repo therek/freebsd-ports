@@ -3,7 +3,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.55 1999/08/31 03:00:21 peter Exp $
 
 DISTNAME=	WindowMaker-0.60.0
 PKGNAME=	windowmaker-0.60.0
@@ -19,7 +19,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gif.3:${PORTSDIR}/graphics/giflib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		PropList.1:${PORTSDIR}/devel/libPropList
 
 USE_BZIP2=	yes

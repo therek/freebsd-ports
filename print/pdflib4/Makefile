@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 18 17:03:33 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pdflib/Makefile,v 1.5 1999/08/31 01:45:09 peter Exp $
 #
 
 DISTNAME=	pdflib-2.0
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.ifconnection.de/~tm/pdflib/ \
 MAINTAINER=	dirk@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/lib/afm/Courier:${PORTSDIR}/print/afm
-LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff34 \
+LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 FETCH_BEFORE_ARGS=	-b

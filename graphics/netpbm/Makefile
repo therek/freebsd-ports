@@ -3,7 +3,7 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.18 1999/08/25 06:14:32 obrien Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.19 1999/08/31 06:45:03 mharo Exp $
 #
 
 DISTNAME=	netpbm
@@ -14,7 +14,7 @@ DISTFILES=	netpbm-1mar1994.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS+=	tiff.4:${PORTSDIR}/graphics/tiff34
+LIB_DEPENDS+=	tiff.4:${PORTSDIR}/graphics/tiff
 LIB_DEPENDS+=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_IMAKE=	yes
