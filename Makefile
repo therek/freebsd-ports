@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.54 2000/04/12 11:06:35 asami Exp $
+# $FreeBSD: ports/Makefile,v 1.55 2000/07/19 18:16:10 asami Exp $
 #
 
 SUBDIR += archivers
