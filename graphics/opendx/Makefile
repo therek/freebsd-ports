@@ -3,7 +3,7 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.1.1.1 1999/09/20 06:43:20 tg Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.2 1999/09/22 00:28:10 asami Exp $
 #
 
 DISTNAME=	dx-4.0.7
@@ -13,13 +13,16 @@ MASTER_SITES=	http://opendx.npaci.edu/source/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
+		netcdf.1:${PORTSDIR}/math/netcdf
 
 USE_XLIB=	yes
 REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CFLAGS="${CFLAGS} -Dfreebsd" \
-		CXXFLAGS="${CFLAGS} -Dfreebsd"
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} -Dfreebsd -I${PREFIX}/include" \
+		CPPFLAGS="-I${PREFIX}/include" \
+		CXXFLAGS="${CFLAGS} -Dfreebsd -I${PREFIX}/include" \
+		LDFLAGS="-L${PREFIX}/lib"
 NO_MTREE=	yes
 PLIST_SUB=	ARCH=${MACHINE_ARCH}
 
