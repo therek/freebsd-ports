@@ -3,7 +3,7 @@
 # Date created:		00/01/24
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.1.1.1 2000/01/27 13:06:42 taoka Exp $
+# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.2 2000/01/27 13:14:57 taoka Exp $
 #
 
 DISTNAME=	freepwing-1.1a
@@ -15,5 +15,6 @@ MAINTAINER=	taoka@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/doc
+USE_PERL5=	yes
 
 .include <bsd.port.mk>
