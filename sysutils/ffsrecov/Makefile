@@ -2,7 +2,7 @@
 # Date created:        4 May 1999
 # Whom:                jmg
 #
-# $FreeBSD: ports/sysutils/ffsrecov/Makefile,v 1.10 2000/12/22 12:34:33 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ffsrecov
@@ -12,4 +12,10 @@ MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/
 
 MAN8=		ffsrecov.8
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500000
+BROKEN=		"Incompatible with UFS2 header files"
+.endif
+
+.include <bsd.port.post.mk>
