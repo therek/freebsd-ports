@@ -2,7 +2,7 @@
 # Date created:		09-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/www/wml/Makefile,v 1.32 2000/04/28 21:19:21 rse Exp $
+# $FreeBSD: ports/www/wml/Makefile,v 1.33 2000/05/23 19:18:17 rse Exp $
 #
 
 PORTNAME=	wml
@@ -20,7 +20,7 @@ CONFIGURE_ARGS=	--with-perl=${PERL5}
 CAT1=	wml_aux_linklint.1 wml_aux_txt2html.1 \
 	wml_aux_tidy.1 wml_p4_gm4.1
 
-MAN1=	wmd.1 wmk.1 wml.1 wmb.1 wmu.1 \
+MAN1=	wmd.1 wmd_missing.1 wmk.1 wml.1 wmb.1 wmu.1 \
 	wml_aux_freetable.1 wml_aux_htmlclean.1 wml_aux_htmlinfo.1 wml_aux_iselect.1 \
 	wml_aux_map2html.1 wml_aux_weblint.1 wml_p1_ipp.1 \
 	wml_p2_mp4h.1 wml_p3_eperl.1 wml_p5_divert.1 wml_p6_asubst.1 \
@@ -47,7 +47,7 @@ CAT7=	wml_barebone.7 \
 	wml_std_html20.7 wml_std_html32.7 wml_std_html40.7 \
 	wml_std_html401.7 wml_std_wai10.7 wml_std_xhtml10.7
 
-MAN7=	wml_intro.7 wml_tutorial.7 wml_faq.7 wml_tags.7
+MAN7=	wml_intro.7 wml_macros.7 wml_tutorial.7 wml_faq.7 wml_tags.7
 
 #   catpages are usually not installed, so they are not compressed.
 #   But they are really needed as docs, so we compress manually...
