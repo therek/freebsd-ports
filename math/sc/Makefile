@@ -2,11 +2,12 @@
 # Date created:			30 July 1998
 # Whom:				Heinz Tschabitscher
 #
-# $FreeBSD: ports/math/sc/Makefile,v 1.2 1999/08/25 07:14:23 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sc
 PORTVERSION=	6.21
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/misc/
 EXTRACT_SUFX=	.tar.Z
