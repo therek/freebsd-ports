@@ -3,14 +3,14 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.1.1.1 2000/01/07 10:51:26 flathill Exp $
 #
 
 DISTNAME=	LambdaMOO-1.8.0r8
 PKGNAME=	ja-lambdamoo-1.8.0r8
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.place.org/pub/moo/unofficial/ \
-		ftp://ftp.mei.co.jp/free/Network/news/readers/
+		ftp://ftp.leo.chubu.ac.jp/pub/network/mnews/
 DISTFILES=	LambdaMOO-1.8.0r8.tar.gz mnews122.tar.gz
 
 PATCH_SITES=	http://www.freebsd.org/~flathill/distfiles/
