@@ -2,18 +2,13 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.6 2001/06/18 18:13:11 dannyboy Exp $
+# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.7 2001/07/03 09:18:16 knu Exp $
 #
 
 PORTNAME=	Sablot
-PORTVERSION=	0.60
-PORTREVISION=	1
+PORTVERSION=	0.65
 CATEGORIES=	textproc
 MASTER_SITES=	http://download.gingerall.cz/sablot/
-
-PATCH_SITES=	http://www.gingerall.com/download/
-PATCHFILES=	${DISTNAME}.1.patch
-PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	skv@protey.ru
 
@@ -21,7 +16,6 @@ LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv \
 		expat.2:${PORTSDIR}/textproc/expat2
 
 INSTALLS_SHLIB=	yes
-LDCONFIG_DIRS=	%%PREFIX%%/lib
 CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include LDFLAGS=-L${LOCALBASE}/lib
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
