@@ -2,7 +2,7 @@
 # Date Created:		7 Sep 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/emulators/hfsutils/Makefile,v 1.19 1999/11/28 18:31:07 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hfsutils
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.mars.org/pub/hfs/
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl --with-tk
