@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.315 2001/01/04 10:58:56 nbm Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.316 2001/01/05 17:49:35 alex Exp $
 #
 
     SUBDIR += 221upgrade
@@ -21,6 +21,7 @@
     SUBDIR += ari-yahoo
     SUBDIR += asbutton
     SUBDIR += astrolog
+    SUBDIR += aureal-kmod
     SUBDIR += bb
     SUBDIR += bbjd
     SUBDIR += biblereader
