@@ -2,11 +2,11 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.12 2000/06/14 13:21:23 sobomax Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.13 2000/07/11 22:02:22 ade Exp $
 #
 
 PORTNAME=	sodipodi
-PORTVERSION=	0.18
+PORTVERSION=	0.18.2
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -18,7 +18,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
-BROKEN=		"Uses gdk-pixbuf internals that have disappeared"
+WRKSRC=		${WRKDIR}/${PORTNAME}-0.18
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
