@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.402 2004/04/10 18:45:33 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.403 2004/04/11 01:52:41 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1034,3 +1034,4 @@ x11-servers/XttXF86srv-VGA16||2004-04-10|removed broken port
 x11-servers/XttXF86srv-W32||2004-04-10|removed broken port
 x11-servers/XttXF86srv-common||2004-04-10|removed broken port
 x11-servers/XttXF86srv-xfs||2004-04-10|removed broken port
+emulators/scummvm|games/scummvm|2004-04-13|new category
