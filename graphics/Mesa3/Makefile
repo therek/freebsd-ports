@@ -2,7 +2,7 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.38 2000/04/25 20:25:53 jseger Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.39 2000/06/14 13:21:21 sobomax Exp $
 #
 
 PORTNAME=	Mesa
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	mesa3d
 DISTFILES=	MesaLib-${PORTVERSION}${EXTRACT_SUFX} \
 		MesaDemos-${PORTVERSION}${EXTRACT_SUFX}
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 USE_BZIP2=	yes
 
