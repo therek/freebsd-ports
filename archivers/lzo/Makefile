@@ -2,7 +2,7 @@
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.14 2000/06/16 21:50:19 asami Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.15 2000/11/19 08:13:14 kris Exp $
 #
 
 PORTNAME=	lzo
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	libs/compression
 MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--enable-shared
 INSTALLS_SHLIB=	yes
 
 post-install:
