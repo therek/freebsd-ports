@@ -2,7 +2,7 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.4 2001/03/16 07:21:02 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flowscan
@@ -15,7 +15,7 @@ MAINTAINER=	andreas@freebsd.org
 
 BUILD_DEPENDS=	ksh:${PORTSDIR}/shells/pdksh \
 		rrdtool:${PORTSDIR}/net/rrdtool \
-		cflowd:${PORTSDIR}/net/cflowd \
+		${LOCALBASE}/sbin/cflowd:${PORTSDIR}/net/cflowd \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Boulder/Stream.pm:${PORTSDIR}/converters/p5-Boulder \
 		${LOCALBASE}/lib/perl5/site_perl/${{PERL_VER}/ConfigReader/DirectiveStyle.pm:${PORTSDIR}/devel/p5-ConfigReader \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Table.pm:${PORTSDIR}/www/p5-HTML-Table \
