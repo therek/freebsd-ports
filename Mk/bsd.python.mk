@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.51 2004/07/08 15:53:45 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.52 2004/07/09 16:53:03 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -338,7 +338,7 @@ Python_Post_Include=			bsd.python.mk
 
 # py-distutils support
 .if defined(USE_PYDISTUTILS)
-.if !target(do-configure)
+.if !target(do-configure) && !defined(HAS_CONFIGURE) && !defined(GNU_CONFIGURE)
 do-configure:
 	@(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} ${PYSETUP} config ${PYDISTUTILS_CONFIGUREARGS})
 .endif
