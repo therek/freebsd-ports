@@ -3,7 +3,7 @@
 # Date created:		27 Jun 1997
 # Whom:			Takayuki Ariga <a00821@cc.hc.keio.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/weblint97/Makefile,v 1.6 1999/08/25 05:27:48 obrien Exp $
 #
 
 DISTNAME=	weblint-97-0.12
@@ -12,8 +12,6 @@ CATEGORIES=	japanese www
 MASTER_SITES=	ftp://ftp.win.or.jp/pub/network/www/weblint/ \
 		ftp://ftp.sra.co.jp/pub/cmd/ \
 		ftp://ftp.hipecs.hokudai.ac.jp/pub/network/WWW/contrib/
-
-MAINTAINER=	a00821@cc.hc.keio.ac.jp
 
 RUN_DEPENDS=   ${PREFIX}/lib/perl/jcode.pl:${PORTSDIR}/japanese/jcode.pl
 
