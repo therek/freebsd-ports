@@ -2,16 +2,16 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.1 2001/03/17 23:06:40 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.2 2001/03/18 14:09:07 knu Exp $
 #
 
 PORTNAME=	portupgrade
-PORTVERSION=	1.15
+PORTVERSION=	1.16
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.iDaemons.org/distfiles/
 MASTER_SITE_SUBDIR=	knu
-DISTNAME=	pkgtools-20010318b
+DISTNAME=	pkgtools-20010321
 
 MAINTAINER=	knu@FreeBSD.org
 
