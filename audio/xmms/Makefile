@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.21 2000/09/22 06:21:48 sobomax Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.22 2000/09/27 09:41:38 sobomax Exp $
 #
 
 PORTNAME=	xmms
@@ -98,8 +98,7 @@ pre-extract:
 .if defined(WITHOUT_3DNOW) || ${OSVERSION} < 400021
 post-extract:
 	(cd ${WRKSRC}/Input/mpg123 && ${MV} decode_i586.s decode_i586.S && \
-	  ${MV} getbits.s getbits.S && cd ${WRKSRC}/Visualization/blur_scope && \
-	  ${MV} blur_8.s blur_8.S);
+	  cd ${WRKSRC}/Visualization/blur_scope && ${MV} blur_8.s blur_8.S);
 	${PERL} -pi.bak -e 's:\.s :\.S :g' ${WRKSRC}/Input/mpg123/Makefile.in
 	${PERL} -pi.bak -e 's:blur_8.s:blur_8.S:g' \
 	  ${WRKSRC}/Visualization/blur_scope/Makefile.in
