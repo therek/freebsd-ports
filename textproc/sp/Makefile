@@ -2,11 +2,11 @@
 # Date created:		April 26, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sp/Makefile,v 1.17 2000/06/16 08:19:09 sobomax Exp $
+# $FreeBSD: ports/textproc/sp/Makefile,v 1.18 2000/06/16 21:52:02 asami Exp $
 #
 
 PORTNAME=	sp
-PORTVERSION= 	1.3.4
+PORTVERSION=	1.3.4
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/sp/
 

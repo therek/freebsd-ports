@@ -2,11 +2,11 @@
 # Date created:				21 March 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/java2html/Makefile,v 1.8 2000/04/30 00:29:44 steve Exp $
+# $FreeBSD: ports/textproc/java2html/Makefile,v 1.9 2000/05/28 04:11:33 steve Exp $
 #
 
 PORTNAME=		java2html
-PORTVERSION= 		0.9.2
+PORTVERSION=		0.9.2
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters

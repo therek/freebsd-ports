@@ -2,11 +2,11 @@
 # Date created:				29 August 1998
 # Whom:                			Dima Sivachenko <demon@gpad.ac.ru>
 #
-# $FreeBSD: ports/textproc/man2html/Makefile,v 1.5 2000/09/29 16:51:12 kevlo Exp $
+# $FreeBSD: ports/textproc/man2html/Makefile,v 1.6 2000/11/13 12:45:04 demon Exp $
 #
 
 PORTNAME=	man2html
-PORTVERSION= 	3.0.1
+PORTVERSION=	3.0.1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 DISTNAME=	${PORTNAME}${PORTVERSION}

@@ -2,11 +2,11 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.29 2001/01/28 18:37:54 sf Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.30 2001/01/29 03:45:44 kuriyama Exp $
 #
 
 PORTNAME=	jade
-PORTVERSION= 	1.2.1
+PORTVERSION=	1.2.1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/jade/
 

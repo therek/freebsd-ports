@@ -2,11 +2,11 @@
 # Date created:		July 16, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.19 2001/01/27 05:26:22 will Exp $
+# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.20 2001/01/29 03:45:45 kuriyama Exp $
 #
 
 PORTNAME=	sgmlformat
-PORTVERSION= 	1.7
+PORTVERSION=	1.7
 CATEGORIES=	textproc print
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 

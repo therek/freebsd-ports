@@ -2,11 +2,11 @@
 # Date created:		21 Feb 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.16 2000/07/25 07:19:59 kuriyama Exp $
+# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.17 2000/07/27 03:50:54 kuriyama Exp $
 #
 
 PORTNAME=	xml4j
-PORTVERSION= 	3.0.1
+PORTVERSION=	3.0.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://apps.alphaworks.ibm.com/technologies/xml4j/
 DISTNAME=	XML4J-bin.${PORTVERSION}

@@ -2,11 +2,11 @@
 # Date created:		18 Feb 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/textproc/unroff/Makefile,v 1.9 2000/04/09 21:53:15 cpiazza Exp $
+# $FreeBSD: ports/textproc/unroff/Makefile,v 1.10 2000/05/30 20:15:41 asami Exp $
 #
 
 PORTNAME=	unroff
-PORTVERSION= 	1.0.2
+PORTVERSION=	1.0.2
 CATEGORIES=	textproc
 MASTER_SITES=	${UNROFF_SITE}/dist/ \
 		${UNROFF_SITE}/contrib/

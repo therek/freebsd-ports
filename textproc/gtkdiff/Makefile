@@ -2,11 +2,11 @@
 # Date created:				17 November 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.9 2000/10/05 07:17:20 reg Exp $
+# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.10 2000/11/01 15:51:10 sobomax Exp $
 #
 
 PORTNAME=	gtkdiff
-PORTVERSION= 	1.0.2
+PORTVERSION=	1.0.2
 CATEGORIES=	textproc gnome
 MASTER_SITES=	http://www.ainet.or.jp/~inoue/software/gtkdiff/
 

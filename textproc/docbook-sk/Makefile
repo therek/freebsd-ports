@@ -2,11 +2,11 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.12 2000/10/05 10:19:40 kuriyama Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.13 2000/12/26 02:25:42 kuriyama Exp $
 #
 
 PORTNAME=	docbook-xml
-PORTVERSION= 	4.1.2
+PORTVERSION=	4.1.2
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.docbook.org/xml/4.1.2/
 DISTNAME=	docbkx412

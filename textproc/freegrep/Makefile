@@ -2,11 +2,11 @@
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.15 2000/04/09 21:52:32 cpiazza Exp $
+# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.16 2000/06/30 09:34:08 sobomax Exp $
 #
 
 PORTNAME=	freegrep
-PORTVERSION= 	0.16
+PORTVERSION=	0.16
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/grep/ \
 		http://www.wam.umd.edu/~howardjp/software/grep/ \

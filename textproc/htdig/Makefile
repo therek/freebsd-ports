@@ -2,11 +2,11 @@
 # Date created:        18 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/textproc/htdig/Makefile,v 1.17 2000/09/15 22:57:21 asami Exp $
+# $FreeBSD: ports/textproc/htdig/Makefile,v 1.18 2001/01/01 10:15:10 will Exp $
 #
 
 PORTNAME=	htdig
-PORTVERSION= 	3.1.5
+PORTVERSION=	3.1.5
 CATEGORIES=	textproc www
 MASTER_SITES=	http://www.htdig.org/files/ \
 		${MASTER_SITE_SUNSITE} \

@@ -2,11 +2,11 @@
 # Date created:         29 Jun 1998
 # Whom:                 Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.5 2000/05/21 11:52:05 knu Exp $
+# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.6 2000/06/11 16:11:03 alex Exp $
 #
 
 PORTNAME=	txt2html
-PORTVERSION= 	1.28
+PORTVERSION=	1.28
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.aigeek.com/txt2html/
 

@@ -2,11 +2,11 @@
 # Date created:				7 December 1998
 # Whom:					Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/aspell/Makefile,v 1.26 2001/01/31 16:22:06 sobomax Exp $
 #
 
 PORTNAME=	aspell
-PORTVERSION= 	0.32.5
+PORTVERSION=	0.32.5
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

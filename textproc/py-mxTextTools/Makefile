@@ -2,11 +2,11 @@
 # Date created:		12 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/py-mxTextTools/Makefile,v 1.7 2000/09/08 12:23:58 tg Exp $
+# $FreeBSD: ports/textproc/py-mxTextTools/Makefile,v 1.8 2000/09/12 11:54:02 tg Exp $
 #
 
 PORTNAME=	py-mxTextTools
-PORTVERSION= 	1.1.1
+PORTVERSION=	1.1.1
 CATEGORIES=	textproc python
 MASTER_SITES=	http://starship.python.net/~lemburg/
 DISTNAME=	mxTextTools-1.1.1

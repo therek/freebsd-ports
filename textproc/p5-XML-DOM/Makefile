@@ -2,11 +2,11 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.4 2000/06/17 02:36:50 will Exp $
+# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.5 2001/01/08 06:41:19 kuriyama Exp $
 #
 
 PORTNAME=	XML-DOM
-PORTVERSION= 	1.25
+PORTVERSION=	1.25
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML

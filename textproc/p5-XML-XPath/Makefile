@@ -2,11 +2,11 @@
 # Date created:		11 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-XPath/Makefile,v 1.1 2000/12/19 13:28:35 will Exp $
+# $FreeBSD: ports/textproc/p5-XML-XPath/Makefile,v 1.2 2001/01/25 23:20:31 vanilla Exp $
 #
 
 PORTNAME=	XML-XPath
-PORTVERSION= 	1.04
+PORTVERSION=	1.04
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML

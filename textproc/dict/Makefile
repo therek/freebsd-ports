@@ -3,11 +3,11 @@
 # Date created:			  19 February 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/dict/Makefile,v 1.13 2000/04/09 21:52:19 cpiazza Exp $
+# $FreeBSD: ports/textproc/dict/Makefile,v 1.14 2000/04/10 04:45:18 cpiazza Exp $
 #
 
 PORTNAME=	dict
-PORTVERSION= 	1.4.9
+PORTVERSION=	1.4.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.unc.edu/pub/users/faith/dict/ \
 		ftp://ftp.dict.org/pub/dict/

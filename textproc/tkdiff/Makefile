@@ -2,11 +2,11 @@
 # Date created:		4 Oct. 1999
 # Whom:			Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tkdiff/Makefile,v 1.4 2000/06/29 07:02:53 obrien Exp $
+# $FreeBSD: ports/textproc/tkdiff/Makefile,v 1.5 2000/07/10 15:05:13 kevlo Exp $
 #
 
 PORTNAME=	tkdiff
-PORTVERSION= 	3.05
+PORTVERSION=	3.05
 CATEGORIES=	textproc tk83
 MASTER_SITES=	http://people.freebsd.org/~kevlo/
 

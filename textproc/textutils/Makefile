@@ -2,11 +2,11 @@
 # Date created:		14 May 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/textproc/textutils/Makefile,v 1.8 2000/04/09 21:53:12 cpiazza Exp $
+# $FreeBSD: ports/textproc/textutils/Makefile,v 1.9 2000/10/01 18:35:16 reg Exp $
 #
 
 PORTNAME=	textutils
-PORTVERSION= 	2.0
+PORTVERSION=	2.0
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	textutils

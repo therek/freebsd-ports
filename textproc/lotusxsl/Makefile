@@ -2,11 +2,11 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.6 2000/03/21 07:57:43 mharo Exp $
+# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.7 2000/04/09 21:52:51 cpiazza Exp $
 #
 
 PORTNAME=	lotusxsl
-PORTVERSION= 	0.18.4
+PORTVERSION=	0.18.4
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.alphaworks.ibm.com/formula/lotusxsl/
 #MASTER_SITES=	http://apps.alphaworks.ibm.com/technologies/lotusxsl/

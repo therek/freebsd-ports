@@ -2,11 +2,11 @@
 # Date created:         22 Oct 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/yodl/Makefile,v 1.7 2000/04/09 21:53:23 cpiazza Exp $
+# $FreeBSD: ports/textproc/yodl/Makefile,v 1.8 2000/06/09 01:36:54 will Exp $
 #
 
 PORTNAME=	yodl
-PORTVERSION= 	1.22
+PORTVERSION=	1.22
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.sco.com/skunkware/src/textproc/ \
 		ftp://ftp.sunsite.org.uk/Mirrors/ftp.sco.com/skunkware/src/textproc/ \

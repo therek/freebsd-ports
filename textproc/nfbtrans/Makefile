@@ -2,11 +2,11 @@
 # Date created:			30 Aug 1998
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/nfbtrans/Makefile,v 1.7 2000/02/18 06:53:06 max Exp $
+# $FreeBSD: ports/textproc/nfbtrans/Makefile,v 1.8 2000/04/09 21:52:54 cpiazza Exp $
 #
 
 PORTNAME=	nfbtrans
-PORTVERSION= 	7.55
+PORTVERSION=	7.55
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://nfb.org/braille/nfbtrans/
 DISTNAME=	nfbtr755

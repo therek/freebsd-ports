@@ -2,11 +2,11 @@
 # Date created:		31 December 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/textproc/gmat/Makefile,v 1.3 2001/01/26 07:06:31 grog Exp $
+# $FreeBSD: ports/textproc/gmat/Makefile,v 1.4 2001/02/01 00:42:57 grog Exp $
 #
 
 PORTNAME=	gmat
-PORTVERSION= 	0.2.4b
+PORTVERSION=	0.2.4b
 PORTREVISION=	1
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.2.4
 CATEGORIES=	textproc

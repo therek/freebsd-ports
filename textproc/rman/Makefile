@@ -2,11 +2,11 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/rman/Makefile,v 1.24 2000/04/09 21:53:05 cpiazza Exp $
+# $FreeBSD: ports/textproc/rman/Makefile,v 1.25 2000/06/28 11:55:48 tg Exp $
 #
 
 PORTNAME=	rman
-PORTVERSION= 	3.0.9
+PORTVERSION=	3.0.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://polyglot.sourceforge.net/pub/polyglotman/
 

@@ -2,11 +2,11 @@
 # Date created:         15 August 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/textproc/latte/Makefile,v 1.3 1999/09/20 00:52:09 steve Exp $
+# $FreeBSD: ports/textproc/latte/Makefile,v 1.4 2000/04/09 21:52:48 cpiazza Exp $
 #
 
 PORTNAME=	latte
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	textproc	
 MASTER_SITES=	http://www.latte.org/ \
 		ftp://ftp.brasslantern.com/pub/zanshin/latte/

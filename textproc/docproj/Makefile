@@ -2,11 +2,11 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.22 2000/10/16 21:31:24 jim Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.23 2000/10/25 06:15:45 jim Exp $
 #
 
 PORTNAME=	docproj
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	# empty
 DISTFILES=	# empty

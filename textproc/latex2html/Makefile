@@ -2,11 +2,11 @@
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.16 2000/12/11 16:44:38 roam Exp $
+# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.17 2001/02/03 19:12:11 sf Exp $
 #
 
 PORTNAME=	latex2html
-PORTVERSION= 	99.2b8
+PORTVERSION=	99.2b8
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/${PORTNAME}

@@ -2,11 +2,11 @@
 # Date created:		10 May 2000
 # Whom:			kuriyama
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/xhtml/Makefile,v 1.1.1.1 2000/05/10 13:24:51 kuriyama Exp $
 #
 
 PORTNAME=	xhtml
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.w3.org/TR/xhtml1/
 DISTNAME=	xhtml1

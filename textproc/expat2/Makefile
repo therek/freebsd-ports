@@ -2,11 +2,11 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat2/Makefile,v 1.8 2000/10/26 01:20:04 kuriyama Exp $
+# $FreeBSD: ports/textproc/expat2/Makefile,v 1.9 2000/10/26 12:36:51 knu Exp $
 #
 
 PORTNAME=	expat
-PORTVERSION= 	1.95.1
+PORTVERSION=	1.95.1
 PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}

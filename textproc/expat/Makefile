@@ -2,11 +2,11 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.8 2000/11/02 02:40:59 knu Exp $
+# $FreeBSD: ports/textproc/expat/Makefile,v 1.9 2000/11/02 02:53:20 knu Exp $
 #
 
 PORTNAME=	expat
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/
 

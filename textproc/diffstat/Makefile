@@ -2,11 +2,11 @@
 # Date created:		Oct 23, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.4 2000/06/08 09:03:31 knu Exp $
+# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.5 2000/10/02 05:39:33 trevor Exp $
 #
 
 PORTNAME=	diffstat
-PORTVERSION= 	1.28
+PORTVERSION=	1.28
 CATEGORIES=	textproc devel
 MASTER_SITES=	ftp://dickey.his.com/diffstat/
 EXTRACT_SUFX=	.tgz

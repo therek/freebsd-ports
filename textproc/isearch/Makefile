@@ -2,11 +2,11 @@
 # Date created:			21 Sept 1996
 # Whom:				Pedro
 #
-# $FreeBSD: ports/textproc/isearch/Makefile,v 1.8 2000/04/09 21:52:42 cpiazza Exp $
+# $FreeBSD: ports/textproc/isearch/Makefile,v 1.9 2000/04/10 13:58:33 asami Exp $
 #
 
 PORTNAME=	isearch
-PORTVERSION= 	1.14
+PORTVERSION=	1.14
 CATEGORIES=	textproc databases
 MASTER_SITES=	ftp://ftp.cnidr.org/pub/NIDR.tools/Isearch/
 DISTNAME=	Isearch-${PORTVERSION}

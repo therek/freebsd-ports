@@ -2,11 +2,11 @@
 # Date created:		15 Nov 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.13 2000/10/26 12:37:25 knu Exp $
+# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.14 2001/01/08 06:43:41 kuriyama Exp $
 #
 
 PORTNAME=	XML-Parser
-PORTVERSION= 	2.30
+PORTVERSION=	2.30
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
 		http://wwwx.netheaven.com/~coopercc/xmlparser/

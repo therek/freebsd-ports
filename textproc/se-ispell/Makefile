@@ -2,11 +2,11 @@
 # Date created:         4 November 1999
 # Whom:                 Kent Boortz <kent@erix.ericsson.se>
 #
-# $FreeBSD: ports/textproc/se-ispell/Makefile,v 1.1 1999/12/27 02:01:41 steve Exp $
+# $FreeBSD: ports/textproc/se-ispell/Makefile,v 1.2 2000/04/09 21:53:07 cpiazza Exp $
 #
 
 PORTNAME=	se-ispell
-PORTVERSION= 	1.2.1
+PORTVERSION=	1.2.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.sslug.dk/locale/ispell/iswedish/
 DISTNAME=	iswedish-1.2.1

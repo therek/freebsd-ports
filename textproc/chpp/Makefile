@@ -2,11 +2,11 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/textproc/chpp/Makefile,v 1.6 2000/07/08 00:25:58 dannyboy Exp $
+# $FreeBSD: ports/textproc/chpp/Makefile,v 1.7 2000/11/26 15:39:14 kevlo Exp $
 #
 
 PORTNAME=	chpp
-PORTVERSION= 	0.3.5
+PORTVERSION=	0.3.5
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.complang.tuwien.ac.at/~schani/chpp/files/	
 

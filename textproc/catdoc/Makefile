@@ -2,11 +2,11 @@
 # Date created:        11 November 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/textproc/catdoc/Makefile,v 1.11 2000/04/09 21:52:12 cpiazza Exp $
+# $FreeBSD: ports/textproc/catdoc/Makefile,v 1.12 2000/09/28 21:06:59 nbm Exp $
 #
 
 PORTNAME=	catdoc
-PORTVERSION= 	0.91.4
+PORTVERSION=	0.91.4
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN} \
 		ftp://ftp.ice.ru/pub/vitus/

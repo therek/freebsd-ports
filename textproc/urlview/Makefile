@@ -3,11 +3,11 @@
 # Date created:			  21 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/urlview/Makefile,v 1.10 2000/04/09 21:53:16 cpiazza Exp $
+# $FreeBSD: ports/textproc/urlview/Makefile,v 1.11 2000/07/04 19:17:41 obrien Exp $
 #
 
 PORTNAME=	urlview
-PORTVERSION= 	0.9
+PORTVERSION=	0.9
 CATEGORIES=	textproc www
 MASTER_SITES=	ftp://ftp.mutt.org/pub/mutt/contrib/ \
 		ftp://ftp.cs.hmc.edu/pub/me/ \

@@ -2,11 +2,11 @@
 # Date created:		25 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-Spreadsheet-WriteExcel/Makefile,v 1.1 2000/12/26 05:58:46 will Exp $
 #
 
 PORTNAME=	Spreadsheet-WriteExcel
-PORTVERSION= 	0.23
+PORTVERSION=	0.23
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Spreadsheet

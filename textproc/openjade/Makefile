@@ -2,11 +2,11 @@
 # Date created:		May 19, 2000
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/openjade/Makefile,v 1.25 2000/06/14 13:21:36 sobomax Exp $
+# $FreeBSD: ports/textproc/openjade/Makefile,v 1.26 2000/08/21 10:07:29 sobomax Exp $
 #
 
 PORTNAME=	openjade
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

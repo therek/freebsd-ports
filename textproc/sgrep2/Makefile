@@ -2,11 +2,11 @@
 # Date created:    			Apr 29 1998
 # Whom: 				<koshy@india.hp.com>
 #
-# $FreeBSD: ports/textproc/sgrep/Makefile,v 1.3 1999/08/31 02:09:46 peter Exp $
+# $FreeBSD: ports/textproc/sgrep/Makefile,v 1.4 2000/04/09 21:53:09 cpiazza Exp $
 #
 
 PORTNAME=	sgrep
-PORTVERSION= 	0.99
+PORTVERSION=	0.99
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.helsinki.fi/pub/Software/Local/Sgrep/
 

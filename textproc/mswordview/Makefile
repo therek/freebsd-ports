@@ -2,11 +2,11 @@
 # Date created:         Fri Nov  6 09:06:33 PST 1998
 # Whom:                 sumikawa@kame.net
 #
-# $FreeBSD: ports/textproc/mswordview/Makefile,v 1.11 2000/07/05 11:13:25 knu Exp $
+# $FreeBSD: ports/textproc/mswordview/Makefile,v 1.12 2000/11/12 17:38:08 sumikawa Exp $
 #
 
 PORTNAME=	mswordview
-PORTVERSION= 	0.5.14.6
+PORTVERSION=	0.5.14.6
 PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.csn.ul.ie/~caolan/publink/mswordview/

@@ -2,11 +2,11 @@
 # Date created:			Mon Jul 26 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/textproc/rand/Makefile,v 1.5 2000/02/17 01:31:41 mharo Exp $
+# $FreeBSD: ports/textproc/rand/Makefile,v 1.6 2000/04/09 21:53:05 cpiazza Exp $
 #
 
 PORTNAME=	rand
-PORTVERSION= 	1.7
+PORTVERSION=	1.7
 CATEGORIES=	textproc
 MASTER_SITES=	http://math.smsu.edu/~br0ke/files/
 

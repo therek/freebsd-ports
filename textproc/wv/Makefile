@@ -2,11 +2,11 @@
 # Date created:         Fri Nov  6 09:06:33 PST 1998
 # Whom:                 sumikawa@kame.net
 #
-# $FreeBSD: ports/textproc/wv/Makefile,v 1.11 2000/07/05 11:13:25 knu Exp $
+# $FreeBSD: ports/textproc/wv/Makefile,v 1.12 2000/11/06 17:18:01 sumikawa Exp $
 #
 
 PORTNAME=	wv
-PORTVERSION= 	0.6.2
+PORTVERSION=	0.6.2
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	wvware

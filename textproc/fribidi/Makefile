@@ -2,11 +2,11 @@
 # Date created:				17 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.5 2000/11/20 18:08:52 sobomax Exp $
+# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.6 2000/11/21 13:03:53 sobomax Exp $
 #
 
 PORTNAME=	fribidi
-PORTVERSION= 	0.1.12
+PORTVERSION=	0.1.12
 CATEGORIES=	textproc devel
 MASTER_SITES=	http://imagic.weizmann.ac.il/~dov/freesw/FriBidi/
 
