@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.98 2001/09/24 05:05:45 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += CJK
@@ -14,6 +14,7 @@
     SUBDIR += bg5ps
     SUBDIR += big5con
     SUBDIR += big5fs
+    SUBDIR += bind8
     SUBDIR += bitchx
     SUBDIR += c2t
     SUBDIR += celvis
