@@ -2,13 +2,13 @@
 # Date Created:				17 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/e16utils/Makefile,v 1.1 2000/12/11 22:45:59 clive Exp $
 #
 
 PORTNAME=	e16utils
 PORTVERSION=	0.16
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/e16utils/
+MASTER_SITES=	ftp://ftp.enlightenment.org/enlightenment/e16utils/
 DISTFILES=	e16menuedit-0.1.tar.gz e16keyedit-0.2.tar.gz
 
 MAINTAINER=	ports@FreeBSD.ORG
