@@ -2,7 +2,7 @@
 # Date created:				14 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/cftp/Makefile,v 1.13 2000/12/16 03:09:16 kevlo Exp $
+# $FreeBSD: ports/ftp/cftp/Makefile,v 1.14 2001/09/14 04:47:47 dwcjr Exp $
 #
 
 PORTNAME=	cftp
@@ -17,7 +17,7 @@ GNU_CONFIGURE=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/cftp
+	@${MKDIR} ${DOCSDIR}
 .for file in AUTHORS ChangeLog NEWS README THANKS TODO
 	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
