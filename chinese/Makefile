@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.79 2001/01/08 18:27:12 clive Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.80 2001/02/16 13:35:18 vanilla Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -54,6 +54,7 @@
     SUBDIR += rxvt-big5
     SUBDIR += rxvt-gb
     SUBDIR += stardict
+    SUBDIR += tcl83
     SUBDIR += ted
     SUBDIR += telnet
     SUBDIR += tin
