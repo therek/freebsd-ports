@@ -2,12 +2,12 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.15 2000/02/18 23:21:38 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.16 2000/04/13 06:50:44 knu Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
 # ports(editors/xemacs${XEMACS_MAJOR_VER}-mule, japanese/xemacs${XEMACS_MAJOR_VER}-*)
-# and provides `Architecture Independent' parts of xemacs binary. 
+# and provides `Architecture Independent' parts of xemacs binary.
 #
 # Caracteristic variables of XEmacs Mule ports family:
 #	MULE_PORT         : Mule port if defined(means COMMN or SLAVE)
