@@ -2,7 +2,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.56 2000/10/13 03:27:06 vanilla Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.57 2001/01/09 13:45:12 vanilla Exp $
 #
 
 PORTNAME=	enlightenment
@@ -38,6 +38,10 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-fsstd --with-included-gettext
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lxpg4"
+
+.if (${MACHINE} == "alpha")
+CONFIGURE_ARS+=	--disable-zoom
+.endif
 
 MAN1=		enlightenment.1
 
