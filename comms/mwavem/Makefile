@@ -2,14 +2,15 @@
 # Date Created:				Apr 22 2001
 # Whom:					R. Kevin Oberman <oberman@es.net>
 #
-# $FreeBSD: ports/comms/mwavem/Makefile,v 1.3 2001/08/10 18:26:09 brian Exp $
+# $FreeBSD: ports/comms/mwavem/Makefile,v 1.4 2001/08/10 23:57:16 brian Exp $
 #
 
 PORTNAME=	mwavem-fbsd
 PORTVERSION=	1.1
+PORTREVISION=	1
 CATEGORIES=	comms
-MASTER_SITES=	http://home.pacbell.net/simonw2/src/ \
-		http://www.escape.com/developer/~simonw/ \
+MASTER_SITES=	http://www.escape.com/~simonw/ \
+		http://home.pacbell.net/simonw2/src/ \
 		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tgz
 
