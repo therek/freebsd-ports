@@ -3,7 +3,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.1.1.1 1999/11/23 01:20:38 cpiazza Exp $
 #
 
 DISTNAME=	xshipwars-client-1.23
@@ -14,7 +14,7 @@ DISTFILES=	xsw1.23.tgz stimages1.3.tgz
 MAINTAINER=	troll@digitalspark.net
 
 WRKSRC=		${WRKDIR}/xsw1.23/client
-
+USE_XLIB=	YES
 USE_GMAKE=	YES
 MAKEFILE=	Makefile.FreeBSD
 
