@@ -3,7 +3,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.12 1999/09/09 08:06:18 taoka Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.13 1999/10/24 19:59:11 gj Exp $
 #
 
 DISTNAME=	mew-${VERSION}
@@ -68,7 +68,7 @@ EMACS_LISPDIR=		${EMACS_LIBDIR}/site-lisp
 EMACS_INFODIR=		${EMACS_LIBDIR}/info
 .elif (${EMACS_PORT_NAME} == "emacs20")
 EMACS_NAME=		emacs
-EMACS_VER=		20.4
+EMACS_VER=		20.5
 EMACS_MAJOR_VER=	20
 EMACS_CMD=		${EMACS_NAME}-${EMACS_VER}
 EMACS_LIBDIR=		share/${EMACS_NAME}
