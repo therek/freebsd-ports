@@ -3,12 +3,12 @@
 # Date created:        16 December 1997
 # Whom:                alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.18 1999/09/19 04:22:54 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.19 1999/10/06 08:23:54 obrien Exp $
 #
 
 VGABIOS=	VGABIOS-elpin-2.20
 BIOS=		BIOS-bochs-990925a
-DATE= 		991004
+DATE= 		991114
 
 DISTNAME=	bochs-${DATE}a
 CATEGORIES= 	emulators
