@@ -3,11 +3,11 @@
 # Whom:			kuriyama
 #
 # $NetBSD: Makefile,v 1.2 1999/06/07 09:54:39 sakamoto Exp $
-# $FreeBSD: ports/japanese/chasen/Makefile,v 1.17 2001/06/23 19:30:31 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	chasen
-PORTVERSION=	2.2.7
+PORTVERSION=	2.2.9
 CATEGORIES=	japanese
 MASTER_SITES=	# empty
 DISTFILES=	# empty
