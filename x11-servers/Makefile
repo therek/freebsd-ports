@@ -1,6 +1,11 @@
-# $FreeBSD: ports/x11-servers/Makefile,v 1.2 1999/08/31 02:58:37 peter Exp $
+# $FreeBSD: ports/x11-servers/Makefile,v 1.3 1999/12/27 05:23:53 taoka Exp $
 #
 
+    SUBDIR += XFree86-4-FontServer
+    SUBDIR += XFree86-4-NestServer
+    SUBDIR += XFree86-4-PrintServer
+    SUBDIR += XFree86-4-Server
+    SUBDIR += XFree86-4-VirtualFramebufferServer
     SUBDIR += Xatm
     SUBDIR += Xfstt
     SUBDIR += XttXF86srv-3DLabs
