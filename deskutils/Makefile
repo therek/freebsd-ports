@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.19 1999/12/23 20:43:53 jedgar Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.20 1999/12/25 19:39:03 jedgar Exp $
 #
 
     SUBDIR += abacus
@@ -29,6 +29,7 @@
     SUBDIR += xpostit
     SUBDIR += xpostitPlus
     SUBDIR += xrolo
+    SUBDIR += xwrits
     SUBDIR += yank
     SUBDIR += zorro
 
