@@ -2,7 +2,7 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.52 2001/03/22 22:31:16 andreas Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.53 2001/05/24 20:34:26 joe Exp $
 #
 
 PORTNAME=	zebra
@@ -14,6 +14,7 @@ MAINTAINER=	andreas_and_joe@tao.org.uk
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--sysconfdir=${PREFIX}/etc/zebra
+SCRIPTS_ENV=	WRKDIRPREFIX=${WRKDIRPREFIX}
 
 MAN1=		vtysh.1
 MAN8=		bgpd.8 ospf6d.8 ospfd.8 ripd.8 ripngd.8 zebra.8
