@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.282 2000/07/19 07:20:12 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.283 2000/07/24 22:33:56 sada Exp $
 #
 
     SUBDIR += Canna
@@ -325,6 +325,7 @@
     SUBDIR += xv
     SUBDIR += xyagamo
     SUBDIR += yc.el
+    SUBDIR += zangband
     SUBDIR += zipcodes
 
 .include <bsd.port.subdir.mk>
