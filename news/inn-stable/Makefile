@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.50 2000/05/31 06:21:53 andreas Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.51 2000/06/03 08:26:36 asami Exp $
 
 PORTNAME=	inn-stable
 PORTVERSION=	v22
@@ -121,7 +121,10 @@ post-install:
 	${MKDIR} -p ${NEWSLIB}/${dir}
 	touch ${NEWSLIB}/${dir}/.keep_me
 .endfor
+	# drop privs on inews because it is insecure
+	${CHMOD} 555 ${NEWSLIB}/bin/inews
 	# make rnews work when getting news via uucp !
-	${CHMOD} 4555 ${NEWSLIB}/bin/rnews
+	${CHMOD} 2555 ${NEWSLIB}/bin/rnews
+
 
 .include <bsd.port.mk>
