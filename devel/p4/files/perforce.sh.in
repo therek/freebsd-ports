@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/perforce/files/perforce.sh.in,v 1.5 2004/10/28 15:03:14 nork Exp $
+# $FreeBSD: ports/devel/perforce/files/perforce.sh.in,v 1.6 2005/01/18 15:43:36 lth Exp $
 
 p4d=@PREFIX@/sbin/p4d
 p4ftpd=@PREFIX@/sbin/p4ftpd
@@ -24,7 +24,7 @@ start)
     fi
     if [ -x $p4web -a x$PERFORCE_WEB_START = xyes ]; then
         echo -n ' p4web'
-        su -fm $PERFORCE_USER -c "$p4web $PERFORCE_WEB_OPTIONS > /dev/null 2>&1 &"
+        su -fm $PERFORCE_USER -c "$p4web $PERFORCE_WEB_OPTIONS &" >/dev/null 2>&1
     fi
 
     ;;
