@@ -2,7 +2,7 @@
 # Date created:		14 April 1998
 # Whom:			Donald J. Maddox <dmaddox@conterra.com>
 #
-# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.15 2000/04/10 00:39:33 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.16 2000/04/16 04:14:11 asami Exp $
 #
 
 PORTNAME=	x-files
@@ -19,6 +19,7 @@ RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 WRKSRC=		${WRKDIR}/X-Files
 NO_BUILD=	yes
 USE_X_PREFIX=	yes
+MAN1=		X-Files.1x
 
 pre-install:
 	@tclsh8.2 ${SCRIPTDIR}/mktclIndex ${WRKSRC}
