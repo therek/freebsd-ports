@@ -2,11 +2,12 @@
 # Date created:			  Fri Oct 02, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/misc/Howto/Makefile,v 1.5 2000/04/14 08:45:13 asami Exp $
+# $FreeBSD: ports/misc/Howto/Makefile,v 1.6 2001/01/16 17:31:35 sobomax Exp $
 #
 
 PORTNAME=	Howto
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/other-formats/sgml/ \
 		ftp://metalab.unc.edu/pub/Linux/docs/HOWTO/mini/other-formats/sgml/
@@ -18,7 +19,7 @@ DISTFILES=	Linux+FreeBSD.sgml.gz  \
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
+#BUILD_DEPENDS=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
 
 DIST_SUBDIR=	Howto
 NO_WRKSUBDIR=	yes
