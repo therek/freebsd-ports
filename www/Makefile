@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.346 2001/04/10 22:17:17 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.347 2001/04/10 22:22:55 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -109,6 +109,7 @@
     SUBDIR += mmosaic
     SUBDIR += mnoGoSearch-current
     SUBDIR += mod_access_referer
+    SUBDIR += mod_auth_any
     SUBDIR += mod_auth_mysql
     SUBDIR += mod_auth_pam
     SUBDIR += mod_auth_pgsql
