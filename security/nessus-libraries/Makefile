@@ -3,10 +3,10 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.1.1.1 1999/12/01 05:32:20 foxfair Exp $
 #
 
-DISTNAME=	nessus-libraries-0.98.4
+DISTNAME=	nessus-libraries-0.99.1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \
@@ -27,8 +27,8 @@ WRKSRC=		${WRKDIR}/nessus-libraries
 
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.pre.mk>  
-                            
+.include <bsd.port.pre.mk>
+
 .if ${OSVERSION} >= 400001
 BROKEN=		"Can't be built successfully in -CURRENT"
 .endif
