@@ -3,7 +3,7 @@
 # Date created:				6 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cdk/Makefile,v 1.12 2000/09/22 09:51:32 kris Exp $
+# $FreeBSD: ports/devel/cdk/Makefile,v 1.13 2000/09/25 12:21:07 asami Exp $
 #
 
 PORTNAME=		cdk
@@ -43,7 +43,7 @@ do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/demos/*.c ${PREFIX}/share/examples/cdk/demos
 	@ ${INSTALL_DATA} ${WRKSRC}/demos/Makefile ${PREFIX}/share/examples/cdk/demos
 
- post-install:
+post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/cdk
 .for file in BUGS EXPANDING INSTALL NOTES README TODO
