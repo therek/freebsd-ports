@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.257 2004/08/18 13:13:00 vs Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.258 2004/08/21 15:19:40 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -888,7 +888,13 @@ MASTER_SITE_XORG+= \
 	ftp://ftp.cica.es/pub/X/pub/%SUBDIR%/ \
 	ftp://ftp.cs.cuhk.edu.hk/pub/X11/%SUBDIR%/ \
 	ftp://sunsite.sut.ac.jp/pub/archives/X11/%SUBDIR%/ \
-	ftp://ftp.unicamp.br/pub/X11/releases/%SUBDIR%/
+	ftp://ftp.unicamp.br/pub/X11/releases/%SUBDIR%/ \
+	ftp://ftp.ntua.gr/pub/X11/X.org/%SUBDIR%/ \
+	ftp://ftp.task.gda.pl/mirror/ftp.x.org/pub/%SUBDIR%/ \
+	ftp://ftp.sunet.se/pub/X11/ftp.x.org/%SUBDIR%/ \
+	ftp://ftp.mirrorservice.org/sites/ftp.x.org/pub/%SUBDIR%/ \
+	ftp://sunsite.uio.no/pub/X11/%SUBDIR%/ \
+	ftp://ftp.cs.tu-berlin.de/pub/X/x/%SUBDIR%/
 
 MASTER_SITE_GNUSTEP+= \
 	http://python.planetmirror.com/pub/gnustep/gnustep/%SUBDIR%/ \
