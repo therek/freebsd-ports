@@ -2,13 +2,14 @@
 # Date created:		11 December 1998
 # Whom:			rv@dsmit.com
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.9 2000/04/11 21:27:24 mharo Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.10 2000/04/22 00:41:58 fenner Exp $
 #
 
 PORTNAME=	cons
-PORTVERSION=	1.8-dev
+PORTVERSION=	1.8.d
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dsmit.com/cons/
+DISTNAME=	cons-1.8-dev
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rv@dsmit.com
