@@ -2,7 +2,7 @@
 # Date created:		7 Oct 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.9 2001/05/04 21:41:28 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	endeavour
@@ -24,7 +24,7 @@ MAKE_ARGS=	PREFIX="${PREFIX}" CC="${CC}" CPP="${CXX}" \
 		CFLAGS="${CFLAGS} -D__USE_BSD -DUSE_XSHM -DUSE_IMLIB" \
 		INC_DIRS="`imlib-config --cflags` -I${X11BASE}/include" \
 		LIBS="`imlib-config --libs` -lXpm" \
-		LIB_DIRS="-L${X11BASE}/lib"
+		LIB_DIRS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|make |\$$\(MAKE\) |g' ${WRKSRC}/Makefile
