@@ -2,17 +2,18 @@
 # Date created:		18 November 1997
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/lang/elisp-manual/Makefile,v 1.7 2000/05/21 11:52:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elisp-manual
-PORTVERSION=	21-2.6
+PORTVERSION=	21-2.7a
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
 MAINTAINER=	ports@freebsd.org
 
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/a//}
 GNU_CONFIGURE=	yes
 
 ALL_TARGET=	elisp
