@@ -2,11 +2,11 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.2 2000/08/16 12:21:12 knu Exp $
+# $FreeBSD: ports/x11/ruby-kde/Makefile,v 1.3 2000/08/17 15:21:00 knu Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	0.11
+PORTVERSION=	0.12
 CATEGORIES=	x11 kde ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	ruby-
