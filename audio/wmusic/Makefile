@@ -2,13 +2,13 @@
 # Date created:				16 September 2000
 # Whom:					Eric Melville <eric@osd.bsdi.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/wmusic/Makefile,v 1.1 2000/10/11 23:30:09 trevor Exp $
 #
 
 PORTNAME=	wmusic
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.6
 CATEGORIES=	audio windowmaker
-MASTER_SITES=	http://hadess.free.fr/files/
+MASTER_SITES=	http://hadess.net/files/
 
 MAINTAINER=	eric@osd.bsdi.com
 
