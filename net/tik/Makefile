@@ -3,7 +3,7 @@
 # Date created:				13 January 1999
 # Whom:					Eugene M. Kim <astralblue@usa.net>
 #
-# $FreeBSD: ports/net/tik/Makefile,v 1.4 1999/08/30 14:24:20 peter Exp $
+# $FreeBSD: ports/net/tik/Makefile,v 1.5 1999/11/28 18:32:01 steve Exp $
 #
 
 DISTNAME=	tik-0.59
@@ -58,6 +58,8 @@ do-install:
 .endfor
 	@${SED} 's#@PREFIX@#${PREFIX}#g' < ${FILESDIR}/tik >${WRKDIR}/tik.sh
 	${INSTALL_SCRIPT} ${WRKDIR}/tik.sh ${PREFIX}/bin/tik
+	@${SED} 's#@PREFIX@#${PREFIX}#g' < ${FILESDIR}/tac >${WRKDIR}/tac.sh
+	${INSTALL_SCRIPT} ${WRKDIR}/tac.sh ${PREFIX}/bin/tac
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/${DOCDIR}
 	@${ECHO} @dirrm ${DOCDIR} >> ${PLIST}.dirrm
