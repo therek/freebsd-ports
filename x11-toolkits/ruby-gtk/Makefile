@@ -1,12 +1,12 @@
 # New ports collection makefile for:    ruby-gtk
-# Version required:     0.21
+# Version required:     0.22
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.3 1999/08/31 02:59:33 peter Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.4 1999/10/08 03:30:11 nakai Exp $
 #
 
-DISTNAME=	ruby-gtk-0.21
+DISTNAME=	ruby-gtk-0.22
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://www.ueda.info.waseda.ac.jp/~igarashi/ruby/ \
 		ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \
@@ -26,7 +26,7 @@ USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/gtk
 PLIST_SUB+=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${PREFIX}/bin/ruby
+RUBY=		${LOCALBASE}/bin/ruby
 RUBY_VER=	1.4
 RUBY_ARCH=	${ARCH}-freebsd${OSREL}
 
