@@ -2,11 +2,11 @@
 # Date created:		4 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/jls/Makefile,v 1.8 2000/06/29 07:02:22 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ls
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		${MASTER_SITE_LOCAL}
