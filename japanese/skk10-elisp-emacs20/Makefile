@@ -1,9 +1,9 @@
 # New ports collection makefile for:	skk10-elisp-emacs20
-# Version required:	10.55
+# Version required:	10.56
 # Date created:		21 September 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.2 1999/10/16 10:19:06 shige Exp $
+# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.3 2000/01/04 11:37:02 shige Exp $
 #
 
 DISTNAME=	skk${SKK10_VER}
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.asahi-net.or.jp/~gy2m-nkjm/skk/
 
 MAINTAINER?=	shige@FreeBSD.org
 
-SKK10_VER=	10.55
+SKK10_VER=	10.56
 
 # This port is a master port.
 PORT_CLASS?=	master
