@@ -2,11 +2,11 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.76 2001/04/30 05:29:44 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.77 2001/05/11 16:36:45 ade Exp $
 #
 
 PORTNAME=	gtk
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/%SUBDIR%/ \
@@ -19,7 +19,8 @@ DISTNAME=	gtk+-${PORTVERSION}
 MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
-LIB_DEPENDS=	glib-1.3.4:${PORTSDIR}/devel/glib13 \
+LIB_DEPENDS=	glib-1.3.5:${PORTSDIR}/devel/glib13 \
+		atk.0:${PORTSDIR}/devel/atk \
 		pango.0:${PORTSDIR}/x11-toolkits/pango \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
