@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.2 2001/03/13 11:15:09 ume Exp $
+#	$FreeBSD: ports/mail/cyrus-imapd2/pkg-deinstall,v 1.3 2002/05/25 18:39:19 ume Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -26,12 +26,12 @@ checkfile() {
 # Uninstall timseived's Cyrus.conf file.
 
 cyrus_conf() {
-	if [ -f ${PKG_PREFIX}/lib/sasl/Cyrus.conf ]; then
-		echo "pwcheck_method: pwcheck" > ${PKG_PREFIX}/lib/sasl/Cyrus.conf.tmp
-		if cmp -s ${PKG_PREFIX}/lib/sasl/Cyrus.conf ${PKG_PREFIX}/lib/sasl/Cyrus.conf.tmp; then
-			rm -f ${PKG_PREFIX}/lib/sasl/Cyrus.conf
+	if [ -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf ]; then
+		echo "pwcheck_method: pwcheck" > ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp
+		if cmp -s ${PKG_PREFIX}/lib/sasl2/Cyrus.conf ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp; then
+			rm -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf
 		fi
-		rm -f ${PKG_PREFIX}/lib/sasl/Cyrus.conf.tmp
+		rm -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp
 	fi
 }
 
