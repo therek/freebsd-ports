@@ -2,11 +2,11 @@
 # Date created:				22 April 2001
 # Whom:					Frank DENIS
 #
-# $FreeBSD: ports/ftp/pure-ftpd/Makefile,v 1.1 2001/04/23 15:46:38 roam Exp $
+# $FreeBSD: ports/ftp/pure-ftpd/Makefile,v 1.2 2001/05/09 07:52:27 roam Exp $
 #
 
 PORTNAME=	pure-ftpd
-PORTVERSION=	0.98
+PORTVERSION=	0.98.1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pureftpd
