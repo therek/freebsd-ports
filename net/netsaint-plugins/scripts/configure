@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/netsaint-plugins/scripts/configure,v 1.4 2001/12/16 17:33:04 dwcjr Exp $
+# $FreeBSD: ports/net/netsaint-plugins/scripts/configure,v 1.5 2001/12/17 23:12:57 kuriyama Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -81,7 +81,8 @@ while [ "$1" ]; do
 			SUB_MYSQL=""
 			;;
 		\"PostgreSQL\")
-			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql7"
+			echo "POSTGRESQL_PORT?=	databases/postgresql7"
+			echo "LIB_DEPENDS+=	pq.3:\${PORTSDIR}/\${POSTGRESQL_PORT}"
 			echo "CONFIGURE_ARGS+=	--with-pgsql=\${LOCALBASE}"
 			SUB_PGSQL=""
 			;;

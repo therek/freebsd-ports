@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/nagios-plugins/scripts/configure,v 1.6 2002/07/22 01:03:42 kuriyama Exp $
+# $FreeBSD: ports/net/nagios-plugins/scripts/configure,v 1.7 2003/01/03 19:08:00 petef Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -83,7 +83,8 @@ while [ "$1" ]; do
 			SUB_MYSQL=""
 			;;
 		\"PostgreSQL\")
-			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql7"
+			echo "POSTGRESQL_PORT?=	databases/postgresql7"
+			echo "LIB_DEPENDS+=	pq.3:\${PORTSDIR}/\${POSTGRESQL_PORT}"
 			echo "CONFIGURE_ARGS+=	--with-pgsql=\${LOCALBASE}"
 			SUB_PGSQL=""
 			;;
