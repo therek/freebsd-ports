@@ -3,7 +3,7 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.11 2000/04/09 21:54:43 cpiazza Exp $
+# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.12 2000/04/15 01:56:09 asami Exp $
 #
 #	version # is VISCII version supported + .<edit_revision>
 
@@ -17,8 +17,14 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
 
-CFLAGS+=	-I../../include
+BUILD_DEPENDS=  ${LOCALBASE}/lib/libviqr.a:${PORTSDIR}/vietnamese/libviet
+
+CFLAGS+=	-I${PREFIX}/include/viet
 MAN1=		vn7to8.1 vn8to7.1 vn80to81.1
+
+post-extract:
+	@ ${MV} ${WRKDIR}/lib ${WRKDIR}/DONT.lib
+	@ ${MV} ${WRKDIR}/include ${WRKDIR}/DONT.include
 
 post-install:
 	@${INSTALL_MAN} ${FILESDIR}/vn7to8.1 ${PREFIX}/man/man1
