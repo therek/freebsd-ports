@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.507 2005/02/02 09:34:04 tobez Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.508 2005/02/07 11:17:50 krion Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1082,6 +1082,8 @@ OPTIONSFILE?=	${PORT_DBDIR}/${UNIQUENAME}/options
 _OPTIONSFILE!=	${ECHO_CMD} "${OPTIONSFILE}"
 .if defined(OPTIONS)
 .	if defined(PACKAGE_BUILDING) || (defined(BATCH) && !exists(${_OPTIONSFILE}))
+WITHOUT:=
+WITH:=
 .	if defined(OPTIONS)
 REALOPTIONS=${OPTIONS:C/".*"//g}
 .	for O in ${REALOPTIONS}
