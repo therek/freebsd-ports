@@ -2,7 +2,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.20 2000/06/16 21:51:34 asami Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.21 2000/08/20 21:38:44 jmz Exp $
 #
 
 PORTNAME=	lapack
@@ -205,6 +205,8 @@ MANL=	cbdsqr.l cgbbrd.l cgbcon.l cgbequ.l cgbmv.l cgbrfs.l cgbsv.l cgbsvx.l \
 	zunmr3.l zunmrq.l zunmrz.l zunmtr.l zupgtr.l zupmtr.l
 
 .include <bsd.port.pre.mk>
+
+CONFIGURE_ENV+=	OSVERSION=${OSVERSION}
 
 pre-fetch:
 	@${ECHO} "You can override FC and FFLAGS on the command line."
