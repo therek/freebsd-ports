@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.602 2001/08/27 15:06:39 petef Exp $
+# $FreeBSD: ports/net/Makefile,v 1.603 2001/08/29 10:56:02 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -303,6 +303,7 @@
     SUBDIR += poptop
     SUBDIR += ppp-nt
     SUBDIR += pppload
+    SUBDIR += pppoa
     SUBDIR += ppptraf
     SUBDIR += pptpclient
     SUBDIR += ppxp
