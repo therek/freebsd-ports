@@ -2,15 +2,14 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn4/Makefile,v 1.22 1999/08/30 14:31:59 peter Exp $
+# $FreeBSD: ports/news/trn4/Makefile,v 1.23 2000/04/09 17:33:28 cpiazza Exp $
 #
 
 PORTNAME=	trn
-PORTVERSION=	4.0.b72
+PORTVERSION=	4.0.b74
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.clari.net/private/trn/ \
-		ftp://ftp.uu.net/private/trn/
-DISTNAME=	trn4-test72
+MASTER_SITES=	ftp://trn.sourceforge.net/pub/trn/
+DISTNAME=	trn4-test74
 
 MAINTAINER=	mph@freebsd.org
 
