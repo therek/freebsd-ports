@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.68 1999/11/23 04:49:34 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.69 1999/11/24 23:08:06 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -20,7 +20,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 IS_INTERACTIVE=	yes	# configure script asks questions
 .if (${MACHINE} != "alpha")
-NO_PACKAGE=	package available from XFree86
+#NO_PACKAGE=	package available from XFree86
 .endif
 ALL_TARGET=	World
 INSTALL_TARGET=	install install.man
