@@ -2,11 +2,12 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ruby-ming/Makefile,v 1.1 2000/10/16 09:38:27 knu Exp $
 #
 
 PORTNAME=	ming
 PORTVERSION=	0.0.2e
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www.opaque.net/ming/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -24,7 +25,10 @@ MD5_FILE=	${PORTSDIR}/graphics/ming/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/rb_ext
 CONFIGURE_ARGS=	--with-ming-include="${LOCALBASE}/include/ming"
+MAKE_ARGS=	 SWIG="${SWIG}"
 INSTALL_TARGET=	site-install
+
+SWIG=		swig1.3
 
 EXAMPLES=	shape.rb test.rb
 
