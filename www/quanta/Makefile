@@ -2,11 +2,11 @@
 # Date created:				19 May 2000
 # Whom:					Will Andrews <ports@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quanta/Makefile,v 1.3 2000/06/14 13:21:37 sobomax Exp $
+# $FreeBSD: ports/www/quanta/Makefile,v 1.4 2000/06/22 05:52:09 will Exp $
 #
 
 PORTNAME=	quanta
-PORTVERSION= 	1.0.2
+PORTVERSION= 	1.0.4
 CATEGORIES=	www kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
