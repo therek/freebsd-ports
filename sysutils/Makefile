@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.172 2001/04/02 20:38:11 demon Exp $
+# $FreeBSD$
 #
     SUBDIR += yawho
 
@@ -102,6 +102,7 @@
     SUBDIR += pslist
     SUBDIR += psmisc
     SUBDIR += pwgen
+    SUBDIR += pyfind
     SUBDIR += qtpkg
     SUBDIR += rdate
     SUBDIR += rotate
