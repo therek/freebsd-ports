@@ -2,7 +2,7 @@
 # Date created:				14 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/digger-vgl/Makefile,v 1.1.1.1 2000/05/22 15:00:13 sobomax Exp $
+# $FreeBSD: ports/games/digger-vgl/Makefile,v 1.2 2000/11/01 15:51:05 sobomax Exp $
 #
 
 PORTNAME=	digger
@@ -15,7 +15,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 .if defined(WITH_SOUND)
 LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
-MAKE_FLAGS+=	-DSOUND
+MAKE_ENV=	SOUND=yes
 .endif
 
 DIGREL=		20000407
