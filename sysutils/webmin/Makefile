@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.46 2001/05/05 10:47:28 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.47 2001/05/22 15:23:23 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -59,9 +59,12 @@ post-patch:
 	${SED}	-e "s@^hba_conf=.*@hba_conf=${LOCALBASE}/pgsql/data/pg_hba.conf@" \
 		-e "s@^login=.*@login=pgsql@" \
 		-e "s@^pid_file=.*@pid_file=${LOCALBASE}/pgsql/data/postmaster.pid@" \
-		-e "s@^start_cmd=.*@start_cmd=${LOCALBASE}/etc/rc.d/pgsql.sh start@" \
-		-e "s@^stop_cmd=.*@stop_cmd=${LOCALBASE}/etc/rc.d/pgsql.sh stop@" \
+		-e "s@^start_cmd=.*@start_cmd=${LOCALBASE}/etc/rc.d/010.pgsql.sh start@" \
+		-e "s@^stop_cmd=.*@stop_cmd=${LOCALBASE}/etc/rc.d/010.pgsql.sh stop@" \
+		-e "s@^psql=.*@psql=${LOCALBASE}/bin/psql@" \
+		-e "s@^plib=.*@plib=${LOCALBASE}/lib@" \
 		${WRKSRC}/postgresql/config.sed > ${WRKSRC}/postgresql/config
+
 	${RM} ${WRKSRC}/postgresql/config.sed
 
 	${CP} ${WRKSRC}/dhcpd/config-freebsd ${WRKSRC}/dhcpd/config-freebsd.sed
