@@ -2,7 +2,7 @@
 # Date created:		7 Sept 1995
 # Whom:			cacho@mexicano.gdl.iteso.mx
 #
-# $FreeBSD: ports/graphics/xfractint/Makefile,v 1.8 1999/10/13 14:31:20 flathill Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfractint
@@ -18,5 +18,9 @@ USE_ZIP=	yes
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes
 MAN1=		xfractint.1
+
+pre-patch:
+	@${FIND} ${WRKSRC} -name "*.c" | ${XARGS} ${PERL} -pi -e \
+		's|malloc.h|stdlib.h|'
 
 .include <bsd.port.mk>

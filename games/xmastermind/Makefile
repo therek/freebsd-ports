@@ -2,7 +2,7 @@
 # Date created:				23 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xmastermind/Makefile,v 1.10 2000/03/29 07:17:41 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xmastermind
@@ -16,6 +16,10 @@ MAINTAINER=		ports@FreeBSD.org
 LIB_DEPENDS=		xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_X_PREFIX=		yes
+
+pre-patch:
+	@${PERL} -pi.orig -e 's|malloc.h|stdlib.h|' \
+		${WRKSRC}/list.h
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/xmastermind ${PREFIX}/bin

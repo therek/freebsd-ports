@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/hc/Makefile,v 1.7 2000/03/22 00:28:24 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hc
@@ -20,6 +20,9 @@ WRKSRC=		${WRKDIR}/hc3
 EXTRACT_ONLY=	hc-30.tar.gz
 ALL_TARGET=	hc b2g g2b
 MAN1=		hc.1
+
+pre-patch:
+	@${PERL} -pi -e 's|malloc.h|stdlib.h|' ${WRKSRC}/hclib.c
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/chinese

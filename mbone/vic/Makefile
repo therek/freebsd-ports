@@ -2,7 +2,7 @@
 # Date created:		14 December 1994
 # Whom:			wollman
 #
-# $FreeBSD: ports/mbone/vic/Makefile,v 1.24 2000/04/14 08:49:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vic
@@ -27,6 +27,10 @@ CONFIGURE_ARGS= -x-libraries=${PREFIX}/lib \
 		-without-ucltk \
 		-with-tk=${LOCALBASE}
 MAN1=		vic.1
+
+pre-patch:
+	@${FIND} ${WRKSRC} -name "*.[c,h]" | ${XARGS} ${PERL} -pi -e \
+		's|malloc.h|stdlib.h|'
 
 post-install:
 	strip ${PREFIX}/bin/vic
