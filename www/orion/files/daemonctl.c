@@ -4,7 +4,7 @@
  *
  * Daemon control program.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/www/orion/files/daemonctl.c,v 1.1 2002/03/28 14:52:37 znerd Exp $
  */
 
 #include <assert.h>
@@ -61,7 +61,7 @@ int main(int argc, char *argv[]) {
 	char *argument;
 
 	/* Parse the arguments */
-	if (argc != 2) {
+	if (argc < 2) {
 		printUsage();
 		return 0;
 	}
