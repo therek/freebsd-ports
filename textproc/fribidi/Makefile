@@ -2,7 +2,7 @@
 # Date created:				17 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.6 2000/11/21 13:03:53 sobomax Exp $
+# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.7 2001/02/05 16:34:36 olgeni Exp $
 #
 
 PORTNAME=	fribidi
@@ -16,7 +16,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	glib-1.3.2:${PORTSDIR}/devel/glib13
+LIB_DEPENDS=	glib-1.3.6:${PORTSDIR}/devel/glib13
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
