@@ -3,11 +3,11 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.8 1999/09/10 20:41:44 torstenb Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.9 1999/09/10 21:48:58 torstenb Exp $
 #
 
-DISTNAME=	postfix-19990906-pl02
-PKGNAME=	postfix-19990906.02
+DISTNAME=	postfix-19990906-pl09
+PKGNAME=	postfix-19990906.09
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.snoopy.net/pub/mirrors/postfix/official/ \
