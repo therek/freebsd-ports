@@ -2,7 +2,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.3 2000/03/21 23:34:03 will Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.4 2000/04/10 00:06:47 cpiazza Exp $
 #
 
 PORTNAME=	screem
@@ -18,6 +18,7 @@ LIB_DEPENDS=	glade.3:${PORTSDIR}/devel/libglade
 LIBGLADE_CONFIG?=	${LOCALBASE}/bin/libglade-config
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_LIBTOOL=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 CONFIGURE_ARGS=	--with-gnome=${PREFIX}/include --prefix=${PREFIX} \
