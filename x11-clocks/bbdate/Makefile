@@ -1,12 +1,12 @@
 # New ports collection makefile for:  	bbdate
-# Version required:   	0.2.1
 # Date created:		May 3 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/bbdate/Makefile,v 1.7 1999/08/31 02:57:56 peter Exp $
+# $FreeBSD: ports/x11-clocks/bbdate/Makefile,v 1.8 2000/02/08 21:56:39 cpiazza Exp $
 #
 
-DISTNAME=	bbdate-0.2.1
+PORTNAME=	bbdate
+PORTVERSION= 	0.2.1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mlclock
-# Version required:    1.1
 # Date created:        December 05 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/mlclock/Makefile,v 1.6 1999/08/31 02:57:59 peter Exp $
+# $FreeBSD: ports/x11-clocks/mlclock/Makefile,v 1.7 1999/10/05 02:36:08 nakai Exp $
 #
 
-DISTNAME=	mlclock-1.1
+PORTNAME=	mlclock
+PORTVERSION= 	1.1
 CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.hry.info.gifu-u.ac.jp/~hideki/
 

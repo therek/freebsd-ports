@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bclock
-# Version required:	1.0
 # Date created:		13 May 1997
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-clocks/bclock/Makefile,v 1.7 1999/08/31 06:52:29 mharo Exp $
+# $FreeBSD: ports/x11-clocks/bclock/Makefile,v 1.8 1999/12/24 04:40:48 steve Exp $
 #
 
-DISTNAME=	bclock-1.0
+PORTNAME=	bclock
+PORTVERSION= 	1.0
 CATEGORIES=	x11-clocks
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/clocks

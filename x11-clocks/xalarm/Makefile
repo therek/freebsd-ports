@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xalarm
-# Version required:	3.06
 # Date created:		4 December 1996
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/xalarm/Makefile,v 1.5 1999/08/31 02:58:09 peter Exp $
 #
 
-DISTNAME=	xalarm-3.06
+PORTNAME=	xalarm
+PORTVERSION= 	3.06
 CATEGORIES=	x11-clocks
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

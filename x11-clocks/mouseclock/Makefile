@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mouseclock
-# Version required:	1.0
 # Date created:		26 August 1997
 # Whom:			FURUSAWA, Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/mouseclock/Makefile,v 1.6 1999/08/31 02:57:59 peter Exp $
 #
 
-DISTNAME=	mouseclock-1.0
+PORTNAME=	mouseclock
+PORTVERSION=	1.0
 CATEGORIES=	x11-clocks
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/clocks

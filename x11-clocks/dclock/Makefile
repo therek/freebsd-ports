@@ -1,15 +1,15 @@
 # New ports collection makefile for:	dclock
-# Version required:	pl6
 # Date created:		15 Aug 1996
 # Whom:			David Leonard <leonard@dstc.edu.au>
 #
-# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.9 1999/08/31 06:52:30 mharo Exp $
+# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.10 1999/12/24 04:39:04 steve Exp $
 #
 
-DISTNAME=	Dclock
-PKGNAME=	dclock-pl6
+PORTNAME=	dclock
+PORTVERSION= 	pl6
 CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
+DISTNAME=	Dclock
 
 PATCH_SITES=	${MASTER_SITE_XCONTRIB}
 PATCH_SITE_SUBDIR=	R6contrib-fixes
