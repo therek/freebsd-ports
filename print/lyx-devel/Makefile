@@ -3,10 +3,11 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.37 2000/02/20 19:43:22 dirk Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.38 2000/03/06 12:06:17 dirk Exp $
 #
 
 DISTNAME=	lyx-1.1.4
+PKGNAME=	lyx-1.1.4.1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/devel/ \
 		ftp://la1ad.uio.no/pub/lyx/ \
