@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.30 2000/06/16 21:50:18 asami Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.31 2000/06/30 16:44:43 obrien Exp $
 #
 
 PORTNAME=	bzip2
@@ -14,8 +14,6 @@ MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/bzip2/v100/ \
 		http://www.kernel.org/pub/software/utils/compress/bzip2/
 
 MAINTAINER=	obrien@FreeBSD.org
-
-FETCH_BEFORE_ARGS=	-b
 
 INSTALLS_SHLIB=	yes
 
