@@ -2,7 +2,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.30 2001/03/03 00:23:13 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpg123
@@ -58,7 +58,7 @@ pre-fetch:
 .endif
 .if ${MACHINE_ARCH} == "i386"
 .if ${OSVERSION} >= 500018
-.if ${MACHINE_CPU:Mk6}
+.if ${MACHINE_CPU:M3dnow}
 OPT_ARCH=	3dnow
 .elif ${MACHINE_CPU:Mi586}
 OPT_ARCH=	i586
