@@ -65,6 +65,9 @@ Option "XkbRules" "xfree86"
   the set of PHP extensions to install can be choosen via the meta-ports
   lang/php4-extensions and lang/php5-extensions, or installing singular
   extensions individually.
+  If you have a previous php.ini configuration file, be sure to comment out
+  the extension_dir parameter, since the correct path is statically compiled
+  into the PHP binary.
 
 20040717:
   AFFECTS: users of net/openldap2[12]{,-sasl}-client
@@ -529,4 +532,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.50 2004/07/24 18:21:34 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.51 2004/07/26 18:46:12 glewis Exp $
