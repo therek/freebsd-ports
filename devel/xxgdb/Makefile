@@ -2,7 +2,7 @@
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.9 1999/08/31 06:42:42 mharo Exp $
+# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.10 2000/04/14 05:44:42 asami Exp $
 #
 
 PORTNAME=	xxgdb
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	utilities
 MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
+MAN1=		xxgdb.1
 
 # This isn't included in the original Imakefile for some reason.
 #  Yes, I know this will recompile the program every time, but
