@@ -2,15 +2,14 @@
 # Date created:		May 25 1997
 # Whom:			pgs (original)
 #
-# $FreeBSD: ports/games/xbl/Makefile,v 1.10 2000/10/14 19:46:19 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbl
-PORTVERSION=	1.0j
-PORTREVISION=	1
+PORTVERSION=	1.0k
+PORTREVISION=	0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp710.univ-lyon1.fr/pub/xbl/
-EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
