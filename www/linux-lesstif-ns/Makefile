@@ -2,7 +2,7 @@
 # Date created:		7 May 2000
 # Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/www/linux-lesstif-ns/Makefile,v 1.5 2001/01/29 15:33:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lesstif
@@ -23,7 +23,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${LINUXBASE}/usr/bin/cc:${PORTSDIR}/devel/linux_devtools
+BUILD_DEPENDS=	${LINUXBASE}/usr/bin/cc:${PORTSDIR}/devel/linux_devtools-7
 
 USE_BZIP2=	yes
 USE_LINUX_PREFIX=	yes
