@@ -2,7 +2,7 @@
 # Date created:		11 September 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/amspsfnt/Makefile,v 1.4 2000/04/09 17:39:34 cpiazza Exp $
+# $FreeBSD: ports/print/amspsfnt/Makefile,v 1.5 2000/04/09 17:49:12 cpiazza Exp $
 #
 
 PORTNAME=	amspsfnt
@@ -33,9 +33,9 @@ do-install:
 	@${MKDIR} $(PREFIX)/lib/afm
 	$(INSTALL_DATA) ${WRKSRC}/afm/* $(PREFIX)/lib/afm
 
-.ifndef (NOPORTSDOC)
-	@${MKDIR} $(PREFIX)/share/doc/amspsfnt
-	$(INSTALL_DATA) ${WRKSRC}/READ.ME $(PREFIX)/share/doc/amspsfnt
+.ifndef (NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+	$(INSTALL_DATA) ${WRKSRC}/READ.ME ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
