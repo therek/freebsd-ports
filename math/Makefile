@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.93 2001/01/03 09:35:25 nbm Exp $
+# $FreeBSD: ports/math/Makefile,v 1.94 2001/01/03 23:23:02 will Exp $
 #
 
     SUBDIR += PDL
@@ -47,6 +47,7 @@
     SUBDIR += p5-AI-NeuralNet-Mesh
     SUBDIR += p5-AI-Perceptron
     SUBDIR += p5-Bit-ShiftReg
+    SUBDIR += p5-Bit-Vector
     SUBDIR += p5-Math-Expr
     SUBDIR += p5-Math-Logic
     SUBDIR += p5-MatrixReal
