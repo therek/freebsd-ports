@@ -3,7 +3,7 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.5 1999/09/02 05:00:08 cpiazza Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.6 1999/09/02 05:07:29 cpiazza Exp $
 #
 
 DISTNAME=	PowerPak
@@ -18,7 +18,8 @@ LIB_DEPENDS=	SDL.0:${PORTSDIR}/devel/sdl \
 
 MAKEFILE=	Makefile.FreeBSD
 
-BROKEN=		'Files in distribution are spammed with DOS-style CRLFs which prevents any patches from applying'
+post-extract:
+	@ /usr/bin/find ${WRKSRC} -type f | xargs ${PERL} -pi -e 's/\r//g'
 
 pre-build:
 	@ ${CP} ${FILESDIR}/Makefile.FreeBSD ${WRKSRC}
@@ -42,12 +43,6 @@ do-install:
 .endfor
 
 post-install:
-.if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/PowerPak
-.for file in ASCII-Logo CHANGELOG LICENSE README.IMG.h
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/PowerPak
-.endfor
-.endif
 	@ ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
