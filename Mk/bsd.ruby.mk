@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.110 2003/01/25 09:19:14 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.111 2003/01/29 09:41:03 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -378,7 +378,10 @@ RUN_DEPENDS+=		${DEPEND_RUBY}
 .if defined(USE_RUBY_FEATURES)
 shim=	${USE_RUBY_FEATURES:Mbenchmark} \
 	${USE_RUBY_FEATURES:Mdl} \
+	${USE_RUBY_FEATURES:Merb} \
 	${USE_RUBY_FEATURES:Mfileutils} \
+	${USE_RUBY_FEATURES:Mipaddr} \
+	${USE_RUBY_FEATURES:Mopen-uri} \
 	${USE_RUBY_FEATURES:Moptparse} \
 	${USE_RUBY_FEATURES:Mpp} \
 	${USE_RUBY_FEATURES:Mracc-runtime} \
