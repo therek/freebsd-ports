@@ -2,7 +2,7 @@
 # Date created:					8 Aug 1998
 # Whom:						rom
 #
-# $FreeBSD: ports/math/geg/Makefile,v 1.16 2000/07/07 19:58:54 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	geg
@@ -17,7 +17,7 @@ MAINTAINER=	domi@saargate.de
 USE_X_PREFIX=	yes
 USE_GTK=	yes
 USE_AUTOMAKE=	yes
-AUTOMAKE=	automake -a -i
+AUTOMAKE_ARGS=	-a -i
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
