@@ -2,11 +2,11 @@
 # Date created:				27 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/scrot/Makefile,v 1.2 2000/12/05 02:34:02 asami Exp $
+# $FreeBSD: ports/graphics/scrot/Makefile,v 1.3 2000/12/21 09:20:40 will Exp $
 #
 
 PORTNAME=	scrot
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
