@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.290 2000/09/16 04:16:18 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.291 2000/09/16 05:15:34 will Exp $
 #
 
     SUBDIR += 221upgrade
@@ -57,6 +57,7 @@
     SUBDIR += freedialog
     SUBDIR += geekcode
     SUBDIR += git
+    SUBDIR += gnomepm
     SUBDIR += gnomeusersguide
     SUBDIR += gnomeutils
     SUBDIR += gnuls
