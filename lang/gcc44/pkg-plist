@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.60 2004/11/05 19:48:46 obrien Exp $
+@comment $FreeBSD: ports/lang/gcc40/pkg-plist,v 1.61 2004/12/16 09:32:21 maho Exp $
 bin/c++40
 bin/cpp40
 bin/fastjar40
@@ -23,13 +23,12 @@ bin/grepjar40
 %%LIBJAVA%%bin/gij40
 bin/jv-scan40
 bin/jcf-dump40
-%%LIBJAVA%%bin/jv-convert40
-%%LIBJAVA%%bin/rmic40
-%%LIBJAVA%%bin/rmiregistry40
 %%LIBJAVA%%bin/addr2name.awk40
+%%LIBJAVA%%bin/grmic40
+%%LIBJAVA%%bin/grmiregistry40
+%%LIBJAVA%%bin/jv-convert40
 %%LIBJAVA%%include/ffi.h
-%%LIBJAVA%%include/jni.h
-%%LIBJAVA%%include/jvmpi.h
+%%LIBJAVA%%include/mf-runtime.h
 %%LIBJAVA%%lib/lib-org-xml-sax.a
 %%LIBJAVA%%lib/lib-org-w3c-dom.a
 %%LIBJAVA%%lib/libffi.la
@@ -38,7 +37,6 @@ bin/jcf-dump40
 %%LIBJAVA%%lib/security/classpath.security
 %%LIBJAVA%%lib/security/libgcj.security
 %%LIBJAVA%%@dirrm lib/security
-%%LIBJAVA%%libdata/pkgconfig/libgcj.pc
 %%LIBJAVA%%share/java/libgcj-%%GCC_VER%%.jar
 include/mf-runtime.h
 @comment Insert PLIST.lib here
