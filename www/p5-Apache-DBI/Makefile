@@ -2,11 +2,11 @@
 # Date created:				21 December 1999
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/www/p5-Apache-DBI/Makefile,v 1.2 2000/04/10 00:06:16 cpiazza Exp $
+# $FreeBSD: ports/www/p5-Apache-DBI/Makefile,v 1.3 2000/06/17 02:37:06 will Exp $
 #
 
 PORTNAME=	Apache-DBI
-PORTVERSION= 	0.87
+PORTVERSION= 	0.88
 CATEGORIES=	www databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
