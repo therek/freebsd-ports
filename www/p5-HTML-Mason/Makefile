@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.10 2001/03/12 19:20:44 sf Exp $
+# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.11 2001/04/11 15:20:24 kevlo Exp $
 #
 
 PORTNAME=	HTML-Mason
@@ -16,7 +16,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dsh@vlink.ru
 
 RUN_DEPENDS=	${SITE_PERL}/MLDBM.pm:${PORTSDIR}/databases/p5-MLDBM \
-		${SITE_PERL}/Params/Validate.pm:${PORTSDIR}/devel/p5-Params-Validat
+		${SITE_PERL}/Params/Validate.pm:${PORTSDIR}/devel/p5-Params-Validate
 
 IS_INTERACTIVE=	yes
 PERL_CONFIGURE=	yes
