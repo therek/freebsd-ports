@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.17 2001/07/31 16:46:55 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.18 2001/08/22 10:08:19 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -13,10 +13,10 @@ MASTER_SITE_SUBDIR=	snapshots
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
-#PATCH_SITES=	${MASTER_SITE_RUBY}
-#PATCH_SITE_SUBDIR=	snapshots
-#PATCHFILES=	${RUBY_PATCHFILES}
-#PATCH_DIST_STRIP=	-p1
+PATCH_SITES=	${MASTER_SITE_RUBY}
+PATCH_SITE_SUBDIR=	snapshots
+PATCHFILES=	${RUBY_PATCHFILES}
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
