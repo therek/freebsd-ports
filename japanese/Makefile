@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.223 1999/09/09 23:27:51 asami Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.224 1999/09/19 08:33:45 asami Exp $
 #
 
     SUBDIR += Canna
@@ -198,6 +198,7 @@
     SUBDIR += sj3
     SUBDIR += sjxa
     SUBDIR += skk
+    SUBDIR += skk10-elisp-emacs20
     SUBDIR += skk-elisp
     SUBDIR += skk-jisyo
     SUBDIR += skk-tools
