@@ -2,7 +2,7 @@
 # Date created:         4 May 1995
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/wn/Makefile,v 1.37 2001/02/05 15:33:57 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wn
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}	# ftp://ftp.acns.nwu.edu/pub/wn/
 MASTER_SITE_SUBDIR=	trevor
 
 MAINTAINER=	ports@FreeBSD.org
+
+FORBIDDEN=	"Remotely exploitable buffer overflow."
 
 IS_INTERACTIVE=
 NO_PACKAGE=	"Hostname compiled in"
