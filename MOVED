@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.394 2004/04/01 06:38:10 nork Exp $
+# $FreeBSD: ports/MOVED,v 1.395 2004/04/01 17:39:55 thierry Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1004,3 +1004,4 @@ japanese/emacs21-emcws|japanese/emacs-emcws|2004-03-29|emacs 21.x moved to defau
 x11-wm/9menu|x11/9menu|2004-03-29|accurate category
 japanese/postgresql-man|japanese/postgresql73-man|renamed
 textproc/no-aspell|2004-04-01|renamed to textproc/nn-aspell
+www/zope-cmf13|www/zope-cmf|2004-04-01|old version no longer needed
