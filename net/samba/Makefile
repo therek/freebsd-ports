@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.57 2001/06/01 06:05:10 obrien Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.58 2001/06/07 19:17:14 dwcjr Exp $
 #
 
 PORTNAME=	samba
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/unix/utilities/samba/%SUBDIR%/
 MASTER_SITE_SUBDIR= . old-versions old
 
-MAINTAINER=	dwcjr@inethouston.net
+MAINTAINER=	dwcjr@FreeBSD.org
 
 USE_AUTOCONF=	yes
 
