@@ -2,12 +2,12 @@
 # Date created:			Fri Mar 27 21:24:13 WST 1998
 # Whom:				Peter Wemm <peter@netplex.com.au>
 #
-# $FreeBSD: ports/www/transproxy/Makefile,v 1.7 2000/02/12 20:52:27 imura Exp $
+# $FreeBSD: ports/www/transproxy/Makefile,v 1.8 2000/04/10 00:07:01 cpiazza Exp $
 #
 
 PORTNAME=	transproxy
 PORTVERSION= 	1.2
-CATEGORIES=	www net
+CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.nlc.net.au/pub/unix/transproxy/
 EXTRACT_SUFX=	.tgz
 

@@ -2,12 +2,12 @@
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/gn/Makefile,v 1.25 1999/08/31 02:42:49 peter Exp $
+# $FreeBSD: ports/www/gn/Makefile,v 1.26 2000/04/10 00:05:15 cpiazza Exp $
 #
 
 PORTNAME=	gn
 PORTVERSION= 	2.24
-CATEGORIES=	www net
+CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.acns.nwu.edu/pub/gn/
 
 MAINTAINER=	adam@veda.is
