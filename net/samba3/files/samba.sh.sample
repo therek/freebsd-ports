@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/samba-devel/files/samba.sh.sample,v 1.4 2004/03/05 14:25:42 obraun Exp $
 #
 
 # PROVIDE: nmbd smbd
@@ -38,7 +38,7 @@ if [ ! -r ${samba_config} ]; then
     esac
 fi
 
-if checkyesno samba_enable; then
+if test -n ${samba_enable:-} && checkyesno samba_enable; then
     nmbd_enable=${nmbd_enable:-"YES"}
     smbd_enable=${smbd_enable:-"YES"}
 %%WINBIND%%    winbindd_enable=${winbindd_enable:-"YES"}
