@@ -2,7 +2,7 @@
 # Date created:         Thu Sep 14 11:10:01 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/emulators/sim6811/Makefile,v 1.8 2000/04/24 18:45:32 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sim6811
@@ -13,6 +13,7 @@ DISTNAME=	sim
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jeh@FreeBSD.org
+COMMENT=	A Motorola 6811 simulator
 
 NO_WRKSUBDIR=	yes
 
