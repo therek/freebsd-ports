@@ -2,15 +2,14 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.29 2000/09/15 18:53:27 ade Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.30 2000/09/28 18:03:34 ade Exp $
 #
 
 PORTNAME=	pan
-PORTVERSION=	0.8.1b5
-PORTREVISION=	1
+PORTVERSION=	0.8.1b6
 CATEGORIES=	news gnome
 MASTER_SITES=	http://download.superpimp.org/pan/${PORTVERSION}/
-DISTNAME=	pan-0.8.1beta5
+DISTNAME=	pan-0.8.1beta6
 
 MAINTAINER=	ade@FreeBSD.org
 
