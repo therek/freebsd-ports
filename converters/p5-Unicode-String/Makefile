@@ -2,7 +2,7 @@
 # Date created:				10th September 2000
 # Whom:					Ilia Chipitsine <ilia@jane.cgu.chel.su>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/p5-Unicode-String/Makefile,v 1.1 2000/09/19 16:56:31 ade Exp $
 #
 
 PORTNAME=	Unicode-String
@@ -23,6 +23,7 @@ MAN3=		Unicode::CharName.3 Unicode::String.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
+		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>
