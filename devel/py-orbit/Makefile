@@ -2,11 +2,11 @@
 # Date created:		4 April 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/devel/py-orbit/Makefile,v 1.1 2001/04/04 15:13:28 nbm Exp $
+# $FreeBSD: ports/devel/py-orbit/Makefile,v 1.2 2001/06/27 10:14:57 wjv Exp $
 #
 
 PORTNAME=	orbit
-PORTVERSION=	0.2.0
+PORTVERSION=	0.3.0
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	orbit-python
