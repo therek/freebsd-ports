@@ -6,7 +6,7 @@
 #             and Michael Haro <mharo@FreeBSD.org>
 # 
 # $Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp $
-# $FreeBSD: ports/Tools/scripts/addport,v 1.2 2000/06/30 23:33:35 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.3 2000/07/03 19:58:41 will Exp $
 #
 # MAINTAINER= mharo@FreeBSD.org
 # however feel free to submit patches to will@FreeBSD.org.  =)
@@ -161,11 +161,16 @@ END {
 	}
 }
 
-
 if ($dir eq "") {
 	warnx("Please specify a directory to import a new port from.");
 	usage();
 	exit 1;
+}
+
+# account for special case
+if ($dir eq ".") {
+	chomp(local $pwd = `pwd`);
+	$dir = `basename $pwd`;
 }
 
 $dir = "$pwd/$dir" if ($dir !~ m,^/,);
