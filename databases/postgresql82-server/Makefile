@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.81 2001/05/24 13:26:47 alex Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.82 2001/05/27 12:10:49 ijliao Exp $
 #
 
 PORTNAME=	postgresql
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.iodynamics.com/pub/mirror/postgresql/%SUBDIR%/ \
 		ftp://ftp.de.postgresql.org/%SUBDIR%/ \
 		ftp://ftp.digex.net/pub/packages/database/postgresql/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/postgresql/%SUBDIR%/ \
-		ftp://ftp.chg.ru/pub/databases/postgresql/%SUBDIR%/
+		ftp://ftp.chg.ru/pub/databases/postgresql/%SUBDIR%/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/db/postgresql/&,}
 MASTER_SITE_SUBDIR=	source/v${PORTVERSION}
 DISTFILES=	${PORTNAME}-base-${PORTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}-opt-${PORTVERSION}${EXTRACT_SUFX}
