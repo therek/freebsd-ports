@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.253 2000/01/29 12:45:26 nakai Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.254 2000/01/29 22:25:56 steve Exp $
 #
 
     SUBDIR += ElectricFence
@@ -24,6 +24,7 @@
     SUBDIR += clig
     SUBDIR += codecrusader
     SUBDIR += cons
+    SUBDIR += cook
     SUBDIR += crossgo32
     SUBDIR += crossgo32-djgpp2
     SUBDIR += crossgo32-djgpp2-pdcurses
