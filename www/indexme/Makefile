@@ -2,7 +2,7 @@
 # Date created:		30 Jan 2000
 # Whom:			Carl Johan Madestrand
 #
-# $FreeBSD: ports/www/indexme/Makefile,v 1.4 2000/06/28 12:29:08 alex Exp $
+# $FreeBSD: ports/www/indexme/Makefile,v 1.5 2001/02/05 15:33:25 olgeni Exp $
 #
 
 PORTNAME=	indexme
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ukug.uk.freebsd.org/pub/lord_cj/	\
 		http://kyb.homepage.com/perl/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	cj@vallcom.net
+MAINTAINER=	LoRd_CJ@dalusers.com
 
 USE_PERL5=	yes
 
