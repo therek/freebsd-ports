@@ -2,7 +2,7 @@
 # Date created:         29.01.2001
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/rus-ispell/Makefile,v 1.1 2001/01/29 19:05:05 ache Exp $
 #
 
 PORTNAME=       rus-ispell
@@ -23,7 +23,8 @@ NO_WRKSUBDIR=   yes
 
 do-install:
 	cd ${WRKSRC} && \
-	${INSTALL_DATA} russian.hash russian.aff ${PREFIX}/share/ispell
+		${INSTALL_DATA} russian.hash russian.dict russian.aff \
+		${PREFIX}/share/ispell
 	${INSTALL_SCRIPT} ${FILESDIR}/ispell-ru.sh ${PREFIX}/bin/ispell-ru
 
 .include <bsd.port.mk>
