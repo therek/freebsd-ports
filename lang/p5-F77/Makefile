@@ -2,7 +2,7 @@
 # Date created:				December 7 1999
 # Whom:	      				jmz
 #
-# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.5 2000/12/10 04:43:07 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ExtUtils-F77
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	ExtUtils
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Helps link C programs with Fortran subroutines
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Tools/Makefile,v 1.14 2000/11/13 12:43:21 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-Tools
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Perl5 module for several file operations: Copy, Recurse and Tools
 
 PERL_CONFIGURE=	YES
 

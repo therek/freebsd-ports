@@ -2,7 +2,7 @@
 # Date created:				October 27, 2000
 # Whom:	      				Marc Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/p5-Convert-BER/Makefile,v 1.1 2000/10/28 00:03:48 scrappy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Convert-BER
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	scrappy@FreeBSD.org
+COMMENT=	Perl5 module to encode and decode objects using Basic Encoding Rules (BER)
 
 PERL_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.10 2001/01/16 17:31:44 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uk-postcodes
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-postcodes/ \
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	brian@FreeBSD.org
+COMMENT=	United Kingdom post codes
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}

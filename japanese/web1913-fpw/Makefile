@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/web1913-fpw/Makefile,v 1.4 2001/02/06 13:22:00 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	web1913-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/web1913/
 DISTNAME=	${PORTNAME}${WEBFPW_VER}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Webster's Revised Unabridged Dictionary (1913) (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/paledit/Makefile,v 1.6 2000/01/09 14:51:16 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	paledit
@@ -11,6 +11,7 @@ CATEGORIES=	japanese sysutils
 MASTER_SITES=	http://www.swlab.csce.kyushu-u.ac.jp/~nom/prj/paledit/
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	NTT DoCoMo PHS Paldio telephone data transfer tool
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes

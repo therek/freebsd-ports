@@ -2,7 +2,7 @@
 # Date created:		28 December 1996
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/net/bing/Makefile,v 1.4 1999/08/30 14:22:10 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bing
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.lip6.fr/pub/networking/
 
 MAINTAINER=	jseger@freebsd.org
+COMMENT=	A point-to-point bandwith measurement tool
 
 MAN8= 		bing.8
 

@@ -2,7 +2,7 @@
 # Date created:				7 May 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xinfocom/Makefile,v 1.6 2000/06/14 05:44:52 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xinfocom
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	mph
 DISTFILES=		unix8m.tgz
 
 MAINTAINER=		mph@freebsd.org
+COMMENT=	An Infocom game interpreter for X11
 
 WRKSRC=			${WRKDIR}/xinfocom
 

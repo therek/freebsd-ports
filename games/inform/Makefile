@@ -2,7 +2,7 @@
 # Date created:				28 June 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/inform/Makefile,v 1.12 2001/07/31 23:27:32 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	inform
@@ -13,6 +13,7 @@ MASTER_SITES=  	ftp://ftp.ifarchive.org/if-archive/infocom/compilers/inform6/sou
 DISTFILES=	inform621_source.zip inform_library610.zip
 
 MAINTAINER=	mph@freebsd.org
+COMMENT=	Compiler for producing text adventure games
 
 .if !defined(NOPORTDOCS)
 MASTER_SITES+=	ftp://ftp.ifarchive.org/if-archive/infocom/compilers/inform6/manuals/old/

@@ -2,7 +2,7 @@
 # Date created:				25 July 2000
 # Whom:					ue@nathan.ruhr.de
 #
-# $FreeBSD: ports/textproc/fdp-tools/Makefile,v 1.1 2000/12/23 10:10:20 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fdp-tools
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.ruhr.de/home/nathan/FreeBSD/
 
 MAINTAINER=	ue@FreeBSD.org
+COMMENT=	A set of small utilities for the FreeBSD Documentation Projekt
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

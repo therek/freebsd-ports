@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.21 2001/05/31 22:22:46 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emacs20-dl-canna
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.m17n.org/pub/mule/dynamic-loading/emacs-canna/ \
 DISTNAME=	emacs-canna-${PORTVERSION}
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	Dynamic loading module input method `Canna' on Emacs
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 # Building this port requires emacs-dl source tree: ${EMACSDL_DIR}:configure

@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/x11-fm/binder/Makefile,v 1.8 2001/02/05 21:00:50 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	binder
@@ -13,6 +13,7 @@ DISTNAME=	Binder-${PORTVERSION}
 EXTRACT_ONLY=	# extracted directly in install target
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	A file manager on X window with TkStep
 
 RUN_DEPENDS=	${RUN_DEP_LIST}
 LIB_DEPENDS=	${LIB_DEP_LIST}

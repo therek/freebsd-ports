@@ -2,7 +2,7 @@
 # Date created:		Feb 5, 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jhd/Makefile,v 1.4 2000/04/11 14:13:59 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jhd
@@ -11,6 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.iamas.ac.jp/UNIX/File/
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Japanese Hexdecimal Dump
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

@@ -2,7 +2,7 @@
 # Date created:				4 May 2000
 # Whom:					mi@aldan.algebra.com
 #
-# $FreeBSD: ports/devel/tcltls/Makefile,v 1.4 2001/05/01 09:55:08 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcltls
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=tls
 DISTNAME=	tls${PORTVERSION}
 
 MAINTAINER=	mi@aldan.algebra.com
+COMMENT=	SSL extensions for TCL; dynamicly loadable
 
 LIB_DEPENDS+=	tcl${TCLVND}:${PORTSDIR}/lang/tcl${TCLVND}
 

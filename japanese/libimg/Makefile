@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/libimg/Makefile,v 1.6 2000/06/17 05:33:57 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libimg
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/graphics/Img/1.2
 DISTNAME=	img${PORTVERSION}
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	Enhanced Tk, adding support for many other Image formats:BMP,XBM,XPM,...
 
 BUILD_DEPENDS=	${PREFIX}/lib/tcl8.0jp/tclIndex:${PORTSDIR}/japanese/tcl80 \
 		${PREFIX}/lib/tk8.0jp/tk.tcl:${PORTSDIR}/japanese/tk80

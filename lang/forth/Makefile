@@ -2,7 +2,7 @@
 # Date created:         23 November 1994
 # Whom:                 mr
 #
-# $FreeBSD: ports/lang/forth/Makefile,v 1.16 2000/07/07 19:38:25 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pfe
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	patrick@FreeBSD.org
+COMMENT=	Implementation of ANSI Forth
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

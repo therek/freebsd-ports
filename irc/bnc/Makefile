@@ -2,7 +2,7 @@
 # Date created:        06 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/irc/bnc/Makefile,v 1.10 2001/04/02 08:30:53 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bnc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.gotbnc.com/files/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	A simple IRC relay proxy with support for virtual hosting
 
 GNU_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:				29 March 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-NetAddr-IP-Count/Makefile,v 1.2 2001/06/12 19:25:07 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	NetAddr-IP-Count
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	NetAddr
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	NetAddr::IP::Count - Count hosts in named subnets
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/NetAddr/IP.pm:${PORTSDIR}/net/p5-NetAddr-IP
 RUN_DEPENDS=	${BUILD_DEPENDS}

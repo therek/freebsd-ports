@@ -2,7 +2,7 @@
 # Date created:				01 June 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/databases/p5-DBIx-DataSource/Makefile,v 1.1 2001/06/11 17:53:31 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	DBIx-DataSource
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	DBIx
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Database-independent create and drop functions
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI
 RUN_DEPENDS=	${BUILD_DEPENDS}

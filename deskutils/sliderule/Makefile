@@ -2,7 +2,7 @@
 # Date created:         4 Aug 1997
 # Whom:                 joerg
 #
-# $FreeBSD: ports/deskutils/sliderule/Makefile,v 1.7 2000/04/10 03:59:12 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sliderule
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	The part of X11R3's xcalc featuring a slide rule
 
 USE_IMAKE=	yes
 MAN1=		sliderule.1

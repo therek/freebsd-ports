@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Errno/Makefile,v 1.11 2000/11/13 12:43:13 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Errno
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Errno
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	A perl5 module providing access to System errno constants
 
 PERL_CONFIGURE=	YES
 

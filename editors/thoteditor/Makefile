@@ -2,7 +2,7 @@
 # Date created:		1 Aug 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.18 2000/04/14 00:25:44 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	thoteditor
@@ -18,6 +18,7 @@ MASTER_SITE_SUBDIR=	apps/editors/X/thot
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
 MAINTAINER=	chuckr@FreeBSD.org
+COMMENT=	An structured document editor, offering a graphical WYSIWYG interface
 
 THOT_SUBDIR=	Target
 USE_MOTIF=	yes

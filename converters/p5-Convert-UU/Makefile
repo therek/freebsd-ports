@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/p5-Convert-UU/Makefile,v 1.26 2000/11/13 12:43:03 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Convert-UU
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Perl5 module for uuencode and uudecode
 
 PERL_CONFIGURE=	YES
 

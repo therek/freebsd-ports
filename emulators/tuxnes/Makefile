@@ -2,7 +2,7 @@
 # Date created:		13 Feb 2000
 # Whom:			Jeroen Ruigrok van der Werven <asmodai@freebsd.org>
 #
-# $FreeBSD: ports/emulators/tuxnes/Makefile,v 1.3 2000/06/20 21:03:27 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tuxnes
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	asmodai@freebsd.org
+COMMENT=	A Nintendo Entertainment System 8-bit emulator
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

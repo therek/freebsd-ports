@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vera-fpw/Makefile,v 1.4 2001/02/06 13:21:58 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vera-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/vera/
 DISTNAME=	vera-${VERA_VER}-fpw${VERAFPW_VER}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Virtual Entity of Relevant Aconyms (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

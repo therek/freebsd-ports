@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Server-FastPL/Makefile,v 1.2 2001/03/01 06:38:41 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Server-FastPL
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Server
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl module to eliminate the compile-time of big scripts
 
 PERL_CONFIGURE=	yes
 

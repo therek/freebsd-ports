@@ -2,7 +2,7 @@
 # Date created:		29 January 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/fasta3/Makefile,v 1.6 2001/06/27 10:14:49 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fasta3
@@ -13,6 +13,7 @@ DISTNAME=	fasta${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.shar.Z
 
 MAINTAINER=	wjv@FreeBSD.org
+COMMENT=	A collection of programs for searching DNA and protein databases, v3
 
 NO_CDROM=	May not be sold or incorporated into a commercial product
 WRKSRC=		${WRKDIR}/fasta3

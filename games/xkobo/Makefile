@@ -2,7 +2,7 @@
 # Date created:		18 Jul 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/games/xkobo/Makefile,v 1.19 2001/01/07 01:21:48 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xkobo
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	will@FreeBSD.org
+COMMENT=	Multi-way scrolling shoot 'em up game for X.  Strangely addictive
 
 USE_IMAKE=	yes
 ALL_TARGET=	xkobo

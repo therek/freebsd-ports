@@ -2,7 +2,7 @@
 # Date created:				02 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/math/p5-Statistics-OLS/Makefile,v 1.2 2001/03/01 06:38:47 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Statistics-OLS
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Statistics
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl module to perform ordinary least squares and other bivariate statistics
 
 PERL_CONFIGURE=	yes
 

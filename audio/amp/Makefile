@@ -2,7 +2,7 @@
 # Date created:		Jun 23 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/audio/amp/Makefile,v 1.9 1999/08/31 06:40:27 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amp
@@ -13,6 +13,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.clara.net/pub/unix/Audio/
 
 MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	Another mp3 player
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

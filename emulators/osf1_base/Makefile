@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.13 2000/07/20 00:23:51 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	osf1_base
@@ -14,6 +14,7 @@ DISTNAME=	netscape-4.7-3.alpha
 EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	The base set of libraries needed in OSF/1 (Tru64) mode
 
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm2cpio
 

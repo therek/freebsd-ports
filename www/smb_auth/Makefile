@@ -2,7 +2,7 @@
 # Date created:				13 January 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/smb_auth/Makefile,v 1.5 2001/02/05 15:33:47 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smb_auth
@@ -11,6 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.hacom.nl/~richard/software/
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A proxy authentication module against an SMB server
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid24 \
 		${LOCALBASE}/sbin/smbd:${PORTSDIR}/net/samba

@@ -2,7 +2,7 @@
 # Date created:         22 Oct 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/yodl/Makefile,v 1.8 2000/06/09 01:36:54 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yodl
@@ -17,6 +17,7 @@ MASTER_SITES=	ftp://ftp.sco.com/skunkware/src/textproc/ \
 		ftp://ftp.sunet.se/pub3/vendor/sco/skunkware/src/textproc/
 
 MAINTAINER=	dburr@FreeBSD.org
+COMMENT=	An easy to use but powerful document formatting/preparation language
 
 BUILD_DEPENDS=	latex:${PORTSDIR}/print/latex \
 		dvips:${PORTSDIR}/print/dvips

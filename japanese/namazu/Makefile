@@ -2,7 +2,7 @@
 # Date created:		17 March 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/namazu/Makefile,v 1.7 2000/04/11 14:15:27 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	namazu
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.namazu.org/stable/ \
 MASTER_SITE_SUBDIR=	flathill
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	Search engine software intended for easy use
 
 BUILD_DEPENDS=	kakasi:${PORTSDIR}/japanese/kakasi \
 		nkf:${PORTSDIR}/japanese/nkf

@@ -2,7 +2,7 @@
 # Date created:         31 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/arc/Makefile,v 1.12 2001/01/16 17:29:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	arc
@@ -14,6 +14,7 @@ DISTNAME=	arc521e.pl8
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Create & extract files from DOS .ARC files
 
 NO_WRKSUBDIR=	yes
 MAN1=		arc.1

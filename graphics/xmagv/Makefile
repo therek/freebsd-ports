@@ -2,7 +2,7 @@
 # Date created:		25 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/graphics/xmagv/Makefile,v 1.4 1999/08/31 06:45:21 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmagv
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.vector.co.jp/pack/unix/art/graphics/loader/mag/
 DISTFILES=	xmagv111.tgz
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	Viewer for X Window System
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 GNU_CONFIGURE=	yes

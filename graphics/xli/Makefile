@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.20 2001/03/29 04:43:33 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xli
@@ -14,6 +14,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	jkoshy@FreeBSD.org
+COMMENT=	Xli, xsetbg, xview, xlito - utilities to display images on X11
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg

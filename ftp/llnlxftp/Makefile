@@ -2,7 +2,7 @@
 # Date created:				9 November 1997
 # Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/llnlxftp/Makefile,v 1.9 2000/11/07 23:28:04 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	llnlxftp
@@ -14,6 +14,7 @@ DISTNAME=	latest_xftp
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dima@FreeBSD.org
+COMMENT=	Motif FTP client
 
 WRKSRC=		${WRKDIR}/llnlxftp2.1/sources
 USE_MOTIF=	yes

@@ -2,7 +2,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/glbiff/Makefile,v 1.16 2001/06/11 15:16:09 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glbiff
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.dgp.utoronto.ca/~mac/projects/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	Xbiff-like program for X Window System with nice 3D output
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes

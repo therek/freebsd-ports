@@ -2,7 +2,7 @@
 # Date created:		3 February 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/misc/bbjd/Makefile,v 1.5 2000/10/08 10:22:21 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bbjd
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Beat the blackjack dealer
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/bbjd

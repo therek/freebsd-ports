@@ -2,7 +2,7 @@
 # Date created:			30 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dvi2tty/Makefile,v 1.16 1999/08/31 06:45:27 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvi2tty-ascii
@@ -16,6 +16,7 @@ PATCHFILES=	${PORTNAME}-jtex-patch \
 		dvi2tty.c-patch
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Character-based DVI file previewer
 
 RUN_DEPENDS=	jless:${PORTSDIR}/japanese/less
 

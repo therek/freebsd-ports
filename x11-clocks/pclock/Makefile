@@ -2,7 +2,7 @@
 # Date created:			15 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/pclock/Makefile,v 1.9 2000/08/13 09:36:03 jim Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pclock
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.kourakos.com/pub/pclock/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	Simple analog clock program for the Window Maker dock
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

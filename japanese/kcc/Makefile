@@ -2,7 +2,7 @@
 # Date created:		26 May 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kcc/Makefile,v 1.8 2000/04/11 14:14:22 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kcc
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Kanji code conversion Filter
 
 INSTALL_TARGET=	install install.man
 MANLANG=	ja

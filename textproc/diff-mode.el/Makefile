@@ -2,7 +2,7 @@
 # Date created:		18 Apr 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/textproc/diff-mode.el/Makefile,v 1.1 2000/07/06 19:08:29 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diff-mode.el
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	# empty
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	okazaki@FreeBSD.org
+COMMENT=	A mode for viewing/editing context diffs in Emacsen
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:         27 November 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.11 2000/06/07 08:05:02 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glx
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	linux_
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	3d@freebsd.org
+COMMENT=	Libraries to make use of glx-aware Linux apps
 
 BUILD_DEPENDS= 	/compat/linux/sbin/ldconfig:${PORTSDIR}/emulators/linux_base	
 

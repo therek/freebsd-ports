@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/graphics/jgv/Makefile,v 1.5 2000/11/14 00:46:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jgv
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
 DISTNAME=	JGV-${PORTVERSION}
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	A graphic viewer with various image types
 
 RUN_DEPENDS=	${RUN_DEP_LIST}
 LIB_DEPENDS=	${LIB_DEP_LIST}

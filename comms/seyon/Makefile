@@ -2,7 +2,7 @@
 # Date created:		3 October 1994
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/comms/seyon/Makefile,v 1.12 1999/08/25 05:12:38 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	seyon
@@ -13,6 +13,7 @@ DISTNAME=	Seyon-${PORTVERSION}
 EXTRACT_SUFX=	-tar.Z
 
 MAINTAINER=	me@FreeBSD.org
+COMMENT=	A communications package for the X Window system
 
 WRKSRC=		${WRKDIR}/seyon
 USE_IMAKE=	yes

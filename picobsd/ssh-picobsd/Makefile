@@ -2,7 +2,7 @@
 # Date created:		21 Apr 2001
 # Whom:			luigi@FreeBSD.org
 #
-# $FreeBSD: ports/picobsd/ssh-picobsd/Makefile,v 1.2 2001/05/22 18:19:43 sobomax Exp $
+# $FreeBSD$
 #
 # A small version of ssh for picobsd. A single binary does ssh,sshd and scp
 #
@@ -18,6 +18,7 @@ MASTER_SITES=	\
 		ftp://ftp.nsysu.edu.tw/Unix/Security/ssh/old/
 
 MAINTAINER=	luigi@FreeBSD.org
+COMMENT=	Secure shell client, server and remote copy (for picobsd)
 
 NO_CDROM=	"Picobsd only"
 NO_PACKAGE=	"This is only useful to build picobsd images"

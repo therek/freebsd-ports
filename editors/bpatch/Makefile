@@ -2,7 +2,7 @@
 # Date created:         18 March 1996
 # Whom:                 joerg
 #
-# $FreeBSD: ports/editors/bpatch/Makefile,v 1.7 1999/08/25 05:43:30 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bpatch
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	A hex editor that doesn't load the whole file at once
 
 MAN1=		bpatch.1
 NO_WRKSUBDIR=   yes

@@ -2,7 +2,7 @@
 # Date created:        04 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/diacanvas/Makefile,v 1.5 2000/06/16 21:51:05 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diacanvas
@@ -11,6 +11,7 @@ CATEGORIES=	graphics gnome
 MASTER_SITES=	http://www.linuxstart.com/~arjan/diacanvas/download/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A general drawing canvas from dia dialog editor
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

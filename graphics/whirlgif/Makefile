@@ -2,7 +2,7 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/whirlgif/Makefile,v 1.4 1999/12/27 08:22:06 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	whirlgif
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.danbbs.dk/~dino/whirlgif/
 DISTNAME=	whirlgif304
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A tool for making GIF animations
 
 NO_WRKSUBDIR=	yes
 

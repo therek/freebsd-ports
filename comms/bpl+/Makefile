@@ -2,7 +2,7 @@
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/comms/bpl+/Makefile,v 1.9 2000/04/08 23:22:27 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bpl+
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	max
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	B Plus file transfer protocol
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bpl ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		09 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xminehunter/Makefile,v 1.13 2000/08/03 09:24:09 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xminehunter
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	A Motif minesweeper game
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		27 Nov 1997
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/net/h2n/Makefile,v 1.3 1999/08/31 06:48:51 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	h2n
@@ -14,6 +14,7 @@ DISTNAME=	dns
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	sada@FreeBSD.org
+COMMENT=	Translate host table to name server file format
 
 NO_BUILD=	YES
 NO_WRKSUBDIR=	YES

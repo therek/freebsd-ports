@@ -2,7 +2,7 @@
 # Date created:		12 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xcubes/Makefile,v 1.11 2000/04/14 12:27:13 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcubes
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Cube puzzle for X11
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

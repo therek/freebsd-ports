@@ -2,7 +2,7 @@
 # Date created:			26 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.22 2001/02/13 12:46:38 max Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kakasi
@@ -11,6 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	ftp://kakasi.namazu.org/pub/kakasi/stable/
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Kanji-Kana Simple Inverter, language filter for Japanese
 
 GNU_CONFIGURE=	yes
 

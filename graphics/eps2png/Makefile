@@ -2,7 +2,7 @@
 # Date created:				12 February 2001
 # Whom:					nik
 #
-# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.4 2001/08/24 21:32:50 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eps2png
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/Johan_Vromans
 
 MAINTAINER=	nik@freebsd.org
+COMMENT=	Converts EPS images to PNG
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu
 

@@ -2,7 +2,7 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/clanlib/Makefile,v 1.3 2001/01/09 23:08:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clanlib
@@ -13,6 +13,7 @@ MASTER_SITES=	http://dark.x.dtu.dk/~mbn/clanlib/download/
 DISTNAME=	ClanLib-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	Cross-platform game SDK
 
 LIB_DEPENDS=	Hermes.1:${PORTSDIR}/graphics/Hermes \
 		png.5:${PORTSDIR}/graphics/png \

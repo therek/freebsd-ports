@@ -2,7 +2,7 @@
 # Date Created:		17 Sep 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/games/xjig/Makefile,v 1.5 1999/08/31 06:44:42 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xjig
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	games
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	Jigsaw puzzle game for X11
 
 USE_XLIB=	yes
 MAKEFILE=	Makefile.Linux

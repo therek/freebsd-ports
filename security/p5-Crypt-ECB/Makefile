@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:09:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-ECB/Makefile,v 1.2 2001/03/01 06:37:14 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-ECB
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/-/}
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl module implementing the ECB encryption algorithm
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-2//}
 

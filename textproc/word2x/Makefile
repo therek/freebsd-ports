@@ -2,7 +2,7 @@
 # Date created:		10 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/word2x/Makefile,v 1.10 2000/03/11 01:47:05 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	word2x
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://word2x.alcom.co.uk/download/
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	Converter from MS Word to text, HTML or LaTeX
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

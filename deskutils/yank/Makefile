@@ -2,7 +2,7 @@
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/yank/Makefile,v 1.12 2001/02/25 19:12:21 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yank
@@ -11,6 +11,7 @@ CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://home.ins.de/~m.hussmann/software/yank/
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	A simple notekeeper and todo-list manager for GNOME
 
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 

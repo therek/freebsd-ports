@@ -2,7 +2,7 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/audio/xcd/Makefile,v 1.28 2000/06/29 02:31:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcd
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	A Tcl/Tk CD player
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

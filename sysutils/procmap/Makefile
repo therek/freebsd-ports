@@ -2,7 +2,7 @@
 # Date created:		22 March 2000
 # Whom:			Jason Evans <jasone@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/procmap/Makefile,v 1.3 2000/04/09 19:08:19 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	procmap
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 DISTFILES=	#empty
 
 MAINTAINER=	jasone@freebsd.org
+COMMENT=	Print the contents of a procfs map file
 
 WRKSRC=		${WRKDIR}
 MAKE_ENV=	MAKEOBJDIRPREFIX=${WRKSRC} MAKEOBJDIR=${WRKSRC}

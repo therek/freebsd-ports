@@ -2,7 +2,7 @@
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.17 2000/09/01 23:31:56 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dlmalloc
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/  \
 DISTFILES=	malloc-2.6.5.c
 
 MAINTAINER=	roberto@FreeBSD.org
+COMMENT=	Small, fast malloc library by Doug Lea
 
 NO_WRKSUBDIR=	yes
 INSTALLS_SHLIB=	yes

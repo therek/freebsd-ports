@@ -2,7 +2,7 @@
 # Date created:				17 December 2000
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/emulators/freesci/Makefile,v 1.5 2001/04/22 10:54:12 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		freesci
@@ -13,6 +13,7 @@ MASTER_SITES=		ftp://ftp.task.gda.pl/pub/games/linuxgames/freesci/ \
 			http://pelit.saunalahti.fi/telenation/linuxgames/freesci/
 
 MAINTAINER=		greid@FreeBSD.org
+COMMENT=	A portable interpreter for SCI games, such as the Space Quest series.
 
 LIB_DEPENDS=		ggi.2:${PORTSDIR}/graphics/libggi \
 			png.5:${PORTSDIR}/graphics/png

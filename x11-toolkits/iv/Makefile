@@ -2,7 +2,7 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.28 2001/01/16 17:33:16 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iv
@@ -13,6 +13,7 @@ DISTNAME=	${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tanimura@FreeBSD.org
+COMMENT=	InterViews: A toolkit from Stanford University and Silicon Graphics
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 

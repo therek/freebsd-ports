@@ -2,7 +2,7 @@
 # Date created:			26 December 1999
 # Whom:	      			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/sysutils/p5-SyslogScan/Makefile,v 1.5 2000/11/13 12:45:01 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SyslogScan
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	SyslogScan
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Perl5 routines to parse system logs
 
 PERL_CONFIGURE=	YES
 

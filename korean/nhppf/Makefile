@@ -2,7 +2,7 @@
 # Date created:         19 Apr 1997
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/nhppf/Makefile,v 1.9 2000/06/30 13:22:18 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nhppf
@@ -11,6 +11,7 @@ CATEGORIES=	korean
 MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/nhppf/
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Hangul printing filter for Netscape 3.0 and above
 
 RUN_DEPENDS=    ${PREFIX}/share/texmf/fonts/type1/korean/pkmj/pkmjm0.pfb:$(PORTSDIR)/korean/hlatex-psfonts-wansung
 

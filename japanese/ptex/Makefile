@@ -2,7 +2,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/ptex-euc/Makefile,v 1.14 2001/06/29 03:13:31 max Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ptex
@@ -15,6 +15,7 @@ DISTNAME=	ptex-src-2.1.10
 DIST_SUBDIR=	teTeX/ptex
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Japanese pTeX files to support EUC character set
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	ptex2.1.10-11.patch

@@ -2,7 +2,7 @@
 # Date created:		13 August 1997
 # Whom:			hosokawa
 #
-# $FreeBSD: ports/converters/ish/Makefile,v 1.4 2000/04/08 23:24:31 mharo Exp $
+# $FreeBSD$
 
 PORTNAME=	ish
 PORTVERSION=	1.11
@@ -10,6 +10,7 @@ CATEGORIES=	converters
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 
 MAINTAINER=	hosokawa@jp.FreeBSD.org
+COMMENT=	Binary-to-text file-encoder
 
 MAKEFILE=	makefile
 ALL_TARGET=	ish

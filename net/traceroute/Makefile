@@ -2,7 +2,7 @@
 # Date created:		20 February 1997
 # Whom:			chris@vader.org
 #
-# $FreeBSD: ports/net/traceroute/Makefile,v 1.9 2000/04/30 00:09:53 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	traceroute
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Version of 'traceroute' that shows the AS network number of each hop
 
 RELEASEDATE=	991603
 NO_WRKSUBDIR=	yes

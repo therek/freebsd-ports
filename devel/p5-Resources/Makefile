@@ -2,7 +2,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Resources/Makefile,v 1.15 2000/11/13 12:43:31 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Resources
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Resources
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Perl5 module handling application defaults in Perl
 
 PERL_CONFIGURE=	YES
 

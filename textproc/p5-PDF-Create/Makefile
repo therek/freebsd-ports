@@ -2,7 +2,7 @@
 # Date created:				20 January 2001
 # Whom:					petef@databits.net
 #
-# $FreeBSD: ports/textproc/p5-PDF-Create/Makefile,v 1.1 2001/03/10 20:51:44 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	PDF-Create
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	File/FTASSIN
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=     petef@FreeBSD.org
+COMMENT=	A perl script to convert text files to PDF files
 
 PERL_CONFIGURE=	yes
 MAN3=		PDF::Create.3

@@ -2,7 +2,7 @@
 # Date created:		06 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/libranlib/Makefile,v 1.10 2000/06/16 08:47:43 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ranlib
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.netlib.org/random/
 DISTNAME=	ranlib.c
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	Library of Routines for Random Number Generation
 
 INSTALLS_SHLIB=	yes
 MAKE_ENV=	NOPROFILE=true

@@ -2,7 +2,7 @@
 # Date created:				13 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.11 2001/03/23 19:59:51 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtk-engines-collection
@@ -13,6 +13,7 @@ DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	The "meta-port" for the collection of several GTK+ theme engines
 
 RUN_DEPENDS=	${THEMESBASE}/libbuffy.so:${THEMESPORTDIR}/buffy \
 		${THEMESBASE}/libclean.so:${THEMESPORTDIR}/clean-theme-gtk \

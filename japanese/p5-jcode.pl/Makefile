@@ -2,7 +2,7 @@
 # Date created:				26 Jun 1998
 # Whom:					SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-jcode.pl/Makefile,v 1.9 2000/08/27 06:13:33 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jcode.pl
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/ \
 EXTRACT_SUFX=	# none
 
 MAINTAINER=	sada@FreeBSD.org
+COMMENT=	Perl5 library for Japanese character code conversion
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

@@ -2,7 +2,7 @@
 # Date created:         26 June 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tksol/Makefile,v 1.17 2000/04/14 12:26:44 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tksol
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.umd.edu/pub/misc_software/tksol/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	A version of the card game solitaire
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

@@ -2,7 +2,7 @@
 # Date created:		10/22/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/net/radreport/Makefile,v 1.3 2000/04/09 18:13:18 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		radreport
@@ -14,6 +14,7 @@ DISTNAME=		radreport
 EXTRACT_SUFX=
 
 MAINTAINER=		kbyanc@FreeBSD.org
+COMMENT=	Perl script for processing radius logs
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

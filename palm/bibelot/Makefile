@@ -3,7 +3,7 @@
 # Date created:		Jan 8, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/bibelot/Makefile,v 1.6 2001/04/14 20:21:57 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bibelot
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ijliao@FreeBSD.org
+COMMENT=	Formats and converts text documents into compressed PalmDoc .pdb files
 
 USE_PERL5=	yes
 

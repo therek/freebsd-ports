@@ -2,7 +2,7 @@
 # Date created:				10th February 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/x11-clocks/xdaliclock/Makefile,v 1.17 2000/04/10 00:33:06 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdaliclock
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.jwz.org/xdaliclock/ \
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	gpalmer@FreeBSD.org
+COMMENT=	A rather neat animated clock
 
 MAN1=		xdaliclock.1
 

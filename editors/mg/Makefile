@@ -2,7 +2,7 @@
 # Date created:			14 May 2001
 # Whom:				Dima Dorfman <dima@unixfreak.org>
 #
-# $FreeBSD: ports/editors/mg/Makefile,v 1.1 2001/05/20 20:53:51 dd Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mg
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 MASTER_SITE_SUBDIR=	dd
 
 MAINTAINER=	dd@FreeBSD.org
+COMMENT=	A small, fast Emacs-like editor
 
 MANSECTS=	1
 MAN1=		mg.1

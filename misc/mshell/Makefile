@@ -2,7 +2,7 @@
 # Date created:         24 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/misc/mshell/Makefile,v 1.17 2000/06/29 02:31:34 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mshell
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	jmz
 DISTFILES=	7432.Z
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	A Unix menuing shell
 
 NO_WRKSUBDIR=	yes
 MAN1=		mshell.1

@@ -2,7 +2,7 @@
 # Date created:        20 Oct 1996
 # Whom:                Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.7 2000/04/14 10:45:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gifmerge
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTFILES=	gifmerge.tar
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A tool for making a GIF Animation
 
 ALL_TARGET=	gifmerge
 NO_WRKSUBDIR=	yes

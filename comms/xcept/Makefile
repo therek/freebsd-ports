@@ -2,7 +2,7 @@
 # Date created:         Sep 1, 1996
 # Whom:                 joerg
 #
-# $FreeBSD: ports/comms/xcept/Makefile,v 1.12 2000/06/09 21:58:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcept
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	A decoder for the CEPT (Btx) protocol
 
 USE_XLIB=	yes
 MAN1=		xcept.1

@@ -2,7 +2,7 @@
 # Date created:		3 August 1996
 # Whom:			lukin
 #
-# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.23 2001/02/05 21:00:51 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	filerunner
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	X11/desktop
 DISTNAME=	FileRunner-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	Filemanager with FTP capabilities. Uses Tcl/Tk
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

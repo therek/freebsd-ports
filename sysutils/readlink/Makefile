@@ -2,7 +2,7 @@
 # Date created:			16 June 2001
 # Whom:				dd
 #
-# $FreeBSD: ports/sysutils/readlink/Makefile,v 1.1 2001/06/24 23:46:25 dd Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	readlink
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 MASTER_SITE_SUBDIR=	dd
 
 MAINTAINER=	dd@FreeBSD.org
+COMMENT=	Dereference a symbolic link and print the name of the target
 
 MANSECTS=	1
 MAN1=		readlink.1

@@ -2,7 +2,7 @@
 # Date created:		17 Jan 2000
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-ttf/Makefile,v 1.3 2000/06/23 12:23:31 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	baekmukfonts
@@ -13,6 +13,7 @@ PKGNAMESUFFIX=	-ttf
 DISTNAME=	baekmuk${PKGNAMESUFFIX}-${PORTVERSION}
 
 MAINTAINER=	cjh@kr.freebsd.org
+COMMENT=	Baekmuk family Korean TrueType Fonts
 
 USE_X_PREFIX=	yes
 NO_BUILD=	yes

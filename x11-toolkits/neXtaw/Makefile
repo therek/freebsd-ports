@@ -2,7 +2,7 @@
 # Date created:		16 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.22 2001/02/05 16:49:04 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	neXtaw
@@ -11,6 +11,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://gama.urisan.tche.br/~casantos/neXtaw/
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	Athena Widgets with N*XTSTEP appearance
 
 USE_IMAKE=	yes
 INSTALLS_SHLIB=	yes

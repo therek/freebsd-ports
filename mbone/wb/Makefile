@@ -2,7 +2,7 @@
 # Date created:		2 Novermber 1996
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/wb/Makefile,v 1.11 2001/01/16 17:31:34 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wb
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/wb/
 DISTFILES=	i386-wb-1.59.tar.Z
 
 MAINTAINER=	fenner@FreeBSD.org
+COMMENT=	A shared drawing (whiteboard) tool using multicast
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

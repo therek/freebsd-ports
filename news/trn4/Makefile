@@ -2,7 +2,7 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn4/Makefile,v 1.26 2001/03/21 00:06:36 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trn
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	trn-4.0-test76
 
 MAINTAINER=	mph@freebsd.org
+COMMENT=	Version 4.0 of the threaded readnews newsreader
 
 NO_LATEST_LINK=	yes
 NO_PACKAGE=	"Too many questions"

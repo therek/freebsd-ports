@@ -2,7 +2,7 @@
 # Date created:                 2 Jul 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatex/Makefile,v 1.4 2000/07/04 17:47:06 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HLaTeX
@@ -14,6 +14,7 @@ DIST_SUBDIR=	hlatex
 EXTRACT_ONLY=	HLaTeX-0.991.tar.gz
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	LaTeX package to use Hangul(UHC/KSX1001)
 
 # it depends on teTeX(lambda)
 BUILD_DEPENDS=	texhash:${PORTSDIR}/print/teTeX

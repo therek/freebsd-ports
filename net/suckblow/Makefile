@@ -2,7 +2,7 @@
 # Date created:				26 Jun 2000
 # Whom:					Archie Cobbs
 #
-# $FreeBSD: ports/net/suckblow/Makefile,v 1.2 2000/06/29 00:17:32 archie Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	suckblow
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	archie
 
 MAINTAINER=	archie@freebsd.org
+COMMENT=	Two companion utilities for transferring data over a TCP socket
 
 MAN1=		suck.1
 MLINKS=		suck.1 blow.1

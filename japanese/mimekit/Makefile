@@ -2,7 +2,7 @@
 # Date created:			9 April 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mimekit/Makefile,v 1.10 2000/04/11 14:15:07 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mimekit
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.etl.go.jp/pub/DeleGate/
 DISTNAME=	delegate6.1.19
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Library to handle messages with MIME-encoded headers
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/mimekit
 

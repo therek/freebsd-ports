@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.9 2001/06/09 19:32:14 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	evg
@@ -14,6 +14,7 @@ DISTNAME=	evg-1_3_1
 EXTRACT_SUFX=	_tar
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Create index pages in HTML for photo galleries
 
 RUN_DEPENDS+=	convert:${PORTSDIR}/graphics/ImageMagick
 RUN_DEPENDS+=	xv:${PORTSDIR}/graphics/xv

@@ -2,7 +2,7 @@
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/lmmon/Makefile,v 1.10 2000/04/22 10:12:36 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lmmon
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://www.fxp.org/~jedgar/lmmon/
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Display information gathered from MB power management controller
 
 GNU_CONFIGURE=	yes
 MAN8=		lmmon.8

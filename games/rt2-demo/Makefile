@@ -2,7 +2,7 @@
 # Date created:		Sun Jun 18 11:23:18 CEST 2000
 # Whom:			se@freebsd.org
 #
-# $FreeBSD:$
+# $FreeBSD$
 #
 
 PORTNAME=	rt2_demo
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.run
 EXTRACT_ONLY=
 
 MAINTAINER=	se@FreeBSD.org
+COMMENT=	The free demo of Railroad Tycoon II
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/demoroniser/Makefile,v 1.7 2000/06/15 22:29:25 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	demoroniser
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=jedgar
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Correct moronic and gratuitously incompatible HTML from MS applications
 
 USE_ZIP=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:		27 February 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssh-askpass/Makefile,v 1.7 2001/03/05 14:49:16 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	OpenSSH-askpass
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kris
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Graphical password applet for entering SSH passphrase
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/X11/xc/programs/ssh-askpass
 USE_IMAKE=	yes

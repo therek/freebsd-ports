@@ -2,7 +2,7 @@
 # Date created:        14 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/giftool/Makefile,v 1.10 2000/04/14 10:45:56 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	giftool
@@ -11,6 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.sbs.de/pub/www/tools/giftool/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A tool for GIF89a transparent option and interlace mode
 
 NO_CDROM=	"Shareware"
 

@@ -2,7 +2,7 @@
 # Date created:		18 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xpuzzletama/Makefile,v 1.10 2000/08/03 09:24:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpuzzletama
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/ \
 		ftp://mirror.nucba.ac.jp/mirror/JG/JG-0.9.1/sources/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Puzzle tama, a tetris like game
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

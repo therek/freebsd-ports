@@ -2,7 +2,7 @@
 # Date created:        14 March 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/astro/wmmoonclock/Makefile,v 1.8 2000/04/08 22:01:58 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmMoonClock
@@ -11,6 +11,7 @@ CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Displays the phase of the moon, plus orbital data
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Src
 

@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dserver/Makefile,v 1.13 2000/10/08 10:20:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dserver
@@ -20,6 +20,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	${DISTFILES:Nkenjiro-*}
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT=	CDROM dictionary server & clients
 
 RUN_DEPENDS=	jless:${PORTSDIR}/japanese/less
 

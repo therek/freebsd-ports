@@ -2,7 +2,7 @@
 # Date created:        17 February 1999
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/xosmulti/Makefile,v 1.3 1999/08/31 06:44:47 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xosmulti
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}_tar
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	A littele girl catoon on the top of the active window
 
 WRKSRC=		${WRKDIR}/xosmulti
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:         12 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dviselect/Makefile,v 1.18 2000/07/02 22:45:46 jmz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dviselect
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	jmz
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Extract pages from DVI files
 
 SCRIPTS_ENV=	CFLAGS="${CFLAGS}"
 

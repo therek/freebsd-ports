@@ -2,7 +2,7 @@
 # Date created:		22 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xsoldier/Makefile,v 1.12 2000/08/03 09:24:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xsoldier
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.surfline.ne.jp/hachi/xsoldier/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Shooting game for x11
 
 USE_IMAKE=	yes
 USE_XPM=	yes

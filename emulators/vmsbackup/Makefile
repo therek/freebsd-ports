@@ -2,7 +2,7 @@
 # Date created:		18 Apr 1994
 # Whom:			Jonathan M. Bresler (jmb)
 #
-# $FreeBSD: ports/emulators/vmsbackup/Makefile,v 1.9 1999/08/25 05:49:46 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vmsbackup
@@ -15,6 +15,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jmb@FreeBSD.org
+COMMENT=	Reads VMS BACKUP tapes
 
 MAN1=		vmsbackup.1
 MANCOMPRESSED=	yes

@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/netrek-BRMH-bin/Makefile,v 1.5 2000/04/15 11:28:18 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netrek-BRMH
@@ -13,6 +13,7 @@ DISTNAME=	BRMH-2.2p2.freebsd.bin
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	dburr@FreeBSD.org
+COMMENT=	A 16-player network space battle/conquest game with a Star Trek theme
 
 USE_X_PREFIX=		YES
 NO_BUILD=		YES

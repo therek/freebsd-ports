@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/ASCIIdates98-fpw/Makefile,v 1.2 2000/12/04 18:23:40 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ASCIIdates98-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/ASCIIdates98/
 DISTNAME=	${PORTNAME:S/-fpw//}-${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A Japanese dictionary for PC terms in '98 ASCII Dates Book (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/mail/namg/Makefile,v 1.2 2001/02/18 15:28:25 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	namg
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.zip.com.au/~gsymonds/NAMG/
 DISTNAME=	NAMG-${PORTVERSION}
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
+COMMENT=	A program to download mail from a NetAddress web account
 
 GNU_CONFIGURE=	yes
 

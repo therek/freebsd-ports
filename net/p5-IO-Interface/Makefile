@@ -2,7 +2,7 @@
 # Date created:				26 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-IO-Interface/Makefile,v 1.2 2001/05/17 11:22:00 joe Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IO-Interface
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	IO
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl extension for access to network card configuration information
 
 PERL_CONFIGURE=	yes
 

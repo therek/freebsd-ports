@@ -2,7 +2,7 @@
 # Date created:         11 Apr 1997
 # Whom:                 Makoto Matsushita <matusita@jp.freebsd.org>
 #
-# $FreeBSD: ports/japanese/kon2-16dot/Makefile,v 1.26 2000/04/11 14:14:34 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kon2
@@ -20,6 +20,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		jiskan16.bdf 8x16rk.bdf
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	Kanji On Console -- Display kanji characters on your own console
 
 ONLY_FOR_ARCHS=	i386
 

@@ -2,7 +2,7 @@
 # Date created:		15 June 1996
 # Whom:			Mita Yoshio <mita@iis.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/escpf/Makefile,v 1.5 2000/01/23 11:49:56 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	escpf
@@ -11,6 +11,7 @@ CATEGORIES=	japanese print
 MASTER_SITES=	http://www.flatout.org/~wing/Linux/Escpf/
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT=	Text filters for ESC/P, ESC/Page and ESC/PS printers
 
 DOCDIR=		${PREFIX}/share/doc/escpf
 LINES?=		66

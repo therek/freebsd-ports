@@ -2,7 +2,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.8 2000/04/13 08:34:08 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xnetmaj
@@ -14,6 +14,7 @@ DISTFILES=	netmaj-${PORTVERSION}.tar.gz \
 		netmaj-xui-${PORTVERSION}.tar.gz
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A mahhjong game for X
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

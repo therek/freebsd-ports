@@ -2,7 +2,7 @@
 # Date created:		03 January 2000
 # Whom:			shige
 #
-# $FreeBSD: ports/sysutils/eject/Makefile,v 1.2 2000/04/09 19:07:34 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eject
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/OD/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/FreeBSD-jp/OD/
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	Utility for ejecting media from CD or optical disk drive
 
 DOCDIR=		share/doc/eject
 PLIST_SUB=	DOCDIR=${DOCDIR}

@@ -2,7 +2,7 @@
 # Date created:        2 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/games/xflame/Makefile,v 1.4 1999/08/31 06:44:39 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xflame
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.owlnet.rice.edu/~rahul/
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	A cool animated flame
 
 USE_IMAKE=	yes
 

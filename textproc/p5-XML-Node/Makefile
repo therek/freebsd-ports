@@ -2,7 +2,7 @@
 # Date created:		13 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/p5-XML-Node/Makefile,v 1.1 2001/05/11 16:17:16 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-Node
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	wjv@FreeBSD.org
+COMMENT=	Perl5 module to extend and simplify XML::Parser
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 

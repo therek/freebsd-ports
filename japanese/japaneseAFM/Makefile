@@ -2,7 +2,7 @@
 # Date created:		11 September 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/japaneseAFM/Makefile,v 1.4 1999/08/25 05:24:24 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	japaneseAFM
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
+COMMENT=	Japanese AFM fonts
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

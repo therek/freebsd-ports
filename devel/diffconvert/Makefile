@@ -2,7 +2,7 @@
 # Date created:        30 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/devel/diffconvert/Makefile,v 1.1 2000/12/30 16:43:40 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diffconvert
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
+COMMENT=	A converter between context diff and unidiff formats
 
 PROGRAMS=	cd2ud cdiffreverse ud2cd udiffreverse
 

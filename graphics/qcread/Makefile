@@ -2,7 +2,7 @@
 # Date created:        23 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qcread/Makefile,v 1.6 2000/04/14 10:47:13 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qcread
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://mars.illtel.denver.co.us/pub/qcread/ \
 		http://mars.illtel.denver.co.us/pub/qcread/
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	Supports both color and B&W parallel-port Connectix QuickCam for PC
 
 ONLY_FOR_ARCHS=	i386
 

@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/muggy/Makefile,v 1.4 2000/11/14 01:14:58 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	muggy
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/Factory/JDE/dist/
 DISTNAME=	Muggy-${PORTVERSION}
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	A simple text editor for the X on TkStep
 
 RUN_DEPENDS=	${RUN_DEP_LIST}
 LIB_DEPENDS=	${LIB_DEP_LIST}

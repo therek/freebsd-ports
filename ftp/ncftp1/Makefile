@@ -3,7 +3,7 @@
 # Date created:			  20 Jun 1996
 # Whom:				  jkh
 #
-# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.15 2000/04/12 05:31:16 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ncftp1
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 DISTNAME=	ncftp-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	FTP replacement with advanced user interface
 
 MAN1=		ncftp.1
 

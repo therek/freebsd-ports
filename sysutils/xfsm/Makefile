@@ -2,7 +2,7 @@
 # Date Created:				24 Nov 1997
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/xfsm/Makefile,v 1.10 2000/04/09 19:09:02 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfsm
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	system/status/xstatus
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	vanilla@FreeBSD.org
+COMMENT=	X File System Monitor
 
 USE_IMAKE=	yes
 MAN1=		xfsm.1

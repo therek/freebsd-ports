@@ -2,7 +2,7 @@
 # Date created:		21 July 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/lang/caml-light/Makefile,v 1.7 1999/08/25 06:34:18 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	caml
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://ftp.inria.fr/lang/caml-light/ \
 DISTNAME=	cl74unix
 
 MAINTAINER=	jkoshy@freebsd.org
+COMMENT=	A strongly typed functional language belonging to the ML family
 
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/cl74

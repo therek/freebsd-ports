@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/alevt/Makefile,v 1.10 2001/02/21 06:35:17 roger Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	alevt
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	apps/video
 
 MAINTAINER=	roger@freebsd.org
+COMMENT=	X11 Teletext decoding and display program. (reads from /dev/vbi)
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 

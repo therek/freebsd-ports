@@ -2,7 +2,7 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD: ports/games/xblast/Makefile,v 1.10 2000/10/20 21:14:23 se Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xblast
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	games/arcade
 DISTNAME=	${PORTNAME}-${PORTVERSION}.sound
 
 MAINTAINER=	se@FreeBSD.org
+COMMENT=	Multi-player real-time strategy game for X11
 
 WRKSRC=		${WRKDIR}/XBlast-2.6-sound
 USE_IMAKE=	yes

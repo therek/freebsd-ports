@@ -2,7 +2,7 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/misc/xgas/Makefile,v 1.8 2000/04/14 08:47:08 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgas
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	X11/demos
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	The animated simulation of an ideal gas
 
 USE_IMAKE=	yes
 MAN1=		xgas.1

@@ -2,7 +2,7 @@
 # Date created:	11 August 1998
 # Whom:		Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/stamp/Makefile,v 1.7 2000/04/14 10:47:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stamp
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	stamp
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	Adds a graphical, configurable timestamp to a grayscale image
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt

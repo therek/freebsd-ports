@@ -2,7 +2,7 @@
 # Date created:			Tue Jun  1 22:58:13 PDT 1999
 # Whom:				mharo@FreeBSD.org
 #
-# $FreeBSD: ports/net/ttcp/Makefile,v 1.2 1999/08/30 14:24:26 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ttcp
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.sgi.com/sgi/src/ttcp/
 DISTFILES=	ttcp.c ttcp.1 README
 
 MAINTAINER=	mharo@FreeBSD.org
+COMMENT=	Benchmarking tool for analysing TCP and UDP performance
 
 EXTRACT_ONLY=	#none
 NO_WRKSUBDIR=	yes

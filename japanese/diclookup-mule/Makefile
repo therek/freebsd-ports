@@ -2,7 +2,7 @@
 # Date created:		31 Jan 1998
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/diclookup-mule/Makefile,v 1.8 2000/04/11 14:13:01 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	diclookup-mule
@@ -14,6 +14,7 @@ PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	diclookup-mule-${PORTVERSION}-wave-patch.gz
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT=	CDROM dictionary client for mule
 
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/non-cjk/fonts.dir:${PORTSDIR}/x11-fonts/etlfonts
 BUILD_DEPENDS=	mule:${PORTSDIR}/japanese/mule-freewnn

@@ -2,7 +2,7 @@
 # Date created:         		1 July 1998
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/devel/a2dev/Makefile,v 1.6 2000/06/29 07:02:08 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		a2dev
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	archie
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		archie@FreeBSD.org
+COMMENT=	Apple II 6502 assembler, linker, loader, and object file viewer
 
 USE_GMAKE=		defined
 PATCH_STRIP=		-p1

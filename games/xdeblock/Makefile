@@ -2,7 +2,7 @@
 # Date created:		28 December 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xdeblock/Makefile,v 1.9 2000/04/14 12:27:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdeblock
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.vector.co.jp/pack/unix/game/action/block/
 DISTFILES=	${PORTNAME}.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Block action game
 
 WRKSRC=		${WRKDIR}/xdeblo_v1.0
 USE_IMAKE=	yes

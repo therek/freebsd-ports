@@ -2,7 +2,7 @@
 # Date created:         Sun Oct 31 1999
 # Whom:                 tobez@plab.ku.dk
 #
-# $FreeBSD: ports/www/mathopd/Makefile,v 1.11 2001/02/18 15:37:58 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mathopd
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.mathopd.org/dist/ \
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/pl/}
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	A very small, yet very fast HTTP server
 
 post-install:
 	@${INSTALL_DATA} ${FILESDIR}/mathopd.conf.sample ${PREFIX}/etc

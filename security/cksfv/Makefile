@@ -2,7 +2,7 @@
 # Date created:		18 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/security/cksfv/Makefile,v 1.3 2001/06/27 10:14:43 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cksfv
@@ -11,6 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://www.fodder.org/cksfv/
 
 MAINTAINER=	wjv@FreeBSD.org
+COMMENT=	Create or manipulate Simple File Verification (SFV) checksum files
 
 BUILD_WRKSRC=	${WRKSRC}/src
 INSTALL_WRKSRC=	${BUILD_WRKSRC}

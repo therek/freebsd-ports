@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/mizifont/Makefile,v 1.16 2000/10/08 10:21:45 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mizifonts
@@ -13,6 +13,7 @@ DISTNAME=	xfntmizi-1.1-2.noarch
 EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Mizi Research's Korean X11 Font(ksc5601.1987-[01] encoding)
 
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/archivers/rpm
 

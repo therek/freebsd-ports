@@ -2,7 +2,7 @@
 # Date created:         20 May 1997
 # Whom:                 CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/h2ps/Makefile,v 1.10 2000/07/23 05:06:17 cjh Exp $
+# $FreeBSD$
 #
 # Thanks to SungGon Yi <skon@stats.snu.ac.kr> for advising 2.06 ports
 #
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Formats an ascii file for printing on a postscript printer with Korean char
 
 pre-build:
 	@(cd ${WRKSRC}; make clean)

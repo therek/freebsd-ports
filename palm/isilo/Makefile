@@ -2,7 +2,7 @@
 # Date created:		20 December 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/palm/isilo/Makefile,v 1.7 2000/04/21 07:52:00 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	isilo
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.iSilo.com/pub/
 DISTNAME=	iSiloBSD
 
 MAINTAINER=	nik@FreeBSD.org
+COMMENT=	Converts documents from text/HTML to iSilo format
 
 USE_ZIP=	yes
 NO_BUILD=	yes

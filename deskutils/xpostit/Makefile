@@ -2,7 +2,7 @@
 # Date created:        6 May 1996
 # Whom:                joerg
 #
-# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.12 2000/06/03 08:46:30 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpostit
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	PostIt (R) messages onto your X11 screen
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xpostit

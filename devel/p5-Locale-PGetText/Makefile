@@ -2,7 +2,7 @@
 # Date created:        27 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Locale-PGetText/Makefile,v 1.4 2001/03/10 04:35:32 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Locale-PGetText
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Locale
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Pure perl implementation of GNU gettext
 
 PERL_CONFIGURE=	YES
 

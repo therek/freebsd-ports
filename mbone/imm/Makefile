@@ -2,7 +2,7 @@
 # Date created:		13 October 1994
 # Whom:			wollman
 #
-# $FreeBSD: ports/mbone/imm/Makefile,v 1.23 1999/11/28 18:31:09 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imm
@@ -13,6 +13,7 @@ DISTNAME=	imm.source
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	fenner@freebsd.org
+COMMENT=	Internet Image(or other data) Multicaster (and receiver)
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

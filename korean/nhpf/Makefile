@@ -2,7 +2,7 @@
 # Date created:         25 May 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/nhpf/Makefile,v 1.7 2000/07/23 05:06:32 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nhpf
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Hangul Printing Filter for Netscape with embedded font
 
 do-install:
 	${MKDIR} ${PREFIX}/bin

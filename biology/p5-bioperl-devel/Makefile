@@ -2,7 +2,7 @@
 # Date created:		13 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/biology/p5-bioperl-devel/Makefile,v 1.2 2001/08/20 12:41:08 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bioperl
@@ -15,6 +15,7 @@ PKGNAMESUFFIX=	-devel
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	wjv@FreeBSD.org
+COMMENT=	A collection of Perl modules for bioinformatics (developer's release)
 
 # These are all run-time dependencies, but listing them in ${BUILD_DEPENDS}
 # prevents a flood of build-time warnings.

@@ -2,7 +2,7 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.11 2001/09/16 06:42:36 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rtc
@@ -12,6 +12,7 @@ MASTER_SITES=	# none
 DISTFILES=	# none
 
 MAINTAINER=	freebsd-emulation@FreeBSD.org
+COMMENT=	Kernel module which provides /dev/rtc device support
 
 WRKSRC=		${WRKDIR}/files
 

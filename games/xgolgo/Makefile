@@ -2,7 +2,7 @@
 # Date created:        1 July 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xgolgo/Makefile,v 1.7 2000/01/22 11:46:07 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgolgo
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.nemoto.ecei.tohoku.ac.jp/pub/X11/misc/
 DISTNAME=	xeyes-g
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Xgolgo watches what you are doing and whether you're hostile or not
 
 WRKSRC=		${WRKDIR}/xeyes
 USE_IMAKE=	yes

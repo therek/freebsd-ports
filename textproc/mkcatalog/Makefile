@@ -2,7 +2,7 @@
 # Date created:		26 Oct 2000
 # Whom:			shige
 #
-# $FreeBSD: ports/textproc/mkcatalog/Makefile,v 1.1 2000/10/27 08:06:42 shige Exp $
+# $FreeBSD$
 #
 # This port is self contained in the src directory.
 #
@@ -14,6 +14,7 @@ MASTER_SITES=	# none
 DISTFILES=	# none
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	A maintainance utility for sgml catalog files
 
 NO_WRKSUBDIR=	yes
 NO_CHECKSUM=	yes

@@ -2,7 +2,7 @@
 # Date created:         17 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/hfs/Makefile,v 1.12 2000/06/11 17:30:27 jmz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hfs
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	jmz
 DISTNAME=	${PORTNAME}${PORTVERSION:S/./_/}
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Read Macintosh HFS floppy disks, hard drives and CDROMs
 
 USE_GMAKE=	yes
 MAN1=		hfs.1

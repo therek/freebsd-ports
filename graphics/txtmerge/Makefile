@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1996
 # Whom:			Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/txtmerge/Makefile,v 1.10 2000/05/14 05:40:51 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	txtmerge
@@ -14,6 +14,7 @@ DISTNAME=	txtmerge101
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Tool for making GIF Animations
 
 WRKSRC=		${WRKDIR}/txtmerge
 ALL_TARGET=	txtmerge

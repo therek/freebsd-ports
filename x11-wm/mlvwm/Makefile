@@ -2,7 +2,7 @@
 # Date created:        19 Januruary 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.20 2000/08/03 09:28:10 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mlvwm
@@ -14,6 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} mini-icons.tar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Macintosh like window manager for X11
 
 USE_IMAKE=	yes
 USE_XPM=	yes

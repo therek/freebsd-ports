@@ -2,7 +2,7 @@
 # Date created:				1st June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/news/p5-NNTPClient/Makefile,v 1.6 2001/06/11 23:59:47 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	NNTPClient
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	News
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	Client interface to NNTP (RFC977)
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:			03 May 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/qkc/Makefile,v 1.14 2000/04/12 14:37:26 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qkc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://hp.vector.co.jp/authors/VA000501/
 DISTNAME=	${PORTNAME}c100
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Quick Kanji Code Converter (C version)
 
 USE_ZIP=	yes
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:			30 Aug 1998
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/nfbtrans/Makefile,v 1.9 2001/02/05 16:34:56 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nfbtrans
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.nfb.org/braille/nfbtrans/
 DISTNAME=	nfbtr${PORTVERSION:S/.//}
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	ASCII text to Grade Two braille translator
 
 RESTRICTED=	"Unclear copyright status"
 

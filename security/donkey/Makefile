@@ -2,7 +2,7 @@
 # Date created:			17 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/security/donkey/Makefile,v 1.4 1999/08/31 06:50:04 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	donkey
@@ -11,6 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/pub/Security/tool/donkey/
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	An alternative for S/KEY's key command
 
 GNU_CONFIGURE=	yes
 WRKSRC=			${WRKDIR}/${DISTNAME}/obj/FreeBSD

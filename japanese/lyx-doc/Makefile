@@ -2,7 +2,7 @@
 # Date created:		10 Nov 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/lyx-doc/Makefile,v 1.2 1999/12/08 21:19:12 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lyx_doc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.hiei.kit.ac.jp/~hitomi/lyx/
 DISTNAME=	ja_LyX_Doc.${PORTVERSION}
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	Japanese Lyx documents translated from original ones
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

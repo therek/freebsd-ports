@@ -2,7 +2,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.22 2000/09/22 11:40:06 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lapack
@@ -13,6 +13,7 @@ DISTNAME=	LAPACK
 DISTFILES=	lapack.tgz manpages.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	A library of Fortran 77 subroutines for linear algebra
 
 DIST_SUBDIR=	lapack
 

@@ -2,7 +2,7 @@
 # Date created:                   Feb 18, 1999
 # Whom:                           ache
 #
-# $FreeBSD: ports/textproc/sarep/Makefile,v 1.13 2000/06/02 02:13:08 hoek Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sarep
@@ -12,6 +12,7 @@ MASTER_SITES=	http://tarp.worldserve.net/software/
 EXTRACT_SUFX=
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Command-line search and replace tool; written in Perl; handles regexps
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Text/CSV_XS.pm:${PORTSDIR}/textproc/p5-Text-CSV_XS
 

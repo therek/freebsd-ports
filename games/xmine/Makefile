@@ -2,7 +2,7 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xmine/Makefile,v 1.22 2000/09/05 18:34:49 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmine
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PKGNAME}-Xaw
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	The `Athena' port of the xminesweeper game
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 

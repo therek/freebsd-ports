@@ -2,7 +2,7 @@
 # Date created:		09/13/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/netscape-remote/Makefile,v 1.5 2001/02/26 05:02:29 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscape-remote
@@ -13,6 +13,7 @@ MASTER_SITES=	http://home.netscape.com/newsref/std/
 DISTFILES=	remote.c vroot.h
 
 MAINTAINER=	kbyanc@posi.net
+COMMENT=	Utility to pass commands to running netscape process
 
 USE_XLIB=	yes
 DIST_SUBDIR=	netscape-remote

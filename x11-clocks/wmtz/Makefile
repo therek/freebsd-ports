@@ -2,7 +2,7 @@
 # Date created:			24 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.12 2001/02/05 17:05:28 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmtz
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.geocities.com/jl1n/wmtz/ \
 		http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	Dockapp that displays the time in different time zones
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmtz

@@ -2,7 +2,7 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/textproc/dtd-catalogs/Makefile,v 1.7 2000/07/25 10:46:48 asmodai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dtd-catalogs
@@ -12,6 +12,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	SGML DTDs catalogs
 
 RUN_DEPENDS=	${ISO8879_CAT}:${PORTSDIR}/textproc/iso8879 \
 		${ISO12083_CAT}:${PORTSDIR}/textproc/iso12083 \

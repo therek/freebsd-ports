@@ -2,7 +2,7 @@
 # Date created:         29-March-1996
 # Whom:                 joerg
 #
-# $FreeBSD: ports/print/html2latex/Makefile,v 1.8 2000/04/09 17:40:23 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	html2latex
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	Convert HTML document into LaTeX
 
 MAN1=		html2latex.1
 MANCOMPRESSED=	yes

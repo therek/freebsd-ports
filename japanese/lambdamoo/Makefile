@@ -2,7 +2,7 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.6 2000/10/29 11:12:55 flathill Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lambdamoo
@@ -19,6 +19,7 @@ PATCH_SITE_SUBDIR=	flathill
 PATCHFILES=	ja-lambdamoo-19990704.patch.gz
 
 MAINTAINER=	flathill@FreeBSD.ORG
+COMMENT=	The most commonly used program to run MOOs
 
 WRKSRC=		${WRKDIR}/MOO-${PORTVERSION}
 GNU_CONFIGURE=	yes

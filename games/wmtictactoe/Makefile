@@ -2,7 +2,7 @@
 # Date created:			28 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtictactoe/Makefile,v 1.8 2000/06/29 07:02:19 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmtictactoe
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	jim
 DISTNAME=	wmtictactoe-1.1-1
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	A dockable TicTacToe game for WindowMaker and AfterStep
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/wmtictactoe.app/wmtictactoe

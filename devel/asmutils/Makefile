@@ -2,7 +2,7 @@
 # Date created:        22 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/devel/asmutils/Makefile,v 1.3 2001/05/14 19:27:39 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asmutils
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://linuxassembly.org/asmutils/
 
 MAINTAINER=	greid@FreeBSD.org
+COMMENT=	A set of UNIX utilities written in assembly language
 
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 

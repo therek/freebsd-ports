@@ -2,7 +2,7 @@
 # Date created:		11 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/xshodo/Makefile,v 1.10 2000/01/22 11:46:29 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xshodo
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://cclub.tutcc.tut.ac.jp/pub/xwin/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A paint tool for Shodo, the Japanese traditional writing character
 
 USE_IMAKE=	yes
 MAN1=		xshodo.1

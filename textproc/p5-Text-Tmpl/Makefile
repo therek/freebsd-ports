@@ -2,7 +2,7 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Tmpl/Makefile,v 1.3 2001/06/12 19:25:38 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-Tmpl
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Templating system perl library
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		25 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/graphics/xpx/Makefile,v 1.7 2000/04/14 10:48:00 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpx
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/xpx/
 DISTNAME=	xpx141
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	A simple pixel editing tool to make datas for KISS
 
 WRKSRC=		${WRKDIR}/xpx
 USE_IMAKE=	yes

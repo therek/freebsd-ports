@@ -2,7 +2,7 @@
 # Date created:         8 May 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/misc/kp/Makefile,v 1.18 2000/11/07 23:28:13 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kp
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/kp
 
 MAINTAINER=	asami@FreeBSD.org
+COMMENT=	The Keyboard Practicer, touch-type training program
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

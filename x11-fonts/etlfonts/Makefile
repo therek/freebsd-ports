@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.12 2000/10/08 10:23:22 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	etlfonts-noncjk
@@ -13,6 +13,7 @@ DISTNAME=	non-cjk
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT=	X11 supplemental fonts
 
 EXTRACT_CMD=		${TAR}
 EXTRACT_BEFORE_ARGS=	-xf

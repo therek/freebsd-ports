@@ -2,7 +2,7 @@
 # Date created:		13 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/im/Makefile,v 1.8 2000/04/13 19:59:46 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	im
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/ \
 		${MASTER_SITE_PORTS_JP}
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
+COMMENT=	Set of user interfaces of Email and NetNews
 
 USE_PERL5=	yes
 USE_AUTOCONF=	yes

@@ -2,7 +2,7 @@
 # Date created:		99/07/02
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/wmapm/Makefile,v 1.6 2000/08/03 09:26:24 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmapm
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Laptop battery status display for WindowMaker
 
 ONLY_FOR_ARCHS=	i386
 

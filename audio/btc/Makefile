@@ -2,7 +2,7 @@
 # Date created:        1 August 2000
 # Whom:                Bill Fumerola <billf@chimesnet.com>
 #
-# $FreeBSD: ports/audio/btc/Makefile,v 1.1.1.1 2000/07/30 20:36:48 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	btc
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.harmony-central.com/Bass/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	A tool for creating bass tablature
 
 WRKSRC=		${WRKDIR}
 

@@ -2,7 +2,7 @@
 # Date created:				29 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-DoubleMetaphone/Makefile,v 1.3 2001/06/12 19:25:30 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-DoubleMetaphone
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Phonetic encoding of words
 
 PERL_CONFIGURE=	yes
 

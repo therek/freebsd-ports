@@ -3,7 +3,7 @@
 # Date created:			Mar 4, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/security/beecrypt/Makefile,v 1.1 2001/03/04 04:37:05 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	beecrypt
@@ -14,6 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ijliao@FreeBSD.org
+COMMENT=	BeeCrypt is an open source cryptography library
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         17 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/fudgit/Makefile,v 1.9 1999/08/25 07:09:37 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Fudgit
@@ -13,6 +13,7 @@ DISTNAME=	Fudgit_${PORTVERSION}
 DISTFILES=	fudgit_${PORTVERSION}.tar.gz
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Multi-purpose data-processing and fitting program
 
 USE_GMAKE=	yes
 MAN1=		fudgit.1

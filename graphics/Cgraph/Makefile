@@ -2,7 +2,7 @@
 # Date created:		25 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.9 2001/06/12 19:24:46 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Cgraph
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.tobez.org/download/port-mirrors/graphics/Cgraph/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	A PostScript plotting library in C
 
 WRKSRC=		${WRKDIR}/Cgraph/source
 

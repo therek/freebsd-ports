@@ -2,7 +2,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.16 2000/11/10 11:52:32 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	metamail
@@ -14,6 +14,7 @@ DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	torstenb@FreeBSD.org
+COMMENT=	Implementation of MIME, the Multipurpose Internet Mail Extensions
 
 RUN_DEPENDS=	xloadimage:${PORTSDIR}/x11/xloadimage
 

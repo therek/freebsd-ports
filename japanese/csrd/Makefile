@@ -2,7 +2,7 @@
 # Date created:		99/08/18
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/csrd/Makefile,v 1.2 1999/08/25 05:23:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	csrd
@@ -11,6 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/csrd/
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Utility for Shogakukan Random House English-Japanese Dictionary
 
 MAKEFILE=	makefile.unx
 ALL_TARGET=	csrd

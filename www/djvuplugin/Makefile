@@ -2,7 +2,7 @@
 # Date created:			21 Jul 1999
 # Whom:				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/djvuplugin/Makefile,v 1.2 2000/04/10 00:04:57 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	djvuplugin
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.djvu.com/products/plugin/unix/
 DISTNAME=	npdjvu-freebsd
 
 MAINTAINER=	mi@aldan.algebra.com
+COMMENT=	Netscape plugin that views AT&T DjVu images
 
 RUN_DEPENDS=	netscape:${PORTSDIR}/www/netscape47-communicator
 

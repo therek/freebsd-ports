@@ -2,7 +2,7 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/unarj/Makefile,v 1.15 2000/04/08 23:17:53 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unarj
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Allows files to be extracted from ARJ archives
 
 do-install:
 	${INSTALL} -d -m 755 -o $(SHAREOWN) -g ${SHAREGRP} \

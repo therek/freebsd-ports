@@ -2,7 +2,7 @@
 # Date created:		99/10/6
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/net/archie.el/Makefile,v 1.3 2000/04/09 18:10:08 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	archie.el	
@@ -15,6 +15,7 @@ DISTNAME=	archie.el
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A mock-interface to Archie for Emacs
 
 RUN_DEPENDS=	archie:${PORTSDIR}/net/archie
 

@@ -3,7 +3,7 @@
 # Date created:		25 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/textproc/glimpse/Makefile,v 1.20 2000/05/06 01:53:28 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glimpse
@@ -12,6 +12,7 @@ CATEGORIES=	textproc databases
 MASTER_SITES=	ftp://ftp.polito.it/pub/tools/unix/harvest/
 
 MAINTAINER=	chuckr@freebsd.org
+COMMENT=	Text search engine
 
 NO_CDROM=	"Restrictive copyright (don't sell for profit)"
 GNU_CONFIGURE=	yes

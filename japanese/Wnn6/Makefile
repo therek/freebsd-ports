@@ -2,7 +2,7 @@
 # Date created:		15 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn6/Makefile,v 1.30 2001/07/02 03:11:18 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Wnn6
@@ -12,6 +12,7 @@ DISTNAME=	OMRONWnn6
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A Japanese input method (this is not free)
 
 IGNOREFILES=	${DISTFILES}
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:				7 June 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/mail/rmoldmail/Makefile,v 1.1 2001/06/11 21:10:54 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rmoldmail
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://probiers.net/projects/rmoldmail/
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	Prune a mailbox of messages older than a set number of days
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Date/Calc.pm:${PORTSDIR}/devel/p5-Date-Calc
 

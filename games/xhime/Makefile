@@ -2,7 +2,7 @@
 # Date created:        25 August 1998
 # Whom:                Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/xhime/Makefile,v 1.5 2000/04/14 12:27:27 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xhime
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.tcp-ip.or.jp/~shochan/linux/
 DISTFILES=	xhime151.tgz
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	Resident Himechan for X Window System
 
 WRKSRC=		${WRKDIR}/xhime1.51
 USE_IMAKE=	yes

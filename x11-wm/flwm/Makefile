@@ -2,7 +2,7 @@
 # Date created:				12 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.12 2001/02/05 21:05:36 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flwm
@@ -14,6 +14,7 @@ MASTER_SITES=	http://flwm.sourceforge.net/ \
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	The Fast Light Window Manager
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 

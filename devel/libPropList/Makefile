@@ -2,7 +2,7 @@
 # Date Created:				6 December 1998
 # Whom:					Glenn Johnson
 #
-# $FreeBSD: ports/devel/libPropList/Makefile,v 1.14 2000/06/16 08:47:03 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libproplist
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	libs
 DISTNAME=	libPropList-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	Property library for gnome and Window Maker
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:        21 Nov 1998
 # Whom:                Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-clocks/astime/Makefile,v 1.12 2000/05/25 16:50:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	astime
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.afterstep.org/apps/astime/ \
 		ftp://ftp.tux.org/pub/x/afterstep/apps/astime/
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Time/Date applet for WindowMaker
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:        13 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/sonicmail/Makefile,v 1.2 2000/10/05 07:17:03 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sonicmail
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://download.sourceforge.net/sonicmail/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A POP3 email notifier GNOME applet
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

@@ -2,7 +2,7 @@
 # Whom:                 ache
 # Date created:		1996/12/03
 #
-# $FreeBSD: ports/russian/pine.language/Makefile,v 1.12 2000/09/29 08:07:31 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pine
@@ -11,6 +11,7 @@ CATEGORIES=	russian mail
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Tune Pine for Russian (KOI8-R) defaults
 
 RUN_DEPENDS=	pine:${PORTSDIR}/mail/pine4
 

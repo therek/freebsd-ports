@@ -2,7 +2,7 @@
 # Date created:         14 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.17 2000/04/09 17:39:51 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvi2xx
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	dviware
 DISTNAME=	dvi2xx
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Convert dvi files to HP LaserJet or IBM 3812 format
 
 MAN1=		dvi2xx.1
 IGNOREFILES=	${DISTFILES}

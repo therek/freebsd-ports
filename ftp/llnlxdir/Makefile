@@ -2,7 +2,7 @@
 # Date created:				9 November 1997
 # Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/llnlxdir/Makefile,v 1.10 2000/06/07 18:00:05 dima Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	llnlxdir
@@ -13,6 +13,7 @@ DISTNAME=	latest_xdir
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dima@FreeBSD.org
+COMMENT=	Motif FTP client with drag-and-drop file transfer
 
 MAN1=	xdir.1
 

@@ -3,7 +3,7 @@
 # Date created:			Mar 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Frontier-RPC/Makefile,v 1.1 2001/03/08 13:49:38 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Frontier-RPC
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	Frontier
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ijliao@FreeBSD.org
+COMMENT=	Frontier::RPC implements UserLand Software's XML RPC
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww

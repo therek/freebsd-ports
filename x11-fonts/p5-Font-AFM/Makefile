@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/x11-fonts/p5-Font-AFM/Makefile,v 1.1 2001/05/11 15:58:04 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Font-AFM
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Font
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	An interface to Adobe font metrics files
 
 PERL_CONFIGURE=	yes
 

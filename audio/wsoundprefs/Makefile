@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.12 2000/05/23 06:53:14 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wsoundprefs
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 DISTNAME=	WSoundPrefs-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A utility for configuring sounds to play for Window Maker events
 
 BUILD_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \

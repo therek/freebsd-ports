@@ -2,7 +2,7 @@
 # Date created:		17 July 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/www/wcol/Makefile,v 1.7 2000/04/10 00:07:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wcolEpre
@@ -12,6 +12,7 @@ MASTER_SITES=	http://shika.aist-nara.ac.jp/products/DEST/Wcol/
 DISTNAME=	wcolEpre.990110_150126
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	A prefetching proxy server for WWW
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

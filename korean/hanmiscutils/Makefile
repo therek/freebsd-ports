@@ -2,7 +2,7 @@
 # Date created:		25 Jun 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.ORG>
 #
-# $FreeBSD: ports/korean/hanmiscutils/Makefile,v 1.1.1.1 2000/06/25 14:15:45 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hanmiscutils
@@ -11,6 +11,7 @@ CATEGORIES=	korean
 MASTER_SITES=	http://kldp.org/~bangjy/hangul/
 
 MAINTAINER=	cjh@FreeBSD.ORG
+COMMENT=	Collection of various Hangul-related sources
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES

@@ -2,7 +2,7 @@
 # Date created:		6 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/biology/migrate/Makefile,v 1.1 2001/08/06 13:07:46 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	migrate
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://evolution.genetics.washington.edu/pub/lamarc/migrate/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	wjv@FreeBSD.org
+COMMENT=	A program to estimate population sizes and migration rates
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 CONFIGURE_WRKSRC=	${WRKSRC}/src

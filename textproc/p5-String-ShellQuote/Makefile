@@ -2,7 +2,7 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-String-ShellQuote/Makefile,v 1.2 2001/03/01 06:38:49 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	String-ShellQuote
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	String
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl module for quote strings for passing through the shell
 
 PERL_CONFIGURE=	yes
 

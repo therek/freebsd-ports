@@ -2,7 +2,7 @@
 # Date created:         9 Nov 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/news/atp/Makefile,v 1.6 2000/09/25 12:21:33 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		atp
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	system/bbs/mail
 DISTFILES=		${DISTNAME}-src.tar.gz
 
 MAINTAINER=		dburr@FreeBSD.org
+COMMENT=	A QWK message packet reader and composer for FreeBSD
 
 RUN_DEPENDS=		zip:${PORTSDIR}/archivers/zip \
 			unzip:${PORTSDIR}/archivers/unzip

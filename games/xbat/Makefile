@@ -2,7 +2,7 @@
 # Date created:        30 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xbat/Makefile,v 1.7 2000/04/14 12:26:58 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbat
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.nemoto.ecei.tohoku.ac.jp/~wai/Xbat/
 DISTNAME=	xev111
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	XEVIOUS like shooting game
 
 NO_CDROM=	Possible copyright infringement
 

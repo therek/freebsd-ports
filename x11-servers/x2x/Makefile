@@ -2,7 +2,7 @@
 # Date created:		3 September 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/x11-servers/x2x/Makefile,v 1.3 2000/10/04 06:40:07 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	x2x
@@ -12,6 +12,7 @@ MASTER_SITES=	http://gatekeeper.dec.com/pub/DEC/SRC/x2x/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	grog@FreeBSD.org
+COMMENT=	A program to link multiple X servers together
 
 USE_IMAKE=	yes
 USE_GMAKE=	yes

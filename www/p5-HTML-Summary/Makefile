@@ -2,7 +2,7 @@
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.5 2001/01/16 17:33:01 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Summary
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Produces summaries from the textual content of web pages
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/TreeBuilder.pm:${PORTSDIR}/www/p5-HTML-Tree
 

@@ -2,7 +2,7 @@
 # Date created:			26 May 1997
 # Whom:				Satoshi TAOKA
 #
-# $FreeBSD: ports/japanese/typist/Makefile,v 1.4 1999/08/25 05:27:35 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	typist
@@ -13,6 +13,7 @@ EXTRACT_SUFX=	.src.tar.gz
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Typing lessons (Japanese version)
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAN1=		typist.1

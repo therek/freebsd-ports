@@ -2,7 +2,7 @@
 # Date created:                         9 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/w3mir/Makefile,v 1.23 2001/01/16 17:33:06 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	w3mir
@@ -11,6 +11,7 @@ CATEGORIES=	www perl5
 MASTER_SITES=   http://langfeldt.net/w3mir/
 
 MAINTAINER=	ache@freebsd.org
+COMMENT=	All-purpose HTTP copying and mirroring tool
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww
 

@@ -2,7 +2,7 @@
 # Date created:			10 February 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmcp/Makefile,v 1.8 2000/08/12 08:33:00 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmcp
@@ -11,6 +11,7 @@ CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	A dockable pager for Window Maker
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

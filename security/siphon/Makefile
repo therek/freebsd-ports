@@ -2,7 +2,7 @@
 # Date created:			  6 May 2000
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/siphon/Makefile,v 1.2 2000/06/02 03:18:45 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	siphon
@@ -15,6 +15,7 @@ DISTFILES=	siphon-v.666.tar.gz siphon-report.pl
 EXTRACT_ONLY=	siphon-v.666.tar.gz
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Passive host OS identifier using characteristics of sniffed traffic
 
 WRKSRC=		${WRKDIR}/siphon-v.666
 

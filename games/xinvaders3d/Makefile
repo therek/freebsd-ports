@@ -2,7 +2,7 @@
 # Date created:				21 January 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xinvaders3d/Makefile,v 1.4 2000/04/14 12:27:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xinvaders3d
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR= ${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	3D Vector-graphics Space Invaders clone for X
 
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

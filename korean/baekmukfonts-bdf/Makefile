@@ -2,7 +2,7 @@
 # Date created:		23 Jul 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.15 2001/02/06 13:25:06 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	baekmukfonts
@@ -20,6 +20,7 @@ DISTFILES=	baekmuk-${PORTVERSION}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	baekmuk-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	cjh@freebsd.org
+COMMENT=	Free Hangul fonts for X11(baekmuk)
 
 USE_X_PREFIX=	yes
 

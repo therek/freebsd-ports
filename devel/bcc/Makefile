@@ -2,7 +2,7 @@
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/devel/bcc/Makefile,v 1.8 1999/08/25 05:47:25 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bcc
@@ -11,6 +11,7 @@ CATEGORIES=	devel lang
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	Bruce's C compiler (with as and ld); can do 16-bit code
 
 MAN1=		as86.1 bcc.1 bcc-cc1.1 ld86.1
 .if !defined(NOMANCOMPRESS)

@@ -2,7 +2,7 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD: ports/games/xblast-beta/Makefile,v 1.7 2001/06/19 22:13:12 se Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xblast-beta
@@ -17,6 +17,7 @@ DISTFILES=	xblast-2.6.1.sound${EXTRACT_SUFX} \
 		xblast-tnt-unix.tar.gz
 
 MAINTAINER=	se@FreeBSD.org
+COMMENT=	Multi-player real-time strategy game for X11 (beta release)
 
 WRKSRC=		${WRKDIR}/XBlast-2.6-sound
 USE_IMAKE=	yes

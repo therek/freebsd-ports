@@ -2,7 +2,7 @@
 # Date created:				31 January 2001
 # Whom:					Mike Heffner <mheffner@vt.edu>
 #
-# $FreeBSD: ports/security/bfbtester/Makefile,v 1.1 2001/04/07 07:33:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bfbtester
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	bfbtester
 
 MAINTAINER=	mikeh@FreeBSD.org
+COMMENT=	A security tool for testing binaries for overflows
 
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes

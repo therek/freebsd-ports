@@ -2,7 +2,7 @@
 # Date created:		21 April 1999
 # Whom:			Chris Costello <chris@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/fconv/Makefile,v 1.9 2000/06/29 07:02:08 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fconv
@@ -12,5 +12,6 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	chris
 
 MAINTAINER=	chris@FreeBSD.org
+COMMENT=	Converts DOS or Mac-style files to Unix format, and vice-versa
 
 .include <bsd.port.mk>

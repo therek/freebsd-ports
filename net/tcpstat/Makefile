@@ -2,7 +2,7 @@
 # Date created:        29 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/net/tcpstat/Makefile,v 1.1 2001/02/01 23:31:23 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcpstat
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=   http://www.frenchfries.net/paul/tcpstat/
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
+COMMENT=	A program to report various network statistics
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		24 Mar 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/print/magicfilter/Makefile,v 1.5 2000/07/01 17:06:56 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	magicfilter
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= system/printing
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Customizable, extensible automatic printer filter
 
 # at least, gs must exist in many case
 BUILD_DEPENDS=	${PREFIX}/bin/gs:${PORTSDIR}/print/ghostscript-gnu

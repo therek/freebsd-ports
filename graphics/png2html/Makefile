@@ -2,7 +2,7 @@
 # Date created:				11 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/png2html/Makefile,v 1.7 2001/02/12 10:01:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	png2html
@@ -12,6 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.engr.mun.ca/~holden/
 
 MAINTAINER=	jedgar@fxp.org
+COMMENT=	Takes a PNG image and transforms it into HTML
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		gd.2:${PORTSDIR}/graphics/gd

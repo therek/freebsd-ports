@@ -2,7 +2,7 @@
 # Date created:        11 Nov 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/nttcp/Makefile,v 1.6 2000/06/29 07:02:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nttcp
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.leo.org/~bartel/nttcp/ \
 MASTER_SITE_SUBDIR=	billf
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	A client/server program for testing network performance
 
 ALL_TARGET=	nttcp
 MAN1=		nttcp.1

@@ -2,7 +2,7 @@
 # Date created:				29 June 1998
 # Whom:					scrappy
 #
-# $FreeBSD: ports/net/xicq/Makefile,v 1.8 2000/04/09 18:14:01 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xicq
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.xtrophy.dk/xicq/
 DISTNAME=	xicq-071298-snapshot.src
 
 MAINTAINER=	scrappy@FreeBSD.org
+COMMENT=	Xtropy's ICQ Client
 
 WRKSRC=		${WRKDIR}/xicq-071298
 

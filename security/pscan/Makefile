@@ -2,7 +2,7 @@
 # Date created:				02 September 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/pscan/Makefile,v 1.3 2001/07/07 23:12:29 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pscan
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.striker.ottawa.on.ca/~aland/pscan/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Security C code scanner for misuse of format strings
 
 ALL_TARGET=	#empty
 

@@ -2,7 +2,7 @@
 # Date created:         8 Feb 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/v/Makefile,v 1.16 2000/10/08 10:23:46 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	v
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.ntua.gr/pub/X11/v/old/ \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/programming/objectcentral/old/
 
 MAINTAINER=	dburr@FreeBSD.org
+COMMENT=	A C++ GUI development framework for X11 and Microsoft Windows
 
 .if ${MACHINE_ARCH} == "alpha"
 BROKEN=		compiler error in function fixup_memory_subreg

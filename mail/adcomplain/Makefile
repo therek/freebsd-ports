@@ -2,7 +2,7 @@
 # Date created: 13 Sep 1997
 # Whom:         ache@FreeBSD.org
 #
-# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.31 2000/04/13 19:59:20 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	adcomplain
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}.pl
 EXTRACT_SUFX=	.uu
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Complain about inappropriate commercial use (f.e. SPAM) of usenet/e-mail
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/xjewel/Makefile,v 1.22 2000/10/08 10:20:16 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xjewel
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/x11/ \
 EXTRACT_SUFX=	.tar.z
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	X11 dropping jewels game
 
 USE_IMAKE=	yes
 

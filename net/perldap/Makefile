@@ -2,7 +2,7 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/perldap/Makefile,v 1.9 2001/04/16 22:11:13 paul Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	perldap
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	directory/perldap
 EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	paul@FreeBSD.org
+COMMENT=	Perl interface to LDAP
 
 LIB_DEPENDS=	mozldap.1:${PORTSDIR}/net/ldapsdk
 

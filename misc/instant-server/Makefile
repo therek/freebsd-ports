@@ -2,7 +2,7 @@
 # Date created:		12 February 2001
 # Whom:			grog
 #
-# $FreeBSD: ports/misc/instant-server/Makefile,v 1.4 2001/07/21 18:45:46 jdp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	instant-server
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.lemis.com/pub/
 MASTER_SITE_SUBDIR=	pub/instant-server
 
 MAINTAINER=	grog@lemis.com
+COMMENT=	Instant server installs a typical set of ports for a server
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/postfix:${PORTSDIR}/mail/postfix \
 		${LOCALBASE}/sbin/cvsupd:${PORTSDIR}/net/cvsup \

@@ -2,7 +2,7 @@
 # Date created:		06 September 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xbmbrowser/Makefile,v 1.8 2000/04/14 10:47:43 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbmbrowser
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	utilities
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	View complete directories of X bitmaps and X pixmaps
 
 USE_IMAKE=	yes
 USE_XPM=	yes

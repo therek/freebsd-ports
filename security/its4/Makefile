@@ -2,7 +2,7 @@
 # Date created:				21 February 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/security/its4/Makefile,v 1.5 2000/10/02 10:38:51 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	its4
@@ -12,6 +12,7 @@ MASTER_SITES=
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Tool to scan C/C++ source for potential vulnerabilities
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes

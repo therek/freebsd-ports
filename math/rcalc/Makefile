@@ -2,7 +2,7 @@
 # Date created:				28 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/math/rcalc/Makefile,v 1.6 2000/08/23 12:33:17 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rcalc
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	rCalc-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Symbolic calculator for GNOME
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

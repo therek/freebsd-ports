@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/bible_names-fpw/Makefile,v 1.1 2000/11/30 15:06:17 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bible_names-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/bible_names/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A dictionary for HITCHCOCK'S BIBLE NAMES (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

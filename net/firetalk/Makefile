@@ -2,7 +2,7 @@
 # Date created:        06 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/net/firetalk/Makefile,v 1.2 2001/01/16 17:31:46 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	firetalk
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.penguinhosting.net/~ian/firetalk/
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
+COMMENT=	A multi-protocol chat/instant messaging library
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

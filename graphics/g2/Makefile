@@ -2,7 +2,7 @@
 # Date created:	16 July 1998
 # Whom:		Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/g2/Makefile,v 1.9 2000/06/06 17:55:25 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	g2
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	An easy to use, portable and powerful 2D graphics library
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 

@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/tkstep80/Makefile,v 1.7 2000/09/16 19:23:19 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkstep
@@ -16,6 +16,7 @@ PATCH_SITES=	ftp://ftp.sra.co.jp/pub/lang/tcl/jp/ \
 PATCHFILES=	tk${PORTVERSION}jp1.6.patch.gz 2Step-${PORTVERSION}pl1-patch.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	The Tk toolkit with a NeXTSTEP look and more
 
 LIB_DEPENDS=	tcl80jp.1:${PORTSDIR}/japanese/tcl80
 

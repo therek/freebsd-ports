@@ -3,7 +3,7 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/hexedit/Makefile,v 1.11 2001/06/24 20:53:28 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hexedit
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	utils/file/hex
 EXTRACT_SUFX=	.src.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	View and edit files in hexadecimal or ASCII
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-${PORTVERSION}//}
 GNU_CONFIGURE=	yes

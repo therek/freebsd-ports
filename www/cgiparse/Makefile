@@ -2,7 +2,7 @@
 # Date created:				30 March 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/www/cgiparse/Makefile,v 1.17 2000/11/13 23:20:00 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cgiparse
@@ -12,6 +12,7 @@ MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/jmpc/dist/	\
 		http://www.funkthat.com/~jmg/
 
 MAINTAINER=	jmg@FreeBSD.org
+COMMENT=	C library to parse CGI Forms
 
 LIB_DEPENDS=	mime.1:${PORTSDIR}/devel/mime:install
 

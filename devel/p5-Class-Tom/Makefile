@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Class-Tom/Makefile,v 1.6 2001/04/03 13:27:01 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Class-Tom
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Class
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	A perl module to transport objects from one system to another
 
 BUILD_DEPENDS=	${SITE_PERL}/Devel/Symdump.pm:${PORTSDIR}/devel/p5-Devel-Symdump \
 		${SITE_PERL}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5

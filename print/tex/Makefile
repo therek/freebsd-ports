@@ -2,7 +2,7 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/tex/Makefile,v 1.45 2001/05/14 22:55:59 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tex
@@ -17,6 +17,7 @@ EXTRACT_ONLY=	web2c-7.2b.tar.gz web-7.2a.tar.gz tex_base.tar.gz cm_tfm.tar.gz \
 		mf_lib.tar.gz cm_mf.tar.gz
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	TeX and METAFONT
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:				29 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-FillIn/Makefile,v 1.2 2001/03/01 06:38:57 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-FillIn
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	A class implementing a fill-in template
 
 PERL_CONFIGURE=	yes
 

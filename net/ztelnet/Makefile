@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1998
 # Whom:                 CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/net/ztelnet/Makefile,v 1.12 2000/06/20 14:27:26 cjh Exp $
+# $FreeBSD$
 #
 # In this ports..
 #   - new compilation diff for FreeBSD(now we can upload!)
@@ -19,6 +19,7 @@ DISTFILES=	ztelnet-linux.tar.gz ztelnet-patch.tar.gz \
 		ztelnet-patch-cmascott.tar.gz
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Telnet program with zmodem transfer
 
 RESTRICTED=	"zmodem code has restrictive copyright"
 

@@ -2,7 +2,7 @@
 # Date created:		23 December 1999
 # Whom:			J Koshy <jkoshy@freebsd.org>
 #
-# $FreeBSD: ports/lang/sml-mode.el/Makefile,v 1.4 2000/04/12 06:20:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sml-mode
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	jkoshy
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jkoshy@FreeBSD.org
+COMMENT=	An EMACS mode for editing Standard ML programs
 
 NO_BUILD=	yes
 

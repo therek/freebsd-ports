@@ -2,7 +2,7 @@
 # Date created:				22 June 2000
 # Whom:				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/devel/libcoro/Makefile,v 1.2 2000/07/04 10:23:36 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		libcoro
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	kbyanc
 DISTNAME=		coro-${PORTVERSION}
 
 MAINTAINER=		kbyanc@posi.net
+COMMENT=	C library that implements coroutines
 
 ONLY_FOR_ARCHS=		i386
 

@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/flower-fpw/Makefile,v 1.1 2000/11/30 15:07:31 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flower-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/Flower/
 DISTNAME=	Flower-${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A dictionary for flowers (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

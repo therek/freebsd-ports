@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 26, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/ratfor/Makefile,v 1.3 2001/01/16 17:31:14 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ratfor
@@ -16,6 +16,7 @@ MASTER_SITE_SUBDIR=	obrien
 DISTFILES=	ratfor.shar.2 local.ratfor77.shar
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	Ratfor -- the Rational FORTRAN compiler
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CAT}

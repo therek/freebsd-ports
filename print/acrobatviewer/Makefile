@@ -2,7 +2,7 @@
 # Date created:				4 Febrary 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/print/acrobatviewer/Makefile,v 1.2 2000/06/20 07:41:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	acrobatviewer
@@ -13,6 +13,7 @@ DISTNAME=	viewer.bin
 EXTRACT_SUFX=
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	Viewer for the PDF files written in Java(TM)
 
 RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/javavmwrapper \
 		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre

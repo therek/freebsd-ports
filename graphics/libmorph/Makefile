@@ -2,7 +2,7 @@
 # Date Created:				14 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libmorph/Makefile,v 1.1 2000/09/14 08:18:49 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libmorph
@@ -11,6 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://wine.sexcity.pl/morpheus/meat/
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A library for loading (and saving) 3d models (3d modeller object files)
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

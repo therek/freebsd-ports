@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wordnet-fpw/Makefile,v 1.5 2001/02/06 13:22:00 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wordnet-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wordnet/
 DISTNAME=	wordnet-${WN_VER}-fpw${WNFPW_VER}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A English - English Dictionary (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

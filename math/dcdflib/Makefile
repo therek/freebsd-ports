@@ -2,7 +2,7 @@
 # Date created:		08 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/dcdflib/Makefile,v 1.5 2000/06/16 21:51:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dcdflib.c
@@ -11,6 +11,7 @@ CATEGORIES=	math
 MASTER_SITES=	ftp://odin.mda.uth.tmc.edu/pub/source/
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Library of C Routines for Cumulative Distribution Functions
 
 WRKSRC=		${WRKDIR}/dcdflib.c/src
 

@@ -2,7 +2,7 @@
 # Date created:		30 September 1999
 # Whom:			kbyanc
 #
-# $FreeBSD: ports/converters/mmencode/Makefile,v 1.3 2000/04/08 23:24:33 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mmencode
@@ -15,6 +15,7 @@ DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	kbyanc@posi.net
+COMMENT=	Translate to and from mail-oriented encoding formats
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src/metamail
 

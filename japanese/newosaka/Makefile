@@ -2,7 +2,7 @@
 # Date created:        20 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/newosaka/Makefile,v 1.7 2000/04/11 14:15:44 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newosaka
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTFILES=	new-osaka.tar.gz
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Translator of Japanese EUC documents into Osaka language
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

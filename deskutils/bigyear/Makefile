@@ -2,7 +2,7 @@
 # Date created:        26 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/deskutils/bigyear/Makefile,v 1.1 2001/04/02 20:15:41 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bigyear
@@ -13,6 +13,7 @@ MASTER_SITES=	http://mahon.cwx.net/sources/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	greid@FreeBSD.org
+COMMENT=	A program to print a large (one month per page) calendar
 
 MAN1=		bigyear.1
 

@@ -2,7 +2,7 @@
 # Date created:         21 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/jetpack/Makefile,v 1.22 2000/05/01 01:50:01 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jetpack
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Arcade action game for X11
 
 USE_IMAKE=	yes
 MAKE_FLAGS=	PREFIX=${PREFIX} -f

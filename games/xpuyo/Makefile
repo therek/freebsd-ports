@@ -2,7 +2,7 @@
 # Date created:		12 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xpuyo/Makefile,v 1.12 2001/01/09 19:36:22 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpuyo
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.meme.hokudai.ac.jp/pub/games/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Puyo-puyo, tetris like puzzle game for X11
 
 WRKSRC=		${WRKDIR}/xpuyo
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		24 June 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/k12/Makefile,v 1.13 2000/09/12 13:03:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kaname12
@@ -15,6 +15,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		knm_new_linux.tar.gz
 
 MAINTAINER=	mita@jp.FreeBSD.org
+COMMENT=	X11 12-dot kanji font
 
 USE_X_PREFIX=	yes
 

@@ -3,7 +3,7 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/hbiff/Makefile,v 1.11 2000/06/29 02:31:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hbiff
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/misc/  \
 MASTER_SITE_SUBDIR=	obrien
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	A replacement for xbiff that handles popup window with mail headers
 
 USE_XLIB=	yes
 MAN1=		hbiff.1

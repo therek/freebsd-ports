@@ -2,7 +2,7 @@
 # Date created:				3 June 2000
 # Whom:					jmg
 #
-# $FreeBSD: ports/devel/mime/Makefile,v 1.1 2000/06/19 23:33:33 jmg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mime
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/jmpc/dist/
 
 MAINTAINER=	jmg@FreeBSD.org
+COMMENT=	C library to parse mime data
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				28 May 2001
 # Whom:					joerg
 #
-# $FreeBSD: ports/print/abc2mtex/Makefile,v 1.1 2001/05/28 14:42:15 joerg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		abc2mtex
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	support/abc2mtex
 DISTNAME=		${PORTNAME}${PORTVERSION}
 
 MAINTAINER=		joerg@freebsd.org
+COMMENT=	Music TeX converter from "abc" to MusiXTeX format
 
 RUN_DEPENDS=		musixtex:${PORTSDIR}/print/musixtex
 

@@ -2,7 +2,7 @@
 # Date created:				October 27th 1999
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/p5-FastCGI/Makefile,v 1.7 2001/03/01 06:37:32 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	FastCGI
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	FCGI-${PORTVERSION}
 
 MAINTAINER=	kbyanc@posi.net
+COMMENT=	Modules for perl5, for enabling FastCGI support in CGI scripts
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libfcgi.a:${PORTSDIR}/www/fcgi
 

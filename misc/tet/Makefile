@@ -2,7 +2,7 @@
 # Date created:		02 Oct 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/misc/tet/Makefile,v 1.16 2000/10/30 08:55:42 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		tet
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	jkoshy
 DISTFILES=		${PORTNAME}${PORTVERSION}-unsup.src.tgz
 
 MAINTAINER=		jkoshy@freebsd.org
+COMMENT=	An test execution framework from the Open Group
 
 NO_WRKSUBDIR=		yes
 NO_PACKAGE=		TET_ROOT needs to be set at compile time

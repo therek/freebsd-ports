@@ -2,7 +2,7 @@
 # Date created:        07 April 1998
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/graphics/scwm-icons/Makefile,v 1.4 1999/10/06 04:51:47 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scwm-icons
@@ -11,6 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://scwm.mit.edu/pub/scwm/
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	An icon collection for the scwm window manager
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes

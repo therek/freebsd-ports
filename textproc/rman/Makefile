@@ -2,7 +2,7 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/rman/Makefile,v 1.25 2000/06/28 11:55:48 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rman
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://polyglot.sourceforge.net/pub/polyglotman/
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	Reverse compile man pages from formatted form
 
 MAN1=		rman.1
 

@@ -2,7 +2,7 @@
 # Date created:				17 January 1998
 # Whom:					Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/net/dnswalk/Makefile,v 1.7 2000/04/09 18:11:05 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dnswalk
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.visi.com/~barr/dnswalk/
 
 MAINTAINER=	mph@freebsd.org
+COMMENT=	DNS debugger - requests a zone transfer and analyzes the result
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS
 

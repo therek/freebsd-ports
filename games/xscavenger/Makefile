@@ -2,7 +2,7 @@
 # Date created:		19 Feb 1998
 # Whom:			eivind
 #
-# $FreeBSD: ports/games/xscavenger/Makefile,v 1.15 2001/01/09 19:36:50 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xscavenger
@@ -13,6 +13,7 @@ DISTNAME=	xscavenger-142
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eivind@FreeBSD.org
+COMMENT=	A Lode Runner clone for X11
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		11 May 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/net/coda5_doc/Makefile,v 1.6 2000/04/09 18:10:34 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coda-doc
@@ -13,6 +13,7 @@ DISTNAME=	coda-doc-5.2.0-1
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ijliao@FreeBSD.org
+COMMENT=	An experimental, replicated, high-performance network file system
 
 WRKSRC=		${WRKDIR}/usr
 

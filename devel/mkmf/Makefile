@@ -2,7 +2,7 @@
 # Date created:		14 Mar 1996
 # Whom:			se
 #
-# $FreeBSD: ports/devel/mkmf/Makefile,v 1.6 1999/08/25 05:48:44 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mkmf
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.uni-koeln.de/util/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	se@FreeBSD.org
+COMMENT=	Creates program and library makefiles for the make(1) command
 
 MAN1=		mkmf.1
 MANCOMPRESSED=	maybe

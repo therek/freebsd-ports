@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.8 2000/11/14 00:39:18 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	deepforest
@@ -15,6 +15,7 @@ DISTNAME=	DeepForest-${PORTVERSION}
 EXTRACT_ONLY=	# extracted directly in install target
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	A simple compress utilty using on JDE
 
 RUN_DEPENDS=	${RUN_DEP_LIST}
 LIB_DEPENDS=	${LIB_DEP_LIST}

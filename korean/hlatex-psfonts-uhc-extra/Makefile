@@ -2,7 +2,7 @@
 # Date created:                 2 Jul 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatex-psfonts-uhc-extra/Makefile,v 1.2 2000/07/05 13:39:05 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HLaTeX-psfonts-${HLATEX_ENCODING}-extra
@@ -14,6 +14,7 @@ DIST_SUBDIR=	hlatex
 EXTRACT_ONLY=
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Extra Korean PostScript font collection for HLaTeX(UHC encoding)
 
 RUN_DEPENDS=	${LOCALBASE}/share/texmf/doc/latex/hlatex/uhc.ks:${PORTSDIR}/korean/hlatex
 

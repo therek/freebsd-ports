@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Data-Compare/Makefile,v 1.1 2001/04/28 14:48:19 joe Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Data-Compare
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Data
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Data::Compare - compare perl data structures
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:			03 Feb 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/cdrom2/Makefile,v 1.6 2000/04/11 14:12:56 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdrom2
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.nerimadors.or.jp/pub/src/cdrom2/
 DISTNAME=	euc
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	A tool to lookup CD-ROM dictionaries
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 DIST_SUBDIR=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:				02 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Set-NestedGroups/Makefile,v 1.2 2001/03/01 06:38:42 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Set-NestedGroups
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Set
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Perl module for grouped data eg ACL's, city/state/country etc
 
 PERL_CONFIGURE=	yes
 

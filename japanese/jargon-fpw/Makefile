@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jargon-fpw/Makefile,v 1.5 2001/03/08 05:50:36 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jargon-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/jargon/
 DISTNAME=	jarg-fpw${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	The famous jargon file (EPWING V1 format)
 
 
 USE_ZIP=	yes

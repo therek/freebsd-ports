@@ -2,7 +2,7 @@
 # Whom:                 ache
 # Date created:		1995/12/20
 #
-# $FreeBSD: ports/russian/elm.language/Makefile,v 1.17 2000/04/21 07:52:16 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elm
@@ -11,6 +11,7 @@ CATEGORIES=	russian mail
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	Tune Elm with MIME for KOI8-R defaults
 
 RUN_DEPENDS+=	elm:${PORTSDIR}/mail/elm+ME
 

@@ -2,7 +2,7 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/emulators/cpmtools/Makefile,v 1.19 2000/04/12 04:55:19 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cpmtools
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	cpm-${PORTVERSION}
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	Utility to transfer files from/to CP/M (R) diskettes
 
 WRKSRC=		${WRKDIR}/cpm
 MAN1=		cpm.1

@@ -2,7 +2,7 @@
 # Date created:        4 September 1998
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/x11-clocks/eyeclock/Makefile,v 1.9 2000/08/03 09:26:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eyeclock
@@ -11,6 +11,7 @@ CATEGORIES=	x11-clocks
 MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	A clock with eyes following the mouse pointer
 
 #ALL_TARGET=	all
 

@@ -2,7 +2,7 @@
 # Date created:				7 May 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/jzip/Makefile,v 1.8 2000/04/14 06:53:20 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		jzip
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	mph
 DISTNAME=		jzip201g
 
 MAINTAINER=		mph@freebsd.org
+COMMENT=	A text-mode Infocom game interpreter
 
 USE_ZIP=		yes
 

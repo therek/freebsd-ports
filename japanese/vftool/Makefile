@@ -2,7 +2,7 @@
 # Date created:		12 September 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/vftool/Makefile,v 1.9 1999/08/25 05:27:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vftool
@@ -18,6 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		jtex-1.52.tar.gz
 
 MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
+COMMENT=	Virtual font kit for using in dvi2ps, dvipsk or dvi2dvi (n2a,a2n,a2bk,p2pn)
 
 BUILD_DEPENDS=	${AFMDIR}/GothicBBB-Medium-H:${PORTSDIR}/japanese/japaneseAFM
 

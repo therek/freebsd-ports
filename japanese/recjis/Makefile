@@ -2,7 +2,7 @@
 # Date created:        05 February 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/recjis/Makefile,v 1.6 2000/04/12 14:37:27 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	recjis
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.leo.chubu.ac.jp/pub/tools/
 DISTFILES=	${PORTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	Tool for recovery of broken japanese text
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	prog

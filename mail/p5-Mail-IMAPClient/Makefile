@@ -2,7 +2,7 @@
 # Date created:		14 Nov 2000
 # Whom:			TAKAHASHI Kaoru <kaoru@kaisei.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.7 2001/05/10 01:20:50 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mail-IMAPClient
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	mharo@FreeBSD.org
+COMMENT=	Perl5 module to talk to a IMAP4rev1 (RFC2060) server
 
 PERL_CONFIGURE=	yes
 

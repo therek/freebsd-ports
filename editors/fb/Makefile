@@ -2,7 +2,7 @@
 # Date created:				Oct 15, 1999
 # Whom:					Mikhail Teterin
 #
-# $FreeBSD: ports/editors/fb/Makefile,v 1.3 2001/02/05 14:36:16 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fb
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	_tar.gz
 
 MAINTAINER=	mi@aldan.algebra.com
+COMMENT=	Binary File Viewer, Editor, & Manipulator (and a lot more)
 
 NO_WRKSUBDIR=	Yes
 

@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/sysutils/p5-Schedule-Match/Makefile,v 1.2 2001/03/01 06:38:40 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Schedule-Match
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Schedule
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Handles and detects clash between pattern-based schedules
 
 PERL_CONFIGURE=	yes
 

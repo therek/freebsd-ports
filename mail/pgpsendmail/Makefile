@@ -2,7 +2,7 @@
 # Date created:         20 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/pgpsendmail/Makefile,v 1.13 2000/04/13 20:00:26 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgpsendmail
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.dhp.com/pub/crypto/pgp/PGPsendmail/
 DISTNAME=	PGPsendmail-v${PORTVERSION}
 
 MAINTAINER=	ache@FreeBSD.org
+COMMENT=	PGP sign/encrypt/decrypt messages automatically
 
 BUILD_DEPENDS+=	pgp:${PORTSDIR}/security/pgp
 

@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/graphics/fujiplay/Makefile,v 1.2 2000/04/13 06:28:27 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fujiplay
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	Digital camera downloading tool for Fujifilm digital cameras
 
 NO_WRKSUBDIR=	yes
 

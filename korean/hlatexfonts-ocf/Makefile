@@ -2,7 +2,7 @@
 # Date created:		30 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/hlatexfonts-ocf/Makefile,v 1.1.1.1 1999/09/03 16:07:53 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hlatexfonts-ocf
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 DISTFILES=	HLaTeX-Myoungjo-OCF-PS.tar.gz HLaTeX-Gothic-OCF-PS.tar.gz
 
 MAINTAINER=	cjh@kr.freebsd.org
+COMMENT=	HLaTeX(OCF format) fonts collection
 
 BUILD_DEPENDS=	$(LOCALBASE)/share/ghostscript/fonts/Fontmap:${PORTSDIR}/print/gsfonts
 

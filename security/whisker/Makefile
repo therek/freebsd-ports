@@ -2,7 +2,7 @@
 # Date created:		7 Jan 2000
 # Whom:			kris@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/whisker/Makefile,v 1.4 2000/08/23 09:32:03 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	whisker
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.wiretrip.net/rfp/bins/whisker/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	kris@FreeBSD.ORG
+COMMENT=	A sophisticated CGI (in)security scanner
 
 WRKSRC=		${WRKDIR}/v${PORTVERSION}
 NO_BUILD=	yes

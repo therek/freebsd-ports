@@ -2,7 +2,7 @@
 # Date created:		12 Mar 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanemacs/Makefile,v 1.11 2000/07/23 05:06:18 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hanemacs
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/ \
 DISTNAME=	hanemacs-19.34b-1
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Korean version of GNU editing macros
 
 NOT_FOR_ARCHS=	alpha
 

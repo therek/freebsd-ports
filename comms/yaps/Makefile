@@ -2,7 +2,7 @@
 # Date created:         Di  29 Sep 1998 15:51:27 CEST
 # Whom:                 se
 #
-# $FreeBSD: ports/comms/yaps/Makefile,v 1.7 2000/04/08 23:22:43 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yaps
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/serialcomm/machines
 
 MAINTAINER=	se@FreeBSD.org
+COMMENT=	Yet Another Pager Software: send messages to pager (SMS, TAP, ...)
 
 USE_GMAKE=	true
 

@@ -2,7 +2,7 @@
 # Date created:		27 Dec 1998
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/comconsole/Makefile,v 1.4 2000/04/09 19:07:20 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	comconsole
@@ -12,6 +12,7 @@ MASTER_SITES=	#
 DISTFILES=
 
 MAINTAINER=	sada@FreeBSD.org
+COMMENT=	Setup your PC to use serial port COM1 as its console device
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes

@@ -2,7 +2,7 @@
 # Date created:        	2000.11.08
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/pejv-fpw/Makefile,v 1.1 2000/11/30 15:09:58 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pejv-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/pejv/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	An Esperanto-Japanese dictionary (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

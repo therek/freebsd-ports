@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/netrek-COW3-bin/Makefile,v 1.4 2000/04/14 12:26:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netrek-COW
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://bigbang.astro.indiana.edu/pub/netrek/COW/COW-bin/
 DISTFILES=	COW.3.00pl0.FreeBSD.gz
 
 MAINTAINER=	dburr@FreeBSD.org
+COMMENT=	A 16-player network space battle/conquest game with a Star Trek theme
 
 USE_X_PREFIX=		YES
 NO_BUILD=		YES

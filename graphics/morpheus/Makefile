@@ -2,7 +2,7 @@
 # Date created:				14 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/morpheus/Makefile,v 1.4 2001/02/05 15:57:17 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	morpheus
@@ -11,6 +11,7 @@ CATEGORIES=	graphics gnome
 MASTER_SITES=	http://wine.sexcity.pl/morpheus/meat/
 
 MAINTAINER=	sobomax@FreeBSD.org
+COMMENT=	A mesh (3D model) viewer for GNOME desktop
 
 LIB_DEPENDS=	morph.0:${PORTSDIR}/graphics/libmorph \
 		gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea

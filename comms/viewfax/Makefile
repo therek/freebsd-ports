@@ -2,7 +2,7 @@
 # Date created:         16 sept 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/comms/viewfax/Makefile,v 1.13 2000/02/02 22:37:39 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	viewfax
@@ -11,6 +11,7 @@ CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.leo.org/pub/comp/os/unix/networking/mgetty/
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Display files containing g3 and/or g4 coded fax pages
 
 USE_IMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:        15 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/www/html2wml/Makefile,v 1.3 2001/06/26 17:06:34 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	html2wml
@@ -12,6 +12,7 @@ MASTER_SITES=	http://maddingue.free.fr/techie/download/Html2Wml/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p5//}-pre5
 
 MAINTAINER=	greid@FreeBSD.org
+COMMENT=	A CGI that can do on-the-fly HTML to WML conversion
 
 RUN_DEPENDS=	${SITE_PERL}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		${SITE_PERL}/Text/Template.pm:${PORTSDIR}/textproc/p5-Text-Template \

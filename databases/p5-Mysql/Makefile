@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.35 2001/03/20 17:57:00 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mysql-modules
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Msql-Mysql-modules-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Perl5 modules for accessing MySQL databases
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Data/ShowTable.pm:${PORTSDIR}/devel/p5-Data-ShowTable \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI

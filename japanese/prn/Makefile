@@ -2,7 +2,7 @@
 # Date created:		19 Jun 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/prn/Makefile,v 1.8 2000/04/12 14:37:14 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prn
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A yet another converter from text file to postscript (with Japanese support)
 
 RUN_DEPENDS=	kcc:${PORTSDIR}/japanese/kcc
 

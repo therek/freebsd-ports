@@ -2,7 +2,7 @@
 # Date created:				Mar 18, 1999
 # Whom:					mi
 #
-# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.7 2000/04/14 05:44:32 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclGetOpts
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/alcatel/code/ \
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	mi@aldan.algebra.com
+COMMENT=	Pure TCL code for command line options parsing
 
 NO_BUILD=	YES
 

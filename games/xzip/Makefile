@@ -2,7 +2,7 @@
 # Date created:				28 June 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xzip/Makefile,v 1.11 2000/11/07 20:42:17 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xzip
@@ -17,6 +17,7 @@ MASTER_SITES=	ftp://ftp.ifarchive.org/if-archive/infocom/interpreters/zip/ \
 DISTFILES=		xzip182.tar.Z
 
 MAINTAINER=		mph@freebsd.org
+COMMENT=	An Infocom game interpreter that runs under X11
 
 WRKSRC=			${WRKDIR}/xzip
 ALL_TARGET=

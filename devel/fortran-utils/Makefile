@@ -2,7 +2,7 @@
 # Date created:		19 Dec 1999
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/devel/fortran-utils/Makefile,v 1.4 2000/04/11 21:27:55 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fortran-utils
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kris
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	Tools for use with Fortran code, from 4.4BSD
 
 WRKSRC=		${WRKDIR}/fortran-utils
 

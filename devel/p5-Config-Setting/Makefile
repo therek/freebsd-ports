@@ -2,7 +2,7 @@
 # Date created:				1 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/devel/p5-Config-Setting/Makefile,v 1.1 2001/07/01 15:59:27 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Config-Setting
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.myrddin.demon.co.uk/dist/
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	A class that provides an easy interface to use config files
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 

@@ -2,7 +2,7 @@
 # Date created:			30 September 1999
 # Whom:				Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/roottail/Makefile,v 1.6 2000/11/15 00:11:18 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	roottail
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.goof.com/pcg/marc/data/ \
 DISTNAME=	root-tail-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	Simple utility to tail files/logs to a root X window
 
 MAN1=		root-tail.1
 USE_IMAKE=	yes

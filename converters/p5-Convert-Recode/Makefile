@@ -2,7 +2,7 @@
 # Date created:				17 January 2000
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.5 2000/11/13 12:43:01 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Convert-Recode
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Front end to the GNU recode program
 
 RUN_DEPENDS=	recode:${PORTSDIR}/converters/recode
 

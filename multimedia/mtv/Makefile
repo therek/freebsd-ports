@@ -2,7 +2,7 @@
 # Date created:		30 Jan 2000
 # Whom:			kris
 #
-# $FreeBSD: ports/graphics/mtv/Makefile,v 1.9 2001/02/26 02:13:36 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mtv
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.mpegtv.com/pub/mpeg/mpegtv/player/x86-unknown-linux-glib
 DISTFILES=	${PORTNAME}-${PORTVERSION}.tar.gz libSDLx11.so.tar.gz
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	High-performance MPEG video player (shareware)
 
 RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 

@@ -2,7 +2,7 @@
 # Date created:        4 January 2000
 # Whom:                phk
 #
-# $FreeBSD: ports/comms/mlan/Makefile,v 1.3 2000/04/08 23:22:35 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mlan
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.dalsemi.com/pub/auto_id/public/
 DISTNAME=	mlpb103
 
 MAINTAINER=	phk@FreeBSD.org
+COMMENT=	API for Dallas Semiconductors 1-wire lan devices
 
 NO_WRKSUBDIR=	yes
 USE_ZIP=	yes

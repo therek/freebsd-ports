@@ -2,7 +2,7 @@
 # Date created:        19 March 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/print/c2ps-letter/Makefile,v 1.9 2000/04/09 17:39:44 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	c2ps-${PAPERSIZE}
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.cs.technion.ac.il/users/c2ps/
 DISTNAME=	c2ps-${PORTVERSION}
 
 MAINTAINER=	mph@freebsd.org
+COMMENT=	A PostScript pretty-printer for C source
 
 MAN1=		c2ps.1
 MAKE_ENV=	DEFAULT_PAPER_TYPE=${PS}

@@ -2,7 +2,7 @@
 # Date created:         Jan 15 1998
 # Whom:                 brianfeldman@hotmail.com
 #
-# $FreeBSD: ports/irc/tkirc/Makefile,v 1.13 2000/08/29 22:27:26 green Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkirc
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.netsplit.de/pub/tcltk/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	green@FreeBSD.org
+COMMENT=	A GUI for the ircII Internet Relay Chat client
 
 RUN_DEPENDS=	irc:${PORTSDIR}/irc/ircII \
 		wish8.3:${PORTSDIR}/x11-toolkits/tk83

@@ -2,7 +2,7 @@
 # Date created:        7 Jun 1998
 # Whom:                rom
 #
-# $FreeBSD: ports/mail/wmmail/Makefile,v 1.16 2000/08/13 09:30:38 jim Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmail
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.eecg.utoronto.ca/~chanb/WMMail.app/
 DISTNAME=	WMMail.app-${PORTVERSION}
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	A little mail notifier for the Window Maker dock
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList
 

@@ -2,7 +2,7 @@
 # Date created:         20 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/golddig/Makefile,v 1.12 2000/04/14 06:53:07 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	golddig
@@ -13,6 +13,7 @@ DISTNAME=	golddig2
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	Getting the Gold and Avoiding Death
 
 USE_XLIB=	yes
 MAN6=		golddig.6

@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Wrapper/Makefile,v 1.2 2001/03/01 06:39:01 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-Wrapper
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Text
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Simple word wrapping routine
 
 PERL_CONFIGURE=	yes
 

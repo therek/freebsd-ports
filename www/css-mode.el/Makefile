@@ -2,7 +2,7 @@
 # Date created:		21 October 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/www/css-mode.el/Makefile,v 1.3 2000/04/10 00:04:51 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	css-mode-elisp
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.garshol.priv.no/download/software/css-mode/
 DISTNAME=	css-mode.el
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	A CSS(Cascade Style Sheet) editing mode for Emacsen
 
 EXTRACT_SUFX=	# empty
 DISTFILES=	${DISTNAME} doco.html

@@ -2,7 +2,7 @@
 # Date created:		5th June 1997
 # Whom:			joe@uk.freebsd.org
 #
-# $FreeBSD: ports/net/ripetools/Makefile,v 1.6 1999/08/30 14:24:01 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ripetools
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.ripe.net/tools/
 DISTNAME=	ripe-whois-tools-2.4
 
 MAINTAINER=	joe@uk.freebsd.org
+COMMENT=	RIPE's own version of whois, and a RIPE database tool
 
 NO_WRKSUBDIR=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/sysutils/p5-Stat-lsMode/Makefile,v 1.1 2001/04/28 14:21:39 joe Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Stat-lsMode
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Stat
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Stat::lsMode - format file modes like the ls -l command does
 
 PERL_CONFIGURE=	yes
 

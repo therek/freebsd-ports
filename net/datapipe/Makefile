@@ -2,7 +2,7 @@
 # Date created:		04 January 2000
 # Whom:			Daniel Baker <dbaker@FreeBSD.org> <dbaker@cuckoo.com>
 #
-# $FreeBSD: ports/net/datapipe/Makefile,v 1.2 2000/01/12 07:52:50 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	datapipe
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/unsupported/ \
 		http://http.distributed.net/pub/dcti/unsupported/
 
 MAINTAINER=	dbaker@FreeBSD.org
+COMMENT=	A simple program to bind a local port and connect it to a remote socket
 
 do-build:
 	${CC} ${CFLAGS} -o ${WRKDIR}/${DISTNAME}/datapipe ${WRKDIR}/${DISTNAME}/datapipe.c

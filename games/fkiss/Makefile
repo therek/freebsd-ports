@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/fkiss/Makefile,v 1.11 2001/04/17 12:42:37 flathill Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fkiss
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/fkiss/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	flathill@FreeBSD.org
+COMMENT=	Freely enjoy childlike KISS, French-KISS!
 
 RUN_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 

@@ -2,7 +2,7 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/lambdamoo/Makefile,v 1.2 2000/04/09 18:11:57 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lambdamoo
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.place.org/pub/moo/
 DISTNAME=	LambdaMOO-${PORTVERSION}
 
 MAINTAINER=	flathill@FreeBSD.ORG
+COMMENT=	The most commonly used program to run MOOs
 
 WRKSRC=		${WRKDIR}/MOO-${PORTVERSION}
 GNU_CONFIGURE=	yes

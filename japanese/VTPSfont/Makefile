@@ -2,7 +2,7 @@
 # Date created:		99/06/15
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/VTPSfont/Makefile,v 1.1.1.1 1999/09/07 06:01:17 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	VTPSfont
@@ -12,6 +12,7 @@ MASTER_SITES=	http://ftp.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/tt/
 EXTRACT_SUFX=	# none
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	Create Virtual PostScript fonts produced by VFlib (Truetype fonts)
 
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash1
 

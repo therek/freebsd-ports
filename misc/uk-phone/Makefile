@@ -2,7 +2,7 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.15 2001/08/23 17:00:58 brian Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uk-phone
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-phone/ \
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	brian@FreeBSD.org
+COMMENT=	United Kingdom phone codes
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}

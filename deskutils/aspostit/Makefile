@@ -2,7 +2,7 @@
 # Date created:        2 January 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/aspostit/Makefile,v 1.2 2000/08/03 09:22:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aspostit
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
 MASTER_SITE_SUBDIR=	apps/aspostit
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	An AfterStep dockable version of XPostIt
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg/
 

@@ -2,7 +2,7 @@
 # Date created:         Nov 26 1997
 # Whom:                 msmith@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_kdump/Makefile,v 1.16 2000/07/23 00:29:51 marcel Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linux_kdump
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	marcel
 
 MAINTAINER=	marcel@FreeBSD.org
+COMMENT=	Linux-compatability ktrace.out processor
 
 BUILD_DEPENDS=	/compat/linux/usr/bin/gcc:${PORTSDIR}/devel/linux_devtools
 

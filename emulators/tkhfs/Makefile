@@ -2,7 +2,7 @@
 # Date created:         17 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/tkhfs/Makefile,v 1.21 2000/06/11 17:30:28 jmz Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkhfs
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	jmz
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jmz@FreeBSD.org
+COMMENT=	A Tcl/Tk front end to the hfs program
 
 RUN_DEPENDS=	hfs:${PORTSDIR}/emulators/hfs \
 		wish8.2:${PORTSDIR}/x11-toolkits/tk82

@@ -2,7 +2,7 @@
 # Date created:		01 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/awele/Makefile,v 1.8 2000/04/16 10:44:45 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	awele
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www-air.inria.fr/ftp/Jean-Paul/
 DISTFILES=	${PORTNAME}1.0.tgz
 
 MAINTAINER=	tg@FreeBSD.org
+COMMENT=	An african board game
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

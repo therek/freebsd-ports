@@ -2,7 +2,7 @@
 # Date created:			  22 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/nbtscan/Makefile,v 1.1 2001/08/23 07:30:43 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nbtscan
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=kris
 
 MAINTAINER=	kris@FreeBSD.org
+COMMENT=	NetBIOS name network scanner
 
 GNU_CONFIGURE=	yes
 

@@ -3,7 +3,7 @@
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/tcpshow/Makefile,v 1.12 2000/06/07 17:44:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcpshow
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	obrien
 DISTFILES=	tcpshow.c tcpshow.1
 
 MAINTAINER=	obrien@FreeBSD.org
+COMMENT=	Decode tcpdump(1) output
 
 NO_WRKSUBDIR=	yes
 MAN1=		tcpshow.1

@@ -2,7 +2,7 @@
 # Date created:		16 February 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/wm2/Makefile,v 1.7 2000/04/10 19:50:35 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wm2
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.all-day-breakfast.com/wm2/
 DISTNAME=	${PORTNAME}-4
 
 MAINTAINER=	nakai@FreeBSD.org
+COMMENT=	A very simple window manager for X
 
 USE_X_PREFIX=	yes
 ALL_TARGET=	depend wm2

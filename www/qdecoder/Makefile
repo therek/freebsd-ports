@@ -2,7 +2,7 @@
 # Date created:         Sep 10 1999
 # Whom:                 CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/qdecoder/Makefile,v 1.7 2001/02/05 15:33:45 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qDecoder
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.qDecoder.org/pub/qDecoder/\
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	CGI library for C/C++ language programming
 
 GNU_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:        	00/02/09
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lsd-fpw/Makefile,v 1.1 2000/11/30 15:09:15 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lsd-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/lsd/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A Japanese - English Dictionary for Life Science (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes

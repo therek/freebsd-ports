@@ -2,7 +2,7 @@
 # Date created:		12 May 1995
 # Whom:			me
 #
-# $FreeBSD: ports/x11-wm/fvwm/Makefile,v 1.31 2000/08/03 09:27:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fvwm
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.hpc.uh.edu/pub/fvwm/version-1/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/sources/1.x/
 
 MAINTAINER=	me@FreeBSD.org
+COMMENT=	The fvwm window manager
 
 NO_LATEST_LINK=	yes
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		7 February 1996
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/okphone/Makefile,v 1.16 2000/04/11 14:15:52 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	okphone
@@ -14,6 +14,7 @@ PATCH_SITES=	ftp://ftp.fit.ac.jp/pub/Net/okphone/patch/
 PATCHFILES=	${DISTNAME}.FreeBSD-patch.rev2.gz
 
 MAINTAINER=	max@FreeBSD.org
+COMMENT=	Conference-calling phone with Japanese support
 
 PATCH_DIST_STRIP=	-p1
 MAN1=			phone.1

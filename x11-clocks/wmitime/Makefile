@@ -2,7 +2,7 @@
 # Date created:		14 March 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmitime/Makefile,v 1.8 2000/08/12 07:43:11 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmitime
@@ -11,6 +11,7 @@ CATEGORIES=	x11-clocks windowmaker afterstep
 MASTER_SITES=	http://www.neotokyo.org/illusion/downloads/
 
 MAINTAINER=	jim@FreeBSD.org
+COMMENT=	A clock dockapp that shows the date, time, and internet time
 
 WRKSRC=		${WRKDIR}/wmitime/wmitime
 

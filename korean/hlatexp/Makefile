@@ -2,7 +2,7 @@
 # Date created:                 Jun 28 2000
 # Whom:                         CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/hlatexp/Makefile,v 1.3 2000/08/31 17:09:51 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hLaTeXp
@@ -14,6 +14,7 @@ DISTFILES=	unpacked.tar.gz htex.tfm.tar.gz
 DIST_SUBDIR=	htex
 
 MAINTAINER=	cjh@FreeBSD.org
+COMMENT=	Hangul (Korean) LaTeX2e system
 
 # it depends teTeX.
 RUN_DEPENDS=	virtex:${PORTSDIR}/print/teTeX

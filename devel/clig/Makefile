@@ -2,7 +2,7 @@
 # Date created:        27 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/devel/clig/Makefile,v 1.10 2000/02/04 23:39:38 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clig
@@ -11,6 +11,7 @@ CATEGORIES=	devel tcl82
 MASTER_SITES=	http://wsd.iitb.fhg.de/~kir/clighome/
 
 MAINTAINER=	billf@FreeBSD.org
+COMMENT=	Auto-generate an (argc, argv) processor, usage message, and manpage
 
 # This should work with any version of tcl.  See also ${MAKE_ENV}.
 BUILD_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82

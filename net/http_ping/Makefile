@@ -2,7 +2,7 @@
 # Date created:			11 August 2001
 # Whom:				dd
 #
-# $FreeBSD: ports/net/http_ping/Makefile,v 1.1 2001/08/11 18:55:26 dd Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	http_ping
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.acme.com/software/http_ping/
 DISTNAME=	${PORTNAME}_09jul2001
 
 MAINTAINER=	dd@FreeBSD.org
+COMMENT=	Sends HTTP requests every few seconds and times how long they take
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		http_ping.1

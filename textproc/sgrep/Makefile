@@ -2,7 +2,7 @@
 # Date created:    			Apr 29 1998
 # Whom: 				<koshy@india.hp.com>
 #
-# $FreeBSD: ports/textproc/sgrep/Makefile,v 1.4 2000/04/09 21:53:09 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sgrep
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.helsinki.fi/pub/Software/Local/Sgrep/
 
 MAINTAINER=	jkoshy@freebsd.org
+COMMENT=	A `grep' for structured text like SGML and HTML
 
 MAN1=		sgrep.1
 

@@ -2,7 +2,7 @@
 # Date created:				13 August 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/textproc/p5-URI-Find/Makefile,v 1.1 2001/08/15 11:33:32 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	URI-Find
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	URI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	Perl module to find URIs in arbitrary text
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/URI.pm:${PORTSDIR}/net/p5-URI
 RUN_DEPENDS=	${BUILD_DEPENDS}

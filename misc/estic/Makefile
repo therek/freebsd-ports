@@ -2,7 +2,7 @@
 # Date created:				21 Sep 1996
 # Whom:					Julian Stacey <jhs@freebsd.org>
 #
-# $FreeBSD: ports/misc/estic/Makefile,v 1.9 2000/04/14 08:45:39 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		estic
@@ -12,6 +12,7 @@ MASTER_SITES=		ftp://linux01.gwdg.de/pub/isdn/estic/old-versions/v1.40/
 DISTNAME=		estic-${PORTVERSION}-sources
 
 MAINTAINER=		jhs@FreeBSD.org
+COMMENT=	Controller for ISDN TK-Anlage (PBX) made by Istec
 
 USE_XLIB=		yes
 USE_ZIP=		yes

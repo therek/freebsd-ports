@@ -2,7 +2,7 @@
 # Date created:				13 August 2001
 # Whom:					petef
 #
-# $FreeBSD: ports/net/p5-Net-Traceroute6/Makefile,v 1.3 2001/10/03 03:43:31 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-Traceroute6
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	petef@FreeBSD.org
+COMMENT=	Perl module to parse traceroute6(8) output
 
 PERL_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD: ports/misc/proxyper/Makefile,v 1.11 2001/03/21 19:03:33 dbaker Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	proxyper-freebsd3-elf-x86
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/proxyper-rc5des/ \
 DISTNAME=	proxyper${PORTVERSION}-freebsd-x86
 
 MAINTAINER=	dbaker@FreeBSD.org
+COMMENT=	The official distributed.net v2 personal proxy
 
 .include <bsd.port.pre.mk>
 

@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.27 2000/10/07 22:15:03 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kterm16c
@@ -18,6 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
+COMMENT=	An xterm that speaks Japanese with 16 colors like on a VGA
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

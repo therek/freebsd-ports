@@ -2,7 +2,7 @@
 # Date created:		20 March 2000
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/news/bgrab/Makefile,v 1.7 2000/04/09 17:32:43 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bgrab
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.student.dtu.dk/~c960941/bgrab/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kbyanc@posi.net
+COMMENT=	Binary Grabber - downloads binaries from newsgroups
 
 RUN_DEPENDS=	mmencode:${PORTSDIR}/converters/mmencode
 

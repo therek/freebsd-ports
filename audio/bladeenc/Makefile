@@ -2,7 +2,7 @@
 # Date created:		Thu Jan 14 23:28:40 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/bladeenc/Makefile,v 1.14 2001/05/06 08:55:45 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bladeenc
@@ -13,6 +13,7 @@ MASTER_SITES=	http://bladeenc.mp3.no/source/ \
 EXTRACT_SUFX=	-src-stable.tar.gz
 
 MAINTAINER=	dirk@FreeBSD.org
+COMMENT=	MP3 encoder
 
 GNU_CONFIGURE=	yes
 

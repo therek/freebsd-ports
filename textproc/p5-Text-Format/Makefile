@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Format/Makefile,v 1.2 2001/03/01 06:38:58 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-Format
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	tobez@FreeBSD.org
+COMMENT=	Various subroutines to format text
 
 PERL_CONFIGURE=	yes
 

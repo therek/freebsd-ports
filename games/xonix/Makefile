@@ -2,7 +2,7 @@
 # Date created:		3 May 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xonix/Makefile,v 1.11 2000/08/03 09:24:17 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xonix
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 
 MAINTAINER=	joerg@FreeBSD.org
+COMMENT=	Try to win land without colliding with `flyers' and `eaters'
 
 USE_IMAKE=	yes
 USE_XPM=	yes

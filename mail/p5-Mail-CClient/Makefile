@@ -2,7 +2,7 @@
 # Date created:				01 July 2000
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/mail/p5-Mail-CClient/Makefile,v 1.4 2001/03/23 03:10:48 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		CClient
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=		p5-
 DISTNAME=		Mail-Cclient-${PORTVERSION}
 
 MAINTAINER=		kbyanc@posi.net
+COMMENT=	Perl interface to the c-client mailbox API
 
 LIB_DEPENDS=		c-client4.8:${PORTSDIR}/mail/cclient
 

@@ -2,7 +2,7 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.9 2000/12/10 23:36:01 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pharmacy
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= ${PORTNAME}
 
 MAINTAINER=	jedgar@FreeBSD.org
+COMMENT=	GNOME frontend for CVS
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

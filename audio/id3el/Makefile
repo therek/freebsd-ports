@@ -2,7 +2,7 @@
 # Date created:		Sep 26, 2000
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/id3el/Makefile,v 1.1 2000/12/20 00:44:08 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id3el
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.gentei.org/~yuuji/software/mpg123el/
 DISTNAME=	id3el-${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	An add-on to edit an id3 tag for mpg123-mode (mpg123.el) on Emacsen
 
 RUN_DEPENDS=	${LOCALBASE}/lib/xemacs/site-lisp/mpg123.el:${PORTSDIR}/audio/mpg123.el
 

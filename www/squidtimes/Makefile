@@ -2,7 +2,7 @@
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidtimes/Makefile,v 1.9 2000/11/13 12:45:23 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	squidtimes
@@ -15,6 +15,7 @@ DISTNAME=	squidtimes-1.12-freebsd.bin
 EXTRACT_SUFX=
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Generates a report of average transfer times of Squid cache
 
 NO_BUILD=	YES
 NO_WRKSUBDIR=	YES

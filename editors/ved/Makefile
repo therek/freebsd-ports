@@ -2,7 +2,7 @@
 # Date created:        31 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/editors/ved/Makefile,v 1.1 2001/01/01 14:12:47 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ved
@@ -11,6 +11,7 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/ved/
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
+COMMENT=	A small and fast screen-oriented editor.
 
 USE_GMAKE=	yes
 

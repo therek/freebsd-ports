@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.8 2000/04/29 21:55:30 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libretto-config
@@ -12,6 +12,7 @@ MASTER_SITES=	http://club.pep.ne.jp/~ishioka/Software/Linux/libapm/
 DISTNAME=	libapm-linux-1.0beta5
 
 MAINTAINER=	shige@FreeBSD.org
+COMMENT=	Libretto BIOS Setting Program
 
 ONLY_FOR_ARCHS=	i386
 

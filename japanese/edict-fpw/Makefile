@@ -2,7 +2,7 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.5 2001/02/06 13:21:51 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	edict-fpw
@@ -12,6 +12,7 @@ MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/edict/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
+COMMENT=	A Japanese <-> English Dictionary (EPWING V1 format)
 
 USE_ZIP=	yes
 NO_BUILD=	yes
