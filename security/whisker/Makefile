@@ -2,11 +2,12 @@
 # Date created:		7 Jan 2000
 # Whom:			kris@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/whisker/Makefile,v 1.3 2000/04/21 08:19:14 mharo Exp $
+# $FreeBSD: ports/security/whisker/Makefile,v 1.4 2000/08/23 09:32:03 kris Exp $
 #
 
 PORTNAME=	whisker
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.wiretrip.net/rfp/bins/whisker/
 DISTNAME=	${PORTNAME}
@@ -14,14 +15,12 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	kris@FreeBSD.ORG
 
 WRKSRC=		${WRKDIR}/v${PORTVERSION}
-
-do-build:
-		(cd ${WRKSRC}; ${SED} "s%y0y0y0%${PREFIX}%g" whisker.pl > whisker)
+NO_BUILD=	yes
 
 do-install:
-		${INSTALL_SCRIPT} ${WRKSRC}/whisker ${PREFIX}/bin
-		${MKDIR} ${PREFIX}/lib/whisker
-		${INSTALL_DATA} ${WRKSRC}/*.db ${PREFIX}/lib/whisker
+		${INSTALL_SCRIPT} ${WRKSRC}/whisker.pl ${PREFIX}/bin/whisker
+		${MKDIR} ${PREFIX}/share/whisker
+		${INSTALL_DATA} ${WRKSRC}/*.db ${PREFIX}/share/whisker
 		${MKDIR} ${PREFIX}/share/doc/whisker
 		${INSTALL_DATA} ${WRKSRC}/whisker.txt ${PREFIX}/share/doc/whisker
 
