@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.321 2001/03/21 03:02:48 vanilla Exp $
+# $FreeBSD: ports/www/Makefile,v 1.322 2001/03/21 03:32:59 okazaki Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -32,6 +32,7 @@
     SUBDIR += calamaris
     SUBDIR += cgi-lib
     SUBDIR += cgic
+    SUBDIR += cgicc
     SUBDIR += cgihtml
     SUBDIR += cgiparse
     SUBDIR += cgiwrap
