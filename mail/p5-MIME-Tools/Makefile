@@ -2,11 +2,11 @@
 # Date created:				April 27th 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.12 2000/04/23 12:24:42 vanilla Exp $
+# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.13 2000/10/16 14:26:20 kuriyama Exp $
 #
 
 PORTNAME=	p5-MIME-Tools
-PORTVERSION= 	5.316
+PORTVERSION= 	5.409
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MIME
@@ -29,7 +29,7 @@ MAN3=	MIME::Entity.3 \
 	MIME::Parser::Filer.3		MIME::Parser::Reader.3 \
 	MIME::Parser::Results.3 \
 	MIME::Body.3			MIME::Decoder::UU.3 \
-	MIME::Words.3 \
+	MIME::WordDecoder.3		MIME::Words.3 \
 	MIME::Field::ConTraEnc.3	MIME::Tools.3 \
 	MIME::Decoder::NBit.3		MIME::Head.3 \
 	MIME::Decoder.3			MIME::Field::ContDisp.3
