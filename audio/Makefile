@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.168 2000/09/17 22:05:58 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.169 2000/09/25 09:46:11 sobomax Exp $
 #
 
     SUBDIR += afsp
@@ -93,6 +93,7 @@
     SUBDIR += napster
     SUBDIR += nas
     SUBDIR += nspmod
+    SUBDIR += openal
     SUBDIR += opennap
     SUBDIR += p5-MP3-ID3v1Tag
     SUBDIR += pimp3
