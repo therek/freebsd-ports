@@ -3,7 +3,7 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.14 2000/02/22 06:57:03 kris Exp $
 #
 
 DISTNAME=	rsaref20.1996
@@ -26,7 +26,7 @@ RESTRICTED=	"Contains cryptography"
 
 pre-extract:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-	/usr/bin/more -e files/LICENSE.english
+	/usr/bin/more -e ${FILESDIR}/LICENSE.english
 	/usr/bin/dialog --yesno "Do you accept the terms of the RSAREF license agreement and wish to proceed with the build?" 8 40 || ${FALSE}
 .endif
 
