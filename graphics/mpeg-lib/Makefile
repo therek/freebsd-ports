@@ -2,7 +2,7 @@
 # Date created:		16 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.17 2000/06/16 08:48:10 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpeg_lib
@@ -16,5 +16,10 @@ MAINTAINER=	ports@FreeBSD.org
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	OPTIMIZE="${CFLAGS}"
+
+post-patch:
+	@(cd ${WRKSRC} ; \
+		${GREP} -r -l "<malloc.h>" * | \
+		xargs ${PERL} -pi -e "s/<malloc.h>/<stdlib.h>/")
 
 .include <bsd.port.mk>
