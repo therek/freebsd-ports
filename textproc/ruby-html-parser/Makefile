@@ -1,8 +1,8 @@
-# New ports collection makefile for:    Ruby-html-parser
-# Date created:         7 Aug 2000
-# Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
+# New ports collection makefile for:	Ruby-html-parser
+# Date created:		7 Aug 2000
+# Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-html-parser/Makefile,v 1.1 2000/08/07 08:20:28 knu Exp $
+# $FreeBSD: ports/textproc/ruby-html-parser/Makefile,v 1.2 2000/08/08 16:08:26 knu Exp $
 #
 
 PORTNAME=	html-parser
@@ -22,12 +22,16 @@ NO_BUILD=	yes
 
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
+
+MODULES=	formatter.rb	html-parser.rb	sgml-parser.rb
 
 do-install:
-	@cd ${WRKSRC}; ${RUBY} install.rb
+.for f in ${MODULES}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/
+.endfor
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/html-parser
 	${INSTALL_DATA} ${WRKSRC}/README.html ${PREFIX}/share/doc/ruby/html-parser/

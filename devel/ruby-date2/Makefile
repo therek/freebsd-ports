@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.1 2000/08/07 17:15:05 knu Exp $
+# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.2 2000/08/08 16:08:17 knu Exp $
 #
 
 PORTNAME=	date2
@@ -20,9 +20,9 @@ NO_BUILD=	yes
 
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 MODULES=	date2.rb date3.rb holiday.rb odate.rb \
 		parsedate2.rb parsedate2.ry parsedate3.rb \
@@ -38,14 +38,14 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/lib/${f} ${PREFIX}/lib/ruby/site_ruby/
 .endfor
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/ruby/date2/examples/ja
-	${MKDIR} ${PREFIX}/share/doc/ruby/date2/ja
+	${MKDIR} ${PREFIX}/share/examples/ruby/date2/ja
 .for f in ${EXAMPLES_EN}
-	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/doc/ruby/date2/examples/
+	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/examples/ruby/date2/
 .endfor
 .for f in ${EXAMPLES_JA}
-	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/doc/ruby/date2/examples/ja/
+	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/examples/ruby/date2/ja/
 .endfor
+	${MKDIR} ${PREFIX}/share/doc/ruby/date2/ja
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/ruby/date2/
 .endfor

@@ -1,8 +1,8 @@
-# New ports collection makefile for:    ruby-gtk
-# Date created:         19 April 1999
-# Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
+# New ports collection makefile for:	ruby-gtk
+# Date created:		19 April 1999
+# Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.8 2000/04/25 06:57:14 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.9 2000/08/08 16:08:30 knu Exp $
 #
 
 PORTNAME=	ruby-gtk
@@ -21,9 +21,9 @@ USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/gtk-${PORTVERSION}
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 .if defined(WITHOUT_IMLIB)
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -37,6 +37,7 @@ do-configure:
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/lib/*.rb ${PREFIX}/lib/ruby/${RUBY_VER}
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/examples/ruby/gtk
 	${INSTALL_DATA} ${WRKSRC}/sample/*.rb ${PREFIX}/share/examples/ruby/gtk
 	${MKDIR} ${PREFIX}/share/examples/ruby/gtk/browser
@@ -45,7 +46,6 @@ post-install:
 	${MKDIR} ${PREFIX}/share/examples/ruby/gtk/gdkimlib
 	${INSTALL_DATA} ${WRKSRC}/sample/gdkimlib/*.rb ${PREFIX}/share/examples/ruby/gtk/gdkimlib
 .endif
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/gtk/ja
 	${INSTALL_DATA} ${WRKSRC}/doc/api/* ${PREFIX}/share/doc/ruby/gtk
 	${INSTALL_DATA} ${WRKSRC}/doc/api-ja/* ${PREFIX}/share/doc/ruby/gtk/ja

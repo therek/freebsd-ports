@@ -1,8 +1,8 @@
-# New ports collection makefile for:    Ruby-MySQL
-# Date created:         7 Aug 2000
-# Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
+# New ports collection makefile for:	Ruby-MySQL
+# Date created:		7 Aug 2000
+# Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.1 2000/08/07 11:23:07 knu Exp $
+# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.2 2000/08/08 16:08:12 knu Exp $
 #
 
 PORTNAME=	mysql
@@ -19,19 +19,19 @@ BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 
+INSTALL_TARGET=	site-install
+
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 do-configure:
 	@cd ${WRKSRC}; \
 	${SETENV} ${CONFIGURE_ENV} ${RUBY} extconf.rb
 
-do-install:
-	@cd ${WRKSRC}; \
-	${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${INSTALL_TARGET}
+post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/mysql/ja
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/ruby/mysql/

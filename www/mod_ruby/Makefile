@@ -2,7 +2,7 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.1 2000/08/11 16:39:39 knu Exp $
 #
 
 PORTNAME=	mod_ruby
@@ -26,9 +26,9 @@ SNAPSHOT_DATE=	2000.08.04
 
 APXS=		${LOCALBASE}/sbin/apxs
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 DOCS_EN=	ChangeLog README.en
 DOCS_JA=	README.ja

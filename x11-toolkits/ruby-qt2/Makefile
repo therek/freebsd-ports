@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.1 2000/08/12 16:48:47 knu Exp $
 #
 
 PORTNAME=	qt
@@ -24,9 +24,9 @@ INSTALL_TARGET=	site-install
 WRKSRC=		${WRKDIR}/${PORTNAME}
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 QTLIBDIR=	${X11BASE}/lib
 QTINCDIR=	${X11BASE}/include/X11/qt

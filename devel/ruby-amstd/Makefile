@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-amstd/Makefile,v 1.1 2000/08/07 17:14:58 knu Exp $
+# $FreeBSD: ports/devel/ruby-amstd/Makefile,v 1.2 2000/08/08 16:08:16 knu Exp $
 #
 
 PORTNAME=	amstd
@@ -20,9 +20,9 @@ NO_BUILD=	yes
 
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 DOCS_EN=	README.en
 DOCS_JA=	README.ja

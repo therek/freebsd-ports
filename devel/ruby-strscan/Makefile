@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.1 2000/08/07 17:15:06 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.2 2000/08/08 16:08:21 knu Exp $
 #
 
 PORTNAME=	strscan
@@ -20,9 +20,9 @@ RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby \
 
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 DOCS_EN=	README.en \
 		doc.en/changes.html doc.en/index.html \

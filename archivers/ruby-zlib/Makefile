@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.1 2000/08/12 12:12:38 knu Exp $
 #
 
 PORTNAME=	zlib
@@ -22,9 +22,9 @@ INSTALL_TARGET=	site-install
 
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 DOCS_EN=	ChangeLog zlib.en.html
 DOCS_JA=	zlib.ja.html

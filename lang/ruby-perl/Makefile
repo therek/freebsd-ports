@@ -2,7 +2,7 @@
 # Date created:		11 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.1 2000/08/11 10:57:40 knu Exp $
 #
 
 PORTNAME=	perl
@@ -24,9 +24,9 @@ PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
 USE_PERL5=	yes
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 EXAMPLES=	htmlparse.rb	http.rb		perllib.rb	ping.rb \
 		test.rb		xmlparser.rb
@@ -44,11 +44,11 @@ post-build:
 post-install:
 	@cd ${WRKSRC}/Ruby; \
 	${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} install
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/examples/ruby/perl
 .for f in ${EXAMPLES}
 	${INSTALL_DATA} ${WRKSRC}/samples/${f} ${PREFIX}/share/examples/ruby/perl/
 .endfor
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/perl/ja
 	${INSTALL_DATA} ${WRKSRC}/README.ja ${PREFIX}/share/doc/ruby/perl/ja/
 .endif

@@ -1,8 +1,8 @@
-# New ports collection makefile for:    Ruby-property
-# Date created:         7 Aug 2000
-# Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
+# New ports collection makefile for:	Ruby-property
+# Date created:		7 Aug 2000
+# Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.2 2000/08/07 10:08:41 knu Exp $
+# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.3 2000/08/08 16:08:19 knu Exp $
 #
 
 PORTNAME=	property
@@ -22,15 +22,15 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-RUBY=		${LOCALBASE}/bin/ruby
-RUBY_VER=	1.4
-RUBY_ARCH=	${ARCH}-freebsd${OSREL}
+RUBY?=		${LOCALBASE}/bin/ruby
+RUBY_VER?=	1.4
+RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 post-patch:
 	${PERL} -i -pe 's|rubyapi.css|../rubyapi.css|g' ${WRKSRC}/Properties-ja.html
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/property.rb ${PREFIX}/lib/ruby/site_ruby
+	${INSTALL_DATA} ${WRKSRC}/property.rb ${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ruby/property/ja
 .for f in property-example.rb test.default property.README Properties.html rubyapi.css
