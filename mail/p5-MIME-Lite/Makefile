@@ -2,11 +2,11 @@
 # Date created:				August 3, 1999
 # Whom:	      				Alex Perel <veers@disturbed.net>
 #
-# $FreeBSD: ports/mail/p5-MIME-Lite/Makefile,v 1.7 2000/11/12 02:45:43 vanilla Exp $
+# $FreeBSD: ports/mail/p5-MIME-Lite/Makefile,v 1.8 2001/03/01 06:38:08 vanilla Exp $
 #
 
 PORTNAME=	MIME-Lite
-PORTVERSION=	2.105
+PORTVERSION=	2.111
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MIME

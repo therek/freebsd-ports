@@ -2,18 +2,18 @@
 # Date created:				November 19th 2000
 # Whom:					Blaz Zupan <blaz@amis.net>
 #
-# $FreeBSD: ports/converters/p5-Convert-UUlib/Makefile,v 1.2 2001/02/05 14:30:41 olgeni Exp $
+# $FreeBSD: ports/converters/p5-Convert-UUlib/Makefile,v 1.3 2001/03/01 06:37:12 vanilla Exp $
 #
 
 PORTNAME=	Convert-UUlib
-PORTVERSION=	0.11
+PORTVERSION=	0.111
 CATEGORIES=	converters perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	blaz@amis.net
+MAINTAINER=	ports@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 
