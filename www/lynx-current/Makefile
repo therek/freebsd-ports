@@ -2,14 +2,14 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.122 2000/11/30 03:34:09 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.123 2000/12/03 16:49:49 ache Exp $
 #
 
 PORTNAME=	lynx
-PORTVERSION=    2.8.4d14
+PORTVERSION=    2.8.4d16
 CATEGORIES=     www ipv6
 MASTER_SITES=   http://lynx.isc.org/current/
-DISTNAME=       ${PORTNAME}2.8.4dev.14
+DISTNAME=       ${PORTNAME}2.8.4dev.16
 
 MAINTAINER=	ache@FreeBSD.org
 
