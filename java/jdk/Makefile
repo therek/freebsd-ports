@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.34 2001/01/16 17:31:08 sobomax Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.35 2001/02/26 22:17:04 nate Exp $
 #
 
 PORTNAME=	jdk
@@ -42,5 +42,8 @@ do-install:
 
 post-install:
 	${LOCALBASE}/bin/registervm "${PREFIX}/jdk${JDK_VERSION}/bin/java # JDK${JDK_VERSION}"
-
+.if ${OSVERSION} > 400000
+	${ECHO} "You will need to install the compat3x libraries to use this port."
+.endif
+  
 .include <bsd.port.post.mk>
