@@ -2,7 +2,7 @@
 # Date created:				September 10 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.1 2000/10/23 02:04:10 jeh Exp $
 #
 
 PORTNAME=	apache-contrib
@@ -30,6 +30,24 @@ MAINTAINER=	anders@fix.no
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
-ALL_TARGET=	APXS=${LOCALBASE}/sbin/apxs all
+APXS=		${LOCALBASE}/sbin/apxs
+
+AP_PORT?=       apache13
+.if exists(${APXS})
+APXS_WORKS!=	${APXS} -q TARGET 2>/dev/null || echo no
+.endif
+.if exists(${APXS}) && ${APXS_WORKS} != no
+AP_TARGET!=	${APXS} -q TARGET
+AP_SYSCONF!=	${APXS} -q SYSCONFDIR
+AP_INCLUDE!=	${APXS} -q INCLUDEDIR
+AP_LIBEXEC!=	${APXS} -q LIBEXECDIR
+.else
+AP_TARGET?=     httpd
+AP_SYSCONF?=    ${PREFIX}/etc/apache
+AP_INCLUDE?=    ${PREFIX}/include/apache
+AP_LIBEXEC?=    ${PREFIX}/libexec/apache
+.endif
+
+ALL_TARGET=	APXS=${APXS}/sbin/apxs all
 
 .include <bsd.port.mk>
