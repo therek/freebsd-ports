@@ -2,7 +2,7 @@
 # Date created:		3 January 1998
 # Whom:			chris@still.whet.org
 #
-# $FreeBSD: ports/security/portsentry/Makefile,v 1.7 2000/04/09 18:30:22 cpiazza Exp $
+# $FreeBSD: ports/security/portsentry/Makefile,v 1.8 2000/04/21 08:18:51 mharo Exp $
 #
 
 PORTNAME=	portsentry
@@ -27,7 +27,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/portsentry ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/portsentry
-	${INSTALL_DATA} ${WRKSRC}/README.install ${WRKSRC}/README.methods \
+	${INSTALL_DATA} ${WRKSRC}/README.install ${WRKSRC}/README.methods ${WRKSRC}/README.stealth \
 	  ${PREFIX}/share/doc/portsentry
 .endif
 	@${CAT} ${PKGDIR}/MESSAGE
