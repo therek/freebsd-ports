@@ -2,18 +2,14 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.29 2000/10/07 22:58:08 asami Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.30 2001/02/01 19:56:25 olgeni Exp $
 #
 
 PORTNAME=	eterm
 PORTVERSION= 	0.8.10
 CATEGORIES=	x11
-MASTER_SITES=	ftp://eterm.sourceforge.net/pub/eterm/ \
-	        ftp://ftp.enlightenment.org/pub/enlightenment/Eterm/ \
-	        ftp://ftp.themes.org/pub/enlightenment/eterm/ \
-	        ftp://ftp.dti.ad.jp/pub/X/Eterm/ \
-	        http://download.sourceforge.net/eterm/ \
-	        http://eterm.sourceforge.net/download/
+MASTER_SITES=           ${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=     eterm
 DISTNAME=	Eterm-${PORTVERSION}
 
 MAINTAINER=	murray@FreeBSD.org
