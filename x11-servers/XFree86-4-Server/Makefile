@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.63 1999/10/09 01:50:33 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.64 1999/10/10 15:53:36 marcel Exp $
 #
 
 DISTNAME=	xc
@@ -17,8 +17,6 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/ \
 DISTFILES=	X335src-1.tgz X335src-2.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
-
-.include <bsd.port.pre.mk>
 
 IS_INTERACTIVE=	yes	# configure script asks questions
 NO_PACKAGE=	package available from XFree86
