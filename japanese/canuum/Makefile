@@ -3,7 +3,7 @@
 # Date created:		20 Jan 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/canuum/Makefile,v 1.5 1999/08/25 05:23:34 obrien Exp $
+# $FreeBSD: ports/japanese/canuum/Makefile,v 1.6 2000/03/08 10:56:38 max Exp $
 #
 
 DISTNAME=	canuum-1.0
@@ -16,7 +16,7 @@ EXTRACT_ONLY=	Uum4.109.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/imake
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
 MANLANG=	ja
