@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.1 2000/07/09 08:46:44 will Exp $
 #
 
 PORTNAME=	listmanager
@@ -14,6 +14,8 @@ EXTRACT_SUFX=	.freebsd34
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} help.tar.gz listmanager.8 ack
 
 MAINTAINER=	ports@FreeBSD.org
+
+FORBIDDEN=	"Buffer overflow yielding uid root"
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=
