@@ -2,11 +2,11 @@
 # Date created:         March 20 2000
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/www/httptunnel/Makefile,v 1.7 2000/08/31 20:30:54 brian Exp $
+# $FreeBSD: ports/www/httptunnel/Makefile,v 1.8 2001/02/05 15:33:25 olgeni Exp $
 #
 
 PORTNAME=	httptunnel
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.Awfulhak.org/httptunnel/ \
 		ftp://ftp.nocrew.org/pub/nocrew/unix/ \
