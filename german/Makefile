@@ -1,4 +1,4 @@
-# $FreeBSD: ports/german/Makefile,v 1.19 2001/05/25 23:51:28 nectar Exp $
+# $FreeBSD$
 #
 
     SUBDIR += BBBike
@@ -10,6 +10,7 @@
     SUBDIR += ispell-alt
     SUBDIR += ispell-neu
     SUBDIR += kde2-i18n
+    SUBDIR += koffice-i18n
     SUBDIR += manpages
     SUBDIR += phone
     SUBDIR += php_doc
