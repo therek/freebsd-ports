@@ -2,11 +2,12 @@
 # Date created:		16 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-kakasi/Makefile,v 1.4 2000/09/07 14:39:15 knu Exp $
+# $FreeBSD: ports/japanese/ruby-kakasi/Makefile,v 1.5 2000/09/26 08:01:49 knu Exp $
 #
 
 PORTNAME=	kakasi
 PORTVERSION=	000124
+PORTREVISION=	1
 CATEGORIES=	japanese ruby
 MASTER_SITES=	http://www.notwork.org/~gotoken/ruby/p/kakasi/
 DIST_SUBDIR=	ruby
