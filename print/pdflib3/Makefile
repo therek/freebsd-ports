@@ -2,11 +2,11 @@
 # Date created:		Mon Jan 18 17:03:33 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pdflib3/Makefile,v 1.11 2000/06/16 21:51:52 asami Exp $
+# $FreeBSD: ports/print/pdflib3/Makefile,v 1.12 2000/09/13 21:46:32 billf Exp $
 #
 
 PORTNAME=	pdflib
-PORTVERSION=	3.02
+PORTVERSION=	3.03
 CATEGORIES=	print
 MASTER_SITES=	http://www.pdflib.com/pdflib/download/
 
