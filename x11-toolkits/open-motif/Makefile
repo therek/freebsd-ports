@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.11 2000/08/18 17:41:56 asami Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.12 2000/08/29 02:02:17 obrien Exp $
 #
 
 PORTNAME=	open-motif
@@ -23,13 +23,15 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	steve@FreeBSD.org
 
+RUN_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
+
 DIST_SUBDIR=	openmotif
 WRKSRC=		${WRKDIR}/motif
 USE_IMAKE=	yes
 MAKE_ENV+=	LANG=C
 XMKMF=		${MAKE} Makefile.boot
 ALL_TARGET=	VerifyOS Everything
-MANCOMPRESSED=	yes
+XFREE86_HTML_MAN=	no
 
 MAN1=	mwm.1 \
 	uil.1 \
