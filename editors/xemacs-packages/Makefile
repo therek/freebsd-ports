@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.5 1999/11/27 03:24:55 steve Exp $
+# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.6 2000/02/08 16:18:41 kuriyama Exp $
 #
 
 DISTNAME=	xemacs-packages
@@ -30,7 +30,7 @@ DISTFILES=	\
 		ispell-1.18-pkg.tar.gz      pcl-cvs-1.41-pkg.tar.gz \
 		w3-1.15-pkg.tar.gz          texinfo-1.18-pkg.tar.gz
 
-MAINTAINER=	me@FreeBSD.org
+MAINTAINER=	gj@FreeBSD.org
 
 DIST_SUBDIR=	xemacs
 
