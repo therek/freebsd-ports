@@ -2,25 +2,30 @@
 # Date created:			Apr 13, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/burgerspace/Makefile,v 1.1 2001/04/17 17:47:17 will Exp $
 #
 
 PORTNAME=	burgerspace
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	games
 MASTER_SITES=	http://sites.netscape.net/sarrazip/
 
 MAINTAINER=	mark@kyne.com.au
 
-LIB_DEPENDS=	gengameng.2:${PORTSDIR}/devel/gengameng \
+LIB_DEPENDS=	gengameng.3:${PORTSDIR}/devel/gengameng \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include -I${LOCALBASE}/include" LDFLAGS="${LDFLAGS} -L${LOCALBASE}/lib -lgnugetopt"
 CONFIGURE_ARGS+=	--with-gengameng-prefix="${X11BASE}"
 
 MAN6=	burgerspace.6
+
+pre-patch:
+	${PERL} -pi -e "s|sdl-config|${SDL_CONFIG}|g; \
+		s|include/SDL/|include/SDL11/|g;" ${WRKSRC}/configure
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/burgerspace ${PREFIX}/bin
