@@ -2,12 +2,12 @@
 # Date created:		Tue Mar 27 14:56:08 CEST 2001
 # Whom:			Adrian Chadd <adrian@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squid24/Makefile,v 1.80 2001/03/31 11:41:18 adrian Exp $
+# $FreeBSD: ports/www/squid24/Makefile,v 1.81 2001/04/03 09:06:34 adrian Exp $
 #
 
 PORTNAME=	squid
 PORTVERSION=	2.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://ftp.squid-cache.org/pub/squid-2/STABLE/ \
@@ -22,7 +22,8 @@ PATCHFILES=	squid-2.4.stable1-wrong_sign_on_timestamp_check.patch \
 		squid-2.4.stable1-high_cpu_with_peers.patch \
 		squid-2.4.stable1-force_valid_blksize.patch \
 		squid-2.4.stable1-kill_parent_on_child_sigkill.patch \
-		squid-2.4.stable1-htcp_assertion_fix.patch
+		squid-2.4.stable1-htcp_assertion_fix.patch \
+		squid-2.4.stable1-diskd_fixed_path.patch
 
 MAINTAINER=	adrian@freebsd.org
 
