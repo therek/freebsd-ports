@@ -1,11 +1,11 @@
 #! /bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/net/zebra/scripts/configure,v 1.1 2001/01/11 21:45:05 andreas Exp $
 
 # configure - zebra compile time option configurator
 # by Andreas Klemm <andreas@FreeBSD.org>
 
-if [ "$BATCH" != "yes" -o "$BATCH" != "YES" ]; then
+if [ "$BATCH" != "yes" -a "$BATCH" != "YES" ]; then
 
 #
 # configure - zebra compile time options
