@@ -3,7 +3,7 @@
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.13 2000/03/22 00:27:31 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.14 2000/04/09 18:13:02 cpiazza Exp $
 #
 
 PORTNAME=	pathchar
@@ -28,7 +28,7 @@ MAN8=		pathchar.8
 
 .if ${PORTOBJFORMAT} == "aout"
 DISTNAME=	pathchar-a0-freebsd-2.2
-PKGNAME=	pathchar-a0
+PORTVERSION=	a0
 .endif
 
 NO_BUILD=	yes
