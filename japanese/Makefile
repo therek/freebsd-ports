@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.259 2000/02/03 06:49:18 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.260 2000/02/08 16:04:43 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -184,6 +184,7 @@
     SUBDIR += p5-jcode.pl
     SUBDIR += p5-manual
     SUBDIR += p5-mkres
+    SUBDIR += p5-nkf
     SUBDIR += paledit
     SUBDIR += perl5
     SUBDIR += pgp.language
