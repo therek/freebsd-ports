@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.3 2000/08/04 16:11:09 ade Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.4 2000/08/10 16:35:23 ade Exp $
 #
 
 PORTNAME=	gconf
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/GConf
@@ -18,7 +18,8 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		xml.5:${PORTSDIR}/textproc/libxml \
 		popt.0:${PORTSDIR}/devel/popt \
 		guile.9:${PORTSDIR}/lang/guile \
-		oaf.0:${PORTSDIR}/devel/oaf
+		oaf.0:${PORTSDIR}/devel/oaf \
+		iconv.1:${PORTSDIR}/converters/iconv
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
@@ -33,7 +34,7 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib -liconv"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
