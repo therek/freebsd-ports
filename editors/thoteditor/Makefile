@@ -3,7 +3,7 @@
 # Date created:		1 Aug 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.13 1999/09/25 18:05:50 chuckr Exp $
+# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.14 1999/09/25 18:48:27 chuckr Exp $
 #
 
 DISTNAME=	thoteditor-src-2.1e
@@ -22,9 +22,6 @@ MAINTAINER=	chuckr@FreeBSD.org
 THOT_SUBDIR=	Target
 REQUIRES_MOTIF=	yes
 WRKSRC=		$(WRKDIR)/Thot/$(THOT_SUBDIR)
-
-BROKEN=		initialization issues not finished yet
-
 REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-thot --enable-plugin --without-insure --without-amaya --disable-java --disable-intr --disable-jit --disable-math --disable-ilu
@@ -34,10 +31,16 @@ ALL_TARGET=	all schemas
 do-configure:
 	(cd $(WRKSRC);../configure $(CONFIGURE_ARGS))
 
+post-configure:
+	$(CP) $(WRKSRC)/../thotlib/base/registry.c $(WRKSRC)/../thotlib/base/registry.c.orig
+	$(SED) -e "s&%%PREFIX%%&$(PREFIX)&" <$(WRKSRC)/../thotlib/base/registry.c.orig >$(WRKSRC)/../thotlib/base/registry.c
+
 post-extract:
 	(cd $(WRKDIR)/Thot;$(MKDIR) $(THOT_SUBDIR))
 
 post-install:
 	${MKDIR} ${PREFIX}/share/thot/doc
+	$(SED) -e "s&%%PREFIX%%&$(PREFIX)&" < $(FILESDIR)/thoteditor > $(WRKDIR)/thoteditor
+	$(INSTALL_SCRIPT) $(WRKDIR)/thoteditor $(PREFIX)/bin
 
 .include <bsd.port.mk>
