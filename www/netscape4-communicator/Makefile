@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.75 2001/01/01 10:15:16 will Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.76 2001/01/16 17:33:01 sobomax Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -14,6 +14,10 @@ DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 MAINTAINER?=	sada@FreeBSD.org
 
 RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape-wrapper
+
+.if (${PORTVERSION} == "4.76")
+BROKEN=		"has a serious security hole, use 4.77 instead"
+.endif
 
 .if !defined(INFILE_HEAD)
 # not included from master ports
