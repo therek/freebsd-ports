@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.93 2000/04/14 15:04:20 will Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.94 2000/04/17 00:18:42 reg Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -111,7 +111,7 @@ post-install:
 
 .include <bsd.port.pre.mk>
 
-.if defined(WITH_PERL) || (exists(${PERL5}) && (!defined(WITHOUT_PERL))
+.if defined(WITH_PERL) || (exists(${PERL5}) && (!defined(WITHOUT_PERL)))
 USE_PERL5=	yes
 CONFIGURE_ENV+= PERL=${PERL5}
 .else
