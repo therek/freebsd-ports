@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-amstd/Makefile,v 1.6 2000/09/07 16:17:48 knu Exp $
+# $FreeBSD: ports/devel/ruby-amstd/Makefile,v 1.7 2000/09/26 08:01:50 knu Exp $
 #
 
 PORTNAME=	amstd
-PORTVERSION=	1.9.5
+PORTVERSION=	1.9.6
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www1.u-netsurf.ne.jp/~brew/mine/soft/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -19,10 +19,11 @@ USE_RUBY=	yes
 NO_BUILD=	yes
 
 DOCS_EN=	README.en
-DOCS_JA=	README.ja
+DOCS_JA=	README.ja amstd-ja.rd
 MODULES=	bench.rb \
 		bug.rb \
 		collfrom.rb \
+		constdef.rb \
 		dispatch.rb \
 		errutil.rb \
 		extmod.rb \
