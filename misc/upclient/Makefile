@@ -2,15 +2,15 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/misc/upclient/Makefile,v 1.6 2000/04/14 08:46:56 asami Exp $
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.7 2001/01/05 03:37:05 jeh Exp $
 #
 
 PORTNAME=	upclient
-PORTVERSION=	4.2.1.19
+PORTVERSION=	4.2.1.21
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.uptimes.net/pub/uptimes/ \
-		http://www.uptimes.net/download/ \
-		http://uptimes.atomicvoid.net/
+MASTER_SITES=	http://uptimes.atomicvoid.net/files/ \
+		ftp://ftp.uptimes.net/pub/uptimes/ \
+		http://www.uptimes.net/download/
 
 MAINTAINER=	clefevre@citeweb.net
 
