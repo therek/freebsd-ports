@@ -2,13 +2,13 @@
 # Date created:			8 March 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-programmingruby/Makefile,v 1.1 2001/03/07 17:50:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	programmingruby
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	lang ruby
-MASTER_SITES=	http://www.rubycentral.com/downloads/files/
+MASTER_SITES=	http://dev.rubycentral.com/downloads/files/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ProgrammingRuby-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
