@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.373 2001/06/19 01:59:09 jeh Exp $
+# $FreeBSD: ports/www/Makefile,v 1.374 2001/06/23 16:09:45 dwcjr Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -172,6 +172,7 @@
     SUBDIR += nspostgres
     SUBDIR += oops
     SUBDIR += openvrml
+    SUBDIR += orion
     SUBDIR += p5-Apache-ASP
     SUBDIR += p5-Apache-AddHostPath
     SUBDIR += p5-Apache-Archive
