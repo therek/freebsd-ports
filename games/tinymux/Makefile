@@ -3,7 +3,7 @@
 # Date created:		1998/05/28
 # Whom:			cjohnson
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/tinymux/Makefile,v 1.3 1999/08/25 06:04:32 obrien Exp $
 #
 
 DISTNAME=	tinymux-1.4p13
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.digex.net/pub/mud/tinymux/
 
 MAINTAINER=	cjohnson@camelot.com
 
-BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 
 WRKSRC=		${WRKDIR}/src
 #GNU_CONFIGURE=	YES
