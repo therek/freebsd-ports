@@ -2,11 +2,11 @@
 # Date created:				05/23/2000
 # Whom:					dwhite@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.5 2000/06/19 19:21:59 dwhite Exp $
+# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.6 2000/07/10 17:07:17 dwhite Exp $
 #
 
 PORTNAME=		kqueue
-PORTVERSION=		1.1
+PORTVERSION=		1.2
 CATEGORIES=		devel python
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dwhite
@@ -20,8 +20,8 @@ RUN_DEPENDS=		python:${PORTSDIR}/lang/python
 
 .include <bsd.port.pre.mk>
 
-.if ( ${OSVERSION} < 400018 || ${OSVERSION} == 500000 )
-FORBIDDEN= requires kqueue
+.if ( ${OSVERSION} < 400018 || ${OSVERSION} < 500010 )
+#FORBIDDEN="requires new kqueue API"
 .endif
 
 # NO_WRKSUBDIR=		yes
