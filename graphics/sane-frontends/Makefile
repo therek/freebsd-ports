@@ -2,7 +2,7 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane-frontends/Makefile,v 1.31 2001/03/22 12:59:21 vanilla Exp $
+# $FreeBSD: ports/graphics/sane-frontends/Makefile,v 1.32 2001/03/26 23:16:23 vanilla Exp $
 #
 
 PORTNAME=	sane-frontends
@@ -16,8 +16,6 @@ MASTER_SITES=	ftp://ftp.mostang.com/pub/sane/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	sane.1:${PORTSDIR}/graphics/sane-backends
-
-PKGMESSAGE=	${WRKDIR}/pkg-message
 
 USE_GTK=	yes
 USE_GMAKE=	yes
@@ -42,11 +40,7 @@ pre-everything:
 	@${ECHO_MSG} "*** \"WITH_GIMP=yes\""
 .endif
 
-post-patch:
-	@${SED} -e 's:%%PREFIX%%:${PREFIX}:' -e 's:%%X11BASE%%:${X11BASE}:' \
-		${PKGDIR}/pkg-message > ${PKGMESSAGE}
-
 post-install:
-	@${CAT} ${PKGMESSAGE}
+	@${SED} 's:/usr/local:${PREFIX}:' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
