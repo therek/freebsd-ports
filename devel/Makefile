@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.441 2001/02/21 09:17:05 trevor Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.442 2001/02/22 03:49:53 jeh Exp $
 #
     SUBDIR += zziplib
 
@@ -189,6 +189,7 @@
     SUBDIR += m68k-rtems-gcj
     SUBDIR += m68k-rtems-gdb
     SUBDIR += m68k-rtems-objc
+    SUBDIR += make++
     SUBDIR += makedepend
     SUBDIR += mico
     SUBDIR += mime
