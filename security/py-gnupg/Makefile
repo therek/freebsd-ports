@@ -3,11 +3,11 @@
 # Date created:			Jul 11, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/security/py-gnupg/Makefile,v 1.2 2001/08/22 10:31:54 ijliao Exp $
+# $FreeBSD: ports/security/py-gnupg/Makefile,v 1.3 2001/08/22 10:46:53 ijliao Exp $
 #
 
 PORTNAME=	gnupg
-PORTVERSION=	0.2.1
+PORTVERSION=	0.3.0
 CATEGORIES=	security python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	py-gnupg
