@@ -3,13 +3,16 @@
 # Date created:         Nov 16 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.14 1999/08/25 04:57:59 obrien Exp $
+# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.15 2000/02/23 13:50:45 imura Exp $
 #
 
-DISTNAME=	rxvt-2.7.2
-PKGNAME=	zh-rxvt-2.7.2
+DISTNAME=	rxvt-2.7.3
+PKGNAME=	zh-rxvt-2.7.3
 CATEGORIES=	chinese x11
-MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/
+MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/ \
+		ftp://mason.primenet.com.au/pub/rxvt/ \
+		${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR= X11/terms
 
 MAINTAINER=	frankch@waru.life.nthu.edu.tw
 
