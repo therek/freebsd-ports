@@ -2,15 +2,14 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-html-parser/Makefile,v 1.5 2000/09/07 14:39:25 knu Exp $
+# $FreeBSD: ports/textproc/ruby-html-parser/Makefile,v 1.6 2000/09/26 08:01:54 knu Exp $
 #
 
 PORTNAME=	html-parser
-PORTVERSION=	19990912.p1
+PORTVERSION=	19990912p2
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/html-parser/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -26,8 +25,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_SITELIBDIR}
 .endfor
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/html-parser
-	${INSTALL_DATA} ${WRKSRC}/README.html ${RUBY_DOCDIR}/html-parser/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/README.* ${RUBY_DOCDIR}/${PORTNAME}/
 .endif
 
 .include <bsd.port.mk>
