@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.242 2003/10/31 18:40:46 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.243 2003/10/31 21:38:45 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -640,3 +640,4 @@ sysutils/ruby-devel-logger||2003-10-31|integrated into ruby18 and ruby16-shim-ru
 textproc/ruby-rexml||2003-10-31|integrated into ruby18 and ruby16-shim-ruby18
 www/ruby-webrick||2003-10-31|integrated into ruby18 and ruby16-shim-ruby18
 editors/AbiWord|editors/AbiWord2|2003-10-31|2.0 is the new stable release
+www/adzapper||2003-11-03|Development is dead, doesn't work with Python2
