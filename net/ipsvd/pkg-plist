@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/ipsvd/pkg-plist,v 1.2 2003/08/25 20:19:12 krion Exp $
 sbin/ipsvd-cdb
 sbin/tcpsvd
 sbin/udpsvd
@@ -13,5 +13,6 @@ sbin/udpsvd
 %%PORTDOCS%%%%DOCSDIR%%/ipsvd.7.html
 %%PORTDOCS%%%%DOCSDIR%%/tcpsvd.8.html
 %%PORTDOCS%%%%DOCSDIR%%/udpsvd.8.html
+%%PORTDOCS%%%%DOCSDIR%%/upgrade.html
 %%PORTDOCS%%%%DOCSDIR%%/usedietlibc.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
