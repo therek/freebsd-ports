@@ -2,14 +2,14 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.3 2000/12/06 17:08:50 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.4 2000/12/13 14:28:53 des Exp $
 #
 
 PORTNAME=	linux-opera
-PORTVERSION=	4.0b4
+PORTVERSION=	4.0b5
 CATEGORIES=	www linux
 MASTER_SITES=	http://opera.online.no/linux/tgz/
-DISTNAME=	opera-4.0-b4-20001211.012-static.i386
+DISTNAME=	opera-4.0-b5-20010103.014-static.i386
 
 MAINTAINER=	des@FreeBSD.org
 
