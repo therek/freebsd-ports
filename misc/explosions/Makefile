@@ -2,11 +2,11 @@
 # Date created:				8 August 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/misc/explosions/Makefile,v 1.1 2001/08/08 17:56:08 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	explosions
-PORTVERSION=	0.2001.08.05
+PORTVERSION=	0.2001.10.29
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/explosions/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/^0.//}
