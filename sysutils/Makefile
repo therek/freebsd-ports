@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.121 2000/07/05 13:16:03 sumikawa Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.122 2000/07/07 14:30:00 sobomax Exp $
 #
 
     SUBDIR += LPRng
@@ -78,6 +78,7 @@
     SUBDIR += socket
     SUBDIR += star
     SUBDIR += stat
+    SUBDIR += stow
     SUBDIR += stmpclean
     SUBDIR += su2
     SUBDIR += symlinks
