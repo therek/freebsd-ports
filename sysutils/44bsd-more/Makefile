@@ -2,7 +2,7 @@
 # Date created:			  24 May 2000
 # Whom:				  Tim van der Hoek <hoek@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/44bsd-more/Makefile,v 1.1 2000/05/29 19:58:19 hoek Exp $
 #
 
 PORTNAME=	44bsd-more
