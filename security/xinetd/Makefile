@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xinetd
-# Version required:			2.1.8.8p2
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.18 2000/02/26 21:25:13 ade Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.19 2000/03/26 09:25:37 vanilla Exp $
 #
 
-DISTNAME=	xinetd-2.1.8.8p2
+PORTNAME=	xnited
+PORTVERSION= 	2.1.8.8p2
 CATEGORIES=	security
 MASTER_SITES=	http://synack.net/xinetd/
 

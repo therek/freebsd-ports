@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tcp_wrapper
-# Version required:     7.6
 # Date created:		27 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.22 1999/08/31 06:50:30 mharo Exp $
+# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.23 2000/01/12 07:20:54 sheldonh Exp $
 #
 
-DISTNAME=       tcp_wrappers_7.6
-PKGNAME=        tcp_wrappers-7.6
+PORTNAME=	tcp_wrappers
+PORTVERSION=	7.6
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.porcupine.org/pub/security/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	torstenb@FreeBSD.org
 

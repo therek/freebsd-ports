@@ -1,12 +1,12 @@
 # New ports collection makefile for:	identify
-# Version required:	0.7
 # Date created:		13 March 1999
 # Whom:			nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/security/identify/Makefile,v 1.5 1999/08/31 01:51:07 peter Exp $
+# $FreeBSD: ports/security/identify/Makefile,v 1.6 2000/03/20 22:16:48 mharo Exp $
 #
 
-DISTNAME=	identify-0.7
+PORTNAME=	identify
+PORTVERSION=	0.7
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/tools/
 

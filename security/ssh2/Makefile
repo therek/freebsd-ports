@@ -1,19 +1,19 @@
 # New ports collection makefile for:	ssh2
-# Version required:     2.0.*
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.92 2000/03/11 12:58:43 obrien Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.93 2000/04/05 22:21:42 will Exp $
 #
 # Maximal ssh2 package requires YES values for
 # USE_SSH1, USE_TCPWRAP
 
-DISTNAME=	ssh-2.0.13
-PKGNAME=	ssh2-2.0.13
+PORTNAME=	ssh2
+PORTVERSION= 	2.0.13
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/ \
 		ftp://sunsite.unc.edu/pub/packages/security/ssh/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/security/ssh/
+DISTNAME=	ssh-2.0.13
 
 PATCHFILES=	patch-${DISTNAME}-bsd.tty.chown
 PATCH_SITES=	http://www.ssh.org/patches/

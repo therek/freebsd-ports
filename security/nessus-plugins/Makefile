@@ -1,12 +1,12 @@
 # Ports collection makefile for:	nessus-plugins
-# Version required:			0.99.4
 # Date created:				16 October 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.8 2000/02/22 05:22:56 kuriyama Exp $
+# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.9 2000/03/19 04:06:05 foxfair Exp $
 #
 
-DISTNAME=	nessus-plugins-0.99.7
+PORTNAME=	nessus-plugins
+PORTVERSION=	0.99.7
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sentry
-# Version required:	1.0
 # Date created:		3 January 1998
 # Whom:			chris@still.whet.org
 #
-# $FreeBSD: ports/security/portsentry/Makefile,v 1.5 1999/08/31 01:51:37 peter Exp $
+# $FreeBSD: ports/security/portsentry/Makefile,v 1.6 1999/12/22 14:26:38 jedgar Exp $
 #
 
-DISTNAME=	portsentry-1.0
+PORTNAME=	portsentry
+PORTVERSION= 	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://www.psionic.com/tools/
 

@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  nat/nbaudit
-# Version required: 0.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nbaudit/Makefile,v 1.7 2000/03/20 02:36:57 obrien Exp $
+# $FreeBSD: ports/security/nbaudit/Makefile,v 1.8 2000/03/22 00:27:19 obrien Exp $
 #
 
-DISTNAME=	nat10
-PKGNAME=	nbaudit-1.0
+PORTNAME=	nbaudit
+PORTVERSION=	1.0
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.secnet.com/pub/tools/nat10/  \
 		ftp://ftp.auscert.org.au/pub/coast/mirrors/ftp.secnet.com/tools/nat10/
+DISTNAME=	nat10
 
 MAINTAINER=	obrien@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	zebedee
-# Version required:	1.3.0
 # Date created:		4 January 2000
 # Whom:			Greg Hewgill <greg@hewgill.com>
 #
-# $FreeBSD: ports/security/zebedee/Makefile,v 1.2 2000/01/23 05:32:33 dbaker Exp $
+# $FreeBSD: ports/security/zebedee/Makefile,v 1.3 2000/02/06 21:53:03 kris Exp $
 #
 
-DISTNAME=	zebedee-1.3.0
+PORTNAME=	zebedee
+PORTVERSION= 	1.3.0
 CATEGORIES=	security
 MASTER_SITES=	http://www.winton.org.uk/zebedee/ \
 		http://www.hewgill.com/zebedee/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bugs
-# Version required:	1.8.1
 # Date created:		20 June 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/bugs/Makefile,v 1.2 1999/08/31 01:50:56 peter Exp $
 #
 
-DISTNAME=		bugs-1.8.1
+PORTNAME=		bugs
+PORTVERSION=		1.8.1
 CATEGORIES=		security
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://www.asi.fr/~martinez/crypto/

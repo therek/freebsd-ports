@@ -1,13 +1,12 @@
 # New ports collection makefile for: 	nessus
-# Version required:	0.99.4
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.10 2000/02/22 05:21:09 kuriyama Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.11 2000/03/19 04:00:50 foxfair Exp $
 #
 
-DISTNAME=	nessus-core-0.99.7
-PKGNAME=	nessus-0.99.7
+PORTNAME=	nessus
+PORTVERSION=	0.99.7
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \
@@ -18,6 +17,7 @@ MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.chg.ru/pub/security/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.sekure.net/pub/nessus/nessus-${NESSUS_REV}/
+DISTNAME=	nessus-core-0.99.7
 
 MAINTAINER=	anders@fix.no
 

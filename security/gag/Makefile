@@ -1,16 +1,16 @@
 # ex:ts=8
 # Ports collection makefile for:  gag
-# Version required: 0.0
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/gag/Makefile,v 1.2 2000/03/20 02:36:25 obrien Exp $
+# $FreeBSD: ports/security/gag/Makefile,v 1.3 2000/03/22 00:26:52 obrien Exp $
 #
 
-DISTNAME=	sickenscan
-PKGNAME=	gag-2.9
+PORTNAME=	gag
+PORTVERSION=	2.9
 CATEGORIES=	security
 MASTER_SITES=	http://staff.washington.edu/dittrich/misc/
+DISTNAME=	sickenscan
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	obrien@FreeBSD.org

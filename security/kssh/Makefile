@@ -1,12 +1,12 @@
 # New ports collection makefile for:	kssh
-# Version required:	0.2
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/kssh/Makefile,v 1.1.1.1 2000/03/23 04:37:54 will Exp $
 #
 
-DISTNAME=	kssh-0.2
+PORTNAME=	kssh
+PORTVERSION= 	0.2
 CATEGORIES=	security
 MASTER_SITES=	http://people.FreeBSD.org/~will/distfiles/
 

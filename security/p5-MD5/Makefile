@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-MD5
-# Version required:			1.7
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.12 1999/08/31 01:51:29 peter Exp $
+# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.13 1999/08/31 06:50:15 mharo Exp $
 #
 
-DISTNAME=	MD5-1.7
-PKGNAME=	p5-MD5-1.7
+PORTNAME=	p5-MD5
+PORTVERSION=	1.7
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MD5
+DISTNAME=	MD5-1.7
 
 MAINTAINER=	jfitz@FreeBSD.org
 

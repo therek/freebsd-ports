@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  nmap
-# Version required: 0.0
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmapfe/Makefile,v 1.25 2000/03/20 02:37:04 obrien Exp $
+# $FreeBSD: ports/security/nmapfe/Makefile,v 1.26 2000/03/22 00:27:30 obrien Exp $
 #
 
-DISTNAME=	nmapfe-0.9.5
+PORTNAME=	nmapfe
+PORTVERSION=	0.9.5
 CATEGORIES=	security net
 MASTER_SITES=	http://codebox.net/download/  \
 		http://www.insecure.org/nmap/dist/

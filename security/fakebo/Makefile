@@ -1,12 +1,12 @@
 # New ports collection makefile for:   fakebo
-# Version required:    0.4.1
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.6 1999/10/21 19:44:32 kris Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.7 1999/11/01 00:27:40 billf Exp $
 #
 
-DISTNAME=	fakebo-0.4.1
+PORTNAME=	fakebo
+PORTVERSION= 	0.4.1
 CATEGORIES=	security
 MASTER_SITES=	http://yi.com/home/KosturjakVlatko/ \
 		ftp://ftp.bitcon.no/.4/console/adm/ \

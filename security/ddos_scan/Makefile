@@ -1,16 +1,16 @@
 # ex:ts=8
 # Ports collection makefile for:  ddos_scan
-# Version required: 0.0
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/ddos_scan/Makefile,v 1.2 2000/03/20 02:36:15 obrien Exp $
+# $FreeBSD: ports/security/ddos_scan/Makefile,v 1.3 2000/03/22 00:26:47 obrien Exp $
 #
 
-DISTNAME=	ddos_scan
-PKGNAME=	ddos_scan-1.6
+PORTNAME=	ddos_scan
+PORTVERSION=	1.6
 CATEGORIES=	security
 MASTER_SITES=	http://staff.washington.edu/dittrich/misc/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	obrien@FreeBSD.org

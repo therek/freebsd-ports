@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sniff
-# Version required:	1.0
 # Date created:		7 December 1998
 # Whom:			Rick & Samu
 #
-# $FreeBSD: ports/security/sniff/Makefile,v 1.2 1999/08/31 01:51:45 peter Exp $
+# $FreeBSD: ports/security/sniff/Makefile,v 1.3 2000/03/22 15:49:25 fenner Exp $
 #
 
-DISTNAME=	sniff-1.0
+PORTNAME=	sniff
+PORTVERSION= 	1.0
 CATEGORIES=	security
 MASTER_SITES=   http://people.FreeBSD.org/~fenner/distfiles/
 

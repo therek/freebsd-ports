@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Crypt-DES
-# Version required:			1.20
 # Date created:				October 20th 1996
 # Whom:	      				Mark Murray <markm@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.1.1.1 2000/02/18 12:11:51 markm Exp $
+# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.2 2000/03/21 23:53:15 mharo Exp $
 #
 
-DISTNAME=	Crypt-CBC-1.20
-PKGNAME=	p5-Crypt-CBC-1.20
+PORTNAME=	p5-Crypt-CBC
+PORTVERSION= 	1.20
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
+DISTNAME=	Crypt-CBC-1.20
 
 MAINTAINER=	markm@FreeBSD.org
 

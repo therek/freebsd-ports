@@ -1,12 +1,12 @@
 # New ports collection makefile for:	fragrouter
-# Version required:	1.6
 # Date created:         7 Jan 2000
 # Whom:                 kris@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/fragrouter/Makefile,v 1.1 2000/01/08 09:24:19 kris Exp $
 #
 
-DISTNAME=	fragrouter-1.6
+PORTNAME=	fragrouter
+PORTVERSION= 	1.6
 CATEGORIES=	security
 MASTER_SITES=	http://www.anzen.com/research/nidsbench/
 

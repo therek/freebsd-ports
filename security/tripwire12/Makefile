@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tripwire
-# Version required:     1.2
 # Date created:		31 Mar 1997
 # Whom:			Joe Greco <jgreco@ns.sol.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/tripwire/Makefile,v 1.6 1999/08/31 01:51:56 peter Exp $
 #
 
-DISTNAME=       tripwire-1.2
+PORTNAME=	tripwire
+PORTVERSION= 	1.2
 CATEGORIES=	security net
 MASTER_SITES=   ftp://coast.cs.purdue.edu/pub/COAST/Tripwire/
 EXTRACT_SUFX=	.tar.Z

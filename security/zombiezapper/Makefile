@@ -1,15 +1,15 @@
 # Ports collection makefile for:  zombiezapper
-# Version required:		  1.0
 # Date created:			  19 Feb 2000
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/zombiezapper/Makefile,v 1.1 2000/02/20 10:29:09 kris Exp $
 #
 
-DISTNAME=	zombie
-PKGNAME=	zombiezapper-1.0
+PORTNAME=	zombiezapper
+PORTVERSION= 	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://razor.bindview.com/tools/files/
+DISTNAME=	zombie
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	kris@FreeBSD.org

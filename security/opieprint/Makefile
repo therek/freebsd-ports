@@ -1,12 +1,12 @@
 # New ports collection makefile for:	keyprint
-# Version required:     1.0
 # Date created:		Sat May 29 02:05:00 PDT 1999
 # Whom:			mharo@FreeBSD.org
 #
-# $FreeBSD: ports/security/keyprint/Makefile,v 1.2 1999/08/31 01:51:10 peter Exp $
+# $FreeBSD: ports/security/keyprint/Makefile,v 1.3 2000/02/08 09:28:44 peter Exp $
 #
 
-DISTNAME=       keyprint-1.0
+PORTNAME=u	keyprint
+PORTVERSION= 	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://people.FreeBSD.org/~mharo/distfiles/
 

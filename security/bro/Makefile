@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  bro
-# Version required: 0.0
 # Date created:			  Sat Feb 28, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/security/bro/Makefile,v 1.13 2000/03/20 02:36:09 obrien Exp $
+# $FreeBSD: ports/security/bro/Makefile,v 1.14 2000/03/22 00:26:42 obrien Exp $
 #
 
-DISTNAME=	vp-bro-0.5-alpha
-PKGNAME=	bro-0.5a
+PORTNAME=	bro
+PORTVERSION=	0.5a
 CATEGORIES=	security net
 #MASTER_SITES=	ftp://ee.lbl.gov/
 #see http://www-nrg.ee.lbl.gov/bro-info.html
+DISTNAME=	vp-bro-0.5-alpha
 
 MAINTAINER=	obrien@FreeBSD.org
 

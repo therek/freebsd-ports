@@ -1,16 +1,16 @@
 # ex:ts=8
 # Ports collection makefile for:  slurpie
-# Version required:		  2.0b
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/slurpie/Makefile,v 1.1.1.1 2000/02/14 03:24:01 obrien Exp $
 #
 
-DISTNAME=	slurpie
-PKGNAME=	slurpie-2.0b
+PORTNAME=	slurpie
+PORTVERSION= 	2.0b
 CATEGORIES=	security
 MASTER_SITES=	http://www.jps.net/coati/archives/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org

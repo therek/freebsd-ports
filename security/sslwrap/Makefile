@@ -1,15 +1,15 @@
 # New ports collection makefile for:	sslwrap
-# Version required:	2.0.5
 # Date created:		1999 november 7.
 # Whom:			Zahemszky, Gabor <ZGabor at CoDe dot HU>
 #
-# $FreeBSD: ports/security/sslwrap/Makefile,v 1.3 2000/01/02 23:17:48 dirk Exp $
+# $FreeBSD: ports/security/sslwrap/Makefile,v 1.4 2000/02/06 21:58:20 kris Exp $
 #
 
-DISTNAME=	sslwrap
-PKGNAME=	sslwrap-2.0.5
+PORTNAME=	sslwrap
+PORTVERSION=	2.0.5
 CATEGORIES=	security
 MASTER_SITES=	http://www.rickk.com/sslwrap/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ZGabor@CoDe.HU
 
