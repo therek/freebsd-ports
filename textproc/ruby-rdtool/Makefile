@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.1 2000/08/07 17:56:46 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.2 2000/08/08 16:08:29 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -42,16 +42,22 @@ pre-build:
 	@cd ${WRKSRC}; \
 	${LN} -s missing/strscan.rb
 
+.if !defined(NOPORTDOCS)
 post-build:
 	@cd ${WRKSRC}; \
 	${RUBY} -I. rd2 -r rd/rd2html-lib.rb README.rd.ja > README.ja.html; \
 	${RUBY} -I. rd2 -r rd/rd2html-lib.rb doc/dev-note.rd.ja > doc/dev-note.ja.html; \
 	${RUBY} -I. rd2 -r rd/rd2html-lib.rb doc/rd-draft.rd > doc/rd-draft.html; \
 	${RUBY} -I. rd2 -r rd/rd2html-lib.rb doc/rd-draft.rd.ja > doc/rd-draft.ja.html
+.endif
 
 post-install:
+	${INSTALL_SCRIPT} ${WRKSRC}/rmi2html.rb ${PREFIX}/bin/rmi2html
+	${INSTALL_DATA} ${WRKSRC}/rd/rd2rmi-lib.rb \
+		${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/rd/
 	${MKDIR} ${PREFIX}/share/examples/ruby/rd
-	${CP} ${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/rd/dot.rd2rc ${PREFIX}/share/examples/ruby/rd/
+	${CP} ${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/rd/dot.rd2rc \
+		${PREFIX}/share/examples/ruby/rd/
 	${MKDIR} ${EMACSLISPDIR}
 	${INSTALL_DATA} ${WRKSRC}/utils/rd-mode.el ${EMACSLISPDIR}/
 	${MKDIR} ${XEMACSLISPDIR}
