@@ -2,25 +2,29 @@
 # Date created:				July 27th 2000
 # Whom:	      				Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.4 2001/03/01 06:38:15 vanilla Exp $
+# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.5 2001/05/10 01:20:51 vanilla Exp $
 #
 
 PORTNAME=	Mail-Sender
-PORTVERSION=	0.7.08
+PORTVERSION=	0.7.10
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
-IS_INTERACTIVE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Mail::Sender.3
+
+.if defined(BATCH)
+post-patch:
+	${PERL} -pi -e 's/res = <STDIN>;/res = "N";/' ${WRKSRC}/Config.PL
+.endif
 
 .include <bsd.port.mk>
