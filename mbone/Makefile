@@ -1,8 +1,7 @@
-# $FreeBSD: ports/mbone/Makefile,v 1.12 2000/02/01 21:10:49 fenner Exp $
+# $FreeBSD: ports/mbone/Makefile,v 1.13 2000/03/08 16:42:49 fenner Exp $
 #
 
     SUBDIR += imm
-    SUBDIR += mbone_vcr
     SUBDIR += nte
     SUBDIR += rat
     SUBDIR += rqm
