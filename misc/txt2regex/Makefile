@@ -3,12 +3,11 @@
 # Date created:			Jun 14, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/misc/txt2regex/Makefile,v 1.5 2001/09/11 01:24:36 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	txt2regex
-PORTVERSION=	0.6
-PORTREVISION=	1
+PORTVERSION=	0.7
 CATEGORIES=	misc
 MASTER_SITES=	http://txt2regex.sourceforge.net/
 EXTRACT_SUFX=	.tgz
