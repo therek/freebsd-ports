@@ -1,12 +1,12 @@
 # New ports collection makefile for:	java2html
-# Version required:			0.4
+# Version required:			0.7.2
 # Date created:				21 March 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/java2html/Makefile,v 1.4 1999/08/31 02:09:28 peter Exp $
+# $FreeBSD: ports/textproc/java2html/Makefile,v 1.5 1999/09/28 01:30:22 dan Exp $
 #
 
-DISTNAME=		java2html-0.6.3
+DISTNAME=		java2html-0.7.2
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
