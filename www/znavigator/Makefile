@@ -2,7 +2,7 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/znavigator/Makefile,v 1.2 2000/11/09 00:18:10 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	znavigator
@@ -17,6 +17,7 @@ MAINTAINER=	nbm@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/${SZOPEBASEDIR}/z2.py:${PORTSDIR}/www/zope
 
 NO_BUILD=	YES
+USE_REINPLACE=	yes
 
 # You can change this in the environment if you like.
 SZOPEBASEDIR?=		www/Zope
@@ -38,7 +39,8 @@ do-install:
 		${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}/
 	@${CP} ${ZOPEPRODUCTSRC}/demo/navigator_demo.zexp \
 		${ZOPEBASEDIR}/import
-	@perl -pe 's#%%PREFIX%%#${PREFIX}#' ${FILESDIR}/MESSAGE > ${PKGMESSAGE}
+	@${REINPLACE_CMD} -e \
+		's#%%PREFIX%%#${PREFIX}#' ${FILESDIR}/MESSAGE > ${PKGMESSAGE}
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

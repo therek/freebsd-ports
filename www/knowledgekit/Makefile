@@ -2,7 +2,7 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/knowledgekit/Makefile,v 1.1 2000/09/18 18:51:21 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	knowledgekit
@@ -16,6 +16,7 @@ MAINTAINER=	nbm@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/${SZOPEBASEDIR}/z2.py:${PORTSDIR}/www/zope
 
+USE_REINPLACE=	yes
 NO_BUILD=	YES
 PKGMESSAGE=	${WRKDIR}/.MESSAGE
 
@@ -34,7 +35,7 @@ PLIST_SUB=	ZOPEBASEDIR=${SZOPEBASEDIR}
 do-install:
 	@${CP} ${WRKSRC}/* \
 		${ZOPEBASEDIR}/import
-	@perl -pe 's#%%PREFIX%%#${PREFIX}#; s#%%VER%%#${PORTVERSION}#' ${FILESDIR}/MESSAGE > ${PKGMESSAGE}
+	@${REINPLACE_CMD} -e 's#%%PREFIX%%#${PREFIX}#; s#%%VER%%#${PORTVERSION}#' ${FILESDIR}/MESSAGE > ${PKGMESSAGE}
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
