@@ -3,7 +3,7 @@
 # Date created:         29.9.1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/devel/ilu/Makefile,v 1.22 2000/02/08 09:26:03 peter Exp $
+# $FreeBSD: ports/devel/ilu/Makefile,v 1.23 2000/03/08 10:56:30 max Exp $
 #
 
 DISTNAME=	ilu-2.0alpha13
@@ -65,7 +65,7 @@ do-install:
 	# Empty dir, but we really need it
 	${ECHO} @exec ${MKDIR} %D/ilu/lib/binding > ${PLIST}
 	${ECHO} @unexec ${RM} -r %D/ilu/lib/binding >> ${PLIST}
-	${ECHO} @exec ${CHMOD} 777 %D/ilu/lib/binding >> ${PLIST}
+	${ECHO} @exec ${CHMOD} 1777 %D/ilu/lib/binding >> ${PLIST}
 	${ECHO} @exec ${LDCONFIG} -m %D/ilu/lib >> ${PLIST}
 	# Empty dirs we don't need
 	${RMDIR} ${PREFIX}/ilu/man/man[358]
