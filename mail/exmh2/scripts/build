@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/mail/exmh2/scripts/build,v 1.11 2001/01/22 20:06:10 bmah Exp $
+# $FreeBSD: ports/mail/exmh2/scripts/build,v 1.12 2001/07/20 23:57:40 bmah Exp $
 #
 
 VERSION="`sed -ne 's/^set vers \(.*\)/\1/p' ${WRKSRC}/exmh.install`"
@@ -40,21 +40,10 @@ if [ -d ${PREFIX}/share/faces ]; then
   fi
 fi
 
-if [ -f ${PREFIX}/bin/gpg ]; then
-  GPG=${PREFIX}/bin			#bindir
-fi
-
-if [ -f ${PREFIX}/bin/pgp ]; then
-  PGP=${PREFIX}/bin			#bindir
-fi
-
-if [ -f ${PREFIX}/bin/pgp5 ]; then
-  PGP5=${PREFIX}/bin			#bindir
-fi
-
-if [ -f ${PREFIX}/bin/pgp ]; then
-  PGP6=${PREFIX}/bin			#bindir
-fi
+GPG=${PREFIX}/bin			#bindir
+PGP=${PREFIX}/bin			#bindir
+PGP5=${PREFIX}/bin			#bindir
+PGP6=${PREFIX}/bin			#bindir
 
 if [ -f ${PREFIX}/bin/glimpse ]; then
   GLIMPSE=${PREFIX}/bin			#bindir
