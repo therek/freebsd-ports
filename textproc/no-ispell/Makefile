@@ -2,7 +2,7 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/textproc/no-ispell/Makefile,v 1.4 2001/01/13 15:43:07 alex Exp $
+# $FreeBSD: ports/textproc/no-ispell/Makefile,v 1.5 2001/01/16 17:32:47 sobomax Exp $
 #
 
 MAINTAINER=	alex@FreeBSD.org
@@ -10,6 +10,7 @@ MAINTAINER=	alex@FreeBSD.org
 ISPELL_NO=	yes
 PORTNAME=	no-ispell
 PORTVERSION=	2.0
+PORTREVISION=	1
 MASTERDIR=	${.CURDIR}/../ispell
 
 .include        "${MASTERDIR}/Makefile"
