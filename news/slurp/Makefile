@@ -3,13 +3,15 @@
 # Date created:		30 Jun 1996
 # Whom:			jraynard
 #
-# $FreeBSD: ports/news/slurp/Makefile,v 1.7 1999/08/31 06:49:38 mharo Exp $
+# $FreeBSD: ports/news/slurp/Makefile,v 1.8 1999/12/22 17:31:01 fenner Exp $
 #
 
 DISTNAME=	slurp-1.10
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/news/slurp/
 EXTRACT_SUFX=	.tar.Z
+
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAN1=		slurp.1

@@ -3,13 +3,15 @@
 # Date created:        15 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.4 1999/10/21 19:02:23 fenner Exp $
+# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.5 1999/12/10 01:31:56 imura Exp $
 #
 
 DISTNAME=	kvidtune-0.4.1
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= unstable/apps/admin
+
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11 \

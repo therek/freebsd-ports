@@ -3,7 +3,7 @@
 # Date created: 19 February 1995
 # Whom: hsu
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vcg/Makefile,v 1.9 1999/08/25 06:15:10 obrien Exp $
 #
 
 DISTNAME=	vcg.1.30
@@ -11,6 +11,8 @@ PKGNAME=	vcg-1.30
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/graphics/vcg/
 DISTFILES=	vcg.1.30.r3.17.tgz
+
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 MANL=		pbmrot90.l pbmshift.l pbm2hp.l vcgdemomaker.l vcg.l xvcg.l

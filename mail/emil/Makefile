@@ -3,7 +3,7 @@
 # Date created:		21 April 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/mail/emil/Makefile,v 1.3 1999/08/25 06:50:07 obrien Exp $
+# $FreeBSD: ports/mail/emil/Makefile,v 1.4 1999/10/21 19:02:19 fenner Exp $
 #
 
 DISTNAME=	emil-2.1.0-beta9
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.uu.se/pub/unix/networking/mail/emil/ \
 		ftp://ftp.funet.fi/pub/unix/mail/emil/ \
 		ftp://ftp.enst.fr/pub/unix/network/mail/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.uu.se/pub/unix/networking/mail/emil/
+
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 MAN1=		emil.1 emil.cf.1
