@@ -2,7 +2,7 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.40 2000/09/08 12:23:57 tg Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.41 2000/09/18 12:55:15 tg Exp $
 #
 
 PORTNAME=	py-gtk
@@ -20,7 +20,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12                  \
 GTK_CONFIG=	${X11BASE}/bin/gtk12-config
 USE_GMAKE=	yes
 USE_PYTHON=	yes
-CONFIGURE_ENV=	GTK_CONFIG=${GTK_CONFIG} PYTHON=${PREFIX}/bin/${PYTHON_CMD}
+CONFIGURE_ENV=	GTK_CONFIG=${GTK_CONFIG} PYTHON=${PYTHON_CMD}
 USE_LIBTOOL=	yes
 PLIST_COMPLETE= ${PKGDIR}/PLIST
 
