@@ -2,7 +2,7 @@
 # Date created:				2 December 2000
 # Whom:					Andrey Simonenko
 #
-# $FreeBSD: ports/sysutils/ipa/Makefile,v 1.3 2001/01/29 16:00:18 kevlo Exp $
+# $FreeBSD: ports/sysutils/ipa/Makefile,v 1.4 2001/02/15 13:41:21 kevlo Exp $
 #
 
 PORTNAME=	ipa
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.simon.org.ua/ipa/
 
 MAINTAINER=	simon@simon.org.ua
 
+NO_PACKAGE=	"Needs to be built uniquely for each site"
 ALL_TARGET=	FreeBSD
 
 MAN5=		ipa.5 ipa.conf.5
