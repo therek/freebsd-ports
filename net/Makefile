@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.580 2001/07/22 10:54:07 markp Exp $
+# $FreeBSD: ports/net/Makefile,v 1.581 2001/07/26 13:00:44 roger Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -113,6 +113,7 @@
     SUBDIR += gnomba
     SUBDIR += gnome-vnc
     SUBDIR += gnomeicu
+    SUBDIR += gnomemeeting
     SUBDIR += gnometelnet
     SUBDIR += gnosamba
     SUBDIR += gnu-finger
