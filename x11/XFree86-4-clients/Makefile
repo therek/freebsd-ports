@@ -2,14 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-clients/Makefile,v 1.87 2000/10/08 07:21:03 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-clients/Makefile,v 1.88 2001/03/25 23:04:39 sf Exp $
 #
 
 PORTNAME=	clients
 PORTVERSION=	4.0.3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
-MASTER_SITE_SUBDIR=	${PORTVERSION}
+MASTER_SITE_SUBDIR=	4.0.2
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X402src-1.tgz X402src-2.tgz
 EXTRACT_ONLY=	X402src-1.tgz
@@ -58,7 +58,7 @@ HasSecureRPC?=		DEFAULT
 HasPam?=		DEFAULT
 
 .if ${HasXdmAuth} == DEFAULT || ${HasXdmAuth} == YES
-.if ${USA_RESIDENT} == YES
+.if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
 pre-fetch:
 	@${ECHO}
 	@${ECHO} Assuming that you have fetched a USA-Legal Wraphelp.c.

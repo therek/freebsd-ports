@@ -2,13 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-fonts/XFree86-4-fontCyrillic/Makefile,v 1.2 2000/08/25 10:33:07 asami Exp $
+# $FreeBSD: ports/x11-fonts/XFree86-4-fontCyrillic/Makefile,v 1.3 2001/03/25 23:04:47 sf Exp $
 #
 
 PORTNAME=	fontCyrillic
 PORTVERSION=	4.0.3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	4.0.2
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X402src-2.tgz
 

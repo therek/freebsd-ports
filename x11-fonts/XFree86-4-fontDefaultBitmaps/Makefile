@@ -2,13 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-fonts/XFree86-4-fontDefaultBitmaps/Makefile,v 1.3 2000/11/25 20:35:42 asami Exp $
+# $FreeBSD: ports/x11-fonts/XFree86-4-fontDefaultBitmaps/Makefile,v 1.4 2001/03/25 23:04:48 sf Exp $
 #
 
 PORTNAME=	fontDefaultBitmaps
 PORTVERSION=	4.0.3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	4.0.2
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X402src-1.tgz X402src-2.tgz
 EXTRACT_ONLY=	X402src-2.tgz

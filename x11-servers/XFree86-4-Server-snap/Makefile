@@ -2,14 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.90 2000/11/03 21:28:47 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.91 2001/03/25 23:04:51 sf Exp $
 #
 
 PORTNAME=	Server
 PORTVERSION=	4.0.3
 CATEGORIES=	x11-servers
 MASTER_SITES=	${MASTER_SITE_XFREE}
-MASTER_SITE_SUBDIR=	${PORTVERSION}
+MASTER_SITE_SUBDIR=	4.0.2
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X402src-1.tgz
 

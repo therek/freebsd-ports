@@ -2,13 +2,14 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake-4/Makefile,v 1.9 2001/02/05 14:34:39 olgeni Exp $
+# $FreeBSD: ports/devel/imake-4/Makefile,v 1.10 2001/03/25 23:04:38 sf Exp $
 #
 
 PORTNAME=	imake
 PORTVERSION=	4.0.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	4.0.2
 DISTFILES=	X402src-1.tgz
 
 PATCH_SITES=	${MASTER_SITE_XFREE:S,%SUBDIR%/source,4.0.3/patches,g}
