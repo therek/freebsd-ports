@@ -2,12 +2,12 @@
 # Date created:         5 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/mtools/Makefile,v 1.33 2000/10/14 01:36:14 jmz Exp $
+# $FreeBSD: ports/emulators/mtools/Makefile,v 1.34 2000/10/16 00:56:43 jmz Exp $
 #
 
 PORTNAME=	mtools
 PORTVERSION=	3.9.7
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.tux.org/pub/knaff/mtools/  \
 		http://mtools.linux.lu/
@@ -26,7 +26,7 @@ MAN1=		mattrib.1 mbadblocks.1 mcat.1 mcd.1 mcopy.1 mdel.1 mdeltree.1 \
 MAN5=		mtools.5
 
 post-patch:
-	@cd ${WRKSRC}; for f in config.c mtools.5 mtools.texi; do \
+	@cd ${WRKSRC}; for f in config.c mformat.c mtools.5 mtools.texi; do \
 	 ${MV} $$f $$f.orig; \
 	 ${SED} -e s:/etc/mtools.conf:${PREFIX}/etc/mtools.conf: \
 	 < $$f.orig > $$f; done
