@@ -2,21 +2,22 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/rocksndiamonds/Makefile,v 1.9 2000/11/19 15:21:39 kevlo Exp $
+# $FreeBSD: ports/games/rocksndiamonds/Makefile,v 1.10 2001/02/05 14:51:43 olgeni Exp $
 #
 
 PORTNAME=	rocksndiamonds
-PORTVERSION=	1.4.0
-PORTREVISION=	1
+PORTVERSION=	2.0.0
 CATEGORIES=	games
-MASTER_SITES=	http://www.artsoft.org/rocksndiamonds/RELEASES/ \
-		${MASTER_SITE_XCONTRIB}
-MASTER_SITE_SUBDIR=	games
-
-PATCH_SITES=	http://www.artsoft.org/RELEASES/
-PATCHFILES=	rocksndiamonds-1.4.0pl1.diff
+MASTER_SITES=	http://www.artsoft.org/RELEASES/unix/rocksndiamonds/ \
+		http://homepages.compuserve.de/rocksndiamonds/
 
 MAINTAINER=	mwest@uct.ac.za
+
+.if defined(WITH_SDL)
+LIB_DEPENDS=	SDL_image.10:${PORTSDIR}/graphics/sdl_image \
+		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer
+MAKE_ARGS+=	sdl
+.endif
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
@@ -28,6 +29,11 @@ MAKE_ENV+=	JOYSTICK="-DNO_JOYSTICK"
 
 GAME_DIR=${PREFIX}/share/rocksndiamonds
 DOC_DIR=${PREFIX}/share/doc/rocksndiamonds
+
+.if defined(WITH_SDL)
+pre-patch:
+	@${PERL} -pi.orig -e 's:sdl-config:sdl11-config:g' ${WRKSRC}/src/Makefile
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rocksndiamonds ${PREFIX}/bin
