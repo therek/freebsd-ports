@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.25 1999/12/10 15:21:41 steve Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.26 2000/03/25 00:18:26 knu Exp $
 #
 
     SUBDIR += arc
@@ -22,7 +22,6 @@
     SUBDIR += unarj
     SUBDIR += unrar
     SUBDIR += unzip
-    SUBDIR += unzip.with_encryption
     SUBDIR += zip
     SUBDIR += zip.with_encryption
     SUBDIR += zoo
