@@ -3,7 +3,7 @@
 # Date created:		9 November 1999
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/tkrat2/Makefile,v 1.21 2000/01/29 20:50:27 billf Exp $
 #
 
 DISTNAME=	tkrat-2.0b7
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82:${PORTSDIR}/lang/tcl82 \
 		tk82:${PORTSDIR}/x11-toolkits/tk82 \
-		c-client4.5:${PORTSDIR}/mail/imap-uw
+		c-client4.7:${PORTSDIR}/mail/imap-uw
 
 GNU_CONFIGURE=	yes
 
