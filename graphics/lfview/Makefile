@@ -2,14 +2,13 @@
 # Date created:		24 February 1999
 # Whom:			Yuu Yashiki
 #
-# $FreeBSD: ports/graphics/lfview/Makefile,v 1.5 2000/06/16 08:47:02 sobomax Exp $
+# $FreeBSD: ports/graphics/lfview/Makefile,v 1.6 2000/06/16 21:50:47 asami Exp $
 #
 
 PORTNAME=	lfview
-PORTVERSION=	1.1.b3
+PORTVERSION=	1.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.geocities.co.jp/Playtown/6344/
-DISTNAME=	lfview11beta3
+MASTER_SITES=	http://hoshina.denpa.org/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	s974123@cc.matsuyama-u.ac.jp
