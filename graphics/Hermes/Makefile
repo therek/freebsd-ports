@@ -2,13 +2,17 @@
 # Date created:				29 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.7 2000/04/13 06:27:59 obrien Exp $
+# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.8 2000/05/17 15:53:18 sobomax Exp $
 #
 
 PORTNAME=	Hermes
 PORTVERSION=	1.3.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://hermes.terminal.at/files/ \
+MASTER_SITES=	http://tzo.linux.tucows.com/files/x11/dev/ \
+		ftp://ftp.direct.ca/pub/linuxberg/x11/dev/ \
+		http://oarnet.linux.tucows.com/files/x11/dev/ \
+		ftp://ftp.infomagic.com/pub/mirrors/tucows/mlinux/files/x11/dev/ \
+		http://hermes.terminal.at/files/ \
 		http://dark.x.dtu.dk/~mbn/clanlib/download/
 
 MAINTAINER=	will@FreeBSD.org
