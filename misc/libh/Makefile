@@ -2,7 +2,7 @@
 # Date Created:		19 September 2000
 # Whom:			nra
 #
-# $FreeBSD: ports/misc/libh/Makefile,v 1.6 2001/05/07 07:49:22 alex Exp $
+# $FreeBSD: ports/misc/libh/Makefile,v 1.7 2001/05/08 19:54:29 alex Exp $
 #
 
 PORTNAME=	libh
@@ -25,9 +25,6 @@ INSTALLS_SHLIB=	yes
 .include <bsd.port.pre.mk>
 
 DISTFILES!=	${CAT} ${FILESDIR}/distfiles
-.if ${XFREE86_VERSION} > 3
-EXTRA_PATCHES=${PKGDIR}/patch-aa
-.endif
 
 CVS_CMD?=	cvs -z3
 # arbitrary date for now.
