@@ -2,7 +2,7 @@
 # Date created:         4 May 1995
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/wn/Makefile,v 1.32 1999/08/31 02:43:32 peter Exp $
+# $FreeBSD: ports/www/wn/Makefile,v 1.33 2000/04/10 00:07:23 cpiazza Exp $
 #
 
 PORTNAME=	wn
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.acns.nwu.edu/pub/wn/
 
 MAINTAINER=	adam@veda.is
 
-BROKEN='single MASTER_SITE and /pub/wn/ doesnt exist on ftp.acns.nwu.edu anymore'
+BROKEN='single MASTER_SITE and /pub/wn/ doesn\'t exist on ftp.acns.nwu.edu anymore'
 
 IS_INTERACTIVE=
 NO_PACKAGE=	"Hostname compiled in"
