@@ -2,7 +2,7 @@
 # Date created:		2 May 1998
 # Whom:                 dbader@eece.unm.edu
 #
-# $FreeBSD: ports/net/mpich/Makefile,v 1.20 2000/09/30 14:41:46 dannyboy Exp $
+# $FreeBSD: ports/net/mpich/Makefile,v 1.21 2000/11/12 12:21:58 lioux Exp $
 #
 
 PORTNAME=	mpich
@@ -16,10 +16,14 @@ PATCHFILES=	5487 5524 5542 5543 5594 5613
 
 MAINTAINER=	dbader@eece.unm.edu
 
+RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+BUILD_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+
 DIST_SUBDIR=	mpich
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	-cflags="${CFLAGS}" -prefix=${PREFIX}/mpich
+CONFIGURE_ARGS=	-cflags="${CFLAGS}" -prefix=${PREFIX}/mpich \
+		-mpe_opts="--with-wishloc=wish8.0"
 
 .include <bsd.port.pre.mk>
 
