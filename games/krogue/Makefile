@@ -3,7 +3,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/krogue/Makefile,v 1.2 2000/02/25 19:17:57 asami Exp $
+# $FreeBSD: ports/games/krogue/Makefile,v 1.3 2000/02/25 22:35:14 jim Exp $
 #
 
 DISTNAME=	krogue-0.9.6
@@ -17,7 +17,7 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	xgettext:${PORTSDIR}/devel/gettext
 
 USE_QT=		yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	SHELL=${SH} PREFIX=${PREFIX} MAKE=${GMAKE} PCFLAGS="${CFLAGS}"
 
