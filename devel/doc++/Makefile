@@ -2,15 +2,14 @@
 # Date created:		20 Dec 1998
 # Whom:			Ruslan@Shevchenko.Kiev.UA
 #
-# $FreeBSD: ports/devel/doc++/Makefile,v 1.11 2001/02/14 05:42:27 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	doc++
 PORTVERSION=	3.4.4
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://www.linuxsupportline.com/~doc++/
-MASTER_SITE_SUBDIR=	apps/doctools
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	docpp
 
 MAINTAINER=	Ruslan@Shevchenko.Kiev.UA
 
