@@ -3,15 +3,28 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.50 1999/10/08 16:15:42 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.51 1999/10/08 17:19:20 sada Exp $
 #
 
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
 MASTER_SITES?=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/unsupported/freebsd/complete_install/
 DISTFILES?=	communicator-v47-export.x86-unknown-freebsd.tar.gz
+.elif ${ARCH} == "alpha"
+MASTER_SITES?=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/supported/dec_unix40/complete_install/
+DISTFILES?=	communicator-v47-export.alpha-dec-osf4.0.tar.gz
+.endif
+
+ONLY_FOR_ARCHS=	i386 alpha
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 NO_LATEST_LINK=	yes
+.if ${ARCH} == "i386"
 WRKSRC?=	${WRKDIR}/${BROWSER}-v47.x86-unknown-freebsd
+.elif ${ARCH} == "alpha"
+WRKSRC?=	${WRKDIR}/${BROWSER}-v47.alpha-dec-osf4.0
+.endif
 
 BROWSER_VER=	4.7
 INFILE_HEAD?=	'Communicator,4.7.0.19990915'

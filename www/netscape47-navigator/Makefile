@@ -3,11 +3,20 @@
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.41 1999/10/04 22:21:32 sada Exp $
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.42 1999/10/08 16:15:43 sada Exp $
 #
 
+.include <bsd.port.pre.mk>
+
+.if ${ARCH} == "i386"
 MASTER_SITES=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/unsupported/freebsd/navigator_standalone/
 DISTFILES=	navigator-v47-export.x86-unknown-freebsd.tar.gz
+.elif ${ARCH} == "alpha"
+MASTER_SITES=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/supported/dec_unix40/navigator_standalone/
+DISTFILES=	navigator-v47-export.alpha-dec-osf4.0.tar.gz
+.endif
+
+ONLY_FOR_ARCHS=	i386 alpha
 
 BROWSER=	navigator
 INFILE_HEAD=	'Navigator,4.7.0.19990915'

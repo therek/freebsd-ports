@@ -4,7 +4,7 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.14 1999/10/10 18:33:00 sada Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.15 2000/01/03 09:15:02 billf Exp $
 #
 
 DISTNAME=	linux-netscape-${BROWSER}-${BROWSER_VER}
@@ -15,6 +15,8 @@ DISTFILES=	communicator-v47-export.x86-unknown-linuxglibc2.0.tar.gz
 MAINTAINER=	girgen@partitur.se
 
 RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
+
+ONLY_FOR_ARCHS=	i386
 
 WRKSRC=		${WRKDIR}/${BROWSER}-v47.x86-unknown-linux2.0
 
