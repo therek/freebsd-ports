@@ -3,7 +3,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.12 1999/09/10 06:54:13 sumikawa Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.13 1999/11/25 03:41:53 jseger Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -13,6 +13,8 @@ CATEGORIES+=	misc
 MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 
 MAINTAINER?=	itojun@itojun.org
+
+BROKEN=		"Security hole (buffer overflow yielding setgid uucp in xmindpath)"
 
 LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype
 
