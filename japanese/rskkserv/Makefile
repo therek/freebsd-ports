@@ -2,11 +2,12 @@
 # Date created:		18 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.9 2001/03/11 09:15:59 knu Exp $
+# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.10 2001/09/11 17:07:59 knu Exp $
 #
 
 PORTNAME=	rskkserv
 PORTVERSION=	2.94.12
+PORTREVISION=	1
 CATEGORIES=	japanese ruby
 MASTER_SITES=	http://www.unixuser.org/~ysjj/rskkserv/
 DIST_SUBDIR=	ruby
