@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/Makefile,v 1.383 2001/06/10 13:41:52 sobomax Exp $
 #
 
     SUBDIR += 0verkill
@@ -218,6 +218,7 @@
     SUBDIR += tkmoo
     SUBDIR += tksol
     SUBDIR += trojka
+    SUBDIR += tux-aqfh
     SUBDIR += tuxkart
     SUBDIR += tuxracer
     SUBDIR += tvp
