@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.17 2004/05/02 17:31:56 pav Exp $
+#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.18 2005/03/12 08:55:37 sem Exp $
 #
 
 # If the POSTFIX_DEFAULT_MTA environment variable is set to YES, it
@@ -29,7 +29,7 @@ ask() {
 	question=$1
 	default=$2
 	if [ -z "${PACKAGE_BUILDING}" -a x${BATCH} = xno ]; then
-		/usr/bin/read -p "${question} [${default}]? " answer
+		read -p "${question} [${default}]? " answer
 	fi
 	if [ x${answer} = x ]; then
 		answer=${default}
