@@ -2,11 +2,11 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.63 2001/07/02 16:13:08 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.64 2001/07/09 23:01:00 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 PORTEPOCH=	1
 PKGNAMESUFFIX=	+ipv6
 CATEGORIES=	www ipv6
@@ -45,7 +45,7 @@ CONFIGURE_ARGS=					\
 		--enable-editor			\
 		--enable-mailnews		\
 		--enable-mathml			\
-		--enable-optimize		\
+		--enable-optimize="${CFLAGS}"	\
 		--enable-pics			\
 		--enable-svg			\
 		--enable-tests			\
@@ -57,8 +57,10 @@ CONFIGURE_ARGS=					\
 		--with-mng=${LOCALBASE}		\
 		--with-pthreads
 CONFIGURE_ENV=	BSD_PTHREAD_LIBS="${PTHREAD_LIBS}" \
-		MOZ_OPTIMIZE_FLAGS=""
-MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin MALLOC_OPTIONS=j
+		CFLAGS="" CXXFLAGS=""
+MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
+		CFLAGS="" CXXFLAGS="" \
+		MALLOC_OPTIONS=j
 
 post-build:
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
