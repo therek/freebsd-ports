@@ -4,11 +4,11 @@
 # Date created:			  Wed Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dlint/Makefile,v 1.2 1999/08/30 14:22:35 peter Exp $
 #
 
-DISTNAME=	dlint1.3.2
-PKGNAME=	dlint-1.3.2
+DISTNAME=	dlint1.3.3
+PKGNAME=	dlint-1.3.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.domtools.com/pub/
 
@@ -18,9 +18,7 @@ NO_BUILD=	yes
 MAN8=		dlint.8
 
 do-configure:
-	@${MV} ${WRKSRC}/dlint ${WRKSRC}/dlint.orig
-	@${SED} -e 's:/usr/local/bin:${PREFIX}/sbin:g'  \
-		${WRKSRC}/dlint.orig >${WRKSRC}/dlint
+	@${PERL} -pi.orig -e 's:/usr/local/bin:${PREFIX}/sbin:g' ${WRKSRC}/dlint
 	@${SED} -e 's:DLINT 1:DLINT 8:g' ${WRKSRC}/dlint.1  >${WRKSRC}/dlint.8
 
 do-install:
