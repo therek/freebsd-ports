@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.43 2001/01/07 17:49:45 will Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.44 2001/02/26 19:24:41 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-extra-libs=${LOCALBASE}/lib \
 		--without-audiofile
 CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+		CPPFLAGS="-I${LOCALBASE}/include -D_GETOPT_H" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes
 

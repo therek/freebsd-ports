@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.55 2000/12/12 03:02:14 kevlo Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.56 2001/02/26 19:24:40 will Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -25,7 +25,7 @@ CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+=	LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include -D_XOPEN_UNIX" \
+		CPPFLAGS="-I${LOCALBASE}/include -D_GETOPT_H -D_XOPEN_UNIX" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
 

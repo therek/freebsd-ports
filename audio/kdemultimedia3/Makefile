@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.47 2000/12/12 03:02:06 kevlo Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.48 2001/02/26 19:24:39 will Exp $
 #
 
 PORTNAME=	kdemultimedia
@@ -24,7 +24,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+		CPPFLAGS="-I${LOCALBASE}/include -D_GETOPT_H" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc" \
 		USER_LDFLAGS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.49 2000/12/12 03:02:19 kevlo Exp $
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.50 2001/02/26 19:24:45 will Exp $
 #
 
 PORTNAME=	kdeutils
@@ -24,7 +24,7 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+		CPPFLAGS="-I${LOCALBASE}/include -D_GETOPT_H" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc" \
 		USER_LDFLAGS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes
