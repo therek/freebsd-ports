@@ -3,7 +3,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/web500gw/Makefile,v 1.7 1999/09/21 22:37:11 nectar Exp $
+# $FreeBSD: ports/www/web500gw/Makefile,v 1.8 1999/11/26 15:30:25 imura Exp $
 #
 
 DISTNAME=	web500gw-2.1b3
@@ -12,6 +12,9 @@ MASTER_SITES=	ftp://ftp.tu-chemnitz.de/pub/Local/urz/web500gw/ \
 		http://www.tu-chemnitz.de/ftp-home/pub/Local/urz/web500gw/ \
 		ftp://ftp.ntua.gr/pub/net/ldap/web500gw/ \
 		ftp://ftp.imms.de/pub/unix/networking/ldap/
+
+PATCH_SITES=	http://www.tu-chemnitz.de/~fri/web500gw/
+PATCHFILES=	modtmpl.patch
 
 MAINTAINER=	Karl.Dietz@frankfurt.netsurf.de
 
