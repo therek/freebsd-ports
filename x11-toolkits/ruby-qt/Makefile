@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.15 2001/01/09 10:13:47 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.16 2001/03/17 12:09:53 knu Exp $
 #
 
 PORTNAME=	qt
@@ -15,8 +15,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	qt.3:${PORTSDIR}/x11-toolkits/qt145
-
+USE_QT_VER=	1
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
@@ -37,12 +36,12 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/qt
-	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/qt/
-	${MKDIR} ${RUBY_DOCDIR}/qt/ja
-	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/qt/
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/qt/
-	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/qt/ja/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
 .include <bsd.port.mk>
