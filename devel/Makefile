@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.451 2001/03/04 12:36:25 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.452 2001/03/04 20:33:11 olgeni Exp $
 #
     SUBDIR += zziplib
 
@@ -144,6 +144,7 @@
     SUBDIR += kdbg
     SUBDIR += kdelibdocs
     SUBDIR += kdesdk
+    SUBDIR += kdestudio
     SUBDIR += kdevelop
     SUBDIR += kelp
     SUBDIR += kpp
