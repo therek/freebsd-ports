@@ -1,9 +1,8 @@
 # New ports collection makefile for:	GLX
-# Version required:     CVS
 # Date created:         13 September 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/glx/Makefile,v 1.3 2000/02/08 09:26:37 peter Exp $
+# $FreeBSD: ports/graphics/glx/Makefile,v 1.4 2000/04/14 10:46:03 asami Exp $
 #
 #
 # Notes:

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	qpage
-# Version required:	3.2
 # Date created:		02 Aug 1997
 # Whom:			joes@seaport.net
 #
-# $FreeBSD: ports/comms/qpage/Makefile,v 1.11 2000/02/08 09:25:57 peter Exp $
+# $FreeBSD: ports/comms/qpage/Makefile,v 1.12 2000/04/08 23:22:37 mharo Exp $
 #
 
 PORTNAME=	qpage

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	portlint
-# Version required:     (self contained)
 # Date created:		13 Jun 1997
 # Whom:			Jun-ichiro itojun Hagino <itojun@itojun.org>
 #
-# $FreeBSD: ports/devel/portlint/Makefile,v 1.32 2000/04/08 22:41:14 mharo Exp $
+# $FreeBSD: ports/devel/portlint/Makefile,v 1.33 2000/04/11 21:30:10 mharo Exp $
 #
 
 PORTNAME=	portlint

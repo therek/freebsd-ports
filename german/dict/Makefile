@@ -1,9 +1,8 @@
 # New ports collection makefile for: dict
-# Version required:     1.0
 # Date created:         6 August 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/dict/Makefile,v 1.10 2000/01/08 16:57:36 wosch Exp $
+# $FreeBSD: ports/german/dict/Makefile,v 1.11 2000/04/08 22:01:16 mharo Exp $
 #
 
 PORTNAME=	de-dict

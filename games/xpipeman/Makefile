@@ -1,9 +1,8 @@
 # New ports collection makefile for:    xpipeman
-# Version required:	something real old
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xpipeman/Makefile,v 1.12 1999/08/25 06:05:55 obrien Exp $
+# $FreeBSD: ports/games/xpipeman/Makefile,v 1.13 2000/04/14 12:28:02 asami Exp $
 #
 
 PORTNAME=       xpipeman

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	xmine
-# Version required:	1.0.3 / Athena
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xmine/Makefile,v 1.18 1999/08/25 06:05:35 obrien Exp $
+# $FreeBSD: ports/games/xmine/Makefile,v 1.19 2000/04/14 12:27:43 asami Exp $
 #
 
 PORTNAME=	xmine

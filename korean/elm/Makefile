@@ -1,9 +1,8 @@
 # New ports collection makefile for:    elm-2.4h4.1
-# Version required:     2.4pl25.h4.1
 # Date created:         1 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/elm/Makefile,v 1.5 1999/08/30 12:08:41 peter Exp $
+# $FreeBSD: ports/korean/elm/Makefile,v 1.6 2000/04/13 09:16:10 asami Exp $
 #
 
 PORTNAME=	elm

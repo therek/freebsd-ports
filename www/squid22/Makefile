@@ -1,9 +1,8 @@
 # New ports collection makefile for:	squid
-# Version required:	2.2.STABLE5
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid22/Makefile,v 1.62 1999/11/11 02:40:18 peter Exp $
+# $FreeBSD: ports/www/squid22/Makefile,v 1.63 2000/04/10 00:06:51 cpiazza Exp $
 #
 
 PORTNAME=	squid

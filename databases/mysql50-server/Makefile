@@ -1,9 +1,8 @@
 # ports collection makefile for:	MySQL-server
-# Version required:			v3.22.x
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.75 2000/04/02 22:15:11 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.76 2000/04/13 06:40:05 asami Exp $
 #
 
 MASTERPORTNAME=	mysql-server

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	nmh
-# Version required:     1.0.3
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.20 2000/02/29 10:50:05 sheldonh Exp $
+# $FreeBSD: ports/mail/nmh/Makefile,v 1.21 2000/04/13 20:00:16 cpiazza Exp $
 #
 # Makefile variables of interest:
 #

@@ -1,9 +1,8 @@
 # New ports collection makefile for:    mshell
-# Version required:     93/3/3
 # Date created:         24 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/misc/mshell/Makefile,v 1.12 1999/08/28 02:42:29 mharo Exp $
+# $FreeBSD: ports/misc/mshell/Makefile,v 1.13 2000/04/14 08:46:19 asami Exp $
 #
 
 PORTNAME=	mshell

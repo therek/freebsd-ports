@@ -1,9 +1,8 @@
 # New ports collection makefile for:	xgammon
-# Version required:	0.98-14
 # Date created:		02 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xgammon/Makefile,v 1.15 1999/08/25 06:05:14 obrien Exp $
+# $FreeBSD: ports/games/xgammon/Makefile,v 1.16 2000/04/14 12:27:23 asami Exp $
 #
 
 PORTNAME=	xgammon
