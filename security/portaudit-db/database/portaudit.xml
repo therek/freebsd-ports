@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 This file is in the public domain.
-  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.2 2004/06/14 08:04:41 eik Exp $
+  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.3 2004/07/05 15:30:35 eik Exp $
 -->
 <!DOCTYPE vuxml PUBLIC "-//vuxml.org//DTD VuXML 1.1//EN" "http://www.vuxml.org/dtd/vuxml-1/vuxml-11.dtd">
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -91,6 +91,10 @@ This file is in the public domain.
     </description>
     <references>
       <mlist msgid="FB24803D1DF2A34FA59FC157B77C970502D684B7@idserv04.idef.com">http://lists.freebsd.org/pipermail/freebsd-ports/2004-June/013878.html</mlist>
+      <url>http://www.idefense.com/application/poi/display?id=114&amp;type=vulnerabilities</url>
+      <cvename>CAN-2004-0640</cvename>
+      <url>http://www.osvdb.org/7594</url>
+      <url>http://secunia.com/advisories/12032</url>
     </references>
     <dates>
       <discovery>2003-04-03</discovery>
