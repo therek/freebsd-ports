@@ -2,36 +2,52 @@
 # Date created:		26 Jan 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.2 2000/02/21 16:57:00 taoka Exp $
+# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.3 2000/04/10 19:50:11 cpiazza Exp $
 #
 
 PORTNAME=	sapphire
-PORTVERSION= 	0.14.0.2
+PORTVERSION=	0.14.2
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://download.sourceforge.net/sapphire/
-DISTNAME=	${PORTNAME}-0.14.0-2
+MASTER_SITES=	http://download.sourceforge.net/sapphire/ \
+		http://sapphire.sourceforge.net/themes/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${THEMES_SRC}
 
 MAINTAINER=	trevor@jpj.net
+
+RUN_DEPENDS=	xsetbg:${PORTSDIR}/graphics/xli
+
+DIST_SUBDIR=	sapphire
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 
+THEMES_SRC=	atomic.tar.gz bevel.tar.gz blues.tar.gz dtheater.tar.gz \
+		klamath.tar.gz metal.tar.gz nocturne.tar.gz river.tar.gz \
+		sapphire.tar.gz slate.tar.gz synopsis.tar.gz
+
 post-extract:
 	@${CP} ${WRKSRC}/data.inst ${WRKSRC}/sapphire.inst
+	@${CP} ${WRKDIR}/*/*.theme ${WRKSRC}/data/themes
+	@${CP} ${WRKDIR}/*/*.jpg ${WRKSRC}/data/themes
 
 post-patch:
-	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/sapphire.inst
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/sapphire.inst
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/sapphire.inst ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/share/sapphire
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/sapphire
 	@${MKDIR} ${PREFIX}/share/sapphire/menu
-	${INSTALL_DATA} ${WRKSRC}/data/menu/* ${PREFIX}/share/sapphire/menu
+	${INSTALL_DATA} ${WRKSRC}/data/menu/default ${PREFIX}/share/sapphire/menu
 	@${MKDIR} ${PREFIX}/share/sapphire/themes
-	${INSTALL_DATA} ${WRKSRC}/data/themes/* ${PREFIX}/share/sapphire/themes
+	${INSTALL_DATA} ${WRKSRC}/data/themes/*.theme ${PREFIX}/share/sapphire/themes
+	@${MKDIR} ${PREFIX}/share/sapphire/themes/backgrounds
+	${INSTALL_DATA} ${WRKSRC}/data/themes/*.jpg ${PREFIX}/share/sapphire/themes/backgrounds
 	@${MKDIR} ${PREFIX}/share/sapphire/wmconfig
-	${INSTALL_DATA} ${WRKSRC}/data/wmconfig/* ${PREFIX}/share/sapphire/wmconfig
+	${INSTALL_DATA} ${WRKSRC}/data/wmconfig/wmconf ${PREFIX}/share/sapphire/wmconfig
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/sapphire
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/sapphire
+.endif
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
