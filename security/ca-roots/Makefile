@@ -2,7 +2,7 @@
 # Date created:			  Sep 5, 2000
 # Whom:				  nsayer
 #
-# $FreeBSD: ports/security/ca-roots/Makefile,v 1.1 2000/09/05 17:36:46 nsayer Exp $
+# $FreeBSD: ports/security/ca-roots/Makefile,v 1.2 2000/10/12 21:56:10 nsayer Exp $
 #
 
 PORTNAME=	ca-roots
@@ -18,5 +18,6 @@ NO_BUILD=	yes
 do-install:
 		${MKDIR} ${PREFIX}/share/certs
 		${INSTALL_DATA} ${FILESDIR}/ca-root.crt ${PREFIX}/share/certs
+		${LN} -sf ${PREFIX}/share/certs/ca-root.crt /etc/ssl/cert.pem
 
 .include <bsd.port.mk>
