@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.362 2004/03/05 05:28:32 bland Exp $
+# $FreeBSD: ports/MOVED,v 1.363 2004/03/06 12:23:09 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -971,3 +971,4 @@ japanese/vfxdvi400||2004-03-04|removed (obsolate)
 japanese/vfxdvi600||2004-03-04|removed (obsolate)
 games/gcompris|games/gcompris2|2004-03-05|removed, obsoleted, successor is gcompris2
 devel/pear||2004-03-06|removed, obsolete
+graphics/filmgimp|graphics/cinepaint|2004-03-06|renamed
