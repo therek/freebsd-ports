@@ -2,7 +2,7 @@
 # Date created:		1999-12-12
 # Whom:			AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/cad/cider/Makefile,v 1.4 2000/04/08 23:19:57 mharo Exp $
+# $FreeBSD: ports/cad/cider/Makefile,v 1.5 2000/10/28 16:13:03 kevlo Exp $
 #
 
 PORTNAME=	cider
@@ -48,7 +48,7 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/examples/cider
 	@${TAR} -cf - -C ${WRKSRC}/cider/common/examples . | ${TAR} -xf - -C ${PREFIX}/share/examples/cider
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/examples/cider
-	@${LN} -fs ${PREFIX}/share/spice3/scripts/spinit ${PREFIX}/share/cider/scripts
 .endif
+	@${LN} -fs ${PREFIX}/share/spice3/scripts/spinit ${PREFIX}/share/cider/scripts
 
 .include <bsd.port.mk>
