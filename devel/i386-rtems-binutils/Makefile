@@ -2,11 +2,11 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.9 2001/04/09 15:00:05 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.10 2001/04/09 15:00:44 jeh Exp $
 #
 
 PORTNAME=	binutils
-PORTVERSION=	2.11
+PORTVERSION=	2.11.2
 PORTREVISION=	2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
