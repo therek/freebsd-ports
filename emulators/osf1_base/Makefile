@@ -3,14 +3,14 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.11 2000/04/15 04:18:08 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.12 2000/04/20 19:34:27 obrien Exp $
 #
 
 PORTNAME=	osf1_base
 PORTVERSION=	4.0f
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.digital.com/private/netscape/
-DISTNAME=	netscape-4.7-1.alpha
+MASTER_SITES=	ftp://ftp.support.compaq.com/private/alpha-tools-software/netscape/
+DISTNAME=	netscape-4.7-3.alpha
 EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	obrien@FreeBSD.org
@@ -18,7 +18,6 @@ MAINTAINER=	obrien@FreeBSD.org
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm2cpio
 
 ONLY_FOR_ARCHS=	alpha
-RESTRICTED=	Not allowed to redistribute on our FTP site or CDROMs
 
 PREFIX=			/compat/osf1
 EXTRACT_CMD=		rpm2cpio
