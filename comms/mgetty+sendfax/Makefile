@@ -3,7 +3,7 @@
 # Date created:         20 April 1998
 # Whom:                 rkw
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.28 1999/08/25 05:12:36 obrien Exp $
 #
 
 DISTNAME=	mgetty1.1.20-Jan17
@@ -31,14 +31,14 @@ MAN5=		faxqueue.5
 MAN8=		callback.8 \
 		faxrunqd.8 \
 		mgetty.8 \
-		sendfax.8 
+		sendfax.8
 
 pre-install:
 	@(cd ${WRKSRC}/doc; ${MAKE} manpages)
 
 .if !defined(BATCH)
 post-install:
-	@(cd ${PKGDIR}; export PKG_PREFIX=${PREFIX}; /usr/bin/perl INSTALL _ POST-INSTALL)
+	@(cd ${PKGDIR}; export PKG_PREFIX=${PREFIX}; ${PERL5} INSTALL _ POST-INSTALL)
 .endif
 
 .include <bsd.port.mk>
