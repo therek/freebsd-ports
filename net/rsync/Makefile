@@ -4,7 +4,7 @@
 # Date created:         Sat Aug 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/rsync/Makefile,v 1.24 1999/08/30 14:24:04 peter Exp $
 #
 
 DISTNAME=	rsync-2.3.1
@@ -23,9 +23,8 @@ MAN1=		rsync.1
 MAN5=		rsyncd.conf.5
 
 pre-configure:
-	@${MV} ${WRKSRC}/rsync.1 ${WRKSRC}/rsync.1.in
-	@${SED} -e 's:%%PREFIX%%:${PREFIX}:g'  \
-		${WRKSRC}/rsync.1.in > ${WRKSRC}/rsync.1
+	@${PERL} -pi.orig -e 's:/etc/:${PREFIX}/etc/:g' ${WRKSRC}/rsync.1
+	@${PERL} -pi.orig -e 's:/etc/:${PREFIX}/etc/:g' ${WRKSRC}/rsyncd.conf.5
 
 post-install:
 	@strip ${PREFIX}/bin/rsync
