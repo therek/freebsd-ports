@@ -2,11 +2,11 @@
 # Date created:				March 13, 2000
 # Whom:					Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.3 2000/06/10 17:06:05 vanilla Exp $
+# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.4 2000/06/17 02:37:07 will Exp $
 #
 
 PORTNAME=	Apache-Session
-PORTVERSION= 	1.51
+PORTVERSION= 	1.53
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	frank@exit.com
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/p5-Apache \
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable
 
 USE_PERL5=	yes
@@ -34,12 +34,15 @@ MAN3=		Apache::Session.3 \
 		Apache::Session::Postgres.3 \
 		Apache::Session::Serialize::Base64.3 \
 		Apache::Session::Serialize::Storable.3 \
+		Apache::Session::Serialize::Sybase.3 \
 		Apache::Session::Serialize::UUEncode.3 \
 		Apache::Session::Store::DB_File.3 \
 		Apache::Session::Store::File.3 \
 		Apache::Session::Store::MySQL.3 \
 		Apache::Session::Store::Oracle.3 \
-		Apache::Session::Store::Postgres.3
+		Apache::Session::Store::Postgres.3 \
+		Apache::Session::Store::Sybase.3 \
+		Apache::Session::Sybase.3
 
 do-configure:
 		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
