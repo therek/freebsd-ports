@@ -3,22 +3,25 @@
 # Date created:			May 16, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/misc/salias/Makefile,v 1.1 2001/05/16 13:01:17 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	salias
-PORTVERSION=	0.1.5
-CATEGORIES=	misc
+PORTVERSION=	0.2.0
+CATEGORIES=	misc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=	py-${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/Simple.pm:${PORTSDIR}/textproc/p5-XML-Simple
-RUN_DEPENDS=	${BUILD_DEPENDS}
+USE_PYTHON=	yes
+SETUP_CMD=	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py
 
-PERL_CONFIGURE=	yes
+do-build:
+	@${SETUP_CMD} build
 
-MAN1=	salias.1
+do-install:
+	@${SETUP_CMD} install
 
 .include <bsd.port.mk>
