@@ -3,11 +3,11 @@
 # Date created:			Jul 23, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/ftp/axel/Makefile,v 1.2 2001/08/15 07:00:56 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	axel
-PORTVERSION=	0.96
+PORTVERSION=	0.99
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.lintux.cx/downloads/
 
@@ -26,14 +26,5 @@ post-patch:
 	@${PERL} -pi -e "s,-pthread,${PTHREAD_LIBS},g ; \
 		s,^(CFLAGS = -O3),#\1,g ; \
 		s,gcc,${CC},g" ${WRKSRC}/Makefile
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/axel ${PREFIX}/bin/axel
-	${INSTALL_DATA} ${WRKSRC}/axelrc.example ${PREFIX}/etc/axelrc
-	${INSTALL_MAN} ${WRKSRC}/axel.1 ${PREFIX}/man/man1/axel.1
-.for lang in de nl
-	${INSTALL_DATA} ${WRKSRC}/${lang}.mo \
-		${PREFIX}/share/locale/${lang}/LC_MESSAGES/axel.mo
-.endfor
 
 .include <bsd.port.mk>
