@@ -2,19 +2,19 @@
 # Date created:		27 October 1997
 # Whom:			dglo@ssec.wisc.edu
 #
-# $FreeBSD: ports/net/nslint/Makefile,v 1.9 2000/01/22 02:19:37 cpiazza Exp $
+# $FreeBSD: ports/net/nslint/Makefile,v 1.10 2000/04/09 18:12:37 cpiazza Exp $
 #
 
 PORTNAME=	nslint
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2a2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/
-EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dglo@SSEC.WISC.EDU
+MAINTAINER=	petef@databits.net
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--quiet
+CONFIGURE_ARGS=	--quiet --mandir=${MANPREFIX}/man --prefix=${PREFIX}
+ALL_TARGET=	nslint
 INSTALL_TARGET=	install install-man
 MAN8=		nslint.8
 
