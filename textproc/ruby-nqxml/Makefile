@@ -2,11 +2,11 @@
 # Date created:		10 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-nqxml/Makefile,v 1.7 2001/06/19 17:38:30 knu Exp $
+# $FreeBSD: ports/textproc/ruby-nqxml/Makefile,v 1.8 2001/06/25 21:30:19 knu Exp $
 #
 
 PORTNAME=	nqxml
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.io.com/~jimm/downloads/nqxml/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -23,8 +23,9 @@ DOCS=		ChangeLog README Credits TODO
 do-install:
 	cd ${WRKSRC} && ${RUBY} install.rb
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}/dispatcher
 	${INSTALL_DATA} ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/contrib/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/dispatcher/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
