@@ -2,13 +2,14 @@
 # Date created:         Wed Apr 19 21:54:51 PDT 2000
 # Whom:                 Matthew Jacob <mjacob@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.2 2000/09/05 15:41:15 mjacob Exp $
+# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.3 2000/10/08 10:22:59 asami Exp $
 #
 
 PORTNAME=	nwclient
 PORTVERSION=	5.5.2
 CATEGORIES=     sysutils
-MASTER_SITES=   ftp://ftp.feral.com/pub/networker/freebsd/freebsd_40/
+MASTER_SITES=   ftp://ftp.feral.com/pub/networker/freebsd/freebsd_40/ \
+		ftp://gw.feral.com/pub/networker/freebsd/freebsd_40
 ARCH!=		uname -m
 DISTNAME=	nwclient-${PORTVERSION}-freebsd-${ARCH}
 EXTRACT_SUFX=	.tgz
