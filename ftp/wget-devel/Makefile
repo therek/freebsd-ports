@@ -3,7 +3,7 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.26 2000/06/24 15:33:01 vanilla Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.27 2000/07/02 21:29:53 will Exp $
 #
 
 PORTNAME=	wget
@@ -25,7 +25,8 @@ CONFIGURE_ENV+=	CPPFLAGS=-I${PREFIX}/include \
 		LDFLAGS=-L${PREFIX}/lib
 
 pre-build:
-	${RM} -rf ${WRKSRC}/doc/wget.info*
+	@${RM} -rf ${WRKSRC}/doc/wget.info*
+	@${CP} ${FILESDIR}/zh_TW.Big5.po ${WRKSRC}/po
 
 post-install:
 	install-info ${PREFIX}/info/wget.info ${PREFIX}/info/dir
