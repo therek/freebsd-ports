@@ -2,7 +2,7 @@
 # Date created:		03 Jan 1995
 # Whom:			faulkner@mpd.tandem.com
 #
-# $FreeBSD: ports/audio/rsynth/Makefile,v 1.15 2000/04/29 22:54:33 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rsynth
@@ -10,7 +10,7 @@ PORTVERSION=	2.0
 CATEGORIES=	audio
 MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/synthesis/
 
-MAINTAINER=	faulkner@mpd.tandem.com
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm \
 		${X11BASE}/include/audio/audiolib.h:${PORTSDIR}/audio/nas
