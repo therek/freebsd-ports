@@ -2,13 +2,14 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.14 2000/06/07 08:23:11 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.15 2000/06/07 17:24:36 knu Exp $
 #
 
 PORTNAME=	cvsweb
 PORTVERSION=	1.85
 CATEGORIES=	devel www
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	knu
 
 MAINTAINER=	knu@FreeBSD.org
 

@@ -2,13 +2,14 @@
 # Date created:		10 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/x11/xcolors/Makefile,v 1.17 2000/06/07 15:00:07 ade Exp $
+# $FreeBSD: ports/x11/xcolors/Makefile,v 1.18 2000/06/07 17:32:07 ade Exp $
 #
 
 PORTNAME=	xcolors
 PORTVERSION= 	1.3
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/ade/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	ade
 DISTNAME=	${PORTNAME}	
 
 MAINTAINER=	ade@FreeBSD.org

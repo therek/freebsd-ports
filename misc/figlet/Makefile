@@ -3,7 +3,7 @@
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/misc/figlet/Makefile,v 1.17 2000/06/07 03:09:18 obrien Exp $
+# $FreeBSD: ports/misc/figlet/Makefile,v 1.18 2000/06/07 17:44:35 obrien Exp $
 #
 
 PORTNAME=	figlet
@@ -12,8 +12,9 @@ CATEGORIES=	misc
 MASTER_SITES=	ftp://wuarchive.wustl.edu/graphics/graphics/misc/figlet/program/unix/ \
 		ftp://ftp.funet.fi/pub/unix/tools/figlet/program/unix/ \
 		ftp://ftp.internexus.net/pub/figlet/program/unix/ \
-		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/ \
+		${MASTER_SITE_LOCAL} \
 		ftp://nuxi.ucdavis.edu/pub/misc/
+MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	figlet22
 
 MAINTAINER=	obrien@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/audio/xcd/Makefile,v 1.26 2000/04/08 21:24:50 mharo Exp $
+# $FreeBSD: ports/audio/xcd/Makefile,v 1.27 2000/06/11 17:20:38 jmz Exp $
 #
 
 PORTNAME=	xcd
 PORTVERSION=	1.7
 CATEGORIES=	audio tk82
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
 

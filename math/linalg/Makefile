@@ -2,13 +2,14 @@
 # Date created:				August 25, 1999
 # Whom:					Oleg Kiselyov <oleg@pobox.com>
 #
-# $FreeBSD: ports/math/linalg/Makefile,v 1.4 2000/05/28 04:05:27 steve Exp $
+# $FreeBSD: ports/math/linalg/Makefile,v 1.5 2000/06/07 17:31:47 will Exp $
 #
 
 PORTNAME=	linalg
 PORTVERSION=	4.3
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/will/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	oleg@pobox.com
 

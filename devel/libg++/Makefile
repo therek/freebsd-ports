@@ -3,7 +3,7 @@
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.7 2000/06/07 03:09:20 obrien Exp $
+# $FreeBSD: ports/devel/libg++/Makefile,v 1.8 2000/06/07 17:44:38 obrien Exp $
 #
 
 PORTNAME=	libg++
@@ -17,7 +17,8 @@ MASTER_SITES=	http://www.m-hollstein.de/libgxx/  \
 		${MASTER_SITE_GNU}
 
 PATCH_SITES=	http://www.m-hollstein.de/libgxx/  \
-		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
+		${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	obrien
 PATCHFILES=	${DISTNAME}-20000312.diff.gz
 PATCH_DIST_STRIP=	-p1
 

@@ -2,13 +2,14 @@
 # Date created:         6 June 2000
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/qix/Makefile,v 1.1.1.1 2000/06/06 00:56:18 jmz Exp $
+# $FreeBSD: ports/games/qix/Makefile,v 1.2 2000/06/11 17:20:15 jmz Exp $
 #
 
 PORTNAME=	qix
 PORTVERSION=	1.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
 

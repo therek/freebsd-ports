@@ -2,13 +2,14 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.21 2000/04/29 21:41:15 jmz Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.22 2000/06/11 17:20:37 jmz Exp $
 #
 
 PORTNAME=	cd-write
 PORTVERSION=	1.4.1
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
 

@@ -2,13 +2,14 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.3 2000/06/07 17:24:35 knu Exp $
+# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.4 2000/06/25 19:26:09 knu Exp $
 #
 
 PORTNAME=	cvsutils
 PORTVERSION=	0.1.5
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	knu
 
 MAINTAINER=	knu@FreeBSD.org
 

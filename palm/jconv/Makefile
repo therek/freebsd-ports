@@ -2,14 +2,15 @@
 # Date created:			14 May 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/palm/jconv/Makefile,v 1.3 2000/06/07 08:17:23 knu Exp $
+# $FreeBSD: ports/palm/jconv/Makefile,v 1.4 2000/06/07 17:24:38 knu Exp $
 #
 
 PORTNAME=	jconv
 PORTVERSION=	2000.05.17
 CATEGORIES=	palm databases
 MASTER_SITES=	http://www.land-j.com/files/ \
-		ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	knu
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 

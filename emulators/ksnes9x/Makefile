@@ -2,13 +2,14 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.6 2000/04/12 04:55:30 mharo Exp $
+# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.7 2000/06/07 17:31:20 will Exp $
 #
 
 PORTNAME=	ksnes9x
 PORTVERSION=	1.2
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/will/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	will@FreeBSD.org
 

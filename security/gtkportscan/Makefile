@@ -2,13 +2,14 @@
 # Date created:		11 March 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.11 2000/06/07 18:14:41 cpiazza Exp $
+# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.12 2000/06/20 21:45:53 cpiazza Exp $
 #
 
 PORTNAME=	gtkportscan
 PORTVERSION=	1.2
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/cpiazza/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cpiazza
 
 MAINTAINER=	ports@FreeBSD.org
 

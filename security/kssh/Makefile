@@ -2,13 +2,14 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/security/kssh/Makefile,v 1.5 2000/06/07 17:31:47 will Exp $
+# $FreeBSD: ports/security/kssh/Makefile,v 1.6 2000/06/22 05:52:06 will Exp $
 #
 
 PORTNAME=	kssh
 PORTVERSION=	0.2
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/will/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -3,7 +3,7 @@
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.17 2000/06/07 17:44:38 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.18 2000/06/10 20:44:37 obrien Exp $
 #
 
 PORTNAME=	pathchar
@@ -12,7 +12,8 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/  \
 		http://sitka.triumf.ca/net/  \
-		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	pathchar-a1-freebsd-3.0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
 		pathchar.mantxt

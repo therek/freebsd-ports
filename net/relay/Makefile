@@ -3,14 +3,15 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/relay/Makefile,v 1.9 2000/06/07 03:09:24 obrien Exp $
+# $FreeBSD: ports/net/relay/Makefile,v 1.10 2000/06/07 17:44:39 obrien Exp $
 #
 
 PORTNAME=	relay
 PORTVERSION=	1.10
 CATEGORIES=	net security
 MASTER_SITES=	http://www.iagora.com/~espel/  \
-		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	relay
 
 MAINTAINER=	obrien@FreeBSD.org
