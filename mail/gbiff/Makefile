@@ -2,17 +2,17 @@
 # Date created:        31 March 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/gbiff/Makefile,v 1.1 2001/03/31 13:47:12 nakai Exp $
 #
 
 PORTNAME=	gbiff
 PORTVERSION=	2.4a
+PORTREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	http://prdownloads.sourceforge.net/gbiff/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
-
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
