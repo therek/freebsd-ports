@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.85 2001/03/06 07:19:39 keith Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.86 2001/03/06 08:35:41 keith Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -41,6 +41,7 @@
     SUBDIR += mkisofs
     SUBDIR += moefonts-cid
     SUBDIR += moettf
+    SUBDIR += mozilla-tclp
     SUBDIR += mule-freewnn
     SUBDIR += muni
     SUBDIR += mutt
