@@ -2,15 +2,13 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/smartdoc/Makefile,v 1.3 2001/04/23 03:43:14 kiri Exp $
+# $FreeBSD: ports/textproc/smartdoc/Makefile,v 1.4 2001/04/27 18:56:05 ijliao Exp $
 #
 
 PORTNAME=	smartdoc
 PORTVERSION=	0.7
 CATEGORIES=	textproc java
-MASTER_SITES=	http://www.asahi-net.or.jp/~dp8t-asm/java/tools/SmartDoc/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	kiri
+MASTER_SITES=	http://www.asahi-net.or.jp/~dp8t-asm/java/tools/SmartDoc/
 DISTNAME=	setup${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.zip
 DIST_SUBDIR=	${PORTNAME}
