@@ -2,11 +2,11 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.50 2000/06/16 21:52:01 asami Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.51 2000/07/04 07:13:06 sobomax Exp $
 #
 
 PORTNAME=	kaffe
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.kaffe.org/pub/kaffe/
 
