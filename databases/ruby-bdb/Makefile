@@ -2,7 +2,7 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-bdb/Makefile,v 1.8 2001/07/29 15:44:55 knu Exp $
+# $FreeBSD: ports/databases/ruby-bdb/Makefile,v 1.9 2001/08/01 11:56:15 knu Exp $
 #
 
 PORTNAME=	bdb
@@ -25,6 +25,9 @@ CONFIGURE_ARGS=	--with-db-include-dir="${PREFIX}/include/db3" \
 INSTALL_TARGET=	site-install
 
 DOCS=		Changes README.en bdb.html bdb.rd docs/*
+
+post-patch:
+	${RUBY} -i -pe 'sub /have_library\("db"/, %q:have_library("db3":' ${WRKSRC}/src/extconf.rb
 
 post-install:
 .if !defined(NOPORTDOCS)
