@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ASCIIdates98-fpw/Makefile,v 1.1 2000/11/30 15:02:59 taoka Exp $
 #
 
 PORTNAME=	ASCIIdates98-fpw
@@ -20,7 +20,7 @@ EXTRACT_BEFORE_ARGS=	-qL
 
 do-install:
 	${MKDIR} ${PREFIX}/share/dict/ASCIIdates98-fpw/ascdates/data
-	${INSTALL_DATA} ${WRKSRC}/devil/data/honmon ${PREFIX}/share/dict/ASCIIdates98-fpw/ascdates/data
+	${INSTALL_DATA} ${WRKSRC}/ascdates/data/honmon ${PREFIX}/share/dict/ASCIIdates98-fpw/ascdates/data
 	${INSTALL_DATA} ${WRKSRC}/catalogs ${PREFIX}/share/dict/ASCIIdates98-fpw
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/ASCIIdates98-fpw
