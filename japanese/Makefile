@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.361 2001/06/01 14:10:55 sf Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.362 2001/06/01 14:25:58 sf Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -270,6 +270,7 @@
     SUBDIR += ptex-pkfonts400
     SUBDIR += ptex-pkfonts600
     SUBDIR += ptex-sjis
+    SUBDIR += pycodec
     SUBDIR += qkc
     SUBDIR += rbnamazu
     SUBDIR += recjis
