@@ -32,7 +32,7 @@
 #
 # $Id: addport,v 1.2 2000/04/02 06:21:13 will Exp $ (original shell script)
 # $Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp $ (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.19 2001/01/01 23:12:31 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.20 2001/01/07 07:25:18 will Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -240,7 +240,7 @@ foreach my $thisdir (@dirs) {
 			$tmp = 0;
 			# Until we reach the offset, record the number of words.
 			while ($tmp < $offset) {
-				$tmp += length($commentArr[$tmp2]);
+				$tmp += length($commentArr[$tmp2]) + 1;
 				$tmp2++;
 			}
 			$tmp2--;
