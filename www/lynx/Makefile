@@ -2,11 +2,8 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx/Makefile,v 1.92 2000/04/26 14:48:55 jseger Exp $
+# $FreeBSD: ports/www/lynx/Makefile,v 1.93 2000/04/30 10:33:12 knu Exp $
 #
-
-# NOTE: This port is tracking lynx-current until 2.8.3 is released.  Anything
-#       before 2.8.3pre.5 has unacceptable security holes.
 
 PORTNAME=	lynx
 PORTVERSION=    2.8.3.1
