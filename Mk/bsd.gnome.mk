@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.26 2003/04/05 20:47:47 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.27 2003/04/05 21:15:25 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -431,6 +431,9 @@ HAVE_GNOME+=	${component}
 
 .if defined(_POSTMKINCLUDED)
 
+# DO NOT USE THESE MACROS!  They are obsolete, and only provided for 
+# backward compatibility with old ports that have not converted to the new
+# GNOME infrastructure.
 .if defined(USE_GTK)
 USE_GNOME=	gtk12
 .endif
@@ -440,11 +443,11 @@ USE_GNOME=	esound
 .if defined(USE_IMLIB)
 USE_GNOME=	imlib
 .endif
+# End of obsolete macros
 
-# Hack USE_GNOME to the modular infrastructure for port maintainers that
-# didn't do so themselves.  This will allow us to get rid of the old
-# GNOME porting infrastructure more quickly.
 .if defined(USE_GNOME)
+# Hack USE_GNOME to the modular infrastructure for port maintainers that
+# didn't do so themselves.  New ports should NOT set USE_GNOME=yes.
 . if ${USE_GNOME}=="yes"
 USE_GNOME=gnomeprefix gnomehack gtkhtml libpanel
 . endif
