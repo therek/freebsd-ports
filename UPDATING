@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040416:
+  AFFECTS: users of net/isc-dhcp3-*
+
+  The isc-dhcp3-* ports must now be enabled / disabled and configured in
+  rc.conf.  See the pkg-message for details.
+
 20040313:
   AFFECTS: users of textproc/expat2
 
@@ -124,4 +130,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.7 2004/03/11 21:20:23 osa Exp $
+$FreeBSD: ports/UPDATING,v 1.8 2004/03/15 19:09:06 marcus Exp $
