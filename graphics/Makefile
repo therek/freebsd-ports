@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.302 2001/04/16 19:59:52 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.303 2001/04/17 17:56:11 will Exp $
 #
 
     SUBDIR += 4va
@@ -86,6 +86,7 @@
     SUBDIR += hobbes-icons-xpm
     SUBDIR += hppsmtools
     SUBDIR += icod
+    SUBDIR += icontact
     SUBDIR += imagesort
     SUBDIR += imanager
     SUBDIR += imlib
