@@ -2,12 +2,12 @@
 # Date created:				18 October 2000
 # Whom:					mwm@mired.org
 #
-# $FreeBSD: ports/misc/cuecat/Makefile,v 1.1 2001/04/07 19:37:31 will Exp $
+# $FreeBSD: ports/misc/cuecat/Makefile,v 1.2 2001/04/15 01:00:11 steve Exp $
 #
 
 PORTNAME=	cuecat
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc python
 MASTER_SITES=	http://www.mired.org/downloads/ \
 		http://mwm.tzo.com/downloads/
