@@ -3,7 +3,7 @@
 # Date created:			  23 January 2000
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.6 2000/11/06 12:15:53 asmodai Exp $
+# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.7 2000/11/09 20:22:10 asmodai Exp $
 #
 PORTNAME=	44bsd-csh
 PORTVERSION=	20001106
@@ -11,7 +11,7 @@ CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asmodai
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 
