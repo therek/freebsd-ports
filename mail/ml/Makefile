@@ -2,13 +2,14 @@
 # Date created:		15 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/mail/ml/Makefile,v 1.7 2000/12/30 19:37:18 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ml
 PORTVERSION=	3.4
 CATEGORIES=	mail
-MASTER_SITES=	http://people.netscape.com/max/ml/
+MASTER_SITES=	http://ftp.rge.com/pub/mail/ml/ \
+		http://people.netscape.com/max/ml/
 
 MAINTAINER=	ports@FreeBSD.org
 
