@@ -2,11 +2,11 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.17 2001/01/24 06:29:13 dinoex Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.18 2001/03/10 06:20:44 dinoex Exp $
 #
 
 PORTNAME=	fidogate
-PORTVERSION=	4.4.3
+PORTVERSION=	4.4.4
 CATEGORIES=	news mail
 MASTER_SITES=	ftp://ftp.fidogate.org/pub/fidogate/ \
 		ftp://ftp.fu-berlin.de/unix/news/fidogate/ \

@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/news/fidogate/pkg-plist,v 1.6 2001/03/10 06:20:44 dinoex Exp $
+@comment $FreeBSD: ports/news/fidogate/pkg-plist,v 1.7 2001/04/13 11:42:58 dinoex Exp $
 libexec/fidogate/areafix.help
+libexec/fidogate/areasbbssync
 libexec/fidogate/charset.bin
 libexec/fidogate/charset.map
 libexec/fidogate/ffx
