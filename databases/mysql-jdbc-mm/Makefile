@@ -2,7 +2,7 @@
 # Date created:		2 January 2000
 # Whom:			Dave Glowacki <dglo@ssec.wisc.edu>
 #
-# $FreeBSD: ports/databases/mysql-jdbc-mm/Makefile,v 1.3 2000/04/08 22:48:35 mharo Exp $
+# $FreeBSD: ports/databases/mysql-jdbc-mm/Makefile,v 1.4 2000/04/25 13:59:16 knu Exp $
 #
 
 PORTNAME=	mysql-jdbc-mm
@@ -15,6 +15,8 @@ MAINTAINER=	dglo@SSEC.WISC.EDU
 
 BUILD_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/javac:${PORTSDIR}/java/jdk
 RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
+
+MAKE_ENV+=	JAVAC=${LOCALBASE}/jdk1.1.8/bin/javac
 
 ALL_TARGET=	jar
 
