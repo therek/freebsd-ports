@@ -2,14 +2,15 @@
 # Date created:         8 Apr 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/netscape4.language/Makefile,v 1.20 2000/04/21 07:52:19 mharo Exp $
+# $FreeBSD: ports/russian/netscape4.language/Makefile,v 1.21 2000/04/21 07:52:19 mharo Exp $
 #
 
 PORTNAME=	netscape
 PORTVERSION=    4.7
-MASTER_SITES=   http://koi8.pp.ru/
-DISTFILES=      v4.7.subject.patch.txt
 CATEGORIES=	russian www
+MASTER_SITES=   http://koi8.pp.ru/
+DISTNAME=       v4.7.subject.patch.txt
+EXTRACT_SUFX=   # empty
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
@@ -32,6 +33,6 @@ do-install:
 		${CP} ${LOCALBASE}/lib/netscape/Netscape.ad ${APPDEF}/Netscape; \
 	fi
 	cd ${APPDEF}; ${GREP} -q koi8-r=BOLD Netscape || \
-		patch < ${DISTDIR}/${DISTFILES}
+		${PATCH} < ${DISTDIR}/${DISTFILES}
 
 .include <bsd.port.mk>
