@@ -2,16 +2,16 @@
 # Date created:         28 Jun 1999
 # Whom:                 wghicks@bellsouth.net
 #
-# $FreeBSD: ports/devel/tkcon/Makefile,v 1.7 2000/09/23 18:47:27 will Exp $
+# $FreeBSD: ports/devel/tkcon/Makefile,v 1.8 2001/06/20 18:18:23 mi Exp $
 #
 
 PORTNAME=	tkcon
-PORTVERSION=	2.1
+PORTVERSION=	2.2
 CATEGORIES=	devel tk83
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=${PORTNAME}
 
-MAINTAINER=	gehicks@cisco.com
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
