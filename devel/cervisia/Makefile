@@ -2,7 +2,7 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.11 2001/03/17 17:38:25 ijliao Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.12 2001/03/28 19:39:00 demon Exp $
 
 PORTNAME=	cervisia
 PORTVERSION=	1.3
@@ -29,7 +29,7 @@ GNU_CONFIGURE=	yes
 
 MAN1=		cervisia.1
 
-pre-everything:
+pre-everything::
 .if !defined(KDE_VERSION)
 	@${ECHO}
 	@${ECHO} "You may define KDE_VERSION=1 (make KDE_VERSION=1)"
