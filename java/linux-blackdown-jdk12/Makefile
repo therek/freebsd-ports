@@ -2,7 +2,7 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.5 2000/12/15 08:01:52 sobomax Exp $
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.6 2001/01/16 17:31:09 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -15,7 +15,8 @@ DISTNAME=	jdk-1.2.2-RC4-linux-i386-glibc-2.1.2
 
 MAINTAINER=	K.J.Koster@kpn.com
 
-RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base \
+		javavm:${PORTSDIR}/java/javavmwrapper
 
 NO_CDROM=	"License doesn\'t allow distribution with fee"
 NO_PACKAGE=	"License doesn\'t allow binary distributions"
@@ -30,5 +31,6 @@ do-install:
 	${MKDIR} ${PREFIX}/linux-jdk1.2.2
 	(cd ${WRKSRC} && tar --exclude "*.orig" -c -f - .) \
 		| (cd ${PREFIX}/linux-jdk1.2.2 && tar fx -)
+	${LOCALBASE}/bin/registervm "${PREFIX}/linux-jdk1.2.2/bin/java # Linux-JDK1.2.2"
 
 .include <bsd.port.mk>
