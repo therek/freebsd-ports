@@ -2,7 +2,7 @@
 # Date created:		15 Jul 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/jwhois/Makefile,v 1.2 2001/01/16 17:31:48 sobomax Exp $
+# $FreeBSD: ports/net/jwhois/Makefile,v 1.3 2001/03/22 10:10:05 knu Exp $
 #
 
 PORTNAME=	jwhois
@@ -29,6 +29,6 @@ post-install:
 	${CHOWN} :nogroup ${PREFIX}/var/jwhois
 	${CHMOD} g+w ${PREFIX}/var/jwhois
 	${INSTALL_DATA} ${WRKSRC}/example/jwhois.conf ${PREFIX}/etc/jwhois.conf.sample
-	[ ! -f ${PREFIX}/etc/jwhois.conf ] && ${INSTALL_DATA} ${PREFIX}/etc/jwhois.conf.sample ${PREFIX}/etc/jwhois.conf
+	if [ ! -f ${PREFIX}/etc/jwhois.conf ]; then ${INSTALL_DATA} ${PREFIX}/etc/jwhois.conf.sample ${PREFIX}/etc/jwhois.conf; fi
 
 .include <bsd.port.mk>
