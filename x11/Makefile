@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.297 2000/08/13 17:55:45 knu Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.298 2000/08/24 12:06:40 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -31,6 +31,7 @@
     SUBDIR += gnomelibs
     SUBDIR += gnomeres_applet
     SUBDIR += gswitchit_applet
+    SUBDIR += gtik
     SUBDIR += gtk-theme-switch
     SUBDIR += gvid
     SUBDIR += gyroscope
