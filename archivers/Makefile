@@ -1,8 +1,9 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.49 2001/02/08 17:32:39 sf Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.50 2001/03/20 20:28:11 obrien Exp $
 #
 
     SUBDIR += 9e
     SUBDIR += arc
+    SUBDIR += bitbox
     SUBDIR += bzip
     SUBDIR += bzip2
     SUBDIR += cabextract
