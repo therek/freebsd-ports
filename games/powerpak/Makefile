@@ -1,13 +1,13 @@
 # New ports collection makefile for:	PowerPak
-# Version required:			990829
+# Version required:			990901
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.3 1999/08/26 00:59:49 cpiazza Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.4 1999/08/29 21:36:13 cpiazza Exp $
 #
 
 DISTNAME=	PowerPak
-PKGNAME=	powerpak-990829
+PKGNAME=	powerpak-990901
 CATEGORIES= 	games
 MASTER_SITES=	http://www.angelfire.com/va/powerpakgsdk/images/
 
