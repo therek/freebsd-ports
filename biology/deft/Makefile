@@ -2,11 +2,12 @@
 # Date created:				1999-01-11
 # Whom:					Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/deft/Makefile,v 1.5 2000/06/11 19:51:58 alex Exp $
+# $FreeBSD: ports/biology/deft/Makefile,v 1.6 2000/10/10 00:43:25 jeh Exp $
 #
 
 PORTNAME=	deft
 PORTVERSION=	2.2
+PORTREVISION=	1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://theory.chem.uottawa.ca/pub/
 DISTNAME=	DeFT_${PORTVERSION}

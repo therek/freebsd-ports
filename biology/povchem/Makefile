@@ -2,11 +2,12 @@
 # Date created:         Mar 14 1998
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/povchem/Makefile,v 1.4 2000/04/08 22:04:49 mharo Exp $
+# $FreeBSD: ports/biology/povchem/Makefile,v 1.5 2000/10/10 00:36:59 jeh Exp $
 #
 
 PORTNAME=	povchem
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	biology graphics
 MASTER_SITES=	http://www.chemicalgraphics.com/paul/PC_Dist/v1.00/
 DISTFILES=	povchem.c \
