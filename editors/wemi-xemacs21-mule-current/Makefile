@@ -3,10 +3,11 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-xemacs-mule-current/Makefile,v 1.9 1999/12/02 14:00:50 shige Exp $
+# $FreeBSD: ports/editors/wemi-xemacs-mule-current/Makefile,v 1.10 2000/01/02 14:20:43 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
+BROKEN=		editors/xemacs-mule is removed.
 
 # This is a slave port.
 PORTCLASS=	slave

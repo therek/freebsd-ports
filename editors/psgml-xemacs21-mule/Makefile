@@ -3,10 +3,11 @@
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.6 1999/10/16 11:58:03 shige Exp $
+# $FreeBSD: ports/editors/psgml-xemacs-mule/Makefile,v 1.7 1999/12/02 14:00:52 shige Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org
+BROKEN=		editors/xemacs-mule is removed.
 
 # This is a slave port.
 PORTCLASS=	slave

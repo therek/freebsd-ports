@@ -3,10 +3,11 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.12 1999/12/02 14:00:41 shige Exp $
+# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.13 2000/01/02 14:16:56 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
+BROKEN=		editors/xemacs-mule is removed.
 
 # This is a slave port.
 PORTCLASS=	slave
