@@ -2,7 +2,7 @@
 # Date created:		Oct 27, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/qrash/Makefile,v 1.5 2000/10/02 05:39:34 trevor Exp $
+# $FreeBSD: ports/x11/qrash/Makefile,v 1.6 2001/01/16 17:33:12 sobomax Exp $
 #
 
 PORTNAME=	qrash
@@ -18,6 +18,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	trevor@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+ONLY_FOR_ARCHS=	i386
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 
