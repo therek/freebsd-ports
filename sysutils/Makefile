@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.200 2001/07/07 03:43:07 ijliao Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.201 2001/07/08 15:55:54 kevlo Exp $
 #
     SUBDIR += yawho
 
@@ -125,6 +125,7 @@
     SUBDIR += readlink
     SUBDIR += rmonitor
     SUBDIR += roottail
+    SUBDIR += ruby-application.rb
     SUBDIR += ruby-quota
     SUBDIR += ruby-syslog
     SUBDIR += safecat
