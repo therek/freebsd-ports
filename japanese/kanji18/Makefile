@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.4 2000/05/07 15:16:46 sada Exp $
+# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.5 2000/08/03 14:28:23 sanpei Exp $
 #
 
 PORTNAME=	kanji
@@ -16,8 +16,7 @@ DISTFILES?=	573.z 574.z 575.z 576.z 577.z 578.z 579.z 580.z 581.z
 
 MAINTAINER=     sanpei@FreeBSD.org
 
-BUILD_DEPENDS=	gunshar:${PORTSDIR}/archivers/gshar+gunshar \
-		bdftopcf:${PORTSDIR}/x11/XFree86
+BUILD_DEPENDS=	gunshar:${PORTSDIR}/archivers/gshar+gunshar
 
 DIST_SUBDIR=	${DISTNAME}
 FONTSDIR=	lib/X11/fonts/local
