@@ -2,11 +2,11 @@
 # Date created:        31 October 1996
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/audio/libsidplay/Makefile,v 1.13 2000/06/29 10:17:09 sobomax Exp $
+# $FreeBSD: ports/audio/libsidplay/Makefile,v 1.14 2000/06/29 10:20:13 sobomax Exp $
 #
 
 PORTNAME=	libsidplay
-PORTVERSION=	1.36.40
+PORTVERSION=	1.36.44
 CATEGORIES=	audio emulators
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/g}
