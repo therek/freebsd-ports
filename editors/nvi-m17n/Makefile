@@ -2,12 +2,12 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.19 2001/01/10 20:36:52 issei Exp $
+# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.20 2001/01/23 07:59:44 kevlo Exp $
 #
 
 PORTNAME=	nvi
 PORTVERSION=	1.79.19991117
-PORTREVISON=	1
+PORTREVISION=	1
 CATEGORIES?=	editors
 MASTER_SITES=	ftp://sleepy.vwh.net/pub/\
 		ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
@@ -18,8 +18,6 @@ PATCH_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 PATCHFILES=	nvi-1.79.m17n-19991117.diff.gz
 
 MAINTAINER=	ports@FreeBSD.org
-
-#LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
 PATCH_DIST_ARGS=-d ${WRKSRC}/.. --forward --quiet -E -p1 -f
 WRKSRC=		${WRKDIR}/${DISTNAME}/build
