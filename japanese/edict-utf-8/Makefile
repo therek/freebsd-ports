@@ -2,7 +2,7 @@
 # Date created:		18 August 1997
 # Whom:			Jonathan Hanna
 #
-# $FreeBSD: ports/japanese/edict/Makefile,v 1.12 2000/08/08 05:11:30 knu Exp $
+# $FreeBSD: ports/japanese/edict/Makefile,v 1.13 2000/09/05 01:49:21 steve Exp $
 #
 
 PORTNAME=	edict
@@ -32,7 +32,7 @@ SRCFILES=	xjdic23.tgz
 DOCFILES=	edict_doc.txt edict_doc.html edicth.doc \
 		enamdict_doc.txt enamdict_doc.html jddict.doc \
 		j_places.inf kanjidic.doc kanjd212.doc ediclsd3.rme \
-		lawgldoc.new lingdic.txt geodic.doc aviation.doc \
+		lawgldoc.new lingdic.txt geodic.doc aviation.txt \
 		findic.doc mktdic.doc compverb.doc 4jwords.doc \
 		concrete.doc
 
