@@ -4,7 +4,7 @@
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/tiff/Makefile,v 1.29 2000/06/16 21:50:52 asami Exp $
+# $FreeBSD: ports/graphics/tiff/Makefile,v 1.30 2000/09/18 18:15:04 sobomax Exp $
 #
 
 PORTNAME=	tiff
@@ -34,7 +34,7 @@ CONFIGURE_ARGS=	--with-ZIP --with-JPEG \
 		--noninteractive
 
 .if defined(NOPORTDOCS)
-PLIST=			${PKGDIR}/PLIST.nodocs
+PLIST=			${PKGDIR}/pkg-plist.nodocs
 .else
 CONFIGURE_ARGS+=	--with-HTML --with-DIR_HTML=${PREFIX}/share/doc/tiff
 .endif
