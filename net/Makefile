@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.581 2001/07/26 13:00:44 roger Exp $
+# $FreeBSD: ports/net/Makefile,v 1.582 2001/07/26 16:08:35 roger Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -16,6 +16,7 @@
     SUBDIR += argus
     SUBDIR += arla
     SUBDIR += arping
+    SUBDIR += arprelease
     SUBDIR += arpwatch
     SUBDIR += arts++
     SUBDIR += ascend-radius
