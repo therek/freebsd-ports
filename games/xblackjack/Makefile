@@ -1,9 +1,9 @@
 # New ports collection makefile for:    xblackjack
 # Version required:     2.2
-# Date created:         
+# Date created:         8/16/1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xblackjack/Makefile,v 1.8 1999/08/25 06:04:46 obrien Exp $
 #
 
 DISTNAME=	xblackjack-2.2
