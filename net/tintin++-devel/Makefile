@@ -2,7 +2,7 @@
 # Date created:         15 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/net/tintin++-devel/Makefile,v 1.13 2000/09/17 18:35:57 ade Exp $
+# $FreeBSD: ports/net/tintin++-devel/Makefile,v 1.14 2000/09/26 14:53:13 ade Exp $
 #
 
 PORTNAME=	tintin
@@ -13,6 +13,7 @@ DISTNAME=	tintin++v1.83
 
 MAINTAINER=	jhp@cocoja.holywar.net
 
+NO_LATEST_LINK=	yes
 WRKSRC=         ${WRKDIR}/tintin++/src
 GNU_CONFIGURE=	yes
 
