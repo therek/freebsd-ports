@@ -1,13 +1,13 @@
 # New ports collection makefile for:   mangband
 # Date created:        30 Dec 1998
 #
-# $FreeBSD: ports/games/mangband/Makefile,v 1.7 2000/04/14 12:26:03 asami Exp $
+# $FreeBSD: ports/games/mangband/Makefile,v 1.8 2001/01/10 08:03:15 ache Exp $
 #
 
 PORTNAME=       mangband
 PORTVERSION=	0.5.4
 CATEGORIES=	games
-MASTER_SITES=   http://www.umr.edu/~keldon/MAngband/
+MASTER_SITES=	http://mangband.org/download/
 DISTNAME=       mangband-054
 
 MAINTAINER=     ports@freebsd.org
