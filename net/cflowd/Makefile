@@ -2,12 +2,12 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/cflowd/Makefile,v 1.6 2001/03/25 10:37:35 andreas Exp $
+# $FreeBSD: ports/net/cflowd/Makefile,v 1.7 2001/03/25 13:28:21 andreas Exp $
 #
 
 PORTNAME=	cflowd
 PORTVERSION=	2-1-b1
-PORTREVISION=	4
+PORTREVISION=	5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.caida.org/pub/cflowd/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
