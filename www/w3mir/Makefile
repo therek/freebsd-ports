@@ -3,7 +3,7 @@
 # Date created:                         9 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/w3mir/Makefile,v 1.19 1999/08/31 02:43:23 peter Exp $
 #
 
 DISTNAME=       w3mir-1.0.8
@@ -13,8 +13,6 @@ MASTER_SITES=   http://www.math.uio.no/~janl/w3mir/
 MAINTAINER=     ache@freebsd.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww
-
-BROKEN= "Not yet ready for latest p5-libwww"
 
 USE_PERL5=	Yes
 
