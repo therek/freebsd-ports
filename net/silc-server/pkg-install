@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/silc-server/pkg-install,v 1.1 2001/11/09 22:16:11 lioux Exp $
+# $FreeBSD: ports/net/silc-server/pkg-install,v 1.2 2001/11/16 00:24:06 lioux Exp $
 
 # based on original from op port, written by Cyrille Lefevre
 # <clefevre@citeweb.net>
