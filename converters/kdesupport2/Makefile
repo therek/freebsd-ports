@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.29 2000/05/17 09:21:49 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -21,8 +21,7 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib \
 		--without-libjpeg --without-libgif \
-		--without-libgdbm --without-libuulib \
-		--without-odbc
+		--without-libgdbm --without-libuulib
 CONFIGURE_ENV+=	MOC="${MOC}"
 
 .include <bsd.port.mk>
