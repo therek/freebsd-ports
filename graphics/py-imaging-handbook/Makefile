@@ -2,7 +2,7 @@
 # Date created:		18th October 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/graphics/py-imaging-handbook/Makefile,v 1.1.1.1 1999/10/20 08:25:41 tg Exp $
+# $FreeBSD: ports/graphics/py-imaging-handbook/Makefile,v 1.2 2000/04/14 10:47:11 asami Exp $
 #
 
 PORTNAME=	imaging-handbook
@@ -19,7 +19,7 @@ DISTFILES=	labdoc.css index.htm overview.htm concepts.htm \
 		pildriver.htm pilfile.htm pilfont.htm pilprint.htm \
 		formats.htm decoder.htm
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	john@coastalgeology.org
 
 DIST_SUBDIR=	pil
 EXTRACT_ONLY=
