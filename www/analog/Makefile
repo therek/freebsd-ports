@@ -2,7 +2,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.27 2000/04/15 07:27:48 ache Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.28 2000/06/04 19:21:05 will Exp $
 #
 
 PORTNAME=	analog
@@ -35,7 +35,7 @@ do-install:
 .if !exists(${PREFIX}/etc/analog.cfg)
 	${INSTALL_DATA} ${WRKSRC}/analog.cfg ${PREFIX}/etc
 .endif
-	${INSTALL_DATA} ${WRKSRC}/analog.cfg ${PREFIX}/etc/analog.cfg.dist
+	${INSTALL_DATA} ${WRKSRC}/analog.cfg ${PREFIX}/etc/analog.cfg-dist
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/docs/* ${PREFIX}/share/doc/analog
 .endif
