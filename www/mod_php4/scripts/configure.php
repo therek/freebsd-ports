@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.137 2001/08/08 21:20:16 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.138 2001/08/08 21:50:45 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -198,7 +198,7 @@ while [ "$1" ]; do
 			XML=1
 			;;
 		\"XSLT\")
-			echo "LIB_DEPENDS+=	sablot.60:\${PORTSDIR}/textproc/sablotron"
+			echo "LIB_DEPENDS+=	sablot.65:\${PORTSDIR}/textproc/sablotron"
 			echo "CONFIGURE_ARGS+=--with-sablot=\${PREFIX}"
 			echo "CONFIGURE_ARGS+=--with-expat-dir=\${PREFIX}"
 			if [ -z "$XML" ]; then
