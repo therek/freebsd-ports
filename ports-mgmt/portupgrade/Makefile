@@ -2,7 +2,7 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.74 2001/09/12 07:20:16 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.75 2001/09/12 09:59:01 knu Exp $
 #
 
 PORTNAME=	portupgrade
@@ -21,8 +21,7 @@ MAINTAINER=	knu@FreeBSD.org
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/optparse.rb:${PORTSDIR}/devel/ruby-optparse \
 		${RUBY_SITEARCHLIBDIR}/fnmatch.so:${PORTSDIR}/devel/ruby-fnmatch \
 		${RUBY_SITELIBDIR}/uri.rb:${PORTSDIR}/net/ruby-uri \
-		${LOCALBASE}/sbin/pkg_tarup:${PORTSDIR}/misc/pkg_tarup \
-		${LOCALBASE}/bin/ruby_s:${PORTSDIR}/lang/ruby_static
+		${LOCALBASE}/sbin/pkg_tarup:${PORTSDIR}/misc/pkg_tarup
 
 USE_RUBY=	yes
 
