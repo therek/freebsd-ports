@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.47 2000/07/04 07:13:27 sobomax Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.48 2000/07/13 21:02:52 gj Exp $
 #
 
 PORTNAME=	xemacs
@@ -13,7 +13,7 @@ MASTER_SITES=	\
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/xemacs-${XEMACS_REL}/ \
 		ftp://ftp.lab.kdd.co.jp/xemacs/xemacs-${XEMACS_REL}/ \
 		ftp://ftp.th-darmstadt.de/pub/editors/xemacs/xemacs-${XEMACS_REL}/
-DISTFILES=	${DISTNAME}a${EXTRACT_SUFX} ${DISTNAME}-elc${EXTRACT_SUFX} ${DISTNAME}-info${EXTRACT_SUFX}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-elc${EXTRACT_SUFX} ${DISTNAME}-info${EXTRACT_SUFX}
 
 MAINTAINER?=	gj@FreeBSD.org
 
@@ -24,7 +24,7 @@ LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 XEMACS_REL=	21.1
-XEMACS_VER=	21.1.10
+XEMACS_VER=	21.1.11
 DIST_SUBDIR=	xemacs
 
 SLAVEDIRS+=	editors/xemacs21-mule
