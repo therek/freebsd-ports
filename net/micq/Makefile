@@ -2,7 +2,7 @@
 # Date created:				11 Oct 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/net/micq/Makefile,v 1.12 2000/05/22 08:25:02 will Exp $
+# $FreeBSD: ports/net/micq/Makefile,v 1.13 2000/07/03 12:47:23 sobomax Exp $
 #
 
 PORTNAME=	micq
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=   ftp://micq.chatzone.org/pub/micq/V${PORTVERSION}/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrew@chg.ru
+MAINTAINER=	ports@freebsd.org
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/micq ${PREFIX}/bin

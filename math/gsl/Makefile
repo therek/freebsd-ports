@@ -2,7 +2,7 @@
 # Date created:                        15 Feb 2000
 # Whom:                                Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/gsl/Makefile,v 1.5 2000/06/16 21:51:39 asami Exp $
+# $FreeBSD: ports/math/gsl/Makefile,v 1.6 2000/11/03 12:33:07 kevlo Exp $
 #
 
 PORTNAME=	gsl
@@ -18,7 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${GSLREF}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 .endif
 
-MAINTAINER=	andrew@chg.ru
+MAINTAINER=	ports@freebsd.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
