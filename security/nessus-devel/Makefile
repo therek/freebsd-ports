@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.24 2001/02/05 23:42:42 olgeni Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.25 2001/03/11 13:46:15 olgeni Exp $
 #
 
 PORTNAME=	nessus
@@ -31,7 +31,7 @@ WANT_GTK=	yes
 
 .include <bsd.port.pre.mk>
 
-.if defined(HAVE_GTK) && !defined(WITHOUT_GTK)
+.if defined(HAVE_GTK)
 USE_GTK=	yes
 .else
 CONFIGURE_ARGS+=	--disable-gtk
