@@ -1,19 +1,19 @@
 # New ports collection makefile for:	libt1
-# Version required:		0.9
+# Version required:		1.0
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.6 1999/11/01 01:16:29 steve Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.7 1999/12/23 18:56:54 steve Exp $
 #
 
-DISTNAME=	t1lib-0.9.2
+DISTNAME=	t1lib-1.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
-WRKSRC=		${WRKDIR}/T1-0.9.2
+WRKSRC=		${WRKDIR}/T1-1.0
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
