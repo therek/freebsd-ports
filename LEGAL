@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.196 2001/01/11 18:10:43 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.197 2001/01/20 11:15:29 clive Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -156,6 +156,7 @@ pklin*			ports/archivers/pkzip	Shareware
 platon-*		ports/biology/platon	US$ 5000 for commercial users,
 						(free for academic)
 prodosemu.*		ports/emulators/prodosemu	Restrictive copyright on the ROM image
+qkmj-*			ports/games/qkmj	Do not sell for profit
 qmail-*			ports/mail/qmail-*	Restricted binary distribution
 						of modified versions
 qvplay-*		ports/graphics/qvplay	No redistribution due to
