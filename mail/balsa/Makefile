@@ -3,7 +3,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.10 1999/10/25 04:22:59 nakai Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.11 1999/11/26 17:45:39 steve Exp $
 #
 
 DISTNAME=	balsa-0.4.9.5
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.balsa.net/pub/balsa/
 
 MAINTAINER=	ports@FreeBSD.org
 
-#RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomegore
+RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
 		PropList.2:${PORTSDIR}/devel/libPropList
 
