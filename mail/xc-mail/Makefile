@@ -2,13 +2,14 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.1 2000/10/04 04:52:49 trevor Exp $
 #
 
 PORTNAME=	xc-mail
-PORTVERSION=	20001001 # from CVS
+PORTVERSION=	20001016
 CATEGORIES=	mail
-MASTER_SITES=	http://people.freebsd.org/~trevor/
+MASTER_SITES=	ftp://trilug.fh-trier.de/pub/XCmail/cvs-snapshot/
+DISTNAME=	${PORTNAME}-1.3devel
 
 MAINTAINER=	trevor@FreeBSD.org
 
