@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.4 2001/05/11 18:22:57 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.5 2001/05/17 21:16:44 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -31,6 +31,10 @@ WRKSRC=		${RUBY_WRKSRC}
 CONFIGURE_ARGS=	--enable-shared
 MAN1=		ruby${_RUBY_SUFFIX}.1
 MLINKS=		ruby${_RUBY_SUFFIX}.1 ruby.1
+
+.if !defined(WITH_LIBC_R)
+CONFIGURE_ARGS+=	--with_libc_r=no
+.endif
 
 .include <bsd.port.pre.mk>
 
