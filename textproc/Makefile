@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.245 2001/09/20 05:04:21 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.246 2001/09/20 05:05:28 knu Exp $
 #
 
     SUBDIR += agrep
@@ -168,6 +168,7 @@
     SUBDIR += rtf2htm
     SUBDIR += ruby-csv
     SUBDIR += ruby-erb
+    SUBDIR += ruby-format
     SUBDIR += ruby-gdome
     SUBDIR += ruby-html-parser
     SUBDIR += ruby-htmlcompact
