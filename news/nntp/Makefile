@@ -3,24 +3,28 @@
 # Date created:		29 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nntp/Makefile,v 1.16 1999/08/30 14:31:45 peter Exp $
+# $FreeBSD: ports/news/nntp/Makefile,v 1.17 1999/11/26 18:22:26 steve Exp $
 #
 
-DISTNAME=	nntp-t5
-PKGNAME=	nntp-1.5.11.5
+DISTNAME=	nntp.1.5.12.2
+PKGNAME=	nntp-1.5.12.2
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.abs.net/unix/ \
-		ftp://ftp.ww.net/pub/unix/news/nntp/
+MASTER_SITES=	ftp://ftp.academ.com/pub/nntp/server/
+
+PATCH_SITES=    ftp://ftp.lan-ks.de/pub/c-news/ \
+		ftp://ftp.dinoex.org/pub/c-news/
+PATCHFILES=     nntp-patch-y2k
 
 MAINTAINER=	adam@veda.is
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libcnews.a:${PORTSDIR}/news/cnews
 
+NO_WRKSUBDIR=	yes
 MAN1=		nntpxmit.1
-MAN8=		nntpd.8c mkgrdates.8c
+MAN8=		nntpd.8c acttimes.8c
 PLIST=		${WRKDIR}/.PLIST.sed
 
-MODIFY=		conf.h xfer/Makefile xmit/Makefile
+MODIFY=		conf.h Makefile
 
 NEWSBIN?=	${PREFIX}/news/cnewsbin
 NEWSCTL?=	${PREFIX}/news/lib
@@ -40,10 +44,15 @@ pre-configure:
 		-e "s=/var/news/over.view=${NEWSOV}=" \
 		-e "s=/var/news=${NEWSARTS}=" \
 		-e "s=/usr/local/bin=${PREFIX}/bin=" \
+		-e "s=/usr/local/sbin=${PREFIX}/sbin=" \
+		-e "s=/usr/local/man=${PREFIX}/man=" \
 		${WRKSRC}/${i}.sed >${WRKSRC}/${i}
 .endfor
 	@${SED} \
 		-e "s=news/cnewsbin=${NEWSBIN:S=${PREFIX}/==}=" \
 		${PKGDIR}/PLIST >${PLIST}
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/overview.fmt ${NEWSCTL}/overview.fmt
 
 .include <bsd.port.mk>
