@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/db3/Makefile,v 1.28 2001/03/29 16:32:51 sobomax Exp $
+# $FreeBSD: ports/databases/db3/Makefile,v 1.29 2001/05/14 14:49:53 ade Exp $
 #
 
 PORTNAME=	db3
@@ -18,7 +18,6 @@ PATCH_DIST_STRIP= -d ${WRKDIR}/${DISTNAME}
 
 MAINTAINER=	ozz@FreeBSD.org.ru
 
-MANUAL_PACKAGE_BUILD=	incompatible with libc internal db calls
 WRKSRC=		${WRKDIR}/${DISTNAME}/build_unix
 
 INSTALLS_SHLIB=		yes
