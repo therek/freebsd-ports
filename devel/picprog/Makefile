@@ -2,22 +2,19 @@
 # Date created:         31 August 1999
 # Whom:                 Johan Kerckaert <kirk@bricsnet.com>
 #
-# $FreeBSD: ports/devel/picprog/Makefile,v 1.1.1.1 1999/11/01 04:03:46 steve Exp $
+# $FreeBSD: ports/devel/picprog/Makefile,v 1.2 2000/04/11 21:30:07 mharo Exp $
 #
 
 PORTNAME=	picprog
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	devel
-MASTER_SITES=	http://hyvatti.iki.fi/~jaakko/pic/
+MASTER_SITES=	http://www.pp.htv.fi/jhyvatti/pic/
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 MAN1=		picprog.1
-
-#post-patch:
-#	$(CP) ${PATCHDIR}/getopt* ${WRKSRC}
 
 post-install:
 .if !defined(NOPORTDOCS)
