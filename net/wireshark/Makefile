@@ -2,11 +2,11 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.34 2000/11/20 12:04:08 asmodai Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.35 2000/11/21 10:56:33 asmodai Exp $
 #
 
 PORTNAME=	ethereal
-PORTVERSION=	0.8.14
+PORTVERSION=	0.8.15
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.ethereal.com/pub/ethereal/ \
 		ftp://gd.tuwien.ac.at/infosys/security/ethereal/ \
@@ -17,10 +17,16 @@ MAINTAINER=	billf@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
+LIBTOOLFILES=	configure epan/configure wiretap/configure
 CONFIGURE_ARGS+=	--enable-snmp=no
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 MAN1=		ethereal.1 tethereal.1 editcap.1
+
+pre-install:
+.for i in ${MAN1}
+	${INSTALL_MAN} ${WRKSRC}/${i} ${PREFIX}/man/man1
+.endfor
 
 .include <bsd.port.mk>
