@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.64 1999/10/10 15:53:36 marcel Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.65 1999/10/10 17:25:15 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -19,7 +19,9 @@ DISTFILES=	X335src-1.tgz X335src-2.tgz
 MAINTAINER=	jmz@FreeBSD.org
 
 IS_INTERACTIVE=	yes	# configure script asks questions
+.if (${MACHINE} != "alpha")
 NO_PACKAGE=	package available from XFree86
+.endif
 ALL_TARGET=	World
 INSTALL_TARGET=	install install.man
 DIST_SUBDIR=	xc
