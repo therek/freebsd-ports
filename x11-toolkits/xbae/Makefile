@@ -5,7 +5,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
 #
-# $Id: Makefile,v 1.6 1998/11/14 09:43:33 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.9 1998/11/14 09:43:33 asami Exp $
 #
 
 DISTNAME=	Xbae-4.7
