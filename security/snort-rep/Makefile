@@ -2,11 +2,11 @@
 # Date created:			Jul 19, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/snort-rep/Makefile,v 1.1 2001/07/19 14:26:23 markp Exp $
 #
 
 PORTNAME=	snort-rep
-PORTVERSION=	1.2
+PORTVERSION=	1.5
 CATEGORIES=	security
 MASTER_SITES=	http://people.ee.ethz.ch/~dws/software/snort-rep/pub/
 
