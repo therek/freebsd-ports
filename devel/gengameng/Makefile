@@ -2,7 +2,7 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/devel/gengameng/Makefile,v 1.2 2001/05/27 09:46:15 ijliao Exp $
+# $FreeBSD: ports/devel/gengameng/Makefile,v 1.3 2001/06/08 05:36:27 markp Exp $
 #
 
 PORTNAME=	gengameng
@@ -23,5 +23,10 @@ CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${X11BASE}/include" LDFLAGS="${LDFLAGS} 
 pre-patch:
 	${PERL} -pi -e "s|sdl-config|${SDL_CONFIG}|g; \
 		s|include/SDL/|include/SDL11/|g" ${WRKSRC}/configure
+
+post-configure:
+	${PERL} -pi -e \
+		"s/^deplibs_check_method=.*/deplibs_check_method=pass_all/" \
+		${WRKSRC}/libtool
 
 .include <bsd.port.mk>
