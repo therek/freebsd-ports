@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fonts/Makefile,v 1.10 2000/06/08 10:41:26 asami Exp $
+# $FreeBSD: ports/x11-fonts/Makefile,v 1.11 2000/07/19 08:28:06 shige Exp $
 #
 
     SUBDIR += XFree86-4-font100dpi
@@ -16,6 +16,7 @@
     SUBDIR += intlfonts
     SUBDIR += mozilla-fonts
     SUBDIR += nexfontsel
+    SUBDIR += nucleus
     SUBDIR += p5-type1inst
     SUBDIR += sharefonts
     SUBDIR += tkfont
