@@ -2,7 +2,7 @@
 # Date created:				2001-02-21
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.4 2001/03/15 11:29:13 trevor Exp $
+# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.5 2001/03/27 10:40:35 trevor Exp $
 #
 
 PORTNAME=	cvsgraph
@@ -12,7 +12,6 @@ MASTER_SITES=	http://www.akhphd.au.dk/~bertho/cvsgraph/release/
 
 MAINTAINER=	trevor@FreeBSD.org
 
-BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
@@ -22,6 +21,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAN1=		cvsgraph.1
 MAN5=		cvsgraph.conf.5
 
+USE_BISON=	yes
 ALL_TARGET=	cvsgraph
 DOCDIR=		share/doc/${PORTNAME}
 DOCS=		ChangeLog LICENCE README

@@ -2,7 +2,7 @@
 # Date created:		8 July 2000
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/xjtext/Makefile,v 1.1.1.1 2000/07/07 17:04:35 sada Exp $
+# $FreeBSD: ports/japanese/xjtext/Makefile,v 1.2 2001/05/04 21:41:13 ade Exp $
 #
 
 PORTNAME=	xjtext
@@ -14,8 +14,7 @@ DISTNAME=	XJTEXT-${PORTVERSION}
 
 MAINTAINER=	sada@FreeBSD.org
 
-BUILD_DEPENDS=	bison:${PORTSDIR}/devel/bison
-
+USE_BISON=	yes
 USE_IMLIB=	yes
 EXAMPLEDIR=	${PREFIX}/share/examples/xjtext
 DOCDIR=		${PREFIX}/share/doc/xjtext
