@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.226 2001/04/07 06:10:55 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.227 2001/04/07 08:25:09 will Exp $
 #
 
     SUBDIR += Maaate
@@ -83,6 +83,7 @@
     SUBDIR += kmp3
     SUBDIR += kmpg
     SUBDIR += knapster
+    SUBDIR += koog
     SUBDIR += krio
     SUBDIR += lame
     SUBDIR += libao
