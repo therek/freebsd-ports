@@ -2,7 +2,7 @@
 # Date created:				2000-10-22
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/svnc/Makefile,v 1.1 2000/10/22 16:43:20 trevor Exp $
 #
 
 PORTNAME=	svnc
@@ -21,6 +21,7 @@ DOCFILES=	README
 DOCDIR=		share/doc/${PORTNAME}/
 
 PLIST=		${WRKDIR}/pkg-plist
+USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/svncviewer
 
 do-patch:
