@@ -2,7 +2,7 @@
 # Date created:         6 August 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/dict/Makefile,v 1.12 2000/04/14 17:43:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dict
@@ -14,6 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${dict}.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	Simple english/german dictionary
 
 RUN_DEPENDS=	agrep:${PORTSDIR}/textproc/agrep
 

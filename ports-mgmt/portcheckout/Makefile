@@ -2,7 +2,7 @@
 # Date created:         1 November 1998
 # Whom:                 wosch
 #
-# $FreeBSD: ports/devel/portcheckout/Makefile,v 1.7 2000/01/08 18:50:03 wosch Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	portcheckout
@@ -11,6 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	Checkout and build ports and all depending ports
 
 USE_PERL5=	yes
 MAN1=		portcheckout.1
