@@ -3,11 +3,11 @@
 # Date created:		07 Aug 1996
 # Whom:			jhk
 #
-# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.18 1999/12/30 11:31:50 dirk Exp $
+# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.19 2000/01/07 19:38:55 dirk Exp $
 #
 
-DISTNAME=	cdrecord-1.8a38
-PKGNAME=	mkisofs-${VERSION}
+DISTNAME=	cdrecord-1.8a40
+PKGNAME=	mkisofs-1.12b5
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/ \
 		ftp://ftp.gwdg.de/pub/linux/misc/cdrecord/alpha/ \
@@ -15,7 +15,6 @@ MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-VERSION=	1.12b5
 WRKSRC=		${WRKDIR}/cdrecord-1.8
 USE_GMAKE=	yes
 MAKE_ENV=	COPTX="-DBSD_SCSI_SENSE_BUG -DHAVE_SIZE_T"
@@ -28,7 +27,7 @@ post-extract:
 .endif
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/mkisofs-${VERSION}/OBJ/${ARCH}-freebsd-cc/mkisofs ${PREFIX}/bin
-	@${INSTALL_MAN} ${WRKSRC}/mkisofs-${VERSION}/mkisofs.8 ${PREFIX}/man/man8
+	@${INSTALL_PROGRAM} ${WRKSRC}/mkisofs/OBJ/${ARCH}-freebsd-cc/mkisofs ${PREFIX}/bin
+	@${INSTALL_MAN} ${WRKSRC}/mkisofs/mkisofs.8 ${PREFIX}/man/man8
 
 .include <bsd.port.mk>
