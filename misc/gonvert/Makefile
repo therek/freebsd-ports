@@ -3,15 +3,15 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gonvert/Makefile,v 1.1 2001/04/09 03:44:57 ijliao Exp $
 #
 
 PORTNAME=	gonvert
-PORTVERSION=	0.0.5
+PORTVERSION=	0.0.7
 CATEGORIES=	misc python gnome
 MASTER_SITES=	http://webhome.idirect.com/~tekatch/anthony/ucu/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/${PYTHON_VERSION}/site-packages/GTK.py:${PORTSDIR}/x11-toolkits/py-gtk \
 		${LOCALBASE}/lib/${PYTHON_VERSION}/site-packages/gnome/ui.py:${PORTSDIR}/x11-toolkits/py-gnome
