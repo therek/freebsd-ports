@@ -1,3 +1,2 @@
-@comment $FreeBSD: ports/devel/gdb6/pkg-plist,v 1.7 2004/03/24 23:12:34 obrien Exp $
+@comment $FreeBSD: ports/devel/gdb6/pkg-plist,v 1.8 2004/03/25 00:03:28 obrien Exp $
 bin/gdb6
-%%NO_NATIVE_GDB%%bin/gdb
