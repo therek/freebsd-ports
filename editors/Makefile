@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.128 2000/09/08 10:45:31 asami Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.129 2000/09/19 17:56:54 ade Exp $
 #
 
     SUBDIR += AbiWord
@@ -100,6 +100,7 @@
     SUBDIR += vim-lite
     SUBDIR += vim5
     SUBDIR += vim6
+    SUBDIR += vim6+ruby
     SUBDIR += wemi-emacs
     SUBDIR += wemi-emacs-current
     SUBDIR += wemi-emacs20
