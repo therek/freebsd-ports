@@ -3,17 +3,17 @@
 # Date created:         30 December 1996
 # Whom:                 Mike Smith <msmith@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/pib/Makefile,v 1.14 1999/08/31 01:59:59 peter Exp $
 #
 
 DISTNAME=	pib-1.1
-CATEGORIES=	sysutils tk80
+CATEGORIES=	sysutils tk82
 MASTER_SITES=	http://www.freebsd.org/~msmith/pib/
 
 MAINTAINER=	msmith@freebsd.org
 
-BUILD_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
-RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
+BUILD_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/pib
