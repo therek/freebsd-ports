@@ -3,7 +3,7 @@
 # Date created:				01 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/textproc/code2html/Makefile,v 1.7 2000/03/19 12:40:46 jedgar Exp $
+# $FreeBSD: ports/textproc/code2html/Makefile,v 1.8 2000/03/30 03:38:29 jedgar Exp $
 #
 
 DISTNAME=	code2html-0.8.9a
@@ -28,7 +28,7 @@ do-configure:
 	@${PERL} -pi.orig -e 's|etc/code|usr/local/etc/code|' ${WRKSRC}/code2html.1
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/code2html ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKDIR}/code2html.1 ${PREFIX}/man/man1
+	${INSTALL_SCRIPT} ${WRKSRC}/code2html ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/code2html.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
