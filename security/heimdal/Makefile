@@ -2,7 +2,7 @@
 # Date created:						10/23/1999
 # Whom:								nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.32 2001/04/17 16:25:13 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.33 2001/04/19 16:47:38 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -63,7 +63,7 @@ CONFIGURE_ARGS+=	--without-x
 .endif
 
 .if exists(/usr/lib/libkrb.a) && !defined(WITHOUT_KRB4)
-CONFIGURE_ARGS+=	--with-krb4
+CONFIGURE_ARGS+=	--with-krb4-include=/usr/include --with-krb4-lib=/usr/lib
 .elif !defined(KRB5_KRB4_COMPAT)
 CONFIGURE_ARGS+=	--without-krb4
 .endif
