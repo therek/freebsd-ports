@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.251 2000/01/08 01:31:33 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.252 2000/01/23 14:23:19 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -207,7 +207,6 @@
     SUBDIR += ptex-sjis
     SUBDIR += qkc
     SUBDIR += recjis
-    SUBDIR += recycler
     SUBDIR += rubytk
     SUBDIR += rxvt
     SUBDIR += sed
