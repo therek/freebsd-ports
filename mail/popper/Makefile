@@ -2,12 +2,12 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/popper/Makefile,v 1.35 2001/01/16 17:31:22 sobomax Exp $
+# $FreeBSD: ports/mail/popper/Makefile,v 1.36 2001/02/19 15:58:19 ache Exp $
 #
 
 PORTNAME=	qpopper
 PORTVERSION=	2.53
-PORTREVISION=	1
+PORTREVISION=   2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/old/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -28,10 +28,8 @@ O_DEFS=		-DSETPROCTITLE -DKEEP_TEMP_DROP -DBSD44_DBM -DBIND43 \
 		-DBULLDB -DNONAUTHFILE='\"/etc/ftpusers\"'
 
 .if !defined(APOP_ONLY)
-.if exists(/usr/lib/libskey.a)
-P_LIBS=		-lskey
-O_DEFS+=	-DSKEY
-.endif
+P_LIBS=         -lopie
+O_DEFS+=        -DOPIE
 .else
 O_DEFS+=	-DAPOP_ONLY
 .endif
