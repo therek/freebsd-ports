@@ -2,7 +2,7 @@
 # Date created:				Fri 2 June 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/lzop/Makefile,v 1.1 2000/06/02 22:58:10 will Exp $
 #
 
 PORTNAME=	lzop
@@ -12,7 +12,7 @@ MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/liblzo
+LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/lzo
 
 GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${LOCALBASE}/include" \
