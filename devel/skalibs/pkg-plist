@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.4 2004/01/01 22:22:15 sergei Exp $
+@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.5 2004/02/16 21:54:12 sergei Exp $
 include/skalibs/alloc.h
 include/skalibs/allreadwrite.h
 include/skalibs/avlnode.h
@@ -44,14 +44,15 @@ include/skalibs/sgetopt.h
 include/skalibs/sha1.h
 include/skalibs/shglob.h
 include/skalibs/sig.h
-include/skalibs/skamisc.h
 include/skalibs/skalibs-version.h
+include/skalibs/skamisc.h
 include/skalibs/socket.h
 include/skalibs/stdcrypto.h
 include/skalibs/stddjb.h
 include/skalibs/stralloc.h
 include/skalibs/strerr.h
 include/skalibs/strerr2.h
+include/skalibs/syssocket.h
 include/skalibs/tai.h
 include/skalibs/ttymodes.h
 include/skalibs/uint16.h
