@@ -2,15 +2,14 @@
 # Date created:			24 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.11 2000/08/03 09:27:04 asami Exp $
+# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.12 2001/02/05 17:05:28 olgeni Exp $
 #
 
 PORTNAME=	wmtz
-PORTVERSION=	0.5
+PORTVERSION=	0.7
 CATEGORIES=	x11-clocks windowmaker afterstep
-MASTER_SITES=	http://www.algonet.se/~jlin/wmtz/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	jim
+MASTER_SITES=	http://www.geocities.com/jl1n/wmtz/ \
+		http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
@@ -20,10 +19,9 @@ USE_X_PREFIX=	yes
 USE_XPM=	yes
 
 post-install:
-	@${ECHO} "===>   Installing wmtzrc in ${PREFIX}/share/examples/wmtz"
-	@${ECHO} "===>   Modify to your config and copy to ~/.wmtzrc"
-	@${MKDIR} ${PREFIX}/share/examples/wmtz && ${CHMOD} a+rx ${PREFIX}/share/examples/wmtz
-	@${INSTALL_DATA} ${WRKSRC}/wmtzrc ${PREFIX}/share/examples/wmtz
+	@${ECHO} "===>   Installing wmtzrc.default in ${PREFIX}/etc."
+	@${ECHO} "===>   Copy it to ~/.wmtzrc or ${PREFIX}/etc/wmtzrc and modify it."
+	@${INSTALL_DATA} ${WRKSRC}/wmtzrc ${PREFIX}/etc/wmtzrc.default
 	@${ECHO} "===>   Run wmtz --help for usage instructions"
 
 .include <bsd.port.mk>
