@@ -2,13 +2,14 @@
 # Date created:        29 May 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.6 2000/04/13 19:59:51 cpiazza Exp $
+# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.7 2000/05/14 05:21:52 billf Exp $
 #
 
 PORTNAME=	mailcrypt
 PORTVERSION= 	3.5.5
 CATEGORIES=	mail
-MASTER_SITES=	http://www.nb.net/~lbudney/linux/software/mailcrypt/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=    apps/crypto
 
 MAINTAINER=	murray@FreeBSD.org
 
