@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.358 2000/10/28 14:03:29 trevor Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.359 2000/10/31 14:50:42 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -239,6 +239,7 @@
     SUBDIR += p5-Tie-DB_FileLock
     SUBDIR += p5-Time
     SUBDIR += p5-Time-HiRes
+    SUBDIR += p5-Time-Period
     SUBDIR += p5-TimeDate
     SUBDIR += p5-TraceFuncs
     SUBDIR += patch
