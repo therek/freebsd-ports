@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.1.1.1 2000/03/19 05:42:08 vanilla Exp $
+# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.2 2000/04/10 00:06:39 cpiazza Exp $
 #
 
 PORTNAME=	p5-libapreq
@@ -15,7 +15,7 @@ DISTNAME=	libapreq-0.31
 MAINTAINER=	frank@exit.com
 
 BUILD_DEPENDS= 	${LOCALBASE}/include/apache/httpd.h:${PORTSDIR}/www/apache13 \
-		/nonexistent:${PORTSDIR}/www/p5-Apache:extract
+		${LOCALBASE}/include/apache/modules/perl/mod_perl.h:${PORTSDIR}/www/p5-Apache
 
 USE_PERL5=	YES
 
