@@ -2,8 +2,9 @@
 # Date created:		07 March 2001
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.5 2001/06/15 23:20:17 fenner Exp $
+# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.6 2001/06/22 11:43:30 keith Exp $
 #
+BROKEN=	"out of sync with mozilla."
 
 PORTNAME=	mozilla
 PORTVERSION=	0.9.1
