@@ -2,9 +2,9 @@
 # Date created:		17th February 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/print/dvi2tty/Makefile,v 1.10 2000/10/29 06:31:38 dougb Exp $
+# $FreeBSD: ports/print/dvi2tty/Makefile,v 1.11 2001/02/08 13:13:58 kevlo Exp $
 #
-     
+ 
 PORTNAME=	dvi2tty
 PORTVERSION=	1.0
 CATEGORIES=	print

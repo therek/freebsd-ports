@@ -2,7 +2,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.16 2000/07/19 08:07:47 shige Exp $
+# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.17 2000/10/08 10:19:32 asami Exp $
 #
 
 PORTNAME=	flim
@@ -146,7 +146,7 @@ info-build-by-emacs:
 		${MAKEINFO_EMACS} $${i} ${MAKEINFO_EMACS_FLAGS} || ${TRUE} ; \
 	done)
 .endif
- 
+
 pkg-el-copy:
 	@(if [ -f ${FILESDIR}/_pkg.el ] ; then \
 	${CP} ${FILESDIR}/_pkg.el ${WRKSRC}/_pkg.el ;\
