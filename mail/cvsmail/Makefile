@@ -2,7 +2,8 @@
 # Date created:		23rd August, 2000
 # Whom:			Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/cvsmail/Makefile,v 1.1 2000/08/23 17:58:43 ben Exp $
+#
 
 PORTNAME=	cvsmail
 PORTVERSION=	1.4
@@ -16,8 +17,6 @@ ALL_TARGET=	cvsmail
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cvsmail ${PREFIX}/bin
-
-post-install:
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
