@@ -2,14 +2,16 @@
 # Date created:				29 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/math/scigraphica/Makefile,v 1.7 2000/11/22 16:35:20 sobomax Exp $
+# $FreeBSD: ports/math/scigraphica/Makefile,v 1.8 2000/12/06 10:26:50 sobomax Exp $
 #
 
 PORTNAME=	scigraphica
 PORTVERSION=	0.6.1
 CATEGORIES=	math gnome
-MASTER_SITES=	http://scigraphica.sourceforge.net/src/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		http://scigraphica.sourceforge.net/src/ \
 		http://magnet.fsu.edu/~feiguin/scigraphica/src/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	sg-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
