@@ -2,7 +2,7 @@
 # Date Created:		9 Feb 1997
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/converters/xdeview/Makefile,v 1.19 1999/11/28 18:32:40 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdeview
@@ -26,17 +26,16 @@ ALL_TARGET=	xdeview
 INSTALL_TARGET=	install-tcl
 MAN1=		xdeview.1
 
-PORTDOCDIR?=	share/doc/xdeview
 DOCFILES=	${FILESDIR}/porting.notes ${WRKSRC}/HOWTO
 
 post-install:
 	strip ${PREFIX}/bin/uuwish
 .if !defined(NOPORTDOCS)
-	@${ECHO_MSG} "===>  Copying documents to ${PREFIX}/${PORTDOCDIR}"
-	@${MKDIR} ${PREFIX}/${PORTDOCDIR}
-	${INSTALL_MAN} ${DOCFILES} ${PREFIX}/${PORTDOCDIR}
+	@${ECHO_MSG} "===>  Installing documents to ${DOCSDIR}"
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${DOCFILES} ${DOCSDIR}
 .else
-	@${ECHO_MSG} "===>  Not copying available documents"
+	@${ECHO_MSG} "===>  Not installing available documents"
 .endif
 	${INSTALL_MAN} ${WRKSRC}/man/xdeview.1 ${PREFIX}/man/man1
 
