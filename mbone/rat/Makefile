@@ -3,11 +3,11 @@
 # Date created:			      3 July 1999
 # Whom:				      O.Hodson@cs.ucl.ac.uk (Orion Hodson)
 #
-# $FreeBSD: ports/mbone/rat/Makefile,v 1.3 1999/09/08 23:55:52 cpiazza Exp $
+# $FreeBSD: ports/mbone/rat/Makefile,v 1.4 1999/11/28 18:11:20 steve Exp $
 #
 
 DISTNAME=	rat-4.0.4
-CATEGORIES=	mbone audio
+CATEGORIES=	mbone audio ipv6
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/4.0.4/ \
 		http://www.freebsd.org/~cpiazza/distfiles/
 
