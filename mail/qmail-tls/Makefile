@@ -2,7 +2,7 @@
 # Date created:				03 Dec 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-tls/Makefile,v 1.2 2001/02/14 01:26:03 lioux Exp $
+# $FreeBSD: ports/mail/qmail-tls/Makefile,v 1.3 2001/02/22 18:15:18 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -29,10 +29,10 @@ PREFIX?=	${QMAIL_PORT_PREFIX}
 .include <bsd.port.pre.mk>
 .endif
 
-MAKE_ARGS+=	TLS=yes
+CFLAGS+=	-I${OPENSSLBASE}/include -L${OPENSSLBASE}/lib -DTLS
 
 .if defined(WITH_TLS_DEBUG)
-MAKE_ARGS+=	DEBUG=yes
+CFLAGS+=	-DDEBUG
 .endif # WITH_TLS_DEBUG
 
 #QMAIL_PORT=	${PORTSDIR}/mail/qmail
