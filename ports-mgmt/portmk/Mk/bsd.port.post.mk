@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/devel/portmk/Mk/bsd.port.post.mk,v 1.1 2004/07/06 12:41:03 eik Exp $
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.post.mk,v 1.2 2004/07/07 09:55:56 eik Exp $
 #
 
 .if defined(_POSTMKINCLUDED)
@@ -1366,6 +1366,38 @@ makesum:
 	set -- -m; \
 	. '${DISTFILES_SH}'
 .endif
+.endif
+
+.PHONY: master-sites-all
+.if !target(master-sites-all)
+master-sites-all:
+	@${_FETCHDISTFILES_ENV}; \
+	set -- -t ''; \
+	. '${DISTFILES_SH}'
+.endif
+
+.PHONY: master-sites
+.if !target(master-sites)
+master-sites:
+	@${_FETCHDISTFILES_ENV}; \
+	set -- -t 'DEFAULT'; \
+	. '${DISTFILES_SH}'
+.endif
+
+.PHONY: patch-sites-all
+.if !target(patch-sites-all)
+patch-sites-all:
+	@${_FETCHDISTFILES_ENV}; \
+	set -- -T ''; \
+	. '${DISTFILES_SH}'
+.endif
+
+.PHONY: patch-sites
+.if !target(patch-sites)
+patch-sites:
+	@${_FETCHDISTFILES_ENV}; \
+	set -- -T 'DEFAULT'; \
+	. '${DISTFILES_SH}'
 .endif
 
 .PHONY: migratesum
