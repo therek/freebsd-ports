@@ -3,7 +3,7 @@
 # Date created:			  Mon Oct 28, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.13 2000/03/22 00:27:45 obrien Exp $
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.14 2000/04/12 04:55:49 mharo Exp $
 #
 
 PORTNAME=	spim
@@ -21,6 +21,7 @@ CONFIGURE_SCRIPT=	Configure
 USE_IMAKE=	yes
 XMKMF=		xmkmf
 ALL_TARGET=	y.tab.c depend cl-spim cl-xspim
+MAN1=		spim.1 xspim.1
 
 pre-configure:
 	@${RM} -f ${WRKSRC}/y.tab.*
