@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.86 2000/09/13 10:54:20 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.87 2000/09/21 08:36:27 sobomax Exp $
 #
 
 PORTNAME=	libraries
@@ -34,6 +34,15 @@ MANCOMPRESSED=	yes
 MAN1=		libxrx.1
 MAN3=		Xaw.3
 
+.include <bsd.port.pre.mk>
+
+# BuildXF86DRI is false for FreeBSD < 4.1
+.if ${OSVERSION} < 410000
+PLIST_SUB+=     OSMESA:="@comment "
+.else
+PLIST_SUB+=     OSMESA:=""
+.endif
+
 .if defined(XDM_DES)
 .if ${USA_RESIDENT} == YES
 pre-fetch:
@@ -49,4 +58,4 @@ IGNOREFILES=	Wraphelp.c
 .endif
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
