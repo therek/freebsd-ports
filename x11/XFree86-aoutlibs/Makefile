@@ -3,7 +3,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.1.1.1 2000/03/07 06:40:22 reg Exp $
 #
 
 DISTNAME=	Xbin
@@ -14,11 +14,17 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	reg@FreeBSD.org
 
+ONLY_FOR_ARCHS=	i386
+
 WRKSRC=		${WRKDIR}/lib
 NO_BUILD=	yes
 PORTOBJFORMAT=	aout
 
 USE_X_PREFIX=	yes
+
+pre-configure:
+	@${SETENV} ${SCRIPTS_ENV} ARCH=${ARCH} ${SH} \
+		${PKGDIR}/REQ ${PKGNAME} INSTALL
 
 do-install:
 	cd ${WRKSRC}; \
