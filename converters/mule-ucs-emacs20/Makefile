@@ -2,11 +2,11 @@
 # Date created:		14 January 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/converters/mule-ucs-emacs20/Makefile,v 1.3 2000/06/27 00:44:50 jseger Exp $
+# $FreeBSD: ports/converters/mule-ucs-emacs20/Makefile,v 1.4 2000/09/16 20:16:16 ade Exp $
 #
 
 PORTNAME=	mule-ucs
-PORTVERSION=	0.82
+PORTVERSION=	0.83
 CATEGORIES=	converters elisp
 MASTER_SITES=	ftp://ftp.kddlabs.co.jp/Japan/m17n.org/mule/Mule-UCS/ \
 		ftp://ftp.etl.go.jp/pub/mule/Mule-UCS/ \
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.kddlabs.co.jp/Japan/m17n.org/mule/Mule-UCS/ \
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 DISTNAME=	Mule-UCS-${PORTVERSION}
 
-MAINTAINER=	okazaki@be.to
+MAINTAINER=	okazaki@FreeBSD.org
 
 EMACS_PORT_NAME=	emacs20
 
