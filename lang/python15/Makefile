@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python15/Makefile,v 1.73 2001/05/03 11:34:13 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	python
@@ -20,9 +20,9 @@ WRKSRC=		${WRKDIR}/Python-1.5.2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-fpectl
 CONFIGURE_ENV=	OPT="${CFLAGS}"
-INSTALL_TARGET=	install
+INSTALL_TARGET=	altinstall
 PLIST=		${WRKDIR}/PLIST
-MAN1=		python.1
+MAN1=		${PYTHON_VERSION}.1
 NO_LATEST_LINK=	yes
 
 USE_PYTHON=	yes
@@ -100,10 +100,10 @@ pre-install:
 	@sort -r -o ${PLIST} ${PLIST_GMP} ${PLIST_TOOLS} ${PKGDIR}/pkg-plist
 
 post-install:
-	strip ${PREFIX}/bin/python
+	@${MKDIR} ${MANPREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/Misc/python.man \
+		${MANPREFIX}/man/man1/${PYTHON_VERSION}.1
 	@${MKDIR} ${PREFIX}/share/doc/${PYTHON_VERSION}
-	@${MKDIR} ${PREFIX}/share/emacs/site-lisp
-	${INSTALL_DATA} ${WRKSRC}/Misc/python-mode.el ${PREFIX}/share/emacs/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/Misc/COPYRIGHT ${PREFIX}/share/doc/${PYTHON_VERSION}
 	@${MKDIR} ${PYTHON_SITELIBDIR}
 .if !defined(WITHOUT_TOOLS)
