@@ -2,12 +2,12 @@
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/databases/msql/Makefile,v 1.40 2001/01/27 08:55:17 ache Exp $
+# $FreeBSD: ports/databases/msql/Makefile,v 1.41 2001/01/27 21:38:49 ache Exp $
 #
 
 PORTNAME=	msql
 PORTVERSION=    2.0.11
-PORTREVISION=   1
+PORTREVISION=   2
 CATEGORIES=	databases
 
 MAINTAINER=	ports@FreeBSD.org
