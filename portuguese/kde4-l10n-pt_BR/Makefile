@@ -2,16 +2,16 @@
 # Date created:				1 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kde2-i18n/Makefile,v 1.3 2001/04/05 15:59:50 demon Exp $
+# $FreeBSD: ports/misc/kde2-i18n/Makefile,v 1.4 2001/04/09 20:48:46 demon Exp $
 #
 
 PORTNAME=	kde-i18n
 PORTVERSION=	2.1.1
-CATEGORIES=	misc kde
+CATEGORIES?=	misc kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER?=	demon@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
