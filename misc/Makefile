@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.284 2000/08/02 08:23:50 nbm Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.285 2000/08/02 18:08:21 sada Exp $
 #
 
     SUBDIR += 221upgrade
@@ -47,6 +47,7 @@
     SUBDIR += ewipe
     SUBDIR += ezload
     SUBDIR += fd
+    SUBDIR += felis
     SUBDIR += fep
     SUBDIR += figlet
     SUBDIR += findutils
