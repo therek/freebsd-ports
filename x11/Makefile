@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.326 2001/05/30 15:47:53 knu Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.327 2001/06/02 20:36:23 nsayer Exp $
 #
 
     SUBDIR += 9term
@@ -75,6 +75,7 @@
     SUBDIR += tycoon
     SUBDIR += wdm
     SUBDIR += wmbutton
+    SUBDIR += wmcliphist
     SUBDIR += wmmatrix
     SUBDIR += wmmenu
     SUBDIR += wrapper
