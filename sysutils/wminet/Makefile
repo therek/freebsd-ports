@@ -2,14 +2,14 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.7 2000/08/12 08:00:00 kevlo Exp $
+# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.8 2000/11/09 15:25:10 kevlo Exp $
 #
 
 PORTNAME=	wminet
 PORTVERSION=	2.0.2
 CATEGORIES=	sysutils windowmaker
-# All previous master sites no longer carry the tarball
-# MASTER_SITES=
+MASTER_SITES=   ${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kevlo
 
 MAINTAINER=	sk-ports@vegamuse.org
 
