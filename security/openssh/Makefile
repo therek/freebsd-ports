@@ -2,11 +2,12 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.70 2001/06/25 06:28:44 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	openssh
 PORTVERSION=	2.9.9
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/ \
 		ftp://ftp.usa.openbsd.org/pub/OpenBSD/OpenSSH/ \
