@@ -1,6 +1,7 @@
-# $FreeBSD: ports/math/Makefile,v 1.109 2001/02/01 16:18:06 knu Exp $
+# $FreeBSD: ports/math/Makefile,v 1.110 2001/02/12 14:55:30 ijliao Exp $
 #
 
+    SUBDIR += GiNaC
     SUBDIR += PDL
     SUBDIR += R-a4
     SUBDIR += R-letter
