@@ -2,7 +2,7 @@
 # -*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.1 2000/12/11 03:22:07 steve Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -135,13 +135,13 @@ done
 exec > /dev/stderr
 
 # if multibyte, determine charset
-echo "# Multibyte"
+echo "# Multibyte" >> ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 
 if [ ! "${MULTIBYTE}" ]; then
 	echo "WITHOUT_MULTIBYTE=YES" >> ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 else
 	if [ "${BATCH}" ]; then
-		set \"nothing\"
+		set "nothing"
 	else
 		/usr/bin/dialog --title "configuration options" --clear \
 						--radiolist "\n\
