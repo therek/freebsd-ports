@@ -2,7 +2,7 @@
 # Date created:				24 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/svgalib/Makefile,v 1.4 2000/09/05 12:14:41 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	svgalib
@@ -17,6 +17,8 @@ USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 
 ALL_TARGET=	shared static
+
+ONLY_FOR_ARCH=	i386
 
 .include <bsd.port.pre.mk>
 
