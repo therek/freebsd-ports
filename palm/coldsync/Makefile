@@ -2,7 +2,7 @@
 # Date created:		27 January 2000
 # Whom:			Andrew Arensburger <arensb+freebsd-ports@ooblick.com>
 #
-# $FreeBSD: ports/palm/coldsync/Makefile,v 1.7 2000/09/29 15:38:20 kevlo Exp $
+# $FreeBSD: ports/palm/coldsync/Makefile,v 1.8 2001/05/29 16:19:06 ijliao Exp $
 #
 
 PORTNAME=	coldsync
@@ -27,6 +27,8 @@ MAN8=		coldsync.8
 MANCOMPRESSED=	no
 
 .include <bsd.port.pre.mk>
+
+CONFIGURE_ARGS+=	--with-i18n
 
 # I don't know how to test for a version of {Net,Open}BSD that supports USB.
 .if ${OPSYS} == "FreeBSD" && ${OSVERSION} >= 400000
