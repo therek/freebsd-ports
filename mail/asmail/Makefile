@@ -2,11 +2,12 @@
 # Date created:		15 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/mail/asmail/Makefile,v 1.13 2000/06/14 13:21:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asmail
 PORTVERSION=	0.56
+PORTREVISION=	1
 CATEGORIES=	mail afterstep
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://gates.enemy.at/pub/
