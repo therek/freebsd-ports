@@ -2,18 +2,19 @@
 # Date created:		Sept 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/html/Makefile,v 1.7 1999/08/31 06:51:14 mharo Exp $
+# $FreeBSD: ports/textproc/html/Makefile,v 1.8 2000/04/09 21:52:40 cpiazza Exp $
 #
 
 PORTNAME=	html
-PORTVERSION= 	4.0b
+PORTVERSION= 	4.01
 CATEGORIES=	textproc
-MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kuriyama
+EXTRACT_ONLY=	# empty
 
-MAINTAINER=	jfieber@FreeBSD.org
+MAINTAINER=	kuriyama@FreeBSD.org
 
 NO_MTREE=       yes
-EXTRACT_ONLY=	# empty
 NO_BUILD=       yes
 NO_WRKSUBDIR=	yes
 
