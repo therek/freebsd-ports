@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/freeamp/Makefile,v 1.4 2001/05/04 21:41:02 ade Exp $
+# $FreeBSD: ports/audio/freeamp/Makefile,v 1.5 2001/06/17 07:30:17 dwcjr Exp $
 #
 
 PORTNAME=	freeamp
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	audio gnome
 MASTER_SITES=	http://www.freeamp.org/download/src/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 BROKEN=		"incompatibility with release versions of musicbrainz API."
 
