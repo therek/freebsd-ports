@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.323 2000/11/30 15:11:21 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.324 2000/11/30 15:11:59 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -49,6 +49,7 @@
     SUBDIR += emacs-manual
     SUBDIR += emacs20-dl-canna
     SUBDIR += emacs20-dl-wnn6
+    SUBDIR += epic4
     SUBDIR += epwutil
     SUBDIR += escpf
     SUBDIR += esecanna
