@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.64 2004/04/29 00:04:47 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.65 2004/05/06 02:54:00 bland Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -380,7 +380,7 @@ pkgconfig_DETECT=			${LOCALBASE}/bin/pkg-config
 pkgconfig_BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 pkgconfig_RUN_DEPENDS=		pkg-config:${PORTSDIR}/devel/pkgconfig
 
-libgsf_LIB_DEPENDS=			gsf-1.9:${PORTSDIR}/devel/libgsf
+libgsf_LIB_DEPENDS=			gsf-1.10:${PORTSDIR}/devel/libgsf
 libgsf_DETECT=				${LOCALBASE}/libdata/pkgconfig/libgsf-gnome-1.pc
 libgsf_USE_GNOME_IMPL=		gnomevfs2 libbonobo
 
