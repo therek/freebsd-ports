@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.144 2001/06/23 06:53:33 olgeni Exp $
+# $FreeBSD$
 #
 
     SUBDIR += FWF
@@ -18,6 +18,7 @@
     SUBDIR += fox
     SUBDIR += fox-xunicode
     SUBDIR += gal
+    SUBDIR += gdl
     SUBDIR += gevas
     SUBDIR += gnome--
     SUBDIR += gnome-look
