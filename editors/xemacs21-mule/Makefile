@@ -3,7 +3,7 @@
 # Date created:		5 Dec 1997
 # Whom:			Kazuyuki IENAGA <ienaga@jsys.co.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule/Makefile,v 1.16 1999/08/25 05:44:53 obrien Exp $
+# $FreeBSD: ports/editors/xemacs-mule/Makefile,v 1.17 1999/09/09 14:25:37 taoka Exp $
 #
 
 DISTNAME=	xemacs-${VERSION}
@@ -26,7 +26,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		compface.1:${PORTSDIR}/mail/faces \
-		tiff.4:${PORTSDIR}/graphics/tiff34 \
+		tiff.4:${PORTSDIR}/graphics/tiff \
 		${LIB_INPUT_METHOD}
 RUN_DEPENDS=	${RUN_DEP_LIST}
 
