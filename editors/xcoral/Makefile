@@ -1,9 +1,9 @@
 # New ports collection makefile for:    xcoral
 # Version required:	3.2
-# Date created:         
+# Date created:         1995/10/02
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/editors/xcoral/Makefile,v 1.9 1999/08/25 05:44:50 obrien Exp $
+# $FreeBSD: ports/editors/xcoral/Makefile,v 1.10 1999/08/31 06:43:50 mharo Exp $
 #
 
 DISTNAME=	xcoral-3.2
