@@ -3,13 +3,13 @@
 # Date created:         11 July 1996
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libslang/Makefile,v 1.15 1999/08/25 05:48:27 obrien Exp $
 #
 
 DISTNAME=	slang1.2.2
 PKGNAME=	libslang-1.2.2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://space.mit.edu/pub/davis/slang/
+MASTER_SITES=	ftp://space.mit.edu/pub/davis/slang/v1.2/
 
 MAINTAINER=	xaa@xaa.iae.nl
 

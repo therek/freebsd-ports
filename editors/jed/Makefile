@@ -3,15 +3,15 @@
 # Date created:         22 APR 1997
 # Whom:                 eric
 #
-# $FreeBSD: ports/editors/jed/Makefile,v 1.10 1999/08/25 05:43:54 obrien Exp $
+# $FreeBSD: ports/editors/jed/Makefile,v 1.11 1999/08/28 01:57:09 mharo Exp $
 #
 
 DISTNAME=       jed0.98-7
 PKGNAME=        jed-0.98.7
 CATEGORIES=	editors
-MASTER_SITES=   ftp://space.mit.edu/pub/davis/jed/
+MASTER_SITES=   ftp://space.mit.edu/pub/davis/jed/v0.98/
 
-PATCH_SITES=   ftp://space.mit.edu/pub/davis/jed/
+PATCH_SITES=   ftp://space.mit.edu/pub/davis/jed/v0.98/
 PATCHFILES=    BUGS
 PATCH_DIST_STRIP=	-p1
 
