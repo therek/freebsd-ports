@@ -2,13 +2,13 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.2 2000/07/15 13:37:15 sada Exp $
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.3 2000/07/15 13:49:46 sada Exp $
 #
 
 PORTNAME=	jdk
 PORTVERSION=	1.2.2
 CATEGORIES=	java devel
-MASTER_SITES=	ftp://ftp.uk.linux.org/pub/linux/java/JDK-1.2.2/i386/rc4/ \
+MASTER_SITES=	ftp://iodynamics.com/pub/mirror/linux-jdk/JDK-1.2.2/i386/rc4/ \
 		ftp://ftp.tux.org/pub/java/JDK-1.2.2/i386/rc4/
 PKGNAMEPREFIX=	linux-
 DISTNAME=	jdk-1.2.2-RC4-linux-i386-glibc-2.1.2
