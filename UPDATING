@@ -6,6 +6,12 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20040514:
+  AFFECTS: users of audio/faad
+
+  If the compilation of faad fails, please manually delete older
+  installed version of faad and reinstall from port.
+
 20040512:
   AFFECTS: users of print/teTeX
 
@@ -187,4 +193,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.16 2004/05/04 12:56:55 nork Exp $
+$FreeBSD: ports/UPDATING,v 1.17 2004/05/12 16:42:50 hrs Exp $
