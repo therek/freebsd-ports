@@ -2,14 +2,14 @@
 # Date created:		6 Aug 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.12 2000/04/09 19:07:06 cpiazza Exp $
+# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.13 2000/04/22 10:11:27 mharo Exp $
 #
 
 PORTNAME=	asapm
 PORTVERSION=	2.7
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.afterstep.org/apps/asapm/ \
-		http://www.tigr.net/afterstep/as-apps/download/asapm/
+MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
+MASTER_SITE_SUBDIR=	apps/asapm
 
 MAINTAINER=	handy@physics.montana.edu
 
@@ -22,7 +22,5 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install install.man
 
 MAN1=		asapm.1
-
-FETCH_BEFORE_ARGS=	-b
 
 .include <bsd.port.mk>

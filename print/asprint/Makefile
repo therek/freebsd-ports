@@ -2,13 +2,14 @@
 # Date created:		16 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/print/asprint/Makefile,v 1.8 2000/04/09 17:39:37 cpiazza Exp $
+# $FreeBSD: ports/print/asprint/Makefile,v 1.9 2000/04/09 17:49:15 cpiazza Exp $
 #
 
 PORTNAME=	asprint
 PORTVERSION=	1.0
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.afterstep.org/apps/asprint/
+MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
+MASTER_SITE_SUBDIR=	apps/asprint
 DISTNAME=	asprint
 
 MAINTAINER=	brett@peloton.runet.edu
