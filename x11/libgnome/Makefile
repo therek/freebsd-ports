@@ -2,11 +2,11 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.60 2000/06/16 21:52:11 asami Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.61 2000/06/20 20:31:10 ade Exp $
 #
 
 PORTNAME=	gnomelibs
-PORTVERSION= 	1.2.2
+PORTVERSION= 	1.2.3
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
