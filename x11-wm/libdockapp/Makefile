@@ -3,13 +3,14 @@
 # Date created:		17 July 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/libdockapp/Makefile,v 1.4 1999/08/31 03:00:11 peter Exp $
 #
 
 DISTNAME=	docklib-0.2
 PKGNAME=	libdockapp-0.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://wit401310.student.utwente.nl/apps/apps/ \
+		http://www.freebsd.org/~jim/distfiles/ \
 		ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 
 MAINTAINER=	jim@FreeBSD.org
