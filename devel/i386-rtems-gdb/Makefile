@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.3 2000/09/26 14:46:24 ade Exp $
+# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.4 2000/10/02 03:10:03 jeh Exp $
 #
 
 PORTNAME=	gdb
@@ -23,7 +23,7 @@ LCLTARGET?=	i386-rtems
 
 GDBNAME=	gdb-5.0
 MASTERDIR=	${.CURDIR}/../i386-rtems-gdb
-PLIST=		${PKGDIR}/PLIST.${LCLTARGET}
+PLIST=		${PKGDIR}/pkg-plist.${LCLTARGET}
 
 BUILD_DEPENDS=	${LCLTARGET}-as:${PORTSDIR}/devel/${LCLTARGET}-binutils \
 		${LCLTARGET}-ld:${PORTSDIR}/devel/${LCLTARGET}-binutils
