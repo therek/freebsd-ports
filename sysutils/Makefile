@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.116 2000/06/06 12:55:22 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.117 2000/06/09 21:51:06 will Exp $
 #
 
     SUBDIR += LPRng
@@ -87,6 +87,7 @@
     SUBDIR += upsmon
     SUBDIR += uwatch
     SUBDIR += webmin
+    SUBDIR += whowatch
     SUBDIR += wmapm
     SUBDIR += wmavgload
     SUBDIR += wmbattery
