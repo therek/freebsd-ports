@@ -2,11 +2,11 @@
 # Date created:			9 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/audio/yamt/Makefile,v 1.2 2000/02/18 04:02:09 jedgar Exp $
+# $FreeBSD: ports/audio/yamt/Makefile,v 1.3 2000/04/08 21:25:03 mharo Exp $
 #
 
 PORTNAME=	yamt
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	audio gnome
 MASTER_SITES=	http://download.sourceforge.net/yamt/ \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
