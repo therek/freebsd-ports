@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.185 2001/04/18 16:24:16 sobomax Exp $
+# $FreeBSD: ports/security/Makefile,v 1.186 2001/04/18 19:43:14 ijliao Exp $
 #
 
     SUBDIR += aafid2
@@ -67,6 +67,7 @@
     SUBDIR += lsh
     SUBDIR += lxnb
     SUBDIR += mcrypt
+    SUBDIR += mdcrack
     SUBDIR += mhash
     SUBDIR += mindterm-binary
     SUBDIR += nbaudit
