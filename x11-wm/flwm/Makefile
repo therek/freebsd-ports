@@ -2,11 +2,11 @@
 # Date created:				12 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.8 2000/04/10 19:49:45 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.9 2000/07/03 12:33:49 sobomax Exp $
 #
 
 PORTNAME=	flwm
-PORTVERSION= 	0.25
+PORTVERSION= 	1.00
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://flwm.sourceforge.net/ \
 		http://www.cinenet.net/users/spitzak/flwm/ \
