@@ -2,7 +2,7 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.33 2001/03/02 21:54:23 sf Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.34 2001/05/03 14:47:32 sf Exp $
 #
 
 PORTNAME=	wget
@@ -24,6 +24,7 @@ MAINTAINER=	sf@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
+USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	CPPFLAGS=-I${PREFIX}/include \
 		LDFLAGS=-L${PREFIX}/lib
