@@ -2,7 +2,7 @@
 # Date created:		15 July 1998
 # Whom:			Tai-hwa Liang <avatar@www.mmlab.cse.yzu.edu.tw>
 #
-# $FreeBSD: ports/chinese/pine4/Makefile,v 1.14 2000/04/13 08:28:14 asami Exp $
+# $FreeBSD: ports/chinese/pine4/Makefile,v 1.15 2000/09/29 08:07:29 kris Exp $
 #
 
 PORTNAME=	pine
@@ -13,11 +13,14 @@ DISTNAME=	pine${PORTVERSION}
 
 MAINTAINER=	avatar@www.mmlab.cse.yzu.edu.tw
 
-FORBIDDEN=	"Remotely exploitable buffer overflows."
-
 NO_LATEST_LINK= yes
 
 MAN1= 		pine.1 pico.1 pilot.1
+
+pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} pkg-install
+.endif
 
 post-patch:
 	for i in ${WRKSRC}/doc/pine.1 \

@@ -2,7 +2,7 @@
 # Date created:		Apr 01 2000
 # Whom:			Nadav Eiron <nadav@cs.technion.ac.il>
 #
-# $FreeBSD: ports/hebrew/pine/Makefile,v 1.1 2000/08/02 12:01:16 nbm Exp $
+# $FreeBSD: ports/hebrew/pine/Makefile,v 1.2 2000/09/29 08:07:30 kris Exp $
 
 PORTNAME=	pine
 PORTVERSION=	4.21.2.9
@@ -12,9 +12,12 @@ DISTNAME=	pine4.21_heb2.09
 
 MAINTAINER?=	nadav@cs.technion.ac.il
 
-FORBIDDEN=	"Remotely exploitable buffer overflows."
-
 MAN1=		pine.1 pico.1 pilot.1
+
+pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} pkg-install
+.endif
 
 post-patch:
 	for i in ${WRKSRC}/doc/pine.1 \
