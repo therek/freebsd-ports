@@ -2,11 +2,11 @@
 # Date created:                         Nov 14 2000
 # Whom:                                 roman@xpert.com
 #
-# $FreeBSD: ports/converters/p5-Convert-TNEF/Makefile,v 1.2 2001/03/01 06:37:12 vanilla Exp $
+# $FreeBSD: ports/converters/p5-Convert-TNEF/Makefile,v 1.3 2001/04/11 15:27:25 kevlo Exp $
 #
 
 PORTNAME=	Convert-TNEF
-PORTVERSION=	0.10
+PORTVERSION=	0.12
 CATEGORIES=	converters perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
