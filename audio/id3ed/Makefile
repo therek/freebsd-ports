@@ -1,12 +1,12 @@
 # New ports collection makefile for:	id3ed
-# Version required:	1.9
+# Version required:	1.10
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/id3ed/Makefile,v 1.5 1999/08/25 04:35:35 obrien Exp $
 #
 
-DISTNAME=	id3ed-1.9
+DISTNAME=	id3ed-1.10
 CATEGORIES=	audio
 MASTER_SITES=	http://www.azstarnet.com/~donut/id3ed/ \
 		http://www.treefort.org/~donut/id3ed/ \
