@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.13 2000/10/08 02:50:46 asami Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.14 2001/03/15 12:31:07 tg Exp $
 #
 
 PORTNAME=	vtk
@@ -35,7 +35,9 @@ PLIST=		${PKGDIR}/pkg-plist.with_patented
 .endif
 
 post-patch:
-	${PERL} -pi -e "s|%%PYTHON_INCLUDEDIR%%|${PYTHON_INCLUDEDIR}|g" \
+	${PERL} -pi -e "s|%%PYTHON_INCLUDEDIR%%|${PYTHON_INCLUDEDIR}|g; \
+		s|%%PTHREAD_CFLAGS%%|${PTHREAD_CFLAGS}|g; \
+		s|%%PTHREAD_LIBS%%|${PTHREAD_LIBS}|g" \
 		${WRKSRC}/user.make
 
 post-install:
