@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.176 2003/09/06 20:52:17 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.177 2003/09/08 00:15:01 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -583,6 +583,10 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.kr.FreeBSD.org/pub/ruby/%SUBDIR%/ \
 	http://mirrors.sunsite.dk/ruby/%SUBDIR%/ \
 	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/
+
+MASTER_SITE_SAVANNAH+= \
+	ftp://ftp.gnu.org/pub/gnu/%SUBDIR%/ \
+	http://savannah.nongnu.org/download/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
 	http://us.dl.sourceforge.net/%SUBDIR%/ \
