@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/games/gcompris/files/patch-src::gcompris::soundutil.c,v 1.1 2002/04/18 12:29:05 sobomax Exp $
+$FreeBSD: ports/games/gcompris2/files/patch-src::gcompris::soundutil.c,v 1.2 2003/04/26 03:57:50 marcus Exp $
 
 --- src/gcompris/soundutil.c	2002/03/20 10:35:57	1.1
 +++ src/gcompris/soundutil.c	2002/03/20 10:36:14
