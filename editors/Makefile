@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/editors/Makefile,v 1.86 1999/08/25 05:43:16 obrien Exp $
 #
 
     SUBDIR += AbiWord
@@ -18,6 +18,7 @@
     SUBDIR += custom-emacs
     SUBDIR += custom-mule
     SUBDIR += e93
+    SUBDIR += elvis
     SUBDIR += emacs
     SUBDIR += emacs20
     SUBDIR += emacs20-dl
