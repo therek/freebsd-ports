@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.9 2001/03/28 14:30:56 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Embperl
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kapr@crosswinds.net
+COMMENT=	A module to allow embedded perl in HTML documents
 
 .if !defined(WITHOUT_APACHE)
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl

@@ -2,7 +2,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/web500gw/Makefile,v 1.12 2000/10/08 10:23:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	web500gw
@@ -17,6 +17,7 @@ PATCH_SITES=	http://www.tu-chemnitz.de/~fri/web500gw/
 PATCHFILES=	modtmpl.patch
 
 MAINTAINER=	Karl.Dietz@frankfurt.netsurf.de
+COMMENT=	HTTP gateway to LDAP-based directories
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libldap.a:${PORTSDIR}/net/openldap
 

@@ -2,7 +2,7 @@
 # Date created:		15 Oct 1997
 # Whom:			Ian Vaudrey <i.vaudrey@cableinet.co.uk>
 #
-# $FreeBSD: ports/www/xitami/Makefile,v 1.6 2001/02/26 05:00:08 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xitami
@@ -13,6 +13,7 @@ DISTNAME=	suni24d7
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	bdluevel@heitec.net
+COMMENT=	A fast, portable multithreaded web server
 
 NO_WRKSUBDIR=	yes
 

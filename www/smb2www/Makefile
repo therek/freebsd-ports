@@ -2,7 +2,7 @@
 # Date created:			  Mar 25 2001
 # Whom:				  Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/www/smb2www/Makefile,v 1.1 2001/04/07 06:29:19 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smb2www
@@ -18,6 +18,7 @@ MASTER_SITES=	http://us1.samba.org/samba/smb2www/ \
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/0.0.//g}
 
 MAINTAINER=	roman@xpert.com
+COMMENT=	Windows Network client that is accessible through a web browser
 
 RUN_DEPENDS=	httpd:${PORTSDIR}/www/apache13 \
 		smbclient:${PORTSDIR}/net/samba \

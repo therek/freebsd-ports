@@ -2,7 +2,7 @@
 # Date created:				9 May 2000
 # Whom:					Ask Bjoern Hansen <ask@valueclick.com>
 #
-# $FreeBSD: ports/www/http_load/Makefile,v 1.2 2001/04/27 17:01:04 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	http_load
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.acme.com/software/http_load/
 DISTNAME=	${PORTNAME}-05apr2001
 
 MAINTAINER=	ask@valueclick.com
+COMMENT=	Multiprocessing http performance test client
 
 WRKSRC=		${WRKDIR}/http_load
 MAKEFILE=	${FILESDIR}/Makefile.bsd

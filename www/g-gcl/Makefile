@@ -2,7 +2,7 @@
 # Date created:				21 Jun 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/www/g-gcl/Makefile,v 1.4 2000/04/10 00:05:12 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	g-gcl
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.whizkidtech.net/cgi/gcl/ \
 		http://www.whizkidtech.net/gcl/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Sample counter scripts for Graphic Counter Language
 
 RUN_DEPENDS=	gracula:${PORTSDIR}/graphics/gracula
 

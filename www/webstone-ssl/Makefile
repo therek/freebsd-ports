@@ -2,7 +2,7 @@
 # Date created:				2 Nov 2000
 # Whom:					Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
 #
-# $FreeBSD: ports/www/webstone-ssl/Makefile,v 1.2 2001/02/05 15:33:56 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webstone
@@ -14,6 +14,7 @@ DISTNAME=	WebStone-SSL-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	k_nishizawa@anet.ne.jp
+COMMENT=	World wide web server benchmarking with SSL support
 
 USE_OPENSSL=	yes
 USE_AUTOCONF=	yes

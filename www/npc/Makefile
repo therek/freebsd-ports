@@ -2,7 +2,7 @@
 # Date created:		3 December 1998
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/www/npc/Makefile,v 1.4 2000/10/08 10:23:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	npc
@@ -11,6 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www2.biglobe.ne.jp/%7Enir/soft/
 
 MAINTAINER=	yasuf@big.or.jp
+COMMENT=	An animated web counter
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAKE_ARGS=	INDEX_DIR="${INDEX_DIR}"

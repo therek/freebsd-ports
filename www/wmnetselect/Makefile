@@ -2,7 +2,7 @@
 # Date created:        7 March 1999
 # Whom:                David McNett <nugget@slacker.com>
 #
-# $FreeBSD: ports/www/wmnetselect/Makefile,v 1.6 2000/12/30 19:10:31 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmnetselect
@@ -11,6 +11,7 @@ CATEGORIES=	www windowmaker
 MASTER_SITES=	http://home.att.net/~apathos/code/
 
 MAINTAINER=	nugget@slacker.com
+COMMENT=	WindowMaker Netscape launcher to display urls from X selection
 
 USE_IMAKE=	yes
 USE_XPM=	yes

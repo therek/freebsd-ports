@@ -2,7 +2,7 @@
 # Date created:		7 March 2000
 # Whom:			support@kryltech.com
 #
-# $FreeBSD: ports/www/ssserver/Makefile,v 1.3 2001/04/05 10:27:16 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ssserver
@@ -11,6 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.kryltech.com/download/FreeBSD.x86.3/
 
 MAINTAINER=	support@kryltech.com
+COMMENT=	Adds the search capability to a Web site
 
 ONLY_FOR_ARCHS=	i386
 NO_BUILD=	yes
