@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.4 2004/04/30 21:44:50 nork Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -27,4 +27,4 @@ load_rc_config $name
 
 pidfile="${apache_pidfile}"
 
-run_rc_commmand "$1"
+run_rc_command "$1"
