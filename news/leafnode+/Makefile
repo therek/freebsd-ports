@@ -2,7 +2,7 @@
 # Date created:		19 November 1998
 # Whom:			Tom Hukins <tom@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode+/Makefile,v 1.20 2001/07/07 15:12:38 tom Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	leafnode+
@@ -15,10 +15,6 @@ MAINTAINER=	tom@FreeBSD.org
 
 MAN8=		checkgroups.8 fetchnews.8 leafnode.8 texpire.8
 PKGINSTALL=	${WRKDIR}/INSTALL
-
-.if defined(NOPORTDOCS)
-PLIST=	${PKGDIR}/pkg-plist.nodocs
-.endif
 
 LEAFLIBDIR?=	${PREFIX}/lib/leafnode
 LEAFSPOOLDIR?=	/var/spool/leafnode
