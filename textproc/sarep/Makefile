@@ -2,7 +2,7 @@
 # Date created:                   Feb 18, 1999
 # Whom:                           ache
 #
-# $FreeBSD: ports/textproc/sarep/Makefile,v 1.11 2000/03/21 07:53:14 mharo Exp $
+# $FreeBSD: ports/textproc/sarep/Makefile,v 1.12 2000/04/09 21:53:06 cpiazza Exp $
 #
 
 PORTNAME=	sarep
@@ -11,13 +11,13 @@ CATEGORIES=	textproc
 MASTER_SITES=   http://tarp.worldserve.net/software/
 EXTRACT_SUFX=
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=     ache@FreeBSD.org
 
 RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Text/CSV_XS.pm:${PORTSDIR}/textproc/p5-Text-CSV_XS
 
 EXTRACT_CMD=    $(SED)
 EXTRACT_BEFORE_ARGS= 's=^\#!/usr/bin/perl =\#!${PERL} =' <
-EXTRACT_AFTER_ARGS= | tr -d '\r' > ${WRKSRC}/sarep
+EXTRACT_AFTER_ARGS= | ${TR} -d '\r' > ${WRKSRC}/sarep
 
 NO_BUILD=       YES
 NO_WRKSUBDIR=   yes
