@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.16 2000/10/07 22:36:33 asami Exp $
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.17 2000/12/01 20:42:47 andreas Exp $
 #
 
 PORTNAME=	tac_plus
@@ -26,6 +26,16 @@ EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ba
 # check expiration dates against 'expire' field of master.passwd file
 .if defined(TAC_EXPIRE_MASTER_PASSWD) && ${TAC_EXPIRE_MASTER_PASSWD} == YES
 EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-bb
+.endif
+
+# finger output differs for CISCO IOS versions 11 and 12.
+# Define version of your IOS (default is 11): 
+# Example: make TAC_IOS_VERSION=12
+#
+.if defined(TAC_IOS_VERSION)
+CFLAGS+=	-DTAC_IOS_VERSION=${TAC_IOS_VERSION}
+.else
+CFLAGS+=	-DTAC_IOS_VERSION=11
 .endif
 
 do-install:
