@@ -2,12 +2,11 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.31 2000/09/06 15:58:06 knu Exp $
+# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.32 2000/09/22 04:50:44 knu Exp $
 #
 
 PORTNAME=	swig
-PORTVERSION=	1.3a4
-PORTREVISION=	1
+PORTVERSION=	1.3a5
 CATEGORIES=	devel perl5 python ruby tcl82
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.rge.com/pub/languages/swig/ \
