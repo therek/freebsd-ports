@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.4 2000/06/22 05:31:13 will Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.5 2000/08/01 13:37:10 sobomax Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -34,7 +34,6 @@ MASTER_SITE_GNU+=	\
 	ftp://ftp.digital.com/pub/GNU/%SUBDIR%/ \
 	ftp://ftp.uu.net/archive/systems/gnu/%SUBDIR%/ \
 	ftp://ftp.de.uu.net/pub/gnu/%SUBDIR%/ \
-	ftp://ftp.ecrc.net/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.sourceforge.net/pub/mirrors/gnu/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/gnu/prep/%SUBDIR%/ \
 	ftp://ftp.leo.org/pub/comp/os/unix/gnu/%SUBDIR%/ \
