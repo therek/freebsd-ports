@@ -2,11 +2,11 @@
 # Date created:		30 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-binutils/Makefile,v 1.2 2001/04/09 01:07:42 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	binutils
-PORTVERSION=	2.11
+PORTVERSION=	2.10.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	binutils/releases
@@ -20,10 +20,6 @@ USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=avr
-USE_LIBTOOL=	yes
-LIBTOOLFILES=	configure bfd/configure binutils/configure etc/configure \
-		gas/configure gprof/configure intl/configure ld/configure \
-		libiberty/configure opcodes/configure
 
 MAN1=	\
 		avr-addr2line.1 \
