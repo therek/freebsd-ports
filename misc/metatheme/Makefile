@@ -2,14 +2,14 @@
 # Date created:				25 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/metatheme/Makefile,v 1.8 2001/05/04 21:41:19 ade Exp $
+# $FreeBSD: ports/misc/metatheme/Makefile,v 1.9 2001/05/21 18:06:30 ade Exp $
 #
 
 PORTNAME=	metatheme
 PORTVERSION=	0.5.0
 PORTREVISION=	1
 CATEGORIES=	misc gnome
-MASTER_SITES=	ftp://ftp.helixcode.com/pub/metatheme/
+MASTER_SITES=	ftp://ftp.helixcode.com/pub/obsolete/metatheme/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
