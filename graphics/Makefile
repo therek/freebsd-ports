@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.260 2001/01/18 19:06:25 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.261 2001/01/26 18:14:58 dinoex Exp $
 #
 
     SUBDIR += 4va
@@ -176,6 +176,7 @@
     SUBDIR += ruby-libpng
     SUBDIR += ruby-ming
     SUBDIR += ruby-opengl
+    SUBDIR += ruby-qt2gl
     SUBDIR += sane
     SUBDIR += sced
     SUBDIR += scrot
