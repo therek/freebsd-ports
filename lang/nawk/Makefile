@@ -4,7 +4,7 @@
 # Date created:			  29 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/lang/nawk/Makefile,v 1.8 1999/11/29 10:14:13 obrien Exp $
+# $FreeBSD: ports/lang/nawk/Makefile,v 1.9 2000/02/13 03:23:53 obrien Exp $
 #
 
 DISTNAME=	awk
@@ -14,6 +14,7 @@ MASTER_SITES=	http://cm.bell-labs.com/who/bwk/
 
 MAINTAINER=	obrien@FreeBSD.org
 
+USE_BISON=	yes
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	a.out
