@@ -2,15 +2,15 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-chill/Makefile,v 1.9 2001/02/14 05:42:37 lioux Exp $
+# $FreeBSD: ports/devel/i386-rtems-chill/Makefile,v 1.10 2001/04/10 21:02:28 jeh Exp $
 #
 
 PORTNAME=	chill
 PORTVERSION=	2.95.2
 PORTREVISION=	22
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
-		http://rtems.thehousleys.net/
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR=	newlib
 DISTFILES=	${CHILLNAME}.tar.gz ${NEWLIBNAME}.tar.gz
 PATCHFILES=	${CHILLNAME}-rtems-20010221.diff \
 		${NEWLIBNAME}-rtems-20010221.diff
@@ -19,8 +19,6 @@ PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 
 MAINTAINER=	jeh@FreeBSD.org
 
-DIST_SUBDIR=	rtems
-
 LCLTARGET?=	i386-rtems
 
 CHILLNAME=	gcc-2.95.2
@@ -28,6 +26,7 @@ NEWLIBNAME=	newlib-1.9.0
 MASTERDIR=	${.CURDIR}/../i386-rtems-chill
 PLIST=		${PKGDIR}/pkg-plist.${LCLTARGET}
 
+FETCH_DEPENDS=	/nonexistent:${PORTSDIR}/devel/rtems-gcc:extract
 BUILD_DEPENDS=	autoheader:${PORTSDIR}/devel/autoconf \
 		${LCLTARGET}-gcc:${PORTSDIR}/devel/${LCLTARGET}-gcc
 RUN_DEPENDS=	${LCLTARGET}-gcc:${PORTSDIR}/devel/${LCLTARGET}-gcc
