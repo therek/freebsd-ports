@@ -2,7 +2,7 @@
 # Date created:		27 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.11 2001/04/27 19:34:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdl
@@ -18,7 +18,7 @@ MAINTAINER=	knu@FreeBSD.org
 BUILD_DEPENDS=	${NONEXISTENT}:${RUBY_OPENGL_PORTDIR}:patch
 LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 		SDL_image.10:${PORTSDIR}/graphics/sdl_image \
-		SDL_ttf.2:${PORTSDIR}/graphics/sdl_ttf \
+		SDL_ttf.3:${PORTSDIR}/graphics/sdl_ttf \
 		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer
 
 RUBY_OPENGL_PORTDIR=	${.CURDIR}/../../graphics/ruby-opengl

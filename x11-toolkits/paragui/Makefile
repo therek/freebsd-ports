@@ -3,7 +3,7 @@
 # Date Created:			Mar 28, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/paragui/Makefile,v 1.2 2001/04/09 11:55:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	paragui
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.bms-austria.com/pub/paragui/release/
 MAINTAINER=	ijliao@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
-		SDL_ttf.2:${PORTSDIR}/graphics/sdl_ttf
+		SDL_ttf.3:${PORTSDIR}/graphics/sdl_ttf
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 
