@@ -2,18 +2,19 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.65 2000/11/20 12:18:16 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.66 2000/12/06 06:27:15 will Exp $
 #
 
 PORTNAME=	qt
-PORTVERSION=	2.2.2
+PORTVERSION=	2.2.3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 DISTNAME=	qt-x11-${PORTVERSION}
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	mng.0:${PORTSDIR}/graphics/libmng \
+		png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 YES?=		/usr/bin/yes
@@ -24,6 +25,7 @@ USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
+		-system-libmng \
 		-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CONFIGURE_ENV=	${YES} yes | QTDIR=${WRKSRC}
 MAKE_ENV=	QTDIR=${WRKSRC} LD_LIBRARY_PATH=${WRKSRC}/lib
