@@ -2,11 +2,11 @@
 # Date created:				Sun Jun  3 00:52:38 EDT 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/q3server/Makefile,v 1.1 2001/07/21 22:24:50 lioux Exp $
+# $FreeBSD: ports/games/q3server/Makefile,v 1.2 2001/07/29 03:46:03 lioux Exp $
 #
 
 PORTNAME=	q3ded
-PORTVERSION=	1.29g
+PORTVERSION=	1.29h
 CATEGORIES=	games linux
 MASTER_SITES=	http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/quake3/official/ \
 		ftp://ftp.idsoftware.com/idstuff/quake3/linux/
