@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.154 2001/07/14 18:01:47 kevlo Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.155 2001/08/23 11:52:25 kris Exp $
 #
 
     SUBDIR += AbiWord
@@ -112,6 +112,7 @@
     SUBDIR += staroffice52
     SUBDIR += sted
     SUBDIR += tamago
+    SUBDIR += ted
     SUBDIR += textedit
     SUBDIR += the
     SUBDIR += thoteditor
