@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.236 2000/08/01 09:05:57 sobomax Exp $
+# $FreeBSD: ports/www/Makefile,v 1.237 2000/08/01 14:48:19 nbm Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -183,6 +183,7 @@
     SUBDIR += wwwoffle
     SUBDIR += wwwstat
     SUBDIR += xitami
+    SUBDIR += xswallow
     SUBDIR += zope
 
 .include <bsd.port.subdir.mk>
