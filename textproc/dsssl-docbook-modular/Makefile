@@ -2,26 +2,23 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.39 2001/03/19 15:08:41 kuriyama Exp $
+# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.40 2001/06/01 05:15:29 kuriyama Exp $
 #
 
 PORTNAME=	dsssl-docbook-modular
-PORTVERSION=	1.64
-PORTREVISION=	1
+PORTVERSION=	1.70
 CATEGORIES=	textproc
-MASTER_SITES=	http://nwalsh.com/docbook/dsssl/
-DISTNAME=	db${PORTVERSION:S/.//g}
-DISTFILES=	${DISTNAME}.zip ${DISTNAME}d.zip
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	docbook
+DISTNAME=	docbook-dsssl-${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} docbook-dsssl-doc-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/share/sgml/docbook/3.0/catalog:${PORTSDIR}/textproc/docbook-300
-RUN_DEPENDS=	${PREFIX}/share/sgml/docbook/3.0/catalog:${PORTSDIR}/textproc/docbook-300
+BUILD_DEPENDS=	${LOCALBASE}/share/sgml/docbook/3.0/catalog:${PORTSDIR}/textproc/docbook-300
+RUN_DEPENDS=	${LOCALBASE}/share/sgml/docbook/3.0/catalog:${PORTSDIR}/textproc/docbook-300
 
-USE_ZIP=	YES
 NO_MTREE=	yes
-WRKSRC=		${WRKDIR}/docbook
-EXTRACT_BEFORE_ARGS=	-a -q
 
 INSTDIR=	${PREFIX}/share/sgml/docbook/dsssl/modular
 
@@ -34,7 +31,7 @@ pre-install:
 	@find ${WRKDIR} -name '*.orig' -exec ${RM} {} \;
 
 do-install:
-	@${CP} -Rp ${WRKDIR}/docbook/* ${INSTDIR}
+	@${CP} -Rp ${WRKSRC}/* ${INSTDIR}
 	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
