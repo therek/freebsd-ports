@@ -2,7 +2,7 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.30 2000/05/29 22:39:27 will Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.31 2000/07/03 23:30:59 jseger Exp $
 #
 
 PORTNAME=	gmake
@@ -19,8 +19,7 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 Y2K=		http://www.gnu.org/software/year2000.html
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--program-prefix=g \
-		--without-included-gettext
+CONFIGURE_ARGS=	--program-prefix=g
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -DHAVE_LOCALE_H" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
