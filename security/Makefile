@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.225 2001/08/24 15:42:36 ache Exp $
+# $FreeBSD: ports/security/Makefile,v 1.226 2001/08/24 15:57:19 ache Exp $
 #
 
     SUBDIR += aafid2
@@ -46,6 +46,7 @@
     SUBDIR += fwbuilder
     SUBDIR += fwtk
     SUBDIR += gag
+    SUBDIR += geheimnis
     SUBDIR += gnupg
     SUBDIR += gnupg-idea
     SUBDIR += gpa
