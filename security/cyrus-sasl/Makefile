@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.16 2000/10/24 02:03:08 jeh Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.17 2000/10/24 10:27:50 jeh Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -129,7 +129,7 @@ post-install:
 .for file in ${DOC2}
 	@${INSTALL_DATA} ${WRKSRC}/doc/${file} ${PREFIX}/share/doc/SASL
 .endfor
-	@${INSTALL_DATA} ${FILESDIR}/Sendmail.README ${PREFIX}/share/doc
+	@${INSTALL_DATA} ${FILESDIR}/Sendmail.README ${PREFIX}/share/doc/SASL
 .for file in ${HTDOCS}
 	@${INSTALL_DATA} ${WRKSRC}/doc/${file}.html ${PREFIX}/share/doc/SASL/html
 .endfor
