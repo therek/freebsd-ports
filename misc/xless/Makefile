@@ -3,7 +3,7 @@
 # Date created:		23 December 1996
 # Whom:			Conrad Sabatier <conrads@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/xless/Makefile,v 1.6 1999/08/25 07:23:14 obrien Exp $
 #
 
 DISTNAME=	xless-1.7
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=     applications
 MAINTAINER=	conrads@home.com
 
 USE_IMAKE=	yes
-MAN1=		xless.1
+MANN=		xless.n
+MANCOMPRESSED=	no
 
 .include <bsd.port.mk>
