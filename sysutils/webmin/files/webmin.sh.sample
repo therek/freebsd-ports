@@ -1,20 +1,20 @@
 #!/bin/sh
 
-# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.sample,v 1.1 2000/11/01 13:09:35 andreas Exp $
+# $FreeBSD: ports/sysutils/webmin/files/webmin.sh.sample,v 1.2 2000/11/25 20:29:43 demon Exp $
 
 case $1 in
 
 	start)
 		if [ -x !!PREFIX!!/etc/webmin/start ]; then
 			!!PREFIX!!/etc/webmin/start >/dev/null
-      	  	echo -n ' webmin'
+			echo -n ' webmin'
 		fi
 		;;
 
 	stop)
 		if [ -x !!PREFIX!!/etc/webmin/stop ]; then
 			!!PREFIX!!/etc/webmin/stop >/dev/null
-        		echo -n ' webmin'
+			echo -n ' webmin'
 		fi
 		;;
 
