@@ -2,7 +2,7 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.5 2000/04/22 20:40:16 will Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.6 2000/05/14 05:40:51 billf Exp $
 #
 
 PORTNAME=	xmovie
@@ -28,6 +28,10 @@ LINUX_BASE=	/compat/linux
 NO_BUILD=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/xmovie-i586
+
+# Linux binary should not be stripped by INSTALL_PROGRAM as it uses
+# /usr/bin/strip which then brands the binary as a FreeBSD ELF one.
+STRIP=
 
 RPM_MIRRORS=            \
 	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
