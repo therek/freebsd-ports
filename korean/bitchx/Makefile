@@ -3,10 +3,10 @@
 # Date created:		3 Jun 1999
 # Whom:			hollywar
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/bitchx/Makefile,v 1.3 1999/08/30 12:08:39 peter Exp $
 #
 
-DISTNAME=	bitchx-kr-75p1
+DISTNAME=	bitchx-ko
 PKGNAME=        ko-bitchx-75p1
 CATEGORIES=	korean net
 MASTER_SITES=	ftp://ftp.holywar.net/pub/FreeBSD/ \
