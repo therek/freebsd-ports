@@ -2,7 +2,7 @@
 # Date created:		14 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.11 2001/01/11 15:02:28 knu Exp $
+# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.12 2001/02/10 13:19:55 knu Exp $
 #
 
 PORTNAME=	vje
@@ -17,6 +17,7 @@ DIST_SUBDIR=	vje30
 
 MAINTAINER=	knu@FreeBSD.org
 
+LIB_DEPENDS=	c.3:${PORTSDIR}/misc/compat3x
 #RUN_DEPENDS=	${LOCALBASE}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
 
 NO_BUILD=	yes
