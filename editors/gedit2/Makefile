@@ -3,7 +3,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.6 1999/10/08 03:29:28 nakai Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.7 1999/10/09 18:42:06 vanilla Exp $
 #
 
 DISTNAME=		gedit-0.5.4
@@ -16,7 +16,7 @@ MASTER_SITE_SUBDIR=	X11/gtkbuffet/apps/gedit
 
 MAINTAINER=		andy@icc.surw.chel.su
 
-LIB_DEPENDS=	gnomeui.2:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
