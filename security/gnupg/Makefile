@@ -2,7 +2,7 @@
 # Date created:		Sep 30, 1998
 # Whom:			kuriyama@FreeBSD.org
 #
-# $FreeBSD: ports/security/gnupg/Makefile,v 1.20 1999/12/23 00:01:11 kuriyama Exp $
+# $FreeBSD: ports/security/gnupg/Makefile,v 1.21 2000/04/09 18:29:39 cpiazza Exp $
 #
 
 PORTNAME=	gnupg
@@ -25,7 +25,7 @@ MLINKS=		gpg.1 gpgm.1
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 300000
-CONFIGURE_ARGS+=--disable-asm
+USE_GMAKE=	YES
 .endif
 CFLAGS:=	${CFLAGS:S/-pipe//g}
 
