@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.40 2000/04/13 20:00:27 cpiazza Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.41 2000/06/27 16:25:32 alex Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -19,6 +19,8 @@ MAINTAINER?=	pine@freebsd.ady.ro
 Y2K=		http://www.washington.edu/pine/QandA/sysadmins.html#Millenium
 
 MAN1=		pine.1 pico.1 pilot.1
+
+LIB_DEPENDS=	c-client4.7:${PORTSDIR}/mail/cclient
 
 # Define "WITH_LDAP" to include ldap support.
 # If the ldap port is installed somewhere other than /usr/local, define
