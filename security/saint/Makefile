@@ -2,23 +2,22 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.5 2000/04/20 00:53:40 mharo Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.6 2000/05/07 21:24:31 jedgar Exp $
 #
 
 PORTNAME=	saint
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.wwdsi.com/pub/saint/			\
 		http://www.wwdsi.com/saint/downloads/		\
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
-DISTNAME=	${PKGNAME}.beta2
 
 MAINTAINER=	calle.madestrand@norrgarden.se
 
 RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_PERL5=	yes
-WRKSRC=		${WRKDIR}/saint-2.0.2
+WRKSRC=		${WRKDIR}/saint-2.1
 MAKE_ENV=	XFLAGS="DAUTH_GID_T=int -DSYS_ERRLIST_DECLARED -DFDSETSIZE=2048"
 ALL_TARGET=	freebsd
 INSTALL_TARGET=	all
