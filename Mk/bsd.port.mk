@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.450 2003/05/23 04:14:18 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.451 2003/05/26 20:59:12 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3418,7 +3418,7 @@ fetch-list:
 # Generates patches.
 
 update-patches:
-	@toedit=`WRKSRC=${WRKSRC} PATCHDIR=${PATCHDIR} PATCH_LIST=${PATCHDIR}/patch-* \
+	@toedit=`PATCH_WRKSRC=${PATCH_WRKSRC} PATCHDIR=${PATCHDIR} PATCH_LIST=${PATCHDIR}/patch-* \
 		DIFF_ARGS=${DIFF_ARGS} DISTORIG=${DISTORIG} \
 		${SH} ${PORTSDIR}/Tools/scripts/update-patches`; \
 	case $$toedit in "");; \
