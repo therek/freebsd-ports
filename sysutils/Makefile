@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.218 2001/09/21 05:56:37 knu Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.219 2001/10/10 02:50:13 lioux Exp $
 #
 
     SUBDIR += LPRng
@@ -50,6 +50,7 @@
     SUBDIR += filedupe
     SUBDIR += fileutils
     SUBDIR += flexbackup
+    SUBDIR += flog
     SUBDIR += fontedit
     SUBDIR += fortunelock
     SUBDIR += fsck_ext2fs
