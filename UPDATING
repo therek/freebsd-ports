@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041104:
+  AFFECTS: users of japanese/rskkserv
+  AUTHOR: rushani@FreeBSD.org
+
+  The format of PREFIX/etc/rskkserv.conf has changed in version 2.95.
+  Please update your configuration file before restarting the server
+  using PREFIX/share/examples/rskkserv/conf-o2n.rb and referring to
+  PREFIX/etc/rskkserv.conf.sample.
+
 20041031:
   AFFECTS: users of databases/mysql40-server
   AUTHOR: ale@FreeBSD.org
@@ -1001,4 +1010,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.87 2004/10/29 01:29:19 marcus Exp $
+$FreeBSD: ports/UPDATING,v 1.88 2004/10/31 10:44:54 ale Exp $
