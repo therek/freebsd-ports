@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/postgresql74-server/files/502.pgsql,v 1.5 2003/01/04 01:10:14 seanc Exp $
+# $FreeBSD: ports/databases/postgresql74-server/files/502.pgsql,v 1.6 2004/11/23 19:15:12 ade Exp $
 #
 # Maintenance shell script to vacuum and backup database
 # Put this in /usr/local/etc/periodic/daily, and it will be run 
@@ -18,7 +18,7 @@
 # daily_pgsql_backup_enable="YES" # do backup
 # daily_pgsql_vacuum_enable="YES" # do vacuum
 
-daily_pgsql_vaccum_enable="NO"
+daily_pgsql_vacuum_enable="YES"
 daily_pgsql_backup_enable="NO"
 
 daily_pgsql_vacuum_args="-z"
