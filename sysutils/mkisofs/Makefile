@@ -3,10 +3,10 @@
 # Date created:		07 Aug 1996
 # Whom:			jhk
 #
-# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.14 1999/08/31 06:50:54 mharo Exp $
+# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.15 1999/10/19 15:10:34 dirk Exp $
 #
 
-DISTNAME=	cdrecord-1.8a30
+DISTNAME=	cdrecord-1.8a33
 PKGNAME=	mkisofs-${VERSION}
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/ \
