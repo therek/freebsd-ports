@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.312 1999/11/11 07:31:37 asami Exp $
+# $FreeBSD: ports/net/Makefile,v 1.313 1999/11/14 20:21:18 obrien Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -62,6 +62,7 @@
     SUBDIR += gnomenetwork
     SUBDIR += gnu-finger
     SUBDIR += gopher
+    SUBDIR += gtic
     SUBDIR += gtksamba
     SUBDIR += gtkyahoo
     SUBDIR += h2n
@@ -142,6 +143,7 @@
     SUBDIR += radius
     SUBDIR += radiusclient
     SUBDIR += radiusd-cistron
+    SUBDIR += radreport
     SUBDIR += ratoolset
     SUBDIR += rdist6
     SUBDIR += relay
