@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.97 2000/01/02 17:17:28 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.98 2000/01/23 00:02:09 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -40,9 +40,6 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.fu-berlin.de/unix/security/mod_ssl/
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
 
-PATCH_SITES=	http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
-PATCHFILES=	php4_snmp.c.diff
-
 MAINTAINER=	dirk@FreeBSD.org
 
 BROKEN=		"PHP-${VERSION_PHP} is beta. Beware the bugs. Enter at your own risk!"
@@ -52,7 +49,7 @@ Y2K=		http://www.php.net/y2k.php3
 PHP_DISTDIR=	version4/downloads
 
 VERSION_APACHE=	1.3.11
-VERSION_PHP=	4.0b2
+VERSION_PHP=	4.0b3
 
 NO_LATEST_LINK=	yes
 USE_PERL5=	yes
