@@ -1,9 +1,9 @@
 # New ports collection makefile for:	bitmap-font
-# Version required:	8.1
+# Version required:	8.2
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.7 1999/11/05 16:27:53 shige Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-font/Makefile,v 1.8 1999/12/24 14:20:54 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
 MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
-BITMAP_VER=	8.1
+BITMAP_VER=	8.2
 BITMAP_FONT=	etl6x12-bitmap etl7x14-bitmap etl8x16-bitmap etl12x24-bitmap
 FONTSDIR=	lib/X11/fonts/local
 PKGINSTALL=     ${WRKDIR}/INSTALL

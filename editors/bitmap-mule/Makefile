@@ -1,9 +1,9 @@
 # New ports collection makefile for:	bitmap for mule
-# Version required:	8.1
+# Version required:	8.2
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.6 1999/12/24 14:20:52 shige Exp $
+# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.7 2000/01/08 15:38:38 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
 MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
-BITMAP_VER=		8.1
+BITMAP_VER=		8.2
 BITMAP_PKG_VER=		${BITMAP_VER}
 BITMAPDOCDIR=	share/doc/bitmap
 BITMAP_SETUPEL=	bitmap-setupel.el
@@ -31,7 +31,8 @@ ALL_TARGET?=	elc
 
 PKGNAME=	bitmap-${EMACS_PORT}-${BITMAP_PKG_VER}
 EMACS_CMD=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
-BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
+BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT} \
+		uncompface:${PORTSDIR}/mail/faces
 RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}-common \
 		${BITMAP_FONT}:${PORTSDIR}/x11-fonts/bitmap-font
 SCRIPTS_ENV=	EMACS_LIBDIR=${EMACS_LIBDIR} EMACS_VER=${EMACS_VER} \
