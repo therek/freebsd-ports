@@ -3,7 +3,7 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.12 1999/12/23 18:14:56 steve Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.13 2000/01/29 21:31:26 steve Exp $
 #
 
 DISTNAME=	wmakerconf-2.5
@@ -25,7 +25,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png \
 		wraster.3:${PORTSDIR}/x11-wm/windowmaker \
-		wmfun.0:${PORTSDIR}/x11-wm/libwmfun
+		wmfun.0:${PORTSDIR}/x11-wm/windowmaker
 
 BUILD_DEPENDS=	bunzip2:${PORTSDIR}/archivers/bzip2 \
 		wget:${PORTSDIR}/ftp/wget
