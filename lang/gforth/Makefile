@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/lang/gforth/Makefile,v 1.6 2001/07/10 13:54:20 sobomax Exp $
+# $FreeBSD: ports/lang/gforth/Makefile,v 1.7 2001/08/30 03:58:33 lioux Exp $
 #
 
 PORTNAME=	gforth
@@ -13,7 +13,6 @@ MASTER_SITE_SUBDIR=	gforth
 
 MAINTAINER=	clefevre@citeweb.net
 
-#
 # Global variables
 #
 
@@ -23,14 +22,11 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	all info
 
-.if make(do-install)
-# DESTDIR isn't honored. fake it w/ prefix.
+# PREFIX isn't honored. force it w/ prefix.
 MAKE_ARGS=	prefix=${PREFIX}
-.endif
 
 MAN1=		gforth.1
 
-#
 # Local variables
 #
 
@@ -49,7 +45,6 @@ EMPTY_DIRS=	4stack 6502 8086 avr c165 generic h8 \
 		hppa ia64 m68k misc power shboom sparc
 ARCH_DIR=	${DATADIR}/${PORTVERSION}/arch
 
-#
 # Post-extract
 #
 
@@ -60,7 +55,6 @@ remove-info-files:
 	@${RM} -f ${WRKSRC}/doc/${file}*
 .endfor
 
-#
 # Post-patch
 #
 
