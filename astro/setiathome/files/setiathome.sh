@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/astro/setiathome/files/setiathome.sh,v 1.5 2001/07/04 14:27:58 kevlo Exp $
+# $FreeBSD: ports/astro/setiathome/files/setiathome.sh,v 1.6 2001/08/24 13:39:27 dwcjr Exp $
 #
 # Start or stop SETI@home, or set up working directory and register.
 #
@@ -16,6 +16,7 @@ seti_proxy_args=			# proxy arguments
 seti_user=nobody			# user id to run as
 seti_nice=15				# nice level to run at
 seti_maxprocs=$(sysctl -n hw.ncpu)	# max. number of processes to start
+seti_idprio=				# idletime scheduling priority to run at
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/${rc_file}\$"); then
 	echo "${rc_file}: Cannot determine PREFIX." >&2
@@ -67,10 +68,10 @@ start)
 		fi
 	done
 	for i in ${seti_wrksuff}; do
-		su -fm ${seti_user} -c "\
+		${seti_idprio:+idprio} ${seti_idprio} su -fm ${seti_user} -c "\
 			(cd ${seti_wrkdir}/${i} && exec ${program_path} \
 				 ${seti_std_args} ${seti_proxy_args} \
-				 ${seti_nice+-nice} ${seti_nice} >/dev/null &)"
+				 ${seti_nice:+-nice} ${seti_nice} >/dev/null &)"
 	done
 	echo -n " SETI@home"
 	;;
