@@ -2,12 +2,12 @@
 # Date created:		28 August 2001
 # Whom:			SASAKI Katuhiro <sahiro@crest.ocn.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/kdeaddons/Makefile,v 1.1 2001/08/30 08:31:07 knu Exp $
 #
 
 # This port does not work with another version of master port.
 #PORTVERSION=	2.2
-CATEGORIES=	japanese misc
+CATEGORIES=	japanese misc kde
 
 MASTERDIR=	${.CURDIR}/../../misc/kdeaddons
 MD5_FILE=	${.CURDIR}/distinfo
