@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tn5250
-# Version required:		0.15.6
+# Version required:		0.15.7
 # Date created:			20 January 2000
 # Whom:				Elias Mandouvalos <ocean@compulink.gr>
 #
-# $FreeBSD: ports/net/tn5250/Makefile,v 1.1 2000/01/29 05:34:49 steve Exp $
+# $FreeBSD: ports/net/tn5250/Makefile,v 1.2 2000/02/12 23:43:48 jedgar Exp $
 #
 
-DISTNAME=	tn5250-0.15.6
+DISTNAME=	tn5250-0.15.7
 CATEGORIES=	net
 MASTER_SITES=	ftp://cvs.cleveland.lug.net/pub/tn5250/
 
