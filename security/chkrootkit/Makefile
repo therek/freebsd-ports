@@ -2,11 +2,11 @@
 # Date created:				13 Mar 2001
 # Whom:					Luiz Eduardo R. Cordeiro
 #
-# $FreeBSD: ports/security/chkrootkit/Makefile,v 1.2 2001/04/17 05:56:57 will Exp $
+# $FreeBSD: ports/security/chkrootkit/Makefile,v 1.3 2001/04/17 12:13:08 roam Exp $
 #
 
 PORTNAME=	chkrootkit
-PORTVERSION=	0.31
+PORTVERSION=	0.32
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.pangeia.com.br/pub/seg/pac/
 
