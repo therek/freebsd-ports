@@ -2,12 +2,11 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.6 2001/04/28 10:58:23 knu Exp $
+# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.7 2001/05/04 23:41:47 knu Exp $
 #
 
 PORTNAME=	opengl
-PORTVERSION=	0.32
-PORTREVISION=	1
+PORTVERSION=	0.32a
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www2.giganet.net/~yoshi/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -25,10 +24,6 @@ USE_MESA=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 CONFIGURE_ARGS=	--with-ruby-dir="${LOCALBASE}" --with-x11-dir="${X11BASE}"
 INSTALL_TARGET=	site-install
-
-post-patch:
-	${RUBY} -i -pe 'sub %r| -I/usr/X11R6/include|, ""' \
-		 -e 'sub %r| -L/usr/X11R6/lib|, ""' ${WRKSRC}/${RUBY_EXTCONF}
 
 post-install:
 .if !defined(NOPORTDOCS)
