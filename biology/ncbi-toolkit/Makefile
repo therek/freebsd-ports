@@ -2,7 +2,7 @@
 # Date created:         03 April 2000
 # Whom:                 tonym
 #
-# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.6 2001/06/20 14:25:52 wjv Exp $
+# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.7 2001/07/10 16:35:08 fenner Exp $
 #
 
 PORTNAME=	ncbi-toolkit
@@ -11,7 +11,7 @@ CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/${PORTVERSION:S/.//g}/
 DISTNAME=	ncbi
 
-MAINTAINER=	tonym@angis.org.au
+MAINTAINER=	tonym@biolateral.com.au
 
 USE_MOTIF=	yes
 
