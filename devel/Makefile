@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.610 2001/08/07 06:53:29 lioux Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.611 2001/08/10 02:18:51 demon Exp $
 #
 
     SUBDIR += ElectricFence
@@ -452,6 +452,7 @@
     SUBDIR += re2c
     SUBDIR += regexx
     SUBDIR += rinfo
+    SUBDIR += rlwrap
     SUBDIR += robodoc
     SUBDIR += rpc2
     SUBDIR += rtems-gcc
