@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/postfix/pkg-install,v 1.15 2002/06/20 01:32:20 dwcjr Exp $
+# $FreeBSD: ports/news/husky-base/pkg-install,v 1.1 2003/01/05 19:34:24 fjoe Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -58,7 +58,7 @@ if [ x"$2" = xPRE-INSTALL ]; then
         echo "You already have a user \"${USER}\", so I will use it."
     else
         if /usr/sbin/pw useradd ${USER} -u ${UID} -g ${GROUP} -h - \
-           -d /${PKG_PREFIX}/fido \
+           -d ${PKG_PREFIX}/fido \
            -c "Fido System"
 	then
 	    echo "Added user \"${USER}\"."
