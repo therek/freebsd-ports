@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer2/Makefile,v 1.13 2000/08/07 08:05:54 kevlo Exp $
+# $FreeBSD: ports/german/webalizer2/Makefile,v 1.14 2000/08/10 16:16:30 kevlo Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.0.12
@@ -17,7 +17,7 @@ LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 NO_LATEST_LINK=	yes
 
-WEBALIZER_LANG= german
+WEBALIZER_LANG?=	german
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-dns \
