@@ -2,19 +2,20 @@
 # Date created:				11 September 1998
 # Whom:					jabley@clear.co.nz
 #
-# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.13 2001/01/24 12:43:10 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfstt
-PORTVERSION=	1.1
-PORTREVISION=	1
+PORTVERSION=	1.4
 CATEGORIES=	x11-servers
 MASTER_SITES=	$(MASTER_SITE_SUNSITE)
 MASTER_SITE_SUBDIR=	X11/fonts
 
-MAINTAINER=	olgeni@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
+GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+
 MAN1=		xfstt.1
 
 do-install:
