@@ -3,14 +3,14 @@
 # Date created:		16 Mar 1996
 # Whom:			Hideaki Ohmon <ohmon@tom.sfc.keio.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pkfonts300/Makefile,v 1.16 1999/08/31 01:45:13 peter Exp $
 #
 
 DISTNAME=	pkfonts
 PKGNAME=	pkfonts${RESOLUTION}-1.0
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.tut.ac.jp/TeX/fonts/ \
-		ftp://ftp.univ-evry.fr/.04/system/OpenBSD/distfiles/pkfonts/
+MASTER_SITES=	ftp://ftp.univ-evry.fr/.04/system/OpenBSD/distfiles/pkfonts/
+#		ftp://ftp.tut.ac.jp/TeX/fonts/
 DISTFILES=	pk${RESOLUTION}.tar.gz
 # see below for RESOLUTION definition
 
