@@ -2,18 +2,29 @@
 # Date created:		01 Jan 2001
 # Whom:			Assar Westerlund <assar@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/mob/Makefile,v 1.1 2001/01/01 21:28:48 assar Exp $
 #
 
 PORTNAME=	mob
 PORTVERSION=	0.1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://steamboat.cs.ucsb.edu/mob/src/
-DISTFILES=	mob-1.0-BETA.tgz
+DISTNAME=	${PORTNAME}-1.0-BETA
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
 USE_GMAKE=	yes
+GNU_CONFIGURE=	yes
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/src/inspector ${PREFIX}/bin
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/mob
+	${INSTALL_DATA} ${WRKSRC}/doc/mob.ps ${PREFIX}/share/doc/mob
+.endif
 
 .include <bsd.port.mk>
