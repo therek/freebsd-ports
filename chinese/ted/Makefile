@@ -2,13 +2,13 @@
 # Date Created:		18 Sep 1997
 # Whom:			Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/chinese/ted/Makefile,v 1.24 2000/04/02 04:43:10 vanilla Exp $
+# $FreeBSD: ports/chinese/ted/Makefile,v 1.25 2000/04/13 08:28:16 asami Exp $
 #
 
 PORTNAME=		ted
 PORTVERSION=		4.4d
 CATEGORIES=		chinese editors
-MASTER_SITES=		ftp://freebsd.ntu.edu.tw/freebsd/ntu/moon/X/ted/
+MASTER_SITES=		ftp://freebsd.ntu.edu.tw/FreeBSD/ntu/moon/X/ted/
 DISTFILES=		ted4.4d.tgz
 
 MAINTAINER=		vanilla@FreeBSD.org
