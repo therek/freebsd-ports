@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.57 2001/06/09 10:29:24 dougb Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.58 2001/10/05 08:41:39 dougb Exp $
 #
 
 PORTNAME=	pine
@@ -46,6 +46,7 @@ pre-fetch:
 
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
 	${SH} pkg-install
+	${SH} pkg-libwarning
 .endif
 
 post-patch:
