@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.275 2000/01/18 15:14:55 imura Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.276 2000/01/24 04:55:09 taoka Exp $
 #
 
     SUBDIR += 9term
@@ -59,6 +59,7 @@
     SUBDIR += xfedor
     SUBDIR += xfishtank
     SUBDIR += xgrab
+    SUBDIR += xkbctrl
     SUBDIR += xkeycaps
     SUBDIR += xkeywrap
     SUBDIR += xloadimage
