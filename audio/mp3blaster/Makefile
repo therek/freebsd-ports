@@ -2,7 +2,7 @@
 # Date created:		5 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.6 2001/01/28 21:42:13 clive Exp $
+# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.7 2001/02/18 11:54:25 sf Exp $
 #
 
 PORTNAME=	mp3blaster
@@ -21,6 +21,6 @@ LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
 
 GNU_CONFIGURE=	yes
 
-MAN1=		mp3blaster.1 nmixer.1
+MAN1=		mp3blaster.1 nmixer.1 splay.1
 
 .include <bsd.port.post.mk>
