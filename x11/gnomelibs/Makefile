@@ -2,12 +2,12 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.66 2000/08/04 16:11:20 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.67 2000/09/16 18:24:36 ade Exp $
 #
 
 PORTNAME=	gnomelibs
 PORTVERSION= 	1.2.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
@@ -46,5 +46,9 @@ pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+
+post-patch:
+	@${PERL} -pi -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
+		${WRKSRC}/gnome-config.in ${WRKSRC}/libgnome/gnome-util.c
 
 .include <bsd.port.mk>
