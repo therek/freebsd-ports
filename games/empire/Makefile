@@ -2,13 +2,13 @@
 # Date created:				13 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/empire/Makefile,v 1.8 2000/08/13 16:15:57 alex Exp $
+# $FreeBSD: ports/games/empire/Makefile,v 1.9 2000/08/14 03:20:39 steve Exp $
 #
 
 PORTNAME=	empire
 PORTVERSION=	1.2
 CATEGORIES=	games
-MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
+MASTER_SITES=	http://www.tuxedo.org/~esr/
 DISTNAME=	vms-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -17,7 +17,7 @@ MAN6=		empire.6
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vms-empire ${PREFIX}/bin/empire
-	${INSTALL_MAN} ${WRKSRC}/vms-empire.6 ${PREFIX}/man/man6/empire.6
+	${INSTALL_MAN} ${WRKSRC}/vms-empire.6 ${MANPREFIX}/man/man6/empire.6
 .if !defined(NOPORTDOCS)
 .for file in BUGS READ.ME
 	@${MKDIR} ${PREFIX}/share/doc/empire
