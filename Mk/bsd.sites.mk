@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.48 2001/04/13 15:08:56 ade Exp $
+# $FreeBSD$
 #
 
 # Where to put distfiles that don't have any other master site
@@ -293,7 +293,8 @@ MASTER_SITE_TEX_CTAN+=  \
 MASTER_SITE_THEMES+= \
 	ftp://ftp.themes.org/pub/themes/%SUBDIR%/ \
 	ftp://ftp.tuwien.ac.at/opsys/linux/themes.org/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/X11/themes/%SUBDIR%/
+	ftp://ftp.chg.ru/pub/X11/themes/%SUBDIR%/ \
+	ftp://ftp.debian.org/pub/mirrors/themes.org/%SUBDIR%/
 
 MASTER_SITE_WINDOWMAKER+= \
 	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
