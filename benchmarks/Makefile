@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/Makefile,v 1.11 1999/08/25 04:45:38 obrien Exp $
 #
 
     SUBDIR += bonnie
@@ -11,6 +11,7 @@
     SUBDIR += netperf
     SUBDIR += netpipe
     SUBDIR += polygraph
+    SUBDIR += postmark
     SUBDIR += rawio
     SUBDIR += tcpblast
     SUBDIR += xengine
