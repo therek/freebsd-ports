@@ -3,7 +3,7 @@
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.32 1999/08/25 06:50:09 obrien Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.33 1999/10/11 14:20:56 markm Exp $
 #
 
 # "?=" lines are for sharing this Makefile with japanese/exmh2.
@@ -11,7 +11,7 @@ DISTNAME=	exmh-2.1.0
 CATEGORIES?=	mail tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/exmh/
 
-MAINTAINER?=	peter@FreeBSD.org
+MAINTAINER?=	markm@FreeBSD.org
 
 .if defined(JAPANESE_EXMH)
 RUN_DEPENDS=	wish8.0jp:${PORTSDIR}/japanese/tk80
