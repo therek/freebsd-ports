@@ -1,16 +1,15 @@
-# New ports collection makefile for:	zh_CN-kde2-i18n
+# New ports collection makefile for:	zh-kde2-i18n
 # Date created:				17 April 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/kde2-i18n/Makefile,v 1.1 2001/04/17 09:10:44 demon Exp $
 #
 
 CATEGORIES=	chinese kde misc
-PKGNAMEPREFIX=	zh_CN-
 
 MAINTAINER=	ports@FreeBSD.org
 
-LINGUAS=	"zh_CN.GB2312"
+LINGUAS=	"zh_CN.GB2312" "zh_TW.Big5"
 MASTERDIR=	${.CURDIR}/../../misc/kde2-i18n
 
 SCRIPTS_ENV+=	LINGUAS=${LINGUAS}
