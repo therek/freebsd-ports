@@ -2,7 +2,7 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.17 2000/04/04 14:10:18 asami Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.18 2000/04/14 10:47:20 asami Exp $
 #
 
 PORTNAME=	sketch
@@ -12,15 +12,18 @@ MASTER_SITES=	http://download.sourceforge.net/sketch/
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
-RUN_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter \
-		${PREFIX}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging \
-		${PREFIX}/lib/python1.5/site-packages/xml/__init__.py:${PORTSDIR}/textproc/py-xml
+BUILD_DEPENDS=	${LOCALBASE}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
+RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter \
+		${LOCALBASE}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging \
+		${LOCALBASE}/lib/python1.5/site-packages/xml/__init__.py:${PORTSDIR}/textproc/py-xml
 
 SKETCHDIR=	${PREFIX}/share/sketch
 SKETCHDOCDIR=	${PREFIX}/share/doc/sketch
 SKETCHDOCS=	BUGS Doc NEWS PROJECTS README TODO
 SKETCHEXDIR=	${PREFIX}/share/examples/sketch
+
+post-patch:
+	@${PERL} -pi -e "s;%%PORTSDIR%%;${PORTSDIR};" ${WRKSRC}/setup.py
 
 do-configure:
 	@(cd ${WRKSRC} && python setup.py configure)
