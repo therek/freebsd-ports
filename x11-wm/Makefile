@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.66 2001/08/27 11:13:07 olgeni Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 9menu
@@ -9,6 +9,7 @@
     SUBDIR += afterstep-stable
     SUBDIR += amaterus
     SUBDIR += amiwm
+    SUBDIR += bbconf
     SUBDIR += bbkeys
     SUBDIR += bbpager
     SUBDIR += blackbox
