@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.116 2001/03/11 15:29:48 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.117 2001/03/11 15:53:24 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -197,7 +197,7 @@ LIB_DEPENDS+=	ming.2:\${PORTSDIR}/graphics/ming
 POSTEXTRACT+=	post-extract-ming
 
 post-extract-ming:
-	[ -d \${PORTSDIR}/graphics/ming/work ] && \\
+	[ -d \`cd \${PORTSDIR}/graphics/ming && \${MAKE} -V WRKSRC\`/../php_ext ] && \\
 	(cd \${WRKSRC}; \\
 	 \${MKDIR} \${WRKSRC}/ext/ming; \\
 	 \${CP} \`cd \${PORTSDIR}/graphics/ming && \${MAKE} -V WRKSRC\`/../php_ext/* \${WRKSRC}/ext/ming; \\
