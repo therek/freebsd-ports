@@ -2,7 +2,7 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.12 2000/10/27 19:55:06 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.13 2000/11/03 23:26:04 nbm Exp $
 #
 
 PORTNAME=	courier-imap
@@ -16,6 +16,14 @@ MAINTAINER=	nbm@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
+
+
+.if !defined(WITHOUT_OPENSSL)
+USE_OPENSSL=	YES
+PLIST_SUB=	OPENSSLFLAG=
+.else
+PLIST_SUB=	OPENSSLFLAG="@comment "
+.endif
 
 .if !exists(/usr/include/openssl/idea.h)
 CFLAGS+=	-DNO_IDEA
