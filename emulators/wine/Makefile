@@ -3,11 +3,11 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.107 2001/05/04 11:25:26 demon Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.108 2001/05/14 00:27:51 jeh Exp $
 #
 
 PORTNAME=	wine
-PORTVERSION=	2001.05.10
+PORTVERSION=	2001.06.29
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/wine/development
@@ -69,8 +69,8 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/documentation/samples/config ${PREFIX}/etc/wine.conf.sample
 	[ -f ${PREFIX}/etc/wine.conf ] \
 		|| ${INSTALL_DATA} ${PREFIX}/etc/wine.conf.sample ${PREFIX}/etc/wine.conf
-	${INSTALL_DATA} ${WRKSRC}/documentation/wine.man ${PREFIX}/man/man1/wine.1
-	${INSTALL_DATA} ${WRKSRC}/documentation/wine.conf.man ${PREFIX}/man/man5/wine.conf.5
+	${INSTALL_MAN} ${WRKSRC}/documentation/wine.man ${PREFIX}/man/man1/wine.1
+	${INSTALL_MAN} ${WRKSRC}/documentation/wine.conf.man ${PREFIX}/man/man5/wine.conf.5
 .if !defined(NOPORTDOCS)
 	-@${MKDIR} ${PREFIX}/lib/wine/documentation
 .for i in README ANNOUNCE AUTHORS LICENSE WARRANTY documentation/psdrv.reg
