@@ -3,7 +3,7 @@
 # Date created:		5 Jan 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.1 2000/01/06 06:57:48 asami Exp $
+# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.2 2000/01/07 15:58:56 asami Exp $
 #
 
 DISTNAME=	34upgrade-2000.01.05
@@ -16,7 +16,8 @@ MAINTAINER=	asami@FreeBSD.org
 
 .if !defined(PACKAGE_BUILDING)
 BROKEN=		this \"port\" is for building packages for distribution only, please get the package from http://www.freebsd.org/ports/ if you need an upgrade
-.elif ${OSVERSION} < 340000 || ${OSVERSION} >= 400000
+.elif ${OSVERSION} >= 400000
+# test for ${OSVERSION} >= 340000 removed -- it triggers a bug in old make
 FORBIDDEN=	this needs to be built on a recent 3-stable system
 .endif
 NO_MTREE=	yes
