@@ -2,11 +2,11 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sip/Makefile,v 1.11 2001/04/03 08:14:06 will Exp $
 #
 
 PORTNAME=	sip
-PORTVERSION=	2.2
+PORTVERSION=	2.4
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 
