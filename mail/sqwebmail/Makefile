@@ -2,11 +2,11 @@
 # Date created:		23 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/sqwebmail/Makefile,v 1.4 2000/11/10 19:49:53 nbm Exp $
+# $FreeBSD: ports/mail/sqwebmail/Makefile,v 1.5 2001/01/03 15:39:31 nbm Exp $
 #
 
 PORTNAME=	sqwebmail
-PORTVERSION=	1.1.2
+PORTVERSION=	1.2.3
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= courier
@@ -116,7 +116,7 @@ SBINS=		makeuserdb pw2userdb userdb userdbpw vchkpw2userdb
 
 post-install:
 .for a in ${SBINS}
-	@${LN} -s ${PREFIX}/share/sqwebmail/sbin/$a ${PREFIX}/sbin/sqwebmail.$a
+	@${LN} -sf ${PREFIX}/share/sqwebmail/sbin/$a ${PREFIX}/sbin/sqwebmail.$a
 .endfor
 
 .include <bsd.port.mk>
