@@ -3,12 +3,12 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.25 2000/04/22 09:57:37 mharo Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.26 2000/06/24 15:33:01 vanilla Exp $
 #
 
 PORTNAME=	wget
 PORTVERSION=	1.5.3
-CATEGORIES=	ftp www
+CATEGORIES=	ftp www ipv6
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/wget/pub/unix/util/wget/ \
 		ftp://ftp.informatik.hu-berlin.de/gnu/wget/ \
@@ -21,7 +21,7 @@ MAINTAINER=	obrien@FreeBSD.org
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS=-I${PREFIX}/include \
+CONFIGURE_ENV+=	CPPFLAGS=-I${PREFIX}/include \
 		LDFLAGS=-L${PREFIX}/lib
 
 pre-build:
