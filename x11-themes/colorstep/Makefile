@@ -2,7 +2,7 @@
 # Date Created:				21 August 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/colorstep/Makefile,v 1.1 2000/08/21 11:56:52 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/colorstep/Makefile,v 1.2 2000/09/20 18:18:22 sobomax Exp $
 #
 
 PORTNAME=	colorstep
@@ -14,15 +14,10 @@ DISTNAME=	ColorStep-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.5
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			31 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gyroscope/Makefile,v 1.5 2000/07/07 19:59:08 steve Exp $
+# $FreeBSD: ports/x11/gyroscope/Makefile,v 1.6 2000/08/09 23:06:41 jim Exp $
 #
 
 PORTNAME=	gyroscope
@@ -12,14 +12,11 @@ MASTER_SITES=	http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
+
 ALL_TARGET=	# empty
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/x11-toolkits/thinice/Makefile,v 1.1.1.1 2000/06/13 08:51:08 sobomax Exp $
 #
 
 PORTNAME=	thinice
@@ -13,13 +13,8 @@ DISTNAME=	gtk-${PORTNAME}-theme-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

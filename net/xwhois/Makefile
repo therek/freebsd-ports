@@ -2,7 +2,7 @@
 # Date created:        31 December 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/net/xwhois/Makefile,v 1.12 2000/01/07 21:11:07 billf Exp $
+# $FreeBSD: ports/net/xwhois/Makefile,v 1.13 2000/04/09 18:14:04 cpiazza Exp $
 #
 
 PORTNAME=	xwhois
@@ -14,13 +14,9 @@ MASTER_SITES=	http://c64.org/~nr/ \
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/xwhois ${PREFIX}/bin

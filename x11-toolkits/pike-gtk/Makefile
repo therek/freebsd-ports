@@ -2,7 +2,7 @@
 # Date created:		June 29, 1999
 # Whom:	      		Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11-toolkits/pike-gtk/Makefile,v 1.2 2000/04/10 01:10:43 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/pike-gtk/Makefile,v 1.3 2000/04/21 07:01:54 mharo Exp $
 #
 
 PORTNAME=	pike-gtk
@@ -14,15 +14,9 @@ DISTNAME=	pigtk_${PORTVERSION}
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
 BUILD_DEPENDS=	pike:${PORTSDIR}/lang/pike
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_XLIB=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
-
-# To delete "-Wl,-E" from options for ld.
-# (The options are created by gtk12-config.)
-post-configure:
-	cd ${WRKSRC} ; ${PATCH} < ${FILESDIR}/patch-Makefile
 
 .include <bsd.port.mk>

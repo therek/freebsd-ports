@@ -2,7 +2,7 @@
 # Date created:				14 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/ggsd/Makefile,v 1.9 2000/06/29 07:02:40 obrien Exp $
+# $FreeBSD: ports/net/ggsd/Makefile,v 1.10 2000/07/07 19:58:55 steve Exp $
 #
 
 PORTNAME=	ggsd
@@ -16,20 +16,15 @@ EXTRACT_SUFX=	.tar
 
 MAINTAINER=	dima@chg.ru
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 EXTRACT_CMD=	${TAR}
 EXTRACT_BEFORE_ARGS=	-xf
 EXTRACT_AFTER_ARGS=	# empty
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 WRKSRC=		${WRKDIR}/GGSD
 
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+USE_GTK=	yes
 
 do-install:
-
 	${INSTALL_PROGRAM} ${WRKSRC}/ggsd ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ggsd

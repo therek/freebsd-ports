@@ -2,7 +2,7 @@
 # Date created:        			9th June 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.6 2000/08/16 20:40:53 ade Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.7 2000/08/21 10:07:25 sobomax Exp $
 #
 
 PORTNAME=	guile-gnome
@@ -14,20 +14,15 @@ DISTNAME=	gnome-guile-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		guile.9:${PORTSDIR}/lang/guile \
+LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
 		guilegtk-1.2.0:${PORTSDIR}/x11-toolkits/guile-gtk \
 		glade.4:${PORTSDIR}/devel/libglade
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-
 USE_LIBTOOL=	yes
+USE_GTK=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--without-bonobo --without-gtkhtml --with-libglade
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				15 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/amcl/Makefile,v 1.2 2000/06/14 13:21:27 sobomax Exp $
+# $FreeBSD: ports/net/amcl/Makefile,v 1.3 2000/10/03 09:25:21 reg Exp $
 #
 
 PORTNAME=	amcl
@@ -16,12 +16,10 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}pl1
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

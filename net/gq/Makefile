@@ -2,7 +2,7 @@
 # Date Created:				8 Jun 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/gq/Makefile,v 1.1 2000/07/10 03:46:32 steve Exp $
+# $FreeBSD: ports/net/gq/Makefile,v 1.2 2000/10/01 14:49:34 kevlo Exp $
 #
 
 PORTNAME=	gq
@@ -12,14 +12,11 @@ MASTER_SITES=	http://biot.com/gq/download/
 
 MAINTAINER=	roman@xpert.com
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		ldap.1:${PORTSDIR}/net/openldap
+LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap
 
 USE_X_PREFIX=	yes
-
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 CONFIGURE_ARGS=	--with-ldap=${LOCALBASE}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date Created:				6 July 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkbe/Makefile,v 1.3 2000/07/21 17:46:54 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtkbe/Makefile,v 1.4 2000/09/20 18:18:22 sobomax Exp $
 #
 
 PORTNAME=	gtkbe
@@ -14,16 +14,11 @@ DISTNAME=	GTK-Be-1.2.x-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 WRKSRC=		${WRKDIR}/GTKBeEngine
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

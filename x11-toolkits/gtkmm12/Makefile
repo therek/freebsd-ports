@@ -2,7 +2,7 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.25 2000/08/28 10:58:44 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.26 2000/09/11 11:24:11 nakai Exp $
 #
 
 PORTNAME=	gtkmm
@@ -13,20 +13,18 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		sigc.1:${PORTSDIR}/devel/libsigc++
+LIB_DEPENDS=	sigc.1:${PORTSDIR}/devel/libsigc++
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
+LIBTOOLFLAGS=	--disable-ltlibs --release-ignore
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-static=yes \
 		--without-gnome
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 post-install:
 	@${CAT} ${PKGDIR}/MESSAGE

@@ -2,7 +2,7 @@
 # Date created:				19 May, 2000
 # Whom:					rbt@zort.on.ca
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gtk-gnutella/Makefile,v 1.1 2000/06/02 15:54:04 will Exp $
 #
 
 PORTNAME=	gtk-gnutella
@@ -13,12 +13,9 @@ MASTER_SITES=	http://gtk-gnutella.sourceforge.net/download/ \
 
 MAINTAINER=	rbt@zort.on.ca
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

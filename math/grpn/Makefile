@@ -2,7 +2,7 @@
 # Date created:				25 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/math/grpn/Makefile,v 1.3 2000/05/09 23:14:33 jedgar Exp $
+# $FreeBSD: ports/math/grpn/Makefile,v 1.4 2000/06/01 16:25:40 ade Exp $
 #
 
 PORTNAME=	grpn
@@ -12,15 +12,12 @@ MASTER_SITES=	http://wilkins.ne.mediaone.net/grpn/
 
 MAINTAINER=	jedgar@fxp.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+USE_X_PREFIX=	yes
+USE_GTK=	yes
 
 ALL_TARGET=
-USE_X_PREFIX=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-MAKE_ENV+=	GTK_CONFIG=${GTK_CONFIG} \
-		X11BASE=${X11BASE}
 
 do-install:
-		${INSTALL_PROGRAM} ${WRKSRC}/grpn ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/grpn ${PREFIX}/bin
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				12 Jan 2000
 # Whom:					Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/x11-fm/mfm/Makefile,v 1.3 2000/04/10 00:39:25 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/mfm/Makefile,v 1.4 2000/05/19 17:35:12 sobomax Exp $
 #
 
 PORTNAME=	mfm
@@ -12,14 +12,11 @@ MASTER_SITES=	http://www.core-coutainville.org/mfm/archive/SOURCES/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	mtools:${PORTSDIR}/emulators/mtools
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 CONFIGURE_ARGS=	--with-conffile="${PREFIX}/etc/mfm.conf" \
 		--with-mtoolsdir="${LOCALBASE}/bin" \
 		--disable-gtktest

@@ -2,7 +2,7 @@
 # Date created:				28 Sept 1998
 # Whom:					Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/misc/gtkfind/Makefile,v 1.11 2000/09/15 22:24:25 billf Exp $
+# $FreeBSD: ports/misc/gtkfind/Makefile,v 1.12 2000/09/15 22:29:01 billf Exp $
 #
 
 PORTNAME=	gtkfind
@@ -15,13 +15,11 @@ MASTER_SITES=	http://www.oz.net/~mattg/
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+USE_X_PREFIX=	yes
+USE_GMAKE=	yes
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=		gtkfind.1 mktmp.1
-GNU_CONFIGURE=	yes
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-CONFIGURE_ENV=  GTK_CONFIG="${GTK_CONFIG}"
-USE_GMAKE=	yes
-USE_X_PREFIX=	yes
 
 .include <bsd.port.mk>

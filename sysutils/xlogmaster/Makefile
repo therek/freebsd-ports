@@ -2,7 +2,7 @@
 # Date created:		1 August 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/sysutils/xlogmaster/Makefile,v 1.13 2000/04/09 19:09:04 cpiazza Exp $
+# $FreeBSD: ports/sysutils/xlogmaster/Makefile,v 1.14 2000/04/22 10:14:00 mharo Exp $
 #
 
 PORTNAME=	xlogmaster
@@ -16,15 +16,10 @@ MASTER_SITE_SUBDIR=	xlogmaster
 
 MAINTAINER=	aw1@stade.co.uk
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-NO_PACKAGE=	ignores CFLAGS
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 USE_XLIB=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=		xlogmaster.1
 

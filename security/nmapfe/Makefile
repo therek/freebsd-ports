@@ -3,7 +3,7 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmapfe/Makefile,v 1.27 2000/04/09 18:30:05 cpiazza Exp $
+# $FreeBSD: ports/security/nmapfe/Makefile,v 1.28 2000/06/02 03:18:41 will Exp $
 #
 
 PORTNAME=	nmapfe
@@ -15,14 +15,13 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 .include <bsd.port.pre.mk>
 
 USE_XLIB=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 WRKSRC:=	${WRKDIR}/nmapfe
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/nscache/Makefile,v 1.2 2000/04/10 00:06:13 cpiazza Exp $
+# $FreeBSD: ports/www/nscache/Makefile,v 1.3 2000/07/07 19:59:14 steve Exp $
 #
 
 PORTNAME=	nscache
@@ -14,14 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
+USE_GTK=	yes
 USE_AUTOMAKE=	yes
 AUTOMAKE=	automake -a -i
 CONFIGURE_ENV=	CPPFALGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-configure:

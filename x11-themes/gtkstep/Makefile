@@ -2,7 +2,7 @@
 # Date Created:				7 nov 98
 # Whom:				 	Gilad Rom
 #
-# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.14 2000/03/23 23:54:21 jedgar Exp $
+# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.15 2000/04/10 01:10:28 cpiazza Exp $
 #
 
 PORTNAME=	gtkstep
@@ -12,13 +12,9 @@ MASTER_SITES=	http://ulli.linuxave.net/gtkstep/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

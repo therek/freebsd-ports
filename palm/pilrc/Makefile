@@ -2,7 +2,7 @@
 # Date created:		29 Mar 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/pilrc/Makefile,v 1.4 2000/04/21 07:52:05 mharo Exp $
+# $FreeBSD: ports/palm/pilrc/Makefile,v 1.5 2000/07/04 03:10:02 kuriyama Exp $
 #
 
 PORTNAME=	pilrc
@@ -14,12 +14,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		glib12.3:${PORTSDIR}/devel/glib12
-
 WRKSRC=		${WRKDIR}/pilrc-${PORTVERSION}
-GNU_CONFIGURE=	YES
-CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
+
+USE_GTK=	yes
+GNU_CONFIGURE=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pilrc ${WRKSRC}/pilrcui ${PREFIX}/bin

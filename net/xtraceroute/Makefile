@@ -2,7 +2,7 @@
 # Date created:        17 February 2000
 # Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.6 2000/06/05 11:39:16 sobomax Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.7 2000/08/03 09:25:57 asami Exp $
 #
 
 PORTNAME=	xtraceroute
@@ -13,19 +13,16 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea \
+LIB_DEPENDS=	gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea \
 		tiff.4:${PORTSDIR}/graphics/tiff
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-GL-prefix=${X11BASE}/lib \
 		--with-lib-GL
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 DATAFILES=	ndg_files.tar.gz
@@ -33,7 +30,7 @@ DATAFILES=	ndg_files.tar.gz
 MAN1=		xtraceroute.1
 
 post-install:
-		${INSTALL_DATA} ${WRKDIR}/hosts.cache ${PREFIX}/share/xtraceroute
-		${INSTALL_DATA} ${WRKDIR}/networks.cache ${PREFIX}/share/xtraceroute
+	${INSTALL_DATA} ${WRKDIR}/hosts.cache ${PREFIX}/share/xtraceroute
+	${INSTALL_DATA} ${WRKDIR}/networks.cache ${PREFIX}/share/xtraceroute
 
 .include <bsd.port.mk>

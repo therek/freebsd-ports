@@ -2,7 +2,7 @@
 # Date created:		09 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.3 2000/04/10 19:50:41 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.4 2000/06/22 05:38:46 will Exp $
 #
 
 PORTNAME=	wmthemeinstall
@@ -14,24 +14,23 @@ MASTER_SITE_SUBDIR=	will
 MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 DOCS_DIR=	${PREFIX}/share/wmthemeinstall
 
 pre-build:
 	@${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/wmOptions.c
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/wmthemeinstall ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/wmthemeinstall ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCS_DIR}
-	@${INSTALL_DATA} ${WRKSRC}/ChangeLog ${DOCS_DIR}
-	@${INSTALL_DATA} ${WRKSRC}/README ${DOCS_DIR}
-	@${INSTALL_DATA} ${WRKSRC}/AUTHORS ${DOCS_DIR}
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${DOCS_DIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCS_DIR}
+	${INSTALL_DATA} ${WRKSRC}/AUTHORS ${DOCS_DIR}
 	@${ECHO}
 	@${ECHO} "Documentation was installed in ${DOCS_DIR}."
 	@${ECHO}

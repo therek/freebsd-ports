@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.13 2000/04/21 08:18:35 mharo Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.14 2000/09/09 12:51:17 kevlo Exp $
 #
 
 PORTNAME=	nessus
@@ -21,24 +21,24 @@ DISTNAME=	nessus-core-1.0.4
 
 MAINTAINER=	anders@fix.no
 
-LIB_DEPENDS=	nasl.1:${PORTSDIR}/security/nessus-libnasl \
-		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	nasl.1:${PORTSDIR}/security/nessus-libnasl
 
 NESSUS_REV=	${DISTNAME:S/nessus-core-//g}
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-core
 
-GNU_CONFIGURE=	yes
+USE_GTK=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ENV=	GTKCONFIG="${GTK_CONFIG}"
+
 MAN1=		nessus.1
 MAN8=		nessusd.8 nessus-adduser.8
 
 post-install:
-		@${ECHO} "=========================================================="
-		@${ECHO} "Be sure to erase your old ${PREFIX}/etc/nessus!"
-		@${ECHO} "The syntax of nessusd.users and nessusd.rules has changed!"
-		@${ECHO} "=========================================================="
+	@${ECHO} "=========================================================="
+	@${ECHO} "Be sure to erase your old ${PREFIX}/etc/nessus!"
+	@${ECHO} "The syntax of nessusd.users and nessusd.rules has changed!"
+	@${ECHO} "=========================================================="
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-gtk/Makefile,v 1.6 2000/04/21 06:53:31 mharo Exp $
+# $FreeBSD: ports/x11-clocks/asclock-gtk/Makefile,v 1.7 2000/07/07 19:58:51 steve Exp $
 #
 
 PORTNAME=	asclock-gtk
@@ -13,16 +13,12 @@ DISTNAME=	${PKGNAME}beta
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 WRKSRC=		${WRKDIR}/${PORTNAME}
-
-HAS_CONFIGURE=	YES
-USE_X_PREFIX=	YES
-MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 ALL_TARGET=	asclock
+
+USE_X_PREFIX=	yes
+USE_GTK=	yes
+HAS_CONFIGURE=	yes
 
 .if defined(BATCH)
 do-configure:

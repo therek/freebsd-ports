@@ -2,7 +2,7 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/misc/grun/Makefile,v 1.2 1999/10/10 23:17:18 steve Exp $
+# $FreeBSD: ports/misc/grun/Makefile,v 1.3 2000/04/14 08:45:53 asami Exp $
 #
 
 PORTNAME=	grun
@@ -12,15 +12,10 @@ MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
 
 MAINTAINER=	domi@saargate.de
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=     ${X11BASE}/bin/gtk12-config
-
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		grun.1x
-
-CONFIGURE_ENV=  GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>
