@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.93 2001/04/12 14:25:59 sf Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.94 2001/06/12 15:01:06 sf Exp $
 #
 
 PORTNAME=	Server
@@ -168,11 +168,15 @@ pre-install:
 	${MKDIR} ${PREFIX}/lib/X11/kernel
 .endif
 
-post-install:
-	strip ${PREFIX}/bin/XFree86
+post-build:
+	@${RM} ${PKGMESSAGE}
 .if ${BuildXF86DRM} == "YES"
-	@(cd ${.CURDIR}; ${CAT} pkg-message pkg-message-drm > ${PKGMESSAGE})
-	@${SED} -e s,/usr/X11R6,${PREFIX}, ${PKGMESSAGE}
+	@${CAT} ${.CURDIR}/pkg-message-drm > ${PKGMESSAGE}
 .endif
+	@${CAT} ${.CURDIR}/pkg-message >> ${PKGMESSAGE}
+
+post-install:
+	@${SED} -e s,/usr/X11R6,${PREFIX}, ${PKGMESSAGE}
+	strip ${PREFIX}/bin/XFree86
 
 .include <bsd.port.post.mk>
