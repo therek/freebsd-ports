@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.56 2000/11/04 23:04:20 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.57 2001/02/09 04:58:24 kris Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -19,8 +19,6 @@ MAINTAINER=	green@FreeBSD.org
 USE_OPENSSL=	YES
 
 .include <bsd.port.pre.mk>
-
-FORBIDDEN=	"Remote vulnerabilities"
 
 CRYPTOLIBS=	-L${OPENSSLLIB} -lcrypto
 # Here, MANDIR is concetenated to DESTDIR which all forms the man install dir...

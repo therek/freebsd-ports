@@ -32,7 +32,7 @@
  *
  * ported from:
  * FreeBSD: src/lib/libc/net/rcmd.c,v 1.22 2000/02/01 15:55:54 shin Exp
- * $FreeBSD: ports/security/openssh/files/rcmd.c,v 1.1 2000/01/13 23:22:15 green Exp $
+ * $FreeBSD: ports/security/openssh/files/rcmd.c,v 1.2 2000/04/17 22:20:24 sumikawa Exp $
  */
 
 #if defined(LIBC_SCCS) && !defined(lint)
@@ -172,11 +172,7 @@ rcmd_af(ahost, rport, locuser, remuser, cmd, fd2p, af)
 			continue;
 		}
 		if (refused && timo <= 16) {
-			struct timespec time_to_sleep, time_remaining;
-
-			time_to_sleep.tv_sec = timo;
-			time_to_sleep.tv_nsec = 0;
-			(void)_nanosleep(&time_to_sleep, &time_remaining);
+			sleep(timo);
 			
 			timo *= 2;
 			ai = res;
