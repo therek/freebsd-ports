@@ -2,11 +2,11 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xblast-beta/Makefile,v 1.1 2001/02/11 13:01:31 se Exp $
 #
 
 PORTNAME=	xblast-beta
-PORTVERSION=	2.7.27
+PORTVERSION=	2.7.28
 CATEGORIES=	games
 MASTER_SITES=	http://www.ndh.net/home/m.vogel/tnt/ \
 		${MASTER_SITE_SUNSITE}
