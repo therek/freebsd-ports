@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.242 2001/07/28 17:46:33 dd Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.243 2001/08/05 03:39:50 lioux Exp $
 #
 
     SUBDIR += abook
@@ -57,6 +57,7 @@
     SUBDIR += icqmail
     SUBDIR += im
     SUBDIR += imap-uw
+    SUBDIR += imp
     SUBDIR += isync
     SUBDIR += junkfilter
     SUBDIR += kbiff
