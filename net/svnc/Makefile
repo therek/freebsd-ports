@@ -2,7 +2,7 @@
 # Date created:				2000-10-22
 # Whom:					trevor
 #
-# $FreeBSD: ports/net/svnc/Makefile,v 1.1 2000/10/22 16:43:20 trevor Exp $
+# $FreeBSD: ports/net/svnc/Makefile,v 1.2 2000/10/28 20:31:48 trevor Exp $
 #
 
 PORTNAME=	svnc
@@ -15,13 +15,13 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}.tgz \
 
 MAINTAINER=	trevor@FreeBSD.org
 
+BUILD_DEPENDS=	${X11BASE}/include/X11/keysym.h:${PORTSDIR}/x11/XFree86
 LIB_DEPENDS=	vga.1:${PORTSDIR}/graphics/svgalib
 
 DOCFILES=	README
 DOCDIR=		share/doc/${PORTNAME}/
 
 PLIST=		${WRKDIR}/pkg-plist
-USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/svncviewer
 
 do-patch:
