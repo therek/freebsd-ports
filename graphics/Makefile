@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.247 2000/12/03 20:21:20 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.248 2000/12/03 20:26:17 will Exp $
 #
 
     SUBDIR += 4va
@@ -196,6 +196,7 @@
     SUBDIR += utah-glx
     SUBDIR += vcdgear
     SUBDIR += vcg
+    SUBDIR += vid
     SUBDIR += whirlgif
     SUBDIR += wmgrabimage
     SUBDIR += wmicons
