@@ -2,26 +2,29 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.10 2000/08/03 09:28:46 asami Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.11 2000/08/07 17:27:54 cpiazza Exp $
 #
 
 PORTNAME=	wterm
-PORTVERSION= 	6.2.6
+PORTVERSION=	6.2.7a1
 CATEGORIES=	x11
 MASTER_SITES= 	http://wm.current.nu/files/ \
-		ftp://ftp.kddlabs.co.jp/pub/X11/acontrib/wterm/ \
-		ftp://ftp.riken.go.jp/pub/X11/acontrib/wterm/
+		ftp://ftp.sunsite.auc.dk/disk1/linuxberg.com/files/x11/system/ \
+		ftp://ftp.vision.net.au/ftp7/linuxberg/files/x11/system/ \
+		ftp://ftp.cadvision.com/pub/linuxberg/files/x11/system/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/libWINGs.a:${PORTSDIR}/x11-wm/windowmaker
 
+WRKSRC=		${WRKDIR}/wterm-6.2.7
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-transparency --enable-xpm-background \
+CONFIGURE_ARGS= --enable-transparency --enable-xpm-background \
 		--disable-delete-key --disable-backspace-key \
-		--enable-next-scrollbar --enable-utmp --enable-wtmp
+		--enable-next-scrollbar --enable-utmp --enable-wtmp \
+#		--enable-menubar --enable-graphics
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
 
 MAN1=		wterm.1
