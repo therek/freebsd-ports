@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.377 2001/07/06 18:02:25 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.378 2001/07/07 02:53:42 will Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -144,6 +144,7 @@
     SUBDIR += mod_php3
     SUBDIR += mod_php4
     SUBDIR += mod_proxy_add_forward
+    SUBDIR += mod_put
     SUBDIR += mod_python
     SUBDIR += mod_roaming
     SUBDIR += mod_ruby
