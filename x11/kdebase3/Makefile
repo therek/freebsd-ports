@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.55 2000/09/15 21:40:35 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.56 2000/10/25 03:33:41 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -32,8 +32,8 @@ CONFIGURE_ARGS+=--with-xdmdir=${X11BASE}/lib/X11/xdm \
 		--with-extra-libs=${LOCALBASE}/lib \
 		--disable-closure
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
-		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -lqt2 -ljpeg -lstdc++ -lgcc"
+		CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -lqt2 -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes
 
 pre-configure:

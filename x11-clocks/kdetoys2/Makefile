@@ -2,7 +2,7 @@
 # Date created:				14 May 2000 02:45:53
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.14 2000/09/15 21:40:44 will Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.15 2000/10/25 03:33:46 will Exp $
 #
 
 PORTNAME=	kdetoys
@@ -24,8 +24,8 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-libraries=${X11BASE}/lib \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" DO_NOT_COMPILE=mouse LIBQTFILE="libqt2" \
-		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
-		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
+		CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>

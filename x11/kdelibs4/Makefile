@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.59 2000/10/04 06:40:06 sobomax Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.60 2000/10/25 03:33:38 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} --enable-shared \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 		MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
-		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
+		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
 MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}"
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
