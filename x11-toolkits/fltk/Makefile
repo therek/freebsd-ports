@@ -2,7 +2,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.19 2000/11/13 12:45:36 demon Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.20 2001/02/23 18:49:06 knu Exp $
 #
 
 PORTNAME=	fltk
@@ -19,23 +19,21 @@ DISTNAME=	${PORTNAME}-${VERSION}-source
 MAINTAINER?=	demon@FreeBSD.org
 
 .if defined(WITH_XUNICODE)
-PATCH_VERSION=	20000625
+PATCH_VERSION=	20010114
 _PORTVERSION+=	${VERSION}.${PATCH_VERSION}
 
 PKGNAMESUFFIX=	-xunicode
 
 PATCH_SITES=	http://www.ab.wakwak.com/~tino/jatk/fltk/
-PATCHFILES=	${PORTNAME}-${VERSION}${PKGNAMESUFFIX}-${PATCH_VERSION}.diff.gz
+PATCHFILES=	${PORTNAME}-${VERSION}${PKGNAMESUFFIX}-${PATCH_VERSION}.diff
 PATCH_DIST_STRIP=	-p1
 
-EXTRA_PATCHES=	${PATCHDIR}/xunicode.patch-*
-
-BUILD_DEPENDS=	${X11BASE}/lib/libxunicode.a:${PORTSDIR}/converters/xunicode
+BUILD_DEPENDS=	${X11BASE}/include/xunicode/xunicode.h:${PORTSDIR}/converters/xunicode
 .else
 _PORTVERSION+=	${VERSION}
 .endif
 
-VERSION=	1.0.9
+VERSION=	1.0.10
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
@@ -44,6 +42,11 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${VERSION}
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 MAN1=		fluid.1
+
+.if defined(WITH_XUNICODE)
+post-extract:
+	cd ${WRKSRC} && ${LN} -s ${X11BASE}/include/xunicode
+.endif
 
 post-install:
 	@ ${INSTALL_MAN} ${WRKSRC}/documentation/fluid.1 \
