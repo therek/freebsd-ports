@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.323 2001/05/04 21:51:14 ade Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 9term
@@ -68,6 +68,7 @@
     SUBDIR += rxvt-devel
     SUBDIR += stockticker_applet
     SUBDIR += sxpc
+    SUBDIR += temperature.app
     SUBDIR += tkgoodstuff
     SUBDIR += tycoon
     SUBDIR += wdm
