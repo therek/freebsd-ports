@@ -2,11 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.45 2000/03/10 20:47:42 hosokawa Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.46 2000/04/09 18:13:30 cpiazza Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.0.6
+PORTVERSION=	2.0.7
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/ \
 		ftp://ring.asahi-net.or.jp/pub/net/samba/ \
@@ -32,6 +32,7 @@ SAMPLE_CONFIG=	${SAMBA_CONFDIR}/smb.conf.default
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	 --libdir=${SAMBA_CONFDIR} \
 		--localstatedir=${VARDIR} --with-swatdir=${PREFIX}/share/swat \
+		--with-sambabook=${PREFIX}/share/swat/using_samba \
 		--with-lockdir=${VARDIR}/spool/lock --with-privatedir=${SAMBA_PRIVATE}
 
 .if defined(KRB5_HOME) && exists(${KRB5_HOME})
@@ -95,7 +96,9 @@ post-install:
 	for i in faq htmldocs textdocs yodldocs ; do			\
 		${MKDIR} ${PREFIX}/share/doc/samba/$$i ;		\
 		for j in ${WRKDIR}/${DISTNAME}/docs/$$i/* ; do		\
-			${INSTALL_DATA} $$j ${PREFIX}/share/doc/samba/$$i ;\
+			if [ $$j != ${WRKDIR}/${DISTNAME}/docs/htmldocs/using_samba ] ; then \
+				${INSTALL_DATA} $$j ${PREFIX}/share/doc/samba/$$i ;\
+			fi; \
 		done							\
 	done
 	${MKDIR} ${PREFIX}/share/doc/samba
