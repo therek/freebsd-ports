@@ -3,7 +3,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.6 1999/09/09 16:28:46 taoka Exp $
+# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.7 1999/09/10 15:35:39 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -33,5 +33,9 @@ PKGDIR=		${.CURDIR}/pkg
 MANIFEST=	MANIFEST.apel
 # package documents
 APELDOCDIR=	${EMACS_PACKAGESDIR}/lisp/apel
+
+.if defined(PARALLEL_PACKAGE_BUILD)
+FORBIDDEN=	hang
+.endif
 
 .include <${MASTERDIR}/Makefile>
