@@ -4,12 +4,13 @@
 # Date created:		19 Nov 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.17 1999/08/25 04:25:03 obrien Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.18 1999/08/31 06:40:09 mharo Exp $
 #
 
-DISTNAME=	bzip2-0.9.5c
+DISTNAME=	bzip2-0.9.5d
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.bzip2.org/bzip2/v095/ \
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/bzip2/v095/ \
+		http://www.bzip2.org/bzip2/v095/ \
 		http://www.muraroa.demon.co.uk/ \
 		http://www.digistar.com/bzip2/
 
