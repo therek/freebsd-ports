@@ -3,11 +3,12 @@
 # Date created:		24 April 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/bnetd/Makefile,v 1.15 2001/01/21 04:26:00 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bnetd
 PORTVERSION=	0.4.25p3
+PORTREVISION=	1
 CATEGORIES=	games net
 MASTER_SITES=	ftp://ftp.bnetd.org/pub/source/ \
 		${MASTER_SITE_SOURCEFORGE}
@@ -17,8 +18,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/pre/}
 MAINTAINER=	ijliao@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-bits --sysconfdir=${PREFIX}/etc/bnetd \
-		--localstatedir=${PREFIX}/share/bnetd
+CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/bnetd \
+		--localstatedir=${PREFIX}/share/bnetd # --with-bits
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 MAN1=	bnbot.1 bnchat.1 bnetd.1 bnftp.1 bni2tga.1 bnibuild.1 bniextract.1 \
