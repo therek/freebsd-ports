@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.388 2004/03/27 13:44:27 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.389 2004/03/27 18:07:18 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -996,3 +996,6 @@ www/webcpp|textproc/webcpp|2004-03-25|moved to textproc category
 x11-toolkits/eel||2004-03-25|removed obsolete port
 editors/xemacs21|editors/xemacs|2004-04-27|removed old version of xemacs 21.x
 graphics/gimp-devel|graphics/gimp|2004-02-27|gimp 2.0 is now stable release
+mail/mew-xemacs21|mail/mew|2004-03-28|removed old version of xemacs 21.x
+mail/mew2-xemacs21|mail/mew2|2004-03-28|removed old version of xemacs 21.x
+mail/mew3-xemacs21|mail/mew3|2004-03-28|removed old version of xemacs 21.x
