@@ -2,7 +2,7 @@
 # Date created:        06 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.3 2000/04/10 00:39:22 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.4 2000/05/17 11:07:02 sobomax Exp $
 #
 
 PORTNAME=	fsv
@@ -14,7 +14,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		GL.14:${PORTSDIR}/graphics/Mesa3 \
-		gtkgl.4:${PORTSDIR}/x11-toolkits/gtkglarea
+		gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

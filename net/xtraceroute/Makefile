@@ -2,7 +2,7 @@
 # Date created:        17 February 2000
 # Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.3 2000/04/09 18:14:03 cpiazza Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.4 2000/05/17 11:06:51 sobomax Exp $
 #
 
 PORTNAME=	xtraceroute
@@ -15,7 +15,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		GL.14:${PORTSDIR}/graphics/Mesa3 \
-		gtkgl.4:${PORTSDIR}/x11-toolkits/gtkglarea \
+		gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
