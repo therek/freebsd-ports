@@ -2,11 +2,11 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/editors/mp/Makefile,v 1.2 2001/05/27 09:19:27 ijliao Exp $
+# $FreeBSD: ports/editors/mp/Makefile,v 1.3 2001/06/08 05:36:28 markp Exp $
 #
 
 PORTNAME=	mp
-PORTVERSION=	3.0.98n
+PORTVERSION=	3.1.rc5
 CATEGORIES=	editors
 MASTER_SITES=	http://www.triptico.com/download/
 
