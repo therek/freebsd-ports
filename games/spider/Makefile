@@ -3,14 +3,15 @@
 # Date created:         2 Oct 1995
 # Whom:                 se
 #
-# $FreeBSD: ports/games/spider/Makefile,v 1.7 1999/08/25 06:04:28 obrien Exp $
+# $FreeBSD: ports/games/spider/Makefile,v 1.8 1999/08/31 06:44:26 mharo Exp $
 #
 
 DISTNAME=	spider
 PKGNAME=	spider-1.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.uni-koeln.de/windows/xcontrib/ \
-		http://www.lovett.com/~ade/FreeBSD/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	games/solitaires
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
