@@ -2,7 +2,7 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.33 2000/08/03 09:25:59 asami Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.34 2000/08/11 00:45:18 asami Exp $
 #
 
 PORTNAME=	knews
@@ -10,7 +10,7 @@ PORTVERSION=	1.0b.1
 CATEGORIES=	news
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
