@@ -4,13 +4,13 @@
 # Date created:         15 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/rar/Makefile,v 1.18 1999/08/26 00:01:16 mharo Exp $
+# $FreeBSD: ports/archivers/rar/Makefile,v 1.19 1999/08/31 06:40:17 mharo Exp $
 #
 
 DISTNAME=       rarbsd
 PKGNAME=        rar-2.02
 CATEGORIES=	archivers
-MASTER_SITES=   ftp://ftp.rarsoft.com/pub/rar/ \
+MASTER_SITES=   ftp://rarsoft.ti.sk/pub/rar/ \
 		ftp://ftp.cdrom.com/pub/sac/pack/
 EXTRACT_SUFX=   .sfx
 
