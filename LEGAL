@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.317 2003/12/16 22:55:59 pav Exp $
+# $FreeBSD: ports/LEGAL,v 1.318 2003/12/16 22:57:44 marcus Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -232,6 +232,7 @@ nntpcache-*		ports/news/nntpcache	Commercial or government use
 nte-1.*			ports/mbone/nte		Crypto; export-controlled
 ORBacus			ports/devel/ORBacus	non commercial use only.
 openssl-*		ports/security/openssl	Crypto; export/import-controlled
+orion-*			ports/java/orion	Redistribution of binaries is not permitted
 otojiro*.txt		ports/japanese/otojiro-fpw The original dictionary is not free
 Crypt-*			ports/security/p5-Crypt-*	Crypto; export-controlled
 perforce-*		ports/devel/perforce	Restricted distribution
