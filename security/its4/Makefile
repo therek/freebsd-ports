@@ -3,7 +3,7 @@
 # Date created:				21 February 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/its4/Makefile,v 1.1.1.1 2000/02/22 20:43:47 jedgar Exp $
 #
 
 DISTNAME=	its4-1.0
@@ -17,7 +17,6 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--datadir=${PREFIX}/share/its4
 MAN1=		its4.1
-RESTRICTED=	"For non-commercial use only"
 
 .include <bsd.port.pre.mk>
 
