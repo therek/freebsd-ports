@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/lang/perl5/files/patch-Install.pm,v 1.3 2002/11/01 14:43:46 tobez Exp $
 
 --- lib/ExtUtils/Install.pm.orig	Fri Feb 23 03:57:55 2001
 +++ lib/ExtUtils/Install.pm	Wed Jul 10 17:57:13 2002
@@ -11,12 +11,3 @@ $FreeBSD$
  		if (-f $targetfile){
  		    forceunlink($targetfile) unless $nonono;
  		} else {
-@@ -156,7 +156,7 @@
- 	    } else {
- 		inc_uninstall($_,$File::Find::dir,$verbose,0); # nonono set to 0
- 	    }
--	    $packlist->{$origfile}++;
-+	    $packlist->{$targetfile}++;
- 
- 	}, ".");
- 	chdir($cwd) or Carp::croak("Couldn't chdir to $cwd: $!");
