@@ -3,11 +3,11 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.65 2001/06/09 12:59:33 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dhcp
-PORTVERSION=	3.0.r8.2
+PORTVERSION=	3.0.r10
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/%SUBDIR%/ \
 		${US_MASTER_SITES} ${JAPAN_MASTER_SITES} \
@@ -146,9 +146,8 @@ patch-makefiles-dist:
 .endfor
 
 # temporary hack - no patch file needed for this typo.
-# grrr! don't know how to delete lines in perl :(
 patch-man-pages:
-	@${PERL} -pi.fbsd -e 's/^\.Fd$$//' ${WRKSRC}/dhcpctl/dhcpctl.3
+	@${PERL} -ni.fbsd -e '/^\.Fd$$/ or print;' ${WRKSRC}/dhcpctl/dhcpctl.3
 
 #
 # Post-install
