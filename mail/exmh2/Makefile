@@ -2,14 +2,13 @@
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.43 2000/10/25 16:45:12 bmah Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.44 2001/01/16 20:19:07 bmah Exp $
 #
 
 # "+=" and "?=" lines are for sharing this Makefile with japanese/exmh2.
 PORTNAME=	exmh
-PORTVERSION=	2.2
-PORTREVISION=	1
-CATEGORIES+=	mail tk82
+PORTVERSION=	2.3.1
+CATEGORIES+=	mail tk83
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
@@ -21,10 +20,10 @@ BUILD_DEPENDS=	tclsh8.0jp:${PORTSDIR}/japanese/tcl80
 WISH=		wish8.0jp
 TCLSH=		tclsh8.0jp
 .else
-RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
-BUILD_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
-WISH=		wish8.2
-TCLSH=		tclsh8.2
+RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
+BUILD_DEPENDS=	tclsh8.3:${PORTSDIR}/lang/tcl83
+WISH=		wish8.3
+TCLSH=		tclsh8.3
 .endif
 
 # exmh is pretty useless without this, but it's not needed to build it.

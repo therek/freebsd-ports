@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/mail/exmh2/scripts/build,v 1.9 1999/10/11 14:21:03 markm Exp $
+# $FreeBSD: ports/mail/exmh2/scripts/build,v 1.10 2000/10/11 15:58:08 markm Exp $
 #
 
 VERSION="`sed -ne 's/^set vers \(.*\)/\1/p' ${WRKSRC}/exmh.install`"
@@ -87,7 +87,7 @@ sed <${FILESDIR}/${CONFIGFILE} \
 	-e "s+!!DATE!!+${DATE}+g" \
  | sed -e 's/$/\\/' -e '$ s/.$//' >> ${SEDFILE}
 
-for i in exmh-async exmh-bg exmh ftp.expect
+for i in exmh-async exmh-bg exmh ftp.expect inc.expect
 do
 	echo "sed -f ${SEDFILE} < $i.MASTER > $i"
 	sed -f ${SEDFILE} < $i.MASTER > $i
