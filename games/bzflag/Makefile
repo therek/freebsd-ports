@@ -2,21 +2,20 @@
 # Date created:		2000/08/12
 # Whom:			makeport.pl
 #
-# $FreeBSD: ports/games/bzflag/Makefile,v 1.8 2001/03/28 19:12:56 nsayer Exp $
+# $FreeBSD: ports/games/bzflag/Makefile,v 1.9 2001/04/15 20:23:42 nsayer Exp $
 #
 
 PORTNAME=	bzflag
-PORTVERSION=	1.7e.1
-PORTREVISION=	1
+PORTVERSION=	1.7e.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	bzflag
-DISTNAME=	${PORTNAME}_1.7e1
-EXTRACT_SUFX=	.tar.gz
+DISTNAME=	${PORTNAME}-1.7e2
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nsayer@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/bzflag
+WRKSRC=		${WRKDIR}/${DISTNAME}
 
 USE_XLIB=	yes
 USE_MESA=	yes
