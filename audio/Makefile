@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.252 2001/09/07 14:34:17 lioux Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.253 2001/09/28 05:15:46 alfred Exp $
 #
 
     SUBDIR += Maaate
@@ -144,6 +144,7 @@
     SUBDIR += opmixer
     SUBDIR += p5-Audio-CD
     SUBDIR += p5-CDDB
+    SUBDIR += p5-CDDB_get
     SUBDIR += p5-MP3-ID3v1Tag
     SUBDIR += p5-MP3-Info
     SUBDIR += p5-MPEG-ID3v2Tag
