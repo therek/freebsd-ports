@@ -2,7 +2,7 @@
 # Date created:		18 June 1997
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/devel/asl/Makefile,v 1.8 1999/12/25 01:49:43 steve Exp $
+# $FreeBSD: ports/devel/asl/Makefile,v 1.9 2000/04/11 21:27:02 mharo Exp $
 #
 
 PORTNAME=	asl
@@ -14,12 +14,13 @@ MASTER_SITE_SUBDIR=	devel/lang/assemblers
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	mkdirhier:${PORTSDIR}/x11/XFree86
-
 MAN1=	asl.1 p2bin.1 p2hex.1 pbind.1 plist.1
 
 post-extract:
 	${CP} ${FILESDIR}/Makefile.def ${WRKSRC}
+
+post-patch:
+	${PERL} -pi -e 's/mkdirhier/mkdir \-p/' ${WRKSRC}/install.sh
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/doc/asl
