@@ -2,7 +2,7 @@
 # Date created:         5 May 2001
 # Whom:                 Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/0verkill/Makefile,v 1.1 2001/05/06 04:56:07 kris Exp $
 #
 
 PORTNAME=	0verkill
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://artax.karlin.mff.cuni.cz/~brain/0verkill/release/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	zuntum@netbsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=	YES
 
