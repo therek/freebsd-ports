@@ -2,12 +2,11 @@
 # Date created:		3rd August 2001
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/graphics/vlc/Makefile,v 1.6 2001/08/12 09:44:15 brian Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vlc
-PORTVERSION=	0.2.83
-PORTREVISION=	1
+PORTVERSION=	0.2.90
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.videolan.org/pub/videolan/vlc/${PORTVERSION}/ \
 		ftp://ftp.Awfulhak.org/pub/vlc/ \
@@ -20,6 +19,8 @@ LIB_DEPENDS=	SDL-1.1:${PORTSDIR}/devel/sdl12
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	PATH_GTKCONFIG="${GTK_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}" \
+		INCLUDE="-I${LOCALBASE}/include" \
+		LIB="-L${LOCALBASE}/lib" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 USE_GTK=	yes
 USE_GMAKE=	yes
