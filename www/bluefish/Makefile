@@ -1,12 +1,12 @@
 # New ports collection makefile for:   bluefish
-# Version required:		0.3.2
+# Version required:		0.3.4
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.4 1999/08/31 02:42:43 peter Exp $
 #
 
-DISTNAME=	bluefish-0.3.2
+DISTNAME=	bluefish-0.3.4
 CATEGORIES=	www editors
 MASTER_SITES=	http://bluefish.linuxbox.com/download/ \
 		http://student.wau.nl/~olivier/bluefish/download/ \
