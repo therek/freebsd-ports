@@ -3,17 +3,21 @@
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.14 2000/03/22 00:28:23 obrien Exp $
+# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.15 2000/04/13 08:28:01 asami Exp $
 #
 
 PORTNAME=	cxterm
 PORTVERSION=	5.0.3
 CATEGORIES=	chinese x11
-MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/x-win/cxterm/  \
-		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/x-win/cxterm/ \
+# unresponceive mastersite: ftp://ftp.ifcss.org/pub/software/x-win/cxterm/
+MASTER_SITES=	ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/x-win/cxterm/ \
 		ftp://ftp.edu.tw/Chinese/ifcss/software/x-win/cxterm/  \
 		ftp://ftp.mpi-sb.mpg.de/pub/chinese/mirror/ftp.ifcss.org/software/x-win/cxterm/
 DISTNAME=	cxterm5.0.p3
+
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	cxterm-5.0.p3-color.patch.gz	# cxterm-5.0-hz-patch.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
 
