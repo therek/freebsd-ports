@@ -2,12 +2,12 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.6 2001/01/30 21:40:46 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       mnogosearch
 PORTVERSION=    3.1.9
-PORTREVISION=	1
+PORTREVISION=   2
 CATEGORIES=	www databases
 MASTER_SITES=   http://search.mnogo.ru/Download/
 
@@ -22,6 +22,7 @@ INSTALLS_SHLIB= yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-shared \
+		--enable-freebsd-pthreads \
 		--sysconfdir=${PREFIX}/etc/mnogosearch \
 		--localstatedir=/var/mnogosearch
 
