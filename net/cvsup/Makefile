@@ -2,16 +2,18 @@
 # Date created:		7 August 1996
 # Whom:			asami
 #
-# $FreeBSD: ports/net/cvsup/Makefile,v 1.43 2001/09/09 18:18:39 sobomax Exp $
+# $FreeBSD: ports/net/cvsup/Makefile,v 1.44 2001/09/09 18:57:41 jdp Exp $
 #
 
 PORTNAME=	cvsup
-PORTVERSION?=	16.1
-PORTREVISION?=	3
+PORTVERSION?=	16.1e
+PORTREVISION?=	0
 CATEGORIES=	net devel
-MASTER_SITES?=	ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
-		ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/sources/ \
-		ftp://ftp.cs.tu-berlin.de/pub/FreeBSD/development/CVSup/sources/
+MASTER_SITES=	http://people.freebsd.org/~jdp/s1g/ \
+		ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
+		ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
+		ftp://ftp.cs.tu-berlin.de/pub/FreeBSD/development/CVSup/snapshots/
+DISTNAME=	cvsup-snap-${PORTVERSION}
 
 MAINTAINER=	jdp@FreeBSD.org
 
@@ -81,5 +83,9 @@ pre-fetch:
 	@${ECHO_MSG} " define \"WITHOUT_X11\"."
 .endif
 	@${TRUE}
+
+post-install:
+	@${MKDIR} ${PREFIX}/share/cvsup
+	@${INSTALL_DATA} ${WRKSRC}/License ${PREFIX}/share/cvsup/License
 
 .include <bsd.port.post.mk>

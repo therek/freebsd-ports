@@ -2,7 +2,7 @@
 # Date created:		28 April 2001
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.5 2001/09/09 17:47:10 jdp Exp $
+# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.6 2001/09/18 16:45:19 jdp Exp $
 #
 
 PORTVERSION=	16.1e
@@ -19,9 +19,5 @@ FILESDIR=	${.CURDIR}/files
 MD5_FILE=	${.CURDIR}/distinfo
 PATCHDIR=	${.CURDIR}/files
 PKGDIR=		${.CURDIR}
-
-post-install:
-	@${MKDIR} ${PREFIX}/share/cvsup
-	@${INSTALL_DATA} ${WRKSRC}/License ${PREFIX}/share/cvsup/License
 
 .include "${MASTERDIR}/Makefile"
