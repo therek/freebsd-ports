@@ -3,7 +3,7 @@
 # Date created:		23 November 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mbx2mbox/Makefile,v 1.2 1999/08/25 06:50:18 obrien Exp $
 #
 
 DISTNAME=	mbx2mbox-0.1
@@ -11,8 +11,6 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.cs.virginia.edu/~dwc3q/code/ \
 		ftp://maroon.webmaster.com/pub/mbx2mbox/
 EXTRACT_SUFX=
-
-MAINTAINER=	josh@quick.net
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

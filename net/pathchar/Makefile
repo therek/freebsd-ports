@@ -3,7 +3,7 @@
 # Date created:        7 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.6 1999/08/30 14:23:45 peter Exp $
 #
 
 DISTNAME=	pathchar-a1-freebsd-3.0
@@ -12,8 +12,6 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html
-
-MAINTAINER=	josh@quick.net
 
 ONLY_FOR_ARCHS=	i386
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}

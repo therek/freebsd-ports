@@ -3,7 +3,7 @@
 # Date created:        29 April 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/nawk/Makefile,v 1.5 1999/08/25 06:35:02 obrien Exp $
 #
 
 DISTNAME=	awk
@@ -11,8 +11,6 @@ PKGNAME=	nawk-99.04.16
 CATEGORIES=	lang
 MASTER_SITES=	http://cm.bell-labs.com/who/bwk/
 EXTRACT_SUFX=	tar.gz
-
-MAINTAINER=	josh@quick.net
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile

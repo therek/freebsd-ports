@@ -3,7 +3,7 @@
 # Date created:		21 April 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/urlview/Makefile,v 1.4 1999/08/31 02:09:51 peter Exp $
 #
 
 DISTNAME=	urlview-0.7
@@ -16,8 +16,6 @@ MASTER_SITES=	ftp://ftp.cs.hmc.edu/pub/me/ \
 
 PATCH_SITES=	http://feeding.frenzy.com/~rainking/
 PATCHFILES=	urlview.diff
-
-MAINTAINER=	josh@quick.net
 
 GNU_CONFIGURE=	yes
 MAN1=		urlview.1
