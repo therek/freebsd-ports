@@ -2,7 +2,7 @@
 
 # Please see detailed Copyright (c) below
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/nut/files/nut.sh.sample,v 1.1 2003/01/13 10:37:23 dougb Exp $
 #
 # This is a sample startup file that works for my BackUPS Pro 650.
 # If that's not what you're monitoring, you will probably need to
@@ -30,7 +30,7 @@ start)
 	${MODELS}/${UPSTYPE} ${UPSFLAGS}
 	${SBIN}/upsd
 	${SBIN}/upsmon localhost
-	${BIN}/upslog localhost ${UPSLOG} ${UPSLOGINTERVAL}
+	${BIN}/upslog -s backups@localhost -l ${UPSLOG} -i ${UPSLOGINTERVAL}
 	;;
 stop)
 	/usr/bin/killall upslog upsmon upsd ${UPSTYPE}
