@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.1 2001/08/24 15:57:23 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
@@ -15,6 +15,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	anton@urc.ac.ru
 
 RUN_DEPENDS=	${LOCALBASE}/drweb/drwebd:${PORTSDIR}/security/drweb
+
+IS_INTERACTIVE= yes     # require sendmail rebuilding
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/clients/drwebdc
 MAKEFILE=	Makefile.unix
@@ -47,6 +49,9 @@ post-extract:
 	cd ${WRKDIR}/${DISTNAME} && ${TAR} -xvzf ${WRKDIR}/${DISTNAME}/${DISTNAME}.tar.gz clients/drwebdc clients/sendmail
 
 pre-build:
+	@${CAT} pkg-message
+	@echo
+	@read -p "Press Enter to continue or ^C to abort: " x
 	${MKDIR} ${WRKSRC}/libmilter
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/libmilter
 .if ${SENDMAIL_VERSION} == "8.11.1"
