@@ -2,7 +2,7 @@
 # Date created:				27 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/scintilla/Makefile,v 1.7 2001/04/17 11:26:58 sobomax Exp $
 #
 
 PORTNAME=	scintilla
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	scite${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/gtk
 

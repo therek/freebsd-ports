@@ -2,11 +2,12 @@
 # Date created:				18th April 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnome-fifth-toe/Makefile,v 1.1 2001/05/04 21:51:14 ade Exp $
+# $FreeBSD: ports/x11/gnome-fifth-toe/Makefile,v 1.2 2001/05/11 16:36:39 ade Exp $
 #
 
 PORTNAME=	gnome-fifth-toe
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -32,12 +33,13 @@ RUN_DEPENDS=	mozilla:${PORTSDIR}/www/mozilla \
 		gob:${PORTSDIR}/x11-toolkits/gob \
 		gtm:${PORTSDIR}/ftp/gtm \
 		gnucash:${PORTSDIR}/deskutils/gnucash \
-		abiword:${PORTSDIR}/editors/AbiWord
+		abiword:${PORTSDIR}/editors/AbiWord \
+		anjuta:${PORTSDIR}/devel/anjuta
 
 # We're still missing a few things from the "official" distribution
 # All can be found in stable/sources on MASTER_SITE_GNOME
 #
-# anjuta, firestarter, fpm, gfax, gnome-db, gnome-lokkit, gnomoku,
+# firestarter, fpm, gfax, gnome-db, gnome-lokkit, gnomoku,
 # gnorpm, googlizer, guppi, merlin-cpufire, radioactive, toutdoux
 
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:				31 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/anjuta/Makefile,v 1.1 2001/03/31 16:10:33 demon Exp $
 #
 
 PORTNAME=	anjuta
@@ -11,7 +11,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	anjuta
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	scintilla.1:${PORTSDIR}/x11-toolkits/scintilla
 
