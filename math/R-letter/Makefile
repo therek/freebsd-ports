@@ -2,7 +2,7 @@
 # Date created:			Fri Aug 11 16:17:34 EST 2000
 # Whom:				Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/math/R-letter/Makefile,v 1.16 2000/04/14 07:19:42 asami Exp $
+# $FreeBSD: ports/math/R-letter/Makefile,v 1.17 2000/08/12 16:28:10 nbm Exp $
 #
 
 PORTNAME=	R
@@ -26,8 +26,7 @@ MAINTAINER=	maurice@serc.rmit.edu.au
 GNU_CONFIGURE=	yes
 USE_XLIB=	yes
 USE_PERL5=	yes
-
-CONFIGURE_ENV=		R_PAPERSIZE=${PAPERSIZE}
+CONFIGURE_ENV=	R_PAPERSIZE=${PAPERSIZE}
 
 PAPERSIZE?=	letter
 .if ${PAPERSIZE} != letter && ${PAPERSIZE} != a4
@@ -37,7 +36,7 @@ PAPERSIZE?=	letter
 	@${FALSE}
 .endif
 
-ALL_TARGET=all help html
+ALL_TARGET=	all help html
 
 MAN1=	R.1
 

@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-elisp/Makefile,v 1.5 1999/08/25 05:26:56 obrien Exp $
+# $FreeBSD: ports/japanese/skk-elisp/Makefile,v 1.6 2000/04/12 14:37:39 knu Exp $
 #
 
 PORTNAME=	skk-elisp
@@ -37,7 +37,6 @@ PLIST_SUB=	EMACS=${EMACS} ELISPSUBDIR=${ELISPSUBDIR}
 post-install:
 	(cd ${WRKSRC}; make SUBDIRS='doc' install)
 	(cd ${WRKSRC}; make SUBDIRS='etc' install)
-
 	install-info ${PREFIX}/info/skk.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
