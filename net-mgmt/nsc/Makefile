@@ -2,11 +2,11 @@
 # Date created:			Tue Apr  3 14:25:48 CEST 2001
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/net/nsc/Makefile,v 1.1 2001/04/05 16:27:47 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nsc
-PORTVERSION=	0.50c
+PORTVERSION=	0.51
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dirk
