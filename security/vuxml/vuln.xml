@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.471 2005/01/13 20:42:56 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.472 2005/01/13 20:52:52 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -1613,11 +1613,15 @@ http_access deny Gopher</pre>
       </body>
     </description>
     <references>
+      <cvename>CAN-2004-1171</cvename>
+      <certvu>305294</certvu>
+      <url>http://www.kde.org/info/security/advisory-20041209-1.txt</url>
       <mlist msgid="ICEEJPLEDKODPNFKJEGAIEBJGFAA.df@sec-consult.com">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=110178786809694</mlist>
     </references>
     <dates>
       <discovery>2004-10-06</discovery>
       <entry>2004-12-12</entry>
+      <modified>2005-01-13</modified>
     </dates>
   </vuln>
 
