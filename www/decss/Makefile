@@ -3,12 +3,12 @@
 # Date Created:			20 Feb 2000
 # Whom:				Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/decss/Makefile,v 1.1 2000/02/21 08:25:11 kris Exp $
 #
 
 DISTNAME=	decss
 PKGNAME=	decss-1.0
-CATEGORIES=	www
+CATEGORIES=	www perl5
 MASTER_SITES=	http://www.totse.com/DeCSS/
 
 MAINTAINER=	ports@FreeBSD.org
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 WRKSRC=		${WRKDIR}/source
 
 NO_BUILD=	YES
+USE_PERL5=	YES
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/DeCSS ${PREFIX}/bin/decss
