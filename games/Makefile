@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.377 2001/05/27 12:36:09 ijliao Exp $
+# $FreeBSD: ports/games/Makefile,v 1.378 2001/05/27 16:49:48 ijliao Exp $
 #
 
     SUBDIR += 0verkill
@@ -214,6 +214,7 @@
     SUBDIR += tkmoo
     SUBDIR += tksol
     SUBDIR += trojka
+    SUBDIR += tuxkart
     SUBDIR += tuxracer
     SUBDIR += tvp
     SUBDIR += nighthawk
