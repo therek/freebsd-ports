@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.138 2001/10/04 08:51:43 wjv Exp $
+# $FreeBSD$
 #
 
     SUBDIR += adodb
@@ -102,6 +102,7 @@
     SUBDIR += ruby-odbc
     SUBDIR += ruby-postgres
     SUBDIR += ruby-rdbc1
+    SUBDIR += ruby-search-namazu
     SUBDIR += ruby-sqlrelay
     SUBDIR += sixpack
     SUBDIR += sqlite
