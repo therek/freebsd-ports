@@ -2,7 +2,7 @@
 # Date created:				Tue Nov 30 15:43:27 EST 1999
 # Whom:					Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/comms/plp/Makefile,v 1.4 2000/04/08 23:22:37 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	plp
@@ -16,6 +16,11 @@ DISTNAME=	${PORTNAME}_1_8
 MAINTAINER=	maurice@serc.rmit.edu.au
 
 USE_GMAKE=	yes
+
+pre-patch:
+.for files in packet.cc socketchan.cc
+	@${PERL} -pi -e 's|malloc.h|stdlib.h|' ${WRKSRC}/ncp/${files}
+.endfor
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/ncp ${PREFIX}/bin
