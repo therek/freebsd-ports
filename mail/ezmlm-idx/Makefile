@@ -2,7 +2,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.9 2000/04/13 19:59:38 cpiazza Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.10 2000/04/17 00:18:11 reg Exp $
 #
 
 PORTNAME=	ezmlm-idx
@@ -67,7 +67,7 @@ MY_CONFIG=	ezmlmglrc ezmlmrc ezmlmsubrc
 
 EZMLM_VERSION=	0.53
 
-PLIST=		${WRKDIR}/PLIST
+PLIST=		${WRKDIR}/pkg-plist
 
 pre-patch:
 	@${MV} -f ${WRKDIR}/ezmlm-idx-${PORTVERSION}/* ${WRKSRC}
@@ -85,9 +85,9 @@ post-patch:
 	@${MV} ${WRKSRC}/idx.h ${WRKSRC}/idx.h.orig
 	@${SED} -e 's#/etc/ezmlm/#'${PREFIX}'/etc/ezmlm/#' \
 		< ${WRKSRC}/idx.h.orig > ${WRKSRC}/idx.h
-	@${CP} ${PKGDIR}/PLIST ${WRKDIR}
+	@${CP} ${PKGDIR}/pkg-plist ${WRKDIR}
 .if !defined(NOPORTDOCS)
-	@${CAT} ${PKGDIR}/PLIST.docs >> ${WRKDIR}/PLIST
+	@${CAT} ${PKGDIR}/pkg-plist.docs >> ${WRKDIR}/pkg-plist
 .endif
 
 pre-install:
