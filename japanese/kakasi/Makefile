@@ -3,19 +3,13 @@
 # Date created:			26 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.15 1999/08/25 05:24:48 obrien Exp $
+# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.16 1999/08/31 06:45:38 mharo Exp $
 #
 
 DISTNAME=	kakasi-2.2.5
 PKGNAME=	ja-kakasi-2.2.5
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://sunsite.sut.ac.jp/pub/asia-info/japanese-src/packages/ \
-	ftp://ftp.kusastro.kyoto-u.ac.jp/pub/baba/wais/ \
-		ftp://etlport.etl.go.jp/pub/mule/contrib/ \
-		ftp://ftp.cs.buffalo.edu/pub/mule/contrib/ \
-		ftp://sh.wide.ad.jp/JAPAN/mule/contrib/ \
-		ftp://ftp.funet.fi/pub/gnu/funet/emacs/mule/contrib/ \
-		ftp://ftp.iij.ad.jp/pub/misc/mule/contrib/
+MASTER_SITES=  ${MASTER_SITE_PORTS_JP}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} kakasidict.940620.gz \
 		kakasi-ext.tar.gz
 
