@@ -3,13 +3,13 @@
 # Date created:			24 Nov 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/geda/Makefile,v 1.12 1999/08/31 06:40:49 mharo Exp $
+# $FreeBSD: ports/cad/geda/Makefile,v 1.13 1999/09/06 05:39:14 cpiazza Exp $
 #
 
-DISTNAME=	gEDA-19990327
-PKGNAME=	geda-19990327
+DISTNAME=	gEDA-19990516
+PKGNAME=	geda-19990516
 CATEGORIES=	cad
-MASTER_SITES=	http://www.geda.seul.org/dist/  \
+MASTER_SITES=	ftp://ftp.cc.gatech.edu/ac121/linux/X11/gtkbuffet/apps/geda/ \
 		ftp://ftp.geda.seul.org/pub/geda/dist/ \
 		ftp://ftp.infodrom.north.de/pub/unix/gtk-etc/apps/geda/
 
