@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1995
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif/Makefile,v 1.18 2000/04/14 18:40:19 knu Exp $
+# $FreeBSD: ports/japanese/tgif/Makefile,v 1.19 2000/07/07 18:54:21 steve Exp $
 #
 
 PORTNAME=	tgif
@@ -20,6 +20,7 @@ NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/Tgif ${PREFIX}/lib/X11/app-defaults/
+	${MKDIR} ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults
+	${INSTALL_DATA} ${WRKSRC}/Tgif ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults/
 
 .include <bsd.port.mk>
