@@ -3,11 +3,11 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.103 2001/02/02 22:52:03 sobomax Exp $
 #
 
 PORTNAME=	wine
-PORTVERSION=	2001.01.12
+PORTVERSION=	2001.02.16
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/wine/development
