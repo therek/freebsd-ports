@@ -2,13 +2,13 @@
 # Date created:		16 August 2000
 # Whom:			Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: ports/security/gpa/Makefile,v 1.3 2001/01/03 18:30:53 clive Exp $
+# $FreeBSD: ports/security/gpa/Makefile,v 1.4 2001/02/28 09:45:18 clive Exp $
 #
 
 PORTNAME=	gpa
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.guug.de/pub/fruis/gpa/
+MASTER_SITES=	ftp://ftp.gnupg.org/gcrypt/alpha/gpa/
 
 MAINTAINER=	clive@FreeBSD.org
 
