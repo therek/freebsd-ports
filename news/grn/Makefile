@@ -2,7 +2,7 @@
 # Date created:				20 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/news/grn/Makefile,v 1.7 2001/02/05 15:47:59 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grn
@@ -23,6 +23,12 @@ CONFIGURE_ENV=	glibpath="${GLIB_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500000
+BROKEN=		"Does not compile"
+.endif
+
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
@@ -32,4 +38,4 @@ pre-patch:
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
 		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
