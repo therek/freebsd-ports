@@ -1,12 +1,12 @@
 # New ports collection makefile for:   sawmill
-# Version required:    ${VERSION} :)
+# Version required:    0.25.2
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.11 2000/03/08 12:14:20 nakai Exp $
+# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.12 2000/03/24 19:11:04 ade Exp $
 #
 
-DISTNAME=	sawmill-${VERSION}
+DISTNAME=	sawmill-0.25.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://sawmill.sourceforge.net/pub/sawmill/
 
