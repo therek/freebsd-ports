@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.2 2003/10/28 10:06:51 sergei Exp $
+# $FreeBSD: ports/audio/daapd/files/daapd.sh,v 1.3 2004/06/29 20:47:31 lth Exp $
 
 # PROVIDE: daapd
 # REQUIRE: DAEMON
@@ -12,7 +12,7 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-daapd_enable="NO"
+daapd_enable=${daapd_enable-"NO"}
 daapd_flags=""
 
 . %%RC_SUBR%%
