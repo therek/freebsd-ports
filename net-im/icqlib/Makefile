@@ -2,11 +2,11 @@
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/icqlib/Makefile,v 1.8 2000/06/16 21:51:45 asami Exp $
+# $FreeBSD: ports/net/icqlib/Makefile,v 1.9 2000/09/18 16:50:29 sobomax Exp $
 #
 
 PORTNAME=	icqlib
-PORTVERSION=	0.1.3
+PORTVERSION=	1.0.0
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	lioux@uol.com.br
 
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
+USE_GMAKE=	yes
 
 .include <bsd.port.mk>
