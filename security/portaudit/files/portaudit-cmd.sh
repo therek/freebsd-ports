@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.7 2004/07/24 13:34:52 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.8 2004/08/13 17:07:05 eik Exp $
 #
 
 portaudit_confs()
@@ -37,7 +37,7 @@ portaudit_confs()
 	portaudit_filename=${portaudit_filename:-"auditfile.tbz"}
 
 	portaudit_fetch_env=${portaudit_fetch_env:-}
-	portaudit_fetch_cmd=${portaudit_fetch_cmd:-"fetch -1amp"}
+	portaudit_fetch_cmd=${portaudit_fetch_cmd:-"fetch -1mp"}
 
 	portaudit_sites=${portaudit_sites:-"http://www.FreeBSD.org/ports/"}
 
