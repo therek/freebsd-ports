@@ -3,14 +3,14 @@
 # Date created:		6 Nov 1997
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/asrpages/Makefile,v 1.8 1999/08/31 01:59:32 peter Exp $
 #
 
-DISTNAME=	asrpages
+DISTNAME=	asr.pages
 PKGNAME=	asrpages-0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.winternet.com/users/eric/
-DISTFILES=	asr.pages.tar
+EXTRACT_SUFX=	.tar
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
