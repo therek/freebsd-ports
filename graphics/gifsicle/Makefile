@@ -2,7 +2,7 @@
 # Date created:                19 December 1998
 # Whom:                        Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.7 2000/02/08 16:15:31 taoka Exp $
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.8 2000/04/14 10:45:55 asami Exp $
 #
 
 PORTNAME=	gifsicle
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
 MAINTAINER=	bradh@uunet.co.za
 
-MAN1=		gifsicle.1
+MAN1=		gifdiff.1 gifsicle.1 gifview.1
 
 GNU_CONFIGURE=	yes
 USE_XLIB=	yes
