@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.94 1999/08/31 02:42:41 peter Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -42,6 +42,8 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
 
 MAINTAINER=	dirk@FreeBSD.org
+
+BROKEN=		"PHP-${VERSION_PHP} is beta. Beware the bugs. Enter at your own risk!"
 
 Y2K=		http://www.php.net/y2k.php3
 
