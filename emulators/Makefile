@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.75 2001/09/21 05:48:17 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += aftp
@@ -36,6 +36,7 @@
     SUBDIR += p-interp
     SUBDIR += pcemu
     SUBDIR += prodosemu
+    SUBDIR += psim-freebsd
     SUBDIR += qcl
     SUBDIR += quasi88
     SUBDIR += rtc
