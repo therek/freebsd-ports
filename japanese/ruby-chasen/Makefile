@@ -2,14 +2,14 @@
 # Date created:		1 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-chasen/Makefile,v 1.2 2001/07/23 11:22:32 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	chasen
 PORTVERSION=	1.6
 PORTREVISION=	1
 CATEGORIES=	japanese ruby
-MASTER_SITES=	http://www.itlb.te.noda.sut.ac.jp/~ikarashi/ruby/
+MASTER_SITES=	http://www.itlb.te.noda.tus.ac.jp/~ikarashi/ruby/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 DIST_SUBDIR=	ruby
 

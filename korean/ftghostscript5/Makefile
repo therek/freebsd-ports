@@ -2,7 +2,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.21 2001/09/13 03:24:42 knu Exp $
+# $FreeBSD$
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.pdb.sni.de/pub/utilities/misc/	\
 		ftp://ftp.cs.wisc.edu/ghost/gnu/gs510/	\
 		$(MASTER_SITE_GNU) \
 		http://www.ldl.jaist.ac.jp/~akr/nonresearch/free-software/ghostscript/ \
-		http://itohws03.ee.noda.sut.ac.jp/~matsuda/VFlib-FT/ \
+		http://itohws03.ee.noda.tus.ac.jp/~matsuda/VFlib-FT/ \
 		ftp://ftp.kr.freebsd.org/pub/users/cjh/gs-ko/ \
 		ftp://ftp.kr.freebsd.org/pub/users/cjh/gs-ko/misc/
 MASTER_SITE_SUBDIR=	ghostscript

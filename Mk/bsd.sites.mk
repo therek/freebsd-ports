@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.82 2002/05/07 00:31:08 dbaker Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.83 2002/05/09 01:03:29 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -262,7 +262,7 @@ MASTER_SITE_SUNSITE+=	\
 	ftp://ftp.cse.cuhk.edu.hk/pub4/Linux/%SUBDIR%/ \
 	ftp://ftp.kobe-u.ac.jp/pub/Linux/metalab.unc.edu/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/Linux/metalab.unc.edu/%SUBDIR%/ \
-	ftp://sunsite.sut.ac.jp/pub/archives/linux/sunsite-unc/%SUBDIR%/ \
+	ftp://sunsite.tus.ac.jp/pub/archives/linux/sunsite-unc/%SUBDIR%/ \
 	ftp://ftp.dacom.co.kr/pub/mirrors/metalab.unc.edu/Linux/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/Linux/mirrors/metalab/%SUBDIR%/ \
 	ftp://sunsite.doc.ic.ac.uk/packages/linux/sunsite.unc-mirror/%SUBDIR%/ \
@@ -322,7 +322,7 @@ MASTER_SITE_XCONTRIB+=	\
 	ftp://ftp.kddlabs.co.jp/X11/contrib/%SUBDIR%/ \
 	ftp://mirror.xmission.com/X/contrib/%SUBDIR%/ \
 	ftp://ftp2.x.org/contrib/%SUBDIR%/ \
-	ftp://sunsite.sut.ac.jp/pub/archives/X11/contrib/%SUBDIR%/ \
+	ftp://sunsite.tus.ac.jp/pub/archives/X11/contrib/%SUBDIR%/ \
 	ftp://ftp.is.co.za/x/contrib/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/X11/contrib/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/opengroup/contrib/&,} \
