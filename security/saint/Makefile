@@ -2,7 +2,7 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.13 2000/10/15 08:18:24 kevlo Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.14 2000/11/03 17:41:58 knu Exp $
 #
 
 PORTNAME=	saint
@@ -25,7 +25,7 @@ INSTALL_TARGET=	all
 
 pre-install:
 		${MKDIR} ${PREFIX}/saint
-		${TAR} --directory ${WRKSRC} -cf - . --exclude src --exclude Makefile --exclude Makefile.in --exclude old --exclude config --exclude config.cache --exclude config.log --exclude config.status --exclude configure --exclude configure.in --exclude install-sh --exclude saint.1 | \
+		${TAR} --directory ${WRKSRC} -cf - . --exclude src --exclude Makefile --exclude Makefile.in --exclude old --exclude config.cache --exclude config.log --exclude config.status --exclude configure --exclude configure.in --exclude install-sh --exclude saint.1 | \
 			${TAR} --directory ${PREFIX}/saint -xf -
 .if !defined(NOPORTDOCS)
 do-install:
