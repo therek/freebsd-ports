@@ -36,6 +36,7 @@
  */
 
 #include <sys/cdefs.h>
+__FBSDID("$FreeBSD: src/usr.bin/sed/compile.c,v 1.22 2002/07/30 14:07:30 tjr Exp $");
 
 #ifndef lint
 static const char sccsid[] = "@(#)compile.c	8.1 (Berkeley) 6/6/93";
@@ -171,8 +172,14 @@ compile_stream(link)
 		}
 
 semicolon:	EATSPACE();
-		if (p && (*p == '#' || *p == '\0'))
-			continue;
+ 		if (p) {
+ 			if (*p == '#' || *p == '\0')
+ 				continue;
+ 			else if (*p == ';') {
+ 				p++;
+ 				goto semicolon;
+ 			}
+ 		}
 		if ((*link = cmd = malloc(sizeof(struct s_command))) == NULL)
 			err(1, "malloc");
 		link = &cmd->next;
