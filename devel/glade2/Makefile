@@ -1,16 +1,16 @@
 # New ports collection makefile for:	glade
-# Version required:     0.5.3
+# Version required:     0.5.5
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.14 1999/08/25 05:48:04 obrien Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.15 1999/10/14 09:13:47 nakai Exp $
 #
 
-DISTNAME=	glade-0.5.3
+DISTNAME=	glade-0.5.5
 CATEGORIES=	devel
 MASTER_SITES=   http://glade.pn.org/
 
-MAINTAINER=     dom@myrddin.demon.co.uk
+MAINTAINER=     ade@lovett.com
 
 .if defined(USE_GNOME)
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
