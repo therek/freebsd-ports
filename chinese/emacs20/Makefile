@@ -3,7 +3,7 @@
 # Date created:			  Sat Nov 11, 2000
 # Whom:				  Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: ports/chinese/emacs20/Makefile,v 1.2 2000/12/06 13:24:41 clive Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
@@ -28,8 +28,8 @@ pre-patch:
 		${PATCH} -sp1 < ${.CURDIR}/files/emacs20-xim-20000713.diff ; )
 
 post-patch:
-	@${ECHO} "share/emacs/%%EMACS_VER%%/etc/Emacs" >> ${WRKDIR}/pkg-plist
-	@${ECHO} "share/emacs/%%EMACS_VER%%/etc/dot.emacs" >> ${WRKDIR}/pkg-plist
+	@${ECHO_CMD} "share/emacs/%%EMACS_VER%%/etc/Emacs" >> ${WRKDIR}/pkg-plist
+	@${ECHO_CMD} "share/emacs/%%EMACS_VER%%/etc/dot.emacs" >> ${WRKDIR}/pkg-plist
 	@${CAT} ${MASTERDIR}/pkg-plist >> ${WRKDIR}/pkg-plist
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:		27 Nov, 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/enscript/Makefile,v 1.1 2000/11/27 18:00:39 keith Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
@@ -20,7 +20,7 @@ PLIST=		${WRKDIR}/pkg-plist
 PKGMESSAGE=	${.CURDIR}/pkg-message
 
 post-patch:
-	@${ECHO} "share/enscript/README.BIG5" > ${WRKDIR}/pkg-plist
+	@${ECHO_CMD} "share/enscript/README.BIG5" > ${WRKDIR}/pkg-plist
 	@${CAT} ${MASTERDIR}/pkg-plist >> ${WRKDIR}/pkg-plist
 
 do-install:
