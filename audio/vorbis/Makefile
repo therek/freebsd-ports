@@ -2,7 +2,7 @@
 # Date created:				22 August 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis/Makefile,v 1.4 2000/11/16 21:28:21 asami Exp $
+# $FreeBSD: ports/audio/vorbis/Makefile,v 1.5 2001/03/01 09:36:46 sf Exp $
 #
 
 PORTNAME=	vorbis
@@ -18,13 +18,12 @@ MAINTAINER=	t.vanklaveren@student.utwente.nl
 LIB_DEPENDS=	ao.1:${PORTSDIR}/audio/libao \
 		ogg.1:${PORTSDIR}/audio/libogg \
 		vorbis.0:${PORTSDIR}/audio/libvorbis
-RUN_DEPENDS=	${X11BASE}/lib/xmms/Input/libvorbis.so:${PORTSDIR}/audio/vorbis-xmms \
-		ogg123:${PORTSDIR}/audio/vorbis-tools
+RUN_DEPENDS=	ogg123:${PORTSDIR}/audio/vorbis-tools
 
 MD5_FILE=	Makefile	# dummy
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/pkg-plist
-SUBPORTS=	libao libogg libvorbis vorbis-tools vorbis-xmms
+SUBPORTS=	libao libogg libvorbis vorbis-tools
 
 pre-install:
 		${ECHO} "@comment intentionally left empty" > ${PLIST}

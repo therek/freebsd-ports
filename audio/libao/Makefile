@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libao/Makefile,v 1.3 2000/11/16 13:06:27 asami Exp $
+# $FreeBSD: ports/audio/libao/Makefile,v 1.4 2001/02/28 17:09:01 ijliao Exp $
 #
 
 PORTNAME=	libao
@@ -13,6 +13,8 @@ MASTER_SITES=	http://home.student.utwente.nl/t.vanklaveren/distfiles/ \
 
 MAINTAINER=	t.vanklaveren@student.utwente.nl
 
+WANT_ESOUND=	yes
+
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
@@ -20,4 +22,20 @@ USE_AUTOMAKE=	yes
 
 INSTALLS_SHLIB=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_ESOUND)
+USE_ESOUND=	yes
+PLIST_SUB=	ESOUND=""
+.else
+PLIST_SUB=	ESOUND="@comment "
+.endif
+
+.if exists(${LOCALBASE}/bin/artsc-config)
+LIB_DEPENDS=	artsc.0:${PORTSDIR}/x11/kdelibs2
+PLIST_SUB+=	ARTS=""
+.else
+PLIST_SUB+=	ARTS="@comment "
+.endif
+
+.include <bsd.port.post.mk>
