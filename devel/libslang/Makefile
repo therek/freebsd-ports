@@ -2,11 +2,12 @@
 # Date created:         11 July 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/libslang/Makefile,v 1.22 2000/08/06 16:24:30 nbm Exp $
+# $FreeBSD: ports/devel/libslang/Makefile,v 1.23 2000/09/05 01:56:27 steve Exp $
 #
 
 PORTNAME=	libslang
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slang/v1.4/
 DISTNAME=	slang-${PORTVERSION}
