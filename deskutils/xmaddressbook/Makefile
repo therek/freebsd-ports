@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/deskutils/xmaddressbook/Makefile,v 1.7 2000/04/08 22:04:00 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmaddressbook
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	office
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
+COMMENT=	X11/Motif-based addressbook program
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

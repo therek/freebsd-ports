@@ -2,7 +2,7 @@
 # Date created:			24 September, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.18 2000/06/14 13:21:08 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cbb
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	kline@thought.org
+COMMENT=	Checkbook balancing tool
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

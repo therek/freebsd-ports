@@ -2,7 +2,7 @@
 # Date created:		26 Sep 1997
 # Whom:			mi
 #
-# $FreeBSD: ports/deskutils/xpostitPlus/Makefile,v 1.9 2001/08/31 02:21:08 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XPostitPlus
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office
 
 MAINTAINER=	dgilbert@velocet.ca
+COMMENT=	PostIt (R) messages onto your X11 screen
 
 USE_IMAKE=	yes
 MAN1=		xpostit+.1

@@ -2,7 +2,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/deskutils/offix-trash/Makefile,v 1.6 2000/01/29 22:45:52 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	offix-trash
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	desktop_managers/OffiX
 DISTNAME=	Trash-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
+COMMENT=	Trash from OffiX
 
 LIB_DEPENDS=	Dnd++.1:${PORTSDIR}/x11/libdnd
 

@@ -2,7 +2,7 @@
 # Date created:		Sat 18 Apr 1998 10:12:20 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/databases/tkgnats/Makefile,v 1.15 2000/04/08 22:49:02 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkgnats
@@ -11,6 +11,7 @@ CATEGORIES=	databases tk82
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkgnats/
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	Graphical frontend for the free bug-tracking system
 
 BUILD_DEPENDS=	nedit-pr:${PORTSDIR}/databases/gnats
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82

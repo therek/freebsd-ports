@@ -2,7 +2,7 @@
 # Date created:				January 2nd 2000
 # Whom:	      				Gerhard Gonter <g.gonter@ieee.org>
 #
-# $FreeBSD: ports/databases/p5-hp200lx-db/Makefile,v 1.4 2001/03/01 06:39:14 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hp200lx-db
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	HP200LX
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	g.gonter@ieee.org
+COMMENT=	Perl5 module to handle HP 200LX palmtop computer databases
 
 PERL_CONFIGURE=	yes
 
