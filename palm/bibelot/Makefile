@@ -3,11 +3,11 @@
 # Date created:		Jan 8, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/bibelot/Makefile,v 1.3 2001/02/01 02:15:36 ijliao Exp $
+# $FreeBSD: ports/palm/bibelot/Makefile,v 1.4 2001/03/03 13:09:12 ijliao Exp $
 #
 
 PORTNAME=	bibelot
-PORTVERSION=	0.9.2
+PORTVERSION=	0.9.3
 CATEGORIES=	palm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
