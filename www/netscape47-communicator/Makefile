@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.75 2000/10/08 06:38:05 asami Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.76 2000/10/29 17:01:20 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -65,7 +65,7 @@ NETSCAPE_DIST_SUBDIR?=	communicator/english/${BROWSER_VER}/unix/${NETSCAPE_DIST_
 NETSCAPE_DIST_TAG?=	x86-unknown-freebsd # | x86-unknown-linux2.2 | x86-bsdi-bsd2 | alpha-dec-osf4.0
 
 BROWSER_VER=	${PORTVERSION}
-BROWSER_V!=	${ECHO} ${BROWSER_VER} | sed -e 's/\.//'
+BROWSER_V!=	${ECHO} ${BROWSER_VER} | ${SED} -e 's/\.//'
 INFILE_HEAD?=	'Communicator,4.76.0.20001006'
 NO_AUTOADMIN=	'Not available'
 NO_FORTIFY=	'No need for this version'
