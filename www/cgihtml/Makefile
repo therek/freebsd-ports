@@ -2,14 +2,18 @@
 # Date created:		3 Nov 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/www/cgihtml/Makefile,v 1.12 2001/02/05 15:33:16 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cgihtml
 PORTVERSION=	1.69
 PORTREVISION=	1
 CATEGORIES=	www devel
-MASTER_SITES=	ftp://hcs.harvard.edu/pub/web/tools/cgihtml/
+MASTER_SITES=	http://www.eekim.com/software/cgihtml/cgihtml.tar.gz \
+		ftp://www.eekim.com/pub/users/eekim/cgihtml/ \
+		ftp://hcs.harvard.edu/pub/web/tools/cgihtml/
+
+FORBIDDEN=	Multiple vulnerabilities, see http://online.securityfocus.com/archive/1/305469
 
 MAINTAINER=	roam@FreeBSD.org
 
