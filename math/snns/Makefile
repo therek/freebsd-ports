@@ -2,7 +2,7 @@
 # Date created:		2 Febuary 1997
 # Whom:			reg@shale.csir.co.za
 #
-# $FreeBSD: ports/math/snns/Makefile,v 1.6 2000/04/14 07:20:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	snns
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/
 DISTNAME=	SNNSv${PORTVERSION}
 DISTNAME=	SNNSv${PORTVERSION}
 
-MAINTAINER=	reg@FreeBSD.org
+MAINTAINER=	freebsd-ports@FreeBSD.org
 
 USE_XLIB=	yes
 HAS_CONFIGURE=	yes
