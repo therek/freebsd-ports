@@ -2,14 +2,14 @@
 # Date created:         2 Jun 1998
 # Whom:                 Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/games/xconq/Makefile,v 1.14 2000/12/30 16:50:28 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xconq
 PORTVERSION=	7.4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://sources.redhat.com/pub/xconq/ \
-		ftp://unix.hensa.ac.uk/mirrors/sourceware.cygnus.com/pub/xconq/
+		ftp://unix.hensa.ac.uk/mirrors/sources.redhat.com/pub/xconq/
 
 MAINTAINER=	ports@freebsd.org
 
