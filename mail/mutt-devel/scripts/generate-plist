@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.2 2002/08/28 19:29:05 obraun Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.3 2002/08/30 12:32:59 obraun Exp $
 #
 # set -x
 
@@ -139,6 +139,9 @@ if [ "$MUTT_HTML" = "yes" ]; then
   fi
   if [ "$MUTT_IFDEF_PATCH" = "yes" ]; then
     html=$(($html + 1))
+  fi
+  if [ "$MUTT_PGP_PATCH" = "yes" ]; then
+    html=$(($html + 2))
   fi
   echo "share/doc/mutt/html/manual.html" >> $tmp_first
   echo "share/doc/mutt/html/manual_toc.html" >> $tmp_first 
