@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.31 2003/04/13 19:49:40 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.32 2003/04/15 16:54:18 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -339,7 +339,7 @@ metacity_LIB_DEPENDS=	metacity-private.0:${PORTSDIR}/x11-wm/metacity
 metacity_DETECT=	${X11BASE}/libdata/pkgconfig/libmetacity-private.pc
 metacity_USE_GNOME_IMPL=gconf2 glade2
 
-gal2_LIB_DEPENDS=	gal-2.0.1:${PORTSDIR}/x11-toolkits/gal2
+gal2_LIB_DEPENDS=	gal-2.0.2:${PORTSDIR}/x11-toolkits/gal2
 gal2_DETECT=		${X11BASE}/libdata/pkgconfig/gal-2.0.pc
 gal2_USE_GNOME_IMPL=gnomeui libgnomeprintui
 
