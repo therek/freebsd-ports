@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/textproc/saxon-devel/files/saxon.sh,v 1.3 2004/10/27 16:50:43 hq Exp $
+# $FreeBSD: ports/textproc/saxon-devel/files/saxon.sh,v 1.4 2004/11/09 16:03:39 hq Exp $
 
 IAM=`basename "$0"`
 
@@ -17,4 +17,4 @@ do
 	SAXON_CLASSPATH="${SAXON_CLASSPATH}:${jarfile}"
 done
 
-JAVAVM="%%JAVAVM%%" "%%LOCALBASE%%/bin/javavm" -classpath "${SAXON_CLASSPATH}" "${LAUNCHER_CLASS}" "$@"
+JAVA_VERSION="1.4+" "%%LOCALBASE%%/bin/java" -classpath "${SAXON_CLASSPATH}" "${LAUNCHER_CLASS}" "$@"
