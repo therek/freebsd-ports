@@ -2,11 +2,11 @@
 # Date created:		14 May 1997
 # Whom:			ejc@bazzle.com
 #
-# $FreeBSD: ports/devel/omniORB/Makefile,v 1.15 2000/11/28 12:02:28 jeh Exp $
+# $FreeBSD: ports/devel/omniORB/Makefile,v 1.16 2001/03/23 00:35:25 jeh Exp $
 #
 
 PORTNAME=	omniORB
-PORTVERSION=	3.0.3
+PORTVERSION=	3.0.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.uk.research.att.com/pub/omniORB/omniORB3/
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/.//g}
@@ -72,14 +72,13 @@ do-install:
 		find . | ${CPIO} ${SHAREOWN}:${SHAREGRP} ${PYTHON_SITELIBDIR}
 	@ cd ${.CURDIR}
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/omniORB
-	${INSTALL_DATA} ${WRKSRC}/README.unix ${PREFIX}/share/doc/omniORB
-	${INSTALL_DATA} ${WRKSRC}/README.FreeBSD ${PREFIX}/share/doc/omniORB
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.unix ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README.FreeBSD ${DOCSDIR}
 	${INSTALL_DATA} ${WRKSRC}/ReleaseNote_omniORB_${PORTVERSION:S/.//g} \
-		${PREFIX}/share/doc/omniORB
+		${DOCSDIR}
 	cd ${WRKSRC}/doc && \
-		find . | ${CPIO} ${SHAREOWN}:${SHAREGRP} \
-		${PREFIX}/share/doc/omniORB
+		find . | ${CPIO} ${SHAREOWN}:${SHAREGRP} ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
