@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/perforce/pkg-install,v 1.1 2001/09/01 18:57:08 knu Exp $
 
 PATH=/bin:/usr/sbin
 
@@ -44,7 +44,6 @@ PRE-INSTALL)
 	fi
 
 	if [ ! -d $PERFORCE_HOME ] ; then 
-echo hey
 		mkdir -p $PERFORCE_HOME $PERFORCE_LOGS $PERFORCE_ROOT
 		chown -R $USER:$GROUP $PERFORCE_HOME
 	fi
