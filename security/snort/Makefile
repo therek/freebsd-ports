@@ -2,19 +2,20 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.20 2001/07/12 08:43:28 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.21 2001/08/06 22:22:11 dirk Exp $
 #
 
 PORTNAME=	snort
 PORTVERSION=	1.8.1
+PORTREVISION=	1
 CATEGORIES=	security
-MASTER_SITES=	http://www.snort.org/Files/ \
+MASTER_SITES=	http://snort.sourcefire.com/releases/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
-DISTNAME=	${PORTNAME}-1.8p1
+DISTNAME=	${PORTNAME}-1.8.1-RELEASE
 
 MAINTAINER=	dirk@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/snort
+WRKSRC=		${WRKDIR}/snort-1.8.1-RELEASE
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-mysql=no --with-odbc=no --with-postgresql=no
 MAN8=		snort.8
@@ -56,12 +57,15 @@ pre-configure:
 post-install:
 	${MKDIR} ${PREFIX}/share/snort
 .for i in CREDITS RULES.SAMPLE USAGE backdoor.rules ddos.rules dns.rules dos.rules \
-	  exploit.rules finger.rules ftp.rules icmp-info.rules icmp.rules info.rules local.rules \
+	  exploit.rules finger.rules ftp.rules info.rules icmp.rules local.rules \
 	  misc.rules netbios.rules policy.rules rpc.rules rservices.rules scan.rules \
-	  shellcode.rules smtp.rules sql.rules telnet.rules virus.rules web-cgi.rules \
+	  shellcode.rules smtp.rules sql.rules telnet.rules web-cgi.rules \
 	  web-coldfusion.rules web-frontpage.rules web-iis.rules web-misc.rules \
 	  x11.rules
 	${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/snort
 .endfor
+	${INSTALL_DATA} ${WRKSRC}/classification.config ${PREFIX}/etc/classification.config-sample
+	${INSTALL_DATA} ${WRKSRC}/snort.conf ${PREFIX}/etc/snort.conf-sample
+	@${SED} -e 's#/usr/local#${PREFIX}#g' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
