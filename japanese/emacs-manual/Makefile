@@ -2,7 +2,7 @@
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.14 2000/10/07 22:11:23 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emacs-manual
@@ -18,6 +18,7 @@ MAINTAINER=	okazaki@FreeBSD.org
 
 EMACS_PORT_NAME=	emacs20
 EMACS_NO_RUN_DEPENDS=	YES
+USE_REINPLACE=	yes
 
 ERRATA_FILE=
 
@@ -53,7 +54,7 @@ pre-patch:
 
 post-patch:
 	cd ${WRKSRC} && \
-	${PERL} -pi -e 's/(@[^@]*ref{.*,.*,.*, *elisp),/$$1-ja,/;' *.texi
+	${REINPLACE_CMD} -E -e 's/(@[^@]*ref{.*,.*,.*, *elisp),/\1-ja,/;' *.texi
 
 pre-build:
 	@${ECHO_MSG} "===>   Now start formatting texinfo. Please wait."
