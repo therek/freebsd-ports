@@ -2,11 +2,12 @@
 # Date created:        18 Feb 1998
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/games/ladder/Makefile,v 1.3 1999/08/25 06:03:53 obrien Exp $
+# $FreeBSD: ports/games/ladder/Makefile,v 1.4 2000/04/14 12:25:59 asami Exp $
 #
 
 PORTNAME=	ladder
 PORTVERSION=	1.00
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.srv.net/~kth/ \
 		ftp://ftp.42.org/pub/unix/games/
