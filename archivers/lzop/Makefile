@@ -2,7 +2,7 @@
 # Date created:				Fri 2 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/lzop/Makefile,v 1.1 2000/06/02 22:58:10 will Exp $
+# $FreeBSD: ports/archivers/lzop/Makefile,v 1.2 2000/06/04 22:50:05 will Exp $
 #
 
 PORTNAME=	lzop
@@ -10,7 +10,7 @@ PORTVERSION=	1.00
 CATEGORIES=	archivers
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/lzo
 

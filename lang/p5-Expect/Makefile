@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.3 2000/04/12 06:19:44 obrien Exp $
+# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.4 2000/06/17 02:36:32 will Exp $
 #
 
 PORTNAME=	Expect
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Expect
 DISTNAME=	${PORTNAME}.pm-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/IO/Tty.pm:${PORTSDIR}/devel/p5-IO-Tty \
 		${SITE_PERL}/IO/Stty.pm:${PORTSDIR}/devel/p5-IO-Stty

@@ -2,7 +2,7 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/fhttpd/Makefile,v 1.2 2000/03/22 01:59:34 will Exp $
+# $FreeBSD: ports/www/fhttpd/Makefile,v 1.3 2000/04/10 00:05:09 cpiazza Exp $
 #
 
 PORTNAME=	fhttpd
@@ -10,7 +10,7 @@ PORTVERSION= 	0.4.2
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.fhttpd.org/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LOGFILE=	share/fhttpd/fhttpd.log
 PLIST_SUB+=	LOGFILE=${LOGFILE}

@@ -2,7 +2,7 @@
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.3 2000/03/22 01:58:48 will Exp $
+# $FreeBSD: ports/archivers/makeself/Makefile,v 1.4 2000/04/08 23:17:48 mharo Exp $
 #
 
 PORTNAME=	makeself
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.lokigames.com/~megastep/makeself/
 DISTNAME=	makeself
 EXTRACT_SUFX=	.gz.sh
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

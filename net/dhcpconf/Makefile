@@ -2,7 +2,7 @@
 # Date created:		20 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/dhcpconf/Makefile,v 1.3 2000/04/09 18:10:57 cpiazza Exp $
+# $FreeBSD: ports/net/dhcpconf/Makefile,v 1.4 2000/04/20 19:58:29 mharo Exp $
 #
 
 PORTNAME=	dhcpconf
@@ -12,7 +12,7 @@ MASTER_SITES=	http://members.xoom.com/vschade/dhcp-conf/
 DISTNAME=	dhcp-conf
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
 		newt.0:${PORTSDIR}/devel/newt

@@ -2,7 +2,7 @@
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.4 2000/04/10 19:50:25 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.5 2000/06/14 13:21:00 sobomax Exp $
 #
 
 PORTNAME=	ude
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	udeproject
 DISTNAME=	${PORTNAME}-0.2.7-BETA
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext

@@ -2,7 +2,7 @@
 # Date created:		28 Jul 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/httperf/Makefile,v 1.5 2000/03/23 02:21:51 obrien Exp $
+# $FreeBSD: ports/www/httperf/Makefile,v 1.6 2000/04/10 00:05:24 cpiazza Exp $
 #
 
 PORTNAME=	httperf
@@ -10,7 +10,7 @@ PORTVERSION= 	0.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_GMAKE=	yes

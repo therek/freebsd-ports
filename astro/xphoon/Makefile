@@ -2,7 +2,7 @@
 # Date created:		14 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/astro/xphoon/Makefile,v 1.14 2000/03/22 17:42:13 mph Exp $
+# $FreeBSD: ports/astro/xphoon/Makefile,v 1.15 2000/04/08 22:02:10 mharo Exp $
 #
 
 PORTNAME=	xphoon
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 DISTNAME=	xphoon
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 

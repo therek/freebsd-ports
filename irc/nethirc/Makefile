@@ -2,7 +2,7 @@
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/nethirc/Makefile,v 1.6 2000/05/20 05:11:14 will Exp $
+# $FreeBSD: ports/irc/nethirc/Makefile,v 1.7 2000/06/03 08:42:28 asami Exp $
 #
 
 PORTNAME=	nethirc
@@ -11,7 +11,7 @@ CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.nog.net/pub/tony/nethirc/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/5.005/Net/IRC.pm:${PORTSDIR}/irc/p5-IRC
 

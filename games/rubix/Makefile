@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/rubix/Makefile,v 1.2 2000/03/22 01:59:10 will Exp $
+# $FreeBSD: ports/games/rubix/Makefile,v 1.3 2000/04/14 12:26:29 asami Exp $
 #
 
 PORTNAME=	rubix
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.1
 CATEGORIES=	games
 MASTER_SITES=	http://sed.free.fr/rubix/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 MAKE_ENV=	GMAKE=${GMAKE}

@@ -2,7 +2,7 @@
 # Date created:				23 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/ncurses/Makefile,v 1.20 2000/03/31 17:01:54 mharo Exp $
+# $FreeBSD: ports/devel/ncurses/Makefile,v 1.21 2000/04/11 21:29:14 mharo Exp $
 #
 
 PORTNAME=		ncurses
@@ -13,7 +13,7 @@ MASTER_SITES=		${MASTER_SITE_GNU} \
 MASTER_SITE_SUBDIR=	ncurses
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} terminfo.src.gz
 
-MAINTAINER=		will@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 EXTRACT_ONLY=		${DISTNAME}${EXTRACT_SUFX}
 

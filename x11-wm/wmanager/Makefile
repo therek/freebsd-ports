@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.3 2000/03/22 01:59:41 will Exp $
+# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.4 2000/04/10 19:50:38 cpiazza Exp $
 #
 
 PORTNAME=	wmanager
@@ -11,7 +11,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	http://heuss.techfak.uni-bielefeld.de/www/mtessmer/wmanager/
 EXTRACT_SUFX=	.src.tar.bz2
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk/
 

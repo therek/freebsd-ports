@@ -2,7 +2,7 @@
 # Date created:				15 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/robodoc/Makefile,v 1.2 2000/03/22 01:59:03 will Exp $
+# $FreeBSD: ports/devel/robodoc/Makefile,v 1.3 2000/04/14 05:44:22 asami Exp $
 #
 
 PORTNAME=	robodoc
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.xs4all.nl/~rfsber/Robo/
 DISTFILES=	${PORTNAME}.tgz
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 FETCH_BEFORE_ARGS+= -b
 WRKSRC=		${WRKDIR}/Robodoc

@@ -2,7 +2,7 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/qtk/Makefile,v 1.4 2000/03/22 01:59:02 will Exp $
+# $FreeBSD: ports/devel/qtk/Makefile,v 1.5 2000/04/14 05:44:20 asami Exp $
 #
 
 PORTNAME=	qtk
@@ -11,7 +11,7 @@ CATEGORIES=	devel tk82
 MASTER_SITES=	http://www.psn.net/~andrews/dist/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/bin/wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

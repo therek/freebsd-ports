@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.5 2000/06/16 10:37:39 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.6 2000/06/16 21:52:33 asami Exp $
 #
 
 PORTNAME=	fox
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
 		ftp://imssun1.epfl.ch/pub/sources/ \
 		ftp://SunSITE.Informatik.RWTH-Aachen.DE/pub/Linux/fox/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \

@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/security/kssh/Makefile,v 1.4 2000/05/29 01:50:36 will Exp $
+# $FreeBSD: ports/security/kssh/Makefile,v 1.5 2000/06/07 17:31:47 will Exp $
 #
 
 PORTNAME=	kssh
@@ -10,7 +10,7 @@ PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/will/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext

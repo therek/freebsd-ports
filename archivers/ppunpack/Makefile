@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.1 2000/06/03 04:52:12 will Exp $
 #
 
 PORTNAME=	ppunpack
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://de.aminet.net/pub/aminet/misc/unix/ \
 DISTNAME=	ppsmall-${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"No commercial redistribution"
 NO_CDROM=	${RESTRICTED}

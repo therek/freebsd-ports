@@ -2,7 +2,7 @@
 # Date created:		9 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/hex/Makefile,v 1.5 2000/03/22 01:59:07 will Exp $
+# $FreeBSD: ports/games/hex/Makefile,v 1.6 2000/04/14 06:53:14 mharo Exp $
 #
 
 PORTNAME=	hex
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.nott.ac.uk/~psystrj/ \
 		http://www.psn.net/~andrews/dist/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12

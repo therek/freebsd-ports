@@ -2,7 +2,7 @@
 # Date created:		08 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/newt/Makefile,v 1.7 2000/06/16 08:48:15 sobomax Exp $
+# $FreeBSD: ports/devel/newt/Makefile,v 1.8 2000/06/16 21:50:15 asami Exp $
 #
 
 PORTNAME=	newt
@@ -15,7 +15,7 @@ MASTER_SITES=	\
 DISTNAME=	${PORTNAME}-0.50-13
 EXTRACT_SUFX=	.src.rpm
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang \
 		tcl82.1:${PORTSDIR}/lang/tcl82 \

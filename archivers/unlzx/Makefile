@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/unlzx/Makefile,v 1.1 2000/06/03 04:42:52 will Exp $
 #
 
 PORTNAME=	unlzx
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://de.aminet.net/pub/aminet/misc/unix/ \
 DISTNAME=	${PORTNAME}.c
 EXTRACT_SUFX=	.Z
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=		yes
 

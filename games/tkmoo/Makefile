@@ -2,7 +2,7 @@
 # Date created:		20 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/tkmoo/Makefile,v 1.2 2000/03/22 01:59:11 will Exp $
+# $FreeBSD: ports/games/tkmoo/Makefile,v 1.3 2000/04/14 12:26:43 asami Exp $
 #
 
 PORTNAME=	tkmoo
@@ -11,7 +11,7 @@ CATEGORIES=	games tk82
 MASTER_SITES=	http://www.awns.com/tkMOO-light/Source/
 DISTNAME=	tkMOO-light-${PORTVERSION}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${WISH82}:${PORTSDIR}/x11-toolkits/tk82
 

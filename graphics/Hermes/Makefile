@@ -2,7 +2,7 @@
 # Date created:				29 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.12 2000/06/16 08:18:10 sobomax Exp $
+# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.13 2000/06/16 21:50:41 asami Exp $
 #
 
 PORTNAME=	Hermes
@@ -13,7 +13,7 @@ MASTER_SITES=	http://tzo.linux.tucows.com/files/x11/dev/ \
 		ftp://ftp.infomagic.com/pub/mirrors/tucows/mlinux/files/x11/dev/ \
 		http://dark.x.dtu.dk/~mbn/clanlib/download/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

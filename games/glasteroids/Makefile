@@ -2,7 +2,7 @@
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/glasteroids/Makefile,v 1.5 2000/03/29 09:02:03 will Exp $
+# $FreeBSD: ports/games/glasteroids/Makefile,v 1.6 2000/04/14 06:42:59 mharo Exp $
 #
 
 PORTNAME=	glasteroids
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.honors.montana.edu/~jjc/Glasteroids/
 DISTNAME=	Glasteriods
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 

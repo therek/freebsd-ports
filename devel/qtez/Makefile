@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/qtez/Makefile,v 1.15 2000/04/14 05:44:19 asami Exp $
+# $FreeBSD: ports/devel/qtez/Makefile,v 1.16 2000/04/29 22:58:58 kris Exp $
 #
 
 PORTNAME=	qtez
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://qtez.zax.net/qtez-extras/
 DISTNAME=	QtEZ.current-src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_QT=		yes

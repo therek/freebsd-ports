@@ -2,7 +2,7 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.5 2000/06/01 16:25:17 ade Exp $
+# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.6 2000/06/14 13:21:23 sobomax Exp $
 #
 
 PORTNAME=	gcolor
@@ -11,7 +11,7 @@ CATEGORIES=	graphics gnome x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 

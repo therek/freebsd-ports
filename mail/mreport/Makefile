@@ -2,7 +2,7 @@
 # Date created:		19 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/mreport/Makefile,v 1.2 2000/03/22 01:59:23 will Exp $
+# $FreeBSD: ports/mail/mreport/Makefile,v 1.3 2000/04/13 20:00:12 cpiazza Exp $
 #
 
 PORTNAME=	mreport
@@ -10,7 +10,7 @@ PORTVERSION= 	0.9
 CATEGORIES=	mail sysutils
 MASTER_SITES=	ftp://ftp.datrix.co.za/pub/mreport/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	ALL
 MAN8=		mreport.8

@@ -2,7 +2,7 @@
 # Date created:		15 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/kbubbles/Makefile,v 1.5 2000/03/22 01:59:09 will Exp $
+# $FreeBSD: ports/games/kbubbles/Makefile,v 1.6 2000/04/14 06:53:20 mharo Exp $
 #
 
 PORTNAME=	kbubbles
@@ -10,7 +10,7 @@ PORTVERSION=	0.8.6
 CATEGORIES=	games
 MASTER_SITES=	http://hem.passagen.se/tonybj/kbubbles/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	QwSpriteField.7:${PORTSDIR}/converters/kdesupport11 \

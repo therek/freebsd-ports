@@ -2,7 +2,7 @@
 # Date created:		30 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/glacier/Makefile,v 1.4 2000/04/13 19:59:42 cpiazza Exp $
+# $FreeBSD: ports/mail/glacier/Makefile,v 1.5 2000/06/01 16:25:19 ade Exp $
 #
 
 PORTNAME=	glacier
@@ -10,7 +10,7 @@ PORTVERSION= 	0.0.2
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://glacier.linuxave.net/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 

@@ -2,7 +2,7 @@
 # Date created:		24 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/wmminichess/Makefile,v 1.2 2000/03/22 01:59:12 will Exp $
+# $FreeBSD: ports/games/wmminichess/Makefile,v 1.3 2000/04/14 12:26:48 asami Exp $
 #
 
 PORTNAME=	wmminichess
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.electricrain.com/edavis/miniCHESS/
 DISTNAME=	miniCHESS-${PORTVERSION}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	${LOCALBASE}/bin/gnuchessx:${PORTSDIR}/games/gnuchess

@@ -2,7 +2,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.5 2000/04/29 22:49:12 kris Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.6 2000/06/14 13:21:37 sobomax Exp $
 #
 
 PORTNAME=	screem
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.screem.org/src/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	glade.3:${PORTSDIR}/devel/libglade
 

@@ -2,7 +2,7 @@
 # Date created:				21 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xroads/Makefile,v 1.8 2000/04/14 12:28:11 asami Exp $
+# $FreeBSD: ports/games/xroads/Makefile,v 1.9 2000/05/20 04:56:50 will Exp $
 #
 
 PORTNAME=	xroads
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.autobahn.mb.ca/~foxtrot/ \
 		http://supernova.dyn.ml.org/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 FETCH_BEFORE_ARGS=	-t -b
