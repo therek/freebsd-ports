@@ -2,14 +2,14 @@
 # Date created:		6 Sept 1999
 # Whom:			Takashi Mega <mega@minz.org>
 #
-# $FreeBSD: ports/japanese/slrn/Makefile,v 1.14 2000/06/09 21:21:51 asami Exp $
+# $FreeBSD: ports/japanese/slrn/Makefile,v 1.15 2001/02/06 13:21:58 olgeni Exp $
 #
 
 PORTNAME=	slrn
 PORTVERSION=	0.9.6.2
 CATEGORIES=	japanese news
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slrn/ \
-		http://kondara.sdri.co.jp/~kikutani/slang/
+		http://www.kondara.org/~g/slang/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}-doc-j0.9.5.6-0.tar.gz
 
