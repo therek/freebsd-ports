@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.121 2001/05/02 11:39:53 tg Exp $
+# $FreeBSD: ports/math/Makefile,v 1.122 2001/05/08 11:13:59 knu Exp $
 #
 
     SUBDIR += GiNaC
@@ -89,6 +89,7 @@
     SUBDIR += ruby-bigfloat
     SUBDIR += ruby-bitvector
     SUBDIR += ruby-gnuplot
+    SUBDIR += ruby-math3d
     SUBDIR += ruby-narray
     SUBDIR += sc
     SUBDIR += scigraphica
