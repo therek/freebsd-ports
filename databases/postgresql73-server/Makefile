@@ -2,12 +2,11 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.78 2001/04/24 10:48:58 demon Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.79 2001/04/25 17:17:55 olgeni Exp $
 #
 
 PORTNAME=	postgresql
-PORTVERSION=	7.1
-PORTREVISION=	2
+PORTVERSION=	7.1.1
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.iodynamics.com/pub/mirror/postgresql/%SUBDIR%/ \
 		ftp://ftp.postgresql.org/pub/%SUBDIR%/ \
