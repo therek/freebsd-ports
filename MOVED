@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.33 2002/12/09 04:35:32 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.34 2002/12/09 04:37:04 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -129,3 +129,4 @@ net/icradius||2002-12-08|security vulnerability
 net/p5-IC-Radius||2002-12-08|security vulnerability
 net/radius||2002-12-08|security vulnerability
 net/xtradius||2002-12-08|security vulnerability
+net/gated||2002-12-13|no longer distributed by vendor
