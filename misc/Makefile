@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.336 2001/03/30 16:49:32 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.337 2001/03/31 02:25:18 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -125,6 +125,7 @@
     SUBDIR += proxyper
     SUBDIR += py-distutils
     SUBDIR += pybliographer
+    SUBDIR += qbrew
     SUBDIR += qhacc
     SUBDIR += qlas
     SUBDIR += quotes
