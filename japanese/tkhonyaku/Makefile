@@ -2,15 +2,15 @@
 # Date created:		10 July 2000
 # Whom:			Daichi T.GOTO
 #
-# $FreeBSD: ports/japanese/tkhonyaku/Makefile,v 1.2 2000/08/08 04:25:44 knu Exp $
+# $FreeBSD: ports/japanese/tkhonyaku/Makefile,v 1.3 2000/08/28 18:45:28 knu Exp $
 #
 
 PORTNAME=	tkhonyaku
-PORTVERSION=	1.4
+PORTVERSION=	1.6
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.yk.rim.or.jp/~kawagisi/
 
-MAINTAINER=	daichi@ongs.net
+MAINTAINER=	daichi@ongs.gr.jp
 
 RUN_DEPENDS=	${LOCALBASE}/bin/wish8.0jp:${PORTSDIR}/japanese/tk80
 
