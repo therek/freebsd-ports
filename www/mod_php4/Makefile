@@ -2,11 +2,11 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.115 2000/06/07 20:10:46 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.116 2000/06/08 06:46:16 dirk Exp $
 #
 
 PORTNAME=	mod_php
-PORTVERSION= 	4.0.0
+PORTVERSION= 	4.0.1
 CATEGORIES=	www
 MASTER_SITES=	http://us.php.net/${PHP_DISTDIR}/ \
 		http://php.he.net/${PHP_DISTDIR}/ \
@@ -26,7 +26,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 Y2K=		http://www.php.net/y2k.php
 
-PHP_DISTDIR=	version4/downloads
+PHP_DISTDIR=	distributions
 
 APXS=		${PREFIX}/sbin/apxs
 
