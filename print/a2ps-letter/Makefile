@@ -2,7 +2,7 @@
 # Date created:         15 July 1998
 # Whom:                 Chuck Robey (chuckr@freebsd.org)
 #
-# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.38 2000/09/22 03:42:27 chuckr Exp $
+# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.39 2000/10/06 20:03:01 obrien Exp $
 #
 
 PORTNAME=	a2ps
@@ -19,7 +19,7 @@ MAINTAINER=	chuckr@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
-MAN1=		a2ps.1 ogonkify.1 card.1 psmandup.1 fixps.1 pdiff.1 psset.1
+MAN1=		a2ps.1 ogonkify.1 card.1 psmandup.1 fixps.1 pdiff.1 psset.1 texi2dvi4a2ps.1
 
 PAPERSIZE?=	letter
 PAPERSIZECNF=	${PAPERSIZE:S/l/L/:S/a/A/}
