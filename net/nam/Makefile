@@ -2,7 +2,7 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.8 2000/09/25 12:21:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nam
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 DISTFILES=	nam-src-${PORTVERSION}.tar.gz
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
+
+BROKEN=		"Cannot find TCL"
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
 
