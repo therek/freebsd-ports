@@ -2,11 +2,12 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.20 2001/08/25 01:49:48 taoka Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.21 2001/09/02 18:15:04 knu Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION=	0.9.3
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	japanese www
 MASTER_SITES=	http://www.mozilla.gr.jp/jlp/ \
