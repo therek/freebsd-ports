@@ -2,7 +2,7 @@
 # Date created:		10 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/leim20/Makefile,v 1.9 2000/04/14 00:25:36 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	leim
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
 MAINTAINER=	shige@FreeBSD.org
+
+LATEST_LINK=	leim20
 
 BUILD_DEPENDS=	emacs-${EMACS_VER}:${PORTSDIR}/editors/emacs20
 RUN_DEPENDS=	emacs-${EMACS_VER}:${PORTSDIR}/editors/emacs20
