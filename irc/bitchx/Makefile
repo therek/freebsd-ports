@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.24 2000/10/13 09:23:52 reg Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.25 2000/12/11 06:58:09 imp Exp $
 #
 
 PORTNAME=	BitchX
@@ -14,7 +14,6 @@ MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 MAINTAINER=	cj@vallcom.net
 
 WRKSRC=		${WRKDIR}/BitchX
-FORBIDDEN=	"Buffer overflow in bugtraq"
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
