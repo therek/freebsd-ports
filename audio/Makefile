@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.228 2001/04/10 19:42:59 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.229 2001/04/17 17:35:04 will Exp $
 #
 
     SUBDIR += Maaate
@@ -134,6 +134,7 @@
     SUBDIR += p5-MP3-Info
     SUBDIR += p5-MPEG-ID3v2Tag
     SUBDIR += p5-Xmms
+    SUBDIR += p5-tagged
     SUBDIR += pimp3
     SUBDIR += play
     SUBDIR += playmidi
