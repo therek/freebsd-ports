@@ -2,7 +2,7 @@
 # Date created:         21 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/jetpack/Makefile,v 1.21 2000/04/14 06:53:19 mharo Exp $
+# $FreeBSD: ports/games/jetpack/Makefile,v 1.22 2000/05/01 01:50:01 kris Exp $
 #
 
 PORTNAME=	jetpack
@@ -22,6 +22,7 @@ post-install:
 	@${CHOWN} root:games ${PREFIX}/bin/jetpack
 	@${CHMOD} g+s,u-s ${PREFIX}/bin/jetpack
 	@${CHOWN} root:games ${PREFIX}/lib/X11/jetpack
+	@${CHMOD} g+w  ${PREFIX}/lib/X11/jetpack
 	@${CHMOD} go+r ${PREFIX}/lib/X11/jetpack/jetpack.lev000
 
 .include <bsd.port.mk>
