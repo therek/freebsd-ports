@@ -2,7 +2,7 @@
 # Date created:		16 March 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.2 2001/05/11 12:24:19 jeh Exp $
+# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.3 2001/06/27 10:14:53 wjv Exp $
 #
 
 PORTNAME=	4suite
@@ -16,6 +16,7 @@ MAINTAINER=	wjv@FreeBSD.org
 
 BUILD_DEPENDS=	${PYDISTUTILS} \
 		${PYXML}
+RUN_DEPENDS=	${PYXML}
 
 USE_PYTHON=	yes
 
