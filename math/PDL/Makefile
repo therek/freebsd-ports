@@ -2,7 +2,7 @@
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/PDL/Makefile,v 1.9 2000/08/03 09:25:35 asami Exp $
+# $FreeBSD: ports/math/PDL/Makefile,v 1.10 2000/08/22 13:36:01 sobomax Exp $
 #
 
 PORTNAME=	PDL
@@ -41,6 +41,12 @@ pre-extract:
 
 .if ${MACHINE_ARCH} == "alpha"
 BROKEN=	test script t/flexraw.t fails all 26 tests
+.endif
+
+.if ${OSVERSION} >= 500007
+PLIST_SUB+=	NEW_PERL:="" OLD_PERL:="@comment "
+.else
+PLIST_SUB+=	NEW_PERL:="@comment " OLD_PERL:=""
 .endif
 
 MAN1=	PDL::Philosophy.1 PDL::Internals.1 PDL::PP.1 PDL::Tips.1 \
