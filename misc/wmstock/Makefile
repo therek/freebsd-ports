@@ -2,14 +2,13 @@
 # Date created:		19 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/wmstock/Makefile,v 1.4 2000/03/22 01:59:27 will Exp $
+# $FreeBSD: ports/misc/wmstock/Makefile,v 1.5 2000/04/14 08:47:02 asami Exp $
 #
 
 PORTNAME=	wmstock
-PORTVERSION=	0.06
+PORTVERSION=	0.11
 CATEGORIES=	misc windowmaker
-MASTER_SITES=	http://mattfischer.com/wmstock/src/ \
-		http://www.psn.net/~andrews/wmstock/
+MASTER_SITES=	http://mattfischer.com/wmstock/src/
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -22,8 +21,8 @@ USE_GMAKE=	yes
 MAN1=		wmstock.1
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/wmstock ${PREFIX}/bin/wmstock
-	@${INSTALL_SCRIPT} ${WRKSRC}/testqt.pl ${PREFIX}/bin/testqt.pl
-	@${INSTALL_MAN} ${WRKSRC}/wmstock.1x ${PREFIX}/man/man1/wmstock.1
+	${INSTALL_PROGRAM} ${WRKSRC}/wmstock ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/getquote ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/wmstock.1x ${PREFIX}/man/man1/wmstock.1
 
 .include <bsd.port.mk>
