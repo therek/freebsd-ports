@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/russian/Makefile,v 1.31 2001/03/28 17:45:39 sobomax Exp $
 #
     SUBDIR += xxkb
 
@@ -9,6 +9,7 @@
     SUBDIR += d1489
     SUBDIR += elm.language
     SUBDIR += gd
+    SUBDIR += kde2-i18n
     SUBDIR += koi8r-ps
     SUBDIR += messarge
     SUBDIR += netscape4.language
