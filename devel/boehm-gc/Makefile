@@ -2,11 +2,12 @@
 # Date created:		15 November 1996
 # Whom:			Mike McGaughey <mmcg@cs.monash.edu.au>
 #
-# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.11 2000/04/30 19:13:48 steve Exp $
+# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.12 2001/01/03 20:17:06 sf Exp $
 #
 
 PORTNAME=	boehm-gc
 PORTVERSION=	5.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/
 DISTNAME=	gc5.3
