@@ -2,11 +2,12 @@
 # Date created:        29 January 2001
 # Whom:                ilya
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.1 2001/02/01 14:25:15 clive Exp $
 #
 
 PORTNAME=	gnus
 PORTVERSION=	5.8.8
+PORTREVISION=	1
 CATEGORIES=	news mail elisp
 MASTER_SITES=	ftp://ftp.gnus.org/pub/gnus/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
