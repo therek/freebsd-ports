@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.442 2001/02/22 03:49:53 jeh Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.443 2001/02/22 13:23:11 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -173,6 +173,7 @@
     SUBDIR += libtecla
     SUBDIR += libtool
     SUBDIR += libunicode
+    SUBDIR += libusb
     SUBDIR += libxalloc
     SUBDIR += lincvs
     SUBDIR += linguist
