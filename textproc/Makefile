@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.214 2001/06/14 06:39:17 ijliao Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.215 2001/06/15 12:19:30 markp Exp $
 #
 
     SUBDIR += agrep
@@ -56,6 +56,7 @@
     SUBDIR += htdig
     SUBDIR += html
     SUBDIR += info2html
+    SUBDIR += info_to_html
     SUBDIR += isearch
     SUBDIR += iso12083
     SUBDIR += iso8879
