@@ -2,7 +2,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.40 2000/12/02 16:03:27 kevlo Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.41 2001/06/01 06:04:49 obrien Exp $
 #
 
 PORTNAME=	crossfire
@@ -55,6 +55,7 @@ post-patch:
 		's|%%LOCALBASE%%|${LOCALBASE}|g ; \
 		 s|%%X11BASE%%|${X11BASE}|g ; \
 		 s|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/config/crosssite.def
+	@${PERL} -pi -e 's|^distclean:|$$&:|' ${WRKSRC}/Imakefile
 
 do-configure:
 	@(cd ${CONFIGURE_WRKSRC}; ${SETENV} ${MAKE_ENV} ${XMKMF})
