@@ -2,11 +2,11 @@
 # Date created:         March 20 2000
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/www/httptunnel/Makefile,v 1.5 2000/08/07 21:21:17 brian Exp $
+# $FreeBSD: ports/www/httptunnel/Makefile,v 1.6 2000/08/08 00:12:12 brian Exp $
 #
 
 PORTNAME=	httptunnel
-PORTVERSION= 	3.1
+PORTVERSION= 	3.2
 CATEGORIES=	www
 MASTER_SITES=	http://www.Awfulhak.org/httptunnel/ \
 		ftp://ftp.nocrew.org/pub/nocrew/unix/ \
@@ -22,7 +22,8 @@ CONFIGURE_ARGS+=--enable-debug
 MAN1=		hts.1 htc.1
 
 post-install:
-	[ -f ${PREFIX}/etc/rc.d/httptunnel.sh ] || \
-		${INSTALL_SCRIPT} ${FILESDIR}/httptunnel.sh ${PREFIX}/etc/rc.d/.
+	${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${FILESDIR}/httptunnel.sh \
+		>${PREFIX}/etc/rc.d/httptunnel.sh
+	${CHMOD} 755 ${PREFIX}/etc/rc.d/httptunnel.sh
 
 .include <bsd.port.mk>
