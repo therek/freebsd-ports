@@ -3,7 +3,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.36 1999/09/17 19:16:58 dirk Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.37 1999/11/07 22:19:47 dirk Exp $
 #
 
 DISTNAME=	openssl-0.9.4
@@ -14,6 +14,10 @@ MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
 
 MAINTAINER=	dirk@FreeBSD.org
+
+.if exists(/usr/bin/openssl) && exists(/usr/lib/libcrypto.so) && exists(/usr/lib/libssl.so)
+FORBIDDEN=	"OpenSSL is already in the base system"
+.endif
 
 RESTRICTED=	"Cryptography"
 USE_PERL5=	yes
