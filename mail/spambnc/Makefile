@@ -2,11 +2,11 @@
 # Date created:        25 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/mail/spambnc/Makefile,v 1.7 2001/08/06 04:51:12 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spambnc
-PORTVERSION=	20010824
+PORTVERSION=	20011013
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spambouncer.org/
 DISTFILES=	sb.tar.Z index.shtml
