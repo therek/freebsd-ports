@@ -2,11 +2,11 @@
 # Date created:			Fri Feb  9 10:50:25 EST 2001
 # Whom:				Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/math/R-letter/Makefile,v 1.19 2001/02/11 06:45:36 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	R
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.1
 CATEGORIES=	math
 MASTER_SITES=	http://cran.r-project.org/src/base/ \
 		ftp://cran.r-project.org/pub/R/src/base/ \
