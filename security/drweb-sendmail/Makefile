@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.3 2001/08/24 19:45:41 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.4 2001/08/24 20:15:38 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
@@ -60,7 +60,7 @@ pre-build:
 		${ECHO} ${MF_INCDIR} ; \
 		${ECHO} libmilter ; \
 		${ECHO} ${SENDMAIL8_12} ; \
-		${ECHO} ; \
+		${ECHO} ${CFLAGS} ; \
 	} | ./configure
 
 do-install:
