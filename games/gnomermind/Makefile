@@ -2,11 +2,11 @@
 # Date created:				11 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gnomermind/Makefile,v 1.1 2001/04/11 12:56:16 sobomax Exp $
 #
 
 PORTNAME=	gnomermind
-PORTVERSION=	0.9.1
+PORTVERSION=	1.0
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
