@@ -2,7 +2,7 @@
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/X.language/Makefile,v 1.28 2000/04/13 19:13:57 cpiazza Exp $
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.29 2000/08/07 09:46:53 ache Exp $
 #
 
 PORTNAME=	X11
@@ -19,8 +19,6 @@ DISTFILES += Type1.koi8-r.free.tgz
 .endif
 
 MAINTAINER=	ache@FreeBSD.org
-
-RUN_DEPENDS=	${X11BASE}/bin/xinit:${PORTSDIR}/x11/XFree86
 
 NO_WRKSUBDIR=   YES
 NO_BUILD=       YES
