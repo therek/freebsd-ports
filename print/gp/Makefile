@@ -2,7 +2,7 @@
 # Date created:		15 April 1997
 # Whom:			Kiriyama Kazuhiko<kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/print/gp/Makefile,v 1.14 2000/04/09 17:40:17 cpiazza Exp $
+# $FreeBSD: ports/print/gp/Makefile,v 1.15 2000/04/09 17:49:48 cpiazza Exp $
 #
 
 PORTNAME?=	gp
@@ -30,7 +30,7 @@ RUN_DEPENDS+=	${PREFIX}/bin/wish4.2:${PORTSDIR}/x11-toolkits/tk42
 LANGEXT=	en
 DOCDIRNAME=	Doc
 DOCEXT=
-pAPERSIZE=	letter
+PAPERSIZE=	letter
 .elif (${LANGUAGE} == "Japanese")
 ALL_TARGET=	ja filters
 LIB_DEPENDS=	tcl76jp.1:${PORTSDIR}/japanese/tcl76
