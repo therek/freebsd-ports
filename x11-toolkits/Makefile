@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.91 2000/08/25 16:38:02 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.92 2000/08/25 18:24:42 knu Exp $
 #
 
     SUBDIR += FWF
@@ -24,6 +24,7 @@
     SUBDIR += gtk13
     SUBDIR += gtkbe
     SUBDIR += gtkextra
+    SUBDIR += gtkextra--
     SUBDIR += gtkglarea
     SUBDIR += gtkstep
     SUBDIR += gtkstep-pastel
