@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.93 2001/06/22 13:04:48 keith Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.94 2001/07/30 05:52:32 clive Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -54,6 +54,7 @@
     SUBDIR += nvi-big5
     SUBDIR += nvi-euc-cn
     SUBDIR += nvi-euc-tw
+    SUBDIR += p5-Date-Chinese
     SUBDIR += pine4
     SUBDIR += pyDict
     SUBDIR += qe
