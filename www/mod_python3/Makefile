@@ -2,7 +2,7 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@freebsd-kr.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_python/Makefile,v 1.1 2000/10/28 01:20:02 will Exp $
 #
 
 PORTNAME=	mod_python
@@ -18,7 +18,7 @@ DISTFILES=      mod_python-${PORTVERSION}.tgz ${PYTHON_DISTFILE}
 MAINTAINER=	perky@freebsd-kr.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13 \
-		${LOCALBASE}/bin/${PYTHON_VERSION}:${PORTSDIR}/lang/python
+		${LOCALBASE}/bin/${PYTHON_VERSION}:${PORTSDIR}/lang/python15
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 APXS=			${PREFIX}/sbin/apxs
