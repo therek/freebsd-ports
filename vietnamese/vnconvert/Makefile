@@ -3,7 +3,7 @@
 # Date created:			  Fri Jan 05, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/vnconvert/Makefile,v 1.1 2001/01/06 07:20:10 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnconvert/Makefile,v 1.2 2001/02/06 13:13:34 olgeni Exp $
 #
 
 PORTNAME=	vnconvert
@@ -19,8 +19,10 @@ MAINTAINER=	obrien@FreeBSD.org
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=
+MAN1=		vnconvert.1
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/vnconvert ${PREFIX}/bin
+	@${INSTALL_MAN} ${FILESDIR}/vnconvert.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
