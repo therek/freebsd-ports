@@ -2,11 +2,11 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/xvile/Makefile,v 1.26 2000/06/01 13:29:42 gj Exp $
+# $FreeBSD: ports/editors/xvile/Makefile,v 1.27 2000/10/08 00:48:23 asami Exp $
 #
 
 PORTNAME=	xvile
-PORTVERSION=	9.1
+PORTVERSION=	9.2
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.phred.org/pub/vile/ \
 		ftp://id.wing.net/pub/pgf/vile/
