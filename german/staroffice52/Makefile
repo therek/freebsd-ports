@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice52/Makefile,v 1.16 2000/10/14 20:15:17 obrien Exp $
+# $FreeBSD: ports/german/staroffice52/Makefile,v 1.17 2000/11/02 14:12:32 jedgar Exp $
 #
 
 PORTNAME=	staroffice
@@ -31,6 +31,7 @@ DIST_SUBDIR=	staroffice52
 WRKSRC=		${WRKDIR}/office52
 TMPDIR=		${WRKDIR}/tmp
 LD_PATH=	${TMPDIR}:${WRKSRC}:${LINUXBASE}/lib:${LINUXBASE}/usr/lib
+INSTDB.INS=	${PREFIX}/office52/program/instdb.ins
 
 .include <bsd.port.pre.mk>
 
@@ -116,6 +117,9 @@ do-install:
 post-install:
 	@${PATCH} -s ${PREFIX}/office52/program/setup ${FILESDIR}/setup.patch
 	@${PATCH} -s ${PREFIX}/office52/program/soffice ${FILESDIR}/soffice.patch
+	@${CP} ${INSTDB.INS} ${INSTDB.INS}.orig
+	@${SED} -e 's%DefaultDestPath = "/usr/local/office52%DefaultDestPath = "office52%' \
+	    < ${INSTDB.INS}.orig > ${INSTDB.INS}
 
 install-user:
 	${PREFIX}/office52/program/setup
