@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.229 1999/11/01 04:04:08 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.230 1999/11/05 03:51:22 cpiazza Exp $
 #
 
     SUBDIR += ElectricFence
@@ -33,7 +33,6 @@
     SUBDIR += cssc
     SUBDIR += ctags
     SUBDIR += cutils
-    SUBDIR += cvslines
     SUBDIR += cvsweb
     SUBDIR += cweb
     SUBDIR += cxref
