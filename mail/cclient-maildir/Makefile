@@ -2,16 +2,15 @@
 # Date created:				2 July 2000
 # Whom:					Kelly Yancey <kbyanc@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/cclient-maildir/Makefile,v 1.1 2000/08/14 07:48:37 kbyanc Exp $
 #
 
 PORTNAME=	c-client-maildir
 PORTVERSION=	4.7c
 CATEGORIES=	mail devel
-MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/ \
-		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/ \
-		http://mirror.nucba.ac.jp/mirror/imap/ \
-		ftp://ftp.uni-halle.de/pub/mail/pine/
+MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/old/ \
+		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/imap/old/ \
+		http://mirror.nucba.ac.jp/mirror/imap/old/
 DISTNAME=	imap-${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 DISTFILES=	${DISTNAME}2${EXTRACT_SUFX}
