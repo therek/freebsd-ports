@@ -1,9 +1,9 @@
 # New ports collection makefile for:	semi-current for emacs
-# Version required:	1.13.6
+# Version required:	1.13.7
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.12 1999/10/16 06:01:26 shige Exp $
+# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.13 1999/10/18 16:21:05 shige Exp $
 #
 
 DISTNAME=	semi-${SEMI_VER}
@@ -19,7 +19,7 @@ PORTCLASS?=	master
 
 # distfile version
 FLIM_VER=	1.13.2
-SEMI_VER=	1.13.6
+SEMI_VER=	1.13.7
 # setupel filename
 SEMI_SETUPEL=	semi-setupel.el
 # document install directory by install-doc target

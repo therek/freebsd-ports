@@ -1,9 +1,9 @@
 # New ports collection makefile for:	semi-current for emacs20
-# Version required:	1.13.6
+# Version required:	1.13.7
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs20-current/Makefile,v 1.11 1999/08/31 06:43:20 mharo Exp $
+# $FreeBSD: ports/editors/semi-emacs20-current/Makefile,v 1.12 1999/10/11 06:22:05 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
