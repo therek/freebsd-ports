@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.646 2005/03/11 02:55:58 ahze Exp $
+# $FreeBSD: ports/MOVED,v 1.647 2005/03/11 10:12:07 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1444,4 +1444,3 @@ games/scorched3d-devel|games/scorched3d|2005-03-04|move to non-devel directory
 net/lmd||2005-03-04|Project dead and disappeared
 net/loadd||2005-03-04|Project dead and disappeared
 games/QNetChess|games/qnetchess|2005-03-09|port name lowercased
-www/linux-mozillafirebird|www/linux-firefox|2005-03-11|project renamed
