@@ -2,11 +2,11 @@
 # Date created:				July 27th 2000
 # Whom:	      				Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.5 2001/05/10 01:20:51 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mail-Sender
-PORTVERSION=	0.7.10
+PORTVERSION=	0.7.14
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
@@ -22,8 +22,9 @@ PERL_CONFIGURE=	yes
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Mail::Sender.3
 
-.if defined(BATCH)
 post-patch:
+	${PERL} -pi -e '$$_="" if /\bwarnings\b/' ${WRKSRC}/Sender.pm
+.if defined(BATCH)
 	${PERL} -pi -e 's/res = <STDIN>;/res = "N";/' ${WRKSRC}/Config.PL
 .endif
 
