@@ -2,7 +2,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmail-contrib/Makefile,v 1.3 2000/01/25 11:08:58 nbm Exp $
+# $FreeBSD: ports/mail/qmail-contrib/Makefile,v 1.4 2000/04/13 20:00:38 cpiazza Exp $
 #
 
 PORTNAME=	qmail-contrib
@@ -52,8 +52,8 @@ NO_MTREE=	yes
 
 pre-patch:
 	@cd ${WRKFF} \
-	&& ${PATCH} -s <${FILESDIR}/patch-newaliases
-#	&& ${PATCH} <${FILESDIR}/patch-striplocal
+	&& ${PATCH} -s <${PATCHDIR}/extra-patch-newaliases
+#	&& ${PATCH} <${PATCHDIR}/extra-patch-striplocal
 #	apparently the above patch is no longer needed
 
 post-patch:
