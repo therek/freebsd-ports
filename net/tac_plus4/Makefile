@@ -2,17 +2,17 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.13 2000/04/09 18:13:38 cpiazza Exp $
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.14 2000/07/05 12:36:44 tg Exp $
 #
 
 PORTNAME=	tac_plus
-PORTVERSION=	F4.0.3
+PORTVERSION=	F4.0.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp-eng.cisco.com/pub/tacacs/
-DISTNAME=	tac_plus.F4.0.3.alpha
+DISTNAME=	tac_plus.F4.0.4.alpha
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	tasic@lucky.net
+MAINTAINER=	andreas@FreeBSD.org
 
 ALL_TARGET=	tac_plus
 MAN1=		tac_plus.1
