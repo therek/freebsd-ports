@@ -1,8 +1,5 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.58 2000/10/20 15:48:45 kevlo Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.59 2000/11/01 09:39:59 kris Exp $
 #
-    SUBDIR += xemacs21
-    SUBDIR += xmms
-
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
     SUBDIR += FreeWnn-server
@@ -37,6 +34,7 @@
     SUBDIR += pine4
     SUBDIR += pyDict
     SUBDIR += rxvt
+    SUBDIR += rxvt-big5
     SUBDIR += stardict
     SUBDIR += ted
     SUBDIR += telnet
@@ -48,5 +46,6 @@
     SUBDIR += xcin
     SUBDIR += xcin25
     SUBDIR += xemacs
-
+    SUBDIR += xemacs21
+    SUBDIR += xmms
 .include <bsd.port.subdir.mk>
