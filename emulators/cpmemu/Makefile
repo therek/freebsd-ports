@@ -2,7 +2,7 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/emulators/cpmemu/Makefile,v 1.17 2000/04/12 04:55:17 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cpmemu
@@ -18,5 +18,7 @@ PATCHFILES=	cpm-0.2.1-glibc-rjm.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
+
+ONLY_FOR_ARCHS=	i386
 
 .include <bsd.port.mk>
