@@ -2,11 +2,11 @@
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.23 2001/03/01 15:52:33 archie Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.24 2001/05/16 01:30:42 archie Exp $
 #
 
 PORTNAME=	jikes
-PORTVERSION=	1.14
+PORTVERSION=	1.15
 CATEGORIES=	java
 MASTER_SITES=	http://oss.software.ibm.com/pub/jikes/
 
