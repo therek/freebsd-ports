@@ -2,7 +2,7 @@
 # Date created:		29 January 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/fasta3/Makefile,v 1.5 2001/05/07 12:16:33 jeh Exp $
+# $FreeBSD: ports/biology/fasta3/Makefile,v 1.6 2001/06/27 10:14:49 wjv Exp $
 #
 
 PORTNAME=	fasta3
@@ -41,7 +41,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${FASTA3_DOCDIR}
 .for docfile in ${FASTA3_DOCS}
-	@ ${INSTALL_MAN} ${WRKSRC}/${docfile} ${FASTA3_DOCDIR}
+	@ ${INSTALL_DATA} ${WRKSRC}/${docfile} ${FASTA3_DOCDIR}
 .endfor
 .endif
 .if !defined(BATCH)
