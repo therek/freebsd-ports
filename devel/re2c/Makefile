@@ -2,14 +2,13 @@
 # Date created:		14 May 1998
 # Whom:			Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/re2c/Makefile,v 1.4 2000/04/14 05:44:21 asami Exp $
+# $FreeBSD: ports/devel/re2c/Makefile,v 1.5 2001/02/20 22:25:02 eivind Exp $
 #
 
 PORTNAME=	re2c
 PORTVERSION=	0.9.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.tildeslash.org/re2c/ \
-		http://freesoftware.missouri.edu/pub/NetSW/SoftEng/CompilerConstruct/re2c/ \
 		http://www.tobez.org/download/port-mirrors/devel/re2c/
 
 MAINTAINER=	eivind@FreeBSD.org
