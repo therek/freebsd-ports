@@ -2,11 +2,11 @@
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.10 2001/02/14 12:48:45 kevlo Exp $
+# $FreeBSD: ports/databases/freetds/Makefile,v 1.11 2001/02/25 06:19:42 kevlo Exp $
 
 PORTNAME=	freetds
 PORTVERSION=	0.51
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/freetds
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--with-tdsver=7.0 \
+CONFIGURE_ARGS=	--with-tdsver=4.2 \
 		--enable-dbmfix
 INSTALLS_SHLIB=	yes
 
