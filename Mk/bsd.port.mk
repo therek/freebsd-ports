@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.448 2003/05/06 05:15:18 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.449 2003/05/14 16:47:31 anholt Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2910,8 +2910,7 @@ delete-package-list: delete-package-links-list
 .if !target(check-already-installed)
 check-already-installed:
 .if !defined(NO_PKG_REGISTER) && !defined(FORCE_PKG_REGISTER)
-	@if [ -d ${PKG_DBDIR}/${PKGNAME} -o \
-	    "x`${PKG_INFO} -q -O ${PKGORIGIN} 2> /dev/null`" != "x" ]; then \
+	@if [ -d ${PKG_DBDIR}/${PKGNAME} ]; then \
 		${ECHO_CMD} "===>  ${PKGNAME} is already installed - perhaps an older version?"; \
 		${ECHO_CMD} "      If so, you may wish to \`\`make deinstall'' and install"; \
 		${ECHO_CMD} "      this port again by \`\`make reinstall'' to upgrade it properly."; \
@@ -3263,13 +3262,11 @@ reinstall:
 
 .if !target(deinstall)
 deinstall:
-	@deinstall_name=`${PKG_INFO} -q -O ${PKGORIGIN} 2> /dev/null`; \
-	${TEST} -z $${deinstall_name} && deinstall_name=${PKGNAME}; \
-	${ECHO_MSG} "===>  Deinstalling for ${PKGORIGIN} ($${deinstall_name})"; \
-	if ${PKG_INFO} -e $${deinstall_name}; then \
-		${PKG_DELETE} -f $${deinstall_name}; \
+	@${ECHO_MSG} "===>  Deinstalling for ${PKGNAME}"
+	@if ${PKG_INFO} -e ${PKGNAME}; then \
+		${PKG_DELETE} -f ${PKGNAME}; \
 	 else \
-	    ${ECHO_MSG} "===>   ${PKGORIGIN} not installed, skipping"; \
+		${ECHO_MSG} "===>   ${PKGNAME} not installed, skipping"; \
 	 fi
 	@${RM} -f ${INSTALL_COOKIE} ${PACKAGE_COOKIE}
 .endif
