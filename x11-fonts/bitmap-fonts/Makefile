@@ -2,15 +2,15 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.16 2001/01/16 17:33:14 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bitmap-fonts
-PORTVERSION=	${BITMAP_FONTS_VER}${BITMAP_FONTS_PREVER:S/pre/.p/}
+PORTVERSION=	${BITMAP_FONTS_VER}
 CATEGORIES=	x11-fonts elisp
 MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/ \
 		ftp://ftp.jpl.org/pub/elisp/bitmap/snapshots/
-DISTNAME=	${PORTNAME}-${BITMAP_FONTS_VER}${BITMAP_FONTS_PREVER}
+DISTNAME=	${PORTNAME}-${BITMAP_FONTS_VER}
 
 MAINTAINER=	shige@FreeBSD.org
 
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
 
 # distfile version
 BITMAP_FONTS_VER=	1.0
-BITMAP_FONTS_PREVER=	pre4
 BITMAP_FONTS_SIZE=	12 14 16 20 24
 FONTSDIR=	lib/X11/fonts/local
 PKGINSTALL=	${WRKDIR}/INSTALL
