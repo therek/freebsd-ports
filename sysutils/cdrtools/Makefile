@@ -3,10 +3,10 @@
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.22 1999/09/24 20:39:27 dirk Exp $
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.23 1999/10/19 12:39:14 dirk Exp $
 #
 
-DISTNAME=	cdrecord-1.8a30
+DISTNAME=	cdrecord-1.8a31
 CATEGORIES=	sysutils audio
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/ \
 		ftp://ftp.cs.tu-berlin.de/pub/misc/cdrecord/alpha/ \
