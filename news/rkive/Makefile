@@ -3,13 +3,13 @@
 # Date created:		03 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/news/rkive/Makefile,v 1.6 1999/08/30 14:31:51 peter Exp $
+# $FreeBSD: ports/news/rkive/Makefile,v 1.7 1999/08/31 06:49:37 mharo Exp $
 #
 
 DISTNAME=	rkive3.1
 PKGNAME=	rkive-3.1
 CATEGORIES=	news
-MASTER_SITES=	ftp://ftp.sterling.com/rkive/
+MASTER_SITES=	ftp://ftp.vmunix.org/pub/misc/rkive/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	torstenb@FreeBSD.org
