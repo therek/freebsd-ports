@@ -2,11 +2,11 @@
 # Date created:				16 November 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/www/skipstone/Makefile,v 1.6 2001/07/25 22:51:24 eric Exp $
+# $FreeBSD: ports/www/skipstone/Makefile,v 1.7 2001/08/09 22:37:41 eric Exp $
 #
 
 PORTNAME=	skipstone
-PORTVERSION=	0.7.4
+PORTVERSION=	0.7.5
 CATEGORIES=	www
 MASTER_SITES=	http://www.muhri.net/skipstone/
 
