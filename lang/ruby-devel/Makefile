@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.9 2001/06/01 12:17:24 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.10 2001/06/04 14:54:32 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
@@ -98,14 +98,14 @@ post-install:
 		-e ' end;' \
 		-e 'end' \
 		${IRB_WITH_SUFFIX}
-.if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}
+	${MKDIR} ${RUBY_DOCDIR}
+.if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}
 	${MKDIR} ${RUBY_EXAMPLESDIR}/curses
 	${INSTALL_DATA} ${WRKSRC}/ext/curses/hello.rb ${WRKSRC}/ext/curses/rain.rb ${WRKSRC}/ext/curses/view.rb ${RUBY_EXAMPLESDIR}/curses
 	${MKDIR} ${RUBY_EXAMPLESDIR}/pty
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/expect_sample.rb ${WRKSRC}/ext/pty/script.rb ${WRKSRC}/ext/pty/shl.rb ${RUBY_EXAMPLESDIR}/pty
-	${MKDIR} ${RUBY_DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/README* ${RUBY_DOCDIR}
 	${MKDIR} ${RUBY_DOCDIR}/etc
 	${INSTALL_DATA} ${WRKSRC}/ext/etc/etc.txt* ${RUBY_DOCDIR}/etc
