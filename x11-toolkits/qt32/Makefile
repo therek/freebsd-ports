@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.75 2001/02/22 14:15:37 alex Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.76 2001/03/05 12:00:08 will Exp $
 #
 
 PORTNAME?=	qt
@@ -13,7 +13,7 @@ DISTNAME=	qt-x11-${PORTVERSION}
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	mng.0:${PORTSDIR}/graphics/libmng \
+LIB_DEPENDS=	mng.1:${PORTSDIR}/graphics/libmng \
 		png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
