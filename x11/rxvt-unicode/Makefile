@@ -3,7 +3,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.28 1999/08/31 02:50:38 peter Exp $
 #
 
 DISTNAME=	rxvt-2.6.1
@@ -23,5 +23,8 @@ CONFIGURE_ARGS=	--enable-utmp --enable-wtmp \
 		--with-xpm --enable-xpm-background --enable-transparency
 USE_BZIP2=	yes
 MAN1=		rxvt.1
+
+post-install:
+	@${CHMOD} 4711 ${PREFIX}/bin/rxvt
 
 .include <bsd.port.mk>

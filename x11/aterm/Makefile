@@ -3,7 +3,7 @@
 # Date created:		17 January 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/aterm/Makefile,v 1.7 1999/08/31 02:50:08 peter Exp $
 #
 
 DISTNAME=	aterm-0.3.6
@@ -24,5 +24,8 @@ CONFIGURE_ARGS=	--enable-transparency --enable-background-image \
 		--enable-fading --enable-utmp --enable-wtmp
 
 MAN1=		aterm.1
+
+post-install:
+	@${CHMOD} 4711 ${PREFIX}/bin/aterm
 
 .include <bsd.port.mk>

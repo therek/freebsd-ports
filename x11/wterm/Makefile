@@ -3,7 +3,7 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.5 1999/08/31 02:50:43 peter Exp $
 #
 
 DISTNAME=	wterm-6.2.6
@@ -24,5 +24,8 @@ CONFIGURE_ARGS=	--enable-transparency --enable-xpm-background \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
 
 MAN1=		wterm.1
+
+post-install:
+	@${CHMOD} 4711 ${PREFIX}/bin/wterm
 
 .include <bsd.port.mk>
