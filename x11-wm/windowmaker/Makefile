@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.84 2001/05/27 15:31:05 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -64,6 +64,8 @@ pre-extract:
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/WPrefs.app/Paths.c
 	@${PERL} -pi -e "s|%%PERL%%|${PERL}|g" ${WRKSRC}/util/wm-oldmenu2new
+	@${PERL} -pi -e "s|/usr/local/GNUstep|${PREFIX}/GNUstep|g" \
+		${WRKSRC}/WindowMaker/menu*
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/WindowMaker/Sounds
