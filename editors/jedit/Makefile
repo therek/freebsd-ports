@@ -2,11 +2,11 @@
 # Date created:				22 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jedit/Makefile,v 1.12 2001/04/23 10:39:42 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jedit
-PORTVERSION=	3.1.0
+PORTVERSION=	3.2.0
 CATEGORIES=	editors java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://members.nbci.com/romainguy/ \
