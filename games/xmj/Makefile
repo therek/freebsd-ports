@@ -2,14 +2,14 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xmj/Makefile,v 1.9 1999/08/25 06:05:40 obrien Exp $
+# $FreeBSD: ports/games/xmj/Makefile,v 1.10 2000/04/14 12:27:46 asami Exp $
 #
 
 PORTNAME=	xmj
 PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://forte.mathematik.uni-bremen.de/pub/comp/X11/
-DISTNAME=       ${PORTVERSION}
+DISTNAME=       ${PORTNAME}
 
 MAINTAINER=	swallace@FreeBSD.org
 

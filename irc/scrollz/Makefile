@@ -2,14 +2,14 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/scrollz/Makefile,v 1.5 2000/03/22 01:59:21 will Exp $
+# $FreeBSD: ports/irc/scrollz/Makefile,v 1.6 2000/04/12 06:28:26 obrien Exp $
 #
 
 PORTNAME=	scrollz
 PORTVERSION=	1.8i6
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ns0.hole.org/pub/ScrollZ/Bins/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-fbsd-3.4
+DISTNAME=	${PORTNAME}-18i6-fbsd-3.4
 EXTRACT_SUFX=	.bz2
 
 MAINTAINER=	will@FreeBSD.org
