@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.430 2001/02/10 12:24:31 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.431 2001/02/11 09:32:31 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -167,6 +167,7 @@
     SUBDIR += libsock
     SUBDIR += libstash
     SUBDIR += libtai
+    SUBDIR += libtecla
     SUBDIR += libtool
     SUBDIR += libunicode
     SUBDIR += libxalloc
