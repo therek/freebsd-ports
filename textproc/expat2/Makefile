@@ -2,7 +2,7 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.2 1999/08/31 02:09:14 peter Exp $
+# $FreeBSD: ports/textproc/expat/Makefile,v 1.3 2000/04/09 21:52:31 cpiazza Exp $
 #
 
 PORTNAME=	expat
@@ -16,11 +16,17 @@ MAINTAINER=	dirk@FreeBSD.org
 
 USE_ZIP=	yes
 
+SHLIB_MAJOR=	1
+
+PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmlwf/xmlwf ${PREFIX}/bin
 	${MKDIR} ${PREFIX}/include/xml
 	${INSTALL_DATA} ${WRKSRC}/xmlparse/xmlparse.h ${PREFIX}/include/xml
 	${INSTALL_DATA} ${WRKSRC}/xmltok/xmltok.h ${PREFIX}/include/xml
 	${INSTALL_DATA} ${WRKSRC}/libexpat.a ${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/libexpat.so ${PREFIX}/lib/libexpat.so.${SHLIB_MAJOR}
+	${LN} -s libexpat.so.${SHLIB_MAJOR} ${PREFIX}/lib/libexpat.so
 
 .include <bsd.port.mk>
