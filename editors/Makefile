@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.129 2000/09/19 17:56:54 ade Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.130 2000/09/26 15:26:18 knu Exp $
 #
 
     SUBDIR += AbiWord
@@ -137,5 +137,6 @@
     SUBDIR += xenon
     SUBDIR += xvile
     SUBDIR += yudit
+    SUBDIR += zile
 
 .include <bsd.port.subdir.mk>
