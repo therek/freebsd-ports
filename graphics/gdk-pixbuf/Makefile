@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.9 2000/04/21 16:07:36 ade Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.10 2000/05/22 19:58:20 ade Exp $
 #
 
 PORTNAME=	gdk-pixbuf
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/gdk-pixbuf
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

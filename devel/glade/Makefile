@@ -2,17 +2,18 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.21 2000/04/17 00:17:18 reg Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.22 2000/05/17 16:34:24 ade Exp $
 #
 
 PORTNAME=	glade
-PORTVERSION=	0.5.8
+PORTVERSION=	0.5.9
 CATEGORIES=	devel gnome
-MASTER_SITES=   http://glade.pn.org/
+MASTER_SITES=   ${MASTER_SITE_GNOME}
+MASTER_SITE_SUBDIR=	stable/sources/glade
 
 MAINTAINER=     ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -2,7 +2,7 @@
 # Date created:				18 August 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/libglade/Makefile,v 1.11 2000/04/11 21:28:40 mharo Exp $
+# $FreeBSD: ports/devel/libglade/Makefile,v 1.12 2000/05/22 18:54:39 ade Exp $
 #
 
 PORTNAME=	libglade
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	stable/sources/libglade
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		xml.5:${PORTSDIR}/textproc/libxml
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.18 2000/04/09 17:49:39 cpiazza Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.19 2000/05/17 16:31:28 ade Exp $
 #
 
 PORTNAME=	ggv
@@ -13,16 +13,14 @@ MASTER_SITE_SUBDIR=	stable/sources/ggv
 
 MAINTAINER=	ade@FreeBSD.org
 
-BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS= --localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"

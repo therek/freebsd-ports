@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.19 2000/01/07 02:06:02 nakai Exp $
+# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.20 2000/04/13 06:28:17 obrien Exp $
 #
 
 PORTNAME=	electriceyes
@@ -14,8 +14,7 @@ DISTNAME=	ee-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
@@ -23,8 +22,7 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"

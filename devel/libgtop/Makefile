@@ -2,18 +2,18 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.28 2000/02/18 02:14:06 ade Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.29 2000/04/11 21:28:42 mharo Exp $
 #
 
 PORTNAME=	libgtop
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.9
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libgtop
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		guile.6:${PORTSDIR}/lang/guile
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
@@ -24,5 +24,13 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+post-install:
+	if [ ! -f ${PREFIX}/info/dir ]; then \
+	${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/info/dir; \
+	fi
+	install-info --section="Programming \& development tools" \
+	--entry="* libgtop: (libgtop).	libgtop programming manual" \
+	${PREFIX}/info/libgtop.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
