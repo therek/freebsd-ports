@@ -2,11 +2,11 @@
 # Date created:		10 April 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-rudl/Makefile,v 1.2 2001/04/17 13:03:50 knu Exp $
+# $FreeBSD: ports/devel/ruby-rudl/Makefile,v 1.3 2001/04/18 16:54:42 knu Exp $
 #
 
 PORTNAME=	rudl
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://froukepc.dhs.org/rudl/download/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -25,7 +25,7 @@ USE_RUBY_EXTCONF=	yes
 CONFIGURE_ARGS=	--with-sdl-config="sdl11-config"
 INSTALL_TARGET=	site-install
 
-DOCS=		README
+DOCS=		Readme
 
 post-patch:
 	${RUBY} -i -pe 'gsub %r:\.\./:, ""' ${WRKSRC}/samples/*.rb
