@@ -2,11 +2,11 @@
 # Date created:			26 December 1999
 # Whom:	      			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/misc/p5-I18N-Charset/Makefile,v 1.2 2000/04/14 08:46:25 asami Exp $
+# $FreeBSD: ports/misc/p5-I18N-Charset/Makefile,v 1.3 2000/11/13 12:44:08 demon Exp $
 #
 
 PORTNAME=	I18N-Charset
-PORTVERSION=	1.03
+PORTVERSION=	1.04
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	I18N
