@@ -2,13 +2,13 @@
 # Date created:         7 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.14 2000/04/08 23:17:45 mharo Exp $
+# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.15 2000/09/22 01:58:51 kris Exp $
 #
 
 PORTNAME=	hpack
 PORTVERSION=	0.79a
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://src.doc.ic.ac.uk/packages/hpack/
+MASTER_SITES=   ftp://src.doc.ic.ac.uk/Mirrors/sunsite.doc.ic.ac.uk/hpack/
 DISTNAME=	hpack79src
 
 MAINTAINER=	ache@FreeBSD.org
