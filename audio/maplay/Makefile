@@ -3,7 +3,7 @@
 # Date created:         Feb 13 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/audio/maplay/Makefile,v 1.9 1999/08/25 04:35:48 obrien Exp $
+# $FreeBSD: ports/audio/maplay/Makefile,v 1.10 1999/09/27 02:18:09 steve Exp $
 #
 
 DISTNAME=       maplay1_2
@@ -15,15 +15,9 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
-PATCH_STRIP=	-p2
-
-do-build:
-	@(cd ${WRKSRC}; make pre-install)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/maplay ${PREFIX}/bin
-
-post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/maplay
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/maplay
