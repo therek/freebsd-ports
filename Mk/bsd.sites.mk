@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.123 2002/12/26 17:06:29 marcus Exp $
+# $FreeBSD$
 #
 
 # Where to put distfiles that don't have any other master site
@@ -252,7 +252,7 @@ MASTER_SITE_PERL_CPAN+=	\
 
 MASTER_SITE_REDHAT_LINUX+= \
 	ftp://ftp.rutgers.edu/pub/redhat/linux/%SUBDIR%/ \
-	ftp://ftp.redhat.com/redhat/linux/%SUBDIR%/ \
+	ftp://ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.redhat.com/pub/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.riken.go.jp/pub/Linux/redhat/releases/%SUBDIR%/ \
