@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.155 2001/05/28 14:42:06 joerg Exp $
+# $FreeBSD: ports/print/Makefile,v 1.156 2001/06/10 13:49:55 dirk Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -19,6 +19,7 @@
     SUBDIR += bibcard
     SUBDIR += bibview
     SUBDIR += bjfilter850
+    SUBDIR += bjfilter850ug
     SUBDIR += bjfilter860
     SUBDIR += bjfilter870
     SUBDIR += bjfiltercom
