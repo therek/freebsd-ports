@@ -2,7 +2,7 @@
 # Date created:				Thu Aug 16 12:42:18 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmcube-gdk/Makefile,v 1.1 2001/08/30 04:24:24 lioux Exp $
+# $FreeBSD: ports/sysutils/wmcube-gdk/Makefile,v 1.2 2001/09/26 03:07:37 lioux Exp $
 #
 
 PORTNAME=	wmcube
@@ -27,15 +27,15 @@ do-install:
 
 post-install:
 .for files in *.wmc
-	@${MKDIR} ${PREFIX}/share/${DISTNAME}
+	@${MKDIR} ${DATADIR}${PKGNAMESUFFIX}
 	@${INSTALL_DATA} ${WRKSRC}/3dObjects/${files} \
-		${PREFIX}/share/${DISTNAME}
+		${DATADIR}${PKGNAMESUFFIX}
 .endfor
 .ifndef(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/${DISTNAME}
+	@${MKDIR} ${DOCSDIR}${PKGNAMESUFFIX}
 .for file in CHANGES README README.GDK TODO
 	@${INSTALL_DATA} ${WRKSRC}/${file} \
-		${PREFIX}/share/doc/${DISTNAME}
+		${DOCSDIR}${PKGNAMESUFFIX}
 .endfor
 .endif #NOPORTDOCS
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|" ${PKGMESSAGE}
