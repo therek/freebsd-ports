@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.48 2000/12/19 08:35:53 will Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.49 2000/12/19 10:39:57 will Exp $
 #
 
     SUBDIR += aish
@@ -27,6 +27,7 @@
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-Convert-UUlib
     SUBDIR += p5-MIME-Base64
+    SUBDIR += p5-Text-Iconv
     SUBDIR += p5-Unicode-Map8
     SUBDIR += p5-Unicode-String
     SUBDIR += recode
