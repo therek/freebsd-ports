@@ -2,7 +2,7 @@
 # Date created:		09 Feb 2001
 # Whom:			Pekka Nikander <Pekka.Nikander@iki.fi>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/geheimnis/Makefile,v 1.1 2001/08/29 04:54:58 petef Exp $
 #
 
 PORTNAME=	geheimnis
@@ -34,5 +34,6 @@ post-install:
 	@cd ${WRKSRC}/geheimniskeepopen && \
 		${SETENV} ${MAKE_ENV} ${MAKE} install
 	strip ${PREFIX}/bin/geheimniskeepopen
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
