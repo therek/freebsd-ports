@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/misc/patchutils/pkg-plist,v 1.3 2002/08/16 12:55:56 naddy Exp $
 bin/combinediff
 bin/editdiff
 bin/filterdiff
@@ -6,7 +6,7 @@ bin/fixcvsdiff
 bin/grepdiff
 bin/interdiff
 bin/lsdiff
-bin/rediff
 bin/recountdiff
+bin/rediff
 bin/splitdiff
 bin/unwrapdiff
