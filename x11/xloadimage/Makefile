@@ -2,7 +2,7 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.25 2001/09/11 02:30:09 ache Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.26 2001/09/23 19:50:42 dwcjr Exp $
 #
 
 VERSION=	4.1
@@ -54,6 +54,6 @@ do-install:
 		${PREFIX}/share/examples/xloadimage/xloadimagerc
 
 post-install:
-	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
+	@PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>
