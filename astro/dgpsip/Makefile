@@ -1,18 +1,18 @@
 # New ports collection makefile for:    dgpsip
 # Version required:			1.25
 # Date created:         		05 Jun 1999
-# Whom:                 		Daniel Baker <dbaker@freebsd.org>
+# Whom:                 		Daniel Baker <dbaker@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/dgpsip/Makefile,v 1.2 1999/08/25 04:22:40 obrien Exp $
 #
 
-DISTNAME=	dgpsip-1.25
+DISTNAME=	dgpsip-1.29
 CATEGORIES=	astro
 MASTER_SITES=	http://www.wsrcc.com/wolfgang/ftp/
 
-MAINTAINER=     dbaker@freebsd.org
+MAINTAINER=     dbaker@FreeBSD.org
 
-DISTFILES=	dgpsip-1.25.tar.gz
+DISTFILES=	dgpsip-1.29.tar.gz
 
 GNU_CONFIGURE=	YES
 
