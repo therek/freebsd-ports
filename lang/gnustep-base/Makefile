@@ -2,7 +2,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.12 2000/04/11 21:28:09 mharo Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.13 2000/08/23 10:49:46 tg Exp $
 #
 
 PORTNAME=	gnustep
@@ -46,5 +46,17 @@ GNU_ARCH=	ix86
 GNU_ARCH=	${MACHINE_ARCH}
 .endif
 PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} VERSION=${PORTVERSION}
+
+ETCDIR=		${PREFIX}/../etc
+
+post-patch:
+.for f in bundle gswapp gswbundle woapp wobundle
+	${PERL} -pi -e 's/\$$\(TAR\) ch --exclude=CVS --to-stdout/\$$\(TAR\) -ch --exclude=CVS -f -/g' ${WRKSRC}/make/${f}.make
+.endfor
+
+post-install:
+	@${MKDIR} ${ETCDIR}
+	${INSTALL_SCRIPT} ${FILESDIR}/GNUstep.sh ${ETCDIR}/rc.d
+	${INSTALL_DATA} ${FILESDIR}/gdomap_if ${ETCDIR}
 
 .include <bsd.port.post.mk>
