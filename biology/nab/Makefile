@@ -1,7 +1,7 @@
 # New ports collection Makefile for: nab
 # Date created:         Sept. 10, 2000
 # Whom:                 M. L. Dodson <bdodson@scms.utmb.edu>
-# $FreeBSD: ports/biology/nab/Makefile,v 1.2 2001/05/27 13:49:52 ijliao Exp $
+# $FreeBSD: ports/biology/nab/Makefile,v 1.3 2001/06/01 06:04:45 obrien Exp $
 
 PORTNAME=	nab
 PORTVERSION=	4.3.2
@@ -12,6 +12,7 @@ MAINTAINER=	bdodson@scms.utmb.edu
 
 MAKE_ENV+=	NABHOME=${WRKSRC} ARCH= PATH=${WRKSRC}/bin:${PATH}
 
+USE_BISON=	yes
 MAN1=		nab.1
 MANCOMPRESSED=	yes
 
