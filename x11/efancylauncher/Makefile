@@ -2,13 +2,13 @@
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/efancylauncher/Makefile,v 1.5 2001/08/23 00:11:45 jhb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	E-FancyLauncher
 PORTVERSION=	0.7
 CATEGORIES=	x11
-MASTER_SITES=	http://www.docs.uu.se/~adavid/Epplets/
+MASTER_SITES=	http://user.it.uu.se/~adavid/Epplets/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jhb@FreeBSD.org
