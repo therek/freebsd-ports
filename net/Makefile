@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.599 2001/08/24 07:06:19 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.600 2001/08/25 11:20:49 kris Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -62,6 +62,7 @@
     SUBDIR += dante
     SUBDIR += datapipe
     SUBDIR += ddc
+    SUBDIR += ddclient
     SUBDIR += ddup
     SUBDIR += delegate
     SUBDIR += despoof
