@@ -2,13 +2,14 @@
 # Date created:		27 October 1997
 # Whom:			dglo@ssec.wisc.edu
 #
-# $FreeBSD: ports/net/nslint/Makefile,v 1.12 2001/04/21 22:16:59 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nslint
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.a2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.a/a/}
 
 MAINTAINER=	petef@FreeBSD.org
 
