@@ -3,11 +3,12 @@
 # Date created:		Jan 29, 2001
 # Whom:			clive
 #
-# $FreeBSD: ports/net/dictd-database/Makefile,v 1.4 2001/01/30 19:14:41 clive Exp $
+# $FreeBSD: ports/net/dictd-database/Makefile,v 1.5 2001/04/16 02:49:41 ijliao Exp $
 #
 
 PORTNAME=	dictd-database
 PORTVERSION=	20010416
+PORTREVISION=	1
 # clive: Ok, I have no idea how to name this somewhat-meta-port
 CATEGORIES=	net textproc
 MASTER_SITES=	ftp://ftp.dict.org/pub/dict/pre/
@@ -19,12 +20,15 @@ DISTFILES=	devils-dict-pre.tar.gz dict-gazetteer-1.2-pre.tar.gz \
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-NO_WRKSUBDIR=	yes
-NO_BUILD=	yes
+BUILD_DEPENDS=	${LOCALBASE}/bin/dictzip:${PORTSDIR}/net/dictd
+
+do-build:
+# Do nothing
 
 do-install:
 	@${MKDIR} ${PREFIX}/lib/dict
 	@${INSTALL_DATA} ${WRKDIR}/*.index ${PREFIX}/lib/dict
 	@${INSTALL_DATA} ${WRKDIR}/*.dict* ${PREFIX}/lib/dict
+	@(cd ${LOCALBASE}/lib/dict && ${LOCALBASE}/bin/dictzip vera.dict)
 
 .include <bsd.port.mk>

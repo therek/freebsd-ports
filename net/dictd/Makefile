@@ -3,18 +3,16 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/dictd/Makefile,v 1.4 2001/01/28 21:23:04 clive Exp $
+# $FreeBSD: ports/net/dictd/Makefile,v 1.5 2001/01/30 19:17:02 clive Exp $
 #
 
 PORTNAME=	dictd
 PORTVERSION=	1.5.5
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net textproc
 MASTER_SITES=	ftp://ftp.dict.org/pub/dict/
 
 MAINTAINER=	ijliao@FreeBSD.org
-
-RUN_DEPENDS=	${LOCALBASE}/lib/dict/wn.index:${PORTSDIR}/net/dictd-database
 
 MAN1=		dictzip.1
 MAN8=		dictd.8
