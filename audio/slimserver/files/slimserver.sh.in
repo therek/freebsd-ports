@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/audio/slimserver/files/slimserver.sh,v 1.1 2004/04/16 13:13:30 krion Exp $
+# $FreeBSD: ports/audio/slimserver/files/slimserver.sh.in,v 1.2 2004/05/03 22:59:03 brooks Exp $
 #
 
 # PROVIDE: slimserver
