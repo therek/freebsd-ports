@@ -2,11 +2,12 @@
 # Date created:         Fri Feb 18 03:04:36 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.10 2000/11/16 19:12:45 sumikawa Exp $
+# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.11 2001/01/01 10:15:11 will Exp $
 #
 
 PORTNAME=	apache+ipv6
 PORTVERSION=	1.3.14
+PORTREVISION=	1
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -26,7 +27,7 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 DISTNAME=	apache_${PORTVERSION}
 
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=	apache-1.3.14-v6-20001114.diff.gz
+PATCHFILES=	apache-1.3.14-v6-20010115a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sumikawa@FreeBSD.org
