@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					rmiya
 #
-# $FreeBSD: ports/biology/chemeq/Makefile,v 1.1 2000/07/10 03:14:14 steve Exp $
+# $FreeBSD$
 
 PORTNAME=	chemeq
 PORTVERSION=	1.10
@@ -11,6 +11,8 @@ MASTER_SITES=	ftp://boltz.univ-littoral.fr/pub/chemeq/
 DISTNAME=	chemeq-V110
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
+
+BROKEN=		"Does not build"
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
