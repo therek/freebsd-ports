@@ -2,13 +2,13 @@
 # Date created:				14 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/moleskine/Makefile,v 1.2 2001/01/12 15:08:08 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	moleskine
-PORTVERSION=	0.5
+PORTVERSION=	0.6.1
 CATEGORIES=	editors python gnome
-MASTER_SITES=	http://www.moleskine.f2s.com/
+MASTER_SITES=	http://www.moleskine.f2s.com/files/
 DISTNAME=	${PORTNAME:S/^m/M/}-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
@@ -31,6 +31,7 @@ do-install:
 	${MKDIR} ${INST_DIR}/images
 	${MKDIR} ${CONF_DIR}
 	${INSTALL_DATA} ${WRKSRC}/LanguageModes ${CONF_DIR}
+	${INSTALL_DATA} ${WRKSRC}/Preferences ${CONF_DIR}
 	${INSTALL_SCRIPT} ${WRKSRC}/moleskine ${INST_DIR}
 	${LN} -sf ${INST_DIR}/moleskine ${PREFIX}/bin/moleskine
 	${INSTALL_DATA} ${WRKSRC}/Moleskine/*.py ${WRKSRC}/Moleskine/*.pyc ${INST_DIR}/Moleskine
