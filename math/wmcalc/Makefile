@@ -2,13 +2,14 @@
 # Date created:				28 March 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/math/wmcalc/Makefile,v 1.6 2001/01/05 17:59:46 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmcalc
 PORTVERSION=	0.3
 CATEGORIES=	math windowmaker
-MASTER_SITES=	http://members.access1.net/ehflora/wmcalc/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR= jedgar
 
 MAINTAINER=	jedgar@FreeBSD.org
 
