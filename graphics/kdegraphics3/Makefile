@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kdegraphics
-# Version required:    Beta1
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.32 2000/02/15 13:46:27 imura Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.33 2000/02/24 07:00:56 asami Exp $
 #
 
-DISTNAME=	kdegraphics-1.1.2
+PORTNAME=	kdegraphics
+PORTVERSION=	1.1.2
 CATEGORIES=	graphics kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2

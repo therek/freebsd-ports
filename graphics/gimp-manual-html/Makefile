@@ -1,16 +1,17 @@
 # New ports collection makefile for:	gimp-manual-1.0.0
-# Version required:	1.0.0
 # Date created:		5 June 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/graphics/gimp-manual-html/Makefile,v 1.13 1999/09/24 04:32:50 cpiazza Exp $
+# $FreeBSD: ports/graphics/gimp-manual-html/Makefile,v 1.14 2000/01/26 23:40:29 mph Exp $
 #
 
-DISTNAME=	GimpUserManual-1.0.0
-PKGNAME=	GimpUserManual-${DOCFORMAT}-1.0.0
+PORTNAME=	GimpUserManual
+PORTVERSION=	1.0.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://manual.gimp.org/pub/manual/ \
 		http://peloton.runet.edu/distfiles/
+PKGNAMESUFFIX=	-${DOCFORMAT}
+DISTNAME=	GimpUserManual-${PORTVERSION}
 
 MAINTAINER=	brett@peloton.runet.edu
 

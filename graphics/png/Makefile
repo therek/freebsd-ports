@@ -1,15 +1,15 @@
 # New ports collection makefile for:    PNG images library
-# Version required:     1*
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.19 1999/08/25 06:14:41 obrien Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.20 1999/11/20 03:00:31 jmz Exp $
 #
 
-DISTNAME=       libpng-1.0.5
-PKGNAME=        png-1.0.5
+PORTNAME=	png
+PORTVERSION=	1.0.5
 CATEGORIES=     graphics
 MASTER_SITES=   ftp://ftp.uu.net/graphics/png/src/
+DISTNAME=       lib${PKGNAME}
 
 MAINTAINER=     ache@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmGrabImage
-# Version required:	0.70
 # Date created:		4th November 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/wmgrabimage/Makefile,v 1.1 2000/01/05 19:57:00 ade Exp $
 #
 
-DISTNAME=	wmGrabImage-0.70
+PORTNAME=	wmGrabImage
+PORTVERSION=	0.70
 CATEGORIES=	graphics windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pgperl
-# Version required:     2.16
 # Date created:		22 December 1996
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.18 1999/12/08 06:59:52 asami Exp $
+# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.19 2000/04/04 18:43:53 jmz Exp $
 #
 
-DISTNAME=       PGPLOT-2.16
-PKGNAME=	pgperl-2.16
+PORTNAME=	pgperl
+PORTVERSION=	2.16
 CATEGORIES=     graphics perl5
 MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGPLOT
+DISTNAME=       PGPLOT-${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	png2html
-# Version required:			1.1
 # Date created:				11 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/png2html/Makefile,v 1.2 1999/11/21 01:03:24 cpiazza Exp $
+# $FreeBSD: ports/graphics/png2html/Makefile,v 1.3 1999/12/27 21:28:26 steve Exp $
 #
 
-DISTNAME=	png2html-1.1
+PORTNAME=	png2html
+PORTVERSION=	1.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.engr.mun.ca/~holden/
 

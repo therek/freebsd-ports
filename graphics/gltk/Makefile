@@ -1,16 +1,16 @@
 # New ports collection makefile for:	gltk
-# Version required:	1.0
 # Date created:		16 Feb 2000
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gltk/Makefile,v 1.1 2000/02/24 00:54:28 asami Exp $
 #
 
-DISTNAME=	libtk
-PKGNAME=	gltk-1.0
+PORTNAME=	gltk
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.sgi.com/opengl/contrib/ \
 		ftp://ftp.u-aizu.ac.jp/pub/os/sgi/misc/ftp.sgi.com/pub/opengl/contrib/
+DISTNAME=	libtk
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xpaint
-# Version required:	2.5.7
 # Date created:		2 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/graphics/xpaint/Makefile,v 1.36 1999/09/07 10:45:30 steve Exp $
+# $FreeBSD: ports/graphics/xpaint/Makefile,v 1.37 2000/03/21 15:45:55 jseger Exp $
 #
 
-DISTNAME=	xpaint-2.5.7
+PORTNAME=	xpaint
+PORTVERSION=	2.5.7
 CATEGORIES=	graphics
 MASTER_SITES=	http://home.worldonline.dk/~torsten/xpaint/ \
 		ftp://ftp.win.ne.jp/pub/graphics/

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	pstodit
-# Version required:	3.17
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.10 2000/03/09 10:02:43 tg Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.11 2000/03/09 10:09:09 tg Exp $
 #
 
-DISTNAME=	pstoedit_3_17
-PKGNAME=	pstoedit-3.17
+PORTNAME=	pstoedit
+PORTVERSION=	3.17
 CATEGORIES=	graphics print
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Network/1958/pstoedit/
+DISTNAME=	${PORTNAME}_3_17
 
 MAINTAINER=	jseger@FreeBSD.org
 

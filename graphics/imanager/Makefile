@@ -1,15 +1,15 @@
 # New ports collection makefile for: imanager
-# Version required:	2.0
 # Date created:		18 March 2000
 # Whom:			Cliff Rowley <dozprompt@onsea.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/imanager/Makefile,v 1.1.1.1 2000/03/21 01:22:18 will Exp $
 #
 
-DISTNAME=	imanager-2.0.final.imlib
-PKGNAME=	imanager-2.0
+PORTNAME=	imanager
+PORTVERSION=	2.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.digidezign.com/~imanager/
+DISTNAME=	imanager-${PORTVERSION}.final.imlib
 
 MAINTAINER=	dozprompt@onsea.com
 

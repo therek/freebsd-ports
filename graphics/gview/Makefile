@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gview
-# Version required:			0.1.12
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.11 2000/03/29 07:18:49 kris Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.12 2000/03/29 07:26:44 cpiazza Exp $
 #
 
-DISTNAME=	gview-0.1.12
+PORTNAME=	gview
+PORTVERSION=	0.1.12
 CATEGORIES=	graphics
 MASTER_SITES=	http://gview.netpedia.net/ \
 		http://homepages.petech.ac.za/~bruces/ \

@@ -1,17 +1,17 @@
 # New ports collection makefile for:	xmovie
-# Version required:	1.3
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.2 2000/02/16 15:40:24 imura Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.3 2000/02/28 08:33:41 asami Exp $
 #
 
-DISTNAME=	xmovie-i586-1.3.1
-PKGNAME=	xmovie-1.3.1
+PORTNAME=	xmovie
+PORTVERSION=	1.3.1
 CATEGORIES=	graphics linux
 MASTER_SITES=	http://people.FreeBSD.org/~imura/distfiles/
 # Distfile has no version info. The original site is below.
 # MASTER_SITES=	http://heroine.linuxbox.com/
+DISTNAME=	${PORTNAME}-i586-${PORTVERSION}
 
 PATCH_SITES=	${RPM_MIRRORS:S/__DIR__/${STDDIR}/g}
 PATCHFILES=	${RPM_LIBJPEG} ${RPM_LIBPNG}

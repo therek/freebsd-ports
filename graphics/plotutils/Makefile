@@ -1,12 +1,12 @@
 # New ports collection makefile for:	plotutils
-# Version required:	2.2
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.10 2000/03/01 03:57:09 chuckr Exp $
 #
 
-DISTNAME=	plotutils-2.3
+PORTNAME=	plotutils
+PORTVERSION=	2.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	plotutils

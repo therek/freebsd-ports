@@ -1,12 +1,12 @@
 # New ports collection makefile for:   sodipodi
-# Version required:    0.17
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.5 2000/03/21 17:47:33 ade Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.6 2000/03/28 02:54:50 ade Exp $
 #
 
-DISTNAME=	sodipodi-0.17
+PORTNAME=	sodipodi
+PORTVERSION=	0.17
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.ariman.ee/linux/sodipodi/
 

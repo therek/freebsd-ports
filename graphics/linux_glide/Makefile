@@ -1,16 +1,17 @@
 # New ports collection makefile for:    linux_glide
-# Version required:     2.4
 # Date created:         Oct, 8, 1998
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/graphics/linux_glide/Makefile,v 1.6 1999/08/25 05:49:23 obrien Exp $
+# $FreeBSD: ports/graphics/linux_glide/Makefile,v 1.7 2000/02/23 00:51:08 asami Exp $
 #
 #
 
-DISTNAME=	linux_glide_2_4
-PKGNAME=	linux_glide-2.4
+PORTNAME=	glide
+PORTVERSION=	2.4
 CATEGORIES=	graphics linux
 MASTER_SITES=	ftp://ftp.3dfx.com/pub/glide/
+PKGNAMEPREFIX=	linux_
+DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}_2_4
 
 MAINTAINER= 	cracauer@cons.org
 

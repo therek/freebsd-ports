@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tifmerge
-# Version required:	1.0
 # Date created:		29 April 1999
 # Whom:			G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.5 1999/08/25 06:15:06 obrien Exp $
+# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.6 1999/08/28 01:57:16 mharo Exp $
 #
 
-DISTNAME=	tiff
-PKGNAME=	tifmerge-1.0
+PORTNAME=	tifmerge
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.whizkidtech.net/fports/
+DISTNAME=	tiff
 
 MAINTAINER=	adam@whizkidtech.net
 

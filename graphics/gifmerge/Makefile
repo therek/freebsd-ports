@@ -1,16 +1,15 @@
 # New ports collection makefile for:   gifmerge
-# Version required:    1.33
 # Date created:        20 Oct 1996
 # Whom:                Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.5 1999/08/25 06:13:59 obrien Exp $
+# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.6 2000/01/07 02:26:52 nakai Exp $
 #
 
-DISTNAME=	gifmerge
-PKGNAME=	gifmerge-1.33
+PORTNAME=	gifmerge
+PORTVERSION=	1.33
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
-EXTRACT_SUFX=	.tar
+DISTFILES=	gifmerge.tar
 
 MAINTAINER=	nakai@FreeBSD.org
 

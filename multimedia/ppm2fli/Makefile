@@ -1,15 +1,15 @@
 # New ports collection makefile for:	ppm2fli
-# Version required:	b1.92
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ppm2fli/Makefile,v 1.3 1999/08/25 06:14:44 obrien Exp $
 #
 
-DISTNAME=       ppm2fli_b1.92
-PKGNAME=	ppm2fli-b1
+PORTNAME=	ppm2fli
+PORTVERSION=	b1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://crusty.er.usgs.gov/pub/animation/fli/
+DISTNAME=       ppm2fli_b1.92
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=     giffunip@asme.org

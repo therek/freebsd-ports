@@ -1,12 +1,12 @@
 # New ports collection makefile for:	g2
-# Version required:	0.40
 # Date created:	16 July 1998
 # Whom:		Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/g2/Makefile,v 1.6 1999/08/25 06:13:55 obrien Exp $
+# $FreeBSD: ports/graphics/g2/Makefile,v 1.7 1999/12/27 21:28:21 steve Exp $
 #
 
-DISTNAME=	g2-0.40
+PORTNAME=	g2
+PORTVERSION=	0.40
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	jbig
-# Version required:     1.1
 # Date created:		19 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.9 2000/02/09 04:55:31 ade Exp $
+# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.10 2000/02/09 16:42:25 ade Exp $
 #
 
-DISTNAME=	jbigkit-1.1
+PORTNAME=	jbigkit
+PORTVERSION=	1.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.informatik.uni-erlangen.de/pub/doc/ISO/JBIG/
 

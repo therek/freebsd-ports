@@ -1,16 +1,16 @@
 # New ports collection makefile for:	gqview
-# Version required:			0.7.0
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.18 2000/01/07 02:27:00 nakai Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.19 2000/01/22 11:46:26 nakai Exp $
 #
 
-DISTNAME=	gqview-0.7.0.src
-PKGNAME=	gqview-0.7.0
+PORTNAME=	gqview
+PORTVERSION=	0.7.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://gqview.netpedia.net/ \
 		http://www.geocities.com/SiliconValley/Haven/5235/
+DISTNAME=	${PKGNAME}.src
 
 MAINTAINER=	nakai@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gfont
-# Version required:		1.0.2
 # Date created:			09-Sep-1997
 # Whom:				Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/graphics/gfont/Makefile,v 1.9 1999/08/25 06:13:57 obrien Exp $
+# $FreeBSD: ports/graphics/gfont/Makefile,v 1.10 2000/01/07 16:40:02 asami Exp $
 #
 
-DISTNAME=	gfont-1.0.2
+PORTNAME=	gfont
+PORTVERSION=	1.0.2
 CATEGORIES=	graphics print www
 MASTER_SITES=	http://www.engelschall.com/sw/gfont/distrib/ \
 		ftp://ftp.engelschall.com/sw/gfont/ \

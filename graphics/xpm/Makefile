@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xpm
-# Version required:     3.4k
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/xpm/Makefile,v 1.25 1999/08/25 06:15:32 obrien Exp $
+# $FreeBSD: ports/graphics/xpm/Makefile,v 1.26 2000/04/02 17:24:18 mharo Exp $
 #
 
-DISTNAME=       xpm-3.4k
+PORTNAME=       xpm
+PORTVERSION=	3.4k
 CATEGORIES=	graphics x11
 MASTER_SITES=	ftp://avahi.inria.fr/pub/xpm/
 

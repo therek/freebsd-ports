@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xli
-# Version required:	1.16
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.14 1999/08/31 06:45:21 mharo Exp $
+# $FreeBSD: ports/graphics/xli/Makefile,v 1.15 2000/02/10 09:37:43 jkoshy Exp $
 #
 
-DISTNAME=	xli-1.17.0
+PORTNAME=	xli
+PORTVERSION=	1.17.0
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		http://pantransit.reptiles.org/prog/

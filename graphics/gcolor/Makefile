@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gcolor
-# Version required:	0.4
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.2 2000/02/22 13:39:47 jedgar Exp $
+# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.3 2000/03/22 01:59:13 will Exp $
 #
 
-DISTNAME=	gcolor-0.4
+PORTNAME=	gcolor
+PORTVERSION=	0.4
 CATEGORIES=	graphics gnome x11
 MASTER_SITES=	http://download.sourceforge.net/gcolor/
 

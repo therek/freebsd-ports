@@ -3,14 +3,15 @@
 # Date created:		12 January 1996
 # Whom:			nate
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.18 1999/08/25 06:14:17 obrien Exp $
 #
 
-DISTNAME=	scanner
-PKGNAME=	hpscan-1.0
+PORTNAME=	hpscan
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.cogsci.ed.ac.uk/pub/richard/
+DISTNAME=	scanner
 
 MAINTAINER=	jkh@FreeBSD.org
 

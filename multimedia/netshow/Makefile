@@ -1,15 +1,15 @@
 # New ports collection makefile for:    netshow
-# Version required:     2.00.251
 # Date created:         Thu Jun 11 22:38:52 PDT 1998
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/netshow/Makefile,v 1.8 1999/08/31 06:45:04 mharo Exp $
+# $FreeBSD: ports/graphics/netshow/Makefile,v 1.9 2000/02/28 08:33:39 asami Exp $
 #
 
-DISTNAME=	netshow_linux
-PKGNAME=	netshow-2.00.251
+PORTNAME=	netshow
+PORTVERSION=	2.00.251
 CATEGORIES=	graphics net linux
 MASTER_SITES=	http://microsoft.com/netshow/download/en/beta/
+DISTNAME=	netshow_linux
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	dburr@FreeBSD.org

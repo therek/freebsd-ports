@@ -1,15 +1,15 @@
 # New ports collection makefile for:	giram
-# Version required:    0.1.5
 # Date created:        17 June 1999
 # Whom:                Brandon Fosdick <bfoz@glue.umd.edu>
 #
-# $FreeBSD: ports/graphics/giram/Makefile,v 1.2 1999/08/25 06:14:06 obrien Exp $
+# $FreeBSD: ports/graphics/giram/Makefile,v 1.3 2000/03/04 13:34:29 jedgar Exp $
 #
 
-DISTNAME=	Giram-0.1.5
-PKGNAME=	giram-0.1.5
+PORTNAME=	giram
+PORTVERSION=	0.1.5
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.giram.org/pub/
+DISTNAME=	Giram-${PORTVERSION}
 
 MAINTAINER=	bfoz@glue.umd.edu
 

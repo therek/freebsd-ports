@@ -1,12 +1,12 @@
 # New ports collection makefile for:   qcread
-# Version required:    0.3
 # Date created:        23 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qcread/Makefile,v 1.4 1999/08/31 06:45:11 mharo Exp $
+# $FreeBSD: ports/graphics/qcread/Makefile,v 1.5 1999/09/21 17:24:09 billf Exp $
 #
 
-DISTNAME=	qcread-0.3
+PORTNAME=	qcread
+PORTVERSION=	0.3
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://mars.illtel.denver.co.us/pub/qcread/ \
 		http://mars.illtel.denver.co.us/pub/qcread/

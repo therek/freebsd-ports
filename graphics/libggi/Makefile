@@ -1,12 +1,12 @@
 # New ports collection makefile for:	libggi
-# Version required:	2.0b2.1
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libggi/Makefile,v 1.1 2000/01/29 05:11:02 steve Exp $
 #
 
-DISTNAME=	libggi-2.0b2.1
+PORTNAME=	libggi
+PORTVERSION=	2.0b2.1
 CATEGORIES=	graphics devel
 MASTER_SITES=	ftp://ftp.ggi-project.org/pub/ggi/ggi/2_0_beta_2.1/
 

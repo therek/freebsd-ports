@@ -1,12 +1,12 @@
 # New ports collection makefile for:	smpeg
-# Version required:   	0.3.3
 # Date created:		2 Feb 2000
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.1 2000/02/03 04:57:33 cpiazza Exp $
+# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.2 2000/02/03 08:06:38 cpiazza Exp $
 #
 
-DISTNAME=	smpeg-0.3.3
+PORTNAME=	smpeg
+PORTVERSION=	0.3.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lokigames.com/development/download/smpeg/
 

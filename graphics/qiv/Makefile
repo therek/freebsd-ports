@@ -1,12 +1,12 @@
 # New ports collection makefile for:	qiv
-# Version required:	1.2
 # Date created:		25 December 1998
 # Whom:			Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qiv/Makefile,v 1.7 1999/10/08 03:29:47 nakai Exp $
+# $FreeBSD: ports/graphics/qiv/Makefile,v 1.8 2000/02/12 23:31:58 billf Exp $
 #
 
-DISTNAME=	qiv-1.2
+PORTNAME=	qiv
+PORTVERSION=	1.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.klografx.de/software/files/ \
 		ftp://ftp.klografx.de/pub/

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	hobbes-icons-xpm3
-# Version required:	1.0
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.9 1999/08/25 06:14:16 obrien Exp $
+# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.10 2000/04/01 03:42:32 mharo Exp $
 #
 
-DISTNAME=	hobbes-icons-xpm3
-PKGNAME=	hobbes-icons-xpm3-1.0
+PORTNAME=	hobbes-icons-xpm3
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	giffunip@asme.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   giftool
-# Version required:    1.0
 # Date created:        14 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/giftool/Makefile,v 1.8 2000/03/04 10:57:30 nakai Exp $
+# $FreeBSD: ports/graphics/giftool/Makefile,v 1.9 2000/03/05 04:52:30 nakai Exp $
 #
 
-DISTNAME=	giftool-1.0
+PORTNAME=	giftool
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.sbs.de/pub/www/tools/giftool/
 

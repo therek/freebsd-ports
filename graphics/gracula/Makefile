@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gracula
-# Version required:			3.0
 # Date created:				30 May 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/gracula/Makefile,v 1.4 1999/08/27 21:14:03 mharo Exp $
+# $FreeBSD: ports/graphics/gracula/Makefile,v 1.5 1999/08/28 19:41:21 mharo Exp $
 #
 
-DISTNAME=	gracula-3.0
+PORTNAME=	gracula
+PORTVERSION=	3.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.whizkidtech.net/cgi/gcl/ \
 		http://www.whizkidtech.net/gcl/

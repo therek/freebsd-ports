@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xdl
-# Version required:     2.1
 # Date created:         17 July 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/graphics/xdl/Makefile,v 1.8 1999/08/25 06:15:19 obrien Exp $
+# $FreeBSD: ports/graphics/xdl/Makefile,v 1.9 1999/08/31 06:45:16 mharo Exp $
 #
 
-DISTNAME=	xdl-2.1
+PORTNAME=	xdl
+PORTVERSION=	2.1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

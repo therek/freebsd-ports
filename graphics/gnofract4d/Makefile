@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnofract4d
-# Version required:			1.2
 # Date created:				30 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.2 2000/02/25 18:25:26 ade Exp $
+# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.3 2000/03/22 01:59:14 will Exp $
 #
 
-DISTNAME=	gnofract4d-1.2
+PORTNAME=	gnofract4d
+PORTVERSION=	1.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.sourceforge.net/gnofract4d/
 

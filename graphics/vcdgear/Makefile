@@ -1,16 +1,15 @@
 # New ports collection makefile for:	vcdgear
-# Version required:	1.4
 # Date created:	 	06 January 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.1 2000/01/06 08:46:03 cpiazza Exp $
+# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.2 2000/02/26 19:41:11 steve Exp $
 #
 
-DISTNAME=	vcdgear_FreeBSD
-PKGNAME=	vcdgear-1.4
+PORTNAME=	vcdgear
+PORTVERSION=	1.4
 CATEGORIES= 	graphics
 MASTER_SITES=	http://www.vcdgear.org/files/
-EXTRACT_SUFX=	.gz
+DISTFILES=	vcdgear_FreeBSD.gz
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
@@ -21,7 +20,7 @@ BROKEN=	'Only an ELF binary is distributed'
 
 ONLY_FOR_ARCHS=	i386
 NO_BUILD=	true
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	true
 EXTRACT_AFTER_ARGS=	> ${WRKSRC}/vcdgear
 
 do-install:

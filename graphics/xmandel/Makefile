@@ -1,18 +1,18 @@
 # New ports collection makefile for:    xmandel
-# Version required:     		1.00
 # Date created:         		18 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmandel/Makefile,v 1.4 1999/08/25 06:15:26 obrien Exp $
 #
 
-DISTNAME=	xmandel
-PKGNAME=	xmandel-1.0
+PORTNAME=	xmandel
+PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cray.com/src/graphics/xmandel/
 EXTRACT_SUFX=   .shar
 # The README says the location is ftp.cray.com:/usr/ftp/src/graphics/xmandel,
 # but this has changed apparently.
+DISTNAME=	${PORTNAME}
 
 EXTRACT_CMD=    sh
 EXTRACT_BEFORE_ARGS=	# empty

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mtv
-# Version required:	1.1.0.20
 # Date created:		30 Jan 2000
 # Whom:			kris
 #
-# $FreeBSD: ports/graphics/mtv/Makefile,v 1.2 2000/02/28 08:33:38 asami Exp $
+# $FreeBSD: ports/graphics/mtv/Makefile,v 1.3 2000/03/19 08:57:07 kris Exp $
 #
 
-DISTNAME=	mtv-1.1.0.20
+PORTNAME=	mtv
+PORTVERSION=	1.1.0.20
 CATEGORIES=	graphics linux
 MASTER_SITES=	ftp://ftp.mpegtv.com/pub/mpeg/mpegtv/player/x86-unknown-linux-glibc/packages/TGZ/
 DISTFILES=	mtv-1.1.0.20.tar.gz libSDLx11.so.tar.gz

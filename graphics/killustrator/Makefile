@@ -1,12 +1,12 @@
 # New ports collection makefile for:   killustrator
-# Version required:    0.7.1
 # Date created:        07 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.10 2000/02/24 07:00:57 asami Exp $
+# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.11 2000/02/24 16:06:07 imura Exp $
 #
 
-DISTNAME=	killustrator-0.7.1
+PORTNAME=	killustrator
+PORTVERSION=	0.7.1
 CATEGORIES=	graphics kde
 MASTER_SITES=	http://wwwiti.cs.uni-magdeburg.de/~sattler/pub/killustrator/
 

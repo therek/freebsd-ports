@@ -1,15 +1,15 @@
 # New ports collection makefile for:	urt
-# Version required:	3.1b
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.15 1999/08/25 06:15:09 obrien Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.16 1999/09/07 10:45:27 steve Exp $
 #
 
-DISTNAME=	urt
-PKGNAME=	urt-3.1b1
+PORTNAME=	urt
+PORTVERSION=	3.1b1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/
+DISTNAME=	urt
 DISTFILES=	urt-3.1b.tar.Z urt-doc.tar urt-img.tar
 
 PATCH_SITES=	ftp://ptolemy.berkeley.edu/pub/misc/urt/

@@ -1,18 +1,18 @@
 # New ports collection makefile for:    POV-Ray
-# Version required:     3.0.1
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray/Makefile,v 1.18 1999/08/31 06:45:10 mharo Exp $
+# $FreeBSD: ports/graphics/povray/Makefile,v 1.19 1999/09/10 12:18:53 asami Exp $
 #
 
-DISTNAME=	povray3
-PKGNAME=	povray-3.0.1
+PORTNAME=	povray
+PORTVERSION=	3.0.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Old-Versions/Official-3.0/Unix/ \
 		ftp://www.hensa.ac.uk/mirrors/povray/Old-Versions/Official-3.0/Unix/\
 		ftp://ftp.fh-aachen.de/pub/Graphics/mirror/ftp.povray.org/povray/Old-Versions/Official-3.0/Unix/ \
 		ftp://ftp.kappa.ro/pub/Linux/Graphics/Editors/povray/
+DISTNAME=	povray3
 DISTFILES=	povuni_s.tgz povuni_d.tgz
 
 MAINTAINER=	kris@FreeBSD.org

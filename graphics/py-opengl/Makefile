@@ -1,15 +1,16 @@
 # New ports collection makefile for:	PyOpenGL
-# Version required:	1.5.5
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.2 1999/11/28 18:31:36 steve Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.3 2000/03/20 23:25:12 jseger Exp $
 #
 
-DISTNAME=	PyOpenGL-1.5.5
-PKGNAME=	py-opengl-1.5.5
+PORTNAME=	opengl
+PORTVERSION=	1.5.5
 CATEGORIES=	graphics python
 MASTER_SITES=	http://starship.python.net/crew/da/
+PKGNAMEPREFIX=	py-
+DISTNAME=	PyOpenGL-${PORTVERSION}
 
 MAINTAINER=	aa8vb@ipass.net
 

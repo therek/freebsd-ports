@@ -1,12 +1,12 @@
 # New ports collection makefile for:	photopc-1.6
-# Version required:	1.6
 # Date created:		11 October 1997
 # Whom:			Douglas Carmichael <dcarmich@mcs.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/photopc/Makefile,v 1.2 1999/08/25 06:14:37 obrien Exp $
 #
 
-DISTNAME=	photopc-1.6
+PORTNAME=	photopc
+PORTVERSION=	1.6
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.average.org/pub/photopc/
 

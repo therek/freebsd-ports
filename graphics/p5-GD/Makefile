@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-GD
-# Version required:			1.25
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.10 1999/12/27 21:28:25 steve Exp $
+# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.11 2000/02/27 07:28:53 vanilla Exp $
 #
 
-DISTNAME=	GD-1.25
-PKGNAME=	p5-GD-1.25
+PORTNAME=	GD
+PORTVERSION=	1.25
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	GD
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

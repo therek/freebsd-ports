@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Togl
-# Version required:	1.5
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/togl/Makefile,v 1.2 1999/11/28 18:32:22 steve Exp $
+# $FreeBSD: ports/graphics/togl/Makefile,v 1.3 2000/03/20 23:25:13 jseger Exp $
 #
 
-DISTNAME=	Togl-1.5
-PKGNAME=	togl-1.5
+PORTNAME=	togl
+PORTVERSION=	1.5
 CATEGORIES=	graphics tk82
 MASTER_SITES=	ftp://ftp.mesa3d.org/mesa/misc/ \
 		ftp://ftp.cs.umd.edu/pub/faculty/bederson/
+DISTNAME=	Togl-${PORTVERSION}
 
 MAINTAINER=	aa8vb@ipass.net
 

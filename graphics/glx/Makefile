@@ -3,7 +3,7 @@
 # Date created:         13 September 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/glx/Makefile,v 1.2 1999/12/06 02:25:19 cpiazza Exp $
+# $FreeBSD: ports/graphics/glx/Makefile,v 1.3 2000/02/08 09:26:37 peter Exp $
 #
 #
 # Notes:
@@ -36,7 +36,8 @@
 #    question bugs you
 #
 
-DISTNAME=	glx-990802
+PORTNAME=	glx
+PORTVERSION=	990802
 CATEGORIES=	graphics
 MASTER_SITES=	http://people.FreeBSD.org/~3d/distfiles/glx/XF3.3.5/
 DISTFILES=	${DISTNAME}.tar.bz2 \
