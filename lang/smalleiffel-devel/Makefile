@@ -2,13 +2,14 @@
 # Date created:				Wed Dec 22 18:20:05 CET 1999
 # Whom:					berend@pobox.com
 #
-# $FreeBSD: ports/lang/smalleiffel-devel/Makefile,v 1.3 2000/08/03 03:20:13 sada Exp $
+# $FreeBSD: ports/lang/smalleiffel-devel/Makefile,v 1.4 2000/10/08 10:21:54 asami Exp $
 #
 
 PORTNAME=	smalleiffel
 PORTVERSION=	0.76.b4
 CATEGORIES=	lang
-MASTER_SITES=	http://people.FreeBSD.org/~sada/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	sada
 
 MAINTAINER=	berend@pobox.com
 
