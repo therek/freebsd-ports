@@ -2,11 +2,11 @@
 # Date created:			19 December 1998
 # Whom:				Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.13 2001/06/17 18:24:00 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.30
+PORTVERSION=	1.35
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
@@ -32,8 +32,8 @@ PLIST_SUB=	X11=''
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/gifsicle
-	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/gifsicle
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_MAN} ${WRKSRC}/README ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
