@@ -3,11 +3,11 @@
 # Date created:        31 October 1996
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/sidplay/Makefile,v 1.5 1999/08/25 04:36:10 obrien Exp $
 #
 
-DISTNAME=	sidplay-1_36_31
-PKGNAME=        sidplay-1.36.31
+DISTNAME=	sidplay-1_36_35
+PKGNAME=        sidplay-1.36.35
 CATEGORIES=	audio emulators
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Lakes/5147/sidplay/packages/
 EXTRACT_SUFX=	.tgz
