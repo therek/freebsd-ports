@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.273 2000/05/29 05:49:36 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.274 2000/05/30 19:27:05 will Exp $
 #
 
     SUBDIR += 3dc
@@ -9,6 +9,7 @@
     SUBDIR += adom
     SUBDIR += affenspiel
     SUBDIR += agm
+    SUBDIR += amphetamine
     SUBDIR += an
     SUBDIR += angband
     SUBDIR += antipolix
