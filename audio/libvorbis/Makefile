@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.4 2000/11/29 10:08:18 sobomax Exp $
+# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.5 2001/03/01 09:36:34 sf Exp $
 #
 
 PORTNAME=	libvorbis
@@ -19,7 +19,7 @@ LIB_DEPENDS=	ogg.1:${PORTSDIR}/audio/libogg
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--with-ogg=${LOCALBASE}
+CONFIGURE_ARGS=	--with-ogg-prefix=${LOCALBASE}
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" LDFLAGS="-L${LOCALBASE}/lib"
 AUTOCONF_ARGS=	; ${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
 
