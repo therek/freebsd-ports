@@ -2,11 +2,11 @@
 # Date created:		24 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/evas/Makefile,v 1.3 2000/12/11 02:38:13 steve Exp $
+# $FreeBSD: ports/graphics/evas/Makefile,v 1.4 2001/01/25 01:55:33 vanilla Exp $
 #
 
 PORTNAME=	evas
-PORTVERSION=	0.0.3
+PORTVERSION=	0.0.4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
@@ -24,6 +24,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
 post-install:
-	strip ${PREFIX}/lib/libevas.so.0
+	@strip ${PREFIX}/lib/libevas.so.0
 
 .include <bsd.port.mk>
