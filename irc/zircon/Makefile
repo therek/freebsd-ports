@@ -2,11 +2,11 @@
 # Date created:		19 Aug 1995
 # Whom:			jkh / pst
 #
-# $FreeBSD: ports/irc/zircon/Makefile,v 1.53 2001/06/14 07:55:47 dinoex Exp $
+# $FreeBSD: ports/irc/zircon/Makefile,v 1.54 2001/06/24 04:28:17 dinoex Exp $
 #
 
 PORTNAME=	zircon
-PORTVERSION=	1.18.250
+PORTVERSION=	1.18.253
 CATEGORIES=	irc tk83
 MASTER_SITES=	ftp://catless.ncl.ac.uk/pub/
 
