@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.92 2000/08/03 09:24:36 asami Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.93 2000/08/23 21:20:19 jseger Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -26,6 +26,10 @@ LIB_DEPENDS=	bz2.1:${PORTSDIR}/archivers/bzip2 \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 BUILD_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55 \
+		mpeg2decode:${PORTSDIR}/graphics/mpeg2codec \
+		picttoppm:${PORTSDIR}/graphics/netpbm \
+		fig2dev:${PORTSDIR}/print/transfig
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55 \
 		mpeg2decode:${PORTSDIR}/graphics/mpeg2codec \
 		picttoppm:${PORTSDIR}/graphics/netpbm \
 		fig2dev:${PORTSDIR}/print/transfig
