@@ -3,7 +3,7 @@
 # Date created:			Mar 13, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/librsync/Makefile,v 1.1 2001/03/13 10:42:29 ijliao Exp $
+# $FreeBSD: ports/net/librsync/Makefile,v 1.2 2001/03/19 17:25:46 ijliao Exp $
 #
 
 PORTNAME=	librsync
@@ -14,8 +14,10 @@ MASTER_SITE_SUBDIR=	rproxy
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt \
-		bz2.1:${PORTSDIR}/archivers/bzip2
+LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt
+.if !exists(/usr/bin/bzip2)
+LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
+.endif
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes

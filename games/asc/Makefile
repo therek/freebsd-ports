@@ -2,7 +2,7 @@
 # Date created:				16 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/asc/Makefile,v 1.7 2001/07/09 11:26:01 sobomax Exp $
 #
 
 PORTNAME=	asc
@@ -16,8 +16,10 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 		SDL_image.10:${PORTSDIR}/graphics/sdl_image \
-		bz2.1:${PORTSDIR}/archivers/bzip2 \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
+.if !exists(/usr/bin/bzip2)
+LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
+.endif
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}-beta
 

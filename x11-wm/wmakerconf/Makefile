@@ -2,7 +2,7 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.27 2001/05/14 19:00:06 sobomax Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.28 2001/05/15 18:15:41 sobomax Exp $
 #
 
 PORTNAME=	wmakerconf
@@ -12,8 +12,10 @@ MASTER_SITES=	http://ulli.on.openave.net/wmakerconf/
 
 MAINTAINER=	dr@domix.de
 
-RUN_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm \
-		bunzip2:${PORTSDIR}/archivers/bzip2
+RUN_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
+.if !exists(/usr/bin/bzip2)
+RUN_DEPENDS+=	bunzip2:${PORTSDIR}/archivers/bzip2
+.endif
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \

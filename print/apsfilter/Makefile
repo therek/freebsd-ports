@@ -2,7 +2,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.85 2001/06/05 11:38:33 sobomax Exp $
 #
 
 PORTNAME=	apsfilter
@@ -44,7 +44,9 @@ RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6-nox11
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 .endif
 # all needed decompression utilities
+.if !exists(/usr/bin/bzip2)
 RUN_DEPENDS+=	bunzip2:${PORTSDIR}/archivers/bzip2
+.endif
 RUN_DEPENDS+=	melt:${PORTSDIR}/archivers/freeze
 # all needed "xxx to ps" filter utilities
 RUN_DEPENDS+=	a2ps:${PORTSDIR}/print/a2ps-letter
