@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.179 2000/12/26 06:06:03 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.180 2000/12/31 05:10:09 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -75,6 +75,7 @@
     SUBDIR += nail
     SUBDIR += newmail
     SUBDIR += nmh
+    SUBDIR += p5-Email-Find
     SUBDIR += p5-Email-Valid
     SUBDIR += p5-IMAP-Admin
     SUBDIR += p5-MIME-Lite
