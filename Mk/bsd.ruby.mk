@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.106 2002/12/27 21:39:06 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.107 2003/01/11 10:16:22 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -96,9 +96,13 @@ Ruby_Include_MAINTAINER=	knu@FreeBSD.org
 # RUBY_ELISPDIR		- Installation path for emacs lisp files.
 #
 
-#.if ${ARCH} == alpha || ${ARCH} == sparc64
-#RUBY_VER?=		1.8
-#.endif
+.if ${ARCH} == alpha || ${ARCH} == sparc64 || ${ARCH} == ia64
+RUBY_DEFAULT_VER?=	1.8
+.else
+RUBY_DEFAULT_VER?=	1.6
+.endif
+
+RUBY_VER?=		${RUBY_DEFAULT_VER}
 
 .if defined(RUBY)
 .if !exists(${RUBY})
@@ -151,11 +155,6 @@ _RUBY_SITEDIR?=		${_RUBY_SYSLIBDIR}/ruby/site_ruby
 .endif
 #      defined(RUBY)
 
-#.if ${ARCH} == alpha || ${ARCH} == sparc64
-#RUBY_DEFAULT_VER?=	1.8
-#.else
-RUBY_DEFAULT_VER?=	1.6
-#.endif
 RUBY_DEFAULT_SUFFIX?=	${RUBY_DEFAULT_VER:S/.//}
 
 RUBY_DISTVERSION?=	${RUBY_VERSION}
