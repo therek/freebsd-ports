@@ -3,7 +3,7 @@
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/yank/Makefile,v 1.1.1.1 1999/12/25 19:38:03 jedgar Exp $
 #
 
 DISTNAME=	yank-0.1.1
@@ -12,7 +12,8 @@ MASTER_SITES=	http://home.ins.de/~m.hussmann/software/yank/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
