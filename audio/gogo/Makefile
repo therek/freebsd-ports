@@ -2,14 +2,14 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.22 2000/07/20 10:41:37 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.23 2000/11/01 21:56:06 nakai Exp $
 #
 
 PORTNAME=	gogo
-PORTVERSION=	2.36
+PORTVERSION=	2.39a
 CATEGORIES=	audio
 MASTER_SITES=	http://homepage1.nifty.com/herumi/soft/gogo2/src/
-DISTNAME=	gogo236
+DISTNAME=	gogo239a
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org
@@ -31,6 +31,7 @@ pre-fetch:
 .if !defined(WITH_THREADS)
 	@${ECHO_MSG} "set WITH_THREADS to compile with linuxthreads."
 	@${ECHO_MSG} "It would increase performance in SMP environment."
+MAKE_ENV+=	"USE_MT=no"
 .else
 MAKE_ENV+=	"USE_MT=yes"
 LIB_DEPENDS=	lthread.2:${PORTSDIR}/devel/linuxthreads
