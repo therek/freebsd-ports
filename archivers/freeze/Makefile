@@ -2,7 +2,7 @@
 # Date created:         20 Jul 1996
 # Whom:                 lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/archivers/freeze/Makefile,v 1.9 2001/08/30 19:49:07 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freeze
@@ -12,6 +12,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/compression/
 
 MAINTAINER=	lukin@okbmei.msk.su
+COMMENT=	Compression program - often used in QNX
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	prog

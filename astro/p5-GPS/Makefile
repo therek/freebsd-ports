@@ -2,7 +2,7 @@
 # Date created:			5 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/astro/p5-GPS/Makefile,v 1.1 2000/12/06 05:43:03 will Exp $
+# $FreeBSD$
 
 PORTNAME=	GPS
 PORTVERSION=	0.12
@@ -13,6 +13,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	perl-GPS-${PORTVERSION}
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	Perl interface to GPS receivers
 
 PERL_CONFIGURE=	YES
 

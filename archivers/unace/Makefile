@@ -3,7 +3,7 @@
 # Date created:         23 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/archivers/unace/Makefile,v 1.4 2000/04/08 23:17:52 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unace
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/compress
 
 MAINTAINER=	jonny@jonny.eng.br
+COMMENT=	Extract, view & test ACE archives
 
 USE_GMAKE=	yes
 ALL_TARGET=	clean unace

@@ -2,7 +2,7 @@
 # Date created:		03 July 1996
 # Whom:			ABURAYER Rewsirow <rewsirow@ff.iij4u.or.jp>
 #
-# $FreeBSD: ports/astro/luna/Makefile,v 1.8 2000/02/21 16:44:11 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	luna
@@ -13,6 +13,7 @@ DISTNAME=	luna19s
 EXTRACT_SUFX=	.lzh
 
 MAINTAINER=	rewsirow@ff.iij4u.or.jp
+COMMENT=	Display the moon's phase
 
 BUILD_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 

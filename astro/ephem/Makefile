@@ -2,7 +2,7 @@
 # Date created:		3 April 1997
 # Whom:			eserte
 #
-# $FreeBSD: ports/astro/ephem/Makefile,v 1.5 2000/04/08 22:01:41 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ephem
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}_${PORTVERSION}_unix
 
 MAINTAINER=	eserte@cs.tu-berlin.de
+COMMENT=	An interactive terminal-based astronomical ephemeris program
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=
