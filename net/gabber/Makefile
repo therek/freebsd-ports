@@ -2,7 +2,7 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/net/gabber/Makefile,v 1.1 2000/06/30 14:34:13 sobomax Exp $
+# $FreeBSD: ports/net/gabber/Makefile,v 1.2 2000/07/11 22:02:13 ade Exp $
 #
 
 PORTNAME=	gabber
@@ -26,6 +26,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_AUTOCONF=	yes
 CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}" GLIB_CONFIG="${GLIB_CONFIG}" \
 		GNOME_LIBCONFIG_PATH="${LOCALBASE}/lib:${X11BASE}/lib" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
