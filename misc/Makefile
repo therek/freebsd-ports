@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.236 1999/09/26 23:13:26 dan Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.237 1999/10/02 18:53:21 cpiazza Exp $
 #
 
     SUBDIR += 221upgrade
@@ -20,6 +20,7 @@
     SUBDIR += bidwatcher
     SUBDIR += bottlerocket
     SUBDIR += buffer
+    SUBDIR += cassowary
     SUBDIR += chord
     SUBDIR += cmatrix
     SUBDIR += colorls
@@ -48,6 +49,7 @@
     SUBDIR += gone
     SUBDIR += grun
     SUBDIR += gtkfind
+    SUBDIR += gtl
     SUBDIR += gyvescm
     SUBDIR += iselect
     SUBDIR += jargon
