@@ -2,17 +2,17 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.24 2001/02/14 12:41:30 kevlo Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.25 2001/03/08 17:10:41 sf Exp $
 #
 
 PORTNAME=	xcircuit
-PORTVERSION=	2.2.2
+PORTVERSION=	2.3
 CATEGORIES=	cad
 MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 
 USE_BZIP2=	yes
 USE_XPM=	yes
