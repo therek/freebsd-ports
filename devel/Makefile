@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.453 2001/03/06 14:22:38 demon Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.454 2001/03/07 04:17:19 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -350,6 +350,7 @@
     SUBDIR += qtez
     SUBDIR += qtk
     SUBDIR += re2c
+    SUBDIR += regexx
     SUBDIR += rinfo
     SUBDIR += robodoc
     SUBDIR += rpc2
