@@ -2,7 +2,7 @@
 # Date created:			28 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.11 2000/09/25 12:21:28 asami Exp $
+# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.12 2001/02/05 15:11:22 olgeni Exp $
 #
 
 PORTNAME=	wmpop3
@@ -29,7 +29,7 @@ do-install:
 	@${ECHO} "===>   Installing README in ${PREFIX}/share/doc/wmpop3"
 	@${ECHO} "===>   Please read it for usage instructions"
 	@${MKDIR} ${PREFIX}/share/doc/wmpop3
-	${INSTALL_DATA} ${WRKDIR}/${PKGNAME}/README ${PREFIX}/share/doc/wmpop3
+	@${INSTALL_DATA} ${WRKDIR}/${PKGNAME}/README ${PREFIX}/share/doc/wmpop3
 .endif
 
 .include <bsd.port.mk>
