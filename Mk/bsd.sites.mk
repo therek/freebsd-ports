@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.14 2000/10/08 14:30:03 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.15 2000/10/22 11:25:49 knu Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -60,7 +60,7 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.sourceforge.net/pub/mirrors/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://bioinfo.weizmann.ac.il/pub/software/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://csociety-ftp.ecn.purdue.edu/archive0/CPAN/modules/by-module/%SUBDIR%/ \
+	ftp://csociety-ftp.ecn.purdue.edu/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
