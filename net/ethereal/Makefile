@@ -2,11 +2,11 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.28 2000/04/09 18:11:11 cpiazza Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.29 2000/04/15 07:19:46 billf Exp $
 #
 
 PORTNAME=	ethereal
-PORTVERSION=	0.8.7
+PORTVERSION=	0.8.10
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://alpha1.linuxberg.com/files/x11/network/ \
 		http://www.linuxberg.com/files/x11/network/ \
