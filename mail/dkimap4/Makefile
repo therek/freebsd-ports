@@ -2,11 +2,11 @@
 # Date created:		18 June 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dkimap4/Makefile,v 1.1 2001/07/07 03:16:37 ijliao Exp $
 #
 
 PORTNAME=	dkimap4
-PORTVERSION=	2.35
+PORTVERSION=	2.36
 CATEGORIES=	mail
 MASTER_SITES=	http://www.dbox.handshake.de/download/ \
 		http://www.cs.cmu.edu/~kroening/dbox/
@@ -29,12 +29,20 @@ MAKE_ARGS+=	BIN_DIR="${PREFIX}/bin" DKIMAPSPOOL="${DKIMAPSPOOL}"
 MAKE_ARGS+=	SPOOLDIR="${SPOOLDIR}"
 .endif
 
+DOCS=	README
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/movemail/movemail ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/dkimap4/dkimap4 ${PREFIX}/libexec
 	${INSTALL_PROGRAM} ${WRKSRC}/dkpop3/dkpop3 ${PREFIX}/libexec
 
 post-install:
+.if !defined(NOPORTDOCS)
+	${INSTALL} -d -o root -g wheel -m 0755 ${PREFIX}/share/doc/${PORTNAME}
+.for f in ${DOCS}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/${PORTNAME}
+.endfor
+.endif
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
