@@ -2,12 +2,12 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.84 2001/05/07 11:26:26 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.85 2001/05/11 16:36:40 ade Exp $
 #
 
 PORTNAME=	gnomelibs
 PORTVERSION=	1.2.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
@@ -16,7 +16,8 @@ DISTNAME=	gnome-libs-${PORTVERSION}
 MAINTAINER?=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	scrollkeeper-config:${PORTSDIR}/textproc/scrollkeeper
-LIB_DEPENDS=	ORBit.2:${PORTSDIR}/devel/ORBit
+LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
+		ORBit.2:${PORTSDIR}/devel/ORBit
 RUN_DEPENDS=	scrollkeeper-config:${PORTSDIR}/textproc/scrollkeeper
 
 USE_X_PREFIX=	yes
