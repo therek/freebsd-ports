@@ -2,17 +2,17 @@
 # Date created:		20 June 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/security/bugs/Makefile,v 1.2 1999/08/31 01:50:56 peter Exp $
+# $FreeBSD: ports/security/bugs/Makefile,v 1.3 2000/04/09 18:29:25 cpiazza Exp $
 #
 
 PORTNAME=		bugs
-PORTVERSION=		1.8.1
+PORTVERSION=		2.0.1
 CATEGORIES=		security
-MASTER_SITES=		${MASTER_SITE_SUNSITE} \
-			http://www.asi.fr/~martinez/crypto/
-MASTER_SITE_SUBDIR=	apps/crypto
+MASTER_SITES=		http://www.asi.fr/~martinez/crypto/ \
+			${MASTER_SITE_SUNSITE}
+EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		stephane@lituus.fr
+MAINTAINER=		stephane.legrand@bigfoot.com
 
 USE_GMAKE=		yes
 
