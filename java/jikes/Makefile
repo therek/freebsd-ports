@@ -3,10 +3,10 @@
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.14 1999/09/26 18:14:39 archie Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.15 1999/09/27 18:52:35 archie Exp $
 #
 
-DISTNAME=	jikes-1.06
+DISTNAME=	jikes-1.11
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.whistle.com/pub/archie/misc/
 
