@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.462 2001/03/10 21:32:46 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.463 2001/03/11 02:11:16 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -277,6 +277,7 @@
     SUBDIR += p5-LockFile-Simple
     SUBDIR += p5-Mac-FileSpec-Unixish
     SUBDIR += p5-Make
+    SUBDIR += p5-ORBit
     SUBDIR += p5-PV
     SUBDIR += p5-Parse-RecDescent
     SUBDIR += p5-Penguin
