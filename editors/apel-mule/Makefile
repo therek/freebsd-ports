@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.9 2000/01/02 14:16:54 shige Exp $
+# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.10 2000/04/14 06:20:14 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -13,14 +13,8 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../../editors/apel-emacs
 
 # emacs port setup
-EMACS_NAME=	mule
-EMACS_PORT=	mule
-EMACS_VER=	19.34
-EMACS_LIBDIR=		share/${EMACS_NAME}
-EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}
+EMACS_PORT_NAME=	mule
 
-# RUN_DEPENDS port name's suffix is '-common'.
-HAVE_COMMON_PORT=	YES
 # emacs requires *-setupel.el
 REQUIRE_SETUPEL=	YES
 

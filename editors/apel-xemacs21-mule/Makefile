@@ -2,7 +2,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.16 2000/03/08 08:27:23 kuriyama Exp $
+# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.17 2000/04/14 06:20:16 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -13,21 +13,17 @@ PORTCLASS=	slave
 MASTERDIR=	${.CURDIR}/../../editors/apel-emacs
 
 # emacs port setup
-EMACS_NAME=	xemacs
-EMACS_PORT=	xemacs21-mule
-EMACS_VER=	21.1.9
-EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
-EMACS_LIBDIR=	lib/${EMACS_NAME}
+EMACS_PORT_NAME=	xemacs21-mule
 EMACS_PACKAGESDIR=	${EMACS_LIBDIR}/site-packages
 # packages-subdirectories which this port requires
 EMACS_PACKAGES_SUBDIRS=	lisp pkginfo
 
+SCRIPTS_ENV+=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
+PLIST_SUB+=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
+
 # how to install
 ALL_TARGET=	package
 INSTALL_TARGET=	install-package
-
-# RUN_DEPENDS port name's suffix is '-common'.
-HAVE_COMMON_PORT=	YES
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
