@@ -2,27 +2,29 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.18 2000/09/11 07:46:55 sobomax Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.19 2000/09/25 07:32:41 sobomax Exp $
 #
 
 PORTNAME=	shujit
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.7
 CATEGORIES=	java
 MASTER_SITES=	http://www.shudo.net/jit/dist/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/ruby:${PORTSDIR}/lang/ruby14 \
-		${JAVADIR}/bin/javac:${PORTSDIR}/java/jdk
+BUILD_DEPENDS=	${JAVADIR}/bin/javac:${PORTSDIR}/java/jdk
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
-WRKSRC=		${WRKDIR}/shujit
+WRKSRC=		${WRKDIR}/${PORTNAME}
 ONLY_FOR_ARCHS=	i386
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_NEWGCC=	yes
 MAKEFILE=	GNUmakefile
+
+USE_RUBY=	yes
+RUBY_NO_RUN_DEPENDS=	yes
 
 JAVADIR=	${LOCALBASE}/jdk1.1.8
 JAVALIBDIR=	${PREFIX}/lib/${PORTNAME}
