@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/find_ddos/pkg-plist,v 1.4 2000/11/22 00:17:17 obrien Exp $
 sbin/find_ddos
-share/doc/find_ddos/README
-@dirrm share/doc/find_ddos
+%%PORTDOCS%%share/doc/find_ddos/README
+%%PORTDOCS%%@dirrm share/doc/find_ddos
