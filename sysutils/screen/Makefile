@@ -2,11 +2,11 @@
 # Date created:         25 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/screen/Makefile,v 1.24 1999/09/08 22:31:02 fenner Exp $
+# $FreeBSD: ports/misc/screen/Makefile,v 1.25 2000/04/14 08:46:38 asami Exp $
 #
 
 PORTNAME=       screen
-PORTVERSION=	3.9.5
+PORTVERSION=    3.9.8
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.uni-erlangen.de/pub/utilities/screen/ \
 		${MASTER_SITE_GNU}
