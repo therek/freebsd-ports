@@ -2,7 +2,7 @@
 # Date created:		24 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ipcheck/Makefile,v 1.4 2001/03/30 13:48:07 lioux Exp $
+# $FreeBSD: ports/net/ipcheck/Makefile,v 1.5 2001/03/31 06:20:31 lioux Exp $
 #
 
 PORTNAME=	ipcheck
@@ -15,8 +15,7 @@ EXTRACT_ONLY=
 
 MAINTAINER=	lioux@FreeBSD.org
 
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
-
+USE_PYTHON=	yes
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
