@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.9 2000/07/18 09:34:12 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.10 2000/07/19 12:58:55 obrien Exp $
 #
 
 PORTNAME=	open-motif
@@ -50,6 +50,13 @@ MAN1=	mwm.1 \
 	simpleDemo.1 \
 	simpledrop.1 \
 	todo.1 \
+	autopopups.1 \
+	combo_box.1 \
+	container.1 \
+	notebook.1 \
+	spin_box.1 \
+	tic_mark.1 \
+	xmanimate.1
 
 MAN1DONT=\
 	animate.1 \
