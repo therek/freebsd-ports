@@ -2,13 +2,13 @@
 # Date created:		00/06/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/srd-fpw-package/Makefile,v 1.3 2000/09/15 18:00:36 taoka Exp $
+# $FreeBSD: ports/japanese/srd-fpw-package/Makefile,v 1.4 2000/11/02 14:09:54 taoka Exp $
 #
 
 PORTNAME=	srd-fpw-package
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	japanese elisp
-MASTER_SITES=	http://openlab.ring.gr.jp/edict/srd-fpw/dist/
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/srd/
 
 MAINTAINER=	taoka@FreeBSD.org
 
