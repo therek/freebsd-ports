@@ -2,12 +2,13 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.53 2000/12/21 19:43:28 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.54 2001/01/12 16:59:52 reg Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION= 	0.7
 PORTEPOCH=	1
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
 MASTER_SITE_SUBDIR=	mozilla/releases/${PORTNAME}${PORTVERSION:S/M/m/}/src
@@ -29,6 +30,7 @@ USE_NEWGCC=	yes
 USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=					\
+		--disable-cpp-exceptions	\
 		--disable-cpp-rtti		\
 		--disable-debug			\
 		--disable-idltool		\
@@ -36,23 +38,23 @@ CONFIGURE_ARGS=					\
 		--disable-md			\
 		--disable-pedantic		\
 		--disable-xterm-updates		\
-		--enable-cpp-exceptions		\
 		--enable-double-buffer		\
 		--enable-editor			\
 		--enable-mailnews		\
 		--enable-mathml			\
 		--enable-optimize		\
 		--enable-pics			\
+		--enable-svg			\
 		--enable-tests			\
 		--enable-toolkit=gtk		\
 		--enable-x11-shm		\
-		--with-pthreads			\
 		--with-jpeg=${LOCALBASE}	\
-		--with-png=${LOCALBASE}
-MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
-		CC_ONLY_FLAGS="${CFLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
+		--with-png=${LOCALBASE}		\
+		--with-pthreads
+MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin
 
 post-build:
+	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} BUILD_MODULES=psm
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
 		${FILESDIR}/mozilla.sh >${WRKSRC}/mozilla
 	@${CHMOD} 555 ${WRKSRC}/mozilla
