@@ -2,12 +2,12 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/popper/Makefile,v 1.37 2001/07/30 15:51:29 ache Exp $
+# $FreeBSD: ports/mail/popper/Makefile,v 1.38 2001/08/12 20:11:38 ache Exp $
 #
 
 PORTNAME=	qpopper
 PORTVERSION=	2.53
-PORTREVISION=   2
+PORTREVISION=   3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/old/
 DISTNAME=	${PORTNAME}${PORTVERSION}
