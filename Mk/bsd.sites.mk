@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.3 2000/06/20 06:48:58 will Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.4 2000/06/22 05:31:13 will Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -51,7 +51,7 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://bioinfo.weizmann.ac.il/pub/software/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://csociety-ftp.ecn.purdue.edu/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.sunet.se/pub/lang/perl/CPAN/modlues/by-module/%SUBDIR%/ \
+	ftp://ftp.sunet.se/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://mirror.hiwaay.net/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.isu.net.sa/pub/CPAN/modules/by-module/%SUBDIR%/ \
@@ -59,7 +59,7 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://uiarchive.uiuc.edu/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.ucr.ac.cr/pub/Unix/CPAN/modules/by-module/%SUBDIR%/ \
 	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.cs.colorado.edu/pub/perl/CPAN/modlues/by-module/%SUBDIR%/ \
+	ftp://ftp.cs.colorado.edu/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://cpan.pop-mg.com.br/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.is.co.za/programming/perl/CPAN/modules/by-module/%SUBDIR%/
 
