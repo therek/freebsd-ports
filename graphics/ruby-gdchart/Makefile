@@ -2,13 +2,13 @@
 # Date created:		16 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/ruby-gdchart/Makefile,v 1.1 2001/07/17 07:27:23 knu Exp $
 
 PORTNAME=	gdchart
 PORTVERSION=	0.0.1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www.aragorn.demon.nl/lib/
-PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
+PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	knu@FreeBSD.org
