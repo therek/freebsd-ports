@@ -3,7 +3,7 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.23 2000/03/04 14:03:15 jedgar Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.25 2000/03/29 07:19:13 kris Exp $
 #
 
 DISTNAME=	lftp-2.1.9
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/net/ftp/client/lftp/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/network/file-transfer
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	calle.madestrand@norrgarden.se
 
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"

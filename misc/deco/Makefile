@@ -3,7 +3,7 @@
 # Date created:				16 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/deco/Makefile,v 1.3 1999/08/25 07:21:27 obrien Exp $
+# $FreeBSD: ports/misc/deco/Makefile,v 1.4 2000/03/29 07:18:58 kris Exp $
 #
 
 DISTNAME=		deco382
@@ -12,7 +12,7 @@ CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.cronyx.ru/cronyx/deco/
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		dima@Chg.RU
 
 WRKSRC=			${WRKDIR}/deco
 GNU_CONFIGURE=		yes
