@@ -2,11 +2,12 @@
 # Date created:        24 Dec 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/ptex-pkfonts300/Makefile,v 1.3 2000/04/12 14:37:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ptex-pkfonts
 PORTVERSION=	1.0
+PORTREVISION=	1
 PKGNAMESUFFIX=	${RESOLUTION}
 CATEGORIES=	japanese print
 DISTFILES=	# none
@@ -16,7 +17,6 @@ MAINTAINER=	inagaki@tg.rim.or.jp
 RUN_DEPENDS=	${LOCALBASE}/lib/fonts/pk${RESOLUTION}:${PORTSDIR}/print/pkfonts${RESOLUTION}
 
 NO_BUILD=	yes
-PKGREQ=		${WRKDIR}/REQ
 
 # ******************
 # USEPK_MODE:
@@ -32,24 +32,21 @@ USEPK_MODE?=	cx
 MAKETEX_MODE?=	${USEPK_MODE}
 RESOLUTION?=	300
 
+PLIST_SUB=	RESOLUTION="${RESOLUTION}" USEPK_MODE="${USEPK_MODE}"
+
 .BEGIN:
 .if defined(RESOLUTION) && \
 	${RESOLUTION} != 118 && ${RESOLUTION} != 240 && \
 	${RESOLUTION} != 300 && ${RESOLUTION} != 360 && \
 	${RESOLUTION} != 400  && ${RESOLUTION} != 600
-	@${ECHO} "Error: invalid value for RESOLUTION: \"${RESOLUTION}\""
-	@${ECHO} "Possible values are: 118, 240, 300, 360, 400 and 600."
+	@${ECHO_MSG} "Error: invalid value for RESOLUTION: \"${RESOLUTION}\""
+	@${ECHO_MSG} "Possible values are: 118, 240, 300, 360, 400 and 600."
 	@${FALSE}
 .endif
 
-do-extract:
-	@${MKDIR} ${WRKDIR}
-	@${SED} -e 's,%%RESOLUTION%%,${RESOLUTION},g' \
-		-e 's,%%USEPK_MODE%%,${USEPK_MODE},g' \
-		< ${FILESDIR}/REQ.tmpl > ${WRKDIR}/REQ; \
-
 do-install:
-	@${SETENV} PKG_PREFIX=${PREFIX} \
-		${SH} ${WRKDIR}/REQ ${PKGNAME} INSTALL
+	${MKDIR} ${PREFIX}/share/texmf/fonts/pk/${USEPK_MODE}
+	${LN} -sf ${PREFIX}/lib/fonts/pk${RESOLUTION} \
+		${PREFIX}/share/texmf/fonts/pk/${USEPK_MODE}/
 
 .include <bsd.port.mk>
