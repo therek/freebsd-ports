@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.613 2001/09/16 20:44:09 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.614 2001/09/17 06:21:37 kevlo Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -323,6 +323,7 @@
     SUBDIR += py-soap
     SUBDIR += py-xmlrpc
     SUBDIR += py-xmlrpclib
+    SUBDIR += py-zsi
     SUBDIR += qtella
     SUBDIR += queso
     SUBDIR += radius
