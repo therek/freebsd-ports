@@ -2,13 +2,14 @@
 # Date created:				11 June 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/xwave/Makefile,v 1.3 2000/07/13 13:32:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwave
 PORTVERSION=	2.2
 CATEGORIES=	audio
-MASTER_SITES=	http://www.funet.fi/~kouhia/waves/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	trevor
 DISTNAME=	${PORTNAME}${PORTVERSION:S/./v/}
 
 MAINTAINER=	martin.kraft@fal.de
