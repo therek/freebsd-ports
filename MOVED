@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.91 2003/04/05 17:58:25 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.92 2003/04/05 18:28:25 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -252,3 +252,4 @@ graphics/xtheater|multimedia/xtheater|2003-04-04|new category
 graphics/recmpeg|multimedia/recmpeg|2003-04-04|new category
 graphics/spigot|multimedia/spigot|2003-04-04|new category
 net/gaim-snapshot|net/gaim|2003-04-05|rolled into net/gaim
+net/gift||2003-04-05|no current official releases
