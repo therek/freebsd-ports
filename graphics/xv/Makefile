@@ -2,7 +2,7 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.46 2001/02/28 18:02:48 shige Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.47 2001/03/08 17:29:50 shige Exp $
 #
 
 PORTNAME=	xv
