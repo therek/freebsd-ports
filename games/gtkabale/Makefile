@@ -3,7 +3,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gtkabale/Makefile,v 1.1.1.1 2000/01/31 04:09:08 nakai Exp $
 #
 
 DISTNAME=	gtkabale-0.3
@@ -12,7 +12,8 @@ MASTER_SITES=	ftp://ftp.seindal.dk/pub/rene/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
