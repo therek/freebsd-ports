@@ -1,8 +1,7 @@
-@comment $FreeBSD: ports/textproc/docbook-to-man/pkg-plist,v 1.1 2001/10/07 16:33:04 lioux Exp $
+@comment $FreeBSD: ports/textproc/docbook-to-man/pkg-plist,v 1.2 2001/11/06 11:07:49 petef Exp $
 bin/docbook-to-man
 bin/oinstant
 share/sgml/otranspec/docbook-to-man.ts
 share/sgml/otranspec/roff.cmap
 share/sgml/otranspec/roff.sdata
 @dirrm share/sgml/otranspec
-@unexec rmdir %D/share/sgml 2>/dev/null || true
