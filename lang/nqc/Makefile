@@ -2,15 +2,18 @@
 # Date created:        11 Aug 1999
 # Whom:                kbyanc
 #
-# $FreeBSD: ports/lang/nqc/Makefile,v 1.7 2000/11/09 09:57:02 kbyanc Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nqc
-PORTVERSION=	2.3.r1
+PORTVERSION=	2.4.r3
 CATEGORIES=	lang
 MASTER_SITES=	http://www.enteract.com/~dbaum/nqc/release/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kbyanc@FreeBSD.org
+
+USE_GMAKE=	yes
 
 MAN1=		nqc.1
 
