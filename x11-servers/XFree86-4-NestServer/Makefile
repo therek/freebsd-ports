@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-NestServer/Makefile,v 1.1 2000/06/08 10:41:53 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-NestServer/Makefile,v 1.2 2000/08/25 10:34:02 asami Exp $
 #
 
 PORTNAME=	NestServer
@@ -30,7 +30,7 @@ SCRIPTS_ENV+=		PREFIX=${PREFIX} \
 ALL_TARGET=		FreeBSDPortsBuild
 INSTALL_TARGET= 	installXnest installXnest.man
 MANCOMPRESSED=		yes
-MAN1=			Xnest.1
+MAN1=			Xnest.1 Xserver.1
 
 do-configure:
 	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure

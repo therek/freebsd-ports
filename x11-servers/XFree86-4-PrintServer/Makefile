@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-PrintServer/Makefile,v 1.1 2000/06/08 10:41:57 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-PrintServer/Makefile,v 1.2 2000/08/25 10:34:09 asami Exp $
 #
 
 PORTNAME=	PrintServer
@@ -29,6 +29,7 @@ SCRIPTS_ENV+=		PREFIX=${PREFIX} \
 			DISTDIR=${DISTDIR}
 ALL_TARGET=		FreeBSDPortsBuild
 INSTALL_TARGET= 	installXprt
+MAN1=			Xserver.1
 
 do-configure:
 	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure

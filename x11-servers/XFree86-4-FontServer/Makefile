@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/Makefile,v 1.2 2000/06/09 19:54:14 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/Makefile,v 1.3 2000/08/25 10:33:54 asami Exp $
 #
 
 PORTNAME=	FontServer
@@ -30,7 +30,7 @@ SCRIPTS_ENV+=		PREFIX=${PREFIX} \
 ALL_TARGET=		FreeBSDPortsBuild
 INSTALL_TARGET= 	FreeBSDPortsInstall FreeBSDPortsInstall.man
 MANCOMPRESSED=		yes
-MAN1=			xfs.1
+MAN1=			Xserver.1 xfs.1
 
 do-configure:
 	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure
