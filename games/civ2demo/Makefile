@@ -2,7 +2,7 @@
 # Date created:				19 October 2000
 # Whom:					jameso@elwood.net
 #
-# $FreeBSD: ports/games/civ2demo/Makefile,v 1.1 2000/10/28 08:14:43 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	civ2demo
@@ -13,6 +13,8 @@ DISTNAME=	civctp-demo-10251999
 EXTRACT_ONLY=
 
 MAINTAINER=	jameso@elwood.net
+
+ONLY_FOR_ARCHS=	i386
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
