@@ -2,11 +2,12 @@
 # Date created:				March 30th 2001
 # Whom:	      				Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD: ports/www/p5-Apache-Filter/Makefile,v 1.1 2001/04/07 04:33:24 will Exp $
+# $FreeBSD: ports/www/p5-Apache-Filter/Makefile,v 1.2 2001/05/09 09:54:30 alex Exp $
 #
 
 PORTNAME=	Apache-Filter
 PORTVERSION=	1.018
+PORTREVISION=	1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
