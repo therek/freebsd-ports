@@ -2,17 +2,17 @@
 # Date created:				Jan 28 2000
 # Whom:					Wei-chun Chao
 #
-# $FreeBSD: ports/net/p5-Net-Netmask/Makefile,v 1.1 2000/06/30 01:12:14 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-Netmask
-PORTVERSION=	1.8
+PORTVERSION=	1.9002
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	wchao@isi.edu
+MAINTAINER=	muir@idiom.com
 
 PERL_CONFIGURE=	yes
 
