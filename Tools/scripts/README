@@ -1,6 +1,6 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.10 2001/12/11 10:49:51 sobomax Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.11 2003/02/18 12:45:59 knu Exp $
 
-addport	- future replacement for easy-import
+addport	- replacement for easy-import
 
 consistency-check -  check whether all your ports are installed properly,
                      what files have changed, and what new files there are.
