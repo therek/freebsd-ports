@@ -3,7 +3,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.63 2000/01/29 20:13:16 peter Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.64 2000/03/05 14:08:48 peter Exp $
 #
 
 DISTNAME=	squid-2.3.STABLE2
@@ -30,7 +30,6 @@ CONFIGURE_ARGS=	--bindir=${PREFIX}/sbin  --sysconfdir=${PREFIX}/etc/squid \
 		--localstatedir=${PREFIX}/squid
 STRIP=		# won't install scripts correctly othervise.
 MAKEFILE=	makefile
-NO_LATEST_LINK=	yes
 
 .if defined(PATCH_DEBUG)
 PATCH_DIST_ARGS?=       -d ${WRKSRC}/src -E ${PATCH_DIST_STRIP}
