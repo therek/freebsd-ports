@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc31/pkg-plist,v 1.39 2002/03/04 21:08:06 obrien Exp $
+@comment $FreeBSD: ports/lang/gcc31/pkg-plist,v 1.40 2002/03/09 09:00:59 obrien Exp $
 bin/cpp31
 bin/g++filt31
 bin/g++31
@@ -18,17 +18,17 @@ bin/grepjar31
 @comment Insert PLIST.gcc-lib here
 @comment -=[ begin PLIST.gcc-lib ]=-
 @comment -=[ end PLIST.gcc-lib ]=-
-@comment	@unexec install-info --delete %D/info/cppinternals.info %D/info/dir
-@comment	@unexec install-info --delete %D/info/gcc.info %D/info/dir
-@comment	@unexec install-info --delete %D/info/g77.info %D/info/dir
-@comment	info/cpp.info
-@comment	info/cppinternals.info
-@comment	info/g77.info
-@comment	info/gcc.info
-@comment	info/gcj.info
-@comment	@exec install-info %D/info/cppinternals.info %D/info/dir
-@comment	@exec install-info %D/info/g77.info %D/info/dir
-@comment	@exec install-info %D/info/gcc.info %D/info/dir
-@comment	@exec install-info %D/info/gcj.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@unexec install-info --delete %D/info/cppinternals.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@unexec install-info --delete %D/info/gcc.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@unexec install-info --delete %D/info/g77.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	info/cpp.info
+@comment I AM TIRED OF THIS .INFO CRAP	info/cppinternals.info
+@comment I AM TIRED OF THIS .INFO CRAP	info/g77.info
+@comment I AM TIRED OF THIS .INFO CRAP	info/gcc.info
+@comment I AM TIRED OF THIS .INFO CRAP	info/gcj.info
+@comment I AM TIRED OF THIS .INFO CRAP	@exec install-info %D/info/cppinternals.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@exec install-info %D/info/g77.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@exec install-info %D/info/gcc.info %D/info/dir
+@comment I AM TIRED OF THIS .INFO CRAP	@exec install-info %D/info/gcj.info %D/info/dir
 @comment @dirrm %%GNU_HOST%%/include
 @comment @dirrm %%GNU_HOST%%
