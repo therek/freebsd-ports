@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/lang/ruby16-shim-ruby18/pkg-install,v 1.1 2002/06/08 17:24:55 knu Exp $
+# $FreeBSD: ports/lang/ruby16-shim-ruby18/pkg-install,v 1.2 2002/08/03 08:45:35 knu Exp $
 
 PKGNAME=$1
 PKG_DBDIR=${PKG_DBDIR:-/var/db/pkg}
@@ -13,6 +13,7 @@ die () {
 delete_modules () {
     modules="
 	dl
+	erb
 	fileutils
 	fnmatch
 	optparse
