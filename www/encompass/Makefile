@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/encompass/Makefile,v 1.6 2000/09/15 06:18:25 sobomax Exp $
+# $FreeBSD: ports/www/encompass/Makefile,v 1.7 2000/10/03 17:37:46 ade Exp $
 #
 
 PORTNAME=	encompass
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.geocities.com/lordzephyroth/
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gtkhtml.4:${PORTSDIR}/www/gtkhtml \
+		gtkhtml.5:${PORTSDIR}/www/gtkhtml \
 		glibwww.1:${PORTSDIR}/www/glibwww \
 		gconf-1.1:${PORTSDIR}/devel/gconf
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
