@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/dancer-services/files/dancer-services.sh,v 1.1 2003/04/19 12:02:50 knu Exp $
 
 case "$1" in
 start)
-  if [ -x %PREFIX%/bin/dancer-services ]; then
-    su -fm ircservices -c %PREFIX%/bin/dancer-services && echo ' dancer-services'
+  if [ -x %PREFIX%/sbin/dancer-services ]; then
+    su -fm ircservices -c %PREFIX%/sbin/dancer-services && echo ' dancer-services'
   fi
   ;;
 
