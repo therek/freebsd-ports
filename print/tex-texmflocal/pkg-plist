@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/tex-texmflocal/pkg-plist,v 1.1 2004/01/25 20:02:42 krion Exp $
 %%TEXMFLOCAL%%/ls-R
 @dirrm %%TEXMFLOCAL%%/bibtex/bib
 @dirrm %%TEXMFLOCAL%%/bibtex/bst
@@ -17,6 +17,8 @@
 @dirrm %%TEXMFLOCAL%%/fonts/source
 @dirrm %%TEXMFLOCAL%%/fonts/vf
 @dirrm %%TEXMFLOCAL%%/fonts
+@dirrm %%TEXMFLOCAL%%/metafont
+@dirrm %%TEXMFLOCAL%%/metapost
 @dirrm %%TEXMFLOCAL%%/jbibtex/bib
 @dirrm %%TEXMFLOCAL%%/jbibtex/bst
 @dirrm %%TEXMFLOCAL%%/jbibtex
