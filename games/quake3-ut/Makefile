@@ -2,18 +2,14 @@
 # Date created:				Sun Jun  3 11:49:27 EDT 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/q3server-ut/Makefile,v 1.1 2001/07/22 02:25:53 lioux Exp $
+# $FreeBSD: ports/games/q3server-ut/Makefile,v 1.2 2001/08/24 18:03:42 petef Exp $
 #
 
 PORTNAME=	ut
 PORTVERSION=	b2.3
-MASTER_SITES=	http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/quake3/modifications/urbanterror/ \
+MASTER_SITES=	http://files.ausgamers.com:81/quake3/mods/urbanterror/ \
 		http://www.clandvs.com/downloads/ \
 		ftp://www.gamechannel.de/gcpro/ \
-		http://files.gamesmania.de/gamesmania/urbanter/ \
-		http://www.progamers.cz/files/ \
-		http://hoffmann.laurent.free.fr/ \
-		http://www.unigames.com.br/q3ut/ \
 		http://62.180.57.56/files/
 DISTFILES=	q3${PORTNAME}2.zip \
 		q3${PORTNAME}2_patch20to23.zip
