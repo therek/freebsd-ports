@@ -2,12 +2,12 @@
 # Date created:				2001-01-31
 # Whom:					trevor
 #
-# $FreeBSD: ports/www/wb0/Makefile,v 1.1 2001/01/31 23:14:09 trevor Exp $
+# $FreeBSD: ports/www/wb0/Makefile,v 1.2 2001/02/24 00:04:51 trevor Exp $
 #
 
 PORTNAME=	wb0
 PORTVERSION=	000324
-CATEGORIES=	www
+CATEGORIES=	www graphics
 MASTER_SITES=	ftp://atrey.karlin.mff.cuni.cz/pub/local/clock/wb0/
 EXTRACT_SUFX=	.tgz
 
