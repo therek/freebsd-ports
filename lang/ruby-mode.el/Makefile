@@ -2,11 +2,12 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-mode.el/Makefile,v 1.1 2001/05/05 22:38:22 knu Exp $
 #
 
 PORTNAME=	ruby-mode.el
 PORTVERSION=	${RUBY_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	lang ruby elisp
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -30,13 +31,13 @@ do-extract:
 	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT} && ${MAKE} -V WRKSRC`/misc ${WRKSRC}
 
 do-install:
-	${MKDIR} ${RUBY_EXAMPLESDIR}/elisp
-	${INSTALL_DATA} ${WRKSRC}/* ${RUBY_EXAMPLESDIR}/elisp
+	${MKDIR} ${RUBY_ELISPDIR}
+	${INSTALL_DATA} ${WRKSRC}/* ${RUBY_ELISPDIR}/
 	${MKDIR} ${EMACSLISPDIR}
 	${MKDIR} ${XEMACSLISPDIR}
 .for f in ${ELISP_FILES}
-	${LN} -sf ${RUBY_EXAMPLESDIR}/elisp/${f} ${EMACSLISPDIR}/
-	${LN} -sf ${RUBY_EXAMPLESDIR}/elisp/${f} ${XEMACSLISPDIR}/
+	${LN} -sf ${RUBY_ELISPDIR}/${f} ${EMACSLISPDIR}/
+	${LN} -sf ${RUBY_ELISPDIR}/${f} ${XEMACSLISPDIR}/
 .endfor
 	@${CAT} ${PKGMESSAGE}
 
