@@ -2,11 +2,11 @@
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.8 2000/08/08 03:15:52 steve Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.9 2000/10/08 06:02:30 asami Exp $
 #
 
 PORTNAME=	nut
-PORTVERSION=	0.44.0
+PORTVERSION=	0.44.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.exploits.org/nut/release/
 
@@ -20,11 +20,11 @@ GNU_CONFIGURE=  yes
 CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc/nut \
 		--with-cgipath=${PREFIX}/share/nut/cgi \
 		--with-modelpath=${PREFIX}/sbin \
-		--with-uid=65534 --with-gid=68 
+		--with-statepath=/var/db
 
 ALL_TARGET=	all
 
-PLIST=	${WRKDIR}/PLIST.DYN
+PLIST=		${WRKDIR}/PLIST.DYN
 
 NDOCDIR=	${PREFIX}/share/doc/nut
 
