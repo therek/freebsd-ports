@@ -3,7 +3,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.15 1999/08/25 05:55:22 obrien Exp $
 #
 
 DISTNAME=	proftpd-1.2.0pre3
@@ -26,6 +26,8 @@ GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--localstatedir=/var/run \
 		--with-modules=mod_ratio
+
+FORBIDDEN=	security problems
 
 post-configure:
 	@${MV} ${WRKSRC}/src/proftpd.8 ${WRKSRC}/src/proftpd.8.pre_sed
