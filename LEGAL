@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.245 2002/05/13 23:51:24 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.246 2002/05/15 22:41:03 cy Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -81,6 +81,8 @@ dgd/2.4.5-for-1.0.37.tgz ports/net/dgd-lpmud	No monetary gain. No point in
 dgd/net-*		ports/net/dgd-net	Same as dgd
 divx4linux		ports/graphics/divx4linux	Restrictive copyright
 djbdns			ports/net/djbdns	no license--see
+						http://cr.yp.to/softwarelaw.html
+djbfft			ports/math/djbfft	no license--see
 						http://cr.yp.to/softwarelaw.html
 dnews			ports/news/dnews	Same as dnews3.
 dnews3			ports/news/dnews	Only free for schools and
