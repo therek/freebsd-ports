@@ -2,11 +2,12 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libao/Makefile,v 1.4 2001/02/28 17:09:01 ijliao Exp $
+# $FreeBSD: ports/audio/libao/Makefile,v 1.5 2001/03/02 22:07:22 sf Exp $
 #
 
 PORTNAME=	libao
 PORTVERSION=	0.6.0
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://home.student.utwente.nl/t.vanklaveren/distfiles/ \
 		http://www.vorbis.com/files/beta4/unix/
