@@ -2,7 +2,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.11 2000/08/06 16:19:45 nbm Exp $
+# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.12 2000/09/22 01:59:05 kris Exp $
 #
 
 PORTNAME=	lynx-ssl
@@ -12,6 +12,7 @@ MASTER_SITES=   ftp://lynx.isc.org/current/
 DISTNAME=	lynx2.8.3rel.1
 
 USE_OPENSSL=	YES
+USE_BZIP2=	YES
 
 .include <bsd.port.pre.mk>
 
