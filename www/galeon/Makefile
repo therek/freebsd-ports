@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.10 2000/10/05 07:17:21 reg Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.11 2000/10/27 08:38:04 sobomax Exp $
 #
 
 PORTNAME=	galeon
-PORTVERSION=	0.7.7a
+PORTVERSION=	0.8
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/sobomax/
@@ -18,8 +18,6 @@ LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
 
 WITH_FULL_MOZILLA=	"I donno why, but it doesn't work with M18-embedded"
-
-WRKSRC=		${WRKDIR}/${DISTNAME:S/a$//}
 
 .if !defined(WITH_FULL_MOZILLA)
 MOZILLA=	mozilla-embedded
