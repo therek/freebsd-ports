@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.337 2001/03/31 02:25:18 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.338 2001/04/07 06:46:37 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -32,6 +32,7 @@
     SUBDIR += colortail
     SUBDIR += crosspad
     SUBDIR += cstream
+    SUBDIR += cuecat
     SUBDIR += cwish
     SUBDIR += deco
     SUBDIR += dejagnu
