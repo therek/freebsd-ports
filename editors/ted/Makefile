@@ -2,14 +2,14 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/ted/Makefile,v 1.1 2001/08/24 08:32:19 kris Exp $
 #
 
 PORTNAME=	ted
 PORTVERSION=	2.10
 CATEGORIES=	editors textproc print
 MASTER_SITES=	ftp://ftp.nluug.nl/pub/editors/ted/
-DISTNAME=	ted-${PORTVERSION}.src.tar.gz
+DISTNAME=	ted-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 
