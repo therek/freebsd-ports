@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.18 2001/03/03 13:45:27 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.19 2001/03/06 13:39:39 demon Exp $
 #
 
 PORTNAME=	kdevelop
@@ -18,11 +18,14 @@ LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2
 .if defined(WITH_OPTIONAL_DEPENDS)
 RUN_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf \
 		automake:${PORTSDIR}/devel/automake \
-		kdbg:${PORTSDIR}/devel/kdbg \
 		${LOCALBASE}/share/doc/HTML/en/kdelibs/kdecore/index.html:${PORTSDIR}/devel/kdelibdocs \
 		ktranslator:${PORTSDIR}/devel/ktranslator \
+		kdoc:${PORTSDIR}/textproc/kdoc \
 		kiconedit:${PORTSDIR}/graphics/kdegraphics2 \
 		glimpse:${PORTSDIR}/textproc/glimpse \
+		designer:${PORTSDIR}/devel/qt-designer \
+		linguist:${PORTSDIR}/devel/linguist \
+		kbabel:${PORTSDIR}/devel/kdesdk \
 		a2ps:${PORTSDIR}/print/a2ps43-letter
 .endif
 
