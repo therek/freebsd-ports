@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.97 2000/03/23 04:40:30 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.98 2000/03/27 09:58:42 will Exp $
 #
 
     SUBDIR += bjorb
@@ -48,6 +48,7 @@
     SUBDIR += nessus-plugins
     SUBDIR += nmap
     SUBDIR += nmapfe
+    SUBDIR += oidentd
     SUBDIR += openssh
     SUBDIR += openssh-askpass
     SUBDIR += openssl
