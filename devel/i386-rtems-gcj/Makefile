@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.1 2000/07/10 04:32:09 steve Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.2 2000/08/11 04:57:18 will Exp $
 #
 
 PORTNAME=	gcj
@@ -18,6 +18,8 @@ PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/betas/rtems-4.5.0-beta/c_tools/sour
 
 MAINTAINER=	jim@thehousleys.net
 
+BUILD_DEPENDS=	autoheader:${PORTSDIR}/devel/autoconf
+
 DIST_SUBDIR=	rtems
 
 LCLTARGET?=	i386-rtems
@@ -32,7 +34,7 @@ RUN_DEPENDS=	${LCLTARGET}-gcc:${PORTSDIR}/devel/${LCLTARGET}-gcc
 
 PKGNAMEPREFIX=	${LCLTARGET}-
 USE_GMAKE=	yes
-USE_AUTOCONF=	yes
+GNU_CONFIGURE=	yes
 ALL_TARGET=	all info
 
 CONFIGURE_TARGET?=	--target=${LCLTARGET}
