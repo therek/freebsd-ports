@@ -2,13 +2,17 @@
 # Date created:		10 April 1996
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/news/leafnode/Makefile,v 1.15 2000/12/13 02:14:58 brian Exp $
+# $FreeBSD: ports/news/leafnode/Makefile,v 1.16 2001/05/21 10:07:12 brian Exp $
 #
 
 PORTNAME=	leafnode
-PORTVERSION=	1.9.18
+PORTVERSION=	1.9.19
 CATEGORIES=	news
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+MASTER_SITES=	ftp://wpxx02.toxi.uni-wuerzburg.de/pub/ \
+                ftp://ftp.karlsruhe.org/pub/news/servers/leafnode/ \
+                ftp://ftp.stikman.com/pub/leafnode/ \
+                ftp://ftp.gigabell.net/pub/leafnode/ \
+		${MASTER_SITE_SUNSITE} \
 		http://www.Awfulhak.org/leafnode/
 MASTER_SITE_SUBDIR=	system/news/transport
 
