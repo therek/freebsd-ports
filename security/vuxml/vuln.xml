@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.214 2004/09/14 02:02:25 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.215 2004/09/14 02:21:06 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -212,7 +212,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
         <name>mpg123</name>
-        <range><le>0.59s</le></range>
+        <range><le>0.59r</le></range>
       </package>
     </affects>
     <description>
