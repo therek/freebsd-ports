@@ -2,14 +2,14 @@
 # Date created:         19 April 1998
 # Whom:                 chuckr
 #
-# $FreeBSD: ports/math/gnuplot/Makefile,v 1.34 2001/02/12 10:01:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnuplot
-PORTVERSION=	3.7.1
-PORTREVISION=	1
+PORTVERSION=	3.7.2
 CATEGORIES=	math graphics
-MASTER_SITES=	ftp://ftp.gnuplot.vt.edu/pub/gnuplot/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	chuckr@FreeBSD.org
 
