@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.93 2000/06/09 09:17:37 sobomax Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.94 2000/06/10 05:20:01 will Exp $
 #
 
     SUBDIR += agrep
@@ -65,6 +65,7 @@
     SUBDIR += p5-XML-Parser
     SUBDIR += par
     SUBDIR += perl2html
+    SUBDIR += pspell
     SUBDIR += py-mxTextTools
     SUBDIR += py-xml
     SUBDIR += rand
