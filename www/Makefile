@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.233 2000/07/26 12:55:43 sobomax Exp $
+# $FreeBSD: ports/www/Makefile,v 1.234 2000/07/29 12:22:38 alex Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -90,6 +90,7 @@
     SUBDIR += mhonarc
     SUBDIR += mod_dav
     SUBDIR += mod_dtcl
+    SUBDIR += mod_fastcgi
     SUBDIR += mod_perl
     SUBDIR += mod_php3
     SUBDIR += mod_php4
