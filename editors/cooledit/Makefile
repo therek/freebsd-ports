@@ -2,11 +2,11 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.20 2000/03/11 14:22:51 jedgar Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.21 2000/04/14 00:25:22 mharo Exp $
 #
 
 PORTNAME=	cooledit
-PORTVERSION=	3.13.2
+PORTVERSION=	3.14.1
 CATEGORIES=	editors
 MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://www.netins.net/showcase/Comput-IT/cooledit/src/
@@ -32,5 +32,9 @@ pre-install:
 	fi
 	${INSTALL_SCRIPT} ${WRKSRC}/pixmap/coolicon.config \
 		${PREFIX}/etc/coolicon.config.dist
+
+post-install:
+	@${LN} -sf ${PREFIX}/share/cooledit/global.py \
+		${PREFIX}/share/coolicon/global.py
 
 .include <bsd.port.mk>
