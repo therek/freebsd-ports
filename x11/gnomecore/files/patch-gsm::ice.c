@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11/gnomecore/files/patch-gsm::ice.c,v 1.2 2002/01/23 15:22:51 sobomax Exp $
 
 --- gsm/ice.c.orig	Fri Oct 26 12:13:22 2001
 +++ gsm/ice.c	Tue Jan 22 16:28:18 2002
@@ -14,7 +14,7 @@ $FreeBSD$
 +    p = "";
 +  else
 +    p = g_strconcat (p, ":", NULL);
-+  p = g_strconcat (p, X11BASE "/lib/mozilla-embedded", NULL);
++  p = g_strconcat (p, X11BASE "/lib/mozilla", ":", X11BASE "/lib/mozilla-embedded", NULL);
 +  setenv ("LD_LIBRARY_PATH", p, 1);
    
    ice_depth = 0;	/* We are live */
