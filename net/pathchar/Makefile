@@ -4,20 +4,25 @@
 # Date created:        7 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.7 1999/10/21 19:02:26 fenner Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.8 1999/10/26 07:51:22 obrien Exp $
 #
 
 DISTNAME=	pathchar-a1-freebsd-3.0
 PKGNAME=	pathchar-a1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
-		http://www.caida.org/Tools/Pathchar/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html
+		http://www.caida.org/Tools/Pathchar/  \
+		http://www.fips.de/Computer/woman/  \
+		http://sitka.triumf.ca/net/  \
+		http://www.freebsd.org/~obrien/Distfiles/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
+		pathchar.mantxt
 
 MAINTAINER=	obrien@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
+MAN8=		pathchar.8
 
 .include <bsd.port.pre.mk>
 
@@ -29,12 +34,17 @@ PKGNAME=	pathchar-a0
 NO_BUILD=	yes
 NO_WRKSUBDIR=   yes
 
+pre-patch:
+	@${CP} ${DISTDIR}/pathchar.8 ${WRKSRC}
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pathchar ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/pathchar.8 ${PREFIX}/man/man8
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/pathchar
 	${INSTALL_MAN} ${FILESDIR}/README.pathchar \
 		${DISTDIR}/pathcharnotes.html \
+		${DISTDIR}/pathchar.mantxt \
 		${PREFIX}/share/doc/pathchar
 .endif
 
