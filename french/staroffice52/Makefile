@@ -3,15 +3,14 @@
 # Whom:                 Martin Blapp
 # Translation:		Eric Masson
 #
-# $FreeBSD: ports/french/staroffice52/Makefile,v 1.4 2000/10/08 10:20:10 asami Exp $
+# $FreeBSD: ports/french/staroffice52/Makefile,v 1.5 2000/10/14 20:15:17 obrien Exp $
 #
 
 PORTNAME=	staroffice
 PORTVERSION=	5.2
 CATEGORIES=	french editors linux
-MASTER_SITES=	ftp://ftp.unilim.fr/pub/unix/bureautique/ \
+MASTER_SITES=	ftp://sunsite.cnlab-switch.ch/mirror/staroffice/francais/ \
 		ftp://ftp.math.u-bordeaux.fr/pub/StarOffice/Linux-Intel/ \
-		ftp://sunsite.cnlab-switch.ch/mirror/staroffice/francais/ \
 		ftp://ftp.be.embnet.org/pub/tools/StarOffice/Linux/ \
 		ftp://ftp.medasys-digital-systems.fr/pub1/linux/staroffice/
 DISTNAME=	so-5_2-ga-bin-linux-fr.bin
