@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.46 2001/08/15 16:25:10 will Exp $
+# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.47 2001/08/19 00:04:22 olgeni Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -20,7 +20,7 @@ RUN_DEPENDS=	dvips:${PORTSDIR}/print/teTeX
 PLIST_SUB+=	KAMERA:="@comment "
 
 .if defined(WITH_SANE)
-LIB_DEPENDS=	sane.1:${PORTSDIR}/graphics/sane-backends
+LIB_DEPENDS+=	sane.1:${PORTSDIR}/graphics/sane-backends
 PLIST_SUB+=	SANE:=""
 .else
 PLIST_SUB+=	SANE:="@comment "
