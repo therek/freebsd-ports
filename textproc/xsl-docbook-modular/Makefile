@@ -2,7 +2,7 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/xsl-docbook-modular/Makefile,v 1.1 2001/03/19 12:50:25 kiri Exp $
 #
 
 PORTNAME=	xsl-docbook-modular
@@ -39,7 +39,7 @@ pre-install:
 
 do-install:
 	${CP} -Rp ${WRKDIR}/docbook/* ${INSTDIR}
-	${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 	${CHMOD} ${BINMODE} ${INSTDIR}/dbx2a.sh
 	${LN} -sf ${INSTDIR}/dbx2a.sh ${PREFIX}/bin/dbx2a
 

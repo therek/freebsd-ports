@@ -4,7 +4,7 @@
 #
 # Based on nik's docbook-310 port
 #
-# $FreeBSD: ports/textproc/docbook-400/Makefile,v 1.4 2000/09/07 19:36:00 nik Exp $
+# $FreeBSD: ports/textproc/docbook-400/Makefile,v 1.5 2000/10/27 15:30:08 shige Exp $
 #
 
 PORTNAME=	docbook
@@ -38,7 +38,7 @@ do-install:
 	@${INSTALL_DATA} ${FILESDIR}/catalog ${INSTDIR}/4.0/catalog
 	@${ECHO} "CATALOG \"${ISOCAT}\"" >> ${INSTDIR}/4.0/catalog
 	@${CHMOD} ${SHAREMODE} ${INSTDIR}/4.0/*
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
 	@${MKCATALOG} -q install ${PORTNAME}/${PORTVERSION}

@@ -2,7 +2,7 @@
 # Date created:		Sept 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/html/Makefile,v 1.10 2000/10/27 15:32:58 shige Exp $
+# $FreeBSD: ports/textproc/html/Makefile,v 1.11 2001/01/16 17:32:44 sobomax Exp $
 #
 
 PORTNAME=	html
@@ -30,7 +30,7 @@ pre-install:
 do-install:
 	@zcat ${DISTDIR}/${DISTFILES} |(cd ${INSTDIR}; pax -r)
 	@${CHMOD} ${SHAREMODE} `find ${INSTDIR} -type f`
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
 	@${MKCATALOG} -q install ${PORTNAME}

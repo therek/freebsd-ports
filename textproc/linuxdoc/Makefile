@@ -2,7 +2,7 @@
 # Date created:		July 8, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.12 2000/10/27 15:24:07 shige Exp $
+# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.13 2001/01/16 17:32:45 sobomax Exp $
 #
 
 PORTNAME=	linuxdoc
@@ -30,7 +30,7 @@ pre-install:
 do-install:
 	@zcat ${DISTDIR}/${DISTFILES} |(cd ${INSTDIR}; pax -r)
 	@${CHMOD} ${SHAREMODE} ${INSTDIR}/*
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
 	@${MKCATALOG} -q install ${PORTNAME}
