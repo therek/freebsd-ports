@@ -2,13 +2,13 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/lang/otcl/Makefile,v 1.11 2000/06/16 21:51:29 asami Exp $
+# $FreeBSD: ports/lang/otcl/Makefile,v 1.12 2000/10/08 10:02:41 asami Exp $
 #
 
 PORTNAME=	otcl
-PORTVERSION=	1.0a5
+PORTVERSION=	1.0a6
 CATEGORIES=	lang
-MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/
+MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
