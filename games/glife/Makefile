@@ -2,7 +2,7 @@
 # Date created:				18th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/glife/Makefile,v 1.10 2001/03/29 16:33:45 sobomax Exp $
+# $FreeBSD: ports/games/glife/Makefile,v 1.11 2001/05/04 21:41:10 ade Exp $
 #
 
 PORTNAME=	glife
@@ -18,6 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 USE_GNOME=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
