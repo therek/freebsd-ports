@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.242 1999/12/07 21:59:21 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.243 1999/12/27 01:15:26 steve Exp $
 #
 
     SUBDIR += Canna
@@ -58,6 +58,7 @@
     SUBDIR += gtkicq
     SUBDIR += gxditview
     SUBDIR += hex
+    SUBDIR += hns
     SUBDIR += ircII
     SUBDIR += iv
     SUBDIR += japaneseAFM
