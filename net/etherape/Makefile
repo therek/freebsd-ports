@@ -2,11 +2,11 @@
 # Date created:				4 April 2001
 # Whom: 				Holger Lamm <holger@eit.uni-kl.de>
 #
-# $FreeBSD: ports/net/etherape/Makefile,v 1.2 2001/05/04 21:41:20 ade Exp $
+# $FreeBSD: ports/net/etherape/Makefile,v 1.3 2001/07/22 04:39:26 dwcjr Exp $
 #
 
 PORTNAME=	etherape
-PORTVERSION=	0.7.8
+PORTVERSION=	0.8.0
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
