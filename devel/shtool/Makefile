@@ -3,7 +3,7 @@
 # Date created:			26-Apr-1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/shtool/Makefile,v 1.18 1999/12/24 15:25:53 rse Exp $
+# $FreeBSD: ports/devel/shtool/Makefile,v 1.19 1999/12/24 18:39:29 mharo Exp $
 #
 
 DISTNAME=	shtool-1.4.7
@@ -16,7 +16,6 @@ MAINTAINER=	rse@engelschall.com
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-batch
 
 MAN1=		shtool.1 shtoolize.1
 
