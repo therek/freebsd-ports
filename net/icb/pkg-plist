@@ -1,8 +1,8 @@
-@comment $FreeBSD: ports/net/icb/pkg-plist,v 1.2 1999/08/30 14:22:56 peter Exp $
+@comment $FreeBSD: ports/net/icb/pkg-plist,v 1.3 2001/01/06 08:09:14 obrien Exp $
 bin/icb
-share/icb/icbserverdb
-share/icb/sample.icbrc
 share/icb/bartender
 share/icb/confuse
 share/icb/echofunctions
+share/icb/icbserverdb
+share/icb/sample.icbrc
 @dirrm share/icb

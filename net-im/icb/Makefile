@@ -3,31 +3,31 @@
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.8 2001/01/06 08:09:14 obrien Exp $
+# $FreeBSD: ports/net/icb/Makefile,v 1.9 2001/01/12 15:32:28 alex Exp $
 #
 
 PORTNAME=	icb
 PORTVERSION=	5.1.0
-CATEGORIES=	net
-MASTER_SITES=	http://ftp.obfuscation.org/ftp/pub/icb/  \
+PORTREVISION=	1
+CATEGORIES=	net tcl82
+MASTER_SITES=	http://www.obfuscation.org/ftp/pub/icb/ \
 		ftp://ftp.obfuscation.org/pub/icb/
-DISTNAME=	cicb-${PORTVERSION}
+DISTNAME=	c${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	tclsh8.3:${PORTSDIR}/lang/tcl83
+LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-tclinclude=${LOCALBASE}/include/tcl8.2 \
+		--with-tcllib=${LOCALBASE}/lib
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/icb/icb ${PREFIX}/bin
-	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m ${BINMODE} \
-		${PREFIX}/share/icb
+	@${MKDIR} ${PREFIX}/share/icb
 	${INSTALL_DATA} ${WRKSRC}/icbserverdb ${PREFIX}/share/icb
-	${INSTALL_DATA} ${WRKSRC}/contrib/sample.icbrc \
-		${WRKSRC}/contrib/bartender \
-		${WRKSRC}/contrib/confuse \
-		${WRKSRC}/contrib/echofunctions \
-		${PREFIX}/share/icb
+.for file in bartender confuse echofunctions sample.icbrc
+	${INSTALL_DATA} ${WRKSRC}/contrib/${file} ${PREFIX}/share/icb
+.endfor
 
 .include <bsd.port.mk>
