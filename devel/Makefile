@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.639 2001/09/11 08:38:44 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.640 2001/09/14 11:55:27 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -348,6 +348,7 @@
     SUBDIR += p5-File-Tools
     SUBDIR += p5-Filter
     SUBDIR += p5-FreezeThaw
+    SUBDIR += p5-Getopt-Declare
     SUBDIR += p5-Getopt-Long
     SUBDIR += p5-Glade-Perl
     SUBDIR += p5-Heap
