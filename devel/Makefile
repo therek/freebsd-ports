@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.436 2001/02/15 17:44:48 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.437 2001/02/16 11:07:02 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -16,6 +16,7 @@
     SUBDIR += arm-aout-gcc295
     SUBDIR += arm-elf-binutils
     SUBDIR += arm-elf-gcc295
+    SUBDIR += as80
     SUBDIR += asis
     SUBDIR += asl
     SUBDIR += astyle
