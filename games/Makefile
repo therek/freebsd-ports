@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.276 2000/06/06 00:57:52 jmz Exp $
+# $FreeBSD: ports/games/Makefile,v 1.277 2000/06/22 20:49:45 ade Exp $
 #
 
     SUBDIR += 3dc
@@ -124,6 +124,7 @@
     SUBDIR += quakeserver
     SUBDIR += rocksndiamonds
     SUBDIR += rollemup
+    SUBDIR += rt2-demo
     SUBDIR += rubix
     SUBDIR += seabattle
     SUBDIR += seahaven
