@@ -2,11 +2,11 @@
 # Date created:        19 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/net/ettercap/Makefile,v 1.2 2001/04/06 23:32:37 greid Exp $
+# $FreeBSD: ports/net/ettercap/Makefile,v 1.3 2001/04/24 16:22:55 greid Exp $
 #
 
 PORTNAME=       ettercap
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.2
 CATEGORIES=     net
 MASTER_SITES=   http://ettercap.sourceforge.net/download/
 
