@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.1 2001/03/19 15:33:33 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -157,6 +157,8 @@ def getrelpath(path, wrksrc):
 	path = os.path.abspath(path)
 	wrksrc = os.path.abspath(wrksrc)
 	commonpart = os.path.commonprefix((path, wrksrc))
+	while commonpart[-1:] != '/':
+		commonpart = commonpart[:-1]
 	path = path[len(commonpart):]
 	wrksrc = wrksrc[len(commonpart):]
 	if wrksrc == '':
