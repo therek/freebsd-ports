@@ -2,7 +2,7 @@
 # Date created:         3 May 2000
 # Whom:                 sam@inf.enst.fr
 #
-# $FreeBSD: ports/lang/gnat-glade/Makefile,v 1.2 2000/12/21 10:35:18 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnat-glade
@@ -15,9 +15,13 @@ MAINTAINER=	sam@inf.enst.fr
 
 BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat
 
-USE_AUTOCONF=	yes
+USE_AUTOMAKE_VER=14
 CONFIGURE_ENV=	ADA=adagcc
 USE_GMAKE=	yes
+
+pre-configure:
+	${PERL} -pi -e "s@aclocal\)@${ACLOCAL})@g;\
+			s@automake\)@${AUTOMAKE})@g" ${WRKSRC}/aclocal.m4
 
 post-install:
 	strip ${PREFIX}/bin/gnatdist
