@@ -2,11 +2,11 @@
 # Date created:         19 April 2000
 # Whom:                 kris@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnut/Makefile,v 1.7 2001/01/14 10:33:20 kris Exp $
+# $FreeBSD: ports/net/gnut/Makefile,v 1.8 2001/02/12 00:35:57 kris Exp $
 #
 
 PORTNAME=	gnut
-PORTVERSION=	0.4.20
+PORTVERSION=	0.4.21
 CATEGORIES=	net audio
 MASTER_SITES=	http://www.gnutelliums.com/linux_unix/gnut/tars/
 
