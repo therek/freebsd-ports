@@ -2,17 +2,17 @@
 # Date created:				27 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/scrot/Makefile,v 1.1 2000/12/03 20:26:18 will Exp $
+# $FreeBSD: ports/graphics/scrot/Makefile,v 1.2 2000/12/05 02:34:02 asami Exp $
 #
 
 PORTNAME=	scrot
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
 MAINTAINER=	ishmael27@home.com
 
-LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2-tmp
+LIB_DEPENDS=	giblib.1:${PORTSDIR}/graphics/giblib
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
