@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/surfraw/pkg-plist,v 1.4 2001/08/04 05:41:37 trevor Exp $
+@comment $FreeBSD: ports/www/surfraw/pkg-plist,v 1.5 2001/11/04 15:52:09 naddy Exp $
 bin/W
 bin/altavista
 bin/amazon
@@ -15,17 +15,21 @@ bin/debpackages
 bin/deja
 bin/excite
 bin/fast
+bin/filesearching
+bin/freebsd
 bin/freshmeat
+bin/ftpfind
 bin/ftpsearch
 bin/google
 bin/jake
-bin/linuxdoc
 bin/netbsd
+bin/openbsd
 bin/pubmed
 bin/raging
 bin/rhyme
 bin/scaleplus
 bin/slashdot
+bin/slinuxdoc
 bin/sourceforge
 bin/stockquote
 bin/sundocs
