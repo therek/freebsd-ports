@@ -2,19 +2,21 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.10 2001/01/01 10:15:07 will Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.11 2001/07/10 16:35:06 fenner Exp $
 #
 # View this file with tabstop=4
 #
 
-PORTNAME=		Generic-NQS
-PORTVERSION=	3.50.9
-CATEGORIES=		net
-MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
+PORTNAME=			Generic-NQS
+PORTVERSION=		3.50.9
+PORTREVISION=		1
+CATEGORIES=			net
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 
-MAINTAINER=		tonym@angis.org.au
+MAINTAINER=		tonym@biolateral.com.au
 
-USE_BZIP2=	yes
+USE_BZIP2=		yes
 IS_INTERACTIVE=	yes
 NO_PACKAGE=		have to build on site due to the descriptors created in\
 				/var/spool/nqs (default location) and the configuration\
