@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.76 2001/01/16 17:33:01 sobomax Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.77 2001/04/10 15:37:23 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -16,7 +16,12 @@ MAINTAINER?=	sada@FreeBSD.org
 RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape-wrapper
 
 .if (${PORTVERSION} == "4.76")
-BROKEN=		"has a serious security hole, use 4.77 instead"
+BROKEN=		"Has a serious security hole, use 4.77 instead.\
+		In addition to,\
+		on FreeBSD ports,\
+		4.77 is available only for Linux/Alpha-arch now,\
+		and looks Netscape would never support FreeBSD native one\
+		any more"
 .endif
 
 .if !defined(INFILE_HEAD)
