@@ -2,11 +2,11 @@
 # Date created:				15 August 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/pygmy/Makefile,v 1.4 2000/09/22 10:37:50 sobomax Exp $
+# $FreeBSD: ports/mail/pygmy/Makefile,v 1.5 2000/10/02 06:50:42 sobomax Exp $
 #
 
 PORTNAME=	pygmy
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.4
 CATEGORIES=	mail python gnome
 MASTER_SITES=	http://pygmy.sourceforge.net/
 
