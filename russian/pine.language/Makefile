@@ -2,7 +2,7 @@
 # Whom:                 ache
 # Date created:		1996/12/03
 #
-# $FreeBSD: ports/russian/pine.language/Makefile,v 1.11 2000/04/21 07:52:21 mharo Exp $
+# $FreeBSD: ports/russian/pine.language/Makefile,v 1.12 2000/09/29 08:07:31 kris Exp $
 #
 
 PORTNAME=	pine
@@ -11,8 +11,6 @@ CATEGORIES=	russian mail
 EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
-
-FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 RUN_DEPENDS=	pine:${PORTSDIR}/mail/pine4
 
