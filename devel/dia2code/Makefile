@@ -3,25 +3,25 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dia2code/Makefile,v 1.2 2001/08/31 14:20:17 sobomax Exp $
 #
 
 PORTNAME=	dia2code
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml
+LIB_DEPENDS=	xml2:${PORTSDIR}/textproc/libxml2 \
+		giconv:${PORTSDIR}/converters/libiconv
 
-USE_LIBTOOL=	yes
-
-XML_CONFIG=	${LOCALBASE}/bin/xml-config
+GNU_CONFIGURE=	yes
+XML_CONFIG=	${LOCALBASE}/bin/xml2-config
 USE_GMAKE=	yes
 
 post-patch:
-	@${PERL} -pi -e "s|%%XML_CONFIG%%|${XML_CONFIG}|g" ${WRKSRC}/dia2code/Makefile.in
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/dia2code/Makefile.in
 
 .include <bsd.port.mk>
