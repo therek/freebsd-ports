@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.72 1999/11/03 22:23:25 nsayer Exp $
+# $FreeBSD: ports/security/Makefile,v 1.73 1999/11/08 06:22:45 green Exp $
 #
 
     SUBDIR += bjorb
@@ -8,6 +8,7 @@
     SUBDIR += checkpassword
     SUBDIR += cops
     SUBDIR += crack
+    SUBDIR += dante
     SUBDIR += donkey
     SUBDIR += fakebo
     SUBDIR += firewalk
@@ -33,6 +34,7 @@
     SUBDIR += nmapfe
     SUBDIR += openssh
     SUBDIR += openssl
+    SUBDIR += p5-Authen-PAM
     SUBDIR += p5-Authen-Radius
     SUBDIR += p5-Crypt-DES
     SUBDIR += p5-Crypt-IDEA
