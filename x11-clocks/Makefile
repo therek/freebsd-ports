@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-clocks/Makefile,v 1.20 2000/10/24 14:08:05 imura Exp $
+# $FreeBSD: ports/x11-clocks/Makefile,v 1.21 2001/02/26 19:24:49 will Exp $
 #
 
     SUBDIR += abclock
@@ -23,6 +23,7 @@
     SUBDIR += tclock
     SUBDIR += wmcalclock
     SUBDIR += wmdate
+    SUBDIR += wmfishtime
     SUBDIR += wmitime
     SUBDIR += wmtime
     SUBDIR += wmtz
