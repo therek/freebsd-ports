@@ -2,13 +2,14 @@
 # Date created:        19 September 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/www/linbot/Makefile,v 1.6 1999/08/31 02:42:55 peter Exp $
+# $FreeBSD: ports/www/linbot/Makefile,v 1.7 2000/04/10 00:05:38 cpiazza Exp $
 #
 
 PORTNAME=	linbot
-PORTVERSION= 	0.9
+PORTVERSION= 	1.0
 CATEGORIES=	www python
-MASTER_SITES=	http://starship.skyport.net/crew/marduk/linbot/download/
+MASTER_SITES=	http://metalab.unc.edu/pub/Linux/apps/www/misc/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	billf@FreeBSD.org
 
@@ -16,13 +17,10 @@ RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
 NO_BUILD=	yeah
 
-MAN1=		linbot.1
-
 do-install:
 	${MKDIR} ${PREFIX}/share/linbot
 	${CP} ${WRKSRC}/*.py ${PREFIX}/share/linbot
 	${CP} ${WRKSRC}/*.css ${PREFIX}/share/linbot
-	${CP} ${WRKSRC}/contrib/*.1 ${PREFIX}/man/man1
 	${LN} -sf ${PREFIX}/share/linbot/linbot.py ${PREFIX}/bin/linbot
 
 .include <bsd.port.mk>
