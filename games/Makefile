@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.226 1999/09/24 17:37:56 taoka Exp $
+# $FreeBSD: ports/games/Makefile,v 1.227 1999/09/28 00:50:30 taoka Exp $
 #
 
     SUBDIR += 3dc
@@ -57,6 +57,7 @@
     SUBDIR += gnugo
     SUBDIR += gnushogi
     SUBDIR += golddig
+    SUBDIR += gru
     SUBDIR += gtkballs
     SUBDIR += hex
     SUBDIR += icbm3d
