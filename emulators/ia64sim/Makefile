@@ -3,7 +3,7 @@
 # Date created:			  Tue Oct 10, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/ia64sim/Makefile,v 1.4 2001/08/22 18:38:13 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ia64sim
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.pacificsites.com/~ccrayne/  \
 		http://odin.asgard/
 DISTFILES=	${PORTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ia64@FreeBSD.org
 
 EXTRACT_BEFORE_ARGS=	-qLa
 WRKSRC=		${WRKDIR}/home/chuck/ia64simcc
