@@ -3,7 +3,7 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.110 2001/06/13 16:02:19 dwcjr Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.111 2001/06/13 17:22:24 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
@@ -20,6 +20,15 @@ MAINTAINER=	ust@cert.siemens.de
 
 USE_GMAKE=	yes
 USE_AUTOMAKE=	yes
+
+.if defined(WITH_COMPRESSED_FOLDERS)
+PATCH_SITES+=	http://www.spinnaker.de/mutt/compressed/
+.endif
+
+.if defined(WITH_VVV_PATCHES)
+PATCH_SITES+=	http://mutt.org.ua/download/mutt-${PATCH_VERSION}/ \
+		ftp://mutt.org.ua/mutt/mutt-${PATCH_VERSION}/
+.endif
 
 .if !defined(PATCH_VERSION)
 PATCH_VERSION=	${PORTVERSION}
@@ -75,21 +84,18 @@ CONFIGURE_ARGS+=	--with-ssl=${OPENSSLBASE}
 .endif
 
 .if defined(WITH_COMPRESSED_FOLDERS)
-PATCHFILES=	patch-${PATCH_VERSION}.rr.compressed.1.gz
+PATCHFILES+=	patch-${PATCH_VERSION}.rr.compressed.1.gz
 PATCH_DIST_STRIP=	-p1
-PATCH_SITES=	http://www.spinnaker.de/mutt/compressed/
 CONFIGURE_ARGS+=	--enable-compressed
 .endif
 
 .if defined(WITH_VVV_PATCHES)
-PATCHFILES=	patch-${PATCH_VERSION}.rr.compressed.gz \
+PATCHFILES+=	patch-${PATCH_VERSION}.rr.compressed.gz \
 		patch-${PATCH_VERSION}.vvv.nntp.gz \
 		patch-${PATCH_VERSION}.vvv.initials.gz \
 		patch-${PATCH_VERSION}.vvv.quote.gz \
 		patch-${PATCH_VERSION}.vvv.ru.gz
 PATCH_DIST_STRIP=	-p1
-PATCH_SITES=	http://mutt.org.ua/download/mutt-${PATCH_VERSION}/ \
-		ftp://mutt.org.ua/mutt/mutt-${PATCH_VERSION}/
 CONFIGURE_ARGS+=	--enable-nntp --with-regex --enable-compressed
 .endif
 
