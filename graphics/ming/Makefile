@@ -2,12 +2,11 @@
 # Date created:		14 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ming/Makefile,v 1.7 2001/04/12 16:43:45 knu Exp $
+# $FreeBSD: ports/graphics/ming/Makefile,v 1.8 2001/04/13 15:08:26 knu Exp $
 #
 
 PORTNAME=	ming
-PORTVERSION=	0.1.0
-PORTREVISION=	2
+PORTVERSION=	0.1.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.opaque.net/ming/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PORTNAME}-examples${EXTRACT_SUFX}
@@ -39,7 +38,7 @@ DOCS_UTIL=	README \
 post-extract:
 	${LN} -s ${WRKDIR}/${PORTNAME}-examples ${WRKSRC}/../examples
 	${SED} -e 's:"\.\./\.\./ming\.h":<ming.h>:g' \
-		${WRKSRC}/../c++_ext/ming.h > ${WRKSRC}/mingpp.h
+		${WRKSRC}/ming.h > ${WRKSRC}/mingpp.h
 	cd ${WRKSRC}/../util && \
 	${RM} bindump.c hexdump.c listmp3.c
 
