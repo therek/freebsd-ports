@@ -2,7 +2,7 @@
 # Date created:        12 July 2000
 # Whom:                Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/devel/camlp4/Makefile,v 1.1 2000/08/01 11:58:28 nbm Exp $
+# $FreeBSD: ports/devel/camlp4/Makefile,v 1.2 2000/09/16 13:03:21 jedgar Exp $
 #
 # This is not the current version, but the version needs to
 # be <= the version of ocaml, which hasn't been updated. Once
@@ -15,6 +15,8 @@ MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/camlp4/OLD/2.04/ \
 		http://www.unknown.nu/ports/
 
 MAINTAINER=	user@unknown.nu
+
+BROKEN=		"Does not compile"
 
 BUILD_DEPENDS=	ocamlc.opt:${PORTSDIR}/lang/ocaml
 
