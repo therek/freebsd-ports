@@ -2,21 +2,21 @@
 # Date created:        23 March 2001
 # Whom:                Roland Jesse <jesse@cs.uni-magdeburg.de>
 #
-# $FreeBSD: ports/misc/mango/Makefile,v 1.1 2001/03/31 02:25:18 will Exp $
+# $FreeBSD: ports/misc/mango/Makefile,v 1.2 2001/05/09 14:41:08 alex Exp $
 #
 
 PORTNAME=	mango
 PORTVERSION=	0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	misc
-MASTER_SITES=	ftp://mango.sourceforge.net/pub/mango/
+MASTER_SITES=	http://prdownloads.sourceforge.net/mango/
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 
 BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake
 
 USE_BZIP2=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 TMAKEENV=	TMAKEPATH=${PREFIX}/share/tmake/freebsd-g++ QTDIR=${X11BASE}
 MAKE_ENV+=	QTDIR=${X11BASE}
 
