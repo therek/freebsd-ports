@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.9 2001/01/28 08:07:43 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flash
@@ -63,7 +63,7 @@ post-install:
 	@${ECHO} "Updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/flash /etc/shells.bak; \
-	${ECHO} ${PREFIX}/bin/flash) > /etc/shells
+	${ECHO_CMD} ${PREFIX}/bin/flash) > /etc/shells
 	@${RM} /etc/shells.bak
 	@${SED} -e "s:/usr/local:${PREFIX}:g" ${PKGMESSAGE}
 

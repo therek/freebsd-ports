@@ -2,7 +2,7 @@
 # Date created:        28 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/mudsh/Makefile,v 1.2 2001/03/11 06:50:52 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mudsh
@@ -33,7 +33,7 @@ post-install:
 	@${ECHO} "updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/mudsh /etc/shells.bak; \
-	 ${ECHO} ${PREFIX}/bin/mudsh) > /etc/shells
+	 ${ECHO_CMD} ${PREFIX}/bin/mudsh) > /etc/shells
 	@${RM} /etc/shells.bak
 
 .include <bsd.port.mk>

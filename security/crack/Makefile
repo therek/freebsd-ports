@@ -4,7 +4,7 @@
 # Whom:				  David O'Brien <obrien@FreeBSD.org>
 #				  & Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/security/crack/Makefile,v 1.17 2000/04/21 08:18:14 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crack
@@ -26,7 +26,7 @@ pre-configure:
 	@${MV} -f ${WRKSRC}/src/util/elcid.c ${WRKSRC}/src/util/elcid.c.orig
 	@${CP} -p ${WRKSRC}/src/util/elcid.c,bsd ${WRKSRC}/src/util/elcid.c
 .endif
-	@${ECHO} "XLIB+= -lcrypt" >> ${WRKSRC}/src/util/Makefile
+	@${ECHO_CMD} "XLIB+= -lcrypt" >> ${WRKSRC}/src/util/Makefile
 
 pre-build:
 	@(if [ ! -f /usr/share/dict/words ];then \

@@ -2,7 +2,7 @@
 # Date created:		16 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.6 2001/02/22 17:22:39 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clockspeed
@@ -32,9 +32,9 @@ RC_SCRIPT_STARTUP_DIR=		${PREFIX}/etc/rc.d
 post-patch: real-post-patch
 
 do-configure:
-	@${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	@${ECHO} ${CC} -s -L${LOCALBASE}/lib > ${WRKSRC}/conf-ld
-	@${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
+	@${ECHO_CMD} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
+	@${ECHO_CMD} ${CC} -s -L${LOCALBASE}/lib > ${WRKSRC}/conf-ld
+	@${ECHO_CMD} ${PREFIX} > ${WRKSRC}/conf-home
 
 post-install: real-post-install
 

@@ -2,7 +2,7 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.23 2000/06/29 02:31:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cd-write
@@ -26,7 +26,7 @@ BROKEN=		CAM
 pre-build:
 	@cd ${WRKSRC}; ${MV} Makefile Makefile~; \
 		${SED} -e s:/usr/local:${PREFIX}:g -e s/CFL/CXXFL/ <Makefile~ >Makefile;\
-		${ECHO} all: cd-write >> Makefile
+		${ECHO_CMD} all: cd-write >> Makefile
 	@cd ${WRKSRC}/c++tk; ${MV} Makefile Makefile~; \
 		${SED} -e s:/usr/local:${PREFIX}:g <Makefile~ >Makefile
 

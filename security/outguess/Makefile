@@ -4,7 +4,7 @@
 # based on the OpenBSD port by Dug Song <dugsong@monkey.org>
 #
 # $OpenBSD: Makefile,v 1.7 2000/10/22 15:43:25 espie Exp $
-# $FreeBSD: ports/security/outguess/Makefile,v 1.3 2001/05/02 01:00:56 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	outguess
@@ -27,14 +27,14 @@ PLIST=		${WRKDIR}/pkg-plist
 WRKSRC=		${WRKDIR}/outguess
 
 pre-install:
-	${ECHO} bin/extract > ${PLIST}
-	${ECHO} bin/outguess >> ${PLIST}
-#	${ECHO} bin/histogram >> ${PLIST}
+	${ECHO_CMD} bin/extract > ${PLIST}
+	${ECHO_CMD} bin/outguess >> ${PLIST}
+#	${ECHO_CMD} bin/histogram >> ${PLIST}
 .if !defined(NOPORTDOCS)
 .for i in ${DOCS}
-	${ECHO} ${DOCDIR}/${i} >> ${PLIST}
+	${ECHO_CMD} ${DOCDIR}/${i} >> ${PLIST}
 .endfor
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:

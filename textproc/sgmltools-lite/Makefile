@@ -2,7 +2,7 @@
 # Date created:				7 Apr 2000
 # Whom:					Benno Rice <benno@netizen.com.au>
 #
-# $FreeBSD: ports/textproc/sgmltools-lite/Makefile,v 1.3 2000/09/09 17:10:16 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sgmltools-lite
@@ -30,6 +30,6 @@ pre-install:
 	${MKDIR} ${PREFIX}/etc/sgml
 
 post-install:
-	${ECHO} "3.0.0" > ${LOCALBASE}/share/sgml/misc/sgmltools/VERSION
+	${ECHO_CMD} "3.0.0" > ${LOCALBASE}/share/sgml/misc/sgmltools/VERSION
 
 .include <bsd.port.mk>

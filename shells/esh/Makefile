@@ -2,7 +2,7 @@
 # Date created:				05/20/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/shells/esh/Makefile,v 1.7 2000/06/20 13:37:38 nectar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	esh
@@ -20,7 +20,7 @@ do-install:
 	@${ECHO} "updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/esh /etc/shells.bak; \
-	  ${ECHO} ${PREFIX}/bin/esh) > /etc/shells
+	  ${ECHO_CMD} ${PREFIX}/bin/esh) > /etc/shells
 	@${RM} /etc/shells.bak
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/doc/esh.info ${PREFIX}/info/esh.info

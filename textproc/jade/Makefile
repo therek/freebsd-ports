@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.31 2001/02/05 16:34:46 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jade
@@ -49,7 +49,7 @@ post-install:
 	${MKDIR} ${PREFIX}/share/sgml/jade
 	${INSTALL_DATA} ${WRKSRC}/dsssl/* ${PREFIX}/share/sgml/jade
 	@if [ ! -f ${PREFIX}/share/sgml/catalog ]; then \
-		${ECHO} "CATALOG \"${PREFIX}/share/sgml/jade/catalog\"" > ${PREFIX}/share/sgml/catalog; \
+		${ECHO_CMD} "CATALOG \"${PREFIX}/share/sgml/jade/catalog\"" > ${PREFIX}/share/sgml/catalog; \
 	else \
 		${SETENV} LANG=C ${PERL} -ni -e 'print if !m|${PREFIX}/share/sgml/jade/catalog|;print "CATALOG \"${PREFIX}/share/sgml/jade/catalog\"\n" if eof;' ${PREFIX}/share/sgml/catalog; \
 	fi

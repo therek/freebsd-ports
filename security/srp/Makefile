@@ -2,7 +2,7 @@
 # Date created:							07/25/2001
 # Whom:									nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/srp/Makefile,v 1.1 2001/07/25 20:54:32 nectar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		srp
@@ -30,9 +30,9 @@ post-install:
 .for f in ${PORTDOCS}
 	${MKDIR} ${PREFIX}/share/doc/srp
 	${INSTALL_DATA} ${WRKSRC}/docs/${f} ${PREFIX}/share/doc/srp/${f}
-	@${ECHO} share/doc/srp/${f} >> ${TMPPLIST}
+	@${ECHO_CMD} share/doc/srp/${f} >> ${TMPPLIST}
 .endfor
-	@${ECHO} @dirrm share/doc/srp >> ${TMPPLIST}
+	@${ECHO_CMD} @dirrm share/doc/srp >> ${TMPPLIST}
 .endif
 
 .include <bsd.port.mk>

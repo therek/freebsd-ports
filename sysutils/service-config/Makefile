@@ -2,7 +2,7 @@
 # Date created:				2 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/service-config/Makefile,v 1.1 2001/07/06 15:34:54 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	service-config
@@ -21,8 +21,8 @@ NO_PACKAGE=	A possibly inherited DJB-style license would prohibit \
 		distribution of modified binary packages
 
 post-patch:
-	@${ECHO} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
-	@${ECHO} "${CC} ${CFLAGS} ${STRIP}" > ${WRKSRC}/conf-ld
+	@${ECHO_CMD} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
+	@${ECHO_CMD} "${CC} ${CFLAGS} ${STRIP}" > ${WRKSRC}/conf-ld
 	@${PERL} -pi -e 's!/usr/local!${PREFIX}!g' ${WRKSRC}/conf-home
 
 .include <bsd.port.mk>

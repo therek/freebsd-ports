@@ -2,7 +2,7 @@
 # Date created:        13 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/wapsh/Makefile,v 1.4 2001/05/29 18:10:57 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       	wapsh
@@ -88,7 +88,7 @@ do-install:
 post-install:
 	@${ECHO} "updating /etc/services"
 	@${CP} /etc/services /etc/services.bak
-	@(${GREP} -v ^htsh /etc/services.bak; ${ECHO} "htsh		3001/tcp    # htsh/wapsh server") > /etc/services
+	@(${GREP} -v ^htsh /etc/services.bak; ${ECHO_CMD} "htsh		3001/tcp    # htsh/wapsh server") > /etc/services
 	@if [ ! -f ${PREFIX}/etc/rc.d/htshd.sh ]; then \
 		${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/htshd.sh startup file."; \
 		${INSTALL_SCRIPT} ${FILESDIR}/htshd.sh ${PREFIX}/etc/rc.d/htshd.sh; \

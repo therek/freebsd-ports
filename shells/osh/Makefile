@@ -2,7 +2,7 @@
 # Date created:        29 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/osh/Makefile,v 1.1 2000/12/30 01:31:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	osh
@@ -20,7 +20,7 @@ post-install:
 	@${ECHO} "updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/osh /etc/shells.bak; \
-	 ${ECHO} ${PREFIX}/bin/osh) > /etc/shells
+	 ${ECHO_CMD} ${PREFIX}/bin/osh) > /etc/shells
 	@${RM} /etc/shells.bak
 
 .include <bsd.port.mk>

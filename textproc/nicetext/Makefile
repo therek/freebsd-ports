@@ -2,7 +2,7 @@
 # Date created:		20 February 1998
 # Whom:			Mark Chapman <markc@ctgi.net>
 #
-# $FreeBSD: ports/textproc/nicetext/Makefile,v 1.7 2000/04/09 21:52:55 cpiazza Exp $
+# $FreeBSD$
 
 PORTNAME=	nicetext
 PORTVERSION=	0.9
@@ -23,8 +23,8 @@ PROGRAMS=	bitcp dct2mstr expgram genmodel gramtest impkimmo impmsc \
 		sortdct txt2dct
 
 post-install:
-	@${ECHO} "#!/bin/sh" > ${WRKSRC}/bin/qstart-nttpd
-	@${ECHO} ${PREFIX}/bin/"nttpd -b " ${PREFIX}/share/examples/nicetext/database >> ${WRKSRC}/bin/qstart-nttpd
+	@${ECHO_CMD} "#!/bin/sh" > ${WRKSRC}/bin/qstart-nttpd
+	@${ECHO_CMD} ${PREFIX}/bin/"nttpd -b " ${PREFIX}/share/examples/nicetext/database >> ${WRKSRC}/bin/qstart-nttpd
 	${CHMOD} a+rx ${WRKSRC}/bin/qstart-nttpd
 	${INSTALL_SCRIPT} ${WRKSRC}/bin/qstart-nttpd ${PREFIX}/bin/
 .for f in ${MAN1}

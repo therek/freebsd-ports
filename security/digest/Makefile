@@ -3,7 +3,7 @@
 # Whom:					trevor
 #
 # $NetBSD: Makefile,v 1.4 2001/03/07 23:03:19 kim Exp $
-# $FreeBSD: ports/security/digest/Makefile,v 1.4 2001/08/14 08:59:08 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	digest
@@ -27,6 +27,6 @@ do-extract:
 	cd ${FILESDIR} && pax -r -w * ${WRKSRC}
 
 pre-install:
-	${ECHO} bin/digest > ${PLIST}
+	${ECHO_CMD} bin/digest > ${PLIST}
 
 .include <bsd.port.mk>

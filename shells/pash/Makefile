@@ -2,7 +2,7 @@
 # Date created:        30 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/pash/Makefile,v 1.1 2000/12/31 06:02:39 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pash
@@ -24,7 +24,7 @@ post-install:
 	@${ECHO} "updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/osh /etc/shells.bak; \
-	 ${ECHO} ${PREFIX}/bin/pash) > /etc/shells
+	 ${ECHO_CMD} ${PREFIX}/bin/pash) > /etc/shells
 	@${RM} /etc/shells.bak
 
 .include <bsd.port.mk>

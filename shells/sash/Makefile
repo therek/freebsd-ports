@@ -2,7 +2,7 @@
 # Date created:		Jan 22, 2000
 # Whom:			Patrick Gardella <patrick@freebsd.org>
 #
-# $FreeBSD: ports/shells/sash/Makefile,v 1.5 2000/06/29 07:02:50 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sash
@@ -29,7 +29,7 @@ post-install:
 	@${ECHO_MSG} "Updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
 	@(${GREP} -v ${PREFIX}/bin/sash /etc/shells.bak; \
-		${ECHO} ${PREFIX}/bin/sash) > /etc/shells
+		${ECHO_CMD} ${PREFIX}/bin/sash) > /etc/shells
 	@${RM} /etc/shells.bak
 
 .include <bsd.port.mk>
