@@ -2,7 +2,7 @@
 # Date created:			7 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/devel/dmalloc/Makefile,v 1.2 2001/01/16 17:30:16 sobomax Exp $
+# $FreeBSD$
 
 PORTNAME=	dmalloc
 PORTVERSION=	4.8.1
@@ -16,6 +16,7 @@ MAINTAINER=	jeremy@external.org
 
 INSTALLS_SHLIB=	YES
 GNU_CONFIGURE=	YES
+USE_REINPLACE=	yes
 CONFIGURE_ARGS+=--enable-threads --enable-shlib
 
 # NOTE: we make the test program first because otherwise it screws up
@@ -23,7 +24,7 @@ CONFIGURE_ARGS+=--enable-threads --enable-shlib
 ALL_TARGET=	dmalloc_t all light
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dmalloc ${PREFIX}/bin

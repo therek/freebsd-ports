@@ -2,7 +2,7 @@
 # Date created:        2 Feb 2000
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/textproc/dsssl-docbook-cygnus/Makefile,v 1.2 2001/02/03 22:37:05 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dsssl-docbook-cygnus
@@ -18,6 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/share/sgml/docbook/dsssl/modular/frames/navbar.htm:${P
 		jade:${PORTSDIR}/textproc/jade
 
 NO_BUILD=	yes
+USE_PERL5=	yes
 WRKSRC=		${WRKDIR}/stylesheets
 SCRIPTS_ENV=	DB_DATA="${DB_SCRIPTS} cygnus-both.dsl"
 

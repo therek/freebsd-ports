@@ -2,7 +2,7 @@
 # Date created:				01 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/textproc/code2html/Makefile,v 1.14 2001/05/17 12:24:36 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	code2html
@@ -23,6 +23,7 @@ BZIP2BASE=	/usr
 .endif
 
 NO_BUILD=	yes
+USE_REINPLACE=	yes
 
 MAN1=		code2html.1
 
@@ -32,7 +33,7 @@ do-configure:
 		-e 's|/bin/gzip|/usr/bin/gzip|' \
 		-e 's|/etc/code|${PREFIX}/etc/code|' \
 		< ${WRKSRC}/code2html.orig > ${WRKSRC}/code2html
-	@${PERL} -pi.orig -e 's|/etc/code|${PREFIX}/etc/code|' \
+	@${REINPLACE_CMD} -e 's|/etc/code|${PREFIX}/etc/code|' \
 	    ${WRKSRC}/code2html.1
 
 do-install:
