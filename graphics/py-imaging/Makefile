@@ -2,11 +2,11 @@
 # Date created:         02 November 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.11 2000/09/12 11:54:00 tg Exp $
+# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.12 2000/10/27 11:18:16 tg Exp $
 #
 
 PORTNAME=	imaging
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	graphics python
 MASTER_SITES=	http://www.pythonware.com/downloads/ \
 		ftp://www.python.org/pub/python/src/ \
