@@ -2,7 +2,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.34 2000/06/16 21:51:33 asami Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.35 2000/06/20 17:22:59 ade Exp $
 #
 
 PORTNAME=	gnumeric
@@ -20,7 +20,7 @@ RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 LIB_DEPENDS=	gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		glade.3:${PORTSDIR}/devel/libglade \
 		guile.6:${PORTSDIR}/lang/guile \
-		ole2.0:${PORTSDIR}/devel/libole2
+		gnomeole2.0:${PORTSDIR}/devel/libole2
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
