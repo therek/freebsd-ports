@@ -2,11 +2,11 @@
 # Date created: 	11 July 1998
 # Whom:			moeding
 #
-# $FreeBSD: ports/misc/jargon/Makefile,v 1.7 2000/06/05 05:44:36 kris Exp $
+# $FreeBSD: ports/misc/jargon/Makefile,v 1.8 2000/06/20 13:37:37 nectar Exp $
 #
 
 PORTNAME=	jargon
-PORTVERSION=	4.2.0
+PORTVERSION=	4.2.3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.tuxedo.org/~esr/jargon/
 
