@@ -2,12 +2,12 @@
 # Date created:			Sun Feb 3, 1999
 # Whom:				shipley@dis.org
 #
-# $FreeBSD: ports/net/libnet/Makefile,v 1.5 1999/10/08 03:46:23 cpiazza Exp $
+# $FreeBSD: ports/net/libnet/Makefile,v 1.6 2000/04/09 18:12:02 cpiazza Exp $
 #
 
 PORTNAME=	libnet
 PORTVERSION=	0.99g
-CATEGORIES=     net
+CATEGORIES=	net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 EXTRACT_SUFX=	.tgz
 
@@ -21,10 +21,10 @@ GNU_CONFIGURE=	yes
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} <= 300000
-BROKEN=         does not build
+BROKEN=		does not build
 .endif
 
-WRKSRC=         ${WRKDIR}/Libnet-0.99g
+WRKSRC=		${WRKDIR}/Libnet-0.99g
 
 post-install:
 .if !defined(NOPORTDOCS)
