@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.60 1999/08/31 06:53:18 mharo Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.61 1999/09/02 02:37:39 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -15,7 +15,6 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/ \
 		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/3.3.5/source/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.5/source/
 DISTFILES=	X335src-1.tgz X335src-2.tgz
-
 
 MAINTAINER=	jmz@FreeBSD.org
 
