@@ -1,8 +1,9 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.22 2001/03/13 10:21:12 olgeni Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.23 2001/03/31 02:58:09 will Exp $
 #
 
     SUBDIR += asfiles
     SUBDIR += binder
+    SUBDIR += cfm
     SUBDIR += dfm
     SUBDIR += endeavour
     SUBDIR += ezfm
