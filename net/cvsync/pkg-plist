@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/cvsync/pkg-plist,v 1.1 2003/03/23 18:41:44 naddy Exp $
+@comment $FreeBSD: ports/net/cvsync/pkg-plist,v 1.2 2003/07/03 06:11:38 nork Exp $
 bin/cvscan
 bin/cvsync
 bin/cvsyncd
@@ -11,4 +11,6 @@ bin/rcscmp
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/cvsync.conf
 %%EXAMPLESDIR%%/cvsyncd.conf
+%%EXAMPLESDIR%%/cvsyncd-NetBSD.conf
+%%EXAMPLESDIR%%/cvsyncd-OpenBSD.conf
 @dirrm %%EXAMPLESDIR%%
