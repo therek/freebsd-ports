@@ -2,7 +2,7 @@
 # Date created:         31 Mar 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hmconv/Makefile,v 1.3 1999/08/30 12:08:57 peter Exp $
+# $FreeBSD: ports/korean/hmconv/Makefile,v 1.4 2000/04/13 09:16:48 asami Exp $
 #
 
 PORTNAME=	hmconv
@@ -11,8 +11,6 @@ CATEGORIES=	korean mail
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/code/hmconv/ \
 		ftp://sunsite.kren.nm.kr/pub/packages/hangul/code/hmconv/
 DISTNAME=	hmconv1.0pl3
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 WRKSRC=		${WRKDIR}/hmconv
 

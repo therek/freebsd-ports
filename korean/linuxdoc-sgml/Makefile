@@ -2,15 +2,13 @@
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/linuxdoc-sgml/Makefile,v 1.7 1999/08/30 12:09:01 peter Exp $
+# $FreeBSD: ports/korean/linuxdoc-sgml/Makefile,v 1.8 2000/04/13 09:16:57 asami Exp $
 #
 
 PORTNAME=	linuxdoc-sgml
 PORTVERSION=	1.6bh2
 CATEGORIES=	korean textproc
 MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/tools/
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 USE_PERL5=	yes
 MAN1=		sgml2html.1 sgml2latex.1 sgml2rtf.1 sgmls.1 \

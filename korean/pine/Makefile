@@ -4,7 +4,7 @@
 #
 # k3 means pico hangul patch
 #
-# $FreeBSD: ports/korean/pine/Makefile,v 1.11 1999/08/30 12:09:12 peter Exp $
+# $FreeBSD: ports/korean/pine/Makefile,v 1.12 2000/04/13 09:17:24 asami Exp $
 #
 
 PORTNAME=	pine
@@ -18,8 +18,6 @@ DISTFILES=	pine3.96.tar.Z pine396k2.tar.gz
 
 PATCH_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/misc/
 PATCHFILES=	pico-3.96-hangul.patch
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 MAKE_ENV=	FILESDIR=${FILESDIR}
 MAN1= 		pine.1 pico.1 pilot.1

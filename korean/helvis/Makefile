@@ -2,7 +2,7 @@
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/helvis/Makefile,v 1.4 2000/02/14 02:08:20 asami Exp $
+# $FreeBSD: ports/korean/helvis/Makefile,v 1.5 2000/04/13 09:16:42 asami Exp $
 #
 
 PORTNAME=	helvis
@@ -11,8 +11,6 @@ CATEGORIES=	korean editors
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/editor/HElvis/ \
 		ftp://sunsite.kren.nm.kr/pub/packages/hangul/editor/HElvis/
 DISTNAME=	helvis-1.8h2-
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 MAN1=		ctags.1 elvis.1 elvprsv.1 elvrec.1 fmt.1 ref.1
 

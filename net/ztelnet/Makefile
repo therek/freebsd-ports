@@ -2,7 +2,7 @@
 # Date created:         15 Mar 1998
 # Whom:                 CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/net/ztelnet/Makefile,v 1.9 1999/08/30 14:24:37 peter Exp $
+# $FreeBSD: ports/net/ztelnet/Makefile,v 1.10 2000/04/09 18:14:07 cpiazza Exp $
 #
 # In this ports..
 #   - new compilation diff for FreeBSD(now we can upload!)
@@ -18,8 +18,6 @@ MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/net/ztelnet/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 DISTFILES=	ztelnet-linux.tar.gz ztelnet-patch.tar.gz \
 		ztelnet-patch-cmascott.tar.gz
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 NO_WRKSUBDIR=	yes
 PATCH_STRIP=	-p1

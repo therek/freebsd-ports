@@ -2,15 +2,13 @@
 # Date created:         25 May 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/nhpf/Makefile,v 1.4 1999/08/30 12:09:08 peter Exp $
+# $FreeBSD: ports/korean/nhpf/Makefile,v 1.5 2000/04/13 09:17:14 asami Exp $
 #
 
 PORTNAME=	nhpf
 PORTVERSION=	1.42
 CATEGORIES=	korean www
 MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/applications/
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 do-install:
 	${MKDIR} ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:         4 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hpscat/Makefile,v 1.5 1999/08/30 12:08:58 peter Exp $
+# $FreeBSD: ports/korean/hpscat/Makefile,v 1.6 2000/04/13 09:16:49 asami Exp $
 #
 
 PORTNAME=	hpscat
@@ -14,8 +14,6 @@ MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/print/hpscat/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/editor/ked/
 DISTNAME=	hpscat-jshin
 DISTFILES=	hpscat-jshin.tar.gz ked.tar.gz
-
-MAINTAINER=	junker@jazz.snu.ac.kr
 
 RUN_DEPENDS=    hcode:${PORTSDIR}/korean/hcode
 
