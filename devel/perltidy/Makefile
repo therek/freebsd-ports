@@ -3,12 +3,12 @@
 # Date created:			Mar 4, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/perltidy/Makefile,v 1.1 2001/03/04 12:36:31 ijliao Exp $
 #
 
 PORTNAME=	perltidy
-PORTVERSION=	20010304
-CATEGORIES=	devel
+PORTVERSION=	20010328
+CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
@@ -18,7 +18,7 @@ MAINTAINER=	ijliao@FreeBSD.org
 USE_PERL5=	yes
 NO_BUILD=	yes
 
-MAN1=	perltidy.1
+MAN1=	perltidy.1 perl2web.1
 
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g ; \
@@ -27,8 +27,10 @@ post-patch:
 post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/perltidy
+.for file in perltidy perl2web tutorial
 .for ext in html pod txt
-	${CP} ${WRKSRC}/docs/*.${ext} ${PREFIX}/share/doc/perltidy/
+	${CP} ${WRKSRC}/docs/${file}.${ext} ${PREFIX}/share/doc/perltidy/
+.endfor
 .endfor
 .endif
 
