@@ -2,7 +2,7 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/magic/Makefile,v 1.20 2001/02/13 13:25:25 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	magic
@@ -12,6 +12,8 @@ MASTER_SITES=	http://mos.stanford.edu/group/magic/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		"Does not compile"
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
