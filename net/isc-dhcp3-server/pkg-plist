@@ -1,5 +1,8 @@
-@comment $FreeBSD: ports/net/isc-dhcp3-server/pkg-plist,v 1.28 2004/06/25 18:50:13 eik Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3-server/pkg-plist,v 1.29 2004/06/26 14:32:40 eik Exp $
 bin/omshell
+%%LDAP%%bin/dhcpd-conf-to-ldap.pl
 etc/dhcpd.conf.sample
 etc/rc.d/isc-dhcpd.sh
 sbin/dhcpd
+%%LDAP%%%%SCHEMA_DIR%%/dhcp.schema
+%%LDAP%%@dirrm %%SCHEMA_DIR%%
