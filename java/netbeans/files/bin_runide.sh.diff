@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/java/netbeans/files/patch-bin_runide.sh,v 1.1 2003/06/02 12:18:17 olgeni Exp $
+$FreeBSD: ports/java/netbeans/files/patch-bin_runide.sh,v 1.2 2003/06/02 18:18:49 olgeni Exp $
 
 --- bin/runide.sh.orig	Mon Jun  2 11:23:48 2003
 +++ bin/runide.sh	Mon Jun  2 11:26:50 2003
