@@ -2,7 +2,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.18 2000/06/16 21:51:14 asami Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.19 2000/07/04 16:34:25 knu Exp $
 #
 
 PORTNAME=	eb
@@ -13,6 +13,9 @@ DISTFILES=	${EBFILES} \
 		${LISTFILES} \
 		${APPENDIXFILES}
 EXTRACT_ONLY=	${EBFILES}
+
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES= 	${DISTNAME}+.diff
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
