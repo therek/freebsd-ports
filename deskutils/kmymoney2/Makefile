@@ -2,13 +2,13 @@
 # Date created:        16 September 2001
 # Whom:                dwcjr
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/kmymoney2/Makefile,v 1.1 2001/09/17 03:23:27 dwcjr Exp $
 #
 
 PORTNAME=	kmymoney2
 PORTVERSION=	0.3.6
 CATEGORIES=	deskutils kde
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}"
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	kmymoney2
 
 MAINTAINER=	dmitry_makovey@mail.com
