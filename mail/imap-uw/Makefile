@@ -2,16 +2,17 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.44 2000/10/08 10:21:58 asami Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.45 2000/11/23 11:56:07 sobomax Exp $
 #
 
 PORTNAME=	imap-uw
 PORTVERSION=	4.7c
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/ \
-		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/ \
-		http://mirror.nucba.ac.jp/mirror/imap/ \
-		ftp://ftp.uni-halle.de/pub/mail/pine/
+MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
+		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/%SUBDIR%/ \
+		http://mirror.nucba.ac.jp/mirror/imap/%SUBDIR%/ \
+		ftp://ftp.uni-halle.de/pub/mail/pine/%SUBDIR%/
+MASTER_SITE_SUBDIR=	. old
 DISTNAME=	imap-${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 DISTFILES=	${DISTNAME}2${EXTRACT_SUFX} \
