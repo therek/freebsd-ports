@@ -3,11 +3,11 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.81 2000/08/07 10:48:02 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.82 2000/08/24 20:36:46 obrien Exp $
 #
 
 PORTNAME?=	vim
-PORTVERSION=	6.0g
+PORTVERSION=	6.0h
 CATEGORIES=	editors
 MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unreleased/unix/ \
 		ftp://ftp.nuxi.com/pub/vim/unreleased/unix/ \
