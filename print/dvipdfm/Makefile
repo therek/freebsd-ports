@@ -2,7 +2,7 @@
 # Date created:		16 January 2000
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.5 2000/08/01 23:52:42 jedgar Exp $
+# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.6 2000/08/17 00:32:42 dannyboy Exp $
 #
 
 PORTNAME=		dvipdfm
@@ -42,6 +42,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/transistor.pdf ${PREFIX}/share/texmf/doc/dvipdfm
 	( cd ${PREFIX}/share/texmf/doc/dvipdfm ; tex dvipdfm ; ${PREFIX}/bin/dvipdfm dvipdfm ; ${RM} dvipdfm.log dvipdfm.dvi )
 .endif
-	${CAT} ${MASTERDIR}/pkg/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
