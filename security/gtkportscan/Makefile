@@ -2,7 +2,7 @@
 # Date created:		11 March 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.12 2000/06/20 21:45:53 cpiazza Exp $
+# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.13 2000/06/29 02:31:39 asami Exp $
 #
 
 PORTNAME=	gtkportscan
@@ -15,10 +15,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-WRKSRC=		${WRKDIR}/gtkportscan
+GTK_CONFIG?=   ${X11BASE}/bin/gtk12-config
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/gtkportscan ${PREFIX}/bin
-	${INSTALL_PROGRAM} ${WRKSRC}/portscan ${PREFIX}/bin
+WRKSRC=                ${WRKDIR}/${PORTNAME}
+MAKE_ENV=      GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>
