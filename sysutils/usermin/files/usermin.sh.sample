@@ -1,12 +1,10 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/usermin/files/usermin.sh.sample,v 1.1 2002/11/10 20:11:29 olgeni Exp $
 
 case $1 in
 
 	start)
-		LD_PRELOAD=/usr/lib/libpam.so.1
-		export LD_PRELOAD
 		if [ -x !!PREFIX!!/etc/usermin/start ]; then
 			!!PREFIX!!/etc/usermin/start >/dev/null
 			echo -n ' usermin'
