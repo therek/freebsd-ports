@@ -2,13 +2,14 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.26 2000/06/16 21:52:23 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.27 2000/10/08 03:07:31 asami Exp $
 #
 
 PORTNAME=	tk
 PORTVERSION= 	8.0.5
 CATEGORIES=	x11-toolkits tk80
-MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
+MASTER_SITES=	${MASTER_SITE_TCLTK}
+MASTER_SITE_SUBDIR=	tcl8_0
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	cwt@Freebsd.ORG
