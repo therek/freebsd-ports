@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.112 2003/02/09 17:38:38 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.113 2003/03/03 16:33:54 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -385,9 +385,11 @@ shim=	${USE_RUBY_FEATURES:Mbenchmark} \
 	${USE_RUBY_FEATURES:Mpp} \
 	${USE_RUBY_FEATURES:Mracc-runtime} \
 	${USE_RUBY_FEATURES:Mruby18} \
+	${USE_RUBY_FEATURES:Mrunit} \
 	${USE_RUBY_FEATURES:Mset} \
 	${USE_RUBY_FEATURES:Mstringio} \
 	${USE_RUBY_FEATURES:Mstrscan} \
+	${USE_RUBY_FEATURES:Mtestunit} \
 	${USE_RUBY_FEATURES:Mtsort}
 .if !empty(shim) && ${RUBY_VER} <= 1.6
 BUILD_DEPENDS+=		${DEPEND_RUBY_SHIM18}
