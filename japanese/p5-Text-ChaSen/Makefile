@@ -2,7 +2,7 @@
 # Date created:		2 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/p5-Text-ChaSen/Makefile,v 1.1 2001/03/02 07:00:31 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-ChaSen
@@ -17,7 +17,7 @@ LIB_DEPENDS=	chasen.0:${PORTSDIR}/japanese/chasen-base
 
 MD5_FILE=	${.CURDIR}/../chasen-base/distinfo
 
-CHASEN_VERSION=	2.2.7
+CHASEN_VERSION=	2.2.9
 
 WRKSRC=		${WRKDIR}/chasen-${CHASEN_VERSION}/perl
 PERL_CONFIGURE=	yes
