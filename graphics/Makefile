@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.283 2001/03/17 16:21:50 vanilla Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.284 2001/03/17 16:35:33 vanilla Exp $
 #
 
     SUBDIR += 4va
@@ -243,6 +243,7 @@
     SUBDIR += xmagv
     SUBDIR += xmandel
     SUBDIR += xmfract
+    SUBDIR += xmms-avi
     SUBDIR += xmms-gforce
     SUBDIR += xmorph
     SUBDIR += xmountains
