@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.395 2000/08/18 18:49:26 roger Exp $
+# $FreeBSD: ports/net/Makefile,v 1.396 2000/08/22 18:41:58 nectar Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -139,6 +139,7 @@
     SUBDIR += mudix
     SUBDIR += naim
     SUBDIR += nam
+    SUBDIR += ncat
     SUBDIR += ncplib
     SUBDIR += nemesis
     SUBDIR += netatalk
@@ -197,6 +198,7 @@
     SUBDIR += pptpclient
     SUBDIR += ppxp
     SUBDIR += priss
+    SUBDIR += proxy
     SUBDIR += pvm
     SUBDIR += queso
     SUBDIR += radius
