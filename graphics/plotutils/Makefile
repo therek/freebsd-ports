@@ -3,7 +3,7 @@
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.6 1999/08/25 06:14:40 obrien Exp $
+# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.7 1999/08/31 06:45:09 mharo Exp $
 #
 
 DISTNAME=	plotutils-2.1.1
@@ -18,6 +18,8 @@ GNU_CONFIGURE=	yes
 
 .ifdef HAVE_MOTIF
 CONFIGURE_ARGS=	--with-motif
+# to ensure dependency info is generated properly
+REQUIRES_MOTIF=	yes
 .endif
 
 post-install:
