@@ -2,7 +2,7 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.21 2001/10/01 01:45:35 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linux_rar
@@ -15,16 +15,13 @@ EXTRACT_SUFX=	.sfx
 
 MAINTAINER=	sf@FreeBSD.org
 
-RUN_DEPENDS=	\
-	${LINUXBASE}/lib/libc-2.2.2.so:${PORTSDIR}/emulators/linux_base-7
-
-#USE_LINUX=	yes
-
-NO_BUILD=	yes
-ONLY_FOR_ARCHS=	i386
 NO_CDROM=	NOFEE: Can not charge for distribution
 NO_PACKAGE=	Only unmodified original package can be distributed
 
+ONLY_FOR_ARCHS=	i386
+
+USE_LINUX=	yes
+NO_BUILD=	yes
 EXTRACT_CMD=		# empty
 EXTRACT_BEFORE_ARGS=	# empty
 EXTRACT_AFTER_ARGS=	# empty
