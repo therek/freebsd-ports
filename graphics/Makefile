@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.332 2001/07/08 16:47:07 kevlo Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.333 2001/07/16 07:25:20 vanilla Exp $
 #
 
     SUBDIR += 4va
@@ -213,6 +213,7 @@
     SUBDIR += qvplay
     SUBDIR += rayshade
     SUBDIR += ruby-gd
+    SUBDIR += ruby-gdchart
     SUBDIR += ruby-gdk_imlib
     SUBDIR += ruby-gdk_pixbuf
     SUBDIR += ruby-gimp
