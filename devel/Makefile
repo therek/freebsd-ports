@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.609 2001/08/04 10:00:14 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.610 2001/08/07 06:53:29 lioux Exp $
 #
 
     SUBDIR += ElectricFence
@@ -280,6 +280,7 @@
     SUBDIR += ncurses
     SUBDIR += newlib-m68k
     SUBDIR += newt
+    SUBDIR += ngpt
     SUBDIR += noweb
     SUBDIR += oaf
     SUBDIR += ocamlweb
