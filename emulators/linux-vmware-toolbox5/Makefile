@@ -2,7 +2,7 @@
 # Date created:		10 Aug 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux-vmware-toolbox/Makefile,v 1.2 2000/08/27 04:26:41 knu Exp $
+# $FreeBSD: ports/emulators/linux-vmware-toolbox/Makefile,v 1.3 2000/09/25 07:19:31 knu Exp $
 #
 
 PORTNAME=	vmware-toolbox
@@ -30,8 +30,8 @@ MOUNT_DEV?=	vn0
 .else
 MOUNT_DEV?=	fd0
 .endif
-VMWARE_VER=	2.0.2
-BUILD_VER=	621
+VMWARE_VER=	2.0.3
+BUILD_VER=	799
 
 MOUNT=		/sbin/mount
 UMOUNT=		/sbin/umount
