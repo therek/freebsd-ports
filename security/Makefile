@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.204 2001/06/27 21:40:53 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.205 2001/07/05 07:06:03 ijliao Exp $
 #
 
     SUBDIR += aafid2
@@ -8,6 +8,7 @@
     SUBDIR += amavis-perl
     SUBDIR += apg
     SUBDIR += arirang
+    SUBDIR += bcwipe
     SUBDIR += beecrypt
     SUBDIR += bfbtester
     SUBDIR += bjorb
