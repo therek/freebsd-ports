@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.40 2001/06/29 03:39:54 green Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.41 2001/12/23 11:11:40 will Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -250,7 +250,7 @@ README.html:
 
 
 search: ${PORTSDIR}/INDEX
-	@here=`pwd`; \
+	@here="${.CURDIR}"; \
 	cd ${PORTSDIR}; \
 	top=`pwd`; \
 	there=`echo "$$here/" | sed s%$$top%${PORTSDIR}%`; \
