@@ -2,12 +2,12 @@
 # Date created:         17 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnustep-objc/Makefile,v 1.18 2001/06/26 11:56:40 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnustep-objc
-PORTVERSION=	1.0.1
-PORTREVISION=	1
+PORTVERSION=	1.1.0
+#PORTREVISION=	1
 CATEGORIES=	lang devel
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/libs/
 

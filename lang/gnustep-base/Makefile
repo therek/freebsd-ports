@@ -2,11 +2,11 @@
 # Date created:         17 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnustep-base/Makefile,v 1.19 2001/07/11 11:22:17 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnustep-base
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	lang devel
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 		http://ftp.codefactory.se/pub/gnu/gstep/ \
