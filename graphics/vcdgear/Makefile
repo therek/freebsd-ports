@@ -2,11 +2,11 @@
 # Date created:	 	06 January 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.4 2000/04/21 03:42:48 cpiazza Exp $
+# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.5 2001/01/05 05:29:30 cpiazza Exp $
 #
 
 PORTNAME=	vcdgear
-PORTVERSION=	1.6b
+PORTVERSION=	1.6d
 CATEGORIES= 	graphics
 MASTER_SITES=	http://www.vcdgear.org/files/
 
@@ -18,9 +18,9 @@ BROKEN=	'Only an ELF binary is distributed'
 .endif
 
 .if ${ARCH} == i386
-DISTNAME=	${PORTNAME}16b_i386_freebsd41
+DISTNAME=	${PORTNAME}16d_i386_freebsd42
 .else if ${ARCH} == alpha
-DISTNAME=	${PORTNAME}16b_alpha_freebsd41
+DISTNAME=	${PORTNAME}16d_alpha_freebsd41
 .endif
 
 NO_BUILD=	true
