@@ -2,11 +2,11 @@
 # Date created:				20th July 2000
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD: ports/databases/mysql++/Makefile,v 1.7 2001/03/07 22:28:27 olgeni Exp $
+# $FreeBSD: ports/databases/mysql++/Makefile,v 1.8 2001/06/01 20:06:06 olgeni Exp $
 #
 
 PORTNAME=	mysql++
-PORTVERSION=	1.7.8
+PORTVERSION=	1.7.9
 CATEGORIES=	databases devel
 MASTER_SITES=	ftp://mysql.omnipotent.net/mysql++/ \
 		ftp://ftp.u-aizu.ac.jp/ftp/pub/dbms/mysql/mysql.com/mysql++/
@@ -30,7 +30,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/sqlplusint/.libs/libsqlplus.a ${PREFIX}/lib
 	@(cd ${PREFIX}/lib && ${RM} -f libsqlplus.so && ${LN} -s libsqlplus.so.1 libsqlplus.so)
 	@ranlib ${PREFIX}/lib/libsqlplus.a
-	@ldconfig -m ${PREFIX}/lib
 	@mkdir -p ${PREFIX}/share/examples/mysql++
 	@mkdir -p ${PREFIX}/share/doc/mysql++
 	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/examples/*.cc ${PREFIX}/share/examples/mysql++
