@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.33 1999/10/14 21:46:54 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.34 1999/10/20 19:43:17 gj Exp $
 #
 
 DISTNAME=	xemacs-21.1.7
@@ -22,7 +22,8 @@ MAINTAINER=	me@FreeBSD.org
 RUN_DEPENDS=    ${PREFIX}/lib/xemacs/xemacs-packages/etc/enriched.doc:${PORTSDIR}/editors/xemacs-packages
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png
+		png.3:${PORTSDIR}/graphics/png \
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 XEMACS_VER=	21.1.7
 DIST_SUBDIR=	xemacs
@@ -39,6 +40,7 @@ CONFIGURE_ARGS=	${XEMACS_ARCH} --prefix=${PREFIX} \
 		--site-libraries=${PREFIX}/lib \
 		--with-session=yes \
 		--with-png=yes \
+		--with-tiff=yes \
 		${WITH_XFACE} ${WITH_DIALOGS} ${WITH_OFFIX}
 MAN1=		ctags.1 etags.1 gnuattach.1 gnuclient.1 gnudoit.1 \
 		gnuserv.1 xemacs.1
