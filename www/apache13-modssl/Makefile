@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.58 2000/02/12 08:36:28 kris Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.59 2000/02/22 07:54:11 kris Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -51,7 +51,7 @@ BUILD_DEPENDS=	mm-config:${PORTSDIR}/devel/mm \
 VERSION_APACHE=	1.3.11
 VERSION_MODSSL=	2.5.0
 
-Y2K=		http://www.modssl.org/docs/2.4/ssl_faq.html#y2k
+Y2K=		http://www.modssl.org/docs/2.5/ssl_faq.html#y2k
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
