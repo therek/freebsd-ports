@@ -3,11 +3,11 @@
 # Date created:		Jan 29, 2001
 # Whom:			clive
 #
-# $FreeBSD: ports/net/dictd-database/Makefile,v 1.1 2001/01/28 19:03:43 clive Exp $
+# $FreeBSD: ports/net/dictd-database/Makefile,v 1.2 2001/01/30 14:57:46 ijliao Exp $
 #
 
 PORTNAME=	dictd-database
-PORTVERSION=	20000129
+PORTVERSION=	20010130
 # clive: Ok, I have no idea how to name this somewhat-meta-port
 CATEGORIES=	net textproc
 MASTER_SITES=	ftp://ftp.dict.org/pub/dict/pre/
