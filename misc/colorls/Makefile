@@ -3,7 +3,7 @@
 # Date created:		8 March 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/colorls/Makefile,v 1.20 2000/04/14 17:43:57 knu Exp $
+# $FreeBSD: ports/misc/colorls/Makefile,v 1.21 2000/04/15 15:13:49 knu Exp $
 #
 
 PORTNAME=	colorls
@@ -14,6 +14,11 @@ DISTFILES=	ls-${PORTVERSION}.tar.gz
 
 MAINTAINER=	asami@FreeBSD.org
 
+.include <bsd.port.pre.mk>
+.if ${OSVERSION} >= 500004
+FORBIDDEN=      "colour support is already in the base system"
+.endif
+
 MAN1=		colorls.1
 MANCOMPRESSED=	maybe
 
@@ -22,4 +27,4 @@ WRKSRC=		${WRKDIR}/ls
 pre-patch:
 	${CP} ${WRKSRC}/ls.1 ${WRKSRC}/colorls.1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
