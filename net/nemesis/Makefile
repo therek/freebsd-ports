@@ -3,7 +3,7 @@
 # Date created:			  Fri July 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/nemesis/Makefile,v 1.1.1.1 2000/07/08 04:24:21 obrien Exp $
+# $FreeBSD: ports/net/nemesis/Makefile,v 1.2 2000/07/08 04:27:44 obrien Exp $
 #
 
 PORTNAME=	nemesis
@@ -15,7 +15,7 @@ MASTER_SITES=	http://celerity.bartoli.org/nemesis/  \
 
 MAINTAINER=     obrien@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a::net/libnet
+BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 GNU_CONFIGURE=	yes
