@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/dbmail/pkg-plist,v 1.3 2003/10/24 06:51:27 sergei Exp $
+@comment $FreeBSD: ports/mail/dbmail/pkg-plist,v 1.4 2003/12/19 09:54:18 clement Exp $
 bin/dbmail-smtp
 bin/dbmail-pop3d
 bin/dbmail-imapd
@@ -7,7 +7,6 @@ bin/dbmail-adduser
 bin/dbmail-readvut
 bin/raw-convertor
 bin/dbmail-mini-injector
-bin/install-dbmail.sh
 etc/dbmail.conf-dist
 %%MYSQL%%lib/libmysqldbmail.a
 %%PGSQL%%lib/libpgsqldbmail.a
