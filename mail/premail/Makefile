@@ -2,7 +2,7 @@
 # Date created:         31 Jan 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/premail/Makefile,v 1.17 1999/10/25 23:54:55 jim Exp $
+# $FreeBSD: ports/mail/premail/Makefile,v 1.18 2000/04/13 20:00:34 cpiazza Exp $
 #
 
 PORTNAME=	premail
@@ -18,7 +18,6 @@ BUILD_DEPENDS+= pgp:${PORTSDIR}/security/pgp
 WRKSRC=         ${WRKDIR}/premail
 USE_PERL5=      Yes
 NO_BUILD=       Yes
-RESTRICTED=     "Author treats it as ITAR subject"
 
 post-patch:
 	cd ${WRKSRC}; \
