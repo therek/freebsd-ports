@@ -3,7 +3,7 @@
 # Date created:				2. Feb 1998
 # Whom:	      				wosch@FreeBSD.org
 #
-# $FreeBSD: ports/www/checkbot/Makefile,v 1.13 1999/09/19 10:30:46 wosch Exp $
+# $FreeBSD: ports/www/checkbot/Makefile,v 1.14 1999/12/29 21:41:02 steve Exp $
 #
 
 DISTNAME=	checkbot-1.57
@@ -17,7 +17,8 @@ site_perl=${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 BUILD_DEPENDS=  \
 		${site_perl}/${PERL_ARCH}/Net/FTP.pm:${PORTSDIR}/net/p5-Net \
 		${site_perl}/Mail/Send.pm:${PORTSDIR}/mail/p5-Mail-Tools \
-		${site_perl}/LWP.pm:${PORTSDIR}/www/p5-libwww
+		${site_perl}/LWP.pm:${PORTSDIR}/www/p5-libwww \
+		${site_perl}/URL.pm:${PORTSDIR}/net/p5-URI
 
 FETCH_BEFORE_ARGS=	-b
 
