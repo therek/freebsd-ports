@@ -1,12 +1,12 @@
 # Ports collection makefile for:  libnet
-# Version required:		0.10a
+# Version required:		0.99g
 # Date created:			Sun Feb 3, 1999
 # Whom:				shipley@dis.org
 #
-# $FreeBSD: ports/net/libnet/Makefile,v 1.3 1999/08/30 14:23:11 peter Exp $
+# $FreeBSD: ports/net/libnet/Makefile,v 1.4 1999/10/08 02:33:48 cpiazza Exp $
 #
 
-DISTNAME=	libnet-0.10a
+DISTNAME=	libnet-0.99g
 CATEGORIES=     net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 EXTRACT_SUFX=	.tgz
@@ -24,7 +24,7 @@ GNU_CONFIGURE=	yes
 BROKEN=         does not build
 .endif
 
-WRKSRC=         ${WRKDIR}/Libnet
+WRKSRC=         ${WRKDIR}/Libnet-0.99g
 
 post-install:
 .if !defined(NOPORTDOCS)
@@ -32,6 +32,12 @@ post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/PORTS ${PREFIX}/share/doc/libnet
 	${INSTALL_MAN} ${WRKSRC}/doc/README ${PREFIX}/share/doc/libnet
 	${INSTALL_MAN} ${WRKSRC}/doc/README.bpf ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.asn.1 ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.bpf ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.examples ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.linux ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.rawsockets ${PREFIX}/share/doc/libnet
+	${INSTALL_MAN} ${WRKSRC}/doc/README.stubs ${PREFIX}/share/doc/libnet
 .endif
 
 .include <bsd.port.post.mk>
