@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.183 2001/04/30 11:06:34 knu Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.184 2001/05/07 06:47:06 grog Exp $
 #
     SUBDIR += yawho
 
@@ -139,6 +139,7 @@
     SUBDIR += truncate
     SUBDIR += tua
     SUBDIR += ucspi-tcp
+    SUBDIR += unquote
     SUBDIR += upsd
     SUBDIR += upsmon
     SUBDIR += uwatch
