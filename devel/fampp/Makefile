@@ -2,11 +2,11 @@
 # Date created:				18 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/fampp/Makefile,v 1.1 2001/03/31 02:46:32 will Exp $
 #
 
 PORTNAME=	fampp
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
