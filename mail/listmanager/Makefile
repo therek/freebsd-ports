@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD: ports/mail/listmanager/Makefile,v 1.5 2001/02/09 23:21:28 gshapiro Exp $
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.6 2001/03/10 03:48:08 gshapiro Exp $
 #
 
 PORTNAME=	listmanager
@@ -15,6 +15,8 @@ EXTRACT_SUFX=	.freebsd35
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} help.tar.gz listmanager.8 ack
 
 MAINTAINER=	gshapiro@FreeBSD.org
+
+FORBIDDEN=	"Security problem.  New version due shortly."
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=
