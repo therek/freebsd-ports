@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.140 2001/09/11 05:52:37 ache Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.141 2001/09/22 18:08:27 knu Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -96,7 +96,7 @@ while [ "$1" ]; do
 		\"pdflib\")
 			echo "LIB_DEPENDS+=	pdf.3:\${PORTSDIR}/print/pdflib3"
 			echo "LIB_DEPENDS+=	jpeg.9:\${PORTSDIR}/graphics/jpeg"
-			echo "LIB_DEPENDS+=	png.4:\${PORTSDIR}/graphics/png"
+			echo "LIB_DEPENDS+=	png.5:\${PORTSDIR}/graphics/png"
 			echo "LIB_DEPENDS+=	tiff.4:\${PORTSDIR}/graphics/tiff"
 			echo "CONFIGURE_ARGS+=--with-pdflib=\${PREFIX} \\"
 			echo "		--with-zlib-dir=/usr \\"
