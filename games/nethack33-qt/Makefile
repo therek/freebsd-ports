@@ -2,7 +2,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.28 2000/03/30 21:00:11 mharo Exp $
+# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.29 2000/04/14 12:26:10 asami Exp $
 #
 
 PORTNAME=	qt-nethack
@@ -29,6 +29,8 @@ EXTRACT_ONLY=	nethack-3.2.2.tar.gz
 USE_QT=		yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
+
+BROKEN=		"Compiler error"
 
 pre-configure:
 	@ ${ECHO} "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"

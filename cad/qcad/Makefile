@@ -2,7 +2,7 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.4 2000/03/22 01:58:55 will Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.5 2000/04/08 23:20:05 mharo Exp $
 #
 
 PORTNAME=	qcad
@@ -17,6 +17,8 @@ USE_XLIB=	yes
 MAKEFILE=	makefile
 MAKE_ENV=	CC="${CXX}"
 USE_QT2=	yes
+
+BROKEN=		"Compiler error"
 
 QCADDIR=	${PREFIX}/lib/qcad
 QCADDOCDIR=	${PREFIX}/share/doc/qcad
