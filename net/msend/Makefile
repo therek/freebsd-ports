@@ -2,13 +2,14 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/msend/Makefile,v 1.1 2001/04/07 05:09:04 will Exp $
+# $FreeBSD: ports/net/msend/Makefile,v 1.2 2001/06/08 05:36:38 markp Exp $
 #
 
 PORTNAME=	msend
 PORTVERSION=	3.0
 CATEGORIES=	net
-MASTER_SITES=	http://homepages.tig.com.au/~mrudat/software/msend/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	markp
 
 MAINTAINER=	markp@FreeBSD.org
 
