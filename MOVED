@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.422 2004/05/05 03:27:52 dinoex Exp $
+# $FreeBSD: ports/MOVED,v 1.423 2004/05/05 22:02:41 vanilla Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1063,4 +1063,4 @@ graphics/p5-GD1|graphics/p5-GD|removed (obsolete)
 japanese/gd1|japanese/gd|2004-05-01|removed (obsolete)
 russian/gd|ukrainian/gd|2004-05-01|removed (obsolete)
 graphics/gd1|graphics/gd|2004-05-01|removed (obsolete)
-lang/pike75|lang/pike76/2004-05-06|finished repocopy
+lang/pike75|lang/pike76|2004-05-06|finished repocopy
