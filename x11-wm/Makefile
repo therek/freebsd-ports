@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.62 2001/08/06 15:11:00 sobomax Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.63 2001/08/10 16:48:48 nakai Exp $
 #
 
     SUBDIR += 9menu
@@ -40,6 +40,7 @@
     SUBDIR += mlvwm
     SUBDIR += olvwm
     SUBDIR += oroborus
+    SUBDIR += phluid
     SUBDIR += piewm
     SUBDIR += pwm
     SUBDIR += qlwm
