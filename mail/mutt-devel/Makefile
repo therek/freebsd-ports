@@ -4,10 +4,10 @@
 # Date created:         Thur July 25, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.68 1999/08/25 06:50:32 obrien Exp $
 
-DISTNAME=	mutt-0.95.7i
-PKGNAME=	mutt-0.95.7
+DISTNAME=	mutt-1.0pre1i
+PKGNAME=	mutt-1.0b1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/  \
 		ftp://ftp.uib.no/pub/mutt/  \
@@ -57,7 +57,7 @@ CONFIGURE_ARGS+=	--with-slang=${PREFIX}
 .elif defined(USE_NCURSES_PORT)
 CONFIGURE_ARGS+=	--with-curses=${PREFIX}
 .endif
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${DISTNAME:S/i$//}
 MAN1=		mutt.1 mutt_dotlock.1
 
 post-patch:
