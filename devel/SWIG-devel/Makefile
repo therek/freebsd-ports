@@ -1,13 +1,13 @@
-# New ports collection makefile for:    SWIG
-# Date created:         19 April 1996
-# Whom:                 jkh
+# New ports collection makefile for:	SWIG
+# Date created:			19 April 1996
+# Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.33 2000/09/24 22:45:53 knu Exp $
+# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.34 2000/10/15 08:04:12 knu Exp $
 #
 
 PORTNAME=	swig
-PORTVERSION=	1.3a5
-PORTREVISION=	1
+PORTVERSION=	${VER}a5
+PORTREVISION=	2
 CATEGORIES=	devel perl5 python ruby tcl82
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.rge.com/pub/languages/swig/ \
@@ -20,6 +20,8 @@ MAINTAINER=	knu@FreeBSD.org
 BUILD_DEPENDS=	${PYTHON_CMD}:${PYTHON_PORTSDIR} \
 		${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
 
+VER=		1.3
+
 USE_PERL5=	yes
 USE_RUBY=	yes
 RUBY_NO_RUN_DEPENDS=	yes
@@ -30,7 +32,10 @@ WRKSRC=		${WRKDIR}/SWIG${PORTVERSION}
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-tclincl=${PREFIX}/include/tcl8.2/ \
 		--with-tcllib=${PREFIX}/lib/tcl8.2/
-ALL_TARGET=     swig runtime
-PLIST_SUB+=     VER="1.3"
+ALL_TARGET=	swig runtime
+PLIST_SUB=	VER="${VER}"
+
+post-install:
+	${LN} ${PREFIX}/bin/swig ${PREFIX}/bin/swig${VER}
 
 .include <bsd.port.mk>
