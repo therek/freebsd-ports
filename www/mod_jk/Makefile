@@ -2,13 +2,13 @@
 # Date created:				Sun May 20 12:58:02 CEST 2001
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_jk/Makefile,v 1.1 2001/05/20 14:00:17 dirk Exp $
+# $FreeBSD: ports/www/mod_jk/Makefile,v 1.2 2001/08/05 09:39:59 dirk Exp $
 #
 
 PORTNAME=	mod_jk
 PORTVERSION=	3.2.3
 CATEGORIES=	www
-MASTER_SITES=	http://jakarta.apache.org/builds/jakarta-tomcat/release/v${PORTVERSION}/src/
+MASTER_SITES=	http://www.apache.org/dist/jakarta/jakarta-tomcat/release/v${PORTVERSION}/src/
 DISTNAME=	jakarta-tomcat-${PORTVERSION}-src
 
 MAINTAINER=	dirk@FreeBSD.org
