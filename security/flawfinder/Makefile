@@ -3,11 +3,11 @@
 # Date created:			Jul 23, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/security/flawfinder/Makefile,v 1.1 2001/08/23 12:54:48 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flawfinder
-PORTVERSION=	0.15
+PORTVERSION=	0.21
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.dwheeler.com/flawfinder/
 
