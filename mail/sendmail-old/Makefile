@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.12 2001/05/01 12:09:56 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.13 2001/05/13 07:13:39 dinoex Exp $
 #
 
 PORTNAME=	sendmail
@@ -33,10 +33,10 @@ PLIST=		${WRKDIR}/.PLIST.more
 USE_OPENSSL=	yes
 .endif
 .if defined(SENDMAIL_WITH_SASL)
-BUILD_DEPENDS=	${LOCALBASE}/sbin/pwcheck:${PORTSDIR}/security/cyrus-sasl
+LIB_DEPENDS+=	sasl.8:${PORTSDIR}/security/cyrus-sasl
 .endif
 .if defined(SENDMAIL_WITH_SFIO)
-BUILD_DEPENDS=	${LOCALBASE}/lib/libsfio.a:${PORTSDIR}/devel/sfio
+BUILD_DEPENDS+=	${LOCALBASE}/lib/libsfio.a:${PORTSDIR}/devel/sfio
 .endif
 .if defined(SENDMAIL_WITH_LDAP)
 LIB_DEPENDS+=	ldap.2:${PORTSDIR}/net/openldap2
