@@ -2,24 +2,32 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-usersguide/Makefile,v 1.3 2000/10/08 10:21:20 asami Exp $
+# $FreeBSD: ports/japanese/ruby-usersguide/Makefile,v 1.4 2000/10/08 23:47:46 asami Exp $
 #
 
-MASTERDIR=	${.CURDIR}/../../lang/ruby-usersguide
-
+PORTNAME=	ruby-usersguide
+PORTVERSION=	980206
+CATEGORIES=	japanese lang ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	doc
-DISTNAME=	${SHORTNAME}-${VERSION}
-
-CATEGORIES=	japanese
+DISTNAME=	${SHORTNAME}-${PORTVERSION}
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-VERSION=	980206
+USE_RUBY=	yes
+RUBY_NO_BUILD_DEPENDS=	yes
+RUBY_NO_RUN_DEPENDS=	yes
 
-MD5_FILE=	${.CURDIR}/distinfo
-PKGDIR=		${.CURDIR}
+SHORTNAME=	${PORTNAME:S/usersguide/uguide/}
 
-LANGSUFFIX=	-jp
+WRKSRC=		${WRKDIR}/${SHORTNAME}
+NO_BUILD=	yes
+DOCDIR=		${RUBY_DOCDIR}/${PORTNAME}-jp
 
-.include "${MASTERDIR}/Makefile"
+do-install:
+	${MKDIR} ${DOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/* ${DOCDIR}
+	${LN} -fs uguide00.html ${DOCDIR}/index.html
+
+.include <bsd.port.mk>
