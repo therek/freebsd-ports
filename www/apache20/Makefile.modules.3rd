@@ -1,6 +1,6 @@
 # Third party modules hack
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.1 2004/04/16 12:24:42 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.2 2004/04/16 13:29:29 clement Exp $
 #
 # Author: Clement Laforet <clement@FreeBSD.org>
 # If you have questions, please contact me.
@@ -72,6 +72,13 @@ PLIST_SUB+=	AP_MODULE="${MODULENAME}.so"
 PLIST?=		${WRKDIR}/ap-plist
 .endif
 
+.if defined(AP_INC)
+AP_EXTRAS+=	-I ${AP_INC}
+.endif
+.if defined(AP_LIB)
+AP_EXTRAS+=	-L ${AP_LIB}
+.endif
+
 .if defined(AP_FAST_BUILD)
 
 ap-gen-plist:
@@ -84,7 +91,7 @@ ap-gen-plist:
 	@${DO_NADA}
 .endif
 do-build: ap-gen-plist
-	@cd ${WRKSRC} && ${APXS} -c -o ${MODULENAME}.${AP_BUILDEXT} ${SRC_FILE}
+	@cd ${WRKSRC} && ${APXS} -c ${AP_EXTRAS} -o ${MODULENAME}.${AP_BUILDEXT} ${SRC_FILE}
 
 do-install:
 	@${APXS} -i -a -n ${SHORTMODNAME} ${WRKSRC}/${MODULENAME}.${AP_BUILDEXT}
