@@ -2,24 +2,28 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/sysutils/gtop/Makefile,v 1.28 2001/05/04 21:39:42 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtop
 PORTVERSION=	1.0.13
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gtop
 
 MAINTAINER=	gnome@FreeBSD.org
 
+BUILD_DEPENDS=	msgfmt-old:${PORTSDIR}/devel/gettext-old
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib" \
+		MSGFMT="${LOCALBASE}/bin/msgfmt-old" \
+		XGETTEXT="${LOCALBASE}/bin/xgettext-old"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
