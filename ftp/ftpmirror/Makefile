@@ -2,12 +2,12 @@
 # Date created:		10 January 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/ftp/ftpmirror/Makefile,v 1.7 2001/03/02 02:24:14 kuriyama Exp $
+# $FreeBSD: ports/ftp/ftpmirror/Makefile,v 1.8 2001/04/05 23:51:12 kuriyama Exp $
 #
 
 PORTNAME=	ftpmirror
 PORTVERSION=	1.96
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.intec.co.jp/pub/utils/ftpmirror/beta/
 
