@@ -2,15 +2,17 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.49 2000/07/05 12:36:45 tg Exp $
+# $FreeBSD: ports/net/net-snmp/Makefile,v 1.50 2000/07/28 19:43:15 ume Exp $
 #
 
 PORTNAME=	ucd-snmp
 PORTVERSION=	4.1.2
 CATEGORIES=	net ipv6
-MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
+MASTER_SITES= 	${MASTER_SITE_SOURCEFORGE} \
+		ftp://ucd-snmp.ucdavis.edu/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/ucd-snmp/ \
 		ftp://ftp.win.or.jp/pub/network/snmp/ucd-snmp/
+MASTER_SITE_SUBDIR= net-snmp
 
 MAINTAINER=	billf@FreeBSD.org
 
