@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.14 2001/09/28 17:21:58 lioux Exp $
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.15 2001/09/29 04:57:48 lioux Exp $
 #
 
 PORTNAME?=	cs
@@ -50,7 +50,7 @@ PKGMESSAGE!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V PKGMESSAGE
 # 3.1.0.8 Beta A patch
 HALFLIFESERVER_PORT_WRKSRC!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V WRKSRC
 
-.if !target(post-extract)
+.if (${PORTNAME}==cs) && !target(post-extract)
 post-extract:
 .if exists(${HALFLIFESERVER_PORT_WRKSRC}/cstrike)
 	${CP} -Rp ${HALFLIFESERVER_PORT_WRKSRC}/cstrike ${WRKDIR}
