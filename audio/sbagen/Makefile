@@ -2,7 +2,7 @@
 # Date created:        08 June 2001
 # Whom:                greid
 #
-# $FreeBSD: ports/audio/sbagen/Makefile,v 1.1 2001/06/08 21:46:56 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sbagen
@@ -24,13 +24,17 @@ SHAREFILES=	t-alpha t-beta t-calm t-calm2 t-delta t-focus t-focus-1 \
 
 DOCFILES=	sbagen.txt theory.txt theory2.txt
 
-do-build:
-	(cd ${WRKSRC} && ${CC} ${CFLAGS} sbagen.c -o sbagen -lm)
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/sbagen.c
 
 post-patch:
 .for F in ${SHAREFILES}
 	@${PERL} -pi -e 's,/bin/bash,/bin/sh,g' ${WRKSRC}/$F
 .endfor
+
+do-build:
+	(cd ${WRKSRC} && ${CC} ${CFLAGS} sbagen.c -o sbagen -lm)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sbagen ${PREFIX}/bin
