@@ -2,13 +2,13 @@
 # Date created:				23 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/gplbp/Makefile,v 1.3 2000/04/14 08:45:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gplbp
 PORTVERSION=	0.92
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.stampede.org/skibum/
+MASTER_SITES=	ftp://ftp.stampede.org/skibum/gplbp/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
