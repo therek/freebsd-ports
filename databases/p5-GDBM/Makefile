@@ -4,7 +4,7 @@
 #
 # Heavy input from eivind@freebsd.org
 #
-# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.2 2000/04/08 22:48:41 mharo Exp $
+# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.3 2000/06/17 02:36:30 will Exp $
 #
 
 PORTNAME=	p5-GDBM
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../src
 DISTNAME=	perl5.005_03
 
-MAINTAINER=	nsayer@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.ORG
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
