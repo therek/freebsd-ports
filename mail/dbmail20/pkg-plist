@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/dbmail/pkg-plist,v 1.3 2003/10/24 06:51:27 sergei Exp $
 bin/dbmail-smtp
 bin/dbmail-pop3d
 bin/dbmail-imapd
@@ -35,8 +35,5 @@ etc/dbmail.conf-dist
 %%PGSQL%%%%DATADIR%%/sql/md5_alter_users.7.3-pgsql
 %%PGSQL%%%%DATADIR%%/sql/md5_alter_users.pre_7.3-pgsql
 %%PGSQL%%%%DATADIR%%/sql/pop_before_smtp.pgsql
-%%PORTDOCS%%%%DOCSDIR%%/INSTALL
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
 @dirrm %%DATADIR%%/sql
 @dirrm %%DATADIR%%
