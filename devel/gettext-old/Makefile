@@ -2,11 +2,12 @@
 # Date created:        16 March 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/devel/gettext/Makefile,v 1.20 2000/06/16 10:37:52 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gettext
 PORTVERSION=	0.10.35
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gettext
