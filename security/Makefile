@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.229 2001/08/30 13:55:36 dd Exp $
+# $FreeBSD: ports/security/Makefile,v 1.230 2001/09/03 18:14:44 knu Exp $
 #
 
     SUBDIR += aafid2
@@ -207,6 +207,7 @@
     SUBDIR += vscan
     SUBDIR += whisker
     SUBDIR += xinetd
+    SUBDIR += yafic
     SUBDIR += zebedee
     SUBDIR += zombiezapper
 
