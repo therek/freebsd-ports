@@ -2,10 +2,10 @@
 # Date created:         01.May 1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/unix-connect/Makefile,v 1.3 2001/08/21 18:38:22 dinoex Exp $
+# $FreeBSD: ports/german/unix-connect/Makefile,v 1.4 2001/08/25 06:13:05 dinoex Exp $
 
 PORTNAME=	unix-connect
-PORTVERSION=	0.92
+PORTVERSION=	0.93
 CATEGORIES=	german comms news mail
 MASTER_SITES=	ftp://ftp.dinoex.org/pub/unix-connect/ \
 		${MASTER_SITE_SOURCEFORGE}
