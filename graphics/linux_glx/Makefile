@@ -3,7 +3,7 @@
 # Date created:         27 November 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD:$
+# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.1.1.1 1999/12/04 20:51:00 cpiazza Exp $
 #
 
 DISTNAME=	linux_glx-991127
@@ -23,7 +23,7 @@ STRIP=
 
 # NEVER EVER use plain INSTALL_PROGRAM on Linux binaries,
 # as they get stripped!
-post-install:
+do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/libGL.so ${PREFIX}/lib
 	${INSTALL_PROGRAM} ${WRKSRC}/libGLU.so ${PREFIX}/lib
 	${INSTALL_PROGRAM} ${WRKSRC}/libglut.so ${PREFIX}/lib
