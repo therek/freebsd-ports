@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/freebsd-uucp/pkg-plist,v 1.6 2002/10/05 17:27:50 dinoex Exp $
+@comment $FreeBSD: ports/net/freebsd-uucp/pkg-plist,v 1.7 2003/01/14 07:07:52 dinoex Exp $
 bin/uucp
 bin/uulog
 bin/uupick
@@ -32,6 +32,8 @@ libexec/uucp/uuxqt
 @group wheel
 sbin/uuchk
 sbin/uuconv
+@dirrm etc/periodic/daily
+@dirrm etc/periodic/weekly
 @dirrm etc/periodic
 @dirrm etc/uucp
 @dirrm libexec/uucp
