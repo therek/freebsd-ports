@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD: ports/mail/listmanager/Makefile,v 1.7 2001/04/17 16:20:20 gshapiro Exp $
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.8 2001/05/15 06:45:00 gshapiro Exp $
 #
 
 PORTNAME=	listmanager
@@ -46,4 +46,5 @@ post-install:
 	@${ECHO} "*  information on installing listmanager without using a    "
 	@${ECHO} "*  set-user-id root binary.                                 "
 	@${ECHO} "************************************************************"
+
 .include <bsd.port.mk>
