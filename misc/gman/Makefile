@@ -3,7 +3,7 @@
 # Date created:			Mar 30, 3001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gman/Makefile,v 1.1 2001/03/30 16:49:35 ijliao Exp $
+# $FreeBSD: ports/misc/gman/Makefile,v 1.2 2001/04/14 11:20:55 ijliao Exp $
 #
 
 PORTNAME=	gman
@@ -13,6 +13,7 @@ MASTER_SITES=	http://homex.coolconnect.com/user/xkwang/gman/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 RUN_DEPENDS=	ghostview:${PORTSDIR}/print/ghostview
 
 USE_GTK=	yes
