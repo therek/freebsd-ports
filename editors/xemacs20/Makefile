@@ -2,7 +2,7 @@
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.37 2000/07/04 07:13:27 sobomax Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.38 2000/08/03 09:23:04 asami Exp $
 #
 
 PORTNAME=	xemacs
@@ -55,7 +55,7 @@ pre-configure:
 .if defined(WITH_MULE)
 WITH_MULE=	--with-mule
 MULEDISTFILE=	${DISTNAME}-mule.tar.gz
-PLIST=		${PKGDIR}/PLIST.mule
+PLIST=		${PKGDIR}/pkg-plist.mule
 .endif
 
 # hack to avoid shipping binaries linked with Motif
