@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.13 1999/08/31 06:41:55 mharo Exp $
+# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.14 2000/04/11 21:29:19 mharo Exp $
 #
 
 PORTNAME=	BSD-Resource
-PORTVERSION=	1.0701
+PORTVERSION=	1.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	BSD
