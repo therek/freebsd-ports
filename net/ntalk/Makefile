@@ -2,17 +2,15 @@
 # Date created:			26 August 2001
 # Whom:				Gea-Suan Lin (gslin@ccca.nctu.edu.tw)
 #
-# $FreeBSD: ports/net/ntalk/Makefile,v 1.1 2001/08/29 10:56:13 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ntalk
-PORTVERSION=	0.4
+PORTVERSION=	0.6.3
 CATEGORIES=	net
-MASTER_SITES=	http://kab.w.interia.pl/
+MASTER_SITES=	http://network.terramail.pl/files/
 
 MAINTAINER=	gslin@ccca.nctu.edu.tw
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 ALL_TARGET=	${PORTNAME}
 
