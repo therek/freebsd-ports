@@ -2,7 +2,7 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.44 2001/01/09 15:38:13 asmodai Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.45 2001/01/09 16:08:21 asmodai Exp $
 #
 
 PORTNAME?=	ispell
@@ -86,7 +86,8 @@ MASKBITS?=	64
 .endif
 .if defined(ISPELL_NL)
 NLDISTFILE=	ispell-nl-1.0.0.tar.gz
-MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITES+=	${MASTER_SITE_LOCAL} \
+		http://www.ninth-circle.org/~asmodai/
 MASTER_SITE_SUBDIR=	asmodai
 EXTRA_DICT+=	${NLDISTFILE}
 EXTRACT_ONLY+=	${NLDISTFILE}
