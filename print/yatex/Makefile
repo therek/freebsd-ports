@@ -2,7 +2,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.23 2000/07/17 06:17:34 shige Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.24 2000/09/18 02:05:42 taoka Exp $
 #
 
 PORTNAME=	yatex
@@ -32,22 +32,22 @@ EMACS_PACKAGESDIR=${EMACS_LIBDIR}/site-packages
 INFODIR=	${PREFIX}/${EMACS_PACKAGESDIR}/info
 ELISPDIR=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp
 HELPDIR=	${PREFIX}/${EMACS_LIBDIR}/site-lisp
-PLIST=		${PKGDIR}/PLIST.xemacs
+PLIST=		${PKGDIR}/pkg-plist.xemacs
 MANIFEST=	MANIFEST.yatex
 .elif (${EMACS_PORT_NAME} == xemacs21-mule)
 INFODIR=	${PREFIX}/${EMACS_PACKAGESDIR}/info
 ELISPDIR=	${PREFIX}/${EMACS_PACKAGESDIR}/lisp
 HELPDIR=	${PREFIX}/${EMACS_LIBDIR}/site-lisp
-PLIST=		${PKGDIR}/PLIST.xemacs-mule
+PLIST=		${PKGDIR}/pkg-plist.xemacs-mule
 MANIFEST=	MANIFEST.yatex
 .elif (${EMACS_PORT_NAME} == mule)
 INFODIR=	${PREFIX}/info
-PLIST=		${PKGDIR}/PLIST.mule
+PLIST=		${PKGDIR}/pkg-plist.mule
 ELISPDIR=	${PREFIX}/${EMACS_LIBDIR}/site-lisp
 HELPDIR=	${ELISPDIR}
 .else
 INFODIR=	${PREFIX}/info
-PLIST=		${PKGDIR}/PLIST.emacs
+PLIST=		${PKGDIR}/pkg-plist.emacs
 ELISPDIR=	${PREFIX}/${EMACS_LIBDIR}/site-lisp
 HELPDIR=	${ELISPDIR}
 .endif
