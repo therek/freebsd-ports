@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.209 2001/05/05 13:13:57 alex Exp $
+# $FreeBSD: ports/LEGAL,v 1.210 2001/05/31 05:26:02 dougb Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -28,6 +28,8 @@ bb-*			ports/net/bb		FreeBSD has permission from
 blender			ports/graphics/blender	Can't distribute commercially.
 bro-*			ports/security/bro	No distribution due to
 						alpha status
+bugseeker2ww*		ports/java/bugseeker	License doesn't allow
+						redistribution.
 bzip-*			ports/archivers/bzip	Some algorithms used may
 						infringe certain US patents.
 						Opinions differ. Commercial 
