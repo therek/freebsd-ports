@@ -1,8 +1,8 @@
 # New ports collection makefile for:	ruby-reference
-# Date created:			8 February 200
+# Date created:			8 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-reference/Makefile,v 1.1 2001/02/07 22:51:54 knu Exp $
 #
 
 PORTNAME=	ruby-reference
