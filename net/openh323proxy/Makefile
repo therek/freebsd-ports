@@ -2,11 +2,12 @@
 # Date created:		Tue Nov 21 12:59:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.4 2001/07/11 06:52:53 roger Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	openh323proxy
 PORTVERSION=	0.9a3.m09
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/openh323proxy/
 DISTNAME=	${PORTNAME}_0.9a3_m09
@@ -22,7 +23,7 @@ NOCLEANDEPENDS=	yes
 USE_NEWGCC=	yes
 USE_BISON=	yes
 USE_GMAKE=	yes
-ALL_TARGET=	opt
+ALL_TARGET=	optnoshared
 MAKE_ENV=	PWLIBDIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/pwlib \
 		OPENH323DIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/openh323
 THE_MACHTYPE=	${ARCH:S/i386/x86/}
