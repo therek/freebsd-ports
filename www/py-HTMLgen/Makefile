@@ -2,7 +2,7 @@
 # Date created:				03/20/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.8 2000/07/21 20:30:20 nectar Exp $
+# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.9 2000/09/21 00:39:12 nectar Exp $
 #
 
 PORTNAME=		py-HTMLgen
@@ -22,9 +22,9 @@ DOCDIR=			${PREFIX}/share/doc/HTMLgen
 FIND?=			find
 
 pre-install:
-	@${CP} ${PKGDIR}/PLIST ${PLIST}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .if !defined(NOPORTDOCS)
-	@${CAT} ${PKGDIR}/PLIST.docs >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.docs >> ${PLIST}
 	@${MKDIR} ${PREFIX}/share/doc/HTMLgen
 	@${TAR} -C ${WRKSRC} -cf - README html image | \
 		${TAR} -C ${DOCDIR} -xvf -
