@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.106 2003/04/30 10:58:24 arved Exp $
+# $FreeBSD: ports/MOVED,v 1.107 2003/05/06 04:18:00 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -309,3 +309,4 @@ www/eddie||2003-05-05|port was broken with no sign of a fix
 www/wn||2003-05-05|port contained a security vulnerability with no sign of a fix
 x11-fm/jafm||2003-05-05|port was broken with no sign of a fix
 x11-servers/Xatm||2003-05-05|port was broken with no sign of a fix
+audio/gdcd||2003-05-05|port was broken with no sign of a fix
