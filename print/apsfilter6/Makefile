@@ -2,7 +2,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.51 2000/04/09 17:39:36 cpiazza Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.52 2000/04/09 17:49:14 cpiazza Exp $
 #
 
 PORTNAME=	apsfilter
@@ -14,7 +14,7 @@ MAINTAINER=	andreas@FreeBSD.org
 
 RUN_DEPENDS=	recode:${PORTSDIR}/converters/recode
 .if defined(BATCH)
-RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript55
+RUN_DEPENDS+=	gs:${PORTSDIR}/print/ghostscript6
 RUN_DEPENDS+=	html2ps:${PORTSDIR}/print/html2ps-letter
 RUN_DEPENDS+=	transfig:${PORTSDIR}/print/transfig
 RUN_DEPENDS+=	cjpeg:${PORTSDIR}/graphics/jpeg
