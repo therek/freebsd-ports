@@ -3,15 +3,15 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.5 2000/01/11 01:44:08 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.6 2000/01/12 19:20:26 dbaker Exp $
 #
 
 DISTNAME=       dnetc
-PKGNAME=	dnetc-2.8004.454
+PKGNAME=	dnetc-2.8004.455
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8005/ \
 		http://http.distributed.net/pub/dcti/v2.8005/
-DISTFILES=	dnetc454-freebsd-x86-elf.tar.gz
+DISTFILES=	dnetc455-freebsd-x86-elf.tar.gz
 
 .include <bsd.port.pre.mk>
 
