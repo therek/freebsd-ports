@@ -3,7 +3,7 @@
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/sdr/Makefile,v 1.16 1999/11/28 18:31:50 steve Exp $
+# $FreeBSD: ports/mbone/sdr/Makefile,v 1.17 2000/01/26 05:57:44 fenner Exp $
 #
 
 DISTNAME=	sdr-2.9
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.9/
 MAINTAINER=	fenner@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
-BUILD_DEPENDS=	${LOCALBASE}/lib/libuclmmbase.a:${PORTSDIR}/mbone/uclmmbase
+BUILD_DEPENDS=	${LOCALBASE}/lib/libuclmmbase.a:${PORTSDIR}/devel/uclmmbase
 
 WRKSRC=		${WRKDIR}/sdr/freebsd
 HAS_CONFIGURE=	yes
