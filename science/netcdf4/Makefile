@@ -2,23 +2,23 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/netcdf/Makefile,v 1.3 1999/09/08 09:40:08 tg Exp $
+# $FreeBSD: ports/math/netcdf/Makefile,v 1.4 2000/04/14 07:20:17 asami Exp $
 #
 
 PORTNAME=	netcdf
-PORTVERSION=	3.5b2
+PORTVERSION=	3.5b3
 CATEGORIES=	math
 MASTER_SITES=	ftp://unidata.ucar.edu/pub/netcdf/
-DISTFILES=	netcdf-3.5-beta2.tar.Z
+DISTFILES=	${PORTNAME}-3.5-beta3.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/netcdf-3.5/src
+WRKSRC=		${WRKDIR}/${PORTNAME}-3.5-beta3/src
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CFLAGS="${CFLAGS} -fPIC -DPIC -Df2cFortran"
+CONFIGURE_ENV=	CPPFLAGS="-fPIC -DPIC -Df2cFortran"
 
 MAN1=	ncdump.1 ncgen.1
-MAN3=	netcdf.3 netcdf.3f
+MAN3=	netcdf.3
 
 post-build:
 	@(cd ${WRKSRC}/libsrc && \
@@ -28,9 +28,9 @@ post-build:
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/libsrc/libnetcdf.so ${PREFIX}/lib/libnetcdf.so.1
-	${LN} -sf ${PREFIX}/lib/libnetcdf.so.1 ${PREFIX}/lib/libnetcdf.so
+	${LN} -sf libnetcdf.so.1 ${PREFIX}/lib/libnetcdf.so
 	${INSTALL_DATA} ${WRKSRC}/cxx/libnetcdf_c++.so ${PREFIX}/lib/libnetcdf_c++.so.1
-	${LN} -sf ${PREFIX}/lib/libnetcdf_c++.so.1 ${PREFIX}/lib/libnetcdf_c++.so
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+	${LN} -sf libnetcdf_c++.so.1 ${PREFIX}/lib/libnetcdf_c++.so
+	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
