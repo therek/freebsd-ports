@@ -2,7 +2,7 @@
 # Date created:		Sun Sep 26 09:25:38 EEST 1999
 # Whom:	      		Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.7 2000/07/07 19:25:15 steve Exp $
+# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.8 2000/10/15 08:23:04 kevlo Exp $
 #
 
 PORTNAME=	IMAP-Admin
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IMAP
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	martti.kuparinen@ericsson.com
+MAINTAINER=	martti.kuparinen@iki.fi
 
 USE_PERL5=	YES
 
