@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.440 2005/01/06 14:46:07 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.441 2005/01/06 16:54:29 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -47,7 +47,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<p>Ciaran McCreesh discovered news ways in which a VIM modeline
 	  can be used to trojan a text file.  The patch by Bram
 	  Moolenaar reads:</p>
-	<blockquote cite="">
+	<blockquote cite="ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045">
 	  <p>Problem: Unusual characters in an option value may cause
 	    unexpected behavior, especially for a modeline. (Ciaran
 	    McCreesh)</p>
