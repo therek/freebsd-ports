@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.1 2000/08/07 06:09:17 knu Exp $
 #
 
 PORTNAME=	python
@@ -32,9 +32,9 @@ do-configure:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/ruby/python/examples/Lib
+	${MKDIR} ${PREFIX}/share/examples/ruby/python/Lib
 	${MKDIR} ${PREFIX}/share/doc/ruby/python/ja
-	cd ${WRKSRC}; find examples -exec ${INSTALL_DATA} {} ${PREFIX}/share/doc/ruby/python/{} \;
+	cd ${WRKSRC}/examples; find . -exec ${INSTALL_DATA} {} ${PREFIX}/share/examples/ruby/python/{} \;
 	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${WRKSRC}/README ${WRKSRC}/doc/* \
 		${PREFIX}/share/doc/ruby/python/
 	${INSTALL_DATA} ${WRKSRC}/README.ja ${WRKSRC}/doc-ja/* \

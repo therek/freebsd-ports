@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.1 2000/08/07 08:20:20 knu Exp $
 #
 
 PORTNAME=	racc
@@ -37,10 +37,10 @@ do-build:
 do-install:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${RUBY} setup.rb install
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/ruby/racc/examples
+	${MKDIR} ${PREFIX}/share/examples/ruby/racc
 	${MKDIR} ${PREFIX}/share/doc/ruby/racc/ja
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/doc/ruby/racc/examples/
+	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${PREFIX}/share/examples/ruby/racc/
 .endfor
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/doc.en/${f} ${PREFIX}/share/doc/ruby/racc/
