@@ -2,15 +2,19 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.21 2001/07/14 15:20:39 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.22 2001/09/21 03:51:17 lioux Exp $
 #
 
 PORTNAME=	hlds
-PORTVERSION=	3.1.0.8
+PORTVERSION=	3.1.0.8.0a
 CATEGORIES=	games linux
 MASTER_SITES=	ftp://files.ausgamers.com/half-life/linux/ \
-		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/action/half-life/official/
-DISTNAME=	hlds_l_${PORTVERSION:S/.//g}_full
+		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/action/half-life/official/ \
+		ftp://ftp.houstonlive.net/CounterStrike/ \
+		ftp://mirrors.cstrike.org/pub/mirrors/cstrike/ \
+		http://www.redphive.org/files/
+DISTFILES=	hlds_l_3108_full.tar.gz \
+		hlds_l_3108a_up.tar.gz
 
 MAINTAINER=	pat@databits.net
 
