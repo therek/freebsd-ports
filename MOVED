@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.420 2004/05/03 13:57:45 arved Exp $
+# $FreeBSD: ports/MOVED,v 1.421 2004/05/04 18:45:41 lofi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1059,3 +1059,7 @@ net/openldap20-client||2004-05-03|removed EOL version of OpenLDAP
 net/openldap20-server||2004-05-03|removed EOL version of OpenLDAP
 security/libgcrypt-devel|security/libgcrypt|2004-05-03|1.2.0 is now the new stable version
 security/newpg|security/gnupg-devel|2004-05-03|newpg replaced by gnupg-devel
+graphics/p5-GD1|graphics/p5-GD|removed (obsolete)
+japanese/gd1|japanese/gd|2004-05-01|removed (obsolete)
+russian/gd|ukrainian/gd|2004-05-01|removed (obsolete)
+graphics/gd1|graphics/gd|2004-05-01|removed (obsolete)
