@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.326 2000/01/14 20:17:05 cpiazza Exp $
+# $FreeBSD: ports/net/Makefile,v 1.327 2000/01/14 20:18:58 cpiazza Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -188,6 +188,7 @@
     SUBDIR += tintin++
     SUBDIR += tinyfugue
     SUBDIR += tn3270
+    SUBDIR += tn5250
     SUBDIR += traceroute
     SUBDIR += trafshow
     SUBDIR += ttcp
