@@ -2,13 +2,13 @@
 # Date created:		Tue Jun 23 00:19:55 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/print/cdlabelgen/Makefile,v 1.4 2000/04/09 17:39:46 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdlabelgen
 PORTVERSION=	1.5.0
 CATEGORIES=	print
-MASTER_SITES=	http://www.red-bean.com/~bwf/software/cdlabelgen/
+MASTER_SITES=	http://www.red-bean.com/fitz/software/cdlabelgen/
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
