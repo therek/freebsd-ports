@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/emulators/osf1_base/pkg/PLIST,v 1.2 2000/02/08 01:51:57 obrien Exp $
+@comment $FreeBSD: ports/emulators/osf1_base/pkg/PLIST,v 1.3 2000/03/08 04:14:53 gallatin Exp $
 usr/shlib/libXm.so
 usr/shlib/libXmu.so
 usr/shlib/libXt.so
@@ -20,12 +20,12 @@ etc/sia/matrix.conf
 etc/sia/siainitgood
 sbin/loader
 @comment needed symlinks:
-usr/lib/X11
 usr/shlib/libc_r.so
 usr/shlib/libpthread.so
 usr/shlib/libpthreads.so
 sbin/sh
-@unexec rm -f %D/usr/lib/X11
+@exec mkdir -p %D/usr/lib && ln -sf %%X11BASE%%/lib/X11 %D/usr/lib
+@unexec rm -f %D/usr/lib/X11 2>&1 > /dev/null
 @dirrm sbin
 @dirrm etc/sia
 @dirrm etc
