@@ -2,12 +2,12 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.28 2001/02/02 22:21:53 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.29 2001/02/04 11:36:22 olgeni Exp $
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.84
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/updates/ \
 		http://www.webmin.com/webmin/download/
@@ -23,7 +23,7 @@ NO_BUILD=	yes
 IS_INTERACTIVE=	yes
 USE_PERL5=	yes
 
-WEBMIN_MODULES=	apache.wbm.gz mysql.wbm.gz status.wbm.gz
+WEBMIN_MODULES=	apache.wbm.gz mysql.wbm.gz status.wbm.gz file.wbm.gz
 
 post-extract:
 	@for webmin_module in ${WEBMIN_MODULES}; do \
