@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/thunderbird/pkg-deinstall.in,v 1.1 2004/10/11 23:45:43 marcus Exp $
+# $FreeBSD$
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/thunderbird/pkg-install.in,v 1.4 2004/11/07 23:29:33 marcus Exp $
+# $FreeBSD$
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)

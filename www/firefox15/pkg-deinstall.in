@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/firefox/pkg-deinstall.in,v 1.2 2004/10/12 00:04:40 marcus Exp $
+# $FreeBSD$
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)

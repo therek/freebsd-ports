@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD: ports/mail/thunderbird/files/mozconfig.in,v 1.8 2004/11/07 23:29:33 marcus Exp $
+# $FreeBSD$
 ######################################################################
 # standard opts from README
 export MOZ_THUNDERBIRD=1
