@@ -2,13 +2,13 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/textproc/gdict/Makefile,v 1.7 2000/04/09 21:52:34 cpiazza Exp $
+# $FreeBSD: ports/textproc/gdict/Makefile,v 1.8 2000/07/07 19:58:53 steve Exp $
 #
 
 PORTNAME=	gdict
 PORTVERSION= 	0.7
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.psilord.com/code/gdict/
+MASTER_SITES=	http://www.psilord.com/code/gdict/old/
 
 MAINTAINER=	domi@saargate.de
 
