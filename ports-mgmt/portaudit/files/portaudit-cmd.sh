@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.3 2004/03/31 22:52:01 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.4 2004/06/23 16:01:38 eik Exp $
 #
 
 . %%DATADIR%%/portaudit.functions
@@ -150,4 +150,9 @@ fi
 if [ -n "$opt_file" ]; then
 	portaudit_prerequisites
 	audit_file "$opt_file"
+fi
+
+if [ $# -gt 0 ]; then
+	portaudit_prerequisites
+	audit_args "$@"
 fi
