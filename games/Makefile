@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.254 2000/01/31 04:10:21 nakai Exp $
+# $FreeBSD: ports/games/Makefile,v 1.255 2000/02/06 19:05:31 asami Exp $
 #
 
     SUBDIR += 3dc
@@ -127,6 +127,7 @@
     SUBDIR += tank
     SUBDIR += tetrinet-x
     SUBDIR += tinymux
+    SUBDIR += tkmoo
     SUBDIR += tksol
     SUBDIR += tvp
     SUBDIR += omega
