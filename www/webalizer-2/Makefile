@@ -2,14 +2,14 @@
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.21 2000/09/28 16:12:28 ache Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.22 2000/09/30 14:19:41 ache Exp $
 #
 
 PORTNAME=	webalizer
-PORTVERSION=    2.1.3
+PORTVERSION=    2.1.5
 CATEGORIES=	www
 MASTER_SITES=   ftp://ftp.mrunix.net/pub/webalizer/pre-release/
-DISTNAME=       ${PORTNAME}-2.01-03-src
+DISTNAME=       ${PORTNAME}-2.01-05-src
 
 MAINTAINER=     ache@FreeBSD.org
 
@@ -19,6 +19,7 @@ NO_LATEST_LINK=	yes
 USE_BZIP2=      yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--enable-dns \
+		--with-etcdir=${PREFIX}/etc \
 		--with-gdlib=${PREFIX}/lib \
 		--with-gd=${PREFIX}/include/gd
 CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
