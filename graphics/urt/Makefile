@@ -2,7 +2,7 @@
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.18 2000/04/16 22:55:29 asami Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.19 2000/04/22 01:21:22 will Exp $
 #
 
 PORTNAME=	urt
@@ -20,6 +20,8 @@ MAINTAINER=	giffunip@asme.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff
 BUILD_DEPENDS=	${LOCALBASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
+
+BROKEN=		"Looks for pgm.h in the wrong place"
 
 EXTRACT_ONLY=	urt-3.1b.tar.Z
 
