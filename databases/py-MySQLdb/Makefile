@@ -2,11 +2,11 @@
 # Date created:				04 April 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/py-MySQLdb/Makefile,v 1.1.1.1 2000/05/26 07:05:20 sobomax Exp $
+# $FreeBSD: ports/databases/py-MySQLdb/Makefile,v 1.2 2000/06/02 09:02:13 sobomax Exp $
 #
 
 PORTNAME=	py-MySQLdb
-PORTVERSION=	0.2.1
+PORTVERSION=	0.2.2
 CATEGORIES=	databases python
 MASTER_SITES=	http://dustman.net/andy/python/MySQLdb/${PORTVERSION}/
 DISTNAME=	MySQLdb-${PORTVERSION}
