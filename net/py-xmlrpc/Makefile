@@ -2,14 +2,14 @@
 # Date created:				22 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/net/py-xmlrpc/Makefile,v 1.2 2001/06/19 13:00:45 wjv Exp $
+# $FreeBSD: ports/net/py-xmlrpc/Makefile,v 1.3 2001/06/28 12:35:47 kevlo Exp $
 #
 
 PORTNAME=	xmlrpc
 PORTVERSION=	0.8.6
 CATEGORIES=	net python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}
+MASTER_SITE_SUBDIR=	py-${PORTNAME}
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	py-${PORTNAME}-${PORTVERSION}
 
