@@ -2,7 +2,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.23 2000/12/10 16:05:14 roam Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.24 2001/01/11 00:56:26 trevor Exp $
 #
 
 PORTNAME=	w3m
@@ -16,20 +16,19 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
 		http://grilli.net/mirrors/w3m/download/dev/
 DISTNAME=	${PORTNAME}-${W3M_VERSION}-pre
 
-PATCH_SITES=	http://www4.ocn.ne.jp/~okabek/
-PATCHFILES=	${PORTNAME}-${W3M_VERSION}-pre-kokb22.patch.gz \
-		${PORTNAME}-${W3M_VERSION}-pre-kokb22_${W3M_PATCHLEVEL}test.patch
-
+PATCH_SITES=	http://www2u.biglobe.ne.jp/~hsaka/w3m/patch/
+PATCHFILES=	${PORTNAME}-${W3M_VERSION}-pre-hsaka${W3M_PATCHLEVEL}.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	nobutaka@nobutaka.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc \
 		${PATCH}:${PORTSDIR}/devel/patch
+
 PATCH=		${LOCALBASE}/bin/gpatch
 
 W3M_VERSION=	0.1.11
-W3M_PATCHLEVEL=	23
+W3M_PATCHLEVEL=	24
 
 MAN1=		w3m.1
 MANLANG=	""
