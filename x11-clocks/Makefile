@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/Makefile,v 1.15 1999/08/31 02:57:53 peter Exp $
 #
 
     SUBDIR += asclock
@@ -10,6 +10,7 @@
     SUBDIR += dclock
     SUBDIR += emiclock
     SUBDIR += eyeclock
+    SUBDIR += glclock
     SUBDIR += kdetoys11-i18n
     SUBDIR += mlclock
     SUBDIR += mouseclock
