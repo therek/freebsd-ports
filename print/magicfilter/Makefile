@@ -2,7 +2,7 @@
 # Date created:		24 Mar 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/print/magicfilter/Makefile,v 1.3 2000/04/09 17:40:41 cpiazza Exp $
+# $FreeBSD: ports/print/magicfilter/Makefile,v 1.4 2000/04/09 17:50:10 cpiazza Exp $
 #
 
 PORTNAME=	magicfilter
@@ -11,11 +11,12 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= system/printing
 
-MAINTAINER=	cjh@kr.freebsd.org
+MAINTAINER=	cjh@FreeBSD.org
 
 # at least, gs must exist in many case
 BUILD_DEPENDS=	${PREFIX}/bin/gs:${PORTSDIR}/print/ghostscript55
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
+# to give freedom to choose your favor gs..
+#RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
