@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.443 2000/12/19 11:01:56 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.444 2000/12/19 12:17:20 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -263,6 +263,7 @@
     SUBDIR += sup
     SUBDIR += svnc
     SUBDIR += tac_plus4
+    SUBDIR += tas
     SUBDIR += tcpcat
     SUBDIR += tcpflow
     SUBDIR += tcpillust
