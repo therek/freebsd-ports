@@ -3,13 +3,13 @@
 # Date created:		26 September 1999
 # Whom:			Dan Moschuk <dan@freebsd.org>
 #
-# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.1.1.1 1999/09/26 23:12:32 dan Exp $
+# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.2 1999/11/29 03:53:02 steve Exp $
 #
 
-DISTNAME=	sshbuddy1.02
-PKGNAME=	sshbuddy-1.02
+DISTNAME=	sshbuddy1.05
+PKGNAME=	sshbuddy-1.05
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.sundilla.net/pub/linux/apps/sshbuddy/beta1.02/
+MASTER_SITES=	ftp://ftp.sundilla.net/pub/linux/apps/sshbuddy/beta1.05/
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	dan@freebsd.org
@@ -17,7 +17,7 @@ MAINTAINER=	dan@freebsd.org
 RUN_DEPENDS=	expectk:${PORTSDIR}/lang/expect
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}/beta1.02
+WRKSRC=		${WRKDIR}/beta1.05
 
 do-install:
 		${INSTALL_SCRIPT} ${WRKSRC}/sshbuddy.expk ${PREFIX}/bin/sshbuddy
