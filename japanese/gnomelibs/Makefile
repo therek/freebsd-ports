@@ -2,11 +2,11 @@
 # Date created:        28 October 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/gnomelibs/Makefile,v 1.2 2000/11/17 09:37:59 nakai Exp $
+# $FreeBSD: ports/japanese/gnomelibs/Makefile,v 1.3 2001/06/23 23:41:52 nakai Exp $
 #
 
 # This port does not work with another version of master port.
-#PORTVERSION=	1.2.13
+#PORTVERSION=	1.4.1.1
 CATEGORIES=	japanese x11 gnome
 
 MASTERDIR=	${.CURDIR}/../../x11/gnomelibs
@@ -15,7 +15,11 @@ EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 
 MAINTAINER=	nakai@FreeBSD.org
 
-PLIST=		${.CURDIR}/pkg-plist
+PLIST=		${WRKDIR}/pkg-plist
+
+post-extract:
+	${ECHO} bin/gnome-libs-jp > ${PLIST}
+	${CAT} ${MASTERDIR}/pkg-plist >> ${PLIST}
 
 post-install:
 	${TOUCH} ${PREFIX}/bin/gnome-libs-jp
