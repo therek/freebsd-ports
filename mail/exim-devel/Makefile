@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.66 2001/06/10 13:50:22 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.67 2001/06/10 13:59:43 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -75,8 +75,8 @@ SEDLIST+=	-e 's,XX_TLS_LIBS_XX,-lssl -lcrypto,' \
 SEDLIST+=	-e 's,^TLS_LIBS,\#TLS_LIBS,'
 .endif
 
-.if !defined(WITH_PERL) && ${WITH_PERL} == "yes"
-SEDLIST+=	-e 's,^EXIM_PERL,\#EXIM_PERL,'
+.if defined(WITH_PERL) && ${WITH_PERL} == "yes"
+SEDLIST+=	-e 's,^\# EXIM_PERL,EXIM_PERL,'
 .endif
 
 .if defined(WITH_TCP_WRAPPERS) && ${WITH_TCP_WRAPPERS} == "yes"
