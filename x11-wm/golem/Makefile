@@ -2,19 +2,19 @@
 # Date created:        11 August 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/golem/Makefile,v 1.1 2001/08/10 16:48:50 nakai Exp $
+# $FreeBSD: ports/x11-wm/golem/Makefile,v 1.2 2001/08/12 17:53:44 nakai Exp $
 #
 
 PORTNAME=	golem
-PORTVERSION=	0.0.2
-PORTREVISION=	1
+PORTVERSION=	0.0.3
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	fracture@allusion.net
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 GNU_CONFIGURE=	yes
 
 MANCOMPRESSED=	yes
