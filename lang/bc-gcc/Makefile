@@ -3,7 +3,7 @@
 # Date created:			  Sun June 08, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/lang/bc-gcc/Makefile,v 1.9 2000/04/12 06:17:51 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bc-gcc
@@ -32,6 +32,7 @@ BROKEN=		"can't find /usr/lib/aout/crt0.o"
 .endif
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} ${PATCHFILES}
+USE_BISON=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-gnu-as --with-gnu-ld
 ALL_TARGET=	bootstrap LANGUAGES=c
