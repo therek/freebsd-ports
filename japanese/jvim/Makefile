@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim/Makefile,v 1.9 2000/09/08 04:34:33 taoka Exp $
+# $FreeBSD: ports/japanese/jvim/Makefile,v 1.10 2000/10/08 07:20:58 asami Exp $
 #
 
 PORTNAME=	jvim
@@ -67,6 +67,7 @@ do-build:
 
 do-install:
 	cd ${WRKSRC}/src; make install
+	${LN} -sf ${PREFIX}/bin/jvim2 ${PREFIX}/bin/jvim
 
 post-install:
 	for file in jcat jgrep jfold jvim; do \
