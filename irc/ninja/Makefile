@@ -2,13 +2,13 @@
 # Date created:	 	10 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/ninja/Makefile,v 1.12 2000/04/12 06:28:20 obrien Exp $
+# $FreeBSD: ports/irc/ninja/Makefile,v 1.13 2000/04/19 03:30:05 cpiazza Exp $
 #
 
 PORTNAME=	ninja
 PORTVERSION=	1.1
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ninja.qoop.org/ninja/
+MASTER_SITES=	ftp://ninja.qoop.org/ninja/unstable/
 DISTNAME= 	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	cpiazza@FreeBSD.org
