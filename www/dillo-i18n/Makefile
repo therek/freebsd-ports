@@ -2,11 +2,11 @@
 # Date created:        23 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/dillo/Makefile,v 1.1 2001/02/26 10:36:26 demon Exp $
 #
 
 PORTNAME=       dillo
-PORTVERSION=	0.3.2
+PORTVERSION=	0.4.0
 CATEGORIES=     www
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
