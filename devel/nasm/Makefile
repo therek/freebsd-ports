@@ -2,7 +2,7 @@
 # Date created:        7 April 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/devel/nasm/Makefile,v 1.7 1999/12/11 01:45:51 asami Exp $
+# $FreeBSD: ports/devel/nasm/Makefile,v 1.8 2000/04/11 21:29:13 mharo Exp $
 #
 
 PORTNAME=	nasm
@@ -11,7 +11,7 @@ CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/assemblers
 
-MAINTAINER=	murray@cdrom.com
+MAINTAINER=	murray@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

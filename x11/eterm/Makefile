@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.22 2000/01/09 18:09:09 steve Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.23 2000/04/13 19:09:21 cpiazza Exp $
 #
 
 PORTNAME=	eterm
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.eterm.org/pub/Eterm/ \
 		ftp://ftp.sunsite.auc.dk/disk6/linuxberg.com/files/x11/system/
 DISTNAME=	Eterm-${PORTVERSION}
 
-MAINTAINER=	murray@cdrom.com
+MAINTAINER=	murray@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
