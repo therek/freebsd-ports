@@ -1,12 +1,12 @@
 # New ports collection makefile for:	postilion
-# Version required:	0.9.3c
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/postilion/Makefile,v 1.6 1999/12/10 15:47:26 steve Exp $
+# $FreeBSD: ports/mail/postilion/Makefile,v 1.7 2000/04/01 02:05:11 mharo Exp $
 #
 
-DISTNAME=	postilion-0.9.3c
+PORTNAME=	postilion
+PORTVERSION= 	0.9.3c
 CATEGORIES=	mail tk82
 MASTER_SITES=	http://www.postilion.org/
 

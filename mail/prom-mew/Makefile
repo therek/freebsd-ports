@@ -1,12 +1,12 @@
 # New ports collection makefile for:	prom-mew
-# Version required:     1.93.4
 # Date created:		28 Jun 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-mew/Makefile,v 1.1.1.1 1999/09/09 00:13:57 taoka Exp $
+# $FreeBSD: ports/mail/prom-mew/Makefile,v 1.2 1999/09/09 02:36:37 taoka Exp $
 #
 
-DISTNAME=       prom-mew-1.93.4
+PORTNAME=	prom-mew
+PORTVERSION= 	1.93.4
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www02.so-net.ne.jp/~murata/software/pub/
 

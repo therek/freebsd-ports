@@ -1,9 +1,8 @@
 # New ports collection makefile for:	fetchmail
-# Version required:     5.3.0
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.92 2000/02/25 21:58:33 cpiazza Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.93 2000/03/03 05:13:31 shin Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
@@ -11,7 +10,8 @@
 # does not need Python, so there is no RUN_DEPENDS for Python in
 # this Makefile.
 
-DISTNAME=       fetchmail-5.3.0
+PORTNAME=	fetchmail
+PORTVERSION= 	5.3.0
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/
 

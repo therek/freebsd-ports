@@ -1,12 +1,12 @@
 # New ports collection makefile for:	qmail
-# Version required:	1.03
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.14 2000/02/25 22:14:27 cpiazza Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.15 2000/03/01 15:48:31 asami Exp $
 #
 
-DISTNAME=	qmail-1.03
+PORTNAME=	qmail
+PORTVERSION= 	1.03
 CATEGORIES=	mail
 MASTER_SITES=	http://cr.yp.to/software/ \
 		ftp://ftp.ntnu.no/pub/unix/mail/qmail/ \

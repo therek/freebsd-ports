@@ -1,12 +1,12 @@
 # New ports collection makefile for:   biffer
-# Version required:    1.0
 # Date created:        21 September 1999
 # Whom:                jsellens
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/biffer/Makefile,v 1.1.1.1 1999/11/01 03:26:37 steve Exp $
 #
 
-DISTNAME=	biffer-1.0
+PORTNAME=	biffer
+PORTVERSION= 	1.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 

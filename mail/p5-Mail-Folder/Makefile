@@ -1,13 +1,13 @@
 # New ports collection makefile for:	p5-Mail-Folder
-# Version required:			0.07
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Folder/Makefile,v 1.16 1999/12/23 23:48:19 steve Exp $
+# $FreeBSD: ports/mail/p5-Mail-Folder/Makefile,v 1.17 2000/03/30 21:12:18 mharo Exp $
 #
 
-DISTNAME=	MailFolder-0.07
-PKGNAME=	p5-Mail-Folder-0.07
+PORTNAME=	MailFolder
+PORTVERSION= 	0.07
+PKGNAMEPREFIX=	p5-
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail

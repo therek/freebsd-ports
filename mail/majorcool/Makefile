@@ -1,12 +1,12 @@
 # New ports collection makefile for:	majorcool
-# Version required:		1.2.0
 # Date created:			Wed Aug 13 18:34:14 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/mail/majorcool/Makefile,v 1.11 2000/02/08 09:27:20 peter Exp $
+# $FreeBSD: ports/mail/majorcool/Makefile,v 1.12 2000/02/20 17:01:06 andreas Exp $
 #
 
-DISTNAME=	majorcool-1.3.2
+PORTNAME=	majorcool
+PORTVERSION= 	1.3.2
 CATEGORIES=	mail
 MASTER_SITES=	http://people.FreeBSD.org/~andreas/download/
 

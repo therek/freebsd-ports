@@ -1,18 +1,18 @@
 # New ports collection makefile for:	Wanderlust (for emacs)
-# Version required:	1.0.x
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.9 2000/01/19 16:53:46 shige Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.10 2000/02/18 23:17:17 taoka Exp $
 #
 
-DISTNAME=	wl-1.0.3
-PKGNAME=	wanderlust-${EMACS_PORT}-1.0.3
+PORTNAME=	wanderlust-${EMACS_PORT}
+PORTVERSION=	1.0.3
 CATEGORIES=	mail elisp
 MASTER_SITES=	ftp://ftp.gohome.org/wl/stable/ \
 		ftp://ftp.jaist.ac.jp/pub/GNU/elisp/wanderlust/stable/ \
 		ftp://daidai.kuis.kyoto-u.ac.jp/pub/mirror/ftp.gohome.org/pub/elisp/wl/stable/ \
 		ftp://ftp.ring.gr.jp/pub/text/elisp/wl/stable/
+DISTNAME=	wl-${PORTVERSION}
 
 MAINTAINER=	nobutaka@nobutaka.com
 

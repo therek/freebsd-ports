@@ -1,12 +1,12 @@
 # New ports collection makefile for:	exim
-# Version required:	3.13
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.44 2000/03/13 08:03:41 asami Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.45 2000/04/04 11:51:19 sheldonh Exp $
 #
 
-DISTNAME=	exim-3.13
+PORTNAME=	exim
+PORTVERSION= 	3.13
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cus.cam.ac.uk/pub/software/programs/exim/ \
 		http://www.exim.org/ftp/ \

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	metamail
-# Version required:	2.7
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.12 1999/08/31 06:47:28 mharo Exp $
+# $FreeBSD: ports/mail/metamail/Makefile,v 1.13 1999/09/04 20:12:34 cpiazza Exp $
 #
 
-DISTNAME=	mm2.7
-PKGNAME=	metamail-2.7
+PORTNAME=	metamail
+PORTVERSION=	2.7
 CATEGORIES=	mail
 MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
+DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	torstenb@FreeBSD.org

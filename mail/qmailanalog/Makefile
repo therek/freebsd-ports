@@ -1,11 +1,12 @@
 # New ports collection makefile for:	qmailanalog
-# Version required:     0.70
 # Date created:		29 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.4 1999/08/27 22:29:44 mharo Exp $
+# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.5 2000/01/25 11:05:34 nbm Exp $
+#
 
-DISTNAME=	qmailanalog-0.70
+PORTNAME=	qmailanalog
+PORTVERSION= 	0.70
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qmail.org/pub/software/
 

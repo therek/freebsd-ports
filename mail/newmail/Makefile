@@ -1,12 +1,12 @@
 # New ports collection makefile for:	newmail
-# Version required:	1.0.1
 # Date created:		30 Sep 1999
 # Whom:			Andrew Stevenson <andrew@ugh.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/newmail/Makefile,v 1.1.1.1 1999/11/01 03:13:08 steve Exp $
 #
 
-DISTNAME=	newmail-1.0.1
+PORTNAME=	newmail
+PORTVERSION= 	1.0.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ugh.net.au/pub/unix/newmail/ \
 		ftp://css.tuu.utas.edu.au/pub/unix/newmail/

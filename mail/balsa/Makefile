@@ -1,12 +1,12 @@
 # New ports collection makefile for:	balsa
-# Version required:			0.6.0
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.13 1999/12/25 01:34:52 steve Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.14 1999/12/29 07:03:26 steve Exp $
 #
 
-DISTNAME=	balsa-0.6.0
+PORTNAME=	balsa
+PORTVERSION= 	0.6.0
 CATEGORIES=	mail gnome
 MASTER_SITES=	ftp://ftp.balsa.net/pub/balsa/
 

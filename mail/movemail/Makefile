@@ -1,12 +1,12 @@
 # New ports collection makefile for:  movemail
-# Version required:    1.0
 # Date created:        1997/09/09
 # Whom:                wosch
 #
-# $FreeBSD: ports/mail/movemail/Makefile,v 1.4 1999/08/31 06:47:30 mharo Exp $
+# $FreeBSD: ports/mail/movemail/Makefile,v 1.5 1999/09/19 10:30:44 wosch Exp $
 #
 
-DISTNAME=      movemail-1.0
+PORTNAME=	movemail
+PORTVERSION= 	1.0
 CATEGORIES=    mail
 MASTER_SITES=  http://www.de.freebsd.org/~wosch/src/
 

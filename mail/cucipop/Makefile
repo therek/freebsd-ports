@@ -1,15 +1,15 @@
 # New ports collection makefile for:	cucipop
-# Version required:     1.31
 # Date created:		7 Jun 1997
 # Whom:			igor@zynaps.ru
 #
-# $FreeBSD: ports/mail/cucipop/Makefile,v 1.8 1999/08/25 06:50:05 obrien Exp $
+# $FreeBSD: ports/mail/cucipop/Makefile,v 1.9 1999/08/31 06:47:15 mharo Exp $
 #
 # NOTE: APOP works only for virtual hosts as designed!
 #       Virtual hosts works only with Berkeley DB2.
 #       Berkeley DB2 is in conflict with libc, so commented out. :-(
 
-DISTNAME=       cucipop-1.31
+PORTNAME=	cucipop
+PORTVERSION= 	1.31
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/
 

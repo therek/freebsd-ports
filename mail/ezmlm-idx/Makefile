@@ -1,11 +1,12 @@
 # New ports collection makefile for:	ezmlm-idx
-# Version required:     0.40
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.7 2000/02/09 20:57:56 tom Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.8 2000/02/22 20:28:43 tom Exp $
+#
 
-DISTNAME=	ezmlm-idx-${IDX_VERSION}
+PORTNAME=	ezmlm-idx
+PORTVERSION= 	0.40	
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ezmlm.org/pub/patches/ \
 		ftp://ftp.rivertown.net/pub/ezmlm/ \
@@ -65,12 +66,11 @@ MY_SCRIPTS=	accept check glconf mktab test
 MY_CONFIG=	ezmlmglrc ezmlmrc ezmlmsubrc
 
 EZMLM_VERSION=	0.53
-IDX_VERSION=	0.40
 
 PLIST=		${WRKDIR}/PLIST
 
 pre-patch:
-	@${MV} -f ${WRKDIR}/ezmlm-idx-${IDX_VERSION}/* ${WRKSRC}
+	@${MV} -f ${WRKDIR}/ezmlm-idx-${PORTVERSION}/* ${WRKSRC}
 	@cd ${WRKSRC} && ${PATCH} < idx.patch
 
 post-patch:

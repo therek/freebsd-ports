@@ -1,12 +1,12 @@
 # New ports collection makefile for:	maildrop
-# Version required:	0.64
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.6 1999/12/24 18:39:36 mharo Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.7 2000/03/30 21:07:58 mharo Exp $
 #
 
-DISTNAME=	maildrop-0.64
+PORTNAME=	maildrop
+PORTVERSION= 	0.64
 CATEGORIES=	mail
 MASTER_SITES=	http://www.flounder.net/~mrsam/maildrop/ \
 		${MASTER_SITE_SUNSITE}

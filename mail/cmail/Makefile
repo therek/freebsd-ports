@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cmail
-# Version required:	2.10
 # Date created:		31 Dec 1998
 # Whom:			Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/mail/cmail/Makefile,v 1.2 1999/08/25 06:50:04 obrien Exp $
+# $FreeBSD: ports/mail/cmail/Makefile,v 1.3 1999/11/26 18:14:51 steve Exp $
 #
 
-DISTNAME=	cmail-2.10
+PORTNAME=	cmail
+PORTVERSION= 	2.10
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.eboai.org/pub/users/chip/
 EXTRACT_SUFX=	.tgz

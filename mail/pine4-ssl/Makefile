@@ -1,9 +1,8 @@
 # New ports collection makefile for:	pine4-ssl
-# Version required:     1.4
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.15 2000/02/06 22:22:38 kris Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.16 2000/02/10 07:29:39 kris Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -11,11 +10,12 @@
 # The warnings are getting harder to fix.
 # Good luck to you. :-P
 
-DISTNAME=	pine4+ssl-1.4
-PKGNAME=	pine4-ssl-4.21.1.4
+PORTNAME=	pine4-ssl
+PORTVERSION= 	4.21.1.4
 CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
 		http://www.kfu.com/~nsayer/encryption/software/
+DISTNAME=	pine4+ssl-1.4
 DISTFILES=	pine4.21${EXTRACT_SUFX}
 
 PATCH_SITES=	http://www.kfu.com/~nsayer/encryption/software/

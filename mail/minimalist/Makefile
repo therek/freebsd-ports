@@ -1,12 +1,12 @@
 # New ports collection makefile for:   minimalist
-# Version required:    2.0.1
 # Date created:        15 September 1999
 # Whom:                gmarco@scotty.masternet.it
 #
-# $FreeBSD: ports/mail/minimalist/Makefile,v 1.1.1.1 1999/11/01 03:23:53 steve Exp $
+# $FreeBSD: ports/mail/minimalist/Makefile,v 1.2 1999/11/14 01:52:31 cpiazza Exp $
 #
 
-DISTNAME=	minimalist-2.0.2
+PORTNAME=	minimalist
+PORTVERSION= 	2.0.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.webest.com/minimalist/ \
 		http://www.giovannelli.it/~gmarco/files/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	glacier
-# Version required:	0.0.2
 # Date created:		30 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/glacier/Makefile,v 1.2 2000/03/22 01:59:22 will Exp $
+# $FreeBSD: ports/mail/glacier/Makefile,v 1.3 2000/03/24 00:44:31 mharo Exp $
 #
 
-DISTNAME=	glacier-0.0.2
+PORTNAME=	glacier
+PORTVERSION= 	0.0.2
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://glacier.linuxave.net/
 

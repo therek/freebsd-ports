@@ -1,12 +1,12 @@
 # New ports collection makefile for:	YACL
-# Version required:     3.4
 # Date created:		15 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/mail/ml/Makefile,v 1.3 1999/08/25 06:50:30 obrien Exp $
+# $FreeBSD: ports/mail/ml/Makefile,v 1.4 1999/08/27 22:29:43 mharo Exp $
 #
 
-DISTNAME=		ml-3.4
+PORTNAME=		ml
+PORTVERSION= 		3.4
 CATEGORIES=		mail
 MASTER_SITES=		http://people.netscape.com/max/ml/
 

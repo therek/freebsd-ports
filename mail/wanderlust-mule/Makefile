@@ -1,9 +1,8 @@
 # New ports collection makefile for:	Wanderlust (for mule)
-# Version required:	1.0.x
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-mule/Makefile,v 1.3 1999/08/25 06:51:00 obrien Exp $
+# $FreeBSD: ports/mail/wanderlust-mule/Makefile,v 1.4 2000/01/19 16:35:29 shige Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com

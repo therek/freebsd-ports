@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmbiff
-# Version required:		0.2
 # Date created:			19 Nov 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.2 2000/02/02 01:56:35 jim Exp $
+# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.3 2000/02/08 09:27:28 peter Exp $
 #
 
-DISTNAME=	wmbiff-0.2
+PORTNAME=	wmbiff
+PORTVERSION= 	0.2
 CATEGORIES=	mail windowmaker afterstep
 MASTER_SITES=	http://ccat.elect.ru:8100/wmbiff/ \
 		http://people.FreeBSD.org/~jim/distfiles/

@@ -1,14 +1,14 @@
 # New ports collection makefile for:	xfaces-3.3
-# Version required:	1.6.1
 # Date created:		11 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
-# With some 
+# With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/xfaces/Makefile,v 1.16 1999/08/28 01:57:36 mharo Exp $
+# $FreeBSD: ports/mail/xfaces/Makefile,v 1.17 1999/08/31 06:47:42 mharo Exp $
 #
 
-DISTNAME=	xfaces-3.3
+PORTNAME=	xfaces
+PORTVERSION= 	3.3
 CATEGORIES=	mail
 # xfaces-sounds.tar.gz only in LOCAL_PORTS
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/xfaces/ \

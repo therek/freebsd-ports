@@ -1,12 +1,12 @@
 # Ports collection makefile for:  smtpd
-# Version required:		2.0
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.5 1999/08/28 02:17:19 mharo Exp $
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.6 1999/08/28 02:41:58 mharo Exp $
 #
 
-DISTNAME=      smtpd-2.0
+PORTNAME=	smtpd
+PORTVERSION= 	2.0
 CATEGORIES=    mail security
 MASTER_SITES=  ftp://ftp.obtuse.com/pub/smtpd/
 

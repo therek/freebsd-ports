@@ -1,15 +1,15 @@
 # New ports collection makefile for:	lbdb
-# Version required:	0.18.5
 # Date created:		2 February 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/lbdb/Makefile,v 1.1.1.1 2000/02/03 13:46:39 nbm Exp $
 #
 
-DISTNAME=	lbdb_0.18.5
-PKGNAME=	lbdb-0.18.5
+PORTNAME=	lbdb
+PORTVERSION= 	0.18.5
 CATEGORIES=	mail
 MASTER_SITES=	http://www.rhein.de/~roland/debian/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	mwest@uct.ac.za
 

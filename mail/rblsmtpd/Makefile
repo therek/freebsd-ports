@@ -1,12 +1,12 @@
 # New ports collection makefile for:	rblsmtpd
-# Version required:     0.70
 # Date created:		30 October 1998
 # Whom:			John Saunders <john@nlc.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/rblsmtpd/Makefile,v 1.3 1999/08/25 06:50:47 obrien Exp $
 #
 
-DISTNAME=	rblsmtpd-0.70
+PORTNAME=	rblsmtpd
+PORTVERSION= 	0.70
 CATEGORIES=	mail
 MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/
 

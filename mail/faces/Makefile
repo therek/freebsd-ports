@@ -1,13 +1,13 @@
 # New ports collection makefile for:	faces-1.6.1
-# Version required:	1.6.1
 # Date created:		09 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/faces/Makefile,v 1.10 1999/08/25 06:50:11 obrien Exp $
+# $FreeBSD: ports/mail/faces/Makefile,v 1.11 1999/08/31 06:47:21 mharo Exp $
 #
 
-DISTNAME=	faces-1.6.1
+PORTNAME=	faces
+PORTVERSION= 	1.6.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/faces/
 EXTRACT_SUFX=	.tar.Z

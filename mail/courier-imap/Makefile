@@ -1,12 +1,12 @@
 # New ports collection makefile for: courierimap
-# Version required:	0.26
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courierimap/Makefile,v 1.1.1.1 2000/03/10 11:46:06 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.1.1.1 2000/03/11 20:16:31 asami Exp $
 #
 
-DISTNAME=	courier-imap-0.26
+PORTNAME=	courier-imap
+PORTVERSION=	0.26
 CATEGORIES=	mail
 MASTER_SITES=	http://www.inter7.com/courierimap/
 

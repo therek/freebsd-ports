@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mailfilter
-# Version required:    1.0b
 # Date created:        22 November 1999
 # Whom:                jmrobins
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mailfilter/Makefile,v 1.1 1999/12/25 16:02:04 steve Exp $
 #
 
-DISTNAME=	mailfilter-1.0b
+PORTNAME=	mailfilter
+PORTVERSION= 	1.0b
 CATEGORIES=	mail
 MASTER_SITES=	ftp://samurai.ruin.org/pub/All/
 

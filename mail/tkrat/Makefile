@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tkrat
-# Version required:	1.1
 # Date created:		24 October 1997
 # Whom:			Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/mail/tkrat/Makefile,v 1.19 1999/11/29 03:57:09 steve Exp $
+# $FreeBSD: ports/mail/tkrat/Makefile,v 1.20 2000/01/03 11:51:57 asami Exp $
 #
 
-DISTNAME=	tkrat-1.2
+PORTNAME=	tkrat
+PORTVERSION= 	1.2
 CATEGORIES=	mail tk82
 MASTER_SITES=	ftp://ftp.md.chalmers.se/pub/tkrat/ \
 		ftp://ftp.sunet.se/pub/unix/mail/tkrat/

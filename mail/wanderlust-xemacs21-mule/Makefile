@@ -1,9 +1,8 @@
 # New ports collection makefile for:	Wanderlust (for xemacs-mule)
-# Version required:	1.0.x
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-xemacs21-mule/Makefile,v 1.5 2000/01/19 16:42:12 shige Exp $
+# $FreeBSD: ports/mail/wanderlust-xemacs21-mule/Makefile,v 1.6 2000/02/18 23:17:19 taoka Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com

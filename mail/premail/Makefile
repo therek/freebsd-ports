@@ -1,14 +1,12 @@
 # New ports collection makefile for: premail
-# Version required:     0.46
-# Premail homepage is http://www.c2.net/~raph/premail.html
-#
 # Date created:         31 Jan 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/premail/Makefile,v 1.16 1999/08/31 06:47:38 mharo Exp $
+# $FreeBSD: ports/mail/premail/Makefile,v 1.17 1999/10/25 23:54:55 jim Exp $
 #
 
-DISTNAME=       premail-0.46
+PORTNAME=	premail
+PORTVERSION= 	0.46
 CATEGORIES=     security mail
 MASTER_SITES=   ftp://ftp.jpunix.com/pub/remailer-tools/ \
 		ftp://ftp.kiarchive.ru/pub/unix/crypto/

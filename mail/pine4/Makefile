@@ -1,18 +1,18 @@
 # New ports collection makefile for:	pine
-# Version required:     4.21
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.38 1999/12/23 15:35:14 steve Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.39 2000/01/17 12:39:54 asami Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
 # directory to the pine4-ssl port.
 
-DISTNAME?=	pine4.21
-PKGNAME?=	pine-4.21
+PORTNAME?=	pine
+PORTVERSION?= 	4.21
 CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
+DISTNAME?=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER?=	pine@freebsd.ady.ro
 

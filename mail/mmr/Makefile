@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mmr
-# Version required:			1.5.4
 # Date created:				23 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/mmr/Makefile,v 1.7 2000/03/29 07:18:34 kris Exp $
+# $FreeBSD: ports/mail/mmr/Makefile,v 1.8 2000/03/31 23:51:45 mharo Exp $
 #
 
-DISTNAME=	mmr-1.5.4
+PORTNAME=	mmr
+PORTVERSION= 	1.5.4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.devolution.com/~slouken/projects/mmr/
 

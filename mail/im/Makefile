@@ -1,12 +1,12 @@
 # New ports collection makefile for: IM
-# Version required:	130
 # Date created:		13 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/im/Makefile,v 1.6 1999/09/08 13:54:52 taoka Exp $
+# $FreeBSD: ports/mail/im/Makefile,v 1.7 2000/03/07 19:10:05 sada Exp $
 #
 
-DISTNAME=	im-140
+PORTNAME=	im
+PORTVERSION= 	140
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/ \
 		ftp://ftp.kyushu-u.ac.jp/pub/Misc/mew/ \

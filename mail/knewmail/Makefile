@@ -1,12 +1,12 @@
 # New ports collection makefile for:   KNewMail
-# Version required:    3.1
 # Date created:        6 June 1999
 # Whom:                Tomer Weller
 #
-# $FreeBSD: ports/mail/knewmail/Makefile,v 1.2 1999/08/25 06:50:15 obrien Exp $
+# $FreeBSD: ports/mail/knewmail/Makefile,v 1.3 2000/02/24 07:01:00 asami Exp $
 #
 
-DISTNAME=      knewmail-3.1
+PORTNAME=	knewmail
+PORTVERSION= 	3.1
 CATEGORIES=    mail kde
 MASTER_SITES=  http://www.slac.com/mpilone/knewmail_home/downloads/
 EXTRACT_SUFX=  .src.tar.gz

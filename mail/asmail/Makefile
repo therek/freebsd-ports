@@ -1,12 +1,12 @@
 # New ports collection makefile for:	 asmail
-# Version required:	0.54
 # Date created:		15 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/mail/asmail/Makefile,v 1.8 1999/08/25 06:50:02 obrien Exp $
+# $FreeBSD: ports/mail/asmail/Makefile,v 1.9 1999/09/09 03:03:18 cpiazza Exp $
 #
 
-DISTNAME=	asmail-0.54
+PORTNAME=	asmail
+PORTVERSION= 	0.53
 CATEGORIES=	mail afterstep
 MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/asmail/ \
 		ftp://ftp.afterstep.org/apps/asmail/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:  	bbmail
-# Version required:   	0.6.2
 # Date created:		May 3 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/bbmail/Makefile,v 1.8 1999/09/10 22:42:12 cpiazza Exp $
+# $FreeBSD: ports/mail/bbmail/Makefile,v 1.9 1999/10/28 06:01:26 cpiazza Exp $
 #
 
-DISTNAME=	bbmail-0.6.2
+PORTNAME=	bbmail
+PORTVERSION=	0.6.2
 CATEGORIES=	mail
 MASTER_SITES=	http://bbtools.windsofstorm.net/sources/ \
 		ftp://stokes.tte.ele.tue.nl/pub/bbmail/

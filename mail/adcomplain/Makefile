@@ -1,16 +1,15 @@
 # New ports collection makefile for:    adcomplain
-# http://www.rdrop.com/users/billmc/adcomplain.html
-# Version required:     3.*
 # Date created: 13 Sep 1997
 # Whom:         ache@FreeBSD.org
 #
-# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.29 1999/08/25 06:50:01 obrien Exp $
+# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.30 1999/08/27 20:16:57 mharo Exp $
 #
 
-DISTNAME=      adcomplain.pl
-PKGNAME=       adcomplain-3.52
+PORTNAME=	adcomplain
+PORTVERSION= 	3.52
 CATEGORIES=     mail news
 MASTER_SITES=   http://www.rdrop.com/users/billmc/
+DISTNAME=	${PORTNAME}.pl
 EXTRACT_SUFX=	.uu
 
 MAINTAINER=     ache@FreeBSD.org

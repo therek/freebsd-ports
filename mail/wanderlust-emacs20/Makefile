@@ -1,9 +1,8 @@
 # New ports collection makefile for:	Wanderlust (for emacs20)
-# Version required:	1.0.x
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs20/Makefile,v 1.4 2000/01/05 23:48:22 shige Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs20/Makefile,v 1.5 2000/03/10 21:31:15 asami Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	Wanderlust (for xemacs20)
-# Version required:	1.0.x
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-xemacs20/Makefile,v 1.2 1999/08/25 06:51:03 obrien Exp $
+# $FreeBSD: ports/mail/wanderlust-xemacs20/Makefile,v 1.3 2000/01/19 16:37:22 shige Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com

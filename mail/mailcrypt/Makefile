@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mailcrypt
-# Version required:    3.4
 # Date created:        29 May 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.4 1999/09/21 02:15:06 asami Exp $
+# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.5 1999/12/23 18:00:24 steve Exp $
 #
 
-DISTNAME=	mailcrypt-3.5.5
+PORTNAME=	mailcrypt
+PORTVERSION= 	3.5.5
 CATEGORIES=	mail
 MASTER_SITES=	http://www.nb.net/~lbudney/linux/software/mailcrypt/
 
