@@ -3,7 +3,7 @@
 # Date created:         05 April 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/icon/Makefile,v 1.15 1999/08/28 16:36:05 cpiazza Exp $
+# $FreeBSD: ports/lang/icon/Makefile,v 1.16 1999/08/31 06:46:47 mharo Exp $
 #
 
 DISTNAME=       unix
@@ -19,5 +19,8 @@ ONLY_FOR_ARCHS=	i386
 DIST_SUBDIR=	icon
 NO_WRKSUBDIR=	true
 ALL_TARGET=	Icon Icon-iconc
+
+do-configure:
+	(cd ${WRKSRC}; ${MAKE} Configure name=intel_freebsd)
 
 .include <bsd.port.mk>
