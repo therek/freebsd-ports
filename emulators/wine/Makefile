@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:    wine
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.78 2000/05/18 18:10:26 will Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.79 2000/05/29 02:11:41 steve Exp $
 #
 
 PORTNAME=	wine
@@ -49,17 +50,13 @@ post-build:
 	${SED} 's-\(look at the file \)<dirs to wine>/wine.ini-\1'${PREFIX}/etc/wine.conf.sample- <${WRKSRC}/documentation/config >${WRKDIR}/config
 
 do-install:
-.for EXEC in wine server/wineserver tools/fnt2bdf windows/x11drv/wineclipsrv \
-	     programs/regapi/regapi
-	${INSTALL_PROGRAM} ${WRKSRC}/${EXEC} ${PREFIX}/bin
-.endfor
+	cd ${WRKSRC} && ${MAKE} install
 	${INSTALL_SCRIPT} ${WRKDIR}/regSet.sh ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/wine.ini ${PREFIX}/etc/wine.conf.sample
 	[ -f ${PREFIX}/etc/wine.conf ] \
 		|| ${INSTALL_DATA} ${WRKSRC}/wine.ini ${PREFIX}/etc/wine.conf
 	${INSTALL_DATA} ${WRKSRC}/documentation/wine.man ${PREFIX}/man/man1/wine.1
 	${INSTALL_DATA} ${WRKSRC}/documentation/wine.conf.man ${PREFIX}/man/man5/wine.conf.5
-	${INSTALL_DATA} ${WRKSRC}/libwine.so ${PREFIX}/lib
 	-@${MKDIR} ${PREFIX}/lib/wine/documentation ${PREFIX}/lib/wine/reg 2>/dev/null
 	${INSTALL_DATA} ${WRKDIR}/bugreports ${WRKDIR}/config \
 		${WRKSRC}/README \
