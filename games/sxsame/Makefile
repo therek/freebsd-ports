@@ -2,15 +2,15 @@
 # Date created:         11 December 1999
 # Whom:                 Yuichi Narahara
 #
-# $FreeBSD: ports/games/sxsame/Makefile,v 1.4 2000/07/15 16:36:51 will Exp $
+# $FreeBSD: ports/games/sxsame/Makefile,v 1.5 2000/08/03 09:23:51 asami Exp $
 #
 
 PORTNAME=	sxsame
 PORTVERSION=	3.02
 CATEGORIES=	games
-MASTER_SITES=	ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/\
-		ftp://jg.cc.hit-u.ac.jp/pub/JG/JG-0.9.1/sources/\
-		ftp://ftp.jaist.ac.jp/pub/os/linux/JG/JG-0.9.1/sources/\
+MASTER_SITES=   ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/ \
+		ftp://ftp.riken.go.jp/pub/Linux/jg/JG-0.9.1/sources/ \
+		ftp://ftp.eos.hokudai.ac.jp/pub/Linux/JG/JG-0.9.1/sources/ \
 		ftp://mirror.nucba.ac.jp/mirror/JG/JG-0.9.1/sources/
 
 MAINTAINER=	aconitum@po.teleway.ne.jp
