@@ -1,5 +1,5 @@
 # .mozconfig.in -*-shell-script-*-
-# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.9 2002/11/01 18:14:37 alane Exp $
+# $FreeBSD: ports/www/phoenix/files/mozconfig.in,v 1.10 2002/11/02 00:16:18 alane Exp $
 ######################################################################
 # standard opts from README
 export MOZ_PHOENIX=1
@@ -13,6 +13,7 @@ ac_add_options --disable-composer
 # FBSD specific
 export CFLAGS="@CFLAGS@"
 export LIBS="@LIBS@"
+export CONFIG_SH=/bin/sh
 test -x /usr/bin/perl && export PERL=/usr/bin/perl \
     || export PERL=/usr/local/bin/perl
 mk_add_options PERL=$PERL
