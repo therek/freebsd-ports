@@ -2,21 +2,19 @@
 # Date created:				14 May 2000 02:45:53
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.12 2000/07/29 02:44:53 will Exp $
 #
 
 PORTNAME=	kdetoys
-PORTVERSION=	20000724A
+PORTVERSION=	20000829A
 CATEGORIES=	x11-clocks kde
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	will
+MASTER_SITES=	http://www.physics.purdue.edu/~will/
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
-WRKSRC=		${WRKDIR}/kdetoys
 MOC?=		${X11BASE}/bin/moc2
 USE_NEWGCC=	yes
 USE_BZIP2=	yes

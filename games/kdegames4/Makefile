@@ -2,21 +2,19 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kdegames2/Makefile,v 1.41 2000/07/29 02:44:50 will Exp $
 #
 
 PORTNAME=	kdegames
-PORTVERSION=	20000724A
+PORTVERSION=	20000829A
 CATEGORIES=	games kde
-MASTER_SITES=	$(MASTER_SITE_LOCAL)
-MASTER_SITE_SUBDIR=	will
+MASTER_SITES=	http://www.physics.purdue.edu/~will/
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
-WRKSRC=		${WRKDIR}/kdegames
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_NEWGCC=	yes

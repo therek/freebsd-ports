@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.47 2000/07/29 02:44:52 will Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -18,6 +18,7 @@ LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2 \
 		QwSpriteField.8:${PORTSDIR}/converters/kdesupport2
 
+BROKEN=		"Does not use current snapshot"
 WRKSRC=		${WRKDIR}/kdenetwork
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

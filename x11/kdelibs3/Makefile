@@ -2,14 +2,13 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.54 2000/07/29 02:44:47 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.55 2000/07/30 02:00:49 will Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION=	20000724A
+PORTVERSION=	20000829A
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	will
+MASTER_SITES=	http://www.physics.purdue.edu/~will/
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -17,9 +16,9 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
-		kde-qt-addon.4:${PORTSDIR}/x11-toolkits/kde-qt-addon
+		audiofile.0:${PORTSDIR}/audio/libaudiofile \
+		mimelib.3:${PORTSDIR}/converters/kdesupport2
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
 MOC?=		${X11BASE}/bin/moc2
 SOMAJOR=	4
 SOMINOR=	0

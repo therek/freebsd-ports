@@ -2,14 +2,13 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.52 2000/07/29 02:44:49 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.53 2000/08/03 09:28:37 asami Exp $
 #
 
 PORTNAME=	kdebase
-PORTVERSION= 	20000724A
+PORTVERSION= 	20000829A
 CATEGORIES=	x11 kde
-MASTER_SITES=	$(MASTER_SITE_LOCAL)
-MASTER_SITE_SUBDIR=	will
+MASTER_SITES=	http://www.physics.purdue.edu/~will/
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -17,7 +16,6 @@ LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kdeui.4:${PORTSDIR}/x11/kdelibs2 \
 		intl.1:${PORTSDIR}/devel/gettext
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
 SOMAJOR=	4
 SOMINOR=	0
 MOC?=		${X11BASE}/bin/moc2
