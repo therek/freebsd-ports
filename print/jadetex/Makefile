@@ -3,7 +3,7 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@plutotech.com>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.5 1999/08/31 01:44:54 peter Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.6 2000/02/08 09:28:28 peter Exp $
 #
 # When jadetex-2.3 goes mainstream, it will replace jadetex-2.1
 # currently in the Comprehensive TeX Archive Network (CTAN).  When
@@ -13,21 +13,24 @@
 #
 
 DISTNAME=		jadetex
-CATEGORIES=		print
-VERSION=		2.3
 PKGNAME=		${DISTNAME}-${VERSION}
-MAINTAINER=		kelly@plutotech.com
+CATEGORIES=		print
 MASTER_SITES=		http://people.FreeBSD.org/~nik/distfiles/jadetex/
+EXTRACT_SUFX=
 DISTFILES=		Makefile.jadetex jadetex.dtx jadetex.ini jadetex.ins \
 			pdfjadetex.ini
-DIST_SUBDIR=		jadetex
-NO_WRKSUBDIR=   	yes
+
+MAINTAINER=		kelly@plutotech.com
+
 BUILD_DEPENDS=		tex:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=		tex:${PORTSDIR}/print/teTeX
+
+VERSION=		2.3
+DIST_SUBDIR=		jadetex
+NO_WRKSUBDIR=   	yes
 EXTRACT_CMD=		${CP}
 EXTRACT_BEFORE_ARGS=	-fp
 EXTRACT_AFTER_ARGS=	.
-EXTRACT_SUFX=
 
 post-extract:
 	@${ECHO} all: default > ${WRKSRC}/Makefile
