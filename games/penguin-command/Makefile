@@ -2,11 +2,11 @@
 # Date created:			Apr 4, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/penguin-command/Makefile,v 1.1 2001/04/10 20:27:40 will Exp $
+# $FreeBSD: ports/games/penguin-command/Makefile,v 1.2 2001/06/08 05:36:32 markp Exp $
 #
 
 PORTNAME=	penguin-command
-PORTVERSION=	1.5.1
+PORTVERSION=	1.6.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.linux-games.com/penguin-command/
 
@@ -21,9 +21,9 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" CPPFLAGS="-I${LOCALBASE}/include"
 MAN6=		penguin-command.6
 
-pre-patch:
-	@find ${WRKSRC} \( -name "*.[ch]" -or -name "*.cpp" -or \
-		-name configure \) | \
-		xargs ${PERL} -pi -e 's|"SDL/SDL|"SDL|g ; s|<SDL/SDL|<SDL|g'
+post-patch:
+	${PERL} -pi -e 's|"SDL/SDL|"SDL|g ; s|<SDL/SDL|<SDL|g' \
+		${WRKSRC}/configure ${WRKSRC}/src/*.[ch]
+	${PERL} -pi -e "s/ -lz -lSDL -lm/ -lz -lm/g" ${WRKSRC}/configure
 
 .include <bsd.port.mk>
