@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.55 2001/01/26 03:34:30 trevor Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.56 2001/02/14 14:43:10 roam Exp $
 #
 
     SUBDIR += 9menu
@@ -51,6 +51,7 @@
     SUBDIR += ude
     SUBDIR += uwm
     SUBDIR += vtwm
+    SUBDIR += w9wm
     SUBDIR += windowmaker
     SUBDIR += windowmaker-i18n
     SUBDIR += wm2
