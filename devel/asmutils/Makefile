@@ -2,7 +2,7 @@
 # Date created:        22 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/asmutils/Makefile,v 1.1 2001/03/10 21:32:46 will Exp $
 #
 
 PORTNAME=	asmutils
@@ -32,8 +32,8 @@ DOCFILES=	Asmutils-HOWTO acknowledgements endorsements history \
 		index s-contrib s-debug s-include s-layout s-optimize
 
 post-patch:
-	@(${SED} -e 's,%%KERNEL%%,${OSREL:S/.//g},g' ${WRKSRC}/MCONFIG > foo \
-		&& ${MV} foo ${WRKSRC}/MCONFIG)
+	@(${SED} -e 's,%%KERNEL%%,${OSREL:S/.//g},g' ${WRKSRC}/MCONFIG > ${WRKDIR}/foo \
+		&& ${MV} ${WRKDIR}/foo ${WRKSRC}/MCONFIG)
 
 do-install:
 	${MKDIR} ${PREFIX}/bin/asmutils
