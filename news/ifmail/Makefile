@@ -3,7 +3,7 @@
 # Date created:         19 Feb 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/ifmail/Makefile,v 1.10 1999/08/30 14:31:36 peter Exp $
+# $FreeBSD: ports/news/ifmail/Makefile,v 1.11 1999/10/08 22:44:39 dan Exp $
 #
 
 DISTNAME=       ifmail-2.15
@@ -19,7 +19,7 @@ MAN3=		parsedate.3
 MAN8=		ifmail.8 iftoss.8
 
 pre-install:
-	@PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
+	@PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 	${MKDIR} ${PREFIX}/libexec/ifmail
 
 post-install:
