@@ -2,14 +2,14 @@
 # Date created:		30 June 2001
 # Whom:                 dbader@eece.unm.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/grappa/Makefile,v 1.1 2001/07/04 08:39:35 wjv Exp $
 #
 
 PORTNAME=	grappa
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	biology
 MASTER_SITES=	http://www.cs.unm.edu/~moret/
-DISTNAME=	GRAPPA-1.02
+DISTNAME=	GRAPPA-1.03
 
 MAINTAINER=	dbader@eece.unm.edu
 
