@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.33 2001/08/06 14:41:37 wjv Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.34 2001/08/06 14:45:31 wjv Exp $
 #
 
     SUBDIR += babel
@@ -33,6 +33,7 @@
     SUBDIR += psi88
     SUBDIR += py-biopython
     SUBDIR += rasmol
+    SUBDIR += recombine
     SUBDIR += seaview
     SUBDIR += sim4
     SUBDIR += tinker
