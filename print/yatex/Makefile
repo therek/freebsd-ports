@@ -2,7 +2,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.24 2000/09/18 02:05:42 taoka Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.25 2000/10/08 04:00:10 asami Exp $
 #
 
 PORTNAME=	yatex
@@ -22,7 +22,7 @@ DIRSECTION=	The Emacs editor and associated tools
 EMACS_PORT_NAME?=emacs20
 .if (${EMACS_PORT_NAME} == xemacs21-mule)
 BUILD_DEPENDS=	xemacs:${PORTSDIR}/japanese/xemacs21-canna \
-		{LOCALBASE}/${EMACS_PACKAGESDIR}/../xemacs-packages/lisp/texinfo/texinfmt.el:${PORTSDIR}/editors/xemacs-packages \
+		${LOCALBASE}/${EMACS_PACKAGESDIR}/../xemacs-packages/lisp/texinfo/texinfmt.el:${PORTSDIR}/editors/xemacs-packages \
 		nkf:${PORTSDIR}/japanese/nkf
 .endif
 
