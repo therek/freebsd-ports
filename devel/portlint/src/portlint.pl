@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.15 2000/03/20 18:03:01 mharo Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.19 2000/04/25 21:33:42 mharo Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -284,7 +284,7 @@ foreach my $i (<patches/patch-??>) {
 foreach my $i (@checker) {
 	print "OK: checking $i.\n";
 	if (! -f "$i") {
-		&perror("FATAL: no $i in \"$portdir\".");
+		&perror("FATAL: no $i in \"$portdir\".") unless $i = $makevar{MD5_FILE} && $makevar{DISTFILES} eq "";
 	} else {
 		my $proc = $checker{$i};
 		&$proc($i) || &perror("Cannot open the file $i\n");
