@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.226 2001/08/24 15:57:19 ache Exp $
+# $FreeBSD: ports/security/Makefile,v 1.227 2001/08/29 04:54:51 petef Exp $
 #
 
     SUBDIR += aafid2
@@ -153,6 +153,7 @@
     SUBDIR += py-gnupg
     SUBDIR += py-m2crypto
     SUBDIR += py-rijndael
+    SUBDIR += qtfw
     SUBDIR += racoon
     SUBDIR += radiusniff
     SUBDIR += rain
