@@ -3,11 +3,11 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mp3mover/Makefile,v 1.1 2001/04/18 11:52:37 ijliao Exp $
+# $FreeBSD: ports/audio/mp3mover/Makefile,v 1.2 2001/04/26 17:36:59 ijliao Exp $
 #
 
 PORTNAME=	mp3mover
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	audio perl5
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jsm00/scripts/
 
@@ -24,5 +24,6 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/mp3mover.pl ${PREFIX}/bin/mp3mover
 	@${MKDIR} ${PREFIX}/share/${PORTNAME}
 	${CP} ${WRKSRC}/sample-.mp3moverrc ${PREFIX}/share/${PORTNAME}
+	${CP} ${WRKSRC}/shellperfect-.mp3moverrc ${PREFIX}/share/${PORTNAME}
 
 .include <bsd.port.mk>
