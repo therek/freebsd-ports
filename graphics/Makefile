@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.305 2001/04/24 17:13:18 takawata Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.306 2001/05/08 18:56:49 ade Exp $
 #
 
     SUBDIR += 4va
@@ -145,6 +145,7 @@
     SUBDIR += mpeg_play
     SUBDIR += mpeg_stat
     SUBDIR += mpegedit
+    SUBDIR += mpgtx
     SUBDIR += mplex
     SUBDIR += mtv
     SUBDIR += netpbm
