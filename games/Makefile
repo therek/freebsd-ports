@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.316 2000/10/31 08:03:33 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.317 2000/10/31 23:53:13 asami Exp $
 #
 
     SUBDIR += 3dc
@@ -70,6 +70,7 @@
     SUBDIR += glife
     SUBDIR += gltron
     SUBDIR += gma
+    SUBDIR += gnarr
     SUBDIR += gniffel
     SUBDIR += gno3dtet
     SUBDIR += gnocatan
