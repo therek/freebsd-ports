@@ -3,7 +3,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.31 1999/08/25 05:49:21 obrien Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.32 1999/09/03 07:25:49 marcel Exp $
 #
 
 DISTNAME=		linux_base
@@ -77,7 +77,8 @@ RPM_SET3=		setserial-2.14-4.${ARCH}.rpm \
 			slang-0.99.38-8.${ARCH}.rpm \
 			stat-1.5-8.${ARCH}.rpm \
 			tcsh-6.07.09-1.${ARCH}.rpm \
-			XFree86-libs-3.3.2.3-25.${ARCH}.rpm
+			XFree86-libs-3.3.2.3-25.${ARCH}.rpm \
+			xpm-3.4j-3.${ARCH}.rpm
 
 DBPATH=			/var/lib/rpm
 RPMFLAGS=		--ignoreos --root ${PREFIX} --dbpath ${DBPATH} \
