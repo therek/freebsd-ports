@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.86 1999/11/03 20:13:19 jim Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.87 1999/11/03 20:34:59 billf Exp $
 #
 
     SUBDIR += LPRng
@@ -65,6 +65,7 @@
     SUBDIR += ucspi-tcp
     SUBDIR += upsd
     SUBDIR += upsmon
+    SUBDIR += uwatch
     SUBDIR += webmin
     SUBDIR += wmapm
     SUBDIR += wmavgload
