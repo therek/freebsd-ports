@@ -2,7 +2,7 @@
 # Date created:		Tue Nov 21 12:59:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.1 2000/11/22 17:51:39 roger Exp $
+# $FreeBSD: ports/net/openh323proxy/Makefile,v 1.2 2001/01/11 17:15:43 roger Exp $
 #
 
 PORTNAME=	openh323proxy
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_0.9a3_m09
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

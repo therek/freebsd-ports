@@ -2,7 +2,7 @@
 # Date created:				January 27, 1999
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/lang/gpc/Makefile,v 1.3 2000/11/14 13:38:38 asami Exp $
+# $FreeBSD: ports/lang/gpc/Makefile,v 1.4 2001/01/10 14:02:24 sf Exp $
 
 PORTNAME=	gpc
 PORTVERSION=	2.0
@@ -13,7 +13,7 @@ DISTNAME=	gpc-19990118
 
 MAINTAINER=	antonz@library.ntu-kpi.kiev.ua
 
-BUILD_DEPENDS=	nonexistent:${PORTSDIR}/lang/gcc28:patch
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/lang/gcc28:patch
 
 WRKSRC=		${WRKDIR}/gpc
 MAKE_ARGS=	LANGUAGES=pascal

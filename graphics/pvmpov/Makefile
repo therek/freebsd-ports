@@ -2,7 +2,7 @@
 # Date created:         		22 March 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pvmpov/Makefile,v 1.2 2000/06/02 10:42:25 sobomax Exp $
+# $FreeBSD: ports/graphics/pvmpov/Makefile,v 1.3 2000/11/01 15:51:06 sobomax Exp $
 #
 
 PORTNAME=	pvmpov
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	nonexistent:${PORTSDIR}/graphics/povray31:configure \
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/povray31:configure \
 		aimk:${PORTSDIR}/net/pvm
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray31 \
 		pvmd:${PORTSDIR}/net/pvm

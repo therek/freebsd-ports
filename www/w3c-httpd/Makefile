@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			pst (orig)
 #
-# $FreeBSD: ports/www/w3c-httpd/Makefile,v 1.24 2000/04/10 00:07:08 cpiazza Exp $
+# $FreeBSD: ports/www/w3c-httpd/Makefile,v 1.25 2001/02/05 15:33:54 olgeni Exp $
 #
 
 PORTNAME=	w3c-httpd
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.w3.org/pub/httpd/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/wais:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/wais:build
 
 NO_WRKSUBDIR=	yes
 WWW_ROOT?=	${PREFIX}/www

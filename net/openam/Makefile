@@ -2,7 +2,7 @@
 # Date created:		Tue May  2 15:43:02 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openam/Makefile,v 1.6 2001/01/03 14:15:12 roger Exp $
+# $FreeBSD: ports/net/openam/Makefile,v 1.7 2001/05/03 01:59:25 roger Exp $
 #
 
 PORTNAME=	openam
@@ -15,7 +15,7 @@ DISTNAME=	openam_1.0.4
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

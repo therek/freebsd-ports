@@ -2,7 +2,7 @@
 # Date created:		Wed Apr 5 11:00:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.14 2000/08/18 18:51:52 roger Exp $
+# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.15 2000/11/12 09:32:40 roger Exp $
 #
 
 PORTNAME=	opengatekeeper
@@ -14,7 +14,7 @@ DISTNAME=	opengate_0.9alpha3
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/opengate
 

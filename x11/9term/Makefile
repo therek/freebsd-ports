@@ -2,7 +2,7 @@
 # Date created:		Sun Aug 13 12:36:14 CDT 1995
 # Whom:			erich@rrnet.com
 #
-# $FreeBSD: ports/x11/9term/Makefile,v 1.16 2000/04/23 22:59:12 kris Exp $
+# $FreeBSD: ports/x11/9term/Makefile,v 1.17 2000/05/29 23:59:57 steve Exp $
 #
 
 PORTNAME=	9term
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 MAINTAINER=	ports@FreeBSD.org
 
 # needs library and private header, but not during runtime
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/editors/sam:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/editors/sam:build
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:		Wed Nov 22 08:57:55 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openmcu/Makefile,v 1.2 2001/01/03 14:10:26 roger Exp $
+# $FreeBSD: ports/net/openmcu/Makefile,v 1.3 2001/05/03 02:09:05 roger Exp $
 #
 
 PORTNAME=	openmcu
@@ -15,7 +15,7 @@ DISTNAME=	openmcu_1.0.4
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

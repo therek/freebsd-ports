@@ -2,7 +2,7 @@
 # Date created:				1 February 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla-headers/Makefile,v 1.2 2001/05/22 08:13:44 sobomax Exp $
 #
 
 PORTNAME=	mozilla-headers
@@ -14,7 +14,7 @@ DISTFILES=
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/www/mozilla:configure
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/www/mozilla:configure
 
 USE_X_PREFIX=	yes
 

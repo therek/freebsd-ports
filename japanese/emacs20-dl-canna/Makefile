@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.19 2000/07/05 14:49:03 shige Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.20 2000/08/26 20:22:46 steve Exp $
 #
 
 PORTNAME=	emacs20-dl-canna
@@ -17,7 +17,7 @@ MAINTAINER=	shige@FreeBSD.org
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 # Building this port requires emacs-dl source tree: ${EMACSDL_DIR}:configure
 BUILD_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \
-		/nonexistent:${EMACSDL_DIR}:configure \
+		${NONEXISTENT}:${EMACSDL_DIR}:configure \
 		${APEL_DEPENDS}:${PORTSDIR}/editors/apel-emacs20
 RUN_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \
 		${APEL_DEPENDS}:${PORTSDIR}/editors/apel-emacs20

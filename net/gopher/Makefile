@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1994
 # Whom:			ats (original)
 #
-# $FreeBSD: ports/net/gopher/Makefile,v 1.14 2000/08/13 08:35:24 kris Exp $
+# $FreeBSD: ports/net/gopher/Makefile,v 1.15 2000/09/03 01:13:35 kris Exp $
 #
 
 PORTNAME=	gopher
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 FORBIDDEN=	"Remote exploits"
 
-BUILD_DEPENDS=  /nonexistent:${PORTSDIR}/net/wais:build
+BUILD_DEPENDS=  ${NONEXISTENT}:${PORTSDIR}/net/wais:build
 
 DATADIR=	$(PREFIX)/gopher-data
 WaisTop=	$(PORTSDIR)/net/wais/work/freeWAIS-0.5

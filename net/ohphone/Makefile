@@ -2,7 +2,7 @@
 # Date created:		Fri Aug 18 19:29:00 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ohphone/Makefile,v 1.4 2001/01/03 14:37:06 roger Exp $
+# $FreeBSD: ports/net/ohphone/Makefile,v 1.5 2001/05/03 02:20:22 roger Exp $
 #
 
 PORTNAME=	ohphone
@@ -15,7 +15,7 @@ DISTNAME=	ohphone_1.1.2
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

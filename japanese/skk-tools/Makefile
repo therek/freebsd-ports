@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@kuis.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/skk-tools/Makefile,v 1.5 2000/04/12 14:37:41 knu Exp $
+# $FreeBSD: ports/japanese/skk-tools/Makefile,v 1.6 2000/10/15 03:19:11 nbm Exp $
 #
 
 PORTNAME=	skk-tools
@@ -13,7 +13,7 @@ DISTNAME=	skk${PORTVERSION}
 
 MAINTAINER=	matusita@jp.FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${SKK_MASTERDIR}:configure
+BUILD_DEPENDS=	${NONEXISTENT}:${SKK_MASTERDIR}:configure
 
 SKK_MASTERDIR=	${.CURDIR}/../../japanese/skk-jisyo
 WRKSRC=		${WRKDIRPREFIX}${SKK_MASTERDIR}/work/skk-${PORTVERSION}

@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.10 2001/05/22 12:06:15 sobomax Exp $
 #
 
 PORTNAME=	mozilla-embedded
@@ -14,7 +14,7 @@ DISTFILES=
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/www/mozilla:build \
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/www/mozilla:build \
 		zip:${PORTSDIR}/archivers/zip \
 		unzip:${PORTSDIR}/archivers/unzip
 LIB_DEPENDS=	${MAKE} -V LIB_DEPENDS -f ${MAINDIR}/${MAKEFILE}

@@ -2,7 +2,7 @@
 # Date created:		17 Jun 1999
 # Whom:			Makoto Matsushita <matusita@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.7 2000/10/15 03:19:09 nbm Exp $
+# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.8 2001/02/14 20:19:36 lioux Exp $
 #
 
 PORTNAME=	dbskkd-cdb
@@ -43,7 +43,7 @@ post-install:
 pre-build::
 	${CP} ${LOCALBASE}/share/skk/${SKKJISYO} ${WRKSRC}
 .else
-BUILD_DEPENDS+=	/nonexistent:${.CURDIR}/../../japanese/skk-jisyo:extract
+BUILD_DEPENDS+=	${NONEXISTENT}:${.CURDIR}/../../japanese/skk-jisyo:extract
 pre-build::
 	${CP} ${WRKDIR}/../../../japanese/skk-jisyo/work/*/jisyo/${SKKJISYO} ${WRKSRC}
 .endif

@@ -2,7 +2,7 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.21 2001/02/09 16:31:56 cjh Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.22 2001/05/22 18:19:43 sobomax Exp $
 #
 
 PORTNAME=	ghostscript
@@ -21,8 +21,8 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	cjh@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
-		/nonexistent:${PORTSDIR}/graphics/png:extract \
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract \
+		${NONEXISTENT}:${PORTSDIR}/graphics/png:extract \
 		unzip:${PORTSDIR}/archivers/unzip
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	$(X11BASE)/lib/X11/fonts/TrueType/gulim.ttf:${PORTSDIR}/korean/baekmukfonts-ttf

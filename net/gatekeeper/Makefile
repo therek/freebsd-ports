@@ -2,7 +2,7 @@
 # Date created:		Wed Apr 15 15:41:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.15 2001/05/03 03:05:39 roger Exp $
+# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.16 2001/05/04 07:26:07 roger Exp $
 #
 
 PORTNAME=	gatekeeper
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	roger@FreeBSD.org
 
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/net/openh323:build
 
 WRKSRC=		${WRKDIR}/openh323gk
 

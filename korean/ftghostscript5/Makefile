@@ -2,7 +2,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.18 2000/08/03 09:25:18 asami Exp $
+# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.19 2001/02/06 13:25:07 olgeni Exp $
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -33,8 +33,8 @@ MAINTAINER=	cjh@FreeBSD.org
 RUN_DEPENDS=	$(LOCALBASE)/share/ghostscript/fonts:${PORTSDIR}/print/gsfonts \
 		$(LOCALBASE)/share/ghostscript/fonts/CMap:${PORTSDIR}/korean/munhwafonts-cid \
 		$(X11BASE)/lib/X11/fonts/TrueType/gulim.ttf:${PORTSDIR}/korean/baekmukfonts-ttf
-BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
-		/nonexistent:${PORTSDIR}/graphics/png:extract
+BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract \
+		${NONEXISTENT}:${PORTSDIR}/graphics/png:extract
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 
 USE_XLIB=	YES
