@@ -3,7 +3,7 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.12 1999/09/01 11:23:13 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.13 1999/09/19 03:44:45 jim Exp $
 #
 
 DISTNAME=	irssi-0.7.16
@@ -13,7 +13,7 @@ MASTER_SITES=	http://xlife.dhs.org/irssi/files/
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		PropList.1:${PORTSDIR}/devel/libPropList
+		PropList.2:${PORTSDIR}/devel/libPropList
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

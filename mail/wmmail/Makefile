@@ -3,7 +3,7 @@
 # Date created:        7 Jun 1998
 # Whom:                rom
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/wmmail/Makefile,v 1.11 1999/08/25 06:51:04 obrien Exp $
 #
 
 DISTNAME=	WMMail.app-0.63a
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.eecg.utoronto.ca/~chanb/
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		PropList.1:${PORTSDIR}/devel/libPropList
+		PropList.2:${PORTSDIR}/devel/libPropList
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-PL-libs="-L${LOCALBASE}/lib" \

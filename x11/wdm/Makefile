@@ -3,7 +3,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.27 1999/09/18 03:12:09 steve Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.28 1999/10/05 10:20:27 tg Exp $
 
 DISTNAME=	wdm-1.0
 CATEGORIES=	x11 windowmaker
@@ -20,7 +20,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		png.3:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		wraster.3:${PORTSDIR}/x11-wm/windowmaker \
-		PropList.1:${PORTSDIR}/devel/libPropList
+		PropList.2:${PORTSDIR}/devel/libPropList
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	wdm
