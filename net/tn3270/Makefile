@@ -2,13 +2,13 @@
 # Date created:		30 August 1999
 # Whom:			markm
 #
-# $FreeBSD: ports/net/tn3270/Makefile,v 1.2 2000/04/09 18:13:47 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tn3270
 PORTVERSION=	4.4
 CATEGORIES=	net
-MASTER_SITES=	http://freefall.freebsd.org/~markm/ \
+MASTER_SITES=	http://people.freebsd.org/~markm/ \
 		ftp://ftp.za.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://ftp3.za.freebsd.org/pub/FreeBSD/distfiles/
 DISTNAME=	tn3270
