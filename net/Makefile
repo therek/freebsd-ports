@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.623 2001/10/07 02:17:47 petef Exp $
+# $FreeBSD: ports/net/Makefile,v 1.624 2001/10/08 12:14:29 roger Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -31,6 +31,7 @@
     SUBDIR += bpft
     SUBDIR += brouted
     SUBDIR += cap
+    SUBDIR += cdpd
     SUBDIR += centericq
     SUBDIR += cflowd
     SUBDIR += choparp
