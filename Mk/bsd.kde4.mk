@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.10 2001/11/14 15:56:53 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.11 2002/04/19 02:29:28 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -81,7 +81,19 @@ USE_QT_VER=		2
 # USE_QT_VER section
 .if defined(USE_QT_VER)
 
-.if ${USE_QT_VER} == 3
+# Qt 1.x common stuff
+.if ${USE_QT_VER} == 1
+LIB_DEPENDS+=  qt1.3:${PORTSDIR}/x11-toolkits/qt145
+USE_NEWGCC=            yes
+MOC?=                  ${X11BASE}/bin/moc1
+.if defined(PREFIX)
+QTDIR=                 ${PREFIX}
+.else
+QTDIR=                 ${X11BASE}
+.endif
+CONFIGURE_ENV+=        MOC="${MOC}" QTDIR="${QTDIR}"
+
+.elif ${USE_QT_VER} == 3
 
 QTCPPFLAGS?=
 QTCGFLIBS?=
