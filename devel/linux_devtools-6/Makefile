@@ -3,7 +3,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.14 1999/08/25 05:48:31 obrien Exp $
 #
 
 DISTNAME=		linux_devtools
@@ -97,6 +97,7 @@ do-install:
 	@${CHMOD} 666 ${PREFIX}/dev/null
 .if defined(NEEDLOADLINK)
 	@${MKDIR} ${PREFIX}/compat
+	@${RM} -f ${PREFIX}/compat/linux
 	@${LN} -s / ${PREFIX}/compat/linux
 .endif
 #
