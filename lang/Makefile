@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.172 2000/06/28 16:09:06 ade Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.173 2000/06/30 02:56:19 will Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -59,6 +59,7 @@
     SUBDIR += modula-3-lib
     SUBDIR += modula-3-socks
     SUBDIR += moscow_ml
+    SUBDIR += mozart
     SUBDIR += nawk
     SUBDIR += nqc
     SUBDIR += o2c
