@@ -3,7 +3,7 @@
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD: ports/biology/molden/Makefile,v 1.4 1999/08/27 21:13:34 mharo Exp $
+# $FreeBSD: ports/biology/molden/Makefile,v 1.5 2000/01/31 03:50:25 cpiazza Exp $
 #
 
 DISTNAME=	molden3.4
@@ -53,7 +53,6 @@ pre-install:
 .endif
 
 do-install:
-	strip  ${WRKSRC}/molden
 	${INSTALL_SCRIPT} ${WRKSRC}/molden ${PREFIX}/bin/
 .if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/molden/doc
