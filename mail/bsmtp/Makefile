@@ -2,23 +2,24 @@
 # Date created:                2000-10-05
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/bsmtp/Makefile,v 1.1 2000/10/28 01:22:47 jeh Exp $
 
 PORTNAME=	bsmtp
-PORTVERSION=	1.01
+PORTVERSION=	1.02
 CATEGORIES=	mail
 MASTER_SITES=	http://www.stud.uni-karlsruhe.de/~uk1o/bsmtp/
 
 MAINTAINER=	naddy@mips.inka.de
 
+WRKSRC=		${WRKDIR}/${PORTNAME}
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--redo
 
 pre-configure:
-	@${SED} -e 's,%%CC%%,${CC},' \
-		-e 's,%%CFLAGS%%,${CFLAGS},' \
-		-e 's,%%PREFIX%%,${PREFIX},' \
-		${FILESDIR}/config.sed >${WRKSRC}/config.sed
+	@${SED} <${FILESDIR}/config.sed >${WRKSRC}/config.sed \
+		-e 's:%%CC%%:${CC}:' \
+		-e 's:%%CFLAGS%%:${CFLAGS}:' \
+		-e 's:%%PREFIX%%:${PREFIX}:'
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/bsmtp
