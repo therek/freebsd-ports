@@ -2,7 +2,7 @@
 # Date created:				17 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.8 2001/04/25 13:22:27 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.9 2001/05/04 21:41:29 ade Exp $
 #
 
 PORTNAME=	eazel-themes
@@ -25,6 +25,8 @@ USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--localstatedir=${X11BASE}/share \
+		--datadir=${X11BASE}/share
 
 post-extract:
 	@find ${WRKSRC}/../.. -type f | grep -v eazel-engine | xargs ${CHMOD} 644
