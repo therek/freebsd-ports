@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.6 2003/09/10 13:49:09 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.7 2004/06/07 10:53:11 eik Exp $
 #
 
 # PROVIDE: mail
@@ -55,10 +55,9 @@ stop_postcmd()
   rm -f $pidfile
 }
 
-# set defaults
-
-exim_enable=${exim_enable:-"NO"}
-exim_flags=${exim_flags:-"-bd -q30m"}
-
+# read settings, set default values
 load_rc_config $name
+: ${exim_enable="NO"}
+: ${exim_flags="-bd -q30m"}
+
 run_rc_command "$1"
