@@ -2,13 +2,14 @@
 # Date created:		06 Oct 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx-samples/Makefile,v 1.5 2000/04/14 10:46:51 asami Exp $
+# $FreeBSD: ports/graphics/opendx-samples/Makefile,v 1.6 2000/05/29 02:34:52 steve Exp $
 #
 
 PORTNAME=	opendx-samples
-PORTVERSION=	4.0.8
+PORTVERSION=	4.1.3
 CATEGORIES=	graphics math
-MASTER_SITES=	http://opendx.npaci.edu/source/
+MASTER_SITES=	http://www.research.ibm.com/dx/srcDownload/srcArchive \
+	        http://opendx.npaci.edu/source/
 DISTNAME=	dxsamples-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
