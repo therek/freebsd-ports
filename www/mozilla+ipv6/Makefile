@@ -2,12 +2,11 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.59 2001/05/18 17:47:00 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.60 2001/05/22 09:16:36 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.9
-PORTREVISON=	1
+PORTVERSION=	0.9.1
 PORTEPOCH=	1
 PKGNAMESUFFIX=	+ipv6
 CATEGORIES=	www ipv6
@@ -38,7 +37,6 @@ CONFIGURE_ARGS=					\
 		--disable-cpp-rtti		\
 		--disable-debug			\
 		--disable-idltool		\
-		--disable-jar-packaging		\
 		--disable-md			\
 		--disable-pedantic		\
 		--disable-xterm-updates		\
@@ -52,6 +50,7 @@ CONFIGURE_ARGS=					\
 		--enable-tests			\
 		--enable-toolkit=gtk		\
 		--enable-x11-shm		\
+		--enable-chrome-format=jar	\
 		--with-jpeg=${LOCALBASE}	\
 		--with-png=${LOCALBASE}		\
 		--with-mng=${LOCALBASE}		\
@@ -69,6 +68,8 @@ post-build:
 	  ${ECHO} skin,install,select,classic/1.0 >> chrome/installed-chrome.txt; \
 	  ${ECHO} locale,install,select,en-US >> chrome/installed-chrome.txt; \
 	  ${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regchrome)
+	@/usr/bin/find ${WRKSRC}/dist/bin -type d | /usr/bin/sort -r | \
+		/usr/bin/xargs ${RMDIR} 2> /dev/null || ${TRUE}
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/mozilla
