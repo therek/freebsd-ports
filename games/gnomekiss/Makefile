@@ -2,11 +2,11 @@
 # Date created:				4 Apr 2001
 # Whom:					UMENO Takashi <umeno@rr.iij4u.or.jp>
 #
-# $FreeBSD: ports/games/gnomekiss/Makefile,v 1.3 2001/06/29 14:42:23 kevlo Exp $
+# $FreeBSD: ports/games/gnomekiss/Makefile,v 1.4 2001/08/01 16:50:13 lioux Exp $
 #
 
 PORTNAME=	gnomekiss
-PORTVERSION=	0.9
+PORTVERSION=	0.9.1
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.ecs.soton.ac.uk/~njl98r/code/kiss/
 DISTNAME=	gnomekiss-${PORTVERSION}
