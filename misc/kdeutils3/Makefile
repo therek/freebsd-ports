@@ -2,14 +2,14 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.53 2001/08/15 12:43:06 will Exp $
 #
 
 PORTNAME=	kdeutils
 PORTVERSION=	2.2
 CATEGORIES=	misc kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
 MAINTAINER=	will@FreeBSD.org
 
