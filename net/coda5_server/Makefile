@@ -2,7 +2,7 @@
 # Date created:				Mon Oct 18 12:01:28 EDT 1999
 # Whom:					???#
 #
-# $FreeBSD: ports/net/coda5_server/Makefile,v 1.9 2000/04/09 18:10:35 cpiazza Exp $
+# $FreeBSD: ports/net/coda5_server/Makefile,v 1.10 2000/05/29 04:28:31 steve Exp $
 #
 
 PORTNAME=	coda
@@ -13,7 +13,7 @@ PKGNAMESUFFIX=	-${CODA_SUITE}
 DISTNAME=	coda-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rvb@cs.cmu.edu
+MAINTAINER=	coda@cs.cmu.edu
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
 		lwp.1:${PORTSDIR}/devel/lwp \
@@ -28,6 +28,6 @@ USE_GMAKE=	yes
 CONFIGURE_ARGS?=	--sysconfdir=${PREFIX}/etc/rc.d
 
 CODA_SUITE?=	server
-CODA_VERSION?=	5.3.7
+CODA_VERSION?=	5.3.8
 
 .include <bsd.port.mk>
