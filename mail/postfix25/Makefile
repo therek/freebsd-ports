@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.28 2001/01/21 15:40:41 dirk Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.29 2001/02/05 15:11:03 olgeni Exp $
 #
 
 PORTNAME=	postfix
@@ -16,7 +16,8 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.nl.uu.net/pub/unix/mail/postfix/official/ \
 		ftp://ftp.cs.tu-berlin.de/pub/net/mail/postfix/official/ \
 		ftp://ftp.mira.net/pub/unix/mail/postfix/official/ \
-		ftp://coda.nctu.edu.tw/network/mail/postfix/official/
+		ftp://coda.nctu.edu.tw/network/mail/postfix/official/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/mail/postfix/official/&,}
 DISTNAME=	${PORTNAME}-19991231-pl13
 
 MAINTAINER=	blaz@amis.net
