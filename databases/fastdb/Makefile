@@ -3,15 +3,15 @@
 # Date created:			Mar 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/fastdb/Makefile,v 1.1 2001/03/02 16:25:51 ijliao Exp $
 #
 
 PORTNAME=	fastdb
-PORTVERSION=	2.16
+PORTVERSION=	2.22
 CATEGORIES=	databases
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_GMAKE=	yes
@@ -20,6 +20,8 @@ MAKEFILE=	makefile
 INSTALLS_SHLIB=	yes
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/makefile
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g ; \
+		s,%%PTHREAD_CFLAGS%%,${PTHREAD_CFLAGS},g ; \
+		s,%%PTHREAD_LIBS%%,${PTHREAD_LIBS},g" ${WRKSRC}/makefile
 
 .include <bsd.port.mk>
