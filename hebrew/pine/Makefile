@@ -2,10 +2,11 @@
 # Date created:		Apr 01 2000
 # Whom:			Nadav Eiron <nadav@cs.technion.ac.il>
 #
-# $FreeBSD: ports/hebrew/pine/Makefile,v 1.2 2000/09/29 08:07:30 kris Exp $
+# $FreeBSD: ports/hebrew/pine/Makefile,v 1.3 2000/10/30 01:35:21 kris Exp $
 
 PORTNAME=	pine
 PORTVERSION=	4.21.2.9
+PORTREVISION=	1
 CATEGORIES=	hebrew mail news
 MASTER_SITES=	ftp://www8.cc.huji.ac.il/pub/pine/
 DISTNAME=	pine4.21_heb2.09
