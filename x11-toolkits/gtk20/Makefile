@@ -1,13 +1,13 @@
 # New ports collection makefile for:   gtk12
-# Version required:		1.2.3
+# Version required:		1.2.5
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.52 1999/08/31 06:52:46 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.53 1999/09/11 01:06:13 asami Exp $
 #
 
-DISTNAME=	gtk+-1.2.3
-PKGNAME=	gtk-1.2.3
+DISTNAME=	gtk+-1.2.5
+PKGNAME=	gtk-1.2.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12 \
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		intl.1:${PORTSDIR}/devel/gettext
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
