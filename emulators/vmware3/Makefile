@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.8 2000/04/03 16:13:11 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.9 2000/04/12 04:56:06 mharo Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -27,7 +27,7 @@ PATCHFILES=	vmmon-freebsd-0.95.tar.gz \
 MAINTAINER=	freebsd-emulation@FreeBSD.org
 
 RUN_DEPENDS=	${LINUX_DIR}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
-		/dev/rtc:${PORTSDIR}/emulators/rtc
+		${LINUX_DIR}/dev/rtc:${PORTSDIR}/emulators/rtc
 
 RESTRICTED=	"Not sure if we can redistribute it"
 
