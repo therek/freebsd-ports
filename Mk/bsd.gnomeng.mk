@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.15 2002/09/11 21:37:39 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.16 2002/10/07 21:25:57 marcus Exp $
 #
 
 .if !defined(_POSTMKINCLUDED)
@@ -224,19 +224,27 @@ libpanel_USE_GNOME_IMPL=gnomelibs
 
 _USE_GNOME_SAVED:=${USE_GNOME}
 HAVE_GNOME?=
-.if (defined(WANT_GNOME) && !defined(WITHOUT_GNOME)) || \
-  (defined(WITHOUT_GNOME) && ${WITHOUT_GNOME}!="yes" && \
-  ${WITHOUT_GNOME}!="1")
+.if (defined(WANT_GNOME) && !defined(WITHOUT_GNOME))
 . for component in ${_USE_GNOME_ALL}
-.  if !defined(WITHOUT_GNOME) || (defined(WITHOUT_GNOME) && \
-     ${WITHOUT_GNOME:M${component}}=="")
-.    if exists(${${component}_DETECT}) || (defined(WITH_GNOME) && \
-       (${WITH_GNOME}=="yes" || ${WITH_GNOME:M${component}}!="" || \
-       ${WITH_GNOME}=="1"))
+.    if exists(${${component}_DETECT})
 HAVE_GNOME+=	${component}
+.    elif defined(WITH_GNOME)
+.      if ${WITH_GNOME}=="yes" || ${WITH_GNOME:M${component}}!="" || \
+         ${WITH_GNOME}=="1"
+HAVE_GNOME+=	${component}
+.      endif
 .    endif
-.  endif
 . endfor
+.elif defined(WITHOUT_GNOME)
+.  if ${WITHOUT_GNOME}!="yes" && ${WITHOUT_GNOME}!="1"
+.    for component in ${_USE_GNOME_ALL}
+.      if ${WITHOUT_GNOME:M${component}}==""
+.        if exists(${${component}_DETECT})
+HAVE_GNOME+=	${component}
+.        endif
+.      endif
+.    endfor
+.  endif
 .endif
 
 .endif
