@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis-tools/Makefile,v 1.1 2000/11/02 21:17:27 trevor Exp $
+# $FreeBSD: ports/audio/vorbis-tools/Makefile,v 1.2 2000/11/13 19:14:04 roger Exp $
 #
 
 PORTNAME=	vorbis-tools
@@ -20,6 +20,7 @@ LIB_DEPENDS=	ao.0:${PORTSDIR}/audio/libao \
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_AUTOMAKE=	yes
 WRKSRC=		${WRKDIR}/vorbis-tools
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
 AUTOHEADER?=	${LOCALBASE}/bin/autoheader
