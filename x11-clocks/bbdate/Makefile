@@ -2,17 +2,17 @@
 # Date created:		May 3 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/bbdate/Makefile,v 1.9 2000/04/10 00:32:30 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/bbdate/Makefile,v 1.10 2000/06/18 01:42:13 cpiazza Exp $
 #
 
 PORTNAME=	bbdate
 PORTVERSION= 	0.2.1
 CATEGORIES=	x11-clocks
-MASTER_SITES=	http://bbtools.windsofstorm.net/sources/
+MASTER_SITES=	http://bbtools.thelinuxcommunity.org/sources/
 
 MAINTAINER=	patseal@hyperhost.net
 
+USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-USE_XLIB=	yes
 
 .include <bsd.port.mk>
