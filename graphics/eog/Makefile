@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.7 2000/04/21 16:08:21 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.8 2000/06/01 16:25:15 ade Exp $
 #
 
 PORTNAME=	eog
@@ -20,7 +20,8 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
+		--datadir=${PREFIX}/share/gnome \
+		--without-bonobo
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
