@@ -2,12 +2,11 @@
 # Date created:		2 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/graphics/xpaint/Makefile,v 1.44 2001/08/31 02:58:00 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpaint
-PORTVERSION=	2.6.1
-PORTREVISION=	2
+PORTVERSION=	2.6.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://home.worldonline.dk/~torsten/xpaint/ \
 		ftp://ftp.win.ne.jp/pub/graphics/
