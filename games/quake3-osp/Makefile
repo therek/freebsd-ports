@@ -2,11 +2,11 @@
 # Date created:				Mon Jun  4 16:20:32 EDT 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/q3server-osp/Makefile,v 1.2 2001/08/06 19:58:39 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	osp
-PORTVERSION=	0.99v3
+PORTVERSION=	0.99w
 MASTER_SITES=	http://www.orangesmoothie.org/downloads/beta/
 DISTNAME=	${PORTNAME}-quake3-${PORTVERSION}
 
