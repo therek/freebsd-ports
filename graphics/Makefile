@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.151 1999/10/14 05:05:08 nakai Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.152 1999/10/14 05:07:36 nakai Exp $
 #
 
     SUBDIR += 4va
@@ -103,6 +103,7 @@
     SUBDIR += ppm2fli
     SUBDIR += pstoedit
     SUBDIR += py-imaging
+    SUBDIR += py-imaging-handbook
     SUBDIR += qcread
     SUBDIR += qiv
     SUBDIR += qvplay
