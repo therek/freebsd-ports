@@ -2,7 +2,7 @@
 # Date created:        13 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/wapsh/Makefile,v 1.1 2001/03/10 20:05:08 will Exp $
+# $FreeBSD: ports/shells/wapsh/Makefile,v 1.2 2001/03/29 22:48:09 mharo Exp $
 #
 
 PORTNAME=       	wapsh
@@ -11,7 +11,7 @@ CATEGORIES=     	shells
 MASTER_SITES=   	http://www.exolution.de/wapsh/
 DISTNAME=		${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=		greid@FreeBSD.org
 
 #RUN_DEPENDS=		${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13 \
 #			${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3
