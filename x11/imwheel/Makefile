@@ -2,7 +2,7 @@
 # Date created:		18 Feb 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/imwheel/Makefile,v 1.1.1.1 2000/02/23 23:30:21 jhb Exp $
+# $FreeBSD: ports/x11/imwheel/Makefile,v 1.2 2000/04/13 19:09:34 cpiazza Exp $
 #
 
 PORTNAME=	imwheel
@@ -20,7 +20,7 @@ WRKSRC=	${WRKDIR}/imwheel
 MAN1=		imwheel.1
 
 .if defined(NOPORTDOCS)
-PLIST=		${PKGDIR}/PLIST.nodocs
+PLIST=		${PKGDIR}/pkg-plist.nodocs
 .endif
 
 post-patch:
