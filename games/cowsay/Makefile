@@ -2,11 +2,12 @@
 # Date created:		01 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/games/cowsay/Makefile,v 1.1 2000/09/02 10:04:58 kris Exp $
+# $FreeBSD: ports/games/cowsay/Makefile,v 1.2 2000/09/04 00:48:51 billf Exp $
 #
 
 PORTNAME=	cowsay
 PORTVERSION=	3.03
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.nog.net/pub/tony/cowsay/
 
@@ -20,6 +21,7 @@ MAN1=		cowsay.1
 
 do-install:
 	cd ${WRKSRC}; ${SH} install.sh ${PREFIX}
+	@${INSTALL_DATA} ${FILESDIR}/jkh.cow ${PREFIX}/share/cows
 	@${INSTALL_DATA} ${FILESDIR}/tux-stab.cow ${PREFIX}/share/cows
 
 .include <bsd.port.mk>
