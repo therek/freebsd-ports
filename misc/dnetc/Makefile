@@ -3,21 +3,23 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.10 2000/02/17 23:03:13 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.11 2000/03/22 06:48:19 obrien Exp $
 #
+.include <bsd.port.pre.mk>
 
 DISTNAME=       dnetc
 PKGNAME=	dnetc-2.8007.458b
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8007/ \
 		http://http.distributed.net/pub/dcti/v2.8007/
-
-.include <bsd.port.pre.mk>
-
 .if ${ARCH} == "i386"
 DISTFILES=	dnetc458b-freebsd-x86-elf.tar.gz
 .elif ${ARCH} == "alpha"
 DISTFILES=	dnetc458-digital_unix-alpha.tar.gz
+.endif
+
+.if ${ARCH} == "alpha"
+RUN_DEPENDS=	/compat/osf1/usr/shlib/libc.so:${PORTSDIR}/emulators/osf1_base
 .endif
 
 ONLY_FOR_ARCHS=	i386 alpha
