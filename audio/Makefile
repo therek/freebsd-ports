@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.244 2001/07/20 11:21:14 knu Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.245 2001/07/29 15:56:31 knu Exp $
 #
 
     SUBDIR += Maaate
@@ -108,6 +108,7 @@
     SUBDIR += lopster
     SUBDIR += mad
     SUBDIR += maplay
+    SUBDIR += midimountain
     SUBDIR += mikmod
     SUBDIR += mixer.app
     SUBDIR += mp3_check
