@@ -3,11 +3,11 @@
 # Date created:			  Fri May 23, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/textproc/agrep/Makefile,v 1.5 2000/03/22 00:26:31 obrien Exp $
+# $FreeBSD: ports/textproc/agrep/Makefile,v 1.6 2000/04/09 21:52:07 cpiazza Exp $
 #
 
 PORTNAME=	agrep
-PORTVERSION= 	2.0.4
+PORTVERSION= 	2.04
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.arizona.edu/agrep/
 EXTRACT_SUFX=	.tar.Z
