@@ -1,5 +1,6 @@
-# $FreeBSD: ports/math/Makefile,v 1.130 2001/06/11 03:01:31 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.131 2001/06/13 21:45:07 ijliao Exp $
 #
+    SUBDIR += yacas
 
     SUBDIR += GiNaC
     SUBDIR += PDL
