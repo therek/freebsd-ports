@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.201 2001/05/15 04:09:02 ijliao Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.202 2001/05/18 22:20:06 nik Exp $
 #
 
     SUBDIR += agrep
@@ -150,6 +150,7 @@
     SUBDIR += rxp
     SUBDIR += sablotron
     SUBDIR += sarep
+    SUBDIR += scr2txt
     SUBDIR += scrollkeeper
     SUBDIR += sdf
     SUBDIR += sdocbook-xml
