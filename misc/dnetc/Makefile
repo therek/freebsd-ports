@@ -2,7 +2,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.21 2001/01/22 17:28:18 ijliao Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.22 2001/01/22 18:05:59 kris Exp $
 #
 
 PORTNAME=	dnetc
@@ -41,7 +41,7 @@ LIBDIR=		${PREFIX}/etc/rc.d
 CLIENTUID=	nobody
 CLIENTGID=	daemon
 
-SBINMODE=	7700
+SBINMODE=	700
 BINMODE=	700
 
 MAN1=		dnetc.1
