@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.381 2001/06/10 02:41:42 lioux Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 0verkill
@@ -194,6 +194,7 @@
     SUBDIR += rt2-demo
     SUBDIR += rtb
     SUBDIR += rubix
+    SUBDIR += sdlroids
     SUBDIR += seabattle
     SUBDIR += seahaven
     SUBDIR += sex
