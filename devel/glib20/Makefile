@@ -2,7 +2,7 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib12/Makefile,v 1.29 2000/04/11 21:28:07 mharo Exp $
+# $FreeBSD: ports/devel/glib12/Makefile,v 1.30 2000/05/25 12:23:46 sobomax Exp $
 #
 
 PORTNAME=	glib
@@ -15,6 +15,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
 MAINTAINER=	vanilla@FreeBSD.org
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-suffix
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/glib12
 

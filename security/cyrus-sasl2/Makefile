@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.7 2000/04/21 08:18:15 mharo Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.8 2000/06/11 08:05:33 knu Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -15,6 +15,8 @@ MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 MAINTAINER=	hetzels@westbend.net
 
 USE_OPENSSL=	RSA
+
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 
@@ -95,7 +97,6 @@ pre-install:
 	@${SH} ${PKGDIR}/INSTALL ${PKGNAME} PRE-INSTALL
 
 post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@${SED}  -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/pwcheck.sh \
 		> ${PREFIX}/etc/rc.d/pwcheck.sh
 	@${CHMOD} 755 ${PREFIX}/etc/rc.d/pwcheck.sh

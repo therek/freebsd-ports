@@ -2,7 +2,7 @@
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.11 2000/06/10 16:12:55 ade Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.12 2000/06/15 22:36:32 ade Exp $
 #
 
 PORTNAME=	gnomepilot
@@ -26,6 +26,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--with-pisock=${LOCALBASE}/pilot

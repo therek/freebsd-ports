@@ -2,7 +2,7 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.23 2000/03/21 18:04:21 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.24 2000/04/10 01:10:32 cpiazza Exp $
 #
 
 PORTNAME=	iv
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	tanimura@FreeBSD.org
 
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 
 DIST_SUBDIR=	iv
 WRKSRC=		${WRKDIR}/iv
@@ -86,6 +87,5 @@ post-install:
 	${LN} -fs libIV.so.${IV_LIB_VER} ${PREFIX}/interviews/lib/FREEBSD/libIV.so
 	${LN} -fs libUnidraw.so.${IV_LIB_VER} ${PREFIX}/interviews/lib/FREEBSD/libUnidraw.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

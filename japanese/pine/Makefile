@@ -2,7 +2,7 @@
 # Date created:		01 May 1996
 # Whom:			masafumi
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/pine/Makefile,v 1.21 2000/04/15 00:13:26 knu Exp $
 #
 
 PORTNAME=	pine
@@ -20,6 +20,8 @@ PATCH_SITES=	${MASTER_SITE_PORTS_JP}
 MAINTAINER=	max@FreeBSD.org
 
 BROKEN_ELF=	yes
+
+INSTALLS_SHLIBS=	yes
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 BUILD_DEPENDS=	${PREFIX}/lib/libcanna.a:${PORTSDIR}/japanese/Canna
@@ -48,6 +50,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/pine/pine.ndx ${PREFIX}/lib/pine
 	${INSTALL_DATA} ${WRKSRC}/pine/pine_ja.hlp ${PREFIX}/lib/pine
 	${INSTALL_DATA} ${WRKSRC}/pine/pine_ja.ndx ${PREFIX}/lib/pine
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

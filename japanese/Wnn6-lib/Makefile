@@ -2,7 +2,7 @@
 # Date created:		11 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.24 2000/03/08 10:56:36 max Exp $
+# $FreeBSD: ports/japanese/Wnn6-lib/Makefile,v 1.25 2000/04/11 14:12:47 knu Exp $
 #
 
 PORTNAME=	Wnn6-lib
@@ -18,6 +18,8 @@ BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 WRKSRC=		${WRKDIR}/src/contrib/im/Xsi
 DOCDIR=		${PREFIX}/share/doc/ja-Wnn6-lib
 
+INSTALLS_SHLIBS=	yes
+
 # Warning: we cannot use USE_IMAKE.
 do-build:
 	( cd $(WRKSRC) ; make World -f Makefile.ini )
@@ -30,7 +32,6 @@ post-install:
 .endif
 	${LN} -sf libwnn6_fromsrc.a ${PREFIX}/lib/libwnn.a
 	${LN} -sf libwnn6_fromsrc.a ${PREFIX}/lib/libwnn6.a
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@${MKDIR} ${PREFIX}/include/wnn
 	@${INSTALL_DATA} ${WRKSRC}/Wnn/include/*.h ${PREFIX}/include/wnn
 	@${MKDIR} ${DOCDIR}

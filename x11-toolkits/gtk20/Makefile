@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.61 2000/05/25 12:45:48 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.62 2000/06/05 13:31:57 sobomax Exp $
 #
 
 PORTNAME=	gtk
@@ -23,6 +23,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-suffix
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/gtk12
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

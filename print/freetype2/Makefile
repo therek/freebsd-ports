@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.16 2000/06/04 06:00:35 vanilla Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.17 2000/06/14 13:21:32 sobomax Exp $
 #
 
 PORTNAME=	freetype
@@ -21,9 +21,10 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jseger@FreeBSD.org
 
-USE_XLIB=	YES
-USE_GMAKE=	YES
-GNU_CONFIGURE=	YES
+USE_XLIB=	yes
+USE_GMAKE=	yes
+INSTALLS_SHLIBS=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-nls --enable-static --enable-shared
 
 # Older versions of freetype installed include files in ${PREFIX}/include

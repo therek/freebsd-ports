@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/eispack/Makefile,v 1.24 2000/03/23 20:45:51 mharo Exp $
+# $FreeBSD: ports/math/eispack/Makefile,v 1.25 2000/04/14 07:19:56 asami Exp $
 #
 
 PORTNAME=	eispack
@@ -18,6 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	blas.1:${PORTSDIR}/math/blas
 
 DIST_SUBDIR=	${PORTNAME}
+INSTALLS_SHLIBS=	yes
 NO_WRKSUBDIR=	yes
 
 SRCS =	csroot.f epslon.f pythag.f bakvec.f balanc.f balbak.f bandr.f \
@@ -39,8 +40,5 @@ do-extract:
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				6/11/1998
 # Whom:					n@nectar.com
 #
-# $FreeBSD: ports/net/hesiod/Makefile,v 1.8 1999/10/04 17:34:06 nectar Exp $
+# $FreeBSD: ports/net/hesiod/Makefile,v 1.9 2000/04/09 18:11:37 cpiazza Exp $
 #
 
 PORTNAME=		hesiod
@@ -22,7 +22,8 @@ MAN3=			hesiod.3 hesiod_end.3 hesiod_free_list.3 	\
 			hesiod_resolve.3 hesiod_to_bind.3
 MAN5=			hesiod.conf.5
 
-GNU_CONFIGURE=		YES
+GNU_CONFIGURE=		yes
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 
@@ -34,8 +35,5 @@ VERSION=3.0
 .endif
 
 MAKE_ENV+=		VERSION="${VERSION}" SONAME="${SONAME}"
-
-post-install:
-	${SETENV} OBJFORMAT="${PORTOBJFORMAT}" ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.19 2000/04/22 10:12:20 mharo Exp $
+# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.20 2000/06/01 16:10:02 ade Exp $
 #
 
 PORTNAME=	gnomecontrolcenter
@@ -21,6 +21,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--with-gnome=${PREFIX}

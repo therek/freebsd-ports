@@ -2,7 +2,7 @@
 # Date created:		08 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/dcdflib/Makefile,v 1.2 1999/08/25 07:07:45 obrien Exp $
+# $FreeBSD: ports/math/dcdflib/Makefile,v 1.3 2000/04/14 07:19:55 asami Exp $
 #
 
 PORTNAME=	dcdflib.c
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://odin.mda.uth.tmc.edu/pub/source/
 MAINTAINER=	tobez@plab.ku.dk
 
 WRKSRC=		${WRKDIR}/dcdflib.c/src
+
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 
@@ -29,6 +31,5 @@ post-install:
 .if ${PORTOBJFORMAT} == "aout"
 	@${LN} -sf libdcdflib.so.1.1 ${PREFIX}/lib/libdcdflib.so
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

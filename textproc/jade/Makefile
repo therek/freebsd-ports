@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.22 2000/02/17 13:08:47 kuriyama Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.23 2000/04/09 21:52:46 cpiazza Exp $
 #
 
 PORTNAME=	jade
@@ -20,8 +20,9 @@ MAINTAINER=	jfieber@FreeBSD.org
 BROKEN=		nsgmls coredumps in static constructors
 .endif
 
-USE_GMAKE=	YES
-USE_LIBTOOL=	YES
+USE_GMAKE=	yes
+USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog
@@ -42,7 +43,6 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/*.htm ${PREFIX}/share/doc/jade
 	${MKDIR} ${PREFIX}/share/sgml/jade
 	${INSTALL_DATA} ${WRKSRC}/dsssl/* ${PREFIX}/share/sgml/jade
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m $(PREFIX)/lib
 	@if [ ! -f ${PREFIX}/share/sgml/catalog ]; then \
 		${ECHO} "CATALOG \"${PREFIX}/share/sgml/jade/catalog\"" > ${PREFIX}/share/sgml/catalog; \
 	else \

@@ -3,7 +3,7 @@
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/japanese/Canna/Makefile,v 1.30 2000/04/11 14:12:43 knu Exp $
+# $FreeBSD: ports/japanese/Canna/Makefile,v 1.31 2000/04/30 23:24:26 asami Exp $
 #
 
 PORTNAME=	Canna
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//:S/./p/}
 MAINTAINER=	max@FreeBSD.org
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
+
+INSTALLS_SHLIBS=	yes
 
 ALL_TARGET=	canna
 INSTALL_TARGET=	install install.man
@@ -54,7 +56,6 @@ post-install:
 	${LN} -sf libcanna.so.1.0 ${PREFIX}/lib/libcanna.so
 	${LN} -sf libcanna16.so.1.0 ${PREFIX}/lib/libcanna16.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	if [ ! -f ${STARTUP_SCRIPT} ]; then 				\
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; 	\
 		${INSTALL_SCRIPT} ${WRKDIR}/canna.sh ${STARTUP_SCRIPT};	\

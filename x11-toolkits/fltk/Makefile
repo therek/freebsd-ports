@@ -2,7 +2,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.12 2000/03/20 23:25:17 jseger Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.13 2000/04/10 01:10:14 cpiazza Exp $
 #
 
 PORTNAME=	fltk
@@ -22,6 +22,7 @@ LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 VERSION=	1.0.7
 USE_BZIP2=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-shared
 WRKSRC=		${WRKDIR}/${PKGNAME}
@@ -34,7 +35,6 @@ BROKEN=	requires ELF library format
 .endif
 
 post-install:
-	@ ${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@ ${INSTALL_MAN} ${WRKSRC}/documentation/fluid.1 \
 		${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)

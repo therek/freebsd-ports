@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.38 2000/04/28 11:14:22 knu Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.39 2000/05/06 23:25:49 kris Exp $
 #
 
 PORTNAME=	imap-uw
@@ -22,6 +22,7 @@ MAINTAINER=	imap-uw@freebsd.ady.ro
 
 Y2K=		http://www.washington.edu/imap/IMAP-FAQs/FAQ-00002.html
 
+INSTALLS_SHLIBS=	yes
 PAMAUTH?=	yes
 .if ${PAMAUTH} != "no"
 ALL_TARGET=	bfp
@@ -78,7 +79,6 @@ do-install:
 		${WRKSRC}/src/ipopd/ipopd.8c ${PREFIX}/man/man8/ipopd.8
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if ${PAMAUTH} != "no"
 	@${CAT} ${PKGMESSAGE}
 .endif

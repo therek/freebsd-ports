@@ -2,7 +2,7 @@
 # Date created:        			9th June 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.1 2000/06/09 20:44:01 ade Exp $
 #
 
 PORTNAME=	guile-gnome
@@ -23,6 +23,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-bonobo --without-gtkhtml --with-libglade
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,7 +2,7 @@
 # Date created:        04 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/diacanvas/Makefile,v 1.2 2000/04/13 06:28:14 obrien Exp $
+# $FreeBSD: ports/graphics/diacanvas/Makefile,v 1.3 2000/06/01 16:25:13 ade Exp $
 #
 
 PORTNAME=	diacanvas
@@ -17,6 +17,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome

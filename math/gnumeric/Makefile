@@ -2,7 +2,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.31 2000/05/22 18:57:36 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.32 2000/06/08 21:47:20 ade Exp $
 #
 
 PORTNAME=	gnumeric
@@ -28,6 +28,7 @@ USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 LIBTOOLFILES=	configure libole2/configure
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \

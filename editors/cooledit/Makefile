@@ -2,7 +2,7 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.22 2000/05/19 13:05:42 sobomax Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.23 2000/05/24 14:00:20 sobomax Exp $
 #
 
 PORTNAME=	cooledit
@@ -18,6 +18,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 USE_XLIB=       yes
 USE_GMAKE=      yes
 

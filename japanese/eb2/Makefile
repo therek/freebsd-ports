@@ -2,7 +2,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.15 2000/04/11 14:13:09 knu Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.16 2000/04/19 03:24:32 knu Exp $
 #
 
 PORTNAME=	eb
@@ -50,6 +50,7 @@ APPENDIXFILES=	appendix/cencro-1.0.tar.gz \
 
 DIST_SUBDIR=	eb
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--with-zlib
 
 APPENDIXDIR=	${PREFIX}/share/eb/appendix

@@ -2,7 +2,7 @@
 # Date created:		8 MAY 1999
 # Whom:			Shuichi Tanaka
 #
-# $FreeBSD: ports/japanese/libjcode/Makefile,v 1.2 1999/08/25 05:25:13 obrien Exp $
+# $FreeBSD: ports/japanese/libjcode/Makefile,v 1.3 2000/04/11 14:14:42 knu Exp $
 #
 
 PORTNAME=	libjcode
@@ -15,11 +15,10 @@ MAINTAINER=	stanaka@bb.mbn.or.jp
 
 WRKSRC=		${WRKDIR}/${DISTNAME}-${PORTVERSION}
 
+INSTALLS_SHLIBS=	yes
+
 do-install:
 	${INSTALL_DATA}	${WRKSRC}/libjcode.a	${PREFIX}/lib/libjcode.a
 	${INSTALL_DATA}	${WRKSRC}/jlib.h	${PREFIX}/include/jlib.h
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

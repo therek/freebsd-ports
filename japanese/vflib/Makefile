@@ -2,7 +2,7 @@
 # Date created:		10 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vflib/Makefile,v 1.24 2000/04/13 08:33:20 knu Exp $
+# $FreeBSD: ports/japanese/vflib/Makefile,v 1.25 2000/05/29 03:21:58 steve Exp $
 #
 
 PORTNAME=	vflib
@@ -22,6 +22,7 @@ PLIST_SUB=	VFLIB_VERSION=${VFLIB_VERSION}
 
 GNU_CONFIGURE=	yes
 USE_AUTOCONF=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--with-freetype \
 		--with-freetype-includedir=${PREFIX}/include \
 		--with-freetype-libdir=${PREFIX}/lib

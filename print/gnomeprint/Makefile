@@ -2,7 +2,7 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.20 2000/05/22 18:56:11 ade Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.21 2000/06/01 16:10:24 ade Exp $
 #
 
 PORTNAME=	gnomeprint
@@ -24,6 +24,7 @@ USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--with-gnome=${PREFIX}

@@ -2,7 +2,7 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.57 2000/05/17 16:27:36 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.58 2000/06/01 16:10:12 ade Exp $
 #
 
 PORTNAME=	gnomelibs
@@ -26,6 +26,7 @@ USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 LIBTOOLFILES=	configure libart_lgpl/configure
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \

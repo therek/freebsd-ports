@@ -2,7 +2,7 @@
 # Date created:		
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk42/Makefile,v 1.11 1999/08/28 02:42:22 mharo Exp $
+# $FreeBSD: ports/japanese/tk42/Makefile,v 1.12 2000/04/12 14:38:06 knu Exp $
 #
 
 PORTNAME=	tk
@@ -21,6 +21,7 @@ LIB_DEPENDS=	tcl76jp.1:${PORTSDIR}/japanese/tcl76
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 USE_AUTOCONF=	yes
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
 
@@ -51,7 +52,6 @@ pre-install:
 
 post-install:
 	cd ${WRKSRC} && ${MAKE} -f Makefile.lib PREFIX=${PREFIX} VERSION=${VERSION} install
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libtk42jp.so.1.0 ${PREFIX}/lib/libtk42jp.so
 .endif

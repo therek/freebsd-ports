@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.39 2000/06/02 14:43:08 sobomax Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.40 2000/06/05 19:44:22 ade Exp $
 #
 
 PORTNAME=	gnomecore
@@ -23,6 +23,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--with-kde-datadir=${LOCALBASE}/share

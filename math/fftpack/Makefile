@@ -2,7 +2,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.12 1999/09/09 11:00:01 asami Exp $
+# $FreeBSD: ports/math/fftpack/Makefile,v 1.13 2000/04/14 07:19:59 asami Exp $
 #
 
 PORTNAME=	fftpack
@@ -19,6 +19,8 @@ IGNOREFILES=	${DISTFILES}
 EXTRACT_CMD=		${TAR}
 EXTRACT_BEFORE_ARGS=	-xf
 EXTRACT_AFTER_ARGS=	# empty
+
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 
@@ -38,6 +40,5 @@ post-install:
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libbihar.so.1 ${PREFIX}/lib/libbihar.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/db/Makefile,v 1.18 1999/11/23 02:43:47 billf Exp $
+# $FreeBSD: ports/databases/db/Makefile,v 1.19 2000/04/08 22:48:20 mharo Exp $
 #
 
 PORTNAME=	db
@@ -17,7 +17,8 @@ Y2K=		http://www.sleepycat.com/faq.html#A8
 MANUAL_PACKAGE_BUILD=	incompatible with libc internal db calls
 WRKSRC=		${WRKDIR}/${DISTNAME}/build_unix
 
-GNU_CONFIGURE=	YES
+INSTALLS_SHLIBS=	yes
+GNU_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	../dist/configure
 CONFIGURE_ARGS=		--enable-compat185 \
 			--enable-dump185 --enable-cxx

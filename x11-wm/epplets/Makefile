@@ -2,7 +2,7 @@
 # Date created:        18 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.3 2000/01/13 09:53:36 nakai Exp $
+# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.4 2000/04/10 19:49:43 cpiazza Exp $
 #
 
 PORTNAME=	epplets
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	enlightenment:${PORTSDIR}/x11-wm/enlightenment
 WRKSRC=		${WRKDIR}/Epplets-0.5
 
 USE_X_PREFIX=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-fsstd
 CONFIGURE_ENV=	EROOT=${X11BASE}/share/enlightenment \

@@ -3,7 +3,7 @@
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/faces/Makefile,v 1.11 1999/08/31 06:47:21 mharo Exp $
+# $FreeBSD: ports/mail/faces/Makefile,v 1.12 2000/04/13 19:59:39 cpiazza Exp $
 #
 
 PORTNAME=	faces
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 USE_XLIB=	yes
+INSTALLS_SHLIBS=	yes
 WRKSRC=		$(WRKDIR)/faces
 MAN1=		compface.1 faces.1 face_update.1
 MAN3=		compface.3
@@ -23,8 +24,5 @@ MLINKS=		compface.1 uncompface.1 \
 
 pre-patch:
 	@${CP} ${WRKSRC}/Makefile.dist ${WRKSRC}/Makefile
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

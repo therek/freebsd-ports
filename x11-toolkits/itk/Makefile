@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.3 1999/11/28 18:31:16 steve Exp $
+# $FreeBSD: ports/x11-toolkits/itk/Makefile,v 1.4 2000/04/10 01:10:31 cpiazza Exp $
 #
 
 PORTNAME=	itk
@@ -17,6 +17,7 @@ LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 		itcl30.1:${PORTSDIR}/lang/itcl
 
 WRKSRC=		${WRKDIR}/itcl3.0.1/itk/unix
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2 --with-itcl=${PREFIX}/lib/itcl3.0 --with-tk=${PREFIX}/lib/tk8.2
 CONFIGURE_ENV=	PORTSDIR=${PORTSDIR} ITK_LIB_FILE=${ITK_LIB_FILE}
@@ -46,6 +47,5 @@ pre-build:
 post-install:
 	${LN} -sf itkwish3.0 ${PREFIX}/bin/itkwish
 	${LN} -sf ${ITK_LIB_FILE} ${PREFIX}/lib/${ITK_LIB}
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>
