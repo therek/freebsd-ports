@@ -2,7 +2,7 @@
 # Date created:		21 Apr 2001
 # Whom:			luigi@FreeBSD.org
 #
-# $FreeBSD: ports/picobsd/ssh-picobsd/Makefile,v 1.1 2001/04/22 14:03:02 luigi Exp $
+# $FreeBSD: ports/picobsd/ssh-picobsd/Makefile,v 1.2 2001/05/22 18:19:43 sobomax Exp $
 #
 # A small version of ssh for picobsd. A single binary does ssh,sshd and scp
 #
@@ -11,14 +11,11 @@ PORTNAME=	ssh
 PORTVERSION=	1.2.27 # Note, 1.2.30 is under a more restrictive license
 PORTREVISION=	1
 CATEGORIES=	picobsd security
-MASTER_SITES=	ftp://ftp.cs.engr.uky.edu/cs/software/ \
-		ftp://ftp.cs.umn.edu/dept/users/rybski/ \
-		ftp://ftp.net.ohio-state.edu/disk/d/security/ssh/ \
-		ftp://ftp.cronyx.ru/.w2/mirror/ssh/old/ \
-		ftp://ftp.nsysu.edu.tw/Unix/Security/ssh/old/ \
-		ftp://ftp.tokyonet.ad.jp/.da0/security/ssh/old/ \
-		ftp://ftp.comp.hkbu.edu.hk/.6/unix/ \
-		ftp://ftp.dei.uc.pt/.disk2/Crypto/SSH/old/
+MASTER_SITES=	\
+		ftp://ftp.ssh.com/pub/ssh/old/ \
+		ftp://ftp.cronyx.ru/mirror/ssh/old/ \
+		ftp://ftp.dei.uc.pt/pub/Crypto/SSH/old/ \
+		ftp://ftp.nsysu.edu.tw/Unix/Security/ssh/old/
 
 MAINTAINER=	luigi@FreeBSD.org
 
