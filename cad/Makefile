@@ -1,4 +1,4 @@
-# $FreeBSD: ports/cad/Makefile,v 1.17 2000/05/03 14:59:41 ade Exp $
+# $FreeBSD: ports/cad/Makefile,v 1.18 2000/07/30 07:14:47 sada Exp $
 #
 
     SUBDIR += acs
@@ -14,6 +14,7 @@
     SUBDIR += pcb
     SUBDIR += pisces
     SUBDIR += qcad
+    SUBDIR += sceptre
     SUBDIR += sis
     SUBDIR += spice
     SUBDIR += tkgate
