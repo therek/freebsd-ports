@@ -2,11 +2,12 @@
 # Date created:		24 December 1997
 # Whom:			Tatsumi Hosokawa
 #
-# $FreeBSD: ports/x11/kb2mb2/Makefile,v 1.6 2000/12/02 19:38:20 sada Exp $
+# $FreeBSD: ports/x11/kb2mb2/Makefile,v 1.7 2001/02/05 16:18:04 olgeni Exp $
 #
 
 PORTNAME=	kb2mb2
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 
