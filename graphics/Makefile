@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.192 2000/04/14 20:30:29 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.193 2000/04/15 17:26:59 sada Exp $
 #
 
     SUBDIR += 4va
@@ -152,6 +152,7 @@
     SUBDIR += tifmerge
     SUBDIR += tkxanim
     SUBDIR += togl
+    SUBDIR += twinlib
     SUBDIR += txtmerge
     SUBDIR += urt
     SUBDIR += vcdgear
