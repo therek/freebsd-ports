@@ -2,7 +2,7 @@
 # Date created:		12 September 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/news/newsfetch/Makefile,v 1.9 2001/01/09 05:57:08 itojun Exp $
+# $FreeBSD: ports/news/newsfetch/Makefile,v 1.10 2001/01/28 00:24:38 clive Exp $
 #
 
 PORTNAME=	newsfetch
@@ -11,8 +11,18 @@ CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/news/readers
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	knu@FreeBSD.org
+
+MAKE_ENV=	BINDIR="${PREFIX}/bin" MANDIR="${PREFIX}/man/man"
 
 MAN1=		newsfetch.1
+MANCOMPRESSED=	maybe
+
+do-configure:
+	cd ${WRKSRC} && ( \
+	${ECHO} "PROG= newsfetch"; \
+	${ECHO} "SRCS=" *.c; \
+	${ECHO} ".include <bsd.prog.mk>"; \
+	) > Makefile
 
 .include <bsd.port.mk>
