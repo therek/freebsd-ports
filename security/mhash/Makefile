@@ -2,11 +2,11 @@
 # Date created:		Mon Jun 28 17:59:13 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/mhash/Makefile,v 1.14 2001/02/23 16:07:16 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mhash
-PORTVERSION=	0.8.9
+PORTVERSION=	0.8.13
 CATEGORIES=	security
 MASTER_SITES=	http://mhash.sourceforge.net/dl/
 
@@ -17,5 +17,8 @@ USE_LIBTOOL=	yes
 CONFIGURE_ARGS+=	--with-LDFLAGS="${PTHREAD_LIBS}"
 
 MAN3=		mhash.3
+
+post-extract:
+	${CP} ${LOCALBASE}/bin/libtool ${WRKSRC}
 
 .include <bsd.port.mk>
