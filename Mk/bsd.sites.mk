@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.284 2005/03/09 09:01:50 flz Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.285 2005/03/09 21:10:32 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -981,7 +981,7 @@ MASTER_SITE_SAVANNAH+= \
 	http://savannah.nongnu.org/download/%SUBDIR%/ \
 	ftp://ftp.gnu.org/pub/savannah/files/%SUBDIR%/
 
-.for mirror in heanet aleron umn belnet voxel optusnet kent # unc is slow
+.for mirror in heanet aleron umn belnet voxel optusnet kent unc
 MASTER_SITE_SOURCEFORGE+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
