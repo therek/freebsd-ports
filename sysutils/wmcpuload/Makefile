@@ -2,13 +2,15 @@
 # Date created:				18 Apr 2001
 # Whom:					Soeren Boll Overgaard <boll@tolkien.dk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.1 2001/04/19 08:40:47 sobomax Exp $
 #
 
 PORTNAME=	wmcpuload
-PORTVERSION=	0.0.3a
+PORTVERSION=	0.1.1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://ports.tolkien.dk/
+MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/ \
+		http://ports.tolkien.dk/
+DISTNAME=	WMCPULoad-${PORTVERSION}
 
 MAINTAINER=	boll@tolkien.dk
 
@@ -18,7 +20,6 @@ WRKSRC=		${WRKDIR}/${DISTNAME}
 
 ONLY_FOR_ARCHS=	i386
 
-#USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
