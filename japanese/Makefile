@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.374 2001/08/08 17:35:03 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.375 2001/08/23 05:29:54 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -44,6 +44,7 @@
     SUBDIR += e2ps
     SUBDIR += easypr
     SUBDIR += eb
+    SUBDIR += ebd-fpw
     SUBDIR += eblook
     SUBDIR += ebw3
     SUBDIR += edict
