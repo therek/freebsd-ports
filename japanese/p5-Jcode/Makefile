@@ -2,7 +2,7 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.3 2000/04/12 14:36:32 knu Exp $
+# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.4 2000/06/13 02:07:43 kuriyama Exp $
 #
 
 PORTNAME=	Jcode
@@ -18,7 +18,6 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base
 
 USE_PERL5=	YES
 USE_ZIP=	YES
-MAKE_ENV=	CC="${CC}" CCFLAGS="${CFLAGS}"
 
 MAN3=		Jcode.3 Jcode::Unicode.3 Jcode::Unicode::Constants.3 \
 		Jcode::Unicode::NoXS.3
