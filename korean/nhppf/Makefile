@@ -2,7 +2,7 @@
 # Date created:         19 Apr 1997
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/nhppf/Makefile,v 1.8 2000/04/13 09:17:15 asami Exp $
+# $FreeBSD: ports/korean/nhppf/Makefile,v 1.9 2000/06/30 13:22:18 cjh Exp $
 #
 
 PORTNAME=	nhppf
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/nhppf/
 
 MAINTAINER=	cjh@FreeBSD.org
 
-RUN_DEPENDS=    ${PREFIX}/share/texmf/fonts/type1/korean/pkmj/pkmjm0.pfb:$(PORTSDIR)/korean/hlatexpsfonts-wansungstd
+RUN_DEPENDS=    ${PREFIX}/share/texmf/fonts/type1/korean/pkmj/pkmjm0.pfb:$(PORTSDIR)/korean/hlatex-psfonts-wansung
 
 NO_BUILD=	yes
 
