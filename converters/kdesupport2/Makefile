@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.24 1999/08/25 05:16:21 obrien Exp $
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.25 1999/09/20 13:32:25 se Exp $
 #
 
 DISTNAME=	kdesupport-1.1.2
@@ -25,13 +25,7 @@ CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
 		INSTALL_SCRIPT="install -c -m 555"
 
-.include <bsd.port.mk>
-
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
-.if ${PORTOBJFORMAT} == "aout"
-	${LN} -sf libQwSpriteField.so.6.0  ${PREFIX}/lib/libQwSpriteField.so
-	${LN} -sf lib/libjs.so.2.0         ${PREFIX}/lib/libjs.so
-	${LN} -sf lib/libmimelib.so.1.0    ${PREFIX}/lib/libmimelib.so
-	${LN} -sf librdb.so.55.0           ${PREFIX}/lib/librdb.so
-.endif
+
+.include <bsd.port.mk>
