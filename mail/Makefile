@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.234 2001/06/27 02:56:30 dwcjr Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.235 2001/06/28 13:04:13 tg Exp $
 #
 
     SUBDIR += abook
@@ -123,6 +123,7 @@
     SUBDIR += pathalias
     SUBDIR += perdition
     SUBDIR += pflogsumm
+    SUBDIR += pgen
     SUBDIR += pgp4pine
     SUBDIR += pgpsendmail
     SUBDIR += pine4
