@@ -2,7 +2,7 @@
 # Date created:		9 December 1999
 # Whom:			Dan Langille <dan@freebsddiary.org>
 #
-# $FreeBSD: ports/security/logcheck/Makefile,v 1.3 2000/10/08 10:22:51 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	logcheck
@@ -10,7 +10,7 @@ PORTVERSION=	1.1.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.psionic.com/tools/
 
-MAINTAINER=	ports@freebsddiary.org
+MAINTAINER=	ports@FreeBSD.org
 
 PKGMESSAGE=	${WRKDIR}/MESSAGE
 
