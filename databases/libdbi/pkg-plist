@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.2 2002/10/14 16:22:53 naddy Exp $
+@comment $FreeBSD: ports/databases/libdbi/pkg-plist,v 1.3 2002/10/28 02:48:42 kris Exp $
 include/dbi/dbd.h
 include/dbi/dbi-dev.h
 include/dbi/dbi.h
@@ -40,4 +40,4 @@ lib/libdbi.so.0
 %%PORTDOCS%%@dirrm share/doc/libdbi/driver-guide
 %%PORTDOCS%%@dirrm share/doc/libdbi
 @dirrm include/dbi
-@dirrm lib/dbd
+@unexec rmdir %D/lib/dbd 2>/dev/null || true
