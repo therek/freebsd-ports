@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.88 2000/11/23 14:13:38 knu Exp $
+# $FreeBSD: ports/math/Makefile,v 1.89 2000/12/18 10:17:22 demon Exp $
 #
 
     SUBDIR += PDL
@@ -43,6 +43,7 @@
     SUBDIR += numpy
     SUBDIR += octave
     SUBDIR += oleo
+    SUBDIR += p5-AI-NeuralNet-BackProp
     SUBDIR += p5-Math-Expr
     SUBDIR += p5-Math-Logic
     SUBDIR += p5-MatrixReal
