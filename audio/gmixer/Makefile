@@ -2,7 +2,7 @@
 # Date created:        25 February 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gmixer/Makefile,v 1.12 2000/07/07 19:58:59 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmixer
@@ -15,7 +15,8 @@ MAINTAINER=	cpiazza@FreeBSD.org
 
 ALL_TARGET=	gmixer
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gmixer ${PREFIX}/bin

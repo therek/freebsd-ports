@@ -2,7 +2,7 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.5 2001/01/14 15:15:04 ume Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gkrellmvolume
@@ -19,6 +19,7 @@ RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 WRKSRC=		${WRKDIR}/volume
 
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			Oct 27 1998
 # Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/replay/Makefile,v 1.20 2001/01/16 17:30:06 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	replay
@@ -15,8 +15,8 @@ DISTNAME=	${PORTNAME}-source-dgtk_${PORTVERSION}
 MAINTAINER=	nakai@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
-USE_ESOUND=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12 esound
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
