@@ -2,15 +2,13 @@
 # Date created:		5 February 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.11 2001/01/06 17:25:48 demon Exp $
+# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.12 2001/02/05 21:00:55 olgeni Exp $
 #
 
 PORTNAME=	xnc
 PORTVERSION=	4.4.0
 CATEGORIES=	x11-fm
-MASTER_SITES=	http://www.xnc.dubna.su/src/ \
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	X11/desktop
+MASTER_SITES=	http://www.xnc.dubna.su/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	demon@FreeBSD.org
