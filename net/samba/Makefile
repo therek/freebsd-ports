@@ -2,11 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/samba/Makefile,v 1.55 2001/04/18 10:29:57 sobomax Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.0.8
+PORTVERSION=	2.0.9
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://ring.asahi-net.or.jp/pub/net/samba/%SUBDIR%/ \
