@@ -2,7 +2,7 @@
 # Date created:         10 October 1997
 # Whom:                 volf@oasis.IAEhv.nl
 #
-# $FreeBSD: ports/cad/sis/Makefile,v 1.8 1999/08/25 04:52:35 obrien Exp $
+# $FreeBSD: ports/cad/sis/Makefile,v 1.9 2000/04/08 23:20:06 mharo Exp $
 #
 
 PORTNAME=		sis
@@ -50,14 +50,13 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/espresso/espresso.5 ${PREFIX}/man/man5
 	${INSTALL_MAN} ${WRKSRC}/espresso/pla.5 ${PREFIX}/man/man5
 	${MKDIR} ${PREFIX}/lib/sis
-	${CP} -R ${WRKSRC}/sis/sis_lib ${PREFIX}/lib/sis
-
+	${TAR} -C ${WRKSRC}/sis/sis_lib -cf - . | \
+		${TAR} -C ${PREFIX}/lib/sis --unlink -xf -
 .if !defined(NOPORTDOCS)
-post-install:
 	${INSTALL_DATA} ${WRKSRC}/SIS_paper.ps ${PREFIX}/lib/sis
 	${INSTALL_DATA} ${WRKSRC}/RELEASE-NOTES-1.2 ${PREFIX}/lib/sis
 	${GZIP_CMD} ${PREFIX}/lib/sis/SIS_paper.ps
-	${CHOWN} -R bin:bin ${PREFIX}/lib/sis
 .endif
+	${CHOWN} -R bin:bin ${PREFIX}/lib/sis
 
 .include <bsd.port.mk>
