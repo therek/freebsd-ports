@@ -2,7 +2,7 @@
 # Date created:				20 April 1998
 # Whom:					rkw
 #
-# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.35 2001/01/07 22:14:02 jmz Exp $
+# $FreeBSD: ports/comms/mgetty+sendfax/Makefile,v 1.36 2001/02/26 00:37:37 jmz Exp $
 #
 
 PORTNAME=	mgetty
@@ -36,8 +36,17 @@ MAN8=		callback.8 \
 pre-install:
 	@(cd ${WRKSRC}/doc; ${MAKE} manpages)
 
-.if !defined(BATCH)
 post-install:
+	@${CP} ${PREFIX}/etc/mgetty+sendfax/dialin.config \
+		${PREFIX}/etc/mgetty+sendfax/dialin.config.dist
+	@${CP} ${PREFIX}/etc/mgetty+sendfax/faxheader \
+		${PREFIX}/etc/mgetty+sendfax/faxheader.dist
+	@${CP} ${PREFIX}/etc/mgetty+sendfax/faxrunq.config \
+		${PREFIX}/etc/mgetty+sendfax/faxrunq.config.dist
+	@${CP} ${PREFIX}/etc/mgetty+sendfax/login.config \
+		${PREFIX}/etc/mgetty+sendfax/login.config.dist
+	@install-info ${PREFIX}/info/mgetty.info ${PREFIX}/info/dir
+.if !defined(BATCH)
 	@(cd ${PKGDIR}; export PKG_PREFIX=${PREFIX}; ${PERL5} ${PKGINSTALL} _ POST-INSTALL)
 .endif
 
