@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.4 2000/10/05 07:17:26 reg Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.5 2000/10/10 17:26:17 ade Exp $
 #
 
 PORTNAME=	nautilus
@@ -20,7 +20,7 @@ LIB_DEPENDS=	medusa.0:${PORTSDIR}/sysutils/medusa \
 		ghttp.1:${PORTSDIR}/www/libghttp \
 		bz2.1:${PORTSDIR}/archivers/bzip2
 
-BROKEN=		Build failures with new bonobo"
+BROKEN=		"Build failures with new bonobo"
 
 .if defined(WITH_MOZILLA)
 MOZILLA=	mozilla-embedded
