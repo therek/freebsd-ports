@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.38 1999/09/03 16:25:02 sada Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.39 1999/09/04 12:03:07 asami Exp $
 #
 
     SUBDIR += Wnn
@@ -6,6 +6,7 @@
     SUBDIR += afterstep
     SUBDIR += ami
     SUBDIR += baekmukfonts-bdf
+    SUBDIR += baekmukfonts-ttf
     SUBDIR += bitchx
     SUBDIR += byeoroo
     SUBDIR += elm
