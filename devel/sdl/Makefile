@@ -2,7 +2,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.9 2000/03/29 19:55:34 kris Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.10 2000/04/14 05:44:25 asami Exp $
 #
 
 PORTNAME=		sdl
@@ -13,9 +13,7 @@ DISTNAME=		SDL-${PORTVERSION}
 
 MAINTAINER=		sobomax@altavista.net
 
-#This port doesn't love FreeBSD pthread :(
-LIB_DEPENDS=		lthread.2:${PORTSDIR}/devel/linuxthreads \
-			esd.2:${PORTSDIR}/audio/esound
+LIB_DEPENDS=		esd.2:${PORTSDIR}/audio/esound
 BUILD_DEPENDS=		nasm:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=		yes
@@ -25,12 +23,11 @@ GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		NASM="${LOCALBASE}/bin/nasm" \
 			LOCALBASE="${LOCALBASE}"
 
-CFLAGS+=		-I${LOCALBASE}/include/pthread/linuxthreads \
-			-D_THREAD_SAFE
+CFLAGS+=		-D_THREAD_SAFE
 
 post-install:
 	@ ${MKDIR} ${PREFIX}/share/examples/SDL
-	@ ${INSTALL_DATA} ${WRKSRC}/test/* ${PREFIX}/share/examples/SDL 
+	@ ${INSTALL_DATA} ${WRKSRC}/test/* ${PREFIX}/share/examples/SDL
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${PREFIX}/share/doc/SDL
 .for file in BUGS COPYING CREDITS README WhatsNew docs.html
