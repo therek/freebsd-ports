@@ -2,11 +2,11 @@
 # Date created:		11 May 2001
 # Whom:			Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/www/zope-zwiki/Makefile,v 1.1 2001/06/18 14:11:33 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zwiki
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.8
 CATEGORIES=	www zope
 MASTER_SITES=	http://www.zope.org/Members/simon/ZWiki/ \
 		http://zwiki.org/zwikidir/releases/
@@ -39,11 +39,9 @@ do-build:
 do-install:
 	@ ${CHMOD} -R og+rX ${WRKSRC}/
 	@ ${MKDIR} ${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
-	@ ${MKDIR} ${ZOPEBASEDIR}/import
 	@ cd ${WRKSRC} && find * \! -name \*.zexp \
 	  | ${CPIO} ${BINOWN}:${BINGRP} \
 	  ${ZOPEBASEDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
-	@ ${INSTALL_DATA} ${WRKSRC}/ZWikiWebs.zexp ${ZOPEBASEDIR}/import
 
 post-install:
 .if !defined(BATCH)
