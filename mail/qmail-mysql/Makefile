@@ -2,11 +2,12 @@
 # Date created:				6 Feb 2001
 # Whom:					Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/qmail-mysql/Makefile,v 1.1 2001/02/12 03:08:53 lioux Exp $
+# $FreeBSD: ports/mail/qmail-mysql/Makefile,v 1.2 2001/02/14 01:26:02 lioux Exp $
 #
 
 PORTNAME=	qmail
 PORTVERSION=	${QMAIL_VERSION}.${MYSQL_PATCH_VERSION}
+PORTREVISION=	1
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-mysql
 
@@ -16,6 +17,9 @@ PATCHFILES+=	qmail-mysql-${MYSQL_PATCH_VERSION}.patch
 MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
+
+# patches from the master port that brake this one are now allowed
+MAIN_QMAIL_PORT_WITH_QMAILQUEUE_PATCH_BARRIER=	yes
 
 MYSQL_PATCH_VERSION=	1.1.1
 
@@ -32,7 +36,7 @@ QMAIL_PORT=	${.CURDIR}/../qmail
 QMAIL_PORT_PREFIX!=	cd ${QMAIL_PORT} && ${MAKE} -V PREFIX
 
 # Yet anther ugly hack (works due to code inside the main qmail port)
-yetanotherone-post-patch: qmail-mysql-post-patch
+slaveport-post-patch: qmail-mysql-post-patch
 
 qmail-mysql-post-patch:
 	@${PERL} -pi -ne \
