@@ -2,7 +2,7 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/perldap/Makefile,v 1.8 2000/10/24 12:36:32 knu Exp $
+# $FreeBSD: ports/net/perldap/Makefile,v 1.9 2001/04/16 22:11:13 paul Exp $
 #
 
 PORTNAME=	perldap
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	paul@FreeBSD.org
 
-LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/ldapsdk
+LIB_DEPENDS=	mozldap.1:${PORTSDIR}/net/ldapsdk
 
 WRKSRC=		${WRKDIR}/$(PORTNAME)-$(PORTVERSION)
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
@@ -24,7 +24,7 @@ MAN3=		Mozilla::LDAP::Conn.3 \
 			Mozilla::LDAP::Entry.3 \
 			Mozilla::LDAP::API.3
 
-MAKE_ENV+= LDAPSDKDIR=${PREFIX}/mozilla/directory LDAPV3ON=yes LDAPSDKSSL=no
+MAKE_ENV+= LDAPSDKDIR=${PREFIX} LDAPV3ON=yes LDAPSDKSSL=no
 
 do-configure:
 	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
