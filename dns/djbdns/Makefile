@@ -2,11 +2,11 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/net/djbdns/Makefile,v 1.3 2000/07/29 16:39:44 nbm Exp $
+# $FreeBSD: ports/net/djbdns/Makefile,v 1.4 2000/09/28 18:18:41 nbm Exp $
 #
 
 PORTNAME=	djbdns
-PORTVERSION=	1.02
+PORTVERSION=	1.03
 CATEGORIES=	net
 MASTER_SITES=	http://cr.yp.to/djbdns/ \
 		ftp://cr.yp.to/djbdns/
