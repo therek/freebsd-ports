@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.31 2001/02/11 17:55:00 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.32 2001/02/16 17:16:49 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -48,6 +48,15 @@ post-patch:
 		-e "s@/usr/sbin/postmap@${LOCALBASE}/sbin/postmap@" \
 		${WRKSRC}/postfix/config.sed > ${WRKSRC}/postfix/config
 	${RM} ${WRKSRC}/postfix/config.sed
+
+	${CP} ${WRKSRC}/postgresql/config ${WRKSRC}/postgresql/config.sed
+	${SED}	-e "s@^hba_conf=.*@hba_conf=${LOCALBASE}/pgsql/data/pg_hba.conf@" \
+		-e "s@^login=.*@login=pgsql@" \
+		-e "s@^pid_file=.*@pid_file=${LOCALBASE}/pgsql/data/postmaster.pid@" \
+		-e "s@^start_cmd=.*@start_cmd=${LOCALBASE}/etc/rc.d/pgsql.sh start@" \
+		-e "s@^stop_cmd=.*@stop_cmd=${LOCALBASE}/etc/rc.d/pgsql.sh stop@" \
+		${WRKSRC}/postgresql/config.sed > ${WRKSRC}/postgresql/config
+	${RM} ${WRKSRC}/postgresql/config.sed
 
 do-install:
 	@${MKDIR} ${PREFIX}/lib/webmin
