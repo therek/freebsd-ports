@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.183 2001/04/07 07:33:45 will Exp $
+# $FreeBSD$
 #
 
     SUBDIR += aafid2
@@ -32,6 +32,7 @@
     SUBDIR += find_ddos
     SUBDIR += firewalk
     SUBDIR += fragrouter
+    SUBDIR += fressh
     SUBDIR += fuzz
     SUBDIR += fwbuilder
     SUBDIR += fwtk
