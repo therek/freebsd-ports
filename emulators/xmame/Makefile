@@ -2,15 +2,14 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.30 2001/05/02 14:17:31 olgeni Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.31 2001/05/14 20:02:09 olgeni Exp $
 #
 
 PORTNAME?=	xmame
-PORTVERSION?=	0.37b14.2
+PORTVERSION?=	0.37b15.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://x.mame.net/download/ \
 		ftp://ftp.kaupp.cx/pub/xmame/ \
-		http://www.ozemail.com.au/~knebauer/xmame/files/ \
 		http://www.mame.net/zips/ \
 		http://cheat.retrogames.com/ \
 		http://www.sys2064.com/files/mame/
@@ -93,7 +92,7 @@ ALLDOCS=	${GENERALDOCS} ${PINMAMEDOCS}
 # CPS-2 patches - this enables extra games in MAME.
 .if ${MAMEMESS} == "mame"
 .if defined(WITH_CPS2) && ${WITH_CPS2} == "yes"
-CPS2VERSION=	20010511
+CPS2VERSION=	20010527
 
 PATCH_SITES+=	http://www.win.tue.nl/~stijn/xmame/
 PATCHFILES+=	${DISTNAME}-cps2-${CPS2VERSION}.patch.gz
