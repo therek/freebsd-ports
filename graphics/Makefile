@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.296 2001/04/07 03:12:07 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.297 2001/04/07 06:08:32 will Exp $
 #
 
     SUBDIR += 4va
@@ -86,6 +86,7 @@
     SUBDIR += hppsmtools
     SUBDIR += hpscan
     SUBDIR += icod
+    SUBDIR += imagesort
     SUBDIR += imanager
     SUBDIR += imlib
     SUBDIR += imlib2
