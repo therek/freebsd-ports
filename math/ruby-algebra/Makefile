@@ -2,11 +2,11 @@
 # Date created:		8 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/math/ruby-algebra/Makefile,v 1.1 2001/05/08 11:13:59 knu Exp $
+# $FreeBSD: ports/math/ruby-algebra/Makefile,v 1.2 2001/07/25 05:28:08 knu Exp $
 #
 
 PORTNAME=	algebra
-PORTVERSION=	0.49
+PORTVERSION=	0.52
 CATEGORIES=	math ruby
 MASTER_SITES=	http://blade.nagaokaut.ac.jp/~sinara/ruby/math/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
