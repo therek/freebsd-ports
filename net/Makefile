@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.519 2001/04/10 19:47:51 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.520 2001/04/10 20:09:49 green Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -94,6 +94,7 @@
     SUBDIR += freeradius-devel
     SUBDIR += freewais-sf
     SUBDIR += fspclient
+    SUBDIR += fspd
     SUBDIR += fugu
     SUBDIR += furi
     SUBDIR += gabber
