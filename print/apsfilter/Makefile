@@ -3,7 +3,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.38 1999/09/25 17:11:21 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.39 1999/11/08 19:35:42 andreas Exp $
 #
 
 DISTNAME=	apsfilter-5.1.3
@@ -53,6 +53,10 @@ clean:
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
+.else
+post-install:
+	@${MKDIR} ${PREFIX}/apsfilter/filter
+	@${TOUCH} ${PREFIX}/apsfilter/filter/.keep_me
 .endif
 
 .include <bsd.port.mk>
