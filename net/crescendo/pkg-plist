@@ -1,3 +1,4 @@
+@comment $FreeBSD: ports/news/fidogate/pkg-plist,v 1.6 2001/03/10 06:20:44 dinoex Exp $
 bin/crescendo
 share/gnome/crescendo/cr-about.jpg
 share/gnome/crescendo/cr-splash1.jpg
