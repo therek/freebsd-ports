@@ -3,7 +3,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.3 1999/08/26 00:55:16 cpiazza Exp $
+# $FreeBSD: ports/editors/fine/Makefile,v 1.4 1999/08/26 00:58:00 cpiazza Exp $
 #
 
 DISTNAME=	fine
@@ -17,6 +17,8 @@ USE_NEWGCC=	yes
 USE_GMAKE=	yes
 USE_QT=		yes
 WRKSRC=		${WRKDIR}/fine
+
+MAKE_ENV=	CXX="${CXX}" CC="${CC}"
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/fine
