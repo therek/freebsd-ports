@@ -1,18 +1,18 @@
 # New ports collection makefile for:	xcircuit
-# Version required:	2.0a10
+# Version required:	2.0a11
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.8 1999/09/25 17:27:21 steve Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.9 1999/10/05 17:10:06 cpiazza Exp $
 #
 
-DISTNAME=	xcircuit-2.0a10
+DISTNAME=	xcircuit-2.0a11
 CATEGORIES=	cad
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://bach.ece.jhu.edu/pub/tim/xcircuit/
 MASTER_SITE_SUBDIR=	apps/circuits
 
-MAINTAINER=     ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
