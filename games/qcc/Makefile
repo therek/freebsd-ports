@@ -2,7 +2,7 @@
 # Date created:					October 25th 1996
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/qcc/Makefile,v 1.6 1999/08/31 06:44:22 mharo Exp $
+# $FreeBSD: ports/games/qcc/Makefile,v 1.7 2000/04/14 12:26:25 asami Exp $
 #
 
 PORTNAME=	qcc
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.idsoftware.com/idstuff/source/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	jfitz@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/send
 MAKEFILE=	makefile

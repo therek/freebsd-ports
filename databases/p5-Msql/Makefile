@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.23 2000/03/21 23:40:31 mharo Exp $
+# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.24 2000/04/08 22:48:43 mharo Exp $
 #
 
 PORTNAME=	p5-Msql-modules
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Msql
 DISTNAME=	Msql-modules-${PORTVERSION}
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmsql.a:${PORTSDIR}/databases/msql \
 		${LOCALBASE}/lib/perl5/site_perl/Data/ShowTable.pm:${PORTSDIR}/devel/p5-Data-ShowTable \

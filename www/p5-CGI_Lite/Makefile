@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI_Lite/Makefile,v 1.14 2000/04/10 00:06:22 cpiazza Exp $
+# $FreeBSD: ports/www/p5-CGI_Lite/Makefile,v 1.15 2000/06/17 02:37:08 will Exp $
 #
 
 PORTNAME=	CGI_Lite
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI_Lite
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

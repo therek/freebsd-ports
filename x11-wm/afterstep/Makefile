@@ -2,7 +2,7 @@
 # Date created:		October 29th 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.35 2000/08/13 16:06:42 alex Exp $
+# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.36 2000/08/13 19:46:38 alex Exp $
 #
 
 PORTNAME=	afterstep
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 MASTER_SITE_SUBDIR=	stable/archives
 DISTNAME=	AfterStep-${PORTVERSION}
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_LATEST_LINK= yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.14 2000/04/09 18:30:14 cpiazza Exp $
+# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.15 2000/06/17 02:36:48 will Exp $
 #
 
 PORTNAME=	MD5
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MD5
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.11 2000/04/09 18:12:47 cpiazza Exp $
+# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.12 2000/06/17 02:36:35 will Exp $
 #
 
 PORTNAME=	Archie
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Archie
 DISTNAME=	perl_archie.${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

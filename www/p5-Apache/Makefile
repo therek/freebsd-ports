@@ -2,7 +2,7 @@
 # Date created:				April 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.20 2000/06/04 05:14:10 vanilla Exp $
+# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.21 2000/06/17 02:37:07 will Exp $
 #
 
 PORTNAME=	Apache
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Apache
 DISTNAME=	mod_perl-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if !defined(APACHE_PORT)
 APACHE_PORT=apache13

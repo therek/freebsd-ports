@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.15 2000/04/22 22:04:35 vanilla Exp $
+# $FreeBSD: ports/devel/p5-BSD-Resource/Makefile,v 1.16 2000/06/17 02:36:57 will Exp $
 #
 
 PORTNAME=	BSD-Resource
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	BSD
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				May 28th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Penguin/Makefile,v 1.5 1999/08/31 06:42:21 mharo Exp $
+# $FreeBSD: ports/devel/p5-Penguin/Makefile,v 1.6 2000/04/11 21:29:46 mharo Exp $
 #
 
 PORTNAME=	Penguin
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Penguin
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 

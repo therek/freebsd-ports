@@ -2,7 +2,7 @@
 # Date created:				27 Feb 2000
 # Whom:	      				Vanilla I. Shu <vanilla@FreeBSD.ORG>
 #
-# $FreeBSD: ports/www/p5-CGI-FastTemplate/Makefile,v 1.2 2000/04/10 00:06:21 cpiazza Exp $
+# $FreeBSD: ports/www/p5-CGI-FastTemplate/Makefile,v 1.3 2000/06/17 02:37:08 will Exp $
 #
 
 PORTNAME=	CGI-FastTemplate
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

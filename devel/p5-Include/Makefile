@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Include/Makefile,v 1.11 1999/08/31 06:42:16 mharo Exp $
+# $FreeBSD: ports/devel/p5-Include/Makefile,v 1.12 2000/04/11 21:29:41 mharo Exp $
 #
 
 PORTNAME=	Include
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Include
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

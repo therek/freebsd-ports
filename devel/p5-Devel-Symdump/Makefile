@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-Symdump/Makefile,v 1.8 2000/04/11 21:29:27 mharo Exp $
+# $FreeBSD: ports/devel/p5-Devel-Symdump/Makefile,v 1.9 2000/07/22 10:44:47 vanilla Exp $
 #
 
 PORTNAME=	Devel-Symdump
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.8 2000/04/22 22:25:14 vanilla Exp $
+# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.9 2000/06/17 02:37:00 will Exp $
 #
 
 PORTNAME=	Filter
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Filter
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

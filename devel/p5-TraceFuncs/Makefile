@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.7 2000/04/11 21:29:59 mharo Exp $
+# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.8 2000/04/15 01:36:28 asami Exp $
 #
 
 PORTNAME=	TraceFuncs
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-
 DISTNAME=	traceFunc-${PORTVERSION}
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

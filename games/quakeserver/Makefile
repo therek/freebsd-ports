@@ -2,7 +2,7 @@
 # Date created:				October 26th 1996
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/quakeserver/Makefile,v 1.22 2000/04/14 12:26:27 asami Exp $
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.23 2000/07/05 12:36:29 tg Exp $
 #
 
 PORTNAME=	quakeserver
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/quake/planetquake/threewave/unix/ \
 DISTFILES=	unixded-1.0-i386-unknown-bsdi3.0.tar.gz \
 		quake106.zip
 
-MAINTAINER=	jfitz@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip \
 		lha:${PORTSDIR}/archivers/lha

@@ -2,7 +2,7 @@
 # Date created:				May 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.10 2000/04/09 18:12:56 cpiazza Exp $
+# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.11 2000/06/17 02:36:40 will Exp $
 #
 
 PORTNAME=	SNMP
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SNMP
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS= 	snmp.4:${PORTSDIR}/net/ucd-snmp
 

@@ -2,7 +2,7 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mrtg/Makefile,v 1.22 2000/10/13 02:03:33 jeh Exp $
+# $FreeBSD: ports/net/mrtg/Makefile,v 1.23 2000/10/19 12:24:06 jeh Exp $
 #
 
 PORTNAME=	mrtg
@@ -10,7 +10,7 @@ PORTVERSION=	2.9.2
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 

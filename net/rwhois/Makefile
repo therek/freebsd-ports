@@ -2,7 +2,7 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.14 2000/04/09 18:13:29 cpiazza Exp $
+# $FreeBSD: ports/net/rwhois/Makefile,v 1.15 2000/07/05 12:36:43 tg Exp $
 #
 
 PORTNAME=	rwhois
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.rwhois.net/pub/
 DISTNAME=	rwhois-1.0B9.2
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if !exists(/usr/include/tcpd.h)
 LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper

@@ -2,7 +2,7 @@
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.12 2000/04/11 21:29:24 mharo Exp $
+# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.13 2000/06/17 02:36:58 will Exp $
 #
 
 PORTNAME=	Data-ShowTable
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Data
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 

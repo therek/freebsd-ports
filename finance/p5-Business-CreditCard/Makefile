@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-Business-CreditCard/Makefile,v 1.11 1999/08/31 06:48:22 mharo Exp $
+# $FreeBSD: ports/misc/p5-Business-CreditCard/Makefile,v 1.12 2000/04/14 08:46:24 asami Exp $
 #
 
 PORTNAME=	Business-CreditCard
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Business
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

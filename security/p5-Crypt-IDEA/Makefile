@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-IDEA/Makefile,v 1.15 2000/04/22 22:11:34 vanilla Exp $
+# $FreeBSD: ports/security/p5-Crypt-IDEA/Makefile,v 1.16 2000/06/17 02:36:47 will Exp $
 #
 
 PORTNAME=	Crypt-IDEA
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"Crypto; export-controlled"
 

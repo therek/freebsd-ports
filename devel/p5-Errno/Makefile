@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Errno/Makefile,v 1.7 2000/04/11 21:29:28 mharo Exp $
+# $FreeBSD: ports/devel/p5-Errno/Makefile,v 1.8 2000/04/22 22:25:09 vanilla Exp $
 #
 
 PORTNAME=	Errno
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Errno
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

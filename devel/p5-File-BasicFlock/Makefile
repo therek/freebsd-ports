@@ -2,7 +2,7 @@
 # Date created:				1996/10/24
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.13 2000/04/15 08:46:03 asami Exp $
+# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.14 2000/04/22 22:25:10 vanilla Exp $
 #
 
 PORTNAME=	File-BasicFlock
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

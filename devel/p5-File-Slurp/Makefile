@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Slurp/Makefile,v 1.11 1999/08/31 06:42:10 mharo Exp $
+# $FreeBSD: ports/devel/p5-File-Slurp/Makefile,v 1.12 2000/04/11 21:29:32 mharo Exp $
 #
 
 PORTNAME=	File-Slurp
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	YES
 

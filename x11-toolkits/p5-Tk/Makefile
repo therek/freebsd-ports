@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.28 2000/04/23 12:25:08 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.29 2000/06/17 02:36:57 will Exp $
 #
 
 PORTNAME=	Tk
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Tk
 DISTNAME=	${PORTNAME}${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	jfitz@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 USE_PERL5=	yes
