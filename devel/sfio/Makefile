@@ -3,7 +3,7 @@
 # Date created:			  8 November 1997
 # Whom:				  jraynard
 #
-# $FreeBSD: ports/devel/sfio/Makefile,v 1.16 2000/05/14 00:24:32 obrien Exp $
+# $FreeBSD: ports/devel/sfio/Makefile,v 1.17 2000/08/26 22:58:13 obrien Exp $
 #
 
 PORTNAME=	sfio
@@ -63,9 +63,9 @@ do-build:
 	@cd ${WRKDIR}/src/lib/sfio && ${MAKE} all -f makefile
 
 do-install:
-	${INSTALL_DATA} ${WRKDIR}/include/* ${PREFIX}/include
-	${INSTALL_DATA} ${WRKDIR}/lib/libsfio.a ${PREFIX}/lib
-	${INSTALL_DATA} ${WRKDIR}/lib/libstdio.a ${PREFIX}/lib
+	${MKDIR} ${PREFIX}/include/sfio
+	${INSTALL_DATA} ${WRKDIR}/include/* ${PREFIX}/include/sfio
+	cd ${WRKDIR}/lib ; ${INSTALL_DATA} libsfio.a libstdio.a ${PREFIX}/lib
 	${INSTALL_MAN} ${WRKDIR}/man/man1/iffe.1 ${PREFIX}/man/man1
 	${INSTALL_MAN} ${WRKDIR}/man/man3/sfio.3 ${PREFIX}/man/man3
 
