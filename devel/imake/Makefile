@@ -2,7 +2,7 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake/Makefile,v 1.3 2000/04/11 21:28:16 mharo Exp $
+# $FreeBSD: ports/devel/imake/Makefile,v 1.4 2000/05/14 05:40:47 billf Exp $
 #
 
 PORTNAME= 	imake
@@ -17,6 +17,8 @@ DISTNAME=	X336src-1
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	max@FreeBSD.org
+
+MANUAL_PACKAGE_BUILD=	installs/removes files also in the XFree86 port
 
 PREFIX=		${X11BASE}
 DIST_SUBDIR=	xc
