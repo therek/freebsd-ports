@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/opera-devel/pkg-plist,v 1.15 2004/02/29 23:06:08 sergei Exp $
+@comment $FreeBSD: ports/www/opera-devel/pkg-plist,v 1.16 2004/03/10 22:03:37 sergei Exp $
 bin/opera-devel
 %%DOCSDIR%%/LICENSE
 %%DOCSDIR%%/help
@@ -133,6 +133,4 @@ bin/opera-devel
 %%GNOMELNK%%share/gnome/apps/Internet/opera-devel.desktop
 %%GNOME%%share/gnome/pixmaps/opera.xpm
 %%KDE2%%@dirrm share/applnk/Networking/WWW
-@cwd /etc/X11
-wmconfig/opera-devel
 %%APPLNK%%applnk/Internet/opera-devel.desktop
