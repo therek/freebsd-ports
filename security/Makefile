@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.71 1999/10/30 23:41:55 nectar Exp $
+# $FreeBSD: ports/security/Makefile,v 1.72 1999/11/03 22:23:25 nsayer Exp $
 #
 
     SUBDIR += bjorb
@@ -31,6 +31,7 @@
     SUBDIR += nessus
     SUBDIR += nmap
     SUBDIR += nmapfe
+    SUBDIR += openssh
     SUBDIR += openssl
     SUBDIR += p5-Authen-Radius
     SUBDIR += p5-Crypt-DES
