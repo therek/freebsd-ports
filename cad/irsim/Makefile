@@ -2,7 +2,7 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/irsim/Makefile,v 1.12 2001/01/27 05:40:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	irsim
@@ -20,6 +20,6 @@ MAN5=		netchange.5
 
 # othewise patch will complain
 post-extract:
-	@find ${WRKSRC} -name RCS | xargs ${RM} -rf
+	@${FIND} ${WRKSRC} -name RCS | ${XARGS} ${RM} -rf
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         30 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xmille/Makefile,v 1.14 2001/01/27 05:40:10 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmille
@@ -21,6 +21,6 @@ USE_IMAKE=	yes
 MAN1=		xmille.1
 
 post-extract:
-	@find ${WRKSRC} -name '*.[ao]' -delete
+	@${FIND} ${WRKSRC} -name '*.[ao]' -delete
 
 .include <bsd.port.mk>

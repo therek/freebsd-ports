@@ -2,7 +2,7 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.20 2001/02/05 15:33:23 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grail
@@ -24,7 +24,6 @@ GRAILDIR=	${PREFIX}/${GRAILSUBDIR}
 DIRS_CMD=	${SED} -e '/^@dirrm/bok' -e 'D' -e ':ok' -e 's,@dirrm ,,' < ${PLIST}
 FILES_CMD=	${SED} -e '/^share\//bok' -e 'D' -e ':ok' -e 's,${GRAILSUBDIR}/,,' < ${PLIST}
 
-FIND?=find
 PYTHON?=python
 
 do-build:

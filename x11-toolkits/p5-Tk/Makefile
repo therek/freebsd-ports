@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.33 2001/03/01 06:39:03 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Tk
@@ -130,6 +130,6 @@ post-configure:
 	@${PERL} -i -p \
 		-e 's/^(CC = ).*/$$1 ${CC}/;' \
 		-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' \
-		`find ${WRKSRC} -name Makefile`
+		`${FIND} ${WRKSRC} -name Makefile`
 
 .include <bsd.port.mk>

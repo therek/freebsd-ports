@@ -2,7 +2,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.8 2001/03/08 17:17:51 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bkmrkconv
@@ -16,7 +16,7 @@ USE_PERL5=	yes
 NO_BUILD=	yes
 
 post-patch:
-	@find ${WRKSRC} -name '*.pl' | xargs ${PERL} -pi -e \
+	@${FIND} ${WRKSRC} -name '*.pl' | ${XARGS} ${PERL} -pi -e \
 		's|/usr/bin/perl|${PERL}|g ; \
 		 s|%%PREFIX%%|${PREFIX}|g'
 
