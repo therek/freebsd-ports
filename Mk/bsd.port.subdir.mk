@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.36 2000/03/22 22:41:05 joe Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.37 2000/06/14 01:58:13 asami Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -32,7 +32,7 @@
 #	clean-for-cdrom-list, clean-restricted-list,
 #	configure, deinstall,
 #	depend, depends, describe, extract, fetch, fetch-list, ignorelist,
-#	install, package, readmes, realinstall, reinstall, tags
+#	install, makesum, package, readmes, realinstall, reinstall, tags
 #
 #	search:
 #		Search for ports using either 'make search key=<keyword>'
@@ -88,6 +88,7 @@ TARGETS+=	extract
 TARGETS+=	fetch
 TARGETS+=	fetch-list
 TARGETS+=	ignorelist
+TARGETS+=	makesum
 TARGETS+=	package
 TARGETS+=	realinstall
 TARGETS+=	reinstall
