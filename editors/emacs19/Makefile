@@ -1,12 +1,12 @@
 # New ports collection makefile for:	GNU emacs
-# Version required:	19.34b
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs/Makefile,v 1.42 1999/08/25 05:43:35 obrien Exp $
+# $FreeBSD: ports/editors/emacs/Makefile,v 1.43 1999/08/31 06:42:56 mharo Exp $
 #
 
-DISTNAME=	emacs-19.34b
+PORTNAME=	emacs
+PORTVERSION=	19.34b
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs

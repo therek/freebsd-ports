@@ -1,12 +1,12 @@
 # New ports collection makefile for:	color-mate for emacs
-# Version required:	1.0.0.1
 # Date created:		99/09/29
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/color-mate/Makefile,v 1.1.1.1 1999/10/07 15:59:37 taoka Exp $
 #
 
-DISTNAME=	color-mate-10.0.1
+PORTNAME=	color-mate
+PORTVERSION=	10.0.1
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://www.netlab.is.tsukuba.ac.jp/~yokota/archive/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	jove
-# Version required:	4.16
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/jove/Makefile,v 1.16 1999/08/25 05:43:57 obrien Exp $
+# $FreeBSD: ports/editors/jove/Makefile,v 1.17 1999/08/31 06:43:12 mharo Exp $
 #
 
-DISTNAME=	jove-4.16
+PORTNAME=	jove
+PORTVERSION=	4.16
 CATEGORIES=	editors
 MASTER_SITES=	ftp://relay.cs.toronto.edu/pub/moraes/jove/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   vigor
-# Version required:    0.014
 # Date created:        17 Jan 2000
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/editors/vigor/Makefile,v 1.2 2000/02/11 19:01:31 billf Exp $
+# $FreeBSD: ports/editors/vigor/Makefile,v 1.3 2000/02/26 19:49:57 steve Exp $
 #
 
-DISTNAME=	vigor-0.014
+PORTNAME=	vigor
+PORTVERSION=	0.014
 CATEGORIES=	editors tk82 tcl82
 MASTER_SITES=	http://www.red-bean.com:8080/
 

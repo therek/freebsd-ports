@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bvi
-# Version required:			1.2.0
 # Date created:				05 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/editors/bvi/Makefile,v 1.2 1999/11/27 01:06:02 steve Exp $
+# $FreeBSD: ports/editors/bvi/Makefile,v 1.3 2000/03/27 21:12:01 jedgar Exp $
 #
 
-DISTNAME=	bvi-1.2.0
+PORTNAME=	bvi
+PORTVERSION=	1.2.0
 CATEGORIES=	editors
 MASTER_SITES=	http://bvi.linuxave.net/download/
 EXTRACT_SUFX=	.src.tar.gz

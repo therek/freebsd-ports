@@ -1,12 +1,12 @@
 # New ports collection makefile for: wily
-# Version required: 	0.13.36
 # Date created:   	23 September 1997
 # Whom: 		koshy
 #
-# $FreeBSD: ports/editors/wily/Makefile,v 1.10 1999/08/25 05:44:47 obrien Exp $
+# $FreeBSD: ports/editors/wily/Makefile,v 1.11 1999/12/08 11:18:31 jkoshy Exp $
 #
 
-DISTNAME=	wily-0.13.41
+PORTNAME=	wily
+PORTVERSION=	0.13.41
 CATEGORIES=	editors plan9
 MASTER_SITES=	ftp://ftp.northsea.com/pub/plan9_unix/wily/src/ \
 		ftp://ftp.cs.york.ac.uk/pub/mhw/wily/src/ \

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	psgml for emacs20
-# Version required:	1.1.6
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs20/Makefile,v 1.6 2000/01/04 11:32:24 shige Exp $
+# $FreeBSD: ports/editors/psgml-emacs20/Makefile,v 1.7 2000/03/10 21:31:06 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

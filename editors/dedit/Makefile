@@ -1,15 +1,15 @@
 # New ports collection makefile for:   dedit
-# Version required:    0.5.6
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.2 2000/02/12 15:18:15 nakai Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.3 2000/02/18 02:22:56 nakai Exp $
 #
 
-DISTNAME=	dedit_0.5.6
-PKGNAME=	dedit-0.5.6
+PORTNAME=	dedit
+PORTVERSION=	0.5.6
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.debian.org/debian/dists/unstable/main/source/editors/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 

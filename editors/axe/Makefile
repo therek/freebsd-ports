@@ -1,12 +1,12 @@
-# New ports collection makefile for:	aXe-6.1.2
-# Version required:	6.1.2
+# New ports collection makefile for:	aXe
 # Date created:		28 December 1994
 # Whom:			jc@irbs.com John Capo
 #
-# $FreeBSD: ports/editors/axe/Makefile,v 1.6 1999/08/25 05:43:25 obrien Exp $
+# $FreeBSD: ports/editors/axe/Makefile,v 1.7 2000/02/05 10:55:41 dirk Exp $
 #
 
-DISTNAME=	aXe-6.1.2
+PORTNAME=	aXe
+PORTVERSION=	6.1.2
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	editors

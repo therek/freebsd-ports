@@ -1,17 +1,17 @@
 # New ports collection makefile for:	THE
-# Version required:	3.0
 # Date created:		7 May 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/editors/the/Makefile,v 1.3 1999/09/27 02:39:57 steve Exp $
+# $FreeBSD: ports/editors/the/Makefile,v 1.4 2000/02/17 05:18:26 taoka Exp $
 #
 
-DISTNAME=	THE-3.0
-PKGNAME=	the-3.0
+PORTNAME=	the
+PORTVERSION=	3.0
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.lightlink.com/pub/hessling/THE/	\
 		ftp://ftp.qut.edu.au/pub/markh/THE/		\
 		ftp://ftp.wu-wien.ac.at/pub/src/Editors/THE/
+DISTNAME=	THE-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
