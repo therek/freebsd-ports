@@ -2,7 +2,7 @@
 # Date created:		19 February 1995
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pixmap/Makefile,v 1.13 2000/04/14 10:47:01 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pixmap
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	applications/pixmap
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
+
+BROKEN=		"Does not build with XFree86-4"
 
 WRKSRC=		${WRKDIR}/pixmap
 USE_IMAKE=	yes
