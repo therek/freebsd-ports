@@ -3,16 +3,13 @@
 # Date created:         26 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/iozone21/Makefile,v 1.29 2000/01/09 22:49:52 obrien Exp $
 #
 
 DISTNAME=       iozone-2.01
 CATEGORIES=	benchmarks
 MASTER_SITES=   ftp://ftp.cs.uni-sb.de/pub/others/
 EXTRACT_SUFX=	.shar.gz
-
-# This site does not allow root@<hostname> password
-FETCH_CMD=      FTP_PASSWORD=portsuser@FreeBSD.org /usr/bin/fetch
 
 MAINTAINER=	obrien@FreeBSD.org
 
