@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.33 2001/05/11 16:36:33 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomecontrolcenter
@@ -22,7 +22,8 @@ USE_GMAKE=	yes
 USE_GNOMELIBS=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
+			  `gdk-pixbuf-config --cflags`" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
