@@ -3,7 +3,7 @@
 # Date created:		19 January 1999
 # Whom:	Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
 #
-# $FreeBSD: ports/math/pari/Makefile,v 1.11 2000/01/14 19:59:43 cpiazza Exp $
+# $FreeBSD: ports/math/pari/Makefile,v 1.12 2000/02/01 00:07:01 steve Exp $
 #
 
 DISTNAME=	pari-2.0.18.beta
@@ -25,6 +25,11 @@ MAKE_ARGS= 	gp
 
 MAN1=		gp.1 gphelp.1
 MLINKS=		gp.1 pari.1
+
+HAVE_EMACS!=	which emacs || echo nope
+.if ${HAVE_EMACS} != "nope"
+PLIST=		${PKGDIR}/PLIST.emacs
+.endif
 
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
