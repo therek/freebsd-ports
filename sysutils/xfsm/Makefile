@@ -3,12 +3,13 @@
 # Date Created:				24 Nov 1997
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/xfsm/Makefile,v 1.7 1999/08/31 02:00:30 peter Exp $
+# $FreeBSD: ports/sysutils/xfsm/Makefile,v 1.8 1999/08/31 06:51:03 mharo Exp $
 #
 
 DISTNAME=	xfsm-1.99
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.peoplesoft.com/peoplepages/g/robert_gasch/src/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	system/status/xstatus
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	vanilla@FreeBSD.org
