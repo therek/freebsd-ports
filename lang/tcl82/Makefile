@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl82/Makefile,v 1.34 2001/01/16 17:31:16 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcl
@@ -13,6 +13,7 @@ DISTNAME=	tcl8.2.3
 
 MAINTAINER=	ports@FreeBSD.org
 
+NO_LATEST_LINK=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
