@@ -2,7 +2,7 @@
 # Date created:		24 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/evas/Makefile,v 1.5 2001/03/07 22:31:05 olgeni Exp $
+# $FreeBSD: ports/graphics/evas/Makefile,v 1.6 2001/03/12 14:40:12 sf Exp $
 #
 
 PORTNAME=	evas
@@ -17,11 +17,11 @@ LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2
 
 USE_X_PREFIX=	yes
 USE_FREETYPE=	yes
-USE_MESA=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
+CONFIGURE_ARGS=	--disable-gl
 
 post-install:
 	@strip ${PREFIX}/lib/libevas.so.0
