@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.14 2001/03/29 08:23:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	python
@@ -24,7 +24,7 @@ USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-CONFIGURE_ARGS=	--with-python-lib=`cd ${PYTHON_PORTSDIR} && ${MAKE} -V WRKSRC`
+CONFIGURE_ARGS=	--with-python-lib=`cd ${PYTHON_PORTSDIR}; ${MAKE} -V WRKSRC`
 INSTALL_TARGET=	site-install
 
 post-install:

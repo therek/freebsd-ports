@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-mode.el/Makefile,v 1.4 2001/06/16 08:46:34 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ruby-mode.el
@@ -27,7 +27,7 @@ XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
 
 do-extract:
 	${MKDIR} ${WRKDIR}
-	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT} && ${MAKE} -V WRKSRC`/misc ${WRKSRC}
+	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT}; ${MAKE} -V WRKSRC`/misc ${WRKSRC}
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/* ${RUBY_ELISPDIR}/

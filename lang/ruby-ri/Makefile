@@ -2,7 +2,7 @@
 # Date created:			5 April 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-ri/Makefile,v 1.3 2001/06/09 02:37:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ri
@@ -34,7 +34,7 @@ post-patch:
 		${WRKSRC}/contrib/dblack/emacs/ri.el
 
 do-install:
-	cd ${WRKSRC} && ${RUBY} install.rb
+	cd ${WRKSRC}; ${RUBY} install.rb
 	${INSTALL_DATA} ${WRKSRC}/contrib/dblack/emacs/Emacs.rb ${RUBY_SITELIBDIR}/${PORTNAME}/op/
 	${MKDIR} ${XEMACSLISPDIR}
 .for f in ${ELISP_FILES}

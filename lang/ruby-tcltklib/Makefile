@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.23 2001/09/17 17:54:20 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcltklib
@@ -59,7 +59,7 @@ PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 
 do-extract:
 	${MKDIR} ${WRKDIR}
-	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT} && ${MAKE} -V WRKDIR`/${PORTNAME} ${WRKDIR}/
+	${LN} -sf `cd ${PORTSDIR}/${RUBY_PORT}; ${MAKE} -V WRKDIR`/${PORTNAME} ${WRKDIR}/
 
 post-install:
 .if !defined(NOPORTDOCS)

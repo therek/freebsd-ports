@@ -2,7 +2,7 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-cdb/Makefile,v 1.1 2001/03/08 12:42:10 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdb
@@ -28,7 +28,7 @@ INSTALL_TARGET=	site-install
 
 post-extract:
 	${RM} -f ${WRKSRC}/cdb
-	${LN} -s `cd ${CDB_PORTDIR} && ${MAKE} -V WRKSRC` ${WRKSRC}/cdb
+	${LN} -s `cd ${CDB_PORTDIR}; ${MAKE} -V WRKSRC` ${WRKSRC}/cdb
 
 post-install:
 .if !defined(NOPORTDOCS)

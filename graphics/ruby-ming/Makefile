@@ -2,7 +2,7 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-ming/Makefile,v 1.9 2001/09/18 05:57:17 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ming
@@ -34,7 +34,7 @@ EXAMPLES=	../examples/rb/*.rb
 
 do-extract:
 	${MKDIR} ${WRKDIR}
-	${LN} -s `cd ${PORTSDIR}/graphics/ming && ${MAKE} -V WRKDIR`/* ${WRKDIR}/
+	${LN} -s `cd ${PORTSDIR}/graphics/ming; ${MAKE} -V WRKDIR`/* ${WRKDIR}/
 
 post-extract:
 	${LN} -sf ../ming.i ${WRKSRC}/
