@@ -4,14 +4,15 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.8 1999/11/14 02:15:27 steve Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.9 1999/11/26 18:06:32 steve Exp $
 #
 
 DISTNAME=       rarlnx26
 PKGNAME=        linux_rar-2.60
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://rarsoft.ti.sk/pub/rar/ \
-		ftp://ftp.cdrom.com/pub/cheats/dlh/rar/
+		ftp://ftp.cdrom.com/pub/cheats/dlh/rar/ \
+		ftp://ftp.cdrom.com/pub/sac/pack/
 EXTRACT_SUFX=   .sfx
 
 MAINTAINER=     k5@cheerful.com
