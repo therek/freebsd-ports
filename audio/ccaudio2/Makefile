@@ -2,22 +2,22 @@
 # Date created:				26 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/ccaudio/Makefile,v 1.1 2000/07/28 11:05:27 sobomax Exp $
 #
 
 PORTNAME=	ccaudio
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
 CATEGORIES=	audio
 MASTER_SITES=	ftp://www.voxilla.org/pub/ccaudio/
 
 MAINTAINER=	dyfet@gnu.org
 
-LIB_DEPENDS=	ccstd.0:${PORTSDIR}/devel/commoncpp
-
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_AUTOCONF=	yes
 INSTALLS_SHLIB=	yes
+
+CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include"
 
 post-extract:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
