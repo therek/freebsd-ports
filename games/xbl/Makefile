@@ -2,7 +2,7 @@
 # Date created:		May 25 1997
 # Whom:			pgs (original)
 #
-# $FreeBSD: ports/games/xbl/Makefile,v 1.8 2000/04/14 12:27:00 asami Exp $
+# $FreeBSD: ports/games/xbl/Makefile,v 1.9 2000/06/03 08:13:55 asami Exp $
 #
 
 PORTNAME=	xbl
@@ -15,7 +15,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CFLAGS+=	-I${PREFIX}/include
+CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
+		LIBS="-L${X11BASE}/lib"
 MANN=		xbl.n
 
 .include <bsd.port.mk>
