@@ -2,7 +2,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.7 2000/04/09 18:12:46 cpiazza Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.8 2000/05/01 08:58:47 roger Exp $
 #
 
 PORTNAME=	openh323
@@ -18,6 +18,7 @@ MAINTAINER=	roger@freebsd.org
 
 WRKSRC=         ${WRKDIR}/openh323
 
+USE_NEWGCC=	yes
 USE_BISON=	yes
 USE_XLIB=	yes
 USE_GMAKE=	yes
@@ -25,7 +26,7 @@ ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIR}/pwlib \
 		OPENH323DIR=${WRKDIR}/openh323
 THE_MACHTYPE=	${ARCH:S/i386/x86/}
-MAKE_ARGS=	OSTYPE=${OPSYS} MACHTYPE=${THE_MACHTYPE} OSRELEASE=${OSVERSION}
+MAKE_ARGS=	OSTYPE=${OPSYS} MACHTYPE=${THE_MACHTYPE} OSRELEASE=${OSVERSION} CPLUS=${CXX}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sample/obj_${OPSYS}_${THE_MACHTYPE}_r/ohphone ${PREFIX}/bin
