@@ -3,7 +3,7 @@
 # Date created:			Sep 3, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/textproc/rtf2htm/Makefile,v 1.1 2001/09/03 05:48:06 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rtf2htm
@@ -21,6 +21,7 @@ MAN1=	rtf2htm.1
 
 post-patch:
 	@${PERL} -pi -e "s,^CC,#CC,g ; s,^CFLAGS,#CFLAGS,g" ${WRKSRC}/${MAKEFILE}
+	@${PERL} -pi -e 's|malloc.h|stdlib.h|' ${WRKSRC}/malloc.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rtf2htm ${PREFIX}/bin
