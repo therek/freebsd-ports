@@ -2,7 +2,7 @@
 # Date Created:			27 Nov 2000
 # Whom:				Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtkada/Makefile,v 1.4 2001/08/15 09:56:10 sobomax Exp $
 #
 
 PORTNAME=	gtkada
@@ -29,6 +29,8 @@ INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}" \
 		LDFLAGS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
+MAKE_ENV=	LDFLAGS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
+
 PLIST_SUB=	SHLIB_VERSION=${SHLIB_VERSION}
 
 MAN1=	dgate.1 gate.1 gtkada-config.1
