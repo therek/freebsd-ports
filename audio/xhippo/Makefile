@@ -2,7 +2,7 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.12 2000/09/16 18:08:30 ade Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.13 2000/09/29 16:09:29 kevlo Exp $
 #
 
 PORTNAME=	xhippo
@@ -14,13 +14,17 @@ MASTER_SITES=	http://zenchaos.netpedia.net/software/ \
 MAINTAINER=	rod@zort.on.ca
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_XLIB=	yes
+USE_GTK=	yes
+WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+.endif
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/xhippo.config ${PREFIX}/etc/xhippo.config.default
@@ -29,4 +33,4 @@ post-install:
 .endif
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.10 2000/06/14 13:21:12 sobomax Exp $
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.11 2000/09/13 08:41:49 sobomax Exp $
 #
 
 PORTNAME=	gnotepad+
@@ -17,21 +17,19 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
 
 MAINTAINER=	brett@peloton.runet.edu
 
-LIB_DEPENDS=    gnome.4:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 DOCVERSION=	1.2.0
+
 USE_X_PREFIX=	yes
+USE_XPM=	yes
+USE_GTK=	yes
+WANT_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=	gnp.1
+
+.include <bsd.port.pre.mk>
 
 .if !defined(NOPORTDOCS)
 post-extract:
@@ -39,4 +37,10 @@ post-extract:
 	@${CP} -R ${WRKDIR}/${PORTNAME}-help-${DOCVERSION}/docs ${WRKSRC}/docs
 .endif
 
-.include <bsd.port.mk>
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+.else
+CONFIGURE_ARGS+=--disable-gnome
+.endif
+
+.include <bsd.port.post.mk>

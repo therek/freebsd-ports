@@ -2,7 +2,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.7 2000/07/16 12:34:55 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.8 2000/09/25 08:51:47 nakai Exp $
 #
 
 PORTNAME=	vdk
@@ -12,18 +12,22 @@ MASTER_SITES=	http://download.sourceforge.net/vdkbuilder/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_NEWGCC=	yes
 USE_X_PREFIX=	yes
+USE_GTK=	yes
+WANT_GNOME=	yes
+USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		vdk-config.1
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+CONFIGURE_ARGS+=	--enable-gnome
+.endif
+
+.include <bsd.port.post.mk>

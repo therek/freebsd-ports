@@ -2,50 +2,41 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.8 2000/04/27 05:01:53 will Exp $
+# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.9 2000/06/01 16:25:41 ade Exp $
 #
 
 PORTNAME=	ipsc
 PORTVERSION=	0.4.2
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://ipsc.sourceforge.net/dist/ipsc/
-DISTNAME=	${PKGNAME}-src
+DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	jeremy@external.org
 
 BUILD_DEPENDS=	${WRKDIRPREFIX}${PORTSDIR}/sysutils/prips/work/prips/prips.o:${PORTSDIR}/sysutils/prips:build
-.if defined(WITH_GNOME)
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-.endif
 
-.if defined(WITH_GNOME)
-USE_XLIB=	YES
-.endif
 WRKSRC=		${WRKDIR}/ipsc/src
 
-post-extract:
-	@${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../prips/work/prips \
-		${WRKDIR}/prips
+WANT_GNOME=	yes
 
-pre-build:
-.if defined(WITH_GNOME)
-PLIST=		${PKGDIR}/PLIST.gnome
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
+USE_X_PREFIX=	yes
+USE_GNOME=	yes
 ALL_TARGET=	all
 .else
 ALL_TARGET=	ipsc
 .endif
 
-post-build:
-.if defined(WITH_GNOME)
-	@${ECHO_MSG} ""
-	@${ECHO_MSG} "Don't forget to define WITH_GNOME when installing"
-	@${ECHO_MSG} ""
-.endif
+post-extract:
+	@${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../prips/work/prips \
+		${WRKDIR}/prips
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/ipsc ${PREFIX}/bin
-.if defined(WITH_GNOME)
-	@${INSTALL_PROGRAM} ${WRKSRC}/gipsc ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/ipsc ${PREFIX}/bin
+.if defined(HAVE_GNOME)
+	${INSTALL_PROGRAM} ${WRKSRC}/gipsc ${PREFIX}/bin
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
