@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.18 2001/01/24 08:06:55 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tac_plus
@@ -29,7 +29,7 @@ EXTRA_PATCHES+=	${PATCHDIR}/extra-patch-bb
 .endif
 
 # finger output differs for CISCO IOS versions 11 and 12.
-# Define version of your IOS (default is 11): 
+# Define version of your IOS (default is 11):
 # Example: make TAC_IOS_VERSION=12
 #
 .if defined(TAC_IOS_VERSION)
