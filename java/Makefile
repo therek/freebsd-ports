@@ -1,4 +1,4 @@
-# $FreeBSD: ports/java/Makefile,v 1.30 2001/06/18 21:03:53 ijliao Exp $
+# $FreeBSD: ports/java/Makefile,v 1.31 2001/06/24 21:53:43 jeh Exp $
 #
     SUBDIR += xalan-j
 
@@ -22,6 +22,7 @@
     SUBDIR += jdk-doc
     SUBDIR += jdk-tutorial
     SUBDIR += jdk12-beta
+    SUBDIR += jdom
     SUBDIR += jfc
     SUBDIR += jikes
     SUBDIR += jlex
