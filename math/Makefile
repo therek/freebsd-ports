@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.66 1999/11/01 02:27:31 steve Exp $
+# $FreeBSD: ports/math/Makefile,v 1.67 1999/11/14 03:44:30 steve Exp $
 #
 
     SUBDIR += PDL
@@ -24,7 +24,6 @@
     SUBDIR += gnuplot
     SUBDIR += gnuplot+
     SUBDIR += grace
-    SUBDIR += gtkgraph
     SUBDIR += hexcalc
     SUBDIR += lapack
     SUBDIR += libranlib

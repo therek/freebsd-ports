@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.155 1999/11/07 17:01:19 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.156 1999/11/14 03:40:36 steve Exp $
 #
 
     SUBDIR += 4va
@@ -53,6 +53,7 @@
     SUBDIR += gridpix
     SUBDIR += gtkdps
     SUBDIR += gtkfig
+    SUBDIR += gtkgraph
     SUBDIR += gtksee
     SUBDIR += gview
     SUBDIR += gxanim
