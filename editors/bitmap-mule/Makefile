@@ -1,22 +1,20 @@
 # New ports collection makefile for:	bitmap for mule
-# Version required:	7.19.05
+# Version required:	8.0
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.3 1999/10/11 06:19:13 shige Exp $
+# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.4 1999/10/22 15:21:59 shige Exp $
 #
 
-DISTNAME=	bitmap-mule-${BITMAP_VENDOR}-${BITMAP_SNAPSHOT_VER}
+DISTNAME=	bitmap-mule-${BITMAP_VER}
 CATEGORIES=	editors elisp
-MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/GNU/elisp/yamaoka/bitmap/snapshots/
+MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
 
 MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
-BITMAP_VER=		7.19
-BITMAP_SNAPSHOT_VER=	07
-BITMAP_VENDOR=		kory
-BITMAP_PKG_VER=		${BITMAP_VER}.${BITMAP_SNAPSHOT_VER}
+BITMAP_VER=		8.0
+BITMAP_PKG_VER=		${BITMAP_VER}
 BITMAPDOCDIR=	share/doc/bitmap
 BITMAP_SETUPEL=	bitmap-setupel.el
 BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/etl8x16-bitmap.pcf.gz
