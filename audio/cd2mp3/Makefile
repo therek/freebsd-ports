@@ -2,13 +2,15 @@
 # Date created:				4 January 2000
 # Whom:					Jamie Heckford <jamie@jamiesdomain.co.uk>
 #
-# $FreeBSD: ports/audio/cd2mp3/Makefile,v 1.3 2001/01/16 14:17:57 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		cd2mp3
 PORTVERSION=		0.81
 PORTEPOCH=		1
 CATEGORIES=		audio
+# both the NS servers for cd2mp3.org.uk are lame.
+# Informed maintainer - edwin 20021226
 MASTER_SITES=		http://download.cd2mp3.org.uk/${PORTVERSION}/
 MASTER_SITE_SUBDIR=	${PORTVERSION}
 
