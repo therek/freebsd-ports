@@ -2,16 +2,15 @@
 # Date created:				04 Jun 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.8 2001/01/16 19:08:41 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libjsearch
 PORTVERSION=	0.5.6
 PORTREVISION=	1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/jx/source-1.5.3/ \
-		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/ \
-		ftp://gd.tuwien.ac.at/hci/jx/source-1.5.3/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	JSearch_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
