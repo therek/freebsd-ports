@@ -2,11 +2,11 @@
 # Date created:         26 Mar 96
 # Whom:                 Julian Jenkins <kaveman@magna.com.au>
 #
-# $FreeBSD: ports/cad/spice/Makefile,v 1.15 1999/10/08 19:37:27 hoek Exp $
+# $FreeBSD: ports/cad/spice/Makefile,v 1.16 2000/04/08 23:20:07 mharo Exp $
 #
 
 PORTNAME=	spice
-PORTVERSION=	3f5
+PORTVERSION=	3f5.1
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ic.eecs.berkeley.edu/pub/Spice3/
 DISTNAME=	sp3f4.kit
