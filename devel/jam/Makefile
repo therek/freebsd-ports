@@ -2,23 +2,24 @@
 # Date created:		10 July 1998
 # Whom:			Jeffrey Hsu <hsu@freebsd.org>
 #
-# $FreeBSD: ports/devel/jam/Makefile,v 1.5 2000/04/11 21:28:18 mharo Exp $
+# $FreeBSD: ports/devel/jam/Makefile,v 1.6 2001/01/27 05:40:02 will Exp $
 #
 
 PORTNAME=	jam
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp1.perforce.com/pub/jam/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
-HTML_DOCS_DIR=	${PREFIX}/share/doc/jam
-HTML_DOCS=	Jam.html Jambase.html Jamfile.html Jamlang.html
+NO_WRKSUBDIR=	yes
+USE_ZIP=	yes
 
 do-install:
-	(cd ${WRKSRC}; \
-	 ./jam0 install; \
-	 ${MKDIR} ${HTML_DOCS_DIR}; \
-	 ${INSTALL_MAN} ${HTML_DOCS} ${HTML_DOCS_DIR})
+	${INSTALL_PROGRAM} ${WRKSRC}/bin.freebsd/jam ${PREFIX}/bin
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/jam
+	${INSTALL_DATA} ${WRKSRC}/*.html ${PREFIX}/share/doc/jam
+.endif
 
 .include <bsd.port.mk>
