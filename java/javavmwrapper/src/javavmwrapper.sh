@@ -25,10 +25,11 @@
 # Greg Lewis
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.7 2002/02/02 22:24:20 sobomax Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.8 2004/11/11 19:17:37 glewis Exp $
 #
 # MAINTAINER=java@FreeBSD.org
 
+SAVE_PATH=${PATH}
 export PATH=/bin:/sbin:/usr/bin:/usr/sbin
 
 PREFIX="%%PREFIX%%"
@@ -42,6 +43,9 @@ MAKE=/usr/bin/make
 tryJavaCommand () {
     # Check for the command being executable and exec it if so.
     if [ -x "${1}" ]; then
+        if [ ! -z "${SAVE_PATH}" ]; then
+            export PATH=${SAVE_PATH}
+        fi
         exec "${@}"
     fi
 
