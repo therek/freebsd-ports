@@ -2,13 +2,14 @@
 # Date created:         15 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/net/tintin++-devel/Makefile,v 1.14 2000/09/26 14:53:13 ade Exp $
+# $FreeBSD: ports/net/tintin++-devel/Makefile,v 1.15 2000/09/26 23:13:03 ade Exp $
 #
 
 PORTNAME=	tintin
 PORTVERSION=	1.8.3
 CATEGORIES=     net games
-MASTER_SITES=	http://mail.newclear.net/tintin/download/
+MASTER_SITES=	http://mail.newclear.net/tintin/download/ \
+		http://freebsd.hanirc.org/~jhp/tintin++/ 
 DISTNAME=	tintin++v1.83
 
 MAINTAINER=	jhp@cocoja.holywar.net
