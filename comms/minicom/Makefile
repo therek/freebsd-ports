@@ -3,7 +3,7 @@
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.31 2000/09/27 10:16:21 asami Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.32 2000/09/28 16:41:51 obrien Exp $
 #
 
 PORTNAME=	minicom
@@ -15,7 +15,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
 		http://www.clinet.fi/~walker/  \
 		http://www.pp.clinet.fi/~walker/
 MASTER_SITE_SUBDIR=	apps/serialcomm/dialout
-DISTFILES=	${PKGNAME}.src.tar.gz
+DISTFILES=	${DISTNAME}.src${EXTRACT_SUFX}
 
 MAINTAINER=	obrien@FreeBSD.org
 
