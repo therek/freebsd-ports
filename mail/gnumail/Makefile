@@ -2,22 +2,24 @@
 # Date created:         11 Jun 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/gnumail/Makefile,v 1.2 2001/08/09 11:06:24 tg Exp $
+# $FreeBSD: ports/mail/gnumail/Makefile,v 1.3 2001/08/30 10:40:16 tg Exp $
 #
 
 PORTNAME=	gnumail
-PORTVERSION=	0.6.0
+PORTVERSION=	0.7.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.collaboration-world.com/gnumail/
-DISTNAME=	GNUMail
+DISTNAME=	GNUMail-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
-RUN_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
+BUILD_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps \
+		${LOCALLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libPantomime.so:${PORTSDIR}/mail/pantomime
+RUN_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps \
+		${LOCALLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libPantomime.so:${PORTSDIR}/mail/pantomime
 
 PREFIX=		${LOCALBASE}/GNUstep
-WRKSRC=		${WRKDIR}/${DISTNAME}/Source
+WRKSRC=		${WRKDIR}/GNUMail/Source
 USE_NEWGCC=	yes
 USE_GMAKE=	yes
 MAKEFILE=
@@ -26,6 +28,7 @@ ALL_TARGET=
 NO_MTREE=	yes
 
 XGPSBUNDLEDIR=	${PREFIX}/System/Library/Bundles/libgnustep-xgps.bundle
+LOCALLIBDIR=	${PREFIX}/Local/Libraries
 
 .include <bsd.port.pre.mk>
 
