@@ -2,11 +2,11 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Set-Scalar/Makefile,v 1.1 2001/01/04 00:08:13 will Exp $
 #
 
 PORTNAME=	Set-Scalar
-PORTVERSION=	1.03
+PORTVERSION=	1.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Set
