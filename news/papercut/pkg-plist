@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/news/papercut/pkg-plist,v 1.2 2004/01/05 01:37:16 clement Exp $
 bin/papercut
 %%DATADIR%%/papercut.py
 %%DATADIR%%/papercut_cache.py
@@ -50,4 +50,4 @@ bin/papercut
 @dirrm %%DATADIR%%/storage
 @unexec rmdir %D/%%DATADIR%%/cache || true
 @unexec rmdir %D/%%DATADIR%%/logs || true
-@unexec rmdir %D/%%DATADIR%% || echo "If you are permanently removing this port, you should do a ``rm -rf %D/%%DATADIR%%`` to remove any files left." | fmt
+@unexec rmdir %D/%%DATADIR%% 2> /dev/null || echo "If you are permanently removing this port, you should do a ``rm -rf %D/%%DATADIR%%`` to remove any files left." | fmt
