@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.120 2003/08/05 12:00:52 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.121 2003/08/07 13:21:05 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -250,6 +250,12 @@ PLIST_SUB+=		RUBY_VERSION="${RUBY_VERSION}" \
 			RUBY_R="${RUBY_R}" \
 			RUBY_DEFAULT_SUFFIX="${RUBY_DEFAULT_SUFFIX}" \
 			${PLIST_RUBY_DIRS:S,DIR="${LOCALBASE}/,DIR=",}
+
+.if ${RUBY_VER} >= 1.8
+PLIST_SUB+=		RUBY18_ONLY=""
+.else
+PLIST_SUB+=		RUBY18_ONLY="@comment "
+.endif
 
 # require check
 .if defined(RUBY_REQUIRE)
