@@ -3,15 +3,15 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_index_rss/Makefile,v 1.1 2001/04/09 03:48:57 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_index_rss
 PORTVERSION=	0.10
 CATEGORIES=	www
-MASTER_SITES=	http://www.tangent.org/mod_index_rss/
+MASTER_SITES=	http://software.tangent.org/download/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
