@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.37 2000/06/05 12:58:39 nakai Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.38 2000/06/06 06:08:00 nakai Exp $
 #
 
     SUBDIR += 9menu
@@ -20,6 +20,7 @@
     SUBDIR += fvwm95-i18n
     SUBDIR += gnome2wmaker
     SUBDIR += gwm
+    SUBDIR += icepref
     SUBDIR += icewm
     SUBDIR += icewm-i18n
     SUBDIR += libdockapp
