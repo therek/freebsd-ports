@@ -2,18 +2,21 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.19 2000/12/07 18:15:38 nectar Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.20 2001/02/05 15:33:23 olgeni Exp $
 #
 
 PORTNAME=	grail
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	www python
-MASTER_SITES=	ftp://ftp.python.org/pub/grail/
-DISTFILES=	${PORTNAME}-06.tgz
+MASTER_SITES=	http://prdownloads.sourceforge.net/grail/
+EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	nectar@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+
+BROKEN=		"Doesn't seem to work with Python 2.x"
 
 USE_PYTHON=	yes
 GRAILSUBDIR=	share/grail
