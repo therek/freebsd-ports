@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.306 1999/10/15 10:41:55 asami Exp $
+# $FreeBSD: ports/net/Makefile,v 1.307 1999/10/16 07:15:06 taoka Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -34,6 +34,7 @@
     SUBDIR += cvsup-bin
     SUBDIR += cvsup-mirror
     SUBDIR += cvsupd-bin
+    SUBDIR += ddup
     SUBDIR += delegate
     SUBDIR += dgd
     SUBDIR += dgd-lpmud
