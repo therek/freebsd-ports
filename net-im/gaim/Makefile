@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gaim
-# Version required:		0.9.11
+# Version required:		0.9.12
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.13 1999/11/04 20:04:07 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.14 2000/03/23 00:21:56 jim Exp $
 #
 
-DISTNAME=	gaim-0.9.11
+DISTNAME=	gaim-0.9.12
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.marko.net/pub/gaim/
 
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ARGS=	--disable-esd
+
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
 
