@@ -2,7 +2,7 @@
 # Date created:				24 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/xwpick/Makefile,v 1.4 2000/03/29 07:18:45 kris Exp $
+# $FreeBSD: ports/graphics/xwpick/Makefile,v 1.5 2000/04/14 10:48:01 asami Exp $
 #
 
 PORTNAME=		xwpick
@@ -15,16 +15,13 @@ MAINTAINER=		ports@FreeBSD.org
 
 USE_IMAKE=		yes
 MAN1=			xwpick.1
-MANCOMPRESSED=		no
 
-do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/xwpick ${PREFIX}/bin
-	@ ${INSTALL_DATA} ${WRKSRC}/xwpick.man ${PREFIX}/man/man1/xwpick.1
+post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/xwpick
-	@ ${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${PREFIX}/share/doc/xwpick
-	@ ${INSTALL_DATA} ${WRKSRC}/CNL_ARTICLE.PS ${PREFIX}/share/doc/xwpick
-	@ ${INSTALL_DATA} ${WRKSRC}/0README ${PREFIX}/share/doc/xwpick/README
+	@${MKDIR} ${PREFIX}/share/doc/xwpick
+	${INSTALL_DATA} ${WRKSRC}/CHANGELOG ${PREFIX}/share/doc/xwpick
+	${INSTALL_DATA} ${WRKSRC}/CNL_ARTICLE.PS ${PREFIX}/share/doc/xwpick
+	${INSTALL_DATA} ${WRKSRC}/0README ${PREFIX}/share/doc/xwpick/README
 .endif
 
 .include <bsd.port.mk>
