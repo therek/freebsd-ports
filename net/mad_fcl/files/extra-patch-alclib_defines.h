@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/mad_fcl/files/patch-alclib_defines.h,v 1.2 2004/06/25 13:29:57 krion Exp $
 
 --- alclib/defines.h.orig	Fri Jun 25 13:18:59 2004
 +++ alclib/defines.h	Fri Jun 25 13:35:11 2004
