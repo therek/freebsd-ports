@@ -2,11 +2,12 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.11 2001/05/16 12:20:28 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.12 2001/06/01 10:59:08 des Exp $
 #
 
 PORTNAME=	linux-opera
 PORTVERSION=	5.0
+PORTREVISION=	1
 CATEGORIES=	www linux
 MASTER_SITES=	http://opera.online.no/linux/tgz/500/ \
 		ftp://ftp.opera.com/pub/opera/linux/500/ \
