@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1996
 # Whom:			Hideaki Ohmon <ohmon@tom.sfc.keio.ac.jp>
 #
-# $FreeBSD: ports/print/pkfonts300/Makefile,v 1.20 2000/04/09 17:41:04 cpiazza Exp $
+# $FreeBSD: ports/print/pkfonts300/Makefile,v 1.21 2000/04/09 17:50:29 cpiazza Exp $
 #
 
 PORTNAME=	pkfonts${RESOLUTION}
@@ -16,7 +16,7 @@ DISTFILES=	pk${RESOLUTION}.tar.gz
 DIST_SUBDIR=	pkfonts
 EXTRACT_ONLY=	# extracted directly in install target
 NO_BUILD=	yes
-PLIST=		${PKGDIR}/${RESOLUTION}.list
+PLIST=		${PKGDIR}/pkg-plist.${RESOLUTION}
 
 .if !defined(RESOLUTION)
 RESOLUTION=	300
