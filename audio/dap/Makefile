@@ -2,7 +2,7 @@
 # Date created:				23 August 1998
 # Whom:					yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/dap/Makefile,v 1.11 2000/08/03 09:22:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dap
@@ -13,7 +13,7 @@ EXTRACT_SUFX=.tgz
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 MAKEFILE=	Makefile.linux
 USE_X_PREFIX=	yes

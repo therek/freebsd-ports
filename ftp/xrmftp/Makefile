@@ -2,7 +2,7 @@
 # Date created:				28 March 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.CA>
 #
-# $FreeBSD: ports/ftp/xrmftp/Makefile,v 1.3 2001/03/08 19:31:10 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xrmftp
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.src.tgz
 
 MAINTAINER=	matt@LUCIDA.CA
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/xrmftp-1.2.4.src

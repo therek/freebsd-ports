@@ -2,7 +2,7 @@
 # Date created:		02 February 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/emulators/bfe/Makefile,v 1.5 2001/05/29 18:15:09 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bfe
@@ -12,16 +12,18 @@ MASTER_SITES=	http://www.qzx.com/bfe/_download/
 
 MAINTAINER=	greid@FreeBSD.org
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 RUN_DEPENDS=	bochs:${PORTSDIR}/emulators/bochs
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 
 WRKSRC=		${WRKDIR}/bfe
 
 pre-build:
 	${PERL} -pi -e "s@/usr/X11R6@${X11BASE}@g; \
 			s@/usr/local@${LOCALBASE}@g; \
+			s@-lforms@-lforms -lXpm@g; \
 			s@gcc@${CC}@g; s@-O2@${CFLAGS}@g" ${WRKSRC}/Makefile
 
 do-install:

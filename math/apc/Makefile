@@ -2,7 +2,7 @@
 # Date created:		May 1 1997
 # Whom:			Eric A. Griff <eagriff@global2000.net>
 #
-# $FreeBSD: ports/math/apc/Makefile,v 1.12 2000/04/14 07:19:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	apc
@@ -12,7 +12,7 @@ MASTER_SITES= 	http://members.global2000.net/~eagriff/
 
 MAINTAINER=	eagriff@global2000.net
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_X_PREFIX=	yes
 MAN1=		apc.1
