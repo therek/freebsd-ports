@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.58 2000/09/06 15:08:32 sada Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.59 2000/09/20 17:05:54 sobomax Exp $
 #
 
     SUBDIR += aftp
@@ -16,6 +16,7 @@
     SUBDIR += gsnes9x
     SUBDIR += hfs
     SUBDIR += hfsutils
+    SUBDIR += ia64sim
     SUBDIR += ines
     SUBDIR += ksnes9x
     SUBDIR += linux-vmware-toolbox
