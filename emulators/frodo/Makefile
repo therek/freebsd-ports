@@ -2,13 +2,13 @@
 # Date created:		11 Dez 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/emulators/frodo/Makefile,v 1.7 2000/01/03 03:33:19 steve Exp $
+# $FreeBSD: ports/emulators/frodo/Makefile,v 1.8 2000/04/12 04:55:23 mharo Exp $
 #
 
 PORTNAME=	frodo
 PORTVERSION=	4.1a
 CATEGORIES=	emulators tk82
-MASTER_SITES=	ftp://sunsite.unc.edu/pub/micro/commodore/crossplatform/emulators/unix/
+MASTER_SITES=	ftp://metalab.unc.edu/pub/micro/commodore/crossplatform/emulators/unix/
 DISTNAME=	FrodoV4_1a.Src
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
@@ -20,6 +20,9 @@ ALL_TARGET=	Frodo
 WRKSRC=		${WRKDIR}/Frodo/Src
 
 ROM=		1541 Basic Char Kernal
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKDIR}/Frodo/TkGui.tcl
 
 do-configure:
 	@(cd ${WRKSRC}; ${SH} ./configure)
@@ -36,7 +39,7 @@ do-install:
 	${INSTALL_DATA} "${WRKDIR}/Frodo/Frodo Logo" ${PREFIX}/libexec/frodo
 	${CP} "${WRKDIR}/Frodo/TkGui.tcl" ${PREFIX}/libexec/frodo
 	${MKDIR} ${PREFIX}/libexec/frodo/64prgs
-	@cd ${WRKDIR}/Frodo/64prgs; tar cf - . | (cd ${PREFIX}/libexec/frodo/64prgs; tar xf -)
+	@(${TAR} -C ${WRKDIR}/Frodo/64prgs -cf - . | ${TAR} -C ${PREFIX}/libexec/frodo/64prgs -xf -
 
 post-install:
 .if !defined(NOPORTDOCS)
@@ -44,7 +47,7 @@ post-install:
 .for i in CHANGES
 	${INSTALL_DATA} ${WRKDIR}/Frodo/${i} ${PREFIX}/share/doc/frodo
 .endfor
-	@cd ${WRKDIR}/Frodo/Docs; tar cf - . | (cd ${PREFIX}/share/doc/frodo; tar xf -)
+	@(${TAR} -C ${WRKDIR}/Frodo/Docs -cf - . | ${TAR} -C ${PREFIX}/share/doc/frodo -xf -)
 .endif
 
 .include <bsd.port.mk>

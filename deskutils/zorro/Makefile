@@ -2,7 +2,7 @@
 # Date created:         03 Aug 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD: ports/deskutils/zorro/Makefile,v 1.17 1999/11/28 18:32:45 steve Exp $
+# $FreeBSD: ports/deskutils/zorro/Makefile,v 1.18 2000/04/08 22:04:19 mharo Exp $
 #
 
 PORTNAME=	zorro
@@ -16,6 +16,9 @@ MAINTAINER=	shanee@augusta.de
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/zorro
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/zorro ${PREFIX}/bin/zorro

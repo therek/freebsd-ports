@@ -2,7 +2,7 @@
 # Date created:				21 April 1999
 # Whom:					fenner
 #
-# $FreeBSD: ports/audio/snowstar/Makefile,v 1.3 1999/11/28 18:31:52 steve Exp $
+# $FreeBSD: ports/audio/snowstar/Makefile,v 1.4 2000/04/08 21:24:27 mharo Exp $
 
 PORTNAME=	snowstar
 PORTVERSION=	0.75.5
@@ -18,12 +18,14 @@ RUN_DEPENDS=	rio:${PORTSDIR}/audio/rio \
 NO_BUILD=	true
 NO_WRKSUBDIR=	true
 
+DOC_FILES=	CHANGES TODO README_Snowstar LICENSE
+
 # somehow snowstar.tcl managed to get loaded with ^M's.
 post-extract:
-	@${MV} ${WRKSRC}/snowstar.tcl ${WRKSRC}/snowstar.tcl.dist
-	@${SED} -e 's/$$//' ${WRKSRC}/snowstar.tcl.dist > ${WRKSRC}/snowstar.tcl
+	@${PERL} -pi -e "s|\r\n|\n|g" ${WRKSRC}/snowstar.tcl
 
-DOC_FILES=	CHANGES TODO README_Snowstar LICENSE
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/snowstar.tcl
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/snowstar.tcl ${PREFIX}/bin/snowstar

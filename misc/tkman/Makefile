@@ -2,7 +2,7 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/misc/tkman/Makefile,v 1.39 2000/06/08 10:10:31 tg Exp $
+# $FreeBSD: ports/misc/tkman/Makefile,v 1.40 2000/06/09 09:35:13 sobomax Exp $
 #
 
 PORTNAME=	tkman
@@ -20,7 +20,7 @@ RUN_DEPENDS=	rman:${PORTSDIR}/textproc/rman \
 NO_CDROM=	"License required"
 
 post-patch:
-	perl -pi -e "s;/usr/local/bin/wish;${LOCALBASE}/bin/wish8.3;" \
+	${PERL} -pi -e "s;/usr/local/bin/wish;${LOCALBASE}/bin/wish8.3;" \
 		${WRKSRC}/contrib/tkmanclient
 
 post-install:

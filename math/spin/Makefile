@@ -2,7 +2,7 @@
 # Date created:		Oct 23, 1997
 # Whom:			jhanna@home.com
 #
-# $FreeBSD: ports/math/spin/Makefile,v 1.12 2000/05/14 05:40:50 billf Exp $
+# $FreeBSD: ports/math/spin/Makefile,v 1.13 2000/05/29 03:09:10 steve Exp $
 #
 
 PORTNAME=	spin
@@ -22,6 +22,9 @@ ALL_TARGET=	spin
 
 post-extract:
 	@cd ${WRKDIR}/Test && ${SH} ${WRKDIR}/Test/examples
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKDIR}/Xspin3.3/xspin3310.tcl
 
 pre-build:
 	cd ${WRKSRC} && ${MAKE} clean
