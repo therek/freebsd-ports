@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.327 2001/06/02 20:36:23 nsayer Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.328 2001/07/27 20:02:27 lioux Exp $
 #
 
     SUBDIR += 9term
@@ -88,6 +88,7 @@
     SUBDIR += xballoon
     SUBDIR += xbanner
     SUBDIR += xcb
+    SUBDIR += xcmd
     SUBDIR += xco
     SUBDIR += xcoloredit
     SUBDIR += xcolors
