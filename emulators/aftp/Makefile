@@ -4,13 +4,13 @@
 # Last updated:		2nd August, 1998
 # Whom:			Joel Sutton <jsutton@webnet.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/aftp/Makefile,v 1.4 1999/08/25 05:49:07 obrien Exp $
 #
 
 DISTNAME=	aftp
 PKGNAME=	aftp-1.0
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.apple.asimov.net/pub/apple_II/incoming/
+MASTER_SITES=	ftp://ftp.apple.asimov.net/pub/apple_II/utility/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jsutton@webnet.com.au
