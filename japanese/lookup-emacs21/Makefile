@@ -3,7 +3,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.3 1999/09/11 10:02:24 asami Exp $
+# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.4 1999/09/27 13:42:04 taoka Exp $
 #
 
 DISTNAME=	lookup-1.0
@@ -65,7 +65,7 @@ post-install:
 	${RM} -f ${WRKDIR}/${MANIFEST}
 	emacsdir=`${ECHO} ${EMACSDIR} | ${SED} -e "s;^${PREFIX}/;;"`; \
 	${CAT} ${PLIST} | ${GREP} -e "^$${emacsdir}" | \
-		${SED} -e "s;^${EMACSDIR}/;;" > ${WRKDIR}/${MANIFEST}
+		${SED} -e "s;^$${emacsdir}/;;" > ${WRKDIR}/${MANIFEST}
 	${MKDIR} ${EMACSDIR}/pkginfo
 	${INSTALL_DATA} ${WRKDIR}/${MANIFEST} \
 		${EMACSDIR}/pkginfo/
