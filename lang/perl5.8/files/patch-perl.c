@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/lang/perl5/files/patch-perl.c,v 1.1 2002/06/02 21:22:25 tobez Exp $
 
 --- perl.c.orig	Sun Jun  2 12:29:01 2002
 +++ perl.c	Sun Jun  2 12:30:14 2002

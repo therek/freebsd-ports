@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/lang/perl5/files/patch-ae,v 1.6 2002/06/02 21:22:25 tobez Exp $
 
 --- makedepend.SH.ORIG	Fri Jul 24 06:00:58 1998
 +++ makedepend.SH	Thu Jul 30 17:08:37 1998

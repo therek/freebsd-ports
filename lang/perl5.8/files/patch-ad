@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/lang/perl5/files/patch-ad,v 1.7 2002/06/02 21:22:25 tobez Exp $
 
 --- perl.h.ORIG	Thu Mar 22 07:05:02 2001
 +++ perl.h	Tue Apr 10 20:29:46 2001

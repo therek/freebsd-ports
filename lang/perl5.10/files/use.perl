@@ -1,5 +1,5 @@
 #! %%PREFIX%%/bin/perl -w
-# $FreeBSD: ports/lang/perl5/files/use.perl,v 1.4 2002/06/16 12:28:01 tobez Exp $
+# $FreeBSD: ports/lang/perl5/files/use.perl,v 1.5 2002/06/16 12:40:13 tobez Exp $
 use strict;
 
 # XXX what to do with perldoc, pelbug, perlcc ??

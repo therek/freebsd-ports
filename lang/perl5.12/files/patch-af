@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/lang/perl5/files/patch-af,v 1.3 2002/06/02 21:22:25 tobez Exp $
 
 --- Configure.ORIG	Mon Mar 19 05:03:33 2001
 +++ Configure	Tue Apr 10 20:31:56 2001
