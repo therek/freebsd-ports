@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.493 2001/03/23 04:41:47 lioux Exp $
+# $FreeBSD: ports/net/Makefile,v 1.494 2001/03/24 18:49:50 lioux Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -325,6 +325,7 @@
     SUBDIR += tund
     SUBDIR += unison
     SUBDIR += vnc
+    SUBDIR += vrrp
     SUBDIR += vtun
     SUBDIR += wais
     SUBDIR += wide-dhcp
