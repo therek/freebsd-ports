@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gd2/scripts/configure,v 1.1 2002/01/09 04:48:20 mi Exp $
 
 # The GD_FONTS environment variable can be set to specify the gzipped
 # tar-ball containing the fonts in bdf format and the bdf file names.
@@ -36,7 +36,7 @@ rm -f $WRKSRC/Makefile.fonts
 for font in Tiny Small MediumBold Large Giant
 do
 	f=`echo $font | tr -d [[:lower:]] | tr [[:upper:]] [[:lower:]]`
-	rm -f $WRKSRC/gdfont$font.[ch]
+	rm -f $WRKSRC/gdfont$f.[ch]
 	printf 'gdfont%s.c gdfont%s.h: %s\
 		perl ${.CURDIR}/bdftogd gdFont%s font%s < %s\n' \
 		$f $f $1 $font $f $1 >> $WRKSRC/Makefile.fonts
