@@ -2,7 +2,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.5 2000/04/10 00:07:29 cpiazza Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.6 2000/05/29 02:49:51 steve Exp $
 #
 
 PORTNAME=	zope
@@ -13,6 +13,8 @@ DISTNAME=	Zope-${PORTVERSION}-src
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	thomas@hentschel.net
+
+FORBIDDEN=	"Contains security vulnerability - needs to have a hotfix applied. See http://www.zope.org/Products/Zope/Hotfix_06_16_2000/security_alert"
 
 BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
 RUN_DEPENDS=	${LOCALBASE}/sbin/apache:${PORTSDIR}/www/apache13-modssl
