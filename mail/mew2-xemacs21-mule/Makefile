@@ -2,13 +2,16 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mew2-xemacs21-mule/Makefile,v 1.1 2001/08/25 07:47:05 kiri Exp $
 #
 
 MAINTAINER=	kiri@FreeBSD.org
 
+# Mew major version
+MEW_MAJOR_VER=	2
+
 # This is a slave port.
-MASTERDIR=	${.CURDIR}/../mew
+MASTERDIR=	${.CURDIR}/../mew${MEW_MAJOR_VER}-emacs20
 
 # Set emacs port
 EMACS_PORT_NAME=	xemacs21-mule
@@ -31,8 +34,8 @@ ALL_TARGET=	package info jinfo
 INSTALL_TARGET=	install-mule-package
 
 # for xemacs package
-XEMACS_PKGNAME=	mew
-XEMACS_PKGVER=	1.16
-MEW_DOCDIR=	${EMACS_PACKAGESDIR}/etc/${XEMACS_PKGNAME}
+XEMACS_PKGNAME=	mew${MEW_MAJOR_VER}
+XEMACS_PKGVER=	2.00
+#MEW_DOCDIR=	${EMACS_PACKAGESDIR}/etc/${XEMACS_PKGNAME}
 
 .include "${MASTERDIR}/Makefile"
