@@ -2,11 +2,11 @@
 # Date created:         		8th May 2001
 # Whom:                 		Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/librsvg/Makefile,v 1.1 2001/05/08 18:56:58 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	librsvg
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/librsvg
@@ -14,11 +14,13 @@ MASTER_SITE_SUBDIR=	stable/sources/librsvg
 MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
-LIB_DEPENDS=	freetype.6:${PORTSDIR}/print/freetype2
+LIB_DEPENDS=	freetype.6:${PORTSDIR}/print/freetype2 \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_GNOME=	yes
+USE_GNOMELIBS=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
