@@ -2,12 +2,12 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.42 2001/05/07 18:36:57 dinoex Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.43 2001/05/10 20:13:48 dinoex Exp $
 #
 
 PORTNAME=	tcl
 PORTVERSION=	8.3.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	lang tcl83
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcl8_3
@@ -24,8 +24,9 @@ CONFIGURE_ENV=	PORTSDIR=${PORTSDIR}
 MAKE_ENV=	SHORT_TCL_VER=83
 PKGINSTALL=	${PKGDIR}/pkg-install.tclsh
 PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.tclsh
+TCL_VER=	8.3
 
-PLIST_SUB=	TCL_VER=8.3 SHORT_TCL_VER=83
+PLIST_SUB=	TCL_VER=${TCL_VER} SHORT_TCL_VER=83
 
 MAN1=	tclsh.1
 
@@ -423,6 +424,8 @@ post-install:
 .if exists(${PKGINSTALL})
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif
+	${INSTALL_DATA} ${FILESDIR}/koi8-u.enc \
+		${PREFIX}/lib/tcl${TCL_VER}/encoding/
 
 test:
 	cd ${WRKSRC} && ${MAKE} test
