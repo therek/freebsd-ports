@@ -2,7 +2,7 @@
 # Date created:		7 March 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/less/Makefile,v 1.23 2000/12/31 14:37:42 sf Exp $
+# $FreeBSD: ports/japanese/less/Makefile,v 1.24 2001/01/01 18:31:35 sf Exp $
 #
 
 PORTNAME=	less+iso
@@ -32,7 +32,7 @@ MAN1=		jless.1 jlesskey.1
 
 DOCDIR=		${PREFIX}/share/doc/less
 READMES=	README.iso README.regex README.iso.jp README.regex.jp
-XGTAGS=		${DISTNAME}-iso${PORTVERSION:E}+gtags
+XGTAGS=		${DISTNAME}-iso${PORTVERSION:E}+gtags-20010110
 
 post-patch:
 	(cd ${WRKSRC} ; \
