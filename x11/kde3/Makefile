@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 00:50:02
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde2/Makefile,v 1.37 2000/09/15 21:40:47 will Exp $
+# $FreeBSD: ports/x11/kde2/Makefile,v 1.38 2000/10/25 03:33:54 will Exp $
 #
 
 PORTNAME=	kde
@@ -17,7 +17,7 @@ MAINTAINER=	will@FreeBSD.org
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 RUN_DEPENDS=	konqueror:${PORTSDIR}/x11/kdebase2 \
 		kjumpingcube:${PORTSDIR}/games/kdegames2 \
-		kdf:${PORTSDIR}/misc/kdeutils2 \
+		kdessh:${PORTSDIR}/misc/kdeutils2 \
 		kword:${PORTSDIR}/editors/koffice \
 		kppp:${PORTSDIR}/net/kdenetwork2 \
 		pixie:${PORTSDIR}/graphics/kdegraphics2 \
