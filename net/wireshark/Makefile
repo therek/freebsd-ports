@@ -2,11 +2,11 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.33 2000/11/20 01:31:09 kris Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.34 2000/11/20 12:04:08 asmodai Exp $
 #
 
 PORTNAME=	ethereal
-PORTVERSION=	0.8.13
+PORTVERSION=	0.8.14
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.ethereal.com/pub/ethereal/ \
 		ftp://gd.tuwien.ac.at/infosys/security/ethereal/ \
@@ -14,7 +14,6 @@ MASTER_SITES=	ftp://ftp.ethereal.com/pub/ethereal/ \
 		ftp://the.wiretapped.net/pub/security/packet-sniffing/ethereal/
 
 MAINTAINER=	billf@FreeBSD.org
-FORBIDDEN=	"Remotely exploitable buffer overflow; identical to Security Advisory 00:61"
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
