@@ -2,14 +2,13 @@
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/tgif2tex/Makefile,v 1.5 2000/04/09 17:50:43 cpiazza Exp $
+# $FreeBSD: ports/print/tgif2tex/Makefile,v 1.6 2000/04/14 17:10:47 knu Exp $
 #
 
 PORTNAME=	tgif2tex
-PORTVERSION=	1.46
+PORTVERSION=	2.01
 CATEGORIES+=	print
 MASTER_SITES=	http://camphor.elcom.nitech.ac.jp/~nakano/tgif2tex/
-DISTNAME=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
 
@@ -21,16 +20,10 @@ DOCSRC+=	example.obj \
 
 do-build:
 	@cd ${WRKSRC}; ${MV} tgif2tex tgif2tex.org; \
-	${SED} -e 's,/usr/local/X11R6/bin/tgif,${X11BASE}/bin/tgif,' \
-		-e 's;^#! */usr/local/bin/perl *;#!${PERL5};' \
+	${SED}	-e 's,/usr/local/X11R6/bin/tgif,${X11BASE}/bin/tgif,' \
+		-e 's;^#! */usr/bin/perl *;#!${PERL5};' \
+		-e 's,/usr/local,${PREFIX},' \
 			tgif2tex.org > tgif2tex
-
-pre-install:
-	@if [ ${PREFIX} != "/usr/local" ]; then \
-	    ${SED} s,/usr/local,${PREFIX}, ${WRKSRC}/tgif2tex \
-			> ${WRKSRC}/tgif2tex.org; \
-	    ${MV} ${WRKSRC}/tgif2tex.org ${WRKSRC}/tgif2tex; \
-	fi
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/tgif2tex ${PREFIX}/bin/tgif2tex
