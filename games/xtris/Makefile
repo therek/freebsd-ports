@@ -3,12 +3,12 @@
 # Date created:         24. Sep 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtris/Makefile,v 1.3 1999/08/25 06:06:24 obrien Exp $
 #
 
 DISTNAME=       xtris-1.15
 CATEGORIES=	games
-MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/xtris/
+MASTER_SITES=	http://www.iagora.com/~espel/xtris/
 
 MAINTAINER=	sec@42.org
 
