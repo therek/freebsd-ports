@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.260 2000/02/13 02:00:56 imura Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.261 2000/02/19 13:40:03 jedgar Exp $
 #
 
     SUBDIR += ElectricFence
@@ -130,7 +130,6 @@
     SUBDIR += p5-Devel-Peek
     SUBDIR += p5-Devel-Symdump
     SUBDIR += p5-Errno
-    SUBDIR += p5-Expect
     SUBDIR += p5-File-BasicFlock
     SUBDIR += p5-File-Lock
     SUBDIR += p5-File-Slurp
