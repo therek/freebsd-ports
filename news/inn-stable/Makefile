@@ -2,11 +2,11 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.66 2001/05/21 19:28:35 des Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.67 2001/05/24 14:56:17 des Exp $
 #
 
 PORTNAME=	inn
-SNAPSHOT=	20010523
+SNAPSHOT=	20010604
 PORTVERSION=	2.3.${SNAPSHOT}
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/snapshots/
@@ -33,6 +33,7 @@ CONFIGURE_ARGS+=	--with-log-dir=${INN_NEWSLOG}
 CONFIGURE_ARGS+=	--with-perl
 CONFIGURE_ARGS+=	--with-tmp-path=${INN_NEWSSPOOL}/tmp
 CONFIGURE_ARGS+=	--with-largefiles
+CONFIGURE_ARGS+=	--with-openssl
 
 # Various Options. See ${WRKSRC}/INSTALL for details
 
