@@ -2,11 +2,12 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/clanlib/Makefile,v 1.1 2000/09/25 06:58:42 sobomax Exp $
+# $FreeBSD: ports/devel/clanlib/Makefile,v 1.2 2000/10/08 00:07:44 asami Exp $
 #
 
 PORTNAME=	clanlib
 PORTVERSION=	0.4.4
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://dark.x.dtu.dk/~mbn/clanlib/download/
 DISTNAME=	ClanLib-${PORTVERSION}
