@@ -18,7 +18,7 @@
 #
 
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.1 2004/01/20 09:14:50 marcus Exp $
 #
 
 .if !defined(SDL_Include)
@@ -70,6 +70,7 @@ _REQUIRES_mixer=sdl
 _VERSION_mm=	8
 _SUBDIR_mm=		devel
 _LIB_mm=		SDLmm
+_PORTDIR_mm=	sdlmm
 _REQUIRES_mm=	sdl
 
 _VERSION_net=	0
