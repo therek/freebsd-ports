@@ -2,7 +2,7 @@
 # Date created:		22 September 1998
 # Whom:			Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.37 2000/12/21 11:56:47 kjc Exp $
+# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.38 2001/02/05 16:48:45 olgeni Exp $
 #
 
 PORTNAME=	blt
@@ -18,6 +18,7 @@ LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 
 WRKSRC=		${WRKDIR}/blt2.4u
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--prefix=${PREFIX} --with-tcl=${PREFIX}/lib/tcl8.3 --with-tk=${PREFIX}/lib/tk8.3
 INSTALLS_SHLIB=	yes
 
 MANN=		BLT.n barchart.n beep.n bgexec.n bitmap.n \
