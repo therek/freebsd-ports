@@ -3,13 +3,14 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.1 1999/11/30 09:07:14 julian Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.2 1999/11/30 15:59:40 billf Exp $
 #
 
 DISTNAME=      linuxthreads
 PKGNAME=       linuxthreads-0.71
 CATEGORIES=    devel
 MASTER_SITES=  ftp://ftp.inria.fr/INRIA/Projects/cristal/Xavier.Leroy/
+ONLY_FOR_ARCHS= i386
 
 MAINTAINER=    dick@tar.com
 
