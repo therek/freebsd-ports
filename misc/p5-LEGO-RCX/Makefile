@@ -2,17 +2,17 @@
 # Date created:				July 05 2000
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/misc/p5-LEGO-RCX/Makefile,v 1.1.1.1 2000/07/13 08:07:39 kbyanc Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	LEGO-RCX
-PORTVERSION=	1.00
+PORTVERSION=	1.01
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	LEGO
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	kbyanc@posi.net
+MAINTAINER=	kbyanc@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 
