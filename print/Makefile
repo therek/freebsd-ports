@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/print/Makefile,v 1.96 1999/08/31 01:44:20 peter Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -57,6 +57,7 @@
     SUBDIR += musixtex
     SUBDIR += offix-printer
     SUBDIR += pbm2ppa
+    SUBDIR += pclprint
     SUBDIR += pdflib
     SUBDIR += pdq
     SUBDIR += perlftlib
