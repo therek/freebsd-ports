@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.379 2001/08/30 08:31:06 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.380 2001/09/01 05:52:23 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -241,6 +241,7 @@
     SUBDIR += netscape47-communicator
     SUBDIR += netscape47-navigator
     SUBDIR += netype
+    SUBDIR += netypesv
     SUBDIR += newosaka
     SUBDIR += ng
     SUBDIR += ng-canna
