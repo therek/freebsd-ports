@@ -2,7 +2,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.20 2000/10/05 05:19:38 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdl
@@ -23,7 +23,9 @@ USE_XLIB=	yes
 USE_ESOUND=	yes
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	NASM="${LOCALBASE}/bin/nasm"
+CONFIGURE_ENV=	NASM="${LOCALBASE}/bin/nasm" \
+		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}" \
+		PTHREAD_LIBS="${PTHREAD_LIBS}"
 CONFIGURE_ARGS=	--enable-video-svga
 
 CFLAGS+=	${PTHREAD_CFLAGS}
