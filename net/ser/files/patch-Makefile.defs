@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/net/ser/files/patch-Makefile.defs,v 1.4 2004/10/17 19:22:13 sobomax Exp $
 
 --- Makefile.defs.orig
 +++ Makefile.defs
@@ -81,12 +81,3 @@ $FreeBSD$
  					-Wall   \
  			#if gcc 3.0
  ifeq			($(CC_SHORTVER), 3.0)
-@@ -707,7 +709,7 @@
- 		found_lock_method=yes
- 		LIBS= -pthread -lfl  #dlopen is in libc
- 	else
--		LIBS= -lfl  #dlopen is in libc
-+		LIBS= -lfl -L$(LOCALBASE)/lib -lsiplog #dlopen is in libc
- 	endif
- 	YACC=yacc
- endif
