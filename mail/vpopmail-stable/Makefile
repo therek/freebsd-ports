@@ -1,8 +1,8 @@
 # New ports collection makefile for: vpopmail
 # Date created:		21 Sep 2000
-# Whom:			makeport.pl
+# Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.1 2000/09/21 13:01:40 nbm Exp $
 #
 
 PORTNAME=	vpopmail
@@ -22,7 +22,7 @@ USE_GMAKE=	YES
 
 CONFIGURE_ARGS=	--enable-qmail-dir=${QMAIL_DIR} \
 		--enable-tcprules-bin=${LOCALBASE}/bin/tcprules \
-		--enable-tcpserver-file=~vpopmail/etc/tcp.smtp
+		--enable-tcpserver-file=${PREFIX}/vpopmail/etc/tcp.smtp
 
 #
 # Attempt to set the location of qmail by a simple check.  Override this
