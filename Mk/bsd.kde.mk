@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.11 2002/04/19 02:29:28 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.12 2002/05/05 09:55:30 kris Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -24,8 +24,8 @@ KDE_MAINTAINER=		will@FreeBSD.org
 
 #
 # WARNING!  ACHTUNG!  DANGER WILL ROBINSON!
-# DO NOT USE USE_[QT,KDELIBS,KDEBASE}_VER=3 UNLESS YOU ARE INVOLVED IN THE
-# KDE/FREEBSD PROJECT AND/OR YOU KNOW WHAT YOU ARE DOING!
+# DO NOT USE USE_QT_VER=1 UNLESS YOU WILL NOT BE NEEDING ANY ASSISTANCE
+# WHATSOEVER FROM THE MAINTAINER OF THIS FILE!
 #
 
 # Compat shims.
@@ -106,7 +106,7 @@ BUILD_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt30
 RUN_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt30
 USE_NEWGCC=		yes
 QTCPPFLAGS+=	-I/usr/include -I${LOCALBASE}/include -I${PREFIX}/include \
-				-I${QT_PREFIX}/include/qt
+				-I${QT_PREFIX}/include
 QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -ljpeg \
 				-L${QT_PREFIX}/lib
 .if !defined(QT_NONSTANDARD)
