@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.198 2000/05/07 14:31:26 sada Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.199 2000/05/22 12:42:10 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -130,6 +130,7 @@
     SUBDIR += povray31
     SUBDIR += ppm2fli
     SUBDIR += pstoedit
+    SUBDIR += pvmpov
     SUBDIR += py-imaging
     SUBDIR += py-imaging-handbook
     SUBDIR += py-opengl
