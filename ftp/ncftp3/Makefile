@@ -4,13 +4,13 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.71 2000/03/20 02:36:58 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.72 2000/03/22 00:27:22 obrien Exp $
 #
 
-DISTNAME=       ncftp-3.0beta21-src
-PKGNAME=        ncftp-3.0b21
+DISTNAME=	ncftp-3.0.0-src
+PKGNAME=	ncftp3-3.0.0
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/3.0BETA/
+MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 
 MAINTAINER=	obrien@FreeBSD.org
 
@@ -19,7 +19,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ncurses
 MAN1=		ncftp3.1 ncftpbatch.1 ncftpget.1 ncftpls.1 ncftpput.1
 MAN3=		Strn.3
-NO_LATEST_LINK=	yes
 
 .include <bsd.port.pre.mk>
 
