@@ -2,11 +2,11 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.14 2000/07/07 19:32:16 steve Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.15 2000/07/13 23:47:46 steve Exp $
 #
 
 PORTNAME=	thttpd
-PORTVERSION= 	2.19
+PORTVERSION= 	2.20
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.acme.com/software/thttpd/ \
 		http://www.freenix.no/~anders/
