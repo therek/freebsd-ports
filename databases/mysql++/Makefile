@@ -2,7 +2,7 @@
 # Date created:				20th July 2000
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/mysql++/Makefile,v 1.1 2000/07/21 05:06:54 will Exp $
 #
 
 PORTNAME=	mysql++
