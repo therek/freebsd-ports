@@ -2,7 +2,7 @@
 # Date created:		15 November 1999
 # Whom:			jim@thehousleys.net
 #
-# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.14 2000/10/02 03:10:28 jeh Exp $
+# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.15 2000/10/21 17:47:40 jeh Exp $
 #
 
 PORTNAME=	healthd
@@ -23,13 +23,12 @@ CONFIGURE_ARGS=	--exec-prefix=${PREFIX}
 MAN8=		healthd.8 healthdc.8
 INSTALL_TARGET=	install-all
 
-PLIST=		${WRKDIR}/PLIST.BASE
 HDDOCDIR=	${PREFIX}/share/doc/healthd
 
-pre-install:
-	@cp ${.CURDIR}/pkg-plist ${WRKDIR}/PLIST.BASE
-.if !defined(NOPORSDOCS)
-	@cat ${.CURDIR}/pkg-plist.doc >> ${WRKDIR}/PLIST.BASE
+.if !defined(NOPORTDOCS)
+PLIST_SUB=	HDDOCS=''
+.else
+PLIST_SUB=	HDDOCS='@comment '
 .endif
 
 post-install:
