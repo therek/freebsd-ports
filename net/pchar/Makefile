@@ -3,7 +3,7 @@
 # Date created:			  Wed Nov 03, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/pchar/Makefile,v 1.13 2001/04/09 21:48:51 bmah Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pchar
@@ -12,6 +12,7 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.employees.org/~bmah/Software/pchar/
 
 MAINTAINER=	bmah@FreeBSD.org
+COMMENT=	Sandia Internet path characterization tool
 
 GNU_CONFIGURE=	yes
 MAN8=		pchar.8

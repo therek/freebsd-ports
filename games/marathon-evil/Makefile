@@ -2,7 +2,7 @@
 # Date created:		01 April 2001
 # Whom:			Bruce A. Mah <bmah@freebsd.org>
 #
-# $FreeBSD: ports/games/marathon-evil/Makefile,v 1.1 2001/04/10 20:36:17 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	marathon-evil
@@ -13,6 +13,7 @@ MASTER_SITES=	http://archives2.bungie.org/a1sdl/ \
 DISTNAME=	MarathonEvil-3
 
 MAINTAINER=	bmah@freebsd.org
+COMMENT=	Marathon-Evil scenario for use with AlephOne
 
 RUN_DEPENDS=	alephone:${PORTSDIR}/games/alephone
 
