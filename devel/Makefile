@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.287 2000/05/30 09:32:49 kris Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.288 2000/05/30 09:36:41 kris Exp $
 #
 
     SUBDIR += ElectricFence
@@ -127,6 +127,7 @@
     SUBDIR += newlib-m68k
     SUBDIR += newt
     SUBDIR += noweb
+    SUBDIR += oaf
     SUBDIR += omniORB
     SUBDIR += p5-AppConfig
     SUBDIR += p5-BSD-Resource
