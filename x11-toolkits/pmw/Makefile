@@ -2,7 +2,7 @@
 # Date created:		03 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.12 2000/04/21 07:01:09 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.13 2000/09/13 12:27:53 tg Exp $
 #
 
 PORTNAME=	py-pmw
@@ -14,6 +14,7 @@ DISTNAME=	Pmw.${PORTVERSION}
 MAINTAINER=	tg@FreeBSD.org
 
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+LIB_DEPENDS=	BLT24.2:${PORTSDIR}/x11-toolkits/blt
 
 PLIST_SUB=	PMWVERSION="${PMWVERSION}"
 USE_PYTHON=	yes
