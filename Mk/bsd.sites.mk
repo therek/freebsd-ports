@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.36 2001/03/20 09:21:34 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.37 2001/03/20 20:04:49 sf Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -188,7 +188,6 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
 	ftp://ftp.krnet.ne.jp/pub/ruby/%SUBDIR%/ \
-	ftp://ftp.nctu.edu.tw/computer-languages/ruby/%SUBDIR%/ \
 	ftp://mirror.nucba.ac.jp/mirror/ruby/%SUBDIR%/
 
 MASTER_SITE_SOURCEWARE+= \
