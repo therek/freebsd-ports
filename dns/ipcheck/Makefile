@@ -2,14 +2,14 @@
 # Date created:		24 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ipcheck/Makefile,v 1.7 2001/04/03 12:41:30 lioux Exp $
+# $FreeBSD: ports/net/ipcheck/Makefile,v 1.8 2001/04/10 21:33:42 lioux Exp $
 #
 
 PORTNAME=	ipcheck
-PORTVERSION=	0.93
+PORTVERSION=	1.01
 CATEGORIES=	net
 MASTER_SITES=	http://ipcheck.sourceforge.net/releases/
-DISTNAME=	${PORTNAME}.${PORTVERSION:E}
+DISTNAME=	${PORTNAME}.v${PORTVERSION:S/.//}
 EXTRACT_SUFX=
 EXTRACT_ONLY=
 
