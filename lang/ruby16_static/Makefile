@@ -2,7 +2,7 @@
 # Date created:			19 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.1 2001/02/19 15:55:35 knu Exp $
 #
 
 PORTNAME=	ruby_static
@@ -40,6 +40,7 @@ CONFIGURE_ENV=	XLDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS!=	cd ${_RUBY_PORTDIR} && ${MAKE} -V CONFIGURE_ARGS
 CONFIGURE_ARGS:=	${CONFIGURE_ARGS:N--enable-shared:M-*} \
 			--with-static-linked-ext=yes \
+			--with-libc_r=no \
 			--with-opt-dir="${LOCALBASE}"
 
 do-fetch:
