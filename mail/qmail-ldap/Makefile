@@ -2,7 +2,7 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.3 2000/10/03 05:12:30 lioux Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.4 2000/10/08 07:21:00 asami Exp $
 #
 
 PORTNAME=	qmail
@@ -16,6 +16,8 @@ PATCHFILES=	qmail-ldap-1.03-${LDAP_PATCH_DATE}.patch.gz
 MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS+=	ldap.1:${PORTSDIR}/net/openldap
+
+NO_PACKAGE=	Unsure of djb\'s packaging license
 
 .if !defined(PRE_MK_INCLUDED)
 .include <bsd.port.pre.mk>
