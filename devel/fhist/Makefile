@@ -2,11 +2,11 @@
 # Date created:				Jan 05 2000
 # Whom: 				<jkoshy@freebsd.org>
 #
-# $FreeBSD: ports/devel/fhist/Makefile,v 1.2 2000/01/05 10:59:47 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fhist
-PORTVERSION=	1.6
+PORTVERSION=	1.8
 CATEGORIES=	devel
 MASTER_SITES=	http://www.canb.auug.org.au/~millerp/		\
 		ftp://ftp.agso.gov.au/pub/Aegis/ 		\
