@@ -4,7 +4,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.4 2000/02/13 03:24:05 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.5 2000/03/08 02:12:42 gallatin Exp $
 #
 
 DISTNAME=	netscape-4.7-1.alpha
@@ -47,6 +47,7 @@ do-install:
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libc_r.so
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libpthread.so
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libpthreads.so
+	@cd ${PREFIX}/sbin ; ${LN} -sf /bin/sh sh
 	@touch ${PREFIX}/etc/sia/siainitgood
 
 .include <bsd.port.mk>
