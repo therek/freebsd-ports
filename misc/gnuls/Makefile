@@ -2,11 +2,12 @@
 # Date created:				06 January 1996
 # Whom:					bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/misc/gnuls/Makefile,v 1.15 2001/08/25 01:09:34 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnuls
 PORTVERSION=	4.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	fileutils
