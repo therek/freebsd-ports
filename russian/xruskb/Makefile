@@ -3,12 +3,12 @@
 # Date created:		14 Jan 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/xruskb/Makefile,v 1.3 1999/08/31 01:47:05 peter Exp $
 
 DISTNAME=	xruskb-1.9.3
 CATEGORIES=	russian x11
-MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/ \
-		ftp://ftp.kiae.su/pub/x11/cyrillic/
+MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/xruskb-old/ \
+		# ftp://ftp.kiae.su/pub/x11/cyrillic/
 
 MAINTAINER=	ports@freebsd.org
 
