@@ -1,5 +1,5 @@
 #
-#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.2 2000/05/08 13:09:50 shige Exp $
+#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.3 2000/05/10 15:59:44 shige Exp $
 #
 #	bsd.emacs.mk - 19990829 Shigeyuki Fukushima.
 #
@@ -65,7 +65,7 @@ EMACS_COMMON_PORT=	NO
 # Emacs-20.x
 .elif (${EMACS_PORT_NAME} == "emacs20")
 EMACS_NAME=		emacs
-EMACS_VER=		20.6
+EMACS_VER=		20.7
 EMACS_MAJOR_VER=	20
 EMACS_LIBDIR?=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER?=	share/${EMACS_NAME}/${EMACS_VER}
