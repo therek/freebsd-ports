@@ -2,12 +2,12 @@
 # Date created:		6 January 1999
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-merril/Makefile,v 1.6 2000/04/12 14:37:54 knu Exp $
+# $FreeBSD$
 #
 
 CATALOGNAME=	merril
 
-MAINTAINER=	issei@jp.FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../tcsh-nls-generic
 PKGDIR=		${.CURDIR}

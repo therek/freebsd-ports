@@ -2,12 +2,12 @@
 # Date created:		19 August 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tcsh-nls-asuka/Makefile,v 1.9 2000/04/12 14:37:50 knu Exp $
+# $FreeBSD$
 #
 
 CATALOGNAME=	asuka
 
-MAINTAINER=	issei@jp.FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../tcsh-nls-generic
 PKGDIR=		${.CURDIR}

@@ -2,7 +2,7 @@
 # Date created:         18 Febrary 1999
 # Whom:                 Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mailx/Makefile,v 1.5 2000/06/09 21:21:52 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mailx
@@ -17,7 +17,7 @@ PATCH_SITES=	${MASTER_SITE_PORTS_JP} \
 PATCHFILES=	mailx.v05.patch.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	issei@jp.FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_ONLY=	mail-2.2.8.tar.gz
 WRKSRC=		${WRKDIR}/mail-2.2.8

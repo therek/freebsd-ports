@@ -2,7 +2,7 @@
 # Date created:				29 July 1997
 # Whom:					Issei Suzuki <issei@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/math/topaz/Makefile,v 1.6 2000/12/24 08:22:54 issei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	topaz
@@ -11,7 +11,7 @@ CATEGORIES=	math
 MASTER_SITES=	http://hp.vector.co.jp/authors/VA007663/topaz/bin/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/}-src
 
-MAINTAINER=	issei@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

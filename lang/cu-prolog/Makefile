@@ -2,7 +2,7 @@
 # Date created:		7 July 1999
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/lang/cu-prolog/Makefile,v 1.1 1999/12/29 09:19:33 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cu-prolog
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.icot.or.jp/ifs/kbms-clp/unix/cuprolog/
 DISTFILES=	${DISTNAME}.tar.gz cupdoc.tar.gz
 DISTNAME=	cupsrc
 
-MAINTAINER=	issei@jp.FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/src
 MAKEFILE=	makefile

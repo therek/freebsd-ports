@@ -2,7 +2,7 @@
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.18 2001/01/16 17:33:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	afterstep-i18n
@@ -23,7 +23,7 @@ EXTRACT_ONLY=	${DISTNAME}.tar.gz \
 
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	issei@jp.FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 DIST_SUBDIR=	afterstep
 USE_X_PREFIX=	yes

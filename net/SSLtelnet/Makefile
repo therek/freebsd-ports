@@ -2,7 +2,7 @@
 # Date created:		Mar 29, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.17 2001/01/09 20:59:54 issei Exp $
+# $FreeBSD$
 
 PORTNAME=		SSLtelnet
 PORTVERSION=		0.13
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	kris
 
 FORBIDDEN=		"Remotely exploitable buffer overflow"
 
-MAINTAINER=		issei@jp.FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 USE_OPENSSL=		YES
 

@@ -2,7 +2,7 @@
 # Date created:		21 August 1998
 # Whom:			issei <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/games/xchadance/Makefile,v 1.4 1999/08/31 06:44:35 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xchadance
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://home.jp.FreeBSD.org/~issei/LOCAL_PORTS/
 DISTFILES=	xchada01.lzh
 
-MAINTAINER=	issei@jp.FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 
