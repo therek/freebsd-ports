@@ -2,11 +2,12 @@
 # Date created:		Sa   6 Jun 1998 10:24:51 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/gtar/Makefile,v 1.10 2000/04/22 10:12:26 mharo Exp $
+# $FreeBSD: ports/sysutils/gtar/Makefile,v 1.11 2000/10/01 09:39:18 andreas Exp $
 #
 
 PORTNAME=	tar
-PORTVERSION=	1.13.17
+PORTVERSION=	1.13.18
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
 		ftp://ftp.sunsite.org.uk/Mirrors/alpha.gnu.org/gnu/tar/ \
