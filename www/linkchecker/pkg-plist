@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/linkchecker/pkg-plist,v 1.10 2004/10/13 08:11:52 clement Exp $
+@comment $FreeBSD: ports/www/linkchecker/pkg-plist,v 1.11 2004/11/24 02:53:33 kris Exp $
 bin/linkchecker
 share/locale/de/LC_MESSAGES/linkchecker.mo
 share/locale/fr/LC_MESSAGES/linkchecker.mo
@@ -483,6 +483,3 @@ share/locale/nl/LC_MESSAGES/linkchecker.mo
 %%DATADIR%%/logging.conf
 @dirrm %%EXAMPLESDIR%%
 @dirrm %%DATADIR%%
-@unexec rmdir %D/share/locale/de/LC_MESSAGES 2> /dev/null || true
-@unexec rmdir %D/share/locale/fr/LC_MESSAGES 2> /dev/null || true
-@unexec rmdir %D/share/locale/nl/LC_MESSAGES 2> /dev/null || true
