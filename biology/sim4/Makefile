@@ -2,18 +2,18 @@
 # Date created:		27 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/sim4/Makefile,v 1.1 2000/07/27 14:33:00 nbm Exp $
 #
 
 PORTNAME=	sim4
-PORTVERSION=	2000.07.13
+PORTVERSION=	2000.08.24
 CATEGORIES=	biology
 MASTER_SITES=	http://globin.cse.psu.edu/ftp/dist/sim4/
 DISTNAME=	sim4
 
 MAINTAINER=	johann@egenetics.com
 
-WRKSRC=		${WRKDIR}/sim4.2000-07-13
+WRKSRC=		${WRKDIR}/sim4.2000-08-24
 
 ALL_TARGET=	sim4
 
