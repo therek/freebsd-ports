@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/www/Makefile,v 1.304 2001/02/01 11:43:47 sobomax Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -43,6 +43,7 @@
     SUBDIR += decss
     SUBDIR += demoroniser
     SUBDIR += djvuplugin
+    SUBDIR += eddie
     SUBDIR += encompass
     SUBDIR += erwn
     SUBDIR += evg
