@@ -31,7 +31,7 @@
  */
 
 #include <sys/cdefs.h>
-__FBSDID("$FreeBSD: ports/lang/icc/files/ld.c,v 1.10 2004/01/11 15:32:07 netchild Exp $");
+__FBSDID("$FreeBSD: ports/lang/ifc/files/ld.c,v 1.5 2004/01/31 23:32:41 maho Exp $");
 
 #include <err.h>
 #include <stdio.h>
@@ -190,7 +190,9 @@ main(int argc, char *argv[], char *envp[])
 /* ifc8 */
 		    ARGCMP(i, "-lpthread") ||
 /* ifc8 */
-		    ARGCMP(i, "-PIC"))
+		    ARGCMP(i, "-PIC") ||
+		    (ARGCMP(i, "-m") && i<argc-1 && ARGCMP(i+1, "elf_i386")) ||
+		    (ARGCMP(i, "elf_i386") && i != 0 && ARGCMP(i-1, "-m")))
 			continue;
 
 		/* prepend "-melf_i386" to the commandline */
