@@ -2,11 +2,11 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.31 2000/04/07 06:09:12 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.32 2000/04/09 18:30:39 cpiazza Exp $
 #
 
 PORTNAME=	sudo
-PORTVERSION= 	1.6.2p3
+PORTVERSION=	1.6.3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/
 
@@ -22,13 +22,13 @@ CONFIGURE_ARGS=	--with-skey \
 		--with-env-editor \
   		--with-insults \
   		--with-all-insults \
+		--with-logincap \
 		--disable-root-sudo
 
 MAN5=		sudoers.5
 MAN8=		sudo.8 visudo.8
 
 post-patch:
-	perl -i -pe 's,!!PREFIX!!,${PREFIX},g' ${WRKSRC}/*.man
 	perl -i -pe 's,^,#,g' ${WRKSRC}/sample.sudoers
 
 post-install:
