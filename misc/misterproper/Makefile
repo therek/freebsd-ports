@@ -2,11 +2,11 @@
 # Date created:				12 December 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/misterproper/Makefile,v 1.1 2000/12/12 11:12:53 sobomax Exp $
 #
 
 PORTNAME=	misterproper
-PORTVERSION= 	0.3
+PORTVERSION=	0.3
 CATEGORIES=	misc gnome
 MASTER_SITES=	ftp://misterproper.sourceforge.net/pub/misterproper/releases/ \
 		${MASTER_SITE_SOURCEFORGE}

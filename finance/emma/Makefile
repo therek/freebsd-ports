@@ -2,11 +2,11 @@
 # Date created:				7 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/emma/Makefile,v 1.1 2000/11/07 15:36:54 sobomax Exp $
 #
 
 PORTNAME=	emma
-PORTVERSION= 	0.8.1
+PORTVERSION=	0.8.1
 CATEGORIES=	misc gnome python
 MASTER_SITES=	http://rainbow.mimuw.edu.pl/~la181249/emma/packages/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.1/-1/}

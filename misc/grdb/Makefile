@@ -2,11 +2,11 @@
 # Date created:        13 June 2000
 # Whom:                Stijn Hoop <stijn@win.tue.nl>
 #
-# $FreeBSD: ports/misc/grdb/Makefile,v 1.4 2000/09/04 12:13:55 sobomax Exp $
+# $FreeBSD: ports/misc/grdb/Makefile,v 1.5 2000/10/05 07:22:44 reg Exp $
 #
 
 PORTNAME=	grdb
-PORTVERSION= 	0.2.4
+PORTVERSION=	0.2.4
 CATEGORIES=	misc gnome
 MASTER_SITES=   http://bucket.pp.ualr.edu/~bit/download/
 

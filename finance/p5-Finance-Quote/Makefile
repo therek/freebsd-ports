@@ -2,11 +2,11 @@
 # Date created:		26 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/p5-Finance-Quote/Makefile,v 1.1 2000/12/31 05:48:35 will Exp $
 #
 
 PORTNAME=	Finance-Quote
-PORTVERSION= 	1.04
+PORTVERSION=	1.04
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Finance
