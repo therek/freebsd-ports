@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.69 2001/02/09 15:13:15 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.70 2001/02/09 22:30:23 vanilla Exp $
 #
 
 PORTNAME=	gtk
@@ -11,7 +11,9 @@ PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.3/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.3/ \
-		http://www.ameth.org/gimp/gtk/v1.3/
+		http://www.ameth.org/gimp/gtk/v1.3/ \
+		${MASTER_SITE_RINGSERVER}
+MASTER_SITE_SUBDIR=	graphics/gimp/gtk/v1.3
 DISTNAME=	gtk+-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
