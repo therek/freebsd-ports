@@ -7,7 +7,7 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20041107:
-  AFFECTS: all GNOME users
+  AFFECTS: all users who have any GNOME libraries installed
   AUTHOR: adamw@FreeBSD.org and the rest of the FreeBSD/GNOME crew
 
   Hey, 2.6! You don't have to be 2.6 anymore!
@@ -1028,4 +1028,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.90 2004/11/04 22:53:09 pav Exp $
+$FreeBSD: ports/UPDATING,v 1.91 2004/11/07 23:07:57 adamw Exp $
