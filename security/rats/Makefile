@@ -2,11 +2,11 @@
 # Date created:			  22 August 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/rats/Makefile,v 1.1 2001/08/23 09:03:03 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rats
-PORTVERSION=	1.1
+PORTVERSION=	1.3
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.securesw.com/rats/
 
@@ -25,5 +25,6 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/rats
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/rats
 .endif
+MAN1=		rats.1
 
 .include <bsd.port.mk>
