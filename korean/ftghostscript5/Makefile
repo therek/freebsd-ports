@@ -3,7 +3,7 @@
 # Date created:		27 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/ftghostscript5/Makefile,v 1.11 1999/09/03 17:52:34 sada Exp $
 #
 # Based on print/ghostscript5 and japanese/vfghostscript5
 #   use Adobe's CID-keyed Korean font because there are no wide accepted
@@ -32,7 +32,7 @@ RUN_DEPENDS=	$(LOCALBASE)/share/ghostscript/fonts/CMap:${PORTSDIR}/korean/munhwa
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
-		ttf.3:${PORTSDIR}/print/freetype
+		ttf.4:${PORTSDIR}/print/freetype
 
 USE_XLIB=	yes
 EXTRACT_ONLY=	${GS_SOURCES} ${PCL3_DRV}

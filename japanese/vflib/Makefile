@@ -3,7 +3,7 @@
 # Date created:		10 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/vflib/Makefile,v 1.21 1999/08/25 05:27:38 obrien Exp $
 #
 
 DISTNAME=	VFlib2-2.24.1
@@ -15,7 +15,7 @@ DISTFILES=	VFlib2-2.24.1.tar.gz watanabe-vf.tar.Z
 
 MAINTAINER=	mita@jp.FreeBSD.org
 
-LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 
 VFLIB_VERSION=	2.24.1
 PLIST_SUB=	VFLIB_VERSION=${VFLIB_VERSION}

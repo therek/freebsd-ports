@@ -3,7 +3,7 @@
 # Date created:		5 Sep 1999
 # Whom:			J.T. Jang (jtjang@gcn.net.tw)
 #
-# $FreeBSD: ports/chinese/CJK/Makefile,v 1.8 1999/08/25 04:57:34 obrien Exp $
+# $FreeBSD: ports/chinese/CJK/Makefile,v 1.9 1999/09/10 10:10:28 foxfair Exp $
 #
 
 DISTNAME=	zh-CJK-4.3.0
@@ -16,7 +16,7 @@ MAINTAINER=	jtjang@gcn.net.tw
 BUILD_DEPENDS=	latex:${PORTSDIR}/print/teTeX \
 		${X11BASE}/lib/X11/fonts/TrueType/moe_lishu.ttf:${PORTSDIR}/chinese/moettf \
 		ttf2pk:${PORTSDIR}/print/freetype:build
-LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 RUN_DEPENDS=	latex:${PORTSDIR}/print/teTeX
 
 NO_PACKAGE=	Interactive

@@ -3,7 +3,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.21 1999/08/31 02:58:51 peter Exp $
 #
 
 DISTNAME=	xc
@@ -21,7 +21,7 @@ PATCHFILES=	3.3.3-3.3.3.1.diff.gz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
-LIB_DEPENDS+=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype
 RUN_DEPENDS=	mkttfdir:${PORTSDIR}/print/perlftlib
 
 VERSION=	1.2

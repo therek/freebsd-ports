@@ -3,7 +3,7 @@
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.5 1999/08/25 05:44:58 obrien Exp $
 #
 
 DISTNAME=	yudit-1.3
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR= apps/editors/X
 
 MAINTAINER=	rch@WriteMe.Com
 
-LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
 CONFIGURE_ENV=	LC_ALL=C CXXFLAGS="${CFLAGS}"

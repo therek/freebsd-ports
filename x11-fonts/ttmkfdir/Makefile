@@ -3,7 +3,7 @@
 # Date created:		September 08, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.4 1999/08/31 02:58:34 peter Exp $
+# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.5 1999/08/31 06:52:37 mharo Exp $
 
 DISTNAME=	ttmkfdir
 PKGNAME=	ttmkfdir-0.0
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.darmstadt.gmd.de/~pommnitz/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

@@ -3,7 +3,7 @@
 # Date created:		98/12/22
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/perlftlib/Makefile,v 1.4 1999/08/31 01:45:11 peter Exp $
+# $FreeBSD: ports/print/perlftlib/Makefile,v 1.5 1999/08/31 06:49:53 mharo Exp $
 #
 
 DISTNAME=	perlftlib-1.2
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.big.or.jp/pub/usr2/jam/ft/ \
 
 MAINTAINER=	taoka@FreeBSD.org
 
-LIB_DEPENDS=	ttf.3:${PORTSDIR}/print/freetype
+LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/jcode.pl:${PORTSDIR}/japanese/p5-jcode.pl
 
 USE_PERL5=	yes

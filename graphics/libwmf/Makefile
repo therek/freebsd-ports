@@ -3,7 +3,7 @@
 # Date Created:		22 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.5 1999/08/25 06:14:27 obrien Exp $
+# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.6 1999/09/10 22:39:55 cpiazza Exp $
 #
 
 DISTNAME=	libwmf-0.1.16
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.csn.ul.ie/~caolan/publink/libwmf/
 MAINTAINER=	cpiazza@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		ttf.3:${PORTSDIR}/print/freetype
+		ttf.4:${PORTSDIR}/print/freetype
 
 WRKSRC=		${WRKDIR}/libwmf
 
