@@ -2,7 +2,7 @@
 # Date created:        24th April 1997
 # Whom:                jacs
 #
-# $FreeBSD: ports/x11/xfishtank/Makefile,v 1.3 1999/08/31 02:50:59 peter Exp $
+# $FreeBSD: ports/x11/xfishtank/Makefile,v 1.4 2000/04/13 19:10:34 cpiazza Exp $
 #
 
 PORTNAME=	xfishtank
@@ -14,7 +14,6 @@ MAINTAINER=	jacs@gnome.co.uk
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xfishtank2.0
-NO_INSTALL_MANPAGES=	yes
 
 post-patch:
 	cd  ${WRKDIR}/xfishtank2.0; make clean
