@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/cfvers/pkg-plist,v 1.1 2004/10/12 08:23:52 sergei Exp $
 bin/cfv
 bin/cfvadmin
 %%PYTHON_SITELIBDIR%%/cfvers/repository/__init__.py
@@ -30,3 +30,5 @@ bin/cfvadmin
 %%PORTDOCS%%%%DOCSDIR%%/cfvadmin.html
 %%PORTDOCS%%%%DOCSDIR%%/manual.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
+@dirrm %%PYTHON_SITELIBDIR%%/cfvers/repository/
+@dirrm %%PYTHON_SITELIBDIR%%/cfvers/
