@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.321 2000/08/01 11:58:28 nbm Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.322 2000/08/01 14:06:28 nbm Exp $
 #
 
     SUBDIR += ElectricFence
@@ -302,6 +302,7 @@
     SUBDIR += tvision
     SUBDIR += uclmmbase
     SUBDIR += ups-debug
+    SUBDIR += veepee
     SUBDIR += viewcvs
     SUBDIR += vtcl
     SUBDIR += xmake
