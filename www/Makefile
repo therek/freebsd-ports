@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/www/Makefile,v 1.358 2001/04/13 16:24:56 sobomax Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -254,7 +254,6 @@
     SUBDIR += transproxy
     SUBDIR += udmsearch
     SUBDIR += viewml
-    SUBDIR += vrweb
     SUBDIR += w3
     SUBDIR += w3-4
     SUBDIR += w3c-httpd
