@@ -2,7 +2,7 @@
 # Date created:        16 Jan 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11/xmove/Makefile,v 1.5 2000/04/13 19:10:51 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmove
@@ -14,7 +14,10 @@ DISTNAME=	${PORTNAME}.2.0beta2
 MAINTAINER=	sec@42.org
 
 WRKSRC=		${WRKDIR}/xmove
+
 USE_X_PREFIX=	yes
+USE_IMAKE=	yes
+
 MAN1=		xmove.1 xmovectrl.1
 
 post-extract:
