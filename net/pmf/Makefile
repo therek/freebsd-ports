@@ -2,13 +2,13 @@
 # Date created:		24 Sep 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/net/pmf/Makefile,v 1.17 2000/04/09 18:13:07 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pmf
 PORTVERSION=	1.13.1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/lpmud/clients/pmf/
+MASTER_SITES=	http://ftp.ntua.gr/pub/net/mud/lpmud/clients/pmf/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -24,18 +24,18 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pmf ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/share/pmf
-	${INSTALL_DATA} ${SYSSRC}/NEWS ${PREFIX}/share/pmf
-	${INSTALL_DATA} ${SYSSRC}/pmfrc.default ${PREFIX}/share/pmf
-	@${MKDIR} ${PREFIX}/share/pmf/helpfiles
-	${INSTALL_DATA} ${SYSSRC}/helpfiles/.pmfrc ${PREFIX}/share/pmf/helpfiles
-	${INSTALL_DATA} ${SYSSRC}/helpfiles/* ${PREFIX}/share/pmf/helpfiles
-	@${MKDIR} ${PREFIX}/share/examples/pmf
-	${INSTALL_DATA} ${XMPSRC}/.pmfrc ${PREFIX}/share/examples/pmf/dot.pmfrc
-	${INSTALL_DATA} ${XMPSRC}/* ${PREFIX}/share/examples/pmf
+	@${MKDIR} ${DATADIR}
+	${INSTALL_DATA} ${SYSSRC}/NEWS ${DATADIR}
+	${INSTALL_DATA} ${SYSSRC}/pmfrc.default ${DATADIR}
+	@${MKDIR} ${DATADIR}/helpfiles
+	${INSTALL_DATA} ${SYSSRC}/helpfiles/.pmfrc ${DATADIR}/helpfiles
+	${INSTALL_DATA} ${SYSSRC}/helpfiles/* ${DATADIR}/helpfiles
+	@${MKDIR} ${EXAMPLESDIR}
+	${INSTALL_DATA} ${XMPSRC}/.pmfrc ${EXAMPLESDIR}/dot.pmfrc
+	${INSTALL_DATA} ${XMPSRC}/* ${EXAMPLESDIR}
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/pmf
-	${INSTALL_DATA} ${DOCSRC}/* ${PREFIX}/share/doc/pmf
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${DOCSRC}/* ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
