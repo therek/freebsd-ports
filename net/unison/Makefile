@@ -2,24 +2,24 @@
 # Date created:		4 October 2000
 # Whom:			Dan Pelleg <dpelleg+unison@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/unison/Makefile,v 1.3 2001/02/05 15:50:41 olgeni Exp $
+# $FreeBSD: ports/net/unison/Makefile,v 1.4 2001/03/15 23:13:16 steve Exp $
 #
 
 PORTNAME=	unison
-PORTVERSION=	2.6.11
+PORTVERSION=	2.7.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/unison-${PORTVERSION}/
 DISTNAME=	src
-DIST_SUBDIR=	unison
+DIST_SUBDIR=	unison-${PORTVERSION}
 
 MAINTAINER=	dpelleg+unison@cs.cmu.edu
 
 BUILD_DEPENDS=	ocamlc:${PORTSDIR}/lang/ocaml
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-USE_GMAKE= yes
-MAKE_ARGS= UISTYLE=text CFLAGS=""
+USE_GMAKE=	yes
+MAKE_ARGS=	UISTYLE=text CFLAGS=""
 
 post-install:
 	strip ${PREFIX}/bin/unison
