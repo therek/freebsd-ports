@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.233 2004/05/18 05:17:17 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.234 2004/05/22 12:54:51 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -767,7 +767,7 @@ MASTER_SITE_SOURCEFORGE_JP+= \
 
 MASTER_SITE_SOURCEWARE+= \
 	http://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
-	ftp://mirrors.rcn.net/mirrors/sources.redhat.com/%SUBDIR%/ \
+	ftp://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/sources.redhat.com/pub/%SUBDIR%/ \
 	ftp://ftp1.sinica.edu.tw/pub3/GNU/CYGNUS/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/ \
