@@ -2,14 +2,14 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/dnews/Makefile,v 1.18 2001/01/01 10:15:08 will Exp $
+# $FreeBSD: ports/news/dnews/Makefile,v 1.19 2001/05/07 15:08:53 kevlo Exp $
 #
 
 PORTNAME=	dnews
-PORTVERSION=	4.7k
+PORTVERSION=	5.5b3
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.netwinsite.com/pub/dnews/
-DISTNAME=	dnews47k_freebsd
+DISTNAME=	dnews55b3_freebsd4
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
@@ -19,7 +19,7 @@ MAINTAINER=	ports@FreeBSD.org
 FETCH_CMD=		ftp
 FETCH_BEFORE_ARGS=	-a
 
-WRKSRC=		${WRKDIR}/dnews
+WRKSRC=		${WRKDIR}/dtemp
 NO_CDROM=	"no answer yet, if we are allowed to put it onto CDROM"
 RESTRICTED=	"only free for non-profit organisations"
 NO_PACKAGE=	"${RESTRICTED}"
