@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.101 2000/08/23 09:57:05 kris Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.102 2000/09/17 08:45:11 kris Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -12,12 +12,14 @@ PORTNAME=	ssh
 PORTVERSION=	1.2.27
 PORTREVISION=	1
 CATEGORIES=	security ipv6
-MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/ \
-		ftp://ftp.bitcon.no/.4/console/system/ \
-		ftp://ftp.kddlabs.co.jp/.0/security/Crypto/SSH/ \
-		ftp://ftp.vision.net.au/ftp7/linuxberg/files/console/system/ \
+MASTER_SITES=	ftp://ftp.cs.engr.uky.edu/cs/software/ \
+		ftp://ftp.cs.umn.edu/dept/users/rybski/ \
+		ftp://ftp.net.ohio-state.edu/disk/d/security/ssh/ \
+		ftp://ftp.cronyx.ru/.w2/mirror/ssh/old/ \
+		ftp://ftp.nsysu.edu.tw/Unix/Security/ssh/old/ \
+		ftp://ftp.tokyonet.ad.jp/.da0/security/ssh/old/ \
 		ftp://ftp.comp.hkbu.edu.hk/.6/unix/ \
-		ftp://ftp.du.se/disk1/mirrors/ssh/
+		ftp://ftp.dei.uc.pt/.disk2/Crypto/SSH/old/
 
 MAINTAINER=	kris@FreeBSD.org
 
