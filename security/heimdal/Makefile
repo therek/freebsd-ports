@@ -2,7 +2,7 @@
 # Date created:						10/23/1999
 # Whom:								nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.30 2001/02/05 15:50:25 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.31 2001/02/21 12:43:20 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -104,5 +104,7 @@ pre-configure:
 
 post-install:
 	install-info ${PREFIX}/info/heimdal.info ${PREFIX}/info/dir
+	${SED} 's;%%PREFIX%%;${PREFIX};g' ${FILESDIR}/kdc.sh > \
+		${PREFIX}/etc/rc.d/kdc.sh.sample
 
 .include <bsd.port.mk>
