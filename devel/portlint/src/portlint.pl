@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.31 2002/11/18 21:28:12 lioux Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.32 2003/01/11 08:18:48 knu Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -135,6 +135,10 @@ foreach my $i (@osdep) {
 		last;
 	}
 }
+
+# The PORTSDIR environment variable overrides our defaults.
+$portsdir = $ENV{PORTSDIR} if ( defined $ENV{'PORTSDIR'} );
+
 if ($verbose) {
 	print "OK: config: portsdir: \"$portsdir\" ".
 		"rcsidstr: \"$rcsidstr\" ".
