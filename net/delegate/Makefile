@@ -3,7 +3,7 @@
 # Date created:			26 Jan 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/delegate/Makefile,v 1.21 1999/12/23 22:24:11 max Exp $
+# $FreeBSD: ports/net/delegate/Makefile,v 1.22 2000/02/02 09:10:15 kris Exp $
 #
 
 DISTNAME=	delegate5.9.12
