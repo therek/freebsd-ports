@@ -2,15 +2,15 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.54 2001/03/12 01:05:43 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kaffe
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	java
-MASTER_SITES=	ftp://ftp.kaffe.org/pub/kaffe/
+MASTER_SITES=	ftp://ftp.kaffe.org/pub/kaffe/v1.0.x-production/
 
-MAINTAINER=	xaa+ports@madison-gurkha.com
+MAINTAINER=	xaa+ports@timewasters.nl
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		ungif.5:${PORTSDIR}/graphics/libungif \
@@ -20,10 +20,13 @@ USE_LIBTOOL=	yes
 LIBTOOLFLAGS=
 INSTALLS_SHLIB=	yes
 
+PLIST_SUB+=	PORTVER=${PORTVERSION} ARCH=${ARCH}
+
 MAN1=		kaffe.1
 
 post-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/BUILD_ENVIRONMENT ${PREFIX}/share/kaffe
-	${INSTALL_DATA} ${WRKSRC}/license.terms ${PREFIX}/share/kaffe
+	@${MKDIR} ${DATADIR}
+	${INSTALL_SCRIPT} ${WRKSRC}/BUILD_ENVIRONMENT ${DATADIR}
+	${INSTALL_DATA} ${WRKSRC}/license.terms ${DATADIR}
 
 .include <bsd.port.mk>
