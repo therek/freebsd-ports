@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/id3lib/Makefile,v 1.1 2000/10/28 07:19:06 will Exp $
+# $FreeBSD: ports/audio/id3lib/Makefile,v 1.2 2000/12/21 07:07:39 will Exp $
 #
 
 PORTNAME=	id3lib
@@ -16,6 +16,7 @@ MAINTAINER=	roman@xpert.com
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt
 
 INSTALLS_SHLIB=	yes
+USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
