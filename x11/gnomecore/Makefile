@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.60 2001/05/21 15:02:58 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomecore
@@ -15,7 +15,7 @@ DISTNAME=	gnome-core-${PORTVERSION}
 
 MAINTAINER?=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
+LIB_DEPENDS=	gtkhtml.13:${PORTSDIR}/www/gtkhtml
 RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/login.wav:${PORTSDIR}/audio/gnomeaudio
 
 USE_X_PREFIX=	yes
@@ -23,7 +23,8 @@ USE_GMAKE=	yes
 USE_GNOMECTRL=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ARGS=	--with-kde-datadir=${LOCALBASE}/share --with-gtkhtml
+CONFIGURE_ARGS=	--with-kde-datadir=${LOCALBASE}/share \
+		--with-gtkhtml=${X11BASE}
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
