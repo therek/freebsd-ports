@@ -2,9 +2,18 @@
 # Date created:		17 January 1998
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew-xemacs/Makefile,v 1.9 2000/05/07 14:51:10 shige Exp $
+# $FreeBSD: ports/mail/mew-xemacs/Makefile,v 1.10 2000/05/08 13:13:16 shige Exp $
 #
 
-EMACS_PORT_NAME=	xemacs
+MAINTAINER=	kiri@FreeBSD.org
 
-.include "${.CURDIR}/../mew/Makefile"
+# This is a slave port.
+MASTERDIR=	${.CURDIR}/../mew
+
+# set emacs port
+EMACS_PORT_NAME=xemacs
+
+# use pkg-* files in ${.CURDIR}
+PKGDIR=		${.CURDIR}
+
+.include "${MASTERDIR}/Makefile"
