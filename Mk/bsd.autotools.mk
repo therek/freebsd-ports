@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.5 2004/07/01 21:13:08 ade Exp $
+# $FreeBSD: ports/Mk/bsd.autotools.mk,v 1.6 2004/07/09 17:41:48 marcus Exp $
 #
 # Please view me with 4 column tabs!
 #
@@ -58,6 +58,12 @@ Autotools_Include_MAINTAINER=	ade@FreeBSD.org
 #
 # USE_LIBTOOL_VER=<value>
 #	- Port wishes to use libtool, including the configuration step
+#	- Port will use the ports version of libtool
+#	- Implies GNU_CONFIGURE?=yes and WANT_LIBTOOL_VER=<value>
+#
+# USE_INC_LIBTOOL_VER=<value>
+#	- Port wishes to use libtool, including the configuration step
+#	- Port will use its own included version of libtool
 #	- Implies GNU_CONFIGURE?=yes and WANT_LIBTOOL_VER=<value>
 #
 # WANT_LIBTOOL_VER=<value>
