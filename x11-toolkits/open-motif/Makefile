@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.10 2000/07/19 12:58:55 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.11 2000/08/18 17:41:56 asami Exp $
 #
 
 PORTNAME=	open-motif
@@ -21,7 +21,7 @@ PATCHFILES=	patch1 patch2 patch3 patch4 patch5
 PATCH_DIST_STRIP=	-p1
 
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	steve@FreeBSD.org
 
 DIST_SUBDIR=	openmotif
 WRKSRC=		${WRKDIR}/motif
