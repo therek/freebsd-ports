@@ -2,11 +2,11 @@
 # Date created:					17 Jan 2001
 # Whom:						dom@happygiraffe.net
 #
-# $FreeBSD: ports/www/p5-AxKit/Makefile,v 1.1 2001/08/12 14:59:11 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	AxKit
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	www
 MASTER_SITES=	http://www.axkit.org/download/
 PKGNAMEPREFIX=	p5-
