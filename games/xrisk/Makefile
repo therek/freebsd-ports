@@ -2,13 +2,13 @@
 # Date created:		4 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/games/xrisk/Makefile,v 1.16 2000/05/29 23:53:04 steve Exp $
+# $FreeBSD: ports/games/xrisk/Makefile,v 1.17 2001/01/27 05:40:10 will Exp $
 #
 
 PORTNAME=	xrisk
 PORTVERSION=	2.15
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.pvv.unit.no/pvv/games/
+MASTER_SITES=	ftp://ftp.pvv.org/pvv/games/
 
 MAINTAINER=	ports@FreeBSD.org
 
