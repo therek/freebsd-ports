@@ -3,7 +3,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.35 1999/10/09 18:42:09 vanilla Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.36 1999/11/11 20:16:12 jim Exp $
 #
 
 DISTNAME=	mozilla-source-M10
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m10/src/
 
 MAINTAINER=	reg@shale.csir.co.za
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		ORBit.2:${PORTSDIR}/devel/ORBit
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
