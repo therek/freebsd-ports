@@ -2,7 +2,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/x11-toolkits/py-qt/Makefile,v 1.3 2000/08/21 10:07:34 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/py-qt/Makefile,v 1.4 2000/11/22 16:53:53 sobomax Exp $
 
 PORTNAME=	py-qt
 PORTVERSION=	2.2
@@ -20,7 +20,8 @@ USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	LDFLAGS=-lgcc \
 		SIP_MOC="${X11BASE}/bin/moc2"
-CONFIGURE_ARGS= --with-qt-includes=${X11BASE}/include/qt2
+CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/qt2 \
+		--with-qt-libraries=${X11BASE}/lib
 
 pre-patch:
 	@find ${WRKSRC} -name Makefile.in | \
