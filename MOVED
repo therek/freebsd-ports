@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.40 2003/01/06 20:20:34 arved Exp $
+# $FreeBSD: ports/MOVED,v 1.41 2003/01/07 13:02:34 alane Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -140,3 +140,4 @@ graphics/vcdimager|multimedia/vcdimager|2003-01-06|new category
 graphics/vcdpad|multimedia/vcdpad|2003-01-06|new category
 graphics/vcdtools|multimedia/vcdtools|2003-01-06|new category
 devel/autoconf254|devel/autoconf257|2003-01-06|new version from FSF
+devel/ncurses-dialog|devel/cdialog|2003-01-11|renamed by delete+add
