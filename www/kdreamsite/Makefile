@@ -2,13 +2,13 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/kdreamsite/Makefile,v 1.9 2001/04/03 08:14:30 will Exp $
 #
 
 PORTNAME=	kdreamsite
 PORTVERSION=	0.2
 CATEGORIES=	www kde
-MASTER_SITES=	http://neptune.spaceports.com/%7Eatnet/files/
+MASTER_SITES=	ftp://ftp.kde.com/pub/Office/HTML/KDreamSite/
 
 MAINTAINER=	ports@FreeBSD.org
 
