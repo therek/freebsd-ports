@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/portaudit/files/portaudit.functions,v 1.2 2004/02/21 21:19:41 eik Exp $
 #
 
 portaudit_confs()
@@ -153,8 +153,8 @@ audit_installed()
 fetch_locations()
 {
 	# site sort order is not overly smart
-	echo "${MASTER_SITE_LOCAL}" | awk "
-		BEGIN { RS=\"[ \\t\\n]\"; IGNORECASE=1; srand() }
+	echo "${MASTER_SITE_LOCAL}" | sed -e 'y/ 	/\n\n/' | awk "
+		BEGIN { IGNORECASE=1; srand() }
 		/^$/ { next }
 		{
 			if (\$0 ~ /${MASTER_SORT_REGEX}/ ) rank=0; else rank=rand()
