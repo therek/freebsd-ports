@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.61 2000/05/11 15:40:20 nsayer Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.62 2000/05/26 07:43:13 sobomax Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -12,6 +12,7 @@
     SUBDIR += grass
     SUBDIR += gtksql
     SUBDIR += interbase4
+    SUBDIR += libiodbc
     SUBDIR += metakit
     SUBDIR += msql
     SUBDIR += mysql-editor
