@@ -2,7 +2,7 @@
 # Date Created:		May 14 2000
 # Whom:			Yoshikazu GOTO <goto@snowy.to>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/ircatlite/Makefile,v 1.1 2000/07/31 15:31:14 nbm Exp $
 #
 
 PORTNAME=	ircatlite
@@ -25,7 +25,7 @@ MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 DOCS=		LICENSE INSTALL INSTALL.jp README README.jp
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/IRcatLite
 
 .include <bsd.port.pre.mk>
 
