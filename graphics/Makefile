@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.165 1999/12/25 15:56:59 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.166 1999/12/29 07:11:21 steve Exp $
 #
 
     SUBDIR += 4va
@@ -49,6 +49,7 @@
     SUBDIR += gimp1-i18n
     SUBDIR += giram
     SUBDIR += glx
+    SUBDIR += gnofract4d
     SUBDIR += gphoto
     SUBDIR += gplot
     SUBDIR += gqview
