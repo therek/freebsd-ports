@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.203 2001/07/20 20:54:11 ijliao Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.204 2001/07/22 08:41:23 markp Exp $
 #
     SUBDIR += yawho
 
@@ -78,6 +78,7 @@
     SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logtool
+    SUBDIR += lsmlib
     SUBDIR += lsof
     SUBDIR += maint
     SUBDIR += manck
