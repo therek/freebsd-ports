@@ -2,11 +2,11 @@
 # Date created:				1st January 2001
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/smssend/Makefile,v 1.1 2001/01/05 17:49:38 alex Exp $
 #
 
 PORTNAME=	smssend
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	misc
 MASTER_SITES=	http://zekiller.skytech.org/fichiers/smssend/
 
@@ -21,5 +21,6 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 post-install:
 	strip ${PREFIX}/bin/smssend
+	${INSTALL_DATA} ${FILESDIR}/*.sms ${PREFIX}/share/smssend
 
 .include <bsd.port.mk>
