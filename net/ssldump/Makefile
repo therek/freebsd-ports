@@ -2,11 +2,11 @@
 # Date created:		10 November 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ssldump/Makefile,v 1.2 2000/12/11 07:01:47 imp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ssldump
-PORTVERSION=	0.9b1
+PORTVERSION=	0.9b2
 CATEGORIES=	net security
 MASTER_SITES=	http://www.rtfm.com/ssldump/
 
