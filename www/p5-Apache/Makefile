@@ -2,7 +2,7 @@
 # Date created:				April 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.21 2000/06/17 02:37:07 will Exp $
+# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.22 2000/10/23 21:03:07 will Exp $
 #
 
 PORTNAME=	Apache
@@ -15,12 +15,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-.if !defined(APACHE_PORT)
-APACHE_PORT=apache13
-.endif
 BUILD_DEPENDS=	${PREFIX}/sbin/apxs:${PORTSDIR}/www/${APACHE_PORT} \
 		${PREFIX}/bin/lwp-download:${PORTSDIR}/www/p5-libwww
 
+APACHE_PORT?=	apache13
 USE_PERL5=	yes
 MAN3=		Apache.3 \
 		Apache::Constants.3 \
