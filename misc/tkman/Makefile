@@ -2,13 +2,14 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/tkman/Makefile,v 1.42 2000/06/26 12:53:41 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkman
 PORTVERSION=	2.1
 CATEGORIES=	misc tk83
-MASTER_SITES=	ftp://tkman.sourceforge.net/pub/tkman/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	tg@FreeBSD.org
 
