@@ -2,7 +2,7 @@
 # Date created:		4 October 2000
 # Whom:			Dan Pelleg <dpelleg+unison@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/unison/Makefile,v 1.2 2001/01/15 14:44:41 kevlo Exp $
+# $FreeBSD: ports/net/unison/Makefile,v 1.3 2001/02/05 15:50:41 olgeni Exp $
 #
 
 PORTNAME=	unison
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.cis.upenn.edu/~bcpierce/unison/download/stable/unison-$
 DISTNAME=	src
 DIST_SUBDIR=	unison
 
-MAINTAINER=	Dan Pelleg <dpelleg+unison@cs.cmu.edu>
+MAINTAINER=	dpelleg+unison@cs.cmu.edu
 
 BUILD_DEPENDS=	ocamlc:${PORTSDIR}/lang/ocaml
 
