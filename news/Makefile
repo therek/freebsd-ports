@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.60 2000/11/03 15:03:24 taoka Exp $
+# $FreeBSD: ports/news/Makefile,v 1.61 2001/01/05 17:39:14 alex Exp $
 #
 
     SUBDIR += atp
@@ -11,6 +11,7 @@
     SUBDIR += dnews
     SUBDIR += fidogate
     SUBDIR += glitter
+    SUBDIR += gnus-emacs20
     SUBDIR += grn
     SUBDIR += gup
     SUBDIR += ifmail
