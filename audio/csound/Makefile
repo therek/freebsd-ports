@@ -2,20 +2,16 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/csound/Makefile,v 1.2 2000/10/18 12:16:11 trevor Exp $
+# $FreeBSD: ports/audio/csound/Makefile,v 1.3 2000/10/19 03:09:14 trevor Exp $
 #
 
 PORTNAME=	csound
-PORTVERSION=	4.08
-PORTREVISION=	1
+PORTVERSION=	4.11
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.maths.bath.ac.uk/pub/dream/newest/
-DISTFILES=	Csound.tar.gz
-.if !defined(NOPORTDOCS)
-DISTFILES+=	Version${PORTVERSION:S/./_/}.Notes
-.endif
+DISTFILES=	Csound${PORTVERSION}.tar.gz
 DIST_SUBDIR=	csound
-EXTRACT_ONLY=	Csound.tar.gz
+EXTRACT_ONLY=	Csound${PORTVERSION}.tar.gz
 
 MAINTAINER=	trevor@FreeBSD.org
 
@@ -39,10 +35,6 @@ post-build:
 		${ECHO} bin/`${BASENAME} $${i}` >> ${PLIST}; \
 	done
 	${ECHO} share/csound/csound.dat >> ${PLIST}
-.if !defined(NOPORTDOCS)
-	${ECHO} share/doc/csound/Version${PORTVERSION:S/./_/}.Notes >> ${PLIST}
-	${ECHO} "@dirrm share/doc/csound" >> ${PLIST}
-.endif
 	${ECHO} "@dirrm share/csound" >> ${PLIST}
 
 post-patch:
@@ -50,11 +42,6 @@ post-patch:
 
 do-install:
 	${MKDIR} ${PREFIX}/share/csound
-.if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/csound
-	${INSTALL_DATA} ${_DISTDIR}/Version${PORTVERSION:S/./_/}.Notes \
-		${PREFIX}/share/doc/csound
-.endif
 	${INSTALL_DATA} ${WRKSRC}/csound.txt ${PREFIX}/share/csound/csound.dat
 	for i in `find ${WRKDIR} -type f -perm 755`; do \
 		${INSTALL_PROGRAM} $${i} ${PREFIX}/bin ; \
