@@ -1,15 +1,15 @@
 # New ports collection makefile for:	x-files
-# Version required:     1.43
 # Date created:		14 April 1998
 # Whom:			Donald J. Maddox <dmaddox@conterra.com>
 #
-# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.13 1999/11/01 01:29:16 steve Exp $
+# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.14 1999/11/28 18:32:32 steve Exp $
 #
 
-DISTNAME=       X-Files-2.00b1
-PKGNAME=	x-files-2.00b1
+PORTNAME=	x-files
+PORTVERSION= 	2.00b1
 CATEGORIES=	x11-fm tk82
 MASTER_SITES=   http://www.hut.fi/~mkivinie/X-Files/data/
+DISTNAME=	X-files-${PORTVERSION}
 
 MAINTAINER=     dmaddox@conterra.com
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dfm
-# Version required:			0.9.10
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.13 1999/08/31 02:58:15 peter Exp $
+# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.14 2000/03/29 07:18:52 kris Exp $
 #
 
-DISTNAME=	dfm-0.99.1
+PORTNAME=	dfm
+PORTVERSION= 	0.99.1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www-c.informatik.uni-hannover.de/~kaiser/dfm/
 

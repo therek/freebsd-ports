@@ -1,16 +1,16 @@
 # ports collection makefile for: Files
-# Version required:  2.4
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/offix-files/Makefile,v 1.7 1999/08/31 02:58:20 peter Exp $
 #
 
-DISTNAME=	Files-2.4
-PKGNAME=	offix-files-2.4
+PORTNAME=	offix-files
+PORTVERSION= 	2.4
 CATEGORIES=	x11-fm offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX
+DISTNAME=	Files-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 

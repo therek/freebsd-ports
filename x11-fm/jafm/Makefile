@@ -1,12 +1,12 @@
 # New ports collection makefile for:	jafm
-# Version required:		0.5
 # Date created:			31 August 1998
 # Whom:				brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.7 1999/09/09 03:03:16 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.8 2000/04/01 00:10:55 jedgar Exp $
 #
 
-DISTNAME=	jafm-0.5
+PORTNAME=	jafm
+PORTVERSION= 	0.5
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www-personal.usyd.edu.au/~rlittlew/jafm/ \
 		${MASTER_SITE_SUNSITE}
