@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.282 2000/07/10 15:55:29 ade Exp $
+# $FreeBSD: ports/games/Makefile,v 1.283 2000/07/15 14:04:38 markm Exp $
 #
 
     SUBDIR += 3dc
@@ -146,6 +146,7 @@
     SUBDIR += tinymux
     SUBDIR += tkmoo
     SUBDIR += tksol
+    SUBDIR += trojka
     SUBDIR += tvp
     SUBDIR += omega
     SUBDIR += uox3
