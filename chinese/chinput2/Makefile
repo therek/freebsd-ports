@@ -3,14 +3,14 @@
 # Date created:				11/09/2000
 # Whom:					Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD: ports/chinese/chinput2/Makefile,v 1.2 2000/12/08 09:23:06 keith Exp $
+# $FreeBSD: ports/chinese/chinput2/Makefile,v 1.3 2001/01/21 15:40:30 dirk Exp $
 #
 
 PORTNAME=	chinput2
-PORTVERSION=	1.0
+PORTVERSION=	1.2.1
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://ftp.cn.freebsd.org/pub/ported/
-DISTNAME=	zh-chinput2-1.0
+DISTNAME=	zh-chinput2-1.2.1
 
 MAINTAINER=	phj@cn.FreeBSD.org
 
