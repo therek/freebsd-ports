@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.2 2003/06/07 20:45:11 nork Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.3 2003/06/20 05:25:24 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -31,6 +31,7 @@ DOMXML		"DOM support" ${WITH_DOMXML:-OFF} \
 DOMXSLT		"DOM XSLT and EXSLT support (implies DOMXML)" ${WITH_DOMXSLT:-OFF} \
 EXIF		"EXIF support" ${WITH_EXIF:-OFF} \
 FILEPRO		"filePro support" ${WITH_FILEPRO:-OFF} \
+FRIBIDI		"FriBidi support" ${WITH_FRIBIDI:-OFF} \
 FTP		"FTP support" ${WITH_FTP:-OFF} \
 GD		"GD library support" ${WITH_GD:-OFF} \
 GDBM		"GDBM database support (dba)" ${WITH_GDBM:-OFF} \
