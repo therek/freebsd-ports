@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net/jabberd/pkg-install,v 1.1 2003/12/30 16:18:46 demon Exp $
+# $FreeBSD: ports/net/jabberd/pkg-install,v 1.2 2004/01/01 13:21:15 demon Exp $
 #
 
 if [ "$2" != "PRE-INSTALL" ]; then
@@ -32,7 +32,7 @@ if ! pw usershow "${USER}" 2>/dev/null 1>&2; then
 	fi
 fi
 
-mkdir -p /var/jabberd/db /var/jabberd/pid /var/jabberd/log
+mkdir -m 750 /var/jabberd /var/jabberd/db /var/jabberd/pid /var/jabberd/log
 chown jabber:jabber /var/jabberd /var/jabberd/db /var/jabberd/pid /var/jabberd/log
 
 exit 0
