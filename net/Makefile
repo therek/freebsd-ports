@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.487 2001/03/14 01:14:44 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.488 2001/03/14 02:12:49 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -62,6 +62,7 @@
     SUBDIR += dgd
     SUBDIR += dgd-lpmud
     SUBDIR += dgd-net
+    SUBDIR += dhcpdump
     SUBDIR += dhcping
     SUBDIR += dhid
     SUBDIR += dhcpconf
