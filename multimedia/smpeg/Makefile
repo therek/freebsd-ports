@@ -2,13 +2,13 @@
 # Date created:		2 Feb 2000
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.5 2000/04/23 06:48:40 vanilla Exp $
+# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.6 2000/04/25 21:31:41 will Exp $
 #
 
 PORTNAME=	smpeg
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.lokigames.com/development/download/smpeg/
+MASTER_SITES=	ftp://ftp.lokigames.com/pub/open-source/smpeg/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
