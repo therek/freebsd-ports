@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/gtk13/files/patch-ak,v 1.2 2002/02/14 11:27:15 sobomax Exp $
 
 --- gdk/Makefile.in.orig	Thu Feb 14 12:38:26 2002
 +++ gdk/Makefile.in	Thu Feb 14 12:45:37 2002
@@ -8,7 +8,7 @@ $FreeBSD$
  # Rule to install gdkconfig.h header file
  #
 -configexecincludedir = $(libdir)/gtk-2.0/include
-+configexecincludedir = $(prefix)/include/gtk-2.0/gdk
++configexecincludedir = $(prefix)/include/gtk-2.0
  
  #note: not gdkconfig.h
  BUILT_SOURCES = stamp-gc-h @REBUILD@ gdkenumtypes.c gdkenumtypes.h
