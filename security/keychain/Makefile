@@ -2,11 +2,12 @@
 # Date created:		10 September 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/keychain/Makefile,v 1.1 2001/09/10 08:13:31 wjv Exp $
 #
 
 PORTNAME=	keychain
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	http://www.ibiblio.org/gentoo/distfiles/
 
