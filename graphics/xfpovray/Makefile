@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xfpovray/Makefile,v 1.18 2001/01/16 17:31:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfpovray
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray
 
 USE_IMAKE=	yes
