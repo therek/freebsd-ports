@@ -2,7 +2,7 @@
 # Date created:				6 Jul 2000
 # Whom:					Carl Johan Madestrand
 #
-# $FreeBSD: ports/audio/teknap/Makefile,v 1.7 2001/03/27 13:10:14 kevlo Exp $
+# $FreeBSD: ports/audio/teknap/Makefile,v 1.8 2001/03/29 16:32:48 sobomax Exp $
 #
 
 PORTNAME=	TekNap
@@ -10,7 +10,7 @@ PORTVERSION=	1.2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ukug.uk.freebsd.org/pub/lord_cj/	
 
-MAINTAINER=	LoRd_CJ@dalusers.com
+MAINTAINER=	calle.madestrand@norrgarden.se
 
 .if defined(WITH_MP3)
 BUILD_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
