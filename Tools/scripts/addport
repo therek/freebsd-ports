@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.20 2001/01/07 07:25:18 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.22 2001/05/01 13:54:22 will Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -85,7 +85,7 @@ $tmp = $tmp2 = $offset = 0;
 
 chomp(my $myhost = lc(hostname()));
 if ($myhost ne lc($h)) {
-	$ssh = "$ENV{CVS_RSH} $u\@$h";
+	$ssh = "$ENV{CVS_RSH} $h -l $u";
 	$repo = "$u\@$h:/home/ncvs" if !$ENV{ADDPCVSROOT};
 } else {
 	$ssh = "";
