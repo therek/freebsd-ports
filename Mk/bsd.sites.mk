@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.59 2001/06/16 20:02:08 roam Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.60 2001/06/18 13:16:29 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -104,7 +104,7 @@ MASTER_SITE_MOZILLA+= \
 	ftp://ftp.sunsite.kth.se/archive/www/ftp.mozilla.org/%SUBDIR%/ \
 	ftp://ftp2.sinica.edu.tw/pub3/www/mozilla/%SUBDIR%/ \
 	ftp://ftp.is.co.za/networking/info-service/www/clients/netscape/mozilla/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/WWW/mozilla/ \
+	ftp://ftp.chg.ru/pub/WWW/mozilla/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/www/mozilla/&,}
 
 MASTER_SITE_NETBSD+=	\
