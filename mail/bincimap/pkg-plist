@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/bincimap/pkg-plist,v 1.3 2003/09/08 09:45:21 edwin Exp $
 bin/bincimapd
 bin/bincimap-up
 etc/bincimap/bincimap.conf.sample
@@ -25,4 +25,7 @@ etc/bincimap/bincimap.conf.sample
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/README
 %%EXAMPLESDIR%%/bincimap-auth-teapop.sh
+%%EXAMPLESDIR%%/checkpassword.pl
+%%EXAMPLESDIR%%/toimapdir
+%%EXAMPLESDIR%%/tomaildir++
 @dirrm %%EXAMPLESDIR%%
