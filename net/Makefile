@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.506 2001/04/02 10:16:39 kuriyama Exp $
+# $FreeBSD: ports/net/Makefile,v 1.507 2001/04/02 20:02:31 asmodai Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -231,6 +231,7 @@
     SUBDIR += p5-Net-Whois
     SUBDIR += p5-Net-ext
     SUBDIR += p5-NetAddr-IP
+    SUBDIR += p5-NetAddr-IP-Count
     SUBDIR += p5-PlRPC
     SUBDIR += p5-SNMP
     SUBDIR += p5-SNMP-Util
