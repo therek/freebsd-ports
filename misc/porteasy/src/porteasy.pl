@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.51 2004/11/13 13:28:41 des Exp $
+# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.52 2004/11/20 22:03:26 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.8.2";
+my $VERSION	= "2.8.3";
 my $COPYRIGHT	= "Copyright (c) 2000-2004 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -1237,6 +1237,14 @@ MAIN:{
     }
     if ($update && !$cvsroot) {
 	bsd::errx(1, "No CVS root, please use the -r option or set \$CVSROOT");
+    }
+
+    # Unset potentially troublesom environment variables
+    foreach my $var (sort(keys(%ENV))) {
+	if ($var =~ m/^(CLASSPATH|(LD|USE|JAVA|WANT)_\w+)$/) {
+	    bsd::warnx("Removing $var from environment");
+	    delete($ENV{$var});
+	}
     }
 
     # Step 1: update the ports tree infrastructure
