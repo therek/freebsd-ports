@@ -3,12 +3,12 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.9 1999/09/27 02:41:49 steve Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.10 1999/10/09 18:45:47 cpiazza Exp $
 #
 
-DISTNAME=	shujit-0.3.8
+DISTNAME=	shujit-0.3.13
 CATEGORIES=	java
-MASTER_SITES=	http://www.shudo.net/jit/dist/old/
+MASTER_SITES=	http://www.shudo.net/jit/dist/
 
 MAINTAINER=	jake@checker.org
 
