@@ -2,13 +2,13 @@
 # Date created:				2000-10-31
 # Whom:					Trevor Johnson
 #
-# $FreeBSD: ports/security/l0phtcrack/Makefile,v 1.2 2001/04/10 01:57:08 trevor Exp $
+# $FreeBSD: ports/security/l0phtcrack/Makefile,v 1.3 2001/05/02 00:54:41 trevor Exp $
 #
 
 PORTNAME=	l0phtcrack
 PORTVERSION=	1.5
 CATEGORIES=	security
-MASTER_SITES=	http://www.securitysoftwaretech.com/lc3/dist/
+MASTER_SITES=	http://www.atstake.com/research/lc3/dist/
 DISTNAME=	lcsrc
 DIST_SUBDIR=	${PORTNAME}
 
