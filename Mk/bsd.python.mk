@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.18 2002/01/16 12:24:32 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.19 2002/01/22 12:53:27 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -100,11 +100,11 @@ PYTHON_WRKSRC=		${WRKDIR}/Python-${_PYTHON_PORTVERSION}
 PYDISTUTILS=	${PYTHON_LIBDIR}/distutils/core.py:${PYTHON_PORTSDIR}
 PYXML=			${PYTHON_SITELIBDIR}/_xmlplus/__init__.py:${PORTSDIR}/textproc/py-xml
 
-PYTHON_DISTFILE=	Python-2.1.2.tgz
+PYTHON_DISTFILE=	Python-2.1.3.tgz
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python21
-PYTHON_REL=			212
+PYTHON_REL=			213
 PYTHON_SUFFIX=		21
-PYTHON_WRKSRC=		${WRKDIR}/Python-2.1.2
+PYTHON_WRKSRC=		${WRKDIR}/Python-2.1.3
 
 # Python-2.0
 .elif ${PYTHON_VERSION} == "python2.0"
