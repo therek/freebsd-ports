@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.10 1999/10/26 19:12:46 foxfair Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.11 1999/11/07 22:25:40 dirk Exp $
 #
 
 DISTNAME=	stunnel-3.4a
@@ -31,12 +31,7 @@ MAN8=		stunnel.8
 cert:
 	@(cd ${WRKSRC}; make cert)
 
-.include <bsd.port.pre.mk>
-
-pre-patch:
-.if ${OSVERSION} >= 400000
 	${CP} files/patch-aa patches/
-.endif
 
 post-build:
 	@${ECHO} ""
