@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.207 2001/05/27 02:11:31 vanilla Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.208 2001/05/27 05:42:55 vanilla Exp $
 #
 
     SUBDIR += agrep
@@ -110,6 +110,7 @@
     SUBDIR += p5-Text-Template
     SUBDIR += p5-Text-Tmpl
     SUBDIR += p5-Text-Wrapper
+    SUBDIR += p5-Tk-XMLViewer
     SUBDIR += p5-Tree-Nary
     SUBDIR += p5-XML-DOM
     SUBDIR += p5-XML-DT
