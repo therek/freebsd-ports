@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.7 2000/09/07 07:43:28 knu Exp $
+# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.8 2000/09/10 07:57:04 knu Exp $
 #
 
 PORTNAME=	python
@@ -15,8 +15,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+PYTHON_VERSION=	python1.5
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
