@@ -2,15 +2,13 @@
 # Date created:		Sat Nov  5 17:11:01 PST 1994
 # Whom:			hsu
 #
-# $FreeBSD: ports/lang/scm/Makefile,v 1.17 2000/04/12 06:20:30 obrien Exp $
+# $FreeBSD: ports/lang/scm/Makefile,v 1.18 2000/08/18 16:29:08 kevlo Exp $
 #
 
 PORTNAME=	scm
 PORTVERSION=	5d3
 CATEGORIES=	lang
-MASTER_SITES=	${MASTER_SITE_GNU} \
-		ftp://ftp.swiss.ai.mit.edu/pub/scm/
-MASTER_SITE_SUBDIR=	jacal
+MASTER_SITES=	ftp://ftp.swiss.ai.mit.edu/pub/scm/
 DISTFILES=	scm5d3.zip slib2c8.zip slib-psd1-3.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
