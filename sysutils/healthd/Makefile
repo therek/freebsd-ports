@@ -2,12 +2,11 @@
 # Date created:		15 November 1999
 # Whom:			jim@thehousleys.net
 #
-# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.21 2001/01/16 19:08:35 will Exp $
+# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.22 2001/02/06 02:43:52 jeh Exp $
 #
 
 PORTNAME=	healthd
-PORTVERSION=	0.6.4
-PORTREVISION=	1
+PORTVERSION=	0.6.5
 CATEGORIES=	sysutils ipv6
 MASTER_SITES=	http://healthd.thehousleys.net/
 
