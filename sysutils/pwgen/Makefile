@@ -2,7 +2,7 @@
 # Date created:		22 July 2000
 # Whom:			Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/sysutils/pwgen/Makefile,v 1.2 2000/07/23 09:25:07 alex Exp $
+# $FreeBSD: ports/sysutils/pwgen/Makefile,v 1.3 2000/10/13 20:29:13 ade Exp $
 #
 
 PORTNAME=	pwgen
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.tricknology.org/ports/
 
 MAINTAINER=	oddbjorn@tricknology.org
 
-LIB_DEPENDS=	getopt.1:${PORTSDIR}/devel/libgnugetopt
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-1
 
