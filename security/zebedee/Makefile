@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			Greg Hewgill <greg@hewgill.com>
 #
-# $FreeBSD: ports/security/zebedee/Makefile,v 1.9 2001/07/04 21:31:26 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zebedee
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.winton.org.uk/zebedee/ \
 
 MAINTAINER=	greg@hewgill.com
 
-.if !exists(/usr/bin/bzip2)
+.if defined(${BATCH}) || !exists(/usr/bin/bzip2)
 LIB_DEPENDS=	bz2.1:${PORTSDIR}/archivers/bzip2
 .endif
 
