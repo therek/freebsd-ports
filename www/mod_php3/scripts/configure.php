@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.72 2000/01/27 13:04:22 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.73 2000/02/22 07:26:35 kris Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -138,7 +138,7 @@ VERSION_MODSSL=	2.5.0
 
 CONFIGURE_ARGS+=--enable-module=ssl \\
 		--enable-module=define
-CONFIGURE_ENV+=	SSL_BASE='SYSTEM' RSA_BASE='SYSTEM' EAPI_MM='SYSTEM' PATH="\${PREFIX}/bin:\${PATH}"
+CONFIGURE_ENV+=	SSL_BASE='SYSTEM' EAPI_MM='SYSTEM' PATH="\${PREFIX}/bin:\${PATH}"
 
 EXTRA_PATCHES+=	\${PATCHDIR}/ssl_patch-aa
 

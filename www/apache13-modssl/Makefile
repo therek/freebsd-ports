@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.59 2000/02/22 07:54:11 kris Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.60 2000/02/24 12:15:23 rse Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -90,7 +90,6 @@ CFLAGS+=	-O6 -funroll-loops -fstrength-reduce -fomit-frame-pointer \
 CONFIGURE_ENV=	CFLAGS='${CFLAGS}' \
 		OPTIM='${OPTIM}' \
 		SSL_BASE='SYSTEM' \
-		RSA_BASE='SYSTEM' \
 		EAPI_MM='SYSTEM' \
 		PATH="${PREFIX}/bin:${PATH}"
 
