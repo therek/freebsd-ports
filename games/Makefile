@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.378 2001/05/27 16:49:48 ijliao Exp $
+# $FreeBSD: ports/games/Makefile,v 1.379 2001/06/08 15:15:49 alex Exp $
 #
 
     SUBDIR += 0verkill
@@ -114,6 +114,7 @@
     SUBDIR += hlserver-action
     SUBDIR += hlserver-admin
     SUBDIR += hlserver-cs
+    SUBDIR += hlserver-dmc
     SUBDIR += hlserver-dod
     SUBDIR += hlserver-fa
     SUBDIR += hlserver-flf
