@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					Robert V. Baron <rvb@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_intro/Makefile,v 1.4 1999/08/30 14:22:24 peter Exp $
+# $FreeBSD: ports/net/coda_intro/Makefile,v 1.5 2000/04/09 18:10:39 cpiazza Exp $
 #
 
 PORTNAME=	coda-intro
@@ -19,6 +19,6 @@ do-build:
 
 do-install:
 	@${ECHO} "We will copy the files to ${PREFIX}/share/doc/coda-intro"
-	cd ${WRKSRC}; tar cf - doc | (cd ${PREFIX}/share; tar xvf -)
+	cd ${WRKSRC}; tar --create --file - --exclude \*NetBSD --exclude CVS doc | (cd ${PREFIX}/share; tar xvf -)
 
 .include <bsd.port.mk>
