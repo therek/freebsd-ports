@@ -2,12 +2,12 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.114 2001/08/08 20:41:16 ache Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.115 2001/08/09 00:11:14 ache Exp $
 #
 
 PORTNAME=	ImageMagick
 PORTVERSION=	5.3.6
-PORTREVISION=	1
+PORTREVISION=   2
 CATEGORIES=	graphics perl5
 MASTER_SITES=	http://imagemagick.sourceforge.net/http/ \
 		ftp://ftp.yggdrasil.com/mirrors/site/ftp.simplesystems.org/pub/%SUBDIR%/ \
@@ -75,8 +75,9 @@ CONFIGURE_ARGS+=	--disable-16bit-pixel
 CONFIGURE_ARGS+=	--enable-lzw
 .endif
 
-# Loadable coders, smaller executable
-.if !defined(WITHOUT_IMAGEMAGICK_MODULES)
+# Loadable coders, smaller executable, but PerlMagick not really works
+# ('make test' there works)
+.if defined(WITH_IMAGEMAGICK_MODULES)
 LIB_DEPENDS+=	ltdl.1:${PORTSDIR}/devel/libtool
 LIBTOOLFLAGS=	# none
 CONFIGURE_ARGS+=	--with-modules
