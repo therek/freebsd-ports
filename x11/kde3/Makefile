@@ -3,10 +3,10 @@
 # Date created:        4 November 1997
 # Whom:                Satoshi Asami <asami@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kde11/Makefile,v 1.23 1999/08/31 02:50:23 peter Exp $
 #
 
-DISTNAME=	kde-1.1.1
+DISTNAME=	kde-1.1.2
 CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# empty

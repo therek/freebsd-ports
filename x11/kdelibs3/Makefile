@@ -3,13 +3,13 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.33 1999/09/07 10:45:25 steve Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.34 1999/09/18 03:12:05 steve Exp $
 #
 
-DISTNAME=	kdelibs-1.1.1
+DISTNAME=	kdelibs-1.1.2
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1.1/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	se@freebsd.org
 
