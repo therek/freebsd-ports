@@ -2,7 +2,7 @@
 # Date created:				22 August 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis/Makefile,v 1.2 2000/10/05 06:35:57 reg Exp $
+# $FreeBSD: ports/audio/vorbis/Makefile,v 1.3 2000/11/02 21:33:29 trevor Exp $
 #
 
 PORTNAME=	vorbis
@@ -29,10 +29,5 @@ pre-install:
 		${ECHO} "@comment intentionally left empty" > ${PLIST}
 
 do-install:	# empty
-
-do-package:
-.for i in ${SUBPORTS}
-	cd ${PORTSDIR}/audio/${i} && ${MAKE} package
-.endfor
 
 .include <bsd.port.mk>
