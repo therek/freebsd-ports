@@ -2,7 +2,7 @@
 # Date created:				27 Dec 1999
 # Whom:					Shinya Sasaki <pcmaster@osk3.3web.ne.jp>
 #
-# $FreeBSD: ports/japanese/samba/Makefile,v 1.3 2000/04/12 14:37:32 knu Exp $
+# $FreeBSD: ports/japanese/samba/Makefile,v 1.4 2000/08/29 19:47:11 knu Exp $
 #
 
 PORTNAME=	samba
