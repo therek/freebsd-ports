@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.125 2000/03/11 20:17:43 asami Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.126 2000/03/31 15:21:23 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -113,6 +113,7 @@
     SUBDIR += xpbiff
     SUBDIR += xpbiff-youbin
     SUBDIR += youbin
+    SUBDIR += yuzu
     SUBDIR += zmailer
 
 .include <bsd.port.subdir.mk>
