@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.320 2000/11/30 15:09:14 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.321 2000/11/30 15:09:57 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -250,6 +250,7 @@
     SUBDIR += qkc
     SUBDIR += rbnamazu
     SUBDIR += recjis
+    SUBDIR += roget-fpw
     SUBDIR += rogue_s
     SUBDIR += rskkserv
     SUBDIR += ruby-eb
