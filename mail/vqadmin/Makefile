@@ -2,13 +2,13 @@
 # Date created:		29 Mar 2001
 # Whom:			nbm
 #
-# $FreeBSD: ports/mail/vqadmin/Makefile,v 1.1 2001/03/29 13:11:02 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vqadmin
-PORTVERSION=	1.4
+PORTVERSION=	2.2
 CATEGORIES=	mail
-MASTER_SITES= 	http://www.vpopmail.cx/
+MASTER_SITES= 	http://www.inter7.com/vqadmin/
 
 MAINTAINER=	nbm@FreeBSD.org
 
