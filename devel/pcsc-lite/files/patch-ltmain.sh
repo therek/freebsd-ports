@@ -1,7 +1,16 @@
-$FreeBSD$
+$FreeBSD: ports/devel/pcsc-lite/files/patch-ltmain.sh,v 1.1 2001/12/29 05:05:13 petef Exp $
 
 --- build/ltmain.sh	2001/08/27 09:51:26	1.1
 +++ build/ltmain.sh	2001/08/27 09:51:42
+@@ -1072,7 +1072,7 @@
+ 	  esac
+ 	 elif test "X$arg" = "X-lc_r"; then
+ 	  case $host in
+-	 *-*-openbsd* | *-*-freebsd*)
++	 *-*-openbsd*)
+ 	    # Do not include libc_r directly, use -pthread flag.
+ 	    continue
+ 	    ;;
 @@ -2408,6 +2408,9 @@
  	  *-*-netbsd*)
  	    # Don't link with libc until the a.out ld.so is fixed.
