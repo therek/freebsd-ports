@@ -3,7 +3,7 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.30 1999/12/24 15:57:38 andreas Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.31 1999/12/24 23:40:09 andreas Exp $
 #
 
 DISTNAME=	zebra-0.83a
@@ -16,6 +16,13 @@ MAINTAINER=	andreas@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--sysconfdir=${PREFIX}/etc/zebra
+
+.if defined(USE_INET6)
+PLIST=		${PKGDIR}/PLIST.v6
+.else
+CONFIGURE_ARGS+=--disable-ospf6d --disable-ripngd
+PLIST=		${PKGDIR}/PLIST
+.endif
 
 post-install:
 	@${ECHO} "===>     installing zebra startup file..."
