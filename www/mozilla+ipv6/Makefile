@@ -2,11 +2,12 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.60 2001/05/22 09:16:36 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.61 2001/06/13 06:33:31 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION=	0.9.1
+PORTREVISION=	1
 PORTEPOCH=	1
 PKGNAMESUFFIX=	+ipv6
 CATEGORIES=	www ipv6
@@ -40,6 +41,7 @@ CONFIGURE_ARGS=					\
 		--disable-md			\
 		--disable-pedantic		\
 		--disable-xterm-updates		\
+		--enable-crypto			\
 		--enable-double-buffer		\
 		--enable-editor			\
 		--enable-mailnews		\
@@ -59,10 +61,8 @@ CONFIGURE_ENV=	BSD_PTHREAD_LIBS="${PTHREAD_LIBS}"
 MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin
 
 post-build:
-	@cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} BUILD_MODULES=psm
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
 		${FILESDIR}/mozilla.sh >${WRKSRC}/mozilla
-	@${CHMOD} 555 ${WRKSRC}/mozilla
 	@(cd ${WRKSRC}/dist/bin; \
 	  ${SETENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom; \
 	  ${ECHO} skin,install,select,classic/1.0 >> chrome/installed-chrome.txt; \
