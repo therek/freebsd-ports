@@ -3,7 +3,7 @@
 # Date created:        6 Oct 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/makejvf/Makefile,v 1.1.1.1 1999/11/17 23:38:45 sumikawa Exp $
+# $FreeBSD: ports/japanese/makejvf/Makefile,v 1.2 1999/12/24 04:24:04 steve Exp $
 #
 
 DISTNAME=	makejvf-1.0-fkr
@@ -38,6 +38,8 @@ post-extract:
 		${TAR} -C ${WRKDIR}/ -zxf ${DISTDIR}/${DIST_SUBDIR}/$$i${EXTRACT_SUFX} ; \
 	done
 
+.include <bsd.port.pre.mk>
+
 post-install:
 	@${MKDIR} ${MAP_DIR}
 	@for i in ${PTEX_TFM} ; do \
@@ -70,4 +72,8 @@ post-install:
 	done
 .endif
 
-.include <bsd.port.mk>
+.if exists(${PREFIX}/bin/mktexlsr)
+	@${PREFIX}/bin/mktexlsr
+.endif
+
+.include <bsd.port.post.mk>
