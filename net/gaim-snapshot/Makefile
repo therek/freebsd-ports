@@ -2,19 +2,17 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.50 2001/09/21 09:06:25 jim Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		gaim
-PORTVERSION=		0.45
+PORTVERSION=		0.47
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.marko.net/pub/gaim/ \
 			${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=		jim@FreeBSD.org
-
-BUILD_DEPENDS=		${X11BASE}/bin/gdk-pixbuf-config:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_BZIP2=		yes
 USE_X_PREFIX=		yes
@@ -37,6 +35,7 @@ RUN_DEPENDS=		ispell:${PORTSDIR}/textproc/ispell
 CONFIGURE_ARGS+=	--enable-panel
 .else
 CONFIGURE_ARGS+=	--disable-gnome
+BUILD_DEPENDS=		${X11BASE}/bin/gdk-pixbuf-config:${PORTSDIR}/graphics/gdk-pixbuf
 .endif
 .if defined(HAVE_ESOUND)
 USE_ESOUND=		yes
@@ -49,6 +48,6 @@ pre-patch:
 		s|-lpthread|${PTHREAD_LIBS:S/"//g}|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
-		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
+		s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
 
 .include <bsd.port.post.mk>
