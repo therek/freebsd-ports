@@ -2,7 +2,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.16 2000/10/05 07:22:35 reg Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.17 2001/01/19 04:48:57 green Exp $
 #
 
 PORTNAME=	xpuyopuyo
@@ -18,6 +18,8 @@ USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_GTK=	yes
 USE_AUTOCONF=	yes
+WANT_GNOME=	yes
+
 MAN6=		xpuyopuyo.6
 
 .include <bsd.port.pre.mk>
@@ -30,7 +32,6 @@ CONFIGURE_ARGS+=--with-libmikmod-prefix=${LOCALBASE}
 
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
-WANT_GNOME=	yes
 .else
 CONFIGURE_ARGS+=--without-gnome
 .endif
