@@ -2,11 +2,11 @@
 # Date created:		28 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/qhacc/Makefile,v 1.18 2001/04/03 08:14:20 will Exp $
+# $FreeBSD: ports/misc/qhacc/Makefile,v 1.19 2001/04/07 08:15:50 will Exp $
 #
 
 PORTNAME=	qhacc
-PORTVERSION=	0.8
+PORTVERSION=	0.8.4
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.ostrich-emulators.cx/qhacc/
@@ -24,11 +24,11 @@ post-extract:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/qhacc ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/share/qhacc
-	${INSTALL_DATA} ${FILESDIR}/config ${PREFIX}/share/qhacc/config.sample
+	@${MKDIR} ${DATADIR}
+	${INSTALL_DATA} ${FILESDIR}/config ${DATADIR}/config.sample
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/qhacc
-	${INSTALL_DATA} ${WRKSRC}/docs/*.html ${PREFIX}/share/doc/qhacc
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/docs/*.html ${DOCSDIR}
 .endif
 	@${SED} -e "s:/usr/X11R6:${PREFIX}:g" ${PKGMESSAGE}
 
