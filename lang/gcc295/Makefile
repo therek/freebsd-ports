@@ -3,27 +3,25 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc295/Makefile,v 1.77 2001/02/13 12:21:21 obrien Exp $
+# $FreeBSD: ports/lang/gcc295/Makefile,v 1.78 2001/02/15 23:14:42 obrien Exp $
 #
 
 PORTNAME=	gcc
-PORTVERSION=	2.95.3.test3
+PORTVERSION=	2.95.3
 CATEGORIES=	lang java
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/gcc/releases/%SUBDIR%/  \
-		ftp://egcs.cygnus.com/pub/egcs/releases/%SUBDIR%/  \
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/%SUBDIR%/  \
+		ftp://egcs.cygnus.com/pub/egcs/releases/${PKGNAME}/  \
 		${MASTER_SITE_SOURCEWARE}
-MASTER_SITE_SUBDIR=	gcc-2.95.3-prerelease \
-			gcc/releases/gcc-2.95.3-prerelease \
-			${DISTNAME}
-DISTFILES=	gcc-core-${GCC_REV}.test3${EXTRACT_SUFX} \
-		gcc-g++-${GCC_REV}.test3${EXTRACT_SUFX} \
-		gcc-g77-${GCC_REV}.test3${EXTRACT_SUFX} \
-		gcc-java-${GCC_REV}.test3${EXTRACT_SUFX} \
-		gcc-objc-${GCC_REV}.test3${EXTRACT_SUFX}
+MASTER_SITE_SUBDIR=	gcc/releases/${PKGNAME}
+DISTFILES=	gcc-core-${GCC_REV}${EXTRACT_SUFX} \
+		gcc-g++-${GCC_REV}${EXTRACT_SUFX} \
+		gcc-g77-${GCC_REV}${EXTRACT_SUFX} \
+		gcc-java-${GCC_REV}${EXTRACT_SUFX} \
+		gcc-objc-${GCC_REV}${EXTRACT_SUFX}
 
 MAINTAINER=	obrien@FreeBSD.org
 
-#USE_BZIP2=	yes
+USE_BZIP2=	yes
 
 .include <bsd.port.pre.mk>
 
