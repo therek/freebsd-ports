@@ -2,11 +2,11 @@
 # Date created:		15 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.1 2001/04/27 17:38:02 ijliao Exp $
+# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.2 2001/05/07 14:33:49 kevlo Exp $
 #
 
 PORTNAME=	diveintopython
-PORTVERSION=	3.2.1
+PORTVERSION=	3.3.1
 CATEGORIES=	lang python
 MASTER_SITES=	http://diveintopython.org/download/
 DISTNAME=	${PORTNAME}
@@ -37,8 +37,8 @@ post-patch:
 	  's#<td><a[^>]*>(Windows|Mac ?OS)</a></td>##g; \
 	   s#UNIX</a>#compressed</a>#g;s#for UNIX \(#(#g; \
 	   s#<tr>(.(?!<tr>))*(Microsoft Word|Windows Help)(.(?!</tr>))*.</tr>##g; \
-	   s#<td>(.(?!<td>))*cn/(.(?!</td>))*.</td>##g' \
-	  ${WRKSRC}/index.html
+	   s#<td>(.(?!<td>))*cn/(.(?!</td>))*.</td>##g; \
+	   s#zip#tgz#g' ${WRKSRC}/index.html
 	@ ${PERL} -pi.orig -e \
 	  's#http[^>]*(download/${PORTNAME}-examples-${VERSIONSTR}.tgz)#$$1#' \
 	  ${WRKSRC}/odbchelper_divein.html
