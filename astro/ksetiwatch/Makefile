@@ -2,11 +2,11 @@
 # Date created:				17 January 2001
 # Whom:					Sverre Valgeirsson <sverre@k9k203-3.kam.afb.lu.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/ksetiwatch/Makefile,v 1.1 2001/04/07 02:27:21 will Exp $
 #
 
 PORTNAME=	ksetiwatch
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	astro kde
 MASTER_SITES=	http://download.sourceforge.net/ksetiwatch/
 
