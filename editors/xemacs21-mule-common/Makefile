@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.17 2000/04/20 19:38:59 mharo Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.18 2000/07/13 09:53:08 taoka Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -73,9 +73,6 @@ pre-install:
 .endfor
 .endfor
 	(cd ${PREFIX}/lib/xemacs; ${MKDIR} info etc site-lisp)
-	if [ ! -f ${PREFIX}/lib/xemacs/info/dir ]; then \
-		${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/lib/xemacs/info/dir; \
-	fi
 
 post-install::
 	@if [ -f ${PKGDIR}/INSTALL ]; then \

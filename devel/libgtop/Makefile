@@ -2,7 +2,7 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.31 2000/06/16 08:47:23 sobomax Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.32 2000/06/16 21:50:04 asami Exp $
 #
 
 PORTNAME=	libgtop
@@ -28,9 +28,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 post-install:
-	if [ ! -f ${PREFIX}/info/dir ]; then \
-	${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/info/dir; \
-	fi
 	install-info --section="Programming \& development tools" \
 	--entry="* libgtop: (libgtop).	libgtop programming manual" \
 	${PREFIX}/info/libgtop.info ${PREFIX}/info/dir
