@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/firefox/pkg-deinstall.in,v 1.1 2004/08/05 19:53:30 marcus Exp $
+# $FreeBSD: ports/www/firefox/pkg-deinstall.in,v 1.2 2004/10/12 00:04:40 marcus Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -18,6 +18,7 @@ rm -rf ${MOZDIR}/chrome/overlayinfo
 rm -f ${MOZDIR}/chrome/*.rdf
 rm -f ${MOZDIR}/component.reg
 rm -f ${MOZDIR}/components.ini
+rm -f ${MOZDIR}/defaults.ini
 rm -f ${MOZDIR}/components/*.dat
 rm -rf ${MOZDIR}/extensions
 
