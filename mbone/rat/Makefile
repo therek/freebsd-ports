@@ -3,7 +3,7 @@
 # Date created:			      3 July 1999
 # Whom:				      O.Hodson@cs.ucl.ac.uk (Orion Hodson)
 #
-# $FreeBSD: ports/mbone/rat/Makefile,v 1.2 1999/09/04 20:46:49 fenner Exp $
+# $FreeBSD: ports/mbone/rat/Makefile,v 1.3 1999/09/08 23:55:52 cpiazza Exp $
 #
 
 DISTNAME=	rat-4.0.4
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/4.0.4/ \
 
 MAINTAINER=	O.Hodson@cs.ucl.ac.uk
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 USE_GMAKE=	yes
 MAN1=		rat.1
