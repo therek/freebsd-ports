@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.384 2001/07/19 05:59:23 markp Exp $
+# $FreeBSD: ports/www/Makefile,v 1.385 2001/07/21 18:24:17 sf Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -199,6 +199,7 @@
     SUBDIR += p5-Apache-SSI
     SUBDIR += p5-Apache-Session
     SUBDIR += p5-Apache-Session-SharedMem
+    SUBDIR += p5-Bundle-libservlet
     SUBDIR += p5-CGI-Application
     SUBDIR += p5-CGI-ArgChecker
     SUBDIR += p5-CGI-Cache
