@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.19 2002/09/15 21:50:36 seanc Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.20 2002/10/10 23:54:33 alane Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -39,6 +39,16 @@ pre-everything::
 	@${ECHO} ">>> Warning:  this port needs to be updated as it uses the old-style USE_QT2 variable!"
 .endif
 
+# tagged MASTER_SITE_KDE_kde
+
+kmaster=				${MASTER_SITE_KDE:S@%/@%/:kde@g}
+.if !defined(MASTER_SITE_SUBDIR)
+MASTER_SITE_KDE_kde=	${kmaster:S@%SUBDIR%/@@g}
+.else
+ksub=${MASTER_SITE_SUBDIR}
+MASTER_SITE_KDE_kde=	${kmaster:S@%SUBDIR%/@${ksub}/@g}
+.endif
+
 # USE_KDEBASE_VER section
 .if defined(USE_KDEBASE_VER)
 
@@ -66,7 +76,6 @@ USE_KDELIBS_VER=2
 LIB_DEPENDS+=	kdecore:${PORTSDIR}/x11/kdelibs3
 USE_QT_VER=		3
 PREFIX=			${KDE_PREFIX}
-MASTER_SITE_KDE_kde=	${MASTER_SITE_KDE:S@%/@%/:kde@g}
 
 .else
 
