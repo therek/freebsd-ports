@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.5 2004/12/09 14:01:13 hq Exp $
+@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.6 2005/02/24 02:04:26 hq Exp $
 bin/ogmrip
 bin/srttool
 bin/subp2pgm
@@ -20,7 +20,6 @@ include/ogmrip/ogmrip-tools.h
 include/ogmrip/ogmrip-video.h
 include/ogmrip/ogmrip-vobsub.h
 include/ogmrip/ogmrip-vorbis.h
-include/ogmrip/ogmrip-theora.h
 include/ogmrip/ogmrip-wav.h
 include/ogmrip/ogmrip-xvid.h
 include/ogmrip/ogmrip.h
