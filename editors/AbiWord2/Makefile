@@ -2,17 +2,17 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.10 2000/05/22 09:41:35 will Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.11 2000/06/27 15:59:35 alex Exp $
 #
 
 PORTNAME=	AbiWord
-PORTVERSION=	${VERSION}
+PORTVERSION=	0.7.10
 CATEGORIES=	editors
-MASTER_SITES=	http://download.abisource.com/releases/${VERSION}/src/lf/
-DISTNAME=	abi-${VERSION}
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} expat-${VERSION}.tar.gz \
-		unixfonts-${VERSION}.tar.gz wv-${VERSION}.tar.gz \
-		libiconv-${VERSION}.tar.gz abidistfiles-${VERSION}.tar.gz
+MASTER_SITES=	http://download.abisource.com/releases/${PORTVERSION}/src/lf/
+DISTNAME=	abi-${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} expat-${PORTVERSION}.tar.gz \
+		unixfonts-${PORTVERSION}.tar.gz wv-${PORTVERSION}.tar.gz \
+		libiconv-${PORTVERSION}.tar.gz abidistfiles-${PORTVERSION}.tar.gz
 
 MAINTAINER=	wolman@cs.washington.edu
 
@@ -24,8 +24,7 @@ RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 DIST_SUBDIR=	AbiWord
 
-VERSION=	0.7.10
-WRKSRC=		${WRKDIR}/abi-${VERSION}/src
+WRKSRC=		${WRKDIR}/abi-${PORTVERSION}/src
 USE_XLIB=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	prefix="${PREFIX}"
