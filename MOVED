@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.478 2004/07/22 06:55:46 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.479 2004/07/23 15:19:17 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1209,3 +1209,4 @@ x11-wm/xwmm||2004-07-23|Obsolete QT2 Application
 japanese/qt23||2004-07-23|QT2 is obsolete
 x11-toolkits/qt2-static||2004-07-23|QT2 is obsolete
 x11-toolkits/qt23||2004-07-23|QT2 is obsolete
+java/eclipse-xsd|java/eclipse-emf|2004-07-25|merged 
