@@ -2,7 +2,7 @@
 # Date created:		11 December 1998
 # Whom:			rv@gnu.org
 #
-# $FreeBSD: ports/devel/cons/Makefile,v 1.17 2000/09/15 15:19:41 rv Exp $
+# $FreeBSD: ports/devel/cons/Makefile,v 1.18 2000/09/15 18:31:51 rv Exp $
 #
 
 PORTNAME=	cons
@@ -10,7 +10,7 @@ PORTVERSION=	2.0.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www.dsmit.com/cons/stable/ \
 		http://www.gnu.org/software/cons/stable/ \
-		ftp://ftp.gnu.org/pub/gnu/cons/stable/${PORTVERSION} \
+		ftp://ftp.gnu.org/pub/gnu/cons/stable/${PORTVERSION}/ \
 		http://www.baldmt.com/cons/stable/
 EXTRACT_SUFX=	.tgz
 
