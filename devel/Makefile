@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.483 2001/03/31 11:41:54 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.484 2001/03/31 16:10:33 demon Exp $
 #
 
     SUBDIR += ElectricFence
@@ -447,6 +447,7 @@
     SUBDIR += veepee
     SUBDIR += viewcvs
     SUBDIR += vtcl
+    SUBDIR += wedit
     SUBDIR += xmake
     SUBDIR += xwpe
     SUBDIR += xxgdb
