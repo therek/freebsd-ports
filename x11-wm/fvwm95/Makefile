@@ -2,13 +2,14 @@
 # Date created:		Sa   1 Feb 1997 14:46:05 MET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11-wm/fvwm95/Makefile,v 1.28 2000/11/13 12:45:40 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fvwm95
 PORTVERSION=	2.0.43a
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/
+MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/ \
+		ftp://ftp.plig.org/pub/fvwm95/
 DISTNAME=	${PKGNAME}-Autoconf
 EXTRACT_SUFX=	.tgz
 
