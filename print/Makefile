@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.143 2001/03/03 21:19:12 sf Exp $
+# $FreeBSD: ports/print/Makefile,v 1.144 2001/03/04 19:20:51 nik Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -88,6 +88,7 @@
     SUBDIR += pips2200
     SUBDIR += pips3000
     SUBDIR += pips3300
+    SUBDIR += pips3500
     SUBDIR += pips670
     SUBDIR += pips750_2000
     SUBDIR += pips760
