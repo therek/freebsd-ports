@@ -3,7 +3,7 @@
 # Date created:			  27 Mar 1999
 # Whom:				  Jerry Hicks
 #
-# $FreeBSD: ports/devel/bison/Makefile,v 1.11 2000/04/11 21:27:11 mharo Exp $
+# $FreeBSD: ports/devel/bison/Makefile,v 1.12 2000/06/12 10:00:36 sobomax Exp $
 #
 
 PORTNAME=		bison
@@ -19,7 +19,7 @@ LIB_DEPENDS=		intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib"
+			LDFLAGS="-L${LOCALBASE}/lib -lintl"
 
 MAN1=			bison.1
 
