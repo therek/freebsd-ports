@@ -2,11 +2,11 @@
 # Date created:		25 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.10 2001/04/22 09:14:03 knu Exp $
+# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.11 2001/06/11 03:18:24 knu Exp $
 #
 
 PORTNAME=	ldap
-PORTVERSION=	0.3.6
+PORTVERSION=	0.3.7
 CATEGORIES=	net ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -52,7 +52,7 @@ CONFIGURE_ARGS?=	--with-netscape \
 #WRKSRC=		${WRKDIR}/ruby-${PORTNAME}
 INSTALL_TARGET=	site-install
 
-DOCS_EN=	README		README.html
+DOCS_EN=	CHANGES		README		README.html	TODO
 
 post-patch:
 	${RUBY} -i -pe 'gsub %r|/usr/local/openldap|, "${PREFIX}"' \
@@ -60,12 +60,12 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/ldap
-	${CP} -R ${WRKSRC}/test/* ${WRKSRC}/example/* ${RUBY_EXAMPLESDIR}/ldap/
-	${LN} -s . ${RUBY_EXAMPLESDIR}/ldap/test
-	${MKDIR} ${RUBY_DOCDIR}/ldap
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${CP} -R ${WRKSRC}/test/* ${WRKSRC}/example/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${LN} -s . ${RUBY_EXAMPLESDIR}/${PORTNAME}/test
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/ldap/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
 .endfor
 .endif
 
