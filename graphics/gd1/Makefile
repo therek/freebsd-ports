@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.41 2001/08/24 14:08:11 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gd
@@ -24,7 +24,7 @@ BUILD_DEPENDS+=	bzip2:${PORTSDIR}/archivers/bzip2
 .endif
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		freetype:${PORTSDIR}/print/freetype2
+		freetype7:${PORTSDIR}/print/freetype2
 
 USE_FREETYPE2=	yes
 
