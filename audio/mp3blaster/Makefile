@@ -2,7 +2,7 @@
 # Date created:		5 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.5 2001/01/27 15:23:13 ijliao Exp $
+# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.6 2001/01/28 21:42:13 clive Exp $
 #
 
 PORTNAME=	mp3blaster
@@ -14,8 +14,6 @@ MASTER_SITES=	ftp://mud.stack.nl/pub/mp3blaster/ \
 MAINTAINER=	greid@ukug.uk.freebsd.org
 
 .include <bsd.port.pre.mk>
-
-LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 .if ${OSVERSION} < 400010
 LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
