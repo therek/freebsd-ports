@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.44 2000/12/01 14:46:28 lioux Exp $
+# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.45 2001/02/05 16:18:14 olgeni Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
@@ -21,12 +21,12 @@ MAINTAINER=	lioux@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-utmp --enable-wtmp --enable-languages \
 		--with-xpm --enable-xpm-background --enable-transparency \
 		--enable-shared
 USE_LIBTOOL=	yes
-INSTALLS_SHLIB= yes
+INSTALLS_SHLIB=	yes
 USE_BZIP2=	yes
 
 MAN1=		rxvt.1
