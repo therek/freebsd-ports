@@ -2,17 +2,20 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.16 2000/10/23 21:03:06 will Exp $
+# $FreeBSD: ports/security/p5-MD5/Makefile,v 1.17 2001/03/01 06:38:05 vanilla Exp $
 #
 
 PORTNAME=	MD5
-PORTVERSION=	1.7
+PORTVERSION=	2.02
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	MD5
+MASTER_SITE_SUBDIR=	MD5/GAAS
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
 
 PERL_CONFIGURE=	yes
 
