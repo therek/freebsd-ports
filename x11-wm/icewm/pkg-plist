@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.31 2003/07/17 15:42:57 naddy Exp $
+@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.32 2003/08/12 18:40:16 krion Exp $
 bin/icehelp
 bin/icesh
 %%ESOUND%%bin/icesound
@@ -318,6 +318,7 @@ share/icewm/themes/win95/restore.xpm
 share/icewm/toolbar
 share/icewm/winoptions
 share/locale/be/LC_MESSAGES/icewm.mo
+share/locale/bg/LC_MESSAGES/icewm.mo
 share/locale/ca/LC_MESSAGES/icewm.mo
 share/locale/cs/LC_MESSAGES/icewm.mo
 share/locale/de/LC_MESSAGES/icewm.mo
