@@ -2,7 +2,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.16 2000/12/11 09:43:50 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.17 2001/03/21 16:08:46 sobomax Exp $
 #
 
 PORTNAME=	py-wxPython
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	wxpython
 DISTNAME=	wxPython-${PORTVERSION}
 
-MAINTAINER=	nectar@FreeBSD.ORG
+MAINTAINER=	ports@FreeBSD.ORG
 
 BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	wx_gtk.2:${PORTSDIR}/x11-toolkits/wxgtk
