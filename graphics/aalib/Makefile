@@ -2,11 +2,12 @@
 # Date created:				9 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/aalib/Makefile,v 1.17 2000/11/03 00:46:51 trevor Exp $
+# $FreeBSD: ports/graphics/aalib/Makefile,v 1.18 2000/11/15 10:03:39 roger Exp $
 #
 
 PORTNAME=	aalib
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://horac.ta.jcu.cz/pub/aa/ \
 		${MASTER_SITE_SUNSITE}
