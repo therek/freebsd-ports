@@ -1,8 +1,8 @@
 # New ports collection makefile for:	xcin25
 # Date created:		18 Oct 1999
-# Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.27 2000/10/16 13:04:50 kevlo Exp $
+# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.28 2000/10/31 12:50:01 kevlo Exp $
 #
 
 PORTNAME=	xcin
@@ -10,7 +10,7 @@ PORTVERSION=	2.5.2.1
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/
 
-MAINTAINER=	keith@freebsd.sinica.edu.tw
+MAINTAINER=	keith@FreeBSD.org
 
 LIB_DEPENDS=	tabe.0:${PORTSDIR}/chinese/libtabe \
 		intl.1:${PORTSDIR}/devel/gettext \

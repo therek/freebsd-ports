@@ -1,8 +1,8 @@
 # New ports collection makefile for:	zh-XEmacs
 # Date created:		30 Oct 1999
-# Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.6 2000/10/24 12:09:08 knu Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.7 2000/11/06 11:53:22 keith Exp $
 #
 
 PORTNAME=	xemacs
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XEMACS}
 MASTER_SITE_SUBDIR=	${DISTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-mule${EXTRACT_SUFX}
 
-MAINTAINER=	keith@freebsd.sinica.edu.tw
+MAINTAINER=	keith@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	zh-xemacs21
 # Date created:		1 October 2000
-# Whom:			Jing-Tang Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.1 2000/10/20 15:48:49 kevlo Exp $
+# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.2 2000/10/23 11:39:17 jeh Exp $
 #
 
 CATEGORIES=	chinese editors

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	Chinese Big5 TrueType fonts
 # Date created:		9 July 1999
-# Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/moettf/Makefile,v 1.5 2000/04/13 08:28:08 asami Exp $
+# $FreeBSD: ports/chinese/moettf/Makefile,v 1.6 2000/10/08 10:19:19 asami Exp $
 #
 
 PORTNAME=	moettf
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cc.ntut.edu.tw/OS/Linux/packages/chinese/fonts/twmoefont
 DISTNAME=	${PKGNAME}
 DISTFILES=	moe_kai.ttf moe_sung.ttf edustd-15.exe
 
-MAINTAINER=	keith@freebsd.sinica.edu.tw
+MAINTAINER=	keith@FreeBSD.org
 
 BUILD_DEPENDS=	unrar:${PORTSDIR}/archivers/unrar
 LIB_DEPENDS=	font.1:${PORTSDIR}/x11-servers/XttXF86srv-common

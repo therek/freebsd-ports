@@ -1,8 +1,8 @@
 # New ports collection makefile for:	MOE CIDFonts
 # Date created:		3 Mar 2000
-# Whom:			Jing-Tang Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/moefonts-cid/Makefile,v 1.1 2000/10/03 15:43:05 kevlo Exp $
+# $FreeBSD: ports/chinese/moefonts-cid/Makefile,v 1.2 2000/10/08 10:19:19 asami Exp $
 #
 
 PORTNAME=	moefonts-cid
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/moe_cidfonts/ \
 		ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/samples/
 DISTFILES=	MOEKai-Regular MOESung-Regular ac13.tar.Z ag13.tar.Z
 
-MAINTAINER=	keith@freebsd.sinica.edu.tw
+MAINTAINER=	keith@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	bg5ps
 # Date created:		17 June 1998
-# Whom:			Jing-Tang Keith Jang <keith@freebsd.sinica.edu.tw>
+# Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.5 2000/04/13 08:27:56 asami Exp $
+# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.6 2000/11/03 12:26:50 kevlo Exp $
 #
 
 PORTNAME=	bg5ps
@@ -11,7 +11,7 @@ CATEGORIES=	chinese print
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
 DISTNAME=	bg5ps-1.3.0
 
-MAINTAINER=	keith@freebsd.sinica.edu.tw
+MAINTAINER=	keith@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_FREETYPE=	yes
