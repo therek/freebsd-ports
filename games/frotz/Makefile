@@ -2,14 +2,15 @@
 # Date created:				16 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/frotz/Makefile,v 1.6 2000/11/26 15:21:49 kevlo Exp $
+# $FreeBSD: ports/games/frotz/Makefile,v 1.7 2001/06/11 16:50:16 markp Exp $
 #
 
 PORTNAME=	frotz
 PORTVERSION=	2.41
 CATEGORIES=	games
-MASTER_SITES=	http://www.cs.csubak.edu/~dgriffi/frotz/files/ \
-		ftp://ftp.gmd.de/if-archive/infocom/interpreters/frotz/
+MASTER_SITES=	ftp://ftp.gmd.de/if-archive/infocom/interpreters/frotz/ \
+		http://wuarchive.wustl.edu/doc/misc/if-archive/infocom/interpreters/frotz/ \
+		http://www.ifarchive.org/if-archive/infocom/interpreters/frotz/
 
 MAINTAINER=	ports@FreeBSD.org
 
