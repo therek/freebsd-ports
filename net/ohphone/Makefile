@@ -2,16 +2,16 @@
 # Date created:		Fri Aug 18 19:29:00 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ohphone/Makefile,v 1.3 2000/11/12 09:32:31 roger Exp $
+# $FreeBSD: ports/net/ohphone/Makefile,v 1.4 2001/01/03 14:37:06 roger Exp $
 #
 
 PORTNAME=	ohphone
-PORTVERSION=	1.1pl1
+PORTVERSION=	1.1.2
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTNAME=	ohphone_1.1pl1
+DISTNAME=	ohphone_1.1.2
 
 MAINTAINER=	roger@FreeBSD.org
 
@@ -23,6 +23,7 @@ NOCLEANDEPENDS=	yes
 
 USE_NEWGCC=	yes
 USE_BISON=	yes
+USE_XLIB=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/pwlib \
