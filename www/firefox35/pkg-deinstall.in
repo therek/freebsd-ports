@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/firefox/pkg-install.in,v 1.4 2004/06/20 06:55:06 marcus Exp $
+# $FreeBSD: ports/www/firefox/pkg-deinstall.in,v 1.1 2004/08/05 19:53:30 marcus Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -17,6 +17,7 @@ MOZDIR=%%MOZDIR%%
 rm -rf ${MOZDIR}/chrome/overlayinfo
 rm -f ${MOZDIR}/chrome/*.rdf
 rm -f ${MOZDIR}/component.reg
+rm -f ${MOZDIR}/components.ini
 rm -f ${MOZDIR}/components/*.dat
 rm -rf ${MOZDIR}/extensions
 
