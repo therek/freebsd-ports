@@ -2,11 +2,11 @@
 # Date created:		1999-07-15
 # Whom:			Palle Girgensohn <girgen@partitur.se>
 #
-# $FreeBSD: ports/www/gnujsp/Makefile,v 1.4 2000/04/10 00:05:17 cpiazza Exp $
+# $FreeBSD: ports/www/gnujsp/Makefile,v 1.5 2000/10/08 10:23:09 asami Exp $
 #
 
 PORTNAME=	gnujsp
-PORTVERSION= 	1.0.0
+PORTVERSION= 	1.0.1
 CATEGORIES=	www java
 MASTER_SITES=	http://www.klomp.org/gnujsp/downloads/
 
@@ -28,7 +28,7 @@ do-install:
 		@ cd ${WRKSRC}/examples ;\
 			${INSTALL_DATA} date.jsp snoop.jsp hello.jsp ${PREFIX}/share/examples/gnujsp
 		${MKDIR} ${PREFIX}/share/doc/gnujsp
-.for file in CHANGES FAQ INSTALL.apache INSTALL.vqserver INSTALL.jigsaw README install.html
+.for file in CHANGES FAQ INSTALL.apache INSTALL.vqserver.html INSTALL.jigsaw README install.html
 		${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gnujsp
 .endfor
 		@${SED} -e 's,%%PREFIX%%,${PREFIX},g' ${FILESDIR}/gnujsp.properties.in > \
