@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/www/webalizer/Makefile,v 1.21 2001/02/12 10:01:07 knu Exp $
+# $FreeBSD: ports/www/webalizer/Makefile,v 1.22 2001/02/23 05:48:23 dinoex Exp $
 #
 
 PORTNAME=	webalizer
@@ -45,6 +45,7 @@ CONFIGURE_ARGS+=	--with-language=${WEBALIZER_LANG}
 .endif
 
 pre-configure:
+	@${PERL5} -pi -e "s=/etc=${PREFIX}/etc=" ${WRKSRC}/webalizer.1
 .if !defined(WEBALIZER_LANG)
 	@${ECHO_MSG} "You can customize the language by typing"
 	@${ECHO_MSG} "       make WEBALIZER_LANG=<lang>"

@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer2/Makefile,v 1.20 2001/02/12 10:01:02 knu Exp $
+# $FreeBSD: ports/german/webalizer2/Makefile,v 1.21 2001/02/23 05:48:06 dinoex Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.1.6
@@ -37,6 +37,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/-src$//}
 PLIST_SUB+=	PKGNAMEPREFIX=${PKGNAMEPREFIX}
 
 pre-configure:
+	@${PERL5} -pi -e "s=/etc=${PREFIX}/etc=" ${WRKSRC}/webalizer.1
 	@${PERL5} -pi -e "s=webalizer.conf=${PKGNAMEPREFIX}webalizer.conf=" \
 		${WRKSRC}/webalizer.c
 
