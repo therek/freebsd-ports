@@ -2,11 +2,11 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.16 2000/04/09 18:13:55 cpiazza Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.17 2000/06/01 17:39:35 will Exp $
 #
 
 PORTNAME=		vnc
-PORTVERSION=		3.3.3r1
+PORTVERSION=		3.3.3.1
 CATEGORIES=		net
 MASTER_SITES=   	http://www.uk.research.att.com/vnc/dist/
 DISTFILES=		vnc-3.3.3r1_unixsrc.tgz \
@@ -33,10 +33,15 @@ post-install:
 		< ${WRKSRC}/vncserver \
 		> ${WRKSRC}/vncserver.local
 	${INSTALL_SCRIPT} ${WRKSRC}/vncserver.local ${PREFIX}/bin/vncserver
-# The documentation comes with bogus ownerships; this is a little leaky security-wise
+# The documentation comes with bogus ownerships; this is a little leaky
+# security-wise
 	${TAR} -C ${PREFIX}/share/doc -xzf ${DISTDIR}/vnc-latest_doc.tgz
 	(cd ${PREFIX}/share/doc; ${RM} -rf vnc; ${MV} vnc_docs vnc)
 	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/vnc
+# Add to PLIST because VNC developers can't/won't freeze their doc
+# distfile.
+	(cd ${PREFIX}; ls share/doc/vnc/* >> ${TMPPLIST})
+	${ECHO} '@dirrm share/doc/vnc' >> ${TMPPLIST}
 # Go install Java classes
 	${MKDIR} ${PREFIX}/share/vnc
 	${CP} -R ${WRKSRC}/classes ${PREFIX}/share/vnc
