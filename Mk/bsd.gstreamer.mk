@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.2 2005/03/08 07:17:23 ahze Exp $
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.3 2005/03/17 01:07:06 ahze Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -121,6 +121,8 @@ polypaudio_DEPENDS=	audio/gstreamer-plugins-polypaudio
 polypaudio_PLIST=	libpolypaudio
 
 shout_DEPENDS=	audio/gstreamer-plugins-shout
+
+shout2_DEPENDS=	audio/gstreamer-plugins-shout2
 
 sidplay_DEPENDS=	audio/gstreamer-plugins-sidplay
 sidplay_PLIST=	libgstsid
