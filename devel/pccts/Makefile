@@ -3,16 +3,16 @@
 # Date created:				22 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/pccts/Makefile,v 1.13 2001/02/07 14:51:14 obrien Exp $
+# $FreeBSD: ports/devel/pccts/Makefile,v 1.14 2001/04/02 08:30:41 mharo Exp $
 #
 
 PORTNAME=		pccts
-PORTVERSION=		1.33.22
+PORTVERSION=		1.33.25
 CATEGORIES=		devel
 MASTER_SITES=		http://www.polhode.com/
 DISTNAME=		pccts133mr
 
-MAINTAINER=		obrien@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 USE_ZIP=		yes
 WRKSRC=			${WRKDIR}/pccts
@@ -32,10 +32,10 @@ do-install:
 .for file in ast charptr
 	@ ${INSTALL_DATA} ${WRKSRC}/h/${file}.c ${PREFIX}/include/pccts/${file}.c
 .endfor
-.for file in AParser ASTBase ATokPtr ATokenBuffer DLexer DLexerBase PCCTSAST slist
+.for file in AParser ASTBase ATokenBuffer BufFileInput DLexerBase PCCTSAST slist
 	@ ${INSTALL_DATA} ${WRKSRC}/h/${file}.cpp ${PREFIX}/include/pccts/${file}.cpp
 .endfor
-.for file in AParser ASTBase ATokPtr AToken ATokenBuffer ATokenStream DLexerBase PBlackBox PCCTSAST SList antlr ast charbuf charptr config dlgauto dlgdef err int pcctscfg pccts_assert pccts_setjmp pccts_stdarg pccts_stdio pccts_stdlib pccts_string pccts_iostream pccts_istream
+.for file in AParser ASTBase ATokPtr ATokPtrImpl AToken ATokenBuffer ATokenStream BufFileInput DLG_stream_input DLexer DLexerBase PBlackBox PCCTSAST SList antlr ast charbuf charptr config dlgauto dlgdef err int pccts_assert pccts_iostream pccts_istream pccts_setjmp pccts_stdarg pccts_stdio pccts_stdlib pccts_string pcctscfg
 	@ ${INSTALL_DATA} ${WRKSRC}/h/${file}.h ${PREFIX}/include/pccts/${file}.h
 .endfor
 	@ ${MKDIR} ${PREFIX}/share/examples/pccts
