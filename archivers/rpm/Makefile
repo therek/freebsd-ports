@@ -2,7 +2,7 @@
 # Date created:		30 April 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/rpm/Makefile,v 1.25 2000/04/14 08:46:36 asami Exp $
+# $FreeBSD: ports/misc/rpm/Makefile,v 1.26 2000/05/28 01:40:48 vanilla Exp $
 #
 
 PORTNAME=	rpm
@@ -10,7 +10,7 @@ PORTVERSION=	2.5.6
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.rpm.org/pub/rpm/dist/rpm-2.5.x/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
