@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.347 2001/04/05 19:32:45 alex Exp $
+# $FreeBSD: ports/games/Makefile,v 1.348 2001/04/07 01:55:56 will Exp $
 #
 
     SUBDIR += 3dc
@@ -54,6 +54,7 @@
     SUBDIR += crafty-open-small
     SUBDIR += crossfire
     SUBDIR += cursive
+    SUBDIR += deal
     SUBDIR += defendguin
     SUBDIR += digger-vgl
     SUBDIR += dontspace
