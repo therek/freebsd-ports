@@ -3,7 +3,7 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.2 1999/08/30 14:23:23 peter Exp $
+# $FreeBSD: ports/net/nam/Makefile,v 1.3 1999/11/29 03:46:08 steve Exp $
 #
 
 DISTNAME=	nam-src-1.0a7
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
-BUILD_DEPENDS=	${PREFIX}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
+BUILD_DEPENDS=	${LOCALBASE}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
 
 MAN1=		nam.1
 MANCOMPRESSED=	no
