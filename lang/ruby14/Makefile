@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby14/Makefile,v 1.31 2000/09/05 12:44:12 knu Exp $
+# $FreeBSD: ports/lang/ruby14/Makefile,v 1.32 2000/09/06 21:03:20 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -18,7 +18,7 @@ RUBY_VER=	1.4
 
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ARGS=	--enable-shared --program-suffix="${RUBY_SUFFIX}"
+CONFIGURE_ARGS=	--enable-shared
 MAN1=		${RUBY_NAME}.1
 
 ELISP_FILES=	inf-ruby.el ruby-mode.el rubydb3x.el
@@ -30,6 +30,7 @@ XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
 .include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 .if !empty(RUBY_SUFFIX)
+CONFIGURE_ARGS+=	--program-suffix="${RUBY_SUFFIX}"
 MLINKS=		${RUBY_NAME}.1 ruby.1
 .endif
 
