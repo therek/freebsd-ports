@@ -2,12 +2,12 @@
 # Date created:		29 Mar 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/security/oidentd/Makefile,v 1.2 2000/04/02 05:07:17 will Exp $
+# $FreeBSD: ports/security/oidentd/Makefile,v 1.3 2000/04/09 18:30:05 cpiazza Exp $
 #
 
 PORTNAME=	oidentd
 PORTVERSION=	1.6.4
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/ojnk/ \
 		http://www.numb.org/~odin/stuff/
 
@@ -17,10 +17,4 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 MAN8=		oidentd.8
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400010
-BROKEN=		"outdated sys/file.h"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
