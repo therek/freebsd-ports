@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/misc/Makefile,v 1.228 1999/08/25 07:20:50 obrien Exp $
 #
 
     SUBDIR += 221upgrade
@@ -17,6 +17,7 @@
     SUBDIR += asbutton
     SUBDIR += bb
     SUBDIR += bbjd
+    SUBDIR += bidwatcher
     SUBDIR += bottlerocket
     SUBDIR += buffer
     SUBDIR += chord
