@@ -1,12 +1,12 @@
 # New ports collection makefile for:	healthd
-# Version required:	0.2
+# Version required:	0.3
 # Date created:		15 November 1999
 # Whom:			jim@thehousleys.net
 #
-# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.1.1.1 1999/11/14 03:28:56 steve Exp $
+# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.2 1999/11/21 00:45:21 cpiazza Exp $
 #
 
-DISTNAME=	healthd-0.2
+DISTNAME=	healthd-0.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://healthd.thehousleys.net/
 
