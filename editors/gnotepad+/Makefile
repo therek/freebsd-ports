@@ -2,7 +2,7 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.13 2001/02/23 15:47:02 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnotepad+
@@ -21,7 +21,7 @@ DOCVERSION=	1.2.0
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
 WANT_GNOME=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
@@ -40,8 +40,8 @@ post-extract:
 	@${CP} -R ${WRKDIR}/${PORTNAME}-help-${DOCVERSION}/docs ${WRKSRC}/docs
 .endif
 
-.if defined(HAVE_GNOME)
-USE_GNOME=	yes
+.if ${HAVE_GNOME:Mgnomelibs}!=""
+USE_GNOME=	gtk12
 .else
 CONFIGURE_ARGS+=--disable-gnome
 .endif
