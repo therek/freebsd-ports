@@ -3,14 +3,14 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.86 2000/01/14 19:37:32 torstenb Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.87 2000/02/12 19:27:40 torstenb Exp $
 #
 # Maximal ssh package requires YES values for
 # USE_PERL, USE_TCPWRAP
 #
 
 DISTNAME=       ssh-1.2.27
-CATEGORIES=	security net
+CATEGORIES=	security net ipv6
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/
 
 MAINTAINER=	torstenb@FreeBSD.org
