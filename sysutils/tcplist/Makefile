@@ -3,7 +3,7 @@
 # Date created:			  Mon Apr 14, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/tcplist/Makefile,v 1.11 2000/04/09 19:08:37 cpiazza Exp $
+# $FreeBSD: ports/sysutils/tcplist/Makefile,v 1.12 2000/04/22 10:13:24 mharo Exp $
 #
 
 PORTNAME=	tcplist
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.shar
 
 MAINTAINER=	obrien@NUXI.com
 
-RUN_DEPENDS=	lsof:${PORTSDIR}/sysutils/lsof
+RUN_DEPENDS=	${LOCALBASE}/sbin/lsof:${PORTSDIR}/sysutils/lsof
 
 EXTRACT_CMD=	${CAT}
 EXTRACT_BEFORE_ARGS=
