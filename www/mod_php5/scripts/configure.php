@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.154 2002/01/28 21:56:49 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.155 2002/02/01 08:34:34 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -205,7 +205,7 @@ while [ "$1" ]; do
 			;;
 		\"SNMP\")
 			echo "LIB_DEPENDS+=	snmp.4:\${PORTSDIR}/net/net-snmp"
-			echo "CONFIGURE_ARGS+=--with-snmp=\${LOCALBASE} --enable-ucd-snmp-hack"
+			echo "CONFIGURE_ARGS+=--with-snmp=\${LOCALBASE} --enable-ucd-snmp-hack --with-openssl=\${OPENSSLBASE}"
 			echo "USE_OPENSSL=	yes"
 			LIBS="${LIBS} -L\${OPENSSLBASE}/lib -lcrypto -lssl"
 			;;
