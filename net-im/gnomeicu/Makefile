@@ -2,19 +2,17 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.36 2001/05/04 21:51:12 ade Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.37 2001/05/11 16:36:30 ade Exp $
 #
 
 PORTNAME=	gnomeicu
 PORTVERSION=	0.96.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= gnomeicu
 
 MAINTAINER=	gnome@FreeBSD.org
-
-LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv
 
 USE_X_PREFIX=	yes
 USE_BZIP2=	yes
