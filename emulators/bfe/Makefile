@@ -2,7 +2,7 @@
 # Date created:		02 February 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/emulators/bfe/Makefile,v 1.3 2001/01/16 17:30:27 sobomax Exp $
+# $FreeBSD: ports/emulators/bfe/Makefile,v 1.4 2001/03/11 03:55:25 will Exp $
 #
 
 PORTNAME=	bfe
@@ -11,7 +11,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	http://www.qzx.com/bfe/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jhb@FreeBSD.org
+MAINTAINER=	greid@FreeBSD.org
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 RUN_DEPENDS=	bochs:${PORTSDIR}/emulators/bochs
