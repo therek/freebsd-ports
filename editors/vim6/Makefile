@@ -3,11 +3,11 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.138 2001/09/26 05:38:55 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.139 2001/09/28 15:08:34 obrien Exp $
 #
 
 PORTNAME?=	vim
-PORTVERSION=	6.0
+PORTVERSION=	6.0.1
 PORTREVISION?=	0
 CATEGORIES?=	editors
 MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
@@ -17,12 +17,12 @@ MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
 		ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unix/  \
 		ftp://ftp.mirror.ac.uk/sites/ftp.vim.org/pub/vim/unix/ \
 		ftp://ftp.progsoc.uts.edu.au/pub/vim/unix/
-DISTNAME=	vim-${PORTVERSION}
+DISTNAME=	vim-${PORTVERSION:C/\.[0-9]*$//}
 
 PATCH_SITES=	${MASTER_SITES:S/unix/patches/}
-#.for p in
-#PATCHFILES+=	${PORTVERSION}.0${p}
-#.endfor
+.for p in	01
+PATCHFILES+=	${PORTVERSION:C/\.[0-9]*$//}.0${p}
+.endfor
 
 MAINTAINER?=	obrien@FreeBSD.org
 
@@ -35,8 +35,8 @@ USE_PYTHON=	yes
 
 USE_BZIP2=	yes
 DIST_SUBDIR=	vim
-WRKSRC=		${WRKDIR}/vim${PORTVERSION:S/.//g}/src
-PATCH_DIST_ARGS=	-d ${WRKDIR}/${PORTNAME}${PORTVERSION:S/.//g} --forward --quiet -E ${PATCH_DIST_STRIP}
+WRKSRC=		${WRKDIR}/vim${PORTVERSION:C/\.[0-9]*$//:S/.//g}/src
+PATCH_DIST_ARGS=	-d ${WRKDIR}/${PORTNAME}${PORTVERSION:C/\.[0-9]*$//:S/.//g} --forward --quiet -E ${PATCH_DIST_STRIP}
 MAKE_ARGS+=	CONF_ARGS="--prefix=${PREFIX} --with-tlib=termlib"
 ALL_TARGET=	#
 PLIST_SUB=	VIM_VER=${DISTNAME:S/-//:S/.//}
