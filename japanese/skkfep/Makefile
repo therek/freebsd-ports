@@ -2,29 +2,25 @@
 # Date created:		22 Jul 1998
 # Whom:			Yusuke Nawano <azuki@azkey.org>
 #
-# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.4 2000/06/11 17:07:23 knu Exp $
+# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.5 2000/06/12 17:34:02 fenner Exp $
 #
 
 PORTNAME=	skkfep
-PORTVERSION=	0.85
+PORTVERSION=	0.86c
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.azkey.org/pub/misc/skkfep/
+MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/skkfep/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-PATCH_SITES=	ftp://ftp.azkey.org/pub/misc/skkfep/
-PATCHFILES=	skkfep111.diff.gz
-PATCH_DIST_STRIP=	-p1
+MAINTAINER=	freebsd-ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/skkserv:${PORTSDIR}/japanese/skk
 
-NO_WRKSUBDIR=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MAN1=		skkfep.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/skkfep ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/escmode ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKSRC}/resetsize ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/skkfep.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
