@@ -2,7 +2,7 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.11 2000/11/22 15:14:45 kevlo Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.12 2001/01/04 15:03:10 kevlo Exp $
 #
 
 PORTNAME=	iplog
@@ -39,6 +39,10 @@ post-install:
 	@${ECHO_MSG} "See ${PREFIX}/etc/example-iplog.conf for an example"
 	@${ECHO_MSG} "============================================================================"
 	@${ECHO_MSG}
+	@${ECHO_MSG} "Installing ${PREFIX}/etc/rc.d/iplog.sh.sample file."
+	@${CAT} ${FILESDIR}/iplog.sh.tmpl | \
+		${SED} -e 's;PREFIX;${PREFIX};' \
+		> ${PREFIX}/etc/rc.d/iplog.sh.sample
 .endif
 
 .include <bsd.port.post.mk>
