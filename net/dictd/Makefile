@@ -3,12 +3,12 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/dictd/Makefile,v 1.3 2001/01/28 19:16:41 clive Exp $
+# $FreeBSD: ports/net/dictd/Makefile,v 1.4 2001/01/28 21:23:04 clive Exp $
 #
 
 PORTNAME=	dictd
 PORTVERSION=	1.5.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net textproc
 MASTER_SITES=	ftp://ftp.dict.org/pub/dict/
 
@@ -31,7 +31,7 @@ post-patch:
 .for i in dict.1 dictd.8
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/$i
 .endfor
-.for i in dictd.conf example.conf
+.for i in example.conf
 	@${PERL} -pi -e "s|/usr|${PREFIX}|g" ${WRKSRC}/$i
 .endfor
 	@${PERL} -pi -e "s|%%CFLAGS%%|${CFLAGS}|g" ${WRKSRC}/zlib/Makefile
@@ -42,9 +42,9 @@ post-install:
 .for i in example.conf example.dictrc example.site example2.conf example3.conf
 	${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/${PORTNAME}
 .endfor
-	${INSTALL_DATA} ${WRKSRC}/${PORTNAME}.conf ${PREFIX}/etc/${PORTNAME}.conf
-	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/dictd.sh > ${PREFIX}/etc/rc.d/dictd.sh
-	@${CHMOD} +x ${PREFIX}/etc/rc.d/dictd.sh
+	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/${PORTNAME}.conf > ${PREFIX}/etc/${PORTNAME}.conf
+	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/${PORTNAME}.sh > ${PREFIX}/etc/rc.d/${PORTNAME}.sh
+	@${CHMOD} +x ${PREFIX}/etc/rc.d/${PORTNAME}.sh
 	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${PKGMESSAGE}
 
 .include <bsd.port.mk>
