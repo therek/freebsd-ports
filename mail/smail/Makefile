@@ -3,10 +3,10 @@
 # Date created:		16 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/smail/Makefile,v 1.25 1999/08/27 22:29:44 mharo Exp $
+# $FreeBSD: ports/mail/smail/Makefile,v 1.26 1999/08/31 06:47:41 mharo Exp $
 #
 
-DISTNAME=	smail-3.2.0.106
+DISTNAME=	smail-3.2.0.107
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.uu.net/networking/mail/smail/ \
 		ftp://ftp.planix.com/pub/Smail/ \
@@ -26,7 +26,8 @@ MAN5=		smailconf.5 smail.5 smaildrct.5 smailmeth.5 smailqual.5 \
 		smailrtrs.5 smailrtry.5 smailtrns.5
 MAN8=		pathalias.8 mkdbm.8 mkline.8 mksort.8 mkaliases.8 smail.8 \
 		mkpath.8 pathmerge.8 checkerr.8 getmap.8 mkhpath.8 savelog.8 \
-		mkuuwho.8 mailq.8 sendmail.8 runq.8 rmail.8 rsmtp.8 smtpd.8
+		mkuuwho.8 mailq.8 sendmail.8 runq.8 rmail.8 rsmtp.8 smtpd.8 \
+		newaliases.8 smailbug.8
 
 post-install:
 	@${ECHO_MSG} "If you want to replace sendmail with links to smail, type"
