@@ -2,11 +2,11 @@
 # Date created:				10 June 2001
 # Whom:					Jordan DeLong <fracture@allusion.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/prboom/Makefile,v 1.1 2001/07/10 00:24:46 dwcjr Exp $
 #
 
 PORTNAME=	prboom
-PORTVERSION=	2.2.0
+PORTVERSION=	2.2.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
