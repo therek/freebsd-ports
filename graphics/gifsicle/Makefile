@@ -1,21 +1,25 @@
-# New ports collection makefile for:   gifsicle
-# Date created:                19 December 1998
-# Whom:                        Brad Hendrickse <bradh@iafrica.com>
+# New ports collection makefile for:	gifsicle
+# Date created:			19 December 1998
+# Whom:				Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.9 2000/06/07 07:56:25 asami Exp $
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.10 2000/07/04 04:40:33 will Exp $
 #
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.20
+PORTVERSION=	1.23
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
 MAINTAINER=	bradh@uunet.co.za
 
+USE_XLIB=	yes
+GNU_CONFIGURE=	yes
+
 MAN1=		gifdiff.1 gifsicle.1 gifview.1
 
-GNU_CONFIGURE=	yes
-USE_XLIB=	yes
+.if !defined(HAVE_UNISYS_LICENSE)
+CONFIGURE_ARGS+=	--enable-ungif
+.endif
 
 post-install:
 .if !defined(NOPORTDOCS)
