@@ -2,7 +2,7 @@
 # Date Created:				6 December 1998
 # Whom:					Glenn Johnson
 #
-# $FreeBSD: ports/devel/libPropList/Makefile,v 1.11 2000/05/25 19:39:39 will Exp $
+# $FreeBSD: ports/devel/libPropList/Makefile,v 1.12 2000/06/01 16:25:42 ade Exp $
 #
 
 PORTNAME=	libproplist
@@ -15,5 +15,6 @@ DISTNAME=	libPropList-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 
 USE_LIBTOOL=	yes
+USE_AUTOCONF=	yes
 
 .include <bsd.port.mk>
