@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.317 2001/02/28 12:52:22 knu Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.318 2001/03/08 02:14:04 steve Exp $
 #
 
     SUBDIR += 9term
@@ -113,6 +113,7 @@
     SUBDIR += xtermset
     SUBDIR += xtestpicture
     SUBDIR += xtoolwait
+    SUBDIR += xtset
     SUBDIR += xvkbd
     SUBDIR += xwatchwin
     SUBDIR += xwit
