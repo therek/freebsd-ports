@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.9 1999/09/08 06:05:53 asami Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.10 2000/01/04 11:37:00 shige Exp $
 #
 
 DISTNAME=	dl-wnn-0.3.6
@@ -23,14 +23,15 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-wnn6 \
 		--with-wnn-includes=${PREFIX}/include/wnn \
 		--with-wnn-libraries=${PREFIX}/lib \
-		--with-emacs-src=${WRKDIRPREFIX}${EMACSDL_DIR}/work/emacs-${EMACS_VER}
+		--with-emacs-src=${EMACSDL_SRCDIR}
 CONFIGURE_ENV=	EMACS=${PREFIX}/bin/emacs-dl-${EMACS_VER}
 PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${MACHINE_ARCH}--freebsd \
 		DOCDIR=${DOCDIR}
 
 DOCDIR=		share/doc/emacs20-dl-wnn6
 EMACS_VER=	20.5
-EMACSDL_DIR=	${.CURDIR}/../../editors/emacs20-dl
+EMACSDL_DIR=	${PORTSDIR}/editors/emacs20-dl
+EMACSDL_SRCDIR=	${WRKDIRPREFIX}${EMACSDL_DIR}/work/emacs-${EMACS_VER}
 # hack to allow parallel build to work
 .if defined(PARALLEL_PACKAGE_BUILD)
 BUILD_DEPENDS+=	gmake:${PORTSDIR}/devel/gmake \
