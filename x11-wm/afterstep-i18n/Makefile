@@ -2,7 +2,7 @@
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.14 2000/06/29 02:31:41 asami Exp $
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.15 2000/08/03 09:27:45 asami Exp $
 #
 
 PORTNAME=	afterstep-i18n
@@ -18,13 +18,19 @@ DISTNAME=	AfterStep-1.0
 DISTFILES=      ${DISTNAME}.tar.gz \
 		unofficial-I18N.98Feb27.tar.gz \
 		kterm.xpm kterm2.xpm KTerm-AS.xpm netscape4.xpm
+EXTRACT_ONLY=	${DISTNAME}.tar.gz \
+		unofficial-I18N.98Feb27.tar.gz
 
 PATCH_DIST_STRIP=       -p1
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
-EXTRACT_ONLY=	${DISTNAME}.tar.gz \
-		unofficial-I18N.98Feb27.tar.gz
+.if defined(XFREE86_VERSION) && (${XFREE86_VERSION} == 4)
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86-4
+.else
+BUILD_DEPENDS=	${X11BASE}/bin/xmkmf:${PORTSDIR}/x11/XFree86
+.endif
+
 DIST_SUBDIR=	afterstep
 USE_X_PREFIX=	yes
 USE_XPM=	yes
