@@ -2,15 +2,12 @@
 # Date created:		17 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/japanese/ewipe/Makefile,v 1.17 2000/04/14 17:10:38 knu Exp $
+# $FreeBSD: ports/japanese/ewipe/Makefile,v 1.18 2000/10/08 07:20:58 asami Exp $
 #
 
 CATEGORIES=	japanese
 
-RUN_DEPENDS=	wish4.2jp:${PORTSDIR}/japanese/tk42
-
 MASTERDIR=	${.CURDIR}/../../misc/ewipe
-PATCHDIR=	${.CURDIR}/files
 COMMENT=	${.CURDIR}/pkg-comment
 
 KANJI=		yes
