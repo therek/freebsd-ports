@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.11 2001/07/10 00:35:43 dwcjr Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.12 2001/09/23 02:06:41 dwcjr Exp $
 #
 
 PORTNAME=	netsaint
@@ -10,7 +10,8 @@ PORTVERSION=	0.0.7b6
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/ \
-		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/dwcjr/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=dwcjr
 
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} netsaint-graphics.tar.gz
 
