@@ -2,7 +2,7 @@
 # Date created:				6 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gniffel/Makefile,v 1.1 2000/10/06 09:09:32 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gniffel
@@ -15,16 +15,14 @@ MAINTAINER=	sobomax@FreeBSD.org
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GNOME=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomeprefix gnomehack gnomelibs
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-pre-patch:
-	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
+post-patch:
+	@${REINPLACE_CMD} -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
-		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
