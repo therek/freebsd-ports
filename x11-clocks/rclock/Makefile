@@ -3,7 +3,11 @@
 # Date created:			  24th Feburary 1997
 # Whom:				  obrien@NUXI.com
 #
-# $FreeBSD: ports/x11-clocks/rclock/Makefile,v 1.16 2000/04/10 00:32:48 cpiazza Exp $
+# $FreeBSD$
+#
+# If possible, please consider updating the simple ports/x11/rxvt
+# (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
+# the same distfile.
 #
 
 PORTNAME=	rclock
@@ -15,7 +19,7 @@ MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/  \
 MASTER_SITE_SUBDIR=	X11/terms
 DISTNAME=	rxvt-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 CFLAGS+=	-DMAIL_SPOOL='\"/var/mail/\"'
 USE_BZIP2=	yes
