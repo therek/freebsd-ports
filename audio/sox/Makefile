@@ -3,7 +3,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/sox/Makefile,v 1.12 1999/08/25 04:36:11 obrien Exp $
 #
 
 DISTNAME=	sox-12.16
@@ -17,5 +17,10 @@ MAN1=		sox.1 play.1
 MLINKS=		play.1 rec.1
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-fast-ulaw --enable-fast-alaw --with-oss-dsp
+
+.if defined(USE_GSM)
+CONFIGURE_ARGS+= --with-gsmlib=${PREFIX}/lib --with-gsminc=${PREFIX}/include
+LIB_DEPENDS+=	gsm.1:${PORTSDIR}/audio/gsm
+.endif
 
 .include <bsd.port.mk>
