@@ -2,12 +2,11 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD: ports/audio/xmcd/Makefile,v 1.30 2001/07/17 19:45:01 deischen Exp $
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.31 2001/07/27 21:41:33 sf Exp $
 #
 
 PORTNAME=	xmcd
-PORTVERSION=	3.0.1
-PORTREVISION=	1
+PORTVERSION=	3.0.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.ibiblio.org/tkan/download/xmcd/src/
 
