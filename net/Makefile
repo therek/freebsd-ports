@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.428 2000/11/11 09:22:14 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.429 2000/11/11 11:56:47 obrien Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -68,6 +68,7 @@
     SUBDIR += etherboot
     SUBDIR += ethereal
     SUBDIR += everybuddy
+    SUBDIR += fidelio
     SUBDIR += flow-tools
     SUBDIR += fping
     SUBDIR += freewais-sf
