@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.169 2002/05/25 00:57:06 mita Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.170 2002/06/16 01:45:20 ade Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -251,7 +251,7 @@ while [ "$1" ]; do
 			;;
 		\"XML\")
 			if [ -z "$XML" ]; then
-				echo "LIB_DEPENDS+=	expat.2:\${PORTSDIR}/textproc/expat2"
+				echo "LIB_DEPENDS+=	expat.3:\${PORTSDIR}/textproc/expat2"
 				echo "CONFIGURE_ARGS+=--with-expat-dir=\${LOCALBASE}"
 				XML=1
 			fi
