@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.296 2000/09/02 11:11:39 kris Exp $
+# $FreeBSD: ports/games/Makefile,v 1.297 2000/09/08 10:20:08 asami Exp $
 #
 
     SUBDIR += 3dc
@@ -68,7 +68,7 @@
     SUBDIR += gma
     SUBDIR += gno3dtet
     SUBDIR += gnocatan
-    SUBDIR += gnome-breakout
+    SUBDIR += gnomebreakout
     SUBDIR += gnomechess
     SUBDIR += gnomegames
     SUBDIR += gnomememoryblocks
