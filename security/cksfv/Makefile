@@ -2,11 +2,11 @@
 # Date created:		18 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/security/cksfv/Makefile,v 1.2 2001/01/03 10:20:34 kevlo Exp $
+# $FreeBSD: ports/security/cksfv/Makefile,v 1.3 2001/06/27 10:14:43 wjv Exp $
 #
 
 PORTNAME=	cksfv
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	security
 MASTER_SITES=	http://www.fodder.org/cksfv/
 
@@ -21,7 +21,7 @@ MAKE_ENV+=	VERSION=${PORTVERSION}
 post-install:
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${PREFIX}/share/doc/cksfv
-	@ ${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/cksfv
+	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/cksfv
 .endif
 
 .include <bsd.port.mk>
