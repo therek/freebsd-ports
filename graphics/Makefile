@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.213 2000/09/02 15:10:03 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.214 2000/09/07 04:54:04 sada Exp $
 #
 
     SUBDIR += 4va
@@ -93,6 +93,7 @@
     SUBDIR += libdjvu++
     SUBDIR += libggi
     SUBDIR += libimg
+    SUBDIR += libmorph
     SUBDIR += libungif
     SUBDIR += libwmf
     SUBDIR += linux-bmrt
