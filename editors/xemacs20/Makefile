@@ -2,13 +2,15 @@
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.39 2000/10/08 00:45:26 asami Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.40 2000/10/24 12:09:17 knu Exp $
 #
 
 PORTNAME=	xemacs
 PORTVERSION=	20.4
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_XEMACS}
+MASTER_SITES+=	ftp://ftp.tnt.uni-hannover.de/pub/editors/xemacs/20.4/ \
+		ftp://ftp.sunsite.org.uk/Mirrors/ftp.xemacs.org/pub/xemacs/%SUBDIR%/
 MASTER_SITE_SUBDIR=	${DISTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${MULEDISTFILE}
 
