@@ -3,7 +3,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.6 1999/09/10 04:35:24 nsayer Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.7 1999/09/19 22:20:02 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -47,4 +47,4 @@ post-extract:
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl)
 
-.include <bsd.port.post.mk>
+.include "${MASTERDIR}/Makefile"
