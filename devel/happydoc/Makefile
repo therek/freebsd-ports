@@ -3,15 +3,15 @@
 # Date created:         Dec 29, 2000
 # Whom:                 Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/happydoc/Makefile,v 1.1 2001/01/21 15:45:46 ijliao Exp $
 #
 
 PORTNAME=	happydoc
-PORTVERSION=	0.9
+PORTVERSION=	1.3
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	HappyDoc_r0_9
+DISTNAME=	HappyDoc_r${PORTVERSION:S/./_/}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
