@@ -2,22 +2,22 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.21 2001/05/08 14:10:27 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.22 2001/05/25 15:59:18 nectar Exp $
 #
 
 PORTNAME=	wxgtk
-PORTVERSION=	2.2.6
+PORTVERSION=	2.2.7
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
 DISTNAME=	wxGTK-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
-		tiff.4:${PORTSDIR}/graphics/tiff \
-		jpeg.9:${PORTSDIR}/graphics/jpeg
+		tiff.4:${PORTSDIR}/graphics/tiff
 
 USE_X_PREFIX=	yes
+USE_MESA=	yes
 USE_GMAKE=	yes
 USE_GTK=	yes
 USE_AUTOCONF=	yes
@@ -25,9 +25,13 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-libpng=sys \
 		--with-libjpeg=sys \
 		--with-libtiff=sys \
-		--with-zlib=sys
-CONFIGURE_ENV=	CPPFLAGS="${PTHREAD_CFLAGS} -I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+		--with-zlib=sys \
+		--with-opengl
+CONFIGURE_ENV=	CPPFLAGS="${PTHREAD_CFLAGS} \
+			  -I${LOCALBASE}/include \
+			  -I${X11BASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib \
+			 -L${X11BASE}/lib"
 
 AUTOCONF=	autoconf && \
 			${PERL} -pi -e 's|-l\$$THREADS_LIB|${PTHREAD_LIBS}|g ; \
