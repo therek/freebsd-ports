@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/wanderlust-xemacs20/Makefile,v 1.2 1999/08/25 06:51:03 obrien Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com
@@ -14,7 +14,7 @@ EMACS_NAME=		xemacs
 EMACS_PORT=		xemacs20
 EMACS_VER=		20.4
 EMACS_LIBDIR=		lib/xemacs
-EMACS_VER_LIBDIR=	lib/xemacs-20.4
+
 IS_SLAVE=	yes
 
 .include <${MASTERDIR}/Makefile>
