@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.423 2001/01/22 16:33:01 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.424 2001/01/23 07:39:59 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -72,6 +72,7 @@
     SUBDIR += dmake
     SUBDIR += dmalloc
     SUBDIR += doc++
+    SUBDIR += dotconf
     SUBDIR += doxygen
     SUBDIR += dryad
     SUBDIR += elftoaout
