@@ -2,11 +2,11 @@
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.11 2000/04/01 04:27:57 mharo Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.12 2000/04/09 18:12:42 cpiazza Exp $
 #
 
 PORTNAME=	ntp
-PORTVERSION=	4.0.99g
+PORTVERSION=	4.0.99i
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/
 
