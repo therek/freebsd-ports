@@ -2,11 +2,11 @@
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.14 2000/01/08 03:51:11 cpiazza Exp $
+# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.15 2000/04/09 21:52:32 cpiazza Exp $
 #
 
 PORTNAME=	freegrep
-PORTVERSION= 	0.15
+PORTVERSION= 	0.16
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/grep/ \
 		http://www.wam.umd.edu/~howardjp/software/grep/ \
@@ -15,11 +15,11 @@ DISTNAME=	grep-${PORTVERSION}
 
 MAINTAINER=	howardjp@wam.umd.edu
 
-MAN1=		grep.1 egrep.1 fgrep.1 zgrep.1
-
 LIB_DEPENDS=	iberty.1:${PORTSDIR}/devel/freelibiberty
 
+MAN1=		grep.1 egrep.1 fgrep.1 zgrep.1
+
 post-extract:
-	@(cd ${WRKSRC}; rm -f .depend)
+	@(cd ${WRKSRC}; ${RM} -f .depend)
 
 .include <bsd.port.mk>
