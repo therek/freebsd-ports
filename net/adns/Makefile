@@ -2,12 +2,12 @@
 # Date created:			Mon Mar 3, 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/adns/Makefile,v 1.1 2000/04/02 05:37:17 will Exp $
+# $FreeBSD: ports/net/adns/Makefile,v 1.2 2000/04/09 18:10:03 cpiazza Exp $
 #
 
-PORTNAME=	adns	
-PORTVERSION=	0.7	
-CATEGORIES=     net
+PORTNAME=	adns
+PORTVERSION=	0.7
+CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.chiark.greenend.org.uk/users/ian/adns/
 MASTER_SITE_SUBDIR=	adns
