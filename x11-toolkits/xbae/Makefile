@@ -4,7 +4,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
 #
-# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.16 2000/11/07 23:28:18 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.17 2000/12/29 16:15:12 lkoeller Exp $
 #
 
 PORTNAME=	xbae
@@ -41,5 +41,6 @@ post-install:
 .endif
 	${RM} -rf ${PREFIX}/include/Xbae
 	${LN} -sf Xbae-4.8 ${PREFIX}/include/Xbae
+	${INSTALL_DATA} ${WRKSRC}/include/Xbae/patchlevel.h ${PREFIX}/include/Xbae
 
 .include <bsd.port.post.mk>
