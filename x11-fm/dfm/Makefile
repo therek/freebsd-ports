@@ -2,11 +2,11 @@
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.17 2000/08/03 09:27:13 asami Exp $
+# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.18 2000/09/09 09:32:52 kevlo Exp $
 #
 
 PORTNAME=	dfm
-PORTVERSION= 	0.99.8
+PORTVERSION= 	0.99.7
 CATEGORIES=	x11-fm
 MASTER_SITES=   http://dfm.online.de/
 
