@@ -2,7 +2,7 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.15 2000/07/19 14:54:42 alex Exp $
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.16 2000/07/22 10:28:45 alex Exp $
 #
 
 PORTNAME=	scsh
@@ -27,7 +27,7 @@ MAN1=		scsh.1
 STRIP=
 
 .if !defined(NOPORTDOCS)
-PLIST=		${PKGDIR}/PLIST.doc
+PLIST=		${PKGDIR}/pkg-plist.doc
 .endif
 
 post-install:
