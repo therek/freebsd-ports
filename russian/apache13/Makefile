@@ -3,11 +3,11 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.6 1999/08/31 01:46:56 peter Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.7 1999/11/14 03:10:16 steve Exp $
 #
 
 VERSION=	1.3.9
-RA_VERSION=	29.0
+RA_VERSION=	29.2
 DISTNAME=       apache_${VERSION}
 PKGNAME=        rapache-${VERSION}
 CATEGORIES=	www russian
@@ -28,7 +28,7 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://apache.nextpath.com/pub/apache/dist/
 
 PATCH_SITES=	ftp://ftp.lexa.ru/pub/apache-rus/ \
-		ftp://ftp.lexa.ru/pub/apache-rus/old-versions
+		ftp://ftp.lexa.ru/pub/apache-rus/old-versions/
 PATCHFILES=	patches_${VERSION}rusPL${RA_VERSION}.tar.gz
 
 MAINTAINER=	vns@delta.odessa.ua
