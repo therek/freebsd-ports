@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.167 2000/09/17 22:00:22 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.168 2000/09/17 22:05:58 will Exp $
 #
 
     SUBDIR += afsp
@@ -123,6 +123,7 @@
     SUBDIR += splay
     SUBDIR += splaytk
     SUBDIR += streamripper
+    SUBDIR += sweep
     SUBDIR += tclmidi
     SUBDIR += teknap
     SUBDIR += timidity
