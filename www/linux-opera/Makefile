@@ -2,7 +2,7 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.8 2001/03/22 12:19:20 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.9 2001/04/27 13:07:39 des Exp $
 #
 
 PORTNAME=	linux-opera
@@ -22,7 +22,7 @@ RUN_DEPENDS=	${LINUXBASE}/lib/ld.so:${PORTSDIR}/emulators/linux_base \
 NO_BUILD=	yes
 
 do-install:
-	(cd ${WRKSRC} && /bin/sh -x ./install.sh \
+	(cd ${WRKSRC} && ./install.sh \
 	    --exec_prefix=${PREFIX}/bin \
 	    --docdir=${PREFIX}/share/doc/opera \
 	    --sharedir=${PREFIX}/share/opera )
