@@ -2,18 +2,18 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-objc/Makefile,v 1.10 2001/04/10 21:02:30 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	objc
-PORTVERSION=	2.95.2
-PORTREVISION=	22
+PORTVERSION=	2.95.3
+PORTREVISION=	0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	newlib
 DISTFILES=	${OBJCNAME}.tar.gz ${NEWLIBNAME}.tar.gz
-PATCHFILES=	${OBJCNAME}-rtems-20010221.diff \
-		${NEWLIBNAME}-rtems-20010221.diff
+PATCHFILES=	${OBJCNAME}-rtems-20010622a.diff \
+		${NEWLIBNAME}-rtems-20010622.diff
 PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 
@@ -21,7 +21,7 @@ MAINTAINER=	jeh@FreeBSD.org
 
 LCLTARGET?=	i386-rtems
 
-OBJCNAME=	gcc-2.95.2
+OBJCNAME=	gcc-2.95.3
 NEWLIBNAME=	newlib-1.9.0
 MASTERDIR=	${.CURDIR}/../i386-rtems-objc
 PLIST=		${PKGDIR}/pkg-plist.${LCLTARGET}

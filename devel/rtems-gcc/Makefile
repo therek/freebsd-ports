@@ -2,13 +2,13 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/rtems-gcc/Makefile,v 1.3 2001/08/13 20:58:09 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
-PORTVERSION=	2.95.2
+PORTVERSION=	2.95.3
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	gcc
 EXTRACT_ONLY=	# Empty
 
