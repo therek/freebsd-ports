@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.33 2003/04/16 23:15:14 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.34 2003/04/19 18:52:05 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -452,12 +452,6 @@ HAVE_GNOME+=	${component}
 # GNOME infrastructure.
 .if defined(USE_GTK)
 USE_GNOME+=	gtk12
-.endif
-.if defined(USE_ESOUND)
-USE_GNOME+=	esound
-.endif
-.if defined(USE_IMLIB)
-USE_GNOME+=	imlib
 .endif
 # End of obsolete macros
 
