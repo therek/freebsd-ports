@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/blimitd/files/blimitd.sh,v 1.1 2001/12/19 02:55:21 will Exp $
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/$(basename $0)\$"); then
 	echo "$0: Cannot determine the PREFIX" >&2
@@ -22,8 +22,10 @@ status)
 	if [ -f /var/run/blimitd.pid ]; then
 		ps -uxwwp `cat /var/run/blimitd.pid`
 	else
-		echo 'blimitd may not be running'
-		ps -auxww | grep blimitd | grep -v "($0|grep)"
+		echo 'blimitd may not be running...possible processes below...'
+		echo
+		ps -auxww | egrep -e '^USER|blimitd' | egrep -v "($0|grep)"
+	fi
     ;;
 *)
     echo "usage: `basename $0` {start|stop|status}" >&2
