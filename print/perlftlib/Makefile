@@ -2,7 +2,7 @@
 # Date created:		98/12/22
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/perlftlib/Makefile,v 1.10 2000/06/29 07:02:48 obrien Exp $
+# $FreeBSD: ports/print/perlftlib/Makefile,v 1.11 2000/08/03 09:26:11 asami Exp $
 #
 
 PORTNAME=	perlftlib
@@ -21,6 +21,8 @@ USE_FREETYPE=	yes
 USE_PERL5=	yes
 NOMANCOMPRESS=	yes
 MAN1=		mkttfdir.1 ftinfo.1
+MAN3=		FreeType.3
+MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 MAKE_ENV=	PERL_VER=${PERL_VER} PERL5=${PERL5}
 
