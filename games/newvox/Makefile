@@ -2,7 +2,7 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/games/newvox/Makefile,v 1.1 2001/08/23 12:28:12 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newvox
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.libsdl.org/projects/newvox/src/
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12
+LIB_DEPENDS=	SDL-1.1.4:${PORTSDIR}/devel/sdl12
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
