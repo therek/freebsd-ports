@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.51 2001/08/08 13:53:55 olgeni Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.52 2001/08/08 13:56:47 olgeni Exp $
 #
 
     SUBDIR += abacus
@@ -23,6 +23,7 @@
     SUBDIR += kdepim
     SUBDIR += korganizer
     SUBDIR += kproject
+    SUBDIR += logjam
     SUBDIR += loserjabber
     SUBDIR += mhc-emacs20
     SUBDIR += mhc-xemacs21-mule
