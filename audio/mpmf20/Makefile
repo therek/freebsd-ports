@@ -3,7 +3,7 @@
 # Date created:		22 September 1999
 # Whom:			Markus Holmberg <saska@acc.umu.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mpmf20/Makefile,v 1.1.1.1 1999/09/27 17:51:11 cpiazza Exp $
 #
 
 DISTNAME=	mpmf20
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.world.co.uk/sba/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAKEFILE=	makefile
 
