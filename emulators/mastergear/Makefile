@@ -2,13 +2,13 @@
 # Date created:        02 November 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/mastergear/Makefile,v 1.11 1999/10/14 10:41:20 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mastergear
 PORTVERSION=	1.3
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.komkon.org/fms/MG/
+MASTER_SITES=	http://fms.komkon.org/MG/
 DISTNAME=	MG13-FreeBSD-80x86-bin
 EXTRACT_SUFX=	.tar.Z
 
