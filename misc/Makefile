@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.372 2001/08/18 06:27:32 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.373 2001/08/27 17:48:35 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -210,6 +210,7 @@
     SUBDIR += xquote
     SUBDIR += xtail
     SUBDIR += xtar
+    SUBDIR += yaucg
     SUBDIR += yaunc
     SUBDIR += ytree
 
