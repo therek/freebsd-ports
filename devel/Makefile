@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.517 2001/04/18 17:36:03 roam Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.518 2001/04/20 02:10:18 ade Exp $
 #
 
     SUBDIR += ElectricFence
@@ -168,6 +168,7 @@
     SUBDIR += kdestudio
     SUBDIR += kdevelop
     SUBDIR += kelp
+    SUBDIR += kimwitu
     SUBDIR += kpp
     SUBDIR += ktranslator
     SUBDIR += lclint
