@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.82 2001/02/22 04:09:48 kevlo Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.83 2001/02/27 19:05:48 vanilla Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -7,7 +7,6 @@
     SUBDIR += acroread-chsfont
     SUBDIR += acroread-chtfont
     SUBDIR += arphicttf
-    SUBDIR += aterm
     SUBDIR += auto-tw-l10n
     SUBDIR += autoconvert
     SUBDIR += bg5ps
@@ -64,8 +63,6 @@
     SUBDIR += ve
     SUBDIR += vflib
     SUBDIR += wangttf
-    SUBDIR += xa+cv
-    SUBDIR += xcin
     SUBDIR += xcin25
     SUBDIR += xemacs
     SUBDIR += xemacs21
