@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/chinese/mutt/Makefile,v 1.7 2001/07/29 15:28:41 clive Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
@@ -18,6 +18,8 @@ PATCHFILES=	${PKGNAMEPREFIX}mutt-${PORTVERSION}.diff.gz
 PATCH_DIST_ARGS=	-d ${WRKDIR} --quiet
 
 WITH_MUTT_LOCALES_FIX=	yes
+WITH_MUTT_NCURSES=	yes
+WITHOUT_MUTT_SGMLFORMAT=	yes
 
 MD5_FILE=	${.CURDIR}/distinfo
 PKGMESSAGE=	${.CURDIR}/pkg-message
