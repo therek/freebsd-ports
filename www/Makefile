@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.339 2001/04/09 03:48:30 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.340 2001/04/10 19:59:23 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -194,7 +194,6 @@
     SUBDIR += p5-HTML-Tree
     SUBDIR += p5-HTTP-GHTTP
     SUBDIR += p5-HTTPD-Tools
-    SUBDIR += p5-Image-Size
     SUBDIR += p5-ParallelUA
     SUBDIR += p5-Template-Toolkit
     SUBDIR += p5-WWW-Babelfish
