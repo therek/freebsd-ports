@@ -2,11 +2,11 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-wnn6/Makefile,v 1.36 1999/08/25 05:25:44 obrien Exp $
+# $FreeBSD: ports/japanese/mule-wnn6/Makefile,v 1.37 2000/04/11 14:15:25 knu Exp $
 #
 
 PKGNAMESUFFIX=	-wnn6
-CATEGORIES=	japanese editors
+CATEGORIES=	japanese
 
 WNN6=		yes
 

@@ -2,11 +2,11 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-sj3/Makefile,v 1.12 1999/08/25 05:25:40 obrien Exp $
+# $FreeBSD: ports/japanese/mule-sj3/Makefile,v 1.13 2000/04/11 14:15:21 knu Exp $
 #
 
 PKGNAMESUFFIX=	-sj3
-CATEGORIES=	japanese editors
+CATEGORIES=	japanese
 
 SJ3=		yes
 

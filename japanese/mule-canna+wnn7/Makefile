@@ -2,11 +2,11 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-canna+wnn6/Makefile,v 1.7 1999/08/25 05:25:39 obrien Exp $
+# $FreeBSD: ports/japanese/mule-canna+wnn6/Makefile,v 1.8 2000/04/11 14:15:20 knu Exp $
 #
 
 PKGNAMESUFFIX=	-canna+wnn6
-CATEGORIES=	japanese editors
+CATEGORIES=	japanese
 
 CANNA=		yes
 WNN6=		yes
