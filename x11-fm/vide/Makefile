@@ -2,7 +2,7 @@
 # Date created:				May 17 2000
 # Whom:					careilly
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/vide/Makefile,v 1.1 2000/06/09 22:25:04 will Exp $
 #
 
 PORTNAME=	vide
@@ -14,10 +14,18 @@ MAINTAINER=	careilly@thecia.ie
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-CFLAGS+=	-DHAVE_SYS_PARAM_H
-MANCOMPRESSED=	yes
-USE_XLIB=	yes
-GNU_CONFIGURE=	yes
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
+USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-DHAVE_SYS_PARAM_H" \
+		GTK_CONFIG="${GTK_CONFIG}"
+CONFIGURE_ARGS=	--disable-gtktest
+
+PLIST_SUB=	VERSION=${PORTVERSION}
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/src/*.c
 
 .include <bsd.port.mk>
