@@ -1,4 +1,4 @@
-# $FreeBSD: ports/java/Makefile,v 1.20 2000/12/06 18:23:04 des Exp $
+# $FreeBSD: ports/java/Makefile,v 1.21 2000/12/07 03:29:27 kevlo Exp $
 #
 
     SUBDIR += collections
@@ -28,6 +28,7 @@
     SUBDIR += linux-jdk13
     SUBDIR += netrexx
     SUBDIR += openjit
+    SUBDIR += orion
     SUBDIR += perltools
     SUBDIR += shujit
     SUBDIR += tya
