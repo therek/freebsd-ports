@@ -2,14 +2,13 @@
 # Date created:		13 December 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gnarr/Makefile,v 1.1 2000/12/13 14:27:35 roam Exp $
 #
 
 PORTNAME=	gnarr
-PORTVERSION=	2.0
+PORTVERSION=	2
 CATEGORIES=	games
-MASTER_SITES=	http://www.sacredchao.net/freednd/
-DISTNAME=	${PORTNAME}-2
+MASTER_SITES=	http://www.sacredchao.net/freednd/gnarr/
 
 MAINTAINER=	roam@FreeBSD.org
 
