@@ -2,11 +2,11 @@
 # Date created:				26 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/lang/p5-Switch/Makefile,v 1.4 2001/08/03 19:50:26 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Switch
-PORTVERSION=	2.05
+PORTVERSION=	2.06
 CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../by-authors/id/DCONWAY
