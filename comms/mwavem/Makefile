@@ -2,13 +2,14 @@
 # Date Created:				Apr 22 2001
 # Whom:					R. Kevin Oberman <oberman@es.net>
 #
-# $FreeBSD: ports/comms/mwavem/Makefile,v 1.2 2001/06/04 17:19:05 ijliao Exp $
+# $FreeBSD: ports/comms/mwavem/Makefile,v 1.3 2001/08/10 18:26:09 brian Exp $
 #
 
 PORTNAME=	mwavem-fbsd
 PORTVERSION=	1.1
 CATEGORIES=	comms
-MASTER_SITES=	http://www.escape.com/developer/~simonw/ \
+MASTER_SITES=	http://home.pacbell.net/simonw2/src/ \
+		http://www.escape.com/developer/~simonw/ \
 		${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tgz
 
@@ -76,8 +77,6 @@ pre-fetch:
 
 .if ${OSVERSION} < 410000
 BROKEN=		"Systems prior to 4.1 are not supported"
-.else
-BROKEN=		"Archive cannot be fetched"
 .endif
 
 .include <bsd.port.post.mk>
