@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/gtkscintilla/files/patch-aa,v 1.6 2002/02/11 13:30:01 sobomax Exp $
 
 --- Makefile.orig	Fri Feb  8 10:15:02 2002
 +++ Makefile	Mon Feb 11 15:03:03 2002
@@ -24,7 +24,7 @@ $FreeBSD$
 +SCINTILLA_LIB = -lscintilla
 +SCINTILLA_IFACE = scintilla/include/Scintilla.iface
 +LEXERS = -lscintilla_lexers
-+CFLAGS += $(shell $(GTK_CONFIG) --cflags) -Wall -DGTK -DSCI_LEXER
++CFLAGS += $(shell $(GTK_CONFIG) --cflags) -Wall -DGTK -DSCI_LEXER -fPIC
 +LDFLAGS_PRE = $(shell $(GTK_CONFIG) --libs) -DGTK 
 +LDFLAGS_POST =  $(LEXERS)  $(SCINTILLA_LIB)
  
