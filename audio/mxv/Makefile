@@ -3,7 +3,7 @@
 # Date created:		17 March 1997
 # Whom:			davidn@blaze.net.au
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mxv/Makefile,v 1.8 1999/08/25 04:35:54 obrien Exp $
 #
 
 DISTNAME=	mxv-v1.10-source
@@ -19,8 +19,8 @@ NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
 MAKE_ENV=	CPU=FREEBSD
 #ivmkmf -a (with makedepend) not recommended by documentation
-XMKMF=		env ${MAKE_ENV} ${LOCALBASE}/interviews/bin/FREEBSD/ivmkmf; \
-		env ${MAKE_ENV} make Makefiles
+XMKMF=		${SETENV} ${MAKE_ENV} ${LOCALBASE}/interviews/bin/FREEBSD/ivmkmf; \
+		${SETENV} ${MAKE_ENV} make Makefiles
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/FREEBSD/mxv ${PREFIX}/bin

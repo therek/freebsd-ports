@@ -3,7 +3,7 @@
 # Date created:         16 May 1998
 # Whom:                 chuckr@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/objc/Makefile,v 1.11 1999/08/25 06:35:05 obrien Exp $
 #
 
 DISTNAME=       objc-2.2.15
@@ -37,7 +37,7 @@ pre-configure:
 
 post-build:
 	$(ECHO) "Building additional libraries (boehm-gc compatibility)"
-	(cd $(WRKSRC); env PATH=$(WRKDIR)/bin:$(PATH) ./makeLibs)
+	(cd $(WRKSRC); ${SETENV} PATH=$(WRKDIR)/bin:$(PATH) ./makeLibs)
 
 pre-install:
 	$(MKDIR) $(PREFIX)/share/doc/objc
