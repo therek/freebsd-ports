@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.147 2001/08/02 09:18:58 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.148 2001/08/06 15:15:44 sada Exp $
 #
 
     SUBDIR += FWF
@@ -15,6 +15,7 @@
     SUBDIR += engradient
     SUBDIR += fltk
     SUBDIR += fltk-xunicode
+    SUBDIR += flvw
     SUBDIR += fox
     SUBDIR += fox-xunicode
     SUBDIR += gal
