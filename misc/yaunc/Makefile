@@ -2,28 +2,29 @@
 # Date created:		5 March 2000
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/misc/yaunc/Makefile,v 1.3 2000/12/09 00:04:27 nsayer Exp $
+# $FreeBSD: ports/misc/yaunc/Makefile,v 1.4 2000/12/19 08:14:00 sobomax Exp $
 #
 
 PORTNAME=	yaunc
-PORTVERSION=	0.05
+PORTVERSION=	0.06
 CATEGORIES=	misc
 MASTER_SITES=	http://www.redterror.net/code/yaunc/
 
 MAINTAINER=	ports@FreeBSD.org
 
-ALL_TARGET=	bsd
+GNU_CONFIGURE=	yes
 MAN1=		yaunc.1
 
 post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/yaunc.1
+	@${CP} -f ${FILESDIR}/startup ${WRKSRC}/yaunc.sh
+.for file in yaunc.1 yaunc.sh
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${file}
+.endfor
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/yaunc ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/yaunc.1 ${MANPREFIX}/man/man1
 	${INSTALL_DATA} -m 600 ${WRKSRC}/yaunc.conf ${PREFIX}/etc/yaunc.conf.sample
-	${SED} -e "s:%%PREFIX%%:${PREFIX}:g" ${FILESDIR}/startup > \
-		${PREFIX}/etc/rc.d/yaunc.sh
-	${CHMOD} 755 ${PREFIX}/etc/rc.d/yaunc.sh
+	${INSTALL_SCRIPT} -m 755 ${WRKSRC}/yaunc.sh ${PREFIX}/etc/rc.d
 
 .include <bsd.port.mk>
