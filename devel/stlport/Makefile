@@ -3,7 +3,7 @@
 # Date Created:			  2 December 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/devel/stlport/Makefile,v 1.11 2001/05/17 21:09:19 obrien Exp $
+# $FreeBSD: ports/devel/stlport/Makefile,v 1.12 2001/05/30 22:27:35 obrien Exp $
 #
 
 PORTNAME=	stlport
@@ -13,9 +13,7 @@ MASTER_SITES=	http://www.stlport.com/archive/  \
 		http://www.stlport.com/beta/
 DISTNAME=	STLport-${PORTVERSION:S/.b/-b/}
 
-MAINTAINER=	obrien@FreeBSD.org
-
-BROKEN=		"YES I _KNOW_ THIS IS BROKEN.  DO **NOT** EMAIL ME ABOUT THIS PORT UNLESS YOU ARE FUNISHING A PATCH TO FIX IT."
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/STLport-${PORTVERSION:S/.b/b/}/src
 MAKEFILE=	gcc.mak
