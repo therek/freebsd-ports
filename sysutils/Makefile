@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.196 2001/06/24 23:46:25 dd Exp $
+# $FreeBSD$
 #
     SUBDIR += yawho
 
@@ -40,6 +40,7 @@
     SUBDIR += doconfig
     SUBDIR += du2ps
     SUBDIR += dvdtape
+    SUBDIR += e2fsprogs
     SUBDIR += eject
     SUBDIR += extipl
     SUBDIR += fcron
