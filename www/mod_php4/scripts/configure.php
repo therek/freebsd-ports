@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.138 2001/08/08 21:50:45 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.139 2001/08/25 10:46:47 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -74,7 +74,7 @@ while [ "$1" ]; do
 		\"GD\")
 			echo "LIB_DEPENDS+=	gd.2:\${PORTSDIR}/graphics/gd"
 			echo "LIB_DEPENDS+=	freetype.7:\${PORTSDIR}/print/freetype2"
-			echo "LIB_DEPENDS+=	png.4:\${PORTSDIR}/graphics/png"
+			echo "LIB_DEPENDS+=	png.5:\${PORTSDIR}/graphics/png"
 			echo "LIB_DEPENDS+=	jpeg.9:\${PORTSDIR}/graphics/jpeg"
 			echo "CONFIGURE_ARGS+=--with-gd=\${PREFIX} \\"
 			echo "		--with-freetype-dir=\${PREFIX} \\"
