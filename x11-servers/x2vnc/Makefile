@@ -2,11 +2,11 @@
 # Date created:				12th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-servers/x2vnc/Makefile,v 1.1 2000/09/12 19:50:22 ade Exp $
+# $FreeBSD: ports/x11-servers/x2vnc/Makefile,v 1.2 2000/10/04 06:40:07 sobomax Exp $
 #
 
 PORTNAME=	x2vnc
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	x11-servers
 MASTER_SITES=	http://www.hubbe.net/~hubbe/
 

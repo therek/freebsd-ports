@@ -2,11 +2,11 @@
 # Date created:		3 September 2000
 # Whom:			grog
 #
-# $FreeBSD: ports/x11-servers/x2x/Makefile,v 1.2 2000/09/08 10:43:39 asami Exp $
+# $FreeBSD: ports/x11-servers/x2x/Makefile,v 1.3 2000/10/04 06:40:07 sobomax Exp $
 #
 
 PORTNAME=	x2x
-PORTVERSION= 	1.27
+PORTVERSION=	1.27
 CATEGORIES=	x11-servers
 MASTER_SITES=	http://gatekeeper.dec.com/pub/DEC/SRC/x2x/
 DISTNAME=	${PORTNAME}-${PORTVERSION}

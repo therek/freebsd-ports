@@ -2,11 +2,11 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-MGA/Makefile,v 1.10 2000/04/10 00:53:02 cpiazza Exp $
+# $FreeBSD: ports/x11-servers/XttXF98srv-MGA/Makefile,v 1.11 2000/10/08 10:23:38 asami Exp $
 #
 
 PORTNAME=	xtt-98MGA
-PORTVERSION= 	${VERSION}.${PATCHLEVEL}
+PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp

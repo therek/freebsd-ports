@@ -2,11 +2,11 @@
 # Date created:				11 September 1998
 # Whom:					jabley@clear.co.nz
 #
-# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.12 2001/01/24 12:05:07 olgeni Exp $
+# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.13 2001/01/24 12:43:10 olgeni Exp $
 #
 
 PORTNAME=	xfstt
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 PORTREVISION=	1
 CATEGORIES=	x11-servers
 MASTER_SITES=	$(MASTER_SITE_SUNSITE)

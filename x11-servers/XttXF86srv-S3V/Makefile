@@ -2,11 +2,11 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-S3V/Makefile,v 1.11 2000/04/10 00:52:53 cpiazza Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-S3V/Makefile,v 1.12 2000/10/08 10:23:33 asami Exp $
 #
 
 PORTNAME=	xtt-S3V
-PORTVERSION= 	${VERSION}.${PATCHLEVEL}
+PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
