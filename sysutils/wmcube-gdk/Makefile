@@ -2,15 +2,15 @@
 # Date created:				Thu Aug 16 12:42:18 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wmcube-gdk/Makefile,v 1.1 2001/08/30 04:24:24 lioux Exp $
 #
 
 PORTNAME=	wmcube
-PORTVERSION=	0.98
+PORTVERSION=	0.98p1
 CATEGORIES=	sysutils windowmaker
-MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/
+MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/
 PKGNAMESUFFIX=	-gdk
-DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}
+DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}-${PORTVERSION}
 
 MAINTAINER=	pat@databits.net
 
