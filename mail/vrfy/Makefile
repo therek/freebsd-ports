@@ -2,13 +2,14 @@
 # Date created:				2000/09/09
 # Whom:					kaz
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/vrfy/Makefile,v 1.1 2000/09/17 22:45:01 will Exp $
 #
 
 PORTNAME=	vrfy
 PORTVERSION=	1.0
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.nikhef.nl/pub/network/
+MASTER_SITES=	ftp://ftp.nikhef.nl/pub/network/ \
+		http://www.kobe1995.net/~kaz/FreeBSD/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
