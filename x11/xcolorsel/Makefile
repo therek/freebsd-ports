@@ -2,7 +2,7 @@
 # Date Created:			11 November 1998
 # Whom:				Wayne Cuddy <wayne@crb-web.com>
 #
-# $FreeBSD: ports/x11/xcolorsel/Makefile,v 1.2 1999/08/31 02:50:56 peter Exp $
+# $FreeBSD: ports/x11/xcolorsel/Makefile,v 1.3 2000/04/13 19:10:27 cpiazza Exp $
 #
 
 PORTNAME=		xcolorsel
@@ -12,7 +12,9 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 DISTNAME=		${PKGNAME}-src
 
-MAINTAINER=	wayne@crb-web.com
+MAINTAINER=	freebsd-ports@freebsd.org
+
+BROKEN=		This port is broken and needs a new maintainer
 
 WRKSRC=		$(WRKDIR)/xcolorsel
 
