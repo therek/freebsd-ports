@@ -3,7 +3,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.5 1999/12/23 01:07:28 jedgar Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.6 2000/02/05 00:17:45 jim Exp $
 #
 
 DISTNAME=	kvirc-1.0.0
@@ -12,8 +12,6 @@ MASTER_SITES=	ftp://ftp.kvirc.bz.nu/pub/mirror/kvirc/ \
 		http://www.kvirc.org/
 
 MAINTAINER=	andrews@technologist.com
-
-LIB_DEPENDS=	pthread.13:${PORTSDIR}/devel/pth-devel
 
 USE_QT2=	yes
 USE_X_PREFIX=	yes
