@@ -2,7 +2,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.22 2000/09/06 03:28:32 ade Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.23 2000/10/05 07:10:26 reg Exp $
 #
 
 PORTNAME=	gnomepim
@@ -21,7 +21,7 @@ PILOTLIB=	"-L${LOCALBASE}/pilot/lib"
 PLIST_SUB+=	GNOMEPILOT:=""
 .else
 CONFIGURE_ARGS=	--without-pisock --disable-pilotlinktest
-EXTRA_PATCHES=	${FILESDIR}/patch.nopilot
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-nopilot
 PLIST_SUB+=	GNOMEPILOT:="@comment "
 .endif
 
