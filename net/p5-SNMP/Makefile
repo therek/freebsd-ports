@@ -3,7 +3,7 @@
 # Date created:				May 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.7 1999/08/30 14:23:41 peter Exp $
+# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.8 1999/08/31 06:49:03 mharo Exp $
 #
 
 DISTNAME=	SNMP-1.8.1
@@ -14,9 +14,7 @@ MASTER_SITE_SUBDIR=	SNMP
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-LIB_DEPENDS= 	snmp.3:${PORTSDIR}/net/ucd-snmp
-
-BROKEN=		'incompatible with the latest version of ucd-snmp'
+LIB_DEPENDS= 	snmp.4:${PORTSDIR}/net/ucd-snmp
 
 USE_PERL5=	YES
 
