@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.396 2001/08/16 14:02:17 wjv Exp $
+# $FreeBSD: ports/www/Makefile,v 1.397 2001/08/18 04:17:49 ijliao Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -137,6 +137,7 @@
     SUBDIR += mod_cgi_debug
     SUBDIR += mod_color
     SUBDIR += mod_csacek
+    SUBDIR += mod_cvs
     SUBDIR += mod_dav
     SUBDIR += mod_dtcl
     SUBDIR += mod_extract_forwarded
