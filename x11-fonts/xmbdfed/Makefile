@@ -3,7 +3,7 @@
 # Date created:		June 20, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.14 1999/11/25 03:41:55 jseger Exp $
+# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.15 2000/01/14 19:11:18 imura Exp $
 #
 
 DISTNAME=	xmbdfed-4.3
@@ -16,18 +16,11 @@ PATCHFILES=	${DISTNAME}.patch1 ${DISTNAME}.patch2 ${DISTNAME}.patch3
 
 MAINTAINER=	ports@FreeBSD.org
 
-.if defined(USE_FREETYPE)
 LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
-.endif
 
 USE_X_PREFIX=	yes
 REQUIRES_MOTIF=	yes
 
 MAN1=		xmbdfed.1
-
-.if !defined(USE_FREETYPE)
-pre-extract:
-	@${ECHO_MSG} "You can add the optional FreeType import capability by defining USE_FREETYPE"
-.endif
 
 .include <bsd.port.mk>
