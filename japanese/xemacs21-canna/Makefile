@@ -3,7 +3,7 @@
 # Date created:		5 Dec 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.8 2000/01/06 01:46:28 shige Exp $
+# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.9 2000/01/07 16:17:04 shige Exp $
 #
 
 # This is the MASTER port of Japanese XEmacs slave ports
@@ -38,30 +38,30 @@ SITE_LIBRARIES=		${X11BASE}/lib
 WITH_INPUT_METHOD=	--with-canna --with-wnn --with-wnn6=no
 LIB_INPUT_METHOD=	canna.1:${PORTSDIR}/japanese/Canna
 BUILD_INPUT_METHOD=	${PREFIX}/bin/Wnn4/jserver:${PORTSDIR}/japanese/Wnn
-COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK, Canna and Wnn4 support.
+COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK, Canna and Wnn4 support
 .elif defined(CANNA) && defined(WNN6)
 PKGNAMEEXT=		-canna+wnn6
 WITH_INPUT_METHOD=	--with-canna --with-wnn6
 LIB_INPUT_METHOD=	canna.1:${PORTSDIR}/japanese/Canna
 BUILD_INPUT_METHOD=	${PREFIX}/include/wnn/jlib.h:${PORTSDIR}/japanese/Wnn6-lib
-COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK, Canna and Wnn6 support.
+COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK, Canna and Wnn6 support
 .elif defined(WNN4)
 PKGNAMEEXT=		-wnn4
 SITE_INCLUDES=		${X11BASE}/include
 SITE_LIBRARIES=		${X11BASE}/lib
 WITH_INPUT_METHOD=	--with-wnn --with-canna=no --with-wnn6=no
 BUILD_INPUT_METHOD=	${PREFIX}/bin/Wnn4/jserver:${PORTSDIR}/japanese/Wnn
-COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Wnn4 support.
+COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Wnn4 support
 .elif defined(WNN6)
 PKGNAMEEXT=		-wnn6
 WITH_INPUT_METHOD=	--with-wnn6 --with-canna=no
 BUILD_INPUT_METHOD=	${PREFIX}/include/wnn/jlib.h:${PORTSDIR}/japanese/Wnn6-lib
-COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Wnn6 support.
+COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Wnn6 support
 .else
 PKGNAMEEXT=		-canna
 WITH_INPUT_METHOD=	--with-canna --with-wnn=no --with-wnn6=no
 LIB_INPUT_METHOD=	canna.1:${PORTSDIR}/japanese/Canna
-COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Canna support.
+COMMENT_TEXT=		XEmacs(version ${XEMACS_MAJOR_VER}) text editor, with SJ3, SKK and Canna support
 .endif
 
 post-install::
