@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/darkstat/pkg-plist,v 1.3 2002/08/11 22:23:48 dwcjr Exp $
+@comment $FreeBSD: ports/net/darkstat/pkg-plist,v 1.4 2002/10/05 19:22:10 obraun Exp $
 sbin/darkstat
 share/locale/da/LC_MESSAGES/darkstat.mo
 share/locale/es/LC_MESSAGES/darkstat.mo
@@ -10,6 +10,7 @@ share/locale/zh_TW/LC_MESSAGES/darkstat.mo
 share/locale/zh_CN/LC_MESSAGES/darkstat.mo
 share/locale/lt/LC_MESSAGES/darkstat.mo
 share/locale/hu/LC_MESSAGES/darkstat.mo
+share/locale/ms/LC_MESSAGES/darkstat.mo
 share/locale/hr/LC_MESSAGES/darkstat.mo
 %%PORTDOCS%%share/doc/darkstat/AUTHORS
 %%PORTDOCS%%share/doc/darkstat/ChangeLog
