@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.339 2001/04/07 19:37:31 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.340 2001/04/09 03:44:49 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -169,6 +169,7 @@
     SUBDIR += wmmand
     SUBDIR += wmstock
     SUBDIR += wmweather
+    SUBDIR += wmx10
     SUBDIR += xd
     SUBDIR += xdelta
     SUBDIR += xenmenu
