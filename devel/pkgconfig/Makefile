@@ -2,12 +2,11 @@
 # Date created:				30 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/pkgconfig/Makefile,v 1.4 2001/05/23 00:45:47 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pkgconfig
-PORTVERSION=	0.5.0
-PORTREVISION=	2
+PORTVERSION=	0.6.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -18,7 +17,7 @@ BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/devel/glib12:patch
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-LIBTOOLFILES=	configure glib-1.2.8/configure
+LIBTOOLFILES=	glib-1.2.8/configure
 LIBTOOLFLAGS=	--disable-ltlibs \
 		--disable-shared
 
@@ -33,6 +32,5 @@ post-extract:
 
 post-install:
 	${MKDIR} ${PREFIX}/libdata/pkgconfig
-	${INSTALL_MAN} ${WRKSRC}/pkg-config.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
