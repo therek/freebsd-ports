@@ -2,7 +2,7 @@
 # Date created:		13 Feb 1999
 # Whom:			Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/telnet/Makefile,v 1.6 2000/10/04 15:35:36 kevlo Exp $
+# $FreeBSD: ports/chinese/telnet/Makefile,v 1.7 2000/10/08 23:20:54 asami Exp $
 #
 
 PORTNAME=	telnet
@@ -23,6 +23,12 @@ do-extract:
 BROKEN=	"You need to build this port with ${SRCDIR}"
 .endif
 
-MAN1=		telnet.1
+MAN1=		zh-telnet.1
+
+do-install:
+	@cd ${WRKSRC}; \
+	${CP} telnet.1 ${MAN1}; \
+	${INSTALL_PROGRAM} ${WRKSRC}/telnet ${PREFIX}/bin/zh-telnet; \
+	${INSTALL_MAN} ${MAN1} ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
