@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.13 2000/05/27 11:18:06 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.14 2000/07/15 16:28:41 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -16,7 +16,7 @@ LETTERDJ	"LETTERDJ printing"		ON	\
 A4		"A4 printing"			OFF	\
 PS		"Postscript and PDF files"	ON	\
 SAMBA		"Windows Remote-Print Support"	ON	\
-ATALK		"AppleTalk Remote-Print Support"OFF	\
+ATALK		"AppleTalk Remote-Print Support" OFF	\
 ENCRYPTED_PDF	"Encrypted PDF files"		ON	\
 ASCII		"ASCII/English Text/Scripts"	ON	\
 MAIL		"Mail/News articles"		ON	\
