@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.16 2000/07/05 14:50:25 shige Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.17 2000/08/21 00:56:58 steve Exp $
 #
 
 PORTNAME=	emacs20-dl-wnn6
@@ -22,7 +22,7 @@ RUN_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR}
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-wnn6 \
-		--with-wnn-includes=${PREFIX}/include/wnn \
+		--with-wnn-includes=${PREFIX}/include/wnn6/wnn \
 		--with-wnn-libraries=${PREFIX}/lib \
 		--with-emacs-src=${EMACSDL_SRCDIR}
 CONFIGURE_ENV=	EMACS=${PREFIX}/bin/emacs-dl-${EMACS_VER}
