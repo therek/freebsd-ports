@@ -2,7 +2,7 @@
 # Date created:				Tue 04 Jul 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tiff2png/Makefile,v 1.1 2000/07/04 07:00:07 will Exp $
 #
 
 PORTNAME=	tiff2png
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/png/src/ \
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 
 MAKE_ARGS=	-E INSTALL
 MAKE_ENV=	INSTALL="${PREFIX}"
