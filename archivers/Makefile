@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.44 2000/12/19 09:48:11 will Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.45 2001/01/03 23:21:26 will Exp $
 #
 
     SUBDIR += 9e
@@ -25,6 +25,7 @@
     SUBDIR += p5-Archive-Tar
     SUBDIR += p5-Archive-Zip
     SUBDIR += p5-Compress-Zlib
+    SUBDIR += p5-Mac-Macbinary
     SUBDIR += pkzip
     SUBDIR += ppunpack
     SUBDIR += rar
