@@ -1,5 +1,6 @@
-# $FreeBSD: ports/databases/Makefile,v 1.134 2001/08/04 08:41:12 ijliao Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.135 2001/09/03 18:54:20 knu Exp $
 #
+    SUBDIR += zodb
     SUBDIR += zpygresqlda
     SUBDIR += adodb
     SUBDIR += cdb
