@@ -2,7 +2,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.54 2000/08/03 09:28:52 asami Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.55 2000/08/15 14:07:23 tg Exp $
 #
 
 PORTNAME=	xlockmore
@@ -42,7 +42,7 @@ USE_MESA=	yes
 CONFIGURE_ARGS+=	--without-mesagl
 .endif
 
-XFREE86VERSION!= /usr/bin/awk '/\#define XFree86Version/ {print $$3}' \
+XFREE86VERSION!= /usr/bin/awk '/\#.*define XFree86Version/ {print $$NF}' \
 				${X11BASE}/lib/X11/config/xfree86.cf
 
 .if ${XFREE86VERSION} >= 4000
