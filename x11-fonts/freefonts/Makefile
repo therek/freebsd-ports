@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 21:32:14 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fonts/freefonts/Makefile,v 1.15 2001/01/31 20:22:04 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freefonts
@@ -12,6 +12,7 @@ CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/fonts/
 
 MAINTAINER=	olgeni@FreeBSD.org
+COMMENT=	A collection of ATM fonts (not all free) from the CICA archives
 
 RESTRICTED=	"see accompanying .license files"
 NO_WRKSUBDIR=	yes
