@@ -3,7 +3,7 @@
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.34 2000/11/11 22:18:36 obrien Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.35 2000/11/11 22:26:29 obrien Exp $
 #
 
 PORTNAME=	minicom
@@ -16,6 +16,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
 		http://www.pp.clinet.fi/~walker/
 MASTER_SITE_SUBDIR=	apps/serialcomm/dialout
 DISTFILES=	${DISTNAME}.src${EXTRACT_SUFX}
+
+FORBIDDEN=	"Local exploit yielding setuid uucp"
 
 MAINTAINER=	obrien@FreeBSD.org
 
