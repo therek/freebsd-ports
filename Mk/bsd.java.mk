@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.30 2003/04/15 17:13:26 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.31 2003/04/16 15:31:17 phantom Exp $
 #
 
 .if !defined(Java_Include)
@@ -252,11 +252,6 @@ USE_JAVA=	1.4
 
 .		elif (${USE_JAVA} == "1.4+")
 USE_JAVA=	1.4
-
-.		else
-.BEGIN:
-	@${ECHO} "${Java_Include}: Internal error. \"${USE_JAVA}\" is not caught as a valid value for USE_JAVA. Please send an email to ${Java_Include_MAINTAINER} with a detailed description of what you did and what the output was.";
-	@${FALSE}
 .		endif
 
 
