@@ -2,7 +2,7 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/ldapsdk/Makefile,v 1.8 2000/10/24 12:36:32 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ldapsdk
@@ -18,6 +18,7 @@ MAINTAINER=	paul@FreeBSD.org
 WRKSRC=			${WRKDIR}/mozilla
 MAKEFILE=	${WRKSRC}/directory/ldapsdk.mk
 USE_GMAKE=	yes
+USE_PERL5=	yes
 
 MAKE_ENV+=	MOZILLA_CLIENT=1 NO_MDUPDATE=1 MOZ_LDAP_SDK=1
 ALL_TARGET=		build

@@ -2,7 +2,7 @@
 # Date created:        14 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/giftrans/Makefile,v 1.6 1999/12/27 08:23:56 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	giftrans
@@ -15,6 +15,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 DIST_SUBDIR=	giftrans
 NO_WRKSUBDIR=	yes
+USE_REINPLACE=	yes
 
 MAN1=		giftrans.1
 
@@ -25,7 +26,7 @@ do-extract:
 	done
 
 post-patch:
-	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/giftrans.c
+	@${REINPLACE_CMD} -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/giftrans.c
 
 do-build:
 	(cd ${WRKSRC}; ${CC} ${CFLAGS} giftrans.c -o giftrans)

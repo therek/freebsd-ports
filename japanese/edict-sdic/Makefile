@@ -2,7 +2,7 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-sdic/Makefile,v 1.5 2001/02/06 13:21:51 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	edict-sdic
@@ -26,6 +26,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-emacs=mule \
 		--with-lispdir=${PREFIX}/share/emacs/site-lisp \
 		--with-dictdir=${PREFIX}/share/dict
+USE_PERL5=	yes
 
 post-extract:
 	${CP} -f ${DISTDIR}/edict.gz ${WRKSRC}

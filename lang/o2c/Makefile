@@ -2,7 +2,7 @@
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.11 2001/07/11 16:33:44 fenner Exp $
+# $FreeBSD$
 
 PORTNAME=	o2c
 PORTVERSION=	1.16
@@ -15,6 +15,7 @@ MAINTAINER=	ob@breuninger.org
 # does not support 64-bit platforms
 ONLY_FOR_ARCHS=	i386
 
+USE_REINPLACE=	yes
 MAKE_ENV= 	MAKEOBJDIR=.
 MAN1=	o2b.1 o2c.1 o2ef.1 o2whereis.1
 
@@ -22,7 +23,8 @@ post-extract:
 	@${CP} ${FILESDIR}/o2 ${WRKSRC}
 
 post-patch:
-	@/usr/bin/perl -pi -e "s|\@PREFIX\@|${PREFIX}|g;" ${WRKSRC}/system/o2c.red.template
+	@${REINPLACE_CMD} -e \
+		"s|\@PREFIX\@|${PREFIX}|g;" ${WRKSRC}/system/o2c.red.template
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/system/o2c.red.template ${PREFIX}/lib/o2c-1.16

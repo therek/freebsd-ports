@@ -2,7 +2,7 @@
 # Date created:				21 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/mail/regm/Makefile,v 1.1 2001/07/22 07:52:00 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	regm
@@ -12,11 +12,12 @@ MASTER_SITES=	http://perso.linuxfr.org/jdumont/regm/
 
 MAINTAINER=	petef@FreeBSD.org
 
+USE_REINPLACE=	yes
 NO_BUILD=	yes
 USE_PYTHON=	yes
 
 post-patch:
-	@${PERL} -pi -e 's|^#!/usr/bin/env python|#!${PYTHON_CMD}|' \
+	@${REINPLACE_CMD} -e 's|^#!/usr/bin/env python|#!${PYTHON_CMD}|' \
 		${WRKSRC}/regm.py
 
 do-install:

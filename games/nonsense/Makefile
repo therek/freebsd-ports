@@ -2,7 +2,7 @@
 # Date created:		15 December 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/games/nonsense/Makefile,v 1.2 2000/12/22 18:16:39 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nonsense
@@ -14,11 +14,12 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	roam@FreeBSD.org
 
 NO_BUILD=	defined
+USE_REINPLACE=	yes
 
 MAN6=		nonsense.6
 
 post-configure:
-		${PERL} -pi -e "s,/usr/local,${PREFIX}," ${WRKSRC}/nonsense
+		${REINPLACE_CMD} -e "s,/usr/local,${PREFIX}," ${WRKSRC}/nonsense
 		${SED} -e "s^%%PREFIX%%^${PREFIX}^g" \
 			< ${FILESDIR}/${MAN6} > ${WRKSRC}/${MAN6}
 
