@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.231 1999/08/28 19:27:51 cpiazza Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.232 1999/08/30 07:49:13 cpiazza Exp $
 #
 
     SUBDIR += 221upgrade
@@ -43,6 +43,7 @@
     SUBDIR += fortuneit
     SUBDIR += geekcode
     SUBDIR += git
+    SUBDIR += gnomeusersguide
     SUBDIR += gnomeutils
     SUBDIR += gnuls
     SUBDIR += gone
