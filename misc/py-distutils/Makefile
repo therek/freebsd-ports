@@ -2,14 +2,14 @@
 # Date created:         23 March 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/py-distutils/Makefile,v 1.6 2000/09/06 12:18:18 tg Exp $
+# $FreeBSD: ports/misc/py-distutils/Makefile,v 1.7 2000/09/08 11:58:50 tg Exp $
 #
 
 PORTNAME=	distutils
-PORTVERSION=	0.9.1
+PORTVERSION=	1.0
 CATEGORIES=	misc python
 MASTER_SITES=	http://www.python.org/sigs/distutils-sig/download/
-PKGNAMEPREFIX=	py-
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	Distutils-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
