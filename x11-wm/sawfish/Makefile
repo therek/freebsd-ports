@@ -2,11 +2,11 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.34 2000/11/09 08:58:06 sobomax Exp $
+# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.35 2000/11/14 08:04:49 sobomax Exp $
 #
 
 PORTNAME=	sawfish
-PORTVERSION= 	0.33.1
+PORTVERSION= 	0.34
 #PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
@@ -53,9 +53,6 @@ pre-patch:
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
 		 s|\$$\(datadir\)/aclocal|\$$\(prefix\)/share/aclocal|g ; \
 		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
-	@find ${WRKSRC} \( -name "*.jl" -or -name "*.jl.in" \) | \
-		xargs ${GREP} -l "../locale" | \
-		xargs ${PERL} -pi -e "s|\.\./locale|../../../locale|g"
 
 post-install:
 	install-info --section="X11 window manager" \
