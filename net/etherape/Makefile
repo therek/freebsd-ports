@@ -2,19 +2,18 @@
 # Date created:				4 April 2001
 # Whom: 				Holger Lamm <holger@eit.uni-kl.de>
 #
-# $FreeBSD: ports/net/etherape/Makefile,v 1.3 2001/07/22 04:39:26 dwcjr Exp $
+# $FreeBSD: ports/net/etherape/Makefile,v 1.4 2001/08/05 03:23:26 lioux Exp $
 #
 
 PORTNAME=	etherape
-PORTVERSION=	0.8.0
+PORTVERSION=	0.8.2
 CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	petef@databits.net
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		gdk_pixbuf.2:${PORTSDIR}/x11/gnome
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_GNOME=	yes
