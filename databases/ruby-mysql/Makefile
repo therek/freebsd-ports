@@ -2,12 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.9 2001/04/23 13:14:59 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mysql
-PORTVERSION=	2.3.2a
-PORTREVISION=	1
+PORTVERSION=	2.4
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.tmtm.org/mysql/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
