@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.245 1999/12/28 11:40:09 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.246 2000/01/03 19:58:42 sada Exp $
 #
 
     SUBDIR += Canna
@@ -275,6 +275,16 @@
     SUBDIR += xemacs-sumo-wnn6
     SUBDIR += xemacs-wnn4
     SUBDIR += xemacs-wnn6
+    SUBDIR += xemacs21-canna
+    SUBDIR += xemacs21-canna+wnn4
+    SUBDIR += xemacs21-canna+wnn6
+    SUBDIR += xemacs21-sumo-canna
+    SUBDIR += xemacs21-sumo-canna+wnn4
+    SUBDIR += xemacs21-sumo-canna+wnn6
+    SUBDIR += xemacs21-sumo-wnn4
+    SUBDIR += xemacs21-sumo-wnn6
+    SUBDIR += xemacs21-wnn4
+    SUBDIR += xemacs21-wnn6
     SUBDIR += xfig
     SUBDIR += xjman
     SUBDIR += xklock
