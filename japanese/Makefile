@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.260 2000/02/08 16:04:43 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.261 2000/02/23 06:40:29 max Exp $
 #
 
     SUBDIR += Canna
@@ -232,7 +232,6 @@
     SUBDIR += slrn
     SUBDIR += tcl76
     SUBDIR += tcl80
-    SUBDIR += tcl82
     SUBDIR += tcsh
     SUBDIR += tcsh-nls-asuka
     SUBDIR += tcsh-nls-ayanami
