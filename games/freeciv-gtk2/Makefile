@@ -2,14 +2,15 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.32 2000/04/14 06:42:54 mharo Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.33 2000/04/17 00:17:38 reg Exp $
 #
 
 PORTNAME=	freeciv
-PORTVERSION=	1.10.0
+PORTVERSION=	1.11.4
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable_version/ \
-		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable_version/
+MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable/ \
+		ftp://ftp.netc.pt/pub/freeciv/stable/ \
+		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable/
 .if defined(WITH_GTK)
 PKGNAMESUFFIX=	-gtk
 .endif
@@ -24,8 +25,8 @@ LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 .if defined(WITH_GTK)
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+GLIB_CONFIG?=	${LOCALBASE}/bin/gtk12-config
+CONFIGURE_ENV=	GTK_CONFIG="${GLIB_CONFIG}"
 .else
 CONFIGURE_ARGS=	--disable-gtktest
 .endif
