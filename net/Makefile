@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.338 2000/02/27 05:53:49 vanilla Exp $
+# $FreeBSD: ports/net/Makefile,v 1.339 2000/02/27 06:04:01 vanilla Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -154,6 +154,7 @@
     SUBDIR += poptop
     SUBDIR += ppp-nt
     SUBDIR += pppload
+    SUBDIR += ppptraf
     SUBDIR += pptpclient
     SUBDIR += ppxp
     SUBDIR += priss
