@@ -2,11 +2,11 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.28 2001/06/09 01:48:47 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.29 2001/06/10 20:57:39 knu Exp $
 #
 
 PORTNAME=	portupgrade
-PORTVERSION=	20010611
+PORTVERSION=	20010615
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www.iDaemons.org/distfiles/
@@ -22,6 +22,12 @@ RUN_DEPENDS=	${RUBY_SITELIBDIR}/optparse.rb:${PORTSDIR}/devel/ruby-optparse \
 USE_RUBY=	yes
 
 NO_BUILD=	yes
+
+MAN1=		pkgdepfix.1 \
+		portsdb.1 \
+		portupgrade.1 \
+		portversion.1
+MANCOMPRESSED=	no
 
 do-install:
 	cd ${WRKSRC} && ${RUBY} install.rb
