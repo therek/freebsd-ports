@@ -3,10 +3,10 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.64 1999/08/27 09:20:14 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.65 1999/09/04 10:47:46 dirk Exp $
 #
 
-DISTNAME=	mysql-3.22.25
+DISTNAME=	mysql-3.22.26a
 PKGNAME?=	${DISTNAME:S/-/-server-/}
 CATEGORIES=	databases
 MASTER_SITES=	http://www.fh-wolfenbuettel.de/ftp/pub/database/mysql/Downloads/MySQL-3.22/ \
@@ -31,6 +31,9 @@ CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
 		--without-debug \
 		--without-readline \
 		--without-bench
+.if ${MACHINE_ARCH} == "i386"
+CONFIGURE_ARGS+=--enable-assembler
+.endif
 CONFIGURE_ENV+=	PERL=${PERL} \
 		PERL5=${PERL} \
 		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
@@ -91,6 +94,10 @@ pre-fetch:
 	@${ECHO} "Using supplied mit-pthreads."
 	@${ECHO}
 .endif
+
+post-patch:
+	${MV} ${WRKSRC}/strings/strings.s ${WRKSRC}/strings/strings.S
+	${MV} ${WRKSRC}/strings/longlong2str-x86.s ${WRKSRC}/strings/longlong2str-x86.S
 
 pre-install:
 .if !defined(PACKAGE_BUILDING) && exists(${DB_DIR}) && !defined(OVERWRITE_DB)
