@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.447 2004/06/03 07:15:48 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.448 2004/06/03 13:15:00 clement Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1136,3 +1136,4 @@ sysutils/mkisofs|sysutils/cdrtools|2004-06-02|merged
 sysutils/mkisofs-devel|sysutils/cdrtools-devel|2004-06-02|merged
 lang/squeak3|lang/squeak|2004-06-03|New stable version
 net-mgmt/dhcpconf||2004-06-03|Obsolete and no longer maintained
+net/samba-devel|net/samba3|2004-06-07|considered stable
