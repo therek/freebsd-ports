@@ -2,18 +2,19 @@
 # Date created:		Sat Nov  5 17:11:01 PST 1994
 # Whom:			hsu
 #
-# $FreeBSD: ports/lang/scm/Makefile,v 1.20 2000/10/24 15:49:53 kevlo Exp $
+# $FreeBSD: ports/lang/scm/Makefile,v 1.21 2001/04/10 17:17:48 lioux Exp $
 #
 
 PORTNAME=	scm
 PORTVERSION=	5d4
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.swiss.ai.mit.edu/pub/scm/
-DISTFILES=	scm5d4.zip slib2d1.zip slib-psd1-3.tar.gz
+DISTFILES=	scm5d4.zip slib2d2.zip slib-psd1-3.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-EXTRACT_ONLY=	scm5d4.zip slib2d1.zip
+EXTRACT_ONLY=	scm5d4.zip slib2d2.zip
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -39,22 +40,22 @@ post-build:
 		-F "arrays bignums cautious inexact" \
 		-h system \
 		-o scm \
-		-s "${PREFIX}/share/scm/"
+		-s "${DATADIR}/"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/scm ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/scm.1 ${MANPREFIX}/man/man1
-	@${MKDIR} ${PREFIX}/share/scm
-	${INSTALL_DATA} ${WRKDIR}/require.scm ${PREFIX}/share/scm
+	@${MKDIR} ${DATADIR}
+	${INSTALL_DATA} ${WRKDIR}/require.scm ${DATADIR}
 .for file in ${SCM_DATA}
-	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/scm
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DATADIR}
 .endfor
-	@touch ${PREFIX}/share/scm/implcat
-	@touch ${PREFIX}/share/scm/slibcat
-	@${MKDIR} ${PREFIX}/share/scm/slib
-	${INSTALL_DATA} ${WRKDIR}/slib/*.scm ${PREFIX}/share/scm/slib
-	@${MKDIR} ${PREFIX}/share/scm/slib/psd
-	${INSTALL_DATA} ${WRKDIR}/slib/psd/*.scm ${PREFIX}/share/scm/slib/psd
+	@touch ${DATADIR}/implcat
+	@touch ${DATADIR}/slibcat
+	@${MKDIR} ${DATADIR}/slib
+	${INSTALL_DATA} ${WRKDIR}/slib/*.scm ${DATADIR}/slib
+	@${MKDIR} ${DATADIR}/slib/psd
+	${INSTALL_DATA} ${WRKDIR}/slib/psd/*.scm ${DATADIR}/slib/psd
 	${INSTALL_DATA} ${WRKDIR}/scm/scm.info ${PREFIX}/info
 	@install-info ${PREFIX}/info/scm.info ${PREFIX}/info/dir
 	${INSTALL_DATA} ${WRKDIR}/slib/slib.info ${PREFIX}/info
