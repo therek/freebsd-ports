@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.94 1999/09/19 12:36:24 andreas Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.95 1999/09/19 14:21:08 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -42,8 +42,8 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
 
 PATCH_SITES=	http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
-PATCHFILES=	php_configure.diff php_gd.c.diff php_php3_gd.h.diff \
-		php_pdf.c.diff php_snmp.c.diff
+PATCHFILES=	php_configure.2.diff php_gd.c.2.diff php_php3_gd.h.2.diff \
+		php_pdf.c.diff php_snmp.c.diff php_config.h.in.diff
 
 MAINTAINER=	dirk@FreeBSD.org
 
