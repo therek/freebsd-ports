@@ -2,20 +2,20 @@
 # Date created:		16th March 2000
 # Whom:			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.3 2000/04/13 19:18:53 cpiazza Exp $
+# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.4 2000/04/21 07:51:58 mharo Exp $
 #
 
 PORTNAME=	gnomepilot-conduits
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	palm comms gnome
 MASTER_SITES=	http://www.gnome.org/gnome-pilot/download/
 DISTNAME=	gnome-pilot-conduits-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-BUILD_DEPENDS=	gnome-pilot-config:${PORTSDIR}/palm/gnomepilot
 LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
-		capplet.1:${PORTSDIR}/sysutils/gnomecontrolcenter
+		capplet.1:${PORTSDIR}/sysutils/gnomecontrolcenter \
+		gpilotd.0:${PORTSDIR}/palm/gnomepilot
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
