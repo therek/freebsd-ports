@@ -2,11 +2,11 @@
 # Date created:				21 February 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/security/its4/Makefile,v 1.4 2000/04/09 18:29:45 cpiazza Exp $
+# $FreeBSD: ports/security/its4/Makefile,v 1.5 2000/10/02 10:38:51 jedgar Exp $
 #
 
 PORTNAME=	its4
-PORTVERSION=	1.1
+PORTVERSION=	1.1.1
 CATEGORIES=	security
 MASTER_SITES=
 EXTRACT_SUFX=	.tgz
