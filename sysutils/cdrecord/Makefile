@@ -3,7 +3,7 @@
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.20 1999/09/18 18:52:53 dirk Exp $
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.21 1999/09/20 10:34:40 dirk Exp $
 #
 
 DISTNAME=	cdrecord-1.8a29
@@ -32,5 +32,6 @@ do-install:
 	 ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/cdrecord/cdrecord.1 ${PREFIX}/man/man1
 	@${INSTALL_MAN} ${WRKSRC}/cdda2wav/cdda2wav.1 ${PREFIX}/man/man1
+	@${LN} -sf ${PREFIX}/bin/cdda2wav ${PREFIX}/bin/list_audio_tracks
 
 .include <bsd.port.mk>
