@@ -3,12 +3,12 @@
 # Date created:		10 July 1998
 # Whom:			Jeffrey Hsu <hsu@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/jam/Makefile,v 1.3 1999/08/25 05:48:13 obrien Exp $
 #
 
 DISTNAME=	jam-2.2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.perforce.com/pub/jam/
+MASTER_SITES=	ftp://ftp1.perforce.com/pub/jam/
 
 MAINTAINER=	hsu@freebsd.org
 
