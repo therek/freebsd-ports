@@ -2,7 +2,7 @@
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/glasteroids/Makefile,v 1.8 2000/08/03 09:23:32 asami Exp $
+# $FreeBSD: ports/games/glasteroids/Makefile,v 1.9 2000/08/17 06:22:09 kris Exp $
 #
 
 PORTNAME=	glasteroids
@@ -18,6 +18,7 @@ MAKEFILE=	Makefile.FreeBSD
 WRKSRC=		${WRKDIR}/Glasteroids
 
 USE_X_PREFIX=	yes
+MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}"
 USE_MESA=	yes
 
 pre-build:
