@@ -2,7 +2,7 @@
 # Date created:         May 18, 1999
 # Whom:                 NAKAJI Hiroyuki
 #
-# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.9 2000/04/14 07:20:07 asami Exp $
+# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.10 2000/04/17 00:18:17 reg Exp $
 #
 
 PORTNAME=	gnuplot371+
@@ -15,10 +15,11 @@ MASTER_SITES=	ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/gnuplot+/3.7base/ \
 		ftp://ftp.rc.tutrp.tut.ac.jp/pub/mirror/gnuplot+/3.7base/
 DISTFILES=	gnuplot-3.7.1.tar.gz gnuplot3.7.1+1.1.9.patch.tar.gz \
 		gnuplot3.7.1+1.1.9.bugfix
+EXTRACT_ONLY=	gnuplot-3.7.1.tar.gz
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
 
-LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 		VFlib2.24:${PORTSDIR}/japanese/vflib
 .if defined(WITH_JP)
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/japanese/gd \
@@ -27,8 +28,6 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/japanese/gd \
 LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 BUILD_DEPENDS=	${LOCALBASE}/lib/libttf.a:${PORTSDIR}/print/freetype
 .endif
-
-EXTRACT_ONLY=	gnuplot-3.7.1.tar.gz
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
