@@ -2,7 +2,7 @@
 # Date created:        			22 December 2000
 # Whom:					alex
 #
-# $FreeBSD: ports/graphics/xmms-gforce/Makefile,v 1.2 2000/12/23 10:16:03 alex Exp $
+# $FreeBSD: ports/graphics/xmms-gforce/Makefile,v 1.3 2000/12/24 09:48:16 alex Exp $
 #
 
 PORTNAME=	xmms-gforce
@@ -28,12 +28,12 @@ PATCHFILES=	gforce-1.1.6xp3.dga.patch.gz
 PATCH_WRKSRC=	${WRKDIR}
 .else
 pre-fetch:
-	@${ECHO_MSG} "******************************************************"
-	@${ECHO_MSG} "* To compile this port with DGA support (faster),    *"
-	@${ECHO_MSG} "* use the WANT_DGA switch.  Be aware that if XMMS    *"
-	@${ECHO_MSG} "* or the plugin crashes, your whole X-session will   *"
-	@${ECHO_MSG} "* be affected.  DGA can't switched off once enabled. *"
-	@${ECHO_MSG} "******************************************************"
+	@${ECHO_MSG} "*******************************************************"
+	@${ECHO_MSG} "* To compile this port with DGA support (faster),     *"
+	@${ECHO_MSG} "* use the WANT_DGA switch.  Be aware that if XMMS or  *"
+	@${ECHO_MSG} "* the plugin crashes, your whole X-session will be    *"
+	@${ECHO_MSG} "* affected.  You have to run XMMS as root to use DGA. *"
+	@${ECHO_MSG} "*******************************************************"
 .endif
 
 .include <bsd.port.mk>
