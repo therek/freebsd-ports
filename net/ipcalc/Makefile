@@ -3,10 +3,10 @@
 # Date created:			May 21, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/net/ipcalc/Makefile,v 1.3 2001/07/04 06:33:40 dwcjr Exp $
+# $FreeBSD$
 
 PORTNAME=	ipcalc
-PORTVERSION=	0.34
+PORTVERSION=	0.35
 CATEGORIES=	net
 MASTER_SITES=	http://jodies.de/
 DISTFILES=	ipcalc.pl
