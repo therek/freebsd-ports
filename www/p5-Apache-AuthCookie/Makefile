@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:55:36 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-AuthCookie/Makefile,v 1.1 2001/01/01 08:28:28 will Exp $
 #
 
 PORTNAME=	Apache-AuthCookie
@@ -12,8 +12,13 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
+		${PREFIX}/sbin/apxs:${PORTSDIR}/www/${APACHE_PORT}
+RUN_DEPENDS=	${BUILD_DEPENDS}
+
 MAINTAINER=	ports@FreeBSD.org
 
+APACHE_PORT?=	apache13
 CURUSER?=	`whoami`
 CURGRP?=	`groups | awk '{print $1}'`
 TESTPORT?=	8228
