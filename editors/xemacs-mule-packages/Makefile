@@ -2,11 +2,11 @@
 # Date created:		24 Oct 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.12 2001/02/22 13:14:14 kiri Exp $
+# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.13 2001/04/20 14:54:10 kiri Exp $
 #
 
 PORTNAME=	xemacs-mule-packages
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	editors elisp
 MASTER_SITES=	${MASTER_SITE_XEMACS} \
 		${MASTER_SITE_LOCAL}
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		edict-1.12-pkg.tar.gz \
 		leim-1.17-pkg.tar.gz \
-		lookup-1.07-pkg.tar.gz
+		lookup-1.08-pkg.tar.gz
 DIST_SUBDIR=	xemacs
 
 MAINTAINER=	kiri@FreeBSD.org

@@ -2,28 +2,30 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.25 2001/04/17 20:21:32 knu Exp $
+# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.26 2001/04/20 14:56:21 kiri Exp $
 #
 
 PORTNAME=	xemacs-prog-packages
-PORTVERSION=	2.5
+PORTVERSION=	2.6
 CATEGORIES=	editors elisp
 MASTER_SITES=	${MASTER_SITE_XEMACS} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		ada-1.10-pkg.tar.gz \
-		ediff-1.30-pkg.tar.gz \
+		ediff-1.31-pkg.tar.gz \
 		emerge-1.09-pkg.tar.gz \
 		idlwave-1.23-pkg.tar.gz \
-		jde-1.26-pkg.tar.gz \
+		jde-1.27-pkg.tar.gz \
 		scheme-1.11-pkg.tar.gz \
-		semantic-1.05-pkg.tar.gz \
-		vc-cc-1.15-pkg.tar.gz \
+		semantic-1.06-pkg.tar.gz \
+		vc-cc-1.16-pkg.tar.gz \
 		vhdl-1.13-pkg.tar.gz
 DIST_SUBDIR=	xemacs
 
 MAINTAINER=	kiri@FreeBSD.org
+
+RUN_DEPENDS=	${XEMACSDIR}/mule-packages/lisp/elib/avltree.el:${.CURDIR}/../xemacs-basic-mule-packages
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PACKAGES_SUBDIR}
