@@ -3,7 +3,7 @@
 # Date created:        21 Feb 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/angband/Makefile,v 1.8 1999/08/25 06:02:51 obrien Exp $
 #
 
 DISTNAME=	angband-283
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Source/
 DISTFILES=	angband-283.tar.gz ext-x11-283.tar.gz
 
 MAINTAINER=	mph@freebsd.org
+
+BROKEN=		"Security hole (buffer overflow)"
 
 USE_X_PREFIX=	yes
 DIST_SUBDIR=	angband
