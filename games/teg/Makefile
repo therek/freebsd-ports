@@ -2,11 +2,11 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/teg/Makefile,v 1.1 2000/10/31 08:03:33 sobomax Exp $
 #
 
 PORTNAME=	teg
-PORTVERSION= 	0.5.0
+PORTVERSION= 	0.5.2
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
