@@ -2,11 +2,11 @@
 # Date created:         30 Jul 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD: ports/x11-fm/tkdesk/Makefile,v 1.15 2000/05/01 17:58:33 jseger Exp $
+# $FreeBSD: ports/x11-fm/tkdesk/Makefile,v 1.16 2000/05/29 03:32:58 steve Exp $
 #
 
 PORTNAME=	tkdesk
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	x11-fm tk82
 MASTER_SITES=	http://sd.znet.com/~jchris/tkdesk/ \
 		${MASTER_SITE_SUNSITE}

@@ -3,11 +3,11 @@
 # Whom:			minoura@netbsd.org
 #
 # $NetBSD: Makefile,v 1.3 1999/12/22 15:37:13 sakamoto Exp $
-# $FreeBSD: ports/x11-fm/xcruise/Makefile,v 1.3 2000/04/10 00:39:35 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/xcruise/Makefile,v 1.4 2000/08/03 14:28:33 sanpei Exp $
 #
 
 PORTNAME=	xcruise
-PORTVERSION= 	0.24
+PORTVERSION=	0.24
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://tanaka-www.cs.titech.ac.jp/%7Eeuske/prog/
 

@@ -2,11 +2,11 @@
 # Date created:		7 Oct 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.6 2000/06/30 11:52:11 nbm Exp $
+# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.7 2000/08/03 09:27:14 asami Exp $
 #
 
 PORTNAME=	endeavour
-PORTVERSION= 	1.12
+PORTVERSION=	1.12
 CATEGORIES=	x11-fm
 MASTER_SITES=	ftp://fox.mit.edu/pub/xsw/
 DISTNAME=	${PORTNAME}${PORTVERSION}

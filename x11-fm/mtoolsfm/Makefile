@@ -2,11 +2,11 @@
 # Date created:				12 Jan 2000
 # Whom:					Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/x11-fm/mtoolsfm/Makefile,v 1.7 2000/12/22 16:59:19 kevlo Exp $
+# $FreeBSD: ports/x11-fm/mtoolsfm/Makefile,v 1.8 2001/01/23 09:06:21 kevlo Exp $
 #
 
 PORTNAME=	mtoolsfm
-PORTVERSION= 	1.7
+PORTVERSION=	1.7
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.core-coutainville.org/MToolsFM/archive/SOURCES/
 DISTNAME=	MToolsFM-${PORTVERSION}-2

@@ -2,11 +2,11 @@
 # Date created:			31 August 1998
 # Whom:				brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.8 2000/04/01 00:10:55 jedgar Exp $
+# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.9 2000/04/10 00:39:24 cpiazza Exp $
 #
 
 PORTNAME=	jafm
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www-personal.usyd.edu.au/~rlittlew/jafm/ \
 		${MASTER_SITE_SUNSITE}

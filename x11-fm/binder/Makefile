@@ -2,11 +2,11 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/x11-fm/binder/Makefile,v 1.6 2000/08/08 02:40:59 steve Exp $
+# $FreeBSD: ports/x11-fm/binder/Makefile,v 1.7 2000/11/14 00:39:18 asami Exp $
 #
 
 PORTNAME=	binder
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	${CATEGORY_LIST}
 MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
 DISTNAME=	Binder-${PORTVERSION}

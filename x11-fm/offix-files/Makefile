@@ -2,11 +2,11 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/x11-fm/offix-files/Makefile,v 1.8 2000/04/10 00:39:26 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/offix-files/Makefile,v 1.9 2000/08/03 09:27:15 asami Exp $
 #
 
 PORTNAME=	offix-files
-PORTVERSION= 	2.4
+PORTVERSION=	2.4
 CATEGORIES=	x11-fm offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX

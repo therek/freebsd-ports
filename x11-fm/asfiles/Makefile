@@ -2,11 +2,11 @@
 # Date created:                17 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.14 2000/08/03 09:27:11 asami Exp $
+# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.15 2000/10/07 22:48:42 asami Exp $
 #
 
 PORTNAME=	asfiles
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-fm afterstep windowmaker
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP}
 MASTER_SITE_SUBDIR=	apps/ASFiles

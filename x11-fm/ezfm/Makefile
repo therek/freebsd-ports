@@ -2,11 +2,11 @@
 # Date created:				27 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/ezfm/Makefile,v 1.10 2000/04/30 01:42:32 kris Exp $
+# $FreeBSD: ports/x11-fm/ezfm/Makefile,v 1.11 2000/05/28 03:23:07 steve Exp $
 #
 
 PORTNAME=	ezfm
-PORTVERSION= 	0.4.3
+PORTVERSION=	0.4.3
 CATEGORIES=	x11-fm
 MASTER_SITES=	ftp://ftp.ma.utexas.edu/pub/mzou/
 DISTNAME=	EZFM-0.4-src

@@ -2,11 +2,11 @@
 # Date created:		3 August 1996
 # Whom:			lukin
 #
-# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.21 1999/11/02 03:16:08 jseger Exp $
+# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.22 2000/04/10 00:39:20 cpiazza Exp $
 #
 
 PORTNAME=	filerunner
-PORTVERSION= 	2.5
+PORTVERSION=	2.5
 CATEGORIES=	x11-fm tk82
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop

@@ -2,11 +2,11 @@
 # Date created:        06 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.6 2000/08/03 09:27:15 asami Exp $
+# $FreeBSD: ports/x11-fm/fsv/Makefile,v 1.7 2000/10/05 06:42:33 reg Exp $
 #
 
 PORTNAME=	fsv
-PORTVERSION= 	0.9
+PORTVERSION=	0.9
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://fox.mit.edu/skunk/soft/src/
 
