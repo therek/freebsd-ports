@@ -2,12 +2,12 @@
 # Date created:				7 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache2/Makefile,v 1.94 2001/04/13 04:43:47 will Exp $
 #
 
 PORTNAME=	apache
 PORTVERSION=	2.0.16
-CATEGORIES=	www
+CATEGORIES=	www ipv6
 MASTER_SITES=	http://httpd.apache.org/dist/httpd/ \
 		http://www.cybernic.com/mirror/dist/httpd/ \
 		http://mirrors.partnersforever.net/apache/dist/httpd/ \
