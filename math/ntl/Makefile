@@ -2,11 +2,11 @@
 # Date created:				18 June 2000
 # Whom:					bauerm
 #
-# $FreeBSD: ports/math/ntl/Makefile,v 1.1 2000/07/10 03:42:41 steve Exp $
+# $FreeBSD: ports/math/ntl/Makefile,v 1.2 2000/09/05 01:52:15 steve Exp $
 #
 
 PORTNAME=	ntl
-PORTVERSION=	4.2a
+PORTVERSION=	5.0c
 CATEGORIES=	math
 MASTER_SITES=	http://www.shoup.net/ntl/
 
@@ -16,7 +16,6 @@ USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAKEFILE=	makefile
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	'GMP=on'
 MAKE_ARGS=	"DOCDIR=${LOCALBASE}/share/doc"
 
 do-install:
