@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 12:31:10 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.3 2001/02/26 12:27:37 kevlo Exp $
+# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.4 2001/03/01 06:38:12 vanilla Exp $
 #
 
 PORTNAME=	Mail-Audit
-PORTVERSION=	1.8
+PORTVERSION=	1.10
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
@@ -22,7 +22,10 @@ SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-MAN3=		Mail::Audit.3 Mail::Audit::KillDups.3 Mail::Audit::MAPS.3 \
+MAN3=		Mail::Audit.3 \
+		Mail::Audit::KillDups.3 \
+		Mail::Audit::List.3 \
+		Mail::Audit::MAPS.3 \
 		Mail::Audit::PGP.3
 
 .include <bsd.port.mk>

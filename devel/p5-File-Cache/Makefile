@@ -2,11 +2,11 @@
 # Date created:				Mon Jan  1 11:28:15 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-File-Cache/Makefile,v 1.2 2001/03/01 06:37:33 vanilla Exp $
+# $FreeBSD: ports/devel/p5-File-Cache/Makefile,v 1.3 2001/03/23 07:17:05 kuriyama Exp $
 #
 
 PORTNAME=	File-Cache
-PORTVERSION=	0.13
+PORTVERSION=	0.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File

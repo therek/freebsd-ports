@@ -2,11 +2,11 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.11 2001/03/01 06:37:36 vanilla Exp $
+# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.12 2001/04/09 04:15:13 vanilla Exp $
 #
 
 PORTNAME=	Filter
-PORTVERSION=	1.22
+PORTVERSION=	1.23
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Filter

@@ -2,11 +2,11 @@
 # Date created:				4th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-RSS/Makefile,v 1.3 2001/02/05 16:35:02 olgeni Exp $
+# $FreeBSD: ports/textproc/p5-XML-RSS/Makefile,v 1.4 2001/03/01 06:39:11 vanilla Exp $
 #
 
 PORTNAME=	XML-RSS
-PORTVERSION=	0.9
+PORTVERSION=	0.97
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
