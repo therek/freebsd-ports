@@ -2,13 +2,15 @@
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.7 2000/11/06 11:53:22 keith Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.8 2000/11/06 18:15:12 keith Exp $
 #
 
 PORTNAME=	xemacs
 PORTVERSION=	20.4
 CATEGORIES=	chinese editors
 MASTER_SITES=	${MASTER_SITE_XEMACS}
+MASTER_SITES+=	ftp://ftp.tnt.uni-hannover.de/pub/editors/xemacs/20.4/ \
+		ftp://ftp.sunsite.org.uk/Mirrors/ftp.xemacs.org/pub/xemacs/%SUBDDIR%/
 MASTER_SITE_SUBDIR=	${DISTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-mule${EXTRACT_SUFX}
 
