@@ -2,7 +2,7 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-usersguide/Makefile,v 1.2 2000/09/04 08:53:44 knu Exp $
+# $FreeBSD: ports/japanese/ruby-usersguide/Makefile,v 1.3 2000/10/08 10:21:20 asami Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../lang/ruby-usersguide
@@ -17,7 +17,7 @@ MAINTAINER=	knu@FreeBSD.org
 
 VERSION=	980206
 
-FILESDIR=	${.CURDIR}/files
+MD5_FILE=	${.CURDIR}/distinfo
 PKGDIR=		${.CURDIR}
 
 LANGSUFFIX=	-jp
