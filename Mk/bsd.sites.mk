@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.37 2001/03/20 20:04:49 sf Exp $
+# $FreeBSD$
 #
 
 # Where to put distfiles that don't have any other master site
@@ -204,11 +204,12 @@ MASTER_SITE_SOURCEWARE+= \
 	ftp://unix.hensa.ac.uk/mirrors/sourceware.cygnus.com/pub/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	ftp://ftp1.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
-	http://ftp1.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp2.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://ftp2.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp3.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://ftp3.sourceforge.net/%SUBDIR%/ \
+	ftp://ftp1.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://ftp1.sourceforge.net/%SUBDIR%/ \
 	ftp://projects.sourceforge.net/pub/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/download.sourceforge.net/pub/sourceforge/%SUBDIR%/
