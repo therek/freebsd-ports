@@ -2,15 +2,19 @@
 # Date created:		4 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man/Makefile,v 1.26 2001/01/29 01:21:07 kuriyama Exp $
+# $FreeBSD: ports/japanese/man/Makefile,v 1.27 2001/07/05 03:09:20 kuriyama Exp $
 #
 
 PORTNAME=	man
 PORTVERSION=	1.1j
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://daemon.jp.freebsd.org/pub/FreeBSD-jp/man-jp/ \
 		${MASTER_SITE_PORTS_JP}
 DISTNAME=	jp-${PORTNAME}-${PORTVERSION}
+
+PATCH_SITES=	ftp://daemon.jp.freebsd.org/pub/FreeBSD-jp/man-jp/
+PATCHFILES=	jp-man-1.1j-ex-20010724.patch
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
