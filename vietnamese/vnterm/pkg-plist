@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/vietnamese/vnterm/pkg/PLIST,v 1.3 1999/08/31 02:11:56 peter Exp $
 bin/vnterm
 bin/VNterm
 lib/X11/app-defaults/VNTerm
@@ -7,3 +7,6 @@ lib/X11/fonts/vietnamese/vn-r14.pcf.Z
 lib/X11/fonts/vietnamese/vn10x20.pcf.Z
 lib/X11/fonts/vietnamese/vn9x15.pcf.Z
 lib/X11/fonts/vietnamese/vnlutRS18.pcf.Z
+share/doc/vnterm/README
+@dirrm share/doc/vnterm
+@dirrm lib/X11/fonts/vietnamese
