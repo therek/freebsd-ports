@@ -2,12 +2,11 @@
 # Date created:		1 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-icmp/Makefile,v 1.3 2001/02/07 19:26:42 knu Exp $
+# $FreeBSD: ports/net/ruby-icmp/Makefile,v 1.4 2001/09/17 17:54:21 knu Exp $
 #
 
 PORTNAME=	icmp
-PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTVERSION=	0.2.1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.notwork.org/~gotoyuzo/ruby/src/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,14 +19,13 @@ USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
-EXAMPLES=	ping.rb
+EXAMPLES=	sample/*
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/icmp.rb ${RUBY_SITELIBDIR}/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/icmp
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/icmp/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 .endfor
 .endif
 
