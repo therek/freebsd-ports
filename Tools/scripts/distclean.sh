@@ -14,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/distclean.sh,v 1.14 2002/05/10 14:16:18 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/distclean.sh,v 1.15 2003/04/08 13:36:45 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 
@@ -78,8 +78,8 @@ echo "Done."
 R_MD5_COUNT=`wc -l $FN_RESULTS_SCRIPT | sed "s| $FN_RESULTS_SCRIPT|| ; s| ||g"`
 echo "$R_MD5_COUNT distfile(s) doesn't have corresponding md5 entries in ports directory."
 /bin/sh $FN_RESULTS_SCRIPT
+find ${DISTDIR}/ -type d -empty -delete
 
 echo -n "Finishing..."
 rm -f $FN_RESULTS_SCRIPT $FN_PORTS $FN_DISTFILES
 echo "Done."
-
