@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.253 2000/12/19 09:56:05 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.254 2000/12/19 17:05:10 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -220,6 +220,7 @@
     SUBDIR += xmagv
     SUBDIR += xmandel
     SUBDIR += xmfract
+    SUBDIR += xmms-gforce
     SUBDIR += xmorph
     SUBDIR += xmountains
     SUBDIR += xmovie
