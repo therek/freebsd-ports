@@ -1,8 +1,9 @@
-# $FreeBSD: ports/mail/Makefile,v 1.161 2000/09/14 17:27:55 ume Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.162 2000/09/17 22:45:01 will Exp $
 #
 
     SUBDIR += adcomplain
     SUBDIR += asmail
+    SUBDIR += arrow
     SUBDIR += autorespond
     SUBDIR += balsa
     SUBDIR += bbmail
