@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.134 2000/12/31 05:17:09 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.135 2000/12/31 05:19:16 will Exp $
 #
 
     SUBDIR += agrep
@@ -75,6 +75,7 @@
     SUBDIR += p5-Text-Autoformat
     SUBDIR += p5-Text-Bind
     SUBDIR += p5-Text-CSV_XS
+    SUBDIR += p5-Text-DoubleMetaphone
     SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-DOM
     SUBDIR += p5-XML-Parser
