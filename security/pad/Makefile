@@ -2,7 +2,7 @@
 # Date created:				8 July 2000
 # Whom:					Trevor Johnson
 #
-# $FreeBSD: ports/security/pad/Makefile,v 1.2 2000/09/23 18:25:17 nbm Exp $
+# $FreeBSD: ports/security/pad/Makefile,v 1.3 2000/10/02 05:39:33 trevor Exp $
 #
 
 PORTNAME=	pad
@@ -15,6 +15,7 @@ MAINTAINER=	trevor@FreeBSD.org
 
 DOC_FILES=	COPYING README ChangeLog
 GNU_CONFIGURE=	yes
+USE_OPENSSL=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pad ${PREFIX}/bin
