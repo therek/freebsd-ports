@@ -3,11 +3,11 @@
 # Date created:			Jan 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11/xdialog/Makefile,v 1.5 2001/05/13 13:55:12 ijliao Exp $
+# $FreeBSD: ports/x11/xdialog/Makefile,v 1.6 2001/05/21 18:16:45 ijliao Exp $
 #
 
 PORTNAME=	xdialog
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	x11
 MASTER_SITES=	http://xdialog.free.fr/
 DISTNAME=	${PORTNAME:S/x/X/}-${PORTVERSION}
