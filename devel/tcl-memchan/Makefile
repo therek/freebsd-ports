@@ -2,11 +2,11 @@
 # Date created:			May 22, 2000
 # Whom:				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/devel/tcl-memchan/Makefile,v 1.3 2001/01/03 09:27:13 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	memchan
-PORTVERSION=	2.1p2
+PORTVERSION=	2.1p3
 CATEGORIES=	devel tcl83
 MASTER_SITES=	http://www.oche.de/~akupries/soft/memchan/download/
 PKGNAMEPREFIX=	tcl-
