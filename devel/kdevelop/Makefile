@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.17 2001/03/02 16:50:44 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.18 2001/03/03 13:45:27 demon Exp $
 #
 
 PORTNAME=	kdevelop
@@ -34,7 +34,7 @@ USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib \
-		--with-qtdoc-dir=${X11BASE}/share/doc/qt/html \
+		--with-qtdoc-dir=${X11BASE}/share/doc/qt2/html \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 		MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
