@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.204 2001/07/22 08:41:23 markp Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.205 2001/07/24 15:05:38 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -15,7 +15,7 @@
     SUBDIR += bubblemon-dockapp
     SUBDIR += cd-write
     SUBDIR += cd9660_unicode
-    SUBDIR += cdrecord
+    SUBDIR += cdrtools
     SUBDIR += cfengine
     SUBDIR += checkservice
     SUBDIR += clockspeed
