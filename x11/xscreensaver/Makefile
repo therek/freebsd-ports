@@ -2,11 +2,11 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.28 2000/03/20 23:25:21 jseger Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.29 2000/04/13 19:10:55 cpiazza Exp $
 #
 
 PORTNAME=	xscreensaver
-PORTVERSION= 	3.21
+PORTVERSION= 	3.24
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
@@ -28,8 +28,8 @@ MAN1= 		attraction.1 blitspin.1 bouboule.1 braid.1 \
 		pedal.1 penrose.1 phosphor.1 pyro.1 qix.1 rd-bomb.1 rocks.1 \
 		rorschach.1 sierpinski.1 slidescreen.1 slip.1 sonar.1 sphere.1\
 		spiral.1 spotlight.1 squiral.1 starfish.1 strange.1 swirl.1 \
-		t3d.1 vidwhacker.1 vines.1 webcollage.1 xjack.1 xlyap.1 \
-		xmatrix.1 xroger.1 xscreensaver-command.1 xscreensaver-demo.1 \
-		xscreensaver.1 xsublim.1
+		t3d.1 vidwhacker.1 vines.1 webcollage.1 xflame.1 xjack.1 \
+		xlyap.1 xmatrix.1 xroger.1 xscreensaver-command.1 \
+		xscreensaver.1 xsublim.1 xteevee.1
 
 .include <bsd.port.mk>
