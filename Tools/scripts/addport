@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.40 2004/03/20 18:52:33 mat Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.41 2004/04/04 21:10:38 mat Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -334,7 +334,7 @@ foreach my $thisdir (@dirs) {
 	system("$cvs $n ci $commitfile Makefile $portname") && errx(1, "cvs commit failed, aborting.");
 	if (!$nomodules && ($n ne "-n")) {
 		print "*** If you have problems with the below modulesupdate command, PLEASE\n";
-		print "*** ensure that you can login to $h from $moduleshost\n!";
+		print "*** ensure that you can login to $h from $moduleshost!\n";
 		system("$sshmod env CVSROOT=$repo $perl /usr/local/bin/modulesupdate $module ports/$category/$portname") && errx(1, "adding port to modules failed, aborting.");
 	}
 }
