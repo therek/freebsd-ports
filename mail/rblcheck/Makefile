@@ -2,29 +2,26 @@
 # Date created:		28 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.9 2000/06/14 13:21:24 sobomax Exp $
+# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.10 2001/01/09 05:57:06 itojun Exp $
 #
 
 PORTNAME=	rblcheck
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	mail
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
-		http://www.xnet.com/%7Eemarshal/rblcheck/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@freebsd.org
-HOMEPAGE=	http://rblcheck.sourceforge.net/
+MAINTAINER=	ports@FreeBSD.org
 
-DOCS=		BUGS CHANGES CREDITS INSTALL PLATFORMS TODO
+PORTDOCS=	BUGS CHANGES CREDITS INSTALL PLATFORMS TODO
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/rblcheck ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	dst=${PREFIX}/share/doc/rblcheck; \
-	${MKDIR} $$dst; \
-	for i in ${DOCS}; do \
-		${INSTALL_DATA} ${WRKSRC}/docs/$$i $$dst; \
-	done
+	@${MKDIR} ${PREFIX}/share/doc/rblcheck
+.for file in ${PORTDOCS}
+	${INSTALL_DATA} ${WRKSRC}/docs/${file} ${PREFIX}/share/doc/rblcheck
+.endfor
 .endif
 
 .include <bsd.port.mk>
