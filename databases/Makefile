@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.52 2000/01/14 15:01:19 jedgar Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.53 2000/01/29 04:42:05 steve Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -9,6 +9,7 @@
     SUBDIR += gdbm
     SUBDIR += gmysql
     SUBDIR += gnats
+    SUBDIR += grass
     SUBDIR += gtksql
     SUBDIR += interbase4
     SUBDIR += metakit
