@@ -2,7 +2,7 @@
 # Date created:				30 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/pkgconfig/Makefile,v 1.1 2001/04/29 11:23:21 sobomax Exp $
 #
 
 PORTNAME=	pkgconfig
@@ -21,11 +21,13 @@ LIBTOOLFILES=	configure glib-1.2.8/configure
 LIBTOOLFLAGS=	--disable-ltlibs \
 		--disable-shared
 
+PLIST_SUB=	LOCALBASE=${LOCALBASE} X11BASE=${X11BASE}
+
 MAN1=		pkg-config.1
 
 post-extract:
 	@${RM} -rf ${WRKSRC}/glib-1.2.8
-	@${LN} -sf ${WRKDIRPREFIX}${.CURDIR}/../../devel/glib12/work/glib-1.2* \
+	@${CP} -R ${WRKDIRPREFIX}${.CURDIR}/../../devel/glib12/work/glib-1.2* \
 		${WRKSRC}/glib-1.2.8
 
 post-install:
