@@ -2,7 +2,7 @@
 # Date created:				2th Dec 2000
 # Whom:					Jaedoc Lee <tokky@fdns.org>
 #
-# $FreeBSD: ports/net/smbfs/Makefile,v 1.3 2001/02/10 02:27:50 bp Exp $
+# $FreeBSD: ports/net/smbfs/Makefile,v 1.4 2001/02/27 02:06:29 bp Exp $
 #
 
 PORTNAME=	smbfs
@@ -41,7 +41,7 @@ pre-fetch:
 .endif
 .if !defined(SMP_SUPPORT)
 	@${ECHO_MSG} "NOTE: SMP suppport can be enabled by adding "
-	@${ECHO_MSG} "\"SMB_SUPPORT=yes\" to argument of make."
+	@${ECHO_MSG} "\"SMP_SUPPORT=yes\" to argument of make."
 .endif
 
 post-install:
