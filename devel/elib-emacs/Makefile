@@ -2,7 +2,7 @@
 # Date created:		24 Feb 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/devel/elib-emacs/Makefile,v 1.1 2000/12/10 19:48:21 okazaki Exp $
+# $FreeBSD: ports/devel/elib-emacs/Makefile,v 1.2 2001/02/14 05:42:28 lioux Exp $
 #
 
 PORTNAME=	elib
@@ -39,7 +39,8 @@ MAKE_ARGS+=	EMACS="${EMACS_CMD} -q --no-site-file" \
 		INSTALL_DATA="${INSTALL_DATA}" \
 		MAKEINFO="makeinfo --no-split" \
 		MKDIR="${MKDIR}" \
-		prefix="${PREFIX}"
+		prefix="${PREFIX}" \
+		locallisppath="${PREFIX}/${EMACS_SITE_LISPDIR}"
 
 .if defined(EMACS_PORT_NAME)
 .if ${EMACS_MAJOR_VER} <= 19
