@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmlmmon
-# Version required:			0.50
+# Version required:			0.52
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.2 1999/09/27 17:38:51 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.3 1999/09/27 17:39:42 cpiazza Exp $
 #
 
-DISTNAME=	wmlmmon-0.50
+DISTNAME=	wmlmmon-0.52
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.fxp.org/~jedgar/
 
