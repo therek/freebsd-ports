@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.207 2001/08/13 04:00:36 ijliao Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.208 2001/08/18 08:14:44 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -120,6 +120,7 @@
     SUBDIR += prips
     SUBDIR += procmap
     SUBDIR += pslist
+    SUBDIR += pstree
     SUBDIR += psmisc
     SUBDIR += pwgen
     SUBDIR += pyfind
