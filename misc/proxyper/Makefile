@@ -3,7 +3,7 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD: ports/misc/proxyper/Makefile,v 1.4 2000/02/14 04:53:34 dbaker Exp $
+# $FreeBSD: ports/misc/proxyper/Makefile,v 1.5 2000/02/17 22:57:07 dbaker Exp $
 #
 
 DISTNAME=	proxyper313-freebsd-x86
@@ -45,7 +45,7 @@ do-install:
 	${INSTALL} -c -m 644 -o ${PROXYUID} -g ${PROXYGID} ${WRKSRC}/Readme.txt ${BINDIR}
 	${CHOWN} ${PROXYUID}:${PROXYGID} ${BINDIR}
 	${CHMOD} 755 ${BINDIR}
-	if [ ! -f ${BINDIR}/proxyper.sh ]; then \
+	if [ ! -f ${LIBDIR}/proxyper.sh ]; then \
 		${LN} -s ${BINDIR}proxyper.sh ${LIBDIR}proxyper.sh; \
 	fi
 
