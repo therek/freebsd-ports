@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.378 2000/07/12 18:43:29 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.379 2000/07/12 18:57:25 will Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -106,6 +106,7 @@
     SUBDIR += kxicq
     SUBDIR += lambdamoo
     SUBDIR += ldap
+    SUBDIR += ldapmodule
     SUBDIR += ldapsdk
     SUBDIR += libetherx
     SUBDIR += libicq
