@@ -1,8 +1,9 @@
-# $FreeBSD: ports/databases/Makefile,v 1.42 1999/09/09 13:14:11 dirk Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.43 1999/09/21 18:42:11 dirk Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
     SUBDIR += dbview
+    SUBDIR += dbf2mysql
     SUBDIR += gadfly
     SUBDIR += gdbm
     SUBDIR += gmysql
