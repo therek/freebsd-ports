@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.129 2000/12/26 04:30:48 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.130 2000/12/26 05:55:19 will Exp $
 #
 
     SUBDIR += agrep
@@ -70,6 +70,7 @@
     SUBDIR += no-ispell
     SUBDIR += openjade
     SUBDIR += p5-Spreadsheet-ParseExcel
+    SUBDIR += p5-Spreadsheet-WriteExcel
     SUBDIR += p5-Text-CSV_XS
     SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-DOM
