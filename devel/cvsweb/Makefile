@@ -2,7 +2,7 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.41 2001/01/02 12:38:59 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.42 2001/01/02 23:47:40 knu Exp $
 #
 
 PORTNAME=	cvsweb
@@ -19,7 +19,7 @@ USE_PERL5=	yes
 
 # This version of cvsweb is Zeller's version + knu's enhancements.
 REV_ZELLER=	1.104
-REV_KNU=	1.56
+REV_KNU=	1.57
 
 # Specify where your repository belongs.
 # (You can reconfigure it after installation anyway)
