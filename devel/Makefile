@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.589 2001/07/07 03:19:54 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.590 2001/07/07 13:21:50 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -291,6 +291,7 @@
     SUBDIR += p5-C-Scan
     SUBDIR += p5-Cache-Cache
     SUBDIR += p5-Cdk
+    SUBDIR += p5-Class-Date
     SUBDIR += p5-Class-Loader
     SUBDIR += p5-Class-MethodMaker
     SUBDIR += p5-Class-Singleton
