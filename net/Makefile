@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.523 2001/04/15 19:15:17 dougb Exp $
+# $FreeBSD: ports/net/Makefile,v 1.524 2001/04/17 18:06:48 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -48,6 +48,7 @@
     SUBDIR += coda_intro
     SUBDIR += coda_server
     SUBDIR += conference
+    SUBDIR += corkscrew
     SUBDIR += crescendo
     SUBDIR += cricket
     SUBDIR += cryptcat
