@@ -2,18 +2,18 @@
 # Date created:		March 16, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.16 2001/02/25 06:17:55 kevlo Exp $
+# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.17 2001/04/02 10:21:18 mharo Exp $
 #
 
 PORTNAME=	cfengine
 PORTVERSION=	1.6.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.iu.hioslo.no/pub/cfengine/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	gordont@bluemtn.net
+MAINTAINER=	gordont@gnf.org
 
 LIB_DEPENDS=	db3:${PORTSDIR}/databases/db3
 .if defined(PACKAGE_BUILDING) && !exists(/usr/include/tcpd.h)
