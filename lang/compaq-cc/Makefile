@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.3 2000/12/08 13:54:04 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.4 2000/12/08 19:14:31 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -73,5 +73,7 @@ do-install:
 	cd ${WRKSRC}							\
 	    ; ccc -c ${FILESDIR}/*.c					\
 	    ; ar vq /usr/lib/compaq/cpml-5.1.0/libcpml_ev5.a *.o
+# cpio creates directories with stupid permissions
+	find ${PREFIX}/usr/lib/compaq -type d | xargs ${CHMOD} 755
 
 .include <bsd.port.mk>
