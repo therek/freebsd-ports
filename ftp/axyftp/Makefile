@@ -3,14 +3,13 @@
 # Date created: 		22 October 1998
 # Whom: 			Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD: ports/ftp/wxftp/Makefile,v 1.9 1999/08/25 05:55:26 obrien Exp $
+# $FreeBSD: ports/ftp/wxftp/Makefile,v 1.10 1999/08/31 06:44:10 mharo Exp $
 #
 
 DISTNAME=	wxftp-0.4.4.src
 PKGNAME=	wxftp-0.4.4
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.wxftp.seul.org/pub/wxftp/0.4.4/ \
-		ftp://ftp.c-com.net/pub/.10/LinuxBerg/files/x11/network/ \
 		ftp://ftp.sunsite.auc.dk/disk2/linuxberg.com/files/x11/network/ \
 		ftp://ftp.bitcon.no/.10/linux/linuxberg/files/x11/network/
 
