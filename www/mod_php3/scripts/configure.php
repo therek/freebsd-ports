@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.104 2001/02/06 22:28:00 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.105 2001/02/15 12:01:57 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -71,7 +71,10 @@ while [ "$1" ]; do
 			ZLIB=1
 			;;
 		\"mcrypt\")
-			echo "LIB_DEPENDS+=	mcrypt.2:\${PORTSDIR}/security/libmcrypt"
+			echo "mcrypt support doesn't compile at the moment. Ignoring." > /dev/stderr
+			;;
+		\"nothing\")
+			echo "LIB_DEPENDS+=	mcrypt.5:\${PORTSDIR}/security/libmcrypt"
 			echo "CONFIGURE_ARGS+=--with-mcrypt=\${PREFIX}"
 			;;
 		\"mhash\")
