@@ -2,26 +2,27 @@
 # Date created:		Feb 26, 2001
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/althea/Makefile,v 1.1 2001/02/26 21:05:19 mi Exp $
 #
 
 PORTNAME=	althea
 PORTVERSION=	0.3.4
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=${PORTNAME}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GTK=	yes
+MAKE_ENV=	MKDIR="${MKDIR}"
 MAKEFILE=	${FILESDIR}/Makefile.bsd
-MAKE_ARGS+=	-j 2
-MAKE_ENV+=	INSTALL_DATA="${INSTALL_DATA}" MKDIR="${MKDIR}"
 
 post-patch:
-	${PERL} -pi -e "s%/etc%${LOCALBASE}/etc%g" \
+	@${PERL} -pi -e "s|/etc|${PREFIX}/etc|g" \
 		${WRKSRC}/Documentation/help.html \
+		${WRKSRC}/load_config.cpp \
 		${WRKSRC}/load_config.h
 
 .include <bsd.port.mk>
