@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/news/leafnode/pkg-plist,v 1.15 2003/09/05 09:24:11 krion Exp $
+@comment $FreeBSD: ports/news/leafnode/pkg-plist,v 1.16 2003/11/01 14:16:33 sergei Exp $
 bin/leafnode-version
 bin/newsq
 etc/leafnode/config.example
@@ -53,8 +53,8 @@ sbin/quickmkdir
 @unexec rmdir %%SPOOLDIR%%/out.going 2>/dev/null || :
 @unexec rmdir %%SPOOLDIR%%/temp.files 2>/dev/null || :
 @unexec rmdir %%SPOOLDIR%% 2>/dev/null || :
-@unexec rmdir %%PREFIX%%/var/spool 2>/dev/null || :
-@unexec rmdir %%PREFIX%%/var 2>/dev/null || :
+@unexec rmdir %D/var/spool 2>/dev/null || :
+@unexec rmdir %D/var 2>/dev/null || :
 @unexec rmdir %D/lib/leafnode 2>/dev/null || :
 @dirrm etc/leafnode
-@unexec if test -d "%%SPOOLDIR%%" || test -d "%%PREFIX%%/etc/leafnode" ; then echo ; echo "==============================================================================" ; echo "If you want to remove leafnode for good," ; echo "type: rm -rf %%PREFIX%%/etc/leafnode %%SPOOLDIR%%" ; echo "==============================================================================" ; fi
+@unexec if test -d "%%SPOOLDIR%%" || test -d "%D/etc/leafnode" ; then echo ; echo "==============================================================================" ; echo "If you want to remove leafnode for good," ; echo "type: rm -rf %D/etc/leafnode %%SPOOLDIR%%" ; echo "==============================================================================" ; fi
