@@ -3,11 +3,11 @@
 # Date created:		Aug 19, 2001
 # Whom:			ijliao
 #
-# $FreeBSD: ports/irc/p5-POE-Component-IRC/Makefile,v 1.1 2001/08/18 23:07:01 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	POE-Component-IRC
-PORTVERSION=	1.7
+PORTVERSION=	2.1
 CATEGORIES=	irc devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	POE
