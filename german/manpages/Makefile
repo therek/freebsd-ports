@@ -2,7 +2,7 @@
 # Date created:         29 September 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/manpages/Makefile,v 1.13 2000/04/14 23:53:18 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	manpages
@@ -13,6 +13,8 @@ MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/ \
 DISTFILES=	${manpages}.tgz
 
 MAINTAINER=	wosch@FreeBSD.org
+
+BROKEN=		"Does not build"
 
 LANG=		de_DE.ISO_8859-1
 NO_WRKSUBDIR=	YES
