@@ -2,7 +2,7 @@
 # Date created:				19 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/gtksql/Makefile,v 1.6 2000/04/17 00:17:14 reg Exp $
+# $FreeBSD: ports/databases/gtksql/Makefile,v 1.7 2000/07/07 19:59:01 steve Exp $
 #
 
 PORTNAME=	gtksql
@@ -22,7 +22,7 @@ WITH_MYSQL=	yes
 LIB_DEPENDS +=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
 .endif
 .if defined(WITH_PGSQL)
-LIB_DEPENDS +=	pq.2:${PORTSDIR}/databases/postgresql
+LIB_DEPENDS +=	pq.2:${PORTSDIR}/databases/postgresql7
 .endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.93 2000/07/01 14:25:58 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.94 2000/07/17 12:35:57 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -99,7 +99,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-mysql=\${PREFIX}"
 			;;
 		\"PostgreSQL\")
-			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql"
+			echo "LIB_DEPENDS+=	pq.2:\${PORTSDIR}/databases/postgresql7"
 			echo "CONFIGURE_ARGS+=--with-pgsql=\${PREFIX}/pgsql"
 			;;
 		\"mSQL\")

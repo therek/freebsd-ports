@@ -2,7 +2,7 @@
 # Date created:			18 May 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/teapop/Makefile,v 1.1.1.1 2000/07/10 15:33:16 jim Exp $
+# $FreeBSD: ports/mail/teapop/Makefile,v 1.2 2000/08/11 07:28:03 jim Exp $
 #
 
 PORTNAME=	teapop
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}-latest
 MAINTAINER=	jim@FreeBSD.org
 
 .if defined(WITH_PGSQL)
-LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql
+LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 .endif
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
