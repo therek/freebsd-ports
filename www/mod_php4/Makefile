@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.106 2000/03/27 20:38:59 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.107 2000/04/04 20:22:18 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -142,20 +142,7 @@ post-install:
 	@${ECHO} "and in ${PHPDOCDIR}"
 .endif
 
-# This was copied from bsd.port.mk because a missing post-clean target
-# is needed
-clean:
-.if !defined(NOCLEANDEPENDS)
-	@${MAKE} clean-depends
-.endif
-	@${ECHO_MSG} "===>  Cleaning for ${PKGNAME}"
-	@if [ -d ${WRKDIR} ]; then \
-		if [ -w ${WRKDIR} ]; then \
-			${RM} -rf ${WRKDIR}; \
-		else \
-			${ECHO_MSG} "===>   ${WRKDIR} not writable, skipping"; \
-		fi; \
-	fi
+post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
