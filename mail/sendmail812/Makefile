@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.1 2000/10/14 04:51:40 gshapiro Exp $
 #
 
 PORTNAME=	sendmail
@@ -71,7 +71,7 @@ post-install:
 		(cd ${PREFIX}/share/sendmail; ${TAR} xf -)
 .endif
 .if exists(${DESTDIR}/etc/mail/mailer.conf)
-	@${SED} s!%%PREFIX%%!${PREFIX}!g ${PKGDIR}/pkg-message
+	@${SED} s!%%PREFIX%%!${PREFIX}!g ${PKGMESSAGE}
 
 mailer.conf:
 	${SED} \
