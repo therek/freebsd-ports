@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.2 2000/10/25 04:32:35 knu Exp $
+# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.3 2001/01/21 05:57:47 knu Exp $
 
 LIB=		ming
 SHLIB_MAJOR?=	2
@@ -12,6 +12,7 @@ SRCS=		blocklist.c \
 		movieclip.c \
 		position.c \
 		shape_util.c \
+		text_util.c \
 		actioncompiler/compile.c \
 		actioncompiler/compileaction.c \
 		actioncompiler/compiler.tab.c \
@@ -52,7 +53,8 @@ INCS=		blocklist.h \
 		movie.h \
 		movieclip.h \
 		position.h \
-		shape_util.h
+		shape_util.h \
+		text_util.h
 
 NOMAN=		YES
 LIBDIR=		${LOCALBASE}/lib
