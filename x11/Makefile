@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.298 2000/08/24 12:06:40 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.299 2000/08/28 16:18:05 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -108,6 +108,7 @@
     SUBDIR += xtermset
     SUBDIR += xtestpicture
     SUBDIR += xtoolwait
+    SUBDIR += xwatchwin
     SUBDIR += xwit
     SUBDIR += xzoom
 
