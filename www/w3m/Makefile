@@ -2,7 +2,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.21 2000/09/22 01:59:06 kris Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.22 2000/10/25 06:45:29 knu Exp $
 #
 
 PORTNAME=	w3m
@@ -17,15 +17,19 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
 DISTNAME=	${PORTNAME}-${W3M_VERSION}-pre
 
 PATCH_SITES=	http://www4.ocn.ne.jp/~okabek/
-PATCHFILES=	${PORTNAME}-${W3M_VERSION}-pre-kokb${W3M_PATCHLEVEL}.patch.gz
+PATCHFILES=	${PORTNAME}-${W3M_VERSION}-pre-kokb22.patch.gz \
+		${PORTNAME}-${W3M_VERSION}-pre-kokb22_${W3M_PATCHLEVEL}test.patch
+
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	nobutaka@nobutaka.com
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
+BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc \
+		${LOCALBASE}/bin/patch:${PORTSDIR}/devel/patch
+PATCH=		${LOCALBASE}/bin/patch
 
 W3M_VERSION=	0.1.11
-W3M_PATCHLEVEL=	17
+W3M_PATCHLEVEL=	23
 
 MAN1=		w3m.1
 MANLANG=	""
@@ -47,8 +51,8 @@ SED_CMD+=	-e "s,undef INET6,define INET6,g"
 .if defined(JAPANESE)
 SED_CMD+=	-e "s,undef JAPANESE,define JAPANESE,g"
 MANLANG+=	ja
-DOCS_JP=	${DOCS} HISTORY.kokb README.keymap README.kokb \
-		README.menu
+DOCS_JP=	${DOCS} HISTORY.kokb README.SSL README.cookie \
+		README.keymap README.mailcap README.menu
 .endif
 
 .if defined(USE_OPENSSL)
