@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.234 2001/06/14 16:59:44 markp Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.235 2001/06/14 17:13:18 markp Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -22,6 +22,7 @@
     SUBDIR += cu-prolog
     SUBDIR += dis
     SUBDIR += diveintopython
+    SUBDIR += drscheme
     SUBDIR += dylan
     SUBDIR += egcs
     SUBDIR += eiffel
