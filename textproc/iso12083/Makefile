@@ -2,7 +2,7 @@
 # Date created:		July 9, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso12083/Makefile,v 1.6 2000/10/27 15:21:54 shige Exp $
+# $FreeBSD: ports/textproc/iso12083/Makefile,v 1.7 2001/01/27 05:26:22 will Exp $
 #
 
 PORTNAME=	iso12083
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	ftp://info.ex.ac.uk/pub/SGML/ISO-12083/
 DISTFILES=	article.dtd book.dtd maths.dtd serial.dtd
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	kuriyama@FreeBSD.org
 
 RUN_DEPENDS=	${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
