@@ -2,11 +2,11 @@
 # Date created:				15 June 2000
 # Whom:					Jesse McConnell <jesse@cylant.com>
 #
-# $FreeBSD: ports/devel/entity/Makefile,v 1.1 2000/10/28 14:03:33 trevor Exp $
+# $FreeBSD: ports/devel/entity/Makefile,v 1.2 2001/01/16 17:30:16 sobomax Exp $
 #
 
 PORTNAME=	entity
-PORTVERSION=	0.6.6
+PORTVERSION=	0.7.2
 CATEGORIES=	devel
 MASTER_SITES=	http://entity.evilplan.org/Download/files/all-versions/
 
@@ -14,14 +14,14 @@ MAINTAINER=	jesse@cylant.com
 
 LIB_DEPENDS=	pcre:${PORTSDIR}/devel/pcre
 
-PREFIX=		${LOCALBASE}
-
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-tcl=no \
+CONFIGURE_ARGS+=	--enable-tcl=no \
 		--enable-python=no
 USE_GMAKE=	yes
 USE_GTK=	yes
 INSTALLS_SHLIB=	yes
+
+MAN1=		entity.1
 
 post-install:
 	${LDCONFIG} -m ${PREFIX}/lib/entity/clib ${PREFIX}/lib
