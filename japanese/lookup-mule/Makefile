@@ -3,7 +3,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.6 1999/10/01 00:10:39 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.7 1999/12/01 00:06:44 taoka Exp $
 #
 
 DISTNAME=	lookup-1.0
@@ -23,7 +23,7 @@ PATCHDIR=	${.CURDIR}/patches
 EMACS?=		mule
 
 .if (${EMACS} == "xemacs")
-BUILD_DEPENDS+=	xemacs:${PORTSDIR}/japanese/xemacs-canna \
+BUILD_DEPENDS+=	xemacs:${PORTSDIR}/japanese/xemacs21-canna \
 		${PREFIX}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.zenirc:${PORTSDIR}/editors/xemacs-sumo-packages
 EMACSDIR=	${PREFIX}/lib/xemacs/site-packages
 ELISPDIR=	${EMACSDIR}/lisp/lookup
