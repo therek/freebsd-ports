@@ -3,7 +3,7 @@
 # Date created:		29 Mar 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/oidentd/Makefile,v 1.1 2000/04/02 04:20:32 will Exp $
 #
 
 DISTNAME=	oidentd-1.6.4
@@ -15,6 +15,7 @@ MAINTAINER=	trevor@jpj.net
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+MAN8=		oidentd.8
 
 .include <bsd.port.pre.mk>
 
