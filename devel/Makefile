@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.487 2001/04/02 22:10:53 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.488 2001/04/03 03:19:56 okazaki Exp $
 #
 
     SUBDIR += ElectricFence
@@ -368,6 +368,7 @@
     SUBDIR += py-ncurses
     SUBDIR += qtarch
     SUBDIR += py-omniorb
+    SUBDIR += py-orbit
     SUBDIR += qt-designer
     SUBDIR += qtez
     SUBDIR += qtk
