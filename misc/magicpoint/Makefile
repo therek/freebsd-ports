@@ -2,7 +2,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.27 2001/09/11 03:22:52 ache Exp $
+# $FreeBSD$
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -12,6 +12,7 @@ CATEGORIES+=	misc
 MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 
 MAINTAINER?=	mita@FreeBSD.org
+COMMENT?=	An X11-based presentation tool
 
 LIB_DEPENDS+=	png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS+=	pnmscale:${PORTSDIR}/graphics/netpbm

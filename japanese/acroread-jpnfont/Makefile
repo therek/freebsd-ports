@@ -2,11 +2,13 @@
 # Date created:		99/06/16
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.5 2000/04/11 14:12:51 knu Exp $
+# $FreeBSD$
 #
 
 DISTNAME=	jpnfont
 CATEGORIES=	japanese
+
+COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (for Japanese)
 
 MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
 

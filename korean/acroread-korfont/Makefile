@@ -2,11 +2,13 @@
 # Date created:		99/06/16
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/acroread-korfont/Makefile,v 1.5 2000/04/13 09:15:54 asami Exp $
+# $FreeBSD$
 #
 
 DISTNAME=	korfont
 CATEGORIES=	korean
+
+COMMENT=	Asian Font Packs for Acrobat Reader 4.0 (for Korean)
 
 MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
 
