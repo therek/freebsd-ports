@@ -2,15 +2,15 @@
 # Date created:			30 September 1999
 # Whom:				Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/roottail/Makefile,v 1.4 2000/07/08 03:25:21 jedgar Exp $
+# $FreeBSD: ports/sysutils/roottail/Makefile,v 1.5 2000/07/18 19:44:13 jedgar Exp $
 #
 
 PORTNAME=	roottail
-PORTVERSION=	0.0.6
+PORTVERSION=	0.0.9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.goof.com/pcg/marc/data/ \
-		ftp://www.goof.com/pub/pcg/marc/
-DISTNAME=	root-tail-0.0.6
+		ftp://ftp.goof.com/pub/pcg/marc/
+DISTNAME=	root-tail-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
 
