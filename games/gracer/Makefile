@@ -3,7 +3,7 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gracer/Makefile,v 1.1.1.1 1999/09/28 02:57:19 taoka Exp $
 #
 
 DISTNAME= 	gracer-0.1.0
@@ -13,7 +13,7 @@ MASTER_SITES=	http://arch.comp.kyutech.ac.jp/~matsu/my_products/gtk/race/
 MAINTAINER=	nox@jelal.kn-bremen.de
 
 LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
-		gif.3:${PORTSDIR}/graphics/giflib \
+		gif.5:${PORTSDIR}/graphics/giflib \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tcl80.1:${PORTSDIR}/lang/tcl80
 
