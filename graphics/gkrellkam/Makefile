@@ -2,11 +2,11 @@
 # Date Created:				Fri Aug 17 15:57:42 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gkrellkam/Makefile,v 1.1 2001/08/29 16:16:56 lioux Exp $
 #
 
 PORTNAME=	gkrellkam
-PORTVERSION=	0.2.3b
+PORTVERSION=	0.2.4
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
