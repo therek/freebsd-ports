@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.387 2001/07/28 06:28:41 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.388 2001/07/28 06:33:23 ijliao Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -76,6 +76,7 @@
     SUBDIR += hotjava
     SUBDIR += htdump
     SUBDIR += html2wml
+    SUBDIR += htmlobject
     SUBDIR += htmlpp
     SUBDIR += http-analyze
     SUBDIR += http_load
