@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.92 2002/07/17 15:01:40 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.93 2002/07/22 00:35:25 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -251,8 +251,7 @@ MASTER_SITE_SUNSITE+=	\
 	http://www.ibiblio.org/pub/Linux/%SUBDIR%/ \
 	http://linux.dsi.internet2.edu/%SUBDIR%/ \
 	ftp://ftp.unicamp.br/pub/systems/Linux/%SUBDIR%/ \
-	ftp://ftp.tuwien.ac.at/z3/opsys/linux/ibiblio/%SUBDIR%/ \
-	ftp://ftp.univie.ac.at/systems/linux/metalab/%SUBDIR%/ \
+	ftp://ftp.tuwien.ac.at/pub/linux/ibiblio/%SUBDIR%/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/linux/sunsite/%SUBDIR%/ \
 	ftp://ftp.cs.tu-berlin.de/pub/linux/Mirrors/sunsite.unc.edu/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/unix/linux/mirrors/sunsite.unc.edu/%SUBDIR%/ \
