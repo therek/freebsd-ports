@@ -2,11 +2,11 @@
 # Date created:		23-Jan-2001
 # Whom:			Dominic Mitchell <dom@happygiraffe.net>
 #
-# $FreeBSD: ports/www/p5-Apache-MP3/Makefile,v 1.1 2001/03/17 16:27:47 vanilla Exp $
+# $FreeBSD: ports/www/p5-Apache-MP3/Makefile,v 1.2 2001/05/10 09:34:15 vanilla Exp $
 #
 
 PORTNAME=	Apache-MP3
-PORTVERSION=	2.16
+PORTVERSION=	2.18
 CATEGORIES=	www audio
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=Apache
