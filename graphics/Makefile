@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.351 2001/09/18 07:02:05 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.352 2001/09/20 07:49:19 knu Exp $
 #
 
     SUBDIR += 4va
@@ -27,6 +27,7 @@
     SUBDIR += dc3play
     SUBDIR += dia
     SUBDIR += diacanvas
+    SUBDIR += divx4linux
     SUBDIR += dore
     SUBDIR += dumpmpeg
     SUBDIR += ecg2png
