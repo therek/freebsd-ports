@@ -2,7 +2,7 @@
 # Date created:				15 January 2001
 # Whom:					Maxim Sobolev <soobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.1 2001/01/15 17:42:45 sobomax Exp $
+# $FreeBSD: ports/audio/aureal-kmod/Makefile,v 1.2 2001/01/16 08:54:44 sobomax Exp $
 #
 
 PORTNAME=	aureal-kmod
@@ -15,6 +15,8 @@ DISTNAME=	au88x0-${PORTVERSION}
 MAINTAINER=	matey@cis.ohio-state.edu
 
 NO_PACKAGE=	package doesn't make any sense, because kld's should be in sync with running kernel to work correctly
+
+ONLY_FOR_ARCHS=	i386
 
 WRKSRC=		${WRKDIR}
 
