@@ -2,11 +2,11 @@
 # Date Created:		22 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.17 2000/08/03 09:24:49 asami Exp $
+# $FreeBSD: ports/graphics/libwmf/Makefile,v 1.18 2000/11/12 17:24:55 sumikawa Exp $
 #
 
 PORTNAME=	libwmf
-PORTVERSION=	0.1.20
+PORTVERSION=	0.1.21
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	wvware
@@ -20,14 +20,13 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_XLIB=	yes
 USE_XPM=	yes
 USE_FREETYPE=	yes
-INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/freetype \
-		          -I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+INSTALLS_SHLIB=	yes
 
 pre-configure:
-	(cd ${WRKSRC}; ${LN} -s xgd-1.7.3 xgd)
-	(cd ${WRKSRC}/libdib; ${LN} -s ../bytelevel.c)
+	(cd ${WRKSRC}; ${LN} -sf xgd-1.7.3 xgd)
+	(cd ${WRKSRC}/libdib; ${LN} -sf ../bytelevel.c)
 
 .include <bsd.port.mk>
