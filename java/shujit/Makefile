@@ -2,11 +2,11 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.24 2001/03/16 21:29:03 sobomax Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.25 2001/04/27 15:08:29 sobomax Exp $
 #
 
 PORTNAME=	shujit
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.3
 CATEGORIES=	java
 MASTER_SITES=	http://www.shudo.net/jit/dist/
 
@@ -26,9 +26,10 @@ MAKEFILE=	GNUmakefile
 USE_RUBY=	yes
 RUBY_NO_RUN_DEPENDS=	yes
 
-JAVADIR=	${LOCALBASE}/jdk1.1.8
+JAVADIR?=	${LOCALBASE}/jdk1.1.8
 JAVALIBDIR=	${PREFIX}/lib/${PORTNAME}
 CONFIGURE_ARGS+=	--with-jdk="${JAVADIR}"
+MAKE_ENV=	JAVADIR="${JAVADIR}"
 
 post-configure:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/README
