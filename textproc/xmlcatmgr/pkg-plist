@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/textproc/xmlcatmgr/pkg-plist,v 1.1 2003/06/30 13:32:18 kuriyama Exp $
+@comment $FreeBSD: ports/textproc/xmlcatmgr/pkg-plist,v 1.2 2003/10/14 06:16:45 edwin Exp $
 bin/xmlcatmgr
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
 %%PORTDOCS%%%%DOCSDIR%%/COPYING
 %%PORTDOCS%%%%DOCSDIR%%/PEOPLE
 %%PORTDOCS%%%%DOCSDIR%%/README
-@dirrm %%PORTDOCS%%%%DOCSDIR%%
+%%PORTDOCS%%%%DOCSDIR%%/TODO
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
