@@ -2,7 +2,7 @@
 # Date created:				11/03/2000
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.1 2000/11/06 19:01:41 nectar Exp $
 #
 
 PORTNAME=		pam_krb5
@@ -47,7 +47,7 @@ KRB5BASE=${LOCALBASE}
 KRB5_IMPL=mit
 LIB_DEPENDS+=		krb5.3:${PORTSDIR}/security/krb5
 .else
-.error "No version of Kerberos is installed."
+BROKEN=			"No version of Kerberos is installed."
 .endif
 
 .include <bsd.port.mk>
