@@ -2,11 +2,11 @@
 # Date created:				27 May 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/perl2html/Makefile,v 1.5 2000/04/09 21:53:01 cpiazza Exp $
+# $FreeBSD: ports/textproc/perl2html/Makefile,v 1.6 2000/04/30 00:29:47 steve Exp $
 #
 
 PORTNAME=		perl2html
-PORTVERSION= 		0.9.1
+PORTVERSION= 		0.9.2
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
