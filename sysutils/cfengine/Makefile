@@ -2,13 +2,14 @@
 # Date created:		March 16, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.9 2000/04/09 19:07:19 cpiazza Exp $
+# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.10 2000/04/22 10:11:45 mharo Exp $
 #
 
 PORTNAME=	cfengine
-PORTVERSION=	1.5.3
+PORTVERSION=	1.5.4
 CATEGORIES=	sysutils
-MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITES=	ftp://ftp.iu.hioslo.no/pub/cfengine/ \
+		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	cfengine
 
 MAINTAINER=	jseger@FreeBSD.org
