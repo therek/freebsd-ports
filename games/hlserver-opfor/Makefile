@@ -2,7 +2,7 @@
 # Date created:			23 Mar 2001
 # Whom:				Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-opfor/Makefile,v 1.1 2001/04/10 11:28:02 lioux Exp $
 #
 
 PORTNAME=	opfor
@@ -13,6 +13,8 @@ MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/action/half-life/offici
 DISTNAME=	opfor_linux
 
 MAINTAINER=	lioux@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/gearbox
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
 
