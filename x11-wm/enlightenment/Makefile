@@ -3,7 +3,7 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.49 1999/11/24 07:15:26 nakai Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.50 1999/11/25 03:41:56 jseger Exp $
 #
 
 DISTNAME=	enlightenment-0.16.3
@@ -17,9 +17,7 @@ MAINTAINER=	vanilla@FreeBSD.org
 
 LIB_DEPENDS=	esd.2:${PORTSDIR}/audio/esound \
 		Fnlib.0:${PORTSDIR}/graphics/fnlib \
-		gif.5:${PORTSDIR}/graphics/giflib \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
-		tiff.4:${PORTSDIR}/graphics/tiff \
 		ttf.4:${PORTSDIR}/print/freetype \
 		ghttp.1:${PORTSDIR}/www/libghttp
 
