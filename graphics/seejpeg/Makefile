@@ -2,7 +2,7 @@
 # Date created:		2000 Oct 19
 #
 # Whom:			Donn Miller <dmmiller@cvzoom.net>
-# $FreeBSD$
+# $FreeBSD: ports/graphics/seejpeg/Makefile,v 1.1 2000/10/24 20:46:48 trevor Exp $
 #
 
 PORTNAME=	seejpeg
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/graphics/viewers/svga
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	services@nevernet.net
 
 LIB_DEPENDS=	vga.1:${PORTSDIR}/graphics/svgalib \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt \
