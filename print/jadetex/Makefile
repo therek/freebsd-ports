@@ -2,11 +2,12 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@ad1440.net>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.14 2001/01/03 17:20:20 sf Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.15 2001/01/08 12:36:32 nik Exp $
 #
 
 PORTNAME=		jadetex
 PORTVERSION=		2.20
+PORTREVISION=		1
 CATEGORIES=		print
 MASTER_SITES=		http://www.tug.org/applications/jadetex/
 
