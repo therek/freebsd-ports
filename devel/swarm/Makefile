@@ -1,12 +1,12 @@
 # New ports collection makefile for:	swarm
-# Version required:	1.4.1
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/swarm/Makefile,v 1.5 1999/08/25 05:50:17 obrien Exp $
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.6 1999/11/28 18:31:55 steve Exp $
 #
 
-DISTNAME=	swarm-1.4.1
+PORTNAME=	swarm
+PORTVERSION=	1.4.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.santafe.edu/pub/swarm/
 

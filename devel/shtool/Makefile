@@ -1,12 +1,12 @@
 # New ports collection makefile for:	shtool
-# Version required:		1.4.8
 # Date created:			26-Apr-1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/shtool/Makefile,v 1.20 1999/12/24 21:39:56 rse Exp $
+# $FreeBSD: ports/devel/shtool/Makefile,v 1.21 2000/03/19 10:36:33 rse Exp $
 #
 
-DISTNAME=	shtool-1.4.8
+PORTNAME=	shtool
+PORTVERSION=	1.4.8
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.engelschall.com/sw/shtool/

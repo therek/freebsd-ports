@@ -3,13 +3,14 @@
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sdcc/Makefile,v 1.2 2000/01/24 04:37:26 steve Exp $
 #
 
-DISTNAME=	sdcc-2.1.9Ea
-PKGNAME=	sdcc-2.1.9
+PORTNAME=	sdcc
+PORTVERSION=	2.1.9
 CATEGORIES=	devel lang
 MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Forum/1353/
+DISTNAME=	${PORTNAME}-${PORTVERSION}Ea
 
 MAINTAINER=	ambrisko@whistle.com
 

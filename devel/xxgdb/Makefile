@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xxgdb
-# Version required:     1.12
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.8 1999/08/25 05:50:32 obrien Exp $
+# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.9 1999/08/31 06:42:42 mharo Exp $
 #
 
-DISTNAME=	xxgdb-1.12
+PORTNAME=	xxgdb
+PORTVERSION=	1.12
 CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

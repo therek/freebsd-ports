@@ -1,15 +1,15 @@
 # New ports collection makefile for:	uclmmbase
-# Version required:			1.1.2
 # Date created:				Thanksgiving Day, 1999
 # Whom:	      				Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.4 2000/03/08 16:53:48 fenner Exp $
+# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.5 2000/03/10 02:46:43 fenner Exp $
 #
 
-DISTNAME=	common-1.1.2
-PKGNAME=	uclmmbase-1.1.2
+PORTNAME=	uclmmbase
+PORTVERSION=	1.1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/common/
+DISTNAME=	common-${PORTVERSION}
 
 MAINTAINER=	fenner@FreeBSD.org
 

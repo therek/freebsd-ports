@@ -1,17 +1,17 @@
 # New ports collection makefile for:	re2c
-# Version required:	0.5
 # Date created:		14 May 1998
 # Whom:			Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/re2c/Makefile,v 1.2 1999/08/25 05:50:05 obrien Exp $
+# $FreeBSD: ports/devel/re2c/Makefile,v 1.3 1999/08/31 06:42:41 mharo Exp $
 #
 
-DISTNAME=	re2c.0.5
-PKGNAME=	re2c-0.5
+PORTNAME=	re2c
+PORTVERSION=	0.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://csg.uwaterloo.ca/pub/peter/ \
 		ftp://ftp.uni-trier.de/pub/unix/compiler-toolkit/re2c/ \
 		ftp://ftp.tut.ac.jp/.h3/UNIX/lib/
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	eivind@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	qtarch
-# Version required:			1.4-4
 # Date created:				17 Oct 1998
 # Whom:					Frank Gruender
 #
-# $FreeBSD: ports/devel/qtarch/Makefile,v 1.5 1999/10/27 09:02:48 mharo Exp $
+# $FreeBSD: ports/devel/qtarch/Makefile,v 1.6 2000/02/24 07:00:51 asami Exp $
 #
 
-DISTNAME=	qtarch-1.4-4
-PKGNAME=	qtarch-1.4.4
+PORTNAME=	qtarch
+PORTVERSION=	1.4.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.qtarch.intranova.net/
+DISTNAME=	qtarch-1.4-4
 
 MAINTAINER=	elwood@mc5sys.in-berlin.de
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    templ
-# Version required:     0.2
 # Date created:         14 Jun 1999
 # Whom:                 Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/templ/Makefile,v 1.2 1999/08/25 05:50:22 obrien Exp $
 #
 
-DISTNAME= 	templ-0.2
+PORTNAME= 	templ
+PORTVERSION=	0.2
 CATEGORIES= 	devel
 MASTER_SITES= 	ftp://ftp.holywar.net/pub/templ/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/

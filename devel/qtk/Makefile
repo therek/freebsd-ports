@@ -1,15 +1,15 @@
 # New ports collection makefile for:	QTK - QuickTk
-# Version required:	0.50
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/qtk/Makefile,v 1.3 1999/11/28 18:31:38 steve Exp $
+# $FreeBSD: ports/devel/qtk/Makefile,v 1.4 2000/03/22 01:59:02 will Exp $
 #
 
-DISTNAME=	qtk
-PKGNAME=	qtk-0.50
+PORTNAME=	qtk
+PORTVERSION=	0.50
 CATEGORIES=	devel tk82
 MASTER_SITES=	http://www.psn.net/~andrews/dist/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 

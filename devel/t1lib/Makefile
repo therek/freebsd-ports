@@ -1,12 +1,12 @@
 # New ports collection makefile for:	libt1
-# Version required:		1.0
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.7 1999/12/23 18:56:54 steve Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.8 1999/12/25 01:58:28 steve Exp $
 #
 
-DISTNAME=	t1lib-1.0
+PORTNAME=	t1lib
+PORTVERSION=	1.0
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics

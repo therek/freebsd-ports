@@ -1,16 +1,16 @@
 # New ports collection makefile for:	tcl-getopt
-# Version required:			1.0
 # Date created:				Mar 18, 1999
 # Whom:					mi
 #
-# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.5 1999/11/10 04:44:48 jkoshy Exp $
+# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.6 2000/03/31 23:33:23 jedgar Exp $
 #
 
-DISTNAME=	tclGetOpts
-PKGNAME=	tclGetOpts-1.0
+PORTNAME=	tclGetOpts
+PORTVERSION=	1.0
 CATEGORIES=	devel tcl76 tcl80 tcl82
 MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/alcatel/code/ \
 		http://www.neosoft.com/tcl/ftparchive/alcatel/code/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	mi@aldan.algebra.com
 

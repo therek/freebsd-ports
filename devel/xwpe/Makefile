@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  xwpe
-# Version required: 0.0
 # Date created:			  Fri Jan 24, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/devel/xwpe/Makefile,v 1.14 2000/03/20 02:37:44 obrien Exp $
+# $FreeBSD: ports/devel/xwpe/Makefile,v 1.15 2000/03/22 00:28:19 obrien Exp $
 #
 
-DISTNAME=	xwpe-1.5.22a
+PORTNAME=	xwpe
+PORTVERSION=	1.5.22a
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.identicalsoftware.com/xwpe/ \
