@@ -2,15 +2,14 @@
 # Date created:		13 Feb 2000
 # Whom:			Jeroen Ruigrok van der Werven <asmodai@freebsd.org>
 #
-# $FreeBSD: ports/emulators/tuxnes/Makefile,v 1.2 2000/04/12 04:55:56 mharo Exp $
+# $FreeBSD: ports/emulators/tuxnes/Makefile,v 1.3 2000/06/20 21:03:27 will Exp $
 #
 
 PORTNAME=	tuxnes
-PORTVERSION=	0.73
+PORTVERSION=	0.75
 CATEGORIES=	emulators
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://tmmm.simplenet.com/tuxnes/packages/
-MASTER_SITE_SUBDIR=	asmodai
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	asmodai@freebsd.org
 
