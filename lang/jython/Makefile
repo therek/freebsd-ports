@@ -2,11 +2,11 @@
 # Date created:				3 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/lang/jython/Makefile,v 1.2 2001/06/05 09:45:35 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jython
-PORTVERSION=	2.1.a3
+PORTVERSION=	2.1.b1
 CATEGORIES=	lang python java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= ${PORTNAME}
@@ -29,7 +29,7 @@ JYTHON_PREFIX=	${PREFIX}/${INST_TARGET}
 PLIST_SUB+=	JYTHON_DIR=${INST_TARGET}
 
 do-install:
-	cd ${DISTDIR} && ${JAVA} ${DISTNAME} -o ${JYTHON_PREFIX} ${INST_PACKAGES}
+	cd ${DISTDIR} && ${JAVA} -classpath . ${DISTNAME} -o ${JYTHON_PREFIX} ${INST_PACKAGES}
 	cd ${JYTHON_PREFIX} && ./jython Lib/compileall.py Lib/
 
 	# symbolic links for convenience
