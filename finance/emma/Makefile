@@ -2,7 +2,7 @@
 # Date created:				7 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/emma/Makefile,v 1.3 2001/03/22 13:36:50 tg Exp $
+# $FreeBSD: ports/misc/emma/Makefile,v 1.4 2001/03/29 16:34:15 sobomax Exp $
 #
 
 PORTNAME=	emma
@@ -13,12 +13,12 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:S/.1/-1/}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/mx/DateTime/DateTime.py:${PORTSDIR}/lang/py-mx-base
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/.1//}
 
 USE_X_PREFIX=	yes
+USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes

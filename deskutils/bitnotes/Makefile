@@ -2,7 +2,7 @@
 # Date created:				5 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/bitnotes/Makefile,v 1.2 2000/10/05 07:10:25 reg Exp $
+# $FreeBSD: ports/deskutils/bitnotes/Makefile,v 1.3 2001/03/29 16:32:51 sobomax Exp $
 #
 
 PORTNAME=	bitnotes
@@ -14,12 +14,11 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake
-
 WRKSRC=		${WRKDIR}/BitNotes
 
 USE_X_PREFIX=	yes
 USE_AUTOCONF=	yes
+USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
 USE_GNOME=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
