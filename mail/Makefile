@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.220 2001/05/05 23:38:03 nakai Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.221 2001/05/20 03:25:17 will Exp $
 #
 
     SUBDIR += abook
@@ -7,6 +7,7 @@
     SUBDIR += asmail
     SUBDIR += arrow
     SUBDIR += autorespond
+    SUBDIR += autosig
     SUBDIR += balsa
     SUBDIR += bbmail
     SUBDIR += biabam
