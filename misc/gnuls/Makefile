@@ -2,7 +2,7 @@
 # Date created:				06 January 1996
 # Whom:					bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/misc/gnuls/Makefile,v 1.14 2000/11/23 11:56:08 sobomax Exp $
+# $FreeBSD: ports/misc/gnuls/Makefile,v 1.15 2001/08/25 01:09:34 jedgar Exp $
 #
 
 PORTNAME=	gnuls
@@ -21,7 +21,7 @@ MAN1=		gnuls.1 dircolors.1 dir.1 vdir.1
 
 .if ${OSVERSION} > 500019
 .if defined(WITH_ACL_SUPPORT)
-PATCHFILES=	gnuls-acl-20010821.patch
+PATCHFILES=	gnuls-acl-20010825.patch
 PATCH_SITES=	${MASTER_SITE_LOCAL}
 PATCH_SITE_SUBDIR= jedgar
 .else
