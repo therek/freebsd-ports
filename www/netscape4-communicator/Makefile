@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.64 2000/04/10 00:06:01 cpiazza Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.65 2000/04/17 00:18:50 reg Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -12,6 +12,8 @@ MASTER_SITES?=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/unsuppo
 DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 
 MAINTAINER?=	sada@FreeBSD.org
+
+RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape-wrapper
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 
@@ -95,7 +97,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/netscape \
 		${BINDIR}/${BROWSER_ARC}-${BROWSER_VER}
 	${LN} -sf ${BROWSER_ARC}-${BROWSER_VER} ${BINDIR}/${BROWSER_ARC}-4
-	${LN} -sf ${BROWSER_ARC}-4 ${BINDIR}/netscape
+	${LN} -sf ${BROWSER_ARC}-4 ${BINDIR}/netscape.run
 	if [ ! -f ${NDIR}/mailcap ] ; then \
 		${INSTALL_DATA} ${MAILCAP} ${NDIR}; \
 	fi

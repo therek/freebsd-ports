@@ -3,7 +3,7 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.20 2000/04/06 15:30:43 sada Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.21 2000/04/10 00:05:44 cpiazza Exp $
 #
 
 PORTNAME=	linux-netscape-${BROWSER}
@@ -15,7 +15,8 @@ DISTFILES=	${BROWSER}-v472-export.x86-unknown-linuxglibc2.0.tar.gz
 
 MAINTAINER=	girgen@partitur.se
 
-RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
+		netscape:${PORTSDIR}/www/netscape-wrapper
 
 ONLY_FOR_ARCHS=	i386
 

@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.28 2000/03/26 19:59:37 sada Exp $
+# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.29 2000/04/11 14:15:36 knu Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -78,7 +78,7 @@ do-install:
 	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${WRKSRC}/${NETHELP}.nif \
 		${EXTRACT_AFTER_ARGS} -C ${NDIR}/${LANG}
 	${INSTALL_SCRIPT} ${WRKDIR}/start.sh ${PREFIX}/bin/${BROWSER_CMD}
-	${LN} -sf ${BROWSER_CMD} ${PREFIX}/bin/netscape
+	${LN} -sf ${BROWSER_CMD} ${PREFIX}/bin/netscape.run
 	${MKDIR} ${MANDIR}/man1
 	${INSTALL_MAN} ${MASTERDIR}/files/${MAN1} ${MANDIR}/man1
 

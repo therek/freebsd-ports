@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.12 2000/02/28 08:33:58 asami Exp $
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.13 2000/04/10 00:05:43 cpiazza Exp $
 #
 
 PORTNAME=	linux-netscape
@@ -16,7 +16,8 @@ DISTNAME=	communicator-v408-export.x86-unknown-linux2.0_libc5
 
 MAINTAINER=	tom@eborcom.com
 
-RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
+		netscape:${PORTSDIR}/www/netscape-wrapper
 
 ONLY_FOR_ARCHS=	i386
 
@@ -30,7 +31,7 @@ do-install:
 	cd ${WRKSRC} && yes "" | \
 	    LC_TIME=C MOZILLA_HOME="${NDIR}" ./ns-install
 	${MV} -f ${NDIR}/netscape ${NDIR}/netscape.bin
-	${INSTALL_SCRIPT} ${WRKSRC}/netscape ${BINDIR}
+	${INSTALL_SCRIPT} ${WRKSRC}/netscape ${BINDIR}/netscape.run
 	if [ ! -f ${NDIR}/mailcap ] ; then \
 	    ${INSTALL_DATA} ${FILESDIR}/mailcap ${NDIR}; \
 	fi
