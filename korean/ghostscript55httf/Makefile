@@ -2,7 +2,7 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.19 2000/08/03 09:25:18 asami Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.20 2001/01/20 15:08:08 cjh Exp $
 #
 
 PORTNAME=	ghostscript
@@ -20,8 +20,6 @@ PATCHFILES=	gs5.50-httf-19990114_1.diff.gz
 PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	cjh@FreeBSD.org
-
-Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html
 
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract \
