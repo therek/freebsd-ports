@@ -2,16 +2,16 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.46 2000/11/24 13:08:11 kevlo Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.47 2000/12/12 03:02:06 kevlo Exp $
 #
 
 PORTNAME=	kdemultimedia
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1
 CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 RUN_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
@@ -28,6 +28,11 @@ CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc" \
 		USER_LDFLAGS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes
+
+pre-configure:
+	${PERL} -pi -e 's,kscd_compile=no,kscd_compile=yes,g; \
+			s,DO_NOT_COMPILE mpeglib_artsplug,DO_NOT_COMPILE,g; \
+			s,DO_NOT_COMPILE mpeglib,DO_NOT_COMPILE,g' ${WRKSRC}/configure
 
 post-install:
 	@${ECHO_MSG}

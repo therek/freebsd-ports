@@ -2,17 +2,17 @@
 # Date created:				Sun May 14 2000 00:50:02
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde2/Makefile,v 1.41 2000/11/17 18:24:35 will Exp $
+# $FreeBSD: ports/x11/kde2/Makefile,v 1.42 2000/12/12 03:02:24 kevlo Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1
 CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# none
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 RUN_DEPENDS=	konqueror:${PORTSDIR}/x11/kdebase2 \

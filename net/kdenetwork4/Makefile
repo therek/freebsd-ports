@@ -2,16 +2,16 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.54 2000/11/17 18:24:36 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.55 2000/12/12 03:02:14 kevlo Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1
 CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.314 2001/01/03 23:47:54 will Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.315 2001/01/08 23:26:43 vanilla Exp $
 #
 
     SUBDIR += 9term
@@ -40,9 +40,7 @@
     SUBDIR += gyroscope
     SUBDIR += imwheel
     SUBDIR += kb2mb2
-    SUBDIR += kde11
     SUBDIR += kde2
-    SUBDIR += kdebase11
     SUBDIR += kdebase2
     SUBDIR += kdelibs11
     SUBDIR += kdelibs2

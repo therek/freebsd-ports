@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.207 2001/02/12 09:25:38 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.208 2001/02/26 01:54:08 trevor Exp $
 #
 
     SUBDIR += Maaate
@@ -72,7 +72,6 @@
     SUBDIR += id3lib
     SUBDIR += id3ren
     SUBDIR += juke
-    SUBDIR += kdemultimedia11
     SUBDIR += kdemultimedia2
     SUBDIR += kmikmod
     SUBDIR += kmp3

@@ -2,17 +2,16 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.68 2000/12/22 06:01:07 kevlo Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.69 2001/01/05 06:20:28 kevlo Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION=	2.0.1
-PORTREVISION=	2
+PORTVERSION=	2.1
 CATEGORIES=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		audiofile.0:${PORTSDIR}/audio/libaudiofile \

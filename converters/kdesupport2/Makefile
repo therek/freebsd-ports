@@ -2,16 +2,16 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.42 2000/12/12 03:01:53 kevlo Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.43 2001/01/07 17:49:45 will Exp $
 #
 
 PORTNAME=	kdesupport
-PORTVERSION=	2.0.1
+PORTVERSION=	2.1
 CATEGORIES=	converters kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
-MAINTAINER=	kevlo@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
