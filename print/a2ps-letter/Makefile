@@ -3,15 +3,15 @@
 # Date created:         15 July 1998
 # Whom:                 Chuck Robey (chuckr@freebsd.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.28 1999/08/31 01:44:22 peter Exp $
 #
 
 DISTNAME=	a2ps-4.12
 PKGNAME=	a2ps-${PAPERSIZE}-4.12
 CATEGORIES=	print
 MASTER_SITES=	http://www.freebsd.org/~chuckr/ \
-		http://www-inf.enst.fr/~demaille/ftp/a2ps/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} sheets.map.fixed
+		ftp://ftp.enst.fr/pub/unix/a2ps/
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} sheets.map
 
 MAINTAINER=	chuckr@FreeBSD.org
 
@@ -35,7 +35,7 @@ CONFIGURE_ARGS=	--with-medium=${PAPERSIZECNF} --sharedstatedir=$(PREFIX)/share -
 .endif
 
 post-extract:
-	$(CP) $(DISTDIR)/sheets.map.fixed $(WRKSRC)/sheets/sheets.map
+	$(CP) $(DISTDIR)/sheets.map $(WRKSRC)/sheets/sheets.map
 
 post-install:
 	strip ${PREFIX}/bin/a2ps
