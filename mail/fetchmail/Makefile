@@ -2,13 +2,12 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.98 2000/06/09 08:54:43 sobomax Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.99 2000/06/11 07:43:44 knu Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
-# writing .fetchmailrc files) requires Python, found in the Ports
-# Collection under lang/python.  The fetchmail program itself
-# does not need Python, so there is no RUN_DEPENDS for Python in
-# this Makefile.
+# writing .fetchmailrc files) requires Python, Tk, X11, etc..
+# The fetchmail program itself does not need Python, but if you
+# want fetchmailconf to work, define WITH_X11
 
 PORTNAME=	fetchmail
 PORTVERSION= 	5.4.1
@@ -18,6 +17,11 @@ MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/
 MAINTAINER=	ve@sci.fi
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
+.if defined(WITH_X11)
+RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+.endif
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS \
 		--enable-nls
