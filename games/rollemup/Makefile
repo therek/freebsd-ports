@@ -2,7 +2,7 @@
 # Date created:		22 October 1999
 # Whom:			Kazuki Sakamoto <sakamoto@netbsd.org>
 #
-# $FreeBSD: ports/games/rollemup/Makefile,v 1.5 2000/07/31 08:41:22 kevlo Exp $
+# $FreeBSD: ports/games/rollemup/Makefile,v 1.6 2000/08/03 14:28:20 sanpei Exp $
 # $NetBSD: Makefile,v 1.4 1999/11/23 16:54:40 hubertf Exp $
 #
 
@@ -48,7 +48,7 @@ do-install:
 	@${INSTALL_SCRIPT} ${WRKDIR}/rollemup ${PREFIX}/bin
 	@${INSTALL_DATA} ${WRKDIR}/README.Rollemup \
 		${PREFIX}/${GAMES_DIR}/Rollemup
-	@${CP} ${PKGDIR}/PLIST ${PLIST_SRC}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST_SRC}
 	@(cd ${PREFIX}; \
 	  find ${GAMES_DIR}/Rollemup -type f >> ${PLIST_SRC}; \
 	  for DIR in `find ${GAMES_DIR}/Rollemup -type d | sort -r`; do \
