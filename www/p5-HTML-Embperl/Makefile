@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.3 2000/04/16 08:50:05 asami Exp $
+# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.4 2000/06/17 02:37:09 will Exp $
 #
 
 PORTNAME=	HTML-Embperl
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/p5-Apache
 
+IS_INTERACTIVE=	yes
 USE_PERL5=	yes
 
 MAN3=		HTML::Embperl.3 HTML::EmbperlD.3
