@@ -2,11 +2,11 @@
 # Date created:		15 May 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/print/pdq/Makefile,v 1.3 1999/08/31 01:45:10 peter Exp $
+# $FreeBSD: ports/print/pdq/Makefile,v 1.4 2000/04/09 17:40:58 cpiazza Exp $
 #
 
-PORTNAME=	pdq 
-PORTVERSION=	2.1.1 
+PORTNAME=	pdq
+PORTVERSION=	2.1.1
 CATEGORIES=	print
 MASTER_SITES=	ftp://feynman.tam.uiuc.edu/pub/pdq/
 EXTRACT_SUFX=	.tgz

@@ -2,11 +2,11 @@
 # Date created:		5 December 1996
 # Whom:			Bernd Rosauer <br@netland.inka.de>
 #
-# $FreeBSD: ports/print/teTeX/Makefile,v 1.38 2000/02/22 12:22:32 tg Exp $
+# $FreeBSD: ports/print/teTeX/Makefile,v 1.39 2000/04/09 17:41:19 cpiazza Exp $
 #
 
-PORTNAME=	teTeX 
-PORTVERSION=	1.0.7 
+PORTNAME=	teTeX
+PORTVERSION=	1.0.7
 CATEGORIES=	print
 MASTER_SITES=	ftp://sunsite.informatik.rwth-aachen.de/pub/comp/tex/teTeX/1.0/distrib/sources/ \
 		${MASTER_SITE_TEX_CTAN}

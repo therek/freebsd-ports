@@ -2,11 +2,11 @@
 # Date created:         23 November 1994
 # Whom:                 ljo
 #
-# $FreeBSD: ports/print/afm/Makefile,v 1.11 2000/02/05 10:55:39 dirk Exp $
+# $FreeBSD: ports/print/afm/Makefile,v 1.12 2000/04/09 17:39:33 cpiazza Exp $
 #
 
-PORTNAME=	afm 
-PORTVERSION=	1.0 
+PORTNAME=	afm
+PORTVERSION=	1.0
 CATEGORIES=	print
 MASTER_SITES=	ftp://sgi.com/sgi/fax/source/
 DISTNAME=	afm

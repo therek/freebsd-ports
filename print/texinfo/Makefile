@@ -2,11 +2,11 @@
 # Date created:         2 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/texinfo/Makefile,v 1.17 1999/08/31 01:45:22 peter Exp $
+# $FreeBSD: ports/print/texinfo/Makefile,v 1.18 2000/04/09 17:41:22 cpiazza Exp $
 #
 
-PORTNAME=	texinfo 
-PORTVERSION=	2.218 
+PORTNAME=	texinfo
+PORTVERSION=	2.218
 CATEGORIES=	print
 #other equivalent sites: ftp.shsu.edu ftp.dante.de
 MASTER_SITES=	ftp://ftp.tex.ac.uk/tex-archive/macros/eplain/doc/ \

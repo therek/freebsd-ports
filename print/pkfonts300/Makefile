@@ -2,11 +2,11 @@
 # Date created:		16 Mar 1996
 # Whom:			Hideaki Ohmon <ohmon@tom.sfc.keio.ac.jp>
 #
-# $FreeBSD: ports/print/pkfonts300/Makefile,v 1.19 1999/10/18 18:08:55 cpiazza Exp $
+# $FreeBSD: ports/print/pkfonts300/Makefile,v 1.20 2000/04/09 17:41:04 cpiazza Exp $
 #
 
-PORTNAME=	pkfonts${RESOLUTION} 
-PORTVERSION=	1.0 
+PORTNAME=	pkfonts${RESOLUTION}
+PORTVERSION=	1.0
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 MASTER_SITE_SUBDIR=	pkfonts

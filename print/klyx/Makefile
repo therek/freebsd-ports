@@ -2,11 +2,11 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/print/klyx/Makefile,v 1.13 2000/02/24 07:01:08 asami Exp $
+# $FreeBSD: ports/print/klyx/Makefile,v 1.14 2000/04/09 17:40:31 cpiazza Exp $
 #
 
-PORTNAME=	klyx 
-PORTVERSION=	0.10.0 
+PORTNAME=	klyx
+PORTVERSION=	0.10.0
 CATEGORIES=	print kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR= unstable/apps/office

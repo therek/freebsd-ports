@@ -2,11 +2,11 @@
 # Date created:         29-March-1996
 # Whom:                 joerg
 #
-# $FreeBSD: ports/print/html2latex/Makefile,v 1.7 2000/02/19 19:42:16 joerg Exp $
+# $FreeBSD: ports/print/html2latex/Makefile,v 1.8 2000/04/09 17:40:23 cpiazza Exp $
 #
 
-PORTNAME=	html2latex 
-PORTVERSION=	0.9c 
+PORTNAME=	html2latex
+PORTVERSION=	0.9c
 CATEGORIES=	print
 # I can't seem to find the original dist site
 MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/

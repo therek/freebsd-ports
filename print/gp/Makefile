@@ -2,11 +2,11 @@
 # Date created:		15 April 1997
 # Whom:			Kiriyama Kazuhiko<kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/print/gp/Makefile,v 1.13 1999/08/31 01:44:50 peter Exp $
+# $FreeBSD: ports/print/gp/Makefile,v 1.14 2000/04/09 17:40:17 cpiazza Exp $
 #
 
-PORTNAME?=	gp 
-PORTVERSION?=	2.5.p2 
+PORTNAME?=	gp
+PORTVERSION?=	2.5.p2
 CATEGORIES=	print tk42
 MASTER_SITES=	http://www.itbrain.co.jp/~ueda/GP/
 DISTNAME=	GP-2.5p2	

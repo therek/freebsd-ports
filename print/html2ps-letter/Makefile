@@ -2,10 +2,10 @@
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.12 1999/09/17 18:36:17 steve Exp $
+# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.13 2000/04/09 17:40:25 cpiazza Exp $
 #
 
-PORTNAME=	html2ps-${PAPERSIZE} 
+PORTNAME=	html2ps-${PAPERSIZE}
 PORTVERSION=	1.0
 CATEGORIES=	print www perl5
 MASTER_SITES=	http://www.tdb.uu.se/~jan/

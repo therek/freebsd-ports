@@ -2,11 +2,11 @@
 # Date created:		11 September 1997
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/gsfonts/Makefile,v 1.5 1999/09/27 02:33:12 steve Exp $
+# $FreeBSD: ports/print/gsfonts/Makefile,v 1.6 2000/04/09 17:40:18 cpiazza Exp $
 #
 
-PORTNAME=	gsfonts 
-PORTVERSION=	5.10 
+PORTNAME=	gsfonts
+PORTVERSION=	5.10
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cs.wisc.edu/ghost/gnu/gs510/

@@ -2,11 +2,11 @@
 # Date created:		10 November 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/print/nenscript/Makefile,v 1.1.1.1 1999/11/14 03:50:27 steve Exp $
+# $FreeBSD: ports/print/nenscript/Makefile,v 1.2 2000/04/09 17:40:52 cpiazza Exp $
 #
 
-PORTNAME=	nenscript 
-PORTVERSION=	1.13.3 
+PORTNAME=	nenscript
+PORTVERSION=	1.13.3
 CATEGORIES=	print
 MASTER_SITES=	http://www.im.lcs.mit.edu/~magnus/nenscript/
 

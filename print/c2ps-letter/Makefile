@@ -2,11 +2,11 @@
 # Date created:        19 March 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/print/c2ps-letter/Makefile,v 1.8 1999/08/31 01:44:33 peter Exp $
+# $FreeBSD: ports/print/c2ps-letter/Makefile,v 1.9 2000/04/09 17:39:44 cpiazza Exp $
 #
 
-PORTNAME=	c2ps-${PAPERSIZE} 
-PORTVERSION=	4.0 
+PORTNAME=	c2ps-${PAPERSIZE}
+PORTVERSION=	4.0
 CATEGORIES=	print
 MASTER_SITES=	http://www.cs.technion.ac.il/users/c2ps/
 DISTNAME=	c2ps-${PORTVERSION}

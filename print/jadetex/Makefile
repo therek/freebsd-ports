@@ -2,7 +2,7 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@plutotech.com>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.7 2000/03/21 08:22:22 mharo Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.8 2000/04/09 17:40:30 cpiazza Exp $
 #
 # When jadetex-2.3 goes mainstream, it will replace jadetex-2.1
 # currently in the Comprehensive TeX Archive Network (CTAN).  When
@@ -11,8 +11,8 @@
 # EXTRACT_SUFX, EXTRACT_AFTER_ARGS, and NO_WRKSUBDIR.
 #
 
-PORTNAME=		jadetex 
-PORTVERSION=		2.3 
+PORTNAME=		jadetex
+PORTVERSION=		2.3
 CATEGORIES=		print
 MASTER_SITES=		http://people.FreeBSD.org/~nik/distfiles/jadetex/
 DISTFILES=		Makefile.jadetex jadetex.dtx jadetex.ini jadetex.ins \

@@ -2,12 +2,12 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread/Makefile,v 1.18 2000/03/10 08:52:21 obrien Exp $
+# $FreeBSD: ports/print/acroread/Makefile,v 1.19 2000/04/09 17:39:29 cpiazza Exp $
 #
 .include <bsd.port.pre.mk>
 
-PORTNAME=	acroread 
-PORTVERSION=	3.02 
+PORTNAME=	acroread
+PORTVERSION=	3.02
 CATEGORIES=	print linux
 MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/3.x/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/acrobatreader/unix/3.x/

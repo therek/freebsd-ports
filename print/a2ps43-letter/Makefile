@@ -3,11 +3,11 @@
 # Date created:         6 November 1994
 # Whom:                 jmz & David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/a2ps43-letter/Makefile,v 1.23 2000/03/22 00:26:30 obrien Exp $
+# $FreeBSD: ports/print/a2ps43-letter/Makefile,v 1.24 2000/04/09 17:39:27 cpiazza Exp $
 #
 
-PORTNAME=	a2ps-${PAPERSIZE} 
-PORTVERSION=	4.3 
+PORTNAME=	a2ps-${PAPERSIZE}
+PORTVERSION=	4.3
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.imag.fr/archive/postscript/format.translators/
 DISTNAME=	a2ps.V4.3

@@ -2,11 +2,11 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/print/offix-printer/Makefile,v 1.7 1999/08/31 01:45:08 peter Exp $
+# $FreeBSD: ports/print/offix-printer/Makefile,v 1.8 2000/04/09 17:40:53 cpiazza Exp $
 #
 
-PORTNAME=	offix-printer 
-PORTVERSION=	2.4 
+PORTNAME=	offix-printer
+PORTVERSION=	2.4
 CATEGORIES=	print offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX

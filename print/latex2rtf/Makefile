@@ -2,11 +2,11 @@
 # Date created:         14 Dec 1999
 # Whom:                 Joerg Wunsch <joerg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/latex2rtf/Makefile,v 1.1.1.1 2000/01/30 23:36:39 joerg Exp $
+# $FreeBSD: ports/print/latex2rtf/Makefile,v 1.2 2000/04/09 17:40:34 cpiazza Exp $
 #
 
-PORTNAME=	latex2rtf 
-PORTVERSION=	1.8a 
+PORTNAME=	latex2rtf
+PORTVERSION=	1.8a
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/latex2rtf

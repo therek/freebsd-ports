@@ -2,11 +2,11 @@
 # Date created:         21 September 1994
 # Whom:                 jmz & David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.20 1999/08/31 01:45:18 peter Exp $
+# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.21 2000/04/09 17:41:13 cpiazza Exp $
 #
 
-PORTNAME=	psutils-${PAPERSIZE} 
-PORTVERSION=	1.17 
+PORTNAME=	psutils-${PAPERSIZE}
+PORTVERSION=	1.17
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.dcs.ed.ac.uk/pub/ajcd/
 DISTNAME=	psutils-p17

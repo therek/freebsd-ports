@@ -2,11 +2,11 @@
 # Date created:		18 November 1998
 # Whom:			smace@freebsd.org
 #
-# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.7 1999/08/31 01:45:09 peter Exp $
+# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.8 2000/04/09 17:40:54 cpiazza Exp $
 #
 
-PORTNAME=	pbm2ppa 
-PORTVERSION=	0.8.6 
+PORTNAME=	pbm2ppa
+PORTVERSION=	0.8.6
 CATEGORIES=	print
 MASTER_SITES=	http://www.httptech.com/ppa/files/
 DISTNAME=	ppa-0.8.6

@@ -2,11 +2,11 @@
 # Date created:         1 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/xdvi/Makefile,v 1.26 1999/08/31 01:45:27 peter Exp $
+# $FreeBSD: ports/print/xdvi/Makefile,v 1.27 2000/04/09 17:41:31 cpiazza Exp $
 #
 
-PORTNAME=	xdvi 
-PORTVERSION=	pl20 
+PORTNAME=	xdvi
+PORTVERSION=	pl20
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
@@ -27,7 +27,7 @@ IS_INTERACTIVE=	yes
 
 MAN1=		xdvi.1
 
-do-install: 
+do-install:
 	@${MKDIR} ${PREFIX}/man/man1
 	@${MKDIR} ${PREFIX}/bin
 	@(cd ${WRKSRC}; ${GMAKE} install.man \

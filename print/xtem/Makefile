@@ -2,11 +2,11 @@
 # Date created:         01 June 1997
 # Whom:                 Peter Cornelius <pc@inr.fzk.de>
 #
-# $FreeBSD: ports/print/xtem/Makefile,v 1.10 1999/09/03 10:40:32 tg Exp $
+# $FreeBSD: ports/print/xtem/Makefile,v 1.11 2000/04/09 17:41:34 cpiazza Exp $
 #
 
-PORTNAME=	xtem 
-PORTVERSION=	7.00 
+PORTNAME=	xtem
+PORTVERSION=	7.00
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.iwd.uni-bremen.de/pub/tex/xtem.v7/
 DISTNAME=	xtem_texmenu.7.00

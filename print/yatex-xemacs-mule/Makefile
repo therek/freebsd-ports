@@ -2,11 +2,11 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex-xemacs-mule/Makefile,v 1.16 2000/01/09 15:51:15 taoka Exp $
+# $FreeBSD: ports/print/yatex-xemacs-mule/Makefile,v 1.17 2000/04/09 17:41:40 cpiazza Exp $
 #
 
-PORTNAME=	yatex-xemacs-mule 
-PORTVERSION=	1.67 
+PORTNAME=	yatex-xemacs-mule
+PORTVERSION=	1.67
 
 XEMACS-MULE=	yes
 

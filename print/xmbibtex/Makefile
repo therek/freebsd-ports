@@ -2,11 +2,11 @@
 # Date created:				06 Nov 1997
 # Whom:					Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/xmbibtex/Makefile,v 1.8 1999/08/31 06:49:55 mharo Exp $
+# $FreeBSD: ports/print/xmbibtex/Makefile,v 1.9 2000/04/09 17:41:33 cpiazza Exp $
 #
 
-PORTNAME=	xmbibtex 
-PORTVERSION=	1.5 
+PORTNAME=	xmbibtex
+PORTVERSION=	1.5
 CATEGORIES=	print databases
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/tex

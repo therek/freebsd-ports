@@ -2,11 +2,11 @@
 # Date created:		11 December 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.37 1999/11/25 16:13:16 steve Exp $
+# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.38 2000/04/09 17:40:10 cpiazza Exp $
 #
 
-PORTNAME=	ghostscript 
-PORTVERSION=	5.10 
+PORTNAME=	ghostscript
+PORTVERSION=	5.10
 CATEGORIES=	print
 MASTER_SITES= ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/ \
 		${MASTER_SITE_GNU} \

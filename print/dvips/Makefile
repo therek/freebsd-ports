@@ -2,11 +2,11 @@
 # Date created:         30 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dvips/Makefile,v 1.21 2000/03/03 22:07:17 jmz Exp $
+# $FreeBSD: ports/print/dvips/Makefile,v 1.22 2000/04/09 17:39:55 cpiazza Exp $
 #
 
-PORTNAME=	dvips 
-PORTVERSION=	5.76 
+PORTNAME=	dvips
+PORTVERSION=	5.76
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.tex.ac.uk/tex-archive/dviware/dvips/
 DISTNAME=	dvips576

@@ -2,11 +2,11 @@
 # Date created:				21 November 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/print/auctex/Makefile,v 1.1 1999/12/29 07:21:32 steve Exp $
+# $FreeBSD: ports/print/auctex/Makefile,v 1.2 2000/04/09 17:39:38 cpiazza Exp $
 #
 
-PORTNAME=		auctex 
-PORTVERSION=		9.9p 
+PORTNAME=		auctex
+PORTVERSION=		9.9p
 CATEGORIES=		print elisp
 MASTER_SITES=		${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/auctex

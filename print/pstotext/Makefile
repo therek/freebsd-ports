@@ -2,11 +2,11 @@
 # Date created:		December 6, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/print/pstotext/Makefile,v 1.1 1999/12/29 07:26:51 steve Exp $
+# $FreeBSD: ports/print/pstotext/Makefile,v 1.2 2000/04/09 17:41:11 cpiazza Exp $
 #
 
-PORTNAME=	pstotext 
-PORTVERSION=	2.1 
+PORTNAME=	pstotext
+PORTVERSION=	2.1
 CATEGORIES=	print
 MASTER_SITES=	http://www.research.digital.com/SRC/virtualpaper/cgi-bin/nph-download.tcl/pstotext.tar.Z?object=pstotext
 DISTNAME=	pstotext

@@ -2,11 +2,11 @@
 # Date created:		27 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/print/pclprint/Makefile,v 1.2 2000/03/22 01:59:29 will Exp $
+# $FreeBSD: ports/print/pclprint/Makefile,v 1.3 2000/04/09 17:40:56 cpiazza Exp $
 #
 
-PORTNAME=	pclprint 
-PORTVERSION=	1.0 
+PORTNAME=	pclprint
+PORTVERSION=	1.0
 CATEGORIES=	print
 MASTER_SITES=	ftp://andrsn.stanford.edu/pub/print/ \
 		http://www.psn.net/~andrews/dist/

@@ -2,11 +2,11 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.18 2000/03/21 08:26:29 mharo Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.19 2000/04/09 17:41:36 cpiazza Exp $
 #
 
-PORTNAME?=	yatex 
-PORTVERSION?=	1.67 
+PORTNAME?=	yatex
+PORTVERSION?=	1.67
 CATEGORIES?=	print elisp
 MASTER_SITES=	http://www.yatex.org/
 DISTNAME=	yatex1.67

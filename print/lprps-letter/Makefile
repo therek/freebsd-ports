@@ -3,11 +3,11 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/lprps-letter/Makefile,v 1.10 2000/03/22 00:27:05 obrien Exp $
+# $FreeBSD: ports/print/lprps-letter/Makefile,v 1.11 2000/04/09 17:40:39 cpiazza Exp $
 #
 
-PORTNAME=	lprps-${PAPERSIZE} 
-PORTVERSION=	2.5 
+PORTNAME=	lprps-${PAPERSIZE}
+PORTVERSION=	2.5
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.jclark.com/pub/lprps/
 DISTNAME=	lprps-2.5
@@ -25,7 +25,7 @@ PS!=		echo ${PAPERSIZE} | awk '{print toupper($$1)}'
 
 .if ${PAPERSIZE} != a4 && ${PAPERSIZE} != letter
 .BEGIN:
-	@${ECHO} "Error: invalid value for PAPERSIZE: \"${PAPERSIZE}\"" 
+	@${ECHO} "Error: invalid value for PAPERSIZE: \"${PAPERSIZE}\""
 	@${ECHO} "Possible values are:  a4 or letter"
 	@${FALSE}
 .endif

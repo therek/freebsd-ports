@@ -2,11 +2,11 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.40 2000/02/13 17:33:57 andreas Exp $
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.41 2000/04/09 17:40:12 cpiazza Exp $
 #
 
-PORTNAME=	ghostscript 
-PORTVERSION=	5.50 
+PORTNAME=	ghostscript
+PORTVERSION=	5.50
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
 		http://www.erdw.ethz.ch/~bonk/ftp/gs-driver-distrib/ \
@@ -16,7 +16,7 @@ DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 
 MAINTAINER=	andreas@FreeBSD.org
 
-Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html 
+Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html
 
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract \

@@ -2,11 +2,11 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.13 1999/11/25 03:38:34 jseger Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.14 2000/04/09 17:40:08 cpiazza Exp $
 #
 
-PORTNAME=	freetype 
-PORTVERSION=	1.3 
+PORTNAME=	freetype
+PORTVERSION=	1.3
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.tux.org/pub/devel/freetype/ \
 		ftp://ftp.lerc.nasa.gov/ImageMagick/delegates/ \

@@ -2,11 +2,11 @@
 # Date created:      10/22/96
 # Whom:              oly@world.std.com
 #
-# $FreeBSD: ports/print/lout/Makefile,v 1.9 1999/10/10 23:38:20 steve Exp $
+# $FreeBSD: ports/print/lout/Makefile,v 1.10 2000/04/09 17:40:36 cpiazza Exp $
 #
 
-PORTNAME=	lout 
-PORTVERSION=	3.17 
+PORTNAME=	lout
+PORTVERSION=	3.17
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN} \
 		ftp://ftp.cs.usyd.edu.au/jeff/lout/

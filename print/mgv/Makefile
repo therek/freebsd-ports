@@ -2,11 +2,11 @@
 # Date created:		4 Mar 1998
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/print/mgv/Makefile,v 1.14 1999/08/31 01:45:03 peter Exp $
+# $FreeBSD: ports/print/mgv/Makefile,v 1.15 2000/04/09 17:40:44 cpiazza Exp $
 #
 
-PORTNAME=	mgv 
-PORTVERSION=	3.1.5 
+PORTNAME=	mgv
+PORTVERSION=	3.1.5
 CATEGORIES=	print
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
 

@@ -2,11 +2,11 @@
 # Date created:		17th February 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/print/dvi2tty/Makefile,v 1.7 1999/11/27 15:09:54 steve Exp $
+# $FreeBSD: ports/print/dvi2tty/Makefile,v 1.8 2000/04/09 17:39:50 cpiazza Exp $
 #
-      
-PORTNAME=	dvi2tty 
-PORTVERSION=	1.0 
+     
+PORTNAME=	dvi2tty
+PORTVERSION=	1.0
 CATEGORIES=	print
 MASTER_SITES=	ftp://ctan.unsw.edu.au/ctan/tex-archive/dviware/
 DISTNAME=	dvi2tty

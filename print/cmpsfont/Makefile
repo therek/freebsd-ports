@@ -2,11 +2,11 @@
 # Date created:		11 September 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/cmpsfont/Makefile,v 1.3 1999/08/31 01:44:35 peter Exp $
+# $FreeBSD: ports/print/cmpsfont/Makefile,v 1.4 2000/04/09 17:39:48 cpiazza Exp $
 #
 
-PORTNAME=	cmpsfont 
-PORTVERSION=	1.0 
+PORTNAME=	cmpsfont
+PORTVERSION=	1.0
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.ams.org/pub/tex/psfonts/cm/
 DISTNAME=	cmps

@@ -2,11 +2,11 @@
 # Date created:         12 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/makeindex/Makefile,v 1.13 1999/08/31 01:45:02 peter Exp $
+# $FreeBSD: ports/print/makeindex/Makefile,v 1.14 2000/04/09 17:40:43 cpiazza Exp $
 #
 
-PORTNAME=	makeindex 
-PORTVERSION=	3.0.8 
+PORTNAME=	makeindex
+PORTVERSION=	3.0.8
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.th-darmstadt.de/pub/tex/src/makeindex/BETA/
 EXTRACT_SUFX=	.tar.Z
@@ -16,11 +16,11 @@ MAINTAINER=	jmz@FreeBSD.org
 WRKSRC=		${WRKDIR}/makeindex
 MAN1=		makeindex.1
 
-do-build: 
+do-build:
 	@(cd ${WRKSRC}/src-3.0/regexp; make)
 	@(cd ${WRKSRC}/src-3.0; make)
 
-do-install: 
+do-install:
 	@${MKDIR} ${PREFIX}/share/texmf/makeindx
 	@(cd ${WRKSRC}/src-3.0/regexp; make)
 	@(cd ${WRKSRC}/src-3.0; make install)

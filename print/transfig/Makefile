@@ -2,11 +2,11 @@
 # Date created:		9 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/print/transfig/Makefile,v 1.25 2000/01/27 02:58:53 taoka Exp $
+# $FreeBSD: ports/print/transfig/Makefile,v 1.26 2000/04/09 17:41:27 cpiazza Exp $
 #
 
-PORTNAME=	transfig 
-PORTVERSION=	3.2.3 
+PORTNAME=	transfig
+PORTVERSION=	3.2.3
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		ftp://www-epb.lbl.gov/xfig/

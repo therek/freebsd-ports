@@ -2,11 +2,11 @@
 # Date created:		24 Mar 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/print/magicfilter/Makefile,v 1.2 1999/08/31 01:45:01 peter Exp $
+# $FreeBSD: ports/print/magicfilter/Makefile,v 1.3 2000/04/09 17:40:41 cpiazza Exp $
 #
 
-PORTNAME=	magicfilter 
-PORTVERSION=	1.2 
+PORTNAME=	magicfilter
+PORTVERSION=	1.2
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= system/printing

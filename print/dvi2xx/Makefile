@@ -2,11 +2,11 @@
 # Date created:         14 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.16 1999/08/31 06:49:47 mharo Exp $
+# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.17 2000/04/09 17:39:51 cpiazza Exp $
 #
 
-PORTNAME=	dvi2xx 
-PORTVERSION=	0.51.a9 
+PORTNAME=	dvi2xx
+PORTVERSION=	0.51.a9
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	dviware

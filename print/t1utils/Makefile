@@ -2,11 +2,11 @@
 # Date created:        2 September 1999
 # Whom:                mwm
 #
-# $FreeBSD: ports/print/t1utils/Makefile,v 1.4 1999/09/07 17:29:07 fenner Exp $
+# $FreeBSD: ports/print/t1utils/Makefile,v 1.5 2000/04/09 17:41:18 cpiazza Exp $
 #
 
-PORTNAME=	t1utils 
-PORTVERSION=	1.14 
+PORTNAME=	t1utils
+PORTVERSION=	1.14
 CATEGORIES=	print
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/type/
 

@@ -2,11 +2,11 @@
 # Date created:			24 Jul, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/print/enscript-letter/Makefile,v 1.9 1999/08/31 01:44:42 peter Exp $
+# $FreeBSD: ports/print/enscript-letter/Makefile,v 1.10 2000/04/09 17:40:03 cpiazza Exp $
 #
 
-PORTNAME=	enscript-${PAPERSIZE} 
-PORTVERSION=	1.6.1 
+PORTNAME=	enscript-${PAPERSIZE}
+PORTVERSION=	1.6.1
 CATEGORIES=	print
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	enscript
