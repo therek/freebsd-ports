@@ -3,7 +3,7 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gxditview/Makefile,v 1.14 1999/08/31 06:45:33 mharo Exp $
+# $FreeBSD: ports/japanese/gxditview/Makefile,v 1.15 1999/11/01 00:03:53 steve Exp $
 #
 
 DISTNAME=	groff-1.10
@@ -12,7 +12,7 @@ CATEGORIES=	japanese print
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	groff
 
-PATCH_SITES=	ftp://ftp.ae.keio.ac.jp/pub/GNU/ \
+PATCH_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1996/jan/ \
 		ftp://ftp.hipecs.hokudai.ac.jp/pub/GNU/jp/
 PATCHFILES=	jgroff-0.99.diff.gz
 PATCH_DIST_ARGS=?	-d ${WRKSRC}/.. --forward --quiet -E -p1
