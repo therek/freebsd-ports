@@ -3,7 +3,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.24 1999/08/31 06:41:15 mharo Exp $
+# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.25 1999/10/23 08:28:45 vanilla Exp $
 #
 
 DISTNAME=	DBI-1.13
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	DBI
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/RPC/pServer.pm:${PORTSDIR}/net/p5-pRPC
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/RPC/PlServer.pm:${PORTSDIR}/net/p5-PlRPC
 
 USE_PERL5=	YES
 CONFIGURE_ARGS=	PREFIX=${PREFIX}
