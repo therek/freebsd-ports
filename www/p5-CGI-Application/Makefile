@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 10:52:22 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-CGI-Application/Makefile,v 1.4 2001/06/07 20:22:39 dwcjr Exp $
+# $FreeBSD: ports/www/p5-CGI-Application/Makefile,v 1.5 2001/07/07 04:28:32 dwcjr Exp $
 #
 
 PORTNAME=	CGI-Application
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	petef@databits.net
 
 BUILD_DEPENDS=	${SITE_PERL}/HTML/Template.pm:${PORTSDIR}/www/p5-HTML-Template \
-		${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI
+		${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI-modules
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}

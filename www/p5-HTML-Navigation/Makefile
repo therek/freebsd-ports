@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 12:02:56 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-HTML-Navigation/Makefile,v 1.1 2001/01/03 23:30:19 will Exp $
+# $FreeBSD: ports/www/p5-HTML-Navigation/Makefile,v 1.2 2001/03/01 06:37:50 vanilla Exp $
 #
 
 PORTNAME=	HTML-Navigation
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI \
+BUILD_DEPENDS=	${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI-modules \
 		${SITE_PERL}/URI/Escape.pm:${PORTSDIR}/net/p5-URI
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
