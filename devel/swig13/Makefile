@@ -3,7 +3,7 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.15 1999/08/25 05:47:17 obrien Exp $
 #
 
 DISTNAME=	swig1.1p5
@@ -16,13 +16,13 @@ MASTER_SITES=	ftp://ftp.cs.utah.edu/pub/beazley/SWIG/ \
 MAINTAINER=	erich@FreeBSD.ORG
 
 BUILD_DEPENDS=	${PREFIX}/bin/python:${PORTSDIR}/lang/python \
-		${PREFIX}/bin/tclsh8.1:${PORTSDIR}/lang/tcl81
+		${PREFIX}/bin/tclsh8.0:${PORTSDIR}/lang/tcl80
 
 USE_PERL5=	YES
 WRKSRC=		${WRKDIR}/SWIG1.1p5
 GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=	--with-tclincl=${PREFIX}/include/tcl8.1/ \
-		--with-tcllib=${PREFIX}/lib/tcl8.1/
+CONFIGURE_ARGS=	--with-tclincl=${PREFIX}/include/tcl8.0/ \
+		--with-tcllib=${PREFIX}/lib/tcl8.0/
 
 ALL_TARGET=	all runtime
 
