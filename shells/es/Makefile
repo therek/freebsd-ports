@@ -2,16 +2,17 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/shells/es/Makefile,v 1.9 2000/04/23 22:59:11 kris Exp $
+# $FreeBSD: ports/shells/es/Makefile,v 1.10 2000/06/04 04:37:24 hoek Exp $
 #
 
 PORTNAME=	es
 PORTVERSION=	0.9.b1
+PORTREVISION=	1
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sys.toronto.edu/pub/es/
 DISTNAME=	es-0.9-beta1
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	rittle@latour.rsch.comm.mot.com
 
 GNU_CONFIGURE=	yes
 
