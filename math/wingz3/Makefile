@@ -3,7 +3,7 @@
 # Date created:         Wed Nov 27 09:15:10 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/wingz/Makefile,v 1.8 1999/08/25 07:17:34 obrien Exp $
 #
 
 DISTNAME=	Wingz-142
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/financial/spreadsheet
 EXTRACT_SUFX=	.tgz
 
-MANINAINER=	erich@FreeBSD.org
+MAINTAINER=	erich@FreeBSD.org
 
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
