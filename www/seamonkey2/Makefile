@@ -2,7 +2,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.49 2000/10/25 05:15:45 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.50 2000/10/27 09:24:08 sobomax Exp $
 #
 
 PORTNAME=	mozilla
@@ -14,7 +14,9 @@ DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
 
-LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit
+LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit \
+		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		png.4:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -29,6 +31,7 @@ CONFIGURE_ARGS=					\
 		--disable-cpp-rtti		\
 		--disable-debug			\
 		--disable-idltool		\
+		--disable-jar-packaging		\
 		--disable-md			\
 		--disable-pedantic		\
 		--disable-xterm-updates		\
