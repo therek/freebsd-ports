@@ -2,10 +2,7 @@
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD: ports/editors/yudit/Makefile,v 1.8 2000/02/18 09:18:04 taoka Exp $
-#
-#
-#
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.9 2000/04/14 06:21:02 asami Exp $
 #
 
 PORTNAME=	yudit
