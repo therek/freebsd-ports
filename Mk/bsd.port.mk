@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.346 2000/08/15 22:39:00 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.347 2000/08/25 10:17:39 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -653,7 +653,8 @@ OPENSSLLIB=		${OPENSSLBASE}/lib
 OPENSSLINC=		${OPENSSLBASE}/include
 MAKE_ENV+=		OPENSSLLIB=${OPENSSLLIB} OPENSSLINC=${OPENSSLINC} \
 				OPENSSLBASE=${OPENSSLBASE} OPENSSLDIR=${OPENSSLDIR}
-RESTRICTED=		"Contains cryptography."
+### crypto
+#RESTRICTED=		"Contains cryptography."
 .endif
 
 .if defined(EMACS_PORT_NAME)
