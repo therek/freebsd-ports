@@ -2,20 +2,37 @@
 # Date created:         3 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xinvaders/Makefile,v 1.15 2001/01/16 17:30:41 sobomax Exp $
+# $FreeBSD: ports/games/xinvaders/Makefile,v 1.16 2001/01/27 05:40:09 will Exp $
 #
 
 PORTNAME=	xinvaders
-PORTVERSION=	1.1
+PORTVERSION=	2.1.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade/invaders
-DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
 NO_CDROM=	"don't sell for profit"
-USE_IMAKE=	yes
+
+USE_X_PREFIX=	yes
+USE_AUTOMAKE=	yes
+AUTOMAKE_ARGS=	--include-deps
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -lintl"
+CONFIGURE_ARGS=	--enable-scorefile=${PREFIX}/share/xinvaders/xinvaders.scores
+
 MAN6=		xinvaders.6
+
+post-install:
+	${INSTALL_DATA} ${FILESDIR}/Vaders.ad ${PREFIX}/lib/X11/app-defaults/Vaders
+	@${MKDIR} ${PREFIX}/share/xinvaders
+	@${ECHO} '0' > ${PREFIX}/share/xinvaders/xinvaders.scores
+	@${CHOWN} root:games ${PREFIX}/bin/xinvaders
+	@${CHMOD} 2555 ${PREFIX}/bin/xinvaders
+	@${CHOWN} root:games ${PREFIX}/share/xinvaders/xinvaders.scores
+	@${CHMOD} 0660 ${PREFIX}/share/xinvaders/xinvaders.scores
 
 .include <bsd.port.mk>
