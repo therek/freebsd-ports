@@ -2,14 +2,14 @@
 # Date created:        1 August 2000
 # Whom:                Bill Fumerola <billf@chimesnet.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/btc/Makefile,v 1.1.1.1 2000/07/30 20:36:48 billf Exp $
 #
 
 PORTNAME=	btc
 PORTVERSION=	258
 CATEGORIES=	audio
 MASTER_SITES=	http://www.harmony-central.com/Bass/
-DISTNAME=	${PORTNAME}${PORTVERSION}${EXTRACT_SUFX}
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	billf@FreeBSD.org
 
