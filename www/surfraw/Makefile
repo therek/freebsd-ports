@@ -2,10 +2,10 @@
 # Date created:                2000-08-03
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD: ports/www/surfraw/Makefile,v 1.2 2000/09/17 19:05:55 ade Exp $
+# $FreeBSD: ports/www/surfraw/Makefile,v 1.3 2001/02/05 15:33:49 olgeni Exp $
 
 PORTNAME=	surfraw
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.3
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	surfraw
