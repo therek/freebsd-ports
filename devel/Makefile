@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.273 2000/03/08 03:52:13 green Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.274 2000/03/25 21:10:06 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -20,6 +20,7 @@
     SUBDIR += bugbuddy
     SUBDIR += c_c++_reference
     SUBDIR += c_c++_reference-i18n
+    SUBDIR += cbrowser
     SUBDIR += cccc
     SUBDIR += cdecl
     SUBDIR += cdk
