@@ -3,7 +3,7 @@
 # Date created: 	13 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.13 2000/09/22 10:30:30 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	electricfence
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.perens.com/pub/ElectricFence/Beta/  \
 MASTER_SITE_SUBDIR=	devel/lang/c
 DISTNAME=	ElectricFence-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 INSTALLS_SHLIB=
 CFLAGS+=	-D__USE_BSD
