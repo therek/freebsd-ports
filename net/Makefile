@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.400 2000/09/09 11:23:17 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.401 2000/09/14 16:56:04 ume Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -131,6 +131,7 @@
     SUBDIR += mars_nwe
     SUBDIR += merlinmon
     SUBDIR += micq
+    SUBDIR += mmucl
     SUBDIR += mopd
     SUBDIR += mpd
     SUBDIR += mpd-netgraph
