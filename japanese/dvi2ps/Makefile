@@ -2,11 +2,11 @@
 # Date created:		15 Sep 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.13 2000/04/11 14:13:03 knu Exp $
+# $FreeBSD: ports/japanese/dvi2ps/Makefile,v 1.14 2000/10/08 10:20:30 asami Exp $
 #
 
 PORTNAME=	dvi2ps
-PORTVERSION=	2.0
+PORTVERSION=	3.0
 CATEGORIES=	japanese print
 MASTER_SITES=	ftp://ftp.math.s.chiba-u.ac.jp/tex/
 DISTNAME=	${PORTNAME}-${PORTVERSION}j
