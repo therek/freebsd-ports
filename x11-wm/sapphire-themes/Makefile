@@ -2,11 +2,11 @@
 # Date created:		2000-09-04
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire-themes/Makefile,v 1.1 2000/09/19 18:09:52 ade Exp $
+# $FreeBSD: ports/x11-wm/sapphire-themes/Makefile,v 1.2 2000/10/02 05:39:35 trevor Exp $
 #
 
 PORTNAME=	sapphire-themes
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://jpj.net/~trevor/${PORTNAME}/
 EXTRACT_SUFX=	.tar
