@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.19 2001/10/15 13:33:15 roam Exp $
 bin/omshell
 etc/dhclient.conf.sample
 @exec [ -f %D/etc/dhclient.conf ] || touch %D/etc/dhclient.conf
@@ -31,6 +31,7 @@ sbin/dhclient
 sbin/dhclient-script
 sbin/dhcpd
 sbin/dhcrelay
+%%PORTDOCS%%share/doc/isc-dhcp3/ANONCVS
 %%PORTDOCS%%share/doc/isc-dhcp3/CHANGES
 %%PORTDOCS%%share/doc/isc-dhcp3/COPYRIGHT
 %%PORTDOCS%%share/doc/isc-dhcp3/README
