@@ -2,7 +2,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.24 2001/01/16 17:30:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdrdao
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cdrdao
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	lebel@lebel.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	antlr:${PORTSDIR}/devel/pccts \
 		dlg:${PORTSDIR}/devel/pccts
