@@ -2,11 +2,11 @@
 # Date created:				27 Apr 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tcllib/Makefile,v 1.1 2000/06/09 03:35:20 will Exp $
 #
 
 PORTNAME=		tcllib
-PORTVERSION= 		0.4
+PORTVERSION= 		0.8
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcllib
@@ -19,14 +19,20 @@ NO_BUILD=	YES
 
 PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
-MANN=	graph.n queue.n stack.n tree.n math.n ncgi.n pop3.n profiler.n html.n
+MANN=	counter.n ftpd.n graph.n html.n javascript.n math.n \
+	ncgi.n nntp.n pop3.n profiler.n queue.n stack.n textutil.n \
+	tree.n uri.n
 MANCOMPRESSED=	no
 
 do-install:
-	${TAR} -xz --exclude "${PORTNAME}${PORTVERSION}/[RI]*" \
+	${TAR} -xpz --exclude "${PORTNAME}${PORTVERSION}/[RI]*" \
+		--exclude install.sh \
 		-C ${LOCALBASE}/lib -f ${DISTDIR}/${DISTFILES}
 	${MV} `find ${LOCALBASE}/lib/${PORTNAME}${PORTVERSION} \
 			-type f -name '*.n'` \
 		${LOCALBASE}/man/mann/
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
