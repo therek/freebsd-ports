@@ -2,7 +2,7 @@
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/plotmtv/Makefile,v 1.6 1999/08/25 06:14:39 obrien Exp $
+# $FreeBSD: ports/graphics/plotmtv/Makefile,v 1.7 2000/04/14 10:47:02 asami Exp $
 #
 
 PORTNAME=	plotmtv
@@ -17,12 +17,13 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	giffunip@asme.org
 
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES=	yes
 ALL_TARGET=	World
 MAN1=		plotmtv.1
 
+post-patch:
+	find ${WRKSRC} -name \*.c | xargs ${PERL} -pi.malloc.h -e 's/<malloc.h>/<stdlib.h>/'
+
 post-install:
-	@${INSTALL_MAN} ${WRKSRC}/Docs/plotmtv.man ${PREFIX}/man/man1/plotmtv.1
 .if !defined(NOPORTDOCS)
 	@${MKDIR}  ${PREFIX}/share/doc/plotmtv/Tests
 	@${INSTALL_DATA} ${WRKSRC}/Docs/DataFormat.ps.Z \
