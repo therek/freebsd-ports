@@ -2,10 +2,10 @@
 # Date created:                   Mon Jan  8 2001
 # Whom:                           clive
 #
-# $FreeBSD: ports/chinese/bitchx/Makefile,v 1.1 2001/01/08 18:27:15 clive Exp $
+# $FreeBSD: ports/chinese/bitchx/Makefile,v 1.2 2001/01/10 07:12:41 clive Exp $
 #
 
-MASTERDIR=      ${.CURDIR}/../../irc/bitchx
+MASTERDIR=	${.CURDIR}/../../irc/bitchx
 EXTRA_PATCHES=	${.CURDIR}/files/patch-source::input.c \
 		${.CURDIR}/files/patch-include::config.h \
 		${.CURDIR}/files/patch-source::screen.c
@@ -23,4 +23,3 @@ PKGNAMEPREFIX:= ${PKGNAMEPREFIX}tw-
 CATEGORIES=	chinese irc
 
 MAINTAINER=	clive@FreeBSD.org
-
