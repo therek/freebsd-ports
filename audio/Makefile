@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.114 1999/11/18 09:20:02 dburr Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.115 1999/12/09 20:43:15 jim Exp $
 #
 
     SUBDIR += amp
@@ -15,6 +15,7 @@
     SUBDIR += dap
     SUBDIR += esound
     SUBDIR += gmixer
+    SUBDIR += gnapster
     SUBDIR += gnomeaudio
     SUBDIR += gnomemedia
     SUBDIR += gogo
