@@ -2,23 +2,21 @@
 # Date created:		4 April 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-asv/Makefile,v 1.3 2001/05/03 14:40:42 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asv
 PORTVERSION=	0.4
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc python
 MASTER_SITES=	http://tratt.net/laurie/python/asv/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	wjv@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-PYTHON_VERSION=	python2.1
+USE_PYTHON=	yes
 
 ASV_BASEDIR=	${PREFIX}/lib/${PYTHON_VERSION}/site-packages
-ASV_DOCDIR=	${PREFIX}/share/doc/py-asv
-ASV_EGDIR=	${PREFIX}/share/examples/py-asv
 
 do-build:
 	@${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${WRKSRC}
@@ -30,13 +28,13 @@ do-install:
 	@${INSTALL_SCRIPT} ${WRKDIR}/asv.sh ${PREFIX}/bin/asv
 	@${INSTALL_DATA} ${WRKSRC}/ASV.* ${ASV_BASEDIR}
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${ASV_DOCDIR}
+	@${MKDIR} ${DOCSDIR}
 .for docfile in INSTALL README THANKS
-	@${INSTALL_DATA} ${WRKSRC}/${docfile} ${ASV_DOCDIR}
+	@${INSTALL_DATA} ${WRKSRC}/${docfile} ${DOCSDIR}
 .endfor
-	@${MKDIR} ${ASV_EGDIR}
+	@${MKDIR} ${EXAMPLESDIR}
 .for egfile in asv_example.* example_data.csv
-	@${INSTALL_DATA} ${WRKSRC}/${egfile} ${ASV_EGDIR}
+	@${INSTALL_DATA} ${WRKSRC}/${egfile} ${EXAMPLESDIR}
 .endfor
 .endif
 
