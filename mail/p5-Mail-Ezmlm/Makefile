@@ -2,13 +2,14 @@
 # Date Created: 			18 May 2000
 # Whom: 				Guy Antony Halse <guy@rucus.ru.za.za>
 #
-# $FreeBSD: ports/mail/p5-Mail-Ezmlm/Makefile,v 1.1 2000/08/09 19:09:02 will Exp $
+# $FreeBSD: ports/mail/p5-Mail-Ezmlm/Makefile,v 1.2 2001/02/05 15:10:58 olgeni Exp $
 #
 
 PORTNAME=	Mail-Ezmlm
-PORTVERSION=	0.02.1
+PORTVERSION=	0.03.1
 CATEGORIES=	mail perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
+		ftp://rucus.ru.ac.za/pub/mail/ezmlm/
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 DISTNAME=	Ezmlm-${PORTVERSION}
@@ -17,6 +18,8 @@ MAINTAINER=	guy-ezmlm@rucus.ru.ac.za
 
 BUILD_DEPENDS=	${EZMLM_DIR}/bin/ezmlm-idx:${PORTSDIR}/mail/ezmlm-idx
 
+IS_INTERACTIVE=	YES
+
 EZMLM_DIR?=	${LOCALBASE}
 USE_PERL5=	YES
 MAN3=		Mail::Ezmlm.3
@@ -24,7 +27,7 @@ MAN3=		Mail::Ezmlm.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 # For this version, since it is a bugfix
-WRKSRC=		${WRKDIR}/Ezmlm-0.02
+WRKSRC=		${WRKDIR}/Ezmlm-0.03
 
 do-configure:
 .if defined(BATCH)
