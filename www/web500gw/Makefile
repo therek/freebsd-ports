@@ -3,24 +3,24 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/web500gw/Makefile,v 1.6 1999/08/31 02:43:25 peter Exp $
 #
 
-DISTNAME=	web500gw-2.1b2
+DISTNAME=	web500gw-2.1b3
 CATEGORIES=	www net
 MASTER_SITES=	ftp://ftp.tu-chemnitz.de/pub/Local/urz/web500gw/ \
-		http://www.tu-chemnitz.de/ftp-home/pub/Local/urz/web500gw/
-EXTRACT_SUFX=	.tgz
+		http://www.tu-chemnitz.de/ftp-home/pub/Local/urz/web500gw/ \
+		ftp://ftp.ntua.gr/pub/net/ldap/web500gw/ \
+		ftp://ftp.imms.de/pub/unix/networking/ldap/
 
-MAINTAINER=	bjn@visi.com
+MAINTAINER=	karl.dietz@triplan.com
 
-BROKEN=		build
-
-BUILD_DEPENDS=	${PREFIX}/lib/libldap.a:${PORTSDIR}/net/ldap
+BUILD_DEPENDS=	${PREFIX}/lib/libldap.a:${PORTSDIR}/net/openldap
 
 INSTDIR=	${PREFIX}/bin
 
-MAKE_ENV=	PLATFORMCFLAGS="${CFLAGS} -DUSE_SYSCONF" \
+MAKE_ENV=	PLATFORMCFLAGS="${CFLAGS} -DUSE_SYSCONF -I${PREFIX}/include" \
+		LDFLAGS=-L${PREFIX}/lib \
 		INSTDIR=${INSTDIR} \
 		WEB500GWDIR=${WEB500GWDIR} \
 		MANDIR=${MANPREFIX}/man/man8 \
