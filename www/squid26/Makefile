@@ -2,19 +2,19 @@
 # Date created:		Tue Mar 27 14:56:08 CEST 2001
 # Whom:			Adrian Chadd <adrian@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squid24/Makefile,v 1.84 2001/08/28 16:48:35 adrian Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	squid
 PORTVERSION=	2.4
-PORTREVISION=	6
+PORTREVISION=	7
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://ftp.squid-cache.org/pub/squid-2/STABLE/ \
 	ftp://www.unimelb.edu.au/pub/cwis/servers/unix/squid/squid-2/STABLE/ \
 	ftp://sunsite.auc.dk/pub/infosystems/squid/squid-2/STABLE/ \
 	ftp://ftp.net.lut.ac.uk/squid/squid-2/STABLE/
-DISTNAME=	squid-2.4.STABLE2
+DISTNAME=	squid-2.4.STABLE3
 EXTRACT_SUFX=	-src.tar.gz
 
 PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.4/bugs/
