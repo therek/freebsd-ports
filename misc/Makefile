@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/misc/Makefile,v 1.351 2001/05/31 13:14:34 sobomax Exp $
 #
 
     SUBDIR += 40upgrade
@@ -20,6 +20,7 @@
     SUBDIR += bbjd
     SUBDIR += biblereader
     SUBDIR += bidwatcher
+    SUBDIR += birthday
     SUBDIR += bogosort
     SUBDIR += bottlerocket
     SUBDIR += boxes
