@@ -4,11 +4,11 @@
 #
 # Based heavily on work by jfieber
 #
-# $FreeBSD: ports/textproc/docbook/Makefile,v 1.10 2000/04/09 21:52:21 cpiazza Exp $
+# $FreeBSD: ports/textproc/docbook/Makefile,v 1.11 2000/07/25 10:46:10 asmodai Exp $
 #
 
 PORTNAME=	docbook
-PORTVERSION= 	1.1
+PORTVERSION= 	1.2
 CATEGORIES=     textproc
 MASTER_SITES=   # empty
 DISTFILES=	# empty
@@ -25,13 +25,6 @@ RUN_DEPENDS=	${PREFIX}/share/sgml/iso8879:${PORTSDIR}/textproc/iso8879 \
 EXTRACT_ONLY=   # empty
 NO_BUILD=       yes
 
-do-install:     # empty
-
-post-install:
-	${ECHO} 'CATALOG "2.4.1/catalog"' >  ${PREFIX}/share/sgml/docbook/catalog
-	${ECHO} 'CATALOG "3.0/catalog"'   >> ${PREFIX}/share/sgml/docbook/catalog
-	${ECHO} 'CATALOG "3.1/catalog"'   >> ${PREFIX}/share/sgml/docbook/catalog
-	${ECHO} 'CATALOG "4.0/catalog"'   >> ${PREFIX}/share/sgml/docbook/catalog
-	${ECHO} 'CATALOG "4.1/catalog"'   >> ${PREFIX}/share/sgml/docbook/catalog
+do-install:	#empty
 
 .include <bsd.port.mk>
