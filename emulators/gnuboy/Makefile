@@ -3,11 +3,11 @@
 # Date created:			Mar 11, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/gnuboy/Makefile,v 1.4 2001/05/31 16:31:23 ijliao Exp $
+# $FreeBSD: ports/emulators/gnuboy/Makefile,v 1.5 2001/07/01 17:00:28 ijliao Exp $
 #
 
 PORTNAME=	gnuboy
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	emulators games
 MASTER_SITES=	http://gnuboy.unix-fu.org/src/ \
 		http://brightrain.aerifal.cx/~laguna/src/
@@ -18,7 +18,6 @@ LIB_DEPENDS=	vga.1:${PORTSDIR}/graphics/svgalib \
 		SDL-1.1.3:${PORTSDIR}/devel/sdl12
 
 USE_XLIB=	yes
-
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
@@ -30,5 +29,11 @@ post-patch:
 .for file in sys/sdl/sdl.c sys/sdl/keymap.c
 	@${PERL} -pi -e "s|SDL/|SDL11/|g" ${WRKSRC}/${file}
 .endfor
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/docs/* ${DOCSDIR}
+.endif
 
 .include <bsd.port.mk>
