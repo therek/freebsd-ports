@@ -3,7 +3,7 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.6 2000/01/22 10:37:44 mharo Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.7 2000/01/22 18:25:50 sumikawa Exp $
 #
 
 DISTNAME=	thttpd-2.13
@@ -39,7 +39,7 @@ do-install:
 
 post-install: message
 
-post-fetch: config-message
+pre-configure: config-message
 
 post-build: config-message
 
