@@ -3,13 +3,14 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/astro/ssystem/Makefile,v 1.9 2000/01/21 19:29:02 obrien Exp $
+# $FreeBSD: ports/astro/ssystem/Makefile,v 1.10 2000/01/22 02:36:01 asami Exp $
 #
 
 DISTNAME=		ssystem-1.6
 CATEGORIES=		astro
-MASTER_SITES=		http://www.geocities.com/SiliconValley/Station/6492/ \
-			http://www.msu.edu/user/kamelkev/
+MASTER_SITES=		http://plasma.gsfc.nasa.gov/Ssystem/ \
+			http://www.wam.umd.edu/~kamelkev/Ssystem/ \
+			http://www.wam.umd.edu/~kamelkev/
 
 MAINTAINER=		andy@icc.surw.chel.su
 
