@@ -3,13 +3,13 @@
 # Date created:			Jun 19, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/devel/libformat/Makefile,v 1.2 2001/06/19 05:25:57 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libformat
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	devel
-MASTER_SITES=	http://members.chello.at/oberzalek/development/
+MASTER_SITES=	http://home.pages.at/kingleo/development/
 DISTNAME=	Format-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
