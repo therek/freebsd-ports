@@ -2,21 +2,21 @@
 # Date created:		22 September 1998
 # Whom:			Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.35 2000/06/16 08:18:19 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.36 2000/06/16 21:52:15 asami Exp $
 #
 
 PORTNAME=	blt
-PORTVERSION= 	2.4s
-CATEGORIES=	x11-toolkits tk82
-MASTER_SITES=	ftp://ftp.tcltk.com/aa004735/pub/blt/ \
+PORTVERSION= 	2.4u
+CATEGORIES=	x11-toolkits tk83
+MASTER_SITES=	ftp://tcltk.sourceforge.net/pub/tcltk/blt/ \
 		ftp://ftp.csl.sony.co.jp/pub/kjc/ttt-libs/
 DISTNAME=	BLT${PORTVERSION}
 
 MAINTAINER=	kjc@csl.sony.co.jp
 
-LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 
-WRKSRC=		${WRKDIR}/blt2.4s
+WRKSRC=		${WRKDIR}/blt2.4u
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 
