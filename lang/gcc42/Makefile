@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.92 2000/12/05 21:36:59 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.93 2000/12/13 02:26:23 obrien Exp $
 #
 
 SNAPDATE=	2000-12-11
@@ -81,6 +81,7 @@ pre-configure:
 	@touch ${SRCDIR}/gcc/configure
 	@touch ${SRCDIR}/gcc/cstamp-h.in
 	@${MKDIR} ${CONFIGURE_WRKSRC}
+	${RM} -rf ${SRCDIR}/libjava
 
 pre-build:
 	cd ${SRCDIR} ; contrib/gcc_update --touch
