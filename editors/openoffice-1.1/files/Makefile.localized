@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-1.1/files/Makefile.localized,v 1.2 2004/08/05 04:46:33 maho Exp $
+# $FreeBSD$
 
 ################################################################
 .if defined(LOCALIZED_LANG)
@@ -102,7 +102,6 @@ LANG_EXT=	49
 L10NHELP=	helpcontent_${LANG_EXT}_unix.tgz
 LANG_CONFIGURE_ARG=	GER
 COMMENT=	Office-Suite mit Textverarbeitung, Tabellenkalkulation, Datenbank und Praesentationsprogramm
-PKGMESSAGE=     ${FILESDIR}/pkg-message.de
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "el"
