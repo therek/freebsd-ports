@@ -2,7 +2,7 @@
 # Date created:         26 Oct 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/lang/yorick/Makefile,v 1.5 1999/11/26 18:34:42 steve Exp $
+# $FreeBSD: ports/lang/yorick/Makefile,v 1.6 2000/04/12 06:21:15 obrien Exp $
 #
 
 PORTNAME=	yorick
@@ -16,7 +16,7 @@ PATCH_SITES=	ftp://ftp-icf.llnl.gov/pub/Yorick/
 PATCHFILES=	yorick-1.4.diff.gz
 PATCH_DIST_STRIP=-p1
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 HAS_CONFIGURE=	yes
