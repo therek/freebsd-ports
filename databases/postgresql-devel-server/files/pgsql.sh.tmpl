@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql7/files/pgsql.sh.tmpl,v 1.10 2001/04/21 11:34:33 vanilla Exp $
+# $FreeBSD: ports/databases/postgresql7/files/pgsql.sh.tmpl,v 1.11 2001/04/25 17:17:56 olgeni Exp $
 #
 # For postmaster startup options, edit $PGDATA/postgresql.conf
 
@@ -18,7 +18,8 @@ start)
 
 stop)
     [ -x ${PGBIN}/pg_ctl ] && {
-	exec su -l pgsql -c 'exec %%PREFIX%%/%%PG_PREFIX%%bin/pg_ctl stop -m fast'
+	su -l pgsql -c 'exec %%PREFIX%%/%%PG_PREFIX%%bin/pg_ctl stop -s -m fast'
+	echo -n ' pgsql'
     }
     ;;
 
