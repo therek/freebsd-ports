@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.318 2000/11/30 15:07:30 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.319 2000/11/30 15:08:23 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -146,6 +146,7 @@
     SUBDIR += lookup-emacs20
     SUBDIR += lookup-mule
     SUBDIR += lookup-xemacs
+    SUBDIR += lsd-fpw
     SUBDIR += lynx
     SUBDIR += lynx-current
     SUBDIR += lyx
