@@ -2,7 +2,7 @@
 # Date created:		7 Jun 1997
 # Whom:			igor@zynaps.ru
 #
-# $FreeBSD: ports/mail/cucipop/Makefile,v 1.12 2001/02/10 05:08:31 kris Exp $
+# $FreeBSD: ports/mail/cucipop/Makefile,v 1.13 2001/02/10 05:17:40 kris Exp $
 #
 # NOTE: APOP works only for virtual hosts as designed!
 #       Virtual hosts works only with Berkeley DB2.
@@ -10,7 +10,7 @@
 
 PORTNAME=	cucipop
 PORTVERSION=	1.31
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/
 
@@ -19,7 +19,7 @@ MASTER_SITES=	ftp://ftp.informatik.rwth-aachen.de/pub/packages/cucipop/
 .if ${OSVERSION} >= 400014
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
 		ftp://ftp.pasta.cs.uit.no/pub/IPv6/misc/
-PATCHFILES=	cucipop-1.31-v6-20010128.diff.gz
+PATCHFILES=	cucipop-1.31-v6-20010223.diff.gz
 PATCH_DIST_STRIP=	-p1
 .endif
 
