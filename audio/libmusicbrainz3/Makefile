@@ -2,21 +2,21 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.4 2000/11/05 18:19:24 dougb Exp $
+# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.5 2001/01/25 14:46:05 ijliao Exp $
 #
 
 PORTNAME=	musicbrainz
-PORTVERSION=	1.0.0.pre6
+PORTVERSION=	1.0.0
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.musicbrainz.org/pub/musicbrainz/
-DISTNAME=	${PORTNAME}-1.0.0pre6
 
 MAINTAINER=	roman@xpert.com
 
-USE_NEWGCC=	yes
-INSTALLS_SHLIB=	yes
+USE_AUTOCONF=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_NEWGCC=	yes
+INSTALLS_SHLIB=	yes
 
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib"
 
@@ -30,6 +30,8 @@ HAVE_VORBIS=	yes
 .endif
 
 post-extract:
-	${TOUCH} ${WRKSRC}/stamp-h.in
+	@${RM} ${WRKSRC}/config.sub ${WRKSRC}/config.guess ;\
+	${LN} -s ${LOCALBASE}/share/autoconf/config.* ${WRKSRC}/ ;\
+	${PERL} -pi -e 's/-ldl//g' ${WRKSRC}/examples/Makefile.*
 
 .include <bsd.port.mk>
