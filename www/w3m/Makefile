@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.11 2000/02/10 06:10:32 kris Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.12 2000/02/15 06:58:44 kris Exp $
 #
 
 DISTNAME=	w3m-${W3M_VER}
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 WRKSRC=		${WRKDIR}/w3m
 MAN1=		w3m.1
 MANLANG=	""
+CFLAGS=		-pipe
 
 TARGET=		${WRKSRC}/config.h
 DOCS=		FAQ.html HISTORY MANUAL.html README \
