@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.75 1999/11/26 23:18:39 steve Exp $
+# $FreeBSD: ports/security/Makefile,v 1.76 1999/12/01 05:42:11 foxfair Exp $
 #
 
     SUBDIR += bjorb
@@ -6,6 +6,7 @@
     SUBDIR += bugs
     SUBDIR += cfs
     SUBDIR += checkpassword
+    SUBDIR += chrootuid
     SUBDIR += cops
     SUBDIR += crack
     SUBDIR += donkey
