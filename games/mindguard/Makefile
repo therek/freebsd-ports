@@ -2,7 +2,7 @@
 # Date created:		27 July 2000
 # Whom:			kris
 #
-# $FreeBSD: ports/games/mindguard/Makefile,v 1.3 2000/11/26 06:20:19 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mindguard
@@ -14,7 +14,8 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	kris@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 ALL_TARGET=	# empty
 

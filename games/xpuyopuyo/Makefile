@@ -2,7 +2,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.17 2001/01/19 04:48:57 green Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpuyopuyo
@@ -16,8 +16,8 @@ MAINTAINER=	yinjieh@csie.nctu.edu.tw
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_GTK=	yes
 USE_AUTOCONF=	yes
+USE_GNOMENG=	yes
 WANT_GNOME=	yes
 
 MAN6=		xpuyopuyo.6
@@ -30,8 +30,9 @@ LIB_DEPENDS+=	mikmod.2:${PORTSDIR}/audio/libmikmod
 CONFIGURE_ARGS+=--with-libmikmod-prefix=${LOCALBASE}
 .endif
 
-.if defined(HAVE_GNOME)
-USE_GNOME=	yes
+.if ${HAVE_GNOME:Mgtk12}!=""
+USE_GNOME+=	gtk12
+PKGNAMESUFFIX=	-gtk
 .else
 CONFIGURE_ARGS+=--without-gnome
 .endif

@@ -2,7 +2,7 @@
 # Date created:		9 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/hex/Makefile,v 1.10 2000/10/05 06:57:35 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hex
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.earth.li/projectpurple/files/
 MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 MAKE_ENV=	GRAPHICPATH="${GRAPHICPATH}" LEVELPATH="${LEVELPATH}"
 
 GRAPHICPATH=	${PREFIX}/share/hex/graphics

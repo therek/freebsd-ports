@@ -2,12 +2,13 @@
 # Date created:         29 Feb 2000
 # Whom:                 sheldonh
 #
-# $FreeBSD: ports/games/freeciv-gtk/Makefile,v 1.3 2000/04/26 06:56:18 asami Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-gtk
 MASTERDIR=	${.CURDIR}/../freeciv
 
-WITH_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 .include "${MASTERDIR}/Makefile"

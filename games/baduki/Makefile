@@ -2,7 +2,7 @@
 # Date created:        11 December 1999
 # Whom:                spcoltri@unm.edu
 #
-# $FreeBSD: ports/games/baduki/Makefile,v 1.5 2000/10/10 04:56:40 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	baduki
@@ -14,7 +14,8 @@ MAINTAINER=	spcoltri@omcl.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"

@@ -2,7 +2,7 @@
 # Date created:			29 February 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/corewars/Makefile,v 1.15 2000/10/03 16:27:16 jim Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	corewars
@@ -14,7 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	jim@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 MAKE_ENV=	FREEBSD_CFLAGS="${CFLAGS}"
 

@@ -2,7 +2,7 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/garith/Makefile,v 1.6 2000/04/14 06:42:57 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	garith
@@ -14,7 +14,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	# empty
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 WRKSRC=		${WRKDIR}/garith
 
 do-install:
