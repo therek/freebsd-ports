@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.21 2001/04/01 17:15:54 olgeni Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.22 2001/04/03 05:57:03 nsayer Exp $
 #
 
 PORTNAME?=	xmame
@@ -176,11 +176,13 @@ LIB_DEPENDS=    SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 MAKE_ENV+=	SDL_CONFIG=${SDL_CONFIG}
 DISPLAY_METHOD=	SDL
+.if !defined(WITH_SDL)
 pre-everything::
 	@${ECHO_MSG} "===> If you don't want ${MAMEMESS:U} to be built with SDL support,"
 	@${ECHO_MSG} "     use \"make WITH_SDL=no\""
-	@${ECHO_MSG} "===> You can also build ${MAMEMESS:U} with OpenGL support."
-	@${ECHO_MSG} "     use \"make WITH_GL=yes\" for this"
+	@${ECHO_MSG} "===> If you want to build ${MAMEMESS:U} with OpenGL support for vector games,"
+	@${ECHO_MSG} "     use \"make WITH_GL=yes\""
+.endif
 .else
 DISPLAY_METHOD=	x11
 .endif
@@ -203,8 +205,12 @@ do-configure:
 		-e "s@GLLIBS=.-ldl@GLLIBS= ${PTHREAD_LIBS}@g" \
 			${WRKSRC}/makefile.unix.sed > ${WRKSRC}/makefile.unix
 	${PERL} -pi -e 's@SDL/@SDL11/@' ${WRKSRC}/src/unix/video-drivers/SDL.c
+.if ${XMAMEVERSION} != "0.37b12.1"
 	${PERL} -pi -e 's@png.h@../../png.h@' \
 				${WRKSRC}/src/unix/video-drivers/glexport.c
+	${PERL} -pi -e 's@malloc.h@stdlib.h@' \
+				${WRKSRC}/src/unix/video-drivers/gljpg.c
+.endif
 
 post-build:
 	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} SDL_VIDEODRIVER=aalib \

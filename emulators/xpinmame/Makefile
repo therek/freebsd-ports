@@ -2,7 +2,7 @@
 # Date created:				Fri Mar 30 11:00:42 CEST 2001
 # Whom:					stijn@win.tue.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/xpinmame/Makefile,v 1.1 2001/04/01 17:22:26 olgeni Exp $
 #
 
 PORTNAME=	xpinmame
@@ -19,6 +19,6 @@ DESCR=		${.CURDIR}/pkg-descr
 
 MAMEMESS=	pinmame
 XMAMEVERSION=	0.37b13.1
-PINMAMEVERSION=	0.99b
+PINMAMEVERSION=	0.99b1
 
 .include "${MASTERDIR}/Makefile"
