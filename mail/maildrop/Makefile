@@ -2,11 +2,11 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.15 2001/07/22 05:00:08 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	maildrop
-PORTVERSION=	1.3.4
+PORTVERSION=	1.3.6
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
