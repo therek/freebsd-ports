@@ -2,7 +2,7 @@
 # Date created:				Di  18 Jul 2000 22:36:34 CEST
 # Whom:					alex
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.36 2000/07/18 21:27:21 alex Exp $
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.37 2000/07/19 07:31:23 alex Exp $
 #
 
 PORTNAME=	qpopper
@@ -31,7 +31,8 @@ MAN8=		qpopauth.8 qpopper.8
 
 post-patch:
 	cd ${WRKSRC} && \
-		${PERL} -pi.orig -e "s:/usr/local:${PREFIX}:g" man/popper.8
+		${PERL} -pi.orig -e "s:/usr/local:${PREFIX}:g" \
+			man/popper.8 man/popauth.8
 
 do-install:
 	cd ${WRKSRC} && \
