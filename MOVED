@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.454 2004/06/18 16:33:19 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.455 2004/06/18 20:10:54 brooks Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1155,3 +1155,4 @@ japanese/ptex-pkfonts360||2004-06-18|no longer maintained
 japanese/ptex-pkfonts400||2004-06-18|no longer maintained
 japanese/ptex-pkfonts600||2004-06-18|no longer maintained
 misc/gpt|misc/gpt31|2004-06-18|repocopy to preserve version 3.1 for misc/globus2
+textproc/p5-Search-OpenFTS|textproc/openfts|2004-06-19|duplicate of textproc/openfts
