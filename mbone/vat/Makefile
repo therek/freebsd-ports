@@ -2,11 +2,12 @@
 # Date created:		2 November 1996
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/vat/Makefile,v 1.13 1999/11/29 03:42:59 steve Exp $
+# $FreeBSD: ports/mbone/vat/Makefile,v 1.14 2000/04/14 08:49:28 asami Exp $
 #
 
 PORTNAME=	vat
 PORTVERSION=	4.0b2
+PORTREVISION=	1
 CATEGORIES=	mbone tk82
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vat/alpha-test/
 DISTFILES=	vatsrc-4.0b2.tar.gz
