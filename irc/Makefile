@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.25 2001/04/18 07:33:58 sada Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.26 2001/05/06 10:15:34 knu Exp $
 #
 
     SUBDIR += bitchx
@@ -16,6 +16,7 @@
     SUBDIR += ircd-hybrid
     SUBDIR += iroffer
     SUBDIR += irssi
+    SUBDIR += liece-dcc
     SUBDIR += liece-emacs20
     SUBDIR += liece-xemacs21-mule
     SUBDIR += kvirc
