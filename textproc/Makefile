@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.105 2000/08/07 17:55:57 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.106 2000/08/10 18:49:54 knu Exp $
 #
 
     SUBDIR += agrep
@@ -30,6 +30,7 @@
     SUBDIR += docproj
     SUBDIR += dsssl-docbook-modular
     SUBDIR += dtd-catalogs
+    SUBDIR += eruby
     SUBDIR += expat
     SUBDIR += fr-ispell
     SUBDIR += freegrep
