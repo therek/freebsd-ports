@@ -2,7 +2,7 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.2 2001/01/29 15:22:24 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.3 2001/01/29 23:28:50 ache Exp $
 #
 
 PORTNAME=       mnogosearch
@@ -24,6 +24,8 @@ CONFIGURE_ARGS= --enable-shared \
 		--sysconfdir=${PREFIX}/etc/mnogosearch \
 		--localstatedir=/var/mnogosearch
 
+# To enable Cyrillic charset guesser, define this
+# Guesser mode ignores charsets comes from HTTP header or <META> tag
 .if defined(WITH_MNOGO_GUESSER)
 CONFIGURE_ARGS+= --enable-charset-guesser
 .endif
@@ -37,8 +39,6 @@ LIB_DEPENDS=            msql.1:${PORTSDIR}/databases/msql
 CONFIGURE_ARGS+=	--with-msql=${LOCALBASE}
 
 .elif defined(WITH_MNOGO_MYSQL)
-# default to mysql
-
 LIB_DEPENDS=		mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 CONFIGURE_ARGS+=	--with-mysql=${LOCALBASE}
 
