@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop gkrellmd
-# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.4 2003/08/31 10:27:18 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.5 2003/08/31 18:48:18 ume Exp $
 
 # PROVIDE: gkrellmd
 # REQUIRE: DAEMON
@@ -21,9 +21,9 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE 
 #
-gkrellmd_enable="NO"				# Enable gkrellmd
+[ -z "$gkrellmd_enable" ] && gkrellmd_enable="NO"	# Enable gkrellmd
 #gkrellmd_program="${prefix}/sbin/gkrellmd"	# Location of gkrellmd
-gkrellmd_flags="-d"				# Flags to gkrellmd program
+[ -z "$gkrellmd_flags" ] && gkrellmd_flags="-d"	# Flags to gkrellmd program
 
 . %%RC_SUBR%%
 
