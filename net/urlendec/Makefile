@@ -2,7 +2,7 @@
 # Date created:				25 October 2000
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/urlendec/Makefile,v 1.1 2001/04/07 07:11:21 will Exp $
 #
 
 PORTNAME=	urlendec
@@ -13,6 +13,10 @@ MASTER_SITES=	http://www.whizkidtech.net/fports/
 MAINTAINER=	adam@whizkidtech.net
 
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
+
+.if ${MACHINE_ARCH} != "i386"
+FORBIDDEN=		'Uses nasm which only builds ia32 object files'
+.endif
 
 BINARIES=	urlencode urldecode
 DOCFILES=	index.html rfc1738.txt
