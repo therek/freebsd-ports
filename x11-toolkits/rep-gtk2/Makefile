@@ -3,7 +3,7 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.7 2000/02/18 09:34:27 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.8 2000/03/08 12:11:16 nakai Exp $
 #
 
 DISTNAME=	rep-gtk-0.9.1
@@ -14,7 +14,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 .if !defined(NOGNOME)
-LIB_DEPENDS+=	glade.2:${PORTSDIR}/devel/libglade \
+LIB_DEPENDS+=	glade.3:${PORTSDIR}/devel/libglade \
 		gnome.3:${PORTSDIR}/x11/gnomelibs
 .endif
 BUILD_DEPENDS=	rep:${PORTSDIR}/lang/librep

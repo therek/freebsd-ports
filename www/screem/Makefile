@@ -3,7 +3,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/screem/Makefile,v 1.1 1999/12/27 02:18:02 steve Exp $
 #
 
 DISTNAME=	screem-0.1.92
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.screem.org/src/
 
 MAINTAINER=	andrews@technologist.com
 
-LIB_DEPENDS=	glade.2:${PORTSDIR}/devel/libglade \
+LIB_DEPENDS=	glade.3:${PORTSDIR}/devel/libglade \
 		pthread.13:${PORTSDIR}/devel/pth-devel
 
 LIBGLADE_CONFIG?=	${LOCALBASE}/bin/libglade-config

@@ -3,7 +3,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.23 2000/01/28 18:31:30 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.24 2000/02/23 00:09:38 ade Exp $
 #
 
 DISTNAME=	gnumeric-0.48
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		python:${PORTSDIR}/lang/python
 LIB_DEPENDS=	gnomeprint.5:${PORTSDIR}/print/gnomeprint \
-		glade.2:${PORTSDIR}/devel/libglade
+		glade.3:${PORTSDIR}/devel/libglade
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -3,7 +3,7 @@
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.1 2000/02/23 20:37:44 ade Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.2 2000/02/24 15:38:49 ade Exp $
 #
 
 DISTNAME=	bug-buddy-0.7
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	stable/sources/bug-buddy
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
-		glade.2:${PORTSDIR}/devel/libglade
+		glade.3:${PORTSDIR}/devel/libglade
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
