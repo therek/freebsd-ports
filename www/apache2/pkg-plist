@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.67 2004/07/30 17:04:46 clement Exp $
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.68 2004/08/05 21:46:16 clement Exp $
 @unexec if cmp -s %D/etc/apache2/highperformance.conf %D/etc/apache2/highperformance-std.conf; then rm -f %D/etc/apache2/highperformance.conf; fi
 etc/apache2/highperformance-std.conf
 @exec [ -f %B/highperformance.conf ] || cp %B/%f %B/highperformance.conf
@@ -14,7 +14,7 @@ etc/apache2/mime.types-dist
 @unexec if cmp -s %D/etc/apache2/ssl.conf %D/etc/apache2/ssl-std.conf; then rm -f %D/etc/apache2/ssl.conf; fi
 etc/apache2/ssl-std.conf
 @exec [ -f %B/ssl.conf ] || cp %B/%f %B/ssl.conf
-etc/rc.d/000.apache2libs.sh
+%%PORTS_APR%%etc/rc.d/000.apache2libs.sh
 etc/rc.d/apache2.sh
 include/apache2/ap_compat.h
 include/apache2/ap_config.h
