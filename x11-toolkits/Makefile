@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.150 2001/09/03 18:46:32 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.151 2001/09/21 05:59:19 knu Exp $
 #
 
     SUBDIR += FWF
@@ -59,6 +59,7 @@
     SUBDIR += libjtoolbar
     SUBDIR += libjtree
     SUBDIR += linux-gtk
+    SUBDIR += linux-openmotif
     SUBDIR += neXtaw
     SUBDIR += open-motif
     SUBDIR += open-motif-devel
