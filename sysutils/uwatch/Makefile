@@ -2,11 +2,11 @@
 # Date created:		3 November 1999
 # Whom:			James Howard <howardjp@wam.umd.edu>
 #
-# $FreeBSD: ports/sysutils/uwatch/Makefile,v 1.2 2000/04/09 19:08:43 cpiazza Exp $
+# $FreeBSD: ports/sysutils/uwatch/Makefile,v 1.3 2000/04/22 10:13:31 mharo Exp $
 #
 
 PORTNAME=	uwatch
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/uwatch/ \
 		http://www.wam.umd.edu/~howardjp/software/uwatch/ \
