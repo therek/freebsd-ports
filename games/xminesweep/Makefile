@@ -2,7 +2,7 @@
 # Date created:		31 Januar 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/games/xminesweep/Makefile,v 1.12 1999/09/09 13:13:55 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xminesweep
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.netlab.is.tsukuba.ac.jp/pub/X/our_collections/games/ \
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	janek@gaja.ipan.lublin.pl
+MAINTAINER=	ports@FreeBSD.Org
 
 USE_IMAKE=	yes
 MAN1=		xminesweep.1

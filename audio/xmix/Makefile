@@ -2,7 +2,7 @@
 # Date created:		30 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/audio/xmix/Makefile,v 1.8 2000/04/08 21:24:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmix
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	apps/sound/mixers
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	xmix-2.1.mixers.patch
 
-MAINTAINER=	janek@gaja.ipan.lublin.pl
+MAINTAINER=	ports@FreeBSD.Org
 
 USE_IMAKE=	yes
 WRKSRC=		$(WRKDIR)/xmix
