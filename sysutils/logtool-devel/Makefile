@@ -3,7 +3,7 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.4 2001/01/21 04:26:21 ijliao Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.5 2001/01/28 07:00:05 ijliao Exp $
 #
 
 PORTNAME=	logtool
@@ -24,7 +24,9 @@ post-patch:
 .for file in logtool/Makefile logtail/Makefile
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${file}
 .endfor
-	@${PERL} -pi -e "s|/etc|${PREFIX}/etc|g" ${WRKSRC}/logtool/config.h
+.for file in logtool/config.h conf/logtool.conf
+	@${PERL} -pi -e "s|/etc|${PREFIX}/etc|g" ${WRKSRC}/${file}
+.endfor
 
 post-install:
 .if !defined(NOPORTDOCS)
