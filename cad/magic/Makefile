@@ -2,7 +2,7 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/magic/Makefile,v 1.16 1999/08/25 04:52:33 obrien Exp $
+# $FreeBSD: ports/cad/magic/Makefile,v 1.17 2000/04/08 23:20:02 mharo Exp $
 #
 
 PORTNAME=	magic
@@ -18,7 +18,7 @@ USE_GMAKE=	yes
 
 BINS=	magic ext2sim magicusage net2ir extcheck X11Helper ext2spice
 MAN1=	ext2spice.1 extcheck.1 magic.1 magicusage.1		\
-	ext2sim.1 net2ir.1 rsleeper.1 sleeper.1
+	ext2sim.1 net2ir.1 rsleeper.1 sleeper.1 fsleeper.1
 MAN3=	mpack.3 dqueue.3 extflat.3 geometry.3 hash.3 heap.3 libmalloc.3	\
 	list.3 magicutils.3 malloc.3 path.3 runstats.3 set.3 show.3	\
 	stack.3 string.3
