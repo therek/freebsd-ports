@@ -1,10 +1,11 @@
-# $FreeBSD: ports/biology/Makefile,v 1.18 2000/07/28 14:05:59 nbm Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.19 2000/07/31 12:12:23 nbm Exp $
 #
 
     SUBDIR += babel
     SUBDIR += chemeq
     SUBDIR += clustalw
     SUBDIR += deft
+    SUBDIR += emboss
     SUBDIR += gperiodic
     SUBDIR += hmmer
     SUBDIR += kinemage
