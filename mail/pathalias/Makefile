@@ -2,7 +2,7 @@
 # Date created:		03 Dec 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/pathalias/Makefile,v 1.7 2001/06/24 04:28:24 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pathalias
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.lan-ks.de/pub/approved/ \
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dinoex@FreeBSD.org
+COMMENT=	Mail routing tools
 
 ALL_TARGET=	pathalias
 

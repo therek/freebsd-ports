@@ -2,7 +2,7 @@
 # Date created:         23 Mar 2001
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/pgpin/Makefile,v 1.2 2001/06/24 04:28:52 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgpin
@@ -13,6 +13,7 @@ DISTNAME=	pgp263in${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dinoex@FreeBSD.org
+COMMENT=	PGP International version - improved for use in IN-CA
 
 WRKSRC=		${WRKDIR}/pgp263in/src
 

@@ -2,7 +2,7 @@
 # Date created:         19.04.1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/devel/gperf/Makefile,v 1.5 2000/11/30 21:18:18 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gperf
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gperf
 
 MAINTAINER=	dinoex@FreeBSD.org
+COMMENT=	Generates perfect hash functions for sets of keywords
 
 GNU_CONFIGURE=	yes
 MAN1=		gperf.1
