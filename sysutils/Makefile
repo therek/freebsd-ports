@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.124 2000/07/10 12:09:29 steve Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.125 2000/07/15 18:51:16 sada Exp $
 #
 
     SUBDIR += LPRng
@@ -54,6 +54,7 @@
     SUBDIR += lsof
     SUBDIR += manck
     SUBDIR += mei
+    SUBDIR += memtest
     SUBDIR += mkisofs
     SUBDIR += monitord
     SUBDIR += muse
