@@ -1,15 +1,15 @@
 # New ports collection makefile for:	DocBook XML DTD
-# Version required:	3.1.4
+# Version required:	3.1.5
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.4 1999/08/31 02:09:09 peter Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.5 1999/08/31 06:51:11 mharo Exp $
 #
 
-DISTNAME=	db3x314
-PKGNAME=	docbook-xml-3.1.4
+DISTNAME=	db3x315
+PKGNAME=	docbook-xml-3.1.5
 CATEGORIES=	textproc
-MASTER_SITES=	http://nwalsh.com/docbook/xml/3.1.4/
+MASTER_SITES=	http://nwalsh.com/docbook/xml/3.1.5/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	kuriyama@FreeBSD.org
