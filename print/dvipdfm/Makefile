@@ -2,13 +2,13 @@
 # Date created:		16 January 2000
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.3 2000/04/09 17:39:54 cpiazza Exp $
+# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.4 2000/04/09 17:49:29 cpiazza Exp $
 #
 
 PORTNAME=		dvipdfm
-PORTVERSION=		0.12.7b
+PORTVERSION=		0.13
 CATEGORIES=		print
-MASTER_SITES=		http://odo.kettering.edu/dvipdfm/
+MASTER_SITES=		http://gaspra.kettering.edu/dvipdfm/
 
 MAINTAINER=		stephen@math.missouri.edu
 
@@ -19,8 +19,8 @@ RUN_DEPENDS=		kpsewhich:${PORTSDIR}/print/teTeX
 WRKSRC=			${WRKDIR}/dvipdfm
 
 GNU_CONFIGURE=		yes
-CONFIGURE_ENV+=		CPPFLAGS=-I${PREFIX}/include \
-			CFLAGS=-I${PREFIX}/include\
+CONFIGURE_ENV+=		CPPFLAGS="${CXXFLAGS} -I${PREFIX}/include" \
+			CFLAGS="${CFLAGS} -I${PREFIX}/include" \
 			LDFLAGS=-L${PREFIX}/lib
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share
 
