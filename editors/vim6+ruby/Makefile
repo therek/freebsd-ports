@@ -2,7 +2,7 @@
 # Date created:		22 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/editors/vim6+ruby/Makefile,v 1.9 2001/08/13 04:43:11 knu Exp $
+# $FreeBSD$
 #
 
 MASTERDIR=	${.CURDIR}/../vim
@@ -14,7 +14,7 @@ PKGNAMESUFFIX=	+ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-COMMENT=	${.CURDIR}/pkg-comment
+COMMENTFILE=	${.CURDIR}/pkg-comment
 
 #EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 

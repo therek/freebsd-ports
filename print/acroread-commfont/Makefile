@@ -1,7 +1,7 @@
 # New ports collection makefile for:	acroread-commfont
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.11 2000/10/08 10:22:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	acroread
@@ -42,7 +42,7 @@ RUN_DEPENDS=	acroread4:${PORTSDIR}/print/acroread4
 .else
 ###### For slave ports ##############################
 ## Use a local directory of the slave port!!
-COMMENT=	${.CURDIR}/pkg-comment
+COMMENTFILE=	${.CURDIR}/pkg-comment
 DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
 FILESDIR=	${.CURDIR}/files

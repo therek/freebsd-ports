@@ -2,14 +2,14 @@
 # Date created:		1 October 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.5 2001/01/24 15:56:40 keith Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese editors
 
 MAINTAINER=	keith@FreeBSD.org
 
-COMMENT=	${.CURDIR}/pkg-comment
+COMMENTFILE=	${.CURDIR}/pkg-comment
 PLIST=		${.CURDIR}/pkg-plist
 PKGMESSAGE=	${.CURDIR}/pkg-message
 

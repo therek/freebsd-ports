@@ -2,13 +2,13 @@
 # Date created:		11 January 1999
 # Whom:				HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/ng-canna/Makefile,v 1.3 2000/04/11 14:15:46 knu Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-canna
 
 MASTERDIR=	${.CURDIR}/../ng
-COMMENT=	${.CURDIR}/pkg-comment
+COMMENTFILE=	${.CURDIR}/pkg-comment
 DESCR=		${.CURDIR}/pkg-descr
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
