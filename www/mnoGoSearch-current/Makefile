@@ -2,7 +2,7 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.1 2001/01/29 10:45:06 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.2 2001/01/29 15:22:24 ache Exp $
 #
 
 PORTNAME=       mnogosearch
@@ -36,23 +36,21 @@ CONFIGURE_ARGS+=	--with-pgsql=${LOCALBASE}/pgsql
 LIB_DEPENDS=            msql.1:${PORTSDIR}/databases/msql
 CONFIGURE_ARGS+=	--with-msql=${LOCALBASE}
 
-.else
+.elif defined(WITH_MNOGO_MYSQL)
 # default to mysql
 
 LIB_DEPENDS=		mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 CONFIGURE_ARGS+=	--with-mysql=${LOCALBASE}
 
-.if !defined(WITH_MNOGO_MYSQL)
+.else
 pre-fetch:
 	@${ECHO}
-	@${ECHO} "Defaulting to mnoGoSearch with mysql support."
+	@${ECHO} "Defaulting to mnoGoSearch with built-in database."
 	@${ECHO}
-	@${ECHO} "You may alternately build mnoGoSearch with either msql or"
-	@${ECHO} "postgresql support by invoking make with WITH_MNOGO_MSQL=yes or"
-	@${ECHO} "WITH_MNOGO_PGSQL=yes respectively."
+	@${ECHO} "You may alternately build mnoGoSearch with either msql, mysql or"
+	@${ECHO} "postgresql support by invoking make with WITH_MNOGO_MSQL=yes,"
+	@${ECHO} "WITH_MNOGO_MYSQL=yes or WITH_MNOGO_PGSQL=yes respectively."
 	@${ECHO}
-.endif
-
 .endif
 
 pre-install:
