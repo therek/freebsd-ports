@@ -2,7 +2,7 @@
 # Date created:		10 November 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/net/dgd-lpmud/Makefile,v 1.24 2000/04/09 18:10:55 cpiazza Exp $
+# $FreeBSD: ports/net/dgd-lpmud/Makefile,v 1.25 2000/10/08 10:22:28 asami Exp $
 #
 
 PORTNAME=	dgd-lpmud
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/lpmud/drivers/dgd/lpc/ \
 		ftp://ftp.dreamlabs.com/pub/mud/dgd/mudlibs/
 DISTFILES=	2.4.5-for-1.1.tgz
 
-MAINTAINER=	adam@veda.is
+MAINTAINER=	ports@FreeBSD.org
 
 NO_PACKAGE=	"depends on DGD, which is NO_CDROM"
 RESTRICTED=	"no monetary gain, tarball OK for CDROM"

@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/gn/Makefile,v 1.28 2001/02/05 15:33:22 olgeni Exp $
+# $FreeBSD: ports/www/gn/Makefile,v 1.29 2001/02/14 20:19:43 lioux Exp $
 #
 
 PORTNAME=	gn
@@ -10,7 +10,7 @@ PORTVERSION=	2.24
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.acns.nwu.edu/pub/gn/
 
-MAINTAINER=	adam@veda.is
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${WAISDIR}/bin/waisindex:${PORTSDIR}/net/wais
 

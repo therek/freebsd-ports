@@ -2,7 +2,7 @@
 # Date created:         4 May 1995
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/wn/Makefile,v 1.36 2001/01/08 18:51:40 trevor Exp $
+# $FreeBSD: ports/www/wn/Makefile,v 1.37 2001/02/05 15:33:57 olgeni Exp $
 #
 
 PORTNAME=	wn
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_LOCAL}	# ftp://ftp.acns.nwu.edu/pub/wn/
 MASTER_SITE_SUBDIR=	trevor
 
-MAINTAINER=	adam@veda.is
+MAINTAINER=	ports@FreeBSD.org
 
 IS_INTERACTIVE=
 NO_PACKAGE=	"Hostname compiled in"

@@ -2,7 +2,7 @@
 # Date created:		17 June 1996
 # Whom:			adam
 #
-# $FreeBSD: ports/net/dgd-net/Makefile,v 1.37 2000/04/15 01:40:07 asami Exp $
+# $FreeBSD: ports/net/dgd-net/Makefile,v 1.38 2000/10/08 10:22:28 asami Exp $
 #
 
 PORTNAME=	dgd-net
@@ -27,7 +27,7 @@ PATCHFILES=	net-10.dgd-1.1.gz \
 		1.1p5.gz \
 		1.1p6.gz
 
-MAINTAINER=	adam@veda.is
+MAINTAINER=	ports@FreeBSD.org
 
 NO_CDROM=	"no distribution to corporate environment"
 RESTRICTED=	"license required for commercial use"
