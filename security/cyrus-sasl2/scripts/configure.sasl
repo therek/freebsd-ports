@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.4 2000/12/19 11:35:15 jedgar Exp $
+# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.5 2001/01/21 15:40:44 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -73,7 +73,7 @@ echo "PREFIX=	${PREFIX}"
 while [ "$1" ]; do
 	case $1 in
 		\"DB3\")
-			echo "LIB_DEPENDS+=	db3.1:\${PORTSDIR}/databases/db3"
+			echo "LIB_DEPENDS+=	db3.2:\${PORTSDIR}/databases/db3"
 			echo "CONFIGURE_ARGS+=--with-dblib=berkeley"
 			;;
 		\"MySQL\")
