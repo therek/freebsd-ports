@@ -2,12 +2,12 @@
 # Date created:			11 August 2001
 # Whom:				dd
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/http_ping/Makefile,v 1.1 2001/08/11 18:55:26 dd Exp $
 #
 
 PORTNAME=	http_ping
 PORTVERSION=	20010709
-CATEGORIES=	net
+CATEGORIES=	net www
 MASTER_SITES=	http://www.acme.com/software/http_ping/
 DISTNAME=	${PORTNAME}_09jul2001
 
