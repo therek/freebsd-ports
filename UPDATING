@@ -56,7 +56,7 @@ upgrades.
       above will automatically replace quanta with kdewebdev, if you have
       quanta installed.
 
-  4.) Reinstall any KDE ports you deleted in step 1. Note that the kdeaddons-
+  4.) Reinstall any KDE ports you deleted in step 2. Note that the kdeaddons-
       kontact-plugins (net/kontact-plugins), kdepim-kpilot (palm/kpilot) and 
       quanta (www/quanta) ports/packages do not exist anymore and cannot be
       reinstalled.
@@ -779,4 +779,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.65 2004/08/29 17:56:30 obrien Exp $
+$FreeBSD: ports/UPDATING,v 1.66 2004/08/30 19:55:08 lofi Exp $
