@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.395 2001/08/16 12:21:45 wjv Exp $
+# $FreeBSD: ports/www/Makefile,v 1.396 2001/08/16 14:02:17 wjv Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -76,6 +76,7 @@
     SUBDIR += grail
     SUBDIR += gtkhtml
     SUBDIR += harvest
+    SUBDIR += horde
     SUBDIR += hotjava
     SUBDIR += htdump
     SUBDIR += html2wml
