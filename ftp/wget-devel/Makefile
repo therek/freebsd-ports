@@ -2,7 +2,7 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.42 2001/08/25 05:44:46 sf Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.43 2001/09/11 13:17:09 sobomax Exp $
 #
 
 PORTNAME=	wget
@@ -42,6 +42,8 @@ MAN1=		wget.1
 post-patch:
 # made by broken KAME patch. Already contacted.
 	@${RM} -f ${WRKSRC}/po/zh.po*
+# we don't need to run autoconf.
+	${TOUCH} ${WRKSRC}/configure
 
 pre-build:
 	@${RM} -f ${WRKSRC}/doc/wget.info*
