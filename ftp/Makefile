@@ -1,4 +1,4 @@
-# $FreeBSD: ports/ftp/Makefile,v 1.26 2001/04/23 15:46:32 roam Exp $
+# $FreeBSD: ports/ftp/Makefile,v 1.27 2001/05/20 03:15:24 will Exp $
 #
 
     SUBDIR += IglooFTP
@@ -45,6 +45,7 @@
     SUBDIR += ruby-curl
     SUBDIR += sftp
     SUBDIR += spegla
+    SUBDIR += vcheck
     SUBDIR += vsftpd
     SUBDIR += wget
     SUBDIR += wu-ftpd
