@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.105 2000/09/17 12:43:34 jedgar Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.106 2000/09/17 18:41:59 ume Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -10,22 +10,21 @@
 # want fetchmailconf to work, define WITH_X11
 
 PORTNAME=	fetchmail
-PORTVERSION= 	5.5.2
+PORTVERSION=	5.5.3
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.ccil.org/pub/esr/fetchmail/
 
 MAINTAINER=	ve@sci.fi
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-
 .if defined(WITH_X11)
 RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 .endif
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS \
+CONFIGURE_ARGS=	--enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS \
 		--enable-nls --with-hesiod=no
-CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
 		CFLAGS="-I${LOCALBASE}/include ${CFLAGS}"
 MAN1=		fetchmail.1
@@ -50,7 +49,7 @@ CONFIGURE_ARGS += --with-kerberos=/usr/include
 CONFIGURE_ARGS += --with-kerberos5=${KRB5_HOME}
 .endif
 
-FDOC=   ${PREFIX}/share/doc/fetchmail
+FDOC=	${PREFIX}/share/doc/fetchmail
 
 pre-patch:
 	@${CP} -f  /usr/include/md5.h ${WRKSRC}
