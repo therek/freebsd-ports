@@ -2,11 +2,11 @@
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.12 2000/07/25 07:11:07 sobomax Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.13 2000/08/04 16:11:12 ade Exp $
 #
 
 PORTNAME=	gftp
-PORTVERSION=	2.0.7a
+PORTVERSION=	2.0.7b
 CATEGORIES=	ftp
 MASTER_SITES=	http://gftp.seul.org/ \
 		ftp://gftp.seul.org/pub/gftp/
