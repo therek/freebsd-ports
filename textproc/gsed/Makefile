@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/textproc/gsed/Makefile,v 1.5 2001/06/09 12:59:34 roam Exp $
+# $FreeBSD: ports/textproc/gsed/Makefile,v 1.6 2001/08/30 03:58:35 lioux Exp $
 #
 
 PORTNAME=	sed
@@ -14,25 +14,16 @@ PKGNAMEPREFIX=	g
 
 MAINTAINER=	clefevre@citeweb.net
 
-#
 # Global variables
 #
 
 GNU_CONFIGURE=	yes
-
-# sed's configure seems to be buggy !
-# CONFIGURE_ARGS=	--program-prefix=g
-
 USE_GMAKE=	yes
-
-.if make(do-install)
-# DESTDIR isn't honored. fake it w/ prefix.
+# PREFIX isn't honored. force it w/ prefix.
 MAKE_ARGS=	prefix=${PREFIX}
-.endif
 
 MAN1=		gsed.1
 
-#
 # Local variables
 #
 
@@ -41,7 +32,6 @@ PATCH_SUBDIRS=	. doc lib sed
 SAMP_FILES=	dc.sed
 SAMP_DIR=	${PREFIX}/share/examples/${PKGBASE}
 
-#
 # Post-configure
 #
 
@@ -52,7 +42,6 @@ patch-makefiles:
 	@${PERL} -pi.fbsd -e 's/s,x,x,/s,^,g,/' ${WRKSRC}/${subdir}/Makefile
 .endfor
 
-#
 # Post-install
 #
 
