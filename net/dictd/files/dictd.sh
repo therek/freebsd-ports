@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/dictd/files/dictd.sh,v 1.4 2004/08/29 07:08:03 clive Exp $
 #
 # PROVIDE: dictd
 # REQUIRE: DAEMON
@@ -10,7 +10,7 @@
 # dictd_enable="YES"
 #
 
-. /etc/rc.subr
+. %%RC_SUBR%%
 
 name=dictd
 rcvar=`set_rcvar`
