@@ -2,15 +2,19 @@
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/agbrowser/Makefile,v 1.1 2001/04/07 08:25:09 will Exp $
 #
 
 PORTNAME=	agbrowser
-PORTVERSION=	0.9
+PORTVERSION=	0.96
 CATEGORIES=	audio
 MASTER_SITES=	http://www.geocities.com/uallloveme/OSS/AGBrowser/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lioux@FreeBSD.org
+
+# USE_AUTO{CONF,MAKE} breaks it
+BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf \
+		automake:${PORTSDIR}/devel/automake
 
 USE_KDELIBS_VER=2
 GNU_CONFIGURE=	yes
