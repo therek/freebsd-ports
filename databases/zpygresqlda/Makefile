@@ -1,8 +1,8 @@
 # New ports collection makefile for: ZPyGreSQLDA
 # Date created:		07 Sep 2000
-# Whom:			makeport.pl
+# Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.1 2000/09/07 13:12:34 nbm Exp $
 #
 
 PORTNAME=	zpygresqlda
