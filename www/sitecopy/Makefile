@@ -2,7 +2,7 @@
 # Date created:		15 January 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/www/sitecopy/Makefile,v 1.21 2001/02/24 12:45:52 olgeni Exp $
+# $FreeBSD: ports/www/sitecopy/Makefile,v 1.22 2001/03/17 09:36:42 olgeni Exp $
 #
 
 PORTNAME=	sitecopy
@@ -14,10 +14,11 @@ MASTER_SITES=	http://www.lyra.org/sitecopy/
 MAINTAINER=	olgeni@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		neon.12:${PORTSDIR}/www/neon
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CC="${CC} -I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib -lintl"
+CONFIGURE_ARGS=	--enable-libxml
 USE_GMAKE=	yes
 
 MAN1=		sitecopy.1
