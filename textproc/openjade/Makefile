@@ -3,7 +3,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.19 1999/12/02 04:06:21 obrien Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.20 2000/02/11 01:52:20 kuriyama Exp $
 #
 
 DISTNAME=	jade-1.2.1
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.jclark.com/pub/jade/
 
 PATCH_SITES=	http://ftp.debian.org/debian/dists/unstable/main/source/text/
 PATCHFILES=	jade_1.2.1-13.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	jfieber@FreeBSD.org
 
@@ -19,7 +20,7 @@ MAINTAINER=	jfieber@FreeBSD.org
 BROKEN=		nsgmls coredumps in static constructors
 .endif
 
-PATCH_DIST_STRIP?=	-p1
+USE_GMAKE=	YES
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog
