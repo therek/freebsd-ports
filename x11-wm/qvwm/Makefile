@@ -1,12 +1,12 @@
 # New ports collection makefile for:   qvwm
-# Version required:    1.1
+# Version required:    1.1.2
 # Date created:        2 January 1997
 # Whom:                Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.26 1999/10/08 02:50:49 nakai Exp $
+# $FreeBSD: ports/x11-wm/qvwm/Makefile,v 1.27 1999/10/08 23:04:34 asami Exp $
 #
 
-DISTNAME=	qvwm-1.1.1
+DISTNAME=	qvwm-1.1.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://www.qvwm.org/pub/qvwm/
 
