@@ -2,24 +2,28 @@
 # Date created:				Sun Jul 29 10:25:08 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/rain/Makefile,v 1.1 2001/07/30 14:56:29 lioux Exp $
 #
 
 PORTNAME=	rain
-PORTVERSION=	1.2.7.b3
+PORTVERSION=	1.2.8
 CATEGORIES=	security net
 MASTER_SITES=	http://www.tenebrous.com/rain/files/
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/7.b/7b/}
 
 MAINTAINER=	pat@databits.net
 
 GNU_CONFIGURE=	yes
 
+MANCOMPRESSED=	yes
+MAN1=		${PORTNAME}.1
+
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/rain ${PREFIX}/bin
+	@${INSTALL_MAN} ${WRKSRC}/man/${PORTNAME}.1.gz \
+		${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCSDIR}
-.for file in BUGS CHANGES DISCLAIMER README TODO doc/EXAMPLES 
+.for file in BUGS CHANGES DISCLAIMER README TODO
 	@${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
