@@ -3,13 +3,13 @@
 # Date created:		12 August 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/misc/qclock/Makefile,v 1.6 1999/09/09 03:03:18 cpiazza Exp $
+# $FreeBSD: ports/misc/qclock/Makefile,v 1.7 1999/09/24 04:32:50 cpiazza Exp $
 #
 
 DISTNAME=	qclock
 PKGNAME=	qclock-1.0
 CATEGORIES=	misc
-MASTER_SITES=	ftp://peloton.runet.edu/pub/distfiles/
+MASTER_SITES=	http://peloton.runet.edu/distfiles/
 
 MAINTAINER=	brett@peloton.runet.edu
 
