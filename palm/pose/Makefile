@@ -2,7 +2,7 @@
 # Date created:			Sat May  6 14:03:08 CEST 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/pose/Makefile,v 1.1 2000/05/06 18:54:25 dirk Exp $
 #
 
 PORTNAME=	pose
@@ -21,5 +21,10 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--x-includes=${X11BASE}/include \
 		--x-libraries=${X11BASE}/lib
+
+post-install:
+	${MKDIR} ${PREFIX}/share/pose
+	${INSTALL_DATA} "${WRKSRC}/../ROMTransfer/Source/ROM Transfer.prc" ${PREFIX}/share/pose
+	@${SED} -e 's#/usr/local#${PREFIX}#g' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
