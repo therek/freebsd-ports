@@ -2,7 +2,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.4 2000/09/25 12:21:42 asami Exp $
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.5 2001/01/07 17:49:50 will Exp $
 #
 
 PORTNAME=	bkmrkconv
@@ -11,7 +11,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.dcs.warwick.ac.uk/~csube/bkmrkconv/
 DISTFILES=	${PORTNAME}.tar.gz
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 NO_BUILD=	yes

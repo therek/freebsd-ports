@@ -2,7 +2,7 @@
 # Date created:				3 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.9 2000/10/03 02:09:43 reg Exp $
+# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.10 2000/10/05 06:36:10 reg Exp $
 #
 
 PORTNAME=	IglooFTP
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	system/network/file-transfer
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 

@@ -2,7 +2,7 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.8 2000/06/14 13:21:11 sobomax Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.9 2001/01/04 17:09:31 sf Exp $
 
 PORTNAME=	cervisia
 PORTVERSION=	0.6.0
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase11

@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.1 2000/07/12 18:57:25 will Exp $
 #
 
 PORTNAME=	netsaint-plugins
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://netsaintplug.sourceforge.net/src/
 DISTNAME=	${PORTNAME}-1.2.8-4
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # make absolutely sure we have the user/group added!
 BUILD_DEPENDS=	netsaint:${PORTSDIR}/net/netsaint

@@ -2,7 +2,7 @@
 # Date created:				15 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/amcl/Makefile,v 1.3 2000/10/03 09:25:21 reg Exp $
+# $FreeBSD: ports/net/amcl/Makefile,v 1.4 2000/10/05 06:42:14 reg Exp $
 #
 
 PORTNAME=	amcl
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION}pl1
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

@@ -2,7 +2,7 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.9 2000/05/29 01:14:50 will Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.10 2000/08/03 09:23:22 asami Exp $
 #
 
 PORTNAME=	battleball
@@ -12,7 +12,7 @@ MASTER_SITES=	http://tzo.linux.tucows.com/files/x11/entertain/ \
 		http://fundy.linux.tucows.com/files/x11/entertain/
 DISTNAME=	${PORTNAME}.${PORTVERSION:S/.//}.src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes

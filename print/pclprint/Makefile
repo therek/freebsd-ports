@@ -2,7 +2,7 @@
 # Date created:		27 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/print/pclprint/Makefile,v 1.3 2000/04/09 17:40:56 cpiazza Exp $
+# $FreeBSD: ports/print/pclprint/Makefile,v 1.4 2000/04/09 17:50:23 cpiazza Exp $
 #
 
 PORTNAME=	pclprint
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://andrsn.stanford.edu/pub/print/ \
 		http://www.psn.net/~andrews/dist/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_BUILD=	YES
 

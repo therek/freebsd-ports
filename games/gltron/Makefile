@@ -2,7 +2,7 @@
 # Date created:				24 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gltron/Makefile,v 1.13 2000/07/04 07:12:52 sobomax Exp $
+# $FreeBSD: ports/games/gltron/Makefile,v 1.14 2000/08/03 09:23:34 asami Exp $
 #
 
 PORTNAME=	gltron
@@ -10,7 +10,7 @@ PORTVERSION=	0.59
 CATEGORIES=	games
 MASTER_SITES=	http://gltron.sourceforge.net/download/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer \
 		png.4:${PORTSDIR}/graphics/png

@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.2 2000/07/12 22:08:01 will Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.3 2000/07/12 22:14:22 will Exp $
 #
 
 PORTNAME=	netsaint
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.netsaint.org/download/
 DISTNAME=	${PORTNAME}-0.0.5-2
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 

@@ -2,7 +2,7 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/scrollz/Makefile,v 1.7 2000/04/15 12:58:14 imura Exp $
+# $FreeBSD: ports/irc/scrollz/Makefile,v 1.8 2000/11/05 19:21:20 will Exp $
 #
 
 PORTNAME=	scrollz
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.scrollz.com/Bins/
 DISTNAME=	ScrollZ-${PORTVERSION}-FreeBSD-3.4
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	gunzip
 EXTRACT_BEFORE_ARGS=	-c

@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/kmud/Makefile,v 1.3 2000/05/19 19:45:38 will Exp $
+# $FreeBSD: ports/net/kmud/Makefile,v 1.4 2001/01/04 17:09:32 sf Exp $
 #
 
 PORTNAME=	kmud
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kmud.de/pub/kmud/
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
