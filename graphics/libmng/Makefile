@@ -2,7 +2,7 @@
 # Date created:		Nov 2, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/libmng/Makefile,v 1.8 2001/06/18 22:55:40 mi Exp $
+# $FreeBSD: ports/graphics/libmng/Makefile,v 1.9 2001/07/16 21:23:11 mi Exp $
 #
 
 PORTNAME=	libmng
@@ -26,9 +26,8 @@ MAN3=		libmng.3
 MAN5=		mng.5 jng.5
 
 post-patch:
-.if exists(${PREFIX}/include/lcms.h)
-	${PERL} -pi -e 's%lcms/lcms.h%lcms.h%' ${WRKSRC}/libmng_types.h
-.endif
+	test ! -e ${PREFIX}/include/lcms.h || ${PERL} -pi -e \
+		's%lcms/lcms.h%lcms.h%' ${WRKSRC}/libmng_types.h
 
 post-install:
 	cd ${WRKSRC}/doc/man && ${INSTALL_MAN} ${MAN3} ${PREFIX}/man/man3 \
