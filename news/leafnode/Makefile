@@ -2,7 +2,7 @@
 # Date created:		10 April 1996
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/news/leafnode/Makefile,v 1.12 2000/02/27 15:45:57 brian Exp $
+# $FreeBSD: ports/news/leafnode/Makefile,v 1.13 2000/04/09 17:32:59 cpiazza Exp $
 #
 
 PORTNAME=	leafnode
@@ -19,6 +19,7 @@ CONFIGURE_ARGS=	--quiet
 MAKE_ARGS=	LOCKFILE=/var/spool/lock/news/fetchnews.lck \
 		LIBDIR=${PREFIX}/lib/leafnode
 MAN1=		newsq.1
+MAN7=		pcre.7
 MAN8=		fetchnews.8 applyfilter.8 leafnode.8 texpire.8 checkgroups.8
 
 .include <bsd.port.mk>
