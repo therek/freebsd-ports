@@ -3,7 +3,7 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.43 1999/11/16 04:41:02 nakai Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.44 1999/11/24 07:02:13 nakai Exp $
 #
 
 DISTNAME=	icewm-0.9.52
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.src.tar.gz
 MAINTAINER=	nakai@FreeBSD.org
 
 .if defined(GNOME)
-LIB_DEPENDS=	gnome.2:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 .endif
 LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm
 
