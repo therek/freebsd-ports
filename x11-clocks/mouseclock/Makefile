@@ -2,7 +2,7 @@
 # Date created:		26 August 1997
 # Whom:			FURUSAWA, Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/x11-clocks/mouseclock/Makefile,v 1.6 1999/08/31 02:57:59 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mouseclock
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/clocks
 
 MAINTAINER=	kazu@jp.freebsd.org
+
+BROKEN=		"Does not build with XFree86-4"
 
 USE_GMAKE=	yes
 USE_IMAKE=	yes
