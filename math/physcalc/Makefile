@@ -2,11 +2,11 @@
 # Date created:				Sun 27 Aug 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/physcalc/Makefile,v 1.1 2000/08/27 23:32:01 will Exp $
 #
 
 PORTNAME=	physcalc
-PORTVERSION=	1.0
+PORTVERSION=	2.4
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.lightlink.com/pub/vulcan/
 DISTNAME=	${PORTNAME}
