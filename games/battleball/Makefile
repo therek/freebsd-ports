@@ -2,7 +2,7 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.10 2000/08/03 09:23:22 asami Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.11 2001/01/09 00:06:20 will Exp $
 #
 
 PORTNAME=	battleball
@@ -17,15 +17,17 @@ MAINTAINER=	ports@FreeBSD.org
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 WRKSRC=		${WRKDIR}/battleball-2.1-src
+MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
+		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/battleball ${PREFIX}/bin
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/battleball
+	@${MKDIR} ${DOCSDIR}
 .for file in CHANGELOG README
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/battleball
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
 
