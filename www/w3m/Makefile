@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.3 1999/11/18 21:56:34 sada Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.4 1999/12/07 16:41:49 sumikawa Exp $
 #
 
 DISTNAME=	w3m-${W3M_DIST_VER}
@@ -32,6 +32,10 @@ DOCS=		FAQ.html MANUAL.html MANUAL_lynx.html README \
 		keymap.lynx menu.default menu.submenu
 SED_CMD=	-e "s,%%PREFIX%%,${PREFIX},g" \
 		-e "s,%%LOCALBASE%%,${LOCALBASE},g"
+
+.if defined(USE_INET6)
+SED_CMD+=	-e "s,undef INET6,define INET6,g"
+.endif
 
 .if defined(JAPANESE)
 SED_CMD+=	-e "s,undef JAPANESE,define JAPANESE,g" \
