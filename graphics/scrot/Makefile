@@ -2,7 +2,7 @@
 # Date created:				27 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/scrot/Makefile,v 1.3 2000/12/21 09:20:40 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scrot
@@ -10,12 +10,17 @@ PORTVERSION=	0.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	ishmael27x@yahoo.com
 
 LIB_DEPENDS=	giblib.1:${PORTSDIR}/graphics/giblib
 
-GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-portbld-freebsd${OSREL}
+
+.if defined(NOPORTDOCS)
+MAKE_ENV=	NO_DOC=yes
+.endif
 
 MAN1=		scrot.1
 
