@@ -1,19 +1,20 @@
 # New ports collection makefile for:	PowerPak
-# Version required:			990823
+# Version required:			990829
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.2 1999/08/25 06:04:16 obrien Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.3 1999/08/26 00:59:49 cpiazza Exp $
 #
 
 DISTNAME=	PowerPak
-PKGNAME=	powerpak-990823
+PKGNAME=	powerpak-990829
 CATEGORIES= 	games
 MASTER_SITES=	http://www.angelfire.com/va/powerpakgsdk/images/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	SDL.0:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL.0:${PORTSDIR}/devel/sdl \
+		ttf.3:${PORTSDIR}/print/freetype
 
 MAKEFILE=	Makefile.FreeBSD
 
