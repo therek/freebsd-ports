@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.191 2001/02/05 07:23:47 roam Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.192 2001/02/09 20:32:30 jim Exp $
 #
 
     SUBDIR += adcomplain
@@ -119,6 +119,7 @@
     SUBDIR += qmail
     SUBDIR += qmail-contrib
     SUBDIR += qmail-ldap
+    SUBDIR += qmail-tls
     SUBDIR += qmailadmin
     SUBDIR += qmailanalog
     SUBDIR += qpopper
