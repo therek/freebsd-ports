@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby14-tk/Makefile,v 1.15 2000/09/05 12:44:13 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby14-tk/Makefile,v 1.16 2000/09/07 00:03:36 knu Exp $
 #
 
 PORTNAME=	tk
@@ -10,7 +10,6 @@ PORTVERSION=	${RUBY_VERSION}
 CATEGORIES+=	x11-toolkits ruby tk${TK_VERSION}
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
-PKGNAMEPREFIX=  ${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
