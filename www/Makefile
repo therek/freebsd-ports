@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.161 1999/10/10 18:32:59 sada Exp $
+# $FreeBSD: ports/www/Makefile,v 1.162 1999/10/10 20:06:13 sada Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -100,7 +100,6 @@
     SUBDIR += tidy
     SUBDIR += tinyproxy
     SUBDIR += transproxy
-    SUBDIR += vrweb
     SUBDIR += w3
     SUBDIR += w3c-httpd
     SUBDIR += w3m
