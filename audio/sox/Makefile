@@ -2,12 +2,11 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/audio/sox/Makefile,v 1.16 2001/01/01 19:18:52 sf Exp $
+# $FreeBSD: ports/audio/sox/Makefile,v 1.17 2001/02/26 04:15:57 steve Exp $
 #
 
 PORTNAME=	sox
-PORTVERSION=	12.17.1
-PORTREVISION=	1
+PORTVERSION=	12.17.2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sox
