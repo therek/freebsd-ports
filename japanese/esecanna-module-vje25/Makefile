@@ -3,7 +3,7 @@
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-module-vje25/Makefile,v 1.2 2000/03/23 07:11:48 knu Exp $
+# $FreeBSD: ports/japanese/esecanna-module-vje25/Makefile,v 1.3 2000/03/26 21:20:08 knu Exp $
 #
 
 DISTNAME=	esecanna-module-vje25_0.14.3
@@ -14,7 +14,7 @@ MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 
 MAINTAINER=	knu@idaemons.org
 
-RUN_DEPENDS=	${PREFIX}/sbin/esecannaserver:${PORTSDIR}/japanese/esecanna
+RUN_DEPENDS=	${LOCALBASE}/sbin/esecannaserver:${PORTSDIR}/japanese/esecanna
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
