@@ -2,15 +2,14 @@
 # Date created:	2001/08/30
 # Whom:		kaz
 #
-# $FreeBSD: ports/sysutils/xmbmon/Makefile,v 1.1 2001/09/03 17:37:52 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmbmon
-PORTVERSION=	106p1
-PORTREVISION=	1
+PORTVERSION=	107
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.nt.phys.kyushu-u.ac.jp/shimizu/download/
-DISTNAME=	${PORTNAME}${PORTVERSION:S/p/pl/}
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	kaz@kobe1995.net
 
