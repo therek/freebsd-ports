@@ -2,19 +2,21 @@
 # Date Created:				30 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/dbiwrapper/Makefile,v 1.1 2001/07/16 07:22:50 vanilla Exp $
 #
 
-PORTNAME=	dbiwrapper
-PORTVERSION=	0.11
+PORTNAME=	DBIWrapper
+PORTVERSION=	0.12
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PORTNAME}
+MASTER_SITE_SUBDIR=	dbiwrapper
+PKGNAMEPREFIX=	p5-
 DISTNAME=	dbi_wrapper-${PORTVERSION}
 
 MAINTAINER=	petef@databits.net
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
