@@ -3,15 +3,13 @@
 # Date created:         31 October 1994
 # Whom:                 ljo
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/linpack/Makefile,v 1.21 1999/08/25 07:11:43 obrien Exp $
 #
 
 DISTNAME=	linpack
 PKGNAME=	linpack-1.0
 CATEGORIES=	math
-MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/linpack/ \
-		ftp://www.hensa.ac.uk/mirrors/linpack/ \
-		ftp://elib.zib-berlin.de/pub/linpack/
+MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/linpack/
 
 DIST_SUBDIR=	${DISTNAME}
 
@@ -53,7 +51,7 @@ DISTFILES=	${SRCS:.f=.f.gz}
 .include <bsd.port.pre.mk>
 
 pre-build:
-	${CP} Makefile.lib ${WRKDIR}/Makefile
+	${CP} ${FILESDIR}/Makefile.lib ${WRKDIR}/Makefile
 
 post-install:
 	${LDCONFIG} -m ${PREFIX}/lib
