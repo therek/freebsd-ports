@@ -2,7 +2,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.10 2000/06/18 09:26:53 asami Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.11 2000/10/08 10:23:48 asami Exp $
 #
 
 PORTNAME=	XFree86-aoutlibs
@@ -11,6 +11,8 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.3/binaries/FreeBSD-2.2.x/
 DISTNAME=	Xbin
 EXTRACT_SUFX=	.tgz
+
+FORBIDDEN=	"Remote denial of service and buffer overflow vulnerabilities"
 
 MAINTAINER=	reg@FreeBSD.org
 
