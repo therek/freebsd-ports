@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.114 2003/05/11 23:16:55 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.115 2003/05/12 04:15:46 kiri Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -316,3 +316,4 @@ www/orion-devel|www/orion|2003-05-08|stable version caught up with development v
 editors/xemacs21-mule-common||2003-05-09|needless since new xemacs21-mule is 21.4.12
 x11-toolkits/fltk-xunicode|x11-toolkits/fltk|2003-05-011|maintenance discontinued
 www/nautilus-gtkhtml||2003-05-11|maintenance discontinued
+editors/xemacs21-mule-sumo||2003-05-12|needless since merged to xemacs-{mule-}packages
