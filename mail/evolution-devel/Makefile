@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.28 2001/05/16 15:59:20 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	evolution
@@ -16,6 +16,8 @@ MAINTAINER=	gnome@FreeBSD.org
 
 #LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap <- avoid extra dependency until
 #						   it actually works
+
+BROKEN=		"Out of sync with latest gal"
 
 USE_GMAKE=	yes
 USE_BISON=	yes
