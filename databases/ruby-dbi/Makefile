@@ -2,7 +2,7 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-dbi/Makefile,v 1.2 2001/06/02 18:45:04 knu Exp $
+# $FreeBSD: ports/databases/ruby-dbi/Makefile,v 1.3 2001/06/09 14:23:33 knu Exp $
 #
 
 PORTNAME=	${RUBY_DBI_PORTNAME}
@@ -36,7 +36,7 @@ post-install:
 	${MKDIR} ${RUBY_SITEARCHLIBDIR}/DBD
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS_EN}
 	${CP} -R ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
