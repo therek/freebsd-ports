@@ -2,13 +2,13 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/misc/seizedesktop/Makefile,v 1.4 2000/07/14 13:28:58 alex Exp $
+# $FreeBSD: ports/misc/seizedesktop/Makefile,v 1.5 2000/11/14 00:39:15 asami Exp $
 #
 
 PORTNAME=	seizedesktop
 PORTVERSION=	0.1a
 CATEGORIES+=	misc windowmaker tkstep80
-MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
+MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/Factory/JDE/dist/
 DISTNAME=	SeizeDesktop-${PORTVERSION}
 EXTRACT_ONLY=	# extracted directly in install target
 
