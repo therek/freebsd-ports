@@ -2,20 +2,17 @@
 # Date created:		2 February 1999
 # Whom:			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/devel/gaa/Makefile,v 1.4 2000/04/11 21:28:00 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gaa
-PORTVERSION=	1.5
+PORTVERSION=	1.6.2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	demon@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-
-post-install:
-		@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
