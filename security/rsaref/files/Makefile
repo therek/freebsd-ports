@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/security/rsaref/files/Makefile,v 1.8 2000/02/21 09:19:18 kris Exp $
 
 O= o
 SO= so
@@ -10,11 +10,7 @@ LIB= ar
 	${CC} -fpic -DPIC ${CFLAGS} -c ${.IMPSRC} -o ${.TARGET}
 
 RSAREFLIB=librsaref.a
-.if ${PORTOBJFORMAT} == elf
 SORSAREFLIB=librsaref.so.2
-.else
-SORSAREFLIB=librsaref.so.2.0
-.endif
 
 all: ${RSAREFLIB} ${SORSAREFLIB}
 
@@ -32,8 +28,3 @@ $(SORSAREFLIB) : desc.$(SO) digit.$(SO) md2c.$(SO) md5c.$(SO) nn.$(SO) prime.$(S
 .else
 	ld -Bshareable -x -o $@ $>
 .endif
-
-install:
-	${INSTALL_DATA} rsa.h _des.h _md2.h _md5.h rsaref.h global.h ${PREFIX}/include
-	${INSTALL_DATA} ${RSAREFLIB} ${SORSAREFLIB} ${PREFIX}/lib
-	ln -sf ${SORSAREFLIB} ${PREFIX}/lib/librsaref.so

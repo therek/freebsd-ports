@@ -3,7 +3,7 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD: ports/security/rsaref/Makefile,v 1.11 2000/01/09 00:17:38 kris Exp $
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.12 2000/02/21 09:19:16 kris Exp $
 #
 
 DISTNAME=	rsaref20.1996
@@ -31,8 +31,14 @@ pre-configure:
 		${CP} md2.h _md2.h && \
 		${CP} md5.h _md5.h
 
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+do-install:
+.for file in rsa.h _des.h _md2.h _md5.h rsaref.h global.h
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/include
+.endfor
+	${INSTALL_DATA} ${WRKSRC}/librsaref.a ${WRKSRC}/librsaref.so.2 \
+		${PREFIX}/lib
+	ln -sf librsaref.so.2 ${PREFIX}/lib/librsaref.so
+	${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/rsaref
 .for file in info.txt rsaref.txt
