@@ -2,12 +2,12 @@
 # Date created:				13 September 2001
 # Whom:                			JJ Behrens <jj@nttmcl.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-IPv6Addr/Makefile,v 1.1 2001/09/22 15:58:11 tobez Exp $
 #
 
 PORTNAME=	Net-IPv6Addr
 PORTVERSION=	0.1
-CATEGORIES=	net perl5
+CATEGORIES=	net perl5 ipv6
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
