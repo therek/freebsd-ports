@@ -2,7 +2,7 @@
 # Date created:		16 January 1999
 # Whom:			Paul Chvostek <paul@it.ca>
 #
-# $FreeBSD: ports/mail/rlytest/Makefile,v 1.7 2001/02/05 15:11:09 olgeni Exp $
+# $FreeBSD: ports/mail/rlytest/Makefile,v 1.8 2001/04/16 02:05:45 ache Exp $
 #
 
 PORTNAME=	rlytest
@@ -26,7 +26,7 @@ pre-patch:
 	perl -pe 's,^#!/usr/local/bin/perl$$,#!/usr/bin/perl,' < ${_DISTDIR}${DISTFILES} > ${WRKSRC}/rlytest
 
 do-build:
-	pod2man ${WRKSRC}/rlytest ${WRKSRC}/rlytest.1
+	pod2man ${WRKSRC}/rlytest > ${WRKSRC}/rlytest.1
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/rlytest ${PREFIX}/bin/
