@@ -2,7 +2,7 @@
 # Date created:		Sa  01 May 1999 15:00:00 MET
 # Whom:			Tobias Reifenberger <treif@mayn.de>
 #
-# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.1 2000/03/28 22:44:09 ade Exp $
+# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.2 2000/04/14 10:47:56 asami Exp $
 #
 
 PORTNAME=	xmrm
@@ -10,7 +10,8 @@ PORTVERSION=	2.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cg.tuwien.ac.at/pub/linux/xmrm/ \
 		ftp://ftp.uni-passau.de/mount/common.lib.archive.unix/Graphic/xmrm/
-DISTFILES=	xmrm20_sources.tgz
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}_sources
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	treif@mayn.de
 
