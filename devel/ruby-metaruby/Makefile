@@ -2,11 +2,11 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-metaruby/Makefile,v 1.1 2001/03/08 13:09:29 knu Exp $
+# $FreeBSD: ports/devel/ruby-metaruby/Makefile,v 1.2 2001/03/19 07:14:17 knu Exp $
 #
 
 PORTNAME=	metaruby
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://hostname.2y.net/~matju/MetaRuby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -16,16 +16,11 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 USE_RUBY=	yes
+USE_RUBY_EXTCONF=	yes
 
-NO_BUILD=	yes
+DOCS=		ChangeLog	Overview	TODO		doc/*
 
-DOCS=		ChangeLog	Overview	TODO
-
-post-patch:
-	${RUBY} -i -ne '%r|^\$$: <<| or print' ${WRKSRC}/samples/*
-
-do-install:
-	${INSTALL_DATA} ${WRKSRC}/lib/* ${RUBY_SITELIBDIR}/
+post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/samples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
