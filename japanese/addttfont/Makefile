@@ -2,11 +2,11 @@
 # Date created:		99/06/15
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/addttfont/Makefile,v 1.2 2000/04/11 14:12:52 knu Exp $
+# $FreeBSD: ports/japanese/addttfont/Makefile,v 1.3 2000/07/24 13:55:35 taoka Exp $
 #
 
 PORTNAME=	addttfont
-PORTVERSION=	1.9
+PORTVERSION=	1.10
 CATEGORIES=	japanese perl5
 MASTER_SITES=	http://ftp.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/tt/
 EXTRACT_SUFX=	# none
