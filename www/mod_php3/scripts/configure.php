@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.70 2000/01/12 14:44:40 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.71 2000/01/23 00:02:08 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -66,7 +66,7 @@ while [ "$1" ]; do
 			ZLIB=1
 			;;
 		\"mcrypt\")
-			echo "LIB_DEPENDS+=	mcrypt.2:\${PORTSDIR}/security/libmcrypt"
+			echo "LIB_DEPENDS+=	mcrypt-2.2.2:\${PORTSDIR}/security/libmcrypt"
 			echo "PHP_CONF_ARGS+=	--with-mcrypt=\${PREFIX}"
 			;;
 		\"mhash\")

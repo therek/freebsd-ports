@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.74 2000/01/23 00:02:13 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.75 2000/01/25 16:52:23 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -66,10 +66,7 @@ while [ "$1" ]; do
 			ZLIB=1
 			;;
 		\"mcrypt\")
-			echo "mhash is DISABLED for now. Ignoring." > /dev/stderr
-			;;
-		\"nothing\")
-			echo "LIB_DEPENDS+=	mcrypt.2:\${PORTSDIR}/security/libmcrypt"
+			echo "LIB_DEPENDS+=	mcrypt-2.2.2:\${PORTSDIR}/security/libmcrypt"
 			echo "PHP_CONF_ARGS+=	--with-mcrypt=\${PREFIX}"
 			;;
 		\"mhash\")
