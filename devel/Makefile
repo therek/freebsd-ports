@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.551 2001/05/29 13:45:02 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.552 2001/06/03 02:07:22 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -488,6 +488,7 @@
     SUBDIR += tkcvs
     SUBDIR += tkref
     SUBDIR += tmake
+    SUBDIR += trio
     SUBDIR += tvision
     SUBDIR += uclmmbase
     SUBDIR += ucpp
