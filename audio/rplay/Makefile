@@ -2,7 +2,7 @@
 # Date created:		16 March 1995
 # Whom:			rmallory@csusb.edu
 #
-# $FreeBSD: ports/audio/rplay/Makefile,v 1.17 2000/06/28 16:05:08 alex Exp $
+# $FreeBSD: ports/audio/rplay/Makefile,v 1.18 2000/07/05 12:36:17 tg Exp $
 #
 
 PORTNAME=	rplay
@@ -10,7 +10,7 @@ PORTVERSION=	3.3.2
 CATEGORIES=	audio
 MASTER_SITES=	http://rplay.doit.org/dist/
 
-MAINTAINER=	rmallory@csusb.edu
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gsm.1:${PORTSDIR}/audio/gsm
 
