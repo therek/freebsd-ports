@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/cyrus-imapd2/pkg-deinstall,v 1.4 2003/01/17 10:17:03 ume Exp $
+#	$FreeBSD: ports/mail/cyrus-imapd2/pkg-deinstall,v 1.5 2003/01/30 14:04:02 ume Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -23,18 +23,6 @@ checkfile() {
                 *)      # no config file exists
                         ;;
         esac
-}
-
-# Uninstall timseived's Cyrus.conf file.
-
-cyrus_conf() {
-	if [ -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf ]; then
-		echo "pwcheck_method: pwcheck" > ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp
-		if cmp -s ${PKG_PREFIX}/lib/sasl2/Cyrus.conf ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp; then
-			rm -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf
-		fi
-		rm -f ${PKG_PREFIX}/lib/sasl2/Cyrus.conf.tmp
-	fi
 }
 
 #
@@ -62,7 +50,6 @@ modify_cyrus_user() {
 case $2 in
 	DEINSTALL)
 		cd ${PKG_PREFIX}
-		cyrus_conf
 		checkfile ${PKG_PREIFX}/etc/imapd.conf
 		checkfile ${PKG_PREIFX}/etc/cyrus.conf
 		;;
