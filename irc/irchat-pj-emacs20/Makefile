@@ -2,7 +2,7 @@
 # Date Created:		2 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/irchat-pj-emacs20/Makefile,v 1.2 2001/05/08 09:30:14 knu Exp $
+# $FreeBSD: ports/irc/irchat-pj-emacs20/Makefile,v 1.3 2001/06/14 15:13:40 knu Exp $
 #
 
 PORTNAME=	irchat-pj
@@ -40,6 +40,9 @@ post-install:
 .for f in ${DOCS}
 	${INSTALL_MAN} ${WRKSRC}/${f} ${PREFIX}/${ETCDIR}
 .endfor
+.endif
+.if (${EMACS_PORT_NAME} == "xemacs21-mule")
+	${RMDIR} ${PREFIX}/${EMACS_LIBDIR}/site-packages/etc/irchat-pj
 .endif
 
 .include <bsd.port.mk>
