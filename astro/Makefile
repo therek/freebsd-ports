@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.40 2001/09/22 06:42:18 lioux Exp $
+# $FreeBSD$
 #
 
     SUBDIR += SETIsupport
@@ -7,6 +7,7 @@
     SUBDIR += fooseti
     SUBDIR += gkrellmearth
     SUBDIR += gkrellmoon
+    SUBDIR += gkrellmseti
     SUBDIR += glunarclock
     SUBDIR += jday
     SUBDIR += ksetiwatch
