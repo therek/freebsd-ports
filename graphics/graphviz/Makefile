@@ -2,7 +2,7 @@
 # Date created:		03 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.14 2000/02/18 04:05:31 jedgar Exp $
+# $FreeBSD: ports/graphics/graphviz/Makefile,v 1.15 2000/04/14 10:46:09 asami Exp $
 #
 
 PORTNAME=	graphviz
@@ -23,6 +23,9 @@ MAN1=		dot.1 dotty.1 lefty.1 neato.1
 MANN=		tcldot.n
 
 DOCDIR=		${PREFIX}/share/doc/graphviz
+
+post-extract:
+	@${CP} ${FILESDIR}/freebsd.generic ${WRKSRC}/makearch
 
 post-install:
 	@${MKDIR} ${DOCDIR}
