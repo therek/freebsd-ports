@@ -2,7 +2,7 @@
 # Date created:				April 17th 2000
 # Whom:	      				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.1.1.1 2000/04/17 18:47:07 andreas Exp $
+# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.2 2000/04/17 18:52:43 andreas Exp $
 #
 
 PORTNAME=	p5-Net-SSLeay
@@ -14,6 +14,7 @@ DISTNAME=	 Net_SSLeay.pm-1.05
 
 MAINTAINER=	andreas@FreeBSD.org
 
+RESTRICTED=	"Cryptography"
 USE_PERL5=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
