@@ -2,7 +2,7 @@
 # Date created:				2 July 2000
 # Whom:					Kelly Yancey <kbyanc@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cclient/Makefile,v 1.5 2001/01/30 17:24:39 sf Exp $
+# $FreeBSD: ports/mail/cclient/Makefile,v 1.6 2001/02/12 06:42:51 sf Exp $
 #
 
 PORTNAME=	cclient
@@ -26,11 +26,20 @@ SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}
 MAKE_ENV=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 PLIST_SUB=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 
+PREFIX_FIX_FILES=	Makefile src/osdep/unix/Makefile \
+			src/osdep/unix/Makefile.gss \
+			src/osdep/unix/Makefile.ssl
+
 .include <bsd.port.pre.mk>
 
 .if ${PORTOBJFORMAT} == "aout"
 SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}.0
 .endif
+
+post-patch:
+.for file in ${PREFIX_FIX_FILES}
+	@${PERL} -pi -ne "s!/usr/local!${PREFIX}!g" ${WRKSRC}/${file}
+.endfor
 
 post-configure:
 	@${ECHO_MSG} ">> The c-client shared library will be named ${SHLIBNAME}"
