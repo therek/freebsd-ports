@@ -3,7 +3,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.85 1999/08/31 06:50:25 mharo Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.86 1999/09/02 17:08:35 cpiazza Exp $
 #
 # Maximal ssh2 package requires YES values for
 # USE_SSH1, USE_TCPWRAP
@@ -13,10 +13,6 @@ CATEGORIES=	security net
 MASTER_SITES=   ftp://ftp.cs.hut.fi/pub/ssh/ \
 		ftp://sunsite.unc.edu/pub/packages/security/ssh/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/security/ssh/
-
-PATCH_SITES=	http://www.ssh.fi/sshprotocols2/patches/
-PATCHFILES=	patch-${DISTNAME}-bsd.tty.chown
-PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	issei@jp.FreeBSD.org
 
