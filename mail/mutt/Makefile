@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.105 2001/05/22 18:16:57 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mutt
@@ -59,6 +59,8 @@ BUILD_DEPENDS+=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
 
 DIST_SUBDIR=	mutt
 GNU_CONFIGURE=	yes
+USE_AUTOMAKE=	yes	# configure.in is patched by <PATCHFILES>
+USE_GMAKE=	yes	# grrr, why is this now required if USE_AUTOMAKE ?!?!?
 CONFIGURE_TARGET=${ARCH}-portbld-freebsd${OSREL}
 CONFIGURE_ENV=	CC="${CC} -I${LOCALBASE}/include" LDFLAGS=-L${LOCALBASE}/lib
 CONFIGURE_ARGS=	--enable-pop --enable-imap --enable-flock --disable-fcntl \
