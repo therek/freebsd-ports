@@ -2,12 +2,12 @@
 # Date created:				22 December 2000
 # Whom:					Simon Marlow <simonmar@microsoft.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/happy/Makefile,v 1.1 2000/12/26 05:25:48 will Exp $
 
 PORTNAME=	happy
-PORTVERSION=	1.9
+PORTVERSION=	1.10
 CATEGORIES=	devel
-MASTER_SITES=	http://www.haskell.org/happy/dist/1.9/
+MASTER_SITES=	http://www.haskell.org/happy/dist/1.10/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	simonmar@microsoft.com
