@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.114 2000/05/26 00:54:17 msmith Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.115 2000/06/09 02:27:48 will Exp $
 #
 
     SUBDIR += AbiWord
@@ -43,6 +43,7 @@
     SUBDIR += flim-xemacs20-current
     SUBDIR += fte
     SUBDIR += gedit
+    SUBDIR += ghex
     SUBDIR += gnotepad+
     SUBDIR += gxedit
     SUBDIR += hexedit
