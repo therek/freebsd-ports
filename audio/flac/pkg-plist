@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/audio/flac/pkg-plist,v 1.2 2001/06/08 02:06:29 ijliao Exp $
 bin/flac
 bin/metaflac
 lib/libFLAC.a
@@ -19,3 +19,5 @@ lib/libFLAC.so.0
 %%PORTDOCS%%share/doc/flac/images/logo.jpg
 %%PORTDOCS%%@dirrm share/doc/flac/images
 %%PORTDOCS%%@dirrm share/doc/flac
+%%XMMS%%@cwd %%X11BASE%%
+%%XMMS%%lib/xmms/Input/libxmms-flac.so
