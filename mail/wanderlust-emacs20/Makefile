@@ -2,18 +2,19 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs20/Makefile,v 1.6 2000/04/13 20:00:53 cpiazza Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs20/Makefile,v 1.7 2000/04/19 06:52:35 knu Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com
 
 MASTERDIR=	${.CURDIR}/../../mail/wanderlust-emacs
 
-EMACS_NAME=		emacs
 EMACS_PORT_NAME=	emacs20
-EMACS_VER=		20.6
-EMACS_LIBDIR=		share/emacs
 
 IS_SLAVE=		yes
+
+.if !defined(WITHOUT_X11) && !defined(WITHOUT_BITMAP)
+RUN_DEPENDS=	${LOCALBASE}/${EMACS_SITE_LISPDIR}/bitmap/bitmap.el:${PORTSDIR}/editors/bitmap-emacs20
+.endif
 
 .include <${MASTERDIR}/Makefile>
