@@ -2,11 +2,12 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/p5-Text-Kakasi/Makefile,v 1.8 2001/03/02 06:34:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-Kakasi
 PORTVERSION=	1.05
+PORTREVISION=	1
 CATEGORIES=	japanese perl5
 MASTER_SITES=	http://www.daionet.gr.jp/~knok/kakasi/
 
