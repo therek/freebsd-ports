@@ -2,13 +2,13 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/klone/Makefile,v 1.1 2001/08/23 11:30:39 kris Exp $
 #
 
 PORTNAME=	Klone
 PORTVERSION=	2.1.359
 CATEGORIES=	lang
-MASTER_SITES=	ftp://koala.inria.fr/pub/Klone/
+MASTER_SITES=	http://koala.ilog.fr/ftp/Klone/
 DISTNAME=	Klone359
 
 MAINTAINER=	ports@FreeBSD.org
