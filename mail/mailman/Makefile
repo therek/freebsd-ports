@@ -2,15 +2,15 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mailman/Makefile,v 1.1 2000/07/17 01:16:02 steve Exp $
 #
 
 PORTNAME=	mailman
-PORTVERSION=	1.1
+PORTVERSION=	2.0b5
 CATEGORIES=	mail
-MASTER_SITES=   ${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	mailman
-DISTNAME=       ${PORTNAME}-${PORTVERSION}
+MASTER_SITES=   http://download.sourceforge.net/mailman/
+DISTNAME=       mailman-2.0beta5
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -33,7 +33,7 @@ pre-configure:
 	# Create the dir and the correct permissions for it.
 	${MKDIR} ${MAILMANDIR}
 	${CHOWN} ${UNAME}:${UNAME} ${MAILMANDIR}
-	${CHMOD} g+s ${MAILMANDIR}
+	${CHMOD} 2775 ${MAILMANDIR}
 
 post-install:
 	@echo All related binaries have been installed in ${MAILMANDIR}/bin
