@@ -2,7 +2,7 @@
 # Date created:         03 October 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.3 2001/03/01 12:24:17 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdbm
@@ -15,20 +15,14 @@ DISTFILES=	${PYTHON_DISTFILE}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 DIST_SUBDIR=	python
 USE_PYTHON=	yes
+USE_PYDISTUTILS=yes
 WRKSRC=		${PYTHON_WRKSRC}/Modules
 
 post-extract:
 	@${CP} ${FILESDIR}/setup.py ${WRKSRC}
-
-do-build:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
-
-do-install:
-	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py install)
 
 .include <bsd.port.mk>
