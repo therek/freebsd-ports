@@ -2,11 +2,12 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.37 2000/06/16 21:52:23 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tix
 PORTVERSION=	4.1.0.007
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=   http://www.neosoft.com/tcl/ftparchive/%SUBDIR%/ \
 		ftp://ftp.riken.go.jp/pub/lang/tcl/netsoft/%SUBDIR%/
