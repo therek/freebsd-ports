@@ -2,12 +2,12 @@
 # Date created:         5 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/mtools/Makefile,v 1.32 2000/04/12 04:55:36 mharo Exp $
+# $FreeBSD: ports/emulators/mtools/Makefile,v 1.33 2000/10/14 01:36:14 jmz Exp $
 #
 
 PORTNAME=	mtools
-PORTVERSION=	3.9.6
-PORTREVISION=	1
+PORTVERSION=	3.9.7
+PORTREVISION=	0
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.tux.org/pub/knaff/mtools/  \
 		http://mtools.linux.lu/
