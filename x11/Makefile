@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.315 2001/01/08 23:26:43 vanilla Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.316 2001/02/26 19:24:49 will Exp $
 #
 
     SUBDIR += 9term
@@ -58,6 +58,7 @@
     SUBDIR += powershell
     SUBDIR += props
     SUBDIR += qrash
+    SUBDIR += ruby-gnome
     SUBDIR += ruby-kde
     SUBDIR += rxvt
     SUBDIR += rxvt-devel
