@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/expat/files/Makefile.lib,v 1.1 2000/10/18 05:46:55 knu Exp $
+# $FreeBSD: ports/textproc/expat/files/Makefile.lib,v 1.2 2000/10/25 19:21:39 knu Exp $
 
 LIB=		expat
 SHLIB_MAJOR?=	1
@@ -18,7 +18,8 @@ SRCS=		xmltok/xmltok.c \
 INCS=		xmlparse/xmlparse.h \
 		xmltok/xmltok.h
 NOMAN=		YES
-INCDIR=		${LOCALBASE}/include/xml
+INCSDIR=	${LOCALBASE}/include/xml
+INCDIR=		${INCSDIR}		# for pre-bsd.incs.mk API
 LIBDIR=		${LOCALBASE}/lib
 
 .include <bsd.lib.mk>
