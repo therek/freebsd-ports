@@ -2,7 +2,7 @@
 # Date created:         6 Januari 2000
 # Whom:                 Sander Janssen <janssen@rendo.dekooi.nl>
 #
-# $FreeBSD: ports/audio/mp3rename/Makefile,v 1.2 2000/04/08 21:24:02 mharo Exp $
+# $FreeBSD: ports/audio/mp3rename/Makefile,v 1.3 2000/05/07 21:27:24 jedgar Exp $
 #
 
 PORTNAME=	mp3rename
@@ -14,10 +14,7 @@ MAINTAINER=	janssen@rendo.dekooi.nl
 
 FETCH_BEFORE_ARGS=	-b
 
-MAN1=		mp3rename.1
-MANCOMPRESSED=	yes
-
-post-install:
-	strip ${PREFIX}/bin/mp3rename
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/mp3rename $(PREFIX)/bin/mp3rename
 
 .include <bsd.port.mk>
