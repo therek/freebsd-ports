@@ -3,7 +3,7 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.5 2000/01/26 06:59:57 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.6 2000/02/16 04:10:22 ade Exp $
 #
 
 DISTNAME=	rep-gtk-0.8
@@ -13,6 +13,9 @@ MASTER_SITES=	ftp://rep-gtk.sourceforge.net/pub/rep-gtk/
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+.if !defined(NOGNOME)
+LIB_DEPENDS+=	glade.2:${PORTSDIR}/devel/libglade
+.endif
 BUILD_DEPENDS=	rep:${PORTSDIR}/lang/librep
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -22,6 +25,9 @@ PLIST_SUB=	GNUHOST=${ARCH}--freebsd${OSREL}
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+.if defined(NOGNOME)
+CONFIGURE_ARGS=	--without-libglade
+.endif
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
