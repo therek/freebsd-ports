@@ -3,7 +3,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.1 2000/10/28 02:48:45 will Exp $
+# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.2 2001/01/17 13:59:49 kevlo Exp $
 #
 
 PORTNAME=	gengetopt
@@ -14,10 +14,7 @@ MASTER_SITE_SUBDIR= ${PORTNAME}
 
 MAINTAINER=	ports@freebsd.org
 
-LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
-
 GNU_CONFIGURE=	yes
-
 USE_GMAKE=	yes
 
 MAN1=		gengetopt.1
