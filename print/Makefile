@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.141 2001/03/01 05:47:23 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.142 2001/03/01 05:47:55 taoka Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -74,7 +74,7 @@
     SUBDIR += nenscript
     SUBDIR += offix-printer
     SUBDIR += p5-Text-PDF
-    SUBDIR += pbm2ppa
+    SUBDIR += pnm2ppa
     SUBDIR += pclprint
     SUBDIR += pdflib
     SUBDIR += pdflib3
