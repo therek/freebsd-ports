@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.10 2001/02/07 19:14:19 knu Exp $
+# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.11 2001/03/09 16:44:50 knu Exp $
 #
 
 PORTNAME=	xmlparser
@@ -17,7 +17,8 @@ MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	${PERL_ARCHLIB}/XML/Parser/Expat.pm:${PORTSDIR}/textproc/p5-XML-Parser
 LIB_DEPENDS=	expat.2:${PORTSDIR}/textproc/expat2
-RUN_DEPENDS=	${PERL_ARCHLIB}/XML/Parser/Expat.pm:${PORTSDIR}/textproc/p5-XML-Parser
+RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/uconv.so:${PORTSDIR}/japanese/ruby-uconv \
+		${PERL_ARCHLIB}/XML/Parser/Expat.pm:${PORTSDIR}/textproc/p5-XML-Parser
 # to utilize encoding maps included in p5-XML-Parser
 
 USE_RUBY=	yes
