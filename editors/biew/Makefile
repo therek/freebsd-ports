@@ -2,15 +2,15 @@
 # Date created:		04 February 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/editors/biew/Makefile,v 1.2 2000/03/24 00:09:49 mharo Exp $
+# $FreeBSD: ports/editors/biew/Makefile,v 1.3 2000/04/14 00:25:19 mharo Exp $
 #
 
 PORTNAME=	biew
-PORTVERSION=	5.01
+PORTVERSION=	5.04
 CATEGORIES=	editors
 MASTER_SITES=	ftp://biew.sourceforge.net/pub/biew/5.x/src/ \
 		http://download.sourceforge.net/biew/
-DISTNAME=	${PORTNAME}-501
+DISTNAME=	${PORTNAME}-504
 
 MAINTAINER=	ports@FreeBSD.org
 
