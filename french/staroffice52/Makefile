@@ -3,7 +3,7 @@
 # Whom:                 Martin Blapp
 # Translation:		Eric Masson
 #
-# $FreeBSD: ports/french/staroffice52/Makefile,v 1.3 2000/09/23 10:32:44 jedgar Exp $
+# $FreeBSD: ports/french/staroffice52/Makefile,v 1.4 2000/10/08 10:20:10 asami Exp $
 #
 
 PORTNAME=	staroffice
@@ -60,9 +60,10 @@ pre-fetch:
 .endif
 
 .if defined(WITH_CDROM)
-do-extract:
-	@${MKDIR} ${WRKSRC}/office52
-	@cd ${WRKSRC}/office52 && ${LN} -s ${CD_MOUNTPT}/linux/office52/* .
+do-extract: do-extract-cdrom
+do-extract-cdrom:
+	@${MKDIR} ${WRKSRC}
+	@cd ${WRKSRC} && ${LN} -s ${CD_MOUNTPT}/linux/office52/* .
 .else
 
 do-extract:

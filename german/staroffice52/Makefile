@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice52/Makefile,v 1.14 2000/09/23 10:33:14 jedgar Exp $
+# $FreeBSD: ports/german/staroffice52/Makefile,v 1.15 2000/10/08 10:20:19 asami Exp $
 #
 
 PORTNAME=	staroffice
@@ -49,16 +49,17 @@ pre-fetch:
 .if !exists(${CD_MOUNTPT}/linux/office52/setup)
 	@${ECHO}
 	@${ECHO} Bitte mounten Sie die Sun StarOffice 5.2 CDROM
-	@${ECHO} nach /cdrom and starten Sie make erneut.
+	@${ECHO} nach ${CD_MOUNTPT} and starten Sie make erneut.
 	@${ECHO}
 	@${FALSE}
 .endif
 .endif
 
 .if defined(WITH_CDROM)
-do-extract:
-	@${MKDIR} ${WRKSRC}/office52
-	@cd ${WRKSRC}/office52 && ${LN} -s ${CD_MOUNTPT}/linux/office52/* .
+do-extract: do-extract-cdrom
+do-extract-cdrom:
+	@${MKDIR} ${WRKSRC}
+	@cd ${WRKSRC} && ${LN} -s ${CD_MOUNTPT}/linux/office52/* .
 .endif
 
 do-extract:
