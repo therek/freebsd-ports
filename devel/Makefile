@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.611 2001/08/10 02:18:51 demon Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.612 2001/08/12 11:07:18 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -397,6 +397,7 @@
     SUBDIR += p5-Term-ReadKey
     SUBDIR += p5-Term-Screen
     SUBDIR += p5-Term-Size
+    SUBDIR += p5-Test-Simple
     SUBDIR += p5-Tie-Cache
     SUBDIR += p5-Tie-DB_FileLock
     SUBDIR += p5-Tie-IxHash
