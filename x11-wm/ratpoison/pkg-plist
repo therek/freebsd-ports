@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/x11-wm/ratpoison/pkg-plist,v 1.5 2004/06/17 10:56:42 jkoshy Exp $
+@comment $FreeBSD: ports/x11-wm/ratpoison/pkg-plist,v 1.6 2004/11/24 17:32:29 hq Exp $
 bin/ratpoison
+bin/rpws
 %%PORTDOCS%%%%DATADIR%%/allwindows.sh
 %%PORTDOCS%%%%DATADIR%%/clickframe.pl
 %%PORTDOCS%%%%DATADIR%%/genrpbindings
