@@ -3,7 +3,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.41 1999/12/09 08:25:21 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.42 2000/01/28 15:57:44 sheldonh Exp $
 #
 
 DISTNAME=	exim-3.13
@@ -38,6 +38,11 @@ LDAP_LIB_TYPE=	UMICHIGAN
 # must be left uncommented.
 PAM_CRAM_MD5=	YES
 PAM_PLAINTEXT=	YES
+
+# Uncomment to compile support for non-standard mailbox formats.
+#USE_MAILDIR=	YES
+#USE_MAILSTORE=	YES
+#USE_MBX=	YES
 
 # You should not need to fiddle with anything below this point.
 
@@ -82,6 +87,18 @@ SEDLIST+=	-e 's/^AUTH_CRAM_MD5/\#AUTH_CRAM_MD5/'
 .if ( !defined(USE_PAM) || ${USE_PAM} != YES ) || \
     ( !defined(PAM_PLAINTEXT) || ${PAM_PLAINTEXT} != YES )
 SEDLIST+=	-e 's/^AUTH_PLAINTEXT/\#AUTH_PLAINTEXT/'
+.endif
+
+.if defined(USE_MAILDIR) && ${USE_MAILDIR} == YES
+SEDLIST+=	-e 's/^\# SUPPORT_MAILDIR/SUPPORT_MAILDIR/'
+.endif
+
+.if defined(USE_MAILSTORE) && ${USE_MAILSTORE} == YES
+SEDLIST+=	-e 's/^\# SUPPORT_MAILSTORE/SUPPORT_MAILSTORE/'
+.endif
+
+.if defined(USE_MBX) && ${USE_MBX} == YES
+SEDLIST+=	-e 's/^\# SUPPORT_MBX/SUPPORT_MBX/'
 .endif
 
 do-configure:
