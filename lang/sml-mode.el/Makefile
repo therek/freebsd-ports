@@ -3,11 +3,11 @@
 # Date created:		23 December 1999
 # Whom:			J Koshy <jkoshy@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/sml-mode.el/Makefile,v 1.1.1.1 1999/12/27 09:32:49 jkoshy Exp $
 #
 
 DISTNAME=	sml-mode-3.3
-CATEGORIES=	devel elisp
+CATEGORIES=	lang elisp
 MASTER_SITES=	ftp://ftp.research.bell-labs.com/dist/smlnj/contrib/emacs/ \
 		http://www.freebsd.org/~jkoshy/PORTS/
 EXTRACT_SUFX=	.tar.Z
