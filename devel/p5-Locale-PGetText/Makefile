@@ -2,7 +2,7 @@
 # Date created:        27 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Locale-PGetText/Makefile,v 1.2 2000/04/11 21:29:42 mharo Exp $
+# $FreeBSD: ports/devel/p5-Locale-PGetText/Makefile,v 1.3 2001/03/01 06:37:59 vanilla Exp $
 #
 
 PORTNAME=	Locale-PGetText
@@ -17,7 +17,7 @@ MAINTAINER=	nakai@FreeBSD.org
 PERL_CONFIGURE=	YES
 
 MAN1=		MsgFormat.1 XText.1
-MAN3=		Locale::PGettext.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Locale::PGettext.3
 
 .include <bsd.port.mk>
