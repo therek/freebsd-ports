@@ -4,10 +4,10 @@
 # Whom:                                 Peng HaiJie   (phj@cn.FreeBSD.org)
 #                                       (phj@transfar.com)
 #
-# $FreeBSD: ports/chinese/cdict/Makefile,v 1.2 2000/01/03 15:05:09 foxfair Exp $
+# $FreeBSD: ports/chinese/cdict/Makefile,v 1.3 2000/01/03 15:30:32 foxfair Exp $
 #
 
-DISTNAME	zh-cdict-1.0
+DISTNAME=	zh-cdict-1.0
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://ftp.cn.FreeBSD.org/pub/ported/
 
