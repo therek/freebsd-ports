@@ -2,7 +2,7 @@
 # Date created:				9 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xjumpjump/Makefile,v 1.11 2000/04/14 12:27:33 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xjumpjump
@@ -14,8 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 USE_X_PREFIX=	yes
 
