@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.3 2004/04/20 09:03:19 pav Exp $
+@comment $FreeBSD: ports/ftp/wzdftpd/pkg-plist,v 1.4 2004/05/04 14:28:35 krion Exp $
 bin/siteconfig
 bin/siteuptime
 bin/sitewho
@@ -34,6 +34,9 @@ etc/file_groups.txt
 %%DATADIR%%/modules/libwzd_sfv.la
 %%DATADIR%%/modules/libwzd_sfv.a
 %%DATADIR%%/modules/libwzd_sfv.so
+%%TCL%%%%DATADIR%%/modules/libwzd_tcl.a
+%%TCL%%%%DATADIR%%/modules/libwzd_tcl.la
+%%TCL%%%%DATADIR%%/modules/libwzd_tcl.so
 @dirrm %%DATADIR%%/modules/
 @dirrm %%DATADIR%%/backends/
 @dirrm %%DATADIR%%/
