@@ -3,7 +3,7 @@
 # Date created:		Fri Jul 11 06:11:41 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/http-analyze/Makefile,v 1.6 1999/08/31 02:42:52 peter Exp $
+# $FreeBSD: ports/www/http-analyze/Makefile,v 1.7 1999/08/31 06:51:46 mharo Exp $
 #
 
 DISTNAME=       http-analyze2.01
@@ -15,6 +15,8 @@ EXTRACT_SUFX=	-src.tar.gz
 MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
+
+BROKEN=		gd upgrade
 
 MAN1=		http-analyze.1
 
