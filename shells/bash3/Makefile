@@ -3,13 +3,13 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.38 1999/08/31 01:53:15 peter Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.39 1999/08/31 06:50:33 mharo Exp $
 #
 
 DISTNAME=       bash-2.03
 CATEGORIES=	shells
 MASTER_SITES=   ${MASTER_SITE_GNU} \
-		ftp://slc2.ins.cwru.edu/pub/dist/
+		ftp://ftp.cwru.edu/pub/bash/
 MASTER_SITE_SUBDIR=	bash
 .if !defined(NOPORTDOCS)
 DISTFILES=      bash-2.03.tar.gz bash-doc-2.03.tar.gz
