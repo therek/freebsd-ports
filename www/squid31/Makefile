@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.72 2000/07/28 07:27:34 sobomax Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.73 2001/01/05 10:49:01 peter Exp $
 #
 
 PORTNAME=	squid
@@ -25,7 +25,7 @@ PATCHFILES=	squid-2.3.stable4-ftp_icon_not_found.patch \
 		squid-2.3.stable4-html_quoting.patch \
 		squid-2.3.stable4-carp-assertion.patch
 
-MAINTAINER=	peter@freebsd.org
+MAINTAINER=	adrian@freebsd.org
 
 DIST_SUBDIR=	squid2.3
 PATCH_DIST_STRIP= -p0

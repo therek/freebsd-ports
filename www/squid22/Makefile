@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid22/Makefile,v 1.64 2000/04/14 17:44:00 knu Exp $
+# $FreeBSD: ports/www/squid22/Makefile,v 1.65 2000/07/05 12:37:02 tg Exp $
 #
 
 PORTNAME=	squid
@@ -16,7 +16,7 @@ MASTER_SITES=  \
 DISTNAME=	squid-2.2.STABLE5
 EXTRACT_SUFX=	-src.tar.gz
 
-MAINTAINER=	peter@freebsd.org
+MAINTAINER=	adrian@freebsd.org
 
 DIST_SUBDIR=	squid2.2
 PATCH_DIST_STRIP= -p0
