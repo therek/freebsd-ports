@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.32 2000/06/16 21:52:28 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.33 2000/06/17 00:14:42 steve Exp $
 #
 
 PORTNAME=	xforms
@@ -21,8 +21,9 @@ DISTNAME=	bxform-freebsd-alpha
 .else
 DISTNAME=	bxform-freebsd-elf
 .endif
-MASTER_SITES=	${MASTER_SITE_LOCAL:S^%SUBDIR%^steve^} \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://bragg.phys.uwm.edu/~zhao/ftp/
+MASTER_SITE_SUBDIR=	steve
 PATCHDIR=	${.CURDIR}/patches.elf
 .else
 DISTNAME=	bxform-088

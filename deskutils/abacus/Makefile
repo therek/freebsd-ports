@@ -2,7 +2,7 @@
 # Date created:				18 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.9 2000/04/08 22:03:21 mharo Exp $
+# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.10 2000/06/17 00:14:35 steve Exp $
 #
 
 PORTNAME=	abacus
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www-cad.eecs.berkeley.edu/HomePages/aml/abacus/ \
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-PATCH_SITES=	${MASTER_SITE_LOCAL:S^%SUBDIR%^steve^}
+PATCH_SITES=	${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	steve
 PATCHFILES=	${PKGNAME}.patch.gz
 
 MAINTAINER=	ports@FreeBSD.org
