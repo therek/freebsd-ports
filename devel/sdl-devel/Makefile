@@ -2,7 +2,7 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@altavista.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.13 2000/04/25 12:43:29 will Exp $
 #
 
 PORTNAME=		sdl-devel
@@ -32,7 +32,7 @@ CFLAGS+=		-D_THREAD_SAFE
 GL_DEPENDS=
 CONFIGURE_ARGS+=	--disable-video-opengl
 .else
-GL_DEPENDS=		MesaGL.14:${PORTSDIR}/graphics/Mesa3
+GL_DEPENDS=		GL.14:${PORTSDIR}/graphics/Mesa3
 CONFIGURE_ARGS+=	--enable-video-opengl
 .endif
 
