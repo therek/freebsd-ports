@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/www/libwww/Makefile,v 1.20 2000/04/10 00:05:36 cpiazza Exp $
+# $FreeBSD: ports/www/libwww/Makefile,v 1.21 2000/04/24 22:49:38 jseger Exp $
 #
 
 PORTNAME=	libwww
@@ -15,7 +15,7 @@ MAINTAINER=	jseger@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
-CONFIGURE_ARGS=	--enable-shared --enable-static
+CONFIGURE_ARGS=	--enable-shared --enable-static --with-zlib
 DOCDIR=		${PREFIX}/share/doc/libwww
 MAKE_ENV=	objformat=${PORTOBJFORMAT}
 
