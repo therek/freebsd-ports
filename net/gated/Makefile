@@ -1,9 +1,9 @@
-# Makefile for:		gated
+# Ports collection makefile for:	gated
 # Version required:     3.5.11
 # Date created:		29 October 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/net/gated/Makefile,v 1.23 1999/12/06 01:13:42 fenner Exp $
+# $FreeBSD: ports/net/gated/Makefile,v 1.24 2000/01/08 00:44:06 kris Exp $
 #
 
 DISTNAME=       gated-3-5-11
