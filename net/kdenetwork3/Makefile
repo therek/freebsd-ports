@@ -2,11 +2,11 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.53 2000/10/29 03:09:47 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.54 2000/11/17 18:24:36 will Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	2.0
+PORTVERSION=	2.0.1
 CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
@@ -21,8 +21,7 @@ MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 USE_AUTOCONF=	yes
-CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
-		--with-qt-includes=${X11BASE}/include/qt2 \
+CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib \
 		--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+=	LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \

@@ -2,19 +2,18 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.39 2000/10/29 03:09:46 will Exp $
+# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.40 2000/11/17 18:24:38 will Exp $
 #
 
 PORTNAME=	kdegraphics
-PORTVERSION=	2.0
+PORTVERSION=	2.0.1
 CATEGORIES=	graphics kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	kevlo@FreeBSD.org
 
-LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2
+LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 BUILD_DEPENDS=	dvips:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=	dvips:${PORTSDIR}/print/teTeX
 
@@ -23,8 +22,7 @@ MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
-		--with-qt-includes=${X11BASE}/include/qt2 \
+CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
 		CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,29 +2,26 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.45 2000/11/17 18:24:37 will Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.46 2000/11/24 13:08:11 kevlo Exp $
 #
 
 PORTNAME=	kdemultimedia
-PORTVERSION=	2.0
-PORTREVISION=	1
+PORTVERSION=	2.0.1
 CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	kevlo@FreeBSD.org
 
-BUILD_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
-LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2
+RUN_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
+LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 
 USE_QT2=	yes
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
-		--with-qt-includes=${X11BASE}/include/qt2 \
+CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
@@ -40,10 +37,10 @@ post-install:
 	@${ECHO_MSG} " % ${CHMOD} 666 <cdrom_device>"
 	@${ECHO_MSG}
 	@${ECHO_MSG} "to link and give permission to access the CD-ROM device."
-	@${ECHO_MSG} 
+	@${ECHO_MSG}
 	@${ECHO_MSG} "For example(IDE CD-ROM device):"
 	@${ECHO_MSG} " % ${LN} -sf /dev/racd0c /dev/cdrom"
 	@${ECHO_MSG} " % ${CHMOD} 666 /dev/racd0c"
-	@${ECHO_MSG} 
+	@${ECHO_MSG}
 
 .include <bsd.port.mk>

@@ -2,40 +2,34 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.40 2000/10/29 03:09:48 will Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.41 2000/11/17 18:24:37 will Exp $
 #
 
 PORTNAME=	kdesupport
-PORTVERSION=	2.0
+PORTVERSION=	2.0.1
 CATEGORIES=	converters kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	kevlo@FreeBSD.org
 
-BUILD_DEPENDS=	jade:${PORTSDIR}/textproc/jade \
-		${PREFIX}/share/sgml/linuxdoc:${PORTSDIR}/textproc/linuxdoc
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_QT2=	yes
 MOC=		${X11BASE}/bin/moc2
-SOMAJOR=	8
-SOMINOR=	0
 USE_BZIP2=	yes
 USE_NEWGCC=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
-		--with-qt-includes=${X11BASE}/include/qt2 \
+CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-qt-libraries=${X11BASE}/lib \
-		--without-libjpeg --without-libgif \
-		--without-libgdbm --without-libuulib \
-		--without-odbc --without-audiofile \
-		--with-extra-libs=${LOCALBASE}/lib
+		--with-extra-libs=${LOCALBASE}/lib \
+		--without-audiofile
 CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc"
 USE_GMAKE=	yes
-PLIST_SUB+=	LIBVER="${SOMAJOR}"
 
 pre-configure:
 	${PERL} -pi -e "s@TOPSUBDIRS libaps@TOPSUBDIRS@g" ${WRKSRC}/configure
