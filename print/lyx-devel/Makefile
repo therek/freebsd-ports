@@ -2,7 +2,7 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.43 2000/04/09 17:40:40 cpiazza Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.44 2000/04/09 17:50:09 cpiazza Exp $
 #
 
 PORTNAME=	lyx
@@ -40,5 +40,8 @@ pre-fetch:
 	@${ECHO_MSG} "If you want this port built with spell checker support, use"
 	@${ECHO_MSG} "make WITH_ISPELL=yes"
 .endif
+
+post-patch:
+	(cd ${WRKSRC}; ${TOUCH} Makefile.in */Makefile.in src/config.h.in)
 
 .include <bsd.port.mk>
