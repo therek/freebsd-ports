@@ -2,11 +2,12 @@
 # Date created:		29 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nntp/Makefile,v 1.23 2001/08/18 07:56:50 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nntp
 PORTVERSION=	1.5.12.2
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.academ.com/pub/nntp/server/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
