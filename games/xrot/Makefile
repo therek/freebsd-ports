@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xrot/Makefile,v 1.1 2001/04/07 05:51:42 will Exp $
 #
 
 PORTNAME=	xrot
@@ -16,6 +16,7 @@ MAINTAINER=	mark@kyne.com.au
 
 WRKSRC=		${WRKDIR}/xrot
 USE_IMAKE=	yes
+USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
 
 post-configure:
