@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.31 2001/02/17 07:13:08 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.32 2001/03/04 19:34:54 sf Exp $
 #
 
 PORTNAME=	postfix
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/mail/postfix/official/&,}
 MASTER_SITE_SUBDIR= . old related/postfix
 DISTNAME=	release-${PORTVERSION}
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	blaz@amis.net
 
