@@ -2,11 +2,12 @@
 # Date created:		2 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.4 2000/04/14 10:46:21 asami Exp $
+# $FreeBSD: ports/graphics/hppsmtools/Makefile,v 1.5 2001/05/26 01:43:26 ijliao Exp $
 #
 
 PORTNAME=	hppsmtools
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://unimut.fsk.uni-heidelberg.de/demi/photosmart/ \
 		http://www.freenix.no/~anders/ \
@@ -17,13 +18,13 @@ MAINTAINER=	anders@fix.no
 ALL_TARGET=
 
 do-install:
-	@${RM} -f ${PREFIX}/bin/psmget ${PREFIX}/bin/psmdir
-	@${RM} -f ${PREFIX}/bin/psmdel ${PREFIX}/bin/psmsho
 	@${INSTALL_PROGRAM} ${WRKSRC}/psmget ${PREFIX}/bin/
-	@${LN} ${PREFIX}/bin/psmget ${PREFIX}/bin/psmdir
-	@${LN} ${PREFIX}/bin/psmget ${PREFIX}/bin/psmdel
-	@${LN} ${PREFIX}/bin/psmget ${PREFIX}/bin/psmsho
+	@${INSTALL_PROGRAM} ${WRKSRC}/psmdir ${PREFIX}/bin/
+	@${INSTALL_PROGRAM} ${WRKSRC}/psmdel ${PREFIX}/bin/
+	@${INSTALL_PROGRAM} ${WRKSRC}/psmsho ${PREFIX}/bin/
+.if !defined(NOPORTDOCS)
 	@${INSTALL} -d -m 0755 ${PREFIX}/share/doc/hppsmtools
 	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/hppsmtools/
+.endif
 
 .include <bsd.port.mk>
