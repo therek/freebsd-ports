@@ -2,13 +2,13 @@
 # Date created:		1999/07/05
 # Whom:			Jose Marques <noway@nohow.demon.co.uk>
 #
-# $FreeBSD: ports/java/cos/Makefile,v 1.3 2000/04/14 18:40:22 knu Exp $
+# $FreeBSD: ports/java/cos/Makefile,v 1.4 2000/08/14 02:18:14 kevlo Exp $
 #
 
 PORTNAME=	cos
-PORTVERSION=	12Jun2000
+PORTVERSION=	21May2001
 CATEGORIES=	java
-MASTER_SITES=	http://www.servlets.com/resources/com.oreilly.servlet/
+MASTER_SITES=	http://www.servlets.com/cos/
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
