@@ -2,7 +2,7 @@
 # Date created:				13 Sep 2000
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/audio/cdplayer.app/Makefile,v 1.2 2001/02/04 21:12:42 olgeni Exp $
+# $FreeBSD: ports/audio/cdplayer.app/Makefile,v 1.3 2001/04/11 15:32:13 kevlo Exp $
 #
 
 PORTNAME=	cdplayer.app
@@ -15,7 +15,7 @@ MAINTAINER=	dsh@vlink.ru
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		cdaudio.1:${PORTSDIR}/audio/libcdaudio \
-		wraster.3:${PORTSDIR}/x11-wm/windowmaker
+		wraster.4:${PORTSDIR}/x11-wm/windowmaker
 
 USE_X_PREFIX=	yes
 

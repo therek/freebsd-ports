@@ -2,7 +2,7 @@
 # Date created:				17 January 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/login.app/Makefile,v 1.7 2000/12/14 09:27:27 sobomax Exp $
+# $FreeBSD: ports/x11/login.app/Makefile,v 1.8 2001/02/05 16:18:11 olgeni Exp $
 #
 
 PORTNAME=	login.app
@@ -15,7 +15,7 @@ DISTFILES=	Login.app-${PORTVERSION:S/.a/-Alpha-/}${EXTRACT_SUFX} \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker \
+LIB_DEPENDS=	wraster.4:${PORTSDIR}/x11-wm/windowmaker \
 		PropList.2:${PORTSDIR}/devel/libPropList
 
 WRKSRC=		${WRKDIR}/Login.app-${PORTVERSION:S/.a/-Alpha-/}

@@ -2,7 +2,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.42 2001/03/27 10:03:22 olgeni Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.43 2001/03/29 19:19:19 olgeni Exp $
 #
 
 PORTNAME=	wdm
@@ -15,7 +15,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker
+LIB_DEPENDS=	wraster.4:${PORTSDIR}/x11-wm/windowmaker
 
 DIST_SUBDIR=	wdm
 USE_X_PREFIX=	yes

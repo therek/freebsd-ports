@@ -2,7 +2,7 @@
 # Date created:		23 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.8 2000/03/22 01:58:50 will Exp $
+# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.9 2000/04/08 22:01:57 mharo Exp $
 #
 
 PORTNAME=	wmglobe
@@ -12,7 +12,7 @@ MASTER_SITES=	http://perso.linuxfr.org/jdumont/wmg/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker
+LIB_DEPENDS=	wraster.4:${PORTSDIR}/x11-wm/windowmaker
 
 USE_X_PREFIX=	yes
 
