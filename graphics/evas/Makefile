@@ -2,15 +2,16 @@
 # Date created:		24 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/evas/Makefile,v 1.1 2000/11/03 12:24:18 nakai Exp $
 #
 
 PORTNAME=	evas
 PORTVERSION=	0.0.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.sourceforge.net/enlightenment/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	enlightenment
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ishmael27@home.com
 
 LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2-tmp
 
