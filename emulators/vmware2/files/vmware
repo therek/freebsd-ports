@@ -2,9 +2,9 @@
 #
 # Run vmware
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vmware2/files/vmware,v 1.1 2000/04/17 04:23:24 knu Exp $
 
 LANG=C
 PATH=/bin:$PATH
 
-@@PREFIX@@/lib/vmware/bin/vmware
+@@PREFIX@@/lib/vmware/bin/vmware "$@"
