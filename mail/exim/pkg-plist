@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.32 2003/09/10 13:49:08 sheldonh Exp $
+@comment $FreeBSD: ports/mail/exim/pkg-plist,v 1.33 2003/09/29 11:42:45 sheldonh Exp $
 @unexec [ ! -f /var/run/exim.pid ] || %%RC_DIR%%/exim%%RC_SUFX%% stop || true
 sbin/exim
 sbin/exim-%%EXIM_VERSION%%
@@ -46,6 +46,4 @@ etc/exim/configure.default
 @unexec rmdir %B 2>/dev/null || true
 @cwd %%RC_DIR%%
 exim%%RC_SUFX%%
-@exec mkdir -p /var/log/exim
-@exec chown mailnull:mail /var/log/exim
 @unexec rmdir /var/log/exim 2>/dev/null || true
