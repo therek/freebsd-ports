@@ -1,11 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-<<<<<<< MOVED
-# $FreeBSD: ports/MOVED,v 1.363 2004/03/06 12:23:09 pav Exp $
-=======
-# $FreeBSD: ports/MOVED,v 1.367 2004/03/10 00:53:44 sheldonh Exp $
->>>>>>> 1.367
+# $FreeBSD: ports/MOVED,v 1.368 2004/03/10 05:20:46 mph Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -980,4 +976,3 @@ x11-toolkits/qt32|x11-toolkits/qt33|2004-03-09|qt32 replaced by qt33
 mail/ksig|misc/ksig|2004-03-09|ksig is now a part of the kdeaddons ports
 mail/exim-old|mail/exim|2004-03-09|No security maintenance from author, successor is exim
 sysutils/xwatch||2004-03-09|obsolete-distfile deleted by author
-
