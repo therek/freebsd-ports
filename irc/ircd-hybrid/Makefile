@@ -2,11 +2,11 @@
 # Date created:		9 January 1998
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.13 1999/09/04 19:52:27 cpiazza Exp $
+# $FreeBSD: ports/irc/ircd-hybrid/Makefile,v 1.14 2000/04/12 06:28:12 obrien Exp $
 #
 
 PORTNAME=	ircd-hybrid
-PORTVERSION=	5.3p7
+PORTVERSION=	5.3p8
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/hybrid/
 
