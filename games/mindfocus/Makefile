@@ -2,7 +2,7 @@
 # Date created:        3 December 1998
 # Whom:                Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD: ports/games/mindfocus/Makefile,v 1.4 2000/06/20 20:04:00 sada Exp $
+# $FreeBSD: ports/games/mindfocus/Makefile,v 1.5 2000/08/03 09:23:38 asami Exp $
 #
 
 PORTNAME=	mindfocus
@@ -15,7 +15,6 @@ MAINTAINER=	ixtl@utmc.or.jp
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-NO_INSTALL_MANPAGES=	yes
 RESTRICTED=    'contains commercial character data'
 
 post-install:
