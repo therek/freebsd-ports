@@ -1,4 +1,4 @@
-share/texmf/tex/@comment $FreeBSD$
+@comment $FreeBSD: ports/vietnamese/vntex/pkg-plist,v 1.1 2001/02/07 11:34:36 obrien Exp $
 share/texmf/tex/generic/vietnam/dblaccnt.tex
 share/texmf/tex/generic/vietnam/mcviscii.def
 share/texmf/tex/generic/vietnam/plainenc.tex
