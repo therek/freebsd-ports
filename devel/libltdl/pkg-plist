@@ -1,6 +1,0 @@
-@comment $FreeBSD: ports/devel/libtool15/pkg-plist.libltdl,v 1.2 2003/07/02 18:26:53 ade Exp $
-include/ltdl.h
-lib/libltdl.a
-lib/libltdl.la
-lib/libltdl.so
-lib/libltdl.so.4
