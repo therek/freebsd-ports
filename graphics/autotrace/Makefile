@@ -2,11 +2,12 @@
 # Date created:		12 April 2001
 # Whom:			KANOU Hiroki <kanou@mil.allnet.ne.jp>
 #
-# $FreeBSD: ports/graphics/autotrace/Makefile,v 1.3 2001/08/15 20:33:16 knu Exp $
+# $FreeBSD: ports/graphics/autotrace/Makefile,v 1.4 2001/09/11 02:22:34 ache Exp $
 #
 
 PORTNAME=	autotrace
 PORTVERSION=	0.27a
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://homepage.go.com/~martweb/
@@ -20,8 +21,8 @@ LIB_DEPENDS=	jbig.1:${PORTSDIR}/graphics/jbigkit \
 		freetype.7:${PORTSDIR}/print/freetype2 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.5:${PORTSDIR}/graphics/png \
-		ming.2:${PORTSDIR}/graphics/ming \
-		wmf.1:${PORTSDIR}/graphics/libwmf \
+		ming.3:${PORTSDIR}/graphics/ming \
+		wmf.2:${PORTSDIR}/graphics/libwmf \
 		Magick.5:${PORTSDIR}/graphics/ImageMagick
 .if !exists(/usr/bin/bzip2)
 LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
