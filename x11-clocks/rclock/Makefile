@@ -1,14 +1,14 @@
 # ex:ts=8
 # Ports collection Makefile for:  rclock
-# Version required:		  2.6.1
+# Version required:		  2.7.2
 # Date created:			  24th Feburary 1997
 # Whom:				  obrien@NUXI.com
 #
-# $FreeBSD: ports/x11-clocks/rclock/Makefile,v 1.10 1999/09/05 22:10:23 obrien Exp $
+# $FreeBSD: ports/x11-clocks/rclock/Makefile,v 1.11 1999/10/25 07:47:32 obrien Exp $
 #
 
-DISTNAME=	rxvt-2.7.1
-PKGNAME=	rclock-2.7.1
+DISTNAME=	rxvt-2.7.2
+PKGNAME=	rclock-2.7.2
 CATEGORIES=	x11-clocks
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/  \
 		ftp://mason.primenet.com.au/pub/rxvt/ \
