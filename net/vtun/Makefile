@@ -2,14 +2,13 @@
 # Date created:				05 Feb 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/net/vtun/Makefile,v 1.2 2000/08/22 02:52:17 kevlo Exp $
+# $FreeBSD: ports/net/vtun/Makefile,v 1.3 2000/09/07 13:17:55 kevlo Exp $
 #
 
 PORTNAME=	vtun
-PORTVERSION=	2.3
+PORTVERSION=	2.4
 CATEGORIES=	net
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	vtun
+MASTER_SITES=	http://vtun.sourceforge.net/
 
 MAINTAINER=	kevlo@FreeBSD.org
 
@@ -25,9 +24,14 @@ CONFIGURE_ARGS+=--localstatedir=/var \
 		--with-ssl-headers=${LOCALBASE}/include/openssl \
 		--with-ssl-lib=${LOCALBASE}/lib \
 		--with-lzo-headers=${LOCALBASE}/include \
-		--with-lzo-lib=${LOCALBASE}/lib \
-		--enable-lzo
+		--with-lzo-lib=${LOCALBASE}/lib
 
 ALL_TARGET= 	vtund
+
+post-install:
+	@${MKDIR} ${PREFIX}/share/doc/vtund
+.for doc in FAQ README README.Setup README.Shaper
+	@${INSTALL_DATA} ${WRKSRC}/${doc} ${PREFIX}/share/doc/vtund
+.endfor
 
 .include <bsd.port.mk>
