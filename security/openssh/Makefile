@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.26 1999/11/29 07:09:39 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.27 1999/12/06 04:49:22 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -13,6 +13,8 @@ CATEGORIES=	security net
 MASTER_SITES=	ftp://internat.FreeBSD.org/pub/Crypto/OpenSSH/
 
 MAINTAINER=	green@FreeBSD.org
+
+RESTRICTED=	"One file calls external cryptographic routines."
 
 LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
 
