@@ -2,7 +2,7 @@
 # Date Created:		19 September 2000
 # Whom:			nra
 #
-# $FreeBSD: ports/misc/libh/Makefile,v 1.10 2001/05/30 14:58:30 sf Exp $
+# $FreeBSD: ports/misc/libh/Makefile,v 1.11 2001/06/14 14:57:07 alex Exp $
 #
 
 PORTNAME=	libh
@@ -28,7 +28,7 @@ DISTFILES!=	${CAT} ${FILESDIR}/distfiles
 
 CVS_CMD?=	cvs -z3
 # arbitrary date for now.
-CVS_DATE=	Wed June 12 14:00:00 GMT 2001
+CVS_DATE=	Wed June 19 14:00:00 GMT 2001
 CVS_DATE_!=	${ECHO} -n "${CVS_DATE}" | ${SED} 's/[ \t:]/_/g'
 CVS_SITES?=	:pserver:anonymous@usw4.freebsd.org:/home/libh/cvs
 DIRNAME=	${PORTNAME}-${PORTVERSION}
