@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.16 2000/09/14 17:57:52 ade Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.17 2000/09/18 00:46:10 steve Exp $
 #
 
     SUBDIR += asfiles
@@ -19,6 +19,7 @@
     SUBDIR += workplace
     SUBDIR += x-files
     SUBDIR += xcruise
+    SUBDIR += xdiskusage
     SUBDIR += xfm
     SUBDIR += xnc
 
