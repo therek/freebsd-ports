@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.334 2001/07/17 07:27:22 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.335 2001/07/24 13:14:18 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -264,6 +264,7 @@
     SUBDIR += vertex
     SUBDIR += vid
     SUBDIR += view3ds
+    SUBDIR += vlc
     SUBDIR += vterrain-sdk
     SUBDIR += whirlgif
     SUBDIR += win32-codecs
