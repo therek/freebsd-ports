@@ -2,11 +2,11 @@
 # Date created:         30 Aug 1999
 # Whom:                 saper@system.pl
 #
-# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.12 2001/04/15 10:08:10 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gif2png
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.tuxedo.org/~esr/gif2png/
 
