@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.123 2003/08/25 05:52:46 marcus Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.124 2004/03/29 16:54:42 dinoex Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -184,4 +184,3 @@ fi
 if [ -z "${MYSQL}" ]; then
 	echo "WITHOUT_MYSQL=	1"
 fi
-

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/rkive/scripts/configure,v 1.2 1999/08/30 14:31:52 peter Exp $
 #
 if [ -d /var/spool/news ] && [ ! -d /var/news ]
 then
@@ -28,5 +28,3 @@ mv ${WRKSRC}/rkive.h ${WRKSRC}/rkive.h.old
 sed <${WRKSRC}/rkive.h.old >${WRKSRC}/rkive.h -f /tmp/tmp.rkive.sed.$$
 
 rm -f /tmp/tmp.inn.sed.$$
-
-
