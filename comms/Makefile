@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.51 2001/04/18 15:32:55 sobomax Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.52 2001/05/20 04:34:26 will Exp $
 #
 
     SUBDIR += asmodem
@@ -29,6 +29,7 @@
     SUBDIR += tkhylafax
     SUBDIR += viewfax
     SUBDIR += vpb2
+    SUBDIR += vrflash
     SUBDIR += xcept
     SUBDIR += yaps
     SUBDIR += yawmppp
