@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:00:30 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-WWW-Babelfish/Makefile,v 1.2 2001/01/09 13:38:57 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	WWW-Babelfish
@@ -14,7 +14,8 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${SITE_PERL}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
+BUILD_DEPENDS=	${SITE_PERL}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww \
+		${SITE_PERL}/IO/String.pm:${PORTSDIR}/devel/p5-IO-String
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
