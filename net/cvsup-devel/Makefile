@@ -2,13 +2,14 @@
 # Date created:		28 April 2001
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.3 2001/07/08 18:47:28 jdp Exp $
+# $FreeBSD: ports/net/cvsup-devel/Makefile,v 1.4 2001/08/02 23:32:08 jdp Exp $
 #
 
-PORTVERSION=	16.1c
+PORTVERSION=	16.1d
 PORTREVISION=	0
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
+MASTER_SITES=	http://people.freebsd.org/~jdp/s1g/ \
+		ftp://ftp3.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
 		ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/snapshots/ \
 		ftp://ftp.cs.tu-berlin.de/pub/FreeBSD/development/CVSup/snapshots/
 DISTNAME=	cvsup-snap-${PORTVERSION}
