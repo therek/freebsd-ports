@@ -2,7 +2,7 @@
 # Date created:		07 December 2000
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/mail/stuphead/Makefile,v 1.3 2001/05/09 14:30:04 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stuphead
@@ -15,7 +15,7 @@ PATCHFILES=	${PORTNAME}-${PORTVERSION}-1.patch
 
 MAINTAINER=	ozz@FreeBSD.org.ru
 
-LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	iconv.3:${PORTSDIR}/converters/libiconv
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes

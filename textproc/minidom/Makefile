@@ -3,7 +3,7 @@
 # Date created:			Aug 13, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/textproc/minidom/Makefile,v 1.1 2001/08/13 17:18:30 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	minidom
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.cs.unibo.it/helm/mml-widget/sources/
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xml2:${PORTSDIR}/textproc/libxml2 \
-		giconv:${PORTSDIR}/converters/libiconv
+		iconv.3:${PORTSDIR}/converters/libiconv
 
 USE_GLIB=	yes
 USE_LIBTOOL=	yes

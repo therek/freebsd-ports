@@ -2,7 +2,7 @@
 # Date created:		26 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/converters/p5-Text-Iconv/Makefile,v 1.4 2001/03/10 04:48:43 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Text-Iconv
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@protey.ru
 
-LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
+LIB_DEPENDS=	iconv.3:${PORTSDIR}/converters/libiconv
 
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS+=	INC="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib -liconv"
