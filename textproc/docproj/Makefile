@@ -2,11 +2,11 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.31 2001/07/24 08:46:43 dd Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.32 2001/08/05 21:19:48 nik Exp $
 #
 
 PORTNAME=	docproj
-PORTVERSION=	1.7
+PORTVERSION=	1.8
 CATEGORIES=	textproc
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -26,7 +26,8 @@ RUN_DEPENDS=	instant:${PORTSDIR}/textproc/sgmlformat \
 		${PREFIX}/bin/peps:${PORTSDIR}/graphics/peps \
 		${PREFIX}/bin/pngtopnm:${PORTSDIR}/graphics/netpbm \
 		${PREFIX}/bin/links:${PORTSDIR}/www/links \
-		${PREFIX}/bin/xsltproc:${PORTSDIR}/textproc/libxslt
+		${PREFIX}/bin/xsltproc:${PORTSDIR}/textproc/libxslt \
+		${PREFIX}/bin/scr2png:${PORTSDIR}/graphics/scr2png
 
 .if defined(WITH_OPENJADE) || ${MACHINE_ARCH} == "alpha"
 RUN_DEPENDS+=	openjade:${PORTSDIR}/textproc/openjade
