@@ -1,5 +1,5 @@
-# $FreeBSD: ports/print/ghostscript-afpl/Makefile.inc,v 1.6 2004/02/29 08:18:45 krion Exp $
+# $FreeBSD: ports/print/ghostscript-afpl/Makefile.inc,v 1.7 2004/06/13 12:36:20 nork Exp $
 
 GS_VERSION=	8.14
-GS_REVISION=	1
+GS_REVISION=	2
 GS_EPOCH=	1
