@@ -1,14 +1,11 @@
 VMware 2.0 for Linux on FreeBSD.
 $Date: 2000/01/23 22:28:10 $
-$FreeBSD: ports/emulators/vmware2/files/README.FreeBSD,v 1.3 2000/01/28 06:25:43 obrien Exp $
+$FreeBSD: ports/emulators/vmware2/files/README.FreeBSD,v 1.4 2000/03/29 21:23:05 knu Exp $
 
 Introduction.
 
 This piece of software provides some basic support for running
-the VMware 2.0 for Linux on FreeBSD.
-
-I'm using FreeBSD 4.0 -current system and don't know whether
-this software will work on the 3.X branch.
+the VMware 2.0 for Linux on FreeBSD 4.0 and better ;) systems.
 
 ===
 

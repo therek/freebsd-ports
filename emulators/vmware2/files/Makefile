@@ -1,5 +1,5 @@
-# $FreeBSD: ports/emulators/vmware/files/Makefile,v 1.3 2000/01/28 06:25:43 obrien Exp $
+# $FreeBSD: ports/emulators/vmware2/files/Makefile,v 1.4 2000/03/25 20:24:18 knu Exp $
 
-SUBDIR=	vmmon-only vmnet-only/freebsd
+SUBDIR=	vmmon-only
 
 .include <bsd.subdir.mk>
