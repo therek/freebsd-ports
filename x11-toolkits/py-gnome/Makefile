@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.39 2000/06/29 12:17:32 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.40 2000/09/08 12:23:55 tg Exp $
 #
 
 PORTNAME=	py-gnome
@@ -14,26 +14,27 @@ DISTNAME=	gnome-python-${PORTVERSION}
 
 MAINTAINER=	nectar@FreeBSD.org
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 ${PYGTK_DEP}
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12                  \
-		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter       \
+BUILD_DEPENDS=	${PYGTK_DEP}
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12			\
+		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter	\
 		panel_applet.4:${PORTSDIR}/x11/gnomecore
-RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15 ${PYGTK_DEP}
+RUN_DEPENDS=	${PYGTK_DEP}
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
+USE_PYTHON=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure pygnome/configure pygtk/configure
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
+CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"				\
 		GTK_CONFIG="${GTK_CONFIG}"
-CONFIGURE_ARGS=	--with-python=python1.5                                 \
+CONFIGURE_ARGS=	--with-python=${PYTHON_CMD}				\
 		--with-gnome-config=${X11BASE}/bin/gnome-config
 
 EG_SRC_DIR=	${WRKSRC}/pygnome/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gnome
-PYGTK_DEP=	${LOCALBASE}/lib/python1.5/site-packages/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
+PYGTK_DEP=	${PYTHON_LIBDIR}/site-packages/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
 PLIST_COMPLETE= ${PKGDIR}/PLIST
 
 .if !defined(NOPORTDOCS)
