@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				Mark Murray <markm@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.7 2000/07/22 10:44:44 vanilla Exp $
+# $FreeBSD: ports/security/p5-Crypt-CBC/Makefile,v 1.8 2001/03/01 06:37:13 vanilla Exp $
 #
 
 PORTNAME=	Crypt-CBC
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	markm@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5
 
 RESTRICTED=	"Crypto; export-controlled"
 

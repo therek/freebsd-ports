@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:28:15 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-File-Cache/Makefile,v 1.1 2001/01/03 23:50:44 will Exp $
+# $FreeBSD: ports/devel/p5-File-Cache/Makefile,v 1.2 2001/03/01 06:37:33 vanilla Exp $
 #
 
 PORTNAME=	File-Cache
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
+BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${SITE_PERL}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
