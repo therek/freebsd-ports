@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.224 2000/09/28 14:48:48 sanpei Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.225 2000/10/01 15:27:34 alex Exp $
 #
 
     SUBDIR += 4va
@@ -156,6 +156,7 @@
     SUBDIR += quickpics
     SUBDIR += qvplay
     SUBDIR += rayshade
+    SUBDIR += ruby-gd
     SUBDIR += ruby-libpng
     SUBDIR += ruby-opengl
     SUBDIR += sane
