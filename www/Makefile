@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.270 2000/11/25 20:19:18 demon Exp $
+# $FreeBSD: ports/www/Makefile,v 1.271 2000/11/26 14:16:16 roam Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -198,6 +198,7 @@
     SUBDIR += weblint
     SUBDIR += webredirect
     SUBDIR += webstone
+    SUBDIR += webstone-ssl
     SUBDIR += wml
     SUBDIR += wmnetselect
     SUBDIR += wn
