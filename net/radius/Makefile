@@ -2,15 +2,14 @@
 # Date created:		4. July 1996
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/net/radius/Makefile,v 1.13 2000/04/09 18:13:15 cpiazza Exp $
+# $FreeBSD: ports/net/radius/Makefile,v 1.14 2000/12/11 02:36:14 steve Exp $
 #
 
 PORTNAME=	radius-basic
-PORTVERSION=	3.6B
-PORTREVISION=	1
+PORTVERSION=	3.6B1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.merit.edu/radius/releases/
-DISTNAME=	radius.3.6B.basic
+DISTNAME=	radius.${PORTVERSION}.basic
 
 MAINTAINER=	ports@FreeBSD.org
 
