@@ -2,18 +2,19 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.19 2001/05/31 22:22:47 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emacs20-dl-wnn6
 PORTVERSION=	0.3.6
+PORTREVISION=	1
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://tokuda-www.cs.titech.ac.jp/~katsuya/emacs/
 DISTNAME=	dl-wnn-${PORTVERSION}
 
 MAINTAINER=	shige@FreeBSD.org
 
-LIB_DEPENDS=	wnn6.1:${.CURDIR}/../../japanese/Wnn6-lib
+LIB_DEPENDS=	wnn6.2:${.CURDIR}/../../japanese/Wnn6-lib
 BUILD_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \
 		autoconf:${PORTSDIR}/devel/autoconf \
 		${NONEXISTENT}:${EMACSDL_DIR}:configure
