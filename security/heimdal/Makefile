@@ -2,7 +2,7 @@
 # Date created:				10/23/1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.20 2000/08/30 13:59:55 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.21 2000/09/20 11:56:50 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -62,12 +62,12 @@ CONFIGURE_ARGS+=	--without-krb4
 PLIST:=			${WRKDIR}/PLIST
 
 pre-install:
-	@${CP} ${PKGDIR}/PLIST ${PLIST}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .if exists(/usr/lib/libkrb.a) && !defined(WITHOUT_KRB4)
-	@${CAT} ${PKGDIR}/PLIST.KRB4 >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.krb4 >> ${PLIST}
 .endif
 .if defined(USE_XLIB)
-	@${CAT} ${PKGDIR}/PLIST.X11 >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.x11 >> ${PLIST}
 .endif
 
 # awful hack to avoid running automake after patching configure
