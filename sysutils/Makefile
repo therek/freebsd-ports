@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.133 2000/10/29 01:14:36 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.134 2000/12/03 20:34:34 will Exp $
 #
 
     SUBDIR += LPRng
@@ -35,6 +35,7 @@
     SUBDIR += flexbackup
     SUBDIR += fontedit
     SUBDIR += fortunelock
+    SUBDIR += fsck_ext2fs
     SUBDIR += gcombust
     SUBDIR += gkrellm
     SUBDIR += glload
