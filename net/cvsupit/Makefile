@@ -2,11 +2,11 @@
 # Date created:		8 May 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/net/cvsupit/Makefile,v 1.7 2001/03/18 03:07:17 jkh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvsupit
-PORTVERSION=	3.0
+PORTVERSION=	3.1
 CATEGORIES=	net
 DISTFILES=	#empty
 
