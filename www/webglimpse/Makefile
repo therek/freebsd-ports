@@ -4,7 +4,7 @@
 # Date created:                         2 Nov 1998
 # Whom:                                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/webglimpse/Makefile,v 1.10 1999/08/31 02:43:28 peter Exp $
 #
 
 DISTNAME=       webglimpse-1.6.src
@@ -12,11 +12,12 @@ PKGNAME=        webglimpse-1.6
 CATEGORIES=     www textproc
 MASTER_SITES=   ftp://ftp.cs.arizona.edu/glimpse/
 
-RUN_DEPENDS+=   ${PREFIX}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
-RUN_DEPENDS+=   glimpse:${PORTSDIR}/textproc/glimpse
-WRKSRC=         ${WRKDIR}/webglimpse-1.6.edu
-
 MAINTAINER=     ache@freebsd.org
+
+RUN_DEPENDS+=   ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
+RUN_DEPENDS+=   glimpse:${PORTSDIR}/textproc/glimpse
+
+WRKSRC=         ${WRKDIR}/webglimpse-1.6.edu
 
 NO_CDROM=	depends on glimpse
 USE_PERL5=      YES
