@@ -2,15 +2,20 @@
 # Date created:        28 March 1997
 # Whom:                Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/news/slrn/Makefile,v 1.18 1999/12/29 21:36:53 steve Exp $
+# $FreeBSD: ports/news/slrn/Makefile,v 1.19 2000/04/09 17:33:21 cpiazza Exp $
 #
 
 PORTNAME=	slrn
-PORTVERSION=	0.9.6.2
+PORTVERSION=	0.9.6.3
 CATEGORIES=	news
-MASTER_SITES=	ftp://space.mit.edu/pub/davis/slrn/
+MASTER_SITES=	ftp://space.mit.edu/pub/davis/slrn/ \
+		ftp://ftp.uni-stuttgart.de/pub/unix/misc/slang/slrn/ \
+		ftp://ftp.fu-berlin.de/pub/unix/news/slrn/ \
+		ftp://ftp.ntua.gr/pub/lang/slang/ \
+		ftp://ftp.plig.org/pub/slrn/
 
-MAINTAINER=	xaa+ports@timewasters.nl
+
+MAINTAINER=	xaa+ports@madison-gurkha.com
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 
