@@ -2,14 +2,14 @@
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.6 2000/09/25 12:21:15 asami Exp $
+# $FreeBSD: ports/archivers/makeself/Makefile,v 1.7 2001/05/22 17:21:42 ijliao Exp $
 #
 
 PORTNAME=	makeself
 PORTVERSION=	1.5.3
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.linuxgames.com/megastep/makeself/
-DISTFILES=	makeself.gz.sh
+MASTER_SITES=	http://linuxberg.tele.net/files/console/file/
+EXTRACT_SUFX=	.gz.sh
 
 MAINTAINER=	ports@FreeBSD.org
 
