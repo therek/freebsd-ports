@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.83 2000/10/19 13:28:42 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.84 2000/10/24 14:32:48 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -21,6 +21,7 @@ Y2K=		http://www.mysql.com/documentation/mysql/bychapter/manual_Introduction.htm
 SLAVEDIRS=	databases/mysql323-client
 MASTERPORTNAME=	mysql-server
 DB_DIR?=	/var/db/mysql
+NO_LATEST_LINK=	yes
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
