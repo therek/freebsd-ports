@@ -2,13 +2,11 @@
 # Date created:				12 Dec 1999
 # Whom:					truckman
 #
-# $FreeBSD: ports/security/chrootuid/Makefile,v 1.1.1.1 1999/12/09 10:37:37 truckman Exp $
+# $FreeBSD: ports/security/chrootuid/Makefile,v 1.2 2000/04/09 18:29:28 cpiazza Exp $
 #
 
 PORTNAME=	chrootuid
 PORTVERSION=	1.2
-DISTNAME=	chrootuid1.2
-PKGNAME=	chrootuid-1.2
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.porcupine.org/pub/security/ \
 		ftp://coast.cs.purdue.edu/pub/tools/unix/chrootuid/
