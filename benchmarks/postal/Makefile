@@ -3,16 +3,16 @@
 # Date created:			Apr 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/postal/Makefile,v 1.1 2001/04/02 06:23:50 ijliao Exp $
 #
 
 PORTNAME=	postal
-PORTVERSION=	0.59
+PORTVERSION=	0.60
 CATEGORIES=	benchmarks mail
 MASTER_SITES=	http://www.coker.com.au/postal/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_OPENSSL=	yes
 GNU_CONFIGURE=	yes
