@@ -2,22 +2,24 @@
 # Date created:		29 Mar 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/pilrc/Makefile,v 1.3 2000/04/14 18:40:28 knu Exp $
+# $FreeBSD: ports/palm/pilrc/Makefile,v 1.4 2000/04/21 07:52:05 mharo Exp $
 #
 
 PORTNAME=	pilrc
-PORTVERSION=	2.5b1
+PORTVERSION=	2.5c
 CATEGORIES=	palm
-MASTER_SITES=	http://www.hig.se/~ardiri/development/palmIII/pilrc/
-DISTNAME=	pilrcsrc
+MASTER_SITES=	http://www.ardiri.com/download/pilrc/
+DISTNAME=	pilrc_src
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		glib12.3:${PORTSDIR}/devel/glib12
 
-USE_ZIP=	YES
-NO_WRKSUBDIR=	YES
+WRKSRC=		${WRKDIR}/pilrc-${PORTVERSION}
+GNU_CONFIGURE=	YES
+CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pilrc ${WRKSRC}/pilrcui ${PREFIX}/bin
