@@ -3,10 +3,10 @@
 # Date created:		4 May 1998
 # Whom:			kargl@apl.washington.edu
 #
-# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.6 1999/09/30 03:37:31 cpiazza Exp $
+# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.7 1999/10/10 23:27:25 steve Exp $
 
 DISTNAME=	ftnchek
-PKGNAME=	ftnchek-2.11.0
+PKGNAME=	ftnchek-2.11.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.netlib.org/fortran/
 EXTRACT_SUFX=	.tgz
