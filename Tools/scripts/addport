@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.29 2003/01/30 17:28:34 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.30 2003/02/10 08:56:59 kris Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -193,8 +193,8 @@ foreach my $thisdir (@dirs) {
 
 	# Get the category name and make it suitable for use with cvs
 	my $category;
-	$_ = `grep CATEGORIES Makefile`;
-	m/\w+\W+([\w-]+)/;
+	$_ = `$make -V CATEGORIES`;
+	m/([\w-]+)/;
 	$category = $1;
 	chomp $category;
 	if ($interactive) {
