@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.305 2000/09/19 16:45:37 ade Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.306 2000/09/26 06:34:03 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -16,6 +16,7 @@
     SUBDIR += bricons
     SUBDIR += dgs
     SUBDIR += dxpc
+    SUBDIR += dynamag
     SUBDIR += ebuttons
     SUBDIR += efancylauncher
     SUBDIR += emu
