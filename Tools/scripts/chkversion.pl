@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.8 2004/05/21 16:23:10 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.9 2004/05/30 10:44:51 eik Exp $
 #
 # MAINTAINER=   eik@FreeBSD.org
 #
@@ -251,7 +251,7 @@ sub getauthors {
         if (!$revision{$origin}) {
             open MAKEFILE, "<$portsdir/$origin/Makefile";
             while (<MAKEFILE>) {
-               if (m'\$FreeBSD: [^\$ ]+,v (\d+(?:\.\d+)+) \d{4}(?:/\d{2}){2} \d{2}(?::\d{2}){2} (\w+) [\w ]+\$') {
+               if (m'\$FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.9 2004/05/30 10:44:51 eik Exp $ ]+,v (\d+(?:\.\d+)+) \d{4}(?:/\d{2}){2} \d{2}(?::\d{2}){2} (\w+) [\w ]+\$') {
                    $revision{$origin} = $1;
                    $author{$origin} = $2;
                }
@@ -271,7 +271,7 @@ sub blame {
                 my @cvslog = readfrom "$portsdir/$origin",
                   $cvs, '-R', 'log', '-N', '-r' . ($revision{$origin} ? $revision{$origin} : '.'), 'Makefile';
                 foreach (@cvslog) {
-                    my $in_log = /^-/ ... /^[-=]/;
+                    my $in_log = /^-{28}$/ ... /^(-{28}|={77})$/;
                     print $fh "   | $_\n"
                       if ($in_log && $in_log != 1 && $in_log !~ /E0$/);
                 }
