@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.415 2001/01/06 08:05:28 obrien Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.416 2001/01/09 09:42:46 jkoshy Exp $
 #
     SUBDIR += zziplib
 
@@ -225,6 +225,7 @@
     SUBDIR += p5-C-Scan
     SUBDIR += p5-Class-MethodMaker
     SUBDIR += p5-ConfigReader
+    SUBDIR += p5-Class-Singleton
     SUBDIR += p5-Class-Tom
     SUBDIR += p5-Config-IniFiles
     SUBDIR += p5-Curses
