@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/textproc/xml2rfc/pkg-plist,v 1.1 2002/07/25 19:39:44 naddy Exp $
+@comment $FreeBSD: ports/textproc/xml2rfc/pkg-plist,v 1.2 2003/07/09 18:28:43 arved Exp $
 bin/xml2rfc
 bin/xml2txt
 bin/xml2html
@@ -13,5 +13,5 @@ share/doc/xml2rfc/rfc2629.dtd
 share/doc/xml2rfc/rfc2629.html
 share/doc/xml2rfc/rfc2629.txt
 share/doc/xml2rfc/rfc2629.xml
-share/doc/xml2rfc/rfc2629.xslt
+share/doc/xml2rfc/rfc2629.xsd
 @dirrm share/doc/xml2rfc
