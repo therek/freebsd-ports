@@ -2,7 +2,7 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.43 2001/02/05 15:11:07 olgeni Exp $
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.44 2001/02/10 05:25:52 kris Exp $
 #
 
 PORTNAME=	qpopper
@@ -23,7 +23,7 @@ PATCHFILES=     qpopper3.1.2-ipv6-20001214.diff.gz
 PATCH_DIST_STRIP=       -p1
 .endif
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lioux@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-lmd -lutil" \
