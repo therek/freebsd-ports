@@ -3,11 +3,11 @@
 # Date created:		20 Dezember 1999
 # Whom:                 Martin Blapp
 #
-# $FreeBSD$
+# $FreeBSD: ports/german/staroffice5/Makefile,v 1.1 2000/01/08 22:25:42 eivind Exp $
 #
 
 DISTNAME=	so51a_lnx_49
-PKGNAME=	staroffice-5.1a
+PKGNAME=	de-staroffice-5.1a
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.hagenhomes.com/pub/  \
 		ftp://ftp.stat.duke.edu/pub/Users/sto/StarOffice51a/  \
