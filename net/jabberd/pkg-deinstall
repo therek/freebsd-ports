@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/jabberd/pkg-deinstall,v 1.1 2003/12/30 16:18:46 demon Exp $
 #
 
 if [ "$2" != "POST-DEINSTALL" ]; then
@@ -10,6 +10,10 @@ USER=jabber
 
 if pw usershow "${USER}" 2>/dev/null 1>&2; then
 	echo "To delete Jabber user permanently, use 'pw userdel ${USER}'"
+fi
+
+if pw groupshow "${USER}" 2>/dev/null 1>&2; then
+	echo "To delete Jabber group permanently, use 'pw groupdel ${USER}'"
 fi
 
 exit 0
