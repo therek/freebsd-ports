@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.18 2002/11/11 19:44:47 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.19 2002/12/09 05:09:56 adamw Exp $
 #
 
 .if !defined(_POSTMKINCLUDED)
@@ -30,6 +30,7 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLA
 				's|[(]GNOME_datadir[)]/gnome/|(datadir)/|g ; \
 				 s|[(]GNOME_datadir[)]/locale|(prefix)/share/locale|g ; \
 				 s|[(]datadir[)]/locale|(prefix)/share/locale|g ; \
+				 s|[(]libdir[)]/locale|(prefix)/share/locale|g ; \
 				 s|[(]gnomedatadir[)]/gnome|(gnomedatadir)|g ; \
 				 s|[(]datadir[)]/aclocal|(prefix)/share/aclocal|g ; \
 				 s|[(]datadir[)]/gnome/|(datadir)/|g ; \
@@ -171,7 +172,7 @@ libglade_MAKE_ENV=	LIBGLADE_CONFIG="${LIBGLADE_CONFIG}"
 libglade_DETECT=	${LIBGLADE_CONFIG}
 libglade_USE_GNOME_IMPL=gnomedb
 
-gal_LIB_DEPENDS=	gal.21:${PORTSDIR}/x11-toolkits/gal
+gal_LIB_DEPENDS=	gal.22:${PORTSDIR}/x11-toolkits/gal
 gal_DETECT=		${X11BASE}/etc/galConf.sh
 gal_USE_GNOME_IMPL=	libglade
 
