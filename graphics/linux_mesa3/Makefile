@@ -2,7 +2,7 @@
 # Date created:		May 18 2000
 # Whom:			Masahiro TAKEMURA
 #
-# $FreeBSD: ports/graphics/linux_mesa3/Makefile,v 1.10 2000/09/07 04:53:16 sada Exp $
+# $FreeBSD: ports/graphics/linux_mesa3/Makefile,v 1.11 2001/03/20 20:28:01 obrien Exp $
 #
 
 PORTNAME=		mesa
@@ -31,16 +31,17 @@ NO_MTREE=		yes
 
 RPM_MIRRORS=		\
 	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
-	ftp://ftp.redhat.com/redhat/__DIR__/ \
-	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/__DIR__/ \
-	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \
+	ftp://ftp.redhat.com/pub/redhat/__DIR__/ \
+	ftp://ftp.infomagic.com/pub/mirrors/linux/redhat/__DIR__/ \
+	ftp://ftp.crc.ca/pub/systems/linux/redhat/ftp.redhat.com/__DIR__/ \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/__DIR__/ \
-	ftp://mirror.nucba.ac.jp/mirror/redhat/__DIR__/ \
 	ftp://ftp.is.co.za/linux/distributions/redhat/__DIR__/ \
-	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/
+	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/ \
+	ftp://ftp.kddlabs.co.jp/Linux/packages/RedHat/redhat/__DIR__/ \
+	ftp://download.sourceforge.net/pub/mirrors/redhat/redhat/__DIR__/
 
-STDDIR=			redhat-6.2/${MACHINE_ARCH}/RedHat/RPMS
-UPDDIR=			updates/6.2/${MACHINE_ARCH}
+STDDIR=			linux/6.2/en/os/${MACHINE_ARCH}/RedHat/RPMS
+UPDDIR=			linux/updates/6.2/en/os/${MACHINE_ARCH}
 
 .include <bsd.port.pre.mk>
 
