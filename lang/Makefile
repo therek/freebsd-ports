@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.160 2000/02/01 19:47:15 asami Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.161 2000/02/10 05:51:40 jdp Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -11,6 +11,7 @@
     SUBDIR += bwbasic
     SUBDIR += caml-light
     SUBDIR += cim
+    SUBDIR += clisp
     SUBDIR += cmucl
     SUBDIR += cu-prolog
     SUBDIR += dylan
