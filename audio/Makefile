@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.120 2000/01/06 00:00:48 cpiazza Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.121 2000/01/07 01:33:23 jedgar Exp $
 #
 
     SUBDIR += amp
@@ -44,6 +44,7 @@
     SUBDIR += mp3blaster
     SUBDIR += mp3encode
     SUBDIR += mp3info
+    SUBDIR += mp3rename
     SUBDIR += mpegaudio
     SUBDIR += mpg123
     SUBDIR += mpg123.el
