@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.557 2001/06/07 21:42:08 dwcjr Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.558 2001/06/08 11:42:00 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -90,6 +90,7 @@
     SUBDIR += cweb
     SUBDIR += cxref
     SUBDIR += ddd
+    SUBDIR += devtodo
     SUBDIR += dia2code
     SUBDIR += diffconvert
     SUBDIR += dmake
