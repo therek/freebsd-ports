@@ -2,17 +2,17 @@
 # Date created:		07 March 2001
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.1 2001/03/07 05:07:22 keith Exp $
+# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.2 2001/03/11 05:27:33 keith Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.8
+PORTVERSION=	0.8.1
 CATEGORIES=	chinese www
 MASTER_SITES=	http://www.csie.ntu.edu.tw/~b7506051/mt4/langpack/
 PKGNAMESUFFIX=	-tclp
-# Same as ftp://ftp.mozilla.org/pub/mozilla/l10n/lang/moz0.8/langzhtw.xpi.
+# Same as ftp://ftp.mozilla.org/pub/mozilla/l10n/lang/moz0.81/langzhtw.xpi.
 # Use this to avoid checksum problems.
-DISTNAME=	0.8r-0220-RELEASE-langzhtw
+DISTNAME=	0.8.1-0401-RELEASE-langzhtw
 EXTRACT_SUFX=	.xpi
 
 MAINTAINER=	keith@FreeBSD.org
@@ -45,9 +45,11 @@ do-install:
 	${CAT} ${FILESDIR}/installed-chrome.txt >> installed-chrome.txt)
 	${INSTALL_DATA} ${FILESDIR}/all-locales.rdf \
 		${PREFIX}/lib/mozilla/chrome;
-	${INSTALL_DATA} ${WRKSRC}/chrome/user-locales.rdf \
+	${INSTALL_DATA} ${FILESDIR}/user-locales.rdf \
 		${PREFIX}/lib/mozilla/chrome;
 	${INSTALL_DATA} ${WRKSRC}/chrome/zh-TW.jar \
+		${PREFIX}/lib/mozilla/chrome;
+	${INSTALL_DATA} ${WRKSRC}/chrome/zh-unix.jar \
 		${PREFIX}/lib/mozilla/chrome;
 	${INSTALL_DATA} ${FILESDIR}/unix.js ${PREFIX}/lib/mozilla/defaults/pref
 
