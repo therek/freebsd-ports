@@ -2,7 +2,7 @@
 # Date created:				November 22, 2000
 # Whom:	      				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/devel/p5-File-Spec/Makefile,v 1.2 2001/03/01 06:37:35 vanilla Exp $
+# $FreeBSD: ports/devel/p5-File-Spec/Makefile,v 1.3 2001/05/20 02:18:02 vanilla Exp $
 #
 
 PORTNAME=	File-Spec
@@ -15,6 +15,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	dburr@FreeBSD.ORG
 
 PERL_CONFIGURE=	yes
+MODULE_PREFIX= 	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
+CONFIGURE_ARGS+=\
+		INSTALLPRIVLIB=${MODULE_PREFIX} \
+		INSTALLARCHLIB=${MODULE_PREFIX}/${PERL_ARCH}
 
 MAN3=		File::Spec.3 \
 		File::Spec::Functions.3 \
