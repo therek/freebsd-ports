@@ -3,11 +3,11 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/ami/Makefile,v 1.3 1999/08/31 21:14:41 sada Exp $
 #
 
-DISTNAME=	ami-0.4.1
-PKGNAME=	ko-ami-0.4.1
+DISTNAME=	ami-0.5.2
+PKGNAME=	ko-ami-0.5.2
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/
 
@@ -39,7 +39,7 @@ post-install:
 	${INSTALL_DATA} ${FILESDIR}/XLC_LOCALE \
 		${PREFIX}/share/doc/ami
 
-.for NAME in AUTHORS README NEWS COPYING ChangeLog amirc
+.for NAME in AUTHORS README NEWS COPYING ChangeLog gtkrc
 	${INSTALL_DATA} ${WRKSRC}/${NAME} \
 		${PREFIX}/share/doc/ami
 .endfor
