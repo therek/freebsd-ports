@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.2 1999/11/08 19:35:44 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.3 1999/11/12 17:49:21 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -11,8 +11,8 @@ if [ "$BATCH" != "yes" ]; then
 /usr/bin/dialog --title "supported file types" --clear \
 	--checklist "\n\
 Select file types you want to print:" -1 -1 14	\
-LETTER		"LETTER printing"		ON	\
-LETTERDJ	"LETTERDJ printing"		OFF	\
+LETTER		"LETTER printing"		OFF	\
+LETTERDJ	"LETTERDJ printing"		ON	\
 A4		"A4 printing"			OFF	\
 PS		"Postscript and PDF files"	ON	\
 ASCII		"ASCII/English Text/Scripts"	ON	\
