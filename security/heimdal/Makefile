@@ -2,12 +2,12 @@
 # Date created:						10/23/1999
 # Whom:								nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.27 2000/12/14 16:32:22 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.28 2001/01/04 16:29:57 nectar Exp $
 #
 
 PORTNAME=		heimdal
 PORTVERSION=	0.3d
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=		security ipv6
 MASTER_SITES=	ftp://ftp.pdc.kth.se/pub/heimdal/src/ \
 				ftp://ftp.replay.com/pub/replay/crypto/APPS/kerberos/heimdal/ \
@@ -93,6 +93,7 @@ pre-configure:
 	(cd ${WRKSRC} && ${PERL} -i.orig -p \
 		-e 's/(SHA1|MD5|MD4)(Init|Update|Final)/$$1_$$2/g;' \
 		-e 's/SHA1_CTX/SHA_CTX/g;' \
+		-e 's/des_set_odd_parity/des_fixup_key_parity/g;' \
 		${CRYPTO_FIXUP})
 
 pre-install:
