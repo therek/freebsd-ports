@@ -1,13 +1,13 @@
 # New ports collection makefile for:	opendx
-# Version required:	4.0.7
+# Version required:	4.0.9
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.2 1999/09/22 00:28:10 asami Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.3 1999/10/05 09:14:50 tg Exp $
 #
 
-DISTNAME=	dx-4.0.7
-PKGNAME=	opendx-4.0.7
+DISTNAME=	dx-4.0.9
+PKGNAME=	opendx-4.0.9
 CATEGORIES=	graphics math
 MASTER_SITES=	http://opendx.npaci.edu/source/
 
