@@ -2,7 +2,8 @@
 # Date created:         23 Dec 1998
 # Whom:                 imp
 #
-# $FreeBSD: ports/games/seahaven/Makefile,v 1.8 2000/04/14 12:26:31 asami Exp $
+
+# $FreeBSD$
 #
 
 PORTNAME=	seahaven
