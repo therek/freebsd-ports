@@ -2,11 +2,11 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.7 2001/02/05 15:33:13 olgeni Exp $
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.8 2001/03/08 17:17:51 sf Exp $
 #
 
 PORTNAME=	bkmrkconv
-PORTVERSION=	1.09
+PORTVERSION=	1.10
 CATEGORIES=	www
 MASTER_SITES=	http://www.bleb.org/software/bkmrkconv/
 
