@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.321 2001/02/06 06:46:42 asami Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.322 2001/02/12 22:30:45 jeh Exp $
 #
 
     SUBDIR += 221upgrade
@@ -138,6 +138,7 @@
     SUBDIR += scriptkit
     SUBDIR += seizedesktop
     SUBDIR += sh-utils
+    SUBDIR += shc
     SUBDIR += sls
     SUBDIR += sma
     SUBDIR += smssend
