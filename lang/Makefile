@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.204 2001/01/05 17:26:18 alex Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.205 2001/01/14 19:45:28 vanilla Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -129,6 +129,7 @@
     SUBDIR += sr
     SUBDIR += starlogo
     SUBDIR += swi-pl
+    SUBDIR += sxm
     SUBDIR += t3x
     SUBDIR += tcl80
     SUBDIR += tcl81-thread
