@@ -2,7 +2,7 @@
 # Date created:     20 July 1997
 # Whom:         Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/FreeWnn-lib/Makefile,v 1.32 2000/08/11 02:56:25 asami Exp $
+# $FreeBSD: ports/japanese/FreeWnn-lib/Makefile,v 1.33 2000/09/12 17:08:26 taoka Exp $
 #
 
 PORTNAME=	FreeWnn
@@ -21,6 +21,7 @@ INSTALL_TARGET=	install install.man
 GNU_CONFIGURE=  yes
 USE_AUTOCONF=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIB=	yes
 
 WMMVERSION=	1.1.1-a017
 
