@@ -1,10 +1,11 @@
-# $FreeBSD: ports/audio/Makefile,v 1.250 2001/08/29 19:45:07 lioux Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.251 2001/09/03 18:45:21 will Exp $
 #
 
     SUBDIR += Maaate
     SUBDIR += ac3dec
     SUBDIR += afsp
     SUBDIR += agbrowser
+    SUBDIR += agsatellite
     SUBDIR += amp
     SUBDIR += ascd
     SUBDIR += aumix
