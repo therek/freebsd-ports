@@ -2,11 +2,12 @@
 # Date created:			14 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/eruby/Makefile,v 1.4 2000/09/07 07:44:34 knu Exp $
+# $FreeBSD: ports/textproc/eruby/Makefile,v 1.5 2000/09/22 05:04:29 knu Exp $
 #
 
 PORTNAME=	eruby
 PORTVERSION=	0.1.1
+PORTREVISION=	1
 CATEGORIES=	textproc www ruby
 MASTER_SITES=	http://www.ruby-lang.org/~shugo/eruby/
 DIST_SUBDIR=	ruby
@@ -17,6 +18,8 @@ USE_RUBY=	yes
 
 CONFIGURE_ARGS=	--enable-shared --default-charset="${DEFAULT_CHARSET}"
 INSTALLS_SHLIB=	yes
+
+MAN1=		eruby.1
 
 DEFAULT_CHARSET?=	US-ASCII
 
