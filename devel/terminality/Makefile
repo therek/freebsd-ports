@@ -3,13 +3,13 @@
 # Date created:			Apr 28, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/devel/terminality/Makefile,v 1.1 2001/04/28 17:55:53 ijliao Exp $
+# $FreeBSD: ports/devel/terminality/Makefile,v 1.2 2001/09/09 13:15:24 ijliao Exp $
 #
 
 PORTNAME=	terminality
 PORTVERSION=	1.9
 CATEGORIES=	devel
-MASTER_SITES= 	http://members.optushome.com.au/darkmoon7/
+MASTER_SITES= 	http://members.optushome.com.au/darkmoon7/code/tn/
 DISTNAME=	tn-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
