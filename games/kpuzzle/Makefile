@@ -2,7 +2,7 @@
 # Date created:				2000-11-04
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kpuzzle/Makefile,v 1.1 2000/12/26 15:16:36 trevor Exp $
 #
 
 PORTNAME=		kpuzzle
@@ -17,6 +17,8 @@ BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 		
 LIB_DEPENDS=	kde-qt-addon.4:${PORTSDIR}/x11-toolkits/kde-qt-addon \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11
+
+BROKEN=		"kde-qt-addon was removed"
 
 GNU_AUTOCONF=	yes
 USE_AUTOMAKE=	yes
