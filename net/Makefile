@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.491 2001/03/17 16:29:48 vanilla Exp $
+# $FreeBSD: ports/net/Makefile,v 1.492 2001/03/20 01:15:23 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -258,6 +258,7 @@
     SUBDIR += rinetd
     SUBDIR += ripetools
     SUBDIR += rmsg
+    SUBDIR += rp-pppoe
     SUBDIR += rrdtool
     SUBDIR += rshell
     SUBDIR += rsync
