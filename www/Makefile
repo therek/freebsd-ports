@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.364 2001/05/20 03:16:06 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.365 2001/05/20 13:59:23 dirk Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -183,6 +183,7 @@
     SUBDIR += p5-Apache-Peek
     SUBDIR += p5-Apache-Radius
     SUBDIR += p5-Apache-Reload
+    SUBDIR += p5-Apache-SSI
     SUBDIR += p5-Apache-Session
     SUBDIR += p5-Apache-Session-SharedMem
     SUBDIR += p5-CGI
