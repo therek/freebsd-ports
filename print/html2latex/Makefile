@@ -3,14 +3,14 @@
 # Date created:         29-March-1996
 # Whom:                 joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/html2latex/Makefile,v 1.6 1999/08/31 01:44:52 peter Exp $
 #
 
 DISTNAME=	html2latex-0.9c
 PKGNAME=	html2latex-0.9
 CATEGORIES=	print
 # I can't seem to find the original dist site
-MASTER_SITES=	ftp://ftp.germany.eu.net/pub/infosystems/www/ncsa/Web/Mosaic/Contrib/
+MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 DISTFILES=	html2latex-0.9c.tar.Z
 
 MAINTAINER=	joerg@FreeBSD.org
