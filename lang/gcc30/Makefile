@@ -3,12 +3,12 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc30/Makefile,v 1.109 2001/09/11 15:59:34 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc30
-PORTVERSION=	3.0.1
-PORTREVISION=	1
+PORTVERSION=	3.0.2
+PORTREVISION=	0
 CATEGORIES=	lang java
 MASTER_SITES=	ftp://egcs.cygnus.com/pub/egcs/releases/gcc-${GCC_REV}/  \
 		${MASTER_SITE_SOURCEWARE}
