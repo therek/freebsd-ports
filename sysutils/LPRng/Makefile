@@ -2,7 +2,7 @@
 # Date created:		2 Apr 1997
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.14 2000/10/08 10:22:54 asami Exp $
+# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.15 2000/10/13 06:24:16 kris Exp $
 #
 
 PORTNAME=	LPRng
@@ -25,6 +25,7 @@ CONFIGURE_ARGS= \
 		--with-lpd_conf_path=/etc/lpd.conf \
 		--with-lpd_perms_path=/etc/lpd.perms \
 		--with-printcap_path=/etc/printcap
+USE_GMAKE=	yes
 
 MAN1=		cancel.1 lp.1 lpbanner.1 lpf.1 \
 		lpq.1 lpr.1 lpraccnt.1 lprm.1 lpstat.1 monitor.1 \
