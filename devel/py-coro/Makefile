@@ -2,15 +2,15 @@
 # Date created:				06/22/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/devel/py-coro/Makefile,v 1.3 2000/09/08 12:23:54 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		coro
-PORTVERSION=		2001.02.02
+PORTVERSION=		20010202
 CATEGORIES=		devel python
 MASTER_SITES=		http://www.dotfunk.com/projects/coro/
 PKGNAMEPREFIX=		py-
-DISTNAME=		${PORTNAME}_${PORTVERSION:S/./_/g}
+DISTNAME=		${PORTNAME}_2001_02_02
 
 MAINTAINER=		kbyanc@posi.net
 
