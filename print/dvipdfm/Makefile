@@ -2,11 +2,11 @@
 # Date created:		16 January 2000
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.4 2000/04/09 17:49:29 cpiazza Exp $
+# $FreeBSD: ports/print/dvipdfm/Makefile,v 1.5 2000/08/01 23:52:42 jedgar Exp $
 #
 
 PORTNAME=		dvipdfm
-PORTVERSION=		0.13
+PORTVERSION=		0.13.1b
 CATEGORIES=		print
 MASTER_SITES=		http://gaspra.kettering.edu/dvipdfm/
 
