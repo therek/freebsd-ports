@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.27 2001/02/12 02:53:22 lioux Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.28 2001/02/22 18:15:16 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -285,10 +285,7 @@ thereal-post-patch:
 .for i in ${BOOTFILES}
 	@if [ `dirname $i` != ${FILESDIR} ] ; \
 	then \
-		${CP} $i.sh $i.sh.orig; \
-		(head -c `${EXPR} \`ls -l $i.sh.orig \
-			| ${AWK} '{print $$5}'\` - 1` $i.sh.orig ; ${ECHO} '&') \
-			> $i.sh ; \
+		${PERL} -pi.orig -ne 's!^(exec)!case "\$$1" in\nstart)\n\t\1!;s!(qmail)$$!\1\&\n\texit 0\n\t;;\nstop)\n\texec killall qmail-send\n\t;;\n*)\n\t${ECHO} "Usage: `basename \$$0` {start|stop}" >&2\n\texit 64\n\t;;\nesac!' $i.sh ; \
 	fi
 .endfor
 	@${SED} s!/var/qmail/!${PREFIX}/!g ${FILESDIR}/mailer.conf.sample > \
