@@ -2,7 +2,7 @@
 # Date created:			16 May 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/dopewars/Makefile,v 1.13 2001/06/19 18:01:14 jim Exp $
+# $FreeBSD: ports/games/dopewars/Makefile,v 1.14 2001/07/01 22:36:14 jim Exp $
 #
 
 PORTNAME=	dopewars
@@ -20,7 +20,18 @@ USE_X_PREFIX=	yes
 
 CONFIGURE_ARGS=	--enable-nls
 
-DOPEWARS=	${PKGNAME}
-PLIST_SUB=	DOPEWARS=${DOPEWARS}
+.if defined(NOPORTDOCS)
+MAKE_ENV+=	NOPORTDOCS=yes
+.endif
+
+PLIST_SUB=	DOPEWARS=${PKGNAME}
+
+MAN6=	dopewars.6
+
+post-patch:
+	@${PERL} -pi -e 's!/pixmaps!/dopewars/pixmaps!' \
+		${WRKSRC}/src/Makefile.in
+	@${PERL} -pi -e 's!dopewars.sco!dopewars/dopewars.sco!g' \
+		${WRKSRC}/src/dopewars.c ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>
