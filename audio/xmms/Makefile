@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.30 2001/03/28 18:23:41 sobomax Exp $
 #
 
 PORTNAME=	xmms
@@ -93,5 +93,8 @@ pre-patch:
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/aclocal|\$\(prefix\)/share/aclocal|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+
+post-install:
+	@${MKDIR} ${PREFIX}/share/xmms/Skins
 
 .include <bsd.port.post.mk>
