@@ -2,13 +2,13 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.6 2000/04/17 00:18:46 reg Exp $
+# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.7 2000/04/22 10:12:34 mharo Exp $
 #
 
 PORTNAME=	ipsc
 PORTVERSION=	0.4.2
 CATEGORIES=	sysutils gnome
-MASTER_SITES=	http://www.interloper.net/~dan/software/dist/ipsc/
+MASTER_SITES=	http://ipsc.sourceforge.net/dist/ipsc/
 DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	jeremy@external.org
