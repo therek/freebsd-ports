@@ -2,7 +2,7 @@
 # Date created:		12 Septermber 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/fnorb/Makefile,v 1.1 2000/09/16 05:18:45 will Exp $
 #
 
 PORTNAME=	fnorb
@@ -16,6 +16,7 @@ MAINTAINER=	johann@egenetics.com
 NO_CDROM=	Free for academic, research and non-commercial purposes only
 WRKSRC=		${WRKDIR}/Fnorb-${PORTVERSION}/src
 USE_PYTHON=	yes
+ALL_TARGET=
 
 do-configure:
 	@ (cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} \
