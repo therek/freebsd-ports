@@ -2,13 +2,13 @@
 # Date created:				24/07/2001
 # Whom:					roger@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomemeeting/Makefile,v 1.2 2001/08/17 17:37:21 roger Exp $
+# $FreeBSD: ports/net/gnomemeeting/Makefile,v 1.3 2001/08/20 15:39:10 roger Exp $
 #
 
 PORTNAME=	gnomemeeting
 PORTVERSION=	0.10
 CATEGORIES=	net gnome
-MASTER_SITES=	http://130.104.229.225/gnomemeeting/downloads/ \
+MASTER_SITES=	http://130.104.229.225/gnomemeeting/downloads/0.10/sources/ \
 		ftp://telepresence.dmem.strath.ac.uk/pub/openh323/
 
 MAINTAINER=	roger@FreeBSD.org
