@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.326 2000/12/05 12:28:51 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.327 2000/12/06 15:11:33 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -265,6 +265,7 @@
     SUBDIR += ruby14-tcltklib
     SUBDIR += ruby14-tk
     SUBDIR += rxvt
+    SUBDIR += ryaku-fpw
     SUBDIR += samba
     SUBDIR += sdic
     SUBDIR += sed
