@@ -3,16 +3,16 @@
 # Date created:			Feb 26, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/libxml++/Makefile,v 1.1 2001/02/25 18:49:50 ijliao Exp $
+# $FreeBSD: ports/textproc/libxml++/Makefile,v 1.2 2001/04/26 05:45:26 ijliao Exp $
 #
 
 PORTNAME=	libxml++
-PORTVERSION=	0.11
+PORTVERSION=	0.13
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/+/plus/g}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 
