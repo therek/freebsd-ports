@@ -3,7 +3,7 @@
 # Date created:        24 May 1999
 # Whom:                Oscar Bonilla <obonilla@fisicc-ufm.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/kmp3/Makefile,v 1.2 1999/08/25 04:35:40 obrien Exp $
 #
 
 DISTNAME=	kmp3-0.2.2
@@ -19,8 +19,6 @@ LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 USE_QT=		yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 WRKSRC=		${WRKDIR}/kmp3
 
 .include <bsd.port.mk>
