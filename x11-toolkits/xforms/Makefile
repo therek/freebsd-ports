@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.28 2000/04/10 01:11:19 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.29 2000/04/14 23:09:36 asami Exp $
 #
 
 PORTNAME=	xforms
@@ -11,6 +11,8 @@ CATEGORIES=	graphics x11-toolkits
 EXTRACT_SUFX=	.tgz
 
 USE_X_PREFIX=	yes
+INSTALL_SHLIBS=	yes
+
 .include <bsd.port.pre.mk>
 
 .if ${PORTOBJFORMAT} == "elf"
@@ -37,7 +39,6 @@ MAN1=		fdesign.1 fd2ps.1
 MAN5=		xforms.5
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOMANCOMPRESS)
 	@${RM} ${PREFIX}/man/man5/forms.5
 	@${LN} -fs xforms.5.gz ${PREFIX}/man/man5/forms.5.gz

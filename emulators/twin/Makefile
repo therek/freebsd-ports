@@ -2,7 +2,7 @@
 # Date created:		5 June 1999
 # Whom:			Pedro F. Giffuni
 #
-# $FreeBSD: ports/emulators/twin/Makefile,v 1.3 2000/02/24 13:46:45 imura Exp $
+# $FreeBSD: ports/emulators/twin/Makefile,v 1.4 2000/04/12 04:55:57 mharo Exp $
 #
 
 PORTNAME=	twin
@@ -15,6 +15,7 @@ MAINTAINER=	giffunip@asme.org
 
 WRKSRC=		$(WRKDIR)/twin
 USE_XLIB=	yes
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	depend world
@@ -35,6 +36,5 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/documentation/* ${PREFIX}/share/doc/twin
 	${GZIP_CMD} ${PREFIX}/share/doc/twin/*
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

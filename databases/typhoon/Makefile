@@ -2,7 +2,7 @@
 # Date created:		Wed Dec 11 15:16:19 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/databases/typhoon/Makefile,v 1.9 2000/04/08 22:49:03 mharo Exp $
+# $FreeBSD: ports/databases/typhoon/Makefile,v 1.10 2000/04/23 22:59:17 kris Exp $
 #
 
 PORTNAME=	typhoon
@@ -14,7 +14,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-HAS_CONFIGURE=     yes
+HAS_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
+
 MAN3=d_close.3 d_crget.3 d_crread.3 d_crset.3 d_dbdpath.3 d_dbfpath.3 \
      d_dbget.3 d_dbset.3 d_delete.3 d_fillnew.3 d_getsequence.3 d_keyfind.3 \
      d_keyfrst.3 d_keylast.3 d_keynext.3 d_keyprev.3 d_keyread.3 d_open.3 \
@@ -26,6 +28,5 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/typhoon
 	@${INSTALL_DATA} ${WRKSRC}/man/manual.asc ${PREFIX}/share/typhoon
 	@${INSTALL_DATA} ${WRKSRC}/include/environ.h ${WRKSRC}/include/typhoon.h ${PREFIX}/include
-	@${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

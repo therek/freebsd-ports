@@ -2,7 +2,7 @@
 # Date Created:		04 Aug 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/converters/uulib/Makefile,v 1.21 1999/08/31 06:41:06 mharo Exp $
+# $FreeBSD: ports/converters/uulib/Makefile,v 1.22 2000/04/08 23:24:41 mharo Exp $
 #
 
 PORTNAME=	uulib
@@ -15,6 +15,7 @@ DISTNAME=	uudeview-${PORTVERSION}
 MAINTAINER=	hoek@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
 
 MAN3=		uulib.3
 
@@ -35,7 +36,6 @@ DOCFILES=	HISTORY doc/Makefile doc/README doc/binhex.fig \
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/uulib/libuu.so.${VERSION} ${PREFIX}/lib
 	${LN} -sf libuu.so.${VERSION} ${PREFIX}/lib/libuu.so
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${INSTALL_DATA} ${WRKSRC}/uulib/libuu.a ${PREFIX}/lib
 	@/usr/bin/ranlib ${PREFIX}/lib/libuu.a
 	${INSTALL_DATA} ${WRKSRC}/uulib/uudeview.h ${PREFIX}/include

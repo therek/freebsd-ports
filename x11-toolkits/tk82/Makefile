@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.33 2000/04/10 01:11:07 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.34 2000/06/02 07:29:18 hoek Exp $
 #
 
 PORTNAME=	tk
@@ -16,6 +16,7 @@ MAINTAINER=	jseger@FreeBSD.org
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 USE_XLIB=	yes
+INSTALL_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2
@@ -296,7 +297,6 @@ MLINKS=	3DBorder.3 Tk_Alloc3DBorderFromObj.3 \
 .include <bsd.port.pre.mk>
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if exists(${PKGINSTALL})
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif

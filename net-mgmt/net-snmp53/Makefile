@@ -2,7 +2,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.43 2000/05/17 01:11:50 billf Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.44 2000/05/17 20:27:13 billf Exp $
 #
 
 PORTNAME=	ucd-snmp
@@ -14,7 +14,8 @@ MASTER_SITES= 	ftp://ucd-snmp.ucdavis.edu/ \
 
 MAINTAINER=	billf@FreeBSD.org
 
-USE_AUTOCONF=	YES
+USE_AUTOCONF=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ARGS+= --enable-shared
 .if defined(BATCH)
 CONFIGURE_ARGS+= --with-defaults --with-sys-contact=nobody@no.where
@@ -69,6 +70,5 @@ post-install:
 		${ECHO} "[ -x ${PREFIX}/sbin/snmpd ] && ${PREFIX}/sbin/snmpd && ${ECHO} -n ' snmpd'" >> ${STARTUP_FILE}; \
 		${CHMOD} 751 ${STARTUP_FILE}; \
 	 fi
-	${SETENV} OBJFORMAT="${PORTOBJFORMAT}" ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

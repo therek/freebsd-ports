@@ -2,7 +2,7 @@
 # Date created:				2 Nov 1999
 # Whom:					Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.11 2000/04/13 08:28:06 asami Exp $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.12 2000/04/24 06:26:37 vanilla Exp $
 #
 
 PORTNAME=	libtabe
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db
 
 WRKSRC=		${WRKDIR}/libtabe
 USE_XLIB=	yes
+INSTALL_SHLIBS=	yes
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
@@ -49,6 +50,5 @@ post-install:
 	${RM} -f ${PREFIX}/lib/libbims.so.0
 	${RM} -f ${PREFIX}/lib/libtabe.so.0
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		04 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.3 2000/04/07 01:34:38 will Exp $
+# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.4 2000/04/14 10:47:32 asami Exp $
 #
 
 PORTNAME=	twinlib
@@ -18,6 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/tmake:${PORTSDIR}/devel/tmake
 
 USE_QT=		yes
 USE_X_PREFIX=	yes
+INSTALL_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/twinlib
 MAKE_ENV+=	PREFIX=${PREFIX} CXX=${CXX}
 VERSION=	0

@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.10 2000/04/02 16:57:59 mharo Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.11 2000/04/08 21:24:56 mharo Exp $
 #
 
 PORTNAME=	xmms
@@ -23,6 +23,7 @@ LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		xml.5:${PORTSDIR}/textproc/libxml
 
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ARGS= --without-gnome
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

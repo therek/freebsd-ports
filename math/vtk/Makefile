@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.7 2000/04/20 20:52:49 mharo Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.8 2000/05/29 04:59:02 steve Exp $
 #
 
 PORTNAME=	vtk
@@ -17,6 +17,7 @@ LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3	\
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/vtk31
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-mesa --with-shared --with-tcl --with-bsdmake
 CONFIGURE_ARGS+=	--with-contrib --with-tkwidget
@@ -38,6 +39,5 @@ post-install:
 	${PREFIX}/bin/python  -c "import compileall; compileall.compile_dir( '${PREFIX}/lib/vtk/python' );"
 	${PREFIX}/bin/python -Oc "import compileall; compileall.compile_dir( '${PREFIX}/lib/vtk/python' );"
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

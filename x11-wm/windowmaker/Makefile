@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.67 2000/04/17 00:19:01 reg Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.68 2000/05/18 06:51:21 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
@@ -26,6 +26,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE} LIBS=-L${LOCALBASE}/lib \
 		CPPFLAGS=-I${LOCALBASE}/include
 CONFIGURE_ARGS=	--with-pixmapdir=${PREFIX}/include/X11/pixmaps \
@@ -74,7 +75,6 @@ post-configure:
 post-install:
 	@cd ${WRKDIR}/WindowMaker-extra-0.1; \
 		${MAKE} ${MAKE_ARGS} ${INSTALL_TARGET}
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${MKDIR} ${PREFIX}/share/WindowMaker/Sounds
 
 .include <bsd.port.mk>

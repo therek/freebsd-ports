@@ -2,7 +2,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.1.1.1 2000/01/31 03:52:17 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.2 2000/04/10 01:11:13 cpiazza Exp $
 #
 
 PORTNAME=	vdk
@@ -18,6 +18,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_NEWGCC=	yes
 USE_X_PREFIX=	yes
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
