@@ -2,19 +2,14 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.37 2000/09/12 13:03:43 asami Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.38 2000/09/12 13:12:41 asami Exp $
 #
 
 PORTNAME=	crossfire
 PORTVERSION=	${MAJ}.${MIN}.${PL}
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		ftp://ftp.real-time.com/pub/games/crossfire/ \
-		ftp://ftp.ifi.uio.no/pub/crossfire/ \
-		ftp://ftp.pyramid.com/pub/crossfire/ \
-		ftp://ftp.sunet.se/pub/unix/games/crossfire/ \
-		ftp://ftp.cs.titech.ac.jp/pub/games/crossfire/
-MASTER_SITE_SUBDIR=	andreas
+MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/crossfire/old/ \
+		ftp://ftp.sunet.se/pub/unix/games/crossfire/old/
 DISTFILES=	${CF_SOURCES} ${CF_DOC} ${CF_MAPS} ${CF_SOUNDS} \
 		${CF_ARCH} ${CF_CLSERV}
 
