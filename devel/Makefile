@@ -1,9 +1,10 @@
-# $FreeBSD: ports/devel/Makefile,v 1.314 2000/07/12 16:23:23 kevlo Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.315 2000/07/18 20:23:11 asami Exp $
 #
 
     SUBDIR += ElectricFence
     SUBDIR += ORBacus
     SUBDIR += ORBit
+    SUBDIR += SN
     SUBDIR += SWIG
     SUBDIR += SpecTcl
     SUBDIR += a2dev
