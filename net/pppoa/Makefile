@@ -2,7 +2,7 @@
 # Date created:         August 30 2001
 # Whom:                 Brian Somers <brian@freebsd-services.com>
 #
-# $FreeBSD: ports/net/pppoa/Makefile,v 1.2 2001/08/31 07:55:49 brian Exp $
+# $FreeBSD: ports/net/pppoa/Makefile,v 1.3 2001/09/03 11:33:33 brian Exp $
 #
 
 PORTNAME=	pppoa
@@ -18,6 +18,7 @@ MAINTAINER=	brian@Awfulhak.org
 HAS_CONFIGURE=		yes
 SPEEDTOUCH=		speedtouch-15082001
 NO_CDROM=		"http://www.alcatel.com/consumer/dsl/disclaimer_lx.htm"
+NO_PACKAGE=		"http://www.alcatel.com/consumer/dsl/disclaimer_lx.htm"
 RESTRICTED_FILES=	speedmgmt.tar.gz
 
 WRKSRC=			${WRKDIR}/${SPEEDTOUCH}
