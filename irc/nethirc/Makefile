@@ -2,7 +2,7 @@
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/nethirc/Makefile,v 1.8 2000/06/22 05:52:03 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nethirc
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VERSION}/Net/IRC.pm:${PORTSDIR}/irc/p5-IRC
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/IRC.pm:${PORTSDIR}/irc/p5-IRC
 
 NO_BUILD=	yes
 USE_PERL5=	yes
