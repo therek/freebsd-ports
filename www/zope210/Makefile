@@ -2,17 +2,19 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.24 2001/03/10 12:22:14 olgeni Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.25 2001/03/31 12:12:26 nbm Exp $
 #
 
 PORTNAME=	zope
-PORTVERSION=	2.3.1
+PORTVERSION=	2.3.2
 PORTREVISION=	0
 CATEGORIES=	www python
-MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
+MASTER_SITES=  http://www.zope.org/Products/Zope/${PORTVERSION}/ \
+		http://www.zope.org/Products/Zope/Hotfix_2001-05-01/
 DISTNAME=	Zope-${PORTVERSION}-src
 EXTRACT_SUFX=	.tgz
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX}
+DISTFILES=     ${DISTNAME}${EXTRACT_SUFX} \
+		Hotfix_2001-05-01.tgz
 
 MAINTAINER=	nbm@FreeBSD.org
 
