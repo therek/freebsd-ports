@@ -2,7 +2,7 @@
 # Date Created:		19 September 2000
 # Whom:			nra
 #
-# $FreeBSD: ports/misc/libh/Makefile,v 1.8 2001/05/09 20:08:28 sf Exp $
+# $FreeBSD: ports/misc/libh/Makefile,v 1.9 2001/05/23 16:50:29 alex Exp $
 #
 
 PORTNAME=	libh
@@ -73,7 +73,7 @@ do-fetch:
 				${ECHO_MSG} ">> *** Please hit enter here for the password."; \
 				${CVS_CMD} -d $${CVS_SITE} login < /dev/null; \
 			fi ; \
-			if ${CVS_CMD} -d $${CVS_SITE} co -D '${CVS_DATE_!}' ${DISTNAME}; then \
+			if ${CVS_CMD} -d $${CVS_SITE} co -D '${CVS_DATE}' ${DISTNAME}; then \
 				if [ "X$${CVS_LOGIN}" = "Xyes" ]; then \
 					${CVS_CMD} -d $${CVS_SITE} logout < /dev/null; \
 				fi; \
