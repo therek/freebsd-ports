@@ -2,11 +2,11 @@
 # Date created:		4 October 2000
 # Whom:			Dan Pelleg <dpelleg+unison@cs.cmu.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/unison/Makefile,v 1.1 2000/10/26 01:42:33 trevor Exp $
 #
 
 PORTNAME=		unison
-PORTVERSION= 		2.5.1
+PORTVERSION= 		2.6.11
 CATEGORIES=		net
 MASTER_SITES=		http://www.cis.upenn.edu/~bcpierce/unison/download/stable/unison-${PORTVERSION}/
 DISTNAME=		src
