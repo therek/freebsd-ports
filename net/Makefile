@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.316 1999/12/04 20:44:04 cpiazza Exp $
+# $FreeBSD: ports/net/Makefile,v 1.317 1999/12/09 23:03:07 archie Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -103,6 +103,7 @@
     SUBDIR += mtr
     SUBDIR += naim
     SUBDIR += nam
+    SUBDIR += ncplib
     SUBDIR += netatalk
     SUBDIR += netatalk-asun
     SUBDIR += netcat
