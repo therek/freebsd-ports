@@ -2,11 +2,11 @@
 # Date created:		30 June 1996
 # Whom:			gena
 #
-# $FreeBSD: ports/mail/xfmail/Makefile,v 1.29 2001/07/08 15:37:16 mikeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfmail
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://xfmail.ufies.org/pub/xfmail/release/%SUBDIR%/	       \
 		ftp://cupido.geophys.nat.tu-bs.de/pub/xfmail/release/%SUBDIR%/ \
