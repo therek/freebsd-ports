@@ -2,7 +2,7 @@
 # Date created:		27 Jun 1997
 # Whom:			Takayuki Ariga <a00821@cc.hc.keio.ac.jp>
 #
-# $FreeBSD: ports/japanese/weblint97/Makefile,v 1.8 1999/10/31 23:59:16 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	weblint97
@@ -15,7 +15,7 @@ DISTNAME=	weblint-97-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/lib/perl/jcode.pl:${PORTSDIR}/japanese/jcode.pl
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/jcode.pl:${PORTSDIR}/japanese/jcode.pl
 
 WRKSRC=		${WRKDIR}/weblint-97
 MANLANG=	ja
