@@ -2,7 +2,7 @@
 # Date created:				9th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ghex/Makefile,v 1.3 2000/06/09 21:28:12 ade Exp $
+# $FreeBSD: ports/editors/ghex/Makefile,v 1.4 2000/08/04 01:34:23 ade Exp $
 #
 
 PORTNAME=	ghex
@@ -29,7 +29,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

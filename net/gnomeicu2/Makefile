@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.23 2000/06/16 21:31:26 asami Exp $
+# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.24 2000/08/04 02:50:51 ade Exp $
 #
 
 PORTNAME=		gnomeicu
@@ -28,7 +28,7 @@ CONFIGURE_ENV=		GTK_CONFIG="${GTK_CONFIG}" \
 			LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=		--datadir=${PREFIX}/share/gnome
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

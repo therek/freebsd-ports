@@ -2,7 +2,7 @@
 # Date created:		2 August 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gnometelnet/Makefile,v 1.1 2000/08/02 16:17:17 sobomax Exp $
 #
 
 PORTNAME=	gnometelnet
@@ -31,7 +31,7 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

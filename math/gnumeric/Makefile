@@ -2,7 +2,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.38 2000/07/11 22:02:20 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.39 2000/08/04 01:19:18 ade Exp $
 #
 
 PORTNAME=	gnumeric
@@ -41,7 +41,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 PLIST_SUB=	VERSION=${PORTVERSION}
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

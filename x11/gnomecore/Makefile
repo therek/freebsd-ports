@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.42 2000/06/16 21:52:11 asami Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.43 2000/08/04 01:19:08 ade Exp $
 #
 
 PORTNAME=	gnomecore
@@ -35,7 +35,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		gnome-session.1 gnome-wm.1 save-session.1
 MAN5=		default.session.5
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

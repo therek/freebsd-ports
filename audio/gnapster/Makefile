@@ -2,7 +2,7 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.13 2000/08/03 09:22:28 asami Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.14 2000/08/04 04:57:32 cpiazza Exp $
 #
 
 PORTNAME=	gnapster
@@ -26,7 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib" \
 		GTK_CONFIG="${GTK_CONFIG}"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

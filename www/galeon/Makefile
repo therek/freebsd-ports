@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.3 2000/08/03 14:42:44 sobomax Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.4 2000/08/03 17:45:33 sobomax Exp $
 #
 
 PORTNAME=	galeon
@@ -36,13 +36,15 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-post-patch:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g ; \
 		 s|-lpthread|-pthread|g'
+
+post-patch:
 	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g ; \
 			 s|%%LOCALBASE%%|${LOCALBASE}|g ; \
 			 s|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/src/galeon

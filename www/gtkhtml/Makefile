@@ -2,7 +2,7 @@
 # Date created:				2nd June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.5 2000/07/27 08:16:54 sobomax Exp $
+# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.6 2000/08/04 01:34:33 ade Exp $
 #
 
 PORTNAME=	gtkhtml
@@ -31,7 +31,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

@@ -2,7 +2,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.24 2000/07/11 22:02:14 ade Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.25 2000/08/04 01:34:21 ade Exp $
 #
 
 PORTNAME=	gedit
@@ -32,7 +32,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		gedit.1
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

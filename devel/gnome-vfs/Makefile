@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.3 2000/07/30 18:06:27 steve Exp $
+# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.4 2000/08/04 01:34:30 ade Exp $
 #
 
 PORTNAME=	gnomevfs
@@ -36,7 +36,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN5=		gnome-vfs-mime.5
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

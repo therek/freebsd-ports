@@ -2,7 +2,7 @@
 # Date created:        			21st April 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.5 2000/07/11 22:02:21 ade Exp $
+# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.6 2000/08/04 01:29:22 ade Exp $
 #
 
 PORTNAME=	junglemonkey
@@ -33,7 +33,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		jm.1 jmlite.1 jmsearchserver.1 mtprendezvous.1
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

@@ -2,7 +2,7 @@
 # Date created:				05/28/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/gtm/Makefile,v 1.15 2000/07/25 08:40:58 sobomax Exp $
 #
 
 PORTNAME=	gtm
@@ -30,7 +30,7 @@ CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/gnome
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

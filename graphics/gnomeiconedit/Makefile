@@ -2,7 +2,7 @@
 # Date created:				28th January 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.8 2000/07/08 21:11:29 ade Exp $
+# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.9 2000/08/04 01:34:26 ade Exp $
 #
 
 PORTNAME=	gnomeiconedit
@@ -28,7 +28,7 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

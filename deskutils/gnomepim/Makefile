@@ -2,7 +2,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.19 2000/06/02 18:14:55 ade Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.20 2000/08/04 01:19:14 ade Exp $
 #
 
 PORTNAME=	gnomepim
@@ -41,7 +41,7 @@ pre-extract:
 	@${ECHO} "You can add gnomepilot support by defining WITH_GNOMEPILOT"
 .endif
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

@@ -2,7 +2,7 @@
 # Date created:        02 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.10 2000/06/26 16:14:29 ade Exp $
+# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.11 2000/08/04 01:19:17 ade Exp $
 #
 
 PORTNAME=	gnomeusersguide
@@ -23,7 +23,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

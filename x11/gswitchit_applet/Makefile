@@ -2,7 +2,7 @@
 # Date created:				5 June 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gswitchit_applet/Makefile,v 1.1 2000/07/28 15:42:30 sobomax Exp $
 #
 
 PORTNAME=	gswitchit_applet
@@ -28,7 +28,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		gswitchit_applet.1
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

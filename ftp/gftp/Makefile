@@ -2,7 +2,7 @@
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.11 2000/05/30 20:57:14 will Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.12 2000/07/25 07:11:07 sobomax Exp $
 #
 
 PORTNAME=	gftp
@@ -29,7 +29,7 @@ CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 
 MAN1=		gftp.1
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

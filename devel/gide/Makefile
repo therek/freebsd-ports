@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.38 2000/07/11 22:02:14 ade Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.39 2000/08/04 01:34:24 ade Exp $
 #
 
 PORTNAME= 	gide
@@ -33,7 +33,7 @@ MAN1=		gide.1 gdbio.1
 
 PLIST_SUB=	VERSION=${PORTVERSION}
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/codecommander/Makefile,v 1.1 2000/08/01 10:14:03 sobomax Exp $
 #
 
 PORTNAME=	codecommander
@@ -33,7 +33,7 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		s|-lpython|-lreadline -lcrypt -lpython|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure

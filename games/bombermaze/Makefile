@@ -2,7 +2,7 @@
 # Date created:		25 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/games/bombermaze/Makefile,v 1.2 2000/07/31 06:53:11 sobomax Exp $
+# $FreeBSD: ports/games/bombermaze/Makefile,v 1.3 2000/08/04 07:48:39 sobomax Exp $
 #
 
 PORTNAME=	bombermaze
@@ -33,7 +33,7 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

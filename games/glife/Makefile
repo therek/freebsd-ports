@@ -2,7 +2,7 @@
 # Date created:				18th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/glife/Makefile,v 1.5 2000/07/11 22:02:15 ade Exp $
+# $FreeBSD: ports/games/glife/Makefile,v 1.6 2000/08/04 01:34:25 ade Exp $
 #
 
 PORTNAME=	glife
@@ -25,7 +25,7 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-post-extract:
+pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
