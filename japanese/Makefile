@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.346 2001/03/08 01:53:13 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.347 2001/03/10 19:17:29 sada Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -130,6 +130,7 @@
     SUBDIR += kinput2-wnn6
     SUBDIR += kon2-14dot
     SUBDIR += kon2-16dot
+    SUBDIR += kpcal
     SUBDIR += kterm
     SUBDIR += kterm16c
     SUBDIR += lambdamoo
