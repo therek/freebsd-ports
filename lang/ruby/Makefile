@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.41 2001/02/19 07:54:08 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.42 2001/02/19 15:51:37 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -13,9 +13,9 @@ MASTER_SITE_SUBDIR=	${RUBY_VER}
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
-PATCH_SITES=	http://www.ruby-lang.org/~knu/
-PATCHFILES=	ruby-${RUBY_VERSION}-${RUBY_SNAPSHOTDATE}.patch.gz
-PATCH_DIST_STRIP=	-p1
+#PATCH_SITES=	http://www.ruby-lang.org/~knu/
+#PATCHFILES=	ruby-${RUBY_VERSION}-${RUBY_SNAPSHOTDATE}.patch.gz
+#PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
