@@ -2,7 +2,7 @@
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.6 2000/05/17 16:32:59 ade Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.7 2000/06/01 16:09:50 ade Exp $
 #
 
 PORTNAME=	bugbuddy
@@ -14,7 +14,8 @@ DISTNAME=	bug-buddy-${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
+		glade.4:${PORTSDIR}/devel/libglade
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
