@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.210 2003/12/19 16:31:28 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.212 2004/01/12 21:28:52 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -372,16 +372,15 @@ MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
 	http://mirrors.usc.edu/pub/gnu/%SUBDIR%/ \
 	ftp://gatekeeper.dec.com/pub/GNU/%SUBDIR%/ \
-	ftp://ftp.uu.net/archive/systems/gnu/%SUBDIR%/ \
 	ftp://ftp.de.uu.net/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/gnu/prep/%SUBDIR%/ \
 	ftp://ftp.leo.org/pub/comp/os/unix/gnu/%SUBDIR%/ \
 	ftp://ftp.wustl.edu/mirrors/gnu/%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/pub/gnu/%SUBDIR%/ \
+	ftp://ftp.kddlabs.co.jp/GNU/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/GNU/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,GNU/&,} \
 	ftp://ftp.mirror.ac.uk/sites/ftp.gnu.org/gnu/%SUBDIR%/ \
-	ftp://sunsite.org.uk/Mirrors/ftp.gnu.org/pub/gnu/%SUBDIR%/ \
+	ftp://ftp.sunsite.org.uk/package/gnu/%SUBDIR%/ \
 	ftp://ftp.informatik.hu-berlin.de/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.gnu.org/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.rediris.es/sites/ftp.gnu.org/pub/%SUBDIR%/ \
