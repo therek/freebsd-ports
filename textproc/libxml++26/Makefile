@@ -3,7 +3,7 @@
 # Date created:			Feb 26, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/libxml++/Makefile,v 1.1 2001/02/25 18:49:50 ijliao Exp $
 #
 
 PORTNAME=	libxml++
@@ -18,12 +18,12 @@ LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
 
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 
 post-patch:
 	@${PERL} -pi -e "s|xml-config|xml2-config|g" ${WRKSRC}/configure
-	@${PERL} -pi -e "s|libxml/|libxml2/|g" ${WRKSRC}/xml++.h
 
 .include <bsd.port.mk>
