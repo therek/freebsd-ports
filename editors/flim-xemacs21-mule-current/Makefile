@@ -2,7 +2,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.16 2000/07/10 01:18:44 steve Exp $
+# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.17 2000/07/13 05:15:10 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -28,7 +28,7 @@ INSTALL_TARGET=	install-package
 # whether building info files by emacs or makeinfo
 BUILD_INFO_BY_EMACS=	YES
 # texinfo packages
-BUILD_DEPENDS+=	${LOCALBASE}/${EMACS_PACKAGESDIR}/../xemacs-packages/lisp/texinfo/texinfo.el:${PORTSDIR}/editors/xemacs-sumo-packages
+BUILD_DEPENDS+=	${LOCALBASE}/${EMACS_PACKAGESDIR}/../xemacs-packages/lisp/texinfo/texinfo.el:${PORTSDIR}/editors/xemacs-packages
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
