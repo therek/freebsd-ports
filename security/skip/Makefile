@@ -2,7 +2,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.20 2000/07/18 00:35:34 archie Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.21 2001/02/18 00:32:22 kris Exp $
 #
 
 PORTNAME=		skip
