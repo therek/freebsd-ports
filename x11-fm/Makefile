@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.14 2000/06/05 13:51:04 sobomax Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.15 2000/06/09 22:25:03 will Exp $
 #
 
     SUBDIR += asfiles
@@ -11,6 +11,7 @@
     SUBDIR += gnomemc
     SUBDIR += jafm
     SUBDIR += mfm
+    SUBDIR += nautilus
     SUBDIR += offix-files
     SUBDIR += tkdesk
     SUBDIR += vide
