@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.616 2005/03/26 20:49:39 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.617 2005/04/02 23:15:17 naddy Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -53,11 +53,13 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </body>
     </description>
     <references>
+      <cvename>CAN-2005-0687</cvename>
       <url>http://www.gentoo.org/security/en/glsa/glsa-200503-12.xml</url>
     </references>
     <dates>
       <discovery>2005-03-06</discovery>
       <entry>2005-04-02</entry>
+      <modified>2005-04-03</modified>
     </dates>
   </vuln>
 
