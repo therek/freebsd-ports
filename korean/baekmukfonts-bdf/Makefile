@@ -3,13 +3,13 @@
 # Date created:		23 Jul 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.1.1.1 1999/09/03 16:03:02 sada Exp $
 #
 
 DISTNAME=       baekmuk-0.9.1
 PKGNAME=	ko-baekmukfonts-bdf-0.9.1
 CATEGORIES=	korean x11-fonts
-MASTER_SITES=	ftp://ftp.mizi.co.kr/pub/baekmuk/
+MASTER_SITES=	http://www.FreeBSD.org/~sada/distfiles/
 
 MAINTAINER=	cjh@kr.freebsd.org
 
