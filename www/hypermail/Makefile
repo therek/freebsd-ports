@@ -2,11 +2,11 @@
 # Date created:				23 Dec 1997
 # Whom:					mjhsieh
 #
-# $FreeBSD: ports/www/hypermail/Makefile,v 1.9 2001/05/11 04:44:14 kuriyama Exp $
+# $FreeBSD: ports/www/hypermail/Makefile,v 1.10 2001/05/26 10:50:58 greid Exp $
 #
 
 PORTNAME=	hypermail
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.2
 CATEGORIES=	www mail
 MASTER_SITES=	http://www.landfield.com/hypermail/dist/
 
