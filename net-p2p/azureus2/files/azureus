@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/azureus/files/azureus,v 1.1 2004/10/24 01:08:00 hq Exp $
 
 ECLIPSE_BASE=%%LOCALBASE%%/eclipse
 ECLIPSE_SWT=`find "${ECLIPSE_BASE}" -name '*swt.*' -type d | grep -e "plugins/org.eclipse.swt" | head -n 1`
@@ -20,4 +20,4 @@ then
 	echo "LIB_PATH = ${LIB_PATH}"
 fi
 
-"%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" org.gudy.azureus2.ui.swt.Main
+"%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" "-Dos.name=Linux" org.gudy.azureus2.ui.swt.Main
