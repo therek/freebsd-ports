@@ -2,11 +2,11 @@
 # Date created:				24 August 1999
 # Whom:					spcoltri@unm.edu
 #
-# $FreeBSD: ports/print/sgf2tex/Makefile,v 1.1 2000/09/19 16:03:03 ade Exp $
+# $FreeBSD: ports/print/sgf2tex/Makefile,v 1.2 2000/12/14 09:50:23 roam Exp $
 #
 
 PORTNAME=	sgf2tex
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	print
 MASTER_SITES=	ftp://match.stanford.edu/pub/
 
