@@ -1,9 +1,9 @@
 # New ports collection makefile for:	lzo
-# Version required:			1.04
+# Version required:			1.06
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.9 1999/11/21 00:53:52 cpiazza Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.10 1999/12/04 23:40:26 cpiazza Exp $
 #
 
 DISTNAME=	lzo-1.06
