@@ -3,7 +3,7 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.3 2000/02/13 19:39:33 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.4 2000/02/29 19:03:47 cpiazza Exp $
 #
 
 DISTNAME=	gnapster-1.3.6
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.gotlinux.org/~jasta/files/
 MAINTAINER=	cpiazza@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
-		Xpm.4:${PORTSDIR}/graphics/xpm
+		Xpm.4:${PORTSDIR}/graphics/xpm \
+	 	ungif.5:${PORTSDIR}/graphics/libungif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
