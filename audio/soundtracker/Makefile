@@ -2,11 +2,11 @@
 # Date created:        28 November 1999
 # Whom:                kzentner
 #
-# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.6 2000/06/01 16:25:44 ade Exp $
+# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.7 2000/08/06 14:24:13 nbm Exp $
 #
 
 PORTNAME=	soundtracker
-PORTVERSION=	0.5.5
+PORTVERSION=	0.5.7
 CATEGORIES=	audio gnome
 MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.5/
 
@@ -27,9 +27,11 @@ USE_X_PREFIX=	yes
 
 .if defined(USE_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
+PLIST_SUB+=		GNOME:=""
 PLIST=			${PKGDIR}/PLIST.gnome
 .else
 CONFIGURE_ARGS+=	--disable-gnome
+PLIST_SUB+=		GNOME:="@comment "
 .endif
 
 CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
