@@ -2,11 +2,11 @@
 # Date created:		01 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/understand_ada/Makefile,v 1.6 2001/09/18 04:04:55 lioux Exp $
+# $FreeBSD: ports/devel/understand_ada/Makefile,v 1.7 2001/09/22 01:42:35 lioux Exp $
 #
 
 PORTNAME=	understand_ada
-PORTVERSION=	1.4.131
+PORTVERSION=	1.4.132
 CATEGORIES=	devel linux
 MASTER_SITES=	http://www.scitools.com/ftp/pub/download/${PORTNAME}/%SUBDIR%/
 MASTER_SITE_SUBDIR=	latest pastbuilds
