@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.4 1999/11/11 14:33:11 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.5 1999/11/11 16:50:43 green Exp $
 #
 
 DISTNAME=	OpenSSH-1.2
@@ -30,10 +30,10 @@ NO_CHECKSUM=	YES
 WRKSRC=		${WRKDIR}/ssh
 
 do-fetch:
-.if !exists(${WRKDIR}/.fetch_done)
-	@${SETENV} WRKDIR=${WRKDIR} ${SCRIPTDIR}/fetchit
-.endif
-	@${TOUCH} ${WRKDIR}/.fetch_done
+	@if [ ! -e ${WRKDIR}/.fetch_done ]; then \
+		${SETENV} WRKDIR=${WRKDIR} ${SCRIPTDIR}/fetchit || exit 1; \
+		${TOUCH} ${WRKDIR}/.fetch_done; \
+	fi
 
 do-extract:
 	@${CP} ${FILESDIR}/strlcpy.c ${WRKSRC}/lib/
