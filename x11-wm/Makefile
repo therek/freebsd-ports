@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.63 2001/08/10 16:48:48 nakai Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.64 2001/08/10 19:58:10 nakai Exp $
 #
 
     SUBDIR += 9menu
@@ -32,6 +32,7 @@
     SUBDIR += icewm
     SUBDIR += ion
     SUBDIR += kappdock
+    SUBDIR += kdeartwork
     SUBDIR += kwix
     SUBDIR += larswm
     SUBDIR += libdockapp
