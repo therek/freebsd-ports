@@ -2,36 +2,29 @@
 # Date created:		14th November 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/lang/starlogo/Makefile,v 1.2 2000/03/21 08:29:18 mharo Exp $
+# $FreeBSD: ports/lang/starlogo/Makefile,v 1.3 2000/04/12 06:20:51 obrien Exp $
 #
 
 PORTNAME=	starlogo
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	lang java
-MASTER_SITES=	http://el.www.media.mit.edu/starlogo/download/
-DISTNAME=	java-starlogo-beta-2
+MASTER_SITES=	http://el.www.media.mit.edu/groups/el/Projects/starlogo/download/
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
-		${LOCALBASE}/jdk${JDK_VERSION}/lib/i386/green_threads/libtya.so:${PORTSDIR}/java/tya
+RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper \
+		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre
 
-WRKSRC=		${WRKDIR}/starlogo-1.0b2
-JDK_VERSION=	1.1.8
 NO_BUILD=	yes
 
-post-patch:
-	@${CAT} ${WRKSRC}/starlogo-unix | ${SED} -e s,@@PREFIX@@,${PREFIX},g | ${SED} -e s,@@JDK_VERSION@@,${JDK_VERSION},g > ${WRKSRC}/starlogo
+do-configure:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g ; s|%%LOCALBASE%%|${LOCALBASE}|g" \
+		${WRKSRC}/starlogo-unix
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/java/starlogo
-	@${MKDIR} ${PREFIX}/share/java/starlogo/projects
-	@${MKDIR} ${PREFIX}/share/java/starlogo/sounds
-	@${INSTALL_SCRIPT} ${WRKSRC}/starlogo ${PREFIX}/bin
-	@${INSTALL_DATA} ${WRKSRC}/starlogo.jar  ${PREFIX}/share/java/starlogo
-	@${INSTALL_DATA} ${WRKSRC}/README        ${PREFIX}/share/java/starlogo
-	@${INSTALL_DATA} ${WRKSRC}/reference.txt ${PREFIX}/share/java/starlogo
-	@${INSTALL_DATA} ${WRKSRC}/projects/*    ${PREFIX}/share/java/starlogo/projects
-	@${INSTALL_DATA} ${WRKSRC}/sounds/*      ${PREFIX}/share/java/starlogo/sounds
+	@${INSTALL_SCRIPT} ${WRKSRC}/starlogo-unix ${PREFIX}/bin/starlogo
+	@(cd ${WRKSRC} && ${TAR} -c -f - .) \
+		| (cd ${PREFIX}/share/java/starlogo && && ${TAR} --unlink -x -f -)
 
 .include <bsd.port.mk>
