@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.103 2001/05/04 08:50:08 obrien Exp $
+# $FreeBSD$
 #
 
 SNAPDATE=	2001-04-30
@@ -25,10 +25,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 NO_CDROM=	'dated material'
 
-PATCH_ARGS=	-d ${SRCDIR} -E ${PATCH_STRIP}
-.if !defined(PATCH_DEBUG)
-PATCH_ARGS+=	--forward --quiet
-.endif
+PATCH_WRKDIR=	${SRCDIR}
 CONFIGURE_SCRIPT=	../gcc-${SNAPVER}/configure
 
 .include <bsd.port.pre.mk>
