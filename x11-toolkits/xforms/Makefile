@@ -2,47 +2,37 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.33 2000/06/17 00:14:42 steve Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.34 2000/07/07 18:44:49 steve Exp $
 #
 
 PORTNAME=	xforms
-PORTVERSION= 	0.88.1
-CATEGORIES=	graphics x11-toolkits
+PORTVERSION= 	0.89
+CATEGORIES=	x11-toolkits graphics
+MASTER_SITES=	ftp://ncmir.ucsd.edu/pub/xforms/${MASTER_SITE_SUBDIR}/
 EXTRACT_SUFX=	.tgz
+
+MAINTAINER=	gena@NetVision.net.il
 
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 
-.include <bsd.port.pre.mk>
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
-.if ${PORTOBJFORMAT} == "elf"
-.if ${MACHINE_ARCH} == "alpha"
-DISTNAME=	bxform-freebsd-alpha
-.else
-DISTNAME=	bxform-freebsd-elf
-.endif
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://bragg.phys.uwm.edu/~zhao/ftp/
-MASTER_SITE_SUBDIR=	steve
-PATCHDIR=	${.CURDIR}/patches.elf
-.else
-DISTNAME=	bxform-088
-MASTER_SITES=	ftp://bragg.phys.uwm.edu/pub/xforms/freeBSD/ \
-		ftp://ftp.via.ecp.fr/pub2/xforms/freeBSD/ \
-		ftp://ftp.st.ryukoku.ac.jp/pub/X11/xforms/freeBSD/
-.endif
-
-MAINTAINER=	gena@NetVision.net.il
-
-PATCH_STRIP=	-p0 -t
-WRKSRC=		${WRKDIR}/xforms
 MAN1=		fdesign.1 fd2ps.1
 MAN5=		xforms.5
 
-post-install:
-.if !defined(NOMANCOMPRESS)
-	@${RM} ${PREFIX}/man/man5/forms.5
-	@${LN} -fs xforms.5.gz ${PREFIX}/man/man5/forms.5.gz
+.include <bsd.port.pre.mk>
+
+.if ${MACHINE_ARCH} == "alpha"
+PORTVERSION=	0.88
+DISTNAME=	bxform-${PORTVERSION:S/.//}
+MASTER_SITE_SUBDIR=	freeBSD-alpha
+PATCHDIR=	${MASTERDIR}/patches.alpha
+.else
+DISTNAME=	bxform-${PORTVERSION:S/.//}-elf
+MASTER_SITE_SUBDIR=	freeBSD
+PATCHDIR=       ${MASTERDIR}/patches.i386
+MAN1+=		iconvert.1
 .endif
 
 .include <bsd.port.post.mk>
