@@ -1,5 +1,6 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.70 2001/04/22 01:40:53 nakai Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.71 2001/04/22 02:35:51 nakai Exp $
 #
+    SUBDIR += zsnes
 
     SUBDIR += aftp
     SUBDIR += atari800
