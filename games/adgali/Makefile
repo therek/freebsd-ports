@@ -3,7 +3,7 @@
 # Date created:			Sep 23, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/adgali/Makefile,v 1.1 2001/09/23 09:51:11 ijliao Exp $
 #
 
 PORTNAME=	adgali
@@ -17,7 +17,8 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	SDL-1.1:${PORTSDIR}/devel/sdl12 \
 		jpeg:${PORTSDIR}/graphics/jpeg \
 		tiff:${PORTSDIR}/graphics/tiff \
-		png:${PORTSDIR}/graphics/png
+		png:${PORTSDIR}/graphics/png \
+		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 USE_FREETYPE=	yes
