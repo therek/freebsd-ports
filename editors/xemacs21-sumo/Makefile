@@ -2,7 +2,7 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-sumo/Makefile,v 1.13 2001/02/05 08:14:52 kiri Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xemacs-${NAMEPREFIX}sumo
@@ -14,15 +14,9 @@ EXTRACT_ONLY=	# empty
 
 MAINTAINER=	kiri@FreeBSD.org
 
-.if defined(NAMEPREFIX) && ${NAMEPREFIX} == "mule-" || \
-	defined(PKGNAMEPREFIX) && ${PKGNAMEPREFIX} != ""
-RUN_DEPENDS=	${LOCALBASE}/share/doc/xemacs-additional-packages:${PORTSDIR}/editors/xemacs-additional-packages \
-		${LOCALBASE}/lib/xemacs/mule-packages/pkginfo/MANIFEST.leim:${PORTSDIR}/editors/xemacs-mule-packages \
-		${RUN_DEP_LIST}
-.else
-RUN_DEPENDS=	${LOCALBASE}/share/doc/xemacs-additional-packages:${PORTSDIR}/editors/xemacs-additional-packages \
-		${RUN_DEP_LIST}
-.endif
+RUN_DEPENDS=	${RUN_DEP_LIST}
+# below line would be remove comment and add RUN_DEPNDS after any xemacs-*-packages added
+#		${LOCALBASE}/share/doc/xemacs-additional-packages:${PORTSDIR}/editors/xemacs-additional-packages \
 
 NO_BUILD=	yes
 
