@@ -2,7 +2,7 @@
 # Date created:		18 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.20 2001/06/01 11:28:38 knu Exp $
+# $FreeBSD: ports/sysutils/portupgrade/Makefile,v 1.21 2001/06/01 12:22:06 knu Exp $
 #
 
 PORTNAME=	portupgrade
@@ -21,6 +21,9 @@ RUN_DEPENDS=	${RUBY_SITELIBDIR}/optparse.rb:${PORTSDIR}/devel/ruby-optparse \
 USE_RUBY=	yes
 
 NO_BUILD=	yes
+
+do-patch:
+	${GREP} -Frl priviledge ${WRKSRC} | xargs ${RUBY} -i -pe 'gsub /priviledge/, "privilege"'
 
 do-install:
 	cd ${WRKSRC} && ${RUBY} install.rb
