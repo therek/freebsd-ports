@@ -2,7 +2,7 @@
 # Date created:		1 August 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/sysutils/xlogmaster/Makefile,v 1.15 2000/10/05 06:42:26 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xlogmaster
@@ -15,7 +15,8 @@ MAINTAINER=	aw1@stade.co.uk
 
 USE_XLIB=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 MAN1=		xlogmaster.1

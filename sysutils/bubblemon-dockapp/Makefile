@@ -2,7 +2,7 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/bubblemon-dockapp/Makefile,v 1.2 2001/06/08 05:36:42 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bubblemon-dockapp
@@ -15,7 +15,8 @@ MAINTAINER=	markp@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 MAKE_ARGS+=	PREFIX="${PREFIX}"
 EXAMPLESDIR=	${PREFIX}/share/examples/${PORTNAME}
 

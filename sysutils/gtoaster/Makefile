@@ -2,7 +2,7 @@
 # Date created:				28 September 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/sysutils/gtoaster/Makefile,v 1.3 2001/04/09 10:44:26 eric Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtoaster
@@ -23,7 +23,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${X11BASE}
 CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 

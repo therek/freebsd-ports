@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 14 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.5 2000/06/01 16:25:41 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	guiTAR
@@ -15,14 +15,15 @@ MAINTAINER=	domi@saargate.de
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
 WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.pre.mk>
 
-.if defined(HAVE_GNOME)
-USE_GNOME=	yes
+.if ${HAVE_GNOME:Mgtk12}!=""
+USE_GNOME+=	gtk12
+PKGNAMESUFFIX=	-gtk
 .else
 CONFIGURE_ARGS+=--disable-gnome
 .endif

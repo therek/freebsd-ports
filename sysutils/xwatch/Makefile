@@ -2,7 +2,7 @@
 # Date created:				17 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/sysutils/xwatch/Makefile,v 1.11 2000/10/05 06:42:28 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwatch
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.student.lu.se/~nbi98oli/src/obsolete/
 MAINTAINER=	mph@freebsd.org
 
 USE_XLIB=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 post-install:
