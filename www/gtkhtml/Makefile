@@ -2,11 +2,11 @@
 # Date created:				2nd June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.31 2001/08/09 10:46:50 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkhtml
-PORTVERSION=	0.11.1
+PORTVERSION=	0.12.0
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gtkhtml
