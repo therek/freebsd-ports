@@ -3,7 +3,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.37 1999/11/07 22:19:47 dirk Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.38 1999/12/30 11:13:37 dirk Exp $
 #
 
 DISTNAME=	openssl-0.9.4
@@ -15,7 +15,8 @@ MASTER_SITES=	http://www.openssl.org/source/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-.if exists(/usr/bin/openssl) && exists(/usr/lib/libcrypto.so) && exists(/usr/lib/libssl.so)
+.include <bsd.port.pre.mk>
+.if ${OSVERSION} >= 400014
 FORBIDDEN=	"OpenSSL is already in the base system"
 .endif
 
@@ -57,4 +58,4 @@ post-install:
 .endif
 	@${SED} -e 's#/usr/local#${PREFIX}#g' ${PKGDIR}/MESSAGE
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
