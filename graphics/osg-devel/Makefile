@@ -2,7 +2,7 @@
 # Date created:				26 Apr 2001
 # Whom:					Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/osg/Makefile,v 1.1 2001/05/31 10:10:34 sobomax Exp $
 #
 
 PORTNAME=	osg
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.openscenegraph.org/download/snapshots/
 DISTNAME=	${PORTNAME}_src-0.8-38
 
 MAINTAINER=	aa8vb@nc.rr.com
+
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/OpenSceneGraph-0.8
 
