@@ -2,7 +2,7 @@
 # Date created:			23 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mailagent/Makefile,v 1.32 2001/02/05 15:10:48 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		mailagent
@@ -39,6 +39,16 @@ pre-extract:
 	@if [ `id -u` = 0 ]; then \
 	  ${ECHO} "Do not build mailagent as root or it won't pass the sanity tests."; \
 	  ${FALSE}; fi
+
+post-patch:
+	@(cd ${WRKSRC}; \
+	  ${PERL} -pi.bak \
+	    -e 's|exec perl -S|exec ${PERL} -S|' \
+	    agent/edusers.SH agent/magent.sh agent/maildist.SH \
+	    agent/mailhelp.SH agent/maillist.SH agent/mailpatch.SH \
+	    agent/package.SH agent/test/TEST agent/test/atail \
+	    bin/perload misc/getcost/getcost misc/mime/unmime \
+	    misc/news/newsgate)
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/mailagent
