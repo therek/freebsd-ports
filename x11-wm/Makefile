@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.22 1999/09/09 01:01:05 taoka Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.23 1999/10/10 23:59:42 steve Exp $
 #
 
     SUBDIR += 9menu
@@ -12,6 +12,7 @@
     SUBDIR += ctwm
     SUBDIR += enlightenment
     SUBDIR += enlightenment-conf
+    SUBDIR += epplets
     SUBDIR += flwm
     SUBDIR += fvwm
     SUBDIR += fvwm2
