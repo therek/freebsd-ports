@@ -3,7 +3,7 @@
 # Date created:		4 January 2000
 # Whom:			Greg Hewgill <greg@hewgill.com>
 #
-# $FreeBSD: ports/security/zebedee/Makefile,v 1.1.1.1 2000/01/09 08:15:41 dbaker Exp $
+# $FreeBSD: ports/security/zebedee/Makefile,v 1.2 2000/01/23 05:32:33 dbaker Exp $
 #
 
 DISTNAME=	zebedee-1.3.0
@@ -13,10 +13,9 @@ MASTER_SITES=	http://www.winton.org.uk/zebedee/ \
 
 MAINTAINER=	greg@hewgill.com
 
-BUILD_DEPENDS=	${LOCALBASE}/include/openssl/blowfish.h:${PORTSDIR}/security/openssl \
-		${LOCALBASE}/lib/libcrypto.a:${PORTSDIR}/security/openssl \
-		${LOCALBASE}/lib/libbz2.a:${PORTSDIR}/archivers/bzip2
+BUILD_DEPENDS=	${LOCALBASE}/lib/libbz2.a:${PORTSDIR}/archivers/bzip2
 
+USE_OPENSSL=	NORSA
 USE_PERL5=	yes
 
 MAN1=		zebedee.1 ftpgw.tcl.1
