@@ -2,7 +2,7 @@
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.12 2001/02/26 03:48:31 steve Exp $
+# $FreeBSD: ports/databases/freetds/Makefile,v 1.13 2001/07/22 03:01:22 dwcjr Exp $
 
 PORTNAME=	freetds
 PORTVERSION=	0.52
@@ -22,5 +22,12 @@ INSTALLS_SHLIB=	yes
 post-patch:
 	@find ${WRKSRC}/src -name Makefile.in | xargs ${PERL} -pi -e \
 		's| install-includeHEADERS||g'
+	@${PERL} -pi -e 's!/freetds.conf!/freetds.conf.dist!g' \
+		${WRKSRC}/Makefile.in
+
+post-install:
+.if !exists(${PREFIX}/etc/freetds.conf)
+	@${CP} ${PREFIX}/etc/freetds.conf.dist ${PREFIX}/etc/freetds.conf
+.endif
 
 .include <bsd.port.mk>
