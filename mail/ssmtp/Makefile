@@ -2,7 +2,7 @@
 # Date created:		9 Jan 2001
 # Whom:			Tomasz Paszkowski <ns88@k.pl>
 #
-# $FreeBSD: ports/mail/ssmtp/Makefile,v 1.1 2001/02/26 05:17:57 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ssmtp
@@ -37,10 +37,10 @@ replace:
 	@${ECHO} backuping old /etc/mail/mailer.conf
 	@${MV} -f /etc/mail/mailer.conf /etc/mail/mailer.conf.old-ssmtp
 	@${ECHO} Replacing mailwarpper config
-	@${ECHO} "sendmail		${PREFIX}/sbin/ssmtp" > /etc/mail/mailer.conf
-	@${ECHO} "send-mail		${PREFIX}/sbin/ssmtp" >> /etc/mail/mailer.conf
-	@${ECHO} "mailq			/bin/echo" >> /etc/mail/mailer.conf
-	@${ECHO} "newaliases		/bin/echo" >> /etc/mail/mailer.conf
+	@${ECHO_CMD} "sendmail		${PREFIX}/sbin/ssmtp" > /etc/mail/mailer.conf
+	@${ECHO_CMD} "send-mail		${PREFIX}/sbin/ssmtp" >> /etc/mail/mailer.conf
+	@${ECHO_CMD} "mailq			/bin/echo" >> /etc/mail/mailer.conf
+	@${ECHO_CMD} "newaliases		/bin/echo" >> /etc/mail/mailer.conf
 .else
 	@${ECHO} backuping old /usr/sbin/sendmail
 	@${MV} -f /usr/sbin/sendmail /usr/sbin/sendmail.OFF

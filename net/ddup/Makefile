@@ -2,7 +2,7 @@
 # Date created:		30 September 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/net/ddup/Makefile,v 1.7 2000/10/08 10:22:27 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ddup
@@ -32,7 +32,7 @@ post-patch:
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/
-	${ECHO} "#define file_name \"${PREFIX}/etc/ddup.conf\"" > ${WRKSRC}/options.h
+	${ECHO_CMD} "#define file_name \"${PREFIX}/etc/ddup.conf\"" > ${WRKSRC}/options.h
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ddupcron.sh ${PREFIX}/sbin/

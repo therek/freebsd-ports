@@ -2,7 +2,7 @@
 # Date created:		28 Aug 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.5 2001/06/17 17:19:21 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prom-wl
@@ -34,7 +34,7 @@ do-install:
 # For xemacs package install configuration
 	@${MKDIR} ${SITEPKGDIR}/lisp/prom-wl ${SITEPKGDIR}/pkginfo
 	@${LN} -sf ${ELISPDIR}/prom-wl.el ${SITEPKGDIR}/lisp/prom-wl/prom-wl.el
-	@${ECHO} 'pkginfo/MANIFEST.prom-wl' > ${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
-	@${ECHO} 'lisp/prom-wl/prom-wl.el' >> ${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
+	@${ECHO_CMD} 'pkginfo/MANIFEST.prom-wl' > ${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
+	@${ECHO_CMD} 'lisp/prom-wl/prom-wl.el' >> ${SITEPKGDIR}/pkginfo/MANIFEST.prom-wl
 
 .include <bsd.port.mk>

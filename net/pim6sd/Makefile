@@ -2,7 +2,7 @@
 # Date created:  2 Jun 2001
 # Whom:   dwcjr
 #
-# $FreeBSD: ports/net/pim6sd/Makefile,v 1.1 2001/06/03 17:59:57 ume Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pim6sd
@@ -36,9 +36,9 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
 .for file in ${DOCS}
 	${INSTALL_DATA} ${BUILD_WRKSRC}/${file} ${PREFIX}/share/doc/${PORTNAME}
-	@${ECHO} share/doc/${PORTNAME}/${file} >>${TMPPLIST}
+	@${ECHO_CMD} share/doc/${PORTNAME}/${file} >>${TMPPLIST}
 .endfor
-	@${ECHO} "@dirrm share/doc/${PORTNAME}" >>${TMPPLIST}
+	@${ECHO_CMD} "@dirrm share/doc/${PORTNAME}" >>${TMPPLIST}
 .endif
 
 .include <bsd.port.mk>

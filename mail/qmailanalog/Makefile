@@ -2,7 +2,7 @@
 # Date created:		29 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.7 2001/01/16 17:31:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qmailanalog
@@ -44,14 +44,14 @@ post-patch:
 	@perl -pi.bak -e "s|.usr.local.qmailanalog|${QMPREFIX}|" ${WRKSRC}/conf-home
 	@perl -pi.bak -e "s|-O2|${CFLAGS}|" ${WRKSRC}/conf-cc
 	@perl -pi.bak -e '$$_ = "" if /cat/' ${WRKSRC}/hier.c
-	@${ECHO} ${PREFIX} > ${WRKDIR}/.PPREFIX
-	@${ECHO} ${QMAIL_DIR} >> ${WRKDIR}/.PPREFIX
+	@${ECHO_CMD} ${PREFIX} > ${WRKDIR}/.PPREFIX
+	@${ECHO_CMD} ${QMAIL_DIR} >> ${WRKDIR}/.PPREFIX
 
 pre-install:
-	@${ECHO} ${PREFIX} > ${WRKDIR}/.IPREFIX
-	@${ECHO} ${QMAIL_DIR} >> ${WRKDIR}/.IPREFIX
+	@${ECHO_CMD} ${PREFIX} > ${WRKDIR}/.IPREFIX
+	@${ECHO_CMD} ${QMAIL_DIR} >> ${WRKDIR}/.IPREFIX
 	@diff ${WRKDIR}/.[PI]PREFIX > /dev/null \
-	|| (${ECHO} ${DIFF_MSG} && exit 1)
+	|| (${ECHO_CMD} ${DIFF_MSG} && exit 1)
 	@${MKDIR} ${QMPREFIX}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		25 Jun 1997
 # Whom:			jmz
 #
-# $FreeBSD: ports/misc/lile/Makefile,v 1.6 2000/04/14 08:46:10 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ile
@@ -20,6 +20,6 @@ MAN1=		ile.1
 do-configure:
 	@(cd ${WRKSRC}; ${MV} Makefile Makefile.old; \
 	${SED} -e s:/usr/local:${PREFIX}: <Makefile.old > Makefile; \
-	${ECHO} all: ile >> Makefile; ${ECHO} CC=cc ${CFLAGS} >> Makefile)
+	${ECHO_CMD} all: ile >> Makefile; ${ECHO_CMD} CC=cc ${CFLAGS} >> Makefile)
 
 .include <bsd.port.mk>

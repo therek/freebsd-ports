@@ -2,7 +2,7 @@
 # Date created:		28 Jun 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-mew/Makefile,v 1.5 2001/06/17 17:17:00 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prom-mew
@@ -34,7 +34,7 @@ do-install:
 # For xemacs package install configuration
 	@${MKDIR} ${SITEPKGDIR}/lisp/prom-mew ${SITEPKGDIR}/pkginfo
 	@${LN} -sf ${ELISPDIR}/prom-mew.el ${SITEPKGDIR}/lisp/prom-mew/prom-mew.el
-	@${ECHO} 'pkginfo/MANIFEST.prom-mew' > ${SITEPKGDIR}/pkginfo/MANIFEST.prom-mew
-	@${ECHO} 'lisp/prom-mew/prom-mew.el' >> ${SITEPKGDIR}/pkginfo/MANIFEST.prom-mew
+	@${ECHO_CMD} 'pkginfo/MANIFEST.prom-mew' > ${SITEPKGDIR}/pkginfo/MANIFEST.prom-mew
+	@${ECHO_CMD} 'lisp/prom-mew/prom-mew.el' >> ${SITEPKGDIR}/pkginfo/MANIFEST.prom-mew
 
 .include <bsd.port.mk>

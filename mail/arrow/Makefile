@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/arrow/Makefile,v 1.8 2001/04/06 12:46:06 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	arrow
@@ -75,7 +75,7 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
 	@${PERL} -pi -e 's|/var/spool/mail/|/var/mail/|' \
 		${WRKSRC}/programs/arrow/code/*.cc

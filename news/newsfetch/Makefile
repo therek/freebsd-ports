@@ -2,7 +2,7 @@
 # Date created:		12 September 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/news/newsfetch/Makefile,v 1.10 2001/01/28 00:24:38 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newsfetch
@@ -20,9 +20,9 @@ MANCOMPRESSED=	maybe
 
 do-configure:
 	cd ${WRKSRC} && ( \
-	${ECHO} "PROG= newsfetch"; \
-	${ECHO} "SRCS=" *.c; \
-	${ECHO} ".include <bsd.prog.mk>"; \
+	${ECHO_CMD} "PROG= newsfetch"; \
+	${ECHO_CMD} "SRCS=" *.c; \
+	${ECHO_CMD} ".include <bsd.prog.mk>"; \
 	) > Makefile
 
 .include <bsd.port.mk>

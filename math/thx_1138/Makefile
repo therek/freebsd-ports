@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/thx_1138/Makefile,v 1.7 2001/06/22 18:39:39 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	thx_1138
@@ -73,7 +73,7 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
 
 pre-build:

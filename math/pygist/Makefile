@@ -2,7 +2,7 @@
 # Date created:		30 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/pygist/Makefile,v 1.17 2000/09/08 11:58:52 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gist
@@ -46,7 +46,7 @@ post-install:
 	@${MKDIR} ${GISTDIR}
 	${INSTALL_DATA} ${WRKSRC}/*/Lib/* ${GISTDIR}
 	@${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${GISTDIR}
-	@${ECHO} "PyGist" > ${GISTDIR}/../PyGist.pth
+	@${ECHO_CMD} "PyGist" > ${GISTDIR}/../PyGist.pth
 	${MKDIR} ${EXAMPLEDIR}
 	${INSTALL_DATA} ${WRKSRC}/*/Demo/* ${EXAMPLEDIR}
 

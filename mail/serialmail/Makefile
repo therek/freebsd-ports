@@ -2,7 +2,7 @@
 # Date created:		2 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/serialmail/Makefile,v 1.8 2000/10/08 02:49:37 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	serialmail
@@ -34,10 +34,10 @@ NO_PACKAGE=	Unsure of djb's license
 ALL_TARGET=	it
 
 post-configure:
-	@${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
-	@${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
-	@${ECHO} ${CC} -s > ${WRKSRC}/conf-ld
-	@${ECHO} ${QMAIL_DIR} > ${WRKSRC}/conf-qmail
+	@${ECHO_CMD} ${PREFIX} > ${WRKSRC}/conf-home
+	@${ECHO_CMD} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
+	@${ECHO_CMD} ${CC} -s > ${WRKSRC}/conf-ld
+	@${ECHO_CMD} ${QMAIL_DIR} > ${WRKSRC}/conf-qmail
 
 do-install:
 .for file in serialqmtp serialsmtp maildirserial setlock

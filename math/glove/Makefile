@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			 Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/glove/Makefile,v 1.6 2001/02/22 02:49:45 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glove
@@ -72,7 +72,7 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
 
 pre-build:

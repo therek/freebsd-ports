@@ -2,7 +2,7 @@
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.15 2000/08/11 06:34:47 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	simpack
@@ -130,17 +130,17 @@ create-lib-queuing:
 create-scripts: create-sdsmt-alias create-deq-alias
 
 create-sdsmt-alias:
-	@${ECHO} SDSMTLIB=${PREFIX}/lib/SimPack/func/slice/sdsmt \
+	@${ECHO_CMD} SDSMTLIB=${PREFIX}/lib/SimPack/func/slice/sdsmt \
 				>  ${WRKDIR}/temp/sdsmt.alias
-	@${ECHO} export SDSMTLIB >> ${WRKDIR}/temp/sdsmt.alias
-	@${ECHO} wish4.1 ${PREFIX}/lib/SimPack/func/slice/sdsmt/sdsmt \
+	@${ECHO_CMD} export SDSMTLIB >> ${WRKDIR}/temp/sdsmt.alias
+	@${ECHO_CMD} wish4.1 ${PREFIX}/lib/SimPack/func/slice/sdsmt/sdsmt \
 				>> ${WRKDIR}/temp/sdsmt.alias
 
 create-deq-alias:
-	@${ECHO} PATCH=${PREFIX}/lib/SimPack/constraint/differential:$$PATCH \
+	@${ECHO_CMD} PATCH=${PREFIX}/lib/SimPack/constraint/differential:$$PATCH \
 				>  ${WRKDIR}/temp/deq.alias
-	@${ECHO} export PATCH >> ${WRKDIR}/temp/deq.alias
-	@${ECHO} ${PREFIX}/lib/SimPack/constraint/differential/deq $$*       \
+	@${ECHO_CMD} export PATCH >> ${WRKDIR}/temp/deq.alias
+	@${ECHO_CMD} ${PREFIX}/lib/SimPack/constraint/differential/deq $$*       \
 				>> ${WRKDIR}/temp/deq.alias
 
 .include <bsd.port.post.mk>

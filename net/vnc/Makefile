@@ -2,7 +2,7 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.22 2001/01/16 17:31:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vnc
@@ -52,6 +52,6 @@ post-install:
 # Add to PLIST because VNC developers can't/won't freeze their doc
 # distfile.
 	(cd ${PREFIX}; ls share/doc/vnc/* >> ${TMPPLIST})
-	${ECHO} '@dirrm share/doc/vnc' >> ${TMPPLIST}
+	${ECHO_CMD} '@dirrm share/doc/vnc' >> ${TMPPLIST}
 .endif
 .include <bsd.port.mk>

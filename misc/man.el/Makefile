@@ -2,7 +2,7 @@
 # Date created:		10 September 1998
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/misc/man.el/Makefile,v 1.9 2000/04/14 08:46:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	i18n-man
@@ -32,9 +32,9 @@ do-install:
 	${MKDIR} ${SITEPKGDIR}/lisp/${f}
 	${LN} -sf ${ELISPDIR}/${f}.el ${SITEPKGDIR}/lisp/${f}/${f}.el
 	${LN} -sf ${ELISPDIR}/i18n-man.el ${SITEPKGDIR}/lisp/${f}/i18n-man.el
-	${ECHO} "pkginfo/MANIFEST.${f}" > ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
-	${ECHO} "lisp/${f}/${f}.el" >> ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
-	${ECHO} "lisp/${f}/i18n-man.el" >> ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
+	${ECHO_CMD} "pkginfo/MANIFEST.${f}" > ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
+	${ECHO_CMD} "lisp/${f}/${f}.el" >> ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
+	${ECHO_CMD} "lisp/${f}/i18n-man.el" >> ${SITEPKGDIR}/pkginfo/MANIFEST.${f}
 .endfor
 	${INSTALL_SCRIPT} ${FILESDIR}/byte-compile ${PREFIX}/share/doc/i18n-man
 
