@@ -2,12 +2,12 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.44 2001/06/15 04:23:55 dinoex Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.45 2001/06/24 04:28:20 dinoex Exp $
 #
 
 PORTNAME=	tcl
 PORTVERSION=	8.3.3
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	lang tcl83
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcl8_3
