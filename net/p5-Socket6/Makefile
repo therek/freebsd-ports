@@ -2,7 +2,7 @@
 # Date created:		24 May 2000
 # Whom:	      		Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Socket6/Makefile,v 1.5 2001/03/01 06:38:43 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Socket6
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Socket6
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ume@FreeBSD.org
+COMMENT=	Perl module to support getaddrinfo() and getnameinfo()
 
 PERL_CONFIGURE=	yes
 
