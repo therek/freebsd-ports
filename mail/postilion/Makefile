@@ -2,7 +2,7 @@
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/postilion/Makefile,v 1.12 2001/02/13 00:42:11 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	postilion
@@ -21,7 +21,8 @@ MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ARGS=	PORTVERSION="${PORTVERSION}" LOCALBASE="${LOCALBASE}" \
 		MKDIR="${MKDIR}" INSTALL_DATA="${INSTALL_DATA}" \
 		DIR=lib/postilionlib SED="${SED}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
+		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
+		LDFLAGS="${LDFLAGS} -L${X11BASE}/lib"
 EXTRACT_AFTER_ARGS=     | ${TAR} -xf - --exclude '*/imap/*'
 
 do-configure:
