@@ -2,15 +2,15 @@
 # Date created:			  Tue 26, 2000
 # Whom:				  Foxfair Hu <foxfair@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/tintin++/Makefile,v 1.2 2000/10/07 23:30:50 asami Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
 
-MASTERDIR=	${.CURDIR}/../../net/tintin++
-
 MAINTAINER=	foxfair@FreeBSD.org
 
-EXTRA_PATCHES=	${.CURDIR}/files/extra-patch.1
+MASTERDIR=	${.CURDIR}/../../net/tintin++-devel
+
+CONFIGURE_ARGS=	--enable-big5
 
 .include "${MASTERDIR}/Makefile"
