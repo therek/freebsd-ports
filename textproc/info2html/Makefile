@@ -2,7 +2,7 @@
 # Date created:         9 October 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/textproc/info2html/Makefile,v 1.5 2000/04/09 21:52:41 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	info2html
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	Translate GNU info files into HTML pages
 
 MAN1=		info2html.1
 MANCOMPRESSED=	yes

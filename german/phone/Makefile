@@ -2,7 +2,7 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/phone/Makefile,v 1.10 2000/04/14 23:53:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	phone
@@ -13,6 +13,7 @@ DISTNAME=	avon-1996
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	German phone code / Deutsche Telefonvorwahl (AVON)
 
 NO_WRKSUBDIR=	YES
 EXTRACT_CMD=	${GZCAT}

@@ -2,7 +2,7 @@
 # Date created:         11 October 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/www/momspider/Makefile,v 1.6 2000/04/10 00:05:56 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	momspider
@@ -15,6 +15,7 @@ DISTNAME=	MOMspider-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} libwww-perl-0.40.tar.gz
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	WWW Spider for multi-owner maintenance
 
 NO_BUILD=	yes
 momdir=		${PREFIX}/momspider

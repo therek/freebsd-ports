@@ -2,7 +2,7 @@
 # Date created:        1997/09/09
 # Whom:                wosch
 #
-# $FreeBSD: ports/mail/movemail/Makefile,v 1.6 2000/04/13 20:00:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	movemail
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	Move your mail box to annother location
 
 MAN1=		movemail.1
 MANCOMPRESSED=	maybe

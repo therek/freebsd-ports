@@ -2,7 +2,7 @@
 # Date created:         14 August 1996
 # Whom:                 wosch
 #
-# $FreeBSD: ports/sysutils/socket/Makefile,v 1.12 2000/11/01 23:56:26 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	socket
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils net
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	Create tcp socket and connect to stdin/out
 
 MAN1=		socket.1
 

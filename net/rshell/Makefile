@@ -2,7 +2,7 @@
 # Date created:        1997/06/09
 # Whom:                wosch
 #
-# $FreeBSD: ports/net/rshell/Makefile,v 1.11 2000/04/09 18:13:26 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rshell
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
+COMMENT=	A front end for rsh(1) and rcp(1)
 
 MAN1=		rshell.1
 MLINKS=		rshell.1 rcopy.1
