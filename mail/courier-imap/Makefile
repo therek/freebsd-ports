@@ -2,12 +2,11 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.9 2000/09/18 13:24:16 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.10 2000/09/22 12:44:28 nbm Exp $
 #
 
 PORTNAME=	courier-imap
-PORTVERSION=	1.0
-PORTREVISION=	1
+PORTVERSION=	1.1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -51,6 +50,7 @@ EXTRA_DOCS=	README INSTALL AUTHORS imap/ChangeLog
 
 post-patch:
 	@perl -i -pe 's@(\$$.sysconfdir./\$$\$$p)@\1.dist@' \
+		${WRKSRC}/Makefile.in \
 		${WRKSRC}/imap/Makefile.in
 
 post-install:
