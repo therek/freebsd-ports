@@ -2,11 +2,11 @@
 # Date created:         3 May 1999
 # Whom:                 one@netlab.is.tsukuba.ac.jp
 #
-# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.11 2000/09/05 01:41:31 steve Exp $
+# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.12 2000/11/03 16:35:21 sobomax Exp $
 #
 
 PORTNAME=	tgif
-PORTVERSION=	4.1.38
+PORTVERSION=	4.1.39
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
 		ftp://ftp.cs.ucla.edu/pub/tgif/ \
