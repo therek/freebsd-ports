@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.297 2000/10/03 10:30:53 reg Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.298 2000/10/05 04:04:56 nakai Exp $
 #
 
     SUBDIR += 221upgrade
@@ -123,6 +123,7 @@
     SUBDIR += screen
     SUBDIR += scriptkit
     SUBDIR += seizedesktop
+    SUBDIR += sh-utils
     SUBDIR += sls
     SUBDIR += sma
     SUBDIR += snowflake
