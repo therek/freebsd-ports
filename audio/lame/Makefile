@@ -3,16 +3,16 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.6 1999/08/25 04:35:42 obrien Exp $
+# $FreeBSD: ports/audio/lame/Makefile,v 1.7 1999/11/21 01:08:41 cpiazza Exp $
 #
 
 DISTNAME=	dist10
-PKGNAME=	lame-3.50
+PKGNAME=	lame-3.51
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/Berkeley/mpeg2/conformance-bitstreams/audio/mpeg2/software/technical_report/
 
 PATCH_SITES=	http://www.sulaco.org/mp3/download/patches/
-PATCHFILES=	lame3.50.patch.gz
+PATCHFILES=	lame3.51.patch.gz
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
