@@ -3,7 +3,7 @@
 # Date created:			  8 November 1997
 # Whom:				  jraynard
 #
-# $FreeBSD: ports/devel/sfio/Makefile,v 1.14 2000/03/22 00:27:41 obrien Exp $
+# $FreeBSD: ports/devel/sfio/Makefile,v 1.15 2000/04/14 05:44:25 asami Exp $
 #
 
 PORTNAME=	sfio
@@ -11,7 +11,8 @@ PORTVERSION=	1999
 CATEGORIES=	devel
 #Users must register with AT&T before downloading tarball.
 #MASTER_SITES=	http://www.research.att.com/sw/tools/sfio/
-DISTFILES=	${PORTNAME}_${PORTVERSION}.src.unix.cpio
+DISTNAME=	${PORTNAME}_${PORTVERSION}
+EXTRACT_SUFX=	.src.unix.cpio
 
 MAINTAINER=	obrien@FreeBSD.org
 
