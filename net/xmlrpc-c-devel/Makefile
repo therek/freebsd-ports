@@ -3,7 +3,7 @@
 # Date created:			Mar 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xmlrpc-c/Makefile,v 1.4 2001/09/11 07:19:46 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmlrpc-c
@@ -24,6 +24,12 @@ INSTALLS_SHLIB=	yes
 MAN1=	meerkat-app-list.1 xml-rpc-api2cpp.1 xmlrpc-c-config.1 \
 	query-meerkat.1 xml-rpc-api2txt.1
 MAN7=	xmlrpc-c.7
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/lib/abyss/src/data.c \
+		${WRKSRC}/tools/turbocharger/mod_gzip.c \
+		${WRKSRC}/tools/turbocharger/mod_gzip.c
 
 post-install:
 	@${RM} -f ${PREFIX}/lib/*.la
