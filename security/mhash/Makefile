@@ -3,7 +3,7 @@
 # Date created:		Mon Jun 28 17:59:13 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/mhash/Makefile,v 1.4 1999/08/31 01:51:17 peter Exp $
+# $FreeBSD: ports/security/mhash/Makefile,v 1.5 1999/11/28 16:26:41 nsayer Exp $
 #
 
 DISTNAME=	mhash-0.6.1
@@ -13,11 +13,9 @@ MASTER_SITES=	http://schumann.cx/mhash/dl/
 MAINTAINER=	nsayer@freebsd.org
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --prefix=${PREFIX} --disable-pthreads
+CONFIGURE_ARGS+= --with-LDFLAGS='-lc_r'
 
 MAN3=		mhash.3
-
-RESTRICTED=	"yes - cryptography"
 
 post-install:
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
