@@ -3,11 +3,12 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.13 2000/09/14 10:43:24 asami Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.14 2000/09/15 23:18:47 asami Exp $
 #
 
 PORTNAME=	open-motif
 PORTVERSION= 	2.1.30
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R${PORTVERSION}/tars/  \
 		ftp://ftp.opengroup.org/pub/openmotif/R${PORTVERSION}/tars/  \

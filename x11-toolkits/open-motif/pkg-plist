@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg/PLIST,v 1.5 2000/07/19 12:58:57 obrien Exp $
+@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg/PLIST,v 1.6 2000/08/18 17:42:04 asami Exp $
 @exec [ -f %D/lib/X11/config/host.def.orig ] || mv %D/lib/X11/config/host.def %D/lib/X11/config/host.def.orig
 lib/X11/config/host.def
 @unexec [ -f %D/%F.orig ] && mv %D/%F.orig %D/%F || :
@@ -319,15 +319,12 @@ lib/X11/uid/xmanimate.uid
 lib/libMrm.a
 lib/libMrm.so
 lib/libMrm.so.2
-lib/libMrm_d.a
 lib/libUil.a
 lib/libUil.so
 lib/libUil.so.2
-lib/libUil_d.a
 lib/libXm.a
 lib/libXm.so
 lib/libXm.so.2
-lib/libXm_d.a
 share/doc/openmotif/BUGREPORT
 share/doc/openmotif/CLOSEDBUGS.gz
 share/doc/openmotif/COPYRIGHT.MOTIF
