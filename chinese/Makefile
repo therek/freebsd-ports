@@ -1,5 +1,6 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.94 2001/07/30 05:52:32 clive Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.95 2001/08/14 15:09:30 kevlo Exp $
 #
+    SUBDIR += zhcon
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
     SUBDIR += FreeWnn-server
