@@ -3,11 +3,11 @@
 # Date created:			Aug 12, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/rlwrap/Makefile,v 1.1 2001/08/12 11:07:24 ijliao Exp $
 #
 
 PORTNAME=	rlwrap
-PORTVERSION=	0.06
+PORTVERSION=	0.10
 CATEGORIES=	devel
 MASTER_SITES=	http://utopia.knoware.nl/~hlub/uck/rlwrap/
 EXTRACT_SUFX=	.tgz
