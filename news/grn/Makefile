@@ -2,13 +2,14 @@
 # Date created:		20 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/news/grn/Makefile,v 1.3 2000/09/13 08:46:43 sobomax Exp $
+# $FreeBSD: ports/news/grn/Makefile,v 1.4 2000/10/05 07:17:14 reg Exp $
 #
 
 PORTNAME=	grn
-PORTVERSION= 	0.0.27
+PORTVERSION= 	0.0.28
 CATEGORIES=	news gnome
-MASTER_SITES=	ftp://ivvs.ul.ru/pub/unix/grn/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
