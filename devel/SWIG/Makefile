@@ -2,12 +2,12 @@
 # Date created:			19 April 1996
 # Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.34 2001/02/02 05:11:45 knu Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.35 2001/04/02 19:04:13 ade Exp $
 #
 
 PORTNAME=	swig
 PORTVERSION=	${VER}p5
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	devel perl5 python tcl83
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.rge.com/pub/languages/swig/${VER}/ \
@@ -23,7 +23,7 @@ BUILD_DEPENDS=	${PYTHON_CMD}:${PYTHON_PORTSDIR} \
 VER=		1.1
 
 USE_PERL5=	yes
-PYTHON_VERSION?=	python2.0
+USE_PYTHON=	yes
 PYTHON_NO_DEPENDS?=	yes
 INSTALLS_SHLIB=	yes
 
