@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.215 2000/09/14 08:18:49 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.216 2000/09/14 09:04:27 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -87,6 +87,7 @@
     SUBDIR += kdc2tiff
     SUBDIR += kdegraphics11
     SUBDIR += kdegraphics11-i18n
+    SUBDIR += kdegraphics2
     SUBDIR += killustrator
     SUBDIR += kplot3d
     SUBDIR += lfview
