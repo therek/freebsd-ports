@@ -1,4 +1,4 @@
-# $FreeBSD: ports/russian/Makefile,v 1.31 2001/03/28 17:45:39 sobomax Exp $
+# $FreeBSD: ports/russian/Makefile,v 1.32 2001/04/09 21:09:19 demon Exp $
 #
     SUBDIR += xxkb
 
@@ -20,6 +20,7 @@
     SUBDIR += rus-ispell
     SUBDIR += wmcyrx
     SUBDIR += xcode
+    SUBDIR += xcyrBGR
     SUBDIR += xruskb
 
 .include <bsd.port.subdir.mk>
