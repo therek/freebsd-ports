@@ -2,14 +2,15 @@
 # Date created:        25 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/mail/spambnc/Makefile,v 1.4 2001/03/11 07:01:16 kevlo Exp $
+# $FreeBSD: ports/mail/spambnc/Makefile,v 1.5 2001/05/16 01:31:44 greid Exp $
 #
 
 PORTNAME=	spambnc
 PORTVERSION=	20010514
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.spambouncer.org/
+MASTER_SITES=	http://www.spambouncer.org/
 DISTFILES=	sb.tar.Z index.shtml
+DIST_SUBDIR=	spambnc
 EXTRACT_ONLY=	sb.tar.Z
 
 MAINTAINER=	greid@FreeBSD.org
@@ -42,7 +43,8 @@ do-install:
 .endfor
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/spambnc/
-	${INSTALL_DATA} ${DISTDIR}/index.shtml ${PREFIX}/share/doc/spambnc/documentation.html
+	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/index.shtml \
+		${PREFIX}/share/doc/spambnc/documentation.html
 .endif
 
 post-install:
