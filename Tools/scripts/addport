@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.32 2003/02/23 20:06:06 lioux Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.33 2003/02/28 19:49:31 peter Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -103,7 +103,11 @@ $moduleshost = "freefall.freebsd.org" if ($moduleshost eq "");
 
 # SSH is always required nowadays... pcvs.FreeBSD.org isn't shell accessible.
 $ssh = "$ENV{CVS_RSH} $h -l $u";
-$sshmod = "$ENV{CVS_RSH} -A $moduleshost -l $u";
+if ($myhost eq $moduleshost) {
+	$sshmod = "";
+} else {
+	$sshmod = "$ENV{CVS_RSH} -A $moduleshost -l $u";
+}
 $repo= "$u\@$h:/home/pcvs" if !$ENV{ADDPCVSROOT};
 $repo = "$ENV{ADDPCVSROOT}" if $ENV{ADDPCVSROOT};
 
