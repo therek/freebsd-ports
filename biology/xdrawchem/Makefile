@@ -2,7 +2,7 @@
 # Date created:        13 April 2000
 # Whom:                Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.1 2000/07/19 13:23:01 alex Exp $
 #
 
 PORTNAME=	xdrawchem
