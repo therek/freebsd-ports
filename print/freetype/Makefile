@@ -2,11 +2,12 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.21 2000/11/12 02:20:29 vanilla Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.22 2000/11/23 14:23:53 knu Exp $
 #
 
 PORTNAME=	freetype
 PORTVERSION=	1.3.1
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE:S,%SUBDIR%,freetype,} \
 		http://sunsite.cnlab-switch.ch/ftp/mirror/freetype/%SUBDIR%/ \
@@ -26,7 +27,7 @@ CONFIGURE_ARGS=	--disable-nls --enable-static --enable-shared
 # Older versions of freetype installed include files in ${PREFIX}/include
 # this is a compatibility hack for now
 
-post-install:
-	${LN} -fs ${PREFIX}/include/freetype/*.h ${PREFIX}/include
+#post-install:
+#	${LN} -fs ${PREFIX}/include/freetype/*.h ${PREFIX}/include
 
 .include <bsd.port.mk>
