@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.237 2001/07/03 11:21:45 sheldonh Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.238 2001/07/07 03:16:34 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -182,6 +182,7 @@
     SUBDIR += teapop
     SUBDIR += tkrat
     SUBDIR += tkrat2
+    SUBDIR += tlb
     SUBDIR += tmda
     SUBDIR += vbsfilter
     SUBDIR += vpopmail
