@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.265 2000/03/26 19:19:35 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.266 2000/04/07 03:31:17 will Exp $
 #
 
     SUBDIR += 3dc
@@ -98,7 +98,6 @@
     SUBDIR += mindfocus
     SUBDIR += mirrormagic
     SUBDIR += miscom
-    SUBDIR += mudix
     SUBDIR += nethack
     SUBDIR += nethack-qt
     SUBDIR += nethack3
