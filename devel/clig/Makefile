@@ -3,7 +3,7 @@
 # Date created:        27 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/devel/clig/Makefile,v 1.8 1999/08/25 05:47:32 obrien Exp $
+# $FreeBSD: ports/devel/clig/Makefile,v 1.9 1999/11/28 18:30:53 steve Exp $
 #
 
 DISTNAME=	clig-1.1.3
@@ -13,8 +13,8 @@ MASTER_SITES=	http://wsd.iitb.fhg.de/~kir/clighome/
 MAINTAINER=	billf@FreeBSD.org
 
 # This should work with any version of tcl.  See also ${MAKE_ENV}.
-BUILD_DEPENDS=	${PREFIX}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
-RUN_DEPENDS=	${PREFIX}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
+BUILD_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
+RUN_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
 
 MAN1=		clig.1
 
