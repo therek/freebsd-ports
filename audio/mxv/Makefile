@@ -2,7 +2,7 @@
 # Date created:		17 March 1997
 # Whom:			davidn@blaze.net.au
 #
-# $FreeBSD: ports/audio/mxv/Makefile,v 1.10 2000/02/14 21:02:56 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mxv
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.create.ucsb.edu/pub/MixViews/source/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}-source
 
 MAINTAINER=	davidn@blaze.net.au
+
+BROKEN=		"Does not build"
 
 BUILD_DEPENDS=	${LOCALBASE}/interviews/bin/FREEBSD/ivmkmf:${PORTSDIR}/x11-toolkits/iv
 

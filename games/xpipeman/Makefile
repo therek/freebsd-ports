@@ -2,7 +2,7 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xpipeman/Makefile,v 1.17 2001/01/16 17:30:50 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpipeman
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		"Does not build"
 
 USE_IMAKE=	yes
 MAN6=		xpipeman.6
