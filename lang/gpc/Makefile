@@ -2,7 +2,7 @@
 # Date created:				January 27, 1999
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/lang/gpc/Makefile,v 1.1 2000/05/29 03:05:50 will Exp $
+# $FreeBSD: ports/lang/gpc/Makefile,v 1.2 2000/10/09 15:36:59 lioux Exp $
 
 PORTNAME=	gpc
 PORTVERSION=	2.0
@@ -31,6 +31,6 @@ PLIST_SUB=	GNUHOST=${GNUHOST}
 CONFIGURE_ARGS=	--with-gxx-include-dir=${PREFIX}/lib/gcc-lib/${GNUHOST}/2.8.1/include/g++
 
 post-extract:
-	@(${CP} -R ${WRKDIRPREFIX}${PORTSDIR}/lang/gcc28/work/gcc-2.8.1/* ${WRKSRC})
+	@(${CP} -R ${WRKDIRPREFIX}${.CURDIR}/../../lang/gcc28/work/gcc-2.8.1/* ${WRKSRC})
 
 .include <bsd.port.post.mk>
