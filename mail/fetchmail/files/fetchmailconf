@@ -3,7 +3,7 @@
 # Wrapper for the real fetchmailconf.  Checks whether Python is installed,
 # and runs the real fetchmailconf or alerts the user, as appropriate.
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/fetchmail/files/fetchmailconf,v 1.2 1999/08/30 12:06:24 peter Exp $
 
 PREFIX=@PREFIX@
 
@@ -11,9 +11,9 @@ if [ -e $PREFIX/bin/python ]; then
 	exec $PREFIX/libexec/fetchmailconf.bin
 else
 	cat <<EOF
-The fetchmailconf program requires Python, which does not appear to be
-installed on this system.  Python can be found in the FreeBSD Ports
-Collection under lang/python.
+The fetchmailconf program requires Python with Tkinter , which does not
+appear to be installed on this system.  Python/Tkinter can be found in
+the FreeBSD Ports Collection under x11/py-tkinter.
 EOF
 	exit 1
 fi
