@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/mail/qmHandle/files/patch-qmHandle,v 1.1 2003/01/23 13:32:09 petef Exp $
 
 --- qmHandle.orig	Thu Jan 16 10:05:21 2003
 +++ qmHandle	Thu Jan 16 10:31:33 2003
@@ -24,7 +24,7 @@ $FreeBSD$
 -my ($pidcmd) = 'pidof qmail-send';
 +#my ($pidcmd) = 'pidof qmail-send';
 +# This is for FreeBSD with a standard qmail installation:
-+my ($pidcmd) = 'ps -U qmails | grep qmail-send | cut -s -d " " -f 3';
++my ($pidcmd) = 'ps -U qmails | grep qmail-send | cut -s -d " " -f 1';
 +
  
  ####################  USER CONFIGURATION END  ####################
