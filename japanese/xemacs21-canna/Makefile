@@ -2,7 +2,7 @@
 # Date created:		5 Dec 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.11 2000/04/13 08:33:42 knu Exp $
+# $FreeBSD: ports/japanese/xemacs21-canna/Makefile,v 1.12 2000/04/14 17:10:50 knu Exp $
 #
 
 # This is the MASTER port of Japanese XEmacs slave ports
@@ -13,8 +13,6 @@
 #	MULE_PORT         : Mule port if defined(means COMMN or SLAVE)
 #	MULE_COMMON       : COMMON port if defined
 #	MULE_SLAVE        : SLAVE port if defined
-#	PKGLDIR           : Local PKGDIR of editors/xemacs${XEMACS_MAJOR_VER}-mule
-#                           (that is editors/xemacs${XEMACS_MAJOR_VER}-mule/pkg)
 #	SITE_INCLUDES     : site include path(configure arguments)
 #	SITE_LIBRARIES    : site libraries path(configure arguments)
 #	WITH_INPUT_METHOD : input methods(configure arguments)
@@ -25,6 +23,7 @@ CATEGORIES=	japanese
 
 MANLANG=	ja
 MAN1=		xemacs-ja.1
+COMMENT?=	${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg/COMMENT
 DESCR=		${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-canna/pkg/DESCR
 
 XEMACS_MAJOR_VER?=	21
