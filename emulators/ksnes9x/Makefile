@@ -2,7 +2,7 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.8 2000/06/29 02:31:28 asami Exp $
+# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.9 2000/06/30 21:05:39 will Exp $
 #
 
 PORTNAME=	ksnes9x
@@ -11,7 +11,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	ksnes9x
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	snes9x:${PORTSDIR}/emulators/snes9x
