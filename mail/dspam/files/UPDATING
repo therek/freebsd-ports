@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.9 2005/02/15 08:15:51 vs Exp $
+# $FreeBSD: ports/mail/dspam/files/UPDATING,v 1.10 2005/02/25 03:05:23 leeym Exp $
 #
 # for each PKGNAME or user option change an entry should be added in this file
 # each entry 
@@ -14,6 +14,13 @@ This file concetrate on the FreeBSD / port specific changes and one should read
 also the UPGRADING enclosed in the dspam distribution. You can see it by doing
 in the port directory:
 make extract;  more `find . -type f -maxdepth 2 -name UPGRADING`
+
+#############################################################################
+# dspam-3.2.8
+#
+
+- BUGFIX: fixed TOE autowhitelist
+
 
 #############################################################################
 # dspam-3.2.7
