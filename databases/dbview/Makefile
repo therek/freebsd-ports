@@ -2,7 +2,7 @@
 # Date created:				7 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/dbview/Makefile,v 1.3 2000/03/29 07:16:52 kris Exp $
+# $FreeBSD: ports/databases/dbview/Makefile,v 1.4 2000/04/08 22:48:23 mharo Exp $
 #
 
 PORTNAME=		dbview
@@ -24,9 +24,9 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/dbview
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/dbview
-	@ ${INSTALL_DATA} ${WRKSRC}/dBASE ${PREFIX}/share/doc/dbview
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/dBASE ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
