@@ -3,7 +3,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.8 1999/12/24 19:17:13 mharo Exp $
+# $FreeBSD: ports/graphics/p5-GD/Makefile,v 1.9 1999/12/25 01:24:52 steve Exp $
 #
 
 DISTNAME=	GD-1.23
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	GD
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 
 USE_PERL5=	YES
 

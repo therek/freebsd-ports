@@ -3,7 +3,7 @@
 # Date created:         19 April 1998
 # Whom:                 chuckr
 #
-# $FreeBSD: ports/math/gnuplot/Makefile,v 1.25 1999/09/10 12:03:52 chuckr Exp $
+# $FreeBSD: ports/math/gnuplot/Makefile,v 1.26 1999/09/10 23:40:04 chuckr Exp $
 #
 
 DISTNAME=	gnuplot-3.7
@@ -12,8 +12,8 @@ MASTER_SITES=	ftp://ftp.gnuplot.vt.edu/pub/gnuplot/
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png
-BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+		gd.0:${PORTSDIR}/graphics/gd
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:				22 February 1999
 # Whom:	      				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/graphics/tgd/Makefile,v 1.6 1999/09/10 16:03:57 mharo Exp $
+# $FreeBSD: ports/graphics/tgd/Makefile,v 1.7 1999/09/20 01:09:04 steve Exp $
 #
 
 DISTNAME=	tgd1.2c
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://probe.nalusda.gov/pub/treegenes/ \
 
 MAINTAINER=	mharo@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 
 BROKEN=	gd changes
 FORBIDDEN=	author hadn\'t had time to update for gd changes

@@ -3,7 +3,7 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mrtg/Makefile,v 1.16 1999/08/31 06:48:56 mharo Exp $
+# $FreeBSD: ports/net/mrtg/Makefile,v 1.17 1999/09/08 22:42:09 fenner Exp $
 #
 
 DISTNAME=	mrtg-2.8.8
@@ -12,7 +12,7 @@ MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 
 USE_PERL5=	YES
 MAKE_ENV+=	PERL=${PERL}

@@ -3,7 +3,7 @@
 # Date created:				11 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/png2html/Makefile,v 1.1.1.1 1999/11/14 03:40:06 steve Exp $
+# $FreeBSD: ports/graphics/png2html/Makefile,v 1.2 1999/11/21 01:03:24 cpiazza Exp $
 #
 
 DISTNAME=	png2html-1.1
@@ -12,8 +12,8 @@ MASTER_SITES=	http://www.engr.mun.ca/~holden/
 
 MAINTAINER=	jedgar@fxp.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
-BUILD_DEPENDS=	webpng:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+		gd.0:${PORTSDIR}/graphics/gd
 
 do-configure:
 		@${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.orig

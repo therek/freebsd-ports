@@ -3,7 +3,7 @@
 # Date created:	16 July 1998
 # Whom:		Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/g2/Makefile,v 1.6 1999/08/25 06:13:55 obrien Exp $
 #
 
 DISTNAME=	g2-0.40
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	billf@FreeBSD.org
 
-BUILD_DEPENDS=  ${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
