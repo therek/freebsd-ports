@@ -2,22 +2,22 @@
 # Date created:        19 Januruary 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.17 2000/02/29 08:23:27 nakai Exp $
+# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.18 2000/04/10 19:50:04 cpiazza Exp $
 #
 
 PORTNAME=	mlvwm
-PORTVERSION= 	0.9.0
+PORTVERSION= 	0.9.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/
-DISTNAME=	mlvwm090
+DISTNAME=	mlvwm091
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} mini-icons.tar.gz
+EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_IMAKE=	yes
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAN1=		mlvwm.1
 
 MLVWMLIBDIR=	${PREFIX}/lib/X11/mlvwm
