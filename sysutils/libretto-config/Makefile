@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.6 2000/01/09 14:51:18 shige Exp $
+# $FreeBSD: ports/sysutils/libretto-config/Makefile,v 1.7 2000/04/09 19:07:56 cpiazza Exp $
 #
 
 PORTNAME=	libretto-config
@@ -20,6 +20,8 @@ DOCDIR=		${PREFIX}/share/doc/${PORT_NAME}
 
 MAN8=		${PORT_NAME}.8
 MANLANG=	. ja
+
+BROKEN=		"PLIST is incorrect"
 
 post-install:
 # install japanese manpage also :-)
