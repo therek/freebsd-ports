@@ -2,11 +2,12 @@
 # Date created:		October 29th 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep/Makefile,v 1.38 2001/02/05 21:05:34 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	afterstep
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	x11-wm afterstep
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 		ftp://ftp.cs.tu-berlin.de/pub/X/afterstep/
