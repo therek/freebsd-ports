@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.533 2001/05/11 21:27:58 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.534 2001/05/12 20:29:13 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -29,6 +29,7 @@
     SUBDIR += asl
     SUBDIR += asmutils
     SUBDIR += astyle
+    SUBDIR += atk
     SUBDIR += atlas
     SUBDIR += autoconf
     SUBDIR += autogen
