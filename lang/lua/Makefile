@@ -3,10 +3,10 @@
 # Date created:				27 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/lua/Makefile,v 1.3 1999/08/25 06:34:53 obrien Exp $
 #
 
-DISTNAME=	lua-3.1
+DISTNAME=	lua-3.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.tecgraf.puc-rio.br/pub/lua/ \
 		ftp://csg.uwaterloo.ca/pub/lhf/lua/ \
