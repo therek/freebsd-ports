@@ -3,7 +3,7 @@
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.3 1999/08/25 05:47:41 obrien Exp $
 #
 
 DISTNAME=	cscope-13.7
@@ -60,7 +60,7 @@ post-extract:
 	@(${CHMOD} +w ${WRKSRC})
 	@(for file in ${WRKSRC}/* ; do ${TR} -d '\015' < $$file > $$file.x ; ${MV} -f $$file.x $$file ; done)
 	@(for file in ${TRUNCATED_NAMES} ; do \
-		x=`echo $$file | ${SED} -e 's/^\(......\).*/\1/'` ; \
+		x=`${ECHO} $$file | ${SED} -e 's/^\(......\).*/\1/'` ; \
 		y=$${file#*.} ; \
 		${MV} ${WRKSRC}/$${x}*.$${y} ${WRKSRC}/$$file; \
 	done)

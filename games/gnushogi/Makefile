@@ -3,7 +3,7 @@
 # Date created:        9 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gnushogi/Makefile,v 1.5 1999/08/25 06:03:38 obrien Exp $
 #
 
 DISTNAME=	gnushogi-1.2p03
@@ -19,8 +19,8 @@ DOCFILES= BOOKFILES CHANGES CONTRIB COPYING GENERAL INSTALL PORTING \
 MAN6=		gnushogi.6
 
 post-configure:
-	echo "DISTDIR=${WRKDIR}" >> ${WRKSRC}/src/${MAKEFILE}
-	echo "prefix=${PREFIX}" >> ${WRKSRC}/src/${MAKEFILE}
+	${ECHO} "DISTDIR=${WRKDIR}" >> ${WRKSRC}/src/${MAKEFILE}
+	${ECHO} "prefix=${PREFIX}" >> ${WRKSRC}/src/${MAKEFILE}
 
 do-build:
 	(cd ${WRKSRC}/src; \

@@ -3,7 +3,7 @@
 # Date created:         03 Aug 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/zorro/Makefile,v 1.15 1999/08/25 05:27:05 obrien Exp $
 #
 
 DISTNAME=	zorro-1.1p8
@@ -21,8 +21,8 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/zorro ${PREFIX}/bin/zorro
 	${MKDIR} ${PREFIX}/share/zorro
 	${INSTALL_DATA} ${WRKSRC}/DOTzorrorc ${PREFIX}/share/zorro
-	@echo ""
-	@echo "Take a look at ${PREFIX}/share/zorro/DOTzorrorc"
-	@echo ""
+	@${ECHO_MSG} ""
+	@${ECHO_MSG} "Take a look at ${PREFIX}/share/zorro/DOTzorrorc"
+	@${ECHO_MSG} ""
 
 .include <bsd.port.mk>

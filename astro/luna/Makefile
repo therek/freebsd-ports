@@ -3,7 +3,7 @@
 # Date created:		03 July 1996
 # Whom:			ABURAYER Rewsirow <rewsirow@ff.iij4u.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/luna/Makefile,v 1.6 1999/08/25 04:22:41 obrien Exp $
 #
 
 DISTNAME=	luna19
@@ -22,7 +22,7 @@ EXTRACT_AFTER_ARGS=	# empty
 PATCH_STRIP=	-p1
 
 post-extract:
-	@echo "===>  Removing object files for ${DISTNAME}"
+	@${ECHO_MSG} "===>  Removing object files for ${DISTNAME}"
 	@(cd ${WRKDIR}/luna19/iprintf; ${RM} -fr *.o)
 
 .include <bsd.port.mk>

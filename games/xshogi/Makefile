@@ -3,7 +3,7 @@
 # Date created:        20 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xshogi/Makefile,v 1.7 1999/08/25 06:06:10 obrien Exp $
 #
 
 DISTNAME=	xshogi-1.2p03
@@ -21,8 +21,8 @@ MAKEFILE=	Makefile.custom
 MAN6=		xshogi.6
 
 post-configure:
-	@echo "DISTDIR=${WRKDIR}" >> ${WRKSRC}/${MAKEFILE}
-	@echo "LOCALBASE=${LOCALBASE}" >> ${WRKSRC}/${MAKEFILE}
+	@${ECHO} "DISTDIR=${WRKDIR}" >> ${WRKSRC}/${MAKEFILE}
+	@${ECHO} "LOCALBASE=${LOCALBASE}" >> ${WRKSRC}/${MAKEFILE}
 
 post-install:
 	@strip ${PREFIX}/bin/xshogi

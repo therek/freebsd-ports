@@ -3,7 +3,7 @@
 # Date created:		17 November 1996
 # Whom:			mi
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/hdf/Makefile,v 1.11 1999/08/25 06:14:15 obrien Exp $
 #
 
 DISTNAME=	HDF4.1r2
@@ -37,7 +37,7 @@ pre-build:
 	${ECHO} #Phony makefile > ${WRKSRC}/hdf/jpeg/Makefile
 	${ECHO} >> ${WRKSRC}/hdf/jpeg/Makefile
 	${ECHO} libjpeg.a: >> ${WRKSRC}/hdf/jpeg/Makefile
-	printf '\t@echo Using the already installed JPEG library\n' \
+	printf '\t@${ECHO} Using the already installed JPEG library\n' \
 		>> ${WRKSRC}/hdf/jpeg/Makefile
 	printf '\nclean:\n\ttrue\n' >> ${WRKSRC}/hdf/jpeg/Makefile
 	printf '\ninstall-lib:\n\ttrue\n' >> ${WRKSRC}/hdf/jpeg/Makefile
@@ -51,7 +51,7 @@ pre-build:
 	${ECHO} #Phony makefile > ${WRKSRC}/hdf/zlib/Makefile
 	${ECHO} >> ${WRKSRC}/hdf/zlib/Makefile
 	${ECHO} libzlib.a: >> ${WRKSRC}/hdf/zlib/Makefile
-	printf '\t@echo Using the already installed ZLIB library\n' \
+	printf '\t@${ECHO} Using the already installed ZLIB library\n' \
 		>> ${WRKSRC}/hdf/zlib/Makefile
 	printf '\nclean:\n\ttrue\n' >> ${WRKSRC}/hdf/zlib/Makefile
 	printf '\ninstall-lib:\n\ttrue\n' >> ${WRKSRC}/hdf/zlib/Makefile

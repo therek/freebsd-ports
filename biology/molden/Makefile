@@ -3,7 +3,7 @@
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/molden/Makefile,v 1.3 1999/08/25 04:47:59 obrien Exp $
 #
 
 DISTNAME=	molden3.4
@@ -26,15 +26,15 @@ pre-build:
 .if defined(DONOTUSE_ORIGINALBINARY)
 	(cd ${WRKSRC}; ${CP} makefile Makefile)
 	(cd ${WRKSRC}; ./change_parameter)
-	@echo "********************"
-	@echo "**  re-build with customizations"
-	@echo "**  maxorb: 256 -> 1024"
-	@echo "**  maxatm: 150 -> 300"
-	@echo "********************"
+	@${ECHO_MSG} "********************"
+	@${ECHO_MSG} "**  re-build with customizations"
+	@${ECHO_MSG} "**  maxorb: 256 -> 1024"
+	@${ECHO_MSG} "**  maxatm: 150 -> 300"
+	@${ECHO_MSG} "********************"
 .else
-	@echo "********************"
-	@echo "**  using original binary"
-	@echo "********************"
+	@${ECHO_MSG} "********************"
+	@${ECHO_MSG} "**  using original binary"
+	@${ECHO_MSG} "********************"
 .endif
 
 do-build:

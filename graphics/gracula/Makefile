@@ -3,7 +3,7 @@
 # Date created:				30 May 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gracula/Makefile,v 1.3 1999/08/25 06:14:09 obrien Exp $
 #
 
 DISTNAME=	gracula-3.0
@@ -20,18 +20,6 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/gracula
 	${INSTALL_MAN} ${WRKSRC}/NNL ${PREFIX}/share/doc/gracula
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/gracula
-	@echo
-	@echo "        Please read the file ${PREFIX}/share/doc/gracula/README"
-	@echo "        to learn how to use Graphic Counter Language."
-.endif
-	@echo
-	@echo "        An introductory tutorial, and a GCL FAQ, can be found at"
-	@echo "        http://www.whizkidtech.net/gcl/"
-	@echo "        You should read both to take full advantage of the power"
-	@echo "        of Graphic Counter Language."
-	@echo
-	@echo "        Also, sample scripts and graphics are available from"
-	@echo "        Count Gracula's Gallery, http://www.whizkidtech.net/gcl/gallery/"
-	@echo
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/msql/Makefile,v 1.33 1999/08/25 05:21:16 obrien Exp $
 #
 
 DISTNAME=	msql-2.0.4.1
@@ -45,7 +45,7 @@ post-install:
 		@if [ ! -f ${PREFIX}/etc/rc.d/msql2.sh ]; then \
 			${ECHO} "Installing ${PREFIX}/etc/rc.d/msql2.sh startup file."; \
 			${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/msql2.sh; \
-			${ECHO} "[ -x ${PREFIX}/bin/msql2d ] && su -l msql -c 'exec ${PREFIX}/bin/msql2d' > /dev/null 2>&1 & && echo -n ' msql2'" >> ${PREFIX}/etc/rc.d/msql2.sh; \
+			${ECHO} "[ -x ${PREFIX}/bin/msql2d ] && su -l msql -c 'exec ${PREFIX}/bin/msql2d' > /dev/null 2>&1 & && ${ECHO} -n ' msql2'" >> ${PREFIX}/etc/rc.d/msql2.sh; \
 			${CHMOD} 751 ${PREFIX}/etc/rc.d/msql2.sh; \
 		fi
 .if !defined(BATCH)

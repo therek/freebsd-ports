@@ -3,7 +3,7 @@
 # Date created:         27. April 1996
 # Whom:                 Ronald Kuehn <kuehn@rz.tu-clausthal.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/imaze/Makefile,v 1.16 1999/08/25 06:03:45 obrien Exp $
 #
 
 DISTNAME=       imaze
@@ -63,6 +63,6 @@ do-install:
 		do ${INSTALL_DATA} $$f ${PREFIX}/share/imaze/$$f.example;\
 		done; \
 		${INSTALL_DATA} README ${PREFIX}/share/imaze)
-	@echo "Please read the file \"README\" in \"${PREFIX}/share/imaze\"."
+	@${ECHO_MSG} "Please read the file \"README\" in \"${PREFIX}/share/imaze\"."
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:		3 April 1997
 # Whom:			eserte
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/ephem/Makefile,v 1.3 1999/08/25 04:22:41 obrien Exp $
 #
 
 DISTNAME=	ephem_4.28_unix
@@ -27,6 +27,6 @@ do-install:
 	[ ! -f ${PREFIX}/share/ephem/ephem.cfg ] && ${INSTALL_DATA} ephem.cfg ${PREFIX}/share/ephem/
 
 post-install:
-	@echo Don\'t forget to edit ${PREFIX}/share/ephem/ephem.cfg!
+	@${ECHO_MSG} Don\'t forget to edit ${PREFIX}/share/ephem/ephem.cfg!
 
 .include <bsd.port.mk>

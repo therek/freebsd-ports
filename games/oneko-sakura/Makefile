@@ -3,7 +3,7 @@
 # Date created:		25 May 1999
 # Whom:			HOTARU-YA <hotaru@tail.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/oneko-sakura/Makefile,v 1.2 1999/08/25 06:04:11 obrien Exp $
 #
 
 DISTNAME=	oneko-1.2
@@ -23,6 +23,6 @@ MAN6=		oneko.6
 NO_CDROM=	"Including a derivative from CARDCAPTOR SAKURA. See http://www.clamp.f-2.co.jp/"
 
 pre-configure:
-	@echo "MANSUFFIX=6" >>${WRKSRC}/Imakefile
+	@${ECHO} "MANSUFFIX=6" >>${WRKSRC}/Imakefile
 
 .include <bsd.port.mk>

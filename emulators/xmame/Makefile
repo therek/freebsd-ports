@@ -3,7 +3,7 @@
 # Date created:         8 Feb 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.7 1999/08/25 05:49:53 obrien Exp $
 #
 
 DISTNAME=	xmame-0.33b6.1
@@ -22,9 +22,9 @@ MAN6=		xmame.6
 
 post-install:
 .ifdef NOPORTDOCS
-	@echo "==> Extra documentation WILL NOT be installed."
+	@${ECHO_MSG} "==> Extra documentation WILL NOT be installed."
 .else
-	@echo "==> Installing extra documentation..."
+	@${ECHO_MSG} "==> Installing extra documentation..."
 	${MKDIR} ${PREFIX}/lib/mame
 	for DOC in CHEAT.DOC Changes MailList.notes README.unix mamelist.txt readme.dos whatsnew.txt; do ${INSTALL} -c -o bin -g bin -m 444 ${WRKSRC}/doc/$${DOC} ${PREFIX}/lib/mame/$${DOC}; done
 .endif

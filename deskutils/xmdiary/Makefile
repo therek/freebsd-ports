@@ -3,7 +3,7 @@
 # Date created:		29 Sep 1997
 # Whom:			mi@aldan.ziplink.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.5 1999/08/25 05:26:57 obrien Exp $
 #
 
 DISTNAME=	xmdiary-3.0.1
@@ -30,9 +30,9 @@ pre-patch:
 	cd  $(WRKSRC) && tar xzpf ${DISTDIR}/xmdfix.gz
 
 post-patch:
-	@echo removing the "malloc.h" includes
+	@${ECHO_MSG} removing the "malloc.h" includes
 	${SCRIPTDIR}/nomalloc $(WRKSRC) 2>&1 > /dev/zero
-	@echo removing unneccessary DependTarget from Imakefile-s
+	@${ECHO_MSG} removing unneccessary DependTarget from Imakefile-s
 	${SCRIPTDIR}/noextradepend $(WRKSRC) 2>&1 > /dev/zero
 
 .include <bsd.port.mk>

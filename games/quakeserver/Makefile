@@ -3,7 +3,7 @@
 # Date created:				October 26th 1996
 # Whom:					jfitz@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.18 1999/08/25 06:04:21 obrien Exp $
 #
 
 PKGNAME=	quakeserver-1.0
@@ -50,14 +50,14 @@ do-install:
 		/usr/bin/touch ${PREFIX}/quakeserver/quakeserver.log
 		@ ${CHMOD} 700 ${PREFIX}/quakeserver/quakeserver.in ${PREFIX}/quakeserver/quakeserver.log
 		@ ${CHOWN} -R nobody.nobody ${PREFIX}/quakeserver
-		@ echo "Installing ${PREFIX}/etc/rc.d/quakeserver.sh startup script"
-		@ echo "#!/bin/sh" > ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "#" >> ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "" >> ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "if [ -x ${PREFIX}/quakeserver/unixded ]" >> ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "then" >> ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "	su nobody -c ${PREFIX}/quakeserver/qserver.sh && echo -n ' quakeserver'" >> ${PREFIX}/etc/rc.d/quakeserver.sh
-		@ echo "fi" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "Installing ${PREFIX}/etc/rc.d/quakeserver.sh startup script"
+		@ ${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "#" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "if [ -x ${PREFIX}/quakeserver/unixded ]" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "then" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "	su nobody -c ${PREFIX}/quakeserver/qserver.sh && ${ECHO} -n ' quakeserver'" >> ${PREFIX}/etc/rc.d/quakeserver.sh
+		@ ${ECHO} "fi" >> ${PREFIX}/etc/rc.d/quakeserver.sh
 		@ ${CHMOD} 750 ${PREFIX}/etc/rc.d/quakeserver.sh
 .if !defined(BATCH)
 		@ /usr/bin/more -e ${PREFIX}/quakeserver/readme.port

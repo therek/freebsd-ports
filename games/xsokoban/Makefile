@@ -3,7 +3,7 @@
 # Date created:        16 November 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xsokoban/Makefile,v 1.9 1999/08/25 06:06:14 obrien Exp $
 #
 
 DISTNAME=	xsokoban-3.3c
@@ -29,8 +29,6 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/screens/* ${PREFIX}/lib/X11/xsokoban/screens
 	@${INSTALL_DATA} ${WRKSRC}/bitmaps/defaults/* \
 		${PREFIX}/lib/X11/xsokoban/bitmaps/defaults
-	@echo "First, type: 'xsokoban -c' to make score files."
-	@echo "You must be the superuser 'root', and enter password 'score'."
-	@echo
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

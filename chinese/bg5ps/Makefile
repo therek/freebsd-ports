@@ -3,7 +3,7 @@
 # Date created:		17 June 1998
 # Whom:			J.T. Jang (keith@email.gcn.net.tw)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.2 1999/08/25 04:57:39 obrien Exp $
 #
 
 DISTNAME=	bg5ps-1.1b
@@ -27,9 +27,6 @@ do-install:
 .endfor
 
 post-install:
-	@echo -----------------------------------------------------------
-	@echo Copy ${PREFIX}/share/doc/bg5ps/bg5ps.conf to ~/.bg5ps.conf.
-	@echo Then run "bg5ps -h" for help.
-	@echo -----------------------------------------------------------
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
