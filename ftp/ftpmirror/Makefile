@@ -2,7 +2,7 @@
 # Date created:		10 January 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/ftp/ftpmirror/Makefile,v 1.8 2001/04/05 23:51:12 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftpmirror
@@ -12,6 +12,7 @@ CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.intec.co.jp/pub/utils/ftpmirror/beta/
 
 MAINTAINER=	yasuf@big.or.jp
+COMMENT=	An utility to mirror directory hierarchy with FTP
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Socket6.pm:${PORTSDIR}/net/p5-Socket6
 

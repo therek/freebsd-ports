@@ -2,7 +2,7 @@
 # Date created:				Jul 11th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/emulators/vMac/Makefile,v 1.4 2000/04/12 04:55:59 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		vMac
@@ -13,6 +13,7 @@ DISTNAME=		${PORTNAME}-${PORTVERSION}-src
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		troll@digitalspark.net
+COMMENT=	Emulates a MacPlus machine!  Runs MacOS versions up to 7.5.5
 
 MAKEFILE=		Makefile
 WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}

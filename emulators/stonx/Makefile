@@ -2,7 +2,7 @@
 # Date created:         3rd August, 1997
 # Whom:                 Tobias Reifenberger <tr@freebsd.mayn.de>
 #
-# $FreeBSD: ports/emulators/stonx/Makefile,v 1.6 2000/04/12 04:55:52 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stonx
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.complang.tuwien.ac.at/pub/nino/stonx-current/
 DISTNAME=	STonX-0.6.7-epsilon
 
 MAINTAINER=	treif@mayn.de
+COMMENT=	AtariST emulator
 
 RESTRICTED=	"tos.img is copyrighted"
 NO_PACKAGE=	${RESTRICTED}

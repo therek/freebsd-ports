@@ -2,7 +2,7 @@
 # Date created:		07 Dec 1996
 # Whom:			Tor.Egge@idi.ntnu.no
 #
-# $FreeBSD: ports/ftp/ftpsearch/Makefile,v 1.9 2000/04/12 05:31:06 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftpsearch
@@ -21,6 +21,7 @@ PATCHFILES=	ftpsearch-1.0.patch1 \
 		ftpsearch-1.0.patch8
 
 MAINTAINER=	Tor.Egge@idi.ntnu.no
+COMMENT=	A system for indexing contents on ftp servers
 
 NO_PACKAGE=	"Hostname compiled in"
 

@@ -2,7 +2,7 @@
 # Date created:		Feb 21 1998
 # Whom:			Tomokazu ISHII <t-ishii@tryplanet.com>
 #
-# $FreeBSD: ports/ftp/ftpfind/Makefile,v 1.5 1999/08/25 05:55:06 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftpfind
@@ -12,5 +12,6 @@ MASTER_SITES=	http://hp.vector.co.jp/authors/VA013366/ \
 		http://www.tryplanet.com/t-ishii/programs/ftpfind/
 
 MAINTAINER=	t-ishii@tryplanet.com
+COMMENT=	Find directory&file on a ftp server
 
 .include <bsd.port.mk>
