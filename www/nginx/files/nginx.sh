@@ -1,15 +1,15 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/nginx/files/nginx.sh,v 1.1 2004/10/21 17:54:45 osa Exp $
 
 # PROVIDE: nginx
 # REQUIRE: DAEMON
 # BEFORE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
-# Define these apache_* variables in one of these files:
+# Define these nginx_* variables in one of these files:
 #       /etc/rc.conf
 #       /etc/rc.conf.local
-#       /etc/rc.conf.d/apache
+#       /etc/rc.conf.d/nginx
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
