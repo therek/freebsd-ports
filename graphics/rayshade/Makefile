@@ -3,7 +3,7 @@
 # Date created:		21 January 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/rayshade/Makefile,v 1.4 1999/08/25 06:14:51 obrien Exp $
+# $FreeBSD: ports/graphics/rayshade/Makefile,v 1.5 1999/08/31 06:45:12 mharo Exp $
 #
 
 DISTNAME=	rayshade.4.0
@@ -17,8 +17,11 @@ MAINTAINER=     ports@FreeBSD.org
 
 BUILD_DEPENDS=	$(LOCALBASE)/lib/librle.a:${PORTSDIR}/graphics/urt
 
-BROKEN_ELF=	yes
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400000
 BROKEN=		build
+.endif
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	Configure
@@ -40,4 +43,4 @@ do-install:
 	$(MKDIR) $(PREFIX)/share/examples/rayshade
 	$(INSTALL_DATA) $(WRKSRC)/Examples/* $(PREFIX)/share/examples/rayshade
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
