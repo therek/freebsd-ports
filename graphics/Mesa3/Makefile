@@ -2,7 +2,7 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.41 2000/08/24 09:53:05 sobomax Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.42 2000/08/24 13:32:30 sobomax Exp $
 #
 
 PORTNAME=	Mesa
@@ -30,8 +30,6 @@ USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV+=	GLVER="${GLVER}" GLUTVER="${GLUTVER}"
 PLIST_SUB=	GLVER="${GLVER}" GLUTVER="${GLUTVER}"
-
-XFREE86_VERSION?=	3
 
 .include <bsd.port.pre.mk>
 
