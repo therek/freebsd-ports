@@ -2,11 +2,11 @@
 # Date created:				25 February 2000
 # Whom:                			Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.3 2000/06/17 02:36:36 will Exp $
+# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.4 2001/03/01 06:38:22 vanilla Exp $
 #
 
 PORTNAME=	Net-IPv4Addr
-PORTVERSION=	0.09
+PORTVERSION=	0.10
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net

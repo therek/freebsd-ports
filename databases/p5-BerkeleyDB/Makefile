@@ -2,11 +2,11 @@
 # Date created:				3 January 2001
 # Whom:					T. William Wells <bill@twwells.com>
 #
-# $FreeBSD: ports/databases/p5-BerkeleyDB/Makefile,v 1.3 2001/03/01 06:37:02 vanilla Exp $
+# $FreeBSD: ports/databases/p5-BerkeleyDB/Makefile,v 1.4 2001/03/08 14:26:59 sf Exp $
 #
 
 PORTNAME=	BerkeleyDB
-PORTVERSION=	0.14
+PORTVERSION=	0.15
 CATEGORIES=	databases perl5
 MASTER_SITES=	$(MASTER_SITE_PERL_CPAN)
 MASTER_SITE_SUBDIR=	BerkeleyDB

@@ -2,11 +2,11 @@
 # Date created:			October 30th, 2000
 # Whom:	      			Nicholas Esborn <nick@netdot.net>
 #
-# $FreeBSD: ports/net/p5-Mon/Makefile,v 1.1 2000/10/31 18:37:15 jim Exp $
+# $FreeBSD: ports/net/p5-Mon/Makefile,v 1.2 2001/03/01 06:38:19 vanilla Exp $
 #
 
 PORTNAME=	Mon
-PORTVERSION=	0.9
+PORTVERSION=	0.11
 CATEGORIES=	net sysutils perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mon

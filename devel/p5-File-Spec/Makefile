@@ -2,11 +2,11 @@
 # Date created:				November 22, 2000
 # Whom:	      				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/devel/p5-File-Spec/Makefile,v 1.1 2000/11/23 05:02:14 dburr Exp $
+# $FreeBSD: ports/devel/p5-File-Spec/Makefile,v 1.2 2001/03/01 06:37:35 vanilla Exp $
 #
 
 PORTNAME=	File-Spec
-PORTVERSION=	0.8
+PORTVERSION=	0.82
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File

@@ -2,17 +2,20 @@
 # Date created:			March 13, 2000
 # Whom:				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/devel/p5-Locale-Maketext/Makefile,v 1.1 2000/05/01 02:48:54 steve Exp $
+# $FreeBSD: ports/devel/p5-Locale-Maketext/Makefile,v 1.2 2001/03/01 06:37:59 vanilla Exp $
 #
 
 PORTNAME=	Locale-Maketext
-PORTVERSION=	0.17
+PORTVERSION=	0.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Locale
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	frank@exit.com
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/I18N/LangTags.pm:${PORTSDIR}/misc/p5-I18N-LangTags
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	YES
 
