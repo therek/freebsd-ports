@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.491 2004/06/10 07:30:19 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.492 2004/07/14 08:18:16 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -276,7 +276,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 ##
 #
 # USE_OPENLDAP			- Says that the port uses the OpenLDAP libraries
-#						  Implies: WANT_OPENLDAP_VER?=21
+#						  Implies: WANT_OPENLDAP_VER?=22
 # WANT_OPENLDAP_VER		- Legal values are: 21, 22
 #						  If set to an unkown value, the port is marked BROKEN.
 # WANT_OPENLDAP_SASL	- Says that the system should use OpenLDAP libraries
@@ -1177,7 +1177,7 @@ XFREE86_VERSION?=	3
 # Location of mounted CDROM(s) to search for files
 CD_MOUNTPTS?=	/cdrom ${CD_MOUNTPT}
 
-WANT_OPENLDAP_VER?=	21
+WANT_OPENLDAP_VER?=	22
 
 # Owner and group of the WWW user
 WWWOWN?=	www
