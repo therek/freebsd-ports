@@ -2,7 +2,7 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/editors/textedit/Makefile,v 1.13 2000/06/10 10:26:52 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	textedit
@@ -11,7 +11,8 @@ CATEGORIES=	editors
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 
-MAINTAINER=	alex@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
+COMMENT=	The OpenLook textedit application
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
