@@ -1,9 +1,9 @@
-# New ports collection makefile for:   qt2
+# New ports collection makefile for:   qt201
 # Version required:	2.0.1
 # Date created:		17 Jul 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt2/Makefile,v 1.1.1.1 1999/08/29 09:20:56 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/qt201/Makefile,v 1.34 1999/08/30 07:12:43 cpiazza Exp $
 #
 
 DISTNAME=	qt-2.0.1
