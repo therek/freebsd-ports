@@ -2,7 +2,7 @@
 # Date created:		7 December 1998
 # Whom:			Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/audio/wmcdplay/Makefile,v 1.7 2000/04/08 21:24:42 mharo Exp $
+# $FreeBSD: ports/audio/wmcdplay/Makefile,v 1.8 2000/08/03 09:22:29 asami Exp $
 #
 
 PORTNAME=	wmcdplay
@@ -12,12 +12,11 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Vista/2471/files/
 DISTNAME=	wmcdplay-1.0-beta1
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	clkao@CirX.ORG
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/wmcdplay
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>
