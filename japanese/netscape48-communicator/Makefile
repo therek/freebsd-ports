@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.32 2000/07/19 14:28:13 sada Exp $
+# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.33 2000/08/19 22:48:09 sada Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -17,6 +17,10 @@ MAINTAINER?=	sada@FreeBSD.org
 # ?= for ports that include this Makefile
 RUN_DEPENDS?=	${PREFIX}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape${BROWSER_VER}-${BROWSER}
 RUN_DEPENDS+=	${PKG_DBDIR}/ja-netscape-fonts-1.0:${PORTSDIR}/japanese/netscape-fonts
+
+.if (${PORTVERSION} == "4.76")
+BROKEN=		"has a serious security hole, use 4.77 instead"
+.endif
 
 MAN1=		ja-netscape.1
 MANLANG=	ja
