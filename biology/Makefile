@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.14 2000/07/10 03:26:57 steve Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.15 2000/07/19 13:23:00 alex Exp $
 #
 
     SUBDIR += babel
@@ -18,6 +18,7 @@
     SUBDIR += psi88
     SUBDIR += rasmol
     SUBDIR += seaview
+    SUBDIR += sim4
     SUBDIR += tinker
     SUBDIR += xdrawchem
     SUBDIR += xmolwt
