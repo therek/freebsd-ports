@@ -2,7 +2,7 @@
 # Date created:				2000/09/09
 # Whom:					kaz
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/nsf/Makefile,v 1.1 2000/09/17 22:30:36 will Exp $
 #
 
 PORTNAME=	nsf
@@ -19,7 +19,7 @@ MANCOMPRESSED=	yes
 ALL_TARGET=
 
 post-install:
-	${INSTALL_DATA} ${WRKDIR}/${MAN1} ${PREFIX}/man/man1/
+	${INSTALL_MAN} ${WRKDIR}/${MAN1} ${PREFIX}/man/man1/
 	${GZIP_CMD} ${PREFIX}/man/man1/${MAN1}
 
 .include <bsd.port.mk>
