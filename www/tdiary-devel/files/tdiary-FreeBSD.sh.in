@@ -2,7 +2,7 @@
 #
 # tdiary-FreeBSD.sh - tDiary user directory copy script
 #
-# $FreeBSD: ports/www/tdiary/files/tdiary-FreeBSD.sh.in,v 1.2 2003/06/17 13:20:23 daichi Exp $
+# $FreeBSD: ports/www/tdiary/files/tdiary-FreeBSD.sh.in,v 1.3 2003/07/21 04:04:01 yoichi Exp $
 #
 # usage:
 #        % /usr/local/share/examples/tdiary/tdiary-FreeBSD.sh install
@@ -54,9 +54,6 @@ install)
 	HOMEOWN=`grep ^$USER: /etc/passwd | cut -f3 -d':'`
 	HOMEGRP=`grep ^$USER: /etc/passwd | cut -f4 -d':'`
 	HOMEDIR=`grep ^$USER: /etc/passwd | cut -f6 -d':'`	
-#	HOMEOWN=$USER
-#	HOMEGRP=$GROUP
-#	HOMEDIR=$HOME
 	echo "HOME Directory : " ${HOMEDIR}
 	USERNAME=$USER
 	;;
