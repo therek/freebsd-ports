@@ -2,7 +2,7 @@
 # Date Created:				3 Mar, 2001
 # Whom:					clive
 #
-# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile,v 1.3 2001/04/02 12:24:15 clive Exp $
+# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile,v 1.4 2001/04/06 15:34:51 clive Exp $
 #
 
 PORTNAME=	Template-Toolkit
@@ -21,6 +21,12 @@ SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 
 MASTER_SITE_BACKUP+=	http://www.template-toolkit.org/download/
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 500007
+BROKEN=	"Perl in base system too old, you need perl 5.6.0"
+.endif
 
 .if defined(BATCH)
 CONFIGURE_ENV=	|
@@ -58,4 +64,4 @@ post-patch:
 	${PERL} -pi -e 's,${LOCALBASE}/tt2,${LOCALBASE}/share/tt2,g' \
 		${CONFIGURE_WRKSRC}/${CONFIGURE_SCRIPT}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
