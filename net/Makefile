@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.614 2001/09/17 06:21:37 kevlo Exp $
+# $FreeBSD: ports/net/Makefile,v 1.615 2001/09/17 09:06:51 wjv Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -90,6 +90,7 @@
     SUBDIR += etherboot
     SUBDIR += ethereal
     SUBDIR += ettercap
+    SUBDIR += eudc-emacs20
     SUBDIR += everybuddy
     SUBDIR += fidelio
     SUBDIR += firetalk
