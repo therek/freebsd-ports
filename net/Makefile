@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.589 2001/08/12 11:20:24 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.590 2001/08/17 16:46:59 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -399,6 +399,7 @@
     SUBDIR += tund
     SUBDIR += unison
     SUBDIR += urlendec
+    SUBDIR += vchat
     SUBDIR += vnc
     SUBDIR += vrrp
     SUBDIR += vtun
