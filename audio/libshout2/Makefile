@@ -2,11 +2,11 @@
 # Date created:				06 Jun 2000
 # Whom:					zach@pabst.bendnet.com
 #
-# $FreeBSD: ports/audio/libshout/Makefile,v 1.2 2000/06/16 08:47:49 sobomax Exp $
+# $FreeBSD: ports/audio/libshout/Makefile,v 1.3 2000/06/16 21:50:24 asami Exp $
 #
 
 PORTNAME=	libshout
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.5
 CATEGORIES=	audio net
 MASTER_SITES=	http://developer.icecast.org/libshout/releases/
 
