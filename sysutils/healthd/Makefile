@@ -2,7 +2,7 @@
 # Date created:		15 November 1999
 # Whom:			jim@thehousleys.net
 #
-# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.15 2000/10/21 17:47:40 jeh Exp $
+# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.16 2000/10/24 01:37:14 jeh Exp $
 #
 
 PORTNAME=	healthd
@@ -31,6 +31,12 @@ PLIST_SUB=	HDDOCS=''
 PLIST_SUB=	HDDOCS='@comment '
 .endif
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400014
+CONFIGURE_ARGS+=	--disable-ipv6
+.endif
+
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/healthd.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/healthd.sh startup file."; \
@@ -48,4 +54,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/PROTOCOL ${HDDOCDIR}
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
