@@ -2,7 +2,7 @@
 # Date created:		24 June 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/k12/Makefile,v 1.11 2000/04/11 14:14:17 knu Exp $
+# $FreeBSD: ports/japanese/k12/Makefile,v 1.12 2000/09/12 11:08:01 asami Exp $
 #
 
 PORTNAME=	kaname12
@@ -21,6 +21,7 @@ USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
 RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
 .endif
 

@@ -2,7 +2,7 @@
 # Date created:		15 Mar 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/johabfonts/Makefile,v 1.10 2000/04/21 22:03:51 fenner Exp $
+# $FreeBSD: ports/korean/johabfonts/Makefile,v 1.11 2000/07/23 05:06:25 cjh Exp $
 #
 
 PORTNAME=	johabfonts
@@ -15,9 +15,17 @@ DISTNAME=       hanterm304fonts
 MAINTAINER=	cjh@FreeBSD.org
 
 USE_IMAKE=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_INSTALL_MANPAGES= yes
 
 pre-install:
 	-${MKDIR} ${PREFIX}/lib/X11/fonts/local
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

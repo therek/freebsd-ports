@@ -2,7 +2,7 @@
 # Date Created:				5 Dec 1997
 # Whom:					Ming-I Hseh <PA@FreeBSD.Ntu.edu.TW>
 #
-# $FreeBSD: ports/chinese/kcfonts/Makefile,v 1.10 2000/04/30 04:15:33 vanilla Exp $
+# $FreeBSD: ports/chinese/kcfonts/Makefile,v 1.11 2000/06/27 13:39:07 alex Exp $
 #
 
 PORTNAME=	kcfonts
@@ -14,6 +14,14 @@ MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/distfiles/ \
 MAINTAINER=	PA@FreeBSD.ee.Ntu.edu.TW
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_WRKSUBDIR=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

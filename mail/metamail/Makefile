@@ -2,7 +2,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.13 1999/09/04 20:12:34 cpiazza Exp $
+# $FreeBSD: ports/mail/metamail/Makefile,v 1.14 2000/04/13 19:59:57 cpiazza Exp $
 #
 
 PORTNAME=	metamail
@@ -16,6 +16,13 @@ MAINTAINER=	torstenb@FreeBSD.org
 
 RUN_DEPENDS=	xloadimage:${PORTSDIR}/x11/xloadimage
 
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS+=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAN1= 		audiocompose.1 audiosend.1 extcompose.1 \
@@ -26,4 +33,4 @@ MAN1= 		audiocompose.1 audiosend.1 extcompose.1 \
 		showpicture.1 splitmail.1
 MAN4=		mailcap.4
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

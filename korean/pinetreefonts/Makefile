@@ -2,7 +2,7 @@
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/pinetreefonts/Makefile,v 1.12 2000/04/21 22:04:00 fenner Exp $
+# $FreeBSD: ports/korean/pinetreefonts/Makefile,v 1.13 2000/07/23 05:06:38 cjh Exp $
 #
 
 PORTNAME=	pinetreefonts
@@ -16,6 +16,13 @@ DISTNAME=       pinetree.precomposed-${PORTVERSION}-bdf
 MAINTAINER=	cjh@FreeBSD.org
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 WRKSRC=		${WRKDIR}/pinetree.precomposed/bdf
 
@@ -37,4 +44,4 @@ do-install:
 	done; \
 	mkfontdir ${PREFIX}/lib/X11/fonts/local
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

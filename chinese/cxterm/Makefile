@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.15 2000/04/13 08:28:01 asami Exp $
+# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.16 2000/08/27 04:44:44 obrien Exp $
 #
 
 PORTNAME=	cxterm
@@ -24,6 +24,13 @@ MAINTAINER=	obrien@FreeBSD.org
 WRKSRC=		${WRKDIR}/cxterm-5.0
 USE_IMAKE=	yes
 
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 XMKMF=		xmkmf
 ALL_TARGET=	xrelease Makefiles includes all
 
@@ -42,4 +49,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/Doc/input.doc ${PREFIX}/share/doc/cxterm
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		Fri Mar 27 17:26:42 KST 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.9 2000/04/21 22:03:52 fenner Exp $
+# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.10 2000/07/23 05:06:29 cjh Exp $
 #
 
 PORTNAME=	kaistfonts-ksc
@@ -16,6 +16,14 @@ DISTFILES=	kaist-newmj18.bdf.gz ks_philgi16.bdf.gz \
 MAINTAINER=	cjh@FreeBSD.org
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 USE_GMAKE=	yes
 NO_WRKSUBDIR=	yes
 MAKE_ENV=	DISTDIR=${DISTDIR} DISTFILES="${DISTFILES}"
@@ -31,4 +39,4 @@ do-extract:
 post-install:
 	${CAT} ${PKGDIR}/MESSAGE
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.9 1999/09/09 11:00:04 asami Exp $
+# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.10 2000/04/10 00:44:34 cpiazza Exp $
 #
 
 PORTNAME=	etlfonts-noncjk
@@ -19,10 +19,17 @@ EXTRACT_BEFORE_ARGS=	-xf
 EXTRACT_AFTER_ARGS=	# empty
 USE_X_PREFIX=	yes
 
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 post-extract:
 	@${GUNZIP_CMD} ${WRKSRC}/*.gz
 
 post-install:
 	@${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		13 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/nethack/Makefile,v 1.29 2000/04/11 14:15:32 knu Exp $
+# $FreeBSD: ports/japanese/nethack/Makefile,v 1.30 2000/08/03 09:25:07 asami Exp $
 #
 
 PORTNAME=	nethack
@@ -16,6 +16,13 @@ PATCH_SITES=	ftp://mitsuko.jaist.ac.jp/pub/nethack/
 PATCHFILES=	j${PORTNAME}-${PORTVERSION}.gz
 
 MAINTAINER=	max@FreeBSD.org
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 USE_XPM=	yes
 USE_GMAKE=	yes
@@ -50,4 +57,4 @@ post-install:
 .endfor
 	${CAT} ${PKGDIR}/MESSAGE
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		25 Feb 1998
 # Whom:	Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/japanese/k10/Makefile,v 1.8 2000/04/11 14:14:17 knu Exp $
+# $FreeBSD: ports/japanese/k10/Makefile,v 1.9 2000/09/12 11:08:00 asami Exp $
 #
 
 PORTNAME=	naga10
@@ -18,6 +18,7 @@ USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
 RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
 .endif
 

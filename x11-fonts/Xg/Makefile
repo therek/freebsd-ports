@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/x11-fonts/Xg/Makefile,v 1.10 2000/04/23 22:59:51 kris Exp $
+# $FreeBSD: ports/x11-fonts/Xg/Makefile,v 1.11 2000/07/22 07:33:53 kevlo Exp $
 #
 
 PORTNAME=	libXgFonts
@@ -16,4 +16,11 @@ MAINTAINER=	ports@FreeBSD.org
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
+.include <bsd.port.post.mk>

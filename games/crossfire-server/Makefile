@@ -2,7 +2,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.35 2000/06/29 07:02:13 obrien Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.36 2000/08/03 09:23:25 asami Exp $
 #
 
 PORTNAME=	crossfire
@@ -28,6 +28,13 @@ USE_IMAKE=	yes
 USE_XPM=	yes
 PREFIX=		${LOCALBASE}
 MAN6=		crossfire.6 crossedit.6
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS+=	bdftopcf:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 # Do you want to be able to rebuild documentation after installing the game
 # to produce Postscript documentation with colored icons ?! You have to go
