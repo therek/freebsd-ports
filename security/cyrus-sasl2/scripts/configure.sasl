@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl2/scripts/configure.sasl,v 1.18 2003/04/15 17:03:28 ume Exp $
+# $FreeBSD: ports/security/cyrus-sasl2/scripts/configure.sasl,v 1.19 2003/04/16 16:59:21 ume Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -125,7 +125,7 @@ while [ "$1" ]; do
 				exit 1
 			fi
 			echo "LIB_DEPENDS+=	db41.1:\${PORTSDIR}/databases/db41"
-			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb-incdir=${PREFIX}/include/db41  --with-bdb-libdir=${PREFIX}/lib"
+			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb=db41 --with-bdb-incdir=${PREFIX}/include/db41 --with-bdb-libdir=${PREFIX}/lib"
 			echo "SASLDB_NAME=	sasldb2"
 			DBLIB=1
 			;;
@@ -136,7 +136,7 @@ while [ "$1" ]; do
 				exit 1
 			fi
 			echo "LIB_DEPENDS+=	db4.0:\${PORTSDIR}/databases/db4"
-			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb-incdir=${PREFIX}/include/db4  --with-bdb-libdir=${PREFIX}/lib"
+			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb=db4 --with-bdb-incdir=${PREFIX}/include/db4 --with-bdb-libdir=${PREFIX}/lib"
 			echo "SASLDB_NAME=	sasldb2"
 			DBLIB=1
 			;;
@@ -147,7 +147,7 @@ while [ "$1" ]; do
 				exit 1
 			fi
 			echo "LIB_DEPENDS+=	db3.3:\${PORTSDIR}/databases/db3"
-			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb-incdir=${PREFIX}/include/db3  --with-bdb-libdir=${PREFIX}/lib"
+			echo "CONFIGURE_ARGS+=	--with-dblib=berkeley --with-bdb=db3 --with-bdb-incdir=${PREFIX}/include/db3 --with-bdb-libdir=${PREFIX}/lib"
 			echo "SASLDB_NAME=	sasldb2"
 			DBLIB=1
 			;;

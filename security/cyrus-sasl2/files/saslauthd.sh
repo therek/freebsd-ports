@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/cyrus-sasl2/files/saslauthd.sh,v 1.1 2002/08/08 14:04:44 ume Exp $
 #
 
 action=$1
@@ -54,10 +54,9 @@ case "${sasl_saslauthd_enable}" in
 		;;
 
 	    stop)
-		if [ -r /var/state/saslauthd/mux.pid ]; then
-		    kill `cat /var/state/saslauthd/mux.pid` && \
+		if [ -r /var/state/saslauthd/saslauthd.pid ]; then
+		    kill `cat /var/state/saslauthd/saslauthd.pid` && \
 			echo -n " saslauthd"
-		    rm /var/state/saslauthd/mux.pid
 		fi
 		;;
 
