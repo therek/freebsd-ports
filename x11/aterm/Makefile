@@ -2,7 +2,7 @@
 # Date created:		17 January 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/aterm/Makefile,v 1.14 2001/04/16 15:47:45 jim Exp $
+# $FreeBSD: ports/x11/aterm/Makefile,v 1.15 2001/04/22 05:10:50 knu Exp $
 #
 
 PORTNAME=	aterm
@@ -14,7 +14,7 @@ MASTER_SITES=	http://download.sourceforge.net/aterm/
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

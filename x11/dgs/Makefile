@@ -2,7 +2,7 @@
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/dgs/Makefile,v 1.23 2001/01/28 19:05:27 dannyboy Exp $
+# $FreeBSD: ports/x11/dgs/Makefile,v 1.24 2001/02/05 16:17:57 olgeni Exp $
 #
 
 PORTNAME=	dgs
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	dgs
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS= 	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 

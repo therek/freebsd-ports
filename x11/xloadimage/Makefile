@@ -2,7 +2,7 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.23 2001/07/24 01:09:06 jmz Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.24 2001/07/27 02:36:26 jmz Exp $
 #
 
 VERSION=	4.1
@@ -24,7 +24,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 USE_XLIB=	yes
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 GNU_CONFIGURE=	yes
