@@ -2,7 +2,7 @@
 # Date created:         02 Aug 1996
 # Whom:                 shanee@augusta.de
 #
-# $FreeBSD: ports/devel/tkcvs/Makefile,v 1.19 2000/09/13 20:23:51 ade Exp $
+# $FreeBSD: ports/devel/tkcvs/Makefile,v 1.20 2000/12/11 03:03:07 steve Exp $
 #
 
 PORTNAME=	tkcvs
@@ -15,7 +15,7 @@ MAINTAINER=	shanee@augusta.de
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 NO_BUILD=	yes
-MAN=		tkcvs.n
+MANN=		tkcvs.n
 
 WISH=		wish8\.2
 TCLSH=		tclsh8\.2
