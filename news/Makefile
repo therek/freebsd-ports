@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.63 2001/02/17 16:35:06 ijliao Exp $
+# $FreeBSD: ports/news/Makefile,v 1.64 2001/03/05 07:15:29 ijliao Exp $
 #
 
     SUBDIR += atp
@@ -25,6 +25,7 @@
     SUBDIR += leafnode+
     SUBDIR += newsfetch
     SUBDIR += newsfish
+    SUBDIR += newsx
     SUBDIR += nn
     SUBDIR += nntp
     SUBDIR += nntpbtr
