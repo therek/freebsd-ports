@@ -1,2 +1,3 @@
-$FreeBSD$
+$FreeBSD: ports/net/p0f/distinfo,v 1.7 2003/12/09 18:19:50 trevor Exp $
 MD5 (p0f-2.0.3.tgz) = 583688a4c5718eec0bb34102b3ac457b
+SIZE (p0f-2.0.3.tgz) = 119407

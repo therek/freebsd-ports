@@ -1,2 +1,3 @@
-$FreeBSD$
+$FreeBSD: ports/audio/nogger/distinfo,v 1.2 2003/09/28 09:13:59 trevor Exp $
 MD5 (nogger-0.8.6.tar.gz) = 3fdab257cb27683c2f067baa8b366ca4
+SIZE (nogger-0.8.6.tar.gz) = 12878
