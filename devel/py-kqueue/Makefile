@@ -2,7 +2,7 @@
 # Date created:				05/23/2000
 # Whom:					dwhite@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.2 2000/06/01 06:06:30 dwhite Exp $
+# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.3 2000/06/05 03:31:25 dwhite Exp $
 #
 
 PORTNAME=		kqueue
@@ -19,8 +19,8 @@ RUN_DEPENDS=		python:${PORTSDIR}/lang/python
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 400018
-FORBIDDEN= requires kqueue (added post-4.0-RELEASE)
+.if ( ${OSVERSION} < 400018 || ${OSVERSION} == 500000 )
+FORBIDDEN= requires kqueue
 .endif
 
 # NO_WRKSUBDIR=		yes
