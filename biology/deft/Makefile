@@ -2,7 +2,7 @@
 # Date created:				1999-01-11
 # Whom:					Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/deft/Makefile,v 1.7 2000/10/10 00:48:15 jeh Exp $
+# $FreeBSD: ports/biology/deft/Makefile,v 1.8 2000/10/11 11:08:51 jeh Exp $
 #
 
 PORTNAME=	deft
@@ -34,12 +34,12 @@ post-configure:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/DeFT.exec ${PREFIX}/bin/
 	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME}/examples/DeFT ${PREFIX}/bin/
-	${MKDIR} ${PREFIX}/share/doc/DeFT
 	${MKDIR} ${PREFIX}/share/DeFT
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/bases ${PREFIX}/share/DeFT/
 
 post-install:
 .if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/DeFT
 	${MKDIR} ${PREFIX}/share/examples/DeFT
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README_Liability \
 		${PREFIX}/share/doc/DeFT/
