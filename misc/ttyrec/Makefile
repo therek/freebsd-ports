@@ -3,15 +3,15 @@
 # Date created:                Feb 14, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/ttyrec/Makefile,v 1.1 2001/02/13 17:26:34 ijliao Exp $
 #
 
 PORTNAME=	ttyrec
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.4
 CATEGORIES=	misc
 MASTER_SITES=	http://namazu.org/~satoru/ttyrec/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 do-install:
 .for file in ttyrec ttyplay
