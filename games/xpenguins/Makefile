@@ -2,11 +2,11 @@
 # Date created:				24 January 2001
 # Whom:					lyngbol@candid.dk
 #
-# $FreeBSD: ports/games/xpenguins/Makefile,v 1.1 2001/04/07 01:55:57 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpenguins
-PORTVERSION=	2.1
+PORTVERSION=	2.2
 CATEGORIES=	games
 MASTER_SITES=	http://xpenguins.seul.org/
 
