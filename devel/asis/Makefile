@@ -2,15 +2,15 @@
 # Date created:				11 Jul 2000
 # Whom:					Thomas Quinot <thomas@cuivre.fr.eu.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/asis/Makefile,v 1.1 2000/08/01 10:00:31 nbm Exp $
 #
 
 PORTNAME=	asis
 PORTVERSION=	3.12p
 CATEGORIES=	devel
 MASTER_SITES=	\
-	ftp://ftp.lip6.fr/pub/gnat/asis/ \
-	ftp://cs.nyu.edu/pub/gnat/asis/
+	ftp://ftp.lip6.fr/pub/gnat/${PORTVERSION}/asis/ \
+	ftp://cs.nyu.edu/pub/gnat/${PORTVERSION}/asis/
 DISTNAME=	asis-${PORTVERSION}-src
 
 MAINTAINER=	thomas@cuivre.fr.eu.org
