@@ -1,16 +1,15 @@
 # ports collection makefile for:	xmysql
-# Version required:		1.5
+# Version required:		1.10
 # Date created:			Tue Sep  2 15:46:09 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmysql/Makefile,v 1.23 2000/02/20 17:01:25 andreas Exp $
+# $FreeBSD: ports/databases/xmysql/Makefile,v 1.24 2000/02/20 19:41:07 dirk Exp $
 #
 
-DISTNAME=	xmysql-1.9
+DISTNAME=	xmysql-1.10
 CATEGORIES=	databases
-MASTER_SITES=	http://www.tcx.se/Contrib/ \
-		http://www.buoy.com/mysql/Contrib/ \
-		http://web.tryc.on.ca/mysql/Downloads/Contrib/
+MASTER_SITES=	http://web.wt.net/~dblhack/ \
+		http://linux.tucows.com/files/x11/office/
 
 MAINTAINER=	dirk@FreeBSD.org
 
