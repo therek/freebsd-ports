@@ -2,18 +2,36 @@
 # Date created:				Fri Jul 13 22:59:59 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/menushki/Makefile,v 1.1 2001/07/30 00:51:31 lioux Exp $
 #
 
 PORTNAME=	menushki
-PORTVERSION=	0.4
+PORTVERSION=	0.6
 CATEGORIES=	misc x11
-MASTER_SITES=	http://www.geocities.com/loki_bg/
+MASTER_SITES=	http://www.geocities.com/loki_bg/ \
+		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	pat@databits.net
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+
+DOCS=	AUTHORS ChangeLog README TODO
+PATCH_CLOSE=	editor.cc menushki.cc
+
+post-patch:
+.for files in ${PATCH_CLOSE}
+	@${PERL} -pi -e "s!(tw\.close);!\1\(\);!" ${WRKSRC}/${files}
+.endfor
+
+post-install:
+.ifndef(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+.for files in ${DOCS}
+	@${INSTALL_DATA} ${WRKSRC}/${files} ${DOCSDIR}
+.endfor
+.endif
 
 .include <bsd.port.mk>
