@@ -3,7 +3,7 @@
 # Date created:		2 May 1998
 # Whom:			Ian Struble <ian@broken.net>
 #
-# $FreeBSD: ports/www/ijb/Makefile,v 1.5 1999/11/14 02:28:13 cpiazza Exp $
+# $FreeBSD: ports/www/ijb/Makefile,v 1.6 2000/03/05 00:20:11 obrien Exp $
 
 # You need to delete the old distfile if you are upgrading, as the tar ball
 # for ijb has not been changing names between minor revisions(ie 2.0->2.0.1).
@@ -26,7 +26,7 @@ post-patch:
 	@${PERL} -pi -e 's:\r::' ${WRKSRC}/*
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/junkbuster ${PREFIX}/bin/junkbuster
+	${INSTALL_PROGRAM} ${WRKSRC}/junkbuster ${PREFIX}/sbin/junkbuster
 	${MKDIR} -m 755 ${PREFIX}/etc/junkbuster
 	${INSTALL_DATA} ${WRKSRC}/junkbstr.ini ${PREFIX}/etc/junkbuster/configfile.sample
 	${INSTALL_DATA} ${WRKSRC}/sblock.ini ${PREFIX}/etc/junkbuster/blockfile.sample
