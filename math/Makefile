@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/math/Makefile,v 1.138 2001/08/28 16:31:17 sobomax Exp $
 #
     SUBDIR += yacas
 
@@ -10,6 +10,7 @@
     SUBDIR += abs
     SUBDIR += add
     SUBDIR += apc
+    SUBDIR += asir2000
     SUBDIR += blas
     SUBDIR += calc
     SUBDIR += calctool
