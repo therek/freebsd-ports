@@ -2,24 +2,25 @@
 # Date created:        20 April 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/xfrisk/Makefile,v 1.8 1999/08/25 06:05:11 obrien Exp $
+# $FreeBSD: ports/games/xfrisk/Makefile,v 1.9 2000/04/14 12:27:22 asami Exp $
 #
 
 PORTNAME=	xfrisk
-PORTVERSION=	1.00
+PORTVERSION=	1.2
 CATEGORIES=	games
-MASTER_SITES=	$(MASTER_SITE_XCONTRIB)
-MASTER_SITE_SUBDIR=	games/multiplayer
+MASTER_SITES=	http://cvs.morphy.iki.fi/xfrisk/
 DISTNAME=	XFrisk-${PORTVERSION}
 
 MAINTAINER=	mph@freebsd.org
 
+LIB_DEPENDS=	Xaw.6:${PORTSDIR}/x11-toolkits/Xaw3d
+
 NO_CDROM=	Possible trademark infringement
 
-USE_IMAKE=	yes
+USE_X_PREFIX=	yes
 NO_INSTALL_MANPAGES=	yes
-
-pre-configure:
-	${TOUCH} ${WRKSRC}/types.h
+WRKSRC=		${WRKDIR}/XFrisk
+USE_GMAKE=	yes
+MAKE_ENV+=	XDIR=${X11BASE}
 
 .include <bsd.port.mk>
