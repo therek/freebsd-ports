@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/vim5/pkg/PLIST,v 1.24 2000/10/08 01:00:16 asami dead $
+@comment $FreeBSD: ports/editors/vim5/pkg-plist,v 1.24 2000/10/09 18:13:08 obrien Exp $
 bin/vim
 bin/vimtutor
 bin/ctags
@@ -6,10 +6,10 @@ bin/etags
 bin/xxd
 @comment bin/ex
 @comment bin/gex
-@comment bin/gview
+bin/gview
 bin/gvim
-@comment bin/rgview
-@comment bin/rgvim
+bin/rgview
+bin/rgvim
 bin/rview
 bin/rvim
 @comment bin/view
