@@ -3,7 +3,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.3 2000/01/24 05:22:04 steve Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.4 2000/02/08 09:28:46 peter Exp $
 #
 
 DISTNAME=	cyrus-sasl-${SASL_VER}
@@ -14,12 +14,11 @@ MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 
 MAINTAINER=	hetzels@westbend.net
 
-BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
+USE_OPENSSL=	NORSA
+
+.include <bsd.port.pre.mk>
 
 SASL_VER=	1.5.15
-
-RESTRICTED=     "Contains cryptography"
 
 Y2K=		http://asg.web.cmu.edu/cyrus/imapd/y2k.html
 
@@ -42,6 +41,10 @@ CONFIGURE_ARGS= \
 .if defined(KRB5_HOME) && exists(${KRB5_HOME})
 CONFIGURE_ARGS+= --enable-gssapi=${KRB5_HOME}
 .endif
+
+CONFIGURE_ENV+=	LOCALBASE=${LOCALBASE} \
+		OPENSSLINC=${OPENSSLINC} \
+		OPENSSLLIB=${OPENSSLLIB}
 
 DOCS=	README README.Y2K TODO INSTALL ChangeLog NEWS
 
@@ -88,4 +91,4 @@ post-install:
 	@${MV} ${WRKDIR}/tmp.plist ${TMPPLIST}
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
