@@ -2,13 +2,13 @@
 # Date created:		22 May 2000
 # Whom:			sam@inf.enst.fr
 #
-# $FreeBSD: ports/net/adasockets/Makefile,v 1.3 2000/10/01 15:39:35 kevlo Exp $
+# $FreeBSD: ports/net/adasockets/Makefile,v 1.4 2000/10/13 20:33:38 ade Exp $
 #
 
 PORTNAME=	adasockets
-PORTVERSION=	0.1.11
+PORTVERSION=	0.1.14
 CATEGORIES=	net
-MASTER_SITES=	http://www.infres.enst.fr/ANC/
+MASTER_SITES=	http://www.rfc1149.net/download/adasockets/
 
 MAINTAINER=	sam@inf.enst.fr
 
