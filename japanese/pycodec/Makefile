@@ -2,7 +2,7 @@
 # Date created:		29 April 2001
 # Whom:			Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/pycodec/Makefile,v 1.1 2001/06/23 18:09:14 knu Exp $
 #
 
 PORTNAME=	pycodec
