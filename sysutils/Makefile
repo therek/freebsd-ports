@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.127 2000/07/22 16:37:28 alex Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.128 2000/08/02 08:30:05 nbm Exp $
 #
 
     SUBDIR += LPRng
@@ -9,6 +9,7 @@
     SUBDIR += asmem
     SUBDIR += asmon
     SUBDIR += asrpages
+    SUBDIR += battstat-applet
     SUBDIR += bchunk
     SUBDIR += bkpupsd
     SUBDIR += cd-write
