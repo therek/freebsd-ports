@@ -1,9 +1,8 @@
 # New ports collection makefile for:	wemi for mule
-# Version required:	1.13.4
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-mule/Makefile,v 1.5 1999/08/31 06:43:43 mharo Exp $
+# $FreeBSD: ports/editors/wemi-mule/Makefile,v 1.6 1999/10/16 06:06:20 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	semi for xemacs20
-# Version required:	1.13.4
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-xemacs20/Makefile,v 1.3 1999/08/31 06:43:34 mharo Exp $
+# $FreeBSD: ports/editors/semi-xemacs20/Makefile,v 1.4 1999/12/28 02:28:02 kuriyama Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

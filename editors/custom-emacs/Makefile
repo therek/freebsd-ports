@@ -1,15 +1,16 @@
 # New ports collection makefile for:	custom for emacs
-# Version required:	1.9962
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/custom-emacs/Makefile,v 1.3 1999/08/25 05:43:32 obrien Exp $
+# $FreeBSD: ports/editors/custom-emacs/Makefile,v 1.4 1999/08/31 06:42:53 mharo Exp $
 #
 
-DISTNAME=	custom-${CUSTOM_VER}
+PORTNAME=	custom-${EMACS_PORT}
+PORTVERSION=	${CUSTOM_VER}
 CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.dina.kvl.dk/pub/Staff/Per.Abrahamsen/custom/ \
 		ftp://ftp.win.ne.jp/pub/word/elisp/
+DISTNAME=	custom-${CUSTOM_VER}
 
 MAINTAINER?=	shige@FreeBSD.org
 
@@ -31,7 +32,6 @@ HAVE_COMMON_PORT= NO
 .endif
 
 .if defined(EMACS_PORT)
-PKGNAME=	custom-${EMACS_PORT}-${CUSTOM_VER}
 EMACS_CMD=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
 BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 .if defined(HAVE_COMMON_PORT) && (${HAVE_COMMON_PORT} == "YES")

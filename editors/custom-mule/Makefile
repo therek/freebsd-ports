@@ -1,9 +1,8 @@
 # New ports collection makefile for:	custom for mule
-# Version required:	1.9962
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.4 1999/08/31 06:42:54 mharo Exp $
+# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.5 2000/01/08 16:36:42 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

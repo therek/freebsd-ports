@@ -1,9 +1,8 @@
 # New ports collection makefile for:	apel for mule
-# Version required:	9.23
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.8 1999/10/10 16:25:33 shige Exp $
+# $FreeBSD: ports/editors/apel-mule/Makefile,v 1.9 2000/01/02 14:16:54 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

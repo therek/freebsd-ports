@@ -1,9 +1,8 @@
 # New ports collection makefile for:	flim for xemacs21-mule
-# Version required:	1.13.2
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.13 2000/01/11 14:47:38 shige Exp $
+# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.14 2000/03/08 08:26:44 kuriyama Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	psgml for mule
-# Version required:	1.2.0
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-mule/Makefile,v 1.4 1999/08/31 06:43:16 mharo Exp $
+# $FreeBSD: ports/editors/psgml-mule/Makefile,v 1.5 1999/10/16 11:58:01 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

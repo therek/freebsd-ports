@@ -3,16 +3,17 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule-common/Makefile,v 1.44 1999/08/25 05:44:03 obrien Exp $
+# $FreeBSD: ports/editors/mule-common/Makefile,v 1.45 1999/08/27 21:13:47 mharo Exp $
 #
 
-DISTNAME=	mule-2.3
-PKGNAME=	mule-common-2.3
+PORTNAME=	mule-common
+PORTVERSION=	2.3
 CATEGORIES=	editors japanese
 MASTER_SITES=	ftp://etlport.etl.go.jp/pub/mule/ \
 		ftp://ftp.mei.co.jp/archive/free/gnu/emacs/Mule/ \
 		ftp://ftp.iij.ad.jp/pub/misc/mule/ \
 		http://www.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/mule/
+DISTNAME=	mule-${PORTVERSION}
 DISTFILES=	emacs-19.34b.tar.gz mule-2.3-19.34.patch-981002.tar.gz
 
 PATCH_SITES=	ftp://etlport.etl.go.jp/pub/mule/

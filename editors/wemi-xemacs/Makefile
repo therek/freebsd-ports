@@ -1,9 +1,8 @@
 # New ports collection makefile for:	wemi for xemacs
-# Version required:	1.13.4
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-xemacs/Makefile,v 1.3 1999/08/31 06:43:47 mharo Exp $
+# $FreeBSD: ports/editors/wemi-xemacs/Makefile,v 1.4 1999/10/16 06:06:24 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

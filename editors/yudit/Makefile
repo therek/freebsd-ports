@@ -1,15 +1,15 @@
 # New ports collection makefile for:	yudit
-# Version required:	1.3
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD: ports/editors/yudit/Makefile,v 1.7 2000/01/29 22:46:00 reg Exp $
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.8 2000/02/18 09:18:04 taoka Exp $
 #
 #
 #
 #
 
-DISTNAME=	yudit-1.5
+PORTNAME=	yudit
+PORTVERSION=	1.5
 CATEGORIES=	editors converters print
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= apps/editors/X

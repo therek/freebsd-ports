@@ -1,9 +1,8 @@
 # New ports collection makefile for:	flim-current for mule
-# Version required:	1.13.2
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-mule-current/Makefile,v 1.5 1999/08/31 06:43:02 mharo Exp $
+# $FreeBSD: ports/editors/flim-mule-current/Makefile,v 1.6 1999/10/11 06:15:18 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

@@ -1,9 +1,8 @@
 # New ports collection makefile for:	psgml for xemacs-mule
-# Version required:	1.2.0
 # Date created:		26 May 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/editors/psgml-xemacs21-mule/Makefile,v 1.9 2000/01/21 12:36:48 shige Exp $
+# $FreeBSD: ports/editors/psgml-xemacs21-mule/Makefile,v 1.10 2000/03/08 06:46:32 kuriyama Exp $
 #
 
 MAINTAINER=	kuriyama@FreeBSD.org

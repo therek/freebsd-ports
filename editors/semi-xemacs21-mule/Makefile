@@ -1,9 +1,8 @@
 # New ports collection makefile for:	semi for xemacs21-mule
-# Version required:	1.13.4
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-xemacs21-mule/Makefile,v 1.13 2000/01/11 14:47:40 shige Exp $
+# $FreeBSD: ports/editors/semi-xemacs21-mule/Makefile,v 1.14 2000/03/08 08:23:20 kuriyama Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	nvi-1.79 + perl
-# Version required:	1.79
 # Date created:		18 Feb 1998
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/nvi-perl/Makefile,v 1.13 1999/08/25 05:44:06 obrien Exp $
 #
 
-DISTNAME=	nvi-1.79
-PKGNAME?=	nvi-perl-1.79
+PORTNAME=	nvi-perl
+PORTVERSION=	1.79
 CATEGORIES=	editors
 MASTER_SITES=	ftp://sleepy.vwh.net/pub/ \
 		ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
+DISTNAME=	nvi-${PORTVERSION}
 
 MAINTAINER=	itojun@itojun.org
 

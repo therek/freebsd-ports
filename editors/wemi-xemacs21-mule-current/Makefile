@@ -1,9 +1,8 @@
 # New ports collection makefile for:	wemi-current for xemacs21-mule
-# Version required:	1.13.7
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-xemacs21-mule-current/Makefile,v 1.11 2000/01/06 14:27:08 shige Exp $
+# $FreeBSD: ports/editors/wemi-xemacs21-mule-current/Makefile,v 1.12 2000/01/11 14:47:46 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

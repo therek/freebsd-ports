@@ -1,9 +1,8 @@
 # New ports collection makefile for:	wemi-current for emacs20
-# Version required:	1.13.7
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-emacs20-current/Makefile,v 1.15 2000/01/09 14:51:13 shige Exp $
+# $FreeBSD: ports/editors/wemi-emacs20-current/Makefile,v 1.16 2000/03/10 21:31:09 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
