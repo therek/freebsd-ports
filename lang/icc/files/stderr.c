@@ -1,4 +1,4 @@
-/*-
+/*
  * Copyright (c) 2002 Marius Strobl
  * All rights reserved.
  *
@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD$
+ * $FreeBSD: ports/lang/icc/files/stderr.c,v 1.1 2002/08/20 10:01:58 netchild Exp $
  */
 
 #include <stdio.h>
