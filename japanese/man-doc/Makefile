@@ -2,11 +2,11 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.32 2000/04/11 14:15:02 knu Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.33 2000/07/07 02:20:19 horikawa Exp $
 #
 
 PORTNAME=	man-doc
-PORTVERSION=	4.0
+PORTVERSION=	4.1
 CATEGORIES=	japanese
 DISTFILES=	# none
 
