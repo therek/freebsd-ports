@@ -3,21 +3,23 @@
 # Date created:        23 August 1999
 # Whom:                Alex Varju <varju@webct.com>
 #
-# $FreeBSD: ports/palm/jpilot/Makefile,v 1.1.1.1 1999/08/31 14:00:48 sumikawa Exp $
+# $FreeBSD: ports/palm/jpilot/Makefile,v 1.2 1999/08/31 15:44:35 sumikawa Exp $
 #
+# "?=" and "+=" are for including this Makefile from japanese/jpilot
 
 DISTNAME=	jpilot-0.93.1
-CATEGORIES=	palm
+CATEGORIES=	palm comms
 MASTER_SITES=	http://jpilot.linuxbox.com/
 
-MAINTAINER=	varju@webct.com
+MAINTAINER?=	varju@webct.com
 
-LIB_DEPENDS=	pisock:${PORTSDIR}/palm/pilot-link \
+LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 PREFIX=		${LOCALBASE}/pilot
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-pilot-prefix=${PREFIX}
+CONFIGURE_ARGS+=--with-pilot-prefix=${PREFIX}
+CONFIGURE_ENV+=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
 
 post-install:
 	@strip ${PREFIX}/bin/jpilot
