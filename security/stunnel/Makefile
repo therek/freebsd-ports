@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.15 2000/02/15 07:09:47 kris Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.16 2000/02/20 15:05:06 dirk Exp $
 #
 
 DISTNAME=	stunnel-3.7
@@ -22,6 +22,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/run
 
 MAN8=		stunnel.8
+CONFIGURE_ENV+= LOCALBASE=${LOCALBASE}
 
 cert:
 	@(cd ${WRKSRC}; make cert)
