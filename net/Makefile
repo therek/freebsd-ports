@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.450 2001/01/09 15:19:16 jeh Exp $
+# $FreeBSD: ports/net/Makefile,v 1.451 2001/01/13 16:08:03 roger Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -156,6 +156,7 @@
     SUBDIR += ncplib
     SUBDIR += nemesis
     SUBDIR += neoupdate
+    SUBDIR += net-snmp
     SUBDIR += netatalk
     SUBDIR += netatalk-asun
     SUBDIR += netcat
@@ -292,7 +293,6 @@
     SUBDIR += ttcp
     SUBDIR += ttt
     SUBDIR += tund
-    SUBDIR += ucd-snmp
     SUBDIR += unison
     SUBDIR += vnc
     SUBDIR += vtun
