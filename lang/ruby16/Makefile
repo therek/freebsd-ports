@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.57 2001/05/11 18:22:56 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.58 2001/05/24 17:27:20 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -18,8 +18,6 @@ PATCHFILES=	${RUBY_PATCHFILES}
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
-
-BROKEN=		"tarball incomplete - waiting for repack"
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
