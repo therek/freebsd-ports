@@ -3,7 +3,7 @@
 # Date created:         08 March 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/elk/Makefile,v 1.19 1999/08/28 02:42:24 mharo Exp $
+# $FreeBSD: ports/lang/elk/Makefile,v 1.20 1999/08/31 06:46:45 mharo Exp $
 #
 
 DISTNAME=	elk-3.0
@@ -14,7 +14,6 @@ MASTER_SITES=	http://www-rn.informatik.uni-bremen.de/software/elk/dist/
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-PATCH_STRIP=	-p1
 ALL_TARGET=	default
 MAN1=		elk.1
 
