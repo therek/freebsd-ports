@@ -2,20 +2,20 @@
 # Date created:				Fri 2 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/lzop/Makefile,v 1.2 2000/06/04 22:50:05 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lzop
 PORTVERSION=	1.00
 CATEGORIES=	archivers
-MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
+MASTER_SITES=	http://www.oberhumer.com/opensource/lzop/download/
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/lzo
 
-GNU_CONFIGURE=	YES
-CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS} -I${LOCALBASE}/include" \
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 MAN1=		lzop.1
 
