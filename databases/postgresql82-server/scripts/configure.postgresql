@@ -2,7 +2,7 @@
 # -*- tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.3 2001/04/21 11:34:34 vanilla Exp $
+# $FreeBSD: ports/databases/postgresql7/scripts/configure.postgresql,v 1.4 2001/04/25 17:23:33 olgeni Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -220,7 +220,7 @@ if [ "${TCL}" ]; then
 				exit 1
 				;;
 		esac
-		echo WITH_TCL=\"$1\" >> ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
+		echo WITH_TCL=$1 >> ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 	fi
 	cat <<-EOF >> ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 		CONFIGURE_ARGS+= --with-tcl --with-tclconfig="\${TCLCONFIG}"
