@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/wordpress/pkg-plist,v 1.1 2004/07/29 08:11:25 ijliao Exp $
+@comment $FreeBSD: ports/www/wordpress/pkg-plist,v 1.2 2004/10/13 00:04:39 edwin Exp $
 %%WORDPRESS%%/wp-content/plugins/google-hilite.php
 %%WORDPRESS%%/wp-content/plugins/hello.php
 %%WORDPRESS%%/wp-content/plugins/markdown.php
@@ -144,6 +144,7 @@
 %%WORDPRESS%%/wp-settings.php
 %%WORDPRESS%%/wp-trackback.php
 %%WORDPRESS%%/print.css
+%%WORDPRESS%%/xmlrpc.php
 %%WORDPRESS%%/license.txt
 %%WORDPRESS%%/readme.html
 @dirrm %%WORDPRESS%%/wp-admin
