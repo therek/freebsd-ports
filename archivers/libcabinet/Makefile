@@ -2,7 +2,7 @@
 # Date Created:				30 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/libcabinet/Makefile,v 1.1 2000/11/30 16:29:46 sobomax Exp $
 #
 
 PORTNAME=	libcabinet
@@ -11,6 +11,8 @@ CATEGORIES=	archivers
 MASTER_SITES=	http://trill.cis.fordham.edu/~barbacha/cabinet_library/
 
 MAINTAINER=	sobomax@FreeBSD.org
+
+INSTALLS_SHLIB=	yes
 
 SRCFILE=	${WRKSRC}/listcab.cpp
 PROGFILE=	${SRCFILE:S/.cpp$//}
