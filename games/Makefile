@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.277 2000/06/22 20:49:45 ade Exp $
+# $FreeBSD: ports/games/Makefile,v 1.278 2000/06/28 22:51:46 asami Exp $
 #
 
     SUBDIR += 3dc
@@ -150,6 +150,7 @@
     SUBDIR += wmtictactoe
     SUBDIR += wmtimebomb
     SUBDIR += wolfpack
+    SUBDIR += wordplay
     SUBDIR += x3eyes
     SUBDIR += xabacus
     SUBDIR += xasteroids
