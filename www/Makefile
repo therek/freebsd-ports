@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.171 1999/12/06 15:23:52 obrien Exp $
+# $FreeBSD: ports/www/Makefile,v 1.172 1999/12/27 02:14:48 steve Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -96,6 +96,7 @@
     SUBDIR += py-HTMLgen
     SUBDIR += roxen
     SUBDIR += ruboard
+    SUBDIR += screem
     SUBDIR += sitecopy
     SUBDIR += snarf
     SUBDIR += squid11
