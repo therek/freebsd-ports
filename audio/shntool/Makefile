@@ -2,11 +2,11 @@
 # Date created:        2 November 2000
 # Whom:                Bill Fenner <fenner@FreeBSD.Org>
 #
-# $FreeBSD: ports/audio/shntool/Makefile,v 1.2 2001/04/21 17:26:01 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	shntool
-PORTVERSION=	1.01
+PORTVERSION=	1.2.0
 CATEGORIES=	audio
 MASTER_SITES=	http://shnutils.freeshell.org/shntool/source/ \
 		${MASTER_SITE_LOCAL}
