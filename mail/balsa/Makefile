@@ -2,11 +2,11 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.34 2000/11/14 14:10:01 ade Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.35 2000/12/19 11:48:49 sobomax Exp $
 #
 
 PORTNAME=	balsa
-PORTVERSION= 	1.0.1
+PORTVERSION= 	1.1.0
 #PORTREVISION=	1
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://www.theochem.kth.se/~pawsa/balsa/ \
