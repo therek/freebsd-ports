@@ -2,11 +2,11 @@
 # Date Created:			5 Mar 2001
 # Whom:				Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/weather-emacs20/Makefile,v 1.1 2001/04/09 09:55:44 knu Exp $
 #
 
 PORTNAME=	weather
-PORTVERSION=	0.19
+PORTVERSION=	0.26
 CATEGORIES=	japanese elisp
 MASTER_SITES=	ftp://ftp.opaopa.org/pub/elisp/ \
 		ftp://ftp.ring.gr.jp/pub/text/elisp/jaist/ftp.opaopa.org/elisp/ \
