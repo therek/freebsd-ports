@@ -3,7 +3,7 @@
 # Whom:			pst
 # Version required:	5.31
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.40 1999/08/25 06:34:30 obrien Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.41 1999/11/01 00:37:58 steve Exp $
 
 DISTNAME=	expect
 PKGNAME=	expect-5.31
@@ -27,6 +27,9 @@ MAN1=		autoexpect.1 cryptdir.1 decryptdir.1 dislocate.1 \
 		tknewsbiff.1 unbuffer.1 xkibitz.1
 MAN3=		libexpect.3
 .endif
+
+pre-configure:
+	${TOUCH} ${WRKSRC}/configure
 
 post-install:
 	${LN} -sf libexpect531.so.1 ${PREFIX}/lib/libexpect531.so
