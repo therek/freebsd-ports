@@ -2,11 +2,11 @@
 # Date created:			1 Mar 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/everybuddy/Makefile,v 1.2 2000/04/09 18:11:12 cpiazza Exp $
+# $FreeBSD: ports/net/everybuddy/Makefile,v 1.3 2000/05/04 00:40:39 jim Exp $
 #
 
 PORTNAME=	everybuddy
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.4-2
 CATEGORIES=	net
 MASTER_SITES=	http://www.everybuddy.com/files/
 
@@ -25,5 +25,8 @@ CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}"
 
 MAN1=		everybuddy.1
+
+post-patch:
+	@${CP} ${FILESDIR}/config.h ${WRKSRC}/src
 
 .include <bsd.port.mk>
