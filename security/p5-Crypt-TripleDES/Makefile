@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:20:30 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-TripleDES/Makefile,v 1.1 2001/01/03 23:26:47 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-TripleDES
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing the Triple-DES cipher
 
 PERL_CONFIGURE=	yes
 

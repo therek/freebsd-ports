@@ -2,7 +2,7 @@
 # Date created:			9 Jan 1999
 # Whom:				bsdx
 #
-# $FreeBSD: ports/sysutils/bchunk/Makefile,v 1.8 2001/08/13 13:21:05 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bchunk
@@ -13,6 +13,8 @@ MASTER_SITES=	http://hes.iki.fi/bchunk/ \
 MASTER_SITE_SUBDIR=	utils/disk-management
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Converts .bin/.cue files to .iso/audio
 
 MAN1=	bchunk.1
 

@@ -2,7 +2,7 @@
 # Date created:				25 July 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fuzz/Makefile,v 1.2 2000/08/02 22:26:11 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fuzz
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	fuzz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Tool for testing software by bombarding the program with random data
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				3 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.6 2000/11/13 15:00:50 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xg
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://messners.com/code/ \
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Windows(tm) controls - like widget set for Motif(tm)
 
 WRKSRC=		${WRKDIR}/Xg-${PORTVERSION}
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTTPD-Tools/Makefile,v 1.16 2001/02/05 15:33:44 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTTPD-Tools
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	HTTPD
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module for a HTTP server authentication class
 
 PERL_CONFIGURE=	yes
 

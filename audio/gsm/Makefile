@@ -2,7 +2,7 @@
 # Date created:		5 January 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/audio/gsm/Makefile,v 1.16 2000/06/16 10:38:09 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gsm
@@ -11,6 +11,8 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.cs.tu-berlin.de/pub/local/kbs/tubmik/gsm/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Audio converter and library for converting u-law to gsm encoding
 
 WRKSRC=		${WRKDIR}/gsm-1.0-pl10
 

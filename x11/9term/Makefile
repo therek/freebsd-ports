@@ -2,7 +2,7 @@
 # Date created:		Sun Aug 13 12:36:14 CDT 1995
 # Whom:			erich@rrnet.com
 #
-# $FreeBSD: ports/x11/9term/Makefile,v 1.17 2000/05/29 23:59:57 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	9term
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cs.usyd.edu.au/matty/unicode/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An X11 program which emulates a plan9 window
 
 # needs library and private header, but not during runtime
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/editors/sam:build

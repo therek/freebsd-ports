@@ -2,7 +2,7 @@
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.12 2000/11/22 16:09:07 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xxgdb
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An X window interface for gdb
 
 USE_IMAKE=	yes
 MAN1=		xxgdb.1

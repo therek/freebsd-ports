@@ -2,7 +2,7 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/sed/Makefile,v 1.13 2000/04/12 14:37:33 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sed
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GNU sed + multi-byte extension
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

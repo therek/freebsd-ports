@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:01:44 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-CGI-ArgChecker/Makefile,v 1.1 2001/01/03 23:24:27 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CGI-ArgChecker
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing a cgi interface to String::Checker
 
 BUILD_DEPENDS=	${SITE_PERL}/String/Checker.pm:${PORTSDIR}/devel/p5-String-Checker
 RUN_DEPENDS=	${BUILD_DEPENDS}

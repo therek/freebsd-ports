@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/linpack/Makefile,v 1.28 2000/07/13 07:47:22 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linpack
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/linpack/ \
 DISTFILES=	${SRCS:.f=.f.gz}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Linear Algebra package
 
 LIB_DEPENDS=	blas.1:${PORTSDIR}/math/blas
 

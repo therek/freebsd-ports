@@ -3,7 +3,7 @@
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.10 2001/01/14 20:41:02 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icb
@@ -15,6 +15,8 @@ MASTER_SITES=	http://www.obfuscation.org/ftp/pub/icb/ \
 DISTNAME=	c${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Internet CB - a mostly-defunct chat client
 
 LIB_DEPENDS=	tcl83:${PORTSDIR}/lang/tcl83
 

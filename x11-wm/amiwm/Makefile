@@ -2,7 +2,7 @@
 # Date created: 13 November 1997
 # Whom: Douglas Carmichael <dcarmich@mcs.com>
 #
-# $FreeBSD: ports/x11-wm/amiwm/Makefile,v 1.8 2000/04/10 19:49:36 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amiwm
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/
 DISTNAME=	${PORTNAME}0.20pl48
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A window manager that makes your desktop look like an Amiga(TM)
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="${CFLAGS} -DHAVE_X11_EXTENSIONS_SHAPE_H"

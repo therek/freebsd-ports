@@ -2,7 +2,7 @@
 # Date created:				Tue 04 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/graphics/kdc2tiff/Makefile,v 1.1 2000/07/04 05:36:24 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdc2tiff
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Converts Kodak .kdc to TIFF or JPEG formats
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff

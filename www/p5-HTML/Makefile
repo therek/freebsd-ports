@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML/Makefile,v 1.13 2000/10/23 21:03:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module for writing HTML documents
 
 USE_PERL5=	yes
 

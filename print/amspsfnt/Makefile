@@ -2,7 +2,7 @@
 # Date created:		11 September 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/amspsfnt/Makefile,v 1.5 2000/04/09 17:49:12 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amspsfnt
@@ -13,6 +13,8 @@ DISTNAME=	amsps
 EXTRACT_SUFX=	-unix.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	AMSFonts PostScript Fonts (Adobe Type 1 format)
 
 BUILD_DEPENDS=	$(LOCALBASE)/bin/type1inst:${PORTSDIR}/x11-fonts/p5-type1inst
 

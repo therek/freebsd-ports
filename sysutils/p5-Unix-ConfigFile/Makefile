@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 09:43:27 2001
 # Whom:					will
 #
-# $FreeBSD: ports/sysutils/p5-Unix-ConfigFile/Makefile,v 1.1 2001/01/03 23:45:02 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Unix-ConfigFile
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Unix
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl modules that provides a simple interface to reading /etc files
 
 PERL_CONFIGURE=	yes
 

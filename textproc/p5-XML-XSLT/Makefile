@@ -2,7 +2,7 @@
 # Date created:				May 26 2001
 # Whom:					vanilla
 #
-# $FreeBSD: ports/textproc/p5-XML-XSLT/Makefile,v 1.2 2001/06/22 01:54:48 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-XSLT
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	XML::XSLT - A perl module for processing XSLT
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/DOM.pm:${PORTSDIR}/textproc/p5-XML-DOM
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/Simple.pm:${PORTSDIR}/www/p5-libwww \

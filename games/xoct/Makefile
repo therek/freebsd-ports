@@ -2,7 +2,7 @@
 # Date created:				28 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xoct/Makefile,v 1.8 2000/04/14 12:27:52 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xoct
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Oct puzzle for X Window System
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.38 2001/08/15 22:41:45 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	knews
@@ -12,6 +12,8 @@ CATEGORIES=	news
 MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A threaded nntp newsreader for X
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.5:${PORTSDIR}/graphics/png \

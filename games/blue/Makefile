@@ -2,7 +2,7 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/blue/Makefile,v 1.7 2001/02/03 14:57:59 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	blue
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.tuxedo.org/~esr/blue/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A Blue Moon card solitaire
 
 ALL_TARGET=	# empty
 MAN6=		blue.6

@@ -2,7 +2,7 @@
 # Date created:		10 August 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.15 2000/10/14 19:44:34 ade Exp $
+# $FreeBSD$
 
 PORTNAME=	wmtimebomb
 PORTVERSION=	0.2.0
@@ -11,6 +11,8 @@ MASTER_SITES=	ftp://ftp.netmug.org/pub/FreeBSD/distfiles/
 DISTNAME=	wmtimebomb.20
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A minesweeper for WindowMaker
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		wraster.4:${PORTSDIR}/x11-wm/windowmaker

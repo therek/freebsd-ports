@@ -2,7 +2,7 @@
 # Date created:         Thu Sep 14 11:10:01 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/lang/eiffel/Makefile,v 1.8 2000/04/23 22:59:29 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eiffel
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}s${PORTVERSION}
 EXTRACT_SUFX=	.freebsd.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A compiler for the object-oriented language Eiffel
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes

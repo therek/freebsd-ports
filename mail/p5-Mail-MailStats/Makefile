@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 15:09:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-MailStats/Makefile,v 1.1 2001/01/03 23:37:01 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MailStats
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module to detect newer messages in procmail-generated mailboxes
 
 BUILD_DEPENDS=	${SITE_PERL}/AppConfig.pm:${PORTSDIR}/devel/p5-AppConfig
 RUN_DEPENDS=	${BUILD_DEPENDS}

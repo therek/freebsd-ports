@@ -2,7 +2,7 @@
 # Date created:				27 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/cgic/Makefile,v 1.7 2001/02/05 15:33:16 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cgic
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.boutell.com/cgic/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	ANSI C library for CGI programming
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAKEFILE=	${FILESDIR}/Makefile.lib

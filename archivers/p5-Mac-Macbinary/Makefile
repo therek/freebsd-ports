@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:41:22 2001
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/p5-Mac-Macbinary/Makefile,v 1.2 2001/02/26 15:45:48 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mac-Macbinary
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Mac
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that can extract info from Macbinary files
 
 PERL_CONFIGURE=	yes
 

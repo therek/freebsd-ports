@@ -2,7 +2,7 @@
 # Date created:         Wed Jul 31 21:59:42 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/splitmpg/Makefile,v 1.9 2000/06/04 17:11:18 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	splitmpg
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Splits an ISO 11172-1 into its components
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile

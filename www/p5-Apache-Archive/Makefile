@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-Archive/Makefile,v 1.1 2001/01/03 23:18:19 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-Archive
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that creates a menu to allow perusal of tarball contents
 
 BUILD_DEPENDS=	${SITE_PERL}/Archive/Tar.pm:${PORTSDIR}/archivers/p5-Archive-Tar
 RUN_DEPENDS=	${BUILD_DEPENDS}

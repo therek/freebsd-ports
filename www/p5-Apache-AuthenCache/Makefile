@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:59:31 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthenCache/Makefile,v 1.3 2001/03/01 06:36:51 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AuthenCache
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that implements authentication caching
 
 BUILD_DEPENDS=	${SITE_PERL}/Tie/IxHash.pm:${PORTSDIR}/devel/p5-Tie-IxHash
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -2,7 +2,7 @@
 # Date created:		11 October 1997
 # Whom:			Douglas Carmichael <dcarmich@mcs.com>
 #
-# $FreeBSD: ports/graphics/photopc/Makefile,v 1.5 2001/02/14 14:37:23 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	photopc
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A utility to manage an Epson PhotoPC 500 digital camera
 
 GNU_CONFIGURE=	yes
 

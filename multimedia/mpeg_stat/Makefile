@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 21:52:06 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mpeg_stat/Makefile,v 1.7 2000/04/14 10:46:44 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpeg_stat
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://mm-ftp.CS.Berkeley.EDU/pub/multimedia/mpeg/stat/
 DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An MPEG-I statistics gatherer
 
 MAN1=		mpeg_stat.1
 MANCOMPRESSED=	yes

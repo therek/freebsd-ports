@@ -2,7 +2,7 @@
 # Date created:		23 October 1998
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/sysutils/copytape/Makefile,v 1.6 2000/04/09 19:07:23 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		copytape
@@ -14,6 +14,8 @@ DISTNAME=		copytape
 EXTRACT_SUFX=		.Z
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=		A program that is used to duplicate magtapes
 
 BUILD_DEPENDS=		gunshar:${PORTSDIR}/archivers/gshar+gunshar
 

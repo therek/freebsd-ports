@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 06:56:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Tie-IxHash/Makefile,v 1.1 2001/01/03 23:44:37 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Tie-IxHash
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Tie
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing ordered in-memory associative arrays
 
 PERL_CONFIGURE=	yes
 

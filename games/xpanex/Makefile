@@ -2,7 +2,7 @@
 # Date created:				27 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xpanex/Makefile,v 1.8 2000/04/14 12:27:59 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpanex
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Panex puzzle for X Window System
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

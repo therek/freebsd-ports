@@ -2,7 +2,7 @@
 # Date created:                         June 21th 1997
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/converters/p5-MIME-Base64/Makefile,v 1.17 2001/03/01 06:38:07 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MIME-Base64
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	MIME
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module for Base64 and Quoted-Printable encodings
 
 PERL_CONFIGURE=	YES
 

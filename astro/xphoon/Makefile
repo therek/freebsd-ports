@@ -2,7 +2,7 @@
 # Date created:		14 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/astro/xphoon/Makefile,v 1.16 2000/06/22 05:51:52 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xphoon
@@ -13,6 +13,8 @@ DISTNAME=	xphoon
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Set the root window to the moon in its current phase
 
 USE_IMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         2 Dec 1996
 # Whom:                 nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/sysutils/contool/Makefile,v 1.13 2000/10/08 10:22:57 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	contool
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	nsayer
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Console tool for openlook
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

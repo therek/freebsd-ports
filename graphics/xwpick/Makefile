@@ -2,7 +2,7 @@
 # Date created:				24 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/xwpick/Makefile,v 1.5 2000/04/14 10:48:01 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xwpick
@@ -12,6 +12,8 @@ MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=		Image pick up utility for X Window System
 
 USE_IMAKE=		yes
 MAN1=			xwpick.1

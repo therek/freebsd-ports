@@ -2,7 +2,7 @@
 # Date created:		26 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/chimera/Makefile,v 1.14 2000/04/11 14:12:57 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	chimera
@@ -18,6 +18,8 @@ PATCHFILES=	${PORTNAME}-${PREV_VERSION}-${PORTVERSION}.gz \
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	X/Athena World-Wide Web client + Japanese patch
 
 PREV_VERSION=	${PORTVERSION:S/p1/p0/}
 

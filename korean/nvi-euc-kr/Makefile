@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/korean/nvi-euc-kr/Makefile,v 1.19 2001/01/09 05:57:06 itojun Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-euckr
@@ -13,6 +13,8 @@ COMMENT=	${.CURDIR}/pkg-comment
 CATEGORIES=	korean editors
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	A clone of vi/ex, with multilingual patch, default settings for euc-kr
 
 CONFIGURE_ARGS=        --enable-multibyte=euc-kr --program-prefix=n
 

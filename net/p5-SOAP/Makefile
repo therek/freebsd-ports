@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 10:01:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/net/p5-SOAP/Makefile,v 1.2 2001/01/06 19:32:35 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SOAP
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	SOAP
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl modules providing an API to the Simple Object Access Protocol
 
 BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
 		${SITE_PERL}/LWP.pm:${PORTSDIR}/www/p5-libwww

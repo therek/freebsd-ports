@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 13:26:45 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Bulkmail/Makefile,v 1.1 2001/01/03 23:35:48 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mail-Bulkmail
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module for mailing lists
 
 PERL_CONFIGURE=	yes
 

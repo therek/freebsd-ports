@@ -2,7 +2,7 @@
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.29 2000/11/13 14:10:05 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	moxftp
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.ibiblio.org/pub/X11/contrib/applications/ \
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Ftp shell under X Window System
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

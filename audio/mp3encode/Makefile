@@ -2,7 +2,7 @@
 # Date created:		5th August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/audio/mp3encode/Makefile,v 1.5 2000/10/29 06:31:26 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mp3encode
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/Berkeley/mpeg2/conformance-bitst
 DISTNAME=	dist10
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	MPEG layer I, II and III audio file encoder
 
 RESTRICTED=	Condition is not clear
 

@@ -2,7 +2,7 @@
 # Date created:		15 July 1997
 # Whom:			Stephen Roznowski <sjr1@flash.net>
 #
-# $FreeBSD: ports/mail/xmail/Makefile,v 1.10 2000/12/21 06:28:17 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmail
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	applications
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An X-based interface to the Berkeley mail program
 
 USE_IMAKE=	yes
 USE_XPM=	yes

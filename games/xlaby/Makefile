@@ -2,7 +2,7 @@
 # Date created:				3 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlaby/Makefile,v 1.8 2000/06/22 05:51:59 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xlaby
@@ -15,6 +15,8 @@ MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Daemonic X Labyrinth played directly with the mouse pointer
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

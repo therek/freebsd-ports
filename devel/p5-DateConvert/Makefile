@@ -2,7 +2,7 @@
 # Date created:				13th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-DateConvert/Makefile,v 1.2 2000/11/03 16:19:28 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	DateConvert
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Date
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module to convert dates between any two calendrical formats
 
 PERL_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:				30 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/galaxis/Makefile,v 1.7 2001/02/03 15:05:06 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	galaxis
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.tuxedo.org/~esr/galaxis/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Clone of the nifty little Macintosh game
 
 ALL_TARGET=	# empty
 MAN6=		galaxis.6

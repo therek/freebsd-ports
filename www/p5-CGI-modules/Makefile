@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI-modules/Makefile,v 1.18 2001/03/01 06:37:04 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CGI-modules
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Modules for perl5, for use in writing CGI scripts
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww
 

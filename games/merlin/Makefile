@@ -2,7 +2,7 @@
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/merlin/Makefile,v 1.7 2000/06/21 17:12:44 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	merlin
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.doc.ic.ac.uk/~np2/software/download/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A pointless puzzle game for Tcl/Tk
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

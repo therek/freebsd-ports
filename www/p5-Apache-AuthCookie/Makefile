@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:55:36 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthCookie/Makefile,v 1.3 2001/01/01 11:06:09 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AuthCookie
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A perl module to provide custom forms for reauthentication
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
 		${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/${APACHE_PORT}

@@ -2,7 +2,7 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn/Makefile,v 1.18 2000/04/21 07:51:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trn
@@ -11,6 +11,8 @@ CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/readers/trn/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Threaded Read News newsreader
 
 RUN_DEPENDS=	munpack:${PORTSDIR}/converters/mpack
 

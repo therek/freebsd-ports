@@ -2,7 +2,7 @@
 # Date created:				16 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xspacewarp/Makefile,v 1.5 2000/04/14 12:28:24 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xspacewarp
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Time Trek - like game for X Window System
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes

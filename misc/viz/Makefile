@@ -2,7 +2,7 @@
 # Date created:                      8 Mar 1997
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/misc/viz/Makefile,v 1.5 2000/06/22 19:15:32 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	viz
@@ -11,6 +11,8 @@ CATEGORIES=	misc
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 EXTRACT_SUFX=	.tgz
+
+PORTCOMMENT=	Convert invisible (binary) characters to a visible form
 
 MAN1=		viz.1 inviz.1
 

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 10:06:12 2001
 # Whom:					will
 #
-# $FreeBSD: ports/astro/p5-Astro-SunTime/Makefile,v 1.1 2001/01/03 23:22:39 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Astro-SunTime
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Astro
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface to calculate sunrise/sunset times
 
 BUILD_DEPENDS=	${SITE_PERL}/Time/ParseDate.pm:${PORTSDIR}/devel/p5-Time
 RUN_DEPENDS=	${BUILD_DEPENDS}

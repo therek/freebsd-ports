@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl80/Makefile,v 1.30 2001/01/01 10:15:04 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcl
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
 DISTNAME=	tcl8.0.5
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Tool Command Language
 
 NO_LATEST_LINK=	yes
 WRKSRC=		${WRKDIR}/tcl8.0.5/unix

@@ -2,7 +2,7 @@
 # Date created:         29 October 1994
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.25 2000/10/06 17:12:20 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xearth
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://cag.lcs.mit.edu/pub/tuna/ \
 MASTER_SITE_SUBDIR= applications
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Set the root window to the image of earth
 
 USE_IMAKE=	yes
 

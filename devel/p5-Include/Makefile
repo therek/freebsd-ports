@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Include/Makefile,v 1.13 2000/10/23 21:02:51 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Include
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Include
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 package which allows use of macros defined in 'C' header files
 
 PERL_CONFIGURE=	YES
 

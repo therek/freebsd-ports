@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.19 2000/10/23 21:03:06 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	PGP
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	PGP
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module to work with PGP messages
 
 BUILD_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 

@@ -2,7 +2,7 @@
 # Date created:		5 Nov 97
 # Whom:			Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/umfpack/Makefile,v 1.5 1999/12/23 19:31:56 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	umfpack
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cise.ufl.edu/pub/faculty/davis/umfpack/
 DISTNAME=	UMFPACK${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Unsymmetric-pattern Multifrontal Package
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libblas.a:${PORTSDIR}/math/blas
 

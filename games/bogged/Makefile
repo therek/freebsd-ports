@@ -2,7 +2,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bogged/Makefile,v 1.6 2000/03/29 07:17:52 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		bogged
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.gz
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=		Word game for X Window System
 
 RUN_DEPENDS=		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

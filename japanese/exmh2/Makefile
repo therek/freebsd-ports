@@ -2,12 +2,14 @@
 # Date created:		15 Mar 1999
 # Whom:		Takeshi WATANABE <watanabe@komadori.planet.sci.kobe-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/exmh2/Makefile,v 1.6 2000/04/14 17:10:39 knu Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	X11/TK based mail reader front end to MH for Japanese environments
 
 JAPANESE_EXMH=	yes
 

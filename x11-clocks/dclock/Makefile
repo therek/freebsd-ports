@@ -2,7 +2,7 @@
 # Date created:		15 Aug 1996
 # Whom:			David Leonard <leonard@dstc.edu.au>
 #
-# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.11 2000/04/10 00:32:33 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dclock
@@ -17,6 +17,8 @@ PATCHFILES=	Dclock-pl6.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A 7-segment digital clock with optional military time and alarm
 
 IGNOREFILES=	${DISTFILES}
 USE_IMAKE=	yes

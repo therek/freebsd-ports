@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:28:15 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-File-Cache/Makefile,v 1.3 2001/03/23 07:17:05 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-Cache
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing a persistent object store
 
 BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${SITE_PERL}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable

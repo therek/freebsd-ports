@@ -2,7 +2,7 @@
 # Date created:				18 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xworm/Makefile,v 1.6 2000/04/14 12:28:35 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xworm
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.ekran.no/archive/x/
 DISTNAME=	${PORTNAME}102
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Classic game with apples and hungry worm
 
 WRKSRC=		${WRKDIR}/XWorm
 USE_X_PREFIX=	yes

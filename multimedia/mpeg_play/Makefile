@@ -2,7 +2,7 @@
 # Date created:		17 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/mpeg_play/Makefile,v 1.15 1999/08/31 06:45:02 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpeg_play
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://mm-ftp.cs.berkeley.edu/pub/multimedia/mpeg/play/
 EXTRACT_SUFX=	-patched-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A program to play mpeg movies on X displays
 
 WRKSRC=		${WRKDIR}/mpeg_play
 USE_IMAKE=	yes

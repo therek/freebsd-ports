@@ -2,7 +2,7 @@
 # Date created:		Sun Jun  8 11:51:21 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/comms/tkhylafax/Makefile,v 1.13 2000/11/25 10:31:04 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkhylafax
@@ -11,6 +11,8 @@ CATEGORIES=	comms tk82
 MASTER_SITES=	http://www.NeoSoft.com/tcl/ftparchive/sorted/comm/tkhylafax-3.0b2/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A tcl/tk interface to Sam Leffler's fax package
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
 		sendfax:${PORTSDIR}/comms/hylafax \

@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-Peek/Makefile,v 1.15 2000/10/23 21:02:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Devel-Peek
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A perl5 data debugging tool for the XS programmer
 
 PERL_CONFIGURE=	yes
 

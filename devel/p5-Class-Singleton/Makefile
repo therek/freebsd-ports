@@ -2,7 +2,7 @@
 # Date created:				Sun Jan 14 00:56:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Class-Singleton/Makefile,v 1.1 2001/01/14 06:05:15 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Class-Singleton
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Class
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that describes a singular object class
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes

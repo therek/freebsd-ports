@@ -2,7 +2,7 @@
 # Date created:		14 November 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/x11-wm/gwm/Makefile,v 1.14 2001/02/05 21:05:38 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gwm
@@ -12,6 +12,8 @@ MASTER_SITES=	http://koala.ilog.fr/ftp/pub/gwm/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Generic Window Manager
 
 USE_IMAKE=	yes
 USE_XPM=	yes

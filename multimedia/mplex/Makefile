@@ -2,7 +2,7 @@
 # Date created:         Wed Jul 31 20:54:54 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mplex/Makefile,v 1.7 2000/04/23 22:59:35 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mplex
@@ -11,6 +11,8 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.leo.org/pub/comp/general/graphics/mpeg/mplex/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Multiplexes MPEG component streams into system layers
 
 MAN1=		mplex.1
 

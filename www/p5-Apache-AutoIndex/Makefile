@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 20:13:11 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AutoIndex/Makefile,v 1.2 2001/01/08 06:24:19 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AutoIndex
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A perl module that can completely replace mod_dir and mod_autoindex
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/src.pm:${PORTSDIR}/www/mod_perl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/Icon.pm:${PORTSDIR}/www/p5-Apache-Icon \

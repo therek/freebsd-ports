@@ -2,7 +2,7 @@
 # Date created:		23 August 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/irc/Makefile,v 1.27 2000/10/19 13:36:29 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	irc
@@ -17,6 +17,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	The 'Internet Relay Chat' Server
 
 # the NOTE command is disabled by default
 # ENABLE_NOTE=yes

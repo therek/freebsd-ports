@@ -2,7 +2,7 @@
 # Date created:		Sun Jun 22 16:57:39 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/devel/crossgo32-djgpp2/Makefile,v 1.11 2000/04/11 21:27:29 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crossgo32-djgpp2
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2/old/ \
 DISTNAME=	djcrx201
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	DJGPP V2 libraries and compatability for crossgo32 crosscompiler
 
 BUILD_DEPENDS=	i386-go32-gcc:${PORTSDIR}/devel/crossgo32
 RUN_DEPENDS=	i386-go32-gcc:${PORTSDIR}/devel/crossgo32

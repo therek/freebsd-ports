@@ -2,7 +2,7 @@
 # Date created:		21 April 1998
 # Whom:			J Han <hjh@photino.com>
 #
-# $FreeBSD: ports/devel/libcii/Makefile,v 1.4 2000/05/21 09:31:39 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libcii
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cs.princeton.edu/pub/packages/cii/
 DISTNAME=	cii11
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Library from "C Interfaces and Implementations" by David Hanson
 
 NO_WRKSUBDIR=	yes
 

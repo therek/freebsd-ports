@@ -2,7 +2,7 @@
 # Date created:		3 Jul 1998
 # Whom:			kchowksey@hss.hns.com
 #
-# $FreeBSD: ports/devel/elftoaout/Makefile,v 1.4 2000/08/28 21:12:40 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elftoaout
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://sunsite.mff.cuni.cz/OS/Linux/Sparc/local/elftoaout/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	ELF to a.out conversion tool by Jakub Jelinek and Pete Zaitcev
 
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"
 MAN1=		elftoaout.1

@@ -2,7 +2,7 @@
 # Date created:		Sat Jun  6 00:09:52 JST 1998
 # Whom:			Jun-ichiro itojun Hagino <itojun@itojun.org>
 #
-# $FreeBSD: ports/net/mrt/Makefile,v 1.8 2001/01/09 18:50:06 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mrt
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.merit.edu/net-research/mrt/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Multi-threaded Routing Toolkit
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 

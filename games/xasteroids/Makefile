@@ -2,7 +2,7 @@
 # Date created:		3 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/games/xasteroids/Makefile,v 1.16 2001/01/27 05:40:09 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xasteroids
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.x.org/pub/R5contrib/
 DISTFILES=	xasteroids.sh.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	X11 based asteroids style arcade game
 
 USE_IMAKE=	yes
 NO_WRKSUBDIR=	yes

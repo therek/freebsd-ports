@@ -2,7 +2,7 @@
 # Date created:				Mon 03 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/hsftp/Makefile,v 1.3 2000/11/13 13:58:48 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hsftp
@@ -13,6 +13,8 @@ MASTER_SITES=	http://la-samhna.de/hsftp/ \
 MASTER_SITE_SUBDIR=	system/network/file-transfer
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	FTP emulator that uses ssh to transport commands/data
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-readline

@@ -2,7 +2,7 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/grep/Makefile,v 1.16 2001/02/27 18:27:23 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grep
@@ -16,6 +16,8 @@ PATCHFILES=	grep-2.4.2-mlb2.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GNU grep + multi-byte extension
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=j --disable-nls

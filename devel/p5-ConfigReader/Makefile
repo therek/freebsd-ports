@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-ConfigReader/Makefile,v 1.11 2000/10/23 21:02:44 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ConfigReader
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	ConfigReader
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module to read directives from a configuration file
 
 USE_PERL5=	YES
 

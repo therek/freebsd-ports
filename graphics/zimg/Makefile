@@ -2,7 +2,7 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/zimg/Makefile,v 1.10 2001/01/23 08:19:54 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zimg
@@ -12,6 +12,8 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.zellner.org/zimg/download/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Image-generator that uses ASCII input files to create PNGs/EDFs
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 

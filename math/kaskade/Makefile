@@ -2,7 +2,7 @@
 # Date created:		19 Sept. 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/kaskade/Makefile,v 1.13 2000/04/08 23:20:01 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kaskade
@@ -13,6 +13,8 @@ DISTNAME=	${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Adaptive linear scalar elliptic and parabolic problem solver
 
 USE_X_PREFIX=	yes
 

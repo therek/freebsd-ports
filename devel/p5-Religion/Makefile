@@ -2,7 +2,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Religion/Makefile,v 1.12 2000/10/23 21:02:55 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Religion
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Religion
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module to install die() and warn() handlers
 
 PERL_CONFIGURE=	YES
 

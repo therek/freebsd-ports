@@ -2,7 +2,7 @@
 # Date created:         2 Oct 1995
 # Whom:                 se
 #
-# $FreeBSD: ports/games/spider/Makefile,v 1.9 2000/01/22 03:27:10 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spider
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A challenging double decked solitaire game
 
 USE_IMAKE=	yes
 INSTALL_TARGET=	install install.doc

@@ -2,7 +2,7 @@
 # Date created:		27 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/print/pclprint/Makefile,v 1.4 2000/04/09 17:50:23 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pclprint
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://andrsn.stanford.edu/pub/print/ \
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Utility for printing to HP (Laser,Desk)Jets using PCL rather than PS
 
 NO_BUILD=	YES
 

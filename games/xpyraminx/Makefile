@@ -2,7 +2,7 @@
 # Date created:				26 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xpyraminx/Makefile,v 1.8 2000/04/14 12:28:05 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpyraminx
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Pyraminx puzzle for X Window System
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/chinese/nvi-big5/Makefile,v 1.19 2000/10/08 10:19:21 asami Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese editors
@@ -11,6 +11,8 @@ PKGNAMESUFFIX=	-big5
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	A clone of vi/ex, with multilingual patch, default settings for big5
 
 COMMENT=	${.CURDIR}/pkg-comment
 CONFIGURE_ARGS+=	--enable-multibyte=big5 --program-prefix=n

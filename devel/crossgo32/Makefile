@@ -4,7 +4,7 @@
 # Date updated: 	Sun Jun 22 16:11:40 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/devel/crossgo32/Makefile,v 1.12 2000/06/09 21:58:52 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crossgo32
@@ -17,6 +17,8 @@ DISTNAME=	crosstree-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} dosrel-1.0${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Cross Development Environment for 32-bit DOS
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=${TARGET}

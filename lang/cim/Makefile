@@ -2,7 +2,7 @@
 # Date created:			21 Sept 1996
 # Whom:				giffunip
 #
-# $FreeBSD: ports/lang/cim/Makefile,v 1.16 2000/06/16 21:51:18 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cim
@@ -11,6 +11,8 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.ifi.uio.no/pub/cim/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Compiler for the SIMULA programming language
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

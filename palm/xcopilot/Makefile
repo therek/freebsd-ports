@@ -2,7 +2,7 @@
 # Date created:			July 17 1997
 # Whom:				Nick Sayer <nsayer@quack.kfu.com>
 #
-# $FreeBSD: ports/palm/xcopilot/Makefile,v 1.13 2000/11/16 17:45:43 nsayer Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcopilot
@@ -11,6 +11,8 @@ CATEGORIES=	palm emulators
 MASTER_SITES=	http://xcopilot.cuspy.com/build/
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Emulator for US Robotics Pilot PDA
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

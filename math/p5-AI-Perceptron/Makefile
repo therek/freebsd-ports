@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-AI-Perceptron/Makefile,v 1.2 2001/01/01 11:06:02 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	AI-Perceptron
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	AI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module for introducing to internal operations of neural networks
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         17 July 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/graphics/xdl/Makefile,v 1.10 2000/04/14 10:47:44 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdl
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Display DL animations on an X screen
 
 USE_X_PREFIX=	yes
 MAN1=		xdl.1

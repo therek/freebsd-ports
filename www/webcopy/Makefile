@@ -2,7 +2,7 @@
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.15 2000/07/07 18:44:46 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webcopy
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	steve
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A Web Mirroring Program
 
 NO_PACKAGE=	"This program cannot be distributed if modified in any way"
 NO_CDROM=	"Don't sell for profit without written permission"

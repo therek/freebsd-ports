@@ -2,7 +2,7 @@
 # Date created:		28 December 1994
 # Whom:			jc@irbs.com John Capo
 #
-# $FreeBSD: ports/editors/axe/Makefile,v 1.8 2000/04/14 00:25:18 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aXe
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	editors
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Simple to use text editor for X
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 

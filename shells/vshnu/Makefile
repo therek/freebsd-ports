@@ -3,7 +3,7 @@
 # Date created:			Feb 26, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/shells/vshnu/Makefile,v 1.2 2001/06/13 15:00:08 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vshnu
@@ -12,6 +12,8 @@ CATEGORIES=	shells perl5
 MASTER_SITES=	http://www.cs.indiana.edu/hyplan/kinzler/vshnu/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	New Visual Shell
 
 .include <bsd.port.pre.mk>
 

@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmsun/Makefile,v 1.6 2000/08/03 09:22:21 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	wmsun
 PORTVERSION=	1.03
@@ -11,6 +11,8 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmSun-1.03
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A dockapp that displays the rise and set time of the sun
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSun
 

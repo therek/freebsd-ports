@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 20:08:48 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthenURL/Makefile,v 1.1 2001/01/03 23:20:51 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AuthenURL
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Apache/mod_perl module to handle auth against external URLs
 
 BUILD_DEPENDS=	${SITE_PERL}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		${SITE_PERL}/Apache/AuthenCache.pm:${PORTSDIR}/www/p5-Apache-AuthenCache

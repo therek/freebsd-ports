@@ -2,7 +2,7 @@
 # Date created:		5 Nov 1999
 # Whom:			Morita Shinya <shinmaru@dokidoki.ne.jp>
 #
-# $FreeBSD: ports/japanese/xyagamo/Makefile,v 1.3 2000/08/03 09:25:17 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xyagamo
@@ -11,6 +11,8 @@ CATEGORIES=	japanese games
 MASTER_SITES=	http://www.dokidoki.ne.jp/home2/shinmaru/mahjong/
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Japanese version of a four player mahjong game
 
 USE_X_PREFIX=	YES
 USE_XPM=	yes

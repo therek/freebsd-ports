@@ -3,7 +3,7 @@
 # Date created:			Jul 30, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/converters/utf8conv/Makefile,v 1.1 2001/07/30 17:37:26 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	utf8conv
@@ -12,6 +12,8 @@ CATEGORIES=	converters
 MASTER_SITES=	http://www.fibrespeed.net/~mbabcock/code/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Convert hexadecimal Unicode character values to UTF-8
 
 MAKE_ARGS=	CC="${CC}" CFLAGS="${CFLAGS}"
 ALL_TARGET=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:				28 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/spellcast/Makefile,v 1.7 2000/04/14 12:26:36 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spellcast
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Multiplayer fight with spells turn based game for X Window System
 
 USE_X_PREFIX=	yes
 MAN6=		spellcast.6

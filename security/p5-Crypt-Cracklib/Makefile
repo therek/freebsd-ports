@@ -2,7 +2,7 @@
 # Date created:				Fri Jan 26 20:26:11 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-Cracklib/Makefile,v 1.1 2001/01/27 03:07:40 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-Cracklib
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface to Alec Muffet\'s cracklib library
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libcrack.a:${PORTSDIR}/security/cracklib
 RUN_DEPENDS=	${BUILD_DEPENDS}

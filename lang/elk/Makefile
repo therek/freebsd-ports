@@ -2,7 +2,7 @@
 # Date created:		08 March 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/elk/Makefile,v 1.22 2000/01/14 16:34:15 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elk
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www-rn.informatik.uni-bremen.de/software/elk/dist/
 DISTNAME=	elk-3.0
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An embeddable Scheme interpreter
 
 USE_XLIB=	yes
 ALL_TARGET=	default

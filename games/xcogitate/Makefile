@@ -2,7 +2,7 @@
 # Date created:				15 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xcogitate/Makefile,v 1.11 2000/06/14 05:44:51 mph Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcogitate
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	mph
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A logic game with board and stones
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:				21 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xroads/Makefile,v 1.10 2000/06/22 05:52:00 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xroads
@@ -13,6 +13,8 @@ MASTER_SITES=	http://linux.tucows.com/files/x11/entertain/
 DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Commodore 64 "Crossroads"-like video game for X Window System
 
 USE_X_PREFIX=	yes
 

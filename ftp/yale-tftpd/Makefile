@@ -2,7 +2,7 @@
 # Date created:		Oct 8, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/ftp/yale-tftpd/Makefile,v 1.13 1999/08/25 05:55:28 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yale-tftpd
@@ -11,6 +11,8 @@ CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.cert.dfn.de/pub/tools/net/yale-tftpd/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Enhanced tftpd(8) from Yale University and cisco Systems
 
 NO_WRKSUBDIR=
 MAN8=		tftpd.8

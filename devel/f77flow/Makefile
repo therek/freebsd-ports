@@ -2,7 +2,7 @@
 # Date created:				25 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/f77flow/Makefile,v 1.3 2000/03/29 07:16:31 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		f77flow
@@ -12,6 +12,8 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/fortran
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=	Analyze the structure of a fortran77 program
 
 ALL_TARGET=
 MAN1=			flow.1

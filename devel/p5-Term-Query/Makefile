@@ -2,7 +2,7 @@
 # Date created:				21 May 1998
 # Whom:	      				Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/devel/p5-Term-Query/Makefile,v 1.7 2000/04/11 21:29:55 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Term-Query
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An interactive question-response user interface module
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Array/PrintCols.pm:${PORTSDIR}/misc/p5-Array-PrintCols
 

@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/xmorph/Makefile,v 1.13 2000/08/06 15:53:26 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmorph
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.colorado-research.com/~gourlay/software/Graphics/Xmorph
 DISTNAME=	${PORTNAME}-2001feb22
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A digital image warping program
 
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes

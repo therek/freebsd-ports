@@ -2,7 +2,7 @@
 # Date created:				6 May 2001
 # Whom:					will
 #
-# $FreeBSD: ports/science/clhep/Makefile,v 1.1 2001/05/08 00:02:21 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clhep
@@ -11,6 +11,8 @@ CATEGORIES=	science
 MASTER_SITES=	http://wwwinfo.cern.ch/asd/lhc++/export/share/CLHEP/${PORTVERSION}/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Object-oriented toolkit for particle physics applications by CERN
 
 WRKSRC=		${WRKDIR}/CLHEP
 GNU_CONFIGURE=	yes

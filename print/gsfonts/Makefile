@@ -2,7 +2,7 @@
 # Date created:		11 September 1997
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/gsfonts/Makefile,v 1.7 2000/04/09 17:49:49 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gsfonts
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	ghostscript
 DISTFILES=	${GS_FONTS_STD} ${GS_FONTS_OTHER}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Fonts used by GNU Ghostscript
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/type1inst:${PORTSDIR}/x11-fonts/p5-type1inst
 

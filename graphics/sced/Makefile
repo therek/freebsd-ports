@@ -2,7 +2,7 @@
 # Date created:         27  Dec 1996
 # Whom:                 proff@iq.org
 #
-# $FreeBSD: ports/graphics/sced/Makefile,v 1.9 2001/01/16 17:31:00 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sced
@@ -11,6 +11,8 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.cs.wisc.edu/~schenney/sced/src/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	SCene EDitor for povray/renderman/genray/etc
 
 RUN_DEPENDS=	povray:${PORTSDIR}/graphics/povray
 

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:48:35 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-File-Binary/Makefile,v 1.1 2001/01/03 23:49:29 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-Binary
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface to modify and read binary files
 
 PERL_CONFIGURE=	yes
 

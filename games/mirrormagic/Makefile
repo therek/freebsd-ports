@@ -2,7 +2,7 @@
 # Date created:				1 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/mirrormagic/Makefile,v 1.7 2000/08/03 09:23:39 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mirrormagic
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An arcade style game with stereo sound for X Window System
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Alias/Makefile,v 1.1 2001/01/01 05:45:34 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Alias
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Alias
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A perl module that performs aliasing services
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		21 January 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/rayshade/Makefile,v 1.8 2000/04/14 10:47:16 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rayshade
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An extensible system for creating ray-traced images
 
 BUILD_DEPENDS=	$(LOCALBASE)/lib/librle.a:${PORTSDIR}/graphics/urt
 

@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-IO-Stty/Makefile,v 1.6 2000/06/22 05:51:54 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IO-Stty
@@ -14,6 +14,8 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}-.${PORTVERSION:E}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module that hacks around IO::File deficiencies
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		17th February 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/print/dvi2tty/Makefile,v 1.13 2001/02/22 06:35:13 markm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvi2tty
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A dvi-file previewer for text only devices
 
 IGNOREFILES=	${DISTFILES}
 MAN1=		dvi2tty.1

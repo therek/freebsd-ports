@@ -2,7 +2,7 @@
 # Date created:				20 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/math/add/Makefile,v 1.4 2000/04/14 07:19:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	add
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://dickey.his.com/add/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Full-screen editing calculator
 
 WRKSRC=		${WRKDIR}/add-970526
 

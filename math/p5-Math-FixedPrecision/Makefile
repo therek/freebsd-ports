@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 11:03:30 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-FixedPrecision/Makefile,v 1.3 2001/03/01 06:38:18 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Math-FixedPrecision
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Math
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that provides decimal math without floating point errors
 
 USE_ZIP=	yes
 

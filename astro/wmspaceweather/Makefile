@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.6 2000/08/03 09:22:20 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	wmspaceweather
 PORTVERSION=	1.04
@@ -11,6 +11,8 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmSpaceWeather-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A DockApp that shows the weather at geosynchronous orbit
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSpaceWeather
 

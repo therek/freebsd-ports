@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-DProf/Makefile,v 1.13 2000/10/23 21:02:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	DProf
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-Devel-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A Perl code profiler
 
 PERL_CONFIGURE=	yes
 

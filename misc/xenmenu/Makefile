@@ -2,7 +2,7 @@
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/xenmenu/Makefile,v 1.5 2000/03/31 23:56:53 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xenmenu
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	apps/misc
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Highly customizable, text-based menu generator
 
 ALL_TARGET=	# empty
 GNU_CONFIGURE=	yes

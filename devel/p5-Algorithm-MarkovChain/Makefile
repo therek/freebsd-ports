@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Algorithm-MarkovChain/Makefile,v 1.1 2001/01/03 23:15:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Algorithm-MarkovChain
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Algorithm
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl class capable of creating Markov chains and output based on them
 
 PERL_CONFIGURE=	yes
 

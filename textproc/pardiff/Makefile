@@ -2,7 +2,7 @@
 # Date created:		08 July 2001
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/textproc/pardiff/Makefile,v 1.2 2001/08/18 06:58:47 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pardiff
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pardiff
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Parallelizing diff Filter, converts diff output to paralleled format
 
 GNU_CONFIGURE=	yes
 

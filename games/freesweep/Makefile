@@ -2,7 +2,7 @@
 # Date created:				25 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/freesweep/Makefile,v 1.6 2000/09/25 12:21:23 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freesweep
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.upl.cs.wisc.edu/~hartmann/sweep/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Minesweeper-style game for text-mode terminals
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

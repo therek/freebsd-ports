@@ -2,7 +2,7 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Archie/Makefile,v 1.13 2000/10/23 21:03:02 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Archie
@@ -14,6 +14,8 @@ DISTNAME=	perl_archie.${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl5 module to make Archie queries via Prospero requests
 
 USE_PERL5=	yes
 

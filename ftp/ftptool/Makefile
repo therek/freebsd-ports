@@ -2,7 +2,7 @@
 # Date created:		19 March 1996
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/ftp/ftptool/Makefile,v 1.10 2001/05/21 07:09:45 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftptool
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	utilities
 DISTFILES=	Ftptool${PORTVERSION}.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Graphic ftp shell based on xview
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

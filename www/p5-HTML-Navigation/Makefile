@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 12:02:56 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-HTML-Navigation/Makefile,v 1.2 2001/03/01 06:37:50 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Navigation
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module for creating generic HTML navigation bars
 
 BUILD_DEPENDS=	${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI-modules \
 		${SITE_PERL}/URI/Escape.pm:${PORTSDIR}/net/p5-URI

@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/unlzx/Makefile,v 1.1 2000/06/03 04:42:52 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unlzx
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}.c
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Extracts .lzx archives from Amiga systems
 
 NO_WRKSUBDIR=		yes
 

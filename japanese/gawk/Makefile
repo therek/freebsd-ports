@@ -2,7 +2,7 @@
 # Date created:		5 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/gawk/Makefile,v 1.21 2001/03/06 17:21:38 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gawk
@@ -16,6 +16,8 @@ PATCHFILES=	${PORTNAME}mb115.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GNU awk + multi-byte extension
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-bitops --enable-non-decimal-data

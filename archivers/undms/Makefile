@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/undms/Makefile,v 1.1 2000/06/03 04:58:14 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	undms
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}.c
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Converts .dms Amiga disk images to uncompressed .adf images
 
 NO_WRKSUBDIR=	yes
 

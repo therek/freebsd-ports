@@ -2,7 +2,7 @@
 # Date created:         25 Jan 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/tr2latex/Makefile,v 1.14 2000/04/09 17:50:44 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tr2latex
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	support
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Convert a document from troff to LaTeX
 
 IGNOREFILES=	${DISTNAME}${EXTRACT_SUFX}
 

@@ -2,7 +2,7 @@
 # Date created:				14 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xtruco/Makefile,v 1.6 2000/04/02 01:00:16 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtruco
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Simple version for X Window of the famous card game Super Truco
 
 USE_X_PREFIX=	yes
 

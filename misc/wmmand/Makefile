@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmmand/Makefile,v 1.6 2000/08/03 09:25:47 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	wmmand
 PORTVERSION=	1.0
@@ -11,6 +11,8 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmMand-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A DockApp mandelbrot explorer
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmMand
 

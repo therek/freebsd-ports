@@ -2,7 +2,7 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/libcache/Makefile,v 1.7 2000/12/22 16:32:47 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libcache
@@ -11,6 +11,8 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.afro-productions.com/libcache/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	C library that allows a programmer to parse sentences easier
 
 INSTALLS_SHLIB=	yes
 

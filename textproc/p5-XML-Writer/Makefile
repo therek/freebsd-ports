@@ -2,7 +2,7 @@
 # Date created:				24 December 2000
 # Whom:					Adam Herzog <adam@herzogdesigns.com>
 #
-# $FreeBSD: ports/textproc/p5-XML-Writer/Makefile,v 1.2 2001/03/01 06:39:12 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-Writer
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A simple Perl module for writing XML documents
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -2,7 +2,7 @@
 # Date created:		January 24, 1999
 # Whom:		mi@aldan.algebra.com
 #
-# $FreeBSD: ports/audio/raproxy/Makefile,v 1.10 2001/07/03 18:35:01 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	raproxy
@@ -13,6 +13,8 @@ MASTER_SITES=	http://docs.real.com/proxykit/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Progressive Networks\' RealAudio Proxy Kit 3.0 beta 1
 
 # Get it through http://www.real.com/firewall/fwdload/index.html
 # if the master site does not exists somehow.

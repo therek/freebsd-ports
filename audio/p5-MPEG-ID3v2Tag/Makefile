@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:38:34 2001
 # Whom:					will
 #
-# $FreeBSD: ports/audio/p5-MPEG-ID3v2Tag/Makefile,v 1.2 2001/03/01 06:38:09 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MPEG-ID3v2Tag
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	MPEG
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that provides a way to write/read ID3 v2.3 tags
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:			2 December 1998
 # Whom:				Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/antipolix/Makefile,v 1.5 2000/04/14 18:40:17 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	antipolix
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games/multiplayer
 DISTNAME=	AntipoliX_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Simple multiplayer game for X Window System
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

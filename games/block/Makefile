@@ -2,7 +2,7 @@
 # Date created:				10 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/block/Makefile,v 1.5 2000/04/02 00:57:03 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	block
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Small text based maze game
 
 WRKSRC=		${WRKDIR}/blocks
 MAKEFILE=	makefile

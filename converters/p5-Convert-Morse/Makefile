@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:37:55 2001
 # Whom:					will
 #
-# $FreeBSD: ports/converters/p5-Convert-Morse/Makefile,v 1.2 2001/03/01 06:37:11 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Convert-Morse
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module to convert between ASCII and Morse codes
 
 .include <bsd.port.pre.mk>
 

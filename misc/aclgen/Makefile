@@ -2,7 +2,7 @@
 # Date created:				17 September 1999
 # Whom:					igor@zynaps.ru
 #
-# $FreeBSD: ports/misc/aclgen/Makefile,v 1.1.1.1 1999/11/01 03:43:03 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aclgen
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.sztaki.hu/pub/private/kissg/aclgen/
 DISTNAME=	aclgen-202
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Optimize Cisco routers ip access lists
 
 NO_WRKSUBDIR=	YES
 

@@ -2,7 +2,7 @@
 # Date created:		5 March 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.15 2001/01/16 17:33:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slingshot
@@ -13,6 +13,8 @@ DISTNAME=	SlingShot${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Supplemental Libraries to extend Xview
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

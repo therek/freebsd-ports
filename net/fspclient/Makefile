@@ -2,7 +2,7 @@
 # Date created:		7 Nov 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/net/fspclient/Makefile,v 1.14 1999/12/27 21:35:40 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fspclient
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	system/network/file-transfer
 DISTNAME=	fspclient
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A client for the fsp service
 
 WRKSRC=		${WRKDIR}/fspclient
 GNU_CONFIGURE=	yes

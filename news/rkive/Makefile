@@ -2,7 +2,7 @@
 # Date created:		03 Jul 1995
 # Whom:			torsten@FreeBSD.org
 #
-# $FreeBSD: ports/news/rkive/Makefile,v 1.10 2000/06/07 22:41:55 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rkive
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A USENET newsgroup archiver
 
 NO_CDROM=	"Don't make money from it"
 MAN1=		rkive.1 article.1 ckconfig.1

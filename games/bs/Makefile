@@ -2,7 +2,7 @@
 # Date created:				11 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bs/Makefile,v 1.7 2001/02/03 15:00:14 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bs
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.tuxedo.org/~esr/bs/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Battleships solitaire game with a color interface
 
 ALL_TARGET=	# empty
 MAN6=		bs.6

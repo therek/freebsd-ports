@@ -2,7 +2,7 @@
 # Date created:		13 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/greed/Makefile,v 1.14 2000/04/12 05:31:10 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	greed
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.public.asu.edu/~arturner/greed/
 DISTNAME=	greed.81p
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A utility for downloading files with resume capabilities
 
 ALL_TARGET=	freebsd
 WRKSRC=		${WRKDIR}/greed.81p

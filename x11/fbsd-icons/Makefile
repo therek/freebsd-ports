@@ -2,7 +2,7 @@
 # Date created:		Sat Jun 14 09:43:24 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11/fbsd-icons/Makefile,v 1.10 2001/01/03 22:25:24 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fbsd-icons
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Collection of icons related to the FreeBSD project
 
 USE_X_PREFIX=	yes
 NO_BUILD=	yes

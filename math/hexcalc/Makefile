@@ -2,7 +2,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/hexcalc/Makefile,v 1.14 2000/04/15 15:13:48 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hexcalc
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	..tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A multi-radix calculator for x11
 
 USE_IMAKE=	yes
 MAN1=		hexcalc.1

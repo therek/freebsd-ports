@@ -2,7 +2,7 @@
 # Date created:		30 Sep 1994
 # Whom:			swallace
 #
-# $FreeBSD: ports/audio/xcdplayer/Makefile,v 1.14 2001/01/27 05:40:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcdplayer
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	CD player for X
 
 USE_IMAKE=	yes
 MAN1=		xcdplayer.1

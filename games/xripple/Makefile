@@ -2,7 +2,7 @@
 # Date created:				6 Oct 1996
 # Whom:					oly
 #
-# $FreeBSD: ports/games/xripple/Makefile,v 1.12 2000/04/21 22:07:31 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xripple
@@ -17,6 +17,8 @@ MASTER_SITES=	ftp://crydee.sai.msu.ru/zeus/X11/contrib/ \
 		ftp://ftp.gwdg.de/pub/linux/tux/x/enlightenment/enlightenment/misc/ \
 		ftp://ftp.pconline.com/users/gjerde/enlightenment/
 DISTNAME=	${PORTNAME}
+
+PORTCOMMENT=	X program to make bottom of screen ripple like a pool of water
 
 USE_IMAKE=	yes
 ALL_TARGET=	xripple

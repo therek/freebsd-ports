@@ -2,7 +2,7 @@
 # Date created:         Tue Aug 15 17:57:48 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/xlispstat/Makefile,v 1.12 2000/04/23 22:59:41 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xlispstat
@@ -16,6 +16,8 @@ MASTER_SITES=	ftp://ftp.stat.umn.edu/pub/xlispstat/current/   \
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./-/g}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A statistics/X11 based lisp interpreter
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes

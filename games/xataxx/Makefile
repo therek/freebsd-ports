@@ -2,7 +2,7 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xataxx/Makefile,v 1.8 2000/10/14 19:45:42 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xataxx
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Strategy game of position and movement for X Window System
 
 USE_IMAKE=	yes
 MAN6=		xataxx.6

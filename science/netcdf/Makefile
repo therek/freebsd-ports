@@ -2,7 +2,7 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/netcdf/Makefile,v 1.9 2001/02/08 18:29:39 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netcdf
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://unidata.ucar.edu/pub/netcdf/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Library for machine-independent, array-oriented data access
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 

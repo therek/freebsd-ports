@@ -2,7 +2,7 @@
 # Date created:         11 December 1999
 # Whom:                 Yuichi Narahara
 #
-# $FreeBSD: ports/games/sxsame/Makefile,v 1.6 2000/08/07 08:18:36 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sxsame
@@ -14,6 +14,8 @@ MASTER_SITES=   ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/ \
 		ftp://mirror.nucba.ac.jp/mirror/JG/JG-0.9.1/sources/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A tile-removing puzzle game for the X Window system
 
 USE_IMAKE=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		23 July 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xgrasp/Makefile,v 1.11 2000/04/14 10:47:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgrasp
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Display GL animations on X screen
 
 USE_IMAKE=	yes
 MAN1=		glib.1 xgrasp.1

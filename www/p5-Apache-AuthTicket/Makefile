@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:57:53 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthTicket/Makefile,v 1.3 2001/03/10 03:37:18 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AuthTicket
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl modules that implement a cookie-based authentication system
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Apache/AuthCookie.pm:${PORTSDIR}/www/p5-Apache-AuthCookie \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI \

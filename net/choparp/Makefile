@@ -2,7 +2,7 @@
 # Date created:		7 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/net/choparp/Makefile,v 1.4 2000/04/09 18:10:24 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	choparp
@@ -11,6 +11,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://delegate.uec.ac.jp:8081/club/mma/~tree/soft/choparp/
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Simple proxy arp daemon
 
 MAN8=		choparp.8
 MANCOMPRESSED=	maybe

@@ -2,7 +2,7 @@
 # Date created:		28 Dec 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/archivers/gshar+gunshar/Makefile,v 1.16 1999/12/25 19:01:10 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sharutils
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	sharutils
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Allow packing and unpacking of shell archives
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g --disable-uucode --disable-nls

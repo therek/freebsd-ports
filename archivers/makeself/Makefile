@@ -2,7 +2,7 @@
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.7 2001/05/22 17:21:42 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	makeself
@@ -12,6 +12,8 @@ MASTER_SITES=	http://linuxberg.tele.net/files/console/file/
 EXTRACT_SUFX=	.gz.sh
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A neat script to make self-extracting archives
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

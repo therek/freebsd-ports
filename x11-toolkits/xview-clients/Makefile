@@ -2,7 +2,7 @@
 # Date created:         22 November 1994
 # Whom:                 ljo (orig)
 #
-# $FreeBSD: ports/x11-toolkits/xview-clients/Makefile,v 1.23 2000/06/09 21:59:15 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xview-clients
@@ -15,6 +15,8 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS .
 DISTNAME=	xview3.2p1-X11R6
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	OpenLook applications and man pages
 
 DEPENDS=	${PORTSDIR}/x11-toolkits/xview:install
 

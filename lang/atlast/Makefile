@@ -2,7 +2,7 @@
 # Date created:         26 Ag 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/lang/atlast/Makefile,v 1.6 2001/08/23 20:21:50 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	atlast
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.fourmilab.ch/atlast/ \
 		http://www.fourmilab.to/atlast/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Autodesk Threaded Language Application System Toolkit
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/atlast ${PREFIX}/bin

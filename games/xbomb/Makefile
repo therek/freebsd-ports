@@ -2,7 +2,7 @@
 # Date created:         20 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xbomb/Makefile,v 1.9 2000/08/16 06:06:40 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbomb
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.gedanken.demon.co.uk/download-xbomb/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Minesweeper with a couple of grid types
 
 USE_X_PREFIX=	yes
 MAN6=		xbomb.6

@@ -2,7 +2,7 @@
 # Date created:		22 September 1999
 # Whom:			Markus Holmberg <saska@acc.umu.se>
 #
-# $FreeBSD: ports/audio/mpmf20/Makefile,v 1.4 2000/02/28 00:55:00 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpmf20
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	File transfer tool for the MPMan MP-F20 portable MP3-player
 
 MAKEFILE=	makefile
 

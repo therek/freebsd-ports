@@ -2,7 +2,7 @@
 # Date created:		Thu May  8 16:41:01 EST 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/games/connect4/Makefile,v 1.8 2000/10/29 06:31:32 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	connect4
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A curses version of the classic game
 
 BUILD_DEPENDS=	gunshar:${PORTSDIR}/archivers/gshar+gunshar
 

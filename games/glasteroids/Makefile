@@ -2,7 +2,7 @@
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/glasteroids/Makefile,v 1.9 2000/08/17 06:22:09 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glasteroids
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.honors.montana.edu/~jjc/Glasteroids/
 DISTNAME=	Glasteriods
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	3D Asteroids game for X Window System
 
 MAKEFILE=	Makefile.FreeBSD
 

@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Algorithm-MDiff/Makefile,v 1.1 2001/01/03 23:15:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Algorithm-MDiff
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Algorithm
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface to calculate m-difference between two objects
 
 PERL_CONFIGURE=	yes
 

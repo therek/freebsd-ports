@@ -3,7 +3,7 @@
 # Date created:				2000 Feb. 13
 # Whom:					Abel Chow <abel_chow@yahoo.com>
 #
-# $FreeBSD: ports/devel/cproto/Makefile,v 1.4 2000/12/29 01:10:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cproto
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cproto
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Generate C function prototypes and convert function definitions
 
 GNU_CONFIGURE=	YES
 MAN1=		cproto.1

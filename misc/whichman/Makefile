@@ -2,7 +2,7 @@
 # Date created:				6 June 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/misc/whichman/Makefile,v 1.2 2000/06/23 13:22:00 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	whichman
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	apps/doctools
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Approximate matching utilities to search for manpages and files
 
 MAN1=		whichman.1 ftff.1 ftwhich.1
 

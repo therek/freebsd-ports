@@ -2,7 +2,7 @@
 # Date created:			09 Nov 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/cap/Makefile,v 1.9 2000/04/09 18:10:22 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cap
@@ -24,6 +24,8 @@ PATCHFILES=	cap60.patch193 cap60.patch194 cap60.patch195 cap60.patch196 \
 		cap60.patch197 cap60.patch198
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Columbia AppleTalk Package for UNIX
 
 NO_CDROM=	"Don't sell for profit"
 WRKSRC=		${WRKDIR}/cap60

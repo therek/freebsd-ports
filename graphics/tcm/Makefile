@@ -2,7 +2,7 @@
 # Date created:				18 July 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/tcm/Makefile,v 1.1 2001/08/18 06:39:47 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcm
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.cs.utwente.nl/pub/tcm/ \
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	The Toolkit for Conceptual Modeling, create diagrams/tables/trees
 
 USE_BISON=	yes
 USE_MOTIF=	yes

@@ -2,7 +2,7 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/x11/props/Makefile,v 1.11 2000/06/22 19:15:26 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	props
@@ -12,6 +12,8 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	The OpenLook props application
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

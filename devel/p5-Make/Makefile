@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 12:14:41 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Make/Makefile,v 1.2 2001/03/01 06:38:16 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Make
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Make
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing 'make' and script
 
 PERL_CONFIGURE=	yes
 

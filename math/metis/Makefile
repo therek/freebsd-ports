@@ -2,7 +2,7 @@
 # Date created:         26 Oct 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/metis/Makefile,v 1.5 1999/08/25 07:11:54 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	metis
@@ -11,6 +11,8 @@ CATEGORIES=	math
 MASTER_SITES=	http://www-users.cs.umn.edu/~karypis/metis/metis/files/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A package for unstructured graph partitioning
 
 ALL_TARGET=
 

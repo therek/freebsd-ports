@@ -3,7 +3,7 @@
 # Date created:                Jan 29, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/pvm++/Makefile,v 1.2 2001/02/13 18:07:11 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pvm++
@@ -15,6 +15,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	${PORTNAME:S:+:-plus:g}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A C++-Library for PVM
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/pvm:${PORTSDIR}/net/pvm
 

@@ -2,7 +2,7 @@
 # Date created:				1 May 1997
 # Whom: Andrey Zakhvatov <andy@icc.surw.chel.su>
 #
-# $FreeBSD: ports/games/ztrack/Makefile,v 1.4 2000/04/14 12:28:40 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ztrack
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Simple ncurses based pseudo-3D driving game
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

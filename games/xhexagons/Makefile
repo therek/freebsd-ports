@@ -2,7 +2,7 @@
 # Date created:				20 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xhexagons/Makefile,v 1.5 2000/04/14 12:27:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xhexagons
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Hexagons puzzle (similar to Fifteen Puzzle) for X Window System
 
 WRKSRC=		${WRKDIR}/xhexagons
 USE_IMAKE=	yes

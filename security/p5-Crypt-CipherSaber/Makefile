@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:03:49 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-CipherSaber/Makefile,v 1.2 2001/03/01 06:37:13 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CipherSaber
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module providing an OO interface to CipherSaber encryption
 
 PERL_CONFIGURE=	yes
 

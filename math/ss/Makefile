@@ -2,7 +2,7 @@
 # Date created:				5 January 1997
 # Whom:					Pedro Giffuni
 #
-# $FreeBSD: ports/math/ss/Makefile,v 1.9 2001/08/23 20:21:51 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ss
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.irus.rri.on.ca/~amulder/ss/ \
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A curses-based SpreadSheet program
 
 WRKSRC=		${WRKDIR}/ss_133
 MAN1=		ss.1 pss.1

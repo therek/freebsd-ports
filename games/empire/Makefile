@@ -2,7 +2,7 @@
 # Date created:				13 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/empire/Makefile,v 1.10 2001/02/03 15:02:58 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	empire
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.tuxedo.org/~esr/vms-empire/
 DISTNAME=	vms-empire-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Solitaire empire game 'VMS Empire'
 
 MAN6=		empire.6
 

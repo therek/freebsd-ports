@@ -2,7 +2,7 @@
 # Date created:		24 April 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/chord/Makefile,v 1.9 2000/04/14 08:45:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	chord
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Produce PS sheet-music from text input
 
 MAN1=		a2crd.1 chord.1
 MANCOMPRESSED=	yes

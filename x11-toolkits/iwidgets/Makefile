@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/x11-toolkits/iwidgets/Makefile,v 1.7 2001/08/17 15:13:59 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iwidgets
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=incrtcl
 DISTNAME=	itcl3.2
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	[incr Widgets] (A.K.A. "iwidgets")
 
 LIB_DEPENDS=	itk32.1:${PORTSDIR}/x11-toolkits/itk
 

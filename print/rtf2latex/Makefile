@@ -2,7 +2,7 @@
 # Date created:		25 Jan 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/rtf2latex/Makefile,v 1.11 2000/04/09 17:50:35 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rtf2latex
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	support/rtf2latex
 DISTNAME=	rtf2LaTeX.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A filter that converts RTF (MS\'s Rich Text Format) into LaTeX
 
 WRKSRC=		${WRKDIR}/rtf2LaTeX
 

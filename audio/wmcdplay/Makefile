@@ -2,7 +2,7 @@
 # Date created:		7 December 1998
 # Whom:			Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/audio/wmcdplay/Makefile,v 1.8 2000/08/03 09:22:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmcdplay
@@ -13,6 +13,8 @@ DISTNAME=	wmcdplay-1.0-beta1
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A CD player for the WindowMaker dock
 
 WRKSRC=		${WRKDIR}/wmcdplay
 

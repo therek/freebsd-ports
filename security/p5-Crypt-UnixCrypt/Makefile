@@ -2,7 +2,7 @@
 # Date created:				Sun Jan 14 01:10:08 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Crypt-UnixCrypt/Makefile,v 1.1 2001/01/14 06:13:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-UnixCrypt
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Crypt
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module implementing crypt(3) function
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes

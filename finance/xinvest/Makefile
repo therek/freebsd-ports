@@ -2,7 +2,7 @@
 # Date created:		1 Ag 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/deskutils/xinvest/Makefile,v 1.8 2000/11/07 23:27:59 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xinvest
@@ -11,6 +11,8 @@ CATEGORIES=	deskutils
 MASTER_SITES=	http://sunsite.dk/xinvest/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A personal finance tracking and performance tool
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

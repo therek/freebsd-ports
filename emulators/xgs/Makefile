@@ -2,7 +2,7 @@
 # Date created:		2nd May, 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/emulators/xgs/Makefile,v 1.10 2000/08/25 13:14:34 kevlo Exp $
+# $FreeBSD$
 #
 # This is the stable release of the xgs emulator. Sound support is
 # currently broken.
@@ -16,6 +16,8 @@ DISTFILES=	xgs050.tgz ROM01.ZIP
 EXTRACT_ONLY=	xgs050.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Apple IIGS emulator stable release
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 

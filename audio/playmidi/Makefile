@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1995
 # Whom:			ache
 #
-# $FreeBSD: ports/audio/playmidi/Makefile,v 1.13 2000/04/08 21:24:12 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	playmidi
@@ -11,6 +11,8 @@ CATEGORIES=	audio
 MASTER_SITES=	http://people.nl.linux.org/~diz/playmidi/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	MIDI player
 
 IS_INTERACTIVE=	YES	# asks what devices you want to support
 HAS_CONFIGURE=	YES

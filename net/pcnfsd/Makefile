@@ -2,7 +2,7 @@
 # Date created:		Oct 6, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/net/pcnfsd/Makefile,v 1.11 1999/08/30 14:23:46 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pcnfsd
@@ -13,6 +13,8 @@ DISTNAME=	pcnfsd.93.02.16
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Sun PC NFS authentication and printing server
 
 MAN8=		pcnfsd.8
 MANCOMPRESSED=	maybe

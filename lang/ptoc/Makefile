@@ -2,7 +2,7 @@
 # Date created:				10 December 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/lang/ptoc/Makefile,v 1.12 2000/04/12 06:20:05 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ptoc
@@ -11,6 +11,8 @@ CATEGORIES=	lang
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	ANSI/Turbo Pascal to C/C++ converter
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

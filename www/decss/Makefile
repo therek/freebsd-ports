@@ -2,7 +2,7 @@
 # Date Created:			20 Feb 2000
 # Whom:				Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/decss/Makefile,v 1.5 2001/02/05 15:33:18 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	decss
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.pigdog.org/decss/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Strip cascading style sheets from webpages
 
 WRKSRC=		${WRKDIR}/source
 

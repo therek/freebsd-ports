@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 03:55:39 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Authen-Ticket/Makefile,v 1.1 2001/01/01 09:02:18 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Authen-Ticket
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Authen
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module providing the framework for implementing a ticketing system
 
 PERL_CONFIGURE=	yes
 

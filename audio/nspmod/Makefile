@@ -2,7 +2,7 @@
 # Date created:				1 Jun 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/audio/nspmod/Makefile,v 1.5 2000/04/08 21:24:09 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nspmod
@@ -11,6 +11,8 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.jeton.or.jp/users/toru/www/orgsoft/nspmod/	\
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
+
+PORTCOMMENT=	MOD/S3M/MTM tracker that does it\'s own DSP, uses VoxWare v2.90+
 
 MAN1=		nspmod.1
 

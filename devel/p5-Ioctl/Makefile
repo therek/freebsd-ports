@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:31:51 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Ioctl/Makefile,v 1.10 2001/01/03 23:31:24 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Ioctl
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Ioctl/JPRIT
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that provides a way to get the value of C ioctl constants
 
 PERL_CONFIGURE=	yes
 

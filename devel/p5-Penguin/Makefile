@@ -2,7 +2,7 @@
 # Date created:				May 28th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Penguin/Makefile,v 1.7 2000/10/23 21:02:54 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Penguin
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Penguin
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A framework for passing digitally signed perl5 code between machines
 
 RUN_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 

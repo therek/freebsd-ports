@@ -2,7 +2,7 @@
 # Date created:		20 Apr 1998
 # Whom:			J Han <hjh@best.com>
 #
-# $FreeBSD: ports/x11-clocks/t3d/Makefile,v 1.8 2000/10/21 13:15:36 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	t3d
@@ -13,6 +13,8 @@ DISTNAME=	t3d
 EXTRACT_SUFX=	.shar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Clock using flying balls to display the time
 
 EXTRACT_CMD=		${GZIP_CMD}
 EXTRACT_BEFORE_ARGS=	-dc

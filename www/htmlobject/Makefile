@@ -3,7 +3,7 @@
 # Date created:			Jul 30, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/www/htmlobject/Makefile,v 1.1 2001/07/30 16:48:45 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	htmlobject
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	html_object-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	HTML Document Object
 
 PERL_CONFIGURE=	yes
 

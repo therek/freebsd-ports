@@ -2,7 +2,7 @@
 # Date created:         13 Feb 1997
 # Whom:                 Julian Assange
 #
-# $FreeBSD: ports/games/lincity/Makefile,v 1.10 2000/09/16 17:54:40 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lincity
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/linux/games/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Rich city simulation game for X
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 

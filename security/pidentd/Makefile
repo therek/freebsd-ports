@@ -2,7 +2,7 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.35 2001/02/05 16:00:18 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pidentd
@@ -16,6 +16,8 @@ PATCHFILES=	pidentd-2.8.5-ipv6-1.5.diff.gz
 PATCH_DIST_STRIP=	-p2
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An RFC1413 identification server
 
 ALL_TARGET=	freebsd
 MAKE_ENV=	REALPREFIX=${PREFIX}

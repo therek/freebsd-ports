@@ -2,7 +2,7 @@
 # Date created:		9 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/sysutils/xdu/Makefile,v 1.13 2000/04/22 10:13:55 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdu
@@ -13,6 +13,8 @@ MASTER_SITES=	http://sd.wareonearth.com/~phil/xdu/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Graphically display output of du
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

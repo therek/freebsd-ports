@@ -2,7 +2,7 @@
 # Date created:		19 February 1995
 # Whom:			hsu
 #
-# $FreeBSD: ports/graphics/vcg/Makefile,v 1.11 2000/04/14 10:47:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vcg
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 EXTRACT_SUFX=	.r3.17.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A Visualization Tool for compiler graphs
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 

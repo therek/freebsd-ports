@@ -2,7 +2,7 @@
 # Date created:         16 Dec 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/rispell/Makefile,v 1.14 2001/02/04 23:15:40 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ispell
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 DISTNAME=	rispell
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Russian (KOI8-R) dictionary for ISPELL
 
 # Very dirty implementation, use rus-ispell port instead
 NO_LATEST_LINK= yes

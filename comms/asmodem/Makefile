@@ -2,7 +2,7 @@
 # Date created:		11 May 1998
 # Whom:			Sean Cole <scole@aracnet.com>
 #
-# $FreeBSD: ports/comms/asmodem/Makefile,v 1.7 2000/04/08 23:22:26 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asmodem
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	apps/asmodem
 DISTNAME=	${PORTNAME}-0.6-1
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Displays the modem status, designed to match AfterStep
 
 USE_IMAKE=	yes
 USE_XPM=	yes

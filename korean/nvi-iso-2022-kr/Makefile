@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/korean/nvi-iso-2022-kr/Makefile,v 1.19 2001/01/09 05:57:06 itojun Exp $
+# $FreeBSD$
 #
 
 PKGNAMESUFFIX=	-iso2022kr
@@ -13,6 +13,8 @@ COMMENT=	${.CURDIR}/pkg-comment
 CATEGORIES=	korean editors
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	Clone of vi/ex, with multilingual patch, default settings for iso-2022-kr
 
 CONFIGURE_ARGS=        --enable-multibyte=iso-2022-kr --program-prefix=n
 

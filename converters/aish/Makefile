@@ -2,7 +2,7 @@
 # Date created:		01 Aug 1998
 # Whom:			Masanori Kiriake <seiken@nbs.co.jp>
 #
-# $FreeBSD: ports/converters/aish/Makefile,v 1.5 2000/04/08 23:24:29 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aish
@@ -12,6 +12,8 @@ MASTER_SITES=	http://hp.vector.co.jp/authors/VA004474/etc/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}u
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Ish/uuencode/Base64 converter
 
 post-install:
 .if !defined(NOPORTDOCS)

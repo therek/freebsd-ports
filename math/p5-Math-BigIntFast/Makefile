@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 11:30:25 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-BigIntFast/Makefile,v 1.1 2001/01/03 23:38:54 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Math-BigIntFast
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Math
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module wrapper for Bit::Vector to provide big integer math
 
 BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Bit/Vector.pm:${PORTSDIR}/math/p5-Bit-Vector
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -2,7 +2,7 @@
 # Date created:		17 March 1998
 # Whom:			J Han <hjh@photino.com>
 #
-# $FreeBSD: ports/x11-wm/lwm/Makefile,v 1.10 2001/02/05 21:05:41 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lwm
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.boognish.org.uk/enh/lwm/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A lightweight window manager
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		20 July 1998
 # Whom:			Vladimir Kushnir <kushn@mail.kar.net>
 #
-# $FreeBSD: ports/sysutils/wmavgload/Makefile,v 1.10 2001/05/25 19:44:57 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmavgload
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_WINDOWMAKER}
 MASTER_SITE_SUBDIR=	contrib/srcs/utils
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Another WindowMaker load gauge
 
 USE_IMAKE=	yes
 USE_XPM=	yes

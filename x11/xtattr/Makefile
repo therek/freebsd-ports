@@ -2,7 +2,7 @@
 # Date created:		6 August 1997
 # Whom:			jeff@cetlink.net
 #
-# $FreeBSD: ports/x11/xtattr/Makefile,v 1.6 2000/06/09 21:59:16 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtattr
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A tool for changing xterm attributes
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAN1=		xtattr.1

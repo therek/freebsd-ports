@@ -3,7 +3,7 @@
 # Date created:			Feb 28, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/biology/genpak/Makefile,v 1.3 2001/08/09 17:37:03 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	genpak
@@ -14,6 +14,8 @@ DISTNAME=	gp-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GP is a set of small utilities to manipulate DNA sequences
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		png.5:${PORTSDIR}/graphics/png

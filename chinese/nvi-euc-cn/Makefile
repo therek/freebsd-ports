@@ -2,13 +2,15 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.20 2000/10/08 10:19:21 asami Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese editors
 PKGNAMESUFFIX=	-euccn
 
 MAINTAINER=	ports@freebsd.org
+
+PORTCOMMENT=	A clone of vi/ex, with multilingual patch, default settings for euc-cn
 
 CONFIGURE_ARGS+=	--enable-multibyte=euc-cn --program-prefix=n
 

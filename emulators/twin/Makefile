@@ -2,7 +2,7 @@
 # Date created:		5 June 1999
 # Whom:			Pedro F. Giffuni
 #
-# $FreeBSD: ports/emulators/twin/Makefile,v 1.8 2001/03/21 22:44:00 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	twin
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.willows.com/pub/twin/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Willows Toolkit for migrating and developing Windows applications
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

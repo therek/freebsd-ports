@@ -2,7 +2,7 @@
 # Date created:				2 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/affenspiel/Makefile,v 1.6 2000/04/02 00:56:52 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	affenspiel
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Little puzzle game with monkey for X Window System
 
 WRKSRC=		${WRKDIR}/affenspiel
 USE_X_PREFIX=	yes

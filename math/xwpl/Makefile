@@ -2,7 +2,7 @@
 # Date created:		31 Nov 97
 # Whom:			Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/xwpl/Makefile,v 1.5 2000/04/14 07:20:58 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwpl
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://pascal.math.yale.edu/pub/wavelets/software/xwpl/other-versio
 DISTNAME=	${PKGNAME}-freebsd
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	The X Wavelet Packet Laboratory
 
 ONLY_FOR_ARCHS=	i386
 

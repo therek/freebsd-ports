@@ -2,7 +2,7 @@
 # Date created:         23 November 1994
 # Whom:                 ljo
 #
-# $FreeBSD: ports/print/afm/Makefile,v 1.13 2000/04/09 17:49:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	afm
@@ -13,6 +13,8 @@ DISTNAME=	afm
 EXTRACT_SUFX=   -tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Adobe Font Metrics
 
 pre-patch:
 	@${RM} -rf ${WRKSRC}/RCS

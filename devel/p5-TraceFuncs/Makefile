@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.9 2000/10/23 21:02:58 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	TraceFuncs
@@ -14,6 +14,8 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	traceFunc-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A perl5 module to trace function calls as they happen
 
 PERL_CONFIGURE=	YES
 

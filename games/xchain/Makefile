@@ -2,7 +2,7 @@
 # Date created:				13 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xchain/Makefile,v 1.8 2000/04/14 12:27:10 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xchain
@@ -12,6 +12,8 @@ MASTER_SITES=	http://linux.tucows.com/files/x11/entertain/
 DISTNAME=	${PORTNAME}_1.0-2
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Chain Reaction, a strategy game for 2-4 players
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

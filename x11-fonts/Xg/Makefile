@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/x11-fonts/Xg/Makefile,v 1.11 2000/07/22 07:33:53 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libXgFonts
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cs.usyd.edu.au/matty/unicode/
 DISTNAME=	libXg.utf.fonts
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	UNICODE fonts for use with 9term and sam
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

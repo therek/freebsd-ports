@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/omega/Makefile,v 1.8 2001/01/16 17:30:33 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	omega
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.alcyone.com/binaries/omega/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A complex rogue-style game of dungeon exploration
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 ALL_TARGET=	# empty

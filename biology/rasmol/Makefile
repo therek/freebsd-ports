@@ -2,7 +2,7 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/rasmol/Makefile,v 1.11 2001/09/06 21:25:13 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rasmol
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.bernstein-plus-sons.com/software/RasMol_2.7.2/
 DISTNAME=	RasMol
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Fast Molecular Visualization Program
 
 WRKSRC=		${WRKDIR}/RasMol_2.7.2/src
 

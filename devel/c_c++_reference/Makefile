@@ -2,7 +2,7 @@
 # Date created:        8 March 2000
 # Whom:                imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/devel/c_c++_reference/Makefile,v 1.3 2000/04/14 16:02:30 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	c_c++_reference
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://129.187.206.68/pub/unix/ide/KDevelop/documentation/ \
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	C/C++ reference manual for KDevelop
 
 RUN_DEPENDS=	kdevelop:${PORTSDIR}/devel/kdevelop
 

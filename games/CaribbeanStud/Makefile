@@ -2,7 +2,7 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.6 2000/07/14 09:51:12 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		CaribbeanStud
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games
 DISTNAME=		CS
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=		Caribbean Stud gambling game for X Window System
 
 MAKEFILE=		Xmakefile
 USE_MOTIF=		yes

@@ -2,7 +2,7 @@
 # Date created:		15 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xlife/Makefile,v 1.17 2000/04/14 12:27:37 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xlife
@@ -13,6 +13,8 @@ DISTNAME=	xlife
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	John Horton Conway\'s Game of Life
 
 USE_IMAKE=	yes
 INSTALL_TARGET=	install install.patterns

@@ -2,7 +2,7 @@
 # Date created:				30 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xoj/Makefile,v 1.5 2000/04/14 12:27:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xoj
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	X11/demos
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	O. J. Simpson Simulator root window demo
 
 USE_XPM=	yes
 USE_IMAKE=	yes

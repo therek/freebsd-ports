@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:16:32 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-String-RexxParse/Makefile,v 1.1 2001/01/03 23:45:17 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	String-RexxParse
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	String
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module that provides an interface to REXX parsing routines
 
 PERL_CONFIGURE=	yes
 

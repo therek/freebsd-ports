@@ -2,7 +2,7 @@
 # Date created:				6 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/miscom/Makefile,v 1.3 2000/03/29 07:18:09 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		miscom
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	games/arcade
 DISTNAME=		${PORTNAME}
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=	Atari\'s "Missile Command" clone
 
 ALL_TARGET=
 WRKSRC=			${WRKDIR}/miscom

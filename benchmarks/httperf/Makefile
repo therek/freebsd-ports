@@ -2,7 +2,7 @@
 # Date created:		28 Jul 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/httperf/Makefile,v 1.8 2000/09/25 12:21:41 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	httperf
@@ -11,6 +11,8 @@ CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A tool for measuring webserver performance
 
 USE_GMAKE=	yes
 MAN1=		httperf.1

@@ -2,7 +2,7 @@
 # Date created:                      6 Apr 1996
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/astro/sattrack/Makefile,v 1.13 2000/06/09 21:58:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sattrack
@@ -10,6 +10,8 @@ PORTVERSION=	3.1.6
 CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
+
+PORTCOMMENT=	Real-time satellite tracking and orbit propagation program
 
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/SatTrack-${PORTVERSION}/src

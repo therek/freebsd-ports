@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:06:35 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-WWW-Robot/Makefile,v 1.1 2001/01/03 23:55:36 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	WWW-Robot
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	WWW
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface to a generic web traversal engine
 
 BUILD_DEPENDS=	${SITE_PERL}/HTML/Element.pm:${PORTSDIR}/www/p5-HTML-Tree \
 		${SITE_PERL}/${PERL_ARCH}/HTML/Parser.pm:${PORTSDIR}/www/p5-HTML-Parser \

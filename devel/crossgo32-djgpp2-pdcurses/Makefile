@@ -2,7 +2,7 @@
 # Date created:		Sun Jun 22 16:57:39 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au)
 #
-# $FreeBSD: ports/devel/crossgo32-djgpp2-pdcurses/Makefile,v 1.9 2000/04/11 21:27:30 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crossgo32-djgpp2-pdcurses
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.simtel.net/pub/simtelnet/gnu/djgpp/v2tk/ \
 DISTNAME=	pdc22
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	PD curses for crossgo32 crosscompiler with djgpp v2 libraries
 
 RUN_DEPENDS=	i386-go32-stubify:${PORTSDIR}/devel/crossgo32-djgpp2
 

@@ -2,7 +2,7 @@
 # Date created:				26th December 2000
 # Whom:	      				Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI-Minimal/Makefile,v 1.2 2001/02/05 15:33:39 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CGI-Minimal
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Extremely lightweight CGI processing package
 
 PERL_CONFIGURE=	yes
 

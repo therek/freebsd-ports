@@ -3,7 +3,7 @@
 # Date created:			May 20, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/net/whatmask/Makefile,v 1.1 2001/05/20 11:23:36 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	whatmask
@@ -12,6 +12,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://downloads.laffeycomputer.com/current_builds/whatmask/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Easily convert between three common subnet mask notations
 
 GNU_CONFIGURE=	yes
 

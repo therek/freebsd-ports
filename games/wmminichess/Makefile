@@ -2,7 +2,7 @@
 # Date created:		24 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/wmminichess/Makefile,v 1.4 2000/06/22 05:51:59 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmminichess
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.electricrain.com/edavis/miniCHESS/
 DISTNAME=	miniCHESS-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	WindowMaker chess dockapp game
 
 RUN_DEPENDS=	${LOCALBASE}/bin/gnuchessx:${PORTSDIR}/games/gnuchess
 

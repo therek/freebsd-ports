@@ -2,7 +2,7 @@
 # Date Created:				13 Oct 2000
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-Tagset/Makefile,v 1.2 2000/10/29 03:31:00 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Tagset
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.ORG
+
+PORTCOMMENT=	Some useful data table in parsing HTML
 
 PERL_CONFIGURE=	yes
 

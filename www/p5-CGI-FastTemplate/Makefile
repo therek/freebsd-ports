@@ -2,7 +2,7 @@
 # Date created:				27 Feb 2000
 # Whom:	      				Vanilla I. Shu <vanilla@FreeBSD.ORG>
 #
-# $FreeBSD: ports/www/p5-CGI-FastTemplate/Makefile,v 1.5 2001/02/05 15:33:39 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	CGI-FastTemplate
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module for manage templates and parses templates
 
 PERL_CONFIGURE=	yes
 

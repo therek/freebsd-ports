@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/rubix/Makefile,v 1.4 2000/06/22 05:51:58 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rubix
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://sed.free.fr/rubix/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Another rubik\'s cube game with a rather interesting interface
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

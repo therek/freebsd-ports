@@ -2,7 +2,7 @@
 # Date created:				17 December 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/benchmarks/nbench/Makefile,v 1.4 2000/04/08 22:04:17 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nbench
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	system/benchmark
 DISTNAME=	${PORTNAME}-byte-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	BYTE Magazine\'s native benchmarks
 
 ALL_TARGET=	# empty
 

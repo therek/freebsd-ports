@@ -2,7 +2,7 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/seabattle/Makefile,v 1.4 2000/04/14 12:26:30 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	seabattle
@@ -14,6 +14,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	games/strategy
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A curses based battleship type game
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/seabattle ${PREFIX}/bin

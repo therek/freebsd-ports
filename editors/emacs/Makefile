@@ -2,7 +2,7 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs/Makefile,v 1.45 2000/04/17 00:17:23 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emacs
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GNU editing macros
 
 EMACS_VERSION=	19.34
 CONFIGURE_TARGET=	${MACHINE_ARCH}--freebsd

@@ -2,7 +2,7 @@
 # Date created:		1 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/xwatchwin/Makefile,v 1.2 2000/09/02 11:25:09 kris Exp $
+# $FreeBSD$
 
 PORTNAME=	xwatchwin
 PORTVERSION=	1.1.1
@@ -14,6 +14,8 @@ DISTNAME=	xwatchwin
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Watch a window on another X server
 
 MAN1=		xwatchwin.1
 

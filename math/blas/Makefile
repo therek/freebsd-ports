@@ -2,7 +2,7 @@
 # Date created:         27 October 1994
 # Whom:                 ljo
 #
-# $FreeBSD: ports/math/blas/Makefile,v 1.27 2000/06/16 08:18:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	blas
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Basic Linear Algebra, level 1, 2, and 3
 
 INSTALLS_SHLIB=	yes
 NO_WRKSUBDIR=	yes

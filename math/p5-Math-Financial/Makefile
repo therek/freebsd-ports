@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 11:00:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-Financial/Makefile,v 1.1 2001/01/03 23:39:37 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Math-Financial
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Math
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module containing common functions for loans and annuities
 
 PERL_CONFIGURE=	yes
 

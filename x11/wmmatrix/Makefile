@@ -2,7 +2,7 @@
 # Date created:		13 October 1999
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.4 2000/08/03 09:28:45 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmatrix
@@ -12,6 +12,8 @@ MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmMatrix-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A DockApp that runs a version of the xmatrix screenhack
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

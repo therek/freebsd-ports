@@ -2,7 +2,7 @@
 # Date created:         31 August 1999
 # Whom:                 Johan Kerckaert <kirk@bricsnet.com>
 #
-# $FreeBSD: ports/devel/picprog/Makefile,v 1.3 2001/06/12 15:52:45 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	picprog
@@ -11,6 +11,8 @@ CATEGORIES=	devel
 MASTER_SITES=	http://hyvatti.iki.fi/~jaakko/pic/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Serial port pic16c84 programmer
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

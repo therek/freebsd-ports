@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:54:29 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Mac-FileSpec-Unixish/Makefile,v 1.1 2001/01/03 23:33:00 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mac-FileSpec-Unixish
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Mac
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl module with functions to manipluate pathspecs in Unixish style
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AddHostPath/Makefile,v 1.1 2001/01/03 23:21:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Apache-AddHostPath
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Perl interface for transforming a requested URI based on host/port
 
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		31 October 1994
 # Whom:			ljo
 #
-# $FreeBSD: ports/math/eispack/Makefile,v 1.27 2000/06/16 21:51:32 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eispack
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/eispack/ \
 DISTFILES=	${SRCS:.f=.f.gz}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Eigenvalue system package
 
 LIB_DEPENDS=	blas.1:${PORTSDIR}/math/blas
 

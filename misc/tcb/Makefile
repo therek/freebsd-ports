@@ -2,7 +2,7 @@
 # Date created:				1 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/tcb/Makefile,v 1.4 2000/03/29 07:19:01 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		tcb
@@ -13,6 +13,8 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	utils/file
 
 MAINTAINER=		ports@FreeBSD.org
+
+PORTCOMMENT=		File viewer for terminal
 
 USE_GMAKE=		yes
 

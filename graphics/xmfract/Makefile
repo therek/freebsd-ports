@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/xmfract/Makefile,v 1.8 2000/04/23 22:59:38 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmfract
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	graphics
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	The dos based 'fractint' with an X/Motif front end
 
 USE_MOTIF=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:				29 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.14 2000/06/22 05:52:01 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Hermes
@@ -11,6 +11,8 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://dark.x.dtu.dk/~mbn/clanlib/download/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Fast pixel formats conversion library
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

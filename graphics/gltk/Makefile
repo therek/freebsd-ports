@@ -2,7 +2,7 @@
 # Date created:		16 Feb 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gltk/Makefile,v 1.3 2000/08/03 09:24:47 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gltk
@@ -14,6 +14,8 @@ DISTNAME=	libtk
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	An OpenGL/Tk interface
 
 USE_IMAKE=	yes
 USE_MESA=	yes

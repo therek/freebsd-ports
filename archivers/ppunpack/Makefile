@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.3 2000/07/25 01:31:33 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ppunpack
@@ -14,6 +14,8 @@ DISTNAME=	ppsmall-${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Decompresses Amiga PowerPacker files
 
 RESTRICTED=	"No commercial redistribution"
 NO_CDROM=	${RESTRICTED}

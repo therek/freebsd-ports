@@ -2,7 +2,7 @@
 # Date created:		21 August 1994
 # Whom:			Trefor S. <trefor@flevel.co.uk>
 #
-# $FreeBSD: ports/www/fxhtml/Makefile,v 1.6 2000/04/10 00:05:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fxhtml
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.flevel.co.uk/pub/fxhtml/
 DISTNAME=	${PORTNAME}-freebsd-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Server side extension to HTML eliminating the need for CGI scripts
 
 pre-install:
 	${MKDIR} ${PREFIX}/www/cgi-bin ${PREFIX}/www/data

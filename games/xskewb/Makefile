@@ -2,7 +2,7 @@
 # Date created:				25 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xskewb/Makefile,v 1.9 2000/04/14 12:28:20 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xskewb
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Skewb puzzle (similar to Rubik\'s Cube) for X Window
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

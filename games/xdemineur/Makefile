@@ -2,7 +2,7 @@
 # Date created:		13 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xdemineur/Makefile,v 1.8 2000/08/03 09:24:04 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdemineur
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Another minesweeper game for the X Window System
 
 USE_IMAKE=	yes
 USE_XPM=	yes

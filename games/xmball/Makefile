@@ -2,7 +2,7 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xmball/Makefile,v 1.6 2000/04/14 12:27:41 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmball
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Masterball puzzle for X Window System
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes

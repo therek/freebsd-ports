@@ -2,7 +2,7 @@
 # Date created:		01 Jan 2001
 # Whom:			Assar Westerlund <assar@freebsd.org>
 #
-# $FreeBSD: ports/devel/mob/Makefile,v 1.1 2001/01/01 21:28:48 assar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mob
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}-1.0-BETA
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Memory Organization Benchmarks
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

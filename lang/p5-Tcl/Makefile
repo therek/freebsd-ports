@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/p5-Tcl/Makefile,v 1.16 2001/03/01 06:38:50 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Tcl
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	Tcl
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A Tcl extension module for Perl5
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 

@@ -2,7 +2,7 @@
 # Date created:				20 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/icbm3d/Makefile,v 1.7 2000/04/02 00:58:37 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icbm3d
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/icbm3d/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	"Inter-Continental Ballistic Missiles, 3D" - 3D game of defense
 
 WRKSRC=		${WRKDIR}/icbm3d
 USE_X_PREFIX=	yes

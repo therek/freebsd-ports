@@ -2,7 +2,7 @@
 # Date created:		19 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/wmstock/Makefile,v 1.7 2000/08/03 09:25:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmstock
@@ -11,6 +11,8 @@ CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://mattfischer.com/wmstock/src/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Cool WindowMaker Dockapp that shows stock ticker(s)
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

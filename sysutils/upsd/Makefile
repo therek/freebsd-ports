@@ -2,7 +2,7 @@
 # Date created:         11 Jul 1996
 # Whom:                 alexis
 #
-# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.7 2000/11/01 13:19:57 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	upsd
@@ -12,6 +12,8 @@ CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.rge.com/pub/admin/upsd/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	APC Smart UPS Monitoring Daemon
 
 WRKSRC=		${WRKDIR}/upsd-2.0
 

@@ -2,7 +2,7 @@
 # Date created:				15 August 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/abclock/Makefile,v 1.1 2000/08/15 16:14:17 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	abclock
@@ -11,6 +11,8 @@ CATEGORIES=	x11-clocks
 MASTER_SITES=	http://odur.let.rug.nl/~kleiweg/abclock/
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Clock for X that displays hours and minutes in an analog fashion
 
 USE_X_PREFIX=	yes
 

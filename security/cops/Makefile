@@ -2,7 +2,7 @@
 # Date created:				29 August 1996
 # Whom:					oly
 #
-# $FreeBSD: ports/security/cops/Makefile,v 1.10 2000/05/02 14:48:07 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cops
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.fish.com/cops/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}+
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A system secureness checker
 
 WRKSRC=		${WRKDIR}/${PORTNAME}_${PORTVERSION:S/.//g}+
 HAS_CONFIGURE=	yes

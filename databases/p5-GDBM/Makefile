@@ -4,7 +4,7 @@
 #
 # Heavy input from eivind@freebsd.org
 #
-# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.5 2001/01/16 17:30:11 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	p5-GDBM
@@ -15,6 +15,8 @@ MASTER_SITE_SUBDIR=	../../src
 DISTNAME=	perl5.005_03
 
 MAINTAINER=	ports@FreeBSD.ORG
+
+PORTCOMMENT=	Perl module to use the GNU Data Base Manager (gdbm)
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 

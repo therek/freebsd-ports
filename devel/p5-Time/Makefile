@@ -2,7 +2,7 @@
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.18 2001/03/01 06:39:01 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Time
@@ -14,6 +14,8 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Time-modules-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	A collection of functions to convert and use time variables in perl5
 
 PERL_CONFIGURE=	YES
 

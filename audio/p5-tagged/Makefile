@@ -3,7 +3,7 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/p5-tagged/Makefile,v 1.1 2001/04/18 11:09:55 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tagged
@@ -15,6 +15,8 @@ MASTER_SITE_SUBDIR=	MP3 ${PORTNAME}
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	Read, change and write different tags of MP3 audio files
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib
 RUN_DEPENDS=	${BUILD_DEPENDS}

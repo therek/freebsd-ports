@@ -2,7 +2,7 @@
 # Date created:		12 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/git/Makefile,v 1.16 2001/08/31 04:04:52 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	git
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
+
+PORTCOMMENT=	GNU Interactive Tools - a file system browser for UNIX systems
 
 GNU_CONFIGURE=	YES
 MAN1=		git.1 gitaction.1 gitkeys.1 gitmount.1 \
