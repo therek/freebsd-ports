@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.183 2000/10/28 07:30:44 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.184 2000/10/28 07:34:09 will Exp $
 #
 
     SUBDIR += afsp
@@ -74,6 +74,7 @@
     SUBDIR += knapster
     SUBDIR += krio
     SUBDIR += lame
+    SUBDIR += libao
     SUBDIR += libaudiofile
     SUBDIR += libcdaudio
     SUBDIR += libmikmod
