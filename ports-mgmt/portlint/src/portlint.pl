@@ -13,7 +13,7 @@
 # bsd.port.mk.  There are significant differences in those so you'll have
 # hard time upgrading this...
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.10 1999/09/28 02:19:47 taoka Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.11 1999/09/28 16:23:03 sumikawa Exp $
 #
 
 $err = $warn = 0;
@@ -677,15 +677,21 @@ EOF
 
 	# check the items that has to be there.
 	$tmp = "\n" . $tmp;
-	foreach $i ('DISTNAME', 'CATEGORIES') {
-		print "OK: checking $i.\n" if ($verbose);
-		if ($tmp !~ /\n$i=/) {
-			&perror("FATAL: $i has to be there.");
-		}
-		if ($tmp =~ /\n$i(\?=)/) {
-			&perror("FATAL: $i has to be set by \"=\", ".
-				"not by \"$1\".");
-		}
+	print "OK: checking DISTNAME.\n" if ($verbose);
+	if ($tmp !~ /\nDISTNAME=/) {
+		&perror("FATAL: DISTNAME has to be there.");
+	}
+	if ($tmp =~ /\nDISTNAME(\?=)/) {
+		&perror("FATAL: DISTNAME has be set by \"=\", ".
+			"not by \"$1\".");
+	}
+	print "OK: checking CATEGORIES.\n" if ($verbose);
+	if ($tmp !~ /\nCATEGORIES(?=)/) {
+		&perror("FATAL: CATEGORIES has to be there.");
+	}
+	if ($tmp =~ /\nCATEGORIES([^?+]=)/) {
+		&perror("WARN: CATEGORIES should be set by \"=\", \"?=\", or \"+=\", ".
+			"not by \"$1\".");
 	}
 
 	# check x11 in CATEGORIES
@@ -890,8 +896,8 @@ EOF
 
 	&checkearlier($tmp, @varnames);
 	$tmp = "\n" . $tmp;
-	if ($tmp =~ /\nMAINTAINER=[^\n]+/) {
-		$tmp =~ s/\nMAINTAINER=[^\n]+//;
+	if ($tmp =~ /\nMAINTAINER\??=[^\n]+/) {
+		$tmp =~ s/\nMAINTAINER\??=[^\n]+//;
 	} else {
 		&perror("FATAL: no MAINTAINER listed in $file.");
 	}
