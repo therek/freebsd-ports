@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl/pkg-install,v 1.8 2002/05/24 02:01:13 dwcjr Exp $
+#	$FreeBSD: ports/security/cyrus-sasl2/pkg-install,v 1.9 2002/06/26 18:49:21 pat Exp $
 #
 # Created by: stb@FreeBSD.org for the cyrus imap server
 # Added to the cyrus-sasl port by hetzels@westbend.net
@@ -77,22 +77,14 @@ create_user() {
 
 create_sasldb() {
 	if [ ! -f ${SASLDB_NAME} ]; then
-		echo "test" | ${PKG_PREFIX}/sbin/saslpasswd -p -c cyrus
-		if [ `${PKG_PREFIX}/sbin/sasldblistusers | wc -l` -eq 0 ] ; then
+		echo "test" | ${PKG_PREFIX}/sbin/saslpasswd2 -p -c cyrus
+		if [ `${PKG_PREFIX}/sbin/sasldblistusers2 | wc -l` -eq 0 ] ; then
                         echo "WARNING: Failed to create ${PKG_PREFIX}/etc/$SASLDB_NAME}"
                 else
-			${PKG_PREFIX}/sbin/saslpasswd -d cyrus
+			${PKG_PREFIX}/sbin/saslpasswd2 -d cyrus
 			chown cyrus:mail ${SASLDB_NAME}
 			chmod 640 ${SASLDB_NAME}
 		fi
-	fi
-}
-
-# This should really be installed by Sendmail
-
-sendmail_conf() {
-	if [ ! -f ${PKG_PREFIX}/lib/sasl/Sendmail.conf ]; then
-		echo "pwcheck_method: pwcheck" > ${PKG_PREFIX}/lib/sasl/Sendmail.conf
 	fi
 }
 
@@ -103,7 +95,6 @@ case $2 in
 	POST-INSTALL)
 		if [ "${PKG_BATCH}" = "NO" ]; then
 			create_sasldb
-			sendmail_conf
 		fi
 		;;
 
