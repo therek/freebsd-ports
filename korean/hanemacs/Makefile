@@ -2,7 +2,7 @@
 # Date created:		12 Mar 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanemacs/Makefile,v 1.9 2000/04/13 09:16:29 asami Exp $
+# $FreeBSD: ports/korean/hanemacs/Makefile,v 1.10 2000/04/21 22:03:44 fenner Exp $
 #
 
 PORTNAME=	hanemacs
@@ -11,6 +11,8 @@ CATEGORIES=	korean editors
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/editor/HanEmacs/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/editor/HanEmacs/
 DISTNAME=	hanemacs-19.34b-1
+
+MAINTAINER=	cjh@FreeBSD.org
 
 NOT_FOR_ARCHS=	alpha
 

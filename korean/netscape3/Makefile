@@ -2,7 +2,7 @@
 # Date created:		6 Apr 1995
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/netscape3/Makefile,v 1.10 2000/04/13 09:17:03 asami Exp $
+# $FreeBSD: ports/korean/netscape3/Makefile,v 1.11 2000/04/21 22:03:54 fenner Exp $
 #
 
 PORTNAME=	netscape
@@ -11,6 +11,8 @@ CATEGORIES=	korean www
 MASTER_SITES=	ftp://archive:oldies@archive.netscape.com/archive/navigator/intl/3.01/unix/ko/ \
 		http://www.bpel.tutics.tut.ac.jp/~take/Netscape/etc/
 DISTFILES=	netscape-ko-v301.alpha-dec-osf2.0.tar.gz NLS.tar.gz
+
+MAINTAINER=	cjh@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/bin/netscape:${PORTSDIR}/www/netscape3 \
 		${X11BASE}/lib/X11/fonts/local/hgm12.pcf.gz:${PORTSDIR}/korean/hanyangfonts

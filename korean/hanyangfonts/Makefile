@@ -2,7 +2,7 @@
 # Date created:         22 Mar 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanyangfonts/Makefile,v 1.10 2000/04/13 09:16:36 asami Exp $
+# $FreeBSD: ports/korean/hanyangfonts/Makefile,v 1.11 2000/04/21 22:03:45 fenner Exp $
 #
 
 PORTNAME=	hanyangfonts
@@ -11,6 +11,8 @@ CATEGORIES=     korean x11-fonts
 MASTER_SITES=   ftp://ftp.kaist.ac.kr/pub/hangul/fonts/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/fonts/
 DISTNAME=       hanyang-font-pcf
+
+MAINTAINER=	cjh@FreeBSD.org
 
 USE_X_PREFIX=        yes
 NO_WRKSUBDIR=   yes

@@ -2,7 +2,7 @@
 # Date created:		Fri Mar 27 17:26:42 KST 1998
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.8 2000/04/13 09:16:52 asami Exp $
+# $FreeBSD: ports/korean/kaistfonts/Makefile,v 1.9 2000/04/21 22:03:52 fenner Exp $
 #
 
 PORTNAME=	kaistfonts-ksc
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 DISTNAME=	${PKGNAME}
 DISTFILES=	kaist-newmj18.bdf.gz ks_philgi16.bdf.gz \
 		kaist-newmj16.bdf.gz ks_iyagi16.bdf.gz
+
+MAINTAINER=	cjh@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

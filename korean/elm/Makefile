@@ -1,9 +1,8 @@
 # New ports collection makefile for:    elm-2.4h4.1
-# Version required:     2.4pl25.h4.1
 # Date created:         1 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/elm/Makefile,v 1.8 2000/04/15 15:13:47 knu Exp $
+# $FreeBSD: ports/korean/elm/Makefile,v 1.9 2000/04/21 22:03:39 fenner Exp $
 #
 
 PORTNAME=	elm
@@ -12,6 +11,8 @@ CATEGORIES=	korean mail
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/mail/old/Others/ \
 		ftp://ftp.kreonet.re.kr/pub/hangul/cair-archive/mail/old/Others/
 DISTNAME=	${PORTNAME}${PORTVERSION}
+
+MAINTAINER=	cjh@FreeBSD.org
 
 MAN1=		answer.1 checkalias.1 elm.1 elmalias.1 fastmail.1 filter.1\
 		frm.1 listalias.1 messages.1 newalias.1 printmail.1 readmsg.1\
