@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.29 2003/07/29 04:26:08 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.30 2003/09/18 14:56:51 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -105,7 +105,7 @@ QTCPPFLAGS+=		-D_GETOPT_H		# added to work around broken getopt.h #inc
 .if !defined (QT_NONSTANDARD)
 CONFIGURE_ARGS+=--with-extra-libs="${LOCALBASE}/lib" \
 				--with-extra-includes="${LOCALBASE}/include"
-CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${QTCPPFLAGS}" LIBS="${QTCFGLIBS}" \
+CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGLIBS}" \
 				QTDIR="${QT_CVS_PREFIX}" KDEDIR="${KDE_CVS_PREFIX}"
 .endif
 
@@ -113,7 +113,7 @@ CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${QTCPPFLAGS}" LIBS="${QTCFGLIBS}" \
 
 # Yeah, it's namespace pollution, but this is really the best place for this
 # stuff. Arts does NOT use it anymore.
-KDE_VERSION=		3.1.4
+KDE_VERSION=		3.2.0
 KDE_ORIGVER=	${KDE_VERSION}
 KDE_PREFIX?=	${LOCALBASE}
 
@@ -133,8 +133,9 @@ QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -ljpeg \
 .if !defined(QT_NONSTANDARD)
 CONFIGURE_ARGS+=--with-qt-includes=${QT_PREFIX}/include \
 				--with-qt-libraries=${QT_PREFIX}/lib \
-				--with-extra-libs=${LOCALBASE}/lib
-CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
+				--with-extra-libs=${LOCALBASE}/lib \
+				--with-extra-includes=${LOCALBASE}/include
+CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
 .endif # !defined(QT_NONSTANDARD)
 
 .else # QT2
@@ -154,7 +155,7 @@ CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 				--with-qt-libraries=${X11BASE}/lib \
 				--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-l${QTNAME}" \
-				CPPFLAGS="${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
+				CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
 .endif # !defined(QT_NONSTANDARD)
 
 .endif # USE_QT_VER == ???
