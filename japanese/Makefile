@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.272 2000/04/15 00:17:16 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.273 2000/05/01 02:53:59 steve Exp $
 #
 
     SUBDIR += Canna
@@ -68,6 +68,7 @@
     SUBDIR += ircII
     SUBDIR += iv
     SUBDIR += japaneseAFM
+    SUBDIR += jargon-fpw
     SUBDIR += jcode.pl
     SUBDIR += jed
     SUBDIR += jgv
@@ -159,6 +160,8 @@
     SUBDIR += mule-wnn4
     SUBDIR += mule-wnn6
     SUBDIR += mutt
+    SUBDIR += mypaedia-fpw
+    SUBDIR += mypaedia-fpw-package
     SUBDIR += namazu
     SUBDIR += namazu2
     SUBDIR += ndtpd
@@ -236,6 +239,7 @@
     SUBDIR += skkinput
     SUBDIR += skkserv
     SUBDIR += slrn
+    SUBDIR += srd-fpw
     SUBDIR += tcl76
     SUBDIR += tcl80
     SUBDIR += tcsh
@@ -262,6 +266,7 @@
     SUBDIR += truetypefonts
     SUBDIR += tvi
     SUBDIR += typist
+    SUBDIR += vera-fpw
     SUBDIR += vfghostscript
     SUBDIR += vfghostscript5
     SUBDIR += vfghostscript55
@@ -278,9 +283,11 @@
     SUBDIR += w3
     SUBDIR += w3m
     SUBDIR += w3m-ssl
+    SUBDIR += web1913-fpw
     SUBDIR += weblint97
     SUBDIR += wine
     SUBDIR += word
+    SUBDIR += wordnet-fpw
     SUBDIR += xdvik-vflib
     SUBDIR += xdvik-vflib-pk118
     SUBDIR += xdvik-vflib-pk240
