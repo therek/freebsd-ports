@@ -3,14 +3,14 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.74 2000/03/11 00:20:11 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.75 2000/03/13 08:09:33 asami Exp $
 #
 
 DISTNAME=	xc
 PKGNAME= 	XFree86-4.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/4.0/source/ \
-		ftp://xfree86.cdrom.com/pub/XFree86/4.0/source/ \
+		ftp://ftp.freesoftware.com/pub/XFree86/4.0/source/ \
 		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-4.0/source/ \
 		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/4.0/source/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/4.0/source/
