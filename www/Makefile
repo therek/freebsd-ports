@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.391 2001/08/12 14:41:13 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.392 2001/08/12 14:59:07 ijliao Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -312,6 +312,6 @@
     SUBDIR += xswallow
     SUBDIR += znavigator
     SUBDIR += zope
-    SUBDIR += zope-ptk
+    SUBDIR += zope-cmf
 
 .include <bsd.port.subdir.mk>
