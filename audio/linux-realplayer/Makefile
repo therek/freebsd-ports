@@ -2,7 +2,7 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.12 2000/04/08 21:23:56 mharo Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.13 2000/05/14 21:31:58 obrien Exp $
 #
 
 PORTNAME=	linux-realplayer
@@ -71,7 +71,7 @@ do-install:
 	@${ECHO_MSG}
 	@${ECHO_MSG} To use the Netscape plugin, you must have a Linux version of
 	@${ECHO_MSG} netscape \(e.g., ${PORTSDIR}/www/linux-netscape4/\) - see
-	@${ECHO_MSG} ${PREFIX}/share/doc/rvplayer5.0/plugin.html for instructions.
+	@${ECHO_MSG} ${PREFIX}/share/doc/rvplayer5.0/plugin.htm for instructions.
 	@${ECHO_MSG}
 	@${ECHO_MSG} To use rvplayer as an external helper app for Netscape \(any
 	@${ECHO_MSG} version\), follow the instructions in
