@@ -2,7 +2,7 @@
 # Date created:         27 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xgrab/Makefile,v 1.16 2000/04/13 19:10:35 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgrab
@@ -14,6 +14,13 @@ DISTNAME=	${PORTNAME}sc.2_41
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org
+
+USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS=	xrdb:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 USE_IMAKE=	yes
 MAKE_FLAGS=	BINDIR=${PREFIX}/bin MANDIR=${PREFIX}/man/man1 \
@@ -27,4 +34,4 @@ BROKEN=		"Requires an active X session (and DISPLAY variable) to run xrdb.  Plea
 
 MAN1=		xgrab.1 xgrabsc.1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
