@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.73 1999/08/31 01:59:26 peter Exp $
 #
 
     SUBDIR += LPRng
@@ -58,6 +58,7 @@
     SUBDIR += webmin
     SUBDIR += wmapm
     SUBDIR += wmavgload
+    SUBDIR += wmhm
     SUBDIR += wminet
     SUBDIR += wmmon
     SUBDIR += wmmount
