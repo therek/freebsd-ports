@@ -3,16 +3,16 @@
 # Date created:			  Sat Jan 01, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/ngrep/Makefile,v 1.6 2000/08/09 09:23:36 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ngrep
-PORTVERSION=	1.40
+PORTVERSION=	1.40.1
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/ngrep
 GNU_CONFIGURE=	yes
