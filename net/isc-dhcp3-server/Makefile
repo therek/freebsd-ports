@@ -3,11 +3,11 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.67 2001/07/05 06:29:04 roam Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.68 2001/08/17 09:12:51 mharo Exp $
 #
 
 PORTNAME=	dhcp
-PORTVERSION=	3.0.r10
+PORTVERSION=	3.0.r11
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/%SUBDIR%/ \
 		${US_MASTER_SITES} ${JAPAN_MASTER_SITES} \
@@ -24,7 +24,7 @@ PKGNAMEPREFIX=	isc-
 PKGNAMESUFFIX=	3
 DISTNAME=	${PORTNAME}-${RELEASE}${VERSION}${PATCHLEVEL}
 
-MAINTAINER=	clefevre@redirect.to
+MAINTAINER=	clefevre@citeweb.net
 
 #
 # Global variables
