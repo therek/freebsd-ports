@@ -2,21 +2,20 @@
 # Date created:         16 November 1996
 # Whom:                 proff
 #
-# $FreeBSD: ports/graphics/xmountains/Makefile,v 1.4 1999/08/25 06:15:29 obrien Exp $
+# $FreeBSD: ports/graphics/xmountains/Makefile,v 1.5 2000/04/14 10:47:55 asami Exp $
 #
 
 PORTNAME=	xmountains
-PORTVERSION=	2.4
+PORTVERSION=	2.5
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	apps/math/fractals
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	http://www.epcc.ed.ac.uk/~spb/xmountains/
+DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	proff@iq.org
 
+NO_WRKSUBDIR=	yes
+
 USE_IMAKE=	yes
 MAN6=		xmountains.6
-
-NO_WRKSUBDIR=	yes
 
 .include <bsd.port.mk>
