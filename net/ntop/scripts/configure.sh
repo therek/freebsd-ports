@@ -1,5 +1,5 @@
 # ex:ts=4
-# $FreeBSD$
+# $FreeBSD: ports/net/ntop/scripts/configure.sh,v 1.1 2003/06/15 18:50:37 oliver Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -14,7 +14,7 @@ if [ "${BATCH}" ]; then
 		set \"tcpwrap\" \"pcap\" \"zlib\"
 	fi
 else
-	/usr/bin/dialog --title "configuration options" --clear \
+	/usr/bin/dialog --title "ntop configuration options" --clear \
 		--checklist "\n\
 Please select desired options:" -1 -1 16 \
 tcpwrap		"TCP Wrapper support" ON \
