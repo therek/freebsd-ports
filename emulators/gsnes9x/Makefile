@@ -2,14 +2,15 @@
 # Date created:				18 Jun 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/emulators/gsnes9x/Makefile,v 1.4 2001/03/14 19:33:28 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gsnes9x
 PORTVERSION=	3.10
 CATEGORIES=	emulators
-MASTER_SITES=	http://abulafia.fciencias.unam.mx/~canek/gsnes9x/source/
-DISTNAME=	GSnes9x-3.10
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=	GSnes9x-${PORTVERSION}
 
 MAINTAINER=	kbyanc@posi.net
 
