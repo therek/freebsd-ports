@@ -3,11 +3,11 @@
 # Date created:		Nov 28 ,1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD: ports/chinese/xcin/Makefile,v 1.10 1999/08/25 04:58:03 obrien Exp $
+# $FreeBSD: ports/chinese/xcin/Makefile,v 1.11 1999/10/23 02:54:00 vanilla Exp $
 #
 
-DISTNAME=	xcin-2.3.03
-PKGNAME=	zh-xcin-2.3.03
+DISTNAME=	xcin-2.3.04-3
+PKGNAME=	zh-xcin-2.3.04-3
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/old/ \
 		ftp://ftp.ncu.edu.tw/OS/Linux/Chinese/xcin/xcin/ \
@@ -18,6 +18,7 @@ MAINTAINER=	yssu@CCCA.NCTU.edu.tw
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts
 
 USE_X_PREFIX=	yes
+USE_GMAKE=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix="${X11BASE}" --os=FreeBSD --no-menu
 
