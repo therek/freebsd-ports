@@ -1,10 +1,10 @@
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmradio/Makefile,v 1.4 1999/10/12 16:10:35 roger Exp $
 # New ports collection makefile for:	xmradio
 # Version required:	0.8
 # Date created:		1 Oct 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $Id$
+# $FreeBSD$
 #
 
 DISTNAME=	xmradio-0.8
