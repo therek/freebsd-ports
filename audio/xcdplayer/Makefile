@@ -2,14 +2,14 @@
 # Date created:         30 Sep 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/audio/xcdplayer/Makefile,v 1.10 1999/08/25 04:36:22 obrien Exp $
+# $FreeBSD: ports/audio/xcdplayer/Makefile,v 1.11 2000/04/08 21:24:51 mharo Exp $
 #
 
 PORTNAME=	xcdplayer
 PORTVERSION=	2.2
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.cdrom.com/pub/X11/R5contrib/
+		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	swallace@FreeBSD.org
