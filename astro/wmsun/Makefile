@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmsun/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
+# $FreeBSD: ports/astro/wmsun/Makefile,v 1.6 2000/08/03 09:22:21 asami Exp $
 
 PORTNAME=	wmsun
 PORTVERSION=	1.03
@@ -14,15 +14,10 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmSun
 
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=	wmSun.1
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/wmSun ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/wmSun.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
