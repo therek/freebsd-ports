@@ -2,16 +2,15 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.20 2001/02/07 06:21:21 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.21 2001/02/07 06:33:32 knu Exp $
 #
 
 PORTNAME=	qt2
-PORTVERSION=	0.11
-PORTREVISION=	1
+PORTVERSION=	${RUBY_QT2_PORTVERSION}
 CATEGORIES=	x11-toolkits ruby
-MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
+MASTER_SITES=	${RUBY_QT2_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
+DISTNAME=	${RUBY_QT2_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -23,7 +22,9 @@ USE_RUBY_EXTCONF=	yes
 
 USE_GMAKE=	yes
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+.include "${.CURDIR}/Makefile.common"
+
+WRKSRC=		${RUBY_QT2_WRKSRC}
 CONFIGURE_ARGS=	--with-qt2-include=${X11BASE}/include/qt2 \
 		--with-qt2-lib=${X11BASE}/lib \
 		--with-qt2=qt2 \
@@ -39,12 +40,12 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/qt2
-	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/qt2/
-	${MKDIR} ${RUBY_DOCDIR}/qt2/ja
-	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/qt2/
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/qt2/
-	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/qt2/ja/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
 .include <bsd.port.mk>
