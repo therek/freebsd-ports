@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.213 2003/09/05 05:11:07 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.214 2003/09/05 11:03:27 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -592,3 +592,4 @@ net/sleuth|dns/sleuth|2003-09-05|moved to new dns category
 net/staticcharge|dns/staticcharge|2003-09-05|moved to new dns category
 net/totd|dns/totd|2003-09-05|moved to new dns category
 net/walker|dns/walker|2003-09-05|moved to new dns category
+net/gnomemeeting2|net/gnomemeeting|2003-09-07|no need to keep two versions in ports tree
