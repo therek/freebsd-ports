@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/jbidwatcher/files/jbidwatcher.sh,v 1.1 2004/08/23 20:27:31 glewis Exp $
 
-javavm -jar %%JAVAJARDIR%%/jbidwatcher.jar $@
+"%%LOCALBASE%%/bin/java" -jar "%%JAVAJARDIR%%/jbidwatcher.jar" "$@"
