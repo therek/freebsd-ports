@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/thunderbird/pkg-deinstall.in,v 1.1 2004/10/11 23:45:43 marcus Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -18,6 +18,7 @@ rm -rf ${MOZDIR}/chrome/overlayinfo
 rm -f ${MOZDIR}/chrome/*.rdf
 rm -f ${MOZDIR}/component.reg
 rm -f ${MOZDIR}/components.ini
+rm -f ${MOZDIR}/defaults.ini
 rm -f ${MOZDIR}/components/*.dat
 rm -rf ${MOZDIR}/extensions
 
