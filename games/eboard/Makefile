@@ -2,14 +2,17 @@
 # Date created:				22 June 2001
 # Whom:					petef@databits.net
 #
-# $FreeBSD: ports/games/eboard/Makefile,v 1.2 2001/07/01 15:31:47 kevlo Exp $
+# $FreeBSD: ports/games/eboard/Makefile,v 1.3 2001/08/03 03:51:56 lioux Exp $
 #
 
 PORTNAME=	eboard
 PORTVERSION=	0.3.1
+PORTREVISION=	1
+EXTRASVERSION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} eboard-extras-${EXTRASVERSION}.tar.gz
 
 MAINTAINER=	petef@databits.net
 
@@ -37,5 +40,11 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/Documentation/${file} ${DOCSDIR}
 .endfor
 .endif
+	${INSTALL_DATA} ${WRKDIR}/eboard-extras-pack${EXTRASVERSION}/*.png \
+		${PREFIX}/share/eboard
+	${INSTALL_DATA} ${WRKDIR}/eboard-extras-pack${EXTRASVERSION}/*.wav \
+		${PREFIX}/share/eboard
+	@${CAT} ${WRKDIR}/eboard-extras-pack${EXTRASVERSION}/extras1.conf >> \
+		${PREFIX}/share/eboard/eboard_themes.conf
 
 .include <bsd.port.mk>
