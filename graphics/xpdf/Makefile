@@ -2,7 +2,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.27 1999/12/25 02:00:06 steve Exp $
+# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.28 2000/04/14 10:47:58 asami Exp $
 #
 
 PORTNAME=       xpdf
@@ -13,20 +13,16 @@ MASTER_SITES=	${MASTER_SITE_TEX_CTAN} ftp://ftp.foolabs.com/pub/xpdf/  \
 MASTER_SITE_SUBDIR=support/xpdf
 EXTRACT_SUFX=	.tgz
 
-.if !defined(PACKAGE_BUILDING)
 PATCH_SITES=	http://www.fefe.de/
 PATCHFILES=	xpdf-0.90-fefe-diff.gz
 PATCH_DIST_STRIP= -p1
-.endif
 
 MAINTAINER=	chuckr@freebsd.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		t1x.1:${PORTSDIR}/devel/t1lib
 
-.if !defined(PACKAGE_BUILDING)
-RESTRICTED=     "Contains cryptography"
-.endif
+###RESTRICTED=     "Contains cryptography"
 USE_XLIB=	yes
 USE_X_PREFIX=	yes
 USE_AUTOCONF=	yes
