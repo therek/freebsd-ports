@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop cyrus-imapd
-# $FreeBSD: ports/mail/cyrus-imapd22/files/imapd.sh,v 1.6 2003/08/30 14:17:22 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd22/files/imapd.sh,v 1.7 2003/08/31 07:05:45 ume Exp $
 
 # PROVIDE: cyrus_imapd
 # REQUIRE: DAEMON
@@ -14,12 +14,12 @@
 
 prefix=%%PREFIX%%
 
-# Define these imapd_* variables in one of these files:
+# Define these cyrus_imapd_* variables in one of these files:
 #	/etc/rc.conf
 #	/etc/rc.conf.local
 #	/etc/rc.conf.d/cyrus_imapd
 #
-# DO NOT CHANGE THESE DEFAULT VALUES HERE 
+# DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 cyrus_imapd_enable="NO"				# Enable imapd
 #cyrus_imapd_program="${prefix}/cyrus/bin/master"	# Location of imapd
