@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.301 2001/01/29 10:50:33 ache Exp $
+# $FreeBSD: ports/www/Makefile,v 1.302 2001/01/30 10:48:17 jkoshy Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -213,6 +213,7 @@
     SUBDIR += w3m
     SUBDIR += w3m-ssl
     SUBDIR += w3mir
+    SUBDIR += wb0
     SUBDIR += wcol
     SUBDIR += web2ldap
     SUBDIR += web500gw
