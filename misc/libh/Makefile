@@ -2,7 +2,7 @@
 # Date Created:		19 September 2000
 # Whom:			nra
 #
-# $FreeBSD: ports/misc/libh/Makefile,v 1.1 2001/03/10 13:51:40 alex Exp $
+# $FreeBSD: ports/misc/libh/Makefile,v 1.2 2001/03/23 14:26:40 alex Exp $
 #
 
 PORTNAME=	libh
@@ -16,7 +16,7 @@ MAINTAINER=	nra@FreeBSD.org
 
 LIB_DEPENDS=	tcl83.1:${PORTSDIR}/lang/tcl83 \
 		tvision.0:${PORTSDIR}/devel/tvision
-BUILD_DEPENDS= 	${X11BASE}/lib/libqt2.a:${PORTSDIR}/x11-toolkits/qt22-static
+BUILD_DEPENDS= 	${X11BASE}/lib/libqt2.a:${PORTSDIR}/x11-toolkits/qt2-static
 
 USE_QT2=yes
 IS_INTERACTIVE=yes
