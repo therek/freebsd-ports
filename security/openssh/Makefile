@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.59 2001/02/09 22:45:16 kris Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.60 2001/02/12 08:06:55 kris Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/ \
 DISTNAME=	openssh-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	green@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_OPENSSL=	YES
 
