@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.9 2000/07/18 09:34:13 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.10 2001/02/05 16:49:04 olgeni Exp $
 #
 
 PORTNAME=	open-motif-devel
@@ -24,7 +24,7 @@ NO_MTREE=	yes
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	# don't exact the tarball
-NO_BUILD=	binary distrubition
+NO_BUILD=	binary distribution
 NO_PKG_REGISTER=do-install: target will take care of this
 
 do-install:
