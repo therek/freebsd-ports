@@ -1,8 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/dbacl/pkg-plist,v 1.1 2003/10/31 12:46:33 sergei Exp $
 bin/bayesol
 bin/dbacl
 bin/mailcross
+bin/mailfoot
 bin/mailinspect
+bin/mailtoe
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/README
