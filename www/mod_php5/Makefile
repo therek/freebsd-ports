@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.124 2001/01/01 10:15:16 will Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.125 2001/01/16 22:49:24 dirk Exp $
 #
 
 PORTNAME=	mod_php
@@ -26,10 +26,8 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 PHP_DISTDIR=	distributions
 
-APXS=		${PREFIX}/sbin/apxs
-
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--with-apxs=${APXS} \
+CONFIGURE_ARGS=	--with-apxs=${PREFIX}/sbin/apxs \
 		--enable-versioning \
 		--with-system-regex \
 		--with-config-file-path=${PREFIX}/etc \
@@ -44,11 +42,7 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		MKDIR="${MKDIR}" \
 		CAT="${CAT}"
 
-.if exists(${APXS})
-AP_LIBEXEC!=	${APXS} -q LIBEXEC
-.else
 AP_LIBEXEC=	${PREFIX}/libexec/apache
-.endif
 
 PHPDOCDIR=	${PREFIX}/share/doc/php
 PLIST_SUB=	PHPDOCDIR=${PHPDOCDIR:S/^${PREFIX}\///} \
