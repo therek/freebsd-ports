@@ -2,7 +2,7 @@
 # Date created:				December 17, 1999
 # Whom:					Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/oo2c/Makefile,v 1.1 2000/06/30 02:56:19 will Exp $
+# $FreeBSD: ports/lang/oo2c/Makefile,v 1.2 2000/08/21 10:07:29 sobomax Exp $
 
 PORTNAME=	oo2c
 PORTVERSION=	1.5.2
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.uni-kl.de/OOC/files/oo2c/ \
 DISTNAME=	${PORTNAME}_32-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} gc4.14.tar.gz
 
-MAINTAINER=	ob@seicom.NET
+MAINTAINER=	ports@freebsd.org
 
 USE_LIBTOOL=	yes
 CONFIGURE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"

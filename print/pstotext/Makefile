@@ -2,7 +2,7 @@
 # Date created:		December 6, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/print/pstotext/Makefile,v 1.4 2000/05/28 03:53:49 steve Exp $
+# $FreeBSD: ports/print/pstotext/Makefile,v 1.5 2000/10/13 20:27:48 ade Exp $
 #
 
 PORTNAME=	pstotext
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.research.digital.com/SRC/virtualpaper/cgi-bin/nph-downl
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ob@seicom.NET
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
