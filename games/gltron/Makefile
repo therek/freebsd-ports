@@ -3,13 +3,13 @@
 # Date created:				24 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gltron/Makefile,v 1.3 1999/08/25 07:03:55 cpiazza Exp $
+# $FreeBSD: ports/games/gltron/Makefile,v 1.4 1999/12/25 20:05:19 jedgar Exp $
 #
 
 DISTNAME=	glTron-0.46
 PKGNAME=	gltron-0.46
 CATEGORIES=	games
-MASTER_SITES=	http://www.ards.net/Andreas/
+MASTER_SITES=	http://www.ards.net/Andreas/gltron/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
