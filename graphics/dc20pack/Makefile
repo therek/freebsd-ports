@@ -2,7 +2,7 @@
 # Date created:		Jul 31 1999
 # Whom:			Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/graphics/dc20pack/Makefile,v 1.1.1.1 1999/09/09 01:43:30 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		dc20pack
@@ -15,9 +15,10 @@ EXTRACT_SUFX=		.tgz
 MAINTAINER=		maurice@serc.rmit.edu.au
 
 WRKSRC=			${WRKDIR}
+USE_REINPLACE=		yes
 
 post-extract:
-	@ /usr/bin/find ${WRKSRC} -type f | xargs /usr/bin/perl -pi -e 's/\r//g'
+	@ /usr/bin/find ${WRKSRC} -type f | xargs ${REINPLACE_CMD} -e 's/\r//g'
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/dc20dump ${PREFIX}/bin

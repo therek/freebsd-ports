@@ -2,7 +2,7 @@
 # Date created:				June 5th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/benchmarks/tmetric/Makefile,v 1.6 2001/09/03 21:47:54 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tmetric
@@ -16,10 +16,11 @@ MAINTAINER=	mbac@nyct.net
 HAS_CONFIGURE=	yes
 ALL_TARGET=	${PORTNAME}
 USE_BZIP2=	yes
+USE_REINPLACE=	yes
 
 MAN8=		tmetric.8
 
 post-patch:
-	@${PERL5} -pi -e 's%/usr/local%${PREFIX}%' ${WRKSRC}/*
+	@${REINPLACE_CMD} -e 's%/usr/local%${PREFIX}%' ${WRKSRC}/*
 
 .include <bsd.port.mk>

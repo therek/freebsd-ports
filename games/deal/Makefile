@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/deal/Makefile,v 1.1 2001/04/07 04:36:47 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	deal
@@ -13,10 +13,12 @@ MASTER_SITES=	http://www.tuxedo.org/~esr/deal/
 MAINTAINER=	markp@FreeBSD.org
 
 ALL_TARGET=	deal
+USE_REINPLACE=	yes
+
 MAN1=		deal.1
 
 pre-build:
-	${PERL} -pi -e "s@-g@${CFLAGS}@g" ${WRKSRC}/Makefile
+	${REINPLACE_CMD} -e "s@-g@${CFLAGS}@g" ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/deal ${PREFIX}/bin
