@@ -2,11 +2,11 @@
 # Date created:                19 December 1998
 # Whom:                        Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.8 2000/04/14 10:45:55 asami Exp $
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.9 2000/06/07 07:56:25 asami Exp $
 #
 
 PORTNAME=	gifsicle
-PORTVERSION=	1.16.1
+PORTVERSION=	1.20
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/
 
