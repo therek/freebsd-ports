@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.107 1999/09/29 15:37:26 dan Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.108 1999/10/12 17:19:01 flathill Exp $
 #
 
     SUBDIR += amp
@@ -66,7 +66,7 @@
     SUBDIR += splaytk
     SUBDIR += tclmidi
     SUBDIR += timidity
-    sUBDIR += timidity++
+    SUBDIR += timidity++
     SUBDIR += timidity++-emacs
     SUBDIR += timidity++-gtk
     SUBDIR += timidity++-slang
