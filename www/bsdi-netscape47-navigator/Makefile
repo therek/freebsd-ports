@@ -2,8 +2,11 @@
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.45 2000/02/28 08:34:13 obrien Exp $
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.46 2000/04/10 00:06:08 cpiazza Exp $
 #
+
+PORTNAME=	netscape-${BROWSER_ARC}
+PORTVERSION=	${BROWSER_VER}
 
 .include <bsd.port.pre.mk>
 
