@@ -2,7 +2,7 @@
 # Date created:		16 March 1995
 # Whom:			rmallory@csusb.edu
 #
-# $FreeBSD: ports/audio/rplay/Makefile,v 1.18 2000/07/05 12:36:17 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rplay
@@ -37,7 +37,7 @@ post-install:
 	@${INSTALL_SCRIPT} -m 751 ${FILESDIR}/rplayd.sh ${PREFIX}/etc/rc.d/rplayd.sh
 .endif
 .if !exists(${PREFIX}/etc/rplay.hosts)
-	@${ECHO} localhost > ${PREFIX}/etc/rplay.hosts
+	@${ECHO_CMD} localhost > ${PREFIX}/etc/rplay.hosts
 .endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/opmixer/Makefile,v 1.8 2001/06/04 11:44:10 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	opmixer
@@ -23,12 +23,12 @@ PLIST=		${WRKDIR}/pkg-plist
 WRKSRC=		${WRKDIR}/opmixer
 
 pre-install:
-	${ECHO} "bin/opmixer" > ${PLIST}
-	${ECHO} "bin/opmixer-load" >> ${PLIST}
-	${ECHO} "bin/volset" >> ${PLIST}
+	${ECHO_CMD} "bin/opmixer" > ${PLIST}
+	${ECHO_CMD} "bin/opmixer-load" >> ${PLIST}
+	${ECHO_CMD} "bin/volset" >> ${PLIST}
 .if !defined(NOPORTDOCS)
-	${ECHO} ${DOCDIR}/README >> ${PLIST}
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} ${DOCDIR}/README >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-patch:

@@ -2,7 +2,7 @@
 # Date created:				2000-09-16
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/autozen/Makefile,v 1.5 2000/11/03 08:34:00 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	autozen
@@ -34,18 +34,18 @@ post-patch:
 	cd ${WRKSRC} && ${RM} autozen seq2wav
 
 pre-install:
-	${ECHO} bin/autozen > ${PLIST}
-	${ECHO} bin/seq2wav >> ${PLIST}
+	${ECHO_CMD} bin/autozen > ${PLIST}
+	${ECHO_CMD} bin/seq2wav >> ${PLIST}
 .for i in ${DATA_FILES}
-	${ECHO} share/autozen/${i} >> ${PLIST}
+	${ECHO_CMD} share/autozen/${i} >> ${PLIST}
 .endfor
 .if !defined(NOPORTDOCS)
 .for i in ${DOC_FILES}
-	${ECHO} share/doc/autozen/${i} >> ${PLIST}
+	${ECHO_CMD} share/doc/autozen/${i} >> ${PLIST}
 .endfor
-	${ECHO} @dirrm share/doc/autozen >> ${PLIST}
+	${ECHO_CMD} @dirrm share/doc/autozen >> ${PLIST}
 .endif
-	${ECHO} @dirrm share/autozen >> ${PLIST}
+	${ECHO_CMD} @dirrm share/autozen >> ${PLIST}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/autozen ${PREFIX}/bin

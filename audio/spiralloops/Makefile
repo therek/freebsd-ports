@@ -2,7 +2,7 @@
 # Date created:				2000-12-06
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/spiralloops/Makefile,v 1.5 2001/03/24 02:54:46 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spiralloops
@@ -33,12 +33,12 @@ post-patch:
 			s|/usr/X11R6|${X11BASE}|g' ${WRKSRC}/Makefile.in
 
 pre-install:
-	${ECHO} bin/SpiralLoops > ${PLIST}
+	${ECHO_CMD} bin/SpiralLoops > ${PLIST}
 .if !defined(NOPORTDOCS)
 .for i in ${DOC_FILES}
-	${ECHO} ${DOCDIR}/`${BASENAME} ${i}` >> ${PLIST}
+	${ECHO_CMD} ${DOCDIR}/`${BASENAME} ${i}` >> ${PLIST}
 .endfor
-	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} @dirrm ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:
