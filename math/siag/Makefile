@@ -2,7 +2,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD: ports/math/siag/Makefile,v 1.27 2000/05/29 02:41:54 steve Exp $
+# $FreeBSD: ports/math/siag/Makefile,v 1.28 2000/08/03 09:25:42 asami Exp $
 #
 
 PORTNAME=	siag
@@ -26,7 +26,7 @@ MAKE_ARGS=	"-j 2"
 CPPFLAGS+=	-I${LOCALBASE}/include -DX11BASE='\"${X11BASE}\"'
 
 .if defined(GUILE)
-LIB_DEPENDS+=	guile.6:${PORTSDIR}/lang/guile
+LIB_DEPENDS+=	guile.9:${PORTSDIR}/lang/guile
 .endif
 
 .if !defined(NOGDBM)

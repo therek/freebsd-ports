@@ -2,7 +2,7 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.18 2000/06/16 21:52:37 asami Exp $
+# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.19 2000/08/03 09:28:15 asami Exp $
 #
 
 PORTNAME=	scwm
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://scwm.mit.edu/pub/scwm/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	guile.6:${PORTSDIR}/lang/guile \
+LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
 		esd.2:${PORTSDIR}/audio/esound
 RUN_DEPENDS=	${X11BASE}/share/scwm/pixmaps/Animator.xpm:${PORTSDIR}/graphics/scwm-icons

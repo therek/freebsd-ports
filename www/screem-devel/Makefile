@@ -2,7 +2,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.10 2000/07/25 12:32:58 sobomax Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.11 2000/08/03 09:26:45 asami Exp $
 #
 
 PORTNAME=	screem
@@ -18,7 +18,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
 		xml.5:${PORTSDIR}/textproc/libxml \
 		glade.4:${PORTSDIR}/devel/libglade \
-		guile.6:${PORTSDIR}/lang/guile \
+		guile.9:${PORTSDIR}/lang/guile \
 		wwwcore.1:${PORTSDIR}/www/libwww
 RUN_DEPENDS=    gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
