@@ -3,13 +3,13 @@
 # Date created:		28 March 1995
 # Whom:			Akito FUJITA <fujita@zoo.ncl.omron.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/mh/Makefile,v 1.14 1999/08/25 05:25:26 obrien Exp $
 #
 
-DISTNAME=	mh-6.8.4-JP-3.02
-PKGNAME=	ja-mh-6.8.4
+DISTNAME=	mh-6.8.4-JP-3.03
+PKGNAME=	ja-mh-6.8.4.3.03
 CATEGORIES=	japanese mail
-MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/ \
+MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://komadori.planet.sci.kobe-u.ac.jp/pub/MH/ \
 		ftp://ftp.chem.eng.himeji-tech.ac.jp/pub/net/mh/
 
