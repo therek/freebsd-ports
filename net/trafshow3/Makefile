@@ -2,7 +2,7 @@
 # Date created:         25 September 1996
 # Whom:                 igor@zynaps.ru
 #
-# $FreeBSD: ports/net/trafshow/Makefile,v 1.18 2001/01/16 17:31:57 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trafshow
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.nsk.su/pub/RinetSoftware/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ryan@sasknow.com
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
