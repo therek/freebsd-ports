@@ -3,11 +3,12 @@
 # Date created:		22 Dec 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/archivers/zip/Makefile,v 1.23 2001/08/06 01:11:41 dougb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zip
 PORTVERSION=	2.3
+PORTREVISION=   1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.uu.net/pub/archiving/zip/src/ \
 		${MASTER_SITE_TEX_CTAN:S,%SUBDIR%,tools/zip/info-zip/src/,}
