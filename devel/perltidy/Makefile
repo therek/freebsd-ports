@@ -3,7 +3,7 @@
 # Date created:			Mar 4, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/perltidy/Makefile,v 1.8 2001/07/24 07:38:47 ijliao Exp $
+# $FreeBSD: ports/devel/perltidy/Makefile,v 1.9 2001/08/02 12:23:07 ijliao Exp $
 #
 
 PORTNAME=	perltidy
@@ -26,10 +26,10 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/perltidy
-.for file in perltidy perl2web tutorial
+	@${MKDIR} ${DOCSDIR}
+.for file in ChangeLog perl2web perltidy tutorial
 .for ext in html txt
-	${CP} ${WRKSRC}/docs/${file}.${ext} ${PREFIX}/share/doc/perltidy/
+	${INSTALL_DATA} ${WRKSRC}/docs/${file}.${ext} ${DOCSDIR}
 .endfor
 .endfor
 .endif
