@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/news/xvnews/Makefile,v 1.7 1999/08/30 14:32:03 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xvnews
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	shanee@augusta.de
+
+BROKEN=		"Does not compile on -current; manpage does not build on -stable"
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
