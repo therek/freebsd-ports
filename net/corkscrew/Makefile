@@ -2,11 +2,11 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/corkscrew/Makefile,v 1.1 2001/04/17 18:10:48 will Exp $
 #
 
 PORTNAME=	corkscrew
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.agroman.net/corkscrew/
 
