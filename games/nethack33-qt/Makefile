@@ -2,7 +2,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.33 2001/06/01 06:04:50 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nethack
@@ -22,7 +22,7 @@ MAKE_ENV=	CXX="${CXX}" MOC="${MOC}" LIBQT="-l${QTNAME}" \
 		QTCPPFLAGS="${QTCPPFLAGS}" QTCFGLIBS="${QTCFGLIBS}"
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
 
-pre-everything:
+pre-everything::
 	@${ECHO} "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 	@${ECHO} "!! You cannot install nethack and nethack-qt in parallel  !!"
 	@${ECHO} "!! But nethack-qt might read your prior nethack scores    !!"
