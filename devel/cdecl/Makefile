@@ -3,13 +3,13 @@
 # Date created:			  Sat Sep 04, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/cdecl/Makefile,v 1.6 2000/04/11 21:27:17 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdecl
 PORTVERSION=	2.5
 CATEGORIES=	devel
-MASTER_SITES=3D	ftp://ftp.netsw.org/softeng/lang/c/tools/cdecl/  \
+MASTER_SITES=	ftp://ftp.netsw.org/softeng/lang/c/tools/cdecl/  \
 		ftp://ftp.cc.gatech.edu/ac121/linux/devel/lang/c/  \
 		ftp://ftp.deva.net/pub/sources/programming/  \
 		ftp://ftp.bitcon.no//pub/linux/linuxberg/files/console/dev/  \
