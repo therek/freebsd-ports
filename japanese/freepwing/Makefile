@@ -2,7 +2,7 @@
 # Date created:		00/01/24
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.6 2000/04/11 14:13:40 knu Exp $
+# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.7 2000/04/25 13:03:23 knu Exp $
 #
 
 PORTNAME=	freepwing
@@ -16,7 +16,7 @@ MAINTAINER=	taoka@FreeBSD.org
 
 RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
 
-VERSION=	1.2beta2
+VERSION=	1.2
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/doc
