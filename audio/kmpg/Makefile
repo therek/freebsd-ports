@@ -3,7 +3,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/audio/kmpg/Makefile,v 1.13 1999/08/25 04:35:41 obrien Exp $
+# $FreeBSD: ports/audio/kmpg/Makefile,v 1.14 1999/08/31 06:40:32 mharo Exp $
 #
 
 DISTNAME=	kmpg-0.4.3a
@@ -16,9 +16,7 @@ LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
+USE_LIBTOOL=	yes
 
 .include <bsd.port.mk>
