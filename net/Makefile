@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.339 2000/02/27 06:04:01 vanilla Exp $
+# $FreeBSD: ports/net/Makefile,v 1.340 2000/02/29 04:03:16 dburr Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -55,6 +55,7 @@
     SUBDIR += elsa
     SUBDIR += etherboot
     SUBDIR += ethereal
+    SUBDIR += everybuddy
     SUBDIR += fping
     SUBDIR += freewais-sf
     SUBDIR += fspclient
