@@ -2,12 +2,12 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-ming/Makefile,v 1.6 2001/07/06 19:57:44 knu Exp $
+# $FreeBSD: ports/graphics/ruby-ming/Makefile,v 1.7 2001/09/17 17:54:16 knu Exp $
 #
 
 PORTNAME=	ming
 PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics ruby
 MASTER_SITES=	# none
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
