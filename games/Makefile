@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.272 2000/05/22 15:11:01 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.273 2000/05/29 05:49:36 will Exp $
 #
 
     SUBDIR += 3dc
@@ -238,6 +238,7 @@
     SUBDIR += xrobots
     SUBDIR += xrubik
     SUBDIR += xscavenger
+    SUBDIR += xscorch
     SUBDIR += xscrabble
     SUBDIR += xsheep
     SUBDIR += xshipwars-client
