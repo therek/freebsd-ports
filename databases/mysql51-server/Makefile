@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.96 2001/01/07 14:51:48 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.97 2001/01/19 00:05:50 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -37,9 +37,14 @@ CONFIGURE_ENV+=	PERL=${PERL} \
 		PERL5=${PERL} \
 		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
 		CONFIGURE_ARGS="${CONFIGURE_ARGS}"
+
+.include <bsd.port.pre.mk>
 # without including these flags mysqld may crash under heavy load
 # and multiple connections at the same time
-CXXFLAGS=	${CFLAGS} -felide-constructors -fno-exceptions -fno-rtti
+CXXFLAGS=	${CFLAGS} -felide-constructors -fno-rtti
+.if ${OSVERSION} >= 400002
+CXXFLAGS+=	-fno-exceptions
+.endif
 
 # MySQL-Server part
 .if !defined(CLIENT_ONLY)
@@ -102,6 +107,7 @@ MAKE_ENV=	CLIENT_ONLY="${CLIENT_ONLY}"
 post-install:
 	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/mysql-client.sh > ${PREFIX}/etc/rc.d/mysql-client.sh
 	@${CHMOD} 750 ${PREFIX}/etc/rc.d/mysql-client.sh
+
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
