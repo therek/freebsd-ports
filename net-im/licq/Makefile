@@ -3,7 +3,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.12 2000/02/15 01:46:13 green Exp $
+# $FreeBSD: ports/net/licq/Makefile,v 1.13 2000/02/16 05:01:13 green Exp $
 #
 
 DISTNAME=	licq-0.75.3a
@@ -31,7 +31,19 @@ DATAFILES=	${DATANAME}${EXTRACT_SUFX}
 DATADIR=	${WRKDIR}/${DATANAME}
 
 post-configure:
-	@(cd ${WRKSRC}/plugins/qt-gui; ./configure --prefix=${PREFIX})
+	@(cd ${WRKSRC}/plugins/qt-gui && \
+		if ! ${SETENV} CC="${CC}" CXX="${CXX}" \
+	    CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" \
+	    INSTALL="/usr/bin/install -c -o ${BINOWN} -g ${BINGRP}" \
+	    INSTALL_DATA="${INSTALL_DATA}" \
+	    INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
+	    INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
+	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS}; then \
+			${ECHO} "===>  Script \"${CONFIGURE_SCRIPT}\" failed: here are the contents of \"${CONFIGURE_LOG}\""; \
+			${CAT} ${CONFIGURE_LOG}; \
+			${ECHO} "(end of \"${CONFIGURE_LOG}\")"; \
+			${FALSE}; \
+		fi)
 
 post-build:
 	@(cd ${WRKSRC}/plugins/qt-gui;\
