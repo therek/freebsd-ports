@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.130 2001/05/13 11:45:36 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.131 2001/06/10 13:44:08 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -33,6 +33,7 @@ XML		"XML support" OFF \
 FTP		"File Transfer Protocol support" OFF \
 CURL		"CURL support" OFF \
 gettext		"gettext library support" OFF \
+pspell		"pspell support" OFF \
 japanese	"jstring and mbregex module" OFF \
 YP		"YP/NIS support" OFF \
 BCMath		"BCMath support" OFF \
@@ -184,6 +185,10 @@ while [ "$1" ]; do
 		\"gettext\")
 			echo "LIB_DEPENDS+=	intl.1:\${PORTSDIR}/devel/gettext"
 			echo "CONFIGURE_ARGS+=--with-gettext=\${PREFIX}"
+			;;
+		\"pspell\")
+			echo "LIB_DEPENDS+=	pspell.4:\${PORTSDIR}/textproc/pspell"
+			echo "CONFIGURE_ARGS+=--with-pspell=\${PREFIX}"
 			;;
 		\"japanese\")
 			${CAT} << EOF
