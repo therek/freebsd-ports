@@ -2,11 +2,12 @@
 # Date created:		October 30, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/lcms/Makefile,v 1.2 2000/12/19 15:36:26 sobomax Exp $
+# $FreeBSD: ports/graphics/lcms/Makefile,v 1.3 2001/04/10 23:14:05 mi Exp $
 #
 
 PORTNAME=	lcms
 PORTVERSION=	1.07
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.littlecms.com/
 
