@@ -3,7 +3,7 @@
 # Date created:         So  17 Nov 1996 16:59:23 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/bb/Makefile,v 1.36 1999/08/31 06:48:38 mharo Exp $
+# $FreeBSD: ports/net/bb/Makefile,v 1.37 1999/10/01 22:39:17 asami Exp $
 #
 
 DISTNAME=	bb-1.2a
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://maclawran.ca/~sean/bb-dnld/ \
 		http://freefall.freebsd.org/~andreas/download/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # The FreeBSD Ports Team has permission to include this in our CDROM
 # from the author, but others who wish to do likewise will have to
