@@ -2,14 +2,14 @@
 # Date created:         24.Jan.2002
 # Whom:                 netchild@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/icc/Makefile,v 1.11 2002/07/01 17:25:31 netchild Exp $
 #
 
 PORTNAME=	icc
-PORTVERSION=	6.0.149
+PORTVERSION=	6.0.159
 CATEGORIES=	lang linux
 MASTER_SITES=
-DISTNAME=	l_cc_pu_6.0.149
+DISTNAME=	l_cc_pu_6.0.159
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	netchild@FreeBSD.org
@@ -39,12 +39,12 @@ IGNORE=	"Please manually download ${DISTFILES} from ${ICC_SITE}, e.g. from ${ICC
 
 post-extract:
 .for i in \
-	intel-icc6-6.0-149.i386.rpm \
-#	intel-ildb6-6.0-208.i386.rpm \
-#	intel-isubh6-6.0-149.i386.rpm \
-#	intel-ecc6-6.0-149.ia64.rpm \
-#	intel-eldb6-6.0-208.ia64.rpm \
-#	intel-esubh6-6.0-149.ia64.rpm
+	intel-icc6-6.0-159.i386.rpm \
+#	intel-ildb6-6.0-228.i386.rpm \
+#	intel-isubh6-6.0-159.i386.rpm \
+#	intel-ecc6-6.0-159.ia64.rpm \
+#	intel-eldb6-6.0-228.ia64.rpm \
+#	intel-esubh6-6.0-159.ia64.rpm
 	@cd ${WRKSRC};  rpm2cpio ${i} | cpio -idu --quiet
 .endfor
 
