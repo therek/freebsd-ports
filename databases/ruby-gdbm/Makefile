@@ -2,14 +2,14 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-gdbm/Makefile,v 1.2 2000/09/05 12:44:13 knu Exp $
+# $FreeBSD: ports/databases/ruby-gdbm/Makefile,v 1.3 2000/09/06 22:54:58 knu Exp $
 #
 
 PORTNAME=	gdbm
 PORTVERSION=	${RUBY_VERSION}.p3
 CATEGORIES=	databases ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	# ${RUBY_VER}
+#MASTER_SITE_SUBDIR=	${RUBY_VER}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTVERSION:S/.p/-preview/}
 DIST_SUBDIR=	ruby

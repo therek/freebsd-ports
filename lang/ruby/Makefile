@@ -2,14 +2,14 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.32 2000/09/06 21:51:00 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.33 2000/09/06 22:46:12 knu Exp $
 #
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_VERSION}.p3
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	# ${RUBY_VER}
+#MASTER_SITE_SUBDIR=	${RUBY_VER}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/-preview/}
 DIST_SUBDIR=	ruby
 
