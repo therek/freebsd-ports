@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.97 2001/02/14 20:19:39 lioux Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.98 2001/02/14 20:52:38 obrien Exp $
 #
 
 SNAPDATE=	2001-02-05
@@ -122,14 +122,18 @@ post-install:
 	${MV} -f ${PREFIX}/man/man1/g++.1 ${PREFIX}/man/man1/gg++.1
 	${MV} -f ${PREFIX}/man/man1/g77.1 ${PREFIX}/man/man1/gg77.1
 	${MV} -f ${PREFIX}/man/man1/cpp.1 ${PREFIX}/man/man1/gcpp.1
-.if defined(WANT_SHAREDLIBS)
-	${MV} -f ${PREFIX}/lib/libstdc++.so* ${TARGLIB}
-.endif
+#.if defined(WANT_SHAREDLIBS)
+#	${MV} -f ${PREFIX}/lib/libstdc++.so* ${TARGLIB}
+#.endif
 .for info in cpp g77 gcc
 	install-info ${PREFIX}/info/${info}.info ${PREFIX}/info/dir
 .endfor
 	cd ${PREFIX} ;\
-	    find ${TARGLIB} -type f -o -type l	>${WRKDIR}/PLIST.gcc-lib
+	    find ${TARGLIB:S/^${PREFIX}\///} -type f -o -type l	\
+	    	>${WRKDIR}/PLIST.gcc-lib
+	cd ${PREFIX} ;\
+	    find ${TARGLIB:S/^${PREFIX}\///} -type d \
+	    	| sort -r | ${SED} -e 's/^/@dirrm /g' >>${WRKDIR}/PLIST.gcc-lib
 	${ECHO} "r ${TMPPLIST}"			> ${WRKDIR}/ex.script
 	${ECHO} "/Insert PLIST.gcc-lib"		>> ${WRKDIR}/ex.script
 	${ECHO} "d"				>> ${WRKDIR}/ex.script
