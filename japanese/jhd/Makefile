@@ -2,13 +2,13 @@
 # Date created:		Feb 5, 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jhd/Makefile,v 1.3 1999/08/25 05:24:27 obrien Exp $
+# $FreeBSD: ports/japanese/jhd/Makefile,v 1.4 2000/04/11 14:13:59 knu Exp $
 #
 
 PORTNAME=	jhd
 PORTVERSION=	2.3
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.iamas.ac.jp/pub1/UNIX/File/
+MASTER_SITES=	ftp://ftp.iamas.ac.jp/UNIX/File/
 
 MAINTAINER=	taoka@FreeBSD.org
 
