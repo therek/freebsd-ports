@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.206 2001/03/12 17:58:10 dinoex Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.207 2001/03/13 06:47:23 dinoex Exp $
 #
 
     SUBDIR += abook
@@ -20,6 +20,7 @@
     SUBDIR += cucipop
     SUBDIR += cvsmail
     SUBDIR += cyrus
+    SUBDIR += cyrus-imapd
     SUBDIR += distribute
     SUBDIR += drac
     SUBDIR += elm
