@@ -2,23 +2,22 @@
 # Date created:		05 August 2000
 # Whom:			Matt Emmerton <matt@gsicomp.on.ca>
 #
-# $FreeBSD: ports/net/sntop/Makefile,v 1.5 2000/11/14 00:28:41 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sntop
-PORTVERSION=	1.3.1
+PORTVERSION=	1.4.2
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sntop
 
-MAINTAINER=	matt@gsicomp.on.ca
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/fping:${PORTSDIR}/net/fping
 
 GNU_CONFIGURE=	yes
 
 MAN1=		sntop.1
-MANCOMPRESSED=	yes
 
 post-install:
 	@strip ${PREFIX}/bin/sntop
