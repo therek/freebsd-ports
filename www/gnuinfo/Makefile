@@ -2,13 +2,13 @@
 # Date created:		Tue Oct 12 00:02:04 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/www/gnuinfo/Makefile,v 1.2 2000/04/10 00:05:16 cpiazza Exp $
+# $FreeBSD: ports/www/gnuinfo/Makefile,v 1.3 2001/02/05 15:33:22 olgeni Exp $
 #
 
 PORTNAME=	gnuinfo
 PORTVERSION=	1.3
 CATEGORIES=	www
-MASTER_SITES=	http://user.cs.tu-berlin.de/~kraxel/info2html/
+MASTER_SITES=	http://www.wohnheim.uni-ulm.de/allerlei/
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
