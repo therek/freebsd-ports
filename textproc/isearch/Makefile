@@ -2,23 +2,21 @@
 # Date created:			21 Sept 1996
 # Whom:				Pedro
 #
-# $FreeBSD: ports/textproc/isearch/Makefile,v 1.13 2001/08/23 20:21:52 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	isearch
-PORTVERSION=	1.47d
+PORTVERSION=	1.47.01
 CATEGORIES=	textproc databases
 MASTER_SITES=	http://www.etymon.com/pub/Isearch/
 DISTNAME=	Isearch-${PORTVERSION}
 
 MAINTAINER=	pmarquis@pobox.com
 
-GNU_CONFIGURE= yes
+GNU_CONFIGURE=	yes
+MAKE_ARGS=	INSTALL=${PREFIX}/bin
 
 post-install:
-	strip ${PREFIX}/bin/Isearch
-	strip ${PREFIX}/bin/Iindex
-	strip ${PREFIX}/bin/Iutil
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${DOCSDIR}
 	${INSTALL_MAN} ${WRKSRC}/html/*.html ${DOCSDIR}
