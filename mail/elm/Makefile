@@ -2,11 +2,11 @@
 # Date created:				04 Feb 2000
 # Whom:					dhagan@cs.vt.edu
 #
-# $FreeBSD: ports/mail/elm/Makefile,v 1.61 2000/05/29 09:36:12 will Exp $
+# $FreeBSD: ports/mail/elm/Makefile,v 1.62 2001/02/05 15:10:34 olgeni Exp $
 #
 
 PORTNAME=	elm
-PORTVERSION=	2.5.3
+PORTVERSION=	2.5.5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.virginia.edu/pub/elm/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -16,7 +16,7 @@ MAINTAINER=	toasty@dragondata.com
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
-WRKSRC=			${WRKDIR}/elm2.5.3
+WRKSRC=			${WRKDIR}/elm${PORTVERSION}
 NO_LATEST_LINK=		yes
 IS_INTERACTIVE=		yes
 HAS_CONFIGURE=		yes
