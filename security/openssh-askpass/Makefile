@@ -2,7 +2,7 @@
 # Date created:		27 February 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssh-askpass/Makefile,v 1.5 2000/06/29 07:02:49 obrien Exp $
+# $FreeBSD: ports/security/openssh-askpass/Makefile,v 1.6 2001/02/25 05:15:44 kris Exp $
 #
 
 PORTNAME=	OpenSSH-askpass
@@ -30,6 +30,9 @@ CVS_SITES?=	anoncvs@anoncvs1.ca.openbsd.org:/cvs \
 		:pserver:anoncvs@anoncvs1.usa.openbsd.org:/cvs
 STAMPFILE=	${DISTDIR}/${PKGNAME}/.stamp
 WRKSRC=		${WRKDIR}/ssh-askpass
+
+MAN1=		ssh-askpass.1
+MANCOMPRESSED=	yes
 
 do-fetch:
 	@if [ ! -e ${STAMPFILE} ] || \
