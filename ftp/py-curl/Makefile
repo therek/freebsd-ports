@@ -2,11 +2,11 @@
 # Date created:				2 July 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/ftp/py-curl/Makefile,v 1.1 2001/07/03 09:09:29 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	curl
-PORTVERSION=	0.3.6
+PORTVERSION=	0.4.2
 CATEGORIES=	ftp python
 MASTER_SITES=	http://pycurl.sourceforge.net/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
