@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.103 2000/05/06 22:51:30 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.104 2000/05/12 08:19:59 kuriyama Exp $
 #
 
     SUBDIR += bjorb
@@ -65,6 +65,7 @@
     SUBDIR += p5-PGP-Sign
     SUBDIR += pgp
     SUBDIR += pgp5
+    SUBDIR += pgp6
     SUBDIR += pgpgpg
     SUBDIR += pidentd
     SUBDIR += pktsuckers
