@@ -2,14 +2,14 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.12 2001/08/06 10:10:24 wjv Exp $
+# $FreeBSD$
 #
 # View this file with tabstop=4
 #
 
 PORTNAME=			Generic-NQS
 PORTVERSION=		3.50.9
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=			net
 MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
