@@ -3,7 +3,7 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.4 1999/12/27 23:15:16 jedgar Exp $
+# $FreeBSD: ports/games/gracer/Makefile,v 1.5 1999/12/28 12:29:02 jedgar Exp $
 #
 
 DISTNAME= 	gracer-0.1.4
@@ -14,7 +14,7 @@ MAINTAINER=	nox@jelal.kn-bremen.de
 
 BUILD_DEPENDS=	${X11BASE}/lib/libsl.a:${PORTSDIR}/x11-toolkits/plib
 LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
-		gif.5:${PORTSDIR}/graphics/giflib \
+		ungif.5:${PORTSDIR}/graphics/libungif \
 		png.3:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tcl82.1:${PORTSDIR}/lang/tcl82
