@@ -2,11 +2,11 @@
 # Date created:				Thu Jul  5 17:13:11 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/net/jags/Makefile,v 1.1 2001/07/08 14:33:48 dwcjr Exp $
+# $FreeBSD: ports/net/jags/Makefile,v 1.2 2001/07/09 21:50:56 dwcjr Exp $
 #
 
 PORTNAME=	jags
-PORTVERSION=	0.20
+PORTVERSION=	0.20.1
 CATEGORIES=	net
 MASTER_SITES=	http://sumpan.campus.luth.se/software/jags/download/
 
