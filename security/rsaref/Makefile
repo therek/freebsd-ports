@@ -2,7 +2,7 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD: ports/security/rsaref/Makefile,v 1.16 2000/04/09 18:30:24 cpiazza Exp $
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.17 2000/04/21 08:18:55 mharo Exp $
 #
 
 PORTNAME=	rsaref
@@ -13,7 +13,6 @@ MASTER_SITES=	ftp://ftp.deva.net/pub/sources/crypto/ \
 		ftp://ftp.zedz.net/pub/crypto/crypto/LIBS/rsa/ \
 		ftp://ftp.hacktic.nl/pub/crypto/crypto/LIBS/rsa/ \
 		ftp://ftp.demon.net/pub/mirrors/crypto/replay/crypto/LIBS/rsa/ \
-		ftp://ftp.jyu.fi/.3/ftp.zedz.net/pub/replay/crypto/LIBS/rsa/ \
 		ftp://ftp.funet.fi/pub/mirrors/utopia.hacktic.nl/crypto/LIBS/rsa/ \
 		ftp://ftp.fu-berlin.de/unix/security/replay-mirror/crypto/LIBS/rsa/
 DISTNAME=	rsaref20.1996
@@ -43,7 +42,7 @@ do-install:
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/librsaref.a ${WRKSRC}/librsaref.so.2 \
 		${PREFIX}/lib
-	ln -sf librsaref.so.2 ${PREFIX}/lib/librsaref.so
+	${LN} -sf librsaref.so.2 ${PREFIX}/lib/librsaref.so
 	${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/rsaref
