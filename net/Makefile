@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.407 2000/09/24 19:40:37 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.408 2000/09/25 14:43:52 ade Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -53,8 +53,8 @@
     SUBDIR += dgd-net
     SUBDIR += dhid
     SUBDIR += dhcpconf
+    SUBDIR += djbdns
     SUBDIR += dlint
-    SUBDIR += dnscache
     SUBDIR += dnsutl
     SUBDIR += dnswalk
     SUBDIR += doc
