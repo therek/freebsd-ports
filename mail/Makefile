@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.231 2001/06/13 06:09:11 kevlo Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.232 2001/06/15 17:27:55 dinoex Exp $
 #
 
     SUBDIR += abook
@@ -57,6 +57,7 @@
     SUBDIR += isync
     SUBDIR += junkfilter
     SUBDIR += kbiff
+    SUBDIR += kiltdown
     SUBDIR += knewmail
     SUBDIR += lbdb
     SUBDIR += libesmtp
