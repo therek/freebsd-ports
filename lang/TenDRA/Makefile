@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.15 2000/08/07 18:51:02 rnordier Exp $
+# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.16 2000/10/08 17:33:20 obrien Exp $
 #
 
 PORTNAME=	TenDRA
@@ -17,9 +17,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 400000
 BROKEN=		"Does not compile."
-.endif
 
 ONLY_FOR_ARCHS=	i386
 OSRELEASE!=	uname -r
