@@ -2,7 +2,7 @@
 # Date created:        8 Jun 1999
 # Whom:                Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/eterm/Makefile,v 1.4 2000/04/13 09:16:13 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eterm
@@ -24,8 +24,13 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=  LIBS="-L${LOCALBASE}/lib -lxpg4"
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=  LIBS="-L${LOCALBASE}/lib -lxpg4" LOCALBASE="${LOCALBASE}"
 MAN1=		Eterm.1
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/libmej/debug.c ${WRKSRC}/libmej/strings.c
 
 post-install:
 .if !defined(NOPORTDOCS)
