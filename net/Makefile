@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.550 2001/06/03 17:53:42 ume Exp $
+# $FreeBSD: ports/net/Makefile,v 1.551 2001/06/03 17:59:50 ume Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -300,6 +300,7 @@
     SUBDIR += radreport
     SUBDIR += ratoolset
     SUBDIR += rboot
+    SUBDIR += rdesktop
     SUBDIR += rdist6
     SUBDIR += redir
     SUBDIR += relay
