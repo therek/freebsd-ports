@@ -1,7 +1,8 @@
-# $FreeBSD: ports/net/Makefile,v 1.460 2001/02/12 19:44:36 joe Exp $
+# $FreeBSD: ports/net/Makefile,v 1.461 2001/02/12 19:49:37 joe Exp $
 #
 
     SUBDIR += 44bsd-rdist
+    SUBDIR += NeTraMet
     SUBDIR += SSLtelnet
     SUBDIR += adasockets
     SUBDIR += adns
