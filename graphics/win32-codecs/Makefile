@@ -2,14 +2,14 @@
 # Date created: 	16 September 2000
 # Whom: 		Holger Lamm
 #
-# $FreeBSD: ports/graphics/win32-codecs/Makefile,v 1.9 2001/01/28 21:30:40 sf Exp $
+# $FreeBSD: ports/graphics/win32-codecs/Makefile,v 1.10 2001/02/13 03:05:49 lioux Exp $
 #
 
 PORTNAME=	win32-codecs
 PORTVERSION=	${CODEC_VERSION}
 CATEGORIES=	graphics audio
 MASTER_SITES=	http://ernie.eit.uni-kl.de/avifile/ \
-		http://divx.euro.ru/ \
+		http://avifile.sourceforge.net/ \
 		http://www.toon.eu.org/divx/
 DISTFILES=	binaries-${CODEC_VERSION}.zip \
 		wmvds32.ax.gz
