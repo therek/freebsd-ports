@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.29 2000/05/07 13:20:51 jedgar Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.30 2000/06/02 22:45:57 will Exp $
 #
 
     SUBDIR += arc
@@ -14,6 +14,7 @@
     SUBDIR += liblzo
     SUBDIR += linux_rar
     SUBDIR += lzo
+    SUBDIR += lzop
     SUBDIR += makeself
     SUBDIR += mscompress
     SUBDIR += nulib
