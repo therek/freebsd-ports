@@ -2,14 +2,13 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.13 2000/07/15 16:19:21 kevlo Exp $
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.14 2000/10/05 06:57:37 reg Exp $
 #
 
 PORTNAME=	gphoto
 PORTVERSION=	0.4.3
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.gphoto.org/projects/gphoto/pub/tar/stable/ \
-		ftp://ftp.uk.linux.org/pub/gphoto/0.4/
+MASTER_SITES=	http://www.gphoto.net/dist/
        
 MAINTAINER=	ports@FreeBSD.org
 
@@ -17,9 +16,9 @@ RUN_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 
 USE_IMLIB=	yes
 USE_LIBTOOL=	yes
-INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+INSTALLS_SHLIB=	yes
 
 MAN1=		gphoto.1
 
