@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.61 2000/10/26 13:00:45 sobomax Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.62 2000/12/19 12:39:22 will Exp $
 #
 
     SUBDIR += aftp
@@ -36,6 +36,7 @@
     SUBDIR += spim
     SUBDIR += stella
     SUBDIR += stonx
+    SUBDIR += svr4_base
     SUBDIR += tkhfs
     SUBDIR += truereality
     SUBDIR += tuxnes
