@@ -2,13 +2,14 @@
 # Date created:        17 Feb 1999
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/audio/shorten/Makefile,v 1.2 1999/08/25 04:36:08 obrien Exp $
+# $FreeBSD: ports/audio/shorten/Makefile,v 1.3 2000/04/08 21:24:24 mharo Exp $
 #
 
 PORTNAME=	shorten
 PORTVERSION=	2.3a
 CATEGORIES=	audio archivers
-MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	sec@42.org
