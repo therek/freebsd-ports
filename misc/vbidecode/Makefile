@@ -2,20 +2,21 @@
 # Date created:		Mon June 7 16:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/vbidecode/Makefile,v 1.5 2000/04/14 08:46:58 asami Exp $
+# $FreeBSD: ports/misc/vbidecode/Makefile,v 1.6 2000/07/25 10:43:03 roger Exp $
 #
 # Note: vbidecode is one part of the bttv distribution, the Linux bt848 driver
 # It therefore has a DISTNAME of vbidecode but DISTFILES of bttv
 
-PORTNAME=	vbidecode
-PORTVERSION=	1.1.3
-CATEGORIES=	misc
-MASTER_SITES=	http://people.freebsd.org/~roger/
-DISTFILES=	bttv-0.6.4.tar.gz
+PORTNAME=		vbidecode
+PORTVERSION=		1.1.3
+CATEGORIES=		misc
+MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	roger
+DISTNAME=		bttv-0.6.4
 
-MAINTAINER=	roger@freebsd.org
+MAINTAINER=		roger@freebsd.org
 
-WRKSRC=		${WRKDIR}/bttv/apps/vbidecode
+WRKSRC=			${WRKDIR}/bttv/apps/vbidecode
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vbidecode ${PREFIX}/bin
