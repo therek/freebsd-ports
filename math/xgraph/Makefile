@@ -3,16 +3,14 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/xgraph/Makefile,v 1.12 1999/08/25 07:18:34 obrien Exp $
+# $FreeBSD: ports/math/xgraph/Makefile,v 1.13 1999/08/31 06:47:57 mharo Exp $
 #
 
 DISTNAME=	xgraph-11.3.2
 CATEGORIES=	math print
-MASTER_SITES=	ftp://ftp.iis.u-tokyo.ac.jp/pub/X/misc/ \
-		ftp://ftp.tk.mesh.ad.jp/pub/X/misc/ \
-		ftp://ftp.eos.hokudai.ac.jp/pub/X11/misc/
+MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sanpei@sanpei.org
 
 USE_IMAKE=	yes
 MAN1=		xgraph.1
