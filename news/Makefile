@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.64 2001/03/05 07:15:29 ijliao Exp $
+# $FreeBSD: ports/news/Makefile,v 1.65 2001/04/08 10:51:34 dinoex Exp $
 #
 
     SUBDIR += atp
@@ -43,6 +43,7 @@
     SUBDIR += slrn
     SUBDIR += slurp
     SUBDIR += suck
+    SUBDIR += suck-cnews
     SUBDIR += t-gnus-emacs20
     SUBDIR += t-gnus-mule
     SUBDIR += t-gnus-xemacs21-mule
