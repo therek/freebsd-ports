@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gedit
-# Version required:			0.6.0
+# Version required:			0.6.1
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.9 1999/10/25 08:07:20 nakai Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.10 1999/11/21 00:41:55 cpiazza Exp $
 #
 
-DISTNAME=	gedit-0.6.0
+DISTNAME=	gedit-0.6.1
 CATEGORIES=	editors gnome
 MASTER_SITES=	http://www.oscentral.org/files/software/ \
 		http://gedit.pn.org/tar/ \
