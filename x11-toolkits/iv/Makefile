@@ -3,7 +3,7 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.21 1999/08/31 02:59:21 peter Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.22 2000/01/25 02:34:47 tanimura Exp $
 #
 
 DISTNAME=	3.2a
@@ -87,6 +87,5 @@ post-install:
 	${LN} -fs libUnidraw.so.${IV_LIB_VER} ${PREFIX}/interviews/lib/FREEBSD/libUnidraw.so
 .endif
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
-
 
 .include <bsd.port.post.mk>
