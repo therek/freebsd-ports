@@ -2,7 +2,7 @@
 # Date created:        18 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/textproc/htdig/Makefile,v 1.15 2000/03/04 08:24:21 kris Exp $
+# $FreeBSD: ports/textproc/htdig/Makefile,v 1.16 2000/04/09 21:52:39 cpiazza Exp $
 #
 
 PORTNAME=	htdig
@@ -18,7 +18,7 @@ MASTER_SITE_SUBDIR=	apps/www/indexing
 
 MAINTAINER=	billf@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/share/apache:${PORTSDIR}/www/apache13
+RUN_DEPENDS=	${LOCALBASE}/share/doc/apache:${PORTSDIR}/www/apache13
 
 Y2K=		http://www.htdig.org/FAQ.html#q1.7
 
