@@ -3,7 +3,7 @@
 # Date created:        7 April 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/nasm/Makefile,v 1.6 1999/08/25 05:48:50 obrien Exp $
 #
 
 DISTNAME=	nasm-0.98
@@ -16,5 +16,8 @@ MAINTAINER=	murray@cdrom.com
 GNU_CONFIGURE=	yes
 
 MAN1=		nasm.1 ndisasm.1
+
+post-install:
+	${LN} -sf nasm ${PREFIX}/bin/${DISTNAME}
 
 .include <bsd.port.mk>
