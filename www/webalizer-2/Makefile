@@ -2,7 +2,7 @@
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.17 2000/05/06 11:23:14 ache Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.18 2000/05/29 23:34:28 will Exp $
 #
 
 PORTNAME=	webalizer
@@ -34,7 +34,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/-src$//}
 MAKE_ARGS+=	CFLAGS="${CFLAGS}"
 
 .if defined(BATCH)
-WEBALIZER_LANG=	english
+# no cosmetique spaces allowed
+WEBALIZER_LANG=english
 .endif
 
 .if defined(WEBALIZER_LANG)
