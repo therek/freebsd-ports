@@ -2,14 +2,13 @@
 # Date created:		9 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.4 2000/08/03 14:28:33 sanpei Exp $
+# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.5 2001/02/05 16:18:32 olgeni Exp $
 #
 
 PORTNAME=	xkbctrl
 PORTVERSION=	1.0
 CATEGORIES=	x11
-MASTER_SITES=	ftp://core.ring.gr.jp/pub/X/opengroup/unsupported/test/Xkb/programs/ \
-		ftp://ring.nacsis.ac.jp/pub/X/opengroup/unsupported/test/Xkb/programs/
+MASTER_SITES=	ftp://ftp.x.org/pub/unsupported/test/Xkb/programs/
 DISTFILES=	Imakefile xkbctrl.c
 
 MAINTAINER=	sanpei@FreeBSD.org
