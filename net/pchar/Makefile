@@ -4,10 +4,10 @@
 # Date created:			  Wed Nov 03, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/pchar/Makefile,v 1.3 2000/01/18 12:34:23 sumikawa Exp $
+# $FreeBSD: ports/net/pchar/Makefile,v 1.4 2000/01/24 22:39:05 obrien Exp $
 #
 
-DISTNAME=	pchar-1.1
+DISTNAME=	pchar-1.1.1
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.ca.sandia.gov/~bmah/Software/pchar/
 
