@@ -2,7 +2,7 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.4 2000/09/07 14:02:51 nbm Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.5 2000/09/08 10:07:11 nbm Exp $
 #
 
 PORTNAME=	emboss
@@ -19,6 +19,7 @@ LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd \
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+USE_XLIB=	yes
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/gd" \
 		LIBS="-L${LOCALBASE}/lib"
