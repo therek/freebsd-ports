@@ -3,10 +3,10 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/latex/Makefile,v 1.39 1999/08/31 01:44:56 peter Exp $
 #
 
-VERSION=	99.06
+VERSION=	99.12
 DISTNAME=	latex
 PKGNAME=	latex2e-${VERSION}
 CATEGORIES=     print
