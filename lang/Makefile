@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.158 1999/12/29 09:19:25 steve Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.159 2000/01/05 18:33:09 jseger Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -72,6 +72,7 @@
     SUBDIR += pike
     SUBDIR += ptoc
     SUBDIR += python
+    SUBDIR += python+ipv6
     SUBDIR += python-doc-html
     SUBDIR += python-doc-pdf-a4
     SUBDIR += python-doc-pdf-letter
