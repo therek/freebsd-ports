@@ -2,7 +2,7 @@
 # Date created:		8 Apr 1996
 # Whom:			Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/databases/gdbm/Makefile,v 1.14 2001/06/16 13:58:38 roam Exp $
+# $FreeBSD: ports/databases/gdbm/Makefile,v 1.15 2001/08/30 03:58:32 lioux Exp $
 #
 
 PORTNAME=	gdbm
@@ -15,6 +15,9 @@ MAINTAINER=	clefevre@citeweb.net
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+USE_GMAKE=	yes
+# PREFIX isn't honored. force it w/ prefix.
+MAKE_ARGS=	prefix=${PREFIX}
 
 MAN3=		gdbm.3
 
