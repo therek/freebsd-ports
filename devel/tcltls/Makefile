@@ -2,12 +2,12 @@
 # Date created:				4 May 2000
 # Whom:					mi@aldan.algebra.com
 #
-# $FreeBSD: ports/devel/tcltls/Makefile,v 1.1 2000/06/09 03:27:53 will Exp $
+# $FreeBSD: ports/devel/tcltls/Makefile,v 1.2 2001/02/21 22:37:37 mi Exp $
 #
 
 PORTNAME=	tcltls
 PORTVERSION=	1.4
-CATEGORIES=	devel tcl80 tcl82 tcl83
+CATEGORIES=	devel tcl83
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=tls
 DISTNAME=	tls${PORTVERSION}
