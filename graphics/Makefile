@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.330 2001/07/08 07:05:18 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.331 2001/07/08 16:44:17 kevlo Exp $
 #
 
     SUBDIR += 4va
@@ -204,6 +204,7 @@
     SUBDIR += py-imaging-handbook
     SUBDIR += py-ming
     SUBDIR += py-opengl
+    SUBDIR += py-paint
     SUBDIR += qcread
     SUBDIR += qdraw
     SUBDIR += qiv
