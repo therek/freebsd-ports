@@ -3,11 +3,11 @@
 # Date created:			Apr 19, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/emirror/Makefile,v 1.1 2001/04/19 07:42:07 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emirror
-PORTVERSION=	2.1.19
+PORTVERSION=	2.1.20
 CATEGORIES=	ftp python
 MASTER_SITES=	ftp://eclipt.uni-klu.ac.at/projects/emirror/ \
 		ftp://emirror.sourceforge.net/pub/emirror/ \
