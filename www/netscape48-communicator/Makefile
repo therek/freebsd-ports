@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.50 1999/10/08 16:15:42 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.51 1999/10/08 17:17:35 sada Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -51,12 +51,6 @@ RESTRICTED=     "Contains strong cryptography"
 .endif
 
 .SILENT:
-
-.if !defined(I_WANT_NORMAL_BEHAVIOR)
-makesum:
-	${ECHO} "You should make ${FILESDIR}/md5 by hand"
-	${FALSE}
-.endif
 
 .if !defined(USE_128BIT) && !defined(NO_FORTIFY)
 pre-extract:
