@@ -2,7 +2,7 @@
 # Date created:		12 Apr 1997
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/han/Makefile,v 1.8 2000/07/16 09:01:50 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	han
@@ -15,6 +15,10 @@ MAINTAINER=	cjh@FreeBSD.org
 ONLY_FOR_ARCHS=	i386
 
 USE_GMAKE=	YES
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/src/vt.c ${WRKSRC}/lib/mem.c
 
 post-configure:
 	${SED} -e 's%%WRKSRC%%${WRKSRC}' \
