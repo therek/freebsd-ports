@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.13 2004/01/15 23:31:49 ale Exp $
+# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.14 2004/01/24 13:15:54 ale Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -66,7 +66,9 @@ SESSION		"session support" ${WITH_SESSION:-OFF} \
 SHMOP		"shmop support" ${WITH_SHMOP:-OFF} \
 SIMPLEXML	"simplexml support" ${WITH_SIMPLEXML:-OFF} \
 SNMP		"SNMP support (implies OPENSSL)" ${WITH_SNMP:-OFF} \
+SOAP		"SOAP support" ${WITH_SOAP:-OFF} \
 SOCKETS		"sockets support" ${WITH_SOCKETS:-OFF} \
+SPL		"Standard PHP Library support" ${WITH_SPL:-ON} \
 SQLITE		"sqlite support" ${WITH_SQLITE:-OFF} \
 SYBASEDB	"Sybase database support (DB-lib)" ${WITH_SYBASEDB:-OFF} \
 SYBASECT	"Sybase database support (CT-lib)" ${WITH_SYBASECT:-OFF} \
