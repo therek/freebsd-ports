@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.560 2001/06/10 17:24:09 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.561 2001/06/11 03:38:49 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -135,6 +135,7 @@
     SUBDIR += gindent
     SUBDIR += glade
     SUBDIR += glade--
+    SUBDIR += glg
     SUBDIR += glib12
     SUBDIR += glib13
     SUBDIR += global
