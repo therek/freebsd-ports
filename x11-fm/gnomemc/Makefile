@@ -2,11 +2,11 @@
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.23 2001/05/04 21:39:50 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomemc
-PORTVERSION=	4.5.54
+PORTVERSION=	4.5.55
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
@@ -19,11 +19,13 @@ USE_GMAKE=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-edit -with-ncurses
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include \
+		LDFLAGS=-L${LOCALBASE}/lib
+CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-unknown-freebsd${OSREL}
 
 post-patch:
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\$\(libdir\)/mc|\$\(datadir\)/mc|g'
+	@find ${WRKSRC} -name "Makefile.in*" | xargs ${PERL} -pi -e \
+		's|\$\(libdir\)/mc|\$\(datadir\)/mc|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
