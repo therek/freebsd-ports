@@ -2,7 +2,7 @@
 # Date created:				6 May 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/science/clhep/Makefile,v 1.1 2001/05/08 00:02:21 will Exp $
 #
 
 PORTNAME=	clhep
@@ -15,5 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 WRKSRC=		${WRKDIR}/CLHEP
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+
+PLIST_SUB=	TARGET=${CONFIGURE_TARGET}
 
 .include <bsd.port.mk>
