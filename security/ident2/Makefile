@@ -2,14 +2,14 @@
 # Date created:				30 Nov 1999
 # Whom:					rod@zort.on.ca
 #
-# $FreeBSD: ports/security/ident2/Makefile,v 1.4 2001/05/21 18:14:41 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ident2
-PORTVERSION=	1.02
+PORTVERSION=	1.03
 CATEGORIES=	security net
-MASTER_SITES=	http://netgraft.com/downloads/ident2/
-DISTNAME=	ident2-v1.02_FINAL
+MASTER_SITES=	http://michael.bacarella.com/projects/ident2/
+DISTNAME=	ident2-v${PORTVERSION}_FINAL
 
 MAINTAINER=	scorpio@drkshdw.org
 
