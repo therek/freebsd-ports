@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.516 2001/04/07 06:16:09 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.517 2001/04/07 07:11:21 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -325,7 +325,6 @@
     SUBDIR += tcpstat
     SUBDIR += tcptrace
     SUBDIR += tcpview
-    SUBDIR += tcserver
     SUBDIR += tdetect
     SUBDIR += telnetx
     SUBDIR += telserv
