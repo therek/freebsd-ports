@@ -1,8 +1,8 @@
-o# New ports collection makefile for:	ONEW for FreeWnn
+# New ports collection makefile for:	ONEW for FreeWnn
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-freewnn/Makefile,v 1.8 2000/09/08 04:34:22 taoka Exp $
+# $FreeBSD: ports/japanese/onew-freewnn/Makefile,v 1.9 2001/08/27 01:20:23 taoka Exp $
 #
 
 PORTNAME=	onew
