@@ -2,11 +2,12 @@
 # Date created:		16 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.1 2001/08/17 08:16:49 wjv Exp $
 #
 
 PORTNAME=	twisted
 PORTVERSION=	0.9.5
+PORTREVISION=	1
 CATEGORIES=	devel net python
 MASTER_SITES=	http://twistedmatrix.com/downloads/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
