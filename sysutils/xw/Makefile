@@ -2,15 +2,18 @@
 # Date created:                       26 January 20001
 # Whom:                               Daniel Hemmerich <dan@spot.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/xw/Makefile,v 1.1 2001/01/27 03:59:41 will Exp $
 #
 
-PORTNAME=      xw
-PORTVERSION=   0.0.8
-CATEGORIES=    sysutils
-MASTER_SITES=  ftp://ftp.gurubox.com/pub/xw/
+PORTNAME=	xw
+PORTVERSION=	0.1.0
+CATEGORIES=	sysutils
+MASTER_SITES=	ftp://ftp.gurubox.com/pub/xw/ \
+		ftp://ftp.databits.net/pub/xw/
 
-MAINTAINER=    dan@spot.org
+MAINTAINER=	dan@spot.org
+
+BUILD_DEPENDS=	imlib:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG=${X11BASE}/bin/gtk12-config
 
