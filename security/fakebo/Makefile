@@ -3,15 +3,15 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.4 1999/08/31 06:50:05 mharo Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.5 1999/10/21 19:41:48 kris Exp $
 #
 
 DISTNAME=	fakebo-0.4.1
 CATEGORIES=	security
 MASTER_SITES=	http://yi.com/home/KosturjakVlatko/ \
-		ftp://ftp.c-com.net/pub/.10/LinuxBerg/files/console/ \
-		ftp://ftp.bitcon.no/.10/linux/linuxberg/files/console/ \
-		ftp://ftp.ist.utl.pt/pub/linuxberg/files/console/
+		ftp://ftp.bitcon.no/.4/console/adm/ \
+		ftp://ftp.iinet.net.au/mirrors1/berg/files/console/adm/ \
+		ftp://ftp.linux.hr/pub/fakebo/
 
 MAINTAINER=	kris@FreeBSD.org
 
