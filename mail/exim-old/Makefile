@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.48 2000/05/18 13:59:30 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.49 2000/05/23 09:23:44 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -99,7 +99,7 @@ SEDLIST+=	-e 's,^AUTH_PLAINTEXT,\#AUTH_PLAINTEXT,'
 .endif
 
 .if defined(WITH_PGSQL)
-LIB_DEPENDS+=	libpq.2:${PORTSDIR}/databases/postgresql
+LIB_DEPENDS+=	pq.2:${PORTSDIR}/databases/postgresql
 SEDLIST+=	-e 's,XX_PGSQL_LIBS_XX,-L${PREFIX}/pgsql/lib -lpq,' \
 		-e 's,XX_PGSQL_INCLUDE_XX,-I${PREFIX}/pgsql/include,' \
 		-e 's,^\# LOOKUP_PGSQL,LOOKUP_PGSQL,'
