@@ -4,7 +4,7 @@
 # based on NetBSD pkgsrc/print/lilypond
 #
 # $NetBSD: Makefile,v 1.1.1.1 2000/10/15 17:32:11 rh Exp $
-# $FreeBSD: ports/print/lilypond/Makefile,v 1.3 2001/05/31 22:48:50 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lilypond
@@ -17,6 +17,8 @@ MAINTAINER=	trevor@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/latex:${PORTSDIR}/print/teTeX
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
+
+BROKEN=		"needs bison 1.28 or earlier"
 
 GNU_CONFIGURE=	YES
 #CONFIGURE_ENV=	${MAKEINFO}="makeinfo --no-split"
