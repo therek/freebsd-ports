@@ -2,14 +2,13 @@
 # Date created:			Wed Aug 13 18:34:14 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/mail/majorcool/Makefile,v 1.16 2000/07/22 14:24:34 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	majorcool
 PORTVERSION=	1.3.2
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.netsw.org/netsw/Network/Mail/Tools/ListManager/majordomo/ \
-		ftp://ftp.nhl.nl/pub/unix/MajorDomo/
+MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 
