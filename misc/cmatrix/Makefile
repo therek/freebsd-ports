@@ -2,7 +2,7 @@
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/cmatrix/Makefile,v 1.6 2000/04/14 08:45:27 asami Exp $
+# $FreeBSD: ports/misc/cmatrix/Makefile,v 1.7 2000/04/18 00:18:50 mharo Exp $
 #
 
 PORTNAME=	cmatrix
@@ -10,7 +10,7 @@ PORTVERSION=	1.1b
 CATEGORIES=	misc
 MASTER_SITES=	http://www.asty.org/cmatrix/dist/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
 MAN1=		cmatrix.1
 
