@@ -1,13 +1,13 @@
 # New ports collection makefile for:	gnomecore
-# Version required:			1.0.53
+# Version required:			1.0.54
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.26 1999/08/31 02:50:19 peter Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.27 1999/10/14 03:42:36 nakai Exp $
 #
 
-DISTNAME=	gnome-core-1.0.53
-PKGNAME=	gnomecore-1.0.53
+DISTNAME=	gnome-core-1.0.54
+PKGNAME=	gnomecore-1.0.54
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gnome-core
