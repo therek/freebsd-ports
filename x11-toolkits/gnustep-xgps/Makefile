@@ -2,11 +2,11 @@
 # Date created:         19 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnustep-xgps/Makefile,v 1.19 2001/07/02 11:50:38 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnustep-xgps
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.5
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/
 
