@@ -2,11 +2,11 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.7 2000/09/07 08:09:27 nakai Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.8 2000/09/12 10:07:44 sobomax Exp $
 #
 
 PORTNAME=	dedit
-PORTVERSION=	0.5.10
+PORTVERSION=	0.5.11
 CATEGORIES=	editors gnome
 MASTER_SITES=	ftp://ftp.debian.org/debian/dists/unstable/main/source/editors/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
