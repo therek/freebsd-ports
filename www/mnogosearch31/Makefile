@@ -2,7 +2,7 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.3 2001/01/29 23:28:50 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.4 2001/01/29 23:31:17 ache Exp $
 #
 
 PORTNAME=       mnogosearch
@@ -57,9 +57,9 @@ pre-install:
 	@${MKDIR} ${PREFIX}/share/mnogosearch
 
 post-install:
-	cp -R ${WRKSRC}/create ${PREFIX}/share/mnogosearch
-	/bin/chmod 700 /var/mnogosearch/cache
-	/usr/sbin/chown nobody.nogroup /var/mnogosearch/cache
+	${CP} -R ${WRKSRC}/create ${PREFIX}/share/mnogosearch
+	${CHMOD} 700 /var/mnogosearch/cache
+	${CHOWN} nobody.nogroup /var/mnogosearch/cache
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/mnogosearch
 	@${ECHO}
 	@${CAT} ${PKGMESSAGE}
