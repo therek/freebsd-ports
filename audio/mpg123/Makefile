@@ -3,7 +3,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.15 1999/08/25 11:25:01 jkoshy Exp $
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.16 1999/08/27 21:13:34 mharo Exp $
 #
 
 DISTNAME=	mpg123-0.59r
@@ -14,6 +14,8 @@ MASTER_SITES=	http://www.mpg123.de/mpg123/ \
 		http://ftp.tu-clausthal.de/pub/unix/audio/mpg123/
 
 MAINTAINER=	jkoshy@freebsd.org
+
+ONLY_FOR_ARCHS=	i836
 
 MAN1=		mpg123.1
 
