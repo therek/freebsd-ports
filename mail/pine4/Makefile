@@ -2,18 +2,15 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.51 2001/03/25 20:17:46 trevor Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.52 2001/04/05 03:21:41 nsayer Exp $
 #
-# The changes to ?= on some of these lines is required for the
-# pine4-ssl port. Also, please mirror changes to the files/
-# directory to the pine4-ssl port.
 
-PORTNAME?=	pine
-PORTVERSION?=	4.33
+PORTNAME=	pine
+PORTVERSION=	4.33
 PORTREVISION=	1
 CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
-DISTNAME?=	${PORTNAME}${PORTVERSION}
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER?=	ports@freebsd.org
 
@@ -102,9 +99,4 @@ post-install:
 	${PREFIX}/bin/pine -P ${PREFIX}/etc/pine.conf -conf >${WRKSRC}/pine.conf
 	${INSTALL_DATA} ${WRKSRC}/pine.conf ${PREFIX}/etc/pine.conf
 
-# hack to allow slave ports to include bsd.port.pre.mk and then this file
-.if defined(PRE_MK_INCLUDED)
-.include <bsd.port.post.mk>
-.else
 .include <bsd.port.mk>
-.endif
