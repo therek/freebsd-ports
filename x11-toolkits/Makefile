@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.36 1999/08/31 02:59:06 peter Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.37 1999/09/05 16:32:09 jseger Exp $
 #
 
     SUBDIR += FWF
@@ -33,7 +33,6 @@
     SUBDIR += rubytk
     SUBDIR += slingshot
     SUBDIR += tix
-    SUBDIR += tk41
     SUBDIR += tk42
     SUBDIR += tk80
     SUBDIR += tk81
