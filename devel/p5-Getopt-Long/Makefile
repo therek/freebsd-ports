@@ -2,11 +2,11 @@
 # Date created:				31 May 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Getopt-Long/Makefile,v 1.2 2001/06/12 19:24:35 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Getopt-Long
-PORTVERSION=	2.26
+PORTVERSION=	2.31
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Getopt
