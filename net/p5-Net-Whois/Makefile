@@ -2,7 +2,7 @@
 # Date created:				June 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net-Whois/Makefile,v 1.10 2000/10/23 21:03:03 will Exp $
+# $FreeBSD: ports/net/p5-Net-Whois/Makefile,v 1.11 2000/10/24 22:39:55 will Exp $
 #
 
 PORTNAME=	Net-Whois
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@chg.ru
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/Locale/Country.pm:${PORTSDIR}/misc/p5-Locale-Codes
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Locale/Country.pm:${PORTSDIR}/misc/p5-Locale-Codes
 
 USE_PERL5=	YES
 
