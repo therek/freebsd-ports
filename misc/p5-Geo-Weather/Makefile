@@ -2,11 +2,11 @@
 # Date created:				2 August 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/misc/p5-Geo-Weather/Makefile,v 1.2 2001/08/22 23:06:24 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Geo-Weather
-PORTVERSION=	0.08
+PORTVERSION=	0.09
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
 		ftp://ftp.innercite.com/pub/perl/
