@@ -2,7 +2,7 @@
 # Date created:				Oct 15, 1999
 # Whom:					Mikhail Teterin
 #
-# $FreeBSD: ports/editors/fb/Makefile,v 1.2 2000/04/14 00:25:28 mharo Exp $
+# $FreeBSD: ports/editors/fb/Makefile,v 1.3 2001/02/05 14:36:16 olgeni Exp $
 #
 
 PORTNAME=	fb
@@ -18,8 +18,7 @@ NO_WRKSUBDIR=	Yes
 
 MAN1=		fb.1
 MANCOMPRESSED=	maybe
-
-do-configure:
-	${SED} 's|UL|${PREFIX}|' < ${FILESDIR}/Makefile.in > ${WRKSRC}/Makefile
+MAKEFILE=	${FILESDIR}/Makefile.in
+MAKE_ARGS+=	PREFIX="${PREFIX}"
 
 .include <bsd.port.mk>
