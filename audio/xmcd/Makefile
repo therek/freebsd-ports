@@ -2,11 +2,11 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD: ports/audio/xmcd/Makefile,v 1.28 2001/02/12 06:43:04 sf Exp $
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.29 2001/04/21 17:07:39 deischen Exp $
 #
 
 PORTNAME=	xmcd
-PORTVERSION=	2.6
+PORTVERSION=	3.0.1
 PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.ibiblio.org/tkan/download/xmcd/src/
@@ -19,9 +19,10 @@ BUILD_DEPENDS=	${RMAN}:${PORTSDIR}/x11/XFree86-4-clients
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes
+WRKSRC=		$(WRKDIR)/xmcd-3.0
 PLIST_SUB+=	RELEASE=${OSREL:R} ARCH=${ARCH}
 
-MAN1=		cda.1 cddbcmd.1 dp2xmcd.1 wm2xmcd.1 xmcd.1
+MAN1=		cda.1 xmcd.1
 MANCOMPRESSED=	no
 RMAN=		${X11BASE}/bin/rman
 
