@@ -2,14 +2,16 @@
 # Date created:				25 April 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/py-irclib/Makefile,v 1.1 2001/05/24 13:20:31 ijliao Exp $
 #
 
 PORTNAME=	irclib
 PORTVERSION=	0.3.1
 CATEGORIES=	irc python
 MASTER_SITES=	http://joel.rosdahl.net/hacks/ \
-		http://www3.kr.freebsd.org/~pekry/distfiles/
+		http://www3.kr.freebsd.org/~perky/distfiles/ \
+		http://www2.freebsd-kr.org/distfiles/ \
+		ftp://ftp2.python.or.kr/pub/FreeBSD/ports/distfiles/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	perky@python.or.kr
