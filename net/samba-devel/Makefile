@@ -2,12 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.68 2001/09/01 05:18:45 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.2.1a
-PORTREVISION=	2
+PORTVERSION=	2.2.2
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://samba.anu.edu.au/pub/samba/%SUBDIR%/ \
@@ -118,13 +117,12 @@ post-install:
 			${WRKDIR}/${DISTNAME}/Read-Manifest-Now		\
 			${WRKDIR}/${DISTNAME}/Roadmap			\
 			${WRKDIR}/${DISTNAME}/WHATSNEW.txt		\
-			${WRKDIR}/${DISTNAME}/docs/*.reg		\
 			${WRKDIR}/${DISTNAME}/docs/THANKS		\
 			${WRKDIR}/${DISTNAME}/docs/announce		\
 			${WRKDIR}/${DISTNAME}/docs/history ; do		\
 		${INSTALL_DATA} $$i ${DOCSDIR} ;		\
 	done
-	for i in faq htmldocs textdocs ; do			\
+	for i in faq htmldocs textdocs Registry ; do			\
 		${MKDIR} ${DOCSDIR}/$$i ;		\
 		for j in ${WRKDIR}/${DISTNAME}/docs/$$i/* ; do		\
 			if [ $$j != ${WRKDIR}/${DISTNAME}/docs/htmldocs/using_samba ] ; then \
