@@ -2,15 +2,13 @@
 # Date created:         15 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/net/tintin++/Makefile,v 1.15 2000/09/26 10:26:26 foxfair Exp $
+# $FreeBSD: ports/net/tintin++/Makefile,v 1.16 2000/09/26 14:50:36 ade Exp $
 #
 
 PORTNAME=	tintin
 PORTVERSION=	1.5.9
 CATEGORIES=     net games
-MASTER_SITES=   ftp://ftp.walrus.com/pub/avatar/clients/ \
-		ftp://ftp.cctpu.edu.ru/pub/comp/networking/mud/ \
-		ftp://iclub.nsu.ru/pub/mud/clients/tintin++/
+MASTER_SITES=   http://mail.newclear.net/tintin/download/
 DISTNAME=	tintin++v1.5pl9
 
 MAINTAINER=	jhp@cocoja.holywar.net
