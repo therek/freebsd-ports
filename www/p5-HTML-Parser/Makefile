@@ -3,11 +3,11 @@
 # Date Created:				28 April 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-Parser/Makefile,v 1.12 1999/08/31 06:52:06 mharo Exp $
+# $FreeBSD: ports/www/p5-HTML-Parser/Makefile,v 1.13 1999/12/31 02:13:11 steve Exp $
 #
 
-DISTNAME=       HTML-Parser-3.02
-PKGNAME=        p5-HTML-Parser-3.02
+DISTNAME=       HTML-Parser-3.05
+PKGNAME=        p5-HTML-Parser-3.05
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
