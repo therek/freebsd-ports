@@ -1,9 +1,9 @@
 # New ports collection makefile for:	blt
 # Version required:	2.4m
-# Date created:		04 November 1999
+# Date created:		22 September 1998
 # Whom:			Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.27 1999/08/31 02:59:10 peter Exp $
+# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.28 1999/11/04 10:49:15 kjc Exp $
 #
 
 DISTNAME=	BLT2.4m
