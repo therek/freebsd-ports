@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.263 2003/11/09 11:13:56 maho Exp $
+# $FreeBSD: ports/MOVED,v 1.264 2003/11/09 11:28:19 maho Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -699,3 +699,4 @@ cad/kaskade|math/kaskade|2003-11-08|moved to math category
 misc/icemc||2003-11-08|author no longer develops program, distfile gone
 editors/openoffice-1.1-cz|editors/openoffice-1.1-cs|2003-11-08|Czech language ISO code is cs
 editors/openoffice-1.1-sl|editors/openoffice-1.1-sk|2003-11-08|Slovak language ISO code is sk
+x11-toolkits/wxgtk-devel|x11-toolkits/wxgtk|2003-11-10|renamed
