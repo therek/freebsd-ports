@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.39 2000/10/14 11:03:15 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.40 2001/06/29 03:39:54 green Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -207,12 +207,14 @@ README.html:
 	@echo "===>  Creating README.html"
 	@> $@.tmp
 .for entry in ${SUBDIR}
+.if exists(${entry})
 .if defined(PORTSTOP)
 	@echo -n '<a href="'${entry}/README.html'">'"`echo ${entry} | ${HTMLIFY}`"'</a>: ' >> $@.tmp
 .else
 	@echo -n '<a href="'${entry}/README.html'">'"`cd ${entry}; make package-name | ${HTMLIFY}`</a>: " >> $@.tmp
 .endif
 	@cat `cd ${entry}; make -V COMMENT` | ${HTMLIFY} >> $@.tmp
+.endif
 .endfor
 	@sort -t '>' +1 -2 $@.tmp > $@.tmp2
 .if exists(${DESCR})
