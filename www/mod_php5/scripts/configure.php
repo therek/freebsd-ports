@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.84 2000/04/05 16:44:06 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.85 2000/04/14 04:26:30 knu Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -98,9 +98,6 @@ while [ "$1" ]; do
 			fi
 			;;
 		\"IMAP\")
-			echo "IMAP is DISABLED for now. Ignoring." > /dev/stderr
-			;;
-		\"nothing\")
 			echo "BUILD_DEPENDS+=	\${PREFIX}/lib/libc-client4.a:\${PORTSDIR}/mail/imap-uw"
 			echo "PHP_CONF_ARGS+=	--with-imap=\${PREFIX}"
 			;;
@@ -150,7 +147,7 @@ USE_OPENSSL=	RSA
 BUILD_DEPENDS+=	mm-config:\${PORTSDIR}/devel/mm \\
 		\${PREFIX}/lib/libmm.a:\${PORTSDIR}/devel/mm
 
-VERSION_MODSSL=	2.6.2
+VERSION_MODSSL=	2.6.3
 
 CONFIGURE_ARGS+=--enable-module=ssl \\
 		--enable-module=define
