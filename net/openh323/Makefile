@@ -3,7 +3,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.1.1.1 2000/02/21 13:27:29 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.2 2000/02/23 10:05:38 roger Exp $
 #
 
 DISTNAME=	openh323_1.1alpha1
@@ -12,7 +12,6 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		pwlib_min_1.14.tar.gz
 
@@ -20,6 +19,7 @@ MAINTAINER=	roger@freebsd.org
 
 WRKSRC=         ${WRKDIR}/openh323
 
+USE_BISON
 USE_GMAKE=      yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIR}/pwlib \
