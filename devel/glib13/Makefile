@@ -2,7 +2,7 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib13/Makefile,v 1.37 2001/03/11 21:50:28 sf Exp $
+# $FreeBSD: ports/devel/glib13/Makefile,v 1.38 2001/03/23 05:34:23 vanilla Exp $
 #
 
 PORTNAME=	glib
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,graphics/gimp/%SUBDIR%,}
 MASTER_SITE_SUBDIR=	gtk/v${PORTVERSION:R}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv
 #iconv.1:${PORTSDIR}/converters/iconv
