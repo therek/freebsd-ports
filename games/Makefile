@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.224 1999/09/07 11:49:37 foxfair Exp $
+# $FreeBSD: ports/games/Makefile,v 1.225 1999/09/09 01:43:00 taoka Exp $
 #
 
     SUBDIR += 3dc
@@ -99,6 +99,7 @@
     SUBDIR += rocksndiamonds
     SUBDIR += seabattle
     SUBDIR += seahaven
+    SUBDIR += sl
     SUBDIR += sokoban
     SUBDIR += sol
     SUBDIR += spellcast
