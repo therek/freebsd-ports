@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.75 2002/04/14 12:36:47 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.76 2002/05/03 19:05:24 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -109,8 +109,10 @@ RUBY_PORTVERSION?=	${RUBY_VERSION}.2002.05.03
 .else
 RUBY_VERSION?=		1.6.7
 RUBY_DISTVERSION?=	${RUBY_VERSION}
-RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-2002.03.27.diff.bz2
-RUBY_PORTVERSION?=	${RUBY_VERSION}.2002.03.27
+RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-2002.03.27.diff.bz2 \
+			ruby-${RUBY_DISTVERSION}-2002.03.27-2002.05.02.diff.bz2 \
+			ruby-rb_gc_mark-proto.patch.gz
+RUBY_PORTVERSION?=	${RUBY_VERSION}.2002.05.02p
 .endif
 #      defined(RUBY_VER) && ${RUBY_VER} == 1.7
 
