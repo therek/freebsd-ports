@@ -4,7 +4,7 @@
 # very likely to apply outside of KDE core modules.  Nonetheless, also
 # provide variables to remove one or more of these.
 #
-# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.5 2002/07/04 19:39:34 will Exp $
+# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.7 2002/09/12 08:45:55 alane Exp $
 
 CONFIGURE_ARGS?=
 
@@ -17,6 +17,14 @@ _NO_KDE_FINAL=	yes
 _NO_KDE_NDEBUG=	yes
 DISTNAME=	${PORTNAME}-${PKGNAMEPREFIX:S/-$//}-${PORTVERSION}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PKGNAMEPREFIX:S/-$//}
+
+# nasty hack to force newer timestamps on cache
+# required to enable correct building
+.if !target(post-extract)
+post-extract:
+	@${FIND} ${WRKDIR} -type f -name index.cache.bz2 \
+		| ${XARGS} -n 10 -x ${TOUCH}
+.endif
 .endif
 
 # KDE_DIST_VERSION (PORTVERSION)
