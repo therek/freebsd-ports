@@ -2,11 +2,11 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/csound-manual/Makefile,v 1.1 2000/10/12 02:01:02 trevor Exp $
+# $FreeBSD: ports/audio/csound-manual/Makefile,v 1.2 2000/10/19 12:30:40 trevor Exp $
 #
 
 PORTNAME=	csound-manual
-PORTVERSION=	4.07
+PORTVERSION=	4.10
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.csounds.com/manual/current/
 DISTFILES=	ascii.zip \
@@ -17,9 +17,7 @@ DISTFILES=	ascii.zip \
 		spplmnt1.zip \
 		spplmnt2.zip \
 		spplmtxt.zip \
-		toots.zip \
-		update1.zip \
-		update2.zip
+		toots.zip
 DIST_SUBDIR=	csound
 
 MAINTAINER=	trevor@FreeBSD.org
