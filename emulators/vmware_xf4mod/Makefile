@@ -2,7 +2,7 @@
 # Date created:			  7 Mar 2001
 # Whom:				  Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vmware_xf4mod/Makefile,v 1.1 2001/03/08 02:39:27 nsayer Exp $
 #
 
 PORTNAME=	vmware_xf4mod
@@ -19,6 +19,10 @@ NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
 USE_X_PREFIX=	yes
+
+ONLY_FOR_ARCHS=	i386
+
+RESTRICTED=	"Not sure if we can redistribute it"
 
 do-extract:
 		${MKDIR} ${WRKSRC}
