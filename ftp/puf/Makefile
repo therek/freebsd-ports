@@ -3,11 +3,11 @@
 # Date created:			Feb 6, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/puf/Makefile,v 1.1 2001/02/05 19:05:34 ijliao Exp $
+# $FreeBSD: ports/ftp/puf/Makefile,v 1.2 2001/02/06 15:12:00 ijliao Exp $
 #
 
 PORTNAME=	puf
-PORTVERSION=	0.91b5
+PORTVERSION=	0.91b6
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.inf.tu-dresden.de/cgi-bin/cgiwrap/ob6/get/
 DISTNAME=	${PORTNAME}
