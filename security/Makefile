@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.137 2000/10/28 00:23:07 scrappy Exp $
+# $FreeBSD: ports/security/Makefile,v 1.138 2000/10/28 01:57:12 jeh Exp $
 #
 
     SUBDIR += aafid2
@@ -81,6 +81,7 @@
     SUBDIR += pgp
     SUBDIR += pgp5
     SUBDIR += pgp6
+    SUBDIR += pgpdump
     SUBDIR += pgpgpg
     SUBDIR += pidentd
     SUBDIR += pktsuckers
