@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.145 2001/06/25 21:06:08 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.146 2001/08/08 21:56:12 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -32,6 +32,10 @@ PHP_DISTDIR=	distributions
 SLAVEDIRS=	lang/php4
 
 USE_LIBTOOL=	yes
+
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+IS_INTERACTIVE=	yes
+.endif
 
 .if defined(STANDALONE)
 CONFIGURE_ARGS=	--with-config-file-path=${PREFIX}/etc/php.standalone \

@@ -2,7 +2,7 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.126 2001/05/10 08:24:36 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.127 2001/05/24 21:41:48 dirk Exp $
 #
 
 PORTNAME?=	mod_php3
@@ -33,6 +33,10 @@ PHP_DISTDIR=	distributions
 SLAVEDIRS=	lang/php3
 
 GNU_CONFIGURE=	yes
+
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+IS_INTERACTIVE=	yes
+.endif
 
 .if defined(STANDALONE)
 CONFIGURE_ARGS=	--with-config-file-path=${PREFIX}/etc/php.standalone
