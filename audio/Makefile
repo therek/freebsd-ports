@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.117 1999/12/25 15:32:12 steve Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.118 1999/12/25 15:35:35 steve Exp $
 #
 
     SUBDIR += amp
@@ -6,7 +6,7 @@
     SUBDIR += aumix
     SUBDIR += bladeenc
     SUBDIR += cam
-    SUBDIR += cd-control
+    SUBDIR += cd-console
     SUBDIR += cdd
     SUBDIR += cdindex
     SUBDIR += cdplay
