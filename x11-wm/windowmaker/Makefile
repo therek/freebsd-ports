@@ -3,7 +3,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.63 2000/03/31 09:35:04 tg Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.64 2000/04/03 09:54:01 tg Exp $
 
 DISTNAME=	WindowMaker-0.62.1
 PKGNAME=	windowmaker-0.62.1
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_WINDOWMAKER} \
 MASTER_SITE_SUBDIR=	beta/srcs
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
-MAINTAINER=	handy@physics.montana.edu
+MAINTAINER=	sobomax@altavista.net
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		ungif.5:${PORTSDIR}/graphics/libungif \
