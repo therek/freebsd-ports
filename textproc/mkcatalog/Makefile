@@ -2,13 +2,13 @@
 # Date created:		26 Oct 2000
 # Whom:			shige
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/mkcatalog/Makefile,v 1.1 2000/10/27 08:06:42 shige Exp $
 #
 # This port is self contained in the src directory.
 #
 
 PORTNAME=	mkcatalog
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	# none
 DISTFILES=	# none
