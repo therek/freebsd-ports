@@ -2,11 +2,12 @@
 # Date created:				15 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/heroes/Makefile,v 1.2 2000/09/28 14:06:22 sobomax Exp $
+# $FreeBSD: ports/games/heroes/Makefile,v 1.3 2000/11/29 14:37:39 sobomax Exp $
 #
 
 PORTNAME=	heroes
 PORTVERSION=	0.7
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -14,6 +15,8 @@ DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
 		${DATADISTNAME}${EXTRACT_SUFX} \
 		${SOUNDISTNAME}${EXTRACT_SUFX} \
 		${MUSICDISTNAME}${EXTRACT_SUFX}
+PATCH_SITES=	ftp://heroes.sourceforge.net/pub/heroes/patches/
+PATCHFILES=	heroes-0.7-errata.patch
 
 MAINTAINER=	sobomax@FreeBSD.org
 
