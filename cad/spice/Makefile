@@ -3,7 +3,7 @@
 # Date created:         26 Mar 96
 # Whom:                 Julian Jenkins <kaveman@magna.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/spice/Makefile,v 1.14 1999/08/25 04:52:36 obrien Exp $
 #
 
 DISTNAME=	sp3f4.kit
@@ -25,6 +25,7 @@ NO_WRKSUBDIR=	yes
 MAN1=		sconvert.1 nutmeg.1 spice.1
 MAN3=		mfb.3
 MAN5=		mfbcap.5
+MLINKS=		spice.1 spice3.1
 
 post-install:
 .if !defined(NOPORTDOCS)
