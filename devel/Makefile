@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.653 2001/10/10 14:36:18 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -374,6 +374,7 @@
     SUBDIR += p5-Log-Dispatch
     SUBDIR += p5-Mac-FileSpec-Unixish
     SUBDIR += p5-Make
+    SUBDIR += p5-Memoize
     SUBDIR += p5-OLE-Storage_Lite
     SUBDIR += p5-ORBit
     SUBDIR += p5-POE
