@@ -2,11 +2,12 @@
 # Date created:		25 August 1997
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/misc/display/Makefile,v 1.9 1999/11/26 17:43:04 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		display
 PORTVERSION=		1.1
+PORTREVISION=		1
 CATEGORIES=		misc
 MASTER_SITES=		http://www.ipsmart.com/src/
 EXTRACT_SUFX=		.tgz
