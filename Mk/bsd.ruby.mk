@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.31 2001/04/18 19:29:51 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.32 2001/04/24 11:25:57 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -215,7 +215,7 @@ RUBY_FLAGS+=	-d
 USE_RUBY=		yes
 
 RUBY_EXTCONF?=		extconf.rb
-CONFIGURE_ARGS+=	--with-opt-dir="${X11BASE}" \
+CONFIGURE_ARGS+=	--with-opt-dir="${LOCALBASE}" \
 			--with-pthread-cflags="${PTHREAD_CFLAGS}" \
 			--with-pthread-libs="${PTHREAD_LIBS}"
 
