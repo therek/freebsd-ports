@@ -2,7 +2,7 @@
 # Date created:         4 May 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/pgp.language/Makefile,v 1.29 2000/04/13 19:14:11 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgp
@@ -14,8 +14,6 @@ DISTNAME=	pgp26ru
 MAINTAINER=	ache@FreeBSD.org
 
 RUN_DEPENDS+=	${LOCALBASE}/lib/pgp/config.txt:${PORTSDIR}/security/pgp
-
-RESTRICTED=	"Crypto"
 
 USE_ZIP=	YES
 NO_WRKSUBDIR=	YES

@@ -2,7 +2,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.22 2001/02/18 00:36:18 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		skip
@@ -25,7 +25,6 @@ LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
 # The SKIP code is restricted from export from the United States and Canada.
 # See the file doc/00README for legal details.
-RESTRICTED=		Contains strong crypto; no export from U.S./Canada
 #NO_PACKAGE=		${RESTRICTED}
 #NO_CDROM=		${RESTRICTED}
 

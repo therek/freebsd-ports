@@ -2,7 +2,7 @@
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/nte/Makefile,v 1.15 1999/08/31 06:48:00 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nte
@@ -16,7 +16,6 @@ LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 
 WRKSRC=		${WRKDIR}/nte
 
-RESTRICTED=	"Contains DES encryption"
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD: ports/security/rsaref/Makefile,v 1.20 2000/06/16 08:18:46 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rsaref
@@ -21,7 +21,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	kris@FreeBSD.ORG
 
 WRKSRC=		${WRKDIR}/source
-RESTRICTED=	"Contains cryptography"
 
 INSTALLS_SHLIB=	yes
 

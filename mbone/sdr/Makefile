@@ -2,7 +2,7 @@
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/sdr/Makefile,v 1.18 2000/01/26 19:00:55 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdr
@@ -19,8 +19,6 @@ WRKSRC=		${WRKDIR}/sdr/freebsd
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-
-RESTRICTED=	"Contains DES cryptography."
 
 post-extract:
 	@${CP} ${FILESDIR}/Makefile.freebsd ${WRKSRC}/Makefile.freebsd

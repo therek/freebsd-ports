@@ -2,7 +2,7 @@
 # Date created:         22 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.9 2000/10/08 10:21:48 asami Exp $
+# $FreeBSD$
 #
 # This is based on ja-pgp.
 #
@@ -17,8 +17,6 @@ DISTNAME=	pgp263i-${PGP_LANGUAGE}
 MAINTAINER=	cjh@kr.freebsd.org
 
 RUN_DEPENDS=	pgp:${PORTSDIR}/security/pgp
-
-RESTRICTED=	"Crypto"
 
 USE_ZIP=	YES
 NO_BUILD=	YES

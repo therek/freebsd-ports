@@ -2,7 +2,7 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.24 2001/09/13 03:24:42 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghostscript
@@ -106,7 +106,6 @@ post-install:
 .if defined(PDFENCRYPT)
 MASTER_SITES+=	http://www.ozemail.com.au/~geoffk/pdfencrypt/
 DISTFILES+=	pdf_sec.ps
-RESTRICTED=	"Crypto; export controlled, RC4 in PostScript code included"
 .endif
 
 .include <bsd.port.mk>
