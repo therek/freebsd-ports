@@ -2,7 +2,7 @@
 # Date created:			  24 May 2000
 # Whom:				  Tim van der Hoek <hoek@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/44bsd-more/Makefile,v 1.2 2000/05/29 20:04:00 hoek Exp $
+# $FreeBSD: ports/misc/44bsd-more/Makefile,v 1.3 2000/06/29 07:02:35 obrien Exp $
 #
 
 PORTNAME=	44bsd-more
@@ -24,10 +24,11 @@ EXAMPDIR=	${PREFIX}/share/examples/44bsd-more
 post-extract:
 	-cd ${WRKSRC} && co -d${RELDATE} RCS/*,v
 
-do-patch:
+post-patch:
 	${PERL} -pi.orig -e \
 	    's!/usr/share/misc/more.help!${PREFIX}/share/misc/44bsd-more.help!'\
 	    ${WRKSRC}/pathnames.h
+	${CP} ${FILESDIR}/queue.h ${WRKSRC}
 
 do-install:
 	${MKDIR} ${EXAMPDIR}
