@@ -2,7 +2,7 @@
 # Date created:        29 January 2001
 # Whom:                ilya
 #
-# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.3 2001/03/12 03:05:03 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnus
@@ -27,7 +27,7 @@ HAS_CONFIGURE=	yes
 EMACS_PORT_NAME?=emacs20
 
 CONFIGURE_ARGS=	--with-emacs=${EMACS_CMD} \
-		--with-lispdir=${PREFIX}/${EMACS_SITE_LISPDIR}/gnus \
+		--with-lispdir=${PREFIX}/${EMACS_VERSION_SITE_LISPDIR}/gnus \
 		--infodir=${INFODIR}
 
 INFODIR=	${PREFIX}/info
@@ -35,9 +35,8 @@ INFODIR=	${PREFIX}/info
 PORTDOCDIR=	share/doc/gnus-${EMACS_PORT_NAME}
 DOCS=		ChangeLog GNUS-NEWS README
 
-PLIST_SUB=	EMACS_PORT_NAME=${EMACS_PORT_NAME} \
-		INFODIR=${INFODIR:S/${PREFIX}\///} \
-		EMACS_SITE_LISPDIR=${EMACS_SITE_LISPDIR}
+PLIST_SUB+=	EMACS_PORT_NAME=${EMACS_PORT_NAME} \
+		INFODIR=${INFODIR:S/${PREFIX}\///}
 
 post-install:
 .if !defined(NOPORTDOCS)
