@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.17 2004/03/05 16:13:50 krion Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.18 2004/06/06 07:00:40 krion Exp $
 #
 # set -x
 
@@ -148,7 +148,7 @@ EOF
       html=$(($html + 1))
     fi
     if [ "$MUTT_MAILDIR_HEADER_CACHE" = "yes" ]; then
-      html=$(($html + 1))
+      html=$(($html + 3))
     fi
     if [ "$MUTT_SIGNATURE_MENU" = "yes" ]; then
       html=$(($html + 1))
