@@ -2,14 +2,14 @@
 # Date created:		12 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/git/Makefile,v 1.14 1999/11/16 00:39:03 jseger Exp $
+# $FreeBSD: ports/misc/git/Makefile,v 1.15 2000/04/14 08:45:46 asami Exp $
 #
 
 PORTNAME=	git
-PORTVERSION=	4.3.19
+PORTVERSION=	4.3.20
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	git
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jseger@FreeBSD.org
 
