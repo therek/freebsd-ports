@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.9 2004/02/08 11:53:55 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules,v 1.10 2004/03/20 12:27:46 clement Exp $
 #
 
 .if defined(SLAVE_DESIGNED_FOR) && ${PORTVERSION} != ${SLAVE_DESIGNED_FOR}
@@ -174,8 +174,8 @@ _APACHE_MODULES+=	${LDAP_MODULES}
 CONFIGURE_ARGS+=	--enable-threads
 CFLAGS+=		-DFREEBSD_THREAD_HACK
 .   if ${WITH_PTHREAD_LIBS} != "c_r" && ${OSVERSION} > 500023
-CONFIGURE_ENV+=		ac_cv_pthreads_lib=${WITH_PTHREAD_LIBS} \
-			ac_cv_pthreads_cflags=${WITH_PTHREAD_CFLAGS}
+CONFIGURE_ENV+=		apr_cv_pthreads_lib=-l${WITH_PTHREAD_LIBS} \
+			apr_cv_pthreads_cflags=${WITH_PTHREAD_CFLAGS}
 .   endif
 .   if !defined(WITH_CUSTOM_THREADS)
 _APACHE_MODULES+=	${THREADS_MODULES}
