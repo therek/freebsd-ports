@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.81 1999/12/27 01:56:03 steve Exp $
+# $FreeBSD: ports/security/Makefile,v 1.82 1999/12/27 01:57:59 steve Exp $
 #
 
     SUBDIR += bjorb
@@ -74,5 +74,6 @@
     SUBDIR += tripwire
     SUBDIR += vscan
     SUBDIR += xinetd
+    SUBDIR += zebedee
 
 .include <bsd.port.subdir.mk>
