@@ -2,13 +2,13 @@
 # Date created:				Apr 4, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/nighthawk/Makefile,v 1.3 2001/06/01 06:04:50 obrien Exp $
+# $FreeBSD: ports/games/nighthawk/Makefile,v 1.4 2001/06/08 05:36:31 markp Exp $
 #
 
 PORTNAME=	nighthawk
 PORTVERSION=	2.2
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SUNSITE} http://jsno.downunder.net.au/rel/unix_projects/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} http://lothar.arafura.net.au/~jsno/rel/unix_projects/
 MASTER_SITE_SUBDIR=	games/arcade
 EXTRACT_SUFX=	-1.tar.gz
 
