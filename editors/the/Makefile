@@ -2,7 +2,7 @@
 # Date created:		7 May 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/editors/the/Makefile,v 1.5 2000/04/14 00:25:44 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	the
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.lightlink.com/pub/hessling/THE/	\
 DISTNAME=	THE-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	"The Hessling Editor", an implementation of the xedit editor
 
 BUILD_DEPENDS=	rexx:${PORTSDIR}/lang/rexx-imc
 RUN_DEPENDS=	rexx:${PORTSDIR}/lang/rexx-imc

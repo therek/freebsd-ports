@@ -2,7 +2,7 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/jove/Makefile,v 1.20 2000/05/02 13:47:44 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jove
@@ -12,6 +12,7 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/jove/
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Jonathan's Own Version of Emacs
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		jove.1 teachjove.1

@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/editors/sam/Makefile,v 1.10 2000/04/23 22:59:28 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sam
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.msg.gz
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	A unix version of Rob Pike's editor for plan9
 
 EXTRACT_CMD=		${GZCAT}
 EXTRACT_BEFORE_ARGS=	# empty
