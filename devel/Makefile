@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.565 2001/06/14 17:39:47 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.566 2001/06/18 04:52:07 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -182,6 +182,7 @@
     SUBDIR += ktranslator
     SUBDIR += lclint
     SUBDIR += lemon
+    SUBDIR += leoarg
     SUBDIR += libPropList
     SUBDIR += libU77
     SUBDIR += libcache
