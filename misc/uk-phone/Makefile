@@ -2,14 +2,14 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.8 2000/10/31 22:37:43 brian Exp $
+# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.9 2001/01/02 01:46:05 brian Exp $
 #
 
 PORTNAME=       uk-phone
 PORTVERSION=	2.1
 CATEGORIES=	misc
-MASTER_SITES=   ftp://ftp.Awfulhak.org/pub/PSTN/ \
-		http://people.FreeBSD.org/~brian/PSTN/
+MASTER_SITES=   ftp://ftp.Awfulhak.org/pub/uk-phone/ \
+		http://people.FreeBSD.org/~brian/uk-phone/
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=     brian@FreeBSD.org
