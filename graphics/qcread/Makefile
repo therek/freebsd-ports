@@ -2,7 +2,7 @@
 # Date created:        23 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qcread/Makefile,v 1.5 1999/09/21 17:24:09 billf Exp $
+# $FreeBSD: ports/graphics/qcread/Makefile,v 1.6 2000/04/14 10:47:13 asami Exp $
 #
 
 PORTNAME=	qcread
@@ -20,8 +20,10 @@ post-extract:
 	@${CP} -r ${WRKSRC}/gnu-getopt/. ${WRKSRC}
 
 do-install:
-
-	${INSTALL} ${COPY} -o root -g wheel -m 644 ${WRKSRC}/qcam.conf ${PREFIX}/etc
+	${INSTALL} ${COPY} -o root -g wheel -m 644 ${WRKSRC}/qcam.conf ${PREFIX}/etc/qcam.conf.dist
+	if [ ! -e ${PREFIX}/etc/qcam.conf ]; then \
+		${CP} ${PREFIX}/etc/qcam.conf.dist ${PREFIX}/etc/qcam.conf; \
+	fi
 	${INSTALL_PROGRAM} ${WRKSRC}/qcread ${PREFIX}/bin
 
 .include <bsd.port.mk>
