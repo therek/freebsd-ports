@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.52 2001/03/20 20:27:59 obrien Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.53 2001/04/25 17:26:30 olgeni Exp $
 #
 
 PORTNAME=		linux_base
@@ -31,7 +31,7 @@ MD5_FILE=		${MASTERDIR}/distinfo.${MACHINE_ARCH}
 
 RPM_MIRRORS=		\
 	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
-	ftp://ftp.redhat.com/redhat/__DIR__/ \
+	ftp://ftp.redhat.com/pub/redhat/__DIR__/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/__DIR__/ \
 	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \
 	ftp://ftp.nluug.nl/site/ftp.redhat.com/redhat/__DIR__/ \
@@ -40,8 +40,8 @@ RPM_MIRRORS=		\
 	ftp://ftp.is.co.za/linux/distributions/redhat/__DIR__/ \
 	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/
 
-STDDIR=			old-releases/redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
-UPDDIR=			updates/6.1/${MACHINE_ARCH}
+STDDIR=			linux/6.1/en/os/${MACHINE_ARCH}/RedHat/RPMS
+UPDDIR=			linux/updates/6.1/en/os/${MACHINE_ARCH}
 
 .include <bsd.port.pre.mk>
 
