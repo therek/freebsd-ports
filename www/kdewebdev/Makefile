@@ -2,7 +2,7 @@
 # Date created:				19 May 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quanta/Makefile,v 1.9 2001/03/29 16:34:58 sobomax Exp $
+# $FreeBSD: ports/www/quanta/Makefile,v 1.10 2001/04/03 08:14:31 will Exp $
 #
 
 PORTNAME=	quanta
@@ -11,7 +11,7 @@ CATEGORIES=	www kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-2.0-pr1
-.if !defined(NO_PORTDOCS)
+.if !defined(NOPORTDOCS)
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		css.tar.bz2 \
 		html.tar.bz2 \
