@@ -2,7 +2,7 @@
 # Date created:		Wed Apr 5 11:00:00 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.6 2000/04/19 12:13:55 roger Exp $
+# $FreeBSD: ports/net/opengatekeeper/Makefile,v 1.7 2000/04/21 07:31:31 roger Exp $
 #
 
 PORTNAME=	opengatekeeper
@@ -22,8 +22,8 @@ NOCLEANDEPENDS=	yes
 USE_BISON=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	opt
-MAKE_ENV=	PWLIBDIR=${WRKDIRPREFIX}${PORTSDIR}/net/openh323/work/pwlib \
-		OPENH323DIR=${WRKDIRPREFIX}${PORTSDIR}/net/openh323/work/openh323
+MAKE_ENV=	PWLIBDIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/pwlib \
+		OPENH323DIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/openh323
 THE_MACHTYPE=	${ARCH:S/i386/x86/}
 MAKE_ARGS=	OSTYPE=${OPSYS} MACHTYPE=${THE_MACHTYPE} OSRELEASE=${OSVERSION}
 
