@@ -4,7 +4,7 @@
 #
 # Borrowed from jakarta-tomcat41
 #
-# $FreeBSD: ports/www/jakarta-tomcat4/files/startup.sh,v 1.4 2002/05/08 21:54:06 znerd Exp $
+# $FreeBSD: ports/www/resin3/files/resin.sh.in,v 1.1 2003/11/20 21:44:14 glewis Exp $
 #
 
 # Determine PREFIX
@@ -15,7 +15,7 @@ fi
 
 # Set some variables
 MYSELF=`basename $0`
-ARGS="-conf $PREFIX/etc/%%APP_NAME%%.xml \
+ARGS="-conf $PREFIX/etc/%%APP_NAME%%/resin.xml \
 -chdir \
 -name %%APP_NAME%% \
 -class com.caucho.server.resin.Resin \
