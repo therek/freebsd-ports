@@ -2,7 +2,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.19 2000/06/29 07:02:23 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lynx
@@ -10,7 +10,7 @@ PORTVERSION=	${VERSION}.${MINOR_VERSION:S/.//}
 CATEGORIES=	japanese www
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		${MASTER_SITE_LOCAL} \
-		http://sol.slcc.edu/lynx/current/
+		http://lynx.isc.org/current/
 MASTER_SITE_SUBDIR=	shige
 DISTNAME=	${PORTNAME}${VERSION}${MINOR_VERSION}
 
@@ -19,8 +19,8 @@ MAINTAINER=	shige@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}${VERSION:S/./-/g}
 
-VERSION=	2.8.4
-MINOR_VERSION=	dev.4
+VERSION=	2.8.5
+MINOR_VERSION=	dev.7
 
 USE_BZIP2=	YES
 NO_LATEST_LINK=	YES
