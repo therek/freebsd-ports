@@ -2,11 +2,12 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.119 2001/08/13 21:50:34 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.120 2001/08/13 22:08:59 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
 PORTVERSION=	3.23.41
+PORTREVISION?=	1
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.kernelnotes.de/MySQL/Downloads/MySQL-3.23/ \
@@ -61,7 +62,8 @@ CXXFLAGS+=	-fno-exceptions
 
 # MySQL-Server part
 .if !defined(CLIENT_ONLY)
-RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql323-client
+RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql323-client \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Mysql.pm:${PORTSDIR}/databases/p5-Mysql
 
 PLIST_SUB=	MYSQL_VERSION=${PORTVERSION}
 
