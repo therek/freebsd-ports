@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.3 2003/06/01 03:12:41 dinoex Exp $
+# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.4 2003/06/18 04:06:58 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -66,11 +66,12 @@ SYSTEMDIR=	${PREFIX}/System
 SYSMAKEDIR=	${SYSTEMDIR}/Makefiles
 COMBOPATH=	${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu
 .if defined(WITH_GNUSTEP_DEVEL)
-SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries/${GNU_ARCH}/${OPSYS:L}
-COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries/${COMBOPATH}
-LOCALLIBDIR=	${PREFIX}/Local/Library/Libraries/${COMBOPATH}
+SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries
+COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries
+LOCALLIBDIR=	${PREFIX}/Local/Library/Libraries
 PLIST_SUB+=	SYSTEMLIBRARY="System/Library"
 PLIST_SUB+=	LOCALLIBRARY="Local/Library"
+PLIST_SUB+=	NOFLAT=""
 PLIST_SUB+=	GNUSTEP_DEVEL=""
 PLIST_SUB+=	GNUSTEP_STABLE="@comment "
 PKGNAMESUFFIX?=	-devel
@@ -80,6 +81,7 @@ COMBOLIBDIR=	${SYSTEMDIR}/Libraries/${COMBOPATH}
 LOCALLIBDIR=	${PREFIX}/Local/Libraries/${COMBOPATH}
 PLIST_SUB+=	SYSTEMLIBRARY="System"
 PLIST_SUB+=	LOCALLIBRARY="Local"
+PLIST_SUB+=	NOFLAT="${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/"
 PLIST_SUB+=	GNUSTEP_DEVEL="@comment "
 PLIST_SUB+=	GNUSTEP_STABLE=""
 .else
@@ -126,7 +128,11 @@ USE_GNUSTEP_XLIB=yes
 BUILD_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-back:${PORTSDIR}/${GNUSTEP_BACK_PORT}
 RUN_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-back:${PORTSDIR}/${GNUSTEP_BACK_PORT}
 
+.if defined(WITH_GNUSTEP_DEVEL)
+BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-back.bundle
+.else
 BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-back.bundle/${COMBOPATH}
+.endif
 MAKE_FLAGS+=	GUI_BACKEND_LIB=back
 .endif
 
@@ -137,7 +143,11 @@ MAKE_FLAGS+=	GUI_BACKEND_LIB=back
 BUILD_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-xdps:${PORTSDIR}/${GNUSTEP_XDPS_PORT}
 RUN_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-xdps:${PORTSDIR}/${GNUSTEP_XDPS_PORT}
 
+.if defined(WITH_GNUSTEP_DEVEL)
+BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-xdps.bundle
+.else
 BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-xdps.bundle/${COMBOPATH}
+.endif
 MAKE_FLAGS+=	GUI_BACKEND_LIB=xdps
 .endif
 
@@ -148,7 +158,11 @@ MAKE_FLAGS+=	GUI_BACKEND_LIB=xdps
 BUILD_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-art:${PORTSDIR}/${GNUSTEP_ART_PORT}
 RUN_DEPENDS+=	${BACKBUNDLEDIR}/libgnustep-art:${PORTSDIR}/${GNUSTEP_ART_PORT}
 
+.if defined(WITH_GNUSTEP_DEVEL)
+BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-art.bundle
+.else
 BACKBUNDLEDIR=	${BUNDLEDIR}/libgnustep-art.bundle/${COMBOPATH}
+.endif
 MAKE_FLAGS+=	GUI_BACKEND_LIB=art
 .endif
 
