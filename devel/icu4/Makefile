@@ -2,14 +2,13 @@
 # Date created:				22 Jan 2001
 # Whom:					dwm
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/icu/Makefile,v 1.1 2001/03/17 08:49:14 kuriyama Exp $
 #
 
 PORTNAME=	icu
 PORTVERSION=	1.7
 CATEGORIES=	devel
 MASTER_SITES=	http://oss.software.ibm.com/developerworks/opensource/icu/project/download/${PORTVERSION}/
-#DISTNAME=	${PORTNAME}-${PORTVERSION}
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	dwm@caimis.com
