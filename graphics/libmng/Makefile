@@ -2,11 +2,11 @@
 # Date created:		Nov 2, 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/libmng/Makefile,v 1.9 2001/07/16 21:23:11 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libmng
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.libmng.com/download/
