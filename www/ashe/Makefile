@@ -2,7 +2,7 @@
 # Date created:		16 October 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/www/ashe/Makefile,v 1.12 2000/11/13 14:26:49 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ashe
@@ -24,6 +24,8 @@ MAN1=		xhtml.1
 
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/src/XHTML.ad
+	@${PERL} -pi -e "s/malloc.h/stdlib.h/g" \
+		${WRKSRC}/libhtmlw-2.7b3/HTML-PSformat.c
 
 do-build:
 .for dir in libhtmlw-2.7b3 libcci src
