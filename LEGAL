@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.236 2001/12/27 16:27:15 lioux Exp $
+# $FreeBSD: ports/LEGAL,v 1.237 2002/01/16 19:46:18 knu Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -93,7 +93,6 @@ fasta3*			ports/biology/fasta3	May not be sold or incorporated
 						into a commercial product
 fmsx-*			ports/emulators/fmsx	Unclear legal status of
 						distributed ROMs.
-fnorb-*			ports/devel/fnorb	Cannot use commercially
 freefonts		ports/x11-fonts/freefonts	Some of the fonts are
 						shareware.  Some are freeware.
 						Permission must be obtained
