@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.25 2002/09/17 09:03:20 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.26 2002/09/17 09:12:32 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -196,6 +196,7 @@ USE_JAVA=	1.4
 .		elif (${USE_JAVA} == "1.2+")
 .			if defined(HAVE_JAVA_FREEBSD_1_3)   || \
 			   defined(HAVE_JAVA_SUN_LINUX_1_3) || \
+			   defined(HAVE_JAVA_BLACKDOWN_LINUX_1_3) || \
 			   defined(HAVE_JAVA_IBM_LINUX_1_3)
 USE_JAVA=	1.3
 .			elif !defined(HAVE_JAVA_SUN_LINUX_1_4)
@@ -207,6 +208,7 @@ USE_JAVA=	1.4
 .			if defined(HAVE_JAVA_FREEBSD_1_3)   || \
 			   defined(HAVE_JAVA_SUN_LINUX_1_3) || \
 			   defined(HAVE_JAVA_IBM_LINUX_1_3) || \
+			   defined(HAVE_JAVA_BLACKDOWN_LINUX_1_3) || \
 			  !defined(HAVE_JAVA_SUN_LINUX_1_4)
 USE_JAVA=	1.3
 .			else
