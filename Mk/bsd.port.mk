@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.369 2001/06/28 19:54:45 sobomax Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -766,7 +766,7 @@ MANCOMPRESSED?=	yes
 MANCOMPRESSED?=	no
 .endif
 
-.if defined(USE_BZIP2)
+.if defined(USE_BZIP2) && ${OSVERSION} < 500021
 BUILD_DEPENDS+=		bzip2:${PORTSDIR}/archivers/bzip2
 .endif
 .if defined(USE_ZIP)
