@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.5 2001/02/07 18:17:57 knu Exp $
+# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.6 2001/05/06 16:13:33 knu Exp $
 #
 
 PORTNAME=	syslog
@@ -21,9 +21,6 @@ INSTALL_TARGET=	site-install
 
 post-extract:
 	${RM} ${WRKSRC}/depend
-
-post-patch:
-	${RUBY} -i -pe 'gsub /\bstr2cstr\b/, "rb_str2cstr"' ${WRKSRC}/*.[ch]
 
 post-install:
 .if !defined(NOPORTDOCS)
