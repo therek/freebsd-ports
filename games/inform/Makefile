@@ -2,20 +2,20 @@
 # Date created:				28 June 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD: ports/games/inform/Makefile,v 1.11 2000/04/14 06:53:17 mharo Exp $
+# $FreeBSD: ports/games/inform/Makefile,v 1.12 2001/07/31 23:27:32 mph Exp $
 #
 
 PORTNAME=	inform
 PORTVERSION=	6.21
 CATEGORIES=	games
-MASTER_SITES=  	ftp://ftp.gmd.de/if-archive/infocom/compilers/inform6/source/ \
-		ftp://ftp.gmd.de/if-archive/infocom/compilers/inform6/library/
+MASTER_SITES=  	ftp://ftp.ifarchive.org/if-archive/infocom/compilers/inform6/source/ \
+		ftp://ftp.ifarchive.org/if-archive/infocom/compilers/inform6/library/
 DISTFILES=	inform621_source.zip inform_library610.zip
 
 MAINTAINER=	mph@freebsd.org
 
 .if !defined(NOPORTDOCS)
-MASTER_SITES+=	ftp://ftp.gmd.de/if-archive/infocom/compilers/inform6/manuals/old/
+MASTER_SITES+=	ftp://ftp.ifarchive.org/if-archive/infocom/compilers/inform6/manuals/old/
 DISTFILES+=	designers_manual_html.zip
 .endif
 
