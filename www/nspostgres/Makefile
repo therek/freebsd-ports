@@ -2,13 +2,13 @@
 # Date created: 	30 January 2001
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/www/nspostgres/Makefile,v 1.1 2001/01/30 10:48:23 jkoshy Exp $
+# $FreeBSD: ports/www/nspostgres/Makefile,v 1.2 2001/02/28 04:31:35 jkoshy Exp $
 #
 
 PORTNAME=	nspostgres
 PORTVERSION=	3.0
 CATEGORIES=	www databases
-MASTER_SITES=	ftp://ftp.aolserver.com/modules/nspostgres/
+MASTER_SITES=	ftp://ftp.aolserver.com/pub/contrib/
 DISTNAME=	nspostgres3_0
 
 MAINTAINER=	jkoshy@freebsd.org
