@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.216 2000/09/14 09:04:27 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.217 2000/09/15 21:43:59 will Exp $
 #
 
     SUBDIR += 4va
@@ -127,6 +127,7 @@
     SUBDIR += p5-GD-TextUtil
     SUBDIR += p5-Image-Size
     SUBDIR += p5-chart
+    SUBDIR += panorama
     SUBDIR += pgperl
     SUBDIR += pgplot
     SUBDIR += photopc
