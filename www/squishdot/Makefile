@@ -2,12 +2,12 @@
 # Date created:		06 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/squishdot/Makefile,v 1.4 2001/02/04 19:23:51 nbm Exp $
+# $FreeBSD: ports/www/squishdot/Makefile,v 1.5 2001/08/08 15:20:16 wjv Exp $
 #
 
 PORTNAME=	squishdot
 PORTVERSION=	1.2.1
-CATEGORIES=	www
+CATEGORIES=	www zope
 MASTER_SITES=	http://squishdot.org/Download/Squishdot/ \
 		http://www.zope.org/Members/chrisw/Squishdot/
 DISTNAME=	Squishdot-${PORTVERSION:S/./-/g}
