@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.130 2000/05/23 06:52:36 sobomax Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.131 2000/05/23 09:50:23 sobomax Exp $
 #
 
     SUBDIR += amp
@@ -76,6 +76,7 @@
     SUBDIR += snowstar
     SUBDIR += soundtracker
     SUBDIR += sox
+    SUBDIR += sphinx
     SUBDIR += splay
     SUBDIR += splaytk
     SUBDIR += tclmidi
