@@ -2,7 +2,7 @@
 # Date created:				Thu May	3 22:04:21 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-svencoop/Makefile,v 1.3 2001/05/19 23:00:07 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	svencoop
@@ -13,5 +13,8 @@ DISTFILES=	svencoop19.tar.gz svencoop19_patch.tar.gz
 MAINTAINER=	lioux@FreeBSD.org
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
+
+BROKEN=	Upcoming release will support Unix platform but current one\
+	does not
 
 .include "${HALFLIFE_COUNTERSTRIKE_MASTER}/Makefile"
