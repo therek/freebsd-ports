@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.497 2004/08/03 19:03:58 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.498 2004/09/30 05:21:01 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1687,7 +1687,7 @@ PTHREAD_CFLAGS?=	-D_THREAD_SAFE
 PTHREAD_LIBS?=		-lc_r
 .else
 PTHREAD_CFLAGS?=
-PTHREAD_LIBS?=		-lpthread
+PTHREAD_LIBS?=		-pthread
 .endif
 
 .if exists(/usr/bin/fetch)
