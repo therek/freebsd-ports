@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.132 2000/05/30 02:59:38 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.133 2000/06/02 02:16:32 will Exp $
 #
 
     SUBDIR += afsp
@@ -8,6 +8,7 @@
     SUBDIR += bladeenc
     SUBDIR += cam
     SUBDIR += cd-console
+    SUBDIR += cd2mp3
     SUBDIR += cdd
     SUBDIR += cdindex
     SUBDIR += cdplay
