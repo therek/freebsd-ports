@@ -2,18 +2,24 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.79 2001/01/09 13:17:04 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.80 2001/03/07 07:19:33 andreas Exp $
 #
 
 PORTNAME=	apsfilter
 PORTVERSION=	6.0.0
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	print
 MASTER_SITES=	http://www.apsfilter.org/download/
 PATCH_SITES=	http://www.apsfilter.org/download/
 PATCHFILES=	diff-6.0.0-09.01.2001.gz
 
 MAINTAINER=	andreas@FreeBSD.org
+
+# special arrangement for package building, build stuff without X11
+# to make memory footprint of apsfilter package smaller
+.if defined(BATCH) && defined(PACKAGE_BUILDING)
+NO_X=		yes
+.endif
 
 .if defined(NO_X)   
 # XXX Hack.  If you've done something like "-DNO_X" on the command line
@@ -35,7 +41,11 @@ MAKE_ENV+=      NO_X=true
 # Build and install all filter apsfilter knows about (rather expensive)
 #
 # ps emulator
+.if defined(NO_X)
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6-nox11
+.else
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+.endif
 # all needed decompression utilities
 RUN_DEPENDS+=	bunzip2:${PORTSDIR}/archivers/bzip2
 RUN_DEPENDS+=	melt:${PORTSDIR}/archivers/freeze
@@ -63,7 +73,11 @@ RUN_DEPENDS+=	smbclient:${PORTSDIR}/net/samba
 # since apsfilter should fit easily on installation CD 1...
 #
 # ps emulator
+.if defined(NO_X)
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6-nox11
+.else
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
+.endif
 # most important "xxx to ps" filter utilities
 RUN_DEPENDS+=	a2ps:${PORTSDIR}/print/a2ps-letter
 RUN_DEPENDS+=	psnup:${PORTSDIR}/print/psutils-letter
