@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/net-mgmt/nagios-plugins/scripts/configure,v 1.12 2004/03/12 12:42:34 krion Exp $
+# $FreeBSD: ports/net-mgmt/nagios-plugins/scripts/configure,v 1.13 2004/04/17 22:24:55 pav Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -106,8 +106,8 @@ while [ "$1" ]; do
 			SUB_PGSQL=""
 			;;
 		OpenLDAP)
-			echo "LIB_DEPENDS+=	ldap.2:\${PORTSDIR}/net/openldap20-client"
-			echo "CONFIGURE_ARGS+=	--enable-ldap"
+			echo "USE_OPENLDAP=	yes"
+			echo "CONFIGURE_ARGS+=  --enable-ldap"
 			SUB_LDAP=""
 			;;
 		*)
