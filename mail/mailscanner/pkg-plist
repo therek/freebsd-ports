@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.8 2004/02/17 15:53:41 sergei Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.9 2004/03/03 07:07:47 sergei Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -534,7 +534,6 @@ libexec/MailScanner/update_virus_scanners
 @dirrm %%DATADIR%%/reports/de
 @dirrm %%DATADIR%%/reports/cz
 @dirrm %%DATADIR%%/reports/cy+en
-@dirrm %%DATADIR%%/reports/cat
 @dirrm %%DATADIR%%/reports/ca
 @dirrm %%DATADIR%%/reports
 @dirrm %%DATADIR%%
