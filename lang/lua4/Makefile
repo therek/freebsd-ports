@@ -2,11 +2,12 @@
 # Date created:				27 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD: ports/lang/lua/Makefile,v 1.8 2001/01/03 08:45:12 kevlo Exp $
+# $FreeBSD: ports/lang/lua/Makefile,v 1.9 2001/01/16 17:31:12 sobomax Exp $
 #
 
 PORTNAME=	lua
 PORTVERSION=	4.0
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.tecgraf.puc-rio.br/pub/lua/ \
 		ftp://csg.uwaterloo.ca/pub/lhf/lua/ \
