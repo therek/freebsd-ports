@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/Tools/scripts/release/doit.sh,v 1.3 2002/05/20 07:50:16 will Exp $
+# $FreeBSD: ports/Tools/scripts/release/doit.sh,v 1.4 2002/05/20 08:27:02 will Exp $
 
 pathtoports=$1
 dir=`dirname $0`
@@ -22,7 +22,8 @@ fi
    pkgs="$ports/packages/All"
 scripts="$dir"
    xdep_re="^XFree86-3.3.6_1[0-9]$"
-
+#indexfile="INDEX-5"
+indexfile="INDEX"
 #
 ##############################################################################
 
@@ -67,9 +68,9 @@ if [ ! -f "$logs/.cdrom.done" ]; then
   touch $logs/.cdrom.done
 fi
 
-if [ ! -f "$logs/INDEX" ]; then
-  echo "===> copying INDEX file"
-  $scripts/scrubindex.pl $pkgs $ports/INDEX > $logs/INDEX
+if [ ! -f "$logs/$indexfile" ]; then
+  echo "===> copying INDEX file from $ports/$indexfile"
+  $scripts/scrubindex.pl $pkgs $ports/$indexfile > $logs/INDEX
   $scripts/checkdeps.pl $pkgs $logs/INDEX | sort -u | \
     sed -e 's/^/missing dependency: /'
 fi
@@ -96,6 +97,7 @@ if [ X$ans != Xn -a X$ans != XN ]; then
     echo "===> deleting scratch"
     rm -rf scratch
   fi
+  echo "Calling oneshot.pl config $logs/need.ALL $logs/INDEX $ports $pkgs/../ $dists"
   $scripts/oneshot.pl config $logs/need.ALL $logs/INDEX $ports $pkgs/../ $dists
   for disc in `ls -d disc? 2>/dev/null`; do
     echo "===> cleaning $disc"
