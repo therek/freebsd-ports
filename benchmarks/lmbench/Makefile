@@ -2,7 +2,7 @@
 # Date created:		6 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/benchmarks/lmbench/Makefile,v 1.12 2000/04/08 22:04:15 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lmbench
@@ -47,6 +47,7 @@ pre-install:
 
 do-install:
 	${CP} ${FILESDIR}/Makefile ${PREFIX}/lib/lmbench
+	rm ${WRKSRC}/scripts/*.orig
 	tar -C ${WRKSRC} -cf - Results bin scripts | \
 	  tar -C ${PREFIX}/lib/lmbench -xf -
 .for man in ${MAN1}
