@@ -2,11 +2,11 @@
 # Date created:        16 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnet/Makefile,v 1.5 2000/03/24 19:11:57 ade Exp $
+# $FreeBSD: ports/net/gnet/Makefile,v 1.6 2000/04/09 18:11:24 cpiazza Exp $
 #
 
 PORTNAME=	gnet
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.eecs.umich.edu/~dhelder/misc/gnet/src/
 
