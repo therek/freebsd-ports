@@ -3,7 +3,7 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.2 2000/03/21 23:01:18 asami Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.3 2000/03/24 08:54:09 ume Exp $
 #
 
 DISTNAME=	gkrellm-0.9.7
@@ -13,7 +13,8 @@ MASTER_SITES=	http://web.wt.net/~billw/gkrellm/ \
 
 MAINTAINER=	ume@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
