@@ -3,11 +3,12 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gonvert/Makefile,v 1.3 2001/06/13 14:33:36 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gonvert
 PORTVERSION=	0.0.8
+PORTREVISION=	1
 CATEGORIES=	misc python gnome
 MASTER_SITES=	http://webhome.idirect.com/~tekatch/anthony/ucu/
 
