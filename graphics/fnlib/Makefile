@@ -2,7 +2,7 @@
 # Date created:		23 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.18 2000/06/16 21:50:43 asami Exp $
+# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.19 2000/10/05 06:57:37 reg Exp $
 #
 
 PORTNAME=	fnlib
@@ -13,7 +13,7 @@ MASTER_SITES=	http://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/libs/
 		ftp://ftp.dti.ad.jp/pub/X/enlightenment/enlightenment/libs/ \
 		ftp://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/libs/
 
-MAINTAINER=	vanilla@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
