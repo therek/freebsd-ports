@@ -3,10 +3,10 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/palm/syncal/Makefile,v 1.3 1999/09/10 09:36:13 sumikawa Exp $
+# $FreeBSD: ports/palm/syncal/Makefile,v 1.4 1999/10/02 16:43:43 sumikawa Exp $
 #
 
-DISTNAME=	syncal-0.8.1
+DISTNAME=	syncal-0.8.3
 CATEGORIES=	palm comms deskutils
 MASTER_SITES=	http://hopf.math.nwu.edu/syncal/
 
@@ -28,7 +28,6 @@ post-patch:
 	${SED} -e "s:@@PREFIX@@:${PREFIX}:g" ${WRKSRC}/user.tcl.patched > ${WRKSRC}/user.tcl
 	${MV} ${WRKSRC}/ical.patch ${WRKSRC}/ical.patch.patched
 	${SED} -e "s:@@PREFIX@@:${PREFIX}:g" ${WRKSRC}/ical.patch.patched > ${WRKSRC}/ical.patch
-	${RM} ${WRKSRC}/*.o
 
 #
 # ical V2.2 needs a little patch, don't know how to do better
