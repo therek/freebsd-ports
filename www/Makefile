@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.374 2001/06/23 16:09:45 dwcjr Exp $
+# $FreeBSD: ports/www/Makefile,v 1.375 2001/06/27 01:50:38 jeh Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -7,6 +7,7 @@
     SUBDIR += adzap
     SUBDIR += adzapper
     SUBDIR += amaya
+    SUBDIR += amyc
     SUBDIR += analog
     SUBDIR += aolserver
     SUBDIR += apache13
