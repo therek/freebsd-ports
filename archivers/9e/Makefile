@@ -2,7 +2,7 @@
 # Date created:         17 Mar 1999
 # Whom:			Jerry Hicks
 #
-# $FreeBSD: ports/archivers/9e/Makefile,v 1.1.1.1 2000/06/27 03:55:26 wes Exp $
+# $FreeBSD: ports/archivers/9e/Makefile,v 1.2 2000/09/23 18:47:26 will Exp $
 #
 
 PORTNAME=	9e
@@ -11,7 +11,7 @@ CATEGORIES=	archivers
 MASTER_SITES=	http://www.eecs.harvard.edu/~wkj/Software/9e/
 DISTNAME=	9e
 
-MAINTAINER=	gehicks@cisco.co
+MAINTAINER=	gehicks@cisco.com
 
 WWW=		http://www.eecs.harvard.edu/~wkj/Software/9e/
 
