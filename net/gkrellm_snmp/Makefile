@@ -2,7 +2,7 @@
 # Date created:        10/09/2000
 # Whom:                Eike Bernhardt <eike.bernhardt@gmx.de>
 #
-# $FreeBSD: ports/net/gkrellm_snmp/Makefile,v 1.1 2000/09/14 16:56:04 ume Exp $
+# $FreeBSD: ports/net/gkrellm_snmp/Makefile,v 1.2 2000/10/05 06:57:44 reg Exp $
 #
 
 PORTNAME=	gkrellm_snmp
@@ -12,7 +12,7 @@ MASTER_SITES=	http://triq.net/gkrellm/
 
 MAINTAINER=	eike.bernhardt@gmx.de
 
-LIB_DEPENDS=	snmp.4:${PORTSDIR}/net/ucd-snmp
+LIB_DEPENDS=	snmp.4:${PORTSDIR}/net/net-snmp
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 
