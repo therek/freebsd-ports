@@ -2,11 +2,12 @@
 # Date created:				22 August 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis/Makefile,v 1.3 2000/11/02 21:33:29 trevor Exp $
+# $FreeBSD: ports/audio/vorbis/Makefile,v 1.4 2000/11/16 21:28:21 asami Exp $
 #
 
 PORTNAME=	vorbis
-PORTVERSION=	20001018
+PORTVERSION=	1.0b4
+PORTEPOCH=	1
 CATEGORIES=	audio
 MASTER_SITES=	# empty
 DISTFILES=	# none
@@ -14,8 +15,8 @@ EXTRACT_ONLY=	# empty
 
 MAINTAINER=	t.vanklaveren@student.utwente.nl
 
-LIB_DEPENDS=	ao.0:${PORTSDIR}/audio/libao \
-		ogg.0:${PORTSDIR}/audio/libogg \
+LIB_DEPENDS=	ao.1:${PORTSDIR}/audio/libao \
+		ogg.1:${PORTSDIR}/audio/libogg \
 		vorbis.0:${PORTSDIR}/audio/libvorbis
 RUN_DEPENDS=	${X11BASE}/lib/xmms/Input/libvorbis.so:${PORTSDIR}/audio/vorbis-xmms \
 		ogg123:${PORTSDIR}/audio/vorbis-tools
