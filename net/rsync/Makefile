@@ -4,7 +4,7 @@
 # Date created:         Sat Aug 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.24 1999/08/30 14:24:04 peter Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.25 1999/10/12 04:57:10 obrien Exp $
 #
 
 DISTNAME=	rsync-2.3.1
@@ -14,11 +14,21 @@ MASTER_SITES=	ftp://samba.anu.edu.au/pub/rsync/  \
 		ftp://ftp.sunet.se/pub/unix/admin/rsync/  \
 		ftp://ftp.fu-berlin.de/pub/unix/network/rsync/
 
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
+		ftp://ftp.pasta.cs.uit.no/pub/IPv6/misc/
+PATCHFILES=	rsync-231-v6-19990723.diff.gz
+PATCH_DIST_STRIP=	-p1
+
 MAINTAINER=     obrien@FreeBSD.org
 
 Y2K=		http://rsync.samba.org/rsync/y2k.html
 
 GNU_CONFIGURE=	yes
+.if defined(USE_INET6)
+CONFIGURE_ARGS=	--enable-ipv6
+.else
+CONFIGURE_ARGS=	--disable-ipv6
+.endif
 MAN1=		rsync.1
 MAN5=		rsyncd.conf.5
 
