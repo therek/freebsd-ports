@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.218 2000/05/20 03:54:45 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.219 2000/05/23 00:01:37 asami Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -60,6 +60,7 @@
     SUBDIR += junkbuster
     SUBDIR += kdreamsite
     SUBDIR += kwebsearch
+    SUBDIR += libapreq
     SUBDIR += libghttp
     SUBDIR += libwww
     SUBDIR += libxpg4-ns
