@@ -2,11 +2,11 @@
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.28 2000/09/12 04:10:01 vanilla Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.29 2000/11/12 02:45:08 vanilla Exp $
 #
 
 PORTNAME=	xinetd
-PORTVERSION=	2.1.8.9pre12
+PORTVERSION=	2.1.8.9pre13
 CATEGORIES=	security
 MASTER_SITES=	http://www.xinetd.org/ \
 		http://synack.net/xinetd/
