@@ -3,7 +3,7 @@
 # Whom:					trevor
 #
 # $NetBSD: Makefile,v 1.4 2001/03/07 23:03:19 kim Exp $
-# $FreeBSD$
+# $FreeBSD: ports/security/digest/Makefile,v 1.1 2001/03/09 21:24:49 trevor Exp $
 #
 
 PORTNAME=	digest
@@ -13,7 +13,7 @@ MASTER_SITES=	#
 DISTFILES=
 EXTRACT_ONLY=
 
-MAINTAINER=	trevor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 CFLAGS+=	"-DVERSION=${PORTVERSION}"
 MAKE_ENV+=	BINDIR=${LOCALBASE}/bin MANDIR=${LOCALBASE}/man
