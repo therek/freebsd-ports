@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/dns/bind9-dlz/files/configure.bind9-dlz,v 1.8 2004/03/21 12:04:47 dinoex Exp $
+# $FreeBSD: ports/dns/bind9-dlz/files/configure.bind9-dlz,v 1.9 2004/05/05 03:33:00 dinoex Exp $
 #
 if [ -f ${WRKDIRPREFIX}${CURDIR2}/Makefile.inc ]; then
 	exit
@@ -68,12 +68,12 @@ while [ "$1" ]; do
 		\"OpenLDAP21\")
 			echo WITH_LDAP=YES
 			echo LDAP_PORT?=net/openldap21-client
-			echo OPENLDAP_LIB_VER?=2
+			echo OPENLDAP_LIB?=libldap.so.2
 			;;
 		\"OpenLDAP22\")
 			echo WITH_LDAP=YES
 			echo LDAP_PORT?=net/openldap22-client
-			echo OPENLDAP_LIB_VER?=202
+			echo OPENLDAP_LIB?=libldap-2.2.so.7
 			;;
 		\"BerkleyDB41\")
 			echo WITH_BERKLEYDB_DRIVER=YES
