@@ -2,11 +2,11 @@
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-Tree/Makefile,v 1.6 2001/01/16 17:33:01 sobomax Exp $
+# $FreeBSD: ports/www/p5-HTML-Tree/Makefile,v 1.7 2001/03/01 06:37:53 vanilla Exp $
 #
 
 PORTNAME=	HTML-Tree
-PORTVERSION=	3.08
+PORTVERSION=	3.1
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
