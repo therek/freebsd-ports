@@ -2,13 +2,14 @@
 # Date created:        13 May 1999
 # Whom:                kbyanc
 #
-# $FreeBSD: ports/www/fcgi/Makefile,v 1.5 2000/04/10 00:05:05 cpiazza Exp $
+# $FreeBSD: ports/www/fcgi/Makefile,v 1.6 2000/07/10 01:54:50 steve Exp $
 #
 
 PORTNAME=	fcgi-devkit
-PORTVERSION= 	2.1
+PORTVERSION= 	2.2.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.fastcgi.com/dist/
+DISTNAME=	devkit_2.2.0
 
 MAINTAINER=	kbyanc@posi.net
 
@@ -25,7 +26,7 @@ post-install:
 .for i in fastcgi-prog-guide fastcgi-whitepaper
 	    ${MKDIR} ${PREFIX}/share/doc/${PORTNAME}/$i
 	    cd ${WRKSRC}/doc/$i && \
-                ${INSTALL_DATA} * ${PREFIX}/share/doc/${PORTNAME}/$i
+		${INSTALL_DATA} * ${PREFIX}/share/doc/${PORTNAME}/$i
 	    @if [ -f ${PREFIX}/share/doc/${PORTNAME}/$i/Makefile ]; then \
 		${RM} ${PREFIX}/share/doc/${PORTNAME}/$i/Makefile; \
 	    fi
