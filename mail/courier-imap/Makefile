@@ -2,11 +2,11 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.17 2001/01/29 12:49:52 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.18 2001/03/18 16:08:42 nbm Exp $
 #
 
 PORTNAME=	courier-imap
-PORTVERSION=	1.3.2
+PORTVERSION=	1.3.5
 PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
