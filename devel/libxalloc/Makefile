@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	libxalloc
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libxalloc/Makefile,v 1.7 2000/06/16 21:50:07 asami Exp $
+# $FreeBSD: ports/devel/libxalloc/Makefile,v 1.8 2000/11/11 05:32:43 obrien Exp $
 #
 
 PORTNAME=	libxalloc

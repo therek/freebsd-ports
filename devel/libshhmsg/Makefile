@@ -1,14 +1,15 @@
+# ex:ts=8
 # New ports collection makefile for:	libshhmsg
 # Date created:				1 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libshhmsg/Makefile,v 1.7 2000/06/16 21:50:05 asami Exp $
+# $FreeBSD: ports/devel/libshhmsg/Makefile,v 1.8 2000/11/11 05:31:08 obrien Exp $
 #
 
 PORTNAME=	libshhmsg
 PORTVERSION=	1.4.0
 CATEGORIES=	devel
-MASTER_SITES=   http://shh.thathost.com/pub-unix/files/
+MASTER_SITES=	http://shh.thathost.com/pub-unix/files/
 DISTNAME=	shhmsg-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
@@ -18,9 +19,9 @@ INSTALLS_SHLIB=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/libshhmsg
+	@${MKDIR} ${PREFIX}/share/doc/libshhmsg
 .for file in CREDITS README shhmsg.txt
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/libshhmsg
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/libshhmsg
 .endfor
 .endif
 
