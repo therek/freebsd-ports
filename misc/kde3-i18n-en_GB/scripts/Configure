@@ -1,5 +1,5 @@
 #! /bin/sh
-# $FreeBSD: ports/misc/kde2-i18n/scripts/Configure,v 1.7 2001/08/20 05:30:10 demon Exp $
+# $FreeBSD: ports/misc/kde2-i18n/scripts/Configure,v 1.8 2001/10/27 08:50:15 demon Exp $
 
 /bin/rm -f ${PLIST} ${PLIST}.dirs
 
@@ -85,12 +85,6 @@ while [ "$1" ]; do
 	/usr/bin/grep "^[^@].*-$a\$" ${CURDIR}/pkg-plist >> ${PLIST}
 	/usr/bin/grep "^@.*/$a/.*" ${CURDIR}/pkg-plist >> ${PLIST}.dirs
 	/usr/bin/grep "^@.*/$a$" ${CURDIR}/pkg-plist >> ${PLIST}.dirs
-	if [ x$a = xzh_TW.Big5 ]; then
-	    /usr/bin/grep "^[^@].*/zh_TW/.*" ${CURDIR}/pkg-plist >> ${PLIST}
-	    /usr/bin/grep "^[^@].*-zh_TW\$" ${CURDIR}/pkg-plist >> ${PLIST}
-	    /usr/bin/grep "^@.*/zh_TW/.*" ${CURDIR}/pkg-plist >> ${PLIST}.dirs
-	    /usr/bin/grep "^@.*/zh_TW$" ${CURDIR}/pkg-plist >> ${PLIST}.dirs
-	fi
 	shift
 done
 
