@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.41 2000/04/16 12:24:41 dirk Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.42 2000/04/21 08:18:37 mharo Exp $
 #
 
 PORTNAME=	openssl
@@ -19,12 +19,19 @@ MAINTAINER=	dirk@FreeBSD.org
 .if ${OSVERSION} >= 400014
 FORBIDDEN=	"OpenSSL is already in the base system"
 .endif
+.if ${PORTOBJFORMAT} == "aout"
+NOSHARED=	yes
+.endif
 
 RESTRICTED=	"Cryptography"
 USE_PERL5=	yes
+.if defined(NOSHARED)
+PLIST=		${PKGDIR}/PLIST.noshared
+.else
 ALL_TARGET=	freebsd-shared all
 SHLIBVER=	1
 MAKE_ENV+=	SHLIBVER=${SHLIBVER}
+.endif
 
 MANPREFIX=	${PREFIX}/openssl
 MAN1=		CA.pl.1 asn1parse.1 ca.1 ciphers.1 crl.1 crl2pkcs7.1 dgst.1 \
@@ -82,11 +89,13 @@ do-configure:
 	   ${RSAREF} -L${PREFIX}/lib
 
 post-install:
+.if !defined(NOSHARED)
 .for i in libcrypto libssl
 	@${INSTALL_DATA} ${WRKSRC}/$i.so.${SHLIBVER} ${PREFIX}/lib
 	@${LN} -sf $i.so.${SHLIBVER} ${PREFIX}/lib/$i.so
 .endfor
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+.endif
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/openssl
 	@${INSTALL_DATA} ${WRKSRC}/doc/openssl.txt ${PREFIX}/share/doc/openssl
