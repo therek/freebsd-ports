@@ -2,7 +2,7 @@
 # Date created:		23 Jul 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.8 2000/08/24 18:08:27 cjh Exp $
+# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.9 2000/09/03 13:05:33 cjh Exp $
 #
 
 PORTNAME=	baekmukfonts
@@ -19,6 +19,12 @@ EXTRACT_ONLY=	baekmuk-${PORTVERSION}${EXTRACT_SUFX}
 MAINTAINER=	cjh@freebsd.org
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 FONTLIST=	batang10 batang10b batang12 batang12b batang14 batang14b \
 		batang16 batang16b batang18 batang18b batang20 batang20b \
@@ -58,4 +64,4 @@ do-install:
 .endfor
 	@(cd ${PREFIX}/${FONTSDIR} && mkfontdir .)
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

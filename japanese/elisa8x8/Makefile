@@ -2,7 +2,7 @@
 # Date created:		17 Aug. 1998
 # Whom: Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp> & ELISA Font Project
 #
-# $FreeBSD: ports/japanese/elisa8x8/Makefile,v 1.3 1999/08/25 05:23:54 obrien Exp $
+# $FreeBSD: ports/japanese/elisa8x8/Makefile,v 1.4 2000/04/11 14:13:20 knu Exp $
 #
 
 PORTNAME=	elisa8x8
@@ -14,6 +14,13 @@ DISTNAME=	elisat10
 MAINTAINER=	toshi@tea.forus.or.jp
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_WRKSUBDIR=	yes
 
 BDFTOPCF_CMD=	${PREFIX}/bin/bdftopcf
@@ -52,4 +59,4 @@ post-install:
 	)
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

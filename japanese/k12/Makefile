@@ -2,7 +2,7 @@
 # Date created:		24 June 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/k12/Makefile,v 1.10 1999/11/01 01:10:34 steve Exp $
+# $FreeBSD: ports/japanese/k12/Makefile,v 1.11 2000/04/11 14:14:17 knu Exp $
 #
 
 PORTNAME=	kaname12
@@ -17,6 +17,12 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 MAINTAINER=	mita@jp.FreeBSD.org
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 WRKSRC=		${WRKDIR}/fonts
 EXTRACT_ONLY=	knm_new_linux.tar.gz
@@ -41,4 +47,4 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/doc.orig/*        ${PREFIX}/share/doc/k12
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

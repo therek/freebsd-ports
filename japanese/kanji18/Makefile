@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.5 2000/08/03 14:28:23 sanpei Exp $
+# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.6 2000/08/12 13:16:13 sanpei Exp $
 #
 
 PORTNAME=	kanji
@@ -22,6 +22,12 @@ DIST_SUBDIR=	${DISTNAME}
 FONTSDIR=	lib/X11/fonts/local
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 EXTRACT_CMD=		zcat
 EXTRACT_BEFORE_ARGS=
@@ -68,4 +74,4 @@ post-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
 		${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

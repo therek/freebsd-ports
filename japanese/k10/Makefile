@@ -2,7 +2,7 @@
 # Date created:		25 Feb 1998
 # Whom:	Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/japanese/k10/Makefile,v 1.7 2000/01/22 13:24:17 mharo Exp $
+# $FreeBSD: ports/japanese/k10/Makefile,v 1.8 2000/04/11 14:14:17 knu Exp $
 #
 
 PORTNAME=	naga10
@@ -14,6 +14,12 @@ DISTNAME=	knj10-${PORTVERSION}
 MAINTAINER=	usagi@clave.gr.jp
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
 
 FONTSDIR=	lib/X11/fonts/local
 MAKE_ENV=	FONTSDIR=${FONTSDIR}
@@ -30,4 +36,4 @@ post-install:
 	@${CP} ${WRKSRC}/README ${PREFIX}/share/doc/naga10/
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

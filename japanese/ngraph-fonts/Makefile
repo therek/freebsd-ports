@@ -2,7 +2,7 @@
 # Date created:		6 December 1999
 # Whom:			Yoshiro MIHIRA <sanpei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.3 2000/07/02 14:14:04 sanpei Exp $
+# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.4 2000/08/03 14:28:24 sanpei Exp $
 #
 
 PORTNAME=	ngraph-fonts
@@ -18,8 +18,15 @@ RUN_DEPENDS= \
 	${X11BASE}/lib/X11/fonts/local/kanji26.pcf.gz:${PORTSDIR}/japanese/kanji26
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_BUILD=	yes
 
 do-install:	# empty
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

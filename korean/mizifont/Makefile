@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/mizifont/Makefile,v 1.13 2000/04/13 09:16:59 asami Exp $
+# $FreeBSD: ports/korean/mizifont/Makefile,v 1.14 2000/07/15 13:25:00 cjh Exp $
 #
 
 PORTNAME=	mizifonts
@@ -17,6 +17,13 @@ MAINTAINER=	cjh@FreeBSD.org
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_WRKSUBDIR=	yes
 
 RPM2CPIO=	rpm2cpio
@@ -49,4 +56,4 @@ do-install:
 post-install:
 	@${CAT} ${PKGDIR}/MESSAGE
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		26 Sep 1997
 # Whom: Dai ISHIJIMA & ELISA Font Project <ishijima@tri.pref.osaka.jp>
 #
-# $FreeBSD: ports/japanese/elisa10x8/Makefile,v 1.6 1999/08/25 05:23:53 obrien Exp $
+# $FreeBSD: ports/japanese/elisa10x8/Makefile,v 1.7 2000/04/11 14:13:17 knu Exp $
 #
 
 PORTNAME=	elisa10x8
@@ -19,6 +19,13 @@ EXTRACT_ONLY=	elisau10.tgz
 MAINTAINER=	ishijima@tri.pref.osaka.jp
 
 USE_X_PREFIX=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+.endif
+
 NO_WRKSUBDIR=	yes
 
 FONTSDIR=	lib/X11/fonts/local
@@ -38,4 +45,4 @@ post-install:
 	@${CP} ${WRKSRC}/hosoku.txt ${PREFIX}/share/doc/elisa8/
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
