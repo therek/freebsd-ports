@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.180 2001/03/31 11:36:33 dinoex Exp $
+# $FreeBSD: ports/security/Makefile,v 1.181 2001/04/07 00:48:49 will Exp $
 #
 
     SUBDIR += aafid2
@@ -74,6 +74,7 @@
     SUBDIR += nmap
     SUBDIR += nmapfe
     SUBDIR += oidentd
+    SUBDIR += op
     SUBDIR += opencl
     SUBDIR += openssh
     SUBDIR += openssh-askpass
