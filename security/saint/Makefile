@@ -2,11 +2,11 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.20 2001/05/25 20:07:53 ijliao Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.21 2001/06/17 15:07:01 kevlo Exp $
 #
 
 PORTNAME=	saint
-PORTVERSION=	3.1.7
+PORTVERSION=	3.2.1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.wwdsi.com/pub/saint/			\
 		http://www.wwdsi.com/saint/downloads/
