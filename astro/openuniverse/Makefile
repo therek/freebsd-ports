@@ -2,7 +2,7 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/astro/openuniverse/Makefile,v 1.18 2000/09/15 01:33:09 asami Exp $
+# $FreeBSD: ports/astro/openuniverse/Makefile,v 1.19 2001/01/09 00:06:16 will Exp $
 #
 
 PORTNAME=		openuniverse
@@ -11,7 +11,7 @@ CATEGORIES=		astro
 MASTER_SITES=		http://download.sourceforge.net/openuniverse/
 DISTNAME=		${PORTNAME}-1.0beta3
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=		trevor@FreeBSD.org
 
 LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg
 
