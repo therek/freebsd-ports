@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 08:41:22 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/p5-Mac-Macbinary/Makefile,v 1.1 2001/01/03 23:33:32 will Exp $
 #
 
 PORTNAME=	Mac-Macbinary
-PORTVERSION=	0.02
+PORTVERSION=	0.04
 CATEGORIES=	archivers perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mac
