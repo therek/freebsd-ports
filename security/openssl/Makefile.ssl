@@ -2,7 +2,7 @@
 # Date created:		31 May 2002
 # Whom:			dinoex
 #
-# $FreeBSD: ports/security/openssl/Makefile.ssl,v 1.2 2002/08/04 09:04:08 blackend Exp $
+# $FreeBSD: ports/security/openssl/Makefile.ssl,v 1.3 2002/08/30 07:02:17 dinoex Exp $
 #
 
 .if defined(USE_OPENSSL_BASE)
@@ -42,8 +42,8 @@ MAKE_ARGS+=		OPENSSL_CFLAGS="${OPENSSL_CFLAGS}"
 
 OPENSSLBASE=		${LOCALBASE}
 .if defined(USE_OPENSSL_BETA)
-OPENSSLDIR=		${OPENSSLBASE}/openssl-beta
-LIB_DEPENDS+=		crypto.3:${PORTSDIR}/security/openssl
+OPENSSLDIR=		${OPENSSLBASE}/openssl
+LIB_DEPENDS+=		crypto.3:${PORTSDIR}/security/openssl-beta
 .else
 OPENSSLDIR=		${OPENSSLBASE}/openssl
 LIB_DEPENDS+=		crypto.3:${PORTSDIR}/security/openssl
