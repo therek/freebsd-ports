@@ -3,10 +3,15 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread/Makefile,v 1.15 1999/08/31 06:49:44 mharo Exp $
+# $FreeBSD: ports/print/acroread/Makefile,v 1.16 2000/02/28 08:33:53 asami Exp $
 #
+.include <bsd.port.pre.mk>
 
+.if ${ARCH} == "i386"
 DISTNAME=	ar302lin
+.elif ${ARCH} == "alpha"
+DISTNAME=	ar302osf
+.endif
 PKGNAME=	acroread-3.02
 CATEGORIES=	print linux
 MASTER_SITES=	ftp://ftp.adobe.com/pub/adobe/acrobatreader/unix/3.x/ \
@@ -15,13 +20,28 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tg@FreeBSD.org
 
+.if ${ARCH} == "i386"
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+.elif ${ARCH} == "alpha"
+RUN_DEPENDS=	/compat/osf1/usr/shlib/libc.so:${PORTSDIR}/emulators/osf1_base
+.endif
 
-ONLY_FOR_ARCHS=	i386
+ONLY_FOR_ARCHS=	i386 alpha
 
 NO_FILTER_SHLIBS=	yes
 
+.if ${ARCH} == "i386"
 WRKSRC=		${WRKDIR}/ILINXR.install
+.elif ${ARCH} == "alpha"
+WRKSRC=		${WRKDIR}/AOSFR.install
+.endif
+
+pre-configure:
+.if ${ARCH} == "i386"
+	@${PERL} -pi.fbsd -e 's:Linux\):FreeBSD|Linux):g' ${WRKSRC}/INSTALL
+.elif ${ARCH} == "alpha"
+	@${PERL} -pi.fbsd -e 's:OSF1\):FreeBSD|OSF1):g' ${WRKSRC}/INSTALL
+.endif
 
 do-build:
 	@${ECHO_MSG} "Do a \`make install' as root."
@@ -31,13 +51,18 @@ do-install:
 	@ReadInstallDir=${PREFIX}/Acrobat3 ${WRKSRC}/INSTALL
 
 post-install:
+.if ${ARCH} == "i386"
+	@${PERL} -pi -e 's:Linux\):FreeBSD|Linux):g' ${PREFIX}/Acrobat3/bin/acroread
+	@brandelf -t Linux ${PREFIX}/Acrobat3/Reader/intellinux/bin/acroread
+.elif ${ARCH} == "alpha"
+	@${PERL} -pi -e 's:OSF1\):FreeBSD|OSF1):g' ${PREFIX}/Acrobat3/bin/acroread
+.endif
 	@cd ${PREFIX}/Acrobat3/bin && \
 	  ${PATCH} --quiet < ${FILESDIR}/acroread.diff && \
 	  ${INSTALL_SCRIPT} ${PREFIX}/Acrobat3/bin/acroread ${PREFIX}/bin && \
 	  ${RM} acroread.orig
-	@brandelf -t Linux ${PREFIX}/Acrobat3/Reader/intellinux/bin/acroread
 	@${CHMOD} +x ${PREFIX}/bin/acroread
 	@${ECHO_MSG} "Be sure to read the license agreement in"
 	@${ECHO_MSG} "${PREFIX}/Acrobat3/Reader/License.pdf"
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
