@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.564 2001/06/11 07:20:35 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.565 2001/06/14 17:39:47 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -191,6 +191,7 @@
     SUBDIR += libdsp
     SUBDIR += libelf
     SUBDIR += libffi
+    SUBDIR += libformat
     SUBDIR += libg++
     SUBDIR += libgetline
     SUBDIR += libgii
