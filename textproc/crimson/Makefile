@@ -2,11 +2,12 @@
 # Date created:		2000-03-21
 # Whom:			Palle Girgensohn
 #
-# $FreeBSD: ports/textproc/crimson/Makefile,v 1.1 2001/03/30 05:09:20 okazaki Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crimson
 PORTVERSION=	1.1.3
+PORTREVISION=	1
 CATEGORIES=	textproc java
 MASTER_SITES=	http://xml.apache.org/dist/crimson/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-bin
