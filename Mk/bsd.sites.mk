@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.215 2004/01/29 16:40:46 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.216 2004/02/05 14:23:31 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -210,12 +210,14 @@ MASTER_SITE_FEDORA_LINUX+= \
 MASTER_SITE_FESTIVAL+= \
 	http://www.festvox.org/packed/festival/%SUBDIR%/ \
 	http://www.speech.cs.cmu.edu/festival/cstr/festival/%SUBDIR%/ \
-	ftp://ftp.leb.net/pub/blinux/festival/mirror.festival_home/%SUBDIR%/ \
+	ftp://rpmfind.net/linux/blinux/festival/mirror.festival_home/%SUBDIR%/ \
+	ftp://speakeasy.rpmfind.net/linux/blinux/festival/mirror.festival_home/%SUBDIR%/\
 	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.festival_home/%SUBDIR%/ \
 	ftp://ftp.tuwien.ac.at/opsys/linux/blinux/festival/mirror.festival_home/%SUBDIR%/
 
 MASTER_SITE_FESTIVAL_OGI+= \
-	ftp://ftp.leb.net/pub/blinux/festival/mirror.ogi-synth_home/ \
+	ftp://rpmfind.net/linux/blinux/festival/mirror.ogi-synth_home/%SUBDIR%/\
+	ftp://speakeasy.rpmfind.net/linux/blinux/festival/mirror.ogi-synth_home/%SUBDIR%/\
 	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.ogi-synth_home/ \
 	ftp://ftp.tuwien.ac.at/opsys/linux/blinux/festival/mirror.ogi-synth_home/ \
 	ftp://cslu.cse.ogi.edu/pub/tts/
