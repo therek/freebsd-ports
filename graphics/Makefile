@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.269 2001/02/26 19:24:48 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.270 2001/02/28 12:54:25 knu Exp $
 #
 
     SUBDIR += 4va
@@ -177,6 +177,7 @@
     SUBDIR += rayshade
     SUBDIR += ruby-gd
     SUBDIR += ruby-gdk_imlib
+    SUBDIR += ruby-gdk_pixbuf
     SUBDIR += ruby-libpng
     SUBDIR += ruby-ming
     SUBDIR += ruby-opengl
