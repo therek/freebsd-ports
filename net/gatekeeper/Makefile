@@ -2,7 +2,7 @@
 # Date created:		Wed Apr 15 15:41:00 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.1.1.1 2000/04/15 15:02:50 roger Exp $
+# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.2 2000/04/16 19:01:31 roger Exp $
 #
 
 PORTNAME=	gatekeeper
@@ -19,6 +19,7 @@ WRKSRC=		${WRKDIR}/gk
 
 NOCLEANDEPENDS=	yes
 
+USE_BISON=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR= ${WRKDIRPREFIX}${PORTSDIR}/net/openh323/work/pwlib \
