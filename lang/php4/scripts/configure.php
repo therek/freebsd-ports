@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.12 2004/01/15 23:31:49 ale Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.13 2004/01/24 13:15:54 ale Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -73,6 +73,7 @@ SNMP		"SNMP support (implies OPENSSL)" ${WITH_SNMP:-OFF} \
 SOCKETS		"sockets support" ${WITH_SOCKETS:-OFF} \
 SYBASEDB	"Sybase database support (DB-lib)" ${WITH_SYBASEDB:-OFF} \
 SYBASECT	"Sybase database support (CT-lib)" ${WITH_SYBASECT:-OFF} \
+SYSVMSG		"System V message support" ${WITH_SYSVMSG:-OFF} \
 SYSVSEM		"System V semaphore support" ${WITH_SYSVSEM:-OFF} \
 SYSVSHM		"System V shared memory support" ${WITH_SYSVSHM:-OFF} \
 TOKENIZER	"tokenizer support" ${WITH_TOKENIZER:-OFF} \

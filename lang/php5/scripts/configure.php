@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.16 2004/03/19 10:54:10 ale Exp $
+# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.17 2004/04/28 22:23:19 ale Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -72,6 +72,7 @@ SPL		"Standard PHP Library support" ${WITH_SPL:-ON} \
 SQLITE		"sqlite support" ${WITH_SQLITE:-OFF} \
 SYBASEDB	"Sybase database support (DB-lib)" ${WITH_SYBASEDB:-OFF} \
 SYBASECT	"Sybase database support (CT-lib)" ${WITH_SYBASECT:-OFF} \
+SYSVMSG		"System V message support" ${WITH_SYSVMSG:-OFF} \
 SYSVSEM		"System V semaphore support" ${WITH_SYSVSEM:-OFF} \
 SYSVSHM		"System V shared memory support" ${WITH_SYSVSHM:-OFF} \
 TIDY		"TIDY support" ${WITH_TIDY:-OFF} \
