@@ -2,18 +2,16 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/platon/Makefile,v 1.5 1999/08/28 01:56:55 mharo Exp $
+# $FreeBSD: ports/biology/platon/Makefile,v 1.6 2000/04/08 22:04:48 mharo Exp $
 #
 
 PORTNAME=	platon
-PORTVERSION=	1999.04.07
+PORTVERSION=	2000.04.26
 CATEGORIES=	biology
 MASTER_SITES=	ftp://xraysoft.chem.ruu.nl/pub/unix/
 DISTNAME=	platon
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
-
-BROKEN='MD5 checksum error'
 
 # PLATON may be used free of charge by the academic community under
 # the condition that it is not redistributed for a current & fresh copy.
