@@ -3,7 +3,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt20/Makefile,v 1.39 1999/10/31 10:12:49 imura Exp $
+# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.40 1999/11/26 20:31:17 imura Exp $
 #
 
 DISTNAME=	qt-2.0.2
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.troll.no/qt/source/
 MAINTAINER=	imura@FreeBSD.org
 
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+
+FORBIDDEN=	repository copied, awaiting upgrade
 
 NO_LATEST_LINK=	yes
 USE_GMAKE=	yes
