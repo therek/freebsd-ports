@@ -2,11 +2,11 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.31 2000/07/11 17:16:31 obrien Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.32 2000/07/16 13:02:29 alex Exp $
 #
 
 PORTNAME=	tcsh
-PORTVERSION=	6.09.01
+PORTVERSION=	6.09.03
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_TCSH}
 DISTNAME=	${DISTNAME_TCSH}
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 Y2K=		ftp://ftp.astron.com/pub/tcsh/Y2K
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} >= 400021
+.if ${OSVERSION} >= 4000210
 NO_BUILD=	yes
 PLIST=		${PKGDIR}/PLIST.nobuild
 DISTFILES=	# empty
@@ -32,7 +32,7 @@ MASTER_SITE_TCSH=	http://www2.wbs.ne.jp/~znc/tcsh/
 DISTNAME_TCSH=	${PORTNAME}-${PORTVERSION}
 .endif
 
-.if ${OSVERSION} >= 400021
+.if ${OSVERSION} >= 4000210
 pre-fetch:
 	@${ECHO_MSG} "This port is just for making symlink from /bin/tcsh"
 	@${ECHO_MSG} "to ${PREFIX}/bin/tcsh and updating /etc/shells."
