@@ -2,7 +2,7 @@
 # Date created:        29 April 1999
 # Whom:                Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/audio/rio/Makefile,v 1.3 1999/08/25 04:36:01 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rio
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.world.co.uk/sba/
 DISTNAME=	rio006
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	derm@ibm.net
+MAINTAINER=	ports@FreeBSD.Org
 
 WRKSRC=		${WRKDIR}/rio
 MAKEFILE=	makefile
