@@ -2,7 +2,7 @@
 # Date created:		Sa  01 May 1999 15:00:00 MET
 # Whom:			Tobias Reifenberger <treif@mayn.de>
 #
-# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.2 2000/04/14 10:47:56 asami Exp $
+# $FreeBSD: ports/graphics/xmrm/Makefile,v 1.3 2000/07/19 13:46:59 alex Exp $
 #
 
 PORTNAME=	xmrm
