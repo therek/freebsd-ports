@@ -2,12 +2,12 @@
 # Date created:		2 January 2000
 # Whom:			Dave Glowacki <dglo@ssec.wisc.edu>
 #
-# $FreeBSD: ports/databases/mysql-jdbc-mm/Makefile,v 1.2 2000/02/27 15:34:14 steve Exp $
+# $FreeBSD: ports/databases/mysql-jdbc-mm/Makefile,v 1.3 2000/04/08 22:48:35 mharo Exp $
 #
 
 PORTNAME=	mysql-jdbc-mm
-PORTVERSION=	1.2b
-CATEGORIES=	databases
+PORTVERSION=	1.2c
+CATEGORIES=	databases java
 MASTER_SITES=	http://www.worldserver.com/mm.mysql/dist/
 DISTNAME=	mm.mysql.jdbc-${PORTVERSION}
 
