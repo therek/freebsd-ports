@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.252 2001/10/03 16:00:14 sumikawa Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.253 2001/10/05 00:00:50 petef Exp $
 #
 
     SUBDIR += agrep
@@ -100,6 +100,7 @@
     SUBDIR += p5-LJ-SpellCheck
     SUBDIR += p5-Lingua-Ispell
     SUBDIR += p5-PDF-Create
+    SUBDIR += p5-Parse-Syslog
     SUBDIR += p5-Sort-ArbBiLex
     SUBDIR += p5-Sort-Fields
     SUBDIR += p5-Sort-PolySort
