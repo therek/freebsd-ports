@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer/Makefile,v 1.14 2000/08/18 13:18:22 jedgar Exp $
+# $FreeBSD: ports/german/webalizer/Makefile,v 1.15 2000/08/19 20:18:30 steve Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	1.30.4
@@ -16,7 +16,7 @@ MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
-WEBALIZER_LANG= german
+WEBALIZER_LANG?=	german
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-gdlib=${PREFIX}/lib \
 			--with-gd=${PREFIX}/include/gd \
