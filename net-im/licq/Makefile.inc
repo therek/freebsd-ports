@@ -1,5 +1,5 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq/Makefile.inc,v 1.14 2003/09/24 17:32:28 dinoex Exp $
+# $FreeBSD: ports/net/licq/Makefile.inc,v 1.15 2004/03/27 01:57:34 edwin Exp $
 
 PKGNAMEPREFIX=		licq-
 LICQ_VER=		1.2.7
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	licq
 DISTNAME=		${PKGNAMEPREFIX}${LICQ_VER}
 DISTFILES=		${DISTNAME}.tar.bz2
 GNU_CONFIGURE=		yes
-MD5_FILE?=		${LICQ_PORT}/distinfo
+MD5_FILE?=		${PORTSDIR}/${LICQ_PORT}/distinfo
 # USE_LIBTOOL doesn't work for these ports
 #USE_LIBTOOL=		yes
 USE_GMAKE=		yes
