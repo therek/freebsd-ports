@@ -2,18 +2,19 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.11 2000/11/03 22:30:18 kris Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.12 2001/03/29 21:55:27 mharo Exp $
 #
 
 PORTNAME=	napster
 PORTVERSION=	1.4.4
 CATEGORIES=	audio net
-MASTER_SITES=	http://download.sourceforge.net/nap/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	nap
 DISTNAME=	nap-${PORTVERSION}
 
 MAINTAINER=	dburr@FreeBSD.org
 
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 
 pre-install:
 	${MKDIR} ${PREFIX}/share/nap
