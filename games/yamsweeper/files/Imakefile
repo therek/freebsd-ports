@@ -4,7 +4,7 @@
 
 XCOMM Imakefile src for Yamsweeper, created by hirofumi
 XCOMM
-XCOMM $FreeBSD: ports/games/yamsweeper/files/Imakefile,v 1.4 1999/08/29 11:25:50 peter Exp $
+XCOMM $FreeBSD: ports/games/yamsweeper/files/Imakefile,v 1.5 2000/04/27 21:04:41 kris Exp $
 XCOMM
 
 #include "REVISION"
@@ -46,7 +46,7 @@ InstallProgramWithFlags(yamsweeper,$(INSTALLDIR),$(INSTUIDFLAGS))
 InstallManPage(yamsweeper,$(MANDIR))
 
 install::
-	chown $(OWNER).$(GROUP) $(BINDIR)/yamsweeper
+	chown $(OWNER):$(GROUP) $(BINDIR)/yamsweeper
 	chmod 2755 $(BINDIR)/yamsweeper
 
 
