@@ -2,17 +2,18 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.14 2001/01/10 15:38:54 kevlo Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.15 2001/01/16 15:32:49 kevlo Exp $
 #
 
 PORTNAME=	iplog
 PORTVERSION=	2.2.3
+PORTREVISION=	1
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://misc.ojnk.net/~odin/stuff/
 MASTER_SITE_SUBDIR=	ojnk
 
-MAINTAINER=	ust@cert.siemens.de
+MAINTAINER=	udo.schweigert@siemens.com
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
