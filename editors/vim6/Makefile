@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.96 2000/11/20 17:27:44 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.97 2000/12/05 17:22:25 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -53,11 +53,12 @@ MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 
 MAKE_ARGS+=	X_LIBS=-lxpg4 CONF_OPT_MAX="--enable-max-features"
 
-.if defined(HAVE_MOTIF)
+.if defined(WITH_ATHENA)
+MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=athena --enable-multibyte --enable-fontset --enable-multibyte --enable-xim"
+#MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=yes" ${I18N}
+.else
 USE_MOTIF=	yes
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=motif --with-motif-lib=\"${MOTIFLIB}\" --enable-multibyte --enable-fontset --enable-multibyte --enable-xim" MOTIFHOME=${X11BASE}
-.else
-MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=athena --enable-multibyte --enable-fontset --enable-multibyte --enable-xim"
 .endif
 
 .if defined(PACKAGE_BUILDING)
