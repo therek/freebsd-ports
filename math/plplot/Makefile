@@ -2,7 +2,7 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.15 2000/06/16 08:18:28 sobomax Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.16 2000/06/16 21:51:36 asami Exp $
 #
 
 PORTNAME=	plplot
@@ -10,16 +10,15 @@ PORTVERSION=	4.99j
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.uniovi.es/pub6/graphics/plotting/ \
 		ftp://dino.ph.utexas.edu/plplot/distrib/alpha/ \
-		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/plot/plplot/distrib/alpha/ \
 		ftp://ftp.che.utexas.edu/pub/graphics/
-DISTNAME=       plplot4p99j
+DISTNAME=	${PORTNAME}4p99j
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --with-gcc=yes --with-double=yes
+CONFIGURE_ARGS=	--with-gcc=yes --with-double=yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 
