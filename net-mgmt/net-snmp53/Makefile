@@ -2,7 +2,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.46 2000/06/16 08:19:38 sobomax Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.47 2000/06/16 21:51:45 asami Exp $
 #
 
 PORTNAME=	ucd-snmp
@@ -47,8 +47,8 @@ STARTUP_FILE=	${PREFIX}/etc/rc.d/snmpd.sh.sample
 
 .include <bsd.port.pre.mk>
 
-SHLIB_VERSION=4
-PLIST_SUB= shlib=${SHLIB_VERSION}
+SHLIB_VERSION=	4
+PLIST_SUB+=	shlib=${SHLIB_VERSION}
 
 post-patch:
 	@${CP} ${FILESDIR}/freebsd4.h ${WRKSRC}/s
