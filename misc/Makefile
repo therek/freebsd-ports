@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.379 2001/09/11 10:19:02 mharo Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.380 2001/09/21 05:53:51 knu Exp $
 #
 
     SUBDIR += 40upgrade
@@ -67,6 +67,7 @@
     SUBDIR += gctpc
     SUBDIR += geekcode
     SUBDIR += git
+    SUBDIR += gkrellmaflag
     SUBDIR += gkrellscore
     SUBDIR += gkrellweather
     SUBDIR += gman
