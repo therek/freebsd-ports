@@ -2,17 +2,14 @@
 # Date created:				Sun Apr 29 15:58:33 EDT 2001
 # Whom:					pat@databits.net et al
 #
-# $FreeBSD: ports/games/hlserver-admin/Makefile,v 1.1 2001/05/03 01:45:50 lioux Exp $
+# $FreeBSD: ports/games/hlserver-admin/Makefile,v 1.2 2001/06/19 02:33:21 dwcjr Exp $
 #
 
 PORTNAME=	admin
 PORTVERSION=	2.50e
-CATEGORIES=	games
 MASTER_SITES=	http://www.adminmod.org/downloads/
 DISTNAME=	halflife-${PORTNAME}-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	pat@databits.net
 
 WRKSRC=		${WRKDIR}/Admin
 
