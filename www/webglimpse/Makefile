@@ -3,7 +3,7 @@
 # Date created:                         2 Nov 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/webglimpse/Makefile,v 1.13 2000/05/06 01:54:58 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	webglimpse
@@ -12,7 +12,7 @@ CATEGORIES=	www textproc
 MASTER_SITES=	ftp://ftp.deva.net/pub/sources/ir/glimpse/
 DISTNAME=	${PKGNAME}.src
 
-MAINTAINER=	ache@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS+=	${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
 RUN_DEPENDS+=	glimpse:${PORTSDIR}/textproc/glimpse
