@@ -2,11 +2,11 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.40 2000/12/09 06:39:48 kevlo Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.41 2001/01/29 14:20:44 sf Exp $
 #
 
 PORTNAME=	netpbm
-PORTVERSION=	9.10
+PORTVERSION=	9.11
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -30,5 +30,6 @@ INSTALLS_SHLIB=	yes
 
 post-patch:
 	@${PERL} -pi -e "s|%%X11BASE%%|${X11BASE}|g" ${WRKSRC}/pbmplus.h
+	@${CP} ${FILESDIR}/Makefile.config.FreeBSD ${WRKSRC}/Makefile.config
 
 .include <bsd.port.post.mk>
