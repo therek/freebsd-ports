@@ -1,4 +1,4 @@
-# $FreeBSD: ports/ftp/Makefile,v 1.21 2001/04/07 23:24:24 will Exp $
+# $FreeBSD: ports/ftp/Makefile,v 1.22 2001/04/13 09:08:11 demon Exp $
 #
 
     SUBDIR += IglooFTP
@@ -34,6 +34,7 @@
     SUBDIR += ncftp3
     SUBDIR += oftpd
     SUBDIR += omi
+    SUBDIR += paraftp
     SUBDIR += pavuk
     SUBDIR += proftpd
     SUBDIR += puf
