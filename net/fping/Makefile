@@ -3,7 +3,7 @@
 # Date created:			  Tue Mar 25, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/fping/Makefile,v 1.11 2000/08/27 03:23:47 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fping
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.stanford.edu/dept/networking/pub/fping/  \
 		ftp://sntop.sourceforge.net/pub/sntop/
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --bindir="${PREFIX}/sbin"
