@@ -1,5 +1,0 @@
-@comment $FreeBSD: ports/net/ddup/pkg-plist,v 1.5 2003/02/05 12:21:22 edwin Exp $
-sbin/ddup
-sbin/ddupcron.sh
-%%PORTDOCS%%%%DOCSDIR%%/README
-%%PORTDOCS%%@dirrm %%DOCSDIR%%
