@@ -2,11 +2,14 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer2/Makefile,v 1.23 2001/03/21 19:38:24 dinoex Exp $
+# $FreeBSD$
 
-PKGNAMEPREFIX?=	de-
-MASTERDIR?=	${.CURDIR}/../../www/webalizer
 CATEGORIES=	german
+PKGNAMEPREFIX?=	de-
+
+MAINTAINER=	dinoex@FreeBSD.org
+
+MASTERDIR?=	${.CURDIR}/../../www/webalizer
 WEBALIZER_LANG=	german
 
 .if exists(${.CURDIR}/Makefile.local)
