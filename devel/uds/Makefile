@@ -3,7 +3,7 @@
 # Date created:			Feb 27, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/uds/Makefile,v 1.1 2001/02/27 07:10:49 ijliao Exp $
+# $FreeBSD: ports/devel/uds/Makefile,v 1.2 2001/04/02 12:32:00 ijliao Exp $
 #
 
 PORTNAME=	uds
@@ -13,18 +13,24 @@ MASTER_SITES=	http://frost.flewid.de/dist/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_AUTOMAKE=	yes
-USE_AUTOCONF=	yes
-USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--disable-debug
-
-USE_GMAKE=	yes
 USE_NEWGCC=	yes
-
+USE_GMAKE=	yes
+USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
-post-patch:
-	@${PERL} -pi -e "s,-lpthread,${PTHREAD_LIBS},g" ${WRKSRC}/thread/Makefile.am
+pre-patch:
+	@${PERL} -pi -e 's|\$$OPTFLAGS|\$$CFLAGS|g ; \
+		 s|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
+
+	@find ${WRKSRC} -name 'Makefile.in' | xargs ${PERL} -pi -e \
+		's|install-data-hook|#install-data-hook|g ; \
+		 s|-D_REENTRANT|-D_REENTRANT ${PTHREAD_CFLAGS}|g ; \
+		 s|-lpthread|${PTHREAD_LIBS}|g'
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/uds
+	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/uds
+.endif
 
 .include <bsd.port.mk>
