@@ -2,7 +2,7 @@
 # Date created:         Tue Aug 15 17:57:48 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/math/xlispstat/Makefile,v 1.9 1999/12/23 23:50:12 steve Exp $
+# $FreeBSD: ports/math/xlispstat/Makefile,v 1.10 2000/04/14 07:20:54 asami Exp $
 #
 
 PORTNAME=	xlispstat
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.stat.umn.edu/pub/xlispstat/current/   \
 		http://lib.stat.cmu.edu/xlispstat/Src/current/  \
 		ftp://ftp.stat.unipg.it/pub/stat/xlispstat/current/     \
 		ftp://srsuna.shlrc.mq.edu.au/pub/xlispstat/current/     \
-		ftp://statlab.uni-heidelberg.de/pub/mirrors/umn/xlispstat/current
+		ftp://statlab.uni-heidelberg.de/pub/mirrors/umn/xlispstat/current/
 DISTNAME=	xlispstat-3-52-9
 
 MAINTAINER=	erich@FreeBSD.org
