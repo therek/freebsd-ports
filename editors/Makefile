@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.90 1999/09/25 04:57:09 taoka Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.91 1999/10/07 16:00:52 taoka Exp $
 #
 
     SUBDIR += AbiWord
@@ -109,6 +109,7 @@
     SUBDIR += xemacs-sumo-packages
     SUBDIR += xemacs20
     SUBDIR += xemacs21
+    SUBDIR += xenon
     SUBDIR += xvile
     SUBDIR += yudit
 
