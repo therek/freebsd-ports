@@ -2,11 +2,11 @@
 # Date created:		2000/09/16
 # Whom:			Nick Sayer
 #
-# $FreeBSD: ports/net/airport/Makefile,v 1.1 2000/09/16 17:38:55 nsayer Exp $
+# $FreeBSD: ports/net/airport/Makefile,v 1.2 2000/09/17 00:35:41 nsayer Exp $
 #
 
 PORTNAME=	airport
-PORTVERSION=	1.2
+PORTVERSION=	1.2.2
 CATEGORIES=	net java
 MASTER_SITES=	http://edge.mcs.drexel.edu/GICL/people/sevy/airport/
 DISTFILES=	configurator${EXTRACT_SUFX}
