@@ -2,7 +2,7 @@
 # Date created:				1st June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/oaf/Makefile,v 1.11 2001/03/29 16:33:04 sobomax Exp $
+# $FreeBSD: ports/devel/oaf/Makefile,v 1.12 2001/05/04 21:39:35 ade Exp $
 #
 
 PORTNAME=	oaf
@@ -11,7 +11,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/oaf
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt
 

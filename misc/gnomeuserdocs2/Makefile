@@ -2,7 +2,7 @@
 # Date created:        			27th February 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gnomeuserdocs/Makefile,v 1.1 2001/05/04 21:39:38 ade Exp $
 #
 
 PORTNAME=	gnomeuserdocs
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-user-docs
 DISTNAME=	gnome-user-docs-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

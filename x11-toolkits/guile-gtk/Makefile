@@ -2,7 +2,7 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.11 2001/02/05 16:49:02 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.12 2001/05/04 21:39:56 ade Exp $
 #
 
 PORTNAME=	guile-gtk
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-guile
 DISTNAME=	gnome-guile-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 

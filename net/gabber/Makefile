@@ -2,7 +2,7 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/net/gabber/Makefile,v 1.12 2001/03/29 16:34:21 sobomax Exp $
+# $FreeBSD: ports/net/gabber/Makefile,v 1.13 2001/05/04 21:51:10 ade Exp $
 #
 
 PORTNAME=	gabber
@@ -11,7 +11,7 @@ CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	erich@tacni.net
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	gnomemm.6:${PORTSDIR}/x11-toolkits/gnome-- \
 		gal.6:${PORTSDIR}/x11-toolkits/gal

@@ -2,7 +2,7 @@
 # Date created:				8th March 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/libgda/Makefile,v 1.1 2001/05/04 21:50:51 ade Exp $
 #
 
 PORTNAME=	libgda
@@ -11,7 +11,7 @@ CATEGORIES=	databases gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libgda
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GNOME=	yes
 USE_GMAKE=	yes

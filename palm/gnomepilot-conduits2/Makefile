@@ -2,7 +2,7 @@
 # Date created:		16th March 2000
 # Whom:			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.11 2000/10/05 07:17:16 reg Exp $
+# $FreeBSD: ports/palm/gnomepilot-conduits/Makefile,v 1.12 2001/03/29 16:34:33 sobomax Exp $
 #
 
 PORTNAME=	gnomepilot-conduits
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-pilot-conduits
 DISTNAME=	gnome-pilot-conduits-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
 		gpilotd.0:${PORTSDIR}/palm/gnomepilot

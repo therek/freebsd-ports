@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libunicode/Makefile,v 1.2 2000/09/21 16:08:00 ade Exp $
+# $FreeBSD: ports/devel/libunicode/Makefile,v 1.3 2000/09/22 14:30:43 ade Exp $
 #
 
 PORTNAME=	libunicode
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/libunicode
 DISTNAME=	${PORTNAME}-${PORTVERSION}.gnome
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:				18th April 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gnome-fifth-toe/Makefile,v 1.1 2001/05/04 21:51:14 ade Exp $
 #
 
 PORTNAME=	gnome-fifth-toe
@@ -12,7 +12,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 RUN_DEPENDS=	mozilla:${PORTSDIR}/www/mozilla \
 		galeon:${PORTSDIR}/www/galeon \

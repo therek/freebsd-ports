@@ -2,7 +2,7 @@
 # Date created:				18 August 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/libglade/Makefile,v 1.19 2001/02/13 18:44:49 ade Exp $
+# $FreeBSD: ports/devel/libglade/Makefile,v 1.20 2001/05/04 21:39:33 ade Exp $
 #
 
 PORTNAME=	libglade
@@ -12,7 +12,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libglade
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	bonobo.2:${PORTSDIR}/devel/bonobo
 

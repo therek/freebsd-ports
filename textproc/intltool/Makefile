@@ -2,7 +2,7 @@
 # Date created:				19th January 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xml-i18n-tools/Makefile,v 1.4 2001/02/13 18:45:06 ade Exp $
+# $FreeBSD: ports/textproc/xml-i18n-tools/Makefile,v 1.5 2001/05/04 21:39:45 ade Exp $
 #
 
 PORTNAME=	xml-i18n-tools
@@ -11,7 +11,7 @@ CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/${PORTNAME}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

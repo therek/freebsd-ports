@@ -2,7 +2,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.33 2001/03/29 16:33:27 sobomax Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.34 2001/05/04 21:50:59 ade Exp $
 #
 
 PORTNAME=	gedit
@@ -11,7 +11,7 @@ CATEGORIES=	editors gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gedit
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtkextra/Makefile,v 1.9 2001/03/11 11:29:55 sobomax Exp $
 #
 
 PORTNAME=	gtkextra
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	scigraphica
 DISTNAME=	${PORTNAME:S/gtk/gtk+/}-${PORTVERSION}
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes

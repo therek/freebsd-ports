@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.17 2001/03/06 09:45:09 keith Exp $
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.18 2001/05/04 21:50:56 ade Exp $
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -20,7 +20,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} expat-${PORTVERSION}.tar.gz \
 		abidistfiles-${PORTVERSION}.tar.gz \
 		psiconv-${PORTVERSION}.tar.gz libiconv-${PORTVERSION}.tar.gz
 
-MAINTAINER=	wolman@cs.washington.edu
+MAINTAINER=	gnome@FreeBSD.org
 
 # unzip is needed during the installation process
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip

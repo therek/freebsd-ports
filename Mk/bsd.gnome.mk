@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.7 2001/02/26 06:24:23 steve Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.8 2001/05/04 21:39:25 ade Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -10,7 +10,7 @@
 
 # Please make sure all changes to this file are past through the maintainer. 
 # Do not commit them yourself (unless of course you're the Port's Wraith ;).
-Gnome_Include_MAINTAINER=	reg@FreeBSD.org
+Gnome_Include_MAINTAINER=	gnome@FreeBSD.org
 
 # This section keeps tests for optional software.  These work off four
 # types of of variables.  WANT_, WITH_, HAVE_ and USE_.  The logic of

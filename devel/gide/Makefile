@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.44 2001/03/29 16:32:58 sobomax Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.45 2001/05/04 21:41:07 ade Exp $
 #
 
 PORTNAME=	gide
@@ -12,7 +12,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gIDE
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

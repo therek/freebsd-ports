@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.24 2000/10/05 07:10:44 reg Exp $
+# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.25 2001/03/29 16:33:55 sobomax Exp $
 #
 
 PORTNAME=	electriceyes
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ee
 DISTNAME=	ee-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

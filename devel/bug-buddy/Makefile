@@ -2,7 +2,7 @@
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.14 2001/03/29 16:32:56 sobomax Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.15 2001/05/04 21:39:31 ade Exp $
 #
 
 PORTNAME=	bugbuddy
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/bug-buddy
 DISTNAME=	bug-buddy-${PORTVERSION}
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

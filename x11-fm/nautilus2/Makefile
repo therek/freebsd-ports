@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.21 2001/05/10 12:29:27 sobomax Exp $
 #
 
 PORTNAME=	nautilus
@@ -12,7 +12,7 @@ CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/nautilus
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
 # The following is only needed if --with-eazel-services is brought in,

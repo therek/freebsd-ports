@@ -2,7 +2,7 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/glib12/Makefile,v 1.40 2001/03/30 13:18:05 sobomax Exp $
 #
 
 PORTNAME=	glib
@@ -16,7 +16,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 #MASTER_SITE_SUBDIR=	gtk/v${PORTVERSION:R}
 MASTER_SITE_SUBDIR=	stable/sources/glib
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

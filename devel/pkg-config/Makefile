@@ -2,7 +2,7 @@
 # Date created:				30 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/pkgconfig/Makefile,v 1.1 2001/04/29 11:23:21 sobomax Exp $
+# $FreeBSD: ports/devel/pkgconfig/Makefile,v 1.2 2001/04/29 11:50:02 sobomax Exp $
 #
 
 PORTNAME=	pkgconfig
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/devel/glib12:patch
 

@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.39 2001/03/29 16:34:32 sobomax Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.40 2001/05/04 21:51:12 ade Exp $
 #
 
 PORTNAME=	pan
@@ -10,7 +10,7 @@ PORTVERSION=	0.9.6
 CATEGORIES=	news gnome
 MASTER_SITES=	http://pan.rebelbase.com/download/${PORTVERSION}/
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
 

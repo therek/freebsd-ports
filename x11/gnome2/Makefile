@@ -2,7 +2,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.29 2000/12/08 21:13:11 ade Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.30 2001/05/04 21:39:46 ade Exp $
 #
 
 PORTNAME=	gnome
@@ -12,7 +12,7 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 RUN_DEPENDS=	another_clock_applet:${PORTSDIR}/x11/gnomeapplets \
 		gtcd:${PORTSDIR}/audio/gnomemedia \

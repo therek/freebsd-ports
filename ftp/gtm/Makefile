@@ -2,7 +2,7 @@
 # Date created:				05/28/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/ftp/gtm/Makefile,v 1.18 2001/03/29 16:33:34 sobomax Exp $
+# $FreeBSD: ports/ftp/gtm/Makefile,v 1.19 2001/04/17 16:30:01 kris Exp $
 #
 
 PORTNAME=	gtm
@@ -11,7 +11,7 @@ CATEGORIES=	ftp gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	nectar@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	wget:${PORTSDIR}/ftp/wget
 RUN_DEPENDS=	wget:${PORTSDIR}/ftp/wget

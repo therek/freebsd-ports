@@ -2,7 +2,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/games/atomix/Makefile,v 1.7 2001/03/29 16:33:38 sobomax Exp $
+# $FreeBSD: ports/games/atomix/Makefile,v 1.8 2001/05/04 21:51:00 ade Exp $
 #
 
 PORTNAME=	atomix
@@ -10,7 +10,7 @@ PORTVERSION=	0.4.3
 CATEGORIES=	games gnome
 MASTER_SITES=	http://www.informatik.uni-oldenburg.de/~pearl/download/
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.20 2001/03/29 16:33:56 sobomax Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.21 2001/05/04 21:51:01 ade Exp $
 #
 
 PORTNAME=	eog
@@ -12,7 +12,7 @@ CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/eog
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

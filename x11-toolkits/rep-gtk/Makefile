@@ -2,7 +2,7 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.23 2000/12/05 13:42:38 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.24 2001/05/04 21:41:30 ade Exp $
 #
 
 PORTNAME=	rep-gtk
@@ -12,7 +12,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	rep.10:${PORTSDIR}/lang/librep
 

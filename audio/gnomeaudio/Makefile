@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.16 2001/03/23 05:42:24 ade Exp $
+# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.17 2001/05/04 21:39:28 ade Exp $
 #
 
 PORTNAME=	gnomeaudio
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-audio
 DISTNAME=	gnome-audio-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GNOMELIBS=	yes

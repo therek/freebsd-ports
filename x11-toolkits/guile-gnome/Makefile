@@ -2,7 +2,7 @@
 # Date created:        			9th June 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.9 2001/02/05 16:49:01 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.10 2001/05/04 21:39:53 ade Exp $
 #
 
 PORTNAME=	guile-gnome
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-guile
 DISTNAME=	gnome-guile-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	ghttp.1:${PORTSDIR}/www/libghttp \
 		guilegtk-1.2.0:${PORTSDIR}/x11-toolkits/guile-gtk

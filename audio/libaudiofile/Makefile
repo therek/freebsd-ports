@@ -2,7 +2,7 @@
 # Date created:				22 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.20 2001/03/23 05:42:30 ade Exp $
+# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.21 2001/05/04 21:39:28 ade Exp $
 #
 
 PORTNAME=	libaudiofile
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/audiofile
 DISTNAME=	audiofile-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

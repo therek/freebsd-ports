@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.25 2001/03/29 16:34:13 sobomax Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.26 2001/05/04 21:41:15 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -12,7 +12,7 @@ CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml \
 		ldap.1:${PORTSDIR}/net/openldap

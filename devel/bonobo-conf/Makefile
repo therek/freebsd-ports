@@ -2,7 +2,7 @@
 # Date created:				9th February 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bonobo-conf/Makefile,v 1.2 2001/03/29 16:32:55 sobomax Exp $
+# $FreeBSD: ports/devel/bonobo-conf/Makefile,v 1.3 2001/04/23 14:35:25 ade Exp $
 #
 
 PORTNAME=	bonobo-conf
@@ -11,7 +11,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/bonobo-conf
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes

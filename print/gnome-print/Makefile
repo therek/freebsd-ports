@@ -2,7 +2,7 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.29 2001/03/29 16:34:36 sobomax Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.30 2001/05/04 21:39:41 ade Exp $
 #
 
 PORTNAME=	gnomeprint
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-print
 DISTNAME=	gnome-print-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 

@@ -2,7 +2,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.25 2001/03/29 16:34:17 sobomax Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.26 2001/05/04 21:39:39 ade Exp $
 #
 
 PORTNAME=	gnomeutils
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-utils
 DISTNAME=	gnome-utils-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
 

@@ -2,7 +2,7 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.31 2001/03/13 15:11:03 sobomax Exp $
 #
 
 PORTNAME=	gtkmm
@@ -11,7 +11,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	sigc.1:${PORTSDIR}/devel/libsigc++
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4

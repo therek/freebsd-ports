@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/glibwww/Makefile,v 1.2 2000/09/15 06:17:03 sobomax Exp $
+# $FreeBSD: ports/www/glibwww/Makefile,v 1.3 2000/10/05 07:17:21 reg Exp $
 #
 
 PORTNAME=	glibwww
@@ -11,7 +11,7 @@ CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/glibwww
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	wwwzip.1:${PORTSDIR}/www/libwww
 

@@ -2,7 +2,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.25 2001/03/29 16:32:53 sobomax Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.26 2001/05/04 21:39:29 ade Exp $
 #
 
 PORTNAME=	gnomepim
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-pim
 DISTNAME=	gnome-pim-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

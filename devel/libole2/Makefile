@@ -2,7 +2,7 @@
 # Date created:				20th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libole2/Makefile,v 1.6 2001/01/19 18:08:20 ade Exp $
+# $FreeBSD: ports/devel/libole2/Makefile,v 1.7 2001/05/04 21:50:53 ade Exp $
 #
 
 PORTNAME=	libole2
@@ -11,7 +11,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/libole2
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_GLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:				5th October 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.11 2001/03/29 16:35:15 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.12 2001/05/04 21:51:16 ade Exp $
 #
 
 PORTNAME=	gal
@@ -11,7 +11,7 @@ CATEGORIES?=	x11-toolkits gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gal
 
-MAINTAINER?=	ade@FreeBSD.org
+MAINTAINER?=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	unicode.0:${PORTSDIR}/devel/libunicode \
 		giconv.2:${PORTSDIR}/converters/libiconv

@@ -2,7 +2,7 @@
 # Date created:				20 January 1999
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.14 2000/10/05 07:10:23 reg Exp $
+# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.15 2001/03/29 16:32:46 sobomax Exp $
 #
 
 PORTNAME=	gnomemedia
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-media
 DISTNAME=	gnome-media-${PORTVERSION}
 
-MAINTAINER=	reg@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 RUN_DEPENDS=	sox:${PORTSDIR}/audio/sox
 

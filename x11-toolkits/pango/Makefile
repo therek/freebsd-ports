@@ -2,7 +2,7 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.3 2000/11/20 18:03:41 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.4 2001/04/30 05:30:28 sobomax Exp $
 #
 
 PORTNAME=	pango
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.3/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.3/ \
 		http://www.ameth.org/gimp/gtk/v1.3/
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig \
 		freetype-config:${PORTSDIR}/print/freetype2	# XXX

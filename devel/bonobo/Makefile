@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.33 2001/03/29 16:32:55 sobomax Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.34 2001/05/04 21:39:30 ade Exp $
 #
 
 PORTNAME=	bonobo
@@ -11,7 +11,7 @@ CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/bonobo
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	gnomeprint.16:${PORTSDIR}/print/gnomeprint
 

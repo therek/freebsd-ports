@@ -2,7 +2,7 @@
 # Date created:				17th August 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.7 2001/05/04 21:51:13 ade Exp $
+# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.8 2001/05/10 19:34:48 ade Exp $
 #
 
 PORTNAME=	medusa
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/medusa
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:				09/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.44 2000/10/08 10:23:45 asami Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.45 2001/05/04 21:39:58 ade Exp $
 #
 
 PORTNAME=	py-gtk
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-python	
 DISTNAME=	gnome-python-1.4.0
 
-MAINTAINER=	nectar@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/pygtk
 

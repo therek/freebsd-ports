@@ -2,7 +2,7 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.51 2000/11/16 13:14:22 tg Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.52 2001/05/04 21:41:18 ade Exp $
 #
 
 PORTNAME=	mc
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
 
-MAINTAINER=	reg@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 .if defined(WITH_NCURSES_PORT)

@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.44 2001/02/05 16:49:10 olgeni Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.45 2001/05/04 21:39:57 ade Exp $
 #
 
 PORTNAME=	py-gnome
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-python
 DISTNAME=	gnome-python-${PORTVERSION}
 
-MAINTAINER=	nectar@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	${PYGTK_DEP}
 RUN_DEPENDS=	${PYGTK_DEP}

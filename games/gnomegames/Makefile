@@ -2,7 +2,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/games/gnomegames/Makefile,v 1.32 2001/03/29 16:33:49 sobomax Exp $
+# $FreeBSD: ports/games/gnomegames/Makefile,v 1.33 2001/05/04 21:39:36 ade Exp $
 #
 
 PORTNAME=	gnomegames
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-games
 DISTNAME=	gnome-games-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 

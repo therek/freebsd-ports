@@ -3,7 +3,7 @@
 # Date created:		Jun 29, 2000
 # Whom:			Matthew Condell (mcondell@alum.mit.edu)
 #
-# $FreeBSD: ports/devel/g-wrap/Makefile,v 1.7 2000/11/17 17:28:25 ade Exp $
+# $FreeBSD: ports/devel/g-wrap/Makefile,v 1.8 2001/01/22 19:33:59 ade Exp $
 #
 
 PORTNAME=	g-wrap
@@ -11,7 +11,7 @@ PORTVERSION=	0.9.12
 CATEGORIES=	devel
 MASTER_SITES=	http://www.gnucash.org/pub/g-wrap/source/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 

@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.56 2001/05/04 21:39:47 ade Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.57 2001/05/10 19:34:29 ade Exp $
 #
 
 PORTNAME=	gnomecore
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-core
 DISTNAME=	gnome-core-${PORTVERSION}
 
-MAINTAINER?=	ade@FreeBSD.org
+MAINTAINER?=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/login.wav:${PORTSDIR}/audio/gnomeaudio

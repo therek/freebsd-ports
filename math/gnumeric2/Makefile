@@ -2,7 +2,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.55 2001/03/29 16:34:14 sobomax Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.56 2001/05/04 21:51:09 ade Exp $
 #
 
 PORTNAME=	gnumeric
@@ -11,7 +11,7 @@ CATEGORIES?=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnumeric
 
-MAINTAINER?=	ade@FreeBSD.org
+MAINTAINER?=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
 		gnomeole2.0:${PORTSDIR}/devel/libole2 \
