@@ -3,13 +3,14 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.18 2001/03/09 19:50:10 sf Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.19 2001/03/15 21:16:18 sf Exp $
 #
 
 PORTNAME=	linux_rar
 PORTVERSION=	2.80
 CATEGORIES=	archivers linux
-MASTER_SITES=	ftp://ftp.download.com/pub/linux/utilities/
+MASTER_SITES=	ftp://ftp.download.com/pub/linux/utilities/ \
+		ftp://ftp.rarsoft.com/rar/
 #		ftp://ftp.netlab.sk/public/rarsoft/rar/ \
 #		ftp://rarsoft.ti.sk/pub/rar/
 DISTNAME=	rarlnx${PORTVERSION:S/0//S/.//}
