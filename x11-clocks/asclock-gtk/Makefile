@@ -2,14 +2,13 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-gtk/Makefile,v 1.8 2000/10/05 06:42:33 reg Exp $
+# $FreeBSD: ports/x11-clocks/asclock-gtk/Makefile,v 1.9 2000/12/11 01:38:13 kuriyama Exp $
 #
 
 PORTNAME=	asclock-gtk
 PORTVERSION=	2.1.10
 CATEGORIES=	x11-clocks afterstep windowmaker
-MASTER_SITES=	http://www.asclock.org/tar/ \
-		${MASTER_SITE_LOCAL}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kuriyama
 DISTNAME=	${PKGNAME}beta
 
