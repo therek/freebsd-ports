@@ -1,19 +1,19 @@
 # New ports collection makefile for:    cdrdao
-# Version required:     1.1.2
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.13 2000/01/22 23:43:13 kris Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.14 2000/01/29 20:01:21 mharo Exp $
 #
 # If you don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
 # If you don't want to use pthreads, set DONT_USE_PTHREADS = yes
 # If you want the graphical X toc file editor, set XCDRDAO = yes
 
-DISTNAME=		cdrdao-1.1.3.src
-PKGNAME=		cdrdao-1.1.3
+PORTNAME=		cdrdao
+PORTVERSION=		1.1.3
 CATEGORIES=		audio
 MASTER_SITES=		http://www.ping.de/sites/daneb/
+EXTRACT_SUFX=		.src.tar.gz
 
 MAINTAINER=		futatuki@debug.gr.jp
 

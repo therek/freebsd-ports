@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kmpg
-# Version required:    0.4.3a
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/audio/kmpg/Makefile,v 1.16 2000/02/08 09:25:49 peter Exp $
+# $FreeBSD: ports/audio/kmpg/Makefile,v 1.17 2000/02/24 07:00:40 asami Exp $
 #
 
-DISTNAME=	kmpg-0.4.3a
+PORTNAME=	kmpg
+PORTVERSION=	0.4.3a
 CATEGORIES=	audio kde
 MASTER_SITES=	http://people.FreeBSD.org/~tom/distfiles/
 

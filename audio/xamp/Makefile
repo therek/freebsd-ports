@@ -1,13 +1,12 @@
 # New ports collection makefile for:	xamp
-# Version required:		0.8-7
 # Date created:			29 July 1998
 # Whom:				Joe Jih-Shian Lu <jslu@dns.ntu.edu.tw>
 #
-# $FreeBSD: ports/audio/xamp/Makefile,v 1.5 1999/08/25 04:36:22 obrien Exp $
+# $FreeBSD: ports/audio/xamp/Makefile,v 1.6 2000/01/27 11:06:52 reg Exp $
 #
 
-DISTNAME=	xamp-0.8-7
-PKGNAME=	xamp-0.8.7
+PORTNAME=	xamp
+PORTVERSION=	0.8-7
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.simcb.ru/pub/unix/x11/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xmixer
-# Version required:	0.9.3
 # Date created:		27 October 1999
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/xmixer/Makefile,v 1.1.1.1 1999/11/14 03:17:41 cpiazza Exp $
+# $FreeBSD: ports/audio/xmixer/Makefile,v 1.2 2000/01/22 10:46:55 mharo Exp $
 #
 
-DISTNAME=	xmixer-0.9.3
+PORTNAME=	xmixer
+PORTVERSION=	0.9.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.hdk-berlin.de/~rasca/
 MASTER_SITE_SUBDIR=	apps/sound/mixers

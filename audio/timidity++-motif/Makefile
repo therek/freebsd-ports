@@ -1,9 +1,8 @@
 # New ports collection makefile for:	TiMidity++
-# Version required:	1.3.10
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-motif/Makefile,v 1.3 1999/12/10 00:59:27 imura Exp $
+# $FreeBSD: ports/audio/timidity++-motif/Makefile,v 1.4 2000/04/06 07:11:57 mharo Exp $
 #
 
 INTERFACE=	motif

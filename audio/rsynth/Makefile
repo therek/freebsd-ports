@@ -1,12 +1,12 @@
 # New ports collection makefile for:	rsynth
-# Version required:	2.0
 # Date created:		03 Jan 1995
 # Whom:			faulkner@mpd.tandem.com
 #
-# $FreeBSD: ports/audio/rsynth/Makefile,v 1.12 2000/02/02 21:39:59 mharo Exp $
+# $FreeBSD: ports/audio/rsynth/Makefile,v 1.13 2000/02/02 21:41:48 mharo Exp $
 #
 
-DISTNAME=	rsynth-2.0
+PORTNAME=	rsynth
+PORTVERSION=	2.0
 CATEGORIES=	audio
 MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/synthesis/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    splaytk
-# Version required:     2.0
 # Date created:         19 Apr 1998
 # Whom:                 brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/audio/splaytk/Makefile,v 1.4 1999/09/09 03:03:17 cpiazza Exp $
+# $FreeBSD: ports/audio/splaytk/Makefile,v 1.5 1999/11/28 18:31:54 steve Exp $
 #
 
-DISTNAME=		splaytk-2.0
+PORTNAME=		splaytk
+PORTVERSION=		2.0
 CATEGORIES=		audio
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
@@ -16,7 +16,7 @@ MAINTAINER=		brett@peloton.runet.edu
 RUN_DEPENDS=	splay:${PORTSDIR}/audio/splay \
 		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
-WRKSRC= ${WRKDIR}/splay-tk-2.0
+WRKSRC=		${WRKDIR}/splay-tk-2.0
 
 NO_BUILD=	yes
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xhippo
-# Version required:			2.1
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.8 2000/01/29 20:01:28 mharo Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.9 2000/03/11 14:40:22 jedgar Exp $
 #
 
-DISTNAME=	xhippo-2.1
+PORTNAME=	xhippo
+PORTVERSION=	2.1
 CATEGORIES=	audio
 MASTER_SITES=	http://zenchaos.netpedia.net/software/
 

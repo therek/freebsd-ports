@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmsound
-# Version required:	0.9.0
 # Date created:		9 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wmsound/Makefile,v 1.8 1999/10/07 18:01:55 cpiazza Exp $
+# $FreeBSD: ports/audio/wmsound/Makefile,v 1.9 2000/02/05 10:27:26 dirk Exp $
 #
 
-DISTNAME=	wmsound-0.9.5
+PORTNAME=	wmsound
+PORTVERSION=	0.9.5
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	knapster
-# Version required:			0.8
 # Date created:				06 January 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/knapster/Makefile,v 1.9 2000/03/05 17:57:29 jedgar Exp $
+# $FreeBSD: ports/audio/knapster/Makefile,v 1.10 2000/03/11 02:10:38 jedgar Exp $
 #
 
-DISTNAME=	knapster-0.8
+PORTNAME=	knapster
+PORTVERSION=	0.8
 CATEGORIES=	audio kde
 MASTER_SITES=	http://knapster.netpedia.net/packages/
 

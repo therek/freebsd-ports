@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kmpg
-# Version required:    1.0
 # Date created:        24 May 1999
 # Whom:                Oscar Bonilla <obonilla@fisicc-ufm.edu>
 #
-# $FreeBSD: ports/audio/kmp3/Makefile,v 1.4 2000/02/24 07:00:39 asami Exp $
+# $FreeBSD: ports/audio/kmp3/Makefile,v 1.5 2000/03/09 04:31:17 jedgar Exp $
 #
 
-DISTNAME=	kmp3-1.0
+PORTNAME=	kmp3
+PORTVERSION=	1.0
 CATEGORIES=	audio kde
 MASTER_SITES=	http://www.kmp3.org/tarballs/
 

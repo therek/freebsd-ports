@@ -1,15 +1,16 @@
 # New ports collection makefile for:	mp3blaster
-# Version required:	2.0b17
 # Date created:		5 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.1 2000/01/06 00:00:49 cpiazza Exp $
+# $FreeBSD: ports/audio/mp3blaster/Makefile,v 1.2 2000/03/31 07:56:39 mharo Exp $
 #
 
-DISTNAME=	mp3blaster-2.0b17
+PORTNAME=	mp3blaster
+PORTVERSION=	2.0.b17
 CATEGORIES=	audio
 MASTER_SITES=	ftp://mud.stack.nl/pub/mp3blaster/ \
 		http://mp3blaster.linuxave.net/src/
+DISTNAME=	${PORTNAME}-2.0b17
 
 MAINTAINER=	ports@FreeBSD.org
 

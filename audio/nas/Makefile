@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nas (formerly netaudio)
-# Version required:	1.4
 # Date created:		03 Nov 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/audio/nas/Makefile,v 1.12 1999/08/31 06:40:38 mharo Exp $
+# $FreeBSD: ports/audio/nas/Makefile,v 1.13 2000/03/30 03:25:54 jedgar Exp $
 #
 
-DISTNAME=	nas-1.4
+PORTNAME=	nas
+PORTVERSION=	1.4
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		http://radscan.com/nas/

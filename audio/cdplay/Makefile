@@ -1,12 +1,12 @@
 # New ports collection makefile for:   cdplay
-# Version required:    0.92
 # Date created:        8 July 1997
 # Whom:                Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/cdplay/Makefile,v 1.5 1999/08/25 04:35:22 obrien Exp $
 #
 
-DISTNAME=	cdplay-0.92
+PORTNAME=	cdplay
+PORTVERSION=	0.92
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.one.sci.fi/pub/cdplay/
 

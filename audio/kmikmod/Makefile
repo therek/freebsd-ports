@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kmikmod
-# Version required:    2.04
 # Date created:        1 March 1999
 # Whom:                Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.5 2000/02/24 07:00:38 asami Exp $
+# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.6 2000/03/24 22:12:25 tom Exp $
 #
 
-DISTNAME=	kmikmod-2.04
+PORTNAME=	kmikmod
+PORTVERSION=	2.04
 CATEGORIES=	audio kde
 MASTER_SITES=	http://people.FreeBSD.org/~tom/distfiles/
 

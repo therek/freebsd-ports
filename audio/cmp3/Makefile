@@ -1,15 +1,15 @@
 # New ports collection makefile for:   cmp3
-# Version required:    2.0pre4
 # Date created:        10 April 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/cmp3/Makefile,v 1.7 2000/01/29 20:01:24 mharo Exp $
+# $FreeBSD: ports/audio/cmp3/Makefile,v 1.8 2000/03/08 00:18:32 cpiazza Exp $
 #
 
-DISTNAME=	cmp3-2.0pre4
-PKGNAME=	cmp3-2.0p4
+PORTNAME=	cmp3
+PORTVERSION=	2.0.p4
 CATEGORIES=	audio
 MASTER_SITES=	http://www.personal.psu.edu/users/n/k/nkk104/cmp3/
+DISTNAME=	cmp3-2.0pre4
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mp3info
-# Version required:			0.2.15
 # Date created:				19 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/audio/mp3info/Makefile,v 1.5 1999/08/25 04:35:52 obrien Exp $
+# $FreeBSD: ports/audio/mp3info/Makefile,v 1.6 2000/03/29 07:16:49 kris Exp $
 #
 
-DISTNAME=		mp3info-0.2.16
+PORTNAME=		mp3info
+PORTVERSION=		0.2.16
 CATEGORIES=		audio
 MASTER_SITES=		ftp://bimbo.hive.no/pub/mp3info/ \
 			${MASTER_SITE_SUNSITE}

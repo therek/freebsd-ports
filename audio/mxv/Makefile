@@ -1,15 +1,15 @@
 # New ports collection makefile for:	mxv
-# Version required:	1.20
 # Date created:		17 March 1997
 # Whom:			davidn@blaze.net.au
 #
-# $FreeBSD: ports/audio/mxv/Makefile,v 1.9 1999/08/28 03:41:21 mharo Exp $
+# $FreeBSD: ports/audio/mxv/Makefile,v 1.10 2000/02/14 21:02:56 mharo Exp $
 #
 
-DISTNAME=	mxv-v1.20-source
-PKGNAME=	mxv-1.20
+PORTNAME=	mxv
+PORTVERSION=	1.20
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.create.ucsb.edu/pub/MixViews/source/
+DISTNAME=	${PORTNAME}-v${PORTVERSION}-source
 
 MAINTAINER=	davidn@blaze.net.au
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:   gogo no coder
-# Version required:    2.26a
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.13 2000/02/03 05:57:52 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.14 2000/03/08 12:08:05 nakai Exp $
 #
 
-DISTNAME=	gogo226a
-PKGNAME=	gogo-2.26a
+PORTNAME=	gogo
+PORTVERSION=	2.26a
 CATEGORIES=	audio
 MASTER_SITES=	http://homepage1.nifty.com/herumi/soft/gogo2/src/
+DISTNAME=	gogo226a
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org

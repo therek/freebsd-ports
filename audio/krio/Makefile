@@ -1,15 +1,15 @@
 # New ports collection makefile for:   krio
-# Version required:    19990721
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD: ports/audio/krio/Makefile,v 1.2 2000/02/20 20:48:51 steve Exp $
+# $FreeBSD: ports/audio/krio/Makefile,v 1.3 2000/02/24 07:00:42 asami Exp $
 #
 
-DISTNAME=	Krio-19990721
-PKGNAME=	krio-19990721
+PORTNAME=	krio
+PORTVERSION=	1999.07.21
 CATEGORIES=	audio kde
 MASTER_SITES=	ftp://ftp.13th-floor.org/pub/krio/
+DISTNAME=	Krio-19990721
 
 MAINTAINER=	ak@freenet.co.uk
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xmpeg3
-# Version required:	1.0
 # Date created:		7 July 1997
 # Whom:			doconnor@ist.flinders.edu.au
 #
-# $FreeBSD: ports/audio/xmpeg3/Makefile,v 1.12 1999/08/31 06:40:47 mharo Exp $
+# $FreeBSD: ports/audio/xmpeg3/Makefile,v 1.13 1999/11/28 18:32:42 steve Exp $
 #
 
-DISTNAME=	xmp3_1.0.0
-PKGNAME=	xmpeg3-1.0
+PORTNAME=	xmpeg3
+PORTVERSION=	1.0
 CATEGORIES=	audio tk82
 MASTER_SITES=	ftp://ftp.funet.fi/pub/sci/audio/mpeg/amp/
+DISTNAME=	xmp3_1.0.0
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org

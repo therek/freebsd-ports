@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tracker
-# Version required:	5.3
 # Date created:		2 Oct 1994
 # Whom:			swallace
 #
-# $FreeBSD: ports/audio/tracker/Makefile,v 1.35 1999/12/23 03:27:52 ache Exp $
+# $FreeBSD: ports/audio/tracker/Makefile,v 1.36 1999/12/29 21:23:23 steve Exp $
 #
 
-DISTNAME=	tracker-5.3
+PORTNAME=	tracker
+PORTVERSION=	5.3
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.uni-trier.de/pub/unix/audio/tracker/
 EXTRACT_SUFX=	.tgz

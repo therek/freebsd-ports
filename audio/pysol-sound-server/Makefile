@@ -1,12 +1,12 @@
 # New ports collection makefile for:	pysol-sound-server
-# Version required:	2.10
 # Date created:		7 January 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.1 2000/03/07 11:39:43 tg Exp $
+# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.2 2000/03/10 10:45:32 tg Exp $
 #
 
-DISTNAME=	pysol-sound-server-2.10
+PORTNAME=	pysol-sound-server
+PORTVERSION=	2.10
 CATEGORIES=	audio games
 MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/pysol-sound-server/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for: mp3encode
-# Version required:	1.10
 # Date created:		5th August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/audio/mp3encode/Makefile,v 1.2 1999/08/25 04:35:51 obrien Exp $
+# $FreeBSD: ports/audio/mp3encode/Makefile,v 1.3 1999/11/27 15:10:49 steve Exp $
 #
 
-DISTNAME=	dist10
-PKGNAME=	mp3encode-1.10
+PORTNAME=	mp3encode
+PORTVERSION=	1.10
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/Berkeley/mpeg2/conformance-bitstreams/audio/mpeg2/software/technical_report/
+DISTNAME=	dist10
 
 MAINTAINER=	jsutton@bbcon.com.au
 

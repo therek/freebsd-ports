@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sox - Sound Exchange
-# Version required:	12p12
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/audio/sox/Makefile,v 1.12 1999/08/25 04:36:11 obrien Exp $
+# $FreeBSD: ports/audio/sox/Makefile,v 1.13 1999/12/24 19:28:04 mharo Exp $
 #
 
-DISTNAME=	sox-12.16
+PORTNAME=	sox
+PORTVERSION=	12.16
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/convert

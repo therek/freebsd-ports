@@ -1,16 +1,16 @@
 # New ports collection makefile for:	BladeEnc
-# Version required:	0.92
 # Date created:		Thu Jan 14 23:28:40 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/bladeenc/Makefile,v 1.10 2000/01/07 19:15:52 dirk Exp $
+# $FreeBSD: ports/audio/bladeenc/Makefile,v 1.11 2000/02/28 21:59:06 dirk Exp $
 #
 
-DISTNAME=	bladeenc-0.92.0-src-stable
-PKGNAME=	bladeenc-0.92
+PORTNAME=	bladeenc
+PORTVERSION=	0.92
 CATEGORIES=	audio
 MASTER_SITES=	http://bladeenc.mp3.no/source/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+EXTRACT_SUFX=	.0-src-stable.tar.gz
 
 MAINTAINER=	dirk@FreeBSD.org
 

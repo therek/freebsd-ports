@@ -1,18 +1,18 @@
 # New ports collection makefile for:    tclmidi
-# Version required:     3.1.0
 # Date created:         14 May 1999
 # Whom:                 shanee@augusta.de
 #
-# $FreeBSD: ports/audio/tclmidi/Makefile,v 1.2 1999/08/31 08:46:51 asami Exp $
+# $FreeBSD: ports/audio/tclmidi/Makefile,v 1.3 1999/11/28 18:32:00 steve Exp $
 #
 
-DISTNAME=       tclmidi-3.1
-CATEGORIES=     audio
-MASTER_SITES=   ftp://ftp.unina.it/pub/Other/music/midi/PROGRAMS/ \
+PORTNAME=	tclmidi
+PORTVERSION=	3.1
+CATEGORIES=	audio
+MASTER_SITES=	ftp://ftp.unina.it/pub/Other/music/midi/PROGRAMS/ \
 		ftp://ftp.cs.ruu.nl/pub/MIDI/PROGRAMS/ \
 		ftp://sunsite.mff.cuni.cz/MultiMedia/Audio/MIDI/PROGRAMS/
 
-MAINTAINER=     shanee@augusta.de
+MAINTAINER=	shanee@augusta.de
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 

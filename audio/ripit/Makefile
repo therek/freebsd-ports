@@ -1,12 +1,12 @@
 # New ports collection makefile for:    ripit
-# Version required:     1.5
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/ripit/Makefile,v 1.5 1999/08/25 04:36:02 obrien Exp $
+# $FreeBSD: ports/audio/ripit/Makefile,v 1.6 1999/09/06 19:23:01 cpiazza Exp $
 #
 
-DISTNAME=	ripit-1.5
+PORTNAME=	ripit
+PORTVERSION=	1.5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.initio.no/~oyvindmo/distfiles/
 

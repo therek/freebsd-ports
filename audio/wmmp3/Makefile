@@ -1,11 +1,11 @@
 # New ports collection makefile for:	wmmp3
-# Version required:     0.11
 # Date created:		09 December 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/wmmp3/Makefile,v 1.1.1.1 1999/12/09 20:42:27 jim Exp $
 
-DISTNAME=	wmmp3-0.11
+PORTNAMEN=	wmmp3
+PORTVERSION=	0.11
 CATEGORIES=	audio windowmaker
 MASTER_SITES= 	http://www.dotfiles.com/software/wmmp3/
 

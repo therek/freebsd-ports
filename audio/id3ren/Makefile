@@ -1,15 +1,15 @@
 # New ports collection makefile for: id3ren
-# Version required:     0.97a
 # Date created:         28 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/audio/id3ren/Makefile,v 1.3 1999/08/25 04:35:36 obrien Exp $
+# $FreeBSD: ports/audio/id3ren/Makefile,v 1.4 1999/12/27 01:02:25 steve Exp $
 #
 
-DISTNAME=	id3ren97a
-PKGNAME=	id3ren-0.97a
+PORTNAME=	id3ren
+PORTVERSION=	0.97a
 CATEGORIES=	audio
 MASTER_SITES=	http://tscnet.com/pages/badcrc/apps/id3ren/
+DISTNAME=	id3ren97a
 
 MAINTAINER=	jonny@jonny.eng.br
 

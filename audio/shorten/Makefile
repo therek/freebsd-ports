@@ -1,15 +1,15 @@
 # New ports collection makefile for:   shorten
-# Version required:    2.3
 # Date created:        17 Feb 1999
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/shorten/Makefile,v 1.2 1999/08/25 04:36:08 obrien Exp $
 #
 
-DISTNAME=	shorten
-PKGNAME=	shorten-2.3a
+PORTNAME=	shorten
+PORTVERSION=	2.3a
 CATEGORIES=	audio archivers
 MASTER_SITES=	ftp://svr-ftp.eng.cam.ac.uk/pub/comp.speech/coding/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	sec@42.org
 

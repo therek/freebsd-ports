@@ -1,16 +1,16 @@
 # New ports collection makefile for:	libaudiofile
-# Version required:			0.1.9
 # Date created:				22 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.9 1999/10/08 02:23:46 nakai Exp $
+# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.10 1999/12/04 19:07:49 steve Exp $
 #
 
-DISTNAME=	audiofile-0.1.9
-PKGNAME=	libaudiofile-0.1.9
+PORTNAME=	libaudiofile
+PORTVERSION=	0.1.9
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/audiofile
+DISTNAME=	audiofile-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
