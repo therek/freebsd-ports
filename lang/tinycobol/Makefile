@@ -2,11 +2,11 @@
 # Date created:		26 Oct 2000
 # Whom:			Patrick Gardella <patrick@freebsd.org>
 #
-# $FreeBSD: ports/lang/tinycobol/Makefile,v 1.4 2001/01/16 17:31:17 sobomax Exp $
+# $FreeBSD: ports/lang/tinycobol/Makefile,v 1.5 2001/04/27 11:08:29 patrick Exp $
 #
 
 PORTNAME=	tinycobol
-PORTVERSION=	0.52
+PORTVERSION=	0.53
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	tiny-cobol
