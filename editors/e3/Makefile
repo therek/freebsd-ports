@@ -2,11 +2,11 @@
 # Date created:		Tue 5 Dec 2000
 # Whom:			joseph@randomnetworks.com
 #
-# $FreeBSD: ports/editors/e3/Makefile,v 1.3 2001/06/14 05:24:16 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	e3
-PORTVERSION=	1.7
+PORTVERSION=	1.71
 CATEGORIES=	editors
 MASTER_SITES=	http://www.sax.de/~adlibit/
 
