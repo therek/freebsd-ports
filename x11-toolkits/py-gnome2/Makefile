@@ -2,11 +2,11 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.34 2000/03/21 18:06:30 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.35 2000/04/10 01:10:47 cpiazza Exp $
 #
 
 PORTNAME=	py-gnome
-PORTVERSION= 	1.0.50
+PORTVERSION= 	1.0.53
 CATEGORIES=	x11-toolkits python gnome
 MASTER_SITES=	ftp://ftp.daa.com.au/pub/james/python/ \
 		ftp://ftp.gimp.org/pub/gtk/python/ \
