@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.11 1999/12/25 15:59:30 steve Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.12 2000/02/01 20:28:33 jim Exp $
 #
 
     SUBDIR += bitchx
@@ -6,6 +6,7 @@
     SUBDIR += bnc
     SUBDIR += epic4
     SUBDIR += ezbounce
+    SUBDIR += infobot
     SUBDIR += irc
     SUBDIR += ircII
     SUBDIR += ircd-hybrid
