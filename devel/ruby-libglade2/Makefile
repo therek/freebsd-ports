@@ -2,12 +2,12 @@
 # Date created:		8 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-libglade/Makefile,v 1.3 2001/06/25 22:56:24 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libglade
 PORTVERSION=	1.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel ruby gnome
 MASTER_SITES=	http://beta4.com/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -17,6 +17,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/gtk.so:${PORTSDIR}/x11-toolkits/ruby-gtk
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
