@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.324 2001/06/11 03:29:53 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.325 2001/06/16 15:03:05 alex Exp $
 #
 
     SUBDIR += 4va
@@ -212,6 +212,7 @@
     SUBDIR += ruby-libpng
     SUBDIR += ruby-ming
     SUBDIR += ruby-opengl
+    SUBDIR += ruby-pgplot
     SUBDIR += ruby-qt2gl
     SUBDIR += ruby-tgif
     SUBDIR += s10sh
