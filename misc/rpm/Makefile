@@ -3,7 +3,7 @@
 # Date created:		30 April 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/rpm/Makefile,v 1.21 1999/08/31 06:48:25 mharo Exp $
+# $FreeBSD: ports/misc/rpm/Makefile,v 1.22 1999/11/01 00:12:19 steve Exp $
 #
 
 DISTNAME=	rpm-2.5.6
@@ -14,13 +14,13 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	INSTALL_PROGRAM="${BSD_INSTALL_SCRIPT}"
-CONFIGURE_ARGS=	--disable-nls
 USE_GMAKE=	yes
+USE_AUTOCONF=	yes
+CONFIGURE_ARGS=	--disable-nls
+
 MAN8=		rpm.8 rpm2cpio.8
 
-pre-install:
-	${MKDIR} ${PREFIX}/include/rpm
+pre-configure:
+	@(cd ${WRKSRC}/popt && ${AUTOCONF})
 
 .include <bsd.port.mk>
