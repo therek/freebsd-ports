@@ -2,7 +2,7 @@
 # Date created:		17 Febrary 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jext/Makefile,v 1.3 2000/05/07 15:35:48 steve Exp $
+# $FreeBSD: ports/editors/jext/Makefile,v 1.4 2000/05/17 11:18:27 sobomax Exp $
 #
 
 PORTNAME=	jext
@@ -24,7 +24,7 @@ USE_XLIB=	yes
 NO_BUILD=	yes
 
 JDK_VERSION=	1.1.8
-JAVAVM=		${LOCALBASE}/jdk${JDK_VERSION}/bin/java
+JAVAVM?=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java
 
 .if defined(USE_JIT)
 RUN_DEPENDS+=	${LOCALBASE}/jdk${JDK_VERSION}/lib/${ARCH}/green_threads/libshujit.so:${PORTSDIR}/java/shujit
