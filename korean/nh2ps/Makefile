@@ -2,15 +2,13 @@
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/nh2ps/Makefile,v 1.10 2000/04/13 09:17:12 asami Exp $
+# $FreeBSD: ports/korean/nh2ps/Makefile,v 1.11 2000/04/21 22:03:56 fenner Exp $
 #
 
 PORTNAME=	nh2ps
 PORTVERSION=	2.3.1
 CATEGORIES=	korean print
 MASTER_SITES=	ftp://jazz.snu.ac.kr/pub/unix/util/nh2ps/
-
-RUN_DEPENDS=    ${PREFIX}/share/ghostscript/5.10ft/hangul:${PORTSDIR}/korean/ftghostscript5
 
 MAN1=		nh2ps.1
 
