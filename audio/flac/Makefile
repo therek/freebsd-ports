@@ -3,12 +3,11 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.6 2001/06/09 04:57:03 sf Exp $
+# $FreeBSD: ports/audio/flac/Makefile,v 1.7 2001/06/10 14:03:00 sf Exp $
 #
 
 PORTNAME=	flac
-PORTVERSION=	0.10
-PORTREVISION=	1
+PORTVERSION=	1.0
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -29,13 +28,15 @@ BUILD_DEPENDS+=	nasm:${PORTSDIR}/devel/nasm
 .endif
 
 USE_LIBTOOL=	yes
-USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
-USE_GMAKE=	yes
 
 INSTALLS_SHLIB=	yes
+MAN1=		flac.1
+
+post-extract:
+	@${RM} -r ${WRKSRC}/obj
 
 post-install:
 .if !defined(NOPORTDOCS)
