@@ -1,13 +1,13 @@
 # New ports collection makefile for:	p5-IMAP-Admin
-# Version required:	0.8.2
+# Version required:	1.2.1
 # Date created:		Sun Sep 26 09:25:38 EEST 1999
 # Whom:	      		Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.1.1.1 1999/09/27 05:13:04 dan Exp $
+# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.2 1999/12/23 16:12:07 steve Exp $
 #
 
-DISTNAME=	IMAP-Admin-1.0.1
-PKGNAME=	p5-IMAP-Admin-1.0.1
+DISTNAME=	IMAP-Admin-1.2.1
+PKGNAME=	p5-IMAP-Admin-1.2.1
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IMAP
