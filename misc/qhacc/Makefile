@@ -2,11 +2,11 @@
 # Date created:		28 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/qhacc/Makefile,v 1.9 2000/09/16 17:55:57 ade Exp $
+# $FreeBSD: ports/misc/qhacc/Makefile,v 1.10 2000/09/29 16:26:53 kevlo Exp $
 #
 
 PORTNAME=	qhacc
-PORTVERSION=	0.6.1a
+PORTVERSION=	0.6.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.ostrich-emulators.cx/qhacc/
 
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 USE_QT2=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-qt="${X11BASE}"
+CONFIGURE_ENV=	QTDIR="${X11BASE}"
 
 pre-build:
 	@${RM} -f ${WRKSRC}/src/moc_*.cpp
