@@ -1,9 +1,10 @@
-# $FreeBSD: ports/irc/Makefile,v 1.36 2001/08/24 14:15:37 ijliao Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.37 2001/08/30 08:52:48 knu Exp $
 #
 
     SUBDIR += bitchx
     SUBDIR += blackened
     SUBDIR += bnc
+    SUBDIR += bobot++
     SUBDIR += dcc
     SUBDIR += dircproxy
     SUBDIR += epic4
