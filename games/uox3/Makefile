@@ -3,23 +3,21 @@
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.6 1999/08/27 21:13:59 mharo Exp $
+# $FreeBSD: ports/games/uox3/Makefile,v 1.7 1999/08/31 06:44:30 mharo Exp $
 #
 
 DISTNAME=	uox3v6902-linux
 PKGNAME=	uox3-0.69.02
 CATEGORIES=	games
-MASTER_SITES=	ftp://provolone.dynip.com/pub/ \
-		http://users.1st.net/magda/
+MASTER_SITES=	ftp://ftp.Powered-By.AC/pub/uox3/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} tqpsworld${EXTRACT_SUFX}
 
 MAINTAINER=	dburr@FreeBSD.org
 
-BROKEN=		"Floating exception (core dumped)"
-
 DIST_SUBDIR=	uox3
 USE_ZIP=	YES
 NO_WRKSUBDIR=	YES
+PATCH_STRIP=	-p1
 
 USE_GMAKE=	YES
 MAKEFILE=	makefile
