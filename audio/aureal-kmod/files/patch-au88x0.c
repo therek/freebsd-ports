@@ -1,8 +1,8 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.4 2003/08/31 10:18:57 sf Exp $
 
---- au88x0.c.orig	Fri May 10 10:34:49 2002
-+++ au88x0.c	Sun Aug 31 17:22:38 2003
+--- au88x0.c.orig	Fri May 10 10:32:55 2002
++++ au88x0.c	Thu Aug  5 05:44:30 2004
 @@ -29,10 +29,16 @@
   */
  
@@ -20,7 +20,7 @@ $FreeBSD$
 +#endif
  #include <sys/queue.h>
  
- SND_DECLARE_FILE("$FreeBSD$");
+ SND_DECLARE_FILE("$FreeBSD: ports/audio/aureal-kmod/files/patch-au88x0.c,v 1.4 2003/08/31 10:18:57 sf Exp $");
 @@ -852,7 +858,11 @@
  		/*highaddr*/BUS_SPACE_MAXADDR,
  		/*filter*/NULL, /*filterarg*/NULL,
@@ -34,3 +34,14 @@ $FreeBSD$
  		device_printf(dev, "unable to create dma tag\n");
  		goto bad;
  	}
+@@ -942,6 +952,10 @@
+ 
+ 
+ DRIVER_MODULE(snd_au88x0, pci, au_driver, pcm_devclass, 0, 0);
++#if __FreeBSD_version > 502124
++MODULE_DEPEND(snd_au88x0, sound, SOUND_MINVER, SOUND_PREFVER, SOUND_MAXVER);
++#else
+ MODULE_DEPEND(snd_au88x0, snd_pcm, PCM_MINVER, PCM_PREFVER, PCM_MAXVER);
++#endif
+ MODULE_VERSION(snd_au88x0, 1);
+ 
