@@ -3,11 +3,11 @@
 # Whom:			ejc@bazzle.com
 # Version required:	2.8.0
 #
-# $FreeBSD: ports/devel/omniORB/Makefile,v 1.6 1999/08/28 01:57:04 mharo Exp $
+# $FreeBSD: ports/devel/omniORB/Makefile,v 1.7 2000/01/11 19:28:32 ejc Exp $
 #
 
 DISTNAME=	omniORB_280
-PKGNAME=	omniORB-2.8.0	
+PKGNAME=	omniORB-2.8.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.orl.co.uk/pub/omniORB/
 
