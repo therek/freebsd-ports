@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.98 2000/01/14 20:03:38 cpiazza Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.99 2000/01/18 03:26:14 obrien Exp $
 #
 
     SUBDIR += LPRng
@@ -20,6 +20,7 @@
     SUBDIR += copytape
     SUBDIR += cpbk
     SUBDIR += cpdup
+    SUBDIR += cronolog
     SUBDIR += daemontools
     SUBDIR += detach
     SUBDIR += diskusage
