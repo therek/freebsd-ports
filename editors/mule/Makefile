@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.45 2000/10/08 07:20:57 asami Exp $
+# $FreeBSD: ports/editors/mule/Makefile,v 1.46 2000/10/08 10:19:44 asami Exp $
 #
 
 PORTNAME=	mule
@@ -35,6 +35,7 @@ EXTRACT_ONLY=	emacs-${EMACS_VERSION}b${EXTRACT_SUFX}
 WRKSRC=		${WRKDIR}/emacs-${EMACS_VERSION}
 PATCHDIR=	${.CURDIR}/../../editors/mule-common/files
 FILESDIR=	${.CURDIR}/../../editors/mule-common/files
+MD5_FILE=	${.CURDIR}/../../editors/mule-common/distinfo
 SCRIPTDIR=	${.CURDIR}/../../editors/mule-common/scripts
 PLIST=		${.CURDIR}/../../editors/mule/pkg-plist
 INSTALL_COOKIE=	${WRKDIR}/.install_done-${PKGNAME}
