@@ -3,7 +3,7 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.24 2000/04/12 05:31:24 mharo Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.25 2000/04/22 09:57:37 mharo Exp $
 #
 
 PORTNAME=	wget
@@ -24,11 +24,10 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS=-I${PREFIX}/include \
 		LDFLAGS=-L${PREFIX}/lib
 
-INFOFILES=	wget.info
+pre-build:
+	${RM} -rf ${WRKSRC}/doc/wget.info*
 
 post-install:
-.for i in ${INFOFILES}
-	install-info ${PREFIX}/info/${i} ${PREFIX}/info/dir
-.endfor
+	install-info ${PREFIX}/info/wget.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
