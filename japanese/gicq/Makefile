@@ -2,7 +2,7 @@
 # Date Created:			31 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/gicq/Makefile,v 1.15 2000/07/07 19:59:09 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gicq
@@ -23,7 +23,8 @@ MAINTAINER=	flathill@FreeBSD.org
 LIB_DEPENDS=	icq.0:${PORTSDIR}/japanese/libicq
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-gnome --disable-nls
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

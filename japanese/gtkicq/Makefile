@@ -2,7 +2,7 @@
 # Date created: 8 MAY 1999
 # Whom: Shuichi Tanaka
 #
-# $FreeBSD: ports/japanese/gtkicq/Makefile,v 1.4 2000/04/11 14:13:49 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkicq
@@ -20,7 +20,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libjcode.a:${PORTSDIR}/japanese/libjcode
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-gnome --datadir=${PREFIX}/share/gtkicq
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
