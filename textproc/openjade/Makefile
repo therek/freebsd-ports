@@ -2,7 +2,7 @@
 # Date created:		May 19, 2000
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/openjade/Makefile,v 1.24 2000/05/19 06:27:07 kuriyama Exp $
+# $FreeBSD: ports/textproc/openjade/Makefile,v 1.25 2000/06/14 13:21:36 sobomax Exp $
 #
 
 PORTNAME=	openjade
@@ -15,7 +15,6 @@ MAINTAINER=	kuriyama@FreeBSD.org
 
 USE_GMAKE=	YES
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog
 

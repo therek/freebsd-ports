@@ -2,7 +2,7 @@
 # Date created:			17 July 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/battstat-applet/Makefile,v 1.1.1.1 2000/08/09 23:29:46 jim Exp $
 #
 
 PORTNAME=       battstat-applet
@@ -18,7 +18,6 @@ LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
-GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

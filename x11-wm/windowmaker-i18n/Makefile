@@ -2,7 +2,7 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.76 2000/07/04 07:13:25 sobomax Exp $
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.77 2000/08/03 09:28:18 asami Exp $
 #
 
 PORTNAME=	windowmaker-i18n
@@ -29,7 +29,6 @@ USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE}  LOCALBASE=${LOCALBASE} \
 		CPPFLAGS="-I${LOCALBASE}/include" LIBS="-L${LOCALBASE}/lib" \
 		LINGUAS="da de es fi fr hr it ja_JP.EUC ko nl no pl pt ru zh_TW.Big5 zh_CN"

@@ -2,7 +2,7 @@
 # Date created:				22 April 2000
 # Whom:					Vince Valenti <vince@blue-box.net>
 #
-# $FreeBSD: ports/devel/libol/Makefile,v 1.3 2000/06/16 21:49:55 asami Exp $
+# $FreeBSD: ports/devel/libol/Makefile,v 1.4 2000/07/02 03:24:03 will Exp $
 #
 
 PORTNAME=	libol
@@ -14,6 +14,5 @@ MAINTAINER=	vince@blue-box.net
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

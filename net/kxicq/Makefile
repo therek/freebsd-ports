@@ -2,7 +2,7 @@
 # Date created:        10 March 2000
 # Whom:                Andrey Novikov <andrey@novikov.com>
 #
-# $FreeBSD: ports/net/kxicq/Makefile,v 1.2 2000/04/30 20:55:38 steve Exp $
+# $FreeBSD: ports/net/kxicq/Makefile,v 1.3 2000/06/14 13:21:30 sobomax Exp $
 
 PORTNAME=	kxicq
 PORTVERSION=	0.3.97b
@@ -15,7 +15,6 @@ MAINTAINER=	andrey@novikov.com
 
 LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_QT=		yes

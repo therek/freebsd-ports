@@ -3,7 +3,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.1 2000/04/23 05:11:50 will Exp $
+# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.2 2000/07/10 01:52:35 steve Exp $
 #
 
 PORTNAME=	py-kde
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/python1.5/qt.py:${PORTSDIR}/x11-toolkits/py-qt
 
 USE_LIBTOOL=	yes
 USE_QT=		yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS= --with-qt-includes=${X11BASE}/include/X11/qt
 

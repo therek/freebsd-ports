@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.8 2000/07/04 07:12:48 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.9 2000/08/03 09:27:39 asami Exp $
 #
 
 PORTNAME=	fox
@@ -19,7 +19,6 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 
 USE_MESA=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-opengl=mesa --with-x
 .if defined(NO_SHM)
 CONFIGURE_ARGS+=--with-shm=no

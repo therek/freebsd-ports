@@ -2,7 +2,7 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.37 2000/06/16 21:52:39 asami Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.38 2000/08/04 01:38:52 ade Exp $
 #
 
 PORTNAME=	pilot-link
@@ -20,7 +20,6 @@ USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 USE_PERL5=	yes
 PREFIX=		${LOCALBASE}/pilot
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-perl5=${PERL5}
 
 MAN1=		dlpsh.1 ietf2datebook.1 install-datebook.1 \

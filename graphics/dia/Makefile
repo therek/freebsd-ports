@@ -2,7 +2,7 @@
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.6 2000/08/07 11:31:17 sobomax Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.7 2000/08/15 06:45:19 sobomax Exp $
 #
 
 PORTNAME=	dia
@@ -27,7 +27,6 @@ USE_X_PREFIX=   yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--enable-gnome

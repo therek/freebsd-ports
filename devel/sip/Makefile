@@ -2,7 +2,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD: ports/devel/sip/Makefile,v 1.5 2000/06/16 21:50:15 asami Exp $
+# $FreeBSD: ports/devel/sip/Makefile,v 1.6 2000/06/17 03:37:09 will Exp $
 #
 
 PORTNAME=	sip
@@ -18,7 +18,6 @@ USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 USE_QT=		yes
 CONFIGURE_ARGS=	--enable-qt --with-qt-includes=${X11BASE}/include/X11/qt
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	LDFLAGS=-lgcc
 

@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.4 2000/08/04 16:11:19 ade Exp $
+# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.5 2000/08/17 16:44:39 ade Exp $
 #
 
 PORTNAME=	gnomedebug
@@ -25,7 +25,6 @@ USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,7 +2,7 @@
 # Date created:		22 May 2000
 # Whom:			sam@inf.enst.fr
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/adasockets/Makefile,v 1.1 2000/07/31 15:14:24 nbm Exp $
 #
 
 PORTNAME=	adasockets
@@ -14,7 +14,6 @@ MAINTAINER=	sam@inf.enst.fr
 
 BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat
 
-GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 
 post-install:

@@ -3,7 +3,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/x11-toolkits/py-qt/Makefile,v 1.1 2000/04/23 05:07:09 will Exp $
+# $FreeBSD: ports/x11-toolkits/py-qt/Makefile,v 1.2 2000/07/10 01:45:26 steve Exp $
 
 PORTNAME=	py-qt
 PORTVERSION=	0.12
@@ -17,7 +17,6 @@ LIB_DEPENDS=	sip.3:${PORTSDIR}/devel/sip
 
 USE_QT=		yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	LDFLAGS=-lgcc
 CONFIGURE_ARGS= --with-qt-includes=${X11BASE}/include/X11/qt

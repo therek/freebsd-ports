@@ -2,7 +2,7 @@
 # Date created:         11 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/caitoo/Makefile,v 1.1 2000/07/10 03:29:15 steve Exp $
 #
 
 PORTNAME=	caitoo
@@ -22,7 +22,6 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 
 USE_XLIB=	yes
 USE_QT=		yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

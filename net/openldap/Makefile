@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1998
 # Whom:                 Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.15 2000/05/29 02:36:50 steve Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.16 2000/07/07 18:30:16 steve Exp $
 #
 
 PORTNAME=	openldap
@@ -28,7 +28,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 -D_THREAD_SAFE" \
 CONFIGURE_ARGS+=	--enable-ldbm --with-ldbm-api=db2
 .endif
 
-GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS+=	--localstatedir=/var/run --enable-shared --enable-dns
 

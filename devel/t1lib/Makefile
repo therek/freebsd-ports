@@ -2,7 +2,7 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.9 2000/04/14 05:44:29 asami Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.10 2000/04/20 02:55:59 chuckr Exp $
 #
 
 PORTNAME=	t1lib
@@ -15,7 +15,6 @@ MAINTAINER=	ijliao@csie.nctu.edu.tw
 
 WRKSRC=		${WRKDIR}/T1-1.0.1
 
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_XLIB=	yes

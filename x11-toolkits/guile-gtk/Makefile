@@ -2,7 +2,7 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.7 2000/06/16 21:52:32 asami Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.8 2000/08/04 01:31:57 ade Exp $
 #
 
 PORTNAME=	guile-gtk
@@ -21,7 +21,6 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \

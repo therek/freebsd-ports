@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dryad/Makefile,v 1.5 2000/08/04 01:34:16 ade Exp $
+# $FreeBSD: ports/devel/dryad/Makefile,v 1.6 2000/08/04 16:11:06 ade Exp $
 #
 
 PORTNAME=	dryad
@@ -24,7 +24,6 @@ RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

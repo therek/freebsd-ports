@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.11 2000/04/12 06:28:15 obrien Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.12 2000/04/15 00:18:29 will Exp $
 #
 
 PORTNAME=	kvirc
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext \
 
 USE_NEWGCC=	yes
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--x-includes=$(X11BASE)/include --x-libraries=$(X11BASE)/lib \
 		--datadir=$(PREFIX)/share --with-qt-moc=${X11BASE}/bin/moc2 \

@@ -2,7 +2,7 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.1.1.1 2000/07/29 10:31:36 sada Exp $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.2 2000/08/06 15:01:39 nbm Exp $
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.6
@@ -19,7 +19,6 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-compile-warnings=yes
 CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/share/gnome \
 			--datadir=${PREFIX}/share/gnome \
