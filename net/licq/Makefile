@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.28 2001/01/05 22:21:09 green Exp $
+# $FreeBSD: ports/net/licq/Makefile,v 1.29 2001/01/16 17:31:53 sobomax Exp $
 #
 
 PORTNAME=	licq
@@ -62,5 +62,7 @@ post-install:
 	   ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${INSTALL_TARGET}
 	${CHMOD} -R a-w ${PREFIX}/share/licq
 	${CHMOD} 755 ${PREFIX}/share/licq
+	${RM} -f ${PREFIX}/share/licq/qt-gui/locale/*.qm
+	${RMDIR} ${PREFIX}/share/licq/qt-gui/locale
 
 .include <bsd.port.mk>
