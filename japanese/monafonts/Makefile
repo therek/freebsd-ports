@@ -2,7 +2,7 @@
 # Date created:		14 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/monafonts/Makefile,v 1.5 2001/06/20 01:04:55 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	monafonts
@@ -12,7 +12,7 @@ CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://members.tripod.co.jp/s42335/mona/dist/
 EXTRACT_SUFX=	.tar.bz2.bin
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 FONTSDIR=	lib/X11/fonts/local
 USE_BZIP2=	yes

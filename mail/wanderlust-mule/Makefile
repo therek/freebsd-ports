@@ -2,10 +2,10 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-mule/Makefile,v 1.7 2000/07/10 02:08:19 steve Exp $
+# $FreeBSD$
 #
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 MASTERDIR=	${.CURDIR}/../../mail/wanderlust-emacs
 

@@ -2,14 +2,14 @@
 # Date created:        11th December 1998
 # Whom:                MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/eterm/Makefile,v 1.15 2001/09/18 07:36:04 knu Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
 
 MASTERDIR=      ${.CURDIR}/../../x11/eterm
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 EXTRA_PATCHES=	${.CURDIR}/files/extra-patch-configure.in \
 		${.CURDIR}/files/extra-patch-src:command.c \

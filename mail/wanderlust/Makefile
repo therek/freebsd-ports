@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.16 2001/02/14 20:19:40 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wanderlust
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.gohome.org/wl/stable/ \
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 DISTNAME=	wl-${PORTVERSION}
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 MIMEUI_PRODUCT?=	semi
 MIMEUI_VERSION?=	1.13.7

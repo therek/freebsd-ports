@@ -2,7 +2,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.31 2001/08/27 23:45:07 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	w3m
@@ -11,7 +11,7 @@ CATEGORIES+=	www ipv6
 MASTER_SITES=	http://mi.med.tohoku.ac.jp/~satodai/w3m/inusrc/200109/
 DISTNAME=	${PORTNAME}-${W3M_VERSION}-inu-${INU_VERSION}
 
-MAINTAINER?=	nobutaka@nobutaka.com
+MAINTAINER?=	nobutaka@FreeBSD.org
 
 LIB_DEPENDS=	gc.1:${PORTSDIR}/devel/boehm-gc
 

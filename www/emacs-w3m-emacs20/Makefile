@@ -2,7 +2,7 @@
 # Date Created:			24 Mar 2001
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/emacs-w3m-emacs20/Makefile,v 1.4 2001/07/23 13:33:10 okazaki Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	emacs-w3m
@@ -12,7 +12,7 @@ MASTER_SITES=	http://emacs-w3m.namazu.org/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 DISTNAME=	w3m_el-${PORTVERSION}
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 EMACS_PORT_NAME?=	emacs20
 

@@ -2,7 +2,7 @@
 # Date created:		19 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/migemo/Makefile,v 1.5 2001/09/20 04:46:09 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	migemo
@@ -12,7 +12,7 @@ PORTEPOCH=	1
 CATEGORIES=	japanese elisp
 MASTER_SITES=   http://migemo.namazu.org/stable/
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER=	nobutaka@FreeBSD.org
 
 .if !defined(EMACS_PORT_NAME)
 USE_AUTOMAKE=	yes
