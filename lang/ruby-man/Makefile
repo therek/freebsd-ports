@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 17 17:10:02 CEST 2000
 # Whom:				olgeni@uli.it
 #
-# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.4 2000/09/07 07:58:12 knu Exp $
+# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.5 2000/09/26 08:01:55 knu Exp $
 #
 
 PORTNAME=	ruby-man
@@ -11,16 +11,17 @@ CATEGORIES+=	lang ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	doc
 DISTNAME=	${PORTNAME}-${PORTVERSION}${LANGSUFFIX}
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	olgeni@uli.it
 
-DIST_SUBDIR=	ruby
-
-PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
+USE_RUBY=	yes
+RUBY_NO_BUILD_DEPENDS=	yes
+RUBY_NO_RUN_DEPENDS=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}${LANGSUFFIX}
-
 NO_BUILD=	yes
+PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
 DOCDIR=		${RUBY_DOCDIR}/ruby-man${LANGSUFFIX}
 
