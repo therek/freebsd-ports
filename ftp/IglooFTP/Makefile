@@ -2,28 +2,28 @@
 # Date created:				3 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.7 2000/04/12 05:30:59 mharo Exp $
+# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.8 2000/07/07 19:58:46 steve Exp $
 #
 
-PORTNAME=		IglooFTP
-PORTVERSION=		0.6.1
-CATEGORIES=		ftp
-MASTER_SITES=		${MASTER_SITE_SUNSITE} \
-			ftp://littleigloo.org/pub/iglooftp/
+PORTNAME=	IglooFTP
+PORTVERSION=	0.6.1
+CATEGORIES=	ftp
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		ftp://littleigloo.org/pub/iglooftp/
 MASTER_SITE_SUBDIR=	system/network/file-transfer
-DISTNAME=		${PORTNAME}-${PORTVERSION}.src
+DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=		will@FreeBSD.org
+MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
-WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
-USE_X_PREFIX=		yes
-MAKE_ENV=		GTK_CONFIG="${GTK_CONFIG}"
-ALL_TARGET=		IglooFTP
+USE_X_PREFIX=	yes
+MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+ALL_TARGET=	IglooFTP
 
 post-extract:
 	@${RM} ${WRKSRC}/../share/docs/LICENSE~
