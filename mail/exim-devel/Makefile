@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.73 2001/06/11 07:22:50 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.74 2001/06/11 07:49:52 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -71,6 +71,8 @@ SEDLIST+=	-e 's,^EXIM_MONITOR,\#EXIM_MONITOR,'
 
 .if !defined(WITHOUT_TLS)
 SEDLIST+=	-e 's,^\# SUPPORT_TLS=,SUPPORT_TLS=,'
+.else
+SEDLIST+=	-e 's,^TLS_LIBS,\#TLS_LIBS,'
 .endif
 
 .if !defined(WITHOUT_PERL)
