@@ -2,7 +2,7 @@
 # Date created:			  Tue Jan 30 2001
 # Whom:				  clive
 #
-# $FreeBSD: ports/mail/nullmailer/Makefile,v 1.1 2001/02/21 02:25:56 clive Exp $
+# $FreeBSD: ports/mail/nullmailer/Makefile,v 1.2 2001/03/04 13:13:42 clive Exp $
 #
 
 PORTNAME=	nullmailer
@@ -10,7 +10,7 @@ PORTNAME=	nullmailer
 PORTVERSION=	1.00r5
 PORTREVISION=	1
 CATEGORIES=	mail
-MASTER_SITES=	http://www.em.ca/~bruceg/nullmailer/archive/%SUBDIR%/
+MASTER_SITES=	http://untroubled.org/nullmailer/
 # MASTER_SITE_SUBDIR=	${PORTVERSION}
 MASTER_SITE_SUBDIR=	1.00RC5
 DISTNAME=	${PORTNAME}-1.00RC5
