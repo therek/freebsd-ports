@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.64 2003/02/09 20:18:30 fjoe Exp $
+# $FreeBSD: ports/MOVED,v 1.65 2003/02/13 00:28:11 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -168,3 +168,5 @@ textproc/ruby-erb||2003-02-09|ERb 1.x is obsolete: use the one included in ruby 
 audio/lame-devel||2003-02-09|obsolete
 x11-fm/gnomemc||2003-02-10|obsolete
 x11/wmshutdown|sysutils/wmshutdown|2003-02-13|fix category
+security/kgpgapplet||2003-02-19|merged into kgpg
+net/ip-tun||2003-02-19|obsoleted by gif interfaces
