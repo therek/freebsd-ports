@@ -2,11 +2,11 @@
 # Date created:			26-Apr-1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/shtool/Makefile,v 1.24 2000/07/01 13:51:54 rse Exp $
+# $FreeBSD: ports/devel/shtool/Makefile,v 1.25 2000/07/29 16:01:33 rse Exp $
 #
 
 PORTNAME=	shtool
-PORTVERSION=	1.5.1
+PORTVERSION=	1.5.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.engelschall.com/sw/shtool/
