@@ -2,11 +2,11 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.26 2000/09/28 17:58:43 ade Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.27 2000/10/05 07:17:16 reg Exp $
 #
 
 PORTNAME=	gnomeprint
-PORTVERSION=	0.24
+PORTVERSION=	0.25
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-print
