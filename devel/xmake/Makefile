@@ -2,13 +2,13 @@
 # Date created:		28 March 1997
 # Whom:			dlowe
 #
-# $FreeBSD: ports/devel/xmake/Makefile,v 1.3 1999/08/25 05:50:30 obrien Exp $
+# $FreeBSD: ports/devel/xmake/Makefile,v 1.4 2000/04/14 05:44:40 asami Exp $
 #
 
 PORTNAME=	xmake
 PORTVERSION=	1.05
 CATEGORIES=	devel
-MASTER_SITES=	http://www.backplane.com/xmake/ \
+MASTER_SITES=	http://apollo.backplane.com/xmake/ \
 		ftp://atari.saturn5.com/pub/dlowe/
 EXTRACT_SUFX=	.tgz
 
