@@ -2,12 +2,11 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.9 2001/03/15 19:13:39 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uconv
-PORTVERSION=	0.4.6
-PORTREVISION=	1
+PORTVERSION=	0.4.8
 CATEGORIES=	japanese converters ruby
 MASTER_SITES=	http://www.yoshidam.net/
 DIST_SUBDIR=	ruby
@@ -20,7 +19,7 @@ USE_RUBY_EXTCONF=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 INSTALL_TARGET=	site-install
 
-EXAMPLES=	euc2unicode.rb	test_euc.txt	test_euc.xml \
+EXAMPLES=	euc2unicode.rb	test-utf.rb	test_euc.txt	test_euc.xml \
 		trilang.xml	unicode2euc.rb	xmlconv.rb
 
 .include <bsd.port.pre.mk>
