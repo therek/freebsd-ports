@@ -2,7 +2,7 @@
 # Date created:				06 December 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/linux-jdk13/Makefile,v 1.1 2000/12/07 03:29:30 kevlo Exp $
 #
 
 PORTNAME=	jdk
@@ -41,6 +41,9 @@ NO_BUILD=	yes
 IGNORE=You must manually fetch the Java SDK 1.3.0 for Linux archive (j2sdk-1_3_0-linux.bin) from http://java.sun.com/j2se/1.3/download-linux.html, place it in ${DISTDIR} and then run make again.
 .endif
 .endfor
+
+post-fetch:
+	@${CHMOD} +x ${DISTDIR}/${DISTFILES}
 
 post-patch:
 	find ${WRKSRC} -name '*.orig' -print | xargs ${RM} -f
