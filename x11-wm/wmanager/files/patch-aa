@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.4 2002/05/24 12:01:03 kris Exp $
+$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.5 2002/10/27 23:45:47 adamw Exp $
 
 --- Makefile.orig	Mon Nov 15 00:29:24 1999
 +++ Makefile	Sat Oct 26 06:02:46 2002
@@ -19,7 +19,7 @@ $FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.4 2002/05/24 12:01:03 kris Ex
 -CXXFLAGS  = -I$(incdir) -O2 -Wall -pedantic #-DDEBUG=1 -g3
 -
 +CXX      ?= g++
-+CXXFLAGS+= -I$(fltkinc) -I$(incdir) -Wall -pedantic $(PTHREAD_CFLAGS) #-DDEBUG=1 -g3
++CXXFLAGS+= -I$(fltkinc) -I$(incdir) $(PTHREAD_CFLAGS) #-DDEBUG=1 -g3
  
  # linker settings
 -LD        = g++
