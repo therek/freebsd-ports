@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.57 2004/11/27 02:15:57 edwin Exp $
+# $FreeBSD: ports/mail/postfix/scripts/configure.postfix,v 1.58 2005/02/08 13:51:16 leeym Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -236,7 +236,7 @@ while [ "$1" ]; do
 			;;
 		VDA)
 			echo "PATCH_SITES+=	http://web.onda.com.br/nadal/postfix/VDA/"
-			echo "PATCHFILES+=	postfix-2.1.4-trash.patch.gz"
+			echo "PATCHFILES+=	postfix-2.1.5-trash.patch.gz"
 			echo "PATCH_DIST_STRIP=	-p1"
 			;;
 		*)
