@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.545 2004/10/23 06:45:29 linimon Exp $
+# $FreeBSD: ports/MOVED,v 1.546 2004/10/23 06:51:16 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1289,3 +1289,4 @@ graphics/giram||2004-10-23|build failure
 graphics/ruby-gdchart||2004-10-23|build failure
 hebrew/pine||2004-10-23|contained serious vulnerabilities
 japanese/edict-sdic||2004-10-23|checksum failure
+mail/cyrus|cyrus-imapd22|2004-10-23|contained serious vulnerabilities
