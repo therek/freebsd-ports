@@ -2,11 +2,11 @@
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.15 2001/03/21 03:07:17 vanilla Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.16 2001/05/28 20:52:46 sheldonh Exp $
 #
 
 PORTNAME=	mod_perl
-PORTVERSION=	1.25
+PORTVERSION=	1.26
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
