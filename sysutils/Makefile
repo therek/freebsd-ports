@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.79 1999/10/07 04:23:10 cpiazza Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.80 1999/10/21 04:33:01 taoka Exp $
 #
 
     SUBDIR += LPRng
@@ -30,6 +30,7 @@
     SUBDIR += gtar
     SUBDIR += gtop
     SUBDIR += idled
+    SUBDIR += lavaps
     SUBDIR += libretto-config
     SUBDIR += lmmon
     SUBDIR += lsof
