@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.333 2001/03/05 13:57:14 roam Exp $
+# $FreeBSD: ports/games/Makefile,v 1.334 2001/03/07 11:35:57 demon Exp $
 #
 
     SUBDIR += 3dc
@@ -11,6 +11,7 @@
     SUBDIR += affenspiel
     SUBDIR += agm
     SUBDIR += alephone
+    SUBDIR += alephone-data
     SUBDIR += amphetamine
     SUBDIR += an
     SUBDIR += angband
