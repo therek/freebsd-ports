@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.43 2000/11/30 16:29:46 sobomax Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.44 2000/12/19 09:48:11 will Exp $
 #
 
     SUBDIR += 9e
@@ -23,6 +23,7 @@
     SUBDIR += mscompress
     SUBDIR += nulib
     SUBDIR += p5-Archive-Tar
+    SUBDIR += p5-Archive-Zip
     SUBDIR += p5-Compress-Zlib
     SUBDIR += pkzip
     SUBDIR += ppunpack
