@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/cxterm/pkg-plist,v 1.7 2001/12/21 06:31:52 ijliao Exp $
 bin/cxterm
 bin/tit2cit
 bin/cit2tit
@@ -43,11 +43,10 @@ lib/X11/cxterm.dic/ks/QJ.cit
 lib/X11/fonts/chinese/hku16et.pcf.gz
 lib/X11/fonts/chinese/fonts.dir
 lib/X11/fonts/chinese/fonts.alias
+lib/X11/fonts/chinese/fonts.scale
 lib/X11/app-defaults/CXterm
 lib/X11/cxterm.dic/CXterm.ad
-%%PORTDOCS%%share/doc/cxterm/CXTERM.FAQ
-%%PORTDOCS%%share/doc/cxterm/input.doc
-%%PORTDOCS%%@dirrm share/doc/cxterm
+@dirrm lib/X11/fonts/chinese
 @dirrm lib/X11/cxterm.dic/big5
 @dirrm lib/X11/cxterm.dic/gb
 @dirrm lib/X11/cxterm.dic/jis
