@@ -2,12 +2,12 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.65 2001/09/01 16:54:53 dwcjr Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.66 2001/09/14 03:23:22 dwcjr Exp $
 #
 
 PORTNAME=	postfix
 PORTVERSION=	20010808
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
@@ -40,7 +40,7 @@ CONF2=	sample-aliases.cf sample-canonical.cf sample-debug.cf \
 	sample-qmqpd.cf \
 	sample-rate.cf sample-regexp.cf sample-relocated.cf \
 	sample-resource.cf sample-rewrite.cf sample-smtp.cf \
-	sample-smtpd.cf sample-transport.cf sample-virtual.cf
+	sample-smtpd.cf sample-transport.cf sample-virtual.cf install.cf
 
 BIN1=	bounce cleanup error flush lmtp local master nqmgr pickup \
 	pipe qmgr qmqpd showq smtp smtpd spawn trivial-rewrite virtual
@@ -76,6 +76,9 @@ pre-fetch:
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
+
+post-extract:
+	@${CP} ${FILESDIR}/install.cf ${WRKSRC}/conf
 
 post-patch:
 	(cd ${WRKSRC} && ${MAKE} -f Makefile.init makefiles ${MAKEFILEFLAGS} \
