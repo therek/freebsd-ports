@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.170 2001/03/01 12:32:42 tg Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.171 2001/03/03 21:39:04 demon Exp $
 #
 
     SUBDIR += agrep
@@ -114,6 +114,7 @@
     SUBDIR += p5-dTemplate
     SUBDIR += par
     SUBDIR += perl2html
+    SUBDIR += perltidy
     SUBDIR += pspell
     SUBDIR += pspell-ispell
     SUBDIR += py-HyperText
