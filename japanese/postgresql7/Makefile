@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.19 2000/12/07 06:44:25 knu Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.20 2000/12/07 11:36:01 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -57,7 +57,7 @@ CONFIGURE_ODBC=		--with-odbc
 # Honors JAVA_HOME if you have it set, and don't want the dependency.
 .if defined(WITH_JDBC)
 JAVA_HOME?=	${LOCALBASE}/jdk1.1.8
-BUILD_DEPENDS=	${JAVA_HOME}/bin/javac:${PORTSDIR}/java/jdk
+BUILD_DEPENDS+=	${JAVA_HOME}/bin/javac:${PORTSDIR}/java/jdk
 SCRIPTS_ENV+=	JAVA_HOME=${JAVA_HOME}
 .endif
 
