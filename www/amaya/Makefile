@@ -2,7 +2,7 @@
 # Date created:		26 Dec 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.20 2001/07/09 06:24:23 ijliao Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.21 2001/07/16 13:28:28 dannyboy Exp $
 #
 
 PORTNAME=	amaya
@@ -16,7 +16,7 @@ DISTFILES=	${DISTNAME}.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 DIST_SUBDIR=	amaya
 WRKSRC=		${WRKDIR}/Amaya/obj

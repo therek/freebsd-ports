@@ -2,7 +2,7 @@
 # Date created:        23 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/www/dillo/Makefile,v 1.3 2001/03/11 05:51:25 kevlo Exp $
+# $FreeBSD: ports/www/dillo/Makefile,v 1.4 2001/05/23 15:44:34 greid Exp $
 #
 
 PORTNAME=       dillo
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	greid@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		intl.1:${PORTSDIR}/devel/gettext
 
 USE_GTK=	yes

@@ -2,7 +2,7 @@
 # Date created:         7 August 1995
 # Whom:                 torstenb
 #
-# $FreeBSD: ports/www/Mosaic/Makefile,v 1.29 2000/12/31 07:01:45 trevor Exp $
+# $FreeBSD: ports/www/Mosaic/Makefile,v 1.30 2001/01/16 17:32:51 sobomax Exp $
 #
 
 PORTNAME=	mosaic
@@ -14,7 +14,7 @@ DISTNAME=	Mosaic-src-2.7b5
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 NO_CDROM=	"http://www.ncsa.uiuc.edu/SDG/Software/Mosaic/License/LicenseInfo.html"
 NO_PACKAGE=	${NO_CDROM}

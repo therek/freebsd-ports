@@ -2,7 +2,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.39 2001/07/16 18:36:23 ben Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.40 2001/08/28 23:22:45 mharo Exp $
 #
 
 PORTNAME=	analog
@@ -21,7 +21,7 @@ MAINTAINER=	mharo@FreeBSD.org
 
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 MAN1=		analog.1
 ALL_TARGET=	analog

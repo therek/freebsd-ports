@@ -2,7 +2,7 @@
 # Date created:				8 Jan 2001
 # Whom:					Marc van Woerkom <3d@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/openvrml/Makefile,v 1.2 2001/08/31 14:20:29 sobomax Exp $
 #
 
 PORTNAME=	openvrml
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	openvrml
 MAINTAINER=	3d@freebsd.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 CONFIGURE_ARGS=	--with-jpeg-prefix=${LOCALBASE} \
 		--with-png-prefix=${LOCALBASE} \

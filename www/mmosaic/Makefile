@@ -2,7 +2,7 @@
 # Date created:				2000-12-26
 # Whom:					trevor
 #
-# $FreeBSD: ports/www/mmosaic/Makefile,v 1.3 2001/05/02 01:10:51 trevor Exp $
+# $FreeBSD: ports/www/mmosaic/Makefile,v 1.4 2001/06/01 19:08:22 trevor Exp $
 #
 
 PORTNAME=	mmosaic
@@ -17,7 +17,7 @@ DISTNAME=	mMosaic-${PORTVERSION}
 
 MAINTAINER=	trevor@FreeBSD.org
 
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
 NO_CDROM=	"academic, research and internal business purposes only, without a fee"
 NO_PACKAGE=	"must cause any work...derived...to be licensed as a whole...under...this License"

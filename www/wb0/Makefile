@@ -2,7 +2,7 @@
 # Date created:				2001-01-31
 # Whom:					trevor
 #
-# $FreeBSD: ports/www/wb0/Makefile,v 1.2 2001/02/24 00:04:51 trevor Exp $
+# $FreeBSD: ports/www/wb0/Makefile,v 1.3 2001/04/10 07:34:54 trevor Exp $
 #
 
 PORTNAME=	wb0
@@ -16,7 +16,7 @@ MAINTAINER=	trevor@FreeBSD.org
 RUN_DEPENDS=	lynx:${PORTSDIR}/www/lynx-current
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		vga.1:${PORTSDIR}/graphics/svgalib \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 DOCDIR=		share/doc/${PORTNAME}
 DOCS=		AUTHORS Changelog README

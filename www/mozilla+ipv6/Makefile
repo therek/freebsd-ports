@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.64 2001/07/09 23:01:00 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.65 2001/08/09 14:09:24 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
@@ -19,7 +19,7 @@ MAINTAINER=	sumikawa@FreeBSD.org
 BUILD_DEPENDS=	zip:${PORTSDIR}/archivers/zip
 LIB_DEPENDS=	ORBit.2:${PORTSDIR}/devel/ORBit \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		mng.1:${PORTSDIR}/graphics/libmng \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 

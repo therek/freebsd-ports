@@ -2,7 +2,7 @@
 # Date created:        06 May 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cheetah/Makefile,v 1.1 2001/05/05 23:12:00 nakai Exp $
 #
 
 PORTNAME=	cheetah
@@ -15,7 +15,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/www/chimera2/Makefile,v 1.25 2000/07/04 07:12:44 sobomax Exp $
+# $FreeBSD: ports/www/chimera2/Makefile,v 1.26 2001/02/05 15:33:18 olgeni Exp $
 #
 
 PORTNAME=	chimera
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/ \
 MAINTAINER=	bgingery@gtcs.com
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 MAN1=		chimera.1
 USE_IMAKE=	yes
