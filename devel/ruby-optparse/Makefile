@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.15 2001/07/09 17:45:02 knu Exp $
+# $FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.16 2001/08/12 06:45:11 knu Exp $
 #
 
 PORTNAME=	optparse
@@ -21,7 +21,8 @@ NO_BUILD=	yes
 DOCS_EN=	ChangeLog \
 		ChangeLog.html \
 		README.en \
-		optparse.html \
+		optparse.en.html \
+		optparse.en.rd \
 		optparse.rlog \
 		rmi.html
 DOCS_JA=	FIRSTSTEP.ja.html \
@@ -29,6 +30,9 @@ DOCS_JA=	FIRSTSTEP.ja.html \
 		README.ja \
 		optparse.ja.html \
 		optparse.ja.rd
+
+post-extract:
+	${MV} ${WRKSRC}/optparse.html ${WRKSRC}/optparse.en.html 
 
 do-install:
 	${MKDIR} ${RUBY_SITELIBDIR}/${PORTNAME}
