@@ -2,11 +2,11 @@
 # Date created:        	00/02/21
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mypaedia-fpw/Makefile,v 1.4 2001/01/23 16:05:27 sf Exp $
+# $FreeBSD: ports/japanese/mypaedia-fpw/Makefile,v 1.5 2001/02/06 13:21:54 olgeni Exp $
 #
 
 PORTNAME=	mypaedia-fpw
-PORTVERSION=	1.4.1
+PORTVERSION=	1.4.2
 CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/mypaedia/
 DISTNAME=	mypaedia-fpw${PORTVERSION}-src
