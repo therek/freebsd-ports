@@ -2,7 +2,7 @@
 # Date created:		23 October 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/majordomo/Makefile,v 1.27 2001/06/01 06:04:59 obrien Exp $
+# $FreeBSD: ports/mail/majordomo/Makefile,v 1.28 2001/07/23 16:14:01 nsayer Exp $
 #
 
 PORTNAME=	majordomo
@@ -66,7 +66,9 @@ post-install:
 		done
 		@ ${INSTALL_DATA} ${FILESDIR}/post-install-notes ${PREFIX}/majordomo/doc
 .endif
-		@ ${INSTALL_DATA} ${WRKSRC}/aliases.majordomo ${PREFIX}/majordomo
+		@ if test -f ${PREFIX}/majordomo/aliases.majordomo; then :; \
+			else ${INSTALL_DATA} ${WRKSRC}/aliases.majordomo \
+			${PREFIX}/majordomo; fi
 		@ for file in test-l test-l-digest test-l.passwd test-l.info; do \
 			${INSTALL_DATA} ${FILESDIR}/$$file ${PREFIX}/majordomo/lists; \
 		done
