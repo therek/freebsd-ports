@@ -2,13 +2,13 @@
 # Date created:		12 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/py-mxTextTools/Makefile,v 1.4 1999/09/09 12:41:41 tg Exp $
+# $FreeBSD: ports/textproc/py-mxTextTools/Makefile,v 1.5 2000/04/09 21:53:03 cpiazza Exp $
 #
 
 PORTNAME=	py-mxTextTools
 PORTVERSION= 	1.1.1
 CATEGORIES=	textproc python
-MASTER_SITES=	http://starship.skyport.net/~lemburg/
+MASTER_SITES=	http://starship.python.net/~lemburg/
 DISTNAME=	mxTextTools-1.1.1
 
 MAINTAINER=	tg@FreeBSD.org
@@ -32,11 +32,15 @@ post-extract:
 do-configure:
 	@(cd ${WRKSRC} && ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
 
-post-install:
+do-install:
 	@${MKDIR} ${TEXTTOOLSDIR}
 	${INSTALL_DATA} ${WRKDIR}/TextTools/*.py ${TEXTTOOLSDIR}
 	@${MKDIR} ${TEXTTOOLSDIR}/Constants
 	${INSTALL_DATA} ${WRKDIR}/TextTools/Constants/*.py ${TEXTTOOLSDIR}/Constants
+	@${MKDIR} ${TEXTTOOLSDIR}/mxTextTools
+.for file in __init__.py mxTextTools.so
+	${INSTALL_DATA} ${WRKDIR}/TextTools/mxTextTools/${file} ${TEXTTOOLSDIR}/mxTextTools
+.endfor
 	@${PREFIX}/bin/python ${PYTHONSCRIPTDIR}/compileall.py ${TEXTTOOLSDIR}
 	@${PREFIX}/bin/python -O ${PYTHONSCRIPTDIR}/compileall.py ${TEXTTOOLSDIR}
 	@${MKDIR} ${EXAMPLEDIR}
