@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.331 2000/12/11 02:05:38 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.332 2000/12/11 02:06:49 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -224,6 +224,7 @@
     SUBDIR += pips2200
     SUBDIR += pips3000
     SUBDIR += pips3300
+    SUBDIR += pips670
     SUBDIR += pips760
     SUBDIR += pips770
     SUBDIR += pips800
