@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.48 2001/03/10 19:55:31 will Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.49 2001/03/31 01:36:29 will Exp $
 #
 
     SUBDIR += asmodem
@@ -29,6 +29,7 @@
     SUBDIR += vpb2
     SUBDIR += xcept
     SUBDIR += yaps
+    SUBDIR += yawmppp
     SUBDIR += zmtx-zmrx
 
 .include <bsd.port.subdir.mk>
