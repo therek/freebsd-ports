@@ -2,11 +2,12 @@
 # Date created:				11 March 1999
 # Whom:					Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/pvm/Makefile,v 1.5 2000/04/09 18:13:14 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pvm
 PORTVERSION=	3.4.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.netlib.org/pvm3/	\
 		ftp://ftp.chg.ru/pub/prog/parallel/pvm/pvm3/
