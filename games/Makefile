@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.418 2001/10/01 06:49:59 lioux Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 0verkill
@@ -257,6 +257,7 @@
     SUBDIR += twitch
     SUBDIR += uclient
     SUBDIR += uox3
+    SUBDIR += utserver
     SUBDIR += virt
     SUBDIR += wmeyes
     SUBDIR += wmminichess
