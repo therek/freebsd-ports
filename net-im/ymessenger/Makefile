@@ -3,7 +3,7 @@
 # Date created:			  Sat Dec 16, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/ymessenger/Makefile,v 1.2 2001/03/18 12:36:09 trevor Exp $
+# $FreeBSD: ports/net/ymessenger/Makefile,v 1.3 2001/03/27 13:12:49 kevlo Exp $
 #
 
 PORTNAME=	ymessenger
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://download.yahoo.com/dl/unix/fbsd4/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	LoRd_CJ@dalusers.com
+MAINTAINER=	calle.madestrand@norrgarden.se
 
 USE_GTK=	yes
 NO_BUILD=	yes
