@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit-db/files/packaudit.sh,v 1.4 2004/06/14 17:13:49 eik Exp $
+# $FreeBSD: ports/security/portaudit-db/files/packaudit.sh,v 1.5 2004/06/18 07:42:06 eik Exp $
 #
 
 AWK=/usr/bin/awk
@@ -54,7 +54,7 @@ STYLESHEET="%%DATADIR%%/vuxml2portaudit.xslt"
 
 PUBLIC_HTML="${PUBLIC_HTML:-$HOME/public_html/portaudit}"
 HTMLSHEET="%%DATADIR%%/vuxml2html.xslt"
-BASEURL="${BASEURL:-http://people.freebsd.org/~eik/portaudit/}"
+BASEURL="${BASEURL:-http://www.freebsd.org/ports/portaudit/}"
 
 PORTAUDIT2VUXML="%%DATADIR%%/portaudit2vuxml.awk"
 

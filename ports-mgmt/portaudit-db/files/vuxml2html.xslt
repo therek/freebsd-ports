@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 
-  $FreeBSD: ports/security/portaudit-db/files/vuxml2html.xslt,v 1.1 2004/06/12 22:43:44 eik Exp $
+  $FreeBSD: ports/security/portaudit-db/files/vuxml2html.xslt,v 1.2 2004/06/14 08:04:41 eik Exp $
 
 Copyright (c) 2004 Oliver Eikemeier. All rights reserved.
 
@@ -316,9 +316,9 @@ Usage:
     portaudit makes no claim of authorship or ownership of any of the information contained herein.</p>
       <p>
         If you have found a vulnerability in a FreeBSD port not listed in the
-        database, please <a href="mailto:security-officer@FreeBSD.org?subject=vid%20{$vid}">contact the
-        FreeBSD Security Officer</a>. Refer to
-        <a href="http://www.freebsd.org/security/#sec">"FreeBSD Security
+        database, please <a href="mailto:security@FreeBSD.org?subject=vid%20{$vid}">contact
+        the FreeBSD Security Team</a>. Refer to
+        <a href="http://www.freebsd.org/security/#how">"FreeBSD Security
         Information"</a> for more information.
         </p>
     <hr/>
