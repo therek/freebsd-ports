@@ -2,30 +2,27 @@
 # Date created:		16 January 1999
 # Whom:			Paul Chvostek <paul@it.ca>
 #
-# $FreeBSD: ports/mail/rlytest/Makefile,v 1.3 1999/08/25 06:50:49 obrien Exp $
+# $FreeBSD: ports/mail/rlytest/Makefile,v 1.4 2000/04/13 20:00:45 cpiazza Exp $
 #
 
 PORTNAME=	rlytest
-PORTVERSION= 	1.16
+PORTVERSION= 	1.20
 CATEGORIES=	mail security
 MASTER_SITES=	http://www.unicom.com/sw/rlytest/
 DISTNAME=	${PORTNAME}
+EXTRACT_SUFX=
 
 MAINTAINER=	paul@it.ca
 
-MAN1=		rlytest.1
-
 USE_PERL5=	yes
-NO_WRKSUBDIR=	yes
+EXTRACT_ONLY=	# defined
 NO_BUILD=
 
-post-patch:
-	${MV} ${WRKSRC}/rlytest ${WRKSRC}/rlytest.chip; \
-	${SED} 's:/usr/local/bin/perl:${PERL}:' < ${WRKSRC}/rlytest.chip > ${WRKSRC}/rlytest
+pre-patch:
+	perl -pe 's,^#!/usr/local/bin/perl$$,#!/usr/bin/perl,' < ${_DISTDIR}${DISTFILES} > ${WRKDIR}/rlytest
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/rlytest ${PREFIX}/bin/rlytest; \
-	${INSTALL_MAN} ${WRKSRC}/rlytest.1 ${MANPREFIX}/man/man1/rlytest.1
+	${INSTALL_SCRIPT} ${WRKDIR}/rlytest ${PREFIX}/bin/rlytest
 
 post-install:
 	${CAT} ${PKGDIR}/MESSAGE
