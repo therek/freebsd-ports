@@ -2,12 +2,13 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.21 2000/08/23 19:13:51 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.22 2000/08/24 15:01:44 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
 PORTVERSION=	2.0.2.621
+PORTREVISION=	1
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		http://vmware-svca.www.conxion.com/software/ \
@@ -48,7 +49,7 @@ MAN1=		vmware.1
 BROKEN=		"Systems prior to 400013 is out of support"
 .endif
 
-.if !defined(HAVE_LINPROCFS) && !exists(/modules/linprocfs.ko) && !exists(${PREFIX}/modules/linprocfs.ko)
+.if !defined(HAVE_LINPROCFS) && !exists(/modules/linprocfs.ko) && !exists(/boot/kernel/linprocfs.ko) && !exists(${PREFIX}/modules/linprocfs.ko)
 BROKEN=		"This software absolutely requires Linux procfs support"
 .endif
 
