@@ -3,7 +3,7 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/centericq/Makefile,v 1.1 1999/12/25 21:51:35 cpiazza Exp $
 #
 
 DISTNAME=	center-2.0.0
@@ -14,6 +14,7 @@ MAINTAINER=	cpiazza@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/center
 USE_GMAKE=	yes
+USE_NEWGCC=	yes
 
 post-patch:
 	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:' ${WRKSRC}/centerICQ.cc
