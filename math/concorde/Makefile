@@ -2,11 +2,12 @@
 # Date created:				3 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/math/concorde/Makefile,v 1.1 2000/07/04 02:38:00 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	concorde
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.caam.rice.edu/pub/software/keck/
 DISTNAME=	co991215
