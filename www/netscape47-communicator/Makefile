@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.71 2000/08/19 21:49:40 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.72 2000/08/20 19:37:37 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -12,8 +12,9 @@ PORTVERSION?=	${BROWSER_VER}
 .include <bsd.port.pre.mk>
 .endif
 
-MASTER_SITES=	ftp://ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/ \
-		ftp://ftp.bu.edu/pub/mirrors/ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/ \
+MASTER_SITES=	ftp://ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/
+.if ${ARCH} != "alpha"
+MASTER_SITES+=	ftp://ftp.bu.edu/pub/mirrors/ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.cuhk.edu.hk/pub/www/netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.spin.ad.jp/pub/WWW/netscape/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://sunsite.sut.ac.jp/pub/archives/WWW/netscape/${NETSCAPE_DIST_SUBDIR}/ \
@@ -38,6 +39,7 @@ MASTER_SITES=	ftp://ftp.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.mox.uniandes.edu.co/pub/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.nsu.ru/pub/mirrors/ftp-de.netscape.com/pub/${NETSCAPE_DIST_SUBDIR}/ \
 		ftp://ftp.curtin.edu.au/pub/internet/netscape/${NETSCAPE_DIST_SUBDIR}/
+.endif
 DISTFILES=	${BROWSER}-v475-us.${NETSCAPE_DIST_TAG}.tar.gz
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
