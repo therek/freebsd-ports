@@ -2,7 +2,7 @@
 # Date created:			16 May 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/dopewars/Makefile,v 1.12 2001/06/18 18:52:47 jim Exp $
+# $FreeBSD: ports/games/dopewars/Makefile,v 1.13 2001/06/19 18:01:14 jim Exp $
 #
 
 PORTNAME=	dopewars
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://dopewars.sourceforge.net/ \
 		http://bellatrix.pcl.ox.ac.uk/~ben/dopewars/
 
-MAINTAINER=	jim@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
