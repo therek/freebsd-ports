@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.155 2001/02/27 23:21:22 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.156 2001/03/01 15:31:40 clive Exp $
 #
     SUBDIR += yawho
 
@@ -32,6 +32,7 @@
     SUBDIR += diskusage
     SUBDIR += doconfig
     SUBDIR += eject
+    SUBDIR += fcron
     SUBDIR += ffsrecov
     SUBDIR += fileutils
     SUBDIR += flexbackup
