@@ -2,11 +2,12 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.58 2001/06/07 04:40:09 dwcjr Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.59 2001/06/08 18:30:08 dwcjr Exp $
 #
 
 PORTNAME=	postfix
 PORTVERSION=	20010525
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
@@ -102,6 +103,9 @@ do-install:
 	@${INSTALL_SCRIPT} \
 		${WRKSRC}/conf/postfix-script-sgid \
 		${PREFIX}/etc/postfix/postfix-script
+	@${INSTALL_SCRIPT} \
+		${WRKSRC}/auxiliary/rmail/rmail \
+		${PREFIX}/bin/rmail
 
 .for file in ${BIN1}
 	@${INSTALL_PROGRAM} \
