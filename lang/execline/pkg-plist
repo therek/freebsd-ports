@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/lang/execline/pkg-plist,v 1.1 2003/10/24 21:41:31 sergei Exp $
 bin/background
 bin/backtick
 bin/cd
@@ -95,3 +95,4 @@ lib/libexls1.a
 %%EXAMPLESDIR%%/execline-shell
 %%EXAMPLESDIR%%/execline-startup
 @dirrm %%EXAMPLESDIR%%
+@dirrm include/execline
