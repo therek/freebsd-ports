@@ -2,7 +2,7 @@
 # Date created:				13 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/fidelio/Makefile,v 1.1 2000/11/15 18:26:29 sobomax Exp $
 #
 
 PORTNAME=	fidelio
@@ -11,7 +11,7 @@ CATEGORIES=	net gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	matt@gsicomp.on.ca
 
 LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 
