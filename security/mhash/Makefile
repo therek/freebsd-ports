@@ -2,11 +2,11 @@
 # Date created:		Mon Jun 28 17:59:13 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/mhash/Makefile,v 1.11 2000/11/02 00:36:05 jeh Exp $
+# $FreeBSD: ports/security/mhash/Makefile,v 1.12 2000/11/22 10:20:13 roam Exp $
 #
 
 PORTNAME=	mhash
-PORTVERSION=	0.8.3
+PORTVERSION=	0.8.4
 CATEGORIES=	security
 MASTER_SITES=	http://mhash.sourceforge.net/dl/
 
