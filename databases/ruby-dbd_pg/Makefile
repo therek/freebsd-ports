@@ -1,11 +1,11 @@
-# New ports collection makefile for:	dbd_mysql for DBD-for-Ruby
-# Date created:		3 June 2001
+# New ports collection makefile for:	dbd_pg for DBD-for-Ruby
+# Date created:		9 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-dbd_mysql/Makefile,v 1.2 2001/06/02 17:05:45 knu Exp $
+# $FreeBSD$
 #
 
-PORTNAME=	dbd_mysql
+PORTNAME=	dbd_pg
 PORTVERSION=	${RUBY_DBI_PORTVERSION}
 CATEGORIES=	databases ruby
 MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
@@ -16,7 +16,7 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/dbi.rb:${RUBY_DBI_PORTDIR} \
-		${RUBY_SITEARCHLIBDIR}/mysql.so:${.CURDIR}/../ruby-mysql
+		${RUBY_SITEARCHLIBDIR}/postgres.so:${.CURDIR}/../ruby-postgres
 
 USE_RUBY=	yes
 USE_RUBY_SETUP=	yes

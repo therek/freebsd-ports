@@ -2,37 +2,37 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/ruby-dbd_sybase/Makefile,v 1.1 2001/06/02 18:51:44 knu Exp $
 #
 
 PORTNAME=	dbd_sybase
-PORTVERSION=	0.0.4
+PORTVERSION=	${RUBY_DBI_PORTVERSION}
 CATEGORIES=	databases ruby
-MASTER_SITES=	http://www.sprytech.com/~rainer.perl/ruby/files/
+MASTER_SITES=	${RUBY_DBI_MASTER_SITES}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	ruby-dbi-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
+DISTNAME=	${RUBY_DBI_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	tds.0:${.CURDIR}/../freetds
-RUN_DEPENDS=	${RUBY_SITELIBDIR}/dbi.rb:${.CURDIR}/../ruby-dbi
+RUN_DEPENDS=	${RUBY_SITELIBDIR}/dbi.rb:${RUBY_DBI_PORTDIR}
 
 USE_RUBY=	yes
-USE_RUBY_EXTCONF=	yes
+USE_RUBY_SETUP=	yes
 
-WRKSRC=		${WRKDIR}/ext/${PORTNAME}
-INSTALL_TARGET=	site-install
+WRKSRC=		${RUBY_DBI_WRKSRC}
+CONFIGURE_ARGS=	--with=ext/${PORTNAME}
 
-DOCS_EN=	doc/*
+DOCS_EN=	ext/${PORTNAME}/doc/*
+
+.include "${.CURDIR}/../ruby-dbi/Makefile.common"
 
 post-install:
-	cd ${RUBY_SITEARCHLIBDIR} && ${MV} ${PORTNAME}.so dbi/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/dbi/${PORTNAME}
+	${MKDIR} ${RUBY_DOCDIR}/${RUBY_DBI_PORTNAME}/${PORTNAME}
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/dbi/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${RUBY_DBI_PORTNAME}/${PORTNAME}/
 .endfor
 .endif
 
