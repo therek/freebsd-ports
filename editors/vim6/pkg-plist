@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.42 2001/05/23 09:36:26 obrien Exp $
+@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.43 2001/05/24 01:19:05 obrien Exp $
 bin/vim
 bin/vimtutor
 bin/xxd
@@ -19,3 +19,4 @@ bin/gvimdiff
 @comment Insert PLIST.share-vim here
 @comment -=[ begin PLIST.share-vim ]=-
 @comment -=[ end PLIST.share-vim ]=-
+@dirrm share/vim
