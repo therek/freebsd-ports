@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.185 2000/11/02 21:09:49 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.186 2000/11/02 21:11:40 trevor Exp $
 #
 
     SUBDIR += afsp
@@ -81,6 +81,7 @@
     SUBDIR += libogg
     SUBDIR += libshout
     SUBDIR += libsidplay
+    SUBDIR += libvorbis
     SUBDIR += libworkman
     SUBDIR += linux-realplayer
     SUBDIR += lopster
