@@ -2,11 +2,11 @@
 # Date created:				28 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/textproc/c2html/Makefile,v 1.7 1999/12/25 01:37:45 steve Exp $
+# $FreeBSD: ports/textproc/c2html/Makefile,v 1.8 2000/04/09 21:52:11 cpiazza Exp $
 #
 
 PORTNAME=		c2html
-PORTVERSION= 		0.7.2
+PORTVERSION= 		0.9.1
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
@@ -18,7 +18,6 @@ USE_AUTOCONF=		yes
 MAN1=			c2html.1
 
 post-install:
-	strip ${PREFIX}/bin/c2html
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/c2html
 .for file in AUTHORS NEWS README
