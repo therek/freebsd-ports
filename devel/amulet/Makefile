@@ -2,7 +2,7 @@
 # Date created:       26 July 1997
 # Whom:               Filip Bovyn (bovynf@awe.be)
 #
-# $FreeBSD: ports/devel/amulet/Makefile,v 1.13 2001/01/10 14:01:46 sf Exp $
+# $FreeBSD: ports/devel/amulet/Makefile,v 1.14 2001/08/23 16:53:50 alex Exp $
 
 PORTNAME=	amulet
 PORTVERSION=	3.0
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	bovynf@awe.be
 
-BROKEN=		"Internal compiler error in `instantiate_virtual_regs_1', at function.c:3883"
+BROKEN=		"Internal compiler error in \`instantiate_virtual_regs_1', at function.c:3883"
 
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
