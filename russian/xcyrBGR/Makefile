@@ -2,7 +2,7 @@
 # Date created:		18 Feb 2001
 # Whom:			vess /Veselin Slavov/ <vess@btc.net>
 #
-# $FreeBSD: ports/russian/xcyrBGR/Makefile,v 1.1 2001/04/12 15:36:01 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcyrBGR
@@ -19,7 +19,7 @@ NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400012
-MAKE_ENV=	COPT="-fpermissive"
+MAKE_ENV=	COPT="${CXXFLAGS} -fpermissive"
 .endif
 
 post-extract:
