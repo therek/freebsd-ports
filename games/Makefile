@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.384 2001/06/10 21:52:34 alex Exp $
+# $FreeBSD: ports/games/Makefile,v 1.385 2001/06/16 10:33:55 nakai Exp $
 #
 
     SUBDIR += 0verkill
@@ -205,6 +205,7 @@
     SUBDIR += sokoban
     SUBDIR += sol
     SUBDIR += solarwolf
+    SUBDIR += spacearyarya
     SUBDIR += speak
     SUBDIR += spellcast
     SUBDIR += speyes
