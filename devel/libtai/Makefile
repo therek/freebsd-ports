@@ -2,7 +2,7 @@
 # Date created:		15 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/devel/libtai/Makefile,v 1.3 2001/02/14 04:12:43 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libtai
@@ -32,9 +32,9 @@ PROGRAM_FILES=	easter nowutc leapsecs yearcal
 do-configure:
 	@${PERL} -pi -e "s!%%PREFIX%%!${PREFIX}!g" \
 		${WRKSRC}/leapsecs.3 ${WRKSRC}/leapsecs_read.c
-	@${ECHO} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
-	@${ECHO} "${CC} -s" > ${WRKSRC}/conf-ld
-	@${ECHO} -fPIC -DPIC > ${WRKSRC}/conf-ccso
+	@${ECHO_CMD} "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
+	@${ECHO_CMD} "${CC} -s" > ${WRKSRC}/conf-ld
+	@${ECHO_CMD} -fPIC -DPIC > ${WRKSRC}/conf-ccso
 
 do-install:
 	${INSTALL} ${COPY} -o ${SHAREOWN} -g ${BINGRP} -m 644 \

@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codemedic/Makefile,v 1.5 2001/01/16 17:30:15 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	code_medic
@@ -76,9 +76,9 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
-	@${ECHO} "\nLOADLIBS += ${PORTLIBS}" >> \
+	@${ECHO_CMD} "\nLOADLIBS += ${PORTLIBS}" >> \
 		${WRKSRC}/programs/${PORTNAME}/Make.header
 
 pre-build:

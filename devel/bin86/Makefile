@@ -2,7 +2,7 @@
 # Date created:				2000-10-19
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/bin86/Makefile,v 1.4 2001/04/10 09:10:50 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bin86
@@ -19,18 +19,18 @@ ONLY_FOR_ARCHS=	i386
 PLIST=		${WRKDIR}/pkg-plist
 
 post-extract:
-	find ${WRKSRC} -type f -print0 | xargs -0 ${CHMOD} 644
+	${FIND} ${WRKSRC} -type f -print0 | ${XARGS} -0 ${CHMOD} 644
 
 pre-install:
 	${RM} -f ${PLIST}
 	cd ${WRKSRC} && \
-		find -s ${WRKSRC} -perm 755 -type f -exec ${BASENAME} \{\} \; \
+		${FIND} -s ${WRKSRC} -perm 755 -type f -exec ${BASENAME} \{\} \; \
 			| ${SED} -e 's:^:bin/:' >> ${PLIST}
 .if !defined(NOPORTDOCS)
 .for i in ${DOCS}
-	${ECHO} ${DOCDIR}/${i} >> ${PLIST}
+	${ECHO_CMD} ${DOCDIR}/${i} >> ${PLIST}
 .endfor
-	${ECHO} "@dirrm " ${DOCDIR} >> ${PLIST}
+	${ECHO_CMD} "@dirrm " ${DOCDIR} >> ${PLIST}
 .endif
 
 do-install:

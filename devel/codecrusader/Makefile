@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.18 2001/03/14 04:29:22 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	code_crusader
@@ -83,9 +83,9 @@ post-extract:
 .endfor
 
 post-patch:
-	@${ECHO} "SEARCHDIRS += ${PORTINCLUDES}" >> \
+	@${ECHO_CMD} "SEARCHDIRS += ${PORTINCLUDES}" >> \
 		${WRKSRC}/${EXTRALIBFILES_MAKE_WRKSRC}/jx_constants
-	@${ECHO} "\nLOADLIBS += ${PORTLIBS}" >> \
+	@${ECHO_CMD} "\nLOADLIBS += ${PORTLIBS}" >> \
 		${WRKSRC}/programs/${PORTNAME}/Make.header
 
 pre-build:

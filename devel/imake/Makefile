@@ -2,7 +2,7 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake/Makefile,v 1.6 2001/02/05 14:34:39 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imake
@@ -29,7 +29,7 @@ INSTALL_TARGET=	install install.man
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
 
 do-configure:
-	@${ECHO} > ${WRKSRC}/cf/host.def
+	@${ECHO_CMD} > ${WRKSRC}/cf/host.def
 	@(cd ${WRKDIR}/xc; \
 	  ${MAKE} Makefile.boot ; \
 	  ${MAKE} -f xmakefile SUBDIRS="include config" VerifyOS Makefiles includes)
