@@ -3,15 +3,13 @@
 # Date created:			2 Oct 1997
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/bookview/Makefile,v 1.7 1999/08/25 05:23:31 obrien Exp $
 #
 
 DISTNAME=	bookview-2.4.4
 PKGNAME=	ja-bookview-2.4.4
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/bookview/ \
-		ftp://ftp.sra.co.jp/pub/net/ndtp/bookview/old/ \
-		ftp://ftp.mei.co.jp/free/others/Dictionary/ndtp/bookview/
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/bookview/
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
