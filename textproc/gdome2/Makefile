@@ -2,7 +2,7 @@
 # Date created:		7 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/gdome2/Makefile,v 1.1 2001/07/12 06:10:39 knu Exp $
 #
 
 PORTNAME=	gdome2
@@ -14,7 +14,7 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 
-WANT_GLIB=	yes
+USE_GLIB=	yes
 
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
