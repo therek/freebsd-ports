@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.271 2000/11/26 14:16:16 roam Exp $
+# $FreeBSD: ports/www/Makefile,v 1.272 2000/12/03 21:01:57 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -156,6 +156,7 @@
     SUBDIR += py-HTMLgen
     SUBDIR += qdecoder
     SUBDIR += quanta
+    SUBDIR += reportmagic
     SUBDIR += roxen
     SUBDIR += ruboard
     SUBDIR += screem
