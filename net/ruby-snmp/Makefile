@@ -2,7 +2,7 @@
 # Date created:		1 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-snmp/Makefile,v 1.4 2001/01/19 16:37:56 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	snmp
@@ -17,7 +17,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	snmp.4:${PORTSDIR}/net/net-snmp
+LIB_DEPENDS=	snmp.5:${PORTSDIR}/net/net-snmp
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
