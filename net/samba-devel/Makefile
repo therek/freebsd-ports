@@ -2,23 +2,21 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.52 2001/03/13 10:57:23 sobomax Exp $
+# $FreeBSD: ports/net/samba-devel/Makefile,v 1.53 2001/03/28 13:03:45 kuriyama Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.2.0a3
+PORTVERSION=	2.2.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://samba.anu.edu.au/pub/samba/%SUBDIR%/ \
 		ftp://de.samba.org/pub/mirror/samba/%SUBDIR%/ \
 		ftp://se.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/unix/utilities/samba/%SUBDIR%/
-MASTER_SITE_SUBDIR= alpha
-DISTNAME=       samba-2.2.0-alpha3
+MASTER_SITE_SUBDIR= . old alpha
+DISTNAME=       samba-${PORTVERSION}
 
 MAINTAINER=	dwcjr@inethouston.net
-
-NO_LATEST_LINK=	"Unstable, development version."
 
 # directories
 VARDIR=		/var
