@@ -2,7 +2,7 @@
 # Date created:         27. April 1996
 # Whom:                 Ronald Kuehn <kuehn@rz.tu-clausthal.de>
 #
-# $FreeBSD: ports/games/imaze/Makefile,v 1.18 2000/04/14 06:53:16 mharo Exp $
+# $FreeBSD: ports/games/imaze/Makefile,v 1.19 2000/04/14 12:25:56 asami Exp $
 #
 
 PORTNAME=	imaze
@@ -25,6 +25,7 @@ MAINTAINER=	kuehn@rz.tu-clausthal.de
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 .endif
 
+WRKSRC=		${WRKDIR}/imaze
 EXTRACT_ONLY=	imaze1.3.tar.Z
 USE_X_PREFIX=	yes
 MAN6=		genlab.6 imaze.6 imazesrv.6 ninja.6

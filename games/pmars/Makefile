@@ -2,7 +2,7 @@
 # Date created:        15 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/pmars/Makefile,v 1.4 1999/11/12 21:04:54 jim Exp $
+# $FreeBSD: ports/games/pmars/Makefile,v 1.5 2000/04/14 12:26:20 asami Exp $
 #
 
 PORTNAME=	pmars
@@ -15,6 +15,7 @@ DISTFILES=	pmars08s.tar.Z
 MAINTAINER=	gmarco@giovannelli.it
 
 USE_XLIB=	yes
+NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 ALL_TARGET=	pmars
 MAN6=		pmars.6

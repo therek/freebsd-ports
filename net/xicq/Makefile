@@ -2,7 +2,7 @@
 # Date created:				29 June 1998
 # Whom:					scrappy
 #
-# $FreeBSD: ports/net/xicq/Makefile,v 1.7 1999/11/15 04:32:54 billf Exp $
+# $FreeBSD: ports/net/xicq/Makefile,v 1.8 2000/04/09 18:14:01 cpiazza Exp $
 #
 
 PORTNAME=	xicq
@@ -13,7 +13,7 @@ DISTNAME=	xicq-071298-snapshot.src
 
 MAINTAINER=	scrappy@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/xicq-071298
 
 USE_GMAKE=	yes
 MAKE_ENV=	OPT="${CFLAGS}"

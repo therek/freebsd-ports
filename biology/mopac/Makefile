@@ -2,13 +2,14 @@
 # Date created:  1997-04-23
 # Whom:	 Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/mopac/Makefile,v 1.5 1999/08/25 04:48:00 obrien Exp $
+# $FreeBSD: ports/biology/mopac/Makefile,v 1.6 2000/04/08 22:04:43 mharo Exp $
 #
 
 PORTNAME=	mopac
 PORTVERSION=	7.02
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.ccl.net/pub/chemistry/software/SOURCES/FORTRAN/mopac7_sources/
+DISTNAME=	mopac7
 DISTFILES=	mopac7.tar.Z  mopac7-man.tar.Z
 
 PATCH_SITES=   ftp://ftp.ccl.net/pub/chemistry/software/LINUX/mopac7/old-version-95.06.21/

@@ -2,20 +2,20 @@
 # Date created:		01 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/awele/Makefile,v 1.6 1999/11/28 18:30:46 steve Exp $
+# $FreeBSD: ports/games/awele/Makefile,v 1.7 2000/04/14 00:45:26 mharo Exp $
 #
 
 PORTNAME=	awele
 PORTVERSION=	1.0
 CATEGORIES=	games tk82
 MASTER_SITES=	http://www-air.inria.fr/ftp/Jean-Paul/
-DISTNAME=	${PORTNAME}${PORTVERSION}
-EXTRACT_SUFX=	.tgz
+DISTFILES=	${PORTNAME}1.0.tgz
 
 MAINTAINER=	tg@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
+WRKSRC=		${WRKDIR}/awele
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 MAN6=		xawele.6

@@ -2,7 +2,7 @@
 # Date created:        			20 December 1998
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak1/Makefile,v 1.10 2000/02/26 01:42:22 asami Exp $
+# $FreeBSD: ports/lang/squeak1/Makefile,v 1.11 2000/04/12 06:20:43 obrien Exp $
 #
 
 PORTNAME=	squeak
@@ -16,7 +16,8 @@ MASTER_SITES=	http://www.apfel.de/~jesse/squeak/ \
 		http://st-www.cs.uiuc.edu/ftp/Smalltalk/Squeak/ \
 		ftp://uiarchive.cso.uiuc.edu/pub/lang/smalltalk/smalltalk/Squeak/ \
 		http://wuarchive.wustl.edu/languages/smalltalk/smalltalk/Squeak/
-DISTFILES=	${PORTVERSION}${EXTRACT_SUFX} ${SQUEAK_SRC}
+DISTNAME=	${PORTVERSION}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SQUEAK_SRC}
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 

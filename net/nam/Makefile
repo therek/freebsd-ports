@@ -2,7 +2,7 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.4 2000/03/20 22:47:00 mharo Exp $
+# $FreeBSD: ports/net/nam/Makefile,v 1.5 2000/04/09 18:12:25 cpiazza Exp $
 #
 
 PORTNAME=	nam
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libtclcl.a:${PORTSDIR}/devel/tclcl
 MAN1=		nam.1
 MANCOMPRESSED=	no
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/nam-1.0a7
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
