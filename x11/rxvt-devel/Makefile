@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.36 2000/05/22 05:09:19 will Exp $
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.37 2000/06/22 05:52:10 will Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
@@ -20,7 +20,7 @@ PATCH_SITES=	ftp://ftp.rxvt.org/pub/rxvt/
 PATCHFILES=	rxvt-2.7.3.patch1.gz
 PATCH_DIST_STRIP+=      -p1
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lioux@linf.unb.br
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
