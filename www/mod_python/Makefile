@@ -2,7 +2,7 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/www/mod_python/Makefile,v 1.11 2001/08/16 09:31:29 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_python
@@ -18,6 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
+NO_PACKAGE=	"Requires Python without threads support"
 USE_PYTHON=	yes
 
 .include <bsd.port.pre.mk>
@@ -44,7 +45,7 @@ pre-patch:
 .endif
 
 post-configure:
-	@${SH} ${PKGREQ}.threads ${PYTHON_CMD} ${PYTHON_BASE}
+	@${SH} ${PKGREQ}.threads ${PYTHON_CMD}
 .if defined(OPTIONAL_LIBS)
 	${SED} 's/^\(LIBS=.*\)/\1 ${OPTIONAL_LIBS}/' ${WRKSRC}/src/Makefile \
 		> ${WRKSRC}/src/Makefile.tmp && \
