@@ -1,11 +1,11 @@
 # Common stuff for Licq-based ports
-# $FreeBSD: ports/net/licq/Makefile.inc,v 1.11 2003/02/04 20:07:03 dinoex Exp $
+# $FreeBSD: ports/net/licq/Makefile.inc,v 1.12 2003/03/24 16:19:58 dinoex Exp $
 
 PKGNAMEPREFIX=		licq-
-LICQ_VER=		1.2.6
-QT_LICQ_VER=		1.2.6
+LICQ_VER=		1.2.7
+QT_LICQ_VER=		1.2.7
 RMS_LICQ_VER=		0.33
-CONSOLE_LICQ_VER=	1.2.6
+CONSOLE_LICQ_VER=	1.2.7
 JONS_GTK_LICQ_VER=	0.20.2
 .if ${PORTNAME} != "base"
 RUN_DEPENDS+=		licq:${LICQ_PORT}
