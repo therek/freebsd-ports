@@ -3,17 +3,16 @@
 # Date created:        29 May 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.3 1999/08/25 06:50:16 obrien Exp $
+# $FreeBSD: ports/mail/mailcrypt/Makefile,v 1.4 1999/09/21 02:15:06 asami Exp $
 #
 
-DISTNAME=	mailcrypt-3.4
+DISTNAME=	mailcrypt-3.5.5
 CATEGORIES=	mail
-MASTER_SITES=	http://cag-www.lcs.mit.edu/mailcrypt/
-MASTER_SITE_SUBDIR=	mailcrypt
+MASTER_SITES=	http://www.nb.net/~lbudney/linux/software/mailcrypt/
 
 MAINTAINER=	murray@cdrom.com
 
-BUILD_DEPENDS=	emacs:${PORTSDIR}/editors/emacs
+BUILD_DEPENDS=	emacs:${PORTSDIR}/editors/emacs20
 
 GNU_CONFIGURE=	yes
 
