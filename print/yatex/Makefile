@@ -3,7 +3,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.12 1999/09/27 13:48:09 taoka Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.13 1999/09/29 07:31:01 taoka Exp $
 #
 
 DISTNAME=	yatex1.67
@@ -40,10 +40,12 @@ INFODIR=	${EMACSDIR}/info
 PLIST=		${PKGDIR}/PLIST.xemacs-mule
 MANIFEST=	MANIFEST.yatex
 .elif defined(MULE)
+EMACS=		mule
 EMACSDIR=	${PREFIX}/share/mule
 INFODIR=	${PREFIX}/info
 PLIST=		${PKGDIR}/PLIST.mule
 .else
+EMACS=		emacs
 EMACSDIR=	${PREFIX}/share/emacs
 INFODIR=	${PREFIX}/info
 PLIST=		${PKGDIR}/PLIST.emacs
