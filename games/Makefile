@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.255 2000/02/06 19:05:31 asami Exp $
+# $FreeBSD: ports/games/Makefile,v 1.256 2000/02/13 02:03:24 imura Exp $
 #
 
     SUBDIR += 3dc
@@ -75,6 +75,7 @@
     SUBDIR += inform
     SUBDIR += ishido
     SUBDIR += jetpack
+    SUBDIR += kbubbles
     SUBDIR += jzip
     SUBDIR += kdegames11
     SUBDIR += kdegames11-i18n
