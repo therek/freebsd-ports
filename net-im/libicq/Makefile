@@ -3,12 +3,12 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/libicq/Makefile,v 1.7 1999/08/31 06:48:55 mharo Exp $
+# $FreeBSD: ports/net/libicq/Makefile,v 1.8 1999/10/09 18:42:08 vanilla Exp $
 #
 
 DISTNAME=	libicq-0.33
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/                        \
+MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/ \
 		http://www.nectar.com/distfiles/
 
 MAINTAINER=	flathill@FreeBSD.org
