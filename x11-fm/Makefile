@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.18 2000/10/04 05:15:19 trevor Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.19 2000/11/26 04:52:09 dougb Exp $
 #
 
     SUBDIR += asfiles
@@ -14,6 +14,7 @@
     SUBDIR += nautilus
     SUBDIR += offix-files
     SUBDIR += rox-base
+    SUBDIR += rox-filer
     SUBDIR += systemg
     SUBDIR += tkdesk
     SUBDIR += vide
