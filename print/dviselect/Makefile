@@ -2,7 +2,7 @@
 # Date created:         12 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dviselect/Makefile,v 1.16 2000/04/09 17:49:34 cpiazza Exp $
+# $FreeBSD: ports/print/dviselect/Makefile,v 1.17 2000/06/21 17:41:32 jmz Exp $
 #
 
 PORTNAME=	dviselect
@@ -14,8 +14,6 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	jmz@FreeBSD.org
 
 SCRIPTS_ENV=	CFLAGS="${CFLAGS}"
-
-USE_GMAKE=	yes
 
 MAN1=		dviselect.1
 
