@@ -2,11 +2,11 @@
 # Date created:		24 February 1999
 # Whom:			Yuu Yashiki
 #
-# $FreeBSD: ports/graphics/lfview/Makefile,v 1.6 2000/06/16 21:50:47 asami Exp $
+# $FreeBSD: ports/graphics/lfview/Makefile,v 1.7 2000/10/29 17:47:23 knu Exp $
 #
 
 PORTNAME=	lfview
-PORTVERSION=	1.1
+PORTVERSION=	1.1a 
 CATEGORIES=	graphics
 MASTER_SITES=	http://hoshina.denpa.org/
 EXTRACT_SUFX=	.tgz
