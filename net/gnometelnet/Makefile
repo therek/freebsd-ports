@@ -2,7 +2,7 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnometelnet/Makefile,v 1.8 2001/03/29 16:34:23 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnometelnet
@@ -13,10 +13,11 @@ DISTNAME=	${PORTNAME:S/gnome/gnome-/}-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake
+
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
-USE_AUTOMAKE=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

@@ -2,7 +2,7 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/libgtkeditor/Makefile,v 1.3 2001/03/14 19:33:29 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libgtkeditor
@@ -14,10 +14,10 @@ DISTNAME=	${PORTNAME:S/lib//}-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	${LOCALBASE}/share/automake/install-sh:${PORTSDIR}/devel/automake
 LIB_DEPENDS=	unicode.0:${PORTSDIR}/devel/libunicode
 
 USE_X_PREFIX=	yes
-USE_AUTOMAKE=	yes
 USE_GTK=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes

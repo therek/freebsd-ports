@@ -2,7 +2,7 @@
 # Date created:				21 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gcompris/Makefile,v 1.13 2001/05/28 10:48:25 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcompris
@@ -14,8 +14,9 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	${LOCALBASE}/share/automake/install-sh:${PORTSDIR}/devel/automake
+
 USE_X_PREFIX=	yes
-USE_AUTOMAKE=	yes
 USE_GMAKE=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
