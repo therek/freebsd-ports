@@ -2,19 +2,20 @@
 # Date created:				14 May 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/sysutils/msyslog/Makefile,v 1.4 2001/08/29 06:37:43 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	msyslog
-PORTVERSION=	1.07
+PORTVERSION=	1.08f
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.core-sdi.com/soft/ \
+MASTER_SITES=	http://community.corest.com/pub/msyslog/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
-DISTNAME=	${PORTNAME}-v${PORTVERSION}
+DISTNAME=	${PORTNAME}-pre_${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	anders@FreeBSD.org
 
+BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
 .if defined(WITH_MYSQL)
 LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 .endif
@@ -22,7 +23,8 @@ LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 LIB_DEPENDS+=	pq.2:${PORTSDIR}/databases/postgresql7
 .endif
 
-USE_AUTOCONF=	yes
+#USE_AUTOCONF_VER=	252 # not yet
+AUTOCONF=	${LOCALBASE}/bin/autoconf
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 .if !defined(WITH_MYSQL)
@@ -56,6 +58,9 @@ pre-patch:
 	${PERL} -pi -e "s|/etc/syslog.conf|${PREFIX}/etc/syslog.conf|g" \
 	${WRKSRC}/${f}
 .endfor
+
+pre-configure:
+	(cd ${CONFIGURE_WRKSRC} && ${AUTOCONF})
 
 post-install:
 	${INSTALL} -d -o root -g wheel -m 0775 ${PREFIX}/share/examples/msyslog
