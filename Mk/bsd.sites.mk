@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.116 2002/10/19 21:26:55 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.117 2002/10/20 15:42:42 dinoex Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -303,7 +303,9 @@ MASTER_SITE_RINGSERVER+=	\
 	http://www.t.ring.gr.jp/archives/%SUBDIR%/
 
 MASTER_SITE_RUBY+= \
+	ftp://xyz.lcs.mit.edu/pub/ruby/%SUBDIR%/ \
 	http://www.ibiblio.org/pub/languages/ruby/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,lang/ruby/&,} \
 	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
 	ftp://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
 	ftp://ftp.fu-berlin.de/unix/languages/ruby/%SUBDIR%/ \
