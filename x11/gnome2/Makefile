@@ -2,7 +2,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.20 2000/05/17 16:30:50 ade Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.21 2000/06/01 16:10:01 ade Exp $
 #
 
 PORTNAME=	gnome
@@ -26,6 +26,8 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		ghttp.1:${PORTSDIR}/www/libghttp \
 		glade.3:${PORTSDIR}/devel/libglade \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
+		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter \
+		panel_applet.4:${PORTSDIR}/x11/gnomecore \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint
 
 RUN_DEPENDS=	${X11BASE}/share/themes/Metal/ICON.png:${PORTSDIR}/x11-toolkits/gtk-engines \
