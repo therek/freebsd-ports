@@ -2,7 +2,7 @@
 # Date created:				12th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/bakery/Makefile,v 1.9 2001/05/08 15:15:09 ade Exp $
+# $FreeBSD: ports/x11-toolkits/bakery/Makefile,v 1.10 2001/05/11 16:36:42 ade Exp $
 #
 
 PORTNAME=	bakery
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	gnomemm.6:${PORTSDIR}/x11-toolkits/gnome--
+LIB_DEPENDS=	gnomemm.9:${PORTSDIR}/x11-toolkits/gnome--
 
 USE_X_PREFIX=	yes
 USE_PERL5=	yes

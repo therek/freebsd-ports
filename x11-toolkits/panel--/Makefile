@@ -2,7 +2,7 @@
 # Date created:				28th February 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/panel--/Makefile,v 1.1 2001/05/04 21:39:57 ade Exp $
+# $FreeBSD: ports/x11-toolkits/panel--/Makefile,v 1.2 2001/05/11 16:36:48 ade Exp $
 #
 
 PORTNAME=	panelmm
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	stable/sources/panelmm
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	gnomemm.6:${PORTSDIR}/x11-toolkits/gnome--
+LIB_DEPENDS=	gnomemm.9:${PORTSDIR}/x11-toolkits/gnome--
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
