@@ -1,12 +1,12 @@
 # New ports collection makefile for:	autoconvert
-# Version required:	0.3.2
+# Version required:	0.3.3
 # Date created:		26 Oct 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/autoconvert/Makefile,v 1.1.1.1 1999/10/27 10:53:08 nakai Exp $
 #
 
-DISTNAME=	autoconvert-0.3.2
+DISTNAME=	autoconvert-0.3.3
 CATEGORIES=	chinese
 MASTER_SITES=	http://www.linuxfocus.org/~yu.guanghui/ \
 		ftp://ftp.dlut.edu.cn/pub/PEOPLE/saka/
