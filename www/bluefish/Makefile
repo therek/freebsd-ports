@@ -2,11 +2,11 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.15 2000/10/05 06:57:47 reg Exp $
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.16 2000/10/13 09:23:57 reg Exp $
 #
 
 PORTNAME=	bluefish
-PORTVERSION= 	0.5
+PORTVERSION= 	0.6
 CATEGORIES=	www editors
 MASTER_SITES=	http://bluefish.openoffice.nl/download/ \
 		http://student.wau.nl/~olivier/bluefish/download/
