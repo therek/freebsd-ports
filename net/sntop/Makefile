@@ -2,11 +2,11 @@
 # Date created:		05 August 2000
 # Whom:			Matt Emmerton <matt@gsicomp.on.ca>
 #
-# $FreeBSD: ports/net/sntop/Makefile,v 1.1 2000/09/16 04:38:18 will Exp $
+# $FreeBSD: ports/net/sntop/Makefile,v 1.2 2000/10/08 10:22:36 asami Exp $
 #
 
 PORTNAME=	sntop
-PORTVERSION=	1.2.0
+PORTVERSION=	1.2.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://sntop.sourceforge.net/pub/sntop/
 
