@@ -3,11 +3,11 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.45 2001/07/09 12:22:03 obrien Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.46 2001/07/20 18:27:06 obrien Exp $
 #
 
 PORTNAME?=	nmap
-PORTVERSION=	2.54.b27
+PORTVERSION=	2.54.b28
 CATEGORIES=	security
 MASTER_SITES=	http://www.insecure.org/nmap/dist/  \
 		ftp://nuxi.ucdavis.edu/pub/misc/  \
