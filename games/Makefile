@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.348 2001/04/07 01:55:56 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.349 2001/04/07 04:36:47 will Exp $
 #
 
     SUBDIR += 3dc
@@ -95,6 +95,7 @@
     SUBDIR += golddig
     SUBDIR += gomoku.app
     SUBDIR += gracer
+    SUBDIR += greed
     SUBDIR += gru
     SUBDIR += gtetrinet
     SUBDIR += gtkabale
