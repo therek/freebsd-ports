@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.47 2000/10/08 10:28:37 asami Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.48 2000/11/21 07:19:57 marcel Exp $
 #
 
 PORTNAME=		linux_base
@@ -96,6 +96,7 @@ RPM_SET3=		setserial-2.15-2.${MACHINE_ARCH}.rpm \
 			xpm-3.4k-1.${MACHINE_ARCH}.rpm
 
 DBPATH=			/var/lib/rpm
+RPM=			LC_ALL=C rpm
 RPMFLAGS=		--ignoreos --root ${LINUXBASE} --dbpath ${DBPATH} \
 			--nodeps --replacepkgs
 RPMDIR=			${DISTDIR}/${DIST_SUBDIR}
@@ -134,7 +135,7 @@ pre-install:
 do-install:
 	@${MKDIR} ${LINUXBASE}/${DBPATH}
 	@${MKDIR} ${LINUXBASE}/var/tmp
-	@rpm --initdb --root ${LINUXBASE} --dbpath ${DBPATH}
+	@${RPM} --initdb --root ${LINUXBASE} --dbpath ${DBPATH}
 #
 # Make sure we have a /dev/null in the chrooted environment.
 #
@@ -152,30 +153,30 @@ do-install:
 #
 	@for R in ${RPM_SET1}; do \
 		${ECHO} $$R; \
-		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
+		${RPM} -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 	@${ECHO} ${RPM_LDCONFIG}
-	@rpm -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_LDCONFIG}
+	@${RPM} -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_LDCONFIG}
 	@brandelf -t Linux ${LINUXBASE}/sbin/ldconfig
 	@${LINUXBASE}/sbin/ldconfig
 	@${TOUCH} ${LINUXBASE}/etc/ld.so.conf
 	@for R in ${RPM_SET2}; do \
 		${ECHO} $$R; \
-		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
+		${RPM} -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 	@${ECHO} ${RPM_RPM}
-	@rpm -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_RPM}
+	@${RPM} -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_RPM}
 	@brandelf -t Linux ${LINUXBASE}/bin/rpm
 	@for R in ${RPM_SET3}; do \
 		${ECHO} $$R; \
-		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
+		${RPM} -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 #
 # Install updates
 #
 	@for R in ${PATCHFILES}; do \
 		${ECHO} $$R; \
-		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
+		${RPM} -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 #
 # Install yp.conf as a hint to NIS users
