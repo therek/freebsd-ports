@@ -1,13 +1,13 @@
 # New ports collection makefile for:	bookview
-# Version required:		2.4.5
+# Version required:		2.4.6
 # Date created:			2 Oct 1997
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/bookview/Makefile,v 1.8 1999/10/27 08:42:05 mharo Exp $
+# $FreeBSD: ports/japanese/bookview/Makefile,v 1.9 1999/11/14 02:33:51 steve Exp $
 #
 
-DISTNAME=	bookview-2.4.5
-PKGNAME=	ja-bookview-2.4.5
+DISTNAME=	bookview-2.4.6
+PKGNAME=	ja-bookview-2.4.6
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/bookview/
 
