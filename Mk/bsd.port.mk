@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.437 2002/12/05 22:43:22 alane Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.438 2003/02/10 07:59:22 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -287,8 +287,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  ${DEPENDS_TARGET}.
 # LIB_DEPENDS	- A list of "lib:dir[:target]" tuples of other ports this
 #				  package depends on.  "lib" is the name of a shared library.
-#				  make will use "ldconfig -r" to search for the
-#				  library.  Note that lib can not contain regular expressions.
+#				  make will use "ldconfig -r" to search for the library.
+#				  lib can contain extended regular expressions.
 # DEPENDS		- A list of "dir[:target]" tuples of other ports this
 #				  package depends on being made first.  Use this only for
 #				  things that don't fall into the above four categories.
