@@ -2,7 +2,7 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.30 2000/08/03 09:27:44 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.31 2000/10/08 03:07:46 asami Exp $
 #
 
 PORTNAME=	tkstep
@@ -30,8 +30,8 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-shared --enable-xpm --enable-step --enable-dnd \
 		 --enable-tiff --with-optimize="${CFLAGS} -I${PREFIX}/include"
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
-PKGINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg/pkg-install.wish
-PKGDEINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg/pkg-deinstall.wish
+PKGINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg-install.wish
+PKGDEINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg-deinstall.wish
 
 post-install:
 	@${RM} ${PREFIX}/lib/tkstep8.0/demos/*.orig
