@@ -1,8 +1,8 @@
-# New ports collection makefile for:	groach
+# New ports collection makefile for:	viewcvs
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.1 2000/07/03 00:34:19 will Exp $
 #
 
 PORTNAME=	viewcvs
