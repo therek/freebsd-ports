@@ -2,12 +2,12 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.30 2001/05/08 16:56:25 shige Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.31 2001/05/12 17:39:16 shige Exp $
 #
 
 PORTNAME=	kterm
 PORTVERSION=	6.2.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		${MASTER_SITE_PORTS_JP} \
