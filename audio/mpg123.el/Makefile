@@ -2,11 +2,11 @@
 # Date created:		99/10/6
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg123.el/Makefile,v 1.4 2000/04/30 00:17:50 kris Exp $
+# $FreeBSD: ports/audio/mpg123.el/Makefile,v 1.5 2000/06/05 14:04:23 sobomax Exp $
 #
 
 PORTNAME=	mpg123.el
-PORTVERSION=	1.8.1
+PORTVERSION=	1.9
 CATEGORIES=	audio elisp
 MASTER_SITES=	http://www.gentei.org/~yuuji/software/mpg123el/
 DISTNAME=	${PORTNAME}
