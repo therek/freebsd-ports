@@ -2,14 +2,14 @@
 # Date created:		00/01/24
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.5 2000/03/26 14:56:41 taoka Exp $
+# $FreeBSD: ports/japanese/freepwing/Makefile,v 1.6 2000/04/11 14:13:40 knu Exp $
 #
 
 PORTNAME=	freepwing
 PORTVERSION=	${VERSION:S/beta/.b/}
 CATEGORIES=	japanese textproc
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/freepwing/ \
-		ftp://ftp.sra.co.jp/pub/misc/freepwing/freepwing/beta/
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/freepwing/ \
+		ftp://ftp.sra.co.jp/pub/misc/freepwing/old/
 DISTNAME=	${PORTNAME}-${VERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
