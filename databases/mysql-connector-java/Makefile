@@ -3,7 +3,7 @@
 # Date created:		2 January 2000
 # Whom:			Dave Glowacki <dglo@ssec.wisc.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/mysql-jdbc-mm/Makefile,v 1.1 2000/01/29 22:23:04 steve Exp $
 #
 
 DISTNAME=	mm.mysql.jdbc-1.2b
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.worldserver.com/mm.mysql/dist/
 
 MAINTAINER=	dglo@SSEC.WISC.EDU
 
+BUILD_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/javac:${PORTSDIR}/java/jdk
 RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
 
 ALL_TARGET=	jar
