@@ -2,12 +2,11 @@
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.14 2000/12/26 18:12:15 sumikawa Exp $
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.15 2001/02/05 15:33:58 olgeni Exp $
 #
 
 PORTNAME=	wwwoffle
-PORTVERSION=	2.6
-PORTREVISION=	1
+PORTVERSION=	2.6b
 CATEGORIES=	www ipv6
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/httpd/ \
 		${MASTER_SITE_SUNSITE}
@@ -19,13 +18,14 @@ EXTRACT_SUFX=	.tgz
 .if ${OSVERSION} >= 400014
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
 		ftp://ftp.pasta.cs.uit.no/pub/IPv6/misc/
-PATCHFILES=	wwwoffle-26-v6-20001122.diff.gz
+PATCHFILES=	wwwoffle-26b-v6-20010411.diff.gz
 PATCH_DIST_STRIP=	-p1
 .endif
 
 MAINTAINER=	sumikawa@FreeBSD.org
 
 USE_PERL5=	yes
+USE_GMAKE=	yes
 
 # $SPOOL seems like a common name which could be used for other things, so
 # use $WWWOFFLE_SPOOL as the overriding setting.
