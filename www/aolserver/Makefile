@@ -2,13 +2,13 @@
 # Date created:		13 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.4 2000/04/30 00:19:36 steve Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.5 2000/05/29 03:00:26 steve Exp $
 #
 
 PORTNAME=	aolserver
 PORTVERSION=	3.0
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.aolserver.com/3.0/
+MASTER_SITES=	ftp://ftp.aolserver.com/server/3.0/
 DISTNAME=	aolserver3_0
 
 MAINTAINER=	mab@red-bean.com
