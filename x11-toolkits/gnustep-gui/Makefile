@@ -2,7 +2,7 @@
 # Date created:         19 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.18 2001/06/26 12:00:48 tg Exp $
+# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.19 2001/07/02 11:50:37 tg Exp $
 #
 
 PORTNAME=	gnustep-gui
@@ -14,8 +14,8 @@ MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/devel/gnustep-base
-RUN_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/devel/gnustep-base
+BUILD_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/lang/gnustep-base
+RUN_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/lang/gnustep-base
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff
 
 .include <bsd.port.pre.mk>
