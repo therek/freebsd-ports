@@ -2,13 +2,13 @@
 # Date created:        11 December 1999
 # Whom:                spcoltri@unm.edu
 #
-# $FreeBSD: ports/games/baduki/Makefile,v 1.3 2000/07/16 14:18:07 alex Exp $
+# $FreeBSD: ports/games/baduki/Makefile,v 1.4 2000/10/05 06:36:12 reg Exp $
 #
 
 PORTNAME=	baduki
 PORTVERSION=	0.2.9
 CATEGORIES=	games
-MASTER_SITES=	ftp://autoinst.acs.uci.edu/pub/go/
+MASTER_SITES=	ftp://autoinst.acs.uci.edu/pub/go/baduki/
 
 MAINTAINER=	spcoltri@omcl.org
 
