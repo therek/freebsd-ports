@@ -2,26 +2,21 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/libcache/Makefile,v 1.5 2000/06/16 21:50:14 asami Exp $
+# $FreeBSD: ports/devel/libcache/Makefile,v 1.6 2000/06/22 05:51:53 will Exp $
 #
 
 PORTNAME=	libcache
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.afro-productions.com/
 
 MAINTAINER=	ports@FreeBSD.org
 
-INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=--enable-shared
-WRKSRC=		${WRKDIR}/libcache
-VERSION=	0
-PLIST_SUB+=	VERSION="${VERSION}"
-MAKE_ENV+=	PCFLAGS="${CFLAGS}"
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
-do-install:
-	@${INSTALL_DATA} ${WRKSRC}/libcache.so ${PREFIX}/lib/libcache.so.${VERSION}
-	@${LN} -sf ${PREFIX}/lib/libcache.so.${VERSION} ${PREFIX}/lib/libcache.so
+INSTALLS_SHLIB=	yes
+
+pre-build:
+	@${CP} -f ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>
