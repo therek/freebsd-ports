@@ -2,34 +2,29 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.46 2000/12/12 14:05:11 roam Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.47 2000/12/16 14:11:56 roam Exp $
 #
 
 PORTNAME=	imap-uw
-PORTVERSION=	4.7c
+PORTVERSION=	4.8
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.cac.washington.edu/mail/%SUBDIR%/ \
 		http://mirror.nucba.ac.jp/mirror/imap/%SUBDIR%/ \
 		ftp://ftp.uni-halle.de/pub/mail/pine/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old
-DISTNAME=	imap-${PORTVERSION}
+DISTNAME=	imap-2000a
 EXTRACT_SUFX=	.tar.Z
-DISTFILES=	${DISTNAME}2${EXTRACT_SUFX} \
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		imap-utils${EXTRACT_SUFX}
+ALL_TARGET=	bsf
 
-MAINTAINER=	imap-uw@freebsd.ady.ro
+MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	c-client4.7:${PORTSDIR}/mail/cclient
+LIB_DEPENDS=	c-client4.8:${PORTSDIR}/mail/cclient
 
 Y2K=		http://www.washington.edu/imap/IMAP-FAQs/faqs.xml#general1
 
-PAMAUTH?=	yes
-.if ${PAMAUTH} != "no"
-ALL_TARGET=	bfp
-.else
-ALL_TARGET=	bsf
-.endif
 MAN8=		ipopd.8 imapd.8
 
 .include <bsd.port.pre.mk>
