@@ -2,12 +2,12 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.65 2000/11/17 18:24:35 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.66 2000/12/12 03:01:56 kevlo Exp $
 #
 
 PORTNAME=	kdelibs
 PORTVERSION=	2.0.1
-CATEGORIES=	x11 x11-toolkits
+CATEGORIES=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
