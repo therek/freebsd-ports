@@ -2,11 +2,11 @@
 # Date created:		5 Nov 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/zipcodes/Makefile,v 1.15 2001/03/27 22:56:07 sf Exp $
+# $FreeBSD: ports/japanese/zipcodes/Makefile,v 1.16 2001/06/09 22:40:23 sf Exp $
 #
 
 PORTNAME=	zipcodes
-PORTVERSION=	20010401
+PORTVERSION=	20010501
 CATEGORIES=	japanese misc
 MASTER_SITES=	http://www.postal.mpt.go.jp/newnumber/lzh/s/
 EXTRACT_SUFX=	.lzh
