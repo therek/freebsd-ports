@@ -3,11 +3,11 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net/Makefile,v 1.22 1999/08/30 14:23:37 peter Exp $
+# $FreeBSD: ports/net/p5-Net/Makefile,v 1.23 1999/08/31 06:49:02 mharo Exp $
 #
 
-DISTNAME=       libnet-1.0606
-PKGNAME=        p5-Net-1.0606
+DISTNAME=       libnet-1.0607
+PKGNAME=        p5-Net-1.0607
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
