@@ -3,7 +3,7 @@
 # Date created:         21 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/jetpack/Makefile,v 1.19 1999/08/25 06:03:48 obrien Exp $
 #
 
 DISTNAME=	jetpack
@@ -19,9 +19,9 @@ MAKE_FLAGS=	PREFIX=${PREFIX} -f
 MAN6=		jetpack.6
 
 post-install:
-	@${CHOWN} games ${PREFIX}/bin/jetpack
-	@${CHMOD} u+s ${PREFIX}/bin/jetpack
-	@${CHOWN} games ${PREFIX}/lib/X11/jetpack
+	@${CHOWN} root:games ${PREFIX}/bin/jetpack
+	@${CHMOD} g+s ${PREFIX}/bin/jetpack
+	@${CHOWN} root:games ${PREFIX}/lib/X11/jetpack
 	@${CHMOD} go+r ${PREFIX}/lib/X11/jetpack/jetpack.lev000
 
 .include <bsd.port.mk>
