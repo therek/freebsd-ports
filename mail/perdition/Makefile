@@ -2,7 +2,7 @@
 # Date created:				28 April 2001
 # Whom:					Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/perdition/Makefile,v 1.1 2001/05/20 03:59:59 will Exp $
 #
 
 PORTNAME=	perdition
@@ -21,7 +21,7 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		popt.0:${PORTSDIR}/devel/popt \
 		gdbm.2:${PORTSDIR}/databases/gdbm \
 		vanessa_logger.0:${PORTSDIR}/devel/libvanessa_logger \
-		vanessa_socket.0:${PORTSDIR}/net/libvanessa_socket \
+		vanessa_socket.0:${PORTSDIR}/devel/libvanessa_socket \
 		vanessa_adt.0:${PORTSDIR}/devel/libvanessa_adt
 
 MAN1=		makegdbm.1
