@@ -3,12 +3,12 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.6 2001/08/25 00:03:13 dwcjr Exp $
+# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.7 2001/08/25 20:10:19 dwcjr Exp $
 #
 
 PORTNAME=	fcron
 PORTVERSION=	1.1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://fcron.free.fr/
@@ -23,7 +23,7 @@ CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}" \
 		--with-answer-all=yes
 
 .if !defined(NOPORTDOCS)
-CONFIGURE_ARGS+=	--with-docdir=${PREFIX}/share/doc/fcron
+CONFIGURE_ARGS+=	--with-docdir=${DOCSDIR}
 PLIST_SUB=	PORTVERSION=${PORTVERSION}
 .endif
 
@@ -35,7 +35,10 @@ MAN5=	fcrontab.5 fcron.conf.5
 MAN8=	fcron.8
 
 post-install:
-	@${CP} ${WRKSRC}/files/fcron.allow ${PREFIX}/etc/fcron.allow.dist
-	@${CP} ${WRKSRC}/files/fcron.deny ${PREFIX}/etc/fcron.deny.dist
+.for i in allow deny conf
+.if !exists(${PREFIX}/etc/fcron.$i)
+	@${CP} -p ${PREFIX}/etc/fcron.$i.dist ${PREFIX}/etc/fcron.$i
+.endif
+.endfor
 
 .include <bsd.port.mk>
