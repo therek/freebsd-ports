@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.113 2001/08/08 20:02:49 ache Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.114 2001/08/08 20:41:16 ache Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -57,7 +57,9 @@ MAN4=		miff.4
 MAN5=		quantize.5
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-.if defined(PERL_THREADED) && ${PERL_THREADED} == "true"
+# PerlMagick not works with threads, if perl is not threaded, and vice versa
+.if defined(WITH_IMAGEMAGICK_THREADS) || \
+    defined(PERL_THREADED) && ${PERL_THREADED} == "true"
 CONFIGURE_ARGS+=	--with-threads
 .else
 CONFIGURE_ARGS+=	--without-threads
