@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.203 2003/11/05 17:02:02 linimon Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.204 2003/11/12 15:06:22 dinoex Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -469,7 +469,7 @@ MASTER_SITE_MOZILLA+= \
 	ftp://ftp.sunsite.kth.se/mirrors/ftp.mozilla.org/%SUBDIR%/ \
 	ftp://ftp2.sinica.edu.tw/pub3/www/mozilla/mozilla.org/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/www/mozilla/&,} \
-	ftp://ftp.rediris.es/mirror/%SUBDIR%/ \
+	ftp://ftp.rediris.es/mirror/mozilla/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/WWW/mozilla/%SUBDIR%/
 
 MASTER_SITE_NETBSD+=	\
