@@ -3,7 +3,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.5 1999/08/25 05:27:57 obrien Exp $
 #
 
 DISTNAME=	netmaj
@@ -21,6 +21,6 @@ ALL_TARGET=	libs all
 INSTALL_TARGET=	install install-pf
 
 post-extract:
-	( cd ${WRKDIR}/netmaj; /bin/ln -s ../xui )
+	( cd ${WRKDIR}/netmaj; ${LN} -s ../xui )
 
 .include <bsd.port.mk>

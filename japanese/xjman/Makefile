@@ -5,7 +5,7 @@
 #			japanese/man-doc
 # Whom:			SADA Kenji <sada@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xjman/Makefile,v 1.6 1999/08/25 05:27:55 obrien Exp $
 #
 
 DISTNAME=	xjman-0.3
@@ -52,7 +52,7 @@ post-build:
 		done; \
 	fi; \
 	done|sort|uniq >>${PLIST}
-	@${ECHO} "@exec ln -sf %D/man/ja %D/man/ja_JP.EUC" >>${PLIST}
+	@${ECHO} "@exec ${LN} -sf %D/man/ja %D/man/ja_JP.EUC" >>${PLIST}
 	@${ECHO} "@unexec ${RM} -f %D/man/ja_JP.EUC" >>${PLIST}
 	@${ECHO} "share/doc/xjman/COPYRIGHT" >>${PLIST}
 	@${ECHO} "share/doc/xjman/COPYRIGHT.XJDP" >>${PLIST}

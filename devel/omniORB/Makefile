@@ -3,7 +3,7 @@
 # Whom:			ejc@bazzle.com
 # Version required:	2.2.0
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/omniORB/Makefile,v 1.5 1999/08/25 05:48:55 obrien Exp $
 #
 
 DISTNAME=	omniORB_2.2.0
@@ -19,7 +19,7 @@ BROKEN_ELF=	yes
 
 pre-patch:
 	${TOUCH} ${WRKSRC}/mk/freebsd_3.0.mk
-	ln -s ${WRKSRC}/mk/freebsd_3.0.mk ${WRKDIR}/${DISTNAME}/mk/config.mk
+	${LN} -s ${WRKSRC}/mk/freebsd_3.0.mk ${WRKDIR}/${DISTNAME}/mk/config.mk
 	${MKDIR} ${WRKSRC}/src/tool/omniidl2/omniidl2
 	${TOUCH} ${WRKSRC}/src/tool/omniidl2/omniidl2/Makefile
 	${TOUCH} ${WRKSRC}/Makefile

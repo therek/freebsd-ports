@@ -3,7 +3,7 @@
 # Date created:		16 April 1995
 # Whom:			markm
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/perl5/Makefile,v 1.29 1999/08/25 06:35:12 obrien Exp $
 #
 
 DISTNAME=	perl5.005_02
@@ -85,7 +85,7 @@ test:
 
 post-install:
 	@strip ${PREFIX}/bin/perl ${PREFIX}/bin/suidperl
-	@ln -sf ${PREFIX}/bin/perl ${PREFIX}/bin/perl5
+	@${LN} -sf ${PREFIX}/bin/perl ${PREFIX}/bin/perl5
 	@(cd /usr/include && ${PREFIX}/bin/h2ph *.h machine/*.h sys/*.h)
 
 .include <bsd.port.post.mk>

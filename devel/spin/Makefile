@@ -3,7 +3,7 @@
 # Date created:		Oct 23, 1997
 # Whom:			jhanna@home.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/spin/Makefile,v 1.5 1999/08/25 07:15:26 obrien Exp $
 #
 
 DISTNAME=	spin-3.33
@@ -30,7 +30,7 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/spin ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKDIR}/Xspin3.3/xspin333.tcl ${PREFIX}/bin
 	${RM} -f ${PREFIX}/bin/xspin
-	ln -s ${PREFIX}/bin/xspin333.tcl ${PREFIX}/bin/xspin
+	${LN} -s ${PREFIX}/bin/xspin333.tcl ${PREFIX}/bin/xspin
 
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/spin/Doc

@@ -3,7 +3,7 @@
 # Date created:		18 August 1997
 # Whom:			Jonathan Hanna
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/edict/Makefile,v 1.9 1999/08/25 05:23:51 obrien Exp $
 #
 
 DISTNAME=	edict-19990714
@@ -115,7 +115,7 @@ do-install:
 		) ; \
 	done
 	${RM} -f ${PREFIX}/bin/xjdic
-	ln -s ${PREFIX}/bin/xjdic_sa ${PREFIX}/bin/xjdic
+	${LN} -s ${PREFIX}/bin/xjdic_sa ${PREFIX}/bin/xjdic
 	${INSTALL_DATA} ${WRKDIR}/radicals.tm ${DATADIR} ;
 	${INSTALL_DATA} ${WRKDIR}/radkfile ${DATADIR} ;
 	${INSTALL_DATA} ${WRKDIR}/kanjstroke ${DATADIR} ;

@@ -3,7 +3,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.ORG
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.36 1999/08/25 06:50:08 obrien Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.37 1999/08/26 08:29:04 sheldonh Exp $
 #
 
 DISTNAME=	exim-3.03
@@ -71,7 +71,7 @@ do-configure:
 	${CP} ${FILESDIR}/eximon.conf ${WRKSRC}/Local
 	cd ${WRKSRC}/doc && \
 	for i in ../../exim-texinfo-3.00/doc/* ; do \
-		ln -sf $$i ; \
+		${LN} -sf $$i ; \
 	done
 
 post-build:

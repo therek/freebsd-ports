@@ -3,7 +3,7 @@
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.31 1999/08/25 06:34:59 obrien Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.32 1999/08/27 22:29:38 mharo Exp $
 #
 
 DISTNAME=	modula-3-3.6
@@ -97,7 +97,7 @@ do-install:
 		(cd ${PREFIX}; xargs ${SH} ${SCRIPTDIR}/maybe-strip)
 	@cd ${PREFIX}/lib/m3/FreeBSD2; strip m3 m3cgc1 m3mkdir
 	@cd ${PREFIX}/bin; \
-	    ln -f m3build m3build-${major}
+	    ${LN} -f m3build m3build-${major}
 	@${ECHO_MSG} "Fixing file permissions"
 	@cd ${PREFIX}; \
 	    sed -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\

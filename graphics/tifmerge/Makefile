@@ -3,7 +3,7 @@
 # Date created:		29 April 1999
 # Whom:			G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.5 1999/08/25 06:15:06 obrien Exp $
 #
 
 DISTNAME=	tiff
@@ -29,7 +29,7 @@ post-extract:
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libtifmerge.so.1 ${PREFIX}/lib
-	ln -fs ${PREFIX}/lib/libtifmerge.so.1 ${PREFIX}/lib/libtifmerge.so
+	${LN} -fs ${PREFIX}/lib/libtifmerge.so.1 ${PREFIX}/lib/libtifmerge.so
 	${INSTALL_DATA} ${WRKSRC}/libtifmerge.a ${PREFIX}/lib
 	${INSTALL_DATA} ${WRKSRC}/tifmerge.h ${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/tifmerge.3 ${PREFIX}/man/man3

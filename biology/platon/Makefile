@@ -3,7 +3,7 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/platon/Makefile,v 1.4 1999/08/25 04:48:02 obrien Exp $
 #
 
 DISTNAME=	platon
@@ -49,7 +49,7 @@ pre-install:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKDIR}/${DISTNAME}/platon ${PREFIX}/bin
-	ln -s ${PREFIX}/bin/platon ${PREFIX}/bin/pluton
+	${LN} -s ${PREFIX}/bin/platon ${PREFIX}/bin/pluton
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README* \
 		${PREFIX}/share/doc/platon
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/VALIDATION.DOC \

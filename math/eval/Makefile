@@ -3,7 +3,7 @@
 # Date created:         24 Sep 1997
 # Whom:                 eserte
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/eval/Makefile,v 1.4 1999/08/25 07:08:05 obrien Exp $
 #
 
 DISTNAME=	Eval113
@@ -24,7 +24,7 @@ EXTRACT_AFTER_ARGS=	| lha x -
 WRKSRC=		${WRKDIR}/Eval/source
 
 post-extract:
-	-ln -s Makefile.unx ${WRKSRC}/Makefile
+	-${LN} -s Makefile.unx ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/Eval ${PREFIX}/bin

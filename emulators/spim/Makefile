@@ -4,7 +4,7 @@
 # Date created:         Mon Oct 28, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.7 1999/08/25 05:49:38 obrien Exp $
 #
 
 DISTNAME=	spim5.9
@@ -31,9 +31,9 @@ pre-install:
 
 post-install:
 	[ -e ${PREFIX}/bin/cl-spim ] &&  \
-		/bin/ln -f ${PREFIX}/bin/cl-spim ${PREFIX}/bin/spim
+		${LN} -f ${PREFIX}/bin/cl-spim ${PREFIX}/bin/spim
 	[ -e ${PREFIX}/bin/cl-xspim ] &&  \
-		/bin/ln -f ${PREFIX}/bin/cl-xspim ${PREFIX}/bin/xspim
+		${LN} -f ${PREFIX}/bin/cl-xspim ${PREFIX}/bin/xspim
 .if !defined(NOPORTDOCS)
 	@${ECHO} "Installing spim/xspim documentation"
 	@${MKDIR} ${PREFIX}/share/doc/spim  \

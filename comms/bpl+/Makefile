@@ -3,7 +3,7 @@
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/bpl+/Makefile,v 1.4 1999/08/25 05:12:33 obrien Exp $
 #
 
 DISTNAME=	bpl+
@@ -15,6 +15,6 @@ MAINTAINER=	max@FreeBSD.ORG
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bpl ${PREFIX}/bin
-	@ln -fs ${PREFIX}/bin/bpl ${PREFIX}/bin/bp
+	@${LN} -fs ${PREFIX}/bin/bpl ${PREFIX}/bin/bp
 
 .include <bsd.port.mk>

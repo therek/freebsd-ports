@@ -3,7 +3,7 @@
 # Date created:		12 May 1999
 # Whom:			G. Adam Stanislav
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/intel2gas/Makefile,v 1.2 1999/08/25 06:34:46 obrien Exp $
 #
 
 DISTNAME=	intel2gas-1.2
@@ -49,7 +49,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/g2i/${f} ${PREFIX}/share/intel2gas/g2i
 .endfor
 .for f in ${I2G2I}
-	ln -fs ${PREFIX}/share/intel2gas/i2g/${f} \
+	${LN} -fs ${PREFIX}/share/intel2gas/i2g/${f} \
 		${PREFIX}/share/intel2gas/g2i/${f}
 .endfor
 

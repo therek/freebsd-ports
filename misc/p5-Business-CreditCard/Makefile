@@ -3,7 +3,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/p5-Business-CreditCard/Makefile,v 1.9 1999/08/25 07:22:17 obrien Exp $
 #
 
 DISTNAME=	Business-CreditCard-0.21
@@ -22,6 +22,6 @@ do-install:
 		@ ${CP} ${WRKSRC}/CreditCard.pm ${WRKSRC}/CreditCard-0.21.pm
 		@ ${MKDIR} ${PREFIX}/lib/perl5/site_perl/Business/
 		@ ${INSTALL_DATA} ${WRKSRC}/CreditCard-0.21.pm ${PREFIX}/lib/perl5/site_perl/Business/
-		@ ln -sf ${PREFIX}/lib/perl5/site_perl/Business/CreditCard-0.21.pm ${PREFIX}/lib/perl5/site_perl/Business/CreditCard.pm
+		@ ${LN} -sf ${PREFIX}/lib/perl5/site_perl/Business/CreditCard-0.21.pm ${PREFIX}/lib/perl5/site_perl/Business/CreditCard.pm
 
 .include <bsd.port.mk>

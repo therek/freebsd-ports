@@ -3,7 +3,7 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tclcl/Makefile,v 1.2 1999/08/25 05:50:20 obrien Exp $
 #
 
 DISTNAME=	tclcl-src-1.0b8
@@ -24,5 +24,5 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/otcldoc ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/*.h ${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/libtclcl.a ${PREFIX}/lib
-	@ln -sf ${PREFIX}/lib/libtclcl.a ${PREFIX}/lib/libTcl.a
+	@${LN} -sf ${PREFIX}/lib/libtclcl.a ${PREFIX}/lib/libTcl.a
 .include <bsd.port.mk>

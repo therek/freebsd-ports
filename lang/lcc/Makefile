@@ -4,7 +4,7 @@
 # Date created:		Sat Dec 7, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.3 1999/08/25 06:34:50 obrien Exp $
 #
 
 DISTNAME=	lcc-3.6
@@ -44,8 +44,8 @@ do-install:
 		${LCCBUILDDIR}/bprint \
 		${LCCBUILDDIR}/bbexit.o \
 		${PREFIX}/${LCCDESTDIR}
-	@/bin/ln -sf ${PREFIX}/${LCCDESTDIR}/lcc ${PREFIX}/bin
-	@/bin/ln -sf ${PREFIX}/${LCCDESTDIR}/bprint ${PREFIX}/bin
+	@${LN} -sf ${PREFIX}/${LCCDESTDIR}/lcc ${PREFIX}/bin
+	@${LN} -sf ${PREFIX}/${LCCDESTDIR}/bprint ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/doc/lcc.1 ${WRKSRC}/doc/bprint.1 \
 		${PREFIX}/man/man1
 

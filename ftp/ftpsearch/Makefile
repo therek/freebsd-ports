@@ -3,7 +3,7 @@
 # Date created:		07 Dec 1996
 # Whom:			Tor.Egge@idi.ntnu.no
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ftpsearch/Makefile,v 1.7 1999/08/25 05:55:07 obrien Exp $
 #
 
 DISTNAME=	ftpsearch-1.0
@@ -42,6 +42,6 @@ pre-install:
 	find ${WRKSRC} \( -name \*.orig -o -name \*~ \) -exec ${RM} \{} \;
 
 post-install:
-	ln -sf ${PREFIX}/ftpsearch/bin/gateway ${PREFIX}/bin/ftpsearch
+	${LN} -sf ${PREFIX}/ftpsearch/bin/gateway ${PREFIX}/bin/ftpsearch
 
 .include <bsd.port.mk>

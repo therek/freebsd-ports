@@ -3,7 +3,7 @@
 # Date created:				1 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/libutf-8/Makefile,v 1.2 1999/08/25 05:16:23 obrien Exp $
 #
 
 DISTNAME=	libutf-8-1.0
@@ -19,7 +19,7 @@ MAN3=		libutf-8.3 fgetu8.3 fputu8.3 sgetu8.3 sputu8.3
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libutf-8.so.1 ${PREFIX}/lib
-	ln -fs ${PREFIX}/lib/libutf-8.so.1 ${PREFIX}/lib/libutf-8.so
+	${LN} -fs ${PREFIX}/lib/libutf-8.so.1 ${PREFIX}/lib/libutf-8.so
 	${INSTALL_DATA} ${WRKSRC}/utf-8.h ${PREFIX}/include
 	$(INSTALL_MAN) ${WRKSRC}/libutf-8.3 ${PREFIX}/man/man3
 	$(INSTALL_MAN) ${WRKSRC}/fgetu8.3 ${PREFIX}/man/man3

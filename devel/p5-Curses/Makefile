@@ -3,7 +3,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.11 1999/08/25 05:48:59 obrien Exp $
 #
 
 DISTNAME=	Curses-1.02
@@ -20,7 +20,7 @@ MAN3=		Curses.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 pre-configure:
-		@ ln -s ${WRKSRC}/hints/c-freebsd.ncurses.h ${WRKSRC}/c-config.h
+		@ ${LN} -s ${WRKSRC}/hints/c-freebsd.ncurses.h ${WRKSRC}/c-config.h
 
 do-configure:
 		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL

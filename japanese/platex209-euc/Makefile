@@ -3,7 +3,7 @@
 # Date created:		01 Jan 1998
 # Whom:			Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/platex209-euc/Makefile,v 1.2 1999/08/25 05:26:26 obrien Exp $
 #
 
 DISTNAME=	platex209
@@ -37,6 +37,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/*.tex ${TEXMF}/tex/platex209/general
 	@${INSTALL_DATA} ${WRKSRC}/*.sty ${TEXMF}/tex/platex209/sty
 	@${INSTALL_DATA} ${WRKSRC}/plplain.fmt ${TEXMF}/web2c/platex209.fmt
-	ln -fs ptex ${PREFIX}/bin/platex209
+	${LN} -fs ptex ${PREFIX}/bin/platex209
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.27 1999/08/25 05:26:36 obrien Exp $
+# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.28 1999/08/25 19:28:14 max Exp $
 #
 
 DISTNAME=	web2c-7.2
@@ -53,6 +53,6 @@ post-install:
 .for bin in ${BINARIES}
 	@strip ${PREFIX}/bin/${bin}
 .endfor
-	@/bin/ln -fs tex ${PREFIX}/bin/ptex-common
+	@${LN} -fs tex ${PREFIX}/bin/ptex-common
 
 .include <bsd.port.mk>

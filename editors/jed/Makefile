@@ -3,7 +3,7 @@
 # Date created:         22 APR 1997
 # Whom:                 eric
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/jed/Makefile,v 1.10 1999/08/25 05:43:54 obrien Exp $
 #
 
 DISTNAME=       jed0.98-7
@@ -34,7 +34,7 @@ WRKSRC=         ${WRKDIR}/jed
 MAN1=		jed.1 rgrep.1
 
 pre-install:
-	ln -sf ${WRKSRC}/autoconf/mkinsdir.sh  ${WRKSRC}/
+	${LN} -sf ${WRKSRC}/autoconf/mkinsdir.sh  ${WRKSRC}/
 
 post-install:
 	strip ${PREFIX}/bin/jed

@@ -3,7 +3,7 @@
 # Date created:         Fr  27 Sep 1996 11:47:35 MET DST
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/bzip/Makefile,v 1.13 1999/08/25 04:25:02 obrien Exp $
 #
 
 DISTNAME=       bzip-0.21
@@ -21,7 +21,7 @@ pre-install:
 do-install:
 	${RM} -f ${PREFIX}/bin/bzip ${PREFIX}/bin/bunzip
 	${INSTALL_PROGRAM} ${WRKSRC}/bzip ${PREFIX}/bin/bzip
-	ln -fs ${PREFIX}/bin/bzip ${PREFIX}/bin/bunzip
+	${LN} -fs ${PREFIX}/bin/bzip ${PREFIX}/bin/bunzip
 	${INSTALL_MAN} ${WRKSRC}/bzip.1 ${PREFIX}/man/man1/bzip.1
 	${INSTALL_MAN} ${WRKSRC}/bzip.1 ${PREFIX}/man/man1/bunzip.1
 

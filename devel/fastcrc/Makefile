@@ -3,7 +3,7 @@
 # Date created:				27 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.3 1999/08/25 05:47:54 obrien Exp $
 #
 
 DISTNAME=	fastcrc-1.0
@@ -18,7 +18,7 @@ ONLY_FOR_ARCHS=	i386
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libfcrc.so.1 ${PREFIX}/lib
-	ln -fs ${PREFIX}/lib/libfcrc.so.1 ${PREFIX}/lib/libfcrc.so
+	${LN} -fs ${PREFIX}/lib/libfcrc.so.1 ${PREFIX}/lib/libfcrc.so
 	${INSTALL_DATA} ${WRKSRC}/fastcrc.h ${PREFIX}/include
 	${MKDIR} ${PREFIX}/share/doc/fastcrc
 	${INSTALL_MAN} ${WRKSRC}/index.html ${PREFIX}/share/doc/fastcrc

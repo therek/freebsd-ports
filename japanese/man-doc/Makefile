@@ -3,7 +3,7 @@
 # Date created:		6 January 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.25 1999/08/25 05:25:22 obrien Exp $
+# $FreeBSD: ports/japanese/man-doc/Makefile,v 1.26 1999/08/25 08:59:30 asami Exp $
 #
 
 DISTNAME=	jpman-3.2
@@ -58,7 +58,7 @@ post-build:
 		done; \
 	 fi; \
 	done|sort|uniq >>${PLIST}
-	@${ECHO} "@exec ln -sf %D/share/man/ja %D/share/man/ja_JP.EUC" >>${PLIST}
+	@${ECHO} "@exec ${LN} -sf %D/share/man/ja %D/share/man/ja_JP.EUC" >>${PLIST}
 	@${ECHO} "@unexec ${RM} -f %D/share/man/ja_JP.EUC" >>${PLIST}
 
 pre-install:

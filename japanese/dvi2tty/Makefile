@@ -3,7 +3,7 @@
 # Date created:			30 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/dvi2tty/Makefile,v 1.14 1999/08/25 05:23:45 obrien Exp $
 #
 
 DISTNAME=	dvi2tty5.0
@@ -26,6 +26,6 @@ do-install:
 	(for f in jdvi2tty disdvi ; do \
 	${INSTALL_PROGRAM} ${WRKSRC}/$$f ${PREFIX}/bin ; done)
 	${INSTALL_MAN} ${WRKSRC}/dvi2tty.1 ${PREFIX}/man/man1
-	-ln -sf ${PREFIX}/bin/jdvi2tty ${PREFIX}/bin/dvi2tty
+	-${LN} -sf ${PREFIX}/bin/jdvi2tty ${PREFIX}/bin/dvi2tty
 
 .include <bsd.port.mk>

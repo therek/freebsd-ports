@@ -4,7 +4,7 @@
 # Date created:         Thur Aug 15, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/celvis/Makefile,v 1.8 1999/08/25 04:57:42 obrien Exp $
 #
 
 DISTNAME=	celvis
@@ -23,12 +23,12 @@ MAN1=		celvis.1
 do-install:
 	@# install target in celvis Makefile is not too good -- this is easier
 	${INSTALL_PROGRAM} ${WRKSRC}/celvis ${WRKSRC}/virec ${PREFIX}/bin
-	ln -sf ${PREFIX}/bin/celvis ${PREFIX}/bin/cvi
+	${LN} -sf ${PREFIX}/bin/celvis ${PREFIX}/bin/cvi
 	${INSTALL_MAN} ${FILESDIR}/celvis.1 ${PREFIX}/man/man1/celvis.1
 .if !defined{NOMANCOMPRESS}
-	ln -sf ${PREFIX}/man/man1/celvis.1.gz ${PREFIX}/man/man1/cvi.1.gz
+	${LN} -sf ${PREFIX}/man/man1/celvis.1.gz ${PREFIX}/man/man1/cvi.1.gz
 .else
-	ln -sf ${PREFIX}/man/man1/celvis.1 ${PREFIX}/man/man1/cvi.1
+	${LN} -sf ${PREFIX}/man/man1/celvis.1 ${PREFIX}/man/man1/cvi.1
 .endif
 
 .include <bsd.port.mk>

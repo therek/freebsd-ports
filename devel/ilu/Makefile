@@ -3,7 +3,7 @@
 # Date created:         29.9.1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ilu/Makefile,v 1.20 1999/08/25 05:48:12 obrien Exp $
 #
 
 DISTNAME=	ilu-2.0alpha13
@@ -75,11 +75,11 @@ do-install:
 	(cd ${PREFIX} ; find ilu -type d) | ${AWK} '{print "@dirrm " $$1}' \
 		| tail -r | ${GREP} -v lib/binding >> ${PLIST}
 	(cd ${PREFIX}/ilu/bin ; for file in * ; do \
-		ln -fs ${PREFIX}/ilu/bin/$$file ${PREFIX}/bin/. ; \
+		${LN} -fs ${PREFIX}/ilu/bin/$$file ${PREFIX}/bin/. ; \
 		${ECHO} bin/$$file ; \
 		done) >> ${PLIST}
 	(cd ${PREFIX}/ilu/man/man1 ; for file in * ; do \
-		ln -fs ${PREFIX}/ilu/man/man1/$$file ${PREFIX}/man/man1/. ; \
+		${LN} -fs ${PREFIX}/ilu/man/man1/$$file ${PREFIX}/man/man1/. ; \
 		${ECHO} man/man1/$$file ; \
 		done) >> ${PLIST}
 	${ECHO} etc/rc.d/50.ilu.sh >> ${PLIST}

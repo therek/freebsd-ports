@@ -4,7 +4,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/gcc28/Makefile,v 1.25 1999/08/25 06:34:36 obrien Exp $
 #
 
 DISTNAME=	gcc-2.8.1
@@ -63,8 +63,8 @@ post-install:
 	${PREFIX}/lib/gcc-lib/${CONFIGURE_TARGET}/2.8.1/cpp ; \
 		do strip $$prog ; \
 		done)
-	ln -f ${PREFIX}/bin/gcc ${PREFIX}/bin/gcc28
-	ln -f ${PREFIX}/bin/g++ ${PREFIX}/bin/g++28
+	${LN} -f ${PREFIX}/bin/gcc ${PREFIX}/bin/gcc28
+	${LN} -f ${PREFIX}/bin/g++ ${PREFIX}/bin/g++28
 	@${MV} ${PREFIX}/man/man1/cccp.1 ${PREFIX}/man/man1/cccp28.1
 	@${MV} ${PREFIX}/man/man1/g++.1 ${PREFIX}/man/man1/g++28.1
 	@${MV} ${PREFIX}/man/man1/gcc.1 ${PREFIX}/man/man1/gcc28.1

@@ -3,7 +3,7 @@
 # Date created:         13 Dec 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/acron/Makefile,v 1.4 1999/08/25 07:21:03 obrien Exp $
 #
 
 DISTNAME=       acron
@@ -21,7 +21,7 @@ post-patch:
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/whats ${PREFIX}/bin
-	ln -sf ${PREFIX}/bin/whats ${PREFIX}/bin/acron
+	${LN} -sf ${PREFIX}/bin/whats ${PREFIX}/bin/acron
 	${INSTALL_DATA} ${WRKSRC}/acron ${PREFIX}/share/misc
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:         29 September 1997
 # Whom:                 wosch
 #
-# $FreeBSD$
+# $FreeBSD: ports/german/manpages/Makefile,v 1.9 1999/08/25 05:57:27 obrien Exp $
 #
 
 DISTNAME=       de-manpages-1.0
@@ -22,7 +22,7 @@ mandir=		${PREFIX}/man/${LANG}
 manpages=	manpages-de
 
 do-build:
-	ln -s ${WRKSRC}/${manpages} ${WRKSRC}/de-man
+	${LN} -s ${WRKSRC}/${manpages} ${WRKSRC}/de-man
 	makewhatis ${WRKSRC}/de-man
 .if !defined(NOMANCOMPRESS)
 	${GZIP_CMD} -r ${WRKSRC}/${manpages}/man* || exit 0

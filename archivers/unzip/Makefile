@@ -3,7 +3,7 @@
 # Date created:         17 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.25 1999/08/25 04:25:19 obrien Exp $
 #
 
 DISTNAME=       unzip540
@@ -23,7 +23,7 @@ MAN1=           funzip.1 unzip.1 unzipsfx.1 zipgrep.1 zipinfo.1
 do-install:
 	cd ${WRKSRC} && \
 		${INSTALL_PROGRAM} unzip funzip unzipsfx ${PREFIX}/bin
-	ln -sf unzip ${PREFIX}/bin/zipinfo
+	${LN} -sf unzip ${PREFIX}/bin/zipinfo
 	cd ${WRKSRC}/unix && \
 		${INSTALL_SCRIPT} zipgrep ${PREFIX}/bin
 	cd ${WRKSRC}/unix && \
