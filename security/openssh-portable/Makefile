@@ -2,12 +2,11 @@
 # Date created:  18 Mar 1999
 # Whom:   dwcjr@inethouston.net
 #
-# $FreeBSD: ports/security/openssh-portable/Makefile,v 1.5 2001/08/01 10:56:24 dinoex Exp $
+# $FreeBSD: ports/security/openssh-portable/Makefile,v 1.6 2001/08/19 15:46:02 dinoex Exp $
 #
 
 PORTNAME=	openssh
-PORTVERSION=	2.9p1
-PORTREVISION=	3
+PORTVERSION=	2.9p2
 CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.openbsd.org/pub/OpenBSD/OpenSSH/portable/ \
 		ftp://ftp.op.net/pub/OpenBSD/OpenSSH/portable/ \
