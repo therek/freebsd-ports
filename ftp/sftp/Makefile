@@ -2,24 +2,26 @@
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.4 2000/04/12 05:31:21 mharo Exp $
+# $FreeBSD: ports/ftp/sftp/Makefile,v 1.5 2000/04/22 09:57:36 mharo Exp $
 #
 
 PORTNAME=	sftp
-PORTVERSION=	0.7
+PORTVERSION=	0.9.4
 CATEGORIES=	ftp security
 MASTER_SITES=	ftp://ftp.xbill.org/pub/sftp/
 
 MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400014
 RUN_DEPENDS=	ssh:${PORTSDIR}/security/openssh
+.endif
 
 RESTRICTED=	"Calls external cryptographic routines."
 
 GNU_CONFIGURE=	yes
-
-CONFIGURE_ARGS+=	--prefix=${PREFIX} \
-			--enable-remotepath=${PREFIX}/libexec
+CONFIGURE_ARGS=	--enable-remotepath=${PREFIX}/libexec
 
 MAN1=		secftp.1
 
@@ -42,4 +44,4 @@ do-install:
 	fi
 	@sort -u ${PLIST}.unsorted > ${PLIST}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
