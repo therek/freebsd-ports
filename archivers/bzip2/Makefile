@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.26 2000/05/22 17:13:29 ache Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.27 2000/06/08 14:47:17 sobomax Exp $
 #
 
 PORTNAME=	bzip2
@@ -16,6 +16,8 @@ MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/bzip2/v100/ \
 MAINTAINER=	obrien@FreeBSD.org
 
 FETCH_BEFORE_ARGS=	-b
+
+INSTALL_SHLIBS=	yes
 
 MAN1=		bzip2.1
 MLINKS=		bzip2.1 bunzip2.1   bzip2.1 bzcat.1   bzip2.1 bz2cat.1 \
@@ -37,8 +39,5 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/manual* ${PREFIX}/share/doc/bzip2
 	${PREFIX}/bin/bzip2 -f ${PREFIX}/share/doc/bzip2/manual.ps
 .endif
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

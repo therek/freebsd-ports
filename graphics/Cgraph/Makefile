@@ -2,7 +2,7 @@
 # Date created:		25 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.4 2000/03/27 17:29:42 mharo Exp $
+# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.5 2000/04/13 06:27:56 obrien Exp $
 #
 
 PORTNAME=	Cgraph
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 MAINTAINER=	tobez@plab.ku.dk
 
 WRKSRC=		${WRKDIR}/Cgraph/source
+
+INSTALL_SHLIBS=	yes
 
 post-extract:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
@@ -31,6 +33,5 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/../examples/loglog/TFopt-lrLog.c ${PREFIX}/share/examples/cgraph
 	@${INSTALL_DATA} ${WRKSRC}/../examples/loglog/TFampspect.dat ${PREFIX}/share/examples/cgraph
 .endif
-	@${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.81 2000/04/13 06:28:00 obrien Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.82 2000/04/24 17:58:37 jseger Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -39,7 +39,8 @@ MAN4=		miff.4
 MAN5=		quantize.5
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-USE_AUTOCONF=	YES
+USE_AUTOCONF=	yes
+INSTALL_SHLIBS=	yes
 
 CONFIGURE_ARGS= --prefix=${PREFIX} --enable-shared --with-perl=${PERL5} \
 		--enable-16bit-pixel
@@ -54,8 +55,5 @@ CONFIGURE_ENV=	LDFLAGS="$(LDFLAGS) -L${WRKSRC}/magick/.libs"
 
 pre-configure:
 	${RM} -f ${WRKSRC}/config.cache
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

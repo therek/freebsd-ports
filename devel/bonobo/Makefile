@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.12 2000/06/01 16:25:11 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.13 2000/06/01 20:25:41 ade Exp $
 #
 
 PORTNAME=	bonobo
@@ -25,6 +25,7 @@ USE_X_PREFIX=	yes
 USE_PERL5=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 LIBTOOLFILES=	configure libefs/configure
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome

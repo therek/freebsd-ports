@@ -2,7 +2,7 @@
 # Date created:		3 Nov 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/www/cgihtml/Makefile,v 1.4 1999/08/31 02:42:44 peter Exp $
+# $FreeBSD: ports/www/cgihtml/Makefile,v 1.5 2000/04/10 00:04:41 cpiazza Exp $
 #
 
 PORTNAME=	cgihtml
@@ -11,6 +11,8 @@ CATEGORIES=	devel www
 MASTER_SITES=	ftp://ftp.eekim.com/pub/users/eekim/cgihtml/
 
 MAINTAINER=	i.vaudrey@bigfoot.com
+
+INSTALL_SHLIBS=	yes
 
 post-extract:
 	@${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.dist
@@ -24,6 +26,5 @@ post-install:
 .endfor
 	${INSTALL_DATA} ${WRKSRC}/docs/*.html ${PREFIX}/share/doc/cgihtml/html
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.76 2000/04/16 03:30:28 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.77 2000/06/09 06:24:58 ru Exp $
 #
 
 PORTNAME=	XFree86
@@ -26,6 +26,7 @@ MAINTAINER=	jmz@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
 IS_INTERACTIVE=	yes	# configure script asks questions
+INSTALL_SHLIBS=	yes
 .if (${MACHINE} != "alpha")
 #NO_PACKAGE=	package available from XFree86
 .endif
@@ -91,6 +92,5 @@ post-install:
 	${LN} -sf lib${lib}.so.6.3 ${PREFIX}/lib/lib${lib}.so
 .endfor
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.28 2000/02/23 01:03:06 ade Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.29 2000/04/11 21:26:57 mharo Exp $
 #
 
 PORTNAME=	ORBit
@@ -20,6 +20,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 LIBTOOLFILES=	configure libIDL/configure popt/configure
 CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 CONFIGURE_ARGS= --disable-indent

@@ -2,7 +2,7 @@
 # Date created:         15 July 1998
 # Whom:                 Chuck Robey (chuckr@freebsd.org)
 #
-# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.32 2000/04/09 17:49:05 cpiazza Exp $
+# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.33 2000/04/15 11:02:14 asami Exp $
 #
 
 PORTNAME=	a2ps
@@ -16,6 +16,7 @@ DISTFILES=	a2ps-${PORTVERSION}${EXTRACT_SUFX} sheets.map
 MAINTAINER=	chuckr@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAN1=		a2ps.1 ogonkify.1 card.1 psmandup.1 fixps.1 pdiff.1 psset.1
 

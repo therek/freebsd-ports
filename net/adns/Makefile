@@ -2,7 +2,7 @@
 # Date created:			Mon Mar 3, 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/adns/Makefile,v 1.2 2000/04/09 18:10:03 cpiazza Exp $
+# $FreeBSD: ports/net/adns/Makefile,v 1.3 2000/04/17 23:30:51 mharo Exp $
 #
 
 PORTNAME=	adns
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	adns
 MAINTAINER=	lukin@okbmei.msk.su
 
 GNU_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
 USE_GMAKE=	yes
 
 post-install:

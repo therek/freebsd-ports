@@ -2,7 +2,7 @@
 # Date created:         27 October 1994
 # Whom:                 ljo
 #
-# $FreeBSD: ports/math/blas/Makefile,v 1.24 2000/03/23 20:23:10 mharo Exp $
+# $FreeBSD: ports/math/blas/Makefile,v 1.25 2000/04/14 07:19:49 asami Exp $
 #
 
 PORTNAME=	blas
@@ -16,12 +16,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
+INSTALL_SHLIBS=	yes
 NO_WRKSUBDIR=	yes
 
 pre-build:
 	${CP} ${FILESDIR}/makefile.lib ${WRKSRC}/Makefile
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
