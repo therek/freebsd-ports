@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.322 2000/08/01 14:06:28 nbm Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.323 2000/08/02 13:30:28 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -8,6 +8,7 @@
     SUBDIR += SWIG
     SUBDIR += SpecTcl
     SUBDIR += a2dev
+    SUBDIR += adabroker
     SUBDIR += amulet
     SUBDIR += asis
     SUBDIR += asl
