@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.135 2000/12/14 12:34:24 sobomax Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.136 2000/12/18 20:38:31 demon Exp $
 #
 
     SUBDIR += AbiWord
@@ -99,6 +99,7 @@
     SUBDIR += thoteditor
     SUBDIR += uemacs
     SUBDIR += uzap
+    SUBDIR += ved
     SUBDIR += vigor
     SUBDIR += vile
     SUBDIR += vilearn
