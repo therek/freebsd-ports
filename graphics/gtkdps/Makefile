@@ -3,7 +3,7 @@
 # Date created:        21 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gtkdps/Makefile,v 1.11 1999/08/25 06:14:11 obrien Exp $
 #
 
 DISTNAME=	gtkDPS-0.2.16
@@ -21,8 +21,5 @@ CONFIGURE_ARGS=	--with-dps-includes=${X11BASE}/include \
 CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk10-config"
 USE_LIBTOOL=	yes
 USE_X_PREFIX=	yes
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
