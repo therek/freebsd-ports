@@ -2,7 +2,7 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.5 2000/10/18 05:46:54 knu Exp $
+# $FreeBSD: ports/textproc/expat/Makefile,v 1.6 2000/10/21 18:47:52 knu Exp $
 #
 
 PORTNAME=	expat
@@ -30,7 +30,6 @@ do-build:
 .endfor
 
 do-install:
-	${MKDIR} ${PREFIX}/include/xml
 .for f in ${MAKEFILES}
 	@(cd ${WRKSRC}; \
 	${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${f} ${MAKE_ARGS} ${INSTALL_TARGET})

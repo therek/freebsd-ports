@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/libflash/files/Makefile,v 1.1 2000/10/14 09:28:52 knu Exp $
 
 LIB=		flash
 SHLIB_MAJOR?=	0
@@ -19,3 +19,18 @@ LIBDIR=		${LOCALBASE}/lib
 INCDIR=		${LOCALBASE}/include
 
 .include <bsd.lib.mk>
+
+# For FreeBSD 3.x or older
+.if !target(_includeinstall)
+_includeinstall:
+.if defined(INCS)
+.for header in ${INCS}
+        cd ${.CURDIR} && \
+        ${INSTALL} -C -o ${INCOWN} -g ${INCGRP} -m ${INCMODE} \
+                ${header} ${DESTDIR}${INCDIR}
+
+.endfor
+.endif
+
+beforeinstall: _includeinstall
+.endif
