@@ -2,7 +2,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/ircII/Makefile,v 1.22 2000/04/12 06:28:11 obrien Exp $
+# $FreeBSD: ports/irc/ircII/Makefile,v 1.23 2000/05/19 18:51:38 will Exp $
 #
 
 PORTNAME=	ircii
@@ -10,7 +10,7 @@ PORTVERSION=	4.4U
 CATEGORIES=	irc ipv6
 MASTER_SITES=	ftp://ircftp.au.eterna.com.au/pub/ircII/
 
-MAINTAINER=	anders@sanyusan.se
+MAINTAINER=	anders@codefactory.se
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	IRCLIB=${PREFIX}/share/irc
