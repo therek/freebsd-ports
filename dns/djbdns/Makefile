@@ -2,7 +2,7 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/net/djbdns/Makefile,v 1.5 2001/01/09 07:49:47 roam Exp $
+# $FreeBSD: ports/net/djbdns/Makefile,v 1.6 2001/01/22 14:44:08 roam Exp $
 #
 
 PORTNAME=	djbdns
@@ -17,6 +17,8 @@ RUN_DEPENDS=	setuidgid:${PORTSDIR}/sysutils/daemontools
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
+
+NO_PACKAGE=	Forbidden - we have patches to the distribution.
 
 post-patch:
 	@echo "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
