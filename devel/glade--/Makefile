@@ -2,13 +2,14 @@
 # Date created:				7th October 2000
 # Whom:			Shinya FUJIE <fujie@tk.elec.waseda.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/glade--/Makefile,v 1.1 2000/10/10 18:08:13 ade Exp $
 #
 
 PORTNAME=	glademm
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.10
 CATEGORIES=	devel gnome
 MASTER_SITES=   http://home.wtal.de/petig/Gtk/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/5./5_/}
 
 MAINTAINER=     fujie@tk.elec.waseda.ac.jp
 
