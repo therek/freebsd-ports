@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.74 2001/08/21 14:15:06 nsayer Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.75 2001/09/21 05:48:17 knu Exp $
 #
 
     SUBDIR += aftp
@@ -29,6 +29,7 @@
     SUBDIR += ksnes9x
     SUBDIR += linux-vmware-toolbox
     SUBDIR += linux_base
+    SUBDIR += linux_base-7
     SUBDIR += mastergear
     SUBDIR += mtools
     SUBDIR += osf1_base
