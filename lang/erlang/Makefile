@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1998
 # Whom:			ruslan@shevchenko.kiev.ua
 #
-# $FreeBSD: ports/lang/erlang/Makefile,v 1.14 2001/03/07 21:59:55 olgeni Exp $
+# $FreeBSD: ports/lang/erlang/Makefile,v 1.15 2001/06/06 20:57:49 olgeni Exp $
 #
 
 PORTNAME=	erlang
@@ -20,7 +20,7 @@ PATCH_SITES=	http://www.erlang.org/download/patches/
 PATCHFILES=
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	sam@inf.enst.fr
+MAINTAINER=	olgeni@FreeBSD.org
 
 BUILD_DEPENDS=  ${JAVAPORT}
 
