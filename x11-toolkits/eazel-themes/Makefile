@@ -2,11 +2,11 @@
 # Date created:				17 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.1 2000/11/20 08:28:04 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.2 2000/11/21 15:40:14 sobomax Exp $
 #
 
 PORTNAME=	eazel-themes
-PORTVERSION=	0.0.01121
+PORTVERSION=	0.0.01211
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sobomax
