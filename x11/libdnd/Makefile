@@ -3,7 +3,7 @@
 # Date created:                8 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/libdnd/Makefile,v 1.6 1999/08/31 02:50:31 peter Exp $
 #
 
 DISTNAME=	dnd.1.1
@@ -17,7 +17,6 @@ MAINTAINER=	lukin@okbmei.msk.su
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/DND/DNDlib
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV+=	CXXFLAGS="${CFLAGS}"
 
 post-install:
 .if !defined(NOPORTDOCS)

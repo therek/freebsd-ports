@@ -3,7 +3,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/offix-trash/Makefile,v 1.5 1999/08/25 05:26:46 obrien Exp $
 #
 
 DISTNAME=	Trash-2.4
@@ -17,7 +17,6 @@ MAINTAINER=	ruslan@shevchenko.kiev.ua
 LIB_DEPENDS=	Dnd++.1:${PORTSDIR}/x11/libdnd
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
 

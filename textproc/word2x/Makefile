@@ -3,7 +3,7 @@
 # Date created:		10 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/word2x/Makefile,v 1.6 1999/08/31 02:09:53 peter Exp $
+# $FreeBSD: ports/textproc/word2x/Makefile,v 1.7 1999/08/31 06:51:31 mharo Exp $
 
 DISTNAME=	word2x
 PKGNAME=	word2x-0.003
@@ -16,7 +16,6 @@ MAINTAINER=	billf@FreeBSD.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 
 MAN1=	word2x.1
 

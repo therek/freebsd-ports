@@ -3,7 +3,7 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.33 1999/08/31 06:49:52 mharo Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.34 1999/10/04 10:43:13 dirk Exp $
 #
 
 DISTNAME=	lyx-1.0.4
@@ -25,7 +25,6 @@ LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 STRIP=
 CONFIGURE_ARGS= --with-extra-lib=${X11BASE}/lib --with-extra-inc="${X11BASE}/include ${X11BASE}/include/X11 ${LOCALBASE}/include"
 MAN1=		lyx.1 reLyX.1

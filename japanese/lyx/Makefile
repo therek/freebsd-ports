@@ -3,7 +3,7 @@
 # Date created:		27 April 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lyx/Makefile,v 1.4 1999/08/31 06:45:45 mharo Exp $
+# $FreeBSD: ports/japanese/lyx/Makefile,v 1.5 1999/11/19 00:50:32 flathill Exp $
 #
 
 DISTNAME=	lyx-1.0.3
@@ -27,7 +27,7 @@ LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LYX_LIBS="-lxpg4" CXXFLAGS="${CFLAGS}"
+CONFIGURE_ENV=	LYX_LIBS="-lxpg4"
 STRIP=
 CONFIGURE_ARGS= --with-extra-lib=${X11BASE}/lib --with-extra-inc="${X11BASE}/include ${X11BASE}/include/X11"
 MAN1=		lyx.1 reLyX.1

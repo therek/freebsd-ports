@@ -3,7 +3,7 @@
 # Date created:				16 February 1997
 # Whom:					Sandro Sigala
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tvision/Makefile,v 1.11 1999/08/25 05:50:27 obrien Exp $
 #
 
 DISTNAME=	tvision-0.7
@@ -14,6 +14,5 @@ MASTER_SITE_SUBDIR=	devel/lang/c++
 MAINTAINER=	ssigala@globalnet.it
 
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)"
 
 .include <bsd.port.mk>

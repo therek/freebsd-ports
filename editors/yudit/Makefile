@@ -3,7 +3,7 @@
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD: ports/editors/yudit/Makefile,v 1.5 1999/08/25 05:44:58 obrien Exp $
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.6 1999/11/25 03:41:49 jseger Exp $
 #
 
 DISTNAME=	yudit-1.3
@@ -16,7 +16,7 @@ MAINTAINER=	rch@WriteMe.Com
 LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
-CONFIGURE_ENV=	LC_ALL=C CXXFLAGS="${CFLAGS}"
+CONFIGURE_ENV=	LC_ALL=C
 GNU_CONFIGURE=	YES
 MAKE_ENV=	LC_ALL=C
 MAN1=		yudit.1 makeumap.1 stripumap.1 uniconv.1 uniprint.1
