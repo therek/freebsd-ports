@@ -2,13 +2,13 @@
 # Date created:		Mon Mar  8 10:10:42 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-doc/Makefile,v 1.11 1999/08/27 22:29:32 mharo Exp $
+# $FreeBSD: ports/java/jdk-doc/Makefile,v 1.12 2000/04/12 06:14:29 obrien Exp $
 #
 
 PORTNAME=	jdk-doc
 PORTVERSION=	1.1.8
 CATEGORIES=	java
-DISTNAME=	jdk118-doc
+DISTNAME=	jdk-1_1_8_003-doc
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
@@ -37,8 +37,7 @@ do-fetch:
 
 do-install:
 	${MKDIR} ${PREFIX}/jdk${PORTVERSION}
-	(cd ${WRKSRC} && ${TAR} -cf - docs) \
-		| (cd ${PREFIX}/jdk${PORTVERSION} && ${TAR} -xf -)
-	@${CAT} ${PKGMESSAGE} | ${SED} s+!!PREFIX!!+${PREFIX}+g
+	${CP} -R ${WRKSRC}/docs ${PREFIX}/jdk${PORTVERSION}/
+	@${SED} 's+\$${PREFIX}+${PREFIX}+g' ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
