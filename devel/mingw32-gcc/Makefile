@@ -2,7 +2,7 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.1 2000/06/26 19:19:09 knu Exp $
 #
 
 PORTNAME=	gcc
@@ -19,8 +19,10 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	tino@pa2.so-net.ne.jp
 
 BUILD_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
+		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt \
+		autoheader:${PORTSDIR}/devel/autoconf
+RUN_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
 		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt
-RUN_DEPENDS=	${BUILD_DEPENDS}
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
