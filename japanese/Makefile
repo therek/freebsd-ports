@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.297 2000/09/08 10:34:51 asami Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.298 2000/09/12 01:03:44 asami Exp $
 #
 
     SUBDIR += Canna
@@ -312,6 +312,7 @@
     SUBDIR += wine
     SUBDIR += word
     SUBDIR += wordnet-fpw
+    SUBDIR += xchat
     SUBDIR += xdvik-vflib
     SUBDIR += xdvik-vflib-pk118
     SUBDIR += xdvik-vflib-pk240
