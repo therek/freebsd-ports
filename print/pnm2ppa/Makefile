@@ -1,8 +1,8 @@
 # New ports collection makefile for:	pbm2ppa
 # Date created:		18 November 1998
-# Whom:			ports@freebsd.org
+# Whom:			smace@freebsd.org
 #
-# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.11 2000/11/25 10:31:07 asami Exp $
+# $FreeBSD: ports/print/pbm2ppa/Makefile,v 1.12 2001/01/27 05:28:29 will Exp $
 #
 
 PORTNAME=	pbm2ppa
