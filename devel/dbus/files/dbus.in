@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dbus/files/dbus.sh,v 1.1 2004/07/21 19:43:16 marcus Exp $
 #
 # PROVIDE: dbus
 # REQUIRE: DAEMON
@@ -18,6 +18,13 @@ rcvar=`set_rcvar`
 
 command="%%PREFIX%%/bin/dbus-daemon-1"
 pidfile="/var/run/${name}.pid"
+
+stop_postcmd=stop_postcmd
+
+stop_postcmd()
+{
+    rm -f $pidfile
+}
 
 [ -z "$dbus_enable" ]	&& dbus_enable="NO"
 [ -z "$dbus_flags" ]	&& dbus_flags="--system"
