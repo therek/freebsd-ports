@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.11 2000/08/03 09:25:15 asami Exp $
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.12 2000/11/07 20:27:18 trevor Exp $
 #
 
 PORTNAME=	xklock
@@ -15,6 +15,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	${DISTNAME}+lx.diff.gz
 PATCH_DIST_STRIP=	-p1
+
+FORBIDDEN=	"Exploitable buffer overflows"
 
 MAINTAINER=	ports@FreeBSD.org
 
