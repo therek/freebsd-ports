@@ -2,12 +2,11 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.52 2001/03/14 02:35:50 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.53 2001/03/23 00:43:23 jeh Exp $
 #
 
 PORTNAME=	postfix
-PORTVERSION=	20010228
-PORTREVISION=	6
+PORTVERSION=	20010329
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
