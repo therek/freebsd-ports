@@ -3,7 +3,7 @@
 # Date created:        3 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/flashplugin/Makefile,v 1.1.1.1 1999/10/10 19:49:03 sada Exp $
+# $FreeBSD: ports/www/flashplugin/Makefile,v 1.2 1999/10/12 08:09:46 asami Exp $
 #
 
 DISTNAME=	flash-0.4.3
@@ -22,6 +22,12 @@ USE_XLIB=	yes
 MAKE_ENV=	OBJFORMAT=aout LIBRARY_PATH=${PREFIX}/lib/aout
 PORTOBJFORMAT=	aout
 ALL_TARGET=	libswf.so
+
+pre-build:
+.if !exists(/usr/lib/aout/c++rt0.o)
+	@${CAT} ${FILESDIR}/message.nolib
+	@${FALSE}
+.endif
 
 do-install:
 .if !defined(PACKAGE_BUILDING)
