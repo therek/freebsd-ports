@@ -1,12 +1,12 @@
 # New ports collection makefile for:	lookup for Emacs20
-# Version required:	1.0
+# Version required:	1.1
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-emacs20/Makefile,v 1.2 1999/09/08 15:21:52 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-emacs20/Makefile,v 1.3 1999/09/09 07:40:00 asami Exp $
 #
 
-DISTNAME=	ja-lookup-emacs20-1.0
+DISTNAME=	ja-lookup-emacs20-1.1
 CATEGORIES=	japanese elisp
 MASTER_SITES=	# empty
 DISTFILES=	# empty
