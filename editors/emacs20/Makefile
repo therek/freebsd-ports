@@ -2,11 +2,11 @@
 # Date created:		29 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/emacs20/Makefile,v 1.47 2000/04/14 00:25:26 mharo Exp $
+# $FreeBSD: ports/editors/emacs20/Makefile,v 1.48 2000/04/17 00:17:25 reg Exp $
 #
 
 PORTNAME=	emacs
-PORTVERSION=	20.6
+PORTVERSION=	20.7
 CATEGORIES=	editors ipv6
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
@@ -27,8 +27,8 @@ CONFIGURE_ARGS=	--with-x=no --with-pop
 
 MAKE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 MAN1=		emacs.1 etags.1 ctags.1
-PLIST_SUB=	EMACS_VER=20.6 EMACS_ARCH=${CONFIGURE_TARGET}
-WRKSRC=		${WRKDIR}/emacs-20.6
+PLIST_SUB=	EMACS_VER=20.7 EMACS_ARCH=${CONFIGURE_TARGET}
+#WRKSRC=		${WRKDIR}/emacs-20.7
 
 .if defined(WITH_XPG4)
 CONFIGURE_ARGS+=	--with-xpg4
