@@ -2,14 +2,16 @@
 # Date created:				4 November 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xls2xml/Makefile,v 1.7 2000/10/23 08:38:29 sobomax Exp $
+# $FreeBSD: ports/textproc/xls2xml/Makefile,v 1.8 2000/10/31 09:11:21 sobomax Exp $
 #
 
 PORTNAME=	xls2xml
 PORTVERSION= 	1.0.0
 CATEGORIES=	textproc
-MASTER_SITES=	http://arturo.directmail.org/filters/archive/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
+		http://arturo.directmail.org/filters/archive/ \
 		http://homepages.go.com/~sobomax/filtersweb/
+MASTER_SITE_SUBDIR=	sobomax
 
 MAINTAINER=	sobomax@FreeBSD.org
 
