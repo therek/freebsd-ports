@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.63 2000/04/17 00:18:07 reg Exp $
+# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.64 2000/04/28 03:12:47 sumikawa Exp $
 #
 
 PORTNAME=	python+ipv6
@@ -107,6 +107,7 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/emacs/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/Misc/python-mode.el ${PREFIX}/share/emacs/site-lisp
 	${INSTALL_DATA} ${WRKSRC}/Misc/COPYRIGHT ${PREFIX}/share/doc/python
+	${INSTALL_DATA} ${WRKSRC}/README.v6 ${PREFIX}/share/doc/python
 	@${MKDIR} ${PREFIX}/lib/python1.5/site-packages
 .if !defined(WITHOUT_TOOLS)
 	@cd ${WRKSRC}; tar cf - Tools | \
