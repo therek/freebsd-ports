@@ -2,11 +2,11 @@
 # Date created:		19 July 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/esound/Makefile,v 1.21 2000/06/16 21:50:19 asami Exp $
+# $FreeBSD: ports/audio/esound/Makefile,v 1.22 2000/08/04 01:15:03 ade Exp $
 #
 
 PORTNAME=	esound
-PORTVERSION=	0.2.19
+PORTVERSION=	0.2.20
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/esound
