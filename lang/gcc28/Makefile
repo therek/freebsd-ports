@@ -4,7 +4,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc28/Makefile,v 1.25 1999/08/25 06:34:36 obrien Exp $
+# $FreeBSD: ports/lang/gcc28/Makefile,v 1.26 1999/08/28 01:57:29 mharo Exp $
 #
 
 DISTNAME=	gcc-2.8.1
@@ -25,7 +25,7 @@ CONFIGURE_TARGET=	${ARCH}-portbld-freebsdaout${OSREL}
 .endif
 
 PLIST_SUB=	GNUHOST=${CONFIGURE_TARGET}
-CONFIGURE_ARGS=	--with-gxx-include-dir=${PREFIX}/lib/gcc-lib/${CONFIGURE_TARGET}/2.8.1/include/g++ 
+CONFIGURE_ARGS=	--with-gxx-include-dir=${PREFIX}/lib/gcc-lib/${CONFIGURE_TARGET}/2.8.1/include/g++
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	bootstrap

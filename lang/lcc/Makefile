@@ -4,7 +4,7 @@
 # Date created:		Sat Dec 7, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/lang/lcc/Makefile,v 1.5 1999/08/28 02:17:14 mharo Exp $
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.6 1999/08/28 02:41:55 mharo Exp $
 #
 
 DISTNAME=	lcc-3.6
@@ -48,6 +48,5 @@ do-install:
 	@${LN} -sf ${PREFIX}/${LCCDESTDIR}/bprint ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/doc/lcc.1 ${WRKSRC}/doc/bprint.1 \
 		${PREFIX}/man/man1
-
 
 .include <bsd.port.mk>
