@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.271 2000/03/02 04:18:41 max Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.272 2000/03/07 16:34:26 imura Exp $
 #
 
     SUBDIR += ElectricFence
@@ -34,7 +34,6 @@
     SUBDIR += crossgo32-djgpp2
     SUBDIR += crossgo32-djgpp2-pdcurses
     SUBDIR += crossm68k
-    SUBDIR += crossm68k-devel
     SUBDIR += crosssco
     SUBDIR += cs
     SUBDIR += cscope
