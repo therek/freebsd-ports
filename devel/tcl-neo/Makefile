@@ -2,13 +2,14 @@
 # Date created:			Auf 17, 2001
 # Whom:				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/tcl-neo/Makefile,v 1.1 2001/08/17 05:07:13 mi Exp $
 #
 
 PORTNAME=	neotcl
 PORTVERSION=	8.2.2
 CATEGORIES=	devel tcl83
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=nws
 DISTNAME=	neowebscript-3.3
 
 MAINTAINER=	mi@aldan.algebra.com
