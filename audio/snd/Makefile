@@ -2,15 +2,14 @@
 # Date created:				2000-10-05
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/snd/Makefile,v 1.8 2001/07/27 12:52:28 sobomax Exp $
+# $FreeBSD: ports/audio/snd/Makefile,v 1.9 2001/08/29 18:58:19 trevor Exp $
 #
 
 PORTNAME=		snd
 PORTVERSION=		4.6
 PORTREVISION=		1
 CATEGORIES=		audio
-MASTER_SITES=		ftp://ccrma-ftp.stanford.edu/pub/Lisp/ \
-			${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=		trevor@FreeBSD.org
