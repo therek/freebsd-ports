@@ -2,7 +2,7 @@
 # Date created:				22 march 2000
 # Whom:					Edwin Mons
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtrojka/Makefile,v 1.1 2000/05/29 05:49:37 will Exp $
 #
 
 PORTNAME=	xtrojka
@@ -19,7 +19,7 @@ MANCOMPRESSED=	yes
 USE_XLIB=	yes
 
 pre-install:
-	@exec mkdirhier ${PREFIX}/share/xtrojka
+	${MKDIR} ${PREFIX}/share/xtrojka
 
 post-install:
 	strip ${PREFIX}/bin/xtrojka
