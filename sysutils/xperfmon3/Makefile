@@ -2,7 +2,7 @@
 # Date created:		23. Oct 1998
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/sysutils/xperfmon3/Makefile,v 1.26 2000/04/22 10:14:06 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xperfmon++
@@ -15,6 +15,8 @@ DISTNAME=	xperfmon++
 EXTRACT_SUFX=	v1.1.tar.Z
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
+
+LATEST_LINK=	xperfmon3
 
 USE_IMAKE=	yes
 MAN1=		xperfmon++.1
