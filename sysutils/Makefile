@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.220 2001/10/10 10:29:17 markp Exp $
+# $FreeBSD$
 #
 
     SUBDIR += LPRng
@@ -187,6 +187,7 @@
     SUBDIR += wmpccard
     SUBDIR += wmtop
     SUBDIR += wmzazof
+    SUBDIR += x86info
     SUBDIR += xbatt
     SUBDIR += xbattbar
     SUBDIR += xcdroast
