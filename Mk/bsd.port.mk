@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.399 2002/02/22 18:53:28 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1071,7 +1071,7 @@ MAKE_ENV+=		PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} MOTIFLIB=
 PTHREAD_CFLAGS=	-D_THREAD_SAFE
 PTHREAD_LIBS=		"-pthread"
 .else
-PTHREAD_CFLAGS=	""
+PTHREAD_CFLAGS=	-D_THREAD_SAFE
 PTHREAD_LIBS=		"-lc_r"
 .endif
 
