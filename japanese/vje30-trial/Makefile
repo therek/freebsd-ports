@@ -2,7 +2,7 @@
 # Date created:		14 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.7 2000/04/13 08:33:32 knu Exp $
+# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.8 2000/04/24 15:51:20 knu Exp $
 #
 
 PORTNAME=	vje
@@ -50,6 +50,7 @@ BINSTUFF=	vje	\
 post-patch:
 	@cd ${WRKSRC}/vje30/bin && ${RM} swingall.jar
 	@find ${WRKSRC} -name '*.orig' -delete
+	@${CP} ${FILESDIR}/vje.sh ${WRKSRC}/etc/rc.d/
 
 do-install:
 	@cd ${WRKSRC} && tar cf - . | tar xf - -C ${PREFIX}
