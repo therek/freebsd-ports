@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.12 2004/04/15 20:51:06 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.13 2004/06/16 08:17:22 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -94,12 +94,20 @@ PLIST_SUB+=	LIBVERSION=${DEFAULT_LIBVERSION}
 PLIST_SUB+=	MAJORLIBVERSION=${DEFAULT_LIBVERSION:C/([0-9]).*/\1/1}
 
 .if !defined(GNUSTEP_WITH_BASE_GCC)
+.if !defined(GNUSTEP_WITH_GCC32) && !defined(GNUSTEP_WITH_GCC33) && !defined(GNUSTEP_WITH_GCC34)
+GNUSTEP_WITH_GCC33=	yes
+.endif
 .if defined(GNUSTEP_WITH_GCC32)
 CC=		gcc32
 CXX=		g++32
-.else
+.endif
+.if defined(GNUSTEP_WITH_GCC33)
 CC=		gcc33
 CXX=		g++33
+.endif
+.if defined(GNUSTEP_WITH_GCC34)
+CC=		gcc34
+CXX=		g++34
 .endif
 .endif
 
