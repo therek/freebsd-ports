@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.118 2000/09/19 16:03:00 ade Exp $
+# $FreeBSD: ports/print/Makefile,v 1.119 2000/11/13 17:06:47 sobomax Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -38,7 +38,6 @@
     SUBDIR += freetype
     SUBDIR += freetype2
     SUBDIR += ggv
-    SUBDIR += ghostscript5
     SUBDIR += ghostscript55
     SUBDIR += ghostscript6
     SUBDIR += ghostview
