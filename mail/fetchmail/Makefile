@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.120 2001/03/20 11:04:35 sobomax Exp $
+# $FreeBSD$
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -43,6 +43,7 @@ CONFIGURE_ARGS+=--enable-inet6
 CONFIGURE_ARGS+=--with-ssl=/usr
 .elif exists(${LOCALBASE}/lib/libssl.a) && exists(${LOCALBASE}/lib/libcrypto.a)
 CONFIGURE_ARGS+=-with-includes=${LOCALBASE}/include/openssl --with-ssl=${LOCALBASE}
+CONFIGURE_ENV+=	RSAGLUE=-lRSAglue
 .endif
 
 .if exists(/usr/lib/libkrb.a) && defined(MAKE_KERBEROS4)
