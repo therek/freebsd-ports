@@ -3,7 +3,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.38 2000/01/06 03:51:58 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.39 2000/01/29 08:51:27 reg Exp $
 #
 
 DISTNAME=	mozilla-source-M13
@@ -20,6 +20,8 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 WRKSRC=		${WRKDIR}/mozilla
+
+USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
@@ -36,6 +38,7 @@ CONFIGURE_ARGS=					\
 		--enable-double-buffer		\
 		--enable-editor			\
 		--enable-mailnews		\
+		--enable-mathml			\
 		--enable-optimize		\
 		--enable-pics			\
 		--enable-tests			\
@@ -48,6 +51,11 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"	\
 		GTK_CONFIG="${GTK_CONFIG}"
 MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
 		CC_ONLY_FLAGS="${FLAGS}" CCC_ONLY_FLAGS="${CXXFLAGS}"
+
+post-build:
+	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
+		${FILESDIR}/mozilla.sh >${WRKSRC}/mozilla
+	@${CHMOD} 555 ${WRKSRC}/mozilla
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/mozilla
