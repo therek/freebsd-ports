@@ -2,11 +2,11 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.4 2000/06/25 19:26:09 knu Exp $
+# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.5 2000/06/29 02:31:24 asami Exp $
 #
 
 PORTNAME=	cvsutils
-PORTVERSION=	0.1.5
+PORTVERSION=	2001.02.05
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
