@@ -3,7 +3,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.9 1999/08/29 06:25:05 cpiazza Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.10 1999/09/20 00:36:16 steve Exp $
 #
 # If You don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
@@ -38,7 +38,7 @@ XCDRDAO=		yes
 
 .if defined(XCDRDAO)
 USE_NEWGCC=	yes
-LIB_DEPENDS+=		gtkmm-1.0.5:${PORTSDIR}/x11-toolkits/gtk--
+LIB_DEPENDS+=		gtkmm-1.0.7:${PORTSDIR}/x11-toolkits/gtk--
 .else
 CONFIGURE_ARGS= 	--disable-gtkmmtest
 .endif
