@@ -3,7 +3,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.11 1999/08/25 06:50:20 obrien Exp $
+# $FreeBSD: ports/mail/metamail/Makefile,v 1.12 1999/08/31 06:47:28 mharo Exp $
 #
 
 DISTNAME=	mm2.7
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	torstenb@FreeBSD.org
+
+RUN_DEPENDS=	xloadimage:${PORTSDIR}/x11/xloadimage
 
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
