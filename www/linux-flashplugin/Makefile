@@ -2,7 +2,7 @@
 # Date created:		13 Feburary 2000
 # Whom:			Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/www/linux-flashplugin/Makefile,v 1.1.1.1 2000/04/01 13:39:31 knu Exp $
+# $FreeBSD: ports/www/linux-flashplugin/Makefile,v 1.2 2000/04/10 00:05:42 cpiazza Exp $
 #
 
 PORTNAME=	linux-flashplugin
@@ -29,6 +29,7 @@ PLIST_SUB=	PLUGINSDIR="${PLUGINSDIR}"
 do-install:
 	${MKDIR} ${PREFIX}/lib/flash
 	${MKDIR} ${PREFIX}/share/doc/flash
+	${MKDIR} ${PREFIX}/${PLUGINSDIR}
 .for f in ${LIBFILES}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/lib/flash/
 	${LN} -sf ${PREFIX}/lib/flash/${f} ${PREFIX}/${PLUGINSDIR}/
