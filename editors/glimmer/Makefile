@@ -1,16 +1,15 @@
-# New ports collection makefile for:	latte
+# New ports collection makefile for:	glimmer
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/latte/Makefile,v 1.3 2000/08/21 07:55:31 sobomax Exp $
+# $FreeBSD: ports/editors/glimmer/Makefile,v 1.4 2000/08/28 15:33:58 sobomax Exp $
 #
 
-PORTNAME=	latte-editor
-PORTVERSION= 	0.9.12
+PORTNAME=	glimmer
+PORTVERSION= 	0.9.15
 CATEGORIES=	editors gnome python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PORTNAME:S/-editor//}
-DISTNAME=	${PORTNAME:S/-editor//}-${PORTVERSION}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
