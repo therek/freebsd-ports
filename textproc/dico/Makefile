@@ -2,7 +2,7 @@
 # Date created:				11 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/textproc/dico/Makefile,v 1.3 2001/08/30 03:58:34 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dico
@@ -20,7 +20,7 @@ NO_WRKSUBDIR=	true
 PATCH_STRIP=	-p1
 USE_AUTOMAKE=	true
 USE_GMAKE=	true
-AUTOMAKE=	automake --add-missing --foreign --include-deps
+AUTOMAKE_ARGS=	--add-missing --foreign --include-deps
 ACLOCAL=	aclocal
 MAKE_ARGS=	prefix=${PREFIX}
 MAN1=		dico.1
