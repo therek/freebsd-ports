@@ -1,11 +1,11 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/javavmwrapper/src/classpath.sh,v 1.1 2004/04/01 13:40:14 des Exp $
 #
 
-JAVAJARDIR=%%JAVAJARDIR%%
+JAVALIBDIR=%%JAVALIBDIR%%
 
 echo -n .
-find -s ${JAVAJARDIR} -name '*.jar' | while read jar ; do
+find -s ${JAVALIBDIR} -name '*.jar' | while read jar ; do
 	echo -n ":${jar}"
 done
