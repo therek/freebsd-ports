@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.31 2000/11/24 22:40:01 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.32 2000/11/24 23:06:16 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -40,6 +40,12 @@ MODULES?=	mod_ratio:mod_readme:mod_tar
 MODULES:=$(MODULES):mod_ldap
 BUILD_DEPENDS+=	${LOCALBASE}/lib/libldap.a:${PORTSDIR}/net/openldap
 CONFIGURE_ENV+=	CFLAGS="-I/usr/local/include -g" LDFLAGS=-L/usr/local/lib
+.endif
+
+.if defined(WITH_MYSQL)
+MODULES:=$(MODULES):mod_sqlpw:mod_mysql
+LIB_DEPENDS+=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
+CONFIGURE_ENV+=	CFLAGS="-I${PREFIX}/include/mysql" LDFLAGS="-L${PREFIX}/lib/mysql"
 .endif
 
 .if !empty(MODULES)
