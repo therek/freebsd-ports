@@ -2,7 +2,7 @@
 # Date created:				1/11/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/grail/Makefile,v 1.13 2000/04/04 09:52:57 tg Exp $
+# $FreeBSD: ports/www/grail/Makefile,v 1.14 2000/04/10 00:05:18 cpiazza Exp $
 #
 
 PORTNAME=		grail
@@ -21,8 +21,8 @@ WRKSRC=			${WRKDIR}/${PKGNAME}
 
 GRAILSUBDIR=		share/grail
 GRAILDIR=		${PREFIX}/${GRAILSUBDIR}
-DIRS_CMD=		${CAT} ${PLIST} | ${GREP} '^@dirrm' | ${SED} 's,@dirrm ,,'
-FILES_CMD=		${CAT} ${PLIST} | ${GREP} -v '^@' | ${SED} 's,${GRAILSUBDIR}/,,'
+DIRS_CMD=		${SED} -e '/^@dirrm/bok' -e 'D' -e ':ok' -e 's,@dirrm ,,' < ${PLIST}
+FILES_CMD=		${SED} -e '/^share\//bok' -e 'D' -e ':ok' -e 's,${GRAILSUBDIR}/,,' < ${PLIST}
 
 FIND?=find
 PYTHON?=python
