@@ -2,12 +2,11 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.82 2000/08/22 03:41:03 kuriyama Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.83 2000/10/11 22:37:56 ache Exp $
 #
 
 PORTNAME=	apache
-PORTVERSION= 	1.3.12
-PORTREVISION=   1
+PORTVERSION=    1.3.14
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -50,7 +49,8 @@ CONFIGURE_ARGS=	\
 
 OPTIM=		-DHARD_SERVER_LIMIT=512 \
 		-DDOCUMENT_LOCATION=\\"${PREFIX}/www/data/\\" \
-		-DDEFAULT_PATH=\\"/bin:/usr/bin:${PREFIX}/bin\\"
+		-DDEFAULT_PATH=\\"/bin:/usr/bin:${PREFIX}/bin\\" \
+		-DACCEPT_FILTER_NAME=\\"httpready\\"
 
 .if defined(APACHE_PERF_TUNING) && ${APACHE_PERF_TUNING} == YES
 OPTIM+=		-DBUFFERED_LOGS
