@@ -3,11 +3,12 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gkrellweather/Makefile,v 1.2 2001/07/03 18:00:00 lioux Exp $
+# $FreeBSD: ports/misc/gkrellweather/Makefile,v 1.3 2001/07/14 23:10:17 lioux Exp $
 #
 
 PORTNAME=	gkrellweather
 PORTVERSION=	0.2.7
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.cse.unsw.edu.au/~flam/repository/c/gkrellm/
 
