@@ -2,15 +2,13 @@
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack3/Makefile,v 1.27 2000/12/21 04:14:17 will Exp $
+# $FreeBSD: ports/games/nethack3/Makefile,v 1.28 2001/01/04 09:58:34 asmodai Exp $
 #
 
 PORTNAME=	nethack
 PORTVERSION=	3.3.1
-PORTVERSION2=	${PORTVERSION:S/.//g}
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/nh${PORTVERSION2}/src/ \
-		${MASTER_SITE_GNU}
+MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/nh${PORTVERSION:S/.//g}/src/
 MASTER_SITE_SUBDIR=	nethack
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.tgz
