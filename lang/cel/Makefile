@@ -2,7 +2,7 @@
 # Date created:        1 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/lang/cel/Makefile,v 1.1 2001/02/14 13:22:36 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cel
@@ -21,6 +21,12 @@ DOCFILES=	CoreArchitecture.html DefaultProtos Linker.html \
 		Logs.html ProtoLanguage.html README SimpleDataFormat.html \
 		Threads activation.html stackframe structure.html todo.html
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500000
+BROKEN=		"Does not compile"
+.endif
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vm/cel ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
@@ -30,4 +36,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

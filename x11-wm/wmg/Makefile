@@ -2,7 +2,7 @@
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.11 2000/08/03 09:28:22 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmg
@@ -22,4 +22,10 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500000
+BROKEN=		"Does not compile"
+.endif
+
+.include <bsd.port.post.mk>
