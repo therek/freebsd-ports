@@ -2,18 +2,15 @@
 # Date created: 			11 September 1998
 # Whom: 				jabley@clear.co.nz
 #
-# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.5 2000/04/09 18:10:26 cpiazza Exp $
+# $FreeBSD: ports/net/ciscoconf/Makefile,v 1.6 2000/06/29 07:02:35 obrien Exp $
 #
 
 PORTNAME=	ciscoconf
-PORTVERSION=	1.0.b1
+PORTVERSION=	1.1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.patho.gen.nz/pub/users/jabley/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	billf
-DISTNAME=	ciscoconf-1.0beta1
+MASTER_SITES=	http://www.automagic.org/~jabley/
 
-MAINTAINER=	jabley@clear.co.nz
+MAINTAINER=	jabley@automagic.org
 
 BUILD_DEPENDS=	makedepend:${PORTSDIR}/x11/XFree86
 ALL_TARGET=	depend all
