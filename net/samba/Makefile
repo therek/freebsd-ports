@@ -2,22 +2,21 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.52 2001/04/18 01:40:01 jedgar Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.53 2001/04/18 03:53:45 asami Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.0.7
+PORTVERSION=	2.0.8
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.samba.org/pub/samba/ \
-		ftp://ring.asahi-net.or.jp/pub/net/samba/ \
-		ftp://samba.anu.edu.au/pub/samba/ \
-		ftp://de.samba.org/pub/mirror/samba/ \
-		ftp://se.samba.org/pub/samba/ \
-		ftp://ftp.sunet.se/pub/unix/utilities/samba/
+MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
+		ftp://ring.asahi-net.or.jp/pub/net/samba/%SUBDIR%/ \
+		ftp://samba.anu.edu.au/pub/samba/%SUBDIR%/ \
+		ftp://de.samba.org/pub/mirror/samba/%SUBDIR%/ \
+		ftp://se.samba.org/pub/samba/%SUBDIR%/ \
+		ftp://ftp.sunet.se/pub/unix/utilities/samba/%SUBDIR%/
+MASTER_SITE_SUBDIR= . old
 
 MAINTAINER=	dwcjr@inethouston.net
-
-FORBIDDEN=	security problem
 
 # directories
 VARDIR=		/var
