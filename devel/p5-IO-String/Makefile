@@ -2,11 +2,12 @@
 # Date created:		13 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-IO-String/Makefile,v 1.1 2001/03/14 23:18:15 vanilla Exp $
 #
 
 PORTNAME=	IO-String
 PORTVERSION=	1.01
+PORTREVISION=	1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
@@ -14,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	johann@egenetics.com
 
-PERL_CONFIGURE=	YES
+PERL_CONFIGURE=	yes
 
 MAN3=		IO::String.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
