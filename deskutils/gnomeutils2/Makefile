@@ -2,7 +2,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.18 2000/06/08 21:46:12 ade Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.19 2000/06/26 16:14:29 ade Exp $
 #
 
 PORTNAME=	gnomeutils
@@ -17,7 +17,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
 		gtop.1:${PORTSDIR}/devel/libgtop \
 		guile.6:${PORTSDIR}/lang/guile \
-		glade.3:${PORTSDIR}/devel/libglade
+		glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dryad/Makefile,v 1.2 2000/06/29 00:13:03 asami Exp $
+# $FreeBSD: ports/devel/dryad/Makefile,v 1.3 2000/07/05 21:58:32 ade Exp $
 #
 
 PORTNAME=	dryad
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/dryad
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		glade.3:${PORTSDIR}/devel/libglade \
+		glade.4:${PORTSDIR}/devel/libglade \
 		oaf.0:${PORTSDIR}/devel/oaf \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
 		gdf.0:${PORTSDIR}/devel/gnomedebug \

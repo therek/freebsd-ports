@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.36 2000/06/01 16:25:18 ade Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.37 2000/06/26 16:14:26 ade Exp $
 #
 
 PORTNAME= 	gide
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/gIDE
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		glade.3:${PORTSDIR}/devel/libglade \
+		glade.4:${PORTSDIR}/devel/libglade \
 		guile.6:${PORTSDIR}/lang/guile
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 

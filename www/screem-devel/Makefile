@@ -2,7 +2,7 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.6 2000/06/14 13:21:37 sobomax Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.7 2000/06/22 05:52:10 will Exp $
 #
 
 PORTNAME=	screem
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	glade.3:${PORTSDIR}/devel/libglade
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 LIBGLADE_CONFIG?=	${LOCALBASE}/bin/libglade-config
 GNU_CONFIGURE=	yes

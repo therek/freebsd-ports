@@ -2,7 +2,7 @@
 # Date created:				18th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/glife/Makefile,v 1.3 2000/06/14 13:21:18 sobomax Exp $
+# $FreeBSD: ports/games/glife/Makefile,v 1.4 2000/06/26 16:14:27 ade Exp $
 #
 
 PORTNAME=	glife
@@ -15,7 +15,7 @@ DISTNAME=	gLife-${PORTVERSION}
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		glade.3:${PORTSDIR}/devel/libglade
+		glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_X_PREFIX=	yes
