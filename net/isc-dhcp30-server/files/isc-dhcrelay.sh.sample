@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcrelay.sh.sample,v 1.1 2001/10/15 13:33:15 roam Exp $
+# $FreeBSD: ports/net/isc-dhcp3-server/files/isc-dhcrelay.sh.sample,v 1.2 2004/03/16 20:31:15 des Exp $
 #
 # PROVIDE: dhcrelay
 # REQUIRE: DAEMON
@@ -12,10 +12,10 @@
 #
 
 # override these variables in /etc/rc.conf
-dhcrelay_enable=NO
-dhcrelay_flags=				# command option(s)
-dhcrelay_servers=			# dhcrelay server(s)
-dhcrelay_ifaces=			# ethernet interface(s)
+dhcrelay_enable=${dhcrelay_enable:-"NO"}
+dhcrelay_flags=${dhcrelay_flags:-}			# command option(s)
+dhcrelay_servers=${dhcrelay_servers:-}			# dhcrelay server(s)
+dhcrelay_ifaces=${dhcrelay_ifaces:-}			# ethernet interface(s)
 
 dhcrelay_precmd ()
 {
