@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.24 2000/07/06 14:58:12 sada Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.25 2000/07/06 15:40:50 sada Exp $
 #
 
 PORTNAME=	fvwm
@@ -22,12 +22,14 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 PLIST_SUB=	VER=${PORTVERSION}
 
-MAN1=	FvwmBacker.1 FvwmBanner.1 FvwmButtons.1 \
-	FvwmCpp.1 FvwmEvent.1 FvwmForm.1 FvwmIconMan.1 \
-	FvwmIdent.1 FvwmM4.1 FvwmPager.1 FvwmRearrange.1 \
-	FvwmSave.1 FvwmSaveDesk.1 FvwmScroll.1 \
-	fvwm2.1 xpmroot.1 FvwmAnimate.1 FvwmAuto.1 \
-	FvwmIconBox.1 FvwmWinList.1
+MAN1=	FvwmAuto.1 FvwmAnimate.1 FvwmBacker.1 FvwmBanner.1 FvwmButtons.1 \
+	FvwmCommand.1 FvwmConsole.1 FvwmConsoleC.pl.1 FvwmCpp.1 FvwmDebug.1 \
+	FvwmDragWell.1 FvwmEvent.1 FvwmForm.1 FvwmGtk.1 FvwmIconBox.1 \
+	FvwmIconMan.1 FvwmIdent.1 FvwmM4.1 FvwmPager.1 FvwmRearrange.1 \
+	FvwmSave.1 FvwmSaveDesk.1 FvwmScript.1 FvwmScroll.1 FvwmTaskBar.1 \
+	FvwmTheme.1 FvwmWharf.1 FvwmWinList.1 \
+	fvwm-menu-xlock.1 fvwm-menu-directory.1 fvwm-menu-desktop.1 \
+	fvwm-menu-headlines.1 fvwm2.1 fvwmbug.1 fvwmrc_convert.1 xpmroot.1
 
 post-extract:
 	@if ! (cd ${WRKDIR}/${DISTNAME} && ${MKDIR} icons && cd icons && ${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${_DISTDIR}/fvwm_icons.tgz ${EXTRACT_AFTER_ARGS}); then \
