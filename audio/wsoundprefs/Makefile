@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.9 2000/04/16 08:50:08 asami Exp $
+# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.10 2000/05/22 18:58:15 sobomax Exp $
 #
 
 PORTNAME=	wsoundprefs
@@ -19,5 +19,6 @@ LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=yes
+BROKEN=		"waiting for wmsound -> wsoundserver repo copy"
 
 .include <bsd.port.mk>
