@@ -2,7 +2,7 @@
 # Date created:		1999/07/03
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/www/hotjava/Makefile,v 1.6 2000/04/14 18:40:29 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hotjava
@@ -14,7 +14,7 @@ EXTRACT_SUFX=
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk11
 
 EXTRACT_ONLY=
 

@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                mike
 #
-# $FreeBSD: ports/textproc/xp/Makefile,v 1.2 2000/04/09 21:53:22 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xp
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	mike@vee.net
 
-RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk11
 
 PLIST_SUB+=	XP_VERSION=${PORTVERSION}
 

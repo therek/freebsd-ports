@@ -2,7 +2,7 @@
 # Date created:		31 March 2000
 # Whom:			Daichi T.GOTO
 #
-# $FreeBSD: ports/mail/yuzu/Makefile,v 1.1.1.1 2000/04/14 23:11:03 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yuzu
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.ongs.net/yuzu/
 
 MAINTAINER=	daichi@ongs.net
 
-RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8:${PORTSDIR}/java/jdk \
+RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8:${PORTSDIR}/java/jdk11 \
 		${LOCALBASE}/share/java/jfc-1.1.1:${PORTSDIR}/java/jfc
 
 NO_BUILD=	yes
