@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.180 2003/10/03 09:08:52 roam Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.181 2003/10/04 07:03:43 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -344,7 +344,8 @@ MASTER_SITE_KDE+=	\
 
 MASTER_SITE_MOZILLA+= \
 	http://download.mozilla.org/pub/%SUBDIR%/ \
-	ftp://ftp.mozilla.org/pub/%SUBDIR%/ \
+	http://ftp.mozilla.org/pub/%SUBDIR%/ \
+	ftp://ftp.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
 	ftp://sunsite.utk.edu/pub/netscape-source/%SUBDIR%/ \
 	ftp://ftp.informatik.uni-bonn.de/pub/www/mozilla/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.mozilla.org/pub/%SUBDIR%/ \
