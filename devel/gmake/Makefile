@@ -2,11 +2,11 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.29 2000/05/29 06:24:51 sobomax Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.30 2000/05/29 22:39:27 will Exp $
 #
 
 PORTNAME=	gmake
-PORTVERSION=	3.79
+PORTVERSION=	3.79.1
 CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	make
@@ -21,7 +21,7 @@ Y2K=		http://www.gnu.org/software/year2000.html
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g \
 		--without-included-gettext
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -DHAVE_LOCALE_H" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 MAN1=		gmake.1
