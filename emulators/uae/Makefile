@@ -2,11 +2,12 @@
 # Date created: 22 May 2000
 # Whom: Simon Dick <simond@irrelevant.org>
 #
-# $FreeBSD: ports/emulators/uae/Makefile,v 1.1 2000/09/06 15:06:32 sada Exp $
+# $FreeBSD: ports/emulators/uae/Makefile,v 1.2 2000/09/09 09:43:47 kevlo Exp $
 #
 
 PORTNAME=	uae
 PORTVERSION=	0.8.15
+PORTREVISION=	1
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.freiburg.linux.de/pub/uae/sources/develop/ \
 		http://www.users.globalnet.co.uk/~simd/
