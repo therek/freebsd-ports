@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/john/pkg-plist,v 1.5 2000/11/22 00:21:49 obrien Exp $
+@comment $FreeBSD: ports/security/john/pkg-plist,v 1.6 2003/01/04 22:34:19 anders Exp $
 bin/john
 bin/unshadow
 bin/xtract
@@ -6,18 +6,10 @@ share/john/all.chr
 share/john/alpha.chr
 share/john/digits.chr
 share/john/lanman.chr
-share/john/john.ini
+share/john/john.conf
 share/john/password.lst
-share/doc/john/CONFIG
-share/doc/john/CREDITS
-share/doc/john/EXAMPLES
-share/doc/john/EXTERNAL
-share/doc/john/FAQ
-share/doc/john/INSTALL
-share/doc/john/MODES
-share/doc/john/NEWS
-share/doc/john/OPTIONS
+share/doc/john/CHANGES
+share/doc/john/LICENSING
 share/doc/john/README
-share/doc/john/RULES
 @dirrm share/doc/john
 @dirrm share/john
