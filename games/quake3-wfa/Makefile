@@ -2,19 +2,19 @@
 # Date created:				Sun Jun  3 15:03:11 EDT 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/q3server-wfa/Makefile,v 1.2 2001/07/29 03:53:31 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wfa
-PORTVERSION=	3.0b
-MASTER_SITES=	ftp://mirror1.planetice.net/pub/wfa/ \
-		ftp://mirror2.planetice.net/pub/wfa/ \
-		http://www.webplusdesign.com/downloads/ \
-		ftp://ftp.planet-multiplayer.de/pub/gamesmania/pm/q3a/win32/mods/weapon_factory/
-DISTFILES=	WFA-fSetup-v30b.zip \
-		WFA-f30bMaps.zip
+PORTVERSION=	3.3
+MASTER_SITES=	ftp://flanders.worldogl.com/wfa/ \
+		ftp://urgentfury.org/pub/quake3/ \
+		http://www.thunderdome.ws/files/quake3/mods/wfa_33/linux-mac/
+DISTFILES=	WFA_Media_v33.zip WFA_MapPack1_v33.zip \
+		WFA_MapPack2_v33.zip
 
 EXTRACT_BEFORE_ARGS=	-o -qq
+NO_WRKSUBDIR=	yes
 
 Q3_MOD_MASTER=	${.CURDIR}/../q3server-ra3
 
