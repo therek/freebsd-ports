@@ -3,12 +3,12 @@
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.23 2001/02/07 14:51:15 obrien Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.24 2001/04/14 02:19:33 obrien Exp $
 #
 
 PORTNAME=		star
-PORTVERSION=		1.2
-CATEGORIES=		sysutils
+PORTVERSION=		1.3
+CATEGORIES=		sysutils archivers
 MASTER_SITES=		ftp://ftp.fokus.gmd.de/pub/unix/star/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/compress
@@ -27,7 +27,8 @@ post-extract:
 .endif
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/star/OBJ/${MACHINE_ARCH}-freebsd-cc/star \
+	${INSTALL_PROGRAM} \
+		${WRKSRC}/star/OBJ/${MACHINE_ARCH}-freebsd-${CC}/star \
 		${PREFIX}/bin
 	cd ${PREFIX}/bin ; ${LN} -f star ustar
 	${INSTALL_MAN} ${WRKSRC}/star/star.1 ${PREFIX}/man/man1
