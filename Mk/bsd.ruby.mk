@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.16 2001/02/19 16:17:17 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.17 2001/03/04 11:16:58 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -182,7 +182,14 @@ post-patch:	ruby-shebang-patch
 ruby-shebang-patch:
 	@for f in ${RUBY_SHEBANG_FILES}; do \
 	${ECHO_MSG} "===>  Fixing the #! line of $$f"; \
-	${RUBY} -i -pe '$$. == 1 and sub /^#!\s*\S*(\benv\s+)?\bruby/, "#!${RUBY}"' $$f; \
+	${RUBY} -i -p	-e 'if $$. == 1; ' \
+			-e ' if /^#!/; ' \
+			-e '  sub /^#!\s*\S*(\benv\s+)?\bruby/, "#!${RUBY}";' \
+			-e ' else;' \
+			-e '  $$_ = "#!${RUBY}\n" + $$_;' \
+			-e ' end;' \
+			-e 'end' \
+			$$f; \
 	done
 .endif
 
