@@ -2,15 +2,15 @@
 # Date created:         2 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/pine.language/Makefile,v 1.8 1999/08/31 01:47:02 peter Exp $
 #
 
-PKGNAME=        ru-pine-3.96
+PKGNAME=        ru-pine-4.21
 CATEGORIES=     russian mail
 
 MAINTAINER=     ache@FreeBSD.org
 
-RUN_DEPENDS=    pine:${PORTSDIR}/mail/pine3
+RUN_DEPENDS=    pine:${PORTSDIR}/mail/pine4
 
 EXTRACT_ONLY=   # empty
 NO_WRKSUBDIR=   YES
