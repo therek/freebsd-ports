@@ -2,13 +2,14 @@
 # Date created:		1998-11-11
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/biology/psi88/Makefile,v 1.6 2000/04/08 22:04:51 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	psi88
 PORTVERSION=	1.0
 CATEGORIES=	biology
-MASTER_SITES=	ftp://ftp.ccl.net/pub/chemistry/software/SOURCES/FORTRAN/psi88/
+MASTER_SITES=	ftp://ftp.ccl.net/pub/chemistry/software/SOURCES/FORTRAN/psi88/ \
+		ftp://ftp.orgchm.bas.bg/pub/mirror/ftp.CCL.net/pub/chemistry/software/SOURCES/FORTRAN/psi88/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
