@@ -2,11 +2,12 @@
 # Date created:		18 Aug 1998
 # Whom:			Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
 #
-# $FreeBSD: ports/japanese/sj3/Makefile,v 1.15 2000/09/06 01:55:40 asami Exp $
+# $FreeBSD: ports/japanese/sj3/Makefile,v 1.16 2000/10/08 10:21:20 asami Exp $
 #
 
 PORTNAME=	sj3
 PORTVERSION=	2.0.1.20
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sony.co.jp/pub/unsupported/src/ \
 		ftp://ftp.cs.titech.ac.jp/pub/japanese/sj3/
