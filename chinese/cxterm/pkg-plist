@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/cxterm/pkg-plist,v 1.5 2000/11/22 02:22:18 obrien Exp $
 bin/cxterm
 bin/tit2cit
 bin/cit2tit
@@ -47,3 +47,9 @@ lib/X11/app-defaults/CXterm
 lib/X11/cxterm.dic/CXterm.ad
 share/doc/cxterm/CXTERM.FAQ
 share/doc/cxterm/input.doc
+@dirrm lib/X11/cxterm.dic/big5
+@dirrm lib/X11/cxterm.dic/gb
+@dirrm lib/X11/cxterm.dic/jis
+@dirrm lib/X11/cxterm.dic/ks
+@dirrm lib/X11/cxterm.dic
+@dirrm share/doc/cxterm

@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.16 2000/08/27 04:44:44 obrien Exp $
+# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.17 2000/09/12 13:03:59 asami Exp $
 #
 
 PORTNAME=	cxterm
@@ -23,6 +23,9 @@ MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/cxterm-5.0
 USE_IMAKE=	yes
+
+MAN1=		cit2tit.1 cxterm.1 hzimctrl.1 tit2cit.1
+MANCOMPRESSED=	yes
 
 .include <bsd.port.pre.mk>
 
