@@ -2,11 +2,11 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/csound/Makefile,v 1.6 2001/03/15 14:34:32 trevor Exp $
+# $FreeBSD: ports/audio/csound/Makefile,v 1.7 2001/04/10 06:25:00 trevor Exp $
 #
 
 PORTNAME=	csound
-PORTVERSION=	4.12
+PORTVERSION=	4.13
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.maths.bath.ac.uk/pub/dream/newest/
 DISTFILES=	Csound${PORTVERSION}.tar.gz
@@ -38,7 +38,8 @@ post-build:
 	${ECHO} "@dirrm share/csound" >> ${PLIST}
 
 post-patch:
-	${PERL} -pi -e "s:PREFIX:${PREFIX}:g" ${WRKSRC}/getstring.c
+	${PERL} -pi -e "s:/usr/local/lib:${PREFIX}/share/csound:g" ${WRKSRC}/getstring.c
+	${PERL} -pi -e "s:csound.txt:csound.dat:g" ${WRKSRC}/getstring.c
 
 do-install:
 	${MKDIR} ${PREFIX}/share/csound
