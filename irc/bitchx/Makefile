@@ -3,13 +3,13 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.7 1999/08/25 06:12:35 obrien Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.8 2000/01/22 04:56:29 ade Exp $
 #
 
 DISTNAME=	BitchX-1.0c15
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.bitchx.com/pub/ \
-		ftp://bitchx.dimension6.com/pub/
+MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
+		ftp://bitchx.dimension6.com/pub/BitchX/source/
 
 MAINTAINER=	calle.madestrand@norrgarden.se
 
