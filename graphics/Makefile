@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.331 2001/07/08 16:44:17 kevlo Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.332 2001/07/08 16:47:07 kevlo Exp $
 #
 
     SUBDIR += 4va
@@ -200,6 +200,7 @@
     SUBDIR += ppmcaption
     SUBDIR += pstoedit
     SUBDIR += pvmpov
+    SUBDIR += py-gdchart
     SUBDIR += py-imaging
     SUBDIR += py-imaging-handbook
     SUBDIR += py-ming
