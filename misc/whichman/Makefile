@@ -2,16 +2,15 @@
 # Date created:				6 June 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/whichman/Makefile,v 1.1.1.1 2000/06/06 14:13:30 sobomax Exp $
 #
 
 PORTNAME=	whichman
 PORTVERSION=	1.9
 CATEGORIES=	misc
-MASTER_SITES=	ftp://sunsite.unc.edu/pub/Linux/apps/doctools/ \
-		http://www.metalab.unc.edu/pub/Linux/apps/doctools/ \
-		http://www.linuxfocus.org/~guido.socher/ \
-		http://linuxberg.concepts.nl/files/console/system/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		http://www.linuxfocus.org/~guido.socher/
+MASTER_SITE_SUBDIR=	apps/doctools
 
 MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 

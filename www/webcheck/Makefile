@@ -2,13 +2,14 @@
 # Date created:        19 September 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/www/linbot/Makefile,v 1.7 2000/04/10 00:05:38 cpiazza Exp $
+# $FreeBSD: ports/www/linbot/Makefile,v 1.8 2000/04/21 18:15:22 billf Exp $
 #
 
 PORTNAME=	linbot
 PORTVERSION= 	1.0
 CATEGORIES=	www python
-MASTER_SITES=	http://metalab.unc.edu/pub/Linux/apps/www/misc/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	apps/www/misc
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	billf@FreeBSD.org
