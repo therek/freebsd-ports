@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.148 2004/07/11 00:59:46 eik Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.149 2004/07/15 08:01:25 eik Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -1903,7 +1903,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       </package>
       <package>
 	<name>courier-imap</name>
-	<range><lt>3.0</lt></range>
+	<range><lt>3.0,1</lt></range>
       </package>
       <package>
 	<name>sqwebmail</name>
@@ -1939,10 +1939,14 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <url>http://cvs.sourceforge.net/viewcvs.py/courier/libs/unicode/iso2022jp.c?rev=1.10&amp;view=markup</url>
       <url>http://cvs.sourceforge.net/viewcvs.py/courier/libs/unicode/shiftjis.c?rev=1.6&amp;view=markup</url>
       <bid>9845</bid>
+      <url>http://secunia.com/advisories/11087</url>
+      <url>http://www.osvdb.org/4194</url>
+      <url>http://www.osvdb.org/6927</url>
     </references>
     <dates>
       <discovery>2004-02-01</discovery>
       <entry>2004-03-31</entry>
+      <modified>2004-07-16</modified>
     </dates>
   </vuln>
 
