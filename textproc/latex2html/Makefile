@@ -2,7 +2,7 @@
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.11 1999/09/09 03:03:19 cpiazza Exp $
+# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.12 2000/04/09 21:52:47 cpiazza Exp $
 #
 
 PORTNAME=	latex2html
@@ -13,9 +13,9 @@ MASTER_SITES=	http://www-dsed.llnl.gov/files/programs/unix/latex2html/sources/ \
 
 MAINTAINER=	brett@peloton.runet.edu
 
-RUN_DEPENDS=	${PREFIX}/bin/latex:${PORTSDIR}/print/latex \
-		${PREFIX}/bin/dvips:${PORTSDIR}/print/dvips \
-		${PREFIX}/bin/gs:${PORTSDIR}/print/ghostscript5 \
+RUN_DEPENDS=	${LOCALBASE}/bin/latex:${PORTSDIR}/print/latex \
+		${LOCALBASE}/bin/dvips:${PORTSDIR}/print/dvips \
+		${LOCALBASE}/bin/gs:${PORTSDIR}/print/ghostscript5 \
 		${X11BASE}/bin/anytopnm:${PORTSDIR}/graphics/netpbm
 
 WRKSRC=	${WRKDIR}/latex2html
