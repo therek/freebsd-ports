@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.136 2000/06/03 05:29:02 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.137 2000/06/04 22:42:09 will Exp $
 #
 
     SUBDIR += afsp
@@ -97,6 +97,7 @@
     SUBDIR += tosha
     SUBDIR += tracker
     SUBDIR += waveplay
+    SUBDIR += wavplay
     SUBDIR += wmcdplay
     SUBDIR += wmmixer
     SUBDIR += wmmp3
