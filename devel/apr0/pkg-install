@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/devel/apr/pkg-install,v 1.2 2002/03/19 13:20:04 roberto Exp $
+# $FreeBSD$
 
 if [ "$2" != "PRE-INSTALL" ]; then
   exit 0
