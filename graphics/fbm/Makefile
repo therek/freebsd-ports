@@ -2,7 +2,7 @@
 # Date created:		21 January 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/fbm/Makefile,v 1.3 1999/08/31 06:44:55 mharo Exp $
+# $FreeBSD: ports/graphics/fbm/Makefile,v 1.4 2000/04/13 06:28:22 obrien Exp $
 #
 
 PORTNAME=	fbm
@@ -16,11 +16,10 @@ MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 
-INSTALL_TARGET= smaller $(INSTALL)
-
-MANL=	clr2gray.l fbcat.l fbclean.l fbedge.l fbext.l fbhalf.l fbhist.l \
-	fbinfo.l fbm.l fbm2pod.l fbmask.l fbnorm.l fbps.l fbquant.l fbrot.l \
-	fbsample.l fbsharp.l gray2clr.l idiff.l pbm2ps.l pbmtitle.l raw2fbm.l \
-	qrt2fbm.l fbham.l uunet2fbm.l tiff2fbm.l fbmedian.l fbconv.l fbthin.l
+MANL=	clr2gray.l fbcat.l fbclean.l fbconv.l fbedge.l fbext.l fbhalf.l \
+	fbham.l fbhist.l fbinfo.l fbm.l fbm2pod.l fbmask.l fbmedian.l \
+	fbnorm.l fbps.l fbquant.l fbrot.l fbsample.l fbsharp.l fbthin.l \
+	gray2clr.l idiff.l pbm2ps.l pbmtitle.l qrt2fbm.l raw2fbm.l tiff2fbm.l \
+	uunet2fbm.l 
 
 .include <bsd.port.mk>
