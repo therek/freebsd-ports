@@ -2,7 +2,7 @@
 # Date created:		22 Jul 1998
 # Whom:			Yusuke Nawano <azuki@azkey.org>
 #
-# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.6 2000/08/08 04:52:45 knu Exp $
+# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.7 2001/03/21 20:26:02 fenner Exp $
 #
 
 PORTNAME=	skkfep
@@ -10,6 +10,8 @@ PORTVERSION=	0.86c
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/skkfep/
 DISTNAME=	${PORTNAME}${PORTVERSION}
+
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/skkserv:${PORTSDIR}/japanese/skk
 
