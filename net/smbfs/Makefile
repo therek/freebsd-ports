@@ -2,11 +2,11 @@
 # Date created:				2th Dec 2000
 # Whom:					Jaedoc Lee <tokky@fdns.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/smbfs/Makefile,v 1.1 2001/01/30 12:16:05 bp Exp $
 #
 
 PORTNAME=	smbfs
-PORTVERSION=	1.3.3
+PORTVERSION=	1.3.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.butya.kz/pub/smbfs/
 
