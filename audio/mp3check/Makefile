@@ -2,14 +2,13 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/audio/mp3check/Makefile,v 1.2 2001/05/28 20:44:03 dannyboy Exp $
+# $FreeBSD: ports/audio/mp3check/Makefile,v 1.3 2001/06/08 05:36:27 markp Exp $
 #
 
 PORTNAME=	mp3check
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	audio
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	dannyboy
+MASTER_SITES=	http://www.icculus.org/mp3check/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 
