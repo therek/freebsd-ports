@@ -2,13 +2,15 @@
 # Date created:				12 June 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/colorize/Makefile,v 1.2 2001/08/10 16:43:58 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	colorize
 PORTVERSION=	0.3.0
 CATEGORIES=	sysutils
-MASTER_SITES=	http://nrg.martos.bme.hu/release/colorize/download/gz/
+MASTER_SITES=	http://nrg.martos.bme.hu/release/colorize/download/gz/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	petef
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	petef@FreeBSD.org
