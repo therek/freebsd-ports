@@ -2,7 +2,7 @@
 # Date created:		2nd May, 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/emulators/xgs/Makefile,v 1.9 2000/04/12 04:56:12 mharo Exp $
+# $FreeBSD: ports/emulators/xgs/Makefile,v 1.10 2000/08/25 13:14:34 kevlo Exp $
 #
 # This is the stable release of the xgs emulator. Sound support is
 # currently broken.
@@ -35,7 +35,7 @@ CONFIGURE_ARGS=	--with-x
 #
 XGS_DIR=	${PREFIX}/share/xgs
 XGS_DOC=	${PREFIX}/share/doc/xgs
-PORTDOCS= 	CHANGES.TXT COMPAT.TXT INSTALL.TXT IWM-DOC.TXT TODO.TXT \
+PORTDOCS=	CHANGES.TXT COMPAT.TXT INSTALL.TXT IWM-DOC.TXT TODO.TXT \
 		XGS-FAQ.TXT
 
 post-extract:

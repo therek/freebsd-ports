@@ -2,7 +2,7 @@
 # Date created:         3rd August, 1997
 # Whom:                 Tobias Reifenberger <tr@freebsd.mayn.de>
 #
-# $FreeBSD: ports/emulators/stonx/Makefile,v 1.5 1999/11/26 18:29:30 steve Exp $
+# $FreeBSD: ports/emulators/stonx/Makefile,v 1.6 2000/04/12 04:55:52 mharo Exp $
 #
 
 PORTNAME=	stonx
@@ -37,7 +37,7 @@ post-build:
 #
 BINDIR=	${PREFIX}/bin
 LIBDIR=	${PREFIX}/lib/X11/STonX
-FNTDIR= ${PREFIX}/lib/X11/fonts/misc
+FNTDIR=	${PREFIX}/lib/X11/fonts/misc
 
 DATA=	tos.img cartridge.img Keysyms Keysyms.G atari/FLOPPY-4MB \
 	atari/bench1.pas atari/bench1.prg atari/final.tos

@@ -2,11 +2,11 @@
 # Date created:				26 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/visualos/Makefile,v 1.1 2000/10/26 13:00:45 sobomax Exp $
 #
 
 PORTNAME=	VisualOS
-PORTVERSION= 	1.0.2
+PORTVERSION=	1.0.2
 CATEGORIES=	emulators gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	visualos
