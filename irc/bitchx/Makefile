@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.22 2000/09/30 15:57:08 kevlo Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.23 2000/10/05 07:22:40 reg Exp $
 #
 
 PORTNAME=	BitchX
@@ -25,6 +25,8 @@ CONFIGURE_ARGS=	--exec-prefix="${PREFIX}/share" \
 		--libdir="${PREFIX}/share"
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L{LOCALBASE}/lib"
+
+MAN1=		BitchX.1
 
 .include <bsd.port.pre.mk>
 

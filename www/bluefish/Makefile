@@ -2,7 +2,7 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.14 2000/08/26 06:54:56 jim Exp $
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.15 2000/10/05 06:57:47 reg Exp $
 #
 
 PORTNAME=	bluefish
@@ -23,6 +23,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-install-location="${X11BASE}/lib/bluefish" \
 		--disable-nls
 
+MANCOMPRESSED=	yes
 MAN1=		bluefish.1
 
 post-install:
