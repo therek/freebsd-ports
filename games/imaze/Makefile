@@ -2,17 +2,17 @@
 # Date created:         27. April 1996
 # Whom:                 Ronald Kuehn <kuehn@rz.tu-clausthal.de>
 #
-# $FreeBSD: ports/games/imaze/Makefile,v 1.19 2000/04/14 12:25:56 asami Exp $
+# $FreeBSD: ports/games/imaze/Makefile,v 1.20 2000/04/16 10:44:47 asami Exp $
 #
 
 PORTNAME=	imaze
 PORTVERSION=	1.3
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/games/imaze/ \
-		ftp://ftp.tu-clausthal.de/pub/unix/games/imaze/sounds/
+MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/misc/games/imaze/ \
+		ftp://ftp.tu-clausthal.de/pub/misc/games/imaze/sounds/
 DISTFILES=	imaze1.3.tar.Z imaze.tar
 
-MAINTAINER=	kuehn@rz.tu-clausthal.de
+MAINTAINER=	ports@freebsd.org
 
 #
 # Sound support currently only exists for the XView version (apperently
