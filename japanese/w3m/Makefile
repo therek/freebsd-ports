@@ -1,16 +1,18 @@
-# New ports collection makefile for:	w3m-ja
-# Version required:		990928
+# New ports collection makefile for:	ja-w3m
+# Version required:		991028-2
 # Date Created:			8 Oct 1999
 # Whom:				SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/w3m/Makefile,v 1.1.1.1 1999/10/08 15:39:24 sada Exp $
 #
 
-PKGNAME=	ja-${DISTNAME}
+PKGNAME=	ja-w3m-${W3M_VER}
 CATEGORIES=	japanese www
 
 MASTERDIR=	${.CURDIR}/../../www/w3m
+PKGDIR=		${.CURDIR}/pkg
+PLIST=		${MASTERDIR}/pkg/PLIST.ja
 
-JAPANESE_MSG=	Yes
+JAPANESE=	Yes
 
 .include "${MASTERDIR}/Makefile"
