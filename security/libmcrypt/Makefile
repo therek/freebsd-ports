@@ -2,13 +2,13 @@
 # Date created:		Mon Jun 28 18:02:04 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.21 2001/03/23 23:12:32 dirk Exp $
+# $FreeBSD: ports/security/libmcrypt/Makefile,v 1.22 2001/03/24 22:38:38 nsayer Exp $
 #
 
 PORTNAME=	libmcrypt
 PORTVERSION=	2.4.10
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.hellug.gr/pub/mcrypt/libmcrypt/ \
+MASTER_SITES=	ftp://ftp.hellug.gr/pub/unix/mcrypt/libmcrypt/ \
 		ftp://ftp.ntua.gr/pub/security/mcrypt/libmcrypt/
 
 MAINTAINER=	ports@FreeBSD.org
