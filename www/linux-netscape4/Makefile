@@ -2,19 +2,17 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.15 2000/10/08 10:23:10 asami Exp $
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.16 2001/02/05 15:33:28 olgeni Exp $
 #
 
 PORTNAME=	linux-netscape
 PORTVERSION=	4.08
 CATEGORIES=	www linux
-MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
-		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
-		ftp://ftp.funet.fi/pub/mirrors/ftp.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/ \
-		ftp://ftp.sunsite.auc.dk/disk4/mirrorsite.netscape.com/pub/communicator/4.08/english/unix/supported/linux20/base_install/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tom
 DISTNAME=	communicator-v408-export.x86-unknown-linux2.0_libc5
 
-MAINTAINER=	tom@eborcom.com
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base \
 		netscape:${PORTSDIR}/www/netscape-wrapper
