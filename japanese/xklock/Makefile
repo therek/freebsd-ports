@@ -2,11 +2,12 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.12 2000/11/07 20:27:18 trevor Exp $
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.13 2001/01/29 00:26:16 jedgar Exp $
 #
 
 PORTNAME=	xklock
 PORTVERSION=	2.7.1
+PORTREVISION=	1
 CATEGORIES=	japanese x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	trevor
@@ -25,14 +26,13 @@ USE_X_PREFIX=	yes
 USE_XPM=	yes
 
 pre-configure:
-	@${MV} ${WRKDIR}/jnames.c ${WRKDIR}/jnames.c.in
-	@${SED} -e "s:/usr/local:${PREFIX}:" ${WRKDIR}/jnames.c.in  \
-		> ${WRKDIR}/jnames.c
-	@${MV} ${WRKDIR}/xklock.h ${WRKDIR}/xklock.h.in
-	@${SED} -e "s:/usr/local:${PREFIX}:" ${WRKDIR}/xklock.h.in  \
-		> ${WRKDIR}/xklock.h
+.for file in jnames.c xklock.h
+	@${PERL} -pi -e "s:%%PREFIX%%:${PREFIX}:" ${WRKSRC}/${file}
+.endfor
 
-post-install:
-	${TOUCH} ${PREFIX}/lib/jnames
+do-install:
+	${INSTALL_PROGRAM} -m 4755 ${WRKSRC}/xklock ${PREFIX}/bin
+	@${MKDIR} ${PREFIX}/lib/X11/xklock
+	${TOUCH} ${PREFIX}/lib/X11/xklock/jnames
 
 .include <bsd.port.mk>
