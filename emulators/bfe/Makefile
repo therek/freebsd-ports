@@ -2,14 +2,13 @@
 # Date created:		02 February 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/emulators/bfe/Makefile,v 1.4 2001/03/11 03:55:25 will Exp $
+# $FreeBSD: ports/emulators/bfe/Makefile,v 1.5 2001/05/29 18:15:09 greid Exp $
 #
 
 PORTNAME=	bfe
 PORTVERSION=	2mar2001
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.qzx.com/bfe/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	http://www.qzx.com/bfe/_download/
 
 MAINTAINER=	greid@FreeBSD.org
 
