@@ -2,7 +2,7 @@
 # Date created:				06 December 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/java/linux-jdk13/Makefile,v 1.7 2001/06/01 15:28:28 sobomax Exp $
+# $FreeBSD: ports/java/linux-jdk13/Makefile,v 1.8 2001/06/26 02:21:22 kevlo Exp $
 #
 
 PORTNAME=	jdk
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.bin
 
 MAINTAINER=	kevlo@FreeBSD.org
 
+BUILD_DEPENDS=	${LINUXBASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper
 
 NO_CDROM=	"License doesn\'t allow distribution with fee"
