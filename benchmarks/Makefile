@@ -1,4 +1,4 @@
-# $FreeBSD: ports/benchmarks/Makefile,v 1.18 2001/03/29 13:26:14 sobomax Exp $
+# $FreeBSD: ports/benchmarks/Makefile,v 1.19 2001/04/02 06:23:44 ijliao Exp $
 #
 
     SUBDIR += bonnie
@@ -16,6 +16,7 @@
     SUBDIR += postmark
     SUBDIR += pybench
     SUBDIR += rawio
+    SUBDIR += siege
     SUBDIR += tcpblast
     SUBDIR += tmetric
     SUBDIR += ubench
