@@ -2,11 +2,11 @@
 # Date created:		25 April 2001
 # Whom:			Yoshihiko Sarumaru <mistral@imasy.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/stone/Makefile,v 1.1 2001/05/29 11:11:44 ijliao Exp $
 #
 
 PORTNAME=	stone
-PORTVERSION=	2.1c
+PORTVERSION=	2.1d
 CATEGORIES=	net
 MASTER_SITES=	http://www.gcd.org/sengoku/stone/
 
