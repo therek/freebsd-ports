@@ -3,7 +3,7 @@
 # Date created:				Thanksgiving Day, 1999
 # Whom:	      				Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.3 2000/02/29 01:58:27 jedgar Exp $
+# $FreeBSD: ports/devel/uclmmbase/Makefile,v 1.4 2000/03/08 16:53:48 fenner Exp $
 #
 
 DISTNAME=	common-1.1.2
@@ -15,7 +15,10 @@ MAINTAINER=	fenner@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/common
 GNU_CONFIGURE=	yes
-.if ${OSVERSION} > 400015
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
 CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
@@ -32,4 +35,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/include/uclmmbase
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
