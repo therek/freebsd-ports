@@ -2,7 +2,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.17 2000/06/01 15:46:56 will Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.18 2000/06/05 10:19:30 nakai Exp $
 #
 
 PORTNAME=	gogo
@@ -27,9 +27,7 @@ ONLY_FOR_ARCHS=	i386
 # Recommended ONLY for benchmarks.
 # CFLAGS=-march=pentiumpro -O6 -finline-functions -fomit-frame-pointer -funrol
 
-MAKE_ENV=	"CC=$(CCMD)" "LD=$(CC)"
-
-CCMD!=		${ECHO} "$(CC) -c $(CFLAGS)"
+MAKE_ENV=	"CC=$(CC) -c $(CFLAGS)" "LD=$(CC)"
 
 pre-fetch:
 .if !defined(USE_MT)
