@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.502 2004/12/23 01:35:38 anholt Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.503 2004/12/30 07:14:27 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1884,20 +1884,18 @@ EXTRACT_CMD?=			${GZIP_CMD}
 
 # Figure out where the local mtree file is
 .if !defined(MTREE_FILE) && !defined(NO_MTREE)
-.if ${PREFIX} == ${X11BASE}
+.if ${PREFIX} == ${X11BASE} || defined(USE_X_PREFIX)
+# User may have specified non-standard PREFIX for installing a port that
+# uses X
 .if ${X_WINDOW_SYSTEM:L} == xfree86-3
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
 .else
 MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 .endif
-.else
-.if ${PREFIX} == ${LOCALBASE}
-MTREE_FILE=	/etc/mtree/BSD.local.dist
 .elif ${PREFIX} == /usr
 MTREE_FILE=	/etc/mtree/BSD.usr.dist
 .else
-NO_MTREE=	yes	# Can't figure out prefix, assume nonstandard
-.endif
+MTREE_FILE=	/etc/mtree/BSD.local.dist
 .endif
 .endif
 MTREE_CMD?=	/usr/sbin/mtree
