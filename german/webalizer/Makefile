@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer/Makefile,v 1.13 2000/08/10 16:16:24 kevlo Exp $
+# $FreeBSD: ports/german/webalizer/Makefile,v 1.14 2000/08/18 13:18:22 jedgar Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	1.30.4
@@ -37,9 +37,7 @@ do-install:
 .endfor
 
 post-install:
-.for i in ${MAN1}
-	${INSTALL_MAN} ${WRKSRC}/webalizer.1 ${PREFIX}/man/man1/${i}
-.endfor
+	${INSTALL_MAN} ${WRKSRC}/webalizer.1 ${PREFIX}/man/man1/de-webalizer.1
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/de-webalizer
 .for i in ${DOC1}
