@@ -2,11 +2,12 @@
 # Date created:		16 March 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-4suite/Makefile,v 1.4 2001/08/07 11:52:41 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	4suite
 PORTVERSION=	0.11.1
+PORTREVISION=	1
 CATEGORIES=	textproc python
 MASTER_SITES=	ftp://ftp.4suite.org/pub/4Suite/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
