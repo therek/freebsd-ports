@@ -2,7 +2,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.15 2000/04/14 00:25:29 mharo Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.16 2000/04/20 00:45:09 ade Exp $
 #
 
 PORTNAME=	gedit
@@ -13,7 +13,7 @@ MASTER_SITES=	http://download.sourceforge.net/gedit/
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs \
-		gnomeprint.7:${PORTSDIR}/print/gnomeprint
+		gnomeprint.9:${PORTSDIR}/print/gnomeprint
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -2,7 +2,7 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.8 2000/04/19 15:08:40 ade Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.9 2000/04/21 16:11:33 ade Exp $
 #
 
 PORTNAME=	sodipodi
@@ -14,7 +14,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
 		glade.3:${PORTSDIR}/devel/libglade \
-		gnomeprint.7:${PORTSDIR}/print/gnomeprint \
+		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 BROKEN=		"Uses gdk-pixbuf internals that have disappeared"
