@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh,v 1.1 2003/09/06 17:45:02 ume Exp $
+# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh,v 1.2 2003/10/01 18:13:28 ume Exp $
 #
 
 # PROVIDE: dtcpclient
@@ -10,11 +10,11 @@
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts
-# move imapd.sh to /etc/rc.d/dtcpclient
+# move dtcpclient.sh to /etc/rc.d/dtcpclient
 
 prefix=%%PREFIX%%
 
-# Define these imapd_* variables in one of these files:
+# Define these dtcpclient_* variables in one of these files:
 #	/etc/rc.conf
 #	/etc/rc.conf.local
 #	/etc/rc.conf.d/dtcpclient
