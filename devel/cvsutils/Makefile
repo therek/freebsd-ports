@@ -2,11 +2,11 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.5 2000/06/29 02:31:24 asami Exp $
+# $FreeBSD: ports/devel/cvsutils/Makefile,v 1.6 2001/02/17 21:41:47 knu Exp $
 #
 
 PORTNAME=	cvsutils
-PORTVERSION=	2001.02.05
+PORTVERSION=	2001.07.05
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
@@ -20,9 +20,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/cvsutils
+	${MKDIR} ${DOCSDIR}
 .for f in AUTHORS ChangeLog FAQ NEWS README TODO 
-	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/cvsutils/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${DOCSDIR}/
 .endfor
 .endif
 
