@@ -3,16 +3,16 @@
 # Date created:			Mar 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/regexx/Makefile,v 1.1 2001/03/07 11:49:47 ijliao Exp $
+# $FreeBSD: ports/devel/regexx/Makefile,v 1.2 2001/03/15 06:52:26 ijliao Exp $
 #
 
 PORTNAME=	regexx
-PORTVERSION=	0.98
+PORTVERSION=	0.98.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre
 
