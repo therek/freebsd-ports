@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.401 2001/08/31 11:42:13 jedgar Exp $
+# $FreeBSD: ports/www/Makefile,v 1.402 2001/09/01 00:45:13 petef Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -164,6 +164,7 @@
     SUBDIR += mod_ticket
     SUBDIR += mod_trigger
     SUBDIR += mod_tsunami
+    SUBDIR += mod_watch
     SUBDIR += mod_zap
     SUBDIR += momspider
     SUBDIR += mozilla
