@@ -2,7 +2,7 @@
 # Date created:		30 Mar 1996
 # Whom:			graphite@taurus.bekkoame.or.jp
 #
-# $FreeBSD: ports/news/suck/Makefile,v 1.26 2001/05/22 06:28:58 dinoex Exp $
+# $FreeBSD: ports/news/suck/Makefile,v 1.27 2001/05/23 05:56:58 dinoex Exp $
 #
 
 PORTNAME=	suck
@@ -22,7 +22,6 @@ PKGNAMESUFFIX=	-cnews
 EXTRA_PATCHES+=	${FILESDIR}/cnews.patch
 .else
 EXTRA_PATCHES+=	${FILESDIR}/inn2.patch
-BUILD_DEPENDS+=	${NONEXISTENT}:${PORTSDIR}/news/inn:configure
 BUILD_DEPENDS+=	${LOCALBASE}/news/lib/libinn.a:${PORTSDIR}/news/inn
 .endif
 
