@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.488 2004/04/19 23:39:52 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.489 2004/05/27 11:29:06 eik Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1061,8 +1061,8 @@ RUN_DEPENDS+=	${APXS}:${PORTSDIR}/${APACHE_PORT}
 .endif
 
 .if ${OSVERSION} >= 502100
-PERL_VERSION?=	5.8.2
-PERL_VER?=	5.8.2
+PERL_VERSION?=	5.8.4
+PERL_VER?=	5.8.4
 .else
 .if ${OSVERSION} >= 500032
 PERL_VERSION?=	5.6.1
