@@ -3,7 +3,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.25 1999/10/29 16:26:33 jseger Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.26 1999/12/24 08:26:14 mharo Exp $
 #
 
 DISTNAME=	gnats-3.112.1
@@ -45,7 +45,7 @@ pre-install:
 post-install:
 	(cd ${WRKSRC}/gnats;   ${MAKE} install-info)
 	(cd ${WRKSRC}/send-pr; ${MAKE} install-info)
-	install-info ${PREFIX}/info/gnats.info   ${PREFIX}/info
-	install-info ${PREFIX}/info/send-pr.info ${PREFIX}/info
+	install-info ${PREFIX}/info/gnats.info   ${PREFIX}/info/dir
+	install-info ${PREFIX}/info/send-pr.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
