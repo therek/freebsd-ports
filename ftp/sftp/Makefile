@@ -2,7 +2,7 @@
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.7 2000/06/27 15:24:31 alex Exp $
+# $FreeBSD: ports/ftp/sftp/Makefile,v 1.8 2000/09/02 14:09:42 sobomax Exp $
 #
 
 PORTNAME=	sftp
@@ -32,7 +32,7 @@ do-install:
 	${LN} -s ${PREFIX}/bin/secftp ${PREFIX}/bin/rsftp
 	${INSTALL_PROGRAM} ${WRKSRC}/sftpserv ${PREFIX}/libexec/sftpserv
 	${INSTALL_MAN} ${WRKSRC}/sftp.1 ${PREFIX}/man/man1/secftp.1
-	${CP} ${PKGDIR}/PLIST.in ${PLIST}.unsorted
+	${CP} ${PKGDIR}/pkg-plist.in ${PLIST}.unsorted
 	@if [ ! -f ${PREFIX}/bin/sftp ]; then \
 		${ECHO} "No other sftp found, linking sftp to secftp"; \
 		${LN} -s ${PREFIX}/bin/secftp ${PREFIX}/bin/sftp; \
