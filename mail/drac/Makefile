@@ -2,7 +2,7 @@
 # Date created:			07 January 2001
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/mail/drac/Makefile,v 1.3 2001/05/09 11:15:56 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	drac
@@ -17,6 +17,10 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	anders@fix.no
 
+.if defined(WITH_POSTFIX_DB3)
+LIB_DEPENDS+=	db3.2:${PORTSDIR}/databases/db3
+.endif
+
 NO_WRKSUBDIR=	yes
 
 MAN3=		dracauth.3
@@ -27,14 +31,20 @@ MAN1=		rpc.dracd.1
 MAKE_ARGS+=	-DWITH_TI_RPC
 .endif
 
-post-patch:
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/rpc.dracd.1m
+pre-everything:
 	@${ECHO} "================================================================================"
-	@${ECHO} "Define WITH_POSTFIX or WITH_EXIM for databases compatible with those MTAs."
+	@${ECHO} "For databases compatible with other MTAs than sendmail, use:"
+	@${ECHO}
+	@${ECHO} "WITH_POSTFIX=yes	(Postfix)"
+	@${ECHO} "WITH_POSTFIX_DB3=yes	(Postfix with DB3 database maps)"
+	@${ECHO} "WITH_EXIM=yes		(Exim)"
 	@${ECHO}
 	@${ECHO} "Define WITH_FOREGROUND to make the rpc.dracd daemon stay in foreground instead"
 	@${ECHO} "of detaching itself. This breaks the startup script."
 	@${ECHO} "================================================================================"
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/rpc.dracd.1m
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/rpc.dracd ${PREFIX}/sbin/
