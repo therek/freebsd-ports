@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.209 2001/07/19 14:26:18 markp Exp $
+# $FreeBSD: ports/security/Makefile,v 1.210 2001/07/19 15:07:50 markp Exp $
 #
 
     SUBDIR += aafid2
@@ -17,6 +17,7 @@
     SUBDIR += ca-roots
     SUBDIR += calife
     SUBDIR += cfs
+    SUBDIR += cfv
     SUBDIR += checkpassword
     SUBDIR += chkrootkit
     SUBDIR += chrootuid
