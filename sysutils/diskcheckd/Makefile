@@ -3,7 +3,7 @@
 # Date created:			  Thu Aug 23, 2001
 # Whom:				  David W. Chapman Jr. (dwcjr@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.3 2001/08/29 05:16:22 dwcjr Exp $
+# $FreeBSD: ports/sysutils/diskcheckd/Makefile,v 1.4 2001/08/29 05:41:00 dwcjr Exp $
 #
 
 PORTNAME=	diskcheckd
@@ -20,8 +20,6 @@ STARTUP=	diskcheckd.sh
 MAN8=		diskcheckd.8
 MLINKS=		diskcheckd.8 diskcheckd.conf.5
 
-MANCOMPRESSED=	no
-
 NO_WRKSUBDIR=	yes
 
 CFLAGS+=	-D_PATH_CONF='\"${PREFIX}/etc/diskcheckd.conf\"'
@@ -36,7 +34,7 @@ do-extract:
 	@${MKDIR} ${WRKSRC}
 
 .for file in Makefile diskcheckd.c diskcheckd.8
-	@(cd ${WRKSRC} ; ${LN} -f ${FILESDIR}/${file} .)
+	@(cd ${WRKSRC} ; ${CP} ${FILESDIR}/${file} .)
 .endfor
 
 do-patch:
