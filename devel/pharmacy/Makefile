@@ -3,14 +3,14 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.1.1.1 1999/10/03 21:57:27 dan Exp $
+# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.2 1999/10/17 13:45:03 asami Exp $
 #
 
 DISTNAME=	pharmacy-0.2.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	http://pharmacy.learnrespect.org/
 
-MAINTAINER=	jedgar@fxp.org
+MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 
