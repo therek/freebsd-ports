@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtkstep
-# Version required:			1.10
+# Version required:			2.0
 # Date Created:				7 nov 98
 # Whom:				 	Gilad Rom
 #
-# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.11 1999/10/07 21:20:34 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/gtkstep/Makefile,v 1.12 1999/11/11 10:39:58 tg Exp $
 #
 
-DISTNAME=	gtkstep-1.10
+DISTNAME=	gtkstep-2.0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://ulli.linuxbox.com/gtkstep/
 
