@@ -3,14 +3,13 @@
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/net/naim/Makefile,v 1.7 1999/10/10 23:37:00 steve Exp $
+# $FreeBSD: ports/net/naim/Makefile,v 1.8 1999/10/16 17:13:29 mharo Exp $
 #
 
-DISTNAME=	naim-0.9.5-recon4
+DISTNAME=	naim-0.9.5-nicer2
 CATEGORIES=	net
 MASTER_SITES=	http://dev.n.ml.org/ \
 		ftp://ftp.netmug.org/pub/FreeBSD/distfiles/
-EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	mharo@FreeBSD.org
 
