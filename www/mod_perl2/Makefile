@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mod_perl
-# Version required:			1.21_02
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.5 2000/03/10 10:41:13 sheldonh Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.6 2000/03/10 10:42:30 sheldonh Exp $
 #
 
-DISTNAME=	mod_perl-1.21_02
+PORTNAME=	mod_perl
+PORTVERSION= 	1.21_02
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache

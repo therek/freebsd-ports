@@ -1,15 +1,15 @@
 # New ports collection makefile for:    lynx
-# Version required:     2.8.3*
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.109 2000/01/08 19:32:00 ache Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.110 2000/03/05 05:04:48 kris Exp $
 #
 
-DISTNAME=       lynx2.8.3dev.20
-PKGNAME=        lynx-2.8.3dev.20
+PORTNAME=	lynx
+PORTVERSION= 	2.8.3dev.20
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ache@FreeBSD.org
 

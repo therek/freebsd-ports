@@ -1,15 +1,15 @@
 # New ports collection makefile for:	bkmrkconv
-# Version required:	1.08
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.1 2000/03/29 19:44:32 will Exp $
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.2 2000/03/29 20:09:31 will Exp $
 #
 
-DISTNAME=	bkmrkconv
-PKGNAME=	bkmrkconv-1.08
+PORTNAME=	bkmrkconv
+PORTVERSION= 	1.08
 CATEGORIES=	www
 MASTER_SITES=	http://www.dcs.warwick.ac.uk/~csube/bkmrkconv/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 

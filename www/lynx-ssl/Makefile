@@ -1,15 +1,15 @@
 # New ports collection makefile for:    lynx
-# Version required:     2.8
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.8 2000/02/06 22:25:14 kris Exp $
+# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.9 2000/03/13 03:03:29 asami Exp $
 #
 
-DISTNAME=       lynx2.8.2rel.1
-PKGNAME=        lynx-ssl-2.8.2.1
+PORTNAME=	lynx-ssl
+PORTVERSION= 	2.8.2.1
 CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
+DISTNAME=	lynx2.8.2rel.1
 
 USE_OPENSSL=	RSA
 FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user"

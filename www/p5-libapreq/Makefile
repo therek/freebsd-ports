@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-libapreq
-# Version required:                     0.31
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.37 2000/01/07 23:25:39 ache Exp $
+# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.1.1.1 2000/03/19 05:42:08 vanilla Exp $
 #
 
-DISTNAME=       libapreq-0.31
-PKGNAME=        p5-libapreq-0.31
+PORTNAME=	p5-libapreq
+PORTVERSION= 	0.31
 CATEGORIES=     www perl5 devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     Apache
+DISTNAME=	libapreq-0.31
 
 MAINTAINER=	frank@exit.com
 

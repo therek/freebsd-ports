@@ -1,15 +1,15 @@
 # New ports collection makefile for:	mozilla
-# Version required:	M13
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.39 2000/01/29 08:51:27 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.40 2000/02/04 07:45:24 reg Exp $
 #
 
-DISTNAME=	mozilla-source-M13
-PKGNAME=	mozilla-M13
+PORTNAME=	mozilla
+PORTVERSION= 	M13
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m13/src/
+DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	httperf
-# Version required:	0.6
 # Date created:		28 Jul 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/httperf/Makefile,v 1.4 2000/03/22 01:59:36 will Exp $
+# $FreeBSD: ports/www/httperf/Makefile,v 1.5 2000/03/23 02:21:51 obrien Exp $
 #
 
-DISTNAME=	httperf-0.6
+PORTNAME=	httperf
+PORTVERSION= 	0.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 

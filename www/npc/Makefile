@@ -1,12 +1,12 @@
 # New ports collection makefile for:	npc.cgi
-# Version required:	0.83
 # Date created:		3 December 1998
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/npc/Makefile,v 1.2 1999/08/31 02:43:06 peter Exp $
 #
 
-DISTNAME=	npc-0.83
+PORTNAME=	npc
+PORTVERSION= 	0.83
 CATEGORIES=	www
 MASTER_SITES=	http://www2.biglobe.ne.jp/%7Enir/soft/
 

@@ -3,17 +3,18 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid22/Makefile,v 1.61 1999/08/31 02:43:16 peter Exp $
+# $FreeBSD: ports/www/squid22/Makefile,v 1.62 1999/11/11 02:40:18 peter Exp $
 #
 
-DISTNAME=	squid-2.2.STABLE5
-PKGNAME=	squid-2.2
+PORTNAME=	squid
+PORTVERSION= 	2.2
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://squid.nlanr.net/pub/squid-2/STABLE/ \
 	ftp://www.unimelb.edu.au/pub/cwis/servers/unix/squid/squid-2/STABLE/ \
 	ftp://sunsite.auc.dk/pub/infosystems/squid/squid-2/STABLE/ \
 	ftp://ftp.net.lut.ac.uk/squid/squid-2/STABLE/
+DISTNAME=	squid-2.2.STABLE5
 EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	peter@freebsd.org
@@ -59,7 +60,7 @@ NO_LATEST_LINK=	yes
 #CONFIGURE_ARGS+= --enable-time-hack
 #  - Set an explicit hostname in cachemgr.cgi
 #CONFIGURE_ARGS+= --enable-cachemgr-hostname=some.hostname
-#  - Enable ACL based on ethernet address (eg: for machines with dynamic DHCP 
+#  - Enable ACL based on ethernet address (eg: for machines with dynamic DHCP
 #    assigned IP addresses)
 #CONFIGURE_ARGS+= --enable-arp-acl
 #  - Enable HTCP protocol

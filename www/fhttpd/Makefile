@@ -1,12 +1,12 @@
 # New ports collection makefile for:	fhttpd
-# Version required:	0.4.2
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/fhttpd/Makefile,v 1.1 2000/01/29 07:15:09 steve Exp $
+# $FreeBSD: ports/www/fhttpd/Makefile,v 1.2 2000/03/22 01:59:34 will Exp $
 #
 
-DISTNAME=	fhttpd-0.4.2
+PORTNAME=	fhttpd
+PORTVERSION= 	0.4.2
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.fhttpd.org/
 

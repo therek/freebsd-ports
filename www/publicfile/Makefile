@@ -1,12 +1,12 @@
 # New ports collection makefile for: publicfile-0.52
-# Version required:	0.52
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/publicfile/Makefile,v 1.1.1.1 2000/01/28 16:41:08 nbm Exp $
 #
 
-DISTNAME=	publicfile-0.52
+PORTNAME=	publicfile
+PORTVERSION= 	0.52
 CATEGORIES=	ftp
 MASTER_SITES=	http://cr.yp.to/publicfile/
 

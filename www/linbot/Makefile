@@ -1,12 +1,12 @@
 # New ports collection makefile for: linbot
-# Version required:    0.8
 # Date created:        19 September 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linbot/Makefile,v 1.6 1999/08/31 02:42:55 peter Exp $
 #
 
-DISTNAME=	linbot-0.9
+PORTNAME=	linbot
+PORTVERSION= 	0.9
 CATEGORIES=	www python
 MASTER_SITES=	http://starship.skyport.net/crew/marduk/linbot/download/
 

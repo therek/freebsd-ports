@@ -1,9 +1,8 @@
 # New ports collection makefile for: netscape (navigator only)
-# Version required:	4.7
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.44 2000/01/17 12:40:00 asami Exp $
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.45 2000/02/28 08:34:13 obrien Exp $
 #
 
 .include <bsd.port.pre.mk>

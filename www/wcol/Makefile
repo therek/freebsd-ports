@@ -1,15 +1,15 @@
 # New ports collection makefile for:	wcolEpre
-# Version required:	990110_150126
 # Date created:		17 July 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/www/wcol/Makefile,v 1.5 1999/08/31 06:52:20 mharo Exp $
+# $FreeBSD: ports/www/wcol/Makefile,v 1.6 1999/09/04 17:18:32 shige Exp $
 #
 
-DISTNAME=	wcolEpre.990110_150126
-PKGNAME=	wcolEpre-1999.01.10
+PORTNAME=	wcolEpre
+PORTVERSION= 	1999.01.10
 CATEGORIES=	www
 MASTER_SITES=	http://shika.aist-nara.ac.jp/products/DEST/Wcol/
+DISTNAME=	wcolEpre.990110_150126
 
 MAINTAINER=	shige@FreeBSD.org
 

@@ -1,9 +1,8 @@
 # New ports collection makefile for: netscape (communicator suite)
-# Version required:     4.7*
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.57 2000/02/29 22:13:29 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.58 2000/03/01 21:27:52 asami Exp $
 #
 
 .if !defined(PRE_MK_INCLUDED)

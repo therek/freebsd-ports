@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-HTML-Summary
-# Version required:		0.017
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.1 2000/01/29 03:29:17 ade Exp $
 #
 
-DISTNAME=	HTML-Summary-0.017
-PKGNAME=	p5-HTML-Summary-0.017
+PORTNAME=	p5-HTML-Summary
+PORTVERSION= 	0.017
 CATEGORIES=     www perl5
 MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
+DISTNAME=	HTML-Summary-0.017
 
 MAINTAINER=	dima@Chg.RU
 

@@ -1,18 +1,17 @@
 # New ports collection makefile for:    apache-ssl HTTPSD
-# Version required:     1.2.x+
 # Date created:     	8th November, 1998
 # Whom:			Adam Laurie <adam@algroup.co.uk>
 #			based on apache port by ache@nagual.pp.ru
 #			and apache-ssl port by Mark Murray <mark@grondar.za>.
 #			Oh, and with a little bit of help from Ben :)
 #
-# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.62 1999/11/07 22:25:32 dirk Exp $
+# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.63 2000/02/12 09:02:43 kris Exp $
 
 APACHE= 	1.3.9
 APACHE-SSL=	1.37
 
-DISTNAME=       apache_${APACHE}
-PKGNAME=        apache+ssl-${APACHE}+${APACHE-SSL}
+PORTNAME=	apache+ssl
+PORTVERSION= 	${APACHE}+${APACHE-SSL}
 CATEGORIES=	www security
 MASTER_SITES=   ftp://www.apache.org/dist/ \
 		ftp://ftp.ox.ac.uk/pub/crypto/SSL/Apache-SSL/ \
@@ -31,7 +30,7 @@ MASTER_SITES=   ftp://www.apache.org/dist/ \
 		ftp://apache-ssl.raver.net/pub/ftp.apache-ssl.org/Apache-SSL/
 
 Y2K=		http://www.apache-ssl.org/#Y2K
-
+DISTNAME=	apache_${APACHE}
 DISTFILES=      ${DISTNAME}${EXTRACT_SUFX} \
 		apache_${APACHE}+ssl_${APACHE-SSL}${EXTRACT_SUFX}
 

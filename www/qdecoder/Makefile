@@ -1,12 +1,12 @@
 # New ports collection makefile for:    qDecoder library
-# Version required:     5
 # Date created:         Sep 10 1999
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/www/qdecoder/Makefile,v 1.1 2000/01/29 22:38:41 steve Exp $
+# $FreeBSD: ports/www/qdecoder/Makefile,v 1.2 2000/04/02 17:38:17 mharo Exp $
 #
 
-DISTNAME=	qDecoder-5.0.8
+PORTNAME=	qDecode
+PORTVERSION= 	5.0.8
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hongik.com/pub/qDecoder/
 EXTRACT_SUFX=	.tar.Z

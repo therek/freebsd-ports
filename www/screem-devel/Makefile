@@ -1,12 +1,12 @@
 # New ports collection makefile for:	SCREEM
-# Version required:	0.2.1
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.2 2000/03/21 17:47:32 ade Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.3 2000/03/21 23:34:03 will Exp $
 #
 
-DISTNAME=	screem-0.2.1
+PORTNAME=	screem
+PORTVERSION= 	0.2.1
 CATEGORIES=	www
 MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/screem/ \
 		http://www.screem.org/src/

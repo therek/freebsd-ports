@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wwwoffle
-# Version required:	2.4
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.6 1999/08/31 02:43:34 peter Exp $
 #
 
-DISTNAME=	wwwoffle-2.4
+PORTNAME=	wwwoffle
+PORTVERSION= 	2.4
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/httpd/ \
 		${MASTER_SITE_SUNSITE}

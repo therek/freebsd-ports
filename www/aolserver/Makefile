@@ -1,15 +1,15 @@
 # New ports collection makefile for:	aolserver
-# Version required:	3.0b6
 # Date created:		13 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.1 2000/01/29 05:59:24 steve Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.2 2000/02/23 13:55:38 imura Exp $
 #
 
-DISTNAME=	as3b61
-PKGNAME=	aolserver-3.0b6.1
+PORTNAME=	aolserver
+PORTVERSION= 	3.0.b6.1
 CATEGORIES=	www
 MASTER_SITES=	http://aolserver.com/download/3.0b61/
+DISTNAME=	as3b61
 EXTRACT_SUFX=	.src.tgz
 
 MAINTAINER=	mab@red-bean.com

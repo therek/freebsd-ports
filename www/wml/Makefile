@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wml
-# Version required:	1.6.8
 # Date created:		09-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/www/wml/Makefile,v 1.29 1999/08/31 02:43:30 peter Exp $
+# $FreeBSD: ports/www/wml/Makefile,v 1.30 1999/12/24 18:39:46 mharo Exp $
 #
 
-DISTNAME=	wml-1.6.8
+PORTNAME=	wml
+PORTVERSION= 	1.6.8
 CATEGORIES=	www lang
 MASTER_SITES=	http://www.engelschall.com/sw/wml/distrib/ \
 		ftp://ftp.ch.engelschall.com/sw/wml/ \

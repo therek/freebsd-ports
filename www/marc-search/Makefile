@@ -1,15 +1,15 @@
 # New ports collection makefile for:	marc-search
-# Version required:	4.3
 # Date created:		25 November 1998
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/www/marc-search/Makefile,v 1.5 1999/08/31 02:42:58 peter Exp $
+# $FreeBSD: ports/www/marc-search/Makefile,v 1.6 2000/02/05 10:31:02 sheldonh Exp $
 #
 
-DISTNAME=	marc-search.4.3
-PKGNAME=	marc-search-4.3
+PORTNAME=	marc-search
+PORTVERSION= 	4.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/contrib/marc-search/
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	sheldonh@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    httptunnel
-# Version required:     3.0
 # Date created:         March 20 2000
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/httptunnel/Makefile,v 1.1 2000/03/21 01:17:48 brian Exp $
 #
 
-DISTNAME=	httptunnel-3.0
+PORTNAME=	httptunnel
+PORTVERSION= 	3.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.Awfulhak.org/httptunnel/ \
 		ftp://ftp.nocrew.org/pub/nocrew/unix/ \

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	mapedit
-# Version required:	2.24
 # Date created:		Fr   4 Apr 1997 17:45:31 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/mapedit/Makefile,v 1.15 2000/02/16 00:15:03 mharo Exp $
+# $FreeBSD: ports/www/mapedit/Makefile,v 1.16 2000/02/20 17:01:08 andreas Exp $
 #
 
-DISTNAME=	mapedit2.3
-PKGNAME=	mapedit-2.3
+PORTNAME=	mapedit
+PORTVERSION= 	2.3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.boutell.com/pub/boutell/mapedit/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

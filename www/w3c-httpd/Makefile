@@ -1,12 +1,12 @@
 # New ports collection makefile for:	w3c-httpd
-# Version required:	3.0A
 # Date created:		29 October 1994
 # Whom:			pst (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/w3c-httpd/Makefile,v 1.23 1999/08/31 02:43:23 peter Exp $
 #
 
-DISTNAME=	w3c-httpd-3.0A
+PORTNAME=	w3c-httpd
+PORTVERSION= 	3.0A
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.w3.org/pub/httpd/ \
 		ftp://ftp-eu.w3.org/pub/httpd/

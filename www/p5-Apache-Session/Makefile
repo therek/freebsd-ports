@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Apache-Session
-# Version required:			1.03
 # Date created:				March 13, 2000
 # Whom:					Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-Apache-ASP/Makefile,v 1.1 2000/01/29 05:48:16 steve Exp $
+# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.1.1.1 2000/03/19 05:44:42 vanilla Exp $
 #
 
-DISTNAME=	Apache-Session-1.03
-PKGNAME=	p5-Apache-Session-1.03
+PORTNAME=	p5-Apache-Session
+PORTVERSION= 	1.03
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
+DISTNAME=	Apache-Session-1.03
 
 MAINTAINER=	frank@exit.com
 

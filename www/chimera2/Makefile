@@ -1,12 +1,12 @@
 # New ports collection makefile for:	chimera
-# Version required:     2.0a15
 # Date created:         24 Nov 1997
 # Whom:                 Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/www/chimera2/Makefile,v 1.22 1999/08/31 02:42:46 peter Exp $
+# $FreeBSD: ports/www/chimera2/Makefile,v 1.23 2000/02/03 06:11:21 obrien Exp $
 #
 
-DISTNAME=	chimera-2.0a19
+PORTNAME=	chimera
+PORTVERSION= 	2.0a19
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera-alpha/ \
 		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/WWW/chimera/ \

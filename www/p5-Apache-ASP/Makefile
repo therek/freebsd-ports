@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Apache-ASP
-# Version required:			0.18
 # Date created:				31 December 1999
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/www/p5-Apache-ASP/Makefile,v 1.1 2000/01/29 05:48:16 steve Exp $
+# $FreeBSD: ports/www/p5-Apache-ASP/Makefile,v 1.2 2000/04/01 02:01:15 mharo Exp $
 #
 
-DISTNAME=	Apache-ASP-0.18
-PKGNAME=	p5-Apache-ASP-0.18
+PORTNAME=	p5-Apache-ASP
+PORTVERSION=	0.18
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
+DISTNAME=	Apache-ASP-0.18
 
 MAINTAINER=	igor@zynaps.ru
 

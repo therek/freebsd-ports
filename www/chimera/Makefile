@@ -1,12 +1,12 @@
 # New ports collection makefile for:	chimera
-# Version required:	1.70p0
 # Date created:		26 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/www/chimera/Makefile,v 1.16 1999/08/31 06:51:41 mharo Exp $
+# $FreeBSD: ports/www/chimera/Makefile,v 1.17 1999/09/20 00:39:16 steve Exp $
 #
 
-DISTNAME=	chimera-1.70p0
+PORTNAME=	chimera
+PORTVERSION= 	1.70p0
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera/
 

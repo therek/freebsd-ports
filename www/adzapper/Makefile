@@ -1,12 +1,12 @@
 # New ports collection makefile for:		adzapper
-# Version required:		0.1.30
 # Date created:			01 Oct 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/www/adzapper/Makefile,v 1.1.1.1 1999/11/01 02:33:08 steve Exp $
+# $FreeBSD: ports/www/adzapper/Makefile,v 1.2 2000/03/11 03:02:18 obrien Exp $
 #
 
-DISTNAME=	adzapper-0.1.30
+PORTNAME=	adzapper
+PORTVERSION= 	0.1.30
 CATEGORIES=	www
 MASTER_SITES=	http://www.halcyon.com/adamf/adzapper/
 EXTRACT_SUFX=	.tgz

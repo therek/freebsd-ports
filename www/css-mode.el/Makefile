@@ -1,15 +1,15 @@
 # New ports collection makefile for:	css-mode.el
-# Version required:	0.10
 # Date created:		21 October 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/www/css-mode.el/Makefile,v 1.1.1.1 1999/10/22 16:09:11 shige Exp $
+# $FreeBSD: ports/www/css-mode.el/Makefile,v 1.2 1999/11/25 13:49:04 shige Exp $
 #
 
-DISTNAME=	css-mode.el
-PKGNAME=	css-mode-elisp-0.10
+PORTNAME=	css-mode-elisp
+PORTVERSION=	0.10
 CATEGORIES=	www elisp
 MASTER_SITES=	http://www.stud.ifi.uio.no/~lmariusg/download/
+DISTNAME=	css-mode.el
 
 MAINTAINER=	shige@FreeBSD.org
 

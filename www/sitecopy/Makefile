@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sitecopy
-# Version required:     0.9.*
 # Date created:		15 January 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/www/sitecopy/Makefile,v 1.13 1999/10/04 17:25:23 ache Exp $
+# $FreeBSD: ports/www/sitecopy/Makefile,v 1.14 2000/02/16 23:59:55 ache Exp $
 #
 
-DISTNAME=       sitecopy-0.9.5
+PORTNAME=	sitecopy
+PORTVERSION= 	0.9.5
 CATEGORIES=	www
 MASTER_SITES=   http://www.lyra.org/sitecopy/
 

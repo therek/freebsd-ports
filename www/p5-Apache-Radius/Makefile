@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Apache-Radius
-# Version required:			0.3
 # Date created:				Mon 20 Sep 19:46:21 SAST 1999
 # Whom:					Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.3 2000/03/21 18:09:57 mharo Exp $
+# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.4 2000/03/22 09:19:26 sheldonh Exp $
 #
 
-DISTNAME=	Apache-AuthenRadius-0.3
-PKGNAME=	p5-Apache-Radius-0.3
+PORTNAME=	p5-Apache-Radius
+PORTVERSION= 	0.3
 CATEGORIES=	www security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
+DISTNAME=	Apache-AuthenRadius-0.3
 
 MAINTAINER=	sheldonh@FreeBSD.org
 

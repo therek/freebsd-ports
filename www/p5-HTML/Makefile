@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-HTML
-# Version required:			0.6
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML/Makefile,v 1.8 1999/08/31 02:43:08 peter Exp $
+# $FreeBSD: ports/www/p5-HTML/Makefile,v 1.9 1999/08/31 06:52:09 mharo Exp $
 #
 
-DISTNAME=	HTML-0.6
-PKGNAME=	p5-HTML-0.6
+PORTNAME=	p5-HTML
+PORTVERSION= 	0.6
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
+DISTNAME=	HTML-0.6
 
 MAINTAINER=	jfitz@FreeBSD.org
 

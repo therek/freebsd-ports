@@ -1,8 +1,7 @@
 # New ports collection makefile for:	linemode
-# Date created:		17 April 1995
 # Whom:			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/www/linemode/Makefile,v 1.17 1999/09/21 10:11:25 asami Exp $
+# $FreeBSD: ports/www/linemode/Makefile,v 1.18 2000/04/08 04:50:21 knu Exp $
 #
 
 PORTNAME=	linemode

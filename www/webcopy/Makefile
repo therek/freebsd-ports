@@ -1,15 +1,15 @@
 # New ports collection makefile for:    webcopy
-# Version required:     0.98b7
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.10 2000/03/05 17:50:34 ache Exp $
+# $FreeBSD: ports/www/webcopy/Makefile,v 1.11 2000/03/20 21:27:30 mharo Exp $
 #
 
-DISTNAME=	webcopy
-PKGNAME=	${DISTNAME}-${VERSION}
+PORTNAME=	webcopy
+PORTVERSION=	0.98b7
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.inf.utfsm.cl/pub/utfsm/perl/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
@@ -17,7 +17,6 @@ MAINTAINER=	ports@FreeBSD.org
 NO_PACKAGE=	"This program cannot be distributed if modified in any way"
 NO_CDROM=	"Don't sell for profit without written permission"
 WRKSRC=		${WRKDIR}/${PKGNAME}
-VERSION=	0.98b7
 ALL_TARGET=
 
 do-install:

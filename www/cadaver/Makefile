@@ -1,12 +1,12 @@
 # New ports collection makefile for: cadaver
-# Version required:	0.10.0
 # Date created:		13 January 2000
 # Whom:			Alex Povolotsky <tarkhil@over.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cadaver/Makefile,v 1.1 2000/01/29 05:54:08 steve Exp $
 #
 
-DISTNAME=	cadaver-0.10.0
+PORTNAME=	cadaver
+PORTVERSION= 	0.10.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/cadaver/
 

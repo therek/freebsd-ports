@@ -1,13 +1,12 @@
 # New ports collection makefile for:	Apache / PHP
-# Version required:	1.3* / 3.0*
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.109 2000/04/04 20:32:20 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.110 2000/04/05 16:18:33 dirk Exp $
 #
 
-DISTNAME=	apache_${VERSION_APACHE}
-PKGNAME=	apache+php-${VERSION_APACHE}+${VERSION_PHP}
+PORTNAME=	apache+php
+PORTVERSION= 	${VERSION_APACHE}+${VERSION_PHP}
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		http://www.rge.com/pub/infosystems/apache/dist/ \

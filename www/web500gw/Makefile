@@ -1,12 +1,12 @@
 # New ports collection makefile for:    web500gw
-# Version required:     2.1b2
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/web500gw/Makefile,v 1.8 1999/11/26 15:30:25 imura Exp $
+# $FreeBSD: ports/www/web500gw/Makefile,v 1.9 2000/04/01 08:27:36 mharo Exp $
 #
 
-DISTNAME=	web500gw-2.1b3
+PORTNAME=	web500gw
+PORTVERSION= 	2.1b3
 CATEGORIES=	www net
 MASTER_SITES=	ftp://ftp.tu-chemnitz.de/pub/Local/urz/web500gw/ \
 		http://www.tu-chemnitz.de/ftp-home/pub/Local/urz/web500gw/ \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	plugger
-# Version required:	3.0
 # Date created:		11 Februrary 1999
 # Whom:			Jay Sachs <sachs@cs.williams.edu>
 #
-# $FreeBSD: ports/www/plugger/Makefile,v 1.2 1999/08/31 02:43:12 peter Exp $
+# $FreeBSD: ports/www/plugger/Makefile,v 1.3 2000/03/05 19:59:05 asami Exp $
 #
 
-DISTNAME=	plugger-3.0
+PORTNAME=	plugger
+PORTVERSION= 	3.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.hubbe.net/~hubbe/plugger/ \
 		ftp://ftp.netscape.com/pub/sdk/plugin/unix/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnuinfo
-# Version required:	1.3
 # Date created:		Tue Oct 12 00:02:04 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/gnuinfo/Makefile,v 1.1.1.1 1999/11/26 19:29:56 steve Exp $
 #
 
-DISTNAME=	gnuinfo-1.3
+PORTNAME=	gnuinfo
+PORTVERSION= 	1.3
 CATEGORIES=	www
 MASTER_SITES=	http://user.cs.tu-berlin.de/~kraxel/info2html/
 

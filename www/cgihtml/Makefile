@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cgihtml
-# Version required:     1.69
 # Date created:		3 Nov 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cgihtml/Makefile,v 1.4 1999/08/31 02:42:44 peter Exp $
 #
 
-DISTNAME=	cgihtml-1.69
+PORTNAME=	cgihtml
+PORTVERSION= 	1.69
 CATEGORIES=	devel www
 MASTER_SITES=	ftp://ftp.eekim.com/pub/users/eekim/cgihtml/
 

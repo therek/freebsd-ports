@@ -1,12 +1,12 @@
 # New ports collection makefile for:   vrweb
-# Version required:    1.5
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/www/vrweb/Makefile,v 1.14 1999/10/22 09:35:45 nakai Exp $
+# $FreeBSD: ports/www/vrweb/Makefile,v 1.15 2000/01/27 10:58:12 nakai Exp $
 #
 
-DISTNAME=	vrweb-1.5
+PORTNAME=	vrweb
+PORTVERSION= 	1.5
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.iicm.edu/pub/VRweb/UNIX/vrweb-1.5/ \
 		ftp://ftp.sunet.se/pub/nir/Hyper-G/VRweb/UNIX/vrweb-1.5/ \

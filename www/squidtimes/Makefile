@@ -1,16 +1,16 @@
 # New ports collection makefile for:	squidtimes
-# Version required:	1.12
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/squidtimes/Makefile,v 1.4 1999/08/31 02:43:17 peter Exp $
+# $FreeBSD: ports/www/squidtimes/Makefile,v 1.5 2000/02/08 09:29:17 peter Exp $
 #
 
-DISTNAME=	squidtimes-1.12-freebsd.bin
-PKGNAME=	squidtimes-1.12
+PORTNAME=	squidtimes
+PORTVERSION= 	1.12
 CATEGORIES=	www
 MASTER_SITES=	http://www.cineca.it/~nico/binaries/ \
 		http://people.FreeBSD.org/~billf/
+DISTNAME=	squidtimes-1.12-freebsd.bin
 EXTRACT_SUFX=
 
 MAINTAINER=	dima@chg.ru

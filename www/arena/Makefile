@@ -1,15 +1,15 @@
 # New ports collection makefile for:    arena
-# Version required:     i18n beta-3b
 # Date created:         Dec 1 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/arena/Makefile,v 1.17 1999/08/31 02:42:41 peter Exp $
+# $FreeBSD: ports/www/arena/Makefile,v 1.18 1999/08/31 06:51:36 mharo Exp $
 #
 
-DISTNAME=       arena-CJK-beta3a
-PKGNAME=        arena-i18n-beta3b
+PORTNAME=	arena-i18n
+PORTVERSION= 	beta3b
 CATEGORIES=     www
 MASTER_SITES=   ftp://ftp-eu.w3.org/pub/Arena/beta-3/
+DISTNAME=	arena-CJK-beta3a
 
 MAINTAINER=     ache@FreeBSD.org
 

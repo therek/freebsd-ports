@@ -1,12 +1,12 @@
 # New ports collection makefile for:    wn
-# Version required:     1.18
 # Date created:         4 May 1995
 # Whom:                 adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/wn/Makefile,v 1.32 1999/08/31 02:43:32 peter Exp $
 #
 
-DISTNAME=       wn-1.18.6
+PORTNAME=	wn
+PORTVERSION= 	1.18.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.acns.nwu.edu/pub/wn/
 

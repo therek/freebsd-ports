@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ashe
-# Version required:	1.1.2
 # Date created:		16 October 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/www/ashe/Makefile,v 1.8 1999/08/31 02:42:42 peter Exp $
+# $FreeBSD: ports/www/ashe/Makefile,v 1.9 1999/08/31 06:51:37 mharo Exp $
 #
 
-DISTNAME=	ashe-1.1.2
+PORTNAME=	ashe
+PORTVERSION= 	1.1.2
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.cs.rpi.edu/pub/puninj/ASHE/ASHE-1.1.2/src/ \
 		ftp://ftp.cs.rpi.edu/pub/puninj/ASHE/ASHE-1.1.2/libcci/ \

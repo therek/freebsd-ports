@@ -1,17 +1,16 @@
 # New ports collection makefile for:	p5-libwww
-# http://www.linpro.no/lwp/
-# Version required:                     5.*
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.37 2000/01/07 23:25:39 ache Exp $
+# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.38 2000/03/20 21:45:43 mharo Exp $
 #
 
-DISTNAME=       libwww-perl-5.47
-PKGNAME=        p5-libwww-5.47
+PORTNAME=	p5-libwww
+PORTVERSION=	5.47
 CATEGORIES=     www perl5 devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     LWP
+DISTNAME=	libwww-perl-5.47
 
 MAINTAINER=	jfitz@FreeBSD.org
 
