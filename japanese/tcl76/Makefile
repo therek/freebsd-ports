@@ -2,7 +2,7 @@
 # Date created:		11 March 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.10 1999/08/28 02:42:21 mharo Exp $
+# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.11 2000/04/12 14:37:48 knu Exp $
 #
 
 PORTNAME=	tcl
@@ -20,6 +20,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
+PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh
+PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/DEINSTALL.tclsh
 
 VERSION=	${PORTVERSION}jp
 
@@ -49,6 +51,9 @@ post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if ${PORTOBJFORMAT} == "aout" 
 	${LN} -sf libtcl76jp.so.1.0 ${PREFIX}/lib/libtcl76jp.so
+.endif
+.if exists(${PKGINSTALL})
+	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif
 
 test:

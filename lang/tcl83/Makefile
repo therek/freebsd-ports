@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.30 2000/05/01 14:39:49 jseger Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.31 2000/05/10 21:26:49 jseger Exp $
 #
 
 PORTNAME=	tcl
@@ -27,6 +27,7 @@ CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
 MAKE_ENV=	SHORT_TCL_VER=83
 PKGINSTALL=     ${PKGDIR}/INSTALL.tclsh
+PKGDEINSTALL=	${PKGDIR}/DEINSTALL.tclsh
 
 PLIST_SUB=	TCL_VER=8.3 SHORT_TCL_VER=83
 
