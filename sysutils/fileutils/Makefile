@@ -2,7 +2,7 @@
 # Date created:	Mon Jun  5 22:42:27 CEST 2000
 # Whom: ust@cert.siemens.de
 #
-# $FreeBSD: ports/sysutils/fileutils/Makefile,v 1.2 2001/01/24 17:26:01 trevor Exp $
+# $FreeBSD: ports/sysutils/fileutils/Makefile,v 1.3 2001/02/15 17:01:01 sf Exp $
 #
 
 PORTNAME=	fileutils
@@ -11,7 +11,11 @@ CATEGORIES=	sysutils
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	fileutils
 
-MAINTAINER=	clefevre@poboxes.com
+MAINTAINER=	clefevre@citeweb.net
+
+#
+# Global variables
+#
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g
@@ -20,7 +24,13 @@ MAN1=		gchgrp.1 gchmod.1 gchown.1 gcp.1 gdd.1 gdf.1 gdir.1 \
 		gdircolors.1 gdu.1 ginstall.1 gln.1 gls.1 gmkdir.1 gmkfifo.1 \
 		gmknod.1 gmv.1 grm.1 grmdir.1 gsync.1 gtouch.1 gvdir.1
 
+#
+# Local variables
+#
+
+INSTALL_INFO?=	install-info
+
 post-install:
-	install-info ${PREFIX}/info/fileutils.info ${PREFIX}/info/dir
+	@${INSTALL_INFO} ${PREFIX}/info/${PORTNAME}.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
