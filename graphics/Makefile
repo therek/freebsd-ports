@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.274 2001/03/08 02:16:13 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.275 2001/03/08 17:34:32 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -214,6 +214,7 @@
     SUBDIR += utah-glx
     SUBDIR += vcdgear
     SUBDIR += vcdpad
+    SUBDIR += vcdtools
     SUBDIR += vcg
     SUBDIR += vid
     SUBDIR += view3ds
