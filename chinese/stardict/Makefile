@@ -3,13 +3,14 @@
 # Whom:                                 Peng HaiJie   (phj@cn.FreeBSD.org)
 #                                       (phj@transfar.com)
 #
-# $FreeBSD: ports/chinese/cdict/Makefile,v 1.4 2000/01/03 18:56:10 steve Exp $
+# $FreeBSD: ports/chinese/stardict/Makefile,v 1.5 2000/04/13 08:27:59 asami Exp $
 #
 
-PORTNAME=	cdict
-PORTVERSION=	1.0
+PORTNAME=	stardict
+PORTVERSION=	1.3
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://ftp.cn.FreeBSD.org/pub/ported/
+PKGNAMEPREFIX=	zh-
 DISTNAME=	${PKGNAME}
 
 MAINTAINER=	phj@cn.FreeBSD.org
@@ -17,9 +18,12 @@ MAINTAINER=	phj@cn.FreeBSD.org
 REQUIRES_MOTIF=	yes
 
 GNU_CONFIGURE=	yes
+USE_GMAKE    =  yes
 USE_XLIB=	yes
 
-MANCOMPRESSED=	yes
-MAN1=		cdict.1
+PREFIX=		${X11BASE}
+
+port-install:
+	strip	$(PREFIX)/bin/${PORTNAME}
 
 .include <bsd.port.mk>
