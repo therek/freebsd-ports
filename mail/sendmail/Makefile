@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.3 2000/12/21 07:32:18 will Exp $
+# $FreeBSD: ports/mail/sendmail/Makefile,v 1.4 2001/01/05 03:15:39 jeh Exp $
 #
 
 PORTNAME=	sendmail
@@ -22,6 +22,9 @@ PLIST=		${WRKDIR}/.PLIST.more
 .if defined(SENDMAIL_WITH_TSL)
 USE_OPENSSL=	yes
 .endif
+.if defined(SENDMAIL_WITH_SASL)
+BUILD_DEPENDS=	${LOCALBASE}/sbin/pwcheck:${PORTSDIR}/security/cyrus-sasl
+.endif
 
 .if exists(${DESTDIR}/etc/mail/mailer.conf)
 pre-configure:
@@ -29,6 +32,10 @@ pre-configure:
 		${FILESDIR}/site.config.m4 > ${WCONF}/site.config.m4
 .if defined(SENDMAIL_WITH_TSL)
 	${CAT} ${FILESDIR}/site.config.m4.tls >> ${WCONF}/site.config.m4
+.endif
+.if defined(SENDMAIL_WITH_SASL)
+	${SED} -e "s=%%LOCALBASE%%=${LOCALBASE}=" \
+		${FILESDIR}/site.config.m4.sasl >>${WCONF}/site.config.m4
 .endif
 .else
 pre-configure:
