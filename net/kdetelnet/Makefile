@@ -1,31 +1,34 @@
-# New ports collection makefile for:   ktelnet
+# New ports collection makefile for:	ktelnet
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.11 2001/01/16 17:31:50 sobomax Exp $
+# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.12 2001/01/22 05:49:27 fenner Exp $
 #
 
 PORTNAME=	ktelnet
-PORTVERSION=	0.61
+PORTVERSION=	0.63
 CATEGORIES=	net kde
-MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	Attic/old/1.1.2/apps/network
+MASTER_SITES=	http://www.spaghetti-code.de/download/ktelnet/
 EXTRACT_SUFX=	.tgz
 
+MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CXXFLAGS="$(CXXFLAGS)" \
-		INSTALL_SCRIPT="$(INSTALL_SCRIPT)"
 USE_QT=		yes
+USE_GMAKE=	yes
+USE_AUTOMAKE=	yes
+CONFIGURE_ENV=	QTDIR="${X11BASE}" KDEDIR="${LOCALBASE}"
+CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/X11/qt \
+		--with-extra-includes=${X11BASE}/include \
+		--with-extra-libs=${LOCALBASE}/lib \
+		--program-transform-name='s,k,kde,'
 
-post-install:
-.if !defined(NOPORTDOCS)
-.for DIR in en de
-	@${MKDIR} ${PREFIX}/share/doc/HTML/${DIR}/ktelnet
-	@${INSTALL_MAN} ${WRKSRC}/doc/index.${DIR}.html \
-	    ${PREFIX}/share/doc/HTML/${DIR}/ktelnet/index.html
-.endfor
-.endif
+post-extract:
+	@find ${WRKSRC} -name '*\.deps*' | xargs ${RM} -rf
+
+post-patch:
+	@cd ${WRKSRC} && aclocal
 
 .include <bsd.port.mk>
