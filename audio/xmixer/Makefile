@@ -2,7 +2,7 @@
 # Date created:		27 October 1999
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/xmixer/Makefile,v 1.5 2000/10/02 05:39:30 trevor Exp $
+# $FreeBSD: ports/audio/xmixer/Makefile,v 1.6 2000/10/05 06:35:58 reg Exp $
 #
 
 PORTNAME=	xmixer
@@ -11,7 +11,9 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.hdk-berlin.de/~rasca/
 MASTER_SITE_SUBDIR=	apps/sound/mixers
 
-MAINTAINER=	trevor@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		seems incompatible with newpcm
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
