@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.43 2000/01/29 07:55:22 reg Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.44 2000/08/11 12:24:02 will Exp $
 #
 
     SUBDIR += asmodem
@@ -22,6 +22,7 @@
     SUBDIR += sredird
     SUBDIR += tkhylafax
     SUBDIR += viewfax
+    SUBDIR += vpb2
     SUBDIR += xcept
     SUBDIR += yaps
     SUBDIR += zmtx-zmrx
