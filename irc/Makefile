@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/irc/Makefile,v 1.6 1999/08/25 06:12:33 obrien Exp $
 #
 
     SUBDIR += bitchx
@@ -21,6 +21,7 @@
     SUBDIR += sic
     SUBDIR += sirc
     SUBDIR += tirc
+    SUBDIR += tircproxy
     SUBDIR += tkirc
     SUBDIR += trickyirc
     SUBDIR += xchat
