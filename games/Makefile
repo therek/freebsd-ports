@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.258 2000/02/23 00:56:56 jedgar Exp $
+# $FreeBSD: ports/games/Makefile,v 1.259 2000/02/29 15:48:22 sheldonh Exp $
 #
 
     SUBDIR += 3dc
@@ -30,6 +30,7 @@
     SUBDIR += cgoban
     SUBDIR += columns
     SUBDIR += connect4
+    SUBDIR += corewars
     SUBDIR += cosmo
     SUBDIR += crafty
     SUBDIR += crafty-open-large
