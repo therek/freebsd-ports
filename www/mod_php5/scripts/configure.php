@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.157 2002/03/12 11:51:15 roam Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -53,6 +53,7 @@ sockets		"sockets support" OFF \
 sysvsem		"System V semaphore support" OFF \
 sysvshm		"System V shared memory support" OFF \
 transsid	"Transparent session id" OFF \
+yaz		"YAZ support (ANSI/NISO Z39.50)" OFF \
 2> $tempfile
 
 	retval=$?
@@ -296,6 +297,10 @@ EOF
 			;;
 		\"transsid\")
 			echo "CONFIGURE_ARGS+=--enable-trans-sid"
+			;;
+		\"yaz\")
+			echo "LIB_DEPENDS+=	yaz.1:\${PORTSDIR}/net/yaz"
+			echo "CONFIGURE_ARGS+=--with-yaz=\${LOCALBASE}/bin"
 			;;
 		*)
 			echo "Invalid option(s): $*" > /dev/stderr
