@@ -3,12 +3,12 @@
 # Date created:        4 January 2000
 # Whom:                phk
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/mlan/Makefile,v 1.1 2000/01/04 22:11:41 phk Exp $
 #
 
 DISTNAME=	mlpb103
 PKGNAME=	mlan-1.03
-CATEGORIES=	devel
+CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.dalsemi.com/pub/auto_id/public/
 
 MAINTAINER=	phk@FreeBSD.org
