@@ -3,7 +3,7 @@
 # Date created:		15 May 1995
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/mirror/Makefile,v 1.11 1999/08/25 05:55:16 obrien Exp $
+# $FreeBSD: ports/ftp/mirror/Makefile,v 1.12 1999/08/31 06:44:03 mharo Exp $
 #
 
 DISTNAME=	mirror-2.9
@@ -16,7 +16,6 @@ USE_PERL5=	yes
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
 MAN1=		mirror.1 mirror-master.1
-
 
 pre-install:
 	${MKDIR} ${PREFIX}/lib/mirror
