@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.111 2001/07/12 10:10:28 sobomax Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.112 2001/08/08 06:17:40 lioux Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -62,17 +62,18 @@ CONFIGURE_ARGS+=	--with-threads
 CONFIGURE_ARGS+=	--without-threads
 .endif
 
-.if defined(WITH_16BIT_PIXEL)
-CONFIGURE_ARGS+=	--enable-16bit-pixel
-.else
+# Faster, but poor quality
+.if defined(WITHOUT_IMAGEMAGICK_16BIT_PIXEL)
 CONFIGURE_ARGS+=	--disable-16bit-pixel
 .endif
 
+# Produce standard (small) GIFs
 .if defined(HAVE_UNISYS_LICENSE)
 CONFIGURE_ARGS+=	--enable-lzw
 .endif
 
-.if defined(WITH_MODULES)
+# Loadable coders, smaller executable
+.if !defined(WITHOUT_IMAGEMAGICK_MODULES)
 LIB_DEPENDS+=	ltdl.1:${PORTSDIR}/devel/libtool
 LIBTOOLFLAGS=	# none
 CONFIGURE_ARGS+=	--with-modules
