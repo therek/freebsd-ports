@@ -2,7 +2,7 @@
 # Date created:		9 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.16 2000/06/16 21:50:24 asami Exp $
+# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.17 2000/08/21 10:07:35 sobomax Exp $
 #
 
 PORTNAME=	wsoundserver
@@ -23,7 +23,6 @@ RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
-MAKE_ARGS=	"-E CFLAGS"
 
 .if defined(WITH_ESD)
 ESD_DEPENDS=	esd.2:${PORTSDIR}/audio/esound
