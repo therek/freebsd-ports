@@ -2,11 +2,11 @@
 # Date created:				13 April 2001
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/mail/pflogsumm/Makefile,v 1.2 2001/04/26 17:08:04 phantom Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pflogsumm
-PORTVERSION=	0.9.0
+PORTVERSION=	1.0.3
 PORTEPOCH=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://jimsun.LinxNet.com/downloads/
