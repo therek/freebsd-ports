@@ -2,7 +2,7 @@
 # Date created:		15 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/x3arth/Makefile,v 1.5 2000/04/08 22:02:03 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	x3arth
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
 
 MAINTAINER=	ports@FreeBSD.org
+
+IGNORE=		"FTP directory format changed, can no longer fetch images"
 
 RUN_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82 \
 		${X11BASE}/bin/xv:${PORTSDIR}/graphics/xv
