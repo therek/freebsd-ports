@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.359 2001/07/03 01:01:42 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.360 2001/07/23 10:02:18 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -105,6 +105,7 @@
     SUBDIR += mango
     SUBDIR += matrix-kmod
     SUBDIR += mc
+    SUBDIR += menushki
     SUBDIR += metatheme
     SUBDIR += mgp-mode.el
     SUBDIR += misterproper
