@@ -1,6 +1,6 @@
 --- gdb/kvm-fbsd.c	Mon Jun  3 11:32:24 2002
 +++ gdb/kvm-fbsd.c	Mon Jun  3 11:30:35 2002
-@@ -0,0 +1,1055 @@
+@@ -0,0 +1,1056 @@
 +/* Live and postmortem kernel debugging functions for FreeBSD.
 +   Copyright 1996 Free Software Foundation, Inc.
 +
@@ -20,7 +20,7 @@
 +along with this program; if not, write to the Free Software
 +Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */
 +
-+/* $FreeBSD: ports/devel/gdb52/files/patch-gdb_kvm-fbsd.c,v 1.1 2002/06/06 03:56:34 mp Exp $ */
++/* $FreeBSD: ports/devel/fpc-gdb/files/patch-gdb_kvm-fbsd.c,v 1.1 2004/02/22 01:52:20 marcus Exp $ */
 +
 +#include "defs.h"
 +
@@ -54,6 +54,7 @@
 +#include <machine/frame.h>
 +
 +#if __FreeBSD_version >= 500032 && defined(i386)
++typedef __cpumask_t	cpumask_t;
 +#define _KERNEL
 +#include <sys/pcpu.h>
 +#undef _KERNEL
