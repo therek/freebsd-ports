@@ -2,7 +2,7 @@
 # Date created:				6 March 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/amphetamine/Makefile,v 1.3 2000/08/15 10:27:28 sobomax Exp $
+# $FreeBSD: ports/games/amphetamine/Makefile,v 1.4 2000/11/01 15:51:04 sobomax Exp $
 #
 
 PORTNAME=	amphetamine
@@ -18,10 +18,13 @@ LIB_DEPENDS=  	SDL-1.0.2:${PORTSDIR}/devel/sdl
 
 DATAVERSION=	0.8.6
 
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl-config
+
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_BZIP2=	yes
 USE_GMAKE=	yes
+MAKE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
 
 post-install:
 		@(cd ${WRKDIR}/amph && ${TAR} -c -f - * ) \
