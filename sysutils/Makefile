@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.198 2001/07/03 18:13:05 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.199 2001/07/06 15:34:52 roam Exp $
 #
     SUBDIR += yawho
 
@@ -145,6 +145,7 @@
     SUBDIR += symlinks
     SUBDIR += syslog-ng
     SUBDIR += tcplist
+    SUBDIR += tdir
     SUBDIR += timelimit
     SUBDIR += truncate
     SUBDIR += tua
