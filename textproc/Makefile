@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.99 2000/07/06 19:08:21 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.100 2000/07/17 09:59:04 sobomax Exp $
 #
 
     SUBDIR += agrep
@@ -32,6 +32,7 @@
     SUBDIR += expat
     SUBDIR += fr-ispell
     SUBDIR += freegrep
+    SUBDIR += fribidi
     SUBDIR += gaspell
     SUBDIR += gdict
     SUBDIR += glimpse
