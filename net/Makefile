@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.552 2001/06/05 02:07:45 dougb Exp $
+# $FreeBSD: ports/net/Makefile,v 1.553 2001/06/10 04:18:31 markp Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -178,6 +178,7 @@
     SUBDIR += linpopup
     SUBDIR += lla
     SUBDIR += macipgw
+    SUBDIR += maradns
     SUBDIR += mars_nwe
     SUBDIR += merlinmon
     SUBDIR += micq
