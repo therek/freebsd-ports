@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.127 2001/04/23 04:25:26 vanilla Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.128 2001/05/10 07:32:30 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -149,7 +149,6 @@ while [ "$1" ]; do
 		\"Interbase\")
 			echo "LIB_DEPENDS+=	gds.1:\${PORTSDIR}/databases/firebird"
 			echo "CONFIGURE_ARGS+=--with-interbase=\${PREFIX}/firebird"
-			LIBS="${LIBS} -L\${PREFIX}/firebird/lib"
 			;;
 		\"dBase\")
 			echo "CONFIGURE_ARGS+=--with-dbase"
