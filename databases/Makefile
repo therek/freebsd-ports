@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.109 2001/05/23 19:22:31 knu Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.110 2001/05/27 02:04:48 vanilla Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -71,6 +71,7 @@
     SUBDIR += rdb
     SUBDIR += ruby-bdb
     SUBDIR += ruby-cdb
+    SUBDIR += ruby-dbi
     SUBDIR += ruby-gdbm
     SUBDIR += ruby-rdbc1
     SUBDIR += ruby-mysql
