@@ -2,7 +2,7 @@
 # Date created:         Nov 26 1997
 # Whom:                 msmith@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_kdump/Makefile,v 1.15 2000/06/29 07:02:11 obrien Exp $
+# $FreeBSD: ports/devel/linux_kdump/Makefile,v 1.16 2000/07/23 00:29:51 marcel Exp $
 #
 
 PORTNAME=	linux_kdump
@@ -16,6 +16,7 @@ MAINTAINER=	marcel@FreeBSD.org
 BUILD_DEPENDS=	/compat/linux/usr/bin/gcc:${PORTSDIR}/devel/linux_devtools
 
 ONLY_FOR_ARCHS=	i386
+MAN1=		linux_kdump.1
 
 .include <bsd.port.pre.mk>
 
