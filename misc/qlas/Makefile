@@ -2,7 +2,7 @@
 # Date created:		14 Oct 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/qlas/Makefile,v 1.1 2000/10/28 12:19:46 jeh Exp $
 #
 
 PORTNAME=	qlas
@@ -12,6 +12,7 @@ MASTER_SITES=	http://lev.serebryakov.spb.ru/download/qlas/
 
 MAINTAINER=	dsh@vlink.ru
 
+USE_PERL5=	yes
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
