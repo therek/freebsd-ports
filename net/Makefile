@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.510 2001/04/05 16:26:35 dirk Exp $
+# $FreeBSD: ports/net/Makefile,v 1.511 2001/04/06 13:15:50 demon Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -117,6 +117,7 @@
     SUBDIR += gopher
     SUBDIR += gq
     SUBDIR += gtic
+    SUBDIR += gtk+licq
     SUBDIR += gtk-gnutella
     SUBDIR += gtkyahoo
     SUBDIR += h2n
