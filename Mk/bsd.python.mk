@@ -1,7 +1,7 @@
 # -*- mode: Fundamental; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.10 2001/04/04 12:32:45 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.11 2001/05/02 11:49:36 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -99,11 +99,11 @@ PYTHON_WRKSRC=		${WRKDIR}/Python-2.1
 PYDISTUTILS=	${PYTHON_LIBDIR}/distutils/core.py:${PYTHON_PORTSDIR}
 PYXML=			${PYTHON_SITELIBDIR}/_xmlplus/__init__.py:${PORTSDIR}/textproc/py-xml
 
-PYTHON_DISTFILE=	BeOpen-Python-2.0.tar.gz
+PYTHON_DISTFILE=	Python-2.0.1.tgz
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python20
-PYTHON_REL=			200
+PYTHON_REL=			201
 PYTHON_SUFFIX=		20
-PYTHON_WRKSRC=		${WRKDIR}/Python-2.0
+PYTHON_WRKSRC=		${WRKDIR}/Python-2.0.1
 
 # Python-1.6
 # ${PYTHON_PORTSDIR} is not set because we don't support building 
