@@ -2,7 +2,7 @@
 # Date created:				5 January 1997
 # Whom:					Pedro Giffuni
 #
-# $FreeBSD: ports/math/ss/Makefile,v 1.7 2000/04/14 07:20:42 asami Exp $
+# $FreeBSD: ports/math/ss/Makefile,v 1.8 2000/05/14 05:40:50 billf Exp $
 #
 
 PORTNAME=	ss
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.irus.rri.on.ca/~amulder/ss/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/spreadsheet/ualberta/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/ss_133
 MAN1=		ss.1 pss.1

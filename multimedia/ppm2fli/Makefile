@@ -2,7 +2,7 @@
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/ppm2fli/Makefile,v 1.4 2000/04/14 10:47:09 asami Exp $
+# $FreeBSD: ports/graphics/ppm2fli/Makefile,v 1.5 2001/01/16 17:31:00 sobomax Exp $
 #
 
 PORTNAME=	ppm2fli
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://crusty.er.usgs.gov/pub/animation/fli/
 DISTNAME=	ppm2fli_b1.92
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAN1=	ppm2fli.1 unflick.1
 

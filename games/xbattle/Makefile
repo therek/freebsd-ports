@@ -2,7 +2,7 @@
 # Date created:         6 Apr 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/games/xbattle/Makefile,v 1.6 1999/10/01 18:42:06 cpiazza Exp $
+# $FreeBSD: ports/games/xbattle/Makefile,v 1.7 2000/04/14 12:26:59 asami Exp $
 #
 
 PORTNAME=	xbattle
@@ -10,7 +10,7 @@ PORTVERSION=	5.4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://cns-ftp.bu.edu/pub/xbattle/
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xbattle.1

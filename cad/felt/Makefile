@@ -2,7 +2,7 @@
 # Date created:		19 October 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/felt/Makefile,v 1.18 2000/06/14 13:21:07 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	felt
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	FElt
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 

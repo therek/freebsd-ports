@@ -2,7 +2,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.16 2000/10/24 00:41:28 jmz Exp $
+# $FreeBSD: ports/math/fftpack/Makefile,v 1.17 2001/01/16 17:31:28 sobomax Exp $
 #
 
 PORTNAME=	fftpack
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/
 DISTNAME=	bihar
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	linpack.1:${PORTSDIR}/math/linpack
 

@@ -2,7 +2,7 @@
 # Date created:         26 Ag 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/lang/atlast/Makefile,v 1.4 1999/11/03 06:34:36 jim Exp $
+# $FreeBSD: ports/lang/atlast/Makefile,v 1.5 2000/04/12 06:17:48 obrien Exp $
 #
 
 PORTNAME=	atlast
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	http://www.fourmilab.ch/atlast/ \
 		http://www.fourmilab.to/atlast/
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 do-install:
 	$(INSTALL_PROGRAM) $(WRKSRC)/atlast $(PREFIX)/bin

@@ -2,7 +2,7 @@
 # Date created:         6 Apr 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD: ports/misc/xpns/Makefile,v 1.8 2000/04/14 08:47:12 asami Exp $
+# $FreeBSD: ports/misc/xpns/Makefile,v 1.9 2000/10/13 20:22:29 ade Exp $
 #
 
 PORTNAME=	xpns
@@ -11,7 +11,7 @@ CATEGORIES=	misc cad
 MASTER_SITES=	http://www.ee.uwa.edu.au/~braunl/pns/ftp/
 DISTFILES=	pns_source.tar.Z
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/plotmtv/Makefile,v 1.7 2000/04/14 10:47:02 asami Exp $
+# $FreeBSD: ports/graphics/plotmtv/Makefile,v 1.8 2000/12/30 18:43:12 sf Exp $
 #
 
 PORTNAME=	plotmtv
@@ -14,7 +14,7 @@ DISTNAME=	Plotmtv${PORTVERSION}
 MASTER_SITE_SUBDIR=	applications
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 ALL_TARGET=	World

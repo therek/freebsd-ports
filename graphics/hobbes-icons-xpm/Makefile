@@ -2,7 +2,7 @@
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.10 2000/04/01 03:42:32 mharo Exp $
+# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.11 2000/04/14 10:46:20 asami Exp $
 #
 
 PORTNAME=	hobbes-icons-xpm3
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 NO_BUILD=	yes

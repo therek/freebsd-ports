@@ -2,7 +2,7 @@
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/graphics/fli2gif/Makefile,v 1.4 2000/04/13 06:28:24 obrien Exp $
+# $FreeBSD: ports/graphics/fli2gif/Makefile,v 1.5 2001/01/16 17:30:54 sobomax Exp $
 #
 
 PORTNAME=	fli2gif
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.sco.com/skunkware/src/misc/ \
 		ftp://ftp.vse.cz/pub/.ccd0c/SCO/ftp.sco.com/skunkware/src/misc/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fli2gif ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.24 2000/06/16 21:50:53 asami Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.25 2000/08/17 03:25:41 kris Exp $
 #
 
 PORTNAME=	urt
@@ -16,7 +16,7 @@ PATCH_SITES=	ftp://ptolemy.berkeley.edu/pub/misc/urt/
 PATCHFILES=	urt-3.1b-3.1b1.patch
 PATCH_DIST_STRIP=-p1
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff
 BUILD_DEPENDS=	${LOCALBASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
