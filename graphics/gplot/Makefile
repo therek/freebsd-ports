@@ -2,14 +2,15 @@
 # Date created:         26 Dec 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/graphics/gplot/Makefile,v 1.4 2000/04/14 10:46:06 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gplot
 PORTVERSION=	4.3
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.psc.edu/pub/gplot/
-DISTFILES=	gplot.tar.Z
+DISTNAME=	${PORTNAME}
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
