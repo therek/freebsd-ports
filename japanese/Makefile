@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.350 2001/04/07 01:47:09 will Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.351 2001/04/07 23:48:58 will Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -82,6 +82,7 @@
     SUBDIR += gxditview
     SUBDIR += hex
     SUBDIR += hns
+    SUBDIR += ical
     SUBDIR += ircII
     SUBDIR += iv
     SUBDIR += japaneseAFM
