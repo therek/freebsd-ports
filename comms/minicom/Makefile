@@ -4,16 +4,17 @@
 # Date created:         Fri Dec 01, 1995
 # Whom:                 obrien@cs.ucdavis.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.23 1999/08/25 05:12:37 obrien Exp $
 #
 
 DISTNAME=	${PKGNAME}.src
-PKGNAME=	minicom-1.82.1
+PKGNAME=	minicom-1.83.0
 CATEGORIES=	comms
-MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
+#MASTER_SITES=	${MASTER_SITE_SUNSITE}  \
+MASTER_SITES=	\
+		http://www.pp.clinet.fi/~walker/mc-dev/  \
 		http://www.clinet.fi/~walker/  \
-		http://www.pp.clinet.fi/~walker/  \
-		ftp://ftp.cistron.nl/pub/people/miquels/software/
+		http://www.pp.clinet.fi/~walker/
 MASTER_SITE_SUBDIR=	apps/serialcomm/dialout
 
 MAINTAINER=     obrien@FreeBSD.org
