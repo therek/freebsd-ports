@@ -1,4 +1,4 @@
-# $FreeBSD: ports/cad/Makefile,v 1.24 2001/04/07 00:17:32 vanilla Exp $
+# $FreeBSD: ports/cad/Makefile,v 1.25 2001/04/07 00:19:06 vanilla Exp $
 #
 
     SUBDIR += acs
@@ -9,6 +9,7 @@
     SUBDIR += geda
     SUBDIR += geda-symbols
     SUBDIR += gnetlist
+    SUBDIR += gschem
     SUBDIR += irsim
     SUBDIR += iverilog
     SUBDIR += kaskade
