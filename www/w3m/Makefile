@@ -2,7 +2,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.25 2001/03/20 22:20:33 sf Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.26 2001/03/26 02:26:14 kuriyama Exp $
 #
 
 PORTNAME=	w3m
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/ \
 		http://www.instinct.org/w3m/ \
 		http://grilli.net/mirrors/w3m/download/
 
-MAINTAINER=	nobutaka@nobutaka.com
+MAINTAINER?=	nobutaka@nobutaka.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 
