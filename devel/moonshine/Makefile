@@ -2,7 +2,7 @@
 # Date created:		26 April 2000
 # Whom:			Maxim Sobolev <sobomax@altavista.net>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/devel/moonshine/Makefile,v 1.1.1.1 2000/06/07 16:53:29 sobomax Exp $
 #
 
 PORTNAME=	moonshine
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.suite3220.com/pub/Moonshine/1.1/src/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 USE_QT2=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
