@@ -2,11 +2,11 @@
 # Date created:		30 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/ruby-termios/Makefile,v 1.1 2001/08/30 07:26:32 knu Exp $
 #
 
 PORTNAME=	termios
-PORTVERSION=	0
+PORTVERSION=	20001115
 CATEGORIES=	comms ruby
 MASTER_SITES=	http://arika.org/pub/Tools/Ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
