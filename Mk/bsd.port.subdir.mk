@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.53 2004/04/02 07:25:23 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.54 2004/06/10 07:30:19 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -81,6 +81,11 @@ OPSYS!=	/usr/bin/uname -s
 .endif
 
 ECHO_MSG?=	echo
+
+# local customization of the ports tree
+.if exists(${.CURDIR}/Makefile.local)
+.include "${.CURDIR}/Makefile.local"
+.endif
 
 TARGETS+=	all
 TARGETS+=	build
@@ -349,7 +354,9 @@ search: ${PORTSDIR}/${INDEXFILE}
 	    -v xkeylim="$${xkeylim:-${PORTSEARCH_XKEYLIM}}"\
 	    -v display="$${display:-${PORTSEARCH_DISPLAY_FIELDS}}" \
 	'BEGIN { \
-	    sub(top, "${PORTSDIR}", there); \
+	    if (substr(there, 1, length(top)) == top) \
+	      there = "${PORTSDIR}" substr(there, 1 + length(top)); \
+	    therelen = length(there); \
 	    IGNORECASE=icase; \
 	    keylen = length(key); keylim = keylim && keylen; \
 	    if (!keylim && keylen) \
@@ -377,7 +384,7 @@ search: ${PORTSDIR}/${INDEXFILE}
 	    } \
 	  } \
 	  { \
-	    if ($$2 !~ there) \
+	    if (substr($$2, 1, therelen) != there) \
 	      next; \
 	    for (i in parms) \
 	      if ($$i !~ parms[i]) \
