@@ -2,7 +2,7 @@
 # Date created:         21 Jan 1998
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/patch/Makefile,v 1.4 2000/04/11 21:30:03 mharo Exp $
+# $FreeBSD: ports/devel/patch/Makefile,v 1.5 2001/01/10 08:01:24 ache Exp $
 #
 
 PORTNAME=	patch
@@ -14,7 +14,8 @@ MASTER_SITE_SUBDIR=	patch
 MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--program-prefix=g
 
-MAN1=		patch.1
+MAN1=		gpatch.1
 
 .include <bsd.port.mk>

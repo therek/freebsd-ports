@@ -2,7 +2,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.22 2000/10/25 06:45:29 knu Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.23 2000/12/10 16:05:14 roam Exp $
 #
 
 PORTNAME=	w3m
@@ -25,8 +25,8 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	nobutaka@nobutaka.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc \
-		${LOCALBASE}/bin/patch:${PORTSDIR}/devel/patch
-PATCH=		${LOCALBASE}/bin/patch
+		${PATCH}:${PORTSDIR}/devel/patch
+PATCH=		${LOCALBASE}/bin/gpatch
 
 W3M_VERSION=	0.1.11
 W3M_PATCHLEVEL=	23

@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.20 2000/12/07 11:36:01 knu Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.21 2001/01/09 06:46:03 ume Exp $
 #
 
 PORTNAME=	postgresql
@@ -64,7 +64,7 @@ SCRIPTS_ENV+=	JAVA_HOME=${JAVA_HOME}
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 DOCDIR=		${WRKDIR}/${DISTNAME}/doc
 
-PATCH=		${LOCALBASE}/bin/patch
+PATCH=		${LOCALBASE}/bin/gpatch
 USE_GMAKE=	YES
 MAKEFILE=	GNUmakefile
 HAS_CONFIGURE=	YES
