@@ -2,12 +2,12 @@
 # Date created:				January 27, 1999
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/gpc/Makefile,v 1.1 2000/05/29 03:05:50 will Exp $
 
 PORTNAME=	gpc
 PORTVERSION=	2.0
 CATEGORIES=	lang
-MASTER_SITES=	ftp://agnes.dida.physik.uni-essen.de/gnu-pascal/current/
+MASTER_SITES=	ftp://agnes.dida.physik.uni-essen.de/gnu-pascal/beta/
 DISTNAME=	gpc-19990118
 
 MAINTAINER=	antonz@library.ntu-kpi.kiev.ua
