@@ -2,7 +2,7 @@
 # Date created:			14 May 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/palm/jfconv/Makefile,v 1.6 2001/02/08 09:41:04 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jfconv
@@ -15,6 +15,7 @@ DISTNAME=	jconv
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Converts JFile database to CSV, and vice versa
 
 ALL_TARGET=	# none
 

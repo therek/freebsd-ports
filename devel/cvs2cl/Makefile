@@ -2,7 +2,7 @@
 # Date created:		6 June 2000
 # Whom:			knu@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cvs2cl/Makefile,v 1.12 2000/09/15 11:27:03 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvs2cl
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	CVS-log-message-to-ChangeLog conversion script
 
 USE_PERL5=	YES
 NO_BUILD=	YES

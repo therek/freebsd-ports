@@ -2,7 +2,7 @@
 # Date created:		16 Oct 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/py-ming/Makefile,v 1.9 2001/09/18 05:57:16 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ming
@@ -13,6 +13,7 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTFILES=	# none
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Python module for Ming which allows you to create Flash 4/5 movies
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/ming:patch
 LIB_DEPENDS=	ming.3:${PORTSDIR}/graphics/ming

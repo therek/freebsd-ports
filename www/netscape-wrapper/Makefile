@@ -2,7 +2,7 @@
 # Date created:		3 May 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/netscape-wrapper/Makefile,v 1.3 2000/07/07 08:43:19 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscape-wrapper
@@ -12,6 +12,7 @@ MASTER_SITES=	# none
 DISTFILES=	# none
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Netscape wrapper to avoid multiple invocation and more
 
 RUN_DEPENDS=	netscape-remote:${PORTSDIR}/www/netscape-remote
 

@@ -2,7 +2,7 @@
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-module-vje25/Makefile,v 1.11 2000/06/29 02:31:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	esecanna-module-vje25
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	knu
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Esecanna module for VJE-Delta 2.5
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/esecannaserver:${PORTSDIR}/japanese/esecanna
 

@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/print/clibpdf/Makefile,v 1.1 2000/08/22 14:11:10 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clibpdf
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.fastio.com/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	A library for creating PDF (Acrobat) files directly via C language programs
 
 WRKSRC=		${WRKDIR}/ClibPDF/source
 
