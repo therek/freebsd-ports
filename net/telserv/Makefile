@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/telserv/Makefile,v 1.10 2000/06/07 17:44:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	telserv
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	telserv
 EXTRACT_SUFX=	.c
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 

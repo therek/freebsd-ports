@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/lprps-letter/Makefile,v 1.11 2000/04/09 17:40:39 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lprps-${PAPERSIZE}
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.jclark.com/pub/lprps/
 DISTNAME=	lprps-2.5
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAKE_FLAGS?=	PAPERSIZE=${PS} -f
 MAN1=		psrev.1 textps.1

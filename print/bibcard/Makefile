@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/print/bibcard/Makefile,v 1.13 2000/04/09 17:39:39 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bibcard
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://crl.nmsu.edu/pub/misc/
 DISTNAME=	bibcard.6.4
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	obrien@NUXI.com
+MAINTAINER=	ports@NUXI.com
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

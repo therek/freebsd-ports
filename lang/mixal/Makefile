@@ -3,7 +3,7 @@
 # Date created:			  21-Dec-1996
 # Whom:                 	  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/lang/mixal/Makefile,v 1.7 2000/03/22 00:27:12 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mixal
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.ccil.org/retro/  \
 		ftp://locke.ccil.org/pub/retro/
 EXTRACT_SUFX=	.shar.gz
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	zcat
 EXTRACT_BEFORE_ARGS=

@@ -3,7 +3,7 @@
 # Date created:			  14 Feb 1998
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.23 2000/12/21 20:16:06 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netscape-communicator
@@ -11,7 +11,7 @@ PORTVERSION=	4.07.us
 CATEGORIES=	www linux
 DISTNAME=	communicator-v407-us.x86-unknown-linux2.0_libc5
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/lib/ld-linux.so.1:${PORTSDIR}/emulators/linux_base
 

@@ -3,7 +3,7 @@
 # Date created:				1 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libshhmsg/Makefile,v 1.8 2000/11/11 05:31:08 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libshhmsg
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://shh.thathost.com/pub-unix/files/
 DISTNAME=	shhmsg-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes

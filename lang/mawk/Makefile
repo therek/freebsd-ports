@@ -3,7 +3,7 @@
 # Date created:			  24 Dec 1998
 # Whom:				  Pedro F. Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/lang/mawk/Makefile,v 1.9 2000/04/12 06:19:20 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mawk
@@ -12,7 +12,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.whidbey.net/pub/brennan/
 DISTFILES=	${PORTNAME}${PORTVERSION}.tar.gz
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=

@@ -4,7 +4,7 @@
 # Whom:				  Wu Ching-hong <woju@freebsd.ee.ntu.edu.tw>
 # 				  and David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/queso/Makefile,v 1.9 2000/04/09 18:13:15 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	queso
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://freebsd.ntu.edu.tw/FreeBSD/distfiles/  \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	obrien
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=  yes
 

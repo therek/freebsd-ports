@@ -3,7 +3,7 @@
 # Date created:			  16 Apr 1996
 # Whom:				  tg@freebsd.org
 #
-# $FreeBSD: ports/print/gv/Makefile,v 1.30 2000/10/08 10:22:43 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gv
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/  \
 		${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	support/ghostscript/gnu/gv/unix
 
-MAINTAINER=	obrien@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 

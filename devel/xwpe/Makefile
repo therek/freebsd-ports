@@ -3,7 +3,7 @@
 # Date created:			  Fri Jan 24, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/devel/xwpe/Makefile,v 1.15 2000/03/22 00:28:19 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwpe
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.identicalsoftware.com/pub/linux/xwpe/
 MASTER_SITE_SUBDIR=	apps/editors/X
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # LD_LIBRARY_PATH is to deal with a braindead libX11.a search in configure
 # (once again author assumes too many Linux'isms)

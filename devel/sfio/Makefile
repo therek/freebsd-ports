@@ -3,7 +3,7 @@
 # Date created:			  8 November 1997
 # Whom:				  jraynard
 #
-# $FreeBSD: ports/devel/sfio/Makefile,v 1.18 2000/08/27 05:24:18 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sfio
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_NETBSD}
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 EXTRACT_SUFX=	.src.unix.cpio
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	cpio
 EXTRACT_BEFORE_ARGS=	-idF

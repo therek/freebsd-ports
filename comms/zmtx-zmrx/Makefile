@@ -3,7 +3,7 @@
 # Date created:			  29 July 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/comms/zmtx-zmrx/Makefile,v 1.10 2000/04/08 23:22:44 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zmtx-zmrx
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.inria.fr/network/modem/  \
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.shar.gz
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=	zcat
 EXTRACT_BEFORE_ARGS=

@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/print/detex/Makefile,v 1.7 2000/04/09 17:39:49 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	detex
@@ -12,7 +12,7 @@ CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.cs.purdue.edu/pub/trinkle/
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_CMD=		${TAR}
 EXTRACT_BEFORE_ARGS=	-xf

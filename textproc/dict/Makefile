@@ -3,7 +3,7 @@
 # Date created:			  19 February 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/dict/Makefile,v 1.16 2001/08/21 01:07:07 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dict
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cs.unc.edu/pub/users/faith/dict/ \
 		ftp://ftp.dict.org/pub/dict/
 DISTNAME=	${PORTNAME}d-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-local-zlib --with-cflags="${CFLAGS}" \

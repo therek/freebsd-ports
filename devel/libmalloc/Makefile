@@ -3,7 +3,7 @@
 # Date created:			  11 January 1995
 # Whom:				  jkh
 #
-# $FreeBSD: ports/devel/libmalloc/Makefile,v 1.24 2000/06/16 21:50:05 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libmalloc
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/
 DISTNAME=	malloc-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BROKEN=		"Installs malloc.h, masking system version"
 

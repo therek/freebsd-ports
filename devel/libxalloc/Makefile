@@ -3,7 +3,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libxalloc/Makefile,v 1.8 2000/11/11 05:32:43 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libxalloc
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://shh.thathost.com/pub-unix/files/
 DISTNAME=	xalloc-${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes

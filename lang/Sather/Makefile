@@ -3,7 +3,7 @@
 # Date created:			  Mon Oct 31 22:04:12 PST 1994
 # Whom:				  hsu
 #
-# $FreeBSD: ports/lang/Sather/Makefile,v 1.21 2000/03/22 00:26:29 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sather
@@ -12,7 +12,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	sather
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 

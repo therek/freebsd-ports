@@ -3,7 +3,7 @@
 # Date created:			  21 November 1995
 # Whom:				  Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.27 2001/01/16 17:32:00 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wide-dhcp
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://sh.wide.ad.jp/WIDE/free-ware/dhcp/ \
 		ftp://ftp.sage-au.org.au/pub/network/boot/wide-dhcp/
 DISTNAME=	dhcp-1.4.0p6
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAKE_ENV=	OSTYPE=${OPSYS}
 

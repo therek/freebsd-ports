@@ -3,7 +3,7 @@
 # Date created:			  2 Jun 1998
 # Whom:				  obrien
 #
-# $FreeBSD: ports/net/smbtcpdump/Makefile,v 1.11 2000/03/22 00:27:42 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smbtcpdump
@@ -17,7 +17,7 @@ EXTRACT_SUFX=	.tar.Z
 PATCH_SITES=	ftp://ftp.samba.org/pub/samba/tcpdump-smb/
 PATCHFILES=	tcpdump-3.4a5-smb.patch
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	depend tcpdump

@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.25 2001/04/02 09:24:28 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xosview
@@ -15,7 +15,7 @@ MASTER_SITES=	\
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/status/xstatus
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

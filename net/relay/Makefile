@@ -3,7 +3,7 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/relay/Makefile,v 1.10 2000/06/07 17:44:39 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	relay
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.iagora.com/~espel/  \
 MASTER_SITE_SUBDIR=	obrien
 DISTNAME=	relay
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 IS_INTERACTIVE=	'must set server hostname in relay.h'
 

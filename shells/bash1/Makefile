@@ -3,7 +3,7 @@
 # Date created:			  21 August 1994
 # Whom:				  jkh
 #
-# $FreeBSD: ports/shells/bash1/Makefile,v 1.36 2000/04/09 18:33:52 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bash
@@ -12,7 +12,7 @@ CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	bash
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_LATEST_LINK=	yes
 WRKSRC=	${WRKDIR}/${DISTNAME}

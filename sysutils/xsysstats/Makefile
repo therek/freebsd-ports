@@ -3,7 +3,7 @@
 # Date created:			  12 December 1994
 # Whom:				  asami
 #
-# $FreeBSD: ports/sysutils/xsysstats/Makefile,v 1.19 2000/04/09 19:09:10 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xsysstats
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xsysstats.1
