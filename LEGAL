@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.370 2004/11/15 22:53:47 thierry Exp $
+# $FreeBSD: ports/LEGAL,v 1.371 2004/11/23 15:54:20 nork Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -398,6 +398,7 @@ motoya/*		ports/japanese/motoya-ttfonts	Personal use only and
 moviedb/*		ports/misc/moviedb	No commercial use
 MPlayer*		ports/multimedia/mplayer Restricted binary distribution
 msql-*			ports/databases/msql	Not free for commercial org.
+MT-2.*			ports/www/MT		No redistribution
 mtv-*.tar.gz		ports/multimedia/mtv	No redistribution
 mupad/*			ports/math/mupad	unsure to sell for profit
 mypaedia-*		ports/japanese/mypaedia-fpw The original dictionary is not free
