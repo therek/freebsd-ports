@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/comms/Makefile,v 1.51 2001/04/18 15:32:55 sobomax Exp $
 #
 
     SUBDIR += asmodem
@@ -16,6 +16,7 @@
     SUBDIR += minicom
     SUBDIR += mlan
     SUBDIR += mserver
+    SUBDIR += mwavem
     SUBDIR += plp
     SUBDIR += pr
     SUBDIR += qico
