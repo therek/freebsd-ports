@@ -2,11 +2,11 @@
 # Date created:        4 February 2000
 # Whom:                faber@lunabase.org
 #
-# $FreeBSD: ports/textproc/grap/Makefile,v 1.11 2001/02/05 16:34:39 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grap
-PORTVERSION=	1.20
+PORTVERSION=	1.21
 CATEGORIES=	textproc graphics
 MASTER_SITES=	http://www.lunabase.org/~faber/Vault/software/grap/
 
