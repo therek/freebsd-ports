@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.491 2001/04/05 16:17:11 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.492 2001/04/05 19:01:12 alex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -193,6 +193,7 @@
     SUBDIR += libtool
     SUBDIR += libunicode
     SUBDIR += libusb
+    SUBDIR += libuta
     SUBDIR += libxalloc
     SUBDIR += lincvs
     SUBDIR += linguist
