@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/azureus/files/azureus,v 1.4 2005/01/12 18:06:11 lioux Exp $
+# $FreeBSD: ports/net/azureus/files/azureus,v 1.5 2005/01/13 22:16:14 lioux Exp $
 
 export JAVA_VERSION
 export JAVA_OS
@@ -27,4 +27,4 @@ then
 	echo "LIB_PATH = ${LIB_PATH}"
 fi
 
-exec "%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" "-Dos.name=Linux" org.gudy.azureus2.ui.swt.Main "${@}"
+exec "%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" "-Dos.name=Linux" "-Dazureus.config.path=${HOME}/.Azureus" "-Duser.dir=${HOME}/.Azureus" org.gudy.azureus2.ui.swt.Main "${@}"
