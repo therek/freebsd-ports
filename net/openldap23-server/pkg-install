@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/openldap22-server/pkg-install,v 1.5 2003/11/14 03:57:13 eik Exp $
+# $FreeBSD: ports/net/openldap22-server/pkg-install,v 1.6 2004/03/31 22:33:09 eik Exp $
 #
 
 CHOWN=/usr/sbin/chown
@@ -13,7 +13,7 @@ FTPUSERS=/etc/ftpusers
 
 case $2 in
 PRE-INSTALL)
-  if ! ${PKG_INFO} -e '%%PKGNAME_CLIENT%%'; then
+  if [ -z "`${PKG_INFO} -I '%%PKGNAME_CLIENT%%' 2> /dev/null`" ]; then
     ${ECHO_CMD} "===>  %%PKGNAME%% requires %%PKGNAME_CLIENT%%."
     ${ECHO_CMD}
     ${ECHO_CMD} "      Please install %%PKGNAME_CLIENT%% manually."
