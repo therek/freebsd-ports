@@ -2,14 +2,13 @@
 # Date created: 	11 July 1998
 # Whom:			moeding
 #
-# $FreeBSD: ports/misc/jargon/Makefile,v 1.6 2000/04/14 08:46:02 asami Exp $
+# $FreeBSD: ports/misc/jargon/Makefile,v 1.7 2000/06/05 05:44:36 kris Exp $
 #
 
 PORTNAME=	jargon
 PORTVERSION=	4.2.0
 CATEGORIES=	misc
-MASTER_SITES=	http://www.tuxedo.org/~esr/jargon/                     \
-		http://www.nectar.com/distfiles/
+MASTER_SITES=	http://www.tuxedo.org/~esr/jargon/
 
 MAINTAINER=	s.moeding@ndh.net
 

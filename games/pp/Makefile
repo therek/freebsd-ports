@@ -2,14 +2,13 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/pp/Makefile,v 1.8 2000/03/29 07:17:58 kris Exp $
+# $FreeBSD: ports/games/pp/Makefile,v 1.9 2000/04/14 12:26:22 asami Exp $
 #
 
 PORTNAME=	pp
 PORTVERSION=	0.01
 CATEGORIES=	games
-MASTER_SITES=	ftp://www.mps.de/pub/unix/ \
-		http://www.nectar.com/distfiles/
+MASTER_SITES=	ftp://www.mps.de/pub/unix/
 DISTFILES=	ppinst-0.01.tar.gz ppsrc-0.01.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org

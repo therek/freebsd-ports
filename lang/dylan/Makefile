@@ -2,7 +2,7 @@
 # Date created:         23 Jan 1998
 # Whom:                 housel@acm.org
 #
-# $FreeBSD: ports/lang/dylan/Makefile,v 1.10 2000/04/12 06:18:05 obrien Exp $
+# $FreeBSD: ports/lang/dylan/Makefile,v 1.11 2000/04/16 04:14:05 asami Exp $
 #
 
 PORTNAME=	dylan
@@ -10,7 +10,6 @@ PORTVERSION=	2.2.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://berlin.ccc.de/pub/gd/src/                        \
 		ftp://berlin.ccc.de/pub/gd/FreeBSD/                    \
-		http://www.nectar.com/distfiles/                       \
 		ftp://folk.federated.com/pub/gd/src/                   \
 		ftp://folk.federated.com/pub/gd/FreeBSD/               \
 		ftp://ftp.ntua.gr/pub/lang/gwydion/src/                \

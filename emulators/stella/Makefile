@@ -2,14 +2,13 @@
 # Date created:				March 4, 1999
 # Whom:					Jacques Vidrine <nectar@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/stella/Makefile,v 1.9 1999/08/31 06:43:55 mharo Exp $
+# $FreeBSD: ports/emulators/stella/Makefile,v 1.10 2000/04/12 04:55:50 mharo Exp $
 #
 
 PORTNAME=	stella
 PORTVERSION=	1.1
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.eos.ncsu.edu/pub/bsvc/stella/1.1/ \
-		http://www.nectar.com/distfiles/
+MASTER_SITES=	ftp://ftp.eos.ncsu.edu/pub/bsvc/stella/1.1/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	nectar@FreeBSD.org

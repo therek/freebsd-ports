@@ -2,14 +2,13 @@
 # Date created:				03/27/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.5 2000/04/11 21:30:13 mharo Exp $
+# $FreeBSD: ports/devel/py-kjbuckets/Makefile,v 1.6 2000/04/14 18:40:14 knu Exp $
 #
 
 PORTNAME=		kjbuckets
 PORTVERSION=		2.2
 CATEGORIES=		devel python
-MASTER_SITES=		http://www.chordate.com/kjbuckets/             \
-			http://www.nectar.com/distfiles/
+MASTER_SITES=		http://www.chordate.com/kjbuckets/
 PKGNAMEPREFIX=		py-
 DISTNAME=		kjb
 

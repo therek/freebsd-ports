@@ -2,14 +2,13 @@
 # Date created:				05/20/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/shells/esh/Makefile,v 1.5 2000/04/09 18:33:54 cpiazza Exp $
+# $FreeBSD: ports/shells/esh/Makefile,v 1.6 2000/04/20 20:36:38 mharo Exp $
 #
 
 PORTNAME=	esh
 PORTVERSION=	0.8
 CATEGORIES=	shells
-MASTER_SITES=	http://esh.netpedia.net/ \
-		http://www.nectar.cc/distfiles/
+MASTER_SITES=	http://esh.netpedia.net/
 
 MAINTAINER=	nectar@FreeBSD.org
 

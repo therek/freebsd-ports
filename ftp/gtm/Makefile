@@ -2,14 +2,13 @@
 # Date created:				05/28/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/ftp/gtm/Makefile,v 1.11 2000/06/01 16:25:40 ade Exp $
+# $FreeBSD: ports/ftp/gtm/Makefile,v 1.12 2000/06/15 19:25:49 nectar Exp $
 #
 
 PORTNAME=	gtm
 PORTVERSION=	0.3.1
 CATEGORIES=	ftp gnome
-MASTER_SITES=	http://www.rnl.ist.utl.pt/~bapm/gtm/files/     \
-		http://www.nectar.cc/distfiles/
+MASTER_SITES=	http://www.rnl.ist.utl.pt/~bapm/gtm/files/
 
 MAINTAINER=	nectar@FreeBSD.org
 

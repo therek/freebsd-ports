@@ -2,14 +2,13 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.7 2000/05/20 14:22:59 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/py-wxPython/Makefile,v 1.8 2000/06/15 19:16:37 nectar Exp $
 #
 
 PORTNAME=	py-wxPython
 PORTVERSION=	2.1.16
 CATEGORIES=	x11-toolkits python
-MASTER_SITES=	http://alldunn.com/wxPython/dist/ \
-		http://www.nectar.com/distfiles/
+MASTER_SITES=	http://alldunn.com/wxPython/dist/
 DISTNAME=	wxPython-${PORTVERSION}
 
 MAINTAINER=	nectar@FreeBSD.ORG

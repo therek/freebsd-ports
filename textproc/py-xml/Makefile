@@ -2,7 +2,7 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.6 2000/04/09 21:53:04 cpiazza Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.7 2000/05/05 09:14:53 tg Exp $
 #
 
 PORTNAME=		py-xml
@@ -11,8 +11,7 @@ CATEGORIES=		textproc python
 MASTER_SITES=		http://www.python.org/sigs/xml-sig/files/      \
 			ftp://ftp.cdrom.com/pub/python/www.python.org/sigs/xml-sig/files/ \
 			ftp://ftp.kddlabs.co.jp/pub/lang/python/www.python.org/sigs/xml-sig/files/ \
-			ftp://unix.hensa.ac.uk/mirrors/ftp.python.org/pub/www.python.org/sigs/xml-sig/files/ \
-			http://www.nectar.cc/distfiles/
+			ftp://unix.hensa.ac.uk/mirrors/ftp.python.org/pub/www.python.org/sigs/xml-sig/files/
 DISTNAME=		PyXML-${PORTVERSION}
 
 MAINTAINER=		nectar@FreeBSD.org

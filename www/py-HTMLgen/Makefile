@@ -2,14 +2,13 @@
 # Date created:				03/20/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.5 1999/08/31 06:52:15 mharo Exp $
+# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.6 2000/04/10 00:06:43 cpiazza Exp $
 #
 
 PORTNAME=		py-HTMLgen
 PORTVERSION= 		2.1
 CATEGORIES=		www python
-MASTER_SITES=		http://starship.skyport.net/crew/friedrich/ \
-			http://www.nectar.cc/distfiles/
+MASTER_SITES=		http://starship.skyport.net/crew/friedrich/
 DISTNAME=		HTMLgen
 
 MAINTAINER=		nectar@FreeBSD.org
