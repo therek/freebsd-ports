@@ -2,7 +2,7 @@
 # Date created:		7 Oct 2000
 # Whom:			"Michael C . Wu" <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.7 2001/01/31 03:43:36 clive Exp $
+# $FreeBSD: ports/chinese/auto-tw-l10n/Makefile,v 1.8 2001/03/03 14:12:36 keith Exp $
 
 PORTNAME=	auto-tw-l10n
 PORTVERSION=	1.2
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.iteration.net/pub/patch_chinese/
 DISTNAME=	zh-tw-skel-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	keichii@iteration.net
+MAINTAINER=	keichii@freebsd.org
 
 # The zh_TW.big5 in the linux-gtk section is not a typo.
 RUN_DEPENDS=	${X11BASE}/lib/aout/zh-XFree86-aoutlibs-3.3.6:${PORTSDIR}/chinese/XFree86-aoutlibs \

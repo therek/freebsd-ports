@@ -1,7 +1,7 @@
 # New ports collection makefile for:	eterm
 # Date created:        24th December 2000
 # Whom:                Michael C. Wu
-# $FreeBSD: ports/chinese/eterm/Makefile,v 1.1 2000/12/24 20:27:19 keith Exp $
+# $FreeBSD: ports/chinese/eterm/Makefile,v 1.2 2000/12/25 08:23:24 vanilla Exp $
 
 PORTNAME=	eterm
 PORTVERSION=	0.9
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/Eterm/ \
 		ftp://ftp.sogang.ac.kr/.c/tools/X11/Enlightenment/Eterm/
 DISTNAME=	Eterm-${PORTVERSION}
 
-MAINTAINER=	keichii@iteration.net
+MAINTAINER=	keichii@freebsd.org
 
 BUILD_DEPENDS=	man2html:${PORTSDIR}/textproc/man2html
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts

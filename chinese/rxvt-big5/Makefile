@@ -2,7 +2,7 @@
 # Date created:                   Thur Nov 2, 2000
 # Whom:                           Michael C . Wu <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/rxvt-big5/Makefile,v 1.2 2000/12/23 06:18:31 clive Exp $
+# $FreeBSD: ports/chinese/rxvt-big5/Makefile,v 1.3 2001/02/05 14:29:34 olgeni Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../x11/rxvt
@@ -21,7 +21,7 @@ PORTREVISION=	1
 #.include <bsd.port.pre.mk>
 PKGNAMEPREFIX:= ${PKGNAMEPREFIX}tw-
 
-MAINTAINER=	keichii@iteration.net
+MAINTAINER=	keichii@freebsd.org
 
 CONFIGURE_ARGS+= \
 		--enable-xim --enable-big5 \

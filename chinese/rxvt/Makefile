@@ -2,7 +2,7 @@
 # Date created:         Nov 16 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.19 2000/10/13 02:39:55 vanilla Exp $
+# $FreeBSD: ports/chinese/rxvt/Makefile,v 1.20 2001/02/14 22:22:34 sf Exp $
 #
 
 PORTNAME=	rxvt
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/ \
 MASTER_SITE_SUBDIR=	X11/terms
 DISTNAME=	rxvt-${PORTVERSION}
 
-MAINTAINER=	keichii@iteration.net
+MAINTAINER=	keichii@freebsd.org
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
