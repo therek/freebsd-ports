@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.279 2000/07/11 22:56:02 asami Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.280 2000/07/12 15:38:22 kevlo Exp $
 #
 
     SUBDIR += 221upgrade
@@ -96,6 +96,7 @@
     SUBDIR += p5-File-CounterFile
     SUBDIR += p5-I18N-Charset
     SUBDIR += p5-I18N-LangTags
+    SUBDIR += p5-LEGO-RCX
     SUBDIR += p5-Locale-Codes
     SUBDIR += peq
     SUBDIR += pdmenu
