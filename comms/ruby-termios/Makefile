@@ -2,7 +2,7 @@
 # Date created:		30 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/comms/ruby-termios/Makefile,v 1.2 2001/08/30 07:34:00 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	termios
@@ -26,10 +26,10 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
-	${CP} -R ${WRKSRC}/test/*.rb ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${RUBY_DOCDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${CP} -R ${WRKSRC}/test/*.rb ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${RUBY_MODDOCDIR}/
 .endif
 
 .include <bsd.port.mk>
