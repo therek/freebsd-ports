@@ -2,7 +2,7 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD: ports/misc/proxyper/Makefile,v 1.8 2000/05/29 23:50:24 steve Exp $
+# $FreeBSD: ports/misc/proxyper/Makefile,v 1.9 2000/06/22 19:24:04 dbaker Exp $
 #
 
 PORTNAME=	proxyper-freebsd3-elf-x86
@@ -44,7 +44,7 @@ do-install:
 		${MKDIR} ${BINDIR}; \
 	fi
 	${INSTALL_PROGRAM} ${WRKSRC}/proxyper ${BINDIR}
-	${INSTALL_SCRIPT} ${WRKSRC}/proxyper.sh ${BINDIR}
+	${INSTALL_SCRIPT} ${FILESDIR}/proxyper.sh ${BINDIR}
 	${INSTALL_DATA} ${WRKSRC}/proxyper.ini ${BINDIR}
 	${INSTALL_MAN} ${WRKSRC}/ChangeLog.txt ${BINDIR}
 	${INSTALL_MAN} ${WRKSRC}/Readme.txt ${BINDIR}
