@@ -2,7 +2,7 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.4 2001/01/29 14:10:05 sf Exp $
+# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.5 2001/08/02 18:03:31 knu Exp $
 #
 
 PORTNAME=	gcc
@@ -16,11 +16,11 @@ DIST_SUBDIR=	mingw
 
 MAINTAINER=	doc@hisio.safenet.pl
 
-BUILD_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
-		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt \
+BUILD_DEPENDS=	${LOCALBASE}/i386-mingw32msvc/bin/as:${PORTSDIR}/devel/mingw-binutils \
+		${LOCALBASE}/bin/mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt \
 		autoheader:${PORTSDIR}/devel/autoconf
-RUN_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
-		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt
+RUN_DEPENDS=	${LOCALBASE}/i386-mingw32msvc/bin/as:${PORTSDIR}/devel/mingw-binutils \
+		${LOCALBASE}/bin/mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt
 
 NO_WRKSUBDIR=	yes
 
