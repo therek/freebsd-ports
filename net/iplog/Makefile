@@ -2,11 +2,11 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.9 2000/09/23 14:59:09 nbm Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.10 2000/10/04 06:40:03 sobomax Exp $
 #
 
 PORTNAME=	iplog
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	net security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://misc.ojnk.net/~odin/stuff/
