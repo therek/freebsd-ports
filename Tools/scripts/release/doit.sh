@@ -1,6 +1,7 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/release/doit.sh,v 1.3 2002/05/20 07:50:16 will Exp $
 
+pathtoports=$1
 dir=`dirname $0`
 if [ "X$dir" = "X." ]; then
   dir=`pwd`
@@ -28,7 +29,11 @@ scripts="$dir"
 test -d $logs || mkdir -p $logs
 
 if [ ! -d "$ports" ]; then
-  $scripts/setup.sh
+  if [ -z "$pathtoports" ]; then
+    echo "Missing path to ports/packages toree to process for setup.sh."
+    exit 1
+  fi
+  $scripts/setup.sh $pathtoports
   echo ""
   echo "Make sure you tweak $dir/config to suit your needs."
   echo ""
