@@ -3,9 +3,9 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/asmem/Makefile,v 1.4 1999/08/31 01:59:31 peter Exp $
 
-DISTNAME=	asmem-1.3
+DISTNAME=	asmem-1.4
 CATEGORIES=	sysutils afterstep
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/asmem/ \
 		http://www.bewoner.dma.be/Albert/software/
@@ -16,7 +16,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400000
-BROKEN=		'Sorry, asmem doesn't compile on 4.0+'
+BROKEN=		"Sorry, asmem doesn't compile on 4.0+"
 .endif
 
 USE_X_PREFIX=	yes
