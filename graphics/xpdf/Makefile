@@ -3,7 +3,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.24 1999/11/23 03:30:26 chuckr Exp $
+# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.25 1999/11/23 05:57:01 chuckr Exp $
 #
 
 DISTNAME=       xpdf-0.90
@@ -13,12 +13,10 @@ MASTER_SITES=	${MASTER_SITE_TEX_CTAN} ftp://ftp.foolabs.com/pub/xpdf/  \
 MASTER_SITE_SUBDIR=support/xpdf
 EXTRACT_SUFX=	.tgz
 
-.if defined(USA_RESIDENT) && !defined(PACKAGE_BUILDING)
-.if ${USA_RESIDENT} == YES || ${USA_RESIDENT} == yes
+.if !defined(PACKAGE_BUILDING)
 PATCH_SITES=	http://www.fefe.de/
 PATCHFILES=	xpdf-0.90-fefe-diff.gz
 PATCH_DIST_STRIP= -p1
-.endif
 .endif
 
 MAINTAINER=	chuckr@freebsd.org
@@ -26,10 +24,8 @@ MAINTAINER=	chuckr@freebsd.org
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		t1.9:${PORTSDIR}/devel/t1lib
 
-.if defined(USA_RESIDENT) && !defined(PACKAGE_BUILDING)
-.if ${USA_RESIDENT} == YES || ${USA_RESIDENT} == yes
+.if !defined(PACKAGE_BUILDING)
 RESTRICTED=     "Contains cryptography"
-.endif
 .endif
 USE_XLIB=	yes
 USE_X_PREFIX=	yes
