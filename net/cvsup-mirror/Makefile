@@ -2,11 +2,11 @@
 # Date created:		01 February 1997
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.10 2000/04/09 18:10:46 cpiazza Exp $
+# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.11 2000/04/20 20:25:29 mharo Exp $
 #
 
 PORTNAME=	cvsup-mirror
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	net
 DISTFILES=
 
@@ -36,8 +36,6 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/cvsupd.access ${base}
 	@${INSTALL_SCRIPT} ${FILESDIR}/update.sh ${base}
 	@${INSTALL_DATA} ${FILESDIR}/supfile ${base}
-	@${INSTALL_DATA} ${FILESDIR}/supfile.crypto ${base}
-	@${INSTALL_DATA} ${FILESDIR}/supfile.non-crypto ${base}
 	@${INSTALL_DATA} ${FILESDIR}/refuse.self ${distrib}
 	@${INSTALL_SCRIPT} ${FILESDIR}/cvsupd.sh ${rc}
 	@${CP} /dev/null ${base}/.start_server
