@@ -1,4 +1,4 @@
-# $FreeBSD: ports/ftp/Makefile,v 1.17 2001/03/26 15:34:02 demon Exp $
+# $FreeBSD: ports/ftp/Makefile,v 1.18 2001/03/31 12:13:40 knu Exp $
 #
 
     SUBDIR += IglooFTP
@@ -24,6 +24,7 @@
     SUBDIR += lftp
     SUBDIR += llnlxdir
     SUBDIR += llnlxftp
+    SUBDIR += lukemftp
     SUBDIR += mirror
     SUBDIR += moxftp
     SUBDIR += ncftp
