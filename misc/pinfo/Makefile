@@ -2,7 +2,7 @@
 # Date created:		19 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/pinfo/Makefile,v 1.8 2000/11/14 00:44:10 asami Exp $
+# $FreeBSD: ports/misc/pinfo/Makefile,v 1.9 2000/11/16 13:31:18 tg Exp $
 #
 
 PORTNAME=	pinfo
@@ -15,17 +15,21 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--without-included-gettext --with-readline
-CONFIGURE_ENV=	LIBS="-lgnuregex -L${PREFIX}/lib -lintl" \
-		CFLAGS="${CFLAGS} -I${PREFIX}/include"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -lgnuregex"
+CONFIGURE_ARGS=	--with-readline
 
 MAN1=	pinfo.1
+
+pre-patch:
+	@${PERL} -pi -e \
+		's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 400010
 LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
-CONFIGURE_ARGS+=	--with-ncurses=${PREFIX}
+CONFIGURE_ARGS+=	--with-ncurses=${LOCALBASE}
 .endif
 
 .include <bsd.port.post.mk>
