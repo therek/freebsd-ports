@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.81 2000/08/29 12:43:06 sobomax Exp $
+# $FreeBSD: ports/math/Makefile,v 1.82 2000/09/07 05:19:33 sada Exp $
 #
 
     SUBDIR += PDL
@@ -63,6 +63,7 @@
     SUBDIR += spin
     SUBDIR += ss
     SUBDIR += superlu
+    SUBDIR += thx_1138
     SUBDIR += topaz
     SUBDIR += umatrix
     SUBDIR += umfpack
