@@ -2,20 +2,29 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.16 2000/07/19 08:34:22 shige Exp $
+# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.17 2001/03/10 11:38:31 shige Exp $
 #
 
 PORTNAME=	bitmap
 PORTVERSION=	${BITMAP_VER}
 CATEGORIES=	editors elisp
-MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
-DISTNAME=	bitmap-mule-${BITMAP_VER}
+MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/ \
+		ftp://ftp.jpl.org/pub/elisp/bitmap/snapshots/
+DISTNAME=	bitmap-mule-${BITMAP_DISTVER}
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
 MAINTAINER=	shige@FreeBSD.org
 
+# ports version
+BITMAP_VER=		${BITMAP_MVER}${BITMAP_SNAP_PREFIX}${BITMAP_SNAP}
 # distfile version
-BITMAP_VER=		8.3
+BITMAP_MVER=		8.4
+BITMAP_DISTVER=		${BITMAP_MVER}
+# variables for snapshots version
+BITMAP_SNAP_PREFIX=	.p
+BITMAP_SNAP=		200102280240
+BITMAP_DISTVER=		${BITMAP_SNAP}
+
 BITMAPDOCDIR=	share/doc/bitmap
 BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/bitmap16.pcf.gz
 
