@@ -2,11 +2,12 @@
 # Date created:				2/22/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.25 2001/03/22 13:36:50 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	PyGreSQL
 PORTVERSION=	3.1
+PORTREVISION=	1
 CATEGORIES=	databases python
 MASTER_SITES=	ftp://ftp.druid.net/pub/distrib/
 PKGNAMEPREFIX=	py-
