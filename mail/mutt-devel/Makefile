@@ -4,7 +4,7 @@
 # Date created:         Thur July 25, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.71 1999/09/07 06:14:00 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.72 1999/09/25 14:59:28 obrien Exp $
 
 DISTNAME=	mutt-1.0pre3i
 PKGNAME=	mutt-1.0b3
@@ -29,10 +29,10 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=     obrien@FreeBSD.org
 
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 .if defined(BATCH)
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
-BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell \
-		msgfmt:${PORTSDIR}/devel/gettext
+BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 .if ${MACHINE_ARCH} != "alpha"
 #  coredump in sgmls
 BUILD_DEPENDS+=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
