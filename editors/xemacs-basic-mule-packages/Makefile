@@ -1,13 +1,12 @@
 # New ports collection makefile for:	X-Emacs Packages with Mule
-# Version required:	1.1
 # Date created:		24 Oct 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.3 2000/02/07 17:32:27 taoka Exp $
+# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.4 2000/02/17 04:16:00 kuriyama Exp $
 #
 
-DISTNAME=	xemacs-mule-packages
-PKGNAME=	xemacs-mule-packages-1.1
+PORTNAME=	xemacs-mule-packages
+PORTVERSION=	1.1
 CATEGORIES=	editors
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \

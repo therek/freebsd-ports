@@ -1,12 +1,12 @@
 # New ports collection makefile for:	X-Emacs
-# Version required:	20.4
 # Date created:		26 August 1997
 # Whom:			Michael Elbel (me)
 #
-# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.32 1999/11/30 20:21:44 gj Exp $
+# $FreeBSD: ports/editors/xemacs20/Makefile,v 1.33 2000/01/07 22:18:59 gj Exp $
 #
 
-DISTNAME=	xemacs-20.4
+PORTNAME=	xemacs
+PORTVERSION=	20.4
 CATEGORIES=	editors
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/${DISTNAME}/ \
