@@ -2,7 +2,7 @@
 # Date created:				10 August 2001
 # Whom:	      				Mark Murray <markm@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-DataCash/Makefile,v 1.1 2001/08/13 09:33:00 markm Exp $
+# $FreeBSD: ports/misc/p5-DataCash/Makefile,v 1.2 2001/08/13 14:15:59 markm Exp $
 #
 
 PORTNAME=	DataCash-External
@@ -15,7 +15,7 @@ MAINTAINER=	markm@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/FreezeThaw.pm:${PORTSDIR}/devel/p5-FreezeThaw \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/CSV.pm:${PORTSDIR}/devel/p5-Text-CSV
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/CSV.pm:${PORTSDIR}/textproc/p5-Text-CSV
 		
 PERL_CONFIGURE=	yes
 
