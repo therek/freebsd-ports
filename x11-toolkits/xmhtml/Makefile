@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.16 2001/07/02 07:19:02 lkoeller Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XmHTML
@@ -12,6 +12,7 @@ CATEGORIES=	x11-toolkits www
 MASTER_SITES=	http://www.xs4all.nl/~ripley/XmHTML/dist/
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.de
+COMMENT=	A Motif widget set for displaying HTML 3.2 documents
 
 # BUILD_DEPENDS is used instead of USE_LIBTOOL in order to avoid
 # GNU_CONFIGURE being set.

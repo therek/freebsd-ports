@@ -2,7 +2,7 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-WSNA/Makefile,v 1.11 2000/10/08 10:23:43 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtt-98WSNA
@@ -10,6 +10,7 @@ PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
+COMMENT=	A X True Type Server for X98 WSNA Graphics Cards
 
 RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 

@@ -2,7 +2,7 @@
 # Date created:		11. Jan 1998
 # Whom:			Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11-wm/wmx/Makefile,v 1.10 2000/08/03 09:28:23 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmx
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.42.org/pub/wmx/ \
 DISTNAME=	${PORTNAME}-5sec6
 
 MAINTAINER=	sec@42.org
+COMMENT=	Extended version of wm2 - A simple window manager for X
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-MGA/Makefile,v 1.11 2000/10/08 10:23:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtt-98MGA
@@ -12,6 +12,7 @@ CATEGORIES=	x11-servers
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
 
 RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
+COMMENT=	A X True Type Server for X98 MGA Graphics Cards
 
 ONLY_FOR_ARCHS=	i386
 

@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-VGA16/Makefile,v 1.13 2000/10/08 10:23:34 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtt-VGA16
@@ -10,6 +10,7 @@ PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
+COMMENT=	A X True Type Server for VGA16 Graphics Cards
 
 RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 

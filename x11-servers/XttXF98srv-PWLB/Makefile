@@ -2,7 +2,7 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-PWLB/Makefile,v 1.10 2000/04/10 00:53:05 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtt-98PWLB
@@ -10,6 +10,7 @@ PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
+COMMENT=	A X True Type Server for X98 PWLB Graphics Cards
 
 RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 

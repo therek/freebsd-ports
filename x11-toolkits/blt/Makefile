@@ -2,7 +2,7 @@
 # Date created:		22 September 1998
 # Whom:			Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/x11-toolkits/blt/Makefile,v 1.38 2001/02/05 16:48:45 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	blt
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://tcltk.sourceforge.net/pub/tcltk/blt/ \
 DISTNAME=	BLT${PORTVERSION}
 
 MAINTAINER=	kjc@csl.sony.co.jp
+COMMENT=	A Tk extension (with shared libs)
 
 LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 

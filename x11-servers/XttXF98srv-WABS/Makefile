@@ -2,7 +2,7 @@
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-WABS/Makefile,v 1.11 2000/10/08 10:23:42 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtt-98WABS
@@ -10,6 +10,7 @@ PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
+COMMENT=	A X True Type Server for X98 WABS Graphics Cards
 
 RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 
