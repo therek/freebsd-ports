@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.28 2000/10/05 07:17:12 reg Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.29 2000/10/29 19:49:39 nectar Exp $
 #
 
 PORTNAME=	gnomeicu
@@ -13,7 +13,8 @@ MASTER_SITE_SUBDIR= gnomeicu
 
 MAINTAINER=	nectar@FreeBSD.org
 
-LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
+LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
+		iconv.1:${PORTSDIR}/converters/iconv
 
 USE_X_PREFIX=	yes
 USE_BZIP2=	yes
@@ -34,7 +35,7 @@ SOCKSLIBS=	-lsocks
 
 CONFIGURE_ARGS= --with-statusmenu
 CONFIGURE_ENV=	CPPFLAGS="${SOCKSFLAGS} -I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib" LIBS="${SOCKSLIBS}" \
+		LDFLAGS="-L${LOCALBASE}/lib" LIBS="-liconv ${SOCKSLIBS}" \
 		CFLAGS="${CFLAGS}"
 
 pre-patch:
