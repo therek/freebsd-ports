@@ -1,5 +1,6 @@
-@comment $FreeBSD: ports/devel/bison/pkg-plist,v 1.14 2002/10/24 13:55:31 dwcjr Exp $
+@comment $FreeBSD: ports/devel/bison1875/pkg-plist,v 1.15 2003/05/07 04:48:05 seanc Exp $
 bin/bison
+bin/bison1875
 bin/yacc
 @unexec install-info --delete %D/info/bison.info %D/info/dir
 info/bison.info
