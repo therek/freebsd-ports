@@ -2,7 +2,7 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.8 2000/01/21 12:40:01 shige Exp $
+# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.9 2000/04/14 06:20:34 asami Exp $
 #
 
 PORTNAME=	psgml-${EMACS_PORT}
@@ -14,7 +14,7 @@ DISTNAME=	psgml-${PSGML_VER}
 MAINTAINER?=	shige@FreeBSD.org
 
 # distfile version
-PSGML_VER=		1.2.0
+PSGML_VER=		1.2.1
 PSGML_STARTUPEL=	psgml-startup.el
 CATALOG=		${PREFIX}/share/sgml/catalog
 
