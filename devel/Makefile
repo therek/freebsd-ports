@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.308 2000/07/03 00:34:19 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.309 2000/07/07 06:21:34 asami Exp $
 #
 
     SUBDIR += ElectricFence
@@ -208,6 +208,7 @@
     SUBDIR += prcs
     SUBDIR += pth
     SUBDIR += pth-devel
+    SUBDIR += py-coro
     SUBDIR += py-htmlkit
     SUBDIR += py-kjbuckets
     SUBDIR += py-kqueue
