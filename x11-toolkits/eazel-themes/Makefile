@@ -2,11 +2,11 @@
 # Date created:				17 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.4 2001/01/01 22:39:42 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.5 2001/01/03 17:27:47 sobomax Exp $
 #
 
 PORTNAME=	eazel-themes
-PORTVERSION=	0.0.10103
+PORTVERSION=	0.0.10112
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sobomax
@@ -24,13 +24,13 @@ USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GTK=	yes
 USE_GMAKE=	yes
-USE_AUTOMAKE=	yes
+#USE_AUTOMAKE=	yes
 USE_LIBTOOL=	yes
-AUTOMAKE_ARGS=	--add-missing
+#AUTOMAKE_ARGS=	--add-missing
 
 post-extract:
 	@find ${WRKSRC}/../.. | xargs ${CHOWN} root:wheel
-	@find ${WRKSRC}/../.. -type f | xargs ${CHMOD} 644
+	@find ${WRKSRC}/../.. -type f | grep -v eazel-engine | xargs ${CHMOD} 644
 	@find ${WRKSRC}/../.. -type d | xargs ${CHMOD} 755
 
 post-install:
