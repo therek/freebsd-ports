@@ -2,15 +2,15 @@
 # Date created:        02 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/as80/Makefile,v 1.1 2001/02/17 16:11:45 jeh Exp $
 #
 
 PORTNAME=	as80
 PORTVERSION=	0.6.2
 CATEGORIES=	devel
-MASTER_SITES=	http://home.t-online.de/home/thomas.strathmann/files/
+MASTER_SITES=	http://www.tstrathmann.de/files/
 
-MAINTAINER=	greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
