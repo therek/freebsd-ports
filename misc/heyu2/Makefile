@@ -2,7 +2,7 @@
 # Date created:		27 December 1999
 # Whom:			plambert@plambert.net
 #
-# $FreeBSD: ports/misc/heyu/Makefile,v 1.6 2001/03/10 04:33:07 kris Exp $
+# $FreeBSD: ports/misc/heyu/Makefile,v 1.7 2001/06/18 16:09:50 dwcjr Exp $
 #
 
 PORTNAME=	heyu
@@ -14,6 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	plambert@plambert.net
 
+IS_INTERACTIVE=	yes
 ALL_TARGET=	heyu
 WRKSRC=		${WRKDIR}/heyu.dir
 
