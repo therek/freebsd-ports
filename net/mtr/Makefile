@@ -2,7 +2,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.23 2000/04/17 00:18:29 reg Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.24 2000/05/07 15:18:14 sumikawa Exp $
 #
 
 PORTNAME=	mtr
@@ -21,7 +21,7 @@ MAN8=	mtr.8
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400014
-PATCHFILES=	mtr-042-v6-20000507.diff.gz
+PATCHFILES=	mtr-042-v6-20000719.diff.gz
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 PATCH_DIST_STRIP=	-p1
 
