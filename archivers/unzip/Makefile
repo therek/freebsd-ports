@@ -2,7 +2,7 @@
 # Date created:		17 October 1994
 # Whom:			jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.35 2001/02/20 18:52:44 ache Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.36 2001/08/10 13:39:06 ache Exp $
 #
 
 PORTNAME=	unzip
@@ -37,7 +37,7 @@ ALL_TARGET=	bsd
 pre-build:
 	@(cd ${BUILD_WRKSRC}; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} unzip)
 	@(cd ${WRKSRC}; \
-		./unzip -o ${DISTDIR}/unreduce_full.zip; \
+		./unzip -o ${_DISTDIR}unreduce_full.zip; \
 		${MV} unreduce_full.c unreduce.c)
 	@(cd ${BUILD_WRKSRC}; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} clean)
 .endif
