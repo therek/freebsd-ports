@@ -2,12 +2,12 @@
 # Date created:		3 Jun 1999
 # Whom:			JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/korean/bitchx/Makefile,v 1.9 2000/10/05 07:22:43 reg Exp $
+# $FreeBSD: ports/korean/bitchx/Makefile,v 1.10 2000/10/25 11:51:00 jeh Exp $
 #
 
 PORTNAME=	BitchX
 PORTVERSION=	1.0c16
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	korean irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
