@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.6 2000/08/16 20:39:58 ade Exp $
+# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.7 2000/08/17 16:41:07 ade Exp $
 #
 
 PORTNAME=	gnomevfs
@@ -17,7 +17,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
-		gconf-1.0:${PORTSDIR}/devel/gconf \
+		gconf-1.1:${PORTSDIR}/devel/gconf \
 		bz2.1:${PORTSDIR}/archivers/bzip2
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

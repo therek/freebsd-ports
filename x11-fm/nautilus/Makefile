@@ -2,12 +2,12 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.1 2000/09/14 17:57:56 ade Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.2 2000/09/17 19:09:28 ade Exp $
 #
 
 PORTNAME=	nautilus
 PORTVERSION=	0.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/nautilus

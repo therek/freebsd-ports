@@ -2,7 +2,7 @@
 # Date created:				17th August 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.1 2000/08/18 15:09:36 ade Exp $
 #
 
 PORTNAME=	medusa
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=    gnome.4:${PORTSDIR}/x11/gnomelibs \
 		oaf.0:${PORTSDIR}/devel/oaf \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs \
-		gconf-1.0:${PORTSDIR}/devel/gconf
+		gconf-1.1:${PORTSDIR}/devel/gconf
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
