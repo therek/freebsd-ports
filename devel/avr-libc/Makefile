@@ -2,7 +2,7 @@
 # Date created:		04 Dec 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.4 2001/04/20 13:54:12 joerg Exp $
+# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.5 2001/08/12 15:15:52 joerg Exp $
 #
 
 PORTNAME=	avr-libc
@@ -39,5 +39,6 @@ post-install:
 				${PREFIX}/share/doc/avr-libc/examples; \
 		done
 		${INSTALL_DATA} ${FILESDIR}/avr-lib.pdf ${PREFIX}/share/doc/avr-libc
+		${INSTALL_DATA} ${FILESDIR}/avr-libc-reference.html ${PREFIX}/share/doc/avr-libc
 
 .include <bsd.port.mk>
