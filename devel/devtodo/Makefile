@@ -2,14 +2,13 @@
 # Date Created:				26 May 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/devtodo/Makefile,v 1.1 2001/06/09 12:38:27 dinoex Exp $
+# $FreeBSD: ports/devel/devtodo/Makefile,v 1.2 2001/07/04 16:11:25 dannyboy Exp $
 #
 
 PORTNAME=	devtodo
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.11
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=	${PORTNAME}
+MASTER_SITES=	http://activelysecure.net/~alec/development/devtodo/download.php?filename=${PORTVERSION}/
 
 MAINTAINER=	petef@databits.net
 
@@ -27,5 +26,6 @@ post-install:
 .for file in scripts.sh scripts.tcsh todorc.example
 	${INSTALL_DATA} ${WRKSRC}/doc/${file} ${PREFIX}/share/examples/devtodo
 .endfor
+	${INSTALL_DATA} ${WRKSRC}/doc/todorc.example ${PREFIX}/etc/todorc.sample
 
 .include <bsd.port.mk>
