@@ -3,17 +3,17 @@
 # Date created:			Jul 28, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD: ports/devel/p5-Devel-StackTrace/Makefile,v 1.1 2001/07/28 05:18:51 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Devel-StackTrace
-PORTVERSION=	0.85
+PORTVERSION=	0.9
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	erwin@lansing.dk
 
 PERL_CONFIGURE=	yes
 
