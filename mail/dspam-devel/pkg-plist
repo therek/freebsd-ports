@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/dspam/pkg-plist,v 1.6 2004/01/09 02:17:48 leeym Exp $
+@comment $FreeBSD: ports/mail/dspam/pkg-plist,v 1.7 2004/01/31 22:51:09 sergei Exp $
 bin/dspam
 bin/dspam_2mysql
 bin/dspam_dump
@@ -20,7 +20,8 @@ lib/libdspam.a
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%MYSQL%%%%EXAMPLESDIR%%/README
 %%MYSQL%%%%EXAMPLESDIR%%/mysql.data
-%%MYSQL%%%%EXAMPLESDIR%%/mysql_objects.sql
+%%MYSQL%%%%EXAMPLESDIR%%/mysql_objects.sql.space.optimized
+%%MYSQL%%%%EXAMPLESDIR%%/mysql_objects.sql.speed.optimized
 %%MYSQL%%%%EXAMPLESDIR%%/purge.sql
 %%MYSQL%%%%EXAMPLESDIR%%/virtual_users.sql
 %%MYSQL%%@dirrm %%EXAMPLESDIR%%
