@@ -2,7 +2,7 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.6 2000/05/18 01:01:49 will Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.7 2000/05/19 23:04:34 will Exp $
 #
 
 PORTNAME=	xplanet
@@ -77,6 +77,6 @@ pre-build:
 	@${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/auxfiles.h
 
 post-install:
-	@${INSTALL_DATA} ${DISTDIR}/photo_1600.jpg ${PREFIX}/share/xplanet/earth.jpg
+	@${INSTALL_DATA} ${DISTDIR}/depths_800.jpg ${PREFIX}/share/xplanet/earth.jpg
 
 .include <bsd.port.post.mk>
