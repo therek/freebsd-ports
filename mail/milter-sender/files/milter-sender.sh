@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/milter-sender/files/milter-sender.sh,v 1.1 2004/10/19 22:57:34 pav Exp $
 #
 
 # PROVIDE: %%NAME%%
@@ -26,16 +26,16 @@ rcvar=`set_rcvar`
 %%NAME%%_flags=${%%NAME%%_flags:-"unix:$%%NAME%%_chdir/socket"}
 
 command=%%PREFIX%%/sbin/milter-sender
+command_args="&"
 required_dirs="$%%NAME%%_chdir"
 
-start_cmd=start_cmd
-start_cmd()
+start_precmd=start_precmd
+start_precmd()
 {
     if [ -s "$%%NAME%%_chdir/mutex" ]; then
 	ipcrm -s `cat $%%NAME%%_chdir/mutex`
     fi
     rm -f $%%NAME%%_chdir/{mutex,socket} $%%NAME%%_pidfile
-    cd $%%NAME%%_chdir && $command $%%NAME%%_flags >/dev/null &
 }
 
 load_rc_config $name
