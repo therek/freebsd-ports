@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/tex-texmflocal/pkg-plist,v 1.1 2004/01/25 20:02:42 krion Exp $
+@comment $FreeBSD: ports/print/tex-texmflocal/pkg-plist,v 1.2 2004/01/26 13:28:00 krion Exp $
 %%TEXMFLOCAL%%/ls-R
 @dirrm %%TEXMFLOCAL%%/bibtex/bib
 @dirrm %%TEXMFLOCAL%%/bibtex/bst
@@ -33,6 +33,7 @@
 @dirrm %%TEXMFLOCAL%%/ptex/plain
 @dirrm %%TEXMFLOCAL%%/ptex/platex
 @dirrm %%TEXMFLOCAL%%/ptex
+@dirrm %%TEXMFLOCAL%%/web2c
 @dirrm %%TEXMFLOCAL%%
 @exec %%MKTEXLSR%%
 @unexec %%MKTEXLSR%%
