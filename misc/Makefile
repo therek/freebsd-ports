@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.331 2001/03/10 13:51:39 alex Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.332 2001/03/10 19:09:47 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -70,6 +70,7 @@
     SUBDIR += hello
     SUBDIR += heyu
     SUBDIR += histring
+    SUBDIR += instant-server
     SUBDIR += instant-workstation
     SUBDIR += iselect
     SUBDIR += jargon
