@@ -1,8 +1,0 @@
-#!/bin/sh
-#
-# $FreeBSD: ports/mail/postfix-current/scripts/configure,v 1.7 2001/08/30 03:36:38 dwcjr Exp $
-
-for f in `find ${WRKSRC} -type f | xargs grep -l '\!\!PREFIX\!\!' ` ; do \
-	mv $f $f.orig && sed s+!!PREFIX!!+$PREFIX+g < $f.orig > $f && \
-		rm $f.orig
-done
