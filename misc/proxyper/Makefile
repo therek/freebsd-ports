@@ -3,11 +3,11 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD: ports/misc/proxyper/Makefile,v 1.2 2000/01/07 16:40:08 asami Exp $
+# $FreeBSD: ports/misc/proxyper/Makefile,v 1.3 2000/02/14 02:23:06 asami Exp $
 #
 
-DISTNAME=	proxyper308-freebsd3-elf-x86
-PKGNAME=	proxyper-freebsd3-elf-x86-308
+DISTNAME=	proxyper313-freebsd-x86
+PKGNAME=	proxyper-freebsd3-elf-x86-313
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/proxyper-rc5des/ \
 		http://http.distributed.net/pub/dcti/proxyper-rc5des/
@@ -29,7 +29,7 @@ NO_BUILD=	yes
 
 BINDIR=		${PREFIX}/proxyper/
 LIBDIR=		${PREFIX}/etc/rc.d/
-WRKSRC=		${WRKDIR}
+WRKSRC=		${WRKDIR}/${DISTNAME}
 
 CLIENTUID=	nobody
 CLIENTGID=	daemon
