@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.46 2000/12/13 08:26:15 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.47 2000/12/21 20:16:10 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.isc.org/isc/dhcp/
 DISTNAME=	dhcp-3.0b2pl${PORTVERSION:S/3.0.b2.//g}
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if defined(USE_FACILITY)
 _USE_FACILITY:=	`${ECHO} ${USE_FACILITY} | ${TR} "[:lower:]" "[:upper:]"`
