@@ -3,15 +3,12 @@
 # Date created:			24 September, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.14 1999/11/28 18:30:51 steve Exp $
+# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.15 2000/01/30 23:37:18 jedgar Exp $
 #
 
 DISTNAME=	cbb-0.8.1
 CATEGORIES=	deskutils
-MASTER_SITES=	http://www.FreeBSD.org/~jedgar/distfiles/
-# Former sites that may or may not be usable in the future:
-#		ftp://ftp.me.umn.edu/pub/finance/ \
-#		ftp://ftp.fifi.org/pub/cbb/
+MASTER_SITES=	http://download.sourceforge.net/cbb/
 
 MAINTAINER=	kline@thought.org
 
