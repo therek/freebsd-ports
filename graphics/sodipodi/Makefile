@@ -2,18 +2,16 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.19 2000/11/14 14:10:15 ade Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.20 2000/12/15 17:53:10 ade Exp $
 #
 
 PORTNAME=	sodipodi
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
-
-BROKEN=		"Fails with new devel/bonobo"
 
 LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade \
 		gnomeprint.13:${PORTSDIR}/print/gnomeprint \
