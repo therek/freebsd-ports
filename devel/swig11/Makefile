@@ -2,12 +2,12 @@
 # Date created:			19 April 1996
 # Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.32 2000/10/15 08:04:11 knu Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.33 2000/10/16 09:43:29 knu Exp $
 #
 
 PORTNAME=	swig
 PORTVERSION=	${VER}p5
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel perl5 python tcl82
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.rge.com/pub/languages/swig/${VER}/ \
@@ -29,6 +29,7 @@ INSTALLS_SHLIB=	yes
 
 WRKSRC=		${WRKDIR}/SWIG${PORTVERSION}
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} -fpic -DPIC"
 CONFIGURE_ARGS=	--with-tclincl=${PREFIX}/include/tcl8.2/ \
 		--with-tcllib=${PREFIX}/lib/tcl8.2/
 ALL_TARGET=	all runtime
