@@ -2,18 +2,24 @@
 # Date created:				July 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.28 2001/03/01 06:38:47 vanilla Exp $
+# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.29 2001/04/02 14:27:35 vanilla Exp $
 #
 
 PORTNAME=	Storable
-PORTVERSION=	1.0.11
+PORTVERSION=	1.0.12
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Storable
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 PERL_CONFIGURE=	yes
+
+MAN3=          Storable.3
+MANPREFIX=     ${PREFIX}/lib/perl5/${PERL_VERSION}
+
+pre-patch:
+	@${PERL} -pi -e '$$_="" if /MAN3PODS/' ${WRKSRC}/Makefile.PL
 
 .include <bsd.port.mk>
