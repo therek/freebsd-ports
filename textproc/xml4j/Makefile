@@ -2,7 +2,7 @@
 # Date created:		21 Feb 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.15 2000/04/09 21:53:21 cpiazza Exp $
+# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.16 2000/07/25 07:19:59 kuriyama Exp $
 #
 
 PORTNAME=	xml4j
@@ -16,7 +16,6 @@ MAINTAINER=	kuriyama@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
 
 WRKSRC=		${WRKDIR}/XML4J_3_0_1
-RESTRICTED=	"License prohibites distribute."
 NO_BUILD=	YES
 
 JAVASUBDIR=	jdk1.1.8
