@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.257 2000/02/09 04:41:32 ade Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.258 2000/02/12 21:54:08 jedgar Exp $
 #
 
     SUBDIR += ElectricFence
@@ -114,6 +114,7 @@
     SUBDIR += nana
     SUBDIR += nasm
     SUBDIR += ncurses
+    SUBDIR += newt
     SUBDIR += noweb
     SUBDIR += omniORB
     SUBDIR += p5-AppConfig
