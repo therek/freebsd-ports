@@ -2,7 +2,7 @@
 # Date created:		10 January 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/ftp/ftpmirror/Makefile,v 1.6 2001/03/02 02:16:29 kuriyama Exp $
+# $FreeBSD: ports/ftp/ftpmirror/Makefile,v 1.7 2001/03/02 02:24:14 kuriyama Exp $
 #
 
 PORTNAME=	ftpmirror
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.intec.co.jp/pub/utils/ftpmirror/beta/
 
 MAINTAINER=	yasuf@big.or.jp
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Socket6.pm:${PORTSDIR}/net/p5-Socket6
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Socket6.pm:${PORTSDIR}/net/p5-Socket6
 
 USE_PERL5=	YES
 GNU_CONFIGURE=	YES
