@@ -2,11 +2,11 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.49 2001/06/16 10:05:04 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zsh
-PORTVERSION=	4.0.2
+PORTVERSION=	4.0.4
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.zsh.org/%SUBDIR%/ \
