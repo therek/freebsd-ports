@@ -3,15 +3,15 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.9 1999/09/10 19:07:06 shige Exp $
+# $FreeBSD: ports/editors/semi-emacs-current/Makefile,v 1.10 1999/10/11 06:22:03 shige Exp $
 #
 
 DISTNAME=	semi-${SEMI_VER}
 CATEGORIES=	editors elisp
-MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/semi/semi-1.13-for-flim-1.12/ \
-		ftp://ftp.media.kyoto-u.ac.jp/pub/mule/semi/semi-1.13-for-flim-1.12/ \
-		ftp://ftp.win.or.jp/pub/word/mule/semi/semi-1.13-for-flim-1.12/ \
-		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/emacs/mule/semi/semi-1.13-for-flim-1.12/
+MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/semi/semi-1.13-for-flim-1.13/ \
+		ftp://ftp.media.kyoto-u.ac.jp/pub/mule/semi/semi-1.13-for-flim-1.13/ \
+		ftp://ftp.win.or.jp/pub/word/mule/semi/semi-1.13-for-flim-1.13/ \
+		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/emacs/mule/semi/semi-1.13-for-flim-1.13/
 
 MAINTAINER?=	shige@FreeBSD.org
 
