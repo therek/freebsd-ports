@@ -2,11 +2,12 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.95 2001/01/11 05:19:39 steve Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.96 2001/01/17 17:04:51 sf Exp $
 #
 
 PORTNAME=	ImageMagick
 PORTVERSION=	5.2.7
+PORTREVISION=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	ftp://ftp.simplesystems.org/pub/ImageMagick/ \
 		ftp://ftp.cdrom.com/pub/ImageMagick/ \
