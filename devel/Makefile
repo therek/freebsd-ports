@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.373 2000/12/11 13:09:23 okazaki Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.374 2000/12/12 14:37:12 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -255,6 +255,8 @@
     SUBDIR += p5-TraceFuncs
     SUBDIR += patch
     SUBDIR += pccts
+    SUBDIR += pcl-cvs-emacs
+    SUBDIR += pcl-cvs-emacs20
     SUBDIR += pcre
     SUBDIR += perforce
     SUBDIR += pharmacy
