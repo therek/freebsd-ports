@@ -2,19 +2,19 @@
 # Date created:         26 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.28 1999/09/27 02:01:53 steve Exp $
+# $FreeBSD: ports/benchmarks/iozone/Makefile,v 1.29 2000/04/08 22:04:11 mharo Exp $
 #
 
 PORTNAME=	iozone
-PORTVERSION=	3.9
+PORTVERSION=	3.53
 CATEGORIES=	benchmarks
-MASTER_SITES=	http://www.iozone.org/src/stable/
-DISTNAME=	iozone3_9
+MASTER_SITES=	http://www.iozone.org/src/current/
+DISTNAME=	iozone3_53
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	jmz@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/src
+WRKSRC=		${WRKDIR}/src/current
 
 MAKEFILE=	makefile
 MAKE_ARGS=	freebsd
@@ -25,6 +25,6 @@ MAN1=		iozone.1
 do-install:
 	strip ${WRKSRC}/iozone
 	${INSTALL_PROGRAM} ${WRKSRC}/iozone ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/iozone.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKDIR}/docs/iozone.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
