@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/clibpdf/Makefile,v 1.1 2000/08/22 14:11:10 knu Exp $
 #
 
 PORTNAME=	clibpdf
@@ -22,6 +22,8 @@ MAKEFILE=	Makefile.FreeBSD
 ALL_TARGET=	lib shlib
 
 PLIST_SUB=	SHLIB_VER="${SHLIB_VER}"
+
+NO_CDROM=	"Needs a license to bundle with other products"
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/cpdflib.h ${PREFIX}/include/
