@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.222 2001/04/07 04:43:39 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.223 2001/04/07 04:59:20 will Exp $
 #
 
     SUBDIR += Maaate
@@ -184,6 +184,7 @@
     SUBDIR += wmix
     SUBDIR += wmmixer
     SUBDIR += wmmp3
+    SUBDIR += wmrecord
     SUBDIR += wmsmixer
     SUBDIR += wmtune
     SUBDIR += wmusic
