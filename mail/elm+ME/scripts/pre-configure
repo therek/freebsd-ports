@@ -2,7 +2,7 @@
 #
 #       pre-configure script for Elm port to FreeBSD
 #
-# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.25 2000/08/14 13:27:17 ache Exp $
+# $FreeBSD: ports/mail/elm+ME/scripts/pre-configure,v 1.26 2001/01/31 17:16:07 sf Exp $
 
 [ -r /usr/include/inttypes.h ] && has_inttypes=define || has_inttypes=undef
 
@@ -162,7 +162,7 @@ compress='/usr/bin/compress'
 execmail=''
 libswanted='sun nls c_s'
 noaddlib='yes'
-c_date='Sun Jan  7 05:51:19 CET 2001'
+c_date='Wed Feb  7 02:17:00 CET 2001'
 d_ascii='undef'
 d_broke_ctype='undef'
 d_calendar='define'
@@ -251,7 +251,7 @@ defeditor='/usr/bin/vi'
 editoropts=''
 hostname=''
 phostname='hostname'
-mydomain=''
+mydomain='tld.invalid'
 autohostname='define'
 i_memory='define'
 i_time='define'
