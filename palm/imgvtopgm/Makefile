@@ -3,15 +3,16 @@
 # Date created:         Wed Jun 16 04:42:22 JST 1999
 # Whom:                 sumikawa@ebina.hitachi.co.jp
 #
-# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.1.1.1 1999/08/30 18:10:06 sumikawa Exp $
+# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.2 1999/09/07 06:30:51 sumikawa Exp $
 #
 
 DISTNAME=	imgvtopgm-2.0
 CATEGORIES=	palm graphics
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
-BUILD_DEPENDS=	${X11BASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
 
 MAINTAINER=	sumikawa@kame.net
+
+BUILD_DEPENDS=	${X11BASE}/lib/libpbm.a:${PORTSDIR}/graphics/netpbm
 
 GNU_CONFIGURE=	yes
 
