@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/linux-nwnclient/files/nwn.sh,v 1.1 2004/03/01 23:20:02 des Exp $
 #
 
 NWNDATADIR="%%NWNDATADIR%%"
@@ -67,7 +67,7 @@ if [ ! -d "${NWNUSERDIR}" ] ; then
 	read dummy
 fi
 
-echo "Saved games will be stored in ${NWNUSERDIR}/.nwn/saves/"
+echo "Saved games will be stored in ${NWNUSERDIR}/saves/"
 
 cd "${NWNUSERDIR}"
 
