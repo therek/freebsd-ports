@@ -2,7 +2,7 @@
 # Date created:				26 Apr 2001
 # Whom:					Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/osg/Makefile,v 1.3 2001/09/10 20:47:25 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	osg
@@ -27,6 +27,11 @@ MAKE_ENV=	CXX="${CXX}" \
 		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 
 ALL_TARGET=	freebsd
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/src/osgPlugins/flt/Input.cpp \
+		${WRKSRC}/src/osgPlugins/flt/Record.cpp
 
 post-patch:
 .for suf in defs rules

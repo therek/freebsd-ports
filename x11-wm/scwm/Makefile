@@ -2,7 +2,7 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.20 2000/08/04 01:05:13 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scwm
@@ -32,6 +32,10 @@ CONFIGURE_ENV+=	LIBS="-L${X11BASE}/lib -lxpg4"
 .endif
 
 MAN1=		scwm.1 scwmexec.1 scwmrepl.1
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/utilities/libscwmexec/libmain.c
 
 post-install:
 	${RM} -rf ${PREFIX}/share/scwm/ViaVoice
