@@ -2,7 +2,7 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.15 2000/07/13 09:31:35 taoka Exp $
 #
 
 PORTNAME=	xemacs-prog-packages
@@ -25,7 +25,7 @@ DISTFILES=	\
 		vc-cc-1.13-pkg.tar.gz \
 		vhdl-1.10-pkg.tar.gz
 
-MAINTAINER=	KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 DIST_SUBDIR=	xemacs
 MASTER_SITE_SUBDIR=${DIST_SUBDIR}

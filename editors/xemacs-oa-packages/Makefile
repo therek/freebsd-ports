@@ -2,7 +2,7 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xemacs-oa-packages/Makefile,v 1.15 2000/07/13 09:31:31 taoka Exp $
 #
 
 PORTNAME=	xemacs-oa-packages
@@ -25,7 +25,7 @@ DISTFILES=	\
 		speedbar-1.14-pkg.tar.gz \
 		strokes-1.06-pkg.tar.gz
 
-MAINTAINER=	KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 DIST_SUBDIR=	xemacs
 MASTER_SITE_SUBDIR=${DIST_SUBDIR}

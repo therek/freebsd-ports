@@ -2,7 +2,7 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xemacs-games-packages/Makefile,v 1.15 2000/07/13 09:31:29 taoka Exp $
 #
 
 PORTNAME=	xemacs-games-packages
@@ -21,7 +21,7 @@ DISTFILES=	\
 		mine-1.12-pkg.tar.gz \
 		misc-games-1.13-pkg.tar.gz
 
-MAINTAINER=	KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 DIST_SUBDIR=	xemacs
 MASTER_SITE_SUBDIR=${DIST_SUBDIR}

@@ -2,7 +2,7 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$$
+# $FreeBSD: ports/editors/xemacs-basic-mule-packages/Makefile,v 1.7 2000/07/13 09:53:00 taoka Exp $$
 #
 
 PORTNAME=	xemacs-basic-mule-packages
@@ -22,7 +22,7 @@ DISTFILES=	\
 		mule-base-1.34-pkg.tar.gz \
 		skk-1.15-pkg.tar.gz
 
-MAINTAINER=	KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 DIST_SUBDIR=	xemacs
 MASTER_SITE_SUBDIR=${DIST_SUBDIR}
