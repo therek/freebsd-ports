@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.85 2000/04/16 18:56:19 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.86 2000/05/02 14:02:01 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -136,8 +136,8 @@ while [ "$1" ]; do
 			echo "PHP_CONF_ARGS+=	--with-dbase"
 			;;
 		\"OpenLDAP\")
-			echo "BUILD_DEPENDS+=	\${PREFIX}/lib/libldap.a:\${PORTSDIR}/net/openldap"
-			echo "BUILD_DEPENDS+=	\${PREFIX}/lib/liblber.a:\${PORTSDIR}/net/openldap"
+			echo "LIB_DEPENDS+=	ldap.1:\${PORTSDIR}/net/openldap"
+			echo "LIB_DEPENDS+=	lber.1:\${PORTSDIR}/net/openldap"
 			echo "PHP_CONF_ARGS+=	--with-ldap=\${PREFIX}"
 			if [ -f /usr/lib/libkrb.a -a -f /usr/lib/libdes.a ]; then
 				echo "CONFIGURE_ENV+=	LIBS='-lkrb -ldes -L\${PREFIX}/lib'"
