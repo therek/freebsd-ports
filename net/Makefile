@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.577 2001/07/14 23:08:45 tobez Exp $
+# $FreeBSD: ports/net/Makefile,v 1.578 2001/07/19 19:06:03 knu Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -53,10 +53,8 @@
     SUBDIR += cricket
     SUBDIR += cryptcat
     SUBDIR += cvsup
-    SUBDIR += cvsup-bin
     SUBDIR += cvsup-devel
     SUBDIR += cvsup-mirror
-    SUBDIR += cvsupd-bin
     SUBDIR += cvsupit
     SUBDIR += dante
     SUBDIR += datapipe
