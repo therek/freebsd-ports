@@ -2,11 +2,11 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.12 2000/12/21 03:19:14 kris Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.13 2000/12/24 10:55:35 reg Exp $
 #
 
 PORTNAME=	XFree86-aoutlibs
-PORTVERSION= 	3.3.3
+PORTVERSION=	3.3.3
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.3/binaries/FreeBSD-2.2.x/
 DISTNAME=	Xbin

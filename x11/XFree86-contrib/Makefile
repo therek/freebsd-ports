@@ -2,11 +2,11 @@
 # Date created:         7 November 1996
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.18 2000/04/13 19:09:08 cpiazza Exp $
+# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.19 2000/09/21 08:36:28 sobomax Exp $
 #
 
 PORTNAME=	XFree86-contrib
-PORTVERSION= 	3.3.6
+PORTVERSION=	3.3.6
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	${PORTVERSION}
