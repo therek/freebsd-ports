@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.262 2002/10/26 19:40:43 adamw Exp $
+# $FreeBSD: ports/LEGAL,v 1.263 2002/11/06 06:29:20 sada Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -27,6 +27,8 @@ atari800-*		ports/emulators/atari800 xf25 contains copyright ROMs
 						and cannot be distributed.
 bb-*			ports/net/bb		FreeBSD has permission from
 						author to put bb onto CDROM.
+bcwipe			ports/security/bcwipe	Non-Commercial Distribution and
+						Use Only
 blender			ports/graphics/blender	Can't distribute commercially.
 bnetd			ports/games/bnetd	has been disabled for legal issue
 bro-*			ports/security/bro	No distribution due to
