@@ -2,7 +2,7 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.14 2000/04/12 06:14:59 obrien Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.15 2000/05/16 19:12:22 jake Exp $
 #
 
 PORTNAME=	shujit
@@ -10,7 +10,7 @@ PORTVERSION=	0.5.2
 CATEGORIES=	java
 MASTER_SITES=	http://www.shudo.net/jit/dist/
 
-MAINTAINER=	jake@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/ruby:${PORTSDIR}/lang/ruby \
 		${LOCALBASE}/jdk1.1.8/bin/javac:${PORTSDIR}/java/jdk
