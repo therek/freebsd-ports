@@ -2,15 +2,15 @@
 # Date created:		1 Oct 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/audio/xmradio/Makefile,v 1.10 2000/11/01 13:33:25 jeh Exp $
+# $FreeBSD: ports/audio/xmradio/Makefile,v 1.11 2000/11/07 23:27:55 asami Exp $
 #
 
 PORTNAME=	xmradio
 PORTVERSION=	1.0
 CATEGORIES=	audio
-MASTER_SITES=	http://www.rostock.zgdv.de/~runge/radio/
+MASTER_SITES=	http://core.de/~coto/radio/
 
-MAINTAINER=	runge@rostock.zgdv.de
+MAINTAINER=	runge@core.de	
 
 # This program does not actually depend on the below, but they are pretty
 # useful if you are into digital audio recording and playback.
