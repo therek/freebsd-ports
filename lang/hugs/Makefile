@@ -2,14 +2,15 @@
 # Date created:		22 September 1997
 # Whom:			Torsten Teg Grust (Torsten.Grust@uni-konstanz.de)
 #
-# $FreeBSD: ports/lang/hugs/Makefile,v 1.10 2000/04/30 19:12:19 steve Exp $
+# $FreeBSD: ports/lang/hugs/Makefile,v 1.11 2001/06/19 14:05:39 dwcjr Exp $
 #
 
 PORTNAME=	hugs98
 PORTVERSION=	200102
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://www.cse.ogi.edu/pub/pacsoft/hugs/
-DISTNAME=	${PORTNAME}${PORTVERSION}-${HUGS_DATE}
+DISTNAME=	${PORTNAME}-${HUGS_DATE}
 
 MAINTAINER=	obraun@informatik.unibw-muenchen.de
 
