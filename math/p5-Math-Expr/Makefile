@@ -2,7 +2,7 @@
 # Date created:				20 Sep 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/p5-Math-Expr/Makefile,v 1.2 2000/10/03 05:12:31 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Math-Expr
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Math
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	lioux@FreeBSD.org
+COMMENT=	Perl module for parsing mathematical expressions into a tree structure
 
 PERL_CONFIGURE=	yes
 

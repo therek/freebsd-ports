@@ -2,7 +2,7 @@
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/icqlib/Makefile,v 1.11 2000/09/23 04:31:54 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icqlib
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	lioux@FreeBSD.org
+COMMENT=	A library required by kicq (not libicq)
 
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes

@@ -2,7 +2,7 @@
 # Date created:         18 Jun 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/sysutils/memtest/Makefile,v 1.1 2000/07/19 10:27:50 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	memtest
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.qcc.sk.ca/~charlesc/software/memtester/
 DISTNAME=	${PORTNAME}er-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
+COMMENT=	Utility to test for faulty memory subsystem
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
