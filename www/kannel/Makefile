@@ -2,10 +2,10 @@
 # Date created:		19 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/www/kannel/Makefile,v 1.7 2001/02/26 04:45:26 steve Exp $
+# $FreeBSD: ports/www/kannel/Makefile,v 1.8 2001/02/28 13:04:06 kevlo Exp $
 
 PORTNAME=	kannel
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.kannel.org/download/${PORTVERSION}/
 DISTNAME=	gateway-${PORTVERSION}
