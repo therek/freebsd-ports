@@ -2,7 +2,7 @@
 # Date created:				28th January 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.9 2000/08/04 01:34:26 ade Exp $
+# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.10 2000/08/04 16:11:19 ade Exp $
 #
 
 PORTNAME=	gnomeiconedit
@@ -18,6 +18,8 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		bonobo.2:${PORTSDIR}/devel/bonobo
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+
+BROKEN=		"Uses internals from devel/oaf that are no longer present"
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
