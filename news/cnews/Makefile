@@ -2,11 +2,12 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.38 2001/01/24 06:23:07 dinoex Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.39 2001/05/16 18:45:42 dinoex Exp $
 #
 
 PORTNAME=	cnews
 PORTVERSION=	cr.g
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/c-news/ \
 		ftp://ftp.funet.fi/pub/unix/news/cnews/ \
