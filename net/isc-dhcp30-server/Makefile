@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.52 2001/03/09 15:10:15 sf Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.53 2001/03/13 22:07:58 sf Exp $
 #
 
 PORTNAME=	dhcp
@@ -44,7 +44,7 @@ CONF_FILES=	dhclient.conf
 BIN_DIR=	${PREFIX}/sbin
 ETC_DIR=	${PREFIX}/etc
 RCD_DIR=	${PREFIX}/etc/rc.d
-DOC_DIR=	${PREFIX}/share/doc/${PORTNAME}
+DOC_DIR=	${PREFIX}/share/doc/${PKGBASE}
 VARDB_DIR=	/var/db
 
 STRIP?=		strip
