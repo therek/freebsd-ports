@@ -2,14 +2,15 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/www/mod_python/Makefile,v 1.2 2000/11/08 22:49:53 steve Exp $
+# $FreeBSD: ports/www/mod_python/Makefile,v 1.3 2000/11/15 14:09:36 sobomax Exp $
 #
 
 PORTNAME=	mod_python
-PORTVERSION= 	2.6.3
+PORTVERSION= 	2.7.1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.modpython.org/dist/ \
-		http://www.pythonlabs.com/products/python2.0/downloads/
+		http://www.python.org/ftp/python/2.0/ \
+		http://www3.kr.freebsd.org/~perky/distfiles/
 DISTFILES=      mod_python-${PORTVERSION}.tgz ${PYTHON_DISTFILE}
 DIST_SUBDIR=	python
 
@@ -26,7 +27,7 @@ USE_PYTHON=	yes
 CONFIGURE_ARGS=	--with-apxs=${LOCALBASE}/sbin/apxs \
 		--with-python=${PYTHON_WRKSRC}
 CONFIGURE_ENV=	PYTHON_BIN=${LOCALBASE}/bin/python
-PLIST_SUB+=	PYTHON_LIBPATH=${PYTHON_LIBPATH:S/^${LOCALBASE}//g}lib
+PLIST_SUB+=	PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR:S/^${LOCALBASE}\///g}
 
 pre-configure:
 	cd ${PYTHON_WRKSRC} && ./configure --without-threads && cd Modules && ${MAKE} -f Makefile.pre Makefile
