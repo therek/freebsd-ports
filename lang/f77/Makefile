@@ -2,16 +2,17 @@
 # Date created:				19 JAN 1999
 # Whom:					Steven G. Kargl
 #
-# $FreeBSD: ports/lang/f77/Makefile,v 1.5 2000/04/12 06:18:26 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	f77
 PORTVERSION=	0.3
 CATEGORIES=	lang
-MASTER_SITES=	ftp://troutmask.apl.washington.edu/pub/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	f77-freebsd.0.3
 
-MAINTAINER=	kargl@troutmask.apl.washington.edu
+MAINTAINER=	ports@FreeBSD.org
 
 .ifdef GNU_CPP
 RUN_DEPENDS=	${PREFIX}/bin/f2c:${PORTSDIR}/lang/f2c
