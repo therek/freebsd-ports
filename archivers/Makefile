@@ -1,10 +1,11 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.40 2000/08/12 12:12:37 knu Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.41 2000/10/28 01:58:22 will Exp $
 #
 
     SUBDIR += 9e
     SUBDIR += arc
     SUBDIR += bzip
     SUBDIR += bzip2
+    SUBDIR += cabextract
     SUBDIR += deepforest
     SUBDIR += fastjar
     SUBDIR += freeze
