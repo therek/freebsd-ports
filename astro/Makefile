@@ -1,8 +1,9 @@
-# $FreeBSD: ports/astro/Makefile,v 1.21 2000/07/10 03:07:12 steve Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.22 2000/08/26 01:48:50 will Exp $
 #
 
     SUBDIR += dgpsip
     SUBDIR += ephem
+    SUBDIR += glunarclock
     SUBDIR += luna
     SUBDIR += openuniverse
     SUBDIR += pyweather
