@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.48 2000/04/20 17:31:39 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.49 2000/07/04 07:12:49 sobomax Exp $
 #
 
 PORTNAME=	ghostscript
@@ -27,7 +27,6 @@ PLIST_SUB=	GS_VERSION=${PORTVERSION}
 USE_XLIB=	yes
 EXTRACT_ONLY=	${GS_SOURCES} ${HPDJ_DRV}
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}
-USE_GMAKE=	yes
 MAKEFILE=	src/unix-gcc.mak
 CFLAGS+=	-I${PREFIX}/include
 # Note: the order that the manpages are listed here matters because
