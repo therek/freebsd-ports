@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.500 2005/01/21 15:31:52 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.501 2005/01/21 15:37:24 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -285,10 +285,12 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <mlist msgid="20041027233907.A3678@netdirect.ca">http://marc.theaimsgroup.com/?l=bugtraq&amp;m=109898111915661</mlist>
       <url>http://rus.members.beeb.net/xzgv.html</url>
       <url>http://www.svgalib.org/rus/zgv/</url>
+      <cvename>CAN-2004-0994</cvename>
+      <url>http://www.idefense.com/application/poi/display?id=160&amp;type=vulnerabilities&amp;flashstatus=false</url>
     </references>
     <dates>
       <discovery>2004-10-26</discovery>
-      <entry>2005-01-18</entry>
+      <entry>2005-01-21</entry>
     </dates>
   </vuln>
 
