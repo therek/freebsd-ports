@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.226 2004/03/11 09:58:03 osa Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.227 2004/03/12 13:06:42 eik Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -560,7 +560,6 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.mirror.ac.uk/sites/ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://bioinfo.weizmann.ac.il/pub/software/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://csociety-ftp.ecn.purdue.edu/pub/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.isu.net.sa/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.ucr.ac.cr/pub/Unix/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.cs.colorado.edu/pub/perl/CPAN/modules/by-module/%SUBDIR%/ \
@@ -568,7 +567,8 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.is.co.za/programming/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	http://cpan.shellhung.org/modules/by-module/%SUBDIR%/ \
 	http://at.cpan.org/modules/by-module/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/
+	ftp://ftp.chg.ru/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
+	ftp://ftp.auckland.ac.nz/pub/perl/CPAN/modules/by-module/%SUBDIR%/
 
 #
 # PostgreSQL mirror sites
