@@ -2,11 +2,11 @@
 # Date created:				3 March 2000
 # Whom:					Patrick Seal (patseal@hyperhost.net)
 #
-# $FreeBSD: ports/misc/boxes/Makefile,v 1.3 2000/04/16 01:50:44 will Exp $
+# $FreeBSD: ports/misc/boxes/Makefile,v 1.4 2000/05/16 03:13:40 hoek Exp $
 #
 
 PORTNAME=	boxes
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	misc
 MASTER_SITES=	http://www6.informatik.uni-erlangen.de/~tsjensen/software/boxes/download/ \
 		${MASTER_SITE_SUNSITE}
@@ -18,7 +18,13 @@ MAINTAINER=	patseal@hyperhost.net
 MAN1=		boxes.1
 USE_GMAKE=	yes
 USE_BISON=	yes
-ALL_TARGET=
+ALL_TARGET=	boxes
+MAKE_ARGS=	GLOBALCONF=${GLOBALCONF} CFLAGS_ADDTL="${CFLAGS}"
+
+GLOBALCONF=	${PREFIX}/share/boxes/boxes-config
+
+do-patch:
+	${TOUCH} ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/boxes ${PREFIX}/bin
