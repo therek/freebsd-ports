@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.27 2000/08/03 09:25:05 asami Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.28 2000/09/21 04:12:22 shige Exp $
 #
 
 PORTNAME=	kterm
@@ -44,12 +44,12 @@ DOCDIR=		${PREFIX}/share/doc/kterm
 LIB_DEPENDS+=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
 post-patch:
 	@${ECHO_MSG}  "===>  Applying Xaw3d scrollbar patch"
-	@${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-Xaw3d
+	@${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-Xaw3d
 .elif defined(WITH_NEXTAWLIB)
 LIB_DEPENDS+=	neXtaw.7:${PORTSDIR}/x11-toolkits/neXtaw
 post-patch:
 	@${ECHO_MSG}  "===>  Applying neXtaw scrollbar patch"
-	@${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-neXtaw
+	@${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-neXtaw
 .endif
 
 .endif
