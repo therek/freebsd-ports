@@ -3,7 +3,7 @@
 # Date created:		29 Oct 1997
 # Whom:			Takeru NAIKI <naiki@bfd.es.hokudai.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ntimelord/Makefile,v 1.2 1999/08/30 14:23:31 peter Exp $
 #
 
 DISTNAME=	ntimelord-1.0
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	naiki@bfd.es.hokudai.ac.jp
 
-RUN_DEPENDS=	${PREFIX}/libexec/atalkd:${PORTSDIR}/net/netatalk
+RUN_DEPENDS=	${LOCALBASE}/libexec/atalkd:${PORTSDIR}/net/netatalk
 
 post-install:
 	@$(ECHO_MSG) "============================================================"
