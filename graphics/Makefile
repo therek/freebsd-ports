@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.258 2000/12/30 14:21:09 lkoeller Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.259 2001/01/18 19:03:51 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -206,6 +206,7 @@
     SUBDIR += vcdgear
     SUBDIR += vcg
     SUBDIR += vid
+    SUBDIR += view3ds
     SUBDIR += whirlgif
     SUBDIR += wmgrabimage
     SUBDIR += wmicons
