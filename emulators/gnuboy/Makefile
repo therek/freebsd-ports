@@ -3,11 +3,11 @@
 # Date created:			Mar 11, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/gnuboy/Makefile,v 1.2 2001/04/09 11:54:53 sobomax Exp $
+# $FreeBSD: ports/emulators/gnuboy/Makefile,v 1.3 2001/04/10 08:14:00 ijliao Exp $
 #
 
 PORTNAME=	gnuboy
-PORTVERSION=	0.9.12
+PORTVERSION=	0.9.13
 CATEGORIES=	emulators games
 MASTER_SITES=	http://brightrain.aerifal.cx/~laguna/src/
 
