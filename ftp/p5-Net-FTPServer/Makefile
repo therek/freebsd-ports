@@ -3,7 +3,7 @@
 # Date created:			Jul 30, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.2 2001/08/11 04:32:29 ijliao Exp $
+# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.3 2001/08/13 12:33:40 kevlo Exp $
 #
 
 PORTNAME=	Net-FTPServer
@@ -20,6 +20,7 @@ BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Authen/PAM.pm:${PORTSDIR}/security/p5-A
 		${SITE_PERL}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI \
 		${SITE_PERL}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${SITE_PERL}/${PERL_ARCH}/File/Sync.pm:${PORTSDIR}/devel/p5-File-Sync \
+		${SITE_PERL}/${PERL_ARCH}/IO/Dir.pm:${PORTSDIR}/devel/p5-IO \
 		${SITE_PERL}/IO/Scalar.pm:${PORTSDIR}/devel/p5-IO-stringy
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
