@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/devel/libgii/Makefile,v 1.5 2001/03/29 16:33:03 sobomax Exp $
+# $FreeBSD: ports/devel/libgii/Makefile,v 1.6 2001/05/07 11:43:24 jeh Exp $
 #
 
 PORTNAME=	libgii
@@ -42,6 +42,9 @@ post-configure:
 	@${PERL} -p -i.bak -e 's/deplibs -lc/deplibs/;' ${WRKSRC}/libtool
 
 post-install:
+	@${CP} ${WRKSRC}/libgii.conf ${PREFIX}/etc/ggi/libgii.conf.dist
+	@${CP} ${WRKSRC}/filter/mouse/mouse ${PREFIX}/etc/ggi/filter/mouse.dist
+	@${CP} ${WRKSRC}/filter/keytrans/keytrans ${PREFIX}/etc/ggi/filter/keytrans.dist
 	@${MAKE} install-examples
 .if !defined(NOPORTDOCS)
 	@${MAKE} install-documents
