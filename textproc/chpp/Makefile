@@ -2,28 +2,32 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/textproc/chpp/Makefile,v 1.4 2000/04/09 21:52:13 cpiazza Exp $
+# $FreeBSD: ports/textproc/chpp/Makefile,v 1.5 2000/06/29 07:02:53 obrien Exp $
 #
 
 PORTNAME=	chpp
 PORTVERSION= 	0.3.5
 CATEGORIES=	textproc
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	andy
+MASTER_SITES=	http://trick.unix.cslab.tuwien.ac.at/~chpp/files/
 
 MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--libdir=${PREFIX}/share
 
+EXAMPLES_DIR=	${PREFIX}/share/examples/chpp
+DOCS_DIR=	${PREFIX}/share/doc/chpp
+
 post-install:
-	@ ${MKDIR} ${PREFIX}/share/examples/chpp
-	@ cd ${WRKSRC}/test; tar -cf - * | \
-		( cd ${PREFIX}/share/examples/chpp; tar --unlink -xf - )
-	@ ${MKDIR} ${PREFIX}/share/doc/chpp
+	@${MKDIR} ${EXAMPLES_DIR}
+	${TAR} -C ${WRKSRC}/test -cf - . | \
+		${TAR} -C ${EXAMPLES_DIR} --unlink -xf -
+	@find ${EXAMPLES_DIR} | xargs ${CHOWN} ${SHAREOWN}:${SHAREGRP}
+	@find ${EXAMPLES_DIR} -type f | xargs ${CHMOD} ${SHAREMODE}
 .if !defined(NOPORTDOCS)
-.for file in AUTHORS COPYING NEWS README
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/chpp
+	@${MKDIR} ${DOCS_DIR}
+.for file in AUTHORS NEWS README
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCS_DIR}
 .endfor
 .endif
 
