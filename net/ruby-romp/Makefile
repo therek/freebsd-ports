@@ -2,13 +2,15 @@
 # Date created:		24 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-romp/Makefile,v 1.1 2001/08/24 07:06:19 knu Exp $
 #
 
 PORTNAME=	romp
 PORTVERSION=	0.1
 CATEGORIES=	net ruby
-MASTER_SITES=	http://rm-f.net/~cout/ruby/romp/
+MASTER_SITES=	http://rm-f.net/~cout/ruby/romp/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	knu
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} romp.html
 DIST_SUBDIR=	ruby
