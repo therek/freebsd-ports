@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.52 2001/04/17 18:01:39 will Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.53 2001/06/11 03:48:12 will Exp $
 #
 
     SUBDIR += 9e
@@ -46,6 +46,7 @@
     SUBDIR += xdms
     SUBDIR += xpk
     SUBDIR += zip
+    SUBDIR += zipios++
     SUBDIR += zoo
 
 .include <bsd.port.subdir.mk>
