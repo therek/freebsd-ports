@@ -1,7 +1,7 @@
 # New ports collection makefile for:	eterm
 # Date created:        24th December 2000
 # Whom:                Michael C. Wu
-# $FreeBSD: ports/chinese/eterm/Makefile,v 1.2 2000/12/25 08:23:24 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	eterm
 PORTVERSION=	0.9
@@ -28,6 +28,10 @@ CONFIGURE_ENV=	LIBS="-lxpg4"
 
 MAN1=		Eterm.1
 INSTALLS_SHLIB=	yes
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/libmej/debug.c ${WRKSRC}/libmej/strings.c
 
 post-install:
 	@${CHMOD} 4711 ${PREFIX}/bin/Eterm
