@@ -3,7 +3,7 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.4 1999/08/25 05:50:17 obrien Exp $
 #
 
 DISTNAME=	t1lib-0.9.1
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
+
+BROKEN='fetch fails'
 
 WRKSRC=		${WRKDIR}/T1-0.9.1
 
