@@ -2,7 +2,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.17 2001/01/16 17:31:28 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fftpack
@@ -13,6 +13,7 @@ DISTNAME=	bihar
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Biharmonic equation in rectangular geometry and polar coordinates
 
 LIB_DEPENDS=	linpack.1:${PORTSDIR}/math/linpack
 
