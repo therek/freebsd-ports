@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/www/flashplugin-mozilla/files/patch-aa,v 1.1 2001/11/02 13:58:55 sobomax Exp $
 
 --- Makefile.orig	Tue Sep 28 12:13:38 1999
 +++ Makefile	Fri Nov  2 15:52:14 2001
@@ -10,7 +10,7 @@ $FreeBSD$
 -CFLAGS=  $(OPTIMIZER) $(PLUGIN_DEFINES) -I$(FLASH) -I/usr/X11R6/include
 -LDFLAGS= $(FLASH)/libflash.a $(LIBCXX) ../Jpeg/libjpeg.a ../Zlib/libz.a
 +CFLAGS+=  $(OPTIMIZER) $(PLUGIN_DEFINES) -I$(FLASH) -I/usr/X11R6/include
-+LDFLAGS= -L${LOCALBASE}/lib -lflash -ljpeg -lz
++LDFLAGS= -L${LOCALBASE}/lib -lflash -ljpeg -lz -L$(X11BASE)/lib -lXt
  
  SRC= plugin.c npunix.c
  OBJ= plugin.o npunix.o
