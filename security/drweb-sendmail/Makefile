@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.8 2001/08/25 11:40:57 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.9 2001/08/25 14:38:03 ache Exp $
 #
 
 # WARNING: viruses in mail not detected with evaluation key!
@@ -74,9 +74,6 @@ do-install:
 	${SED} 's#!!PREFIX!!#${PREFIX}#' < ${FILESDIR}/drweb-smf.sh >${WRKSRC}/drweb-smf.sh
 # drwebsmf.sh instead drweb-smf.sh to start after drwebd.sh
 	${INSTALL_DATA} ${WRKSRC}/drweb-smf.sh ${PREFIX}/etc/rc.d/drwebsmf.sh-dist
-	if [ ! -f ${PREFIX}/etc/rc.d/drwebsmf.sh ] ; then \
-		${INSTALL_DATA} ${WRKSRC}/drweb-smf.sh ${PREFIX}/etc/rc.d/drwebsmf.sh; \
-	fi
 
 post-install:
 	@echo
@@ -84,7 +81,5 @@ post-install:
 	@echo
 	@echo "Read documentation about additional sendmail tuning needed"
 	@echo "in ${DOC_DIR}."
-	@echo "Inspect options used as example in ${PREFIX}/etc/rc.d/drwebsmf.sh"
-	@echo "and set bit x to really activate that script."
 
 .include <bsd.port.post.mk>
