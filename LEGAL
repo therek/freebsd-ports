@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.177 2000/10/15 06:51:59 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.178 2000/10/16 21:36:26 ade Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -111,6 +111,7 @@ jce-aba-*		ports/java/jce-aba	Crypto; export-controlled
 john-*			ports/security/john	crypt(); export-controlled
 JDK-*			ports/java/jdk		Put copyright on packaging!
 jdk*-doc		ports/java/jdk-doc	under license and export control
+jdk*-src.tar.gz		ports/java/jdk12-beta	Redistribution of sources and pre-compiled binaries is prohibited.
 jdk-tutorial-*		ports/java/jdk-tutorial	This software is under license and export control.
 JRE-*			ports/java/jre		Put copyright on packaging!
 kaffe-*			ports/java/kaffe	Restrictive copyright
