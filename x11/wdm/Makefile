@@ -3,7 +3,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.32 2000/03/07 11:52:38 tg Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.33 2000/03/08 17:12:22 jedgar Exp $
 
 DISTNAME=	wdm-1.20
 CATEGORIES=	x11 windowmaker
@@ -34,16 +34,6 @@ CONFIGURE_ARGS=	--with-logdir=/var/log \
 MAN1=	wdm.1 wdmLogin.1
 
 DAEMONPIC=	daemon1-HQ-1280x960.jpg
-
-.if defined(USE_PAM)
-CONFIGURE_ARGS+=	--enable-pam
-LIBPAM=		-lpam
-.endif
-
-pre-fetch:
-.if !defined(USE_PAM)
-	@${ECHO_MSG} "To build this port with PAM support, define \"USE_PAM\"."
-.endif
 
 post-extract:
 	@${CP} ${FILESDIR}/*.patch ${WRKSRC}/patches
