@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/benchmarks/tcpblast/Makefile,v 1.16 2000/04/08 22:04:29 mharo Exp $
+# $FreeBSD$
 #
 # port's source files are in src dir in portball
 
@@ -12,6 +12,7 @@ CATEGORIES=	benchmarks net
 DISTFILES=	# none
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Measures the throughput of a tcp connection
 
 WRKSRC=		${WRKDIR}/src
 
