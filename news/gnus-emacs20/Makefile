@@ -2,14 +2,22 @@
 # Date created:        29 January 2001
 # Whom:                ilya
 #
-# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.1 2001/02/01 14:25:15 clive Exp $
+# $FreeBSD: ports/news/gnus-emacs20/Makefile,v 1.2 2001/02/11 16:39:08 jeh Exp $
 #
 
 PORTNAME=	gnus
 PORTVERSION=	5.8.8
 PORTREVISION=	1
 CATEGORIES=	news mail elisp
-MASTER_SITES=	ftp://ftp.gnus.org/pub/gnus/
+MASTER_SITES=	http://quimby.gnus.org/gnus/dist/ \
+		ftp://quimby.gnus.org/gnus/dist/ \
+		ftp://ftp.monash.edu.au/pub/gnus/ \
+		ftp://ftp.win.ne.jp/pub/word/elisp/gnus/ \
+		ftp://ftp.kreonet.re.kr/pub/tools/emacs/gnus/ \
+		ftp://ftp.task.gda.pl/mirror/ftp.gnus.org/pub/gnus/ \
+		http://www.gnus.org/dist/ \
+		ftp://ftp.gnus.org/dist/ \
+		ftp://ftp.twoguys.org/gnus/ \
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
 MAINTAINER=	ilya@martynov.org
