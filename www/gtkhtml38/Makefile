@@ -2,7 +2,7 @@
 # Date created:				2nd June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/gtkhtml/Makefile,v 1.31 2001/08/09 10:46:50 sobomax Exp $
 #
 
 PORTNAME=	gtkhtml
@@ -15,7 +15,7 @@ MAINTAINER=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	glibwww.1:${PORTSDIR}/www/glibwww \
 		pspell.4:${PORTSDIR}/textproc/pspell \
-		gal.9:${PORTSDIR}/x11-toolkits/gal \
+		gal.11:${PORTSDIR}/x11-toolkits/gal \
 		ghttp.1:${PORTSDIR}/www/libghttp
 
 USE_X_PREFIX=	yes
