@@ -3,7 +3,7 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.5 1999/09/25 01:39:21 obrien Exp $
+# $FreeBSD: ports/devel/t1lib/Makefile,v 1.6 1999/11/01 01:16:29 steve Exp $
 #
 
 DISTNAME=	t1lib-0.9.2
@@ -17,6 +17,8 @@ WRKSRC=		${WRKDIR}/T1-0.9.2
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_LIBTOOL=	yes
+USE_XLIB=	yes
 ALL_TARGET=	without_doc
 
 .include <bsd.port.mk>
