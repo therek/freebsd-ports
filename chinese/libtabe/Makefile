@@ -2,13 +2,13 @@
 # Date created:				2 Nov 1999
 # Whom:					Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.19 2000/11/06 18:14:43 keith Exp $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.20 2001/06/01 20:04:25 olgeni Exp $
 #
 
 PORTNAME=	libtabe
-PORTVERSION=	0.1.9
+PORTVERSION=	0.2.2
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/
+MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/devel/
 
 MAINTAINER=	keith@FreeBSD.org
 
@@ -37,17 +37,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/${DOC} ${PREFIX}/share/doc/tabe
 .endfor
 .endif
-	${TOUCH} ${PREFIX}/share/tabe/libtabe-0.1.9
-.if ${PORTOBJFORMAT} == "elf"
-	${RM} -f ${PREFIX}/lib/libbims.so ${PREFIX}/lib/libbims.so.0
-	${MV} ${PREFIX}/lib/libbims.so.0.1 ${PREFIX}/lib/libbims.so.0
-	${LN} -s libbims.so.0 ${PREFIX}/lib/libbims.so
-	${RM} -f ${PREFIX}/lib/libtabe.so ${PREFIX}/lib/libtabe.so.0
-	${MV} ${PREFIX}/lib/libtabe.so.0.1 ${PREFIX}/lib/libtabe.so.0
-	${LN} -s libtabe.so.0 ${PREFIX}/lib/libtabe.so
-.else
-	${RM} -f ${PREFIX}/lib/libbims.so.0
-	${RM} -f ${PREFIX}/lib/libtabe.so.0
-.endif
+	${TOUCH} ${PREFIX}/share/tabe/libtabe-0.2.2
+	${RM} -f ${PREFIX}/lib/libtabe.la ${PREFIX}/lib/libbims.la
 
 .include <bsd.port.post.mk>
