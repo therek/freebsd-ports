@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.328 2004/02/07 02:14:01 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.329 2004/02/07 04:37:26 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -803,3 +803,4 @@ devel/libgtop||2004-02-06|Obsolete and no longer maintained
 devel/ruby-libgtop||2004-02-06|Obsolete and no longer maintained
 devel/p5-GTop||2004-02-06|Obsolete and no longer maintained
 www/p5-Apache-VMonitor||2004-02-06|Depends on obsolete libgtop
+deskutils/loserjabber|deskutils/logjam2|2004-02-07|Renamed to Logjam
