@@ -3,12 +3,11 @@
 # Date created:                   Wed Dec 06, 2000
 # Whom:                           clive
 #
-# $FreeBSD: ports/www/bk2site/Makefile,v 1.4 2001/01/09 12:12:02 clive Exp $
+# $FreeBSD: ports/www/bk2site/Makefile,v 1.5 2001/06/03 10:28:59 clive Exp $
 #
 
 PORTNAME=	bk2site
-PORTVERSION=	1.1.6
-PORTREVISION=	1
+PORTVERSION=	1.1.7
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
