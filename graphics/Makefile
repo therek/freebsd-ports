@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.286 2001/03/20 03:12:54 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.287 2001/03/20 11:47:08 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -190,7 +190,8 @@
     SUBDIR += ruby-opengl
     SUBDIR += ruby-qt2gl
     SUBDIR += s10sh
-    SUBDIR += sane
+    SUBDIR += sane_backends
+    SUBDIR += sane_frontends
     SUBDIR += sced
     SUBDIR += scrot
     SUBDIR += scwm-icons
