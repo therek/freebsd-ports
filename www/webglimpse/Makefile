@@ -1,14 +1,15 @@
 # New ports collection makefile for:    WebGlimpse
+# http://webglimpse.net/
 # Date created:                         2 Nov 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/webglimpse/Makefile,v 1.11 2000/02/16 00:02:19 mharo Exp $
+# $FreeBSD: ports/www/webglimpse/Makefile,v 1.12 2000/04/10 00:07:16 cpiazza Exp $
 #
 
 PORTNAME=	webglimpse
 PORTVERSION= 	1.6
 CATEGORIES=     www textproc
-MASTER_SITES=   ftp://ftp.cs.arizona.edu/glimpse/
+MASTER_SITES=   ftp://ftp.deva.net/pub/sources/ir/glimpse/
 DISTNAME=	${PKGNAME}.src
 
 MAINTAINER=     ache@freebsd.org
