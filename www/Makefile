@@ -1,5 +1,6 @@
-# $FreeBSD: ports/www/Makefile,v 1.393 2001/08/13 08:11:48 wjv Exp $
+# $FreeBSD: ports/www/Makefile,v 1.394 2001/08/16 10:53:19 wjv Exp $
 #
+    SUBDIR += zope-guf
     SUBDIR += zope-zpt
     SUBDIR += zope-zwiki
 
