@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.254 2004/07/19 13:53:49 ale Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.255 2004/08/02 09:42:29 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -74,8 +74,6 @@ MASTER_SITE_APACHE+=	\
 	ftp://apache.secsup.org/pub/apache/dist/%SUBDIR%/ \
 	ftp://ftp.apache.inetcosmos.org/pub/apache/dist/%SUBDIR%/ \
 	ftp://ftp.ccs.neu.edu/net/mirrors/Apache/dist/%SUBDIR%/ \
-	ftp://ftp.epix.net/pub/apache/%SUBDIR%/ \
-	ftp://ftp.rge.com/pub/infosystems/apache/%SUBDIR%/ \
 	ftp://ftp.tux.org/pub/net/apache/dist/%SUBDIR%/ \
 	ftp://ftp.saix.net/pub/apache/dist/%SUBDIR%/ \
 	http://nagoya.apache.org/mirror/%SUBDIR%/
