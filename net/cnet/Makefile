@@ -2,11 +2,12 @@
 # Date created:         Feb 8th, 1988
 # Whom:                 jkh
 #
-# $FreeBSD: ports/net/cnet/Makefile,v 1.12 2000/07/22 07:22:56 will Exp $
+# $FreeBSD: ports/net/cnet/Makefile,v 1.13 2000/08/03 09:25:52 asami Exp $
 #
 
 PORTNAME=	cnet
 PORTVERSION=	1.6
+PORTREVISION=	1
 CATEGORIES=	net tk82
 MASTER_SITES=	http://www.cs.uwa.edu.au/cnet/
 
