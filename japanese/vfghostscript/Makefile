@@ -2,7 +2,7 @@
 # Date created:		14 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vfghostscript/Makefile,v 1.19 2000/04/13 08:33:17 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vfghostscript
@@ -35,6 +35,8 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAN1=		gs.1
 
 DOC_DIR=${PREFIX}/lib/ghostscript/doc 
+
+NO_LATEST_LINK=	yes
 
 # Note: unix-gcc.mak.patch can't be put in patches/ because it should
 # be applied after gs261j.diff, which should, in turn, be applied
