@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.212 2001/07/23 09:03:40 ijliao Exp $
+# $FreeBSD: ports/security/Makefile,v 1.213 2001/07/25 20:54:28 nectar Exp $
 #
 
     SUBDIR += aafid2
@@ -62,6 +62,7 @@
     SUBDIR += keynote
     SUBDIR += keyprint
     SUBDIR += kmap
+    SUBDIR += knocker
     SUBDIR += krb5
     SUBDIR += kssh
     SUBDIR += l0pht-watch
