@@ -2,11 +2,11 @@
 # Date Created:		8 April 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-chart/Makefile,v 1.14 2001/04/02 19:55:33 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Chart
-PORTVERSION=	0.99c-pre3
+PORTVERSION=	1.0.1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Chart
