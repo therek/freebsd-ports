@@ -2,7 +2,7 @@
 # Date created: 	9 September 1996
 # Whom:			moeding
 #
-# $FreeBSD: ports/devel/lclint/Makefile,v 1.8 2000/04/11 21:28:27 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lclint
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://lclint.cs.virginia.edu/
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	s.moeding@ndh.net
+MAINTAINER=	ports@FreeBSD.Org
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
