@@ -2,17 +2,18 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.2 2000/10/29 01:04:19 will Exp $
+# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.3 2000/11/05 00:53:34 dougb Exp $
 #
 
 PORTNAME=	musicbrainz
-PORTVERSION=	1.0.0.pre4
+PORTVERSION=	1.0.0.pre5
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.musicbrainz.org/pub/musicbrainz/
-DISTNAME=	${PORTNAME}-1.0.0pre4
+DISTNAME=	${PORTNAME}-1.0.0pre5
 
 MAINTAINER=	roman@xpert.com
 
+USE_NEWGCC=	yes
 INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
