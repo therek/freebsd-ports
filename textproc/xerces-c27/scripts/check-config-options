@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/textproc/xerces-c2/scripts/check-config-options,v 1.1 2004/10/25 08:18:57 vs Exp $
 
 rc=0
 
@@ -13,13 +13,9 @@ if test -n "${WITH_ICONVFBSD}"; then
 	rc=$(expr $rc + 1)
 fi
 
-if test ${rc} -ne 1; then
+if test ${rc} -gt 1; then
 	echo "ERROR: please re-run make config and" >&2
-	if test ${rc} -gt 1; then
-		echo -n "only " >&2
-	fi
-	echo "select one of the three transcoders." >&2
-
+	echo "only select one of the three transcoders." >&2
 	exit 254
 fi
 
