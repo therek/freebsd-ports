@@ -2,13 +2,13 @@
 # Date created:		27 December 1999
 # Whom:			plambert@plambert.net
 #
-# $FreeBSD: ports/misc/heyu/Makefile,v 1.3 2000/04/14 08:46:00 asami Exp $
+# $FreeBSD: ports/misc/heyu/Makefile,v 1.4 2000/05/28 03:26:19 steve Exp $
 #
 
 PORTNAME=	heyu
 PORTVERSION=	1.29
 CATEGORIES=	misc
-MASTER_SITES=	http://www.prado.com/~dbs/
+MASTER_SITES=	http://heyu.tanj.com/
 DISTNAME=	x10_heyu
 EXTRACT_SUFX=	.tgz
 
