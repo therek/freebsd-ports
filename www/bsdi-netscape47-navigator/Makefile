@@ -3,12 +3,9 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by Dirk Froemberg <dirk@FreeBSD.org> and girgen@partitur.se
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/bsdi-netscape47-navigator/Makefile,v 1.50 2000/06/06 21:54:11 will Exp $
 #
 
 BROWSER=	navigator
-
-MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/english/4.73/unix/unsupported/bsdi21/navigator_standalone/ \
-		ftp://ftp.sunet.se/pub/www/Netscape/communicator/english/4.73/unix/unsupported/bsdi21/navigator_standalone/
 
 .include "../bsdi-netscape47-communicator/Makefile"
