@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/Xatm/Makefile,v 1.4 2000/10/04 06:40:07 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfs-atm
@@ -12,6 +12,8 @@ MASTER_SITES=	http://www.netlab.is.tsukuba.ac.jp/~yokota/archive/
 DISTNAME=	${PORTNAME}+cid-${PORTVERSION}
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
+
+BROKEN=		"Does not build"
 
 USE_IMAKE=	yes
 USE_GMAKE=	yes
