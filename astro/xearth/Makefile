@@ -3,7 +3,7 @@
 # Date created:         29 October 1995
 # Whom:                 piero
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.14 1999/08/25 04:22:47 obrien Exp $
 #
 
 DISTNAME=	xearth-1.0
@@ -23,6 +23,7 @@ MAN1=		xearth.1
 post-install:
 	${MKDIR} ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.core.markers ${PREFIX}/lib/X11/xearth
+	${CP} ${FILESDIR}/freebsd.committers.markers ${PREFIX}/lib/X11/xearth
 	${CP} ${FILESDIR}/freebsd.ftp.markers ${PREFIX}/lib/X11/xearth
 
 .include <bsd.port.mk>
