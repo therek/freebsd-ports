@@ -2,11 +2,11 @@
 # Date created:				01 July 2000
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/mail/p5-Mail-CClient/Makefile,v 1.3 2001/03/01 06:38:13 vanilla Exp $
+# $FreeBSD: ports/mail/p5-Mail-CClient/Makefile,v 1.4 2001/03/23 03:10:48 kuriyama Exp $
 #
 
 PORTNAME=		CClient
-PORTVERSION=		1.0
+PORTVERSION=		1.1
 CATEGORIES=		mail perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
@@ -18,6 +18,8 @@ MAINTAINER=		kbyanc@posi.net
 LIB_DEPENDS=		c-client4.8:${PORTSDIR}/mail/cclient
 
 PERL_CONFIGURE=		yes
+CONFIGURE_ARGS=		INC="-I${PREFIX}/include/c-client" \
+			LIBS="-L${PREFIX}/lib -lc-client4"
 
 MANPREFIX=		${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=			Mail::Cclient.3
