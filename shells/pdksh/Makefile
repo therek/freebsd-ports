@@ -3,7 +3,7 @@
 # Date created:		23 May 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/pdksh/Makefile,v 1.20 1999/08/31 01:53:18 peter Exp $
 #
 
 DISTNAME=	pdksh-5.2.14
@@ -19,5 +19,12 @@ MAINTAINER=	tg@FreeBSD.org
 GNU_CONFIGURE=  yes
 CONFIGURE_ENV=	LDSTATIC=-static
 MAN1=		ksh.1
+
+post-install:
+	@${ECHO} "Updating /etc/shells"
+	@${CP} /etc/shells /etc/shells.bak
+	@(${GREP} -v ${PREFIX}/bin/ksh /etc/shells.bak; \
+		${ECHO} ${PREFIX}/bin/ksh) > /etc/shells
+	@${RM} /etc/shells.bak
 
 .include <bsd.port.mk>
