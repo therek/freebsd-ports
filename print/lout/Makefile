@@ -2,11 +2,11 @@
 # Date created:      10/22/96
 # Whom:              oly@world.std.com
 #
-# $FreeBSD: ports/print/lout/Makefile,v 1.10 2000/04/09 17:40:36 cpiazza Exp $
+# $FreeBSD: ports/print/lout/Makefile,v 1.11 2000/04/09 17:50:05 cpiazza Exp $
 #
 
 PORTNAME=	lout
-PORTVERSION=	3.17
+PORTVERSION=	3.24
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN} \
 		ftp://ftp.cs.usyd.edu.au/jeff/lout/
@@ -16,9 +16,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 MAKEFILE=	makefile
-ALL_TARGET=	lout c2lout
+ALL_TARGET=	lout prg2lout
 INSTALL_TARGET=	install installman installdoc
 
-MAN1=		c2lout.1 lout.1
+MAN1=		prg2lout.1 lout.1
 
 .include <bsd.port.mk>
