@@ -2,16 +2,16 @@
 # Date created:		22 Mar 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xemeraldia/Makefile,v 1.18 2000/04/14 12:27:18 asami Exp $
+# $FreeBSD: ports/games/xemeraldia/Makefile,v 1.19 2000/08/17 06:56:12 kris Exp $
 #
 
 PORTNAME=	xemeraldia
 PORTVERSION=	0.31
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1995/mar/
+MASTER_SITES=	http://gluon.ph.sophia.ac.jp/~ftp/UNIX/src/games/
 DISTNAME=	xemeraldia-0.3
 
-PATCH_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1995/apr/
+PATCH_SITES=	http://gluon.ph.sophia.ac.jp/~ftp/UNIX/src/games/
 PATCHFILES=	xemeraldia-0.3to0.31.patch.gz
 PATCH_DIST_STRIP=	-p1
 
