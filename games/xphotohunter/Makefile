@@ -3,11 +3,10 @@
 # Date created:		12 Aug 1999
 # Whom:			clive
 #
-# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.1.1.1 1999/09/07 11:41:37 foxfair Exp $
+# $FreeBSD: ports/games/xphotohunter/Makefile,v 1.2 1999/10/08 03:29:35 nakai Exp $
 #
 
 DISTNAME=	xphotohunter-1.3
-PKGNAME=	zh-xphotohunter-1.3
 CATEGORIES=	chinese games
 MASTER_SITES=	http://www.oz.nthu.edu.tw/~u860905/Xphotohunter/
 
