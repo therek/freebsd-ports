@@ -2,7 +2,7 @@
 # Date created:         13 Nov 1997
 # Whom:                 Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/emulators/xzx/Makefile,v 1.16 1999/08/30 12:06:47 sheldonh Exp $
+# $FreeBSD: ports/emulators/xzx/Makefile,v 1.17 2000/04/12 04:56:17 mharo Exp $
 #
 
 PORTNAME=	xzx
@@ -15,6 +15,7 @@ MAINTAINER=	sheldonh@FreeBSD.org
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--with-oss
 
 MAN1=		xzx.1
 
