@@ -2,13 +2,13 @@
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.20 2000/10/05 06:57:50 reg Exp $
+# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.21 2001/02/05 21:00:50 olgeni Exp $
 #
 
 PORTNAME=	dfm
-PORTVERSION=	0.99.7
+PORTVERSION=	0.99.8
 CATEGORIES=	x11-fm
-MASTER_SITES=   http://dfm.online.de/
+MASTER_SITES=	http://dfm.online.de/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -20,11 +20,16 @@ USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ARGS=	--enable-imlib-icons
 
 MAN1=		dfm.1x
 
-DFM_DOCS=	ANNOUNCE BUGS COPYRIGHT CREDITS ChangeLog DOWNLOAD HELP.ERROR \
+PORTDOCS=	ANNOUNCE BUGS COPYRIGHT CREDITS ChangeLog DOWNLOAD HELP.ERROR \
 		NO_WARRANTY README START TESTED TODO
+
+pre-patch:
+	@${PERL} -pi -e \
+		's|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/dfm
@@ -33,7 +38,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/dfmext-samples/dfmext_user ${PREFIX}/share/examples/dfm/dfmext.sample.user
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/dfm
-.for file in ${DFM_DOCS}
+.for file in ${PORTDOCS}
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/dfm
 .endfor
 .endif
