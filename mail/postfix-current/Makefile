@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.48 2001/03/07 13:42:13 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.49 2001/03/10 20:35:11 alex Exp $
 #
 
 PORTNAME=	postfix
@@ -157,10 +157,6 @@ post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 .include <bsd.port.pre.mk>
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN= "Problems with unaligned access"
-.endif
 
 replace:
 .if ${OSVERSION} >= 400014
