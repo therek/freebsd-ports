@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/p5-nkf/Makefile,v 1.5 2000/08/27 06:13:34 knu Exp $
+# $FreeBSD: ports/japanese/p5-nkf/Makefile,v 1.6 2000/08/27 16:52:49 knu Exp $
 #
 
 PORTNAME=	nkf
@@ -16,21 +16,17 @@ DISTNAME=	${PORTNAME}171
 
 MAINTAINER=	max@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 EXTRACT_CMD=	${SH}
 EXTRACT_BEFORE_ARGS=	# Empty
 EXTRACT_AFTER_ARGS=	> /dev/null
-WRKSRC=	${WRKDIR}/NKF
+WRKSRC=		${WRKDIR}/NKF
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		NKF.3
 
 .include <bsd.port.pre.mk>
 
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}p5-
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.post.mk>
