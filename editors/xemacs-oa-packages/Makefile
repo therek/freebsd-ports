@@ -2,24 +2,24 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-oa-packages/Makefile,v 1.20 2000/11/30 11:33:12 kiri Exp $
+# $FreeBSD: ports/editors/xemacs-oa-packages/Makefile,v 1.21 2000/12/01 12:55:27 kiri Exp $
 #
 
 PORTNAME=	xemacs-oa-packages
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	editors elisp
 MASTER_SITES=	${MASTER_SITE_XEMACS} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
-		calc-1.13-pkg.tar.gz \
-		calendar-1.15-pkg.tar.gz \
-		forms-1.12-pkg.tar.gz \
-		frame-icon-1.08-pkg.tar.gz \
-		pc-1.18-pkg.tar.gz \
-		slider-1.12-pkg.tar.gz \
-		speedbar-1.17-pkg.tar.gz \
-		strokes-1.07-pkg.tar.gz
+		calc-1.14-pkg.tar.gz \
+		calendar-1.16-pkg.tar.gz \
+		forms-1.13-pkg.tar.gz \
+		frame-icon-1.09-pkg.tar.gz \
+		pc-1.19-pkg.tar.gz \
+		slider-1.13-pkg.tar.gz \
+		speedbar-1.18-pkg.tar.gz \
+		strokes-1.08-pkg.tar.gz
 DIST_SUBDIR=	xemacs
 
 MAINTAINER=	kiri@FreeBSD.org
