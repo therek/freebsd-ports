@@ -2,11 +2,12 @@
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.8 2000/09/02 14:09:42 sobomax Exp $
+# $FreeBSD: ports/ftp/sftp/Makefile,v 1.9 2000/10/08 00:58:54 asami Exp $
 #
 
 PORTNAME=	sftp
 PORTVERSION=	0.9.6
+PORTREVISION=	1
 CATEGORIES=	ftp security
 MASTER_SITES=	ftp://ftp.xbill.org/pub/sftp/
 
@@ -21,7 +22,6 @@ RUN_DEPENDS=	ssh:${PORTSDIR}/security/openssh
 RESTRICTED=	"Calls external cryptographic routines."
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-remotepath=${PREFIX}/libexec
 
 MAN1=		secftp.1
 
@@ -30,7 +30,7 @@ PLIST=		${WRKDIR}/.PLIST
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sftp ${PREFIX}/bin/secftp
 	${LN} -s ${PREFIX}/bin/secftp ${PREFIX}/bin/rsftp
-	${INSTALL_PROGRAM} ${WRKSRC}/sftpserv ${PREFIX}/libexec/sftpserv
+	${INSTALL_PROGRAM} ${WRKSRC}/sftpserv ${PREFIX}/bin/sftpserv
 	${INSTALL_MAN} ${WRKSRC}/sftp.1 ${PREFIX}/man/man1/secftp.1
 	${CP} ${PKGDIR}/pkg-plist.in ${PLIST}.unsorted
 	@if [ ! -f ${PREFIX}/bin/sftp ]; then \
