@@ -2,7 +2,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.78 2000/04/20 04:44:30 mharo Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.79 2000/09/23 18:57:11 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -39,6 +39,8 @@ CONFIGURE_ENV+=	PERL=${PERL} \
 # MySQL-Server part
 .if !defined(CLIENT_ONLY)
 RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql322-client
+
+PLIST_SUB=	MYSQL_VERSION=${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 
