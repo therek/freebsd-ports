@@ -2,11 +2,11 @@
 # Date created:        2 September 1999
 # Whom:                Mike Meyer <mwm@mired.org>
 #
-# $FreeBSD: ports/print/t1utils/Makefile,v 1.6 2000/04/09 17:50:37 cpiazza Exp $
+# $FreeBSD: ports/print/t1utils/Makefile,v 1.7 2000/06/07 15:06:36 sobomax Exp $
 #
 
 PORTNAME=	t1utils
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	print
 MASTER_SITES=	http://www.lcdf.org/~eddietwo/type/
 
