@@ -1,9 +1,10 @@
-# $FreeBSD: ports/korean/Makefile,v 1.54 2000/09/08 04:34:11 taoka Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.55 2000/09/25 16:06:35 cjh Exp $
 #
     SUBDIR += texinfo
 
     SUBDIR += FreeWnn-lib
     SUBDIR += FreeWnn-server
+    SUBDIR += a2ps
     SUBDIR += acroread-korfont
     SUBDIR += ami
     SUBDIR += baekmukfonts-bdf
