@@ -3,7 +3,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.11 2000/01/02 14:00:03 vanilla Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.12 2000/01/28 21:07:43 torstenb Exp $
 #
 
 DISTNAME=	postfix-19991231-pl03
@@ -18,8 +18,6 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.postfix.oaktree.co.uk/pub/postfix/official/
 
 MAINTAINER=	torstenb@FreeBSD.org
-
-ALL_TARGET=	default
 
 # WARNING: this is based on a patch submitted by a user and has not been
 # tested. Use it at your own risk !
@@ -36,6 +34,8 @@ BUILD_DEPENDS+=		${PREFIX}/lib/libldap.a:${PORTSDIR}/net/openldap
 POSTFIX_CCARGS+=	-DHAS_LDAP -I${PREFIX}/include
 POSTFIX_AUXLIBS+=	${PREFIX}/lib/libldap.a ${PREFIX}/lib/liblber.a
 .endif
+
+ALL_TARGET=	CCARGS="${POSTFIX_CCARGS}" AUXLIBS="${POSTFIX_AUXLIBS}"
 
 SCRIPTS_ENV+=	MAN1="${MAN1}" MAN5="${MAN5}" MAN8="${MAN8}"
 MAKE_ENV+=	"OPT=${CFLAGS}"
