@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.233 2001/05/04 19:52:38 knu Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.234 2001/05/16 18:14:52 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -65,6 +65,7 @@
     SUBDIR += gnapster
     SUBDIR += gnomeaudio
     SUBDIR += gnomemedia
+    SUBDIR += gnowavcut
     SUBDIR += gogo
     SUBDIR += gqmpeg
     SUBDIR += gramofile
