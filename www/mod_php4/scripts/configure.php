@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.170 2002/06/16 01:45:20 ade Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.171 2002/07/23 06:20:58 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -293,7 +293,7 @@ while [ "$1" ]; do
 			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libcurl.a:\${PORTSDIR}/ftp/curl"
                         ;;
 		\"gettext\")
-			echo "LIB_DEPENDS+=	intl.2:\${PORTSDIR}/devel/gettext"
+			echo "LIB_DEPENDS+=	intl.4:\${PORTSDIR}/devel/gettext"
 			echo "CONFIGURE_ARGS+=--with-gettext=\${LOCALBASE}"
 			;;
 		\"iconv\")
