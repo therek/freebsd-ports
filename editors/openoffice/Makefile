@@ -3,7 +3,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.1.1.1 1999/12/09 17:05:36 obrien Exp $
 #
 
 DISTNAME=	so51a_lnx_01
@@ -43,7 +43,7 @@ do-install:
 	PATH=${PATH}:/tmp/sv001.tmp:/usr/compat/linux/tmp/sv001.tmp:/usr/compat/linux/tmp:/tmp
 	LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/tmp:${WRKDIR}/tmp:/usr/lib:/lib:/tmp:/usr/compat/linux/lib
 	/usr/compat/linux/sbin/ldconfig
-	${CP} ${PKGDIR}/.sversionrc /root
+	${INSTALL_DATA} ${FILESDIR}/dot.sversionrc /root/.sversionrc
 	${TOUCH} ${WRKDIR}/.install-done
 	${CAT} ${PKGDIR}/MESSAGE
 	${WRKDIR}/so51inst/office51/setup /net
