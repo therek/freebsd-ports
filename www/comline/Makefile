@@ -2,7 +2,7 @@
 # Date created:         9 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/comline/Makefile,v 1.13 2000/04/15 11:38:28 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	comline
@@ -16,6 +16,8 @@ DISTFILES=	w3c-libwww-4.0D.tar.gz \
 		w3c_4.0D_src.tar.gz
 
 MAINTAINER=	ache@freebsd.org
+
+BROKEN=		"Does not build (duplicate strcasestr)"
 
 WRKSRC=		${WRKDIR}/WWW
 
