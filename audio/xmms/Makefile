@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.32 2001/03/29 16:32:49 sobomax Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.33 2001/05/22 18:16:55 sobomax Exp $
 #
 
 PORTNAME=	xmms
@@ -96,5 +96,6 @@ pre-patch:
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/xmms/Skins
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
