@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.307 1999/10/16 07:15:06 taoka Exp $
+# $FreeBSD: ports/net/Makefile,v 1.308 1999/11/01 02:08:48 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -39,6 +39,7 @@
     SUBDIR += dgd
     SUBDIR += dgd-lpmud
     SUBDIR += dgd-net
+    SUBDIR += dhid
     SUBDIR += dip
     SUBDIR += dlint
     SUBDIR += dnsutl
@@ -132,6 +133,7 @@
     SUBDIR += pppload
     SUBDIR += pptpclient
     SUBDIR += ppxp
+    SUBDIR += priss
     SUBDIR += pvm
     SUBDIR += queso
     SUBDIR += radius
