@@ -1,8 +1,8 @@
-# $FreeBSD: ports/databases/ruby-dbi/Makefile.common,v 1.7 2001/10/23 07:56:32 knu Exp $
+# $FreeBSD: ports/databases/ruby-dbi/Makefile.common,v 1.8 2001/11/15 13:16:23 knu Exp $
 
 RUBY_DBI_PORTNAME=	dbi
 # Don't forget to clear PORTREVISION's on update
-RUBY_DBI_VERSION=	0.0.11
+RUBY_DBI_VERSION=	0.0.12
 RUBY_DBI_PORTVERSION=	${RUBY_DBI_VERSION}
 RUBY_DBI_MASTER_SITES=	http://www.ruby-projects.org/downloads/dbi/
 RUBY_DBI_DISTNAME=	ruby-${RUBY_DBI_PORTNAME}-all-${PORTVERSION}
