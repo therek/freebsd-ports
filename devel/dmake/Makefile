@@ -2,7 +2,7 @@
 # Date created:		31 July 1995
 # Whom:			nils@guru.ims.uni-stuttgart.de
 #
-# $FreeBSD: ports/devel/dmake/Makefile,v 1.7 1999/12/25 01:47:42 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dmake
@@ -15,6 +15,7 @@ DISTNAME=	${PORTNAME}-v${PORTVERSION}-src-export.all-unknown-all
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+USE_REINPLACE=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	CC=${CC}
 MAKEFILE=	makefile
@@ -27,7 +28,7 @@ post-extract:
 .endfor
 
 post-patch:
-	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/unix/startup.h
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/unix/startup.h
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/dmake ${PREFIX}/bin
