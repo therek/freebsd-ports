@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.486 2004/04/03 23:59:50 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.487 2004/04/19 01:37:11 ade Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -3491,7 +3491,7 @@ _INSTALL_SEQ=	install-message check-conflicts \
 			    run-depends lib-depends pre-install pre-install-script \
 				generate-plist check-already-installed
 _INSTALL_SUSEQ= check-umask install-mtree pre-su-install \
-				pre-su-install-script do-install add-plist-info post-install \
+				pre-su-install-script do-install post-install add-plist-info \
 				post-install-script add-plist-docs compress-man run-ldconfig fake-pkg \
 				security-check
 _PACKAGE_DEP=	install
@@ -4163,7 +4163,7 @@ ALL-DEPENDS-LIST= \
 	for dir in $$(${ECHO_CMD} "${EXTRACT_DEPENDS} ${PATCH_DEPENDS} ${FETCH_DEPENDS} ${BUILD_DEPENDS} ${LIB_DEPENDS} ${RUN_DEPENDS}" | ${SED} -e 'y/ /\n/' | ${CUT} -f 2 -d ':') $$(${ECHO_CMD} ${DEPENDS} | ${SED} -e 'y/ /\n/' | ${CUT} -f 1 -d ':'); do \
 		if [ -d $$dir ]; then \
 			if (${ECHO_CMD} $$checked | ${GREP} -qwv "$$dir"); then \
-				child=$$(cd $$dir; ${MAKE} PARENT_CHECKED="$$checked" all-depends-list); \
+				child=$$(cd $$dir; ${MAKE} PARENT_CHECKED="$$checked" run-depends-list); \
 				for d in $$child; do ${ECHO_CMD} $$d; done; \
 				${ECHO_CMD} $$dir; \
 				checked="$$dir $$child $$checked"; \
