@@ -2,7 +2,7 @@
 # Date created:		
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk42/Makefile,v 1.13 2000/06/16 10:38:45 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tk
@@ -34,6 +34,8 @@ PATCH_ARGS=		-d ${WRKDIR}/${DISTNAME} --forward --quiet -E ${PATCH_STRIP}
 .endif
 
 VERSION=	${PORTVERSION}jp
+
+NO_LATEST_LINK=	yes
 
 .include <bsd.port.pre.mk>
 

@@ -2,7 +2,7 @@
 # Date created:		11 March 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl76/Makefile,v 1.14 2000/06/16 21:51:15 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcl
@@ -31,6 +31,8 @@ PATCH_DIST_ARGS=	-d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 .else
 PATCH_DIST_ARGS=	-d ${WRKDIR}/${DISTNAME} --forward --quiet -E ${PATCH_DIST_STRIP}
 .endif
+
+NO_LATEST_LINK=	yes
 
 .include <bsd.port.pre.mk>
 
