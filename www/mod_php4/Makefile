@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.147 2001/08/22 20:13:50 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	mod_php4
@@ -20,7 +20,7 @@ MASTER_SITES=	http://us.php.net/${PHP_DISTDIR}/ \
 		http://php3.globe.de/${PHP_DISTDIR}/
 DISTNAME=	php-${PORTVERSION}
 
-PATCHFILES=	php_configure.3.diff
+PATCHFILES=	patch-ext_gd_config.m4 patch-ext_gd_gd.c patch-ext_sybase_ct_config.m4
 PATCH_SITES=	http://www.physik.tu-berlin.de/~ibex/ports/distfiles/ \
 		${MASTER_SITE_LOCAL}/dirk/
 
@@ -35,6 +35,7 @@ PHP_DISTDIR=	distributions
 
 SLAVEDIRS=	lang/php4
 
+USE_AUTOCONF=	yes
 USE_LIBTOOL=	yes
 
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)

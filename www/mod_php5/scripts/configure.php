@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.141 2001/09/22 18:08:27 knu Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.142 2001/09/29 16:40:27 lioux Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -240,9 +240,7 @@ POSTEXTRACT+=	post-extract-mbregex
 post-extract-mbregex:
 	[ -d \${WRKDIR}/mbregex ] && \\
 	(cd \${WRKSRC}; \\
-	 \${MV} ${WRKDIR}/mbregex ext; \\
-	 \${RM} configure; \\
-	 ./buildconf)
+	 \${MV} ${WRKDIR}/mbregex ext)
 
 EOF
 			;;
