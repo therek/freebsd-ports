@@ -2,17 +2,20 @@
 # Date created:		18 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xpuzzletama/Makefile,v 1.9 2000/04/14 12:28:04 asami Exp $
+# $FreeBSD: ports/games/xpuzzletama/Makefile,v 1.10 2000/08/03 09:24:19 asami Exp $
 #
 
 PORTNAME=	xpuzzletama
 PORTVERSION=	1.5b
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/os/linux/JG/JG-0.9.1/sources/
+MASTER_SITES=	ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/ \
+		ftp://ftp.riken.go.jp/pub/Linux/jg/JG-0.9.1/sources/ \
+		ftp://ftp.eos.hokudai.ac.jp/pub/Linux/JG/JG-0.9.1/sources/ \
+		ftp://mirror.nucba.ac.jp/mirror/JG/JG-0.9.1/sources/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/xpuzzletama
+WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes
 USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes
