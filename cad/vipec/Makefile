@@ -3,7 +3,7 @@
 # Date created:			Aprll 3, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/vipec/Makefile,v 1.1 2001/04/03 05:30:51 ijliao Exp $
+# $FreeBSD: ports/cad/vipec/Makefile,v 1.2 2001/06/16 17:47:53 ijliao Exp $
 #
 
 PORTNAME=	vipec
@@ -19,7 +19,8 @@ BUILD_DEPENDS=	tmake:${PORTSDIR}/devel/tmake
 USE_QT_VER=	2
 USE_GMAKE=	yes
 MAKE_ENV+=	TMAKEPATH="${LOCALBASE}/share/tmake/freebsd-g++" \
-		QTDIR="${X11BASE}" MOC="${X11BASE}/bin/moc2"
+		QTDIR="${X11BASE}" MOC="${X11BASE}/bin/moc2" \
+		SUBLIBS=${PTHREAD_LIBS}
 
 post-patch:
 	@${PERL} -pi -e "s,/opt,${PREFIX},g" ${WRKSRC}/Makefile
