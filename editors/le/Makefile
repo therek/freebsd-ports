@@ -1,12 +1,12 @@
 # New ports collection makefile for:	le
-# Version required:			1.5.2
+# Version required:			1.5.5
 # Date created:				16 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/le/Makefile,v 1.6 1999/08/25 05:43:58 obrien Exp $
 #
 
-DISTNAME=		le-1.5.2
+DISTNAME=		le-1.5.5
 CATEGORIES=		editors
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			ftp://ftp.yars.free.net/pub/software/unix/util/texteditors/
