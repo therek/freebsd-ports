@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.249 2000/01/06 13:51:07 shige Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.250 2000/01/07 18:42:43 flathill Exp $
 #
 
     SUBDIR += Canna
@@ -85,6 +85,8 @@
     SUBDIR += k10
     SUBDIR += k12
     SUBDIR += kakasi
+    SUBDIR += kanji18
+    SUBDIR += kanji26
     SUBDIR += kappa20
     SUBDIR += kbanner
     SUBDIR += kcc
@@ -161,6 +163,7 @@
     SUBDIR += newosaka
     SUBDIR += ng
     SUBDIR += ng-canna
+    SUBDIR += ngraph-fonts
     SUBDIR += nkf
     SUBDIR += nvi-euc-jp
     SUBDIR += nvi-iso-2022-jp
