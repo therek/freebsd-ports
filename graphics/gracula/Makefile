@@ -3,7 +3,7 @@
 # Date created:				30 May 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/gracula/Makefile,v 1.3 1999/08/25 06:14:09 obrien Exp $
+# $FreeBSD: ports/graphics/gracula/Makefile,v 1.4 1999/08/27 21:14:03 mharo Exp $
 #
 
 DISTNAME=	gracula-3.0
@@ -20,6 +20,7 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/gracula
 	${INSTALL_MAN} ${WRKSRC}/NNL ${PREFIX}/share/doc/gracula
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/gracula
+.endif
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
