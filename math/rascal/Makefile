@@ -3,11 +3,11 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/rascal/Makefile,v 1.1 2001/04/09 16:58:35 ijliao Exp $
+# $FreeBSD: ports/math/rascal/Makefile,v 1.2 2001/04/25 05:30:24 ijliao Exp $
 #
 
 PORTNAME=	rascal
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.5
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
