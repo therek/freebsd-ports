@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.89 1999/11/14 03:29:15 steve Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.90 1999/11/21 06:20:56 wes Exp $
 #
 
     SUBDIR += LPRng
@@ -49,7 +49,6 @@
     SUBDIR += npadmin
     SUBDIR += obliterate
     SUBDIR += pib
-    SUBDIR += pkg_version
     SUBDIR += prips
     SUBDIR += psmisc
     SUBDIR += rdate
