@@ -2,11 +2,11 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/platon/Makefile,v 1.8 2000/06/08 08:51:02 knu Exp $
+# $FreeBSD: ports/biology/platon/Makefile,v 1.9 2000/08/01 23:31:19 jedgar Exp $
 #
 
 PORTNAME=	platon
-PORTVERSION=	2000.06.05
+PORTVERSION=	2001.03.09
 CATEGORIES=	biology
 MASTER_SITES=	ftp://xraysoft.chem.uu.nl/pub/unix/
 DISTNAME=	platon
@@ -36,6 +36,7 @@ MAKE_ENV+=	HAVE_G2C=yes
 pre-patch:
 	(cd ${WRKDIR}/${DISTNAME} && ${GUNZIP_CMD} platon.f.Z)
 	${SED} 's,%%X11BASE%%,${X11BASE},g' ${FILESDIR}/Makefile > ${WRKDIR}/${DISTNAME}/Makefile
+	(cd ${WRKDIR}/${DISTNAME} && ${GUNZIP_CMD} xdrvr.c.gz)
 
 pre-install:
 	strip ${WRKDIR}/${DISTNAME}/platon
