@@ -2,7 +2,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ntop/Makefile,v 1.13 2000/08/13 06:32:58 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ntop
@@ -15,7 +15,7 @@ DISTFILES=	${DISTNAME}-src.tar.gz
 
 MAINTAINER=	billf@FreeBSD.org
 
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 ALL_TARGET=
 INSTALL_TARGET=	install install-man
 
