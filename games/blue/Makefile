@@ -2,13 +2,13 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/blue/Makefile,v 1.5 2000/04/02 00:57:07 mharo Exp $
+# $FreeBSD: ports/games/blue/Makefile,v 1.6 2000/04/14 00:45:34 mharo Exp $
 #
 
 PORTNAME=	blue
 PORTVERSION=	2.4
 CATEGORIES=	games
-MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
+MASTER_SITES=	http://www.tuxedo.org/~esr/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -17,6 +17,6 @@ MAN6=		blue.6
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/blue ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/blue.6 ${PREFIX}/man/man6
+	${INSTALL_MAN} ${WRKSRC}/blue.6 ${MANPREFIX}/man/man6
 
 .include <bsd.port.mk>
