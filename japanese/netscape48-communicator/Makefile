@@ -2,13 +2,13 @@
 # Date created:		13 Mar 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.31 2000/05/14 17:50:20 imura Exp $
+# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.32 2000/07/19 14:28:13 sada Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
 PORTVERSION=	${BROWSER_VERSION}
 CATEGORIES=	japanese www
-MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
+MASTER_SITES?=	${MASTER_SITE_PORTS_JP} \
 		http://www.bres.tsukuba.ac.jp/~yohta/netscape/
 DISTNAME?=	communicator-ja-euc-v407-export.generic-generic-generic
 
