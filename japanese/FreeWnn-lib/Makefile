@@ -3,7 +3,7 @@
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.26 1999/08/25 05:23:24 obrien Exp $
+# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.27 2000/03/08 10:56:35 max Exp $
 #
 
 DISTNAME=	Wnn4.2
@@ -16,8 +16,7 @@ DISTFILES=	Wnn4.2.tar.gz ${WNN_EXTRA_PATCH}
 
 MAINTAINER=	taoka@FreeBSD.org
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
-
+USE_XLIB=	yes
 EXTRACT_ONLY=	Wnn4.2.tar.gz
 PATCHDIR=	${.CURDIR}/../../japanese/Wnn/patches
 FILESDIR=	${.CURDIR}/../../japanese/Wnn/files
