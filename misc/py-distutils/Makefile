@@ -2,7 +2,7 @@
 # Date created:         23 March 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/py-distutils/Makefile,v 1.5 2000/09/04 12:28:11 tg Exp $
+# $FreeBSD: ports/misc/py-distutils/Makefile,v 1.6 2000/09/06 12:18:18 tg Exp $
 #
 
 PORTNAME=	distutils
@@ -14,19 +14,12 @@ DISTNAME=	Distutils-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
-
-PLIST_SUB=	PYVERSION="python${PYVERSION}"
-
-PYVERSION!=	(python -c 'import string, sys; \
-				print string.split(sys.version)[0][:3]') 2> /dev/null \
-		|| echo "1.5"
+USE_PYTHON=	yes
 
 do-build:
-	@(cd ${WRKSRC}; python setup.py build)
+	@(cd ${WRKSRC}; ${PYTHON_CMD} setup.py build)
 
 do-install:
-	@(cd ${WRKSRC}; python setup.py install)
+	@(cd ${WRKSRC}; ${PYTHON_CMD} setup.py install)
 
 .include <bsd.port.mk>

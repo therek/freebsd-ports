@@ -2,38 +2,37 @@
 # Date created:         12 Jan 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/py-tkinter/Makefile,v 1.1 2000/04/04 09:53:06 tg Exp $
+# $FreeBSD: ports/x11-toolkits/py-tkinter/Makefile,v 1.2 2000/04/10 01:10:50 cpiazza Exp $
 #
 
-PORTNAME=	py-tkinter
-PORTVERSION= 	1.5.2
+PORTNAME=	tkinter
+PORTVERSION= 	${PYTHON_PORTVERSION}
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
-DISTNAME=	py152
-EXTRACT_SUFX=	.tgz
+PKGNAMEPREFIX=	py-
+DISTFILES=	${PYTHON_DISTFILE}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 
 DIST_SUBDIR=	python
-WRKSRC=		${WRKDIR}/Python-1.5.2/Modules
+USE_PYTHON=	yes
+WRKSRC=		${PYTHON_WRKSRC}/Modules
+CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
 ALL_TARGET=	sharedmods
 MAKE_FLAGS=	OPT="${CFLAGS}"
 
-PYTHONSCRIPTDIR=	${PREFIX}/lib/python1.5
-
 post-extract:
 	@${CP} ${FILESDIR}/Setup ${WRKSRC}
-	@${CP} ${PYTHONSCRIPTDIR}/config/Makefile.pre.in ${WRKSRC}
+	@${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}
 
 do-configure:
-	@(cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
+	@(cd ${WRKSRC}; \
+		${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/_tkinter.so ${PYTHONSCRIPTDIR}/site-packages
+	${INSTALL_DATA} ${WRKSRC}/_tkinter.so ${PYTHON_SITELIBDIR}
 
 .include <bsd.port.mk>

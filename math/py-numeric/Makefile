@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.24 2000/09/04 12:35:30 tg Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.25 2000/09/06 12:17:00 tg Exp $
 #
 
 PORTNAME=	numeric
@@ -15,26 +15,15 @@ DISTNAME=	Numeric-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
-		${PYDISTUTILS}
+BUILD_DEPENDS=	${PYDISTUTILS}
 LIB_DEPENDS=	lapack.3:${PORTSDIR}/math/lapack \
 		blas.2:${PORTSDIR}/math/lapack
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
+USE_PYTHON=	yes
 MAKE_ENV=	BLASLIBDIR=${LOCALBASE}/lib LAPACKLIBDIR=${LOCALBASE}/lib
-PLIST_SUB=	PYVERSION="python${PYVERSION}"
 
 DOCDIR=		${PREFIX}/share/doc/py-numeric
 EXAMPLEDIR=	${PREFIX}/share/examples/py-numeric
-PYVERSION!=	(python -c 'import string, sys; \
-			   print string.split(sys.version)[0][:3]') 2> /dev/null \
-			|| echo "1.5"
-
-.if ${PYVERSION} == "2.0"
-PYDISTUTILS=	${LOCALBASE}/lib/python${PYVERSION}/distutils/core.py:${PORTSDIR}/lang/python
-.else
-PYDISTUTILS=	${LOCALBASE}/lib/python${PYVERSION}/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
-.endif
 
 post-install:
 	@${MKDIR} ${EXAMPLEDIR}
