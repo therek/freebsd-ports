@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.9 2003/08/04 21:57:13 naddy Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.10 2003/09/24 15:27:28 nork Exp $
 #
 # set -x
 
@@ -122,7 +122,7 @@ EOF
   fi
 
   if [ "$MUTT_HTML" = "yes" ]; then
-    html=366
+    html=367
     if [ "$MUTT_COMPRESSED_FOLDERS" = "yes" ]; then
       html=$(($html + 5))
     fi
