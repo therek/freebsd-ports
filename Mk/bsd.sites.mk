@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.162 2003/07/04 22:19:06 olgeni Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.163 2003/07/07 11:32:28 sheldonh Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -343,7 +343,8 @@ MASTER_SITE_KDE+=	\
 	ftp://ftp.roedu.net/pub/mirrors/ftp.kde.org/%SUBDIR%/ \
 	ftp://ftp.rediris.es/mirror/kde/%SUBDIR%/ \
 	ftp://ftp.du.se/pub/mirrors/kde/%SUBDIR%/ \
-	ftp://download.tw.kde.org/pub/kde/%SUBDIR%/
+	ftp://download.tw.kde.org/pub/kde/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/kde/&,}
 
 MASTER_SITE_MOZILLA+= \
 	http://download.mozilla.org/pub/%SUBDIR%/ \
