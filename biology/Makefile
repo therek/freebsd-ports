@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.16 2000/07/27 14:32:50 nbm Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.17 2000/07/28 13:16:05 nbm Exp $
 #
 
     SUBDIR += babel
@@ -12,6 +12,7 @@
     SUBDIR += mopac
     SUBDIR += ortep3
     SUBDIR += p5-AcePerl
+    SUBDIR += p5-bioperl
     SUBDIR += paml
     SUBDIR += phylip
     SUBDIR += platon
