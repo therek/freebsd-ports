@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 #-
-# Copyright (c) 2000-2003 Dag-Erling Coïdan Smørgrav
+# Copyright (c) 2000-2004 Dag-Erling Coïdan Smørgrav
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -26,15 +26,15 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.35 2003/10/01 15:15:37 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.36 2004/01/22 15:06:01 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.10";
-my $COPYRIGHT	= "Copyright (c) 2000-2003 Dag-Erling Smørgrav. " .
+my $VERSION	= "2.7.11";
+my $COPYRIGHT	= "Copyright (c) 2000-2004 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
 # Constants
@@ -1138,8 +1138,10 @@ MAIN:{
 
     # Step 2: build list of explicitly required ports
     foreach my $arg (@ARGV) {
-	if ($arg =~ m/^([A-Z0-9_]+)=(.*)$/) {
+	if ($arg =~ m/^(?:-D)?([A-Z0-9_]+)=(.*)$/) {
 	    $ENV{$1} = $2;
+	} elsif ($arg =~ m/^-D([A-Z0-9_]+)$/) {
+	    $ENV{$1} = '';
 	} else {
 	    $err += add_port($arg, &REQ_EXPLICIT);
 	    ++$requested;
