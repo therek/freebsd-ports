@@ -3,7 +3,7 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-emacs/Makefile,v 1.9 1999/09/10 17:04:00 shige Exp $
+# $FreeBSD: ports/editors/semi-emacs/Makefile,v 1.10 1999/10/11 06:20:55 shige Exp $
 #
 
 DISTNAME=	semi-${SEMI_VER}
@@ -58,7 +58,7 @@ PLIST_SUB+=	EMACS_LIBDIR=${EMACS_LIBDIR} EMACS_VER=${EMACS_VER} \
 		EMACS_LIBDIR_WITH_VER=${EMACS_LIBDIR_WITH_VER} \
 		EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR} \
 		SEMIDOCDIR=${SEMIDOCDIR} SEMI_SETUPEL=${SEMI_SETUPEL} \
-		FLIM_COOKIE=${FLIM_COOKIE}
+		SEMI_COOKIE=${SEMI_COOKIE}
 MAKE_FLAGS+=	EMACS=${EMACS_CMD} XEMACS=${EMACS_CMD}
 .if (${EMACS_VER} == "19.34")
 # depends on custom: emacs-19.34 or mule-19.34
@@ -108,6 +108,8 @@ post-build:
 .endif
 
 post-install:
+	@${MKDIR} -p ${PREFX}/share/semi
+	@${TOUCH} ${PREFX}/share/semi/${SEMI_COOKIE}
 .if defined(REQUIRE_SETUPEL) && (${REQUIRE_SETUPEL} == "YES")
 	@${MAKE} setupel-install
 .endif
