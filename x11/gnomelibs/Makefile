@@ -2,12 +2,11 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.74 2000/11/01 15:44:50 sobomax Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.75 2000/11/17 16:23:09 ade Exp $
 #
 
 PORTNAME=	gnomelibs
-PORTVERSION= 	1.2.8
-PORTREVISION=	1
+PORTVERSION= 	1.2.9
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
@@ -45,5 +44,9 @@ pre-patch:
 post-patch:
 	@${PERL} -pi -e 's|%%LOCALBASE%%|${LOCALBASE}|g' \
 		${WRKSRC}/gnome-config.in ${WRKSRC}/libgnome/gnome-util.c
+
+# need to make launched gnome-terminals appear in utmp/wtmp
+post-install:
+	@${CHMOD} u+s ${PREFIX}/bin/gnome-pty-helper
 
 .include <bsd.port.mk>
