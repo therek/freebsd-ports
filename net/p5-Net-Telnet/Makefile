@@ -3,7 +3,7 @@
 # Date created:			March 3 1998
 # Whom:	      			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.4 1999/08/30 14:23:39 peter Exp $
 #
 
 DISTNAME=       Net-Telnet-3.01
@@ -12,7 +12,7 @@ CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 
-MAINTAINER=	kuriyama@opt.phys.waseda.ac.jp
+MAINTAINER=	kuriyama@FreeBSD.org
 
 USE_PERL5=	YES
 
