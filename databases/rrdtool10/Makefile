@@ -2,7 +2,7 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.17 2000/11/13 12:44:44 demon Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.18 2001/02/22 10:42:16 demon Exp $
 #
 
 PORTNAME=	rrdtool
@@ -20,6 +20,7 @@ USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-shared=yes
 CONFIGURE_ENV=	PERL=${PERL}
+CFLAGS!=	${ECHO} ${CFLAGS:N-ffast-math}
 
 MAN1=		RRDp.1 RRDs.1 bin_dec_hex.1 rrdcgi.1 rrdcreate.1 rrddump.1 \
 		rrdfetch.1 rrdgraph.1 rrdlast.1 rrdresize.1 rrdrestore.1 \
