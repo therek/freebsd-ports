@@ -2,11 +2,11 @@
 # Date created:		28 Aug 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.2 2000/04/13 20:00:37 cpiazza Exp $
+# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.3 2001/01/16 17:31:23 sobomax Exp $
 #
 
 PORTNAME=	prom-wl
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.2
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www02.so-net.ne.jp/~murata/software/pub/
 
