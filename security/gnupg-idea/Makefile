@@ -2,13 +2,14 @@
 # Date created:		10 May, 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/security/gnupg-idea/Makefile,v 1.8 2001/06/25 06:43:13 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnupg-idea
 PORTVERSION=	1.0.1
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/%SUBDIR%/	\
+MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/%SUBDIR%/ \
+		http://www.gnupg.dk/contrib-dk/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/gnupg/&,}
 MASTER_SITE_SUBDIR=	contrib
 DISTFILES=	${CONTRIB:S|$|.c|}
@@ -50,11 +51,11 @@ pre-fetch:
 .include <bsd.port.pre.mk>
 
 pre-extract:
-	@${SED} s!%%PREFIX%%!${PREFIX}!g ${PKGMESSAGE}
+	@${SED} -e s!%%PREFIX%%!${PREFIX}!g ${PKGMESSAGE}
 
 post-extract:
 .for i in ${DISTFILES}
-	@${CP} ${_DISTDIR}/${i} ${WRKSRC}/${i}
+	@tr -d '\r' <${_DISTDIR}/${i} >${WRKSRC}/${i}
 .endfor
 
 do-patch:
