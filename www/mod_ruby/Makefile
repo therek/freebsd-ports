@@ -2,7 +2,7 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.13 2001/04/20 09:21:43 knu Exp $
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.14 2001/04/27 10:55:16 knu Exp $
 #
 
 PORTNAME=	mod_ruby
@@ -10,6 +10,10 @@ PORTVERSION=	0.8.1
 CATEGORIES=	www ruby
 MASTER_SITES=	http://www.modruby.net/archive/
 DIST_SUBDIR=	ruby
+
+PATCH_SITES=	http://www.ruby-lang.org/~knu/
+PATCHFILES=	${DISTNAME}-2001.05.24.patch.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -30,12 +34,13 @@ DOCS_EN=	ChangeLog README.en
 DOCS_JA=	README.ja
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} ${RUBY_FLAGS} Makefile.RB ${CONFIGURE_ARGS}
+	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} ${RUBY_FLAGS} configure.rb ${CONFIGURE_ARGS}
 
 do-install:
 	${APXS} -i -n ruby ${WRKSRC}/mod_ruby.so
 	${INSTALL_DATA} ${FILESDIR}/httpd.conf.${PORTNAME} ${PREFIX}/etc/apache/
-	${CP} -R ${WRKSRC}/ruby/* ${RUBY_SITELIBDIR}/
+	${MKDIR} ${RUBY_SITELIBDIR}/apache
+	${INSTALL_DATA} ${WRKSRC}/ruby/apache/*.rb ${RUBY_SITELIBDIR}/apache/
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
 .for f in ${DOCS_EN}
