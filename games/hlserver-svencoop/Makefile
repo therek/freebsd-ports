@@ -2,7 +2,7 @@
 # Date created:				Thu May	3 22:04:21 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-svencoop/Makefile,v 1.1 2001/05/04 02:09:12 lioux Exp $
 #
 
 PORTNAME=	svencoop
@@ -15,8 +15,6 @@ MASTER_SITES=	http://www.smidge.com/files/sc/ \
 DISTFILES=	svencoop19.tar.gz svencoop19_patch.tar.gz
 
 MAINTAINER=	lioux@FreeBSD.org
-
-WRKSRC=		${WRKDIR}/${PORTNAME}
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
 

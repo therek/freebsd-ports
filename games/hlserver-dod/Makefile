@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 24 00:10:43 EST 2001
 # Whom:					pat@databits.net et al
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-dod/Makefile,v 1.1 2001/04/10 11:24:48 lioux Exp $
 #
 
 PORTNAME=	dodbeta
@@ -10,6 +10,8 @@ PORTVERSION=	1.1
 MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/modifications/dod/
 DISTNAME=	dod_linux_beta11_full
 EXTRACT_SUFX=	.tgz
+
+WRKSRC=		${WRKDIR}/dod
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
 

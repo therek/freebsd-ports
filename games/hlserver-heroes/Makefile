@@ -2,7 +2,7 @@
 # Date created:				Wed May	2 23:25:19 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/hlserver-heroes/Makefile,v 1.1 2001/05/03 03:02:43 lioux Exp $
 #
 
 PORTNAME=	heroes
@@ -14,7 +14,7 @@ DISTFILES=	hero10.zip HLH101.zip
 MAINTAINER=	lioux@FreeBSD.org
 
 USE_ZIP=	yes
-EXTRACT_BEFORE_ARGS=	-o
+EXTRACT_BEFORE_ARGS=	-o -qq
 
 WRKSRC=		${WRKDIR}/Heroes
 

@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-flf/Makefile,v 1.4 2001/04/27 01:08:25 lioux Exp $
+# $FreeBSD: ports/games/hlserver-flf/Makefile,v 1.5 2001/05/03 01:37:05 lioux Exp $
 #
 
 PORTNAME=	flf
@@ -19,6 +19,7 @@ DISTFILES=	frontline_linux_12a.zip \
 		frontline_12a_fix_linux.zip
 
 USE_ZIP=	yes
+EXTRACT_BEFORE_ARGS=	-o -qq
 
 WRKSRC=		${WRKDIR}/frontline
 
