@@ -2,7 +2,7 @@
 # Date created:			19 April 1996
 # Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.39 2001/06/09 03:13:36 knu Exp $
+# $FreeBSD: ports/devel/SWIG-devel/Makefile,v 1.40 2001/07/14 04:15:06 knu Exp $
 #
 
 PORTNAME=	swig
@@ -14,6 +14,8 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	knu@FreeBSD.org
+
+BUILD_DEPENDS=		autoconf:${PORTSDIR}/devel/autoconf
 
 VER=		${PORTVERSION:R}
 
