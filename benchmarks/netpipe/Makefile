@@ -2,10 +2,10 @@
 # Date created:		20 Feb 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/benchmarks/netpipe/Makefile,v 1.6 2000/04/08 22:04:22 mharo Exp $
+# $FreeBSD$
 
 PORTNAME=	netpipe
-PORTVERSION=	2.3
+PORTVERSION=	2.4
 CATEGORIES=	benchmarks net
 MASTER_SITES=	ftp://ftp.scl.ameslab.gov/pub/netpipe/ \
 		${MASTER_SITE_LOCAL}
