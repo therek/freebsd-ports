@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.203 2001/06/26 03:28:08 dwcjr Exp $
+# $FreeBSD: ports/security/Makefile,v 1.204 2001/06/27 21:40:53 will Exp $
 #
 
     SUBDIR += aafid2
@@ -136,6 +136,7 @@
     SUBDIR += portsentry
     SUBDIR += pscan
     SUBDIR += py-amkCrypto
+    SUBDIR += py-fchksum
     SUBDIR += py-m2crypto
     SUBDIR += racoon
     SUBDIR += radiusniff
