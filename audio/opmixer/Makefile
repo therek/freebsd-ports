@@ -2,11 +2,11 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/opmixer/Makefile,v 1.7 2001/03/13 15:18:04 sobomax Exp $
+# $FreeBSD: ports/audio/opmixer/Makefile,v 1.8 2001/06/04 11:44:10 trevor Exp $
 #
 
 PORTNAME=	opmixer
-PORTVERSION=	0.65
+PORTVERSION=	0.70
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	optronic
