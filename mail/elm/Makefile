@@ -2,11 +2,12 @@
 # Date created:				04 Feb 2000
 # Whom:					dhagan@cs.vt.edu
 #
-# $FreeBSD: ports/mail/elm/Makefile,v 1.62 2001/02/05 15:10:34 olgeni Exp $
+# $FreeBSD: ports/mail/elm/Makefile,v 1.63 2001/03/12 08:15:17 kris Exp $
 #
 
 PORTNAME=	elm
 PORTVERSION=	2.5.5
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.virginia.edu/pub/elm/
 DISTNAME=	${PORTNAME}${PORTVERSION}
