@@ -1,5 +1,5 @@
 # portaudit text based database
-# $FreeBSD: ports/security/portaudit-db/database/portaudit.txt,v 1.109 2004/08/30 10:07:22 eik Exp $
+# $FreeBSD: ports/security/portaudit-db/database/portaudit.txt,v 1.110 2004/08/30 10:57:42 eik Exp $
 apache>=2.*<2.0.49_1|http://www.osvdb.org/6472 http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
 apache+mod_ssl*<1.3.31+2.8.18|http://www.osvdb.org/6472 http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
 ru-apache+mod_ssl<1.3.31+30.20+2.8.18|http://www.osvdb.org/6472 http://www.cve.mitre.org/cgi-bin/cvename.cgi?name=2004-0488|mod_ssl stack-based buffer overflow|662cd99e-bc9d-11d8-916c-000347dd607f
@@ -72,3 +72,4 @@ cdrtools<2.0.3_4|ftp://ftp.berlios.de/pub/cdrecord/alpha/AN-2.01a38|security bug
 cdrtools-cjk<2.0.3.20030714_4|ftp://ftp.berlios.de/pub/cdrecord/alpha/AN-2.01a38|security bug in rscsi client code|fdbbed57-f933-11d8-a776-00e081220a76
 cdrtools-devel<2.01a38|ftp://ftp.berlios.de/pub/cdrecord/alpha/AN-2.01a38|security bug in rscsi client code|fdbbed57-f933-11d8-a776-00e081220a76
 {ja-,ru-,}gaim<0.82|http://www.osvdb.org/9261 http://www.osvdb.org/9262 http://www.osvdb.org/9263 http://www.osvdb.org/9264 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2004-0754 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2004-0784 http://cve.mitre.org/cgi-bin/cvename.cgi?name=CAN-2004-0785 http://www.securityfocus.com/bid/11056 http://gaim.sourceforge.net/security/index.php|multiple vulnerabilities in gaim|8b29b312-fa6e-11d8-81b0-000347a4fa7d
+{ja-,}samba<2.2.11.*|http://www.samba.org/samba/history/samba-2.2.11.html http://secunia.com/advisories/12397 http://www.osvdb.org/9362|samba printer change notification request DoS|d8ce23a5-fadc-11d8-81b0-000347a4fa7d
