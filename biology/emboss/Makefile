@@ -2,7 +2,7 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.7 2000/10/10 04:54:35 kevlo Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.8 2000/11/01 11:49:07 jeh Exp $
 #
 
 PORTNAME=	emboss
@@ -24,7 +24,7 @@ USE_XLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/gd" \
 		LIBS="-L${LOCALBASE}/lib"
 
-DOC_DIRS= doc/manuals doc/tutorials doc/programs/text doc/programs/html
+DOC_DIRS=	doc/manuals doc/tutorials doc/programs/text doc/programs/html
 
 post-patch:
 .for DIR in ${DOC_DIRS}
