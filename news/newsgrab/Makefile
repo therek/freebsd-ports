@@ -2,11 +2,11 @@
 # Date Created:				11 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/news/newsgrab/Makefile,v 1.2 2001/08/22 23:06:43 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newsgrab
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.5
 CATEGORIES=	news
 MASTER_SITES=	http://phunkbros.dk/newsgrab/
 
