@@ -2,7 +2,7 @@
 # Date created:		5 March 1997
 # Whom:			Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/xpat2/Makefile,v 1.12 2000/08/03 09:24:17 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpat2
@@ -14,6 +14,8 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
 MAINTAINER=	mph@freebsd.org
+
+BROKEN=		"Does not package correctly"
 
 USE_IMAKE=	yes
 USE_XPM=	yes
