@@ -2,7 +2,7 @@
 # Date created:		3 September 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/math/oleo/Makefile,v 1.17 2000/08/02 00:05:09 jedgar Exp $
+# $FreeBSD: ports/math/oleo/Makefile,v 1.18 2000/12/02 16:27:20 kevlo Exp $
 #
 
 PORTNAME=	oleo
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 .if defined(WITH_MOTIF)
 LIB_DEPENDS+=	plot.3:${PORTSDIR}/graphics/plotutils \
-		Xbae.7:${PORTSDIR}/x11-toolkits/xbae
+		Xbae.8:${PORTSDIR}/x11-toolkits/xbae
 .endif
 
 USE_XLIB=	yes

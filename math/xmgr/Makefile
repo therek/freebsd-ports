@@ -2,7 +2,7 @@
 # Date created:		So   2 Mär 1997 12:11:43 MET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/math/xmgr/Makefile,v 1.20 2000/04/14 07:20:55 asami Exp $
+# $FreeBSD: ports/math/xmgr/Makefile,v 1.21 2000/11/07 23:28:13 asami Exp $
 #
 
 PORTNAME=	xmgr
@@ -17,7 +17,7 @@ MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
 BUILD_DEPENDS=	${X11BASE}/lib/libhlpclient.a:${PORTSDIR}/x11/libhelp \
 		${LOCALBASE}/lib/libmfhdf.a:${PORTSDIR}/graphics/hdf
-LIB_DEPENDS=	Xbae.7:${PORTSDIR}/x11-toolkits/xbae
+LIB_DEPENDS=	Xbae.8:${PORTSDIR}/x11-toolkits/xbae
 
 USE_X_PREFIX=	YES
 USE_MOTIF=	YES
