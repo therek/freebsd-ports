@@ -1,12 +1,12 @@
 # New ports collection makefile for:	irssi
-# Version required:		0.7.22
+# Version required:		0.7.23
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.20 2000/01/17 19:58:09 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.21 2000/01/22 19:50:25 sumikawa Exp $
 #
 
-DISTNAME=	irssi-0.7.22
+DISTNAME=	irssi-0.7.23
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://xlife.dhs.org/irssi/files/
 
@@ -32,6 +32,10 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-pthreads --without-socks --with-textui \
 		--with-proplist=${LOCALBASE} --without-servertest \
 		--disable-nls
+
+.if defined(USE_GNOME)
+PLIST=		${PKGDIR}/PLIST.gnome
+.endif
 
 .include <bsd.port.pre.mk>
 
