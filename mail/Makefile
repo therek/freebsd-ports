@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.109 1999/11/27 05:10:47 steve Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.110 1999/12/25 16:01:58 steve Exp $
 #
 
     SUBDIR += adcomplain
@@ -46,6 +46,7 @@
     SUBDIR += mew-xemacs-mule
     SUBDIR += mew-xemacs20
     SUBDIR += mew-xemacs21
+    SUBDIR += mew-xemacs21-mule
     SUBDIR += mh
     SUBDIR += minimalist
     SUBDIR += ml
