@@ -2,12 +2,11 @@
 # Date created:				27 Dec 1999
 # Whom:					Shinya Sasaki <pcmaster@osk3.3web.ne.jp>
 #
-# $FreeBSD: ports/japanese/samba/Makefile,v 1.13 2001/07/03 09:11:39 knu Exp $
+# $FreeBSD: ports/japanese/samba/Makefile,v 1.14 2001/07/14 06:01:06 knu Exp $
 #
 
 PORTNAME=	samba
 PORTVERSION=	${SAMBA_VERSION}.j${SAMBA_JA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.samba.gr.jp/pub/samba-jp/%SUBDIR%/ \
 		ftp://ftp.iij.ad.jp/pub/SAMBA/samba-jp/%SUBDIR%/ \
@@ -22,10 +21,8 @@ MAINTAINER=	nakaji@jp.FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
-Y2K=		http://us1.samba.org/samba/docs/sambay2k.html
-
 SAMBA_VERSION=		2.0.10
-SAMBA_JA_VERSION=	1.0
+SAMBA_JA_VERSION=	1.1
 
 # directories
 VARDIR=		/var
@@ -87,24 +84,17 @@ post-install:
 			> ${SAMPLE_CONFIG} ;				\
 	fi
 	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME}/source/script/mksmbpasswd.sh ${PREFIX}/bin/make_smbpasswd
-	if [ ! -d ${SAMBA_PRIVATE} ] ; then				\
-		${MKDIR} ${SAMBA_PRIVATE} ;				\
-		${CHOWN} root:wheel ${SAMBA_PRIVATE} ;			\
+
+	${MKDIR} -p -m 500 ${SAMBA_PRIVATE}
+	${CHOWN} root:wheel ${SAMBA_PRIVATE}
+	${CAT} /etc/passwd | ${PREFIX}/bin/make_smbpasswd > ${SAMBA_PRIVATE}/smbpasswd.default
+	if [ ! -e ${SAMBA_PRIVATE}/smbpasswd ]; then	\
+		${CP} -p ${SAMBA_PRIVATE}/smbpasswd.default ${SAMBA_PRIVATE}/smbpasswd ;	\
 	fi
-	${CHMOD} 700 ${SAMBA_PRIVATE}
-	if [ ! -f ${SAMBA_PRIVATE}/smbpasswd ] ; then			\
-		${CAT} /etc/passwd | ${PREFIX}/bin/make_smbpasswd > ${SAMBA_PRIVATE}/smbpasswd ; \
-		${CHMOD} 600 ${SAMBA_PRIVATE}/smbpasswd ;			\
-	fi
-	${CHMOD} 500 ${SAMBA_PRIVATE}
+	${CHMOD} 600 ${SAMBA_PRIVATE}/smbpasswd*
+
 	${CHOWN} root:wheel ${PREFIX}/bin/smbpasswd
 	${CHMOD} 111 ${PREFIX}/bin/smbpasswd
-.if defined(PACKAGE_BUILDING)
-	${ECHO} "private/smbpasswd" >> ${TMPPLIST}
-	${ECHO} "@dirrm private" >> ${TMPPLIST}
-.else
-	${ECHO} "@unexec echo \"Warning: If you will *NOT* use this package anymore, please remove %D/private/smbpasswd manually.\"" >> ${TMPPLIST}
-.endif
 
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/samba
