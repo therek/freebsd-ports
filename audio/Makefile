@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.218 2001/03/18 05:07:58 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.219 2001/03/25 02:45:30 asami Exp $
 #
 
     SUBDIR += Maaate
@@ -162,6 +162,7 @@
     SUBDIR += sweep
     SUBDIR += tclmidi
     SUBDIR += teknap
+    SUBDIR += tempest_for_eliza
     SUBDIR += timidity
     SUBDIR += timidity++
     SUBDIR += timidity++-emacs
