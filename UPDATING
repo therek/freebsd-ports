@@ -6,6 +6,15 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041012:
+  AFFECTS: users of net/netatalk
+  AUTHOR: marcus@FreeBSD.org
+
+  Netatalk has been upgraded to 2.0.0.  There are some important
+  instructions for upgrading from 1.6.x.  Please see
+  http://netatalk.sourceforge.net/2.0/htmldocs/upgrade.html on how
+  to make the transition.
+
 20041011:
   AFFECTS: users of www/linuxpluginwrapper who are running FreeBSD
 	   5.3-BETA7 or later (including -current)
@@ -838,4 +847,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.70 2004/10/01 18:24:00 kensmith Exp $
+$FreeBSD: ports/UPDATING,v 1.71 2004/10/11 17:15:45 nork Exp $
