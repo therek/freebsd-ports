@@ -2,11 +2,11 @@
 # Date created:			March 3 1998
 # Whom:	      			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.6 2000/04/09 18:12:53 cpiazza Exp $
+# $FreeBSD: ports/net/p5-Net-Telnet/Makefile,v 1.7 2000/06/17 02:36:38 will Exp $
 #
 
 PORTNAME=	Net-Telnet
-PORTVERSION=	3.01
+PORTVERSION=	3.02
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
