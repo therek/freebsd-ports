@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.65 2003/02/13 00:28:11 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.66 2003/02/19 01:47:28 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -170,3 +170,4 @@ x11-fm/gnomemc||2003-02-10|obsolete
 x11/wmshutdown|sysutils/wmshutdown|2003-02-13|fix category
 security/kgpgapplet||2003-02-19|merged into kgpg
 net/ip-tun||2003-02-19|obsoleted by gif interfaces
+net/edonkey-gui-gtk-kioslave||2003-02-19|merged into edonkey-gui-gtk
