@@ -1,6 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/cdecl/pkg-plist,v 1.3 2000/11/22 00:17:12 obrien Exp $
 bin/cdecl
 bin/c++decl
-share/doc/cdecl/testset
-share/doc/cdecl/testset++
-@dirrm share/doc/cdecl
+%%PORTDOCS%%share/doc/cdecl/testset
+%%PORTDOCS%%share/doc/cdecl/testset++
+%%PORTDOCS%%@dirrm share/doc/cdecl
