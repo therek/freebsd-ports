@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg/PLIST,v 1.7 2000/09/18 06:22:50 steve Exp $
+@comment $FreeBSD: ports/x11-toolkits/open-motif/pkg-plist,v 1.8 2000/09/19 21:37:42 asami Exp $
 @exec [ -f %D/lib/X11/config/host.def.orig ] || mv %D/lib/X11/config/host.def %D/lib/X11/config/host.def.orig
 lib/X11/config/host.def
 @unexec [ -f %D/%F.orig ] && mv %D/%F.orig %D/%F || :
@@ -418,12 +418,12 @@ lib/libUil.so.2
 lib/libXm.a
 lib/libXm.so
 lib/libXm.so.2
-share/doc/openmotif/BUGREPORT
+%%PORTDOCS%%share/doc/openmotif/BUGREPORT
 share/doc/openmotif/CLOSEDBUGS.gz
-share/doc/openmotif/COPYRIGHT.MOTIF
+%%PORTDOCS%%share/doc/openmotif/COPYRIGHT.MOTIF
 share/doc/openmotif/OPENBUGS.gz
-share/doc/openmotif/README
-share/doc/openmotif/RELNOTES
+%%PORTDOCS%%share/doc/openmotif/README
+%%PORTDOCS%%share/doc/openmotif/RELNOTES
 share/doc/openmotif/guides/README
 share/doc/openmotif/guides/mot-cdesgr.ps.Z
 share/doc/openmotif/guides/mot-csgcc.ps.Z
