@@ -3,7 +3,7 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.28 1999/12/23 14:31:29 joe Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.29 1999/12/24 15:56:29 andreas Exp $
 #
 
 DISTNAME=	zebra-0.83a
@@ -23,7 +23,7 @@ post-install:
 		< ${FILESDIR}/zebractl.sh  \
 		> ${PREFIX}/sbin/zebractl
 	@${CHMOD} 555 ${PREFIX}/sbin/zebractl
-	@${ECHO} "Make the following entries in /etc/rc.conf to start zebra:"
+	@${ECHO} "Make these entries in /etc/rc.conf.local to start zebra:"
 	@${ECHO} "defaultrouter=\"NO\""
 	@${ECHO} "router_enable=\"YES\""
 	@${ECHO} "router=\"${PREFIX}/sbin/zebractl\""
