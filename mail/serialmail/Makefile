@@ -3,14 +3,14 @@
 # Date created:		2 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/serialmail/Makefile,v 1.3 1999/08/25 06:50:50 obrien Exp $
 #
 
 DISTNAME=	serialmail-0.75
 CATEGORIES=	mail
 MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/ \
 		ftp://ftp.qmail.org/pub/koobera.math.uic.edu/pub/software/ \
-		http://www.freebsd.org/~tom/distfiles/
+		http://people.FreeBSD.org/~tom/distfiles/
 
 MAINTAINER=	tom@FreeBSD.org
 

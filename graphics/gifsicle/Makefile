@@ -3,13 +3,13 @@
 # Date created:                19 December 1998
 # Whom:                        Brad Hendrickse <bradh@iafrica.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gifsicle/Makefile,v 1.5 1999/08/25 06:14:01 obrien Exp $
 #
 
 DISTNAME=	gifsicle-1.11.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.lcdf.org/gifsicle/ \
-		http://www.freebsd.org/~flathill/distfiles/
+		http://people.FreeBSD.org/~flathill/distfiles/
 
 MAINTAINER=	bradh@iafrica.com
 

@@ -3,12 +3,12 @@
 # Date created:        24 March 1998
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/math/xgfe/Makefile,v 1.12 1999/09/10 03:21:52 asami Exp $
+# $FreeBSD: ports/math/xgfe/Makefile,v 1.13 1999/09/11 00:46:39 asami Exp $
 #
 
 DISTNAME=		xgfe-2.0
 CATEGORIES=		math
-MASTER_SITES=		http://www.freebsd.org/~mph/distfiles/
+MASTER_SITES=		http://people.FreeBSD.org/~mph/distfiles/
 
 MAINTAINER=	mph@freebsd.org
 

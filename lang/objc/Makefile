@@ -3,13 +3,13 @@
 # Date created:         16 May 1998
 # Whom:                 chuckr@freebsd.org
 #
-# $FreeBSD: ports/lang/objc/Makefile,v 1.12 1999/08/28 03:41:22 mharo Exp $
+# $FreeBSD: ports/lang/objc/Makefile,v 1.13 2000/01/10 06:31:15 chuckr Exp $
 #
 
 DISTNAME=       objc-3.1.5
 CATEGORIES=     lang
 MASTER_SITES=   http://metalab.unc.edu/pub/Linux/devel/lang/objc/ \
-		http://www.freebsd.org/~chuckr/
+		http://people.FreeBSD.org/~chuckr/
 DISTFILES=	objc-3.1.5-bootstrap.tar.gz objc-3.1.5.tar.gz
 
 MAINTAINER=     chuckr@freebsd.org

@@ -4,14 +4,14 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/relay/Makefile,v 1.2 1999/08/30 14:23:59 peter Exp $
+# $FreeBSD: ports/net/relay/Makefile,v 1.3 1999/11/02 00:42:07 obrien Exp $
 #
 
 DISTNAME=	relay
 PKGNAME=	relay-1.10
 CATEGORIES=	net security
 MASTER_SITES=	http://www.iagora.com/~espel/  \
-		http://www.freebsd.org/~obrien/Distfiles/
+		http://people.FreeBSD.org/~obrien/Distfiles/
 
 MAINTAINER=     obrien@FreeBSD.org
 

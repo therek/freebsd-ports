@@ -3,12 +3,12 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/x11/props/Makefile,v 1.7 1999/12/22 17:30:58 fenner Exp $
+# $FreeBSD: ports/x11/props/Makefile,v 1.8 2000/02/05 10:55:45 dirk Exp $
 #
 
 DISTNAME=	props-1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://www.freebsd.org/~fenner/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~fenner/distfiles/
 
 MAINTAINER=	ports@FreeBSD.org
 

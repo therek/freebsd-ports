@@ -3,7 +3,7 @@
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.17 1999/12/23 09:15:56 sheldonh Exp $
+# $FreeBSD: ports/mail/nmh/Makefile,v 1.18 1999/12/23 18:22:00 sheldonh Exp $
 #
 # Makefile variables of interest:
 #
@@ -32,7 +32,7 @@
 DISTNAME=	nmh-1.0.2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mhost.com/pub/nmh/ \
-		http://www.freebsd.org/~jkoshy/PORTS/
+		http://people.FreeBSD.org/~jkoshy/PORTS/
 
 MAINTAINER=     Scott.Blachowicz@seaslug.org
 

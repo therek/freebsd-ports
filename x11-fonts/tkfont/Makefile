@@ -3,13 +3,13 @@
 # Date created:		11 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-fonts/tkfont/Makefile,v 1.6 1999/09/09 03:03:17 cpiazza Exp $
+# $FreeBSD: ports/x11-fonts/tkfont/Makefile,v 1.7 1999/11/26 18:32:45 steve Exp $
 #
 
 DISTNAME=	tkfont-1.1
 CATEGORIES=	x11-fonts tk82
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/linux/tsx-11/sources/usr.bin.X11/ \
-		http://www.FreeBSD.org/~billf/
+		http://people.FreeBSD.org/~billf/
 
 MAINTAINER=	brett@peloton.runet.edu
 

@@ -3,7 +3,7 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.28 1999/12/24 18:39:48 mharo Exp $
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.29 2000/01/05 21:34:06 ade Exp $
 #
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf
@@ -14,11 +14,11 @@ MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/ \
 		ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/misc/fvwm95/ \
 		${MASTER_SITE_PORTS_JP} \
-		http://www.freebsd.org/~sada/distfiles/
+		http://people.FreeBSD.org/~sada/distfiles/
 DISTFILES=	${EXTRACT_ONLY} fvwm95-2.0.43a-FreeBSD.apmpatch.tar.gz
 
 PATCH_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/misc/fvwm95/ \
-		http://www.freebsd.org/~sada/distfiles/
+		http://people.FreeBSD.org/~sada/distfiles/
 PATCHFILES=	fvwm95-2.0.43a-Autoconf.I18N.diff.gz
 
 MAINTAINER=	ryo2@on.rim.or.jp

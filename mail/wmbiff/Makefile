@@ -3,13 +3,13 @@
 # Date created:			19 Nov 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.1.1.1 1999/11/20 00:57:07 jim Exp $
+# $FreeBSD: ports/mail/wmbiff/Makefile,v 1.2 2000/02/02 01:56:35 jim Exp $
 #
 
 DISTNAME=	wmbiff-0.2
 CATEGORIES=	mail windowmaker afterstep
 MASTER_SITES=	http://ccat.elect.ru:8100/wmbiff/ \
-		http://www.freebsd.org/~jim/distfiles/
+		http://people.FreeBSD.org/~jim/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 

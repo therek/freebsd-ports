@@ -3,12 +3,12 @@
 # Date created:		19 Dec 1999
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/devel/fortran-utils/Makefile,v 1.1.1.1 1999/12/22 14:55:54 kris Exp $
+# $FreeBSD: ports/devel/fortran-utils/Makefile,v 1.2 2000/01/30 21:14:42 kris Exp $
 #
 
 DISTNAME=	fortran-utils-1.1
 CATEGORIES=	devel
-MASTER_SITES=	http://www.freebsd.org/~kris/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~kris/distfiles/
 
 MAINTAINER=	kris@FreeBSD.org
 

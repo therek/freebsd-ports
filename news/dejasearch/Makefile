@@ -3,14 +3,14 @@
 # Date created:        15 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/news/dejasearch/Makefile,v 1.7 1999/08/31 06:49:28 mharo Exp $
+# $FreeBSD: ports/news/dejasearch/Makefile,v 1.8 2000/01/30 08:00:11 kris Exp $
 #
 
 DISTNAME=	dejasearch-1.7.2
 CATEGORIES=	news
 MASTER_SITES=	http://homemade.hypermart.net/dejasearch/ \
 		http://homemade.virtualave.net/dejasearch/ \
-		http://www.freebsd.org/~kris/distfiles/
+		http://people.FreeBSD.org/~kris/distfiles/
 
 MAINTAINER=	kris@FreeBSD.org
 

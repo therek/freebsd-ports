@@ -3,12 +3,12 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/editors/textedit/Makefile,v 1.9 1999/12/22 10:28:28 sheldonh Exp $
+# $FreeBSD: ports/editors/textedit/Makefile,v 1.10 1999/12/22 17:31:02 fenner Exp $
 #
 
 DISTNAME=	textedit-1.0
 CATEGORIES=	editors
-MASTER_SITES=	http://www.FreeBSD.org/~fenner/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~fenner/distfiles/
 
 MAINTAINER=	alex@big.endian.de
 

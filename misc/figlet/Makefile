@@ -4,7 +4,7 @@
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/figlet/Makefile,v 1.10 1999/08/25 07:21:40 obrien Exp $
 #
 
 DISTNAME=	figlet22
@@ -13,7 +13,7 @@ CATEGORIES=	misc
 MASTER_SITES=	ftp://wuarchive.wustl.edu/graphics/graphics/misc/figlet/program/unix/ \
 		ftp://ftp.funet.fi/pub/unix/tools/figlet/program/unix/ \
 		ftp://ftp.internexus.net/pub/figlet/program/unix/ \
-		http://www.freebsd.org/~obrien/Distfiles/ \
+		http://people.FreeBSD.org/~obrien/Distfiles/ \
 		ftp://ftp.nuxi.com/pub/misc/
 
 MAINTAINER=     obrien@FreeBSD.org

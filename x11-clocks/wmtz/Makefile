@@ -3,13 +3,13 @@
 # Date created:			24 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.6 1999/11/08 19:53:48 jim Exp $
+# $FreeBSD: ports/x11-clocks/wmtz/Makefile,v 1.7 1999/12/29 01:33:33 jim Exp $
 #
 
 DISTNAME=	wmtz-0.5
 CATEGORIES=	x11-clocks windowmaker afterstep
 MASTER_SITES=	http://www.algonet.se/~jlin/wmtz/ \
-		http://www.freebsd.org/~jim/distfiles/
+		http://people.FreeBSD.org/~jim/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 

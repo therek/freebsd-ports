@@ -3,14 +3,14 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.36 1999/09/07 10:45:31 steve Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.37 1999/10/19 12:54:16 shige Exp $
 #
 
 DISTNAME=	xv-3.10a
 CATEGORIES?=	graphics
 MASTER_SITES=	ftp://ftp.cis.upenn.edu/pub/xv/ \
 		ftp://ftp.airlab.cs.ritsumei.ac.jp/pub/X/xv-jp-extension/working/ \
-		http://www.freebsd.org/~shige/ports/xv/ \
+		http://people.FreeBSD.org/~shige/ports/xv/ \
 		http://www.yuasa.kuis.kyoto-u.ac.jp/~shige/FreeBSD/ports/xv/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		xv310a-jp-extension-rev5.3.3.tar.gz \

@@ -3,13 +3,13 @@
 # Date created:		05 August 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/security/checkpassword/Makefile,v 1.6 1999/08/31 06:50:03 mharo Exp $
+# $FreeBSD: ports/security/checkpassword/Makefile,v 1.7 1999/11/21 20:45:26 sada Exp $
 #
 
 DISTNAME=	checkpassword-0.81
 CATEGORIES=	security
 MASTER_SITES=	http://cr.yp.to/software/ \
-		http://WWW.FreeBSD.org/~sada/distfiles/ \
+		http://people.FreeBSD.org/~sada/distfiles/ \
 		${MASTER_SITE_PORTS_JP}
 
 MAINTAINER=	sada@FreeBSD.org

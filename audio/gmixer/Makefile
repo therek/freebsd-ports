@@ -3,12 +3,12 @@
 # Date created:        25 February 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gmixer/Makefile,v 1.5 1999/08/25 04:35:28 obrien Exp $
+# $FreeBSD: ports/audio/gmixer/Makefile,v 1.6 1999/09/07 18:49:57 cpiazza Exp $
 #
 
 DISTNAME=	gmixer-0.98c
 CATEGORIES=	audio
-MASTER_SITES=	http://www.freebsd.org/~cpiazza/distfiles/	
+MASTER_SITES=	http://people.FreeBSD.org/~cpiazza/distfiles/	
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

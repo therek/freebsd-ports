@@ -3,12 +3,12 @@
 # Date created:        23 March 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xprompt/Makefile,v 1.5 1999/08/31 02:51:12 peter Exp $
 #
 
 DISTNAME=	xprompt-1.4
 CATEGORIES=	x11
-MASTER_SITES=   http://www.freebsd.org/~mph/distfiles/
+MASTER_SITES=   http://people.FreeBSD.org/~mph/distfiles/
 
 MAINTAINER=	mph@freebsd.org
 

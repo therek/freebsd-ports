@@ -3,12 +3,12 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.29 1999/08/25 06:03:14 obrien Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.30 1999/08/31 06:44:13 mharo Exp $
 #
 
 DISTNAME=	crossfire-${MAJ}.${MIN}.${PL}
 CATEGORIES=	games
-MASTER_SITES=	http://www.FreeBSD.org/~andreas/download/ \
+MASTER_SITES=	http://people.FreeBSD.org/~andreas/download/ \
 		ftp://ftp.real-time.com/pub/games/crossfire/ \
 		ftp://ftp.ifi.uio.no/pub/crossfire/ \
 		ftp://ftp.pyramid.com/pub/crossfire/ \

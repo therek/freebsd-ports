@@ -3,13 +3,13 @@
 # Date created:				7 May 1998
 # Whom:					Matthew Hunt <mph@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/jzip/Makefile,v 1.6 1999/08/25 06:03:49 obrien Exp $
 #
 
 DISTNAME=		jzip201g
 PKGNAME=		jzip-2.0.1g
 CATEGORIES=		games
-MASTER_SITES=   	http://www.freebsd.org/~mph/distfiles/
+MASTER_SITES=   	http://people.FreeBSD.org/~mph/distfiles/
 
 MAINTAINER=		mph@freebsd.org
 

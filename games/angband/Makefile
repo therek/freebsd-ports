@@ -3,14 +3,14 @@
 # Date created:        21 Feb 1997
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/games/angband/Makefile,v 1.9 1999/12/01 18:54:04 kris Exp $
+# $FreeBSD: ports/games/angband/Makefile,v 1.10 1999/12/02 19:18:59 mph Exp $
 #
 
 DISTNAME=	angband-283
 PKGNAME=	angband-2.8.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Source/ \
-		http://www.freebsd.org/~mph/distfiles/
+		http://people.FreeBSD.org/~mph/distfiles/
 DISTFILES=	angband-283.tar.gz ext-x11-283.tar.gz angband-data.tar.gz
 
 MAINTAINER=	mph@freebsd.org

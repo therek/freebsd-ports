@@ -3,7 +3,7 @@
 # Date Created:			22 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/libicq/Makefile,v 1.7 1999/10/09 18:42:07 vanilla Exp $
+# $FreeBSD: ports/japanese/libicq/Makefile,v 1.8 1999/11/18 23:54:15 flathill Exp $
 #
 
 DISTNAME=	libicq-0.33
@@ -12,7 +12,7 @@ CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/ \
 		http://www.nectar.com/distfiles/
 
-PATCH_SITES=	http://www.freebsd.org/~flathill/distfiles/ \
+PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
 		http://www-nagao.kuee.kyoto-u.ac.jp/member/taku/soft/
 PATCHFILES=	libicq-0.33ja.patch
 PATCH_DIST_STRIP= -p1

@@ -4,14 +4,14 @@
 # Date created:		28 Mar 1998
 # Whom:			bsdx
 #
-# $FreeBSD: ports/net/sniffit/Makefile,v 1.4 1999/08/30 14:24:12 peter Exp $
+# $FreeBSD: ports/net/sniffit/Makefile,v 1.5 1999/08/31 06:49:18 mharo Exp $
 #
 
 DISTNAME=	sniffit.0.3.7.beta
 PKGNAME=	sniffit-0.3.7b
 CATEGORIES=	net security
 MASTER_SITES=	http://reptile.rug.ac.be/~coder/sniffit/files/  \
-		http://www.freebsd.org/~obrien/Distfiles/
+		http://people.FreeBSD.org/~obrien/Distfiles/
 
 MAINTAINER=	obrien@FreeBSD.org
 

@@ -3,7 +3,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.21 1999/08/31 06:45:40 mharo Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.22 1999/11/13 17:49:52 shige Exp $
 #
 
 DISTNAME=	kterm-6.2.0
@@ -11,7 +11,7 @@ PKGNAME=	ja-kterm-6.2.0
 CATEGORIES=	japanese x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		${MASTER_SITE_PORTS_JP} \
-		http://www.freebsd.org/~shige/ports/kterm/
+		http://people.FreeBSD.org/~shige/ports/kterm/
 MASTER_SITE_SUBDIR=	applications kterm
 
 MAINTAINER=	shige@FreeBSD.org

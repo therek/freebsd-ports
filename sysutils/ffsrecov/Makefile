@@ -3,13 +3,13 @@
 # Date created:        4 May 1999
 # Whom:                jmg
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/ffsrecov/Makefile,v 1.2 1999/08/31 01:59:43 peter Exp $
 #
 
 DISTNAME=	ffsrecov
 PKGNAME=	ffsrecov-0.1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.freebsd.org/~jmg/
+MASTER_SITES=	http://people.FreeBSD.org/~jmg/
 
 MAINTAINER=	jmg@freebsd.org
 

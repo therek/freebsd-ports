@@ -4,7 +4,7 @@
 # Date created:        7 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.8 1999/10/26 07:51:22 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.9 1999/11/02 12:31:52 obrien Exp $
 #
 
 DISTNAME=	pathchar-a1-freebsd-3.0
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/  \
 		http://www.fips.de/Computer/woman/  \
 		http://sitka.triumf.ca/net/  \
-		http://www.freebsd.org/~obrien/Distfiles/
+		http://people.FreeBSD.org/~obrien/Distfiles/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
 		pathchar.mantxt
 

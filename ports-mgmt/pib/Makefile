@@ -3,12 +3,12 @@
 # Date created:         30 December 1996
 # Whom:                 Mike Smith <msmith@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/pib/Makefile,v 1.14 1999/08/31 01:59:59 peter Exp $
+# $FreeBSD: ports/sysutils/pib/Makefile,v 1.15 1999/11/25 18:00:30 jseger Exp $
 #
 
 DISTNAME=	pib-1.1
 CATEGORIES=	sysutils tk82
-MASTER_SITES=	http://www.freebsd.org/~msmith/pib/
+MASTER_SITES=	http://people.FreeBSD.org/~msmith/pib/
 
 MAINTAINER=	msmith@freebsd.org
 

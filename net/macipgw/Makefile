@@ -3,13 +3,13 @@
 # Date created:         25 Nov 1997
 # Whom:                 stb
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/macipgw/Makefile,v 1.5 1999/08/30 14:23:13 peter Exp $
 #
 
 DISTNAME=       macipgw-1.0
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.hanse.de/sites/transit/netatalk/ \
-		http://www.freebsd.org/~stb/netatalk/
+		http://people.FreeBSD.org/~stb/netatalk/
 
 MAINTAINER=	stb@freebsd.org
 

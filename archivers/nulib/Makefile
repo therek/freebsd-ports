@@ -3,13 +3,13 @@
 # Date created:         Thu May  8 00:14:31 PDT 1997
 # Whom:                 Steven Wallace <swallace@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/nulib/Makefile,v 1.5 1999/08/25 04:25:12 obrien Exp $
 #
 
 DISTNAME=	nulib325
 PKGNAME=	nulib-3.25
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.freebsd.org/~jseger/
+MASTER_SITES=	http://people.FreeBSD.org/~jseger/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=     jseger@FreeBSD.org

@@ -3,12 +3,12 @@
 # Date created:				15 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xcogitate/Makefile,v 1.7 1999/08/25 06:04:58 obrien Exp $
 #
 
 DISTNAME=	xcogitate-1.02
 CATEGORIES=	games
-MASTER_SITES=	http://www.freebsd.org/~mph/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~mph/distfiles/
 
 MAINTAINER=	andy@icc.surw.chel.su
 

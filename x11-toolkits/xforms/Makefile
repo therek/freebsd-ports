@@ -3,7 +3,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.26 1999/08/31 02:59:44 peter Exp $
 #
 
 USE_X_PREFIX=	yes
@@ -15,7 +15,7 @@ DISTNAME=	bxform-freebsd-alpha
 .else
 DISTNAME=	bxform-freebsd-elf
 .endif
-MASTER_SITES=	http://www.freebsd.org/~steve/distfiles/ \
+MASTER_SITES=	http://people.FreeBSD.org/~steve/distfiles/ \
 		http://bragg.phys.uwm.edu/~zhao/ftp/
 PATCHDIR=	${.CURDIR}/patches.elf
 .else

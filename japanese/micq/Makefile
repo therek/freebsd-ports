@@ -3,17 +3,17 @@
 # Date created:				31 Oct 1998
 # Whom:					flathill
 #
-# $FreeBSD: ports/japanese/micq/Makefile,v 1.5 1999/08/31 06:45:50 mharo Exp $
+# $FreeBSD: ports/japanese/micq/Makefile,v 1.6 1999/12/26 06:47:10 flathill Exp $
 #
 
 DISTNAME=	micq-0.4.3
 PKGNAME=	ja-micq-0.4.3
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://micq.chatzone.org/pub/micq/V0.4.3/ \
-		http://www.freebsd.org/~flathill/distfiles/
+		http://people.FreeBSD.org/~flathill/distfiles/
 EXTRACT_SUFX=	.tgz
 
-PATCH_SITES=	http://www.freebsd.org/~flathill/distfiles/
+PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/
 PATCHFILES=	micq-0.4.3-jp.patch
 PATCH_DIST_STRIP= -p1
 

@@ -3,12 +3,12 @@
 # Date created:		16 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.13 1999/08/31 02:59:24 peter Exp $
+# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.14 1999/08/31 06:52:47 mharo Exp $
 #
 
 DISTNAME=	neXtaw-0.5.1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://www.freebsd.org/~tg/		
+MASTER_SITES=	http://people.FreeBSD.org/~tg/		
 EXTRACT_SUFX=	.tar.gz.bin
 
 MAINTAINER=	tg@FreeBSD.org

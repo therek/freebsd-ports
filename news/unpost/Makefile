@@ -3,12 +3,12 @@
 # Date created:		14 october 1997
 # Whom:			volf@oasis.IAEhv.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/unpost/Makefile,v 1.4 1999/08/30 14:32:02 peter Exp $
 #
 
 DISTNAME=	unpost-2.3.4
 CATEGORIES=	news
-MASTER_SITES=	http://www.freebsd.org/~steve/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~steve/distfiles/
 
 MAINTAINER=	volf@oasis.IAEhv.nl
 

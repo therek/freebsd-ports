@@ -3,13 +3,13 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.12 1999/08/31 02:09:49 peter Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.13 1999/08/31 06:51:30 mharo Exp $
 #
 
 DISTNAME=       tth_C
 PKGNAME=	tth-2.22
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.freebsd.org/~tg/ \
+MASTER_SITES=	http://people.FreeBSD.org/~tg/ \
 		http://hutchinson.belmont.ma.us/tth/tth-noncom/
 EXTRACT_SUFX=	.tgz
 

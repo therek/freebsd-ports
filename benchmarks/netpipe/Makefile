@@ -3,12 +3,12 @@
 # Date created:		20 Feb 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/benchmarks/netpipe/Makefile,v 1.3 1999/08/25 04:45:46 obrien Exp $
+# $FreeBSD: ports/benchmarks/netpipe/Makefile,v 1.4 1999/12/08 11:17:38 jkoshy Exp $
 
 DISTNAME=	netpipe-2.3
 CATEGORIES=	benchmarks net
 MASTER_SITES=	ftp://ftp.scl.ameslab.gov/pub/netpipe/ \
-		http://www.freebsd.org/~jkoshy/PORTS/
+		http://people.FreeBSD.org/~jkoshy/PORTS/
 
 MAINTAINER=	jkoshy@freebsd.org
 

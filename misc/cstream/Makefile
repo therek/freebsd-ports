@@ -3,7 +3,7 @@
 # Date created:         19990304
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/cstream/Makefile,v 1.6 1999/08/25 07:21:23 obrien Exp $
 #
 
 DISTNAME=	cstream-1.4
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www.cons.org/cracauer/download/ \
 		http://www2.cons.org/cracauer/download/ \
 		http://www3.cons.org/cracauer/download/ \
 		http://www.hanse.de/~cracauer/homepage-mirror/download/ \
-		http://www.freebsd.org/~cracauer/homepage-mirror/download/
+		http://people.FreeBSD.org/~cracauer/homepage-mirror/download/
 
 MAINTAINER=	cracauer@cons.org
 

@@ -3,14 +3,14 @@
 # Date created:		4 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/jls/Makefile,v 1.4 1999/08/31 06:45:36 mharo Exp $
+# $FreeBSD: ports/japanese/jls/Makefile,v 1.5 1999/11/13 17:44:23 shige Exp $
 #
 
 DISTNAME=	jls-0.1
 PKGNAME=	ja-ls-0.1
 CATEGORIES=	japanese
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
-		http://www.freebsd.org/~shige/ports/
+		http://people.FreeBSD.org/~shige/ports/
 
 MAINTAINER=	shige@FreeBSD.org
 

@@ -3,12 +3,12 @@
 # Date created:         23 February 1998
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/misc/buffer/Makefile,v 1.10 1999/08/25 07:21:15 obrien Exp $
+# $FreeBSD: ports/misc/buffer/Makefile,v 1.11 1999/11/01 00:17:01 steve Exp $
 #
 
 DISTNAME=	buffer-1.17.1
 CATEGORIES=	misc
-MASTER_SITES=	http://www.freebsd.org/~steve/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~steve/distfiles/
 
 MAINTAINER=	jonny@jonny.eng.br
 

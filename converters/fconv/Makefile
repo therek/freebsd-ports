@@ -3,12 +3,12 @@
 # Date created:		21 April 1999
 # Whom:			Chris Costello <chris@calldei.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/fconv/Makefile,v 1.5 1999/08/25 05:16:18 obrien Exp $
 #
 
 DISTNAME=	fconv-0.1
 CATEGORIES=	converters
-MASTER_SITES=	http://www.FreeBSD.org/~chris/distfiles/
+MASTER_SITES=	http://people.FreeBSD.org/~chris/distfiles/
 
 MAINTAINER=	chris@FreeBSD.org
 

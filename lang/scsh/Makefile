@@ -3,14 +3,14 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.10 1999/08/31 01:53:20 peter Exp $
 #
 
 DISTNAME=	scsh-0.5.1
 CATEGORIES=	shells lang
 MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/ \
 		http://www2.cons.org:8000/freebsd-distfiles/ \
-		http://www.freebsd.org/~cracauer/freebsd-distfiles/
+		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
 
 MAINTAINER= 	cracauer@cons.org
 

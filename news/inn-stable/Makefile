@@ -3,12 +3,12 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.45 1999/09/11 11:25:28 asami Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.46 1999/12/26 14:20:47 andreas Exp $
 
 DISTNAME=	inn-STABLE_2_2-1999-12-26_03-02
 PKGNAME=	inn-stable-v22
 CATEGORIES=	news
-MASTER_SITES=	http://www.FreeBSD.org/~andreas/download/ \
+MASTER_SITES=	http://people.FreeBSD.org/~andreas/download/ \
 		ftp://ftp.isc.org/isc/inn/snapshots/
 
 MAINTAINER=	andreas@FreeBSD.org

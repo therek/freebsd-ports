@@ -3,14 +3,14 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.2 1999/08/25 07:22:50 obrien Exp $
 #
 
 DISTNAME=	uk.phone
 PKGNAME=        uk-phone-1.0
 CATEGORIES=	misc
 MASTER_SITES=   ${MASTER_SITE_LOCAL} \
-		http://www.freebsd.org/~wosch/src/
+		http://people.FreeBSD.org/~wosch/src/
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=     brian@FreeBSD.org

@@ -3,14 +3,14 @@
 # Date created:		10 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/word2x/Makefile,v 1.7 1999/08/31 06:51:31 mharo Exp $
+# $FreeBSD: ports/textproc/word2x/Makefile,v 1.8 2000/01/29 22:46:04 reg Exp $
 
 DISTNAME=	word2x
 PKGNAME=	word2x-0.003
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.gu.net/pub/unix/viewers/ \
 		ftp://ftp.afti.nsu.ru/pub/source/utils/word2x/ \
-		http://www.FreeBSD.org/~billf/
+		http://people.FreeBSD.org/~billf/
 
 MAINTAINER=	billf@FreeBSD.org
 

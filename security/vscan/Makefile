@@ -3,14 +3,14 @@
 # Date created:         Thur Sept 25, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/security/vscan/Makefile,v 1.11 1999/08/31 01:51:59 peter Exp $
+# $FreeBSD: ports/security/vscan/Makefile,v 1.12 1999/12/25 18:54:44 steve Exp $
 #
 
 DISTNAME=	nlxb318e
 PKGNAME=	vscan-3.1.8
 CATEGORIES=	security
 MASTER_SITES=   ftp://ftp.mcafee.com/pub/antivirus/unix/linux/ \
-		http://www.freebsd.org/~steve/distfiles/
+		http://people.FreeBSD.org/~steve/distfiles/
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=     obrien@FreeBSD.org

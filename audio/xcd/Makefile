@@ -3,12 +3,12 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/audio/xcd/Makefile,v 1.23 1999/08/25 04:36:22 obrien Exp $
+# $FreeBSD: ports/audio/xcd/Makefile,v 1.24 1999/11/28 18:17:22 steve Exp $
 #
 
 DISTNAME=	xcd-1.7
 CATEGORIES=	audio tk82
-MASTER_SITES=	http://www.FreeBSD.org/~jmz/
+MASTER_SITES=	http://people.FreeBSD.org/~jmz/
 
 MAINTAINER=	jmz@FreeBSD.org
 

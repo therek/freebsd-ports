@@ -3,12 +3,12 @@
 # Date created:			Wed Aug 13 18:34:14 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/majorcool/Makefile,v 1.10 1999/09/19 11:12:11 andreas Exp $
 #
 
 DISTNAME=	majorcool-1.3.2
 CATEGORIES=	mail
-MASTER_SITES=	http://www.FreeBSD.org/~andreas/download/
+MASTER_SITES=	http://people.FreeBSD.org/~andreas/download/
 
 MAINTAINER=	andreas@FreeBSD.org
 
