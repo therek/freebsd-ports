@@ -2,11 +2,11 @@
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.16 2000/06/16 11:41:30 tg Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.17 2000/06/16 11:48:19 tg Exp $
 #
 
 PORTNAME=	tth
-PORTVERSION= 	2.72
+PORTVERSION= 	2.78
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://hutchinson.belmont.ma.us/tth/tth-noncom/
