@@ -2,13 +2,14 @@
 # Date created:		19 July 1996
 # Whom:			koshy
 #
-# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.12 2000/09/09 09:54:49 kris Exp $
+# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.13 2000/12/20 22:26:22 fenner Exp $
 #
 
 PORTNAME=	netperf
 PORTVERSION=	2.1.3
 CATEGORIES=	benchmarks ipv6
-MASTER_SITES=	ftp://ftp.cup.hp.com/dist/networking/benchmarks/netperf/
+MASTER_SITES=	ftp://ftp.cup.hp.com/dist/networking/benchmarks/netperf/%SUBDIR%/
+MASTER_SITE_SUBDIR=. archive
 DISTNAME=	netperf-2.1pl3
 
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
