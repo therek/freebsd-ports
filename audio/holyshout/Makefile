@@ -2,11 +2,11 @@
 # Date created:				26 Aug 2000
 # Whom:					JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/holyshout/Makefile,v 1.1 2000/08/26 12:54:27 will Exp $
 #
 
 PORTNAME=	holyshout
-PORTVERSION=	0.1
+PORTVERSION=	0.1.1
 CATEGORIES=	audio net
 MASTER_SITES=	ftp://ftp.holywar.net/pub/FreeBSD/
 
