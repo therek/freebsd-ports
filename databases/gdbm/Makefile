@@ -2,7 +2,7 @@
 # Date created:		8 Apr 1996
 # Whom:			Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/databases/gdbm/Makefile,v 1.15 2001/08/30 03:58:32 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdbm
@@ -11,7 +11,7 @@ CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gdbm
 
-MAINTAINER=	clefevre@citeweb.net
+MAINTAINER=	cyrille.lefevre@laposte.net
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

@@ -2,17 +2,17 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/textproc/gsed/Makefile,v 1.6 2001/08/30 03:58:35 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sed
 PORTVERSION=	3.02
+PKGNAMEPREFIX=	g
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-PKGNAMEPREFIX=	g
 
-MAINTAINER=	clefevre@citeweb.net
+MAINTAINER=	cyrille.lefevre@laposte.net
 
 # Global variables
 #

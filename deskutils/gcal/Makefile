@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/deskutils/gcal/Makefile,v 1.2 2001/01/01 10:14:59 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		gcal
@@ -11,7 +11,7 @@ CATEGORIES=		deskutils
 MASTER_SITES=		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gcal
 
-MAINTAINER=	clefevre@citeweb.net
+MAINTAINER=	cyrille.lefevre@laposte.net
 
 # Global variables
 #
