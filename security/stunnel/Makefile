@@ -1,12 +1,12 @@
 # New ports collection makefile for:	stunnel
-# Version required:	3.4a
+# Version required:	3.7
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.13 2000/01/11 01:16:04 foxfair Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.14 2000/02/12 10:37:38 kris Exp $
 #
 
-DISTNAME=	stunnel-3.4a
+DISTNAME=	stunnel-3.7
 CATEGORIES=	security
 MASTER_SITES=	http://opensores.thebunker.net/pub/mirrors/stunnel/ \
 		http://mike.daewoo.com.pl/computer/stunnel/ \
@@ -44,7 +44,7 @@ post-build:
 post-install:
 	@${ECHO} ""
 	@${ECHO} "**************************************************************************"
-	@${ECHO} "Please check out the FAQ at http://mike.daewoo.com.pl/computer/stunnel/FAQ"
+	@${ECHO} "Please check out the FAQ at http://www.onsight.com/faq/stunnel/"
 	@${ECHO} "**************************************************************************"
 	@${ECHO} ""
 
