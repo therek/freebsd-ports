@@ -3,7 +3,7 @@
 # Date created:		16 May 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.10 1999/08/31 06:51:33 mharo Exp $
+# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.11 1999/09/06 14:10:31 kuriyama Exp $
 #
 
 DISTNAME=	xml4j_2_0_15
@@ -13,14 +13,12 @@ MASTER_SITES=	http://www.alphaworks.ibm.com/tech/xml4j/
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/${JFCSUBDIR}/swing.jar:${PORTSDIR}/java/jfc
+RUN_DEPENDS=	${PREFIX}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
 
 RESTRICTED=	"License prohibites distribute."
 NO_BUILD=	YES
-PLIST_SUB=	JAVASUBDIR=${JAVASUBDIR}
 
 JAVASUBDIR=	jdk1.1.8
-JFCSUBDIR=	swing-1.1
 DIR=		${PREFIX}/share/java
 
 do-install:
