@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.414 2001/09/18 16:34:23 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.415 2001/09/21 05:48:17 knu Exp $
 #
 
     SUBDIR += 0verkill
@@ -12,6 +12,7 @@
     SUBDIR += acorn
     SUBDIR += acorn-media
     SUBDIR += actx
+    SUBDIR += adgali
     SUBDIR += adom
     SUBDIR += affenspiel
     SUBDIR += alephone
