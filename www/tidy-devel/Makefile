@@ -1,30 +1,32 @@
 # New ports collection makefile for:	tidy
-# Version required:	0.7.99.1
+# Version required:	0.10.99.1
 # Date created:		27 Oct 1998
 # Whom:			Abel Chow <achow@transoft.net>
 #
-# $FreeBSD: Makefile,v 1.11 1999/07/11 02:28:34 cpiazza Exp $
+# $FreeBSD: ports/www/tidy/Makefile,v 1.12 1999/10/08 22:56:20 dan Exp $
 #
 
-DISTNAME=	tidy27sep99
-PKGNAME=	tidy-0.9.99.1
+DISTNAME=	tidy22oct99
+PKGNAME=	tidy-0.10.99.1
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/People/Raggett/
 EXTRACT_SUFX=	.tgz
+MAN1=	tidy.1
 
 MAINTAINER=	saken@hotel.rmta.org
 
 ALL_TARGET=	tidy
 
-DOCFILES=	Overview.html tidy.gif release-notes.html grid.gif config.txt
+DOCFILES=	Overview.html tidy.gif release-notes.html grid.gif
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/tidy ${PREFIX}/bin/tidy
+	@${INSTALL_PROGRAM} ${WRKSRC}/tidy ${PREFIX}/bin/tidy
+	@${INSTALL_MAN}	${WRKSRC}/man_page.txt	${PREFIX}/man/man1/tidy.1
 .if !defined(NOPORTDOCS)
 	@${ECHO_MSG} "===>   Installing documentation for ${PKGNAME}"
 	@${MKDIR} ${PREFIX}/share/doc/tidy
 .for docfile in ${DOCFILES}
-	@${INSTALL_DATA} ${WRKSRC}/${docfile} ${PREFIX}/share/doc/tidy
+	@${INSTALL_MAN} ${WRKSRC}/${docfile} ${PREFIX}/share/doc/tidy
 .endfor
 .endif
 
