@@ -3,7 +3,7 @@
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD: ports/devel/cscope/Makefile,v 1.9 2000/06/18 18:47:46 obrien Exp $
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.10 2000/11/23 10:50:09 obrien Exp $
 #
 
 PORTNAME=	cscope
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 #MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/cscope/  \
 MASTER_SITES=	http://download.sourceforge.net/cscope/
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 GNU_CONFIGURE=	yes
