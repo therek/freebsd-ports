@@ -2,7 +2,7 @@
 # Date created:         23 November 1994
 # Whom:                 mr
 #
-# $FreeBSD: ports/lang/forth/Makefile,v 1.15 2000/04/12 06:18:28 obrien Exp $
+# $FreeBSD: ports/lang/forth/Makefile,v 1.16 2000/07/07 19:38:25 steve Exp $
 #
 
 PORTNAME=	pfe
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	patrick@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
