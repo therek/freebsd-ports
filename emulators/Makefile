@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.52 2000/07/16 15:32:26 alex Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.53 2000/07/17 00:28:22 steve Exp $
 #
 
     SUBDIR += aftp
@@ -43,6 +43,7 @@
     SUBDIR += vmware
     SUBDIR += vmware2
     SUBDIR += vpce
+    SUBDIR += vxtools
     SUBDIR += wine
     SUBDIR += x48
     SUBDIR += xgs
