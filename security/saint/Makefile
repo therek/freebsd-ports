@@ -2,23 +2,23 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.17 2000/12/14 22:26:40 dannyboy Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.18 2000/12/27 16:08:17 kevlo Exp $
 #
 
 PORTNAME=	saint
-PORTVERSION=	3.1.2
+PORTVERSION=	3.1.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.wwdsi.com/pub/saint/			\
 		http://www.wwdsi.com/saint/downloads/
 
-MAINTAINER=	cj@vallcom.net
+MAINTAINER=	calle.madestrand@norrgarden.se
 
 BUILD_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_PERL5=	yes
 MANCOMPRESSED=	no
 MAN1=		saint.1
-WRKSRC=		${WRKDIR}/saint-3.1.2
+WRKSRC=		${WRKDIR}/saint-3.1.4
 GNU_CONFIGURE=	yes
 MAKE_ENV=	"LIBS=-lrpcsvc" "XFLAGS=-g -O2   -DSTDC_HEADERS=1 -DGETGROUPS_T=gid_t -DSYS_ERRLIST_DECLARED=1 " "RPCGEN=/usr/bin/rpcgen"
 INSTALL_TARGET=	all
@@ -31,5 +31,8 @@ pre-install:
 do-install:
 		${INSTALL_MAN} ${WRKSRC}/saint.1 ${PREFIX}/man/man1
 .endif
+
+post-install:
+		${RM} -rf ${PREFIX}/saint/include/ASM-i386
 
 .include <bsd.port.mk>
