@@ -2,16 +2,19 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.17 2000/12/08 21:12:35 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.18 2000/12/15 17:56:51 ade Exp $
 #
 
 PORTNAME=	evolution
-PORTVERSION=	0.6
+PORTVERSION=	0.8
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
 MAINTAINER=	ade@FreeBSD.org
+
+# Note: gnomepilot support has been forcibly taken out for now, so
+# we can save ourselves a little bit of build time
 
 LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		glade.4:${PORTSDIR}/devel/libglade \
@@ -22,17 +25,15 @@ LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs \
 		unicode.0:${PORTSDIR}/devel/libunicode \
 		gtkhtml.6:${PORTSDIR}/www/gtkhtml \
-		ldap.1:${PORTSDIR}/net/openldap \
-		gpilotd.0:${PORTSDIR}/palm/gnomepilot
-
-BROKEN=		"Not compatible with current version of x11-toolkits/gal"
+		ldap.1:${PORTSDIR}/net/openldap # \
+#		gpilotd.0:${PORTSDIR}/palm/gnomepilot
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure libical/configure
-CONFIGURE_ARGS=	--with-pisock=${LOCALBASE}/pilot
+CONFIGURE_ARGS=	# --with-pisock=${LOCALBASE}/pilot --enable-pilot-conduits=yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
