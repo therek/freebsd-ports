@@ -3,11 +3,12 @@
 # Whom:					trevor
 #
 # $NetBSD: Makefile,v 1.4 2001/03/07 23:03:19 kim Exp $
-# $FreeBSD: ports/security/digest/Makefile,v 1.2 2001/08/12 09:22:41 trevor Exp $
+# $FreeBSD: ports/security/digest/Makefile,v 1.3 2001/08/13 15:40:06 knu Exp $
 #
 
 PORTNAME=	digest
 PORTVERSION=	20010807
+PORTREVISION=	1
 CATEGORIES=	security sysutils
 MASTER_SITES=	#
 DISTFILES=
