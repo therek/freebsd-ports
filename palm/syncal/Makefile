@@ -2,7 +2,7 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/palm/syncal/Makefile,v 1.9 2000/12/22 19:53:30 lkoeller Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	syncal
@@ -13,7 +13,7 @@ MASTER_SITES=	http://hopf.math.nwu.edu/syncal/ \
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
-LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link
+LIB_DEPENDS=	pisock.4:${PORTSDIR}/palm/pilot-link
 RUN_DEPENDS=	ical:${PORTSDIR}/deskutils/ical
 
 NO_PACKAGE=	patches installed ical port
