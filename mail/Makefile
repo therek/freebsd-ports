@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.199 2001/02/27 06:05:31 steve Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.200 2001/03/07 10:51:59 roam Exp $
 #
 
     SUBDIR += abook
@@ -169,6 +169,7 @@
     SUBDIR += xlbiff
     SUBDIR += xmail
     SUBDIR += xmailbox
+    SUBDIR += xmailwatcher
     SUBDIR += xpbiff
     SUBDIR += xpbiff-youbin
     SUBDIR += youbin
