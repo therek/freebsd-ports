@@ -2,11 +2,11 @@
 # Date created:				22 June 2001
 # Whom:					petef@databits.net
 #
-# $FreeBSD: ports/games/eboard/Makefile,v 1.1 2001/06/23 06:07:42 markp Exp $
+# $FreeBSD: ports/games/eboard/Makefile,v 1.2 2001/07/01 15:31:47 kevlo Exp $
 #
 
 PORTNAME=	eboard
-PORTVERSION=	0.3.0
+PORTVERSION=	0.3.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -30,11 +30,11 @@ post-patch:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/eboard
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
 .for file in Crafty.txt FICS-Timeseal.txt GNUChess4.txt GNUChess5.txt \
 	Scripts.txt Sjeng.txt Themes.txt
-	${INSTALL_DATA} ${WRKSRC}/Documentation/${file} \
-		${PREFIX}/share/doc/eboard
+	${INSTALL_DATA} ${WRKSRC}/Documentation/${file} ${DOCSDIR}
 .endfor
 .endif
 
