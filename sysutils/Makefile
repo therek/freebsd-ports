@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.128 2000/08/02 08:30:05 nbm Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.129 2000/08/09 23:30:51 jim Exp $
 #
 
     SUBDIR += LPRng
@@ -75,6 +75,7 @@
     SUBDIR += rdate
     SUBDIR += rtty
     SUBDIR += roottail
+    SUBDIR += ruby-syslog
     SUBDIR += sarah
     SUBDIR += sdd
     SUBDIR += setcdboot
