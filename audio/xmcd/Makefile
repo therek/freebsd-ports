@@ -3,7 +3,7 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.22 1999/08/25 04:36:24 obrien Exp $
 #
 
 DISTNAME=	xmcd-2.5
@@ -14,6 +14,7 @@ MAINTAINER=	eischen@vigrid.com
 
 REQUIRES_MOTIF=	yes
 USE_IMAKE=	yes
+PLIST_SUB+=	ARCH=${ARCH}
 
 MAN1=		cda.1 cddbcmd.1 dp2xmcd.1 wm2xmcd.1 xmcd.1
 MANCOMPRESSED=	no
