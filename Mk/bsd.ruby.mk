@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.35 2001/05/05 22:03:06 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.36 2001/05/05 23:02:32 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -101,6 +101,7 @@ RUBY_SUFFIX?=		${_RUBY_SUFFIX}
 RUBY_WRKSRC?=		${WRKDIR}/ruby
 RUBY_DISTVERSION?=	${RUBY_VERSION}-alpha-2001.05.03
 RUBY_PATCHLEVEL?=	1
+RUBY_PORT?=		lang/ruby-devel
 .else
 RUBY_VERSION?=		1.6.4
 RUBY_SUFFIX?=		# empty
