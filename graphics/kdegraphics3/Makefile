@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.30 1999/09/18 09:02:05 se Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.31 2000/02/15 13:44:53 imura Exp $
 #
 
 DISTNAME=	kdegraphics-1.1.2
@@ -13,7 +13,6 @@ MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	se@freebsd.org
 
-BUILD_DEPENDS=	${PREFIX}/include/gif_lib.h:${PORTSDIR}/graphics/giflib
 LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.2:${PORTSDIR}/x11/kdelibs11
