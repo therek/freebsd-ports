@@ -2,11 +2,12 @@
 # Date created:         May 11, 2000
 # Whom:                 Nick Sayer <nsayer@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.17 2001/03/23 14:00:58 kevlo Exp $
+# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.18 2001/06/12 05:40:12 knu Exp $
 #
 
 PORTNAME=	unixODBC
 PORTVERSION=	2.0.7
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	http://www.unixodbc.org/
 
@@ -33,9 +34,19 @@ CONFIGURE_ARGS+=	--disable-gui
 PLIST_SUB=	GUI:="@comment "
 .endif
 
+.if defined(WITH_PTHREAD)
+CONFIGURE_ARGS+=	--enable-threads=yes
+.else
+CONFIGURE_ARGS+=	--enable-threads=no
+.endif
+
 pre-patch:
+.if defined(WITH_PTHREAD)
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
-			 s|-lqt|-lqt2|g' ${WRKSRC}/configure
+			 s|-lqt|-lqt2-mt|g' ${WRKSRC}/configure
+.else
+	@${PERL} -pi -e 's|-lqt|-lqt2|g' ${WRKSRC}/configure
+.endif
 	@${PERL} -pi -e 's| -lc||g' ${WRKSRC}/ltmain.sh
 
 post-install:
