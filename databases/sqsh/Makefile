@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/sqsh/Makefile,v 1.2 2000/02/13 16:58:17 steve Exp $
+# $FreeBSD: ports/databases/sqsh/Makefile,v 1.3 2000/04/08 22:48:59 mharo Exp $
 
 PORTNAME=	sqsh
 PORTVERSION=	1.7
@@ -21,5 +21,10 @@ FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	yes
 
 MAN1=	sqsh.1
+
+post-patch:
+.for file in configure autoconf/install-man
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/${file}
+.endfor
 
 .include <bsd.port.mk>
