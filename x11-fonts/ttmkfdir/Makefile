@@ -1,14 +1,15 @@
 # New ports collection makefile for:	ttmkfdir
-# Version required:	0.0
 # Date created:		September 08, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.6 1999/11/25 03:41:54 jseger Exp $
+# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.7 2000/01/14 18:55:30 imura Exp $
+#
 
-DISTNAME=	ttmkfdir
-PKGNAME=	ttmkfdir-0.0
+PORTNAME=	ttmkfdir
+PORTVERSION= 	0.0
 CATEGORIES=	x11
 MASTER_SITES=	http://www.darmstadt.gmd.de/~pommnitz/TrueType/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

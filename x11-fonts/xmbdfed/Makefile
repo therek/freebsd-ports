@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xmbdfed
-# Version required:	4.3.3
 # Date created:		June 20, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.15 2000/01/14 19:11:18 imura Exp $
+# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.16 2000/02/28 20:00:44 ache Exp $
 #
 
-DISTNAME=	xmbdfed-4.3
-PKGNAME=	xmbdfed-4.3.3
+PORTNAME=	xmbdfed
+PORTVERSION= 	4.3.3
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://crl.nmsu.edu/CLR/multiling/General/
+DISTNAME=	${PORTNAME}-4.3
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	${DISTNAME}.patch1 ${DISTNAME}.patch2 ${DISTNAME}.patch3

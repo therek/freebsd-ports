@@ -1,12 +1,12 @@
 # New ports collection makefile for:    sharefonts
-# Version required:     0.10
 # Date created:         Thu Mar 26 04:50:00 PST 1998
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fonts/sharefonts/Makefile,v 1.6 1999/08/31 02:58:32 peter Exp $
+# $FreeBSD: ports/x11-fonts/sharefonts/Makefile,v 1.7 1999/08/31 06:52:36 mharo Exp $
 #
 
-DISTNAME=	sharefonts-0.10
+PORTNAME=	sharefonts
+PORTVERSION=	0.10
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/fonts/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	intlfonts
-# Version required:	1.2
 # Date created:		99/10/26
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.1.1.1 2000/01/08 03:03:15 taoka Exp $
+# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.2 2000/01/15 17:45:00 taoka Exp $
 #
 
-DISTNAME=	intlfonts-1.2
+PORTNAME=	intlfonts
+PORTVERSION= 	1.2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	intlfonts

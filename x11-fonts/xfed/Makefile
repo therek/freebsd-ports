@@ -1,15 +1,15 @@
 # New ports collection makefile for:    xfed
-# Version required:     something old
 # Date created:         7 December 1994
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11-fonts/xfed/Makefile,v 1.22 1999/08/31 02:58:35 peter Exp $
+# $FreeBSD: ports/x11-fonts/xfed/Makefile,v 1.23 1999/08/31 06:52:38 mharo Exp $
 #
 
-DISTNAME=	xfed
-PKGNAME=	xfed-1.0
+PORTNAME=	xfed
+PORTVERSION= 	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

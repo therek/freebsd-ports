@@ -1,15 +1,15 @@
 # New ports collection makefile for:    getbdf
-# Version required:	?
 # Date created:         30 August 1996
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/getbdf/Makefile,v 1.7 1999/08/31 02:58:30 peter Exp $
 #
 
-DISTNAME=       getbdf
-PKGNAME=        getbdf-1.0
+PORTNAME=	getbdf
+PORTVERSION= 	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=   ftp://ftp.ipa.fhg.de/pub/X/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=     ache@FreeBSD.org

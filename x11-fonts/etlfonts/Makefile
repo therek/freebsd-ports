@@ -1,15 +1,15 @@
 # New ports collection makefile for:	etlfonts-noncjk
-# Version required:	1.0
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.8 1999/09/04 23:39:22 mharo Exp $
+# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.9 1999/09/09 11:00:04 asami Exp $
 #
 
-DISTNAME=	non-cjk
-PKGNAME=	etlfonts-noncjk-1.0
+PORTNAME=	etlfonts-noncjk
+PORTVERSION= 	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/fonts/
+DISTNAME=	non-cjk
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	mita@jp.FreeBSD.org
