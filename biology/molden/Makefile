@@ -2,7 +2,7 @@
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD: ports/biology/molden/Makefile,v 1.6 2000/02/06 19:20:09 cpiazza Exp $
+# $FreeBSD: ports/biology/molden/Makefile,v 1.7 2000/04/08 22:04:41 mharo Exp $
 #
 
 PORTNAME=	molden
@@ -11,11 +11,13 @@ CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/
 MASTER_SITES+=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/bin/
 DISTFILES=	${PORTNAME}${PORTVERSION}.tar.Z ${PORTNAME}${PORTVERSION}-freebsd
+EXTRACT_ONLY=	molden3.4.tar.Z
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
 
-EXTRACT_ONLY=	molden3.4.tar.Z
 RESTRICTED=     "free for academic, non profit usage; do not re-distribute source and executable"
+
+WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
 .if ${MACHINE_ARCH} == "alpha"
 DONOTUSE_ORIGINALBINARY=	yes
@@ -40,7 +42,7 @@ do-build:
 .if defined(DONOTUSE_ORIGINALBINARY)
 	(cd ${WRKSRC};${MAKE})
 .else
-	${CP} ${DISTDIR}/${DISTNAME}-freebsd ${WRKSRC}/molden
+	${CP} ${DISTDIR}/${PORTNAME}${PORTVERSION}-freebsd ${WRKSRC}/molden
 .endif
 
 pre-install:
