@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.37 1999/09/05 16:32:09 jseger Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.38 1999/09/17 15:04:39 jseger Exp $
 #
 
     SUBDIR += FWF
@@ -26,6 +26,7 @@
     SUBDIR += plib
     SUBDIR += pmw
     SUBDIR += py-gnome
+    SUBDIR += py-gtk
     SUBDIR += qt-i18n
     SUBDIR += qt142
     SUBDIR += qt201
