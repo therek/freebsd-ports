@@ -2,14 +2,14 @@
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tclX82/Makefile,v 1.39 2001/06/05 11:38:33 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclX
 PORTVERSION=	8.2.0
 PORTREVISION=	2
 CATEGORIES=	lang tcl${TCL_DVER} tk${TCL_DVER}
-MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/tclx-distrib/
+MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/TclX/
 DISTNAME=	tclX8.2.0
 
 MAINTAINER=	mi@aldan.algebra.com
