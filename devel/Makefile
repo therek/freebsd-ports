@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.520 2001/04/23 16:02:03 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.521 2001/04/23 19:13:03 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -272,6 +272,7 @@
     SUBDIR += p5-Date-Calc
     SUBDIR += p5-Date-Manip
     SUBDIR += p5-DateConvert
+    SUBDIR += p5-Devel-Modlist
     SUBDIR += p5-Devel-DProf
     SUBDIR += p5-Devel-Peek
     SUBDIR += p5-Devel-Symdump
