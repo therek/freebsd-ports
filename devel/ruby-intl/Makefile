@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.2 2000/08/12 20:09:29 knu Exp $
+# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.3 2000/08/16 12:21:11 knu Exp $
 #
 
 PORTNAME=	intl
@@ -20,6 +20,7 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 
 INSTALL_TARGET=	site-install
+CONFIGURE_ARGS=	--with-opt-dir="${LOCALBASE}"
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
@@ -30,7 +31,7 @@ RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 
 do-configure:
 	@cd ${WRKSRC}; \
-	${SETENV} ${CONFIGURE_ENV} ${RUBY} extconf.rb
+	${SETENV} ${CONFIGURE_ENV} ${RUBY} extconf.rb ${CONFIGURE_ARGS}
 
 post-install:
 .if !defined(NOPORTDOCS)
