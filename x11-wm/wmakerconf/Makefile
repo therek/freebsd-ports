@@ -2,11 +2,11 @@
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.15 2000/04/06 10:06:54 mharo Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.16 2000/04/10 19:50:36 cpiazza Exp $
 #
 
 PORTNAME=	wmakerconf
-PORTVERSION= 	2.6.1
+PORTVERSION= 	2.6.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://ulli.linuxave.net/wmakerconf/
 
@@ -34,5 +34,12 @@ USE_BZIP2=	yes
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+
+.if exists(${X11BASE}/bin/gnome-config)
+RUN_DEPENDS+=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+PLIST_SUB+=	GNOME:=""
+.else
+PLIST_SUB+=	GNOME:="@comment "
+.endif
 
 .include <bsd.port.mk>
