@@ -2,7 +2,7 @@
 # Date created:        13 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/devel/ecgi/Makefile,v 1.1 2001/03/12 22:08:31 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       ecgi
@@ -17,6 +17,9 @@ USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 
 HEADER_FILES=	ecgi.h ecgitk.h include/memfile.h
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' ${WRKSRC}/src/memfile.c
 
 do-install:
 	@${INSTALL_DATA} ${WRKSRC}/libecgi.a ${PREFIX}/lib
