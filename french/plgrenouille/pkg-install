@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/french/plgrenouille/pkg-install,v 1.1 2002/11/13 17:30:05 naddy Exp $
 #
 # Configure plgrenouille.
 #
@@ -35,3 +35,5 @@ POST-DEINSTALL)
 	fi
 	;;
 esac
+
+exit 0
