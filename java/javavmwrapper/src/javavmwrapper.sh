@@ -15,7 +15,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.2 2000/06/12 12:43:43 sobomax Exp $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.3 2000/06/12 13:37:28 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 
@@ -97,6 +97,8 @@ case "${IAM}" in
 esac
 
 # Main ()
+
+unset JAVA_HOME
 
 # First check if JAVAVM environment variable is set
 if [ x"${JAVAVM}" != x"" ]; then
