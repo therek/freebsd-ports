@@ -2,21 +2,25 @@
 # Date created:				18 June 2000
 # Whom:					bauerm
 #
-# $FreeBSD: ports/math/ntl/Makefile,v 1.2 2000/09/05 01:52:15 steve Exp $
+# $FreeBSD: ports/math/ntl/Makefile,v 1.3 2001/02/26 04:44:20 steve Exp $
 #
 
 PORTNAME=	ntl
-PORTVERSION=	5.0c
+PORTVERSION=	5.2
 CATEGORIES=	math
 MASTER_SITES=	http://www.shoup.net/ntl/
 
 MAINTAINER=	matthiasb@acm.org
 
+BUILD_DEPENDS=  libgmp3:${PORTSDIR}/math/libgmp3
+RUN_DEPENDS=    libgmp3:${PORTSDIR}/math/libgmp3
+
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 MAKEFILE=	makefile
 HAS_CONFIGURE=	yes
-MAKE_ARGS=	"DOCDIR=${LOCALBASE}/share/doc"
+CONFIGURE_ARGS= "GMP_INCDIR=${LOCALBASE}/include" "GMP_LIBDIR=${LOCALBASE}/lib" "GMP_PREFIX=${LOCALBASE}" "NTL_GMP_LIP=on"
+MAKE_ARGS=	"DOCDIR=${LOCALBASE}/share/doc GMP_PREFIX=${LOCALBASE}"
 
 do-install:
 	${MKDIR} ${PREFIX}/include/NTL
