@@ -2,7 +2,7 @@
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/efancylauncher/Makefile,v 1.3 2001/01/16 17:33:10 sobomax Exp $
+# $FreeBSD: ports/x11/efancylauncher/Makefile,v 1.4 2001/08/22 23:04:00 jhb Exp $
 #
 
 PORTNAME=	E-FancyLauncher
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jhb@FreeBSD.org
 
-LIB_DEPENDS=	epplet.1:${PORTSDIR}/x11-wm/libepplet
+LIB_DEPENDS=	epplet.1:${PORTSDIR}/x11-wm/epplet	# XXX
 
 WRKSRC=		${WRKDIR}/E-FancyLauncher
 
