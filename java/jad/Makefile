@@ -2,17 +2,21 @@
 # Date created:				27 September 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/java/jad/Makefile,v 1.2 2001/01/09 17:00:58 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jad
-PORTVERSION=	1.5.7f
+PORTVERSION=	1.5.8c
 CATEGORIES=	java
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Bridge/8617/jad/freebsd/ \
-		ftp://freebsd.ntu.edu.tw/FreeBSD/taiwan/NTU/leeym/distfiles/
-DISTNAME=	jadfb157
+		http://members.nbci.com/kpdus/jad/freebsd/ \
+		http://www.znerd.demon.nl/ \
+		http://www.pensioenconsult.com/ \
+		http://www.schraven.nl/ \
+		http://www.jollem.com/~ernst/
+DISTNAME=	jadfb158
 
-MAINTAINER=	leeym@cae.ce.ntu.edu.tw
+MAINTAINER=	ernst@jollem.com
 
 USE_ZIP=	yes
 NO_WRKSUBDIR=	yes
