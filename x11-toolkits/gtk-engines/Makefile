@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtk-engines
-# Version required:			0.5
+# Version required:			0.6
 # Date Created:				23 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.13 1999/08/31 02:59:13 peter Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.14 1999/08/31 06:52:41 mharo Exp $
 #
 
-DISTNAME=	gtk-engines-0.5
+DISTNAME=	gtk-engines-0.6
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gtk-engines
