@@ -3,17 +3,17 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/py-qt/Makefile,v 1.1 2000/04/23 05:07:09 will Exp $
 
 PORTNAME=	py-qt
-PORTVERSION=	0.11.1
+PORTVERSION=	0.12
 CATEGORIES=	x11-toolkits python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 DISTNAME=	PyQt-${PORTVERSION}
 
 MAINTAINER=	adsharma@sharmas.dhs.org
 
-LIB_DEPENDS=	sip.2:${PORTSDIR}/devel/sip
+LIB_DEPENDS=	sip.3:${PORTSDIR}/devel/sip
 
 USE_QT=		yes
 USE_LIBTOOL=	yes
