@@ -2,7 +2,7 @@
 # Date created:		15 May 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/print/pdq/Makefile,v 1.6 2000/07/11 08:43:48 sobomax Exp $
+# $FreeBSD: ports/print/pdq/Makefile,v 1.7 2000/10/05 06:42:22 reg Exp $
 #
 
 PORTNAME=	pdq
@@ -26,6 +26,6 @@ post-install:
 	strip ${PREFIX}/bin/lpd_cancel
 	strip ${PREFIX}/bin/lpd_print
 	strip ${PREFIX}/bin/lpd_status
-	@${SED} 's|%%PREFIX%%|${PREFIX}|g' pkg/MESSAGE
+	@${SED} 's|%%PREFIX%%|${PREFIX}|g' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
