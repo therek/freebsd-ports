@@ -2,12 +2,12 @@
 # Date created:				18 Apr 2001
 # Whom:					Soeren Boll Overgaard <boll@tolkien.dk>
 #
-# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.1 2001/04/19 08:40:47 sobomax Exp $
+# $FreeBSD: ports/sysutils/wmcpuload/Makefile,v 1.2 2001/04/28 07:09:11 sobomax Exp $
 #
 
 PORTNAME=	wmcpuload
 PORTVERSION=	0.1.1
-CATEGORIES=	sysutils
+CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/ \
 		http://ports.tolkien.dk/
 DISTNAME=	WMCPULoad-${PORTVERSION}
@@ -24,5 +24,14 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
 NO_INSTALL_MANPAGES=	yes
+
+.ifndef(NOPORTDOCS)
+post-install:
+	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 555 \
+		${PREFIX}/share/doc/${PORTNAME}
+.for file in README TODO
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/${PORTNAME}
+.endfor
+.endif # !NOPORTDOCS
 
 .include <bsd.port.mk>
