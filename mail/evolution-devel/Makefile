@@ -2,22 +2,23 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.26 2001/05/04 21:41:15 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	evolution
-PORTVERSION=	0.9
-PORTREVISION=	1
+PORTVERSION=	0.10
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml \
-		ldap.1:${PORTSDIR}/net/openldap
+LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
+#		ldap.1:${PORTSDIR}/net/openldap <- avoid extra dependency until
+#						   it doesn't work
 
 USE_GMAKE=	yes
+USE_BISON=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
