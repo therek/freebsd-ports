@@ -2,7 +2,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.20 2000/04/11 21:28:52 mharo Exp $
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.21 2000/05/14 05:40:48 billf Exp $
 #
 
 PORTNAME=		linux_devtools
@@ -91,17 +91,10 @@ NEEDLOADLINK=		true
 do-patch:
 	@${DO_NADA}
 
+pre-install:
+	@${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
+
 do-install:
-	@if [ -z "`kldstat -v | ${GREP} -E 'linux(aout|elf)'`" ]; then \
-		${ECHO} 'Linux mode is not enabled.\
-			Loading linux kernel module...' | fmt; \
-		linux || { \
-		${ECHO} 'The linux kernel module could not be loaded.\
-			Please manually load the module and retry.\
-			See "man linux" for details.' | fmt; \
-		${FALSE}; \
-		};\
-	fi
 #
 # Setup a chroot'able environment
 #
