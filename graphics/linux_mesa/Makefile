@@ -2,7 +2,7 @@
 # Date created:         Oct, 8 1998
 # Whom:                 cracauer
 #
-# $FreeBSD: ports/graphics/linux_mesa/Makefile,v 1.9 2000/04/14 10:46:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mesa
@@ -19,6 +19,8 @@ BUILD_DEPENDS=	/compat/linux/usr/lib/libglide2x.so:${PORTSDIR}/graphics/linux_gl
 
 BROKEN=		linux crosscompilation needs to be fixed first
 ONLY_FOR_ARCHS=	i386
+
+NO_LATEST_LINK=	yes
 
 ALL_TARGET=	linux-glide
 MAKE_ENV=	PATH=${PREFIX}/usr/bin:$$PATH
