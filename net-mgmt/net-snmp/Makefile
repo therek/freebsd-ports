@@ -3,7 +3,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.38 2000/03/20 22:57:22 mharo Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.39 2000/04/06 17:07:33 gpalmer Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -16,7 +16,7 @@ PATCH_SITES=	http://ucd-snmp.ucdavis.edu/patches/
 PATCHFILES=	012.patch
 PATCH_DIST_STRIP=	-p0 -d ${WRKSRC}/agent
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	billf@FreeBSD.org
 
 CONFIGURE_ARGS=	--enable-shared
 
