@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.12 2004/10/21 07:08:46 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.13 2004/12/12 11:48:55 clement Exp $
 #
 
 ## Available knobs:
@@ -87,6 +87,9 @@
 ##           WITH_CUSTOM_AUTH="auth auth_dbm"
 ##      make WITHOUT_MODULES="access speling status" WITH_PROXY_MODULES=yes
 ##      make WITH_MODULES="include rewrite auth"
+##
+##      Note: If you define your custom options in /etc/make.conf, don't forget
+##            to do not use quotes.
 ##
 
 DOCSDIR=	${PREFIX}/share/doc/apache2
