@@ -1,6 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/math/unixstat/pkg-plist,v 1.2 2004/10/12 08:14:08 sergei Exp $
 bin/abut
 bin/anova
+bin/calc
 bin/colex
 bin/contab
 bin/desc
