@@ -2,11 +2,11 @@
 # Date created:				19 Jul 2000
 # Whom:					TAKAHASHI Kaoru
 #
-# $FreeBSD: ports/security/pgpdump/Makefile,v 1.6 2001/04/05 23:11:07 mharo Exp $
+# $FreeBSD: ports/security/pgpdump/Makefile,v 1.7 2001/04/17 16:16:29 kris Exp $
 #
 
 PORTNAME=	pgpdump
-PORTVERSION=	0.08
+PORTVERSION=	0.09
 CATEGORIES=	security
 MASTER_SITES=	ftp://pgp.iijlab.net/pub/pgp/tools/
 
