@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/audio/wmmixer/Makefile,v 1.11 2000/08/03 09:22:30 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmmixer
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}-1.0-beta1
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rneswold@enteract.com
+COMMENT=	An audio mixer for the WindowMaker dock
 
 WRKSRC=			${WRKDIR}/wmmixer
 USE_IMAKE=		yes

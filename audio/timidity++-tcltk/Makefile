@@ -2,10 +2,13 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-tcltk/Makefile,v 1.2 2000/04/06 07:16:52 mharo Exp $
+# $FreeBSD$
 #
 
 INTERFACE=	tcltk
+
+MAINTAINER=	yatt@luna2.org
+COMMENT=	Tcl/Tk interface for TiMidity++
 
 MASTERDIR=	${.CURDIR}/../../audio/timidity++-emacs
 

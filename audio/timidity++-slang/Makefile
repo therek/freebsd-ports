@@ -2,10 +2,13 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-slang/Makefile,v 1.2 2000/04/06 07:13:38 mharo Exp $
+# $FreeBSD$
 #
 
 INTERFACE=	slang
+
+MAINTAINER=	yatt@luna2.org
+COMMENT=	Slang interface for TiMidity++
 
 MASTERDIR=	${.CURDIR}/../../audio/timidity++-emacs
 

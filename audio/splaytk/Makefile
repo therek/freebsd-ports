@@ -2,7 +2,7 @@
 # Date created:         19 Apr 1998
 # Whom:                 brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/audio/splaytk/Makefile,v 1.5 1999/11/28 18:31:54 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		splaytk
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/players
 
 MAINTAINER=		brett@peloton.runet.edu
+COMMENT=	A tk based interface for splay
 
 RUN_DEPENDS=	splay:${PORTSDIR}/audio/splay \
 		wish8.2:${PORTSDIR}/x11-toolkits/tk82

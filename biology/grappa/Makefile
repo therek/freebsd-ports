@@ -2,7 +2,7 @@
 # Date created:		30 June 2001
 # Whom:                 dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/grappa/Makefile,v 1.1 2001/07/04 08:39:35 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grappa
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.cs.unm.edu/~moret/
 DISTNAME=	GRAPPA-1.03
 
 MAINTAINER=	dbader@eece.unm.edu
+COMMENT=	Genome Rearrangements Analysis and Phylogeny Software
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libconcorde.a:${PORTSDIR}/math/concorde
 

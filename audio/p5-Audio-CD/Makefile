@@ -2,7 +2,7 @@
 # Date created:				22 Oct 2000
 # Whom:	      				Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/p5-Audio-CD/Makefile,v 1.2 2001/03/01 06:37:00 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Audio-CD
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	Audio
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	roman@xpert.com
+COMMENT=	Perl interface to libcdaudio (cd + cddb)
 
 LIB_DEPENDS=	cdaudio.1:${PORTSDIR}/audio/libcdaudio
 

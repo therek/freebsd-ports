@@ -2,10 +2,13 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/timidity++-tcltk/Makefile,v 1.3 2000/04/12 14:38:05 knu Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
+
+MAINTAINER=	yatt@luna2.org
+COMMENT=	Tcl/Tk interface for TiMidity++ with Japanese support
 
 INTERFACE=	tcltk
 JAPANESE=	yes

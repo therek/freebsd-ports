@@ -2,10 +2,13 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/timidity++-slang/Makefile,v 1.3 2000/04/12 14:38:04 knu Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
+
+MAINTAINER=	yatt@luna2.org
+COMMENT=	Slang interface for TiMidity++ with Japanese support
 
 INTERFACE=	slang
 JAPANESE=	yes

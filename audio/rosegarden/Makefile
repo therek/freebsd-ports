@@ -2,7 +2,7 @@
 # Date created:		04 Aug 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/audio/rosegarden/Makefile,v 1.16 2000/06/07 16:27:34 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rosegarden
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.cannam.demon.co.uk/rosegarden/distribution/
 DISTNAME=	${PORTNAME}-2.1pl2
 
 MAINTAINER=	shanee@augusta.de
+COMMENT=	The Rosegarden Editor and Sequencer suite
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/tclmidi/tclmidi31.so:${PORTSDIR}/audio/tclmidi
 RUN_DEPENDS=	${LOCALBASE}/lib/tclmidi/tclmidi31.so:${PORTSDIR}/audio/tclmidi

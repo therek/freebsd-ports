@@ -2,7 +2,7 @@
 # Date created:		13-Aug-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD: ports/audio/p5-MP3-ID3v1Tag/Makefile,v 1.2 2001/01/29 06:04:03 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MP3-ID3v1Tag
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=MP3
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	leo@florida.sarang.net
+COMMENT=	Edit ID3v1 Tags from an Audio MPEG Layer 3
 
 PERL_CONFIGURE=	yes
 

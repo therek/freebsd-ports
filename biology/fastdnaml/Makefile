@@ -2,7 +2,7 @@
 # Date created:		12 Oct 2000
 # Whom:	      		Motomichi Matsuzaki <mzaki@e-mail.ne.jp>
 #
-# $FreeBSD: ports/biology/fastdnaml/Makefile,v 1.2 2000/10/24 10:33:47 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fastdnaml
@@ -12,6 +12,7 @@ MASTER_SITES=	http://geta.life.uiuc.edu:80/~gary/programs/fastDNAml/
 DISTNAME=	fastDNAml_${PORTVERSION}
 
 MAINTAINER=	mzaki@e-mail.ne.jp
+COMMENT=	The faster variant of DNAML, makes phylogenetic trees using maximum likelihood
 
 USE_GMAKE=	yes
 do-build:

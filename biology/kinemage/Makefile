@@ -2,7 +2,7 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/kinemage/Makefile,v 1.11 2000/04/08 22:04:39 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kinemage
@@ -18,6 +18,7 @@ MASTER_SITE_SUBDIR=	will
 DISTNAME=	mage-001120
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	A molecular visualization program with special functions
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 

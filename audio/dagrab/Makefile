@@ -2,7 +2,7 @@
 # Date created:		2nd, Jan 1999
 # Whom:			Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/audio/dagrab/Makefile,v 1.10 2000/04/22 21:31:57 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dagrab
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/cdrom
 
 MAINTAINER=	clkao@CirX.ORG
+COMMENT=	Read audio tracks from a CD into wav sound files
 
 MAN1=		dagrab.1
 

@@ -2,7 +2,7 @@
 # Date created:		1999-04-22
 # Whom:			Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/platon/Makefile,v 1.11 2001/04/13 18:50:23 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	platon
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://xraysoft.chem.uu.nl/pub/unix/
 DISTNAME=	platon
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
+COMMENT=	Tool for viewing molecular/crystallographic structures
 
 # PLATON may be used free of charge by the academic community under
 # the condition that it is not redistributed for a current & fresh copy.
