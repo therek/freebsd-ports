@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.170 1999/11/26 19:40:05 steve Exp $
+# $FreeBSD: ports/www/Makefile,v 1.171 1999/12/06 15:23:52 obrien Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -46,6 +46,7 @@
     SUBDIR += httperf
     SUBDIR += hypermail
     SUBDIR += ijb
+    SUBDIR += jesred
     SUBDIR += libghttp
     SUBDIR += libwww
     SUBDIR += libxpg4-ns
