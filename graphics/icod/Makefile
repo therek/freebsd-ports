@@ -2,13 +2,13 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/icod/Makefile,v 1.1.1.1 1999/10/03 21:31:07 dan Exp $
+# $FreeBSD: ports/graphics/icod/Makefile,v 1.2 2000/04/14 10:46:22 asami Exp $
 #
 
 PORTNAME=	icod
 PORTVERSION=	1.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.linuxberg.com/files/x11/graphics/
+MASTER_SITES=	http://linux.tucows.com/files/x11/graphics/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	jedgar@fxp.org
