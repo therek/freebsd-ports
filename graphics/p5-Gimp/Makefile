@@ -2,12 +2,12 @@
 # Date created:				Dec 22 2000
 # Whom:	      				vanilla@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/p5-Gimp/Makefile,v 1.1 2001/03/14 22:16:40 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Gimp
-PORTVERSION=	1.21
-PORTREVISION=	1
+PORTVERSION=	1.211
+PORTREVISION=	0
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gimp
