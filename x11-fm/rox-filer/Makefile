@@ -2,7 +2,7 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.6 2001/03/13 18:10:20 sobomax Exp $
 
 PORTNAME=	rox
 PORTVERSION=	1.1.1
@@ -14,7 +14,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	olgeni@FreeBSD.org
 
-LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml
+LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 RUN_DEPENDS=	${LOCALBASE}/share/Choices:${PORTSDIR}/x11-fm/rox-base
 
 USE_GLIB=	yes
