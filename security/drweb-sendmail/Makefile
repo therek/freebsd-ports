@@ -2,11 +2,12 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.13 2001/08/31 03:59:43 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	drweb_sendmail
 PORTVERSION=    4.26
+PORTREVISION=   1
 CATEGORIES=	security mail
 MASTER_SITES=	http://www.drweb.ru/ftp/web_pub/
 DISTNAME=	drwebd-${PORTVERSION}-freebsd4
@@ -24,10 +25,13 @@ INST_PREFIX=	${PREFIX}/${PORTNAME}
 SENDMAIL_DIR=	/usr/src/contrib/sendmail
 LIBSMUTIL_DIR=  /usr/src/lib/libsmutil
 DOC_DIR=	${PREFIX}/share/doc/drweb-sendmail
+
+.if !defined(WITH_DRWEBSMF_HOSTNAME)
 .if defined(BATCH)
-HOSTNAME=       your.domain.name
+WITH_DRWEBSMF_HOSTNAME= your.domain.name
 .else
-HOSTNAME!=      hostname
+WITH_DRWEBSMF_HOSTNAME!=hostname
+.endif
 .endif
 
 .if exists( ${SENDMAIL_DIR}/include/libmilter/mfapi.h )
@@ -89,11 +93,11 @@ post-build:
 		${ECHO} /tmp; \
 		${ECHO} y; \
 		${ECHO} ; \
-		${ECHO} postmaster@${HOSTNAME}; \
+		${ECHO} postmaster@${WITH_DRWEBSMF_HOSTNAME}; \
 		${ECHO} y; \
 		${ECHO} y; \
 		${ECHO} d; \
-		${ECHO} a; \
+		${ECHO} t; \
 		${ECHO} t; \
 		${ECHO} t; \
 		${ECHO} a; \
@@ -111,10 +115,10 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/drwebdc ${PREFIX}/drweb/
 	cd ${WRKSRC}/../sendmail; \
 		${INSTALL_DATA} readme.* sendmail.*.addon ${DOC_DIR}
-	${SED} 's#!!PREFIX!!#${PREFIX}#g;s#!!HOSTNAME!!#${HOSTNAME}#g' \
+	${SED} 's#!!PREFIX!!#${PREFIX}#g;s#!!HOSTNAME!!#${WITH_DRWEBSMF_HOSTNAME}#g' \
 		< ${FILESDIR}/drweb-smf.sh >${WRKSRC}/drweb-smf.sh
 # drwebsmf.sh instead drweb-smf.sh to start after drwebd.sh
-	${INSTALL_DATA} ${WRKSRC}/drweb-smf.sh ${PREFIX}/etc/rc.d/drwebsmf.sh-dist
+	${INSTALL_SCRIPT} ${WRKSRC}/drweb-smf.sh ${PREFIX}/etc/rc.d/drwebsmf.sh
 
 post-install:
 	@echo
