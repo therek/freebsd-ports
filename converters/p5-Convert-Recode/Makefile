@@ -2,15 +2,15 @@
 # Date created:				17 January 2000
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.1 2000/01/29 04:38:47 steve Exp $
+# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.2 2000/04/08 23:24:34 mharo Exp $
 #
 
-PKGNAME=	p5-Convert-Recode
+PORTNAME=	Convert-Recode
 PORTVERSION=	1.03
 CATEGORIES=	converters perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
-DISTNAME=	Convert-Recode-${PORTVERSION}
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@Chg.RU
 
