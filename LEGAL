@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.328 2004/01/15 17:50:45 nork Exp $
+# $FreeBSD: ports/LEGAL,v 1.329 2004/01/19 15:06:51 maho Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -112,6 +112,8 @@ eijiro*.txt		ports/japanese/eijiro-fpw The original dictionary is not
 						free
 emc2			ports/math/emc2		Contact author personally
 						regarding commercial use
+et-linux-*		ports/games/linux-enemyterritory	Redistribution
+						prohibited.
 ezmlm			ports/mail/ezmlm	no license--see
 						http://cr.yp.to/softwarelaw.html
 ezmlm-idx		ports/mail/ezmlm-idx	no license--see
