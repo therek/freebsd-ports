@@ -2,11 +2,11 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.27 2001/01/03 18:58:48 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.28 2001/01/08 15:21:58 ume Exp $
 #
 
 PORTNAME=	gkrellm
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	sysutils ipv6
 MASTER_SITES=	http://web.wt.net/~billw/gkrellm/ \
 		${MASTER_SITE_LOCAL}
@@ -18,7 +18,7 @@ USE_X_PREFIX=	yes
 USE_IMLIB=	yes
 USE_GMAKE=	yes
 
-INCLUDES=	gkrellm.h gkrellm_public_proto.h gkrellm_private_proto.h
+INCLUDES=	gkrellm.h gkrellm_public_proto.h
 DOCS=		COPYRIGHT README Themes.html
 
 # You should aware that GKrellM must be setuid root to obtain
