@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.58 2001/03/25 05:41:10 will Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.59 2001/03/30 08:18:56 demon Exp $
 #
 
     SUBDIR += 9menu
@@ -19,6 +19,7 @@
     SUBDIR += evilwm
     SUBDIR += flwm
     SUBDIR += fvwm
+    SUBDIR += fvwm-themes
     SUBDIR += fvwm2
     SUBDIR += fvwm2-beta
     SUBDIR += fvwm2-i18n
