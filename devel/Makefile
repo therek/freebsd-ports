@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.628 2001/08/30 05:08:21 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.629 2001/08/30 05:39:48 petef Exp $
 #
 
     SUBDIR += ElectricFence
@@ -287,6 +287,7 @@
     SUBDIR += oaf
     SUBDIR += ocamlweb
     SUBDIR += omniORB
+    SUBDIR += p4.el
     SUBDIR += p5-Agent
     SUBDIR += p5-Algorithm-Diff
     SUBDIR += p5-Algorithm-MDiff
