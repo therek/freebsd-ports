@@ -2,7 +2,7 @@
 # Date created:        			9th June 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.4 2000/07/11 22:02:21 ade Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.5 2000/08/04 01:05:09 ade Exp $
 #
 
 PORTNAME=	guile-gnome
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		guile.9:${PORTSDIR}/lang/guile \
-		guiledlopenhelper.0:${PORTSDIR}/x11-toolkits/guile-gtk \
+		guilegtk-1.2.0:${PORTSDIR}/x11-toolkits/guile-gtk \
 		glade.4:${PORTSDIR}/devel/libglade
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
