@@ -2,11 +2,11 @@
 # Date created:				5 Jan 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/ytree/Makefile,v 1.12 2001/02/20 15:42:32 kevlo Exp $
+# $FreeBSD: ports/misc/ytree/Makefile,v 1.13 2001/04/02 09:24:27 mharo Exp $
 #
 
 PORTNAME=	ytree
-PORTVERSION=	1.72
+PORTVERSION=	1.73
 CATEGORIES=	misc
 MASTER_SITES=	http://www.han.de/~werner/
 
