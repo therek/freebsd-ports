@@ -2,28 +2,28 @@
 # Date created:				16 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.1 2000/09/16 14:17:19 sobomax Exp $
+# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.2 2000/10/05 07:10:31 reg Exp $
 #
 
 PORTNAME=	gtranslator
-PORTVERSION= 	0.21
+PORTVERSION= 	0.30
 CATEGORIES=	devel gnome
-MASTER_SITES=	http://gtranslator.sourceforge.net/tarbz2/ \
+MASTER_SITES=	http://gtranslator.sourceforge.net/${PORTVERSION}/tarbz2/ \
 		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	oaf.0:${PORTSDIR}/devel/oaf
-RUN_DEPENDS=	gmc:${PORTSDIR}/x11-fm/gnomemc
+LIB_DEPENDS=	oaf.0:${PORTSDIR}/devel/oaf \
+		gconf-1.1:${PORTSDIR}/devel/gconf
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib"
+INSTALLS_SHLIB=	yes
+CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		gtranslator.1
 
