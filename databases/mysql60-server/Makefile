@@ -2,17 +2,17 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.85 2000/11/09 00:16:05 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.86 2000/11/16 10:29:04 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
-PORTVERSION=	3.23.26
+PORTVERSION=	3.23.28
 CATEGORIES=	databases
 MASTER_SITES=	http://www.wipol.uni-bonn.de/MySQL/Downloads/MySQL-3.23/ \
 		http://www.mysql.net/Downloads/MySQL-3.23/ \
 		http://mysql.he.net/Downloads/MySQL-3.23/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/mysql/Downloads/MySQL-3.23/
-DISTNAME=	mysql-${PORTVERSION}-beta
+DISTNAME=	mysql-${PORTVERSION}-gamma
 
 MAINTAINER=	dirk@FreeBSD.org
 
@@ -42,7 +42,7 @@ CONFIGURE_ENV+=	PERL=${PERL} \
 .if !defined(CLIENT_ONLY)
 RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql323-client
 
-PLIST_SUB=	MYSQL_VERSION=${PORTVERSION}-beta
+PLIST_SUB=	MYSQL_VERSION=${PORTVERSION}-gamma
 
 post-patch:
 	${MV} ${WRKSRC}/strings/strings-x86.s ${WRKSRC}/strings/strings-x86.S
