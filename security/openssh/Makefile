@@ -3,11 +3,11 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.29 1999/12/06 06:32:11 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.30 1999/12/08 04:06:31 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
-PKGNAME=	OpenSSH-1.2
+PKGNAME=	OpenSSH-1.2.1
 CATEGORIES=	security net
 # ${MASTER_SITES} is only for if CVS won't work, period.
 MASTER_SITES=	ftp://internat.FreeBSD.org/pub/Crypto/OpenSSH/
@@ -23,7 +23,7 @@ CAT?=		/bin/cat
 DISTFILES!=	${CAT} ${FILESDIR}/distfiles
 
 CVS_CMD?=	cvs -z3
-CVS_DATE=	Tue Dec  7 22:46:23 EST 1999
+CVS_DATE=	Thu Dec 23 01:07:56 EST 1999
 SED?=		/usr/bin/sed
 CVS_DATE_!=	${ECHO} -n "${CVS_DATE}" | ${SED} 's/[ \t:]/_/g'
 CVS_SITES=	anoncvs@anoncvs1.ca.openbsd.org:/cvs \
