@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.193 2000/10/18 12:02:15 tg Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.194 2000/10/21 19:28:37 lioux Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -26,6 +26,7 @@
     SUBDIR += expect
     SUBDIR += f2c
     SUBDIR += f77
+    SUBDIR += fesi
     SUBDIR += forth
     SUBDIR += gawk
     SUBDIR += gcc-devel
