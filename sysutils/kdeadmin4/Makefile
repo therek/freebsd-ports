@@ -2,7 +2,7 @@
 # Date created:				5 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/kdeadmin/Makefile,v 1.3 2001/08/15 12:43:06 will Exp $
+# $FreeBSD: ports/sysutils/kdeadmin/Makefile,v 1.4 2001/08/15 16:25:12 will Exp $
 #
 
 PORTNAME=	kdeadmin
@@ -21,5 +21,7 @@ GNU_CONFIGURE=	yes
 
 pre-configure:
 	${PERL} -pi -e "s@DO_NOT_COMPILE qt@DO_NOT_COMPILE kuser qt@g" ${WRKSRC}/configure
+	find ${WRKSRC}/kpackage -name "*.cpp" -or -name "*.c" -or -name "*.h" \
+		| xargs ${PERL} -pi -e "s#typedef __off64_t off64_t;##g"
 
 .include <bsd.port.mk>
