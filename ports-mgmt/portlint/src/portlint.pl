@@ -13,7 +13,7 @@
 # bsd.port.mk.  There are significant differences in those so you'll have
 # hard time upgrading this...
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.9 1999/08/29 11:11:12 peter Exp $
 #
 
 $err = $warn = 0;
@@ -23,7 +23,7 @@ $portdir = '.';
 
 # default setting - for FreeBSD
 $portsdir = '/usr/ports';
-$rcsidstr = '(Id|FreeBSD)';
+$rcsidstr = 'FreeBSD';
 $multiplist = 0;
 $ldconfigwithtrue = 0;
 $rcsidinplist = 0;
@@ -70,7 +70,7 @@ EOF
 # OS dependent configs
 # os	portsdir	rcsid		mplist	ldcfg	plist-rcsid mancompresss strict	localbase	newxdef	automan
 @osdep = split(/\n/, <<EOF);
-FreeBSD	/usr/ports	(Id|FreeBSD)	0	0	0		1	0	/usr/local	1	1
+FreeBSD	/usr/ports	FreeBSD		0	0	0		1	0	/usr/local	1	1
 NetBSD	/usr/pkgsrc	NetBSD		1	1	1		0	1	/usr/pkg	0	0
 EOF
 $osname = `uname -s`;
