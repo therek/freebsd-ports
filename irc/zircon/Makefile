@@ -1,12 +1,12 @@
 # New ports collection makefile for:	zircon
-# Version required:	1.18.226
+# Version required:	1.18.227
 # Date created:		19 Aug 1995
 # Whom:			jkh / pst
 #
-# $FreeBSD: ports/irc/zircon/Makefile,v 1.41 1999/08/25 06:13:07 obrien Exp $
+# $FreeBSD: ports/irc/zircon/Makefile,v 1.42 1999/10/29 17:03:27 jseger Exp $
 #
 
-DISTNAME=	zircon-1.18.226
+DISTNAME=	zircon-1.18.227
 CATEGORIES=	irc tk82
 MASTER_SITES=	ftp://catless.ncl.ac.uk/pub/ \
 		ftp://ftp.dinoex.sub.org/pub/approved/
