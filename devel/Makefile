@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.652 2001/10/10 13:06:59 tobez Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.653 2001/10/10 14:36:18 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -340,6 +340,7 @@
     SUBDIR += p5-File-Cache
     SUBDIR += p5-File-Lock
     SUBDIR += p5-File-MMagic
+    SUBDIR += p5-File-ReadBackwards
     SUBDIR += p5-File-Remove
     SUBDIR += p5-File-Slurp
     SUBDIR += p5-File-Spec
