@@ -3,7 +3,7 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.12 1999/09/11 13:21:00 asami Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.13 1999/09/20 00:04:28 green Exp $
 #
 
 DISTNAME=	s9xs125
@@ -21,9 +21,9 @@ MAKEFILE=	Makefile.alpha
 
 USE_GMAKE=	YES
 USE_X_PREFIX=	YES
-
+MAKE_ENV=	CC="${CC}" CXX="${CXX}" CFLAGS="${CFLAGS}" \
+		CXXFLAGS="${CXXFLAGS}"
 USE_ZIP=	YES
-
 WRKSRC=		${WRKDIR}/release
 
 ONLY_FOR_ARCHS=	i386 alpha
