@@ -2,7 +2,7 @@
 # Date created:		1 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/net/wmnetmon/Makefile,v 1.1 2001/04/07 06:16:10 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmnetmon
@@ -13,7 +13,7 @@ CATEGORIES=	net windowmaker
 MASTER_SITES=	http://avdira.cc.duth.gr/~kkonstan/stuff/software/
 
 
-MAINTAINER=	kkonstan@daemon.gr
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XPM=	YES
 USE_X_PREFIX=	YES
