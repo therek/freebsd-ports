@@ -2,11 +2,11 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-ssl/Makefile,v 1.4 2001/06/18 09:21:10 knu Exp $
+# $FreeBSD: ports/security/ruby-ssl/Makefile,v 1.5 2001/07/16 07:33:21 knu Exp $
 #
 
 PORTNAME=	ssl
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.1b
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.notwork.org/~gotoyuzo/ruby/src/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
