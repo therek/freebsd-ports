@@ -2,17 +2,17 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.18 2000/04/22 02:50:38 will Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.19 2000/07/08 07:52:15 knu Exp $
 #
 
 PORTNAME=	w3m
-PORTVERSION=	0.1.11p
+PORTVERSION=	0.1.11.p
 CATEGORIES+=	www ipv6
 MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
 		ftp://ftp.firedrake.org/w3m/dev/ \
 		http://www.instinct.org/w3m/dev/ \
 		http://grilli.net/mirrors/w3m/download/dev/
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/p/-pre/}
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/-pre/}
 
 MAINTAINER=	nobutaka@nobutaka.com
 
