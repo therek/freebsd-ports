@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mbone/Makefile,v 1.11 2000/02/01 19:45:54 asami Exp $
+# $FreeBSD: ports/mbone/Makefile,v 1.12 2000/02/01 21:10:49 fenner Exp $
 #
 
     SUBDIR += imm
@@ -10,7 +10,6 @@
     SUBDIR += rtptools
     SUBDIR += rqm
     SUBDIR += sdr
-    SUBDIR += sdr-current
     SUBDIR += speak_freely
     SUBDIR += vat
     SUBDIR += vic
