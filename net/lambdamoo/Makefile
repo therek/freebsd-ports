@@ -2,18 +2,18 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/lambdamoo/Makefile,v 1.1.1.1 2000/01/05 20:27:20 flathill Exp $
+# $FreeBSD: ports/net/lambdamoo/Makefile,v 1.2 2000/04/09 18:11:57 cpiazza Exp $
 #
 
 PORTNAME=	lambdamoo
-PORTVERSION=	1.8.0.r8
+PORTVERSION=	1.8.1
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.place.org/pub/moo/unofficial/
-DISTNAME=	LambdaMOO-1.8.0r8
+MASTER_SITES=	ftp://ftp.place.org/pub/moo/
+DISTNAME=	LambdaMOO-${PORTVERSION}
 
 MAINTAINER=	flathill@FreeBSD.ORG
 
-WRKSRC=		${WRKDIR}/MOO-1.8.0r8
+WRKSRC=		${WRKDIR}/MOO-${PORTVERSION}
 GNU_CONFIGURE=	yes
 ALL_TARGET=
 

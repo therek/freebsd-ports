@@ -2,11 +2,11 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.4 2000/04/11 14:14:37 knu Exp $
+# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.5 2000/06/29 07:02:23 obrien Exp $
 #
 
 PORTNAME=	lambdamoo
-PORTVERSION=	1.8.0r8
+PORTVERSION=	1.8.1
 CATEGORIES=	japanese net
 MASTER_SITES=	ftp://ftp.place.org/pub/moo/unofficial/ \
 		ftp://ftp.leo.chubu.ac.jp/pub/network/mnews/
