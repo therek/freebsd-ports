@@ -2,14 +2,14 @@
 # Date created:         22 Sep 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/projectcenter.app/Makefile,v 1.1 2000/09/22 13:15:19 tg Exp $
 #
 
 PORTNAME=	projectcenter.app
-PORTVERSION=	0.1.0
+PORTVERSION=	0.2.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.projectcenter.ch/
-DISTNAME=	ProjectCenter-000921
+DISTNAME=	ProjectCenter-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
