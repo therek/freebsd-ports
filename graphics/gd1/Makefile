@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.38 2001/08/21 01:30:32 mi Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.39 2001/08/23 19:24:42 mi Exp $
 #
 
 PORTNAME=	gd
@@ -17,12 +17,13 @@ MASTER_SITE_SUBDIR=	graphics/gd
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} gd_gif_in.c.bz2
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER?=	billf@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 
 USE_FREETYPE2=	yes
 BUILD_DEPENDS=	bzip2:${PORTSDIR}/archivers/bzip2
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		freetype:${PORTSDIR}/print/freetype2
 
 .if defined(WITH_X11)
 USE_XLIB=	yes
