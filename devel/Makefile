@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.214 1999/08/25 05:47:12 obrien Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.215 1999/09/05 05:07:50 obrien Exp $
 #
 
     SUBDIR += ElectricFence
@@ -119,6 +119,7 @@
     SUBDIR += p5-IniConf
     SUBDIR += p5-IO-stringy
     SUBDIR += p5-PV
+    SUBDIR += p5-Parse-RecDescent
     SUBDIR += p5-Penguin
     SUBDIR += p5-Penguin-Easy
     SUBDIR += p5-Proc-Simple
