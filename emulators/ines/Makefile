@@ -1,15 +1,15 @@
 # New ports collection makefile for:	ines
-# Version required:	0.7
 # Date created:		02 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/ines/Makefile,v 1.13 1999/08/25 05:49:20 obrien Exp $
+# $FreeBSD: ports/emulators/ines/Makefile,v 1.14 2000/01/07 02:25:44 nakai Exp $
 #
 
-DISTNAME=	iNES10-FreeBSD-80x86-bin
-PKGNAME=	ines-1.0
+PORTNAME=	ines
+PORTVERSION=	1.0
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.komkon.org/fms/iNES/
+DISTNAME=	iNES10-FreeBSD-80x86-bin
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org

@@ -1,16 +1,16 @@
 # New ports collection makefile for:   aftp
-# Version required:	1.0
 # Date created:		18th Febuary 1997
 # Last updated:		2nd August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/emulators/aftp/Makefile,v 1.5 1999/10/27 07:00:08 mharo Exp $
+# $FreeBSD: ports/emulators/aftp/Makefile,v 1.6 1999/11/21 00:31:04 cpiazza Exp $
 #
 
-DISTNAME=	aftp
-PKGNAME=	aftp-1.0
+PORTNAME=	aftp
+PORTVERSION=	1.0
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.apple.asimov.net/pub/apple_II/utility/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jsutton@bbcon.com.au

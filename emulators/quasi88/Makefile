@@ -1,12 +1,12 @@
 # New ports collection makefile for:	QUASI88
-# Version required:	0.3.2
 # Date created:		22 May 1999
 # Whom:				Nishika <nishika@cheerful.com>
 #
-# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.2 1999/08/25 05:49:32 obrien Exp $
+# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.3 1999/11/14 01:59:03 steve Exp $
 #
 
-DISTNAME=	quasi88-0.3.2
+PORTNAME=	quasi88
+PORTVERSION=	0.3.2
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.117.ne.jp/~show/pc8801/
 EXTRACT_SUFX=   .tgz

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	truereality
-# Version required:	1999062900
 # Date Created:		28 November 1999
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/truereality/Makefile,v 1.1 1999/12/25 15:50:03 steve Exp $
+# $FreeBSD: ports/emulators/truereality/Makefile,v 1.2 2000/03/20 23:25:05 jseger Exp $
 #
 
-DISTNAME=	TrueReality-${DATE}
-PKGNAME=	truereality-${DATE}
+PORTNAME=	truereality
+PORTVERSION=	1999062900
 CATEGORIES=	emulators devel
 MASTER_SITES=	http://www.emuhq.com/emulators/
+DISTNAME=	TrueReality-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	lioux@linf.unb.br
@@ -23,8 +23,6 @@ USE_GMAKE=	yes
 USE_XLIB=	yes
 
 WRKSRC=		${WRKDIR}/TrueReality/Source
-
-DATE=		1999062900
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/TrueReality ${PREFIX}/bin

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xmame
-# Version required:     0.36b3.1
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.9 1999/08/31 06:43:58 mharo Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.10 1999/09/04 20:22:25 cpiazza Exp $
 #
 
-DISTNAME=	xmame-0.36b3.1
+PORTNAME=	xmame
+PORTVERSION=	0.36b3.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://xmame.retrogames.com/download/ \
 		ftp://ftp.kaupp.cx/pub/xmame/ \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    mtools
-# Version required:     3.9.6
 # Date created:         5 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/mtools/Makefile,v 1.30 1999/08/25 05:49:28 obrien Exp $
+# $FreeBSD: ports/emulators/mtools/Makefile,v 1.31 1999/08/28 01:57:11 mharo Exp $
 #
 
-DISTNAME=	mtools-3.9.6
+PORTNAME=	mtools
+PORTVERSION=	3.9.6
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.tux.org/pub/knaff/mtools/  \
 		http://mtools.linux.lu/

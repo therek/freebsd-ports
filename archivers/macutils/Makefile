@@ -1,16 +1,16 @@
 # New ports collection makefile for:   macutils
-# Version required:	2.0b3
 # Date created:		14th April 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 # FreeBSD Version:	2.1.5-RELEASE
 #
-# $FreeBSD: ports/emulators/macutils/Makefile,v 1.6 1999/08/25 05:49:26 obrien Exp $
+# $FreeBSD: ports/emulators/macutils/Makefile,v 1.7 1999/11/27 15:08:41 steve Exp $
 #
 
-DISTNAME=	macutils_2.0b3.orig
-PKGNAME=	macutils-2.0b3
+PORTNAME=	macutils
+PORTVERSION=	2.0b3
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://sunsite.unc.edu/pub/Linux/distributions/debian/main/source/otherosfs/
+DISTNAME=	${PORTNAME}_${PORTVERSION}.orig
 # ${MASTER_SITE_SUNSITE} isn't appropriate because distributions/ isn't
 # mirrored.
 

@@ -1,17 +1,14 @@
 # New ports collection makefile for:	xgs
-# Version required:	0.50
 # Date created:		2nd May, 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/emulators/xgs/Makefile,v 1.7 2000/01/07 18:18:25 fenner Exp $
+# $FreeBSD: ports/emulators/xgs/Makefile,v 1.8 2000/01/22 13:03:12 mharo Exp $
 #
-
 # This is the stable release of the xgs emulator. Sound support is
 # currently broken.
 
-# Distfile collection and extraction stuff
-#
-DISTNAME=	xgs-0.50
+PORTNAME=	xgs
+PORTVERSION=	0.50
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.inwards.com/xgs/ \
 		ftp://ftp.apple.asimov.net/pub/apple_II/emulators/rom_images/

@@ -1,15 +1,15 @@
 # New ports collection makefile for:   vpce
-# Version required:    0.3f
 # Date created:        20 August 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/vpce/Makefile,v 1.3 1999/08/25 05:49:48 obrien Exp $
+# $FreeBSD: ports/emulators/vpce/Makefile,v 1.4 2000/01/07 02:25:49 nakai Exp $
 #
 
-DISTNAME=	vpce03f_freebsd
-PKGNAME=	vpce-0.3f
+PORTNAME=	vpce
+PORTVERSION=	0.3f
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.fortunecity.com/roswell/vanthal/10/
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}_freebsd
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nakai@FreeBSD.org

@@ -1,21 +1,21 @@
 # ex:ts=8
 # Ports collection makefile for:  bochs
-# Version required: 0.0
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.27 2000/03/20 02:36:08 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.28 2000/03/22 00:26:41 obrien Exp $
 #
 
-DISTNAME=	bochs-${DATE}c
+PORTNAME=	bochs
+PORTVERSION=	2000_0104c
 CATEGORIES= 	emulators
 MASTER_SITES= 	ftp://ftp.bochs.com/pub/
+DISTFILE=	${PORTNAME}-${PORTVERSION}c
 
 MAINTAINER=	obrien@FreeBSD.org
 
 VGABIOS=	VGABIOS-elpin-2.20
 BIOS=		BIOS-bochs-990925a
-DATE= 		2000_0104
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	YES

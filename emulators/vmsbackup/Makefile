@@ -1,17 +1,17 @@
 # New ports collection makefile for:	vmsbackup
-# Version required:	3.0
 # Date created:		18 Apr 1994
 # Whom:			Jonathan M. Bresler (jmb)
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vmsbackup/Makefile,v 1.9 1999/08/25 05:49:46 obrien Exp $
 #
 
-DISTNAME=	vmsbackup
-PKGNAME=	vmsbackup-3.0
+PORTNAME=	vmsbackup
+PORTVERSION=	3.0
 CATEGORIES=	emulators sysutils
 MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/utils/
 # slightly different version
 # MASTER_SITES+=	ftp://ftp.uni-passau.de/pub/unix/system/backup/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jmb@FreeBSD.org

@@ -1,15 +1,15 @@
 # New ports collection makefile for:    STonX
-# Version required:     0.6.7
 # Date created:         3rd August, 1997
 # Whom:                 Tobias Reifenberger <tr@freebsd.mayn.de>
 #
-# $FreeBSD: ports/emulators/stonx/Makefile,v 1.4 1999/09/04 23:39:27 mharo Exp $
+# $FreeBSD: ports/emulators/stonx/Makefile,v 1.5 1999/11/26 18:29:30 steve Exp $
 #
 
-DISTNAME=	STonX-0.6.7-epsilon
-PKGNAME=	stonx-0.6.7e
+PORTNAME=	stonx
+PORTVERSION=	0.6.7e
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.complang.tuwien.ac.at/pub/nino/stonx-current/
+DISTNAME=	STonX-0.6.7-epsilon
 
 MAINTAINER=	treif@mayn.de
 

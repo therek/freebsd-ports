@@ -1,15 +1,15 @@
 # ports collection makefile for:	AliceSoft System 3.5 on X
-# Version required:	1.0.1
 # Date created:		24 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.20 1999/12/04 23:22:40 cpiazza Exp $
+# $FreeBSD: ports/emulators/xsystem35/Makefile,v 1.21 2000/02/09 13:43:24 jedgar Exp $
 #
 
-DISTNAME=	xsystem35-1.2.5-1
-PKGNAME=	xsystem35-1.2.5.1
+PORTNAME=	xsystem35
+PORTVERSION=	1.2.5.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.aist-nara.ac.jp/~masaki-c/private/unitbase/xsys35/down/
+DISTNAME=	xsystem35-1.2.5-1
 
 MAINTAINER=	k5@cheerful.com
 
