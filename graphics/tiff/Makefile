@@ -4,11 +4,12 @@
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/tiff/Makefile,v 1.30 2000/09/18 18:15:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tiff
 PORTVERSION=	3.5.5
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.onshore.com/pub/libtiff/ \
 		http://www.libtiff.org/
