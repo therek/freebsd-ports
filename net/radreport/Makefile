@@ -3,7 +3,7 @@
 # Date created:		10/22/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/radreport/Makefile,v 1.1.1.1 1999/11/26 20:19:04 steve Exp $
 #
 
 DISTNAME=	radreport
@@ -22,6 +22,6 @@ do-extract:
 	@for i in $(DISTFILES); do ${CP} ${DISTDIR}/$$i ${WRKDIR}; done
 
 do-install:
-	@${INSTALL_DATA} ${WRKDIR}/radreport ${PREFIX}/bin
+	@${INSTALL_SCRIPT} ${WRKDIR}/radreport ${PREFIX}/bin
 
 .include <bsd.port.mk>
