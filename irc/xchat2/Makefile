@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.69 2000/11/16 06:30:14 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.70 2000/11/22 20:54:14 jim Exp $
 #
 
 PORTNAME=		xchat
@@ -33,6 +33,11 @@ CONFIGURE_ARGS+=	--disable-python
 # Assign with `+=' for slave ports
 BUILD_DEPENDS+=		${LOCALBASE}/lib/libsocks5.a:${PORTSDIR}/net/socks5
 CONFIGURE_ARGS+=	--enable-socks
+.endif
+
+.if defined(WITH_SSL)
+USE_OPENSSL=		YES
+CONFIGURE_ARGS+=	--enable-openssl
 .endif
 
 .if defined(HAVE_GNOME)
