@@ -3,7 +3,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.14 1999/10/12 18:27:31 billf Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.15 1999/10/27 20:53:32 billf Exp $
 #
 
 DISTNAME=	mtr-0.41
@@ -38,7 +38,7 @@ post-install:
 	@${ECHO} ""
 	@${ECHO} "${PREFIX}/sbin/mtr is setuid \"root\" "
 	@${ECHO} ""
-	@${ECHO} "Please read about potential security iussues"
+	@${ECHO} "Please read about potential security issues"
 	@${ECHO} "in file ${WRKSRC}/SECURITY (not installed)"
 	@${ECHO} ""
 
