@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.48 2000/01/04 03:26:52 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.49 2000/08/24 12:09:23 kevlo Exp $
 #
     SUBDIR += xmms
 
@@ -26,6 +26,7 @@
     SUBDIR += moettf
     SUBDIR += mule-wnn4
     SUBDIR += muni
+    SUBDIR += mutt
     SUBDIR += nvi-big5
     SUBDIR += nvi-euc-cn
     SUBDIR += nvi-euc-tw
