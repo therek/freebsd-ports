@@ -2,7 +2,7 @@
 # Date created:		11 Februrary 1999
 # Whom:			Jay Sachs <sachs@cs.williams.edu>
 #
-# $FreeBSD: ports/www/plugger/Makefile,v 1.4 2000/04/10 00:06:41 cpiazza Exp $
+# $FreeBSD: ports/www/plugger/Makefile,v 1.5 2000/05/29 03:29:32 steve Exp $
 #
 
 PORTNAME=	plugger
@@ -12,9 +12,11 @@ MASTER_SITES=	http://fredrik.hubbe.net/plugger/ \
 		ftp://ftp.netscape.com/pub/sdk/plugin/unix/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} unix-sdk-3.0b5.tar.Z
 
-MAINTAINER=	sachs@cs.williams.edu
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/netscape/plugins:${PORTSDIR}/www/netscape47-navigator
+
+BROKEN_ELF=	"Needs a.out c++rt0.o file"
 
 MAN7=		plugger.7
 MANCOMPRESSED=	no
