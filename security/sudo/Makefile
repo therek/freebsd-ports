@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.39 2001/06/22 08:48:47 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.40 2001/06/24 12:39:55 mharo Exp $
 #
 
 PORTNAME=	sudo
@@ -30,7 +30,9 @@ CONFIGURE_ARGS= --sysconfdir=${PREFIX}/etc \
 		--with-long-otp-prompt \
 		--with-pam
 
-.ifdef(WITH_OPIE)
+.include <bsd.port.pre.mk>
+
+.if defined(WITH_OPIE) || ${OSVERSION} > 500021
 CONFIGURE_ARGS+=--with-opie
 .else
 CONFIGURE_ARGS+=--with-skey
@@ -45,4 +47,4 @@ post-patch:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/sample.sudoers ${PREFIX}/etc/sudoers.sample
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
