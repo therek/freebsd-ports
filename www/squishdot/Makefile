@@ -1,8 +1,8 @@
-# New ports collection makefile for: Squishdot-0.7.1
+# New ports collection makefile for: Squishdot
 # Date created:		06 Sep 2000
-# Whom:			makeport.pl
+# Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/squishdot/Makefile,v 1.1 2000/09/06 22:48:38 nbm Exp $
+# $FreeBSD: ports/www/squishdot/Makefile,v 1.2 2000/09/07 13:30:21 nbm Exp $
 #
 
 PORTNAME=	squishdot
