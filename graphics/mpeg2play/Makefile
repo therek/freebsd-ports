@@ -3,25 +3,21 @@
 # Date created:		June 21, 1996
 # Whom:			"Philippe Charnier" <charnier@lirmm.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mpeg2play/Makefile,v 1.5 1999/08/25 06:14:28 obrien Exp $
 #
 
 DISTNAME=	mpeg2play-1.1b
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.funet.fi/pub/graphics/packages/mpeg/mpeg2play/
-DISTFILES=	mpeg2play-1.1b.tar.gz
 
 MAINTAINER=	charnier@lirmm.fr
 
-USE_X_PREFIX=	yes
 USE_IMAKE=	yes
 REQUIRES_MOTIF=	yes
 ALL_TARGET=	mpeg2play
 
 do-install:
-	${INSTALL} ${COPY} ${STRIP} -o ${BINOWN} -g ${BINGRP} -m ${BINMODE} \
-		${WRKSRC}/mpeg2play ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/mpeg2play ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/Mpeg2play ${PREFIX}/lib/X11/app-defaults
-
 
 .include <bsd.port.mk>
