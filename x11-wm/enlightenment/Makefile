@@ -2,14 +2,14 @@
 # Date created:			10 June 1997
 # Whom:				Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.63 2001/03/10 20:48:38 will Exp $
+# $FreeBSD: ports/x11-wm/enlightenment/Makefile,v 1.64 2001/06/23 13:31:05 clive Exp $
 #
 
 PORTNAME=	enlightenment
 PORTVERSION=	0.16.5
 PORTREVISION=	5
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/enlightenment/ \
+MASTER_SITES=	ftp://ftp.enlightenment.org/enlightenment/enlightenment/ \
 		ftp://ftp.dti.ad.jp/pub/X/enlightenment/enlightenment/ \
 		ftp://ftp.enlighte.nu/pub/Enlightenment/Enlightenment/ \
 		ftp://beaver.its.vu.edu.au/pub/enlightenment/ \
