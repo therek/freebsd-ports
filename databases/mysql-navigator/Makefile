@@ -2,7 +2,7 @@
 # Date created:				2 June 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.1 2000/07/03 16:44:34 sobomax Exp $
+# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.2 2000/07/17 06:55:35 sobomax Exp $
 #
 
 PORTNAME=	mysql-navigator
@@ -16,7 +16,6 @@ MAINTAINER=	sobomax@FreeBSD.org
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		mysqlclient.6:${PORTSDIR}/databases/mysql322-client
 
-NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 ALL_TARGET=
