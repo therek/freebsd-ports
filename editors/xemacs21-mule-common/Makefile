@@ -3,7 +3,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.12 1999/12/08 12:39:55 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.13 2000/01/06 01:46:20 shige Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -22,9 +22,7 @@
 #	LIB_INPUT_METHOD  : LIB_DEPENDS list of Input Methods
 #	BUILD_INPUT_METHOD: BUILD_DEPENDS list of Input Methods
 
-.include <bsd.port.pre.mk>
-
-XEMACS_MAJOR_VER=	${.CURDIR:S!^${PORTSDIR}/editors/xemacs!!:S!-mule-common$!!}
+XEMACS_MAJOR_VER=	21
 
 .for dir in \
 	editors/xemacs${XEMACS_MAJOR_VER}-mule \

@@ -3,7 +3,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.22 1999/12/08 12:39:53 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.23 2000/01/06 01:46:25 shige Exp $
 #
 
 # This is the MASTER port of XEmacs Mule slave ports(japanese/xemacs${XEMACS_MAJOR_VER}-*)
@@ -70,9 +70,7 @@ INSTALL_TARGET?=install-arch-dep
 FILESDIR=	${.CURDIR}/../../editors/xemacs${XEMACS_MAJOR_VER}/files
 PLIST?=		${PKGLDIR}/PLIST
 
-.include	<bsd.port.pre.mk>
-
-XEMACS_MAJOR_VER?=	${.CURDIR:S!^${PORTSDIR}/editors/xemacs!!:S!-mule$!!}
+XEMACS_MAJOR_VER?=	21
 MULE_PORT=		yes
 PKGNAMEEXT?=		-mule
 DESCR_TMPL?=		${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-mule/files/DESCR.tmpl
