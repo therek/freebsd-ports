@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/ghostscript-afpl/scripts/configure,v 1.21 2002/08/06 19:40:49 naddy Exp $
+# $FreeBSD: ports/print/ghostscript-afpl/scripts/configure,v 1.22 2002/08/17 21:10:17 naddy Exp $
 
 # configure - gs driver preconfiguration, manual driver selection
 # by Andreas Klemm <andreas@FreeBSD.org>
@@ -54,6 +54,7 @@ Have fun with this new configuration style !     -andreas \n\n\
   "m8510"    "C.Itoh M8510 printer" OFF \
   "coslw2p"  "CoStar LabelWriter II II/Plus" OFF \
   "coslwxl"  "CoStar LabelWriter XL" OFF \
+  "stp"      "Configurable Canon/Epson/Lexmark/HP driver [Gimp-Print]" OFF \
   "uniprint" "Configurable ESC/P,ESC/P2,HP-RTL/PCL,P2X mono/color driver" ON \
   "dmprt"    "Configurable dot matrix printer driver [DMPRT]" ON \
   "lj250"    "DEC LJ250 Companion color printer" OFF \
