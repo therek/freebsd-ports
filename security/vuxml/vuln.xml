@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.315 2004/10/21 20:04:21 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.316 2004/10/21 22:17:21 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -59,7 +59,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <bid>11154</bid>
       <cvename>CAN-2004-0748</cvename>
       <cvename>CAN-2004-0751</cvename>
-      <mlist msgid="029f01c49b54$dec30f20$1500a8c0@Cougar>">http://marc.theaimsgroup.com/?l=apache-httpd-announce&amp;m=109527608022322</mlist>
+      <mlist msgid="029f01c49b54$dec30f20$1500a8c0@Cougar">http://marc.theaimsgroup.com/?l=apache-httpd-announce&amp;m=109527608022322</mlist>
       <url>http://nagoya.apache.org/bugzilla/show_bug.cgi?id=29964</url>
       <url>http://nagoya.apache.org/bugzilla/show_bug.cgi?id=30134</url>
     </references>
