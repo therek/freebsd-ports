@@ -2,7 +2,7 @@
 # Date created:		15 September 2000
 # Whom:			rv@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cons-test/Makefile,v 1.3 2001/03/29 14:02:51 rv Exp $
+# $FreeBSD: ports/devel/cons-test/Makefile,v 1.4 2001/04/24 13:58:07 rv Exp $
 #
 
 PORTNAME=	cons-test
@@ -24,7 +24,7 @@ CONS_TEST=	cons-${PORTVERSION}/test
 WRKSRC=		${WRKDIR}/${CONS_TEST}
 PLIST_SUB=	CONS_VER=${PORTVERSION} CONS_TEST=${CONS_TEST}
 
-MAN1=		cons-test.1
+MAN1=		cons-test.1.gz
 DOCS=		CHANGES COPYING COPYRIGHT README TODO Tests.txt
 TESTS=		1..83,101..147
 TEST_LIBS=	Cmd.pm Cons.pm
@@ -55,8 +55,8 @@ do-install:
 #
 # Install the man pages
 #
-	${INSTALL_MAN} ${WRKSRC}/cons-test.1 \
-		${PREFIX}/man/man1/cons-test.1
+	${INSTALL_MAN} ${WRKSRC}/cons-test.1.gz \
+		${PREFIX}/man/man1/cons-test.1.gz
 .if !defined(NOPORTDOCS)
 #
 # Install the documentation
