@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.361 2001/10/08 16:28:13 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.362 2001/10/09 21:33:29 tobez Exp $
 #
 
     SUBDIR += 4va
@@ -88,6 +88,7 @@
     SUBDIR += gracula
     SUBDIR += graphviz
     SUBDIR += gridpix
+    SUBDIR += gsculpt
     SUBDIR += gtkdps
     SUBDIR += gtkfig
     SUBDIR += gtkgraph
