@@ -2,7 +2,7 @@
 # Date created:		18 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.8 2000/06/22 05:52:07 will Exp $
+# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.9 2000/08/03 09:26:28 asami Exp $
 #
 
 PORTNAME=	wmbattery
@@ -17,17 +17,13 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_GMAKE=	yes
-MAKE_ENV=	PREFIX="${PREFIX}" INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_DATA="${INSTALL_DATA}" INSTALL_MAN="${INSTALL_MAN}"
 ALL_TARGET=	wmbattery
 MAN1=		wmbattery.1
 
-# install additional docs
-.if !defined(NOPORTDOCS)
 post-install:
-.for i in COPYING INSTALL README TODO
-	@${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/wmbattery
+.if !defined(NOPORTDOCS)
+.for i in INSTALL README TODO
+	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/share/wmbattery
 .endfor
 .endif
 
