@@ -1,8 +1,13 @@
-@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.11 2000/11/22 00:21:49 obrien Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.12 2000/12/13 08:26:15 obrien Exp $
 etc/dhclient-script
 sbin/dhclient
 sbin/dhcpd
 sbin/dhcrelay
 etc/rc.d/isc-dhcpd.sh.sample
+include/omapip
+include/isc
+include/dhcpctl.h
+lib/libomapi.a
+lib/libdhcpctl.a
 @exec touch /var/db/dhcpd.leases
 @exec touch %D/etc/dhclient.conf
