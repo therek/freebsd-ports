@@ -3,7 +3,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.7 1999/09/19 22:20:02 nsayer Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.8 1999/09/19 22:30:44 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -20,10 +20,9 @@ CATEGORIES=	mail news
 
 MAINTAINER=	nsayer@freebsd.org
 
-BUILD_DEPENDS+=	${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libRSAglue.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/librsaref.a:${PORTSDIR}/security/rsaref
+BUILD_DEPENDS=	${PREFIX}/lib/librsaref.a:${PORTSDIR}/security/rsaref
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 
 EXTRACT_ONLY=	pine4.10${EXTRACT_SUFX}
 

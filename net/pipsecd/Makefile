@@ -3,7 +3,7 @@
 # Date created:			16 Aug 1999
 # Whom:				Patrick Bihan-Faou <patrick@mindstep.com>
 #
-# $FreeBSD: ports/net/pipsecd/Makefile,v 1.4 1999/10/19 04:55:36 dan Exp $
+# $FreeBSD: ports/net/pipsecd/Makefile,v 1.5 1999/10/20 00:22:24 dan Exp $
 #
 
 DISTNAME=	pipsec-19991014
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.enst.fr/~beyssac/pipsec/ \
 
 MAINTAINER=	patrick@mindstep.com
 
-BUILD_DEPENDS=	${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl:install
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
 
 ALL_TARGET=	pipsecd
 

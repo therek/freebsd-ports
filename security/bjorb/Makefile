@@ -3,7 +3,7 @@
 # Date created:		May 16, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/security/bjorb/Makefile,v 1.7 1999/08/31 01:50:54 peter Exp $
+# $FreeBSD: ports/security/bjorb/Makefile,v 1.8 1999/08/31 06:50:02 mharo Exp $
 #
 
 DISTNAME=	bjorb-0.5.5p1
@@ -25,6 +25,8 @@ LIB_DEPENDS=		rsaref.2:${PORTSDIR}/security/rsaref
 .endif
 .endif
 BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 RESTRICTED=	"Cryptography"

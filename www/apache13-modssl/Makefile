@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.52 1999/11/02 10:27:07 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.53 1999/11/05 11:15:59 rse Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -43,9 +43,9 @@ MAINTAINER=	rse@engelschall.com
 
 BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl \
 		mm-config:${PORTSDIR}/devel/mm \
-		${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl \
 		${PREFIX}/lib/libmm.a:${PORTSDIR}/devel/mm
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 VERSION_APACHE=	1.3.9

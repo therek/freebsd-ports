@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.9 1999/09/06 23:12:55 steve Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.10 1999/10/26 19:12:46 foxfair Exp $
 #
 
 DISTNAME=	stunnel-3.4a
@@ -16,9 +16,9 @@ MASTER_SITES=	http://opensores.thebunker.net/pub/mirrors/stunnel/ \
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
-BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl
+BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 .if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES

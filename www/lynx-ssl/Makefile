@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.6 1999/08/31 02:42:58 peter Exp $
 #
 
 DISTNAME=       lynx2.8.2rel.1
@@ -23,6 +23,8 @@ PATCH_DIST_STRIP= -p1
 MAINTAINER=	sec@42.org
 
 BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 
 RESTRICTED=     "Contains cryptography"
 

@@ -3,7 +3,7 @@
 # Date created:			  Sun May 3, 1999
 # Whom:                 	shipley@dis.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/slush/Makefile,v 1.4 1999/08/31 01:51:43 peter Exp $
 #
 
 DISTNAME=	slush-0.1.1
@@ -14,6 +14,8 @@ MASTER_SITES=	http://violet.ibs.com.au/slush/files/ \
 MAINTAINER=	shipley@dis.org
 
 BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 
 #MAN=		slush.1
 

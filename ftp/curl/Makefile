@@ -3,7 +3,7 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/ftp/curl/Makefile,v 1.10 1999/08/31 06:43:59 mharo Exp $
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.11 1999/10/26 22:00:37 kris Exp $
 
 DISTNAME=	curl-6.1
 CATEGORIES=	ftp www
@@ -15,8 +15,8 @@ MASTER_SITES=	http://www.fts.frontec.se/~dast/stuff/ \
 MAINTAINER=	kris@FreeBSD.org
 
 .if defined(USE_SSL)
-BUILD_DEPENDS=	${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 .endif
 
 .if defined(USE_SSL)

@@ -6,7 +6,7 @@
 #			and apache-ssl port by Mark Murray <mark@grondar.za>.
 #			Oh, and with a little bit of help from Ben :)
 #
-# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.60 1999/08/31 02:42:41 peter Exp $
+# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.61 1999/09/27 02:21:28 steve Exp $
 
 APACHE= 	1.3.9
 APACHE-SSL=	1.37
@@ -39,8 +39,8 @@ MAINTAINER=     adam@algroup.co.uk
 
 BUILD_DEPENDS=  openssl:${PORTSDIR}/security/openssl
 
-BUILD_DEPENDS=	${PREFIX}/lib/libcrypto.a:${PORTSDIR}/security/openssl \
-		${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 HAS_CONFIGURE=	yes
