@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.199 2001/07/06 15:34:52 roam Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.200 2001/07/07 03:43:07 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -74,6 +74,7 @@
     SUBDIR += lavaps
     SUBDIR += libretto-config
     SUBDIR += lmmon
+    SUBDIR += log_analysis
     SUBDIR += logrotate
     SUBDIR += logtool
     SUBDIR += lsof
