@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/amavisd.sh,v 1.1 2003/09/28 13:29:28 dinoex Exp $
+# $FreeBSD: ports/security/amavisd-new/files/amavisd.sh.tmpl,v 1.6 2003/11/20 11:00:19 jeh Exp $
 #
 
 # PROVIDE: amavisd
@@ -21,7 +21,7 @@ rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/amavisd > /dev/null 2>&1
 
-amavisd_user=%%AMAVISUSER%%
+amavisd_flags="-u %%AMAVISUSER%%"
 
 pidfile=%%AMAVISDIR%%/amavisd.pid
 required_files=%%PREFIX%%/etc/amavisd.conf
