@@ -2,11 +2,11 @@
 # Date created:				Tue Mar 21 17:51:25 EST 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/lwp/Makefile,v 1.2 2000/06/16 08:48:06 sobomax Exp $
+# $FreeBSD: ports/devel/lwp/Makefile,v 1.3 2000/06/16 21:49:53 asami Exp $
 #
 
 PORTNAME=	lwp
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/lwp/src/
 
