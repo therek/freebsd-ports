@@ -2,11 +2,11 @@
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/id3ed/Makefile,v 1.6 2000/03/08 00:25:54 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id3ed
-PORTVERSION=	1.10
+PORTVERSION=	1.10.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.azstarnet.com/~donut/id3ed/ \
 		http://www.treefort.org/~donut/id3ed/ \
