@@ -1,12 +1,12 @@
 # New ports collection makefile for:	screen
-# Version required:     3.9.5
 # Date created:         25 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/screen/Makefile,v 1.23 1999/08/31 06:48:26 mharo Exp $
+# $FreeBSD: ports/misc/screen/Makefile,v 1.24 1999/09/08 22:31:02 fenner Exp $
 #
 
-DISTNAME=       screen-3.9.5
+PORTNAME=       screen
+PORTVERSION=	3.9.5
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.uni-erlangen.de/pub/utilities/screen/ \
 		${MASTER_SITE_GNU}

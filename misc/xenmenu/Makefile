@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xenmenu
-# Version required:			0.8b
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/xenmenu/Makefile,v 1.4 2000/03/29 07:18:57 kris Exp $
+# $FreeBSD: ports/misc/xenmenu/Makefile,v 1.5 2000/03/31 23:56:53 mharo Exp $
 #
 
-DISTNAME=	xenmenu-0.8b
+PORTNAME=	xenmenu
+PORTVERSION=	0.8b
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://freeport.xenos.net/~xenon/software/xenmenu/

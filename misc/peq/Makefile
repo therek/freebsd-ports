@@ -1,12 +1,12 @@
 # New ports collection makefile for:	peq
-# Version required:			0.7.1
 # Date created:				2 April 1999
 # Whom:					Gordon Greeff
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/peq/Makefile,v 1.2 1999/08/25 07:22:21 obrien Exp $
 #
 
-DISTNAME=	peq-0.7.1
+PORTNAME=	peq
+PORTVERSION=	0.7.1
 CATEGORIES=	games
 MASTER_SITES=	http://silverstone.fortunecity.com/jaguar/37/ \
 		ftp://lost.iafrica.com/pub/peq/

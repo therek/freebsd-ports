@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmcp
-# Version required:		1.2.8
 # Date created:			10 February 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/wmcp/Makefile,v 1.5 1999/08/25 07:23:02 obrien Exp $
 #
 
-DISTNAME=	wmcp-1.2.8
+PORTNAME=	wmcp
+PORTVERSION=	1.2.8
 CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://users.linuxbox.com/~bac/src/wmcp/
 

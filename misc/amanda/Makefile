@@ -1,12 +1,12 @@
 # New ports collection makefile for:	amanda
-# Version required:			2.3.0
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda/Makefile,v 1.14 1999/12/23 16:18:23 steve Exp $
+# $FreeBSD: ports/misc/amanda/Makefile,v 1.15 1999/12/29 07:13:28 steve Exp $
 #
 
-DISTNAME=	amanda-2.3.0
+PORTNAME=	amanda
+PORTVERSION=	2.3.0
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.cs.umd.edu/pub/amanda/old-versions/
 

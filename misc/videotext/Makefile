@@ -1,12 +1,12 @@
 # New ports collection makefile for:	vbidecode
-# Version required:	0.6.971023
 # Date created:		Tue June 8 15:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/videotext/Makefile,v 1.5 2000/01/07 16:40:14 asami Exp $
+# $FreeBSD: ports/misc/videotext/Makefile,v 1.6 2000/02/18 02:10:26 ade Exp $
 #
 
-DISTNAME=	videotext-0.6.971023
+PORTNAME=	videotext
+PORTVERSION=	0.6.971023
 CATEGORIES=	misc
 MASTER_SITES=	http://elektra.e-technik.uni-ulm.de/~mbuck/download/
 

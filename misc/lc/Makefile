@@ -1,12 +1,12 @@
 # New ports collection makefile for:   lc
-# Version required:    1.0
 # Date created:        13 November 1999
 # Whom:                jsellens
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/lc/Makefile,v 1.1 1999/12/27 01:49:01 steve Exp $
 #
 
-DISTNAME=	lc-1.0
+PORTNAME=	lc
+PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 

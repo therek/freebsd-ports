@@ -1,12 +1,12 @@
 # New ports collection makefile for:	tcb
-# Version required:			1.4a
 # Date created:				1 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/tcb/Makefile,v 1.3 1999/08/25 07:22:41 obrien Exp $
+# $FreeBSD: ports/misc/tcb/Makefile,v 1.4 2000/03/29 07:19:01 kris Exp $
 #
 
-DISTNAME=		tcb-1.4a
+PORTNAME=		tcb
+PORTVERSION=		1.4a
 CATEGORIES=		misc
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://www.osk.3web.ne.jp/~moody/tcbj/

@@ -1,17 +1,16 @@
 # New ports collection makefile for:    dnetc
-# Version required:     450
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.11 2000/03/22 06:48:19 obrien Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.12 2000/03/22 07:09:19 obrien Exp $
 #
-.include <bsd.port.pre.mk>
 
-DISTNAME=       dnetc
-PKGNAME=	dnetc-2.8007.458b
+PORTNAME=	dnetc
+PORTVERSION=	2.8007.458b
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8007/ \
 		http://http.distributed.net/pub/dcti/v2.8007/
+.include <bsd.port.pre.mk>
 .if ${ARCH} == "i386"
 DISTFILES=	dnetc458b-freebsd-x86-elf.tar.gz
 .elif ${ARCH} == "alpha"

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   gone
-# Version required:    1.3.1
 # Date created:        19 April 1998
 # Whom:                marcus
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gone/Makefile,v 1.5 1999/08/25 07:21:46 obrien Exp $
 #
 
-DISTNAME=       gone-1.3.1
+PORTNAME=       gone
+PORTVERSION=	1.3.1
 CATEGORIES=     misc
 MASTER_SITES=   http://jaguar.ir.miami.edu/~marcus/
 

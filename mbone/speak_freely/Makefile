@@ -1,12 +1,12 @@
 # New ports collection makefile for:    speak_freely
-# Version required:     7.1
 # Date created:         18 Apr 1996
 # Whom:                 Mister X (to make portlint happy ;)
 #
-# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.10 1999/12/31 22:40:12 steve Exp $
+# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.11 2000/01/14 18:36:34 imura Exp $
 #
 
-DISTNAME=       speak_freely-7.1
+PORTNAME=       speak_freely
+PORTVERSION=	7.1
 CATEGORIES=     mbone audio security
 MASTER_SITES=   http://www.fourmilab.ch/speakfree/unix/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ytree
-# Version required:			1.65
 # Date created:				5 Jan 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/ytree/Makefile,v 1.7 2000/01/22 03:26:52 cpiazza Exp $
+# $FreeBSD: ports/misc/ytree/Makefile,v 1.8 2000/03/29 07:18:57 kris Exp $
 #
 
-DISTNAME=		ytree-1.65
+PORTNAME=		ytree
+PORTVERSION=		1.65
 CATEGORIES=		misc
 #MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 #			http://www.han.de/~werner/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:		xdelta
-# Version required:				1.0.2
 # Date created:					Sun May  4 21:40:06 CDT 1997
 # Whom:						jmacd
 #
-# $FreeBSD: ports/misc/xdelta/Makefile,v 1.17 1999/10/09 18:42:10 vanilla Exp $
+# $FreeBSD: ports/misc/xdelta/Makefile,v 1.18 2000/03/20 22:10:52 mharo Exp $
 #
 
-DISTNAME=	xdelta-1.0.2
+PORTNAME=	xdelta
+PORTVERSION=	1.0.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.xcf.berkeley.edu/pub/xdelta/
 

@@ -1,11 +1,11 @@
 # New ports collection makefile for:	xquote
-# Version required:	1.1
 # Date created:		4 Jan 1998
 # Whom:			Ian Struble <ian@broken.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/xquote/Makefile,v 1.4 1999/08/25 07:23:17 obrien Exp $
 
-DISTNAME=	xquote-1.1
+PORTNAME=	xquote
+PORTVERSION=	1.1
 CATEGORIES=	misc
 MASTER_SITES=	http://sunsite.auc.dk/xinvest/	\
 		${MASTER_SITE_XCONTRIB}

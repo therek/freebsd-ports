@@ -1,12 +1,12 @@
 # New ports collection makefile for:	git
-# Version required:	4.3.19
 # Date created:		12 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/git/Makefile,v 1.13 1999/08/31 06:48:17 mharo Exp $
+# $FreeBSD: ports/misc/git/Makefile,v 1.14 1999/11/16 00:39:03 jseger Exp $
 #
 
-DISTNAME=	git-4.3.19
+PORTNAME=	git
+PORTVERSION=	4.3.19
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	git

@@ -1,12 +1,12 @@
 # New ports collection makefile for: viz
-# Version required:                  1.1.1
 # Date created:                      8 Mar 1997
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/misc/viz/Makefile,v 1.2 1999/08/25 07:23:00 obrien Exp $
+# $FreeBSD: ports/misc/viz/Makefile,v 1.3 2000/03/22 15:49:29 fenner Exp $
 #
 
-DISTNAME=	viz-1.1.1
+PORTNAME=	viz
+PORTVERSION=	1.1.1
 CATEGORIES=	misc
 MASTER_SITES=	http://people.FreeBSD.org/~fenner/distfiles/
 EXTRACT_SUFX=	.tgz

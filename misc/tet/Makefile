@@ -1,17 +1,16 @@
 # New ports collection makefile for: tet
-# Version required: 	3.2b
 # Date created:		02 Oct 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/misc/tet/Makefile,v 1.12 1999/12/27 09:20:30 jkoshy Exp $
+# $FreeBSD: ports/misc/tet/Makefile,v 1.13 2000/02/08 09:28:12 peter Exp $
 #
 
-DISTNAME=		tet3.3d-unsup
-PKGNAME=		tet-3.3d
+PORTNAME=		tet
+PORTVERSION=		3.3d
 CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.rdg.opengroup.org/pub/TET/TET3/ \
 			http://people.FreeBSD.org/~jkoshy/PORTS/
-EXTRACT_SUFX=		.src.tar.gz
+DISTFILES=		${PORTNAME}${PORTVERSION}-unsup.src.tar.gz
 
 MAINTAINER=		jkoshy@freebsd.org
 

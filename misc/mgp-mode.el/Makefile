@@ -1,16 +1,15 @@
 # New ports collection makefile for:	mgp-mode.el
-# Version required:	1.30
 # Date created:		99/10/6
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/mgp-mode.el/Makefile,v 1.1.1.1 1999/10/16 07:03:31 taoka Exp $
+# $FreeBSD: ports/misc/mgp-mode.el/Makefile,v 1.2 2000/02/07 08:05:34 taoka Exp $
 #
 
-DISTNAME=	mgp-mode.el
-PKGNAME=	mgp-mode.el-1.30
+PORTNAME=	mgp-mode.el
+PORTVERSION=	1.30
 CATEGORIES=	misc elisp
 MASTER_SITES=	ftp://TypeHack.aial.hiroshima-u.ac.jp/pub/Emacs/MagicPoint/
-EXTRACT_SUFX=	# empty
+DISTFILES=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
 

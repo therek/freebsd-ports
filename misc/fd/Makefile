@@ -1,16 +1,16 @@
 # New ports collection makefile for:    FDclone
-# Version required:     1.03i
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/misc/fd/Makefile,v 1.17 1999/12/25 18:55:45 steve Exp $
+# $FreeBSD: ports/misc/fd/Makefile,v 1.18 2000/02/08 09:28:04 peter Exp $
 #
 
-DISTNAME=	FD-1.03l
-PKGNAME=	fd-1.03l
+PORTNAME=	fd
+PORTVERSION=	1.03l
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/FDclone/ \
 		http://people.FreeBSD.org/~steve/distfiles/
+DISTNAME=	FD-${PORTVERSION}
 
 MAINTAINER=	nobu@psrc.isac.co.jp
 

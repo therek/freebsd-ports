@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mc
-# Version required:	4.5.44
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.41 2000/03/25 23:14:24 reg Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.42 2000/04/08 06:33:25 reg Exp $
 #
 
-DISTNAME=	mc-4.5.44
+PORTNAME=	mc
+PORTVERSION=	4.5.44
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc

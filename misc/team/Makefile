@@ -3,10 +3,11 @@
 # Date created:		1 July 1995
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/team/Makefile,v 1.8 1999/08/25 07:22:42 obrien Exp $
 #
 
-DISTNAME=	team-3.1
+PORTNAME=	team
+PORTVERSION=	3.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	2.2.2R to 2.2-stable upgrade kit
-# Version required:	n/a
 # Date created:		18 Apr 1997
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/222upgrade/Makefile,v 1.8 1999/08/25 07:20:53 obrien Exp $
 #
 
-DISTNAME=	222upgrade-1998.03.08
+PORTNAME=	222upgrade
+PORTVERSION=	1998.03.08
 CATEGORIES=	misc
 DISTFILES=	# empty
 

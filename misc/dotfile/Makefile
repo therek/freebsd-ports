@@ -1,12 +1,12 @@
 # New ports collection makefile for: dotfile
-# Version required:  2.0
 # Date created:      11/12/96
 # Whom:              oly@world.std.com
 #
-# $FreeBSD: ports/misc/dotfile/Makefile,v 1.16 1999/12/24 18:39:37 mharo Exp $
+# $FreeBSD: ports/misc/dotfile/Makefile,v 1.17 2000/01/31 03:52:19 kris Exp $
 #
 
-DISTNAME=	dotfile-2.2
+PORTNAME=	dotfile
+PORTVERSION=	2.2
 CATEGORIES=	misc tk82
 MASTER_SITES=	ftp://ftp.imada.ou.dk/pub/dotfile/
 

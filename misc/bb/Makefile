@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bb
-# Version required:			1.2
 # Date created:				22 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/bb/Makefile,v 1.3 1999/08/25 07:21:10 obrien Exp $
+# $FreeBSD: ports/misc/bb/Makefile,v 1.4 2000/03/29 07:19:04 kris Exp $
 #
 
-DISTNAME=		bb-1.2
+PORTNAME=		bb
+PORTVERSION=		1.2
 CATEGORIES=		misc
 MASTER_SITES=		ftp://ftp.ta.jcu.cz/pub/aa/bb/ \
 			${MASTER_SITE_SUNSITE}

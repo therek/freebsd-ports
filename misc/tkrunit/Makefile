@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tkrunnit
-# Version required:     	0.94.1
 # Date created:			6 February, 1999
 # Whom:				Stephen Farrell <steve@farrell.org>
 #
-# $FreeBSD: ports/misc/tkrunit/Makefile,v 1.3 1999/08/25 07:22:48 obrien Exp $
+# $FreeBSD: ports/misc/tkrunit/Makefile,v 1.4 1999/11/28 18:32:15 steve Exp $
 #
 
-DISTNAME=	tkRunIt-0941
-PKGNAME=	tkRunIt-0.94.1
+PORTNAME=	tkRunIt
+PORTVERSION=	0.94.1
 CATEGORIES=	misc
 MASTER_SITES=   http://www.cs.columbia.edu/~etgold/software/tkRunIt/
+DISTNAME=	tkRunIt-0941
 
 MAINTAINER=	steve@farrell.org
 

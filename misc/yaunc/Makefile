@@ -1,12 +1,12 @@
 # New ports collection makefile for:   yaunc
-# Version required:    0.02
 # Date created:        5 March 2000
 # Whom:                nsayer@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/yaunc/Makefile,v 1.1.1.1 2000/03/09 18:05:48 nsayer Exp $
 #
 
-DISTNAME=	yaunc-0.02
+PORTNAME=	yaunc
+PORTVERSION=	0.02
 CATEGORIES=	misc
 MASTER_SITES=	http://www.redterror.net/code/yaunc/
 

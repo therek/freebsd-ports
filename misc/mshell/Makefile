@@ -3,11 +3,11 @@
 # Date created:         24 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/misc/mshell/Makefile,v 1.11 1999/08/25 07:22:13 obrien Exp $
+# $FreeBSD: ports/misc/mshell/Makefile,v 1.12 1999/08/28 02:42:29 mharo Exp $
 #
 
-DISTNAME=	mshell
-PKGNAME=	mshell-1.0
+PORTNAME=	mshell
+PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=	ftp://src.doc.ic.ac.uk/usenet/alt.sources/articles/07000-07999/
 DISTFILES=	7432.Z

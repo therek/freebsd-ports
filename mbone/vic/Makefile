@@ -1,12 +1,12 @@
 # New ports collection makefile for:	vic
-# Version required:	2.6
 # Date created:		14 December 1994
 # Whom:			wollman
 #
-# $FreeBSD: ports/mbone/vic/Makefile,v 1.22 1999/08/31 06:48:07 mharo Exp $
+# $FreeBSD: ports/mbone/vic/Makefile,v 1.23 1999/11/29 03:41:25 steve Exp $
 #
 
-DISTNAME=	vic-2.8
+PORTNAME=	vic
+PORTVERSION=	2.8
 CATEGORIES=	mbone tk82
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/vic/
 DISTFILES=	vicsrc-2.8.tar.gz

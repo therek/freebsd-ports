@@ -1,16 +1,16 @@
 # New ports collection makefile for:    xgas
-# Version required:     1.0
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/misc/xgas/Makefile,v 1.6 1999/10/30 18:06:55 mharo Exp $
+# $FreeBSD: ports/misc/xgas/Makefile,v 1.7 2000/01/08 11:23:53 nakai Exp $
 #
 
-DISTNAME=	xgas
-PKGNAME=	xgas-1.0
+PORTNAME=	xgas
+PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/demos
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 

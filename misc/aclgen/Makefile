@@ -1,15 +1,15 @@
 # New ports collection makefile for:	aclgen
-# Version required:			2.02
 # Date created:				17 September 1999
 # Whom:					igor@zynaps.ru
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/aclgen/Makefile,v 1.1.1.1 1999/11/01 03:43:03 steve Exp $
 #
 
-DISTNAME=	aclgen-202
-PKGNAME=	aclgen-2.02
+PORTNAME=	aclgen
+PORTVERSION=	2.02
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.sztaki.hu/pub/private/kissg/aclgen/
+DISTNAME=	aclgen-202
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:   xtail
-# Version required:    0.1
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/xtail/Makefile,v 1.2 1999/08/25 07:23:18 obrien Exp $
+# $FreeBSD: ports/misc/xtail/Makefile,v 1.3 1999/11/12 21:04:55 jim Exp $
 #
 
-DISTNAME=	xtail
-PKGNAME=	xtail-0.1
+PORTNAME=	xtail
+PORTVERSION=	0.1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.giovannelli.it/~gmarco/files/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	gmarco@giovannelli.it
 

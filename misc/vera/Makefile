@@ -1,12 +1,12 @@
 # New ports collection makefile for:	V.E.R.A.
-# Version required:	1.5
 # Date created:		9 March 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/vera/Makefile,v 1.4 1999/08/25 07:22:58 obrien Exp $
 #
 
-DISTNAME=	vera-1.5
+PORTNAME=	vera
+PORTVERSION=	1.5
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	vera

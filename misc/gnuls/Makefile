@@ -3,14 +3,15 @@
 # Date created:				06 January 1996
 # Whom:					bmc@WillsCreek.COM
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gnuls/Makefile,v 1.10 1999/08/25 07:21:45 obrien Exp $
 #
 
-DISTNAME=	fileutils-4.0
-PKGNAME=	gnuls-4.0
+PORTNAME=	gnuls
+PORTVERSION=	4.0
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	fileutils
+DISTNAME=	fileutils-${PORTVERSION}
 
 MAINTAINER=	bmc@WillsCreek.COM
 

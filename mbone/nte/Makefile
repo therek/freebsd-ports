@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nte
-# Version required:			1.5a23
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/nte/Makefile,v 1.14 1999/08/25 07:09:38 obrien Exp $
+# $FreeBSD: ports/mbone/nte/Makefile,v 1.15 1999/08/31 06:48:00 mharo Exp $
 #
 
-DISTNAME=	nte-1.5a29
+PORTNAME=	nte
+PORTVERSION=	1.5a29
 CATEGORIES=	mbone tk80
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/nte/1.5a29/
 

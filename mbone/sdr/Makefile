@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sdr
-# Version required:			2.9
 # Date created:				5 September 1996
 # Whom:	      Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/mbone/sdr/Makefile,v 1.17 2000/01/26 05:57:44 fenner Exp $
+# $FreeBSD: ports/mbone/sdr/Makefile,v 1.18 2000/01/26 19:00:55 asami Exp $
 #
 
-DISTNAME=	sdr-2.9
+PORTNAME=	sdr
+PORTVERSION=	2.9
 CATEGORIES=	mbone tk82
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/sdr/2.9/
 

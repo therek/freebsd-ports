@@ -1,12 +1,12 @@
 # New ports collection makefile for:	buffer
-# Version required:     1.17.1
 # Date created:         23 February 1998
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/misc/buffer/Makefile,v 1.11 1999/11/01 00:17:01 steve Exp $
+# $FreeBSD: ports/misc/buffer/Makefile,v 1.12 2000/02/08 09:28:14 peter Exp $
 #
 
-DISTNAME=	buffer-1.17.1
+PORTNAME=	buffer
+PORTVERSION=	1.17.1
 CATEGORIES=	misc
 MASTER_SITES=	http://people.FreeBSD.org/~steve/distfiles/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cmatrix
-# Version required:			1.0b
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/cmatrix/Makefile,v 1.4 2000/03/29 07:19:06 kris Exp $
+# $FreeBSD: ports/misc/cmatrix/Makefile,v 1.5 2000/03/31 23:53:51 mharo Exp $
 #
 
-DISTNAME=	cmatrix-1.0b
+PORTNAME=	cmatrix
+PORTVERSION=	1.0b
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/graphics/hacks/curses

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    kp
-# Version required:     1.00
 # Date created:         8 May 1995
 # Whom:                 asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/kp/Makefile,v 1.13 1999/08/25 07:21:57 obrien Exp $
 #
 
-DISTNAME=       kp-1.00
+PORTNAME=       kp
+PORTVERSION=	1.00
 CATEGORIES=	misc
 MASTER_SITES=   ftp://stampede.cs.berkeley.edu/pub/kp/
 

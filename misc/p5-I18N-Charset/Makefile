@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-I18N-Charset
-# Version required:		1.03
 # Date created:			26 December 1999
 # Whom:	      			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/p5-I18N-Charset/Makefile,v 1.1 2000/01/29 03:01:21 ade Exp $
 #
 
-DISTNAME=	I18N-Charset-1.03
-PKGNAME=	p5-I18N-Charset-1.03
+PORTNAME=	I18N-Charset
+PORTVERSION=	1.03
 CATEGORIES=	misc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	I18N
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@Chg.RU
 

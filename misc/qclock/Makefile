@@ -1,15 +1,15 @@
 # New ports collection makefile for:	 qclock
-# Version required:	1.0
 # Date created:		12 August 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/misc/qclock/Makefile,v 1.8 2000/01/26 23:41:41 mph Exp $
+# $FreeBSD: ports/misc/qclock/Makefile,v 1.9 2000/03/24 00:49:08 mharo Exp $
 #
 
-DISTNAME=	qclock
-PKGNAME=	qclock-1.0
+PORTNAME=	qclock
+PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=	http://peloton.runet.edu/distfiles/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	brett@peloton.runet.edu
 

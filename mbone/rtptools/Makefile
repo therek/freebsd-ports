@@ -1,12 +1,12 @@
 # New ports collection makefile for:	rtptools
-# Version required:	1.14
 # Date created:		5 January 1998
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.4 2000/01/19 02:53:37 fenner Exp $
+# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.5 2000/01/21 17:48:15 fenner Exp $
 #
 
-DISTNAME=	rtptools-1.14
+PORTNAME=	rtptools
+PORTVERSION=	1.14
 CATEGORIES=	mbone
 MASTER_SITES=	http://www.cs.columbia.edu/~hgs/rtptools/src/
 

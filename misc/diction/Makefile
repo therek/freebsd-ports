@@ -1,12 +1,12 @@
 # New ports collection makefile for: diction
-# Version required:	0.8
 # Date created:		2 August 1998
 # Whom:			J Han <hjh@best.com>
 #
-# $FreeBSD: ports/misc/diction/Makefile,v 1.4 1999/08/25 07:21:31 obrien Exp $
+# $FreeBSD: ports/misc/diction/Makefile,v 1.5 2000/02/13 17:09:02 dirk Exp $
 #
 
-DISTNAME=		diction-0.8
+PORTNAME=		diction
+PORTVERSION=		0.8
 CATEGORIES=		misc
 MASTER_SITES=		ftp://cantor.informatik.rwth-aachen.de/pub/unix/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	3.2R to 3-stable upgrade kit
-# Version required:	n/a
 # Date created:		20 May 1999
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/32upgrade/Makefile,v 1.7 2000/01/13 02:39:34 asami Exp $
+# $FreeBSD: ports/misc/32upgrade/Makefile,v 1.8 2000/02/02 17:06:50 asami Exp $
 #
 
-DISTNAME=	32upgrade-2000.02.02
+PORTNAME=	32upgrade
+PORTVERSION=	2000.02.02
 CATEGORIES=	misc
 DISTFILES=	# empty
 

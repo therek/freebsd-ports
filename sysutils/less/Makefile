@@ -1,13 +1,12 @@
 # New ports collection makefile for:    less
-# http://www.flash.net/~marknu/less/
-# Version required:     3.*
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.26 2000/03/03 20:06:09 asami Exp $
+# $FreeBSD: ports/misc/less/Makefile,v 1.27 2000/03/11 02:05:37 ache Exp $
 #
 
-DISTNAME=       less-352
+PORTNAME=       less
+PORTVERSION=	352
 CATEGORIES=	misc
 MASTER_SITES=   http://home.flash.net/~marknu/less/ \
 		${MASTER_SITE_GNU}

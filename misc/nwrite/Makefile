@@ -1,12 +1,12 @@
 # New ports collection makefile for: nwrite
-# Version required:     	1.9.2
 # Date created:                	29 July 1997
 # Whom:                        	daveh
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/nwrite/Makefile,v 1.7 1999/08/25 07:22:14 obrien Exp $
 #
 
-DISTNAME=	nwrite-1.9.2
+PORTNAME=	nwrite
+PORTVERSION=	1.9.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.csua.berkeley.edu/pub/nwrite/
 

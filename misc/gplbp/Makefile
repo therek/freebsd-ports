@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gplbp
-# Version required:			0.92
 # Date created:				23 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/gplbp/Makefile,v 1.1.1.1 1999/11/26 19:02:18 steve Exp $
+# $FreeBSD: ports/misc/gplbp/Makefile,v 1.2 2000/02/17 04:29:03 jedgar Exp $
 #
 
-DISTNAME=	gplbp-0.92
+PORTNAME=	gplbp
+PORTVERSION=	0.92
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.stampede.org/skibum/
 

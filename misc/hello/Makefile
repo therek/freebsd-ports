@@ -1,16 +1,16 @@
 # New ports collection makefile for:	hello
-# Version required:			1.3
 # Date created:				Fri Jul 23, 1999
 # Whom:					shipley@dis.org
 #
-# $FreeBSD: ports/misc/hello/Makefile,v 1.1 1999/12/29 09:36:14 steve Exp $
+# $FreeBSD: ports/misc/hello/Makefile,v 1.2 1999/12/30 04:04:06 steve Exp $
 #
 
-DISTNAME=	hello-1.3
-PKGNAME=	hello-1.3.1
+PORTNAME=	hello
+PORTVERSION=	1.3.1
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	hello
+DISTNAME=	hello-1.3
 
 MAINTAINER=	shipley@dis.org
 

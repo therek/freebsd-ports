@@ -1,12 +1,12 @@
 # New ports collection makefile for:	grun
-# Version required:		0.8.1
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/misc/grun/Makefile,v 1.1.1.1 1999/09/09 15:09:34 taoka Exp $
+# $FreeBSD: ports/misc/grun/Makefile,v 1.2 1999/10/10 23:17:18 steve Exp $
 #
 
-DISTNAME=	grun-0.8.1
+PORTNAME=	grun
+PORTVERSION=	0.8.1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
 

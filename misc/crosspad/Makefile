@@ -1,12 +1,12 @@
 # New ports collection makefile for:	crosspad
-# Version required:	19991202
 # Date created:		23 September 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/crosspad/Makefile,v 1.3 1999/08/25 07:21:22 obrien Exp $
+# $FreeBSD: ports/misc/crosspad/Makefile,v 1.4 1999/12/02 03:24:23 itojun Exp $
 #
 
-DISTNAME=	crosspad-19991202
+PORTNAME=	crosspad
+PORTVERSION=	19991202
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.itojun.org/pub/misc/
 

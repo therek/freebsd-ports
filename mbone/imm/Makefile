@@ -1,15 +1,15 @@
 # New ports collection makefile for:	imm
-# Version required:	3.5a1
 # Date created:		13 October 1994
 # Whom:			wollman
 #
-# $FreeBSD: ports/mbone/imm/Makefile,v 1.22 1999/09/04 20:29:45 fenner Exp $
+# $FreeBSD: ports/mbone/imm/Makefile,v 1.23 1999/11/28 18:31:09 steve Exp $
 #
 
-DISTNAME=	imm.source
-PKGNAME=	imm-3.5a1
+PORTNAME=	imm
+PORTVERSION=	3.5a1
 CATEGORIES=	mbone tk82
 MASTER_SITES=	ftp://ftp.hawaii.edu/paccom/imm-3.5a1/
+DISTNAME=	imm.source
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	fenner@freebsd.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   kdeutils
-# Version required:    Beta2
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.36 2000/02/15 13:45:04 imura Exp $
+# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.37 2000/02/24 07:01:01 asami Exp $
 #
 
-DISTNAME=	kdeutils-1.1.2
+PORTNAME=	kdeutils
+PORTVERSION=	1.1.2
 CATEGORIES=	misc kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2

@@ -1,15 +1,15 @@
-# New ports collection makefile for:	chard
-# Version required:	3.6
+# New ports collection makefile for:	chord
 # Date created:		24 April 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/chord/Makefile,v 1.7 1999/08/25 07:21:17 obrien Exp $
+# $FreeBSD: ports/misc/chord/Makefile,v 1.8 1999/08/31 06:48:14 mharo Exp $
 #
 
-DISTNAME=	chord
-PKGNAME=	chord-3.6
+PORTNAME=	chord
+PORTVERSION=	3.6
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
