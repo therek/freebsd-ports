@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.441 2004/05/31 21:47:13 fjoe Exp $
+# $FreeBSD: ports/MOVED,v 1.442 2004/06/02 02:26:20 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1120,3 +1120,11 @@ x11-toolkits/thinice|x11-themes/thinice|2004-06-02|new category
 x11-toolkits/whistlerk|x11-themes/whistlerk|2004-06-02|new category
 x11-toolkits/xenophilia|x11-themes/xenophilia|2004-06-02|new category
 x11-toolkits/xenostep|x11-themes/xenostep|2004-06-02|new category
+x11-wm/aquaosk|x11-themes/aquaosk|2004-06-02|new category
+x11-wm/fvwm-themes|x11-themes/fvwm-themes|2004-06-02|new category
+x11-wm/kdeartwork3|x11-themes/kdeartwork3|2004-06-02|new category
+x11-wm/kwin_flatcurve|x11-themes/kwin_flatcurve|2004-06-02|new category
+x11-wm/mkultra|x11-themes/mkultra|2004-06-02|new category
+x11-wm/qinx|x11-themes/qinx|2004-06-02|new category
+x11-wm/qnxstyle|x11-themes/qnxstyle|2004-06-02|new category
+x11-wm/sapphire-themes|x11-themes/sapphire-themes|2004-06-02|new category
