@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.514 2001/04/17 13:23:57 jeh Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -349,6 +349,7 @@
     SUBDIR += pcl-cvs-emacs
     SUBDIR += pcl-cvs-emacs20
     SUBDIR += pcre
+    SUBDIR += pedisassem
     SUBDIR += perforce
     SUBDIR += perltidy
     SUBDIR += pharmacy
