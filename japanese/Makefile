@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.301 2000/10/02 05:18:58 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.302 2000/10/05 23:30:59 knu Exp $
 #
 
     SUBDIR += Canna
@@ -151,6 +151,7 @@
     SUBDIR += mnews
     SUBDIR += mnews-gnspool
     SUBDIR += mnews-im
+    SUBDIR += msdosfs
     SUBDIR += mtools
     SUBDIR += muggy
     SUBDIR += mule-canna
