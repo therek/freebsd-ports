@@ -2,7 +2,7 @@
 # Date created:				3rd November 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gnomecrash/Makefile,v 1.1 2000/11/03 20:58:45 ade Exp $
 #
 
 PORTNAME=	gnomecrash
@@ -15,7 +15,7 @@ DISTNAME=	gnome-crash-${PORTVERSION}
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint
+		gnomeprint.13:${PORTSDIR}/print/gnomeprint
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

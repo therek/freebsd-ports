@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.14 2000/10/20 16:27:28 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.15 2000/11/03 17:52:13 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		glade.4:${PORTSDIR}/devel/libglade \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint \
+		gnomeprint.13:${PORTSDIR}/print/gnomeprint \
 		oaf.0:${PORTSDIR}/devel/oaf \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs \

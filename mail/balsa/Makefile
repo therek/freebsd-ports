@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.32 2000/11/13 16:28:23 sobomax Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.33 2000/11/13 16:49:19 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -16,7 +16,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		pspell.2:${PORTSDIR}/textproc/pspell \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint
+		gnomeprint.13:${PORTSDIR}/print/gnomeprint
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

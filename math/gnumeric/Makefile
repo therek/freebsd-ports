@@ -2,7 +2,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.44 2000/10/20 16:25:09 ade Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.45 2000/11/02 21:20:23 ade Exp $
 #
 
 PORTNAME=	gnumeric
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	stable/sources/gnumeric
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint \
+LIB_DEPENDS=	gnomeprint.13:${PORTSDIR}/print/gnomeprint \
 		glade.4:${PORTSDIR}/devel/libglade \
 		guile.9:${PORTSDIR}/lang/guile \
 		gnomeole2.0:${PORTSDIR}/devel/libole2 \

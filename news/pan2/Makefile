@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.33 2000/10/11 19:46:44 ade Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.34 2000/10/20 17:39:29 ade Exp $
 #
 
 PORTNAME=	pan
@@ -12,7 +12,7 @@ MASTER_SITES=	http://download.superpimp.org/pan/${PORTVERSION}/
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint \
+LIB_DEPENDS=	gnomeprint.13:${PORTSDIR}/print/gnomeprint \
 		uu.1:${PORTSDIR}/converters/uulib
 
 USE_BZIP2=	yes

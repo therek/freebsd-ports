@@ -2,7 +2,7 @@
 # Date created:				5th October 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.3 2000/10/24 16:43:16 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.4 2000/11/10 19:29:05 ade Exp $
 #
 
 PORTNAME=	gal
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/gal
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint \
+LIB_DEPENDS=	gnomeprint.13:${PORTSDIR}/print/gnomeprint \
 		glade.4:${PORTSDIR}/devel/libglade \
 		unicode.0:${PORTSDIR}/devel/libunicode \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs
