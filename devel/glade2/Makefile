@@ -2,11 +2,12 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.30 2001/05/04 21:39:31 ade Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.31 2001/05/11 16:36:18 ade Exp $
 #
 
 PORTNAME=	glade
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/glade
@@ -16,7 +17,7 @@ MAINTAINER=	gnome@FreeBSD.org
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--with-bonobo
+CONFIGURE_ARGS=	--with-bonobo --enable-gnome-db
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/libs"
 
