@@ -2,7 +2,7 @@
 # Date created:        			9th June 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gnome/Makefile,v 1.13 2001/06/19 09:43:03 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	guile-gnome
@@ -18,7 +18,8 @@ MAINTAINER=	gnome@FreeBSD.org
 LIB_DEPENDS=	guilegtk-1.2.0:${PORTSDIR}/x11-toolkits/guile-gtk
 
 USE_LIBTOOL=	yes
-USE_GNOME=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomeprefix bonobo gtkhtml libglade
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-bonobo --with-gtkhtml --without-gal \
 		--with-libglade --with-gdkpixbuf --with-ghttp
