@@ -2,7 +2,7 @@
 # Date created:				June 17th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.24 2000/11/13 12:43:05 demon Exp $
+# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.25 2001/03/01 06:37:16 vanilla Exp $
 #
 
 PORTNAME=	DBD-Pg
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 PERL_CONFIGURE=	yes
-MAKE_ENV=	POSTGRES_INCLUDE=${PREFIX}/pgsql/include POSTGRES_LIB=${PREFIX}/pgsql/lib
+CONFIGURE_ENV+=	POSTGRES_INCLUDE=${PREFIX}/pgsql/include POSTGRES_LIB=${PREFIX}/pgsql/lib
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		DBD::Pg.3 DBD::dbd-pg.3
