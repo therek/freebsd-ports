@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.205 2000/03/25 18:35:03 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.206 2000/03/25 18:53:53 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -35,6 +35,7 @@
     SUBDIR += css-mode.el
     SUBDIR += decss
     SUBDIR += demoroniser
+    SUBDIR += djvuplugin
     SUBDIR += erwn
     SUBDIR += evg
     SUBDIR += fcgi
