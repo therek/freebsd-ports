@@ -1,13 +1,13 @@
 # New ports collection makefile for:	gnomelibs
-# Version required:			1.0.53
+# Version required:			1.0.54
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.45 1999/10/08 03:30:33 nakai Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.46 1999/10/14 03:41:15 nakai Exp $
 #
 
-DISTNAME=	gnome-libs-1.0.53
-PKGNAME=	gnomelibs-1.0.53
+DISTNAME=	gnome-libs-1.0.54
+PKGNAME=	gnomelibs-1.0.54
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/gnome-libs
