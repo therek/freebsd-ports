@@ -2,13 +2,14 @@
 # Date created:				11 Jun 2001
 # Whom:					Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/exim-ldap/Makefile,v 1.1 2001/06/11 11:57:26 sheldonh Exp $
 #
 
 PKGNAMESUFFIX=	-ldap
 CATEGORIES=	mail
 PKGDIR=		../exim
 FILESDIR=	${PKGDIR}/files
+PATCHDIR=	${PKGDIR}/files
 
 # See ../exim/Makefile for options controlling the LDAP lookup type.
 WITH_LDAP=	yes
