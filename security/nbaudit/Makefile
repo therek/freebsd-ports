@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nbaudit/Makefile,v 1.9 2000/04/09 18:29:59 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nbaudit
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.secnet.com/pub/tools/nat10/  \
 		ftp://ftp.auscert.org.au/pub/coast/mirrors/ftp.secnet.com/tools/nat10/
 DISTNAME=	nat10
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 MAN1=		nat.1 nbaudit.1

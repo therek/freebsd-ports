@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/slurpie/Makefile,v 1.4 2000/11/06 00:09:26 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slurpie
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.jps.net/coati/archives/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/slurp ${PREFIX}/sbin

@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/rid/Makefile,v 1.5 2000/04/21 08:18:52 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rid
@@ -13,7 +13,7 @@ MASTER_SITES=	http://packetstorm.securify.com/distributed/  \
 		ftp://ftp.ntua.gr/pub/security/technotronic/denial/
 DISTFILES=	${PORTNAME}-1_0.tgz
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	rid
 

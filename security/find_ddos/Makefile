@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/find_ddos/Makefile,v 1.6 2000/08/08 02:45:14 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	find_ddos
@@ -14,7 +14,7 @@ MASTER_SITES=	http://ftp.cert.org.tw/tools/Security_Scanner/DDOS/  \
 DISTNAME=	find_ddos_v42_linux
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 WRKSRC=		${WRKDIR}/${PORTNAME}

@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/trinokiller/Makefile,v 1.2 2000/04/09 18:30:42 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trinokiller
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.afro-productions.com/
 DISTNAME=	trinokiller
 EXTRACT_SUFX=	.c
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 

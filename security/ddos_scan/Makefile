@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/ddos_scan/Makefile,v 1.3 2000/03/22 00:26:47 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ddos_scan
@@ -13,7 +13,7 @@ MASTER_SITES=	http://staff.washington.edu/dittrich/misc/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	dds
 
