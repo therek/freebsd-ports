@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.27 2002/10/14 19:16:40 znerd Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.28 2002/11/14 15:18:44 znerd Exp $
 #
 
 .if !defined(Java_Include)
@@ -35,6 +35,10 @@ Java_Include_MAINTAINER=	znerd@FreeBSD.org
 #-----------------------------------------------------------------------------
 # Stage 1: Define constants
 #
+
+# System-global directories
+JAVASHAREDIR?=	${PREFIX}/share/java
+JAVAJARDIR?=	${JAVASHAREDIR}/classes
 
 # The complete list of Java versions supported.
 _JAVA_VERSIONS=		1.1 1.2 1.3 1.4
