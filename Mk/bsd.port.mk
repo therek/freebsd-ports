@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.393 2001/11/17 21:35:39 knu Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.394 2001/11/28 05:00:36 lioux Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -878,6 +878,7 @@ AUTOMAKE_DIR?=		${LOCALBASE}/share/automake
 .else
 BUILD_DEPENDS+=		automake14:${PORTSDIR}/devel/automake14
 
+AUTOMAKE_ARGS+=		-i
 USE_AUTOCONF_VER?=	213
 .endif
 .endif
