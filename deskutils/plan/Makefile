@@ -2,7 +2,7 @@
 # Date created:				14 April 1996
 # Whom:	Daniel Eischen <deischen@freebsd.org>
 #
-# $FreeBSD: ports/deskutils/plan/Makefile,v 1.21 2000/11/07 23:27:58 asami Exp $
+# $FreeBSD: ports/deskutils/plan/Makefile,v 1.22 2000/11/24 22:10:00 deischen Exp $
 #
 # Also update	ports/japanese/plan/ (ja-plan) when this port is updated
 
@@ -16,7 +16,7 @@ MASTER_SITE_SUBDIR=	applications
 MAINTAINER=	deischen@freebsd.org
 
 USE_MOTIF=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}/src
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 ALL_TARGET=	freebsd
 MAN1=		netplan.1 plan.1
 MAN4=		plan.4
