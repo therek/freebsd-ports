@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.20 1999/12/25 19:39:03 jedgar Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.21 2000/01/04 18:04:16 jedgar Exp $
 #
 
     SUBDIR += abacus
@@ -16,7 +16,6 @@
     SUBDIR += kproject
     SUBDIR += offix-trash
     SUBDIR += plan
-    SUBDIR += recycler
     SUBDIR += sliderule
     SUBDIR += teapot
     SUBDIR += wmpinboard
