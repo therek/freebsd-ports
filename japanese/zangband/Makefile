@@ -2,7 +2,7 @@
 # Date Created:			31 May 2000
 # Whom:				Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/japanese/zangband/Makefile,v 1.1 2000/08/09 17:37:47 cpiazza Exp $
+# $FreeBSD: ports/japanese/zangband/Makefile,v 1.2 2000/10/01 16:18:30 kevlo Exp $
 #
 
 CATEGORIES=	japanese
@@ -19,7 +19,7 @@ JAPANESE=	yes
 JA_MASTER_SITE=	http://www.geocities.co.jp/SiliconValley-SanJose/9606/zg/
 ANGBANDLIB?= 	lib/jzangband
 ANGBANDBIN?= 	bin/jzangband
-JA_PLIST= 	PLIST.ja
+JA_PLIST= 	pkg-plist.ja
 MAKE_ARGS+=	JAPANESE_CFLAGS="-DJP -DEUC"
 
 .include "${MASTERDIR}/Makefile"

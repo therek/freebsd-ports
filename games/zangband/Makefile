@@ -2,7 +2,7 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD: ports/games/zangband/Makefile,v 1.3 2000/09/17 18:44:55 ade Exp $
+# $FreeBSD: ports/games/zangband/Makefile,v 1.4 2000/10/01 16:12:34 kevlo Exp $
 #
 
 PORTNAME=	zangband
@@ -84,7 +84,7 @@ do-install:
 
 post-build:
 	@${RM} -f ${PLIST}
-.for i in PLIST.a ${JA_PLIST} PLIST.b
+.for i in pkg-plist.a ${JA_PLIST} pkg-plist.b
 	@${CAT} ${PKGDIR}/${i} >> ${PLIST}
 .endfor
 
