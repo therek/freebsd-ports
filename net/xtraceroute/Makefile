@@ -2,7 +2,7 @@
 # Date created:				17 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.8 2000/10/05 06:42:20 reg Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.9 2000/11/01 15:51:08 sobomax Exp $
 #
 
 PORTNAME=	xtraceroute
@@ -22,8 +22,8 @@ USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-GL-prefix=${X11BASE}/lib \
 		--with-lib-GL
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}" \
+		LIBS="-L${LOCALBASE}/lib ${PTHREAD_LIBS}"
 
 DATAFILES=	ndg_files.tar.gz
 
