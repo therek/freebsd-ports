@@ -2,7 +2,7 @@
 # Date created:		03-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/lang/eperl/Makefile,v 1.31 1999/08/25 06:34:28 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eperl
@@ -34,6 +34,10 @@ MAN1=	eperl.1
 
 test:
 	@(cd ${WRKSRC}; make test)
+
+post-patch:
+	@find ${WRKSRC} -type f -name "*.[ch]" | xargs ${GREP} -l strnstr | \
+		xargs ${PERL} -pi -e 's|strnstr|ePerl_strnstr|g'
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/eperl ${PREFIX}/bin/eperl
