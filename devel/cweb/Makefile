@@ -2,7 +2,7 @@
 # Date created:		10 Feb 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cweb/Makefile,v 1.4 2000/04/11 21:27:41 mharo Exp $
+# $FreeBSD: ports/devel/cweb/Makefile,v 1.5 2000/04/19 10:56:04 tg Exp $
 #
 
 PORTNAME=	cweb
@@ -18,7 +18,6 @@ MAN1=		cweb.1
 
 pre-install:
 	@${MKDIR} ${PREFIX}/share/texmf/tex/generic/misc
-	@${MKDIR} ${PREFIX}/share/emacs/site-lisp
 
 post-install:
 	@${INSTALL_DATA} ${WRKDIR}/cwebmac-pdf.tex \
