@@ -1,8 +1,9 @@
-# $FreeBSD: ports/converters/Makefile,v 1.30 2000/03/29 19:42:30 will Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.31 2000/04/04 18:13:47 knu Exp $
 #
 
     SUBDIR += aish
     SUBDIR += btoa
+    SUBDIR += dumpasn1
     SUBDIR += fconv
     SUBDIR += i18ntools
     SUBDIR += iconv
