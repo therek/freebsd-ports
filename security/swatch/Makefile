@@ -2,7 +2,7 @@
 # Date created:					May 2 97
 # Whom:						jfitz
 #
-# $FreeBSD: ports/security/swatch/Makefile,v 1.9 2001/08/24 00:23:31 petef Exp $
+# $FreeBSD: ports/security/swatch/Makefile,v 1.10 2001/08/24 21:32:52 tobez Exp $
 #
 
 PORTNAME=	swatch
@@ -13,13 +13,14 @@ MASTER_SITES=	ftp://ftp.stanford.edu/general/security-tools/swatch/
 MAINTAINER=	joseph@randomnetworks.com
 
 BUILD_DEPENDS=	${site_perl}/Date/Format.pm:${PORTSDIR}/devel/p5-TimeDate \
+	${site_perl}/File/Tail.pm:${PORTSDIR}/devel/p5-File-Tail \
 	${site_perl}/${PERL_ARCH}/Date/Calc.pm:${PORTSDIR}/devel/p5-Date-Calc \
-	${site_perl}/File/Tail.pm:${PORTSDIR}/devel/p5-File-Tail
+	${site_perl}/${PERL_ARCH}/Time/HiRes.pm:${PORTSDIR}/devel/p5-Time-HiRes
 
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 
 PERL_CONFIGURE=	yes
-CONFIGURE_ARGS+=	INSTALLMAN1DIR=${PREFIX}/man/man1
+CONFIGURE_ARGS=	INSTALLMAN1DIR=${PREFIX}/man/man1
 
 MAN1=	swatch.1 swatch_oldrc2newrc.1
 
