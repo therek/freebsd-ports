@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.280 2000/03/07 03:27:25 billf Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.281 2000/03/07 06:42:01 reg Exp $
 #
 
     SUBDIR += 9term
@@ -78,7 +78,6 @@
     SUBDIR += xprompt
     SUBDIR += xscreensaver
     SUBDIR += xskyroot
-    SUBDIR += xsheep
     SUBDIR += xsnow
     SUBDIR += xstarroll
     SUBDIR += xtacy
