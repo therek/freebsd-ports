@@ -2,7 +2,7 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.25 2000/10/05 06:57:34 reg Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.26 2000/12/24 04:11:44 nakai Exp $
 #
 
 PORTNAME=	gqmpeg
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.netpedia.net/hosting/gqview/packages/ \
 		http://www.geocities.com/SiliconValley/Haven/5235/packages/
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	lyngbol@candid.dk
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
