@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.47 2004/10/13 19:53:36 des Exp $
+# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.48 2004/10/22 13:50:12 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.19";
+my $VERSION	= "2.7.20";
 my $COPYRIGHT	= "Copyright (c) 2000-2004 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -579,6 +579,7 @@ sub find_master($) {
 	}
 	if (defined($master) && $master !~ m/WRKDIRPREFIX/) {
 	    $master =~ s/^\$\{.CURDIR\}//;
+	    $master =~ s/^\$\{PORTSDIR}/..\/../;
 	    $master = "/$port/$master";
 	    $master =~ s|/+|/|g;
 	    1 while ($master =~ s|/[^\./]*/\.\./|/|);
