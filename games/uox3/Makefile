@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.11 2000/04/14 12:26:46 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uox3
@@ -24,7 +24,7 @@ MAKEFILE=	makefile
 ALL_TARGET=	linux
 
 do-build:
-	cd ${WRKSRC}/dev && ${GMAKE} -f ${MAKEFILE} CFLAGS="${CFLAGS}" ${ALL_TARGET}
+	cd ${WRKSRC}/dev && ${GMAKE} -f ${MAKEFILE} CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" ${ALL_TARGET}
 
 do-install:
 	-${RM} ${WRKDIR}/uox/uox3.ini.orig
