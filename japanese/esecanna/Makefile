@@ -2,7 +2,7 @@
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna/Makefile,v 1.20 2000/09/09 10:25:09 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	esecanna
@@ -41,6 +41,9 @@ post-patch:
 
 post-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/${STARTER} ${PREFIX}/etc/rc.d/
+	if [ -x ${PREFIX}/etc/rc.d/canna.sh ]; then \
+		${CHMOD} -x ${PREFIX}/etc/rc.d/canna.sh; \
+	fi
 	${MKDIR} ${PREFIX}/lib/esecanna
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/esecanna
