@@ -2,14 +2,14 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.75 2001/02/16 22:51:20 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.76 2001/03/29 16:34:04 sobomax Exp $
 #
 
 PORTNAME=		xchat
-PORTVERSION=		1.6.4
+PORTVERSION=		1.8.0
 CATEGORIES+=		irc gnome
-MASTER_SITES=		http://xchat.org/files/source/1.6/ \
-			http://xchat.linuxpower.org/files/source/1.6/
+MASTER_SITES=		http://xchat.org/files/source/1.8/ \
+			http://xchat.linuxpower.org/files/source/1.8/
 
 MAINTAINER=		jim@FreeBSD.org
 # This port has a slave port japanese/xchat.  Do not carelessly overwrite
@@ -24,7 +24,7 @@ USE_IMLIB=		yes
 WANT_GNOME=		yes
 GNU_CONFIGURE=		yes
 # Assign with `+=' for slave ports
-CONFIGURE_ARGS+=	--disable-python
+CONFIGURE_ARGS+=	--disable-python --disable-nls
 
 .include <bsd.port.pre.mk>
 
