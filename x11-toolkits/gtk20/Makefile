@@ -3,7 +3,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.53 1999/09/11 01:06:13 asami Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.54 1999/10/09 18:46:08 vanilla Exp $
 #
 
 DISTNAME=	gtk+-1.2.5
@@ -34,8 +34,5 @@ MAN1=		gtk12-config.1
 
 pre-build:
 	${RM} -rf ${WRKSRC}/docs/gtk.info*
-
-post-install:
-	@${MKDIR} ${PREFIX}/share/themes/engines
 
 .include <bsd.port.mk>
