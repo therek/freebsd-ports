@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.260 2004/10/13 16:23:33 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.261 2004/11/16 06:40:35 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -713,10 +713,10 @@ MASTER_SITE_RUBY+= \
 	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/
 
 MASTER_SITE_SAMBA+= \
-	http://us3.samba.org/samba/ftp/%SUBDIR%/ \
 	http://us1.samba.org/samba/ftp/%SUBDIR%/ \
-	http://us4.samba.org/samba/ftp/%SUBDIR%/ \
 	http://us2.samba.org/samba/ftp/%SUBDIR%/ \
+	http://us4.samba.org/samba/ftp/%SUBDIR%/ \
+	http://us3.samba.org/samba/ftp/%SUBDIR%/ \
 	ftp://ca.samba.org/%SUBDIR%/ \
 	ftp://de.samba.org/samba.org/%SUBDIR%/ \
 	ftp://ftp.k2.net/mirrors/samba/%SUBDIR%/ \
