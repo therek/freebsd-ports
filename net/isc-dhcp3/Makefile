@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.34 2000/06/25 21:08:07 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	isc-dhcp3
@@ -14,7 +14,7 @@ DISTNAME=	dhcp-3.0b1pl14
 
 MAINTAINER=	obrien@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libbind.a:${PORTSDIR}/net/bind8
+BUILD_DEPENDS=	${LOCALBASE}/include/bind/res_update.h:${PORTSDIR}/net/bind8
 
 Y2K=		http://www.isc.org/y2k.html
 
