@@ -2,11 +2,11 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.3 2000/10/05 06:57:33 reg Exp $
+# $FreeBSD: ports/audio/gkrellmvolume/Makefile,v 1.4 2000/10/27 10:26:52 ume Exp $
 #
 
 PORTNAME=	gkrellmvolume
-PORTVERSION= 	0.7
+PORTVERSION= 	0.8
 CATEGORIES=	audio
 MASTER_SITES=	http://gkrellm.luon.net/files/
 DISTNAME=	volume-${PORTVERSION}
@@ -15,6 +15,8 @@ MAINTAINER=	ume@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
+
+WRKSRC=		${WRKDIR}/volume
 
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
