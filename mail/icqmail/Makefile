@@ -2,7 +2,7 @@
 # Date created:		9 Jun 2000
 # Whom:			Michael Vasilenko <acid@cn.ua>
 #
-# $FreeBSD: ports/mail/icqmail/Makefile,v 1.1 2000/07/10 15:45:33 steve Exp $
+# $FreeBSD: ports/mail/icqmail/Makefile,v 1.2 2000/07/19 15:34:22 knu Exp $
 #
 
 PORTNAME=	icqmail
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	icq.1:${PORTSDIR}/net/icqlib \
 		mimelib.3:${PORTSDIR}/converters/kdesupport2 \
-		guile.6:${PORTSDIR}/lang/guile
+		guile.9:${PORTSDIR}/lang/guile
 
 USE_NEW_GCC=	yes
 GNU_CONFIGURE=	yes
