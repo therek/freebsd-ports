@@ -3,13 +3,15 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.24 2000/04/22 10:14:01 mharo Exp $
+# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.25 2001/04/02 09:24:28 mharo Exp $
 #
 
 PORTNAME=	xosview
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 CATEGORIES=	sysutils
-MASTER_SITES=	http://lore.ece.utexas.edu/~bgrayson/xosview/ \
+MASTER_SITES=	\
+		ftp://ftp.openbsd.ru/pub/OpenBSD/distfiles/ \
+		http://lore.ece.utexas.edu/~bgrayson/xosview/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/status/xstatus
 
