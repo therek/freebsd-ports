@@ -2,7 +2,7 @@
 # Date created:				5 June 2000
 # Whom:					walt
 #
-# $FreeBSD: ports/sysutils/monitord/Makefile,v 1.1 2000/06/09 21:51:08 will Exp $
+# $FreeBSD: ports/sysutils/monitord/Makefile,v 1.2 2000/06/20 09:30:28 sobomax Exp $
 #
 
 PORTNAME=	monitord
@@ -13,5 +13,8 @@ MASTER_SITES=	ftp://ftp.erudition.net/pub/monitord/
 MAINTAINER=	walt@erudition.net
 
 MAN8=		monitord.8
+
+post-install:
+	@${CP} ${WRKSRC}/monitord.conf ${PREFIX}/etc/monitord.conf.dist
 
 .include <bsd.port.mk>
