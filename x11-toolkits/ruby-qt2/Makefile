@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.1 2000/08/12 16:48:47 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt/Makefile,v 1.2 2000/08/12 20:09:35 knu Exp $
 #
 
 PORTNAME=	qt
@@ -31,7 +31,7 @@ RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
 QTLIBDIR=	${X11BASE}/lib
 QTINCDIR=	${X11BASE}/include/X11/qt
 
-.if defined(WITH_QTI18N)
+.if defined(WITH_I18N)
 I18NQT=		-DI18NQT
 QTLIB=		qti18n
 QTLIB_SHLIBVER=	3
