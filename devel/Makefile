@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.353 2000/10/03 23:15:54 nectar Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.354 2000/10/10 18:08:11 ade Exp $
 #
 
     SUBDIR += ElectricFence
@@ -248,6 +248,7 @@
     SUBDIR += perforce
     SUBDIR += pharmacy
     SUBDIR += picprog
+    SUBDIR += pinstall
     SUBDIR += pmake
     SUBDIR += popt
     SUBDIR += portcheckout
