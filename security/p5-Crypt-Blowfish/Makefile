@@ -2,11 +2,11 @@
 # Date created:				2000/09/18
 # Whom:					patrick@mindstep.com
 #
-# $FreeBSD: ports/security/p5-Crypt-Blowfish/Makefile,v 1.1 2000/09/19 16:10:52 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-Blowfish
-PORTVERSION=	2.06
+PORTVERSION=	2.09
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
