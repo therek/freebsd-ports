@@ -2,7 +2,7 @@
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.24 2000/10/17 07:00:29 ache Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.25 2000/10/25 00:43:33 ache Exp $
 #
 
 PORTNAME=	webalizer
@@ -31,7 +31,7 @@ DOC1=		CHANGES COPYING Copyright INSTALL \
 SUPP_LANG=	catalan chinese czech danish dutch english estonian \
 		finnish french german greek hungarian indonesian italian \
 		korean polish portuguese portuguese_brazil romanian \
-		russain slovak spanish swedish
+		russian slovak spanish swedish
 WRKSRC=		${WRKDIR}/${DISTNAME:S/-src$//}
 MAKE_ARGS+=	CFLAGS="${CFLAGS}"
 
