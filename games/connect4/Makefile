@@ -1,11 +1,11 @@
-# New ports collection makefile for:  connect4 
+# New ports collection makefile for:  connect4
 # Version required:	3.2
 # Date created:		Thu May  8 16:41:01 EST 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/games/connect4/Makefile,v 1.3 1999/08/25 06:03:06 obrien Exp $
+# $FreeBSD: ports/games/connect4/Makefile,v 1.4 1999/10/21 05:53:28 cpiazza Exp $
 #
-      
+
 DISTNAME=	connect4
 PKGNAME=	connect4-3.2
 CATEGORIES=	games
