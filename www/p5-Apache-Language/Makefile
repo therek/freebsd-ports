@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 05:22:52 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-Language/Makefile,v 1.1 2001/01/01 10:36:22 will Exp $
+# $FreeBSD: ports/www/p5-Apache-Language/Makefile,v 1.2 2001/01/01 11:06:15 will Exp $
 #
 
 PORTNAME=	Apache-Language
@@ -13,6 +13,9 @@ MASTER_SITE_SUBDIR=	Apache
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/src.pm:${PORTSDIR}/www/p5-Apache \
+		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/I18N/LangTags.pm:${PORTSDIR}/misc/p5-I18N-LangTags
 
 USE_PERL5=	yes
 PERL_CONFIGURE=	yes
