@@ -3,11 +3,11 @@
 # Whom:				girgen@partitur.se
 # Based on work by:		thepish
 #
-# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.24 2000/07/27 03:41:36 sada Exp $
+# $FreeBSD: ports/www/linux-netscape47-communicator/Makefile,v 1.25 2001/04/07 16:41:36 mharo Exp $
 #
 
 PORTNAME=	linux-netscape-${BROWSER}
-PORTVERSION=	4.77
+PORTVERSION=	4.78
 CATEGORIES=	www linux
 
 MAINTAINER=	girgen@partitur.se
