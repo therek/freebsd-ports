@@ -2,7 +2,7 @@
 # Date created:		4 April 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/devel/py-orbit/Makefile,v 1.2 2001/06/27 10:14:57 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	orbit
@@ -21,5 +21,7 @@ USE_GMAKE=	yes
 USE_GLIB=	yes
 GNU_CONFIGURE=	yes
 USE_PYTHON=	yes
+
+CFLAGS+=	-I/usr/local/include
 
 .include <bsd.port.mk>
