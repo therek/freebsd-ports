@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.54 2000/07/28 20:27:42 sada Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.55 2000/08/11 04:21:12 will Exp $
 #
 
     SUBDIR += aftp
@@ -42,6 +42,7 @@
     SUBDIR += vMac
     SUBDIR += vmsbackup
     SUBDIR += vmware
+    SUBDIR += vmware-tools
     SUBDIR += vmware2
     SUBDIR += vpce
     SUBDIR += vxtools
