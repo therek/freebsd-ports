@@ -2,11 +2,11 @@
 # Date created:		3 December 2000
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/www/reportmagic/Makefile,v 1.4 2001/05/10 18:14:37 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	reportmagic
-PORTVERSION=	2.10
+PORTVERSION=	2.13
 CATEGORIES=	www
 MASTER_SITES=	http://www.reportmagic.com/	\
 		http://www.reportmagic.org.uk/	\
