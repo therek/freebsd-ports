@@ -2,12 +2,11 @@
 # Date created:				26 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/kmago/Makefile,v 1.2 2001/03/27 10:07:05 demon Exp $
+# $FreeBSD: ports/ftp/kmago/Makefile,v 1.3 2001/04/13 08:54:49 demon Exp $
 #
 
 PORTNAME=	kmago
-PORTVERSION=	1.1
-PORTREVISION=	1
+PORTVERSION=	1.1.2
 CATEGORIES=	ftp kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	kmago
