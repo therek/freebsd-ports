@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.359 2001/05/18 19:06:13 sf Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.360 2001/05/18 19:09:01 sf Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -165,6 +165,7 @@
     SUBDIR += makejvf
     SUBDIR += man
     SUBDIR += man-doc
+    SUBDIR += marumoji-fonts
     SUBDIR += mendexk-euc
     SUBDIR += mendexk-sjis
     SUBDIR += mh
