@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.241 2001/07/22 07:52:00 markp Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.242 2001/07/28 17:46:33 dd Exp $
 #
 
     SUBDIR += abook
@@ -122,6 +122,7 @@
     SUBDIR += p5-Mail-Sender
     SUBDIR += p5-Mail-Sendmail
     SUBDIR += p5-Mail-Tools
+    SUBDIR += p5-Mail-Verify
     SUBDIR += pathalias
     SUBDIR += perdition
     SUBDIR += pflogsumm
