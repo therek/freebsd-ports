@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.243 2001/08/05 03:39:50 lioux Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.244 2001/08/17 17:29:18 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -118,6 +118,7 @@
     SUBDIR += p5-Mail-Folder
     SUBDIR += p5-Mail-Freshmeat
     SUBDIR += p5-Mail-IMAPClient
+    SUBDIR += p5-Mail-ListDetector
     SUBDIR += p5-Mail-MailStats
     SUBDIR += p5-Mail-POP3Client
     SUBDIR += p5-Mail-Sender
