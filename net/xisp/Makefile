@@ -3,7 +3,7 @@
 # Date created:		June 24, 1999
 # Whom:			morishim@cig.mot.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/xisp/Makefile,v 1.1.1.1 1999/09/25 05:59:02 taoka Exp $
 
 DISTNAME=       xisp-2.6
 CATEGORIES=	net
@@ -13,7 +13,8 @@ DISTFILES=	xisp-2.6-noufc.tar.gz \
 
 MAINTAINER=	morishim@cig.mot.com
 
-LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms \
+		Xpm.4:${PORTSDIR}/graphics/xpm
 
 WRKSRC=         ${WRKDIR}/xisp-2.6
 MAN1=		xisp.1
