@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/py-wxPython/files/patch-contrib::stc::contrib::src::stc::scintilla::src::PosRegExp.cxx,v 1.1 2001/11/27 12:33:19 sobomax Exp $
 
 --- contrib/stc/contrib/src/stc/scintilla/src/PosRegExp.cxx	2001/11/27 12:10:53	1.1
 +++ contrib/stc/contrib/src/stc/scintilla/src/PosRegExp.cxx	2001/11/27 12:12:05
