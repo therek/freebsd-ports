@@ -2,7 +2,7 @@
 # Date created:		2 May 1998
 # Whom:			Bruce A. Mah <bmah@ca.sandia.gov>
 #
-# $FreeBSD: ports/x11/dxpc/Makefile,v 1.5 2000/04/13 19:09:16 cpiazza Exp $
+# $FreeBSD: ports/x11/dxpc/Makefile,v 1.6 2000/06/02 01:09:53 will Exp $
 #
 
 PORTNAME=	dxpc
@@ -10,7 +10,7 @@ PORTVERSION= 	3.8.0
 CATEGORIES=	x11
 MASTER_SITES=	http://www.vigor.nu/dxpc/3.8.0/
 
-MAINTAINER=	bmah@acm.org
+MAINTAINER=	bmah@freebsd.org
 
 LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/lzo
 
