@@ -2,24 +2,21 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.47 2000/07/29 02:44:52 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.48 2000/08/29 23:44:27 will Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	20000724A
+PORTVERSION=	20000829A
 CATEGORIES=	net news kde
-MASTER_SITES=	$(MASTER_SITE_LOCAL)
+MASTER_SITES=	http://www.physics.purdue.edu/~will/
 MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 		qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2 \
-		QwSpriteField.8:${PORTSDIR}/converters/kdesupport2
+		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
-BROKEN=		"Does not use current snapshot"
-WRKSRC=		${WRKDIR}/kdenetwork
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_NEWGCC=	yes
