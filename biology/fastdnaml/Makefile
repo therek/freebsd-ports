@@ -2,7 +2,7 @@
 # Date created:		12 Oct 2000
 # Whom:	      		Motomichi Matsuzaki <mzaki@e-mail.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/fastdnaml/Makefile,v 1.1 2000/10/12 12:31:13 jeh Exp $
 #
 
 PORTNAME=	fastdnaml
@@ -13,6 +13,7 @@ DISTNAME=	fastDNAml_${PORTVERSION}
 
 MAINTAINER=	mzaki@e-mail.ne.jp
 
+USE_GMAKE=	yes
 do-build:
 	@(cd ${WRKSRC}/source; ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${ALL_TARGET})
 
