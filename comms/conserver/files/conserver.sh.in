@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD$
+# $FreeBSD: ports/comms/conserver/files/conserver.sh,v 1.2 2000/11/21 17:31:44 obrien Exp $
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/$(basename $0)\$"); then
     echo "$0: Cannot determine the PREFIX" >&2
@@ -14,7 +14,7 @@ start)
 	fi
 	;;
 stop)
-	killall conserver && echo -n ' conserver'
+	killall -TERM conserver && echo -n ' conserver'
 	;;
 restart)
 	$0 stop
