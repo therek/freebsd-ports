@@ -2,14 +2,13 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.8 2000/11/09 15:25:10 kevlo Exp $
+# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.9 2000/11/10 13:10:44 kevlo Exp $
 #
 
 PORTNAME=	wminet
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	sysutils windowmaker
-MASTER_SITES=   ${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	kevlo
+MASTER_SITES=	http://www.neotokyo.org/illusion/downloads/
 
 MAINTAINER=	sk-ports@vegamuse.org
 
@@ -20,8 +19,8 @@ USE_XPM=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/wminet
-	${INSTALL_MAN} ${WRKSRC}/../HINTS ${PREFIX}/share/doc/wminet
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/../HINTS ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
