@@ -2,7 +2,7 @@
 # Date created:         August 30 2001
 # Whom:                 Brian Somers <brian@freebsd-services.com>
 #
-# $FreeBSD: ports/net/pppoa/Makefile,v 1.1 2001/08/30 22:07:36 brian Exp $
+# $FreeBSD: ports/net/pppoa/Makefile,v 1.2 2001/08/31 07:55:49 brian Exp $
 #
 
 PORTNAME=	pppoa
@@ -29,5 +29,7 @@ post-install:
 		${CHOWN} root:wheel ${PREFIX}/arpwatch;		\
 	fi
 	${INSTALL_DATA} ${WRKSRC}/../mgmt/mgmt.o ${PREFIX}/libdata/.
+	${INSTALL_DATA} ${FILESDIR}/quick-install ${PREFIX}/share/speedtouch/.
+	${CAT} ${PREFIX}/share/speedtouch/quick-install
 
 .include <bsd.port.mk>
