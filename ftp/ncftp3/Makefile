@@ -3,11 +3,11 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.77 2000/06/16 08:48:12 sobomax Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.78 2000/06/16 21:52:38 asami Exp $
 #
 
 PORTNAME=	ncftp3
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 DISTNAME=	ncftp-${PORTVERSION}-src
