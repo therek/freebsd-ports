@@ -2,7 +2,7 @@
 # Date created:				24 Oct 2000
 # Whom:					ebakke@trolltech.com
 #
-# $FreeBSD: ports/databases/myodbc/Makefile,v 1.3 2001/01/21 15:40:32 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	myodbc
@@ -33,6 +33,14 @@ LIB_DEPENDS+=		odbc.1:${PORTSDIR}/databases/unixODBC
 .else	# assume we're using iodbc
 LIB_DEPENDS+=		iodbc.3:${PORTSDIR}/databases/libiodbc
 CONFIGURE_ARGS+=	--with-odbc-ini=${LOCALBASE}/etc/libiodbc/odbc.ini
+.endif
+
+# Allow a new value of ODBCVER to be set at build-time
+.if defined(ODBCVER)
+post-patch:
+	cd ${WRKSRC}; \
+	${MV} myodbc.h myodbc.h.orig; \
+	${SED} -e "s/ODBCVER 0x0250/ODBCVER ${ODBCVER}/" < myodbc.h.orig > myodbc.h
 .endif
 
 # XXX untested
