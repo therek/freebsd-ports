@@ -2,11 +2,12 @@
 # Date created:		Jun 1 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/jisx0213-fonts/Makefile,v 1.1 2001/06/01 14:25:58 sf Exp $
 #
 
 PORTNAME=	jisx0213-fonts
 PORTVERSION=	1.03
+PORTREVISION=	1
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=	http://www.mars.sphere.ne.jp/imamura/
 DISTFILES=	jiskan16-2000-1.bdf.gz jiskan16-2000-2.bdf.gz \
