@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.108 2001/02/16 11:39:57 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.109 2001/03/09 01:40:52 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -25,7 +25,7 @@ DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX} ${DISTNAME}-rt${EXTRACT_SUFX}
 #PATCHFILES+=	6.0.0${p}
 #.endfor
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER?=	obrien@FreeBSD.org
 
 .if defined(PACKAGE_BUILDING) && !defined(LITE)
 BUILD_DEPENDS=	tclsh8.0:${PORTSDIR}/lang/tcl80
