@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/README,v 1.11 2003/02/18 12:45:59 knu Exp $
+$FreeBSD: ports/Tools/scripts/README,v 1.12 2004/01/02 23:27:29 obrien Exp $
 
 addport	- replacement for easy-import
 
@@ -8,6 +8,8 @@ checkcats.py - verify that master categories in all ports are correct and
                report any problems.
 checknewvers - checks for availability for a newest version of distfiles on
                MASTER_SITES (ftp only).
+chkorigin.sh - checks all ports in the tree for a wrong PKGORIGIN.
+               Run this tool after every repocopy.
 close-pr  - a slightly hacked version of edit-pr(1) to quickly close PR.
 de-pkg-comment - converts pkg-comment to COMMENT (will be obsoleted when
                  the mass conversion is finished)
