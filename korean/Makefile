@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.40 2000/01/29 22:28:22 steve Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.41 2000/02/08 16:22:11 imura Exp $
 #
 
     SUBDIR += Wnn
@@ -41,8 +41,6 @@
     SUBDIR += netscape3
     SUBDIR += netscape4-communicator
     SUBDIR += netscape4-navigator
-    SUBDIR += netscape46-communicator
-    SUBDIR += netscape46-navigator
     SUBDIR += netscape47-communicator
     SUBDIR += netscape47-navigator
     SUBDIR += nh2ps
