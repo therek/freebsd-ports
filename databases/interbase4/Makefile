@@ -3,13 +3,13 @@
 # Date created:				1998-nov-01
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/databases/interbase4/Makefile,v 1.5 1999/08/25 05:21:15 obrien Exp $
+# $FreeBSD: ports/databases/interbase4/Makefile,v 1.6 1999/08/28 01:57:00 mharo Exp $
 #
 
 DISTNAME=	IB_4.0_FreeBSD
 PKGNAME=	interbase-4.0
 CATEGORIES=	databases
-MASTER_SITES=	http://iblinux.rios.co.jp/dloadfb/
+MASTER_SITES=	http://iblinux.rios.co.jp/intl/dloadfb/
 
 MAINTAINER=	berend@pobox.com
 
@@ -27,7 +27,7 @@ ARCHIVE=	${WRKSRC}/interbase.tar
 do-fetch:
 	@if [ ! -f ${DISTDIR}/${DISTNAME}.tar.gz ]; then \
 		${ECHO_MSG} "Sorry, this package cannot be fetched automagically."; \
-		${ECHO_MSG} "Point your browser to http://iblinux.rios.co.jp/dloadfb."; \
+		${ECHO_MSG} "Point your browser to http://iblinux.rios.co.jp/intl/dloadfb/."; \
 		${ECHO_MSG} "And put the package in ${DISTDIR}."; \
 		exit 1; \
 	fi
