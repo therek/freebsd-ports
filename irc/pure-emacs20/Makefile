@@ -2,7 +2,7 @@
 # Date Created:		3 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/pure-emacs20/Makefile,v 1.1 2001/05/06 10:38:29 knu Exp $
+# $FreeBSD: ports/irc/pure-emacs20/Makefile,v 1.2 2001/06/14 15:13:41 knu Exp $
 #
 
 PORTNAME=	pure
@@ -18,9 +18,11 @@ EMACS_PORT_NAME?=	emacs20
 LISPDIR?=	${EMACS_LIBDIR}/site-lisp/${PORTNAME}
 EMACS_ONLY?=	""
 XEMACS_ONLY?=	"@comment "
+PUREBIN?=	bin
 
 PLIST_SUB=	LISPDIR=${LISPDIR} \
 		EMACS_ONLY=${EMACS_ONLY} \
-		XEMACS_ONLY=${XEMACS_ONLY}
+		XEMACS_ONLY=${XEMACS_ONLY} \
+		PUREBIN=${PUREBIN}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date Created:		4 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/pure-xemacs21-mule/Makefile,v 1.1 2001/05/06 10:41:44 knu Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../pure-emacs20
@@ -11,7 +11,9 @@ EMACS_PORT_NAME=	xemacs21-mule
 LISPDIR=		lib/xemacs/site-packages/lisp/${PORTNAME}
 EMACS_ONLY=		"@comment "
 XEMACS_ONLY=		""
-ALL_TARGET=		package
+ALL_TARGET=		package c
 INSTALL_TARGET=		install-package
+PUREBIN=		${EMACS_LIBDIR}/site-packages/etc/pure
+MAKE_ENV=		LANG=ja_JP.EUC
 
 .include <${MASTERDIR}/Makefile>
