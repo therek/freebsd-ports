@@ -2,7 +2,7 @@
 # Date created:				7 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/dbview/Makefile,v 1.4 2000/04/08 22:48:23 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		dbview
@@ -17,6 +17,11 @@ MAINTAINER=		ports@FreeBSD.org
 LIB_DEPENDS=		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 MAN1=			dbview.1
+
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/db_dump.c
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/dbview ${PREFIX}/bin
