@@ -3,14 +3,14 @@
 # Date created:				2 Dec 1996
 # Whom:					nsayer@quack.kfu.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/calctool/Makefile,v 1.4 1999/08/25 07:07:36 obrien Exp $
 #
- 
+
 DISTNAME=       calctool-2.4pl13
 PKGNAME=        calctool-2.4.13
 CATEGORIES=     math
 MASTER_SITES=   ftp://ftp.kfu.com/pub/
- 
+
 MAINTAINER=     nsayer@quack.kfu.com
 
 USE_X_PREFIX=		yes
