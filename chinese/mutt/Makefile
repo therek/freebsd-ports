@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/chinese/mutt/Makefile,v 1.2 2000/08/30 05:31:57 obrien Exp $
+# $FreeBSD: ports/chinese/mutt/Makefile,v 1.3 2000/08/31 21:19:22 obrien Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../mail/mutt
@@ -16,3 +16,5 @@ EXTRA_PATCHES=	${.CURDIR}/patches/patch-init.h  \
 		${.CURDIR}/patches/patch-sendlib.c 
 
 .include "${MASTERDIR}/Makefile"
+
+CONFIGURE_ARGS+= --enable-locales-fix
