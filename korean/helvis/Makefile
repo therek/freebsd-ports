@@ -3,11 +3,11 @@
 # Date created:         2 Apr 1997
 # Whom:                 Choi Jun Ho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/helvis/Makefile,v 1.3 1999/08/30 12:08:55 peter Exp $
 #
 
 DISTNAME=	helvis-1.8h2-
-PKGNAME=	ko-helvis-1.8h2-
+PKGNAME=	ko-helvis-1.8h2
 CATEGORIES=	korean editors
 MASTER_SITES=	ftp://ftp.kaist.ac.kr/pub/hangul/editor/HElvis/ \
 		ftp://sunsite.kren.nm.kr/pub/packages/hangul/editor/HElvis/
