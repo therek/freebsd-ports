@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.18 2000/12/15 17:56:51 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.19 2000/12/16 01:43:21 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
 MAINTAINER=	ade@FreeBSD.org
+
+BROKEN=		"Build failures with bonobo-0.31"
 
 # Note: gnomepilot support has been forcibly taken out for now, so
 # we can save ourselves a little bit of build time
