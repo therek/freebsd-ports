@@ -15,7 +15,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: $
+# $FreeBSD: ports/java/javavmwrapper/src/javavmwrapper.sh,v 1.1.1.1 2000/06/12 09:42:51 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 
@@ -42,8 +42,9 @@ registerVM () {
        /usr/bin/touch "${CONF}"
     fi
 
-    if [ ! -x "${1}" ]; then
-        /bin/echo "${IAM}: warning: the specified JavaVM \"${1}\" either not exists of not executable" >&2
+    VM=`/bin/echo "${1}" | sed 's|#.*||'`
+    if [ ! -x ${VM} ]; then
+        /bin/echo "${IAM}: warning: the specified JavaVM \"${VM}\" either not exists of not executable" >&2
     fi
 
     /bin/ed "${CONF}" >/dev/null <<EOF
