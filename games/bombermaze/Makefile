@@ -2,11 +2,11 @@
 # Date created:				25 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/bombermaze/Makefile,v 1.10 2001/01/02 19:29:51 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bombermaze
-PORTVERSION=	0.6.4
+PORTVERSION=	0.6.5
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
