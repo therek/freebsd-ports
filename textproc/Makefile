@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.72 1999/11/26 20:55:44 steve Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.73 1999/12/10 15:32:53 steve Exp $
 #
 
     SUBDIR += agrep
@@ -24,6 +24,7 @@
     SUBDIR += glimpse
     SUBDIR += grap
     SUBDIR += gxditview
+    SUBDIR += hevea
     SUBDIR += htdig
     SUBDIR += html
     SUBDIR += info2html
