@@ -2,7 +2,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <zerium@webindex.no>
 #
-# $FreeBSD: ports/misc/kwatch/Makefile,v 1.13 2000/02/24 07:01:02 asami Exp $
+# $FreeBSD: ports/misc/kwatch/Makefile,v 1.14 2000/04/14 08:46:07 asami Exp $
 #
 
 PORTNAME=	kwatch
@@ -10,8 +10,6 @@ PORTVERSION=	0.3
 CATEGORIES=	misc kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1/apps/utils
-
-MAINTAINER=	zerium@webindex.no
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
