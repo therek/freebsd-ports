@@ -1,8 +1,9 @@
-# $FreeBSD: ports/net/Makefile,v 1.305 1999/10/09 16:40:59 dan Exp $
+# $FreeBSD: ports/net/Makefile,v 1.306 1999/10/15 10:41:55 asami Exp $
 #
 
     SUBDIR += SSLtelnet
     SUBDIR += archie
+    SUBDIR += archie.el
     SUBDIR += argus
     SUBDIR += arla
     SUBDIR += arpwatch
