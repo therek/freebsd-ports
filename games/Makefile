@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.269 2000/05/18 15:19:34 ade Exp $
+# $FreeBSD: ports/games/Makefile,v 1.270 2000/05/19 19:56:44 will Exp $
 #
 
     SUBDIR += 3dc
@@ -121,7 +121,6 @@
     SUBDIR += rocksndiamonds
     SUBDIR += rollemup
     SUBDIR += rubix
-    SUBDIR += sdlquake
     SUBDIR += seabattle
     SUBDIR += seahaven
     SUBDIR += sl
