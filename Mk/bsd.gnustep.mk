@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.8 2003/10/19 12:04:44 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.9 2004/01/20 09:14:09 marcus Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -74,7 +74,7 @@ PLIST_SUB+=	SYSTEMLIBRARY="System/Library"
 PLIST_SUB+=	LOCALLIBRARY="Local/Library"
 PLIST_SUB+=	NOFLAT=""
 .if defined(WITH_GNUSTEP_DEVEL)
-PKGNAMESUFFIX?=	-devel
+PKGNAMESUFFIX?=	-devel${PKGNAMESUFFIX2}
 PLIST_SUB+=	GNUSTEP_DEVEL=""
 PLIST_SUB+=	GNUSTEP_STABLE="@comment "
 .else
