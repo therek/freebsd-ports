@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.10 2000/04/14 21:01:57 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.11 2000/04/17 04:23:22 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -76,6 +76,7 @@ setoptions:
 		${FILESDIR}/vmware.sh > ${WRKDIR}/vmware.sh
 
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
+		-e 's;@@LINUX_DIR@@;${LINUX_DIR};' \
 		${FILESDIR}/vmware > ${WRKDIR}/vmware
 
 pre-install: setoptions
