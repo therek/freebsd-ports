@@ -2,11 +2,11 @@
 # Date Created:				12 Aug 2001
 # Whom:					Shell Hung <shell@shellhung.org>
 #
-# $FreeBSD: ports/devel/p5-Test-Simple/Makefile,v 1.6 2001/10/02 17:59:27 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Test-Simple
-PORTVERSION=	0.30
+PORTVERSION=	0.32
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Test
