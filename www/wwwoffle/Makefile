@@ -2,18 +2,23 @@
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.11 2000/10/08 10:23:21 asami Exp $
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.12 2000/11/01 20:37:04 will Exp $
 #
 
 PORTNAME=	wwwoffle
-PORTVERSION= 	2.5e
-CATEGORIES=	www
+PORTVERSION= 	2.6
+CATEGORIES=	www ipv6
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/httpd/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/servers
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
+		ftp://ftp.pasta.cs.uit.no/pub/IPv6/misc/
+PATCHFILES=	wwwoffle-26-v6-20001121.diff.gz
+PATCH_DIST_STRIP=	-p1
+
+MAINTAINER=	sumikawa@FreeBSD.org
 
 USE_PERL5=	yes
 
@@ -51,7 +56,7 @@ do-configure:
 post-install:
 	@${MKDIR} ${SPOOL}/wwwoffle
 	@${INSTALL_SCRIPT} ${WRKSRC}/upgrade-config.pl ${SPOOL}/wwwoffle
-	@${INSTALL_SCRIPT} ${FILESDIR}/wwwoffled.sh ${PREFIX}/etc/rc.d/wwwoffled.sh.sample
+	@${SED} 's@%PREFIX%@${LOCALBASE}@' ${FILESDIR}/wwwoffled.sh > ${PREFIX}/etc/rc.d/wwwoffled.sh
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
