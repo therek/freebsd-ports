@@ -2,13 +2,14 @@
 # Date created:			26 Jan 1997
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/delegate/Makefile,v 1.27 2000/07/13 09:21:35 max Exp $
+# $FreeBSD: ports/net/delegate/Makefile,v 1.28 2000/10/08 10:22:27 asami Exp $
 #
 
 PORTNAME=	delegate
-PORTVERSION=	6.1.16
+PORTVERSION=	6.1.19
 CATEGORIES=	net www japanese
-MASTER_SITES=	ftp://etlport.etl.go.jp/pub/DeleGate/
+MASTER_SITES=	ftp://ftp.delegate.org/pub/DeleGate/ \
+		ftp://ftp.etl.go.jp/pub/DeleGate/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	max@FreeBSD.org
