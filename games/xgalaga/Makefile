@@ -2,11 +2,12 @@
 # Date created:		27 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xgalaga/Makefile,v 1.16 2000/08/03 09:24:08 asami Exp $
+# $FreeBSD: ports/games/xgalaga/Makefile,v 1.17 2000/10/08 01:55:28 asami Exp $
 #
 
 PORTNAME=	xgalaga
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games

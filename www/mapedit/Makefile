@@ -2,11 +2,12 @@
 # Date created:		Fr   4 Apr 1997 17:45:31 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/mapedit/Makefile,v 1.17 2000/04/10 00:05:49 cpiazza Exp $
+# $FreeBSD: ports/www/mapedit/Makefile,v 1.18 2000/10/29 22:39:07 steve Exp $
 #
 
 PORTNAME=	mapedit
 PORTVERSION= 	2.3
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.boutell.com/pub/boutell/mapedit/
 DISTNAME=	${PORTNAME}${PORTVERSION}

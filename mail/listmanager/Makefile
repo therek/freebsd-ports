@@ -2,11 +2,12 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD: ports/mail/listmanager/Makefile,v 1.2 2000/08/17 02:07:33 kris Exp $
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.3 2000/09/08 09:37:25 kris Exp $
 #
 
 PORTNAME=	listmanager
 PORTVERSION=	2.105.1
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.listmanager.org/
 DISTNAME=	${PORTNAME}

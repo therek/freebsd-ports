@@ -2,11 +2,12 @@
 # Date Created:		15 December 1999
 # Whom:			Garrett Wollman <wollman@lcs.mit.edu>
 #
-# $FreeBSD: ports/graphics/p5-Chart-PNGgraph/Makefile,v 1.4 2000/04/23 12:24:20 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-Chart-PNGgraph/Makefile,v 1.5 2000/10/29 22:41:58 steve Exp $
 #
 
 PORTNAME=	Chart-PNGgraph
 PORTVERSION=	1.21
+PORTREVISION=	1
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Chart
