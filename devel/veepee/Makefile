@@ -2,7 +2,7 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/veepee/Makefile,v 1.4 2000/10/21 15:40:46 sobomax Exp $
+# $FreeBSD: ports/devel/veepee/Makefile,v 1.5 2000/10/23 08:14:50 sobomax Exp $
 #
 
 PORTNAME=	veepee
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	LDFLAGS="-pthread ${PYTHON_LIBS}"
 CONFIGURE_ARGS=	--with-gd-includes=${LOCALBASE}/include/gd \
 		--disable-kde
 .if exists(/usr/lib/libcrypto.a)
-PYTHON_LIBS+=	-lcrypto
+PYTHON_LIBS+=	-lssl -lcrypto
 .endif
 
 pre-patch:

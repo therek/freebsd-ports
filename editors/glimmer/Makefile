@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/glimmer/Makefile,v 1.12 2000/10/23 08:14:50 sobomax Exp $
+# $FreeBSD: ports/editors/glimmer/Makefile,v 1.13 2000/10/26 10:12:11 sobomax Exp $
 #
 
 PORTNAME=	glimmer
@@ -21,7 +21,7 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 .if exists(/usr/lib/libcrypto.a)
-PYTHON_LIBS=	-lcrypto
+PYTHON_LIBS=	-lssl -lcrypto
 .endif
 PYTHON_LIBS+=	-lutil -lreadline -lcrypt -lpython
 
