@@ -2,7 +2,7 @@
 # Date created:		Dec 13 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.3 2001/02/03 20:41:26 will Exp $
+# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.4 2001/05/08 15:29:26 mi Exp $
 #
 
 PORTNAME=	mod_gzip
@@ -23,7 +23,7 @@ DISTFILES+=	changes.txt commands.txt samples.txt
 
 NO_WRKSUBDIR=	YES
 
-DIST_SUBDIR=	${PORTNAME}
+DIST_SUBDIR=	${PORTNAME}-${PORTVERSION}
 EXTRACT_AFTER_ARGS=	> ${PORTNAME}.c
 
 do-build:
