@@ -2,11 +2,11 @@
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.14 2000/10/27 12:30:20 jkoshy Exp $
+# $FreeBSD: ports/devel/ctags/Makefile,v 1.15 2001/03/21 05:59:30 jkoshy Exp $
 #
 
 PORTNAME=	ctags
-PORTVERSION=	5.0
+PORTVERSION=	5.0.1
 CATEGORIES=	devel
 MASTER_SITES=	http://ctags.sourceforge.net/archives/ \
 		${MASTER_SITE_SUNSITE} \
