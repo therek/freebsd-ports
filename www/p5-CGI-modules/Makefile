@@ -3,7 +3,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI/Makefile,v 1.10 1999/08/31 02:43:07 peter Exp $
+# $FreeBSD: ports/www/p5-CGI/Makefile,v 1.11 1999/08/31 06:52:03 mharo Exp $
 #
 
 DISTNAME=	CGI-modules-2.76
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	CGI
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS= 	${PREFIX}/lib/perl5/site_perl/URI/Escape.pm:${PORTSDIR}/www/p5-libwww
+BUILD_DEPENDS= 	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww
 
 USE_PERL5=	YES
 
