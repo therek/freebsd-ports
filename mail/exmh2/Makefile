@@ -3,7 +3,7 @@
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.35 1999/11/10 21:28:21 jim Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.36 1999/12/01 08:04:17 markm Exp $
 #
 
 # "?=" lines are for sharing this Makefile with japanese/exmh2.
@@ -14,10 +14,10 @@ MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/exmh/
 MAINTAINER?=	markm@FreeBSD.org
 
 .if defined(JAPANESE_EXMH)
-RUN_DEPENDS=	wish8.2jp:${PORTSDIR}/japanese/tk82
-BUILD_DEPENDS=	tclsh8.2jp:${PORTSDIR}/japanese/tcl82
-WISH=		wish8.2jp
-TCLSH=		tclsh8.2jp
+RUN_DEPENDS=	wish8.0jp:${PORTSDIR}/japanese/tk80
+BUILD_DEPENDS=	tclsh8.0jp:${PORTSDIR}/japanese/tcl80
+WISH=		wish8.0jp
+TCLSH=		tclsh8.0jp
 .else
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 BUILD_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
