@@ -3,7 +3,7 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.8 2001/09/21 15:47:27 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fcron
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	system/daemons/cron
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	svenasse@polaris.ca
 
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}" \
