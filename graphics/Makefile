@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.234 2000/10/19 11:56:44 trevor Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.235 2000/10/22 10:54:30 trevor Exp $
 #
 
     SUBDIR += 4va
@@ -99,6 +99,7 @@
     SUBDIR += libmorph
     SUBDIR += libungif
     SUBDIR += libwmf
+    SUBDIR += linplasma
     SUBDIR += linux-bmrt
     SUBDIR += linux-jpeg
     SUBDIR += linux-png
