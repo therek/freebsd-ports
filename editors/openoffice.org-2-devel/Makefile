@@ -2,7 +2,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.10 2000/02/28 23:55:27 steve Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.11 2000/04/14 00:25:41 mharo Exp $
 #
 
 PORTNAME=	staroffice
@@ -64,9 +64,9 @@ do-install:
 	@${CP} /compat/linux/etc/ld.so.conf ${TMPDIR}/ld.so.conf.tmp
 	@${ECHO} "${WRKDIR}/tmp" >> ${TMPDIR}/ld.so.conf.tmp
 	@${ECHO} "/usr/X11R6/lib" >> ${TMPDIR}/ld.so.conf.tmp
-	@PATH=${PATH}:${TMPDIR}/sv001.tmp:/usr/compat/linux/tmp/sv001.tmp:/usr/compat/linux/tmp:/tmp
-	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${TMPDIR}:${WRKDIR}/tmp:/usr/lib:/lib:/tmp:/usr/compat/linux/lib
-	@/usr/compat/linux/sbin/ldconfig -f ${TMPDIR}/ld.so.conf.tmp
+	@PATH=${PATH}:${TMPDIR}/sv001.tmp:/compat/linux/tmp/sv001.tmp:/compat/linux/tmp:/tmp
+	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${TMPDIR}:${WRKDIR}/tmp:/usr/lib:/lib:/tmp:/compat/linux/lib
+	@/compat/linux/sbin/ldconfig -f ${TMPDIR}/ld.so.conf.tmp
 	@${CAT} ${PKGDIR}/MESSAGE
 	@-TEMP=${TMPDIR} ${WRKDIR}/so51inst/office51/setup /net
 
