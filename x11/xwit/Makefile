@@ -2,14 +2,13 @@
 # Date created:         15 June 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/xwit/Makefile,v 1.8 2000/06/16 11:48:20 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwit
-PORTVERSION=	1.0
+PORTVERSION=	3.4
 CATEGORIES=	x11
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	tg
+MASTER_SITES=	http://www.x.org/contrib/utilities/
 
 MAINTAINER=	tg@FreeBSD.org
 
