@@ -2,7 +2,7 @@
 # Date created:		16 May 1999
 # Whom:			jburkhol@home.com
 #
-# $FreeBSD: ports/java/tya/Makefile,v 1.17 2000/09/25 07:32:40 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tya
@@ -23,7 +23,7 @@ ONLY_FOR_ARCHS=	i386
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-jdk=${JAVADIR}
 
-JAVADIR=	${LOCALBASE}/jdk1.1.8
+JAVADIR?=	${LOCALBASE}/jdk1.1.8
 JAVALIBDIR=	${PREFIX}/lib/tya
 
 post-configure:
