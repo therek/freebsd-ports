@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.208 2000/07/12 14:32:46 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.209 2000/08/11 21:36:25 will Exp $
 #
 
     SUBDIR += 4va
@@ -13,6 +13,7 @@
     SUBDIR += aview
     SUBDIR += backfract
     SUBDIR += camediaplay
+    SUBDIR += camserv
     SUBDIR += chbg
     SUBDIR += cqcam
     SUBDIR += dc20ctrl
