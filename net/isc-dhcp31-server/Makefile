@@ -3,14 +3,14 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.37 2000/07/20 06:04:54 asami Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.38 2000/07/21 05:42:17 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
-PORTVERSION=	3.0.b1.17
+PORTVERSION=	3.0.b2.5
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.isc.org/isc/dhcp/
-DISTNAME=	dhcp-3.0b1pl17
+DISTNAME=	dhcp-3.0b2pl5
 
 MAINTAINER=	obrien@FreeBSD.org
 
