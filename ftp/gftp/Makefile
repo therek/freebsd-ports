@@ -2,11 +2,11 @@
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.15 2000/10/05 07:22:34 reg Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.16 2001/03/29 16:33:33 sobomax Exp $
 #
 
 PORTNAME=	gftp
-PORTVERSION=	2.0.7b
+PORTVERSION=	2.0.8
 CATEGORIES=	ftp
 MASTER_SITES=	http://gftp.seul.org/ \
 		ftp://gftp.seul.org/pub/gftp/
@@ -19,6 +19,8 @@ WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+FORBIDDEN=	"Insecure temporary files up the wazoo"
 
 MAN1=		gftp.1
 
