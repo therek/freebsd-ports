@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.110 2000/11/27 01:00:19 roam Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.111 2000/11/30 08:51:48 roam Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -11,6 +11,7 @@
 
 PORTNAME=	fetchmail
 PORTVERSION=	5.6.0
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://www.tuxedo.org/~esr/fetchmail/ \
 		ftp://ftp.ccil.org/pub/esr/fetchmail/
@@ -48,6 +49,10 @@ CONFIGURE_ARGS += --with-kerberos=/usr/include
 
 .if defined(KRB5_HOME) && exists(${KRB5_HOME}/lib/libkrb5.a)
 CONFIGURE_ARGS += --with-kerberos5=${KRB5_HOME}
+.endif
+
+.if defined(WITH_NTLM)
+CONFIGURE_ARGS += --enable-NTLM
 .endif
 
 FDOC=	${PREFIX}/share/doc/fetchmail
