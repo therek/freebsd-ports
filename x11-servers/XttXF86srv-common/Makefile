@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.29 2000/06/22 13:19:31 knu Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.30 2000/08/03 09:27:30 asami Exp $
 #
 
 PORTNAME?=	xtt-common
@@ -58,6 +58,12 @@ DOCDIR=		${PREFIX}/share/doc/Xtt
 PATCH_DIST_ARGS= -d ${WRKDIR} --forward --quiet -E ${PATCH_STRIP}
 #PATCH_DIST_STRIP=	-p1
 
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS+=	xmkmf:${PORTSDIR}/devel/imake-4
+.endif
+
 # ******************
 # USE_SHARED_WRKSRC:
 #  All Xtt ports require many disk space. Imagen, X source code will extract
@@ -110,8 +116,6 @@ ALL_TARGET=	libfont
 .else
 ALL_TARGET=	World
 .endif
-
-.include <bsd.port.pre.mk>
 
 pre-fetch:
 .if defined(USE_SHARED_WRKSRC)
