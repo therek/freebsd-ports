@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.46 1999/11/25 00:39:40 cpiazza Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.47 1999/11/26 20:54:14 steve Exp $
 #
 
     SUBDIR += CJK
@@ -39,5 +39,6 @@
     SUBDIR += xa+cv
     SUBDIR += xcin
     SUBDIR += xcin25
+    SUBDIR += xemacs
 
 .include <bsd.port.subdir.mk>
