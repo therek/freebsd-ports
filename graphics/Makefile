@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.205 2000/07/04 05:36:23 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.206 2000/07/04 05:52:23 will Exp $
 #
 
     SUBDIR += 4va
@@ -157,6 +157,7 @@
     SUBDIR += tgif
     SUBDIR += tgif-nls
     SUBDIR += tiff
+    SUBDIR += tiff2png
     SUBDIR += tifmerge
     SUBDIR += tkxanim
     SUBDIR += togl
