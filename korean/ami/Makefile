@@ -2,7 +2,7 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.8 2000/06/01 16:25:42 ade Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.9 2000/06/23 15:09:31 cjh Exp $
 #
 
 PORTNAME=	ami
@@ -22,15 +22,14 @@ GNU_CONFIGURE=	YES
 USE_GMAKE=	YES
 CONFIGURE_ENV=	GLIB_CONFIG=${LOCALBASE}/bin/glib12-config \
 		GTK_CONFIG=${X11BASE}/bin/gtk12-config
-CONFIGURE_ARGS+= --with-hangul-keyboard=2 --enable-gnome-applet
+CONFIGURE_ARGS+= --with-hangul-keyboard=2
 
-# gnome support
+# gnome panel applet support
 #.if defined(WITH_GNOME_APPLET)
-#PKGNAMESUFFIX=	-gnome
-#RUN_DEPENDS+=	panel:${PORTSDIR}/x11/gnomecore
-#LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
-#CONFIGURE_ARGS+= --enable-gnome-applet
-#.endif
+PKGNAMESUFFIX=	-gnome
+RUN_DEPENDS+=	panel:${PORTSDIR}/x11/gnomecore
+CONFIGURE_ARGS+= --enable-gnome-applet
+.endif
 
 post-build:
 	@cd ${WRKSRC}/hanjadic; \
