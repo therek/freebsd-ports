@@ -3,12 +3,12 @@
 # Date created:		3 May 1995
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xonix/Makefile,v 1.8 1999/08/25 06:05:47 obrien Exp $
 #
 
 DISTNAME=	xonix-1.4
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.inf.tu-dresden.de/pub/people/wunsch/xonix/
+MASTER_SITES=	ftp://ftp.interface-business.de/pub/outgoing/
 
 MAINTAINER=	joerg@FreeBSD.org
 
