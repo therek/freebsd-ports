@@ -3,11 +3,12 @@
 # Whom:			kuriyama
 #
 # $NetBSD: Makefile,v 1.2 1999/06/07 09:54:39 sakamoto Exp $
-# $FreeBSD: ports/japanese/chasen/Makefile,v 1.10 2000/04/11 14:12:56 knu Exp $
+# $FreeBSD: ports/japanese/chasen/Makefile,v 1.11 2000/10/24 10:26:54 kuriyama Exp $
 #
 
 PORTNAME=	chasen
 PORTVERSION=	2.02
+PORTREVISION=	1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.aist-nara.ac.jp/pub/lab/nlp/tools/chasen/
 DISTNAME=	${PORTNAME}-sys${PORTVERSION}-ipadic2.1
@@ -19,9 +20,11 @@ USE_PERL5=	YES
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Text::ChaSen.3
 
-WRKSRC=		${WRKDIR}/chasen-2.02
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+INSTALLS_SHLIB=	yes
 
-do-configure:
+post-patch:
+	${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/lib/Makefile
 
 post-build:
 	@${ECHO_MSG} "Making dictionaries"
@@ -33,5 +36,7 @@ post-build:
 
 post-install:
 	@cd ${WRKSRC}/perl; ${SETENV} ${MAKE_ENV} ${MAKE} install
+	${MKDIR} ${PREFIX}/include/chasen
+	@cd ${WRKSRC}/lib; ${SETENV} ${MAKE_ENV} ${MAKE} install
 
 .include <bsd.port.mk>
