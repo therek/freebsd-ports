@@ -3,7 +3,7 @@
 # Date created:			  Fri July 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/nemesis/Makefile,v 1.2 2000/07/08 04:27:44 obrien Exp $
+# $FreeBSD: ports/net/nemesis/Makefile,v 1.3 2000/07/10 01:40:05 steve Exp $
 #
 
 PORTNAME=	nemesis
@@ -13,7 +13,7 @@ MASTER_SITES=	http://celerity.bartoli.org/nemesis/  \
 		http://www.packetfactory.net/Projects/nemesis/  \
 		http://www.nol.net/~halogen/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
