@@ -2,7 +2,7 @@
 # Date created:		Sun Apr 22 14:51:32 CEST 2001
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/php_doc/Makefile,v 1.1 2001/04/24 18:06:38 dirk Exp $
 #
 
 PORTNAME=	php_doc
@@ -36,6 +36,17 @@ PHPDOCDIR=	${PREFIX}/share/doc/${PHP_LANG}-php
 .endif
 
 PLIST_SUB=	PHPDOCDIR=${PHPDOCDIR:S/^${PREFIX}\///}
+
+.if ${PHP_LANG} == en
+pre-fetch:
+	@${ECHO}
+	@${ECHO} "You may set PHP_LANG to"
+	@${ECHO} "	de (german),"
+	@${ECHO} "	es (spanish) or"
+	@${ECHO} "	fr (french)"
+	@${ECHO} "to get a different language than the default one (english)."
+	@${ECHO}
+.endif
 
 do-install:
 	@${MKDIR} ${PHPDOCDIR}
