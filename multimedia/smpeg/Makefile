@@ -2,13 +2,17 @@
 # Date created:		2 Feb 2000
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.9 2000/06/16 08:19:08 sobomax Exp $
+# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.10 2000/06/16 21:50:56 asami Exp $
 #
 
 PORTNAME=	smpeg
 PORTVERSION=	0.4.0
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.lokigames.com/pub/open-source/smpeg/
+MASTER_SITES=	ftp://ftp.lokigames.com/pub/open-source/smpeg/ \
+		ftp://sunsite.auc.dk/pub/os/linux/loki/open-source/smpeg/ \
+		ftp://boudicca.tux.org/misc/lokigames/open-source/smpeg/ \
+		ftp://snuffleupagus.animearchive.org/loki/open-source/smpeg/ \
+		http://ftp.gameaholic.com/mirrors/ftp.lokigames.com/open-source/smpeg/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
