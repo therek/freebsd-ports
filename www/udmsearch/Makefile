@@ -2,11 +2,11 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.6 2000/04/17 00:18:52 reg Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.7 2000/07/13 11:56:30 sobomax Exp $
 #
 
 PORTNAME=	udmsearch
-PORTVERSION= 	3.0.19
+PORTVERSION= 	3.0.20
 CATEGORIES=	www databases
 MASTER_SITES=	http://mysearch.udm.net/Download/	\
 		ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\
@@ -20,11 +20,8 @@ MAN5=		indexer.conf.5
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-charset-guesser \
-		--localstatedir=/var/udmsearch \
 		--sysconfdir=${PREFIX}/etc/udmsearch \
-		--bindir=${PREFIX}/libexec/udmsearch \
-		--sbindir=${PREFIX}/libexec/udmsearch \
-		--sysconfdir=${PREFIX}/etc/udmsearch
+		--localstatedir=/var/udmsearch
 
 .if defined(WITH_POSTGRESQL)
 LIB_DEPENDS=		pq.2:${PORTSDIR}/databases/postgresql7
@@ -54,13 +51,13 @@ pre-fetch:
 .endif
 
 pre-install:
-	${MKDIR} ${PREFIX}/bin/udmsearch
-	${MKDIR} ${PREFIX}/etc/udmsearch
+	@${MKDIR} ${PREFIX}/share/udmsearch
 
 post-install:
-	@cp -R ${WRKSRC}/create ${PREFIX}/etc/udmsearch
-	@strip ${PREFIX}/libexec/udmsearch/indexer
-	@strip ${PREFIX}/libexec/udmsearch/search.cgi
+	@cp -R ${WRKSRC}/create ${PREFIX}/share/udmsearch
+	@${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/udmsearch
+	@strip ${PREFIX}/sbin/indexer
+	@strip ${PREFIX}/share/udmsearch/search.cgi
 	@${ECHO}
 	@${CAT} ${PKGMESSAGE}
 
