@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.30 1999/12/09 16:16:26 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.31 1999/12/09 22:13:15 jmz Exp $
 #
 
 DISTNAME=	Tix4.1.0.007
@@ -48,6 +48,8 @@ pre-configure:
 	    INSTALL="/usr/bin/install -c -o ${BINOWN} -g ${BINGRP}" \
 	    INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
 	    ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS})
+post-configure:
+	@(cd ${WRKSRC} && ${ECHO} CFLAGS=${CFLAGS} >> Makefile)
 
 post-install:
 	@(cd ${WRKSRC}/.. && \
