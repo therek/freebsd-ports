@@ -2,7 +2,7 @@
 # Date created:				25 May 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/synaesthesia/Makefile,v 1.1 2001/05/26 10:48:21 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	synaesthesia
@@ -12,13 +12,16 @@ MASTER_SITES=	http://yoyo.cc.monash.edu.au/~pfh/
 
 MAINTAINER=	petef@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl10
+LIB_DEPENDS=	SDL-1.1.4:${PORTSDIR}/devel/sdl12
+
+SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 
 USE_GMAKE=	Yes
 USE_X_PREFIX=	Yes
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--with-sdl-prefix=${LOCALBASE}
+CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/synaesthesia ${PREFIX}/bin
