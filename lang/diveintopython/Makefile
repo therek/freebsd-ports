@@ -2,11 +2,11 @@
 # Date created:		15 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.2 2001/05/07 14:33:49 kevlo Exp $
+# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.3 2001/05/30 14:21:11 kevlo Exp $
 #
 
 PORTNAME=	diveintopython
-PORTVERSION=	3.3.1
+PORTVERSION=	3.4
 CATEGORIES=	lang python
 MASTER_SITES=	http://diveintopython.org/download/
 DISTNAME=	${PORTNAME}
@@ -28,9 +28,7 @@ NO_BUILD=	YES
 DIPDIR=		${PREFIX}/share/doc/diveintopython
 DIPDLDIR=	${DIPDIR}/download
 CPIO=		cpio --quiet -pdum -R
-# Is there a way of doing this without using a temporary variable?
-VERSIONTMP=	${PORTVERSION:S|.|-|g}
-VERSIONSTR=	${VERSIONTMP:S|-|.|}
+VERSIONSTR=	${PORTVERSION}-1
 
 post-patch:
 	@ ${PERL} -pi.orig -e \
