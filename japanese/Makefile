@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.381 2001/09/03 04:12:08 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.382 2001/09/03 17:40:54 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -40,6 +40,7 @@
     SUBDIR += dvi2dvi
     SUBDIR += dvi2ps
     SUBDIR += dvi2tty
+    SUBDIR += dvipdfm
     SUBDIR += dvipsk
     SUBDIR += dvipsk-vflib
     SUBDIR += e2ps
