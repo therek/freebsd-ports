@@ -2,13 +2,13 @@
 # Date created:		30 July 1996
 # Whom:			Sander Vesik <sander@haldjas.folklore.ee>
 #
-# $FreeBSD: ports/misc/tkcron/Makefile,v 1.10 1999/11/28 18:32:04 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkcron
 PORTVERSION=	2.12
 CATEGORIES=	misc tk82
-MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/alcatel/code/
+MASTER_SITES=	http://www.neosoft.com/tcl/ftparchive/sorted/misc/tkcron-2.12/
 EXTRACT_SUFX=	.tcl.gz
 
 MAINTAINER=	sander@haldjas.folklore.ee
