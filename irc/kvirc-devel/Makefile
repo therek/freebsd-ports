@@ -2,14 +2,15 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.15 2000/09/26 22:26:12 will Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.16 2000/10/02 05:39:31 trevor Exp $
 #
 
 PORTNAME=	kvirc
 PORTVERSION=	2.0.0
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.kvirc.bz.nu/pub/mirror/kvirc/2.0.0/source/ \
-		ftp://kvirc.firenze.linux.it/pub/kvirc/2.0.0/source/
+MASTER_SITES=	ftp://ftp.kvirc.net/kvirc/${PORTVERSION}/source/ \
+		ftp://ftp.kvirc.bz.nu/pub/mirror/kvirc/${PORTVERSION}/source/ \
+		ftp://kvirc.firenze.linux.it/pub/kvirc/${PORTVERSION}/source/
 
 MAINTAINER=	trevor@FreeBSD.org
 
