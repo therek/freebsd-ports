@@ -3,11 +3,11 @@
 # Date created:			Feb 21, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/sqlite/Makefile,v 1.2 2001/03/16 17:21:00 ijliao Exp $
+# $FreeBSD: ports/databases/sqlite/Makefile,v 1.3 2001/03/23 16:57:00 ijliao Exp $
 #
 
 PORTNAME=	sqlite
-PORTVERSION=	1.0.27
+PORTVERSION=	1.0.30
 CATEGORIES=	databases
 MASTER_SITES=	http://www.hwaci.com/sw/sqlite/
 DISTNAME=	${PORTNAME}
