@@ -2,7 +2,7 @@
 # Date created:         14 Jul 2000
 # Whom:                 JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.2 2000/08/12 10:51:33 alex Exp $
+# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.3 2000/09/05 01:26:13 steve Exp $
 #
 
 PORTNAME=	mod_fastcgi
@@ -24,6 +24,10 @@ do-build:
 
 do-install:
 	cd ${WRKSRC} ; ${LOCALBASE}/sbin/apxs -i -a -n fastcgi mod_fastcgi.so
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/mod_fastcgi
+	@cd ${WRKSRC} ; ${CP} -R docs/* ${PREFIX}/share/doc/mod_fastcgi
+.endif
 
 post-install:
 	@${ECHO_MSG} "*******************************************************"
