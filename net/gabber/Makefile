@@ -2,11 +2,12 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/net/gabber/Makefile,v 1.5 2000/09/12 22:44:23 ade Exp $
+# $FreeBSD: ports/net/gabber/Makefile,v 1.6 2000/10/05 07:17:08 reg Exp $
 #
 
 PORTNAME=	gabber
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
