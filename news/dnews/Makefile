@@ -2,14 +2,14 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/dnews/Makefile,v 1.20 2001/05/25 17:09:20 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dnews
-PORTVERSION=	5.5b3
+PORTVERSION=	5.5h2
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.netwinsite.com/pub/dnews/
-DISTNAME=	dnews55b3_freebsd4
+DISTNAME=	dnews55h2_freebsd4
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
