@@ -2,7 +2,7 @@
 # Date created:		13 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.3 2000/04/10 00:04:14 cpiazza Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.4 2000/04/30 00:19:36 steve Exp $
 #
 
 PORTNAME=	aolserver
@@ -39,9 +39,9 @@ post-install:
 # Startup file
 	@if [ ! -f ${PREFIX}/etc/rc.d/aolserver.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/aolserver.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/aolserver.sh; \
-		${ECHO} "[ -x ${PREFIX}/aolserver/bin/nsd8x  ] && ${PREFIX}/aolserver/bin/nsd8x -u nobody -t ${PREFIX}/aolserver/nsd.tcl && ${ECHO} -n ' aolserver'" >> ${PREFIX}/etc/rc.d/aolserver.sh; \
-		${CHMOD} 751 ${PREFIX}/etc/rc.d/aolserver.sh; \
+		${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/aolserver.sh \
+			>${PREFIX}/etc/rc.d/aolserver.sh ; \
+		${CHMOD} 755 ${PREFIX}/etc/rc.d/aolserver.sh; \
 	fi
 	@${CAT} ${PKGDIR}/MESSAGE
 
