@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.463 2005/01/13 19:09:13 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.464 2005/01/13 19:39:14 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -562,12 +562,14 @@ http_access deny Gopher</pre>
       </body>
     </description>
     <references>
+      <cvename>CAN-2004-1138</cvename>
       <url>ftp://ftp.vim.org/pub/vim/patches/6.3/6.3.045</url>
       <mlist>http://groups.yahoo.com/group/vimdev/message/38084</mlist>
     </references>
     <dates>
       <discovery>2004-12-09</discovery>
       <entry>2005-01-06</entry>
+      <modified>2005-01-13</modified>
     </dates>
   </vuln>
 
