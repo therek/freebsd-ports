@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.10 2004/09/15 16:54:37 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.11 2004/10/12 08:27:39 clement Exp $
 #
 
 ## Available knobs:
@@ -68,10 +68,8 @@
 ##   Port-related:
 ##      WITHOUT_WWW:              Implies NO_CGI, NO_WWWDATA, NO_ICONS and
 ##                                NO_ERROR
-##           WITH_CUSTOM_WWW:     Let you choose your ${LOCALBASE}/www components
+##           WITH_CUSTOM_WWW:     Let you choose your ${PREFIX}/www components
 ##                                [cgi|errordocs|icons|wwwdata]
-##      WITH_APR_FROM_PORTS:      Utilise apr and apr-utils from 
-##                                ${PORTSDIR}/devel/apr
 ##
 ##  Optionnal patches:  
 ##      WITH_EXPERIMENTAL_PATCHES Add performance patches (generally backported
