@@ -1,4 +1,4 @@
-# $FreeBSD: ports/german/Makefile,v 1.14 2000/09/22 07:02:16 asami Exp $
+# $FreeBSD: ports/german/Makefile,v 1.15 2000/12/12 16:01:19 jedgar Exp $
 #
 
     SUBDIR += BBBike
@@ -8,6 +8,7 @@
     SUBDIR += ispell
     SUBDIR += ispell-alt
     SUBDIR += ispell-neu
+    SUBDIR += kde2-i18n
     SUBDIR += manpages
     SUBDIR += phone
     SUBDIR += staroffice5
