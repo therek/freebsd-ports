@@ -1,10 +1,10 @@
 # ex:ts=8
 # New ports collection makefile for:    rsync
-# Version required:     1.6.2
+# Version required:     2.3.1
 # Date created:         Sat Aug 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.25 1999/10/12 04:57:10 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.26 2000/01/08 22:28:55 sumikawa Exp $
 #
 
 DISTNAME=	rsync-2.3.1
