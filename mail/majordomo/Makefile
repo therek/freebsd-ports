@@ -2,7 +2,7 @@
 # Date created:		23 October 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/majordomo/Makefile,v 1.21 2000/04/13 19:59:56 cpiazza Exp $
+# $FreeBSD: ports/mail/majordomo/Makefile,v 1.22 2000/05/29 18:17:28 steve Exp $
 #
 
 PORTNAME=	majordomo
@@ -23,6 +23,11 @@ ALL_TARGET=	wrapper
 INSTALL_TARGET=	install install-wrapper
 MAN1=		approve.1 bounce-remind.1 digest.1
 MAN8=		majordomo.8
+
+pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	/usr/bin/dialog --yesno "Majordomo is unsafe to use on multi-user machines: local users can run arbitrary commands as the majordomo user. Do you wish to accept the security risk and build majordomo anyway?" 8 60 || ${FALSE}
+.endif
 
 pre-configure:
 		@ ${SETENV} ${MAKE_ENV} /usr/bin/perl ${SCRIPTDIR}/createuser
