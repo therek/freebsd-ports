@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.213 2001/08/29 00:18:25 lioux Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.214 2001/08/30 04:24:21 lioux Exp $
 #
     SUBDIR += yawho
 
@@ -194,6 +194,7 @@
     SUBDIR += xin
     SUBDIR += xloadface
     SUBDIR += xlogmaster
+    SUBDIR += xmbmon
     SUBDIR += xosview
     SUBDIR += xperfmon
     SUBDIR += xperfmon3
