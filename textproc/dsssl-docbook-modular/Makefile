@@ -2,11 +2,11 @@
 # Date created:		16 March 1998
 # Whom:			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/textproc/dsssl-docbook-modular/Makefile,v 1.42 2001/07/12 05:50:45 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dsssl-docbook-modular
-PORTVERSION=	1.73
+PORTVERSION=	1.77
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	docbook
