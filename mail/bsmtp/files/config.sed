@@ -1,11 +1,11 @@
-# $FreeBSD$
+# $FreeBSD: ports/mail/bsmtp/files/config.sed,v 1.2 2001/02/08 18:58:53 ijliao Exp $
 s,@CC@,%%CC%%,
 s,@INSTALL@,/usr/bin/install,
 s,@SH@,/bin/sh,
 s,@GZIP@,/usr/bin/gzip,
 s,@PERL@,/usr/bin/perl,
 s,@COMPRESS@,/usr/bin/compress,
-s,@UUX@,/usr/bin/uux,
+s,@UUX@,%%UUPREFIX%%/bin/uux,
 s,@SENDMAIL@,/usr/sbin/sendmail,
 s,@CFLAGS@,%%CFLAGS%%,
 s,@PRIVBINDIR@,%%PREFIX%%/libexec,
