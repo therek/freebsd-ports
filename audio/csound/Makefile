@@ -2,11 +2,12 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/csound/Makefile,v 1.1 2000/10/12 01:58:04 trevor Exp $
+# $FreeBSD: ports/audio/csound/Makefile,v 1.2 2000/10/18 12:16:11 trevor Exp $
 #
 
 PORTNAME=	csound
 PORTVERSION=	4.08
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.maths.bath.ac.uk/pub/dream/newest/
 DISTFILES=	Csound.tar.gz
