@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.83 2000/05/13 15:33:46 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mutt
@@ -74,6 +74,7 @@ pre-patch:
 	(cd ${WRKSRC}; ${TAR} -xzf ${DISTDIR}/${DIST_SUBDIR}/charmaps-0.0.tar.gz)
 
 post-patch:
+	cd ${WRKSRC}/charmaps/maps; ln CP1251 WINDOWS-1251
 	cd ${WRKSRC}/charmaps/maps; rm -f *.orig
 
 .if !defined(NOPORTDOCS)
