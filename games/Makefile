@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.342 2001/04/05 16:57:15 alex Exp $
+# $FreeBSD: ports/games/Makefile,v 1.343 2001/04/05 18:56:40 alex Exp $
 #
 
     SUBDIR += 3dc
@@ -6,6 +6,7 @@
     SUBDIR += HeroesOfMightAndMagic
     SUBDIR += KnightCap
     SUBDIR += acm
+    SUBDIR += acorn-media
     SUBDIR += actx
     SUBDIR += adom
     SUBDIR += affenspiel
