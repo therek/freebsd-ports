@@ -2,11 +2,11 @@
 # Date Created:			09 Jan 2000
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/str/Makefile,v 1.6 2000/06/16 08:19:10 sobomax Exp $
+# $FreeBSD: ports/devel/str/Makefile,v 1.7 2000/06/16 21:50:12 asami Exp $
 #
 
 PORTNAME=	str
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.5
 CATEGORIES=	devel
 MASTER_SITES=	http://www.engelschall.com/sw/str/ \
 		ftp://ftp.engelschall.com/sw/str/
