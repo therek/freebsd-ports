@@ -3,7 +3,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.26 1999/08/31 06:52:55 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.27 1999/11/29 03:56:27 steve Exp $
 #
 
 DISTNAME=	Tix4.1.0.007
@@ -16,6 +16,8 @@ MASTER_SITE_SUBDIR= sorted/packages-8.0/x11/Tix/4.1.0.007
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+
+BROKEN=	"Bus error (core dumped) with tk82"
 
 WRKSRC=		${WRKDIR}/Tix4.1.0.007/unix/tk8.0
 GNU_CONFIGURE=	yes
