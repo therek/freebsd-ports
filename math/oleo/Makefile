@@ -2,7 +2,7 @@
 # Date created:		3 September 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/math/oleo/Makefile,v 1.19 2000/12/29 16:17:12 lkoeller Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	oleo
@@ -22,9 +22,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 CONFIGURE_ARGS=	--with-x --without-xlt --without-SciPlot
 
 .if defined(WITH_MOTIF)
-LIB_DEPENDS+=	plot.3:${PORTSDIR}/graphics/plotutils \
-		Xbae.8:${PORTSDIR}/x11-toolkits/xbae \
-		XmHTML.1:${PORTSDIR}/x11-toolkits/xmhtml
+LIB_DEPENDS+=	plot:${PORTSDIR}/graphics/plotutils \
+		Xbae:${PORTSDIR}/x11-toolkits/xbae \
+		XmHTML:${PORTSDIR}/x11-toolkits/xmhtml
 USE_MOTIF=	yes
 CONFIGURE_ARGS+=	--with-motif
 .else
