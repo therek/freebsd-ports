@@ -2,11 +2,11 @@
 # Date created:				16 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.7 2000/12/22 16:19:23 kevlo Exp $
+# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.8 2001/06/12 13:35:56 kevlo Exp $
 #
 
 PORTNAME=	gperiodic
-PORTVERSION=	1.2.6a
+PORTVERSION=	1.3.0
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/
 
@@ -32,7 +32,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/gperiodic
 .for file in AUTHORS ChangeLog README
-	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gperiodic
+	@${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gperiodic
 .endfor
 .endif
 
