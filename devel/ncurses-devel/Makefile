@@ -2,7 +2,7 @@
 # Date created:				23 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/ncurses/Makefile,v 1.21 2000/04/11 21:29:14 mharo Exp $
+# $FreeBSD: ports/devel/ncurses/Makefile,v 1.22 2000/06/22 05:51:54 will Exp $
 #
 
 PORTNAME=		ncurses
@@ -12,6 +12,8 @@ MASTER_SITES=		${MASTER_SITE_GNU} \
 			ftp://ftp.clark.net/pub/dickey/ncurses/4.2/
 MASTER_SITE_SUBDIR=	ncurses
 DISTFILES=		${DISTNAME}${EXTRACT_SUFX} terminfo.src.gz
+
+FORBIDDEN=		"buffer overflows reported--don't link setuid/setgid commands to this.  See http://www.securityfocus.com/templates/archive.pike?list=1&amp;msg=Pine.LNX.4.10.10010092242140.27629-100000@shell.solutions.fi " 
 
 MAINTAINER=		ports@FreeBSD.org
 
