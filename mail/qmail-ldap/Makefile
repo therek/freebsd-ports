@@ -2,7 +2,7 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.12 2001/02/22 18:15:17 lioux Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.13 2001/04/27 14:47:55 lioux Exp $
 #
 
 PORTNAME=	qmail
@@ -29,7 +29,7 @@ USE_OPENSSL=	yes
 MAIN_QMAIL_PORT_DNS_PATCH_BARRIER=	yes
 MAIN_QMAIL_PORT_WITH_BIG_CONCURRENCY_PATCH_BARRIER=	yes
 
-LDAP_PATCH_DATE=	20010301
+LDAP_PATCH_DATE=	20010501
 
 # Using default from master port, i.e., /var/qmail
 PREFIX?=	${QMAIL_PORT_PREFIX}
