@@ -2,7 +2,7 @@
 # Date created:				05 Feb 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/net/vtun/Makefile,v 1.4 2001/02/19 14:08:39 kevlo Exp $
+# $FreeBSD: ports/net/vtun/Makefile,v 1.5 2001/03/07 03:29:11 kevlo Exp $
 #
 
 PORTNAME=	vtun
@@ -16,6 +16,7 @@ LIB_DEPENDS=	lzo.1:${PORTSDIR}/archivers/lzo
 
 MAN5=		vtund.conf.5
 MAN8=		vtund.8
+MLINKS=		vtund.8 vtun.8
 MANCOMPRESSED=	no
 
 USE_OPENSSL=	yes
