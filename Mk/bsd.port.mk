@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.405 2002/03/28 09:58:08 sobomax Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -780,6 +780,10 @@ MAKE_ENV+=		OPENSSLLIB=${OPENSSLLIB} OPENSSLINC=${OPENSSLINC} \
 
 .if defined(USE_PYTHON) || defined(PYTHON_VERSION)
 .include "${PORTSDIR}/Mk/bsd.python.mk"
+.endif
+
+.if defined(USE_JAVA)
+.include "${PORTSDIR}/Mk/bsd.java.mk"
 .endif
 
 .if defined(USE_RUBY) || defined(USE_LIBRUBY)
