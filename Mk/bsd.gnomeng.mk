@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.16 2002/10/07 21:25:57 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.17 2002/10/09 16:14:57 marcus Exp $
 #
 
 .if !defined(_POSTMKINCLUDED)
@@ -171,7 +171,7 @@ libglade_MAKE_ENV=	LIBGLADE_CONFIG="${LIBGLADE_CONFIG}"
 libglade_DETECT=	${LIBGLADE_CONFIG}
 libglade_USE_GNOME_IMPL=gnomedb
 
-gal_LIB_DEPENDS=	gal.19:${PORTSDIR}/x11-toolkits/gal
+gal_LIB_DEPENDS=	gal.21:${PORTSDIR}/x11-toolkits/gal
 gal_DETECT=		${X11BASE}/etc/galConf.sh
 gal_USE_GNOME_IMPL=	libglade
 
@@ -179,7 +179,7 @@ glibwww_LIB_DEPENDS=	glibwww.1:${PORTSDIR}/www/glibwww
 glibwww_DETECT=		${X11BASE}/etc/glibwwwConf.sh
 glibwww_USE_GNOME_IMPL=	gnomelibs
 
-gtkhtml_LIB_DEPENDS=	gtkhtml.21:${PORTSDIR}/www/gtkhtml
+gtkhtml_LIB_DEPENDS=	gtkhtml-1.1.3:${PORTSDIR}/www/gtkhtml
 gtkhtml_DETECT=		${X11BASE}/etc/gtkhtmlConf.sh
 gtkhtml_USE_GNOME_IMPL=	glibwww gal libghttp libcapplet
 
