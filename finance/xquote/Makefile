@@ -2,7 +2,7 @@
 # Date created:		4 Jan 1998
 # Whom:			Ian Struble <ian@broken.net>
 #
-# $FreeBSD: ports/misc/xquote/Makefile,v 1.6 2000/08/03 09:25:51 asami Exp $
+# $FreeBSD: ports/misc/xquote/Makefile,v 1.7 2000/11/07 23:28:14 asami Exp $
 
 PORTNAME=	xquote
 PORTVERSION=	1.1
@@ -16,6 +16,5 @@ MAINTAINER=	mph@freebsd.org
 USE_MOTIF=	yes
 USE_IMAKE=	yes
 USE_XPM=	yes
-NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>
