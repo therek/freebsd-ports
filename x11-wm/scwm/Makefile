@@ -3,7 +3,7 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.6 1999/10/08 02:50:52 nakai Exp $
+# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.7 1999/10/08 23:04:38 asami Exp $
 #
 
 DISTNAME=	scwm-0.99.3
@@ -14,6 +14,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	guile.4:${PORTSDIR}/lang/guile \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
+		esd.2:${PORTSDIR}/audio/esound \
 		Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	${X11BASE}/share/scwm/pixmaps/Animator.xpm:${PORTSDIR}/graphics/scwm-icons
 
