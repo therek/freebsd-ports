@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.387 2001/01/01 21:28:44 assar Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.388 2001/01/03 13:56:51 nbm Exp $
 #
 
     SUBDIR += ElectricFence
@@ -209,6 +209,7 @@
     SUBDIR += noweb
     SUBDIR += oaf
     SUBDIR += omniORB
+    SUBDIR += p5-Agent
     SUBDIR += p5-Alias
     SUBDIR += p5-AppConfig
     SUBDIR += p5-B-Graph
