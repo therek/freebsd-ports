@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.97 2000/09/22 01:58:54 kris Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.98 2000/10/07 22:32:10 asami Exp $
 #
 
 PORTNAME=	mutt
@@ -94,8 +94,8 @@ post-build:
 .if defined(WITH_DOCS)
 PLIST:=		${WRKDIR}/PLIST
 pre-install:
-	@${CAT} ${PKGDIR}/PLIST.htmlfiles >> ${PLIST}
-	@${CAT} ${PKGDIR}/PLIST >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.htmlfiles >> ${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist >> ${PLIST}
 .endif
 .endif
 
