@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fonts/Makefile,v 1.14 2000/11/18 12:23:11 sanpei Exp $
+# $FreeBSD: ports/x11-fonts/Makefile,v 1.15 2000/12/03 20:48:22 will Exp $
 #
 
     SUBDIR += XFree86-4-font100dpi
@@ -24,6 +24,7 @@
     SUBDIR += tkfont
     SUBDIR += ttmkfdir
     SUBDIR += urwfonts
+    SUBDIR += webfonts
     SUBDIR += xfed
     SUBDIR += xmbdfed
 
