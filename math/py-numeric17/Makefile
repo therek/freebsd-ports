@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.32 2000/12/22 12:29:05 tg Exp $
+# $FreeBSD: ports/math/py-numeric17/Makefile,v 1.33 2001/02/01 13:15:50 tg Exp $
 #
 
 PORTNAME=	numeric
@@ -18,6 +18,7 @@ MAINTAINER=	tg@FreeBSD.org
 BUILD_DEPENDS=	${PYDISTUTILS}
 
 USE_PYTHON=	yes
+NO_LATEST_LINK=	yes
 
 DOCDIR=		${PREFIX}/share/doc/py-numeric
 EXAMPLEDIR=	${PREFIX}/share/examples/py-numeric
