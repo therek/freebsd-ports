@@ -2,11 +2,11 @@
 # Date created:        30 August 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/astro/xtide/Makefile,v 1.16 2000/07/19 12:35:56 alex Exp $
+# $FreeBSD: ports/astro/xtide/Makefile,v 1.17 2000/08/03 09:22:23 asami Exp $
 #
 
 PORTNAME=	xtide
-PORTVERSION=	2.2
+PORTVERSION=	2.2.2
 CATEGORIES=	astro
 MASTER_SITES=	ftp://ftp.flaterco.com/xtide/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} harmonics.world.gz
