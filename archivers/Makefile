@@ -1,10 +1,11 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.24 1999/08/25 04:25:00 obrien Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.25 1999/12/10 15:21:41 steve Exp $
 #
 
     SUBDIR += arc
     SUBDIR += bzip
     SUBDIR += bzip2
     SUBDIR += deepforest
+    SUBDIR += fastjar
     SUBDIR += freeze
     SUBDIR += gshar+gunshar
     SUBDIR += ha
