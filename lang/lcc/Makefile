@@ -3,7 +3,7 @@
 # Date created:			  Sat Dec 7, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/lang/lcc/Makefile,v 1.12 2000/08/08 03:04:22 steve Exp $
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.13 2000/10/08 10:21:50 asami Exp $
 #
 
 PORTNAME=	lcc
@@ -30,6 +30,7 @@ pre-configure:
 	@${SED} -e "s:%%PREFIX%%:${PREFIX}:g"  \
 	     -e "s:%%LCCDESTDIR%%:${LCCDESTDIR}:g"  \
 	     -e "s:%%VERSION%%:${DISTNAME}:g"  \
+	     -e "s:!!ARCH!!:${ARCH}:g"  \
 		${FILESDIR}/${OPSYS}.c.in > ${WRKSRC}/etc/${OPSYS}.c
 	@#	below can be used to patchup PLIST file for diff os/arch
 	@#${SED} -e "s:%%LCCDESTDIR%%:${LCCDESTDIR}:g"  \
