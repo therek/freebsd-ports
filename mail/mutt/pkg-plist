@@ -1,8 +1,6 @@
-@comment $FreeBSD: ports/mail/mutt/pkg-plist,v 1.32 2004/02/08 03:20:23 leeym Exp $
-bin/flea
+@comment $FreeBSD: ports/mail/mutt/pkg-plist,v 1.33 2004/07/08 12:40:50 krion Exp $
 bin/mutt
 bin/mutt_dotlock
-bin/muttbug
 bin/pgpewrap
 bin/pgpring
 @unexec if cmp -s %D/etc/Muttrc.dist %D/etc/Muttrc; then rm -f %D/etc/Muttrc; fi
