@@ -2,39 +2,35 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.7 2000/04/30 20:12:11 steve Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.8 2000/06/01 16:25:42 ade Exp $
 #
 
 PORTNAME=	ami
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/ \
-		http://adam.kaist.ac.kr/~cwryu/archive/misc/
+		http://master.debian-kr.org/~cwryu/archive/misc/
 DISTFILES=	${DISTNAME}.tar.gz hanja.dic.gz ami.dic
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
 
 MAINTAINER=	cjh@kr.freebsd.org
 
-LIB_DEPENDS=    gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=    gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_X_PREFIX=	YES
 GNU_CONFIGURE=	YES
+USE_GMAKE=	YES
 CONFIGURE_ENV=	GLIB_CONFIG=${LOCALBASE}/bin/glib12-config \
 		GTK_CONFIG=${X11BASE}/bin/gtk12-config
-CONFIGURE_ARGS+= --with-hangul-keyboard=2
-
-# Korean input in dvorak keyboard
-.if defined(WITH_DVORAK)
-CONFIGURE_ARGS+= --with-english-keyboard=dvorak
-.endif
+CONFIGURE_ARGS+= --with-hangul-keyboard=2 --enable-gnome-applet
 
 # gnome support
-.if defined(WITH_GNOME_APPLET)
-PKGNAMESUFFIX=	-gnome
-RUN_DEPENDS+=	panel:${PORTSDIR}/x11/gnomecore
-LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
-CONFIGURE_ARGS+= --enable-gnome-applet
-.endif
+#.if defined(WITH_GNOME_APPLET)
+#PKGNAMESUFFIX=	-gnome
+#RUN_DEPENDS+=	panel:${PORTSDIR}/x11/gnomecore
+#LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
+#CONFIGURE_ARGS+= --enable-gnome-applet
+#.endif
 
 post-build:
 	@cd ${WRKSRC}/hanjadic; \
