@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.218 1999/09/10 00:25:21 jseger Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.219 1999/09/24 04:12:23 taoka Exp $
 #
 
     SUBDIR += ElectricFence
@@ -154,6 +154,7 @@
     SUBDIR += re2c
     SUBDIR += rinfo
     SUBDIR += scogdb
+    SUBDIR += sdcc
     SUBDIR += sdl
     SUBDIR += sfio
     SUBDIR += shtool
