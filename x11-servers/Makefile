@@ -1,6 +1,7 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/Makefile,v 1.2 1999/08/31 02:58:37 peter Exp $
 #
 
+    SUBDIR += Xatm
     SUBDIR += Xfstt
     SUBDIR += XttXF86srv-3DLabs
     SUBDIR += XttXF86srv-8514
