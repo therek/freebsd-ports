@@ -2,7 +2,7 @@
 # Date Created:		09 Dec 2000
 # Whom:			Greg Greenaae <greg@gregnet.net>
 #
-# $FreeBSD: ports/news/glitter/Makefile,v 1.1 2001/01/05 17:39:14 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glitter
@@ -13,6 +13,8 @@ MASTER_SITES=	http://mews.org.uk/glitter/\
 DISTNAME=	${PORTNAME}-1.0beta1
 
 MAINTAINER=	greg@gregnet.net
+
+BROKEN=		"Does not package correctly"
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
