@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.58 2001/04/07 10:47:33 knu Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.59 2001/07/19 18:50:30 knu Exp $
 #
 
     SUBDIR += aish
@@ -43,6 +43,7 @@
     SUBDIR += trans
     SUBDIR += tuc
     SUBDIR += unix2dos
+    SUBDIR += utf8conv
     SUBDIR += uudeview
     SUBDIR += uudx
     SUBDIR += uulib
