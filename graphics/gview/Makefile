@@ -2,11 +2,11 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.14 2000/05/15 19:11:15 cpiazza Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.15 2000/05/29 21:40:03 cpiazza Exp $
 #
 
 PORTNAME=	gview
-PORTVERSION=	0.1.14
+PORTVERSION=	0.1.15
 CATEGORIES=	graphics
 MASTER_SITES=	http://netpedia.net/hosting/gview/ \
 		http://homepages.petech.ac.za/~bruces/ \
