@@ -2,9 +2,9 @@
 # Ports collection makefile for:  fping
 # Version required:     	  1.20
 # Date created:			  Tue Mar 25, 1997
-# Whom:				  David O'Brien (obrien@FreeBSD.org)
+# Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/fping/Makefile,v 1.3 1999/08/30 14:22:42 peter Exp $
+# $FreeBSD: ports/net/fping/Makefile,v 1.4 1999/09/04 20:29:51 obrien Exp $
 #
 
 DISTNAME=	part01
@@ -16,16 +16,15 @@ MASTER_SITES=	ftp://ftp.uu.net/usenet/comp.sources.unix/volume26/fping/ \
 		ftp://ftp.isnet.is/pub/Usenet/Usenet.src/comp.sources.unix/v26/fping/
 EXTRACT_SUFX=	.Z
 
-MAINTAINER=     obrien@NUXI.com
-
-BUILD_DEPENDS=	gunshar:${PORTSDIR}/archivers/gshar+gunshar
+MAINTAINER=     obrien@FreeBSD.org
 
 DIST_SUBDIR=	fping
 EXTRACT_CMD=	zcat
 EXTRACT_BEFORE_ARGS=
-EXTRACT_AFTER_ARGS=	| gunshar -d ${WRKDIR}
+EXTRACT_AFTER_ARGS=	| ${SED} -e '1,/Archive-Name/d' | ${SH}
 NO_WRKSUBDIR=	yes
 MAN8=		fping.8
+
 
 post-install:
 	@strip ${PREFIX}/sbin/fping
