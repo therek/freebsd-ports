@@ -2,7 +2,7 @@
 # Date created:		20 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.6 2000/06/16 09:21:10 tg Exp $
+# $FreeBSD: ports/devel/py-mxTools/Makefile,v 1.7 2000/09/08 12:23:58 tg Exp $
 #
 
 PORTNAME=	mxTools
@@ -13,24 +13,23 @@ PKGNAMEPREFIX=	py-
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
-RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python15
-
+USE_PYTHON=	yes
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-aq
 WRKSRC=		${WRKDIR}/NewBuiltins/mxTools
+CONFIGURE_ENV=	PYTHON=${PYTHON_CMD}
 ALL_TARGET=	sharedmods
 
-PYTHONSCRIPTDIR=	${PREFIX}/lib/python1.5
-TOOLSDIR=	${PYTHONSCRIPTDIR}/site-packages/NewBuiltins
+TOOLSDIR=	${PYTHON_SITELIBDIR}/NewBuiltins
 DOCDIR=		${PREFIX}/share/doc/py-mxTools
 EXAMPLEDIR=	${PREFIX}/share/examples/py-mxTools
 
 post-extract:
 	@${CP} ${FILESDIR}/Setup ${WRKSRC}
+	@${CP} ${PYTHON_LIBDIR}/config/Makefile.pre.in ${WRKSRC}
 
 do-configure:
-	@(cd ${WRKSRC} && ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
+	@(cd ${WRKSRC} && ${SETENV} ${CONFIGURE_ENV} ${MAKE} -f Makefile.pre.in boot)
 
 do-install:
 	@${MKDIR} ${TOOLSDIR}
@@ -39,8 +38,8 @@ do-install:
 .for file in __init__.py mxTools.so xmap.so
 	${INSTALL_DATA} ${WRKDIR}/NewBuiltins/mxTools/${file} ${TOOLSDIR}/mxTools
 .endfor
-	@${PREFIX}/bin/python ${PYTHONSCRIPTDIR}/compileall.py ${TOOLSDIR}
-	@${PREFIX}/bin/python -O ${PYTHONSCRIPTDIR}/compileall.py ${TOOLSDIR}
+	@${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${TOOLSDIR}
+	@${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${TOOLSDIR}
 	@${MKDIR} ${EXAMPLEDIR}
 	${INSTALL_DATA} ${WRKDIR}/NewBuiltins/Examples/* ${EXAMPLEDIR}
 .if !defined(NOPORTDOCS)
