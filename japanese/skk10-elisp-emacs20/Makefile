@@ -2,14 +2,14 @@
 # Date created:		21 September 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.10 2000/10/30 13:15:45 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	skk-elisp
 PORTVERSION=	${SKK10_VER}
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 CATEGORIES=	japanese elisp
-MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/
+MASTER_SITES=	http://openlab.ring.gr.jp/skk/maintrunk/legacy/
 DISTNAME=	skk${SKK10_VER}
 
 MAINTAINER?=	shige@FreeBSD.org
