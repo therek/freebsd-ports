@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.6 2000/08/02 02:40:24 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.7 2000/08/13 00:23:30 kris Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -163,6 +163,14 @@ MASTER_SITE_SOURCEFORGE+= \
 	ftp://download.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://download.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/
+
+MASTER_SITE_RUBY+= \
+	ftp://ftp.netlab.co.jp/pub/lang/ruby/%SUBDIR%/ \
+	ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/%SUBDIR%/ \
+	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
+	ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/%SUBDIR%/ \
+	ftp://ftp.krnet.ne.jp/pub/ruby/%SUBDIR%/ \
+	ftp://mirror.nucba.ac.jp/mirror/ruby/%SUBDIR%/
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \
