@@ -2,7 +2,7 @@
 # Date created:				3 October 2000
 # Whom:					Sean Farley <sean-freebsd@farley.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/gsi/Makefile,v 1.1 2000/12/07 18:05:11 sobomax Exp $
 #
 
 PORTNAME=	gsi
