@@ -2,7 +2,7 @@
 # Date created:				3 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/math/py-gnuplot/Makefile,v 1.5 2001/02/01 14:36:03 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-gnuplot
@@ -19,13 +19,7 @@ RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot \
 		${PYTHON_SITELIBDIR}/Numeric/_numpy.so:${PORTSDIR}/math/py-numeric
 
 USE_PYTHON=	yes
-SETUP_CMD=	cd ${WRKSRC}; ${PYTHON_CMD} setup.py
-
-do-build:
-	@${SETUP_CMD} build
-
-do-install:
-	@${SETUP_CMD} install
+USE_PYDISTUTILS=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
