@@ -2,13 +2,13 @@
 # Date created:			26 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.20 2000/06/17 05:33:54 knu Exp $
+# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.21 2001/01/12 03:01:31 max Exp $
 #
 
 PORTNAME=	kakasi
-PORTVERSION=	2.3.2
+PORTVERSION=	2.3.3
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://kakasi.namazu.org/pub/kakasi/
+MASTER_SITES=	ftp://kakasi.namazu.org/pub/kakasi/stable/
 
 MAINTAINER=	max@FreeBSD.org
 
