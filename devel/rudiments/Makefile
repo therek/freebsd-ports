@@ -2,7 +2,7 @@
 # Date created:		2 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/rudiments/Makefile,v 1.1 2001/07/02 08:14:09 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rudiments
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.firstworks.com/downloads/rudiments/
 MAINTAINER=	knu@FreeBSD.org
 
 USE_GMAKE=	yes
-USE_AUTOCONF=	yes
+USE_AUTOCONF_VER=213
 CONFIGURE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"
 
 INSTALLS_SHLIB=	yes
