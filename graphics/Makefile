@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.218 2000/09/16 05:38:01 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.219 2000/09/19 16:18:12 ade Exp $
 #
 
     SUBDIR += 4va
@@ -158,6 +158,7 @@
     SUBDIR += sane
     SUBDIR += sced
     SUBDIR += scwm-icons
+    SUBDIR += sdl_image
     SUBDIR += sketch
     SUBDIR += smpeg
     SUBDIR += sodipodi
