@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -ef
 #
 # Copyright (c) 2004 Oliver Eikemeier. All rights reserved.
 #
@@ -28,38 +28,40 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit.sh,v 1.1 2004/01/27 19:24:52 eik Exp $
+# $FreeBSD$
 #
-
-# defaults
-daily_status_portaudit_enable="YES"
-
-# If there is a global system configuration file, suck it in.
-#
-if [ -r /etc/defaults/periodic.conf ]
-then
-    . /etc/defaults/periodic.conf
-    source_periodic_confs
-fi
 
 . %%DATADIR%%/portaudit.functions
 portaudit_confs
 
-rc=0
-case "$daily_status_portaudit_enable" in
-	""|[Yy][Ee][Ss])
-		echo ""
-		echo "Checking for packages with security vulnerabilities:"
-		echo ""
+if [ $# -eq 0 ] ; then
+	portaudit_prerequisites
+	audit_installed || true
+fi
 
-		if portaudit_prerequisites; then
-			audit_installed || rc=1
-		else
-			rc=2
+while [ $# -gt 0 ]; do
+	case "$1" in
+	-a)
+		portaudit_prerequisites
+		audit_installed || true
+		;;
+	-V)
+		echo "portaudit version %%PORTVERSION%%"
+		;;
+	-d)
+		if [ ! -f "${portaudit_dir}/${portaudit_filename}" ]; then
+			echo "portaudit: database missing. run \`portaudit -F' to update."
+			exit 2
 		fi
+		if ! checksum_auditfile; then
+			echo "portaudit: database corrupt."
+			exit 2
+		fi
+		echo "database created: `getcreated_auditfile`"
 		;;
-	*)
+	-F)
+		fetch_auditfile || echo "failed."
 		;;
-esac
-
-exit "$rc"
+	esac
+	shift
+done
