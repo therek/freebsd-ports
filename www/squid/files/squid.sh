@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/files/squid.sh,v 1.6 2004/06/10 15:40:44 krion Exp $
+# $FreeBSD: ports/www/squid/files/squid.sh,v 1.7 2004/07/25 16:30:43 pav Exp $
 #
 # PROVIDE: squid
 # REQUIRE: NETWORKING SERVERS
@@ -22,7 +22,7 @@ reload_cmd="${command} -k reconfigure"
 stop_cmd="${command} -k shutdown"
 squid_chdir=${squid_chdir:-%%PREFIX%%/squid/logs}
 squid_enable=${squid_enable:-"NO"}
-squid_flags=${squid_flags:-"-D"}
+squid_flags=${squid_flags-"-D"}
 squid_user=${squid_user:-%%SQUID_UID%%}
 default_config=%%PREFIX%%/etc/squid/squid.conf
 
