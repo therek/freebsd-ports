@@ -2,35 +2,30 @@
 # Date created:				9 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/aalib/Makefile,v 1.14 2000/06/16 08:18:15 sobomax Exp $
+# $FreeBSD: ports/graphics/aalib/Makefile,v 1.15 2000/06/16 21:50:43 asami Exp $
 #
 
 PORTNAME=	aalib
 PORTVERSION=	1.2
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.ta.jcu.cz/pub/aa/
+MASTER_SITES=	ftp://horac.ta.jcu.cz/pub/aa/
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_AUTOCONF=	yes
+USE_AUTOMAKE=	yes
+AUTOMAKE=	automake -a -i
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
-.include <bsd.port.pre.mk>
-
-#
-# Support for X11 is compiled in by default only if X11 is installed.
-#
-.if defined(WITH_X11) || (exists(${X11BASE}/lib/libX11.a) \
-    && !defined(WITHOUT_X11))
+.if defined(WITH_X11)
 USE_XLIB=	yes
-CONFIGURE_ARGS= --with-x --x-includes="${X11BASE}/include" \
+CONFIGURE_ARGS=	--x-includes="${X11BASE}/include" \
 		--x-libraries="${X11BASE}/lib"
 .else
-CONFIGURE_ARGS= --with-x11-driver=no
+CONFIGURE_ARGS=	--with-x=no
 .endif
 
 post-patch:
-	@${PERL} -pi -e "s:/usr/local:${LOCALBASE}:g;" ${WRKSRC}/configure.in
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g;" ${WRKSRC}/configure.in
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
