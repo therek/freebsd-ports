@@ -3,12 +3,13 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.56 1999/10/08 02:44:34 nakai Exp $
+# $FreeBSD: ports/graphics/imlib/Makefile,v 1.57 1999/10/29 10:50:50 nakai Exp $
 #
 
 DISTNAME=	imlib-1.9.8
 CATEGORIES=	graphics
-MASTER_SITES=	${MASTER_SITE_GNOME}
+MASTER_SITES=	${MASTER_SITE_GNOME} \
+		ftp://ftp.enlightenment.org/enlightenment/enlightenment/libs/
 MASTER_SITE_SUBDIR=	sources/imlib
 
 MAINTAINER=	vanilla@FreeBSD.org
