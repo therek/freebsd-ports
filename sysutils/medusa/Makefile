@@ -2,11 +2,11 @@
 # Date created:				17th August 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.2 2000/10/03 17:37:50 ade Exp $
+# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.3 2000/10/05 07:17:19 reg Exp $
 #
 
 PORTNAME=	medusa
-PORTVERSION=	0.2
+PORTVERSION=	0.2.2
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/medusa
