@@ -2,11 +2,11 @@
 # Date created:        05 June 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/spager/Makefile,v 1.3 2000/10/05 06:42:56 reg Exp $
+# $FreeBSD: ports/x11-wm/spager/Makefile,v 1.4 2001/02/11 20:54:29 nakai Exp $
 #
 
 PORTNAME=	spager
-PORTVERSION=	0.12
+PORTVERSION=	0.14
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.stanford.edu/~satyakid/
 
@@ -24,6 +24,8 @@ post-extract:
 
 post-patch:
 	${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/sample.rc
+	${PERL} -pi -e "s|%%GNUHOST%%|${CONFIGURE_TARGET}|g" \
+		${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/spager ${PREFIX}/bin/
