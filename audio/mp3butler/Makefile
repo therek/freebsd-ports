@@ -2,7 +2,7 @@
 # Date created:        30 April 2001
 # Whom:                Christopher Preston <rbg@gayteenresource.org>
 #
-# $FreeBSD: ports/audio/mp3butler/Makefile,v 1.1 2001/05/01 00:15:13 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mp3butler
@@ -11,6 +11,8 @@ CATEGORIES=	audio
 MASTER_SITES=	http://projects.babblica.net/butler/versions/
 
 MAINTAINER=	rbg@gayteenresource.org
+
+USE_PERL5=	yes
 
 MAN1=		mp3butler.1
 
