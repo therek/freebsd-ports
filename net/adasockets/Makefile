@@ -2,11 +2,11 @@
 # Date created:		22 May 2000
 # Whom:			sam@inf.enst.fr
 #
-# $FreeBSD: ports/net/adasockets/Makefile,v 1.1 2000/07/31 15:14:24 nbm Exp $
+# $FreeBSD: ports/net/adasockets/Makefile,v 1.2 2000/08/21 10:07:15 sobomax Exp $
 #
 
 PORTNAME=	adasockets
-PORTVERSION=	0.1.8
+PORTVERSION=	0.1.10
 CATEGORIES=	net
 MASTER_SITES=	http://www.infres.enst.fr/ANC/
 
