@@ -2,7 +2,7 @@
 # Date created:        18 March 1999
 # Whom:                Zenin <zenin@archive.rhps.org>
 #
-# $FreeBSD: ports/games/wmeyes/Makefile,v 1.3 1999/08/25 06:04:36 obrien Exp $
+# $FreeBSD: ports/games/wmeyes/Makefile,v 1.4 2000/04/14 12:26:46 asami Exp $
 #
 
 PORTNAME=	wmeyes
@@ -15,5 +15,6 @@ MAINTAINER=	zenin@archive.rhps.org
 LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_IMAKE=	yes
+MAN1=		wmeyes.1
 
 .include <bsd.port.mk>
