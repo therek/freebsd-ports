@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.76 1999/09/27 17:20:16 cpiazza Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.77 1999/10/05 16:26:25 cpiazza Exp $
 #
 
     SUBDIR += LPRng
@@ -7,6 +7,7 @@
     SUBDIR += ascpu
     SUBDIR += asfsm
     SUBDIR += asmem
+    SUBDIR += asmon
     SUBDIR += asrpages
     SUBDIR += bchunk
     SUBDIR += bkpupsd
