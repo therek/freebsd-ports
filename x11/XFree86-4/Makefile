@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.94 2000/11/03 16:36:09 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.95 2000/11/07 01:05:49 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -46,6 +46,10 @@ PLIST=		${PKGDIR}/pkg-plist.pc98
 .if (${MACHINE} == "alpha")
 SCRIPTS_ENV+=	MACHINE=alpha
 PLIST=		${PKGDIR}/pkg-plist.alpha
+.endif
+
+.if ${OSVERSION} < 410000
+BROKEN=	"can't be compiled on this system (missing headers)"
 .endif
 
 .if defined(XDM_DES) && (${USA_RESIDENT} != YES && ${USA_RESIDENT} != NO)
