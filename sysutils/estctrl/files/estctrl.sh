@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.1 2004/09/02 04:16:40 edwin Exp $
+# $FreeBSD: ports/sysutils/estctrl/files/estctrl.sh,v 1.2 2004/12/08 17:34:22 pav Exp $
 #
 
 # PROVIDE: estctrl
@@ -30,6 +30,6 @@ command="%%PREFIX%%/sbin/estctrl"
 command_args="-a ${estctrl_speed_ac}"
 command_args="${command_args} -b ${estctrl_speed_battery}"
 command_args="${command_args} -d ${estctrl_speed_default}"
-command_args="${command_args &"
+command_args="${command_args} &"
 
 run_rc_command "$1"
