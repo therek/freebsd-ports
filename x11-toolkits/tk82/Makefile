@@ -1,13 +1,13 @@
 # New ports collection makefile for:	tk
-# Version required:	8.2.0
+# Version required:	8.2.2
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk81/Makefile,v 1.28 1999/08/31 06:52:56 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.29 1999/09/05 16:32:09 jseger Exp $
 #
 
-DISTNAME=	tk8.2.0
-PKGNAME=	tk-8.2.0
+DISTNAME=	tk8.2.2
+PKGNAME=	tk-8.2.2
 CATEGORIES=	x11-toolkits tk82
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_2/
 
