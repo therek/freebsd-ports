@@ -2,7 +2,7 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.59 2001/01/15 23:20:29 vanilla Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.60 2001/03/17 11:19:07 vanilla Exp $
 #
 
 PORTNAME=	icewm
@@ -39,12 +39,6 @@ INSTALL_TARGET=		install install-gnome
 .else
 USE_XPM=	yes
 CONFIGURE_ARGS+=	--without-imlib --with-xpm --without-gnome-menus
-.endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	NODOCS:="@comment "
-.else
-PLIST_SUB+=	NODOCS:=""
 .endif
 
 post-install:
