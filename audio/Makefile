@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.179 2000/10/23 15:03:45 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.180 2000/10/23 15:24:13 imura Exp $
 #
 
     SUBDIR += afsp
@@ -100,6 +100,7 @@
     SUBDIR += nspmod
     SUBDIR += openal
     SUBDIR += opennap
+    SUBDIR += p5-Audio-CD
     SUBDIR += p5-MP3-ID3v1Tag
     SUBDIR += p5-MP3-Info
     SUBDIR += pimp3
