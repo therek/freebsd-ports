@@ -2,7 +2,7 @@
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.24 2000/06/29 07:02:29 obrien Exp $
+# $FreeBSD: ports/mail/nmh/Makefile,v 1.25 2000/10/08 08:47:41 asami Exp $
 #
 # Makefile variables of interest:
 #
@@ -48,6 +48,7 @@
 
 PORTNAME=	nmh
 PORTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mhost.com/pub/nmh/ \
 		${MASTER_SITE_LOCAL}
@@ -97,5 +98,11 @@ post-install:
 	@PKG_PREFIX='${PREFIX}' ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	chgrp mail ${PREFIX}/bin/inc
 	${CHMOD} g+s ${PREFIX}/bin/inc
+	for file in ${PREFIX}/etc/nmh/*.default ; do \
+		if [ \! -f $${file%%.default} ] ; then \
+			cp $$file $${file%%.default} ; \
+			chmod u+w $${file%%.default} ; \
+		fi \
+	done
 
 .include <bsd.port.mk>
