@@ -2,7 +2,7 @@
 # Date created:		10 November 1999
 # Whom:			cjm2
 #
-# $FreeBSD: ports/print/nenscript/Makefile,v 1.2 2000/04/09 17:40:52 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nenscript
@@ -10,7 +10,7 @@ PORTVERSION=	1.13.3
 CATEGORIES=	print
 MASTER_SITES=	http://www.im.lcs.mit.edu/~magnus/nenscript/
 
-MAINTAINER=	cjm2@altavista.net
+MAINTAINER=	ports@FreeBSD.Org
 
 USE_BZIP2=	yes
 
