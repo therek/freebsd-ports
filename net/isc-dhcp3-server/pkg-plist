@@ -1,11 +1,21 @@
-@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.12 2000/12/13 08:26:15 obrien Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.13 2000/12/19 20:07:52 obrien Exp $
 etc/dhclient-script
 sbin/dhclient
 sbin/dhcpd
 sbin/dhcrelay
 etc/rc.d/isc-dhcpd.sh.sample
-include/omapip
-include/isc
+include/isc/boolean.h
+include/isc/dst.h
+include/isc/int.h
+include/isc/lang.h
+include/isc/list.h
+include/isc/result.h
+include/isc/types.h
+@dirrm include/isc
+include/omapip/alloc.h
+include/omapip/buffer.h
+include/omapip/omapip.h
+@dirrm include/omapip
 include/dhcpctl.h
 lib/libomapi.a
 lib/libdhcpctl.a
