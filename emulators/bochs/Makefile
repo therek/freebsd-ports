@@ -4,7 +4,7 @@
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.24 2000/02/13 03:23:05 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.25 2000/02/13 16:48:24 obrien Exp $
 #
 
 DISTNAME=	bochs-${DATE}c
@@ -31,8 +31,8 @@ NO_CDROM=	${RESTRICTED}
 
 pre-configure:
 	@${PERL} -pi.fbsd \
-		 -e 's|^vgaromimage:\sbios/|vgaromimage: ${PREFIX}/bios/| ;' \
-		 -e 's|^romimage:\sfile=bios/|romimage: file=${PREFIX}/bios/|' \
+		 -e 's|^vgaromimage:\sbios/|vgaromimage: ${PREFIX}/lib/bochs/bios/| ;' \
+		 -e 's|^romimage:\sfile=bios/|romimage: file=${PREFIX}/lib/bochs/bios/|' \
 		${WRKSRC}/.bochsrc
 
 do-install:
