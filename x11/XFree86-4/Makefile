@@ -2,12 +2,12 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.116 2001/03/18 14:07:50 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.117 2001/04/10 01:16:01 jmz Exp $
 #
 
 PORTNAME=	XFree86
 PORTVERSION=	4.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	4.0.2
@@ -93,7 +93,7 @@ BROKEN=	"can't be compiled on this system (missing headers)"
 .endif
 
 .if defined(WITH_MATROX_GXX_DRIVER)
-MGA_DRIVER_VERSION=	1_01_05beta
+MGA_DRIVER_VERSION=	1_2_0beta
 MASTER_SITES+=	ftp://ftp.matrox.com/pub/mga/archive/linux/2001/beta_${MGA_DRIVER_VERSION:S/beta//}/
 DISTFILES+=	mga-${MGA_DRIVER_VERSION}.tgz
 .endif # WITH_MATROX_GXX_DRIVER
