@@ -1,11 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/news/leafnode+/files/INSTALL.in,v 1.3 1999/08/30 14:31:42 peter Exp $
+# $FreeBSD: ports/news/leafnode+/files/INSTALL.in,v 1.4 2000/03/08 21:24:01 sada Exp $
 LIBDIR=@LIBDIR@
 SPOOLDIR=@SPOOLDIR@
 if [ x$2 = xPOST-INSTALL ]; then
  if [ ! -d $LIBDIR ]; then
 	mkdir -p $LIBDIR
-	chown -R news.news $LIBDIR/.
+	chown -R news:news $LIBDIR/.
  fi
  if [ ! -d $SPOOLDIR ]; then
 	mkdir -p $SPOOLDIR
@@ -20,7 +20,7 @@ if [ x$2 = xPOST-INSTALL ]; then
 				${a}${b}9 ; \
 		done
 	done
-	chown -R news.news $SPOOLDIR/.
+	chown -R news:news $SPOOLDIR/.
 	chmod 2750 $SPOOLDIR
  fi
 fi
