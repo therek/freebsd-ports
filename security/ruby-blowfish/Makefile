@@ -2,13 +2,14 @@
 # Date created:		8 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-blowfish/Makefile,v 1.2 2001/05/11 15:22:09 knu Exp $
+# $FreeBSD: ports/security/ruby-blowfish/Makefile,v 1.3 2001/06/20 13:48:20 knu Exp $
 #
 
 PORTNAME=	blowfish
 PORTVERSION=	0.2
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.rubylinks.de/download/ \
+		http://www.no.rubylinks.de/download/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
