@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.214 2001/03/07 17:50:49 knu Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.215 2001/03/10 06:38:57 dinoex Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -96,6 +96,7 @@
     SUBDIR += pm3-net
     SUBDIR += pm3-netobj
     SUBDIR += ptoc
+    SUBDIR += py-mx-base
     SUBDIR += python
     SUBDIR += python+ipv6
     SUBDIR += python-doc-html
