@@ -2,7 +2,7 @@
 # Date created:		23.Feb.1996
 # Whom:			sanpei@yy.cs.keio.ac.jp
 #
-# $FreeBSD: ports/japanese/iv/Makefile,v 1.16 2000/06/17 05:33:53 knu Exp $
+# $FreeBSD: ports/japanese/iv/Makefile,v 1.17 2000/08/03 14:28:21 sanpei Exp $
 #
 
 PORTNAME=	iv
@@ -18,6 +18,9 @@ PATCHFILES=	${DISTNAME}j-gamma-fixcmpfont.patch
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sanpei@FreeBSD.org
+
+# Warning: we cannot use USE_IMAKE.
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
 
 USE_XLIB=	yes
 DIST_SUBDIR=	iv
