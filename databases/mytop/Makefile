@@ -2,14 +2,13 @@
 # Date created:				28 Augest 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/databases/mytop/Makefile,v 1.1 2000/10/05 01:35:24 jeh Exp $
+# $FreeBSD: ports/databases/mytop/Makefile,v 1.2 2000/10/07 21:33:54 asami Exp $
 #
 
 PORTNAME=	mytop
-PORTVERSION=	0.3
+PORTVERSION=	0.5
 CATEGORIES=	databases
 MASTER_SITES=	http://public.yahoo.com/~jzawodn/mytop/
-DISTNAME=	mytop
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=	leeym@cae.ce.ntu.edu.tw
@@ -28,11 +27,11 @@ POD2MAN?=	/usr/bin/pod2man
 
 do-extract:
 	@${MKDIR} ${WRKDIR}
-	@${GUNZIP_CMD} -c ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} > ${WRKDIR}/${DISTNAME}
-	@${POD2MAN} ${WRKDIR}/${DISTNAME} > ${WRKDIR}/${DISTNAME}.1
+	@${GUNZIP_CMD} -c ${DISTDIR}/${DISTFILES} > ${WRKDIR}/${PORTNAME}
+	@${POD2MAN} ${WRKDIR}/${PORTNAME} > ${WRKDIR}/${PORTNAME}.1
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}.1 ${PREFIX}/man/man1
+	${INSTALL_SCRIPT} ${WRKDIR}/${PORTNAME} ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKDIR}/${PORTNAME}.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
