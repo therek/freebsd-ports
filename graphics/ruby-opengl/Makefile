@@ -2,11 +2,12 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.1 2000/08/24 14:12:30 knu Exp $
+# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.2 2000/09/08 03:38:51 knu Exp $
 #
 
 PORTNAME=	opengl
 PORTVERSION=	0.31
+PORTREVISION=	1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www2.giganet.net/~yoshi/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
