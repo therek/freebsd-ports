@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl2/pkg-install,v 1.13 2003/06/01 04:21:05 ume Exp $
+#	$FreeBSD: ports/security/cyrus-sasl2/pkg-install,v 1.14 2003/06/07 11:46:04 ume Exp $
 #
 # Created by: stb@FreeBSD.org for the cyrus imap server
 # Added to the cyrus-sasl port by hetzels@westbend.net
@@ -85,14 +85,6 @@ create_sasldb() {
 	fi
 }
 
-# This should really be installed by Sendmail
-
-sendmail_conf() {
-	if [ ! -f ${PKG_PREFIX}/lib/sasl2/Sendmail.conf ]; then
-		echo "pwcheck_method: auxprop" > ${PKG_PREFIX}/lib/sasl2/Sendmail.conf
-	fi
-}
-
 case $2 in
 	PRE-INSTALL)
 		create_user
@@ -100,7 +92,6 @@ case $2 in
 	POST-INSTALL)
 		if [ "${PKG_BATCH}" = "NO" ]; then
 			create_sasldb
-			sendmail_conf
 		fi
 		;;
 
