@@ -2,11 +2,11 @@
 # Date created:		11 Februrary 1999
 # Whom:			Jay Sachs <sachs@cs.williams.edu>
 #
-# $FreeBSD: ports/www/plugger/Makefile,v 1.6 2000/10/10 17:57:37 ade Exp $
+# $FreeBSD: ports/www/plugger/Makefile,v 1.7 2001/02/05 15:33:44 olgeni Exp $
 #
 
 PORTNAME=	plugger
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	www
 MASTER_SITES=	http://fredrik.hubbe.net/plugger/ \
 		ftp://ftp.netscape.com/pub/sdk/plugin/unix/
@@ -16,11 +16,11 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/netscape/plugins:${PORTSDIR}/www/netscape47-navigator
 
-BROKEN_ELF=	"Needs a.out c++rt0.o file"
+#BROKEN_ELF=	"Needs a.out c++rt0.o file"
 
 MAN7=		plugger.7
 MANCOMPRESSED=	no
-ALL_TARGET=	freebsd-aout
+ALL_TARGET=	freebsd-elf
 
 post-patch:
 	${MV} ${WRKSRC}/plugger.c ${WRKSRC}/plugger.c.orig
