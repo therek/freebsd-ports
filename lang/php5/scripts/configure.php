@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.1 2003/05/22 18:26:28 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -50,6 +50,7 @@ MYSQL		"MySQL database support" ${WITH_MYSQL:-OFF} \
 NCURSES		"ncurses support (CLI only)" ${WITH_NCURSES:-OFF} \
 OPENLDAP	"OpenLDAP support" ${WITH_OPENLDAP:-OFF} \
 OPENSSL		"OpenSSL support" ${WITH_OPENSSL:-OFF} \
+ORACLE		"Oracle support" ${WITH_ORACLE:-OFF} \
 PCNTL		"pcntl support (CLI only)" ${WITH_PCNTL:-OFF} \
 PCRE		"Perl Compatible Regular Expression support" ${WITH_PCRE:-OFF} \
 PDFLIB		"PDFlib support" ${WITH_PDFLIB:-OFF} \
