@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/databases/msql/pkg-install,v 1.1 2001/10/21 18:41:42 ache Exp $
 #
 
 if [ "$2" != "PRE-INSTALL" ]; then
@@ -8,7 +8,7 @@ fi
 
 USER=msql
 GROUP=${USER}
-UID=87
+UID=98
 GID=${UID}
 
 if ! pw groupshow "${GROUP}" 2>/dev/null 1>&2; then
