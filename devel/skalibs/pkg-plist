@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/skalibs/pkg-plist,v 1.3 2003/12/25 10:32:16 sergei Exp $
 include/skalibs/alloc.h
 include/skalibs/allreadwrite.h
 include/skalibs/avlnode.h
@@ -60,6 +60,7 @@ include/skalibs/uint32alloc.h
 include/skalibs/uint64.h
 include/skalibs/uint64alloc.h
 include/skalibs/uintalloc.h
+include/skalibs/uintbunch.h
 include/skalibs/webipc.h
 lib/skalibs/libbiguint.a
 lib/skalibs/libdatastruct.a
