@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.389 2004/12/03 17:24:37 glewis Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.390 2004/12/04 18:09:43 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -877,7 +877,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </affects>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
-	<p>There exist a buffer overflow vulnerability in
+	<p>There exists a buffer overflow vulnerability in
 	  ImageMagick's EXIF parsing code which may lead to execution
 	  of arbitrary code.</p>
       </body>
