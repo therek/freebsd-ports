@@ -2,12 +2,11 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.22 2001/03/19 11:13:39 knu Exp $
+# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.23 2001/09/17 17:54:20 knu Exp $
 #
 
 PORTNAME=	tcltklib
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES+=	lang x11-toolkits ruby tcl${TCL_VERSION} tk${TK_VERSION}
 MASTER_SITES=	# none
 DISTFILES=	# none

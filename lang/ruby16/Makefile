@@ -2,26 +2,25 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.75 2001/09/13 05:51:38 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.76 2001/09/17 17:54:19 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	2
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	snapshots
+MASTER_SITE_SUBDIR=	stable
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
 PATCH_SITES=	${MASTER_SITE_RUBY}
 PATCH_SITE_SUBDIR=	snapshots
-PATCHFILES=	${RUBY_PATCHFILES} ruby-thread_alloc_hotfix.diff
+PATCHFILES=	${RUBY_PATCHFILES}
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
-USE_BZIP2=	yes
+#USE_BZIP2=	yes
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
