@@ -2,13 +2,12 @@
 # Date created:				Tue May  1 23:40:46 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-si/Makefile,v 1.1 2001/05/03 01:44:21 lioux Exp $
+# $FreeBSD: ports/games/hlserver-si/Makefile,v 1.2 2001/05/03 02:29:20 lioux Exp $
 #
 
 PORTNAME=	si
 PORTVERSION=	0.96c
 MASTER_SITES=	http://ftp2.gamespy.com/pub/cdrom/planethalflife/si/ \
-		ftp://208.186.102.207/planethalflife/si/ \
 		ftp://fileplanet.ngi.it/fileplanet2/planethalflife/si/
 DISTNAME=	${PORTNAME}${PORTVERSION}-linux
 
