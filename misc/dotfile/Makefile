@@ -3,14 +3,14 @@
 # Date created:      11/12/96
 # Whom:              oly@world.std.com
 #
-# $FreeBSD: ports/misc/dotfile/Makefile,v 1.15 1999/12/10 15:45:21 steve Exp $
+# $FreeBSD: ports/misc/dotfile/Makefile,v 1.16 1999/12/24 18:39:37 mharo Exp $
 #
 
 DISTNAME=	dotfile-2.2
 CATEGORIES=	misc tk82
 MASTER_SITES=	ftp://ftp.imada.ou.dk/pub/dotfile/
 
-MAINTAINER=	oly@world.std.com
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
