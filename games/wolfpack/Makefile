@@ -2,18 +2,20 @@
 # Date created:                         26 October 1999
 # Whom:                                 Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD: ports/games/wolfpack/Makefile,v 1.2 2000/04/14 12:26:50 asami Exp $
+# $FreeBSD: ports/games/wolfpack/Makefile,v 1.3 2000/06/22 14:38:46 jedgar Exp $
 #
 
 PORTNAME=	wolfpack
-PORTVERSION=	4.2.7
+PORTVERSION=	4.2.8
 CATEGORIES=	games
 MASTER_SITES=	ftp://empire.idlpaper.com/pub/empire/server/
 DISTNAME=	empire${PORTVERSION}
 
 MAINTAINER=	darius@dons.net.au
 
+.if !defined(BATCH)
 IS_INTERACTIVE=	yes     # configure script asks questions
+.endif
 WRKSRC=		${WRKDIR}/emp4
 ALL_TARGET=	freebsd
 
