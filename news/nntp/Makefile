@@ -2,7 +2,7 @@
 # Date created:		29 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nntp/Makefile,v 1.22 2000/08/10 16:12:23 kevlo Exp $
+# $FreeBSD: ports/news/nntp/Makefile,v 1.23 2001/08/18 07:56:50 trevor Exp $
 #
 
 PORTNAME=	nntp
@@ -15,7 +15,7 @@ PATCH_SITES=	ftp://ftp.lan-ks.de/pub/c-news/ \
 		ftp://ftp.dinoex.org/pub/c-news/
 PATCHFILES=	nntp-patch-y2k
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dinoex@freebsd.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libcnews.a:${PORTSDIR}/news/cnews
 
