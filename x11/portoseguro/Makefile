@@ -2,13 +2,14 @@
 # Date created:				2000-10-08
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.2 2000/10/15 14:33:04 trevor Exp $
+# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.3 2000/10/17 02:49:05 trevor Exp $
 #
 
 PORTNAME=	portoseguro
 PORTVERSION=	0.4
 CATEGORIES=	x11
-MASTER_SITES=	http://www.ic.unicamp.br/~guazzibe/random/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	trevor
 DISTNAME=	${PORTNAME}-alpha4
 
 MAINTAINER=	trevor@FreeBSD.org
