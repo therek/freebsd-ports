@@ -3,7 +3,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.17 2000/01/13 07:02:21 sumikawa Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.18 2000/01/18 12:34:32 sumikawa Exp $
 #
 
 DISTNAME=	mtr-0.41
@@ -11,22 +11,23 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
 
-.if defined(USE_INET6)
-PATCHFILES=	mtr-041-v6-20000113.diff.gz
-PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCH_DIST_STRIP=	-p1
-.endif
-
 MAINTAINER=	billf@FreeBSD.org
 
 HAS_CONFIGURE=	yes
-.if defined(USE_INET6)
+
+MAN8=	mtr.8
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+PATCHFILES=	mtr-041-v6-20000113.diff.gz
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
+PATCH_DIST_STRIP=	-p1
+
 CONFIGURE_ARGS+=--enable-ipv6
 .else
 CONFIGURE_ARGS+=--disable-ipv6
 .endif
-
-MAN8=	mtr.8
 
 pre-patch:
 .if !defined(USE_GTK)
@@ -53,4 +54,4 @@ post-install:
 	@${ECHO} "in file ${WRKSRC}/SECURITY (not installed)"
 	@${ECHO} ""
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

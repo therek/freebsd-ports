@@ -3,7 +3,7 @@
 # Date created:         04 September 1997
 # Whom:                 Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.16 2000/01/12 19:16:43 sumikawa Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.17 2000/01/18 12:34:30 sumikawa Exp $
 #
 
 DISTNAME=	ruby-1.4.3
@@ -19,9 +19,6 @@ MAINTAINER=	yasuf@big.or.jp
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --enable-shared
-.if defined(USE_INET6)
-CONFIGURE_ARGS+= --enable-ipv6
-.endif
 MAN1=		ruby.1
 PLIST_SUB+=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
@@ -32,6 +29,12 @@ BRANCH_NAME=	1.4
 
 DOCDIR=		${PREFIX}/share/doc/ruby
 EXAMPLESDIR=	${PREFIX}/share/examples/ruby
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+CONFIGURE_ARGS+= --enable-ipv6
+.endif
 
 post-patch:
 	${RM} -f ${WRKSRC}/ext/tcltklib/MANIFEST
@@ -66,4 +69,4 @@ post-install:
 test:
 	@(cd ${WRKSRC}; make test)
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
