@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.5 2000/02/12 21:02:06 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.6 2000/02/13 18:14:48 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -157,5 +157,3 @@ then
 fi
  echo "	@\${ECHO} \"*** Printer installation ***               \""
  echo "	@\${ECHO} \"    cd ${PREFIX}/apsfilter; ./SETUP        \""
- echo "	@\${ECHO} \"*** Please note ***                        \""
- echo "	@\${ECHO} \"    This is an apsfilter 5.1.5 Prerelease. \""
