@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.422 2002/08/19 17:12:59 sobomax Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -933,7 +933,7 @@ RUN_DEPENDS+=	${LINUXBASE}/etc/redhat-release:${PORTSDIR}/emulators/linux_base
 .if defined(USE_MOTIF)
 USE_XPM=			yes
 .if !defined(NO_OPENMOTIF)
-LIB_DEPENDS+=		Xm.2:${PORTSDIR}/x11-toolkits/open-motif
+LIB_DEPENDS+=		Xm.3:${PORTSDIR}/x11-toolkits/open-motif
 .endif
 .endif
 
