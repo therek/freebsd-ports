@@ -2,14 +2,14 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/net/dnscache/Makefile,v 1.2 2000/04/27 22:56:59 nbm Exp $
+# $FreeBSD: ports/net/djbdns/Makefile,v 1.3 2000/07/29 16:39:44 nbm Exp $
 #
 
-PORTNAME=	dnscache
-PORTVERSION=	1.00
+PORTNAME=	djbdns
+PORTVERSION=	1.02
 CATEGORIES=	net
-MASTER_SITES=	http://cr.yp.to/dnscache/ \
-		ftp://cr.yp.to/dnscache/
+MASTER_SITES=	http://cr.yp.to/djbdns/ \
+		ftp://cr.yp.to/djbdns/
 
 MAINTAINER=	nbm@FreeBSD.org
 
