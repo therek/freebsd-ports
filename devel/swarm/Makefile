@@ -2,13 +2,13 @@
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/swarm/Makefile,v 1.6 1999/11/28 18:31:55 steve Exp $
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.7 2000/04/14 05:44:28 asami Exp $
 #
 
 PORTNAME=	swarm
 PORTVERSION=	1.4.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.santafe.edu/pub/swarm/
+MASTER_SITES=	ftp://ftp.santafe.edu/pub/swarm/src/swarm/
 
 MAINTAINER=	horance@freedom.ie.cycu.edu.tw
 
