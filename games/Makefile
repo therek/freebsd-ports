@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/Makefile,v 1.325 2001/02/08 12:42:56 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -58,6 +58,7 @@
     SUBDIR += fkiss
     SUBDIR += flightgear
     SUBDIR += flying
+    SUBDIR += freecell-solver
     SUBDIR += freeciv
     SUBDIR += freeciv-gtk
     SUBDIR += freesweep
