@@ -2,11 +2,11 @@
 # Date created:		29 December 1996
 # Whom:			jseger@scds.com
 #
-# $FreeBSD: ports/games/gnugo/Makefile,v 1.8 2001/09/17 17:40:13 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnugo
-PORTVERSION=	3.0.0
+PORTVERSION=	3.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gnugo
