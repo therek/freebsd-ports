@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/french/netscape7/scripts/configure,v 1.3 2002/05/23 13:00:09 trevor Exp $
+# $FreeBSD: ports/french/netscape7/scripts/configure,v 1.4 2002/10/14 13:50:18 trevor Exp $
 
 echo ${WRKSRC}/components.conf
 if [ -f ${WRKSRC}/components.conf ]; then
@@ -20,7 +20,6 @@ sélectionné et désélectionné." -1 -1 10 \
 "browser"	"navigateur"						ON \
 "deflfrfr"	"profil français par défaut"			ON \
 "flash"		"plugin Flash"						ON \
-"jre"		"plugin Java"						ON \
 "langfrfr"	"locale français"					ON \
 "mail"		"lecteur de courrier et de nouvelles"			ON \
 "regfr"		"configurations régionales pour la France"		ON \
@@ -55,3 +54,7 @@ echo "$choice" \
 	| perl -pi -e "s/ /\n/g" \
 	> ${WRKSRC}/components.conf
 fi
+
+echo "Maintenant vous devez courir <<make>> encore."
+echo "Veuillez ignorer le message <<Error code 1>>."
+exit 1
