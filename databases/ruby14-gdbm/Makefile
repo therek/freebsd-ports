@@ -2,7 +2,7 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby14-gdbm/Makefile,v 1.2 2000/09/05 12:44:13 knu Exp $
+# $FreeBSD: ports/databases/ruby14-gdbm/Makefile,v 1.3 2000/09/06 22:54:16 knu Exp $
 #
 
 PORTNAME=	gdbm
@@ -28,6 +28,4 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/ext/gdbm
 post-install:
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

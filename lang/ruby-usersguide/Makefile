@@ -2,7 +2,7 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.6 2000/09/17 15:40:04 knu Exp $
+# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.7 2000/09/20 06:52:01 knu Exp $
 #
 
 PORTNAME=	ruby-usersguide
@@ -34,6 +34,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/* ${DOCDIR}
 	${LN} -fs uguide00.html ${DOCDIR}/index.html
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

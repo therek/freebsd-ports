@@ -2,7 +2,7 @@
 # Date created:		6 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-eb/Makefile,v 1.1 2000/09/05 18:26:27 knu Exp $
+# $FreeBSD: ports/japanese/ruby-eb/Makefile,v 1.2 2000/09/07 07:44:35 knu Exp $
 #
 
 PORTNAME=	eb
@@ -23,7 +23,6 @@ NO_WRKSUBDIR=	yes
 INSTALL_TARGET=	site-install
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}
 

@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.5 2000/09/07 14:39:31 knu Exp $
+# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.6 2000/09/07 16:16:56 knu Exp $
 #
 
 PORTNAME=	mysql
@@ -29,6 +29,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/mysql/ja
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

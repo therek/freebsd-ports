@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.7 2000/08/16 12:21:19 knu Exp $
+# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.8 2000/09/07 07:29:06 knu Exp $
 #
 
 PORTNAME=	postgres
@@ -42,6 +42,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

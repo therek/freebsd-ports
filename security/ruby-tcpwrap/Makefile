@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.4 2000/09/07 07:44:32 knu Exp $
+# $FreeBSD: ports/security/ruby-tcpwrap/Makefile,v 1.5 2000/09/10 07:57:05 knu Exp $
 #
 
 PORTNAME=	tcpwrap
@@ -48,6 +48,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

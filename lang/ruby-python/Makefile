@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.10 2000/09/10 17:44:12 knu Exp $
+# $FreeBSD: ports/lang/ruby-python/Makefile,v 1.11 2000/09/10 20:13:12 knu Exp $
 #
 
 PORTNAME=	python
@@ -35,6 +35,4 @@ post-install:
 		${RUBY_DOCDIR}/python/ja/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

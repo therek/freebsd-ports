@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-runit/Makefile,v 1.3 2000/09/07 19:03:24 knu Exp $
+# $FreeBSD: ports/devel/ruby-runit/Makefile,v 1.4 2000/09/09 11:06:01 knu Exp $
 #
 
 PORTNAME=	runit
@@ -45,6 +45,4 @@ do-install:
 	${CP} -R ${WRKSRC}/doc_en/ ${RUBY_DOCDIR}/runit/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

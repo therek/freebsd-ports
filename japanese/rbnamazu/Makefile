@@ -2,7 +2,7 @@
 # Date created:		18 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/rbnamazu/Makefile,v 1.2 2000/08/22 09:51:56 knu Exp $
+# $FreeBSD: ports/japanese/rbnamazu/Makefile,v 1.3 2000/09/07 07:44:34 knu Exp $
 #
 
 PORTNAME=	rbnamazu
@@ -45,6 +45,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.16 2000/09/07 00:03:30 knu Exp $
+# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.17 2000/09/19 15:20:15 knu Exp $
 #
 
 PORTNAME=	tcltklib
@@ -50,7 +50,6 @@ TCL_DIR=	`echo "${TCL_LIB}" | ${SED} 's/\([0-9]\)\([0-9]\)/\1.\2/'`
 TK_DIR=		`echo "${TK_LIB}"  | ${SED} 's/\([0-9]\)\([0-9]\)/\1.\2/'`
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 .if defined(PKGNAMEPREFIX)
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}

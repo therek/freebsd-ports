@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.5 2000/08/16 12:21:19 knu Exp $
+# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.6 2000/09/07 14:39:36 knu Exp $
 #
 
 PORTNAME=	property
@@ -36,6 +36,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

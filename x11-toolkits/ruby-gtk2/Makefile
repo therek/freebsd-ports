@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.11 2000/08/16 12:21:10 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.12 2000/09/07 07:29:07 knu Exp $
 #
 
 PORTNAME=	gtk
@@ -52,6 +52,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/api-ja/* ${RUBY_DOCDIR}/gtk/ja
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.2 2000/09/08 03:38:51 knu Exp $
+# $FreeBSD: ports/graphics/ruby-opengl/Makefile,v 1.3 2000/09/21 17:02:21 knu Exp $
 #
 
 PORTNAME=	opengl
@@ -35,6 +35,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.EUC ${RUBY_DOCDIR}/opengl/ja/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-filelock/Makefile,v 1.2 2000/09/07 14:39:23 knu Exp $
+# $FreeBSD: ports/devel/ruby-filelock/Makefile,v 1.3 2000/09/19 16:09:10 knu Exp $
 #
 
 PORTNAME=	filelock
@@ -35,6 +35,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

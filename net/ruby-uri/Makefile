@@ -2,7 +2,7 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-uri/Makefile,v 1.4 2000/08/23 03:11:07 knu Exp $
+# $FreeBSD: ports/net/ruby-uri/Makefile,v 1.5 2000/09/07 14:39:42 knu Exp $
 #
 
 PORTNAME=	uri
@@ -40,6 +40,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

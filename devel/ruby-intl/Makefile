@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.4 2000/08/18 02:21:12 knu Exp $
+# $FreeBSD: ports/devel/ruby-intl/Makefile,v 1.5 2000/09/07 14:39:30 knu Exp $
 #
 
 PORTNAME=	intl
@@ -33,6 +33,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/intl/ja/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.1 2000/08/25 16:38:11 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.2 2000/09/07 14:39:24 knu Exp $
 #
 
 PORTNAME=	fltk
@@ -38,6 +38,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/fltk/ja/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

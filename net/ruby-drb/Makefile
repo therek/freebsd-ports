@@ -2,7 +2,7 @@
 # Date created:		9 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.2 2000/09/19 15:27:26 knu Exp $
+# $FreeBSD: ports/net/ruby-drb/Makefile,v 1.3 2000/09/19 16:08:19 knu Exp $
 #
 
 PORTNAME=	drb
@@ -34,6 +34,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/drb
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

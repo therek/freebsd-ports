@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.5 2000/09/07 14:39:45 knu Exp $
+# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.6 2000/09/15 14:22:50 knu Exp $
 #
 
 PORTNAME=	xmlparser
@@ -76,6 +76,4 @@ post-install:
 .endif
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

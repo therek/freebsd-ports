@@ -2,7 +2,7 @@
 # Date created:		23 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.5 2000/09/07 14:39:38 knu Exp $
+# $FreeBSD: ports/devel/ruby-slang/Makefile,v 1.6 2000/09/15 14:16:10 knu Exp $
 #
 
 PORTNAME=	slang
@@ -36,7 +36,6 @@ DOCS_EN=	README		changes.txt
 DOCS_JA=	README.euc
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 .if defined(PKGNAMEPREFIX)
 PKGNAMEPREFIX:= ${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}

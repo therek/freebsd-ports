@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby14/Makefile,v 1.33 2000/09/06 21:50:03 knu Exp $
+# $FreeBSD: ports/lang/ruby14/Makefile,v 1.34 2000/09/06 22:46:11 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -28,7 +28,6 @@ EMACSLISPDIR=	${PREFIX}/share/emacs/site-lisp
 XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 .if !empty(RUBY_SUFFIX)
 CONFIGURE_ARGS+=	--program-suffix="${RUBY_SUFFIX}"

@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.8 2000/08/22 09:49:03 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.9 2000/09/07 07:23:43 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -74,6 +74,4 @@ post-install:
 .endif
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

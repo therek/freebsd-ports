@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/swigruby/Makefile,v 1.2 2000/09/04 18:55:17 knu Exp $
+# $FreeBSD: ports/devel/swigruby/Makefile,v 1.3 2000/09/07 15:18:20 knu Exp $
 #
 
 PORTNAME=	swigruby
@@ -40,6 +40,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

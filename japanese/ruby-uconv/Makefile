@@ -2,7 +2,7 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.5 2000/08/27 16:52:49 knu Exp $
+# $FreeBSD: ports/japanese/ruby-uconv/Makefile,v 1.6 2000/09/07 14:39:16 knu Exp $
 #
 
 PORTNAME=	uconv
@@ -25,7 +25,6 @@ EXAMPLES=	euc2unicode.rb	test_euc.txt	test_euc.xml \
 		trilang.xml	unicode2euc.rb	xmlconv.rb
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}
 

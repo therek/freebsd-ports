@@ -2,7 +2,7 @@
 # Date created:		15 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.2 2000/08/16 12:21:21 knu Exp $
+# $FreeBSD: ports/sysutils/ruby-syslog/Makefile,v 1.3 2000/09/07 14:39:41 knu Exp $
 #
 
 PORTNAME=	syslog
@@ -30,6 +30,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/syslog/
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

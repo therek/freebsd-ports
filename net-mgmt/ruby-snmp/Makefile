@@ -2,7 +2,7 @@
 # Date created:		1 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-snmp/Makefile,v 1.1 2000/08/31 18:09:39 knu Exp $
+# $FreeBSD: ports/net/ruby-snmp/Makefile,v 1.2 2000/09/07 14:39:39 knu Exp $
 #
 
 PORTNAME=	snmp
@@ -40,6 +40,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

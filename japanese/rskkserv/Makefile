@@ -2,7 +2,7 @@
 # Date created:		18 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.3 2000/09/07 07:44:35 knu Exp $
+# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.4 2000/09/19 15:23:15 knu Exp $
 #
 
 PORTNAME=	rskkserv
@@ -51,6 +51,4 @@ do-install:
 		${CHMOD} ${BINMODE} ${STARTUP_SCRIPT}; \
 	fi
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby14-tk/Makefile,v 1.16 2000/09/07 00:03:36 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby14-tk/Makefile,v 1.17 2000/09/20 05:24:10 knu Exp $
 #
 
 PORTNAME=	tk
@@ -32,7 +32,6 @@ TCLTKLIB_CATEGORY?=	lang
 .endif
 
 .include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
 
 .if defined(PKGNAMEPREFIX)
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}

@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby14-irb/Makefile,v 1.10 2000/09/05 12:44:12 knu Exp $
+# $FreeBSD: ports/lang/ruby14-irb/Makefile,v 1.11 2000/09/07 05:44:02 knu Exp $
 #
 
 PORTNAME=	irb
@@ -38,6 +38,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/README* ${RUBY_DOCDIR}/irb
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

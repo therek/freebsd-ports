@@ -2,7 +2,7 @@
 # Date created:		7 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-acl/Makefile,v 1.1 2000/09/07 15:38:41 knu Exp $
+# $FreeBSD: ports/security/ruby-acl/Makefile,v 1.2 2000/09/19 16:08:18 knu Exp $
 #
 
 PORTNAME=	acl
@@ -45,6 +45,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

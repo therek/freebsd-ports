@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.4 2000/09/07 07:44:33 knu Exp $
+# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.5 2000/09/10 07:57:05 knu Exp $
 #
 
 PORTNAME=	zlib
@@ -34,6 +34,4 @@ post-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.8 2000/09/07 07:23:41 knu Exp $
+# $FreeBSD: ports/devel/ruby-strscan/Makefile,v 1.9 2000/09/19 15:42:01 knu Exp $
 #
 
 PORTNAME=	strscan
@@ -41,6 +41,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>

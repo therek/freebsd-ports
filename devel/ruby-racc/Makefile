@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.10 2000/09/07 07:23:42 knu Exp $
+# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.11 2000/09/19 05:24:47 knu Exp $
 #
 
 PORTNAME=	racc
@@ -73,6 +73,4 @@ do-install:
 .endif
 .endif
 
-.include <bsd.port.pre.mk>
-.include "${PORTSDIR}/Mk/bsd.ruby.mk"
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
