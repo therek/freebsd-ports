@@ -2,11 +2,11 @@
 # Date Created:				30 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/databases/dbiwrapper/Makefile,v 1.1 2001/07/16 07:22:50 vanilla Exp $
+# $FreeBSD: ports/databases/p5-DBIWrapper/Makefile,v 1.2 2001/07/22 03:46:53 dwcjr Exp $
 #
 
 PORTNAME=	DBIWrapper
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	dbiwrapper
