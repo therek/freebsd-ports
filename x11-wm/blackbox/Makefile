@@ -2,7 +2,7 @@
 # Date created:		June 15, 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.31 2000/04/10 19:49:37 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.32 2000/04/17 00:18:58 reg Exp $
 #
 
 PORTNAME=	blackbox
@@ -11,7 +11,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://portal.alug.org/pub/blackbox/0.5x.x/ \
 	 	ftp://ftp.dti.ad.jp/pub/X/blackbox/0.5x.x/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	patseal@hyperhost.net
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
