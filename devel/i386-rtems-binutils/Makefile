@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.4 2000/09/25 22:01:12 ade Exp $
+# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.5 2000/10/02 03:10:01 jeh Exp $
 #
 
 PORTNAME=	binutils
@@ -24,7 +24,7 @@ LCLTARGET?=	i386-rtems
 
 BINNAME=	binutils-2.10
 MASTERDIR=	${.CURDIR}/../i386-rtems-binutils
-PLIST=		${PKGDIR}/PLIST.${LCLTARGET}
+PLIST=		${PKGDIR}/pkg-plist.${LCLTARGET}
 
 PKGNAMEPREFIX=	${LCLTARGET}-
 USE_GMAKE=	yes
