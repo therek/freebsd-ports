@@ -2,7 +2,7 @@
 # Date created:		3 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-sha1/Makefile,v 1.3 2001/04/07 10:47:35 knu Exp $
+# $FreeBSD: ports/security/ruby-sha1/Makefile,v 1.4 2001/05/01 08:35:51 knu Exp $
 #
 
 PORTNAME=	sha1
@@ -21,10 +21,18 @@ USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
+RUBY_REQUIRE=	Ruby < 170
+
+.include <bsd.port.pre.mk>
+
+.if !defined(RUBY_PROVIDED)
+BROKEN=		"ruby-sha1 is included as a standard module in Ruby >= 1.7.0"
+.endif
+
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_DOCDIR}/sha1
 	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/sha1/
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

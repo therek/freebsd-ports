@@ -1,4 +1,4 @@
-# $FreeBSD: ports/shells/Makefile,v 1.31 2001/03/10 20:05:06 will Exp $
+# $FreeBSD: ports/shells/Makefile,v 1.32 2001/03/16 09:02:00 knu Exp $
 #
 
     SUBDIR += 44bsd-csh
@@ -14,7 +14,6 @@
     SUBDIR += pdksh
     SUBDIR += perlsh
     SUBDIR += rc
-    SUBDIR += ruby-shell
     SUBDIR += sash
     SUBDIR += scsh
     SUBDIR += tcsh

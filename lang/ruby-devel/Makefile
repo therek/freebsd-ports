@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.3 2001/05/07 19:52:04 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.4 2001/05/11 18:22:57 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -101,6 +101,8 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/README* ${RUBY_DOCDIR}/pty
 	${MKDIR} ${RUBY_DOCDIR}/readline
 	${INSTALL_DATA} ${WRKSRC}/ext/readline/README ${RUBY_DOCDIR}/readline
+	${MKDIR} ${RUBY_DOCDIR}/sha1
+	${INSTALL_DATA} ${WRKSRC}/ext/sha1/sha1.txt* ${RUBY_DOCDIR}/sha1
 	${CP} -R ${WRKSRC}/doc/* ${RUBY_DOCDIR}/
 .endif
 	@${CAT} ${PKGMESSAGE}
