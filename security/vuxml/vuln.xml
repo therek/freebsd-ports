@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.128 2004/06/25 17:18:56 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.129 2004/06/25 20:01:28 trhodes Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -36,8 +36,8 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <topic>isc-dhcp3-server buffer overflow in logging mechanism</topic>
     <affects>
       <package>
-        <name>isc-dhcp3-server</name>
-        <range><lt>3.0.1.r12</lt></range>
+        <name>isc-dhcp3-{relay,server}</name>
+        <range><ge>3.0.1.r12</ge><lt>3.0.1.r14</lt></range>
       </package>
     </affects>
     <description>
