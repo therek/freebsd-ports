@@ -3,17 +3,17 @@
 # Date created:			Apr 29, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/yap/Makefile,v 1.1 2001/04/29 14:43:08 ijliao Exp $
 #
 
 PORTNAME=	yap
-PORTVERSION=	4.3.18
+PORTVERSION=	4.3.19
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	Yap-${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 do-configure:
 	@(${MKDIR} ${WRKSRC}/arch ; cd ${WRKSRC}/arch ; \
