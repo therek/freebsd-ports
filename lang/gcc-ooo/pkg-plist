@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc-devel/pkg/PLIST,v 1.26 1999/08/30 12:01:05 peter Exp $
+@comment $FreeBSD: ports/lang/gcc-devel/pkg/PLIST,v 1.27 1999/10/10 20:28:35 obrien Exp $
 bin/eg++filt
 bin/eg++
 bin/eg77
@@ -9,8 +9,6 @@ bin/gcjh
 bin/gcov
 bin/jv-scan
 bin/jcf-dump
-bin/protoize
-bin/unprotoize
 %%GNU_HOST%%/include/_G_config.h
 %%GNU_HOST%%/include/assert.h
 lib/gcc-lib/%%GNU_HOST%%/%%EGCS_REV%%/include/g++/PlotFile.h
