@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner-devel/pkg-plist,v 1.12 2004/03/31 15:57:12 glewis Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.13 2004/06/04 00:08:06 joe Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -80,6 +80,8 @@ libexec/MailScanner/rav-autoupdate.sample
 libexec/MailScanner/rav-wrapper.sample
 libexec/MailScanner/sophos-autoupdate.sample
 libexec/MailScanner/sophos-wrapper.sample
+libexec/MailScanner/symscanengine-wrapper.sample
+libexec/MailScanner/symscanengine-autoupdate.sample
 libexec/MailScanner/trend-autoupdate.sample
 libexec/MailScanner/trend-wrapper.sample
 libexec/MailScanner/vexira-wrapper.sample
