@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.1 2004/05/03 04:27:23 dinoex Exp $
+# $FreeBSD: ports/www/apache13-modssl/files/rcng.sh,v 1.2 2004/05/03 16:27:45 nork Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -26,5 +26,6 @@ command="%%PREFIX%%/sbin/httpd"
 load_rc_config $name
 
 pidfile="${apache_pidfile}"
+start_precmd="`/usr/bin/limits -e -U www`"
 
 run_rc_command "$1"
