@@ -3,7 +3,7 @@
 # Date created:		14 Feb 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xemacs-additional-packages/Makefile,v 1.1.1.1 2000/07/12 07:30:30 taoka Exp $
 #
 
 PORTNAME=	xemacs-additional-packages
@@ -18,7 +18,7 @@ MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 RUN_DEPENDS=	${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.zenirc:${PORTSDIR}/editors/xemacs-comm-packages \
 		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.misc-games:${PORTSDIR}/editors/xemacs-games-packages \
 		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.tooltalk:${PORTSDIR}/editors/xemacs-libs-packages \
-		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.view-process:${PORTSDIR}/editors/xemacs-oa-packages \
+		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.calc:${PORTSDIR}/editors/xemacs-oa-packages \
 		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.vhdl:${PORTSDIR}/editors/xemacs-prog-packages \
 		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.tpu:${PORTSDIR}/editors/xemacs-wp-packages
 
