@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.5 2000/04/14 07:20:47 asami Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.6 2000/04/17 00:18:20 reg Exp $
 #
 
 PORTNAME=	vtk
@@ -13,14 +13,12 @@ DISTNAME=	vtk31Unix
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3	\
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
-RUN_DEPENDS=
 
-WRKSRC=		$(WRKDIR)/vtk31
+WRKSRC=		${WRKDIR}/vtk31
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --with-mesa --with-shared --with-tcl --with-bsdmake
+CONFIGURE_ARGS=	--with-mesa --with-shared --with-tcl --with-bsdmake
 CONFIGURE_ARGS+=	--with-contrib --with-tkwidget
 
 # Support for Python is compiled in by default.
