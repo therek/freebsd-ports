@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.27 2001/02/23 16:52:37 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.28 2001/02/23 17:04:43 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -91,5 +91,6 @@ post-install:
 	strip ${PREFIX}/${f}
 .endfor
 	${INSTALL_SCRIPT} ${WRKDIR}/slapd.sh ${PREFIX}/etc/rc.d/slapd.sh.sample
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
