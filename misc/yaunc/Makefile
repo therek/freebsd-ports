@@ -2,7 +2,7 @@
 # Date created:        5 March 2000
 # Whom:                nsayer@freebsd.org
 #
-# $FreeBSD: ports/misc/yaunc/Makefile,v 1.1.1.1 2000/03/09 18:05:48 nsayer Exp $
+# $FreeBSD: ports/misc/yaunc/Makefile,v 1.2 2000/04/14 08:47:20 asami Exp $
 #
 
 PORTNAME=	yaunc
@@ -10,7 +10,7 @@ PORTVERSION=	0.02
 CATEGORIES=	misc
 MASTER_SITES=	http://www.redterror.net/code/yaunc/
 
-MAINTAINER=	nsayer@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/yaunc
 
