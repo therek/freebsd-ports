@@ -2,7 +2,7 @@
 # Date created:         14 Jan 2001
 # Whom:                 Patrick Powell <papowell@astart.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pic2fig/Makefile,v 1.1 2001/01/16 23:01:56 will Exp $
 
 PORTNAME=	pic2fig
 PORTVERSION=	1.4
@@ -11,7 +11,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	Patrick Powell <papowell@astart.com>
+MAINTAINER=	papowell@astart.com
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		pic2fig.1
