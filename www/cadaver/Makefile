@@ -2,17 +2,17 @@
 # Date created:		13 January 2000
 # Whom:			Alex Povolotsky <tarkhil@over.ru>
 #
-# $FreeBSD: ports/www/cadaver/Makefile,v 1.5 2001/06/06 10:22:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cadaver
-PORTVERSION=	0.17.0
+PORTVERSION=	0.18.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/cadaver/
 
 MAINTAINER=	tarkhil@over.ru
 
-LIB_DEPENDS=	neon.15:${PORTSDIR}/www/neon \
+LIB_DEPENDS=	neon.17:${PORTSDIR}/www/neon \
 		intl.1:${PORTSDIR}/devel/gettext
 
 .ifndef NO_OPENSSL
