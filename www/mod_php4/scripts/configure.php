@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.139 2001/08/25 10:46:47 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.140 2001/09/11 05:52:37 ache Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -259,7 +259,7 @@ EOF
 			echo "CONFIGURE_ARGS+=--with-hyperwave=yes"
 			;;
 		\"ming\")
-			echo "LIB_DEPENDS+=	ming.2:\${PORTSDIR}/graphics/ming"
+			echo "LIB_DEPENDS+=	ming.3:\${PORTSDIR}/graphics/ming"
 			echo "CONFIGURE_ARGS+=--with-ming=\${PREFIX}"
 			;;
 		\"sockets\")
