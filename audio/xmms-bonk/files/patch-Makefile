@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/audio/xmms-bonk/files/patch-Makefile,v 1.1 2002/07/07 00:24:53 naddy Exp $
 
 --- Makefile.orig	Sat Jun 15 15:37:43 2002
 +++ Makefile	Sat Jun 15 15:38:41 2002
@@ -12,7 +12,7 @@ $FreeBSD$
 -else
 -  CFLAGS=-Wall -O2 -fno-exceptions -ffast-math -D_REENTRANT `gtk-config --cflags`
 -endif
-+CXXFLAGS+= -fno-exceptions -D_REENTRANT `xmms-config --cflags`
++CXXFLAGS+= -fno-exceptions -D_REENTRANT `xmms-config --cflags` -fPIC
  
  libbonk.so : bonk-xmms.cc
 -	$(CPP) $(CFLAGS) -shared -o libbonk.so bonk-xmms.cc -lstdc++
