@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.102 2003/04/19 15:59:08 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.103 2003/04/19 16:01:34 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -268,3 +268,5 @@ emulators/linux-vmware-toolbox|emulators/linux-vmware-toolbox2|2003-04-19|port r
 emulators/vmware-guestd|emulators/vmware-guestd3|2003-04-19|port renamed
 archivers/ruby-zlib||2003-04-19|integrated into ruby16-shim-ruby18
 math/ruby-bigfloat||2003-04-19|integrated into ruby16-shim-ruby18
+palm/prc-tools-binutils||2003-04-27|integrate into palm/prc-tools
+palm/prc-tools-gcc||2003-04-27|integrate into palm/prc-tools
