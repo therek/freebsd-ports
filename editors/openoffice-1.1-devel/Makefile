@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.15 2000/08/25 13:47:55 jedgar Exp $
+# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.16 2000/08/28 13:35:26 jedgar Exp $
 #
 
 PORTNAME=	staroffice
@@ -100,11 +100,20 @@ do-install:
 	@${LN} -fs /compat/linux/usr/local/office52 ${PREFIX}/office52
 .endif
 	@${CAT} ${PKGDIR}/MESSAGE
+	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${TMPDIR}:${WRKSRC}:/compat/linux/lib:/compat/linux/usr/lib
 	@-SAL_IGNOREXERRORS=1 TEMP=${TMPDIR} /compat/linux/bin/sh -c '${WRKSRC}/setup /net'
+.if exists(/usr/local/office52/program/setup)
 	@ ${ECHO}
 	@ ${ECHO} Ignore the error-message. StarOffice5.2 has been installed
 	@ ${ECHO} successfully on your system.
 	@ ${ECHO}
+.else
+	@ ${ECHO}
+	@ ${ECHO} An error occured during StarOffice5.2 install. Please send a mail with debug-output and
+	@ ${ECHO} some information about your FreeBSD-environment to mb@imp.ch. Thanks.
+	@ ${ECHO}
+	@ ${FALSE}
+.endif
 .endif
 
 post-install:
