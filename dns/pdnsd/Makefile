@@ -2,11 +2,11 @@
 # Date Created:				27 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/pdnsd/Makefile,v 1.2 2001/01/07 15:06:45 kevlo Exp $
+# $FreeBSD: ports/net/pdnsd/Makefile,v 1.3 2001/01/28 07:51:30 kevlo Exp $
 #
 
 PORTNAME=	pdnsd
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.5
 CATEGORIES=	net
 MASTER_SITES=	http://home.t-online.de/home/Moestl/
 
@@ -14,6 +14,8 @@ MAINTAINER=	roman@xpert.com
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-cachedir=${PDNSDB}
+
+MAN8=		pdnsd-ctl.8
 
 PDNSDB=		/var/db/pdnsd
 
