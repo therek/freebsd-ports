@@ -2,7 +2,7 @@
 # Date created:				18 Jun 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/emulators/gsnes9x/Makefile,v 1.2 2000/07/24 01:09:55 kbyanc Exp $
+# $FreeBSD: ports/emulators/gsnes9x/Makefile,v 1.3 2000/08/13 16:26:26 alex Exp $
 #
 
 PORTNAME=	gsnes9x
@@ -13,13 +13,10 @@ DISTNAME=	GSnes9x-3.0
 
 MAINTAINER=	kbyanc@posi.net
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gnome.4:${PORTSDIR}/x11/gnomelibs \
-		esd.2:${PORTSDIR}/audio/esound
 RUN_DEPENDS=	snes9x:${PORTSDIR}/emulators/snes9x
 
 GNU_CONFIGURE=	yes
+USE_GNOME=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				28 September 2000
 # Whom:					eric
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/gtoaster/Makefile,v 1.1 2000/10/28 02:18:07 will Exp $
 #
 
 PORTNAME=	gtoaster
@@ -14,16 +14,14 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eric@osd.bsdi.com
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	cdrecord:${PORTSDIR}/sysutils/cdrecord \
 		mkisofs:${PORTSDIR}/sysutils/mkisofs
 
 WRKSRC=		${WRKDIR}/gtoaster
 
 GNU_CONFIGURE=	yes
+USE_GTK=	yes
 USE_GMAKE=	yes
-
-CONFIGURE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 
 post-install:
 	strip ${PREFIX}/bin/gtoaster

@@ -2,7 +2,7 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/libgtkeditor/Makefile,v 1.1 2000/09/25 11:27:11 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/libgtkeditor/Makefile,v 1.2 2001/02/05 16:49:03 olgeni Exp $
 #
 
 PORTNAME=	libgtkeditor
@@ -15,20 +15,15 @@ DISTNAME=	${PORTNAME:S/lib//}-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/share/automake/install-sh:${PORTSDIR}/devel/automake
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		unicode.0:${PORTSDIR}/devel/libunicode
+LIB_DEPENDS=	unicode.0:${PORTSDIR}/devel/libunicode
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-configure:
