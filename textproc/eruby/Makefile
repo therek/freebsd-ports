@@ -2,7 +2,7 @@
 # Date created:			14 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/eruby/Makefile,v 1.10 2001/04/20 09:20:28 knu Exp $
+# $FreeBSD: ports/textproc/eruby/Makefile,v 1.11 2001/04/27 10:34:22 knu Exp $
 #
 
 PORTNAME=	eruby
@@ -10,6 +10,10 @@ PORTVERSION=	0.9.2
 CATEGORIES=	textproc www ruby
 MASTER_SITES=	http://www.modruby.net/archive/
 DIST_SUBDIR=	ruby
+
+PATCH_SITES=	http://www.ruby-lang.org/~knu/
+PATCHFILES=	${DISTNAME}-2001.05.24.patch.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -26,7 +30,7 @@ DOCS_EN=	ChangeLog README.en
 DOCS_JA=	README.ja
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} Makefile.RB ${CONFIGURE_ARGS}
+	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} configure.rb ${CONFIGURE_ARGS}
 
 post-install:
 .if !defined(NOPORTDOCS)
