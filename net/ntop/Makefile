@@ -2,7 +2,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ntop/Makefile,v 1.10 1999/08/30 14:23:32 peter Exp $
+# $FreeBSD: ports/net/ntop/Makefile,v 1.11 2000/04/09 18:12:41 cpiazza Exp $
 #
 
 PORTNAME=	ntop
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.unipi.it/pub/local/ntop/source/ \
 DISTNAME=	ntop-1.1-src
 
 MAINTAINER=	billf@FreeBSD.org
+
+FORBIDDEN=	"Shocking lack of security leading to multiple local and remote root exploits"
 
 HAS_CONFIGURE=	yes
 ALL_TARGET=
