@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.350 2000/09/22 13:15:19 tg Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.351 2000/09/25 06:58:41 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -323,6 +323,7 @@
     SUBDIR += tclreadline
     SUBDIR += tcltls
     SUBDIR += templ
+    SUBDIR += titano
     SUBDIR += tkcon
     SUBDIR += tkcvs
     SUBDIR += tkref
