@@ -2,7 +2,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.38 2001/01/01 10:15:07 will Exp $
+# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.39 2001/01/05 02:51:27 jeh Exp $
 #
 
 PORTNAME=	isc-dhcp
@@ -15,6 +15,9 @@ DISTNAME=	dhcp-2.0pl5
 MAINTAINER=	jseger@FreeBSD.org
 
 HAS_CONFIGURE=	yes
+
+STARTUP_SCRIPT=	isc-dhcpd.sh.sample
+PLIST_SUB=	STARTUP_SCRIPT=${STARTUP_SCRIPT}
 
 MAN5=		dhcp-options.5 dhcpd.conf.5 dhcpd.leases.5
 MAN8=		dhcpd.8 dhcrelay.8
@@ -29,5 +32,7 @@ post-install:
 		strip ${PREFIX}/sbin/${file}; \
 	fi
 .endfor
+	${INSTALL_SCRIPT} ${FILESDIR}/${STARTUP_SCRIPT} \
+			${PREFIX}/etc/rc.d/${STARTUP_SCRIPT}
 
 .include <bsd.port.mk>
