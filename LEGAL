@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.257 2002/09/22 15:59:37 netchild Exp $
+# $FreeBSD: ports/LEGAL,v 1.258 2002/10/08 10:16:03 knu Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -44,7 +44,7 @@ classes111_01.zip	ports/databases/jdbc-oracle816  This software is
 						under license and export 
 						controls.
 cli-*			ports/lang/cli		License is *very* restrictive -
-						please consult your lawier
+						please consult your lawyer
 						before using the software.
 clibpdf*		ports/print/clibpdf	License required for bundling
 						with other products.  Only
