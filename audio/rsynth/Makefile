@@ -2,7 +2,7 @@
 # Date created:		03 Jan 1995
 # Whom:			faulkner@mpd.tandem.com
 #
-# $FreeBSD: ports/audio/rsynth/Makefile,v 1.14 2000/04/08 21:24:22 mharo Exp $
+# $FreeBSD: ports/audio/rsynth/Makefile,v 1.15 2000/04/29 22:54:33 kris Exp $
 #
 
 PORTNAME=	rsynth
@@ -14,11 +14,8 @@ MAINTAINER=	faulkner@mpd.tandem.com
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm \
 		${X11BASE}/include/audio/audiolib.h:${PORTSDIR}/audio/nas
-RUN_DEPENDS=	auvoxware:${PORTSDIR}/audio/nas
 
-GNU_CONFIGURE=	YES
-
-BROKEN=		"PLIST is incorrect"
+GNU_CONFIGURE=	yes
 
 pre-configure:
 	@${CP} ${FILESDIR}/freebsdplay.c ${WRKSRC}/config/freebsdplay.c
