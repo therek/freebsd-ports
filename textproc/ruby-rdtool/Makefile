@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.5 2000/08/15 03:02:19 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.6 2000/08/16 12:21:20 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby \
 		${RUBY_SITEARCHLIBDIR}/strscan.so:${PORTSDIR}/devel/ruby-strscan \
 		${RUBY_SITELIBDIR}/optparse.rb:${PORTSDIR}/devel/ruby-optparse
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby \
+		${RUBY_SITELIBDIR}/racc/parser.rb:${PORTSDIR}/devel/ruby-racc-runtime \
 		${RUBY_SITEARCHLIBDIR}/strscan.so:${PORTSDIR}/devel/ruby-strscan \
 		${RUBY_SITELIBDIR}/optparse.rb:${PORTSDIR}/devel/ruby-optparse
 
