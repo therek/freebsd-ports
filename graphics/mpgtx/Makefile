@@ -3,11 +3,11 @@
 # Date created:			May 15, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mpgtx/Makefile,v 1.1 2001/05/15 02:19:04 ijliao Exp $
 #
 
 PORTNAME=	mpgtx
-PORTVERSION=	0.6b
+PORTVERSION=	0.7b
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
