@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/firefox/pkg-install.in,v 1.6 2004/10/17 21:29:30 marcus Exp $
+# $FreeBSD: ports/www/firefox/pkg-install.in,v 1.7 2004/11/10 00:58:53 marcus Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -27,9 +27,6 @@ rm -rf ${MOZDIR}/extensions
 cd ${MOZDIR} || exit 1
 ./run-mozilla.sh ${REGXPCOM} || true
 ./run-mozilla.sh ${REGCHROME} || true
-
-# Instantiate the extension space as root.
-su - root -c "env PATH=${PATH} %%X11BASE%%/bin/xinit %%MOZDIR%%/run-mozilla.sh ${FIREFOX} -install-global-extension -- %%X11BASE%%/bin/Xvfb :1001" > /dev/null 2>&1
-su - root -c "env PATH=${PATH} %%X11BASE%%/bin/xinit %%MOZDIR%%/run-mozilla.sh ${FIREFOX} -install-global-theme -- %%X11BASE%%/bin/Xvfb :1001" > /dev/null 2>&1
+./run-mozilla.sh ${FIREFOX} -register > /dev/null 2>&1
 
 exit 0
