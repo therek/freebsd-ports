@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/freebsd-uucp/pkg-plist,v 1.7 2003/01/14 07:07:52 dinoex Exp $
+@comment $FreeBSD: ports/net/freebsd-uucp/pkg-plist,v 1.8 2003/04/05 08:12:57 dinoex Exp $
 bin/uucp
 bin/uulog
 bin/uupick
@@ -19,9 +19,6 @@ etc/uucp/sys1.sample
 etc/uucp/sys2.sample
 @exec chown uucp:uucp %D/etc/uucp
 @exec chmod 750 %D/etc/uucp
-info/uucp.info.gz
-@exec install-info %D/info/uucp.info %D/info/dir
-@unexec install-info --delete %D/info/uucp.info %D/info/dir
 libexec/uucpd
 @group dialer
 bin/cu
