@@ -3,7 +3,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.57 2000/01/10 13:13:49 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.58 2000/01/13 13:28:08 sumikawa Exp $
 #
 
 DISTNAME=       py152
@@ -21,6 +21,7 @@ MAINTAINER=	tg@FreeBSD.org
 
 LIB_DEPENDS=	${TK_DEPENDS}
 
+DIST_SUBDIR=    python
 WRKSRC=		${WRKDIR}/Python-1.5.2
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-fpectl --with-libs='-lxpg4'
