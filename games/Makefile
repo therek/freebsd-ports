@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.408 2001/08/24 10:52:28 kris Exp $
+# $FreeBSD: ports/games/Makefile,v 1.409 2001/09/03 16:31:06 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -231,6 +231,7 @@
     SUBDIR += teg
     SUBDIR += tetrinet
     SUBDIR += tetrinet-x
+    SUBDIR += textmaze
     SUBDIR += tinymux
     SUBDIR += tkmoo
     SUBDIR += tksol
