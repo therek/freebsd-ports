@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.168 2004/08/12 19:05:51 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.169 2004/08/12 19:23:23 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -38,7 +38,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>gaim</name>
 	<name>ja-gaim</name>
-	<range><le>0.81</le></range>
+	<range><le>0.81_1</le></range>
       </package>
     </affects>
     <description>
@@ -54,6 +54,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-08-12</discovery>
       <entry>2004-08-12</entry>
+      <modified>2004-08-12</modified>
     </dates>
   </vuln>
 
