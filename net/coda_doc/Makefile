@@ -2,10 +2,10 @@
 # Date created:				19 June 1998
 # Whom:					Robert V. Baron <rvb@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_doc/Makefile,v 1.4 1999/08/30 14:22:24 peter Exp $
+# $FreeBSD: ports/net/coda_doc/Makefile,v 1.5 2000/04/09 18:10:38 cpiazza Exp $
 #
 
-PORTNAME=u	coda-doc
+PORTNAME=	coda-doc
 PORTVERSION=	4.6.5.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/doc/
