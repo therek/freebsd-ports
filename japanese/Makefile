@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.213 1999/08/25 05:23:21 obrien Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.214 1999/08/26 04:04:43 asami Exp $
 #
 
     SUBDIR += Canna
@@ -107,7 +107,6 @@
     SUBDIR += libimg
     SUBDIR += libjcode
     SUBDIR += libslang
-    SUBDIR += libxpg4-ns
     SUBDIR += lipsf
     SUBDIR += lynx
     SUBDIR += lynx-current

@@ -3,12 +3,12 @@
 # Date created:		27 February 1999
 # Whom:			sada
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.2 1999/08/25 05:25:15 obrien Exp $
 #
 
 DISTNAME=	libxpg4-3.1r
 PKGNAME=	libxpg4-ns-3.1r
-CATEGORIES=	japanese
+CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://WWW.FreeBSD.ORG/~sada/distfiles/
 
