@@ -2,11 +2,11 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Köller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.17 2001/03/13 14:50:58 sobomax Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.18 2001/04/25 05:59:19 lkoeller Exp $
 #
 
 PORTNAME=	grace
-PORTVERSION=	5.1.3
+PORTVERSION=	5.1.4
 CATEGORIES=	math print
 #
 # You never know when and why it is moved to ../src/old/   :-)
