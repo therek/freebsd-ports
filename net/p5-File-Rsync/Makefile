@@ -2,11 +2,11 @@
 # Date created:				20 May 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/net/p5-File-Rsync/Makefile,v 1.1 2001/05/27 05:37:11 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-Rsync
-PORTVERSION=	0.19
+PORTVERSION=	0.20
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
