@@ -3,7 +3,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.7 2000/02/10 01:38:18 cpiazza Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.8 2000/02/11 01:26:05 cpiazza Exp $
 #
 
 DISTNAME=	xmms-1.0.1
@@ -34,7 +34,7 @@ CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 post-extract:
 	@(cd ${WRKSRC}/Input/mpg123 && ${MV} decode_i586.s decode_i586.S && \
 	 ${MV} getbits.s getbits.S && cd ${WRKSRC}/Visualization/blur_scope && \
-         ${MV} blur_8.s blur_8.S);
+	 ${MV} blur_8.s blur_8.S);
 	@${PERL} -pi.bak -e 's:\.s :\.S :g' ${WRKSRC}/Input/mpg123/Makefile.in
 	@${PERL} -pi.bak -e 's:blur_8.s:blur_8.S:g' \
 	    ${WRKSRC}/Visualization/blur_scope/Makefile.in
