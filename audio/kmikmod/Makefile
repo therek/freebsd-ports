@@ -3,20 +3,20 @@
 # Date created:        1 March 1999
 # Whom:                Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.3 1999/08/25 04:35:39 obrien Exp $
 #
 
 DISTNAME=	kmikmod-2.04
 CATEGORIES=	audio kde
 MASTER_SITES=	http://myy.helia.fi/~anttiner/
-EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	tom@eborcom.com
+MAINTAINER=	tom@FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11
 
+USE_BZIP2=	yes
 WRKSRC=		${WRKDIR}/kmikmod
 USE_QT=		yes
 GNU_CONFIGURE=	yes
