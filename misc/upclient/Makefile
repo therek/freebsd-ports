@@ -3,7 +3,7 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/misc/upclient/Makefile,v 1.3 1999/11/26 15:56:26 imura Exp $
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.4 2000/01/14 16:00:43 imura Exp $
 #
 
 DISTNAME=	upclient-3.04
@@ -11,6 +11,8 @@ CATEGORIES=	misc
 MASTER_SITES=	http://uptime.hexon.cx/download/
 
 MAINTAINER=	kbyanc@posi.net
+
+BROKEN=		Client is outdated and new client cannot be reasonably ported
 
 ALL_TARGET=	bsd
 INSTALL_TARGET=	bsd install CP=$(CP)
