@@ -2,7 +2,7 @@
 # Date created:		Mi  21 Okt 1998 13:53:18 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/lang/gawk/Makefile,v 1.11 2001/05/29 06:01:14 kris Exp $
+# $FreeBSD: ports/lang/gawk/Makefile,v 1.12 2001/07/11 08:53:07 dd Exp $
 
 PORTNAME=	gawk
 PORTVERSION=	3.1.0
@@ -15,6 +15,6 @@ MAINTAINER=	dd@FreeBSD.org
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--enable-bitops \
 			--enable-non-decimal-data
-MAN1= gawk.1 igawk.1
+MAN1=		gawk.1 igawk.1
 
 .include <bsd.port.mk>
