@@ -2,22 +2,22 @@
 # Date created:        05 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/print/cups/Makefile,v 1.1 2001/01/07 00:52:07 jeh Exp $
+# $FreeBSD: ports/print/cups/Makefile,v 1.2 2001/01/10 17:07:59 jeh Exp $
 #
 
 PORTNAME=	cups
-PORTVERSION=	1.1.5
-PORTREVESION=	1
+PORTVERSION=	1.1.6
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.easysw.com/pub/cups/${PORTVERSION}/ \
 		ftp://ftp2.easysw.com/pub/cups/${PORTVERSION}/ \
 		ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${PORTVERSION}/ \
 		ftp://ftp.mpg.goe.ni.schule.de/pub/internet/printing/cups/${PORTVERSION}/
-DISTNAME=	${PORTNAME}-${PORTVERSION}-2-source
+DISTNAME=	${PORTNAME}-${PORTVERSION}-source
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
 
 USE_BZIP2=	yes
+INSTALLS_SHLIB=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
