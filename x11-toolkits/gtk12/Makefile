@@ -2,12 +2,11 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.72 2001/03/23 05:42:29 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.73 2001/03/30 17:16:17 ben Exp $
 #
 
 PORTNAME=	gtk
-PORTVERSION=	1.2.9
-#PORTREVISION=	1
+PORTVERSION=	1.2.10
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gimp.org/pub/%SUBDIR%/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/%SUBDIR%/ \
