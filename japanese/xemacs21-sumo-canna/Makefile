@@ -1,14 +1,17 @@
 # New ports collection makefile for:   Meta port of XEmacs mule with sumo package
-# Version required:	21.1.8
+# Version required:	21.1
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs-sumo-canna/Makefile,v 1.5 1999/09/09 14:46:02 taoka Exp $
+# $FreeBSD: ports/japanese/xemacs21-sumo-canna/Makefile,v 1.6 1999/11/27 04:00:04 steve Exp $
 #
 
-LANGPREFIX=	ja-
-NAMEEXT=	-canna
+.include	<bsd.port.pre.mk>
 
-MASTERDIR=	${.CURDIR}/../../editors/xemacs-mule-sumo
+XEMACS_MAJOR_VER=	${.CURDIR:S!^${PORTSDIR}/japanese/xemacs!!:S!-sumo-canna$!!}
+LANGPREFIX=		ja-
+NAMEEXT=		-canna
+
+MASTERDIR=	${.CURDIR}/../../editors/xemacs${XEMACS_MAJOR_VER}-mule-sumo
 
 .include	"${MASTERDIR}/Makefile"
