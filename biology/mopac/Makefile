@@ -2,7 +2,7 @@
 # Date created:				1997-04-23
 # Whom:					Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/mopac/Makefile,v 1.8 2000/06/07 16:20:59 will Exp $
 #
 
 PORTNAME=	mopac
@@ -23,11 +23,12 @@ USE_GMAKE=	yes
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400005
-BUILD_DEPENDS=	fc:${PORTSDIR}/lang/f77
-MAKE_ARGS+=	FC=fc
+BUILD_DEPENDS=	ftn77:${PORTSDIR}/lang/f77
+MAKE_ARGS+=	FC=ftn77
 .else
 MAKE_ARGS+=	FC=f77
 .endif
+MAKE_ARGS+=	FFLAGS="${FFLAGS} -w" CFLAGS="${CFLAGS} -I${PREFIX}/include"
 .if ${MACHINE_ARCH} == "i386"
 FFLAGS+=	-malign-double
 .endif
