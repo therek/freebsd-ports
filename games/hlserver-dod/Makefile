@@ -2,12 +2,13 @@
 # Date created:				Sat Mar 24 00:10:43 EST 2001
 # Whom:					pat@databits.net et al
 #
-# $FreeBSD: ports/games/hlserver-dod/Makefile,v 1.3 2001/05/21 03:14:48 lioux Exp $
+# $FreeBSD: ports/games/hlserver-dod/Makefile,v 1.4 2001/07/13 00:39:04 lioux Exp $
 #
 
 PORTNAME=	dod
 PORTVERSION=	1.3
 MASTER_SITES=	http://www.vigilantegamers.com/dod/files/official/ \
+		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/modifications/dod/ \
 		http://ftp2.extreme-players.de/exp/hl/mod/dod/ \
 		ftp://ftp.task.gda.pl/mirror/ftp.extreme-players.de/exp/hl/mod/dod/ \
 		ftp://ftp.gigabell.net/pub/exp/hl/mod/dod/ \
