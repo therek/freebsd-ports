@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.286 2001/01/03 23:18:10 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.287 2001/01/03 23:19:32 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -134,6 +134,7 @@
     SUBDIR += p5-Apache-Archive
     SUBDIR += p5-Apache-AuthCookie
     SUBDIR += p5-Apache-AuthTicket
+    SUBDIR += p5-Apache-AuthenCache
     SUBDIR += p5-Apache-AutoIndex
     SUBDIR += p5-Apache-DBI
     SUBDIR += p5-Apache-Icon
