@@ -3,10 +3,10 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.3 1999/12/27 21:51:32 steve Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.4 2000/01/07 16:40:10 asami Exp $
 #
 
-DISTNAME=	nessus-libraries-0.99.2
+DISTNAME=	nessus-libraries-0.99.3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \
@@ -26,6 +26,9 @@ DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-libraries
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-cipher
+
+MAN1=		nessus-config.1
 
 .include <bsd.port.pre.mk>
 
