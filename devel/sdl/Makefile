@@ -1,13 +1,13 @@
 # New ports collection makefile for:	SDL
-# Version required:			1.0.3
+# Version required:			1.0.4
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.4 2000/02/03 04:53:56 cpiazza Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.5 2000/02/03 08:19:17 cpiazza Exp $
 #
 
-DISTNAME=		SDL-1.0.3
-PKGNAME=		sdl-1.0.3
+DISTNAME=		SDL-1.0.4
+PKGNAME=		sdl-1.0.4
 CATEGORIES=		devel
 MASTER_SITES=		http://www.devolution.com/~slouken/SDL/release/
 
