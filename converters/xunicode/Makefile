@@ -2,11 +2,11 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/converters/xunicode/Makefile,v 1.1 2000/08/25 16:13:23 knu Exp $
+# $FreeBSD: ports/converters/xunicode/Makefile,v 1.2 2001/02/23 18:24:38 knu Exp $
 #
 
 PORTNAME=	xunicode
-PORTVERSION=	0.2.7
+PORTVERSION=	0.3.1
 CATEGORIES=	converters x11
 MASTER_SITES=	http://www.ab.wakwak.com/~tino/jatk/
 
@@ -15,20 +15,10 @@ MAINTAINER=	knu@FreeBSD.org
 USE_X_PREFIX=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-
-post-patch:
-	${PERL} -i -p \
-		-e 's,/usr/X11R6\b,${X11BASE},g;' \
-		-e 's,^CXX(FLAGS)? *=.*,,;' \
-		${WRKSRC}/MakeInclude
+NO_BUILD=	yes
 
 do-install:
-	${INSTALL_DATA} ${WRKSRC}/lib/libxunicode.a ${PREFIX}/lib/
 	${MKDIR} ${PREFIX}/include/xunicode
-	${INSTALL_DATA} ${WRKSRC}/include/*.h ${PREFIX}/include/xunicode/
-.if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/xunicode/ja/
-	${INSTALL_DATA} ${WRKSRC}/README.utf8 ${PREFIX}/share/doc/xunicode/ja/
-.endif
+	${INSTALL_DATA} ${WRKSRC}/*.[ch] ${PREFIX}/include/xunicode/
 
 .include <bsd.port.mk>
