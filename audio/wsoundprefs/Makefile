@@ -1,22 +1,23 @@
-# New ports collection makefile for:	wsoundPrefs
+# New ports collection makefile for:	WSoundPrefs
 # Date created:		12 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.8 2000/04/08 21:24:47 mharo Exp $
+# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.9 2000/04/16 08:50:08 asami Exp $
 #
 
 PORTNAME=	wsoundprefs
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.1
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/
 DISTNAME=	WSoundPrefs-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker \
-		wmsound:${PORTSDIR}/audio/wmsound
+BUILD_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
+LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
+		wsound.1:${PORTSDIR}/audio/wsoundserver
 
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES=	yes
+NO_INSTALL_MANPAGES=yes
 
 .include <bsd.port.mk>
