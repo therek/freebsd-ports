@@ -2,11 +2,11 @@
 # Date created:			Jun 15, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/sleuth/Makefile,v 1.1 2001/06/15 12:46:45 markp Exp $
 #
 
 PORTNAME=	sleuth
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://atrey.karlin.mff.cuni.cz/pub/local/mj/net/
 
