@@ -2,11 +2,11 @@
 # Date created:				12 July 2000
 # Whom:					Christopher N. Harrell <cnh@ivmg.net>
 #
-# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.5 2001/03/29 19:38:18 asmodai Exp $
+# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.6 2001/06/12 19:25:07 tobez Exp $
 #
 
 PORTNAME=	NetAddr-IP
-PORTVERSION=	2.22
+PORTVERSION=	2.23
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	NetAddr
