@@ -2,11 +2,11 @@
 # Date created:			1 May 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ruby-romkan/Makefile,v 1.1 2001/05/01 09:41:05 knu Exp $
 #
 
 PORTNAME=	romkan
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 CATEGORIES=	japanese converters ruby
 MASTER_SITES=	http://namazu.org/~satoru/ruby-romkan/
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
@@ -15,16 +15,25 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 USE_RUBY=	yes
+.if !defined(NOPORTDOCS)
+USE_RUBY_RD=	yes
+.endif
 
-NO_BUILD=	yes
-
-EXAMPLES_JA=	test.rb
-DOCS_EN=	ChangeLog romkan-en.html
-DOCS_JA=	romkan-ja.html
+EXAMPLES_JA=	test.rb test.sh
+DOCS_EN=	ChangeLog romkan.en.html romkan.en.rd
+DOCS_JA=	romkan.ja.html romkan.ja.rd
 
 .include <bsd.port.pre.mk>
 
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}${RUBY_PKGNAMEPREFIX}
+
+do-build:
+.if !defined(NOPORTDOCS)
+.for f in romkan.en.rd romkan.ja.rd
+	@cd ${WRKSRC}; \
+	${RUBY_RD} ${f} > ${f:R}.html
+.endfor
+.endif
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/romkan.rb ${RUBY_SITELIBDIR}/
