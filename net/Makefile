@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.418 2000/10/28 00:54:54 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.419 2000/10/28 01:58:18 scrappy Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -15,6 +15,7 @@
     SUBDIR += ascend-radius
     SUBDIR += bb
     SUBDIR += bind8
+    SUBDIR += bind9
     SUBDIR += bing
     SUBDIR += binkd
     SUBDIR += boclient
