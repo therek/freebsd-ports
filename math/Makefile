@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.118 2001/04/04 14:37:46 sf Exp $
+# $FreeBSD: ports/math/Makefile,v 1.119 2001/04/09 16:58:14 ijliao Exp $
 #
 
     SUBDIR += GiNaC
@@ -97,6 +97,7 @@
     SUBDIR += spin
     SUBDIR += ss
     SUBDIR += superlu
+    SUBDIR += surf
     SUBDIR += thx_1138
     SUBDIR += topaz
     SUBDIR += umatrix
