@@ -2,7 +2,7 @@
 # Date created:			  Sep 5, 2000
 # Whom:				  nsayer
 #
-# $FreeBSD: ports/security/ca-roots/Makefile,v 1.2 2000/10/12 21:56:10 nsayer Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ca-roots
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	security
 DISTFILES=	# none
 
-MAINTAINER=	nsayer@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_BUILD=	yes
 

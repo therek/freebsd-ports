@@ -2,7 +2,7 @@
 # Date created:			  7 Mar 2001
 # Whom:				  Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/emulators/vmware_xf4mod/Makefile,v 1.7 2001/03/19 19:33:38 nsayer Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vmware_xf4mod
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.vmware.com/software/
 DISTNAME=	vmware_drv.o
 EXTRACT_SUFX=	# none
 
-MAINTAINER=	nsayer@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	XFree86:${PORTSDIR}/x11/XFree86-4
 
