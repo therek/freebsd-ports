@@ -2,12 +2,12 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.17 2000/10/24 10:27:50 jeh Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.18 2000/10/25 16:56:35 jeh Exp $
 #
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	1.5.24
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		${MASTER_SITE_LOCAL} \
@@ -120,7 +120,7 @@ post-install:
 	@${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/pwcheck.sh \
 		> ${PREFIX}/etc/rc.d/pwcheck.sh
 	@${CHMOD} 755 ${PREFIX}/etc/rc.d/pwcheck.sh
-	${INSTALL} -d -m 700 -o cyrus -g cyrus /var/pwcheck
+	${INSTALL} -d -m 760 -o cyrus -g cyrus /var/pwcheck
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/SASL/html
 .for file in ${DOCS}

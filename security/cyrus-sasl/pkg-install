@@ -1,9 +1,9 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl/pkg/INSTALL,v 1.1 2000/01/24 05:22:21 steve Exp $
+#	$FreeBSD: ports/security/cyrus-sasl/pkg-install,v 1.2 2000/09/19 02:59:28 ade Exp $
 #
 # Created by: stb@FreeBSD.org for the cyrus imap server
-# Added to the cyrus-sasl port by hetzel@westbend.net
+# Added to the cyrus-sasl port by hetzels@westbend.net
 
 #set -vx
 
