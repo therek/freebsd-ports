@@ -2,7 +2,7 @@
 # Date created:        16 April 2000
 # Whom:                Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD: ports/misc/biblereader/Makefile,v 1.7 2000/10/22 13:29:21 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	biblereader
@@ -23,7 +23,8 @@ DISTFILES+=	easton.tar.gz strongs.tar.gz torrey.tar.gz
 MAINTAINER=	patseal@hyperhost.net
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 PLIST=		${WRKDIR}/PLIST
 
 DATAFILES=	${WRKDIR}/kjv/kjv

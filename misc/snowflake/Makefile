@@ -2,7 +2,7 @@
 # Date created:        29 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/snowflake/Makefile,v 1.3 2000/07/07 19:59:17 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	snowflake
@@ -14,7 +14,8 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	nakai@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/snowflake ${PREFIX}/bin
