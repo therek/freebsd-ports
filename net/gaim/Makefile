@@ -2,7 +2,7 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.18 2000/04/28 19:06:10 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.19 2000/05/08 00:00:17 jim Exp $
 #
 
 PORTNAME=	gaim
@@ -18,6 +18,7 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 GNU_CONFIGURE=	yes
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ARGS=	--disable-esd
