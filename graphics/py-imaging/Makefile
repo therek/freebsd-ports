@@ -3,7 +3,7 @@
 # Date created:         02 November 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/py-imaging/Makefile,v 1.7 1999/08/25 06:14:47 obrien Exp $
 #
 
 DISTNAME=	Imaging-1.0
@@ -15,9 +15,9 @@ MASTER_SITES=	http://www.pythonware.com/downloads/ \
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 DIST_SUBDIR=	python
 WRKSRC=		${WRKDIR}/${DISTNAME}/libImaging

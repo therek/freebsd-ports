@@ -3,7 +3,7 @@
 # Date created:		03 June 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.8 1999/08/31 06:52:52 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/pmw/Makefile,v 1.9 1999/11/08 12:15:24 tg Exp $
 
 DISTNAME=	Pmw.0.8.3
 PKGNAME=	py-pmw-0.8.3
@@ -12,8 +12,7 @@ MASTER_SITES=	ftp://ftp.dscpl.com.au/pub/pmw/
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	${SITEPYDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 PLIST_SUB=	PMWVERSION="${PMWVERSION}"
 
