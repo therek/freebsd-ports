@@ -2,7 +2,7 @@
 # Date Created:				8 Jun 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/gq/Makefile,v 1.5 2001/01/18 13:35:34 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gq
@@ -12,7 +12,11 @@ MASTER_SITES=	http://biot.com/gq/download/
 
 MAINTAINER=	roman@xpert.com
 
-LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap
+.if defined(WITH_OPENLDAP2)
+LIB_DEPENDS+=	ldap.2:${PORTSDIR}/net/openldap2
+.else
+LIB_DEPENDS+=	ldap.1:${PORTSDIR}/net/openldap
+.endif
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
