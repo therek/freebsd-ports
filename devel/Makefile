@@ -1,5 +1,6 @@
-# $FreeBSD: ports/devel/Makefile,v 1.411 2001/01/04 00:10:30 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.412 2001/01/04 00:26:08 will Exp $
 #
+    SUBDIR += zziplib
 
     SUBDIR += ElectricFence
     SUBDIR += ORBacus
