@@ -3,10 +3,10 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.32 1999/08/31 15:14:15 markm Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.33 1999/10/14 21:46:54 gj Exp $
 #
 
-DISTNAME=	xemacs-21.1.6
+DISTNAME=	xemacs-21.1.7
 PKGNAME=	xemacs-21.1
 CATEGORIES=	editors
 MASTER_SITES=	\
@@ -24,7 +24,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png
 
-XEMACS_VER=	21.1.6
+XEMACS_VER=	21.1.7
 DIST_SUBDIR=	xemacs
 
 USE_GMAKE=	yes
