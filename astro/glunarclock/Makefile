@@ -2,11 +2,11 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/glunarclock/Makefile,v 1.6 2001/03/29 16:32:40 sobomax Exp $
+# $FreeBSD: ports/astro/glunarclock/Makefile,v 1.7 2001/05/29 07:43:56 sobomax Exp $
 #
 
 PORTNAME=	glunarclock
-PORTVERSION=	0.22.1
+PORTVERSION=	0.22.2
 CATEGORIES=	astro gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
