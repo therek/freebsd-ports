@@ -2,11 +2,11 @@
 # Date created:				2000-12-16
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11-wm/aewm/Makefile,v 1.1 2000/12/17 05:36:32 trevor Exp $
+# $FreeBSD: ports/x11-wm/aewm/Makefile,v 1.2 2001/01/07 21:52:31 trevor Exp $
 #
 
 PORTNAME=	aewm
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.red-bean.com/~decklin/aewm/
 
