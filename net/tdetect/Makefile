@@ -1,22 +1,20 @@
-# New ports collection makefile for:   oneko
+# New ports collection makefile for:   tdetect
 # Ports collection makefile for:  tdetect
 # Version required:     	  0.2
 # Date created:			  Sun Jan 31, 1997
 # Whom:               		  shipley@dis.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tdetect/Makefile,v 1.5 1999/08/30 14:24:17 peter Exp $
 #
 
 DISTNAME=	tdetect-0.2
 PKGNAME=	tdetect-0.2.1
-CATEGORIES=     net
+CATEGORIES=	net
 MASTER_SITES=	http://sb.123.org/ \
 		http://www.genocide2600.com/~tattooman/unix-loggers/ \
 		http://ftp.ceti.com.pl/pub/scout/progs/Unix/
 
 MAINTAINER=	shipley@dis.org
-
-#WRKSRC=         ${WRKDIR}/tdetect-0.2
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/tdetect ${PREFIX}/sbin/tdetect
