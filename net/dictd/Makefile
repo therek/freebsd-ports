@@ -3,7 +3,7 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dictd/Makefile,v 1.1 2001/01/25 15:55:42 ijliao Exp $
 #
 
 PORTNAME=	dictd
@@ -27,7 +27,6 @@ post-patch:
 .for i in dict.1 dictd.8
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/$i
 .endfor
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${PKGMESSAGE}
 .for i in dictd.conf example.conf
 	@${PERL} -pi -e "s|/usr|${PREFIX}|g" ${WRKSRC}/$i
 .endfor
