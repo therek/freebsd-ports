@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/nvi-iso-2022-jp/Makefile,v 1.19 2000/04/11 14:15:51 knu Exp $
+# $FreeBSD: ports/japanese/nvi-iso-2022-jp/Makefile,v 1.20 2000/10/08 10:21:10 asami Exp $
 #
 
 PKGNAMESUFFIX=	-iso2022jp
@@ -16,6 +16,6 @@ LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
 CATEGORIES=	japanese editors
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 CONFIGURE_ARGS+=	--enable-multibyte=iso-2022-jp --program-prefix=n --enable-canna

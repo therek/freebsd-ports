@@ -2,7 +2,7 @@
 # Date created:		17 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.31 2000/04/15 13:45:32 itojun Exp $
+# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.32 2000/10/08 10:22:05 asami Exp $
 #
 
 PORTNAME=	smtpfeed
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.kyoto.wide.ad.jp/pub/mail/smtpfeed/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SENDMAIL}${EXTRACT_SUFX} \
 		${SENDMAILPATCH}.patch.gz
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX} ${SENDMAIL}${EXTRACT_SUFX}
 PATCH_SENDMAIL_ARGS=	-d ${WRKSRC_SENDMAIL} -E ${PATCH_DIST_STRIP}

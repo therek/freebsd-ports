@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/camediaplay/Makefile,v 1.13 2000/04/13 06:28:05 obrien Exp $
+# $FreeBSD: ports/graphics/camediaplay/Makefile,v 1.14 2000/10/08 10:20:19 asami Exp $
 #
 
 PORTNAME=	camediaplay
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=   ftp://ftp.itojun.org/pub/digi-cam/C-400L/unix/ \
 		ftp://ftp.digipri.co.jp/pub/free-software/Olympus/C-400L/unix/
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/camediaplay/build
 HAS_CONFIGURE=	yes

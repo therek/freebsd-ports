@@ -2,7 +2,7 @@
 # Date created:		5 Nov 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/zipcodes/Makefile,v 1.11 1999/08/25 05:28:01 obrien Exp $
+# $FreeBSD: ports/japanese/zipcodes/Makefile,v 1.12 2000/04/13 08:34:11 knu Exp $
 #
 
 PORTNAME=	zipcodes
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.postal.mpt.go.jp/lzh/ \
 EXTRACT_SUFX=	.lzh
 DISTNAME=	ken_all
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	lha:${PORTSDIR}/archivers/lha \
 		nkf:${PORTSDIR}/japanese/nkf

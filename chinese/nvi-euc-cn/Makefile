@@ -2,13 +2,13 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.19 2000/04/20 10:35:30 mharo Exp $
+# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.20 2000/10/08 10:19:21 asami Exp $
 #
 
 CATEGORIES=	chinese editors
 PKGNAMESUFFIX=	-euccn
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 CONFIGURE_ARGS+=	--enable-multibyte=euc-cn --program-prefix=n
 

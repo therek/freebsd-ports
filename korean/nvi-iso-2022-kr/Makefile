@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/korean/nvi-iso-2022-kr/Makefile,v 1.17 2000/04/13 09:17:18 asami Exp $
+# $FreeBSD: ports/korean/nvi-iso-2022-kr/Makefile,v 1.18 2000/10/08 10:21:48 asami Exp $
 #
 
 PKGNAMESUFFIX=	-iso2022kr
@@ -14,6 +14,6 @@ COMMENT=	${.CURDIR}/pkg-comment
 
 CATEGORIES=	korean editors
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 CONFIGURE_ARGS+=	--enable-multibyte=iso-2022-kr --program-prefix=n

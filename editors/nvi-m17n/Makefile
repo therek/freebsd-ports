@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.16 2000/04/20 10:39:59 mharo Exp $
+# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.17 2000/08/01 12:01:22 kuriyama Exp $
 #
 
 PORTNAME=	nvi
@@ -16,7 +16,7 @@ DISTNAME=	nvi-1.79
 PATCH_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 PATCHFILES=	nvi-1.79.m17n-19991117.diff.gz
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 #LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 

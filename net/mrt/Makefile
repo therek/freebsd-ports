@@ -2,7 +2,7 @@
 # Date created:		Sat Jun  6 00:09:52 JST 1998
 # Whom:			Jun-ichiro itojun Hagino <itojun@itojun.org>
 #
-# $FreeBSD: ports/net/mrt/Makefile,v 1.5 2000/01/18 12:34:31 sumikawa Exp $
+# $FreeBSD: ports/net/mrt/Makefile,v 1.6 2000/04/09 18:12:20 cpiazza Exp $
 #
 
 PORTNAME=	mrt
@@ -11,7 +11,7 @@ CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.merit.edu/net-research/mrt/
 DISTNAME=	mrt-${PORTVERSION}-src
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/mrt-${VERBASE}/src
 GNU_CONFIGURE=	yes

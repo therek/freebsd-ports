@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/crosspad/Makefile,v 1.4 1999/12/02 03:24:23 itojun Exp $
+# $FreeBSD: ports/misc/crosspad/Makefile,v 1.5 2000/04/14 08:45:30 asami Exp $
 #
 
 PORTNAME=	crosspad
@@ -10,7 +10,7 @@ PORTVERSION=	19991202
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.itojun.org/pub/misc/
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/crosspad/build

@@ -2,7 +2,7 @@
 # Date created:		19 Sep 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/sysutils/mei/Makefile,v 1.11 2000/04/22 10:12:41 mharo Exp $
+# $FreeBSD: ports/sysutils/mei/Makefile,v 1.12 2000/06/29 07:02:51 obrien Exp $
 #
 
 PORTNAME=	mei
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.vector.co.jp/authors/VA001240/archive/ \
 MASTER_SITE_SUBDIR=	itojun
 DISTFILES=	mei153s.tgz mei153d.tgz
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

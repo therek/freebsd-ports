@@ -2,7 +2,7 @@
 # Date created:		12 September 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/news/newsfetch/Makefile,v 1.7 2000/04/09 17:33:02 cpiazza Exp $
+# $FreeBSD: ports/news/newsfetch/Makefile,v 1.8 2000/04/21 07:51:46 mharo Exp $
 #
 
 PORTNAME=	newsfetch
@@ -11,7 +11,7 @@ CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/news/readers
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 MAN1=		newsfetch.1
 MAKE_ENV=	INSTALL_PROGRAM="${INSTALL_PROGRAM}" INSTALL_MAN="${INSTALL_MAN}"

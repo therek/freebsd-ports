@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1998
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-perl/Makefile,v 1.13 1999/08/25 05:44:06 obrien Exp $
+# $FreeBSD: ports/editors/nvi-perl/Makefile,v 1.14 2000/04/14 06:20:33 asami Exp $
 #
 
 PORTNAME=	nvi-perl
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://sleepy.vwh.net/pub/ \
 		ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 DISTNAME=	nvi-${PORTVERSION}
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/build
 GNU_CONFIGURE=	yes

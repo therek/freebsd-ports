@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/korean/nvi-euc-kr/Makefile,v 1.17 2000/04/13 09:17:17 asami Exp $
+# $FreeBSD: ports/korean/nvi-euc-kr/Makefile,v 1.18 2000/10/08 10:21:47 asami Exp $
 #
 
 PKGNAMESUFFIX=	-euckr
@@ -14,6 +14,6 @@ COMMENT=	${.CURDIR}/pkg-comment
 
 CATEGORIES=	korean editors
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 CONFIGURE_ARGS+=	--enable-multibyte=euc-kr --program-prefix=n

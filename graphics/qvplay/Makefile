@@ -2,7 +2,7 @@
 # Date created:		2 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/qvplay/Makefile,v 1.5 2000/04/14 10:47:15 asami Exp $
+# $FreeBSD: ports/graphics/qvplay/Makefile,v 1.6 2000/10/08 10:20:22 asami Exp $
 #
 
 PORTNAME=	qvplay
@@ -10,7 +10,7 @@ PORTVERSION=	0.94
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.asahi-net.or.jp/~xg2k-hys/
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	ports@freebsd.org
 
 RESTRICTED=	"Redistribution prohibited since it is in beta test period"
 
