@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.22 2001/03/23 21:58:26 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.23 2001/03/26 10:44:17 demon Exp $
 #
 
 PORTNAME=	kdevelop
@@ -46,7 +46,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 		MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++"
 
-pre-everything:
+pre-everything::
 .if !defined(WITH_OPTIONAL_DEPENDS)
 	@${ECHO_MSG}
 	@${ECHO_MSG} "You may define WITH_OPTIONAL_DEPENDS (make WITH_OPTIONAL_DEPENDS=YES)"
