@@ -6,7 +6,7 @@
 # Created by: Michael Johnson <ahze@FreeBSD.org>
 # Date:		4 Oct 2004
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gstreamer.mk,v 1.1 2005/02/28 21:09:04 krion Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Gstreamer_Pre_Include)
@@ -52,13 +52,14 @@ GST_SHLIB_VERSION=	1
 #
 # These are the current supported gstreamer-plugins modules
 #
-_USE_GSTREAMER_ALL=	a52dec aalib artsd audiofile cdaudio cdparanoia dirac \
-			dts dv dvd esound faac faad ffmpeg flac gdkpixbuf \
-			gnomevfs gsm hermes ivorbis jack jpeg jpeg-mmx ladspa \
-			lame libcaca libfame libmng libpng libvisual mad mikmod \
-			mpeg2dec mpeg2enc mplex musepack musicbrainz nas sdl \
-			shout sidplay smoothwave sndfile speex theora ogg pango \
-			polypaudio swfdec vorbis xine xvid
+_USE_GSTREAMER_ALL=	a52dec aalib artsd audiofile cairo cdaudio cdparanoia \
+			dirac dts dv dvd esound faac faad ffmpeg flac \
+			gdkpixbuf gnomevfs gsm hermes ivorbis jack jpeg \
+			jpeg-mmx ladspa lame libcaca libfame libmng libpng \
+			libvisual mad mikmod mpeg2dec mpeg2enc mplex musepack \
+			musicbrainz nas sdl shout sidplay smoothwave sndfile \
+			speex theora ogg pango polypaudio swfdec vorbis xine \
+			xvid
 
 # other plugins
 OTHER_GSTREAMER_PLUGINS+=	core yes
@@ -143,6 +144,8 @@ sdl_PLIST=	libgstsdlvideosink
 aalib_DEPENDS=	graphics/gstreamer-plugins-aalib
 aalib_PLIST=	libgstaasink
 
+cairo_DEPENDS=	graphics/gstreamer-plugins-cairo
+
 gdkpixbuf_DEPENDS=	graphics/gstreamer-plugins-gdkpixbuf
 
 hermes_DEPENDS=	graphics/gstreamer-plugins-hermes
@@ -165,8 +168,6 @@ libpng_PLIST=	libgstpng
 libvisual_DEPNDS=	graphics/gstreamer-plugins-libvisual
 
 swfdec_DEPENDS=	graphics/gstreamer-plugins-swfdec
-
-theora_DEPENDS=	multimedia/gstreamer-plugins-theora
 
 # Multimedia Plugins Section
 dirac_DEPENDS=	multimedia/gstreamer-plugins-dirac
@@ -191,6 +192,8 @@ mpeg2dec_DEPENDS=	multimedia/gstreamer-plugins-mpeg2dec
 mpeg2enc_DEPENDS=	multimedia/gstreamer-plugins-mpeg2enc
 
 mplex_DEPENDS=	multimedia/gstreamer-plugins-mplex
+
+theora_DEPENDS=	multimedia/gstreamer-plugins-theora
 
 xine_DEPENDS=	multimedia/gstreamer-plugins-xine
 
