@@ -3,16 +3,16 @@
 # Date created:         21 Sep 1999
 # Whom:                 Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/tkdesk/Makefile,v 1.1.1.1 1999/10/22 09:14:57 taoka Exp $
+# $FreeBSD: ports/japanese/tkdesk/Makefile,v 1.2 1999/10/27 16:37:13 taoka Exp $
 #
 
 DISTNAME=	tkdesk-1.1
-PKGNAME=	ja-tkdesk-1.1p56
+PKGNAME=	ja-tkdesk-1.1p58
 CATEGORIES=	japanese x11-fm tk42
 MASTER_SITES=	http://people.mainz.netsurf.de/~bolik/tkdesk/
 
 PATCH_SITES=	http://www.linet.gr.jp/~mituiwa/
-PATCHFILES=	tkdesk-1.1-jmenu-p56.diff
+PATCHFILES=	tkdesk-1.1-jmenu-p58.diff
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	yatt@msc.biglobe.ne.jp
@@ -33,7 +33,9 @@ pre-patch:
 	@cd ${WRKSRC}; ${PATCH} -s < ${FILESDIR}/pre-patch
 
 post-patch:
-	@/usr/bin/find ${WRKSRC}/tcldesk -name "*.orig" -exec ${RM} {} \;
+	@/usr/bin/find ${WRKSRC}/tcldesk '(' -name '*.orig' -o -name '*~' ')' \
+	-exec ${RM} -f {} \;
+	@${RM} ${WRKSRC}/config.h ${WRKSRC}/config.cache
 
 post-install:
 	@/usr/bin/strip ${PREFIX}/bin/tkdesksh
