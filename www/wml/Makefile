@@ -2,11 +2,11 @@
 # Date created:		09-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/www/wml/Makefile,v 1.38 2000/11/03 14:18:56 rse Exp $
+# $FreeBSD: ports/www/wml/Makefile,v 1.39 2001/02/05 15:33:57 olgeni Exp $
 #
 
 PORTNAME=	wml
-PORTVERSION=	2.0.6
+PORTVERSION=	2.0.7
 CATEGORIES=	www lang
 MASTER_SITES=	http://www.engelschall.com/sw/wml/distrib/ \
 		ftp://ftp.engelschall.com/sw/wml/
