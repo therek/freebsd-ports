@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program; if not, write to the Free Software
 Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA.  */
 
-/* $FreeBSD: ports/devel/gdb6/files/freebsd-uthread.c,v 1.1 2004/05/13 04:28:38 obrien Exp $ */
+/* $FreeBSD: ports/devel/gdb6/files/freebsd-uthread.c,v 1.2 2004/06/20 18:45:36 obrien Exp $ */
 
 /* This module implements a sort of half target that sits between the
    machine-independent parts of GDB and the ptrace interface (infptrace.c) to
@@ -608,9 +608,9 @@ freebsd_uthread_fetch_registers (int regno)
 	child_ops.to_fetch_registers (regno);
       else
 	if (thread)
-	  supply_register (regno, (char*) &regbase[regmap[regno]]);
+	  regcache_raw_supply (current_regcache, regno, (char*) &regbase[regmap[regno]]);
 	else
-	  supply_register (regno, NULL);
+	  regcache_raw_supply (current_regcache, regno, NULL);
     }
 }
 
