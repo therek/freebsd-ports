@@ -2,7 +2,7 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.53 2001/05/07 17:17:19 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.54 2001/05/10 17:50:35 knu Exp $
 #
 
 PORTNAME=	cvsweb
@@ -52,13 +52,13 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 post-patch:
 	${PERL} -i -pe "\
-		s;!!PERL!!;${PERL};g; \
-		s;!!PREFIX!!;${PREFIX};g;" \
+		s'!!PERL!!'${PERL}'g; \
+		s'!!PREFIX!!'${PREFIX}'g;" \
 		${WRKSRC}/cvsweb.cgi
 	${PERL} -i -pe "\
-		s;!!PREFIX!!;${PREFIX};g; \
-		s;!!CVSROOT!!;${CVSROOT};g; \
-		s;!!TITLE!!;${TITLE};g;" \
+		s'!!PREFIX!!'${PREFIX}'g; \
+		s'!!CVSROOT!!'${CVSROOT}'g; \
+		s'!!TITLE!!'${TITLE}'g;" \
 		${WRKSRC}/cvsweb.conf
 
 do-install:
