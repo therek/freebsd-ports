@@ -2,7 +2,7 @@
 # Date created:				Tue Jan  4 11:45:29 PST 2000
 # Whom:					Cy Schubert (Cy.Schubert@uumail.gov.bc.ca)
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/aide/Makefile,v 1.1 2000/07/14 16:11:47 will Exp $
 #
 
 PORTNAME=	aide
@@ -15,6 +15,7 @@ MAINTAINER=     Cy.Schubert@uumail.gov.bc.ca
 
 LIB_DEPENDS=	mhash.2:${PORTSDIR}/security/mhash
 
+USE_BISON=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--with-mhash \
 		--with-zlib \
