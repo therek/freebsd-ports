@@ -2,7 +2,7 @@
 # Date created:		10 July 2000
 # Whom:			n_hibma@qubesoft.com
 #
-# $FreeBSD: ports/mail/mailman/Makefile,v 1.1 2000/07/17 01:16:02 steve Exp $
+# $FreeBSD: ports/mail/mailman/Makefile,v 1.2 2000/08/05 00:31:40 ade Exp $
 #
 
 PORTNAME=	mailman
@@ -19,7 +19,7 @@ RUN_DEPENDS+=	$(LOCALBASE)/sbin/httpd:${PORTSDIR}/www/apache13\
 		python:${PORTSDIR}/lang/python
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --with-mail-gid=daemon
+CONFIGURE_ARGS= --with-mail-gid=daemon --with-cgi-gid=nogroup
 
 UNAME=		mailman
 UID=		89
@@ -36,8 +36,9 @@ pre-configure:
 	${CHMOD} 2775 ${MAILMANDIR}
 
 post-install:
+	@${CHOWN} -R :${UNAME} ${MAILMANDIR}
 	@echo All related binaries have been installed in ${MAILMANDIR}/bin
-	@echo See ${WORKDIR}/INSTALL for installation instructions \($$prefix == ${MAILMANDIR}\).
+	@echo See ${WRKDIR}/INSTALL for installation instructions \($$prefix == ${MAILMANDIR}\).
 	@echo Sample entry for httpd.conf for Apache:
 	@echo "  ScriptAlias /mailman/ ${MAILMANDIR}/cgi-bin/"
 	@echo '  <Directory ${MAILMANDIR}/cgi-bin/>'
