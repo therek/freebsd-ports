@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD: ports/www/gn/Makefile,v 1.27 2000/06/02 03:24:02 will Exp $
+# $FreeBSD: ports/www/gn/Makefile,v 1.28 2001/02/05 15:33:22 olgeni Exp $
 #
 
 PORTNAME=	gn
@@ -37,7 +37,7 @@ post-install:
 	  if ! cmp -s etc/gn_mime.types ${WRKSRC}/etc/gn_mime.types; then \
 		${ECHO} ${MV} etc/gn_mime.types etc/gn_mime.types.old; \
 		${MV} etc/gn_mime.types etc/gn_mime.types.old; \
-  	  fi; \
+	  fi; \
 	  [ -s gnroot/menu ] && \
 	  if ! cmp -s gnroot/menu ${WRKSRC}/gnroot/menu; then \
 		${ECHO} ${MV} gnroot/menu gnroot/menu.old; \

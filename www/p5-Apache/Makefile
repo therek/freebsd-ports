@@ -2,7 +2,7 @@
 # Date created:				April 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.23 2001/01/01 08:41:13 will Exp $
+# $FreeBSD: ports/www/p5-Apache/Makefile,v 1.24 2001/01/12 01:47:44 kuriyama Exp $
 #
 
 PORTNAME=	Apache
@@ -67,7 +67,7 @@ do-configure:
 		@${PERL} -i -p \
 			-e 's/^(CC = ).*/$$1 ${CC}/;' \
 			-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' \
-                	${WRKSRC}/Leak/Makefile ${WRKSRC}/Symbol/Makefile
+			${WRKSRC}/Leak/Makefile ${WRKSRC}/Symbol/Makefile
 
 post-install:
 		${MKDIR} ${PREFIX}/include/apache/modules/perl

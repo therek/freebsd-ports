@@ -2,7 +2,7 @@
 # Date created:                        4 May 2000
 # Whom:                                R Joseph Wright
 #
-# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.4 2000/07/16 14:14:33 alex Exp $
+# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.5 2001/02/08 12:19:57 kevlo Exp $
 #
 
 PORTNAME=	linux-bmrt
@@ -28,12 +28,12 @@ STRIP=
 .include <bsd.port.pre.mk>
 
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
-IGNORE=        may not be automatically fetched due to licensing \
-               restrictions.  You must manually fetch the Linux version at \
-               http://www.exluna.com/bmrt/download/index.html. \
-               Once you have read and agreed to the license and \
-               ${DISTFILES} has been downloaded, move it to \
-               ${DISTDIR} and then restart this build.
+IGNORE=		may not be automatically fetched due to licensing \
+		restrictions.  You must manually fetch the Linux version at \
+		http://www.exluna.com/bmrt/download/index.html. \
+		Once you have read and agreed to the license and \
+		${DISTFILES} has been downloaded, move it to \
+		${DISTDIR} and then restart this build.
 .endif
 
 INC_DIR=	${PREFIX}/include/bmrt

@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.95 2000/12/21 23:50:36 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.96 2000/12/27 02:22:16 obrien Exp $
 #
 
 SNAPDATE=	2000-12-25
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/gcc/snapshots/${SNAPDATE
 		ftp://ftp.ninemoons.com/pub/mirrors/egcs/snapshots/${SNAPDATE}/ \
 		ftp://ftp.iij.ad.jp/pub/egcs/snapshots/${SNAPDATE}/ \
 		ftp://ftp.yggdrasil.com/mirrors/site/egcs.cygnus.com/pub/egcs/snapshots/${SNAPDATE}/  \
- 		ftp://ftp.fu-berlin.de/unix/languages/egcs/snapshots/
+		ftp://ftp.fu-berlin.de/unix/languages/egcs/snapshots/
 DISTFILES=	gcc-core-${SNAPVER}${EXTRACT_SUFX} \
 		gcc-g++-${SNAPVER}${EXTRACT_SUFX} \
 		gcc-g77-${SNAPVER}${EXTRACT_SUFX} \

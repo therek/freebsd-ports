@@ -2,7 +2,7 @@
 # Date created:		13 September 2000
 # Whom: 		Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/news/t-gnus-emacs20/Makefile,v 1.1 2000/11/03 15:01:52 taoka Exp $
+# $FreeBSD: ports/news/t-gnus-emacs20/Makefile,v 1.2 2001/01/16 17:32:03 sobomax Exp $
 #
 
 PORTNAME=	t-gnus
@@ -27,7 +27,7 @@ MIMEUI_COOKIE=	${MIMEUI_PRODUCT}-${EMACS_PORT_NAME}-${MIMEUI_VERSION}.FreeBSD-pa
 EMACS_PORT_NAME?=emacs20
 
 .if (${EMACS_PORT_NAME} == "emacs20" || ${EMACS_PORT_NAME} == "mule" || \
-     ${EMACS_PORT_NAME} == "xemacs21-mule")
+	${EMACS_PORT_NAME} == "xemacs21-mule")
 WITH_MULE=yes
 .else
 WITHOUT_MULE=yes

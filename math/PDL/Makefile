@@ -2,7 +2,7 @@
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/PDL/Makefile,v 1.10 2000/08/22 13:36:01 sobomax Exp $
+# $FreeBSD: ports/math/PDL/Makefile,v 1.11 2000/11/15 12:49:46 sobomax Exp $
 #
 
 PORTNAME=	PDL
@@ -56,7 +56,7 @@ MAN3=	PDL.3 PDL::Char.3 PDL::Complex.3 PDL::Fit::Gaussian.3 PDL::Func.3 \
 	PDL::Graphics::LUT.3 PDL::LM.3 PDL::Polynomial.3 \
 	PDL::PP::Dump.3 PDL::PP::Signature.3 PDL::Types.3 PDL::Dbg.3 \
 	PDL::Exporter.3 PDL::Core.3 PDL::Basic.3 PDL::Lite.3 PDL::LiteF.3 \
-        PDL::Ops.3 PDL::Options.3 PDL::Primitive.3 \
+	PDL::Ops.3 PDL::Options.3 PDL::Primitive.3 \
 	PDL::Slices.3 PDL::Tests.3 PDL::Math.3 PDL::AutoLoader.3 \
 	PDL::Pod::Usage.3 PDL::Pod::Parser.3 \
 	PDL::Pod::Select.3 PDL::Doc.3 PDL::Doc::Perldl.3 \

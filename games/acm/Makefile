@@ -2,7 +2,7 @@
 # Date created:		5 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/acm/Makefile,v 1.23 2000/04/17 00:17:37 reg Exp $
+# $FreeBSD: ports/games/acm/Makefile,v 1.24 2000/11/23 11:56:05 sobomax Exp $
 #
 
 PORTNAME=	acm
@@ -20,8 +20,8 @@ MAN6=		acm.6
 
 # Include sound support (Use network audio server (nas))
 .if defined(WITH_SOUND) || (exists(${PREFIX}/lib/libaudio.a) \
-    && !defined(WITHOUT_SOUND))
-LIB_DEPENDS+=   audio.7:${PORTSDIR}/audio/nas
+	&& !defined(WITHOUT_SOUND))
+LIB_DEPENDS+=	audio.7:${PORTSDIR}/audio/nas
 .endif
 
 .include <bsd.port.post.mk>

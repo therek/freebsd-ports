@@ -2,7 +2,7 @@
 # Date created:         21 September 1994
 # Whom:                 jmz & David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.22 2000/04/09 17:50:33 cpiazza Exp $
+# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.23 2000/10/19 02:36:58 jmz Exp $
 #
 
 PORTNAME=	psutils-${PAPERSIZE}
@@ -26,7 +26,7 @@ PAPERSIZE=letter
 PAPERSIZE_UNSPECIFIED=	yes
 .else
 .if ${PAPERSIZE} != A3 && ${PAPERSIZE} != a3 && ${PAPERSIZE} != A4 \
-    && ${PAPERSIZE} != a4 && ${PAPERSIZE} != A5 && ${PAPERSIZE} != a5 \
+	&& ${PAPERSIZE} != a4 && ${PAPERSIZE} != A5 && ${PAPERSIZE} != a5 \
 	&& ${PAPERSIZE} != B4 && ${PAPERSIZE} != b4 \
 	&& ${PAPERSIZE} != B5 && ${PAPERSIZE} != b5 \
 	&& ${PAPERSIZE} != letter && ${PAPERSIZE} != legal \

@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.26 2000/10/08 07:20:59 asami Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.27 2000/10/27 09:24:07 sobomax Exp $
 #
 
 PORTNAME=	mew-${EMACS_PORT_NAME}
@@ -161,8 +161,8 @@ EMACS_ETCDIR=		${EMACS_PKG_ETCDIR}
 EMACS_LISPDIR=		${EMACS_PKG_LISPDIR}
 EMACS_INFODIR=		${EMACS_PKG_INFODIR}
 .else
-NO_BUILD=   yes
-NO_INSTALL= yes
+NO_BUILD=	yes
+NO_INSTALL=	yes
 .endif
 .if (${EMACS_NAME} == "xemacs") && ${EMACS_MAJOR_VER} > 20
 INST_TARGET_LIST=	install-package
@@ -172,7 +172,7 @@ INST_TARGET_LIST=	install install-info
 REQUIRE=		(require \'${SITE_STARTUP_FILE:S/^mew-/&${EMACS_PORT_NAME}-/:S/.el$//})
 .endif
 .if (${EMACS_PORT_NAME} == "emacs20") || (${EMACS_PORT_NAME} == "mule") || \
-    (${EMACS_PORT_NAME} == "xemacs21-mule")
+	(${EMACS_PORT_NAME} == "xemacs21-mule")
 INST_TARGET_LIST+=	install-jinfo
 .endif
 

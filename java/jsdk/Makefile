@@ -2,7 +2,7 @@
 # Date created:		1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/java/jsdk/Makefile,v 1.8 1999/12/31 20:09:18 steve Exp $
+# $FreeBSD: ports/java/jsdk/Makefile,v 1.9 2000/04/12 06:14:48 obrien Exp $
 #
 
 PORTNAME=	jsdk
@@ -23,14 +23,14 @@ WRKSRC=		${WRKDIR}/JSDK2.0
 
 do-fetch:
 	@if [ ! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ]; then \
-	  ${ECHO} "=========================================================="; \
-	  ${ECHO} " You must a fetch the Java Servlet Development Kit 2.0"; \
-	  ${ECHO} " (for Unix) archive from"; \
-	  ${ECHO} ""; \
-	  ${ECHO} "     http://java.sun.com/products/servlet/download.html"; \
-	  ${ECHO} ""; \
- 	  ${ECHO} " And copy into ${DISTDIR}"; \
-	  ${ECHO} "=========================================================="; \
+		${ECHO} "=========================================================="; \
+		${ECHO} " You must a fetch the Java Servlet Development Kit 2.0"; \
+		${ECHO} " (for Unix) archive from"; \
+		${ECHO} ""; \
+		${ECHO} "     http://java.sun.com/products/servlet/download.html"; \
+		${ECHO} ""; \
+		${ECHO} " And copy into ${DISTDIR}"; \
+		${ECHO} "=========================================================="; \
 	 fi
 
 do-build:

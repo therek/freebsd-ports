@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.14 2000/10/08 02:53:17 asami Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.15 2000/12/13 09:52:42 shige Exp $
 #
 
 PORTNAME=	wanderlust
@@ -28,7 +28,7 @@ EMACS_PORT_NAME=	emacs
 .endif
 
 .if (${EMACS_PORT_NAME} == "emacs20" || ${EMACS_PORT_NAME} == "mule" || \
-     ${EMACS_PORT_NAME} == "xemacs21-mule")
+	${EMACS_PORT_NAME} == "xemacs21-mule")
 WITH_MULE=yes
 .else
 WITHOUT_MULE=yes
@@ -50,7 +50,7 @@ UTILSDIR=	${EMACS_PACKAGESDIR}/lisp/wl
 STARTUPDIR=	${EMACS_PACKAGESDIR}/lisp/wl
 .else
 ALL_TARGET=	all info
-INSTALL_TARGET= install install-info
+INSTALL_TARGET=	install install-info
 INFODIR=	${PREFIX}/info
 UTILSDIR=	${EMACS_SITE_LISPDIR}/wl
 .if (${EMACS_PORT_NAME} == "xemacs20")

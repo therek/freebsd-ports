@@ -2,7 +2,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.34 2000/06/10 04:31:37 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.35 2000/08/27 22:46:53 mharo Exp $
 #
 
 PORTNAME=	sudo
@@ -21,8 +21,8 @@ CONFIGURE_ARGS=	--with-skey \
 		--with-ignore-dot \
 		--with-tty-tickets \
 		--with-env-editor \
-  		--with-insults \
-  		--with-all-insults \
+		--with-insults \
+		--with-all-insults \
 		--with-logincap \
 		--disable-root-sudo
 

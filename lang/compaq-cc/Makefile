@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.8 2001/02/07 14:51:12 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.9 2001/02/07 20:53:43 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -52,7 +52,7 @@ do-install:
 	cd ${PREFIX} ; rpm2cpio ${DISTDIR}/$F |cpio -idum
 .endfor
 .for F in ${CCC_ROOT}/alpha-linux/bin/lnxcc \
-    ${CCC_ROOT}/alpha-linux/bin/lnxcc_driver
+	${CCC_ROOT}/alpha-linux/bin/lnxcc_driver
 	brandelf -t Linux ${PREFIX}$F
 .endfor
 	cd ${CCC_ROOT}/alpha-linux/bin	\

@@ -2,7 +2,7 @@
 # Date created:	20 March 1997
 # Whom:		dlowe
 #
-# $FreeBSD: ports/mail/bulk_mailer/Makefile,v 1.10 2000/06/08 10:00:39 sobomax Exp $
+# $FreeBSD: ports/mail/bulk_mailer/Makefile,v 1.11 2001/02/05 15:10:28 olgeni Exp $
 #
 
 PORTNAME=	bulk_mailer
@@ -23,7 +23,7 @@ do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/bulk_mailer ${PREFIX}/bin/bulk_mailer
 	@ ${MKDIR} ${PREFIX}/share/doc/bulk_mailer
 	@ ${INSTALL_MAN} ${WRKSRC}/bulk_mailer.README \
- 		${PREFIX}/share/doc/bulk_mailer/README
+		${PREFIX}/share/doc/bulk_mailer/README
 	@ ${INSTALL_MAN} ${WRKSRC}/bulk_mailer.1 ${PREFIX}/man/man1/bulk_mailer.1
 
 .include <bsd.port.mk>

@@ -2,14 +2,14 @@
 # Date created:				10 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk12-beta/Makefile,v 1.2 2000/10/14 11:58:04 sobomax Exp $
+# $FreeBSD: ports/java/jdk12-beta/Makefile,v 1.3 2000/11/03 16:06:41 sobomax Exp $
 #
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}b${JDK_BETALEVEL}
 CATEGORIES=	java devel
 MASTER_SITES=	# http://www.sun.com/software/communitysource/java2/
-                # http://www.eyesbeyond.com/freebsddom/java/jdk.html
+		# http://www.eyesbeyond.com/freebsddom/java/jdk.html
 DISTFILES=	${PORTNAME}${JDK_VERSION:S/./_/g}-src${EXTRACT_SUFX} \
 		freebsd-jdk122-patches-${JDK_BETALEVEL}.tar.gz
 
