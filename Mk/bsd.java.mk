@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.63 2005/02/10 01:44:14 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.64 2005/02/25 13:29:52 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -157,6 +157,15 @@ PLIST_SUB+=		JAVASHAREDIR="${JAVASHAREDIR:S,^${PREFIX}/,,}" \
 SUB_LIST+=		JAVASHAREDIR="${JAVASHAREDIR}" \
 				JAVAJARDIR="${JAVAJARDIR}" \
 				JAVALIBDIR="${JAVALIBDIR}"
+.		if defined(JAVA_VERSION)
+SUB_LIST+=		JAVA_VERSION="${JAVA_VERSION}"
+.		endif
+.		if defined(JAVA_VENDOR)
+SUB_LIST+=		JAVA_VENDOR="${JAVA_VENDOR}"
+.		endif
+.		if defined(JAVA_OS)
+SUB_LIST+=		JAVA_OS="${JAVA_OS}"
+.		endif
 
 # The complete list of Java versions, os and vendors supported.
 __JAVA_VERSION_LIST=	1.1 1.2 1.3 1.4 1.5
