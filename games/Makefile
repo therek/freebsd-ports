@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.311 2000/10/23 18:23:17 trevor Exp $
+# $FreeBSD: ports/games/Makefile,v 1.312 2000/10/26 02:05:09 jeh Exp $
 #
 
     SUBDIR += 3dc
@@ -78,6 +78,7 @@
     SUBDIR += gnomememoryblocks
     SUBDIR += gnuchess
     SUBDIR += gnugo
+    SUBDIR += gnurobots
     SUBDIR += gnushogi
     SUBDIR += golddig
     SUBDIR += gomoku.app
