@@ -1,7 +1,8 @@
-# $FreeBSD: ports/korean/Makefile,v 1.62 2001/03/24 03:48:36 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.63 2001/04/13 09:12:44 demon Exp $
 #
     SUBDIR += w3m
     SUBDIR += uniksc
+    SUBDIR += pycodec
     SUBDIR += texinfo
 
     SUBDIR += FreeWnn-lib
