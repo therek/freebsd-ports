@@ -2,7 +2,7 @@
 # Date created:		12 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sysvipc/Makefile,v 1.2 2001/07/01 16:11:42 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sysvipc
@@ -27,7 +27,7 @@ DOCS=		sysvipc.html	sysvipc.rd
 
 post-build:
 .if !defined(NOPORTDOCS)
-	cd ${WRKSRC} && ${RUBY_RD} sysvipc.rd > sysvipc.html
+	cd ${WRKSRC}; ${RUBY_RD} sysvipc.rd > sysvipc.html
 .endif
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:		8 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-tzfile/Makefile,v 1.1 2001/06/08 11:42:01 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tzfile
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 do-build:
 .if !defined(NOPORTDOCS)
-	cd ${WRKSRC} && ${RUBY_RD} tzfile.rb > tzfile.html
+	cd ${WRKSRC}; ${RUBY_RD} tzfile.rb > tzfile.html
 .endif
 
 do-install:
