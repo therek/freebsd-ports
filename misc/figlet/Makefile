@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  figlet
+# Version required: 0.0
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/misc/figlet/Makefile,v 1.13 2000/03/11 05:16:41 obrien Exp $
+# $FreeBSD: ports/misc/figlet/Makefile,v 1.14 2000/03/20 02:36:20 obrien Exp $
 #
 
 DISTNAME=	figlet22

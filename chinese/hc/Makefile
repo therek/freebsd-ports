@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  hc
+# Version required: 0.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/hc/Makefile,v 1.5 2000/02/13 03:25:03 obrien Exp $
+# $FreeBSD: ports/chinese/hc/Makefile,v 1.6 2000/03/20 02:37:49 obrien Exp $
 #
 
 DISTNAME=	hc-3.0

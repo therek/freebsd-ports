@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  gcc-2.7.2 - Bounds checking gcc
+# Version required: 0.0
 # Date created:			  Sun June 08, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/lang/bc-gcc/Makefile,v 1.6 2000/02/13 03:23:03 obrien Exp $
+# $FreeBSD: ports/lang/bc-gcc/Makefile,v 1.7 2000/03/20 02:36:04 obrien Exp $
 #
 
 DISTNAME=	gcc-2.7.2

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  foo
+# Version required: 0.0
 # Date created:			  Fri Mar 18, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/super/Makefile,v 1.13 2000/02/13 03:24:23 obrien Exp $
+# $FreeBSD: ports/security/super/Makefile,v 1.14 2000/03/20 02:37:21 obrien Exp $
 #
 
 DISTNAME=	super-3.12.1

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  zmtx-zmrx
+# Version required: 0.0
 # Date created:			  29 July 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/comms/zmtx-zmrx/Makefile,v 1.7 2000/02/13 03:25:05 obrien Exp $
+# $FreeBSD: ports/comms/zmtx-zmrx/Makefile,v 1.8 2000/03/20 02:37:50 obrien Exp $
 #
 
 DISTNAME=	zmtx-zmrx

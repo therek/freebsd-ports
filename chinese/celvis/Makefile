@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  celvis
+# Version required: 0.0
 # Date created:			  Thur Aug 15, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/celvis/Makefile,v 1.11 2000/02/13 03:24:55 obrien Exp $
+# $FreeBSD: ports/chinese/celvis/Makefile,v 1.12 2000/03/20 02:37:45 obrien Exp $
 #
 
 DISTNAME=	celvis

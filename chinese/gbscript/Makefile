@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  gbscript
+# Version required: 0.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/gbscript/Makefile,v 1.6 2000/02/13 03:23:25 obrien Exp $
+# $FreeBSD: ports/chinese/gbscript/Makefile,v 1.7 2000/03/20 02:36:25 obrien Exp $
 #
 
 DISTNAME=	gbscript-1.11

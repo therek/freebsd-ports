@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:    vnterm
+# Version required: 0.0
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.15 2000/02/13 03:24:37 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.16 2000/03/20 02:37:33 obrien Exp $
 #
 
 DISTNAME=	vnterm3.3

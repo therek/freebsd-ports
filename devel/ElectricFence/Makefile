@@ -1,9 +1,10 @@
 # ex:ts=8
 # New ports collection makefile for: Electric Fence
+# Version required: 0.0
 # Date created: 	13 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.8 2000/01/03 01:25:23 obrien Exp $
+# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.9 2000/03/20 02:35:59 obrien Exp $
 #
 
 DISTNAME=	ElectricFence-2.0.5

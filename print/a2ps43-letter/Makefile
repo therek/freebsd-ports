@@ -1,9 +1,10 @@
 # ex:ts=8
 # New ports collection makefile for:    a2ps
+# Version required: 0.0
 # Date created:         6 November 1994
 # Whom:                 jmz & David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/a2ps43-letter/Makefile,v 1.21 2000/02/13 03:22:59 obrien Exp $
+# $FreeBSD: ports/print/a2ps43-letter/Makefile,v 1.22 2000/03/20 02:36:01 obrien Exp $
 #
 
 DISTNAME=	a2ps.V4.3

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  MaRS
+# Version required: 0.0
 # Date created:			  Mon Nov 18, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/cad/mars/Makefile,v 1.13 2000/02/13 03:23:41 obrien Exp $
+# $FreeBSD: ports/cad/mars/Makefile,v 1.14 2000/03/20 02:36:44 obrien Exp $
 #
 
 DISTNAME=	MaRS-2.1

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  ngrep
+# Version required: 0.0
 # Date created:			  Sat Jan 01, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/ngrep/Makefile,v 1.2 2000/02/13 03:24:02 obrien Exp $
+# $FreeBSD: ports/net/ngrep/Makefile,v 1.3 2000/03/20 02:37:03 obrien Exp $
 #
 
 DISTNAME=	ngrep-1.35

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  pathchar
+# Version required: 0.0
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.11 2000/02/13 03:24:06 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.12 2000/03/20 02:37:06 obrien Exp $
 #
 
 DISTNAME=	pathchar-a1-freebsd-3.0

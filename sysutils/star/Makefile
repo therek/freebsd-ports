@@ -1,8 +1,9 @@
 # New ports collection makefile for:	star
+# Version required: 0.0
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.18 2000/02/21 16:41:35 obrien Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.19 2000/03/20 02:37:20 obrien Exp $
 #
 
 DISTNAME=		star-1.2

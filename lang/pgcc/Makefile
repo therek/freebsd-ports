@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  pgcc
+# Version required: 0.0
 # Date created:			  10 Dec 1998
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/pgcc/Makefile,v 1.23 2000/02/13 03:24:08 obrien Exp $
+# $FreeBSD: ports/lang/pgcc/Makefile,v 1.24 2000/03/20 02:37:08 obrien Exp $
 #
 
 DISTNAME=	gcc-2.95.1

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  urlview
+# Version required: 0.0
 # Date created:			  21 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/urlview/Makefile,v 1.7 2000/02/13 03:24:30 obrien Exp $
+# $FreeBSD: ports/textproc/urlview/Makefile,v 1.8 2000/03/20 02:37:26 obrien Exp $
 #
 
 DISTNAME=	urlview-0.7

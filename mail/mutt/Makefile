@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  mutt w/pgp hooks
+# Version required: 0.0
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.78 2000/03/11 05:16:45 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.79 2000/03/20 02:36:51 obrien Exp $
 
 DISTNAME=	mutt-1.0.1i
 PKGNAME=	mutt-1.0.1

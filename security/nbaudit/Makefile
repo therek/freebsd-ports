@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  nat/nbaudit
+# Version required: 0.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nbaudit/Makefile,v 1.6 2000/02/13 03:23:54 obrien Exp $
+# $FreeBSD: ports/security/nbaudit/Makefile,v 1.7 2000/03/20 02:36:57 obrien Exp $
 #
 
 DISTNAME=	nat10

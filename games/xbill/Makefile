@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  xbill
+# Version required: 0.0
 # Date created:			  12 September 1995
 # Whom:				  asami
 #
-# $FreeBSD: ports/games/xbill/Makefile,v 1.12 2000/02/13 03:24:44 obrien Exp $
+# $FreeBSD: ports/games/xbill/Makefile,v 1.13 2000/03/20 02:37:38 obrien Exp $
 #
 
 DISTNAME=	xbill-2.0

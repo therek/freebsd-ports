@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  ncftp
+# Version required: 0.0
 # Date created:			  20 Jun 1996
 # Whom:				  jkh
 #
-# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.12 2000/02/13 03:23:55 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.13 2000/03/20 02:36:57 obrien Exp $
 #
 
 DISTNAME=       ncftp-1.9.5

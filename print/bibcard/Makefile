@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  bibcard
+# Version required: 0.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/print/bibcard/Makefile,v 1.10 2000/02/13 03:23:04 obrien Exp $
+# $FreeBSD: ports/print/bibcard/Makefile,v 1.11 2000/03/20 02:36:05 obrien Exp $
 #
 
 DISTNAME=	bibcard.6.4

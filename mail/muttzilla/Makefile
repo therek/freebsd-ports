@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  foo
+# Version required: 0.0
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.4 2000/02/13 21:42:03 obrien Exp $
+# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.5 2000/03/20 02:36:54 obrien Exp $
 #
 
 DISTNAME=	muttzilla-0.40

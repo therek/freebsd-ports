@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:	GNU glib++
+# Version required: 0.0
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.1.1.1 2000/02/27 19:23:24 obrien Exp $
+# $FreeBSD: ports/devel/libg++/Makefile,v 1.2 2000/03/20 23:10:46 obrien Exp $
 #
 
 DISTNAME=	libg++-2.8.1.3

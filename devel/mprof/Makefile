@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  mprof
+# Version required: 0.0
 # Date created:			  Sat Nov  5 01:16:33 PST 1994
 # Whom:				  hsu
 #
-# $FreeBSD: ports/devel/mprof/Makefile,v 1.12 2000/02/13 03:23:49 obrien Exp $
+# $FreeBSD: ports/devel/mprof/Makefile,v 1.13 2000/03/20 02:36:50 obrien Exp $
 #
 
 DISTNAME=       mprof-3.0

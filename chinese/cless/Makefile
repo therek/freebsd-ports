@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  cless
+# Version required: 0.0
 # Date created:			  Sat Aug 10, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cless/Makefile,v 1.10 2000/02/13 03:24:56 obrien Exp $
+# $FreeBSD: ports/chinese/cless/Makefile,v 1.11 2000/03/20 02:37:46 obrien Exp $
 #
 
 DISTNAME=	cless-290

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  wget
+# Version required: 0.0
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.21 2000/02/13 03:24:41 obrien Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.22 2000/03/20 02:37:36 obrien Exp $
 #
 
 DISTNAME=	wget-1.5.3

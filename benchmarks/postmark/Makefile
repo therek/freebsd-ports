@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  postmark
+# Version required: 0.0
 # Date created:			  Sat Sep 18, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.3 2000/02/13 03:24:09 obrien Exp $
+# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.4 2000/03/20 02:37:09 obrien Exp $
 #
 
 DISTNAME=	postmark-1_11

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  vim
+# Version required: 0.0
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.68 2000/02/29 09:41:36 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.69 2000/03/20 02:37:34 obrien Exp $
 #
 
 PKGVER=		5.6.12

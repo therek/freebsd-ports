@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  find_ddos
+# Version required: 0.0
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/find_ddos/Makefile,v 1.1.1.1 2000/02/14 02:22:45 obrien Exp $
+# $FreeBSD: ports/security/find_ddos/Makefile,v 1.2 2000/03/20 02:36:21 obrien Exp $
 #
 
 DISTNAME=	find_ddos_v31_linux

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  lprps (letter)
+# Version required: 0.0
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/lprps-letter/Makefile,v 1.8 2000/02/13 03:23:38 obrien Exp $
+# $FreeBSD: ports/print/lprps-letter/Makefile,v 1.9 2000/03/20 02:36:41 obrien Exp $
 #
 
 DISTNAME=	lprps-2.5

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  ddos_scan
+# Version required: 0.0
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/rid/Makefile,v 1.1.1.1 2000/02/14 02:59:35 obrien Exp $
+# $FreeBSD: ports/security/rid/Makefile,v 1.2 2000/03/20 02:37:14 obrien Exp $
 #
 
 DISTNAME=	rid-1_0

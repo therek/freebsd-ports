@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  icb
+# Version required: 0.0
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD: ports/net/icb/Makefile,v 1.4 2000/02/13 03:23:28 obrien Exp $
+# $FreeBSD: ports/net/icb/Makefile,v 1.5 2000/03/20 02:36:32 obrien Exp $
 #
 
 DISTNAME=	icb-5.0.9

@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  xcpustate
+# Version required: 0.0
 # Date created:			  31-Dec-1995
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.15 2000/03/20 02:37:39 obrien Exp $
+# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.16 2000/03/20 21:06:48 mharo Exp $
 #
 
 DISTNAME=	xcpustate-2.5

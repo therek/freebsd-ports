@@ -1,10 +1,11 @@
 # ex:ts=8
 # Ports collection makefile for:  Crack
+# Version required: 0.0
 # Date created:			  12 Jan 1997
 # Whom:				  David O'Brien <obrien@FreeBSD.org>
 #				  & Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/security/crack/Makefile,v 1.12 2000/02/13 03:23:11 obrien Exp $
+# $FreeBSD: ports/security/crack/Makefile,v 1.13 2000/03/20 02:36:13 obrien Exp $
 #
 
 DISTNAME=	crack5.0

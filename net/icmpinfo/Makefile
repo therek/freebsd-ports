@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  icmpinfo
+# Version required: 0.0
 # Date created:			  Mon June 23, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/net/icmpinfo/Makefile,v 1.8 2000/02/13 03:23:29 obrien Exp $
+# $FreeBSD: ports/net/icmpinfo/Makefile,v 1.9 2000/03/20 02:36:32 obrien Exp $
 #
 
 DISTNAME=	icmpinfo-1.11

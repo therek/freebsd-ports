@@ -1,9 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  jive
+# Version required: 0.0
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/misc/jive/Makefile,v 1.8 2000/03/11 05:16:43 obrien Exp $
+# $FreeBSD: ports/misc/jive/Makefile,v 1.9 2000/03/20 02:36:35 obrien Exp $
 #
 
 DISTNAME=	jive-1.1
