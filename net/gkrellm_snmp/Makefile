@@ -2,11 +2,11 @@
 # Date created:        10/09/2000
 # Whom:                Eike Bernhardt <eike.bernhardt@gmx.de>
 #
-# $FreeBSD: ports/net/gkrellm_snmp/Makefile,v 1.2 2000/10/05 06:57:44 reg Exp $
+# $FreeBSD: ports/net/gkrellm_snmp/Makefile,v 1.3 2001/01/19 16:37:53 knu Exp $
 #
 
 PORTNAME=	gkrellm_snmp
-PORTVERSION=	0.9
+PORTVERSION=	0.14
 CATEGORIES=	net
 MASTER_SITES=	http://triq.net/gkrellm/
 
