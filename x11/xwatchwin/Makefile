@@ -2,10 +2,11 @@
 # Date created:		1 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/xwatchwin/Makefile,v 1.1 2000/09/02 08:27:23 kris Exp $
+# $FreeBSD: ports/x11/xwatchwin/Makefile,v 1.2 2000/09/02 11:25:09 kris Exp $
 
 PORTNAME=	xwatchwin
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
