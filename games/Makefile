@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.409 2001/09/03 16:31:06 lioux Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 0verkill
@@ -205,6 +205,7 @@
     SUBDIR += qstat
     SUBDIR += quakeforge
     SUBDIR += quakeserver
+    SUBDIR += robocode
     SUBDIR += rocksndiamonds
     SUBDIR += rollemup
     SUBDIR += rt2-demo
