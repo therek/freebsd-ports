@@ -3,10 +3,10 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql/Makefile,v 1.46 1999/08/25 05:21:32 obrien Exp $
+# $FreeBSD: ports/databases/postgresql/Makefile,v 1.47 1999/08/31 06:41:22 mharo Exp $
 #
 
-DISTNAME=	postgresql-6.5.1
+DISTNAME=	postgresql-6.5.2
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.postgresql.org/pub/ \
 		ftp://ftp.iodynamics.com/pub/mirror/postgresql/ \
@@ -106,13 +106,14 @@ post-patch:
 		${WRKSRC}/Makefile.global.in.old \
 		>> ${WRKSRC}/Makefile.global.in
 
-.if defined(USE_TCL)
-	@ ${MV} ${WRKSRC}/bin/pgaccess/pgaccess.tcl \
-		${WRKSRC}/bin/pgaccess/pgaccess.tcl.orig
-	@ ${SED} -e "s=/usr/bin/wish=`/usr/bin/which wish8.0`=" \
-		${WRKSRC}/bin/pgaccess/pgaccess.tcl.orig \
-		>> ${WRKSRC}/bin/pgaccess/pgaccess.tcl
-.endif
+# pgaccess (accidentally?) removed from distribution, so leave it for now
+#.if defined(USE_TCL)
+#	@ ${MV} ${WRKSRC}/bin/pgaccess/pgaccess.tcl \
+#		${WRKSRC}/bin/pgaccess/pgaccess.tcl.orig
+#	@ ${SED} -e "s=/usr/bin/wish=`/usr/bin/which wish8.0`=" \
+#		${WRKSRC}/bin/pgaccess/pgaccess.tcl.orig \
+#		>> ${WRKSRC}/bin/pgaccess/pgaccess.tcl
+#.endif
 
 post-build:
 
