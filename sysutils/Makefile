@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.147 2001/01/16 17:15:40 alex Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.148 2001/01/21 16:47:52 ijliao Exp $
 #
     SUBDIR += yawho
 
@@ -87,6 +87,7 @@
     SUBDIR += pslist
     SUBDIR += psmisc
     SUBDIR += pwgen
+    SUBDIR += qtpkg
     SUBDIR += rdate
     SUBDIR += rotate
     SUBDIR += rtty
