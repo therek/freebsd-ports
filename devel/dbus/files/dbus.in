@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/devel/dbus/files/dbus.sh,v 1.1 2004/07/21 19:43:16 marcus Exp $
+# $FreeBSD: ports/devel/dbus/files/dbus.sh,v 1.2 2004/07/22 05:41:15 marcus Exp $
 #
 # PROVIDE: dbus
 # REQUIRE: DAEMON
@@ -10,6 +10,9 @@
 #
 # dbus_enable="YES"
 #
+
+dbus_enable=${dbus_enable-"NO"}
+dbus_flags=${dbus_flags-"--system"}
 
 . %%RC_SUBR%%
 
@@ -26,8 +29,6 @@ stop_postcmd()
     rm -f $pidfile
 }
 
-[ -z "$dbus_enable" ]	&& dbus_enable="NO"
-[ -z "$dbus_flags" ]	&& dbus_flags="--system"
 
 load_rc_config ${name}
 run_rc_command "$1"
