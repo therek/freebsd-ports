@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.195 2001/06/01 14:49:28 dinoex Exp $
+# $FreeBSD: ports/security/Makefile,v 1.196 2001/06/08 00:15:22 dwcjr Exp $
 #
 
     SUBDIR += aafid2
@@ -156,7 +156,6 @@
     SUBDIR += ssh
     SUBDIR += ssh-multiadd
     SUBDIR += ssh2
-    SUBDIR += ssldump
     SUBDIR += sslproxy
     SUBDIR += sslwrap
     SUBDIR += sst
