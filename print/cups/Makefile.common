@@ -1,6 +1,6 @@
 # ex:ts=8	-*-mode: makefile-*-
 # Common file for CUPS ports
-# $FreeBSD: ports/print/cups/Makefile.common,v 1.18 2004/11/15 04:24:31 dougb Exp $
+# $FreeBSD: ports/print/cups/Makefile.common,v 1.19 2005/01/24 17:22:59 sem Exp $
 
 CUPS_MASTER_SITES=\
   ftp://ftp.funet.fi/pub/mirrors/ftp.easysw.com/pub/cups/${CUPS_VERSION}/ \
@@ -55,6 +55,11 @@ RUN_DEPENDS+=		php:${PORTSDIR}/lang/php4
 .if defined(WITH_PYTHON)
 CONFIGURE_ARGS+=	--with-python
 USE_PYTHON=	yes
+.endif
+
+.if defined(WITH_CUPS_LIBPAPER)
+CONFIGURE_ARGS+=	--enable-libpaper
+LIB_DEPENDS+=	paper.2:${PORTSDIR}/print/libpaper
 .endif
 
 USE_BZIP2=	yes
