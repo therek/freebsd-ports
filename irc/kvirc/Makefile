@@ -3,7 +3,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.4 1999/08/25 06:12:47 obrien Exp $
 #
 
 DISTNAME=	kvirc-0.9.0
@@ -11,7 +11,7 @@ CATEGORIES=	irc kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR=	 stable/1.1/apps/network
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@freebsd.org
 
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.2:${PORTSDIR}/x11/kdelibs11 \
