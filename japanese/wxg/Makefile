@@ -2,7 +2,7 @@
 # Date created:		5 Dec 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/wxg/Makefile,v 1.2 2000/12/06 12:26:25 knu Exp $
+# $FreeBSD: ports/japanese/wxg/Makefile,v 1.3 2000/12/07 08:43:18 knu Exp $
 #
 
 PORTNAME=	wxg
@@ -28,7 +28,7 @@ SBINS=		wxgserver
 .include <bsd.port.pre.mk>
 
 .if !exists(${_DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
-IGNORE='You must visit http://www.ekotoba.com/download/dldata.asp?kind=1&data=3 and agree with the licence terms to fetch "${DISTFILE}".  After the download is done, place it in ${_DISTDIR} and run make again.'
+IGNORE='You must visit http://www.ekotoba.com/download/dldata.asp?kind=1&data=1 and agree with the licence terms to fetch "${DISTFILE}".  After the download is done, place it in ${_DISTDIR} and run make again.'
 .endif
 
 do-fetch:
