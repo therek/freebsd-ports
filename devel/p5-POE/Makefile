@@ -2,7 +2,7 @@
 # Date created:		29 Apr 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/devel/p5-POE/Makefile,v 1.1 2001/05/08 12:22:01 ijliao Exp $
+# $FreeBSD: ports/devel/p5-POE/Makefile,v 1.2 2001/07/16 14:51:22 tobez Exp $
 #
 
 PORTNAME=	POE
@@ -30,5 +30,9 @@ MAN3=		POE::Driver::SysRW.3 POE::Wheel::ListenAccept.3\
 		POE::Filter::Stackable.3 POE::Filter::RecordBlock.3\
 		POE::Filter::Block.3 POE::Wheel::FollowTail.3 POE::Kernel.3\
 		POE::Filter::Stream.3 POE::Wheel::Curses.3
+
+post-install:
+		@${MKDIR} ${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}
+		${INSTALL_DATA} ${WRKSRC}/samples/* ${PREFIX}/share/examples/${PKGNAMEPREFIX}${PORTNAME}
 
 .include <bsd.port.mk>
