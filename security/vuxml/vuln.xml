@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.392 2004/12/04 20:47:45 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.393 2004/12/04 21:12:13 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -291,7 +291,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   </vuln>
 
   <vuln vid="ac619d06-3ef8-11d9-8741-c942c075aa41">
-    <topic> Security Vulnerability With Java Plugin</topic>
+    <topic>jdk/jre -- Security Vulnerability With Java Plugin</topic>
     <affects>
       <package>
 	<name>jdk</name>
@@ -311,6 +311,11 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>linux-ibm-jdk</name>
 	<range><ge>1.3.0</ge><le>1.4.2</le></range>
+      </package>
+      <package>
+	<name>diablo-jdk</name>
+	<name>diablo-jre</name>
+	<range><ge>1.3.1.0</ge><le>1.3.1.0_1</le></range>
       </package>
     </affects>
     <description>
