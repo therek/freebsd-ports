@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.88 2000/09/30 22:13:00 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.89 2000/10/08 06:37:24 asami Exp $
 #
 
 PORTNAME=	XFree86
@@ -57,7 +57,7 @@ pre-fetch:
 .if ${USA_RESIDENT} == NO
 pre-fetch:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-	${SH} ${PKGDIR}/INSTALL
+	${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 .endif
 MASTER_SITES+=	ftp://psych.psy.uq.oz.au/pub/X11R5/ \
 		ftp://ftp.internat.freebsd.org/pub/FreeBSD/X11-Crypto/ \
@@ -69,7 +69,7 @@ IGNOREFILES=	Wraphelp.c
 .if ${USA_RESIDENT} == YES
 pre-fetch:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-	${SH} ${PKGDIR}/INSTALL
+	${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 .endif
 	@${ECHO}
 	@${ECHO} Assuming that you have fetched a USA-Legal Wraphelp.c.

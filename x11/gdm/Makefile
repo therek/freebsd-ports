@@ -2,7 +2,7 @@
 # Date created:        12 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gdm/Makefile,v 1.3 2000/09/16 13:26:29 nakai Exp $
+# $FreeBSD: ports/x11/gdm/Makefile,v 1.4 2000/10/05 07:17:23 reg Exp $
 #
 
 PORTNAME=	gdm
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 pre-fetch:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-	${SH} ${PKGDIR}/INSTALL
+	${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
 .endif
 
 pre-patch:
