@@ -2,11 +2,13 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.59 2000/04/10 00:06:06 cpiazza Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.60 2000/04/14 13:28:54 asami Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
 PORTVERSION=	${BROWSER_VER}
+
+BROKEN=		"Null PKGNAME is set and will destroy all /var/db/pkg"
 
 .if !defined(PRE_MK_INCLUDED)
 .include <bsd.port.pre.mk>
