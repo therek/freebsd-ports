@@ -4,14 +4,14 @@
 # Date created:		25 July 1996
 # Whom:			obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/news/tin/Makefile,v 1.77 1999/11/14 10:49:26 obrien Exp $
+# $FreeBSD: ports/news/tin/Makefile,v 1.78 1999/12/02 23:24:56 obrien Exp $
 #
 
-DISTNAME=       tin-1.4.1
+DISTNAME=       tin-1.4.2
 CATEGORIES=	news
-MASTER_SITES=   ftp://ftp.tin.org/pub/news/clients/tin/current/ \
-		ftp://nuxi.ucdavis.edu/pub/tin/current/ \
-		ftp://ftp.nuxi.com/pub/tin/current/
+MASTER_SITES=   ftp://ftp.tin.org/pub/news/clients/tin/v1.4/ \
+		ftp://nuxi.ucdavis.edu/pub/tin/v1.4/ \
+		ftp://ftp.nuxi.com/pub/tin/v1.4/
 
 MAINTAINER=     ache@FreeBSD.org
 
