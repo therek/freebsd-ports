@@ -3,7 +3,7 @@
 # Date created:        16 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnet/Makefile,v 1.1.1.1 2000/02/16 12:01:25 nakai Exp $
+# $FreeBSD: ports/net/gnet/Makefile,v 1.2 2000/02/27 14:53:42 steve Exp $
 #
 
 DISTNAME=	gnet-0.1.9
@@ -16,7 +16,7 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
 
 GLIB_CONFIG=	${LOCALBASE}/bin/glib12-config
 
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"
 
 .include <bsd.port.mk>
