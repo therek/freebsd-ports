@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.617 2001/08/15 20:37:45 tobez Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.618 2001/08/16 10:53:10 okazaki Exp $
 #
 
     SUBDIR += ElectricFence
@@ -533,6 +533,7 @@
     SUBDIR += swigruby
     SUBDIR += t1lib
     SUBDIR += tcl-memchan
+    SUBDIR += tcl-neo
     SUBDIR += tclcheck
     SUBDIR += tclcl
     SUBDIR += tclgetopts
