@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.6 2001/05/21 19:53:07 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	musicbrainz
@@ -32,7 +32,7 @@ HAVE_VORBIS=	yes
 
 post-extract:
 	@${RM} ${WRKSRC}/config.sub ${WRKSRC}/config.guess ;\
-	${LN} -s ${LOCALBASE}/share/autoconf/config.* ${WRKSRC}/ ;\
+	${LN} -s ${AUTOCONF_DIR}/config.* ${WRKSRC}/ ;\
 	${PERL} -pi -e 's/-ldl//g' ${WRKSRC}/examples/Makefile.*
 
 .include <bsd.port.mk>
