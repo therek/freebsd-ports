@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.444 2001/02/26 21:44:57 mi Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.445 2001/02/27 01:13:41 bsd Exp $
 #
     SUBDIR += zziplib
 
@@ -409,6 +409,7 @@
     SUBDIR += tvision
     SUBDIR += uclmmbase
     SUBDIR += ucpp
+    SUBDIR += uds
     SUBDIR += ups-debug
     SUBDIR += veepee
     SUBDIR += viewcvs
