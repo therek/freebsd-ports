@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.27 2002/10/29 10:22:38 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.28 2002/10/29 10:24:00 des Exp $
 #
 
 use strict;
@@ -554,6 +554,7 @@ sub add_dependencies($$@) {
 
     foreach $item (@dependlist) {
 	$item =~ s|\`([^\`]+)\`|capture(\&cmd, "sh", "-c", $1)|eg;
+	1 while ($item =~ s|/[^\./]*/\.\./|/|);
 	if ($item !~ m|^(?:([^:]+):)?$portsdir/([^/:]+/[^/:]+)/?(:[^:]+)?$|) {
 	    bsd::warnx("invalid dependency: %s", $item);
 	    next;
