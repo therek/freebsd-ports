@@ -2,7 +2,7 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat2/Makefile,v 1.9 2000/10/26 12:36:51 knu Exp $
+# $FreeBSD: ports/textproc/expat2/Makefile,v 1.10 2001/02/05 16:34:35 olgeni Exp $
 #
 
 PORTNAME=	expat
@@ -19,7 +19,7 @@ CONFIGURE_ARGS=	--enable-shared --enable-static
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 
-INSTALLS_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 
 SHLIB_MAJOR=	2
 
