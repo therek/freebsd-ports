@@ -1,5 +1,5 @@
 #
-#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.12 2001/01/19 15:22:54 shige Exp $
+#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.13 2001/02/05 07:51:50 shige Exp $
 #
 #	bsd.emacs.mk - 19990829 Shigeyuki Fukushima.
 #
@@ -92,32 +92,6 @@ EMACS_LIBDIR_WITH_VER?=	share/${EMACS_NAME}/${EMACS_VER}
 EMACS_PORTSDIR=		${PORTSDIR}/editors/mule
 EMACS_COMMON_PORT=	YES
 EMACS_HAS_MULE=		YES
-
-# XEmacs-19.x
-.elif (${EMACS_PORT_NAME} == "xemacs")
-EMACS_NAME=		xemacs
-EMACS_VER=		19.16
-EMACS_MAJOR_VER=	19
-EMACS_LIBDIR?=		lib/${EMACS_NAME}
-EMACS_LIBDIR_WITH_VER?=	lib/${EMACS_NAME}-${EMACS_VER}
-EMACS_PORTSDIR=		${PORTSDIR}/editors/xemacs
-EMACS_COMMON_PORT=	NO
-EMACS_HAS_MULE=		NO
-# subdirectory of emacs core elisp files
-EMACS_CORE_SUBDIR=	prim
-
-# XEmacs-20.x
-.elif (${EMACS_PORT_NAME} == "xemacs20")
-EMACS_NAME=		xemacs
-EMACS_VER=		20.4
-EMACS_MAJOR_VER=	20
-EMACS_LIBDIR?=		lib/${EMACS_NAME}
-EMACS_LIBDIR_WITH_VER?=	lib/${EMACS_NAME}-${EMACS_VER}
-EMACS_PORTSDIR=		${PORTSDIR}/editors/xemacs20
-EMACS_COMMON_PORT=	NO
-EMACS_HAS_MULE=		NO
-# subdirectory of emacs core elisp files
-EMACS_CORE_SUBDIR=	prim
 
 # XEmacs-21.x
 .elif (${EMACS_PORT_NAME} == "xemacs21")
