@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.276 2000/06/10 05:45:33 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.277 2000/06/16 13:27:09 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -91,6 +91,7 @@
     SUBDIR += orville-write
     SUBDIR += p5-Array-PrintCols
     SUBDIR += p5-Business-CreditCard
+    SUBDIR += p5-File-CounterFile
     SUBDIR += p5-I18N-Charset
     SUBDIR += p5-I18N-LangTags
     SUBDIR += p5-Locale-Codes
