@@ -2,20 +2,20 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/mingw/Makefile,v 1.1 2000/06/26 19:19:06 knu Exp $
 #
 
 PORTNAME=	mingw
-PORTVERSION=	2000.03.27
+PORTVERSION=	20010726
 CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	tino@pa2.so-net.ne.jp
+MAINTAINER=	doc@hisio.safenet.pl
 
-BUILD_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
-		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt
-RUN_DEPENDS=	i386-mingw32msvc-gcc:${PORTSDIR}/devel/mingw-gcc
+RUN_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
+		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt \
+		i386-mingw32msvc-gcc:${PORTSDIR}/devel/mingw-gcc
 
 NO_BUILD=	yes
 
