@@ -5,7 +5,7 @@
 #					msmith@freebsd.org
 # Relevant URLs:			http://www.corel.com/
 #
-# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.9 1999/09/02 04:57:32 mharo Exp $
+# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.10 2000/02/28 08:33:28 asami Exp $
 
 DISTNAME=	GUILG00
 PKGNAME=	wordperfect-8.0
@@ -28,7 +28,7 @@ NO_BUILD=	yes
 .include <bsd.port.pre.mk>
 
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
-IGNORE='The source to this port may not be automatically fetched due to licensing restrictions.  You MUST fetch the source manually after reading and agreeing to the license at: http://linux.corel.com/linux8/download.htm  Once ${DISTFILES} has been downloaded, move it to ${DISTDIR} and then restart this build.'
+IGNORE='The source to this port may not be automatically fetched due to licensing restrictions.  You MUST fetch the source manually after reading and agreeing to the license at: http://linux.corel.com/products/linuxproducts_wp8.htm  Once ${DISTFILES} has been downloaded, move it to ${DISTDIR} and then restart this build.'
 .endif
 
 post-extract:
