@@ -2,11 +2,12 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD: ports/graphics/xine/Makefile,v 1.14 2001/05/18 10:04:27 sobomax Exp $
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.15 2001/09/20 07:50:11 knu Exp $
 #
 
 PORTNAME=	xine
 PORTVERSION=	0.9.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://xine.sourceforge.net/files/ \
 		${MASTER_SITE_SOURCEFORGE}
@@ -17,7 +18,7 @@ MAINTAINER=	nobutaka@nobutaka.com
 
 LIB_DEPENDS=	xine.0:${PORTSDIR}/graphics/libxine \
 		aa.1:${PORTSDIR}/graphics/aalib \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
