@@ -2,16 +2,19 @@
 # Date created:		Tue May 15 22:29:27 MSD 2001
 # Whom:			Alex Semenyaka <alex@rinet.ru>
 #
-# $FreeBSD: ports/devel/strace/Makefile,v 1.1 2001/05/15 19:52:44 yar Exp $
+# $FreeBSD: ports/devel/strace/Makefile,v 1.2 2001/05/15 20:42:13 yar Exp $
 #
 
 PORTNAME=	strace
-PORTVERSION=	4.3
+PORTVERSION=	4.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+DISTNAME=	${PORTNAME}_${PORTVERSION}-1
 
 MAINTAINER=	alex@rinet.ru
+
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 GNU_CONFIGURE=	yes
 
