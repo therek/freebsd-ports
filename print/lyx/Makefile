@@ -3,16 +3,15 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.39 2000/03/08 09:50:44 dirk Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.40 2000/03/10 23:58:53 dirk Exp $
 #
 
 DISTNAME=	lyx-1.1.4
 PKGNAME=	lyx-1.1.4.1
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/devel/ \
-		ftp://la1ad.uio.no/pub/lyx/ \
-		ftp://alpha.tat.physik.uni-tuebingen.de/pub/lyx/devel/ \
-		ftp://ftp.sdsc.edu/pub/other/lyx/devel/
+MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
+		ftp://ftp.sdsc.edu/pub/other/lyx/stable/ \
+		ftp://gd.tuwien.ac.at/publishing/tex/lyx/stable/
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	patch-1.1.4fix1.gz
