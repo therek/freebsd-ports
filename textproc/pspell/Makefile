@@ -2,7 +2,7 @@
 # Date created:				13th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/pspell/Makefile,v 1.13 2001/04/24 14:07:48 kevlo Exp $
+# $FreeBSD: ports/textproc/pspell/Makefile,v 1.14 2001/08/22 23:07:01 petef Exp $
 #
 
 PORTNAME=	pspell
@@ -16,14 +16,15 @@ MAINTAINER=	petef@FreeBSD.org
 
 LIB_DEPENDS=	ltdl.1:${PORTSDIR}/devel/libtool
 
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
-LIBTOOLFILES=	configure modules/configure libltdl/configure
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--enable-doc-dir=${PREFIX}/share/doc/pspell
-MAKE_ARGS=	NOPORTDOCS=${NOPORTDOCS}
 INSTALLS_SHLIB=	yes
+
+post-patch:
+	@${PERL} -pi -e 's,\@INSTALL\@,install,' ${WRKSC}/libltdl/Makefile.in \
+		${WRKSRC}/modules/Makefile.in
 
 .include <bsd.port.mk>
