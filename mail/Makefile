@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.245 2001/08/23 15:41:23 petef Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.246 2001/08/24 08:51:13 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -150,6 +150,7 @@
     SUBDIR += prom-wl
     SUBDIR += pronto
     SUBDIR += pygmy
+    SUBDIR += qmHandle
     SUBDIR += qmail
     SUBDIR += qmail-contrib
     SUBDIR += qmail-ldap
