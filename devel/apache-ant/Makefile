@@ -2,11 +2,12 @@
 # Date created:		21 February 2001
 # Whom:			ernst@jollem.com
 #
-# $FreeBSD: ports/devel/jakarta-ant/Makefile,v 1.1 2001/04/03 03:19:50 okazaki Exp $
+# $FreeBSD: ports/devel/jakarta-ant/Makefile,v 1.2 2001/05/24 13:03:59 ijliao Exp $
 #
 
 PORTNAME=	jakarta-ant
 PORTVERSION=	1.3
+PORTREVISION=	1
 CATEGORIES=	devel java
 MASTER_SITES=	http://jakarta.apache.org/builds/${PORTNAME}/release/v${PORTVERSION}/bin/
 DISTFILES=	${DISTNAME}-bin${EXTRACT_SUFX} \
@@ -34,6 +35,9 @@ DATADIRS=	lib
 .if !defined(NOPORTDOCS)
 DATADIRS+=	docs
 .endif
+
+post-patch:
+	@${PERL} -pi -e 's,JAVACMD=java,JAVACMD=javavm,g' ${WRKSRC}/bin/ant
 
 do-install:
 	${MKDIR} ${PORTDESTDIR}/bin ${PORTDESTDIR}/lib
