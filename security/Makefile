@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.68 1999/10/04 14:34:23 nectar Exp $
+# $FreeBSD: ports/security/Makefile,v 1.69 1999/10/08 22:37:39 dan Exp $
 #
 
     SUBDIR += bjorb
@@ -16,7 +16,6 @@
     SUBDIR += gpasman
     SUBDIR += gtkportscan
     SUBDIR += identify
-    SUBDIR += iplog
     SUBDIR += john
     SUBDIR += keynote
     SUBDIR += keyprint
