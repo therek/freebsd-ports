@@ -2,7 +2,7 @@
 # Date created:				17th February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.9 2001/02/05 16:34:37 olgeni Exp $
+# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.10 2001/02/25 15:34:45 kevlo Exp $
 #
 
 PORTNAME=	gaspell
@@ -18,7 +18,7 @@ LIB_DEPENDS=	aspell.9:${PORTSDIR}/textproc/aspell
 
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
-USE_GNOMELIBS=	yes
+USE_GNOME=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gaspell ${PREFIX}/bin
