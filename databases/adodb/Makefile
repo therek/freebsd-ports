@@ -2,7 +2,7 @@
 # Date created:		4 May 2001
 # Whom:			abgoeree@uwnet.nl
 #
-# $FreeBSD: ports/databases/adodb/Makefile,v 1.3 2001/06/28 12:33:45 kevlo Exp $
+# $FreeBSD: ports/databases/adodb/Makefile,v 1.4 2001/06/29 09:02:22 dirk Exp $
 #
 
 PORTNAME=	adodb
@@ -20,9 +20,19 @@ RUN_DEPENDS=	${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4
 WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	YES
 
+ADODB_DIR=	share/doc/apache/php/adodb
+
+post-patch:
+	${PERL} -pi -e 's!^readme\.htm!${PREFIX}/${ADODB_DIR}/readme\.htm!' \
+		${WRKSRC}/readme.txt
+	${PERL} -pi -e 's!^tute\.htm!${PREFIX}/${ADODB_DIR}/tute\.htm!' \
+		${WRKSRC}/readme.txt
+
 do-install:
-	${RM} -f ${WRKSRC}/*.orig
-	${MKDIR} ${PREFIX}/share/doc/apache/php/adodb
-	${INSTALL_DATA} ${WRKSRC}/* ${PREFIX}/share/doc/apache/php/adodb
+	${MKDIR} ${PREFIX}/share/doc/adodb
+	${MKDIR} ${PREFIX}/${ADODB_DIR}
+	${INSTALL_DATA} ${WRKSRC}/*.txt ${PREFIX}/share/doc/adodb
+	${INSTALL_DATA} ${WRKSRC}/*.php ${PREFIX}/${ADODB_DIR}
+	${INSTALL_DATA} ${WRKSRC}/*.htm ${PREFIX}/${ADODB_DIR}
 
 .include <bsd.port.mk>
