@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.103 2002/09/28 19:55:34 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.104 2002/09/28 20:47:41 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -265,16 +265,12 @@ MASTER_SITE_RINGSERVER+=	\
 	http://www.dnsbalance.ring.gr.jp/archives/%SUBDIR%/
 
 MASTER_SITE_RUBY+= \
-	ftp://ftp.ruby-lang.org/pub/ruby/%SUBDIR%/ \
-	ftp://ftp.fu-berlin.de/unix/languages/ruby/%SUBDIR%/ \
-	ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/lang/ruby/%SUBDIR%/ \
-	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/ \
-	ftp://ftp.kr.FreeBSD.org/pub/ruby/%SUBDIR%/ \
+	ftp://ftp.fu-berlin.de/unix/languages/ruby/%SUBDIR%/ \
 	ftp://ftp.easynet.be/ruby/ruby/%SUBDIR%/ \
-	http://mirrors.sunsite.dk/ruby/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/lang/ruby/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/lang/ruby/%SUBDIR%/
+	ftp://ftp.kr.FreeBSD.org/pub/ruby/%SUBDIR%/ \
+	ftp://ftp.iDaemons.org/pub/mirror/ftp.ruby-lang.org/ruby/%SUBDIR%/
 
 MASTER_SITE_SOURCEWARE+= \
 	http://mirrors.rcn.net/pub/sourceware/%SUBDIR%/ \
