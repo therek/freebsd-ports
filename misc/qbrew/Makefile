@@ -2,11 +2,11 @@
 # Date created:				22 September 2000
 # Whom:					David Johnson <david@usermode.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/qbrew/Makefile,v 1.1 2001/04/07 06:46:38 will Exp $
 #
 
 PORTNAME=	qbrew
-PORTVERSION=	0.1.6
+PORTVERSION=	0.2.0
 CATEGORIES=	misc
 MASTER_SITES=	http://www.usermode.org/code/
 
