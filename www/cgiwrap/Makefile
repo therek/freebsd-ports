@@ -2,7 +2,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.7 2001/02/05 15:33:17 olgeni Exp $
+# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.8 2001/04/21 16:14:39 fenner Exp $
 #
 
 PORTNAME=	cgiwrap
@@ -11,6 +11,8 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.unixtools.org/cgiwrap/dist/ \
 		ftp://ftp.umr.edu/pub/cgi/cgiwrap/ \
 		ftp://concert.cert.dfn.de/pub/tools/net/cgiwrap/
+
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	${HTTPDUSER} ${WITHOUTCHECK} --with-install-dir=${INSTALLDIR} \
