@@ -3,7 +3,7 @@
 # Date created:		26 February 1999
 # Whom:			Kai Voigt (k@123.org)
 #
-# $FreeBSD: ports/www/roxen/Makefile,v 1.5 1999/09/18 17:35:21 steve Exp $
+# $FreeBSD: ports/www/roxen/Makefile,v 1.6 1999/09/24 17:55:50 taoka Exp $
 #
 
 DISTNAME=	roxen_1.3.111-0.6-40bit
@@ -15,6 +15,7 @@ MAINTAINER=	k@123.org
 
 WRKSRC=		${WRKDIR}/roxen_1.3.111
 GNU_CONFIGURE=	yes
+PKGMESSAGE=	${WRKSRC}/MESSAGE
 
 STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/roxen.sh
 
@@ -22,7 +23,7 @@ post-patch:
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/roxen.sh.in > \
 	  ${WRKDIR}/roxen.sh
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/MESSAGE.in > \
-	  ${PKGDIR}/MESSAGE
+	  ${PKGMESSAGE}
 
 do-configure:
 	@(cd ${WRKSRC}; \
