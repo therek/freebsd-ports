@@ -2,7 +2,7 @@
 # Date created:		Aug 14, 2000
 # Whom:			Yoshiro MIHIRA <sanpei@FreeBSD.org>
 #
-# $FreeBSD: ports/www/thumbnail_index/Makefile,v 1.2 2001/02/05 15:33:51 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	thumbnail_index
@@ -12,10 +12,10 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.acme.com/software/thumbnail_index/
 DISTNAME=	${PORTNAME}_10aug98
 
-MAINTAINER=	sanpei@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	djpeg:${PORTSDIR}/graphics/jpeg \
-		pnmmerge:${PORTSDIR}/graphics/netpbm
+		pnmscale:${PORTSDIR}/graphics/netpbm
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		thumbnail_index.1
