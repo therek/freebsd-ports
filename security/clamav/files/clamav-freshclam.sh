@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh,v 1.1 2004/02/03 06:46:21 glewis Exp $
+# $FreeBSD: ports/security/clamav/files/clamav-freshclam.sh,v 1.2 2004/05/26 10:15:19 pav Exp $
 #
 
 # PROVIDE: freshclam
@@ -28,7 +28,7 @@ required_files=%%PREFIX%%/etc/freshclam.conf
 # set defaults
 
 clamav_freshclam_enable=${clamav_freshclam_enable:-"NO"}
-clamav_freshclam_flags=${clamav_freshclam_flags:-"--daemon-notify=%%PREFIX%%/etc/clamav.conf"}
+clamav_freshclam_flags=${clamav_freshclam_flags:-"--pid=/var/run/clamav/freshclam.pid --daemon-notify=%%PREFIX%%/etc/clamav.conf"}
 
 load_rc_config $name
 
