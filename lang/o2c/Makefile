@@ -2,7 +2,7 @@
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.7 2000/04/12 06:19:36 obrien Exp $
+# $FreeBSD: ports/lang/o2c/Makefile,v 1.8 2000/10/08 10:21:52 asami Exp $
 
 PORTNAME=	o2c
 PORTVERSION=	1.16
@@ -12,8 +12,10 @@ MASTER_SITES=	ftp://ftp.uni-kl.de/pub/informatik/software/ \
 
 MAINTAINER=	ob@seicom.NET
 
-MAKE_ENV= 	MAKEOBJDIR=.
+# does not support 64-bit platforms
+ONLY_FOR_ARCHS=	i386
 
+MAKE_ENV= 	MAKEOBJDIR=.
 MAN1=	o2b.1 o2c.1 o2ef.1 o2whereis.1
 
 post-extract:
