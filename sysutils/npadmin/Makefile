@@ -2,23 +2,22 @@
 # Date created:		13 Nov 1998
 # Whom:			Dom Mitchell <dom@happygiraffe.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/npadmin/Makefile,v 1.5 2001/06/07 07:46:05 roam Exp $
 #
 
 PORTNAME=	npadmin
-PORTVERSION=	0.7
+PORTVERSION=	0.8.7
 CATEGORIES=	sysutils print
-MASTER_SITES=	ftp://ftp.penguincomputing.com/pub/prtools/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	dom@happygiraffe.net
-
-ALL_TARGET=	npadmin
 
 MAN1=		npadmin.1
 
 GNU_CONFIGURE=	yes
 
-pre-build:
-	${CP} ${FILESDIR}/getopt* ${WRKSRC}
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>
