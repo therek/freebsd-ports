@@ -2,11 +2,11 @@
 # Date created:		25 December 1998
 # Whom:			Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qiv/Makefile,v 1.9 2000/04/14 10:47:14 asami Exp $
+# $FreeBSD: ports/graphics/qiv/Makefile,v 1.10 2000/05/14 02:50:53 billf Exp $
 #
 
 PORTNAME=	qiv
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.klografx.de/software/files/
 EXTRACT_SUFX=	.tgz
