@@ -14,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.10 2002/04/18 17:46:42 obrien Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.11 2003/02/21 00:48:19 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -60,8 +60,7 @@ class Vars:
 # Check if the supplied patch refers to a port's directory.
 #
 def isportdir(path, soft = False):
-	REQ_FILES = ('Makefile', 'pkg-descr', 'pkg-plist', \
-      'distinfo')
+	REQ_FILES = ('Makefile', 'pkg-descr', 'distinfo')
 	if not os.path.isdir(path) and soft != True:
 		raise IOError(errno.ENOENT, path)
 		# Not reached #
