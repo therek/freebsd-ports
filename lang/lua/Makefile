@@ -2,7 +2,7 @@
 # Date created:				27 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD: ports/lang/lua/Makefile,v 1.11 2001/05/14 00:13:15 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lua
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://ftp.tecgraf.puc-rio.br/pub/lua/ \
 		ftp://ftp.gwdg.de/pub/languages/lua/
 
 MAINTAINER=	richard@homemail.com
+COMMENT=	Small, compilable scripting language providing easy access to C code
 
 MAN1=		luac.1
 WRKSRC=		${WRKDIR}/lua

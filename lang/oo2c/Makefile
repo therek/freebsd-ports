@@ -2,7 +2,7 @@
 # Date created:				December 17, 1999
 # Whom:					Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/oo2c/Makefile,v 1.4 2001/07/11 16:33:46 fenner Exp $
+# $FreeBSD$
 
 PORTNAME=	oo2c
 PORTVERSION=	1.5.2
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}_32-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} gc4.14.tar.gz
 
 MAINTAINER=	ob@breuninger.org
+COMMENT=	Optimizing Oberon-2 compiler of University of Kaiserslautern, Germany
 
 USE_LIBTOOL=	yes
 CONFIGURE_ENV+=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"

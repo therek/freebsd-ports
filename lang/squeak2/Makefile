@@ -2,7 +2,7 @@
 # Date created:        			4 March 1999
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak2/Makefile,v 1.20 2001/04/17 11:22:29 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	squeak
@@ -15,6 +15,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SQUEAK_SRC}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
+COMMENT=	Full Smalltalk 80 with portability to UNIX, Mac, and Windows
 
 NO_WRKSUBDIR=	yes
 USE_XLIB=	yes

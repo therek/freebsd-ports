@@ -2,7 +2,7 @@
 # Date created:				19 September 2000
 # Whom:					Huidae Cho <hdcho@geni.knu.ac.kr>
 #
-# $FreeBSD: ports/lang/crossgo32-f77/Makefile,v 1.2 2001/03/21 20:12:11 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crossgo32-f77
@@ -16,6 +16,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} g772952b.zip
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	hdcho@geni.cemtlo.com
+COMMENT=	G2c libraries and compatibility for DJGPP V2 crossgo32 crosscompiler
 
 BUILD_DEPENDS+=	unzip:${PORTSDIR}/archivers/unzip
 .if !defined(GNU_CPP)
