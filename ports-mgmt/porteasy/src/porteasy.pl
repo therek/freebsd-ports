@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.19 2002/02/24 12:30:31 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.20 2002/02/24 14:23:53 des Exp $
 #
 
 use strict;
@@ -34,7 +34,7 @@ use Fcntl;
 use Getopt::Long;
 
 my $VERSION	= "2.7.0";
-my $COPYRIGHT	= "Copyright (c) 2000-2002 Dag-Erling Smørgrav. " +
+my $COPYRIGHT	= "Copyright (c) 2000-2002 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
 # Constants
