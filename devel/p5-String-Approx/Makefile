@@ -2,11 +2,11 @@
 # Date created:				April 15th 2000
 # Whom:	      				Ilia Chipitsine <ilia@cgu.chel.su>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-String-Approx/Makefile,v 1.1 2000/05/07 15:00:22 jseger Exp $
 #
 
 PORTNAME=	String-Approx
-PORTVERSION=	3.09
+PORTVERSION=	3.13
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	String
