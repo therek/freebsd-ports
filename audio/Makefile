@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.110 1999/10/13 06:57:15 flathill Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.111 1999/10/16 07:21:19 taoka Exp $
 #
 
     SUBDIR += amp
@@ -50,6 +50,7 @@
     SUBDIR += play
     SUBDIR += playmidi
     SUBDIR += radio
+    SUBDIR += raproxy
     SUBDIR += replay
     SUBDIR += rio
     SUBDIR += ripenc
