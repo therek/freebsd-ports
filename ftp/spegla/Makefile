@@ -3,7 +3,7 @@
 # Date created:         Sun Apr 19 16:17:25 PDT 1998
 # Whom:                 Jordan Hubbard <jkh@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/spegla/Makefile,v 1.9 2000/04/12 05:31:22 mharo Exp $
+# $FreeBSD: ports/ftp/spegla/Makefile,v 1.10 2000/06/28 16:17:34 jkh Exp $
 #
 
 PORTNAME=	spegla
@@ -16,6 +16,11 @@ MAINTAINER=	jkh@FreeBSD.org
 
 MANCOMPRESSED=	yes
 MAN1=		spegla.1
+
+post-extract:
+.for file in engine.c regcomp.c regerror.c regexec.c regfree.c cclass.h cname.h regex.h regex2.h utils.h
+	@${CP} ${WRKSRC}/regex/${file} ${WRKSRC}
+.endfor
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/spegla
