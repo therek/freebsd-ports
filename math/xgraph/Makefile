@@ -2,11 +2,11 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/xgraph/Makefile,v 1.17 2000/08/03 14:28:31 sanpei Exp $
+# $FreeBSD: ports/math/xgraph/Makefile,v 1.18 2000/08/06 14:50:50 sanpei Exp $
 #
 
 PORTNAME=	xgraph
-PORTVERSION=	11.3.2
+PORTVERSION=	11.3.2.20000910
 CATEGORIES=	math print
 MASTER_SITES=	ftp://ftp.cs.utoronto.ca/pub/radford/
 DISTNAME=	xgraph-11
