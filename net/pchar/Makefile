@@ -3,13 +3,13 @@
 # Date created:			  Wed Nov 03, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/pchar/Makefile,v 1.9 2000/03/22 00:27:32 obrien Exp $
+# $FreeBSD: ports/net/pchar/Makefile,v 1.10 2000/04/09 18:13:03 cpiazza Exp $
 #
 
 PORTNAME=	pchar
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2
 CATEGORIES=	net ipv6
-MASTER_SITES=	http://www.ca.sandia.gov/~bmah/Software/pchar/
+MASTER_SITES=	http://www.employees.org/~bmah/Software/pchar/
 
 MAINTAINER=	obrien@FreeBSD.org
 
@@ -25,7 +25,7 @@ CONFIGURE_ARGS= --with-ipv6
 .if !defined(NOPORTDOCS)
 post-install:
 	@${MKDIR} ${PREFIX}/share/doc/pchar
-	cd ${WRKSRC} ; ${INSTALL_DATA} README FAQ ${PREFIX}/share/doc/pchar
+	cd ${WRKSRC} ; ${INSTALL_DATA} README CHANGES FAQ ${PREFIX}/share/doc/pchar
 .endif
 
 .include <bsd.port.post.mk>
