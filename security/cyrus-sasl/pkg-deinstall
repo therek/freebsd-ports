@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl/pkg-deinstall,v 1.4 2002/05/21 15:08:58 dwcjr Exp $
+#	$FreeBSD: ports/security/cyrus-sasl/pkg-deinstall,v 1.5 2002/05/24 02:01:13 dwcjr Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -38,7 +38,7 @@ delete_user() {
 
 sendmail_conf() {
 	if [ -f ${PKG_PREFIX}/lib/sasl/Sendmail.conf ]; then
-		echo "pwcheck_method: pwcheck" > ${PKG_PREFIX}/lib/sasl/Sendmail.conf.tmp
+		echo "pwcheck_method: %%PWCHECK_METHOD%%" > ${PKG_PREFIX}/lib/sasl/Sendmail.conf.tmp
 		if cmp -s ${PKG_PREFIX}/lib/sasl/Sendmail.conf ${PKG_PREFIX}/lib/sasl/Sendmail.conf.tmp; then
 			rm -f ${PKG_PREFIX}/lib/sasl/Sendmail.conf
 		fi

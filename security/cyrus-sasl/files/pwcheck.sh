@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.3 2002/01/20 19:23:17 dwcjr Exp $
+# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.4 2002/08/14 00:14:07 anders Exp $
 #
 
 action=$1
@@ -41,8 +41,7 @@ case "${sasl_pwcheck_enable}" in
 
 	    start)
 		if [ -x ${sasl_pwcheck_program} ] ; then
-		    ${sasl_pwcheck_program} &
-		    echo -n " pwcheck"
+		    ${sasl_pwcheck_program} && echo -n " pwcheck"
 		fi
 		;;
 
