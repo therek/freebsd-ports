@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/drweb/pkg-install,v 1.4 2002/05/17 09:14:17 ache Exp $
+# $FreeBSD: ports/security/drweb/pkg-install,v 1.5 2004/03/25 19:28:30 pav Exp $
 #
 
 if [ "$2" != "POST-INSTALL" ]; then
@@ -36,6 +36,7 @@ fi
 
 if ! grep -q "^!${USER}" /etc/syslog.conf; then
   echo "You may also add this lines to your /etc/syslog.conf:"
+  echo "!drwebd"
   echo "*.*             /var/log/drwebd.log"
   echo ""
 fi
