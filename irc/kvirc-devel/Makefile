@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.18 2001/01/07 17:49:46 will Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.19 2001/02/02 11:39:53 trevor Exp $
 #
 
 PORTNAME=	kvirc
@@ -34,7 +34,7 @@ CONFIGURE_ARGS=	--x-includes=$(X11BASE)/include \
 		--with-qt-library-dir=${X11BASE}/lib \
 		--without-kde-check \
 		--with-freebsd-pthread \
-		-with-qt-name=qt2
+		--with-qt-name=qt2
 
 CONFIGURE_ENV+=	SS_X_EXTRA_LIBS=-lxpg4
 
