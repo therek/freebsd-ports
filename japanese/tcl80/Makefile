@@ -2,11 +2,12 @@
 # Date created:		23 Jan 1998
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.15 2000/06/17 05:34:02 knu Exp $
+# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.16 2000/10/08 09:59:34 asami Exp $
 #
 
 PORTNAME=	tcl
 PORTVERSION=	8.0.5
+PORTREVISION=	1
 CATEGORIES=	japanese lang tcl80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl${VERSION:S/./_/}/
 DISTNAME=	${PORTNAME}${PORTVERSION}

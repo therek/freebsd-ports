@@ -2,11 +2,12 @@
 # Date created:		26 Dec 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk80/Makefile,v 1.19 2000/06/17 05:34:03 knu Exp $
+# $FreeBSD: ports/japanese/tk80/Makefile,v 1.20 2000/10/08 10:21:27 asami Exp $
 #
 
 PORTNAME=	tk
 PORTVERSION=	8.0.5
+PORTREVISION=	1
 CATEGORIES=	japanese x11-toolkits tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_0/
 DISTNAME=	${PORTNAME}${PORTVERSION}
