@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.379 2000/07/12 18:57:25 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.380 2000/07/13 16:17:09 kevlo Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -208,7 +208,7 @@
     SUBDIR += rwhois
     SUBDIR += samba
     SUBDIR += scotty
-    SUBDIR += scotty-current
+    SUBDIR += scotty3
     SUBDIR += sendfile
     SUBDIR += sharity-light
     SUBDIR += slirp
