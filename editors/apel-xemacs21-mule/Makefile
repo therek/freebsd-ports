@@ -2,7 +2,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.17 2000/04/14 06:20:16 asami Exp $
+# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.18 2000/05/10 16:04:28 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -18,8 +18,8 @@ EMACS_PACKAGESDIR=	${EMACS_LIBDIR}/site-packages
 # packages-subdirectories which this port requires
 EMACS_PACKAGES_SUBDIRS=	lisp pkginfo
 
-SCRIPTS_ENV+=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
-PLIST_SUB+=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
+SCRIPTS_ENV=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
+PLIST_SUB=	EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR}
 
 # how to install
 ALL_TARGET=	package
@@ -46,7 +46,7 @@ FORBIDDEN=	hang
 
 xemacs-package: install
 	@${RM} -f ${.CURDIR}/${XEMACS_PKG_TARBALL}
-	@(cd ${PREFIX}/${EMACS_PACKAGESDIR} ;\
+	@(cd ${LOCALBASE}/${EMACS_PACKAGESDIR} ;\
 	  ${TAR} -zcf ${.CURDIR}/${XEMACS_PKG_TARBALL} ${XEMACS_PKG_CONTENTS} ;\
 	)
 
