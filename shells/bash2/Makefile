@@ -3,11 +3,11 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.47 2001/01/16 17:32:23 sobomax Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.48 2001/02/07 14:51:11 obrien Exp $
 #
 
 PORTNAME=	bash
-PORTVERSION=	2.04
+PORTVERSION=	2.05
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cwru.edu/pub/bash/
