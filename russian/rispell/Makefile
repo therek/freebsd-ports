@@ -3,14 +3,13 @@
 # Date created:         16 Dec 1997
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/rispell/Makefile,v 1.6 1999/08/31 01:47:03 peter Exp $
 #
 
 DISTNAME=       rispell
 PKGNAME=        ru-ispell-1.0
 CATEGORIES=     textproc russian
-MASTER_SITES=   http://www.ispras.ru/~knizhnik/ \
-		ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
+MASTER_SITES=   http://www.ispras.ru/~knizhnik/
 
 MAINTAINER=     ache@FreeBSD.org
 
