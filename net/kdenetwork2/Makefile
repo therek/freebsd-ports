@@ -2,14 +2,14 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.48 2000/08/29 23:44:27 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.49 2000/08/30 03:50:04 will Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	20000829A
+PORTVERSION=	1.94
 CATEGORIES=	net news kde
-MASTER_SITES=	http://www.physics.purdue.edu/~will/
-MASTER_SITE_SUBDIR=	will
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -33,8 +33,5 @@ USE_GMAKE=	yes
 
 pre-configure:
 	${PERL} -pi -e "s:-lpthread:-pthread:g" ${WRKSRC}/knode/Makefile.in
-
-pre-install:
-	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>

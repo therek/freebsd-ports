@@ -2,11 +2,11 @@
 # Date created:				Sun May 14 2000 00:50:02
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde2/Makefile,v 1.35 2000/08/30 03:49:59 will Exp $
+# $FreeBSD: ports/x11/kde2/Makefile,v 1.36 2000/08/30 21:06:09 will Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	20000829A
+PORTVERSION=	1.94
 CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# none
@@ -19,7 +19,9 @@ RUN_DEPENDS=	konqueror:${PORTSDIR}/x11/kdebase2 \
 		kjumpingcube:${PORTSDIR}/games/kdegames2 \
 		kdf:${PORTSDIR}/misc/kdeutils2 \
 		kword:${PORTSDIR}/editors/koffice \
-		kppp:${PORTSDIR}/net/kdenetwork2
+		kppp:${PORTSDIR}/net/kdenetwork2 \
+		pixie:${PORTSDIR}/graphics/kdegraphics2 \
+		kaiman:${PORTSDIR}/audio/kdemultimedia2
 
 NO_BUILD=	yes
 

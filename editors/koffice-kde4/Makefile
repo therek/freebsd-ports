@@ -2,13 +2,14 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.6 2000/08/29 23:44:29 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.7 2000/09/12 10:07:45 sobomax Exp $
 #
 
 PORTNAME=	koffice
-PORTVERSION=	20000829A
+PORTVERSION=	1.94
 CATEGORIES=	editors kde
-MASTER_SITES=	http://www.physics.purdue.edu/~will/
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -29,8 +30,5 @@ CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \
 		CPPFLAGS="-I${LOCALBASE/include} -I${X11BASE}/include" \
 		LIBS="-Wl,-export-dyanmic -L${LOCALBASE}/lib -L${X11BASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
-
-pre-install:
-	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>

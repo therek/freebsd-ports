@@ -2,13 +2,14 @@
 # Date created:				14 May 2000 02:45:53
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.12 2000/07/29 02:44:53 will Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.13 2000/08/29 23:44:28 will Exp $
 #
 
 PORTNAME=	kdetoys
-PORTVERSION=	20000829A
+PORTVERSION=	1.94
 CATEGORIES=	x11-clocks kde
-MASTER_SITES=	http://www.physics.purdue.edu/~will/
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -27,8 +28,5 @@ CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" DO_NOT_COMPILE=mouse LIBQTFILE="libqt
 		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -lqt2 -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
-
-pre-install:
-	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>

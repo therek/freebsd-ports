@@ -2,13 +2,14 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.56 2000/08/29 23:44:26 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.57 2000/09/14 01:18:54 will Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION=	20000829A
-CATEGORIES=	x11
-MASTER_SITES=	http://www.physics.purdue.edu/~will/
+PORTVERSION=	1.94
+CATEGORIES=	x11-toolkits
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -51,8 +52,5 @@ post-install:
 .for LIB in artsc artsflow artsflow_idl kmid kmedia2_idl qtmcop soundserver_idl
 	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.0 ${PREFIX}/lib/lib${LIB}.so
 .endfor
-
-pre-install:
-	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>

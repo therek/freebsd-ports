@@ -2,13 +2,14 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.42 2000/07/19 17:50:44 asami Exp $
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.43 2000/08/30 03:50:05 will Exp $
 #
 
 PORTNAME=	kdeutils
-PORTVERSION=	20000829A
+PORTVERSION=	1.94
 CATEGORIES=	misc kde
-MASTER_SITES=	http://www.physics.purdue.edu/~will/
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 
 MAINTAINER=	will@FreeBSD.org
 
