@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.171 2000/06/22 11:09:13 nbm Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.172 2000/06/28 16:09:06 ade Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -64,6 +64,7 @@
     SUBDIR += o2c
     SUBDIR += objc
     SUBDIR += ocaml
+    SUBDIR += oo2c
     SUBDIR += otcl
     SUBDIR += p2c
     SUBDIR += p5-Error
