@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.407 2001/08/23 12:28:11 kris Exp $
+# $FreeBSD: ports/games/Makefile,v 1.408 2001/08/24 10:52:28 kris Exp $
 #
 
     SUBDIR += 0verkill
@@ -177,6 +177,7 @@
     SUBDIR += oneko
     SUBDIR += oneko-sakura
     SUBDIR += oonsoo
+    SUBDIR += pengpong
     SUBDIR += penguin-command
     SUBDIR += pentix
     SUBDIR += phalanx
