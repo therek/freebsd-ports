@@ -2,7 +2,7 @@
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gtkballs/Makefile,v 1.9 2000/04/14 06:53:12 mharo Exp $
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.10 2000/07/19 15:10:20 dannyboy Exp $
 #
 
 PORTNAME=	gtkballs
@@ -22,12 +22,13 @@ MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 MAN6=		gtkballs.6
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/gtkballs ${PREFIX}/bin
+	${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/gtkballs ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/gtkballs.6 ${PREFIX}/man/man6
 	@${MKDIR} ${PREFIX}/share/gtkballs
 	${INSTALL_DATA} ${WRKSRC}/gtkballs-data/*.xpm ${PREFIX}/share/gtkballs
 	${INSTALL_DATA} ${WRKSRC}/score ${PREFIX}/share/gtkballs/score
-	@${CHMOD} a+rw ${PREFIX}/share/gtkballs/score
+	@${CHMOD} g+rw ${PREFIX}/share/gtkballs/score
+	@${CHOWN} root:games ${PREFIX}/share/gtkballs/score
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/gtkballs
 .for file in README README.russian TODO
