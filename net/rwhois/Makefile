@@ -2,11 +2,11 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.16 2000/10/23 21:03:04 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rwhois
-PORTVERSION=	1.5.7
+PORTVERSION=	1.5.7.1
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.rwhois.net/ftp/
 DISTNAME=	${PORTNAME}d-${PORTVERSION}
