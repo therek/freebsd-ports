@@ -2,11 +2,11 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.29 2000/04/08 22:48:28 mharo Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.30 2000/05/29 04:05:05 steve Exp $
 #
 
 PORTNAME=	gnats
-PORTVERSION=	3.112.1
+PORTVERSION=	3.113
 CATEGORIES=	databases elisp
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/gnats/snapshots/
 
@@ -16,7 +16,6 @@ Y2K=		http://sourceware.cygnus.com/gnats/
 
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
-WRKSRC=	${WRKDIR}/3.112
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-lispdir=${PREFIX}/share/emacs/site-lisp \
 		--with-full-gnats \
