@@ -4,7 +4,7 @@
 # very likely to apply outside of KDE core modules.  Nonetheless, also
 # provide variables to remove one or more of these.
 #
-# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.7 2002/09/12 08:45:55 alane Exp $
+# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.8 2002/12/22 00:06:41 lioux Exp $
 
 CONFIGURE_ARGS?=
 
@@ -61,10 +61,8 @@ CONFIGURE_TARGET=
 CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
 .endif
 
-.if !defined(_NO_KDE_FINAL)
-.if defined(PARALLEL_PACKAGE_BUILD) || defined(WANT_KDE_FINAL)
+.if !defined(_NO_KDE_FINAL) && defined(WANT_KDE_FINAL)
 CONFIGURE_ARGS+=--enable-final
-.endif
 .endif
 
 .if !defined(_NO_KDE_NDEBUG)
