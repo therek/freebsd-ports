@@ -25,7 +25,7 @@
 .\" (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 .\" THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 .\"
-.\"	$FreeBSD: ports/textproc/cdiff/src/cdiff.1,v 1.2 2000/10/24 16:51:15 eivind Exp $
+.\"	$FreeBSD: ports/textproc/cdiff/src/cdiff.1,v 1.3 2000/11/20 13:16:07 eivind Exp $
 .\"
 .Dd October 24, 2000
 .Dt CDIFF 1
@@ -42,6 +42,7 @@ files and URLs, adds color codes, expands tabs to 8 spaces, and passes the
 results to
 .Xr less 1 .
 If used on a color terminal, it makes diffs much easier to read.
+There is also handling of "cvs annotate" in it.
 .Sh AUTHORS
 .Nm
 was written by
@@ -50,13 +51,14 @@ based on a sed line somebody passed around.  The code is (much) smaller than
 this man page.
 .Sh SEE ALSO
 .Xr diff 1 ,
-.Xr less 1 .
+.Xr less 1 ,
+.Xr cvs 1 .
 .Sh BUGS
 .Nm
 assumes standard ANSI color escape sequences (as used by xterm and most other
 commonly used terminals), rather than using
 .Xr curses 3 .
-
+.Pp
 .Nm
 should really be a large and complex C program based on
 .Xr less 1

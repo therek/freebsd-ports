@@ -2,13 +2,13 @@
 # Date created:					September 20th 2000
 # Whom:						eivind
 #
-# $FreeBSD: ports/textproc/cdiff/Makefile,v 1.3 2000/11/20 13:16:07 eivind Exp $
+# $FreeBSD$
 #
 # This port is self contained in the src directory.
 #
 
 PORTNAME=	cdiff
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	textproc
 MASTER_SITES=	# none
 DISTFILES=	# none
