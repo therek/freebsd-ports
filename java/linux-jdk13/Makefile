@@ -2,7 +2,7 @@
 # Date created:				06 December 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/java/linux-jdk13/Makefile,v 1.2 2000/12/11 03:34:43 kevlo Exp $
+# $FreeBSD: ports/java/linux-jdk13/Makefile,v 1.3 2001/03/05 03:03:37 kevlo Exp $
 #
 
 PORTNAME=	jdk
@@ -14,7 +14,8 @@ DISTFILES=	j2sdk-1_3_0_02-linux.bin
 
 MAINTAINER=	kevlo@FreeBSD.org
 
-RUN_DEPENDS=	${LINUXBASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	${LINUXBASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
+		javavm:${PORTSDIR}/java/javavmwrapper
 
 JDK_VERSION=	1.3.0
 
@@ -51,5 +52,6 @@ post-patch:
 do-install:
 	${MKDIR} ${PREFIX}/${PKGNAMEPREFIX}jdk${JDK_VERSION}
 	${TAR} -C ${WRKSRC} -cf- . | ${TAR} -C ${PREFIX}/${PKGNAMEPREFIX}jdk${JDK_VERSION} -xpf-
+	${LOCALBASE}/bin/registervm "${PREFIX}/linux-jdk${JDK_VERSION}/bin/java # Linux-JDK${JDK_VERSION}"
 
 .include <bsd.port.post.mk>
