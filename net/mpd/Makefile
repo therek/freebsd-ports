@@ -2,7 +2,7 @@
 # Date created:				25 Feb 1999
 # Whom:					Archie Cobbs
 #
-# $FreeBSD: ports/net/mpd/Makefile,v 1.17 2000/05/11 03:26:56 archie Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpd
@@ -17,5 +17,6 @@ MAINTAINER=	archie@freebsd.org
 MTREE_FILE=	${FILESDIR}/mpd.mtree
 MAN8=		mpd.8
 MANCOMPRESSED=	yes
+NO_LATEST_LINK=
 
 .include <bsd.port.mk>
