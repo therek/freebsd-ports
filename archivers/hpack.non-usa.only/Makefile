@@ -2,7 +2,7 @@
 # Date created:         7 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.16 2001/04/07 01:42:17 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hpack
@@ -18,10 +18,11 @@ MAKEFILE=	makefile
 ALL_TARGET=	freebsd
 INSTALL_TARGET= freebsd.install
 MAN1=		hpack.1
+USE_REINPLACE=	yes
 
 post-patch:
 .for f in language/language.c cli.c
-	@${PERL} -pi -e 's,%%PREFIX%%,${PREFIX},g' ${WRKSRC}/${f}
+	@${REINPLACE_CMD} -e 's,%%PREFIX%%,${PREFIX},g' ${WRKSRC}/${f}
 .endfor
 
 post-install:

@@ -2,7 +2,7 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/mail/procmail/Makefile,v 1.39 2001/06/30 08:00:58 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	procmail
@@ -34,6 +34,8 @@ MAINTAINER=	ache@FreeBSD.org
 # Global variables
 #
 
+USE_REINPLACE=	yes
+
 # It asks for list of directories to do test for file locking
 # (defaults to /tmp and ".", so return should suffice in most cases).
 .if !defined(BATCH) # handled in patch-aa
@@ -60,7 +62,7 @@ SAMPLE_FILES=	1procmailrc 1rmail 2procmailrc 2rmail 3procmailrc 3rmail \
 post-configure: patch-config
 
 patch-config:
-	@${PERL} -pi.fbsd -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/config.h
+	@${REINPLACE_CMD} -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/config.h
 
 # Post-install
 #
