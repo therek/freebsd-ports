@@ -2,11 +2,11 @@
 # Date created:		Sep 30, 1998
 # Whom:			kuriyama@FreeBSD.org
 #
-# $FreeBSD: ports/security/gnupg/Makefile,v 1.28 2001/01/18 09:46:01 kuriyama Exp $
+# $FreeBSD: ports/security/gnupg/Makefile,v 1.29 2001/04/30 03:22:55 kuriyama Exp $
 #
 
 PORTNAME=	gnupg
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/%SUBDIR%/ \
 		ftp://pgp.iijlab.net/pub/%SUBDIR%/ \
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	gnupg
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RESTRICTED=	"Crypto; export-controlled"
+#RESTRICTED=	"Crypto; export-controlled"
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--with-included-gettext
 MAN1=		gpg.1 gpgv.1
