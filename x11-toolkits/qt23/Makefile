@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.67 2000/12/18 19:19:58 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.68 2000/12/22 06:01:12 will Exp $
 #
 
 PORTNAME=	qt
@@ -34,7 +34,7 @@ USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
-		-system-libmng \
+		-system-libmng -thread \
 		-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CONFIGURE_ENV=	${YES} yes | QTDIR=${WRKSRC}
 MAKE_ARGS+=	MAKE="${GMAKE} -j2"
@@ -72,7 +72,7 @@ pre-configure:
 		-e "s,-pipe -O2,${CXXFLAGS},g" ${CONFIG}.new > ${CONFIG}
 .if exists(${X11BASE}/lib/libXft.so) && !defined(NO_AA)
 	@${CP} ${CONFIG} ${CONFIG}.new
-	${SED} -e "s,= -lXext,= -lXft -lXext,g" -e "s,= -I${X11BASE}/include,= -DQT_XFT -I${X11BASE}/include,g" \
+	${SED} -e "s,= -lXext,= -lXft -lXext,g" -e "s,QT= -I,QT= -DQT_XFT -I,g" \
 		${CONFIG}.new > ${CONFIG}
 .endif
 	${CP} ${WRKSRC}/src/Makefile.in ${WRKSRC}/src/Makefile.in.new
