@@ -2,11 +2,11 @@
 # Date created:				13 Sep 2000
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/audio/cdplayer.app/Makefile,v 1.1 2000/09/14 17:43:12 sobomax Exp $
+# $FreeBSD: ports/audio/cdplayer.app/Makefile,v 1.2 2001/02/04 21:12:42 olgeni Exp $
 #
 
 PORTNAME=	cdplayer.app
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	audio windowmaker
 MASTER_SITES=	http://planeta.terra.com.br/informatica/oldnapalm/cdplayer/
 DISTNAME=	CDPlayer.app-${PORTVERSION}
