@@ -2,11 +2,11 @@
 # Date created:		13 October 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/neon/Makefile,v 1.4 2001/03/17 09:35:54 olgeni Exp $
+# $FreeBSD: ports/www/neon/Makefile,v 1.5 2001/06/05 20:50:03 olgeni Exp $
 #
 
 PORTNAME=	neon
-PORTVERSION=	0.15.0
+PORTVERSION=	0.15.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/neon/
 
