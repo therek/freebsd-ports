@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.102 1999/09/08 22:32:55 asami Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.103 1999/09/09 09:41:41 dburr Exp $
 #
 
     SUBDIR += amp
@@ -65,6 +65,7 @@
     SUBDIR += splaytk
     SUBDIR += tclmidi
     SUBDIR += timidity
+    SUBDIR += timidity++
     SUBDIR += tosha
     SUBDIR += tracker
     SUBDIR += waveplay
