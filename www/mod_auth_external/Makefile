@@ -2,11 +2,11 @@
 # Date created:				14 May 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_auth_external/Makefile,v 1.1 2001/05/20 03:16:08 will Exp $
 #
 
 PORTNAME=	mod_auth_external
-PORTVERSION=	2.1.11
+PORTVERSION=	2.1.12
 CATEGORIES=	www
 MASTER_SITES=	http://www.wwnet.net/~janc/software/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
