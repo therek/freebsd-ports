@@ -2,15 +2,15 @@
 # Date created:		15 March 1997
 # Whom:			FUJIMOTO Kensaku <fujimoto@oscar.elec.waseda.ac.jp>
 #
-# $FreeBSD: ports/devel/automake/Makefile,v 1.14 2000/07/15 19:07:44 ade Exp $
+# $FreeBSD: ports/devel/automake/Makefile,v 1.15 2001/07/20 18:00:50 demon Exp $
 #
 
 PORTNAME=	automake
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	automake
-DISTNAME=	${PORTNAME}-1.4-p4
+DISTNAME=	${PORTNAME}-1.4-p5
 
 MAINTAINER=	fujimoto@oscar.elec.waseda.ac.jp
 
