@@ -2,11 +2,11 @@
 # Date created:		2 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/rudiments/Makefile,v 1.1 2001/07/02 08:14:09 knu Exp $
 #
 
 PORTNAME=	rudiments
-PORTVERSION=	0.20
+PORTVERSION=	0.21
 CATEGORIES=	devel
 MASTER_SITES=	http://www.firstworks.com/downloads/rudiments/
 
