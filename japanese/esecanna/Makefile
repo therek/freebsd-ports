@@ -1,15 +1,16 @@
 # New ports collection Makefile for: esecanna for VJE-Delta 3.0
-# Version required:	0.1.4
+# Version required:	0.1.5
 # Date created:		29 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-vje30/Makefile,v 1.3 2000/02/03 15:50:05 flathill Exp $
+# $FreeBSD: ports/japanese/esecanna-vje30/Makefile,v 1.4 2000/02/12 16:15:42 flathill Exp $
 #
 
-DISTNAME=	esecanna-vje30_DR-0.1.4
-PKGNAME=	ja-esecanna-vje30-0.1.4
+DISTNAME=	esecanna-vje30_DR-0.1.5
+PKGNAME=	ja-esecanna-vje30-0.1.5
 CATEGORIES=	japanese
-MASTER_SITES=	http://plaza.harmonix.ne.jp/~redstar/
+MASTER_SITES=	http://www.idaemons.org/ports/distfiles/ \
+		http://plaza.harmonix.ne.jp/~redstar/
 
 MAINTAINER=	knu@idaemons.org
 
@@ -39,7 +40,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/4DEVELOPERS.jp ${WRKSRC}/README.jp ${DOCDIR}
 .endif
 
-post-install: 
-	@${CAT} ${PKGDIR}/MESSAGE 
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
