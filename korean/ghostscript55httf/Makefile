@@ -2,11 +2,12 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.22 2001/05/22 18:19:43 sobomax Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.23 2001/05/31 22:22:51 ade Exp $
 #
 
 PORTNAME=	ghostscript
 PORTVERSION=	5.50
+PORTREVISION=	1
 PKGNAMESUFFIX=	-httf
 CATEGORIES=	korean print
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
@@ -24,7 +25,7 @@ MAINTAINER=	cjh@FreeBSD.org
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract \
 		${NONEXISTENT}:${PORTSDIR}/graphics/png:extract \
 		unzip:${PORTSDIR}/archivers/unzip
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	$(X11BASE)/lib/X11/fonts/TrueType/gulim.ttf:${PORTSDIR}/korean/baekmukfonts-ttf
 
 USE_XLIB=	yes

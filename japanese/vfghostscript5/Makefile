@@ -2,12 +2,12 @@
 # Date created:		26 Aug 1997
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vfghostscript5/Makefile,v 1.39 2000/10/26 21:34:22 taoka Exp $
+# $FreeBSD: ports/japanese/vfghostscript5/Makefile,v 1.40 2000/12/19 14:54:36 taoka Exp $
 #
 
 PORTNAME=	vfghostscript
 PORTVERSION=	5.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese print
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cs.wisc.edu/ghost/gnu/gs510/ \
@@ -32,7 +32,7 @@ EXTRACT_ONLY=	${GS_SOURCES}
 MAINTAINER=	mita@jp.FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract
-LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 		VFlib2.24:${PORTSDIR}/japanese/vflib
 
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}

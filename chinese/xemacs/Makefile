@@ -2,11 +2,12 @@
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.8 2000/11/06 18:15:12 keith Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.9 2001/03/01 15:29:29 keith Exp $
 #
 
 PORTNAME=	xemacs
 PORTVERSION=	20.4
+PORTREVISION=	1
 CATEGORIES=	chinese editors
 MASTER_SITES=	${MASTER_SITE_XEMACS}
 MASTER_SITES+=	ftp://ftp.tnt.uni-hannover.de/pub/editors/xemacs/20.4/ \
@@ -17,7 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}-mule${EXTRACT_SUFX}
 MAINTAINER=	keith@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.4:${PORTSDIR}/graphics/png
+		png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	xcin2.5:${PORTSDIR}/chinese/xcin25 \
 		${X11BASE}/lib/X11/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/arphicttf
 
