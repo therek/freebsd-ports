@@ -2,25 +2,24 @@
 # Date created:		09 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.3 2000/04/09 19:07:28 cpiazza Exp $
+# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.4 2000/04/22 10:11:59 mharo Exp $
 #
 
 PORTNAME=	daemontools
-PORTVERSION=	0.53
+PORTVERSION=	0.70
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/
+MASTER_SITES=	http://cr.yp.to/daemontools/
 
-MAINTAINER=	dom@myrddin.demon.co.uk
+MAINTAINER=	nbm@FreeBSD.org
 
-NO_PACKAGE=	Unsure of djb's license
+NO_PACKAGE=	Unsure of djb\'s license
 
-ALL_TARGET=	it man
-INSTALL_TARGET=	setup
+ALL_TARGET=	it
+INSTALL_TARGET=	setup check
 
-SCRIPTS_ENV=	BINOWN="${BINOWN}" BINGRP="${BINGRP}" BINMODE="${BINMODE}" \
-		MANMODE="${MANMODE}" CFLAGS="${CFLAGS}"
-
-MAN1=		accustamp.1 cyclog.1 errorsto.1 fifo.1 setuser.1 supervise.1 \
-		svc.1 svstat.1 tailocal.1 testfilelock.1 usually.1
+post-patch:
+	@echo "${CC} ${CFLAGS}" > ${WRKSRC}/conf-cc
+	@echo "${CC} -s" > ${WRKSRC}/conf-ld
+	@echo "${PREFIX}" > ${WRKSRC}/conf-home
 
 .include <bsd.port.mk>
