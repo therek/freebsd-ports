@@ -3,7 +3,7 @@
 # Date created:                         02 September 1999
 # Whom:                                 se
 #
-# $FreeBSD: ports/security/keynote/Makefile,v 1.1.1.1 1999/09/18 09:05:27 se Exp $
+# $FreeBSD: ports/security/keynote/Makefile,v 1.2 1999/11/07 22:25:34 dirk Exp $
 #
 
 DISTNAME=	keynote-2-beta4
@@ -13,9 +13,7 @@ MASTER_SITES=	http://www.cis.upenn.edu/~angelos/Code/
 
 MAINTAINER=	se@FreeBSD.org
 
-BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
-		ssl.1:${PORTSDIR}/security/openssl
+USE_OPENSSL=   RSA
 
 WRKSRC=		${WRKDIR}/KeyNote-2-beta4
 
