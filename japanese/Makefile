@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.352 2001/04/09 09:46:38 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.353 2001/04/09 09:55:44 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -169,6 +169,7 @@
     SUBDIR += mhonarc
     SUBDIR += micq
     SUBDIR += migemo-emacs20
+    SUBDIR += migemo-xemacs21-mule
     SUBDIR += mimekit
     SUBDIR += mnews
     SUBDIR += mnews-gnspool
