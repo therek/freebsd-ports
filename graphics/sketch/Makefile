@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sketch
-# Version required:	0.6.3
+# Version required:	0.6.4
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.12 2000/01/03 23:05:39 jedgar Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.13 2000/01/06 02:59:13 jedgar Exp $
 #
 
-DISTNAME=	sketch-0.6.3
+DISTNAME=	sketch-0.6.4
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.sourceforge.net/sketch/
 
@@ -31,7 +31,7 @@ do-build:
 do-install:
 	@${MKDIR} ${SKETCHDIR}
 .for dir in Filter Pax Plugins Resources Script Sketch
-	(cd ${WRKSRC}; ${TAR} cf - --exclude-from=${FILESDIR}/excludelist ${dir}) | \
+	(cd ${WRKSRC}; ${TAR} -cf - -X ${FILESDIR}/excludelist ${dir}) | \
 	    (cd ${SKETCHDIR}; ${TAR} xf -)
 .endfor
 	(cd ${WRKSRC}; ${INSTALL_SCRIPT} finishinst.py sk2ps.py sketch.py ${SKETCHDIR})
