@@ -2,15 +2,15 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/prc-tools-binutils/Makefile,v 1.5 2001/01/19 07:37:15 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prc-tools-binutils
 PORTVERSION=	2.0
 CATEGORIES=	palm
-MASTER_SITES=	http://www.palmos.com/dev/tech/tools/gcc/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		${MASTER_SITE_SOURCEWARE}
-MASTER_SITE_SUBDIR=	binutils/old-releases
+MASTER_SITE_SUBDIR=	prc-tools binutils/old-releases
 DISTNAME=	prc-tools-${PORTVERSION}
 DISTFILES=	${DISTNAME}.tar.gz binutils-2.9.1.tar.bz2
 

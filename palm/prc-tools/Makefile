@@ -2,13 +2,14 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/prc-tools/Makefile,v 1.18 2000/04/21 07:52:06 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prc-tools
 PORTVERSION=	2.0
 CATEGORIES=	palm
-MASTER_SITES=	http://www.palmos.com/dev/tech/tools/gcc/dist/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	prc-tools
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
