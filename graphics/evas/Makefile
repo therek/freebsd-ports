@@ -2,7 +2,7 @@
 # Date created:		24 Oct 2000
 # Whom:			Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/evas/Makefile,v 1.4 2001/01/25 01:55:33 vanilla Exp $
+# $FreeBSD: ports/graphics/evas/Makefile,v 1.5 2001/03/07 22:31:05 olgeni Exp $
 #
 
 PORTNAME=	evas
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	enlightenment
 
 MAINTAINER=	ishmael27@home.com
 
-LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2-tmp
+LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2
 
 USE_X_PREFIX=	yes
 USE_FREETYPE=	yes

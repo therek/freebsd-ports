@@ -2,7 +2,7 @@
 # Date created:				12 Nov 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/giblib/Makefile,v 1.1 2000/12/19 08:42:44 will Exp $
+# $FreeBSD: ports/graphics/giblib/Makefile,v 1.2 2000/12/19 12:01:31 will Exp $
 #
 
 PORTNAME=	giblib
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
 MAINTAINER=	ishmael27@home.com
 
-LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2-tmp
+LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2
 
 USE_LIBTOOL=	yes
 USE_X_PREFIX=	yes
