@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.645 2001/09/27 14:11:41 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.646 2001/10/01 13:18:49 phantom Exp $
 #
 
     SUBDIR += ElectricFence
@@ -36,6 +36,7 @@
     SUBDIR += atk
     SUBDIR += atlas
     SUBDIR += autoconf
+    SUBDIR += autodia
     SUBDIR += autogen
     SUBDIR += automake
     SUBDIR += avltree
