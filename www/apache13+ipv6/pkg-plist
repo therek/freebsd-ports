@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache13+ipv6/pkg-plist,v 1.17 2003/09/25 21:29:03 sumikawa Exp $
+@comment $FreeBSD: ports/www/apache13+ipv6/pkg-plist,v 1.18 2003/10/29 11:36:44 sumikawa Exp $
 bin/checkgid
 bin/dbmmanage
 bin/htdigest
@@ -668,4 +668,3 @@ www/icons/world2.png
 @dirrm www/icons/small
 @dirrm www/icons
 @dirrm www/proxy
-@dirrm www

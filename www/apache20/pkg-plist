@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.61 2004/05/18 13:43:19 clement Exp $
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.62 2004/06/05 11:14:18 clement Exp $
 @unexec if cmp -s %D/etc/apache2/highperformance.conf %D/etc/apache2/highperformance-std.conf; then rm -f %D/etc/apache2/highperformance.conf; fi
 etc/apache2/highperformance-std.conf
 @exec [ -f %B/highperformance.conf ] || cp %B/%f %B/highperformance.conf
@@ -1240,7 +1240,6 @@ share/apache2/build/special.mk
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.de
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.ko
 %%PORTDOCS%%%%DOCSDIR%%/vhosts/name-based.xml.meta
-@exec mkdir -p %D/www
 %%CGI%%@unexec if [ -L %D/www/cgi-bin ]; then rm -f %D/www/cgi-bin; fi
 %%CGI%%@exec [ ! -d %D/www/cgi-bin ] && ln -fs %D/www/cgi-bin-dist %D/www/cgi-bin
 %%CGI%%www/cgi-bin-dist/printenv
@@ -1538,7 +1537,6 @@ share/apache2/build/special.mk
 %%ERROR%%@dirrm www/error-dist
 %%WWWDATA%%@dirrm www/data-dist
 %%CGI%%@dirrm www/cgi-bin-dist
-@unexec rmdir %D/www 2> /dev/null || true
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/vhosts
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/style/zip
 %%PORTDOCS%%@dirrm %%DOCSDIR%%/style/xsl/util
