@@ -2,7 +2,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/togl/Makefile,v 1.3 2000/03/20 23:25:13 jseger Exp $
+# $FreeBSD: ports/graphics/togl/Makefile,v 1.4 2000/04/14 10:47:31 asami Exp $
 #
 
 PORTNAME=	togl
@@ -27,6 +27,8 @@ TOGL_INSTDIR=	${PREFIX}/lib/tk8.2/${DISTNAME}
 do-install:
 	${MKDIR} ${TOGL_INSTDIR}
 	${INSTALL_DATA} ${WRKSRC}/libtogl.so.1.3 ${TOGL_INSTDIR}/Togl.so
+	${INSTALL_DATA} ${WRKSRC}/togl.h ${TOGL_INSTDIR}
+	${INSTALL_DATA} ${WRKSRC}/togl.o ${TOGL_INSTDIR}
 	${ECHO} 'package ifneeded Togl 1.5 [list load [file join $$dir Togl.so]]'\
 	  > ${PREFIX}/lib/tk8.2/${DISTNAME}/pkgIndex.tcl
 
