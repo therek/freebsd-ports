@@ -2,7 +2,7 @@
 # Date created:         08 Jan 2000
 # Whom:                 Boris Popov <bp@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nut/Makefile,v 1.7 2000/07/18 04:56:43 bp Exp $
+# $FreeBSD: ports/sysutils/nut/Makefile,v 1.8 2000/08/08 03:15:52 steve Exp $
 #
 
 PORTNAME=	nut
@@ -39,12 +39,12 @@ pre-fetch:
 .endif
 
 pre-install:
-	@cp ${PKGDIR}/PLIST ${WRKDIR}/PLIST.DYN
+	@cp ${PKGDIR}/pkg-plist ${WRKDIR}/PLIST.DYN
 .if !defined(NOPORSDOCS)
-	@cat ${PKGDIR}/PLIST.DOC >> ${WRKDIR}/PLIST.DYN
+	@cat ${PKGDIR}/pkg-plist.doc >> ${WRKDIR}/PLIST.DYN
 .endif
 .if defined(CGI)
-	@cat ${PKGDIR}/PLIST.CGI >> ${WRKDIR}/PLIST.DYN
+	@cat ${PKGDIR}/pkg-plist.cgi >> ${WRKDIR}/PLIST.DYN
 .endif
 
 post-install:
