@@ -2,7 +2,7 @@
 # Date created:		3 Apr 1999
 # Whom:			Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/latex2html/Makefile,v 1.8 2000/07/03 13:28:04 sada Exp $
 #
 # Default image format is PNG.
 # If you prefer GIF to PNG, define WITH_GIF (`make -DWITH_GIF`).
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.topstudio.co.jp/~kmuto/debian/private/dists/unstable/co
 DISTNAME=	jlatex2html_${VERSION}+${JP_VERSION}.orig
 
 PATCH_SITES=	http://www.topstudio.co.jp/~kmuto/software/latex2html/patch/99-1/
-PATCHFILES= jlatex2html-${VERSION}+${JP_VERSION}.dif.gz
+PATCHFILES=	jlatex2html-${VERSION}+${JP_VERSION}.dif.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ixtl@utmc.or.jp
@@ -22,11 +22,8 @@ MAINTAINER=	ixtl@utmc.or.jp
 RUN_DEPENDS=	platex:${PORTSDIR}/japanese/platex-euc \
 		dvips:${PORTSDIR}/japanese/dvipsk-vflib \
 		gs:${PORTSDIR}/japanese/vfghostscript55 \
-		anytopnm:${PORTSDIR}/graphics/netpbm
-
-.ifndef WITH_GIF
-RUN_DEPENDS+=	${X11BASE}/bin/pnmtopng:${PORTSDIR}/graphics/pnmtopng
-.endif
+		anytopnm:${PORTSDIR}/graphics/netpbm \
+		nkf:${PORTSDIR}/japanese/nkf
 
 VERSION=	99.1
 JP_VERSION=	3.01
