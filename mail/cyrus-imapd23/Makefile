@@ -2,12 +2,12 @@
 # Date created:					Jan 4th 2001
 # Whom:						ume@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.46 2001/04/28 16:43:09 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.47 2001/05/05 21:44:40 ume Exp $
 #
 
 PORTNAME=	cyrus-imapd
 PORTVERSION= 	2.0.13
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/
