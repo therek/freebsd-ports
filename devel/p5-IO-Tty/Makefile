@@ -2,11 +2,11 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-IO-Tty/Makefile,v 1.2 2000/03/22 01:59:01 will Exp $
+# $FreeBSD: ports/devel/p5-IO-Tty/Makefile,v 1.3 2000/04/11 21:29:39 mharo Exp $
 #
 
 PORTNAME=	IO-Tty
-PORTVERSION=	0.02
+PORTVERSION=	0.03
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO

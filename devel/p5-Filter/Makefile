@@ -2,11 +2,11 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.6 1999/08/31 06:42:12 mharo Exp $
+# $FreeBSD: ports/devel/p5-Filter/Makefile,v 1.7 2000/04/11 21:29:36 mharo Exp $
 #
 
 PORTNAME=	Filter
-PORTVERSION=	1.14
+PORTVERSION=	1.18
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Filter
@@ -18,7 +18,8 @@ USE_PERL5=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Filter::Util::Call.3 Filter::Util::Exec.3 Filter::cpp.3 \
-		Filter::decrypt.3 Filter::exec.3 Filter::sh.3 Filter::tee.3
+		Filter::decrypt.3 Filter::exec.3 Filter::sh.3 Filter::tee.3 \
+		perlfilter.3
 
 do-configure:
 		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL

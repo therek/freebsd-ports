@@ -2,15 +2,15 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.26 2000/02/17 15:41:49 jedgar Exp $
+# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.27 2000/04/08 22:48:46 mharo Exp $
 #
 
 PORTNAME=	p5-Mysql-modules
-PORTVERSION=	1.2210
+PORTVERSION=	1.2213
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
-DISTNAME=	Msql-Mysql-modules-1.2210
+DISTNAME=	Msql-Mysql-modules-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
 

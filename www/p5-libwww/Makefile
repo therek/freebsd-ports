@@ -2,15 +2,15 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.38 2000/03/20 21:45:43 mharo Exp $
+# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.39 2000/04/10 00:06:40 cpiazza Exp $
 #
 
 PORTNAME=	p5-libwww
-PORTVERSION=	5.47
+PORTVERSION=	5.48
 CATEGORIES=     www perl5 devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     LWP
-DISTNAME=	libwww-perl-5.47
+DISTNAME=	libwww-perl-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 
