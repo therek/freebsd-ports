@@ -2,11 +2,11 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-uri/Makefile,v 1.2 2000/08/15 14:22:32 knu Exp $
+# $FreeBSD: ports/net/ruby-uri/Makefile,v 1.3 2000/08/16 12:21:22 knu Exp $
 #
 
 PORTNAME=	uri
-PORTVERSION=	3.54
+PORTVERSION=	4.22
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www02.so-net.ne.jp/%7Egreentea/ruby/uri/
 PKGNAMEPREFIX=	ruby-
