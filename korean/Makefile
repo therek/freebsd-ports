@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.46 2000/06/25 14:16:34 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.47 2000/06/27 15:49:25 will Exp $
 #
 
     SUBDIR += Wnn
@@ -27,9 +27,13 @@
     SUBDIR += helvis
     SUBDIR += hlatex-wansungstd
     SUBDIR += hlatexfonts-ocf
-    SUBDIR += hlatexpsfonts-wansungstd
+    SUBDIR += hlatexp
+    SUBDIR += hlatexp-pkfonts300
+    SUBDIR += hlatexp-pkfonts600
+    SUBDIR += hlatexp-pkfonts1200
     SUBDIR += hmconv
     SUBDIR += hpscat
+    SUBDIR += htexp
     SUBDIR += johabfonts
     SUBDIR += kaistfonts
     SUBDIR += linux-netscape47-communicator
