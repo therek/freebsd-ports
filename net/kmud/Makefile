@@ -2,15 +2,15 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/kmud/Makefile,v 1.9 2001/04/03 08:14:22 will Exp $
 #
 
 PORTNAME=	kmud
-PORTVERSION=	0.5
+PORTVERSION=	1.0
 CATEGORIES=	net
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.kmud.de/pub/kmud/
-MASTER_SITE_SUBDIR=	games/muds
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
