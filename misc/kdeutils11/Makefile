@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.39 2000/05/17 11:37:40 will Exp $
+# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.40 2000/10/23 15:24:07 imura Exp $
 #
 
 PORTNAME=	kdeutils
@@ -23,8 +23,16 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-extra-includes=$(PREFIX)/include
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
+CONFIGURE_ARGS=	--with-extra-includes=$(PREFIX)/include \
+		--with-qt-includes=${QTDIR}/include/X11/qt
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
 USE_GMAKE=	yes
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>

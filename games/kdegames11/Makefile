@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/games/kdegames11/Makefile,v 1.39 2000/05/17 11:37:38 will Exp $
+# $FreeBSD: ports/games/kdegames11/Makefile,v 1.40 2000/10/23 15:23:49 imura Exp $
 #
 
 PORTNAME=	kdegames
@@ -22,6 +22,16 @@ USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
+CONFIGURE_ARGS=	"--with-qt-includes=${QTDIR}/include/X11/qt" \
+		"--with-extra-includes=${LOCALBASE}/include" \
+		"--with-extra-libs=${LOCALBASE}/lib"
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>

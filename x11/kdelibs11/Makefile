@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.47 2000/07/04 07:13:07 sobomax Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.48 2000/10/23 15:23:59 imura Exp $
 #
 
 PORTNAME=	kdelibs
@@ -34,9 +34,17 @@ INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFLAGS=
 CONFIGURE_ARGS=	--enable-shared --x-includes="$(X11BASE)/include" \
-		--x-libraries="$(X11BASE)/lib" --disable-static
+		--x-libraries="$(X11BASE)/lib" --disable-static \
+		--with-qt-includes=${QTDIR}/include/X11/qt
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
+		LDFLAGS="-L${LOCALBASE}/lib" \
+		QTDIR=${QTDIR}
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 # generate KDE style mtree
 MTREE_CMD=	${CAT} ${MTREE_FILE} ${FILESDIR}/kde.dist | /usr/sbin/mtree

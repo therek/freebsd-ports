@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.43 2000/05/17 11:37:40 will Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.44 2000/10/23 15:24:04 imura Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -29,8 +29,18 @@ LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
+CONFIGURE_ARGS=	"--with-qt-includes=${QTDIR}/include/X11/qt" \
+		"--with-extra-includes=${LOCALBASE}/include" \
+		"--with-extra-libs=${LOCALBASE}/lib"
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
 USE_GMAKE=	yes
 CFLAGS+=	"-I${PREFIX}/include"
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.38 2000/02/24 07:00:34 asami Exp $
+# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.39 2000/04/08 21:23:45 mharo Exp $
 #
 
 PORTNAME=	kdemultimedia
@@ -19,9 +19,19 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 USE_BZIP2=	yes
 USE_QT=		yes
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)"
+CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
+		"--with-qt-includes=${QTDIR}/include/X11/qt" \
+		"--with-extra-includes=${LOCALBASE}/include" \
+		"--with-extra-libs=${LOCALBASE}/lib"
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
+		INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
 USE_GMAKE=	yes
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>

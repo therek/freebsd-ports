@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.34 2000/04/14 10:46:28 asami Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.35 2000/05/17 11:37:39 will Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -20,10 +20,20 @@ LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 USE_BZIP2=	yes
 USE_QT=		yes
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	"--prefix=$(PREFIX)"
+CONFIGURE_ARGS=	"--prefix=$(PREFIX)" \
+		"--with-qt-includes=${QTDIR}/include/X11/qt" \
+		"--with-extra-includes=${LOCALBASE}/include" \
+		"--with-extra-libs=${LOCALBASE}/lib"
 CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
+		INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
 CFLAGS+=	"-I${PREFIX}/include"
 USE_GMAKE=	yes
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.31 2000/06/16 21:50:25 asami Exp $
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.32 2000/10/23 15:24:06 imura Exp $
 #
 
 PORTNAME=	kdesupport
@@ -21,7 +21,15 @@ USE_QT=		yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--without-libjpeg --without-libgif \
-		--without-libgdbm --without-libuulib
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555"
+		--without-libgdbm --without-libuulib \
+		--with-qt-includes=${QTDIR}/include/X11/qt
+CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" INSTALL_SCRIPT="install -c -m 555" \
+		QTDIR=${QTDIR}
+
+.if defined(PREFIX)
+QTDIR?=		${PREFIX}
+.else
+QTDIR?=		${X11BASE}
+.endif
 
 .include <bsd.port.mk>
