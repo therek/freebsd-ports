@@ -2,13 +2,13 @@
 # Date created:			15 June 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps/Makefile,v 1.2 2000/10/05 07:10:48 reg Exp $
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.3 2000/10/12 09:10:35 sobomax Exp $
 #
 
 PORTNAME=	xmps
 PORTVERSION=	0.1.0
 CATEGORIES=	graphics gnome
-MASTER_SITES=	http://www-eleves.enst-bretagne.fr/~chavarri/xmps/sources/
+MASTER_SITES=	http://xmps.sourceforge.net/sources/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
