@@ -2,21 +2,16 @@
 # Date created:        12 July 2000
 # Whom:                Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/devel/camlp4/Makefile,v 1.2 2000/09/16 13:03:21 jedgar Exp $
+# $FreeBSD: ports/devel/camlp4/Makefile,v 1.3 2000/09/22 10:23:24 kris Exp $
 #
-# This is not the current version, but the version needs to
-# be <= the version of ocaml, which hasn't been updated. Once
-# the ocaml maintainer updates it, I'll update this.
 
 PORTNAME=	camlp4
-PORTVERSION=	2.04
+PORTVERSION=	3.00
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/camlp4/OLD/2.04/ \
+MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/cristal/camlp4/ \
 		http://www.unknown.nu/ports/
 
 MAINTAINER=	user@unknown.nu
-
-BROKEN=		"Does not compile"
 
 BUILD_DEPENDS=	ocamlc.opt:${PORTSDIR}/lang/ocaml
 
@@ -27,8 +22,8 @@ CONFIGURE_ENV=	PREFIX=${PREFIX}
 ALL_TARGET=	world bootstrap opt
 
 MAN1=		camlp4.1
-MANLINKS=	camlp4.1 camlp4o.1 camlp4.1 camlp4r.1 camlp4.1 mkcamlp4.1 \
-		camlp4.1 ocpp.1
-MANCOMPRESSED=	no
+MLINKS=	camlp4.1 camlp4o.1 camlp4.1 camlp4r.1 camlp4.1 mkcamlp4.1 \
+		camlp4.1 ocpp.1 camlp4.1 camlp4o.1 camlp4.1 camlp4r.opt.1 \
+		camlp4.1 camlp4o.opt.1
 
 .include <bsd.port.mk>
