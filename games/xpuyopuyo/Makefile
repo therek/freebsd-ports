@@ -3,10 +3,10 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.8 2000/02/19 03:28:10 green Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.9 2000/03/04 12:50:37 green Exp $
 #
 
-DISTNAME=	xpuyopuyo-0.3.3
+DISTNAME=	xpuyopuyo-0.3.4
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xpuyopuyo/ \
 		http://lenin.dabney.caltech.edu/~justins/xpuyopuyo/
