@@ -3,7 +3,7 @@
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/pm3-netobj/Makefile,v 1.1.1.1 2000/02/13 23:46:09 jdp Exp $
 #
 
 DISTNAME=	pm3-netobj-${VERSION}
@@ -33,6 +33,8 @@ PROGS=		bin/netobjd \
 L1=		${PREFIX}/lib/m3/${TARGET}/
 SOVERSION=	7
 VERSION=	1.1.13
+# hack to work around bsd.port.mk problem
+USE_BZIP2=	yes
 
 .include <bsd.port.pre.mk>
 

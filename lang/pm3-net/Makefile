@@ -3,7 +3,7 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-net/Makefile,v 1.1.1.1 2000/02/10 05:46:17 jdp Exp $
+# $FreeBSD: ports/lang/pm3-net/Makefile,v 1.2 2000/02/13 23:21:26 jdp Exp $
 #
 
 DISTNAME=	pm3-net-${VERSION}
@@ -28,6 +28,8 @@ BUILDDIRS=	network/tcplibs/tcp \
 L1=		${PREFIX}/lib/m3/${TARGET}/
 SOVERSION=	7
 VERSION=	1.1.13
+# hack to work around bsd.port.mk problem
+USE_BZIP2=	yes
 
 .include <bsd.port.pre.mk>
 
