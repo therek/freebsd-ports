@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.56 2001/02/14 14:43:10 roam Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.57 2001/03/17 16:19:10 vanilla Exp $
 #
 
     SUBDIR += 9menu
@@ -29,6 +29,7 @@
     SUBDIR += icepref
     SUBDIR += icewm
     SUBDIR += ion
+    SUBDIR += kappdock
     SUBDIR += larswm
     SUBDIR += libdockapp
     SUBDIR += libepplet
