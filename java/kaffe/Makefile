@@ -2,7 +2,7 @@
 # Date created:         20 February 1995
 # Whom:                 Tim Wilkinson <tim@sarc.city.ac.uk>
 #
-# $FreeBSD: ports/java/kaffe/Makefile,v 1.52 2000/07/25 00:10:57 archie Exp $
+# $FreeBSD: ports/java/kaffe/Makefile,v 1.53 2001/01/03 18:19:48 sf Exp $
 #
 
 PORTNAME=	kaffe
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.6
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.kaffe.org/pub/kaffe/
 
-MAINTAINER=	xaa@xaa.iae.nl
+MAINTAINER=	xaa+ports@madison-gurkha.com
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		ungif.5:${PORTSDIR}/graphics/libungif \
