@@ -2,11 +2,12 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.11 2000/10/02 13:30:06 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.12 2000/10/27 19:55:06 nbm Exp $
 #
 
 PORTNAME=	courier-imap
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -30,7 +31,7 @@ CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
 
 MAN1=		maildirmake.1
 MAN8=		authlib.8 makeuserdb.8 userdb.8 userdbpw.8 couriertcpd.8 \
-		deliverquota.8 imapd.8 mkimapdcert.8
+		deliverquota.8 imapd.8 mkimapdcert.8 mkpop3dcert.8
 
 MLINKS=		authlib.8 authpwd.8 \
 		authlib.8 authuserdb.8 \
@@ -41,6 +42,7 @@ MLINKS=		authlib.8 authpwd.8 \
 		authlib.8 authldap.8 \
 		authlib.8 authmysql.8 \
 		authlib.8 authdaemon.8 \
+		authlib.8 authdaemond.8 \
 		makeuserdb.8 pw2userdb.8 \
 		makeuserdb.8 vchkpw2userdb.8
 
