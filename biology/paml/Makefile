@@ -2,14 +2,14 @@
 # Date created:				7 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/paml/Makefile,v 1.1 2000/07/10 03:21:00 steve Exp $
+# $FreeBSD: ports/biology/paml/Makefile,v 1.2 2001/04/02 05:16:26 mharo Exp $
 #
 
 PORTNAME=	paml
-PORTVERSION=	3.03
+PORTVERSION=	3.04
 CATEGORIES=	biology
 MASTER_SITES=	ftp://abacus.gene.ucl.ac.uk/pub/paml/
-DISTNAME=	paml3.0c
+DISTNAME=	paml3.0d
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dbader@eece.unm.edu
