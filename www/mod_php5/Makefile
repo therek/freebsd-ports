@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.120 2000/10/12 09:48:55 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.121 2000/10/16 16:09:43 dirk Exp $
 #
 
 PORTNAME=	mod_php
@@ -43,7 +43,8 @@ CONFIGURE_ARGS=	--with-apxs=${APXS} \
 
 SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		TOUCH="${TOUCH}" \
-		MKDIR="${MKDIR}"
+		MKDIR="${MKDIR}" \
+		CAT="${CAT}"
 
 .if exists(${APXS})
 AP_LIBEXEC!=	${APXS} -q LIBEXEC
