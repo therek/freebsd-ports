@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.226 2001/06/09 00:30:39 dwcjr Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.227 2001/06/11 11:57:21 sheldonh Exp $
 #
 
     SUBDIR += abook
@@ -31,6 +31,7 @@
     SUBDIR += evolution
     SUBDIR += exim
     SUBDIR += exim-ldap
+    SUBDIR += exim-mysql
     SUBDIR += exmh2
     SUBDIR += ezmlm
     SUBDIR += ezmlm-idx
