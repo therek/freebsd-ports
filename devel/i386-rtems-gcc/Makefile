@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.1 2000/07/10 04:32:08 steve Exp $
 #
 
 PORTNAME=	gcc
@@ -27,7 +27,8 @@ NEWLIBNAME=	newlib-1.8.2
 MASTERDIR=	${.CURDIR}/../i386-rtems-gcc
 PLIST=		${PKGDIR}/PLIST.${LCLTARGET}
 
-BUILD_DEPENDS=	${LCLTARGET}-as:${PORTSDIR}/devel/${LCLTARGET}-binutils \
+BUILD_DEPENDS=	autoheader:${PORTSDIR}/devel/autoconf \
+		${LCLTARGET}-as:${PORTSDIR}/devel/${LCLTARGET}-binutils \
 		${LCLTARGET}-ld:${PORTSDIR}/devel/${LCLTARGET}-binutils
 RUN_DEPENDS=	${LCLTARGET}-as:${PORTSDIR}/devel/${LCLTARGET}-binutils \
 		${LCLTARGET}-ld:${PORTSDIR}/devel/${LCLTARGET}-binutils
