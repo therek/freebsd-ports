@@ -2,11 +2,11 @@
 # Date created:				Mon 03 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/ftpq/Makefile,v 1.2 2000/07/22 06:09:58 kevlo Exp $
+# $FreeBSD: ports/ftp/ftpq/Makefile,v 1.3 2000/08/06 16:06:03 nbm Exp $
 #
 
 PORTNAME=	ftpq
-PORTVERSION=	0.12
+PORTVERSION=	1.00
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.tranchant.freeserve.co.uk/software/
 
