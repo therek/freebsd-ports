@@ -2,21 +2,22 @@
 # Date created:		7 March 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/less/Makefile,v 1.18 2000/10/23 12:44:52 jeh Exp $
+# $FreeBSD: ports/japanese/less/Makefile,v 1.19 2000/11/15 14:48:40 shige Exp $
 #
 
-PORTNAME=	less
-PORTVERSION=	358
+PORTNAME=	less+iso
+PORTVERSION=	358.254
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.io.com/~kazushi/less/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	less
+DISTNAME=	less-${PORTVERSION:R}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		regex_cs-lwp9k.shar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 PATCH_SITES=	http://www.io.com/~kazushi/less/
-PATCHFILES=	${DISTNAME}-iso249.patch.gz
+PATCHFILES=	${DISTNAME}-iso${PORTVERSION:E}.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	k5@cheerful.com
