@@ -2,7 +2,7 @@
 # Date created:		2000-09-04
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire-themes/Makefile,v 1.3 2000/10/04 04:11:32 trevor Exp $
+# $FreeBSD: ports/x11-wm/sapphire-themes/Makefile,v 1.4 2000/12/25 10:43:30 trevor Exp $
 #
 
 PORTNAME=	sapphire-themes
@@ -36,8 +36,5 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/themes/*.theme \
 		${X11BASE}/share/sapphire/themes/
 	${INSTALL_DATA} ${WRKDIR}/menu/default ${X11BASE}/share/sapphire/menu/
-
-post-install:
-	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
