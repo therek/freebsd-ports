@@ -2,7 +2,7 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/german/ispell/Makefile,v 1.6 2000/09/22 12:20:58 asami Exp $
+# $FreeBSD: ports/german/ispell/Makefile,v 1.7 2001/01/13 13:44:00 alex Exp $
 #
 
 MAINTAINER=	alex@FreeBSD.org
@@ -10,8 +10,8 @@ MAINTAINER=	alex@FreeBSD.org
 ISPELL_DEALT=	yes
 ISPELL_DENEU=	yes
 PORTNAME=	ispell
-PORTVERSION= 	20001109
+PORTVERSION=	20001109
 CATEGORIES=	german
-MASTERDIR=      ${.CURDIR}/../../textproc/ispell
+MASTERDIR=	${.CURDIR}/../../textproc/ispell
 
 .include        "${MASTERDIR}/Makefile"

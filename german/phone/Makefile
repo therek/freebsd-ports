@@ -2,7 +2,7 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/phone/Makefile,v 1.9 2000/04/08 22:01:20 mharo Exp $
+# $FreeBSD: ports/german/phone/Makefile,v 1.10 2000/04/14 23:53:19 asami Exp $
 #
 
 PORTNAME=	phone
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 DISTNAME=	avon-1996
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=     wosch@FreeBSD.org
+MAINTAINER=	wosch@FreeBSD.org
 
 NO_WRKSUBDIR=	YES
 EXTRACT_CMD=	${GZCAT}

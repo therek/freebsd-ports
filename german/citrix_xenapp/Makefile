@@ -2,7 +2,7 @@
 # Date created:         12 Dez 2000
 # Whom:                 mblapp
 #
-# $FreeBSD$
+# $FreeBSD: ports/german/citrix_ica/Makefile,v 1.1 2000/12/12 16:01:21 jedgar Exp $
 #
 
 PORTNAME=	citrix_ica
@@ -11,7 +11,7 @@ CATEGORIES=	german net comms linux
 MASTER_SITES=
 DISTNAME=	linuxx86
 
-MAINTAINER=     mb@imp.ch
+MAINTAINER=	mb@imp.ch
 
 RUN_DEPENDS=    /compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 
@@ -23,7 +23,7 @@ DIST_SUBDIR=	citrix_ica
 NO_WRKSUBDIR=	Yes
 NO_BUILD=       Yes
 
-CDIR=           ${PREFIX}/ICAClient
+CDIR=	${PREFIX}/ICAClient
 BINDIR=		${PREFIX}/bin
 
 .include <bsd.port.pre.mk>

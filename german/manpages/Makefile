@@ -2,7 +2,7 @@
 # Date created:         29 September 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/manpages/Makefile,v 1.12 2000/04/08 22:01:18 mharo Exp $
+# $FreeBSD: ports/german/manpages/Makefile,v 1.13 2000/04/14 23:53:18 asami Exp $
 #
 
 PORTNAME=	manpages
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/ \
 		ftp://ftp.Infodrom.North.DE/pub/Linux/Devel/manpages-de/
 DISTFILES=	${manpages}.tgz
 
-MAINTAINER=     wosch@FreeBSD.org
+MAINTAINER=	wosch@FreeBSD.org
 
 LANG=		de_DE.ISO_8859-1
 NO_WRKSUBDIR=	YES
