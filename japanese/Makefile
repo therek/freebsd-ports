@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.327 2000/12/06 15:11:33 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.328 2000/12/06 15:20:35 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -363,6 +363,7 @@
     SUBDIR += xshodou
     SUBDIR += xv
     SUBDIR += xyagamo
+    SUBDIR += xyaku
     SUBDIR += yc.el
     SUBDIR += zangband
     SUBDIR += zipcodes
