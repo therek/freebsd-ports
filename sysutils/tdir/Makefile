@@ -2,10 +2,10 @@
 # Date Created:		03 July 2001
 # Whom:			tundra
 #
-# $FreeBSD: ports/sysutils/tdir/Makefile,v 1.1 2001/07/07 03:43:12 ijliao Exp $
+# $FreeBSD: ports/sysutils/tdir/Makefile,v 1.2 2001/07/19 13:55:53 markp Exp $
 
 PORTNAME=	tdir
-PORTVERSION=	1.62
+PORTVERSION=	1.66
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.tundraware.com/Software/tdir/
 
