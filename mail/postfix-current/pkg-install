@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: $
+#	$FreeBSD: ports/mail/postfix-current/pkg-install,v 1.5 2001/01/24 02:01:24 kuriyama Exp $
 #
 
 PKG_PREFIX=${PKG_PREFIX:=/usr/local}
@@ -92,5 +92,6 @@ if [ x"$2" = xPOST-INSTALL ]; then
     fi
     /usr/sbin/chown root:maildrop ${PKG_PREFIX}/sbin/postdrop
     /bin/chmod 2555 ${PKG_PREFIX}/sbin/postdrop
+    /bin/mkdir -p /var/spool/postfix
     ${PKG_PREFIX}/sbin/postfix check
 fi
