@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.317 2001/01/15 17:03:39 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.318 2001/01/15 17:42:46 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -13,6 +13,7 @@
     SUBDIR += 41upgrade
     SUBDIR += 44bsd-more
     SUBDIR += Howto
+    SUBDIR += achievo
     SUBDIR += aclgen
     SUBDIR += acron
     SUBDIR += alevt
