@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.208 2001/02/26 01:54:08 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.209 2001/02/26 19:24:45 will Exp $
 #
 
     SUBDIR += Maaate
@@ -167,7 +167,6 @@
     SUBDIR += tracker
     SUBDIR += vorbis
     SUBDIR += vorbis-tools
-    SUBDIR += vorbis-xmms
     SUBDIR += waveplay
     SUBDIR += wavplay
     SUBDIR += wmcdplay
