@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.382 2000/07/17 18:26:24 ru Exp $
+# $FreeBSD: ports/net/Makefile,v 1.383 2000/07/19 10:48:41 alex Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -97,6 +97,7 @@
     SUBDIR += isc-dhcp3
     SUBDIR += isic
     SUBDIR += jabber-transport
+    SUBDIR += jwhois
     SUBDIR += kdenetwork11
     SUBDIR += kdenetwork11-i18n
     SUBDIR += kdenetwork2
