@@ -1,6 +1,5 @@
-# $FreeBSD: ports/java/Makefile,v 1.38 2001/09/06 17:56:27 sobomax Exp $
+# $FreeBSD: ports/java/Makefile,v 1.39 2001/09/12 13:10:52 patrick Exp $
 #
-    SUBDIR += xalan-j
 
     SUBDIR += bluej
     SUBDIR += bugseeker
@@ -45,5 +44,6 @@
     SUBDIR += perltools
     SUBDIR += shujit
     SUBDIR += tya
+    SUBDIR += xalan-j
 
 .include <bsd.port.subdir.mk>

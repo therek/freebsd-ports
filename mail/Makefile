@@ -1,11 +1,11 @@
-# $FreeBSD: ports/mail/Makefile,v 1.254 2001/08/31 05:43:53 petef Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.255 2001/09/03 10:06:08 knu Exp $
 #
 
     SUBDIR += abook
     SUBDIR += adcomplain
     SUBDIR += althea
-    SUBDIR += asmail
     SUBDIR += arrow
+    SUBDIR += asmail
     SUBDIR += autorespond
     SUBDIR += autosig
     SUBDIR += balsa
@@ -182,8 +182,8 @@
     SUBDIR += sigrot
     SUBDIR += smail
     SUBDIR += smapi
-    SUBDIR += smtpd
     SUBDIR += smtpclient
+    SUBDIR += smtpd
     SUBDIR += smtpfeed
     SUBDIR += smunge
     SUBDIR += solidpop3d
