@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.77 2001/09/27 18:03:32 knu Exp $
+# $FreeBSD: ports/print/ghostscript-afpl/Makefile,v 1.78 2001/09/27 18:29:30 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -219,7 +219,7 @@ pre-configure:
 
 do-configure:
 	${ECHO_MSG} ">>> in do-configure ..."
-.if defined(BATCH)
+.if defined(BATCH) || defined(PACKAGE_BUILDING)
 	${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.batch
 .else
 	${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure
