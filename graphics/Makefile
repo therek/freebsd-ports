@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.156 1999/11/14 03:40:36 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.157 1999/11/16 23:15:01 asami Exp $
 #
 
     SUBDIR += 4va
@@ -16,6 +16,7 @@
     SUBDIR += dc20ctrl
     SUBDIR += dc20pack
     SUBDIR += dc3play
+    SUBDIR += dia
     SUBDIR += dore
     SUBDIR += electriceyes
     SUBDIR += enfle
