@@ -4,7 +4,7 @@
 # very likely to apply outside of KDE core modules.  Nonetheless, also
 # provide variables to remove one or more of these.
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kde2/Makefile.kde,v 1.1 2002/01/11 06:17:03 will Exp $
 
 CONFIGURE_ARGS?=
 
@@ -16,7 +16,7 @@ CONFIGURE_ARGS+=--enable-objprelink
 .endif
 
 .if !defined(_NO_KDE_FINAL)
-.if defined(PARALLEL_PACKAGE_BUILD) || !defined(NO_KDE_FINAL)
+.if defined(PARALLEL_PACKAGE_BUILD) || defined(WANT_KDE_FINAL)
 CONFIGURE_ARGS+=--enable-final
 .endif
 .endif
