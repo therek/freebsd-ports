@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.411 2002/04/27 11:22:59 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.412 2002/06/04 21:34:43 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1003,8 +1003,7 @@ PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 				PERL_VER=${PERL_VER} \
 				PERL_ARCH=${PERL_ARCH}
 
-.if exists(/usr/bin/perl5) && ${OSVERSION} >= 300000
-# 3.0-current after perl5 import
+.if exists(/usr/bin/perl5) && ${OSVERSION} >= 300000 && ${OSVERSION} < 500036
 .if !exists(/usr/bin/perl${PERL_VERSION}) && defined(USE_PERL5)
 pre-everything::
 	@${ECHO_CMD} "Error: you don't have the right version of perl in /usr/bin."
