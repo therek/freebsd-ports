@@ -3,13 +3,12 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.5 1999/08/31 02:50:43 peter Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.6 1999/09/02 03:23:49 cpiazza Exp $
 #
 
 DISTNAME=	wterm-6.2.6
 CATEGORIES=	x11
-MASTER_SITES=	ftp://beer.dct.com/pub/Applications/ \
-		http://wm.current.nu/files/
+MASTER_SITES= 	http://wm.current.nu/files/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
