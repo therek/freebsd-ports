@@ -2,11 +2,11 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++/Makefile,v 1.20 2000/04/17 00:17:07 reg Exp $
+# $FreeBSD: ports/audio/timidity++/Makefile,v 1.21 2000/04/20 10:10:13 mharo Exp $
 #
 
 PORTNAME=	timidity++
-PORTVERSION=	2.9.0
+PORTVERSION=	2.9.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.goice.co.jp/member/mo/timidity/dist/
 DISTNAME=	TiMidity++-${PORTVERSION}
@@ -50,6 +50,7 @@ CONFIGURE_ARGS+=	--enable-audio=oss
 MAN1=		timidity.1
 MAN5=		timidity.cfg.5
 
+MANLANG=	"" ja
 DOCFILES=	README.dl README.sf
 DOCLANG=	C ja_JP.ujis
 
@@ -60,7 +61,6 @@ CONFIGURE_ENV=	LDFLAGS=-export-dynamic
 .endif
 
 post-install:
-	@${MKDIR} ${PREFIX}/man/ja/man1 ${PREFIX}/man/ja/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/ja_JP.ujis/timidity.1 \
 	${PREFIX}/man/ja/man1
 	${INSTALL_MAN} ${WRKSRC}/doc/ja_JP.ujis/timidity.cfg.5 \

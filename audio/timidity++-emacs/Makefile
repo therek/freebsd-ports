@@ -2,11 +2,11 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.4 2000/04/13 12:48:34 knu Exp $
+# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.5 2000/04/20 10:10:15 mharo Exp $
 #
 
 PORTNAME=	timidity++
-PORTVERSION=	2.9.0
+PORTVERSION=	2.9.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.goice.co.jp/member/mo/timidity/dist/
 PKGNAMESUFFIX=	-${INTERFACE}
@@ -99,7 +99,7 @@ CONFIGURE_ENV+=	LDFLAGS=-export-dynamic
 .if ${INTERFACE} == "motif"
 post-configure:
 	@${MV} ${WRKSRC}/interface/Makefile ${WRKSRC}/interface/Makefile.orig
-	@${SED} -e 's^m_so_libs = $$^m_so_libs = -L/usr/X11R6/lib ${MOTIFLIB} -lXt -lXext -lSM -lICE -lX11 ^' \
+	@${SED} -e 's^m_so_libs = $$^m_so_libs = -L${X11BASE}/lib ${MOTIFLIB} -lXt -lXext -lSM -lICE -lX11 ^' \
 		-e 's^dynamic_targets = $$^dynamic_targets = interface_m.so^' \
 	${WRKSRC}/interface/Makefile.orig > ${WRKSRC}/interface/Makefile
 .endif
