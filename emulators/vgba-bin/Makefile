@@ -2,11 +2,11 @@
 # Date created:		04 Aug 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.1 2000/08/11 04:21:12 will Exp $
+# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.2 2000/10/03 05:12:24 lioux Exp $
 #
 
 PORTNAME=	vgb
-PORTVERSION=	17
+PORTVERSION=	20
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.komkon.org/fms/VGB/
 PKGNAMESUFFIX= -bin
@@ -18,7 +18,7 @@ MAINTAINER=	lioux@FreeBSD.org
 ONLY_FOR_ARCHS=	i386
 USE_X_PREFIX=	yes
 NO_BUILD=	no
-WRKSRC=		${WRKDIR}/GB
+NO_WRKSUBDIR=	no
 
 INSTALL_DIR=	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP}
 
@@ -34,12 +34,8 @@ do-install:
 	@${INSTALL_DIR} ${PREFIX}/share/vgb
 	@${INSTALL_DATA} ${WRKSRC}/CART.GB ${PREFIX}/share/vgb
 .if !defined(NOPORTDOCS)
-	${INSTALL_DIR} ${PREFIX}/share/doc/vgb ${PREFIX}/share/doc/vgb/demos
+	@${INSTALL_DIR} ${PREFIX}/share/doc/vgb
 	@${INSTALL_DATA} ${WRKSRC}/VGB.html ${PREFIX}/share/doc/vgb
-	@for i in ${WRKSRC}/demos/* ; \
-	do \
-		${INSTALL_DATA} $${i} ${PREFIX}/share/doc/vgb/demos ; \
-	done
 .endif # !defined(NOPORTDOCS)
 
 .include <bsd.port.mk>
