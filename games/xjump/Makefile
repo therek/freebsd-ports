@@ -2,11 +2,12 @@
 # Date created:				Sun 25 Feb 2001
 # Whom:					will
 #
-# $FreeBSD: ports/games/xjump/Makefile,v 1.2 2001/03/06 17:19:18 sf Exp $
+# $FreeBSD: ports/games/xjump/Makefile,v 1.3 2001/08/11 06:49:19 kris Exp $
 #
 
 PORTNAME=	xjump
 PORTVERSION=	2.7.3
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freesoftware.com/pub/linux/debian/%SUBDIR%/ \
 		ftp://ftp.jp.debian.org/debian/%SUBDIR%/ \
