@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.557 2001/06/15 12:46:38 markp Exp $
+# $FreeBSD: ports/net/Makefile,v 1.558 2001/06/15 22:35:49 dwcjr Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -157,6 +157,7 @@
     SUBDIR += kdetelnet
     SUBDIR += kicq
     SUBDIR += kmud
+    SUBDIR += konverse
     SUBDIR += ksamba
     SUBDIR += kxicq
     SUBDIR += kxicq2
