@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.5 2003/06/25 01:35:17 nork Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.6 2003/07/04 02:26:08 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
