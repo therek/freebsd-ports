@@ -1,17 +1,17 @@
 # New ports collection makefile for:	fli2gif
-# Version required:	1.1
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/fli2gif/Makefile,v 1.3 1999/08/25 06:13:50 obrien Exp $
 #
 
-DISTNAME=       fli2gif
-PKGNAME=	fli2gif-1.1
+PORTNAME=	fli2gif
+PORTVERSION=	1.1
 CATEGORIES=	graphics
 MASTER_SITES=   ftp://ftp.sco.com/skunkware/src/misc/ \
 		ftp://ftp.doc.ic.ac.uk/Mirrors/ftp.sco.com/skunkware/src/misc/ \
 		ftp://ftp.vse.cz/pub/.ccd0c/SCO/ftp.sco.com/skunkware/src/misc/
+DISTNAME=       ${PORTNAME}
 
 MAINTAINER=     giffunip@asme.org
 

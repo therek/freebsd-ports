@@ -1,12 +1,12 @@
 # New ports collection makefile for:   diacanvas
-# Version required:    0.40.1
 # Date created:        04 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/diacanvas/Makefile,v 1.1.1.1 2000/02/04 12:44:36 nakai Exp $
 #
 
-DISTNAME=	diacanvas-0.40.1
+PORTNAME=	diacanvas
+PORTVERSION=	0.40.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxstart.com/~arjan/diacanvas/download/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	enfle
-# Version required:	20000403
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuuki SAWADA <yuuki@goldmoon.org>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.11 2000/03/04 13:55:53 jedgar Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.12 2000/04/06 07:32:57 mharo Exp $
 #
 
-DISTNAME=	enfle-20000403
+PORTNAME=	enfle
+PORTVERSION=	20000403
 CATEGORIES=	graphics
 MASTER_SITES=	http://enfle.fennel.org/ \
 		ftp://ftp.goldmoon.org/pub/FreeBSD/ports/distfiles/

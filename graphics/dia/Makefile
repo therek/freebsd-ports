@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dia
-# Version required:    0.83
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.3 2000/02/12 14:56:56 nakai Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.4 2000/04/01 20:03:03 mharo Exp $
 #
 
-DISTNAME=	dia-0.84
+PORTNAME=	dia
+PORTVERSION=	0.84
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/dia

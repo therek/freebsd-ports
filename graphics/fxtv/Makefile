@@ -1,12 +1,12 @@
 # New ports collection makefile for:	fxtv
-# Version required:	1.02
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.23 1999/11/05 12:30:12 roger Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.24 2000/04/02 17:35:08 mharo Exp $
 #
 
-DISTNAME=	fxtv-1.02
+PORTNAME=	fxtv
+PORTVERSION=	1.02
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.ipass.net/~dbhopper/aa8vb/fxtv/
 EXTRACT_SUFX=	.tgz

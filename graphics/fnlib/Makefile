@@ -1,12 +1,12 @@
 # New ports collection makefile for:	fnlib
-# Version required:	0.5
 # Date created:		23 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.14 1999/10/17 02:03:00 cpiazza Exp $
+# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.15 2000/01/02 06:55:43 vanilla Exp $
 #
 
-DISTNAME=	fnlib-0.5
+PORTNAME=	fnlib
+PORTVERSION=	0.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/libs/ \
 		ftp://ftp.leirianet.pt/pub/X11/enlightenment/enlightenment/libs/ \

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	epstool
-# Version required:	1.08
 # Date created:		23 October 1999
 # Whom:			Yuzo FURUKAWA <hurukawa@kuee.kyoto-u.ac.jp>
 #
-# $FreeBSD: ports/graphics/epstool/Makefile,v 1.2 1999/12/23 18:09:20 steve Exp $
+# $FreeBSD: ports/graphics/epstool/Makefile,v 1.3 2000/02/29 02:02:58 jedgar Exp $
 #
 
-DISTNAME=	epstool-108
-PKGNAME=	epstool-1.08
+PORTNAME=	epstool
+PORTVERSION=	1.08
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/ghostgum/ \
 		ftp://ftp.fh-koblenz.de/pub/Ghostscript/ghostgum/
+DISTNAME=	${PORTNAME}-108
 
 MAINTAINER=	ports@FreeBSD.org
 

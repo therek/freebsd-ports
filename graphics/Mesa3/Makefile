@@ -1,18 +1,18 @@
 # New ports collection makefile for:    Mesa
-# Version required:     3.1
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.34 1999/08/31 06:44:53 mharo Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.35 2000/03/20 23:23:28 jseger Exp $
 #
 
-DISTNAME=	MesaLib-${VERSION}
-PKGNAME=	Mesa-${VERSION}
+PORTNAME=	Mesa
+PORTVERSION=	3.1
 CATEGORIES=	graphics
 MASTER_SITES= 	http://download.sourceforge.net/mesa3d/ \
 		ftp://iris.ssec.wisc.edu/pub/Mesa/ \
 		ftp://ftp.fu-berlin.de/pub/unix/X11/graphics/Mesa/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} MesaDemos-${VERSION}.tar.gz
+DISTFILES=	MesaLib-${PORTVERSION}${DISTNAME}${EXTRACT_SUFX} \
+		MesaDemos-${VERSION}.tar.gz
 
 MAINTAINER=	jseger@FreeBSD.org
 
@@ -21,7 +21,6 @@ LIB_DEPENDS=	ggi.2:${PORTSDIR}/graphics/libggi
 CONFIGURE_ARGS+=--with-ggi=${LOCALBASE}
 .endif
 
-VERSION=	3.1
 GLVER=		14
 GLUTVER=	3
 WRKSRC=		${WRKDIR}/${PKGNAME}

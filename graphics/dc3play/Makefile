@@ -1,13 +1,12 @@
 # New ports collection makefile for:	dc3play
-# Version required:	19991202
 # Date created:		15 Jul 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/dc3play/Makefile,v 1.5 1999/08/25 06:13:46 obrien Exp $
+# $FreeBSD: ports/graphics/dc3play/Makefile,v 1.6 1999/12/02 03:24:17 itojun Exp $
 #
 
-DISTNAME=	dc3play-19991202
-PKGNAME=	dc3play-19991202
+PORTNAME=	dc3play
+PORTVERSION=	19991202
 CATEGORIES=	graphics
 MASTER_SITES=   ftp://ftp.itojun.org/pub/digi-cam/DC-3/unix/ \
 		ftp://ftp.digipri.co.jp/pub/free-software/Ricoh/DC-3/unix/

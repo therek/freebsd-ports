@@ -1,15 +1,15 @@
 # New ports collection makefile for:    aero
-# Version required:     1.5.2
 # Date created:         Mon Aug 28 13:35:31 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/aero/Makefile,v 1.15 1999/08/25 06:13:41 obrien Exp $
 #
 
-DISTNAME=	aero_1.7.0_src
-PKGNAME=	aero-1.7.0
+PORTNAME=	aero
+PORTVERSION=	1.7.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.ee.uwa.edu.au/users/braunl/aero/
+DISTNAME=	${PORTNAME}_${PORTVERSION}_src
 
 MAINTAINER=	erich@FreeBSD.org
 

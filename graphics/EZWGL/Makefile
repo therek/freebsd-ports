@@ -1,12 +1,12 @@
 # New ports collection makefile for:	EZWGL
-# Version required:			1.40
 # Date created:				4 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.16 1999/08/25 06:13:35 obrien Exp $
+# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.17 2000/03/29 07:18:42 kris Exp $
 #
 
-DISTNAME=	EZWGL-1.40c
+PORTNAME=	EZWGL
+PORTVERSION=	1.40c
 CATEGORIES=	graphics devel
 MASTER_SITES=	ftp://ftp.ma.utexas.edu/pub/mzou/
 DISTFILES=	EZWGL-1.40-doc.tgz ${DISTNAME}-src.tgz

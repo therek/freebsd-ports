@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dc20ctrl
-# Version required:	0.4
 # Date created:		17 Feb 1998
 # Whom:			Ugo Paternostro <paterno@dsi.unifi.it>
 #
-# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.3 1999/08/25 06:13:45 obrien Exp $
+# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.4 1999/09/07 10:45:21 steve Exp $
 #
 
-DISTNAME=	dc20ctrl-0.4
+PORTNAME=	dc20ctrl
+PORTVERSION=	0.4
 CATEGORIES=	graphics
 MASTER_SITES=   http://aguirre.dsi.unifi.it/~paterno/binaries/
 

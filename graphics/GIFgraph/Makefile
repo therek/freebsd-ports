@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-GIFgraph
-# Version required:			1.01
 # Date created:				Nov 9, 1998
 # Whom:					laskavy@gambit.msk.su
 #
-# $FreeBSD: ports/graphics/GIFgraph/Makefile,v 1.3 1999/08/25 06:13:36 obrien Exp $
+# $FreeBSD: ports/graphics/GIFgraph/Makefile,v 1.4 2000/03/31 03:12:35 mharo Exp $
 #
 
-DISTNAME=	GIFgraph-1.10
-PKGNAME=	p5-${DISTNAME}
+PORTNAME=	p5-GIFgraph
+PORTVERSION=	1.10
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	GIFgraph
+DISTNAME=	GIFgraph-${PORTVERSION}
 
 MAINTAINER=	laskavy@gambit.msk.su
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	aalib
-# Version required:			1.2
 # Date created:				9 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/aalib/Makefile,v 1.9 2000/03/29 07:18:37 kris Exp $
+# $FreeBSD: ports/graphics/aalib/Makefile,v 1.10 2000/04/01 21:49:44 mharo Exp $
 #
 
-DISTNAME=	aalib-1.2
+PORTNAME=	aalib
+PORTVERSION=	1.2
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.ta.jcu.cz/pub/aa/
 
