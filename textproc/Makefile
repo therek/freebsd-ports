@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.221 2001/07/12 06:46:03 knu Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.222 2001/07/30 17:02:13 ijliao Exp $
 #
 
     SUBDIR += agrep
@@ -138,6 +138,7 @@
     SUBDIR += p5-libxml
     SUBDIR += par
     SUBDIR += pardiff
+    SUBDIR += pdftohtml
     SUBDIR += perl2html
     SUBDIR += pspell
     SUBDIR += pspell-ispell
