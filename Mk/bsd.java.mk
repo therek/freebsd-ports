@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.47 2004/06/29 20:16:37 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.48 2004/07/01 22:44:00 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -127,6 +127,8 @@ Java_Include_MAINTAINER=	znerd@FreeBSD.org
 #
 
 # System-global directories
+# NB: If the value of JAVAJARDIR is altered here it must also be altered
+#     in java/javavmwrapper/Makefile.
 JAVASHAREDIR?=	${PREFIX}/share/java
 JAVAJARDIR?=	${JAVASHAREDIR}/classes
 
