@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.12 1999/12/09 14:17:09 foxfair Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.13 2000/01/11 01:16:04 foxfair Exp $
 #
 
 DISTNAME=	stunnel-3.4a
@@ -16,20 +16,18 @@ MASTER_SITES=	http://opensores.thebunker.net/pub/mirrors/stunnel/ \
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
-BUILD_DEPENDS=	openssl:${PORTSDIR}/security/openssl
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
-		ssl.1:${PORTSDIR}/security/openssl
-RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
-
-.if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
-LIB_DEPENDS=	rsaref.2:${PORTSDIR}/security/rsaref
-.endif
+USE_OPENSSL=	RSA
 
 GNU_CONFIGURE=	yes
 MAN8=		stunnel.8
 
 cert:
 	@(cd ${WRKSRC}; make cert)
+
+post-patch:
+	${SED} -e 's,%%LOCALBASE%%,${LOCALBASE},' ${WRKSRC}/configure > ${WRKSRC}/configure~
+	${MV} ${WRKSRC}/configure~ ${WRKSRC}/configure
+	${CHMOD} a+x ${WRKSRC}/configure
 
 post-build:
 	@${ECHO} ""
