@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.345 2001/03/02 07:00:31 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.346 2001/03/08 01:53:13 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -142,6 +142,7 @@
     SUBDIR += libjcode
     SUBDIR += libjconv
     SUBDIR += libslang
+    SUBDIR += linux-JM
     SUBDIR += linux-netscape47-communicator
     SUBDIR += linux-netscape47-navigator
     SUBDIR += linux_locale
