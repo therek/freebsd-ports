@@ -1,9 +1,8 @@
 # New ports collection makefile for:	linux jdk 1.2.2
-# Version required:     1.2.2
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD:$
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.1.1.1 2000/05/16 01:46:26 chuckr Exp $
 #
 
 PORTNAME=	jdk
