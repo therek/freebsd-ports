@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.51 2001/03/08 20:06:36 sf Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.52 2001/03/09 15:10:15 sf Exp $
 #
 
 PORTNAME=	dhcp
@@ -11,6 +11,7 @@ PORTVERSION=	3.0.b2.18
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/dhcp/
 PKGNAMEPREFIX=	isc-
+PKGNAMESUFFIX=	3
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.b/b/:R}pl${PORTVERSION:E}
 
 MAINTAINER=	clefevre@poboxes.com
