@@ -2,16 +2,17 @@
 # Date created:        26 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/bigyear/Makefile,v 1.1 2001/04/02 20:15:41 mharo Exp $
 #
 
 PORTNAME=	bigyear
-PORTVERSION=	20012602
+PORTVERSION=	20010226
+PORTEPOCH=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	http://mahon.cwx.net/sources/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@FreeBSD.org
 
 MAN1=		bigyear.1
 
