@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gatekeeper
 # Date created:		Wed Apr 15 15:41:00 GMT 2000
-# Whom:			Roger Hardiman <roger@freebsd.org>
+# Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.7 2000/05/01 08:12:19 roger Exp $
+# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.8 2000/05/02 16:55:57 roger Exp $
 #
 
 PORTNAME=	gatekeeper
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/openh323gk/
 DISTNAME=	gk012pre4
 
-MAINTAINER=	roger@freebsd.org
+MAINTAINER=	roger@FreeBSD.org
 
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/net/openh323:build
 
