@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD$
+#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.1 2000/12/21 08:25:47 will Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -40,6 +40,7 @@ case $2 in
 		cd ${PKG_PREFIX}
 		cyrus_conf
 		checkfile ${PKG_PREIFX}/etc/imapd.conf
+		checkfile ${PKG_PREIFX}/etc/cyrus.conf
 		;;
 	POST-DEINSTALL)
 		;;
