@@ -3,7 +3,7 @@
 # Date created:				10 December 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/lang/ptoc/Makefile,v 1.9 1999/08/25 06:35:15 obrien Exp $
+# $FreeBSD: ports/lang/ptoc/Makefile,v 1.10 2000/02/12 20:54:52 cpiazza Exp $
 #
 
 DISTNAME=		ptoc-3.41
@@ -12,7 +12,7 @@ MASTER_SITES=		ftp://ftp.netsw.org/netsw/SoftEng/Lang/Pascal/ \
 			ftp://ftp.u-aizu.ac.jp/pub/lang/netsw/Pascal/ \
 			ftp://ftp.ecrc.net/pub/netsw/SoftEng/Lang/Pascal/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 MAKEFILE=		makefile
 

@@ -3,7 +3,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/omega/Makefile,v 1.3 1999/08/25 06:04:09 obrien Exp $
+# $FreeBSD: ports/games/omega/Makefile,v 1.4 2000/03/08 08:33:19 kris Exp $
 #
 
 DISTNAME=	omega-0.90-pa4
@@ -11,7 +11,7 @@ PKGNAME=	omega-0.90.4
 CATEGORIES=	games
 MASTER_SITES=	http://dolphin.openprojects.net/Omega/Downloads/Prealphas/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=
 WRKSRC=		${WRKDIR}/omega

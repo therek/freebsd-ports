@@ -3,7 +3,7 @@
 # Date created:				10 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/3dpong/Makefile,v 1.6 1999/08/25 06:02:43 obrien Exp $
 #
 
 DISTNAME=	3dpong.0.3
@@ -11,7 +11,7 @@ PKGNAME=	3dpong-0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/3dpong/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 MAKEFILE=	makefile
 USE_X_PREFIX=	yes

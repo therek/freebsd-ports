@@ -3,7 +3,7 @@
 # Date created:				18 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xmines/Makefile,v 1.2 1999/08/25 06:05:38 obrien Exp $
 #
 
 DISTNAME=		xmines
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_X_PREFIX=		yes
 

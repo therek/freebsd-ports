@@ -3,7 +3,7 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.9 1999/11/25 03:41:50 jseger Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.10 2000/02/03 04:54:40 cpiazza Exp $
 #
 
 DISTNAME=	PowerPak
@@ -11,7 +11,7 @@ PKGNAME=	powerpak-991203
 CATEGORIES= 	games
 MASTER_SITES=	http://www.angelfire.com/va/powerpakgsdk/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl \
 		ttf.4:${PORTSDIR}/print/freetype

@@ -3,14 +3,14 @@
 # Date created:				20 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/cyrproxy/Makefile,v 1.4 1999/08/31 01:46:57 peter Exp $
 #
 
 DISTNAME=		cyrproxy-1.4.2
 CATEGORIES=		russian net www
 MASTER_SITES=		ftp://ftp.lexa.ru/pub/domestic/lexa/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 do-install:
 	@ ${MKDIR} ${PREFIX}/share/cyrproxy

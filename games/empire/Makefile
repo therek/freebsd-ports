@@ -3,7 +3,7 @@
 # Date created:				13 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/empire/Makefile,v 1.2 1999/08/25 06:03:19 obrien Exp $
 #
 
 DISTNAME=		empire
@@ -11,7 +11,7 @@ PKGNAME=		empire-1.1
 CATEGORIES=		games
 MASTER_SITES=		ftp://locke.ccil.org/pub/esr/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/empire-1.1
 MAN6=			empire.6

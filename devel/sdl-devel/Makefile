@@ -3,7 +3,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.6 2000/02/10 01:41:50 cpiazza Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.7 2000/03/06 22:16:54 cpiazza Exp $
 #
 
 DISTNAME=		SDL-1.0.8
@@ -11,7 +11,7 @@ PKGNAME=		sdl-1.0.8
 CATEGORIES=		devel
 MASTER_SITES=		http://www.devolution.com/~slouken/SDL/release/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 #This port doesn't love FreeBSD pthread :(
 LIB_DEPENDS=		lthread.2:${PORTSDIR}/devel/linuxthreads \

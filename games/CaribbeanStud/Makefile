@@ -3,7 +3,7 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.2 1999/08/25 06:02:43 obrien Exp $
 #
 
 DISTNAME=		CS
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 MAKEFILE=		Xmakefile
 REQUIRES_MOTIF=		yes

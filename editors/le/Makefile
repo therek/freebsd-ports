@@ -3,7 +3,7 @@
 # Date created:				16 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/le/Makefile,v 1.7 1999/12/24 03:42:59 jedgar Exp $
+# $FreeBSD: ports/editors/le/Makefile,v 1.8 2000/03/02 01:26:17 jedgar Exp $
 #
 
 DISTNAME=		le-1.5.7
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			ftp://ftp.yars.free.net/pub/software/unix/util/texteditors/
 MASTER_SITE_SUBDIR=	apps/editors/terminal
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 GNU_CONFIGURE=		yes
 MAN1=			le.1

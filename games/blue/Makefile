@@ -3,14 +3,14 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/blue/Makefile,v 1.2 1999/08/25 06:03:00 obrien Exp $
+# $FreeBSD: ports/games/blue/Makefile,v 1.3 1999/12/24 19:13:28 mharo Exp $
 #
 
 DISTNAME=		blue-2.4
 CATEGORIES=		games
 MASTER_SITES=		ftp://locke.ccil.org/pub/esr/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 MAN6=			blue.6

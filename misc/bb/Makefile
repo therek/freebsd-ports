@@ -3,7 +3,7 @@
 # Date created:				22 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/bb/Makefile,v 1.3 1999/08/25 07:21:10 obrien Exp $
 #
 
 DISTNAME=		bb-1.2
@@ -12,7 +12,7 @@ MASTER_SITES=		ftp://ftp.ta.jcu.cz/pub/aa/bb/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		aa.1:${PORTSDIR}/graphics/aalib
 

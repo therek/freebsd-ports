@@ -3,7 +3,7 @@
 # Date created:				9 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gemdropx/Makefile,v 1.5 1999/08/25 06:03:29 obrien Exp $
 #
 
 DISTNAME=	gemdropx.0.4
@@ -11,7 +11,7 @@ PKGNAME=	gemdropx-0.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/gemdropx/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	gemdropx
 MAKEFILE=	makefile

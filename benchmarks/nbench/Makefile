@@ -3,7 +3,7 @@
 # Date created:				17 December 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/nbench/Makefile,v 1.2 1999/08/25 04:45:44 obrien Exp $
 #
 
 DISTNAME=		nbench-byte-2.1
@@ -13,7 +13,7 @@ MASTER_SITES=		ftp://ftp.tux.org/pub/tux/mayer/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/benchmark
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 

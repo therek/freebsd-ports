@@ -3,7 +3,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/qtez/Makefile,v 1.11 1999/08/25 05:50:03 obrien Exp $
 #
 
 DISTNAME=	QtEZ.current-src
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://qtez.zax.net/qtez-extras/
 #EXTRACT_SUFX=	tar.gz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 USE_QT=		yes
 USE_GMAKE=	yes

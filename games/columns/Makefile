@@ -3,14 +3,14 @@
 # Date created:				26 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/columns/Makefile,v 1.2 2000/01/31 03:22:03 kris Exp $
+# $FreeBSD: ports/games/columns/Makefile,v 1.3 2000/02/03 04:54:20 cpiazza Exp $
 #
 
 DISTNAME=	columns-1.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.phreax.net/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
 

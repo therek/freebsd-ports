@@ -3,7 +3,7 @@
 # Date created:				14 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtruco/Makefile,v 1.4 1999/08/25 06:06:25 obrien Exp $
 #
 
 DISTNAME=		xtruco
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_X_PREFIX=		yes
 

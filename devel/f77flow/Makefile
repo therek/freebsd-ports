@@ -3,7 +3,7 @@
 # Date created:				25 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/f77flow/Makefile,v 1.2 1999/08/25 05:47:53 obrien Exp $
 #
 
 DISTNAME=		f77flow-0.12
@@ -11,7 +11,7 @@ CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/fortran
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 MAN1=			flow.1

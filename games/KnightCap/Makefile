@@ -3,7 +3,7 @@
 # Date created:				10 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/KnightCap/Makefile,v 1.7 1999/08/25 06:02:44 obrien Exp $
+# $FreeBSD: ports/games/KnightCap/Makefile,v 1.8 2000/03/20 23:25:06 jseger Exp $
 #
 
 DISTNAME=	KnightCap-3.5
@@ -11,7 +11,7 @@ PKGNAME=	knightcap-3.5
 CATEGORIES=	games
 MASTER_SITES=	ftp://samba.anu.edu.au/pub/KnightCap/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3\
 		GLU.14:${PORTSDIR}/graphics/Mesa3 \

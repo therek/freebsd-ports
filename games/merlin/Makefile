@@ -3,7 +3,7 @@
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/merlin/Makefile,v 1.2 1999/08/25 06:04:00 obrien Exp $
+# $FreeBSD: ports/games/merlin/Makefile,v 1.3 1999/11/28 18:31:24 steve Exp $
 #
 
 DISTNAME=	merlin
@@ -11,7 +11,7 @@ PKGNAME=	merlin-1.0
 CATEGORIES=	games
 MASTER_SITES=	http://outoften.doc.ic.ac.uk/~np2/software/download/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

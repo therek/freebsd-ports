@@ -3,7 +3,7 @@
 # Date created:				1 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/tcb/Makefile,v 1.3 1999/08/25 07:22:41 obrien Exp $
 #
 
 DISTNAME=		tcb-1.4a
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://www.osk.3web.ne.jp/~moody/tcbj/
 MASTER_SITE_SUBDIR=	utils/file
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_GMAKE=		yes
 

@@ -3,7 +3,7 @@
 # Date created:				18 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xvmines/Makefile,v 1.6 1999/08/25 06:06:28 obrien Exp $
 #
 
 DISTNAME=	xvmines-1.0
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.csd.uch.gr/pub/X11/games/ \
 		ftp://ftp.gwdg.de/pub/x11/x.org/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview \
 		olgx.3:${PORTSDIR}/x11-toolkits/xview

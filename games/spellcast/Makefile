@@ -3,7 +3,7 @@
 # Date created:				28 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/spellcast/Makefile,v 1.4 1999/08/25 06:04:27 obrien Exp $
 #
 
 DISTNAME=		spellcast-1.1
@@ -12,7 +12,7 @@ MASTER_SITES=		http://www.redestb.es/personal/ragnar/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/multiplayer
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_X_PREFIX=		yes
 MAN6=			spellcast.6

@@ -3,7 +3,7 @@
 # Date created:				27 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpanex/Makefile,v 1.5 1999/08/25 06:05:52 obrien Exp $
 #
 
 DISTNAME=		xpanex-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/xpanex
 USE_IMAKE=		yes

@@ -3,7 +3,7 @@
 # Date created:				3 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xabacus/Makefile,v 1.4 1999/08/25 06:04:38 obrien Exp $
 #
 
 DISTNAME=		xabacus-5.4.4
@@ -12,7 +12,7 @@ MASTER_SITES=		ftp://ftp.tux.org/pub/people/david-bagley/xabacus/ \
 			${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 GNU_CONFIGURE=		yes
 USE_X_PREFIX=		yes

@@ -3,7 +3,7 @@
 # Date created:				27 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/cgic/Makefile,v 1.1 1999/12/29 09:25:45 steve Exp $
 #
 
 DISTNAME=	cgic106
@@ -12,7 +12,7 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.boutell.com/cgic/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	libcgic.so.1
 

@@ -3,7 +3,7 @@
 # Date created:				19 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mp3info/Makefile,v 1.5 1999/08/25 04:35:52 obrien Exp $
 #
 
 DISTNAME=		mp3info-0.2.16
@@ -12,7 +12,7 @@ MASTER_SITES=		ftp://bimbo.hive.no/pub/mp3info/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/editors
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CPPFLAGS="${CFLAGS}"

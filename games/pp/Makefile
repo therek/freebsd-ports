@@ -3,7 +3,7 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/pp/Makefile,v 1.7 1999/08/25 06:04:17 obrien Exp $
 #
 
 DISTNAME=	pp-0.01
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://www.mps.de/pub/unix/ \
 		http://www.nectar.com/distfiles/
 DISTFILES=	ppinst-0.01.tar.gz ppsrc-0.01.tar.gz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 USE_QT=		yes
 USE_X_PREFIX=	yes

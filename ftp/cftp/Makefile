@@ -3,7 +3,7 @@
 # Date created:				14 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/cftp/Makefile,v 1.7 1999/12/29 12:21:01 jedgar Exp $
+# $FreeBSD: ports/ftp/cftp/Makefile,v 1.8 2000/02/08 09:29:51 peter Exp $
 #
 
 DISTNAME=	cftp-0.9.3
@@ -11,7 +11,7 @@ CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.giga.or.at/pub/nih/cftp/ \
 		http://people.FreeBSD.org/~andy/distfiles/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

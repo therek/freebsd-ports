@@ -3,7 +3,7 @@
 # Date created:				29 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xtron/Makefile,v 1.3 1999/08/25 06:06:25 obrien Exp $
 #
 
 DISTNAME=		xtron-1.1a
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 

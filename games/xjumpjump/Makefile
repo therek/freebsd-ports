@@ -3,7 +3,7 @@
 # Date created:				9 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xjumpjump/Makefile,v 1.9 1999/08/25 06:05:24 obrien Exp $
 #
 
 DISTNAME=	xjumpjump
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://makosteszta.sote.hu/linux/jumpjump/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 

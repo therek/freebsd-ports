@@ -3,7 +3,7 @@
 # Date created:				2 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/affenspiel/Makefile,v 1.4 1999/08/25 06:02:48 obrien Exp $
 #
 
 DISTNAME=		affenspiel-1.0
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/affenspiel
 USE_X_PREFIX=		yes

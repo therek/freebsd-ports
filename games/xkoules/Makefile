@@ -3,7 +3,7 @@
 # Date created:				11 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xkoules/Makefile,v 1.6 1999/08/25 06:05:26 obrien Exp $
 #
 
 DISTNAME=	koules1.4-src
@@ -12,7 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.paru.cas.cz/~hubicka/koules/packages/ \
 		${MASTER_SITE_SUNSITE}
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 .if ${MACHINE_ARCH} == "alpha"
 PLIST=		${PKGDIR}/PLIST.alpha

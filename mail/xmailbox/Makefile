@@ -3,7 +3,7 @@
 # Date created:				23 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.6 1999/08/25 06:51:13 obrien Exp $
 #
 
 DISTNAME=		xmailbox-2.5
@@ -11,7 +11,7 @@ CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:				21 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xvmahjongg/Makefile,v 1.7 1999/08/25 06:06:27 obrien Exp $
 #
 
 DISTNAME=	xvmahjongg2.1
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/X11/R5contrib/ \
 		ftp://ftp.tu-darmstadt.de/pub/X11/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview \
 		olgx.3:${PORTSDIR}/x11-toolkits/xview

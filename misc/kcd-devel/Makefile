@@ -3,7 +3,7 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.1 1999/12/29 09:29:03 steve Exp $
 #
 
 DISTNAME=		kcd-4.11.1
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://www-scf.usc.edu/~lerdsuwa/util/
 MASTER_SITE_SUBDIR=	utils/shell
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		ncurses.4:${PORTSDIR}/devel/ncurses
 

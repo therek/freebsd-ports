@@ -3,7 +3,7 @@
 # Date created:				17 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battalion/Makefile,v 1.7 1999/08/25 06:02:54 obrien Exp $
+# $FreeBSD: ports/games/battalion/Makefile,v 1.8 2000/03/20 23:25:07 jseger Exp $
 #
 
 DISTNAME=	battalion-1.4
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.evl.uic.edu/aej/
 DISTFILES=	battalionSource1.4.tar.Z battalionSUN4.tar.gz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
 		GLU.14:${PORTSDIR}/graphics/Mesa3

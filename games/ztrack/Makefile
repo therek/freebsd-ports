@@ -3,7 +3,7 @@
 # Date created:				1 May 1997
 # Whom: Andrey Zakhvatov <andy@icc.surw.chel.su>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/ztrack/Makefile,v 1.2 2000/03/20 22:27:39 mharo Exp $
 #
 
 DISTNAME=	ztrack-1.0
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/ztrack
 ALL_TARGET=	ztrack

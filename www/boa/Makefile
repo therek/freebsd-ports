@@ -3,14 +3,14 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/boa/Makefile,v 1.2 1999/08/31 02:42:43 peter Exp $
 #
 
 DISTNAME=	boa-0.92
 CATEGORIES=	www
 MASTER_SITES=	http://www.boa.org/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 do-build:
 	@ cd ${WRKSRC}/src; make

@@ -3,7 +3,7 @@
 # Date created:				25 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xskewb/Makefile,v 1.6 1999/08/25 06:06:13 obrien Exp $
 #
 
 DISTNAME=		xskewb-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/xskewb
 USE_IMAKE=		yes

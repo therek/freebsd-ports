@@ -3,7 +3,7 @@
 # Date created:				5 Jan 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/ytree/Makefile,v 1.6 2000/01/03 21:58:00 dbaker Exp $
+# $FreeBSD: ports/misc/ytree/Makefile,v 1.7 2000/01/22 03:26:52 cpiazza Exp $
 #
 
 DISTNAME=		ytree-1.65
@@ -12,7 +12,7 @@ CATEGORIES=		misc
 #			http://www.han.de/~werner/
 #MASTER_SITE_SUBDIR=	utils/file/managers
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 MAN1=			ytree.1

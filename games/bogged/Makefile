@@ -3,7 +3,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bogged/Makefile,v 1.4 1999/08/25 06:03:02 obrien Exp $
+# $FreeBSD: ports/games/bogged/Makefile,v 1.5 1999/11/28 18:30:49 steve Exp $
 #
 
 DISTNAME=		bogged-1.0.0
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.gz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 RUN_DEPENDS=		wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

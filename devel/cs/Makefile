@@ -3,14 +3,14 @@
 # Date created:				22 May 1997
 # Whom:					Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cs/Makefile,v 1.4 1999/08/25 05:47:40 obrien Exp $
+# $FreeBSD: ports/devel/cs/Makefile,v 1.5 1999/08/31 06:41:36 mharo Exp $
 #
 
 DISTNAME=	cs-0.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://cantor.informatik.rwth-aachen.de/pub/unix/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 NO_CDROM=	this port requires a written license
 ALL_TARGET=	cs

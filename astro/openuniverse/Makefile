@@ -3,7 +3,7 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/astro/ssystem/Makefile,v 1.11 2000/03/02 01:07:14 jedgar Exp $
+# $FreeBSD: ports/astro/ssystem/Makefile,v 1.12 2000/03/20 23:25:04 jseger Exp $
 #
 
 DISTNAME=		ssystem-1.6
@@ -12,7 +12,7 @@ MASTER_SITES=		http://plasma.gsfc.nasa.gov/Ssystem/ \
 			http://www.wam.umd.edu/~kamelkev/Ssystem/ \
 			http://www.wam.umd.edu/~kamelkev/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg \
 			GL.14:${PORTSDIR}/graphics/Mesa3 \

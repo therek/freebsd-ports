@@ -3,7 +3,7 @@
 # Date created:				11 February 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xlines/Makefile,v 1.8 1999/08/25 06:05:29 obrien Exp $
 #
 
 DISTNAME=	xlines
@@ -11,7 +11,7 @@ PKGNAME=	xlines-1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://risq.belcaf.minsk.by/pub/genie/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 USE_QT=		yes
 USE_X_PREFIX=	yes

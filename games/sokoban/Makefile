@@ -3,7 +3,7 @@
 # Date created:				2 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/sokoban/Makefile,v 1.3 1999/08/25 06:04:25 obrien Exp $
+# $FreeBSD: ports/games/sokoban/Makefile,v 1.4 2000/03/09 06:58:48 kris Exp $
 #
 
 DISTNAME=		sokoban-src
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/sokoban
 ALL_TARGET=

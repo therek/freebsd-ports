@@ -3,7 +3,7 @@
 # Date created:				12 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cccc/Makefile,v 1.7 1999/08/25 05:47:28 obrien Exp $
+# $FreeBSD: ports/devel/cccc/Makefile,v 1.8 1999/09/21 09:35:06 asami Exp $
 #
 
 DISTNAME=		cccc-2.1.1.src
@@ -12,7 +12,7 @@ CATEGORIES=		devel textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/c++
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 BUILD_DEPENDS=		antlr:${PORTSDIR}/devel/pccts \
 			dlg:${PORTSDIR}/devel/pccts

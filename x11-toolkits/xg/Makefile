@@ -3,7 +3,7 @@
 # Date created:				3 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.2 1999/08/31 02:59:45 peter Exp $
 #
 
 DISTNAME=	xg
@@ -12,7 +12,7 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://messners.com/code/ \
 		http://www.messners.com/code/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 REQUIRES_MOTIF=	yes
 USE_X_PREFIX=	yes

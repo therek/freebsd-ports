@@ -3,14 +3,14 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/sol/Makefile,v 1.3 1999/08/25 06:04:26 obrien Exp $
+# $FreeBSD: ports/games/sol/Makefile,v 1.4 2000/03/09 07:04:14 kris Exp $
 #
 
 DISTNAME=	sol-1.0.6
 CATEGORIES=	games
 MASTER_SITES=	http://home.sol.no/~sverrehu/pub-unix/files/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		shhopt.1:${PORTSDIR}/devel/libshhopt \

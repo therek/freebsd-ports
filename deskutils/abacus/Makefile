@@ -3,7 +3,7 @@
 # Date created:				18 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.6 2000/01/03 03:38:04 steve Exp $
+# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.7 2000/02/08 09:29:30 peter Exp $
 #
 
 DISTNAME=	abacus
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 PATCH_SITES=	http://people.FreeBSD.org/~steve/distfiles/
 PATCHFILES=	${PKGNAME}.patch.gz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82

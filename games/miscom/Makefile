@@ -3,7 +3,7 @@
 # Date created:				6 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/miscom/Makefile,v 1.2 1999/08/25 06:04:03 obrien Exp $
 #
 
 DISTNAME=		miscom
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 WRKSRC=			${WRKDIR}/miscom

@@ -3,7 +3,7 @@
 # Date created:				17 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xvier/Makefile,v 1.3 1999/08/25 06:06:26 obrien Exp $
 #
 
 DISTNAME=		xvier
@@ -13,7 +13,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.tar.Z
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/${PKGNAME}
 USE_IMAKE=		yes

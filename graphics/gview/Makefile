@@ -3,7 +3,7 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.9 2000/01/01 22:46:54 cpiazza Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.10 2000/01/01 22:56:52 cpiazza Exp $
 #
 
 DISTNAME=	gview-0.1.12
@@ -13,7 +13,7 @@ MASTER_SITES=	http://gview.netpedia.net/ \
 		ftp://ftp.petech.ac.za/pub/viewers/ \
 		http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gdk_imlib.5:${PORTSDIR}/graphics/imlib \
 		intl.1:${PORTSDIR}/devel/gettext

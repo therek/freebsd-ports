@@ -3,7 +3,7 @@
 # Date created:				30 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xoj/Makefile,v 1.3 2000/01/03 09:45:33 asami Exp $
 #
 
 DISTNAME=		xoj-1.0
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/demos
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_IMAKE=		yes
 

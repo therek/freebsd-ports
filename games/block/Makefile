@@ -3,7 +3,7 @@
 # Date created:				10 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/block/Makefile,v 1.3 1999/08/25 06:02:58 obrien Exp $
 #
 
 DISTNAME=		block-0.6
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 BROKEN=			"Segmentation fault (core dumped)"
 WRKSRC=			${WRKDIR}/blocks

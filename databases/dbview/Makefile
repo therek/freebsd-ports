@@ -3,7 +3,7 @@
 # Date created:				7 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/dbview/Makefile,v 1.2 1999/08/25 05:21:08 obrien Exp $
 #
 
 DISTNAME=		dbview-1.0.3
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			ftp://ftp.infodrom.north.de/pub/Linux/Devel/dbview/
 MASTER_SITE_SUBDIR=	apps/database/proprietary
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

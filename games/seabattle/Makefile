@@ -3,7 +3,7 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/seabattle/Makefile,v 1.2 1999/08/25 06:04:22 obrien Exp $
 #
 
 DISTNAME=		seabattle-1.0
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/seabattle ${PREFIX}/bin/seabattle

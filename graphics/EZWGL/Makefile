@@ -3,7 +3,7 @@
 # Date created:				4 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.16 1999/08/25 06:13:35 obrien Exp $
 #
 
 DISTNAME=	EZWGL-1.40c
@@ -11,7 +11,7 @@ CATEGORIES=	graphics devel
 MASTER_SITES=	ftp://ftp.ma.utexas.edu/pub/mzou/
 DISTFILES=	EZWGL-1.40-doc.tgz ${DISTNAME}-src.tgz
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 

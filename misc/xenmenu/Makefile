@@ -3,7 +3,7 @@
 # Date created:				19 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/xenmenu/Makefile,v 1.3 1999/08/25 07:23:12 obrien Exp $
 #
 
 DISTNAME=	xenmenu-0.8b
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.cs.purdue.edu/homes/steinkf/software/xenmenu/
 MASTER_SITE_SUBDIR=	apps/misc
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:				20 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/add/Makefile,v 1.2 1999/08/25 07:06:41 obrien Exp $
 #
 
 DISTNAME=	add
@@ -11,7 +11,7 @@ PKGNAME=	add-1.0
 CATEGORIES=	math
 MASTER_SITES=	ftp://ftp.clark.net/pub/dickey/add/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/add-970526
 

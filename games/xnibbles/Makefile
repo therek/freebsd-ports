@@ -3,7 +3,7 @@
 # Date created:				2 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xnibbles/Makefile,v 1.8 1999/08/25 06:05:44 obrien Exp $
+# $FreeBSD: ports/games/xnibbles/Makefile,v 1.9 1999/09/25 17:23:32 steve Exp $
 #
 
 DISTNAME=	xnibbles-1.0BETA3
@@ -11,7 +11,7 @@ PKGNAME=	xnibbles-1.0b3
 CATEGORIES=	games
 MASTER_SITES=	http://www.tjhsst.edu/xnibbles/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

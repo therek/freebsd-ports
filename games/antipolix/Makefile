@@ -3,7 +3,7 @@
 # Date created:			2 December 1998
 # Whom:				Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/antipolix/Makefile,v 1.2 1999/08/25 06:02:53 obrien Exp $
 #
 
 DISTNAME=		AntipoliX_2.1
@@ -12,7 +12,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/multiplayer
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}
 USE_IMAKE=	yes

@@ -3,14 +3,14 @@
 # Date created:				16 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.2 1999/10/09 18:42:07 vanilla Exp $
+# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.3 2000/01/14 20:30:34 cpiazza Exp $
 #
 
 DISTNAME=	gperiodic-1.2.2
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

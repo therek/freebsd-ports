@@ -3,14 +3,14 @@
 # Date created:				9 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xquarto/Makefile,v 1.6 1999/08/25 06:05:59 obrien Exp $
+# $FreeBSD: ports/games/xquarto/Makefile,v 1.7 1999/08/27 21:13:59 mharo Exp $
 #
 
 DISTNAME=	xquarto-1.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.math.lsa.umich.edu/~mattiasj/games/xquarto/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/biorythm/Makefile,v 1.2 1999/08/25 06:02:56 obrien Exp $
 #
 
 DISTNAME=		biorythm-1.1.1
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://home.sol.no/~sverrehu/pub-unix/files/
 MASTER_SITE_SUBDIR=	games/amusements
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		shhmsg.1:${PORTSDIR}/devel/libshhmsg \
 			shhopt.1:${PORTSDIR}/devel/libshhopt

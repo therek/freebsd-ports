@@ -3,7 +3,7 @@
 # Date created:				16 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/frotz/Makefile,v 1.3 1999/08/25 06:03:26 obrien Exp $
 #
 
 DISTNAME=		UnixFrotz232R2Std10
@@ -11,7 +11,7 @@ PKGNAME=		frotz-2.32
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.gmd.de/if-archive/infocom/interpreters/frotz/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 WRKSRC=			${WRKDIR}/frotz-2.32

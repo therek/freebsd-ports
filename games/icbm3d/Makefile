@@ -3,7 +3,7 @@
 # Date created:				20 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/icbm3d/Makefile,v 1.5 1999/08/25 06:03:43 obrien Exp $
 #
 
 DISTNAME=	icbm3d.0.4
@@ -11,7 +11,7 @@ PKGNAME=	icbm3d-0.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/icbm3d/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	icbm3d
 MAKEFILE=	makefile

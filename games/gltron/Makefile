@@ -3,14 +3,14 @@
 # Date created:				24 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gltron/Makefile,v 1.6 2000/02/17 01:04:26 cpiazza Exp $
+# $FreeBSD: ports/games/gltron/Makefile,v 1.7 2000/03/20 23:25:08 jseger Exp $
 #
 
 DISTNAME=	gltron-0.53
 CATEGORIES=	games
 MASTER_SITES=	http://www.ards.net/Andreas/gltron/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
 		GLU.14:${PORTSDIR}/graphics/Mesa3 \

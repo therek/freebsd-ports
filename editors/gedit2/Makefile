@@ -3,14 +3,14 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/gedit/Makefile,v 1.11 1999/12/23 13:42:33 jedgar Exp $
+# $FreeBSD: ports/editors/gedit/Makefile,v 1.12 2000/01/09 09:42:20 cpiazza Exp $
 #
 
 DISTNAME=	gedit-0.6.1
 CATEGORIES=	editors gnome
 MASTER_SITES=	http://gedit.pn.org/tar/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs
 

@@ -3,14 +3,14 @@
 # Date created:				25 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/freesweep/Makefile,v 1.2 1999/08/25 06:03:25 obrien Exp $
 #
 
 DISTNAME=	freesweep-0.86
 CATEGORIES=	games
 MASTER_SITES=	http://www.upl.cs.wisc.edu/~hartmann/sweep/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=
 GNU_CONFIGURE=	yes

@@ -3,7 +3,7 @@
 # Date created:				26 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpyraminx/Makefile,v 1.5 1999/08/25 06:05:58 obrien Exp $
 #
 
 DISTNAME=		xpyraminx-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/xpyraminx
 USE_IMAKE=		yes

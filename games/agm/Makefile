@@ -3,7 +3,7 @@
 # Date created:				4 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/agm/Makefile,v 1.4 1999/08/25 06:02:49 obrien Exp $
 #
 
 DISTNAME=		agm-1.4
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://users.gtn.net/fraserm/
 MASTER_SITE_SUBDIR=	games/amusements
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 MAN6=			agm.6
 

@@ -3,7 +3,7 @@
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.6 1999/08/25 06:03:41 obrien Exp $
 #
 
 DISTNAME=		gtkballs-1.04
@@ -13,7 +13,7 @@ MASTER_SITES=		ftp://lucifer.dorms.spbu.ru/pub/Linux/games/ \
 			${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

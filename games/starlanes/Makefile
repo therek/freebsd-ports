@@ -3,7 +3,7 @@
 # Date created:				7 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/starlanes/Makefile,v 1.2 1999/08/25 06:04:29 obrien Exp $
 #
 
 DISTNAME=		starlanes-1.2.2
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 MAN6=			starlanes.6

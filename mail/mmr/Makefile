@@ -3,7 +3,7 @@
 # Date created:				23 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mmr/Makefile,v 1.6 1999/08/25 06:50:31 obrien Exp $
 #
 
 DISTNAME=		mmr-1.5.2
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://www.devolution.com/~slouken/projects/mmr/
 MASTER_SITE_SUBDIR=	system/mail/mua
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 ALL_TARGET=
 

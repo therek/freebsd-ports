@@ -3,7 +3,7 @@
 # Date created:				20 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xhexagons/Makefile,v 1.2 1999/08/25 06:05:17 obrien Exp $
 #
 
 DISTNAME=		xhexagons-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/xhexagons
 USE_IMAKE=		yes

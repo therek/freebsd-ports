@@ -3,7 +3,7 @@
 # Date created:				24 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xwpick/Makefile,v 1.3 1999/08/25 06:15:38 obrien Exp $
 #
 
 DISTNAME=		xwpick-2.20
@@ -11,7 +11,7 @@ CATEGORIES=		graphics
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_IMAKE=		yes
 MAN1=			xwpick.1

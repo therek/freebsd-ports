@@ -3,14 +3,14 @@
 # Date created:				25 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/dfm/Makefile,v 1.13 1999/08/31 02:58:15 peter Exp $
 #
 
 DISTNAME=	dfm-0.99.1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www-c.informatik.uni-hannover.de/~kaiser/dfm/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12

@@ -3,14 +3,14 @@
 # Date created:				29 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/Hermes/Makefile,v 1.4 1999/08/25 06:13:37 obrien Exp $
 #
 
 DISTNAME=	Hermes-1.2.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://hermes.terminal.at/files/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes

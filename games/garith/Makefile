@@ -3,14 +3,14 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/garith/Makefile,v 1.3 1999/08/25 06:03:28 obrien Exp $
 #
 
 DISTNAME=	garith-2.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.cnm-vra.com/micah/garith/
 
-MAINTAINER=	andy@icc.surw.chel.su
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gdk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
