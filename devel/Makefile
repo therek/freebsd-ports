@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.326 2000/08/07 08:20:13 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.327 2000/08/07 11:23:08 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -262,9 +262,12 @@
     SUBDIR += rinfo
     SUBDIR += robodoc
     SUBDIR += rpc2
+    SUBDIR += ruby-amstd
+    SUBDIR += ruby-date2
     SUBDIR += ruby-optparse
     SUBDIR += ruby-property
     SUBDIR += ruby-racc
+    SUBDIR += ruby-strscan
     SUBDIR += rvm
     SUBDIR += sdcc
     SUBDIR += sdl
