@@ -3,13 +3,13 @@
 # Date created:		22 July 1999
 # Whom:			Oleg V. Volkov <rover@lglobus.ru>
 #
-# $FreeBSD: ports/games/adom/Makefile,v 1.2 1999/08/25 06:02:47 obrien Exp $
+# $FreeBSD: ports/games/adom/Makefile,v 1.3 1999/12/25 18:53:45 steve Exp $
 #
 
 DISTNAME=	adom-099g15-elf
 PKGNAME=	adom-0.99.g15
 CATEGORIES=	games
-MASTER_SITES=	http://www.adom.de/adom/
+MASTER_SITES=	http://www.adom.de/adom/download/linux/
 
 MAINTAINER=	rover@lglobus.ru
 
@@ -21,7 +21,7 @@ ONLY_FOR_ARCHS=	i386
 NO_PACKAGE=     Only unmodified original package can be distributed
 
 NO_WRKSUBDIR=   yes
-STRIP=			# empty: do not touch linux binary!
+STRIP=			# empty: do not strip linux binary!
 
 do-patch:
 do-configure:
