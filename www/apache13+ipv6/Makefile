@@ -2,7 +2,7 @@
 # Date created:         Fri Feb 18 03:04:36 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.6 2000/08/09 02:16:31 kuriyama Exp $
+# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.7 2000/08/22 03:41:04 kuriyama Exp $
 #
 
 PORTNAME=	apache+ipv6
@@ -26,7 +26,7 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 DISTNAME=	apache_${PORTVERSION}
 
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=	apache-1.3.12-v6-20000524a.diff.gz
+PATCHFILES=	apache-1.3.12-v6-20000821a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sumikawa@FreeBSD.org
@@ -38,7 +38,6 @@ Y2K=		http://www.apache.org/docs/misc/FAQ.html#year2000
 #
 
 HAS_CONFIGURE=	yes
-CONFIGURE_SCRIPT=	configure.v6
 CONFIGURE_ARGS=	\
 		--prefix=${PREFIX} \
 		--server-gid=nogroup \
@@ -47,6 +46,7 @@ CONFIGURE_ARGS=	\
 		--suexec-docroot=${PREFIX}/www/data \
 		--without-confadjust \
 		--enable-shared=remain \
+		--enable-rule=INET6 \
 		--enable-module=most \
 		--enable-module=auth_db \
 		--disable-module=auth_dbm
