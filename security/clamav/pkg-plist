@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.19 2005/01/12 17:57:58 yar Exp $
+@comment $FreeBSD: ports/security/clamav/pkg-plist,v 1.20 2005/01/25 12:03:50 yar Exp $
 %%CLAMAV-MILTER%%@unexec [ ! -f %%RUNDIR%%/clamav-milter.pid ] || %%RC_DIR%%/clamav-milter%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/freshclam.pid ] || %%RC_DIR%%/clamav-freshclam%%RC_SUFX%% stop || true
 @unexec [ ! -f %%RUNDIR%%/clamd.pid ] || %%RC_DIR%%/clamav-clamd%%RC_SUFX%% stop || true
@@ -27,5 +27,5 @@ etc/freshclam.conf.default
 @unexec [ ! -f %%DBDIR%%/daily.cvd ] || rm -f %%DBDIR%%/daily.cvd || true
 @unexec [ ! -f %%DBDIR%%/main.cvd ] || rm -f %%DBDIR%%/main.cvd || true
 @unexec rmdir %%DBDIR%%
+@unexec rmdir %%LOGDIR%% 2>/dev/null || true
 @unexec rmdir %%RUNDIR%% 2>/dev/null || true
-@unexec rmdir /var/log/clamav 2>/dev/null || true
