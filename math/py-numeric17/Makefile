@@ -2,11 +2,11 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.25 2000/09/06 12:17:00 tg Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.26 2000/09/08 11:58:49 tg Exp $
 #
 
 PORTNAME=	numeric
-PORTVERSION=	16.0
+PORTVERSION=	16.1
 CATEGORIES=	math python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	numpy
@@ -20,7 +20,8 @@ LIB_DEPENDS=	lapack.3:${PORTSDIR}/math/lapack \
 		blas.2:${PORTSDIR}/math/lapack
 
 USE_PYTHON=	yes
-MAKE_ENV=	BLASLIBDIR=${LOCALBASE}/lib LAPACKLIBDIR=${LOCALBASE}/lib
+MAKE_ENV=	BLASLIBDIR=${LOCALBASE}/lib LAPACKLIBDIR=${LOCALBASE}/lib \
+		PYTHON_CMD=${PYTHON_CMD}
 
 DOCDIR=		${PREFIX}/share/doc/py-numeric
 EXAMPLEDIR=	${PREFIX}/share/examples/py-numeric
