@@ -1,13 +1,13 @@
 # New ports collection makefile for:	gnomemc
-# Version required:	4.5.43
+# Version required:	4.5.44
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.13 2000/01/29 22:11:14 reg Exp $
+# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.14 2000/03/25 23:17:00 reg Exp $
 #
 
-DISTNAME=	mc-4.5.43
-PKGNAME=	gnomemc-4.5.43
+DISTNAME=	mc-4.5.44
+PKGNAME=	gnomemc-4.5.44
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
