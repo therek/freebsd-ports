@@ -2,7 +2,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.38 2001/03/29 16:33:43 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freeciv
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable/ \
 		ftp://ftp.netc.pt/pub/freeciv/stable/ \
 		ftp://ftp.pvv.ntnu.no/pub/freeciv/stable/
 
-MAINTAINER=	sheldonh@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
