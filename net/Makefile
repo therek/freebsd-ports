@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.540 2001/05/27 17:41:10 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.541 2001/05/28 12:51:33 vanilla Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -333,6 +333,7 @@
     SUBDIR += spat
     SUBDIR += ssldump
     SUBDIR += sting
+    SUBDIR += stone
     SUBDIR += suckblow
     SUBDIR += sup
     SUBDIR += svnc
