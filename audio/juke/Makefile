@@ -2,13 +2,13 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/juke/Makefile,v 1.7 2000/12/21 09:49:55 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		juke
 PORTVERSION=		0.7
 CATEGORIES=		audio
-MASTER_SITES=		http://www.nocrew.org/software/juke/archive/ \
+MASTER_SITES=		http://johan.nocrew.org/unix/juke/archive/ \
 			http://www.initio.no/~oyvindmo/distfiles/
 
 MAINTAINER=		oyvindmo@initio.no
