@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/lang/ccscript/Makefile,v 1.2 2000/09/16 19:20:43 ade Exp $
+# $FreeBSD: ports/lang/ccscript/Makefile,v 1.3 2000/09/17 13:23:11 jedgar Exp $
 #
 
 PORTNAME=	ccscript
@@ -12,14 +12,14 @@ MASTER_SITES=	ftp://www.voxilla.org/pub/ccscript/
 
 MAINTAINER=	dyfet@gnu.org
 
-LIB_DEPENDS=	ccstd.0:${PORTSDIR}/devel/commoncpp
+LIB_DEPENDS=	ccio-1.2.0:${PORTSDIR}/devel/commoncpp
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_AUTOCONF=	yes
 INSTALLS_SHLIB=	yes
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include LDFLAGS=-L${LOCALBASE}/lib -lpthread"
+CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include LDFLAGS=-L${LOCALBASE}/lib
 
 post-extract:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
