@@ -2,7 +2,7 @@
 # Date created:                Tue Sep  5 15:30:00 PDT 2000
 # Whom:                        Joseph Scott <joseph@randomnetworks.com>
 #
-# $FreeBSD: ports/databases/dbmetrix/Makefile,v 1.2 2000/10/05 06:36:03 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dbmetrix
@@ -17,7 +17,8 @@ LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-mysql=${PREFIX}
 
