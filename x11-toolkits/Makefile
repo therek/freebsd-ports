@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.36 1999/08/31 02:59:06 peter Exp $
 #
 
     SUBDIR += FWF
@@ -37,6 +37,7 @@
     SUBDIR += tk42
     SUBDIR += tk80
     SUBDIR += tk81
+    SUBDIR += tk82
     SUBDIR += tkstep80
     SUBDIR += v
     SUBDIR += wxgtk
