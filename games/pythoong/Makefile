@@ -2,7 +2,7 @@
 # Date created:		24 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/pythoong/Makefile,v 1.1 2000/07/24 15:48:22 sobomax Exp $
 #
 
 PORTNAME=	pythoong
@@ -32,7 +32,6 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 post-extract:
-	@${RM} -f ${WRKSRC}/config.cache
 	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/pixmaps|\$\(datadir\)/gnome/pixmaps|g ; \
