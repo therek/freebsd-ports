@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.251 2001/09/03 18:45:21 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.252 2001/09/07 14:34:17 lioux Exp $
 #
 
     SUBDIR += Maaate
@@ -160,6 +160,7 @@
     SUBDIR += replay
     SUBDIR += rio
     SUBDIR += rio500
+    SUBDIR += rioutil
     SUBDIR += ripenc
     SUBDIR += ripit
     SUBDIR += rosegarden
