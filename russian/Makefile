@@ -1,6 +1,5 @@
-# $FreeBSD: ports/russian/Makefile,v 1.32 2001/04/09 21:09:19 demon Exp $
+# $FreeBSD$
 #
-    SUBDIR += xxkb
 
     SUBDIR += X.language
     SUBDIR += apache13
@@ -22,5 +21,6 @@
     SUBDIR += xcode
     SUBDIR += xcyrBGR
     SUBDIR += xruskb
+    SUBDIR += xxkb
 
 .include <bsd.port.subdir.mk>
