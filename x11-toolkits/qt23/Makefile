@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.73 2001/01/24 03:48:41 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.74 2001/02/04 04:43:13 will Exp $
 #
 
 PORTNAME?=	qt
@@ -37,7 +37,7 @@ CONFIG=		${WRKSRC}/configs/freebsd-g++-${STATIC}
 
 .if !defined(NOPORTDOCS)
 .if (${PORTNAME} == "qt")
-.include "${.CURDIR}/files/manpages"
+.include "files/manpages"
 .endif
 .endif
 
