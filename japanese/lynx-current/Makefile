@@ -3,7 +3,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.9 1999/08/25 05:25:18 obrien Exp $
+# $FreeBSD: ports/japanese/lynx-current/Makefile,v 1.11 1999/09/08 13:46:50 shige Exp $
 #
 
 DISTNAME=	lynx2.8.3dev.8
@@ -23,10 +23,11 @@ CONFIGURE_ARGS=	--with-screen=ncurses --with-zlib \
 		--enable-nsl-fork --enable-persistent-cookies \
 		--enable-cjk --enable-file-upload --enable-justify-elts \
 		--enable-libjs --enable-read-eta --enable-source-cache
-#--enable-prettysrc \
-#--enable-color-style
+# experimental optional configure args
+#   --enable-prettysrc --enable-color-style
+#
 MAKEFILE=	makefile
-MAKE_ARGS=	helpdir=${PREFIX}/${LYNX_HELP} docdir=${PREFIX}/${LYNX_DOC} \
+MAKE_ARGS=	helpdir=${PREFIX}/${LYNX_HELP} docdir=${PREFIX}/${LYNX_DOC}
 PLIST_SUB=	LYNX_LIB=${LYNX_LIB} LYNX_DOC=${LYNX_DOC} LYNX_HELP=${LYNX_HELP}
 
 INSTALL_TARGET=	install-full
@@ -37,8 +38,8 @@ LYNX_DOC=	share/doc/lynx
 LYNX_HELP=	share/lynx_help
 
 post-install:
-	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_DOC}
-	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_HELP}
-	@${CHOWN} ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_LIB}/lynx.cfg
+	@/usr/sbin/chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_DOC}
+	@/usr/sbin/chown -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_HELP}
+	@/usr/sbin/chown ${SHAREOWN}:${SHAREGRP} ${PREFIX}/${LYNX_LIB}/lynx.cfg
 
 .include <bsd.port.mk>
