@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.54 2001/01/01 10:15:08 will Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.55 2001/01/08 17:44:41 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -51,7 +51,7 @@ GS_FONTS_OTHER=	ghostscript-fonts-other-6.0.tar.gz
 HP8XX_DRV=	gdevcd8.tar.gz
 
 # HPDJ, additional driver for HP PCL3 Printers, by Martin Lottermoser
-# ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/pcl3.html
+# http://home.t-online.de/home/Martin.Lottermoser/pcl3.html
 HPDJ_DRV=	hpdj-2.6.tar.gz
 
 # additional driver for HP DeskJet 970, supports duplex printing
