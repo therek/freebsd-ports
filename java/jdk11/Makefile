@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.29 2000/02/07 20:12:07 billf Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.30 2000/04/12 06:14:24 obrien Exp $
 #
 
 PORTNAME=	jdk
@@ -34,5 +34,7 @@ do-install:
 	${MKDIR} ${PREFIX}/jdk${JDK_VERSION}
 	(cd ${WRKSRC} && ${TAR} -c -f - .) \
 		| (cd ${PREFIX}/jdk${JDK_VERSION} && ${TAR} --unlink -x -f -)
+	${MKDIR} ${PREFIX}/share/java/classes
+	${MKDIR} ${PREFIX}/share/doc/java
 
 .include <bsd.port.post.mk>
