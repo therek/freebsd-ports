@@ -2,19 +2,18 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD: ports/mail/listmanager/Makefile,v 1.3 2000/09/08 09:37:25 kris Exp $
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.4 2000/10/29 22:58:02 steve Exp $
 #
 
 PORTNAME=	listmanager
-PORTVERSION=	2.105.1
-PORTREVISION=	1
+PORTVERSION=	2.107
 CATEGORIES=	mail
 MASTER_SITES=	http://www.listmanager.org/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.freebsd35
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} help.tar.gz listmanager.8 ack
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	gshapiro@FreeBSD.org
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=
