@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/Makefile,v 1.223 1999/08/25 06:02:40 obrien Exp $
 #
 
     SUBDIR += 3dc
@@ -182,6 +182,7 @@
     SUBDIR += xpacman
     SUBDIR += xpanex
     SUBDIR += xpat2
+    SUBDIR += xphotohunter
     SUBDIR += xpilot
     SUBDIR += xpipeman
     SUBDIR += xpuyo
