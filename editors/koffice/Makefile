@@ -2,15 +2,16 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.22 2001/08/15 16:25:10 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.23 2001/08/15 21:20:53 will Exp $
 #
 
 PORTNAME=	koffice
-PORTVERSION=	1.1-rc1
+PORTVERSION=	1.1.rc1
 PORTEPOCH=	1
 CATEGORIES=	editors kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	unstable/koffice-${PORTVERSION}/src
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.rc1/-rc1/}
 
 MAINTAINER=	will@FreeBSD.org
 
