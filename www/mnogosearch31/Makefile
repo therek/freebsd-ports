@@ -2,11 +2,11 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.25 2001/06/09 20:17:10 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.26 2001/06/13 15:56:55 ache Exp $
 #
 
 PORTNAME=	mnogosearch
-PORTVERSION=    3.1.16
+PORTVERSION=    3.1.17
 CATEGORIES=	www databases
 MASTER_SITES=	http://search.mnogo.ru/Download/
 
