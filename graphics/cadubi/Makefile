@@ -2,7 +2,7 @@
 # Date created:			  24 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/cadubi/Makefile,v 1.1 2001/08/25 07:17:59 kris Exp $
 #
 
 PORTNAME=	cadubi
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Term/ReadKey.pm:${PORTSDIR}/devel/p5-Term-ReadKey
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Term/ReadKey.pm:${PORTSDIR}/devel/p5-Term-ReadKey
 
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
