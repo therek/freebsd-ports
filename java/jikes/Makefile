@@ -3,7 +3,7 @@
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.13 1999/08/25 06:16:26 obrien Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.14 1999/09/26 18:14:39 archie Exp $
 #
 
 DISTNAME=	jikes-1.06
@@ -14,7 +14,7 @@ MAINTAINER=	archie@whistle.com
 
 WRKSRC=		${WRKDIR}/jikes/src
 MAN1=		jikes.1
-MAKE_ENV=	FILESDIR=${FILESDIR}
+MAKE_ENV=	WRKDIR=${WRKDIR}
 PATCH_STRIP=	-p2
 
 # 	(sufficiently handled by pkg/MESSAGE, but if IBM has an issue then
