@@ -2,13 +2,17 @@
 # Date created:				2000-12-26
 # Whom:					trevor
 #
-# $FreeBSD: ports/www/mmosaic/Makefile,v 1.1 2000/12/27 06:54:32 trevor Exp $
+# $FreeBSD: ports/www/mmosaic/Makefile,v 1.2 2001/02/13 22:18:05 trevor Exp $
 #
 
 PORTNAME=	mmosaic
 PORTVERSION=	3.7.2
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.enst.fr/pub/mbone/mMosaic/
+MASTER_SITES=	ftp://ftp.enst.fr/pub/mbone/mMosaic/ \
+		ftp://ftp.uni-koeln.de/net/inet/WWW/mosaic/unix/mMosaic-3.7.2.tar.gz \
+		ftp://ftp.netsw.org/netsw/InfoSys/WWW/ClientSide/Browser/mosaic/mMosaic-3.7.2.tar.gz \
+		ftp://ftp.icm.edu.pl/vol/rzm0/mMosaic/mMosaic-3.7.2.tar.gz
+
 DISTNAME=	mMosaic-${PORTVERSION}
 
 MAINTAINER=	trevor@FreeBSD.org
