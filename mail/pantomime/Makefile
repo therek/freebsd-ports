@@ -2,11 +2,11 @@
 # Date created:         17 Sep 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/pantomime/Makefile,v 1.1 2001/10/01 11:44:04 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pantomime
-PORTVERSION=	0.4.0
+PORTVERSION=	1.0.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.collaboration-world.com/pantomime.data/releases/Development/
 DISTNAME=	Pantomime-${PORTVERSION}
