@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.90 2000/10/08 09:22:55 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.91 2000/10/13 12:15:43 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -77,6 +77,14 @@ pre-fetch:
 .endif
 
 .include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500012
+post-patch:
+	@if [ ! -e ${WRKSRC}/include/Xarch.h.orig ]; then\
+	  mv ${WRKSRC}/include/Xarch.h ${WRKSRC}/include/Xarch.h.orig;\
+	  ${SED} -e 52d -e 54d < ${WRKSRC}/include/Xarch.h.orig > \
+	  ${WRKSRC}/include/Xarch.h; fi
+.endif
 
 pre-install:
 	${MKDIR} ${PREFIX}
