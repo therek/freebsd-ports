@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/automake14/files/patch-ad,v 1.5 2001/10/08 07:24:07 sobomax Exp $
 
 --- aclocal.in.orig	Sun Jul 15 13:52:18 2001
 +++ aclocal.in	Sat Aug 11 12:28:32 2001
