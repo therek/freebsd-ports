@@ -2,11 +2,11 @@
 # Date created:		12 Nov 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/ttfm/Makefile,v 1.1 2000/11/13 08:48:09 keith Exp $
+# $FreeBSD: ports/chinese/ttfm/Makefile,v 1.2 2000/11/26 18:39:38 keith Exp $
 #
 
 PORTNAME=	ttfm
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	chinese print
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/ttfm/
 
