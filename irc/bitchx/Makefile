@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.33 2001/04/06 21:36:03 clive Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.34 2001/04/15 15:36:23 kevlo Exp $
 #
 
 PORTNAME=       BitchX
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ftp.bitchx.org/pub/BitchX/source/
 DISTNAME=	ircii-pana-1.0c18
 
-MAINTAINER=	LoRd_CJ@dalusers.com
+MAINTAINER=	calle.madestrand@norrgarden.se
 
 WRKSRC=		${WRKDIR}/BitchX
 
