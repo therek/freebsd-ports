@@ -2,12 +2,12 @@
 # Date created:		1999-12-12
 # Whom:			AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/cad/cider/Makefile,v 1.5 2000/10/28 16:13:03 kevlo Exp $
+# $FreeBSD: ports/cad/cider/Makefile,v 1.6 2001/07/04 16:01:19 dannyboy Exp $
 #
 
 PORTNAME=	cider
 PORTVERSION=	1.b1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ic.eecs.berkeley.edu/pub/Cider/new/
 DISTNAME=	cider1b1
