@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.386 2001/06/16 10:34:39 nakai Exp $
+# $FreeBSD: ports/games/Makefile,v 1.387 2001/06/17 18:42:53 steve Exp $
 #
 
     SUBDIR += 0verkill
@@ -363,6 +363,7 @@
     SUBDIR += xvmines
     SUBDIR += xworm
     SUBDIR += xzip
+    SUBDIR += yadex
     SUBDIR += yahtzee
     SUBDIR += yamsweeper
     SUBDIR += zangband
