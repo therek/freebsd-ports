@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.282 2001/03/14 22:16:37 vanilla Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.283 2001/03/17 16:21:50 vanilla Exp $
 #
 
     SUBDIR += 4va
@@ -61,6 +61,7 @@
     SUBDIR += gimp1
     SUBDIR += giram
     SUBDIR += gle
+    SUBDIR += gliv
     SUBDIR += gltk
     SUBDIR += gnofract4d
     SUBDIR += gnomeiconedit
