@@ -1,13 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/samba3/files/samba.sh.sample,v 1.7 2004/05/18 14:52:47 lofi Exp $
+# $FreeBSD: ports/net/samba3/files/samba.sh.sample,v 1.8 2004/07/03 12:46:41 edwin Exp $
 #
 
 # PROVIDE: nmbd smbd
 %%WINBIND%%# PROVIDE: winbindd
 # REQUIRE: NETWORKING SERVERS named %%CUPS%%
 # BEFORE: DAEMON
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
 # Add the following lines to /etc/rc.conf to enable samba:
