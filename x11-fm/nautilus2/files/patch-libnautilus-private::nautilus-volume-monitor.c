@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-fm/nautilus/files/patch-libnautilus-private::nautilus-volume-monitor.c,v 1.2 2001/12/05 22:15:04 sobomax Exp $
 
 --- libnautilus-private/nautilus-volume-monitor.c.orig	Wed Oct 10 03:16:39 2001
 +++ libnautilus-private/nautilus-volume-monitor.c	Wed Dec  5 23:58:45 2001
@@ -169,7 +169,7 @@ $FreeBSD$
  	fclose (fh);
 +#else
 +	while ((ent = getfsent ()) != NULL) {
-+		{static int b = 1; while (b);}
++		/*{static int b = 1; while (b);}*/
 +		if (strcmp(ent->fs_vfstype, "swap") == 0)
 +			continue;
 +		volume = create_volume (ent->fs_spec, ent->fs_file);
