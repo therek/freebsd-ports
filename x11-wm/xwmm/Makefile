@@ -2,11 +2,11 @@
 # Date created:		26 Nov 1999
 # Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.4 2000/06/29 07:02:59 obrien Exp $
+# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.5 2000/10/28 08:37:18 imura Exp $
 #
 
 PORTNAME=	xwmm
-PORTVERSION= 	0.7
+PORTVERSION=	0.7
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami

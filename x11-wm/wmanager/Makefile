@@ -2,11 +2,11 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.5 2000/06/22 05:52:15 will Exp $
+# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.6 2000/10/28 16:03:14 kevlo Exp $
 #
 
 PORTNAME=	wmanager
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://kassandra.techfak.uni-bielefeld.de/mtessmer/wmanager/
 EXTRACT_SUFX=	.src.tar.bz2

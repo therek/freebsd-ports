@@ -2,11 +2,11 @@
 # Date created:		12 May 1995
 # Whom:			me
 #
-# $FreeBSD: ports/x11-wm/fvwm/Makefile,v 1.30 2000/04/10 19:49:46 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/fvwm/Makefile,v 1.31 2000/08/03 09:27:53 asami Exp $
 #
 
 PORTNAME=	fvwm
-PORTVERSION= 	1.24r
+PORTVERSION=	1.24r
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.hpc.uh.edu/pub/fvwm/version-1/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/sources/1.x/

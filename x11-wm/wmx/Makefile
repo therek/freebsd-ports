@@ -2,11 +2,11 @@
 # Date created:		11. Jan 1998
 # Whom:			Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11-wm/wmx/Makefile,v 1.9 2000/04/10 19:50:43 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/wmx/Makefile,v 1.10 2000/08/03 09:28:23 asami Exp $
 #
 
 PORTNAME=	wmx
-PORTVERSION= 	5.6
+PORTVERSION=	5.6
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.42.org/pub/wmx/ \
 		http://www.all-day-breakfast.com/wmx/

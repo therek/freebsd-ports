@@ -2,11 +2,11 @@
 # Date created:        19 Januruary 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.19 2000/07/16 12:39:38 nakai Exp $
+# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.20 2000/08/03 09:28:10 asami Exp $
 #
 
 PORTNAME=	mlvwm
-PORTVERSION= 	0.9.1
+PORTVERSION=	0.9.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www2u.biglobe.ne.jp/~y-miyata/mlvwm/
 DISTNAME=	mlvwm091

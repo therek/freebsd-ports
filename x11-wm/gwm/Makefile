@@ -2,11 +2,11 @@
 # Date created:		14 November 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/x11-wm/gwm/Makefile,v 1.12 2000/08/03 09:28:02 asami Exp $
+# $FreeBSD: ports/x11-wm/gwm/Makefile,v 1.13 2000/11/27 21:54:12 markm Exp $
 #
 
 PORTNAME=	gwm
-PORTVERSION= 	1.8d
+PORTVERSION=	1.8d
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		ftp://koala.inria.fr/pub/gwm/

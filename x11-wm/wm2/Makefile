@@ -2,11 +2,11 @@
 # Date created:		16 February 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/wm2/Makefile,v 1.6 1999/10/06 04:30:35 nakai Exp $
+# $FreeBSD: ports/x11-wm/wm2/Makefile,v 1.7 2000/04/10 19:50:35 cpiazza Exp $
 #
 
 PORTNAME=	wm2
-PORTVERSION= 	4.0
+PORTVERSION=	4.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.all-day-breakfast.com/wm2/
 DISTNAME=	${PORTNAME}-4

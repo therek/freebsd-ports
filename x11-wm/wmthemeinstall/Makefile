@@ -2,11 +2,11 @@
 # Date created:		09 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.4 2000/06/22 05:38:46 will Exp $
+# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.5 2000/10/05 06:42:57 reg Exp $
 #
 
 PORTNAME=	wmthemeinstall
-PORTVERSION= 	0.62
+PORTVERSION=	0.62
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	will

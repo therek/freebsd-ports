@@ -2,11 +2,11 @@
 # Date created:        			18 October 1999
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/x11-wm/libepplet/Makefile,v 1.1 2000/07/18 05:37:54 kbyanc Exp $
+# $FreeBSD: ports/x11-wm/libepplet/Makefile,v 1.2 2000/12/25 13:45:45 jedgar Exp $
 #
 
 PORTNAME=	libepplet
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	x11-wm devel
 MASTER_SITES=	ftp://ftp.enlightenment.org/e/epplets/ \
 		ftp://ftp.dti.ad.jp/pub/X/enlightenment/epplets/

@@ -2,11 +2,11 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.78 2001/01/08 02:09:08 sobomax Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.79 2001/01/08 08:54:19 sobomax Exp $
 #
 
 PORTNAME=	windowmaker
-PORTVERSION= 	0.63.1
+PORTVERSION=	0.63.1
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	${MASTER_SITE_WINDOWMAKER} \
 		http://jgo.local.net/cool_downloads/wm/ \

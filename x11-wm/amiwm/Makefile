@@ -2,11 +2,11 @@
 # Date created: 13 November 1997
 # Whom: Douglas Carmichael <dcarmich@mcs.com>
 #
-# $FreeBSD: ports/x11-wm/amiwm/Makefile,v 1.7 1999/08/31 02:59:55 peter Exp $
+# $FreeBSD: ports/x11-wm/amiwm/Makefile,v 1.8 2000/04/10 19:49:36 cpiazza Exp $
 #
 
 PORTNAME=	amiwm
-PORTVERSION= 	0.20.p48
+PORTVERSION=	0.20.p48
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/X11/wm/amiwm/
 DISTNAME=	${PORTNAME}0.20pl48

@@ -2,12 +2,12 @@
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/toolbox/Makefile,v 1.11 2000/04/10 19:50:18 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/toolbox/Makefile,v 1.12 2000/06/18 01:42:14 cpiazza Exp $
 #
 
 PORTNAME=	toolbox
 PORTVERSION=	0.4.6
-CATEGORIES= 	x11-wm
+CATEGORIES=	x11-wm
 MASTER_SITES=	http://www2.bc.edu/~kelleyry/toolbox/
 
 MAINTAINER=	patseal@hyperhost.net

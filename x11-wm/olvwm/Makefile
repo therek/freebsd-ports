@@ -2,11 +2,11 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11-wm/olvwm/Makefile,v 1.22 2000/04/10 19:50:06 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/olvwm/Makefile,v 1.23 2000/08/03 09:28:11 asami Exp $
 #
 
 PORTNAME=	olvwm
-PORTVERSION= 	4.2
+PORTVERSION=	4.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		${MASTER_SITE_XCONTRIB}

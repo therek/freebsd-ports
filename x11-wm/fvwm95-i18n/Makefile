@@ -2,11 +2,11 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.33 2000/06/29 07:02:58 obrien Exp $
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.34 2000/08/03 09:28:00 asami Exp $
 #
 
 PORTNAME=	fvwm95-i18n
-PORTVERSION= 	2.0.43a
+PORTVERSION=	2.0.43a
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/ \
 		ftp://ftp.plig.org/pub/fvwm95/ \

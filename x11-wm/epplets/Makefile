@@ -2,11 +2,11 @@
 # Date created:        18 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.6 2000/06/16 21:52:38 asami Exp $
+# $FreeBSD: ports/x11-wm/epplets/Makefile,v 1.7 2000/07/18 06:43:33 kbyanc Exp $
 #
 
 PORTNAME=	epplets
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.enlightenment.org/e/epplets/
 DISTNAME=	epplet-base-${PORTVERSION}

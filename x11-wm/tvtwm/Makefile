@@ -2,11 +2,11 @@
 # Date created:		5th December 1994
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/x11-wm/tvtwm/Makefile,v 1.18 2000/04/10 19:50:19 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/tvtwm/Makefile,v 1.19 2000/08/03 09:28:16 asami Exp $
 #
 
 PORTNAME=	tvtwm
-PORTVERSION= 	pl11
+PORTVERSION=	pl11
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	window_managers

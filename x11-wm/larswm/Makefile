@@ -2,11 +2,11 @@
 # Date created: Sat Oct  7 21:25:11 EDT 2000
 # Whom: lab@fnurt.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/larswm/Makefile,v 1.1 2001/01/03 12:54:27 nbm Exp $
 #
 
 PORTNAME=	larswm
-PORTVERSION= 	7.0.13
+PORTVERSION=	7.0.13
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.fnurt.net/larswm/
 
