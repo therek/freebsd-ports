@@ -2,13 +2,13 @@
 # Date created:				Thu 29 Jun 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/asp2php/Makefile,v 1.5 2000/12/21 09:07:50 will Exp $
+# $FreeBSD: ports/www/asp2php/Makefile,v 1.6 2000/12/21 22:55:57 will Exp $
 #
 
 PORTNAME=	asp2php
 PORTVERSION=	0.75.11
 CATEGORIES=	www
-MASTER_SITES=	http://www.naken.cc/asp2php/
+MASTER_SITES=	http://home.i1.net/~naken/asp2php/
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
