@@ -2,17 +2,23 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.10 2001/06/09 12:59:32 roam Exp $
 #
 
 PORTNAME=	upclient
 PORTVERSION=	4.2.1.21
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://uptimes.atomicvoid.net/files/ \
 		ftp://ftp.uptimes.net/pub/uptimes/ \
 		http://www.uptimes.net/download/
 
 MAINTAINER=	clefevre@redirect.to
+
+BROKEN=		The 'uptime' project is closed for an undetermined period of \
+		time. You are advised to shutdown your uptime client until \
+		the new version is ready. See http://www.uptimes.net/ for \
+		details.
 
 ALL_TARGET=	bsd
 BUILD_WRKSRC=	${WRKSRC}/src
