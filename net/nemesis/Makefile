@@ -2,13 +2,13 @@
 # Date created:			  Fri July 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/nemesis/Makefile,v 1.5 2001/01/16 17:31:53 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nemesis
-PORTVERSION=	1.2
+PORTVERSION=	1.32
 CATEGORIES=	net security
-MASTER_SITES=	http://www.packetninja.net/nemesis/
+MASTER_SITES=	http://jeff.wwti.com/nemesis/
 
 MAINTAINER=	ports@FreeBSD.org
 
