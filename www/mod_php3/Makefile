@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.92 1999/08/31 02:42:40 peter Exp $
+# $FreeBSD: ports/www/apache13-php3/Makefile,v 1.93 1999/09/08 13:43:12 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -11,10 +11,10 @@ PKGNAME=	apache+php-${VERSION_APACHE}+${VERSION_PHP}
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		http://www.rge.com/pub/infosystems/apache/dist/ \
-		http://www.php.net/${PHP_DISTDIR}/ \
-		http://us.php.net/${PHP_DISTDIR}/ \
 		http://www.modssl.org/source/ \
 		ftp://ftp.modssl.org/source/ \
+		http://www.php.net/${PHP_DISTDIR}/ \
+		http://us.php.net/${PHP_DISTDIR}/ \
 		http://www.apache.de/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
 		http://php.he.net/${PHP_DISTDIR}/ \
