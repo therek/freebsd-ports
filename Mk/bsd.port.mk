@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.426 2002/10/02 07:18:17 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.427 2002/11/03 05:43:49 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
