@@ -2,13 +2,13 @@
 # Date created:        28 November 1999
 # Whom:                kzentner
 #
-# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.8 2000/09/06 03:29:46 ade Exp $
+# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.9 2000/10/05 07:22:27 reg Exp $
 #
 
 PORTNAME=	soundtracker
-PORTVERSION=	0.5.7
+PORTVERSION=	0.6.2
 CATEGORIES=	audio gnome
-MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.5/
+MASTER_SITES=	ftp://ftp.soundtracker.org/pub/soundtracker/v0.6/
 
 MAINTAINER=	kzentner@u.washington.edu
 
