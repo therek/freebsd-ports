@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.101 2000/01/27 13:05:20 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.102 2000/02/03 17:07:57 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -171,4 +171,10 @@ clean:
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
+
+# Modssl needs to include bsd.port.pre.mk, so correct for this situation.
+.if defined(_PREMKINCLUDED)
+.include <bsd.port.post.mk>
+.else
 .include <bsd.port.mk>
+.endif
