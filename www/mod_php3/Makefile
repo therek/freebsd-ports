@@ -2,12 +2,12 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.127 2001/05/24 21:41:48 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	mod_php3
 PORTVERSION=	3.0.18
-PORTREVISION=	2
+PORTREVISION?=	2
 CATEGORIES?=	www
 MASTER_SITES=	ftp://ftp.php.net/pub/${PHP_DISTDIR}/ \
 		http://us.php.net/${PHP_DISTDIR}/ \
@@ -39,7 +39,8 @@ IS_INTERACTIVE=	yes
 .endif
 
 .if defined(STANDALONE)
-CONFIGURE_ARGS=	--with-config-file-path=${PREFIX}/etc/php.standalone
+CONFIGURE_ARGS=	--with-config-file-path=${PREFIX}/etc/php.standalone \
+		--enable-discard-path
 .else
 CONFIGURE_ARGS=	--with-apxs=${PREFIX}/sbin/apxs \
 		--with-config-file-path=${PREFIX}/etc
