@@ -2,11 +2,11 @@
 # Date created:                 10 Jun 1999
 # Whom:                         Hyper NIKKI System Project <hnsmaster@h14m.org>
 #
-# $FreeBSD: ports/japanese/hns/Makefile,v 1.1 1999/12/27 01:24:33 steve Exp $
+# $FreeBSD: ports/japanese/hns/Makefile,v 1.2 2000/04/11 14:13:52 knu Exp $
 #
 
 PORTNAME=	hns
-PORTVERSION=	2.00.3
+PORTVERSION=	2.00.4
 CATEGORIES=	japanese www perl5
 MASTER_SITES=	http://www.h14m.org/dist/
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}-pl${PORTVERSION:E}
