@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.253 2000/01/24 04:12:42 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.254 2000/01/25 13:23:02 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -263,13 +263,20 @@
     SUBDIR += vfxdvi360
     SUBDIR += vfxdvi400
     SUBDIR += vfxdvi600
-    SUBDIR += vfxdvik
     SUBDIR += w3
     SUBDIR += w3m
     SUBDIR += w3m-ssl
     SUBDIR += weblint97
     SUBDIR += wine
     SUBDIR += word
+    SUBDIR += xdvik-vflib
+    SUBDIR += xdvik-vflib-pk118
+    SUBDIR += xdvik-vflib-pk240
+    SUBDIR += xdvik-vflib-pk300
+    SUBDIR += xdvik-vflib-pk360
+    SUBDIR += xdvik-vflib-pk400
+    SUBDIR += xdvik-vflib-pk600
+    SUBDIR += xdvik-vflib-pkall
     SUBDIR += xemacs21-canna
     SUBDIR += xemacs21-canna+wnn4
     SUBDIR += xemacs21-canna+wnn6
