@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.304 2000/11/07 15:36:54 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.305 2000/11/20 00:49:51 dburr Exp $
 #
 
     SUBDIR += 221upgrade
@@ -71,6 +71,7 @@
     SUBDIR += gwhich
     SUBDIR += hello
     SUBDIR += heyu
+    SUBDIR += histring
     SUBDIR += iselect
     SUBDIR += jargon
     SUBDIR += jive
