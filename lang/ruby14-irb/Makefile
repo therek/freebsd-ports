@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby14-irb/Makefile,v 1.11 2000/09/07 05:44:02 knu Exp $
+# $FreeBSD: ports/lang/ruby14-irb/Makefile,v 1.12 2000/09/26 08:02:15 knu Exp $
 #
 
 PORTNAME=	irb
@@ -20,12 +20,12 @@ RUBY_VER=	1.4
 
 USE_RUBY=	yes
 
-NO_BUILD=	yes
+RUBY_SHEBANG_FILES=	${WRKSRC}/irb.rb
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+NO_BUILD=	yes
 
 post-patch:
-	${PERL} -i -pe '$$. == 1 && s,^#!\s*\S+,#!${RUBY},' ${WRKSRC}/irb.rb
 	${RM} -f ${WRKSRC}/instirb.rb
 
 do-install:
