@@ -2,7 +2,7 @@
 # Date created:		19 Feb 1998
 # Whom:			eivind
 #
-# $FreeBSD: ports/games/xscavenger/Makefile,v 1.13 1999/09/25 17:23:32 steve Exp $
+# $FreeBSD: ports/games/xscavenger/Makefile,v 1.14 2000/04/14 12:28:15 asami Exp $
 #
 
 PORTNAME=	xscavenger
@@ -16,10 +16,9 @@ MAINTAINER=	eivind@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES=yes
 MAN6=		scavenger.6
 
-post-install:
-	@${INSTALL_MAN} ${WRKSRC}/scavenger.6 ${PREFIX}/man/man6/scavenger.6
+post-extract:
+	(cd ${WRKSRC}; ${CP} scavenger.6 scavenger.man)
 
 .include <bsd.port.mk>
