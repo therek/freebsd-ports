@@ -3,7 +3,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.36 1999/10/09 22:11:21 sada Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.37 2000/03/07 20:34:02 sada Exp $
 #
 
 DISTNAME?=	netscape-3.04
@@ -20,7 +20,7 @@ ONLY_FOR_ARCHS=	i386
 USE_XLIB=	yes
 NO_LATEST_LINK=	yes
 NO_WRKSUBDIR=	yes
-PKGREQ=		${PORTSDIR}/www/netscape4-communicator/pkg/REQ
+PKGREQ=		${PORTSDIR}/www/netscape4-communicator/pkg/REQ.aout
 
 .if defined(USE_128BIT)
 MASTER_SITES+=	ftp://ftp.fortify.net/pub/Fortify/ \
