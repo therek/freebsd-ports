@@ -3,7 +3,7 @@
 # Date created:         27 November 1999
 # Whom:                 Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.9 2000/04/14 17:43:54 knu Exp $
+# $FreeBSD: ports/graphics/linux_glx/Makefile,v 1.10 2000/04/15 15:13:44 knu Exp $
 #
 
 PORTNAME=	glx
@@ -21,6 +21,7 @@ USE_BZIP2=	yes
 NO_BUILD=	yes
 
 PREFIX=		/compat/linux
+NO_MTREE=	yes
 
 WRKSRC=		${WRKDIR}/linux_glx
 # switch off stripping during INSTALL_PROGRAM
