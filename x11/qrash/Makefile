@@ -3,15 +3,16 @@
 # Date created:		Oct 27, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/qrash/Makefile,v 1.1 1999/12/27 02:24:14 steve Exp $
 #
 
 DISTNAME=	qrash
 PKGNAME=	qrash-1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://metalab.unc.edu/pub/Linux/X11/demos/ \
-		ftp://metalab.unc.edu/pub/Linux/X11/demos/ \
-		ftp://qmg.rising.ru/pub/demos/qmg/
+MASTER_SITES=	http://qmg.org/files/demos/qmg/ \
+		ftp://qmg.org/pub/demos/qmg/ \
+		${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR= X11/demos
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	trevor@jpj.net
