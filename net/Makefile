@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.509 2001/04/02 20:08:34 asmodai Exp $
+# $FreeBSD: ports/net/Makefile,v 1.510 2001/04/05 16:26:35 dirk Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -147,6 +147,7 @@
     SUBDIR += kmud
     SUBDIR += ksamba
     SUBDIR += kxicq
+    SUBDIR += kxicq2
     SUBDIR += lambdamoo
     SUBDIR += ldapmodule
     SUBDIR += ldapsdk
