@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.383 2001/09/03 17:50:54 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -88,6 +88,7 @@
     SUBDIR += gnomelibs
     SUBDIR += gnumeric
     SUBDIR += gp
+    SUBDIR += gqmpeg
     SUBDIR += grep
     SUBDIR += groff
     SUBDIR += gtkicq
