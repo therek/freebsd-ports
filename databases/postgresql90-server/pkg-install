@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/databases/postgresql7/pkg-install,v 1.6 2002/02/19 08:23:21 vanilla Exp $
+# $FreeBSD: ports/databases/postgresql7/pkg-install,v 1.7 2003/01/04 01:10:13 seanc Exp $
 
 PATH=/bin:/usr/sbin
 
@@ -11,7 +11,7 @@ backupwarning() {
   =========== BACKUP YOUR DATA! =============
   As always, backup your data before
   upgrading. If the upgrade leads to a higher
-  minor revision (e.g. 7.2.x -> 7.3), a dump
+  minor revision (e.g. 7.3.x -> 7.4), a dump
   and restore of all databases is
   required. This is *NOT* done by the port!
 
