@@ -2,7 +2,7 @@
 # Date created:				11 April 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gnomermind/Makefile,v 1.1 2001/04/11 12:56:16 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomermind
@@ -13,12 +13,16 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	msgfmt-old:${PORTSDIR}/devel/gettext-old
+
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib" \
+		MSGFMT="${LOCALBASE}/bin/msgfmt-old" \
+		XGETTEXT="${LOCALBASE}/bin/xgettext-old"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
