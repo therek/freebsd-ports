@@ -2,7 +2,7 @@
 # Date created:				Tue Sep 11 02:08:49 PDT 2001
 # Whom:	      				Michael Haro <mharo@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-Crypt-OpenPGP/Makefile,v 1.1 2001/09/12 01:12:58 mharo Exp $
 #
 
 PORTNAME=	Crypt-OpenPGP
@@ -21,10 +21,11 @@ BUILD_DEPENDS=	${PERLBASE}/${PERL_ARCH}/Crypt/DES.pm:${PORTSDIR}/security/p5-Cry
 		${PERLBASE}/${PERL_ARCH}/Crypt/IDEA.pm:${PORTSDIR}/security/p5-Crypt-IDEA \
 		${PERLBASE}/Crypt/DSA.pm:${PORTSDIR}/security/p5-Crypt-DSA \
 		${PERLBASE}/Crypt/RSA.pm:${PORTSDIR}/security/p5-Crypt-RSA \
+		${PERLBASE}/${PERL_ARCH}/Crypt/RIPEMD160.pm:${PORTSDIR}/security/p5-Crypt-RIPEMD160 \
 		${PERLBASE}/${PERL_ARCH}/Digest/SHA1.pm:${PORTSDIR}/security/p5-Digest-SHA1 \
 		${PERLBASE}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib \
 		${PERLBASE}/${PERL_ARCH}/Math/Pari.pm:${PORTSDIR}/math/p5-Math-Pari \
-		${PERLBASE}/Data/Buffer.pm:${PORTSDIR}/misc/p5-Data-Buffer \
+		${PERLBASE}/Data/Buffer.pm:${PORTSDIR}/misc/p5-Data-Buffer
 
 RESTRICTED=	"Crypto; export-controlled"
 
