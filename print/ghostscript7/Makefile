@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.54 2001/09/12 17:05:47 knu Exp $
+# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.55 2001/09/27 18:02:57 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -304,7 +304,7 @@ post-install:
 .endfor
 # for reading encrypted PDFs
 	${ECHO_MSG} ">>> installing support for encrypted PDF files ..."
-	${INSTALL_DATA} ${DISTDIR}/${DECRYPT_PDF} \
+	${INSTALL_DATA} ${_DISTDIR}/${DECRYPT_PDF} \
 		${PREFIX}/share/ghostscript/${PORTVERSION}/lib
 #
 # now NOPORTDOCS dependend stuff
