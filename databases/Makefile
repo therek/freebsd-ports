@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.100 2001/04/13 19:10:11 knu Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.101 2001/04/27 07:40:49 ijliao Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -35,6 +35,7 @@
     SUBDIR += mytop
     SUBDIR += p5-ApacheDBILogConfig
     SUBDIR += p5-ApacheDBILogger
+    SUBDIR += p5-AsciiDB-TagFile-1.06
     SUBDIR += p5-BerkeleyDB
     SUBDIR += p5-DBD-CSV
     SUBDIR += p5-DBD-Pg
