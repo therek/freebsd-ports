@@ -2,13 +2,14 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.1 2000/07/03 00:34:19 will Exp $
+# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.2 2001/02/18 08:01:32 will Exp $
 #
 
 PORTNAME=	viewcvs
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	devel python
-MASTER_SITES=	http://www.lyra.org/viewcvs/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -18,7 +19,7 @@ RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 NO_BUILD=	yes
 
 pre-install:
-	${PERL} -pi -e "s:/usr/local/viewcvs:${PREFIX}/share/viewcvs:g" ${WRKSRC}/viewcvs-install
+	${PERL} -pi -e "s:/usr/local/viewcvs-dev:${PREFIX}/share/viewcvs:g" ${WRKSRC}/viewcvs-install
 
 do-install:
 	(cd ${WRKSRC} && ${LOCALBASE}/bin/python ${WRKSRC}/viewcvs-install)
