@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/gmime2/pkg-plist,v 1.2 2003/06/02 14:47:56 naddy Exp $
 bin/gmime-config
 bin/uudecode
 bin/uuencode
@@ -49,11 +49,10 @@ include/gmime-2.0/gmime/internet-address.h
 include/gmime-2.0/gmime/md5-utils.h
 lib/gmimeConf.sh
 lib/libgmime-2.0.a
-lib/libgmime-2.0.la
 lib/libgmime-2.0.so
 lib/libgmime-2.0.so.2
 lib/pkgconfig/gmime-2.0.pc
-share/gtk-doc/html/gmime-2.0/c1694.html
+share/gtk-doc/html/gmime-2.0/c1978.html
 share/gtk-doc/html/gmime-2.0/ciphercontexts.html
 share/gtk-doc/html/gmime-2.0/classes.html
 share/gtk-doc/html/gmime-2.0/core.html
