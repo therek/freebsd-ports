@@ -2,11 +2,11 @@
 # Date created:				21 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gcompris/Makefile,v 1.8 2000/12/28 11:44:19 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcompris
-PORTVERSION=	0.3.5
+PORTVERSION=	0.4.1
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -26,6 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 post-extract:
 	@${LN} -sf ${LOCALBASE}/share/automake/install-sh ${WRKSRC}/install-sh
 	@${LN} -sf ${LOCALBASE}/share/automake/mkinstalldirs ${WRKSRC}/mkinstalldirs
+	@${RM} -f ${WRKSRC}/config.cache
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
