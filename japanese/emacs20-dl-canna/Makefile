@@ -3,18 +3,19 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.9 1999/08/31 06:45:28 mharo Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.10 1999/09/08 06:05:51 asami Exp $
 #
 
 DISTNAME=	emacs-canna-${DLCANNA_VER}
 PKGNAME=	ja-emacs20-dl-canna-${DLCANNA_VER}
 CATEGORIES=	japanese editors
 MASTER_SITES=	ftp://ftp.jaist.ac.jp/pub/GNU/elisp/emacs-20-dl/ \
-		ftp://ftp.ring.gr.jp/pub/text/elisp/jaist/emacs-20-dl/
+		${MASTER_SITE_PORTS_JP} 
 
 MAINTAINER=	shige@FreeBSD.org
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
+# Building this port requires emacs-dl source tree: ${EMACSDL_DIR}:configure
 BUILD_DEPENDS=	emacs-dl-${EMACS_VER}:${EMACSDL_DIR} \
 		/nonexistent:${EMACSDL_DIR}:configure \
 		${APEL_DEPENDS}:${PORTSDIR}/editors/apel-emacs20
