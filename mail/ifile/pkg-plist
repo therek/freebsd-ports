@@ -1,6 +1,2 @@
-@comment $FreeBSD: ports/mail/ifile/pkg-plist,v 1.1 2002/02/11 09:21:31 kevlo Exp $
+@comment $FreeBSD: ports/mail/ifile/pkg-plist,v 1.2 2002/09/19 21:30:38 ijliao Exp $
 bin/ifile
-bin/ifilter.mh
-bin/irefile.mh
-bin/knowledge_base.mh
-bin/news2mail
