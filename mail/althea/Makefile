@@ -2,12 +2,11 @@
 # Date created:		Feb 26, 2001
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/mail/althea/Makefile,v 1.1 2001/02/26 21:05:19 mi Exp $
+# $FreeBSD: ports/mail/althea/Makefile,v 1.2 2001/02/28 15:50:57 kevlo Exp $
 #
 
 PORTNAME=	althea
-PORTVERSION=	0.3.4
-PORTREVISION=	1
+PORTVERSION=	0.4.1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -23,6 +22,7 @@ post-patch:
 	@${PERL} -pi -e "s|/etc|${PREFIX}/etc|g" \
 		${WRKSRC}/Documentation/help.html \
 		${WRKSRC}/load_config.cpp \
-		${WRKSRC}/load_config.h
+		${WRKSRC}/load_config.h \
+		${WRKSRC}/save_config.h
 
 .include <bsd.port.mk>
