@@ -1,9 +1,8 @@
-@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.5 2004/05/12 17:01:05 hrs Exp $
-bin/t1mapper
+@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.6 2004/06/18 15:29:43 hrs Exp $
 bin/xdvi
-bin/xdvi-xaw.bin
-bin/xdvi.bin
+bin/xdvi-motif.bin
 bin/xdvizilla
+%%TEXMF%%/xdvi/XDvi.xdvik-tetex
 %%TEXMF%%/xdvi/xdvi.cfg
 %%TEXMF%%/xdvi/pixmaps/toolbar.xpm
 %%TEXMF%%/xdvi/pixmaps/toolbar2.xpm
