@@ -1,13 +1,13 @@
 # New ports collection makefile for:   actx
-# Version required:    0.99.1
+# Version required:    0.99.2
 # Date created:        19 Feb 1999
 # Whom:                Shinya Esu <esu@yk.rim.or.jp>
 #
-# $FreeBSD: ports/games/actx/Makefile,v 1.2 1999/08/25 06:02:46 obrien Exp $
+# $FreeBSD: ports/games/actx/Makefile,v 1.3 1999/10/10 19:44:21 flathill Exp $
 #
 
-DISTNAME=	actx-0.99.1
-PKGNAME=	actx-0.99.1
+DISTNAME=	actx-0.99.2
+PKGNAME=	actx-0.99.2
 CATEGORIES=	games
 MASTER_SITES=	http://www.astr.tohoku.ac.jp/~taji/ActX/
 
