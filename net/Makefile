@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.435 2000/11/22 17:51:37 roger Exp $
+# $FreeBSD: ports/net/Makefile,v 1.436 2000/11/29 02:28:56 msmith Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -293,6 +293,7 @@
     SUBDIR += xicq
     SUBDIR += xipmsg
     SUBDIR += xisp
+    SUBDIR += xsmbrowser
     SUBDIR += xtraceroute
     SUBDIR += xtradius
     SUBDIR += xwhois
