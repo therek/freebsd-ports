@@ -2,15 +2,15 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.69 2001/06/05 11:38:34 sobomax Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.70 2001/07/06 10:35:32 andreas Exp $
 #
 
 PORTNAME=	ghostscript
 PORTVERSION=	6.50
 PORTREVISION=	6
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/gs650/ \
-	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/fonts/ \
+MASTER_SITES=	ftp://ftp.fh-koblenz.de/pub/Postscript/Ghostscript/aladdin/gs650/ \
+	ftp://ftp.fh-koblenz.de/pub/Postscript/Ghostscript/aladdin/fonts/ \
 	http://www.gelhaus.net/hp880c/1.4beta/ \
 	http://home.t-online.de/home/Martin.Lottermoser/pcl3dist/ \
 	http://www.harsch.net/Download/ \
