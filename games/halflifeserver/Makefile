@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.1 2000/07/15 14:04:39 markm Exp $
 #
 
 PORTNAME=	HLDS
@@ -13,6 +13,8 @@ DISTFILES=	hlds_l3101.tar.gz cs_beta66.tar.gz
 EXTRACT_ONLY=
 
 MAINTAINER=	markm@FreeBSD.org
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 BUILD_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
