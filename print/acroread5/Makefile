@@ -3,7 +3,7 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.17 1999/08/31 01:44:27 peter Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.18 1999/08/31 06:49:45 mharo Exp $
 #
 
 DISTNAME=	linux-ar-40
@@ -33,6 +33,7 @@ post-install:
 	  ${PATCH} --quiet < ${FILESDIR}/acroread.diff && \
 	  ${INSTALL_SCRIPT} ${PREFIX}/Acrobat4/bin/acroread \
 	     ${PREFIX}/bin/acroread4 && ${RM} acroread.orig
+	@strip ${PREFIX}/Acrobat4/Reader/intellinux/bin/acroread
 	@brandelf -t Linux ${PREFIX}/Acrobat4/Reader/intellinux/bin/acroread
 	@${CHMOD} +x ${PREFIX}/bin/acroread4
 	@${ECHO_MSG} "Be sure to read the license agreement in"
