@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.49 2001/04/12 16:57:17 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.50 2001/04/17 18:08:24 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -55,7 +55,9 @@ post-patch:
 .endfor
 
 post-install:
+.if ${STRIP} == -s
 	strip ${RUBY}
+.endif
 .if empty(RUBY_SUFFIX)
 	${MV} -f ${RUBY} ${RUBY}${_RUBY_SUFFIX}
 	${LN} -fs ${RUBY}${_RUBY_SUFFIX} ${RUBY}
@@ -88,6 +90,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/README* ${RUBY_DOCDIR}/pty
 	${MKDIR} ${RUBY_DOCDIR}/readline
 	${INSTALL_DATA} ${WRKSRC}/ext/readline/README ${RUBY_DOCDIR}/readline
+	${CP} -R ${WRKSRC}/doc/irb ${RUBY_DOCDIR}/
 .endif
 	@${CAT} ${PKGMESSAGE}
 
