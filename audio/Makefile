@@ -1,10 +1,11 @@
-# $FreeBSD: ports/audio/Makefile,v 1.162 2000/09/16 08:39:39 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.163 2000/09/16 08:53:21 will Exp $
 #
 
     SUBDIR += afsp
     SUBDIR += amp
     SUBDIR += ascd
     SUBDIR += aumix
+    SUBDIR += autozen
     SUBDIR += bladeenc
     SUBDIR += btc
     SUBDIR += cam
