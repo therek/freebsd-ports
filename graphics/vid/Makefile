@@ -2,11 +2,12 @@
 # Date created:		Tue Dec  5 13:32:13 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org?
 #
-# $FreeBSD: ports/graphics/vid/Makefile,v 1.2 2000/12/05 14:14:38 roger Exp $
+# $FreeBSD: ports/graphics/vid/Makefile,v 1.3 2001/01/16 17:31:01 sobomax Exp $
 #
 
 PORTNAME=	vid
 PORTVERSION=	1.0.1
+PORTREVSION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://members.home.com/housel/
 
