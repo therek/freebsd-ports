@@ -3,16 +3,16 @@
 # Date created:			Jun 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/math/spar/Makefile,v 1.3 2001/06/19 05:35:26 ijliao Exp $
+# $FreeBSD: ports/math/spar/Makefile,v 1.4 2001/06/25 12:17:03 ijliao Exp $
 #
 
 PORTNAME=	spar
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.10
 CATEGORIES=	math devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt:${PORTSDIR}/devel/libgnugetopt
 
