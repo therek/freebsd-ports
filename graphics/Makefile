@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.202 2000/06/09 22:51:49 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.203 2000/06/15 10:48:37 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -20,6 +20,7 @@
     SUBDIR += dia
     SUBDIR += diacanvas
     SUBDIR += dore
+    SUBDIR += ecg2png
     SUBDIR += electriceyes
     SUBDIR += enfle
     SUBDIR += eog
