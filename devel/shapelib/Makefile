@@ -2,7 +2,7 @@
 # Date created:				23 Apr 2001
 # Whom:					Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/shapelib/Makefile,v 1.2 2001/05/31 10:25:37 sobomax Exp $
 #
 
 PORTNAME=	shapelib
@@ -12,8 +12,7 @@ MASTER_SITES=	ftp://gdal.velocet.ca/pub/outgoing/
 
 MAINTAINER=	aa8vb@nc.rr.com
 
-BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
-
+USE_LIBTOOL=	yes
 ALL_TARGET=	lib
 INSTALLS_SHLIB=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.12 2001/01/07 13:10:07 lkoeller Exp $
+# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.13 2001/01/16 17:33:19 sobomax Exp $
 #
 
 PORTNAME=	XmHTML
@@ -13,10 +13,10 @@ MASTER_SITES=	http://www.xs4all.nl/~ripley/XmHTML/dist/
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.de
 
-BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
+USE_LIBTOOL=	yes
 USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
