@@ -2,32 +2,22 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-Sablotron/Makefile,v 1.1 2000/12/19 13:21:20 will Exp $
+# $FreeBSD: ports/textproc/p5-XML-Sablotron/Makefile,v 1.2 2001/02/05 16:35:02 olgeni Exp $
 #
 
 PORTNAME=	XML-Sablotron
-PORTVERSION=	0.44
+PORTVERSION=	0.51
 CATEGORIES=	textproc perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	XML
+MASTER_SITES=	http://download.gingerall.cz/sablot/
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@protey.ru
 
-LIB_DEPENDS=	sablot.44:${PORTSDIR}/textproc/sablotron
+LIB_DEPENDS=	sablot.51:${PORTSDIR}/textproc/sablotron
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		XML::Sablotron.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL -d ${PREFIX} \
-			PREFIX=${PREFIX} \
-			CC="${CC}" \
-			CCFLAGS="${CFLAGS}" \
-			INSTALLSCRIPT=${PREFIX}/bin
 
 .include <bsd.port.mk>
