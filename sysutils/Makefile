@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.170 2001/03/31 02:08:19 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.171 2001/03/31 03:21:48 will Exp $
 #
     SUBDIR += yawho
 
@@ -60,6 +60,7 @@
     SUBDIR += ipa
     SUBDIR += ipsc
     SUBDIR += kdeadmin
+    SUBDIR += koncd
     SUBDIR += lavaps
     SUBDIR += libretto-config
     SUBDIR += lmmon
