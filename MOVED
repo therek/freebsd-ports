@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.372 2004/03/16 20:34:18 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.373 2004/03/19 01:53:30 ijliao Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -978,3 +978,4 @@ sysutils/xwatch||2004-03-09|obsolete-distfile deleted by author
 textproc/dico|french/dico|2004-03-14|better category
 x11-fonts/Xft|x11-fonts/libXft|2004-03-16|port renamed
 devel/ulex|devel/ocaml-ulex|2004-03-19|port renamed
+textproc/yaxi|textproc/ocaml-yaxi|2004-03-19|port renamed
