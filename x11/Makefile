@@ -1,8 +1,9 @@
-# $FreeBSD: ports/x11/Makefile,v 1.279 2000/02/23 23:36:51 jhb Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.280 2000/03/07 03:27:25 billf Exp $
 #
 
     SUBDIR += 9term
     SUBDIR += XFree86
+    SUBDIR += XFree86-aoutlibs
     SUBDIR += XFree86-contrib
     SUBDIR += aterm
     SUBDIR += bgrot
