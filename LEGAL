@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.398 2005/04/01 01:21:15 linimon Exp $
+# $FreeBSD: ports/LEGAL,v 1.399 2005/04/02 19:25:02 lioux Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -484,10 +484,6 @@ rarbsd-*		archivers/rar		Only unmodified original package
 ringtonetools-*		misc/ringtonetools	Not free for commercial organizations
 rkive3.1.tar.Z		news/rkive		Restrictive copyright
 rman-3.*		textproc/rman		Do not sell for profit
-robocode-*		games/robocode		Restrictive license.  Particularly,
-						redistribution is not permitted
-						and user should delete software
-						after 60 days
 linux-realplayer-*.rpm	audio/linux-realplayer	Redistribution not allowed
 rpm/i386/8.0/*		emulators/linux_base-8	Binaries under GNU GPL
 						without accompanying source
