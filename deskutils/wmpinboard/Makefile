@@ -2,7 +2,7 @@
 # Date created:			17 January 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.12 2000/08/03 09:22:51 asami Exp $
+# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.13 2000/10/11 21:52:42 jim Exp $
 #
 
 PORTNAME=	wmpinboard
@@ -20,12 +20,8 @@ USE_IMAKE=	yes
 USE_XPM=	yes
 
 MAN1=		wmpinboard.1
-MANCOMPRESSED=	no
 
-do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/wmpinboard ${X11BASE}/bin
-
-post-install:
-	@${INSTALL_MAN} ${WRKSRC}/wmpinboard.1 ${PREFIX}/man/man1
+post-extract:
+	(cd ${WRKSRC}; ${CP} -p wmpinboard.1 wmpinboard.man)
 
 .include <bsd.port.mk>
