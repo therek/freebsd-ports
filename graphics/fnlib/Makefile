@@ -3,14 +3,15 @@
 # Date created:		23 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.12 1999/08/31 06:44:56 mharo Exp $
+# $FreeBSD: ports/graphics/fnlib/Makefile,v 1.13 1999/10/08 03:29:37 nakai Exp $
 #
 
 DISTNAME=	fnlib-0.4
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://www.rasterman.com/pub/enlightenment/enlightenment/ \
-		ftp://ftp.enlightenment.org/pub/enlightenment/enlightenment/ \
-		ftp://ftp.labs.redhat.com/pub/imlib/TAR/
+MASTER_SITES=	http://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/ \
+		ftp://ftp.leirianet.pt/pub/X11/enlightenment/enlightenment/ \
+		ftp://ftp.dti.ad.jp/pub/X/enlightenment/enlightenment/ \
+		ftp://mirror.nucba.ac.jp/mirror/enlightenment/enlightenment/
 
 MAINTAINER=	vanilla@FreeBSD.org
 
