@@ -3,13 +3,16 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.21 1999/10/11 04:41:53 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.22 1999/12/05 19:29:51 mharo Exp $
 #
 
 DISTNAME=	proftpd-1.2.0pre9
 PKGNAME=	proftpd-1.2.0p9
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://ftp.tos.net/pub/proftpd/
+MASTER_SITES=	ftp://ftp.tos.net/pub/proftpd/ \
+		ftp://ftp.stikman.com/pub/proftpd/ \
+		ftp://ftp.linux.co.uk:/pub/packages/proftpd/ \
+		ftp://ftp.drenik.net:/linux/ftp/proftpd/
 
 MAINTAINER=	mharo@FreeBSD.org
 
@@ -20,11 +23,14 @@ MAN8=	proftpd.8 ftpshut.8
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
 
-CONFIGURE_ARGS=	--localstatedir=/var/run
+CONFIGURE_ARGS=	--localstatedir=/var/run \
+		--disable-sendfile
 
 MODULES?=	mod_ratio
 
+.if !empty(MODULES)
 CONFIGURE_ARGS+= --with-modules=${MODULES}
+.endif
 
 pre-configure:
 	@${ECHO_MSG} "==> Configuring with ${MODULES}"
