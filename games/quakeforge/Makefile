@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/games/quakeforge/Makefile,v 1.9 2000/06/02 08:30:11 sobomax Exp $
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.10 2000/06/14 13:21:13 sobomax Exp $
 #
 
 PORTNAME=	QuakeForge
@@ -59,7 +59,7 @@ do-install:
 	@${CP} ${PKGDIR}/PLIST ${PLIST}
 
 .if defined(WITH_GLX)
-	@${CAT} ${PKGDIR}/PLIST.glx >>${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.glx >>${PLIST}
 .endif
 
 .if !defined(NO_WAD)
@@ -71,7 +71,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${binary}.sh ${PREFIX}/bin/${binary}
 	@${ECHO} share/quakeforge/${binary} >>${PLIST}
 .endfor
-	@${CAT} ${PKGDIR}/PLIST.wad >>${PLIST}
+	@${CAT} ${PKGDIR}/pkg-plist.wad >>${PLIST}
 .endif
 
 .for binary in ${BINARIES}
