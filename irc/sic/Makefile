@@ -2,11 +2,11 @@
 # Date created:		04 Apr 1998
 # Whom:			sec@42.org
 #
-# $FreeBSD: ports/irc/sic/Makefile,v 1.5 1999/08/25 06:12:57 obrien Exp $
+# $FreeBSD: ports/irc/sic/Makefile,v 1.6 2000/04/12 06:28:27 obrien Exp $
 #
 
 PORTNAME=	sic
-PORTVERSION=	0.18a
+PORTVERSION=	0.22a
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/irc/sic/
 EXTRACT_SUFX=	.tgz
