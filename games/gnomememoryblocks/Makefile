@@ -2,7 +2,7 @@
 # Date created:				10th July 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gnomememoryblocks/Makefile,v 1.4 2000/09/13 08:51:43 sobomax Exp $
+# $FreeBSD: ports/games/gnomememoryblocks/Makefile,v 1.5 2000/10/05 07:10:40 reg Exp $
 #
 
 PORTNAME=	gnomememoryblocks
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gnome-memblocks
 DISTNAME=	gnome-memblocks-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
