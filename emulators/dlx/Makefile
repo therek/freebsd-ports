@@ -3,14 +3,14 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/dlx/Makefile,v 1.7 2000/03/22 00:26:49 obrien Exp $
+# $FreeBSD: ports/emulators/dlx/Makefile,v 1.8 2000/04/12 04:55:21 mharo Exp $
 #
 
 PORTNAME=	dlx
 PORTVERSION=	2.0
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://max.stanford.edu/pub/hennessy-patterson.software/
-DISTFILE=	${PORTNAME}
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org

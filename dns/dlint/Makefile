@@ -3,14 +3,14 @@
 # Date created:			  Wed Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/dlint/Makefile,v 1.6 2000/03/22 00:26:48 obrien Exp $
+# $FreeBSD: ports/net/dlint/Makefile,v 1.7 2000/04/09 18:11:02 cpiazza Exp $
 #
 
 PORTNAME=	dlint
 PORTVERSION=	1.3.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.domtools.com/pub/
-DISTFILES=	dlint-${PORTVERSION}
+DISTNAME=	dlint${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
