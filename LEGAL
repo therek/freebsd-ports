@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.175 2000/10/01 15:28:24 alex Exp $
+# $FreeBSD: ports/LEGAL,v 1.176 2000/10/12 02:07:49 trevor Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -78,6 +78,19 @@ dnews3			ports/news/dnews	Only free for schools and
 fmsx-*			ports/emulators/fmsx	Unclear legal status of
 						distributed ROMs.
 fnorb-*			ports/devel/fnorb	Cannot use commercially
+freefonts		ports/x11-fonts/freefonts	Some of the fonts are
+						shareware.  Some are freeware.
+						Permission must be obtained
+						before distributing at least
+						four (mazama.license,
+						muriel.license,
+						roosthea.license,
+						shf_____.license).  Two have
+						inconsistent licenses
+						(tempofon.license and
+						tempoita.license say "placed
+						into the public domain and may
+						[not be] sold").
 fwtk-*			ports/security/fwtk	No redistribution allowed
 Frisk-*			ports/games/xfrisk	Copyright/trademark violation?
 glimpse-*		ports/textproc/glimpse	Don't sell for profit
