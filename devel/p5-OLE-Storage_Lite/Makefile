@@ -2,17 +2,17 @@
 # Date created:					April 2, 2001
 # Whom:						Jason Portwood <jason@iac.net>
 #
-# $FreeBSD: ports/devel/p5-OLE-Storage_Lite/Makefile,v 1.1 2001/05/11 16:06:01 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	OLE-Storage_Lite
-PORTVERSION=	0.09
+PORTVERSION=	0.10
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	OLE
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	erwin@lansing.dk
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/IO/Stringy.pm:${PORTSDIR}/devel/p5-IO-stringy
 RUN_DEPENDS=	${BUILD_DEPENDS}
