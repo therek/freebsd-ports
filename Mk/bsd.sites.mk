@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.287 2005/03/11 15:08:05 foxfair Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.288 2005/03/13 22:34:11 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1400,7 +1400,6 @@ MASTER_SITE_XFREE+= \
 
 .if !defined(IGNORE_MASTER_SITE_XORG)
 MASTER_SITE_XORG+= \
-	http://xorg.freedesktop.org/%SUBDIR%/ \
 	ftp://ftp.gwdg.de/pub/x11/x.org/pub/%SUBDIR%/ \
 	ftp://ftp.cica.es/pub/X/pub/%SUBDIR%/ \
 	ftp://ftp.cs.cuhk.edu.hk/pub/X11/%SUBDIR%/ \
@@ -1412,5 +1411,6 @@ MASTER_SITE_XORG+= \
 	ftp://ftp.mirrorservice.org/sites/ftp.x.org/pub/%SUBDIR%/ \
 	ftp://sunsite.uio.no/pub/X11/%SUBDIR%/ \
 	ftp://ftp.cs.tu-berlin.de/pub/X/x/%SUBDIR%/ \
+	http://xorg.freedesktop.org/%SUBDIR%/ \
 	ftp://ftp.x.org/pub/%SUBDIR%/
 .endif
