@@ -2,7 +2,7 @@
 # Date created:		25 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/graphics/xpx/Makefile,v 1.6 1999/08/31 06:45:22 mharo Exp $
+# $FreeBSD: ports/graphics/xpx/Makefile,v 1.7 2000/04/14 10:48:00 asami Exp $
 #
 
 PORTNAME=	xpx
@@ -16,8 +16,6 @@ MAINTAINER=	flathill@FreeBSD.org
 WRKSRC=		${WRKDIR}/xpx
 USE_IMAKE=	yes
 XMKMF=		xmkmf
-
-NO_INSTALL_MANPAGES=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
