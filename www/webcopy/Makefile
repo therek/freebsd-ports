@@ -3,7 +3,7 @@
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.8 1999/08/31 02:43:27 peter Exp $
+# $FreeBSD: ports/www/webcopy/Makefile,v 1.9 1999/08/31 06:52:21 mharo Exp $
 #
 
 # WWW site: http://www.inf.utfsm.cl/~vparada/webcopy.html
@@ -13,7 +13,7 @@ CATEGORIES=     www
 MASTER_SITES=   ftp://ftp.inf.utfsm.cl/pub/utfsm/perl/
 DISTFILES=      webcopy.tgz
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
 
 NO_PACKAGE= "This program cannot be distributed if modified in any way"
 NO_CDROM= "Don't sell for profit without written permission"
