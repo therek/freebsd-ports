@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.404 2001/07/22 02:27:49 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.405 2001/07/29 23:33:19 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -236,6 +236,7 @@
     SUBDIR += tux-aqfh
     SUBDIR += tuxkart
     SUBDIR += tuxracer
+    SUBDIR += tuxtype
     SUBDIR += tvp
     SUBDIR += nettoe
     SUBDIR += nighthawk
