@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.29 2001/03/13 05:47:01 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qmail
@@ -180,7 +180,7 @@ pre-pre-fetch:
 	@${ECHO_MSG} ""
 .if !defined(MAIN_QMAIL_PORT_WITH_QMAILQUEUE_PATCH_BARRIER)
 	@${ECHO_MSG} "WITH_QMAILQUEUE_PATCH=yes	enable patch to qmail to run a QMAILQUEUE"
-	@${ECHO_MSG} "				program instead of bin/qmail-sent"
+	@${ECHO_MSG} "				program instead of bin/qmail-queue"
 .endif # MAIN_QMAIL_PORT_WITH_QMAILQUEUE_PATCH_BARRIER
 .if !defined(MAIN_QMAIL_PORT_WITH_BIG_TODO_PATCH_BARRIER)
 	@${ECHO_MSG} "WITH_BIG_TODO_PATCH=yes		enable big_todo qmail patch"
