@@ -2,11 +2,11 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.2 2000/07/18 08:56:09 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.3 2000/11/20 18:03:41 sobomax Exp $
 #
 
 PORTNAME=	pango
-PORTVERSION=	0.13
+PORTVERSION=	0.15
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.3/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.3/ \
@@ -14,7 +14,11 @@ MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/v1.3/ \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	glib-1.3.2:${PORTSDIR}/devel/glib13
+BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig \
+		freetype-config:${PORTSDIR}/print/freetype2	# XXX
+LIB_DEPENDS=	glib-1.3.4:${PORTSDIR}/devel/glib13 \
+		freetype.6:${PORTSDIR}/print/freetype2
+RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
@@ -22,5 +26,9 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-qt=no
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
+
+pre-patch:
+	@find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
+		's|\$\(libdir\)/pkgconfig|\$\(prefix\)/libdata/pkgconfig|g'
 
 .include <bsd.port.mk>
