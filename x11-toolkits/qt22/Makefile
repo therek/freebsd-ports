@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.76 2001/03/05 12:00:08 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.77 2001/03/10 05:52:33 will Exp $
 #
 
 PORTNAME?=	qt
@@ -46,6 +46,12 @@ CONFIGURE_ARGS+=-static
 .else
 STATIC=shared
 INSTALLS_SHLIB=yes
+.endif
+
+.include <bsd.port.pre.mk>
+
+.if ${MACHINE_ARCH} == "alpha"
+CFLAGS+=	-O0
 .endif
 
 pre-fetch:
@@ -124,4 +130,4 @@ post-install:
 .endif
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
