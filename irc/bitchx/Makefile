@@ -2,7 +2,7 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.31 2001/03/15 21:45:11 clive Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.32 2001/03/27 14:20:40 kevlo Exp $
 #
 
 PORTNAME=       BitchX
@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=--without-gtk
 USE_ESOUND=	yes
 CONFIGURE_ARGS+=--enable-sound
 .endif
-.if defined(HAVE_IPV6)
+.if defined(WITH_IPV6)
 USE_IPV6=	yes
 CONFIGURE_ARGS+=--enable-ipv6
 .endif
