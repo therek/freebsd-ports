@@ -2,7 +2,7 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.88 2001/01/30 11:55:00 ache Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.89 2001/02/05 15:33:12 olgeni Exp $
 #
 
 PORTNAME=	apache
@@ -24,6 +24,9 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.iodynamics.com/pub/mirror/apache/dist/ \
 		ftp://apache.nextpath.com/pub/apache/dist/
 DISTNAME=	apache_${PORTVERSION}
+
+PATCH_SITES=    ${MASTER_SITES}
+PATCHFILES=     apache_1.3.17-fix.diff
 
 MAINTAINER=	ache@freebsd.org
 
