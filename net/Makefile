@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.512 2001/04/07 02:58:04 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.513 2001/04/07 05:09:04 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -81,6 +81,7 @@
     SUBDIR += doc
     SUBDIR += domtools
     SUBDIR += echoping
+    SUBDIR += etherape
     SUBDIR += etherboot
     SUBDIR += ethereal
     SUBDIR += ettercap
