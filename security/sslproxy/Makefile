@@ -3,7 +3,7 @@
 # Date created:		11 February 1999
 # Whom:			Alex Le Heux
 #
-# $FreeBSD: ports/security/sslproxy/Makefile,v 1.4 1999/11/07 22:25:39 dirk Exp $
+# $FreeBSD: ports/security/sslproxy/Makefile,v 1.5 2000/01/02 23:17:47 dirk Exp $
 #
 
 DISTNAME=	sslproxy.1998_Jun_14
@@ -13,13 +13,7 @@ MASTER_SITES=	ftp://ftp.obdev.at/pub/Products/sslproxy/
 
 MAINTAINER=	alexlh@funk.org
 
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
-		ssl.1:${PORTSDIR}/security/openssl
-
-.if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
-LIB_DEPENDS=	rsaref.2:${PORTSDIR}/security/rsaref
-MAKE_ENV+=	EXTRA_SSL_LIBS="-lRSAglue -lrsaref"
-.endif
+USE_OPENSSL=	RSA
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sslproxy ${PREFIX}/bin/sslproxy
