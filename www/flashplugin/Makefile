@@ -2,7 +2,7 @@
 # Date created:        3 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/flashplugin/Makefile,v 1.7 2000/04/24 15:51:11 knu Exp $
+# $FreeBSD: ports/www/flashplugin/Makefile,v 1.8 2000/08/08 02:47:47 steve Exp $
 #
 
 PORTNAME=	flashplugin
@@ -38,7 +38,7 @@ pre-build:
 .endif
 .else
 MASTER_SITES=	http://leed.t.u-tokyo.ac.jp/~yamagata/flash/
-DISTNAME=	libswf.so
+DISTNAME=	libswf-19990503.so
 EXTRACT_SUFX=	.gz
 
 NO_WRKSUBDIR=	yes
