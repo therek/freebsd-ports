@@ -2,11 +2,11 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn-stable/Makefile,v 1.69 2001/06/13 00:03:35 des Exp $
+# $FreeBSD: ports/news/inn-stable/Makefile,v 1.70 2001/07/08 11:43:24 des Exp $
 #
 
 PORTNAME=	inn
-SNAPSHOT=	20010707
+SNAPSHOT=	20010821
 PORTVERSION=	2.3.${SNAPSHOT}
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/snapshots/
