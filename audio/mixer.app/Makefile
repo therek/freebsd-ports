@@ -2,21 +2,20 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.10 2000/04/08 21:23:58 mharo Exp $
+# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.11 2000/08/03 09:22:29 asami Exp $
 #
 
 PORTNAME=	mixer.app
-PORTVERSION=	1.4.1
+PORTVERSION=	1.6.0
 CATEGORIES=	audio
-MASTER_SITES=	http://www.fukt.hk-r.se/~per/mixer/	
+MASTER_SITES=	http://www.fukt.bth.se/~per/mixer/
 DISTNAME=	Mixer.app-${PORTVERSION}
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-USE_IMAKE=	yes
 USE_XPM=	yes
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/Mixer ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/Mixer.app ${PREFIX}/bin
 
 .include <bsd.port.mk>
