@@ -2,7 +2,7 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.26 2001/06/13 15:56:55 ache Exp $
+# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.27 2001/07/02 15:22:45 ache Exp $
 #
 
 PORTNAME=	mnogosearch
@@ -14,8 +14,6 @@ MAINTAINER=	ache@FreeBSD.org
 
 MAN1=		indexer.1
 MAN5=		indexer.conf.5
-
-NO_LATEST_LINK=	yes
 
 INSTALLS_SHLIB= yes
 USE_GMAKE=	yes
