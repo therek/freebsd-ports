@@ -3,7 +3,7 @@
 # Date created:				July 9th 1999
 # Whom:	      				Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.2 1999/09/10 18:51:07 peter Exp $
 #
 
 DISTNAME=	Parse-RecDescent-1.66
@@ -11,8 +11,6 @@ PKGNAME=	p5-Parse-RecDescent-1.66
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Parse
-
-MAINTAINER=	wghicks@bellsouth.net
 
 USE_PERL5=	YES
 
