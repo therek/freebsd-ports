@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ja-mutt
-# Version required:	1.0pre3i
+# Version required:	1.0i
 # Date created:		5 Sep 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt/Makefile,v 1.3 1999/10/31 02:30:32 sada Exp $
+# $FreeBSD: ports/japanese/mutt/Makefile,v 1.4 2000/02/01 01:02:35 mharo Exp $
 #
 
 DISTNAME=	mutt-1.0i
