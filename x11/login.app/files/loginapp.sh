@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/login.app/files/loginapp.sh,v 1.1 2005/01/10 10:51:29 edwin Exp $
 #
 
 # PROVIDE: login_app
@@ -19,6 +19,7 @@ login_app_enable=${login_app_enable-"NO"}
 name="login_app"
 rcvar=`set_rcvar`
 command="%%X11BASE%%/GNUstep/Apps/Login.app/Login"
+command_args="&"
 
 load_rc_config $name
 run_rc_command "$1"
