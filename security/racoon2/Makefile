@@ -2,11 +2,11 @@
 # Date created:		4 July 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/security/racoon/Makefile,v 1.9 2001/04/02 16:25:09 sumikawa Exp $
+# $FreeBSD: ports/security/racoon/Makefile,v 1.10 2001/05/06 18:14:13 sumikawa Exp $
 #
 
 PORTNAME=	racoon
-PORTVERSION=	20010418a
+PORTVERSION=	20010802a
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.kame.net/pub/kame/misc/
 
@@ -25,6 +25,7 @@ CONFIGURE_ENV+=CPPFLAGS=-I${LOCALBASE}/include CFLAGS=-I${LOCALBASE}/include \
 CONFIGURE_ARGS+=--enable-debug
 CONFIGURE_ARGS+=--enable-ipv6
 CONFIGURE_ARGS+=--sysconfdir=${LOCALBASE}/etc
+CONFIGURE_ARGS+=--with-pkgversion=${PORTVERSION}
 
 MAN5=		racoon.conf.5
 MAN8=		racoon.8
