@@ -6,7 +6,7 @@
 #             and Michael Haro <mharo@FreeBSD.org>
 #
 # $Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp $
-# $FreeBSD: ports/Tools/scripts/addport,v 1.7 2000/08/11 21:44:18 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.8 2000/08/19 08:08:47 will Exp $
 #
 # MAINTAINER= mharo@FreeBSD.org
 # however feel free to submit patches to will@FreeBSD.org.  =)
@@ -240,6 +240,7 @@ sub query {
 
 	print "$msg";
 	my $reply = <>;
+	chomp $reply;
 	return $reply;
 }
 
