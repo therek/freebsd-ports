@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.20 2002/02/24 14:23:53 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.21 2002/02/24 15:27:03 des Exp $
 #
 
 use strict;
@@ -913,15 +913,13 @@ sub build_port($) {
     my @makeargs;		# Arguments to make()
 
     if ($packages) {
-	push(@makeargs, "package", "DEPENDS_TARGET=package clean");
-	foreach (values(%{$port_dep{$port}})) {
-	    if ($_ ne 'install') {
-		push(@makeargs, "-DNOCLEANDEPENDS");
-		last;
-	    }
-	}
+	push(@makeargs, "package");
+	push(@makeargs, "DEPENDS_TARGET=package clean", "-DNOCLEANDEPENDS")
+	    unless ($dontclean);
     } else {
 	push(@makeargs, "install");
+	push(@makeargs, "DEPENDS_TARGET=install clean", "-DNOCLEANDEPENDS")
+	    unless ($dontclean);
     }
     if ($force) {
 	push(@makeargs, "-DFORCE_PKG_REGISTER");
@@ -1095,7 +1093,7 @@ MAIN:{
     }
 
     # Step 3: update port directories and discover dependencies
-    $need_deps = ($update || $build || $fetch || $list || $packages);
+    $need_deps = ($update || $list);
     update_ports_tree(keys(%reqd));
 
     # Step 4: deselect ports which are already installed
