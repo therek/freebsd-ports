@@ -2,11 +2,11 @@
 # Date created:		18 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.5 2000/09/26 08:01:49 knu Exp $
+# $FreeBSD: ports/japanese/rskkserv/Makefile,v 1.6 2001/01/18 21:29:45 knu Exp $
 #
 
 PORTNAME=	rskkserv
-PORTVERSION=	2.90.1
+PORTVERSION=	2.91.1
 CATEGORIES=	japanese ruby
 MASTER_SITES=	http://www.unixuser.org/~ysjj/rskkserv/
 DIST_SUBDIR=	ruby
@@ -32,8 +32,8 @@ MAKE_ARGS=	prefix="${PREFIX}" \
 DOCS_EN=	ChangeLog
 DOCS_JA=	README		TODO
 
-post-patch:
-	${MV} ${WRKSRC}/rskkserv.conf ${WRKSRC}/rskkserv.conf.in
+pre-patch:
+	${CP} ${WRKSRC}/rskkserv.conf.sample ${WRKSRC}/rskkserv.conf.in
 
 post-install:
 	${CP} -R ${WRKSRC}/skkserv ${RUBY_SITELIBDIR}/
