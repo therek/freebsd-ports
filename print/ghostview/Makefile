@@ -2,7 +2,7 @@
 # Date created:		21 October 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/print/ghostview/Makefile,v 1.15 2000/04/09 17:49:44 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghostview
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	ghostview
 
 MAINTAINER=	ports@FreeBSD.org
+
+FORBIDDEN=	"Security vulnerability, see bugtraq id 5808"
 
 USE_IMAKE=	yes
 MAN1=		ghostview.1
