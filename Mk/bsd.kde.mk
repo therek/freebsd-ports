@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.16 2002/08/25 04:37:09 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.18 2002/09/10 07:46:25 alane Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -110,7 +110,7 @@ MOC?=			${QT_PREFIX}/bin/moc
 BUILD_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt30
 RUN_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt30
 QTCPPFLAGS+=	-I${LOCALBASE}/include -I${PREFIX}/include \
-				-I${QT_PREFIX}/include
+				-I${QT_PREFIX}/include -D_GETOPT_H
 QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -ljpeg \
 				-L${QT_PREFIX}/lib
 .if !defined(QT_NONSTANDARD)
