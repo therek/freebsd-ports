@@ -2,7 +2,7 @@
 # Date created:		00/04/24
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/net/archie.el/Makefile,v 1.2 1999/10/16 17:20:46 taoka Exp $
+# $FreeBSD: ports/japanese/mypaedia-fpw-package/Makefile,v 1.1.1.1 2000/06/23 19:10:12 taoka Exp $
 #
 
 PORTNAME=	mypaedia-fpw-package
@@ -16,7 +16,7 @@ MAINTAINER=	taoka@FreeBSD.org
 RUN_DEPENDS=	sox:${PORTSDIR}/audio/sox \
 		timidity:${PORTSDIR}/audio/timidity++ \
 		xanim:${PORTSDIR}/graphics/xanim
-# I want to depend on the next port, but it depends on non-japanized GS :-<
+# This suhould depend on the next port, but it depends on non-japanized GS :-<
 #		display:${PORTSDIR}/graphics/ImageMagick
 
 NO_BUILD=	yes
