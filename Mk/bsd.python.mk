@@ -1,7 +1,7 @@
 # -*- mode: Fundamental; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.2 2000/09/12 11:50:53 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.3 2000/09/28 11:24:31 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -81,11 +81,11 @@ PYTHON_PORTVERSION!=	(${PYTHON_VERSION} -c 'import string, sys; \
 PYDISTUTILS=	${PYTHON_LIBDIR}/distutils/core.py:${PYTHON_PORTSDIR}
 PYXML=			${PYTHON_LIBDIR}/xml/__init__.py:${PYTHON_PORTSDIR}
 
-PYTHON_DISTFILE=	BeOpen-Python-2.0b2.tar.gz
+PYTHON_DISTFILE=	BeOpen-Python-2.0c1.tar.gz
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python-beta
-PYTHON_REL=			191
+PYTHON_REL=			192
 PYTHON_SUFFIX=		${_PYTHON_SUFFIX}
-PYTHON_WRKSRC=		${WRKDIR}/Python-2.0b2
+PYTHON_WRKSRC=		${WRKDIR}/Python-2.0c1
 
 # Python-1.6
 .elif ${PYTHON_VERSION} == "python1.6"
