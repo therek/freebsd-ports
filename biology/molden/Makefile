@@ -2,19 +2,19 @@
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD: ports/biology/molden/Makefile,v 1.9 2000/06/07 16:59:45 will Exp $
+# $FreeBSD: ports/biology/molden/Makefile,v 1.10 2000/10/13 10:59:34 jeh Exp $
 #
 
 PORTNAME=	molden
 PORTVERSION=	3.6
 PORTREVISION=	1
 CATEGORIES=	biology
-MASTER_SITES=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/
+MASTER_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 EXTRACT_ONLY=	${PORTNAME}${PORTVERSION}.tar.Z
 
-PATCH_SITES=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/bin/
+PATCH_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/bin/
 PATCHFILES=	${PORTNAME}${PORTVERSION}-freebsd
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
