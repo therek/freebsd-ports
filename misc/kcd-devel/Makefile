@@ -2,11 +2,11 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/kcd/Makefile,v 1.7 2000/08/21 20:54:42 dannyboy Exp $
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.8 2000/11/16 13:14:22 tg Exp $
 #
 
 PORTNAME=	kcd
-PORTVERSION=	5.0.2
+PORTVERSION=	5.0.3
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -36,7 +36,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/kcd.sh.init ${PREFIX}/share/examples/kcd
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/kcd
-	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${PREFIX}/share/doc/kcd
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/kcd
 .endif
 
