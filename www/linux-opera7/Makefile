@@ -2,15 +2,14 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.7 2001/03/08 11:12:09 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.8 2001/03/22 12:19:20 des Exp $
 #
 
 PORTNAME=	linux-opera
-PORTVERSION=	5.0b7
+PORTVERSION=	5.0b8
 CATEGORIES=	www linux
 MASTER_SITES=	http://opera.online.no/linux/tgz/
-DISTNAME=	opera-5.0-b7-20010320.018-static.i386
-WRKSRC=		${WRKDIR}/${DISTNAME:S/018/020/}
+DISTNAME=	opera-5.0-b8-20010426.023-static.i386
 
 MAINTAINER=	des@FreeBSD.org
 
@@ -23,7 +22,7 @@ RUN_DEPENDS=	${LINUXBASE}/lib/ld.so:${PORTSDIR}/emulators/linux_base \
 NO_BUILD=	yes
 
 do-install:
-	(cd ${WRKSRC} && ./install.sh \
+	(cd ${WRKSRC} && /bin/sh -x ./install.sh \
 	    --exec_prefix=${PREFIX}/bin \
 	    --docdir=${PREFIX}/share/doc/opera \
 	    --sharedir=${PREFIX}/share/opera )
