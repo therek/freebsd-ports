@@ -2,23 +2,29 @@
 # Date created:		4 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/comms/snooper/Makefile,v 1.8 2000/04/08 23:22:39 mharo Exp $
+# $FreeBSD: ports/comms/snooper/Makefile,v 1.9 2001/01/09 05:57:01 itojun Exp $
 #
 
 PORTNAME=	snooper
 PORTVERSION=	1999.12.02
+PORTREVISION=	1
 CATEGORIES=	comms
-MASTER_SITES=   ftp://ftp.foretune.co.jp/pub/tools/snooper/
-DISTNAME=	snooper-19991202
+MASTER_SITES=	ftp://ftp.foretune.co.jp/pub/tools/snooper/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/snooper/build
-HAS_CONFIGURE=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}/build
+
+GNU_CONFIGURE=	yes
+
+post-extract:
+	@${RM} -f ${WRKSRC}/.depend
 
 post-install:
-	${MKDIR} ${PREFIX}/share/doc/snooper
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/snooper
 	${INSTALL_DATA} ${WRKSRC}/../README ${PREFIX}/share/doc/snooper
-	${CAT} ${PKGMESSAGE}
+.endif
 
 .include <bsd.port.mk>
