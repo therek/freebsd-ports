@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.52 2001/05/20 04:34:26 will Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.53 2001/07/07 09:53:24 dinoex Exp $
 #
 
     SUBDIR += asmodem
@@ -21,6 +21,7 @@
     SUBDIR += pr
     SUBDIR += qico
     SUBDIR += qpage
+    SUBDIR += ruby-termios
     SUBDIR += seyon
     SUBDIR += sms_client
     SUBDIR += snooper
