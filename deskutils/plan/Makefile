@@ -2,7 +2,7 @@
 # Date created:				14 April 1996
 # Whom:	Daniel Eischen <deischen@freebsd.org>
 #
-# $FreeBSD: ports/deskutils/plan/Makefile,v 1.22 2000/11/24 22:10:00 deischen Exp $
+# $FreeBSD$
 #
 # Also update	ports/japanese/plan/ (ja-plan) when this port is updated
 
@@ -42,7 +42,9 @@ do-install:
 		holiday_quebec holiday_spain holiday_swedish holiday_uk holiday_us \
 			${PREFIX}/share/doc/plan/examples
 
+.if !target(post-install)
 post-install:
 	@${MKDIR} ${PREFIX}/share/netplan.dir
+.endif
 
 .include <bsd.port.mk>
