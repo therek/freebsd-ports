@@ -2,7 +2,7 @@
 # Date created:				Mon Oct 18 12:01:28 EDT 1999
 # Whom:					???#
 #
-# $FreeBSD: ports/net/coda5_server/Makefile,v 1.14 2001/01/28 20:08:10 sf Exp $
+# $FreeBSD: ports/net/coda5_server/Makefile,v 1.15 2001/02/28 16:38:58 shafeeq Exp $
 #
 
 PORTNAME=	coda
@@ -29,6 +29,6 @@ USE_GMAKE=	yes
 CONFIGURE_ARGS?=	--sysconfdir=${PREFIX}/etc/rc.d
 
 CODA_SUITE?=	server
-CODA_VERSION?=	5.3.13
+CODA_VERSION?=	5.3.14
 
 .include <bsd.port.mk>
