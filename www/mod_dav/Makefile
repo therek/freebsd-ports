@@ -2,11 +2,11 @@
 # Date created:		Sun Oct 17, 1999
 # Whom:			patrick@mindstep.com
 #
-# $FreeBSD: ports/www/mod_dav/Makefile,v 1.3 2000/02/15 23:53:28 mharo Exp $
+# $FreeBSD: ports/www/mod_dav/Makefile,v 1.4 2000/04/10 00:05:52 cpiazza Exp $
 #
 
 PORTNAME=	mod_dav
-PORTVERSION= 	0.9.14	
+PORTVERSION= 	0.9.17
 DISTNAME=	mod_dav-${PORTVERSION}-${APACHE_VERSION}
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/mod_dav/
