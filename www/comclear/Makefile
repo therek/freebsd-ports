@@ -2,13 +2,13 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/www/comclear/Makefile,v 1.4 2001/01/17 08:01:31 roam Exp $
+# $FreeBSD: ports/www/comclear/Makefile,v 1.5 2001/05/04 21:41:23 ade Exp $
 #
 
 PORTNAME=	comclear
 PORTVERSION=	1.1
 PORTREVISION=	1
-CATEGORIES=	www gtk
+CATEGORIES=	www
 MASTER_SITES=	http://www.neuro-tech.net/files/
 
 MAINTAINER=	roam@FreeBSD.org
