@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.3 2003/06/20 05:25:24 nork Exp $
+# $FreeBSD: ports/lang/php4/scripts/configure.php,v 1.4 2003/06/24 08:16:25 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -64,7 +64,7 @@ READLINE	"readline support (CLI only)" ${WITH_READLINE:-OFF} \
 RECODE		"recode support" ${WITH_RECODE:-OFF} \
 SESSION		"session support" ${WITH_SESSION:-OFF} \
 SHMOP		"shmop support" ${WITH_SHMOP:-OFF} \
-SNMP		"SNMP support" ${WITH_SNMP:-OFF} \
+SNMP		"SNMP support (implies OPENSSL)" ${WITH_SNMP:-OFF} \
 SOCKETS		"sockets support" ${WITH_SOCKETS:-OFF} \
 SYBASEDB	"Sybase/MS-SQL database support (DB-lib)" ${WITH_SYBASEDB:-OFF} \
 SYBASECT	"Sybase/MS-SQL database support (CT-lib)" ${WITH_SYBASECT:-OFF} \
