@@ -2,11 +2,11 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.35 2001/04/02 06:43:30 mharo Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.36 2001/04/17 17:24:56 kris Exp $
 #
 
 PORTNAME=	fvwm
-PORTVERSION=	2.3.30
+PORTVERSION=	2.3.32
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/ \
 		http://www.fvwm.org/generated/icon_download/
@@ -20,7 +20,6 @@ RUN_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_BZIP2=	yes
 WANT_GTK=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
@@ -52,6 +51,8 @@ post-extract:
 	fi
 
 post-install:
+	@${MKDIR} ${PREFIX}/etc
+	@${CP} ${WRKSRC}/sample.fvwmrc/system.fvwm2rc ${PREFIX}/etc
 	@${MKDIR} ${PREFIX}/lib/X11/fvwm2/pixmaps
 	${INSTALL_DATA} ${WRKSRC}/icons/*.xpm \
 		${PREFIX}/lib/X11/fvwm2/pixmaps
