@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.627 2001/08/29 12:34:50 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.628 2001/08/30 05:08:21 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -543,6 +543,7 @@
     SUBDIR += tcllib
     SUBDIR += tclreadline
     SUBDIR += tcltls
+    SUBDIR += tdl
     SUBDIR += templ
     SUBDIR += terminality
     SUBDIR += tide
