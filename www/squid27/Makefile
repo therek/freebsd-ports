@@ -1,8 +1,8 @@
-# New ports collection makefile for:	squid
-# Date created:		Thu Nov  7 00:53:18 WST 1996
-# Whom:			Peter Wemm <peter@freebsd.org>
+# New ports collection makefile for:	squid24
+# Date created:		Tue Mar 27 14:56:08 CEST 2001
+# Whom:			Adrian Chadd <adrian@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squid24/Makefile,v 1.76 2001/02/19 13:15:19 olgeni Exp $
+# $FreeBSD: ports/www/squid24/Makefile,v 1.77 2001/03/27 12:28:47 adrian Exp $
 #
 
 PORTNAME=	squid
