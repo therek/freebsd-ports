@@ -2,7 +2,7 @@
 # Date created:				29 Feb 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.6 2000/09/25 12:21:25 asami Exp $
+# $FreeBSD: ports/graphics/piddle/Makefile,v 1.7 2000/09/25 12:30:48 tg Exp $
 #
 
 PORTNAME=	piddle
@@ -15,7 +15,6 @@ DISTFILES=	${DISTNAME}-5.tgz
 MAINTAINER=	dom@myrddin.demon.co.uk
 
 USE_PYTHON=	yes
-WRKSRC=		${WRKDIR}/${PKGNAME}
 NO_BUILD=	yes
 
 PIDDLEDIR=	${PYTHON_SITELIBDIR}/piddle
