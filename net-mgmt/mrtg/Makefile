@@ -3,10 +3,10 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mrtg/Makefile,v 1.17 1999/09/08 22:42:09 fenner Exp $
+# $FreeBSD: ports/net/mrtg/Makefile,v 1.18 1999/12/27 21:28:24 steve Exp $
 #
 
-DISTNAME=	mrtg-2.8.8
+DISTNAME=	mrtg-2.8.12
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/
 
@@ -33,19 +33,19 @@ do-install:
 		for file in ANNOUNCE CHANGES COPYING COPYRIGHT MANIFEST README \
 			doc/config.html doc/config.pod doc/config.txt doc/htaccess.txt \
 			doc/logfile-format.txt doc/manual.html doc/manual.txt \
-			doc/mibhelp.txt doc/squid.txt ; do \
+			doc/mibhelp.txt doc/squid.txt UPGRADING ; do \
 			${INSTALL_DATA} ${WRKSRC}/$$file ${PREFIX}/share/doc/mrtg/; \
 		done
 .endif
 		${INSTALL_DATA} ${WRKSRC}/doc/sample-mrtg.cfg ${PREFIX}/etc/mrtg
-		for file in ${WRKSRC}/images/*.gif; do \
+		for file in ${WRKSRC}/images/*; do \
 			${INSTALL_DATA} $$file ${PREFIX}/share/mrtg/; \
 		done
 		for file in SNMP_Session.pm SNMP_util.pm BER.pm locales_mrtg.pm; do \
 			${INSTALL_DATA} ${WRKSRC}/run/$$file ${PREFIX}/lib/perl5/site_perl/${PERL_VER}; \
 		done
 		${INSTALL_PROGRAM} ${WRKSRC}/run/rateup ${PREFIX}/bin/
-		for file in mrtg cfgmaker cfgmaker_ip indexmaker; do \
+		for file in mrtg cfgmaker cfgmaker_ip cfgmaker_phys indexmaker; do \
 			${INSTALL_SCRIPT} ${WRKSRC}/run/$$file ${PREFIX}/bin/; \
 		done
 
