@@ -1,4 +1,4 @@
-# $FreeBSD: ports/shells/Makefile,v 1.27 2000/12/30 01:31:08 will Exp $
+# $FreeBSD: ports/shells/Makefile,v 1.28 2000/12/31 06:02:39 will Exp $
 #
 
     SUBDIR += 44bsd-csh
@@ -16,6 +16,7 @@
     SUBDIR += sash
     SUBDIR += scsh
     SUBDIR += tcsh
+    SUBDIR += vshnu
     SUBDIR += zsh
     SUBDIR += zsh-devel
 
