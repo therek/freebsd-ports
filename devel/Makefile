@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.265 2000/02/26 18:47:12 jedgar Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.266 2000/02/27 00:56:31 obrien Exp $
 #
 
     SUBDIR += ElectricFence
@@ -86,7 +86,6 @@
     SUBDIR += libcii
     SUBDIR += libdlmalloc
     SUBDIR += libffi
-    SUBDIR += libg++
     SUBDIR += libgetline
     SUBDIR += libgii
     SUBDIR += libglade
