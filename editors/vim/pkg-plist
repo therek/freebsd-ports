@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.39 2001/03/20 17:59:53 obrien Exp $
+@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.40 2001/03/25 19:01:28 obrien Exp $
 bin/vim
 bin/vimtutor
 bin/xxd
@@ -17,6 +17,7 @@ share/vim/%%VIM_VER%%/doc/change.txt
 share/vim/%%VIM_VER%%/doc/cmdline.txt
 share/vim/%%VIM_VER%%/doc/debugger.txt
 share/vim/%%VIM_VER%%/doc/develop.txt
+share/vim/%%VIM_VER%%/doc/diff.txt
 share/vim/%%VIM_VER%%/doc/digraph.txt
 share/vim/%%VIM_VER%%/doc/editing.txt
 share/vim/%%VIM_VER%%/doc/eval.txt
@@ -54,6 +55,7 @@ share/vim/%%VIM_VER%%/doc/os_mac.txt
 share/vim/%%VIM_VER%%/doc/os_mint.txt
 share/vim/%%VIM_VER%%/doc/os_msdos.txt
 share/vim/%%VIM_VER%%/doc/os_os2.txt
+share/vim/%%VIM_VER%%/doc/os_qnx.txt
 share/vim/%%VIM_VER%%/doc/os_riscos.txt
 share/vim/%%VIM_VER%%/doc/os_unix.txt
 share/vim/%%VIM_VER%%/doc/os_vms.txt
@@ -127,6 +129,7 @@ share/vim/%%VIM_VER%%/indent/matlab.vim
 share/vim/%%VIM_VER%%/indent/perl.vim
 share/vim/%%VIM_VER%%/indent/python.vim
 share/vim/%%VIM_VER%%/indent/ruby.vim
+share/vim/%%VIM_VER%%/indent/sdl.vim
 share/vim/%%VIM_VER%%/indent/sh.vim
 share/vim/%%VIM_VER%%/indent/tcl.vim
 share/vim/%%VIM_VER%%/indent/verilog.vim
