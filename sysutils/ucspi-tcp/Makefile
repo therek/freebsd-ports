@@ -2,13 +2,13 @@
 # Date created:		12 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.9 2000/04/09 19:08:39 cpiazza Exp $
+# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.10 2000/04/22 10:13:27 mharo Exp $
 #
 
 PORTNAME=	ucspi-tcp
 PORTVERSION=	0.84
 CATEGORIES=	sysutils net
-MASTER_SITES=	http://cr.yp.to/software/
+MASTER_SITES=	http://cr.yp.to/ucspi-tcp/
 
 MAINTAINER=     dom@myrddin.demon.co.uk
 
@@ -21,7 +21,7 @@ MAN5=		tcp-environ.5
 PLIST=		${PKGDIR}/PLIST.nodocs
 .endif
 
-NO_PACKAGE=	Unsure of djb's license
+NO_PACKAGE=	"Unsure of djb's license"
 
 ALL_TARGET=	prog install instcheck
 
