@@ -3,12 +3,13 @@
 # Date created:		99/10/26
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.1.1.1 2000/01/08 03:03:15 taoka Exp $
 #
 
 DISTNAME=	intlfonts-1.2
 CATEGORIES=	x11-fonts
-MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/
+MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITE_SUBDIR=	intlfonts
 
 MAINTAINER=	taoka@FreeBSD.org
 
