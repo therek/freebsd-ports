@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.156 2001/01/13 15:50:15 alex Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.157 2001/01/17 09:11:23 jkoshy Exp $
 #
 
     SUBDIR += agrep
@@ -145,6 +145,7 @@
     SUBDIR += xhtml
     SUBDIR += xlhtml
     SUBDIR += xls2xml
+    SUBDIR += xml-i18n-tools
     SUBDIR += xml4j
     SUBDIR += xp
     SUBDIR += xt
