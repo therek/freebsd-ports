@@ -3,7 +3,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.5 2001/08/25 16:09:38 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gengetopt
@@ -18,5 +18,13 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
 MAN1=		gengetopt.1
+
+.if defined(NOPORTDOCS)
+do-install:
+	@cd ${INSTALL_WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${GMAKE} \
+		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} install
+	@cd ${INSTALL_WRKSRC}/doc && ${SETENV} ${MAKE_ENV} ${GMAKE} \
+		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} install-man
+.endif
 
 .include <bsd.port.mk>
