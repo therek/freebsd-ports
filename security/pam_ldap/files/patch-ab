@@ -1,4 +1,4 @@
-$FreeBSD$
+$FreeBSD: ports/security/pam_ldap/files/patch-ab,v 1.4 2002/03/29 07:46:57 petef Exp $
 
 --- pam_ldap.c.orig	Mon Mar 25 15:54:28 2002
 +++ pam_ldap.c	Mon Mar 25 15:54:29 2002
