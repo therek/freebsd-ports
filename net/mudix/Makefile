@@ -2,11 +2,11 @@
 # Date created:		26 Mar 2000
 # Whom:			will
 #
-# $FreeBSD: ports/net/mudix/Makefile,v 1.5 2001/04/15 15:44:12 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mudix
-PORTVERSION=	4.0
+PORTVERSION=	4.1
 CATEGORIES=	net
 MASTER_SITES=	http://dwizardry.dhs.org/mudix/
 
