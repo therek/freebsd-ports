@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.492 2001/04/05 19:01:12 alex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.493 2001/04/05 19:01:47 alex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -450,6 +450,7 @@
     SUBDIR += uisp
     SUBDIR += understand_c
     SUBDIR += ups-debug
+    SUBDIR += varconf
     SUBDIR += veepee
     SUBDIR += viewcvs
     SUBDIR += vtcl
