@@ -2,7 +2,7 @@
 # Date created:		10 May 1998
 # Whom:			nordwick@xcf.berkeley.edu
 #
-# $FreeBSD: ports/java/java-cup/Makefile,v 1.6 1999/09/11 14:02:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	java_cup
@@ -13,12 +13,12 @@ DISTNAME=	java_cup_v10g
 
 MAINTAINER=	nordwick@xcf.berkeley.edu
 
+BUILD_DEPENDS=	${JAVADIR}/bin/javac:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
+
 JAVASUBDIR=	jdk1.1.8
 JAVADIR=	${PREFIX}/${JAVASUBDIR}
 JAVALIBDIR=	${JAVADIR}/lib
-
-BUILD_DEPENDS=	${JAVADIR}/bin/javac:${PORTSDIR}/java/jdk
-RUN_DEPENDS=	${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
 
 NO_WRKSUBDIR=	yes
 
