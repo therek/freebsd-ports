@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.4 2000/10/02 03:10:03 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.5 2000/10/08 00:26:46 asami Exp $
 #
 
 PORTNAME=	gdb
@@ -40,13 +40,9 @@ CONFIGURE_ARGS?=	--verbose
 CONFIGURE_WRKSRC?=	${WRKDIR}/build-${LCLTARGET}
 CONFIGURE_SCRIPT?=	../${GDBNAME}/configure
 
-MAN1=		${LCLTARGET}-gdb.1
+PATCH_DIST_STRIP?=	-p1
 
-.if defined(PATCH_DEBUG)
-PATCH_DIST_ARGS=   -d ${WRKDIR} -E ${PATCH_DIST_STRIP}
-.else
-PATCH_DIST_ARGS=   -d ${WRKDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
-.endif
+MAN1=		${LCLTARGET}-gdb.1
 
 pre-configure:
 	@(cd ${WRKDIR} ; ${MKDIR} build-${LCLTARGET})
