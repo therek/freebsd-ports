@@ -2,7 +2,7 @@
 # Date Created:				Apr 22 2001
 # Whom:					R. Kevin Oberman <oberman@es.net>
 #
-# $FreeBSD: ports/comms/mwavem/Makefile,v 1.1 2001/05/20 04:34:27 will Exp $
+# $FreeBSD: ports/comms/mwavem/Makefile,v 1.2 2001/06/04 17:19:05 ijliao Exp $
 #
 
 PORTNAME=	mwavem-fbsd
@@ -76,6 +76,8 @@ pre-fetch:
 
 .if ${OSVERSION} < 410000
 BROKEN=		"Systems prior to 4.1 are not supported"
+.else
+BROKEN=		"Archive cannot be fetched"
 .endif
 
 .include <bsd.port.post.mk>
