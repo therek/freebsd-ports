@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.120 2003/01/04 16:17:27 seanc Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.121 2003/02/06 09:13:17 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -135,8 +135,8 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-dbase"
 			;;
 		\"OpenLDAP\")
-			echo "LIB_DEPENDS+=	ldap.1:\${PORTSDIR}/net/openldap"
-			echo "LIB_DEPENDS+=	lber.1:\${PORTSDIR}/net/openldap"
+			echo "LIB_DEPENDS+=	ldap.1:\${PORTSDIR}/net/openldap12"
+			echo "LIB_DEPENDS+=	lber.1:\${PORTSDIR}/net/openldap12"
 			echo "CONFIGURE_ARGS+=--with-ldap=\${PREFIX}"
 			if [ -f /usr/lib/libkrb.a -a -f /usr/lib/libdes.a -a ! -L /usr/lib/libdes.a ]; then
 				LIBS="${LIBS} -lkrb -ldes -L\${PREFIX}/lib"

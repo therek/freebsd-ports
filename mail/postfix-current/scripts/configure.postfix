@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.41 2002/11/21 15:38:36 dwcjr Exp $
+# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.42 2003/01/04 16:17:26 seanc Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -140,7 +140,7 @@ while [ "$1" ]; do
 			echo "PATCH_DIST_STRIP= -p1"
 			;;
 		OpenLDAP)
-			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap"
+			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/libldap.a:\${PORTSDIR}/net/openldap12"
 			echo "POSTFIX_CCARGS+=	-DHAS_LDAP -I\${LOCALBASE}/include"
 			echo "POSTFIX_AUXLIBS+=	\${LOCALBASE}/lib/libldap.a \${PREFIX}/lib/liblber.a"
 			echo "OPENLDAP_SUFFIX=	+openldap"
