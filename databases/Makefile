@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.63 2000/05/29 08:23:01 will Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.64 2000/05/30 00:12:25 will Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -24,6 +24,7 @@
     SUBDIR += p5-DBD-CSV
     SUBDIR += p5-DBD-Pg
     SUBDIR += p5-DBI
+    SUBDIR += p5-DBZ_File
     SUBDIR += p5-GDBM
     SUBDIR += p5-MLDBM
     SUBDIR += p5-Msql
