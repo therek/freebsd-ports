@@ -2,13 +2,14 @@
 # Date created:		20 June 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/security/bugs/Makefile,v 1.5 2000/09/18 20:41:40 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		bugs
 PORTVERSION=		4.0.1
 CATEGORIES=		security
-MASTER_SITES=		http://www.bcrypt.com/english/download/
+MASTER_SITES=		http://www.encryptsolutions.com/english/download/ \
+			http://www.bcrypt.com/english/download/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		stephane.legrand@bigfoot.com
