@@ -2,11 +2,12 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane/Makefile,v 1.27 2000/09/16 18:12:00 ade Exp $
+# $FreeBSD: ports/graphics/sane/Makefile,v 1.28 2000/10/05 06:36:19 reg Exp $
 #
 
 PORTNAME=	sane
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.mostang.com/pub/sane/
