@@ -2,7 +2,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.40 2001/01/12 20:29:10 sobomax Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.41 2001/02/05 16:18:17 olgeni Exp $
 #
 
 PORTNAME=	wdm
@@ -51,7 +51,19 @@ pre-everything:
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/doc/*.man
 
+pre-install:
+	@if [ -e ${PREFIX}/lib/X11/wdm/wdm-config ]; then \
+		${MV} ${PREFIX}/lib/X11/wdm/wdm-config \
+			${PREFIX}/lib/X11/wdm/wdm-config.preserve; \
+	fi
+
 post-install:
-	${INSTALL_DATA} ${_DISTDIR}/${DAEMONPIC} ${PREFIX}/lib/X11/wdm/pixmaps
+	@${CP} ${PREFIX}/lib/X11/wdm/wdm-config \
+		${PREFIX}/lib/X11/wdm/wdm-config.dist;
+	@if [ -e ${PREFIX}/lib/X11/wdm/wdm-config.preserve ]; then \
+		${MV} ${PREFIX}/lib/X11/wdm/wdm-config.preserve \
+			${PREFIX}/lib/X11/wdm/wdm-config; \
+	fi
+	@${INSTALL_DATA} ${_DISTDIR}/${DAEMONPIC} ${PREFIX}/lib/X11/wdm/pixmaps
 
 .include <bsd.port.mk>
