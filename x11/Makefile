@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.294 2000/08/01 12:16:29 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.295 2000/08/11 10:41:28 will Exp $
 #
 
     SUBDIR += 9term
@@ -11,7 +11,6 @@
     SUBDIR += XFree86-aoutlibs
     SUBDIR += XFree86-contrib
     SUBDIR += aterm
-    SUBDIR += backfract
     SUBDIR += bgrot
     SUBDIR += blast
     SUBDIR += bricons
