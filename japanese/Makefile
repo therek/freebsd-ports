@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.380 2001/09/01 05:52:23 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.381 2001/09/03 04:12:08 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -168,7 +168,6 @@
     SUBDIR += latex2html
     SUBDIR += leafrogue
     SUBDIR += less
-    SUBDIR += lesw
     SUBDIR += libicq
     SUBDIR += libimg
     SUBDIR += libjcode
