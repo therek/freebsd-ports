@@ -3,11 +3,11 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.8 1999/12/23 18:35:01 steve Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.9 1999/12/23 18:36:35 steve Exp $
 #
 
-VERSION=	1.3.9
-RA_VERSION=	29.2
+VERSION=	1.3.11
+RA_VERSION=	29.3
 DISTNAME=       apache_${VERSION}
 PKGNAME=        ru-apache-${VERSION}
 CATEGORIES=	www russian
@@ -47,6 +47,7 @@ GZCAT=sh -c 'tar -zxf $$0 -C ${WRKSRC};${CAT} ${WRKSRC}/RA-1.3rusPL${RA_VERSION}
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	\
 		 --prefix=${PREFIX} \
+		 --server-gid=nogroup \
 		 --with-perl=${PERL} \
 		 --with-layout=${FILESDIR}/FreeBSD.layout:FreeBSD \
 		 --suexec-docroot=${PREFIX}/www/data \
