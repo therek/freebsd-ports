@@ -1,8 +1,9 @@
-# $FreeBSD: ports/ftp/Makefile,v 1.19 2001/04/02 13:36:27 jedgar Exp $
+# $FreeBSD: ports/ftp/Makefile,v 1.20 2001/04/07 00:39:05 will Exp $
 #
 
     SUBDIR += IglooFTP
     SUBDIR += axyftp
+    SUBDIR += bftpd
     SUBDIR += caitoo
     SUBDIR += cftp
     SUBDIR += curl
