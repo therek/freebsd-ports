@@ -2,11 +2,11 @@
 # Date created:		11 Jul 2000
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/40upgrade/Makefile,v 1.1 2000/07/11 22:56:03 asami Exp $
 #
 
 PORTNAME=	40upgrade
-PORTVERSION=	2000.07.11
+PORTVERSION=	2000.08.25
 CATEGORIES=	misc
 DISTFILES=	# empty
 
