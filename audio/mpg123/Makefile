@@ -2,7 +2,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.29 2001/02/27 12:39:16 sobomax Exp $
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.30 2001/03/03 00:23:13 kris Exp $
 #
 
 PORTNAME=	mpg123
@@ -69,7 +69,7 @@ OPT_ARCH=	i486
 .if !defined(OPT_ARCH) || ((${OPT_ARCH} != "i486") && (${OPT_ARCH} != "i586") \
     && (${OPT_ARCH} != "3dnow"))
 	@${ECHO_MSG} "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
-	@${ECHO_MSG} "Note: you can set OPT_ARCH to optimize for your hardware.
+	@${ECHO_MSG} "Note: you can set OPT_ARCH to optimize for your hardware."
 	@${ECHO_MSG} "(e.g. make OPT_ARCH=i486)."
 	@${ECHO_MSG} "Valid values are: i486, i586, 3dnow"
 	@${ECHO_MSG} "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
