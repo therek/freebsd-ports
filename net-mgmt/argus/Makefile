@@ -2,11 +2,11 @@
 # Date created:		26 November 1998
 # Whom:			Jonathan Hanna <jhanna@home.com>
 #
-# $FreeBSD: ports/net/argus/Makefile,v 1.5 1999/08/30 14:22:03 peter Exp $
+# $FreeBSD: ports/net/argus/Makefile,v 1.6 2000/04/09 18:10:09 cpiazza Exp $
 #
 
 PORTNAME=	argus
-PORTVERSION=	1.7.b1e
+PORTVERSION=	1.7.b.1e
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.sei.cmu.edu/pub/argus/argus-1.7/
 DISTNAME=	argus-1.7.beta.1e
