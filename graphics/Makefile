@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.299 2001/04/10 20:16:05 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.300 2001/04/14 18:00:05 jkh Exp $
 #
 
     SUBDIR += 4va
@@ -39,6 +39,7 @@
     SUBDIR += fli2gif
     SUBDIR += fly
     SUBDIR += fnlib
+    SUBDIR += fractorama
     SUBDIR += fujiplay
     SUBDIR += fxtv
     SUBDIR += g2
