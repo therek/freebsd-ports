@@ -3,7 +3,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl82/Makefile,v 1.23 1999/09/05 16:32:08 jseger Exp $
+# $FreeBSD: ports/lang/tcl82/Makefile,v 1.24 1999/11/21 20:54:56 jseger Exp $
 #
 
 DISTNAME=	tcl8.2.2
@@ -15,13 +15,11 @@ MAINTAINER=	jseger@FreeBSD.org
 
 Y2K=            http://www.scriptics.com/Y2K.html
 
-FILE_DEPENDS=	${PORTSDIR}/lang/tcl80
-
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
-PKGINSTALL=     ${PORTSDIR}/lang/tcl80/pkg/INSTALL.tclsh
+PKGINSTALL=     ${PKGDIR}/INSTALL.tclsh
 
 PLIST_SUB=	TCL_VER=8.2 SHORT_TCL_VER=82
 

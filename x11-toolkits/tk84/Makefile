@@ -3,7 +3,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.29 1999/09/05 16:32:09 jseger Exp $
+# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.30 1999/11/22 04:51:29 jseger Exp $
 #
 
 DISTNAME=	tk8.2.2
@@ -14,14 +14,13 @@ MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_2/
 MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
-FILE_DEPENDS=	${PORTSDIR}/x11-toolkits/tk80
 
 USE_XLIB=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=libtk82.so.1
-PKGINSTALL=     ${PORTSDIR}/x11-toolkits/tk80/pkg/INSTALL.wish
+PKGINSTALL=     ${PKGDIR}/INSTALL.wish
 
 PLIST_SUB=	TK_VER=8.2 SHORT_TK_VER=82
 
