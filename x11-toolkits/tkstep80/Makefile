@@ -2,7 +2,7 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.24 2000/04/10 01:11:11 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.25 2000/06/02 07:29:19 hoek Exp $
 #
 
 PORTNAME=	tkstep
@@ -14,7 +14,7 @@ DISTNAME=	tk${PORTVERSION}
 PATCH_SITES= 	ftp://touchwood.ee.uts.edu.au/pub/TkSTEP/
 PATCHFILES=	tk8.0.4-to-tkstep8.0.4-2.patch.tar.gz
 
-MAINTAINER=	tg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80 \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
