@@ -1,13 +1,13 @@
 # New ports collection makefile for:	sslproxy
-# Version required:	1998_Jun_14
+# Version required:	2000_Jan_29
 # Date created:		11 February 1999
 # Whom:			Alex Le Heux
 #
-# $FreeBSD: ports/security/sslproxy/Makefile,v 1.5 2000/01/02 23:17:47 dirk Exp $
+# $FreeBSD: ports/security/sslproxy/Makefile,v 1.6 2000/02/06 21:55:42 kris Exp $
 #
 
-DISTNAME=	sslproxy.1998_Jun_14
-PKGNAME=	sslproxy-19980614
+DISTNAME=	sslproxy.2000_Jan_29
+PKGNAME=	sslproxy-20000129
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.obdev.at/pub/Products/sslproxy/
 
