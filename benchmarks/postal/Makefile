@@ -3,7 +3,7 @@
 # Date created:			Apr 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/benchmarks/postal/Makefile,v 1.1 2001/04/02 06:23:50 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	postal
@@ -14,12 +14,13 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 USE_OPENSSL=	yes
 GNU_CONFIGURE=	yes
 
 MAN8=	postal.8 postal-list.8 rabid.8
 
 post-patch:
-	@${PERL} -pi -e "s,-pthread,${PTHREAD_LIBS},g" ${WRKSRC}/configure
+	@${REINPLACE_CMD} -e "s,-pthread,${PTHREAD_LIBS},g" ${WRKSRC}/configure
 
 .include <bsd.port.mk>
