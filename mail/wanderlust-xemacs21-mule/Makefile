@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-xemacs-mule/Makefile,v 1.3 1999/09/10 01:44:28 taoka Exp $
+# $FreeBSD: ports/mail/wanderlust-xemacs21-mule/Makefile,v 1.4 1999/09/10 20:54:17 shige Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com
@@ -11,12 +11,12 @@ MAINTAINER=	nobutaka@nobutaka.com
 MASTERDIR=	${.CURDIR}/../../mail/wanderlust-emacs
 
 EMACS_NAME=		xemacs
-EMACS_PORT=		xemacs-mule
-EMACS_VER=		21.1.6
-MULE_VER=		21.1.6
+EMACS_PORT=		xemacs21-mule
+EMACS_VER=		21.1.8
+MULE_VER=		21.1.8
 EMACS_LIBDIR=		lib/xemacs
-EMACS_VER_LIBDIR=	lib/xemacs
-EMACS_PACKAGESDIR=	lib/${EMACS_NAME}/${EMACS_NAME}-packages
+EMACS_PACKAGESDIR=	lib/xemacs/site-packages
+MANIFEST=		MANIFEST.wl
 
 HAVE_COMMON_PORT=	yes
 
