@@ -1,9 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.8 2001/08/01 11:56:24 knu Exp $
+# $FreeBSD: ports/security/cyrus-sasl/scripts/configure.sasl,v 1.9 2001/08/13 04:01:26 dwcjr Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
 fi
+
+SASLDB_NAME=sasldb.db
 
 tempfile=`mktemp -t checklist`
 
@@ -74,6 +76,7 @@ while [ "$1" ]; do
 		\"DB3\")
 			echo "LIB_DEPENDS+=	db3.2:\${PORTSDIR}/databases/db3"
 			echo "CONFIGURE_ARGS+=--with-dblib=berkeley"
+			SASLDB_NAME=sasldb
 			;;
 		\"MySQL\")
 			echo "LIB_DEPENDS+=	mysqlclient.10:\${PORTSDIR}/databases/mysql323-client"
@@ -92,3 +95,5 @@ while [ "$1" ]; do
 	esac
 	shift
 done
+
+echo "SASLDB_NAME=	${SASLDB_NAME}"
