@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.206 2000/07/04 05:52:23 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.207 2000/07/04 07:00:06 will Exp $
 #
 
     SUBDIR += 4va
@@ -79,6 +79,7 @@
     SUBDIR += jgraph
     SUBDIR += jgv
     SUBDIR += jpeg
+    SUBDIR += jslice
     SUBDIR += juno-2
     SUBDIR += kdc2tiff
     SUBDIR += kdegraphics11
