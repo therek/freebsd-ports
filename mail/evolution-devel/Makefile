@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.32 2001/09/11 18:14:12 sobomax Exp $
 #
 
 PORTNAME=	evolution
@@ -13,7 +13,8 @@ MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	bonobo_conf.0:${PORTSDIR}/devel/bonobo-conf
+LIB_DEPENDS=	bonobo_conf.0:${PORTSDIR}/devel/bonobo-conf \
+		gtkhtml.15:${PORTSDIR}/www/gtkhtml
 #ldap.1:${PORTSDIR}/net/openldap <- avoid extra dependency until
 #						   it actually works
 
