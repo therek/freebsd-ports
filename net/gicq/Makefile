@@ -3,13 +3,13 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/gicq/Makefile,v 1.9 1999/08/30 14:22:48 peter Exp $
+# $FreeBSD: ports/net/gicq/Makefile,v 1.10 1999/08/31 06:48:49 mharo Exp $
 #
 
 DISTNAME=	gicq-0.33
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/	\
-		http://www.nectar.com/distfiles/
+MASTER_SITES=	http://www.flathill.gr.jp/~flathill/distfiles/ \
+		ftp://ftp.korsoft.com/pub/gicq/
 
 MAINTAINER=	flathill@FreeBSD.org
 
