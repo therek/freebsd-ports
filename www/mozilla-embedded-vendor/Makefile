@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.2 2000/08/31 12:26:03 sobomax Exp $
+# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.3 2000/10/27 09:24:08 sobomax Exp $
 #
 
 PORTNAME=	mozilla-embedded
@@ -25,7 +25,7 @@ LIB_DEPENDS!=	${LIB_DEPENDS}
 WRKSRC=		${WRKDIRPREFIX}${MAINDIR}/work/mozilla
 
 do-build:
-	perl -pi -e 's|\\|/|g' ${WRKSRC}/embedding/config/Makefile
+	${PERL} -pi -e 's|\\|/|g' ${WRKSRC}/embedding/config/Makefile
 	cd ${WRKSRC}/embedding/config && ${SETENV} ${MAKE_ENV} ${GMAKE} \
 		${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${ALL_TARGET}
 	(cd ${WRKSRC}/dist/bin && \
