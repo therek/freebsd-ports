@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.507 2001/04/02 20:02:31 asmodai Exp $
+# $FreeBSD: ports/net/Makefile,v 1.508 2001/04/02 20:06:14 asmodai Exp $
 #
 
     SUBDIR += 44bsd-rdist

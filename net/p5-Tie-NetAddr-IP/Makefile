@@ -2,7 +2,7 @@
 # Date created:				29 March 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Tie-NetAddr-IP/Makefile,v 1.1 2001/04/02 20:02:38 asmodai Exp $
 #
 
 PORTNAME=	Tie-NetAddr-IP
