@@ -2,11 +2,12 @@
 # Date created:                 15 June 2000
 # Whom:                         shigeri <shigeri@m10.alpha-net.ne.jp>
 #
-# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.18 2001/09/01 21:32:46 petef Exp $
+# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.19 2001/09/03 01:20:53 demon Exp $
 #
 
 PORTNAME=	sylpheed
 PORTVERSION=	0.6.1
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://sylpheed.good-day.net/sylpheed/
 
@@ -20,7 +21,33 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--disable-compface --disable-gdk-pixbuf --enable-ipv6
 
+.if defined(WITH_GPGME)
+LIB_DEPENDS+=	gpgme.3:${PORTSDIR}/security/gpgme
+RUN_DEPENDS+=	gpg:${PORTSDIR}/security/gnupg
+CONFIGURE_ARGS+=--enable-gpgme
+.endif
+.if !defined(WITHOUT_SSL)
+USE_OPENSSL=	yes
+CONFIGURE_ARGS+=--enable-ssl
+.endif
+
 PORTDOCS=	ChangeLog INSTALL README TODO
+
+pre-extract:
+.if defined(WITH_GPGME)
+	@${ECHO_MSG}
+	@${ECHO_MSG} "WARNING: GnuPG support using GPGME is still experimental."
+.else
+	@${ECHO_MSG}
+	@${ECHO_MSG} "You can enable GnuPG support using GPGME by defining WITH_GPGME."
+	@${ECHO_MSG} "WARNING: GnuPG support is still experimental."
+.endif
+.if !defined(WITHOUT_SSL)
+	@${ECHO_MSG}
+	@${ECHO_MSG} "You can disable OpenSSL support by defining WITHOUT_SSL."
+.endif
+	@${ECHO_MSG}
+
 
 post-install:
 .if !defined(NOPORTDOCS)
