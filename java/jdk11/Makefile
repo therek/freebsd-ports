@@ -2,14 +2,14 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.33 2000/07/24 08:05:48 sobomax Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.34 2001/01/16 17:31:08 sobomax Exp $
 #
 
 PORTNAME=	jdk
 PORTVERSION=	${JDK_VERSION}
 CATEGORIES=	java devel
-MASTER_SITES=	ftp://ftp.sc.sri.com/pub/FreeBSD/JDK/ \
-		http://www.freebsd.org/java/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	nate/JDK1.1
 
 MAINTAINER=	nate@FreeBSD.org
 
