@@ -3,7 +3,7 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.75 1999/09/03 16:07:23 ache Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.76 2000/01/24 17:57:57 ache Exp $
 #
 
 DISTNAME=       apache_1.3.11
@@ -24,6 +24,9 @@ MASTER_SITES=   http://www.apache.org/dist/ \
 		ftp://ftp.mtnranch.net/pub/apache/dist/ \
 		ftp://ftp.iodynamics.com/pub/mirror/apache/dist/ \
 		ftp://apache.nextpath.com/pub/apache/dist/
+
+PATCH_SITES=    http://www.apache.org/info/css-security/
+PATCHFILES=     apache_1.3.11_css_patch.txt
 
 MAINTAINER=     ache@freebsd.org
 
