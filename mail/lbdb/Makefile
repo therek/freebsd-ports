@@ -2,16 +2,22 @@
 # Date created:		2 February 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/mail/lbdb/Makefile,v 1.8 2001/02/05 15:10:42 olgeni Exp $
+# $FreeBSD: ports/mail/lbdb/Makefile,v 1.9 2001/02/11 21:39:52 mharo Exp $
 #
 
 PORTNAME=	lbdb
 PORTVERSION=	0.24
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spinnaker.de/debian/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	mwest@uct.ac.za
+
+BUILD_DEPENDS=	abook:${PORTSDIR}/mail/abook \
+		gpg:${PORTSDIR}/security/gnupg
+RUN_DEPENDS=	abook:${PORTSDIR}/mail/abook \
+		gpg:${PORTSDIR}/security/gnupg
 
 WRKSRC=		${WRKDIR}/lbdb-${PORTVERSION}
 GNU_CONFIGURE=	YES
