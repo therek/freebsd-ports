@@ -2,7 +2,7 @@
 # Date created:		Thu May  8 16:41:01 EST 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/games/connect4/Makefile,v 1.6 2000/04/14 00:45:41 mharo Exp $
+# $FreeBSD: ports/games/connect4/Makefile,v 1.7 2000/08/16 05:58:22 kris Exp $
 #
 
 PORTNAME=	connect4
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.gu.kiev.ua/pub/cdrom5/games/volume6/ \
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	""
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=		gunshar:${PORTSDIR}/archivers/gshar+gunshar
 

@@ -3,7 +3,7 @@
 # Last updated:		2nd August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/emulators/aftp/Makefile,v 1.6 1999/11/21 00:31:04 cpiazza Exp $
+# $FreeBSD: ports/emulators/aftp/Makefile,v 1.7 2000/04/12 04:55:08 mharo Exp $
 #
 
 PORTNAME=	aftp
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.apple.asimov.net/pub/apple_II/utility/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 MAN1=		aftp.1
 

@@ -2,7 +2,7 @@
 # Date created:		5th August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/audio/mp3encode/Makefile,v 1.3 1999/11/27 15:10:49 steve Exp $
+# $FreeBSD: ports/audio/mp3encode/Makefile,v 1.4 2000/04/08 21:24:00 mharo Exp $
 #
 
 PORTNAME=	mp3encode
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.sunet.se/pub/multimedia/Berkeley/mpeg2/conformance-bitstreams/audio/mpeg2/software/technical_report/
 DISTNAME=	dist10
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/lsf/encoder
 ALL_TARGET=	encode

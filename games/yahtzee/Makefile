@@ -3,7 +3,7 @@
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 # FreeBSD Version:	2.2.1-RELEASE
 #
-# $FreeBSD: ports/games/yahtzee/Makefile,v 1.4 2000/04/14 12:28:37 asami Exp $
+# $FreeBSD: ports/games/yahtzee/Makefile,v 1.5 2000/09/09 11:03:36 kris Exp $
 #
 
 PORTNAME=		yahtzee
@@ -13,7 +13,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 DISTFILES=		yahtzee-src.tar.Z
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/yahtzee
 

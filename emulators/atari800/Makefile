@@ -2,7 +2,7 @@
 # Date created:		29th April, 1997
 # Whom:			Joel Sutton <jsutton@webnet.com.au>
 #
-# $FreeBSD: ports/emulators/atari800/Makefile,v 1.9 2000/04/12 04:55:10 mharo Exp $
+# $FreeBSD: ports/emulators/atari800/Makefile,v 1.10 2000/10/08 10:20:04 asami Exp $
 #
 
 PORTNAME=	atari800
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.signus.demon.co.uk/Software/Portable/Atari800e/ \
 DISTNAME=	Atari800-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${EXTRA_FILES}
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 

@@ -2,7 +2,7 @@
 # Date created:		14th April 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/archivers/macutils/Makefile,v 1.8 2000/04/12 04:55:33 mharo Exp $
+# $FreeBSD: ports/archivers/macutils/Makefile,v 1.9 2000/06/12 07:43:05 sobomax Exp $
 #
 
 PORTNAME=	macutils
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/compress
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	jsutton@bbcon.com.au
+MAINTAINER=	ports@freebsd.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 MAKEFILE=	makefile
