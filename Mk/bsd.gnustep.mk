@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.14 2004/10/12 04:32:33 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.15 2004/11/07 21:43:20 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -74,9 +74,6 @@ BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
 SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries
 COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries
 LOCALLIBDIR=	${PREFIX}/Local/Library/Libraries
-PLIST_SUB+=	SYSTEMLIBRARY="System/Library"
-PLIST_SUB+=	LOCALLIBRARY="Local/Library"
-PLIST_SUB+=	NOFLAT=""
 .if defined(WITH_GNUSTEP_DEVEL)
 PKGNAMESUFFIX?=	-devel${PKGNAMESUFFIX2}
 PLIST_SUB+=	GNUSTEP_DEVEL=""
@@ -88,7 +85,7 @@ PLIST_SUB+=	GNUSTEP_STABLE=""
 DEFAULT_LIBVERSION?=	0.0.1
 .endif
 
-PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} OPSYS=${OPSYS:L} VERSION=${PORTVERSION}
+PLIST_SUB+=	GNU_ARCH=${GNU_ARCH} VERSION=${PORTVERSION}
 PLIST_SUB+=	MAJORVERSION=${PORTVERSION:C/([0-9]).*/\1/1}
 PLIST_SUB+=	LIBVERSION=${DEFAULT_LIBVERSION}
 PLIST_SUB+=	MAJORLIBVERSION=${DEFAULT_LIBVERSION:C/([0-9]).*/\1/1}
