@@ -2,7 +2,7 @@
 # Date created:			19 April 1996
 # Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.38 2001/06/09 03:04:02 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	swig
@@ -36,6 +36,8 @@ ALL_TARGET=	all runtime
 
 MAN1=		swig.1
 PLIST_SUB=	VER="${VER}"
+
+NO_LATEST_LINK=	yes
 
 post-install:
 	${LN} -f ${PREFIX}/bin/swig ${PREFIX}/bin/swig${VER}

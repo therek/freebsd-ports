@@ -2,7 +2,7 @@
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/expat/Makefile,v 1.10 2001/02/05 16:34:34 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	expat
@@ -19,6 +19,8 @@ MAKE_ARGS=	SHLIB_MAJOR="${SHLIB_MAJOR}" \
 		NOPROFILE=true
 INSTALLS_SHLIB=	yes
 PLIST_SUB=	SHLIB_MAJOR="${SHLIB_MAJOR}"
+
+NO_LATEST_LINK=	yes
 
 do-build:
 .for f in ${MAKEFILES}
