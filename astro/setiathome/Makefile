@@ -2,7 +2,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.17 2000/04/13 06:46:14 asami Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.18 2000/04/17 01:08:30 kris Exp $
 
 PORTNAME=	setiathome
 PORTVERSION=	2.4
@@ -41,7 +41,7 @@ DISTFILES=	setiathome-2.4.i386-unknown-freebsd2.2.8.tar	\
 
 NO_BUILD=	"binary distribution"
 
-MAN1=		setiathome.1
+MAN1=		setiathome.1 xsetiathome.1
 
 NO_CDROM=	"interactive install"
 
