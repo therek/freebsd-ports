@@ -2,7 +2,7 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.9 2000/09/08 12:23:59 tg Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.10 2000/09/13 12:23:29 tg Exp $
 #
 
 PORTNAME=		py-xml
@@ -24,9 +24,9 @@ PLIST=			${WRKDIR}/PLIST
 .include <bsd.port.pre.mk>
 
 .if ${PYTHON_VERSION} == "python1.5"
-PLISTS=			${PKGDIR}/PLIST.${PYTHON_VERSION}
+PLISTS=			${PKGDIR}/pkg-plist.${PYTHON_VERSION}
 .endif
-PLISTS+=		${PKGDIR}/PLIST
+PLISTS+=		${PKGDIR}/pkg-plist
 
 .if !defined(NOPORTDOCS)
 DOCDIR=			share/doc/py-xml
