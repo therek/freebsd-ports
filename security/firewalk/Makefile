@@ -2,14 +2,13 @@
 # Date created:		Sun May 3, 1999
 # Whom:			shipley@dis.org
 #
-# $FreeBSD: ports/security/firewalk/Makefile,v 1.5 2000/04/21 08:18:20 mharo Exp $
+# $FreeBSD: ports/security/firewalk/Makefile,v 1.6 2000/06/02 03:18:38 will Exp $
 #
 
 PORTNAME=	firewalk
-PORTVERSION=	0.9.9b
+PORTVERSION=	0.99.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.packetfactory.net/firewalk/
-DISTNAME=	firewalk-0.99beta
 
 MAINTAINER=	shipley@dis.org
 
@@ -21,12 +20,12 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
 CONFIGURE_ARGS=	--with-gtk=no
 
+WRKSRC=         ${WRKDIR}/Firewalk-${PORTVERSION}
+
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} <= 300000
 BROKEN=		may not build
 .endif
-
-WRKSRC=		${WRKDIR}/Firewalk-0.99b-beta3
 
 .include <bsd.port.post.mk>
