@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.92 2000/06/09 02:51:56 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.93 2000/06/09 09:17:37 sobomax Exp $
 #
 
     SUBDIR += agrep
@@ -12,6 +12,7 @@
     SUBDIR += cocoon
     SUBDIR += code2html
     SUBDIR += cole
+    SUBDIR += cost
     SUBDIR += de-ispell
     SUBDIR += dealt-ispell
     SUBDIR += deneu-ispell
