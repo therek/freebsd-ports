@@ -3,12 +3,13 @@
 # Date created:				7 January 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/teapot/Makefile,v 1.4 1999/08/25 05:26:51 obrien Exp $
 #
 
 DISTNAME=	teapot-1.03
 CATEGORIES=	deskutils
-MASTER_SITES=	ftp://cantor.informatik.rwth-aachen.de/pub/unix/
+MASTER_SITES=	ftp://cantor.informatik.rwth-aachen.de/pub/unix/ \
+		http://www.moria.de/~michael/teapot/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
