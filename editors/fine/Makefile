@@ -3,7 +3,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.2 1999/08/25 05:43:37 obrien Exp $
+# $FreeBSD: ports/editors/fine/Makefile,v 1.3 1999/08/26 00:55:16 cpiazza Exp $
 #
 
 DISTNAME=	fine
@@ -19,7 +19,7 @@ USE_QT=		yes
 WRKSRC=		${WRKDIR}/fine
 
 do-install:
-	@${MKDIR} ${PREIFX}/share/fine
+	@${MKDIR} ${PREFIX}/share/fine
 	${INSTALL_DATA} ${WRKSRC}/.editor ${PREFIX}/share/fine/editor
 .for template in C++.template LaTeX.template h.template  html.template
 	${INSTALL_DATA} ${WRKSRC}/${template} ${PREFIX}/share/fine/
