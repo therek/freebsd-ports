@@ -2,17 +2,24 @@
 # Date created:			Apr 12, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/net/corkscrew/Makefile,v 1.3 2001/06/08 05:36:37 markp Exp $
+# $FreeBSD: ports/net/corkscrew/Makefile,v 1.4 2001/06/15 05:13:22 markp Exp $
 #
 
 PORTNAME=	corkscrew
-PORTVERSION=	1.5
+PORTVERSION=	2.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.agroman.net/corkscrew/
 
 MAINTAINER=	markp@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-WRKSRC=		${WRKDIR}/${PORTNAME}
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+.for file in NEWS README TODO
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
+.endfor
+.endif
 
 .include <bsd.port.mk>
