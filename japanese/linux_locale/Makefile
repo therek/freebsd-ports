@@ -2,7 +2,7 @@
 # Date created:         March 20 2000
 # Whom:                 imura@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/linux_locale/Makefile,v 1.4 2000/06/29 07:02:24 obrien Exp $
+# $FreeBSD: ports/japanese/linux_locale/Makefile,v 1.5 2000/10/02 15:20:02 imura Exp $
 #
 
 PORTNAME=	linux_locale
@@ -18,7 +18,6 @@ MAINTAINER=	imura@FreeBSD.org
 BUILD_DEPENDS=	${LCDEF_CMD}:${PORTSDIR}/emulators/linux_base
 
 USE_LINUX_PREFIX=	yes
-NO_MTREE=	yes
 WRKSRC=		${WRKDIR}/locale-ja-${VERSION}
 PLIST_SUB=	VER=${VERSION}
 
