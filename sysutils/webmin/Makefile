@@ -2,17 +2,17 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.18 2000/04/22 10:13:32 mharo Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.19 2000/07/16 13:33:24 andreas Exp $
 #
 
 PORTNAME=	webmin
-PORTVERSION=	0.80
+PORTVERSION=	0.82
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.webmin.com/webmin/download/
 
 MAINTAINER=	andreas@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSLeay.pm:${PORTSDIR}/security/p5-Net-SSLeay
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSLeay.pm:${PORTSDIR}/security/p5-Net-SSLeay
 
 NO_BUILD=	yes
 IS_INTERACTIVE=	yes
@@ -29,9 +29,11 @@ post-patch:
 	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.4
 
 do-install:
-	${MKDIR} ${PREFIX}/lib/webmin
-	${CP} -r ${WRKSRC}/* ${PREFIX}/lib/webmin
-	@cd ${PREFIX}/lib/webmin && find . -name "*.orig" -print | xargs ${RM}
-	@cd ${PREFIX}/lib/webmin && ./setup.sh
+	${MKDIR} ${LOCALBASE}/lib/webmin
+	${CP} -r ${WRKSRC}/* ${LOCALBASE}/lib/webmin
+	@cd ${LOCALBASE}/lib/webmin && find . -name "*.orig" -print \
+		| xargs ${RM}
+	@cd ${LOCALBASE}/lib/webmin && ./setup.sh
+	${MV} /tmp/webmin.sh ${LOCALBASE}/etc/rc.d/webmin.sh
 
 .include <bsd.port.mk>
