@@ -2,7 +2,7 @@
 # Date created:         11 December 1999
 # Whom:                 Yuichi Narahara
 #
-# $FreeBSD: ports/games/sxsame/Makefile,v 1.1.1.1 1999/12/10 19:30:05 flathill Exp $
+# $FreeBSD: ports/games/sxsame/Makefile,v 1.2 2000/04/14 12:26:40 asami Exp $
 #
 
 PORTNAME=	sxsame
@@ -20,7 +20,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
 INSTALL_TARGET=	install install.dir
-BINOWN=		games
+BINOWN=		root
 BINGRP=		games
 BINMODE=	2755
 MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP} BINMODE=${BINMODE}
