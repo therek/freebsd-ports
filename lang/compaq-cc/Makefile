@@ -3,12 +3,12 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.11 2001/03/20 20:28:03 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.12 2001/03/21 00:28:37 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
 PORTVERSION=	6.2.9.506.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.compaq.com/pub/products/C-CXX/linux/compaq_c_v62/
 DISTFILES=	ccc-6.2.9.506-1.alpha.rpm libots-2.2.7-2.alpha.rpm
