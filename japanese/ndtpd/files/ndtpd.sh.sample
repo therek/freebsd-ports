@@ -1,6 +1,6 @@
 #!/bin/sh -e -
 #
-# $FreeBSD: ports/japanese/ndtpd/files/ndtpd.sh.sample,v 1.3 2000/08/29 20:16:57 knu Exp $
+# $FreeBSD: ports/japanese/ndtpd/files/ndtpd.sh.sample,v 1.4 2001/08/18 05:53:16 ijliao Exp $
 #
 # startup script for ndtpd
 # Usage: ndtpd.sh {start|stop}
@@ -29,20 +29,23 @@ MakeWorkingDirectory() {
 }
 
 conf=@prefix@/etc/ndtpd.conf
+ndtpd=@prefix@/sbin/ndtpd
+ndtpcheck=@prefix@/sbin/ndtpcheck
+ndtpcontrol=@prefix@/sbin/ndtpcontrol
 
-ndtpcheck -c ${conf} || exit
+${ndtpcheck} -c ${conf} || exit
 
 case "${command}" in
 start)
     MakeWorkingDirectory
 
     if [ "${standalone}" = YES ]; then
-	@prefix@/sbin/ndtpd && echo -n " ndtpd"
+	${ndtpd} && echo -n " ndtpd"
     fi
     ;;
 stop)
     if [ "${standalone}" = YES ]; then
-	@prefix@/sbin/ndtpcontrol terminate && echo -n " ndtpd"
+	${ndtpcontrol} terminate && echo -n " ndtpd"
     fi
     ;;
 *)
