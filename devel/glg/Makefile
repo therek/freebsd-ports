@@ -2,7 +2,7 @@
 # Date created:				23 May 2001
 # Whom:					Olivier Singla <lo_gafet@users.sourceforge.net>
 #
-# $FreeBSD: ports/devel/glg/Makefile,v 1.1 2001/06/11 04:24:11 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glg
@@ -17,7 +17,6 @@ MASTER_SITE_SUBDIR=	kris
 MAINTAINER=	lo_gafet@users.sourceforge.net
 
 USE_GMAKE=	yes
-USE_GLIB=	yes
 USE_GTK=	yes
 WANT_GNOME=	yes
 

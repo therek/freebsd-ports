@@ -2,7 +2,7 @@
 # Date created:				7 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-fm/workplace/Makefile,v 1.17 2000/11/02 22:52:03 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	workplace
@@ -18,7 +18,6 @@ PATCHFILES=	workplace-1.0.a3+tj1.diff.gz
 MAINTAINER=	trevor@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-USE_GLIB=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/glib12 \
