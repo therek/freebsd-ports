@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.65 1999/10/10 17:25:15 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.66 1999/11/12 22:09:06 obrien Exp $
 #
 
 DISTNAME=	xc
@@ -17,6 +17,8 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/ \
 DISTFILES=	X335src-1.tgz X335src-2.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
+
+BROKEN=		"Defines their own version of putenv(), which we don't override properly."
 
 IS_INTERACTIVE=	yes	# configure script asks questions
 .if (${MACHINE} != "alpha")
