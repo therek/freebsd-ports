@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.93 2002/10/06 19:49:32 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.94 2002/10/06 20:54:37 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -204,7 +204,7 @@ DEPEND_RUBY?=		${RUBY}:${PORTSDIR}/${RUBY_PORT}
 DEPEND_RUBY_SHIM18?=	${RUBY_SITEARCHLIBDIR}/features/ruby18/file_ruby18.so:${PORTSDIR}/${RUBY_SHIM18_PORT}
 DEPEND_RUBY_AMSTD?=	${RUBY_SITELIBDIR}/amstd/version.rb:${PORTSDIR}/${RUBY_AMSTD_PORT}
 DEPEND_RUBY_RDTOOL?=	${RUBY_RD2}:${PORTSDIR}/${RUBY_RDTOOL_PORT}
-DEPEND_RUBY_RDTOOL?=	${RUBY_RDOC}:${PORTSDIR}/${RUBY_RDOC_PORT}
+DEPEND_RUBY_RDOC?=	${RUBY_RDOC}:${PORTSDIR}/${RUBY_RDOC_PORT}
 
 # Directories
 RUBY_LIBDIR?=		${_RUBY_SYSLIBDIR}/ruby/${RUBY_VER}
