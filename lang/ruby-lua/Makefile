@@ -2,11 +2,11 @@
 # Date created:		30 August 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/ruby-lua/Makefile,v 1.1 2001/08/30 08:13:20 knu Exp $
 #
 
 PORTNAME=	lua
-PORTVERSION=	0.0.1
+PORTVERSION=	20010831
 CATEGORIES=	lang ruby
 MASTER_SITES=	http://ruby-lua.unolotiene.com/img/18/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
