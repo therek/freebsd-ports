@@ -2,15 +2,15 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.30 2000/08/03 09:27:30 asami Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.31 2000/09/06 02:00:29 asami Exp $
 #
 
 PORTNAME?=	xtt-common
 PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/3.3.6/source/ \
+MASTER_SITES=	${MASTER_SITE_XFREE} \
 		http://X-TT.dsl.gr.jp/dists/1.x/${VERSION}/
+MASTER_SITE_SUBDIR=	3.3.6
 DISTFILES=	X336src-1.tgz xtt-${VERSION}.tgz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp

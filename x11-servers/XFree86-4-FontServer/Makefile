@@ -2,17 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/Makefile,v 1.3 2000/08/25 10:33:54 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/Makefile,v 1.4 2000/08/25 22:29:35 asami Exp $
 #
 
 PORTNAME=	FontServer
 PORTVERSION=	4.0.1
 CATEGORIES=	x11-servers x11-fonts
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-4.0.1/source/ \
-		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/4.0.1/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/4.0.1/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X401src-1.tgz
 

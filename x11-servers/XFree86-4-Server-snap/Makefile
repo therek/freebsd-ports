@@ -2,17 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.84 2000/08/25 10:34:14 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.85 2000/08/25 10:54:49 asami Exp $
 #
 
 PORTNAME=	Server
 PORTVERSION=	4.0.1
 CATEGORIES=	x11-servers
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-4.0.1/source/ \
-		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/4.0.1/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/4.0.1/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X401src-1.tgz
 

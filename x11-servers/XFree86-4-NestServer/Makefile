@@ -2,17 +2,14 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-NestServer/Makefile,v 1.2 2000/08/25 10:34:02 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-NestServer/Makefile,v 1.3 2000/08/25 22:29:38 asami Exp $
 #
 
 PORTNAME=	NestServer
 PORTVERSION=	4.0.1
 CATEGORIES=	x11-servers
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/4.0.1/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-4.0.1/source/ \
-		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/4.0.1/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/4.0.1/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 PKGNAMEPREFIX=	XFree86-
 DISTFILES=	X401src-1.tgz
 
