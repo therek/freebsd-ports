@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice52/Makefile,v 1.10 2000/08/28 13:31:23 jedgar Exp $
+# $FreeBSD: ports/german/staroffice52/Makefile,v 1.11 2000/09/07 14:22:48 sheldonh Exp $
 #
 
 PORTNAME=	staroffice
@@ -91,7 +91,7 @@ do-install:
 	@ ${ECHO}
 	@ ${FALSE}
 .else
-if exists(/compat/linux/${PREFIX})
+.if exists(/compat/linux/${PREFIX})
 	@${LN} -fs /compat/linux/${PREFIX}/office52 ${PREFIX}/office52
 .endif
 	@${CAT} ${PKGDIR}/MESSAGE
@@ -108,6 +108,7 @@ if exists(/compat/linux/${PREFIX})
 		${ECHO} ; \
 		${FALSE} ; \
 	.endif
+.endif
 
 post-install:
 	@${PATCH} -s ${PREFIX}/office52/program/setup ${FILESDIR}/setup.patch
