@@ -2,7 +2,7 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/ted/Makefile,v 1.2 2001/08/28 06:36:25 petef Exp $
+# $FreeBSD: ports/editors/ted/Makefile,v 1.3 2001/09/11 03:05:10 ache Exp $
 #
 
 PORTNAME=	ted
@@ -26,7 +26,7 @@ INDDIR=		${PREFIX}/share/Ted/ind
 INFODIR=	${PREFIX}/share/doc/Ted
 
 post-extract:
-	cd ${WRKSRC}/tedPackage && ${TAR_CMD} xf TedBindist.tar
+	cd ${WRKSRC}/tedPackage && ${TAR} xf TedBindist.tar
 
 post-patch:
 	cd ${WRKSRC}/tedPackage/info && \
