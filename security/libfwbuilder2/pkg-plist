@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/security/libfwbuilder/pkg-plist,v 1.4 2003/12/16 23:44:28 sergei Exp $
+@comment $FreeBSD: ports/security/libfwbuilder/pkg-plist,v 1.5 2004/01/18 12:49:58 clement Exp $
 bin/libfwbuilder-config
 include/fwbuilder/Address.hh
 include/fwbuilder/AddressRange.hh
@@ -55,8 +55,10 @@ include/fwcompiler/OSConfigurator.hh
 include/fwcompiler/PolicyCompiler.hh
 include/fwcompiler/RuleProcessor.hh
 include/fwcompiler/manifest.hh
+lib/libfwbuilder.a
 lib/libfwbuilder.so
 lib/libfwbuilder.so.5
+lib/libfwcompiler.a
 lib/libfwcompiler.so
 lib/libfwcompiler.so.5
 %%DOCSDIR%%/AUTHORS
