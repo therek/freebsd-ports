@@ -2,7 +2,7 @@
 # Date created:				24 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/sdl_mixer/Makefile,v 1.6 2000/12/11 09:31:28 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdl_mixer
@@ -13,7 +13,7 @@ DISTNAME=	SDL_mixer-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=  	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel \
+LIB_DEPENDS=  	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel \
 		smpeg.1:${PORTSDIR}/graphics/smpeg \
 		vorbis.0:${PORTSDIR}/audio/libvorbis
 

@@ -2,7 +2,7 @@
 # Date created:				20 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sdl_ttf/Makefile,v 1.2 2000/09/28 11:52:06 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdl_ttf
@@ -13,7 +13,7 @@ DISTNAME=	SDL_ttf-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
 
 SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 

@@ -2,7 +2,7 @@
 # Date created:		2 Feb 2000
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.12 2000/10/05 06:36:19 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smpeg
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.lokigames.com/pub/open-source/smpeg/ \
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-LIB_DEPENDS=  	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel
+LIB_DEPENDS=  	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
 
 SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 

@@ -2,7 +2,7 @@
 # Date created: 	16 September 2000
 # Whom: 		Holger Lamm
 #
-# $FreeBSD: ports/graphics/avifile/Makefile,v 1.10 2001/02/13 02:38:12 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	avifile
@@ -15,7 +15,7 @@ DISTFILES=	avifile-${PORTVERSION}.tar.gz \
 
 MAINTAINER=	holger@eit.uni-kl.de
 
-LIB_DEPENDS=	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
 RUN_DEPENDS=	${CODEC_DETECTION_FILE}:${CODEC_PORT}
 
 ONLY_FOR_ARCHS=	i386
