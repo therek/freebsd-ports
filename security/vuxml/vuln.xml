@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.188 2004/08/22 22:39:32 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.189 2004/08/22 22:56:56 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -56,6 +56,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <cvename>CAN-2004-0692</cvename>
       <cvename>CAN-2004-0693</cvename>
       <url>http://www.trolltech.com/developer/changes/changes-3.3.3.html</url>
+      <url>http://scary.beasts.org/security/CESA-2004-004.txt</url>
     </references>
     <dates>
       <discovery>2004-08-11</discovery>
