@@ -2,19 +2,20 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.39 2000/04/25 17:27:48 shige Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.40 2000/04/29 15:00:38 shige Exp $
 #
 
 PORTNAME=	zsh
 PORTVERSION=	3.1.7.p1
 CATEGORIES=	shells
 MASTER_SITES=	http://people.FreeBSD.org/~knu/ports/distfiles/ \
-		ftp://ftp.zsh.org/zsh/ \
-		ftp://ftp.sterling.com/zsh/ \
-		ftp://ftp.rge.com/pub/zsh/ \
-		ftp://ftp.fu-berlin.de/pub/unix/shells/zsh/ \
-		ftp://ftp.ips.oz.au/pub/packages/zsh/ \
-		ftp://ftp.uit.no/pub/unix/shells/zsh/
+		ftp://ftp.zsh.org/%SUBDIR%/ \
+		ftp://ftp.sterling.com/%SUBDIR%/ \
+		ftp://ftp.rge.com/pub/%SUBDIR%/ \
+		ftp://ftp.fu-berlin.de/pub/unix/shells/%SUBDIR%/ \
+		ftp://ftp.ips.oz.au/pub/packages/%SUBDIR%/ \
+		ftp://ftp.uit.no/pub/unix/shells/%SUBDIR%/
+MASTER_SITE_SUBDIR=	zsh/development
 DISTNAME=	${PORTNAME}-${ZSH_VER}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${ZSHFUNC_FILES}
