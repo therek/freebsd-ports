@@ -2,11 +2,11 @@
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.30 2000/04/09 19:07:18 cpiazza Exp $
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.31 2000/04/22 10:11:43 mharo Exp $
 #
 
 PORTNAME=	cdrecord
-PORTVERSION=	1.8
+PORTVERSION=	1.8.1
 CATEGORIES=	sysutils audio
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/ \
 		ftp://ftp.cs.tu-berlin.de/pub/misc/cdrecord/ \
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/ \
 
 MAINTAINER=	dirk@FreeBSD.org
 
-MAN1=		cdrecord.1 cdda2wav.1
+MAN1=		cdrecord.1 cdda2wav.1 readcd.1
 USE_GMAKE=	yes
 MAKE_ENV=	COPTX="-DBSD_SCSI_SENSE_BUG"
 
@@ -33,6 +33,7 @@ do-install:
 	 ${PREFIX}/bin
 	@${INSTALL_MAN} ${WRKSRC}/cdrecord/cdrecord.1 ${PREFIX}/man/man1
 	@${INSTALL_MAN} ${WRKSRC}/cdda2wav/cdda2wav.1 ${PREFIX}/man/man1
+	@${INSTALL_MAN} ${WRKSRC}/misc/readcd.1 ${PREFIX}/man/man1
 	@${LN} -sf ${PREFIX}/bin/cdda2wav ${PREFIX}/bin/list_audio_tracks
 
 .include <bsd.port.mk>
