@@ -3,7 +3,7 @@
 # Date created:         30 December 1997
 # Whom:                 Juergen Unger <j.unger@choin.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/fly/Makefile,v 1.3 1999/09/04 20:05:04 cpiazza Exp $
 #
 
 DISTNAME=       fly-1.6.5
