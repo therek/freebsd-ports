@@ -1,13 +1,13 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/zebra/files/zebra.sh,v 1.5 1999/12/23 18:10:37 joe Exp $
+# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.1 1999/12/24 15:56:31 andreas Exp $
 #
 # zebra start/stop script by "Andreas Klemm <andreas@FreeBSD.ORG>"
 #
 
 usage()
 {
-	echo "$0: usage: $0 [ start | stop ]"
+	echo "$0: usage: $0 [ start | stop | restart ]"
 	exit 1
 }
 
