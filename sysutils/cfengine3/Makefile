@@ -2,7 +2,7 @@
 # Date created:		March 16, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.17 2001/04/02 10:21:18 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cfengine
@@ -26,7 +26,7 @@ USE_AUTOMAKE=	yes
 MAN8=		cfengine.8
 
 pre-configure:
-	@cd ${WRKSRC} && aclocal && autoheader
+	@cd ${WRKSRC} && ${ACLOCAL} && ${AUTOHEADER}
 
 post-install:
 .if defined(NOPORTDOCS)
