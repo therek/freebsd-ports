@@ -3,20 +3,19 @@
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD: ports/devel/cscope/Makefile,v 1.14 2001/02/26 04:00:03 steve Exp $
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.15 2001/04/26 19:00:31 obrien Exp $
 #
 
 PORTNAME=	cscope
-PORTVERSION=	15.1
-PORTREVISION=	3
+PORTVERSION=	15.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
-CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 GNU_CONFIGURE=	yes
+
 MAN1=		cscope.1
 
 .include <bsd.port.mk>

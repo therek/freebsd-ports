@@ -1,3 +1,2 @@
-@comment $FreeBSD: ports/devel/cscope/pkg-plist,v 1.2 2000/11/22 00:17:14 obrien Exp $
 bin/cscope
 bin/ocs
