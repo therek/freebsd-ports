@@ -2,11 +2,11 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/emboss/Makefile,v 1.18 2001/02/28 15:58:11 kevlo Exp $
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.19 2001/03/12 10:33:50 nbm Exp $
 #
 
 PORTNAME=	emboss
-PORTVERSION=	1.11.0
+PORTVERSION=	1.12.0
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.uk.embnet.org/pub/EMBOSS/ \
 		ftp://ftp.no.embnet.org/pub/EMBOSS/ \
