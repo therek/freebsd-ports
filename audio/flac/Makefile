@@ -3,7 +3,7 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.4 2001/05/27 19:05:43 sf Exp $
+# $FreeBSD: ports/audio/flac/Makefile,v 1.5 2001/06/08 02:06:29 ijliao Exp $
 #
 
 PORTNAME=	flac
@@ -21,7 +21,7 @@ LIB_DEPENDS+=	xmms.1:${PORTSDIR}/audio/xmms
 .endif
 
 .if ${MACHINE_ARCH} == "i386"
-BUILD_DEPENDS+=	nasm:${PORTSDIR}/deve/nasm
+BUILD_DEPENDS+=	nasm:${PORTSDIR}/devel/nasm
 .endif
 
 USE_LIBTOOL=	yes
