@@ -13,7 +13,7 @@
 # bsd.port.mk.  There are significant differences in those so you'll have
 # hard time upgrading this...
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.9 1999/08/29 11:11:12 peter Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.10 1999/09/28 02:19:47 taoka Exp $
 #
 
 $err = $warn = 0;
@@ -979,6 +979,14 @@ EOF
 				 && $m{'dep'} =~ /\\\\./) {
 					&perror("WARN: use of backslashes in ".
 						"$j is deprecated.");
+				}
+
+				# check for PREFIX
+				if ($m{'dep'} =~ /\${PREFIX}/) {
+					&perror("FATAL: \${PREFIX} must not be ".
+						"contained in *_DEPENDS. ".
+						"use \${LOCALBASE} or ".
+						"\${X11BASE} instead.");
 				}
 
 				# check port dir existence
