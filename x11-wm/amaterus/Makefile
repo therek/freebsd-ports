@@ -2,7 +2,7 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.7 2000/06/10 06:59:14 nakai Exp $
+# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.8 2000/06/19 11:39:49 nakai Exp $
 #
 
 PORTNAME=	amaterus
@@ -12,7 +12,8 @@ MASTER_SITES=	http://www.taiyaki.org/src/
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
