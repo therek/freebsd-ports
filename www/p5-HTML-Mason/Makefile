@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.8 2001/02/02 12:18:55 kevlo Exp $
+# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.9 2001/03/05 14:30:51 will Exp $
 #
 
 PORTNAME=	HTML-Mason
@@ -25,6 +25,6 @@ MAN3=		Bundle::HTML::Mason.3 HTML::Mason.3 HTML::Mason::Admin.3 \
 		HTML::Mason::Component.3 HTML::Mason::Components.3 \
 		HTML::Mason::Devel.3 HTML::Mason::Interp.3 \
 		HTML::Mason::MethodMaker.3 HTML::Mason::Parser.3 \
-		HTML::Mason::Request.3 HTML:Mason::Tests.3
+		HTML::Mason::Request.3 HTML::Mason::Tests.3
 
 .include <bsd.port.mk>
