@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.69 2001/04/22 00:32:28 nakai Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.70 2001/04/22 01:40:53 nakai Exp $
 #
 
     SUBDIR += aftp
@@ -10,6 +10,7 @@
     SUBDIR += cingb
     SUBDIR += cpmemu
     SUBDIR += cpmtools
+    SUBDIR += darcnes
     SUBDIR += dgen-sdl
     SUBDIR += dlx
     SUBDIR += fmsx
