@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.112 2001/03/10 19:46:36 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.113 2001/03/12 16:04:00 lioux Exp $
 #
 
     SUBDIR += GiNaC
@@ -59,6 +59,7 @@
     SUBDIR += p5-Math-Financial
     SUBDIR += p5-Math-FixedPrecision
     SUBDIR += p5-Math-GMP
+    SUBDIR += p5-Math-Interpolate
     SUBDIR += p5-Math-Logic
     SUBDIR += p5-MatrixReal
     SUBDIR += p5-Set-IntSpan
