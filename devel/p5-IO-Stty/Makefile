@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-IO-Stty/Makefile,v 1.2 2000/03/22 01:59:01 will Exp $
+# $FreeBSD: ports/devel/p5-IO-Stty/Makefile,v 1.3 2000/04/11 21:29:38 mharo Exp $
 #
 
 PORTNAME=	IO-Stty
@@ -10,8 +10,8 @@ PORTVERSION=	0.02
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
-DISTNAME=	${PORTNAME}-.02
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-.02
 
 MAINTAINER=	will@FreeBSD.org
 

@@ -2,15 +2,15 @@
 # Date created:		6 March 1998
 # Whom:			Jun Kuriyama <kuriyama@opt.phys.waseda.ac.jp>
 #
-# $FreeBSD: ports/devel/p5-File-Sync/Makefile,v 1.6 1999/12/28 08:17:29 kuriyama Exp $
+# $FreeBSD: ports/devel/p5-File-Sync/Makefile,v 1.7 2000/04/11 21:29:32 mharo Exp $
 #
 
 PORTNAME=	File-Sync
 PORTVERSION=	0.08
-PKGNAMEPREFIX=	p5-
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 

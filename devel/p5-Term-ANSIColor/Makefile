@@ -2,7 +2,7 @@
 # Date created:				1 December 1999
 # Whom:	      				Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/devel/p5-Term-ANSIColor/Makefile,v 1.1 1999/12/25 15:43:42 steve Exp $
+# $FreeBSD: ports/devel/p5-Term-ANSIColor/Makefile,v 1.2 2000/04/11 21:29:54 mharo Exp $
 #
 
 PORTNAME=	Term-ANSIColor
@@ -10,8 +10,8 @@ PORTVERSION=	1.01
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Term
-DISTNAME=	ANSIColor-1.01
 PKGNAMEPREFIX=	p5-
+DISTNAME=	ANSIColor-1.01
 
 MAINTAINER=	dsh@vlink.ru
 
