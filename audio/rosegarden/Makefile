@@ -2,7 +2,7 @@
 # Date created:		04 Aug 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/audio/rosegarden/Makefile,v 1.14 1999/11/28 18:31:41 steve Exp $
+# $FreeBSD: ports/audio/rosegarden/Makefile,v 1.15 2000/04/08 21:24:21 mharo Exp $
 #
 
 PORTNAME=	rosegarden
@@ -29,7 +29,7 @@ do-install:
 	)
 
 post-install:
-	${MV} -i ${PREFIX}/bin/rosegarden ${PREFIX}/bin/rosegarden-bin
+	${MV} ${PREFIX}/bin/rosegarden ${PREFIX}/bin/rosegarden-bin
 	${SED} s-%%PREFIX%%-${PREFIX}-g ${FILESDIR}/rosegarden >${WRKDIR}/rosegarden
 	${INSTALL_SCRIPT} ${WRKDIR}/rosegarden ${PREFIX}/bin
 
