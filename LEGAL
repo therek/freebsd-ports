@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.308 2003/10/26 23:38:24 kris Exp $
+# $FreeBSD: ports/LEGAL,v 1.309 2003/10/28 10:15:12 arved Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -29,6 +29,7 @@ adom-*			ports/games/adom	Copy of CD must be sent to
 						author
 alephone-data		ports/games/alephone-data Don't sell for profit
 altivore		ports/security/altivore	No redistribution allowed
+AquaGatekeeper-*	ports/net/AquaGatekeeper	No redistribution allowed
 aswedit-*		ports/www/aswedit	Commercial software.
 atari800-*		ports/emulators/atari800 xf25 contains copyright ROMs
 						and cannot be distributed.
