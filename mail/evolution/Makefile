@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.7 2000/08/23 17:55:38 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.8 2000/09/13 22:43:53 ade Exp $
 #
 
 PORTNAME=	evolution
-PORTVERSION=	0.5
+PORTVERSION=	0.5.1
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
