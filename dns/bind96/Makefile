@@ -2,12 +2,12 @@
 # Date created:				6 October 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/bind9/Makefile,v 1.19 2000/10/29 04:45:17 will Exp $
 #
 
 PORTNAME=	bind
 PORTVERSION=	9.0.0
-CATEGORIES=	net
+CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.isc.org/isc/bind9/${PORTVERSION}/ \
 		ftp://ftp.sunet.se/pub/network/isc/bind9/${PORTVERSION}/
 
