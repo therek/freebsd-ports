@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.52 2000/11/26 14:12:52 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.53 2000/11/26 21:57:21 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -23,8 +23,6 @@ MAINTAINER=	andreas@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
-
-Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html
 
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}
 USE_XLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:         Fri Feb 18 03:04:36 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.9 2000/09/11 12:45:57 sumikawa Exp $
+# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.10 2000/11/16 19:12:45 sumikawa Exp $
 #
 
 PORTNAME=	apache+ipv6
@@ -30,8 +30,6 @@ PATCHFILES=	apache-1.3.14-v6-20001114.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sumikawa@FreeBSD.org
-
-Y2K=		http://www.apache.org/docs/misc/FAQ.html#year2000
 
 #
 # Set APACHE_PERF_TUNING env. variable to YES to get maximum performance

@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.47 2000/05/06 16:33:01 knu Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.48 2000/08/29 19:54:34 knu Exp $
 #
 
 PORTNAME=	samba
@@ -16,8 +16,6 @@ MASTER_SITES=	ftp://ftp.samba.org/pub/samba/ \
 		ftp://ftp.sunet.se/pub/unix/utilities/samba/
 
 MAINTAINER=	hosokawa@jp.FreeBSD.org
-
-Y2K=		http://us1.samba.org/samba/docs/sambay2k.html
 
 # directories
 VARDIR=		/var

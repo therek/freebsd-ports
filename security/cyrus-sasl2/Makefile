@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.20 2000/11/02 00:16:45 jeh Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.21 2000/11/17 15:06:21 kevlo Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -19,8 +19,6 @@ MAINTAINER=	hetzels@westbend.net
 USE_OPENSSL=	YES
 
 INSTALLS_SHLIB=	yes
-
-Y2K=		http://asg.web.cmu.edu/cyrus/imapd/y2k.html
 
 MAN3=		sasl.3 sasl_authorize_t.3 sasl_callbacks.3 sasl_checkpass.3 \
 		sasl_client_init.3 sasl_client_new.3 sasl_client_start.3 sasl_client_step.3 \

@@ -2,7 +2,7 @@
 # Date created:         Sat Oct 31 16:30:00 CDT 1997
 # Whom:                 hetzels@westbend.net
 #
-# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.21 2000/10/08 10:23:08 asami Exp $
+# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.22 2000/11/28 01:40:13 jeh Exp $
 #
 
 PORTNAME=	apache_fp
@@ -55,9 +55,6 @@ MOD_FP=		${FILESDIR}/mod_frontpage.c
 IMAGES_DIR=	${AP_SHARE}/manual/images
 
 INSTALL_FILE=	${INSTALL} -c -m 555 -o bin -g bin
-
-Y2K=		http://www.apache.org/foundation/Y2K.html
-Y2K+=		http://computingcentral.msn.com/guide/year2000/msy2k/productinfo/frontpage.asp
 
 PLIST=		${WRKDIR}/PLIST
 PLIST_SUB=	FP_REV=${FP_REV}

@@ -2,7 +2,7 @@
 # Date created:		23 October 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/majordomo/Makefile,v 1.23 2000/06/04 23:21:30 kris Exp $
+# $FreeBSD: ports/mail/majordomo/Makefile,v 1.24 2000/10/23 21:03:00 will Exp $
 #
 
 PORTNAME=	majordomo
@@ -13,8 +13,6 @@ MASTER_SITES=	ftp://ftp.greatcircle.com/pub/majordomo/1.94.5/ \
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	ports@FreeBSD.org
-
-Y2K=		http://www.greatcircle.com/majordomo/majordomo-faq.html#1.8
 
 # Needs to create a user and group
 IS_INTERACTIVE= yes

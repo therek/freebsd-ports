@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.90 2000/12/04 15:13:36 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.91 2000/12/18 16:32:14 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -15,8 +15,6 @@ MASTER_SITES=	http://www.wipol.uni-bonn.de/MySQL/Downloads/MySQL-3.23/ \
 DISTNAME=	mysql-${PORTVERSION}-gamma
 
 MAINTAINER=	dirk@FreeBSD.org
-
-Y2K=		http://www.mysql.com/documentation/mysql/bychapter/manual_Introduction.html#Year_2000_compliance
 
 SLAVEDIRS=	databases/mysql323-client
 MASTERPORTNAME=	mysql-server

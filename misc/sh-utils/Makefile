@@ -2,7 +2,7 @@
 # Date created:				10 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/sh-utils/Makefile,v 1.1 2000/10/19 04:29:40 trevor Exp $
 #
 
 PORTNAME=	sh-utils
@@ -14,8 +14,6 @@ MASTER_SITE_SUBDIR= sh-utils
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-
-Y2K=		http://www.gnu.org/software/year2000.html
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/gforth/Makefile,v 1.1 2000/10/21 19:29:01 lioux Exp $
 #
 
 PORTNAME=	gforth
@@ -12,8 +12,6 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gforth
 
 MAINTAINER=	clefevre@citeweb.net
-
-Y2K=		http://www.gnu.org/software/year2000.html
 
 CFLAGS=		#none
 STRIP=		#none

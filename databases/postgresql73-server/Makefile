@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.67 2000/12/08 06:12:19 steve Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.68 2000/12/11 03:22:04 steve Exp $
 #
 
 PORTNAME=	postgresql
@@ -23,8 +23,6 @@ DIST_SUBDIR=	postgresql
 MAINTAINER=	girgen@partitur.se
 
 BUILD_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
-
-Y2K=		http://www.postgresql.org/y2k.html
 
 INSTALLS_SHLIB=	YES
 LDCONFIG_DIRS=	%%PREFIX%%/pgsql/lib

@@ -2,7 +2,7 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.8 2000/04/09 18:11:20 cpiazza Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.9 2000/04/16 09:30:04 kris Exp $
 #
 # View this file with tabstop=4
 #
@@ -13,8 +13,6 @@ CATEGORIES=		net
 MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
 MAINTAINER=		tony.maher@ebioinformatics.com
-
-Y2K=			http://www.gnqs.org/Year2000.htm
 
 USE_BZIP2=	yes
 IS_INTERACTIVE=	yes

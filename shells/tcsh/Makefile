@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.37 2000/11/20 02:45:47 kris Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.38 2000/12/11 02:19:15 steve Exp $
 #
 
 PORTNAME=	tcsh
@@ -12,8 +12,6 @@ MASTER_SITES=	http://www2.wbs.ne.jp/~znc/tcsh/
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 
 MAINTAINER=	ports@FreeBSD.org
-
-Y2K=		ftp://ftp.astron.com/pub/tcsh/Y2K
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400021

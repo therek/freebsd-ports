@@ -2,7 +2,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.40 2000/04/17 00:18:49 reg Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.41 2000/10/08 10:23:11 asami Exp $
 #
 
 PORTNAME?=	netscape
@@ -14,8 +14,6 @@ DISTFILES=      netscape-v304-export.x86-unknown-bsd.tar.gz
 MAINTAINER=	sada@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/lib/aout/libX11.so.6.1:${PORTSDIR}/x11/XFree86-aoutlibs
-
-Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 
 ONLY_FOR_ARCHS=	i386
 

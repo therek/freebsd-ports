@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/db3/Makefile,v 1.23 2000/09/16 22:57:40 will Exp $
+# $FreeBSD: ports/databases/db3/Makefile,v 1.24 2000/09/22 16:48:50 sobomax Exp $
 #
 
 PORTNAME=	db3
@@ -12,8 +12,6 @@ MASTER_SITES=	http://www.sleepycat.com/update/${PORTVERSION}/
 DISTNAME=	db-${PORTVERSION}
 
 MAINTAINER=	ozz@FreeBSD.org.ru
-
-Y2K=		http://www.sleepycat.com/faq.html#A8
 
 MANUAL_PACKAGE_BUILD=	incompatible with libc internal db calls
 WRKSRC=		${WRKDIR}/${DISTNAME}/build_unix

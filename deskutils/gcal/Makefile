@@ -2,7 +2,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/gcal/Makefile,v 1.1 2000/10/14 02:03:46 trevor Exp $
 #
 
 PORTNAME=		gcal
@@ -14,8 +14,6 @@ MASTER_SITE_SUBDIR=	gcal
 MAINTAINER=	ports@freebsd.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-
-Y2K=		http://www.gnu.org/software/year2000.html
 
 GNU_CONFIGURE=	yes
 

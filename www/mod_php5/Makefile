@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.122 2000/12/13 08:43:15 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.123 2000/12/20 12:15:28 dirk Exp $
 #
 
 PORTNAME=	mod_php
@@ -23,8 +23,6 @@ MAINTAINER=	dirk@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
-
-Y2K=		http://www.php.net/y2k.php
 
 PHP_DISTDIR=	distributions
 

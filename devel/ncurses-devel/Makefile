@@ -2,7 +2,7 @@
 # Date created:				23 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/ncurses/Makefile,v 1.25 2000/11/13 11:59:46 tg Exp $
+# $FreeBSD: ports/devel/ncurses/Makefile,v 1.26 2000/12/08 21:07:43 ade Exp $
 #
 
 PORTNAME=		ncurses
@@ -12,8 +12,6 @@ MASTER_SITES=		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	ncurses
 
 MAINTAINER=		ports@FreeBSD.org
-
-Y2K=			http://www.gnu.org/software/year2000.html
 
 .include <bsd.port.pre.mk>
 

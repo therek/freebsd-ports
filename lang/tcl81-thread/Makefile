@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.12 2000/06/16 21:51:25 asami Exp $
+# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.13 2000/10/08 03:00:47 asami Exp $
 #
 
 PORTNAME=	tcl-thread
@@ -12,8 +12,6 @@ MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/tcl8_1/
 DISTNAME=	tcl8.1b1
 
 MAINTAINER=	ejc@FreeBSD.org
-
-Y2K=            http://www.scriptics.com/Y2K.html
 
 FILE_DEPENDS=	${PORTSDIR}/lang/tcl80
 

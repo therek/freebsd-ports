@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.35 2000/06/16 21:51:30 asami Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.36 2000/10/08 03:00:49 asami Exp $
 #
 
 PORTNAME=	tcl
@@ -17,8 +17,6 @@ PATCH_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/devel/ \
 PATCHFILES=	${PORTNAME}${PORTVERSION}plus.patch.gz
 
 MAINTAINER=	jseger@FreeBSD.org
-
-Y2K=            http://www.scriptics.com/Y2K.html
 
 PATCH_DIST_ARGS= -d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix

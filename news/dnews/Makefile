@@ -2,7 +2,7 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/dnews/Makefile,v 1.16 2000/04/21 07:51:43 mharo Exp $
+# $FreeBSD: ports/news/dnews/Makefile,v 1.17 2000/12/11 02:13:43 steve Exp $
 #
 
 PORTNAME=	dnews
@@ -13,8 +13,6 @@ DISTNAME=	dnews47k_freebsd
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
-
-Y2K=		http://netwinsite.com/dnews_y2k.htm
 
 # NOTE: this won't work for fetching files from the CDROM.  However since
 # we don't have permission to put this on the CDROM it shouldn't matter much.

@@ -2,7 +2,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.48 2000/12/18 09:55:04 kbyanc Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.49 2000/12/23 16:28:37 okazaki Exp $
 #
 
 PORTNAME=	imap-uw
@@ -23,8 +23,6 @@ ALL_TARGET=	bsf
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	c-client4.8:${PORTSDIR}/mail/cclient
-
-Y2K=		http://www.washington.edu/imap/IMAP-FAQs/faqs.xml#general1
 
 MAN8=		ipopd.8 imapd.8
 

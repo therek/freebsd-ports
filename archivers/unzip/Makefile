@@ -2,7 +2,7 @@
 # Date created:		17 October 1994
 # Whom:			jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.30 2000/04/21 14:28:02 ache Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.31 2000/05/31 10:14:33 sobomax Exp $
 #
 
 PORTNAME=	unzip
@@ -12,8 +12,6 @@ MASTER_SITES=	ftp://ftp.freesoftware.com/pub/infozip/src/
 DISTNAME=	${PORTNAME}541
 
 MAINTAINER=	ache@FreeBSD.org
-
-Y2K=		ftp://ftp.info-zip.org/pub/infozip/FAQ.html#Y2K
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 MAKEFILE=	unix/Makefile

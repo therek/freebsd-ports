@@ -2,7 +2,7 @@
 # Date created:				18 June 1997
 # Whom:					koshy@india.hp.com
 #
-# $FreeBSD: ports/www/mhonarc/Makefile,v 1.14 2000/05/03 11:24:31 jkoshy Exp $
+# $FreeBSD: ports/www/mhonarc/Makefile,v 1.15 2000/11/08 08:59:40 jkoshy Exp $
 #
 
 PORTNAME=	mhonarc
@@ -17,8 +17,6 @@ MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/tar/ \
 DISTNAME=	MHonArc2.4.7
 
 MAINTAINER=	jkoshy@freebsd.org
-
-Y2K=		http://www.oac.uci.edu/indiv/ehood/MHonArc/doc/faq/general.html#y2k
 
 USE_BZIP2=	Yes
 USE_PERL5=	Yes

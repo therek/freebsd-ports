@@ -2,7 +2,7 @@
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.31 2000/09/17 00:41:28 paul Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.32 2000/10/08 10:19:23 asami Exp $
 #
 
 PORTNAME=	gnats
@@ -11,8 +11,6 @@ CATEGORIES=	databases elisp
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/gnats/snapshots/
 
 MAINTAINER=	pst@FreeBSD.org
-
-Y2K=		http://sourceware.cygnus.com/gnats/
 
 BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 

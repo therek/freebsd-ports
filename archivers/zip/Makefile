@@ -3,7 +3,7 @@
 # Date created:		22 Dec 1994
 # Whom:			ache
 #
-# $FreeBSD: ports/archivers/zip/Makefile,v 1.18 2000/04/08 23:17:57 mharo Exp $
+# $FreeBSD: ports/archivers/zip/Makefile,v 1.19 2000/04/21 14:59:04 ache Exp $
 #
 
 PORTNAME=	zip
@@ -16,8 +16,6 @@ DISTFILES=	zip23${EXTRACT_SUFX} ${ZCRYPT_SRC}
 MAINTAINER=	ache@FreeBSD.org
 
 BUILD_DEPENDS=  unzip:${PORTSDIR}/archivers/unzip
-
-Y2K=            ftp://ftp.info-zip.org/pub/infozip/FAQ.html#Y2K
 
 WRKSRC=         ${WRKDIR}/${PORTNAME}-${PORTVERSION}
 EXTRACT_ONLY=   zip23${EXTRACT_SUFX}

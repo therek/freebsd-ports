@@ -2,7 +2,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.32 2000/04/12 05:31:25 mharo Exp $
+# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.33 2000/07/09 02:07:06 will Exp $
 #
 # REMINDER: to use ftpaccess(5) you need to specify -a in command line,
 # it is changed from previous versions
@@ -13,8 +13,6 @@ CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.wu-ftpd.org/pub/wu-ftpd/
 
 MAINTAINER=	ache@FreeBSD.org
-
-Y2K=		http://www.cetis.hvu.nl/~koos/wu-ftpd-faq.html#QA35
 
 MAN1=		ftpcount.1 ftpwho.1
 MAN5=		ftpaccess.5 ftphosts.5 ftpconversions.5 xferlog.5

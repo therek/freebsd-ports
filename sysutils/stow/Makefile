@@ -3,7 +3,7 @@
 # Date created:			  6 June 2000
 # Whom:				  Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/sysutils/stow/Makefile,v 1.1 2000/07/10 03:53:48 steve Exp $
+# $FreeBSD: ports/sysutils/stow/Makefile,v 1.2 2000/09/05 01:07:26 steve Exp $
 #
 
 PORTNAME=	stow
@@ -13,8 +13,6 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
-
-Y2K=		http://www.gnu.org/software/year2000.html
 
 GNU_CONFIGURE=	yes
 

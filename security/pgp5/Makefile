@@ -2,7 +2,7 @@
 # Date created:         10 Feb 1998
 # Whom:                 markm
 #
-# $FreeBSD: ports/security/pgp5/Makefile,v 1.33 2000/04/09 18:30:18 cpiazza Exp $
+# $FreeBSD: ports/security/pgp5/Makefile,v 1.34 2000/04/21 08:18:46 mharo Exp $
 #
 
 PORTNAME=	pgp
@@ -14,8 +14,6 @@ DISTNAME=	pgp50i
 EXTRACT_SUFX=	-unix-src.tar.gz
 
 MAINTAINER=	markm@FreeBSD.org
-
-Y2K=		http://www.pgpi.com/faq/pgpi.shtml#Year2000
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 GNU_CONFIGURE=	yes
