@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.7 2004/07/01 05:54:56 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.8 2004/07/13 09:32:44 clement Exp $
 #
 
 ## Available knobs:
@@ -58,8 +58,12 @@
 ##            SUEXEC_GIDMIN:      Minimal allowed GID (default 1000)
 ##            SUEXEC_CALLER:      User allowed to call SuExec (default
 ##                                ${WWWOWN} (www))
+##            SUEXEC_UMASK:       Defines umask for suexec'd process(default:
+##                                unset)
 ##	WITH_DEBUG:               Build a debug versoin of apache (set CFLAGS
-##                                to "-O0 -g -ggdb3" too)
+##                                to "-O0 -g -ggdb3" or ${DEBUG_FLAGS} and
+##                                defines WITH_EXCEPTION_HOOK too)
+##      WITH_EXCEPTION_HOOK:      Enable fatal exception hook
 ##
 ##   Port-related:
 ##      WITHOUT_WWW:              Implies NO_CGI, NO_WWWDATA, NO_ICONS and
