@@ -2,7 +2,7 @@
 # Date created:		21 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.1 2000/09/21 13:01:40 nbm Exp $
+# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.2 2000/09/22 11:39:14 nbm Exp $
 #
 
 PORTNAME=	vpopmail
@@ -42,6 +42,6 @@ QMAIL_DIR?=     /var/qmail
 #
 
 pre-configure:
-	@PKG_PREFIX=${PREFIX}/vpopmail ${PERL5} ${PKGDIR}/INSTALL
+	@PKG_PREFIX=${PREFIX}/vpopmail ${PERL5} ${PKGINSTALL}
 
 .include <bsd.port.mk>
