@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.604 2001/08/30 22:17:42 brian Exp $
+# $FreeBSD: ports/net/Makefile,v 1.605 2001/09/01 18:47:53 lioux Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -310,6 +310,7 @@
     SUBDIR += priss
     SUBDIR += proxy
     SUBDIR += proxy-suite
+    SUBDIR += punkbuster
     SUBDIR += punkbuster-data
     SUBDIR += pvm
     SUBDIR += pvm++
