@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx-current/Makefile,v 1.111 2000/04/10 00:05:46 cpiazza Exp $
+# $FreeBSD: ports/www/lynx-current/Makefile,v 1.112 2000/04/16 03:22:25 ache Exp $
 #
 
 PORTNAME=	lynx
@@ -13,8 +13,6 @@ MASTER_SITES=   http://lynx.isc.org/current/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ache@FreeBSD.org
-
-FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user."
 
 USE_BZIP2=      YES
 NO_LATEST_LINK=	YES
