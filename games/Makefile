@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.375 2001/05/20 03:01:00 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.376 2001/05/20 03:36:43 will Exp $
 #
 
     SUBDIR += 0verkill
@@ -222,6 +222,7 @@
     SUBDIR += twitch
     SUBDIR += uclient
     SUBDIR += uox3
+    SUBDIR += virt
     SUBDIR += wmeyes
     SUBDIR += wmminichess
     SUBDIR += wmtictactoe
