@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.16 2002/11/21 19:41:03 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.17 2002/11/21 19:52:18 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -58,3 +58,4 @@ textproc/pt-aspell|portuguese/aspell|2002-11-21|new category
 math/p5-Math-Financial|finance/p5-Math-Financial|2002-11-21|new category
 graphics/xmms-avi|multimedia/xmms-avi|2002-11-21|new category
 misc/qhacc|finance/qhacc|2002-11-21|new category
+textproc/br-ispell|portuguese/ispell-pt_BR|2002-11-22|new category
