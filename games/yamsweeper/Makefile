@@ -2,7 +2,7 @@
 # Date created:		14 Sep 1996
 # Whom:			Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
 #
-# $FreeBSD: ports/games/yamsweeper/Makefile,v 1.11 2000/04/14 12:28:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yamsweeper
@@ -14,7 +14,7 @@ MASTER_SITES=  	ftp://stardust.sfc.wide.ad.jp/pub/JG/JG-0.9.1/sources/ \
 		ftp://mirror.nucba.ac.jp/mirror/JG/JG-0.9.1/sources/
 EXTRACT_SUFX=	.taz
 
-MAINTAINER=	hidekazu@cs.titech.ac.jp
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		yamsweeper.1

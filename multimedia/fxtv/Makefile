@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.33 2001/01/16 17:30:55 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fxtv
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	rhh
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	aa8vb@nc.rr.com
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
