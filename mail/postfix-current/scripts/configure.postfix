@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.16 2001/05/22 17:14:58 roam Exp $
+# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.17 2001/05/23 16:48:37 ijliao Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -89,9 +89,9 @@ while [ "$1" ]; do
 			echo "POSTFIX_AUXLIBS+=	-L\${LOCALBASE}/lib -ldb3"
 			;;
 		\"MySQL\")
-			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/mysql/libmysqlclient.so:\${PORTSDIR}/databases/mysql323-client"
+			echo "BUILD_DEPENDS+=	\${LOCALBASE}/lib/mysql/libmysqlclient.a:\${PORTSDIR}/databases/mysql323-client"
 			echo "POSTFIX_CCARGS+=	-DHAS_MYSQL -I\${LOCALBASE}/include/mysql"
-			echo "POSTFIX_AUXLIBS+=	-L\${LOCALBASE}/lib/mysql -lmysqlclient -lm -lz"
+			echo "POSTFIX_AUXLIBS+=	\${LOCALBASE}/lib/mysql/libmysqlclient.a -lm -lz"
 			;;
 		\"OpenLDAP\")
 			echo "CONF2+=		sample-ldap.cf"
