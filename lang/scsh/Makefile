@@ -2,7 +2,7 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.13 2000/04/21 08:19:30 mharo Exp $
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.14 2000/06/29 07:02:50 obrien Exp $
 #
 
 PORTNAME=	scsh
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	cracauer
 
-MAINTAINER=	cracauer@cons.org
+MAINTAINER=	alex@FreeBSD.org
 
 CONFIGURE_ENV+=	LDFLAGS="-Wl,-E"
 
