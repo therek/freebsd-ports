@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.382 2001/09/28 16:45:15 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.383 2001/10/09 07:37:34 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -793,11 +793,11 @@ CONFIGURE_ENV+=	MAKE=${GMAKE}
 .endif
 .if defined(USE_AUTOMAKE)
 USE_AUTOCONF=	yes
-BUILD_DEPENDS+=		automake:${PORTSDIR}/devel/automake
+BUILD_DEPENDS+=		${AUTOMAKE}:${PORTSDIR}/devel/${AUTOMAKE}
 .endif
 .if defined(USE_AUTOCONF)
 GNU_CONFIGURE=	yes
-BUILD_DEPENDS+=		autoconf:${PORTSDIR}/devel/autoconf
+BUILD_DEPENDS+=		${AUTOCONF}:${PORTSDIR}/devel/${AUTOCONF}
 .endif
 .if defined(USE_LIBTOOL)
 GNU_CONFIGURE=	yes
@@ -941,8 +941,8 @@ NONEXISTENT?=	/nonexistent
 
 # Miscellaneous overridable commands:
 GMAKE?=			gmake
-AUTOMAKE?=		automake
-AUTOCONF?=		autoconf
+AUTOMAKE?=		automake14
+AUTOCONF?=		autoconf213
 LIBTOOL?=		libtool
 XMKMF?=			xmkmf -a
 .if exists(/sbin/md5)
