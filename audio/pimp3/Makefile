@@ -2,7 +2,7 @@
 # Date created:				23 February 2000
 # Whom:					rbt@zort.on.ca
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.4 2001/04/02 05:22:06 mharo Exp $
+# $FreeBSD: ports/audio/pimp3/Makefile,v 1.5 2001/04/02 06:13:17 mharo Exp $
 #
 
 PORTNAME=	pimp3
@@ -18,6 +18,9 @@ WRKSRC=		${WRKDIR}/pimp3
 
 NO_BUILD=	yes
 USE_PYTHON=	yes
+
+post-patch:
+	@${PERL} -pi -ne "s!/usr/bin/python!${LOCALBASE}/bin/python!;" ${WRKSRC}/pimp3.py
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/*.py ${PREFIX}/bin/
