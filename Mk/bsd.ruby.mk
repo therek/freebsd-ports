@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.9 2000/10/21 19:57:53 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.10 2000/11/03 15:58:00 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -98,8 +98,8 @@ RUBY_SUFFIX?=		# empty
 #RUBY_PORTVERSION?=	${RUBY_VERSION}
 #RUBY_DISTNAME?=		ruby-${RUBY_VERSION}
 #RUBY_WRKSRC?=		${WRKDIR}/${RUBY_DISTNAME}
-RUBY_PORTVERSION?=	${RUBY_VERSION}.p2
-RUBY_DISTNAME?=		ruby-${RUBY_VERSION}-preview2
+RUBY_PORTVERSION?=	${RUBY_VERSION}.p3
+RUBY_DISTNAME?=		ruby-${RUBY_VERSION}-preview3
 RUBY_WRKSRC?=		${WRKDIR}/ruby-${RUBY_VERSION}
 
 RUBY_ARCH?=		${ARCH}-freebsd${OSREL}
