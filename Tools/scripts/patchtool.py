@@ -12,7 +12,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.5 2001/12/05 08:13:40 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.6 2002/01/03 20:01:58 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -37,6 +37,7 @@ class Vars:
 	DIFF_ARGS = '-du'
 	DIFF_SUFX = '.orig'
 	PATCH_PREFIX = 'patch-'
+	PATCH_IGN_SUFX = ('.orig', '.rej')
 	RCSDIFF_SUFX = ',v'
 
 	CD_CMD = 'cd'
@@ -433,7 +434,12 @@ class PatchesCollection:
 			# Not reached #
 
 		for file in glob.glob(os.path.join(patchdir, Vars.PATCH_PREFIX + '*')):
-			self.addpatchfile(file, wrksrc)
+			for sufx in Vars.PATCH_IGN_SUFX:
+				if file[-len(sufx):] == sufx:
+					write_msg('WARNING: patchfile "%s" ignored\n' % file)
+					break
+			else:
+				self.addpatchfile(file, wrksrc)
 
 	def addpatchfile(self, path, wrksrc):
 		path = os.path.abspath(path)
