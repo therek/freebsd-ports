@@ -3,11 +3,11 @@
 # Date created:				1999/04/07
 # Whom:					ache
 #
-# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.4 1999/08/31 01:51:28 peter Exp $
+# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.5 1999/08/31 06:50:13 mharo Exp $
 #
 
-DISTNAME=       Digest-MD5-2.08
-PKGNAME=        p5-Digest-MD5-2.08
+DISTNAME=       Digest-MD5-2.09
+PKGNAME=        p5-Digest-MD5-2.09
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MD5
@@ -30,6 +30,6 @@ MAN3=   \
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>
