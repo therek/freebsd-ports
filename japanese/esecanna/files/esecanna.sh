@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.3 2000/07/05 15:57:49 knu Exp $
 
 esecannaserver="!!PREFIX!!/sbin/esecannaserver"
 
@@ -18,7 +18,7 @@ start)
 	if [ -x $esecannaserver ]; then
 	    rm -f /tmp/.iroha_unix/IROHA
 	    echo -n ' esecanna: '
-	    $esecannaserver
+	    nohup $esecannaserver
 	fi
 	;;
 stop)
