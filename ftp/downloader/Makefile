@@ -3,7 +3,7 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.27 2001/04/21 07:33:10 ijliao Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.28 2001/06/25 14:27:41 ijliao Exp $
 #
 
 PORTNAME=	downloader
@@ -35,9 +35,9 @@ PORTDOCS=	ChangeLog LICENSE NAMES PLANS THANKS TODO TROUBLES \
 post-install:
 	@${INSTALL_MAN} ${WRKSRC}/../nt.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/downloader
+	@${MKDIR} ${DOCSDIR}
 .for file in ${PORTDOCS}
-	@${INSTALL_DATA} ${WRKSRC}/../${file} ${PREFIX}/share/doc/downloader
+	@${INSTALL_DATA} ${WRKSRC}/../${file} ${DOCSDIR}
 .endfor
 .endif
 
