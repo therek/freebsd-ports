@@ -2,11 +2,12 @@
 # Date Created:				10 February 2000
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.3 2000/08/03 09:24:44 asami Exp $
+# $FreeBSD: ports/graphics/gdtclft/Makefile,v 1.4 2001/02/01 01:50:02 jeh Exp $
 #
 
 PORTNAME=	Gdtclft
 PORTVERSION=	2.2.5
+PORTREVISION=	1
 CATEGORIES=	graphics tcl${TCL_DVER}
 MASTER_SITES=	ftp://ftp.graphviz.org/pub/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -14,7 +15,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	tcl${TCL_DVER}.1:${PORTSDIR}/lang/tcl${TCL_DVER} \
-		gd.1:${PORTSDIR}/graphics/gd
+		gd.2:${PORTSDIR}/graphics/gd
 
 TCL_VER=	8.3
 TCL_DVER=	${TCL_VER:S/.//}

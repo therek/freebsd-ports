@@ -2,17 +2,18 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.4 2001/01/09 00:06:24 will Exp $
+# $FreeBSD: ports/net/netsaint/Makefile,v 1.5 2001/01/12 23:36:31 mharo Exp $
 #
 
 PORTNAME=	netsaint
 PORTVERSION=	0.0.6
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd \
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 # no run depends due to circular reference
 #RUN_DEPENDS=	${LOCALBASE}/libexec/netsaint/check_netsaint:${PORTSDIR}/net/netsaint-plugins

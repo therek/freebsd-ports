@@ -2,11 +2,12 @@
 # Date created:				22 February 1999
 # Whom:	      				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/graphics/tgd/Makefile,v 1.9 2000/04/14 10:47:26 asami Exp $
+# $FreeBSD: ports/graphics/tgd/Makefile,v 1.10 2000/06/06 17:56:49 will Exp $
 #
 
 PORTNAME=	tgd
 PORTVERSION=	1.2c
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://probe.nalusda.gov/pub/treegenes/ \
 		ftp://dendrome.ucdavis.edu/pub/tgd/
@@ -14,7 +15,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	mharo@FreeBSD.org
 
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 BROKEN=	gd changes
 FORBIDDEN=	author hadn\'t had time to update for gd changes

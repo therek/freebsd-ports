@@ -2,18 +2,19 @@
 # Date created:	16 July 1998
 # Whom:		Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/g2/Makefile,v 1.8 2000/04/14 10:45:48 asami Exp $
+# $FreeBSD: ports/graphics/g2/Makefile,v 1.9 2000/06/06 17:55:25 will Exp $
 #
 
 PORTNAME=	g2
 PORTVERSION=	0.40
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/graphics
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes

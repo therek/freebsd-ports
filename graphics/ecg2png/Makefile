@@ -2,17 +2,18 @@
 # Date created:				Sun 2 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/graphics/ecg2png/Makefile,v 1.1 2000/07/04 05:09:39 will Exp $
+# $FreeBSD: ports/graphics/ecg2png/Makefile,v 1.2 2000/07/19 13:58:01 alex Exp $
 #
 
 PORTNAME=	ecg2png
 PORTVERSION=	0.30
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://www.cardiothink.com/pub/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 USE_QT2=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}

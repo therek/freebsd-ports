@@ -2,17 +2,18 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/zimg/Makefile,v 1.9 2000/11/28 15:04:05 kevlo Exp $
+# $FreeBSD: ports/graphics/zimg/Makefile,v 1.10 2001/01/23 08:19:54 kevlo Exp $
 #
 
 PORTNAME=	zimg
 PORTVERSION=	4.5.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.zellner.org/zimg/download/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
+LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

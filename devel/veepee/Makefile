@@ -2,11 +2,12 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/veepee/Makefile,v 1.5 2000/10/23 08:14:50 sobomax Exp $
+# $FreeBSD: ports/devel/veepee/Makefile,v 1.6 2000/10/31 09:07:24 sobomax Exp $
 #
 
 PORTNAME=	veepee
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	devel python gnome
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 DISTNAME=	VeePee-${PORTVERSION}
@@ -14,7 +15,7 @@ DISTNAME=	VeePee-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gd.1:${PORTSDIR}/graphics/gd
+		gd.2:${PORTSDIR}/graphics/gd
 
 USE_XLIB=	yes
 USE_PYTHON=	yes
