@@ -2,7 +2,7 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.19 2000/04/12 04:55:47 mharo Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.20 2000/10/14 01:03:25 green Exp $
 #
 
 PORTNAME=	snes9x
@@ -26,6 +26,10 @@ MAKE_ENV=	CC="${CC}" CXX="${CXX}" CFLAGS="${CFLAGS}" \
 		CXXFLAGS="${CXXFLAGS}"
 USE_ZIP=	YES
 WRKSRC=		${WRKDIR}/release
+
+.if exists(/usr/lib/libusb.a)
+MAKE_ENV+=	USB_JOYSTICK_SUPPORT=yes
+.endif
 
 ONLY_FOR_ARCHS=	i386 alpha
 
