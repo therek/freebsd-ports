@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.202 2001/03/09 17:11:59 nsayer Exp $
+# $FreeBSD: ports/LEGAL,v 1.203 2001/03/09 23:08:58 lioux Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -117,6 +117,7 @@ jdk*-src.tar.gz		ports/java/jdk12-beta	Redistribution of sources and pre-compile
 jdk-tutorial-*		ports/java/jdk-tutorial	This software is under license and export control.
 JRE-*			ports/java/jre		Put copyright on packaging!
 kaffe-*			ports/java/kaffe	Restrictive copyright
+linuxq3ademo-*		ports/games/linux-q3ademo	Restrictive license by Loki Software
 l0phtcrack		ports/security/l0phtcrack	Parts are under GPL, so
 						binaries should not be
 						distributed.  Contains crypto
