@@ -2,7 +2,7 @@
 # Date created:			  Tue Jan 30 2001
 # Whom:				  clive
 #
-# $FreeBSD: ports/mail/nullmailer/Makefile,v 1.2 2001/03/04 13:13:42 clive Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nullmailer
@@ -19,6 +19,7 @@ MAINTAINER=	clive@FreeBSD.org
 
 HAS_CONFIGURE=	yes
 
+CXXFLAGS+=	-lstdc++
 MAN1=	nullmailer-inject.1 sendmail.1
 MAN7=	nullmailer.7
 MAN8=	nullmailer-queue.8 nullmailer-send.8
