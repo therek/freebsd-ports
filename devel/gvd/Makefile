@@ -2,13 +2,14 @@
 # Date created:         4 Dec 2000
 # Whom:                 Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gvd/Makefile,v 1.1 2000/12/08 21:48:14 deischen Exp $
 #
 
 PORTNAME=		gvd
 PORTVERSION=		1.0.1
 CATEGORIES=		devel
 MASTER_SITES=		http://libre.act-europe.fr/gvd/
+MASTER_SITE_SUBDIR=	. old
 
 MAINTAINER=		sam@inf.enst.fr
 
