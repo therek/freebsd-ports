@@ -3,7 +3,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.13 2000/01/06 01:46:20 shige Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.14 2000/01/07 16:17:03 shige Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -84,11 +84,11 @@ post-install::
 	fi
 	@${TOUCH} ${TOUCH_FLAGS} ${INSTALL_COOKIE}
 
-# for make DESCR and COMMENT (only maintainer use)
-pre-arrange::
-	${SED}  -e "s/%%XEMACS_VER%%/${XEMACS_VER}/g" \
-		-e "s/%%XEMACS_REL%%/${XEMACS_REL}/g" \
-		${INSTALL_TMPL} > ${PKGINSTALL}
-	${CHOWN} kiri:staff ${PKGINSTALL}
+## for make DESCR and COMMENT (only maintainer use)
+#pre-arrange::
+#	${SED}  -e "s/%%XEMACS_VER%%/${XEMACS_VER}/g" \
+#		-e "s/%%XEMACS_REL%%/${XEMACS_REL}/g" \
+#		${INSTALL_TMPL} > ${PKGINSTALL}
+#	${CHOWN} kiri:staff ${PKGINSTALL}
 
 .include "${.CURDIR}/../xemacs${XEMACS_MAJOR_VER}-mule/Makefile"
