@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.539 2001/05/27 05:37:09 vanilla Exp $
+# $FreeBSD: ports/net/Makefile,v 1.540 2001/05/27 17:41:10 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -260,6 +260,7 @@
     SUBDIR += p5-SNMP-Util
     SUBDIR += p5-SNMP_Session
     SUBDIR += p5-SOAP
+    SUBDIR += p5-SOAP-Lite
     SUBDIR += p5-Socket6
     SUBDIR += p5-Socks
     SUBDIR += p5-Tie-NetAddr-IP
