@@ -1,7 +1,7 @@
 # New ports collection makefile for:	eterm
 # Date created:        24th December 2000
 # Whom:                Michael C. Wu
-# $FreeBSD$
+# $FreeBSD: ports/chinese/eterm/Makefile,v 1.1 2000/12/24 20:27:19 keith Exp $
 
 PORTNAME=	eterm
 PORTVERSION=	0.9
@@ -15,13 +15,15 @@ DISTNAME=	Eterm-${PORTVERSION}
 MAINTAINER=	keichii@iteration.net
 
 BUILD_DEPENDS=	man2html:${PORTSDIR}/textproc/man2html
+RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--enable-trans=imlib --enable-utmp --enable-multi-charset=kanji \
+CONFIGURE_ARGS=	--enable-trans=imlib --enable-multi-charset=big5 \
 		--enable-xim --with-theme-update
+
 CONFIGURE_ENV=	LIBS="-lxpg4"
 
 MAN1=		Eterm.1
