@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.287 2000/07/25 10:08:16 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.288 2000/07/28 07:13:24 kris Exp $
 #
 
     SUBDIR += 3dc
@@ -107,6 +107,7 @@
     SUBDIR += mindguard
     SUBDIR += mirrormagic
     SUBDIR += miscom
+    SUBDIR += nadar
     SUBDIR += nethack
     SUBDIR += nethack-gtk
     SUBDIR += nethack-qt
