@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.189 2000/11/02 21:19:22 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.190 2000/11/02 22:52:17 fenner Exp $
 #
 
     SUBDIR += afsp
@@ -177,6 +177,7 @@
     SUBDIR += xmmix
     SUBDIR += xmms
     SUBDIR += xmms-liveice
+    SUBDIR += xmms-shn
     SUBDIR += xmms-tfmx
     SUBDIR += xmp
     SUBDIR += xmpeg3
