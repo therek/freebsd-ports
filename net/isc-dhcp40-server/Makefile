@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.48 2000/12/23 18:55:08 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.49 2001/02/17 14:17:29 roam Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.isc.org/isc/dhcp/
 DISTNAME=	${PORTNAME:S/isc-//:S/3/-/}${PORTVERSION:S/.b/b/:R}pl${PORTVERSION:E}
 
-MAINTAINER=	clefevre@citeweb.net
+MAINTAINER=	clefevre@poboxes.com
 
 #
 # Global variables
