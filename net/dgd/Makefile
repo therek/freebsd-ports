@@ -3,11 +3,11 @@
 # Date created:		23 August 1994
 # Whom:			adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dgd/Makefile,v 1.81 1999/08/30 14:22:31 peter Exp $
 #
 
-DISTNAME=	dgd-1.1p6
-DISTFILES=	dgd-1.1.tar.gz
+DISTNAME=	dgd-1.1
+PKGNAME=	dgd-1.1p6
 CATEGORIES=	net lang
 MASTER_SITES=	ftp://ftp.imaginary.com/pub/LPC/servers/DGD/ \
 		ftp://ftp.lysator.liu.se/pub/lpmud/drivers/dgd/ \
