@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.294 2003/07/22 09:41:25 arved Exp $
+# $FreeBSD: ports/LEGAL,v 1.295 2003/07/23 21:13:39 naddy Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -137,6 +137,9 @@ gnupg-*			ports/security/gnupg	Crypto; export-controlled
 graphviz-1.*		ports/graphics/graphviz	Needs license before fetching
 hjb3_0-linux.sfx	ports/www/hotjava	Licensed for individual
 						non-commercial use only.
+homard-*		ports/french/homard	Only free for use in conjunction with
+						french/aster. For any other purpose,
+						you have to acquire a license
 j2sdkee-*		ports/java/j2sdkee	For development and testing use
 						only; redistribution prohibited
 jce-aba-*		ports/java/jce-aba	Crypto; export-controlled
