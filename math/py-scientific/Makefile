@@ -2,7 +2,7 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/py-scientific/Makefile,v 1.7 2001/04/03 11:35:18 tg Exp $
+# $FreeBSD: ports/math/py-scientific/Makefile,v 1.8 2001/04/26 11:55:11 tg Exp $
 #
 
 PORTNAME=	scientific
@@ -15,10 +15,10 @@ DISTNAME=	ScientificPython-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
+BUILD_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/py-numeric \
 		${PYDISTUTILS}
 LIB_DEPENDS=	netcdf.1:${PORTSDIR}/math/netcdf
-RUN_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
+RUN_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/py-numeric
 
 USE_PYTHON=	yes
 
