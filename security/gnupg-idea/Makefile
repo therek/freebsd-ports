@@ -2,7 +2,7 @@
 # Date created:		10 May, 2000 
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/gnupg-rsa/Makefile,v 1.1.1.1 2000/05/12 08:19:03 kuriyama Exp $
 #
 
 PORTNAME=	gnupg-rsa
@@ -32,8 +32,9 @@ DISTFILES=	rsa.c idea.c
 CONTRIB=	rsa idea
 #EXTRACT_ONLY=
 .else
+do-fetch:
 	@${ECHO_MSG}
-	@${ECHO_MSG} rsaref not jet supported
+	@${ECHO_MSG} rsaref not yet supported
 	@${FALSE}
 .endif
 
