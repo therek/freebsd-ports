@@ -2,11 +2,11 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.15 2000/10/08 10:23:22 asami Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.16 2001/01/16 17:33:14 sobomax Exp $
 #
 
 PORTNAME=	bitmap-fonts
-PORTVERSION=	${BITMAP_FONTS_VER}${BITMAP_FONTS_PREVER:S/pre/.p1/}
+PORTVERSION=	${BITMAP_FONTS_VER}${BITMAP_FONTS_PREVER:S/pre/.p/}
 CATEGORIES=	x11-fonts elisp
 MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/ \
 		ftp://ftp.jpl.org/pub/elisp/bitmap/snapshots/
@@ -18,9 +18,8 @@ BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
 
 # distfile version
 BITMAP_FONTS_VER=	1.0
-BITMAP_FONTS_PREVER=	pre
-BITMAP_FONTS=	etl6x12-bitmap etl7x14-bitmap etl8x16-bitmap \
-		etl10x20-bitmap etl12x24-bitmap
+BITMAP_FONTS_PREVER=	pre4
+BITMAP_FONTS_SIZE=	12 14 16 20 24
 FONTSDIR=	lib/X11/fonts/local
 PKGINSTALL=	${WRKDIR}/INSTALL
 PKGDEINSTALL=	${WRKDIR}/DEINSTALL
@@ -38,9 +37,9 @@ RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
 
 do-build:
 	@(cd ${WRKSRC}; \
-	    for i in ${BITMAP_FONTS} ; do \
-	        bdftopcf $${i}.bdf > $${i}.pcf ; \
-	        ${GZIP_CMD} $${i}.pcf ; \
+	    for i in ${BITMAP_FONTS_SIZE} ; do \
+	        bdftopcf bitmap$${i}.bdf > bitmap$${i}.pcf ; \
+	        ${GZIP_CMD} bitmap$${i}.pcf ; \
 	    done ; \
 	)
 	@for file in INSTALL DEINSTALL; do \
@@ -54,8 +53,8 @@ pre-install:
 
 do-install:
 	@(cd ${WRKSRC}; \
-	    for i in ${BITMAP_FONTS} ; do \
-	        ${INSTALL_DATA} $${i}.pcf.gz ${X11BASE}/${FONTSDIR} ; \
+	    for i in ${BITMAP_FONTS_SIZE} ; do \
+	        ${INSTALL_DATA} bitmap$${i}.pcf.gz ${X11BASE}/${FONTSDIR} ; \
 	    done ; \
 	)
 
