@@ -3,7 +3,7 @@
 # Date created:				03/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.28 1999/08/31 06:52:53 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/py-gtk/Makefile,v 1.29 1999/09/09 20:09:21 nectar Exp $
 #
 
 DISTNAME=	gnome-python-1.0.4
