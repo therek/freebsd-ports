@@ -2,11 +2,11 @@
 # Date created:		Sa  12 Okt 1996 19:20:51 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/lyx/Makefile,v 1.51 2000/09/10 11:06:01 dirk Exp $
+# $FreeBSD: ports/print/lyx/Makefile,v 1.52 2000/09/27 22:21:59 dirk Exp $
 #
 
 PORTNAME=	lyx
-PORTVERSION=	1.1.5.1
+PORTVERSION=	1.1.5.2
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
 		ftp://ftp.sdsc.edu/pub/other/lyx/stable/ \
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.lyx.org/pub/lyx/stable/ \
 DISTNAME=	lyx-1.1.5
 
 PATCH_SITES=	${MASTER_SITES}
-PATCHFILES=	patch-1.1.5fix1.gz
+PATCHFILES=	patch-1.1.5fix1.gz patch-1.1.5fix2.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	dirk@FreeBSD.org
