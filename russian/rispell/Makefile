@@ -2,7 +2,7 @@
 # Date created:         16 Dec 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/rispell/Makefile,v 1.11 2000/10/04 06:40:04 sobomax Exp $
+# $FreeBSD: ports/russian/rispell/Makefile,v 1.12 2001/01/16 17:32:14 sobomax Exp $
 #
 
 PORTNAME=	ispell
@@ -11,7 +11,7 @@ CATEGORIES=	russian textproc
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 DISTNAME=	rispell
 
-MAINTAINER=	ache@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
