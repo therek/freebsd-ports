@@ -2,13 +2,13 @@
 # Date created:				22 Sep 2000
 # Whom:					Dan Pelleg <dpelleg+bmsync@cs.cmu.edu>
 #
-# $FreeBSD: ports/www/bmsync/Makefile,v 1.1 2000/10/28 01:33:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bmsync
 PORTVERSION=	0.2.0
 CATEGORIES=	www
-MASTER_SITES=	http://www.cs.cmu.edu/~dpelleg/sw/
+MASTER_SITES=	http://www-2.cs.cmu.edu/~dpelleg/sw/
 
 MAINTAINER=	dpelleg+bmsync@cs.cmu.edu
 
