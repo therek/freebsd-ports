@@ -2,14 +2,14 @@
 # Date created:         23 Jan 1999
 # Whom:                 Yoshihide SONODA <ysonoda@dontaku.csce.kyushu-u.ac.jp>
 #
-# $FreeBSD: ports/audio/waveplay/Makefile,v 1.5 2000/12/10 15:36:23 roam Exp $
+# $FreeBSD: ports/audio/waveplay/Makefile,v 1.6 2001/08/31 14:24:43 trevor Exp $
 #
 
 PORTNAME=		waveplay
-PORTVERSION=		2000.12.10
+PORTVERSION=		2001.09.24
 CATEGORIES=		audio
 MASTER_SITES=		http://sore.totto.to/~ysonoda/FreeBSD/ports/
-DISTNAME=		waveplay-20001210
+DISTNAME=		waveplay-20010924
 
 MAINTAINER=		yshd@na.rim.or.jp
 
