@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.230 2001/11/18 21:44:10 trevor Exp $
+# $FreeBSD: ports/LEGAL,v 1.231 2001/11/21 22:56:17 fjoe Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -249,6 +249,7 @@ xothello-*		ports/games/xothello	Possible trademark infringement
 xrisk-*			ports/games/xrisk	Copyright/trademark violation?
 xsmbrowser-*		ports/net/xsmbrowser	Commercial software
 xteddy-*		ports/games/xteddy	Don't sell for profit
+chitex			ports/chinese/chitex	Don't sell for profit
 zh-moettf/*		ports/chinese/moettf	Contact Taiwan Ministry of
 						Education for commercial use
 ztelnet-*		ports/net/ztelnet	zmodem code has 
