@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.88 2000/10/08 09:18:03 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.89 2000/11/03 11:08:11 asami Exp $
 #
 
 PORTNAME=	Server
@@ -94,10 +94,10 @@ MAN5= 			XF86Config.5
 # Set following as NO. or type make ExtendefInputDevices=NO
 ExtendedInputDevices?=	YES
 
-.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
-pre-everything:
+#.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+#pre-everything:
 #	${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
-.endif
+#.endif
 
 do-configure:
 	cd ${.CURDIR} && ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure
