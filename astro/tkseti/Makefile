@@ -3,7 +3,7 @@
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.3 1999/08/25 04:22:44 obrien Exp $
 #
 
 DISTNAME=	tkseti-1.42
@@ -19,9 +19,9 @@ NO_BUILD=	yes
 
 do-install:
 	${MKDIR} ${PREFIX}/share/doc/tkseti
-	${INSTALL_SCRIPT} ${WRKDIR}/tkseti ${PREFIX}/bin
-	${INSTALL_DATA}	${WRKDIR}/DOC ${PREFIX}/share/doc/tkseti/DOC
-	${INSTALL_DATA} ${WRKDIR}/README ${PREFIX}/share/doc/tkseti/README
+	${INSTALL_SCRIPT} ${WRKSRC}/tkseti ${PREFIX}/bin
+	${INSTALL_DATA}	${WRKSRC}/DOC ${PREFIX}/share/doc/tkseti/DOC
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/tkseti/README
 
 post-install:
 	@${ECHO} "Please read the documentation for tkseti located in"
