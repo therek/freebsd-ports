@@ -2,18 +2,21 @@
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.44 2001/05/11 16:36:15 ade Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.45 2001/05/14 21:57:45 ade Exp $
 #
 
 PORTNAME=	ORBit
 PORTVERSION=	0.5.8
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ORBit
 
 MAINTAINER=	gnome@FreeBSD.org
 
+BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 USE_GMAKE=	yes
 USE_GLIB=	yes

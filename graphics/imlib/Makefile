@@ -2,11 +2,12 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.73 2001/05/04 21:39:37 ade Exp $
+# $FreeBSD: ports/graphics/imlib/Makefile,v 1.74 2001/05/11 16:36:26 ade Exp $
 #
 
 PORTNAME=	imlib
 PORTVERSION=	1.9.10
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/imlib
