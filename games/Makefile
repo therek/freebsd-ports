@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.362 2001/04/17 17:39:05 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.363 2001/04/17 17:47:16 will Exp $
 #
 
     SUBDIR += 3dc
@@ -161,6 +161,7 @@
     SUBDIR += penguin-command
     SUBDIR += pentix
     SUBDIR += phalanx
+    SUBDIR += pipenightdreams
     SUBDIR += pmars
     SUBDIR += powerpak
     SUBDIR += pp
