@@ -2,7 +2,7 @@
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/net/naim/Makefile,v 1.11 2000/03/20 22:47:45 mharo Exp $
+# $FreeBSD: ports/net/naim/Makefile,v 1.12 2000/04/09 18:12:23 cpiazza Exp $
 #
 
 PORTNAME=	naim
@@ -16,9 +16,11 @@ MAINTAINER=	mharo@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
+# Manpage is empty
 #MAN1=		naim.1
 
 post-install:
+	@ ${RM} ${PREFIX}/man/man1/naim.1
 	@ ${MKDIR} ${PREFIX}/share/examples/naim
 	@ ${INSTALL_DATA} ${WRKSRC}/doc/faimrc_sample ${PREFIX}/share/examples/naim/
 .if !defined(NOPORTDOCS)
