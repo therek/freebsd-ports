@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.39 1999/09/19 15:49:57 nectar Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.40 1999/09/19 20:07:39 nectar Exp $
 #
 
     SUBDIR += FWF
@@ -23,6 +23,7 @@
     SUBDIR += p5-Gtk
     SUBDIR += p5-Tcl-Tk
     SUBDIR += p5-Tk
+    SUBDIR += pike-gtk
     SUBDIR += plib
     SUBDIR += pmw
     SUBDIR += py-gnome
