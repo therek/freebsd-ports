@@ -3,7 +3,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.26 2000/02/20 17:01:09 andreas Exp $
+# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.27 2000/03/11 07:03:47 kris Exp $
 #
 
 DISTNAME=	nethack-3.2.2
@@ -13,9 +13,7 @@ MASTER_SITES=	http://trolls.troll.no/warwick/nethack/ \
 		ftp://ftp.troll.no/contrib/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	nethack
-QT_PATCH=	qnethack-3.2.2.1.0.1.src.tar.gz
-QT_SOUND=	nhs.tar.gz
-DISTFILES=	nethack-3.2.2.tar.gz ${QT_PATCH} ${QT_SOUND}
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${QT_PATCH} ${QT_SOUND}
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -24,8 +22,11 @@ BUILD_DEPENDS=	auplay:${PORTSDIR}/audio/nas \
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 RUN_DEPENDS=	auplay:${PORTSDIR}/audio/nas
 
-USE_QT=		yes
+QT_PATCH=	qnethack-3.2.2.1.0.1.src.tar.gz
+QT_SOUND=	nhs.tar.gz
 EXTRACT_ONLY=	nethack-3.2.2.tar.gz
+
+USE_QT=		yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
 
