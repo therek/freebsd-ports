@@ -2,19 +2,28 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.42 2000/12/11 03:17:04 steve Exp $
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.43 2001/02/05 15:11:07 olgeni Exp $
 #
 
 PORTNAME=	qpopper
 PORTVERSION=	3.1.2
-CATEGORIES=	mail
+PORTREVISION=	1
+CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/ \
 		ftp://ftp.gmxuk.net/pub/qpopper/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.qualcomm.com/eudora/servers/unix/popper/ \
 		ftp://ftp.kracked.com/pub/qpopper/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	jeff@isni.net
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+PATCH_SITES=    http://www.imasy.or.jp/~ume/ipv6/
+PATCHFILES=     qpopper3.1.2-ipv6-20001214.diff.gz
+PATCH_DIST_STRIP=       -p1
+.endif
+
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LIBS="-lmd -lutil" \
@@ -52,4 +61,4 @@ do-install:
 post-install:
 	@${SED} -e "s:/usr/local:${PREFIX}:g" ${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
