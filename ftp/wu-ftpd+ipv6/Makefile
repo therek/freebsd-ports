@@ -2,14 +2,14 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.34 2001/01/01 10:15:02 will Exp $
+# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.35 2001/07/29 21:01:53 ache Exp $
 #
 # REMINDER: to use ftpaccess(5) you need to specify -a in command line,
 # it is changed from previous versions
 
 PORTNAME=	wu-ftpd
 PORTVERSION=	2.6.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.wu-ftpd.org/pub/wu-ftpd/
 
