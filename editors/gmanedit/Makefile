@@ -2,7 +2,7 @@
 # Date created:				12 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.4 2001/02/05 14:36:19 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmanedit
@@ -12,7 +12,7 @@ MASTER_SITES=	http://gmanedit.sourceforge.net/files/ \
 		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	sobomax@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
