@@ -2,12 +2,11 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.35 2001/06/21 15:34:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmms
-PORTVERSION=	1.2.5
-PORTREVISION=	1
+PORTVERSION=	1.2.6
 CATEGORIES+=	audio
 MASTER_SITES=	ftp://ftp.xmms.org/xmms/1.2.x/ \
 		http://www.xmms.org/files/1.2.x/ \
@@ -23,9 +22,8 @@ USE_GTK=	yes
 WANT_ESOUND=	yes
 WANT_GNOME=	yes
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
-LIBTOOLFILES=	configure libxmms/configure
 INSTALLS_SHLIB=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib" \
 		INPUT_PLUGINS="${INPUT_PLUGINS}" \
