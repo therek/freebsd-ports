@@ -2,8 +2,10 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/timidity++-slang/Makefile,v 1.2 2000/04/06 07:14:41 mharo Exp $
+# $FreeBSD: ports/japanese/timidity++-slang/Makefile,v 1.3 2000/04/12 14:38:04 knu Exp $
 #
+
+CATEGORIES=	japanese
 
 INTERFACE=	slang
 JAPANESE=	yes
