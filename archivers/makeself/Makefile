@@ -2,13 +2,13 @@
 # Date created:		22 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/archivers/makeself/Makefile,v 1.5 2000/06/22 05:51:50 will Exp $
+# $FreeBSD: ports/archivers/makeself/Makefile,v 1.6 2000/09/25 12:21:15 asami Exp $
 #
 
 PORTNAME=	makeself
 PORTVERSION=	1.5.3
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.lokigames.com/~megastep/makeself/
+MASTER_SITES=	http://www.linuxgames.com/megastep/makeself/
 DISTFILES=	makeself.gz.sh
 
 MAINTAINER=	ports@FreeBSD.org
