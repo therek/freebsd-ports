@@ -3,12 +3,12 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.10 1999/10/20 11:31:42 tg Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.11 1999/12/02 09:20:26 tg Exp $
 #
 
 DISTNAME=	sketch-0.6.3
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.online.de/home/sketch/
+MASTER_SITES=	http://download.sourceforge.net/sketch/
 
 MAINTAINER=	ports@FreeBSD.org
 
