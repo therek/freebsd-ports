@@ -2,11 +2,12 @@
 # Date created:		4 February 1998
 # Whom:			FURUSAWA,Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/sysutils/xloadface/Makefile,v 1.6 2000/04/22 10:13:58 mharo Exp $
+# $FreeBSD: ports/sysutils/xloadface/Makefile,v 1.7 2000/12/20 15:33:08 kevlo Exp $
 #
 
 PORTNAME=	xloadface
 PORTVERSION=	1.6.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.waseda.ac.jp/pub/X11others/
 
