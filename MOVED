@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.283 2003/12/20 05:51:15 edwin Exp $
+# $FreeBSD: ports/MOVED,v 1.284 2003/12/26 23:00:09 krion Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -729,3 +729,4 @@ net/py-soap||2003-12-16|author no longer distributes the module
 net/roadrunner||2003-12-19|Project discontinued, distfiles removed
 deskutils/xfce4-notes|deskutils/xfce4-notes-plugin|2003-12-20|renamed
 devel/sip||2003-12-27|Integrated into py-sip
+java/orion||2003-12-29|Duplicate of www/orion
