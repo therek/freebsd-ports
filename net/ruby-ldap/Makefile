@@ -2,7 +2,7 @@
 # Date created:		25 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.11 2001/06/11 03:18:24 knu Exp $
+# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.12 2001/06/13 04:19:18 knu Exp $
 #
 
 PORTNAME=	ldap
@@ -62,7 +62,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${CP} -R ${WRKSRC}/test/* ${WRKSRC}/example/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${LN} -s . ${RUBY_EXAMPLESDIR}/${PORTNAME}/test
+	${LN} -fs . ${RUBY_EXAMPLESDIR}/${PORTNAME}/test
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
