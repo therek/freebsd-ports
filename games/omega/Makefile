@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/omega/Makefile,v 1.7 2000/07/22 05:58:27 kevlo Exp $
+# $FreeBSD: ports/games/omega/Makefile,v 1.8 2001/01/16 17:30:33 sobomax Exp $
 #
 
 PORTNAME=	omega
@@ -21,9 +21,9 @@ PORTDOCS=	buglist.txt docs/compile.all docs/omega.txt docs/readme.1st \
 		docs/readme3 docs/readme4
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/omega ${PREFIX}/bin
-	@${CHOWN} root:games ${PREFIX}/bin/omega
-	@${CHMOD} 2711 ${PREFIX}/bin/omega
+	${INSTALL_PROGRAM} ${WRKSRC}/omega ${PREFIX}/bin/omega-game
+	@${CHOWN} root:games ${PREFIX}/bin/omega-game
+	@${CHMOD} 2711 ${PREFIX}/bin/omega-game
 	${INSTALL_MAN} ${WRKSRC}/docs/omega.6 ${PREFIX}/man/man6
 	@${MKDIR} ${PREFIX}/share/omega
 	${INSTALL_DATA} ${WRKSRC}/lib/* ${PREFIX}/share/omega
