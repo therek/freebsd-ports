@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.24 2000/12/12 14:24:12 knu Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.25 2000/12/31 18:59:43 mharo Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -78,14 +78,15 @@ my $re_lang_pref = '(' . join('|', @lang_pref) . ')-';
 my ($prog) = ($0 =~ /([^\/]+)$/);
 sub usage {
 	print STDERR <<EOF;
-usage: $prog [-abctvN] [-B#] [port_directory]
+usage: $prog [-abchvtN] [-M ENV] [-B#] [port_directory]
 	-a	additional check for scripts/* and pkg-*
 	-b	warn \$(VARIABLE)
 	-c	committer mode
+	-h	show summary of command line options
 	-v	verbose mode
 	-t	nit pick about use of spaces
-	-M	set make variables (ex. PORTSDIR=/usr/ports.work)
 	-N	writing a new port
+	-M ENV	set make variables to ENV (ex. PORTSDIR=/usr/ports.work)
 	-B#	allow # contiguous blank lines (default: $contblank line)
 EOF
 		exit 0;
