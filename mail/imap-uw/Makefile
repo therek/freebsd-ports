@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.31 1999/12/25 02:28:54 steve Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.32 2000/02/14 23:20:12 mharo Exp $
 #
 
 DISTNAME=	imap-4.7a
@@ -21,7 +21,7 @@ MAINTAINER=	imap-uw@freebsd.ady.ro
 
 Y2K=		http://www.washington.edu/imap/IMAP-FAQs/FAQ-00002.html
 
-PAMAUTH?=	no
+PAMAUTH?=	yes
 .if ${PAMAUTH} != "no"
 ALL_TARGET=	bfp
 .else
@@ -48,8 +48,7 @@ post-configure:
 	@${ECHO_MSG} ">> The c-client shared library will be named ${SHLIBNAME}"
 .if ${PAMAUTH} != "no"
 	@${ECHO_MSG} ">> Building with PAM support"
-.else
-	@${ECHO_MSG} ">> You can use PAM authentication building with \"PAMAUTH=yes\""
+	@${ECHO_MSG} ">> You can disable PAM support building with \"PAMAUTH=no\""
 .endif
 
 post-build:
