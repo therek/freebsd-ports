@@ -2,11 +2,12 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.85 2000/07/03 19:40:43 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.86 2000/09/21 08:36:26 sobomax Exp $
 #
 
 PORTNAME=	XFree86
 PORTVERSION= 	4.0.1
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	${PORTVERSION}
