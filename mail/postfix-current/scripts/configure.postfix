@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.5 2001/02/16 07:31:55 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix-current/scripts/configure.postfix,v 1.6 2001/02/17 05:00:04 kuriyama Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -106,7 +106,7 @@ while [ "$1" ]; do
 			;;
 		\"IPv6\")
 			echo "PATCH_SITES+=	\${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/kame/misc/&,}"
-			echo "PATCHFILES+=	postfix-20010202snap-v6-20010204a.diff.gz"
+			echo "PATCHFILES+=	postfix-20010204snap-v6-20010205a.diff.gz"
 			echo ""
 			echo "pre-patch:"
 			echo "	cd \${WRKSRC} && ln -s . postfix"
