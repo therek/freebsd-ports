@@ -1,8 +1,8 @@
-# New ports collection makefile for:	semi-current for xemacs21-mule
+# New ports collection makefile for:	semi-1.13.x for xemacs21-mule
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/semi-xemacs21-mule-current/Makefile,v 1.19 2000/07/17 06:17:32 shige Exp $
+# $FreeBSD$
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -10,7 +10,7 @@ MAINTAINER=	shige@FreeBSD.org
 # This is a slave port.
 PORTCLASS=	slave
 
-MASTERDIR=	${.CURDIR}/../../editors/semi-emacs-current
+MASTERDIR=	${.CURDIR}/../../editors/semi113-emacs
 
 # emacs port setup
 EMACS_PORT_NAME=	xemacs21-mule
