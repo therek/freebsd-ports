@@ -2,7 +2,7 @@
 # Date created:			04 Dec 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/glload/Makefile,v 1.13 2000/06/29 07:02:51 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glload
@@ -18,6 +18,8 @@ USE_X_PREFIX=	yes
 USE_MESA=	yes
 MAKEFILE=	Makefile.FreeBSD
 ALL_TARGET=	glload
+MAKE_ENV=	PTHREAD_CFLAGS="${PTHREAD_CFLAGS}" \
+		PTHREAD_LIBS="${PTHREAD_LIBS}"
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/glload ${PREFIX}/bin
