@@ -2,16 +2,18 @@
 # Date created:				Tue May  1 23:40:46 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-si/Makefile,v 1.3 2001/05/21 01:54:45 lioux Exp $
+# $FreeBSD: ports/games/hlserver-si/Makefile,v 1.4 2001/05/25 16:25:11 lioux Exp $
 #
 
 PORTNAME=	si
-PORTVERSION=	0.97
+PORTVERSION=	0.97.0p5
 MASTER_SITES=	http://www.lysator.liu.se/amiga/si/ \
 		ftp://212.177.107.155/halflifeitalia/mod/
-DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}-linux
+#DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}-linux
 
 MAINTAINER=	lioux@FreeBSD.org
+
+DISTFILES=	si-097-linux.tar.gz si-097-097pl5-linux-patch.tar.gz
 
 HALFLIFE_COUNTERSTRIKE_MASTER=	${.CURDIR}/../hlserver-cs
 
