@@ -2,21 +2,22 @@
 # Date created:				August 8th, 1999
 # Whom:	      				wolman@cs.washington.edu
 #
-# $FreeBSD: ports/databases/p5-SQL-Statement/Makefile,v 1.6 2001/04/05 03:10:37 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SQL-Statement
-PORTVERSION=	0.1020
+PORTVERSION=	1.002
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SQL
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	wolman@cs.washington.edu
+MAINTAINER=	ports@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-MAN3=		SQL::Eval.3 SQL::Statement.3
+MAN3=		SQL::Dialects::ANSI.3 SQL::Dialects::AnyData.3 \
+		SQL::Dialects::CSV.3 SQL::Eval.3 SQL::Parser.3 SQL::Statement.3
 
 .include <bsd.port.mk>
