@@ -3,25 +3,24 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.2 1999/11/14 02:17:48 steve Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.3 1999/12/23 16:05:45 steve Exp $
 #
 
-DISTNAME=		udmsearch-2.2.1
-CATEGORIES=		www databases
-MASTER_SITES=		http://mysearch.udm.net/Download/	\
-			ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\
-			http://mirror.kuenzler.ch/udmsearch/Download/
+DISTNAME=	udmsearch-2.2.1b
+CATEGORIES=	www databases
+MASTER_SITES=	http://mysearch.udm.net/Download/	\
+		ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\
+		http://mirror.kuenzler.ch/udmsearch/Download/
 
-MAINTAINER=		kbyanc@posi.net
+MAINTAINER=	dima@Chg.RU
 
-MAN1=			indexer.1
-MAN5=			indexer.conf.5
+MAN1=		indexer.1
+MAN5=		indexer.conf.5
 
-WRKSRC=			${WRKDIR}/udmsearch-2.2.1
-USE_GMAKE=		yes
-GNU_CONFIGURE=		yes
-CONFIGURE_ARGS=		--bindir=${PREFIX}/bin/udmsearch \
-			--sysconfdir=${PREFIX}/etc/udmsearch
+USE_GMAKE=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--bindir=${PREFIX}/bin/udmsearch \
+		--sysconfdir=${PREFIX}/etc/udmsearch
 
 .if defined(USE_POSTGRESQL)
 LIB_DEPENDS=		pq.2:${PORTSDIR}/databases/postgresql
