@@ -2,14 +2,13 @@
 # Date created:        6 May 1996
 # Whom:                joerg
 #
-# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.11 2000/05/29 23:47:47 will Exp $
+# $FreeBSD: ports/deskutils/xpostit/Makefile,v 1.12 2000/06/03 08:46:30 asami Exp $
 #
 
 PORTNAME=	xpostit
 PORTVERSION=	3.3.1
 CATEGORIES=	deskutils
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
