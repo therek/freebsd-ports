@@ -2,13 +2,14 @@
 # Date created:		19 August 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/ftp/omi/Makefile,v 1.7 2000/04/12 05:31:19 mharo Exp $
+# $FreeBSD: ports/ftp/omi/Makefile,v 1.8 2000/04/19 20:21:28 mharo Exp $
 #
 
 PORTNAME=	omi
-PORTVERSION=	alpha-9
+PORTVERSION=	pl9
 CATEGORIES=	ftp
 MASTER_SITES=	http://dorifer.heim3.tu-clausthal.de/~olli/omi/
+DISTNAME=	omi-alpha-9
 
 MAINTAINER=	ache@FreeBSD.org
 
