@@ -2,7 +2,7 @@
 # Date created:		10 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/libflash/Makefile,v 1.6 2000/09/25 07:30:25 knu Exp $
+# $FreeBSD: ports/graphics/libflash/Makefile,v 1.7 2000/10/14 09:28:52 knu Exp $
 #
 
 PORTNAME=	libflash
@@ -17,7 +17,7 @@ MAINTAINER=	knu@FreeBSD.org
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Lib
-#MAKE_ARGS=	LOCALBASE="${LOCALBASE}"
+MAKE_ARGS=	NOPROFILE=true
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/
