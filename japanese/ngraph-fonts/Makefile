@@ -2,7 +2,7 @@
 # Date created:		6 December 1999
 # Whom:			Yoshiro MIHIRA <sanpei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.4 2000/08/03 14:28:24 sanpei Exp $
+# $FreeBSD: ports/japanese/ngraph-fonts/Makefile,v 1.5 2000/09/12 11:08:03 asami Exp $
 #
 
 PORTNAME=	ngraph-fonts
@@ -22,7 +22,7 @@ USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 4
-RUN_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
+RUN_DEPENDS+=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
 .endif
 
 NO_BUILD=	yes
