@@ -2,7 +2,7 @@
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-Tree/Makefile,v 1.7 2001/03/01 06:37:53 vanilla Exp $
+# $FreeBSD: ports/www/p5-HTML-Tree/Makefile,v 1.8 2001/03/13 10:58:35 demon Exp $
 #
 
 PORTNAME=	HTML-Tree
@@ -20,6 +20,8 @@ PERL_CONFIGURE=	yes
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		HTML::Parse.3 HTML::TreeBuilder.3 HTML::AsSubs.3 \
-		HTML::Element.3 HTML::Element::traverse.3
+		HTML::Element.3 HTML::Element::traverse.3 HTML::Tree.3 \
+		HTML::Tree::Scanning.3 HTML::Tree::AboutObjects.3 \
+		HTML::Tree::AboutTrees.3
 
 .include <bsd.port.mk>
