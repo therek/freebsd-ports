@@ -2,7 +2,7 @@
 # Date created:         So  17 Nov 1996 16:59:23 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/bb/Makefile,v 1.40 2000/04/09 18:10:14 cpiazza Exp $
+# $FreeBSD: ports/net/bb/Makefile,v 1.41 2000/05/17 04:05:57 kris Exp $
 #
 
 PORTNAME=	bb
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://maclawran.ca/~sean/bb-dnld/ \
 		http://freefall.freebsd.org/~andreas/download/
 
-MAINTAINER=	billf@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 FORBIDDEN=	"Remote buffer overflow in bbd"
 
