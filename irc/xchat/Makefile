@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.79 2001/07/26 23:04:05 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.80 2001/09/04 19:38:29 knu Exp $
 #
 
 PORTNAME=		xchat
@@ -34,7 +34,8 @@ CONFIGURE_ENV+=		CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS+=	--disable-python \
 			--without-included-gettext \
 			--enable-nls \
-			--enable-ipv6
+			--enable-ipv6 \
+			--datadir="${PREFIX}/share"
 
 .include <bsd.port.pre.mk>
 
@@ -52,6 +53,7 @@ CONFIGURE_ARGS+=	--enable-openssl
 .if defined(HAVE_GNOME)
 USE_GNOME=		yes
 CONFIGURE_ARGS+=	--enable-gnome --enable-panel --enable-gdk-pixbuf
+MAKE_ARGS=		icondir="${PREFIX}/share/gnome/pixmaps"
 .else
 CONFIGURE_ARGS+=	--disable-gnome --disable-gdk-pixbuf
 .endif
@@ -59,12 +61,8 @@ CONFIGURE_ARGS+=	--disable-gnome --disable-gdk-pixbuf
 post-patch:
 	@${PERL} -pi \
 		-e 's|-lpthread|${PTHREAD_LIBS}|g;' \
-		-e 's|DATADIRNAME=lib|DATADIRNAME=share|g;' \
 		-e 's|iconv|giconv|;' \
 		${WRKSRC}/configure
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi \
-		-e 's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g;' \
-		-e 's|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g;'
 	@${PERL} -pi -e 's|iconv\.h|giconv.h|;' \
 		${WRKSRC}/src/common/jcode.c
 
