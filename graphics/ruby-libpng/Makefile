@@ -2,14 +2,16 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-libpng/Makefile,v 1.2 2000/09/27 07:55:44 knu Exp $
+# $FreeBSD: ports/graphics/ruby-libpng/Makefile,v 1.3 2000/09/28 06:33:25 knu Exp $
 #
 
 PORTNAME=	libpng
 PORTVERSION=	0.3.3
 PORTREVISION=	2
 CATEGORIES=	graphics ruby
-MASTER_SITES=	http://www.isc.meiji.ac.jp/~ee77038/ruby/program/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+#		http://www.isc.meiji.ac.jp/~ee77038/ruby/program/
+MASTER_SITE_SUBDIR=	knu
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
