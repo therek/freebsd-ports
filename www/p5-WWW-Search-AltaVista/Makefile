@@ -2,11 +2,11 @@
 # Date created:				24 August 2001
 # Whom:					Fanying Jen <fanying@fynet.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-WWW-Search-AltaVista/Makefile,v 1.1 2001/09/10 17:19:33 tom Exp $
 #
 
 PORTNAME=	WWW-Search-AltaVista
-PORTVERSION=	2.01
+PORTVERSION=	2.02
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	WWW/MTHURN
