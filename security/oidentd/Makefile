@@ -2,11 +2,11 @@
 # Date created:		29 Mar 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/security/oidentd/Makefile,v 1.5 2000/06/14 13:21:34 sobomax Exp $
+# $FreeBSD: ports/security/oidentd/Makefile,v 1.6 2000/10/02 05:39:32 trevor Exp $
 #
 
 PORTNAME=	oidentd
-PORTVERSION=	1.6.4
+PORTVERSION=	1.7.0
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.numb.org/~odin/stuff/
