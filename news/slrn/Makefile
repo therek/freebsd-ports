@@ -2,7 +2,7 @@
 # Date created:        28 March 1997
 # Whom:                Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/news/slrn/Makefile,v 1.21 2001/02/27 02:00:46 steve Exp $
+# $FreeBSD: ports/news/slrn/Makefile,v 1.22 2001/04/04 00:54:00 sumikawa Exp $
 #
 
 PORTNAME=	slrn
@@ -15,6 +15,7 @@ MAINTAINER=	xaa+ports@timewasters.nl
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 
+USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 ALL_TARGET=	all slrnpull
 MAN1=		slrn.1
