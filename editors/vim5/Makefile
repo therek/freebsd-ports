@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.91 2000/11/19 03:09:37 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.92 2000/11/29 16:58:21 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -54,14 +54,13 @@ I18N=		CONF_OPT_MULTIBYTE="--enable-multibyte --enable-fontset --enable-multibyt
 
 .if defined(WITH_ATHENA)
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=athena" ${I18N}
+#MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=yes" ${I18N}
 .elif defined(WITH_GTK)
 USE_GTK=	yes
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=gtk --with-gtk-prefix=${X11BASE}" ${I18N}
-.elif defined(HAVE_MOTIF)
+.else
 USE_MOTIF=	yes
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=motif --with-motif-lib=\"${MOTIFLIB}\"" MOTIFHOME=${X11BASE} ${I18N}
-.else
-MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=yes" ${I18N}
 .endif
 
 .if defined(PACKAGE_BUILDING)
