@@ -2,17 +2,17 @@
 # Date created:         15 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/lynx/Makefile,v 1.90 2000/04/10 00:05:46 cpiazza Exp $
+# $FreeBSD: ports/www/lynx/Makefile,v 1.91 2000/04/21 15:22:53 jseger Exp $
 #
 
 # NOTE: This port is tracking lynx-current until 2.8.3 is released.  Anything
-#       before 2.8.3pre.2 has unacceptable security holes.
+#       before 2.8.3pre.5 has unacceptable security holes.
 
 PORTNAME=	lynx
-PORTVERSION=    2.8.3pre.5
+PORTVERSION=    2.8.3.p5
 CATEGORIES=	www
 MASTER_SITES=   http://lynx.isc.org/current/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+DISTNAME=	${PORTNAME}2.8.3pre.5
 
 MAINTAINER=	jseger@FreeBSD.org
 
