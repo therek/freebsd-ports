@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.184 2000/02/24 17:17:52 ade Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.185 2000/02/24 17:20:33 ade Exp $
 #
 
     SUBDIR += 4va
@@ -47,7 +47,6 @@
     SUBDIR += gimp-manual-pdf
     SUBDIR += gimp-manual-ps
     SUBDIR += gimp1
-    SUBDIR += gimp1-i18n
     SUBDIR += giram
     SUBDIR += gltk
     SUBDIR += glx
