@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.301 2003/09/24 13:49:30 netchild Exp $
+# $FreeBSD: ports/LEGAL,v 1.302 2003/10/12 05:47:41 trevor Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -188,6 +188,7 @@ mindfocus-*		ports/games/mindfocus	contains commercial
 mindtermbin-*		ports/security/mindterm-binary	Do not sell for profit.
 mingw/opengl95.exe	ports/devel/mingw-opengl-headers	Not sure if we can redistribute it freely
 mmv/*			ports/misc/mmv		Restrictive/unclear copyright
+mod_tidy		ports/www/mod_tidy	no license
 molden			ports/biology/molden	free for academic,
 						non profit usage
 						do not re-distribute source and
