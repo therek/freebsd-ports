@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.256 2001/09/21 05:49:14 knu Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.257 2001/09/22 05:09:10 mharo Exp $
 #
 
     SUBDIR += abook
@@ -213,6 +213,7 @@
     SUBDIR += wanderlust-xemacs21-mule
     SUBDIR += wmbiff
     SUBDIR += wmmail
+    SUBDIR += wmmultipop3
     SUBDIR += wmpop3
     SUBDIR += xbuffy
     SUBDIR += xc-mail
