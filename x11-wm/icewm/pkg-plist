@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.32 2003/08/12 18:40:16 krion Exp $
+@comment $FreeBSD: ports/x11-wm/icewm/pkg-plist,v 1.33 2003/08/22 20:42:45 krion Exp $
 bin/icehelp
 bin/icesh
-%%ESOUND%%bin/icesound
+bin/icesound
 bin/icewm
 %%GNOMEDESKTOP%%bin/icewm-menu-gnome2
 bin/icewmbg
