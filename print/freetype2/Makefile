@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.19 2000/06/16 21:51:52 asami Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.20 2000/10/03 01:00:22 reg Exp $
 #
 
 PORTNAME=	freetype
@@ -21,7 +21,6 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jseger@FreeBSD.org
 
-USE_XLIB=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
