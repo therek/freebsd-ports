@@ -2,17 +2,16 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-FontServer/Makefile,v 1.9 2001/06/12 15:00:59 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	FontServer
-PORTVERSION=	4.1.0
-PORTREVISION=	1
+PORTVERSION=	4.2.0
 CATEGORIES=	x11-servers x11-fonts
 MASTER_SITES=	${MASTER_SITE_XFREE}
-MASTER_SITE_SUBDIR=	4.1.0
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 PKGNAMEPREFIX=	XFree86-
-DISTFILES=	X410src-1.tgz
+DISTFILES=	X${PORTVERSION:S/.//g}src-1.tgz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
