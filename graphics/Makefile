@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.261 2001/01/26 18:14:58 dinoex Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.262 2001/02/07 06:37:00 knu Exp $
 #
 
     SUBDIR += 4va
@@ -116,6 +116,7 @@
     SUBDIR += linux-bmrt
     SUBDIR += linux-jpeg
     SUBDIR += linux-png
+    SUBDIR += linux-tiff
     SUBDIR += linux_glide
     SUBDIR += linux_glx
     SUBDIR += linux_mesa
