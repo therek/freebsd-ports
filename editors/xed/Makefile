@@ -2,7 +2,7 @@
 # Date created:		28 Jul 1996
 # Whom:			shanee
 #
-# $FreeBSD: ports/editors/xed/Makefile,v 1.12 2000/04/14 00:25:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xed
@@ -17,6 +17,10 @@ MAINTAINER=	shanee@augusta.de
 
 USE_IMAKE=	yes
 USE_XPM=	yes
+USE_REINPLACE=yes
 MAN1=		xed.1
 
+pre-build:
+	@${FIND} ${WRKSRC} -type f | ${XARGS} ${REINPLACE_CMD} -e \
+		's|extern char \*malloc();|/\* extern char \*malloc(); \*/|g'
 .include <bsd.port.mk>
