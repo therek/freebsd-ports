@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/comms/Makefile,v 1.38 1999/08/25 05:12:32 obrien Exp $
 #
 
     SUBDIR += asmodem
@@ -16,6 +16,7 @@
     SUBDIR += rzsz
     SUBDIR += seyon
     SUBDIR += snooper
+    SUBDIR += sredird
     SUBDIR += tkhylafax
     SUBDIR += viewfax
     SUBDIR += xcept
