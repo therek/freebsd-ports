@@ -3,7 +3,7 @@
 # Date created:         Sun Apr 19 16:17:25 PDT 1998
 # Whom:                 Jordan Hubbard <jkh@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/spegla/Makefile,v 1.11 2000/07/05 19:43:46 jkh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spegla
@@ -23,8 +23,10 @@ post-extract:
 	@${CP} ${WRKSRC}/regex/${file} ${WRKSRC}
 .endfor
 
-post-install:
+pre-install:
 	@${MKDIR} ${PREFIX}/share/examples/spegla
+
+post-install:
 	${INSTALL_DATA} ${WRKSRC}/freebsd.org ${PREFIX}/share/examples/spegla
 
 .include <bsd.port.mk>
