@@ -3,7 +3,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer/Makefile,v 1.5 1999/08/25 05:57:29 obrien Exp $
+# $FreeBSD: ports/german/webalizer/Makefile,v 1.6 1999/09/27 02:47:04 steve Exp $
 
 DISTNAME=	webalizer-1.30-04-src
 PKGNAME=	de-webalizer-1.30.4
@@ -14,13 +14,14 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
-LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
+BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
 
 WEBALIZER_LANG= german
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-gdlib=${PREFIX}/lib \
 			--with-gd=${PREFIX}/include/gd \
 			--with-language=${WEBALIZER_LANG}
+CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
 BIN1=		de-webalizer
 MAN1=		de-webalizer.1
 DOC1=		CHANGES COPYING Copyright INSTALL \
