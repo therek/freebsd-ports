@@ -2,12 +2,12 @@
 # Date created:		01 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/editors/joe/Makefile,v 1.14 2001/03/11 04:32:07 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	joe
 PORTVERSION=	2.8
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES+=	editors
 MASTER_SITES=	ftp://ftp.std.com/src/editors/
 DISTNAME=	${PORTNAME}${PORTVERSION}
