@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.18 2000/11/03 09:34:11 knu Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.19 2000/12/07 06:44:25 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -11,7 +11,7 @@ CATEGORIES=	japanese databases
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION:R}/ \
 		ftp://ftp.jaist.ac.jp/pub/dbms/PostgreSQL/v${PORTVERSION:R}/ \
 		ftp://ftp.postgresql.org/pub/v${PORTVERSION:R}/ \
-		${MASTER_SITE_RINGSERVER:R}
+		${MASTER_SITE_RINGSERVER}
 MASTER_SITE_SUBDIR=	misc/db/postgresql-jp/${PORTVERSION:R}
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 DIST_SUBDIR=	postgresql
