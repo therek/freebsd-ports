@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 10:58:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-Currency/Makefile,v 1.1 2001/01/03 23:39:15 will Exp $
+# $FreeBSD: ports/math/p5-Math-Currency/Makefile,v 1.2 2001/03/01 06:38:17 vanilla Exp $
 #
 
 PORTNAME=	Math-Currency
-PORTVERSION=	0.10
+PORTVERSION=	0.11
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Math
@@ -24,7 +24,6 @@ BROKEN=		"Needs Perl 5.6.0 for Math::BigFloat"
 .endif
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_ZIP=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
