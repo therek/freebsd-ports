@@ -2,7 +2,7 @@
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuki Sawada <samy@goldmoon.org>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.21 2000/12/11 03:08:18 steve Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.22 2001/03/09 21:38:37 sf Exp $
 #
 
 PORTNAME=	enfle
@@ -16,7 +16,7 @@ MAINTAINER=	samy@goldmoon.org
 
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		mng.0:${PORTSDIR}/graphics/libmng \
+		mng.1:${PORTSDIR}/graphics/libmng \
 		ungif.5:${PORTSDIR}/graphics/libungif \
 		arc.1:${PORTSDIR}/archivers/libarc \
 		bz2.1:${PORTSDIR}/archivers/bzip2
