@@ -2,12 +2,14 @@
 # Date created:		Mar 29, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.14 2000/04/09 18:10:02 cpiazza Exp $
+# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.15 2000/09/22 01:58:57 kris Exp $
 
 PORTNAME=		SSLtelnet
 PORTVERSION=		0.13
 CATEGORIES=		net security
-MASTER_SITES=		ftp://ftp.psy.uq.oz.au/pub/Crypto/SSLapps/
+MASTER_SITES=		${MASTER_SITE_LOCAL} \
+			ftp://ftp.psy.uq.oz.au/pub/Crypto/SSLapps/
+MASTER_SITE_SUBDIR=	kris
 
 MAINTAINER=		issei@jp.FreeBSD.org
 
