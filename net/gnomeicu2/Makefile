@@ -2,16 +2,14 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.27 2000/10/03 09:28:27 reg Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.28 2000/10/05 07:17:12 reg Exp $
 #
 
 PORTNAME=	gnomeicu
-PORTVERSION=	0.93
+PORTVERSION=	0.94.1
 CATEGORIES=	net gnome
-MASTER_SITES=	ftp://gnomeicu.gdev.net/pub/gnomeicu/ \
-		ftp://ftp.vision.net.au/ftp7/linuxberg/files/gnome/com/ \
-		ftp://ftp.datacomm.ch/.3/linuxberg/files/gnome/com/ \
-		ftp://ftp.proxad.net/mirrors/ftp.linuxberg.com/files/gnome/com/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR= gnomeicu
 
 MAINTAINER=	nectar@FreeBSD.org
 
@@ -21,8 +19,23 @@ USE_X_PREFIX=	yes
 USE_BZIP2=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+.if defined(WITH_DANTE)
+LIB_DEPENDS+=	socks.1:${PORTSDIR}/net/dante
+SOCKSFLAGS=	-Dconnect=Rconnect -Dbind=Rbind -Dgetsockname=Rgetsockname \
+		-Dgetpeername=Rgetpeername -Daccept=Raccept \
+		-Drresvport=Rrresvport -Dbindresvport=Rbindresvport \
+		-Dgethostbyname=Rgethostbyname \
+		-Dgethostbyname2=Rgethostbyname2 -Dsendto=Rsendto \
+		-Drecvfrom=Rrecvfrom -Drecvfrom=Rrecvfrom -Dwrite=Rwrite \
+		-Dwritev=Rwritev -Dsend=Rsend -Dsendmsg=Rsendmsg \
+		-Dread=Rread -Dreadv=Rreadv -Drecv=Rrecv -Drecvmsg=Rrecvmsg
+SOCKSLIBS=	-lsocks
+.endif
+
+CONFIGURE_ARGS= --with-statusmenu
+CONFIGURE_ENV=	CPPFLAGS="${SOCKSFLAGS} -I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib" LIBS="${SOCKSLIBS}" \
+		CFLAGS="${CFLAGS}"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
