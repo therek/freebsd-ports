@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.232 2001/05/01 00:15:13 greid Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.233 2001/05/04 19:52:38 knu Exp $
 #
 
     SUBDIR += Maaate
@@ -26,6 +26,7 @@
     SUBDIR += dagrab
     SUBDIR += dap
     SUBDIR += denemo
+    SUBDIR += easytag
     SUBDIR += ecasound
     SUBDIR += esound
     SUBDIR += extace
