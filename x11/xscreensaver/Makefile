@@ -2,11 +2,11 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.37 2001/03/29 16:35:12 sobomax Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.38 2001/04/06 07:54:08 dougb Exp $
 #
 
 PORTNAME=	xscreensaver
-PORTVERSION=	3.31
+PORTVERSION=	3.32
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
@@ -34,7 +34,8 @@ MAN1=		attraction.1 blitspin.1 bouboule.1 braid.1 \
 		vines.1 webcollage.1 whirlwindwarp.1 xflame.1 xjack.1 xlyap.1 \
 		xmatrix.1 xscreensaver-command.1 xscreensaver-demo.1 \
 		xscreensaver-gl-helper.1 xscreensaver.1 xsublim.1 xteevee.1 \
-		zoom.1 molecule.1 rotzoomer.1
+		zoom.1 molecule.1 rotzoomer.1 bumps.1 xscreensaver-getimage.1 \
+		xscreensaver-getimage-file.1 xscreensaver-getimage-video.1
 
 post-patch:
 	@ ${CP} ${WRKSRC}/configure ${WRKSRC}/configure.Patched
