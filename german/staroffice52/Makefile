@@ -2,10 +2,10 @@
 # Date created:		20 Dezember 1999
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice5/Makefile,v 1.4 2000/04/08 22:01:25 mharo Exp $
+# $FreeBSD: ports/german/staroffice5/Makefile,v 1.5 2000/04/14 20:24:04 peter Exp $
 #
 
-PORTNAME=	de-staroffice
+PORTNAME=	staroffice
 PORTVERSION=	5.1a
 CATEGORIES=	editors linux
 MASTER_SITES=	ftp://ftp.hagenhomes.com/pub/  \

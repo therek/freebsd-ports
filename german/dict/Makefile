@@ -2,10 +2,10 @@
 # Date created:         6 August 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/dict/Makefile,v 1.11 2000/04/08 22:01:16 mharo Exp $
+# $FreeBSD: ports/german/dict/Makefile,v 1.12 2000/04/14 17:43:50 knu Exp $
 #
 
-PORTNAME=	de-dict
+PORTNAME=	dict
 PORTVERSION=	1.2
 CATEGORIES=	german
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/

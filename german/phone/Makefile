@@ -2,10 +2,10 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/phone/Makefile,v 1.8 1999/09/19 10:30:44 wosch Exp $
+# $FreeBSD: ports/german/phone/Makefile,v 1.9 2000/04/08 22:01:20 mharo Exp $
 #
 
-PORTNAME=	de-phone
+PORTNAME=	phone
 PORTVERSION=	1.0
 CATEGORIES=	german misc
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/

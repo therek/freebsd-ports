@@ -2,10 +2,10 @@
 # Date created:         29 September 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/manpages/Makefile,v 1.11 1999/09/19 10:30:44 wosch Exp $
+# $FreeBSD: ports/german/manpages/Makefile,v 1.12 2000/04/08 22:01:18 mharo Exp $
 #
 
-PORTNAME=	de-manpages
+PORTNAME=	manpages
 PORTVERSION=	1.0
 CATEGORIES=	german
 MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/ \

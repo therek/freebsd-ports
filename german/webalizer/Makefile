@@ -2,9 +2,9 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer/Makefile,v 1.8 1999/12/27 21:28:08 steve Exp $
+# $FreeBSD: ports/german/webalizer/Makefile,v 1.9 2000/04/08 22:01:26 mharo Exp $
 
-PORTNAME=	de-webalizer
+PORTNAME=	webalizer
 PORTVERSION=	1.30.4
 CATEGORIES=	german www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
