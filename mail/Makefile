@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.218 2001/05/02 05:53:59 dburr Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.219 2001/05/02 05:54:59 dburr Exp $
 #
 
     SUBDIR += abook
@@ -38,6 +38,7 @@
     SUBDIR += gbiff
     SUBDIR += gbuffy
     SUBDIR += gensig
+    SUBDIR += getmail
     SUBDIR += gkrellmmailwatch
     SUBDIR += glacier
     SUBDIR += glbiff
