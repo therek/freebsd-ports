@@ -3,12 +3,12 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.24 1999/09/27 17:08:07 cpiazza Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.25 1999/09/28 17:23:28 sheldonh Exp $
 #
 
 DISTNAME=	freeciv-1.8.3
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable_version/ \
+MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/beta_version/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
 MAINTAINER=	ada@bsd.org
