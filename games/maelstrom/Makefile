@@ -3,7 +3,7 @@
 # Date created:				13 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/maelstrom/Makefile,v 1.8 1999/08/25 06:03:58 obrien Exp $
 #
 
 DISTNAME=		Maelstrom-1.4.3-L2.0.6-src
@@ -17,6 +17,7 @@ LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_X_PREFIX=		yes
 WRKSRC=			${WRKDIR}/Maelstrom
+MAKE_ENV=		CFLAGS="${CFLAGS} -pedantic" CXXFLAGS="${CXXFLAGS} -pedantic"
 
 do-configure:
 	@ ${CP} ${FILESDIR}/Makeflags ${WRKSRC}
