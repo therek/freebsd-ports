@@ -2,7 +2,7 @@
 # Date created:		17 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/metamail/Makefile,v 1.14 2000/04/13 19:59:57 cpiazza Exp $
+# $FreeBSD: ports/mail/metamail/Makefile,v 1.15 2000/09/12 13:03:55 asami Exp $
 #
 
 PORTNAME=	metamail
@@ -32,5 +32,8 @@ MAN1= 		audiocompose.1 audiosend.1 extcompose.1 \
 		showexternal.1 shownonascii.1 showpartial.1 \
 		showpicture.1 splitmail.1
 MAN4=		mailcap.4
+
+post-patch:
+	@${RM} ${WRKSRC}/bin/*.orig
 
 .include <bsd.port.post.mk>
