@@ -2,11 +2,12 @@
 # Date created:        19 September 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/www/linbot/Makefile,v 1.8 2000/04/21 18:15:22 billf Exp $
+# $FreeBSD: ports/www/linbot/Makefile,v 1.9 2000/06/23 13:21:58 sobomax Exp $
 #
 
 PORTNAME=	linbot
 PORTVERSION= 	1.0
+PORTREVISION=	1
 CATEGORIES=	www python
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/misc
@@ -22,6 +23,10 @@ do-install:
 	${MKDIR} ${PREFIX}/share/linbot
 	${CP} ${WRKSRC}/*.py ${PREFIX}/share/linbot
 	${CP} ${WRKSRC}/*.css ${PREFIX}/share/linbot
+.for d in plugins schemes
+	${MKDIR} ${PREFIX}/share/linbot/${d}
+	${CP} ${WRKSRC}/${d}/*.py ${PREFIX}/share/linbot/${d}
+.endfor
 	${LN} -sf ${PREFIX}/share/linbot/linbot.py ${PREFIX}/bin/linbot
 
 .include <bsd.port.mk>
