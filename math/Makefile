@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.76 2000/07/03 16:26:55 sobomax Exp $
+# $FreeBSD: ports/math/Makefile,v 1.77 2000/07/04 02:37:59 will Exp $
 #
 
     SUBDIR += PDL
@@ -21,6 +21,7 @@
     SUBDIR += freefem
     SUBDIR += fudgit
     SUBDIR += geg
+    SUBDIR += glove
     SUBDIR += gnumeric
     SUBDIR += gnuplot
     SUBDIR += gnuplot+
@@ -36,6 +37,7 @@
     SUBDIR += metis
     SUBDIR += netcdf
     SUBDIR += ngraph
+    SUBDIR += ntl
     SUBDIR += numpy
     SUBDIR += octave
     SUBDIR += oleo
