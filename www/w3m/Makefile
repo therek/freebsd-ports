@@ -2,10 +2,10 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.14 2000/03/20 21:37:12 mharo Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.15 2000/04/10 00:07:09 cpiazza Exp $
 #
 
-PORTNAME?=	w3m
+PORTNAME=	w3m
 PORTVERSION?=	${W3M_VER}
 CATEGORIES?=	www ipv6
 MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
@@ -18,7 +18,7 @@ MAINTAINER=	nobutaka@nobutaka.com
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 
 W3M_VER=	0.1.7
-WRKSRC=		${WRKDIR}/w3m
+WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		w3m.1
 MANLANG=	""
 CFLAGS=		-pipe
