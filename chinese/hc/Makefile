@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  hc
-# Version required:     	  3.0
+# Version required:		  3.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/hc/Makefile,v 1.4 1999/08/25 04:57:48 obrien Exp $
 #
 
 DISTNAME=	hc-3.0
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/convert/  \
 		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/convert/
 DISTFILES=	hc-30.tar.gz  hc-supp.tab
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/hc3
 EXTRACT_ONLY=	hc-30.tar.gz

@@ -4,7 +4,7 @@
 # Date created:		Monday, Dec 9, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.7 1999/08/31 02:11:53 peter Exp $
 #
 
 DISTNAME=	vnroff
@@ -13,7 +13,7 @@ CATEGORIES=	vietnamese print
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Troff/
 DISTFILES=	vnroff.c.Z vnroff.1.Z
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAN1=		vnroff.1

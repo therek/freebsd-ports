@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  clog
-# Version required:     	  1.6
+# Version required:		  1.6
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/clog/Makefile,v 1.2 1999/08/30 14:22:19 peter Exp $
 #
 
 DISTNAME=	clog-1.6
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.saturn.net/pub/users/brian/clog/  \
 		ftp://ftp.ox.ac.uk/pub/comp/security/COAST/mirrors/ftp.saturn.net/clog/  \
 		ftp://ftp.rediris.es/mirror/coast/tools/unix/clog/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/clog
 ALL_TARGET=	freebsd

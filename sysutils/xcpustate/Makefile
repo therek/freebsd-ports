@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:	xcpustate
-# Version required:	2.1
-# Date created:		31-Dec-1995
-# Whom:                 David O'Brien <obrien@cs.ucdavis.edu>
+# Ports collection makefile for:  xcpustate
+# Version required:		  2.1
+# Date created:			  31-Dec-1995
+# Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.13 1999/08/31 02:00:27 peter Exp $
 #
 
 DISTNAME=	xcpustate-2.5
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/  \
 MASTER_SITE_SUBDIR=	utilities
 EXTRACT_SUFX=	.shar
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 EXTRACT_CMD=	cat
 EXTRACT_BEFORE_ARGS=

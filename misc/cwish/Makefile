@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  cwish
-# Version required:     	  3.52
+# Version required:		  3.52
 # Date created:			  Thur Sept 25, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/misc/cwish/Makefile,v 1.4 1999/08/25 07:21:26 obrien Exp $
+# $FreeBSD: ports/misc/cwish/Makefile,v 1.5 2000/01/22 10:52:53 mharo Exp $
 #
 
 DISTNAME=	cwish-3.52
 CATEGORIES=	misc
 MASTER_SITES=	http://www.hcs.de/users/hm/packages/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	cwish

@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  dlint
-# Version required:     	  1.3.2
+# Version required:		  1.3.2
 # Date created:			  Wed Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/dlint/Makefile,v 1.2 1999/08/30 14:22:35 peter Exp $
+# $FreeBSD: ports/net/dlint/Makefile,v 1.3 1999/10/31 23:57:53 obrien Exp $
 #
 
 DISTNAME=	dlint1.3.3
@@ -12,7 +12,7 @@ PKGNAME=	dlint-1.3.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.domtools.com/pub/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 NO_BUILD=	yes
 MAN8=		dlint.8

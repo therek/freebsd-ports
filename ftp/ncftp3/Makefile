@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:    ncftp3
-# Version required:     3.0
-# Date created:         4 Nov 1994
-# Whom:                 ache
+# Ports collection makefile for:  ncftp3
+# Version required:		  3.0
+# Date created:			  4 Nov 1994
+# Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.68 1999/08/31 06:44:06 mharo Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.69 2000/01/10 15:57:17 obrien Exp $
 #
 
 DISTNAME=       ncftp-3.0beta21-src

@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  c2t
-# Version required:     	  1.0
+# Version required:		  1.0
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/c2t/Makefile,v 1.5 1999/08/25 04:57:41 obrien Exp $
 #
 
 DISTNAME=	c2t
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/convert/  \
 		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/x-win/cxterm/dict/gb/
 DISTFILES=	c2t.tar.gz TONEPY.tit
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	c2t.tar.gz

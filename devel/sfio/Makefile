@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:  sfio
-# Version required:	1999
-# Date created: 	8 November 1997
-# Whom:			jraynard
+# Ports collection makefile for:  sfio
+# Version required:		  1999
+# Date created:			  8 November 1997
+# Whom:				  jraynard
 #
-# $FreeBSD: ports/devel/sfio/Makefile,v 1.10 1999/12/27 00:35:30 steve Exp $
+# $FreeBSD: ports/devel/sfio/Makefile,v 1.11 2000/01/03 01:36:57 obrien Exp $
 #
 
 DISTNAME=	sfio_1999

@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:    rsync
-# Version required:     2.3.1
-# Date created:         Sat Aug 3, 1996
-# Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
+# Ports collection makefile for:  rsync
+# Version required:		  2.3.1
+# Date created:			  Sat Aug 3, 1996
+# Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.31 2000/01/26 09:22:00 sumikawa Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.32 2000/01/27 07:58:51 sumikawa Exp $
 #
 
 DISTNAME=	rsync-2.3.2
@@ -19,7 +19,7 @@ PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
 PATCHFILES=	rsync-232-v6-20000127a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 Y2K=		http://rsync.samba.org/rsync/y2k.html
 

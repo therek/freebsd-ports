@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  mopd
-# Version required:     	  2.5.3
+# Version required:		  2.5.3
 # Date created:			  Sun Nov 14, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/mopd/Makefile,v 1.1.1.1 1999/11/14 20:20:10 obrien Exp $
 #
 
 DISTNAME=	mopd-2.5.3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.stacken.kth.se/pub/OS/NetBSD/mopd/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 #	MANDIR is concetenated to DESTDIR which all forms the man install dir...
 MAKE_ENV=	DESTDIR=${PREFIX} MANDIR=/man/man NOMANCOMPRESS=true

@@ -1,9 +1,10 @@
-# New ports collection makefile for:    cxterm
-# Version required:     5.0
-# Date created:         Sat Aug 10, 1996
-# Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
+# ex:ts=8
+# Ports collection makefile for:  cxterm
+# Version required:		  5.0
+# Date created:			  Sat Aug 10, 1996
+# Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/chinese/cxterm/Makefile,v 1.11 1999/08/25 04:57:45 obrien Exp $
 #
 
 DISTNAME=	cxterm5.0.p3
@@ -14,7 +15,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/x-win/cxterm/  \
 		ftp://ftp.edu.tw/Chinese/ifcss/software/x-win/cxterm/  \
 		ftp://ftp.mpi-sb.mpg.de/pub/chinese/mirror/ftp.ifcss.org/software/x-win/cxterm/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/cxterm-5.0
 USE_IMAKE=	yes

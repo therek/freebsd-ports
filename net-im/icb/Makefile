@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  icb
-# Version required:     	  5.0.9
+# Version required:		  5.0.9
 # Date created:			  Tue Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/icb/Makefile,v 1.3 1999/08/30 14:22:55 peter Exp $
 #
 
 DISTNAME=	icb-5.0.9
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.swcp.com/pub/icb/clients/unix/  \
 		ftp://ftp.tu-clausthal.de/pub/unix.new/net/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 do-configure:
 	@cd ${WRKSRC}; \

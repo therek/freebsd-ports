@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  ngrep
-# Version required:     	  1.35
+# Version required:		  1.35
 # Date created:			  Sat Jan 01, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ngrep/Makefile,v 1.1.1.1 2000/01/02 10:22:41 obrien Exp $
 #
 
 DISTNAME=	ngrep-1.35
 CATEGORIES=	net security
 MASTER_SITES=	http://www.packetfactory.net/ngrep/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/ngrep
 GNU_CONFIGURE=	yes

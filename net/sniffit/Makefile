@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:	sniffit
-# Version required:	0.3.5
-# Date created:		28 Mar 1998
-# Whom:			bsdx
+# Ports collection makefile for:  sniffit
+# Version required:		  0.3.5
+# Date created:			  28 Mar 1998
+# Whom:				  bsdx
 #
-# $FreeBSD: ports/net/sniffit/Makefile,v 1.5 1999/08/31 06:49:18 mharo Exp $
+# $FreeBSD: ports/net/sniffit/Makefile,v 1.6 2000/02/08 09:27:40 peter Exp $
 #
 
 DISTNAME=	sniffit.0.3.7.beta

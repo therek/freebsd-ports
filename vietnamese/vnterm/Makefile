@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:    vnterm
+# Ports collection makefile for:    vnterm
 # Version required:     3.3
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.14 1999/08/31 02:11:54 peter Exp $
 #
 
 DISTNAME=	vnterm3.3
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 USE_IMAKE=	yes
 XMKMF=		xmkmf

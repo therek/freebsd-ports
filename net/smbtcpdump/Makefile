@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:	smbtcpdump
-# Version required:			3.4
-# Date created:				2 Jun 1998
-# Whom:					obrien
+# Ports collection makefile for:  smbtcpdump
+# Version required:		  3.4
+# Date created:			  2 Jun 1998
+# Whom:				  obrien
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/smbtcpdump/Makefile,v 1.8 1999/08/30 14:24:11 peter Exp $
 #
 
 DISTNAME=	tcpdump-3.4

@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:    Sather
 # Version required:     1.0.5
 # Date created:         Mon Oct 31 22:04:12 PST 1994
 # Whom:                 hsu
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/Sather/Makefile,v 1.16 1999/08/25 06:34:13 obrien Exp $
 #
 
 DISTNAME=       Sather-1.0.5

@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:    vnpstext
+# Ports collection makefile for:    vnpstext
 # Version required:     1.1
 # Date created:         Sat Dec 7, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.8 1999/08/31 02:11:50 peter Exp $
+# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.9 1999/09/05 22:21:16 obrien Exp $
 #
 
 DISTNAME=	vnpstext
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 CFLAGS+=	-I../../include
 MAN1=		vnpstext.1

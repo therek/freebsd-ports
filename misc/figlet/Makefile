@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:    figlet
-# Version required:     2.2
-# Date created:         Sat July 20, 1996
-# Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
+# Ports collection makefile for:  figlet
+# Version required:		  2.2
+# Date created:			  Sat July 20, 1996
+# Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/misc/figlet/Makefile,v 1.10 1999/08/25 07:21:40 obrien Exp $
+# $FreeBSD: ports/misc/figlet/Makefile,v 1.11 2000/02/08 09:28:05 peter Exp $
 #
 
 DISTNAME=	figlet22
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://wuarchive.wustl.edu/graphics/graphics/misc/figlet/program/un
 		http://people.FreeBSD.org/~obrien/Distfiles/ \
 		ftp://ftp.nuxi.com/pub/misc/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 MAN6=		figlet.6
 

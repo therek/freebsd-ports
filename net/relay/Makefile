@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  relay
-# Version required:     	  1.10
+# Version required:		  1.10
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/relay/Makefile,v 1.3 1999/11/02 00:42:07 obrien Exp $
+# $FreeBSD: ports/net/relay/Makefile,v 1.4 2000/02/08 09:27:45 peter Exp $
 #
 
 DISTNAME=	relay
@@ -13,7 +13,7 @@ CATEGORIES=	net security
 MASTER_SITES=	http://www.iagora.com/~espel/  \
 		http://people.FreeBSD.org/~obrien/Distfiles/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 IS_INTERACTIVE=	'must set server hostname in relay.h'
 

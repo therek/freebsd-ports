@@ -1,10 +1,10 @@
 # ex:ts=8
 # Ports collection makefile for:  foo
-# Version required:     	  3.9.7
+# Version required:		  3.9.7
 # Date created:			  Fri Mar 18, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/super/Makefile,v 1.12 1999/08/31 01:51:53 peter Exp $
 #
 
 DISTNAME=	super-3.12.1
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://phobos.caltech.edu/users/will/  \
 		ftp://ftp.ucolick.org/pub/users/will/  \
 		ftp://ftp.infodrom.north.de/pub/unix/utilities/super/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 

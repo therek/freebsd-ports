@@ -1,9 +1,10 @@
-# New ports collection makefile for:    cless
-# Version required:     2.90
-# Date created:         Sat Aug 10, 1996
-# Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
+# ex:ts=8
+# Ports collection makefile for:  cless
+# Version required:		  2.90
+# Date created:			  Sat Aug 10, 1996
+# Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/chinese/cless/Makefile,v 1.8 1999/08/25 04:57:43 obrien Exp $
+# $FreeBSD: ports/chinese/cless/Makefile,v 1.9 1999/09/22 06:24:41 obrien Exp $
 #
 
 DISTNAME=	cless-290
@@ -13,7 +14,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/c-utils/  \
 		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/unix/c-utils/ \
 		ftp://ftp.edu.tw/Chinese/ifcss/software/unix/c-utils/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CFLAGS+=	-DHANZI # LDFLAGS=-s datadir=/usr/local/lib/less

@@ -1,10 +1,10 @@
 # ex:ts=8
-# New ports collection makefile for:  dict
-# Version required:    1.4.8
-# Date created:        19 February 1998
-# Whom:                Josh Gilliam <josh@quick.net>
+# Ports collection makefile for:  dict
+# Version required:		  1.4.8
+# Date created:			  19 February 1998
+# Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/dict/Makefile,v 1.8 1999/10/21 19:02:27 fenner Exp $
+# $FreeBSD: ports/textproc/dict/Makefile,v 1.9 1999/10/27 09:03:55 obrien Exp $
 #
 
 DISTNAME=	dictd-1.4.9

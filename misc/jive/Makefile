@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:  jive
-# Version required:     	  1.1
+# Version required:		  1.1
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/misc/jive/Makefile,v 1.5 1999/08/25 07:21:53 obrien Exp $
+# $FreeBSD: ports/misc/jive/Makefile,v 1.6 1999/11/23 03:44:46 billf Exp $
 #
 
 DISTNAME=	jive-1.1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.nuxi.com/pub/misc/
 
-MAINTAINER=     obrien@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/jive
 MAN1=		jive.1
