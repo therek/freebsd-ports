@@ -41,7 +41,7 @@ upgrades.
 
       	portupgrade -a
 
-  3.) Reinstall the KDE ports you deleted in step 2.
+  3.) Reinstall the KDE ports you deleted in step 1.
 
       	portinstall -O kdebase kdeartwork kdewebdev
 
@@ -1879,4 +1879,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.167 2005/03/20 18:17:20 lofi Exp $
+$FreeBSD: ports/UPDATING,v 1.168 2005/03/20 19:11:58 lofi Exp $
