@@ -2,11 +2,11 @@
 # Date created:		2 February 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/mail/lbdb/Makefile,v 1.3 2000/06/07 07:57:54 asami Exp $
+# $FreeBSD: ports/mail/lbdb/Makefile,v 1.4 2000/06/22 13:09:54 nbm Exp $
 #
 
 PORTNAME=	lbdb
-PORTVERSION= 	0.19.4
+PORTVERSION= 	0.19.5
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spinnaker.de/debian/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
