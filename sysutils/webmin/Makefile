@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.21 2000/11/23 22:32:10 andreas Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.22 2000/11/25 08:25:51 dougb Exp $
 #
 
 PORTNAME=	webmin
@@ -29,11 +29,12 @@ post-patch:
 	${WRKDIR}/webmin-${PORTVERSION}/bind8/config-freebsd-3.4
 
 do-install:
-	${MKDIR} ${LOCALBASE}/lib/webmin
-	${CP} -r ${WRKSRC}/* ${LOCALBASE}/lib/webmin
-	@cd ${LOCALBASE}/lib/webmin && find . -name "*.orig" -print \
+	@${MKDIR} ${PREFIX}/lib/webmin
+	@${CP} -r ${WRKSRC}/* ${PREFIX}/lib/webmin
+	@cd ${PREFIX}/lib/webmin && find . -name "*.orig" -print \
 		| xargs ${RM}
-	@cd ${LOCALBASE}/lib/webmin && ./setup.sh
-	${MV} /tmp/webmin.sh ${LOCALBASE}/etc/rc.d/webmin.sh
+	@cd ${PREFIX}/lib/webmin && ./setup.sh
+	@${MV} /tmp/webmin.sh ${PREFIX}/etc/rc.d/webmin.sh
+	@${CHMOD} 554 ${PREFIX}/etc/rc.d/webmin.sh
 
 .include <bsd.port.mk>
