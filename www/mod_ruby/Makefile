@@ -2,7 +2,7 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.4 2000/08/25 09:59:15 knu Exp $
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.5 2000/09/07 07:44:38 knu Exp $
 #
 
 PORTNAME=	mod_ruby
@@ -22,11 +22,13 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 APXS=		${LOCALBASE}/sbin/apxs
 
+CONFIGURE_ARGS=	--apxs="${APXS}"
+
 DOCS_EN=	ChangeLog README.en
 DOCS_JA=	README.ja
 
 do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} Makefile.RB
+	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${RUBY} Makefile.RB ${CONFIGURE_ARGS}
 
 do-install:
 	${APXS} -i -A -n ruby ${WRKSRC}/mod_ruby.so
