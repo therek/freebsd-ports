@@ -2,11 +2,12 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn/Makefile,v 1.46 2001/03/11 01:18:51 des Exp $
+# $FreeBSD: ports/news/inn/Makefile,v 1.47 2001/05/04 21:40:06 des Exp $
 #
 
 PORTNAME=	inn
 PORTVERSION=	2.3.2
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.isc.org/isc/inn/
 
@@ -60,7 +61,7 @@ MAN8=	actsync.8 actsyncd.8 archive.8 batcher.8 buffchan.8 cnfsheadconf.8 \
 
 EXTRA=	${WRKSRC}/HISTORY ${WRKSRC}/INSTALL ${WRKSRC}/LICENSE
 
-INN_INCLUDES=	clibrary.h config.h libinn.h storage.h
+INN_INCLUDES=	clibrary.h config.h configdata.h dbz.h libinn.h storage.h
 
 pre-install:
 	${MKDIR} ${INN_NEWSSPOOL}
