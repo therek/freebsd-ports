@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.63 2000/02/29 14:25:06 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.64 2000/03/02 10:14:41 rse Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -123,8 +123,8 @@ certificate:
 	&& ${MAKE} certificate TYPE=${TYPE} CRT=${CRT} KEY=${KEY}
 
 post-install:
-	@${RM} -f ${PREFIX}/etc/apache/access.conf*
-	@${RM} -f ${PREFIX}/etc/apache/srm.conf*
+	@${RM} -f ${PREFIX}/etc/apache/access.conf.*
+	@${RM} -f ${PREFIX}/etc/apache/srm.conf.*
 	@if [ ! -f ${PREFIX}/etc/rc.d/apache.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/apache.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/apache.sh; \
