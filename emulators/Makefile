@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.47 2000/02/23 00:50:48 asami Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.48 2000/03/29 21:25:41 knu Exp $
 #
 
     SUBDIR += aftp
@@ -24,6 +24,7 @@
     SUBDIR += pcemu
     SUBDIR += prodosemu
     SUBDIR += quasi88
+    SUBDIR += rtc
     SUBDIR += sim
     SUBDIR += sim6811
     SUBDIR += snes9x
