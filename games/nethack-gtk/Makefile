@@ -2,14 +2,13 @@
 # Date created:				June 15, 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.2 2000/08/03 09:23:40 asami Exp $
+# $FreeBSD: ports/games/nethack-gtk/Makefile,v 1.3 2000/10/05 06:36:15 reg Exp $
 #
 
 PORTNAME=	nethack
 PORTVERSION=	1.1.5
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.jnethack.org/pub/jnethack/ \
-		ftp://ftp.uu.net/systems/gnu/nethack/
+MASTER_SITES=	ftp://ftp.jnethack.org/pub/jnethack/
 PKGNAMESUFFIX=	-gtk
 DISTNAME=	${PORTNAME}-3.2.2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${GTK_PATCH}
