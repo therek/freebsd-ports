@@ -3,7 +3,7 @@
 # Date created:			Mar 27, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/poedit/Makefile,v 1.1 2001/03/27 15:45:18 ijliao Exp $
 #
 
 PORTNAME=	poedit
@@ -21,5 +21,12 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 
 USE_GMAKE=	yes
+WANT_GNOME=	yes
+
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+.else
+CONFIGURE_ARGS=	--without-gnome
+.endif
 
 .include <bsd.port.mk>
