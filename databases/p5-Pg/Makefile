@@ -2,11 +2,11 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.21 2000/04/08 22:48:47 mharo Exp $
+# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.22 2000/06/17 02:36:31 will Exp $
 #
 
 PORTNAME=	Pg
-PORTVERSION=	1.8.1
+PORTVERSION=	1.9.0
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Pg
@@ -15,11 +15,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS= 	${LOCALBASE}/pgsql/lib/libpq.a:${PORTSDIR}/databases/postgresql
+LIB_DEPENDS=   	pq.2:${PORTSDIR}/databases/postgresql
 
 USE_PERL5=	yes
 
-POSTGRES_HOME?=	${PREFIX}/pgsql
+POSTGRES_HOME?=	${LOCALBASE}/pgsql
 MAKE_ENV+=	POSTGRES_HOME=${POSTGRES_HOME}
 
 MAN3=		Pg.3
