@@ -2,7 +2,7 @@
 # Date created:		6 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.22 2000/06/16 08:46:41 sobomax Exp $
+# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.23 2000/06/16 21:50:47 asami Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # version number) when updating this port.  Thank you.
@@ -19,6 +19,7 @@ WRKSRC=         ${WRKDIR}/jpeg-6b
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static
+CONFIGURE_ENV=	LIBTOOL=${LIBTOOL}
 MAN1=		cjpeg.1 djpeg.1 jpegtran.1 rdjpgcom.1 wrjpgcom.1
 USE_LIBTOOL=	yes
 
