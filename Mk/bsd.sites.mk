@@ -2,7 +2,7 @@
 #
 # This file does not have any designated maintainer, so feel free to
 # commit to it yourself.  However, it is generally a good idea to
-# notify the principle maintainer in case you have a change to one of
+# notify the principal maintainer in case you have a change to one of
 # the software environments (KDE, GNOME, etc.).
 #
 # Also, this file is included from bsd.port.mk for all invocations, so
@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.111 2002/10/13 19:47:45 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.112 2002/10/14 13:21:38 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
