@@ -3,7 +3,7 @@
 # Date created:			Feb 27, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/uds/Makefile,v 1.3 2001/04/14 20:09:50 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uds
@@ -13,7 +13,6 @@ MASTER_SITES=	http://frost.flewid.de/dist/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:         19 Sep 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gomoku.app/Makefile,v 1.3 2001/01/16 17:30:31 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gomoku.app
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xg
 RUN_DEPENDS=	${XGPSBUNDLEDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-xgps:${PORTSDIR}/x11-toolkits/gnustep-xgps
 
 PREFIX=		${LOCALBASE}/GNUstep
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
 ALL_TARGET=

@@ -2,7 +2,7 @@
 # Date created:				8 May 2000
 # Whom:					gelf
 #
-# $FreeBSD: ports/editors/fte/Makefile,v 1.2 2000/06/14 13:21:11 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		fte
@@ -20,7 +20,6 @@ BUILD_DEPENDS=  	unzip:${PORTSDIR}/archivers/unzip
 EXTRACT_CMD=		unzip
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=
-USE_NEWGCC=		yes
 USE_XLIB=		yes
 
 ADDITIONAL_DOCS=	about.html \

@@ -2,7 +2,7 @@
 # Date Created:		20 July 1999
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/graphics/libdjvu++/Makefile,v 1.4 2000/06/16 21:51:09 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libdjvu++
@@ -14,7 +14,6 @@ MAINTAINER=	mi@aldan.algebra.com
 
 INSTALLS_SHLIB=	yes
 IS_INTERACTIVE=	some think, the AT&T license needs to be acked by the user
-USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ENV=	CXX=${CXX}
 CONFIGURE_ARGS=	--with-cxxflag="${CXXFLAGS}"

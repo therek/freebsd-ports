@@ -2,7 +2,7 @@
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.18 2001/03/23 11:57:07 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	plotutils
@@ -15,7 +15,6 @@ MAINTAINER=	chuckr@FreeBSD.org
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
-USE_NEWGCC=	yes
 USE_MOTIF=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
