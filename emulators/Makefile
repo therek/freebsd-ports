@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.50 2000/06/07 16:26:29 sobomax Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.51 2000/06/10 02:15:45 will Exp $
 #
 
     SUBDIR += aftp
@@ -12,6 +12,7 @@
     SUBDIR += dlx
     SUBDIR += fmsx
     SUBDIR += frodo
+    SUBDIR += gsnes9x/
     SUBDIR += hfs
     SUBDIR += hfsutils
     SUBDIR += ines
