@@ -2,14 +2,15 @@
 # Date created:		01 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <liouxFreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/understand_c/Makefile,v 1.1 2001/03/09 23:07:29 lioux Exp $
 #
 
 PORTNAME=	understand_c
-PORTVERSION=	14b103
+PORTVERSION=	1.4.104
+PORTEPOCH=	1
 CATEGORIES=	devel linux
 MASTER_SITES=	http://www.scitools.com/ftp/pub/download/understand_c/latest/
-DISTNAME=	und_c-${PORTVERSION}-linux
+DISTNAME=	und_c-14b104-linux
 
 MAINTAINER=	liouxFreeBSD.org
 
@@ -17,8 +18,6 @@ ONLY_FOR_ARCHS=	i386
 USE_LINUX=	yes
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
-
-RESTRICTED=	Unsure about the license conditions on redistribution
 
 PREFIX_LINUX?=	${LINUXBASE}
 STRIP=		${LINUXBASE}/usr/bin/strip
@@ -52,7 +51,9 @@ do-patch:
 PLIST_SUB=	PREFIX_LINUX=${PREFIX_LINUX} \
 		LINUXBASE="${LINUXBASE}" \
 		ECHO="${ECHO}" FMT="${FMT}" \
-		MKDIR="${MKDIR}" LN="${LN} -sf" RM="${RM} -f"
+		MKDIR="${MKDIR}" LN="${LN} -sf" \
+		RM="${RM} -f" RMDIR="${RMDIR}" \
+		TRUE="${TRUE}"
 
 # Create hidden structure, the program is hardcoded.
 # Therefore, we will install it according to hier
