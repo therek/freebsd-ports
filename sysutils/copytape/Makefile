@@ -3,14 +3,14 @@
 # Date created:		23 October 1998
 # Whom:			Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/sysutils/copytape/Makefile,v 1.3 1999/08/31 01:59:39 peter Exp $
+# $FreeBSD: ports/sysutils/copytape/Makefile,v 1.4 1999/08/31 06:50:45 mharo Exp $
 #
 
 DISTNAME=		copytape
 PKGNAME=		copytape-1.0
 CATEGORIES=		sysutils
-MASTER_SITE=		${MASTER_SITE_COMP_SOURCES}
-MASTER_SITE_SUBDIR=	unix/volume8
+MASTER_SITES=		${MASTER_SITE_COMP_SOURCES}
+MASTER_SITE_SUBDIR=	unix/volume10
 EXTRACT_SUFX=		.Z
 
 MAINTAINER=		ports@FreeBSD.org
