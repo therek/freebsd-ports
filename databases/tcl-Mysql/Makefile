@@ -2,12 +2,12 @@
 # Date created:				24 August 1999
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.7 2001/01/16 17:30:12 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcl-sql
 PORTVERSION=	20000114
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	databases ${TCL_NODOT}
 MASTER_SITES=	http://www.binevolve.com/~tdarugar/tcl-sql/download/
 EXTRACT_SUFX=	.tgz
@@ -35,7 +35,8 @@ do-install:
 		> ${SQL_DIR}/pkgIndex.tcl
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/tcl-MySQL/
-	${INSTALL_DATA} ${WRKSRC}/docs/*.* ${PREFIX}/share/doc/tcl-MySQL/
+	${INSTALL_DATA} ${WRKSRC}/docs/*.html ${WRKSRC}/docs/*.txt \
+		${PREFIX}/share/doc/tcl-MySQL/
 .endif
 
 .include <bsd.port.mk>
