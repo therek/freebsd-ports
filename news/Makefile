@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.68 2001/09/14 13:50:58 markp Exp $
+# $FreeBSD$
 #
 
     SUBDIR += PicMonger
@@ -39,6 +39,7 @@
     SUBDIR += pan
     SUBDIR += pgpmoose
     SUBDIR += plor
+    SUBDIR += pyne
     SUBDIR += rkive
     SUBDIR += slnr
     SUBDIR += slrn
