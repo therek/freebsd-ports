@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python15/Makefile,v 1.68 2000/09/08 11:56:11 tg Exp $
+# $FreeBSD: ports/lang/python15/Makefile,v 1.69 2000/10/08 02:42:11 asami Exp $
 #
 
 PORTNAME=	python
@@ -93,7 +93,7 @@ pre-install:
 	${INSTALL_DATA} ${WRKSRC}/Lib/${platform}/*                    \
 		${PREFIX}/lib/python1.5/${platform}/
 .endfor
-	@sort -r -o ${PLIST} ${PLIST_TK} ${PLIST_GMP} ${PLIST_TOOLS} ${PKGDIR}/pkg-plist
+	@sort -r -o ${PLIST} ${PLIST_GMP} ${PLIST_TOOLS} ${PKGDIR}/pkg-plist
 
 post-install:
 	strip ${PREFIX}/bin/python
