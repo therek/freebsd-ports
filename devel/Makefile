@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.360 2000/10/31 18:39:21 jim Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.361 2000/11/02 03:03:24 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -280,6 +280,7 @@
     SUBDIR += robodoc
     SUBDIR += rpc2
     SUBDIR += ruby-amstd
+    SUBDIR += ruby-byaccr
     SUBDIR += ruby-date2
     SUBDIR += ruby-filelock
     SUBDIR += ruby-intl
