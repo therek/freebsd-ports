@@ -3,7 +3,7 @@
 # Date Created:			  2 December 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/devel/stlport/Makefile,v 1.12 2001/05/30 22:27:35 obrien Exp $
+# $FreeBSD: ports/devel/stlport/Makefile,v 1.13 2001/08/21 22:54:12 obrien Exp $
 #
 
 PORTNAME=	stlport
@@ -14,6 +14,12 @@ MASTER_SITES=	http://www.stlport.com/archive/  \
 DISTNAME=	STLport-${PORTVERSION:S/.b/-b/}
 
 MAINTAINER=	ports@FreeBSD.org
+
+.include <bsd.port.pre.mk>
+
+.if !exists(/usr/include/wchar.h)
+BROKEN=		"requires /usr/include/wchar.h for compilation"
+.endif
 
 WRKSRC=		${WRKDIR}/STLport-${PORTVERSION:S/.b/b/}/src
 MAKEFILE=	gcc.mak
@@ -44,4 +50,5 @@ do-install:
 	cd ${WRKSRC}/../doc ; ${INSTALL_MAN} *.css *.html ${PREFIX}/share/doc/html/stlport
 	cd ${WRKSRC}/../doc ; ${INSTALL_MAN} images/* ${PREFIX}/share/doc/html/stlport/images
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
+
