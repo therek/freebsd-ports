@@ -2,13 +2,13 @@
 # Date created:		Sun Jul 18 21:51:23 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD: ports/misc/rpm2cpio/Makefile,v 1.2 1999/08/25 07:22:29 obrien Exp $
+# $FreeBSD: ports/misc/rpm2cpio/Makefile,v 1.3 2000/04/14 08:46:36 asami Exp $
 #
 
 PORTNAME=	rpm2cpio
 PORTVERSION=	1.0
 CATEGORIES=	misc
-MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/
+MASTER_SITES=	http://www.iagora.com/~espel/
 DISTFILES=	${PORTNAME}
 
 MAINTAINER=	nox@jelal.kn-bremen.de
