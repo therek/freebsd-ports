@@ -2,7 +2,7 @@
 # Date created:         25 September 1996
 # Whom:                 igor@zynaps.ru
 #
-# $FreeBSD: ports/net/trafshow/Makefile,v 1.15 2000/10/29 22:27:34 jeh Exp $
+# $FreeBSD: ports/net/trafshow/Makefile,v 1.16 2000/10/29 22:31:16 jeh Exp $
 #
 
 PORTNAME=	trafshow
@@ -16,7 +16,7 @@ MAINTAINER=     jseger@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
-LIB_DEPENDS=	ncurses.4:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
 .endif
 
 GNU_CONFIGURE=	yes

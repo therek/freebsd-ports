@@ -2,7 +2,7 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/kcd/Makefile,v 1.6 2000/08/20 10:21:01 will Exp $
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.7 2000/08/21 20:54:42 dannyboy Exp $
 #
 
 PORTNAME=	kcd
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
-LIB_DEPENDS=	ncurses.4:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
 .endif
 
 USE_NEWGCC=	yes

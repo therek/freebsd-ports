@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.5 2000/04/21 08:19:22 mharo Exp $
+# $FreeBSD: ports/shells/flash/Makefile,v 1.6 2000/06/22 05:52:06 will Exp $
 #
 
 PORTNAME=	flash
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 # outdated version of ncurses in non-CURRENT
 .if ${OSVERSION} < 400000
-LIB_DEPENDS=	ncurses.4:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
 .endif
 
 GNU_CONFIGURE=	yes
