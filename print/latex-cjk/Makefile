@@ -2,14 +2,14 @@
 # Date created:		5 Sep 1999
 # Whom:			Keith Jang (keith@freebsd.sinica.edu.tw)
 #
-# $FreeBSD: ports/chinese/CJK/Makefile,v 1.12 2000/02/01 16:26:39 foxfair Exp $
+# $FreeBSD: ports/chinese/CJK/Makefile,v 1.13 2000/04/13 08:27:48 asami Exp $
 #
 
 PORTNAME=	CJK
 PORTVERSION=	4.3.0
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
-DISTFILES=	cjk-20000127.tar.gz
+DISTFILES=	cjk-20000418.tar.gz
 
 MAINTAINER=	keith@freebsd.sinica.edu.tw
 
