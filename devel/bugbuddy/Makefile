@@ -2,14 +2,14 @@
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.15 2001/05/04 21:39:31 ade Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.16 2001/05/11 16:36:17 ade Exp $
 #
 
 PORTNAME=	bugbuddy
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.3
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	unstable/sources/bug-buddy
+MASTER_SITE_SUBDIR=	stable/sources/bug-buddy
 DISTNAME=	bug-buddy-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
