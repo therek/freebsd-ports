@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.55 2004/09/03 16:25:11 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.56 2004/09/09 20:31:48 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -290,6 +290,15 @@ check-makevars::
 #
 
 # From here, the port is using bsd.java.mk v2.0
+
+# Error checking: defined JAVA_{HOME,PORT,PORT_VERSION,PORT_VENDOR,PORT_OS}
+.		for variable in JAVA_HOME JAVA_PORT JAVA_PORT_VERSION JAVA_PORT_VENDOR JAVA_PORT_OS
+.			if defined(${variable})
+check-makevars::
+	@${ECHO_CMD} "${PKGNAME}: Environement error: \"${variable}\" should not be defined."
+	@${FALSE}
+.			endif
+.		endfor
 
 # Error checking: JAVA_VERSION
 _JAVA_VERSION_LIST_REGEXP!=		${ECHO_CMD} "${_JAVA_VERSION_LIST}" | ${SED} "s/ /\\\|/g"
