@@ -3,7 +3,7 @@
 # Date created:         May 18, 1999
 # Whom:                 NAKAJI Hiroyuki
 #
-# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.6 1999/12/10 20:31:53 imura Exp $
+# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.7 1999/12/27 21:28:22 steve Exp $
 #
 
 DISTNAME=	gnuplot371+-1.1.9
@@ -39,7 +39,7 @@ CONFIGURE_ARGS=	--exec-prefix=${PREFIX} \
 		--libdir=${LOCALBASE}/lib \
 		--with-x --without-linux-vga \
 		--with-gd=${LOCALBASE}/lib \
-		--with-gnu-readline --with-lasergnu --with-png \
+		--with-readline=gnu --with-lasergnu --with-png \
 		--with-vflib=${LOCALBASE}/lib
 
 MAN1=		gnuplot.1 lasergnu.1
