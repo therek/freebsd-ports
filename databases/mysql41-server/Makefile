@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.103 2001/01/25 00:44:33 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.104 2001/01/25 01:03:09 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -129,8 +129,8 @@ CONFIGURE_ARGS+=--without-server
 MAKE_ENV=	CLIENT_ONLY="${CLIENT_ONLY}"
 
 post-install:
-	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/mysql-client.sh > ${PREFIX}/etc/rc.d/mysql-client.sh
-	@${CHMOD} 750 ${PREFIX}/etc/rc.d/mysql-client.sh
+	@${SED} "s|%%PREFIX%%|${PREFIX}|g" < ${FILESDIR}/mysql-client.sh > ${PREFIX}/etc/rc.d/00mysql-client.sh
+	@${CHMOD} 750 ${PREFIX}/etc/rc.d/00mysql-client.sh
 
 .endif
 
