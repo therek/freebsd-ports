@@ -2,18 +2,16 @@
 # Date created:				30 March 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/www/cgiparse/Makefile,v 1.13 2000/08/19 20:17:06 steve Exp $
+# $FreeBSD: ports/www/cgiparse/Makefile,v 1.14 2000/09/22 10:16:28 kris Exp $
 #
 
 PORTNAME=	cgiparse
-PORTVERSION= 	0.9a
+PORTVERSION= 	0.9b
 CATEGORIES=	devel www
 MASTER_SITES=	http://resnet.uoregon.edu/~gurney_j/jmpc/dist/	\
 		http://www.funkthat.com/~jmg/
 
 MAINTAINER=	jmg@FreeBSD.org
-
-BROKEN=		"Install script contains errors"
 
 LIB_DEPENDS=	mime.1:${PORTSDIR}/devel/mime:install
 
