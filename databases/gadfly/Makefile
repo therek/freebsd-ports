@@ -2,7 +2,7 @@
 # Date created:         30 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/gadfly/Makefile,v 1.6 2000/09/14 12:05:41 tg Exp $
+# $FreeBSD: ports/databases/gadfly/Makefile,v 1.7 2001/01/16 17:30:10 sobomax Exp $
 #
 
 PORTNAME=	gadfly
@@ -15,11 +15,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_PYTHON=	yes
 NO_WRKSUBDIR=	yes
+NO_BUILD=	yes
 
 GADFLYDIR=	${PYTHON_SITELIBDIR}/gadfly
-GADFLYDOCDIR=	${PREFIX}/share/doc/gadfly
-
-do-build:
 
 do-install:
 	${MKDIR} ${GADFLYDIR}
@@ -29,11 +27,11 @@ do-install:
 	(cd ${GADFLYDIR}; ${PYTHON_CMD} gfinstall.py)
 	@${PYTHON_CMD} ${PYTHON_LIBDIR}/compileall.py ${GADFLYDIR}
 	@${PYTHON_CMD} -O ${PYTHON_LIBDIR}/compileall.py ${GADFLYDIR}
-	${MKDIR} ${GADFLYDOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${GADFLYDOCDIR}
 .if !defined(${NOPORTDOCS})
-	${INSTALL_DATA} ${WRKSRC}/*.html ${GADFLYDOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/gadfly.JPG ${GADFLYDOCDIR}
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/*.html ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/gadfly.JPG ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
