@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/java/Makefile,v 1.36 2001/08/27 18:58:45 sobomax Exp $
 #
     SUBDIR += xalan-j
 
@@ -37,6 +37,7 @@
     SUBDIR += linux-jdk
     SUBDIR += linux-jdk13
     SUBDIR += linux-jdk14
+    SUBDIR += mmake
     SUBDIR += netrexx
     SUBDIR += openjit
     SUBDIR += perltools
