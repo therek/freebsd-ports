@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.5 2001/04/14 20:43:29 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.6 2001/11/04 06:18:26 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -110,7 +110,7 @@ QTCGFLIBS?=
 
 # Qt 3.x common stuff
 MOC?=			${X11BASE}/bin/moc
-LIB_DEPENDS+=	qt:${PORTSDIR}/x11-toolkits/qt
+LIB_DEPENDS+=	qt:${PORTSDIR}/x11-toolkits/qt-copy
 USE_NEWGCC=		yes
 QTCPPFLAGS+=	-I/usr/include -I${LOCALBASE}/include -I${PREFIX}/include \
 				-I${X11BASE}/include/qt
