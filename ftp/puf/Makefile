@@ -3,17 +3,17 @@
 # Date created:			Feb 6, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/puf/Makefile,v 1.3 2001/02/10 05:27:42 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	puf
-PORTVERSION=	0.91b6a
+PORTVERSION=	0.93.1
 CATEGORIES=	ftp
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/b/beta/}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
