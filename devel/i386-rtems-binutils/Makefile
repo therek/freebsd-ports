@@ -2,15 +2,14 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.1 2000/07/10 04:31:57 steve Exp $
+# $FreeBSD: ports/devel/i386-rtems-binutils/Makefile,v 1.2 2000/09/18 15:15:53 ade Exp $
 #
 
 PORTNAME=	binutils
 PORTVERSION=	2.10
 PORTREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
-		http://rtems.thehousleys.net/
+MASTER_SITES=	http://rtems.thehousleys.net/
 DISTFILES=	${BINNAME}.tar.gz
 PATCHFILES=	${BINNAME}-rtems-20000726.diff.gz
 PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
