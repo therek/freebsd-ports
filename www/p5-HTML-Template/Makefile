@@ -2,7 +2,7 @@
 # Date Created:				26 Oct, 2000
 # Whom:					Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-HTML-Template/Makefile,v 1.1 2000/10/27 01:54:27 kuriyama Exp $
+# $FreeBSD: ports/www/p5-HTML-Template/Makefile,v 1.2 2000/12/27 01:34:18 kuriyama Exp $
 #
 
 PORTNAME=	HTML-Template
@@ -14,14 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		HTML::Template.3
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

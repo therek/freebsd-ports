@@ -2,7 +2,7 @@
 # Date created:				April 27th 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.13 2000/10/16 14:26:20 kuriyama Exp $
+# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.14 2000/11/23 04:02:49 kuriyama Exp $
 #
 
 PORTNAME=	p5-MIME-Tools
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Mail/Header.pm:${PORTS
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64	\
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/IO/Wrap.pm:${PORTSDIR}/devel/p5-IO-stringy
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=	MIME::Entity.3 \
 	MIME::Decoder::QuotedPrint.3 \
@@ -34,8 +34,5 @@ MAN3=	MIME::Entity.3 \
 	MIME::Decoder::NBit.3		MIME::Head.3 \
 	MIME::Decoder.3			MIME::Field::ContDisp.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

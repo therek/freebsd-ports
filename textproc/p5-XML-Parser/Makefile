@@ -2,7 +2,7 @@
 # Date created:		15 Nov 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.12 2000/10/25 02:24:38 kuriyama Exp $
+# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.13 2000/10/26 12:37:25 knu Exp $
 #
 
 PORTNAME=	XML-Parser
@@ -18,15 +18,13 @@ MAINTAINER=	kuriyama@FreeBSD.org
 
 LIB_DEPENDS=	expat.2:${PORTSDIR}/textproc/expat2
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
+CONFIGURE_ARGS=	EXPATLIBPATH=${LOCALBASE}/lib EXPATINCPATH=${LOCALBASE}/include
 
 MAN3=		XML::Parser.3 XML::Parser::Expat.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}" \
-		EXPATLIBPATH=${LOCALBASE}/lib EXPATINCPATH=${LOCALBASE}/include
+post-configure:
 	@${PERL} -i -pe 's/^(CC = ).*/$$1 ${CC}/;' \
 		-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' ${WRKSRC}/Expat/Makefile
 
