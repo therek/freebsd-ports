@@ -2,7 +2,7 @@
 # Date created:				1 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/mirrormagic/Makefile,v 1.6 2000/04/14 12:26:06 asami Exp $
+# $FreeBSD: ports/games/mirrormagic/Makefile,v 1.7 2000/08/03 09:23:39 asami Exp $
 #
 
 PORTNAME=	mirrormagic
@@ -23,7 +23,7 @@ post-extract:
 	@(cd ${WRKDIR}; ${CP} ${FILESDIR}/RAY.* .; uudecode *.uu; ${RM} *.uu)
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/mirrormagic ${PREFIX}/bin
+	${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/mirrormagic ${PREFIX}/bin
 	@${MKDIR} ${PREFIX}/share/mirrormagic/graphics
 	${INSTALL_DATA} ${WRKSRC}/graphics/* ${PREFIX}/share/mirrormagic/graphics
 	@${MKDIR} ${PREFIX}/share/mirrormagic/sounds
@@ -35,7 +35,8 @@ do-install:
 .for file in CHANGES COPYRIGHT DISCLAIMER README
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/mirrormagic
 .endfor
-#	@${CHMOD} a=rwx ${PREFIX}/share/mirrormagic/data
-	@${CHMOD} a=rw  ${PREFIX}/share/mirrormagic/data/RAY.*
+#	@${CHMOD} 664 ${PREFIX}/share/mirrormagic/data
+	@${CHOWN} root:games ${PREFIX}/share/mirrormagic/data/RAY.*
+	@${CHMOD} 664 ${PREFIX}/share/mirrormagic/data/RAY.*
 
 .include <bsd.port.mk>
