@@ -1,3 +1,7 @@
-@comment $FreeBSD: ports/security/nmapfe/pkg/PLIST,v 1.6 1999/08/31 01:51:22 peter Exp $
+@comment $FreeBSD: ports/security/nmapfe/pkg-plist,v 1.7 1999/09/10 06:26:35 obrien Exp $
 bin/nmapfe
 bin/xnmap
+share/gnome/apps/Utilities/nmapfe.desktop
+@dirrm share/gnome/apps/Utilities
+@dirrm share/gnome/apps
+@dirrm share/gnome
