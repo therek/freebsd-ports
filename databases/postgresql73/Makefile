@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.79 2001/04/25 17:17:55 olgeni Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.80 2001/05/09 06:00:36 vanilla Exp $
 #
 
 PORTNAME=	postgresql
@@ -87,11 +87,7 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		NO_OPENSSL="${NO_OPENSSL}" \
 		DISTNAME="${DISTNAME}"
 
-.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
-.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
-.endif
-
-pre-extract:
+pre-fetch:
 	@ ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.postgresql
 
 pre-install:
@@ -189,5 +185,9 @@ post-clean:
 	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 post-extract: ${POSTEXTRACT}
+
+.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
+.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
+.endif
 
 .include <bsd.port.mk>
