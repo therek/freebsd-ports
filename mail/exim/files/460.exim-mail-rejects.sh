@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/exim/files/460.exim-mail-rejects.sh,v 1.1 2003/09/10 13:49:09 sheldonh Exp $
 #
 # Check for rejected mail
 # Log lines that end with ' : IGNORE' will not be reported
@@ -18,7 +18,7 @@ fi
 
 exim_status_mail_rejects_enable=${exim_status_mail_rejects_enable:-"YES"}
 exim_status_mail_rejects_logs=${exim_status_mail_rejects_logs:-2}
-exim_rejectlog=${exim_rejectlog:-"/var/log/exim/rejectlog"}
+exim_rejectlog=${exim_rejectlog:-"%%LOGDIR%%/rejectlog"}
 
 case "$exim_status_mail_rejects_enable" in
     [Yy][Ee][Ss])

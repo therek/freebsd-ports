@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.5 2003/06/02 13:17:43 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/files/exim.sh,v 1.6 2003/09/10 13:49:09 sheldonh Exp $
 #
 
 # PROVIDE: mail
@@ -24,7 +24,7 @@ rcvar=`set_rcvar`
 
 command=%%PREFIX%%/sbin/exim
 pidfile=/var/run/exim.pid
-required_dirs=/var/log/exim
+required_dirs=%%LOGDIR%%
 required_files=%%PREFIX%%/etc/exim/configure
 
 start_precmd=start_precmd
