@@ -2,7 +2,7 @@
 # Date created:		06 September 2001
 # Whom:			mb@imp.ch
 #
-# $FreeBSD: ports/security/saferpay/Makefile,v 1.1 2001/09/06 22:39:15 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	saferpay
@@ -12,7 +12,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://www.saferpay.com/download/
 DISTFILES=	${PORTNAME}_${PORTVERSION}_linux-g++_src.tar.gz
 
-MAINTAINER=	mb@imp.ch
+MAINTAINER=	mbr@FreeBSD.org
 
 MAKEFILE=	${WRKSRC}/saferpay/Makefile
 
@@ -20,11 +20,6 @@ USE_GMAKE=	yes
 USE_OPENSSL=	yes
 INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}
-
-pre-patch:
-	@${CHMOD} 644 ${MAKEFILE}
-	@${CP} ${MAKEFILE} ${MAKEFILE}.orig
-	@${SED} -e 's%.$$%%' < ${MAKEFILE}.orig > ${MAKEFILE}
 
 .if !defined(WITH_P5_API)
 pre-build:
