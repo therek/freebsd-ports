@@ -2,28 +2,22 @@
 # Date created:				Wed Jan  3 12:54:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Box/Makefile,v 1.2 2001/03/01 06:38:12 vanilla Exp $
+# $FreeBSD: ports/mail/p5-Mail-Box/Makefile,v 1.3 2001/05/10 01:20:50 vanilla Exp $
 #
 
 PORTNAME=	Mail-Box
-PORTVERSION=	1.111
+PORTVERSION=	1.319
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/MIME/Entity.pm:${PORTSDIR}/mail/p5-MIME-Tools \
 		${SITE_PERL}/Mail/Internet.pm:${PORTSDIR}/mail/p5-Mail-Tools \
 		${SITE_PERL}/Date/Parse.pm:${PORTSDIR}/devel/p5-TimeDate
 RUN_DEPENDS=	${BUILD_DEPENDS}
-
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 500007
-BROKEN=		"Requires Perl 5.6.0 for 'our' keyword"
-.endif
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
@@ -38,8 +32,14 @@ MAN3=		Mail::Box.3 \
 		Mail::Box::Mbox.3 \
 		Mail::Box::Mbox::Message.3 \
 		Mail::Box::Message.3 \
-		Mail::Box::Thread.3 \
 		Mail::Box::Threads.3 \
-		Mail::Box::Tie.3
+		Mail::Box::Tie.3 \
+		Mail::Box::Tie::ARRAY.3 \
+		Mail::Box::Tie::HASH.3 \
+		Mail::Message.3
 
-.include <bsd.port.post.mk>
+post-patch:
+	${PERL} -pi -e 's/^our\s+([\$$\@]\w+)/use vars qw($$1);$$1/' \
+		${WRKSRC}/Message.pm ${WRKSRC}/Message/Body.pm
+
+.include <bsd.port.mk>
