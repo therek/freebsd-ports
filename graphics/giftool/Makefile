@@ -3,7 +3,7 @@
 # Date created:        14 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/giftool/Makefile,v 1.7 2000/01/07 02:26:56 nakai Exp $
+# $FreeBSD: ports/graphics/giftool/Makefile,v 1.8 2000/03/04 10:57:30 nakai Exp $
 #
 
 DISTNAME=	giftool-1.0
@@ -17,14 +17,15 @@ NO_CDROM=	"Shareware"
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	giftool
 
-pre-patch:
 .if defined(RETVALUE)
+pre-patch::
 	@${ECHO_MSG} "Return value patch enabled....."
 EXTRA_PATCHES=	${FILESDIR}/patch-aa
 .endif
 .if defined(MALLOCSIZE)
+pre-patch::
 	@${ECHO_MSG} "Malloc size improve parch enabled....."
-EXTRA_PATCHES=	${FILESDIR}/patch-ab
+EXTRA_PATCHES+=	${FILESDIR}/patch-ab
 .endif
 
 do-install:
