@@ -2,7 +2,7 @@
 # Date created:        17 February 1999
 # Whom:                wagner@luthien.in-berlin.de
 #
-# $FreeBSD: ports/lang/m3gdb/Makefile,v 1.9 2000/06/28 15:35:58 jdp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	m3gdb
@@ -14,8 +14,6 @@ DISTFILES=	m3gdb-4.17.tar.gz \
 		m3gdb-fbsd-4.17.tar.gz
 
 MAINTAINER=	jdp@FreeBSD.org
-
-BROKEN=		"Does not compile"
 
 MAN1=		m3gdb.1
 MANCOMPRESSED=	yes
