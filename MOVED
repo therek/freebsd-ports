@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.117 2003/05/12 05:03:15 kiri Exp $
+# $FreeBSD: ports/MOVED,v 1.118 2003/05/12 05:12:34 kiri Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -319,3 +319,4 @@ www/nautilus-gtkhtml||2003-05-11|maintenance discontinued
 editors/xemacs21-mule-sumo||2003-05-12|needless since merged to xemacs-{mule-}packages
 japanese/xemacs21-sumo-canna||2003-05-12|needless since merged to xemacs-{mule-}packages
 japanese/xemacs21-sumo-canna+freewnn||2003-05-12|needless since merged to xemacs-{mule-}packages
+japanese/xemacs21-sumo-canna+wnn6||2003-05-12|needless since merged to xemacs-{mule-}packages
