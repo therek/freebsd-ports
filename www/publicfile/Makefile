@@ -2,7 +2,7 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/publicfile/Makefile,v 1.1.1.1 2000/01/28 16:41:08 nbm Exp $
+# $FreeBSD: ports/www/publicfile/Makefile,v 1.2 2000/04/10 00:06:42 cpiazza Exp $
 #
 
 PORTNAME=	publicfile
@@ -11,6 +11,8 @@ CATEGORIES=	ftp
 MASTER_SITES=	http://cr.yp.to/publicfile/
 
 MAINTAINER=	nbm@FreeBSD.org
+
+RUN_DEPENDS=	setuidgid:${PORTSDIR}/sysutils/daemontools
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
