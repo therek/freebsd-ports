@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.310 2004/01/18 07:32:12 adamw Exp $
+# $FreeBSD: ports/MOVED,v 1.311 2004/01/19 10:23:50 edwin Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -757,3 +757,6 @@ deskutils/libmrproject|deskutils/planner|2004-01-16|Project renamed
 net/isc-dhcp3||2004-01-18|Split in four partial slave ports
 www/mozilla-headers||2004-01-18|Headers are now installed as part of the main mozilla port
 www/mozilla-headers-devel||2004-01-18|Headers are now installed as part of the main mozilla port
+misc/sh-utils|sysutils/coreutils|2004-01-21|Merged into sysutils/coreutils port
+sysutils/fileutils|sysutils/coreutils|2004-01-21|Merged into sysutils/coreutils port
+textproc/textutils|sysutils/coreutils|2004-01-21|Merged into sysutils/coreutils port
