@@ -2,7 +2,7 @@
 # Date created:				05 Feb 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/net/vtun/Makefile,v 1.1 2000/07/02 08:31:21 will Exp $
+# $FreeBSD: ports/net/vtun/Makefile,v 1.2 2000/08/22 02:52:17 kevlo Exp $
 #
 
 PORTNAME=	vtun
@@ -25,7 +25,8 @@ CONFIGURE_ARGS+=--localstatedir=/var \
 		--with-ssl-headers=${LOCALBASE}/include/openssl \
 		--with-ssl-lib=${LOCALBASE}/lib \
 		--with-lzo-headers=${LOCALBASE}/include \
-		--with-lzo-lib=${LOCALBASE}/lib
+		--with-lzo-lib=${LOCALBASE}/lib \
+		--enable-lzo
 
 ALL_TARGET= 	vtund
 
