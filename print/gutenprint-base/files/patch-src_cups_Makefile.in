@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/print/gimp-print/files/patch-src_cups_Makefile.in,v 1.1 2003/02/18 02:53:23 naddy Exp $
 
 --- src/cups/Makefile.in.orig	Sat Jan 25 01:55:06 2003
 +++ src/cups/Makefile.in	Tue Feb 18 03:14:20 2003
@@ -13,4 +13,15 @@ $FreeBSD$
 +INCLUDES = @INCLUDES@ $(LIBGIMPPRINT_CFLAGS) @CUPS_CFLAGS@ 
  LIBPRINTUT = $(top_builddir)/lib/libprintut.la
  LIBS = $(INTLLIBS) @LIBS@
+ 
+--- src/cups/Makefile.in.orig	Fri Sep  5 02:16:48 2003
++++ src/cups/Makefile.in	Fri Sep  5 02:17:15 2003
+@@ -765,7 +765,7 @@
+ 	for language in $(LINGUAS) ; do \
+ 	  mkdir ppd/$$language ; \
+ 	  echo "$$language:" ; \
+-	  LANGUAGE=$$language ./genppd --prefix=ppd/$$language --catalog=`pwd`/catalog/share/locale ; \
++	  LANG=$$language ./genppd --prefix=ppd/$$language --catalog=`pwd`/catalog/share/locale ; \
+ 	done
+ 	$(RM) -r catalog
  
