@@ -2,12 +2,11 @@
 # Date created:		19 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/migemo-emacs20/Makefile,v 1.1 2001/03/17 07:52:05 kuriyama Exp $
+# $FreeBSD: ports/japanese/migemo-emacs20/Makefile,v 1.2 2001/03/27 22:43:48 sf Exp $
 #
 
 PORTNAME=	migemo
-PORTVERSION=	0.21
-PORTREVISION=	1
+PORTVERSION=	0.22
 CATEGORIES=	japanese elisp
 MASTER_SITES=   http://migemo.namazu.org/stable/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
