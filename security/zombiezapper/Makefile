@@ -2,7 +2,7 @@
 # Date created:			  19 Feb 2000
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/zombiezapper/Makefile,v 1.3 2000/04/21 08:19:17 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zombiezapper
@@ -13,6 +13,7 @@ DISTNAME=	zombie
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"Send a terminate command to Trinoo/TFN/Stacheldracht DDoS agents"
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/libnet-config:${PORTSDIR}/net/libnet/
 

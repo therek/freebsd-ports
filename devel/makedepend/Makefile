@@ -2,7 +2,7 @@
 # Date created:				August 15th 1997
 # Whom:					Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/devel/makedepend/Makefile,v 1.7 2000/11/22 10:20:10 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	makedepend
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=. OLD-VERSIONS/imap
 DISTNAME=	cyrus-imapd-2.0.9
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"A dependency generator for makefiles"
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/makedepend
 GNU_CONFIGURE=	YES

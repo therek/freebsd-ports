@@ -2,7 +2,7 @@
 # Date created:		19 September 2000
 # Whom:			roam@orbitel.bg
 #
-# $FreeBSD: ports/net/ghtool/Makefile,v 1.1 2000/10/23 10:50:06 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ghtool
@@ -14,6 +14,7 @@ DISTNAME=	ghmain.c
 EXTRACT_SUFX=
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"A command-line interface to the resolver library"
 
 WRKSRC=		${WRKDIR}
 

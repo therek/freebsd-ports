@@ -2,7 +2,7 @@
 # Date created:		13 December 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/games/gnarr/Makefile,v 1.1 2000/12/13 14:27:35 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnarr
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.sacredchao.net/freednd/gnarr/
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"A program for generating battle cries"
 
 MAN6=		gnarr.6
 

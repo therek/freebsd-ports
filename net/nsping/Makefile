@@ -2,7 +2,7 @@
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/nsping/Makefile,v 1.4 2000/11/25 08:13:43 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nsping
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	roam
 DISTFILES=	nsping.tar.gz
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"DNS \"ping\""
 
 MAN8=		nsping.8
 

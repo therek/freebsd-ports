@@ -2,7 +2,7 @@
 # Date created:				27 October 2000
 # Whom:					roam@orbitel.bg
 #
-# $FreeBSD: ports/sysutils/pslist/Makefile,v 1.3 2000/12/29 15:45:17 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pslist
@@ -11,6 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://ringwraith.online.bg/devel/sysutils/
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"A utility to view or send signals to processes with all their children"
 
 NO_BUILD=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				5 Nov 1997
 # Whom:					Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/textproc/texi2html/Makefile,v 1.9 2000/11/22 10:20:14 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	texi2html
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www.mathematik.uni-kl.de/~obachman/Texi2html/Distrib/
 
 MAINTAINER=	roam@FreeBSD.org
+COMMENT=	"Texinfo to HTML converter"
 
 USE_AUTOMAKE=	yes
 USE_AUTOCONF=	yes
