@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cftp
-# Version required:			0.9.3
 # Date created:				14 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/cftp/Makefile,v 1.8 2000/02/08 09:29:51 peter Exp $
+# $FreeBSD: ports/ftp/cftp/Makefile,v 1.9 2000/03/29 07:19:12 kris Exp $
 #
 
-DISTNAME=	cftp-0.9.3
+PORTNAME=	cftp
+PORTVERSION=	0.9.3
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.giga.or.at/pub/nih/cftp/ \
 		http://people.FreeBSD.org/~andy/distfiles/

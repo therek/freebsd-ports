@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mirror
-# Version required:	2.9
 # Date created:		15 May 1995
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/mirror/Makefile,v 1.13 2000/03/20 20:25:22 mharo Exp $
+# $FreeBSD: ports/ftp/mirror/Makefile,v 1.14 2000/04/04 01:31:29 will Exp $
 #
 
-DISTNAME=	mirror-2.9
+PORTNAME=	mirror
+PORTVERSION=	2.9
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://src.doc.ic.ac.uk/computing/archiving/mirror/
 

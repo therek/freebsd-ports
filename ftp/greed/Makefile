@@ -1,15 +1,15 @@
 # New ports collection makefile for: 	greed
-# Version required:	0.81+
 # Date created:		13 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/greed/Makefile,v 1.12 1999/08/25 05:55:10 obrien Exp $
+# $FreeBSD: ports/ftp/greed/Makefile,v 1.13 2000/03/08 00:32:44 cpiazza Exp $
 #
 
-DISTNAME=	greed.81p
-PKGNAME=	greed-0.81p
+PORTNAME=	greed
+PORTVERSION=	0.81p
 CATEGORIES=	ftp www
 MASTER_SITES=	http://www.public.asu.edu/~arturner/greed/
+DISTNAME=	greed.81p
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	yale-tftpd
-# Version required:	3.0
 # Date created:		Oct 8, 1994
 # Whom:			pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/yale-tftpd/Makefile,v 1.13 1999/08/25 05:55:28 obrien Exp $
 #
 
-DISTNAME=	yale-tftpd-3.0
+PORTNAME=	yale-tftpd
+PORTVERSION=	3.0
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.cert.dfn.de/pub/tools/net/yale-tftpd/
 

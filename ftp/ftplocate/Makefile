@@ -1,12 +1,12 @@
 # New ports collection makefile for:	Ftplocate
-# Version required:			2.01
 # Date created:				7 December 1999
 # Whom:					tung@turtle.ee.ncku.edu.tw
 #
-# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.6 2000/02/26 19:36:03 steve Exp $
+# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.7 2000/03/09 18:10:33 ade Exp $
 #
 
-DISTNAME=	ftplocate-2.01
+PORTNAME=	ftplocate
+PORTVERSION=	2.01
 CATEGORIES=	ftp www
 MASTER_SITES=	ftp://ftp.ee.ncku.edu.tw/pub/ftplocate/
 

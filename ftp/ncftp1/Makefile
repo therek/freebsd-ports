@@ -1,15 +1,15 @@
 # ex:ts=8
 # Ports collection makefile for:  ncftp
-# Version required: 0.0
 # Date created:			  20 Jun 1996
 # Whom:				  jkh
 #
-# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.13 2000/03/20 02:36:57 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp/Makefile,v 1.14 2000/03/22 00:27:20 obrien Exp $
 #
 
-DISTNAME=       ncftp-1.9.5
+PORTNAME=	ncftp
+PORTVERSION=	1.9.5
 CATEGORIES=	ftp
-MASTER_SITES=   ftp://ftp.ncftp.com/ncftp/
+MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 
 MAINTAINER=	obrien@FreeBSD.org
 

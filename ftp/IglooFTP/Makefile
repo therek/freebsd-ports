@@ -1,17 +1,17 @@
 # New ports collection makefile for:	IglooFTP
-# Version required:			0.6.1
 # Date created:				3 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.5 2000/03/29 07:19:10 kris Exp $
+# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.6 2000/03/29 09:02:04 will Exp $
 #
 
-DISTNAME=		IglooFTP-0.6.1.src
-PKGNAME=		IglooFTP-0.6.1
+PORTNAME=		IglooFTP
+PORTVERSION=		0.6.1
 CATEGORIES=		ftp
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			ftp://littleigloo.org/pub/iglooftp/
 MASTER_SITE_SUBDIR=	system/network/file-transfer
+DISTNAME=		${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=		will@FreeBSD.org
 

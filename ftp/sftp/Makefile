@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sftp
-# Version required:	0.7
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.2 2000/01/24 06:21:42 steve Exp $
+# $FreeBSD: ports/ftp/sftp/Makefile,v 1.3 2000/02/08 15:06:05 taoka Exp $
 #
 
-DISTNAME=	sftp-0.7
+PORTNAME=	sftp
+PORTVERSION=	0.7
 CATEGORIES=	ftp security
 MASTER_SITES=	ftp://ftp.xbill.org/pub/sftp/
 

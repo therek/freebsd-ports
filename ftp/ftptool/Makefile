@@ -1,16 +1,16 @@
 # New ports collection makefile for:	Ftptool
-# Version required:	4.6
 # Date created:		19 March 1996
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/ftptool/Makefile,v 1.8 1999/08/25 05:55:08 obrien Exp $
 #
 
-DISTNAME=	ftptool-4.6
+PORTNAME=	ftptool
+PORTVERSION=	4.6
 CATEGORIES=	ftp
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
-DISTFILES=	Ftptool4.6.tar.gz
+DISTFILES=	Ftptool${PORTVERSION}.tar.gz
 
 MAINTAINER=	janek@gaja.ipan.lublin.pl
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	moxftp
-# Version required:	2.2
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.25 1999/08/25 05:55:17 obrien Exp $
+# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.26 1999/08/31 06:44:04 mharo Exp $
 #
 
-DISTNAME=	moxftp-2.2
+PORTNAME=	moxftp
+PORTVERSION=	2.2
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://metalab.unc.edu/pub/X11/contrib/applications/ \
 	  	ftp://ftp.inria.fr/X/contrib-R5/applications/ \

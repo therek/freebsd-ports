@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gftp
-# Version required:	2.0.5a
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.8 1999/11/14 00:54:42 cpiazza Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.9 1999/11/23 03:16:50 billf Exp $
 #
 
-DISTNAME=	gftp-2.0.5a
+PORTNAME=	gftp
+PORTVERSION=	2.0.5a
 CATEGORIES=	ftp
 MASTER_SITES=	http://gftp.seul.org/ \
 		ftp://gftp.seul.org/pub/gftp/

@@ -1,12 +1,12 @@
 # New ports collection Makefile for:	xrmftp
-# Version required:			1.2.4
 # Date created:				28 March 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/xrmftp/Makefile,v 1.1 2000/04/01 12:31:37 will Exp $
 #
 
-DISTNAME=	xrmftp-1.2.4
+PORTNAME=	xrmftp
+PORTVERSION=	1.2.4
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.mat.uni.torun.pl/~rafmet/ \
 		ftp://ftp.netspring.net/pub/people/rafal-metkowski/
