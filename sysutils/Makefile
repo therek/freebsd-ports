@@ -1,9 +1,10 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.205 2001/07/24 15:05:38 ijliao Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.206 2001/08/02 08:56:34 dirk Exp $
 #
     SUBDIR += yawho
 
     SUBDIR += LPRng
     SUBDIR += afio
+    SUBDIR += anteater
     SUBDIR += asapm
     SUBDIR += ascpu
     SUBDIR += asfsm
