@@ -2,7 +2,7 @@
 # Date created:		19.May 1999
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/c-nocem/Makefile,v 1.6 2001/02/23 05:48:01 dinoex Exp $
+# $FreeBSD: ports/news/c-nocem/Makefile,v 1.7 2001/03/11 05:52:05 dinoex Exp $
 
 PORTNAME=	c-nocem
 PORTVERSION=	3.6
@@ -20,5 +20,6 @@ CNEWSSRC?=	${.CURDIR}/../cnews/work
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-cnews=${WRKDIRPREFIX}${CNEWSSRC}
+PLIST_SUB+=	NEWSBIN=${NEWSBIN:S=${PREFIX}/==}
 
 .include <bsd.port.mk>
