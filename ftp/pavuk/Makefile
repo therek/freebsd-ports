@@ -3,7 +3,7 @@
 # Date created:				19 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.13 2000/01/11 00:20:07 cpiazza Exp $
+# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.14 2000/02/15 07:25:52 kris Exp $
 #
 
 DISTNAME=		pavuk-0.9pl18
@@ -16,7 +16,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 MASTER_SITE_SUBDIR=	X11/gtkbuffet/apps/pavuk
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		ports@FreeBSD.org
 
 USE_AUTOCONF=		yes
 
