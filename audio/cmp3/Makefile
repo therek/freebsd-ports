@@ -2,11 +2,12 @@
 # Date created:		10 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/cmp3/Makefile,v 1.10 2000/08/23 21:42:39 cpiazza Exp $
+# $FreeBSD: ports/audio/cmp3/Makefile,v 1.11 2000/12/26 15:07:51 kevlo Exp $
 #
 
 PORTNAME=	cmp3
 PORTVERSION=	2.0.p5
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.personal.psu.edu/users/n/k/nkk104/cmp3/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.p/pre/}
