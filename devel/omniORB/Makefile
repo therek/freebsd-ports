@@ -2,13 +2,14 @@
 # Date created:		14 May 1997
 # Whom:			ejc@bazzle.com
 #
-# $FreeBSD: ports/devel/omniORB/Makefile,v 1.16 2001/03/23 00:35:25 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	omniORB
-PORTVERSION=	3.0.4
+PORTVERSION=	3.0.5
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.uk.research.att.com/pub/omniORB/omniORB3/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	omniorb
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/.//g}
 
 MAINTAINER=	ejc@bazzle.com
