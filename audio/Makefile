@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.240 2001/07/07 12:43:56 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.241 2001/07/08 16:26:43 kevlo Exp $
 #
 
     SUBDIR += Maaate
@@ -99,6 +99,7 @@
     SUBDIR += libogg
     SUBDIR += libshout
     SUBDIR += libsidplay
+    SUBDIR += libsndfile
     SUBDIR += libvorbis
     SUBDIR += libworkman
     SUBDIR += linux-realplayer
