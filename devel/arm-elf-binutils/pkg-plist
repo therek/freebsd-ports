@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/arm-elf-binutils/pkg-plist,v 1.1 2001/01/04 12:29:50 obrien Exp $
 arm-elf/bin/addr2line
 arm-elf/bin/ar
 arm-elf/bin/as
@@ -22,6 +22,8 @@ arm-elf/lib/ldscripts/armelf.xn
 arm-elf/lib/ldscripts/armelf.xr
 arm-elf/lib/ldscripts/armelf.xs
 arm-elf/lib/ldscripts/armelf.xu
+arm-elf/lib/ldscripts/armelf.xc
+arm-elf/lib/ldscripts/armelf.xsc
 arm-elf/lib/libbfd.a
 arm-elf/lib/libiberty.a
 arm-elf/lib/libopcodes.a
