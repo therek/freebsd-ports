@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/editors/Makefile,v 1.139 2001/02/20 08:10:41 sobomax Exp $
 #
 
     SUBDIR += AbiWord
@@ -52,6 +52,7 @@
     SUBDIR += gnotepad+
     SUBDIR += gxedit
     SUBDIR += hexedit
+    SUBDIR += hexpert
     SUBDIR += iiimecf
     SUBDIR += jed
     SUBDIR += jedit
