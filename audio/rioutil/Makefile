@@ -2,7 +2,7 @@
 # Date created:        01 July 2001
 # Whom:                greid
 #
-# $FreeBSD: ports/audio/rioutil/Makefile,v 1.1 2001/09/28 05:15:46 alfred Exp $
+# $FreeBSD$
 #
 
 PORTNAME=       rioutil
@@ -17,9 +17,9 @@ LIB_DEPENDS=	id3:${PORTSDIR}/audio/id3lib \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 USE_GMAKE=	yes
+INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		rioutil.1
-INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>
