@@ -2,14 +2,14 @@
 # Date created:		28 Nov 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.6 2000/04/09 17:33:16 cpiazza Exp $
+# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.7 2000/04/14 18:40:27 knu Exp $
 #
 
 PORTNAME=	pgpmoose
 PORTVERSION=	1.19
 CATEGORIES=	news security
 MASTER_SITES=	http://people.qualcomm.com/ggr/ \
-		ftp://ftp.dinoex.sub.de/pub/approved/
+		ftp://ftp.dinoex.de/pub/FreeBSD/distfiles/
 DISTNAME=	PGPMoose
 EXTRACT_SUFX=	.tar.Z
 
