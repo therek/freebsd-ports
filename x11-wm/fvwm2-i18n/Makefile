@@ -2,10 +2,10 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.19 2000/04/16 04:14:06 asami Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-i18n/Makefile,v 1.20 2000/04/17 00:18:59 reg Exp $
 #
 
-PORTNAME=	fvwm-i18n
+PORTNAME=	fvwm2-i18n
 PORTVERSION= 	2.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
