@@ -2,14 +2,14 @@
 # Date created:		8 May 2000
 # Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jre/Makefile,v 1.3 2000/06/23 09:21:24 sobomax Exp $
+# $FreeBSD: ports/java/jre/Makefile,v 1.4 2000/06/29 07:02:59 obrien Exp $
 #
 
 PORTNAME=	jre
 PORTVERSION=	${JRE_VERSION}
 CATEGORIES=	java devel
 MASTER_SITES=	ftp://ftp.se.freebsd.org/pub/FreeBSD/JDK/ \
-		${MASTER_SITE_LOCAL}
+		${MASTER_SITE_LOCAL} \
 		ftp://ftp.sc.sri.com/pub/FreeBSD/JDK/ \
 		http://www.freebsd.org/java/
 MASTER_SITE_SUBDIR=	patrick
