@@ -2,11 +2,11 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.6 2001/03/01 06:37:32 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Expect
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Expect
@@ -22,8 +22,6 @@ SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-MAN3=		Expect.3 \
-		Expect_FAQ.3 \
-		Expect_intro.3
+MAN3=		Expect.3
 
 .include <bsd.port.mk>
