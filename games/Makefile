@@ -1,6 +1,7 @@
-# $FreeBSD: ports/games/Makefile,v 1.371 2001/05/04 20:59:09 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.372 2001/05/04 21:00:27 lioux Exp $
 #
 
+    SUBDIR += 0verkill
     SUBDIR += 3dc
     SUBDIR += 3dpong
     SUBDIR += HeroesOfMightAndMagic
