@@ -1,12 +1,12 @@
 # New ports collection makefile for:   amaterus
-# Version required:    0.29.2
+# Version required:    0.29.4
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.2 2000/02/12 13:32:04 nakai Exp $
+# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.3 2000/02/18 09:10:48 nakai Exp $
 #
 
-DISTNAME=	amaterus-0.29.2
+DISTNAME=	amaterus-0.29.4
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.taiyaki.org/src/
 
