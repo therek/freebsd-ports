@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.18 2000/10/25 16:56:35 jeh Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.19 2000/11/01 11:59:16 jeh Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -120,7 +120,7 @@ post-install:
 	@${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/pwcheck.sh \
 		> ${PREFIX}/etc/rc.d/pwcheck.sh
 	@${CHMOD} 755 ${PREFIX}/etc/rc.d/pwcheck.sh
-	${INSTALL} -d -m 760 -o cyrus -g cyrus /var/pwcheck
+	${INSTALL} -d -m 770 -o cyrus -g cyrus /var/pwcheck
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/SASL/html
 .for file in ${DOCS}
