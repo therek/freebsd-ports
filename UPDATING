@@ -22,7 +22,7 @@ upgrades.
   File Version=4
 
   Other changes you are may find in changelog, its
-  available at http://www.opera.com/linux/changelogs/752/
+  available at http://www.opera.com/freebsd/changelogs/752/
 
 20040706:
   AFFECTS: users of Python bindings for textproc/lib{xml2,xslt} libraries
@@ -438,4 +438,4 @@ upgrades.
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.40 2004/07/06 06:08:07 bland Exp $
+$FreeBSD: ports/UPDATING,v 1.41 2004/07/08 07:29:36 osa Exp $
