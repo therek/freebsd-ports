@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.183 2003/02/24 02:56:37 edwin Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.184 2003/02/27 16:30:25 mbr Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -359,7 +359,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--enable-trans-sid"
 			;;
 		\"yaz\")
-			echo "LIB_DEPENDS+=	yaz.1:\${PORTSDIR}/net/yaz"
+			echo "LIB_DEPENDS+=	yaz.2:\${PORTSDIR}/net/yaz"
 			echo "CONFIGURE_ARGS+=--with-yaz=\${LOCALBASE}/bin"
 			;;
 		*)
