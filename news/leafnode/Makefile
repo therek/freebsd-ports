@@ -2,11 +2,11 @@
 # Date created:		10 April 1996
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/news/leafnode/Makefile,v 1.14 2000/06/01 08:55:23 asami Exp $
+# $FreeBSD: ports/news/leafnode/Makefile,v 1.15 2000/12/13 02:14:58 brian Exp $
 #
 
 PORTNAME=	leafnode
-PORTVERSION=	1.9.17
+PORTVERSION=	1.9.18
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.Awfulhak.org/leafnode/
