@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.81 2000/06/08 10:41:59 asami Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.82 2000/06/09 06:55:56 kris Exp $
 #
 
 PORTNAME=	Server
@@ -57,7 +57,7 @@ MAN5= 		XF86Config.5
 # Set following as NO. or type make ExtendefInputDevices=NO
 ExtendedInputDevices?=	YES
 
-.pre-fetch:
+pre-fetch:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
 	${SH} ${PKGDIR}/INSTALL
 .endif
