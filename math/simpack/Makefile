@@ -3,7 +3,7 @@
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.7 1999/08/25 07:14:48 obrien Exp $
+# $FreeBSD: ports/math/simpack/Makefile,v 1.8 2000/03/08 10:56:40 max Exp $
 #
 
 DISTNAME=	simpack-3.0
@@ -13,7 +13,7 @@ DISTFILES=	SimPack3.tar.Z
 
 MAINTAINER=	rssh@cki.ipri.kiev.ua
 
-BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake
+USE_XLIB=	yes
 
 WRKSRC=	${WRKDIR}/simpack
 
