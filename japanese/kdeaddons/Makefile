@@ -2,7 +2,7 @@
 # Date created:		28 August 2001
 # Whom:			SASAKI Katuhiro <sahiro@crest.ocn.ne.jp>
 #
-# $FreeBSD: ports/japanese/kdeaddons/Makefile,v 1.3 2001/09/03 20:16:09 knu Exp $
+# $FreeBSD: ports/japanese/kdeaddons/Makefile,v 1.4 2001/09/10 12:05:05 knu Exp $
 #
 
 # This port does not work with another version of master port.
@@ -18,8 +18,6 @@ PATCH_SITES=	http://www.kde.gr.jp/patch/
 PATCHFILES=	kdeaddons-2.2-babelfish-ja-20010816.diff
 PATCH_DIST_STRIP=	-p1
 
-LIB_DEPENDS=	noatun.0:${PORTSDIR}/audio/kdemultimedia2
-BUILD_DEPENDS=	${LOCALBASE}/lib/libkateinterfaces.so:${PORTSDIR}/japanese/kdebase2
-RUN_DEPENDS=	${LOCALBASE}/lib/libkateinterfaces.so:${PORTSDIR}/japanese/kdebase2
+LIB_DEPENDS=	konq.4:${PORTSDIR}/japanese/kdebase2
 
 .include "${MASTERDIR}/Makefile"
