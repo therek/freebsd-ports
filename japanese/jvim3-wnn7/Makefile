@@ -1,12 +1,10 @@
 # New ports collection makefile for:	jvim3 for Wnn6
-# Version required:	3.0-j1.3j
+# Version required:	3.0-1.3j
 # Date created:		98/11/17
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/jvim3-wnn6/Makefile,v 1.6 1999/08/25 05:24:45 obrien Exp $
 #
-
-PKGNAME=	ja-jvim-wnn6-3.0.1.3j
 
 WNN6=		yes
 

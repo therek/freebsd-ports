@@ -1,12 +1,10 @@
 # New ports collection makefile for:	jvim3 for Canna
-# Version required:	3.0-j1.3j
+# Version required:	3.0-1.7j
 # Date created:		98/11/17
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/jvim3-canna/Makefile,v 1.6 1999/08/25 05:24:40 obrien Exp $
 #
-
-PKGNAME=	ja-jvim-canna-3.0.1.3j
 
 CANNA=		yes
 
