@@ -2,7 +2,7 @@
 # Date created:				18 Jun 2000
 # Whom:					Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/emulators/gsnes9x/Makefile,v 1.1 2000/07/16 15:32:26 alex Exp $
+# $FreeBSD: ports/emulators/gsnes9x/Makefile,v 1.2 2000/07/24 01:09:55 kbyanc Exp $
 #
 
 PORTNAME=	gsnes9x
@@ -27,8 +27,8 @@ CONFIGURE_ARGS=	--without-included-gettext \
 		--with-esd
 
 .if defined(NOPORTDOCS)
-pre-install:
-	${INSTALL_DATA} ${FILESDIR}/PLIST.nodocs ${PKGDIR}/PLIST
+
+PLIST=	${FILESDIR}/PLIST.nodocs
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/GSnes9x ${PREFIX}/bin
@@ -43,8 +43,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/pixmaps/gsnes9x-icon.png \
 			${PREFIX}/share/gnome/pixmaps
 .else
-pre-install:
-	${INSTALL_DATA} ${FILESDIR}/PLIST.docs ${PKGDIR}/PLIST
+PLIST=	${FILESDIR}/PLIST.docs
 .endif
 
 .include <bsd.port.mk>
