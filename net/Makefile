@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.476 2001/03/10 15:04:20 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.477 2001/03/10 18:29:41 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -67,6 +67,7 @@
     SUBDIR += dictd-database
     SUBDIR += djbdns
     SUBDIR += dlint
+    SUBDIR += dnrd
     SUBDIR += dns_balance
     SUBDIR += dnsutl
     SUBDIR += dnswalk
