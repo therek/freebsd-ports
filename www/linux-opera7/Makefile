@@ -2,12 +2,13 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.13 2001/06/04 22:58:48 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.14 2001/08/14 14:14:27 des Exp $
 #
 
 PORTNAME=	opera
 PKGNAMEPREFIX=	linux-
 PORTVERSION=	5.05-tp1
+PORTREVISION=	2
 CATEGORIES=	www linux
 MASTER_SITES=	http://opera.online.no/linux/tgz/505/ \
 		ftp://ftp.opera.com/pub/opera/linux/505/
@@ -17,6 +18,7 @@ DISTFILES=	${DISTNAME}.x86${EXTRACT_SUFX}
 MAINTAINER=	des@FreeBSD.org
 
 RUN_DEPENDS=	${LINUXBASE}/lib/ld.so:${PORTSDIR}/emulators/linux_base \
+		${LINUXBASE}/usr/X11R6/lib/libXm.so.2:${PORTSDIR}/x11-toolkits/linux-openmotif \
 		${LINUXBASE}/usr/lib/libpng.so.2:${PORTSDIR}/graphics/linux-png \
 		${LINUXBASE}/usr/lib/libjpeg.so.62:${PORTSDIR}/graphics/linux-jpeg
 
