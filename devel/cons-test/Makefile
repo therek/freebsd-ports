@@ -2,7 +2,7 @@
 # Date created:		15 September 2000
 # Whom:			rv@FreeBSD.org
 #
-# $FreeBSD: ports/devel/cons-test/Makefile,v 1.4 2001/04/24 13:58:07 rv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cons-test
@@ -24,7 +24,8 @@ CONS_TEST=	cons-${PORTVERSION}/test
 WRKSRC=		${WRKDIR}/${CONS_TEST}
 PLIST_SUB=	CONS_VER=${PORTVERSION} CONS_TEST=${CONS_TEST}
 
-MAN1=		cons-test.1.gz
+MAN1=		cons-test.1
+MANCOMPRESSED=	yes
 DOCS=		CHANGES COPYING COPYRIGHT README TODO Tests.txt
 TESTS=		1..83,101..147
 TEST_LIBS=	Cmd.pm Cons.pm
