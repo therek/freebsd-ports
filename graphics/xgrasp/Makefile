@@ -3,14 +3,14 @@
 # Date created:		23 July 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xgrasp/Makefile,v 1.8 1999/10/12 17:59:37 flathill Exp $
+# $FreeBSD: ports/graphics/xgrasp/Makefile,v 1.9 1999/10/16 03:37:23 cpiazza Exp $
 #
 
 DISTNAME=	xgrasp.1.7d
 PKGNAME=	xgrasp-1.7d
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.cdrom.com/pub/X11/R5contrib/
+		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
