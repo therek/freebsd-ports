@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.479 2004/01/20 22:26:36 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.480 2004/01/20 22:27:01 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4116,7 +4116,7 @@ checksum: fetch
 				${ECHO_MSG} ">> Checksum for $$file is set to IGNORE in distinfo file even though"; \
 				${ECHO_MSG} "   the file is not in the "'$$'"{IGNOREFILES} list."; \
 				OK="false"; \
-			elif [ "$$CKSUM2" = "$$CKSUM" ]; then \
+			elif ${EXPR} "$$CKSUM2" : ".*$$CKSUM" > /dev/null; then \
 				${ECHO_MSG} ">> Checksum OK for $$file."; \
 			else \
 				${ECHO_MSG} ">> Checksum mismatch for $$file."; \
