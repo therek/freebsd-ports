@@ -2,7 +2,7 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.26 2001/02/14 05:42:15 lioux Exp $
+# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.27 2001/03/01 06:38:29 vanilla Exp $
 #
 
 PORTNAME=	Pg
@@ -18,8 +18,8 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 PERL_CONFIGURE=	yes
-POSTGRES_HOME?=	${LOCALBASE}/pgsql
-MAKE_ENV+=	POSTGRES_HOME=${POSTGRES_HOME}
+CONFIGURE_ENV=	POSTGRES_INCLUDE=${LOCALBASE}/pgsql/include \
+		POSTGRES_LIB=${LOCALBASE}/pgsql/lib
 
 MAN3=		Pg.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
