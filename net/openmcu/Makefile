@@ -2,14 +2,16 @@
 # Date created:		Wed Nov 22 08:57:55 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openmcu/Makefile,v 1.1 2000/11/22 13:53:23 roger Exp $
 #
 
 PORTNAME=	openmcu
-PORTVERSION=	cvs.20001122
+PORTVERSION=	1.0a2
 CATEGORIES=	net
-MASTER_SITES=           ${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=     roger
+MASTER_SITES=	http://www.openh323.org/bin/ \
+		http://www.de.openh323.org/bin/ \
+		http://www.ru.openh323.org/bin/
+DISTNAME=	openmcu_1.0alpha2
 
 MAINTAINER=	roger@FreeBSD.org
 
