@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net-mgmt/netustad/files/netustad.sh,v 1.1 2004/08/05 05:28:13 sem Exp $
 #
 # PROVIDE: netustad
 # REQUIRE: NETWORKING SERVERS
@@ -17,8 +17,6 @@
 unset rcNG
 name="netustad"
 command=%%PREFIX%%/sbin/netustad
-extra_commands=reload
-reload_cmd="killall -HUP ${name}"
 stop_cmd="killall ${name}"
 
 if [ -f /etc/rc.subr ]; then
