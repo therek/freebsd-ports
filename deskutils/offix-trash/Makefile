@@ -1,16 +1,16 @@
 # ports collection makefile for: Clipboard
-# Version required:  2.4
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/deskutils/offix-trash/Makefile,v 1.5 1999/08/25 05:26:46 obrien Exp $
+# $FreeBSD: ports/deskutils/offix-trash/Makefile,v 1.6 2000/01/29 22:45:52 reg Exp $
 #
 
-DISTNAME=	Trash-2.4
-PKGNAME=	offix-trash-2.4
+PORTNAME=	offix-trash
+PORTVERSION=	2.4
 CATEGORIES=	deskutils offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX
+DISTNAME=	Trash-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ssystem
-# Version required:			1.6
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/astro/ssystem/Makefile,v 1.13 2000/03/29 07:16:48 kris Exp $
+# $FreeBSD: ports/astro/ssystem/Makefile,v 1.14 2000/03/29 09:01:53 will Exp $
 #
 
-DISTNAME=		ssystem-1.6
+PORTNAME=		ssystem
+PORTVERSION=		1.6
 CATEGORIES=		astro
 MASTER_SITES=		http://plasma.gsfc.nasa.gov/Ssystem/ \
 			http://www.wam.umd.edu/~kamelkev/Ssystem/ \

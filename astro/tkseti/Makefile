@@ -1,12 +1,12 @@
 # Ports collection makefile for:	tkseti
-# Version required:	1.42
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.6 1999/11/20 21:45:56 cpiazza Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.7 1999/11/28 18:32:17 steve Exp $
 #
 
-DISTNAME=	tkseti-1.46
+PORTNAME=	tkseti
+PORTVERSION=	1.46
 CATEGORIES=	astro tk82
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 

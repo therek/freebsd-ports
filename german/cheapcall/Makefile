@@ -1,15 +1,15 @@
 # New ports collection makefile for:   cheap-call
-# Version required:     0.7e-1.9.99
 # Date created:         9 Jun 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/german/cheapcall/Makefile,v 1.2 1999/08/25 05:57:26 obrien Exp $
+# $FreeBSD: ports/german/cheapcall/Makefile,v 1.3 1999/09/06 05:16:51 cpiazza Exp $
 #
 
-DISTNAME=	cheap-call-${LONGVER}.tcl
-PKGNAME=	cheapcall-0.7e
+PORTNAME=	cheap-call
+PORTVERSION=	0.7e
 CATEGORIES=	german
 MASTER_SITES=	http://212.227.69.105/download/
+DISTNAME=	cheap-call-${LONGVER}.tcl
 EXTRACT_SUFX=	.bz2
 
 MAINTAINER=	pcc@gmx.net

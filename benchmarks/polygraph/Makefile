@@ -1,16 +1,16 @@
 # New ports collection makefile for:	polygraph
-# Version required:	2.2.7
 # Date created:         3 March 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/benchmarks/polygraph/Makefile,v 1.4 1999/08/25 04:45:47 obrien Exp $
+# $FreeBSD: ports/benchmarks/polygraph/Makefile,v 1.5 1999/12/30 23:55:53 steve Exp $
 #
 
-DISTNAME=	polygraph-2.2.7-src
-PKGNAME=	polygraph-2.2.7
+PORTNAME=	polygraph
+PORTVERSION=	2.2.7
 CATEGORIES=	benchmarks www
 MASTER_SITES=	http://polygraph.ircache.net/sources/tars/ \
 		http://www.chg.ru/~dima/
+DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	dima@Chg.RU
 

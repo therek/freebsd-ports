@@ -1,12 +1,12 @@
 # New ports collection makefile for:	teapot
-# Version required:			1.03
 # Date created:				7 January 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/teapot/Makefile,v 1.5 1999/09/24 09:18:29 andy Exp $
+# $FreeBSD: ports/deskutils/teapot/Makefile,v 1.6 2000/03/29 07:16:57 kris Exp $
 #
 
-DISTNAME=	teapot-1.03
+PORTNAME=	teapot
+PORTVERSION=	1.03
 CATEGORIES=	deskutils
 MASTER_SITES=	ftp://cantor.informatik.rwth-aachen.de/pub/unix/ \
 		http://www.moria.de/~michael/teapot/

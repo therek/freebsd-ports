@@ -1,12 +1,12 @@
 # New ports collection Makefile for: hmmer
-# Version required:	2.0
 # Date created:		June 29 1998
 # Whom:			barnhart@genetics.wustl.edu
 #
-# $FreeBSD: ports/biology/hmmer/Makefile,v 1.5 1999/08/25 04:47:57 obrien Exp $
+# $FreeBSD: ports/biology/hmmer/Makefile,v 1.6 2000/01/29 20:01:35 mharo Exp $
 #
 
-DISTNAME=	hmmer-2.1.1
+PORTNAME=	hmmer
+PORTVERSION=	2.1.1
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.genetics.wustl.edu/pub/eddy/hmmer/
 EXTRACT_SUFX=	.tar.Z

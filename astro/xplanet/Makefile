@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xplanet
-# Version required:	0.50
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.2 2000/03/02 01:14:03 jedgar Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.3 2000/03/22 01:58:54 will Exp $
 #
 
-DISTNAME=	xplanet-0.50
+PORTNAME=	xplanet
+PORTVERSION=	0.50
 CATEGORIES=	astro x11
 MASTER_SITES=	http://www.alumni.caltech.edu/~hari/xplanet/ \
 		http://www.radcyberzine.com/xglobe/

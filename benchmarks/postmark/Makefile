@@ -1,14 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  postmark
-# Version required: 0.0
 # Date created:			  Sat Sep 18, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.4 2000/03/20 02:37:09 obrien Exp $
+# $FreeBSD: ports/benchmarks/postmark/Makefile,v 1.5 2000/03/22 00:27:34 obrien Exp $
 #
 
-DISTNAME=	postmark-1_11
-PKGNAME=	postmark-1.11
+PORTNAME=	postmark
+PORTVERSION=	1.11
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://www.netapp.com/ftp/  \
 		http://www.taronga.com/~nick/files/

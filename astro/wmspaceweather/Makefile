@@ -1,14 +1,14 @@
 # New ports collection makefile for:	wmSpaceWeather
-# Version required:     1.04
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.3 1999/08/25 04:22:45 obrien Exp $
 
-DISTNAME=	wmSpaceWeather-1.04
-PKGNAME=	wmspaceweather-1.04
+PORTNAME=	wmspaceweather
+PORTVERSION=	1.04
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
+DISTNAME=	wmSpaceWeather-1.04
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	xphoon
-# Version required:	18sep91 (in R5 contrib)
 # Date created:		14 February 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/astro/xphoon/Makefile,v 1.13 2000/03/22 01:58:53 will Exp $
+# $FreeBSD: ports/astro/xphoon/Makefile,v 1.14 2000/03/22 17:42:13 mph Exp $
 #
 
-DISTNAME=	xphoon
-PKGNAME=	xphoon-91.9.18
+PORTNAME=	xphoon
+PORTVERSION=	1991.9.18
 CATEGORIES=	astro x11
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+DISTNAME=	xphoon
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	will@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xmaddressbook
-# Version required:	1.5.3
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/xmaddressbook/Makefile,v 1.6 1999/08/25 05:26:56 obrien Exp $
 #
 
-DISTNAME=	xmaddressbook-1.5.3
+PORTNAME=	xmaddressbook
+PORTVERSION=	1.5.3
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office

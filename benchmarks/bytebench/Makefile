@@ -1,14 +1,14 @@
 # New ports collection makefile for:    bytebench
-# Version required:    	3.1
 # Date created:         28 December 1995
 # Whom:                 se
 #
-# $FreeBSD: ports/benchmarks/bytebench/Makefile,v 1.11 1999/08/25 04:45:40 obrien Exp $
+# $FreeBSD: ports/benchmarks/bytebench/Makefile,v 1.12 1999/08/28 02:42:16 mharo Exp $
 #
 
-DISTNAME=       bytebench-3.1
+PORTNAME=	bytebench
+PORTVERSION=	3.1
 CATEGORIES=	benchmarks
-MASTER_SITES=   ftp://ftp.inria.fr/system/benchmark/
+MASTER_SITES	ftp://ftp.inria.fr/system/benchmark/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	se@FreeBSD.org

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	zorro
-# Version required:     1.1p8
 # Date created:         03 Aug 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD: ports/deskutils/zorro/Makefile,v 1.16 1999/08/27 21:13:45 mharo Exp $
+# $FreeBSD: ports/deskutils/zorro/Makefile,v 1.17 1999/11/28 18:32:45 steve Exp $
 #
 
-DISTNAME=	zorro-1.1p8
-PKGNAME=	zorro-1.1.8
+PORTNAME=	zorro
+PORTVERSION=	1.1.8
 CATEGORIES=	deskutils tk82
 MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/apps/zorro-1.1p8/
+DISTNAME=	${PORTNAME}-1.1p8
 
 MAINTAINER=	shanee@augusta.de
 

@@ -1,12 +1,12 @@
 # New ports collection Makefile for:	cbb
-# Version required:     	0.8.1
 # Date created:			24 September, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.15 2000/01/30 23:37:18 jedgar Exp $
+# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.16 2000/01/31 23:04:13 jedgar Exp $
 #
 
-DISTNAME=	cbb-0.8.1
+PORTNAME=	cbb
+PORTVERSION=	0.8.1
 CATEGORIES=	deskutils
 MASTER_SITES=	http://download.sourceforge.net/cbb/
 

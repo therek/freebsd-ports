@@ -1,12 +1,12 @@
 # New ports collection makefile for: dbs
-# Version required: 	1.1.5
 # Date created: 	1 August 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/benchmarks/dbs/Makefile,v 1.4 1999/09/10 03:21:49 asami Exp $
+# $FreeBSD: ports/benchmarks/dbs/Makefile,v 1.5 1999/09/11 00:46:36 asami Exp $
 #
 
-DISTNAME=	dbs-1.1.5
+PORTNAME=	dbs
+PORTVERSION=	1.1.5
 CATEGORIES=	benchmarks
 MASTER_SITES=	http://shika.aist-nara.ac.jp/member/yukio-m/dbs/software1.1.5/
 

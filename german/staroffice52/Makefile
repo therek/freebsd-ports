@@ -1,18 +1,18 @@
 # New ports collection makefile for: StarOffice 5.1a german
-# Version required:     5.1a
 # Date created:		20 Dezember 1999
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice5/Makefile,v 1.2 2000/01/24 16:28:31 asami Exp $
+# $FreeBSD: ports/german/staroffice5/Makefile,v 1.3 2000/02/28 08:33:35 asami Exp $
 #
 
-DISTNAME=	so51a_lnx_49
-PKGNAME=	de-staroffice-5.1a
+PORTNAME=	de-staroffice
+PORTVERSION=	5.1a
 CATEGORIES=	editors linux
 MASTER_SITES=	ftp://ftp.hagenhomes.com/pub/  \
 		ftp://ftp.stat.duke.edu/pub/Users/sto/StarOffice51a/  \
 		ftp://ftp.stardivision.de/pub/support/so51a/nwspatch/unxlnxi/  \
 		ftp://ftp.stardivision.de/pub/support/so51a/db/unxlnxi/
+DISTNAME=	so51a_lnx_49
 EXTRACT_SUFX=	.tar
 DISTFILES=	applicat.rdb.gz libofa517li.so libsdb517li.so
 

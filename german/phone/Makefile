@@ -1,15 +1,15 @@
 # New ports collection makefile for:	German phone codes
-# Version required:     1.0
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/phone/Makefile,v 1.7 1999/08/25 05:57:27 obrien Exp $
+# $FreeBSD: ports/german/phone/Makefile,v 1.8 1999/09/19 10:30:44 wosch Exp $
 #
 
-DISTNAME=	avon-1996
-PKGNAME=	de-phone-1.0
+PORTNAME=	de-phone
+PORTVERSION=	1.0
 CATEGORIES=	german misc
 MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
+DISTNAME=	avon-1996
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=     wosch@FreeBSD.org

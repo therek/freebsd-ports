@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  Rawio
-# Version required: 0.0
 # Date created:			  Sun Aug 08, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.5 2000/03/20 02:37:11 obrien Exp $
+# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.6 2000/03/22 00:27:36 obrien Exp $
 #
 
-DISTNAME=	rawio-1.1
+PORTNAME=	rawio
+PORTVERSION=	1.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.lemis.com/pub/
 

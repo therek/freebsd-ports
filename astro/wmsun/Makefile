@@ -1,14 +1,14 @@
 # New ports collection makefile for:	wmSun
-# Version required:	1.03
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/wmsun/Makefile,v 1.3 1999/08/25 04:22:46 obrien Exp $
 
-DISTNAME=	wmSun-1.03
-PKGNAME=	wmsun-1.03
+PORTNAME=	wmsun
+PORTVERSION=	1.03
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
+DISTNAME=	wmSun-1.03
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

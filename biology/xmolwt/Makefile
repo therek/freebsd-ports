@@ -1,11 +1,11 @@
 # New ports collection makefile for: xmolwt/gmolwt
-# Version required: 0.3
 # Date created: 1999-08-30
 # Whom: Ryo MIYAMOTO <rmiya@cc.hirosaki-u.ac.jp>
 #
-# $FreeBSD: ports/biology/xmolwt/Makefile,v 1.1.1.1 1999/09/06 20:04:15 taoka Exp $
+# $FreeBSD: ports/biology/xmolwt/Makefile,v 1.2 1999/10/09 18:42:12 vanilla Exp $
 
-DISTNAME=	xmolwt-0.3
+PORTNAME=	xmolwt
+PORTVERSION=	0.3
 CATEGORIES=	biology
 MASTER_SITES=	http://www.st.hirosaki-u.ac.jp/~rmiya/xmolwt/
 

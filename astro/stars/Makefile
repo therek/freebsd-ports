@@ -1,16 +1,16 @@
 # New ports collection makefile for:   stars-1.0
-# Version required:	1.0
 # Date created:		10 Jul 1996
 # Whom:			searle
 #
-# $FreeBSD: ports/astro/stars/Makefile,v 1.9 1999/08/25 04:22:43 obrien Exp $
+# $FreeBSD: ports/astro/stars/Makefile,v 1.10 2000/03/26 23:47:58 kris Exp $
 #
 
-DISTNAME=	stars-1.0-ss-10.20
-PKGNAME=	stars-1.0
+PORTNAME=	stars
+PORTVERSION=	1.0
 CATEGORIES=	astro
 MASTER_SITES=	ftp://hpux.csc.liv.ac.uk/hpux/X11/Demos/stars-1.0/ \
 		ftp://askdonald.ask.uni-karlsruhe.de/hpux/X11/Demos/stars-1.0/
+DISTNAME=	stars-1.0-ss-10.20
 
 MAINTAINER=	jseger@FreeBSD.org
 

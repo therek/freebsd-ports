@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sunclock
-# Version required:	1.3
 # Date created:		15 September 1996
 # Whom:			torstenb
 #
-# $FreeBSD: ports/astro/sunclock/Makefile,v 1.9 1999/08/25 04:22:43 obrien Exp $
+# $FreeBSD: ports/astro/sunclock/Makefile,v 1.10 2000/02/12 19:36:06 torstenb Exp $
 #
 
-DISTNAME=	sunclock-1.5
+PORTNAME=	sunclock
+PORTVERSION=	1.5
 CATEGORIES=	astro
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

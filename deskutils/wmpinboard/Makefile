@@ -1,12 +1,12 @@
 # New ports collection makefile for:	wmpinboard
-# Version required:		0.10
 # Date created:			17 January 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.9 1999/09/08 02:20:18 jim Exp $
+# $FreeBSD: ports/deskutils/wmpinboard/Makefile,v 1.10 1999/11/08 19:50:34 jim Exp $
 #
 
-DISTNAME=	wmpinboard-0.10
+PORTNAME=	wmpinboard
+PORTVERSION=	0.10
 CATEGORIES=	deskutils afterstep windowmaker
 MASTER_SITES=	http://www.tu-ilmenau.de/~gomar/stuff/wmpinboard/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	abacus
-# Version required:			0.9.13
 # Date created:				18 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.7 2000/02/08 09:29:30 peter Exp $
+# $FreeBSD: ports/deskutils/abacus/Makefile,v 1.8 2000/03/29 07:16:58 kris Exp $
 #
 
-DISTNAME=	abacus
-PKGNAME=	abacus-0.9.13
+PORTNAME=	abacus
+PORTVERSION=	0.9.13
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www-cad.eecs.berkeley.edu/HomePages/aml/abacus/ \
 		http://tahoe.inesc.pt/~aml/abacus/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 PATCH_SITES=	http://people.FreeBSD.org/~steve/distfiles/

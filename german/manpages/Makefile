@@ -1,12 +1,12 @@
 # New ports collection makefile for: German manpages
-# Version required:     1.0
 # Date created:         29 September 1997
 # Whom:                 wosch
 #
-# $FreeBSD: ports/german/manpages/Makefile,v 1.10 1999/08/28 01:57:14 mharo Exp $
+# $FreeBSD: ports/german/manpages/Makefile,v 1.11 1999/09/19 10:30:44 wosch Exp $
 #
 
-DISTNAME=       de-manpages-1.0
+PORTNAME=	de-manpages
+PORTVERSION=	1.0
 CATEGORIES=	german
 MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/ \
 		ftp://ftp.Infodrom.North.DE/pub/Linux/Devel/manpages-de/

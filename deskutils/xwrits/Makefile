@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xwrits
-# Version required:	2.10
 # Date created:		02 January 2000
 # Whom:			Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/deskutils/xwrits/Makefile,v 1.1.1.1 2000/01/04 18:01:20 jedgar Exp $
+# $FreeBSD: ports/deskutils/xwrits/Makefile,v 1.2 2000/01/09 22:00:07 cpiazza Exp $
 #
 
-DISTNAME=	xwrits-2.10
+PORTNAME=	xwrits
+PORTVERSION=	2.10
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.pdos.lcs.mit.edu/~eddietwo/xwrits/
 

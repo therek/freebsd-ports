@@ -1,16 +1,16 @@
 # New ports collection makefile for:    bonnie
-# Version required:     1.0
 # Date created:         26 September 1994
 # Whom:                 se
 #
-# $FreeBSD: ports/benchmarks/bonnie/Makefile,v 1.6 1999/08/25 04:45:39 obrien Exp $
+# $FreeBSD: ports/benchmarks/bonnie/Makefile,v 1.7 1999/12/30 17:18:13 se Exp $
 #
 
-DISTNAME=       Bonnie
-PKGNAME=	bonnie-1.0
+PORTNAME=	bonnie
+PORTVERSION=	1.0
 CATEGORIES=	benchmarks
 MASTER_SITES=   ftp://ftp.sunet.se/pub/benchmark/Bonnie/
 EXTRACT_SUFX=   .tar.Z
+DISTNAME=       Bonnie
 
 MAINTAINER=	se@FreeBSD.org
 

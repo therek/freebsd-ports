@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xephem
-# Version required:     3.2.3
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/astro/xephem/Makefile,v 1.15 2000/01/19 17:38:37 mph Exp $
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.16 2000/02/27 23:15:06 steve Exp $
 #
 
-DISTNAME=	xephem-3.2.3
+PORTNAME=	xephem
+PORTVERSION=	3.2.3
 CATEGORIES=	astro
 MASTER_SITES=	ftp://iraf.noao.edu/contrib/xephem/ \
 		ftp://gastro23.physics.uiowa.edu/pub/xephem/ \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xearth
-# Version required:     1.1
 # Date created:         29 October 1995
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.18 1999/12/22 22:28:10 jedgar Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.19 2000/03/22 01:58:52 will Exp $
 #
 
-DISTNAME=	xearth-1.1
+PORTNAME=	xearth
+PORTVERSION=	1.1
 CATEGORIES=	astro x11
 MASTER_SITES=	ftp://cag.lcs.mit.edu/pub/tuna/ \
 		ftp://ftp.cs.colorado.edu/users/tuna/ \

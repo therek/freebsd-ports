@@ -1,15 +1,15 @@
 # New ports collection makefile for: netperf
-# Version required:	2.1.3
 # Date created:		19 July 1996
 # Whom:			koshy
 #
-# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.9 1999/09/04 23:39:25 mharo Exp $
+# $FreeBSD: ports/benchmarks/netperf/Makefile,v 1.10 1999/09/08 23:05:58 fenner Exp $
 #
 
-DISTNAME=	netperf-2.1pl3
-PKGNAME=	netperf-2.1.3
+PORTNAME=	netperf
+PORTVERSION=	2.1.3
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.cup.hp.com/dist/networking/benchmarks/netperf/
+DISTNAME=	netperf-2.1pl3
 
 MAINTAINER=	fenner@freebsd.org
 

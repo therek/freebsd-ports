@@ -1,15 +1,15 @@
 # New ports collection makefile for:	pyWeather
-# Version required:	0.1b
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/pyweather/Makefile,v 1.1.1.1 2000/01/05 21:16:52 jedgar Exp $
+# $FreeBSD: ports/astro/pyweather/Makefile,v 1.2 2000/03/22 01:58:49 will Exp $
 #
 
-DISTNAME=	pyWeather
-PKGNAME=	pyWeather-0.1b
+PORTNAME=	pyWeather
+PORTVERSION=	0.1b
 CATEGORIES=	astro python
 MASTER_SITES=	http://members.bellatlantic.net/~rasclkng/
+DISTNAME=	pyWeather
 
 MAINTAINER=	will@FreeBSD.org
 

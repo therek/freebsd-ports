@@ -1,17 +1,16 @@
 # New ports collection makefile for:	molden
-# Version required:	3.4
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD: ports/biology/molden/Makefile,v 1.5 2000/01/31 03:50:25 cpiazza Exp $
+# $FreeBSD: ports/biology/molden/Makefile,v 1.6 2000/02/06 19:20:09 cpiazza Exp $
 #
 
-DISTNAME=	molden3.4
-PKGNAME=	molden-3.4
+PORTNAME=	molden
+PORTVERSION=	3.4
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/
 MASTER_SITES+=	ftp://ftp.caos.kun.nl/pub/molgraph/molden/bin/
-DISTFILES=	molden3.4.tar.Z molden3.4-freebsd
+DISTFILES=	${PORTNAME}${PORTVERSION}.tar.Z ${PORTNAME}${PORTVERSION}-freebsd
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
 

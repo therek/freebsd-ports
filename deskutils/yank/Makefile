@@ -1,12 +1,12 @@
 # New ports collection makefile for:	yank
-# Version required:			0.1.3
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/yank/Makefile,v 1.3 2000/02/14 17:38:47 jedgar Exp $
+# $FreeBSD: ports/deskutils/yank/Makefile,v 1.4 2000/03/30 03:00:54 jedgar Exp $
 #
 
-DISTNAME=	yank-0.1.3
+PORTNAME=	yank
+PORTVERSION=	0.1.3
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://home.ins.de/~m.hussmann/software/yank/
 
