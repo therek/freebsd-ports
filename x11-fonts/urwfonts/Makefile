@@ -2,11 +2,11 @@
 # Date created:         Sat Aug 12 15:02:03 CEST 2000
 # Whom:                 olgeni@uli.it
 #
-# $FreeBSD: ports/x11-fonts/urwfonts/Makefile,v 1.3 2001/01/24 12:05:14 olgeni Exp $
+# $FreeBSD: ports/x11-fonts/urwfonts/Makefile,v 1.4 2001/01/24 12:43:14 olgeni Exp $
 #
 
 PORTNAME=	urwfonts
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.gimp.org/
 DISTNAME=	urw-fonts
