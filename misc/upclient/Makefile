@@ -2,7 +2,7 @@
 # Date created:		20 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/misc/upclient/Makefile,v 1.7 2001/01/05 03:37:05 jeh Exp $
+# $FreeBSD: ports/misc/upclient/Makefile,v 1.8 2001/01/06 17:25:05 kevlo Exp $
 #
 
 PORTNAME=	upclient
@@ -12,7 +12,7 @@ MASTER_SITES=	http://uptimes.atomicvoid.net/files/ \
 		ftp://ftp.uptimes.net/pub/uptimes/ \
 		http://www.uptimes.net/download/
 
-MAINTAINER=	clefevre@citeweb.net
+MAINTAINER=	clefevre@poboxes.com
 
 ALL_TARGET=	bsd
 BUILD_WRKSRC=	${WRKSRC}/src
