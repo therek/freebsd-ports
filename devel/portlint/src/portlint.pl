@@ -13,7 +13,7 @@
 # bsd.port.mk.  There are significant differences in those so you'll have
 # hard time upgrading this...
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.12 2000/01/12 04:48:15 shige Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.13 2000/01/22 22:06:04 mharo Exp $
 #
 
 $err = $warn = 0;
@@ -280,18 +280,8 @@ sub checkplist {
 				}
 			} elsif ($_ =~ /^\@(comment)/) {
 				$rcsidseen++ if (/\$$rcsidstr[:\$]/);
-			} elsif ($_ =~ /^\@(owner|group)\s+$/) {
-				&perror("WARN: $_ missing name in PLIST");
-			} elsif ($_ =~ /^\@(owner)(\s+)(.*)/) {
-				$space = $2;
-				$user = $3;
-				&perror("WARN: multiple spaces found in \"$_\"") if ($space =~ /\s\s+/);
-				&perror("WARN: \"$user\" unknown user in PLIST") if (getpwnam($user) eq "");
-			} elsif ($_ =~ /^\@(group)(\s+)(.*)/) {
-				$space = $2;
-				$group = $3;
-				&perror("WARN: multiple spaces found in \"$_\"") if ($space =~ /\s\s+/);
-				&perror("WARN: \"$group\" unknown group in PLIST") if (getgrnam($group) eq "");
+			} elsif ($_ =~ /^\@(owner|group)\s/) {
+				&perror("WARN: \@$1 should not be needed in PLIST");
 			} elsif ($_ =~ /^\@(dirrm|option)/) {
 				; # no check made
 			} else {
