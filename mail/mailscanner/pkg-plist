@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.16 2004/11/01 20:10:10 sem Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.17 2004/12/17 07:32:45 edwin Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -452,6 +452,7 @@ libexec/MailScanner/vexira-wrapper.sample
 %%PORTDOCS%%%%DOCSDIR%%/Sophos.install.freebsd
 %%PORTDOCS%%%%DOCSDIR%%/book.cover.gif
 %%PORTDOCS%%%%DOCSDIR%%/building.txt
+%%PORTDOCS%%%%DOCSDIR%%/docs.html
 %%PORTDOCS%%%%DOCSDIR%%/donations.shtml
 %%PORTDOCS%%%%DOCSDIR%%/downloadgraphs.shtml
 %%PORTDOCS%%%%DOCSDIR%%/downloads.shtml
