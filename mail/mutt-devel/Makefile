@@ -3,13 +3,15 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.118 2001/08/10 15:32:39 ijliao Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.119 2001/08/12 16:24:06 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
-PORTVERSION=	1.3.20
-PORTREVISION=	2
+PORTVERSION=	1.3.21
 CATEGORIES+=	mail
+.if defined(WITH_MUTT_NNTP)
+CATEGORIES+=	news
+.endif
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/mirrors/mutt/devel/ \
 		ftp://ftp.parodius.com/pub/mutt/devel/
 DISTNAME=	mutt-${PORTVERSION}i
@@ -38,6 +40,7 @@ PATCH_SITES+=	http://www.mutt.org.ua/download/mutt-${PATCH_VERSION}/ \
 		ftp://ftp2.mutt.org.ua/pub/mutt/mutt-${PATCH_VERSION}/
 .endif
 
+PATCH_VERSION=	1.3.20
 .if !defined(PATCH_VERSION)
 PATCH_VERSION=	${PORTVERSION}
 .endif
