@@ -2,7 +2,7 @@
 # Date created:				July 27th 2000
 # Whom:	      				Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.1 2000/07/29 01:17:06 ben Exp $
 #
 
 PORTNAME=	Mail-Sender
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ben@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64

@@ -2,7 +2,7 @@
 # Date created:		23rd August, 2000
 # Whom:			Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/cvsmail/Makefile,v 1.2 2000/08/26 05:01:53 obrien Exp $
+# $FreeBSD: ports/mail/cvsmail/Makefile,v 1.3 2000/08/29 17:21:07 ben Exp $
 #
 
 PORTNAME=	cvsmail
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.scientia.demon.co.uk/users/ben/software/mail/dists/
 DISTNAME=	mailutils-${PORTVERSION}
 
-MAINTAINER=	ben@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 ALL_TARGET=	cvsmail
 MANCOMPRESSED=	no
