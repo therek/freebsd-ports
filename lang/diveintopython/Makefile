@@ -2,11 +2,11 @@
 # Date created:		15 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.7 2001/09/04 11:31:05 wjv Exp $
+# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.8 2001/09/06 14:57:41 wjv Exp $
 #
 
 PORTNAME=	diveintopython
-PORTVERSION=	3.6.3
+PORTVERSION=	3.6.4
 CATEGORIES=	lang python
 MASTER_SITES=	http://diveintopython.org/download/
 DISTNAME=	${PORTNAME}
