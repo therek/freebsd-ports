@@ -2,19 +2,18 @@
 # Date created:				Thu 29 Jun 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/asp2php/Makefile,v 1.3 2000/10/29 22:36:50 steve Exp $
+# $FreeBSD: ports/www/asp2php/Makefile,v 1.4 2000/10/29 22:57:58 steve Exp $
 #
 
 PORTNAME=	asp2php
-PORTVERSION=	0.75.1
-PORTREVISION=	1
+PORTVERSION=	0.75.11
 CATEGORIES=	www
 MASTER_SITES=	http://home.i1.net/~naken/asp2php/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${DISTNAME}
 
 WANT_GTK=	yes
 
@@ -23,10 +22,12 @@ WANT_GTK=	yes
 .if defined(HAVE_GTK)
 USE_GTK=	yes
 ALL_TARGET=	all gtkasp2php
-INSTALL_TARGET=	install install-gtk
 PLIST_SUB+=	WANT_GTK=""
 .else
 PLIST_SUB+=	WANT_GTK="@comment "
 .endif
+
+pre-build:
+	${PERL} -pi -e "s:gtk-config:${GTK_CONFIG}:g" ${WRKSRC}/Makefile
 
 .include <bsd.port.post.mk>
