@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.232 1999/11/11 11:51:52 kuriyama Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.233 1999/11/14 03:58:55 steve Exp $
 #
 
     SUBDIR += Canna
@@ -147,6 +147,7 @@
     SUBDIR += mutt
     SUBDIR += namazu
     SUBDIR += ndtpd
+    SUBDIR += ne
     SUBDIR += nethack
     SUBDIR += netscape-fonts
     SUBDIR += netscape3.language
