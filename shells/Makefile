@@ -1,4 +1,4 @@
-# $FreeBSD: ports/shells/Makefile,v 1.23 2000/01/06 12:04:15 asami Exp $
+# $FreeBSD: ports/shells/Makefile,v 1.24 2000/01/08 18:31:01 wes Exp $
 #
 
     SUBDIR += bash1
@@ -10,6 +10,7 @@
     SUBDIR += pdksh
     SUBDIR += perlsh
     SUBDIR += rc
+    SUBDIR += sash
     SUBDIR += scsh
     SUBDIR += tcsh
     SUBDIR += zsh
