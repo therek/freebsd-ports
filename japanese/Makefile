@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.271 2000/04/14 22:27:00 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.272 2000/04/15 00:17:16 knu Exp $
 #
 
     SUBDIR += Canna
@@ -302,6 +302,7 @@
     SUBDIR += xfig
     SUBDIR += xjman
     SUBDIR += xklock
+    SUBDIR += xmsgsaver
     SUBDIR += xnetmaj
     SUBDIR += xshodo
     SUBDIR += xshodou
