@@ -2,22 +2,24 @@
 # Date created:				20 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/mail/grepmail/Makefile,v 1.6 2000/04/13 19:59:44 cpiazza Exp $
+# $FreeBSD: ports/mail/grepmail/Makefile,v 1.7 2000/04/14 23:37:53 jedgar Exp $
 #
 
 PORTNAME=	grepmail
-PORTVERSION= 	4.23
+PORTVERSION= 	4.30
 CATEGORIES=	mail
 MASTER_SITES=	http://download.sourceforge.net/grepmail/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
+USE_PERL5=	yes
 NO_BUILD=	yes
 POD2MAN?=	/usr/bin/pod2man
 
 MAN1=		grepmail.1
 
 do-configure:
+		@${PERL} -pi.orig -e 's|_PERL_|${PERL}|' ${WRKSRC}/grepmail.DP
 		@cd ${WRKSRC} && ${CP} grepmail.DP grepmail
 		@cd ${WRKSRC} && ${POD2MAN} grepmail > grepmail.1
 
