@@ -3,18 +3,16 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/editors/textedit/Makefile,v 1.8 1999/08/25 05:44:28 obrien Exp $
+# $FreeBSD: ports/editors/textedit/Makefile,v 1.9 1999/12/22 10:28:28 sheldonh Exp $
 #
 
 DISTNAME=	textedit-1.0
 CATEGORIES=	editors
-MASTER_SITES=	http://www.FreeBSD.org/~jraynard/ports/distfiles/
+MASTER_SITES=	http://www.FreeBSD.org/~fenner/distfiles/
 
 MAINTAINER=	alex@big.endian.de
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
-
-BROKEN=		"mastersite gone"
 
 WRKSRC=		${WRKDIR}/textedit
 USE_IMAKE=	yes

@@ -3,7 +3,7 @@
 # Date created: 	13 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.6 1999/08/25 05:47:15 obrien Exp $
 #
 
 DISTNAME=	ElectricFence-2.0.5
@@ -11,8 +11,6 @@ PKGNAME=	electricfence-2.0.5
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/c
-
-MAINTAINER=	jraynard@freebsd.org
 
 MAN3=		libefence.3
 

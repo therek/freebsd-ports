@@ -3,14 +3,12 @@
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/props/Makefile,v 1.6 1999/08/31 02:50:37 peter Exp $
 #
 
 DISTNAME=	props-1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://www.freebsd.org/~jraynard/ports/distfiles/
-
-MAINTAINER=	jraynard@@freebsd.org
+MASTER_SITES=	http://www.freebsd.org/~fenner/distfiles/
 
 LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 

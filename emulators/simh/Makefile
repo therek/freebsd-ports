@@ -3,7 +3,7 @@
 # Date created:         7 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/emulators/sim/Makefile,v 1.4 1999/08/25 05:49:34 obrien Exp $
+# $FreeBSD: ports/emulators/sim/Makefile,v 1.5 1999/08/31 06:43:53 mharo Exp $
 #
 
 DISTNAME=	sim_2.3
@@ -11,8 +11,6 @@ PKGNAME=	sim-2.3
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://minnie.cs.adfa.oz.au/pub/PDP-11/Sims/Supnik_2.3/sources/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DISTNAME}.update1.tar.gz
-
-MAINTAINER=	jraynard@FreeBSD.org
 
 RESTRICTED=	"Non-commercial use only"
 

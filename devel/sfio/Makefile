@@ -3,7 +3,7 @@
 # Date created: 	8 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sfio/Makefile,v 1.8 1999/08/25 05:50:12 obrien Exp $
 #
 
 DISTNAME=	sfio_1998
@@ -15,8 +15,6 @@ EXTRACT_SUFX=	.src.unix.cpio
 EXTRACT_CMD=	cpio
 EXTRACT_BEFORE_ARGS=	-idF
 EXTRACT_AFTER_ARGS=	# empty
-
-MAINTAINER=	jraynard@freebsd.org
 
 NO_WRKSUBDIR=	yes
 IS_INTERACTIVE=	yes
