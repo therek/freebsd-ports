@@ -2,14 +2,15 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/gsed/Makefile,v 1.1 2000/12/19 08:13:26 will Exp $
 #
 
-PORTNAME=	sed
+PORTNAME=	gsed
 PORTVERSION=	3.02
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR= sed
+MASTER_SITE_SUBDIR=	sed
+DISTNAME=	sed-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -20,18 +21,12 @@ GNU_CONFIGURE=	yes
 
 MAN1=		gsed.1
 
-post-configure:
-	@${PERL} -pi.fbsd -e 's/s,x,x,/s,^,g,/' \
-		${WRKSRC}/Makefile \
-		${WRKSRC}/doc/Makefile \
-		${WRKSRC}/lib/Makefile \
-		${WRKSRC}/sed/Makefile
-
-post-install: share-examples
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/sed/sed ${PREFIX}/bin/gsed
+	${INSTALL_MAN} ${WRKSRC}/doc/sed.1 ${PREFIX}/man/man1/gsed.1
+	${INSTALL_DATA} ${WRKSRC}/doc/sed.info ${PREFIX}/info
 	@install-info ${PREFIX}/info/sed.info ${PREFIX}/info/dir
-
-share-examples:
 	@${MKDIR} ${PREFIX}/share/examples/gsed
-	@${INSTALL_DATA} ${WRKSRC}/dc.sed ${PREFIX}/share/examples/gsed
+	${INSTALL_DATA} ${WRKSRC}/dc.sed ${PREFIX}/share/examples/gsed
 
 .include <bsd.port.mk>
