@@ -3,7 +3,7 @@
 # Date created:         Sat Nov 5 11:43:03 PST 1994
 # Whom:                 piero
 #
-# $FreeBSD: ports/graphics/xanim/Makefile,v 1.21 1999/08/31 06:45:15 mharo Exp $
+# $FreeBSD: ports/graphics/xanim/Makefile,v 1.22 1999/11/26 18:39:24 steve Exp $
 #
 
 DISTNAME=       xanim2801
@@ -23,8 +23,7 @@ EXTRA_FILES=    vid_cvid_2.1_freebsdELFx86.tgz \
 		vid_iv41_1.1_freebsdELFx86.tgz \
 		vid_iv50_1.0_freebsdELFx86.tgz
 USE_IMAKE=	yes
-MANN=		xanim.n
-MANCOMPRESSED=	no
+MAN1=		xanim.1
 
 DLLDIR=		${PREFIX}/lib/X11/xanim
 
