@@ -2,7 +2,7 @@
 # Date created:         1999/05/29
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.4 2000/02/10 14:19:14 kuriyama Exp $
+# $FreeBSD: ports/www/apache-jserv/Makefile,v 1.5 2000/04/10 00:04:15 cpiazza Exp $
 #
 
 PORTNAME=	apache-jserv
@@ -28,6 +28,7 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}\
 		--libdir=${LOCALBASE}/libexec/apache\
 		--with-logdir=/var/log\
 		--sysconfdir=${PREFIX}/etc/apache\
+		--with-apxs=${LOCALBASE}/sbin/apxs\
 		--with-jdk-home=${LOCALBASE}/jdk1.1.8\
 		--with-JSDK=${LOCALBASE}/share/java/classes/jsdk.jar\
 		--with-java=${LOCALBASE}/jdk1.1.8/bin/java\
@@ -36,6 +37,12 @@ CONFIGURE_ARGS=	--prefix=${PREFIX}\
 		--with-gnu-ld\
 		--enable-compressed-jar\
 		--enable-EAPI
+.if defined (USE_JIKES)
+CONFIGURE_ARGS+=--with-javac=${LOCALBASE}/bin/jikes
+.endif
+
+pre-install:
+	${MKDIR} ${PREFIX}/share/java/classes
 
 post-install:
 	@${CAT} ${PKGDIR}/MESSAGE
