@@ -2,14 +2,13 @@
 # Date created:         Nov 26 1997
 # Whom:                 msmith@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_kdump/Makefile,v 1.14 2000/04/11 21:28:54 mharo Exp $
+# $FreeBSD: ports/devel/linux_kdump/Makefile,v 1.15 2000/06/29 07:02:11 obrien Exp $
 #
 
 PORTNAME=	linux_kdump
 PORTVERSION=	1.4
 CATEGORIES=	devel linux
-MASTER_SITES=	${MASTER_SITE_LOCAL}  \
-		ftp://ftp.scc.nl/pub/FreeBSD/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	marcel
 
 MAINTAINER=	marcel@FreeBSD.org
