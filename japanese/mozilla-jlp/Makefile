@@ -2,14 +2,15 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.16 2001/06/22 14:24:18 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.17 2001/06/30 18:33:49 sf Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 PORTEPOCH=	1
 CATEGORIES=	japanese www
-MASTER_SITES=	http://www.mozilla.gr.jp/jlp/
+MASTER_SITES=	http://www.mozilla.gr.jp/jlp/ \
+		http://www.ash.ne.jp/~mal/mozilla/
 PKGNAMESUFFIX=	-jlp
 DISTNAME=	${JLP_SRC}
 EXTRACT_SUFX=	# none
@@ -73,9 +74,6 @@ do-install:
 	${MV} -f all.js all.js.orig; ${MV} -f unix.js unix.js.orig)
 	(cd ${PREFIX}/lib/mozilla/defaults/profile; \
 	${MV} -f bookmarks.html bookmarks.html.orig; \
-	${MV} -f localstore.rdf localstore.rdf.orig; \
-	${MV} -f mimeTypes.rdf mimeTypes.rdf.orig; \
-	${MV} -f panels.rdf panels.rdf.orig; \
 	${MV} -f search.rdf search.rdf.orig)
 	(cd ${PREFIX}/lib/mozilla/searchplugins; \
 	${MV} -f google.gif google.gif.orig; \
@@ -90,9 +88,6 @@ do-install:
 	${TAR} -xf - -C ${PREFIX}/lib/mozilla
 	(cd ${PREFIX}/lib/mozilla/defaults/profile; \
 	${CP} -p JP/bookmarks.html bookmarks.html; \
-	${CP} -p JP/localstore.rdf localstore.rdf; \
-	${CP} -p JP/mimeTypes.rdf mimeTypes.rdf; \
-	${CP} -p JP/panels.rdf panels.rdf; \
 	${CP} -p JP/search.rdf search.rdf)
 	(cd ${PREFIX}/lib/mozilla/chrome; \
 	${CP} installed-chrome.txt.orig installed-chrome.txt; \
