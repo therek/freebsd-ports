@@ -2,17 +2,16 @@
 # Date created:				30 Nov 1999
 # Whom:					rod@zort.on.ca
 #
-# $FreeBSD: ports/security/ident2/Makefile,v 1.3 2000/04/21 08:18:24 mharo Exp $
+# $FreeBSD: ports/security/ident2/Makefile,v 1.4 2001/05/21 18:14:41 fenner Exp $
 #
 
 PORTNAME=	ident2
-PORTVERSION=	1.0
+PORTVERSION=	1.02
 CATEGORIES=	security net
-MASTER_SITES=	http://www.nyct.net/~defile/programs/ident2/ \
-		http://www.oscentral.org/files/software/
-DISTNAME=	ident2-v1.0_FINAL
+MASTER_SITES=	http://netgraft.com/downloads/ident2/
+DISTNAME=	ident2-v1.02_FINAL
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	scorpio@drkshdw.org
 
 GNU_CONFIGURE=	yes
 MAN8=		ident2.8
