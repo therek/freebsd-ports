@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.151 2001/07/06 02:54:30 ijliao Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.152 2001/07/06 16:19:04 kevlo Exp $
 #
 
     SUBDIR += AbiWord
@@ -81,6 +81,7 @@
     SUBDIR += mule-common
     SUBDIR += nano
     SUBDIR += nedit
+    SUBDIR += nvi-devel
     SUBDIR += nvi-m17n
     SUBDIR += nvi-perl
     SUBDIR += offix-editor
