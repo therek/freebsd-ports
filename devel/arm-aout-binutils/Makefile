@@ -3,19 +3,19 @@
 # Date created:		2 june 2000
 # Whom:			Paul Becke <pbecke@javagear.com>
 #
-# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.1 2001/01/01 17:25:23 obrien Exp $
+# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.2 2001/01/10 14:01:56 sf Exp $
 #
 
-PORTNAME=	arm-aout-binutils
-PORTVERSION=	2.9.1
-PORTREVISION=	1
+PORTNAME=	binutils
+PORTVERSION=	2.11
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	binutils
-DISTNAME=	binutils-2.9.1
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR=	binutils/releases
+PKGNAMEPREFIX=	arm-aout-
 
 MAINTAINER=	pbecke@javagear.com
 
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=arm-aout
