@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.180 2003/10/03 09:08:52 roam Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -673,7 +673,6 @@ MASTER_SITE_WINDOWMAKER+= \
 MASTER_SITE_XCONTRIB+=	\
 	ftp://crl.dec.com/pub/X11/contrib/%SUBDIR%/ \
 	ftp://ftp.net.ohio-state.edu/pub/X11/contrib/%SUBDIR%/ \
-	ftp://uiarchive.uiuc.edu/pub/ftp/ftp.x.org/contrib/%SUBDIR%/ \
 	ftp://ftp.gwdg.de/pub/x11/x.org/contrib/%SUBDIR%/ \
 	ftp://ftp.duke.edu/pub/X11/contrib/%SUBDIR%/ \
 	ftp://ftp.x.org/contrib/%SUBDIR%/ \
