@@ -3,7 +3,7 @@
 # Date created:        17 Jan 2000
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/editors/vigor/Makefile,v 1.1 2000/01/18 02:29:17 billf Exp $
+# $FreeBSD: ports/editors/vigor/Makefile,v 1.2 2000/02/11 19:01:31 billf Exp $
 #
 
 DISTNAME=	vigor-0.014
@@ -21,8 +21,6 @@ CONFIGURE_ENV+=	LDFLAGS="-L${LOCALBASE}/lib"
 
 WRKSRC= 	${WRKDIR}/${DISTNAME}/build
 CFLAGS+= 	-I${LOCALBASE}/include/tcl8.2 -I${LOCALBASE}/include/tk8.2
-
-MAN1=		ex.1 vi.1 view.1
 
 # Uglyness. So is "-ltcl -ltk -ltcl", so I don't feel bad.
 post-patch:
