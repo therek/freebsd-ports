@@ -2,11 +2,11 @@
 # Date created:				31 Jan 2000
 # Whom:					Archie Cobbs
 #
-# $FreeBSD: ports/net/mpd-netgraph/Makefile,v 1.14 2000/09/19 23:04:55 archie Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpd
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	archie
