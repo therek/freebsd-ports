@@ -2,7 +2,7 @@
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.30 2000/06/16 10:38:36 sobomax Exp $
+# $FreeBSD: ports/japanese/Wnn/Makefile,v 1.31 2000/06/16 21:51:12 asami Exp $
 #
 
 PORTNAME=	Wnn
@@ -17,6 +17,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	taoka@FreeBSD.org
+
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes
