@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.248 2000/08/29 10:41:20 sumikawa Exp $
+# $FreeBSD: ports/www/Makefile,v 1.249 2000/09/02 14:42:19 sobomax Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -159,6 +159,7 @@
     SUBDIR += swish-e
     SUBDIR += tclhttpd
     SUBDIR += thttpd
+    SUBDIR += thumbnail_index
     SUBDIR += tidy
     SUBDIR += tinyproxy
     SUBDIR += transproxy
