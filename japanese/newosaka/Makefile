@@ -3,7 +3,7 @@
 # Date created:        20 January 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/newosaka/Makefile,v 1.5 1999/08/25 05:25:54 obrien Exp $
 #
 
 DISTNAME=	newosaka
@@ -12,7 +12,7 @@ CATEGORIES+=	japanese
 MASTER_SITES=	ftp://ports.jp.freebsd.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
 DISTFILES=	new-osaka.tar.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 do-build:
 	(cd ${WRKSRC}; ${CC} ${CFLAGS} -o osaka osaka.c -I${WRKSRC})

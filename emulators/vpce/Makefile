@@ -3,7 +3,7 @@
 # Date created:        20 August 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vpce/Makefile,v 1.3 1999/08/25 05:49:48 obrien Exp $
 #
 
 DISTNAME=	vpce03f_freebsd
@@ -12,7 +12,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	http://www.fortunecity.com/roswell/vanthal/10/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_XLIB=	yes

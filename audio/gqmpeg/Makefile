@@ -3,7 +3,7 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.19 1999/09/02 05:52:13 mharo Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.20 1999/10/08 02:51:37 nakai Exp $
 #
 
 DISTNAME=	gqmpeg-0.6.3
@@ -12,7 +12,7 @@ MASTER_SITES=	http://gqview.netpedia.net/ \
 		http://www.geocities.com/SiliconValley/Haven/5235/
 EXTRACT_SUFX=	.src.tar.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib

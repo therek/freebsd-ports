@@ -3,7 +3,7 @@
 # Date created:        20 Oct 1996
 # Whom:                Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gifmerge/Makefile,v 1.5 1999/08/25 06:13:59 obrien Exp $
 #
 
 DISTNAME=	gifmerge
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 ALL_TARGET=	gifmerge
 NO_WRKSUBDIR=	yes

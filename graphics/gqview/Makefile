@@ -3,7 +3,7 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.16 1999/08/31 06:44:58 mharo Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.17 1999/10/08 03:29:42 nakai Exp $
 #
 
 DISTNAME=	gqview-0.7.0.src
@@ -13,7 +13,7 @@ MASTER_SITES=	http://gqview.netpedia.net/ \
 		http://www.geocities.com/SiliconValley/Haven/5235/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		Imlib.5:${PORTSDIR}/graphics/imlib

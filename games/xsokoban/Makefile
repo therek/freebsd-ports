@@ -3,14 +3,14 @@
 # Date created:        16 November 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xsokoban/Makefile,v 1.9 1999/08/25 06:06:14 obrien Exp $
+# $FreeBSD: ports/games/xsokoban/Makefile,v 1.10 1999/08/27 21:14:01 mharo Exp $
 #
 
 DISTNAME=	xsokoban-3.3c
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.pmg.lcs.mit.edu/pub/xsokoban/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

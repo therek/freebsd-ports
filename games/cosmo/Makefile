@@ -3,7 +3,7 @@
 # Date created:        28 December 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/cosmo/Makefile,v 1.5 1999/08/25 06:03:08 obrien Exp $
 #
 
 DISTNAME=	cosmo-2.0.4
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.jinr.ru/pub/PD/cosmo/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX}  moon.tif.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 NO_CDROM=	Possible copyright infringement
 

@@ -3,14 +3,14 @@
 # Date created:		22 January 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xsoldier/Makefile,v 1.9 1999/08/25 06:06:16 obrien Exp $
 #
 
 DISTNAME=	xsoldier-0.96
 CATEGORIES=	games
 MASTER_SITES=	http://www.surfline.ne.jp/hachi/xsoldier/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

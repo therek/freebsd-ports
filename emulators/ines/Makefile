@@ -3,7 +3,7 @@
 # Date created:		02 November 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/ines/Makefile,v 1.13 1999/08/25 05:49:20 obrien Exp $
 #
 
 DISTNAME=	iNES10-FreeBSD-80x86-bin
@@ -12,7 +12,7 @@ CATEGORIES=	emulators
 MASTER_SITES=	http://www.komkon.org/fms/iNES/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes

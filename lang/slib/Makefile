@@ -3,7 +3,7 @@
 # Date created:        01 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/slib/Makefile,v 1.5 1999/08/25 06:35:25 obrien Exp $
 #
 
 DISTNAME=	slib2c5
@@ -12,7 +12,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	scm
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 BUILD_DEPENDS=	scheme48:${PORTSDIR}/lang/scheme48
 

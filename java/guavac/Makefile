@@ -3,14 +3,14 @@
 # Date created:        10 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/guavac/Makefile,v 1.18 1999/08/25 06:16:18 obrien Exp $
 #
 
 DISTNAME=	guavac-1.2
 CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.yggdrasil.com/pub/dist/devel/compilers/guavac/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_NEWGCC=	yes
 USE_GMAKE=	yes

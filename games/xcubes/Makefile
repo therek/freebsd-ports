@@ -3,7 +3,7 @@
 # Date created:        12 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xcubes/Makefile,v 1.8 1999/08/25 06:05:01 obrien Exp $
 #
 
 DISTNAME=	xcubes-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xcubes
 USE_IMAKE=	yes

@@ -3,7 +3,7 @@
 # Date created:        05 February 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/recjis/Makefile,v 1.4 1999/08/25 05:26:43 obrien Exp $
 #
 
 DISTNAME=	recjis-1.0
@@ -12,7 +12,7 @@ CATEGORIES+=	japanese
 MASTER_SITES=	ftp://ftp.leo.chubu.ac.jp/pub/tools/
 DISTFILES=	recjis.tar.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	prog

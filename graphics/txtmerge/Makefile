@@ -3,7 +3,7 @@
 # Date created:		20 Oct 1996
 # Whom:			Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/txtmerge/Makefile,v 1.7 1999/08/25 06:15:07 obrien Exp $
 #
 
 DISTNAME=	txtmerge101
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/unixfreeware/graphics/ \
 		ftp://ftp.kddlabs.co.jp/pub/graphics/gifanim/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/txtmerge
 ALL_TARGET=	txtmerge

@@ -3,14 +3,14 @@
 # Date created:        14 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/giftool/Makefile,v 1.6 1999/08/25 06:14:01 obrien Exp $
 #
 
 DISTNAME=	giftool-1.0
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.sbs.de/pub/www/tools/giftool/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 NO_CDROM=	"Shareware"
 

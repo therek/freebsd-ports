@@ -3,7 +3,7 @@
 # Date created:		20 October 1996
 # Whom:			Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xrubik/Makefile,v 1.11 1999/08/25 06:06:06 obrien Exp $
 #
 
 DISTNAME=	xrubik-5.4.4
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/xpuzzles
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xrubik
 USE_IMAKE=	yes

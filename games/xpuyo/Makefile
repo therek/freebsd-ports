@@ -3,7 +3,7 @@
 # Date created:        12 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpuyo/Makefile,v 1.8 1999/08/25 06:05:56 obrien Exp $
 #
 
 DISTNAME=	xpuyo
@@ -11,7 +11,7 @@ PKGNAME=	xpuyo-0.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.meme.hokudai.ac.jp/pub/games/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 XMKMF=		xmkmf

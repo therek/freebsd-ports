@@ -3,7 +3,7 @@
 # Date created:        20 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.5 1999/08/25 05:27:57 obrien Exp $
+# $FreeBSD: ports/japanese/xnetmaj/Makefile,v 1.6 1999/08/28 01:57:24 mharo Exp $
 #
 
 DISTNAME=	netmaj
@@ -12,7 +12,7 @@ CATEGORIES=	japanese games
 MASTER_SITES=	http://www.sfc.wide.ad.jp/~kusune/netmaj/files/
 DISTFILES=	netmaj-2.0.7.tar.gz netmaj-xui-2.0.7.tar.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
