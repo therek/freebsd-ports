@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.sh,v 1.2 2003/10/03 13:31:26 dinoex Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -37,7 +37,7 @@ start_precmd()
 
 # set defaults
 
-clamav_milter_enable=${clamav_milter_enable:-"NO"}
+clamav_milter=${clamav_milter:-"NO"}
 clamav_milter_socket=${clamav_milter_socket:-"%%CLAMAV_MILTER_SOCKET%%"}
 clamav_milter_flags=${clamav_milter_flags:-"--postmaster-only --local --outgoing --max-children=50"}
 
