@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/shells/bash2/pkg-plist,v 1.17 2002/08/04 18:42:09 obrien Exp $
 bin/bash
 @exec echo "updating /etc/shells"; cp /etc/shells /etc/shells.bak; (grep -v %D/%F /etc/shells.bak; echo %D/%F) >/etc/shells
 @unexec echo "updating /etc/shells"; cp /etc/shells /etc/shells.bak; (grep -v %D/%F /etc/shells.bak) >/etc/shells
@@ -6,7 +6,7 @@ bin/bashbug
 @unexec install-info --delete %D/info/bash.info %D/info/dir
 info/bash.info
 @exec install-info %D/info/bash.info %D/info/dir
-share/doc/bash/article.ps.bz2
-share/doc/bash/bashref.ps.bz2
-share/doc/bash/article.txt
-@dirrm share/doc/bash
+%%PORTDOCS%%%%DOCSDIR%%/article.ps.bz2
+%%PORTDOCS%%%%DOCSDIR%%/bashref.ps.bz2
+%%PORTDOCS%%%%DOCSDIR%%/article.txt
+%%PORTDOCS%%@dirrm %%DOCSDIR%%
