@@ -2,7 +2,7 @@
 # Date created:         Sat Nov 08 09:47:12 CET 1997
 # Whom:                 se
 #
-# $FreeBSD: ports/games/xblast/Makefile,v 1.8 2000/04/14 12:27:02 asami Exp $
+# $FreeBSD: ports/games/xblast/Makefile,v 1.9 2000/04/28 09:27:31 se Exp $
 #
 
 PORTNAME=	xblast
@@ -16,11 +16,7 @@ MAINTAINER=	se@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/XBlast-2.6-sound
 USE_IMAKE=      yes
-NO_INSTALL_MANPAGES=	yes
-MANN=		xblast.n
-MANCOMPRESSED=	no
-
-post-install:
-	@${INSTALL_MAN} ${WRKSRC}/xblast.man ${MANNPREFIX}/man/mann/xblast.n
+MAN1=		xblast.1
+MANCOMPRESSED=	yes
 
 .include <bsd.port.mk>
