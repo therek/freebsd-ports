@@ -2,7 +2,7 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.8 2000/06/20 13:37:38 nectar Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.9 2000/09/08 12:23:59 tg Exp $
 #
 
 PORTNAME=		py-xml
@@ -16,10 +16,17 @@ DISTNAME=		PyXML-${PORTVERSION}
 
 MAINTAINER=		nectar@FreeBSD.org
 
-BUILD_DEPENDS=		${LOCALBASE}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
-RUN_DEPENDS=		python1.5:${PORTSDIR}/lang/python15
+BUILD_DEPENDS=		${PYDISTUTILS}
 
+USE_PYTHON=		yes
 PLIST=			${WRKDIR}/PLIST
+
+.include <bsd.port.pre.mk>
+
+.if ${PYTHON_VERSION} == "python1.5"
+PLISTS=			${PKGDIR}/PLIST.${PYTHON_VERSION}
+.endif
+PLISTS+=		${PKGDIR}/PLIST
 
 .if !defined(NOPORTDOCS)
 DOCDIR=			share/doc/py-xml
@@ -43,10 +50,10 @@ INSTALL_DOC=		${INSTALL_DATA} ${WRKSRC}/doc/@DOC             \
 .endif
 
 do-build:
-	cd ${WRKSRC} && python setup.py build
+	cd ${WRKSRC} && ${PYTHON_CMD} setup.py build
 
 pre-install:
-	${CP} ${PKGDIR}/PLIST ${PLIST}
+	${CAT} ${PLISTS} > ${PLIST}
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/${DOCDIR}
 	${MKDIR} ${PREFIX}/${DOCDIR}/xmlproc
@@ -58,6 +65,6 @@ pre-install:
 .endif
 
 do-install:
-	cd ${WRKSRC} && python setup.py install
+	cd ${WRKSRC} && ${PYTHON_CMD} setup.py install
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
