@@ -2,10 +2,11 @@
 # Date created:				Thu Jun 24 00:12:22 CEST 1999
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql322-client/Makefile,v 1.64 2000/04/14 17:43:42 knu Exp $
+# $FreeBSD: ports/databases/mysql322-client/Makefile,v 1.65 2000/10/07 23:59:32 asami Exp $
 #
 
 PORTNAME=	${MASTERPORTNAME:S/-server/-client/g}
+PORTREVISION=	0
 
 MASTERDIR=	${.CURDIR}/../mysql322-server
 COMMENT=	${PKGDIR}/pkg-comment.client
