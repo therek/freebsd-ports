@@ -3,7 +3,7 @@
 # Date created:		Jan 23, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dictd/Makefile,v 1.7 2001/07/10 13:54:21 sobomax Exp $
 #
 
 PORTNAME=	dictd
@@ -18,7 +18,8 @@ MAN1=		dictzip.1
 MAN8=		dictd.8
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}"
+CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}" \
+		--without-local-zlib
 CONFIGURE_ENV=	CFLAGS="${CFLAGS}"
 USE_GMAKE=	yes
 
