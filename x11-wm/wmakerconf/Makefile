@@ -1,9 +1,9 @@
 # New ports collection makefile for:	wmakerconf
-# Version required:			2.2
+# Version required:			2.3
 # Date Created:				14 August 1999
 # Whom:					Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.9 1999/10/10 09:38:33 asami Exp $
+# $FreeBSD: ports/x11-wm/wmakerconf/Makefile,v 1.10 1999/10/11 11:53:32 asami Exp $
 #
 
 DISTNAME=	wmakerconf-2.3
