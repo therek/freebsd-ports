@@ -2,7 +2,7 @@
 # Date created:		01 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/vscan/Makefile,v 1.22 2000/09/21 22:40:21 kris Exp $
+# $FreeBSD: ports/security/vscan/Makefile,v 1.23 2001/03/23 21:46:29 kris Exp $
 #
 
 PORTNAME=	uvscan
@@ -12,7 +12,7 @@ MASTER_SITES=	http://download.nai.com/products/evaluation/virusscan/english/unix
 DISTNAME=	vbsd414e
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	kris@FreeBSD.org
+MAINTAINER=	jeh@FreeBSD.org
 
 RUN_DEPENDS+=	${LOCALBASE}/sbin/update_dat:${PORTSDIR}/security/uvscan-dat
 
