@@ -2,15 +2,15 @@
 # Date created:		14 August 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/irc/tirc/Makefile,v 1.4 1999/10/08 22:46:54 dan Exp $
+# $FreeBSD: ports/irc/tirc/Makefile,v 1.5 2000/04/12 06:28:29 obrien Exp $
 #
 
 PORTNAME=	tirc
 PORTVERSION=	1.2
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.mayn.de/pub/unix/software/Network/Irc/tirc/
+MASTER_SITES=	ftp://ftp.mayn.de/pub/unix/Network/Irc/tirc/
 
-MAINTAINER=	dr@domix.de
+MAINTAINER=	dr@astorit.com
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	"--with-ansi-colours"
