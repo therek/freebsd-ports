@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.3 2001/01/12 23:10:58 mharo Exp $
+# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.4 2001/03/14 11:59:02 roam Exp $
 #
 
 PORTNAME=	netsaint-plugins
@@ -14,7 +14,8 @@ DISTNAME=	${PORTNAME}-1.2.9-1
 MAINTAINER=	ports@FreeBSD.org
 
 # make absolutely sure we have the user/group added!
-BUILD_DEPENDS=	netsaint:${PORTSDIR}/net/netsaint
+BUILD_DEPENDS=	netsaint:${PORTSDIR}/net/netsaint \
+		automake:${PORTSDIR}/devel/automake
 RUN_DEPENDS=	netsaint:${PORTSDIR}/net/netsaint
 .if defined(WANT_QSTAT)
 BUILD_DEPENDS+=	qstat:${PORTSDIR}/games/qstat
