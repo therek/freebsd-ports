@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.78 2001/04/27 12:13:41 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.79 2001/05/06 13:02:58 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -15,7 +15,7 @@ MAINTAINER?=	sada@FreeBSD.org
 
 RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape-wrapper
 
-.if (${PORTVERSION} == "4.76")
+.if (!defined(BROWSER_VER) || ${PORTVERSION} == "4.76")
 BROKEN=		"Has a serious security hole, use 4.77 instead"
 .endif
 
