@@ -3,7 +3,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.83 1999/11/06 19:43:17 eivind Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.84 1999/11/18 01:34:59 cpiazza Exp $
 #
 # Maximal ssh package requires YES values for
 # USE_PERL, USE_TCPWRAP
@@ -13,8 +13,8 @@ DISTNAME=       ssh-1.2.27
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/
 
-# disappeared? PATCH_SITES=	http://www.ssh.fi/sshprotocols2/patches/
-PATCH_SITES=	ftp://ftp2.inch.com/pub/FreeBSD/
+PATCH_SITES=	http://www.ssh.org/patches/ \
+		ftp://ftp2.inch.com/pub/FreeBSD/
 PATCHFILES=	patch-${DISTNAME}-bsd.tty.chown
 PATCH_DIST_STRIP= -p1
 
