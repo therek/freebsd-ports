@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.178 2001/03/10 20:59:41 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.179 2001/03/11 02:18:43 will Exp $
 #
 
     SUBDIR += agrep
@@ -64,7 +64,6 @@
     SUBDIR += libxml
     SUBDIR += libxml++
     SUBDIR += libxml2
-    SUBDIR += libxode
     SUBDIR += libxslt
     SUBDIR += linux-libxml
     SUBDIR += linuxdoc
