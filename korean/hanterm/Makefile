@@ -2,7 +2,7 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.14 2000/06/29 07:02:25 obrien Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.15 2000/07/16 22:22:51 cjh Exp $
 #
 
 PORTNAME=	hanterm
@@ -13,9 +13,13 @@ MASTER_SITES=	ftp://elf.kaist.ac.kr/pub/hanterm/ \
 
 MAINTAINER=	cjh@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/lib/X11/fonts/local/johabm16.pcf.gz:${PORTSDIR}/korean/johabfonts
+RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/johabm16.pcf.gz:${PORTSDIR}/korean/johabfonts
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES= yes
+
+post-install:
+	${MKDIR} ${PREFIX}/share/doc/hanterm
+	${INSTALL_DATA} ${WRKSRC}/hanterm.html ${PREFIX}/share/doc/hanterm/
 
 .include <bsd.port.mk>
