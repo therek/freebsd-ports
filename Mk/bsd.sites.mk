@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.47 2001/04/11 12:24:15 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.48 2001/04/13 15:08:56 ade Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -53,7 +53,7 @@ MASTER_SITE_GNOME+=	\
 	ftp://ftp.sourceforge.net/pub/mirrors/gnome/%SUBDIR%/ \
 	ftp://gnome.eazel.com/pub/GNOME/%SUBDIR%/ \
 	ftp://ftp.rpmfind.net/linux/gnome.org/%SUBDIR%/ \
-	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/
+	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/X11/GNOME/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.tr.gnome.org/pub/GNOME/%SUBDIR%/ \
