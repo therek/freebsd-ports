@@ -1,12 +1,12 @@
 # New ports collection makefile for:	genius
-# Version required:			0.4.2
+# Version required:			0.4.6
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/genius/Makefile,v 1.4 2000/03/29 07:16:59 kris Exp $
+# $FreeBSD: ports/deskutils/genius/Makefile,v 1.5 2000/03/29 22:34:41 ade Exp $
 #
 
-DISTNAME=	genius-0.4.2
+DISTNAME=	genius-0.4.6
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://ftp.5z.com/pub/genius/
 
@@ -28,13 +28,5 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
-
-post-install:
-.if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/genius
-.for file in AUTHORS COPYING ChangeLog NEWS README TODO
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/genius
-.endfor
-.endif
 
 .include <bsd.port.mk>
