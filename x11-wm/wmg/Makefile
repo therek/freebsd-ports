@@ -1,15 +1,16 @@
 # New ports collection makefile for:   wmg
-# Version required:    0.14.0
+# Version required:    0.14.12
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.3 1999/10/08 03:30:15 nakai Exp $
+# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.4 1999/10/17 13:45:04 asami Exp $
 #
 
-DISTNAME=	wmG-0.14.0
-PKGNAME=	wmg-0.14.0
+DISTNAME=	wmG-0.14.12
+PKGNAME=	wmg-0.14.12
 CATEGORIES=	x11-wm gnome
-MASTER_SITES=	http://www.geocities.com/SiliconValley/Screen/4079/downloads/
+MASTER_SITES=	http://ductape.net/~reeve/downloads/ \
+		http://www.geocities.com/SiliconValley/Screen/4079/downloads/
 
 MAINTAINER=	nakai@FreeBSD.org
 
