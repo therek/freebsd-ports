@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgcluster/files/pgcluster.sh.tmpl,v 1.1 2004/01/26 09:02:45 kuriyama Exp $
+# $FreeBSD: ports/databases/pgcluster/files/pgcluster.sh.tmpl,v 1.2 2004/02/16 01:24:58 kuriyama Exp $
 #
 # PROVIDE: pgcluster
 # REQUIRE: DAEMON
@@ -15,9 +15,9 @@
 # pgcluster_flags="-w -s"
 #
 
-pgcluster_enable="NO"
-pgcluster_data="%%PREFIX%%/pgsql/data"
-pgcluster_flags="-w -s"
+pgcluster_enable=${pgcluster_enable-"NO"}
+pgcluster_data=${pgcluster_data-"%%PREFIX%%/pgsql/data"}
+pgcluster_flags=${pgcluster_flags-"-w -s"}
 
 . %%RC_SUBR%%
 

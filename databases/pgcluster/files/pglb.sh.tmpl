@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/databases/pgcluster/files/pglb.sh.tmpl,v 1.1 2004/01/26 09:02:45 kuriyama Exp $
+# $FreeBSD: ports/databases/pgcluster/files/pglb.sh.tmpl,v 1.2 2004/02/16 01:24:58 kuriyama Exp $
 #
 # PROVIDE: pglb
 # REQUIRE: DAEMON
@@ -11,9 +11,8 @@
 # pglb_enable="YES"
 #
 
-pglb_enable="NO"
-pglb_data="%%PREFIX%%/pgsql/data"
-pglb_flags=""
+pglb_enable=${pglb_enable-"NO"}
+pglb_data=${pglb_data-"%%PREFIX%%/pgsql/data"}
 
 . %%RC_SUBR%%
 
