@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.324 2000/08/07 02:52:53 sada Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.325 2000/08/07 06:09:01 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -263,6 +263,7 @@
     SUBDIR += robodoc
     SUBDIR += rpc2
     SUBDIR += ruby-property
+    SUBDIR += ruby-racc
     SUBDIR += rvm
     SUBDIR += sdcc
     SUBDIR += sdl

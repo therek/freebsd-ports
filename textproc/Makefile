@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.102 2000/07/17 15:37:28 sobomax Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.103 2000/07/22 13:55:17 sanpei Exp $
 #
 
     SUBDIR += agrep
@@ -76,6 +76,7 @@
     SUBDIR += py-xml
     SUBDIR += rand
     SUBDIR += rman
+    SUBDIR += ruby-racc
     SUBDIR += sarep
     SUBDIR += se-ispell
     SUBDIR += sgmlformat
