@@ -2,12 +2,11 @@
 # Date created:				June 17th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.28 2001/04/19 05:44:02 vanilla Exp $
+# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.29 2001/04/21 11:43:07 vanilla Exp $
 #
 
 PORTNAME=	DBD-Pg
-PORTVERSION=	0.96
-PORTREVISION=	2
+PORTVERSION=	0.97
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
