@@ -2,7 +2,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.45 2000/11/23 11:56:07 sobomax Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.46 2000/12/12 14:05:11 roam Exp $
 #
 
 PORTNAME=	imap-uw
@@ -22,7 +22,7 @@ MAINTAINER=	imap-uw@freebsd.ady.ro
 
 LIB_DEPENDS=	c-client4.7:${PORTSDIR}/mail/cclient
 
-Y2K=		http://www.washington.edu/imap/IMAP-FAQs/FAQ-00002.html
+Y2K=		http://www.washington.edu/imap/IMAP-FAQs/faqs.xml#general1
 
 PAMAUTH?=	yes
 .if ${PAMAUTH} != "no"
