@@ -2,15 +2,15 @@
 # Date created:                         Sep 8 1998
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.13 2000/03/20 21:48:44 mharo Exp $
+# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.14 2000/04/10 00:06:37 cpiazza Exp $
 #
 
 PORTNAME=	p5-ParallelUA
-PORTVERSION= 	2.43
+PORTVERSION= 	2.48
 CATEGORIES=     www perl5 devel
 MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     LWP
-DISTNAME=	ParallelUserAgent-2.43
+DISTNAME=	ParallelUserAgent-${PORTVERSION}
 
 MAINTAINER=     ache@FreeBSD.org
 
