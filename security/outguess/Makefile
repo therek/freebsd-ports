@@ -4,7 +4,7 @@
 # based on the OpenBSD port by Dug Song <dugsong@monkey.org>
 #
 # $OpenBSD: Makefile,v 1.7 2000/10/22 15:43:25 espie Exp $
-# $FreeBSD: ports/security/outguess/Makefile,v 1.1 2000/12/31 10:42:46 trevor Exp $
+# $FreeBSD: ports/security/outguess/Makefile,v 1.2 2001/04/10 01:40:35 trevor Exp $
 #
 
 PORTNAME=	outguess
@@ -12,10 +12,9 @@ PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	http://www.outguess.org/ \
 		ftp://ftp.cryptoarchive.net/pub/cryptoarchive/mirrors/www-sites/www.outguess.org/ \
-		http://www.physnet.uni-hamburg.de/provos/ \
 		http://munitions.vipul.net/software/steganography/
 
-MAINTAINER=	Trevor Johnson <trevor@FreeBSD.org>
+MAINTAINER=	trevor@FreeBSD.org
 
 DOCDIR=		share/doc/outguess
 DOCS=		ChangeLog README STIRMARK-README TODO
