@@ -3,7 +3,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.13 1999/08/31 01:51:41 peter Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.14 1999/11/30 06:39:34 archie Exp $
 
 DISTNAME=		skip-1.0
 CATEGORIES=		security
@@ -59,7 +59,7 @@ post-patch:
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400006
-BROKEN=		New character device registration issues
+BROKEN=		New character device registration issues and _KERNEL
 .endif
 
 .include <bsd.port.post.mk>
