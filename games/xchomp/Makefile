@@ -2,7 +2,7 @@
 # Date created:         4 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xchomp/Makefile,v 1.10 2000/04/14 12:27:11 asami Exp $
+# $FreeBSD: ports/games/xchomp/Makefile,v 1.11 2000/05/29 23:38:18 will Exp $
 #
 
 PORTNAME=	xchomp
@@ -15,6 +15,5 @@ MAINTAINER=		swallace@FreeBSD.org
 
 WRKSRC=			${WRKDIR}/xchomp
 USE_IMAKE=		yes
-NO_INSTALL_MANPAGES=	yes
 
 .include <bsd.port.mk>
