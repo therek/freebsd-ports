@@ -3,7 +3,7 @@
 # Date created:				30 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/kplot3d/Makefile,v 1.3 2000/01/07 16:40:04 asami Exp $
+# $FreeBSD: ports/graphics/kplot3d/Makefile,v 1.4 2000/02/24 07:00:58 asami Exp $
 #
 
 DISTNAME=	kplot3d-0.70
@@ -19,10 +19,4 @@ USE_QT=		yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400004
-BROKEN=		"Obsolete compiler"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
