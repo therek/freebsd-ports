@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.33 2003/07/19 07:44:45 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.35 2003/09/24 11:07:21 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -111,7 +111,7 @@ _PYTHON_VERSION!=	(${LOCALBASE}/bin/python -c 'import sys; print sys.version[:3]
 					|| echo 2.3
 .endif
 PYTHON_VERSION?=	python${_PYTHON_VERSION}
-_PYTHON_PORTVERSION=	2.3.1
+_PYTHON_PORTVERSION=	2.3.2
 PYTHON_CMD?=		${PYTHONBASE}/bin/${PYTHON_VERSION}
 PYTHONBASE!=		(${PYTHON_CMD} -c 'import sys; print sys.prefix') \
 						2> /dev/null || echo ${LOCALBASE}
@@ -131,7 +131,7 @@ PYTHON_WRKSRC=		${WRKDIR}/Python-2.4a0-20030801
 .elif ${PYTHON_VERSION} == "python2.3"
 PYTHON_DISTFILE=	Python-${_PYTHON_PORTVERSION}.tgz
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python
-PYTHON_REL=			231
+PYTHON_REL=			232
 PYTHON_SUFFIX=		23
 PYTHON_WRKSRC=		${WRKDIR}/Python-${_PYTHON_PORTVERSION}
 
