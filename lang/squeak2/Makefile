@@ -2,7 +2,7 @@
 # Date created:        			4 March 1999
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak2/Makefile,v 1.19 2000/06/20 13:37:36 nectar Exp $
+# $FreeBSD: ports/lang/squeak2/Makefile,v 1.20 2001/04/17 11:22:29 roam Exp $
 #
 
 PORTNAME=	squeak
@@ -42,7 +42,7 @@ do-install:
 	(cd ${DISTDIR}/${DIST_SUBDIR} && ${INSTALL_DATA} $f ${PREFIX}/share/squeak/$f)
 	(cd ${PREFIX}/share/squeak && ${EXTRACT_CMD} -d $f)
 .endfor
-	(cd ${PREFIX}/share/squeak && ${CHMOD} 644 Squeak2.7.changes)
+	(cd ${PREFIX}/share/squeak && ${CHMOD} 644 Squeak-2.7.changes)
 
 post-install:
 	@${ECHO} "Make sure you have ${PREFIX}/bin in your PATH"
