@@ -2,7 +2,7 @@
 # Date created:		12 November 1998
 # Whom:			steve
 #
-# $FreeBSD: ports/devel/pmake/Makefile,v 1.2 1999/08/25 05:49:50 obrien Exp $
+# $FreeBSD: ports/devel/pmake/Makefile,v 1.3 2000/04/11 21:30:08 mharo Exp $
 #
 
 PORTNAME=	pmake
@@ -32,7 +32,7 @@ do-install::
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} install)
 
 .if defined(WANT_CUSTOMS)
-PLIST=		${PKGDIR}/PLIST.customs
+PLIST=		${PKGDIR}/pkg-plist.customs
 MAN1+=		export.1 reginfo.1 rexport.1
 MAN8=		cctrl.8 customs.8 importquota.8 logd.8
 
