@@ -2,12 +2,12 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.27 2000/12/20 13:44:27 roam Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.28 2001/01/28 22:23:25 clive Exp $
 #
 
 PORTNAME=	BitchX
 PORTVERSION=	1.0c17
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ftp.bitchx.org/pub/BitchX/source/
