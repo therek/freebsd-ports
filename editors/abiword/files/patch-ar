@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/editors/AbiWord/files/patch-ar,v 1.2 2001/08/08 15:46:45 sobomax Exp $
+$FreeBSD$
 
 --- src/pkg/common/unix/scripts/install.sh.orig	Sat Apr  7 10:59:52 2001
 +++ src/pkg/common/unix/scripts/install.sh	Wed Aug  8 13:31:57 2001
