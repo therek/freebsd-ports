@@ -2,10 +2,10 @@
 # Date created:        29 November 2003
 # Whom:                Autrijus Tang <autrijus@autrijus.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sympa-elixus/Makefile,v 1.4 2004/03/17 07:09:53 demon Exp $
 #
 
-PORTVERSION=	10170
+PORTVERSION=	10527
 PORTREVISION=	0
 MASTER_SITES=	http://p4.elixus.org/hist/
 PKGNAMESUFFIX=	-elixus
