@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.96 2000/08/29 01:32:15 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.97 2000/09/22 01:58:54 kris Exp $
 #
 
 PORTNAME=	mutt
@@ -88,7 +88,7 @@ pre-configure:
 .if !defined(NOPORTDOCS)
 post-build:
 	${TOUCH} ${WRKSRC}/doc/mutt.man ${WRKSRC}/doc/manual.sgml
-	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-doc-ref
+	${PATCH} ${PATCH_ARGS} < ${PATCHDIR}/extra-patch-doc-ref
 	printf ",s|\$${PREFIX}|%s|g\nw\nq\n" ${PREFIX} | \
 		ed -s ${WRKSRC}/doc/mutt.man
 .if defined(WITH_DOCS)
