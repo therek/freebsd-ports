@@ -2,7 +2,7 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.13 2001/02/23 18:42:34 knu Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.14 2001/02/23 19:00:05 knu Exp $
 #
 
 PORTNAME=	fox
@@ -26,6 +26,8 @@ PATCH_DIST_STRIP=	-p1
 #EXTRA_PATCHES=	${PATCHDIR}/xunicode.patch-*
 
 BUILD_DEPENDS=	${X11BASE}/lib/libxunicode.a:${PORTSDIR}/converters/xunicode
+
+CONFIGURE_ENV=	X_CFLAGS=-DUSE_XUNICODE
 .endif
 
 USE_MESA=	yes
