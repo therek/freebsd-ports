@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.21 2001/01/24 03:26:00 vanilla Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.22 2001/01/24 12:05:10 olgeni Exp $
 #
 
 PORTNAME=	nessus
@@ -19,7 +19,7 @@ MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/ \
 		ftp://ftp.sekure.net/pub/nessus/nessus-${PORTVERSION}/
 DISTNAME=	nessus-core-${PORTVERSION}
 
-MAINTAINER=	olgeni@freebsd.org
+MAINTAINER=	olgeni@FreeBSD.org
 
 LIB_DEPENDS=	nasl.1:${PORTSDIR}/security/nessus-libnasl
 
