@@ -2,11 +2,11 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.18 2000/06/13 08:27:31 sobomax Exp $
+# $FreeBSD: ports/x11-wm/sawfish/Makefile,v 1.19 2000/06/14 13:20:59 sobomax Exp $
 #
 
 PORTNAME=	sawfish
-PORTVERSION= 	0.28
+PORTVERSION= 	0.28.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	sawmill
@@ -15,7 +15,7 @@ MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
-		rep.8:${PORTSDIR}/lang/librep
+		rep.9:${PORTSDIR}/lang/librep
 .if !defined(NOGNOME)
 LIB_DEPENDS+=	capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter
 .endif
