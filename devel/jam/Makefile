@@ -2,11 +2,12 @@
 # Date created:		10 July 1998
 # Whom:			Jeffrey Hsu <hsu@freebsd.org>
 #
-# $FreeBSD: ports/devel/jam/Makefile,v 1.6 2001/01/27 05:40:02 will Exp $
+# $FreeBSD: ports/devel/jam/Makefile,v 1.7 2001/02/08 12:27:06 kevlo Exp $
 #
 
 PORTNAME=	jam
 PORTVERSION=	2.3
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp1.perforce.com/pub/jam/
 
@@ -16,7 +17,11 @@ NO_WRKSUBDIR=	yes
 USE_ZIP=	yes
 
 do-install:
+.if ${MACHINE_ARCH} == "alpha"
+	${INSTALL_PROGRAM} ${WRKSRC}/bin.freebsdaxp/jam ${PREFIX}/bin
+.else
 	${INSTALL_PROGRAM} ${WRKSRC}/bin.freebsd/jam ${PREFIX}/bin
+.endif
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/jam
 	${INSTALL_DATA} ${WRKSRC}/*.html ${PREFIX}/share/doc/jam
