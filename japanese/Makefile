@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.255 2000/01/25 14:35:16 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.256 2000/01/27 13:08:02 taoka Exp $
 #
 
     SUBDIR += Canna
@@ -211,6 +211,7 @@
     SUBDIR += recjis
     SUBDIR += rubytk
     SUBDIR += rxvt
+    SUBDIR += samba
     SUBDIR += sdic
     SUBDIR += sed
     SUBDIR += seizedesktop
