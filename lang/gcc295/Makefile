@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc295/Makefile,v 1.72 2000/10/10 23:36:13 asami Exp $
+# $FreeBSD: ports/lang/gcc295/Makefile,v 1.73 2000/12/05 20:31:21 obrien Exp $
 #
 
 PORTNAME=	gcc
@@ -28,7 +28,7 @@ USE_BZIP2=	yes
 .include <bsd.port.pre.mk>
 
 GCC_REV=	${DISTNAME:S/gcc-//g}
-LIBSTDCPP_REV=	4
+LIBSTDCPP_REV=	2100
 
 .if ${PORTOBJFORMAT} == "elf"
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
