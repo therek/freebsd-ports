@@ -2,30 +2,30 @@
 # Date created:			29 February 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/corewars/Makefile,v 1.13 2000/06/05 03:44:03 kris Exp $
+# $FreeBSD: ports/games/corewars/Makefile,v 1.14 2000/06/14 13:21:18 sobomax Exp $
 #
 
-PORTNAME=	corewars
-PORTVERSION=	0.9.11
-CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+PORTNAME=		corewars
+PORTVERSION=		0.9.12
+CATEGORIES=		games
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	jim@FreeBSD.org
+MAINTAINER=		jim@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
+GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
+GLIB_CONFIG?=		${LOCALBASE}/bin/glib12-config
 
-USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
+USE_X_PREFIX=		yes
+GNU_CONFIGURE=		yes
 
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
-		GLIB_CONFIG="${GLIB_CONFIG}"
-MAKE_ENV=	FREEBSD_CFLAGS="${CFLAGS}"
+CONFIGURE_ENV=		GTK_CONFIG="${GTK_CONFIG}" \
+			GLIB_CONFIG="${GLIB_CONFIG}"
+MAKE_ENV=		FREEBSD_CFLAGS="${CFLAGS}"
 
-MAN6=		corewars.6
+MAN6=			corewars.6
 
 post-install:
 	@strip ${PREFIX}/bin/corewars
