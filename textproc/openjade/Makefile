@@ -2,7 +2,7 @@
 # Date created:		May 19, 2000
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/openjade/Makefile,v 1.28 2001/02/27 23:03:36 lioux Exp $
+# $FreeBSD: ports/textproc/openjade/Makefile,v 1.29 2001/02/28 01:48:02 lioux Exp $
 #
 
 PORTNAME=	openjade
@@ -34,11 +34,7 @@ post-install:
 # 'march=-mpentium -Os' produces core dumps with certain input files
 # Therefore, we'd better remove all machine optimizations and any -O
 # other than -O{0,1,}. Idea taken from palm/prc-tools-gcc.
-# The following sed does not reproduce the awk result. Odd.
-# ${SED} -e 's/-m[0-9a-zA-Z]+(=[0-9a-zA-Z]*)?//g' -e 's/-O[s2-9]+//g'
-CFLAGS!=	${ECHO} "${CFLAGS}" | ${AWK} 'BEGIN \
-			{ RS="-m[0-9a-zA-Z]+(=[0-9a-zA-Z]*)?|-O[s2-9]+" ; \
-				ORS="" } ; \
-			{ if (RT == "") { print $0 } else print }'
+CFLAGS!=	${ECHO} "${CFLAGS}" | ${SED} -E -e 's/-m[0-9a-zA-Z]+(=[0-9a-zA-Z]*)?//g' \
+			-e 's/-O[s2-9]+//g'
 
 .include <bsd.port.post.mk>
