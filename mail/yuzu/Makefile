@@ -2,11 +2,12 @@
 # Date created:		31 March 2000
 # Whom:			Daichi T.GOTO
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/yuzu/Makefile,v 1.1.1.1 2000/04/14 23:11:03 knu Exp $
 #
 
 PORTNAME=	yuzu
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://www.ongs.net/yuzu/
 
