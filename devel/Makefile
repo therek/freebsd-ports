@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.439 2001/02/21 00:15:06 sobomax Exp $
 #
     SUBDIR += zziplib
 
@@ -359,6 +359,7 @@
     SUBDIR += ruby-intl
     SUBDIR += ruby-libglade
     SUBDIR += ruby-locale
+    SUBDIR += ruby-mutexm
     SUBDIR += ruby-optparse
     SUBDIR += ruby-property
     SUBDIR += ruby-racc
