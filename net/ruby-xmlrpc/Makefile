@@ -2,11 +2,12 @@
 # Date created:		9 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.12 2001/07/29 11:50:52 knu Exp $
+# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.13 2001/08/02 18:30:17 knu Exp $
 #
 
 PORTNAME=	xmlrpc
 PORTVERSION=	1.7.2
+PORTREVISION=	1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.fantasy-coders.de/ruby/xmlrpc4r/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -16,7 +17,8 @@ DIST_SUBDIR=	ruby
 MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${RUBY_SITELIBDIR}/nqxml/info.rb:${PORTSDIR}/textproc/ruby-nqxml \
-		${RUBY_SITELIBDIR}/TCPSocketPipe.rb:${PORTSDIR}/net/ruby-tcpsocketpipe
+		${RUBY_SITELIBDIR}/TCPSocketPipe.rb:${PORTSDIR}/net/ruby-tcpsocketpipe \
+		${RUBY_SITELIBDIR}/GServer.rb:${PORTSDIR}/net/ruby-gserver
 # Alternative to ruby-nqxml:
 #		${RUBY_SITELIBDIR}/xmlparser.rb:${PORTSDIR}/textproc/ruby-xmlparser
 
@@ -30,7 +32,7 @@ post-extract:
 	${RM} -rf ${WRKSRC}/samples/monitor
 
 post-patch:
-	${RUBY} -i -pe '$$_ = "FILES2 = %w(GServer.rb)\n" if /^FILES2\s*=/' ${WRKSRC}/install.rb
+	${RUBY} -i -pe '$$_ = "FILES2 = []\n" if /^FILES2\s*=/' ${WRKSRC}/install.rb
 
 do-install:
 	cd ${WRKSRC} && ${RUBY} install.rb
