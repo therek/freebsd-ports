@@ -2,19 +2,20 @@
 # Date created:		15 January 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/www/sitecopy/Makefile,v 1.14 2000/02/16 23:59:55 ache Exp $
+# $FreeBSD: ports/www/sitecopy/Makefile,v 1.15 2000/04/10 00:06:48 cpiazza Exp $
 #
 
 PORTNAME=	sitecopy
-PORTVERSION= 	0.9.5
+PORTVERSION=    0.9.10
 CATEGORIES=	www
 MASTER_SITES=   http://www.lyra.org/sitecopy/
 
 MAINTAINER=     nik@FreeBSD.org
 
+BUILD_DEPENDS=  xgettext:${PORTSDIR}/devel/gettext
+
 FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS= --disable-nls
 USE_GMAKE=      yes
 ALL_TARGET=     sitecopy
 
