@@ -2,12 +2,11 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.61 2001/05/29 21:22:10 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.62 2001/05/29 21:38:36 knu Exp $
 #
 
 PORTNAME=	ruby
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
@@ -31,8 +30,8 @@ CONFIGURE_ARGS=	--enable-shared
 MAN1=		ruby${_RUBY_SUFFIX}.1
 MLINKS=		ruby${_RUBY_SUFFIX}.1 ruby.1
 
-.if !defined(WITH_LIBC_R)
-CONFIGURE_ARGS+=	--with-libc_r=no
+.if defined(WITH_LIBC_R)
+CONFIGURE_ARGS+=	--with-libc_r=yes
 .endif
 
 .include <bsd.port.pre.mk>
