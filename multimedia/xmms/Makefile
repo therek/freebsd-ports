@@ -3,7 +3,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.8 2000/02/11 01:26:05 cpiazza Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.9 2000/02/11 01:46:12 cpiazza Exp $
 #
 
 DISTNAME=	xmms-1.0.1
@@ -38,8 +38,5 @@ post-extract:
 	@${PERL} -pi.bak -e 's:\.s :\.S :g' ${WRKSRC}/Input/mpg123/Makefile.in
 	@${PERL} -pi.bak -e 's:blur_8.s:blur_8.S:g' \
 	    ${WRKSRC}/Visualization/blur_scope/Makefile.in
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
