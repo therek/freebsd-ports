@@ -1,12 +1,12 @@
 # New ports collection makefile for:   sawmill
-# Version required:    0.22
+# Version required:    0.23
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.4 2000/01/09 08:05:24 nakai Exp $
+# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.5 2000/01/26 07:02:03 nakai Exp $
 #
 
-DISTNAME=	sawmill-0.22
+DISTNAME=	sawmill-0.23
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://sawmill.sourceforge.net/pub/sawmill/ \
 
@@ -33,6 +33,8 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share \
 		--datadir=${PREFIX}/share --with-readline
 .if !defined(NOGNOME)
 CONFIGURE_ARGS+=	--enable-capplet
+.else
+CONFIGURE_ARGS+=	--disable-capplet
 .endif
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include\
 			-I${LOCALBASE}/include/giflib" \
