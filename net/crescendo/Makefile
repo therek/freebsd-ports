@@ -2,10 +2,10 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.1.1.1 2000/07/29 10:31:36 sada Exp $
 
 PORTNAME=	crescendo
-PORTVERSION=	1.1.5
+PORTVERSION=	1.1.6
 CATEGORIES=	net gnome
 MASTER_SITES=	http://crescendo.dpnd.com/files/
 
