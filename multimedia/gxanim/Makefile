@@ -2,16 +2,17 @@
 # Date created:         Sat Nov 5 11:43:03 PST 1994
 # Whom:                 Rod Taylor
 #
-# $FreeBSD: ports/graphics/gxanim/Makefile,v 1.4 2000/09/07 23:05:27 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gxanim
 PORTVERSION=	0.50
 CATEGORIES=	graphics
-MASTER_SITES=		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	fenner
+MASTER_SITES=	http://www.greslin.org/code/
+DISTNAME=	GXAnim-${PORTVERSION}
+EXTRACT_SUFX=	.tar.bz2
 
-MAINTAINER=	rbt@zort.on.ca
+MAINTAINER=	rbt@zort.ca
 
 RUN_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
 
