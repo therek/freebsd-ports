@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.373 2001/08/27 17:48:35 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.374 2001/08/29 12:04:14 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -138,6 +138,7 @@
     SUBDIR += p5-Locale-Codes
     SUBDIR += peq
     SUBDIR += patchutils
+    SUBDIR += pbs
     SUBDIR += pdmenu
     SUBDIR += pg
     SUBDIR += pinfo
