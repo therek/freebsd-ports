@@ -2,7 +2,7 @@
 # Date created:		3 December 2000
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/www/reportmagic/Makefile,v 1.2 2001/01/11 16:01:59 kevlo Exp $
+# $FreeBSD: ports/www/reportmagic/Makefile,v 1.3 2001/02/22 12:25:26 kevlo Exp $
 #
 
 PORTNAME=	reportmagic
@@ -18,8 +18,9 @@ RUN_DEPENDS=	analog:${PORTSDIR}/www/analog \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/HTML/Parser.pm:${PORTSDIR}/www/p5-HTML-Parser \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Config/IniFiles.pm:${PORTSDIR}/devel/p5-Config-IniFiles
 
-WRKSRC=		${WRKDIR}/${DISTNAME}
+BROKEN=		"Not compatible with Analog 5.0."
 
+WRKSRC=		${WRKDIR}/${DISTNAME}
 NO_BUILD=	YES
 
 do-install:
