@@ -3,10 +3,10 @@
 # Date created:				28 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/c2html/Makefile,v 1.5 1999/08/31 02:09:00 peter Exp $
 #
 
-DISTNAME=		c2html-0.6.1
+DISTNAME=		c2html-0.6.3
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
