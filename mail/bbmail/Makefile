@@ -2,18 +2,17 @@
 # Date created:		May 3 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/bbmail/Makefile,v 1.10 2000/04/13 19:59:24 cpiazza Exp $
+# $FreeBSD: ports/mail/bbmail/Makefile,v 1.11 2000/06/18 01:42:14 cpiazza Exp $
 #
 
 PORTNAME=	bbmail
-PORTVERSION=	0.6.2
+PORTVERSION=	0.6.8
 CATEGORIES=	mail
-MASTER_SITES=	http://bbtools.windsofstorm.net/sources/ \
-		ftp://stokes.tte.ele.tue.nl/pub/bbmail/
+MASTER_SITES=	http://bbtools.thelinuxcommunity.org/sources/
 
 MAINTAINER=	patseal@hyperhost.net
 
+USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-USE_XLIB=	yes
 
 .include <bsd.port.mk>
