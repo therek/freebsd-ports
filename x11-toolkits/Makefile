@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.92 2000/08/25 18:24:42 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.93 2000/08/29 09:21:15 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -68,7 +68,8 @@
     SUBDIR += ruby-gtk
     SUBDIR += ruby-qt
     SUBDIR += ruby-qt-i18n
-    SUBDIR += rubytk
+    SUBDIR += ruby-tk
+    SUBDIR += ruby14-tk
     SUBDIR += slingshot
     SUBDIR += thinice
     SUBDIR += tix
