@@ -3,7 +3,7 @@
 # Date created:		6 November 1994
 # Whom:			smace
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/jpeg/Makefile,v 1.18 1999/08/25 06:14:21 obrien Exp $
 #
 
 DISTNAME=       jpegsrc.v6b
@@ -17,6 +17,7 @@ WRKSRC=         ${WRKDIR}/jpeg-6b
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-static
 MAN1=		cjpeg.1 djpeg.1 jpegtran.1 rdjpgcom.1 wrjpgcom.1
+USE_LIBTOOL=	yes
 
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
