@@ -2,12 +2,12 @@
 # Date created:				6/5/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/krb5/Makefile,v 1.27 2001/07/24 15:29:39 nectar Exp $
+# $FreeBSD: ports/security/krb5/Makefile,v 1.28 2001/07/24 19:19:13 nectar Exp $
 #
 
 PORTNAME=		krb5
 PORTVERSION=		1.2.2
-PORTREVISION=		3
+PORTREVISION=		4
 CATEGORIES=		security
 MASTER_SITES=		# manual download
 
@@ -23,6 +23,10 @@ CONFIGURE_ARGS?=	--enable-shared --with-ccopts="${CFLAGS}"
 CONFIGURE_ENV=		INSTALL="${INSTALL}"
 MAKE_ARGS=		INSTALL="${INSTALL}"
 KRB5_KRB4_COMPAT?=	YES
+
+.if defined(USA_RESIDENT) && ${USA_RESIDENT} == "NO"
+MASTER_SITES=          http://www.crypto-publish.org/dist/mit-kerberos5/
+.endif
 
 .if !defined(KRB5_KRB4_COMPAT) || ${KRB5_KRB4_COMPAT} == "NO"
 CONFIGURE_ARGS+=	--without-krb4
@@ -56,6 +60,7 @@ HTML_DOCS=		admin.html install_foot.html user-guide.html          \
 			admin_toc.html krb425.html user-guide_toc.html        \
 			install.html krb425_toc.html
 
+.if !defined(USA_RESIDENT) || ${USA_RESIDENT} == "YES"
 do-fetch:
 	@if [ ! -f ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} ]; then        \
 	${ECHO} "";							\
@@ -70,6 +75,7 @@ do-fetch:
 	${ECHO} "   it in ${DISTDIR}.  Then run make again.";           \
 	${FALSE};							\
 	fi
+.endif
 
 pre-build:
 .if !defined(KRB5_KRB4_COMPAT)
