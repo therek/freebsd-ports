@@ -2,11 +2,11 @@
 # Date created:		15 November 1999
 # Whom:			jim@thehousleys.net
 #
-# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.3 2000/01/22 02:47:33 jedgar Exp $
+# $FreeBSD: ports/sysutils/healthd/Makefile,v 1.4 2000/04/09 19:07:48 cpiazza Exp $
 #
 
 PORTNAME=	healthd
-PORTVERSION= 	0.3
+PORTVERSION=	0.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://healthd.thehousleys.net/
 
@@ -15,7 +15,7 @@ MAINTAINER=	jim@thehousleys.net
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--exec-prefix=${PREFIX}
 
-MAN8= healthd.8
+MAN8=		healthd.8
 
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/healthd.sh ]; then \

@@ -2,11 +2,11 @@
 # Date created:		24 Aug 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/sysutils/rtty/Makefile,v 1.5 2000/01/24 05:55:53 steve Exp $
+# $FreeBSD: ports/sysutils/rtty/Makefile,v 1.6 2000/04/09 19:08:24 cpiazza Exp $
 #
 
 PORTNAME=	rtty
-PORTVERSION= 	3.2
+PORTVERSION=	3.2
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.vix.com/pub/vixie/
 

@@ -3,11 +3,11 @@
 # Date created:			  12 December 1994
 # Whom:				  asami
 #
-# $FreeBSD: ports/sysutils/xsysstats/Makefile,v 1.18 2000/03/22 00:28:18 obrien Exp $
+# $FreeBSD: ports/sysutils/xsysstats/Makefile,v 1.19 2000/04/09 19:09:10 cpiazza Exp $
 #
 
 PORTNAME=	xsysstats
-PORTVERSION= 	1.34
+PORTVERSION=	1.34
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

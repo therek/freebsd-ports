@@ -3,11 +3,11 @@
 # Date created:			  Mon Apr 14, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/tcplist/Makefile,v 1.10 2000/03/22 00:27:50 obrien Exp $
+# $FreeBSD: ports/sysutils/tcplist/Makefile,v 1.11 2000/04/09 19:08:37 cpiazza Exp $
 #
 
 PORTNAME=	tcplist
-PORTVERSION= 	2.2
+PORTVERSION=	2.2
 CATEGORIES=	sysutils net
 MASTER_SITES=	ftp://ftp.cdf.toronto.edu/pub/jdd/tcplist/
 EXTRACT_SUFX=	.shar

@@ -2,11 +2,11 @@
 # Date created:			Sat Aug 14 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.2 2000/01/29 23:49:04 billf Exp $
+# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.3 2000/04/09 19:07:46 cpiazza Exp $
 #
 
 PORTNAME=	guiTAR
-PORTVERSION= 	0.1.4
+PORTVERSION=	0.1.4
 CATEGORIES=	sysutils
 MASTER_SITES=	http://disq.bir.net.tr/guitar/ \
 		http://artemis.efes.net/disq/guitar/

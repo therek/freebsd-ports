@@ -2,11 +2,11 @@
 # Date created:		2 May 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/sysutils/xbatt/Makefile,v 1.9 1999/08/31 02:00:26 peter Exp $
+# $FreeBSD: ports/sysutils/xbatt/Makefile,v 1.10 2000/04/09 19:08:57 cpiazza Exp $
 #
 
 PORTNAME=	xbatt
-PORTVERSION= 	1.2.1
+PORTVERSION=	1.2.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.clave.gr.jp/~eto/xbatt/
 

@@ -2,11 +2,11 @@
 # Date created:		12 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.8 2000/02/09 04:52:51 ade Exp $
+# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.9 2000/04/09 19:08:39 cpiazza Exp $
 #
 
 PORTNAME=	ucspi-tcp
-PORTVERSION= 	0.84
+PORTVERSION=	0.84
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://cr.yp.to/software/
 

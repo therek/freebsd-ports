@@ -2,11 +2,11 @@
 # Date created:		18 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.4 2000/03/22 01:59:33 will Exp $
+# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.5 2000/04/09 19:08:47 cpiazza Exp $
 #
 
 PORTNAME=	wmbattery
-PORTVERSION= 	1.11
+PORTVERSION=	1.11
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://kitenet.net/programs/code/wmbattery/
 DISTNAME=	${PORTNAME}

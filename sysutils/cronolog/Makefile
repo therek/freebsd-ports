@@ -2,11 +2,11 @@
 # Date created:        20 January 2000
 # Whom:                Mark Blackman <tmb_ports@maddog.u-net.com>
 #
-# $FreeBSD: ports/sysutils/cronolog/Makefile,v 1.2 2000/01/31 23:25:33 jedgar Exp $
+# $FreeBSD: ports/sysutils/cronolog/Makefile,v 1.3 2000/04/09 19:07:27 cpiazza Exp $
 #
 
 PORTNAME=	cronolog
-PORTVERSION= 	1.6.1
+PORTVERSION=	1.6.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.ford-mason.co.uk/resources/cronolog/
 

@@ -2,11 +2,11 @@
 # Date created:         16 Februar 1996
 # Whom:                 wosch
 #
-# $FreeBSD: ports/sysutils/stat/Makefile,v 1.7 1999/09/19 10:30:46 wosch Exp $
+# $FreeBSD: ports/sysutils/stat/Makefile,v 1.8 2000/04/09 19:08:33 cpiazza Exp $
 #
 
 PORTNAME=	stat
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	sysutils
 MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 

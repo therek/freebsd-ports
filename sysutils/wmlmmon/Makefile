@@ -2,11 +2,11 @@
 # Date created:				24 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.7 1999/11/14 03:31:19 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmlmmon/Makefile,v 1.8 2000/04/09 19:08:52 cpiazza Exp $
 #
 
 PORTNAME=	wmlmmon
-PORTVERSION= 	0.60
+PORTVERSION=	0.60
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.fxp.org/~jedgar/
 

@@ -2,11 +2,11 @@
 # Date created:		19 Sep 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/sysutils/mei/Makefile,v 1.9 2000/02/08 09:28:56 peter Exp $
+# $FreeBSD: ports/sysutils/mei/Makefile,v 1.10 2000/04/09 19:08:02 cpiazza Exp $
 #
 
 PORTNAME=	mei
-PORTVERSION= 	1.53
+PORTVERSION=	1.53
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.vector.co.jp/authors/VA001240/archive/ \
 		http://people.FreeBSD.org/~itojun/distfiles/

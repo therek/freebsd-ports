@@ -2,11 +2,11 @@
 # Date created:		1999-05-05
 # Whom:			Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/sysutils/sdd/Makefile,v 1.2 1999/08/31 02:00:03 peter Exp $
+# $FreeBSD: ports/sysutils/sdd/Makefile,v 1.3 2000/04/09 19:08:26 cpiazza Exp $
 #
 
 PORTNAME=	sdd
-PORTVERSION= 	1.22
+PORTVERSION=	1.22
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/sdd/
 

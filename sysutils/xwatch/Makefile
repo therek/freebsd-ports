@@ -2,11 +2,11 @@
 # Date created:				17 July 1998
 # Whom:					mph
 #
-# $FreeBSD: ports/sysutils/xwatch/Makefile,v 1.8 1999/08/31 02:00:46 peter Exp $
+# $FreeBSD: ports/sysutils/xwatch/Makefile,v 1.9 2000/04/09 19:09:11 cpiazza Exp $
 #
 
 PORTNAME=	xwatch
-PORTVERSION= 	0.1.0
+PORTVERSION=	0.1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://hem.passagen.se/osk/
 

@@ -2,11 +2,11 @@
 # Date created:			26 December 1999
 # Whom:	      			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/sysutils/p5-SyslogScan/Makefile,v 1.1 2000/01/29 03:23:22 ade Exp $
+# $FreeBSD: ports/sysutils/p5-SyslogScan/Makefile,v 1.2 2000/04/09 19:08:14 cpiazza Exp $
 #
 
 PORTNAME=	p5-SyslogScan
-PORTVERSION= 	0.32
+PORTVERSION=	0.32
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SyslogScan

@@ -2,11 +2,11 @@
 # Date created:         20 Oct 1998
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/sysutils/skill/Makefile,v 1.8 2000/02/22 21:49:16 jedgar Exp $
+# $FreeBSD: ports/sysutils/skill/Makefile,v 1.9 2000/04/09 19:08:30 cpiazza Exp $
 #
 
 PORTNAME=	skill
-PORTVERSION= 	3.7.9
+PORTVERSION=	3.7.9
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://fast.cs.utah.edu/pub/skill/
 DISTNAME=	${PORTNAME}-3.7@P8

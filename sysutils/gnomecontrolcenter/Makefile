@@ -2,11 +2,11 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.17 2000/04/06 15:32:56 ade Exp $
+# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.18 2000/04/09 19:07:41 cpiazza Exp $
 #
 
 PORTNAME=	gnomecontrolcenter
-PORTVERSION= 	1.0.53
+PORTVERSION=	1.0.53
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/control-center

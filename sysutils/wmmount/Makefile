@@ -2,11 +2,11 @@
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/sysutils/wmmount/Makefile,v 1.5 1999/08/31 02:00:25 peter Exp $
+# $FreeBSD: ports/sysutils/wmmount/Makefile,v 1.6 2000/04/09 19:08:55 cpiazza Exp $
 #
 
 PORTNAME=	wmmount
-PORTVERSION= 	1.0b1
+PORTVERSION=	1.0b1
 CATEGORIES=	sysutils windowmaker afterstep
 MASTER_SITES=	http://www.geocities.com/SiliconValley/Vista/2471/files/
 DISTNAME=	wmmount-1.0-beta1

@@ -2,11 +2,11 @@
 # Date created:				7/27/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/doconfig/Makefile,v 1.4 1999/08/31 06:50:47 mharo Exp $
+# $FreeBSD: ports/sysutils/doconfig/Makefile,v 1.5 2000/04/09 19:07:31 cpiazza Exp $
 #
 
 PORTNAME=		doconfig
-PORTVERSION= 		1.1
+PORTVERSION=		1.1
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.cold.org/pub/brandon/
 

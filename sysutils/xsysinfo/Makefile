@@ -2,11 +2,11 @@
 # Date created:		4 April 1996
 # Whom:			jdli
 #
-# $FreeBSD: ports/sysutils/xsysinfo/Makefile,v 1.10 1999/08/31 02:00:42 peter Exp $
+# $FreeBSD: ports/sysutils/xsysinfo/Makefile,v 1.11 2000/04/09 19:09:08 cpiazza Exp $
 #
 
 PORTNAME=	xsysinfo
-PORTVERSION= 	1.4a
+PORTVERSION=	1.4a
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://freebsd.csie.nctu.edu.tw/pub/jdli/source/
 

@@ -2,11 +2,11 @@
 # Date created:        27 November 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.13 2000/03/08 02:46:15 fenner Exp $
+# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.14 2000/04/09 19:08:54 cpiazza Exp $
 #
 
 PORTNAME=	wmmon
-PORTVERSION= 	1.0b2
+PORTVERSION=	1.0b2
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	ftp://ftp.tecnogi.com/pub/linux/WindowMaker/ \
 		http://www.physics.adelaide.edu.au/~kkennawa/ \
@@ -16,7 +16,7 @@ MAINTAINER=	sk-ports@vegamuse.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
-USE_X_PREFIX=   yes
+USE_X_PREFIX=	yes
 
 WRKSRC=		${WRKDIR}/wmmon.app/wmmon
 

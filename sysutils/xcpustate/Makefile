@@ -3,11 +3,11 @@
 # Date created:			  31-Dec-1995
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.17 2000/03/22 00:28:14 obrien Exp $
+# $FreeBSD: ports/sysutils/xcpustate/Makefile,v 1.18 2000/04/09 19:08:59 cpiazza Exp $
 #
 
 PORTNAME=	xcpustate
-PORTVERSION= 	2.5
+PORTVERSION=	2.5
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/jdd/xcpustate/  \
 		${MASTER_SITE_XCONTRIB}

@@ -2,15 +2,15 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.17 2000/02/08 09:28:53 peter Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.18 2000/04/09 19:07:16 cpiazza Exp $
 #
 
 PORTNAME=	cd-write
-PORTVERSION= 	1.4.1
-CATEGORIES=     sysutils
-MASTER_SITES=   http://people.FreeBSD.org/~jmz/
+PORTVERSION=	1.4.1
+CATEGORIES=	sysutils
+MASTER_SITES=	http://people.FreeBSD.org/~jmz/
 
-MAINTAINER=     jmz@FreeBSD.org
+MAINTAINER=	jmz@FreeBSD.org
 
 LIB_DEPENDS=	tixsam4182.1:${PORTSDIR}/x11-toolkits/tix
 

@@ -2,15 +2,15 @@
 # Date created:         4 October 1995
 # Whom:                 Juergen Lock <nox@jelal.hb.north.de>
 #
-# $FreeBSD: ports/sysutils/afio/Makefile,v 1.10 2000/02/02 16:24:44 dirk Exp $
+# $FreeBSD: ports/sysutils/afio/Makefile,v 1.11 2000/04/09 19:07:05 cpiazza Exp $
 #
 
 PORTNAME=	afio
-PORTVERSION= 	2.4.6
-CATEGORIES=     sysutils
+PORTVERSION=	2.4.6
+CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/backup
-EXTRACT_SUFX=   .tgz
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nox@jelal.hb.north.de
 

@@ -2,11 +2,11 @@
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.20 2000/03/22 00:27:47 obrien Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.21 2000/04/09 19:08:32 cpiazza Exp $
 #
 
 PORTNAME=		star
-PORTVERSION= 		1.2
+PORTVERSION=		1.2
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.fokus.gmd.de/pub/unix/star/ \
 			${MASTER_SITE_SUNSITE}

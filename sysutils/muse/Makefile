@@ -2,11 +2,11 @@
 # Date created:				27 December 1999
 # Whom:					freebsd@spatula.net
 #
-# $FreeBSD: ports/sysutils/muse/Makefile,v 1.1.1.1 1999/12/28 02:45:45 jedgar Exp $
+# $FreeBSD: ports/sysutils/muse/Makefile,v 1.2 2000/04/09 19:08:08 cpiazza Exp $
 #
 
 PORTNAME=	muse
-PORTVERSION= 	0.1
+PORTVERSION=	0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.spatula.net/muse/
 

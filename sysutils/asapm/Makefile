@@ -2,11 +2,11 @@
 # Date created:		6 Aug 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.11 1999/08/31 01:59:29 peter Exp $
+# $FreeBSD: ports/sysutils/asapm/Makefile,v 1.12 2000/04/09 19:07:06 cpiazza Exp $
 #
 
 PORTNAME=	asapm
-PORTVERSION= 	2.7
+PORTVERSION=	2.7
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/asapm/ \
 		http://www.tigr.net/afterstep/as-apps/download/asapm/

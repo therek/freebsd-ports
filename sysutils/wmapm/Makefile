@@ -2,11 +2,11 @@
 # Date created:		99/07/02
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/wmapm/Makefile,v 1.3 1999/08/31 02:00:20 peter Exp $
+# $FreeBSD: ports/sysutils/wmapm/Makefile,v 1.4 2000/04/09 19:08:45 cpiazza Exp $
 #
 
 PORTNAME=	wmapm
-PORTVERSION= 	3.01
+PORTVERSION=	3.01
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 

@@ -2,11 +2,11 @@
 # Date created:         18 February 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.6 1999/12/24 04:53:40 steve Exp $
+# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.7 2000/04/09 19:07:07 cpiazza Exp $
 #
 
 PORTNAME=	ascpu
-PORTVERSION= 	1.8
+PORTVERSION=	1.8
 CATEGORIES=	sysutils afterstep
 MASTER_SITES=	http://bewoner.dma.be/Albert/software/ \
 		http://www.tigr.net/afterstep/as-apps/download/ascpu/	\

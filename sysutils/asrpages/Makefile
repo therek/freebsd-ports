@@ -2,11 +2,11 @@
 # Date created:		6 Nov 1997
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/sysutils/asrpages/Makefile,v 1.9 2000/01/31 17:19:09 billf Exp $
+# $FreeBSD: ports/sysutils/asrpages/Makefile,v 1.10 2000/04/09 19:07:12 cpiazza Exp $
 #
 
 PORTNAME=	asrpages
-PORTVERSION= 	0.1
+PORTVERSION=	0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.winternet.com/users/eric/
 DISTNAME=	asr.pages

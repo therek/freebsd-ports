@@ -2,11 +2,11 @@
 # Date created:		11 Feb. 1995
 # Whom:			torstenb
 #
-# $FreeBSD: ports/sysutils/tua/Makefile,v 1.12 2000/02/13 19:29:48 torstenb Exp $
+# $FreeBSD: ports/sysutils/tua/Makefile,v 1.13 2000/04/09 19:08:38 cpiazza Exp $
 #
 
 PORTNAME=	tua
-PORTVERSION= 	4.0
+PORTVERSION=	4.0
 CATEGORIES=	sysutils
 MASTER_SITES=   ftp://ftp.vmunix.org/pub/misc/tua/
 

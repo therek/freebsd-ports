@@ -2,11 +2,11 @@
 # Date created:			04 Dec 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/glload/Makefile,v 1.10 2000/03/20 23:25:16 jseger Exp $
+# $FreeBSD: ports/sysutils/glload/Makefile,v 1.11 2000/04/09 19:07:39 cpiazza Exp $
 #
 
 PORTNAME=	glload
-PORTVERSION= 	0.4.0
+PORTVERSION=	0.4.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://glload.netpedia.net/source/ \
 		http://people.FreeBSD.org/~vanilla/

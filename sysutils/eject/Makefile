@@ -2,11 +2,11 @@
 # Date created:		03 January 2000
 # Whom:			shige
 #
-# $FreeBSD: ports/sysutils/eject/Makefile,v 1.1.1.1 2000/01/05 14:37:51 shige Exp $
+# $FreeBSD: ports/sysutils/eject/Makefile,v 1.2 2000/04/09 19:07:34 cpiazza Exp $
 #
 
 PORTNAME=	eject
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ports.jp.FreeBSD.org/pub/FreeBSD-jp/OD/ \
 		ftp://ftp4.jp.FreeBSD.org/pub/FreeBSD-jp/OD/ \

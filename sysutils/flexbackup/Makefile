@@ -2,11 +2,11 @@
 # Date created:         Wed Nov  3 17:58:26 MST 1999
 # Whom:                 John Reynolds <jjreynold@home.com>
 #
-# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.6 2000/04/08 05:38:33 will Exp $
+# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.7 2000/04/09 19:07:35 cpiazza Exp $
 #
 
 PORTNAME=	flexbackup
-PORTVERSION= 	0.9.8
+PORTVERSION=	0.9.8
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.bluecherry.net/~edwinh/flexbackup/tarball/ \
 		http://members.home.com/flexbackup/tarball/ \

@@ -3,11 +3,11 @@
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.63 2000/04/04 03:36:26 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.64 2000/04/09 19:07:59 cpiazza Exp $
 #
 
 PORTNAME=	lsof
-PORTVERSION= 	4.49
+PORTVERSION=	4.49
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/  \
 		ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/NEW/ \
@@ -23,7 +23,7 @@ WRKSRC=		${WRKDIR}/${SRCBALL_NAME}
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	-n freebsd
-CONFIGURE_ENV= LSOF_CC=${CC}
+CONFIGURE_ENV=	LSOF_CC=${CC}
 MAN8=		lsof.8
 
 .if defined(PACKAGE_BUILDING)

@@ -2,11 +2,11 @@
 # Date created:			00/02/5
 # Whom:				Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/wmpccard/Makefile,v 1.3 2000/02/21 15:25:31 taoka Exp $
+# $FreeBSD: ports/sysutils/wmpccard/Makefile,v 1.4 2000/04/09 19:08:56 cpiazza Exp $
 #
 
 PORTNAME=	wmpccard
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://www.sra.co.jp/people/m-kasahr/wmpccard/src/
 

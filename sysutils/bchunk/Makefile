@@ -2,11 +2,11 @@
 # Date created:			9 Jan 1999
 # Whom:				bsdx
 #
-# $FreeBSD: ports/sysutils/bchunk/Makefile,v 1.5 2000/01/22 09:52:33 mharo Exp $
+# $FreeBSD: ports/sysutils/bchunk/Makefile,v 1.6 2000/04/09 19:07:14 cpiazza Exp $
 #
 
 PORTNAME=	bchunk
-PORTVERSION= 	1.0.0
+PORTVERSION=	1.0.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://hes.iki.fi/bchunk/ \
 		${MASTER_SITE_SUNSITE}

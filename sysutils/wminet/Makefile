@@ -2,11 +2,11 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.3 2000/03/01 07:37:00 billf Exp $
+# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.4 2000/04/09 19:08:51 cpiazza Exp $
 #
 
 PORTNAME=	wminet
-PORTVERSION= 	2.0.2
+PORTVERSION=	2.0.2
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.neotokyo.org/illusion/
 

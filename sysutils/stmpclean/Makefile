@@ -2,11 +2,11 @@
 # Date created:        4 August 1999
 # Whom:                shalunov
 #
-# $FreeBSD: ports/sysutils/stmpclean/Makefile,v 1.2 1999/08/31 02:00:09 peter Exp $
+# $FreeBSD: ports/sysutils/stmpclean/Makefile,v 1.3 2000/04/09 19:08:34 cpiazza Exp $
 #
 
 PORTNAME=	stmpclean
-PORTVERSION= 	0.1
+PORTVERSION=	0.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.mccme.ru/users/shalunov/
 

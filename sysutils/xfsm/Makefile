@@ -2,11 +2,11 @@
 # Date Created:				24 Nov 1997
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/xfsm/Makefile,v 1.9 2000/04/02 11:31:45 vanilla Exp $
+# $FreeBSD: ports/sysutils/xfsm/Makefile,v 1.10 2000/04/09 19:09:02 cpiazza Exp $
 #
 
 PORTNAME=	xfsm
-PORTVERSION= 	1.99
+PORTVERSION=	1.99
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/status/xstatus

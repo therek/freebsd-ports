@@ -2,11 +2,11 @@
 # Date created:				21 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/sysutils/wmfire/Makefile,v 1.2 1999/11/03 20:12:26 jim Exp $
+# $FreeBSD: ports/sysutils/wmfire/Makefile,v 1.3 2000/04/09 19:08:49 cpiazza Exp $
 #
 
 PORTNAME=	wmfire
-PORTVERSION= 	0.0.3.9
+PORTVERSION=	0.0.3.9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.zebra.net/~dm/wmfire/
 DISTNAME=	wmfire-0.0.3.9pre4

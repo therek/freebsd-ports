@@ -2,11 +2,11 @@
 # Date created:		1 August 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/sysutils/xlogmaster/Makefile,v 1.12 1999/08/31 02:00:34 peter Exp $
+# $FreeBSD: ports/sysutils/xlogmaster/Makefile,v 1.13 2000/04/09 19:09:04 cpiazza Exp $
 #
 
 PORTNAME=	xlogmaster
-PORTVERSION= 	1.6.0
+PORTVERSION=	1.6.0
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://sunsite.doc.ic.ac.uk/packages/gnu/\
 		${MASTER_SITE_GNU}\

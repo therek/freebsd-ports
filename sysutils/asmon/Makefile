@@ -2,11 +2,11 @@
 # Date created:		27 Sep 1999
 # Whom:			jack
 #
-# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.3 2000/02/07 21:18:57 billf Exp $
+# $FreeBSD: ports/sysutils/asmon/Makefile,v 1.4 2000/04/09 19:07:11 cpiazza Exp $
 #
 
 PORTNAME=	asmon
-PORTVERSION= 	0.60
+PORTVERSION=	0.60
 CATEGORIES=	sysutils afterstep
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/asmon/ \
 		http://www.tigr.net/afterstep/as-apps/download/asmon/
