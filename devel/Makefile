@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.435 2001/02/13 11:41:02 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.436 2001/02/15 17:44:48 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -34,6 +34,7 @@
     SUBDIR += bonobo
     SUBDIR += bonobo-conf
     SUBDIR += bugbuddy
+    SUBDIR += c2lib
     SUBDIR += c_c++_reference
     SUBDIR += camlp4
     SUBDIR += cbrowser
