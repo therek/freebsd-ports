@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.644 2005/03/04 14:50:54 ale Exp $
+# $FreeBSD: ports/MOVED,v 1.645 2005/03/09 06:32:19 sem Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1162,7 +1162,6 @@ lang/qc--||2004-06-20|port broken for >2 months
 print/libpdf++||2004-06-20|port broken for >2 months
 security/siphon||2004-06-20|port broken for >2 months
 chinese/dictd||2004-06-20|port broken for >2 months
-chinese/dictd-database||2004-06-20|depended on removed port chinese/dictd
 finance/moneydance||2004-06-20|port broken for >2 months
 x11-themes/mkultra||2004-06-20|port broken for >2 months
 lang/python15||2004-06-21|removed deprecated port
