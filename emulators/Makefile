@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.43 2000/01/26 23:02:52 joe Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.44 2000/02/02 21:24:50 jhb Exp $
 #
 
     SUBDIR += aftp
@@ -22,6 +22,7 @@
     SUBDIR += macutils
     SUBDIR += mastergear
     SUBDIR += mtools
+    SUBDIR += osf1_base
     SUBDIR += pcemu
     SUBDIR += prodosemu
     SUBDIR += quasi88
