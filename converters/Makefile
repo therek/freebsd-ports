@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.29 2000/03/25 18:53:42 will Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.30 2000/03/29 19:42:30 will Exp $
 #
 
     SUBDIR += aish
@@ -13,6 +13,7 @@
     SUBDIR += mimepp
     SUBDIR += mmencode
     SUBDIR += mpack
+    SUBDIR += mule-ucs-emacs20
     SUBDIR += p5-Convert-Recode
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
