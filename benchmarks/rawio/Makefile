@@ -3,7 +3,7 @@
 # Date created:			  Sun Aug 08, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.6 2000/03/22 00:27:36 obrien Exp $
+# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.7 2000/04/08 22:04:27 mharo Exp $
 #
 
 PORTNAME=	rawio
@@ -11,7 +11,7 @@ PORTVERSION=	1.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.lemis.com/pub/
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	grog@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAN1=		rawio.1
