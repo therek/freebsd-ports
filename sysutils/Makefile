@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.184 2001/05/07 06:47:06 grog Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.185 2001/05/08 08:32:49 roam Exp $
 #
     SUBDIR += yawho
 
@@ -154,6 +154,7 @@
     SUBDIR += wmhm
     SUBDIR += wminet
     SUBDIR += wmlmmon
+    SUBDIR += wmmemmon
     SUBDIR += wmmon
     SUBDIR += wmmount
     SUBDIR += wmpccard
