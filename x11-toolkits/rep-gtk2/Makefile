@@ -2,11 +2,11 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.9 2000/03/21 17:47:32 ade Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.10 2000/04/10 01:10:58 cpiazza Exp $
 #
 
 PORTNAME=	rep-gtk
-PORTVERSION=	0.9.1
+PORTVERSION=	0.10
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://rep-gtk.sourceforge.net/pub/rep-gtk/
 
@@ -35,5 +35,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+.if defined(NOGNOME)
+PLIST=		${PKGDIR}/PLIST.nognome
+.endif
 
 .include <bsd.port.mk>
