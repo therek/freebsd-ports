@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/misc/wmweather/Makefile,v 1.8 2000/04/14 08:47:03 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	wmWeather
 PORTVERSION=	1.31
@@ -10,6 +10,8 @@ CATEGORIES=	misc windowmaker
 MASTER_SITES= 	http://nis-www.lanl.gov/~mgh/WindowMaker/
 
 MAINTAINER=	kris@FreeBSD.org
+
+RUN_DEPENDS=	${LOCALBASE}/bin/wget:${PORTSDIR}/ftp/wget
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Src
 
