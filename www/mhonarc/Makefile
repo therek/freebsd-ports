@@ -2,18 +2,19 @@
 # Date created:				18 June 1997
 # Whom:					koshy@india.hp.com
 #
-# $FreeBSD: ports/www/mhonarc/Makefile,v 1.13 2000/04/10 00:05:52 cpiazza Exp $
+# $FreeBSD: ports/www/mhonarc/Makefile,v 1.14 2000/05/03 11:24:31 jkoshy Exp $
 #
 
 PORTNAME=	mhonarc
-PORTVERSION= 	2.4.6
+PORTVERSION= 	2.4.7
 CATEGORIES=	www mail
 MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/tar/ \
+		http://mirror.ncsa.uiuc.edu/mhonarc.org/\
 		ftp://hhobel.phl.univie.ac.at/MHonArc/ \
 		ftp://ftp.redhat.com/contrib/noarch/noarch/ \
 		ftp://ftp.plig.org/pub/CPAN/authors/id/EHOOD/ \
 		http://www.perl.com/CPAN/authors/id/EHOOD/
-DISTNAME=	MHonArc2.4.6
+DISTNAME=	MHonArc2.4.7
 
 MAINTAINER=	jkoshy@freebsd.org
 
