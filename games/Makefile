@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/games/Makefile,v 1.412 2001/09/11 14:05:00 sobomax Exp $
 #
 
     SUBDIR += 0verkill
@@ -359,7 +359,6 @@
     SUBDIR += xscavenger
     SUBDIR += xscorch
     SUBDIR += xscrabble
-    SUBDIR += xsheep
     SUBDIR += xshipwars-client
     SUBDIR += xshisen
     SUBDIR += xshogi
