@@ -3,7 +3,7 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.8 1999/08/25 06:16:31 obrien Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.9 1999/09/27 02:41:49 steve Exp $
 #
 
 DISTNAME=	shujit-0.3.8
@@ -32,6 +32,7 @@ JAVADIR=	${PREFIX}/jdk1.1.8
 JAVALIBDIR=	${JAVADIR}/lib/i386/green_threads
 JAVABINDIR=	${JAVADIR}/bin/i386/green_threads
 JAVAOBJFORMAT=	`file ${JAVABINDIR}/java | ${AWK} '{print $$2}'`
+CONFIGURE_ARGS+=	--with-jdk="${JAVADIR}"
 
 pre-build:
 	@( if [ ${JAVAOBJFORMAT} != ELF ]; then	\
