@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.11 2003/10/25 22:16:39 sergei Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.12 2003/11/06 20:10:56 krion Exp $
 #
 # set -x
 
@@ -138,6 +138,9 @@ EOF
     if [ "$MUTT_EDIT_THREADS" = "yes" ]; then
       html=$(($html + 3))
     fi
+    if [ "$MUTT_IMAP_HEADER_CACHE" = "yes" ]; then
+      html=$(($html + 1))
+    fi
     if [ "$MUTT_SIGNATURE_MENU" = "yes" ]; then
       html=$(($html + 1))
     fi
@@ -145,7 +148,7 @@ EOF
       html=$(($html + 1))
     fi
     if [ "$MUTT_PGP_PATCH" = "yes" ]; then
-      html=$(($html + 1))
+      html=$(($html + 2))
     fi
     echo "%%DOCSDIR%%/html/manual.html" >> $tmp_first
     echo "%%DOCSDIR%%/html/manual_toc.html" >> $tmp_first 
