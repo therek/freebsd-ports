@@ -2,7 +2,7 @@
 # Date created:		20 October 1996
 # Whom:			Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xrubik/Makefile,v 1.13 2000/01/22 11:46:15 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xrubik
@@ -16,7 +16,8 @@ MAINTAINER=	nakai@FreeBSD.org
 WRKSRC=		${WRKDIR}/xrubik
 USE_IMAKE=	yes
 MAN1=		xrubik.1
-MANCOMPRESSED=	no
+XFREE86_HTML_MAN=	no
+NO_INSTALL_MANPAGES=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xrubik ${PREFIX}/bin
