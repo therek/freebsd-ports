@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.148 2001/01/21 16:47:52 ijliao Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.149 2001/01/23 16:47:04 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -140,6 +140,7 @@
     SUBDIR += xperfmon3
     SUBDIR += xsysinfo
     SUBDIR += xsysstats
+    SUBDIR += xw
     SUBDIR += xwatch
     SUBDIR += xwipower
 
