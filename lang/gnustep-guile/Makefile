@@ -2,7 +2,7 @@
 # Date created:         24 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnustep-guile/Makefile,v 1.17 2001/04/07 18:03:56 ben Exp $
+# $FreeBSD: ports/lang/gnustep-guile/Makefile,v 1.18 2001/06/26 12:06:24 tg Exp $
 #
 
 PORTNAME=	gnustep-guile
@@ -12,8 +12,8 @@ MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/libs/
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/devel/gnustep-base
-RUN_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/devel/gnustep-base
+BUILD_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/lang/gnustep-base
+RUN_DEPENDS=	${SYSLIBDIR}/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu/libgnustep-base.so:${PORTSDIR}/lang/gnustep-base
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 
 .include <bsd.port.pre.mk>
