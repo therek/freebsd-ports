@@ -2,14 +2,19 @@
 # Date created:        28 March 1997
 # Whom:                Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/news/slrn/Makefile,v 1.24 2001/06/22 11:24:26 asmodai Exp $
+# $FreeBSD: ports/news/slrn/Makefile,v 1.25 2001/08/23 15:30:32 petef Exp $
 #
 
 PORTNAME=	slrn
 PORTVERSION=	0.9.7.2
+PORTREVISION=	1
 CATEGORIES=	news ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
+
+PATCHFILES=	slrn-0.9.7.2-decode.diff
+PATCH_SITES=	http://slrn.sourceforge.net/patches/
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	petef@FreeBSD.org
 
