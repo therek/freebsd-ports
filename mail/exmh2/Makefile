@@ -1,13 +1,13 @@
 # New ports collection Makefile for:    exmh2
-# Version required:		2.1.0
+# Version required:		2.1.1
 # Date created:			1 Jan 97
 # Whom:				Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/mail/exmh2/Makefile,v 1.33 1999/10/11 14:20:56 markm Exp $
+# $FreeBSD: ports/mail/exmh2/Makefile,v 1.34 1999/10/14 07:11:50 peter Exp $
 #
 
 # "?=" lines are for sharing this Makefile with japanese/exmh2.
-DISTNAME=	exmh-2.1.0
+DISTNAME=	exmh-2.1.1
 CATEGORIES?=	mail tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/exmh/
 
@@ -48,6 +48,8 @@ RUN_DEPENDS+=	mmencode:${PORTSDIR}/mail/metamail
 # security/pgp5
 # mail/faces
 # audio/rplay
+
+PLIST_SUB=	EXMH_VERSION=2.1.1
 
 MAN1=		exmh.1
 
