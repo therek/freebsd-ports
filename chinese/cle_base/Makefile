@@ -2,7 +2,7 @@
 # Date created:		Nov 17, 1999
 # Whom:			keith@FreeBSD.org
 #
-# $FreeBSD: ports/chinese/cle_base/Makefile,v 1.1 2000/11/02 03:27:14 foxfair Exp $
+# $FreeBSD: ports/chinese/cle_base/Makefile,v 1.2 2000/11/06 10:41:51 keith Exp $
 #
 
 PORTNAME=		cle_base
@@ -172,7 +172,7 @@ do-install:
 		${RM} ${PREFIX}/$$F; \
 	done
 	@${LN} -s /var/tmp ${PREFIX}/usr/tmp
-	@${TOUCH} ${PREFIX}/CLE-0.9-PRE2
+	@${TOUCH} ${PREFIX}/CLE-0.9p1
 
 post-install:
 	@${ECHO} ''
