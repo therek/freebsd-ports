@@ -2,7 +2,7 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.13 2000/07/05 12:37:05 tg Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.14 2000/07/07 19:32:16 steve Exp $
 #
 
 PORTNAME=	thttpd
@@ -41,6 +41,7 @@ do-install:
 	@if [ ! -f ${PREFIX}/sbin/thttpd_wrapper ]; then \
 		${ECHO} "Installing ${PREFIX}/sbin/thttpd_wrapper file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/sbin/thttpd_wrapper; \
+		${ECHO} "${ECHO} \$$\$$ > /var/run/thttpd_wrapper.pid" >> ${PREFIX}/sbin/thttpd_wrapper; \
 		${ECHO} "while true ; do" >> ${PREFIX}/sbin/thttpd_wrapper; \
 		${ECHO} "	${PREFIX}/sbin/thttpd -D -C ${PREFIX}/etc/thttpd.conf" >> ${PREFIX}/sbin/thttpd_wrapper; \
 		${ECHO} "	sleep 10" >> ${PREFIX}/sbin/thttpd_wrapper; \
