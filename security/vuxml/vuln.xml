@@ -28,10 +28,37 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.208 2004/08/30 14:23:47 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.209 2004/08/31 14:34:03 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="ba005226-fb5b-11d8-9837-000c41e2cdad">
+    <topic>imlib2 -- BMP decoder buffer overflow</topic>
+    <affects>
+      <package>
+	<name>imlib2</name>
+	<range><le>1.1.1</le></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>Marcus Meissner discovered that imlib2's BMP decoder would
+	  crash when loading the test BMP file created by Chris Evans
+	  for testing the previous Qt vulnerability.  There appears to
+	  be both a stack-based and a heap-based buffer overflow that
+	  are believed to be exploitable for arbitrary code execution.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CAN-2004-0802</cvename>
+      <url>http://cvs.sourceforge.net/viewcvs.py/enlightenment/e17/libs/imlib2/ChangeLog?rev=1.20&amp;view=markup</url>
+    </references>
+    <dates>
+      <discovery>2004-08-31</discovery>
+      <entry>2004-08-31</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="b6cad7f3-fb59-11d8-9837-000c41e2cdad">
     <topic>ImageMagick -- BMP decoder buffer overflow</topic>
     <affects>
