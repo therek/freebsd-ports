@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.15 2001/04/22 20:34:54 knu Exp $
+# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.16 2001/04/23 03:21:16 knu Exp $
 #
 
 PORTNAME=	postgres
@@ -20,7 +20,12 @@ LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
+.if defined(WITH_OLD_LAYOUT)
+CONFIGURE_ARGS=	--with-pgsql-include-dir="${LOCALBASE}/pgsql/include" \
+		--with-pgsql-lib-dir="${LOCALBASE}/pgsql/lib"
+.else
 CONFIGURE_ARGS=	--with-pgsql-include-dir="${LOCALBASE}/include/pgsql"
+.endif
 INSTALL_TARGET=	site-install
 
 DOCS_EN=	ChangeLog README doc/postgres.html
