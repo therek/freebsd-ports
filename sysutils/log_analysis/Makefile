@@ -2,13 +2,13 @@
 # Date created:				5 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/log_analysis/Makefile,v 1.2 2001/07/22 04:39:19 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	log_analysis
-PORTVERSION=	0.38
+PORTVERSION=	0.40
 CATEGORIES=	sysutils
-MASTER_SITES=	http://linux.umbc.edu/~mabzug1/
+MASTER_SITES=	http://lug.umbc.edu/~mabzug1/
 
 MAINTAINER=	petef@FreeBSD.org
 
