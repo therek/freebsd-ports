@@ -2,11 +2,11 @@
 # Date created:		31 January 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/devel/cook/Makefile,v 1.7 2000/11/06 22:10:26 jasone Exp $
+# $FreeBSD: ports/devel/cook/Makefile,v 1.8 2000/11/07 02:26:18 jasone Exp $
 #
 
 PORTNAME=	cook
-PORTVERSION=	2.16
+PORTVERSION=	2.17
 PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} http://www.canb.auug.org.au/~millerp/cook/
@@ -16,7 +16,6 @@ MAINTAINER=	jasone@freebsd.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
-USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include LDFLAGS=-L${LOCALBASE}/lib
 
