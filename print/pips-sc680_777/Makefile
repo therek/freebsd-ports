@@ -2,17 +2,11 @@
 # Date created:        2001.01.05
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pips-sc680_777/Makefile,v 1.1 2001/01/09 01:53:42 taoka Exp $
 #
 
-PORTVERSION=	1.0
 MASTER_SITES?=	http://www.epkowa.on.arena.ne.jp/pips/data/777_680/
-MASTERDIR=	${.CURDIR}/../pips800
+MASTERDIR=	${.CURDIR}/../pips-sc880
 PRTYPE=		-sc680_777
 
-INTERNATIONAL_PRODUCTS=yes
-
 .include "${MASTERDIR}/Makefile"
-
-# to cancel in this port (for international products)
-_MAKE_COMMENT_DESCR:
