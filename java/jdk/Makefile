@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.35 2001/02/26 22:17:04 nate Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.36 2001/03/06 15:41:02 nate Exp $
 #
 
 PORTNAME=	jdk
@@ -29,6 +29,7 @@ NO_BUILD=	yes
 .if ${PORTOBJFORMAT} == "aout"
 DISTFILES=	jdk${JDK_VERSION}_AOUT.V1999-11-9.tar.gz
 .else
+LIB_DEPENDS+=	c.3:${PORTSDIR}/misc/compat3x
 DISTFILES=	jdk${JDK_VERSION}_ELF.V1999-11-9.tar.gz
 .endif
 
