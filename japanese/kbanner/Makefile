@@ -2,21 +2,29 @@
 # Date created:		Fri Feb 26 15:07:10 PST 1999
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/japanese/kbanner/Makefile,v 1.4 2000/04/11 14:14:21 knu Exp $
+# $FreeBSD: ports/japanese/kbanner/Makefile,v 1.5 2000/11/06 17:30:35 sumikawa Exp $
 #
 
 PORTNAME=	kbanner
 PORTVERSION=	2.1
 PORTREVISION=	1
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1993/oct/
-EXTRACT_SUFX=	.tar.Z
-DISTNAME=	${PORTNAME}${PORTVERSION:R}
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/news/fj.sources/V24/
+DISTFILES=	2426.gz 2427.gz 2428.gz 2429.gz 2430.gz 2431.gz
 
 MAINTAINER=	sumikawa@FreeBSD.org
 
+DIST_SUBDIR=	kbanner
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 ALL_TARGET=	kbanner
 MAN1=		kbanner.1
+
+TMPFILE=	kbanner.uu.txt
+EXTRACT_CMD=	${GZCAT}
+EXTRACT_BEFORE_ARGS=	-cd
+EXTRACT_AFTER_ARGS=	>> ${TMPFILE}
+
+post-extract:
+	cd ${WRKDIR} && ${SED} '/^END/,/^BEGIN/d' ${TMPFILE} | uudecode -p | tar zxvf -
 
 .include <bsd.port.mk>
