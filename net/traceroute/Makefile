@@ -2,7 +2,7 @@
 # Date created:		20 February 1997
 # Whom:			chris@vader.org
 #
-# $FreeBSD: ports/net/traceroute/Makefile,v 1.7 2000/02/14 02:05:14 asami Exp $
+# $FreeBSD: ports/net/traceroute/Makefile,v 1.8 2000/04/09 18:13:49 cpiazza Exp $
 #
 
 PORTNAME=	traceroute
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dima@Chg.RU
 
-RELEASEDATE=	990522
+RELEASEDATE=	991603
 NO_WRKSUBDIR=	yes
 MAN8=		traceroute.8
 
