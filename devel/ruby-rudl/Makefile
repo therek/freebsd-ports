@@ -2,7 +2,7 @@
 # Date created:		10 April 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-rudl/Makefile,v 1.1 2001/04/10 08:10:49 knu Exp $
+# $FreeBSD: ports/devel/ruby-rudl/Makefile,v 1.2 2001/04/17 13:03:50 knu Exp $
 #
 
 PORTNAME=	rudl
@@ -14,7 +14,10 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
+		SDL_image.10:${PORTSDIR}/graphics/sdl_image \
+		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer \
+		SDL_ttf.2:${PORTSDIR}/graphics/sdl_ttf
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
