@@ -3,11 +3,12 @@
 # Whom:				  Thierry Thomas (<thierry@thomas.as>)
 # N.B.: parts of this ports come from the Horde's port by NetBSD (jlam@netbsd.org)
 #
-# $FreeBSD: ports/www/horde/Makefile,v 1.1 2001/08/18 04:17:52 ijliao Exp $
+# $FreeBSD: ports/www/horde/Makefile,v 1.2 2001/08/19 16:47:30 ijliao Exp $
 #
 
 PORTNAME=	horde
 PORTVERSION=	1.2.6
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.horde.org/pub/horde/tarballs/
 
@@ -26,9 +27,9 @@ MAINTAINER=	thierry@thomas.as
 RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libssl.so:${PORTSDIR}/www/apache13-modssl
 .endif
 .if defined(WITH_PHP3)
-RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php3
+RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3
 .else
-RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php4
+RUN_DEPENDS+=	${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4
 .endif
 
 NO_BUILD=	yes
