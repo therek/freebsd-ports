@@ -2,12 +2,12 @@
 # Date created:         Feb 8th, 1988
 # Whom:                 jkh
 #
-# $FreeBSD: ports/net/cnet/Makefile,v 1.14 2000/11/01 12:51:01 jeh Exp $
+# $FreeBSD: ports/net/cnet/Makefile,v 1.15 2001/01/14 12:13:44 kris Exp $
 #
 
 PORTNAME=	cnet
 PORTVERSION=	1.6
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net tk82
 MASTER_SITES=	http://www.cs.uwa.edu.au/cnet/
 
@@ -37,9 +37,9 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/DOC/cnet.man ${PREFIX}/man/man1/cnet.1
 	@${MKDIR} ${PREFIX}/share/cnet
 	${INSTALL_DATA} ${WRKSRC}/cnetlib/* ${PREFIX}/share/cnet
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/examples/cnet
 	${INSTALL_DATA} ${WRKSRC}/EXAMPLES/* ${PREFIX}/share/examples/cnet
-.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/cnet
 	${INSTALL_DATA} ${WRKSRC}/DOC/*.html ${PREFIX}/share/doc/cnet
 	@${MKDIR} ${PREFIX}/share/doc/cnet/images
