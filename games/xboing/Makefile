@@ -2,7 +2,7 @@
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/games/xboing/Makefile,v 1.15 2000/08/03 09:23:59 asami Exp $
+# $FreeBSD: ports/games/xboing/Makefile,v 1.16 2000/09/09 11:01:14 kris Exp $
 
 PORTNAME=	xboing
 PORTVERSION=	2.4
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 MAINTAINER=	janek@gaja.ipan.lublin.pl
 
 .if ${MACHINE_ARCH} == "alpha"
-PLIST=		${PKGDIR}/PLIST.alpha
+PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
 USE_IMAKE=	yes
