@@ -3,7 +3,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.7 1999/12/24 14:20:51 shige Exp $
+# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.8 2000/01/04 11:32:17 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -44,16 +44,13 @@ MAKE_FLAGS=	EMACS=${EMACS_CMD}
 BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/${EMACS_VER}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT}
 RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/${EMACS_VER}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT}
 
-# depends on flim
-BUILD_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/flim/std11.el:${PORTSDIR}/editors/flim-${EMACS_PORT}
-RUN_DEPENDS+=	${PREFIX}/${EMACS_LIBDIR}/site-lisp/flim/std11.el:${PORTSDIR}/editors/flim-${EMACS_PORT}
-
 post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/${BITMAPDOCDIR}
-	@for i in ChangeLog NEWS README.* ; do \
+	@(cd ${WRKSRC} ; \
+	for i in ChangeLog NEWS README.* ; do \
 		${INSTALL_DATA} ${WRKSRC}/$${i} ${PREFIX}/${BITMAPDOCDIR}/ ; \
-	done
+	done)
 .endif
 
 .include <bsd.port.mk>
