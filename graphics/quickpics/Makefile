@@ -2,11 +2,12 @@
 # Date Created:				10 March 2000
 # Whom:					Stever <stever@transmission23.com>
 #
-# $FreeBSD: ports/graphics/quickpics/Makefile,v 1.1 2000/05/01 02:51:54 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	quickpics
 PORTVERSION=	1.8
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://area23.org/QuickPics/
 DISTNAME=	QuickPics-${PORTVERSION}
