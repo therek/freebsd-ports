@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.2 2000/07/16 19:48:02 steve Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.3 2000/09/18 15:16:42 ade Exp $
 #
 
 PORTNAME=	gcc
@@ -17,7 +17,7 @@ PATCHFILES=	${GCCNAME}-rtems-20000724.diff.gz \
 PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 
-MAINTAINER=	jim@thehousleys.net
+MAINTAINER=	jeh@FreeBSD.org
 
 DIST_SUBDIR=	rtems
 

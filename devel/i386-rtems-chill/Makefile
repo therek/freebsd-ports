@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-chill/Makefile,v 1.3 2000/08/11 14:38:10 will Exp $
+# $FreeBSD: ports/devel/i386-rtems-chill/Makefile,v 1.4 2000/09/18 15:22:08 ade Exp $
 #
 
 PORTNAME=	chill
@@ -17,7 +17,7 @@ PATCHFILES=	${CHILLNAME}-rtems-20000724.diff.gz \
 PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 
-MAINTAINER=	jim@thehousleys.net
+MAINTAINER=	jeh@FreeBSD.org
 
 DIST_SUBDIR=	rtems
 

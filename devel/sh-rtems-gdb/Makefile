@@ -2,12 +2,12 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sh-rtems-gdb/Makefile,v 1.1 2000/07/10 04:32:30 steve Exp $
 #
 
 PORTNAME=	gdb
 
-MAINTAINER=	jim@thehousleys.net
+MAINTAINER=	jeh@FreeBSD.org
 
 LCLTARGET=	sh-rtems
 CONFIGURE_ARGS=	--verbose --enable-sim
