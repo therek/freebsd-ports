@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.223 2004/03/01 15:06:13 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.224 2004/03/06 16:28:30 eik Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -443,6 +443,7 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.metu.edu.tr/pub/mirrors/ftp.isc.org/%SUBDIR%/
 
 MASTER_SITE_KDE+=	\
+	http://mirrors.isc.org/pub/kde/%SUBDIR%/ \
 	ftp://ftp.us.kde.org/pub/kde/%SUBDIR%/ \
 	ftp://ftp.kde.org/pub/kde/%SUBDIR%/ \
 	ftp://ibiblio.org/pub/packages/desktops/kde/%SUBDIR%/ \

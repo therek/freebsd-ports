@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.32 2004/02/09 04:46:23 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.33 2004/02/09 12:05:31 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -113,7 +113,7 @@ CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${CPPFLAGS} ${QTCPPFLAGS}" LIBS="${QTCFGL
 
 # Yeah, it's namespace pollution, but this is really the best place for this
 # stuff. Arts does NOT use it anymore.
-KDE_VERSION=		3.2.0
+KDE_VERSION=		3.2.1
 KDE_ORIGVER=	${KDE_VERSION}
 KDE_PREFIX?=	${LOCALBASE}
 
@@ -123,9 +123,9 @@ QTCGFLIBS?=
 # Qt 3.x common stuff
 QT_PREFIX?=		${X11BASE}
 MOC?=			${QT_PREFIX}/bin/moc
-#LIB_DEPENDS+=	qt-mt.3:${PORTSDIR}/x11-toolkits/qt32
-BUILD_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt32
-RUN_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt32
+#LIB_DEPENDS+=	qt-mt.3:${PORTSDIR}/x11-toolkits/qt33
+BUILD_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt33
+RUN_DEPENDS+=	${QT_PREFIX}/bin/moc:${PORTSDIR}/x11-toolkits/qt33
 QTCPPFLAGS+=	-I${LOCALBASE}/include -I${PREFIX}/include \
 				-I${QT_PREFIX}/include -D_GETOPT_H
 QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -ljpeg \
