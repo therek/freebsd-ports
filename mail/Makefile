@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.168 2000/10/04 04:52:32 trevor Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.169 2000/10/14 04:51:34 gshapiro Exp $
 #
 
     SUBDIR += adcomplain
@@ -71,6 +71,7 @@
     SUBDIR += mreport
     SUBDIR += mutt
     SUBDIR += muttzilla
+    SUBDIR += nail
     SUBDIR += newmail
     SUBDIR += nmh
     SUBDIR += p5-IMAP-Admin
