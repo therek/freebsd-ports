@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/games/xqf/pkg-plist,v 1.6 2004/04/02 19:03:54 krion Exp $
+@comment $FreeBSD: ports/games/xqf/pkg-plist,v 1.7 2004/10/26 17:59:25 krion Exp $
 bin/xqf
 %%PORTDOCS%%%%DOCSDIR%%/xqfdocs.html
 share/locale/ca/LC_MESSAGES/xqf.mo
@@ -6,6 +6,7 @@ share/locale/da/LC_MESSAGES/xqf.mo
 share/locale/de/LC_MESSAGES/xqf.mo
 share/locale/es/LC_MESSAGES/xqf.mo
 share/locale/fr/LC_MESSAGES/xqf.mo
+share/locale/ru/LC_MESSAGES/xqf.mo
 share/gnome/applications/xqf.desktop
 share/gnome/pixmaps/xqf_32x32.png
 %%DATADIR%%/default/flags/ae.png
