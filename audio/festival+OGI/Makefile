@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.11 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festival/Makefile,v 1.4 2000/10/07 20:52:45 asami Exp $
+# $FreeBSD: ports/audio/festival/Makefile,v 1.5 2000/10/07 21:24:54 asami Exp $
 #
 
 PORTNAME=	festival
@@ -113,6 +113,8 @@ post-patch:
 		${SPEECHTOOLS}/config/systems/ix86_FreeBSD3.5.mak
 	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
 		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.1.mak
+	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
+		${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.2.mak
 	${CP} ${SPEECHTOOLS}/config/systems/ix86_FreeBSD4.0.mak \
 		${SPEECHTOOLS}/config/systems/ix86_FreeBSD5.0.mak
 
