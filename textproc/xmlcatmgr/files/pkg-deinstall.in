@@ -1,11 +1,11 @@
-# $FreeBSD$
+# $FreeBSD: ports/textproc/xmlcatmgr/files/pkg-deinstall.in,v 1.1 2004/01/12 22:26:06 ale Exp $
 
 case $2 in
 DEINSTALL)
 
 T=/tmp/catalog.$$
 
-${XMLCATMGR} -sc ${CATALOG_MASTER_SGML} remove catalog.ports
+${XMLCATMGR} -sc ${CATALOG_MASTER_SGML} remove CATALOG catalog.ports
 ${XMLCATMGR} -sc ${T} create
 if cmp -s ${T} ${CATALOG_MASTER_SGML} ]; then
 	echo " + Removing ${CATALOG_MASTER_SGML}.  It is empty."
@@ -17,7 +17,7 @@ if cmp -s ${T} ${CATALOG_PORTS_SGML} ]; then
 fi
 rm -f ${T}
 
-${XMLCATMGR} -c ${CATALOG_MASTER_XML} remove ${CATALOG_PORTS_XML}
+${XMLCATMGR} -c ${CATALOG_MASTER_XML} remove nextCatalog ${CATALOG_PORTS_XML}
 ${XMLCATMGR} -c ${T} create
 if cmp -s ${T} ${CATALOG_MASTER_XML} ]; then
 	echo " + Removing ${CATALOG_MASTER_XML}.  It is empty."
