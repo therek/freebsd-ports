@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.54 2000/07/29 02:44:47 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	will
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kde-qt-addon.4:${PORTSDIR}/x11-toolkits/kde-qt-addon
