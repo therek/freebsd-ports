@@ -2,7 +2,7 @@
 # Date created:				May 28 2001
 # Whom:					vanilla
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-SOAP-Lite/Makefile,v 1.1 2001/05/28 12:52:09 vanilla Exp $
 #
 
 PORTNAME=	SOAP-Lite
@@ -38,6 +38,7 @@ MAN3=		Apache::SOAP.3 \
 		SOAP::Transport::TCP.3 \
 		UDDI::Lite.3 \
 		XML::Parser::Lite.3 \
-		XMLRPC::Lite.3
+		XMLRPC::Lite.3 \
+		XMLRPC::Transport::HTTP.3
 
 .include <bsd.port.mk>
