@@ -2,7 +2,7 @@
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.23 2000/04/17 23:11:28 mharo Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.24 2000/04/21 08:19:14 mharo Exp $
 #
 
 PORTNAME=	xinetd
@@ -16,7 +16,7 @@ MAINTAINER=	vanilla@FreeBSD.org
 FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	yes
 ALL_TARGET=	build
-CONFIGURE_ARGS=	--with-loadavg --with-libwrap
+CONFIGURE_ARGS=	--with-loadavg --with-libwrap --with-inet6
 
 MAN5=		xinetd.conf.5
 MAN8=		xinetd.8 xinetd.log.8
