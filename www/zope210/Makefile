@@ -2,7 +2,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.9 2000/08/05 05:02:53 kris Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.10 2000/08/08 18:10:52 nbm Exp $
 #
 
 PORTNAME=	zope
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
 DISTNAME=	Zope-${PORTVERSION}-src
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	thomas@hentschel.net
+MAINTAINER=	nbm@FreeBSD.org
 
 BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
 RUN_DEPENDS=	${LOCALBASE}/sbin/apache:${PORTSDIR}/www/apache13-modssl
