@@ -2,11 +2,11 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.82 2001/03/29 16:35:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	qt
-PORTVERSION?=	2.3.0
+PORTVERSION?=	2.3.1
 CATEGORIES?=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 DISTNAME=	qt-x11-${PORTVERSION}
@@ -24,8 +24,8 @@ USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
-		-system-libmng -thread -no-opengl \
-		-I${LOCALBASE}/include -L${LOCALBASE}/lib
+		-system-libmng -thread -no-opengl -xft \
+		-no-g++-exceptions -I${LOCALBASE}/include -L${LOCALBASE}/lib
 
 .if defined(QT_DEBUG)
 CONFIGURE_ARGS+= -debug
