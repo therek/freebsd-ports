@@ -3,7 +3,7 @@
 # Date created:		30 October 1999
 # Whom:			dkwiebe
 #
-# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.8 2000/02/27 15:01:11 steve Exp $
+# $FreeBSD: ports/editors/staroffice5/Makefile,v 1.9 2000/02/28 08:33:26 asami Exp $
 #
 
 DISTNAME=	so51a_lnx_01
@@ -17,7 +17,7 @@ MASTER_SITES=	http://afug.hypermart.net/files/ \
 EXTRACT_SUFX=	.tar
 DISTFILES=	applicat.rdb.gz libofa517li.so libsdb517li.so
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	mb@imp.ch
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
