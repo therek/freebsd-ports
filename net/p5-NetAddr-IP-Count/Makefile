@@ -2,11 +2,11 @@
 # Date created:				29 March 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/net/p5-NetAddr-IP-Count/Makefile,v 1.1 2001/04/02 20:06:19 asmodai Exp $
+# $FreeBSD: ports/net/p5-NetAddr-IP-Count/Makefile,v 1.2 2001/06/12 19:25:07 tobez Exp $
 #
 
 PORTNAME=	NetAddr-IP-Count
-PORTVERSION=	2.00
+PORTVERSION=	2.01
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	NetAddr
