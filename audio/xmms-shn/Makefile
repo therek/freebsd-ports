@@ -2,13 +2,13 @@
 # Date created:        2 November 2000
 # Whom:                Bill Fenner <fenner@FreeBSD.Org>
 #
-# $FreeBSD: ports/audio/xmms-shn/Makefile,v 1.3 2001/03/10 01:28:49 fenner Exp $
+# $FreeBSD: ports/audio/xmms-shn/Makefile,v 1.4 2001/03/14 19:33:30 vanilla Exp $
 #
 
 PORTNAME=	xmms-shn
-PORTVERSION=	2.1
+PORTVERSION=	2.2.3
 CATEGORIES=	audio
-MASTER_SITES=	http://sdf.lonestar.org/~jason/shn-utils/xmms-shn/source/
+MASTER_SITES=	http://shnutils.freeshell.org/xmms-shn/source/
 
 MAINTAINER=	fenner@FreeBSD.Org
 
