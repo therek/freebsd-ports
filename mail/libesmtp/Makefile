@@ -2,7 +2,7 @@
 # Date created:         Sun Feb 21 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.6 2001/07/20 09:58:19 sobomax Exp $
 
 PORTNAME=	libesmtp
 PORTVERSION=	0.8.3
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.stafford.uklinux.net/libesmtp/ \
 
 MAINTAINER=	jmcoopr@webmail.bmi.net
 
+LIB_DEPENDS=	ltdl.1:${PORTSDIR}/devel/libtool
+
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_OPENSSL=	yes
@@ -22,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-unknown-freebsd${OSREL}
 
-# the following is required for Balsa-1.17
+# the following is required for Balsa-1.1.7
 CONFIGURE_ARGS=	--enable-require-all-recipients
 
 post-install:
