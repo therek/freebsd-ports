@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xsane
-# Version required:		0.33
+# Version required:		0.35
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
-# Whom:				domi@saargate.de
+# Whom:				Dominik Brettnacher <domi@saargate.de>
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.9 1999/08/26 18:56:24 dirk Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.10 1999/09/07 10:45:31 steve Exp $
 #
 
-DISTNAME=	xsane-0.33
+DISTNAME=	xsane-0.35
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.wolfsburg.de/~rauch/sane/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
