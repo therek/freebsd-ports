@@ -2,7 +2,7 @@
 # Date created:		29 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nntp/Makefile,v 1.18 2000/01/12 05:51:20 cpiazza Exp $
+# $FreeBSD: ports/news/nntp/Makefile,v 1.19 2000/04/09 17:33:06 cpiazza Exp $
 #
 
 PORTNAME=	nntp
@@ -11,9 +11,9 @@ CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.academ.com/pub/nntp/server/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-PATCH_SITES=    ftp://ftp.lan-ks.de/pub/c-news/ \
+PATCH_SITES=	ftp://ftp.lan-ks.de/pub/c-news/ \
 		ftp://ftp.dinoex.org/pub/c-news/
-PATCHFILES=     nntp-patch-y2k
+PATCHFILES=	nntp-patch-y2k
 
 MAINTAINER=	adam@veda.is
 

@@ -2,11 +2,11 @@
 # Date created:         1 May 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/d1489/Makefile,v 1.12 1999/08/31 06:49:57 mharo Exp $
+# $FreeBSD: ports/russian/d1489/Makefile,v 1.13 2000/04/13 19:14:02 cpiazza Exp $
 #
 
 PORTNAME=	d1489
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=     russian
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/unix/convert/char/
 EXTRACT_SUFX=   .tgz

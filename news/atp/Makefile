@@ -2,7 +2,7 @@
 # Date created:         9 Nov 1997
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/news/atp/Makefile,v 1.3 1999/08/31 06:49:26 mharo Exp $
+# $FreeBSD: ports/news/atp/Makefile,v 1.4 2000/04/09 17:32:41 cpiazza Exp $
 #
 
 PORTNAME=		atp
@@ -17,7 +17,7 @@ MAINTAINER=		dburr@FreeBSD.org
 RUN_DEPENDS=		zip:${PORTSDIR}/archivers/zip \
 			unzip:${PORTSDIR}/archivers/unzip
 
-WRKSRC=                 ${WRKDIR}/${PKGNAME}
+WRKSRC=			${WRKDIR}/${PKGNAME}
 
 USE_GMAKE=		YES
 GNU_CONFIGURE=		YES

@@ -2,11 +2,11 @@
 # Date created:        09 April 1998
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/palm/kpilot/Makefile,v 1.29 2000/03/21 08:16:01 mharo Exp $
+# $FreeBSD: ports/palm/kpilot/Makefile,v 1.30 2000/04/13 19:18:56 cpiazza Exp $
 #
 
 PORTNAME=	kpilot
-PORTVERSION= 	3.0.2
+PORTVERSION=	3.0.2
 CATEGORIES=	palm comms kde
 MASTER_SITES=	http://www.slac.com/pilone/kpilot_home/download/
 

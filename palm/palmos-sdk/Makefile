@@ -2,11 +2,11 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.1.1.1 2000/03/31 03:39:35 kuriyama Exp $
+# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.2 2000/04/13 19:18:58 cpiazza Exp $
 #
 
 PORTNAME=	palmos-sdk
-PORTVERSION= 	3.5
+PORTVERSION=	3.5
 CATEGORIES=	palm
 MASTER_SITES=	
 DISTNAME=	sdk35

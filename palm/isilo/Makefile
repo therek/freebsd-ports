@@ -2,11 +2,11 @@
 # Date created:		20 December 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/palm/isilo/Makefile,v 1.5 2000/02/03 20:53:10 nik Exp $
+# $FreeBSD: ports/palm/isilo/Makefile,v 1.6 2000/04/13 19:18:56 cpiazza Exp $
 #
 
 PORTNAME=	isilo
-PORTVERSION= 	2.55
+PORTVERSION=	2.55
 CATEGORIES=	palm textproc
 MASTER_SITES=	ftp://ftp.iSilo.com/pub/
 DISTNAME=	iSiloBSD

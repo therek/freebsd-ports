@@ -2,25 +2,25 @@
 # Date created:         8 Apr 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/netscape3.language/Makefile,v 1.18 1999/08/31 06:49:59 mharo Exp $
+# $FreeBSD: ports/russian/netscape3.language/Makefile,v 1.19 2000/04/13 19:14:09 cpiazza Exp $
 #
 
 PORTNAME=	netscape
-PORTVERSION= 	3.01
-CATEGORIES=     russian www
+PORTVERSION=	3.01
+CATEGORIES=	russian www
+EXTRACT_ONLY=	# empty
 
 MAINTAINER=	ache@FreeBSD.org
 
-RUN_DEPENDS += ${X11BASE}/lib/X11/nls/ru_SU.KOI8-R:${PORTSDIR}/russian/X.language
-RUN_DEPENDS += netscape:${PORTSDIR}/www/netscape3
+RUN_DEPENDS+=	${X11BASE}/lib/X11/nls/ru_SU.KOI8-R:${PORTSDIR}/russian/X.language
+RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape3
 
-RESTRICTED=     "Includes a copyrighted file from Netscape"
-EXTRACT_ONLY=   # empty
-NO_BUILD=       YES
-NO_WRKSUBDIR=   YES
-USE_X_PREFIX=   YES
+RESTRICTED=	"Includes a copyrighted file from Netscape"
+NO_BUILD=	YES
+NO_WRKSUBDIR=	YES
+USE_X_PREFIX=	YES
 
-APPDEF = ${X11BASE}/lib/X11/app-defaults
+APPDEF=		${X11BASE}/lib/X11/app-defaults
 
 # no distfile to fetch
 do-fetch:

@@ -2,11 +2,11 @@
 # Date created:		21 January 2000
 # Whom:			Andrew Arensburger <arensb@ooblick.com>
 #
-# $FreeBSD: ports/palm/coldsync/Makefile,v 1.2 2000/01/30 18:20:50 steve Exp $
+# $FreeBSD: ports/palm/coldsync/Makefile,v 1.3 2000/04/13 19:18:50 cpiazza Exp $
 #
 
 PORTNAME=	coldsync
-PORTVERSION= 	1.1.2
+PORTVERSION=	1.1.2
 CATEGORIES=	palm comms
 MASTER_SITES=	http://www.ooblick.com/software/coldsync/
 

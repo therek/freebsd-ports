@@ -2,7 +2,7 @@
 # Date created:         Sun Apr 14 09:23:59 MET DST 1996
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/knews/Makefile,v 1.28 2000/04/13 14:25:40 knu Exp $
+# $FreeBSD: ports/news/knews/Makefile,v 1.29 2000/04/16 17:35:58 andreas Exp $
 #
 
 PORTNAME=	knews
@@ -12,11 +12,11 @@ MASTER_SITES=	http://www.matematik.su.se/~kjj/
 
 MAINTAINER=	andreas@FreeBSD.org
 
-LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm \
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		compface:${PORTSDIR}/mail/faces
-RUN_DEPENDS=    newsp:${PORTSDIR}/print/mp-letter
+RUN_DEPENDS=	newsp:${PORTSDIR}/print/mp-letter
 
 USE_IMAKE=	yes
 MAKE_FLAGS=	BINDIR=${PREFIX}/bin MANDIR=${PREFIX}/man/man1 \

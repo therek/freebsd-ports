@@ -2,7 +2,7 @@
 # Date created:         19 Feb 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/ifmail/Makefile,v 1.12 1999/10/10 23:40:20 steve Exp $
+# $FreeBSD: ports/news/ifmail/Makefile,v 1.13 2000/04/09 17:32:54 cpiazza Exp $
 #
 
 PORTNAME=	ifmail
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.lan-ks.de/pub/approved/
 MASTER_SITE_SUBDIR=	system/fido
 
-MAINTAINER=     dirk.meyer@dinoex.sub.org
+MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 MAN3=		parsedate.3
 MAN8=		ifmail.8 iftoss.8

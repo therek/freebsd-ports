@@ -2,11 +2,11 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/nn/Makefile,v 1.24 2000/03/04 13:46:43 jedgar Exp $
+# $FreeBSD: ports/news/nn/Makefile,v 1.25 2000/04/09 17:33:05 cpiazza Exp $
 #
 
 PORTNAME=	nn
-PORTVERSION= 	6.5.6
+PORTVERSION=	6.5.6
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.visi.com/users/mtpins/nn/
 EXTRACT_SUFX=	.tar.Z

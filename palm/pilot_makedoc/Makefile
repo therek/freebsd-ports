@@ -2,11 +2,11 @@
 # Date created:				May 10th 1997
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/palm/pilot_makedoc/Makefile,v 1.10 2000/04/13 19:35:42 cpiazza Exp $
+# $FreeBSD: ports/palm/pilot_makedoc/Makefile,v 1.11 2000/04/15 01:46:50 asami Exp $
 #
 
 PORTNAME=	pilot_makedoc
-PORTVERSION= 	0.7a
+PORTVERSION=	0.7a
 CATEGORIES=	palm textproc
 MASTER_SITES=	ftp://ftp.forth.org/pub/PalmOS/ \
 		ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/ \

@@ -2,14 +2,14 @@
 # Date created:					June 2nd 1997
 # Whom:						jfitz
 #
-# $FreeBSD: ports/news/diablo/Makefile,v 1.9 1999/08/31 06:49:30 mharo Exp $
+# $FreeBSD: ports/news/diablo/Makefile,v 1.10 2000/04/09 17:32:47 cpiazza Exp $
 #
 
 PORTNAME=	diablo
 PORTVERSION=	1.15
 CATEGORIES=	news
 MASTER_SITES=	http://www.backplane.com/diablo/
-DISTNAME=	${PKGNAME}-rel	
+DISTNAME=	${PKGNAME}-rel
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jfitz@FreeBSD.org
@@ -25,10 +25,9 @@ MAN8=		diablo.8 dclean.8 dicmd.8 dexpire.8 didump.8 \
 		dilookup.8 doutq.8 dspoolout.8 dkp.8 dnewslink.8 \
 		dreadart.8 dreaderd.8 dsyncgroups.8
 
-
 do-configure:
 	${CP} ${FILESDIR}/post-install-notes ${WRKSRC}
-	${SETENV} ${MAKE_ENV} /usr/bin/perl -pi -e 's|%%PREFIX%%|${PREFIX}|g' \
+	${SETENV} ${MAKE_ENV} ${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' \
 		${WRKSRC}/post-install-notes
 
 do-build:

@@ -2,11 +2,11 @@
 # Date created:         Wed Jun 16 04:42:22 JST 1999
 # Whom:                 sumikawa@ebina.hitachi.co.jp
 #
-# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.4 2000/04/13 19:18:55 cpiazza Exp $
+# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.5 2000/04/16 22:55:19 asami Exp $
 #
 
 PORTNAME=	imgvtopgm
-PORTVERSION= 	2.0
+PORTVERSION=	2.0
 CATEGORIES=	palm graphics
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
 

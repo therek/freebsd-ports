@@ -2,12 +2,11 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.10 2000/04/01 06:02:07 mharo Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.11 2000/04/13 19:13:59 cpiazza Exp $
 #
 
 PORTNAME=	apache
-PORTVERSION= 	1.3.11
-RA_VERSION=	29.3
+PORTVERSION=	1.3.11
 CATEGORIES=	www russian
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -32,6 +31,7 @@ PATCHFILES=	patches_${PORTVERSION}rusPL${RA_VERSION}.tar.gz
 
 MAINTAINER=	vns@delta.odessa.ua
 
+RA_VERSION=	29.3
 Y2K=		http://www.apache.org/docs/misc/FAQ.html#year2000
 
 #
@@ -64,14 +64,14 @@ OPTIM=-DHARD_SERVER_LIMIT=512 \
 -DDEFAULT_PATH=\\"/bin:/usr/bin:${PREFIX}/bin\\"
 
 .if defined(APACHE_PERF_TUNING) && ${APACHE_PERF_TUNING} == YES
-OPTIM+= -DBUFFERED_LOGS
-CFLAGS+= -O6 -fomit-frame-pointer
+OPTIM+=		-DBUFFERED_LOGS
+CFLAGS+=	-O6 -fomit-frame-pointer
 .endif
 
-CONFIGURE_ENV= OPTIM='${OPTIM}'
+CONFIGURE_ENV=	OPTIM='${OPTIM}'
 
-MAN1= dbmmanage.1 htdigest.1 htpasswd.1
-MAN8= ab.8 apachectl.8 apxs.8 httpd.8 logresolve.8 rotatelogs.8
+MAN1=		dbmmanage.1 htdigest.1 htpasswd.1
+MAN8=		ab.8 apachectl.8 apxs.8 httpd.8 logresolve.8 rotatelogs.8
 
 pre-install:
 	@if [ -f ${WRKSRC}/htdocs/index.html.orig ]; then \

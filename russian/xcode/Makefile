@@ -2,11 +2,11 @@
 # Date created:		13 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/russian/xcode/Makefile,v 1.1 2000/01/29 05:41:50 steve Exp $
+# $FreeBSD: ports/russian/xcode/Makefile,v 1.2 2000/04/13 19:14:15 cpiazza Exp $
 #
 
 PORTNAME=	xcode
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	russian
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/util/text/
 DISTNAME=	${PORTNAME}

@@ -2,7 +2,7 @@
 # Date created:		Thu May 29 17:16:36 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/news/dnews/Makefile,v 1.14 1999/08/31 06:49:31 mharo Exp $
+# $FreeBSD: ports/news/dnews/Makefile,v 1.15 2000/04/09 17:32:49 cpiazza Exp $
 #
 
 PORTNAME=	dnews
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 Y2K=		http://netwinsite.com/dnews_y2k.htm
 
-WRKSRC=         ${WRKDIR}/dnews
+WRKSRC=		${WRKDIR}/dnews
 NO_CDROM=	"no answer yet, if we are allowed to put it onto CDROM"
 RESTRICTED=	"only free for non-profit organisations"
 NO_PACKAGE=	"${RESTRICTED}"

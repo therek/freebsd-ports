@@ -2,19 +2,19 @@
 # Date created:		February 7, 1998
 # Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.3 1999/08/30 14:31:49 peter Exp $
+# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.4 2000/04/09 17:33:13 cpiazza Exp $
 #
 
-PORTNAME=	p5-News-Newsrc
+PORTNAME=	News-Newsrc
 PORTVERSION=	1.07
 CATEGORIES=	news perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	News
-DISTNAME=	News-Newsrc-1.07
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	croyle@gelemna.ft-wayne.in.us
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Set/IntSpan.pm:${PORTSDIR}/math/p5-Set-IntSpan
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Set/IntSpan.pm:${PORTSDIR}/math/p5-Set-IntSpan
 
 USE_PERL5=	yes
 

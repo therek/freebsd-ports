@@ -2,25 +2,25 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn/Makefile,v 1.16 1999/08/31 06:49:40 mharo Exp $
+# $FreeBSD: ports/news/trn/Makefile,v 1.17 2000/04/09 17:33:27 cpiazza Exp $
 #
 
 PORTNAME=	trn
-PORTVERSION= 	3.6
+PORTVERSION=	3.6
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.uu.net/networking/news/readers/trn/
 
 MAINTAINER=	smace@FreeBSD.org
 
-RUN_DEPENDS=  munpack:${PORTSDIR}/converters/mpack
+RUN_DEPENDS=	munpack:${PORTSDIR}/converters/mpack
 
-WRKSRC=		$(WRKDIR)/trn-3.6
+WRKSRC=		${WRKDIR}/trn-3.6
 MAN1=		trn.1 Pnews.1 Rnmail.1 newsetup.1 newsgroups.1
 
 HAS_CONFIGURE=	Yes
 CONFIGURE_SCRIPT=	Configure
-CONFIGURE_ENV=	PREFIX="$(PREFIX)"
-CONFIGURE_ARGS= -S
+CONFIGURE_ENV=	PREFIX="${PREFIX}"
+CONFIGURE_ARGS=	-S
 
 post-install:
 .if !defined(BATCH)

@@ -1,20 +1,21 @@
 # New ports collection makefile for:    ru-elm
 # Whom:                 ache
+# Date created:		1995/12/20
 #
-# $FreeBSD: ports/russian/elm.language/Makefile,v 1.15 1999/08/31 01:46:58 peter Exp $
+# $FreeBSD: ports/russian/elm.language/Makefile,v 1.16 2000/04/13 19:14:06 cpiazza Exp $
 #
 
 PORTNAME=	elm
-PORTVERSION= 	2.4ME
-CATEGORIES=     russian mail
+PORTVERSION=	2.4ME
+CATEGORIES=	russian mail
+EXTRACT_ONLY=	# empty
 
-RUN_DEPENDS+=   elm:${PORTSDIR}/mail/elm
+MAINTAINER=	ache@FreeBSD.org
 
-MAINTAINER=     ache@FreeBSD.org
+RUN_DEPENDS+=	elm:${PORTSDIR}/mail/elm
 
-EXTRACT_ONLY=   # empty
-NO_WRKSUBDIR=   YES
-NO_BUILD=       YES
+NO_WRKSUBDIR=	YES
+NO_BUILD=	YES
 
 do-fetch:
 

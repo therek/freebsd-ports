@@ -2,11 +2,11 @@
 # Date created:         22 July 1999
 # Whom:                 mi@aldan.algebra.com
 #
-# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.6 1999/11/29 19:00:13 steve Exp $
+# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.7 2000/04/13 19:14:08 cpiazza Exp $
 #
 
 PORTNAME=	koi8rPS
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	russian print
 MASTER_SITES=	ftp://ftp.ziplink.net/users/kot/CyrPS/ \
 		ftp://ftp.kapella.gpi.ru/pub/cyrillic/psfonts/
