@@ -2,15 +2,17 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.38 2001/04/06 07:54:08 dougb Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.39 2001/04/15 21:18:08 dougb Exp $
 #
 
 PORTNAME=	xscreensaver
-PORTVERSION=	3.32
+PORTVERSION=	3.33
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
 MAINTAINER=	DougB@FreeBSD.org
+
+LIB_DEPENDS=	gle.3:${PORTSDIR}/graphics/gle
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
@@ -18,7 +20,7 @@ USE_MESA=	yes
 WANT_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-pam --with-gl --with-xpm --without-gnome \
-		--with-zippy=/usr/games/fortune
+		--with-zippy=/usr/games/fortune --with-gle
 
 MAN1=		attraction.1 blitspin.1 bouboule.1 braid.1 \
 		bsod.1 bubbles.1 critical.1 decayscreen.1 \
@@ -35,7 +37,8 @@ MAN1=		attraction.1 blitspin.1 bouboule.1 braid.1 \
 		xmatrix.1 xscreensaver-command.1 xscreensaver-demo.1 \
 		xscreensaver-gl-helper.1 xscreensaver.1 xsublim.1 xteevee.1 \
 		zoom.1 molecule.1 rotzoomer.1 bumps.1 xscreensaver-getimage.1 \
-		xscreensaver-getimage-file.1 xscreensaver-getimage-video.1
+		xscreensaver-getimage-file.1 xscreensaver-getimage-video.1 \
+		speedmine.1 whirlygig.1
 
 post-patch:
 	@ ${CP} ${WRKSRC}/configure ${WRKSRC}/configure.Patched
