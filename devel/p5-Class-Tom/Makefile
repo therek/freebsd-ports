@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/p5-Class-Tom/Makefile,v 1.2 2001/01/01 11:07:50 will Exp $
+# $FreeBSD: ports/devel/p5-Class-Tom/Makefile,v 1.3 2001/03/01 06:37:07 vanilla Exp $
 #
 
 PORTNAME=	Class-Tom
@@ -21,5 +21,6 @@ SITE_PERL=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Class:Tom.3
 
 .include <bsd.port.mk>
