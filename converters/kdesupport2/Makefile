@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.41 2000/11/17 18:24:37 will Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.42 2000/12/12 03:01:53 kevlo Exp $
 #
 
 PORTNAME=	kdesupport
@@ -32,8 +32,8 @@ CONFIGURE_ENV+= LIBQT="-lqt2" MOC="${MOC}" LIBQTFILE="libqt2" \
 USE_GMAKE=	yes
 
 pre-configure:
-	${PERL} -pi -e "s@TOPSUBDIRS libaps@TOPSUBDIRS@g" ${WRKSRC}/configure
-	${PERL} -pi -e "s@odbc libaps@odbc@g" ${WRKSRC}/configure
+	${PERL} -pi -e "s@TOPSUBDIRS libaps@TOPSUBDIRS@g ; \
+		s@odbc libaps@odbc@g" ${WRKSRC}/configure
 	${PERL} -pi -e "s@-version-info 1:1@-version-info 3:0@g" ${WRKSRC}/mimelib/Makefile.in
 
 .include <bsd.port.mk>

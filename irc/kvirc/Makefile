@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.16 2000/10/02 05:39:31 trevor Exp $
+# $FreeBSD: ports/irc/kvirc/Makefile,v 1.17 2000/10/15 07:50:34 trevor Exp $
 #
 
 PORTNAME=	kvirc
@@ -38,9 +38,8 @@ CONFIGURE_ARGS=	--x-includes=$(X11BASE)/include \
 CONFIGURE_ENV+=	SS_X_EXTRA_LIBS=-lxpg4
 
 pre-build:
-	for i in `find ${WRKSRC} -name Makefile` ; do \
-		${PERL} -pi -e "s@lqt @lqt2 @g" $$i ; \
-		${PERL} -pi -e "s@lpthread@pthread@g" $$i ; \
-	done
+	@find ${WRKSRC} -name Makefile | xargs ${PERL} -pi -e \
+		"s@lqt @lqt2 @g ; \
+		 s@lpthread@pthread@g"
 
 .include <bsd.port.mk>

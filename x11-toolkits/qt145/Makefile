@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.49 2000/10/23 18:52:33 knu Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.50 2000/10/30 15:15:23 will Exp $
 #
 
 PORTNAME=	qt
@@ -48,10 +48,10 @@ post-patch:
 		| eval `${AWK} '{print "ln -sf",$$1,"${WRKSRC}/include"}'`
 
 post-configure:
-	@${PERL} -pi -e "s:g\+\+:${CXX}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
-	@${PERL} -pi -e "s:/usr/X11R6:${PREFIX}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
-	@${PERL} -pi -e "s:%%CXXFLAGS%%:${CXXFLAGS}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
-	@${PERL} -pi -e "s:%%VERSION%%:${VERSION}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
+	@${PERL} -pi -e "s:g\+\+:${CXX}:g ; \
+		s:/usr/X11R6:${PREFIX}:g ; \
+		s:%%CXXFLAGS%%:${CXXFLAGS}:g ; \
+		s:%%VERSION%%:${VERSION}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} freebsd-g++-${STATIC})
 
 do-install:

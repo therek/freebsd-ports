@@ -2,7 +2,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.3 2000/04/10 00:04:31 cpiazza Exp $
+# $FreeBSD: ports/www/bkmrkconv/Makefile,v 1.4 2000/09/25 12:21:42 asami Exp $
 #
 
 PORTNAME=	bkmrkconv
@@ -17,8 +17,8 @@ USE_PERL5=	yes
 NO_BUILD=	yes
 
 pre-install:
-	@${PERL} -pi -e "s:/usr/local/bin/perl:${PERL}:g" ${WRKSRC}/*.pl
-	@${PERL} -pi -e "s:/usr/local/share:${PREFIX}/share:g" ${WRKSRC}/bkmrkconv.pl
+	@${PERL} -pi -e "s:/usr/local/bin/perl:${PERL}:g ; \
+		s:/usr/local/share:${PREFIX}/share:g" ${WRKSRC}/*.pl
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/bkmrkconv/src

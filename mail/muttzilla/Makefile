@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.8 2000/11/10 17:56:26 obrien Exp $
+# $FreeBSD: ports/mail/muttzilla/Makefile,v 1.9 2000/11/24 22:35:43 obrien Exp $
 #
 
 PORTNAME=	muttzilla
@@ -16,19 +16,8 @@ MAINTAINER=	obrien@FreeBSD.org
 pre-configure:
 	@${PERL} -pi.orig \
 		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
-		${WRKSRC}/muttzilla.h
-	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
-		${WRKSRC}/mzmail.sh
-	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
-		${WRKSRC}/mzmail.py
-	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
-		${WRKSRC}/mznews.sh
-	@${PERL} -pi.orig \
-		-e "s:/etc/muttzilla.conf:${PREFIX}/etc/muttzilla.conf:g"  \
-		${WRKSRC}/mznews.py
+		${WRKSRC}/muttzilla.h ${WRKSRC}/mzmail.sh ${WRKSRC}/mzmail.py \
+		${WRKSRC}/mznews.sh ${WRKSRC}/mznews.py
 
 post-install:
 .if !defined(NOPORTDOCS)

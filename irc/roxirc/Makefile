@@ -2,7 +2,7 @@
 # Date created:         Mar 15 1999
 # Whom:                 rox@fearme.com
 #
-# $FreeBSD: ports/irc/roxirc/Makefile,v 1.8 1999/11/22 06:21:09 cpiazza Exp $
+# $FreeBSD: ports/irc/roxirc/Makefile,v 1.9 2000/04/12 06:28:25 obrien Exp $
 #
 
 PORTNAME=	roxirc
@@ -25,7 +25,7 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/help ${PREFIX}/share/doc/roxirc/help
 
 post-patch:
-	@${PERL} -pi -e 's,/usr/local,${PREFIX},g' ${WRKSRC}/roxirc
-	@${PERL} -pi -e 's,wish8.0,wish8.2,g' ${WRKSRC}/roxirc
+	@${PERL} -pi -e 's,/usr/local,${PREFIX},g ; \
+		s,wish8.0,wish8.2,g' ${WRKSRC}/roxirc
 
 .include <bsd.port.mk>

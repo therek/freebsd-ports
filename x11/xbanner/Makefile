@@ -2,7 +2,7 @@
 # Date created:		13 Jan 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/x11/xbanner/Makefile,v 1.8 2000/08/03 09:28:47 asami Exp $
+# $FreeBSD: ports/x11/xbanner/Makefile,v 1.9 2000/10/16 03:54:51 steve Exp $
 #
 
 PORTNAME=	xbanner
@@ -20,8 +20,8 @@ USE_XPM=	yes
 #USE_IMAKE=	yes
 
 post-patch:
-	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/xres.c
-	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/samples/XBanner.ad
+	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' \
+		${WRKSRC}/xres.c ${WRKSRC}/samples/XBanner.ad
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/samples/XBanner.ad \

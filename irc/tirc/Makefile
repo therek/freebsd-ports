@@ -2,7 +2,7 @@
 # Date created:		14 August 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/irc/tirc/Makefile,v 1.6 2000/11/05 18:47:50 dougb Exp $
+# $FreeBSD: ports/irc/tirc/Makefile,v 1.7 2000/12/16 15:35:17 roam Exp $
 #
 
 PORTNAME=	tirc
@@ -18,8 +18,7 @@ MAKE_FLAGS=	CONF_ARGS="--prefix=${PREFIX}"
 MAN1=		tirc.1
 
 post-patch:
-	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/*.c
-	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/*.1
+	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:g' ${WRKSRC}/*.c ${WRKSRC}/*.1
 
 post-install:
 	strip ${PREFIX}/bin/tirc

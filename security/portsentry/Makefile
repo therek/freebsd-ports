@@ -2,7 +2,7 @@
 # Date created:		3 January 1998
 # Whom:			chris@still.whet.org
 #
-# $FreeBSD: ports/security/portsentry/Makefile,v 1.9 2000/08/26 10:20:23 will Exp $
+# $FreeBSD: ports/security/portsentry/Makefile,v 1.10 2000/10/08 10:22:53 asami Exp $
 #
 
 PORTNAME=	portsentry
@@ -15,8 +15,8 @@ MAINTAINER=	dan@freebsddiary.org
 ALL_TARGET=	freebsd
 
 post-patch:
-	@${PERL} -pi -e 's,__PREFIX__,${PREFIX},g' ${WRKSRC}/portsentry.conf
-	@${PERL} -pi -e 's,__PREFIX__,${PREFIX},g' ${WRKSRC}/portsentry_config.h
+	@${PERL} -pi -e 's,__PREFIX__,${PREFIX},g' \
+		${WRKSRC}/portsentry.conf ${WRKSRC}/portsentry_config.h
 
 do-install:
 .if !exists($(PREFIX)/etc/portsentry.conf)

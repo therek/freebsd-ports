@@ -2,7 +2,7 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/fhttpd/Makefile,v 1.4 2000/06/22 05:52:07 will Exp $
+# $FreeBSD: ports/www/fhttpd/Makefile,v 1.5 2000/07/14 01:55:13 jedgar Exp $
 #
 
 PORTNAME=	fhttpd
@@ -23,9 +23,9 @@ pre-patch:
 
 pre-install:
 	${RM} -rf ${WRKSRC}/http-root/pub/dummy_directory
-	${PERL} -pi -e "s:%%LOGFILE%%:${PREFIX}/${LOGFILE}:g" ${WRKSRC}/fhttpd.sh
+	${PERL} -pi -e "s:%%LOGFILE%%:${PREFIX}/${LOGFILE}:g" \
+		${WRKSRC}/fhttpd.sh ${WRKSRC}/http-root/root-fhttpd.conf
 	${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/http-root/root-fhttpd.conf
-	${PERL} -pi -e "s:%%LOGFILE%%:${PREFIX}/${LOGFILE}:g" ${WRKSRC}/http-root/root-fhttpd.conf
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/fhttpd.sh ${PREFIX}/etc/rc.d

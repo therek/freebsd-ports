@@ -2,7 +2,7 @@
 # Date created:        20 March 1998
 # Whom:                Joep Grooten <joep@di.nl>
 #
-# $FreeBSD: ports/devel/doxygen/Makefile,v 1.5 2000/04/11 21:27:48 mharo Exp $
+# $FreeBSD: ports/devel/doxygen/Makefile,v 1.6 2000/09/25 12:21:12 asami Exp $
 #
 
 PORTNAME=	doxygen
@@ -22,10 +22,9 @@ CONFIGURE_ARGS+=--prefix ${PREFIX} --perl ${PERL5} --make ${GMAKE}
 CONFIGURE_ENV+=	QTDIR=${X11BASE}
 
 pre-configure:
-	@${PERL} -pi -e "s:gcc:${CC}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
-	@${PERL} -pi -e "s:g\+\+:${CXX}:" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
-	@${PERL} -pi -e "s:%%CFLAGS%%:${CFLAGS}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
-	@${PERL} -pi -e "s:%%CXXFLAGS%%:${CXXFLAGS}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
+	@${PERL} -pi -e "s:gcc:${CC}:g ; s:g\+\+:${CXX}:g ; \
+		s:%%CFLAGS%%:${CFLAGS}:g ; \
+		s:%%CXXFLAGS%%:${CXXFLAGS}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/doxygen ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.6 2000/11/13 12:45:07 demon Exp $
+# $FreeBSD: ports/www/evg/Makefile,v 1.7 2000/11/26 13:43:44 demon Exp $
 #
 
 PORTNAME=	evg
@@ -25,9 +25,9 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
 post-patch:
-	@ ${PERL} -pi -e 's#/usr/bin/python#${PYTHON_CMD}#' ${WRKSRC}/evg
-	@ ${PERL} -pi -e 's#/usr/X11R6#${X11BASE}#' ${WRKSRC}/evg
-	@ ${PERL} -pi -e 's#/usr/bin/ee#${X11BASE}/bin/xv#' ${WRKSRC}/evg
+	@ ${PERL} -pi -e 's#/usr/bin/python#${PYTHON_CMD}# ; \
+		s#/usr/X11R6#${X11BASE}# ; \
+		s#/usr/bin/ee#${X11BASE}/bin/xv#' ${WRKSRC}/evg
 
 do-install:
 	@ ${MKDIR} ${PYTHON_SITELIBDIR}

@@ -2,7 +2,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/pyweather/Makefile,v 1.6 2000/06/22 05:51:51 will Exp $
+# $FreeBSD: ports/astro/pyweather/Makefile,v 1.7 2000/06/29 02:31:25 asami Exp $
 #
 
 PORTNAME=	pyWeather
@@ -20,8 +20,8 @@ NO_BUILD=	yes
 PYTHON?=	${LOCALBASE}/bin/python
 
 pre-install:
-	@${PERL} -pi -e "s:/usr/bin/python:${PYTHON}:g" ${WRKSRC}/pyWeather.py
-	@${PERL} -pi -e "s:pyWeather.py:pyWeather:g" ${WRKSRC}/pyWeather.py
+	@${PERL} -pi -e "s:/usr/bin/python:${PYTHON}:g ; \
+		s:pyWeather.py:pyWeather:g" ${WRKSRC}/pyWeather.py
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/pyWeather.py ${PREFIX}/bin/pyWeather

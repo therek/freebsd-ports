@@ -2,7 +2,7 @@
 # Date created:				05 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/rfc/Makefile,v 1.9 2000/10/27 21:52:32 jedgar Exp $
+# $FreeBSD: ports/misc/rfc/Makefile,v 1.10 2000/11/02 19:38:47 jedgar Exp $
 #
 
 PORTNAME=	rfc
@@ -24,9 +24,9 @@ do-extract:
 	@${CP} ${DISTDIR}/${DISTNAME} ${WRKDIR}/${DISTNAME}
 
 do-configure:
-	@${PERL} -pi.orig -e 's|/usr/local/etc/rfc|${PREFIX}/etc/rfc|' ${WRKDIR}/${DISTNAME}
-	@${PERL} -pi.orig -e 's|/usr/local/etc/nmap|${PREFIX}/share/misc/nmap|' ${WRKDIR}/${DISTNAME}
-	@${PERL} -pi.orig -e 's|lynx|w3m|' ${WRKDIR}/${DISTNAME}
+	@${PERL} -pi.orig -e 's|/usr/local/etc/rfc|${PREFIX}/etc/rfc| ; \
+		s|/usr/local/etc/nmap|${PREFIX}/share/misc/nmap| ; \
+		s|lynx|w3m|' ${WRKDIR}/${DISTNAME}
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/rfc ${PREFIX}/bin/rfc

@@ -2,7 +2,7 @@
 # Date created:		07 Jan 1997
 # Whom:			Hung-Chi Chu <hcchu@r350.ee.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/big5con/Makefile,v 1.15 2000/12/01 04:29:28 keith Exp $
+# $FreeBSD: ports/chinese/big5con/Makefile,v 1.16 2000/12/02 05:22:36 keith Exp $
 #
 
 PORTNAME=	big5con
@@ -31,8 +31,7 @@ EXTRACT_ONLY=	${DISTNAME}.tgz
 .include <bsd.port.pre.mk>
 post-patch:
 .if ${OSVERSION} > 500012
-	@${PERL} -pi -e 's,machine/console.h>,sys/consio.h>\n#include\t<sys/kbio.h>\n,' ${WRKSRC}/include/*
-	@${PERL} -pi -e 's,machine/console.h>,sys/consio.h>\n#include\t<sys/kbio.h>\n,' ${WRKSRC}/src/*
+	@${PERL} -pi -e 's,machine/console.h>,sys/consio.h>\n#include\t<sys/kbio.h>\n,' ${WRKSRC}/include/* ${WRKSRC}/src/*
 .endif
 pre-install:
 	@if [ ! -f ${PREFIX}/lib/fonts/kc16.smf ]; then \
