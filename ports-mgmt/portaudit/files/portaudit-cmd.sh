@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.8 2004/08/13 17:07:05 eik Exp $
+# $FreeBSD: ports/security/portaudit/files/portaudit-cmd.sh,v 1.9 2004/08/15 12:26:16 eik Exp $
 #
 
 portaudit_confs()
@@ -184,7 +184,7 @@ audit_file()
 			cmd="'"$pkg_version"' -T - \"" $1 "\" <\"'"$FILE"'\""
 			while((cmd | getline pkg) > 0) {
 				if ($2 !~ /'"$opt_restrict"'/)
-					next
+					continue
 				vul++
 				print_affected(pkg)
 			}
