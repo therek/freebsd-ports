@@ -2,7 +2,7 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/wmcalclock/Makefile,v 1.8 2000/04/10 00:32:54 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/wmcalclock/Makefile,v 1.9 2000/08/03 09:27:00 asami Exp $
 #
 
 PORTNAME=	wmCalClock
@@ -16,14 +16,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/Src
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_GMAKE=	yes
-
 ALL_TARGET=	clean all
 
 MAN1=		wmCalClock.1
-
-do-install:
-	${INSTALL_MAN} ${WRKSRC}/wmCalClock.1 ${PREFIX}/man/man1/
-	${INSTALL_PROGRAM} ${WRKSRC}/wmCalClock ${PREFIX}/bin/
 
 .include <bsd.port.mk>
