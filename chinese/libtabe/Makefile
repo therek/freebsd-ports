@@ -3,7 +3,7 @@
 # Date created:		1/1/00
 # Whom:			Keith Jang <jtjang@gcn.net.tw>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.2 1999/09/04 16:34:27 foxfair Exp $
 #
 
 DISTNAME=	libtabe-0.1-pre2
@@ -17,6 +17,7 @@ BUILD_DEPENDS=	${PREFIX}/lib/libdb2.a:${PORTSDIR}/databases/db
 RUN_DEPENDS=	${PREFIX}/lib/libdb2.a:${PORTSDIR}/databases/db
 
 WRKSRC=		${WRKDIR}/libtabe
+USE_X11=	yes
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
