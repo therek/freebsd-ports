@@ -1,19 +1,18 @@
-# New ports collection makefile for:	jakarta-ant
+# New ports collection makefile for:	xalan-j
 # Date created:		21 February 2001
-# Whom:			ernst@jollem.com
+# Whom:			znerd@FreeBSD.org
 #
-# $FreeBSD: ports/java/xalan-j/Makefile,v 1.2 2001/03/28 14:08:46 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xalan-j
 PORTVERSION=	2.1.0
 CATEGORIES=	java textproc
 MASTER_SITES=	http://xml.apache.org/dist/${PORTNAME}/ \
-		http://xml.apache.org/dist/old/${PORTNAME}/ \
-		http://www.jollem.com/~ernst/
+		http://www.metaverse.nl/~ernst/
 DISTNAME=	${PORTNAME}_${PORTVERSION:S/./_/g}
 
-MAINTAINER=	ernst@jollem.com
+MAINTAINER=	znerd@FreeBSD.org
 
 RUN_DEPENDS=    ${JAVAVM}:${PORTSDIR}/java/javavmwrapper
 
