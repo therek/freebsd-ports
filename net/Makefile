@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.524 2001/04/17 18:06:48 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.525 2001/04/17 18:10:47 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -104,6 +104,7 @@
     SUBDIR += gated
     SUBDIR += gatekeeper
     SUBDIR += generic-nqs
+    SUBDIR += geotrace
     SUBDIR += ggsd
     SUBDIR += ghtool
     SUBDIR += gicq
