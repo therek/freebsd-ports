@@ -2,18 +2,17 @@
 # Date created:		07 March 2001
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.4 2001/06/14 14:36:05 sf Exp $
+# $FreeBSD: ports/chinese/mozilla-tclp/Makefile,v 1.5 2001/06/15 23:20:17 fenner Exp $
 #
 
-BROKEN=		"out of sync with mozilla(0.9.1)"
 PORTNAME=	mozilla
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9.1
 CATEGORIES=	chinese www
 MASTER_SITES=	http://www.csie.ntu.edu.tw/~b7506051/mt4/langpack/
 PKGNAMESUFFIX=	-tclp
 # Same as ftp://ftp.mozilla.org/pub/mozilla/l10n/lang/moz0.81/langzhtw.xpi.
 # Use this to avoid checksum problems.
-DISTNAME=	0.8.1-0401-RELEASE-langzhtw
+DISTNAME=		0.9.1-0615-RELEASE-langzhtw
 EXTRACT_SUFX=	.xpi
 
 MAINTAINER=	keith@FreeBSD.org
