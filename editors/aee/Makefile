@@ -2,15 +2,13 @@
 # Date created:		19 Aug 1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/editors/aee/Makefile,v 1.2 2000/04/14 00:25:16 mharo Exp $
+# $FreeBSD: ports/editors/aee/Makefile,v 1.3 2000/10/08 00:34:42 asami Exp $
 #
 
 PORTNAME=	aee
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.6
 CATEGORIES=	editors
-MASTER_SITES=	http://www.users.uswest.net/~hmahon/sources/ \
-		http://awwm.linuxberg.com/files/console/network/ \
-		http://powerlinux.linuxberg.com/files/console/network/
+MASTER_SITES=	http://mahon.cwx.net/sources/
 
 MAINTAINER=	kbyanc@posi.net
 
