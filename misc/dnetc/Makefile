@@ -2,7 +2,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.13 2000/04/14 08:45:37 asami Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.14 2000/06/22 07:39:38 dbaker Exp $
 #
 
 PORTNAME=	dnetc
@@ -13,7 +13,7 @@ MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8009/ \
 .include <bsd.port.pre.mk>
 .if ${ARCH} == "i386"
 DISTFILES=      dnetc460-freebsd-x86-elf.tar.gz
-.elif ${ARCH} == "i386"
+.elif ${ARCH} == "alpha"
 BROKEN=         "No longer available.  Please contact dbaker@distributed.net if you would like to build the native Alpha port"
 .endif
 
