@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.470 2001/03/14 23:18:11 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.471 2001/03/17 06:48:13 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -139,6 +139,7 @@
     SUBDIR += i960-rtems-binutils
     SUBDIR += i960-rtems-gcc
     SUBDIR += i960-rtems-gdb
+    SUBDIR += icu
     SUBDIR += id-utils
     SUBDIR += idle
     SUBDIR += ilu
