@@ -2,7 +2,7 @@
 # Date created:				05 Feb 2000
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/net/vtun/Makefile,v 1.3 2000/09/07 13:17:55 kevlo Exp $
+# $FreeBSD: ports/net/vtun/Makefile,v 1.4 2001/02/19 14:08:39 kevlo Exp $
 #
 
 PORTNAME=	vtun
@@ -29,6 +29,7 @@ CONFIGURE_ARGS+=--localstatedir=/var \
 ALL_TARGET= 	vtund
 
 post-install:
+	@${INSTALL_DATA} ${WRKSRC}/vtund.conf ${PREFIX}/etc/vtund.conf.example
 	@${MKDIR} ${PREFIX}/share/doc/vtund
 .for doc in FAQ README README.Setup README.Shaper
 	@${INSTALL_DATA} ${WRKSRC}/${doc} ${PREFIX}/share/doc/vtund
