@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.280 2000/07/18 17:47:17 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.281 2000/07/19 01:18:43 kuriyama Exp $
 #
 
     SUBDIR += Canna
@@ -266,6 +266,7 @@
     SUBDIR += tk42
     SUBDIR += tk80
     SUBDIR += tkdesk
+    SUBDIR += tkhonyaku
     SUBDIR += tkstep80
     SUBDIR += today
     SUBDIR += truetypefonts
