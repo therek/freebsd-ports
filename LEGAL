@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.203 2001/03/09 23:08:58 lioux Exp $
+# $FreeBSD: ports/LEGAL,v 1.204 2001/03/10 18:27:17 will Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -189,8 +189,6 @@ tkman-1.7.3.tar.Z	ports/misc/tkman	Restrictive copyright
 tkman-2.*		ports/misc/tkman	Don't sell for profit.
 tuc-*			ports/converters/tuc	Author does not allow
 						CD-ROM distribution
-understand_c		ports/devel/understand_c	License is not clear on
-						redistribution
 upsmon*			ports/sysutils/upsmon	Redistribute only with
 						original source code.
 uzap.tar.gz             ports/editors/uzap      Restrictive copyright
