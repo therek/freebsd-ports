@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.146 2003/06/03 02:17:59 lioux Exp $
+# $FreeBSD: ports/MOVED,v 1.147 2003/06/03 21:28:52 adamw Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -368,3 +368,4 @@ audio/xnap|net/xnap|2003-06-02|accurate category
 x11-wm/bbrun|x11/bbrun|2003-06-03|accurate category
 x11-wm/bbapm|sysutils/bbapm|2003-06-03|accurate category
 x11-wm/icemc|misc/icemc|2003-06-03|accurate category
+net/bittorrent|net/py-bittorrent|2003-06-06|duplicate entry
