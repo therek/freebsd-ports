@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.179 2003/01/04 16:17:26 seanc Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.180 2003/02/05 14:13:21 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -32,6 +32,7 @@ SybaseDB	"Sybase/MS-SQL database support (DB-lib)" OFF \
 SybaseCT	"Sybase/MS-SQL database support (CT-lib)" OFF \
 Interbase	"Interbase 6 database support (Firebird)" OFF \
 dBase		"dBase database support" OFF \
+GDBM		"GNU database manager support" OFF \
 OpenLDAP1	"OpenLDAP 1.x support" OFF \
 OpenLDAP2	"OpenLDAP 2.x support" OFF \
 OpenSSL		"OpenSSL support" OFF \
@@ -212,6 +213,10 @@ while [ "$1" ]; do
 			;;
 		\"dBase\")
 			echo "CONFIGURE_ARGS+=--with-dbase"
+			;;
+		\"GDBM\")
+			echo "LIB_DEPENDS+=	gdbm.3:\${PORTSDIR}/databases/gdbm"
+			echo "CONFIGURE_ARGS+=--with-gdbm=\${LOCALBASE}"
 			;;
 		\"OpenLDAP1\")
 			echo "LIB_DEPENDS+=	ldap.1:\${PORTSDIR}/net/openldap"
