@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/vietnamese/libviet/pkg-plist,v 1.1 2001/02/10 08:22:39 obrien Exp $
 lib/libvntype.a
 lib/libviqr.a
 include/viet/charset.h
@@ -11,3 +11,4 @@ include/viet/vnkeys.h
 include/viet/vntype.h
 share/doc/libviet/README.lib
 @dirrm include/viet
+@dirrm share/doc/libviet
