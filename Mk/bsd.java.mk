@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.31 2003/04/16 15:31:17 phantom Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.32 2003/05/01 16:50:00 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -55,7 +55,7 @@ _JAVA_HOME_IBM_LINUX_1_3=		${LOCALBASE}/linux-ibm-jdk1.3.1
 _JAVA_HOME_IBM_LINUX_1_4=		${LOCALBASE}/linux-ibm-jdk1.4.1
 _JAVA_HOME_SUN_LINUX_1_2=		${LOCALBASE}/linux-sun-jdk1.2.2
 _JAVA_HOME_SUN_LINUX_1_3=		${LOCALBASE}/linux-sun-jdk1.3.1
-_JAVA_HOME_SUN_LINUX_1_4=		${LOCALBASE}/linux-sun-jdk1.4.1
+_JAVA_HOME_SUN_LINUX_1_4=		${LOCALBASE}/linux-sun-jdk1.4.2
 
 # Set the JDK ports for all recognized JDK's
 _JAVA_PORT_FREEBSD_1_1=			java/jdk11
