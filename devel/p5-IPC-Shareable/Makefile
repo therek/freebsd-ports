@@ -2,11 +2,11 @@
 # Date created:				May 25th 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/devel/p5-IPC-Shareable/Makefile,v 1.3 2000/10/10 04:42:43 kevlo Exp $
+# $FreeBSD: ports/devel/p5-IPC-Shareable/Makefile,v 1.4 2000/12/03 01:35:04 vanilla Exp $
 #
 
 PORTNAME=	IPC-Shareable
-PORTVERSION=	0.53
+PORTVERSION=	0.54
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IPC
