@@ -1,6 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/graphics/giblib/pkg-plist,v 1.3 2002/01/27 17:07:28 dwcjr Exp $
 bin/giblib-config
 include/giblib/gib_btree.h
+include/giblib/gib_debug.h
 include/giblib/gib_hash.h
 include/giblib/gib_imlib.h
 include/giblib/gib_list.h
