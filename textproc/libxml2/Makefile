@@ -2,11 +2,11 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.31 2000/10/16 02:48:00 ade Exp $
+# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.32 2000/11/02 21:19:45 ade Exp $
 #
 
 PORTNAME=	libxml2
-PORTVERSION= 	2.2.7
+PORTVERSION= 	2.2.8
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libxml
