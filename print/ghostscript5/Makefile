@@ -2,7 +2,7 @@
 # Date created:		11 December 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.40 2000/05/19 07:04:49 cpiazza Exp $
+# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.41 2000/07/03 08:54:23 sobomax Exp $
 #
 
 PORTNAME=	ghostscript
@@ -19,7 +19,7 @@ MAINTAINER=	ports@FreeBSD.org
 RUN_DEPENDS=	${LOCALBASE}/share/ghostscript/fonts/Fontmap:${PORTSDIR}/print/gsfonts
 BUILD_DEPENDS=	/nonexistent:${PORTSDIR}/graphics/jpeg:extract \
 		/nonexistent:${PORTSDIR}/graphics/png:extract
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 
 USE_XLIB=	yes
 EXTRACT_ONLY=	${GS_SOURCES} ${PCL3_DRV}

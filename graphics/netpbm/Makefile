@@ -2,7 +2,7 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.34 2000/06/16 21:50:50 asami Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.35 2000/07/01 19:26:06 will Exp $
 #
 
 PORTNAME=	netpbm
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile

@@ -2,7 +2,7 @@
 # Date created:				24 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gltron/Makefile,v 1.11 2000/05/18 05:25:35 will Exp $
+# $FreeBSD: ports/games/gltron/Makefile,v 1.12 2000/05/25 16:11:24 sobomax Exp $
 #
 
 PORTNAME=	gltron
@@ -14,7 +14,7 @@ MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer \
 		glut.3:${PORTSDIR}/graphics/Mesa3 \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 
 .if defined(NO_SOUND)
 SOUND=""

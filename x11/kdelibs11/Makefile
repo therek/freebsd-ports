@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.45 2000/06/16 08:46:45 sobomax Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.46 2000/06/16 21:52:13 asami Exp $
 #
 
 PORTNAME=	kdelibs
@@ -15,7 +15,7 @@ DISTNAME=	kdelibs-1.1.2
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 LIBVER=		3

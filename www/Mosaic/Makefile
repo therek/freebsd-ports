@@ -2,7 +2,7 @@
 # Date created:         7 August 1995
 # Whom:                 torstenb
 #
-# $FreeBSD: ports/www/Mosaic/Makefile,v 1.24 1999/08/31 02:42:34 peter Exp $
+# $FreeBSD: ports/www/Mosaic/Makefile,v 1.25 2000/04/10 00:04:05 cpiazza Exp $
 #
 
 PORTNAME=	mosaic
@@ -14,7 +14,7 @@ DISTNAME=	Mosaic-src-2.7b5
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 
 REQUIRES_MOTIF=	yes

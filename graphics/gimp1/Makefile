@@ -2,7 +2,7 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.75 2000/06/16 21:50:44 asami Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.76 2000/06/26 16:06:14 sobomax Exp $
 #
 
 PORTNAME=	gimp
@@ -20,7 +20,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		mpeg.1:${PORTSDIR}/graphics/mpeg-lib \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.16 2000/04/14 10:47:49 asami Exp $
+# $FreeBSD: ports/graphics/xli/Makefile,v 1.17 2000/04/17 10:40:23 jkoshy Exp $
 #
 
 PORTNAME=	xli
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	jkoshy@FreeBSD.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		5 December 1996
 # Whom:			Bernd Rosauer <br@netland.inka.de>
 #
-# $FreeBSD: ports/print/teTeX/Makefile,v 1.40 2000/04/09 17:50:38 cpiazza Exp $
+# $FreeBSD: ports/print/teTeX/Makefile,v 1.41 2000/04/29 16:47:02 jseger Exp $
 #
 
 PORTNAME=	teTeX
@@ -15,7 +15,7 @@ DISTFILES=	${TETEX_SRC} ${TETEX_TEXMF}
 
 MAINTAINER=	br@netland.inka.de
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		wwwcore.1:${PORTSDIR}/www/libwww
 
 USE_XLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:         19 April 1998
 # Whom:                 chuckr
 #
-# $FreeBSD: ports/math/gnuplot/Makefile,v 1.31 2000/04/14 07:20:06 asami Exp $
+# $FreeBSD: ports/math/gnuplot/Makefile,v 1.32 2000/06/06 17:56:50 will Exp $
 #
 
 PORTNAME=	gnuplot
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.gnuplot.vt.edu/pub/gnuplot/
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		gd.1:${PORTSDIR}/graphics/gd
 
 USE_XLIB=	yes

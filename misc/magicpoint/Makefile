@@ -2,7 +2,7 @@
 # Date created:		24 December 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.18 2000/05/21 09:00:23 knu Exp $
+# $FreeBSD: ports/misc/magicpoint/Makefile,v 1.19 2000/06/09 08:17:41 sobomax Exp $
 #
 # "?=" and "+=" are for localized (i.e. Japanese) version
 
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.mew.org/pub/MagicPoint/
 MAINTAINER?=	mita@jp.FreeBSD.org
 
 LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
-		png.3:${PORTSDIR}/graphics/png
+		png.4:${PORTSDIR}/graphics/png
 
 USE_IMAKE=	yes
 GNU_CONFIGURE=	yes

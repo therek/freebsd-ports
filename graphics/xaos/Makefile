@@ -2,7 +2,7 @@
 # Date created:				24 February 1996
 # Whom:					Joseph Koshy <koshy@india.hp.com>
 #
-# $FreeBSD: ports/graphics/xaos/Makefile,v 1.12 1999/08/25 06:15:14 obrien Exp $
+# $FreeBSD: ports/graphics/xaos/Makefile,v 1.13 2000/04/14 10:47:41 asami Exp $
 #
 
 PORTNAME=	xaos
@@ -16,7 +16,7 @@ DISTNAME=	XaoS-${PORTVERSION}
 
 MAINTAINER=	jkoshy@freebsd.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 
 USE_XLIB=	yes
 

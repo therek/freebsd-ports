@@ -2,7 +2,7 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.74 2000/06/16 08:19:45 sobomax Exp $
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.75 2000/06/16 21:52:36 asami Exp $
 #
 
 PORTNAME=	windowmaker-i18n
@@ -17,7 +17,7 @@ MAINTAINER=	mac@jp.freebsd.org
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		PropList.2:${PORTSDIR}/devel/libPropList \
 		intl.1:${PORTSDIR}/devel/gettext

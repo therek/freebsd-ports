@@ -2,7 +2,7 @@
 # Date created:         May 18, 1999
 # Whom:                 NAKAJI Hiroyuki
 #
-# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.11 2000/04/20 20:54:53 mharo Exp $
+# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.12 2000/06/06 17:56:50 will Exp $
 #
 
 PORTNAME=	gnuplot371+
@@ -19,7 +19,7 @@ EXTRACT_ONLY=	gnuplot-3.7.1.tar.gz
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		VFlib2.24:${PORTSDIR}/japanese/vflib
 .if defined(WITH_JP)
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/japanese/gd \

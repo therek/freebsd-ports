@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.45 2000/04/20 19:38:53 mharo Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.46 2000/06/06 18:17:10 gj Exp $
 #
 
 PORTNAME=	xemacs
@@ -20,7 +20,7 @@ MAINTAINER?=	gj@FreeBSD.org
 RUN_DEPENDS+=	${LOCALBASE}/lib/xemacs/xemacs-packages/etc/enriched.doc:${PORTSDIR}/editors/xemacs-packages
 LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.3:${PORTSDIR}/graphics/png \
+		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 XEMACS_REL=	21.1

@@ -2,7 +2,7 @@
 # Date created:         Dec 1 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/arena/Makefile,v 1.19 2000/04/10 00:04:26 cpiazza Exp $
+# $FreeBSD: ports/www/arena/Makefile,v 1.20 2000/04/15 07:04:55 ache Exp $
 #
 
 PORTNAME=	arena-i18n
@@ -14,7 +14,7 @@ DISTNAME=	arena-CJK-beta3a
 MAINTAINER=     ports@FreeBSD.org
 
 LIB_DEPENDS+=   jpeg.9:${PORTSDIR}/graphics/jpeg
-LIB_DEPENDS+=   png.3:${PORTSDIR}/graphics/png
+LIB_DEPENDS+=   png.4:${PORTSDIR}/graphics/png
 
 USE_XLIB=	yes
 WRKSRC=         ${WRKDIR}/WWW

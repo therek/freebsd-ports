@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1999
 # Whom:			Peter Hawkins <thepish@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.7 1999/08/31 02:59:46 peter Exp $
+# $FreeBSD: ports/x11-toolkits/xmhtml/Makefile,v 1.8 2000/04/10 01:11:22 cpiazza Exp $
 #
 
 PORTNAME=	XmHTML
@@ -17,7 +17,7 @@ PATCHFILES=	patch-102697.gz
 
 MAINTAINER=	thepish@freebsd.org
 
-LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png \
+LIB_DEPENDS=    png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 REQUIRES_MOTIF=	yes
