@@ -1,11 +1,11 @@
 #
-#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.31 2004/08/19 14:18:46 shige Exp $
+#	$FreeBSD: ports/Mk/bsd.emacs.mk,v 1.32 2004/08/21 12:12:33 shige Exp $
 #
 #	bsd.emacs.mk - 19990829 Shigeyuki Fukushima.
 #
 
 Emacs_Include=			bsd.emacs.mk
-Emacs_Include_MAINTAINER=	shige@FreeBSD.org
+Emacs_Include_MAINTAINER=	ports@FreeBSD.org
 
 #
 # This file for ports which depend on emacs family.
