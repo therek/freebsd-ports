@@ -2,7 +2,7 @@
 # Date created:		6 March 2000
 # Whom:			tetsushi NAKAI <nakai@tsl.pe.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/tamago/Makefile,v 1.1 2000/05/01 03:14:54 steve Exp $
 #
 
 PORTNAME=	tamago
@@ -19,7 +19,7 @@ RUN_DEPENDS=	emacs-${EMACS_VER}:${PORTSDIR}/editors/emacs20
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
-EMACS_VER=	20.6
+EMACS_VER=	20.7
 PLIST_SUB=	EMACS_VER=${EMACS_VER}
 
 pre-configure:
