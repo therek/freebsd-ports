@@ -2,13 +2,14 @@
 # Date created:        14 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/xtet42/Makefile,v 1.6 2000/04/14 12:28:27 asami Exp $
+# $FreeBSD: ports/games/xtet42/Makefile,v 1.7 2001/02/05 14:51:45 olgeni Exp $
 #
 
 PORTNAME=	xtet42
 PORTVERSION=	2.21
 CATEGORIES=	games
-MASTER_SITES=	http://www.pvv.ntnu.no/~oyvindmo/xtet42/
+MASTER_SITES=	http://www.gufi.org/~gmarco/files/distfiles/ \
+		http://www.giovannelli.it/~gmarco/files/
 
 MAINTAINER=	gmarco@giovannelli.it
 
