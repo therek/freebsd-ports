@@ -3,7 +3,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.81 1999/08/31 06:50:24 mharo Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.82 1999/09/02 17:08:29 cpiazza Exp $
 #
 # Maximal ssh package requires YES values for
 # USE_PERL, USE_TCPWRAP
@@ -141,6 +141,14 @@ LIB_DEPENDS+=   wrap.7:${PORTSDIR}/security/tcp_wrapper
 # Include SOCKS firewall support
 .if defined(USE_SOCKS) && ${USE_SOCKS} == YES
 CONFIGURE_ARGS+= --with-socks="-L${PREFIX}/lib -lsocks5" --with-socks5
+.endif
+
+# Include extra files if X11 is installed
+.if exists(${X11BASE}/lib/libX11.a)
+PLIST:=         ${WRKDIR}/PLIST
+pre-install:
+	@${CAT} ${PKGDIR}/PLIST.X11 > ${PLIST}
+	@${CAT} ${PKGDIR}/PLIST >> ${PLIST}
 .endif
 
 .include <bsd.port.post.mk>
