@@ -2,7 +2,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.15 2000/04/08 21:23:37 mharo Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.16 2000/04/19 04:46:02 nakai Exp $
 #
 
 PORTNAME=	gogo
@@ -29,7 +29,7 @@ MAKE_ARGS+=	DONT_USE_KANJI=-DNO_KANJI
 MAKE_ARGS+=	DONT_USE_KANJI=
 .endif
 RESTRICTED=	Condition is not clear
-
+ONLY_FOR_ARCHS=	i386
 WRKSRC=		${WRKDIR}/gogo231f
 
 do-install:
