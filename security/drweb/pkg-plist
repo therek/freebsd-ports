@@ -1,6 +1,5 @@
-@comment $FreeBSD: ports/security/drweb/pkg-plist,v 1.15 2002/08/23 20:14:08 ache Exp $
+@comment $FreeBSD: ports/security/drweb/pkg-plist,v 1.16 2002/10/31 00:33:58 ache Exp $
 bin/drweb
-drweb/CHANGES
 drweb/ChangeLog
 drweb/README
 drweb/README.RUS
