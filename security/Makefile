@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.231 2001/09/03 18:30:56 knu Exp $
+# $FreeBSD: ports/security/Makefile,v 1.232 2001/09/06 22:39:14 alex Exp $
 #
 
     SUBDIR += aafid2
@@ -65,6 +65,7 @@
     SUBDIR += isakmpd
     SUBDIR += its4
     SUBDIR += john
+    SUBDIR += keychain
     SUBDIR += keynote
     SUBDIR += keyprint
     SUBDIR += kmap
