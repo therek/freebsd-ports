@@ -2,7 +2,7 @@
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.34 2000/08/04 01:15:44 ade Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.35 2000/09/15 15:20:13 ade Exp $
 #
 
 PORTNAME=	ORBit
@@ -30,10 +30,7 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 CONFIGURE_ARGS= --disable-indent
 
 post-install:
-.if !exists(${PREFIX}/etc/orbitrc)
-	@${ECHO} "ORBIIOPIPv4=0" > ${PREFIX}/etc/orbitrc
-	@${ECHO} "ORBIIOPIPv6=0" >> ${PREFIX}/etc/orbitrc
-	@${ECHO} etc/orbitrc >> ${TMPPLIST}
-.endif
+	@${ECHO} "ORBIIOPIPv4=0" > ${PREFIX}/etc/orbitrc.default
+	@${ECHO} "ORBIIOPIPv6=0" >> ${PREFIX}/etc/orbitrc.default
 
 .include <bsd.port.mk>
