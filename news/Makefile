@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.61 2001/01/05 17:39:14 alex Exp $
+# $FreeBSD: ports/news/Makefile,v 1.62 2001/02/01 14:25:13 clive Exp $
 #
 
     SUBDIR += atp
@@ -15,6 +15,7 @@
     SUBDIR += grn
     SUBDIR += gup
     SUBDIR += ifmail
+    SUBDIR += ija
     SUBDIR += inn
     SUBDIR += inn-stable
     SUBDIR += knews
