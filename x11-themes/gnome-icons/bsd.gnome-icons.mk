@@ -2,15 +2,13 @@
 # Date created:				29 Feb 2004
 # Whom:					Tom McLaughlin <tmclaugh@sdf.lonestar.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-themes/gnome-icons/bsd.gnome-icons.mk,v 1.1 2004/03/29 18:37:38 pav Exp $
 #
 
 # Port logic gratuitously stolen from x11-themes/kde-icons-noia by
 # lioux@.
 
 PKGNAMEPREFIX=	gnome-icons-
-MASTER_SITES?=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR?=	teams/art.gnome.org/themes/icon
 
 NO_BUILD=	yes
 USE_SIZE=	yes
@@ -19,12 +17,23 @@ REASON=		Themes may contain artwork not done by the author. \
 		Keep FreeBSD safe if theme author violated copyrights.
 
 USE_X_PREFIX=	yes
+PLIST=		${WRKDIR}/plist
+
+pre-install:
+	@${RM} -rf ${PLIST}
+
+	@cd ${WRKDIR} && ${FIND} * ! -type d | ${SORT} >> ${PLIST}; \
+	${SED} -i "" -e "s:^:share/icons/:" ${PLIST}; \
+	${FIND} * -type d ! -empty | ${SORT} -r | \
+		${SED} -e "s:^:@dirrm share/icons/:" | \
+		${GREP} / >> ${PLIST}; \
+	${ECHO} "@unexec /bin/rmdir %D/share/icons 2> /dev/null || \
+		/usr/bin/true" >> ${PLIST}
 
 do-install:
-	${MKDIR} ${PREFIX}/share/icons/${PORTNAME}
-	cd ${WRKSRC} && ${FIND} . -type d ! -empty \
+	cd ${WRKDIR} && ${FIND} * -type d ! -empty \
 		-exec ${MKDIR} -m 0755 \
-		${PREFIX}/share/icons/${PORTNAME}/"{}" \;
-	cd ${WRKSRC} && ${FIND} . -type f \
-		-exec ${INSTALL_DATA} ${WRKSRC}/"{}" \
-		${PREFIX}/share/icons/${PORTNAME}/"{}" \;
+		${PREFIX}/share/icons/"{}" \;
+	cd ${WRKDIR} && ${FIND} * ! -type d ! -name 'plist' \
+		-exec ${INSTALL_DATA} ${WRKDIR}/"{}" \
+		${PREFIX}/share/icons/"{}" \;
