@@ -2,11 +2,11 @@
 # Date created:		22 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/net/trafd/Makefile,v 1.2 2000/02/12 20:18:58 imura Exp $
+# $FreeBSD: ports/net/trafd/Makefile,v 1.3 2000/04/09 18:13:50 cpiazza Exp $
 #
 
 PORTNAME=	trafd
-PORTVERSION=	3.0
+PORTVERSION=	3.0.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.riss-telecom.ru/pub/dev/trafd/
 EXTRACT_SUFX=	.tgz
@@ -26,8 +26,8 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/bpft
-	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/bpft/README
+	${MKDIR} ${PREFIX}/share/doc/trafd
+	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/trafd/README
 .endif
 	${MKDIR} ${PREFIX}/var/trafd
 	${MKDIR} ${PREFIX}/var/log
