@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.342 2001/08/22 06:09:11 dinoex Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.343 2001/08/22 06:11:03 dinoex Exp $
 #
 
     SUBDIR += 4va
@@ -16,6 +16,7 @@
     SUBDIR += avifile
     SUBDIR += backfract
     SUBDIR += blender
+    SUBDIR += cadubi
     SUBDIR += camediaplay
     SUBDIR += camserv
     SUBDIR += chbg
