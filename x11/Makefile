@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.301 2000/09/05 13:11:27 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.302 2000/09/13 15:13:09 nakai Exp $
 #
 
     SUBDIR += 9term
@@ -63,6 +63,7 @@
     SUBDIR += ruby-kde
     SUBDIR += ruby-kde-i18n
     SUBDIR += rxvt
+    SUBDIR += rxvt-devel
     SUBDIR += stockticker_applet
     SUBDIR += sxpc
     SUBDIR += tkgoodstuff

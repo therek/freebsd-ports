@@ -2,21 +2,22 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.38 2000/06/22 10:07:15 will Exp $
+# $FreeBSD: ports/x11/rxvt-devel/Makefile,v 1.39 2000/08/03 09:28:41 asami Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
 # the same distfile.
 
-PORTNAME=	rxvt
+PORTNAME=	rxvt-devel
 PORTVERSION= 	2.7.3
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/ \
 		ftp://mason.primenet.com.au/pub/rxvt/ \
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	X11/terms
+		ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/rxvt/ \
+		ftp://ftp.fu-berlin.de/unix/X11/terms/rxvt/
+DISTNAME=	rxvt-${PORTVERSION}
 
-PATCH_SITES=	ftp://ftp.rxvt.org/pub/rxvt/
+PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	rxvt-2.7.3.patch1.gz
 PATCH_DIST_STRIP+=      -p1
 
