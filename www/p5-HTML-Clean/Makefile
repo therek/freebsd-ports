@@ -2,7 +2,7 @@
 # Date created:				March 30th 2001
 # Whom:					Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD: ports/www/p5-HTML-Clean/Makefile,v 1.1 2001/03/31 01:21:05 will Exp $
+# $FreeBSD: ports/www/p5-HTML-Clean/Makefile,v 1.2 2001/05/26 11:52:31 vanilla Exp $
 #
 
 PORTNAME=	HTML-Clean
@@ -15,7 +15,6 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	kapr@crosswinds.net
 
 PERL_CONFIGURE=	yes
-CONFIGURE_ARGS=	INSTALLMAN1DIR=${MANPREFIX}/man/man1
 
 MAN1=		htmlclean.1
 MAN3=		HTML::Clean.3
