@@ -2,17 +2,17 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.15 2000/06/23 03:03:19 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.16 2000/07/04 19:44:48 dbaker Exp $
 #
 
 PORTNAME=	dnetc
-PORTVERSION=	2.8010.462
+PORTVERSION=	2.8010.463
 CATEGORIES=	misc
 MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8010/ \
 		http://http.distributed.net/pub/dcti/v2.8010/
 .include <bsd.port.pre.mk>
 .if ${ARCH} == "i386"
-DISTFILES=      dnetc462-freebsd-x86-elf.tar.gz
+DISTFILES=      dnetc463-freebsd-x86-elf.tar.gz
 .elif ${ARCH} == "alpha"
 BROKEN=         "Not immediately available.  Please try again tomorrow."
 .endif
