@@ -2,7 +2,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/librep/Makefile,v 1.24 2001/04/12 14:47:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	librep
@@ -41,5 +41,8 @@ MTREE_FILE=	/etc/mtree/BSD.x11.dist
 .else
 MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 .endif
+
+post-extract:
+	@${RM} ${WRKSRC}/test
 
 .include <bsd.port.post.mk>
