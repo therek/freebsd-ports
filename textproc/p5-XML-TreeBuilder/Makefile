@@ -2,17 +2,21 @@
 # Date created:				Tue Jan  2 00:03:51 2001
 # Whom:					will
 #
-# $FreeBSD: ports/textproc/p5-XML-TreeBuilder/Makefile,v 1.1 2001/01/03 23:48:47 will Exp $
+# $FreeBSD: ports/textproc/p5-XML-TreeBuilder/Makefile,v 1.2 2001/03/01 06:39:11 vanilla Exp $
 #
 
 PORTNAME=	XML-TreeBuilder
 PORTVERSION=	3.08
+PORTREVISION=	1
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Tree.pm:${PORTSDIR}/www/p5-HTML-Tree
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
