@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.47 2000/10/16 21:41:55 trevor Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.48 2000/11/05 04:09:15 trevor Exp $
 #
 
     SUBDIR += 9menu
@@ -12,6 +12,7 @@
     SUBDIR += bbpager
     SUBDIR += blackbox
     SUBDIR += ctwm
+    SUBDIR += e16utils
     SUBDIR += enlightenment
     SUBDIR += epplets
     SUBDIR += evilwm
