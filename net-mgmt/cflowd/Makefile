@@ -2,7 +2,7 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/cflowd/Makefile,v 1.5 2001/03/17 11:30:07 andreas Exp $
+# $FreeBSD: ports/net/cflowd/Makefile,v 1.6 2001/03/25 10:37:35 andreas Exp $
 #
 
 PORTNAME=	cflowd
@@ -39,6 +39,6 @@ pre-everything:
 
 post-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/cflowd.sh \
-		${PREFIX}/etc/rc.d/cflowd.sh.sample
+		${PREFIX}/etc/rc.d/cflowd-base.sh.sample
 
 .include <bsd.port.mk>
