@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/cvm/pkg-plist,v 1.1 2003/12/24 13:53:01 sergei Exp $
 bin/cvm-benchclient
 bin/cvm-checkpassword
 bin/cvm-pwfile
@@ -35,3 +35,4 @@ lib/libcvm-udp.a
 %%PORTDOCS%%%%DOCSDIR%%/rationale.html
 %%PORTDOCS%%%%DOCSDIR%%/sasl.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
+@dirrm include/cvm
