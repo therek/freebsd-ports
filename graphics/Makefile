@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.350 2001/09/15 19:11:07 alex Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.351 2001/09/18 07:02:05 knu Exp $
 #
 
     SUBDIR += 4va
@@ -142,6 +142,7 @@
     SUBDIR += librsvg
     SUBDIR += libungif
     SUBDIR += libwmf
+    SUBDIR += libxine
     SUBDIR += linplasma
     SUBDIR += linux-bmrt
     SUBDIR += linux-jpeg
