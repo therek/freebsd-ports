@@ -2,11 +2,11 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.44 2000/08/03 14:39:06 sobomax Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION= 	M15
+PORTVERSION= 	M16
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/${PORTVERSION:S/M/m/}/src/
 DISTNAME=	${PORTNAME}-source-${PORTVERSION}
@@ -56,6 +56,8 @@ post-build:
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
 		${FILESDIR}/mozilla.sh >${WRKSRC}/mozilla
 	@${CHMOD} 555 ${WRKSRC}/mozilla
+	@(cd ${WRKSRC}/dist/bin; \
+	  ${ENV} LD_LIBRARY_PATH=. MOZILLA_FIVE_HOME=. ./regxpcom)
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/mozilla
@@ -63,7 +65,5 @@ do-install:
 	cd ${WRKSRC}/dist/bin && ${TAR} -chf - * | \
 		${TAR} -xf - -C ${PREFIX}/lib/mozilla
 	${INSTALL_SCRIPT} ${WRKSRC}/mozilla ${PREFIX}/bin
-	${TOUCH} ${PREFIX}/lib/mozilla/component.reg
-	${CHMOD} 666 ${PREFIX}/lib/mozilla/component.reg
 
 .include <bsd.port.mk>
