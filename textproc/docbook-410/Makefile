@@ -4,13 +4,13 @@
 #
 # Based on nik's docbook-310 port
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/docbook-410/Makefile,v 1.1.1.1 2000/06/26 22:17:59 murray Exp $
 #
 
 PORTNAME=	docbook
 PORTVERSION=	4.1
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.oasis-open.org/docbook/sgml/4.1/
+MASTER_SITES=	http://www.docbook.org/sgml/4.1/
 DISTNAME=	docbk41
 EXTRACT_ONLY=	# empty
 

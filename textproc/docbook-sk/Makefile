@@ -2,13 +2,13 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.9 2000/04/09 21:52:27 cpiazza Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.10 2000/05/26 07:48:12 kuriyama Exp $
 #
 
 PORTNAME=	docbook-xml
 PORTVERSION= 	4.0
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.oasis-open.org/docbook/xml/4.0/
+MASTER_SITES=	http://www.docbook.org/xml/4.0/
 DISTNAME=	docbkx40
 
 MAINTAINER=	kuriyama@FreeBSD.org

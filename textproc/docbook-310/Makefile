@@ -4,13 +4,13 @@
 #
 # Based heavily on work by jfieber
 #
-# $FreeBSD: ports/textproc/docbook-310/Makefile,v 1.9 2000/02/23 23:16:28 nik Exp $
+# $FreeBSD: ports/textproc/docbook-310/Makefile,v 1.10 2000/04/09 21:52:23 cpiazza Exp $
 #
 
 PORTNAME=	docbook
 PORTVERSION= 	3.1
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.oasis-open.org/docbook/sgml/3.1/
+MASTER_SITES=	http://www.docbook.org/sgml/3.1/
 DISTNAME=	docbk31
 
 MAINTAINER=	nik@FreeBSD.org
