@@ -1,9 +1,10 @@
-@comment $FreeBSD: ports/dns/nsd/pkg-plist,v 1.2 2003/08/03 00:51:14 naddy Exp $
+@comment $FreeBSD: ports/dns/nsd/pkg-plist,v 1.3 2004/05/29 12:23:56 pav Exp $
 etc/rc.d/nsd.sh
 etc/nsd/nsd.zones.sample
 etc/nsd/nsdc.conf.sample
 sbin/nsd
-sbin/nsd-notify
-sbin/nsdc
 sbin/zonec
+sbin/nsdc
+sbin/nsd-notify
+sbin/nsd-xfer
 @dirrm etc/nsd
