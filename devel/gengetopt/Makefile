@@ -3,11 +3,11 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.2 2001/01/17 13:59:49 kevlo Exp $
+# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.3 2001/02/18 11:52:35 sf Exp $
 #
 
 PORTNAME=	gengetopt
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= ${PORTNAME}
