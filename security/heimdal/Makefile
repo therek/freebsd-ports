@@ -3,10 +3,10 @@
 # Date created:				10/23/1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.9 2000/01/18 12:54:51 sumikawa Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.10 2000/02/21 02:16:35 nectar Exp $
 #
 
-DISTNAME=		heimdal-0.2p
+DISTNAME=		heimdal-0.2q
 CATEGORIES=		security ipv6
 MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/heimdal/src/ \
 			ftp://ftp.replay.com/pub/replay/crypto/APPS/kerberos/heimdal/ \
