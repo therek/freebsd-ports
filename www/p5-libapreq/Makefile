@@ -2,14 +2,13 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.5 2001/01/16 17:33:04 sobomax Exp $
+# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.6 2001/03/01 06:39:14 vanilla Exp $
 #
 
 PORTNAME=	libapreq
-PORTVERSION=	0.31
+PORTVERSION=	0.31_03
 CATEGORIES=	www perl5 devel
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	Apache
+MASTER_SITES=	http://www.cpan.org/authors/id/J/JI/JIMW/
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	frank@exit.com
