@@ -2,7 +2,7 @@
 # Date created:		4 December 1996
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/x11-clocks/xalarm/Makefile,v 1.6 2000/04/10 00:33:04 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xalarm
@@ -16,8 +16,9 @@ MAINTAINER=	desmo@bandwidth.org
 USE_IMAKE=	yes
 IS_INTERACTIVE=	yes
 
-pre-install:	
+MAN1=		xalarm.1 xmemo.1 xfortune.1 xyow.1
+
+pre-install:
 	(cd ${WRKSRC} ; ${CP} XAlarm.ad XAlarm-color.ad)
 
 .include <bsd.port.mk>
-
