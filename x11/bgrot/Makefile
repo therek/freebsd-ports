@@ -2,14 +2,14 @@
 # Date created:			12 January 1999
 # Whom:				Matthew Fuller <fullermd@futuresouth.com>
 #
-# $FreeBSD: ports/x11/bgrot/Makefile,v 1.6 2001/02/05 16:17:56 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bgrot
 PORTVERSION=	1.30
 CATEGORIES=	x11
 MASTER_SITES=	http://www.over-yonder.net/~fullermd/projects/bgrot/ \
-		http://www.futuresouth.com/~fullermd/bgrot/
+		http://www.linc-it.com/~matt.fuller/mirrors/bgrot/
 
 MAINTAINER=	fullermd@over-yonder.net
 
