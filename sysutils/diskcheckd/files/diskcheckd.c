@@ -25,7 +25,7 @@
  */
 
 static const char rcsid[] =
-	"$FreeBSD: src/usr.sbin/diskcheckd/diskcheckd.c,v 1.1 2001/06/03 20:02:03 phk Exp $";
+	"$FreeBSD: src/usr.sbin/diskcheckd/diskcheckd.c,v 1.2 2001/07/04 17:43:43 ben Exp $";
 
 #include <sys/types.h>
 #include <sys/sysctl.h>
@@ -443,8 +443,9 @@ updateproctitle(struct disk *disks) {
 			p += sizeof _PATH_DEV - 1;
 
 		percent = 100 * (double)dseek(dp, 0, SEEK_CUR) / dp->size;
-		if ((size_t)(ret = snprintf(bp, size,
-		    "%s %.2f%%, ", p, percent)) >= size) {
+		if ((ret = snprintf(bp, size, "%s %.2f%%, ", p, percent)) == -1)
+			ret = 0;
+		if ((size_t)ret >= size) {
 			inc = ((ret + 1023) >> 10) << 10;
 			size += inc;
 			bufsize += inc;
@@ -456,6 +457,8 @@ updateproctitle(struct disk *disks) {
 			}
 			bp = buf + bufsize - size;
 			ret = snprintf(bp, size, "%s %.2f%%, ", p, percent);
+			if (ret == -1)
+				ret = 0;
 		}
 		bp += ret;
 		size -= ret;
