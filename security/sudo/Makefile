@@ -3,7 +3,7 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.25 1999/12/10 02:27:58 mharo Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.26 1999/12/10 19:02:28 cpiazza Exp $
 #
 
 DISTNAME=	sudo-1.6
@@ -24,5 +24,8 @@ CONFIGURE_ARGS=	--with-skey \
 
 MAN5=		sudoers.5
 MAN8=		sudo.8 visudo.8
+
+post-install:
+	${INSTALL_DATA} ${WRKSRC}/sample.sudoers ${PREFIX}/etc/sudoers.sample
 
 .include <bsd.port.mk>
