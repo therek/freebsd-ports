@@ -2,11 +2,11 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.78 2000/08/03 09:24:46 asami Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.79 2000/08/23 18:33:57 sobomax Exp $
 #
 
 PORTNAME=	gimp
-PORTVERSION=	1.1.25
+PORTVERSION=	1.1.26
 CATEGORIES=	graphics gnome
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.insync.net/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
@@ -47,10 +47,11 @@ MAN5=		gimprc.5
 CONFIGURE_ARGS=	--disable-perl
 PLIST_SUB+=	PERL:="@comment "
 .else
-BUILD_DEPENDS+=	perldl:${PORTSDIR}/math/PDL \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
-RUN_DEPENDS+=	perldl:${PORTSDIR}/math/PDL \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
+PERL_DEPENDS=	perldl:${PORTSDIR}/math/PDL \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Parse/RecDescent.pm:${PORTSDIR}/devel/p5-Parse-RecDescent
+BUILD_DEPENDS+=	${PERL_DEPENDS}
+RUN_DEPENDS+=	${PERL_DEPENDS}
 PLIST_SUB+=	PERL:=""
 .endif
 
