@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.122 2003/08/18 03:41:58 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.123 2003/08/21 15:09:44 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -184,7 +184,9 @@ CONFIGURE_TARGET=	# empty
 
 RUBY_CONFIGURE_ARGS+=	--target="${RUBY_ARCH}" --program-prefix=""
 
-.if ${OSVERSION} >= 501000
+# PORTDIRNAME is not defined yet
+_IS_RUBY_R_PORT=	${.CURDIR:M*_r}
+.if ${OSVERSION} >= 501000 && empty(_IS_RUBY_R_PORT)
 .undef RUBY_WITH_PTHREAD
 .endif
 
