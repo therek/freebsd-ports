@@ -1,14 +1,13 @@
 # ports collection makefile for:        Firebird BBS
 # Date created:                         Sun Feb  4 22:48:06 CST 2001
 # Whom:                                 Edward Chuang <edwardc@firebird.org.tw>
-# $FreeBSD: ports/chinese/firebird/Makefile,v 1.1 2001/02/16 13:35:31 vanilla Exp $
+# $FreeBSD: ports/chinese/firebird/Makefile,v 1.2 2001/04/22 11:52:21 roam Exp $
 
 PORTNAME=		firebird
 PORTVERSION=		3.0R
 CATEGORIES=		chinese net
-MASTER_SITES=		ftp://ftp4.firebird.org.tw/Network/BBS/Firebird/ \
-			ftp://ftp.firebird.org.tw/pub/Firebird/ \
-			http://www.firebird.org.tw/download/
+MASTER_SITES=		ftp://ftp4.firebird.org.tw/Network/BBS/Firebird/
+
 DISTNAME=		3.0-RELEASE
 
 MAINTAINER=		edwardc@firebird.org.tw
