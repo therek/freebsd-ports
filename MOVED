@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.1 2002/11/11 07:31:55 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.2 2002/11/16 13:46:14 sada Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -17,3 +17,33 @@
 #
 # Port|Moved to|Date|Why
 net/ratoolset|net/irrtoolset|2002-11-16|software was renamed
+chinese/linux-netscape47-communicator||2002-11-17|security vulnerability
+chinese/linux-netscape47-navigator||2002-11-17|security vulnerability
+chinese/netscape47-communicator||2002-11-17|security vulnerability
+chinese/netscape47-navigator||2002-11-17|security vulnerability
+japanese/linux-netscape47-communicator||2002-11-17|security vulnerability
+japanese/linux-netscape47-navigator||2002-11-17|security vulnerability
+japanese/netscape-fonts||2002-11-17|security vulnerability
+japanese/netscape3.language||2002-11-17|security vulnerability
+japanese/netscape4-communicator||2002-11-17|security vulnerability
+japanese/netscape4-navigator||2002-11-17|security vulnerability
+japanese/netscape47-communicator||2002-11-17|security vulnerability
+japanese/netscape47-navigator||2002-11-17|security vulnerability
+korean/linux-netscape47-communicator||2002-11-17|security vulnerability
+korean/linux-netscape47-navigator||2002-11-17|security vulnerability
+korean/netscape3||2002-11-17|security vulnerability
+korean/netscape4-communicator||2002-11-17|security vulnerability
+korean/netscape4-navigator||2002-11-17|security vulnerability
+korean/netscape47-communicator||2002-11-17|security vulnerability
+korean/netscape47-navigator||2002-11-17|security vulnerability
+russian/netscape4.language||2002-11-17|security vulnerability
+www/linux-netscape4||2002-11-17|security vulnerability
+www/linux-netscape47-communicator||2002-11-17|security vulnerability
+www/linux-netscape47-navigator||2002-11-17|security vulnerability
+www/netscape3||2002-11-17|security vulnerability
+www/netscape3-gold||2002-11-17|security vulnerability
+www/netscape4-communicator||2002-11-17|security vulnerability
+www/netscape4-communicator.us||2002-11-17|security vulnerability
+www/netscape4-navigator||2002-11-17|security vulnerability
+www/netscape47-communicator||2002-11-17|security vulnerability
+www/netscape47-navigator||2002-11-17|security vulnerability
