@@ -3,7 +3,7 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.20 1999/12/22 10:31:12 sheldonh Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.21 1999/12/27 21:43:23 steve Exp $
 #
 
 DISTNAME=	smalltalk-1.6.2
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	smalltalk
 
 MAINTAINER=	alex@big.endian.de
 
-BUILD_DEPENDS=	${PREFIX}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
+BUILD_DEPENDS=	${LOCALBASE}/lib/libgdbm.a:${PORTSDIR}/databases/gdbm
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-optimize --with-readline
