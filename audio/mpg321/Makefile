@@ -3,16 +3,16 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mpg321/Makefile,v 1.2 2001/04/09 11:54:48 sobomax Exp $
 #
 
 PORTNAME=	mpg321
-PORTVERSION=	0.0.5
+PORTVERSION=	0.0.5.1
 CATEGORIES=	audio
 MASTER_SITES=	http://gemini.woot.net/~hosehead/packages/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	smpeg.1:${PORTSDIR}/graphics/smpeg \
 		ao.1:${PORTSDIR}/audio/libao \
