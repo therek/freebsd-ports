@@ -2,12 +2,12 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.98 2001/09/06 23:09:36 jhb Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XFree86
 PORTVERSION=	3.3.6
-PORTREVISION=	10
+PORTREVISION=	11
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	${PORTVERSION}
@@ -32,6 +32,7 @@ INSTALL_TARGET+=	install.linkkit
 DIST_SUBDIR=	xc
 SCRIPTS_ENV=	OSVERSION=${OSVERSION} MACHINE=${MACHINE} \
 		MACHINE_ARCH=${MACHINE_ARCH}
+MAKE_ARGS=	WORLDOPTS=
 # can't use USE_X_PREFIX here -- it will cause a circular dependency
 PREFIX=		${X11BASE}
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
