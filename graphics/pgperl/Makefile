@@ -2,11 +2,12 @@
 # Date created:		22 December 1996
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.20 2000/04/14 10:46:58 asami Exp $
+# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.21 2000/07/30 23:28:54 jmz Exp $
 #
 
 PORTNAME=	pgperl
 PORTVERSION=	2.17
+PORTREVISION=	1
 CATEGORIES=     graphics perl5
 MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGPLOT
