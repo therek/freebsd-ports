@@ -1,9 +1,12 @@
-# $FreeBSD: ports/german/Makefile,v 1.12 2000/09/21 01:37:31 asami Exp $
+# $FreeBSD: ports/german/Makefile,v 1.13 2000/09/21 01:52:35 asami Exp $
 #
 
     SUBDIR += BBBike
     SUBDIR += cheapcall
     SUBDIR += dict
+    SUBDIR += ispell
+    SUBDIR += ispell-alt
+    SUBDIR += ispell-neu
     SUBDIR += manpages
     SUBDIR += phone
     SUBDIR += staroffice5
