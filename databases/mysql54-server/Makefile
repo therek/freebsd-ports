@@ -2,11 +2,11 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.106 2001/02/14 09:20:08 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.107 2001/03/04 18:50:21 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
-PORTVERSION=	3.23.33
+PORTVERSION=	3.23.34a
 CATEGORIES=	databases
 MASTER_SITES=	http://www.kernelnotes.de/MySQL/Downloads/%SUBDIR%/ \
 		http://www.mysql.net/Downloads/%SUBDIR%/ \
@@ -32,10 +32,7 @@ CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
 		--with-libwrap \
 		--with-low-memory
 .if ${MACHINE_ARCH} == "i386"
-CONFIGURE_ARGS+=--enable-assembler
-.endif
-.if ${MACHINE_ARCH} == "alpha"
-CONFIGURE_ARGS+=--without-berkeley-db
+CONFIGURE_ARGS+=--enable-assembler --with-berkeley-db
 .endif
 .if defined(WITH_CHARSET) && ${WITH_CHARSET} != ""
 CONFIGURE_ARGS+=--with-charset=${WITH_CHARSET}
@@ -67,16 +64,9 @@ pre-fetch:
 
 # MySQL-Server part
 .if !defined(CLIENT_ONLY)
-MASTER_SITE_SUBDIR+=	db
-DISTFILES+=	db-${BDBVERSION}${EXTRACT_SUFX}
-
 RUN_DEPENDS=	mysql:${PORTSDIR}/databases/mysql323-client
 
-BDBVERSION=	3.2.3h
 PLIST_SUB=	MYSQL_VERSION=${PORTVERSION}
-
-pre-configure:
-	cd ${WRKSRC} && ${LN} -s ../db-${BDBVERSION}
 
 post-patch:
 	${MV} ${WRKSRC}/strings/strings-x86.s ${WRKSRC}/strings/strings-x86.S
