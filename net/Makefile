@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.412 2000/10/22 16:43:14 trevor Exp $
+# $FreeBSD: ports/net/Makefile,v 1.413 2000/10/23 02:44:35 jeh Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -75,6 +75,7 @@
     SUBDIR += gatekeeper
     SUBDIR += generic-nqs
     SUBDIR += ggsd
+    SUBDIR += ghtool
     SUBDIR += gicq
     SUBDIR += gkrellm_snmp
     SUBDIR += gnet
