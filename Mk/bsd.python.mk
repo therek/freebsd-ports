@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.58 2004/11/20 17:17:27 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.59 2004/12/01 15:04:04 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -118,6 +118,10 @@ Python_Include_MAINTAINER=	perky@FreeBSD.org
 
 _PYTHON_PORTBRANCH=		2.4
 _PYTHON_ALLBRANCHES=	2.4 2.3 2.2 2.1 # preferred first
+
+.if defined(USE_ZOPE)
+PYTHON_VERSION=		python2.3
+.endif
 
 .if defined(PYTHON_VERSION)
 _PYTHON_VERSION!=	${ECHO_CMD} "${PYTHON_VERSION}" | ${SED} 's/^python//'
