@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.546 2001/05/30 03:14:38 lioux Exp $
+# $FreeBSD: ports/net/Makefile,v 1.547 2001/05/30 11:38:38 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -208,6 +208,7 @@
     SUBDIR += netpipes
     SUBDIR += netsaint
     SUBDIR += netsaint-plugins
+    SUBDIR += netscript
     SUBDIR += netsed
     SUBDIR += nettest
     SUBDIR += ngrep
