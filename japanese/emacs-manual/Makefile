@@ -3,13 +3,13 @@
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.8 2000/01/27 21:51:16 asami Exp $
+# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.9 2000/03/10 21:31:11 asami Exp $
 #
 
 DISTNAME=	emacs-20.5-man-jp
-PKGNAME=	ja-emacs-manual-13.1999.12.13
+PKGNAME=	ja-emacs-manual-13.2000.01.13
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/GNU/ \
+MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/GNU/emacs-20.x/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 DISTFILES=	${DISTNAME}.tgz ${EMACS_ARC}
@@ -18,12 +18,23 @@ MAINTAINER=	okazaki@be.to
 
 BUILD_DEPENDS=	${EMACS}:${PORTSDIR}/editors/emacs20
 
+ERRATA_FILE=	Errata-2000-01-13
+
 EXTRACT_ONLY=	${DISTNAME}.tgz
 EMACS_DISTNAME= emacs-20.6
-EMACS_ARC=	${EMACS_DISTNAME}a.tar.gz
+EMACS_ARC=	${EMACS_DISTNAME}.tar.gz
 EMACS_SRCDIR=	${WRKDIR}/${EMACS_DISTNAME}
 EXTRACT_FILES=	${EMACS_DISTNAME}/man/ack.texi \
 		${EMACS_DISTNAME}/lisp/textmodes/texinfmt.el
+
+# We must apply this patch at first.
+EXTRA_PATCHES=	${WRKSRC}/patch-texinfmt.el
+
+.if defined(ERRATA_FILE) && !empty(ERRATA_FILE)
+DISTFILES+=	${ERRATA_FILE}.tgz
+EXTRACT_ONLY+=	${ERRATA_FILE}.tgz
+EXTRA_PATCHES+=	${WRKDIR}/${ERRATA_FILE}
+.endif
 
 # We use emacs20 to format texinfo files.
 EMACS=		emacs-20.6
@@ -37,9 +48,6 @@ post-extract:
 	${EXTRACT_CMD} ${EXTRACT_BEFORE_ARGS} ${DISTDIR}/${EMACS_ARC} ${EXTRACT_AFTER_ARGS} ${EXTRACT_FILES} ; \
 	${CP} ${EXTRACT_FILES} ${WRKSRC})
 	@${MKDIR} ${WRKDIR}/info
-
-pre-patch:
-	@${PATCH} ${PATCH_ARGS} < ${WRKSRC}/patch-texinfmt.el
 
 pre-build:
 	@${ECHO_MSG} "===>   Now start formatting texinfo. Please wait."
