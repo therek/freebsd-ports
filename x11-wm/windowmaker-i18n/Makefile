@@ -2,11 +2,12 @@
 # Date created:		24 Nov 1998
 # Whom:			mac@jp.freebsd.org
 #
-# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.78 2000/08/21 10:07:35 sobomax Exp $
+# $FreeBSD: ports/x11-wm/windowmaker-i18n/Makefile,v 1.79 2000/10/05 07:22:55 reg Exp $
 #
 
 PORTNAME=	windowmaker-i18n
 PORTVERSION=	0.62.1
+PORTREVISION=	1
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	${MASTER_SITE_WINDOWMAKER}
 MASTER_SITE_SUBDIR=	beta/srcs
