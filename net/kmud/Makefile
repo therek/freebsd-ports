@@ -2,22 +2,31 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/kmud/Makefile,v 1.4 2001/01/04 17:09:32 sf Exp $
+# $FreeBSD: ports/net/kmud/Makefile,v 1.5 2001/01/09 00:06:23 will Exp $
 #
 
 PORTNAME=	kmud
-PORTVERSION=	0.4.1
-PORTREVISION=	1
+PORTVERSION=	0.5
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.kmud.de/pub/kmud/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		ftp://ftp.kmud.de/pub/kmud/
+MASTER_SITE_SUBDIR=	games/muds
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
+RUN_DEPENDS=	kdehelp:${PORTSDIR}/x11/kdebase11
 
-GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
 USE_QT=		yes
+USE_LIBTOOL=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib" \
+		QTDIR="${X11BASE}"
+CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/X11/qt \
+		--with-qt-libraries=${X11BASE}/lib
+
+pre-patch:
+	@${PERL} -pi -e "s|-ldl ||g" ${WRKSRC}/kmud/Makefile.in
 
 .include <bsd.port.mk>
