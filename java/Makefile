@@ -1,9 +1,10 @@
-# $FreeBSD: ports/java/Makefile,v 1.18 2000/10/16 21:35:06 ade Exp $
+# $FreeBSD: ports/java/Makefile,v 1.19 2000/11/03 17:49:56 knu Exp $
 #
 
     SUBDIR += collections
     SUBDIR += cos
     SUBDIR += cryptix-jce
+    SUBDIR += gnu-regexp
     SUBDIR += guavac
     SUBDIR += infobus
     SUBDIR += jaf
