@@ -1,5 +1,5 @@
-@comment $FreeBSD$
-%%PORTDOCS%%%%DOCSDIR%%/README
+@comment $FreeBSD: ports/print/latex-bibunits/pkg-plist,v 1.1 2004/01/26 13:41:31 krion Exp $
+%%PORTDOCS%%%%DOCSDIR%%/00Readme
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%CLASSDIR%%/bibunits.dtx
 %%CLASSDIR%%/bibunits.ins
