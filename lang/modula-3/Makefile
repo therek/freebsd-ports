@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.37 2000/04/17 00:18:02 reg Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.38 2000/10/08 02:10:22 asami Exp $
 #
 
 PORTNAME=	modula-3
@@ -39,7 +39,7 @@ PLIST=		${WRKDIR}/pkg-plist.noX11
 pre-fetch:
 	@${ECHO_MSG} "To build this port without X11, define \"WITHOUT_X11\"."
 
-PLIST=		${WRKDIR}/PLIST
+PLIST=		${WRKDIR}/pkg-plist
 MAN1+=		formsedit.1 replayheap.1 showheap.1 shownew.1 showthread.1
 .endif
 
