@@ -3,7 +3,7 @@
 # Date created:				27 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.3 1999/08/25 05:47:54 obrien Exp $
+# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.4 1999/08/28 01:57:02 mharo Exp $
 #
 
 DISTNAME=	fastcrc-1.0
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.whizkidtech.net/fports/
 
 MAINTAINER=	adam@whizkidtech.net
 
-BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm:install
+BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 ONLY_FOR_ARCHS=	i386
 
