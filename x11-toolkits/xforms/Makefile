@@ -2,7 +2,7 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.29 2000/04/14 23:09:36 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.30 2000/06/15 16:44:12 sobomax Exp $
 #
 
 PORTNAME=	xforms
@@ -11,7 +11,7 @@ CATEGORIES=	graphics x11-toolkits
 EXTRACT_SUFX=	.tgz
 
 USE_X_PREFIX=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 

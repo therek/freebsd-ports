@@ -2,7 +2,7 @@
 # Date created:				9 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/aalib/Makefile,v 1.12 2000/04/17 00:17:41 reg Exp $
+# $FreeBSD: ports/graphics/aalib/Makefile,v 1.13 2000/06/15 17:12:37 sobomax Exp $
 #
 
 PORTNAME=	aalib
@@ -14,7 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_AUTOCONF=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.pre.mk>
 

@@ -3,7 +3,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD: ports/devel/sip/Makefile,v 1.2 2000/05/28 03:51:51 steve Exp $
+# $FreeBSD: ports/devel/sip/Makefile,v 1.3 2000/06/15 17:59:24 sobomax Exp $
 #
 
 PORTNAME=	sip
@@ -16,7 +16,7 @@ MAINTAINER=	adsharma@home.com
 BUILD_DEPENDS=	${LOCALBASE}/include/python1.5/Python.h:${PORTSDIR}/lang/python
 
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 USE_QT=		yes
 CONFIGURE_ARGS=	--enable-qt --with-qt-includes=${X11BASE}/include/X11/qt
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.43 2000/06/03 00:44:30 asami Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.44 2000/06/15 17:59:08 sobomax Exp $
 #
 
 PORTNAME=	qt
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 MAINTAINER=	will@FreeBSD.org
 
 USE_GMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 MAKE_ENV+=	QTDIR=${WRKSRC} CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" CC="${CC}"

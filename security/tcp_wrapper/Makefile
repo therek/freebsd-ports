@@ -2,7 +2,7 @@
 # Date created:		27 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.25 2000/06/02 03:18:52 will Exp $
+# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.26 2000/06/15 17:59:39 sobomax Exp $
 #
 
 PORTNAME=	tcp_wrappers
@@ -17,7 +17,7 @@ MAINTAINER=	torstenb@FreeBSD.org
 FORBIDDEN=	tcp_wrappers is in the base system
 .endif
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 ALL_TARGET=	freebsd
 MAN3=		hosts_access.3

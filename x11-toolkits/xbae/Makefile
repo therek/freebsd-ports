@@ -4,7 +4,7 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.ORG>
 #
-# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.12 2000/04/10 01:11:17 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/xbae/Makefile,v 1.13 2000/06/15 16:44:08 sobomax Exp $
 #
 
 PORTNAME=	xbae
@@ -19,7 +19,7 @@ MAINTAINER=	Lars.Koeller@Uni-Bielefeld.de
 
 REQUIRES_MOTIF= yes
 USE_IMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 MAN3=		XbaeCaption.3 XbaeMatrix.3
 

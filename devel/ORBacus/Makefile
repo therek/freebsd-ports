@@ -2,7 +2,7 @@
 # Date created:		22 June 1998
 # Whom:			ejc@bazzle.com
 #
-# $FreeBSD: ports/devel/ORBacus/Makefile,v 1.29 2000/04/11 21:26:55 mharo Exp $
+# $FreeBSD: ports/devel/ORBacus/Makefile,v 1.30 2000/06/15 17:12:25 sobomax Exp $
 #
 
 PORTNAME=	ORBacus
@@ -14,7 +14,7 @@ DISTNAME=	OB-${PORTVERSION}
 MAINTAINER=	ejc@bazzle.com
 
 USE_XLIB=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 HAS_CONFIGURE=	yes
 USE_NEWGCC=	yes
 CONFIGURE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}"

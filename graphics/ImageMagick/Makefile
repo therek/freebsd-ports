@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.82 2000/04/24 17:58:37 jseger Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.83 2000/06/15 17:12:25 sobomax Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -40,7 +40,7 @@ MAN5=		quantize.5
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 USE_AUTOCONF=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 CONFIGURE_ARGS= --prefix=${PREFIX} --enable-shared --with-perl=${PERL5} \
 		--enable-16bit-pixel

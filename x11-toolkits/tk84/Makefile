@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.38 2000/06/02 07:29:18 hoek Exp $
+# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.39 2000/06/15 16:43:49 sobomax Exp $
 #
 
 PORTNAME=	tk
@@ -17,7 +17,7 @@ MAINTAINER=	jseger@FreeBSD.org
 LIB_DEPENDS=	tcl83.1:${PORTSDIR}/lang/tcl83
 
 USE_XLIB=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.3

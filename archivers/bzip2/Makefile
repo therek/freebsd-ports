@@ -3,7 +3,7 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.27 2000/06/08 14:47:17 sobomax Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.28 2000/06/15 17:12:48 sobomax Exp $
 #
 
 PORTNAME=	bzip2
@@ -17,7 +17,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 FETCH_BEFORE_ARGS=	-b
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 MAN1=		bzip2.1
 MLINKS=		bzip2.1 bunzip2.1   bzip2.1 bzcat.1   bzip2.1 bz2cat.1 \

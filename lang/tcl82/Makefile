@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl82/Makefile,v 1.28 2000/05/31 20:48:00 asami Exp $
+# $FreeBSD: ports/lang/tcl82/Makefile,v 1.29 2000/06/15 17:59:37 sobomax Exp $
 #
 
 PORTNAME=	tcl
@@ -16,7 +16,7 @@ MAINTAINER=	jseger@FreeBSD.org
 Y2K=            http://www.scriptics.com/Y2K.html
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}

@@ -2,7 +2,7 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.34 2000/06/07 20:26:36 dima Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.35 2000/06/15 17:58:56 sobomax Exp $
 #
 
 PORTNAME=	pilot-link
@@ -17,7 +17,7 @@ MAINTAINER=	dima@freebsd.org
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 USE_PERL5=	yes
 PREFIX=		${LOCALBASE}/pilot
 GNU_CONFIGURE=	yes

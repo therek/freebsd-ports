@@ -2,7 +2,7 @@
 # Date created:		6 February 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tclX80/Makefile,v 1.32 2000/04/12 06:21:06 obrien Exp $
+# $FreeBSD: ports/lang/tclX80/Makefile,v 1.33 2000/06/15 17:59:38 sobomax Exp $
 #
 
 PORTNAME=	tclX
@@ -16,7 +16,7 @@ MAINTAINER=	jseger@FreeBSD.org
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-shared --with-tk
 PLIST_SUB=	TCLX_LONG_VER=8.0.4 TCLX_SHORT_VER=804

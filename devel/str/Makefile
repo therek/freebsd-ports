@@ -2,7 +2,7 @@
 # Date Created:			09 Jan 2000
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/str/Makefile,v 1.4 2000/04/14 05:44:28 asami Exp $
+# $FreeBSD: ports/devel/str/Makefile,v 1.5 2000/06/15 17:59:34 sobomax Exp $
 #
 
 PORTNAME=	str
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/str/ \
 MAINTAINER=	rse@engelschall.com
 
 HAS_CONFIGURE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 MAN1=		str-config.1

@@ -2,7 +2,7 @@
 # Date created:		22 December 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.34 2000/04/10 01:11:03 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/tix/Makefile,v 1.35 2000/06/15 16:43:47 sobomax Exp $
 #
 
 PORTNAME=	tix
@@ -18,7 +18,7 @@ MAINTAINER=	jmz@FreeBSD.org
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/Tix4.1.0.007/unix/tk8.0
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-sam \
 		--with-tcl="${PREFIX}/include/tcl8.2" \

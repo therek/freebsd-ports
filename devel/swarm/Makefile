@@ -2,7 +2,7 @@
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/swarm/Makefile,v 1.8 2000/04/17 23:19:54 mharo Exp $
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.9 2000/06/15 17:59:34 sobomax Exp $
 #
 
 PORTNAME=	swarm
@@ -19,7 +19,7 @@ LIB_DEPENDS=	ffi.2:${PORTSDIR}/devel/libffi \
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS=	--with-defaultdir=${PREFIX} \
 		--with-tclincludedir=${PREFIX}/include/tcl8.2 \
 		--with-tkincludedir=${PREFIX}/include/tk8.2 \

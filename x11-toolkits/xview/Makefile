@@ -2,7 +2,7 @@
 # Date created:		22 November 1994
 # Whom:			ljo (orig)
 #
-# $FreeBSD: ports/x11-toolkits/xview/Makefile,v 1.15 2000/06/09 21:59:15 asami Exp $
+# $FreeBSD: ports/x11-toolkits/xview/Makefile,v 1.16 2000/06/15 16:44:15 sobomax Exp $
 #
 
 PORTNAME=	xview
@@ -17,7 +17,7 @@ DISTNAME=	xview3.2p1-X11R6
 MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 IMAKEINCLUDE=	"-I${X11BASE}/lib/X11/config -I${WRKSRC}/config"
 MAKE_ENV+=	IMAKEINCLUDE=${IMAKEINCLUDE}
 XMKMF=		${SETENV} IMAKEINCLUDE=${IMAKEINCLUDE} xmkmf -a

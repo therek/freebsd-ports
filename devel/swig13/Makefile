@@ -2,7 +2,7 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.25 2000/06/14 13:21:10 sobomax Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.26 2000/06/15 17:12:27 sobomax Exp $
 #
 
 PORTNAME=	swig
@@ -21,7 +21,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/python:${PORTSDIR}/lang/python \
 		${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
 
 USE_PERL5=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/SWIG${PORTVERSION}
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-tclincl=${PREFIX}/include/tcl8.2/ \

@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.81 2000/06/08 10:42:17 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.82 2000/06/15 17:12:29 sobomax Exp $
 #
 
 PORTNAME=	libraries
@@ -21,7 +21,7 @@ MAINTAINER=	taguchi@tohoku.iij.ad.jp
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
 PREFIX?=	${X11BASE}
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
 DIST_SUBDIR=	xc
 WRKSRC=		${WRKDIR}/xc

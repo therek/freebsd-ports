@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.29 2000/04/10 01:10:11 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/Xaw3d/Makefile,v 1.30 2000/06/15 17:12:32 sobomax Exp $
 #
 
 PORTNAME=	Xaw3d
@@ -15,7 +15,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xc/lib/Xaw3d
 USE_IMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 .if exists(${X11BASE}/bin/XFree86)
 PLIST=		${WRKDIR}/PLIST
 .endif

@@ -2,7 +2,7 @@
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.25 2000/05/14 05:40:45 billf Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.26 2000/06/15 17:12:34 sobomax Exp $
 #
 
 PORTNAME?=	xtt-common
@@ -21,7 +21,7 @@ RUN_DEPENDS+=	mkttfdir:${PORTSDIR}/print/perlftlib
 VERSION=	1.3
 PATCHLEVEL=	0
 SERVER?=	common
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 .if !defined(USE_SHARED_WRKSRC) && defined(COMPILE_ALL_SERVERS_AT_ONCE)
 USE_SHARED_WRKSRC= YES
 .endif

@@ -2,7 +2,7 @@
 # Date created:				13th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/pspell/Makefile,v 1.2 2000/06/14 13:21:37 sobomax Exp $
+# $FreeBSD: ports/textproc/pspell/Makefile,v 1.3 2000/06/15 17:59:05 sobomax Exp $
 #
 
 PORTNAME=	pspell
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 USE_NEWGCC=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 LIBTOOLFILES=	configure modules/configure
 CONFIGURE_ENV+=	CXXFLAGS="${CXXFLAGS} -I${WRKSRC}"
 MAKE_ARGS+=	NOPORTDOCS=${NOPORTDOCS}

@@ -2,7 +2,7 @@
 # Date created:        28 April 1999
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/lang/siod/Makefile,v 1.6 2000/04/12 06:20:33 obrien Exp $
+# $FreeBSD: ports/lang/siod/Makefile,v 1.7 2000/06/15 17:59:24 sobomax Exp $
 #
 
 PORTNAME=	siod
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jkoshy@FreeBSD.org
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile

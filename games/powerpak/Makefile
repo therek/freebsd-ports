@@ -2,7 +2,7 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.14 2000/04/23 06:48:37 vanilla Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.15 2000/06/15 17:59:04 sobomax Exp $
 #
 
 PORTNAME=	powerpak
@@ -18,7 +18,7 @@ LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl \
 
 MAKEFILE=	Makefile.FreeBSD
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 post-extract:
 	@ /usr/bin/find ${WRKSRC} -type f | xargs ${PERL} -pi -e 's/\r//g'

@@ -2,7 +2,7 @@
 # Date Created:		04 Aug 1996
 # Whom:			Tim Vanderhoek <ac199@freenet.hamilton.on.ca>
 #
-# $FreeBSD: ports/converters/uulib/Makefile,v 1.22 2000/04/08 23:24:41 mharo Exp $
+# $FreeBSD: ports/converters/uulib/Makefile,v 1.23 2000/06/15 16:44:02 sobomax Exp $
 #
 
 PORTNAME=	uulib
@@ -15,7 +15,7 @@ DISTNAME=	uudeview-${PORTVERSION}
 MAINTAINER=	hoek@FreeBSD.org
 
 GNU_CONFIGURE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 MAN3=		uulib.3
 

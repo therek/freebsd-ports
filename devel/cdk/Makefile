@@ -3,7 +3,7 @@
 # Date created:				6 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cdk/Makefile,v 1.7 2000/05/29 02:15:17 steve Exp $
+# $FreeBSD: ports/devel/cdk/Makefile,v 1.8 2000/06/15 17:12:49 sobomax Exp $
 #
 
 PORTNAME=		cdk
@@ -17,7 +17,7 @@ MAINTAINER=	obrien@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 GNU_CONFIGURE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 ALL_TARGET=	default
 
 MAN3=	cdk_alphalist.3 cdk_binding.3 cdk_buttonbox.3 cdk_calendar.3 cdk_cdk.3 \

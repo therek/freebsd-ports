@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.49 2000/06/09 03:08:06 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.50 2000/06/15 17:59:09 sobomax Exp $
 #
 
 PORTNAME=	qt
@@ -19,7 +19,7 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 
 NO_LATEST_LINK=	yes
 USE_GMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.11 2000/04/20 20:49:29 mharo Exp $
+# $FreeBSD: ports/math/simpack/Makefile,v 1.12 2000/06/15 17:59:23 sobomax Exp $
 #
 
 PORTNAME=	simpack
@@ -14,7 +14,7 @@ DISTFILES=	SimPack3.tar.Z
 MAINTAINER=	rssh@cki.ipri.kiev.ua
 
 USE_XLIB=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 WRKSRC=		${WRKDIR}/simpack
 

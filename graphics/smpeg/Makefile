@@ -2,7 +2,7 @@
 # Date created:		2 Feb 2000
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.7 2000/06/14 15:36:23 sobomax Exp $
+# $FreeBSD: ports/graphics/smpeg/Makefile,v 1.8 2000/06/15 17:59:27 sobomax Exp $
 #
 
 PORTNAME=	smpeg
@@ -19,7 +19,7 @@ GTK_CONFIG=	${X11BASE}/bin/gtk12-config
 SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
 		SDL_CONFIG="${SDL_CONFIG}" \
 		GLBASE="${X11BASE}" \

@@ -2,7 +2,7 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.26 2000/06/07 09:02:53 tg Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.27 2000/06/15 16:43:50 sobomax Exp $
 #
 
 PORTNAME=	tkstep
@@ -25,7 +25,7 @@ FILE_DEPENDS=	${PORTSDIR}/x11-toolkits/tk80
 FETCH_BEFORE_ARGS=	-b
 PATCH_DIST_ARGS=	-p1 -d ${WRKDIR}/tk8.0.4 -E --quiet
 WRKSRC=		${WRKDIR}/tk8.0.4/unix
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-shared --enable-xpm --enable-step --enable-dnd \
 		 --enable-tiff --with-optimize="${CFLAGS} -I${PREFIX}/include"

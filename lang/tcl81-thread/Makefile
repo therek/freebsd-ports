@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.9 2000/05/31 18:17:39 hoek Exp $
+# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.10 2000/06/15 17:59:36 sobomax Exp $
 #
 
 PORTNAME=	tcl-thread
@@ -18,7 +18,7 @@ Y2K=            http://www.scriptics.com/Y2K.html
 FILE_DEPENDS=	${PORTSDIR}/lang/tcl80
 
 NO_LATEST_LINK=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-threads

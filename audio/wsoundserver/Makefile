@@ -2,7 +2,7 @@
 # Date created:		9 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.13 2000/06/06 07:55:24 sobomax Exp $
+# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.14 2000/06/15 16:44:07 sobomax Exp $
 #
 
 PORTNAME=	wsoundserver
@@ -21,7 +21,7 @@ LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 
 USE_X_PREFIX=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 MAKE_ARGS=	"-E CFLAGS"

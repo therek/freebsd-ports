@@ -2,7 +2,7 @@
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/xpm/Makefile,v 1.27 2000/04/14 10:47:59 asami Exp $
+# $FreeBSD: ports/graphics/xpm/Makefile,v 1.28 2000/06/15 16:44:14 sobomax Exp $
 #
 
 PORTNAME=       xpm
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://avahi.inria.fr/pub/xpm/
 MAINTAINER=	jseger@FreeBSD.org
 
 USE_IMAKE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 MAN1=		cxpm.1 sxpm.1
 

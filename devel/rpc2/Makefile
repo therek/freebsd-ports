@@ -2,7 +2,7 @@
 # Date created:				Wed Mar 22 19:06:45 EST 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/rpc2/Makefile,v 1.1 2000/05/29 04:20:57 steve Exp $
+# $FreeBSD: ports/devel/rpc2/Makefile,v 1.2 2000/06/15 17:59:13 sobomax Exp $
 #
 
 PORTNAME=	rpc2
@@ -16,6 +16,6 @@ LIB_DEPENDS=	lwp.1:${PORTSDIR}/devel/lwp
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.15 2000/04/21 06:59:29 mharo Exp $
+# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.16 2000/06/15 17:59:19 sobomax Exp $
 #
 
 PORTNAME=	scwm
@@ -22,7 +22,7 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 GNU_CONFIGURE=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 CONFIGURE_ARGS+=	--with-guile-prefix=${LOCALBASE}
 CONFIGURE_ENV+=	CPPFLAGS="-I${X11BASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \

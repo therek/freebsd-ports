@@ -2,7 +2,7 @@
 # Date created:				27 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/cgic/Makefile,v 1.3 2000/04/10 00:04:39 cpiazza Exp $
+# $FreeBSD: ports/www/cgic/Makefile,v 1.4 2000/06/15 17:12:50 sobomax Exp $
 #
 
 PORTNAME=	cgic
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 
 ALL_TARGET=	libcgic.so.1
 

@@ -2,7 +2,7 @@
 # Date created:		29 April 1999
 # Whom:			G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.7 2000/04/14 10:47:30 asami Exp $
+# $FreeBSD: ports/graphics/tifmerge/Makefile,v 1.8 2000/06/15 17:59:43 sobomax Exp $
 #
 
 PORTNAME=	tifmerge
@@ -15,7 +15,7 @@ MAINTAINER=	adam@whizkidtech.net
 
 BUILD_DEPENDS=	tuc:${PORTSDIR}/converters/tuc
 
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIBS=	yes
 USE_ZIP=	yes
 DIST_SUBDIR=	tifmerge
 MAN3=		tifmerge.3
