@@ -4,11 +4,11 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.1.1.1 2000/02/05 19:13:38 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.2 2000/02/06 07:48:15 obrien Exp $
 #
 
 DISTNAME=	netscape-4.7-1.alpha
-PKGNAME=	osf1_base-5.0
+PKGNAME=	osf1_base-4.0f
 CATEGORIES=	emulators
 MASTER_SITES=	ftp://ftp.digital.com/private/netscape/
 EXTRACT_SUFX=	.rpm
