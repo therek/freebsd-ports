@@ -1,27 +1,25 @@
-# New ports collection makefile for:   aterm
-# Version required:	0.3.2
-# Date created:		17 January 1999
-# Whom:			Jim Mock <jim@phrantic.phear.net>
+# New ports collection makefile for:   zh-aterm
+# Version required:	0.3.4
+# Date created:		26 April 1999
+# Whom:			Chia-Hsing Yu <davidyu@ken.csie.ntu.edu.tw>
 #
-# $Id$
+# $Id: $
 #
 
-DISTNAME=	aterm-0.3.2
-CATEGORIES=	x11
-MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/aterm/
+DISTNAME=	aterm-0.3.4
+PKGNAME=	zh-aterm-0.3.4
+CATEGORIES=	chinese
+MASTER_SITES=	http://members.xoom.com/sashav/aterm/ \
+		http://www.tigr.net/afterstep/as-apps/download/aterm/
 
-MAINTAINER=	jim@phrantic.phear.net
+MAINTAINER=	davidyu@ken.csie.ntu.edu.tw
 
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+
+USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-transparency --enable-background-image \
-		--disable-delete-key --disable-backspace-key
+		--disable-delete-key --disable-backspace-key --enable-big5
 MAN1=		aterm.1
-
-do-build:
-	(cd ${WRKSRC} && make)
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/src/aterm ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/doc/aterm.1 ${PREFIX}/man/man1/aterm.1
 
 .include <bsd.port.mk>
