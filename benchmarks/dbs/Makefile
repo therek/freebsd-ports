@@ -3,7 +3,7 @@
 # Date created: 	1 August 1998
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/benchmarks/dbs/Makefile,v 1.3 1999/08/25 04:45:41 obrien Exp $
+# $FreeBSD: ports/benchmarks/dbs/Makefile,v 1.4 1999/09/10 03:21:49 asami Exp $
 #
 
 DISTNAME=	dbs-1.1.5
@@ -12,7 +12,7 @@ MASTER_SITES=	http://shika.aist-nara.ac.jp/member/yukio-m/dbs/software1.1.5/
 
 MAINTAINER=	jkoshy@freebsd.org
 
-RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot+
+RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 
 DOCDIR=		${PREFIX}/share/doc/dbs/
 DOCS=		dbs.man dbs.man.jis dbs_paper.ps Copyright

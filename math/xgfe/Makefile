@@ -3,7 +3,7 @@
 # Date created:        24 March 1998
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/math/xgfe/Makefile,v 1.11 1999/08/25 07:18:01 obrien Exp $
+# $FreeBSD: ports/math/xgfe/Makefile,v 1.12 1999/09/10 03:21:52 asami Exp $
 #
 
 DISTNAME=		xgfe-2.0
@@ -12,7 +12,7 @@ MASTER_SITES=		http://www.freebsd.org/~mph/distfiles/
 
 MAINTAINER=	mph@freebsd.org
 
-RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot+
+RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 
 USE_QT=		yes
 USE_X_PREFIX=	yes
