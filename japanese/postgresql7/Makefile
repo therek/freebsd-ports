@@ -2,23 +2,23 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.25 2001/05/19 18:54:59 ijliao Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.26 2001/06/01 06:04:56 obrien Exp $
 #
 
 PORTNAME=	postgresql
-PORTVERSION=	7.1.1.20010508
+PORTVERSION=	7.1.2
 CATEGORIES=	japanese databases
-MASTER_SITES=	ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION:R} \
-	ftp://ftp.postgresql.org/pub/v${PORTVERSION:R}/ \
+MASTER_SITES=	ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION}/ \
+	ftp://ftp.postgresql.org/pub/v${PORTVERSION}/ \
 	${MASTER_SITE_RINGSERVER}
-MASTER_SITE_SUBDIR=	misc/db/postgresql-jp/${PORTVERSION:R}
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}
+MASTER_SITE_SUBDIR=	misc/db/postgresql-jp/${PORTVERSION}
+DISTNAME=	${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	postgresql
 
-PATCH_SITES=	ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION:R}/patches/ \
-	ftp://ftp.net-newbie.com/pub/postgres/
-PATCHFILES=	jumbo-${PORTVERSION:E}.patch.gz \
-	psqlj-${PORTVERSION:R}.diff.gz
+#PATCH_SITES=	ftp://ftp.sra.co.jp/pub/cmd/postgres/${PORTVERSION:R}/patches/ \
+PATCH_SITES=	ftp://ftp.net-newbie.com/pub/postgres/
+PATCHFILES=	psqlj-${PORTVERSION}.diff.gz
+#	jumbo-${PORTVERSION:E}.patch.gz
 PATCH_DIST_STRIP=	-p0 -d ${WRKDIR}
 
 MAINTAINER=	saito@a2z.co.jp
@@ -95,7 +95,7 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
 
-pre-extract:
+pre-everything:
 	@ ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.postgresql
 
 pre-install:
@@ -190,7 +190,7 @@ post-install:
 .endif
 
 post-clean:
-	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
+	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/work/Makefile.inc
 
 post-extract: ${POSTEXTRACT}
 
