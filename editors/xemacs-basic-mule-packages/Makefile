@@ -2,12 +2,12 @@
 # Date created:		24 Oct 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.4 2000/02/17 04:16:00 kuriyama Exp $
+# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.5 2000/04/13 06:50:34 knu Exp $
 #
 
 PORTNAME=	xemacs-mule-packages
 PORTVERSION=	1.1
-CATEGORIES=	editors
+CATEGORIES=	editors elisp
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/packages/ \

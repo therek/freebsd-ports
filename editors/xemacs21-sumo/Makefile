@@ -2,12 +2,12 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.5 2000/04/20 19:10:45 mharo Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.6 2000/04/20 19:39:00 mharo Exp $
 #
 
 PORTNAME=	xemacs-${NAMEPREFIX}sumo
 PORTVERSION=	${XEMACS_REL}
-CATEGORIES+=	editors
+CATEGORIES+=	editors elisp
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 EXTRACT_ONLY=	# empty
