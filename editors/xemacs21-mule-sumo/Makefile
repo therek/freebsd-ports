@@ -2,7 +2,7 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.6 2000/04/20 19:39:00 mharo Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-sumo/Makefile,v 1.7 2000/04/25 07:55:18 knu Exp $
 #
 
 PORTNAME=	xemacs-${NAMEPREFIX}sumo
@@ -22,7 +22,7 @@ NO_BUILD=	yes
 
 XEMACS_MAJOR_VER=	21
 XEMACS_REL=		21.1
-XEMACS_VER=		21.1.9
+XEMACS_VER=		21.1.10
 XEMACS_ARCH=		${MACHINE_ARCH}--freebsd
 
 .include <bsd.port.pre.mk>

@@ -2,7 +2,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.14 2000/03/08 08:26:44 kuriyama Exp $
+# $FreeBSD: ports/editors/flim-xemacs21-mule-current/Makefile,v 1.15 2000/04/14 06:20:30 asami Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -15,7 +15,7 @@ MASTERDIR=	${.CURDIR}/../../editors/flim-emacs-current
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs21-mule
-EMACS_VER=	21.1.9
+EMACS_VER=	21.1.10
 EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
 EMACS_PACKAGESDIR=	lib/${EMACS_NAME}/site-packages
 # packages-subdirectories which this port requires
