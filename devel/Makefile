@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.586 2001/07/06 10:09:39 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.587 2001/07/06 16:42:18 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -294,6 +294,7 @@
     SUBDIR += p5-Class-MethodMaker
     SUBDIR += p5-Class-Singleton
     SUBDIR += p5-Class-Tom
+    SUBDIR += p5-Config-Ini
     SUBDIR += p5-Config-IniFiles
     SUBDIR += p5-Config-Setting
     SUBDIR += p5-ConfigReader
