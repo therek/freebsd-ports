@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2004 Roman Bogorodskiy <bogorodskiy@inbox.ru>
  *
- * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.3 2004/08/06 18:00:53 glewis Exp $
+ * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.4 2004/08/27 13:47:47 krion Exp $
  */
 
 #include "torsmo.h"
@@ -94,7 +94,7 @@ double get_uptime()
 	int mib[2] = {CTL_KERN, KERN_BOOTTIME};
       	struct timeval boottime;
         time_t now;
-	int size = sizeof(boottime);
+	size_t size = sizeof(boottime);
 	double uptime;
 
 	if((sysctl(mib, 2, &boottime, &size, NULL, 0) != -1) && (boottime.tv_sec != 0)) {
