@@ -3,7 +3,7 @@
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.2 1999/11/09 10:37:33 sheldonh Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.3 2000/01/12 16:46:53 sheldonh Exp $
 #
 
 DISTNAME=	mod_perl-1.21
@@ -34,11 +34,7 @@ MAN3=		Apache.3 Apache::Constants.3  Apache::ExtUtils.3 \
 		mod_perl_tuning.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} >= 400000
 BROKEN=		"see PR 14924; use p5-Apache instead"
-.endif
 
 do-configure:
 	@ cd ${WRKSRC}; \
@@ -52,4 +48,4 @@ post-install:
 	    ${PREFIX}/include/apache/modules/perl
 	${SH} ${PKGINSTALL}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
