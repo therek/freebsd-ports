@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.129 2001/07/10 11:09:58 des Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.130 2001/07/16 07:22:47 vanilla Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += adodb
@@ -6,7 +6,6 @@
     SUBDIR += db
     SUBDIR += db3
     SUBDIR += dbf2mysql
-    SUBDIR += dbiwrapper
     SUBDIR += dbmetrix
     SUBDIR += dbtool
     SUBDIR += dbview
@@ -50,6 +49,7 @@
     SUBDIR += p5-DBD-Sybase
     SUBDIR += p5-DBD-XBase
     SUBDIR += p5-DBI
+    SUBDIR += p5-DBIWrapper
     SUBDIR += p5-DBIx-DataSource
     SUBDIR += p5-DBIx-Recordset
     SUBDIR += p5-DBIx-SearchBuilder
