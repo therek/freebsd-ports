@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.33 2000/12/02 21:54:26 dwhite Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.34 2000/12/13 20:13:34 dwhite Exp $
 #
 
 PORTNAME=	postfix
@@ -42,7 +42,7 @@ BIN1=	bounce cleanup error flush lmtp local master nqmgr pickup \
 	pipe qmgr showq smtp smtpd spawn trivial-rewrite
 
 BIN2=	postalias postcat postconf postdrop postfix \
-	postkick postlog postmap postsuper sendmail
+	postkick postlock postlog postmap postsuper sendmail
 
 .if defined(WITH_TEST)
 BIN3=   smtp-sink smtp-source
