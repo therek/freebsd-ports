@@ -2,11 +2,12 @@
 # Date created:				13 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gupsc/Makefile,v 1.1 2001/03/13 15:08:45 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gupsc
 PORTVERSION=	0.3.1
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	http://www.stud.ifi.uio.no/~hennikul/gupsc/download/
 
