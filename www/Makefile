@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.341 2001/04/10 20:03:47 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.342 2001/04/10 20:31:46 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -204,6 +204,7 @@
     SUBDIR += p5-libwww
     SUBDIR += peacock
     SUBDIR += pgdriver
+    SUBDIR += phpnuke
     SUBDIR += plugger
     SUBDIR += pruby
     SUBDIR += publicfile
