@@ -2,7 +2,7 @@
 # Date created:        05 February 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/recjis/Makefile,v 1.5 2000/01/07 02:27:24 nakai Exp $
+# $FreeBSD: ports/japanese/recjis/Makefile,v 1.6 2000/04/12 14:37:27 knu Exp $
 #
 
 PORTNAME=	recjis
@@ -19,7 +19,7 @@ ALL_TARGET=	prog
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/*jis ${PREFIX}/bin
 	${MKDIR} ${PREFIX}/lib/recjis
-	${INSTALL} ${COPY} -o ${SHAREOWN} -g ${SHAREGRP} -m 777 \
+	${INSTALL} ${COPY} -o ${SHAREOWN} -g ${SHAREGRP} -m 644 \
 		${WRKSRC}/*_tbl ${PREFIX}/lib/recjis
 
 .include <bsd.port.mk>
