@@ -1,24 +1,29 @@
 # New ports collection makefile for:	giflib
-# Version required:	3.0
+# Version required:	4.1.0
 # Date created:		03 May 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/giflib/Makefile,v 1.8 1999/08/25 06:13:58 obrien Exp $
+# $FreeBSD: ports/graphics/giflib/Makefile,v 1.9 1999/08/31 06:44:58 mharo Exp $
 #
 
-DISTNAME=	giflib-3.0
+DISTNAME=	giflib-4.1.0
 CATEGORIES=	graphics
-MASTER_SITES=	http://earthspace.net/~esr/giflib/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	libs/giflib
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
+USE_GMAKE=	yes
+USE_LIBTOOL=	yes
 
 post-install:
+	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/giflib
-	@${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/giflib
+	${INSTALL_DATA} ${WRKSRC}/doc/*.html ${PREFIX}/share/doc/giflib
+	${INSTALL_DATA} ${WRKSRC}/doc/*.png ${PREFIX}/share/doc/giflib
+	${INSTALL_DATA} ${WRKSRC}/doc/*.txt ${PREFIX}/share/doc/giflib
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>
