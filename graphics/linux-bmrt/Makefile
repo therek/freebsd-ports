@@ -2,7 +2,7 @@
 # Date created:                        4 May 2000
 # Whom:                                R Joseph Wright
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/linux-bmrt/Makefile,v 1.1.1.1 2000/05/07 14:27:01 sada Exp $
 #
 
 PORTNAME=	linux-bmrt
@@ -55,18 +55,18 @@ post-install:
 	@${ECHO} "************************************************************************";
 	@${ECHO} "";
 	@${ECHO} "      This is shareware that is free for non-commercial use.";
-	@${ECHO} "      Please read /usr/local/share/bmrt/License before proceeding.";
+	@${ECHO} "      Please read ${PREFIX}/share/doc/bmrt/License before proceeding.";
 	@${ECHO} "";
 	@${ECHO} "      Before using these programs, add the following";
 	@${ECHO} "      path to your shell environment:";
 	@${ECHO} "";
 	@${ECHO} "      If using sh (or derivative),";
-	@${ECHO} "      export SHADERS=.:/usr/local/share/bmrt/shaders";
+	@${ECHO} "      export SHADERS=.:${PREFIX}/share/bmrt/shaders";
 	@${ECHO} "";
 	@${ECHO} "      If using csh (or derivative),";
-	@${ECHO} "      setenv .:/usr/local/share/bmrt/shaders";
+	@${ECHO} "      setenv .:${PREFIX}/share/bmrt/shaders";
 	@${ECHO} "";
-	@${ECHO} "      Also, copy /usr/local/share/examples/bmrt/.rendribrc";
+	@${ECHO} "      Also, copy ${PREFIX}/share/examples/bmrt/.rendribrc";
 	@${ECHO} "      to your home directory, where it may be modified.";
 	@${ECHO} "";
 	@${ECHO} "************************************************************************";
