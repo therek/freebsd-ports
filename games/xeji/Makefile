@@ -2,11 +2,12 @@
 # Date created:		10 Aug 1999
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xeji/Makefile,v 1.2 2000/04/14 12:27:17 asami Exp $
+# $FreeBSD: ports/games/xeji/Makefile,v 1.3 2000/08/03 09:24:05 asami Exp $
 #
 
 PORTNAME=	xeji
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://yindy1.aist-nara.ac.jp/~tetu-s/sofken/software/
 DISTNAME=	${PORTNAME}${PORTVERSION}
