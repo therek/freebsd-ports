@@ -2,11 +2,12 @@
 # Date created:				23 June 2001
 # Whom:					petef@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/cfm/Makefile,v 1.1 2001/06/23 06:53:28 markp Exp $
 #
 
 PORTNAME=	cfm
 PORTVERSION=	0.5
+PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.rpi.edu/~mullr/cfm/dist/
 
