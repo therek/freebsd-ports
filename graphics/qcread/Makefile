@@ -3,13 +3,13 @@
 # Date created:        23 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qcread/Makefile,v 1.3 1999/08/25 06:14:48 obrien Exp $
+# $FreeBSD: ports/graphics/qcread/Makefile,v 1.4 1999/08/31 06:45:11 mharo Exp $
 #
 
 DISTNAME=	qcread-0.3
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://phobos.illtel.denver.co.us/pub/qcread/ \
-		http://phobos.illtel.denver.co.us/pub/qcread/
+MASTER_SITES=	ftp://mars.illtel.denver.co.us/pub/qcread/ \
+		http://mars.illtel.denver.co.us/pub/qcread/
 
 MAINTAINER=	billf@FreeBSD.org
 
@@ -17,7 +17,7 @@ ONLY_FOR_ARCHS=	i386
 
 post-extract:
 
-	${CP} -r ${WRKSRC}/gnu-getopt/. ${WRKSRC}
+	@${CP} -r ${WRKSRC}/gnu-getopt/. ${WRKSRC}
 
 do-install:
 
