@@ -2,7 +2,7 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.4 2000/04/27 02:32:16 knu Exp $
+# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.5 2000/05/14 05:40:48 billf Exp $
 #
 
 PORTNAME=	logrotate
@@ -25,7 +25,7 @@ do-extract:
 	@${RM} -rf ${WRKDIR}
 	@${MKDIR} ${WRKDIR}
 	@rpm2cpio ${_DISTDIR}${DISTFILES} | (cd ${WRKDIR}; cpio -i)
-	@tar -xzf ${WRKDIR}/${DISTNAME}.tar.gz -C ${WRKDIR}
+	@${TAR} -xzf ${WRKDIR}/${DISTNAME}.tar.gz -C ${WRKDIR}
 
 post-install:
 	@${MKDIR} ${PREFIX}/etc/logrotate.d
