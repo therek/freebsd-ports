@@ -2,13 +2,13 @@
 # Date created:		31 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11/ruby-X11/Makefile,v 1.3 2001/06/27 13:30:53 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	X11
 PORTVERSION=	0.5
 CATEGORIES=	x11 ruby
-MASTER_SITES=	http://hostname.2y.net/~matju/RubyX11/
+MASTER_SITES=	http://artengine.ca/matju/RubyX11/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	Ruby${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
