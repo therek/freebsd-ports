@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.30 2000/04/12 06:14:24 obrien Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.31 2000/05/31 09:44:15 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.sc.sri.com/pub/FreeBSD/JDK/ \
 		http://www.freebsd.org/java/
 
 MAINTAINER=	nate@FreeBSD.org
+
+RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper
 
 NO_CDROM=	"License doesn't allow distribution with fee"
 
@@ -36,5 +38,8 @@ do-install:
 		| (cd ${PREFIX}/jdk${JDK_VERSION} && ${TAR} --unlink -x -f -)
 	${MKDIR} ${PREFIX}/share/java/classes
 	${MKDIR} ${PREFIX}/share/doc/java
+
+post-install:
+	${LOCALBASE}/bin/registervm "${PREFIX}/jdk${JDK_VERSION}/bin/java # JDK${JDK_VERSION}"
 
 .include <bsd.port.post.mk>
