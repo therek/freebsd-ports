@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.110 2001/02/05 20:58:33 olgeni Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.111 2001/02/08 16:38:51 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -51,7 +51,7 @@ SCRIPTS_ENV+=	MACHINE=alpha
 PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
-pre-fetch:
+pre-configure:
 	@if ${ECHO} "$(CFLAGS)" |${GREP} -q O[3456789]; then \
 		${ECHO} "XFree86-4 with thread support does not build with optimization"; \
 		${ECHO} "flags different from O or -O2"; \
