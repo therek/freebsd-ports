@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.256 2000/12/30 02:15:34 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.257 2000/12/30 14:14:57 lkoeller Exp $
 #
 
     SUBDIR += 4va
@@ -90,6 +90,7 @@
     SUBDIR += jgraph
     SUBDIR += jgv
     SUBDIR += jpeg
+    SUBDIR += jpeg2ps-a4
     SUBDIR += jpeg2ps-letter
     SUBDIR += jslice
     SUBDIR += juno-2
