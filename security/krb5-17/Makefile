@@ -2,7 +2,7 @@
 # Date created:				6/5/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/krb5/Makefile,v 1.26 2001/07/20 16:53:31 nectar Exp $
+# $FreeBSD: ports/security/krb5/Makefile,v 1.27 2001/07/24 15:29:39 nectar Exp $
 #
 
 PORTNAME=		krb5
@@ -11,7 +11,7 @@ PORTREVISION=		3
 CATEGORIES=		security
 MASTER_SITES=		# manual download
 
-MAINTAINER=		nectar@FreeBSD.org
+MAINTAINER=		Cy.Schubert@uumail.gov.bc.ca
 
 BUILD_DEPENDS=		gm4:${PORTSDIR}/devel/m4
 
