@@ -2,7 +2,7 @@
 # Date created:		25 Aug 2000
 # Whom:			sumikawa
 #
-# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.62 2001/06/20 05:33:15 sumikawa Exp $
+# $FreeBSD: ports/www/mozilla+ipv6/Makefile,v 1.63 2001/07/02 16:13:08 sumikawa Exp $
 #
 
 PORTNAME=	mozilla
@@ -58,7 +58,7 @@ CONFIGURE_ARGS=					\
 		--with-pthreads
 CONFIGURE_ENV=	BSD_PTHREAD_LIBS="${PTHREAD_LIBS}" \
 		MOZ_OPTIMIZE_FLAGS=""
-MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin
+MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin MALLOC_OPTIONS=j
 
 post-build:
 	@${SED} -e "s;@PREFIX@;${PREFIX};g" \
