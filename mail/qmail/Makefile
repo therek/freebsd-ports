@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.16 2000/04/13 20:00:37 cpiazza Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.17 2000/05/29 03:37:04 steve Exp $
 #
 
 PORTNAME=	qmail
@@ -138,7 +138,7 @@ do-install:
 	@${MKDIR} /usr/local/etc/rc.d
 	@${LN} -sf ${PREFIX}/rc /usr/local/etc/rc.d/qmail.sh
 	@${ECHO}
-	@${SED} s!/usr/local/!${PREFIX}/!g ${PKGDIR}/MESSAGE | /usr/bin/fmt
+	@${SED} s!/var/qmail!${PREFIX}/!g ${PKGDIR}/MESSAGE | /usr/bin/fmt
 
 # hack to allow slave ports to include bsd.port.pre.mk and then this file
 .if defined(_PREMKINCLUDED)
