@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.18 2000/07/05 14:33:20 shige Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.19 2001/01/16 17:30:25 sobomax Exp $
 #
 
 PORTNAME=	emacs-dl
@@ -33,6 +33,10 @@ CONFIGURE_ARGS=	--with-x-toolkit --with-pop
 USE_XLIB=	yes
 .else
 CONFIGURE_ARGS=	--with-x=no --with-pop
+.endif
+
+.if defined(WITHOUT_XIM) && (${WITHOUT_XIM} == "yes")
+MAKE_FLAGS=	MYCPPFLAG="-DX_I18N_INHIBITED"
 .endif
 
 DOC_FILE=	DOC-DL-${EMACS_VER}.1
