@@ -2,11 +2,12 @@
 # Date created:		January 24, 1999
 # Whom:		mi@aldan.algebra.com
 #
-# $FreeBSD: ports/audio/raproxy/Makefile,v 1.9 2000/12/31 14:42:19 sf Exp $
+# $FreeBSD: ports/audio/raproxy/Makefile,v 1.10 2001/07/03 18:35:01 lioux Exp $
 #
 
 PORTNAME=	raproxy
 PORTVERSION=	3.0b1
+PORTREVISION=	1
 CATEGORIES=	audio net
 MASTER_SITES=	http://docs.real.com/proxykit/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -31,6 +32,5 @@ do-install:
 	@${INSTALL_DATA} ${WRKSRC}/*.html ${WRKSRC}/*.pdf \
 		${PREFIX}/share/doc/raproxy
 .endif
-	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
