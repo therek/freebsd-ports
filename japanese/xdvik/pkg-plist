@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/japanese/xdvik/pkg-plist,v 1.12 2004/06/18 15:53:46 hrs Exp $
 bin/t1mapper
 bin/xdvi
 bin/xdvizilla
