@@ -2,13 +2,14 @@
 # Date created:         Dec 1 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/arena/Makefile,v 1.22 2001/01/16 17:32:53 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	arena-i18n
 PORTVERSION=	beta3b
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp-eu.w3.org/pub/Arena/beta-3/
+MASTER_SITES=	ftp://ftp.yggdrasil.com/pub/dist/web/arena/ \
+		ftp://ftp.w3.org/pub/Arena/beta-3/
 DISTNAME=	arena-CJK-beta3a
 
 MAINTAINER=	ports@FreeBSD.org
