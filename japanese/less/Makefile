@@ -2,12 +2,12 @@
 # Date created:		7 March 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/less/Makefile,v 1.24 2001/01/01 18:31:35 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	less+iso
 PORTVERSION=	358.254
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.io.com/~kazushi/less/ \
 		${MASTER_SITE_LOCAL}
@@ -24,6 +24,7 @@ PATCHFILES=	${DISTNAME}-iso${PORTVERSION:E}.patch.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sf@FreeBSD.org
+COMMENT=	Less + zcat + ISO-2022 - a pager similar to more and pg
 
 USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
