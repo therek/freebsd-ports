@@ -5,7 +5,7 @@
 # Date created:         8 Jul 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/security/pgp/Makefile,v 1.31 1999/08/31 06:50:17 mharo Exp $
+# $FreeBSD: ports/security/pgp/Makefile,v 1.32 2000/02/13 16:54:51 steve Exp $
 #
 
 # Pick an initial default, else it doesn't get set in the INDEX.
@@ -18,7 +18,7 @@ MAINTAINER=	ache@FreeBSD.org
 IS_INTERACTIVE=	YES
 RESTRICTED=     "Crypto"
 MAKEFILE=       makefile
-ALL_TARGET=     freebsd-${MACHINE_ARCH}
+ALL_TARGET=     freebsd-${MACHINE_ARCH} OS_CFLAGS="${CFLAGS}"
 PGPLIB=         ${PREFIX}/lib/pgp
 MAN1=		pgp.1
 
