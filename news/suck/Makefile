@@ -2,7 +2,7 @@
 # Date created:		30 Mar 1996
 # Whom:			graphite@taurus.bekkoame.or.jp
 #
-# $FreeBSD: ports/news/suck/Makefile,v 1.24 2001/03/19 18:44:22 dinoex Exp $
+# $FreeBSD: ports/news/suck/Makefile,v 1.25 2001/03/23 17:34:06 dinoex Exp $
 #
 
 PORTNAME=	suck
@@ -11,7 +11,7 @@ CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=     system/news/transport
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
