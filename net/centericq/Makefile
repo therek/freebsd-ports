@@ -3,11 +3,11 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/net/centericq/Makefile,v 1.19 2001/08/14 17:47:29 ijliao Exp $
+# $FreeBSD: ports/net/centericq/Makefile,v 1.20 2001/09/07 21:18:23 ijliao Exp $
 #
 
 PORTNAME=	centericq
-PORTVERSION=	3.35.22
+PORTVERSION=	4.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://konst.org.ua/download/
 
