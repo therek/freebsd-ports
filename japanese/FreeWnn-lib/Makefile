@@ -2,7 +2,7 @@
 # Date created:     20 July 1997
 # Whom:         Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/FreeWnn-lib/Makefile,v 1.36 2001/02/14 20:19:36 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	FreeWnn
@@ -113,8 +113,8 @@ CONFIGURE_ARGS+= --with-libkwnn=-lkwnn --with-kwnn-libraries="${PREFIX}/lib"
 
 post-extract:
 	${CP} ${LOCALBASE}/share/libtool/libltdl/aclocal.m4 ${WRKSRC}
-	${CP} ${LOCALBASE}/share/autoconf/config.sub ${WRKSRC}
-	${CP} ${LOCALBASE}/share/autoconf/config.guess ${WRKSRC}
+	${CP} ${AUTOCONF_DIR}/config.sub ${WRKSRC}
+	${CP} ${AUTOCONF_DIR}/config.guess ${WRKSRC}
 
 .if (${PKGNAMESUFFIX} == -server)
 pre-install:
