@@ -2,11 +2,11 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.33 2000/06/02 03:18:42 will Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.34 2000/06/02 22:06:20 will Exp $
 #
 
 PORTNAME=	pidentd
-PORTVERSION= 	2.8.5
+PORTVERSION=	2.8.5
 CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/servers/ \
 		ftp://ftp.fu-berlin.de/unix/security/ident/servers/
