@@ -28,10 +28,38 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.224 2004/09/15 14:47:35 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.225 2004/09/15 15:16:36 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
+  <vuln vid="762d1c6d-0722-11d9-b45d-000c41e2cdad">
+    <topic>apache --- apr_uri_parse IPv6 address handling vulnerability</topic>
+    <affects>
+      <package>
+	<name>apache</name>
+	<range><ge>2.0</ge><lt>2.0.51</lt></range>
+      </package>
+    </affects>
+    <description>
+      <body xmlns="http://www.w3.org/1999/xhtml">
+	<p>The Apache Software Foundation Security Team discovered a
+	  programming error in the apr-util library function apr_uri_parse.
+	  When parsing IPv6 literal addresses, it is possible that a
+	  length is incorrectly calculated to be negative, and this
+	  value is passed to memcpy.  This may result in an exploitable
+	  vulnerability on some platforms, including FreeBSD.</p>
+      </body>
+    </description>
+    <references>
+      <cvename>CAN-2004-0786</cvename>
+      <url>http://httpd.apache.org</url>
+    </references>
+    <dates>
+      <discovery>2004-09-15</discovery>
+      <entry>2004-09-15</entry>
+    </dates>
+  </vuln>
+
   <vuln vid="ef253f8b-0727-11d9-b45d-000c41e2cdad">
     <topic>xpm --- image decoding vulnerabilities</topic>
     <affects>
