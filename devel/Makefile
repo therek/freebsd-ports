@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.386 2001/01/01 17:27:09 obrien Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.387 2001/01/01 21:28:44 assar Exp $
 #
 
     SUBDIR += ElectricFence
@@ -300,6 +300,7 @@
     SUBDIR += py-kjbuckets
     SUBDIR += py-kqueue
     SUBDIR += py-mxDateTime
+    SUBDIR += py-mxProxy
     SUBDIR += py-mxStack
     SUBDIR += py-mxTools
     SUBDIR += qtarch
