@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.55 2001/04/18 03:53:43 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	samba
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://de.samba.org/pub/mirror/samba/%SUBDIR%/ \
 		ftp://se.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://ftp.sunet.se/pub/unix/utilities/samba/%SUBDIR%/
-MASTER_SITE_SUBDIR= . old alpha
+MASTER_SITE_SUBDIR= . old-versions alpha old
 DISTNAME=       samba-${PORTVERSION}
 
 MAINTAINER=	dwcjr@inethouston.net
