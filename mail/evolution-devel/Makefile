@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.2 2000/07/11 22:02:13 ade Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.3 2000/07/12 14:40:15 ade Exp $
 #
 
 PORTNAME=	evolution
-PORTVERSION=	0.2
+PORTVERSION=	0.3.1
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
@@ -43,6 +43,13 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 PLIST_SUB=	VERSION=${PORTVERSION}
+
+post-extract:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
