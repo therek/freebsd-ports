@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.341 2000/09/14 00:54:03 asami Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.342 2000/09/15 19:39:57 rv Exp $
 #
 
     SUBDIR += ElectricFence
@@ -88,6 +88,7 @@
     SUBDIR += gnomedebug
     SUBDIR += gnomevfs
     SUBDIR += gnustep
+    SUBDIR += gpasm
     SUBDIR += gperf
     SUBDIR += gtksheet
     SUBDIR += i386-rtems-binutils
