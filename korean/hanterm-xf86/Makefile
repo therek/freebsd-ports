@@ -2,38 +2,34 @@
 # Date created:		22 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm-xf86/Makefile,v 1.20 2001/05/11 12:09:49 cjh Exp $
+# $FreeBSD: ports/korean/hanterm-xf86/Makefile,v 1.21 2001/05/29 12:08:39 cjh Exp $
 #
 
 PORTNAME=	hanterm
-PORTVERSION=	19
-PORTREVISION=	1
+PORTVERSION=	2.0.0
+PORTEPOCH=	1
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.FreeBSD.org/~hwang/hanterm/ \
 		http://hanterm.org/download/hanterm-xf/
 PKGNAMESUFFIX=	-xf
-DISTNAME=	hanterm${PKGNAMESUFFIX}-p${PORTVERSION}
+DISTNAME=	hanterm${PKGNAMESUFFIX}-${PORTVERSION}
 
 MAINTAINER=	cjh@FreeBSD.org
 
 LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
-RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/johabm16.pcf.gz:${PORTSDIR}/korean/johabfonts
+RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/gulim12.pcf.gz:${PORTSDIR}/korean/baekmukfonts-bdf \
+		${LOCALBASE}/share/iconv/johab.cct:${PORTSDIR}/converters/iconv-extra
 
 USE_X_PREFIX=		yes
 GNU_CONFIGURE=		yes
-CONFIGURE_ARGS+=	--enable-16-color
+CONFIGURE_ARGS+=	--enable-boxchar --enable-ansi-color \
+			--enable-256-color --enable-chat --enable-now-chat
 CONFIGURE_ENV+=		LIBS="${LDFLAGS} -L${LOCALBASE}/lib -liconv" \
 			CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
-NO_INSTALL_MANPAGES=	yes
+MAN1=		hanterm.1 resize.1
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/hanterm ${PREFIX}/bin
-	@${INSTALL_DATA} ${WRKSRC}/Hanterm.ad \
-			 ${PREFIX}/lib/X11/app-defaults/Hanterm
-	${MKDIR} ${PREFIX}/share/doc/hanterm-xf
-	${INSTALL_DATA} ${WRKSRC}/hanterm-doc/README.xf \
-			${PREFIX}/share/doc/hanterm-xf
-	${INSTALL_DATA} ${WRKSRC}/hanterm-doc/README.xf.old \
-			${PREFIX}/share/doc/hanterm-xf
+pre-install:
+	${MKDIR} ${PREFIX}/share/hangul_keyboard
+	${CAT} ${FILESDIR}/defaultfont.ad >> ${WRKSRC}/Hanterm.ad
 
 .include <bsd.port.mk>
