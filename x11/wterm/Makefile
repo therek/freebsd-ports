@@ -2,7 +2,7 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.11 2000/08/07 17:27:54 cpiazza Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.12 2000/08/28 06:49:00 cpiazza Exp $
 #
 
 PORTNAME=	wterm
@@ -13,7 +13,7 @@ MASTER_SITES= 	http://wm.current.nu/files/ \
 		ftp://ftp.vision.net.au/ftp7/linuxberg/files/x11/system/ \
 		ftp://ftp.cadvision.com/pub/linuxberg/files/x11/system/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	treif@mayn.de
 
 BUILD_DEPENDS=	${X11BASE}/lib/libWINGs.a:${PORTSDIR}/x11-wm/windowmaker
 
