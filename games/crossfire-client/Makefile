@@ -3,7 +3,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.31 2000/02/08 09:26:21 peter Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.32 2000/02/20 17:01:01 andreas Exp $
 #
 
 DISTNAME=	crossfire-${MAJ}.${MIN}.${PL}
@@ -70,10 +70,10 @@ post-install:
 	@${CHMOD} 664 ${CFDIR}/lib/forbid
 	@${TOUCH} ${CFDIR}/lib/players/.keep_me
 	@${TOUCH} ${CFDIR}/lib/unique-items/.keep_me
-	@${CHOWN} -R games.games ${CFDIR}
+	@${CHOWN} -R root.games ${CFDIR}
 	@${CHMOD} 0664 ${CFDIR}/lib/highscore
-	@${CHOWN} games.games ${PREFIX}/bin/crossfire
-	@${CHMOD} 6555 ${PREFIX}/bin/crossfire
+	@${CHOWN} root.games ${PREFIX}/bin/crossfire
+	@${CHMOD} 2555 ${PREFIX}/bin/crossfire
 	${ECHO} "Note: to start crossfire in clientmode"
 	${ECHO} "	crossfire -xpm"
 	${ECHO} "Note: don't forget to update ${PREFIX}/etc/rplay.conf"
