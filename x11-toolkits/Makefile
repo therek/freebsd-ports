@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.148 2001/08/06 15:15:44 sada Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.149 2001/09/03 18:41:37 knu Exp $
 #
 
     SUBDIR += FWF
@@ -13,6 +13,7 @@
     SUBDIR += eazel-themes
     SUBDIR += eel
     SUBDIR += engradient
+    SUBDIR += fl_editor
     SUBDIR += fltk
     SUBDIR += fltk-xunicode
     SUBDIR += flvw
