@@ -2,29 +2,35 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/games/kdegames2/Makefile,v 1.39 2000/05/17 07:28:05 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdegames
-PORTVERSION=	1.90
+PORTVERSION=	20000724A
 CATEGORIES=	games kde
-MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
+MASTER_SITES=	$(MASTER_SITE_LOCAL)
+MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
+LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
+		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
-BROKEN=		"Does not compile/run properly"
-
+WRKSRC=		${WRKDIR}/kdegames
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
-USE_QT2=	yes
-GNU_CONFIGURE=	yes
+USE_NEWGCC=	yes
+USE_AUTOCONF=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \
-		--with-qt-libraries=${X11BASE}/lib
-CONFIGURE_ENV+=	MOC="${MOC}"
+		--with-qt-libraries=${X11BASE}/lib \
+		--with-extra-libs=${LOCALBASE}/lib
+CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
+		LIBS="-Wl,-export-dynamic -L${X11BASE}/lib -lqt2 -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++" \
+		CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include"
 USE_GMAKE=	yes
+
+pre-install:
+	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>

@@ -2,30 +2,41 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11-toolkits/kde-qt-addon/Makefile,v 1.3 2000/06/16 21:52:33 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kde-qt-addon
-PORTVERSION=	1.90
+PORTVERSION=	20000724A
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	will@FreeBSD.org
 
-BROKEN=		"Does not compile/run properly"
+LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22
 
+WRKSRC=		${WRKDIR}/${PORTNAME}
+MOC?=		${X11BASE}/bin/moc2
 SOMAJOR=	4
 SOMINOR=	0
 USE_BZIP2=	yes
-USE_QT2=	yes
+USE_NEWGCC=	yes
 INSTALLS_SHLIB=	yes
-GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
 		--with-qt-includes=${X11BASE}/include/qt2 \
-		--with-qt-libraries=${X11BASE}/lib
+		--with-qt-libraries=${X11BASE}/lib \
+		--with-extra-libs=${LOCALBASE}/lib
+CONFIGURE_ENV+=	LIBS="-Wl,-export-dynamic -L${X11BASE}/lib -L${LOCALBASE}/lib -lqt2 -ljpeg -lgcc -lstdc++" \
+		CPPFLAGS="-I${X11BASE}/include -I${LOCALBASE}/include" \
+		MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2"
 USE_GMAKE=	yes
 MAKE_ENV+=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}"
-PLIST_SUB+=	LIBVER="${SOMAJOR}.${SOMINOR}"
+
+pre-configure:
+	${PERL} -pi -e "s@version-info 3:0@version-info ${SOMAJOR}:${SOMINOR}@g" ${WRKSRC}/kde-qt-addon/Makefile.in
+
+pre-install:
+	@(find ${WRKSRC} -name CVS | xargs rm -rf)
 
 .include <bsd.port.mk>
