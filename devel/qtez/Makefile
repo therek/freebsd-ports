@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/qtez/Makefile,v 1.14 2000/03/29 09:17:44 will Exp $
+# $FreeBSD: ports/devel/qtez/Makefile,v 1.15 2000/04/14 05:44:19 asami Exp $
 #
 
 PORTNAME=	qtez
@@ -17,6 +17,8 @@ USE_X_PREFIX=	yes
 USE_QT=		yes
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/qtez_src
+
+BROKEN=		"Compiler error"
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKDIR}/qtez_src/bin/qtez ${PREFIX}/bin
