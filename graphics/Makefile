@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.150 1999/10/07 03:26:47 cpiazza Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.151 1999/10/14 05:05:08 nakai Exp $
 #
 
     SUBDIR += 4va
@@ -19,6 +19,7 @@
     SUBDIR += dore
     SUBDIR += electriceyes
     SUBDIR += enfle
+    SUBDIR += eog
     SUBDIR += eterm-bg
     SUBDIR += fbm
     SUBDIR += flashplayer
