@@ -2,7 +2,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.17 2000/04/08 22:03:33 mharo Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.18 2000/06/01 16:10:22 ade Exp $
 #
 
 PORTNAME=	gnomepim
@@ -16,15 +16,34 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
+.if defined(WITH_GNOMEPILOT)
+LIB_DEPENDS+=	gpilotd.0:${PORTSDIR}/palm/gnomepilot
+PILOTINC=	"-I${LOCALBASE}/pilot/include"
+PILOTLIB=	"-L${LOCALBASE}/pilot/lib"
+.else
+PILOTARGS=	--without-pisock --disable-pilotlinktest
+EXTRA_PATCHES=	${FILESDIR}/patch.nopilot
+.endif
+
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		--datadir=${PREFIX}/share/gnome ${PILOTARGS}
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include ${PILOTINC}" \
 		GTK_CONFIG="${GTK_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib ${PILOTLIB}"
+
+.if !defined(WITH_GNOMEPILOT)
+pre-extract:
+	@${ECHO} "You can add gnomepilot support by defining WITH_GNOMEPILOT"
+.endif
+
+.if defined(WITH_GNOMEPILOT)
+post-install:
+	@${CAT} ${PKGDIR}/PLIST.pilot >> ${TMPPLIST}
+.endif
 
 .include <bsd.port.mk>
