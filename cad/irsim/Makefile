@@ -2,13 +2,13 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/irsim/Makefile,v 1.11 2000/04/08 23:19:59 mharo Exp $
+# $FreeBSD: ports/cad/irsim/Makefile,v 1.12 2001/01/27 05:40:08 will Exp $
 #
 
 PORTNAME=	irsim
-PORTVERSION=	9.4.1
+PORTVERSION=	9.5
 CATEGORIES=	cad
-MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/WRL/projects/magic/6.5/
+MASTER_SITES=	http://mos.stanford.edu/group/magic/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
