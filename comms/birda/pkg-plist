@@ -1,8 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/comms/birda/pkg-plist,v 1.1 2002/01/10 02:09:25 sumikawa Exp $
 bin/ircomm
 bin/irobex
 bin/irs
+bin/mkobexcard
 bin/mkobexdate
 bin/mkobexmemo
+bin/mkobexpdb
 bin/mkobextel
 bin/mkobextodo
