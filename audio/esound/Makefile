@@ -3,13 +3,13 @@
 # Date created:		19 July 1998
 # Whom:			Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/esound/Makefile,v 1.14 1999/10/08 02:25:53 nakai Exp $
+# $FreeBSD: ports/audio/esound/Makefile,v 1.15 1999/11/09 09:52:56 nakai Exp $
 #
 
 DISTNAME=	esound-0.2.16
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/esound
+MASTER_SITE_SUBDIR=	stable/sources/esound
 
 MAINTAINER=	vanilla@FreeBSD.org
 

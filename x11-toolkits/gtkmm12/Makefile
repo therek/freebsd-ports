@@ -3,14 +3,14 @@
 # Date created:        11 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.16 1999/10/14 09:31:28 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/gtk--/Makefile,v 1.17 1999/10/18 05:19:16 nakai Exp $
 #
 
 DISTNAME=	Gtk---1.0.3
 PKGNAME=	gtk---1.0.3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/Gtk--
+MASTER_SITE_SUBDIR=	stable/sources/Gtk--
 
 MAINTAINER=	nakai@FreeBSD.org
 

@@ -3,13 +3,13 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.12 1999/10/14 09:25:24 nakai Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.13 1999/10/28 02:45:23 nakai Exp $
 #
 
 DISTNAME=	ggv-0.70
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/ggv
+MASTER_SITE_SUBDIR=	stable/sources/ggv
 
 MAINTAINER=	nakai@FreeBSD.org
 

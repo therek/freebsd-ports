@@ -3,13 +3,13 @@
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.24 1999/10/08 05:47:25 nakai Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.25 1999/10/09 18:42:04 vanilla Exp $
 #
 
 DISTNAME=	ORBit-0.5.0
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/ORBit
+MASTER_SITE_SUBDIR=	stable/sources/ORBit
 
 MAINTAINER=	nakai@FreeBSD.org
 

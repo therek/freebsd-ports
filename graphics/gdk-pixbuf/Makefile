@@ -3,13 +3,13 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.3 1999/10/27 10:34:28 nakai Exp $
+# $FreeBSD: ports/graphics/gdk-pixbuf/Makefile,v 1.4 1999/11/16 11:50:37 nakai Exp $
 #
 
 DISTNAME=	gdk-pixbuf-0.4
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/gdk-pixbuf
+MASTER_SITE_SUBDIR=	stable/sources/gdk-pixbuf
 
 MAINTAINER=	ade@lovett.com
 

@@ -3,14 +3,14 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.10 1999/08/25 04:35:29 obrien Exp $
+# $FreeBSD: ports/audio/gnomeaudio/Makefile,v 1.11 1999/08/31 06:40:30 mharo Exp $
 #
 
 DISTNAME=	gnome-audio-1.0.0
 PKGNAME=	gnomeaudio-1.0.0
 CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/gnome-audio
+MASTER_SITE_SUBDIR=	stable/sources/gnome-audio
 
 MAINTAINER=	vanilla@FreeBSD.org
 

@@ -3,14 +3,14 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.10 1999/10/14 03:43:55 nakai Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.11 1999/10/27 10:26:45 nakai Exp $
 #
 
 DISTNAME=	gnome-print-0.10
 PKGNAME=	gnomeprint-0.10
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/gnome-print
+MASTER_SITE_SUBDIR=	stable/sources/gnome-print
 
 MAINTAINER=	nakai@FreeBSD.org
 

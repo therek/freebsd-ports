@@ -3,13 +3,13 @@
 # Date Created:				23 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.16 1999/10/08 03:30:00 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines/Makefile,v 1.17 1999/10/09 19:31:03 vanilla Exp $
 #
 
 DISTNAME=	gtk-engines-0.8
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/gtk-engines
+MASTER_SITE_SUBDIR=	stable/sources/gtk-engines
 
 MAINTAINER=	vanilla@FreeBSD.org
 

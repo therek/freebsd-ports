@@ -3,14 +3,14 @@
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.9 1999/10/14 09:27:50 nakai Exp $
+# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.10 1999/11/09 09:55:31 nakai Exp $
 #
 
 DISTNAME=	mc-4.5.41
 PKGNAME=	gnomemc-4.5.41
 CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/mc
+MASTER_SITE_SUBDIR=	stable/sources/mc
 
 MAINTAINER=	reg@shale.csir.co.za
 

@@ -3,13 +3,13 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.34 1999/08/31 06:48:19 mharo Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.35 1999/10/09 18:50:34 vanilla Exp $
 #
 
 DISTNAME=	mc-4.5.40
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	sources/mc
+MASTER_SITE_SUBDIR=	stable/sources/mc
 
 MAINTAINER=	reg@shale.csir.co.za
 
