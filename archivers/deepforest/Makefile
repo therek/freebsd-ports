@@ -2,13 +2,14 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.3 2000/04/08 23:17:41 mharo Exp $
+# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.4 2000/04/13 08:54:11 knu Exp $
 #
 
-PORTNAME=	DeepForest
+PORTNAME=	deepforest
 PORTVERSION=	1.0a
 CATEGORIES=	${CATEGORY_LIST}
 MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
+DISTNAME=	DeepForest-${PORTVERSION}
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
