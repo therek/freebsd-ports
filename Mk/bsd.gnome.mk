@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.67 2004/05/22 20:56:49 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.68 2004/05/22 21:04:52 pav Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -386,7 +386,7 @@ libgsf_USE_GNOME_IMPL=		glib20 libxml2
 
 libgsf_gnome_LIB_DEPENDS=	gsf-gnome-1.10:${PORTSDIR}/devel/libgsf-gnome
 libgsf_gnome_DETECT=		${LOCALBASE}/libdata/pkgconfig/libgsf-gnome-1.pc
-libgsf_gnome_USE_GNOME_IMPL=	gnomevfs2 libbonobo
+libgsf_gnome_USE_GNOME_IMPL=	libgsf gnomevfs2
 
 pygtk2_DETECT=			${PYTHON_SITELIBDIR}/gtk-2.0/gtk/__init__.py
 pygtk2_BUILD_DEPENDS=	${pygtk2_DETECT}:${PORTSDIR}/x11-toolkits/py-gtk2
