@@ -2,11 +2,11 @@
 # Date created:         11 Jun 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/gnumail/Makefile,v 1.1 2001/06/28 13:04:14 tg Exp $
+# $FreeBSD: ports/mail/gnumail/Makefile,v 1.2 2001/08/09 11:06:24 tg Exp $
 #
 
 PORTNAME=	gnumail
-PORTVERSION=	0.5.0
+PORTVERSION=	0.6.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.collaboration-world.com/gnumail/
 DISTNAME=	GNUMail
