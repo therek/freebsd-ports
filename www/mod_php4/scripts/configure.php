@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.182 2003/02/24 02:26:55 edwin Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.183 2003/02/24 02:56:37 edwin Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -21,6 +21,7 @@ GD1		"GD 1.x library support" OFF \
 GD2		"GD 2.x library support" OFF \
 zlib		"zlib library support" ON \
 bzip2		"bzip2 library support" OFF \
+cracklib	"cracklib dict support" OFF \
 mcrypt		"Encryption support" OFF \
 mhash		"Crypto-hashing support" OFF \
 pdflib		"pdflib support" OFF \
@@ -131,6 +132,10 @@ while [ "$1" ]; do
 				echo "LIB_DEPENDS+=	bz2.1:\${PORTSDIR}/archivers/bzip2"
 			fi
 			echo "CONFIGURE_ARGS+=--with-bz2=${BZ2PREFIX}"
+			;;
+		\"cracklib\")
+			echo "BUILD_DEPENDS+=   \${LOCALBASE}/lib/libcrack.a:\${PORTSDIR}/security/cracklib"
+			echo "CONFIGURE_ARGS+=--with-crack=\${LOCALBASE}"
 			;;
 		\"mcrypt\")
 			echo "LIB_DEPENDS+=	mcrypt.8:\${PORTSDIR}/security/libmcrypt"
