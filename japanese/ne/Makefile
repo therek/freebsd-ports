@@ -3,22 +3,23 @@
 # Date created:        15 Nov 1999
 # Whom:                SASAKI Shunsuke <ele@pop17.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/ne/Makefile,v 1.1.1.1 1999/11/17 22:05:17 sada Exp $
+# $FreeBSD: ports/japanese/ne/Makefile,v 1.2 1999/11/18 21:13:26 sada Exp $
 #
 
-DISTNAME=      ne-3.00pre17
-PKGNAME=       ja-ne-3.00p17
+DISTNAME=	ne-3.00pre17
+PKGNAME=	ja-ne-3.00p17
 CATEGORIES=	japanese editors
-MASTER_SITES= http://www3.justnet.ne.jp/~ele/
+MASTER_SITES=	http://www3.justnet.ne.jp/~ele/
 
-MAINTAINER=    ele@pop17.odn.ne.jp
+MAINTAINER=	ele@pop17.odn.ne.jp
 
-WRKSRC=        ${WRKDIR}/ne
-GNU_CONFIGURE= yes
-MAN1=          ne.1
-MANLANG=       ja
-MANCOMPRESSED= no
-DOCS=          BUGS.jp HISTORY.jp INSTALL.jp README.jp
+WRKSRC=		${WRKDIR}/ne
+GNU_CONFIGURE=	yes
+MAN1=		ne.1
+MANLANG=	ja
+MANCOMPRESSED=	no
+DOCS=		BUGS.jp HISTORY.jp INSTALL.jp README.jp
+MAKE_ENV=	LANG=${MANLANG}
 
 post-install:
 	strip ${PREFIX}/bin/ne
