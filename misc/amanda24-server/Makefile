@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.35 2001/01/31 12:24:07 jeh Exp $
+# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.36 2001/02/01 01:20:10 jeh Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -82,6 +82,14 @@ CONFIGURE_ARGS+=	--with-tape-device=${AMANDA_TAPE}
 
 .if defined (AMANDA_CONFIG)
 CONFIGURE_ARGS+=	--with-config=${AMANDA_CONFIG}
+.endif
+
+#
+# Before 4.0, pre-CAM scsiio.h existed
+.if ${OSVERSION} < 400000
+PLIST_SUB+=	SCSICHG='@comment '
+.else
+PLIST_SUB+=	SCSICHG=''
 .endif
 
 # amanda24-client part
