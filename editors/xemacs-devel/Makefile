@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.40 2000/01/17 20:59:15 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.41 2000/02/17 21:37:52 gj Exp $
 #
 
 DISTNAME=	xemacs-${XEMACS_VER}
@@ -37,8 +37,8 @@ CONFIGURE_ARGS?=${XEMACS_ARCH} --prefix=${PREFIX} \
 		--with-clash-detection \
 		--lockdir=/var/run/emacs/lock \
 		--with-sound=native \
-		--site-includes=${SITE_INCLUDES} \
-		--site-libraries=${SITE_LIBRARIES} \
+		--site-includes=${PREFIX}/include \
+		--site-libraries=${PREFIX}/lib \
 		--with-session=yes \
 		--with-png=yes \
 		--with-tiff=yes \
@@ -98,17 +98,3 @@ post-install::
 .endif
 
 .include <bsd.port.mk>
-
-# this makes it easier to test using PREFIX != LOCALBASE. Do not do
-# this on bento. This has to go here because PREFIX and LOCALBASE are
-# normally defined in bsd.port.mk.
-
-.if !defined(PACKAGE_BUILDING)
-.if ${PREFIX} == ${LOCALBASE}
-SITE_INCLUDES=	${PREFIX}/include
-SITE_LIBRARIES=	${PREFIX}/lib
-.else
-SITE_INCLUDES=	"${PREFIX}/include ${LOCALBASE}/include"
-SITE_LIBRARIES=	"${PREFIX}/lib ${LOCALBASE}/lib"
-.endif
-.endif
