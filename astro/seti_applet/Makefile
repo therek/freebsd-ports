@@ -2,11 +2,12 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.3 2000/10/05 07:10:20 reg Exp $
+# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.4 2000/10/12 15:47:12 kevlo Exp $
 #
 
 PORTNAME=	seti_applet
 PORTVERSION=	0.3.2
+PORTREVISION=	1
 CATEGORIES=	astro gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/_/-/}
