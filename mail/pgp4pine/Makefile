@@ -2,13 +2,15 @@
 # Date created:		29 February 2000
 # Whom:			Holger Lamm <holger@flatline.de>
 #
-# $FreeBSD: ports/mail/pgp4pine/Makefile,v 1.4 2000/09/18 13:51:41 jedgar Exp $
+# $FreeBSD: ports/mail/pgp4pine/Makefile,v 1.5 2001/04/17 11:26:26 roam Exp $
 #
 
 PORTNAME=	pgp4pine
 PORTVERSION=	1.76
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	http://pgp4pine.flatline.de/
+DISTNAME=	${PORTNAME}-${PORTVERSION}-1
 
 MAINTAINER=	holger@flatline.de
 
