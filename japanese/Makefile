@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.270 2000/03/26 20:11:50 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.271 2000/04/14 22:27:00 knu Exp $
 #
 
     SUBDIR += Canna
@@ -194,6 +194,7 @@
     SUBDIR += paledit
     SUBDIR += perl5
     SUBDIR += pgp.language
+    SUBDIR += pine
     SUBDIR += plain2
     SUBDIR += plan
     SUBDIR += platex-common
