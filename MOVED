@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.81 2003/03/24 21:07:27 olgeni Exp $
+# $FreeBSD: ports/MOVED,v 1.82 2003/03/28 12:12:07 sumikawa Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -188,3 +188,4 @@ astro/kstars|misc/kdeedu3|2003-03-02|kstars included in kdeedu package
 devel/ruby-testunit||2003-03-03|integrated into ruby16-shim-ruby18
 graphics/qdraw||2003-03-24|obsolete
 x11-fm/rox-base||2003-03-24|obsolete
+graphics/xvid|multimedia/xvid|2003-03-30|new category
