@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.240 1999/10/16 07:09:38 taoka Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.241 1999/10/28 19:40:56 dillon Exp $
 #
 
     SUBDIR += 221upgrade
@@ -25,7 +25,6 @@
     SUBDIR += cmatrix
     SUBDIR += colorls
     SUBDIR += colortail
-    SUBDIR += cpdup
     SUBDIR += crosspad
     SUBDIR += cstream
     SUBDIR += cwish
