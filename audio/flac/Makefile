@@ -3,7 +3,7 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.1 2001/03/18 05:08:04 ijliao Exp $
+# $FreeBSD: ports/audio/flac/Makefile,v 1.2 2001/04/03 06:18:44 ijliao Exp $
 #
 
 PORTNAME=	flac
@@ -19,8 +19,6 @@ MAINTAINER=	ijliao@FreeBSD.org
 BUILD_DEPENDS+=	xmms-config:${PORTSDIR}/audio/xmms
 LIB_DEPENDS+=	xmms.1:${PORTSDIR}/audio/xmms
 .endif
-
-ONLY_FOR_ARCHS=	i386
 
 USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
