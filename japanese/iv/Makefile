@@ -2,11 +2,12 @@
 # Date created:		23.Feb.1996
 # Whom:			sanpei@yy.cs.keio.ac.jp
 #
-# $FreeBSD: ports/japanese/iv/Makefile,v 1.17 2000/08/03 14:28:21 sanpei Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iv
 PORTVERSION=	3.1
+PORTREVISION=	1
 CATEGORIES=	japanese graphics
 MASTER_SITES=	ftp://interviews.stanford.edu/pub/ \
 		${MASTER_SITE_PORTS_JP}
