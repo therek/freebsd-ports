@@ -2,7 +2,7 @@
 # Date created:		28 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.13 2001/08/18 06:04:35 ijliao Exp $
+# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.14 2001/08/18 08:24:28 knu Exp $
 #
 
 PORTNAME=	rblcheck
@@ -12,7 +12,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	leeym@leeym.com
 
 post-configure:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.rbl
