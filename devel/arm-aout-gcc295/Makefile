@@ -3,20 +3,21 @@
 # Date created:		22 Aug 2000
 # Whom:			Paul Becke <pbecke@javagear.com>
 #
-# $FreeBSD: ports/devel/arm-aout-gcc295/Makefile,v 1.1 2001/01/01 17:27:11 obrien Exp $
+# $FreeBSD: ports/devel/arm-aout-gcc295/Makefile,v 1.2 2001/02/26 04:06:36 steve Exp $
 #
 
 PORTNAME=	arm-aout-gcc295
 PORTVERSION=	2.95.2
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	gcc
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR=	gcc/releases/${DISTNAME}
 DISTNAME=	gcc-2.95.2
 
 MAINTAINER=	pbecke@javagear.com
 
 EXTRACT_AFTER_ARGS=	| ${TAR} -xf - -T ${FILESDIR}/tlist -X ${FILESDIR}/xlist
 
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=arm-aout --with-gnu-as --with-gnu-ld --with-newlib
