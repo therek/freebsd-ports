@@ -2,11 +2,11 @@
 # Date created:				25 March 2000
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.2 2000/06/17 02:36:38 will Exp $
+# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.3 2001/03/01 06:38:25 vanilla Exp $
 #
 
 PORTNAME=	Net-ext
-PORTVERSION=	0.931
+PORTVERSION=	0.932
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
