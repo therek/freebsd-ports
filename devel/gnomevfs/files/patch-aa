@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/devel/gnomevfs/files/patch-aa,v 1.10 2002/01/24 15:09:56 sobomax Exp $
 
 --- configure.orig	Thu Jan 24 10:25:14 2002
 +++ configure	Thu Jan 24 10:38:00 2002
@@ -41,7 +41,7 @@ $FreeBSD$
  else
    
 -		LDFLAGS="$LDFLAGS -L$with_openssl_libs -lssl -lcrypto -ldl"
-+		LDFLAGS="$LDFLAGS -L$with_openssl_libs -lssl -lcrypto"
++		LDFLAGS="$LDFLAGS -L$with_openssl_libs -lssl -lcryptofoo"
  		cat > conftest.$ac_ext <<EOF
  #line 10107 "configure"
  #include "confdefs.h"
@@ -50,7 +50,7 @@ $FreeBSD$
  
  		msg_openssl="yes"
 -		OPENSSL_LDFLAGS="-L$with_openssl_libs -lssl -lcrypto -ldl"
-+		OPENSSL_LDFLAGS="-L$with_openssl_libs -lssl -lcrypto"
++		OPENSSL_LDFLAGS="-L$with_openssl_libs -lssl -lcryptofoo"
  		
  
  if true; then
