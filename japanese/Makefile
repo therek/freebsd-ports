@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.317 2000/11/30 15:06:54 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.318 2000/11/30 15:07:30 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -61,6 +61,7 @@
     SUBDIR += expect
     SUBDIR += flower-fpw
     SUBDIR += freepwing
+    SUBDIR += fumeikai-fpw
     SUBDIR += gal
     SUBDIR += gawk
     SUBDIR += gd
