@@ -2,7 +2,7 @@
 # Date created:			5 Febrary 2000
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms-liveice/Makefile,v 1.3 2000/04/08 21:24:57 mharo Exp $
+# $FreeBSD: ports/audio/xmms-liveice/Makefile,v 1.4 2000/05/29 03:55:56 steve Exp $
 #
 
 PORTNAME=	xmms-liveice
@@ -17,6 +17,8 @@ LIB_DEPENDS=	xmms.1:${PORTSDIR}/audio/xmms
 RUN_DEPENDS=	${LOCALBASE}/bin/lame:${PORTSDIR}/audio/lame
 
 WRKSRC=		${WRKDIR}/LiveIce-1.0.0
+
+USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
