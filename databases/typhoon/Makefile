@@ -2,7 +2,7 @@
 # Date created:		Wed Dec 11 15:16:19 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/databases/typhoon/Makefile,v 1.14 2000/11/21 15:46:35 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	typhoon
@@ -23,6 +23,10 @@ MAN3=	d_close.3 d_crget.3 d_crread.3 d_crset.3 d_dbdpath.3 d_dbfpath.3 \
 	d_keyfind.3 d_keyfrst.3 d_keylast.3 d_keynext.3 d_keyprev.3 \
 	d_keyread.3 d_open.3 d_recfrst.3 d_reclast.3 d_recnext.3 d_recprev.3 \
 	d_recread.3 d_recwrite.3 d_setfiles.3
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/util/dbdview.c
 
 post-install:
 .for file in ${MAN1}
