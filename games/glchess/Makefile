@@ -1,12 +1,12 @@
-# New ports collection makefile for:	gleyes
+# New ports collection makefile for:	glchess
 # Date created:				Wed Jul 18 08:35:56 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/games/glchess/Makefile,v 1.1 2001/07/29 23:33:22 lioux Exp $
+# $FreeBSD: ports/games/glchess/Makefile,v 1.2 2001/08/20 15:59:34 kevlo Exp $
 #
 
 PORTNAME=	glchess
-PORTVERSION=	0.3.4
+PORTVERSION=	0.3.5
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
