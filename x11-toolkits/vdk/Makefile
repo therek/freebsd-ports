@@ -2,13 +2,13 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.4 2000/06/16 08:19:40 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/vdk/Makefile,v 1.5 2000/06/16 21:52:29 asami Exp $
 #
 
 PORTNAME=	vdk
-PORTVERSION=	1.0.6
+PORTVERSION=	1.2.1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://www.programmers.net/artic/Motta/vdk/
+MASTER_SITES=	http://download.sourceforge.net/vdkbuilder/
 
 MAINTAINER=	nakai@FreeBSD.org
 
