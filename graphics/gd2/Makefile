@@ -3,7 +3,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.16 1999/12/27 21:26:40 steve Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.17 2000/01/28 04:01:59 billf Exp $
 #
 
 DISTNAME=       gd-1.7.3
@@ -13,11 +13,19 @@ MASTER_SITES=   http://www.boutell.com/gd/http/ \
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
-		ttf.4:${PORTSDIR}/print/freetype \
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+.if defined(WANT_X11)
+LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
 		Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_XLIB=	YES
+.endif
+
+pre-fetch:
+.if !defined(WANT_X11)
+	@${ECHO} -n "If you want to compile in X support use "
+	@${ECHO} "'make -DWANT_X11' instead"
+.endif
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/gd
