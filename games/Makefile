@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.239 1999/12/23 21:40:18 jedgar Exp $
+# $FreeBSD: ports/games/Makefile,v 1.240 1999/12/24 06:38:20 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -13,6 +13,7 @@
     SUBDIR += angband
     SUBDIR += antipolix
     SUBDIR += awele
+    SUBDIR += baduki
     SUBDIR += battalion
     SUBDIR += battleball
     SUBDIR += biorythm
