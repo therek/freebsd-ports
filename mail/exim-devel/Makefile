@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.95 2001/08/27 13:23:52 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.96 2001/09/11 11:06:53 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -17,7 +17,7 @@ MAINTAINER=	sheldonh@FreeBSD.org
 
 USE_BZIP2=	yes
 
-.if !defined(NOPORTDOCS)
+.if defined(NOPORTDOCS)
 PKGMESSAGE=	${FILESDIR}/POST-INSTALL-NOTES
 .endif
 
