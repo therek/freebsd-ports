@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.469 2001/03/14 16:24:34 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.470 2001/03/14 23:18:11 vanilla Exp $
 #
 
     SUBDIR += ElectricFence
@@ -405,6 +405,7 @@
     SUBDIR += sparc-rtems-gcj
     SUBDIR += sparc-rtems-gdb
     SUBDIR += sparc-rtems-objc
+    SUBDIR += st
     SUBDIR += stlport
     SUBDIR += str
     SUBDIR += swarm
