@@ -3,7 +3,7 @@
 # Date created:         30 Aug 1999
 # Whom:                 saper@system.pl
 #
-# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.1.1.1 1999/09/06 19:39:30 cpiazza Exp $
+# $FreeBSD: ports/graphics/gif2png/Makefile,v 1.2 1999/10/16 19:55:45 cpiazza Exp $
 #
 
 DISTNAME=       gif2png-1.1.1
@@ -16,6 +16,10 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" CPPFLAGS="-I${LOCALBASE}/include"
+
+pre-build:
+		mv ${WRKSRC}/web2png ${WRKSRC}/web2png_prepatch
+		$(SED) -e '1s#/usr/bin/python#/usr/bin/env python#' ${WRKSRC}/web2png_prepatch > ${WRKSRC}/web2png
 
 MAN1=		gif2png.1 web2png.1
 
