@@ -2,13 +2,14 @@
 # Date created:		29 Mar 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/pilrc/Makefile,v 1.10 2001/03/13 02:59:31 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pilrc
-PORTVERSION=	2.8p5
+PORTVERSION=	2.9p9
 CATEGORIES=	palm
-MASTER_SITES=	http://www.hig.se/~ardiri/download/palm/
+MASTER_SITES=	http://www.ardiri.com/download/files/palm/
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
