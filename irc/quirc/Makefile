@@ -3,13 +3,12 @@
 # Date created:		21 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/quirc/Makefile,v 1.5 1999/08/25 06:12:52 obrien Exp $
+# $FreeBSD: ports/irc/quirc/Makefile,v 1.6 1999/11/28 18:31:40 steve Exp $
 #
 
 DISTNAME=	quirc-0.9.79
 CATEGORIES=	irc tk82
-MASTER_SITES=	http://www.quirc.org/ \
-		http://patearl.powersurfr.com/quirc/
+MASTER_SITES=	http://patearl.powersurfr.com/quirc/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
