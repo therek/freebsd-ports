@@ -3,7 +3,7 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.10 1999/08/31 06:49:17 mharo Exp $
+# $FreeBSD: ports/net/rwhois/Makefile,v 1.11 2000/02/27 09:00:31 reg Exp $
 #
 
 DISTNAME=	rwhois-1.0B9.2
@@ -25,10 +25,14 @@ MAN8=		rmkdbindex.8 rwhoisd.8
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 400011
 PLIST=		${WRKDIR}/PLIST
+.if ${OSVERSION} < 400011
 pre-install:
 	@${SED} -e "/libc.so.4/d" \
+		${PKGDIR}/PLIST > ${PLIST}
+.else
+pre-install:
+	@${SED} -e "/libc.so.3/d" \
 		${PKGDIR}/PLIST > ${PLIST}
 .endif
 
