@@ -1,18 +1,19 @@
-# New ports collection makefile for: ack
+# New ports collection makefile for:	ack
 # Date created:		21 Jul 1998
 # Whom:			Masanori Kiriake <seiken@nbs.co.jp>
 #
-# $FreeBSD: ports/japanese/ack/Makefile,v 1.3 1999/08/25 05:23:28 obrien Exp $
+# $FreeBSD: ports/japanese/ack/Makefile,v 1.4 2000/04/11 14:12:50 knu Exp $
 
 PORTNAME=	ack
 PORTVERSION=	1.39
 CATEGORIES=	japanese converters
-MASTER_SITES=	ftp://ftp.tohoku.ac.jp/pub/unix/ack/
+MASTER_SITES=	ftp://ftp.vector.co.jp/pack/unix/util/text/conv/code/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	seiken@ARGV.AC
 
-ALL_TARGET=     ack
+ALL_TARGET=	ack
 
 MANLANG=	ja
 MAN1=		ack.1
