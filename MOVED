@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.471 2004/07/06 12:13:20 vs Exp $
+# $FreeBSD: ports/MOVED,v 1.472 2004/07/09 12:35:02 tobez Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1190,3 +1190,4 @@ www/p5-Flash-FLAP|www/p5-AMF-Perl|2004-07-04|renamed
 net/gnomenetwork|net/gnomenettool|2004-07-05|gnomenettool replaces the unmaintained gnomenetwork
 misc/cfe||2004-07-06|no longer exists
 devel/p5-WWW-Mechanize-FormFiller|www/p5-WWW-Mechanize-FormFiller|2004-07-09|moved to correct category (www)
+editors/moleskine||2004-07-09|project officially dead for last 1.5 years
