@@ -2,7 +2,7 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.13 2001/03/29 23:29:04 mharo Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.14 2001/07/22 04:10:37 dwcjr Exp $
 #
 
 PORTNAME=	nap
@@ -17,9 +17,10 @@ GNU_CONFIGURE=	yes
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/nap
-	${INSTALL_DATA} ${WRKSRC}/NEWS ${PREFIX}/share/doc/nap
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/nap
+	@${MKDIR} ${DOCSDIR}
+.for file in NEWS README doc/napster.txt doc/userguide.html
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
+.endfor
 .endif
 
 .include <bsd.port.mk>
