@@ -2,15 +2,15 @@
 # Date created:				Fri May  4 13:10:11 CEST 2001
 # Whom:					Stijn Hoop <stijn@win.tue.nl>
 #
-# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.1 2001/05/20 02:48:11 will Exp $
+# $FreeBSD: ports/emulators/zsnes/Makefile,v 1.2 2001/05/21 16:20:58 olgeni Exp $
 #
 
 PORTNAME=	zsnes
-PORTVERSION=	1.26
+PORTVERSION=	1.28
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	zsnesv${PORTVERSION}src
+DISTNAME=	zsnes-${PORTVERSION}src
 
 MAINTAINER=	stijn@win.tue.nl
 
