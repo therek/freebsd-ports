@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.402 2001/09/01 00:45:13 petef Exp $
+# $FreeBSD: ports/www/Makefile,v 1.403 2001/09/03 18:27:27 knu Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -246,6 +246,7 @@
     SUBDIR += p5-WWW-Babelfish
     SUBDIR += p5-WWW-Robot
     SUBDIR += p5-WWW-Search
+    SUBDIR += p5-WWW-Search-AltaVista
     SUBDIR += p5-WWW-Search-Google
     SUBDIR += p5-libapreq
     SUBDIR += p5-libservlet
