@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.164 2003/07/19 18:13:44 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.165 2003/08/04 01:21:05 kris Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -236,6 +236,8 @@ MASTER_SITE_FREEBSD_ORG+=	\
 
 MASTER_SITE_GCC+=	\
 	${MASTER_SITE_SOURCEWARE:S,%SUBDIR%,gcc/&,}  \
+	http://gcc.software-archive.net/%SUBDIR%/ \
+	http://gcc.get-software.com/%SUBDIR%/ \
 	ftp://gcc.gnu.org/pub/gcc/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/gcc/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/lang/gcc/%SUBDIR%/
