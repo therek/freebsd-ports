@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/sysutils/xmbmon/files/patch-testsmb.c,v 1.1 2004/08/02 07:56:24 krion Exp $
 
 --- testsmb.c.orig	Mon Aug  2 09:54:32 2004
 +++ testsmb.c	Mon Aug  2 09:55:00 2004
@@ -17,6 +17,7 @@ $FreeBSD$
  	
  	CloseIO();
 -exit:
+	;	/* dummy statment for gcc 3.4 or after */
  
    } /* endo of Big roop for smb_base candidates */
    exit (0);
