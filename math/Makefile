@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.136 2001/08/11 15:54:38 ijliao Exp $
+# $FreeBSD$
 #
     SUBDIR += yacas
 
@@ -39,6 +39,7 @@
     SUBDIR += guppi
     SUBDIR += hexcalc
     SUBDIR += lapack
+    SUBDIR += libgmp
     SUBDIR += libgmp3
     SUBDIR += libneural
     SUBDIR += libranlib
