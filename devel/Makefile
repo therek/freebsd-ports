@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.495 2001/04/07 04:30:11 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.496 2001/04/07 07:57:19 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -359,6 +359,7 @@
     SUBDIR += projectcenter.app
     SUBDIR += pth
     SUBDIR += pth-devel
+    SUBDIR += ptl
     SUBDIR += py-coro
     SUBDIR += py-functional
     SUBDIR += py-game
