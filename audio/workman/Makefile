@@ -2,7 +2,7 @@
 # Date created:         25 Now 1995
 # Whom:                 Donald Burr <d_burr@ix.netcom.com>
 #
-# $FreeBSD: ports/audio/workman/Makefile,v 1.11 1999/08/25 04:36:20 obrien Exp $
+# $FreeBSD: ports/audio/workman/Makefile,v 1.12 2000/04/08 21:24:46 mharo Exp $
 #
 
 PORTNAME=	workman
@@ -19,5 +19,6 @@ LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 WRKSRC=		${WRKDIR}/workman
 USE_IMAKE=	yes
 MAN1=		workman.1
+MAN5=		workmandb.5
 
 .include <bsd.port.mk>
