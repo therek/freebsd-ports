@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.48 2001/01/16 17:30:26 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mule
@@ -40,8 +40,6 @@ FILESDIR=	${.CURDIR}/../../editors/mule-common/files
 MD5_FILE=	${.CURDIR}/../../editors/mule-common/distinfo
 SCRIPTDIR=	${.CURDIR}/../../editors/mule-common/scripts
 PLIST=		${.CURDIR}/../../editors/mule/pkg-plist
-INSTALL_COOKIE=	${WRKDIR}/.install_done-${PKGNAME}
-PACKAGE_COOKIE=	${WRKDIR}/.package_done-${PKGNAME}
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	LIBDIR="${LIBDIR}"
