@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gno3dtet
-# Version required:	1.0.0
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.2 2000/02/18 19:46:53 cpiazza Exp $
+# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.3 2000/03/22 01:59:06 will Exp $
 #
 
-DISTNAME=	gno3dtet-1.0.0
+PORTNAME=	gno3dtet
+PORTVERSION=	1.0.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://webdat.com/pub/seb/gno3dtet/
 EXTRACT_SUFX=	.tgz

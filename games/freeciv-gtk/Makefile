@@ -1,9 +1,8 @@
 # New ports collection makefile for:	freeciv-gtk
-# Version required:     1.10.0
 # Date created:         29 Feb 2000
 # Whom:                 sheldonh
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/freeciv-gtk/Makefile,v 1.1 2000/02/29 15:25:59 sheldonh Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../freeciv

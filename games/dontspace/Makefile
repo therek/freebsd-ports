@@ -1,12 +1,12 @@
 # New ports collection makefile for:    dontspace
-# Version required:     1.2
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/dontspace/Makefile,v 1.7 1999/08/25 06:03:15 obrien Exp $
+# $FreeBSD: ports/games/dontspace/Makefile,v 1.8 1999/11/28 18:30:54 steve Exp $
 #
 
-DISTNAME=       dontspace-1.2
+PORTNAME=	dontspace
+PORTVERSION=	1.2
 CATEGORIES=     games tk82
 MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dungeon
-# Version required:	1.0
 # Date created:		31 October 1999
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/dungeon/Makefile,v 1.1.1.1 1999/11/26 19:21:21 steve Exp $
 #
 
-DISTNAME=	dungeon-1.0
+PORTNAME=	dungeon
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.gmd.de/if-archive/games/source/
 DISTFILES=	dungn27s.zip dungn32b.zip

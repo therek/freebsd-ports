@@ -1,12 +1,12 @@
-# New ports collection makefile for:	flying-6.20
-# Version required:			6.20
+# New ports collection makefile for:	flying
 # Date created:				12 Jul 1996
 # Whom:					searle
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/flying/Makefile,v 1.5 1999/08/25 06:03:23 obrien Exp $
 #
 
-DISTNAME=	flying-6.20
+PORTNAME=	flying
+PORTVERSION=	6.20
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade

@@ -1,16 +1,16 @@
 # New ports collection makefile for:   gma
-# Version required:	0.5
 # Date created:         22 June 1999
 # Whom:                 Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gma/Makefile,v 1.4 1999/08/29 11:21:01 peter Exp $
 #
 
-DISTNAME=      gma-0.5
-CATEGORIES=    games
-MASTER_SITES=  http://www.student.nada.kth.se/~d92-jwa/code/gma/
+PORTNAME=	gma
+PORTVERSION=	0.5
+CATEGORIES=	games
+MASTER_SITES=	http://www.student.nada.kth.se/~d92-jwa/code/gma/
 
-MAINTAINER=    ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@csie.nctu.edu.tw
 
 GNU_CONFIGURE= yes
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gemdropx
-# Version required:			0.7
 # Date created:				9 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gemdropx/Makefile,v 1.6 2000/03/29 07:17:25 kris Exp $
+# $FreeBSD: ports/games/gemdropx/Makefile,v 1.7 2000/04/02 00:58:14 mharo Exp $
 #
 
-DISTNAME=	gemdropx-0.7
+PORTNAME=	gemdropx
+PORTVERSION=	0.7
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/gemdropx/
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	glasteroids
-# Version required:			1.0
 # Date created:				16 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/glasteroids/Makefile,v 1.4 2000/03/29 07:18:23 kris Exp $
+# $FreeBSD: ports/games/glasteroids/Makefile,v 1.5 2000/03/29 09:02:03 will Exp $
 #
 
-DISTNAME=	Glasteriods
-PKGNAME=	glasteroids-1.0
+PORTNAME=	glasteroids
+PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	http://www.honors.montana.edu/~jjc/Glasteroids/
+DISTNAME=	Glasteriods
 
 MAINTAINER=	will@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	galaxis
-# Version required:			1.1
 # Date created:				30 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/galaxis/Makefile,v 1.3 2000/03/29 07:17:06 kris Exp $
+# $FreeBSD: ports/games/galaxis/Makefile,v 1.4 2000/04/02 00:58:00 mharo Exp $
 #
 
-DISTNAME=	galaxis-1.1
+PORTNAME=	galaxis
+PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
 

@@ -1,17 +1,17 @@
 # New ports collection makefile for:    games
-# Version required:	1.8
 # Date created:         Mon Dec 14 21:03:01 MET 1998
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/doom/Makefile,v 1.17 1999/08/25 06:03:16 obrien Exp $
 #
 
-DISTNAME=	doomsrc
-PKGNAME=	doom-1.8
+PORTNAME=	doom
+PORTVERSION=	1.8
 CATEGORIES=	games
 MASTER_SITES?=	ftp://ftp.idsoftware.com/idstuff/source/ \
 		ftp://ftp.stomped.com/pub/idmirror/idstuff/source/ \
 		ftp://ftp.cdrom.com/pub/idgames/idstuff/source/
+DISTNAME=	doomsrc
 
 MAINTAINER=	jmz@FreeBSD.org
 

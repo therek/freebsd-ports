@@ -1,15 +1,15 @@
 # New ports collection makefile for:	frotz
-# Version required:			2.32
 # Date created:				16 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/frotz/Makefile,v 1.3 1999/08/25 06:03:26 obrien Exp $
+# $FreeBSD: ports/games/frotz/Makefile,v 1.4 2000/03/29 07:17:37 kris Exp $
 #
 
-DISTNAME=		UnixFrotz232R2Std10
-PKGNAME=		frotz-2.32
+PORTNAME=		frotz
+PORTVERSION=		2.32
 CATEGORIES=		games
 MASTER_SITES=		ftp://ftp.gmd.de/if-archive/infocom/interpreters/frotz/
+DISTNAME=		UnixFrotz232R2Std10
 
 MAINTAINER=		ports@FreeBSD.org
 
