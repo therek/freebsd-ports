@@ -2,16 +2,16 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane-frontends/Makefile,v 1.32 2001/03/26 23:16:23 vanilla Exp $
+# $FreeBSD: ports/graphics/sane-frontends/Makefile,v 1.33 2001/03/31 16:09:05 kevlo Exp $
 #
 
 PORTNAME=	sane-frontends
-PORTVERSION=	1.0.4
-PORTREVISION=	1
+PORTVERSION=	1.0.5
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.mostang.com/pub/sane/ \
-		ftp://ftp.de.mostang.com/pub/sane/ \
-		ftp://ftp.no.mostang.com/pub/sane/
+MASTER_SITES=	ftp://ftp.mostang.com/pub/sane/%SUBDIR%/ \
+		ftp://ftp.de.mostang.com/pub/sane/%SUBDIR%/ \
+		ftp://ftp.no.mostang.com/pub/sane/%SUBDIR%/
+MASTER_SITE_SUBDIR=	sane-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
