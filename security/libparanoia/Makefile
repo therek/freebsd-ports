@@ -2,10 +2,11 @@
 # Date created:				1 Jan 1999
 # Whom:					Alexandre Snarskii <snar@paranoia.ru>
 #
-# $FreeBSD: ports/security/libparanoia/Makefile,v 1.7 2000/06/16 21:51:54 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	libparanoia
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.lexa.ru/pub/domestic/snar/
 
