@@ -2,16 +2,16 @@
 # Date created:		17 Feb 1998
 # Whom:			Ugo Paternostro <paterno@dsi.unifi.it>
 #
-# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.9 2000/07/04 07:12:46 sobomax Exp $
+# $FreeBSD: ports/graphics/dc20ctrl/Makefile,v 1.10 2001/01/29 00:44:07 kris Exp $
 #
 
 PORTNAME=	dc20ctrl
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.paternostro.org/~ugo/binaries/
 
 MAINTAINER=	ports@FreeBSD.org
-FORBIDDEN=	"Mark FORBIDDEN; exploitable buffer overflows yielding gid dialer"
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
