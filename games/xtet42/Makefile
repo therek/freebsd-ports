@@ -3,7 +3,7 @@
 # Date created:        14 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/xtet42/Makefile,v 1.3 1999/08/25 06:06:21 obrien Exp $
+# $FreeBSD: ports/games/xtet42/Makefile,v 1.4 1999/11/12 21:04:56 jim Exp $
 #
 
 DISTNAME= 	xtet42-2.21
@@ -20,7 +20,7 @@ MAN6=	xtet42.6
 
 do-install:
 	${MKDIR} ${PREFIX}/lib/X11/xtet42
-	@${CHOWN} games:games ${PREFIX}/lib/X11/xtet42
+	@${CHOWN} root:games ${PREFIX}/lib/X11/xtet42
 	@${CHMOD} 775 ${PREFIX}/lib/X11/xtet42
 	${INSTALL} -c -m 2755 -g games ${WRKSRC}/xtet42 ${PREFIX}/bin
 	${INSTALL} -c -m 664  -g games ${WRKSRC}/xtet42.hiscore ${PREFIX}/lib/X11/xtet42/.xtet42.hiscore
