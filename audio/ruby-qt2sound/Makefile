@@ -2,7 +2,7 @@
 # Date created:		13 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/audio/ruby-qt2sound/Makefile,v 1.1 2001/08/23 07:30:33 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qt2sound
@@ -15,6 +15,7 @@ DISTNAME=	${RUBY_QT2_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Qt2 sound extension for Ruby
 
 BUILD_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
