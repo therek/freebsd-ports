@@ -3,11 +3,11 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.8 1999/08/30 12:08:52 peter Exp $
 #
 
-DISTNAME=	hanterm-3.1.2
-PKGNAME=	ko-hanterm-3.1.2
+DISTNAME=	hanterm-3.1.3
+PKGNAME=	ko-hanterm-3.1.3
 CATEGORIES=	korean x11
 MASTER_SITES=	http://elf.kaist.ac.kr/hanterm/pub/
 
