@@ -2,11 +2,11 @@
 # Date created:		11 Jan 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/www/p5-HTTP-GHTTP/Makefile,v 1.1 2001/02/11 06:50:52 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTTP-GHTTP
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTTP
