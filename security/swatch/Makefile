@@ -2,11 +2,11 @@
 # Date created:					May 2 97
 # Whom:						jfitz
 #
-# $FreeBSD: ports/security/swatch/Makefile,v 1.7 2000/11/17 21:53:47 ade Exp $
+# $FreeBSD: ports/security/swatch/Makefile,v 1.8 2000/12/29 15:42:30 kevlo Exp $
 #
 
 PORTNAME=	swatch
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.2
 CATEGORIES=	security sysutils
 MASTER_SITES=	ftp://ftp.stanford.edu/general/security-tools/swatch/
 
