@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/irb/Makefile,v 1.9 2000/08/16 12:21:05 knu Exp $
+# $FreeBSD: ports/lang/ruby14-irb/Makefile,v 1.10 2000/09/05 12:44:12 knu Exp $
 #
 
 PORTNAME=	irb
@@ -10,32 +10,34 @@ PORTVERSION=	0.6.1
 CATEGORIES=	lang ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	contrib
+PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@big.or.jp
 
-RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
+RUBY_VER=	1.4
+
+USE_RUBY=	yes
 
 NO_BUILD=	yes
 
-WRKSRC=		${WRKDIR}/irb
-PLIST_SUB+=	RUBY_VER="${RUBY_VER}"
-
-RUBY?=		${LOCALBASE}/bin/ruby
-RUBY_VER?=	1.4
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 post-patch:
 	${PERL} -i -pe '$$. == 1 && s,^#!\s*\S+,#!${RUBY},' ${WRKSRC}/irb.rb
 	${RM} -f ${WRKSRC}/instirb.rb
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/irb.rb ${PREFIX}/bin/irb
-	${MKDIR} ${PREFIX}/lib/ruby/${RUBY_VER}/irb
-	${INSTALL_DATA} ${WRKSRC}/*.rb ${PREFIX}/lib/ruby/${RUBY_VER}/irb
+	${INSTALL_SCRIPT} ${WRKSRC}/irb.rb ${PREFIX}/bin/irb${_RUBY_SUFFIX}
+	${LN} -fs irb${_RUBY_SUFFIX} ${PREFIX}/bin/irb
+	${MKDIR} ${RUBY_LIBDIR}/irb
+	${INSTALL_DATA} ${WRKSRC}/*.rb ${RUBY_LIBDIR}/irb
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/ruby/irb
-	${INSTALL_DATA} ${WRKSRC}/README* ${PREFIX}/share/doc/ruby/irb
+	${MKDIR} ${RUBY_DOCDIR}/irb
+	${INSTALL_DATA} ${WRKSRC}/README* ${RUBY_DOCDIR}/irb
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.ruby.mk"
+.include <bsd.port.post.mk>
