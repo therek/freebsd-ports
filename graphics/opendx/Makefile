@@ -2,7 +2,7 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/opendx/Makefile,v 1.14 2001/05/08 11:59:05 tg Exp $
+# $FreeBSD: ports/graphics/opendx/Makefile,v 1.15 2001/07/05 11:11:38 tg Exp $
 #
 
 PORTNAME=	opendx
@@ -20,6 +20,7 @@ LIB_DEPENDS=	Magick.5:${PORTSDIR}/graphics/ImageMagick \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
 USE_AUTOMAKE=	yes
+USE_BISON=	yes
 USE_GMAKE=	yes
 USE_MESA=	yes
 USE_MOTIF=	yes
