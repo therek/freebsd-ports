@@ -2,14 +2,14 @@
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.13 2000/06/16 08:48:06 sobomax Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.14 2000/06/16 21:50:19 asami Exp $
 #
 
 PORTNAME=	lzo
-PORTVERSION=	1.06
+PORTVERSION=	1.07
 CATEGORIES=	archivers devel
-MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
-		http://wildsau.idv.uni-linz.ac.at/mfx/lzo-download/
+MASTER_SITES= 	http://wildsau.idv.uni-linz.ac.at/mfx/download/lzo/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/compression
 
 MAINTAINER=	ports@FreeBSD.org
