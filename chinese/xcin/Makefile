@@ -2,7 +2,7 @@
 # Date created:		Nov 28 ,1997
 # Whom:			Yen-Shuo Su <yssu@CCCA.NCTU.edu.tw>
 #
-# $FreeBSD: ports/chinese/xcin/Makefile,v 1.12 2000/02/27 03:49:31 vanilla Exp $
+# $FreeBSD: ports/chinese/xcin/Makefile,v 1.13 2000/04/13 08:28:21 asami Exp $
 #
 
 PORTNAME=	xcin
@@ -16,6 +16,8 @@ DISTNAME=	xcin-2.3.04-3
 MAINTAINER=	yssu@CCCA.NCTU.edu.tw
 
 RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/local/kc15f.pcf.gz:${PORTSDIR}/chinese/kcfonts
+
+BROKEN=		"Non-I18N-aware old-fashioned application no more supported"
 
 NO_LATEST_LINK=	yes
 USE_X_PREFIX=	yes

@@ -2,7 +2,7 @@
 # Date created:		26 April 1999
 # Whom:			Chia-Hsing Yu <davidyu@ken.csie.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/aterm/Makefile,v 1.9 2000/07/30 18:03:10 steve Exp $
+# $FreeBSD: ports/chinese/aterm/Makefile,v 1.10 2000/08/03 09:22:40 asami Exp $
 #
 
 PORTNAME=	aterm
@@ -17,6 +17,8 @@ MAINTAINER=	davidyu@ken.csie.ntu.edu.tw
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
+
+BROKEN=		"Non-I18N-aware old-fashioned application no more supported"
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

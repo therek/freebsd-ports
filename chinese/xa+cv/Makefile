@@ -2,7 +2,7 @@
 # Date created:		29 March 1999
 # Whom:			Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: ports/chinese/xa+cv/Makefile,v 1.3 2000/04/13 08:28:19 asami Exp $
+# $FreeBSD: ports/chinese/xa+cv/Makefile,v 1.4 2000/12/06 13:24:42 clive Exp $
 #
 
 PORTNAME=	xa+cv
@@ -14,6 +14,8 @@ MAINTAINER=	clive@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/bin/xcin:${PORTSDIR}/chinese/xcin \
 		${X11BASE}/lib/X11/fonts/TrueType/moe_sung.ttf:${PORTSDIR}/chinese/moettf
+
+BROKEN=		"Non-I18N-aware old-fashioned application no more supported"
 
 USE_GMAKE=	yes
 
