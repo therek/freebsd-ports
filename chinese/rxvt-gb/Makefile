@@ -2,7 +2,7 @@
 # Date created:                   Thur Nov 2, 2000
 # Whom:                           Michael C . Wu <keichii@iteration.net>
 #
-# $FreeBSD: ports/chinese/rxvt-gb/Makefile,v 1.3 2001/03/07 22:54:11 keichii Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	chinese
@@ -11,7 +11,7 @@ MASTERDIR=	${.CURDIR}/../../x11/rxvt
 .include "${MASTERDIR}/Makefile"
 
 PORTNAME=	rxvt
-PORTVERSION=	2.6.3
+PORTVERSION=	2.6.4
 
 #.include <bsd.port.pre.mk>
 PKGNAMEPREFIX:=	${PKGNAMEPREFIX}cn-
