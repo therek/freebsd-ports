@@ -2,14 +2,14 @@
 # Date created:				28 DEC 1998
 # Whom:					Steven G. Kargl
 #
-# $FreeBSD: ports/lang/f2c/Makefile,v 1.3 1999/08/25 06:34:31 obrien Exp $
+# $FreeBSD: ports/lang/f2c/Makefile,v 1.4 2000/04/12 06:18:24 obrien Exp $
 #
 
 PORTNAME=	f2c
-PORTVERSION=	2.0.1
+PORTVERSION=	3.0.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://troutmask.apl.washington.edu/pub/
-DISTNAME=	f2c-freebsd.2.0.1
+DISTNAME=	f2c-freebsd.3.0.0
 
 MAINTAINER=	kargl@troutmask.apl.washington.edu
 
