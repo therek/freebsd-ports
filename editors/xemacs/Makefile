@@ -3,7 +3,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.35 1999/11/16 21:14:37 gj Exp $
+# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.36 1999/12/25 12:34:01 gj Exp $
 #
 
 DISTNAME=	xemacs-${XEMACS_VER}
@@ -84,7 +84,7 @@ WITH_OFFIX?=	--with-offix=no
 
 post-install::
 .if !defined(MULE_COMMON)
-	${LN} -sf xemacs-${XEMACS_VER} ${PREFIX}/bin/xemacs21
+	${LN} -sf xemacs-${XEMACS_VER} ${PREFIX}/bin/xemacs21${BINNAMEEXT}
 .for file in b2m ctags etags gnuclient xemacs-${XEMACS_VER}
 	strip ${PREFIX}/bin/${file}
 .endfor
