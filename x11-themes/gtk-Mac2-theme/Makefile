@@ -2,7 +2,7 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-Mac2-theme/Makefile,v 1.3 2000/10/05 06:42:43 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtk-Mac2-theme
@@ -17,7 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 

@@ -2,7 +2,7 @@
 # Date Created:			27 Nov 2000
 # Whom:				Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD: ports/x11-toolkits/gtkada/Makefile,v 1.4 2001/08/15 09:56:10 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkada
@@ -17,13 +17,13 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	sam@inf.enst.fr
 
 BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat
-LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 SHLIB_VERSION=	${PORTVERSION:S/1.2.//}
 
 USE_MESA=	yes
 USE_X_PREFIX=	yes
-USE_GNOMECTRL=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	libcapplet libglade
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes

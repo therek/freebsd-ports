@@ -2,7 +2,7 @@
 # Date Created:				10 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnome-look/Makefile,v 1.2 2000/06/14 13:21:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnome-look
@@ -14,7 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	sobomax@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 

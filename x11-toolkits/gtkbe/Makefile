@@ -2,7 +2,7 @@
 # Date Created:				6 July 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtkbe/Makefile,v 1.5 2000/10/05 06:42:44 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtkbe
@@ -17,7 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 WRKSRC=		${WRKDIR}/GTKBeEngine
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 

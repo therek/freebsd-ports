@@ -2,7 +2,7 @@
 # Date Created:				16 March 2001
 # Whom:				 	olgeni@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/gtk-qn-x11-theme/Makefile,v 1.3 2001/06/16 23:01:31 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtk-qn-x11-theme
@@ -17,7 +17,8 @@ MAINTAINER=	olgeni@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 

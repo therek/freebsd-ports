@@ -2,7 +2,7 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-GtkGLArea/Makefile,v 1.4 2001/02/05 16:49:06 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GtkGLArea
@@ -21,7 +21,8 @@ LIB_DEPENDS=	gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea
 BROKEN=		"It need p5-OpenGL, I will commit p5-OpenGl soon!"
 
 USE_MESA=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
 

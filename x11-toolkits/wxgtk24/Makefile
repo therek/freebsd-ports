@@ -2,7 +2,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.25 2001/07/23 12:44:35 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wxgtk
@@ -21,7 +21,8 @@ LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png \
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-libpng=sys \

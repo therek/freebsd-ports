@@ -2,7 +2,7 @@
 # Date Created:				31 October 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-flat-theme/Makefile,v 1.1 2000/10/31 17:28:21 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtk-flat-theme
@@ -17,7 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.1
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 

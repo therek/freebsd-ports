@@ -2,7 +2,7 @@
 # Date created:		June 29, 1999
 # Whom:	      		Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11-toolkits/pike-gtk/Makefile,v 1.4 2000/10/05 06:42:50 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pike-gtk
@@ -16,7 +16,8 @@ MAINTAINER=	ijliao@FreeBSD.org
 BUILD_DEPENDS=	pike:${PORTSDIR}/lang/pike
 
 USE_XLIB=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

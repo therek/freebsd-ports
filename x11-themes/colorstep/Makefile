@@ -2,7 +2,7 @@
 # Date Created:				21 August 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/colorstep/Makefile,v 1.4 2000/11/07 17:08:27 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	colorstep
@@ -17,7 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.6
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 USE_LIBTOOL=	yes
 
 .include <bsd.port.mk>
