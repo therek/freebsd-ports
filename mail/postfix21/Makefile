@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.22 2000/10/08 10:22:03 asami Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.23 2000/11/07 20:15:14 will Exp $
 #
 
 PORTNAME=	postfix
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.postfix.oaktree.co.uk/pub/postfix/official/
 DISTNAME=	${PORTNAME}-19991231-pl08
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	blaz@amis.net
 
 # WARNING: this is based on a patch submitted by a user and has not been
 # tested. Use it at your own risk !
