@@ -2,7 +2,7 @@
 # Date created:         12 May 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.9 2000/10/20 08:36:33 tg Exp $
+# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.10 2001/03/15 12:29:01 tg Exp $
 #
 
 PORTNAME=	python-doc-${DOCFORMAT}
@@ -20,7 +20,7 @@ USE_BZIP2=	yes
 NO_BUILD=	yes
 PLIST=		${PKGDIR}/pkg-plist_${DOCFORMAT}
 
-DOCDIR=		${PREFIX}/share/doc/python
+DOCDIR=		${PREFIX}/share/doc/${PYTHON_VERSION}
 
 DOCFORMAT?=	html
 
