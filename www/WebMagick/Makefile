@@ -4,11 +4,11 @@
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/WebMagick/Makefile,v 1.12 1999/08/31 02:42:36 peter Exp $
+# $FreeBSD: ports/www/WebMagick/Makefile,v 1.13 1999/11/21 02:59:52 ache Exp $
 #
 
 DISTNAME=       WebMagick-1.46
-CATEGORIES=     www
+CATEGORIES=     www graphics
 MASTER_SITES=   ftp://ftp.simplesystems.org/pub/WebMagick/
 
 LIB_DEPENDS=    Magick.4:${PORTSDIR}/graphics/ImageMagick
