@@ -2,11 +2,11 @@
 # Date created:		11 Jan 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-HTTP-GHTTP/Makefile,v 1.1 2001/02/11 06:50:52 vanilla Exp $
 #
 
 PORTNAME=	HTTP-GHTTP
-PORTVERSION=	1.02
+PORTVERSION=	1.06
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTTP
@@ -17,7 +17,7 @@ MAINTAINER=	skv@protey.ru
 LIB_DEPENDS=	ghttp.1:${PORTSDIR}/www/libghttp
 
 PERL_CONFIGURE=	yes
-CONFIGURE_ARGS+=	LIBS="-L${LOCALBASE}/lib" INC="-I${LOCALBASE}/include"
+CONFIGURE_ARGS=	LIBS="-L${LOCALBASE}/lib -lghttp" INC="-I${LOCALBASE}/include"
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		HTTP::GHTTP.3
