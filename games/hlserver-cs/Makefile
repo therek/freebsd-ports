@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.10 2001/05/08 21:30:27 lioux Exp $
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.11 2001/05/21 03:14:47 lioux Exp $
 #
 
 PORTNAME?=	cs
@@ -42,6 +42,7 @@ HALFLIFESERVER_PORT=	${.CURDIR}/../halflifeserver
 HLDSDIR!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V HLDSDIR
 HL_PROGRAM!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V HL_PROGRAM
 PLIST_SUB_MASTER!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V PLIST_SUB_FOR_THIS_PORT
+PKGMESSAGE!=	cd ${HALFLIFESERVER_PORT} && ${MAKE} -V PKGMESSAGE
 
 pre-patch:
 # remove trailing ^M
@@ -85,5 +86,8 @@ install-run-scripts:
 .for script in dirs files
 	@${SH} ${WRKDIR}/${script}.sh
 .endfor
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

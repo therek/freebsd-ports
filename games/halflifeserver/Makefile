@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.18 2001/05/10 02:11:51 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.19 2001/05/21 03:14:47 lioux Exp $
 #
 
 PORTNAME=	hlds
@@ -73,5 +73,8 @@ install-files:
 
 scan-libs:
 	@${LDCONFIG_LINUX}
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
