@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.419 2002/07/09 13:37:26 sobomax Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1269,7 +1269,7 @@ PKG_ARGS+=		-o ${PKGORIGIN}
 .if defined(PKG_NOCOMPRESS)
 PKG_SUFX?=		.tar
 .else
-PKG_SUFX?=		.tgz
+PKG_SUFX?=		.tbz
 .endif
 # where pkg_add records its dirty deeds.
 PKG_DBDIR?=		/var/db/pkg
