@@ -2,7 +2,7 @@
 # Date created:				2000-09-16
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/audio/autozen/Makefile,v 1.3 2000/10/05 06:35:46 reg Exp $
+# $FreeBSD: ports/audio/autozen/Makefile,v 1.4 2000/10/15 14:18:00 trevor Exp $
 #
 
 PORTNAME=	autozen
@@ -30,6 +30,7 @@ post-patch:
 			${WRKSRC}/autozen.c; \
 	fi
 	@${PERL} -pi -e "s=X11BASE=${X11BASE}=g" ${WRKSRC}/autozen.c
+	cd ${WRKSRC} && ${RM} autozen seq2wav
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/autozen ${PREFIX}/bin
