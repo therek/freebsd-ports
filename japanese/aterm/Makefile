@@ -2,7 +2,7 @@
 # Date Created:		17 Mar 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/aterm/Makefile,v 1.1 2001/04/22 05:22:45 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aterm
@@ -14,7 +14,7 @@ PATCH_SITES=	http://wakaba.com/~tsann/aterm/
 PATCHFILES=	${DISTNAME}-ja.patch
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
+MAINTAINER=	yoichi@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.5:${PORTSDIR}/graphics/png
