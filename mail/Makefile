@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.249 2001/08/25 07:46:17 kiri Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.250 2001/08/25 08:10:55 kiri Exp $
 #
 
     SUBDIR += abook
@@ -179,6 +179,7 @@
     SUBDIR += smail
     SUBDIR += smapi
     SUBDIR += smtpd
+    SUBDIR += smtpclient
     SUBDIR += smtpfeed
     SUBDIR += smunge
     SUBDIR += solidpop3d
