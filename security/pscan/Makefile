@@ -2,7 +2,7 @@
 # Date created:				02 September 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/pscan/Makefile,v 1.1 2000/09/03 00:57:52 kris Exp $
+# $FreeBSD: ports/security/pscan/Makefile,v 1.2 2000/09/22 23:13:31 kris Exp $
 #
 
 PORTNAME=	pscan
@@ -13,7 +13,6 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	kris@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 ALL_TARGET=	#empty
 
 do-install:
