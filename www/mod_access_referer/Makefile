@@ -2,11 +2,11 @@
 # Date created:			18 Oct 2000
 # Whom:				Alex Kapranoff <kapr@crosswinds.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_access_referer/Makefile,v 1.1 2000/10/28 05:11:12 will Exp $
 #
 
 PORTNAME=	mod_access_referer
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	accessreferer
