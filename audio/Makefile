@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.165 2000/09/16 18:59:13 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.166 2000/09/16 19:02:05 will Exp $
 #
 
     SUBDIR += afsp
@@ -22,6 +22,7 @@
     SUBDIR += dap
     SUBDIR += esound
     SUBDIR += extace
+    SUBDIR += fcplay
     SUBDIR += festdoc
     SUBDIR += festival
     SUBDIR += festlex-cmu
