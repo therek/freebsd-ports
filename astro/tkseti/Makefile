@@ -2,7 +2,7 @@
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.11 2001/08/22 23:04:51 petef Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.12 2001/08/28 08:02:49 petef Exp $
 #
 
 PORTNAME=	tkseti
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83 \
-		setiathome:${PORTSDIR}/astro/setiathome
+		${LOCALBASE}/sbin/setiathome:${PORTSDIR}/astro/setiathome
 
 NO_BUILD=	yes
 
