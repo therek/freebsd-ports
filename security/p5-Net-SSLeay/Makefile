@@ -2,7 +2,7 @@
 # Date created:				April 17th 2000
 # Whom:	      				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.4 2000/04/21 08:18:42 mharo Exp $
+# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.5 2000/05/01 06:33:28 asami Exp $
 #
 
 PORTNAME=	p5-Net-SSLeay
@@ -15,10 +15,6 @@ DISTNAME=	 Net_SSLeay.pm-1.05
 MAINTAINER=	andreas@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400000
-FORBIDDEN=	infinite loop trying to find OpenSSL
-.endif
 
 RESTRICTED=	"Cryptography"
 USE_PERL5=	YES
