@@ -2,24 +2,30 @@
 # Date created:				Nov 16, 2000
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/security/pam-pgsql/Makefile,v 1.2 2001/03/30 18:20:29 mi Exp $
+# $FreeBSD: ports/security/pam-pgsql/Makefile,v 1.3 2001/04/21 11:43:08 vanilla Exp $
 #
 
 PORTNAME=	pam-pgsql
 PORTVERSION=	0.3
 PORTREVISION=	1
 CATEGORIES=	security databases
-# When the family of Debian mirrors is added to bsd.port.mk,
-# this will suddenly start making sense:
-MASTER_SITES=	http://ftp.debian.org/debian/${MASTER_SITE_SUBDIR}/ \
-		ftp://ftp.bora.net/pub/linux/debian/${MASTER_SITE_SUBDIR}/ \
-		${MASTER_SITE_DEBIAN}
-MASTER_SITE_SUBDIR=	dists/woody/main/source/admin
+MASTER_SITES=	${MASTER_SITE_DEBIAN}
+MASTER_SITE_SUBDIR=	pool/main/p/pam-pgsql
 DISTFILES=	${PORTNAME}_${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
+
+# When the family of Debian mirrors is added to bsd.port.mk,
+# this will suddenly start making sense:
+MASTER_SITE_DEBIAN?= http://ftp.debian.org/debian/%SUBDIR%/
+# This should help the users of MASTER_SORT_REGEX:
+.for c in at bg br cz de ee es fi fr hu it jp kr nl no nz pl se si tr uk
+MASTER_SITES_DEBIAN+=	http://ftp.$c.debian.org/debian/%SUBDIR%/
+.endfor
+MASTER_SITES_DEBIAN+=	http://ftp.au.debian.org/pub/debian/%SUBDIR%/ \
+	ftp://ftp.bora.net/pub/linux/debian/%SUBDIR%/
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ARGS+=	-j 2
