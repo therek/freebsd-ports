@@ -2,12 +2,11 @@
 # Date created:		8 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-bdb/Makefile,v 1.9 2001/08/01 11:56:15 knu Exp $
+# $FreeBSD: ports/databases/ruby-bdb/Makefile,v 1.10 2001/08/02 08:37:36 knu Exp $
 #
 
 PORTNAME=	bdb
-PORTVERSION=	0.2.2
-PORTREVISION=	1
+PORTVERSION=	0.2.3
 CATEGORIES=	databases ruby
 MASTER_SITES=	ftp://moulon.inra.fr/pub/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
