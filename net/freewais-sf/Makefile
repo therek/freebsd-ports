@@ -2,11 +2,12 @@
 # Date created:		19 November 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/net/freewais-sf/Makefile,v 1.15 2000/04/09 18:11:14 cpiazza Exp $
+# $FreeBSD: ports/net/freewais-sf/Makefile,v 1.16 2000/07/22 06:57:40 kevlo Exp $
 #
 
 PORTNAME=	freewais-sf
 PORTVERSION=	2.2.14
+PORTREVISION=	1
 CATEGORIES=	net databases
 MASTER_SITES=	ftp://ls6-ftp.cs.uni-dortmund.de/pub/src/freeWAIS-sf/
 DISTNAME=	freeWAIS-sf-${PORTVERSION}
