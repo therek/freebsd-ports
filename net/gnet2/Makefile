@@ -1,12 +1,12 @@
 # New ports collection makefile for:   gnet
-# Version required:    0.1.9
+# Version required:    1.0.0
 # Date created:        16 February 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnet/Makefile,v 1.2 2000/02/27 14:53:42 steve Exp $
+# $FreeBSD: ports/net/gnet/Makefile,v 1.3 2000/02/28 10:01:02 nakai Exp $
 #
 
-DISTNAME=	gnet-0.1.9
+DISTNAME=	gnet-1.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.eecs.umich.edu/~dhelder/misc/gnet/src/
 
