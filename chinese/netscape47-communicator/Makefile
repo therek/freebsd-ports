@@ -2,7 +2,7 @@
 # Date created:		11 Mar 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/netscape47-communicator/Makefile,v 1.2 2000/11/06 18:14:52 keith Exp $
+# $FreeBSD: ports/chinese/netscape47-communicator/Makefile,v 1.3 2000/11/15 02:24:24 keith Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -19,7 +19,6 @@ RUN_DEPENDS?=	\
 		${X11BASE}/lib/aout/zh-XFree86-aoutlibs-3.3.6:${.CURDIR}/../XFree86-aoutlibs \
 		${LOCALBASE}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape${BROWSER_VER}-${BROWSER} \
 		${LOCALBASE}/lib/aout/libxpg4-ns.so.2.0:${PORTSDIR}/www/libxpg4-ns \
-		${X11BASE}/lib/X11/locale/zh_TW.Big5/XLC_LOCALE:${PORTSDIR}/x11/XFree86 \
 		${X11BASE}/lib/X11/fonts/TrueType/bsmi00lp.ttf:${PORTSDIR}/chinese/arphicttf
 
 # These variables can be defined in ports that include this Makefile.
