@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.20 1999/11/21 23:10:48 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.21 1999/11/22 22:45:47 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -119,7 +119,7 @@ post-patch:
 post-install:
 .if !exists(${PREFIX}/etc/ssh_host_key)
 	@${ECHO_MSG} ">> Generating a secret host key."
-	${PREFIX}/bin/ssh-keygen -N "" ${PREFIX}/etc/ssh_host_key
+	${PREFIX}/bin/ssh-keygen -N "" -f ${PREFIX}/etc/ssh_host_key
 .endif
 .if !exists(${PREFIX}/etc/rc.d/sshd.sh)
 	@${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/sshd.sh
