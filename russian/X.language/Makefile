@@ -2,13 +2,13 @@
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/X.language/Makefile,v 1.27 2000/03/01 16:16:28 ache Exp $
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.28 2000/04/13 19:13:57 cpiazza Exp $
 #
 
 PORTNAME=	X11
 PORTVERSION=	3.3
 CATEGORIES=     russian x11
-MASTER_SITES=   http://nagual.pp.ru/~ache/koi8/dist/ \
+MASTER_SITES=   http://koi8.pp.ru/dist/ \
 		ftp://ftp.kiarchive.ru/pub/misc/fonts/cyrillic/xwindows/
 DISTFILES=      x6rus-2.3.1-bin.tgz
 
