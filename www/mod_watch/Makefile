@@ -2,18 +2,18 @@
 # Date created:			18 August 2001
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/mod_watch/Makefile,v 1.2 2001/09/17 03:45:48 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_watch
-PORTVERSION=	2.3
+PORTVERSION=	2.4
 CATEGORIES=	www
 MASTER_SITES=	http://www.snert.com/Software/mod_watch/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
-DISTNAME=	${PORTNAME}203
+DISTNAME=	${PORTNAME}204
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	anders@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
