@@ -1,4 +1,3 @@
 @comment $FreeBSD: ports/lang/treecc/pkg-plist,v 1.7 2003/04/18 05:57:41 edwin Exp $
 bin/treecc
-bin/treecc-0.2.4
-
+bin/treecc-%%PORTVERSION%%
