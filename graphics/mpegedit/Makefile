@@ -3,7 +3,7 @@
 # Date created:         Thu Aug  1 10:50:57 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.10 1999/08/25 06:14:31 obrien Exp $
 #
 
 DISTNAME=	mpegedit_v2.2
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/tools/
 
 MAINTAINER=	erich@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/include/pbmplus.h:${PORTSDIR}/graphics/netpbm
+BUILD_DEPENDS=	${X11BASE}/include/pbmplus.h:${PORTSDIR}/graphics/netpbm
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} > 400002
