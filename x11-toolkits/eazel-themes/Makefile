@@ -2,12 +2,11 @@
 # Date created:				17 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/eazel-themes/Makefile,v 1.9 2001/05/04 21:41:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eazel-themes
-PORTVERSION=	0.0.10207
-PORTREVISION=	1
+PORTVERSION=	0.0.10731
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sobomax
@@ -39,7 +38,5 @@ post-install:
 		${TAR} --unlink -xf - -C ${PREFIX}/share/themes
 	cd ${WRKSRC}/../../sawfish &&  ${TAR} -chf - Eazel Ice | \
 		${TAR} --unlink -xf - -C ${PREFIX}/share/sawfish/themes
-#	${LN} -sf ${PREFIX}/share/gnome/apps/Settings/Desktop/eazel-engine-properties.desktop \
-#		${PREFIX}/share/gnome/control-center/Desktop/
 
 .include <bsd.port.mk>
