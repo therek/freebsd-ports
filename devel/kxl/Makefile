@@ -2,7 +2,7 @@
 # Date created:        16 June 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kxl/Makefile,v 1.1 2001/06/16 10:33:57 nakai Exp $
 #
 
 PORTNAME=	kxl
@@ -14,6 +14,7 @@ DISTNAME=	KXL-${PORTVERSION}
 MAINTAINER=	nakai@FreeBSD.org
 
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 INSTALL_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
