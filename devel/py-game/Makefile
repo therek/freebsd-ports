@@ -2,11 +2,11 @@
 # Date created:				14 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-game/Makefile,v 1.6 2001/05/03 08:55:08 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-game
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	devel python
 MASTER_SITES=	http://pygame.seul.org/ftp/
 DISTNAME=	${PORTNAME:S/-//}-${PORTVERSION}
