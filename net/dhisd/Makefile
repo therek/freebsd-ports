@@ -2,11 +2,12 @@
 # Date created:				Sun Feb 25 21:13:59 CET 2001
 # Whom:					Bas Kruit <baskruit@bsltwr.dhis.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dhisd/Makefile,v 1.1 2001/03/12 22:52:32 will Exp $
 #
 
 PORTNAME=		dhisd
 PORTVERSION=		4.0
+PORTREVISION=		1
 CATEGORIES=		net
 MASTER_SITES=		http://bsltwr.dhis.org/ftp/pub/dhis/ \
 			ftp://ftp.dhis.org/pub/dhis/
@@ -43,7 +44,7 @@ post-install:
 	@${CHMOD} 600 ${PREFIX}/dhis/db/*
 .if !exists(${PREFIX}/etc/rc.d/dhisd.sh)
 	${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/dhid.sh startup file."
-	${INSTALL_SCRIPT} -m 751 ${FILESDIR}/dhisd.sh ${PREFIX}/etc/rc.d/dhisd.sh
+	${INSTALL_SCRIPT} -m 751 ${WRKSRC}/dhisd.sh ${PREFIX}/etc/rc.d/dhisd.sh
 	@${ECHO} "etc/rc.d/dhisd.sh" >> ${TMPPLIST}
 .endif
 .if !defined(NOPORTDOCS)
