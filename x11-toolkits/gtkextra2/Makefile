@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gtkextra
-# Date created:				1 August 1999
+# Date created:				17 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtkextra/Makefile,v 1.1 2000/08/17 14:59:31 sobomax Exp $
 #
 
 PORTNAME=	gtkextra
