@@ -2,12 +2,13 @@
 # Date created:			  31 December 1996
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/wget/Makefile,v 1.38 2001/05/25 22:07:35 sf Exp $
+# $FreeBSD: ports/ftp/wget/Makefile,v 1.39 2001/06/05 14:38:11 sf Exp $
 #
 
 PORTNAME=	wget
 PORTVERSION=	1.7
-CATEGORIES=	ftp www #ipv6
+PORTREVISION=	1
+CATEGORIES=	ftp www ipv6
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.dl.ac.uk/ccp14/ftp-mirror/wget/pub/unix/util/wget/ \
 		ftp://ftp.informatik.hu-berlin.de/gnu/wget/ \
@@ -15,11 +16,10 @@ MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.max.irk.ru/unix/net/www/wget/
 MASTER_SITE_SUBDIR=	wget
 
-.if defined(IPV6_IS_DISABLED_UNTIL_NEW_PATCH_COMES)
-PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=	wget-16-v6-20010508b.diff.gz
+PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/kame/misc/&,}
+PATCHFILES=	wget-17-v6-20010716a.diff.gz
 PATCH_DIST_STRIP=	-p1
-.endif
 
 MAINTAINER=	sf@FreeBSD.org
 
@@ -35,6 +35,10 @@ CONFIGURE_ENV+=	CPPFLAGS=-I${LOCALBASE}/include \
 		LIBS=-L${LOCALBASE}/lib
 
 MAN1=		wget.1
+
+# made by broken KAME patch. Already contacted.
+post-patch:
+	@${RM} -f ${WRKSRC}/po/zh.po*
 
 pre-build:
 	@${RM} -f ${WRKSRC}/doc/wget.info*
