@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.21 2000/01/04 18:04:16 jedgar Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.22 2000/01/24 04:10:57 steve Exp $
 #
 
     SUBDIR += abacus
@@ -20,7 +20,6 @@
     SUBDIR += teapot
     SUBDIR += wmpinboard
     SUBDIR += wpeople
-    SUBDIR += xcalendar
     SUBDIR += xinvest
     SUBDIR += xmaddressbook
     SUBDIR += xmdiary
