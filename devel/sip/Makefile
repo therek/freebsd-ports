@@ -1,13 +1,12 @@
 # New ports collection makefile for:	sip
-# Version required:	0.9
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD: ports/devel/sip/Makefile,v 1.4 2000/06/16 08:19:07 sobomax Exp $
+# $FreeBSD: ports/devel/sip/Makefile,v 1.5 2000/06/16 21:50:15 asami Exp $
 #
 
 PORTNAME=	sip
-PORTVERSION=	0.11.1
+PORTVERSION=	0.12
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 
