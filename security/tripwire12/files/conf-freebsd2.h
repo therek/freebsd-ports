@@ -1,4 +1,4 @@
-/* $FreeBSD$ */
+/* $FreeBSD: ports/security/tripwire12/files/conf-freebsd2.h,v 1.2 1999/08/31 01:51:57 peter Exp $ */
 
 /*
  * conf-freebsd2.h

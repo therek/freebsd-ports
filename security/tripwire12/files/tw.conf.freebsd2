@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/security/tripwire12/files/tw.conf.freebsd2,v 1.5 1999/08/31 01:51:58 peter Exp $
 #
 # tripwire.config
 # Generic version for FreeBSD
