@@ -3,12 +3,12 @@
 # Date created:		23 Feb 2000
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/nkf/Makefile,v 1.19 2000/02/23 05:07:43 max Exp $
+# $FreeBSD: ports/japanese/p5-nkf/Makefile,v 1.1.1.1 2000/02/23 06:30:35 max Exp $
 #
 
 DISTNAME=	nkf171
 PKGNAME=	ja-p5-nkf-0.01
-CATEGORIES=	japanese
+CATEGORIES=	japanese perl5
 MASTER_SITES=	ftp://ftp.ie.u-ryukyu.ac.jp/pub/software/kono/ \
 		ftp://ftp.win.ne.jp/pub/misc/ \
 		ftp://ftp.eos.hokudai.ac.jp/pub/tools/code-conv/nkf/
