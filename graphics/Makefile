@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.297 2001/04/07 06:08:32 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.298 2001/04/10 19:49:59 will Exp $
 #
 
     SUBDIR += 4va
@@ -156,6 +156,7 @@
     SUBDIR += p5-GD-Graph3d
     SUBDIR += p5-GD-TextUtil
     SUBDIR += p5-Gimp
+    SUBDIR += p5-Image-Grab
     SUBDIR += p5-Image-Size
     SUBDIR += p5-Imlib2
     SUBDIR += p5-chart
