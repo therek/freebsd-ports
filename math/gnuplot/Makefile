@@ -3,7 +3,7 @@
 # Date created:         19 April 1998
 # Whom:                 chuckr
 #
-# $FreeBSD: ports/math/gnuplot/Makefile,v 1.23 1999/08/25 07:10:10 obrien Exp $
+# $FreeBSD: ports/math/gnuplot/Makefile,v 1.25 1999/09/10 12:03:52 chuckr Exp $
 #
 
 DISTNAME=	gnuplot-3.7
@@ -23,6 +23,12 @@ CONFIGURE_ARGS=	--exec-prefix=${PREFIX} \
 		--with-x --without-linux-vga \
 		--with-gd=${LOCALBASE}/lib \
 		--with-gnu-readline --with-lasergnu --with-png
+
+pre-configure:
+	$(SED) -e "s%@CPPFLAGS@%-I$(LOCALBASE)/include -I$(X11BASE)/include%" \
+	< $(WRKSRC)/Makefile.in > $(WRKDIR)/tmp-makefile.in
+	$(CP) $(WRKDIR)/tmp-makefile.in $(WRKSRC)/Makefile.in
+
 
 MAN1=		gnuplot.1 lasergnu.1
 
