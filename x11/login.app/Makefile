@@ -1,8 +1,8 @@
 # New ports collection makefile for:   login.app
 # Date created:		17 January 1999
-# Whom:		 	Maxim Sobolev <sobomax@altavista.net>
+# Whom:		 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/login.app/Makefile,v 1.1 2000/01/29 22:42:55 steve Exp $
+# $FreeBSD: ports/x11/login.app/Makefile,v 1.2 2000/04/13 19:09:53 cpiazza Exp $
 #
 
 PORTNAME=	login.app
@@ -11,7 +11,7 @@ CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://www.fukt.hk-r.se/~per/login/
 DISTNAME=	Login.app-2.0.0-Alpha-4
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker \
 		PropList.2:${PORTSDIR}/devel/libPropList \

@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.66 2000/04/10 19:50:29 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.67 2000/04/17 00:19:01 reg Exp $
 #
 
 PORTNAME=	windowmaker
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	beta/srcs
 DISTNAME=	WindowMaker-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		ungif.5:${PORTSDIR}/graphics/libungif \
