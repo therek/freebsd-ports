@@ -2,15 +2,15 @@
 # Date created:		21 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/news/trn4/Makefile,v 1.25 2000/06/14 13:21:31 sobomax Exp $
+# $FreeBSD: ports/news/trn4/Makefile,v 1.26 2001/03/21 00:06:36 mph Exp $
 #
 
 PORTNAME=	trn
-PORTVERSION=	4.0.b75
+PORTVERSION=	4.0.b76
 CATEGORIES=	news
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	trn-4.0-test75
+DISTNAME=	trn-4.0-test76
 
 MAINTAINER=	mph@freebsd.org
 
