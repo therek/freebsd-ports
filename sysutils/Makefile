@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.211 2001/08/27 16:52:29 lioux Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.212 2001/08/27 17:17:03 roam Exp $
 #
     SUBDIR += yawho
 
@@ -58,6 +58,7 @@
     SUBDIR += gcombust
     SUBDIR += gkrellflynn
     SUBDIR += gkrellm
+    SUBDIR += gkrellmouse
     SUBDIR += glload
     SUBDIR += gnomecontrolcenter
     SUBDIR += gnomefind
