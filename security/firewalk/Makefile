@@ -2,7 +2,7 @@
 # Date created:		Sun May 3, 1999
 # Whom:			shipley@dis.org
 #
-# $FreeBSD: ports/security/firewalk/Makefile,v 1.6 2000/06/02 03:18:38 will Exp $
+# $FreeBSD: ports/security/firewalk/Makefile,v 1.7 2000/12/21 17:52:34 roam Exp $
 #
 
 PORTNAME=	firewalk
@@ -10,7 +10,7 @@ PORTVERSION=	0.99.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.packetfactory.net/firewalk/
 
-MAINTAINER=	shipley@dis.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
