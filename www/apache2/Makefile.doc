@@ -5,7 +5,7 @@
 #      - make options output
 #      - apache2 man/docs routines
 #
-# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.1 2004/01/08 17:42:03 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.doc,v 1.2 2004/01/10 22:24:51 clement Exp $
 #
 
 ## Available knobs:
@@ -22,7 +22,7 @@
 ##      WITHOUT_AUTH:             Disable auth modules
 ##          WITH_CUSTOM_AUTH:     Let you choose which auth modules you wish
 ##      WITHOUT_DAV:              Disable DAV support
-##      WITH_IPV6_V6ONLY:         Disable IPv4 support
+##      WITH_IPV6_V6ONLY:         Don't allow IPv6 sockets to handle IPv4 connections
 ##      WITHOUT_SSL:              Disable SSL support
 ##      WITH_THREADS:             Enable threads support !! USE IT WITH CARE !!
 ##           WITH_CUSTOM_THREADS: Let you choose which threaded modules you want
