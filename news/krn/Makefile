@@ -2,7 +2,7 @@
 # Date created:				Sun Apr 16 14:19:19 PDT 2000
 # Whom:					adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/news/krn/Makefile,v 1.4 2000/07/02 22:51:34 kris Exp $
+# $FreeBSD: ports/news/krn/Makefile,v 1.5 2000/07/02 23:14:40 kris Exp $
 #
 
 PORTNAME=	krn
@@ -15,7 +15,8 @@ MAINTAINER=	adsharma@sharmas.dhs.org
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
 		uu.1:${PORTSDIR}/converters/uulib \
-		mimelib.2:${PORTSDIR}/converters/kdesupport11
+		mimelib.2:${PORTSDIR}/converters/kdesupport11 \
+		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
 USE_QT=		yes
 GNU_CONFIGURE=	yes
