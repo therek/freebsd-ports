@@ -6,6 +6,13 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050318:
+  AFFECTS: users of x11-wm/blackbox, boxtools, bbkeys and bbpager
+  AUTHOR: A.J.Caines@halplant.com
+
+  The new blackbox ports include several changes to use and configuration.
+  Please read the pkg-message files in the respective ports for details.
+
 20050315:
   AFFECTS: users of databases/mysql323-server
   AUTHOR: ale@FreeBSD.org
@@ -1766,4 +1773,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.161 2005/03/14 10:54:38 ale Exp $
+$FreeBSD: ports/UPDATING,v 1.162 2005/03/15 14:20:44 ale Exp $
