@@ -2,7 +2,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.61 2001/04/20 12:18:05 tg Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.62 2001/05/10 12:18:10 tg Exp $
 #
 
 PORTNAME=	xlockmore
@@ -43,6 +43,10 @@ CONFIGURE_ENV+=		XLOCKLIBS="${PTHREAD_LIBS}"
 .endif
 .else
 CONFIGURE_ARGS+=	--without-mesagl --without-opengl
+.endif
+
+.if defined(WITH_DISABLE_ALLOW_ROOT)
+CONFIGURE_ARGS+=	--disable-allow-root
 .endif
 
 .if ${XFREE86_VERSION} >= 4
