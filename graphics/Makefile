@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.164 1999/12/25 15:54:10 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.165 1999/12/25 15:56:59 steve Exp $
 #
 
     SUBDIR += 4va
@@ -80,6 +80,7 @@
     SUBDIR += kplot3d
     SUBDIR += lfview
     SUBDIR += libimg
+    SUBDIR += libungif
     SUBDIR += libwmf
     SUBDIR += linux_glx
     SUBDIR += mpeg-lib
