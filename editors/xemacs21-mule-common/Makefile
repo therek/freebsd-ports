@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.18 2000/07/13 09:53:08 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.19 2000/07/19 14:22:21 taoka Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -54,7 +54,6 @@ PKGDIR=		${.CURDIR}/../../editors/xemacs${XEMACS_MAJOR_VER}-mule-common/pkg
 
 INSTALL_TARGET=	install-arch-indep
 PLIST=		${PKGDIR}/PLIST
-PLIST_SUB=	XEMACS_VER=${XEMACS_VER}
 TMPPLIST=	${WRKDIR}/.PLIST.mktmp-${PKGNAME}
 
 MULE_COMMON=		yes
