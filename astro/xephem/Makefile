@@ -3,7 +3,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.13 1999/08/25 04:22:47 obrien Exp $
 #
 
 DISTNAME=	xephem-3.2.2
@@ -45,10 +45,12 @@ pre-configure:
 
 pre-build:
 	@(cd ${LIBSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${ALL_TARGET})
+	${SED} -e "s^@PREFIX@^${PREFIX}^" ${WRKSRC}/XEphem.ad > ${WRKSRC}/XEphem.ad.new
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xephem ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/xephem.man ${PREFIX}/man/man1/xephem.1
+	${INSTALL_DATA} ${WRKSRC}/XEphem.ad.new ${PREFIX}/lib/X11/app-defaults/XEphem
 	${MKDIR} ${PREFIX}/lib/X11/xephem
 
 	${MKDIR} ${PREFIX}/lib/X11/xephem/auxil
