@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.101 2001/01/14 23:17:20 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wine
@@ -27,6 +27,12 @@ ONLY_FOR_ARCHS=	i386
 USE_XPM=	yes
 #USE_MESA=	yes
 USE_GMAKE=	yes
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
+BROKEN=		"Not supported on systems prior to FreeBSD 4.x"
+.endif
 
 .if !defined(NDEBUG)
 STRIP=
@@ -90,4 +96,4 @@ do-install:
 	${ECHO}
 	@${SED} s+%%PREFIX%%+${PREFIX}+g <${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
