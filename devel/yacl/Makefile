@@ -3,7 +3,7 @@
 # Date created:		6 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/devel/yacl/Makefile,v 1.4 1999/08/25 05:50:33 obrien Exp $
+# $FreeBSD: ports/devel/yacl/Makefile,v 1.5 1999/08/28 01:57:07 mharo Exp $
 #
 
 DISTNAME=		yacl-0170-beta
@@ -15,7 +15,7 @@ MAINTAINER=		albast@xs4all.nl
 
 USE_ZIP=		yes
 WRKSRC=			${WRKDIR}
-MAKE_ENV=		YACLPATH=${WRKDIR}
+MAKE_ENV+=		YACLPATH=${WRKDIR}
 
 MAKEFILE=		gnuc.mak
 ALL_TARGET=		yacl
@@ -23,8 +23,8 @@ ALL_TARGET=		yacl
 REQUIRES_MOTIF=		true
 
 post-build:
-	@(cd ${WRKSRC}/apps/bmpview; YACLPATH=${WRKDIR} $(MAKE) -f gnuc.mak)
-	@(cd ${WRKSRC}/apps/dlged; YACLPATH=${WRKDIR} $(MAKE) -f gnuc.mak)
+	@(cd ${WRKSRC}/apps/bmpview; ${MAKE} ${MAKE_ENV} -f gnuc.mak)
+	@(cd ${WRKSRC}/apps/dlged; ${MAKE} ${MAKE_ENV} -f gnuc.mak)
 
 do-install:
 # don't split up base directory; keep compilation semantics.
@@ -44,7 +44,7 @@ do-install:
 	@( cd ${PREFIX}/share/yacl; ${LN} -s ${PREFIX}/lib/yacl lib; \
 	${LN} -s ${PREFIX}/include/yacl/io; ${LN} -s ${PREFIX}/include/yacl/ui )
 	@${ECHO} "Done. Don't forget to set your YACLPATH environment "
-	@${ECHO} -n "variable to ${PREFIX}/share/yacl!"
+	@${ECHO} "variable to ${PREFIX}/share/yacl!"
 
 post-install:
 	@strip ${PREFIX}/share/yacl/apps/bmpview
