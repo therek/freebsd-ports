@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.8 2000/12/26 05:30:38 knu Exp $
+# $FreeBSD: ports/devel/ruby-optparse/Makefile,v 1.9 2001/01/08 22:48:13 knu Exp $
 #
 
 PORTNAME=	optparse
-PORTVERSION=	0.7.8
+PORTVERSION=	0.7.9
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://member.nifty.ne.jp/nokada/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -26,7 +26,7 @@ do-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/optparse/ja
 	${MKDIR} ${RUBY_DOCDIR}/optparse/ja
-.for f in README.en optparse.en.rd optparse.rlog
+.for f in ChangeLog README.en optparse.en.rd optparse.rlog
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/optparse/
 .endfor
 .for f in README.ja optparse.ja.rd
