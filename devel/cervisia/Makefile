@@ -2,11 +2,11 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.12 2001/03/28 19:39:00 demon Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.13 2001/03/29 00:29:07 asami Exp $
 
 PORTNAME=	cervisia
 PORTVERSION=	1.3
-CATEGORIES=	devel
+CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
