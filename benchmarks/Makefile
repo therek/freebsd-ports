@@ -1,4 +1,4 @@
-# $FreeBSD: ports/benchmarks/Makefile,v 1.14 2000/01/14 02:08:53 asami Exp $
+# $FreeBSD: ports/benchmarks/Makefile,v 1.15 2000/06/05 13:25:36 will Exp $
 #
 
     SUBDIR += bonnie
@@ -15,6 +15,7 @@
     SUBDIR += rawio
     SUBDIR += tcpblast
     SUBDIR += tmetric
+    SUBDIR += ubench
     SUBDIR += xengine
 
 .include <bsd.port.subdir.mk>
