@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.40 1999/12/25 15:49:57 steve Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.41 1999/12/29 09:12:24 steve Exp $
 #
 
     SUBDIR += aftp
@@ -13,6 +13,7 @@
     SUBDIR += hfs
     SUBDIR += hfsutils
     SUBDIR += ines
+    SUBDIR += ksnes9x
     SUBDIR += linux_base
     SUBDIR += linux_glide
     SUBDIR += linux_mesa
