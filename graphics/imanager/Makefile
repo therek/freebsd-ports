@@ -2,7 +2,7 @@
 # Date created:		18 March 2000
 # Whom:			Cliff Rowley <dozprompt@onsea.com>
 #
-# $FreeBSD: ports/graphics/imanager/Makefile,v 1.1.1.1 2000/03/21 01:22:18 will Exp $
+# $FreeBSD: ports/graphics/imanager/Makefile,v 1.2 2000/04/14 10:46:23 asami Exp $
 #
 
 PORTNAME=	imanager
@@ -10,8 +10,6 @@ PORTVERSION=	2.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.digidezign.com/~imanager/
 DISTNAME=	imanager-${PORTVERSION}.final.imlib
-
-MAINTAINER=	dozprompt@onsea.com
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11
