@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.279 2001/03/12 15:02:10 sf Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 4va
@@ -103,6 +103,7 @@
     SUBDIR += leafpak
     SUBDIR += lfview
     SUBDIR += lib3ds
+    SUBDIR += libaux
     SUBDIR += libdivxdecore
     SUBDIR += libdivxdecore-devel
     SUBDIR += libdjvu++
