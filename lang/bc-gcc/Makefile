@@ -3,7 +3,7 @@
 # Date created:			  Sun June 08, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/lang/bc-gcc/Makefile,v 1.8 2000/03/22 00:26:37 obrien Exp $
+# $FreeBSD: ports/lang/bc-gcc/Makefile,v 1.9 2000/04/12 06:17:51 obrien Exp $
 #
 
 PORTNAME=	bc-gcc
@@ -14,6 +14,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}  \
 		ftp://ftp.cs.yale.edu/WWW/pub/bradley/bcc/  \
 		ftp://ftp.cs.columbia.edu/archives/gnu/bcc/
 MASTER_SITE_SUBDIR=	gcc
+DISTNAME=	gcc-2.7.2
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} documentation-as-8x11-ps.tgz
 
 PATCH_SITES=	ftp://dse.doc.ic.ac.uk/pub/misc/bcc/  \
