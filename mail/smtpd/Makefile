@@ -2,11 +2,12 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.9 2001/01/16 17:31:25 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smtpd
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	mail security
 MASTER_SITES=	ftp://ftp.obtuse.com/pub/smtpd/
 
