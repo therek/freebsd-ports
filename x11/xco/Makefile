@@ -2,7 +2,7 @@
 # Date created:		6 Jun 1997
 # Whom:			Satoshi TAOKA
 #
-# $FreeBSD: ports/x11/xco/Makefile,v 1.5 2000/04/13 19:10:23 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xco
@@ -14,9 +14,14 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	taoka@FreeBSD.org
 
 USE_IMAKE=	yes
+USE_REINPLACE=	yes
 MAN1=		xco.1
 MANCOMPRESSED=	yes
 DOCDIR=		${PREFIX}/share/doc/xco
+
+post-patch:
+		@${REINPLACE_CMD} -e 's/extern char \*malloc();//g' \
+			${WRKSRC}/xco.c ${WRKSRC}/xargs.c
 
 post-install:
 		@${MKDIR} ${DOCDIR}
