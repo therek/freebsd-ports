@@ -3,7 +3,7 @@
 # Whom:			ejc@bazzle.com
 # Version required:	3.0
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ORBacus/Makefile,v 1.25 1999/08/25 05:47:15 obrien Exp $
 #
 
 DISTNAME=	OB-3.1.3
@@ -15,7 +15,7 @@ MAINTAINER=	ejc@bazzle.com
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} >= 400000
+.if ${OSVERSION} >= 400004
 LIBSTDC=	/usr/lib/libstdc++.a
 .else
 .if ${PORTOBJFORMAT} == "elf"
