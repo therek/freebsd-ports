@@ -3,10 +3,10 @@
 # Date created:		24 April 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/bnetd/Makefile,v 1.9 1999/08/25 06:03:01 obrien Exp $
 #
 
-DISTNAME=	bnetd-0.4.16
+DISTNAME=	bnetd-0.4.18
 CATEGORIES=	games net
 MASTER_SITES=	http://www.bnetd.org/files/
 
