@@ -2,7 +2,7 @@
 # Date created:		12 February 2001
 # Whom:			grog
 #
-# $FreeBSD: ports/misc/instant-server/Makefile,v 1.3 2001/03/20 10:19:47 sobomax Exp $
+# $FreeBSD: ports/misc/instant-server/Makefile,v 1.4 2001/07/21 18:45:46 jdp Exp $
 #
 
 PORTNAME=	instant-server
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/postfix:${PORTSDIR}/mail/postfix \
 		${LOCALBASE}/sbin/traceroute:${PORTSDIR}/net/traceroute \
 		cnewsdo:${PORTSDIR}/news/cnews \
 		${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13 \
-		${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid23
+		${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid24
 
 # Don't let stupid programs ask for configuration.
 

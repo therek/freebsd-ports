@@ -2,7 +2,7 @@
 # Date created:				24 May 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squirm/Makefile,v 1.10 2000/11/01 15:51:10 sobomax Exp $
+# $FreeBSD: ports/www/squirm/Makefile,v 1.11 2001/02/05 15:33:49 olgeni Exp $
 #
 
 PORTNAME=	squirm
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid23
+RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid24
 
 NO_PACKAGE=	must set SQUID_UID and SQUID_GID before building
 
