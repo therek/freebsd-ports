@@ -2,7 +2,7 @@
 # Date created:				8 July 2001
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/py-paint/Makefile,v 1.1 2001/07/08 16:47:10 kevlo Exp $
 #
 
 PORTNAME=	paint
@@ -25,8 +25,8 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 SHARE_SUBDIR=	${PKGNAMEPREFIX}${PORTNAME}
 PYDIST_SETUP=	cd ${WRKSRC} && ${PYTHON_CMD} setup.py
 
-INC_DIRS=	["${LOCALBASE}/include","${LOCALBASE}/include/freetype"]
-LIB_DIRS=	["${LOCALBASE}/lib"]
+INC_DIRS=	["${LOCALBASE}/include","${X11BASE}/include","${LOCALBASE}/include/freetype"]
+LIB_DIRS=	["${LOCALBASE}/lib","${X11BASE}/lib"]
 REPATCH=	cd ${WRKSRC} && ${SED}
 REPATCHSUBST=	-e 's@^\(.*libraries.*\)$$@\1include_dirs=${INC_DIRS},library_dirs=${LIB_DIRS},@g'
 REPATCHFILES=	setup.py
