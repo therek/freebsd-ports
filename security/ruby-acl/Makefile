@@ -2,15 +2,13 @@
 # Date created:		7 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-acl/Makefile,v 1.2 2000/09/19 16:08:18 knu Exp $
+# $FreeBSD: ports/security/ruby-acl/Makefile,v 1.3 2000/09/26 08:01:50 knu Exp $
 #
 
 PORTNAME=	acl
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	security ipv6 ruby
-MASTER_SITES=	${MASTER_SITE_RUBY} \
-		http://www2a.biglobe.ne.jp/~seki/ruby/
-MASTER_SITE_SUBDIR=	contrib
+MASTER_SITES=	http://www2a.biglobe.ne.jp/~seki/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
