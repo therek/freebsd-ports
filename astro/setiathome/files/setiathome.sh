@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/astro/setiathome/files/setiathome.sh,v 1.12 2003/06/01 05:45:34 dinoex Exp $
+# $FreeBSD: ports/astro/setiathome/files/setiathome.sh,v 1.13 2003/06/06 03:54:29 dinoex Exp $
 #
 # Start or stop SETI@home, or set up working directory and register.
 #
@@ -93,7 +93,7 @@ start)
 			exit 72
 		fi
 	done
-	if ps axo command | egrep ${wrapper_path}; then
+	if ps axo command | egrep ^${program_path}; then
 		logger -sp ${syslog_facility} -t ${program_file} \
 		"unable to start: ${program_file} is already running."
 		exit 72
