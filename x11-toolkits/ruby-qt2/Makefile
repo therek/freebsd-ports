@@ -2,7 +2,7 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.18 2001/01/18 16:52:47 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.19 2001/01/23 07:20:39 knu Exp $
 #
 
 PORTNAME=	qt2
@@ -17,7 +17,6 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22
 
-USE_MESA=	yes
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
