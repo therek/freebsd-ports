@@ -4,7 +4,7 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.33 2000/02/13 03:24:12 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.34 2000/02/16 23:37:03 ache Exp $
 #
 
 DISTNAME=       rsync-2.4.1
@@ -40,6 +40,9 @@ pre-configure:
 	@${PERL} -pi.orig -e 's:/etc/:${PREFIX}/etc/:g' ${WRKSRC}/rsync.h
 	@${PERL} -pi.orig -e 's:/etc/:${PREFIX}/etc/:g' ${WRKSRC}/rsync.1
 	@${PERL} -pi.orig -e 's:/etc/:${PREFIX}/etc/:g' ${WRKSRC}/rsyncd.conf.5
+.if defined(WITH_SSH) || defined(USE_SSH)
+	@${PERL} -pi.orig-rsh -e 's/"rsh"/"ssh"/g' ${WRKSRC}/rsync.h
+.endif
 
 post-install:
 	@strip ${PREFIX}/bin/rsync
