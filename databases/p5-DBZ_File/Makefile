@@ -2,7 +2,7 @@
 # Date created:				May 26th 2000
 # Whom:					Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/databases/p5-DBZ_File/Makefile,v 1.2 2001/03/01 06:37:20 vanilla Exp $
+# $FreeBSD: ports/databases/p5-DBZ_File/Makefile,v 1.3 2001/03/10 03:29:19 vanilla Exp $
 #
 
 PORTNAME=	DBZ_File
@@ -16,7 +16,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
 PERL_CONFIGURE=	yes
-CONFIGURE_ARGS=	-I${FILESDIR} -L${FILESDIR}
+CONFIGURE_ARGS=	DEFINE="-I${FILESDIR}"
 
 WRKSRC=		${WRKDIR}/DBZ_File
 
