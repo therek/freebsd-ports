@@ -1,6 +1,13 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/azureus/files/azureus,v 1.2 2004/11/15 03:17:17 hq Exp $
+# $FreeBSD: ports/net/azureus/files/azureus,v 1.3 2004/11/22 00:17:34 hq Exp $
+
+export JAVA_VERSION
+export JAVA_OS
+
+# java
+JAVA_VERSION="%%JAVA_VERSION%%"
+JAVA_OS="%%JAVA_OS%%"
 
 ECLIPSE_BASE=%%LOCALBASE%%/eclipse
 ECLIPSE_SWT=`find "${ECLIPSE_BASE}" -name '*swt.*' -type d | grep -e "plugins/org.eclipse.swt.[motif|gtk]" | head -n 1`
@@ -8,7 +15,7 @@ ECLIPSE_WS=`echo "${ECLIPSE_SWT}" | sed -e "s+^${ECLIPSE_BASE}/plugins/org.eclip
 ECLIPSE_SWT_JAR=${ECLIPSE_SWT}/ws/${ECLIPSE_WS}
 LIB_PATH=${ECLIPSE_SWT}/os/freebsd/x86/
 
-CLASS_PATH=:%%DATADIR%%/Azureus2.jar:${ECLIPSE_SWT_JAR}/swt-mozilla.jar:${ECLIPSE_SWT_JAR}/swt-pi.jar:${ECLIPSE_SWT_JAR}/swt.jar
+CLASS_PATH=:%%JAVAJARDIR%%/Azureus2.jar:${ECLIPSE_SWT_JAR}/swt-mozilla.jar:${ECLIPSE_SWT_JAR}/swt-pi.jar:${ECLIPSE_SWT_JAR}/swt.jar
 
 if [ "${DEBUG}" ]
 then
@@ -20,4 +27,4 @@ then
 	echo "LIB_PATH = ${LIB_PATH}"
 fi
 
-"%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" "-Dos.name=Linux" org.gudy.azureus2.ui.swt.Main
+exec "%%JAVA%%" -cp "${CLASS_PATH}" "-Djava.library.path=${LIB_PATH}" "-Dos.name=Linux" org.gudy.azureus2.ui.swt.Main "${@}"
