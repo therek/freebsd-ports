@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gaim
-# Version required:		0.9.10
+# Version required:		0.9.11
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.12 1999/11/02 18:01:46 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.13 1999/11/04 20:04:07 jim Exp $
 #
 
-DISTNAME=	gaim-0.9.10
+DISTNAME=	gaim-0.9.11
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.marko.net/pub/gaim/
 
