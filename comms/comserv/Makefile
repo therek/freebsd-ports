@@ -2,11 +2,11 @@
 # Date created:				12 November 2000
 # Whom:					Brian Dean <bsd@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/comserv/Makefile,v 1.1 2000/12/03 16:37:25 bsd Exp $
 #
 
 PORTNAME=           comserv
-PORTVERSION=        1.0.0
+PORTVERSION=        1.0.1
 CATEGORIES=         comms net
 MASTER_SITES=       ${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR= bsd
