@@ -2,11 +2,12 @@
 # Date created:         21 September 1994
 # Whom:                 jmz & David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.21 2000/04/09 17:41:13 cpiazza Exp $
+# $FreeBSD: ports/print/psutils-letter/Makefile,v 1.22 2000/04/09 17:50:33 cpiazza Exp $
 #
 
 PORTNAME=	psutils-${PAPERSIZE}
 PORTVERSION=	1.17
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.dcs.ed.ac.uk/pub/ajcd/
 DISTNAME=	psutils-p17
@@ -26,6 +27,7 @@ PAPERSIZE_UNSPECIFIED=	yes
 .else
 .if ${PAPERSIZE} != A3 && ${PAPERSIZE} != a3 && ${PAPERSIZE} != A4 \
     && ${PAPERSIZE} != a4 && ${PAPERSIZE} != A5 && ${PAPERSIZE} != a5 \
+	&& ${PAPERSIZE} != B4 && ${PAPERSIZE} != b4 \
 	&& ${PAPERSIZE} != B5 && ${PAPERSIZE} != b5 \
 	&& ${PAPERSIZE} != letter && ${PAPERSIZE} != legal \
 	&& ${PAPERSIZE} != ledger && ${PAPERSIZE} != tabloid \
@@ -33,7 +35,7 @@ PAPERSIZE_UNSPECIFIED=	yes
 	&& ${PAPERSIZE} != folio && ${PAPERSIZE} != quarto && ${PAPERSIZE} != 10x14
 .BEGIN:
 	@${ECHO} "Error: invalid value for PAPERSIZE: \"${PAPERSIZE}\""
-	@${ECHO} "Possible values are:  A3, A4 (default), A5, B5, letter, legal,"
+	@${ECHO} "Possible values are:  A3, A4 (default), A5, B4, B5, letter, legal,"
 	@${ECHO} "   ledger, tabloid, statement, executive, folio, quarto, and 10x14."
 	@${FALSE}
 .endif
@@ -44,7 +46,7 @@ pre-fetch:
 	@${ECHO_MSG} "Defaulting to ${PAPERSIZE} sized paper."
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "Set the environment variable PAPERSIZE if you want to use other sizes."
-	@${ECHO_MSG} "Possible values are:  A3, A4, A5, B5, letter, legal,"
+	@${ECHO_MSG} "Possible values are:  A3, A4, A5, B4, B5, letter, legal,"
 	@${ECHO_MSG} "   ledger, tabloid, statement, executive, folio, quarto, and 10x14."
 .endif
 
