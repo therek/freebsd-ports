@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/graphics/py-opengl/files/patch-ad,v 1.2 2003/01/15 18:28:17 sobomax Exp $
 
 --- Tkinter.py.orig	Tue Jan 14 19:47:57 2003
 +++ Tkinter.py	Tue Jan 14 19:57:55 2003
@@ -20,9 +20,9 @@ $FreeBSD$
 +		pass
 +	def getvar(self, varname):
 +		if varname == 'tk_version' or varname == 'tcl_version':
-+			return '8.3'
++			return '8.4'
 +		if varname == 'tcl_library':
-+			return '%%LOCALBASE%%/lib/tcl8.3'
++			return '%%LOCALBASE%%/lib/tcl8.4'
 +		if varname == 'tk_library':
-+			return '%%LOCALBASE%%/lib/tk8.3'
++			return '%%LOCALBASE%%/lib/tk8.4'
 +		return ''
