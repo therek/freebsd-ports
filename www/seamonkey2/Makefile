@@ -2,11 +2,12 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.58 2001/02/23 07:41:46 reg Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.59 2001/04/10 09:05:42 reg Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	www
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
@@ -15,7 +16,7 @@ DISTNAME=	${PORTNAME}-source-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
 
-LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit \
+LIB_DEPENDS=	ORBit.2:${PORTSDIR}/devel/ORBit \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png
 

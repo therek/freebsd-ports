@@ -2,22 +2,22 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.31 2001/03/02 08:30:28 clive Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.32 2001/03/20 22:34:47 clive Exp $
 #
 
 PORTNAME=	gqmpeg
 PORTVERSION=	0.9.0
-CATEGORIES=	audio
+PORTREVISION=	1
+CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	lyngbol@candid.dk
 
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
 USE_X_PREFIX=	yes
-USE_IMLIB=	yes
+USE_GNOMECTRL=	yes
 USE_LIBTOOL=	yes
 
 MAN1=		gqmpeg.1

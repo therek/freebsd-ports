@@ -2,20 +2,20 @@
 # Date created:			Apr 10, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/imagesort/Makefile,v 1.1 2001/04/10 19:50:00 will Exp $
 #
 
 PORTNAME=	imagesort
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/graphics/viewers/X
 
 MAINTAINER=	mark@kyne.com.au
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
-
 USE_X_PREFIX=	yes
+USE_IMLIB=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/imagesort ${PREFIX}/bin

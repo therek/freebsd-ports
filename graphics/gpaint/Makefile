@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gpaint/Makefile,v 1.4 2001/02/05 15:57:14 olgeni Exp $
+# $FreeBSD: ports/graphics/gpaint/Makefile,v 1.5 2001/03/29 16:33:58 sobomax Exp $
 #
 
 PORTNAME=	gpaint
@@ -12,9 +12,6 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
-		gnomeprint.13:${PORTSDIR}/print/gnomeprint
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

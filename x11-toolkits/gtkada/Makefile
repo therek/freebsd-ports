@@ -2,12 +2,12 @@
 # Date Created:			27 Nov 2000
 # Whom:				Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD: ports/x11-toolkits/gtkada/Makefile,v 1.1 2000/12/08 21:33:48 deischen Exp $
+# $FreeBSD: ports/x11-toolkits/gtkada/Makefile,v 1.2 2001/01/02 16:05:21 sf Exp $
 #
 
 PORTNAME=	gtkada
 PORTVERSION=	1.2.10
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://gtkada.eu.org/ \
 		http://www.adapower.com/gtkada/
@@ -15,13 +15,12 @@ DISTNAME=	GtkAda-${PORTVERSION}
 
 MAINTAINER=	sam@inf.enst.fr
 
-BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat \
-		gdk-pixbuf-config:${PORTSDIR}/graphics/gdk-pixbuf
+BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat
 
 USE_MESA=	yes
 USE_AUTOCONF=	yes
 USE_X_PREFIX=	yes
-USE_GNOMELIBS=	yes
+USE_GNOMECTRL=	yes
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
 MAN1=	dgate.1 gate.1 gtkada-config.1

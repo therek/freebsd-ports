@@ -2,12 +2,13 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.19 2001/02/14 14:54:23 cjh Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.20 2001/04/05 11:52:15 cjh Exp $
 #
 
 PORTNAME=	ami
 PORTVERSION=	1.0.10
-CATEGORIES=	korean x11
+PORTREVISION=	1
+CATEGORIES=	korean x11 gnome
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/ \
 		http://master.debian-kr.org/~cwryu/archive/misc/
 DISTFILES=	${DISTNAME}.tar.gz hanja.dic.gz ami.dic
@@ -15,11 +16,9 @@ EXTRACT_ONLY=	${DISTNAME}.tar.gz
 
 MAINTAINER=	cjh@FreeBSD.org
 
-LIB_DEPENDS=    gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMECTRL=	yes
 WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-hangul-keyboard=2
@@ -30,10 +29,8 @@ CONFIGURE_ARGS=	--with-hangul-keyboard=2
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
 CONFIGURE_ARGS+=--enable-gnome-applet
-DATADIR=	share/gnome
-.else
-DATADIR=	share
 .endif
+DATADIR=	share/gnome
 
 post-build:
 	@cd ${WRKSRC}/hanjadic; \

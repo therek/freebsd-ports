@@ -2,12 +2,12 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.43 2001/04/23 15:55:52 sobomax Exp $
 #
 
 PORTNAME=	balsa
 PORTVERSION=	1.1.4
-#PORTREVISION=	1
+PORTREVISION=	1
 CATEGORIES=	mail gnome
 MASTER_SITES=	http://www.theochem.kth.se/~pawsa/balsa/ \
 		ftp://ftp.newton.cx/pub/balsa/
@@ -15,10 +15,7 @@ MASTER_SITES=	http://www.theochem.kth.se/~pawsa/balsa/ \
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
-		pspell.4:${PORTSDIR}/textproc/pspell \
-		gnomeprint.13:${PORTSDIR}/print/gnomeprint \
-		giconv.2:${PORTSDIR}/converters/libiconv \
-		gtkhtml.8:${PORTSDIR}/www/gtkhtml
+		gtkhtml.10:${PORTSDIR}/www/gtkhtml
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes

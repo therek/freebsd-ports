@@ -3,24 +3,22 @@
 # Date created:			Apr 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/mdk/Makefile,v 1.1 2001/04/02 06:01:23 ijliao Exp $
+# $FreeBSD: ports/lang/mdk/Makefile,v 1.2 2001/04/11 01:10:22 ijliao Exp $
 #
 
 PORTNAME=	mdk
 PORTVERSION=	0.3.1
-CATEGORIES=	lang
+PORTREVISION=	1
+CATEGORIES=	lang gnome
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt \
-		intl.1:${PORTSDIR}/devel/gettext \
-		glade.4:${PORTSDIR}/devel/libglade
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
-USE_GLIB=	yes
-USE_GTK=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 GNU_CONFIGURE=	yes
 

@@ -2,19 +2,19 @@
 # Date created:		18 March 2000
 # Whom:			Cliff Rowley <dozprompt@onsea.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/imanager/Makefile,v 1.5 2001/04/03 08:14:14 will Exp $
 #
 
 PORTNAME=	imanager
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxberg.com/files/kde/graphics/
 DISTNAME=	imanager-${PORTVERSION}.final.imlib
 
 MAINTAINER=	ports@freebsd.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
-
+USE_IMLIB=	yes
 USE_KDELIBS_VER=1
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -2,11 +2,12 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.22 2000/11/09 14:04:32 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.23 2000/12/05 13:42:38 sobomax Exp $
 #
 
 PORTNAME=	rep-gtk
 PORTVERSION=	0.15
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -28,9 +29,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 .include <bsd.port.pre.mk>
 
 .if defined(HAVE_GNOME)
-LIB_DEPENDS+=	glade.4:${PORTSDIR}/devel/libglade \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
-USE_GNOMELIBS=	yes
+USE_GNOME=	yes
 CONFIGURE_ARGS=	--with-gnome --with-libglade --with-gdk-pixbuf \
 		--with-gnome-canvas-pixbuf
 .else

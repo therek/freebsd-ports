@@ -2,18 +2,17 @@
 # Date created:				26 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/visualos/Makefile,v 1.4 2001/03/30 12:40:27 sobomax Exp $
 #
 
 PORTNAME=	VisualOS
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 CATEGORIES=	emulators gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	visualos
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

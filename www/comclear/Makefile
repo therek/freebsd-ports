@@ -2,23 +2,26 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/www/comclear/Makefile,v 1.3 2001/01/16 19:22:23 will Exp $
+# $FreeBSD: ports/www/comclear/Makefile,v 1.4 2001/01/17 08:01:31 roam Exp $
 #
 
 PORTNAME=	comclear
 PORTVERSION=	1.1
-CATEGORIES=	www
+PORTREVISION=	1
+CATEGORIES=	www gtk
 MASTER_SITES=	http://www.neuro-tech.net/files/
 
 MAINTAINER=	roam@FreeBSD.org
 
-.if		defined(WITH_GTK)
-BUILD_DEPENDS=	${X11BASE}/bin/gtk12-config:${PORTSDIR}/x11-toolkits/gtk12/
-CONFIGURE_ENV=	GTK_CONFIG=${X11BASE}/bin/gtk12-config
-.endif
-
+WANT_GTK=	yes
 USE_GMAKE=	yes
 USE_AUTOMAKE=	yes
+
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GTK)
+USE_GTK=	yes
+.endif
 
 # Do not install docs by default, see the ifdef'd post-install below.
 post-configure:
@@ -29,4 +32,4 @@ post-install:
 		cd ${WRKSRC} && ${GMAKE} install-docDATA
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

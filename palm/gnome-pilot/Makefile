@@ -2,11 +2,12 @@
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.19 2000/10/05 07:17:15 reg Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.20 2001/03/29 16:34:32 sobomax Exp $
 #
 
 PORTNAME=	gnomepilot
 PORTVERSION=	0.1.52
+PORTREVISION=	1
 CATEGORIES=	palm comms gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-pilot
@@ -15,9 +16,7 @@ DISTNAME=	gnome-pilot-${PORTVERSION}
 MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	gob:${PORTSDIR}/x11-toolkits/gob
-LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
-		xml.5:${PORTSDIR}/textproc/libxml \
-		glade.4:${PORTSDIR}/devel/libglade
+LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -2,22 +2,23 @@
 # Date created:		16 November 2000
 # Whom:			Jeremy <karlj000@unbc.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wmmenu/Makefile,v 1.3 2001/03/14 08:52:35 sobomax Exp $
 #
 
 PORTNAME=	wmmenu
 PORTVERSION=	0.4
-CATEGORIES=	x11
+PORTREVISION=	1
+CATEGORIES=	x11 gnome
 MASTER_SITES=	http://www.fcoutant.freesurf.fr/download/
 
 MAINTAINER=	karlj000@unbc.ca
 
-LIB_DEPENDS=	dockapp.1:${PORTSDIR}/x11-wm/libdockapp:install \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+LIB_DEPENDS=	dockapp.1:${PORTSDIR}/x11-wm/libdockapp:install
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOMECTRL=	yes
 
 post-patch:
 	@ ${MV} ${WRKSRC}/example/defaults ${WRKSRC}/example/defaults.presed

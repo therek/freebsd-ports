@@ -2,19 +2,18 @@
 # Date created:				26 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.15 2001/02/05 16:04:22 olgeni Exp $
+# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.16 2001/03/29 16:34:45 sobomax Exp $
 #
 
 PORTNAME=	gnomefind
 PORTVERSION=	1.0.1
+PORTREVISION=	1
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gnome-find
 DISTNAME=	gnome-find-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

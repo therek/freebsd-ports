@@ -2,11 +2,12 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.23 2001/01/25 01:12:56 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.24 2001/03/29 16:32:46 sobomax Exp $
 #
 
 PORTNAME=	gnapster
 PORTVERSION=	1.4.2
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
@@ -24,7 +25,6 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 CONFIGURE_ARGS+=	--datadir=${PREFIX}/share
 .else
 CONFIGURE_ARGS+=--disable-gnome --disable-gdk-pixbuf

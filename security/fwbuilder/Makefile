@@ -2,23 +2,22 @@
 # Date Created:				3 Feb 2001
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/security/fwbuilder/Makefile,v 1.2 2001/03/21 07:09:44 dinoex Exp $
+# $FreeBSD: ports/security/fwbuilder/Makefile,v 1.3 2001/03/28 17:26:27 dinoex Exp $
 #
 
 PORTNAME=	fwbuilder
 PORTVERSION=	0.8.7
+PORTREVISION=	1
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	roman@xpert.com
 
-LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
-		gtkmm.2:${PORTSDIR}/x11-toolkits/gtk--
+LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk--
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_GTK=	yes
 USE_LIBTOOL=	yes
 USE_GNOMELIBS=	yes
 WITHOUT_ESOUND=	yes

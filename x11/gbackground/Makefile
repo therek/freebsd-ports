@@ -2,20 +2,19 @@
 # Date created:                         05/06/2000
 # Whom:                                 smoberly@xavier.dyndns.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gbackground/Makefile,v 1.1 2000/07/31 13:23:06 nbm Exp $
 #
 
 PORTNAME=	gbackground
 PORTVERSION=	1.0.0.b2
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	http://ringer.cs.utsa.edu/~gsalinas/gBackGround/
 DISTNAME=	gBackGround-1.0.0-beta2
 
 MAINTAINER=	smoberly@xavier.dyndns.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
-		gnome.4:${PORTSDIR}/x11/gnomelibs
-
+USE_GNOME=	yes
 ALL_TARGET=	gBackGround_applet
 USE_X_PREFIX=	YES
 USE_AUTOCONF=	YES

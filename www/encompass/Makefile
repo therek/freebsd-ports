@@ -2,11 +2,12 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/encompass/Makefile,v 1.14 2001/03/13 14:45:31 sobomax Exp $
+# $FreeBSD: ports/www/encompass/Makefile,v 1.15 2001/03/29 16:34:49 sobomax Exp $
 #
 
 PORTNAME=	encompass
 PORTVERSION=	0.3.3
+PORTREVISION=	1
 CATEGORIES=	www gnome
 MASTER_SITES=	http://dobey.free.fr/encompass/ \
 		http://zephyr.webhop.net/encompass/ \
@@ -14,12 +15,7 @@ MASTER_SITES=	http://dobey.free.fr/encompass/ \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gtkhtml.8:${PORTSDIR}/www/gtkhtml \
-		glibwww.1:${PORTSDIR}/www/glibwww \
-		gconf-1.1:${PORTSDIR}/devel/gconf \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
-		gnomeprint.13:${PORTSDIR}/print/gnomeprint
-RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/login.wav:${PORTSDIR}/audio/gnomeaudio
+LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
 
 USE_GNOME=	yes
 USE_X_PREFIX=	yes

@@ -2,19 +2,16 @@
 # Date created:			19 Feb 2001
 # Whom:				Anders Andersson <anders@codefactory.se>
 #
-# $FreeBSD: ports/cad/oregano/Makefile,v 1.1 2001/03/07 11:00:31 knu Exp $
+# $FreeBSD: ports/cad/oregano/Makefile,v 1.2 2001/03/29 16:32:50 sobomax Exp $
 #
 
 PORTNAME=	oregano
 PORTVERSION=	0.22
+PORTREVISION=	1
 CATEGORIES=	cad
 MASTER_SITES=	ftp://ftp.codefactory.se/pub/CodeFactory/software/oregano/
 
 MAINTAINER=	anders@codefactory.se
-
-LIB_DEPENDS=	gnomeprint.13:${PORTSDIR}/print/gnomeprint \
-		glade.4:${PORTSDIR}/devel/libglade \
-		xml.5:${PORTSDIR}/textproc/libxml
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

@@ -2,11 +2,11 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.50 2000/10/08 10:22:23 asami Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.51 2000/11/16 13:14:22 tg Exp $
 #
 
 PORTNAME=	mc
-PORTVERSION=	4.5.51
+PORTVERSION=	4.5.54
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
@@ -31,10 +31,14 @@ CONFIGURE_ARGS=	--with-slang --without-gnome --with-edit
 CONFIGURE_ARGS=	--with-ncurses --without-gnome --without-edit
 .endif
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib -lintl"
 
-MAN1=		midc.1
+MAN1=		midc.1 mcedit.1
 MAN8=		mcserv.8
+
+pre-patch:
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(libdir\)/mc|\$\(datadir\)/mc|g'
 
 .if defined(WITH_SLANG)
 PLIST=		${WRKDIR}/PLIST
