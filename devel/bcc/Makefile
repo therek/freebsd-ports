@@ -1,14 +1,14 @@
 # New ports collection makefile for:	bcc
-# Version required:	"1995 Mar 12 10:29 UTC"
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/bcc/Makefile,v 1.8 1999/08/25 05:47:25 obrien Exp $
 #
 
-DISTNAME=	bcc
-PKGNAME=	bcc-95.3.12
+PORTNAME=	bcc
+PORTVERSION=	1995.03.12
 CATEGORIES=	devel lang
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	joerg@FreeBSD.org
 

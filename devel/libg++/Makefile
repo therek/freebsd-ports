@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:	GNU glib++
-# Version required: 0.0
 # Date created:				Wed, 23 Feb 2000
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/devel/libg++/Makefile,v 1.2 2000/03/20 23:10:46 obrien Exp $
+# $FreeBSD: ports/devel/libg++/Makefile,v 1.3 2000/03/22 00:27:03 obrien Exp $
 #
 
-DISTNAME=	libg++-2.8.1.3
+PORTNAME=	libg++
+PORTVERSION=	2.8.1.3
 CATEGORIES=	devel
 MASTER_SITES=	http://www.m-hollstein.de/libgxx/  \
 		ftp://ftp.valinux.com/pub/support/hjl/  \
@@ -17,7 +17,7 @@ MASTER_SITES=	http://www.m-hollstein.de/libgxx/  \
 		${MASTER_SITE_GNU}
 
 PATCH_SITES=	http://www.m-hollstein.de/libgxx/
-PATCHFILES=	libg++-2.8.1.3-20000312.diff.gz
+PATCHFILES=	${DISTNAME}-20000312.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org

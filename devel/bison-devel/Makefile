@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  bison
-# Version required: 0.0
 # Date created:			  27 Mar 1999
 # Whom:				  Jerry Hicks
 #
-# $FreeBSD: ports/devel/bison/Makefile,v 1.9 2000/03/20 02:36:06 obrien Exp $
+# $FreeBSD: ports/devel/bison/Makefile,v 1.10 2000/03/22 00:26:40 obrien Exp $
 #
 
-DISTNAME=		bison-1.28
+PORTNAME=		bison
+PORTVERSION=		1.28
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	bison

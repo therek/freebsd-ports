@@ -1,15 +1,15 @@
 # New ports collection makefile for:	SpecTcl1.1
-# Version required:	1.1
 # Date created:		Fri Oct  3 18:50:53 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.10 1999/11/28 18:30:36 steve Exp $
+# $FreeBSD: ports/devel/SpecTcl/Makefile,v 1.11 2000/01/03 21:59:04 andreas Exp $
 #
 
-DISTNAME=	SpecTcl1.1
-PKGNAME=	SpecTcl-1.1
+PORTNAME=	SpecTcl
+PORTVERSION=	1.1
 CATEGORIES=	devel tk80
 MASTER_SITES=	ftp://ftp.scriptics.com/pub/tcl/guitools/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	andreas@FreeBSD.org
 

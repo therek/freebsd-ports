@@ -1,12 +1,12 @@
 # New ports collection makefile for:	f77flow
-# Version required:			0.12
 # Date created:				25 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/f77flow/Makefile,v 1.2 1999/08/25 05:47:53 obrien Exp $
+# $FreeBSD: ports/devel/f77flow/Makefile,v 1.3 2000/03/29 07:16:31 kris Exp $
 #
 
-DISTNAME=		f77flow-0.12
+PORTNAME=		f77flow
+PORTVERSION=		0.12
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/fortran

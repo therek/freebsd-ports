@@ -1,12 +1,12 @@
 # New ports collection makefile for:	jam
-# Version required:     2.2
 # Date created:		10 July 1998
 # Whom:			Jeffrey Hsu <hsu@freebsd.org>
 #
-# $FreeBSD: ports/devel/jam/Makefile,v 1.3 1999/08/25 05:48:13 obrien Exp $
+# $FreeBSD: ports/devel/jam/Makefile,v 1.4 1999/10/25 20:48:17 mharo Exp $
 #
 
-DISTNAME=	jam-2.2
+PORTNAME=	jam
+PORTVERSION=	2.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp1.perforce.com/pub/jam/
 

@@ -1,11 +1,11 @@
 # New ports collection Makefile for: cervisia
-# Version required:	0.5.0
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.4 2000/02/26 18:56:39 jedgar Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.5 2000/03/22 01:58:55 will Exp $
 
-DISTNAME=	cervisia-0.5.0
+PORTNAME=	cervisia
+PORTVERSION=	0.5.0
 CATEGORIES=	devel
 MASTER_SITES=	http://download.sourceforge.net/cervisia/
 

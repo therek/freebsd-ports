@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nasm
-# Version required:    0.98
 # Date created:        7 April 1998
 # Whom:                Murray Stokely <murray@cdrom.com>
 #
-# $FreeBSD: ports/devel/nasm/Makefile,v 1.6 1999/08/25 05:48:50 obrien Exp $
+# $FreeBSD: ports/devel/nasm/Makefile,v 1.7 1999/12/11 01:45:51 asami Exp $
 #
 
-DISTNAME=	nasm-0.98
+PORTNAME=	nasm
+PORTVERSION=	0.98
 CATEGORIES=	devel lang
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/assemblers

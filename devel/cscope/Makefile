@@ -1,12 +1,12 @@
 # ports collection makefile for:	cscope
-# Version required:	13.7
 # Date created:		1998-11-21
 # Whom:			Castor Fu
 #
-# $FreeBSD: ports/devel/cscope/Makefile,v 1.4 1999/08/27 21:13:46 mharo Exp $
+# $FreeBSD: ports/devel/cscope/Makefile,v 1.5 2000/02/11 01:04:34 asami Exp $
 #
 
-DISTNAME=	cscope-13.7
+PORTNAME=	cscope
+PORTVERSION=	13.7
 CATEGORIES=	devel
 
 MAINTAINER=	castor@alumni.caltech.edu

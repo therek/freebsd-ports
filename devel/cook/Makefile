@@ -1,12 +1,12 @@
 # New ports collection Makefile for:	cook
-# Version required:	2.11
 # Date created:		31 January 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/devel/cook/Makefile,v 1.1 2000/02/01 07:41:55 jasone Exp $
+# $FreeBSD: ports/devel/cook/Makefile,v 1.2 2000/02/22 05:35:50 jasone Exp $
 #
 
-DISTNAME=	cook-2.11
+PORTNAME=	cook
+PORTVERSION=	2.11
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.canb.auug.org.au/~millerp/cook/

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-AppConfig
-# Version required:			1.52
 # Date created:				23 October 1999
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-AppConfig/Makefile,v 1.1.1.1 1999/11/26 20:11:31 steve Exp $
 #
 
-DISTNAME=	AppConfig-1.52
-PKGNAME=	p5-AppConfig-1.52
+PORTNAME=	AppConfig
+PORTVERSION=	1.52
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	App/ABW
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	igor@zynaps.ru
 

@@ -1,20 +1,19 @@
 # New ports collection makefile for:   doxygen
-# Version required:    1.1.0
 # Date created:        20 March 1998
 # Whom:                Joep Grooten <joep@di.nl>
 #
-# $FreeBSD: ports/devel/doxygen/Makefile,v 1.3 2000/02/21 23:43:38 cpiazza Exp $
+# $FreeBSD: ports/devel/doxygen/Makefile,v 1.4 2000/02/25 21:32:18 cpiazza Exp $
 #
 
-DISTNAME=	doxygen-${VERSION}.src
-PKGNAME=	doxygen-${VERSION}
+PORTNAME=	doxygen
+PORTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.stack.nl/~dimitri/doxygen/dl/
+DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	joep@di.nl
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
-VERSION=	1.1.0
 USE_QT=		yes
 USE_PERL5=	yes
 MAKE_ENV+=	QTDIR="${X11BASE}" PCFLAGS="${CFLAGS}" PCXXFLAGS="${CXXFLAGS}"

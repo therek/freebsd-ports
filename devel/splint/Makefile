@@ -1,12 +1,12 @@
 # New ports collection makefile for:  lclint
-# Version required:	2.4b
 # Date created: 	9 September 1996
 # Whom:			moeding
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/lclint/Makefile,v 1.7 1999/08/25 05:48:15 obrien Exp $
 #
 
-DISTNAME=	lclint-2.4b
+PORTNAME=	lclint
+PORTVERSION=	2.4b
 CATEGORIES=	devel
 MASTER_SITES= 	http://www.sds.lcs.mit.edu/lclint/ftp/lclint/ \
 		ftp://ftp.deva.net/pub/sources/programming/linting/ \

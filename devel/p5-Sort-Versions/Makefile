@@ -1,13 +1,13 @@
 # New ports collection makefile for:    p5-Sort-Versions
-# Version required:			1.1
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Sort-Versions/Makefile,v 1.4 1999/08/25 05:49:35 obrien Exp $
+# $FreeBSD: ports/devel/p5-Sort-Versions/Makefile,v 1.5 1999/08/31 06:42:25 mharo Exp $
 #
 
-DISTNAME=	SortVersions-1.1
-PKGNAME=	p5-Sort-Versions-1.1
+PORTNAME=	SortVersions
+PORTVERSION=	1.1
+PKGNAMEPREFIX=	p5-
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Sort

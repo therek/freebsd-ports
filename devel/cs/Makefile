@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cs
-# Version required:			0.5
 # Date created:				22 May 1997
 # Whom:					Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cs/Makefile,v 1.6 2000/03/29 07:16:30 kris Exp $
+# $FreeBSD: ports/devel/cs/Makefile,v 1.7 2000/03/31 01:37:26 obrien Exp $
 #
 
-DISTNAME=	cs-0.5
+PORTNAME=	cs
+PORTVERSION=	0.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://cantor.informatik.rwth-aachen.de/pub/unix/
 

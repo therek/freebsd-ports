@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mm
-# Version required:		1.0.12
 # Date Created:			14 March 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/mm/Makefile,v 1.15 1999/09/28 12:48:33 rse Exp $
+# $FreeBSD: ports/devel/mm/Makefile,v 1.16 1999/12/24 18:39:25 mharo Exp $
 #
 
-DISTNAME=	mm-1.0.12
+PORTNAME=	mm
+PORTVERSION=	1.0.12
 CATEGORIES=	devel
 MASTER_SITES=	http://www.engelschall.com/sw/mm/ \
 		ftp://ftp.engelschall.com/sw/mm/

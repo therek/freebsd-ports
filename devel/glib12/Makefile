@@ -1,12 +1,12 @@
 # New ports collection makefile for:   glib12
-# Version required:		1.2.7
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib12/Makefile,v 1.27 1999/10/13 11:17:36 nakai Exp $
+# $FreeBSD: ports/devel/glib12/Makefile,v 1.28 2000/02/18 19:39:13 cpiazza Exp $
 #
 
-DISTNAME=	glib-1.2.7
+PORTNAME=	glib
+PORTVERSION=	1.2.7
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \

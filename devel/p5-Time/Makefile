@@ -1,16 +1,16 @@
-# New ports collection makefile for:	p5-Time-961002
-# Version required:			98.112901
+# New ports collection makefile for:	p5-Time
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.12 1999/08/25 05:49:40 obrien Exp $
+# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.13 1999/08/31 06:42:31 mharo Exp $
 #
 
-DISTNAME=	Time-modules-98.112901
-PKGNAME=	p5-Time-981129
+PORTNAME=	Time-modules
+PORTVERSION=	98.112901
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    gperf
-# Version required:     2.7
 # Date created:         19.04.1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/devel/gperf/Makefile,v 1.2 1999/12/29 20:40:35 jedgar Exp $
+# $FreeBSD: ports/devel/gperf/Makefile,v 1.3 2000/03/21 01:17:08 jedgar Exp $
 #
 
-DISTNAME=	gperf-2.7
+PORTNAME=	gperf
+PORTVERSION=	2.7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gperf

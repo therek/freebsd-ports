@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pcre
-# Version required:			3.1
 # Date created:				08 July 1998
 # Whom:					dom
 #
-# $FreeBSD: ports/devel/pcre/Makefile,v 1.4 1999/09/28 02:40:41 steve Exp $
+# $FreeBSD: ports/devel/pcre/Makefile,v 1.5 2000/03/24 01:57:49 mharo Exp $
 #
 
-DISTNAME=       pcre-3.1
-CATEGORIES=     devel
-MASTER_SITES=   ftp://ftp.cus.cam.ac.uk/pub/software/programs/pcre/
+PORTNAME=	pcre
+PORTVERSION=	3.1
+CATEGORIES=	devel
+MASTER_SITES=	ftp://ftp.cus.cam.ac.uk/pub/software/programs/pcre/
 
-MAINTAINER=     dom@myrddin.demon.co.uk
+MAINTAINER=	dom@myrddin.demon.co.uk
 
 # Implies GNU_CONFIGURE.
 USE_LIBTOOL=	yes

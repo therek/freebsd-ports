@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Curses
-# Version required:			1.02
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.12 1999/08/28 01:57:05 mharo Exp $
+# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.13 1999/08/31 06:41:59 mharo Exp $
 #
 
-DISTNAME=	Curses-1.02
-PKGNAME=	p5-Curses-1.02
+PORTNAME=	Curses
+PORTVERSION=	1.02
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Curses
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

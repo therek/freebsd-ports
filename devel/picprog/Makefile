@@ -1,12 +1,12 @@
 # New ports collection makefile for:    picprog
-# Version required:     1.0
 # Date created:         31 August 1999
 # Whom:                 Johan Kerckaert <kirk@bricsnet.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/picprog/Makefile,v 1.1.1.1 1999/11/01 04:03:46 steve Exp $
 #
 
-DISTNAME=	picprog-1.0
+PORTNAME=	picprog
+PORTVERSION=	1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://hyvatti.iki.fi/~jaakko/pic/
 

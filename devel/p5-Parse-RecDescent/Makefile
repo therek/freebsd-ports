@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Parse-RecDescent
-# Version required:			1.66
 # Date created:				July 9th 1999
 # Whom:	      				Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.3 2000/02/21 19:06:48 fenner Exp $
+# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.4 2000/02/21 19:46:16 green Exp $
 #
 
-DISTNAME=	Parse-RecDescent-1.66
-PKGNAME=	p5-Parse-RecDescent-1.66
+PORTNAME=	Parse-RecDescent
+PORTVERSION=	1.66
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Parse
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jhix@mindspring.com
 

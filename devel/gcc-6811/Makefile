@@ -1,13 +1,12 @@
 # New ports collection makefile for:	gcc11
-# Version required:	2.6.3
 # Date created:		Thu Sep 14 11:10:01 CDT 1995
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/devel/gcc11/Makefile,v 1.6 1999/08/25 05:47:59 obrien Exp $
+# $FreeBSD: ports/devel/gcc11/Makefile,v 1.7 1999/08/31 06:41:43 mharo Exp $
 #
 
-DISTNAME=	gcc11
-PKGNAME=	gcc11-2.6.3
+PORTNAME=	gcc11
+PORTVERSION=	2.6.3
 CATEGORIES=	devel
 MASTER_SITES=	ftp://nyquist.ee.ualberta.ca/pub/motorola/68hc11/gcc/ 
 DISTFILES=	gcc-6811-fsf.tar.gz gcc-2.6.3.tar.gz

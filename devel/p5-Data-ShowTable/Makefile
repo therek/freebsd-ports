@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-Data-ShowTable
-# Version required:			3.3
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.10 1999/08/25 05:49:02 obrien Exp $
+# $FreeBSD: ports/devel/p5-Data-ShowTable/Makefile,v 1.11 1999/08/31 06:42:01 mharo Exp $
 #
 
-DISTNAME=	Data-ShowTable-3.3
-PKGNAME=	p5-Data-ShowTable-3.3
+PORTNAME=	Data-ShowTable
+PORTVERSION=	3.3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Data
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

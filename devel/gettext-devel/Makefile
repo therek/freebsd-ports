@@ -1,12 +1,12 @@
 # New ports collection makefile for:   gettext
-# Version required:    0.10.35
 # Date created:        16 March 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/devel/gettext/Makefile,v 1.16 2000/01/07 19:47:03 ade Exp $
+# $FreeBSD: ports/devel/gettext/Makefile,v 1.17 2000/01/22 08:19:49 reg Exp $
 #
 
-DISTNAME=	gettext-0.10.35
+PORTNAME=	gettext
+PORTVERSION=	0.10.35
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gettext

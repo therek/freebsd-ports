@@ -1,15 +1,15 @@
-# New ports collection makefile for:	m68k-newlib-1.8.1
-# Version required:	1.8.1
+# New ports collection makefile for:	m68k-newlib
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/m68knewlib/Makefile,v 1.6 2000/01/07 18:15:39 fenner Exp $
+# $FreeBSD: ports/devel/m68knewlib/Makefile,v 1.7 2000/01/23 01:36:50 imura Exp $
 #
 
-DISTNAME=	newlib-1.8.1
-PKGNAME=	m68knewlib-1.8.1
+PORTNAME=	newlib
+PORTVERSION=	1.8.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/newlib/
+PKGNAMEPREFIX=	m68k
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	Doug Lea malloc library
-# Version required:	2.5.3b
 # Date created:		3 June 1995
 # Whom:			roberto
 #
-# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.12 1999/08/28 02:42:17 mharo Exp $
+# $FreeBSD: ports/devel/libdlmalloc/Makefile,v 1.13 1999/08/31 06:41:51 mharo Exp $
 #
 
-DISTNAME=	dlmalloc
-PKGNAME=	dlmalloc-2.6.5
+PORTNAME=	dlmalloc
+PORTVERSION=	2.6.5
 CATEGORIES=	devel
 MASTER_SITES=	ftp://gee.cs.oswego.edu/pub/misc/
 DISTFILES=	malloc-2.6.5.c

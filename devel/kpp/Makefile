@@ -1,12 +1,12 @@
 # New ports collection makefile for:	kpp
-# Version required:	0.16d
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kpp/Makefile,v 1.2 2000/03/22 01:58:58 will Exp $
+# $FreeBSD: ports/devel/kpp/Makefile,v 1.3 2000/03/27 08:14:54 will Exp $
 #
 
-DISTNAME=	kpp-0.16d
+PORTNAME=	kpp
+PORTVERSION=	0.16d
 CATEGORIES=	devel
 MASTER_SITES=	http://www.msoe.edu/~geiseri/files/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-TimeDate
-# Version required:		1.08
 # Date created:			Mon Sep  1 17:03:41 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.8 2000/02/20 17:01:10 andreas Exp $
+# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.9 2000/02/21 12:53:06 andreas Exp $
 #
 
-DISTNAME=	TimeDate-1.08
-PKGNAME=	p5-TimeDate-1.08
+PORTNAME=	TimeDate
+PORTVERSION=	1.08
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dima@Chg.RU
 

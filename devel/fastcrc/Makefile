@@ -1,12 +1,12 @@
 # New ports collection makefile for:	fastcrc
-# Version required:			1.0
 # Date created:				27 April 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.4 1999/08/28 01:57:02 mharo Exp $
+# $FreeBSD: ports/devel/fastcrc/Makefile,v 1.5 1999/09/27 01:53:41 steve Exp $
 #
 
-DISTNAME=	fastcrc-1.0
+PORTNAME=	fastcrc
+PORTVERSION=	1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.whizkidtech.net/fports/
 

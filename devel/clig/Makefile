@@ -1,12 +1,12 @@
 # New ports collection makefile for:   clig
-# Version required:    1.0.2
 # Date created:        27 July 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/devel/clig/Makefile,v 1.9 1999/11/28 18:30:53 steve Exp $
+# $FreeBSD: ports/devel/clig/Makefile,v 1.10 2000/02/04 23:39:38 mharo Exp $
 #
 
-DISTNAME=	clig-1.1.3
+PORTNAME=	clig
+PORTVERSION=	1.1.3
 CATEGORIES=	devel tcl82
 MASTER_SITES=	http://wsd.iitb.fhg.de/~kir/clighome/
 

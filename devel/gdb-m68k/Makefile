@@ -1,16 +1,16 @@
 # New ports collection makefile for:    m68kgdb
-# Version required:     4.18
 # Date created:         7 Jul 98
 # Whom:                 Jerry Hicks <Jerry.Hicks@Glenayre.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/m68kgdb/Makefile,v 1.9 1999/08/25 05:48:38 obrien Exp $
 #
 
-DISTNAME=	gdb-4.18
-PKGNAME=	m68kgdb-4.18
+PORTNAME=	gdb
+PORTVERSION=	4.18
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gdb
+PKGNAMEPREFIX=	m68k
 
 MAINTAINER=	Jerry.Hicks@Glenayre.com
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-FreezeThaw
-# Version required:			0.3
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-FreezeThaw/Makefile,v 1.5 1999/08/25 05:49:19 obrien Exp $
+# $FreeBSD: ports/devel/p5-FreezeThaw/Makefile,v 1.6 1999/08/31 06:42:13 mharo Exp $
 #
 
-DISTNAME=	FreezeThaw-0.3
-PKGNAME=	p5-FreezeThaw-0.3
+PORTNAME=	FreezeThaw
+PORTVERSION=	0.3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	FreezeThaw
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

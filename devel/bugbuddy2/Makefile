@@ -1,16 +1,16 @@
 # New ports collection makefile for:	bugbuddy
-# Version required:			0.7
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.2 2000/02/24 15:38:49 ade Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.3 2000/03/21 17:47:27 ade Exp $
 #
 
-DISTNAME=	bug-buddy-0.7
-PKGNAME=	bugbuddy-0.7
+PORTNAME=	bugbuddy
+PORTVERSION=	0.7
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/bug-buddy
+DISTNAME=	bug-buddy-${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 

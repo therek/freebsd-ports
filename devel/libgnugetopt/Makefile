@@ -1,12 +1,12 @@
 # New ports collection makefile for:	libgnugetopt
-# Version required:			1.1
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.7 2000/03/29 07:16:42 kris Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.8 2000/03/31 01:37:31 obrien Exp $
 #
 
-DISTNAME=	libgnugetopt-1.1
+PORTNAME=	libgnugetopt
+PORTVERSION=	1.1
 CATEGORIES=	devel
 MASTER_SITES= 	http://people.FreeBSD.org/~andy/distfiles/
 

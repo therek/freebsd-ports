@@ -1,17 +1,17 @@
 # New ports collection makefile for:	c_c++_reference.tar.gz
-# Version required:    1.08
 # Date created:        8 March 2000
 # Whom:                imura@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/c_c++_reference/Makefile,v 1.1 2000/03/07 16:34:28 imura Exp $
 #
 
-DISTNAME=	c_c++_reference
-PKGNAME=	c_c++_reference${QTTYPE}-1.08
+PORTNAME=	c_c++_reference${QTTYPE}
+PORTVERSION=	1.08
 CATEGORIES=	devel
 MASTER_SITES=	ftp://129.187.206.68/pub/unix/ide/KDevelop/documentation/ \
 		ftp://gd.tuwien.ac.at/hci/KDevelop/documentation/ \
 		ftp://fara.cs.uni-potsdam.de/pub/kdevelop/documentation/
+DISTNAME=	c_c++_reference
 
 MAINTAINER=	imura@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	libgii
-# Version required:	0.6
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libgii/Makefile,v 1.1 2000/01/29 04:57:40 steve Exp $
 #
 
-DISTNAME=	libgii-0.6
+PORTNAME=	libgii
+PORTVERSION=	0.6
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.ggi-project.org/pub/ggi/ggi/2_0_beta_2.1/
 

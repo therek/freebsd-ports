@@ -1,11 +1,11 @@
 # New ports collection makefile for:	avltree
-# Version required:			1.1
 # Date created:				13 January 2000
 # Whom:					Bill Ross <bross@nas.nasa.gov>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/avltree/Makefile,v 1.1 2000/01/29 05:00:11 steve Exp $
 
-DISTNAME=	avltree-1.1
+PORTNAME=	avltree
+PORTVERSION=	1.1
 CATEGORIES=	devel
 MASTER_SITES=	ftp://odin.compchem.ucsf.edu/pub/amber/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-Errno
-# Version required:			1.02
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Errno/Makefile,v 1.5 1999/08/25 05:49:09 obrien Exp $
+# $FreeBSD: ports/devel/p5-Errno/Makefile,v 1.6 1999/08/31 06:42:07 mharo Exp $
 #
 
-DISTNAME=	Errno-1.02
-PKGNAME=	p5-Errno-1.02
+PORTNAME=	Errno
+PORTVERSION=	1.02
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Errno
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

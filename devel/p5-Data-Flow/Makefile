@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Data-Flow
-# Version required:			0.05
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Data-Flow/Makefile,v 1.10 1999/08/25 05:49:01 obrien Exp $
+# $FreeBSD: ports/devel/p5-Data-Flow/Makefile,v 1.11 1999/08/31 06:42:00 mharo Exp $
 #
 
-DISTNAME=	Data-Flow-0.05
-PKGNAME=	p5-Data-Flow-0.05
+PORTNAME=	Data-Flow
+PORTVERSION=	0.05
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Data
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

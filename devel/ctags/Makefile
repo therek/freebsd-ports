@@ -1,12 +1,12 @@
 # New ports collection makefile for:   exctags
-# Version required:    3.4
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.7 2000/02/08 09:26:08 peter Exp $
+# $FreeBSD: ports/devel/ctags/Makefile,v 1.8 2000/02/17 08:31:21 jkoshy Exp $
 #
 
-DISTNAME=	ctags-3.4
+PORTNAME=	ctags
+PORTVERSION=	3.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}\
 		http://fly.hiwaay.net/~darren/archives/ \

@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-File-Lock
-# Version required:			0.9
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.8 1999/08/25 05:49:12 obrien Exp $
+# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.9 1999/08/31 06:42:09 mharo Exp $
 #
 
-DISTNAME=	File-Lock-0.9
-PKGNAME=	p5-File-Lock-0.9
+PORTNAME=	File-Lock
+PORTVERSION=	0.9
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

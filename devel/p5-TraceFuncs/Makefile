@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-TraceFuncs
-# Version required:			0.1
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.5 1999/08/25 05:49:44 obrien Exp $
+# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.6 1999/08/31 06:42:34 mharo Exp $
 #
 
-DISTNAME=	traceFunc-0.1
-PKGNAME=	p5-TraceFuncs-0.1
+PORTNAME=	traceFunc
+PORTVERSION=	0.1
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

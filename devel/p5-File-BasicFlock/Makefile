@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-File-BasicFlock
-# Version required:			96.072401
 # Date created:				1996/10/24
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.10 1999/08/31 06:42:08 mharo Exp $
+# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.11 2000/02/05 00:29:45 mharo Exp $
 #
 
-DISTNAME=	File-BasicFLock-96.072401
-PKGNAME=	p5-File-BasicFlock-96.072401
+PORTNAME=	File-BasicFlock
+PORTVERSION=	96.072401
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	noweb
-# Version required:	noweb-2.9a
 # Date created:		29 July 1995
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/devel/noweb/Makefile,v 1.14 1999/08/25 05:48:54 obrien Exp $
+# $FreeBSD: ports/devel/noweb/Makefile,v 1.15 1999/08/31 06:41:54 mharo Exp $
 #
 
-DISTNAME=	noweb-2.9a
+PORTNAME=	noweb
+PORTVERSION=	2.9a
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.virginia.edu/pub/nr/
 EXTRACT_SUFX=	.tgz

@@ -1,15 +1,15 @@
 # ex:ts=8
 # Ports collection makefile for:  mprof
-# Version required: 0.0
 # Date created:			  Sat Nov  5 01:16:33 PST 1994
 # Whom:				  hsu
 #
-# $FreeBSD: ports/devel/mprof/Makefile,v 1.13 2000/03/20 02:36:50 obrien Exp $
+# $FreeBSD: ports/devel/mprof/Makefile,v 1.14 2000/03/22 00:27:15 obrien Exp $
 #
 
-DISTNAME=       mprof-3.0
+PORTNAME=	mprof
+PORTVERSION=	3.0
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.cs.colorado.edu/pub/misc/
+MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/misc/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org

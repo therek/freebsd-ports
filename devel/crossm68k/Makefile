@@ -1,12 +1,12 @@
 # New ports collection makefile for:	crossm68k
-# Version required:    2.0
 # Date created:        7 July 1997
 # Whom:                Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/crossm68k/Makefile,v 1.4 1999/08/25 05:47:37 obrien Exp $
 #
 
-DISTNAME=	crossm68k-2.0
+PORTNAME=	crossm68k
+PORTVERSION=	2.0
 CATEGORIES=	devel
 MASTER_SITES=	# empty
 DISTFILES=	# empty

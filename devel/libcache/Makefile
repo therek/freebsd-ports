@@ -1,12 +1,12 @@
 # New ports collection makefile for:	libcache
-# Version required:	1.0.0
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/libcache/Makefile,v 1.1 2000/02/13 02:00:58 imura Exp $
+# $FreeBSD: ports/devel/libcache/Makefile,v 1.2 2000/03/22 01:58:59 will Exp $
 #
 
-DISTNAME=	libcache-1.0.0
+PORTNAME=	libcache
+PORTVERSION=	1.0.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.afro-productions.com/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	cutils
-# Version required:		1.4
 # Date created:			26 November 1996
 # Whom:				Sandro Sigala
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cutils/Makefile,v 1.7 1999/08/25 05:47:44 obrien Exp $
 #
 
-DISTNAME=	cutils-1.4
+PORTNAME=	cutils
+PORTVERSION=	1.4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

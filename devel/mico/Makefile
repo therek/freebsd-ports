@@ -1,12 +1,12 @@
 # New ports collection makefile for:   mico
-# Version required:    2.3.1
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.40 2000/01/30 02:11:32 scrappy Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.41 2000/01/31 14:39:49 scrappy Exp $
 #
 
-DISTNAME=	mico-2.3.1
+PORTNAME=	mico
+PORTVERSION=	2.3.1
 CATEGORIES=	devel
 MASTER_SITES=	http://diamant-atm.vsb.cs.uni-frankfurt.de/~mico/
 

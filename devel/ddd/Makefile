@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  ddd
-# Version required: 0.0
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.27 2000/03/20 02:36:14 obrien Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.28 2000/03/22 00:26:46 obrien Exp $
 #
 
-DISTNAME=	ddd-3.2.1
+PORTNAME=	ddd
+PORTVERSION=	3.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= ddd

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    nana
-# Version required:     2.4
 # Date created:         30th May 1999
 # Whom:                 Phil Maker <pjm@gnu.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/nana/Makefile,v 1.5 1999/08/25 05:48:48 obrien Exp $
 #
 
-DISTNAME=	nana-2.4
+PORTNAME=	nana
+PORTVERSION=	2.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.ntu.edu.au/pub/nana/
 

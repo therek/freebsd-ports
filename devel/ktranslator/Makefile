@@ -1,12 +1,12 @@
 # New ports collection makefile for:   ktranslator
-# Version required:    0.4.0
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.5 2000/02/23 00:14:05 asami Exp $
+# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.6 2000/02/24 07:00:49 asami Exp $
 #
 
-DISTNAME=	ktranslator-0.4.0
+PORTNAME=	ktranslator
+PORTVERSION=	0.4.0
 CATEGORIES=	devel kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1/apps/utils

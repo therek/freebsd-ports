@@ -1,16 +1,16 @@
 # New ports collection makefile for:   p5-Locale-PGetText
-# Version required:    0.16
 # Date created:        27 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Locale-PGetText/Makefile,v 1.1.1.1 2000/01/29 12:43:53 nakai Exp $
 #
 
-DISTNAME=	Locale-PGetText-0.16
-PKGNAME=	p5-Locale-PGetText-0.16
+PORTNAME=	Locale-PGetText
+PORTVERSION=	0.16
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Locale
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	nakai@FreeBSD.org
 

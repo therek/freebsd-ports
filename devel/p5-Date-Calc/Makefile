@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Date-Calc
-# Version required:                     4.3
 # Date created:				25 February 2000
 # Whom:	      				Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Date-Calc/Makefile,v 1.1 2000/02/25 16:34:14 ade Exp $
 #
 
-DISTNAME=       Date-Calc-4.3
-PKGNAME=	p5-Date-Calc-4.3
+PORTNAME=	Date-Calc
+PORTVERSION=	4.3
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bradh@uunet.co.za
 

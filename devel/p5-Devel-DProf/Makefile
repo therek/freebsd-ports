@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Devel-DProf
-# Version required:			19990108
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-DProf/Makefile,v 1.9 1999/08/25 05:49:05 obrien Exp $
+# $FreeBSD: ports/devel/p5-Devel-DProf/Makefile,v 1.10 1999/08/31 06:42:03 mharo Exp $
 #
 
-DISTNAME=	DProf-19990108
-PKGNAME=	p5-Devel-DProf-19990108
+PORTNAME=	DProf
+PORTVERSION=	19990108
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
+PKGNAMEPREFIX=	p5-Devel-
 
 MAINTAINER=	jfitz@FreeBSD.org
 

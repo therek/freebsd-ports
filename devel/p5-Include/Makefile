@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Include
-# Version required:			1.02a
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Include/Makefile,v 1.10 1999/08/25 05:49:21 obrien Exp $
+# $FreeBSD: ports/devel/p5-Include/Makefile,v 1.11 1999/08/31 06:42:16 mharo Exp $
 #
 
-DISTNAME=	Include-1.02a
-PKGNAME=	p5-Include-1.02a
+PORTNAME=	Include
+PORTVERSION=	1.02a
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Include
+PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jfitz@FreeBSD.org
 
