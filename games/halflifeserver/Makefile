@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.9 2001/04/08 14:05:37 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.10 2001/04/08 14:14:11 lioux Exp $
 #
 
 PORTNAME=	hlds
@@ -44,8 +44,11 @@ HL_PROGRAM=	hlds_run
 
 pre-patch:
 # remove trailing ^M
-.for file in */*.cfg */*.lst *.txt */*.txt */*.htm */*.gam
-	@${PERL} -pi -ne 's!\r\n!\n!' ${WRKSRC}/${file}
+.for file in
+.for file in *.cfg */*.cfg *.gam */*.gam *.htm */*.htm \
+	*.inf */*.inf *.lst */*.lst *.sc */*.sc \
+	*.scr */*.scr *.txt */*.txt
+	@${PERL} -pi -ne 's!\r\n!\n!' ${WRKSRC}/${file} >/dev/null 2>/dev/null
 .endfor
 
 do-install: install-files scan-libs
