@@ -2,7 +2,7 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.23 2000/06/09 21:21:52 asami Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.24 2000/08/03 09:25:23 asami Exp $
 #
 
 PORTNAME=	mew-${EMACS_PORT_NAME}
@@ -129,7 +129,7 @@ SITE_STARTUP_FILE=	mew-xemacs-startup.el
 .elif (${EMACS_PORT_NAME} == "xemacs21")
 BUILD_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/xemacs21
 EMACS_NAME=		xemacs
-EMACS_VER=		21.1.9
+EMACS_VER=		21.1.12
 EMACS_MAJOR_VER=	21
 EMACS_CMD=		${EMACS_NAME}${EMACS_MAJOR_VER}
 EMACS_LIBDIR=		lib/${EMACS_NAME}
