@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.97 2001/02/15 11:26:38 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.98 2001/02/15 12:12:26 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -49,7 +49,7 @@ MLINKS+=	vim.1 gvim.1  vim.1 gview.1  vim.1 rgvim.1  vim.1 rgview.1
 
 .if !defined(LITE)
 MAKE_ARGS+=	X_LIBS=-lxpg4 CONF_OPT_MAX="--enable-max-features"
-I18N=		CONF_OPT_MULTIBYTE="--enable-multibyte --enable-fontset --enable-multibyte --enable-xim"
+I18N=		CONF_OPT_MULTIBYTE="--enable-multibyte --enable-fontset --enable-xim"
 
 .if defined(WITH_ATHENA)
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=athena" ${I18N}
