@@ -2,12 +2,11 @@
 # Date created:		16 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.6 2001/08/21 14:55:14 wjv Exp $
+# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.7 2001/08/22 11:22:14 wjv Exp $
 #
 
 PORTNAME=	twisted
-PORTVERSION=	0.10.0
-PORTREVISION=	3
+PORTVERSION=	0.10.1
 CATEGORIES=	devel net python
 MASTER_SITES=	http://twistedmatrix.com/downloads/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -25,7 +24,7 @@ USE_PYTHON=	yes
 EXAMPLESDIR=	${PREFIX}/share/examples/twisted
 SCRIPTS=	accepttests cpyrght faucet gnusto im malyon manhole \
 		mapeditor mktap runtests twistd twistd-debug
-MAN1=		faucet.1 gnusto.1 im.1 manhole.1 mktap.1 tap2deb.1 twistd.1
+MAN1=		faucet.1 gnusto.1 im.1 manhole.1 mktap.1 twistd.1
 
 post-patch:
 	@ ${PERL} -pi -e 's/from pyunit import/import/g' \
@@ -53,7 +52,7 @@ post-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/${docfile} ${DOCSDIR}
 .endfor
 	@ ${MKDIR} ${EXAMPLESDIR}
-	@ ${INSTALL_DATA} ${WRKSRC}/doc/examples/*.py ${EXAMPLESDIR}
+	@ ${INSTALL_DATA} ${WRKSRC}/doc/examples/* ${EXAMPLESDIR}
 .endif
 
 .include <bsd.port.mk>
