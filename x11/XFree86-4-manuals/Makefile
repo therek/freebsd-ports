@@ -1,17 +1,17 @@
-# New ports collection makefile for:	XFree86-4-manuals-4.0.1
+# New ports collection makefile for:	XFree86-manuals
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-manuals/Makefile,v 1.4 2001/03/25 23:04:44 sf Exp $
+# $FreeBSD: ports/x11/XFree86-4-manuals/Makefile,v 1.5 2001/03/29 12:04:21 sf Exp $
 #
 
 PORTNAME=	manuals
-PORTVERSION=	4.0.3
+PORTVERSION=	4.1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XFREE}
-MASTER_SITE_SUBDIR=	4.0.2
+MASTER_SITE_SUBDIR=	4.1.0
 PKGNAMEPREFIX=	XFree86-
-DISTFILES=	X402src-1.tgz
+DISTFILES=	X410src-1.tgz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
