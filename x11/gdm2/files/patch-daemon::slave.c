@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11/gdm/files/patch-daemon::slave.c,v 1.5 2002/01/11 14:04:37 sobomax Exp $
 
 --- daemon/slave.c.orig	Tue Jan  1 04:48:07 2002
 +++ daemon/slave.c	Fri Jan 11 15:51:27 2002
@@ -52,16 +52,6 @@ $FreeBSD$
  static char *
  dequote (const char *in)
  {
-@@ -1823,6 +1851,9 @@
- 	char *sesspath, *sessexec;
- 	gboolean need_config_sync = FALSE;
- 	const char *shell = NULL;
-+#ifdef HAVE_LOGINCAP
-+	char *lang = NULL;
-+#endif
- 
- 	ve_clearenv ();
- 
 @@ -1840,12 +1871,6 @@
  	if (gnome_session != NULL)
  		ve_setenv ("GDM_GNOME_SESSION", gnome_session, TRUE);
