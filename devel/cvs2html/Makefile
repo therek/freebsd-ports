@@ -2,11 +2,11 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.9 2001/08/08 22:44:34 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cvs2html
-PORTVERSION=	1.90
+PORTVERSION=	1.91
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sada
