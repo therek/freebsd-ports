@@ -2,7 +2,7 @@
 # Date created:		3 November 2000
 # Whom:			Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/devel/arm-elf-gcc295/Makefile,v 1.2 2001/01/19 20:25:52 sf Exp $
+# $FreeBSD: ports/devel/arm-elf-gcc295/Makefile,v 1.3 2001/04/17 09:53:12 obrien Exp $
 #
 
 PORTNAME=	gcc
@@ -47,7 +47,8 @@ pre-extract:
 
 post-configure:
 	${PERL} -pi.bak -e 's,^(TARGET_CONFIGDIRS\s*=),\1#,' ${WRKSRC}/Makefile
-	${PERL} -pi.bak -e 's,^(install-info:),\1\ndonot-\1,' \
+	${PERL} -pi.bak -e 's,^(install-info:),\1\ndonot-\1,; \
+	    s,\$$\(bindir\)/(\$$\(DEMANGLER_CROSS_NAME\)),./\1,' \
 	    ${WRKSRC}/gcc/Makefile
 
 post-install:
