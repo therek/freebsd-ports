@@ -2,12 +2,13 @@
 # Date created:				19 Aug 1998
 # Whom:					ichiro@ichiro.org
 #
-# $FreeBSD: ports/japanese/gd/Makefile,v 1.14 2001/02/06 13:21:53 olgeni Exp $
+# $FreeBSD$
 #
 
 CATEGORIES=	japanese
 
 MAINTAINER=	ichiro@ichiro.org
+COMMENT=	A graphics library for fast image creation with Japanese support
 
 MASTERDIR=	${.CURDIR}/../../graphics/gd
 
