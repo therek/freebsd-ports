@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.300 2000/10/21 20:40:55 knu Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.301 2000/10/23 15:24:16 imura Exp $
 #
 
     SUBDIR += 221upgrade
@@ -114,6 +114,7 @@
     SUBDIR += py-distutils
     SUBDIR += qclock
     SUBDIR += qhacc
+    SUBDIR += qlas
     SUBDIR += quotes
     SUBDIR += quranref
     SUBDIR += rfc
