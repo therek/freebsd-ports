@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.57 2000/10/20 15:31:02 kevlo Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.58 2000/10/20 15:48:45 kevlo Exp $
 #
     SUBDIR += xemacs21
     SUBDIR += xmms
@@ -34,7 +34,6 @@
     SUBDIR += nvi-big5
     SUBDIR += nvi-euc-cn
     SUBDIR += nvi-euc-tw
-    SUBDIR += pine3
     SUBDIR += pine4
     SUBDIR += pyDict
     SUBDIR += rxvt
