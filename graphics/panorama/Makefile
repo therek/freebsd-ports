@@ -2,14 +2,13 @@
 # Date created:				14 Sept 2000
 # Whom:					Aaron VonderHaar <avh4@usa.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/panorama/Makefile,v 1.1 2000/09/16 05:38:01 will Exp $
 #
 
 PORTNAME=	panorama
 PORTVERSION=	0.13.2
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://alpha.gnu.org/gnu/ \
-		http://www.vnet.es/~ajimenez/
+MASTER_SITES=	ftp://alpha.gnu.org/gnu/
 
 MAINTAINER=	avh4@usa.net
 
