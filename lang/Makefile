@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.237 2001/06/26 12:18:04 tg Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.238 2001/07/08 07:57:37 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -86,6 +86,7 @@
     SUBDIR += o2c
     SUBDIR += objc
     SUBDIR += ocaml
+    SUBDIR += onyx
     SUBDIR += oo2c
     SUBDIR += otcl
     SUBDIR += p2c
