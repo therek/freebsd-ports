@@ -2,13 +2,13 @@
 # Date created:				9 November 1997
 # Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/llnlxftp/Makefile,v 1.6 1999/08/31 06:44:02 mharo Exp $
+# $FreeBSD: ports/ftp/llnlxftp/Makefile,v 1.7 2000/04/12 05:31:14 mharo Exp $
 #
 
 PORTNAME=	llnlxftp
 PORTVERSION=	2.1
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://ftp-lc.llnl.gov/pub/ia/llnlxftp/
+MASTER_SITES=	ftp://ftp.llnl.gov/pub/ia/llnlxftp/
 DISTNAME=	latest_xftp
 EXTRACT_SUFX=	.tar.Z
 
