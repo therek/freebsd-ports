@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.88 2002/09/24 20:07:07 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.89 2002/09/27 13:55:39 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -359,6 +359,10 @@ RUN_DEPENDS+=		${DEPEND_RUBY_SHIM18}
 .if defined(USE_RUBY_AMSTD)
 BUILD_DEPENDS+=		${DEPEND_RUBY_AMSTD}
 RUN_DEPENDS+=		${DEPEND_RUBY_AMSTD}
+.endif
+
+.if ${ARCH} == alpha && defined(USE_RUBY_RD)
+NOPORTDOCS=	yes
 .endif
 
 .if defined(USE_RUBY_RD) && !defined(NOPORTDOCS)
