@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/release/doit.sh,v 1.1 2002/03/27 00:52:59 will Exp $
 
 dir=`dirname $0`
 if [ "X$dir" = "X." ]; then
@@ -19,7 +19,7 @@ fi
   dists="$ports/distfiles"
    logs="$dir/gen"
    pkgs="$ports/packages/All"
-scripts="$dir/scripts"
+scripts="$dir"
    xdep="XFree86-3.3.6_10"
 
 #

@@ -1,4 +1,4 @@
-$FreeBSD: ports/Tools/scripts/release/README,v 1.1 2002/03/27 00:45:47 will Exp $
+$FreeBSD: ports/Tools/scripts/release/README,v 1.2 2002/03/27 00:52:59 will Exp $
 
 This directory contains the scripts that are used to break up the packages
 for a given release, so that they fit on a particular 4 CD set.  They rely
@@ -11,7 +11,7 @@ The approximate procedure is:
 2) cvs rtag RELEASE_4_5_0 ports
 
 1) cd /a/steve/4.5/i386/RC3
-2) ./scripts/setup.sh (may want to redirect stdout to a file,
+2) ./setup.sh (may want to redirect stdout to a file,
    as this gives copious output.)
 3) ./doit.sh
 
