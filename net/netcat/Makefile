@@ -3,7 +3,7 @@
 # Date created:			  Thur Nov 21, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/netcat/Makefile,v 1.8 2000/03/22 00:27:23 obrien Exp $
+# $FreeBSD: ports/net/netcat/Makefile,v 1.9 2000/04/09 18:12:30 cpiazza Exp $
 #
 
 PORTNAME=	netcat
@@ -14,8 +14,8 @@ MASTER_SITES=	ftp://avian.org/src/hacks/  \
 		ftp://zippy.telcom.arizona.edu/pub/mirrors/avian.org/hacks/  \
 		ftp://ftp.sterling.com/mirrors/avian.org/src/hacks/  \
 		ftp://ftp.rge.com/pub/security/coast/mirrors/avian.org/netcat/
-EXTRACT_SUFX=	.tgz
 DISTNAME=	nc110
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
 
