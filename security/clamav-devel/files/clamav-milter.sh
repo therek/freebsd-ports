@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.sh,v 1.2 2003/10/03 13:31:26 dinoex Exp $
+# $FreeBSD: ports/security/clamav-devel/files/clamav-milter.sh,v 1.3 2004/01/13 16:22:04 dinoex Exp $
 #
 
 # PROVIDE: clamav-milter
@@ -9,9 +9,9 @@
 # KEYWORD: FreeBSD shutdown
 
 #
-# Add the following lines to /etc/rc.conf to enable clamd:
+# Add the following lines to /etc/rc.conf to enable clamav-milter:
 #
-#clamav_milter="YES"
+#clamav_milter_enable="YES"
 #
 # See clamav-milter(1) for flags
 #
@@ -37,7 +37,7 @@ start_precmd()
 
 # set defaults
 
-clamav_milter=${clamav_milter:-"NO"}
+clamav_milter_enable=${clamav_milter_enable:-"NO"}
 clamav_milter_socket=${clamav_milter_socket:-"%%CLAMAV_MILTER_SOCKET%%"}
 clamav_milter_flags=${clamav_milter_flags:-"--postmaster-only --local --outgoing --max-children=50"}
 
