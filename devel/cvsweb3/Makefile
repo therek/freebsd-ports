@@ -2,11 +2,11 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.16 2000/06/29 02:31:16 asami Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.17 2000/07/11 02:07:19 knu Exp $
 #
 
 PORTNAME=	cvsweb
-PORTVERSION=	1.86
+PORTVERSION=	1.89
 CATEGORIES=	devel www
 MASTER_SITES=	http://stud.fh-heilbronn.de/~zeller/download/ \
 		${MASTER_SITE_LOCAL}
