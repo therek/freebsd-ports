@@ -2,18 +2,16 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.29 2001/07/25 23:32:57 vanilla Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.30 2001/08/04 17:28:59 nbm Exp $
 #
 
 PORTNAME=	zope
-PORTVERSION=	2.4.0
-PORTREVISION=	1
+PORTVERSION=	2.4.1
+PORTREVISION=	0
 CATEGORIES=	www python zope
-MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/ \
-		http://www.zope.org/Products/Zope/Hotfix_2001-08-04/
+MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
 DISTNAME=	Zope-${PORTVERSION}-src
-DISTFILES=	${DISTNAME}.tgz \
-		Hotfix_2001_08_04.tgz
+DISTFILES=	${DISTNAME}.tgz
 
 MAINTAINER=	nbm@FreeBSD.org
 
@@ -64,7 +62,7 @@ do-install:
 	@${ECHO} "===>   Please be patient, some builds need their time."
 	@${ECHO} "===>   Copying..."
 	@${CP} -Rp ${WRKSRC}/* ${ZOPEBASEDIR}/
-	@${CP} -Rp ${WRKDIR}/lib ${ZOPEBASEDIR}/
+	#@${CP} -Rp ${WRKDIR}/lib ${ZOPEBASEDIR}/
 	@#
 	@${CHMOD} -R u+w ${ZOPEBASEDIR}
 	@(cd ${ZOPEBASEDIR} && ${PYTHON_CMD} w_pcgi.py)
