@@ -2,19 +2,19 @@
 # Date created:		1 May 2000
 # Whom:			Conrad Sabatier <conrads@home.com>
 #
-# $FreeBSD: ports/www/xswallow/Makefile,v 1.1.1.1 2000/08/03 04:05:48 sada Exp $
+# $FreeBSD: ports/www/xswallow/Makefile,v 1.2 2000/09/16 10:31:59 asami Exp $
 #
 
 PORTNAME=	xswallow
-PORTVERSION=	1.0.17
+PORTVERSION=	1.0.18
 CATEGORIES=	www
 MASTER_SITES=	http://www.csn.ul.ie/~caolan/publink/X/
-DISTNAME=	XswallowSource-1.0.17
+DISTNAME=	XswallowSource-1.0.18
 
 MAINTAINER=	conrads@home.com
 
 USE_XLIB=	yes
-WRKSRC=		${WRKDIR}/PluginSDK30b5/xswallow
+WRKSRC=		${WRKDIR}/xswallow/xswallow
 
 PORTOBJFORMAT=	aout
 
