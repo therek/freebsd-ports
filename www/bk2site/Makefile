@@ -3,7 +3,7 @@
 # Date created:                   Wed Dec 06, 2000
 # Whom:                           clive
 #
-# $FreeBSD: ports/www/bk2site/Makefile,v 1.2 2001/01/01 20:26:46 clive Exp $
+# $FreeBSD: ports/www/bk2site/Makefile,v 1.3 2001/01/02 23:16:11 clive Exp $
 #
 
 PORTNAME=	bk2site
@@ -55,6 +55,7 @@ post-install:
 	${CP} ${WRKSRC}/*.html ${PREFIX}/etc/${PORTNAME}
 	${CP} ${WRKSRC}/*.gif ${PREFIX}/${ICONSDIR}
 	${CP} ${WRKSRC}/*.pl ${PREFIX}/${CGIDIR}
+	${CHMOD} +x ${PREFIX}/${CGIDIR}/*.pl
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
