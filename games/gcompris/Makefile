@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gcompris
-# Date created:		21 July 2000
-# Whom:			Maxim Sobolev
+# Date created:				21 July 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gcompris/Makefile,v 1.3 2000/07/24 16:13:20 sobomax Exp $
+# $FreeBSD: ports/games/gcompris/Makefile,v 1.4 2000/09/13 09:08:08 sobomax Exp $
 #
 
 PORTNAME=	gcompris
-PORTVERSION= 	0.2.3
+PORTVERSION= 	0.3.1
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
