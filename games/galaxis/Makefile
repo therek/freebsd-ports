@@ -2,13 +2,13 @@
 # Date created:				30 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/galaxis/Makefile,v 1.6 2000/08/02 00:19:58 jedgar Exp $
+# $FreeBSD: ports/games/galaxis/Makefile,v 1.7 2001/02/03 15:05:06 kevlo Exp $
 #
 
 PORTNAME=	galaxis
 PORTVERSION=	1.2
 CATEGORIES=	games
-MASTER_SITES=	http://www.tuxedo.org/~esr/
+MASTER_SITES=	http://www.tuxedo.org/~esr/galaxis/
 
 MAINTAINER=	ports@FreeBSD.org
 
