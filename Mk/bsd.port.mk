@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.350 2000/09/13 07:16:49 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.351 2000/09/22 01:17:17 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -657,8 +657,11 @@ PREFIX?=		${LOCALBASE}
 OPENSSLBASE=	/usr
 OPENSSLDIR=		/etc/ssl
 # OpenSSL in the base system may not include IDEA for patent licensing reasons.
-OPENSSL_IDEA?=	${MAKE_IDEA}
+.if defined(MAKE_IDEA) && !defined(OPENSSL_IDEA)
+OPENSSL_IDEA=	${MAKE_IDEA}
+.else
 OPENSSL_IDEA?=	NO
+.endif
 .if ${OPENSSL_IDEA} == "NO"
 # XXX This is a hack to work around the fact that /etc/make.conf clobbers
 #     our CFLAGS. It might not be enough for all future ports.
