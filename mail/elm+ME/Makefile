@@ -2,12 +2,11 @@
 # Date created:         26 June 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.59 2000/04/21 07:12:56 mharo Exp $
+# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.60 2000/05/24 10:26:04 ache Exp $
 #
-# WARNING: it is NOT official Elm 2.*
 
 PORTNAME=	elm
-PORTVERSION=	2.4ME+77
+PORTVERSION=    2.4ME+82
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ozone.fmi.fi/KEH/ \
 		ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
@@ -18,7 +17,7 @@ MAINTAINER=	ache@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION:S/ME+/\.ME+\./}
 MAN1=		answer.1 checkalias.1 elm.1 elmalias.1 fastmail.1 \
 		frm.1 listalias.1 messages.1 newalias.1 newmail.1 \
-		printmail.1 readmsg.1 elmcharset.1
+		printmail.1 readmsg.1 elmcharset.1 elmterminal.1
 MLINKS=		frm.1 nfrm.1	newmail.1 wnewmail.1
 
 HAS_CONFIGURE=	Yes
