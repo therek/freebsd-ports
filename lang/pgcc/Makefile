@@ -4,7 +4,7 @@
 # Date created:				10 Dec 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/pgcc/Makefile,v 1.20 1999/09/05 22:05:57 obrien Exp $
+# $FreeBSD: ports/lang/pgcc/Makefile,v 1.21 1999/09/08 10:41:55 obrien Exp $
 #
 
 DISTNAME=	gcc-2.95.1
@@ -96,7 +96,7 @@ post-install:
 	do \
 		strip $$prog ; \
 	done)
-	${MV} ${PREFIX}/bin/i386-portbld-freebsd4.0-gcc ${PREFIX}/bin/i386-portbld-freebsd4.0-pgcc
+	${MV} ${PREFIX}/bin/${CONFIGURE_TARGET}-gcc ${PREFIX}/bin/${CONFIGURE_TARGET}-pgcc
 	${MV} ${PREFIX}/bin/gcc ${PREFIX}/bin/pgcc
 	${MV} ${PREFIX}/bin/g++ ${PREFIX}/bin/pg++
 	${MV} ${PREFIX}/bin/g77 ${PREFIX}/bin/pg77
