@@ -2,12 +2,14 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ruby-usersguide/Makefile,v 1.1 2000/08/30 09:33:00 knu Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../lang/ruby-usersguide
 
-MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/doc/
+MASTER_SITES=	${MASTER_SITE_RUBY}
+MASTER_SITE_SUBDIR=	doc
+DISTNAME=	${SHORTNAME}-${VERSION}
 
 CATEGORIES=	japanese
 
@@ -19,8 +21,5 @@ FILESDIR=	${.CURDIR}/files
 PKGDIR=		${.CURDIR}/pkg
 
 LANGSUFFIX=	-jp
-
-pre-install:
-	${LN} -sf uguide00.html ${WRKSRC}/index.html
 
 .include "${MASTERDIR}/Makefile"
