@@ -2,7 +2,7 @@
 # Date created:			5 December 1996
 # Whom:				Pedro Giffuni
 #
-# $FreeBSD: ports/x11/libsx/Makefile,v 1.9 1999/08/31 02:50:33 peter Exp $
+# $FreeBSD: ports/x11/libsx/Makefile,v 1.10 2000/04/13 19:09:51 cpiazza Exp $
 #
 
 PORTNAME=	libsx
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	giffunip@asme.org
 
-LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 
 USE_X_PREFIX=	yes
 ALL_TARGET=	src freq

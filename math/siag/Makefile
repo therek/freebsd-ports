@@ -2,7 +2,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD: ports/math/siag/Makefile,v 1.28 2000/08/03 09:25:42 asami Exp $
+# $FreeBSD: ports/math/siag/Makefile,v 1.29 2000/08/04 01:05:13 ade Exp $
 #
 
 PORTNAME=	siag
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.siag.nu/pub/siag/ \
 
 MAINTAINER=	mi@aldan.algebra.com
 
-LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d \
+LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d \
 		Magick:${PORTSDIR}/graphics/ImageMagick
 RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot \
 		mswordview:${PORTSDIR}/textproc/mswordview \

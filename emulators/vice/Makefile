@@ -2,7 +2,7 @@
 # Date created:		Mar 28, 1998
 # Whom:			dchapes@ddm.on.ca
 #
-# $FreeBSD: ports/emulators/vice/Makefile,v 1.12 2000/02/02 22:46:20 jedgar Exp $
+# $FreeBSD: ports/emulators/vice/Makefile,v 1.13 2000/04/12 04:56:02 mharo Exp $
 
 PORTNAME=	vice
 PORTVERSION=	1.2
@@ -11,7 +11,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/cbm/crossplatform/emulators/VICE/
 
 MAINTAINER=	dchapes@ddm.on.ca
 
-LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 
 WRKSRC=		${WRKDIR}/vice-1.2
 USE_XLIB=	yes

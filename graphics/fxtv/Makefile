@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.29 2000/08/03 09:24:38 asami Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.30 2000/08/08 02:55:04 steve Exp $
 #
 
 PORTNAME=	fxtv
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	aa8vb@nc.rr.com
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
-		Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d
+		Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 
 # This program does not actually require the programs below unless you
 #   use audio/video recording and/or playback and save to a non-raw format.
