@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.42 2003/06/16 20:47:13 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.43 2003/06/16 21:09:18 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -369,7 +369,7 @@ gtksourceview_USE_GNOME_IMPL=libgnome
 
 pkgconfig_BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 pkgconfig_DETECT=			${LOCALBASE}/bin/pkg-config
-pkgconfig_RUN_DEPENDS=		pkg_config:${PORTSDIR}/devel/pkgconfig
+pkgconfig_RUN_DEPENDS=		pkg-config:${PORTSDIR}/devel/pkgconfig
 
 libgsf_LIB_DEPENDS=			gsf-1.9:${PORTSDIR}/devel/libgsf
 libgsf_DETECT=				${LOCALBASE}/libdata/pkgconfig/libgsf-gnome-1.pc
