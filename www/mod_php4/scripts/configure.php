@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.126 2001/04/21 11:43:07 vanilla Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.127 2001/04/23 04:25:26 vanilla Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -173,9 +173,7 @@ while [ "$1" ]; do
 			LIBS="${LIBS} -L\${OPENSSLBASE}/lib -lcrypto -lssl"
 			;;
 		\"XML\")
-			echo "BUILD_DEPENDS+=	\${PREFIX}/lib/libexpat.a:\${PORTSDIR}/textproc/expat"
-			echo "BUILD_DEPENDS+=	\${PREFIX}/include/xml/xmlparse.h:\${PORTSDIR}/textproc/expat"
-			echo "BUILD_DEPENDS+=	\${PREFIX}/include/xml/xmltok.h:\${PORTSDIR}/textproc/expat"
+			echo "LIB_DEPENDS+=	expat.2:\${PORTSDIR}/textproc/expat2"
 			echo "CONFIGURE_ARGS+=--with-xml=\${PREFIX}"
 			;;
 		\"FTP\")
