@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.75 2000/06/13 08:56:27 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.76 2000/06/13 09:25:23 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -8,9 +8,11 @@
     SUBDIR += clean-theme-gtk
     SUBDIR += fltk
     SUBDIR += fox
+    SUBDIR += gnome-look
     SUBDIR += gob
     SUBDIR += gtk--
     SUBDIR += gtk-engines
+    SUBDIR += gtk-engines-collection
     SUBDIR += gtk10
     SUBDIR += gtk12
     SUBDIR += gtkglarea
