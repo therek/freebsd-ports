@@ -2,7 +2,7 @@
 # Date created:				30 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg-xmms/Makefile,v 1.4 2001/04/03 09:35:06 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smpeg-xmms
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.xmms.org/xmms/plugins/smpeg-xmms/
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	smpeg.1:${PORTSDIR}/graphics/smpeg \
-		xmms.1:${PORTSDIR}/audio/xmms
+		xmms.2:${PORTSDIR}/audio/xmms
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 

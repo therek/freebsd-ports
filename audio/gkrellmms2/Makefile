@@ -2,7 +2,7 @@
 # Date Created:		Jun 22 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gkrellmms/Makefile,v 1.3 2001/02/04 21:12:45 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gkrellmms
@@ -12,7 +12,7 @@ MASTER_SITES=	http://gkrellm.luon.net/files/
 
 MAINTAINER=	ume@FreeBSD.org
 
-LIB_DEPENDS=	xmms.1:${PORTSDIR}/audio/xmms
+LIB_DEPENDS=	xmms.2:${PORTSDIR}/audio/xmms
 BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 

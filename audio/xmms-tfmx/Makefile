@@ -2,7 +2,7 @@
 # Date created:			21 May 2000
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmms-tfmx/Makefile,v 1.3 2000/12/04 14:40:34 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmms-tfmx
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.nuug.no/pub/anders/distfiles/ \
 
 MAINTAINER=	anders@fix.no
 
-LIB_DEPENDS=	xmms.1:${PORTSDIR}/audio/xmms
+LIB_DEPENDS=	xmms.2:${PORTSDIR}/audio/xmms
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
