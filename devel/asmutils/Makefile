@@ -2,13 +2,13 @@
 # Date created:        22 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/devel/asmutils/Makefile,v 1.2 2001/03/12 23:53:53 kris Exp $
+# $FreeBSD: ports/devel/asmutils/Makefile,v 1.3 2001/05/14 19:27:39 greid Exp $
 #
 
 PORTNAME=	asmutils
 PORTVERSION=	0.14
 CATEGORIES=	devel
-MASTER_SITES=	ftp://linuxassembly.org/pub/asm/
+MASTER_SITES=	http://linuxassembly.org/asmutils/
 
 MAINTAINER=	greid@FreeBSD.org
 
