@@ -2,13 +2,14 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.72 2000/11/13 13:22:34 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.73 2000/11/29 12:35:31 tg Exp $
 #
 
 PORTNAME=	python
 PORTVERSION=	2.0
 CATEGORIES=	lang python
-MASTER_SITES=	http://www.pythonlabs.com/products/python2.0/downloads/
+MASTER_SITES=	http://www.python.org/ftp/python/2.0/ \
+		http://SunSITE.Informatik.RWTH-Aachen.DE/python/ftp/python/2.0/
 DISTFILES=	${PYTHON_DISTFILE}
 
 MAINTAINER=	tg@FreeBSD.org
