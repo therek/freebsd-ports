@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.10 2004/11/05 12:03:13 pav Exp $
+# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.11 2004/11/22 16:45:25 thierry Exp $
 
 # Common code for pear- ports.
 
@@ -128,6 +128,7 @@ do-generate-plist:
 	if [ -n "${EXAMPLES}" ]; then echo "%%PORTDOCS%%@dirrm ${LEXAMPLESDIR}"; fi; \
 	echo "@dirrm ${LPKGREGDIR}"; \
 	echo "@unexec rmdir %D/${LINSTDIR} 2> /dev/null || true"; \
+	echo "@unexec rmdir %D/${LINSTDIR:H} 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LPEARDIR}/.registry 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LPEARDIR}/packages 2> /dev/null || true"; \
 	echo "@unexec rmdir %D/${LPEARDIR} 2> /dev/null || true"; \
