@@ -2,11 +2,11 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/dsniff/Makefile,v 1.8 2000/09/02 01:33:18 kris Exp $
+# $FreeBSD: ports/security/dsniff/Makefile,v 1.9 2000/09/10 10:59:13 kris Exp $
 #
 
 PORTNAME=	dsniff
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	security
 MASTER_SITES=	http://naughty.monkey.org/~dugsong/dsniff/
 
@@ -18,7 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet \
 GNU_CONFIGURE=	yes
 USE_XLIB=	yes
 
-MAN8=	arpredirect.8 dsniff.8 macof.8 mailsnarf.8 tcpkill.8 \
-	tcpnice.8 urlsnarf.8 webspy.8 filesnarf.8
+MAN8=	arpspoof.8 dsniff.8 macof.8 mailsnarf.8 tcpkill.8 \
+	tcpnice.8 urlsnarf.8 webspy.8 filesnarf.8 dnsspoof.8 msgsnarf.8 \
+	sshmitm.8 webmitm.8
 
 .include <bsd.port.mk>
