@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.226 2001/08/11 18:33:24 dd Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.227 2001/08/13 12:36:45 wjv Exp $
 #
 
     SUBDIR += agrep
@@ -81,6 +81,7 @@
     SUBDIR += man2html
     SUBDIR += mgdiff
     SUBDIR += mguesser
+    SUBDIR += minidom
     SUBDIR += mkcatalog
     SUBDIR += mswordview
     SUBDIR += nfbtrans
