@@ -1,34 +1,32 @@
 # New ports collection makefile for:	webalizer-2
-# http://www.mrunix.net/webalizer/
 # Date created:         18.Apr.2000
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.16 2000/04/18 19:04:24 ache Exp $
+# $FreeBSD: ports/www/webalizer-2/Makefile,v 1.17 2000/05/06 11:23:14 ache Exp $
 #
 
 PORTNAME=	webalizer
-PORTVERSION=    2.00-12
+PORTVERSION=    2.00.12
 CATEGORIES=	www
 MASTER_SITES=   ftp://ftp.mrunix.net/pub/webalizer/pre-release/
-DISTNAME=       ${PORTNAME}-${PORTVERSION}-src
-EXTRACT_SUFX=   .tar.bz2
-NO_LATEST_LINK=	yes
+DISTNAME=       ${PORTNAME}-2.00-12-src
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=     ache@FreeBSD.org
 
 LIB_DEPENDS=	gd.0:${PORTSDIR}/graphics/gd
 
-USE_BZIP2=      YES
+NO_LATEST_LINK=	yes
+USE_BZIP2=      yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+=        --enable-dns \
-			--with-gdlib=${PREFIX}/lib \
-			--with-gd=${PREFIX}/include/gd
+CONFIGURE_ARGS+=--enable-dns \
+		--with-gdlib=${PREFIX}/lib \
+		--with-gd=${PREFIX}/include/gd
 CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
 
 MAN1=		webalizer.1
 DOC1=		CHANGES COPYING Copyright INSTALL \
 		README README.FIRST DNS.README country-codes.txt
-SUPP_LANG=      catalan chinese czech danish dutch english estonian \
+SUPP_LANG=	catalan chinese czech danish dutch english estonian \
 		finnish french german greek hungarian indonesian italian \
 		korean polish portuguese portuguese_brazil romanian \
 		russain slovak spanish swedish
@@ -36,7 +34,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME:S/-src$//}
 MAKE_ARGS+=	CFLAGS="${CFLAGS}"
 
 .if defined(BATCH)
-WEBALIZER_LANG=english
+WEBALIZER_LANG=	english
 .endif
 
 .if defined(WEBALIZER_LANG)
