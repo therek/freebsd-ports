@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/isc-dhcp3/pkg-plist,v 1.20 2001/10/19 03:12:25 dwcjr Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3-server/pkg-plist,v 1.25 2004/01/17 23:09:01 edwin Exp $
 bin/omshell
 etc/dhcpd.conf.sample
 @unexec if cmp -s %D/etc/rc.isc-dhcpd.conf %D/etc/rc.isc-dhcpd.conf.sample; then rm -f %D/etc/rc.isc-dhcpd.conf; fi
@@ -13,9 +13,5 @@ sbin/dhcpd
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/RELNOTES
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
-@dirrm include/omapip
-@dirrm include/isc-dhcp
-@exec [ -f /var/db/dhclient.leases ] || touch /var/db/dhclient.leases
-@unexec [ -s /var/db/dhclient.leases ] || rm -f /var/db/dhclient.leases
 @exec [ -f /var/db/dhcpd.leases ] || touch /var/db/dhcpd.leases
 @unexec [ -s /var/db/dhcpd.leases ] || rm -f /var/db/dhcpd.leases
