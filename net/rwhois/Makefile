@@ -3,7 +3,7 @@
 # Date created:				May 9th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/rwhois/Makefile,v 1.9 1999/08/30 14:24:05 peter Exp $
+# $FreeBSD: ports/net/rwhois/Makefile,v 1.10 1999/08/31 06:49:17 mharo Exp $
 #
 
 DISTNAME=	rwhois-1.0B9.2
@@ -23,6 +23,15 @@ INSTALL_TARGET=	install install-sample-data install-chroot
 
 MAN8=		rmkdbindex.8 rwhoisd.8
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400011
+PLIST=		${WRKDIR}/PLIST
+pre-install:
+	@${SED} -e "/libc.so.4/d" \
+		${PKGDIR}/PLIST > ${PLIST}
+.endif
+
 post-install:
 	${MKDIR} -p ${PREFIX}/share/doc/rwhois
 	${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/rwhois
@@ -38,4 +47,4 @@ post-install:
 	@ ${ECHO} "#[ -x ${PREFIX}/lib/rwhois/sbin/rwhoisd ] && ${PREFIX}/lib/rwhois/sbin/rwhoisd -c ${PREFIX}/lib/rwhois/rwhois.conf & && ${ECHO} -n ' rwhoisd'" >> ${PREFIX}/etc/rc.d/rwhoisd.sh
 	${CHMOD} 751 ${PREFIX}/etc/rc.d/rwhoisd.sh
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
