@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.28 2001/06/13 03:14:36 knu Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.29 2001/09/01 08:23:44 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -89,8 +89,14 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		NO_OPENSSL="${NO_OPENSSL}" \
 		DISTNAME="${DISTNAME}"
 
+# We must .include here because we need the Makefile.inc @ pre-install
+# to determine the correct plist.
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
+.else
+# make utility targets like depends and describe happy
+LIB_DEPENDS=	tcl80jp:${PORTSDIR}/japanese/tcl80 \
+		tk80jp:${PORTSDIR}/japanese/tk80
 .endif
 
 pre-everything:
