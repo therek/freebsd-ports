@@ -2,12 +2,12 @@
 #
 # Set up the Imakefile correctly for gxditview.
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/gxditview/scripts/pre-configure,v 1.2 1999/08/31 02:09:19 peter Exp $
 #
 
 cd $WRKSRC
 sed    -e 's|^GROFF_LIBDIR.*|GROFF_LIBDIR=/usr/share|' \
        -e 's|^GROFF_FONTDIR.*|GROFF_FONTDIR=/usr/share/groff_font|' \
        -e 's|^GROFF_FONTPATH.*|GROFF_FONTPATH=.:$(GROFF_FONTDIR)|' \
-       Imakefile > Imakefile.new
-mv Imakefile.new Imakefile
+       -e "s|@srcdir@|${WRKSRC}|" \
+       Imakefile.in > Imakefile

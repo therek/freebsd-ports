@@ -2,11 +2,11 @@
 # Date created:                24 June 1998
 # Whom:                        Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.3 1999/08/31 02:09:18 peter Exp $
+# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.4 2000/04/09 21:52:37 cpiazza Exp $
 #
 
 PORTNAME=	gxditview
-PORTVERSION= 	1.10
+PORTVERSION= 	1.16.1
 CATEGORIES=	textproc
 DISTFILES=	# none
 
