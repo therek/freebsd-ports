@@ -1,11 +1,11 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/dotconf/pkg-plist,v 1.9 2003/10/01 22:57:14 naddy Exp $
 bin/dotconf-config
 include/dotconf.h
 include/libpool.h
 lib/libdotconf.a
 lib/libdotconf.so
 lib/libdotconf.so.10
-lib/pkgconfig/dotconf.pc
+libdata/pkgconfig/dotconf.pc
 lib/libpool.a
 share/aclocal/dotconf.m4
 %%PORTDOCS%%%%DOCSDIR%%/dotconf-api.txt
