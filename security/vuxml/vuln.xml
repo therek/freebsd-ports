@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.567 2005/02/18 21:55:08 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.568 2005/02/18 22:37:34 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -206,8 +206,9 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<name>postgresql</name>
 	<name>postgresql-server</name>
 	<name>ja-postgresql</name>
-	<range><lt>7.4.8</lt></range>
-	<range><gt>8.*</gt><lt>8.0.2</lt></range>
+	<range><lt>7.3.9_1</lt></range>
+	<range><gt>7.4.*</gt><lt>7.4.7_1</lt></range>
+	<range><gt>8.*</gt><lt>8.0.1_1</lt></range>
       </package>
     </affects>
     <description>
@@ -226,6 +227,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2005-02-07</discovery>
       <entry>2005-02-17</entry>
+      <modified>2005-02-19</modified>
     </dates>
   </vuln>
 
