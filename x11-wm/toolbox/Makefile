@@ -3,12 +3,12 @@
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/toolbox/Makefile,v 1.8 1999/09/06 05:10:03 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/toolbox/Makefile,v 1.9 1999/09/20 09:03:35 asami Exp $
 #
 
 DISTNAME=	toolbox-0.4.6
 CATEGORIES= 	x11-wm
-MASTER_SITES=	http://rfk.masslinux.com/
+MASTER_SITES=	http://www2.bc.edu/~kelleyry/toolbox/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
