@@ -2,20 +2,20 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.4 2001/01/17 03:00:36 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.5 2001/03/01 14:57:32 sf Exp $
 #
 
-BROKEN=		need to be updated
-
 PORTNAME=	mozilla
-PORTVERSION=	0.7
+PORTVERSION=	0.8
 PORTEPOCH=	1
 CATEGORIES=	japanese www
-MASTER_SITES=	http://www.mozilla.gr.jp/jlp/ \
-		http://mozilla.inmel.net/
+MASTER_SITES=	http://www.mozilla.gr.jp/tools/search/ \
+		http://www.mozilla.gr.jp/jlp/
 PKGNAMESUFFIX=	-jlp
-DISTNAME=	${PORTNAME}${PORTVERSION}-langjajp
+DISTNAME=	GoogleJapan.png GoogleJapan.src \
+		${JLP_SRC}
 EXTRACT_SUFX=	.xpi
+EXTRACT_ONLY=	${JLP_SRC}${EXTRACT_SUFX}
 
 MAINTAINER=	yatt@msc.biglobe.ne.jp
 
@@ -29,6 +29,8 @@ USE_X_PREFIX=	yes
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-qo
 
+JLP_SRC=	${PORTNAME}${PORTVERSION}-langjajp
+
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400020
@@ -41,6 +43,11 @@ post-extract:
 	${MKDIR} ${WRKSRC}/defaults/pref
 	${CP} ${FILESDIR}/all.js ${WRKSRC}/defaults/pref
 	${CP} ${FILESDIR}/unix.js ${WRKSRC}/defaults/pref
+	${CP} ${DISTDIR}/${DIST_SUBDIR}/GoogleJapan.png ${WRKSRC}/searchplugins
+	${CP} ${DISTDIR}/${DIST_SUBDIR}/GoogleJapan.src ${WRKSRC}/searchplugins
+
+post-patch:
+	find ${WRKSRC} -name '*.orig' | xargs ${RM}
 
 do-build:
 	${SED} -e "s;@PREFIX@;${PREFIX};g" \
@@ -56,6 +63,8 @@ do-install:
 	${MV} installed-chrome.txt installed-chrome.txt.orig)
 	(cd ${PREFIX}/lib/mozilla/defaults/pref; \
 	${MV} all.js all.js.orig; ${MV} unix.js unix.js.orig)
+	(cd ${PREFIX}/lib/mozilla/searchplugins; \
+	${MV} google.gif google.gif.orig; ${MV} google.src google.src.orig)
 	${MV} ${PREFIX}/bin/mozilla ${PREFIX}/bin/mozilla.orig
 	${INSTALL_SCRIPT} ${WRKDIR}/mozilla ${PREFIX}/bin
 	(cd ${WRKSRC}; ${TAR} -cf - chrome defaults searchplugins) | \
