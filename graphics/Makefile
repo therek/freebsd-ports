@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.329 2001/07/07 13:07:06 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.330 2001/07/08 07:05:18 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -118,6 +118,7 @@
     SUBDIR += leafpak
     SUBDIR += lfview
     SUBDIR += lib3ds
+    SUBDIR += libart
     SUBDIR += libaux
     SUBDIR += libdivxdecore
     SUBDIR += libdivxdecore-devel
