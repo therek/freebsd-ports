@@ -2,21 +2,21 @@
 # Date created:		16 May 1999
 # Whom:			jburkhol@home.com
 #
-# $FreeBSD: ports/java/tya/Makefile,v 1.12 2000/04/06 07:30:49 mharo Exp $
+# $FreeBSD: ports/java/tya/Makefile,v 1.13 2000/04/12 06:15:03 obrien Exp $
 #
 
 PORTNAME=	tya
-PORTVERSION=	1.7
+PORTVERSION=	1.7.2
 CATEGORIES=	java
 MASTER_SITES=	http://sax.sax.de/~adlibit/
-DISTNAME=	tya17
+DISTNAME=	tya17v2
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jburkhol@home.com
 
 BUILD_DEPENDS=	${LOCALBASE}/${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
 
-WRKSRC=		${WRKDIR}/tya1.7
+WRKSRC=		${WRKDIR}/${DISTNAME:S/a1/a1./}
 
 ONLY_FOR_ARCHS=	i386
 
