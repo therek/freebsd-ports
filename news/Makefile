@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.54 2000/07/20 08:09:27 sobomax Exp $
+# $FreeBSD: ports/news/Makefile,v 1.55 2000/07/24 06:01:00 dburr Exp $
 #
 
     SUBDIR += atp
@@ -40,6 +40,7 @@
     SUBDIR += tin
     SUBDIR += trn
     SUBDIR += trn4
+    SUBDIR += ubh
     SUBDIR += unpost
     SUBDIR += xmitbin
     SUBDIR += xvnews
