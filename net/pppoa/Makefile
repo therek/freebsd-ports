@@ -2,15 +2,15 @@
 # Date created:         August 30 2001
 # Whom:                 Brian Somers <brian@freebsd-services.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pppoa/Makefile,v 1.1 2001/08/30 22:07:36 brian Exp $
 #
 
 PORTNAME=	pppoa
 PORTVERSION=	20010815
 CATEGORIES=	net
 MASTER_SITES=	http://www.xsproject.org/speedtouch/files/ \
-    		http://benoit.papillault.free.fr/speedtouch/ \
-		http://www.alcatel.com/consumer/dsl/
+		http://www.alcatel.com/consumer/dsl/ \
+    		http://benoit.papillault.free.fr/speedtouch/
 DISTFILES=	${SPEEDTOUCH}.tar.gz speedmgmt.tar.gz
 
 MAINTAINER=	brian@Awfulhak.org
