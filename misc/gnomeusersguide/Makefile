@@ -1,13 +1,13 @@
 # New ports collection makefile for:   gnomeusersguide
-# Version required:    1.0.71
+# Version required:    1.0.72
 # Date created:        02 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.1.1.1 1999/09/09 02:05:40 taoka Exp $
+# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.2 1999/10/14 09:32:39 nakai Exp $
 #
 
-DISTNAME=	users-guide-1.0.71
-PKGNAME=	gnomeusersguide-1.0.71
+DISTNAME=	users-guide-1.0.72
+PKGNAME=	gnomeusersguide-1.0.72
 CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	sources/users-guide
