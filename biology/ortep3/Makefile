@@ -2,37 +2,36 @@
 # Date created:		1999-05-08
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/biology/ortep3/Makefile,v 1.7 2000/07/03 02:50:58 kris Exp $
+# $FreeBSD: ports/biology/ortep3/Makefile,v 1.8 2000/10/07 21:28:51 asami Exp $
 #
 
 PORTNAME=	ortep3
 PORTVERSION=	1.0.3
+PORTREVISION=	1
 CATEGORIES=	biology
-#MASTER_SITES=	ftp://ftp.ccl.net/pub/chemistry/software/SOURCES/FORTRAN/ortep/ 
-#		ftp://ftp.ornl.gov/pub/ortep/src/
-MASTER_SITES=	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=alex
-DISTFILES=	ortep-1.0.3.tar.Z ortep-1.0.3.f
-DISTNAME=	ortep
-EXTRACT_ONLY=	ortep-1.0.3.tar.Z
+MASTER_SITES=	ftp://ftp.ccl.net/pub/chemistry/software/SOURCES/FORTRAN/ortep/ \
+		ftp://ftp.ornl.gov/pub/ortep/src/
+DISTFILES=	ortep.tar.Z ortep.f
+EXTRACT_ONLY=	ortep.tar.Z
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
 
+.if defined(WITH_PGPLOT)
 LIB_DEPENDS=	pgplot.5:${PORTSDIR}/graphics/pgplot
+.endif
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
+WRKSRC=		${WRKDIR}/ortep/src
 
 post-extract:
 	${MV} ${WRKSRC}/ortep.f ${WRKSRC}/ortep.f-1.0
-	${CP} ${DISTDIR}/ortep-${PORTVERSION}.f ${WRKSRC}/ortep.f
+	${CP} ${DISTDIR}/ortep.f ${WRKSRC}/ortep.f
 
 pre-patch:
-	${CP} ${FILESDIR}/Makefile.ortep3 ${WRKDIR}/${DISTNAME}/src/Makefile
+	${CP} ${FILESDIR}/Makefile.ortep3 ${WRKSRC}/Makefile
 .if defined(USEPGPLOT)
-	cd ${WRKSRC} && ${PATCH} < ${PATCHDIR}/extra-patch-aa
-	cd ${WRKSRC} && ${PATCH} < ${PATCHDIR}/extra-patch-ab
+	cd ${WRKSRC} && ${PATCH} < ${FILESDIR}/extra-patch-aa
 .endif
-
+  
 pre-install:
 	${MKDIR} ${PREFIX}/share/doc/ortep3
 	${MKDIR} ${PREFIX}/share/doc/ortep3/examples
@@ -41,13 +40,13 @@ pre-install:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ortep3 ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/examples/* \
+	${INSTALL_DATA} ${WRKDIR}/ortep/examples/* \
 	      ${PREFIX}/share/doc/ortep3/examples
-	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/man/* \
+	${INSTALL_DATA} ${WRKDIR}/ortep/man/* \
 	      ${PREFIX}/share/doc/ortep3/man
-	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/src/000readme.txt \
+	${INSTALL_DATA} ${WRKDIR}/ortep/src/000readme.txt \
 	      ${PREFIX}/share/doc/ortep3/src
-	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README.1st \
+	${INSTALL_DATA} ${WRKDIR}/ortep/README.1st \
 	      ${PREFIX}/share/doc/ortep3
 
 .include <bsd.port.mk>
