@@ -3,7 +3,7 @@
 # Date created:		Sun May 3, 1999
 # Whom:			shipley@dis.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/firewalk/Makefile,v 1.2 1999/08/31 01:51:03 peter Exp $
 #
 
 DISTNAME=	firewalk-0.99beta
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.packetfactory.net/firewalk/
 
 MAINTAINER=	shipley@dis.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/libnet.a:${PORTSDIR}/net/libnet
+BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
 MAN1=		firewalk.1
 
