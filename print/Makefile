@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.111 2000/07/17 05:32:15 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.112 2000/08/18 05:44:21 andreas Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -82,6 +82,7 @@
     SUBDIR += pstotext
     SUBDIR += psutils-a4
     SUBDIR += psutils-letter
+    SUBDIR += py-reportlab
     SUBDIR += rlpr
     SUBDIR += rtf2latex
     SUBDIR += t1utils
