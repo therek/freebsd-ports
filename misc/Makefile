@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.307 2000/11/26 14:30:52 roam Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.308 2000/11/27 16:44:30 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -116,6 +116,7 @@
     SUBDIR += porteasy
     SUBDIR += proxyper
     SUBDIR += py-distutils
+    SUBDIR += pybliographer
     SUBDIR += qclock
     SUBDIR += qhacc
     SUBDIR += qlas
