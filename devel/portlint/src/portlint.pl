@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.23 2000/11/10 07:20:43 mharo Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.24 2000/12/12 14:24:12 knu Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -573,7 +573,7 @@ sub checklastline {
 			"terminated by \\n.");
 	}
 	if ($whole =~ /\n([ \t]*\n)+$/) {
-		&perror("WARN: $file seems to have unnecessery blank lines ".
+		&perror("WARN: $file seems to have unnecessary blank lines ".
 			"at the last part.");
 	}
 
@@ -1077,7 +1077,7 @@ DISTFILES DIST_SUBDIR EXTRACT_ONLY
 			"discouraged. distribution filename should be set by ".
 			"DISTNAME and EXTRACT_SUFX.");
 		if ($distfiles eq (($distname ne '') ? $distname : "$portname-$portversion") . $extractsufx) {
-			&perror("WARN: definition of DISTFILES not necessery. ".
+			&perror("WARN: definition of DISTFILES not necessary. ".
 				"DISTFILES is \${DISTNAME}/\${EXTRACT_SUFX} ".
 				"by default.");
 		}
@@ -1348,7 +1348,7 @@ LIB_DEPENDS BUILD_DEPENDS RUN_DEPENDS FETCH_DEPENDS DEPENDS DEPENDS_TARGET
 		print "OK: seen NO_WRKSUBDIR, checking value of WRKSRC.\n"
 			if ($verbose);
 		if ($wrksrc eq 'work' || $wrksrc =~ /^$[\{\(]WRKDIR[\}\)]/) {
-			&perror("WARN: definition of WRKSRC not necessery. ".
+			&perror("WARN: definition of WRKSRC not necessary. ".
 				"WRKSRC is \${WRKDIR} by default.");
 		}
 	}
@@ -1413,7 +1413,7 @@ LIB_DEPENDS BUILD_DEPENDS RUN_DEPENDS FETCH_DEPENDS DEPENDS DEPENDS_TARGET
 						"$i should be listed in ".
 						"MAN\U$i\E, ".
 						"even if compression is ".
-						"not necessery.");
+						"not necessary.");
 				}
 			}
 			if ($mancompress && $plistman{$i}) {
