@@ -3,7 +3,7 @@
 # Date created:		18 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/archivers/fastjar/Makefile,v 1.1.1.1 2000/03/25 00:12:36 knu Exp $
 #
 
 DISTNAME=	fastjar-0.90
@@ -19,7 +19,7 @@ post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/fastjar
 	cd ${WRKSRC} && ${INSTALL_DATA} CHANGES README ${PREFIX}/share/doc/fastjar/
-.endif
 	@${CAT} ${PKGMESSAGE}
+.endif
 
 .include <bsd.port.mk>
