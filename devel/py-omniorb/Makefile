@@ -2,11 +2,12 @@
 # Date created:		14 November 2000
 # Whom:			Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/devel/py-omniorb/Makefile,v 1.2 2001/06/27 10:14:56 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	omniorb
 PORTVERSION= 	1.4
+PORTREVISION=	1
 CATEGORIES=	devel python
 MASTER_SITES=	ftp://ftp.uk.research.att.com/pub/omniORB/omniORBpy/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -46,6 +47,8 @@ post-extract:
 do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/lib/python/omniidl_be/python.py* \
 	  ${PYTHON_SITELIBDIR}/omniidl_be
+	@ ${INSTALL_DATA} ${WRKSRC}/lib/python/Naming_idl.py* \
+	  ${PYTHON_SITELIBDIR}
 	@ cd ${WRKSRC}/lib/python && find ${MODULEDIRS} \
 	  | ${CPIO} ${BINOWN}:${BINGRP} ${PYTHON_SITELIBDIR}
 	@ cd ${WRKSRC}/lib/${CONFIG_TARGET} && find _omnipymodule.so* \
