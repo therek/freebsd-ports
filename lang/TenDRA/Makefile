@@ -3,21 +3,20 @@
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.16 2000/10/08 17:33:20 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	TenDRA
 PORTVERSION=	4.1.2
 CATEGORIES=	lang
-MASTER_SITES=	ftp://ftp.uni-trier.de/pub/languages/c/implementation/TenDRA/ \
+MASTER_SITES=	ftp://alph.dera.gov.uk/pub/TenDRA/ \
+		ftp://ftp.uni-trier.de/pub/languages/c/implementation/TenDRA/ \
 		ftp://ftp.fh-wiesbaden.de/pub/Languages/C/TenDRA/ \
 		ftp://ftp.mayn.de/pub/unix/devel/compiler/tendra/
 
 MAINTAINER=	obrien@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-
-BROKEN=		"Does not compile."
 
 ONLY_FOR_ARCHS=	i386
 OSRELEASE!=	uname -r
