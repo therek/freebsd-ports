@@ -2,7 +2,7 @@
 # Date created:		15 Jan 2001
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/pks/Makefile,v 1.1 2001/01/15 04:40:10 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pks
@@ -17,7 +17,7 @@ PATCHFILES=	pks094-patch2 \
 		x509patch
 PATCH_DIST_STRIP=-p1
 
-MAINTAINER=	kris@FreeBSD.org
+MAINTAINER=	jharris@widomaker.com
 
 LIB_DEPENDS=	db2.0:${PORTSDIR}/databases/db
 
