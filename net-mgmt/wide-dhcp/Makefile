@@ -3,11 +3,11 @@
 # Date created:         21 November 1995
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/wide-dhcp/Makefile,v 1.18 1999/08/30 14:24:31 peter Exp $
 #
 
-DISTNAME=       dhcp-1.4.0p5
-PKGNAME=        wide-dhcp-1.4.0p5
+DISTNAME=       dhcp-1.4.0p6
+PKGNAME=        wide-dhcp-1.4.0p6
 CATEGORIES=     net
 MASTER_SITES=   ftp://sh.wide.ad.jp/WIDE/free-ware/dhcp/ \
 		ftp://ftp.netlab.is.tsukuba.ac.jp/pub/network/wide-dhcp/ \
