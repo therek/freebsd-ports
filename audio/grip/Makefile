@@ -2,11 +2,11 @@
 # Date created:				31 May 2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/audio/grip/Makefile,v 1.2 2000/07/15 17:16:04 will Exp $
+# $FreeBSD: ports/audio/grip/Makefile,v 1.3 2000/10/05 06:35:54 reg Exp $
 #
 
 PORTNAME=	grip
-PORTVERSION=	2.94
+PORTVERSION=	2.95
 CATEGORIES=	audio
 MASTER_SITES=	http://www.nostatic.org/grip/
 EXTRACT_SUFX=	.tgz
@@ -21,14 +21,17 @@ ALL_TARGET=	gripnopar gcd
 MAN1=		grip.1
 MLINKS=		grip.1 gcd.1
 
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/*.c
+
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/grip ${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/gcd ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/grip.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/grip.1 ${MANPREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-.for file in CHANGES CREDITS README TODO
 	@${MKDIR} ${PREFIX}/share/doc/grip
-	${INSTALL_MAN} ${WRKSRC}/${file} ${PREFIX}/share/doc/grip
+.for file in CHANGES CREDITS README TODO
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/grip
 .endfor
 .endif
 
