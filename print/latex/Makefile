@@ -2,7 +2,7 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/latex/Makefile,v 1.46 2001/01/16 17:32:09 sobomax Exp $
+# $FreeBSD: ports/print/latex/Makefile,v 1.47 2001/06/08 15:49:30 jmz Exp $
 #
 
 PORTNAME=	latex2e
@@ -20,8 +20,6 @@ BUILD_DEPENDS=	tex:${PORTSDIR}/print/tex
 RUN_DEPENDS=	tex:${PORTSDIR}/print/tex
 
 NO_WRKSUBDIR=	yes
-
-MANUAL_PACKAGE_BUILD=	has to be built with tex port
 
 do-build:
 	@${RM} ${WRKSRC}/tfm/dummy.tfm  ${WRKSRC}/mf/cmex9.mf 
