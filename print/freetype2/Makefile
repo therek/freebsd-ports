@@ -2,7 +2,7 @@
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype2/Makefile,v 1.25 2000/11/23 14:23:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freetype2
@@ -22,6 +22,7 @@ MAINTAINER=	jseger@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
+MAKE_ENV=	TOP=""
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--disable-nls --enable-static --enable-shared
