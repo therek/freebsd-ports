@@ -2,11 +2,11 @@
 # Date created:				17 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/libiconv/Makefile,v 1.3 2000/11/01 15:50:59 sobomax Exp $
+# $FreeBSD: ports/converters/libiconv/Makefile,v 1.4 2000/11/20 16:57:22 sobomax Exp $
 #
 
 PORTNAME=	libiconv
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	converters devel
 MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/
 
