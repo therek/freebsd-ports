@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.388 2004/12/03 08:22:49 rushani Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.389 2004/12/03 17:24:37 glewis Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -264,6 +264,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<range><ge>1.3.0</ge><le>1.3.1p9_4</le></range>
       </package>
       <package>
+	<name>linux-jdk</name>
 	<name>linux-sun-jdk</name>
 	<range><ge>1.4.0</ge><le>1.4.2.05</le></range>
 	<range><ge>1.3.0</ge><le>1.3.1.13</le></range>
@@ -297,7 +298,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-11-24</discovery>
       <entry>2004-11-25</entry>
-      <modified>2004-11-25</modified>
+      <modified>2004-12-04</modified>
     </dates>
   </vuln>
 
