@@ -2,11 +2,12 @@
 # Date created:                         19 May 2001
 # Whom:                                 Steve Coltrin <spcoltri@omcl.org>
 #
-# $FreeBSD: ports/audio/gnowavcut/Makefile,v 1.1 2001/05/21 19:47:44 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnowavcut
 PORTVERSION=	0.0.7
+PORTREVISION=	1
 CATEGORIES=	audio gnome
 MASTER_SITES=	http://gnowavcut.good-day.net/src/
 
