@@ -6,6 +6,24 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20050320:
+  AFFECTS: users of sysutils/portsnap
+  AUTHOR: cperciva@FreeBSD.org
+
+  As a result of shifting from SHA-1 to SHA-256, the structure of
+  portsnap's configuration file and compressed snapshot have both
+  changed.  After upgrading to portsnap 0.9, you will have to
+  update your configuration file ($PREFIX/etc/portsnap.conf) and
+  delete your existing portsnap compressed snapshot:
+
+  	# cd /usr/local/etc && cp portsnap.conf.sample portsnap.conf
+  	# rm -r /usr/local/portsnap/*
+
+  In addition, be aware that the next runs of "portsnap fetch" and
+  "portsnap update" will take far longer than usual, since they
+  will need to download and extract a complete copy of the ports
+  tree.
+
 20050319:
   AFFECTS: users of databases/postgresql7[34]-server
   AUTHOR: girgen@FreeBSD.org
@@ -1783,4 +1801,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.164 2005/03/19 03:54:49 girgen Exp $
+$FreeBSD: ports/UPDATING,v 1.165 2005/03/19 06:41:31 marcus Exp $
