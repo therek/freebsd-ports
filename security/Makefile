@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.190 2001/05/17 16:21:32 sobomax Exp $
+# $FreeBSD: ports/security/Makefile,v 1.191 2001/05/20 02:31:11 will Exp $
 #
 
     SUBDIR += aafid2
@@ -151,6 +151,7 @@
     SUBDIR += snort
     SUBDIR += srm
     SUBDIR += ssh
+    SUBDIR += ssh-multiadd
     SUBDIR += ssh2
     SUBDIR += sslproxy
     SUBDIR += sslwrap
