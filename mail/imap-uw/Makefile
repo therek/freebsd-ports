@@ -2,11 +2,11 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.59 2001/06/25 02:40:44 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imap
-PORTVERSION=	2001
+PORTVERSION=	2001a
 PORTEPOCH=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		ftp://ftp.uni-halle.de/pub/mail/pine/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old
 PKGNAMESUFFIX=	-uw
-DISTNAME=	imap-2001.FINAL
+DISTNAME=	imap-2001a
 DISTFILES=	${DISTNAME}.tar.Z imap-utils.tar.Z
 
 MAINTAINER=	anders@fix.no
@@ -27,7 +27,7 @@ LIB_DEPENDS=	c-client4.8:${PORTSDIR}/mail/cclient
 BUILD_DEPENDS=	${LOCALBASE}/lib/libdrac.a:${PORTSDIR}/mail/drac
 .endif
 
-WRKSRC=		${WRKDIR}/imap-2001.RELEASE-CANDIDATE.1
+WRKSRC=		${WRKDIR}/imap-2001a
 
 MAN8=		ipopd.8 imapd.8
 
