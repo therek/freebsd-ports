@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.34 2001/07/02 23:23:07 lioux Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.35 2001/07/07 14:27:00 ijliao Exp $
 #
 
     SUBDIR += SETIsupport
@@ -38,5 +38,6 @@
     SUBDIR += xphoon
     SUBDIR += xplanet
     SUBDIR += xtide
+    SUBDIR += xworld
 
 .include <bsd.port.subdir.mk>
