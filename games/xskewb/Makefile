@@ -2,7 +2,7 @@
 # Date created:				25 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xskewb/Makefile,v 1.8 2000/03/31 07:43:18 mharo Exp $
+# $FreeBSD: ports/games/xskewb/Makefile,v 1.9 2000/04/14 12:28:20 asami Exp $
 #
 
 PORTNAME=	xskewb
@@ -13,14 +13,15 @@ MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/xskewb
+WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes
 MAN1=		xskewb.1
 MANCOMPRESSED=	no
+XFREE86_HTML_MAN=	no
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xskewb ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/Skewb.ad ${PREFIX}/lib/X11/app-defaults/Skewb
-	${INSTALL_MAN} ${WRKSRC}/xskewb.man ${PREFIX}/man/man1/xskewb.1
+	${INSTALL_MAN} ${WRKSRC}/xskewb.man ${MANPREFIX}/man/man1/xskewb.1
 
 .include <bsd.port.mk>

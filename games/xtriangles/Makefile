@@ -2,7 +2,7 @@
 # Date created:		12 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xtriangles/Makefile,v 1.10 2000/01/22 11:46:23 nakai Exp $
+# $FreeBSD: ports/games/xtriangles/Makefile,v 1.11 2000/04/14 12:28:29 asami Exp $
 #
 
 PORTNAME=	xtriangles
@@ -13,15 +13,16 @@ MASTER_SITE_SUBDIR=	games/xpuzzles
 
 MAINTAINER=	nakai@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/xtriangles
+WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_IMAKE=	yes
 MAN1=		xtriangles.1
 MANCOMPRESSED=	no
+XFREE86_HTML_MAN=	no
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xtriangles ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/Triangles.ad \
 		 ${PREFIX}/lib/X11/app-defaults/Triangles
-	${INSTALL_MAN} ${WRKSRC}/xtriangles.man ${PREFIX}/man/man1/xtriangles.1
+	${INSTALL_MAN} ${WRKSRC}/xtriangles.man ${MANPREFIX}/man/man1/xtriangles.1
 
 .include <bsd.port.mk>
