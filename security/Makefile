@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.108 2000/06/15 14:08:39 roberto Exp $
+# $FreeBSD: ports/security/Makefile,v 1.109 2000/06/29 00:13:38 asami Exp $
 #
 
     SUBDIR += aafid2
@@ -74,6 +74,7 @@
     SUBDIR += pktsuckers
     SUBDIR += portscanner
     SUBDIR += portsentry
+    SUBDIR += racoon
     SUBDIR += radiusniff
     SUBDIR += rid
     SUBDIR += rsaref
