@@ -3,7 +3,7 @@
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.32 1999/08/27 22:29:38 mharo Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.33 1999/08/28 01:57:31 mharo Exp $
 #
 
 DISTNAME=	modula-3-3.6
@@ -52,7 +52,7 @@ do-install:
 	@${ECHO_MSG} "Installing files in \"${PREFIX}\""
 	@cd ${temp_prefix}; \
 	    umask 022; \
-	    sed -e "/^@/d" -e "/m3build-/d" -e "s/\.gz$$//" \
+	    ${SED} -e "/^@/d" -e "/m3build-/d" -e "s/\.gz$$//" \
 		-e "/^share/d" ${PLIST}.real | \
 		cpio -dump -R ${BINOWN}.${BINGRP} ${PREFIX}
 	@cd ${temp_prefix}/man/man1; \
@@ -100,9 +100,9 @@ do-install:
 	    ${LN} -f m3build m3build-${major}
 	@${ECHO_MSG} "Fixing file permissions"
 	@cd ${PREFIX}; \
-	    sed -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
+	    ${SED} -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
 		xargs ${CHOWN} ${BINOWN}.${BINGRP}; \
-	    sed -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
+	    ${SED} -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
 		xargs ${CHMOD} go=u-w; \
 	    find -X lib/m3 -type d | xargs ${CHOWN} ${BINOWN}.${BINGRP}; \
 	    find -X lib/m3 -type d | xargs ${CHMOD} 755

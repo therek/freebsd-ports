@@ -3,7 +3,7 @@
 # Date Created:	21 August 1996
 # Whom:	Andrew Stevenson <andrew@ugh.net.au> based heavily on the changes by Stephen Melvin <melvin@zytek.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/poppassd/Makefile,v 1.6 1999/08/25 06:50:41 obrien Exp $
 #
 
 DISTNAME=	pwserve-4
@@ -16,7 +16,7 @@ MAINTAINER=	andrew@ugh.net.au
 EXTRACT_CMD=	/bin/cat
 EXTRACT_SUFX=	
 EXTRACT_BEFORE_ARGS=	
-EXTRACT_AFTER_ARGS=	| /usr/bin/sed -e '1,16d' | ${SH}
+EXTRACT_AFTER_ARGS=	| ${SED} -e '1,16d' | ${SH}
 WRKSRC=			${WRKDIR}/poppassd
 ALL_TARGET=	poppassd
 MAN8=		poppassd.8

@@ -3,7 +3,7 @@
 # Date created:					May 4th 1997
 # Whom:						jfitz@FreeBSD.ORG
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.21 1999/08/25 06:50:06 obrien Exp $
 #
 
 DISTNAME=	cyrus-imapd-v1.5.19
@@ -76,7 +76,7 @@ post-install:
 		${INSTALL} -d -m 700 -o cyrus -g cyrus /var/pwcheck
 		${TOUCH} ${PREFIX}/etc/imap/mailboxes
 		${CHMOD} 640 ${PREFIX}/etc/imap/mailboxes
-		@sed -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/cyrus.sh \
+		@${SED} -e "/%%PREFIX%%/s##${PREFIX}#g" ${FILESDIR}/cyrus.sh \
 			>${PREFIX}/etc/rc.d/cyrus.sh
 		@${CHMOD} 0755 ${PREFIX}/etc/rc.d/cyrus.sh
 		@PKG_PREFIX=${PREFIX} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL

@@ -3,7 +3,7 @@
 # Date created:         Mon Dec  9 09:42:37 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.11 1999/08/25 06:03:57 obrien Exp $
 #
 
 DISTNAME=	doom-1.8
@@ -27,7 +27,7 @@ post-patch:
 	@(cd ${WRKSRC}/musserver; make clean)
 
 pre-install:
-	@sed 's,@PREFIX@,${PREFIX},' ${PKGDIR}/INSTALL.in > ${PKGINSTALL}
+	@${SED} 's,@PREFIX@,${PREFIX},' ${PKGDIR}/INSTALL.in > ${PKGINSTALL}
 
 post-install:
 	@${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL

@@ -3,7 +3,7 @@
 # Date created:		2 Febuary 1997
 # Whom:			reg@shale.csir.co.za
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/snns/Makefile,v 1.3 1999/08/25 07:15:05 obrien Exp $
 #
 
 DISTNAME=	SNNSv4.1
@@ -17,7 +17,7 @@ USE_XLIB=	yes
 
 post-configure:
 	@(cd ${WRKSRC} && ./configure < options.FreeBSD)
-	@(sed -e "s#%prefix%#${PREFIX}#g" < ${FILESDIR}/snns > ${WRKSRC}/snns)
+	@(${SED} -e "s#%prefix%#${PREFIX}#g" < ${FILESDIR}/snns > ${WRKSRC}/snns)
 
 do-build:
 	@(cd ${WRKSRC} && ./build all)

@@ -3,7 +3,7 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/gxditview/Makefile,v 1.11 1999/08/25 05:24:18 obrien Exp $
 #
 
 DISTNAME=	groff-1.09
@@ -34,7 +34,7 @@ pre-fetch:
 		done; \
 	    done; \
 	    for file in ${DISTPATCHES} ; do zcat $${file}; done | \
-		sed '/^END -----/,/^BEGIN ----/d' | uudecode; \
+		${SED} '/^END -----/,/^BEGIN ----/d' | uudecode; \
 	    rm -f ${DISTPATCHES};\
 	 fi)
 

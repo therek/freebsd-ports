@@ -3,7 +3,7 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.4 1999/08/25 06:50:52 obrien Exp $
 #
 
 DISTNAME=      smtpd-2.0
@@ -21,7 +21,7 @@ SPOOLBASE=	/var/smtpd
 
 post-patch:
 	@mv ${WRKSRC}/Makefile ${WRKSRC}/Makefile.tmp
-	@sed s+!!SPOOLBASE!!+${SPOOLBASE}+g < ${WRKSRC}/Makefile.tmp \
+	@${SED} s+!!SPOOLBASE!!+${SPOOLBASE}+g < ${WRKSRC}/Makefile.tmp \
 	                                    > ${WRKSRC}/Makefile
 
 post-install:
@@ -57,7 +57,7 @@ post-install:
 		${SPOOLBASE}/etc
 
 	@${ECHO} "Creating startup file..."
-	@sed s+!!PREFIX!!+${PREFIX}+		\
+	@${SED} s+!!PREFIX!!+${PREFIX}+		\
 		< ${FILESDIR}/smtpd.sh		\
 		> ${PREFIX}/etc/rc.d/smtpd.sh
 	@${CHMOD} 0700 ${PREFIX}/etc/rc.d/smtpd.sh

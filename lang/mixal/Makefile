@@ -4,7 +4,7 @@
 # Date created:		21-Dec-1996
 # Whom:                 David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/mixal/Makefile,v 1.3 1999/08/25 06:34:56 obrien Exp $
 #
 
 DISTNAME=	mixal-1.06
@@ -17,7 +17,7 @@ MAINTAINER=     obrien@FreeBSD.org
 
 EXTRACT_CMD=	zcat
 EXTRACT_BEFORE_ARGS=
-EXTRACT_AFTER_ARGS=	|/usr/bin/sed -e '1,/^This ought/d' |sh
+EXTRACT_AFTER_ARGS=	| ${SED} -e '1,/^This ought/d' |sh
 NO_WRKSUBDIR=	yes
 ALL_TARGET=
 

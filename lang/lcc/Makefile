@@ -4,7 +4,7 @@
 # Date created:		Sat Dec 7, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/lang/lcc/Makefile,v 1.3 1999/08/25 06:34:50 obrien Exp $
+# $FreeBSD: ports/lang/lcc/Makefile,v 1.4 1999/08/28 01:57:30 mharo Exp $
 #
 
 DISTNAME=	lcc-3.6
@@ -25,14 +25,14 @@ LCCDESTDIR=	lib/${DISTNAME}/${UNAME_M}-${OPSYS}
 pre-configure:
 	@${MKDIR} ${LCCBUILDDIR}
 	@${CP} ${FILESDIR}/${OPSYS}.md ${WRKSRC}/src
-	@sed -e "s:%%PREFIX%%:${PREFIX}:g"  \
+	@${SED} -e "s:%%PREFIX%%:${PREFIX}:g"  \
 	     -e "s:%%LCCDESTDIR%%:${LCCDESTDIR}:g"  \
 	     -e "s:%%VERSION%%:${DISTNAME}:g"  \
 		${FILESDIR}/${OPSYS}.c.in > ${WRKSRC}/etc/${OPSYS}.c
 	@#	below can be used to patchup PLIST file for diff os/arch
-	@#sed -e "s:%%LCCDESTDIR%%:${LCCDESTDIR}:g"  \
+	@#${SED} -e "s:%%LCCDESTDIR%%:${LCCDESTDIR}:g"  \
 		#${PKGDIR}/PLIST.in > ${PKGDIR}/PLIST
-	@sed -e "s:%%OPSYS%%:${OPSYS}:g"  \
+	@${SED} -e "s:%%OPSYS%%:${OPSYS}:g"  \
 		${WRKSRC}/makefile > ${WRKSRC}/makefile.configured
 	@/bin/mv -f ${WRKSRC}/makefile.configured ${WRKSRC}/makefile
 

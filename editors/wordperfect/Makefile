@@ -5,7 +5,7 @@
 #					msmith@freebsd.org
 # Relevant URLs:			http://www.corel.com/
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/wordperfect/Makefile,v 1.7 1999/08/25 05:44:48 obrien Exp $
 
 DISTNAME=	GUILG00
 PKGNAME=	wordperfect-8.0
@@ -40,7 +40,7 @@ post-patch:
 		< ${WRKDIR}/shared/wpdata.old \
 		> ${WRKDIR}/shared/wpdata
 	@${CP} ${WRKDIR}/shared/install.wp ${WRKDIR}/shared/install.wp.old
-	@sed 's#REPLACE_ME_WITH_DESTINATION#${PREFIX}/lib/corel#' \
+	@${SED} 's#REPLACE_ME_WITH_DESTINATION#${PREFIX}/lib/corel#' \
 		< ${WRKDIR}/shared/install.wp.old \
 		> ${WRKDIR}/shared/install.wp
 
@@ -60,7 +60,7 @@ pre-install:
 do-install:
 	@${MKDIR} ${WRKDIR}/tmp
 	@(cd ${WRKDIR} ; ${SCRIPTS_ENV} TMPDIR=${WRKDIR}/tmp ${SH} Runme)
-	@sed 's#REPLACE_ME_WITH_DESTINATION#${PREFIX}/lib/corel#' \
+	@${SED} 's#REPLACE_ME_WITH_DESTINATION#${PREFIX}/lib/corel#' \
 		< ${FILESDIR}/xwp \
 		> ${WRKDIR}/xwp
 	@if test -f ${PREFIX}/bin/xwp ; then \
