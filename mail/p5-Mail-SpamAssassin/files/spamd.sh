@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.6 2004/03/25 16:22:59 mat Exp $
+# $FreeBSD: ports/mail/p5-Mail-SpamAssassin/files/spamd.sh,v 1.7 2004/03/30 20:21:04 sf Exp $
 #
 
 # PROVIDE: spamd
@@ -35,7 +35,7 @@ stop_postcmd()
 
 spamd_enable=${spamd_enable:-"NO"}
 spamd_pidfile=${spamd_pidfile:-"/var/run/spamd.pid"}
-spamd_flags=${spamd_flags:-"-a -c -d -r ${spamd_pidfile}"}
+spamd_flags=${spamd_flags:-"-c -d -r ${spamd_pidfile}"}
 
 load_rc_config $name
 run_rc_command "$1"
