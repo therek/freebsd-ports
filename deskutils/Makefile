@@ -1,10 +1,9 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.53 2001/08/17 14:35:51 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += abacus
     SUBDIR += aspostit
     SUBDIR += bigyear
-    SUBDIR += bitnotes
     SUBDIR += bulb
     SUBDIR += cal
     SUBDIR += cbb
