@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.2 2000/10/06 05:49:27 reg Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.3 2000/10/09 16:56:43 reg Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -252,10 +252,23 @@ MAKE_ENV+=		HAVE_IMLIB=${HAVE_IMLIB}
 .endif
 .endif
 
+# Ports which optionally depend on Gnome can add '--datadir=${PREFIX}/share'
+# to CONFIGURE_ARGS before including <bsd.port.post.mk> if they do not wish
+# to install their data files in /usr/X11R6/share/gnome.  Please be aware
+# that you will need to make non standard patches to get the rest of the
+# files into the correct places.  Specifically, the help files and pixmaps
+# must still go into /usr/X11R6/share/gnome/help and
+# /usr/X11R6/share/gnome/pixmaps respectively.  %%DATADIR%% will still be
+# defined for you to use.
+
 .if defined(USE_GNOMELIBS)
-CONFIGURE_ARGS+=--localstatedir=${PREFIX}/share/gnome \
-				--datadir=${PREFIX}/share/gnome \
-				--with-gnome=${PREFIX}
+.if !defined(HAVE_GNOME) || ${CONFIGURE_ARGS:S/--localstatedir=//} == ${CONFIGURE_ARGS}
+CONFIGURE_ARGS+=--localstatedir=${PREFIX}/share/gnome
+.endif
+.if !defined(HAVE_GNOME) || ${CONFIGURE_ARGS:S/--datadir=//} == ${CONFIGURE_ARGS}
+CONFIGURE_ARGS+=--datadir=${PREFIX}/share/gnome
+.endif
+CONFIGURE_ARGS+=--with-gnome=${PREFIX}
 LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
 GNOME_CONFIG?=	${X11BASE}/bin/gnome-config
 CONFIGURE_ENV+=	GNOME_CONFIG="${GNOME_CONFIG}"
