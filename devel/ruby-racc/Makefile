@@ -2,13 +2,15 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.22 2001/03/17 19:42:18 knu Exp $
+# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.23 2001/03/20 08:51:03 knu Exp $
 #
 
 PORTNAME=	racc
-PORTVERSION=	1.3.8
+PORTVERSION=	1.3.9
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://www.xdsl.ne.jp/Cd/aamine/soft/
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
+		http://www9.xdsl.ne.jp/~aamine/soft/ \
+		http://www.xdsl.ne.jp/Cd/aamine/soft/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
