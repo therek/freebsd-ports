@@ -3,13 +3,13 @@
 # Date created:		24 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.5 1999/12/07 16:31:21 mph Exp $
+# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.6 2000/01/24 18:58:01 mph Exp $
 #
 
 DISTNAME=	bidwatcher-1.0.3b
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://www.low-fi.com/bw/download/
+		http://people.FreeBSD.org/~mph/distfiles/
 MASTER_SITE_SUBDIR=	apps/misc
 
 MAINTAINER=	andrews@technologist.com
