@@ -2,7 +2,7 @@
 # Date created:        13 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/wapsh/Makefile,v 1.3 2001/05/19 10:21:51 greid Exp $
+# $FreeBSD: ports/shells/wapsh/Makefile,v 1.4 2001/05/29 18:10:57 greid Exp $
 #
 
 PORTNAME=       	wapsh
@@ -54,7 +54,11 @@ do-install:
 
 	${MKDIR} ${PREFIX}/etc/wapsh
 .for C in htsh_profile htshd.conf loginhosts
-	${INSTALL_DATA} ${WRKSRC}/sample/$C ${PREFIX}/etc/wapsh
+	${INSTALL_DATA} ${WRKSRC}/sample/$C ${PREFIX}/etc/wapsh/$C.dist
+	if [ ! -e ${PREFIX}/etc/wapsh/$C ]; then \
+		${CP} ${PREFIX}/etc/wapsh/$C.dist \
+			${PREFIX}/etc/wapsh/$C; \
+	fi
 .endfor
 
 	${MKDIR} ${PREFIX}/share/wapsh/htdocs
