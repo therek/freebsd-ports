@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.478 2004/01/20 22:17:03 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.479 2004/01/20 22:26:36 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -2554,7 +2554,6 @@ CONFIGURE_LOG?=		config.log
 
 # A default message to print if do-configure fails.
 CONFIGURE_FAIL_MESSAGE?=	"Please report the problem to ${MAINTAINER} [maintainer] and attach the \"${CONFIGURE_WRKSRC}/${CONFIGURE_LOG}\" including the output of the failure of your make command. Also, it might be a good idea to provide an overview of all packages installed on your system (e.g. an \`ls ${PKG_DBDIR}\`)."
-
 
 .if defined(GNU_CONFIGURE)
 # Maximum command line length
