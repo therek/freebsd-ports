@@ -2,11 +2,11 @@
 # Date created:		17 June 1996
 # Whom:			adam
 #
-# $FreeBSD: ports/net/dgd-net/Makefile,v 1.35 1999/08/30 14:22:33 peter Exp $
+# $FreeBSD: ports/net/dgd-net/Makefile,v 1.36 2000/04/09 18:10:56 cpiazza Exp $
 #
 
 PORTNAME=	dgd-net
-PORTVERSION=	1.1.p6
+PORTVERSION=	1.1.6
 CATEGORIES=	net lang
 MASTER_SITES=	ftp://ftp.imaginary.com/pub/LPC/servers/DGD/ \
 		ftp://ftp.lysator.liu.se/pub/lpmud/drivers/dgd/ \
