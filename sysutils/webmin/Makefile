@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.34 2001/02/27 20:53:58 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.35 2001/02/27 21:48:17 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -20,7 +20,6 @@ MAINTAINER=	olgeni@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSLeay.pm:${PORTSDIR}/security/p5-Net-SSLeay
 
 NO_BUILD=	yes
-IS_INTERACTIVE=	yes
 USE_PERL5=	yes
 SCRIPTS_ENV+=	WRKDIR="${WRKDIR}"
 
@@ -68,7 +67,6 @@ do-install:
 	@${CP} -r ${WRKSRC}/* ${PREFIX}/lib/webmin
 	@cd ${PREFIX}/lib/webmin && find . -name "*.orig" -print \
 		| xargs ${RM}
-	@cd ${PREFIX}/lib/webmin && ./setup.sh
 	@${CP} ${WRKDIR}/webmin.sh ${PREFIX}/etc/rc.d/webmin.sh
 	@${CHMOD} 554 ${PREFIX}/etc/rc.d/webmin.sh
 
@@ -76,5 +74,6 @@ post-install:
 	@${CP} ${PLIST} ${TMPPLIST}
 	@find ${PREFIX}/lib/webmin -type f | ${SED} -e "s@${PREFIX}/@@" | sort >> ${TMPPLIST}
 	@find ${PREFIX}/lib/webmin -type d | ${SED} -e "s@${PREFIX}/@@" | ${PERL} -e 'print (join ("\n", reverse map ("\@dirrm " . substr ($$_, 0, -1), <STDIN>)) . "\n");' >> ${TMPPLIST}
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
