@@ -2,11 +2,11 @@
 # Date created:        13 June 2000
 # Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.3 2000/07/06 12:14:52 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.4 2000/07/06 14:50:40 sobomax Exp $
 #
 
 PORTNAME=	gtk-engines-collection
-PORTVERSION= 	1.2
+PORTVERSION= 	1.3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,8 +18,11 @@ MAINTAINER=	sobomax@FreeBSD.org
 # this package is uterly buggy.
 RUN_DEPENDS=	${THEMESBASE}/libbuffy.so:${PORTSDIR}/x11-toolkits/buffy \
 		${THEMESBASE}/libclean.so:${PORTSDIR}/x11-toolkits/clean-theme-gtk \
+		${THEMESBASE}/libcolorstep.so:${PORTSDIR}/x11-toolkits/colorstep \
+		${THEMESBASE}/libengradient.so:${PORTSDIR}/x11-toolkits/engradient \
 		${THEMESBASE}/libgnomelook.so:${PORTSDIR}/x11-toolkits/gnome-look \
 		${THEMESBASE}/libgtkbe.so:${PORTSDIR}/x11-toolkits/gtkbe \
+		${THEMESBASE}/libicegradient.so:${PORTSDIR}/x11-toolkits/icegradient \
 		${THEMESBASE}/libmac2.so:${PORTSDIR}/x11-toolkits/gtk-Mac2-theme \
 		${THEMESBASE}/libstep.so:${PORTSDIR}/x11-toolkits/gtkstep \
 		${THEMESBASE}/libsteppastel.so:${PORTSDIR}/x11-toolkits/gtkstep-pastel \
