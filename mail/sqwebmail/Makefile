@@ -2,11 +2,11 @@
 # Date created:		23 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/sqwebmail/Makefile,v 1.2 2000/09/22 22:28:01 nbm Exp $
+# $FreeBSD: ports/mail/sqwebmail/Makefile,v 1.3 2000/11/03 23:42:36 nbm Exp $
 #
 
 PORTNAME=	sqwebmail
-PORTVERSION=	1.0
+PORTVERSION=	1.0.3
 CATEGORIES=	mail www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= courier
@@ -53,6 +53,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS= \
 	--enable-cgibindir=${CGIBINDIR}/${CGIBINSUBDIR} \
 	--enable-imagedir=${WEBDATADIR}/${WEBDATASUBDIR} \
+	--libexecdir=${PREFIX}/libexec/sqwebmail \
 	--enable-imageurl=/${IMAGEURL}/
 
 .if defined(WITHOUT_CACHEDIR)
