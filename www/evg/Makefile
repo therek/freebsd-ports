@@ -2,7 +2,7 @@
 # Date created:		19 April 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/www/evg/Makefile,v 1.7 2000/11/26 13:43:44 demon Exp $
+# $FreeBSD: ports/www/evg/Makefile,v 1.8 2001/01/07 17:49:50 will Exp $
 #
 
 PORTNAME=	evg
@@ -33,7 +33,7 @@ do-install:
 	@ ${MKDIR} ${PYTHON_SITELIBDIR}
 	@ ${INSTALL_DATA} ${WRKSRC}/eclipthtml.py ${PYTHON_SITELIBDIR}
 	@ ${INSTALL_SCRIPT} ${WRKSRC}/evg ${PREFIX}/bin
-.ifndef{NOPORTDOC}
+.if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${PREFIX}/share/doc/evg
 	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/evg
 .endif
