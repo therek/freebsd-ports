@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.12 2000/01/04 11:32:18 shige Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.13 2000/01/18 12:34:34 sumikawa Exp $
 #
 
 DISTNAME=	emacs-20.5a
@@ -12,7 +12,8 @@ CATEGORIES=	editors ipv6
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
-PATCH_SITES=	http://www.etl.go.jp/~tomo/comp/emacsen/
+PATCH_SITES=	ftp://ftp.m17n.org/pub/mule/dynamic-loading/ \
+		http://www.etl.go.jp/~tomo/comp/emacsen/
 PATCHFILES=	emacs-20.4-dl3.diff.gz
 PATCH_DIST_STRIP= -p1
 
