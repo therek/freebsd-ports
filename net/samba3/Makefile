@@ -2,11 +2,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.64 2001/07/10 03:29:57 dwcjr Exp $
+# $FreeBSD: ports/net/samba-devel/Makefile,v 1.65 2001/07/11 14:51:44 dwcjr Exp $
 #
 
 PORTNAME=	samba
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.1a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/%SUBDIR%/ \
 		ftp://samba.anu.edu.au/pub/samba/%SUBDIR%/ \
