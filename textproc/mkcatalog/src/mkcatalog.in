@@ -5,7 +5,7 @@
 # Created:  20001015  Shigeyuki Fukushima <shige@FreeBSD.org>.
 # Modified: 20001019  Hiroki Sato <hrs@FreeBSD.org>.
 #
-# $FreeBSD: ports/textproc/mkcatalog/src/mkcatalog.in,v 1.2 2000/10/27 14:21:57 shige Exp $
+# $FreeBSD: ports/textproc/mkcatalog/src/mkcatalog.in,v 1.3 2000/12/13 11:27:20 shige Exp $
 #
 sh_basename ()
 {
@@ -116,7 +116,7 @@ Usage:
  ${ARGV0} [-c toplv-catalog-filename] [-pqv] [install|add|deinstall|delete|enable|disable] dtd-directory-name [catalog-filename].
 
         -c filename   specifies top-level catalog file
-                      (default: ${PREFIX}/catalog)
+                      (default: ${CAT_DIR}/${CAT_FILE})
         -p            preseve old catalog file (as .old)
         -q            quiet mode
         -v            verbose mode (for debug)
