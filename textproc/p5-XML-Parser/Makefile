@@ -2,7 +2,7 @@
 # Date created:		15 Nov 1998
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.11 2000/07/10 08:58:30 kuriyama Exp $
+# $FreeBSD: ports/textproc/p5-XML-Parser/Makefile,v 1.12 2000/10/25 02:24:38 kuriyama Exp $
 #
 
 PORTNAME=	XML-Parser
@@ -16,7 +16,7 @@ DISTFILES=	${PORTNAME}.${PORTVERSION}.tar.gz
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-LIB_DEPENDS=	expat.0:${PORTSDIR}/textproc/expat2
+LIB_DEPENDS=	expat.2:${PORTSDIR}/textproc/expat2
 
 USE_PERL5=	yes
 
