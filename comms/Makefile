@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.53 2001/07/07 09:53:24 dinoex Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.54 2001/08/30 07:26:32 knu Exp $
 #
 
     SUBDIR += asmodem
@@ -7,6 +7,7 @@
     SUBDIR += comserv
     SUBDIR += conserver
     SUBDIR += ecu
+    SUBDIR += ghfaxviewer
     SUBDIR += gkermit
     SUBDIR += gnokii
     SUBDIR += hylafax
