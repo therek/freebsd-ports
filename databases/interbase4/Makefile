@@ -2,7 +2,7 @@
 # Date created:				1998-nov-01
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/databases/interbase4/Makefile,v 1.10 2000/04/08 22:48:32 mharo Exp $
+# $FreeBSD: ports/databases/interbase4/Makefile,v 1.11 2001/01/11 15:21:56 jedgar Exp $
 #
 
 PORTNAME=	interbase
@@ -13,7 +13,7 @@ DISTNAME=	IB_4.0_FreeBSD
 
 MAINTAINER=	berend@pobox.com
 
-FORBIDDEN=	"Backdoored by Borland"
+FORBIDDEN=	"Backdoored by Borland, http://www.cert.org/advisories/CA-2001-01.html for more information"
 ONLY_FOR_ARCHS=	i386
 
 NO_WRKSUBDIR=
@@ -30,6 +30,10 @@ do-fetch:
 		${ECHO_MSG} "Sorry, this package cannot be fetched automagically."; \
 		${ECHO_MSG} "Point your browser to http://iblinux.rios.co.jp/intl/dloadfb/."; \
 		${ECHO_MSG} "And put the package in ${DISTDIR}."; \
+		${ECHO_MSG} "IMPORTANT NOTE: a security compromise has been detected for this package."; \
+		${ECHO_MSG} "Don't install this package on a server connected to the Internet or"; \
+		${ECHO_MSG} "in insecure environments."; \
+		${ECHO_MSG} "Read http://www.cert.org/advisories/CA-2001-01.html for more information."; \
 		exit 1; \
 	fi
 
