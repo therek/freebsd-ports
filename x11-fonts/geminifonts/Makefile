@@ -2,7 +2,7 @@
 # Date created:				Oct 30, 2000
 # Whom:					mi@aldan.algebra.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/geminifonts/Makefile,v 1.1 2000/12/03 20:48:22 will Exp $
 #
 
 PORTNAME=	gemini
@@ -22,7 +22,10 @@ USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 
 MAKE_ENV+=	DESTDIR=${X11BASE}/lib/X11/fonts/koi8-u-gemini
-MAKE_ARGS+=	-E DESTDIR
+MAKE_ARGS+=	-E DESTDIR -j 2
+
+post-patch:
+	${PERL} -pi -e 's/\.Z/.gz/g' ${WRKSRC}/Makefile
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
@@ -34,7 +37,7 @@ post-install:
 post-build:
 	# Creating aliases for koi8-r encoding and Cronyx foundry:
 	@${ECHO} >> ${WRKSRC}/fonts.alias
-	@${ECHO} "# Automaticly generated aliases for koi8-r encoding" \
+	@${ECHO} "! Automaticly generated aliases for koi8-r encoding:" \
 		>> ${WRKSRC}/fonts.alias
 	${AWK} '/gemini/ { \
 		name = $$2; \
