@@ -1,10 +1,11 @@
-# $FreeBSD: ports/converters/Makefile,v 1.64 2001/09/12 01:07:29 mharo Exp $
+# $FreeBSD$
 #
 
     SUBDIR += aish
     SUBDIR += base64
     SUBDIR += btoa
     SUBDIR += cn2jp
+    SUBDIR += dosunix
     SUBDIR += dumpasn1
     SUBDIR += fconv
     SUBDIR += gb2jis
