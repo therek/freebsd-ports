@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/lang/ruby16-shim-ruby18/pkg-install,v 1.3 2003/02/12 16:12:00 knu Exp $
+# $FreeBSD: ports/lang/ruby16-shim-ruby18/pkg-install,v 1.4 2003/03/03 17:03:09 knu Exp $
 
 PKGNAME=$1
 PKG_DBDIR=${PKG_DBDIR:-/var/db/pkg}
@@ -12,6 +12,7 @@ die () {
 
 delete_modules () {
     modules="
+	bigfloat
 	dl
 	erb
 	fileutils
@@ -20,6 +21,7 @@ delete_modules () {
 	racc-runtime
 	strscan
 	testunit
+	zlib
     "
 
     echo "Deinstalling modules being replaced by $PKGNAME..."
