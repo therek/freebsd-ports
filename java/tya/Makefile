@@ -3,7 +3,7 @@
 # Date created:		16 May 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/tya/Makefile,v 1.6 1999/08/25 06:16:32 obrien Exp $
+# $FreeBSD: ports/java/tya/Makefile,v 1.7 1999/09/06 14:29:45 taoka Exp $
 #
 
 DISTNAME=	tya14
