@@ -2,7 +2,7 @@
 # Date created:         25 Now 1995
 # Whom:                 Donald Burr <d_burr@ix.netcom.com>
 #
-# $FreeBSD: ports/audio/workman/Makefile,v 1.13 2000/06/07 09:06:35 asami Exp $
+# $FreeBSD: ports/audio/workman/Makefile,v 1.14 2000/07/14 16:11:31 alex Exp $
 #
 
 PORTNAME=	workman
@@ -22,6 +22,6 @@ MAN1=		workman.1
 MAN5=		workmandb.5
 
 post-install:
-		/usr/bin/gzip ${X11BASE}/man/man5/workmandb.5
+	${GZIP_CMD} ${X11BASE}/man/man5/workmandb.5
 
 .include <bsd.port.mk>
