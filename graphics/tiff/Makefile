@@ -1,20 +1,20 @@
 # New ports collection makefile for:	tiff
-# Version required:	3.4
+# Version required:	3.5.1
 # Date created:		8 October 1996
 # Whom:			Richard Hwang <rhwang@bigpanda.com>
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tiff/Makefile,v 1.19 1999/08/25 06:15:06 obrien Exp $
 #
 
-DISTNAME=	tiff-v3.4beta037
-PKGNAME=	tiff-3.4b37
+DISTNAME=	tiff-v3.5.1
+PKGNAME=	tiff-3.5.1
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.wizards.dupont.com/pub/ImageMagick/delegates/ \
-		ftp://ftp.fifi.org/pub/ImageMagick/delegates/
+MASTER_SITES=	ftp://ftp.onshore.com/pub/libtiff/ \
+		http://www.libtiff.org/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=    jpeg.9:${PORTSDIR}/graphics/jpeg
 
@@ -74,7 +74,8 @@ post-install:
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${DOCDIR}/images
 	${INSTALL_DATA} ${WRKSRC}/html/*.html ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/html/images/* ${DOCDIR}/images
+	${INSTALL_DATA} ${WRKSRC}/html/images/*.gif ${DOCDIR}/images
+	${INSTALL_DATA} ${WRKSRC}/html/images/*.jpg ${DOCDIR}/images
 .endif
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libtiff.so.4.0 ${PREFIX}/lib/libtiff.so
