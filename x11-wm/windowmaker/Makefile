@@ -1,12 +1,12 @@
 # New ports collection makefile for:	WindowMaker
-# Version required:	0.62.0
+# Version required:	0.62.1
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.62 2000/02/16 13:05:04 tg Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.63 2000/03/31 09:35:04 tg Exp $
 
-DISTNAME=	WindowMaker-0.62.0
-PKGNAME=	windowmaker-0.62.0
+DISTNAME=	WindowMaker-0.62.1
+PKGNAME=	windowmaker-0.62.1
 CATEGORIES=	x11-wm windowmaker
 MASTER_SITES=	${MASTER_SITE_WINDOWMAKER} \
 		http://jgo.local.net/cool_downloads/wm/
@@ -72,7 +72,7 @@ post-configure:
 
 post-install:
 	@cd ${WRKDIR}/WindowMaker-extra-0.1; \
-		${MAKE} ${MAKE_ARGS} install
+		${MAKE} ${MAKE_ARGS} ${INSTALL_TARGET}
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${MKDIR} ${PREFIX}/share/WindowMaker/Sounds
 
