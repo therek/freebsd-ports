@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.560 2001/06/16 14:22:11 joe Exp $
+# $FreeBSD: ports/net/Makefile,v 1.561 2001/06/18 05:03:05 dwcjr Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -293,6 +293,7 @@
     SUBDIR += pvm++
     SUBDIR += py-soap
     SUBDIR += py-xmlrpc
+    SUBDIR += py-xmlrpclib
     SUBDIR += queso
     SUBDIR += radius
     SUBDIR += radiusclient
