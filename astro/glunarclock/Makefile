@@ -2,11 +2,12 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/glunarclock/Makefile,v 1.1 2000/10/31 15:47:34 sobomax Exp $
 #
 
 PORTNAME=	glunarclock
 PORTVERSION=	0.1
+PORTREVISION=	1
 CATEGORIES=	astro gnome
 MASTER_SITES=	http://www.fortunecity.de/naturpark/bienen/99/download/
 
