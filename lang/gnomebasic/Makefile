@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:				Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/gnomebasic/Makefile,v 1.3 2000/10/22 19:52:16 ade Exp $
+# $FreeBSD: ports/lang/gnomebasic/Makefile,v 1.4 2000/11/02 21:20:06 ade Exp $
 #
 
 PORTNAME=	gnomebasic
-PORTVERSION=	0.0.14
+PORTVERSION=	0.0.15
 CATEGORIES=	lang gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gb
