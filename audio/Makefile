@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.235 2001/05/21 19:47:43 alex Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.236 2001/05/24 12:24:31 ijliao Exp $
 #
 
     SUBDIR += Maaate
@@ -10,6 +10,7 @@
     SUBDIR += aureal-kmod
     SUBDIR += autozen
     SUBDIR += bladeenc
+    SUBDIR += bonk
     SUBDIR += btc
     SUBDIR += cam
     SUBDIR += ccaudio
