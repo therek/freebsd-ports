@@ -2,14 +2,15 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.3 2000/04/21 07:52:03 mharo Exp $
+# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.4 2000/08/01 09:39:00 kuriyama Exp $
 #
 
 PORTNAME=	palmos-sdk
 PORTVERSION=	3.5
+PORTREVISION=	1
 CATEGORIES=	palm
 MASTER_SITES=	
-DISTNAME=	sdk35
+DISTFILES=	sdk35.tar.gz sdk35-update1.tar.gz
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
@@ -22,7 +23,7 @@ LIBDIR=		${PREFIX}/palmdev/sdk-3.5/lib
 
 .include <bsd.port.pre.mk>
 
-.if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
+.if !exists(${DISTDIR}/sdk35.tar.gz) || !exists(${DISTDIR}/sdk35-update1.tar.gz)
 IGNORE='You must manually fetch tarball from http://www.palmos.com/dev/tech/tools/ and place it in ${DISTDIR} then run make again.'
 .endif
 
