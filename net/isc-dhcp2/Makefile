@@ -2,14 +2,14 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.33 2000/06/14 15:43:47 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.34 2000/06/26 02:23:41 jseger Exp $
 #
 
 PORTNAME=	isc-dhcp
-PORTVERSION=	2.0.1
+PORTVERSION=	2.0.2
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.isc.org/isc/dhcp/
-DISTNAME=	dhcp-2.0pl1
+DISTNAME=	dhcp-2.0pl2
 
 MAINTAINER=	jseger@FreeBSD.org
 
