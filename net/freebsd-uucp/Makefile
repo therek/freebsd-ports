@@ -2,7 +2,7 @@
 # Date created:			  08 Sep 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/net/freebsd-uucp/Makefile,v 1.3 2001/10/01 07:51:11 kris Exp $
+# $FreeBSD: ports/net/freebsd-uucp/Makefile,v 1.4 2001/10/03 13:13:01 dinoex Exp $
 #
 
 PORTNAME=	freebsd-uucp
@@ -11,7 +11,7 @@ CATEGORIES=	net comms
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=kris
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	lyndon@atg.aciworldwide.com
 
 USE_BZIP2=	yes
 
