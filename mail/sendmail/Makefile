@@ -18,6 +18,7 @@ COMMENT=	Reliable, highly configurable mail transfer agent with utilities
 
 CONFLICTS?=	courier-0.* postfix-1.* postfix-2.* smail-3.* zmailer-2.*
 CONFLICTS+=	sendmail-8.11.* sendmail-*-8.11.* sendmail+*-8.11.*
+CONFLICTS+=	sendmail-8.12.* sendmail-*-8.12.* sendmail+*-8.12.*
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 WCONF=		${WRKSRC}/devtools/Site
@@ -98,9 +99,6 @@ LIB_DEPENDS+=	sasl2.2:${PORTSDIR}/security/cyrus-sasl2
 RUN_DEPENDS+=	${LOCALBASE}/sbin/saslauthd:${PORTSDIR}/security/cyrus-sasl2-saslauthd
 .else
 CONFLICTS+=	sendmail*+sasl2*-8.*
-.endif
-.if defined(SENDMAIL_WITH_SOCKETMAP)
-EXTRA_PATCHES+=	${FILESDIR}/socketmap.patch
 .endif
 .if defined(SENDMAIL_WITH_CYRUSLOOKUP)
 EXTRA_PATCHES+=	${FILESDIR}/cyruslookup.patch
