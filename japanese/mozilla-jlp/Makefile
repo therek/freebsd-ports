@@ -2,7 +2,7 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.7 2001/04/08 06:09:49 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.8 2001/04/08 17:14:21 sf Exp $
 #
 
 PORTNAME=	mozilla
@@ -30,8 +30,7 @@ USE_X_PREFIX=	yes
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-qo
 
-# forcing define this until www/mozilla would be catched up.
-MOZILLA_IPV6=	yes
+MOZILLA_IPV6?=	yes
 
 .if defined(MOZILLA_IPV6)
 MOZILLA_PORT=	${PORTSDIR}/www/mozilla+ipv6
