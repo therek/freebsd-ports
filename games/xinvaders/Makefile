@@ -2,7 +2,7 @@
 # Date created:         3 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xinvaders/Makefile,v 1.13 1999/08/25 06:05:20 obrien Exp $
+# $FreeBSD: ports/games/xinvaders/Makefile,v 1.14 2000/04/14 12:27:29 asami Exp $
 #
 
 PORTNAME=	xinvaders
@@ -10,7 +10,7 @@ PORTVERSION=	1.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade/invaders
-DISTNAME=       ${PORTNAME}
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	swallace@FreeBSD.org
 

@@ -2,13 +2,13 @@
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.3 2000/06/17 02:37:11 will Exp $
+# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.4 2000/11/13 12:45:15 demon Exp $
 #
 
 PORTNAME=	HTML-Summary
-PORTVERSION= 	0.017
-CATEGORIES=     www perl5
-MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
+PORTVERSION=	0.017
+CATEGORIES=	www perl5
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 

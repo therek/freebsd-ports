@@ -2,7 +2,7 @@
 # Date created:		12 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.11 2000/06/01 15:52:33 will Exp $
+# $FreeBSD: ports/sysutils/ucspi-tcp/Makefile,v 1.12 2000/07/10 01:41:24 steve Exp $
 #
 
 PORTNAME=	ucspi-tcp
@@ -10,7 +10,7 @@ PORTVERSION=	0.88
 CATEGORIES=	sysutils net
 MASTER_SITES=	http://cr.yp.to/ucspi-tcp/
 
-MAINTAINER=     dom@myrddin.demon.co.uk
+MAINTAINER=	dom@myrddin.demon.co.uk
 
 NO_PACKAGE=	"Unsure of djb\'s license"
 

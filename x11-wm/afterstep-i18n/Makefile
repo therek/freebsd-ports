@@ -2,11 +2,11 @@
 # Date created:		23 October 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.16 2000/08/13 16:09:07 alex Exp $
+# $FreeBSD: ports/x11-wm/afterstep-i18n/Makefile,v 1.17 2000/08/13 19:46:38 alex Exp $
 #
 
 PORTNAME=	afterstep-i18n
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-wm afterstep
 MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 		${MASTER_SITE_LOCAL} \
@@ -15,13 +15,13 @@ MASTER_SITES=	${MASTER_SITE_AFTERSTEP} \
 # former for ${MASTER_SITE_AFTERSTEP}, latter for ${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	stable/archives kuriyama
 DISTNAME=	AfterStep-1.0
-DISTFILES=      ${DISTNAME}.tar.gz \
+DISTFILES=	${DISTNAME}.tar.gz \
 		unofficial-I18N.98Feb27.tar.gz \
 		kterm.xpm kterm2.xpm KTerm-AS.xpm netscape4.xpm
 EXTRACT_ONLY=	${DISTNAME}.tar.gz \
 		unofficial-I18N.98Feb27.tar.gz
 
-PATCH_DIST_STRIP=       -p1
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	issei@jp.FreeBSD.org
 

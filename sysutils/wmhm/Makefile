@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.18 2000/12/25 13:49:04 jedgar Exp $
 #
 
 PORTNAME=	wmhm
@@ -12,9 +12,9 @@ CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	ftp://muir.yi.org/pub/wmhm/ \
 		http://www.es.co.nz/~mmuir/
 
-MAINTAINER=    mmuir@cwnet.com
+MAINTAINER=	mmuir@cwnet.com
 
-LIB_DEPENDS=   Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 WRKSRC=		${WRKDIR}/wmhm/wmhm
 

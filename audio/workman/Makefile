@@ -2,7 +2,7 @@
 # Date created:         25 Now 1995
 # Whom:                 Donald Burr <d_burr@ix.netcom.com>
 #
-# $FreeBSD: ports/audio/workman/Makefile,v 1.14 2000/07/14 16:11:31 alex Exp $
+# $FreeBSD: ports/audio/workman/Makefile,v 1.15 2000/07/16 13:13:33 alex Exp $
 #
 
 PORTNAME=	workman
@@ -10,7 +10,7 @@ PORTVERSION=	1.3a
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications/WorkMan
-DISTNAME=       WorkMan-${PORTVERSION}
+DISTNAME=	WorkMan-${PORTVERSION}
 
 MAINTAINER=	d_burr@ix.netcom.com
 

@@ -2,18 +2,18 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.7 2000/04/13 20:00:48 cpiazza Exp $
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.8 2000/10/08 10:22:05 asami Exp $
 #
 
 PORTNAME=	smtpd
-PORTVERSION= 	2.0
-CATEGORIES=    mail security
-MASTER_SITES=  ftp://ftp.obtuse.com/pub/smtpd/
+PORTVERSION=	2.0
+CATEGORIES=	mail security
+MASTER_SITES=	ftp://ftp.obtuse.com/pub/smtpd/
 
-PATCH_SITES=   ${MASTER_SITES}
-PATCHFILES=    patch-smtpd-2.0-RBL.gz
+PATCH_SITES=	${MASTER_SITES}
+PATCHFILES=	patch-smtpd-2.0-RBL.gz
 
-MAINTAINER=    jonny@jonny.eng.br
+MAINTAINER=	jonny@jonny.eng.br
 
 #  Directory where smtpd will chroot to, and put the received mail
 #  If you change it here, change also patches/patch-aa

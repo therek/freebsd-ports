@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.89 2000/10/26 06:03:45 asami Exp $
+# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.90 2000/11/03 11:08:08 asami Exp $
 #
 
 PORTNAME=	libraries
@@ -30,7 +30,7 @@ SCRIPTS_ENV+=		PREFIX=${PREFIX} \
 			WRKDIR=${WRKDIR} \
 			DISTDIR=${DISTDIR}
 ALL_TARGET=		FreeBSDPortsBuild
-INSTALL_TARGET= FreeBSDPortsInstall FreeBSDPortsInstall.man installXlib
+INSTALL_TARGET=	FreeBSDPortsInstall FreeBSDPortsInstall.man installXlib
 MANCOMPRESSED=	yes
 MAN1=		libxrx.1
 MAN3=		Xaw.3
@@ -39,9 +39,9 @@ MAN3=		Xaw.3
 
 # BuildXF86DRI is false for FreeBSD < 4.1
 .if ${OSVERSION} < 410000
-PLIST_SUB+=     OSMESA:="@comment "
+PLIST_SUB+=	OSMESA:="@comment "
 .else
-PLIST_SUB+=     OSMESA:=""
+PLIST_SUB+=	OSMESA:=""
 .endif
 
 .if defined(XDM_DES)

@@ -2,15 +2,15 @@
 # Date created:		28 Aug 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.1.1.1 1999/09/06 23:46:53 taoka Exp $
+# $FreeBSD: ports/mail/prom-wl/Makefile,v 1.2 2000/04/13 20:00:37 cpiazza Exp $
 #
 
 PORTNAME=	prom-wl
-PORTVERSION= 	1.0.2
+PORTVERSION=	1.0.2
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www02.so-net.ne.jp/~murata/software/pub/
 
-MAINTAINER=     kiri@pis.toba-cmt.ac.jp
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 # This port requires Wanderlust. But we can't decide which Wanderlust to depends,
 # there is NO RUN_DEPNDS mail/wanderlust-*.

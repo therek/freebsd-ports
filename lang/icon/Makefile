@@ -2,14 +2,14 @@
 # Date created:         05 April 1995
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/icon/Makefile,v 1.17 2000/01/14 17:09:01 imura Exp $
+# $FreeBSD: ports/lang/icon/Makefile,v 1.18 2000/04/12 06:18:58 obrien Exp $
 #
 
 PORTNAME=	icon
 PORTVERSION=	9.3.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.cs.arizona.edu/icon/packages/unix/
-DISTNAME=       unix
+DISTNAME=	unix
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org

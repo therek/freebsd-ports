@@ -2,7 +2,7 @@
 # Date created:		18 november 1999
 # Whom:			n_hibma
 #
-# $FreeBSD: ports/misc/ezload/Makefile,v 1.3 1999/11/22 19:00:54 n_hibma Exp $
+# $FreeBSD: ports/misc/ezload/Makefile,v 1.4 2000/04/14 08:45:40 asami Exp $
 #
 
 PORTNAME=	ezload
@@ -20,7 +20,7 @@ MAKE_ENV=	BINDIR="${PREFIX}/bin" MANDIR="${PREFIX}/man/man" MKDIR="${MKDIR}" INS
 .include <bsd.port.pre.mk>
  
 .if ${OSVERSION} < 400012
-IGNORE=        'This port only works on 4.00012'
+IGNORE=		'This port only works on 4.00012'
 .endif
    
 .include <bsd.port.post.mk>

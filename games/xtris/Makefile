@@ -2,10 +2,10 @@
 # Date created:         24. Sep 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/games/xtris/Makefile,v 1.5 2000/01/24 01:35:40 sumikawa Exp $
+# $FreeBSD: ports/games/xtris/Makefile,v 1.6 2000/04/14 12:28:30 asami Exp $
 #
 
-PORTNAME=       xtris
+PORTNAME=	xtris
 PORTVERSION=	1.15
 CATEGORIES=	games ipv6
 MASTER_SITES=	http://www.iagora.com/~espel/xtris/

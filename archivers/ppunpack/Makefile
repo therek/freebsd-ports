@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.2 2000/06/22 05:51:50 will Exp $
+# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.3 2000/07/25 01:31:33 kevlo Exp $
 #
 
 PORTNAME=	ppunpack
@@ -19,7 +19,7 @@ RESTRICTED=	"No commercial redistribution"
 NO_CDROM=	${RESTRICTED}
 
 WRKSRC=		${WRKDIR}/PPUnpack
-MAKE_ARGS=     	CC="${CC}" COPTS="${CFLAGS}"
+MAKE_ARGS=	CC="${CC}" COPTS="${CFLAGS}"
 ALL_TARGET=	ppunpack
 
 do-install:

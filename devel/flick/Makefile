@@ -2,7 +2,7 @@
 # Date created:		21 Mar 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/devel/flick/Makefile,v 1.7 2000/04/11 21:27:53 mharo Exp $
+# $FreeBSD: ports/devel/flick/Makefile,v 1.8 2000/09/25 12:21:12 asami Exp $
 #
 
 PORTNAME=	flick
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://flux.cs.utah.edu/flux/flick/2.1/
 DISTFILES=	${PORTNAME}-${PORTVERSION}-src.tar.gz
 
-MAINTAINER=     ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

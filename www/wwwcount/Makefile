@@ -2,20 +2,20 @@
 # Date created:         16 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/wwwcount/Makefile,v 1.16 2000/02/26 19:48:02 steve Exp $
+# $FreeBSD: ports/www/wwwcount/Makefile,v 1.17 2000/04/10 00:07:25 cpiazza Exp $
 #
 
 PORTNAME=	wwwcount
-PORTVERSION= 	2.5
-CATEGORIES=     www
-MASTER_SITES=   http://www.muquit.com/muquit/software/Count/src/wwwcount2.5/
+PORTVERSION=	2.5
+CATEGORIES=	www
+MASTER_SITES=	http://www.muquit.com/muquit/software/Count/src/wwwcount2.5/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=     dervish@ikhala.tcimet.net
+MAINTAINER=	dervish@ikhala.tcimet.net
 
-GNU_CONFIGURE=  yes
-IS_INTERACTIVE= yes
-USE_GMAKE=      yes
+GNU_CONFIGURE=	yes
+IS_INTERACTIVE=	yes
+USE_GMAKE=	yes
 MAN1=		mkstrip.1
 
 pre-configure:

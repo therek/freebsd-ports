@@ -2,19 +2,19 @@
 # Date created:        31 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/ved/Makefile,v 1.1 2001/01/01 14:12:47 alex Exp $
 #
 
-PORTNAME=       	ved
-PORTVERSION=		1.5
-CATEGORIES=     	editors
-MASTER_SITES=   	ftp://ftp.fokus.gmd.de/pub/unix/ved/
+PORTNAME=	ved
+PORTVERSION=	1.5
+CATEGORIES=	editors
+MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/ved/
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@ukug.uk.freebsd.org
 
-USE_GMAKE=		yes
+USE_GMAKE=	yes
 
-MAN1=			ved.1
+MAN1=		ved.1
 
 post-patch:
 .for F in ved.h ved.1

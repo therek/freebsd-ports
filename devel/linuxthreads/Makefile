@@ -2,7 +2,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.16 2000/10/08 10:19:27 asami Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.17 2000/11/06 19:43:33 jasone Exp $
 #
 
 PORTNAME=	linuxthreads
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	glibc
 DISTNAME=	glibc-linuxthreads-${PORTVERSION}
 
-MAINTAINER=    jasone@freebsd.org
+MAINTAINER=	jasone@freebsd.org
 
 .include <bsd.port.pre.mk>
 

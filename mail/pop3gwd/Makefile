@@ -3,13 +3,13 @@
 # Whom:					jonny@jonny.eng.br
 #
 # $OpenBSD: Makefile,v 1.9 2000/10/23 16:08:13 espie Exp $
-# $FreeBSD$
+# $FreeBSD: ports/mail/pop3gwd/Makefile,v 1.1 2000/10/28 03:06:48 will Exp $
 #
 
 PORTNAME=	pop3gwd
 PORTVERSION=	1.2
-CATEGORIES=    	mail net
-MASTER_SITES=   http://www.go.dlr.de/linux/src/			\
+CATEGORIES=	mail net
+MASTER_SITES=	http://www.go.dlr.de/linux/src/			\
 		ftp://ftp.eos.hokudai.ac.jp/pub/mail/pop/	\
 		ftp://ftp.win.ne.jp/pub/network/mail/pop/
 

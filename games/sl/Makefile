@@ -2,7 +2,7 @@
 # Date created:                17 Sep 1999
 # Whom:                        HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/sl/Makefile,v 1.2 2000/04/14 12:26:33 asami Exp $
+# $FreeBSD: ports/games/sl/Makefile,v 1.3 2000/08/11 01:23:53 will Exp $
 #
 
 PORTNAME=	sl
@@ -12,13 +12,13 @@ MASTER_SITES=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/sl/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=    th@cis.ibaraki.ac.jp
+MAINTAINER=	th@cis.ibaraki.ac.jp
 
-BUILD_DEPENDS= nkf:${PORTSDIR}/japanese/nkf
+BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 
-ALL_TARGET=    sl
-MAN1=          sl.1
-MANLANG=       ja
+ALL_TARGET=	sl
+MAN1=		sl.1
+MANLANG=	ja
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/sl ${PREFIX}/bin

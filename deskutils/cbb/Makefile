@@ -2,7 +2,7 @@
 # Date created:			24 September, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.17 2000/04/08 22:03:24 mharo Exp $
+# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.18 2000/06/14 13:21:08 sobomax Exp $
 #
 
 PORTNAME=	cbb
@@ -15,9 +15,9 @@ MAINTAINER=	kline@thought.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
-NO_BUILD=       yes
+NO_BUILD=	yes
 USE_PERL5=	yes
 MAKE_ENV=	PERL5=${PERL5}
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>

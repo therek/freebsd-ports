@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-mule/Makefile,v 1.6 2000/04/19 06:52:36 knu Exp $
+# $FreeBSD: ports/mail/wanderlust-mule/Makefile,v 1.7 2000/07/10 02:08:19 steve Exp $
 #
 
 MAINTAINER=	nobutaka@nobutaka.com
@@ -15,7 +15,7 @@ MULE_VER=		2.3
 IS_SLAVE=		yes
 
 .if !defined(WITHOUT_X11) && !defined(WITHOUT_BITMAP)
-RUN_DEPENDS=    ${LOCALBASE}/${EMACS_SITE_LISPDIR}/bitmap/bitmap.el:${PORTSDIR}/editors/bitmap-mule
+RUN_DEPENDS=	${LOCALBASE}/${EMACS_SITE_LISPDIR}/bitmap/bitmap.el:${PORTSDIR}/editors/bitmap-mule
 .endif
 
 .include <${MASTERDIR}/Makefile>

@@ -2,12 +2,12 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/libetherx/Makefile,v 1.5 2000/07/07 16:14:18 steve Exp $
+# $FreeBSD: ports/net/libetherx/Makefile,v 1.6 2000/10/16 13:09:15 kevlo Exp $
 #
 
 PORTNAME=	libetherx
 PORTVERSION=	1.0
-CATEGORIES=     net
+CATEGORIES=	net
 MASTER_SITES=	http://download.jabber.org/dists/1.0/final/
 
 MAINTAINER=	lukin@okbmei.msk.su

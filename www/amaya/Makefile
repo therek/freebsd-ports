@@ -2,12 +2,12 @@
 # Date created:		26 Dec 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.14 2000/11/07 23:28:17 asami Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.15 2000/12/30 16:56:13 alex Exp $
 #
 
 PORTNAME=	amaya
 PORTVERSION=	4.2.1
-CATEGORIES= 	www
+CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/Amaya/Distribution/ \
 		ftp://ftp.w3.org/pub/amaya/
 DISTNAME=	${PORTNAME}-src-${PORTVERSION}
@@ -25,15 +25,15 @@ DICT?=		none
 
 .if ${DICT} != "none"
 .if ${DICT} == "all"
-DISTFILES+=    Dutch.tgz
-DISTFILES+=    English.tgz
-DISTFILES+=    French.tgz
-DISTFILES+=    German.tgz
-DISTFILES+=    Italian.tgz
-DISTFILES+=    Spanish.tgz
-DISTFILES+=    Swedish.tgz
+DISTFILES+=	Dutch.tgz
+DISTFILES+=	English.tgz
+DISTFILES+=	French.tgz
+DISTFILES+=	German.tgz
+DISTFILES+=	Italian.tgz
+DISTFILES+=	Spanish.tgz
+DISTFILES+=	Swedish.tgz
 .else
-DISTFILES+=    ${DICT:S/$/.tgz/g}
+DISTFILES+=	${DICT:S/$/.tgz/g}
 .endif
 .endif
 

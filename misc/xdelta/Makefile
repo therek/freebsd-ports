@@ -2,7 +2,7 @@
 # Date created:					Sun May  4 21:40:06 CDT 1997
 # Whom:						jmacd
 #
-# $FreeBSD: ports/misc/xdelta/Makefile,v 1.24 2000/06/16 21:51:41 asami Exp $
+# $FreeBSD: ports/misc/xdelta/Makefile,v 1.25 2000/10/05 06:22:57 reg Exp $
 #
 
 PORTNAME=	xdelta
@@ -18,6 +18,6 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-MAN1=           xdelta.1
+MAN1=		xdelta.1
 
 .include <bsd.port.mk>

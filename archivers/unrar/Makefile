@@ -2,14 +2,14 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/unrar/Makefile,v 1.17 2000/04/08 23:17:54 mharo Exp $
+# $FreeBSD: ports/archivers/unrar/Makefile,v 1.18 2000/06/28 18:14:40 ache Exp $
 #
 
 PORTNAME=	unrar
 PORTVERSION=	2.50
 CATEGORIES=	archivers
-MASTER_SITES=        ${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=  ache
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	ache
 
 MAINTAINER=	ache@FreeBSD.org
 

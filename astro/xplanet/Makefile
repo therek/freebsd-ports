@@ -2,7 +2,7 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.12 2000/09/01 06:31:18 will Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.13 2000/10/05 06:57:30 reg Exp $
 #
 
 PORTNAME=	xplanet
@@ -35,11 +35,11 @@ MAN1=		xplanet.1 xplanetbg.1 tkxplanet.1 tzcoord.pl.1
 
 .if (!defined(WITH_TK80) && !defined(WITH_TK81) && !defined(WITH_TK82) && !defined(WITH_TK83))
 .if exists(${LOCALBASE}/bin/wish8.3)
-WITH_TK83=      yes
+WITH_TK83=	yes
 .elif exists(${LOCALBASE}/bin/wish8.2)
 WITH_TK82=	yes
 .elif exists(${LOCALBASE}/bin/wish8.1)
-WITH_TK81=      yes
+WITH_TK81=	yes
 .else
 WITH_TK80=	yes
 .endif

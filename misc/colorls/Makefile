@@ -2,7 +2,7 @@
 # Date created:		8 March 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/colorls/Makefile,v 1.25 2000/07/04 23:54:24 asami Exp $
+# $FreeBSD: ports/misc/colorls/Makefile,v 1.26 2000/11/23 11:56:08 sobomax Exp $
 #
 
 PORTNAME=	colorls
@@ -16,7 +16,7 @@ MAINTAINER=	asami@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 500004 || ${OSVERSION} < 500000 && ${OSVERSION} >= 400020
-FORBIDDEN=      "colour support is already in the base system"
+FORBIDDEN=	"colour support is already in the base system"
 .endif
 
 MAN1=		colorls.1

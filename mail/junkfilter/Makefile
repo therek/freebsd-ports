@@ -5,7 +5,7 @@
 #
 # $Id: Makefile,v 1.5 2000/05/24 05:40:31 gsutter Exp $
 #
-# $FreeBSD: ports/mail/junkfilter/Makefile,v 1.1 2000/05/24 06:12:43 gsutter Exp $
+# $FreeBSD: ports/mail/junkfilter/Makefile,v 1.2 2000/09/25 12:21:28 asami Exp $
 #
 
 PORTNAME=	junkfilter
@@ -30,7 +30,7 @@ JFFILES=	LICENSE addresses bodychk dialups headers ip jf jf-addresses \
 		junkfilter.opt junkfilter.readme junkfilter.three \
 		junkfilter.two junkfilter.user-default junkfilter.white white
 
-JFDOMFILES=     assorted general gulf-blocks harrismkt thehitman tsf-fannin
+JFDOMFILES=	assorted general gulf-blocks harrismkt thehitman tsf-fannin
 
 do-install:
 	${MKDIR} ${BINDIR}/domains

@@ -2,7 +2,7 @@
 # Date created:		10 December 1999
 # Whom:			Martin Hinner
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vxtools/Makefile,v 1.1.1.1 2000/07/28 20:23:42 sada Exp $
 #
 
 PORTNAME=	vxtools
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.penguin.cz/pub/users/mhi/vxfs/
 
 MAINTAINER=	mhi@penguin.cz
 
-USE_BZIP2=      yes
+USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 

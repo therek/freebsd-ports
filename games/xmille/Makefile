@@ -2,7 +2,7 @@
 # Date created:         30 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xmille/Makefile,v 1.11 1999/08/25 06:05:34 obrien Exp $
+# $FreeBSD: ports/games/xmille/Makefile,v 1.12 2000/04/14 12:27:42 asami Exp $
 #
 
 PORTNAME=	xmille
@@ -11,11 +11,11 @@ CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
 		ftp://gatekeeper.dec.com/pub/X11-contrib/
 MASTER_SITE_SUBDIR=	games
-DISTFILES=       xmille.tar.Z
+DISTFILES=	xmille.tar.Z
 
 MAINTAINER=	swallace@FreeBSD.org
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 NO_WRKSUBDIR=	yes
 MAN1=		xmille.1
 

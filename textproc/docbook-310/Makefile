@@ -4,11 +4,11 @@
 #
 # Based heavily on work by jfieber
 #
-# $FreeBSD: ports/textproc/docbook-310/Makefile,v 1.11 2000/09/07 19:35:51 nik Exp $
+# $FreeBSD: ports/textproc/docbook-310/Makefile,v 1.12 2000/10/27 15:29:04 shige Exp $
 #
 
 PORTNAME=	docbook
-PORTVERSION= 	3.1
+PORTVERSION=	3.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.docbook.org/sgml/3.1/
 DISTNAME=	docbk31
@@ -19,9 +19,9 @@ RUN_DEPENDS=	${ISOCAT}:${PORTSDIR}/textproc/iso8879 \
 		${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
 USE_ZIP=	yes
-NO_MTREE=       yes
+NO_MTREE=	yes
 EXTRACT_ONLY=	# empty
-NO_BUILD=       yes
+NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 PLIST_SUB=	DTD_NAME=${PORTNAME} DTD_VERSION=${PORTVERSION} \
 		MKCATALOG=${MKCATALOG}

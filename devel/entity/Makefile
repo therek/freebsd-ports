@@ -2,7 +2,7 @@
 # Date created:				15 June 2000
 # Whom:					Jesse McConnell <jesse@cylant.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/entity/Makefile,v 1.1 2000/10/28 14:03:33 trevor Exp $
 #
 
 PORTNAME=	entity
@@ -14,7 +14,7 @@ MAINTAINER=	jesse@cylant.com
 
 LIB_DEPENDS=	pcre:${PORTSDIR}/devel/pcre
 
-PREFIX=         ${LOCALBASE}
+PREFIX=		${LOCALBASE}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-tcl=no \

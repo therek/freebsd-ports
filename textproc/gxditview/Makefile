@@ -2,15 +2,15 @@
 # Date created:                24 June 1998
 # Whom:                        Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.4 2000/04/09 21:52:37 cpiazza Exp $
+# $FreeBSD: ports/textproc/gxditview/Makefile,v 1.5 2000/12/13 10:42:53 ru Exp $
 #
 
 PORTNAME=	gxditview
-PORTVERSION= 	1.16.1
+PORTVERSION=	1.16.1
 CATEGORIES=	textproc
 DISTFILES=	# none
 
-MAINTAINER=     dom@myrddin.demon.co.uk
+MAINTAINER=	dom@myrddin.demon.co.uk
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
 

@@ -2,15 +2,15 @@
 # Date created:         Sat Nov 5 11:43:03 PST 1994
 # Whom:                 piero
 #
-# $FreeBSD: ports/graphics/xanim/Makefile,v 1.24 2000/04/14 10:47:41 asami Exp $
+# $FreeBSD: ports/graphics/xanim/Makefile,v 1.25 2000/12/11 02:20:46 steve Exp $
 #
 
-PORTNAME=       xanim
+PORTNAME=	xanim
 PORTVERSION=	2.80.2
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://xanim.va.pubnix.com/ \
 		ftp://xanim.va.pubnix.com/dlls/
-DISTNAME=       xanim2801
+DISTNAME=	xanim2801
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${EXTRA_FILES}
 
 PATCH_SITES=	http://virtual-estates.net/port-stuff/
@@ -18,7 +18,7 @@ PATCHFILES=	xanim-2801-to-2802-patch.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-EXTRA_FILES=    vid_cvid_2.1_freebsdELFx86.tgz \
+EXTRA_FILES=	vid_cvid_2.1_freebsdELFx86.tgz \
 		vid_cyuv_1.0_freebsdELFx86.tgz \
 		vid_h261_1.0_freebsdELFx86.tgz \
 		vid_h263_1.0_freebsdELFx86.tgz \

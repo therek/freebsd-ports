@@ -2,11 +2,11 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.35 2000/07/14 11:38:37 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.36 2000/07/14 11:59:46 sobomax Exp $
 #
 
 PORTNAME=	xforms
-PORTVERSION= 	0.89
+PORTVERSION=	0.89
 CATEGORIES=	x11-toolkits graphics
 MASTER_SITES=	ftp://ncmir.ucsd.edu/pub/xforms/${MASTER_SITE_SUBDIR}/
 EXTRACT_SUFX=	.tgz
@@ -31,7 +31,7 @@ PATCHDIR=	${MASTERDIR}/patches.alpha
 .else
 DISTNAME=	bxform-${PORTVERSION:S/.//}-elf
 MASTER_SITE_SUBDIR=	freeBSD
-PATCHDIR=       ${MASTERDIR}/patches.i386
+PATCHDIR=	${MASTERDIR}/patches.i386
 MAN1+=		iconvert.1
 .endif
 

@@ -2,10 +2,10 @@
 # Date created:		18 Jul 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/games/xkobo/Makefile,v 1.18 2000/09/09 11:01:47 kris Exp $
+# $FreeBSD: ports/games/xkobo/Makefile,v 1.19 2001/01/07 01:21:48 will Exp $
 #
 
-PORTNAME=       xkobo
+PORTNAME=	xkobo
 PORTVERSION=	1.11
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \

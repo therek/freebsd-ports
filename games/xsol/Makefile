@@ -2,7 +2,7 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xsol/Makefile,v 1.11 1999/08/25 06:06:15 obrien Exp $
+# $FreeBSD: ports/games/xsol/Makefile,v 1.12 2000/04/14 12:28:23 asami Exp $
 #
 
 PORTNAME=	xsol
@@ -11,11 +11,11 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/distfiles/ \
 		http://ftp.tu-clausthal.de/pub/unix.new/games/ \
 		ftp://ftp.tu-clausthal.de/pub/unix.new/games/
-DISTNAME=       xsol-new
+DISTNAME=	xsol-new
 
 MAINTAINER=	swallace@FreeBSD.org
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 MAN6=		xsol.6
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			  Fri Oct 02, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/misc/Howto/Makefile,v 1.4 1999/11/20 22:52:49 cpiazza Exp $
+# $FreeBSD: ports/misc/Howto/Makefile,v 1.5 2000/04/14 08:45:13 asami Exp $
 #
 
 PORTNAME=	Howto
@@ -16,7 +16,7 @@ DISTFILES=	Linux+FreeBSD.sgml.gz  \
 		NIS-HOWTO.sgml.gz  \
 		Security-HOWTO.sgml.gz
 
-MAINTAINER=     ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
 

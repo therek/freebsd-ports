@@ -2,7 +2,7 @@
 # Date created:         2 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/texinfo/Makefile,v 1.18 2000/04/09 17:41:22 cpiazza Exp $
+# $FreeBSD: ports/print/texinfo/Makefile,v 1.19 2000/04/09 17:50:41 cpiazza Exp $
 #
 
 PORTNAME=	texinfo
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.tex.ac.uk/tex-archive/macros/eplain/doc/ \
 		ftp://ftp.tex.ac.uk/tex-archive/fonts/latex/tfm/
 DISTFILES=	texinfo.tex lcircle10.tfm
 
-MAINTAINER=     jmz@FreeBSD.org
+MAINTAINER=	jmz@FreeBSD.org
 
 BUILD_DEPENDS=	tex:${PORTSDIR}/print/tex
 RUN_DEPENDS=	tex:${PORTSDIR}/print/tex

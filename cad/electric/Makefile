@@ -2,7 +2,7 @@
 # Date created:		4 May 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/cad/electric/Makefile,v 1.3 2000/10/07 21:32:51 asami Exp $
+# $FreeBSD: ports/cad/electric/Makefile,v 1.4 2000/11/07 23:27:56 asami Exp $
 #
 
 PORTNAME=	electric
@@ -20,7 +20,7 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAKE_ENV+=	X11BASE="${X11BASE}" HACK_INSTALL_DIR="${INSTALL_DIR}"
 
-INSTALL_DIR=    ${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755
+INSTALL_DIR=	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m 755
 
 pre-patch:
 	${SED} "s!PREFIX!${PREFIX}!g" ${FILESDIR}/template-patch-prefix > ${EXTRA_PATCHES}

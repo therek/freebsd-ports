@@ -2,17 +2,17 @@
 # Date created:         25 Jun 1999
 # Whom:                 m.butkus@tu-bs.de
 #
-# $FreeBSD: ports/net/rboot/Makefile,v 1.1 1999/12/10 15:15:21 steve Exp $
+# $FreeBSD: ports/net/rboot/Makefile,v 1.2 2000/04/09 18:13:20 cpiazza Exp $
 #
 
 PORTNAME=	rboot
 PORTVERSION=	3.0.1
 CATEGORIES=	net
-MASTER_SITES=   http://www.bs.ni.schule.de/support/rboot/download/
+MASTER_SITES=	http://www.bs.ni.schule.de/support/rboot/download/
 
 MAINTAINER=	m.butkus@tu-bs.de
 
-NO_PACKAGE=     "this port creates devices"
+NO_PACKAGE=	"this port creates devices"
 
 post-install:
 	@${ECHO} ""

@@ -1,9 +1,8 @@
-# ex:ts=8
 # Ports collection makefile for:	GNU libstdc++
 # Date created:				03 Mar 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.24 2000/04/12 06:18:43 obrien Exp $
+# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.25 2000/12/21 20:16:06 obrien Exp $
 #
 
 PORTNAME=	glibstdc++
@@ -27,9 +26,9 @@ NO_CDROM=	'old version, not worth the cost in real estate'
 CC=		gcc28
 CXX=		g++28
 .if ${PORTOBJFORMAT} == "elf"
-CONFIGURE_TARGET=        i386-portbld-freebsd${OSREL}
+CONFIGURE_TARGET=	i386-portbld-freebsd${OSREL}
 .else
-CONFIGURE_TARGET=        i386-portbld-freebsdaout${OSREL}
+CONFIGURE_TARGET=	i386-portbld-freebsdaout${OSREL}
 .endif
 GCC28DIR=	lib/gcc-lib/${CONFIGURE_TARGET}/2.8.1
 GNU_CONFIGURE=	yes

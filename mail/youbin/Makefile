@@ -2,11 +2,11 @@
 # Date created:			09 Aug 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/youbin/Makefile,v 1.27 2000/10/08 10:22:10 asami Exp $
+# $FreeBSD: ports/mail/youbin/Makefile,v 1.28 2000/11/10 05:55:05 sanpei Exp $
 #
 
 PORTNAME=	youbin
-PORTVERSION= 	2.13
+PORTVERSION=	2.13
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.nuie.nagoya-u.ac.jp/pub/nagoya-u/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/net/
@@ -15,7 +15,7 @@ MAINTAINER=	max@FreeBSD.org
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-#PREFIX?=         ${LOCALBASE}
+#PREFIX?=	${LOCALBASE}
 #MTREE_FILE?=	/etc/mtree/BSD.local.dist
 
 MAN1=		youbin.1

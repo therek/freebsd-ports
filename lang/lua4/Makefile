@@ -2,7 +2,7 @@
 # Date created:				27 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD: ports/lang/lua/Makefile,v 1.7 2000/05/14 05:40:49 billf Exp $
+# $FreeBSD: ports/lang/lua/Makefile,v 1.8 2001/01/03 08:45:12 kevlo Exp $
 #
 
 PORTNAME=	lua
@@ -19,7 +19,7 @@ DISTNAME=	lua-4.0
 MAINTAINER=	richard@homemail.com
 
 MAN1=		luac.1
-WRKSRC=         ${WRKDIR}/lua
+WRKSRC=		${WRKDIR}/lua
 
 do-install:
 	@ ${MKDIR} ${PREFIX}/share/doc/lua

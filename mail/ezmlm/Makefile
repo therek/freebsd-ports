@@ -2,11 +2,11 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm/Makefile,v 1.6 2000/04/13 19:59:37 cpiazza Exp $
+# $FreeBSD: ports/mail/ezmlm/Makefile,v 1.7 2000/09/15 00:25:03 tom Exp $
 #
 
 PORTNAME=	ezmlm
-PORTVERSION= 	0.53
+PORTVERSION=	0.53
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ezmlm.org/pub/qmail/ \
 		ftp://ftp.ntnu.no/pub/unix/mail/qmail/ \
@@ -33,7 +33,7 @@ MAN1=		ezmlm-list.1 ezmlm-make.1 ezmlm-manage.1 ezmlm-reject.1 \
 		ezmlm-warn.1 ezmlm-weed.1
 MAN5=		ezmlm.5
 
-DIFF_MSG=       Cannot Make and Install with different PREFIX or QMAIL_DIR
+DIFF_MSG=	Cannot Make and Install with different PREFIX or QMAIL_DIR
 
 MY_PROGRAMS=	ezmlm-make ezmlm-manage ezmlm-send ezmlm-reject ezmlm-return \
 		ezmlm-warn ezmlm-weed ezmlm-list ezmlm-sub ezmlm-unsub

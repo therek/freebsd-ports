@@ -2,10 +2,10 @@
 # Date created:         20 Sep 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xfpovray/Makefile,v 1.16 2000/04/14 10:47:46 asami Exp $
+# $FreeBSD: ports/graphics/xfpovray/Makefile,v 1.17 2000/12/30 18:30:19 sf Exp $
 #
 
-PORTNAME=       xfpovray
+PORTNAME=	xfpovray
 PORTVERSION=	1.3.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.batse.msfc.nasa.gov/~mallozzi/home/software/xforms/src/ \

@@ -2,7 +2,7 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/lang/otcl/Makefile,v 1.12 2000/10/08 10:02:41 asami Exp $
+# $FreeBSD: ports/lang/otcl/Makefile,v 1.13 2000/12/09 15:30:18 kevlo Exp $
 #
 
 PORTNAME=	otcl
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
-LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes

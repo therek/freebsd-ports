@@ -2,19 +2,19 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.17 2000/07/13 19:38:35 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.18 2000/09/23 10:11:05 jedgar Exp $
 #
 
 PORTNAME=	dnetc
 PORTVERSION=	2.8010.463
 CATEGORIES=	misc
-MASTER_SITES=   ftp://ftp.distributed.net/pub/dcti/v2.8010/ \
+MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/v2.8010/ \
 		http://http.distributed.net/pub/dcti/v2.8010/
 .include <bsd.port.pre.mk>
 .if ${ARCH} == "i386"
-DISTFILES=      dnetc463-freebsd-x86-elf.tar.gz
+DISTFILES=	dnetc463-freebsd-x86-elf.tar.gz
 .elif ${ARCH} == "alpha"
-BROKEN=         "Not immediately available.  Please try again tomorrow."
+BROKEN=		"Not immediately available.  Please try again tomorrow."
 .endif
 
 ONLY_FOR_ARCHS=	i386
@@ -29,7 +29,7 @@ BROKEN=		"No version is currently available for your system.  Please try again l
 BROKEN=		"rc5des/dnetc conflict: Please deinstall all rc5des ports/packages first."
 .endif
 
-MAINTAINER=     dbaker@distributed.net
+MAINTAINER=	dbaker@distributed.net
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes

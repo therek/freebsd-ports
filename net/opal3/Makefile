@@ -2,7 +2,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.15 2000/11/12 09:32:43 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.16 2001/01/03 14:02:21 roger Exp $
 #
 
 PORTNAME=	openh323
@@ -16,7 +16,7 @@ DISTFILES=	openh323_1.1pl1.tar.gz \
 
 MAINTAINER=	roger@freebsd.org
 
-WRKSRC=         ${WRKDIR}/${PORTNAME}
+WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_NEWGCC=	yes
 USE_BISON=	yes

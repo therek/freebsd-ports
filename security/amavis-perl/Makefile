@@ -2,12 +2,12 @@
 # Date Created:				13 Nov 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/amavis-perl/Makefile,v 1.1 2001/01/07 07:38:32 will Exp $
 #
 
 PORTNAME=	amavis-perl
 PORTVERSION=	10
-CATEGORIES=     security
+CATEGORIES=	security
 MASTER_SITES=	http://www.amavis.org/dist/perl/
 
 MAINTAINER=	roman@xpert.com

@@ -2,7 +2,7 @@
 # Date created:		29 Sep 1997
 # Whom:			mi@aldan.ziplink.net
 #
-# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.8 2000/04/08 22:04:03 mharo Exp $
+# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.9 2000/11/07 23:27:59 asami Exp $
 #
 
 PORTNAME=	xmdiary
@@ -10,7 +10,7 @@ PORTVERSION=	3.0.1
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	office
-DISTFILES=      ${DISTNAME}.tar.gz xmdfix.gz
+DISTFILES=	${DISTNAME}.tar.gz xmdfix.gz
 
 MAINTAINER=	mi@aldan.algebra.com
 

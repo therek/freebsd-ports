@@ -2,7 +2,7 @@
 # Date created:         22 June 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/games/xtic/Makefile,v 1.9 2000/08/03 09:24:33 asami Exp $
+# $FreeBSD: ports/games/xtic/Makefile,v 1.10 2000/09/05 01:16:19 steve Exp $
 #
 
 PORTNAME=	xtic
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 USE_XPM=	yes
 MAN1=		xtic.1
 

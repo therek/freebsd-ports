@@ -2,20 +2,20 @@
 # Date created:        30 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/pash/Makefile,v 1.1 2000/12/31 06:02:39 will Exp $
 #
 
-PORTNAME=       	pash
-PORTVERSION=		2.2
-CATEGORIES=     	shells
-MASTER_SITES=   	http://www.chez-pierre.com/pash/Archives/
-DISTNAME=		pash.sources
+PORTNAME=	pash
+PORTVERSION=	2.2
+CATEGORIES=	shells
+MASTER_SITES=	http://www.chez-pierre.com/pash/Archives/
+DISTNAME=	pash.sources
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@ukug.uk.freebsd.org
 
-NO_WRKSUBDIR=		yes
+NO_WRKSUBDIR=	yes
 
-MAKEFILE=		makefile
+MAKEFILE=	makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pash ${PREFIX}/bin/pash

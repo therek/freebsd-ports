@@ -2,7 +2,7 @@
 # Date created:		Fri Feb 18 10:05:12 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/sysutils/xbattbar/Makefile,v 1.5 2000/04/22 10:13:52 mharo Exp $
+# $FreeBSD: ports/sysutils/xbattbar/Makefile,v 1.6 2000/12/26 06:59:19 sumikawa Exp $
 #
 
 PORTNAME=	xbattbar
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	sumikawa@FreeBSD.org
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/xbattbar-${PORTVERSION}
 MAN1=		xbattbar.1

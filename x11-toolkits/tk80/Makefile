@@ -2,11 +2,11 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.27 2000/10/08 03:07:31 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.28 2000/10/14 15:22:59 vanilla Exp $
 #
 
 PORTNAME=	tk
-PORTVERSION= 	8.0.5
+PORTVERSION=	8.0.5
 CATEGORIES=	x11-toolkits tk80
 MASTER_SITES=	${MASTER_SITE_TCLTK}
 MASTER_SITE_SUBDIR=	tcl8_0
@@ -22,21 +22,21 @@ INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/tk8.0.5/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
-CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=${TK_LIB_FILE}
+CONFIGURE_ENV=	PORTSDIR=${PORTSDIR} TK_LIB_FILE=${TK_LIB_FILE}
 PKGINSTALL=	${PKGDIR}/pkg-install.wish
 PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.wish
 
-SHLIB_MAJOR=    1
-SHLIB_MINOR=    4
-MAKEFILE=       makefile
+SHLIB_MAJOR=	1
+SHLIB_MINOR=	4
+MAKEFILE=	makefile
 TK_LIB=		libtk80.so
 
 .include <bsd.port.pre.mk>
 
 .if ${PORTOBJFORMAT} == "elf"
-TK_LIB_FILE=  ${TK_LIB}.${SHLIB_MAJOR}
+TK_LIB_FILE=	${TK_LIB}.${SHLIB_MAJOR}
 .else
-TK_LIB_FILE=  ${TK_LIB}.${SHLIB_MAJOR}.${SHLIB_MINOR}
+TK_LIB_FILE=	${TK_LIB}.${SHLIB_MAJOR}.${SHLIB_MINOR}
 .endif
 
 post-patch:

@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/arrow/Makefile,v 1.3 2000/10/03 05:12:27 lioux Exp $
+# $FreeBSD: ports/mail/arrow/Makefile,v 1.4 2001/01/03 18:54:21 lioux Exp $
 #
 
 PORTNAME=	arrow
@@ -43,8 +43,8 @@ INSTALL_DATA_DIR=	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 755
 # program files
 PROGRAMFILES=		arrow/arrow
 # documents
-DOCFILES=       LICENSE README.binary
-DOCDIR_PREFIX=  ${PREFIX}/share/doc/${PORTNAME}
+DOCFILES=	LICENSE README.binary
+DOCDIR_PREFIX=	${PREFIX}/share/doc/${PORTNAME}
 # additional configuration and header files
 EXTRALIB_PREFIX=	${X11BASE}/lib/jx
 EXTRALIBFILES_MAKE_WRKSRC=	include/make

@@ -2,7 +2,7 @@
 # Date created:         15 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/rar/Makefile,v 1.21 2000/04/08 23:17:51 mharo Exp $
+# $FreeBSD: ports/archivers/rar/Makefile,v 1.22 2000/06/27 15:10:34 ache Exp $
 #
 
 PORTNAME=	rar
@@ -18,9 +18,9 @@ MAINTAINER=	ache@FreeBSD.org
 CAT1=		rar.1
 
 ONLY_FOR_ARCHS=	i386
-NO_PACKAGE=     Only unmodified original package can be distributed
-NO_BUILD=       yes
-NO_WRKSUBDIR=   yes
+NO_PACKAGE=	Only unmodified original package can be distributed
+NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
 EXTRACT_CMD=		# empty
 EXTRACT_BEFORE_ARGS=	# empty
 EXTRACT_AFTER_ARGS=	# empty

@@ -1,9 +1,8 @@
-# ex:ts=8
 # Ports collection makefile for:  MaRS
 # Date created:			  Mon Nov 18, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/cad/mars/Makefile,v 1.17 2000/04/17 00:17:10 reg Exp $
+# $FreeBSD: ports/cad/mars/Makefile,v 1.18 2000/11/07 23:27:56 asami Exp $
 #
 
 PORTNAME=	mars
@@ -23,7 +22,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAKEFILE=	Makefile.NoX
 .else
 USE_MOTIF=	yes
-MAKEFILE=       Makefile.XMotif
+MAKEFILE=	Makefile.XMotif
 .endif
 ALL_TARGET=	depend mars
 MAN1=		mars.1

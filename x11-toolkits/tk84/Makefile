@@ -2,11 +2,11 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.41 2000/06/16 21:52:17 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.42 2000/10/08 03:07:41 asami Exp $
 #
 
 PORTNAME=	tk
-PORTVERSION= 	8.3.1
+PORTVERSION=	8.3.1
 CATEGORIES=	x11-toolkits tk83
 MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/devel/ \
 		http://www.neosoft.com/tcl/ftparchive/sorted/packages-8.0/devel/
@@ -21,9 +21,9 @@ INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.3
-CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=libtk83.so.1
+CONFIGURE_ENV=	PORTSDIR=${PORTSDIR} TK_LIB_FILE=libtk83.so.1
 MAKE_ENV=	SHORT_TK_VER=83
-PKGINSTALL=     ${PKGDIR}/pkg-install.wish
+PKGINSTALL=	${PKGDIR}/pkg-install.wish
 PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.wish
 
 PLIST_SUB=	TK_VER=8.3 SHORT_TK_VER=83

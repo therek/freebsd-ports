@@ -2,14 +2,14 @@
 # Date created:		14 May 1998
 # Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.9 2000/04/09 18:11:54 cpiazza Exp $
+# $FreeBSD: ports/net/kdetelnet/Makefile,v 1.10 2001/01/02 14:56:27 sf Exp $
 #
 
 PORTNAME=	ktelnet
 PORTVERSION=	0.61
 CATEGORIES=	net kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=    Attic/old/1.1.2/apps/network
+MASTER_SITE_SUBDIR=	Attic/old/1.1.2/apps/network
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	hanspb@persbraten.vgs.no

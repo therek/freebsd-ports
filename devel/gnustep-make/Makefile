@@ -2,7 +2,7 @@
 # Date created:         03 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep/Makefile,v 1.14 2000/09/21 12:01:41 tg Exp $
+# $FreeBSD: ports/devel/gnustep/Makefile,v 1.15 2000/09/28 11:14:45 tg Exp $
 #
 
 PORTNAME=	gnustep
@@ -10,7 +10,7 @@ PORTVERSION=	0.6.6
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 		ftp://ftp.peanuts.org/Mirrors/GNUstep/gnustep/core/
-DISTNAME=       gstep-core-${PORTVERSION}
+DISTNAME=	gstep-core-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -2,7 +2,7 @@
 # Date created:		23 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/qmailadmin/Makefile,v 1.2 2000/10/14 01:15:55 nbm Exp $
+# $FreeBSD: ports/mail/qmailadmin/Makefile,v 1.3 2001/01/03 14:29:00 nbm Exp $
 #
 
 PORTNAME=	qmailadmin
@@ -47,9 +47,9 @@ WEBDATASUBDIR?=
 #
 
 .if exists(${LOCALBASE}/qmail/bin/qmail-send)
-QMAIL_DIR?=     ${LOCALBASE}/qmail
+QMAIL_DIR?=	${LOCALBASE}/qmail
 .else
-QMAIL_DIR?=     /var/qmail
+QMAIL_DIR?=	/var/qmail
 .endif
 
 # End of user-configurable variables

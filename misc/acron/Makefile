@@ -2,14 +2,14 @@
 # Date created:         13 Dec 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/acron/Makefile,v 1.7 1999/11/01 00:53:41 steve Exp $
+# $FreeBSD: ports/misc/acron/Makefile,v 1.8 2000/04/14 08:45:15 asami Exp $
 #
 
 PORTNAME=	acron
 PORTVERSION=	1.0
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.cs.uni-sb.de/pub/others/
-DISTNAME=       ${PORTNAME}
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org

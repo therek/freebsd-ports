@@ -2,7 +2,7 @@
 # Date created:		16 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.2 2000/10/03 05:12:39 lioux Exp $
+# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.3 2000/11/20 14:48:56 lioux Exp $
 #
 
 PORTNAME=	clockspeed
@@ -22,9 +22,9 @@ MAN1=		clockadd.1 clockspeed.1 clockview.1 sntpclock.1 \
 		taiclock.1 taiclockd.1
 
 .if defined(NOPORTDOCS)
-PLIST_SUB+=     PORTDOCS:="@comment "
+PLIST_SUB+=	PORTDOCS:="@comment "
 .else
-PLIST_SUB+=     PORTDOCS:=
+PLIST_SUB+=	PORTDOCS:=
 .endif
 
 do-configure:

@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.36 2000/10/08 03:00:49 asami Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.37 2001/01/01 10:15:05 will Exp $
 #
 
 PORTNAME=	tcl
@@ -18,14 +18,14 @@ PATCHFILES=	${PORTNAME}${PORTVERSION}plus.patch.gz
 
 MAINTAINER=	jseger@FreeBSD.org
 
-PATCH_DIST_ARGS= -d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
+PATCH_DIST_ARGS=	-d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
-CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
+CONFIGURE_ENV=	PORTSDIR=${PORTSDIR}
 MAKE_ENV=	SHORT_TCL_VER=83
-PKGINSTALL=     ${PKGDIR}/pkg-install.tclsh
+PKGINSTALL=	${PKGDIR}/pkg-install.tclsh
 PKGDEINSTALL=	${PKGDIR}/pkg-deinstall.tclsh
 
 PLIST_SUB=	TCL_VER=8.3 SHORT_TCL_VER=83

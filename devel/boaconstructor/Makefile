@@ -2,10 +2,10 @@
 # Date created:         		15 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/boaconstructor/Makefile,v 1.1 2000/12/12 14:37:13 sobomax Exp $
 #
 
-PORTNAME=       boaconstructor
+PORTNAME=	boaconstructor
 PORTVERSION=	0.0.4
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}

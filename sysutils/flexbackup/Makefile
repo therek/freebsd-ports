@@ -2,7 +2,7 @@
 # Date created:         Wed Nov  3 17:58:26 MST 1999
 # Whom:                 John Reynolds <jjreynold@home.com>
 #
-# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.8 2000/04/22 10:12:12 mharo Exp $
+# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.9 2000/10/08 10:22:58 asami Exp $
 #
 
 PORTNAME=	flexbackup
@@ -13,13 +13,13 @@ MASTER_SITES=	http://www.bluecherry.net/~edwinh/flexbackup/tarball/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/backup
 
-MAINTAINER=     jjreynold@home.com
+MAINTAINER=	jjreynold@home.com
 
 RUN_DEPENDS=	afio:${PORTSDIR}/sysutils/afio \
 		buffer:${PORTSDIR}/misc/buffer
 
-NO_BUILD  = yes
-USE_PERL5 = yes
+NO_BUILD=	yes
+USE_PERL5=	yes
 
 post-configure:
 	@${CP} ${WRKSRC}/flexbackup.conf ${WRKSRC}/flexbackup.conf.sample

@@ -2,7 +2,7 @@
 # Date created:				24 August 1999
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.5 2000/07/16 19:51:34 steve Exp $
+# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.6 2000/09/18 21:44:42 ade Exp $
 #
 
 PORTNAME=	tcl-sql
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${TCL_VERSION:S/tcl/tclsh/}:${PORTSDIR}/lang/${TCL_NODOT}
 TCL_VERSION?=	tcl8.3	# Only this needs changing to switch TCL-version
 TCL_NODOT=	${TCL_VERSION:S/.//}
 WRKSRC=		${WRKDIR}/tcl-sql/
-PLIST_SUB=     TCL_VERSION=${TCL_VERSION} LIB_NAME=${LIB_NAME}
+PLIST_SUB=	TCL_VERSION=${TCL_VERSION} LIB_NAME=${LIB_NAME}
 
 do-build:
 	cd ${WRKSRC} && ${MAKE} ${PLIST_SUB} -f ${FILESDIR}/Makefile.bsd

@@ -2,21 +2,21 @@
 # Date created:        27 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.9 2000/12/25 13:49:57 jedgar Exp $
 #
 
 PORTNAME=	consolehm
 PORTVERSION=	1.31
 PORTREVISION=	1
 CATEGORIES=	sysutils
-MASTER_SITES= 	ftp://muir.yi.org/pub/consolehm/ \
+MASTER_SITES=	ftp://muir.yi.org/pub/consolehm/ \
 		http://www.es.co.nz/~mmuir/
 
-MAINTAINER=    mmuir@cwnet.com
+MAINTAINER=	mmuir@cwnet.com
 
 WRKSRC=		${WRKDIR}/consolehm/consolehm
 
-GNU_CONFIGURE=         yes
+GNU_CONFIGURE=	yes
 MAN8=		chm.8
 MANCOMPRESSED=	yes
 

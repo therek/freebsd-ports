@@ -2,7 +2,7 @@
 # Date created:				Tue Jan  4 11:45:29 PST 2000
 # Whom:					Cy Schubert (Cy.Schubert@uumail.gov.bc.ca)
 #
-# $FreeBSD: ports/security/aide/Makefile,v 1.1 2000/07/14 16:11:47 will Exp $
+# $FreeBSD: ports/security/aide/Makefile,v 1.2 2000/07/15 16:23:55 will Exp $
 #
 
 PORTNAME=	aide
@@ -11,7 +11,7 @@ CATEGORIES=	security
 MASTER_SITES=	http://www.cs.tut.fi/~rammer/ \
 		ftp://ftp.cs.tut.fi/pub/src/gnu/
 
-MAINTAINER=     Cy.Schubert@uumail.gov.bc.ca
+MAINTAINER=	Cy.Schubert@uumail.gov.bc.ca
 
 LIB_DEPENDS=	mhash.2:${PORTSDIR}/security/mhash
 

@@ -2,15 +2,15 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.32 2000/07/04 13:58:32 sobomax Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.33 2001/01/01 10:14:59 will Exp $
 #
 
 PORTNAME=	gmake
 PORTVERSION=	3.79.1
 CATEGORIES=	devel
-MASTER_SITES=   ${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	make
-DISTNAME=       make-${PORTVERSION}
+DISTNAME=	make-${PORTVERSION}
 
 MAINTAINER=	jseger@FreeBSD.org
 

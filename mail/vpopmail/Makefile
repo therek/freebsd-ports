@@ -2,7 +2,7 @@
 # Date created:		21 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.4 2000/10/14 01:29:49 nbm Exp $
+# $FreeBSD: ports/mail/vpopmail/Makefile,v 1.5 2001/01/03 14:28:30 nbm Exp $
 #
 
 PORTNAME=	vpopmail
@@ -51,9 +51,9 @@ LOGLEVEL?=	y
 APOPFILE?=	/etc/apop-secrets
 
 .if exists(${LOCALBASE}/qmail/bin/qmail-send)
-QMAIL_DIR?=     ${LOCALBASE}/qmail
+QMAIL_DIR?=	${LOCALBASE}/qmail
 .else
-QMAIL_DIR?=     /var/qmail
+QMAIL_DIR?=	/var/qmail
 .endif
 
 # Uncomment this, or set PREFIX to /home if you have an existing

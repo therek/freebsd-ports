@@ -2,10 +2,10 @@
 # Date created:		Fri Mar 19 18:29:18 1999
 # Whom:			Cy Schubert <Cy.Schubert@uumail.gov.bc.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/tripwire-131/Makefile,v 1.12 2000/07/06 14:15:51 sada Exp $
 #
 
-PORTNAME=       tripwire
+PORTNAME=	tripwire
 PORTVERSION=	1.3.1
 CATEGORIES=	security
 DISTNAME=	Tripwire-${PORTVERSION}-1

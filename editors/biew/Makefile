@@ -2,7 +2,7 @@
 # Date created:		04 February 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/editors/biew/Makefile,v 1.9 2000/11/11 06:02:17 kevlo Exp $
+# $FreeBSD: ports/editors/biew/Makefile,v 1.10 2000/11/16 13:14:21 tg Exp $
 #
 
 PORTNAME=	biew
@@ -26,9 +26,9 @@ HOST_CFLAGS=	${CFLAGS} -DLIBDIR="\'\"${PREFIX}/share\"\'"
 MAKEFILE=	makefile
 
 .if ${OSVERSION} < 400010
-LIB_DEPENDS=    ncurses.5:${PORTSDIR}/devel/ncurses
-HOST_CFLAGS+=   -D__FreeBSD_version=${OSVERSION} -I${LOCALBASE}/include
-HOST_LD+=       -L${LOCALBASE}/lib
+LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
+HOST_CFLAGS+=	-D__FreeBSD_version=${OSVERSION} -I${LOCALBASE}/include
+HOST_LD+=	-L${LOCALBASE}/lib
 .endif
 
 MAKE_ARGS+=	HOST_CFLAGS="${HOST_CFLAGS}" CC="${CC}" LD="${CC}" \

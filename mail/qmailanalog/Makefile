@@ -2,11 +2,11 @@
 # Date created:		29 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.5 2000/01/25 11:05:34 nbm Exp $
+# $FreeBSD: ports/mail/qmailanalog/Makefile,v 1.6 2000/04/13 20:00:40 cpiazza Exp $
 #
 
 PORTNAME=	qmailanalog
-PORTVERSION= 	0.70
+PORTVERSION=	0.70
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qmail.org/pub/software/
 
@@ -38,7 +38,7 @@ MYSUBDIR?=
 
 QMPREFIX?=	${PREFIX}/${MYSUBDIR}
 
-NO_MTREE=       yes
+NO_MTREE=	yes
 
 post-patch:
 	@perl -pi.bak -e "s|.usr.local.qmailanalog|${QMPREFIX}|" ${WRKSRC}/conf-home

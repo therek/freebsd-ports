@@ -2,16 +2,16 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/www/mod_python/Makefile,v 1.3 2000/11/15 14:09:36 sobomax Exp $
+# $FreeBSD: ports/www/mod_python/Makefile,v 1.4 2000/12/27 16:15:52 kevlo Exp $
 #
 
 PORTNAME=	mod_python
-PORTVERSION= 	2.7.1
+PORTVERSION=	2.7.1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.modpython.org/dist/ \
 		http://www.python.org/ftp/python/2.0/ \
 		http://www3.kr.freebsd.org/~perky/distfiles/
-DISTFILES=      mod_python-${PORTVERSION}.tgz ${PYTHON_DISTFILE}
+DISTFILES=	mod_python-${PORTVERSION}.tgz ${PYTHON_DISTFILE}
 DIST_SUBDIR=	python
 
 MAINTAINER=	perky@python.or.kr

@@ -2,7 +2,7 @@
 # Date created:         22 APR 1997
 # Whom:                 eric
 #
-# $FreeBSD: ports/editors/jed/Makefile,v 1.13 2000/04/14 00:25:33 mharo Exp $
+# $FreeBSD: ports/editors/jed/Makefile,v 1.14 2000/04/30 00:17:24 steve Exp $
 #
 
 PORTNAME=	jed
@@ -11,11 +11,11 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/jed/v0.98/
 DISTNAME=	${PORTNAME}0.98-7
 
-PATCH_SITES=   ftp://space.mit.edu/pub/davis/jed/v0.98/
-PATCHFILES=    BUGS
+PATCH_SITES=	ftp://space.mit.edu/pub/davis/jed/v0.98/
+PATCHFILES=	BUGS
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=     eric@cybernut.com
+MAINTAINER=	eric@cybernut.com
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 
@@ -26,12 +26,12 @@ XJED=	xjed
 .endif
 
 DIST_SUBDIR=	jed
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 PATCH_DIST_ARGS=	-d ${WRKSRC}/src --quiet -E ${PATCH_DIST_STRIP}
 CONFIGURE_ENV=	JED_ROOT=${PREFIX}/lib/jed
-ALL_TARGET=     all getmail ${XJED}
-INSTALL_TARGET= install
-WRKSRC=         ${WRKDIR}/jed
+ALL_TARGET=	all getmail ${XJED}
+INSTALL_TARGET=	install
+WRKSRC=		${WRKDIR}/jed
 MAN1=		jed.1 rgrep.1
 
 pre-install:

@@ -2,22 +2,22 @@
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/dontspace/Makefile,v 1.8 1999/11/28 18:30:54 steve Exp $
+# $FreeBSD: ports/games/dontspace/Makefile,v 1.9 2000/04/14 06:42:45 mharo Exp $
 #
 
 PORTNAME=	dontspace
 PORTVERSION=	1.2
-CATEGORIES=     games tk82
-MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
+CATEGORIES=	games tk82
+MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 
-MAINTAINER=     johnh@isi.edu
+MAINTAINER=	johnh@isi.edu
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
-GNU_CONFIGURE=  Yes
-CONFIGURE_ARGS= --bindir=${PREFIX}/bin --datadir=${PREFIX}/share/games \
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--bindir=${PREFIX}/bin --datadir=${PREFIX}/share/games \
 		--mandir=${PREFIX}/man
-CONFIGURE_ENV=  WISHX=${PREFIX}/bin/wish8.2
-MAN6=           dontspace.6
+CONFIGURE_ENV=	WISHX=${PREFIX}/bin/wish8.2
+MAN6=		dontspace.6
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		22 July 1999
 # Whom:			Oleg V. Volkov <rover@lglobus.ru>
 #
-# $FreeBSD: ports/games/adom/Makefile,v 1.6 2000/02/28 08:33:32 asami Exp $
+# $FreeBSD: ports/games/adom/Makefile,v 1.7 2000/04/14 00:45:20 mharo Exp $
 #
 
 PORTNAME=	adom
@@ -18,10 +18,10 @@ RUN_DEPENDS=	/compat/linux/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 WRKSRC=		${WRKDIR}/adom
 
 ONLY_FOR_ARCHS=	i386
-NO_CDROM=     Copy of CD must be sent to author
+NO_CDROM=	Copy of CD must be sent to author
 
-NO_WRKSUBDIR=   yes
-STRIP=			# empty: do not strip linux binary!
+NO_WRKSUBDIR=	yes
+STRIP=		# empty: do not strip linux binary!
 
 do-patch:
 do-configure:

@@ -2,7 +2,7 @@
 # Date created:        26 Feb 1998
 # Whom:                Kentaro Inagaki <JBD01226@niftyserve.ne.jp>
 #
-# $FreeBSD: ports/print/xdvik/Makefile,v 1.7 2000/04/09 17:50:50 cpiazza Exp $
+# $FreeBSD: ports/print/xdvik/Makefile,v 1.8 2000/06/09 21:59:14 asami Exp $
 #
 
 PORTNAME=	xdvik
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 
 MAINTAINER=	JBD01226@niftyserve.ne.jp
 
-RUN_DEPENDS=    mf:${PORTSDIR}/print/tex
+RUN_DEPENDS=	mf:${PORTSDIR}/print/tex
 
 USE_XLIB=	yes
 GNU_CONFIGURE=YES

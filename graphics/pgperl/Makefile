@@ -2,20 +2,20 @@
 # Date created:		22 December 1996
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.21 2000/07/30 23:28:54 jmz Exp $
+# $FreeBSD: ports/graphics/pgperl/Makefile,v 1.22 2000/10/05 10:59:02 jmz Exp $
 #
 
 PORTNAME=	pgperl
 PORTVERSION=	2.17
 PORTREVISION=	1
-CATEGORIES=     graphics perl5
-MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
+CATEGORIES=	graphics perl5
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	PGPLOT
-DISTNAME=       PGPLOT-${PORTVERSION}
+DISTNAME=	PGPLOT-${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 
-LIB_DEPENDS=    pgplot.5:${PORTSDIR}/graphics/pgplot
+LIB_DEPENDS=	pgplot.5:${PORTSDIR}/graphics/pgplot
 BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/ExtUtils/F77.pm:${PORTSDIR}/lang/p5-F77
 
 USE_PERL5=	yes

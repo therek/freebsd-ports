@@ -2,7 +2,7 @@
 # Date created:		19 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/www/kannel/Makefile,v 1.2 2000/07/20 07:32:24 alex Exp $
+# $FreeBSD: ports/www/kannel/Makefile,v 1.3 2000/07/21 06:42:45 alex Exp $
 
 PORTNAME=	kannel
 PORTVERSION=	0.10.2
@@ -12,13 +12,13 @@ DISTNAME=	gateway-${PORTVERSION}
 
 MAINTAINER=	midom@dammit.lt
 
-LIB_DEPENDS=    xml:${PORTSDIR}/textproc/libxml
+LIB_DEPENDS=	xml:${PORTSDIR}/textproc/libxml
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-WRKSRC=         ${WRKDIR}/gateway-0.10.2/
+WRKSRC=		${WRKDIR}/gateway-0.10.2/
 CFLAGS+=	-pthread
-CONFIGURE_ARGS += --with-malloc=native
+CONFIGURE_ARGS+=	--with-malloc=native
 
 do-install:
 .if !defined(NOPORTDOCS)

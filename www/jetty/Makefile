@@ -2,7 +2,7 @@
 # Date created:				28 August 2000
 # Whom:				Stephane Legrand <stephane.legrand@bigfoot.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/jetty/Makefile,v 1.1 2000/09/02 14:42:19 sobomax Exp $
 #
 
 PORTNAME=	jetty
@@ -17,7 +17,7 @@ MAINTAINER=	stephane.legrand@bigfoot.com
 RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/javavmwrapper \
 		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre
 
-JAVAVM?=        ${LOCALBASE}/bin/javavm
+JAVAVM?=	${LOCALBASE}/bin/javavm
 NO_BUILD=	yes
 
 do-install:

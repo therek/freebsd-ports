@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.17 2000/04/17 00:17:26 reg Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.18 2000/07/05 14:33:20 shige Exp $
 #
 
 PORTNAME=	emacs-dl
@@ -15,7 +15,7 @@ DISTNAME=	emacs-${PORTVERSION}
 PATCH_SITES=	ftp://ftp.m17n.org/pub/mule/dynamic-loading/ \
 		http://www.etl.go.jp/~tomo/comp/emacsen/
 PATCHFILES=	emacs-20.4-dl3.diff.gz
-PATCH_DIST_STRIP= -p1
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	shige@FreeBSD.org
 
@@ -29,10 +29,10 @@ MAKE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 EMACS_VER=	20.7
 CONFIGURE_TARGET=	${MACHINE_ARCH}--freebsd
 .if !defined(WITHOUT_X11)
-CONFIGURE_ARGS= --with-x-toolkit --with-pop
-USE_XLIB=       yes
+CONFIGURE_ARGS=	--with-x-toolkit --with-pop
+USE_XLIB=	yes
 .else
-CONFIGURE_ARGS= --with-x=no --with-pop
+CONFIGURE_ARGS=	--with-x=no --with-pop
 .endif
 
 DOC_FILE=	DOC-DL-${EMACS_VER}.1

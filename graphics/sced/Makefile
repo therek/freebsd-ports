@@ -2,10 +2,10 @@
 # Date created:         27  Dec 1996
 # Whom:                 proff@iq.org
 #
-# $FreeBSD: ports/graphics/sced/Makefile,v 1.7 1999/08/31 06:45:13 mharo Exp $
+# $FreeBSD: ports/graphics/sced/Makefile,v 1.8 2000/04/14 10:47:18 asami Exp $
 #
 
-PORTNAME=       sced
+PORTNAME=	sced
 PORTVERSION=	1.02
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cs.berkeley.edu/~schenney/sced/src/ \

@@ -2,7 +2,7 @@
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/devel/sdcc/Makefile,v 1.6 2000/11/23 11:56:05 sobomax Exp $
+# $FreeBSD: ports/devel/sdcc/Makefile,v 1.7 2000/12/11 02:23:46 steve Exp $
 #
 
 PORTNAME=	sdcc
@@ -13,10 +13,10 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}Ea
 
 MAINTAINER=	ambrisko@whistle.com
 
-WRKSRC=         ${WRKDIR}/sdcc219Ea
+WRKSRC=		${WRKDIR}/sdcc219Ea
 GNU_CONFIGURE=	yes
 USE_BISON=	yes
-USE_GMAKE=      yes
+USE_GMAKE=	yes
 ALL_TARGET=	dep all
 
 .include <bsd.port.mk>

@@ -2,23 +2,23 @@
 # Date created:        07 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/scriba/Makefile,v 1.1 2001/01/14 19:45:31 vanilla Exp $
 #
 
-PORTNAME=       	scriba
-PORTVERSION=		10b21
-CATEGORIES=     	lang
-MASTER_SITES=   	http://www.scriptbasic.com/
-DISTNAME=		${PORTNAME}-v${PORTVERSION}
+PORTNAME=	scriba
+PORTVERSION=	10b21
+CATEGORIES=	lang
+MASTER_SITES=	http://www.scriptbasic.com/
+DISTNAME=	${PORTNAME}-v${PORTVERSION}
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@ukug.uk.freebsd.org
 
-PRFXFILES=		variations/standard/basiccmd.c \
-			variations/standalone/basicc.c \
-			configurer.c scriba.c scriba.conf.unix.lsp \
-			testconf.c
+PRFXFILES=	variations/standard/basiccmd.c \
+		variations/standalone/basicc.c \
+		configurer.c scriba.c scriba.conf.unix.lsp \
+		testconf.c
 
-WRKSRC=			${WRKDIR}
+WRKSRC=		${WRKDIR}
 
 post-patch:
 .for P in ${PRFXFILES}

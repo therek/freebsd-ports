@@ -1,14 +1,13 @@
-# ex:ts=8
 # Ports collection makefile for:  ia64sim
 # Date created:			  Tue Oct 10, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/ia64sim/Makefile,v 1.1.1.1 2000/10/10 23:53:19 obrien Exp $
 #
 
 PORTNAME=	ia64sim
 PORTVERSION=	0.2
-CATEGORIES=     emulators
+CATEGORIES=	emulators
 MASTER_SITES=	http://www.glue.umd.edu/~jasonp/  \
 		http://odin.asgard/
 DISTFILES=	${PORTNAME}${EXTRACT_SUFX}

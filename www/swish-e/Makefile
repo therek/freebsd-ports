@@ -2,13 +2,13 @@
 # Date created:         		23 Feb 98
 # Whom:              			Daniel O'Connor <doconnor@gsoft.com.au>
 #
-# $FreeBSD: ports/www/swish-e/Makefile,v 1.3 1999/08/31 02:43:18 peter Exp $
+# $FreeBSD: ports/www/swish-e/Makefile,v 1.4 2000/04/10 00:06:56 cpiazza Exp $
 #
 
 PORTNAME=	swish-e
-PORTVERSION= 	1.3.2
-CATEGORIES=     www textproc
-MASTER_SITES=   ftp://sunsite.berkeley.edu/pub/swish-e/
+PORTVERSION=	1.3.2
+CATEGORIES=	www textproc
+MASTER_SITES=	ftp://sunsite.berkeley.edu/pub/swish-e/
 DISTNAME=	swish-efiles.1.3.2
 
 MAINTAINER=	doconnor@gsoft.com.au

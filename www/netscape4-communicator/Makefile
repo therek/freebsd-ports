@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.74 2000/11/01 16:21:19 sada Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.75 2001/01/01 10:15:16 will Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -36,7 +36,7 @@ NDIR=		${PREFIX}/${NSUBDIR}
 NSUBDIR?=	lib/netscape
 BINDIR=		${PREFIX}/bin
 INFILE_HEAD?=	'Communicator,4.08.0.98306'
-WRAPPER_TEMPLATE= ${MASTERDIR}/files/netscape.sh
+WRAPPER_TEMPLATE=	${MASTERDIR}/files/netscape.sh
 MAILCAP?=	${MASTERDIR}/files/mailcap
 
 PLIST_SUB=	BROWSER=${BROWSER_ARC} BROWSER_VER=${BROWSER_VER} \
@@ -50,7 +50,7 @@ DISTFILES+=	${AUTOADMIN}
 MASTER_SITES+=	ftp://ftp.fortify.net/pub/Fortify/ \
 		ftp://ftp.za.freebsd.org/pub/Fortify/
 DISTFILES+=	${FORTIFY}.tar.gz
-RESTRICTED=     "Contains strong cryptography"
+RESTRICTED=	"Contains strong cryptography"
 .endif
 
 .if !defined(_PREMKINCLUDED)

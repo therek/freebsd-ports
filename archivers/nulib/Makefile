@@ -2,7 +2,7 @@
 # Date created:         Thu May  8 00:14:31 PDT 1997
 # Whom:                 Steven Wallace <swallace@freebsd.org>
 #
-# $FreeBSD: ports/archivers/nulib/Makefile,v 1.7 2000/04/08 23:17:49 mharo Exp $
+# $FreeBSD: ports/archivers/nulib/Makefile,v 1.8 2000/06/29 07:02:04 obrien Exp $
 #
 
 PORTNAME=	nulib
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	jseger
 DISTNAME=	nulib325
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     jseger@FreeBSD.org
+MAINTAINER=	jseger@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/nulib
 MAN1=		nulib.1

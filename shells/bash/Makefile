@@ -1,26 +1,25 @@
-# ex:ts=8
 # New ports collection makefile for:	bash
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/bash2/Makefile,v 1.45 2000/11/30 01:31:37 ache Exp $
+# $FreeBSD: ports/shells/bash2/Makefile,v 1.46 2000/11/30 11:42:35 obrien Exp $
 #
 
 PORTNAME=	bash
-PORTVERSION=    2.04
+PORTVERSION=	2.04
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cwru.edu/pub/bash/
 MASTER_SITE_SUBDIR=	bash
 .if !defined(NOPORTDOCS)
-DISTFILES=      bash-${PORTVERSION}.tar.gz bash-doc-${PORTVERSION}.tar.gz
+DISTFILES=	bash-${PORTVERSION}.tar.gz bash-doc-${PORTVERSION}.tar.gz
 .endif
 
 MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 CONFIGURE_ARGS=	--with-installed-readline
-CONFIGURE_ENV=  LDFLAGS=-static
+CONFIGURE_ENV=	LDFLAGS=-static
 MAN1=		bash.1 bashbug.1
 
 post-install:

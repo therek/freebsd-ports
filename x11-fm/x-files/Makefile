@@ -2,16 +2,16 @@
 # Date created:		14 April 1998
 # Whom:			Donald J. Maddox <dmaddox@sc.rr.com>
 #
-# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.17 2000/06/07 23:01:07 asami Exp $
+# $FreeBSD: ports/x11-fm/x-files/Makefile,v 1.18 2000/11/18 15:51:28 kevlo Exp $
 #
 
 PORTNAME=	x-files
-PORTVERSION= 	2.00b1
+PORTVERSION=	2.00b1
 CATEGORIES=	x11-fm tk82
-MASTER_SITES=   http://www.hut.fi/~mkivinie/X-Files/data/
+MASTER_SITES=	http://www.hut.fi/~mkivinie/X-Files/data/
 DISTNAME=	X-Files-${PORTVERSION}
 
-MAINTAINER=     dmaddox@sc.rr.com
+MAINTAINER=	dmaddox@sc.rr.com
 
 BUILD_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82

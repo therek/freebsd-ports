@@ -2,7 +2,7 @@
 # Date created:        17 January 1999
 # Whom:                Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/deskutils/xrolo/Makefile,v 1.3 1999/08/25 05:27:04 obrien Exp $
+# $FreeBSD: ports/deskutils/xrolo/Makefile,v 1.4 2000/04/08 22:04:11 mharo Exp $
 #
 
 PORTNAME=	xrolo
@@ -19,7 +19,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
-LIB_DEPENDS=    xview.3:${PORTSDIR}/x11-toolkits/xview
+LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 
 WRKSRC=		${WRKDIR}/xrolo
 

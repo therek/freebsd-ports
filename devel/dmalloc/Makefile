@@ -2,11 +2,11 @@
 # Date created:			7 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dmalloc/Makefile,v 1.1 2000/12/26 05:36:52 will Exp $
 
 PORTNAME=	dmalloc
 PORTVERSION=	4.8.1
-CATEGORIES=    	devel
+CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	dmalloc
 EXTRACT_SUFX=	.tgz

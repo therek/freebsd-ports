@@ -2,20 +2,20 @@
 # Date created:         9 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/comline/Makefile,v 1.12 2000/04/10 00:04:50 cpiazza Exp $
+# $FreeBSD: ports/www/comline/Makefile,v 1.13 2000/04/15 11:38:28 asami Exp $
 #
 
 PORTNAME=	comline
-PORTVERSION= 	4.0D
+PORTVERSION=	4.0D
 CATEGORIES=	www
-MASTER_SITES=   ftp://ftp.w3.org/pub/old/comline/ \
+MASTER_SITES=	ftp://ftp.w3.org/pub/old/comline/ \
 		ftp://ftp.w3.org/pub/libwww/old/ \
 		ftp://ftp-eu.w3.org/pub/old/comline/ \
 		ftp://ftp-eu.w3.org/pub/libwww/old/
-DISTFILES=      w3c-libwww-4.0D.tar.gz \
+DISTFILES=	w3c-libwww-4.0D.tar.gz \
 		w3c_4.0D_src.tar.gz
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=	ache@freebsd.org
 
 WRKSRC=		${WRKDIR}/WWW
 

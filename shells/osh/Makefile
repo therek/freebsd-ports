@@ -2,19 +2,19 @@
 # Date created:        29 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/osh/Makefile,v 1.1 2000/12/30 01:31:08 will Exp $
 #
 
-PORTNAME=       	osh
-PORTVERSION=		001127
-CATEGORIES=     	shells
-MASTER_SITES=   	http://omnibus.ruf.uni-freiburg.de/~gritter/archive/
+PORTNAME=	osh
+PORTVERSION=	001127
+CATEGORIES=	shells
+MASTER_SITES=	http://omnibus.ruf.uni-freiburg.de/~gritter/archive/
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@ukug.uk.freebsd.org
 
-MAKEFILE=		makefile
+MAKEFILE=	makefile
 
-MAN1=			osh.1
+MAN1=		osh.1
 
 post-install:
 	@${ECHO} "updating /etc/shells"

@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1998
 # Whom:                 msmith
 #
-# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.19 2000/10/04 06:40:01 sobomax Exp $
+# $FreeBSD: ports/net/citrix_ica/Makefile,v 1.20 2000/12/12 15:54:55 jedgar Exp $
 #
 
 PORTNAME=	citrix_ica
@@ -11,19 +11,19 @@ CATEGORIES=	net comms linux
 MASTER_SITES=
 DISTNAME=	linuxx86
 
-MAINTAINER=     mb@imp.ch
+MAINTAINER=	mb@imp.ch
 
-RUN_DEPENDS=    /compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 RESTRICTED=	"License prohibits redistribution"
 IS_INTERACTIVE=	"Noisy license agreement ignores stdin"
 
 DIST_SUBDIR=	citrix_ica
-NO_WRKSUBDIR=	Yes
-NO_BUILD=       Yes
+NO_WRKSUBDIR=	yes
+NO_BUILD=	yes
 
-CDIR=           ${PREFIX}/ICAClient
+CDIR=		${PREFIX}/ICAClient
 BINDIR=		${PREFIX}/bin
 
 .include <bsd.port.pre.mk>

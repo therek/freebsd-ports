@@ -1,7 +1,7 @@
 # New ports collection makefile for:	acroread-commfont
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.10 2000/04/20 10:19:20 mharo Exp $
+# $FreeBSD: ports/print/acroread-commfont/Makefile,v 1.11 2000/10/08 10:22:40 asami Exp $
 #
 
 PORTNAME=	acroread
@@ -50,8 +50,8 @@ FILESDIR=	${.CURDIR}/files
 RUN_DEPENDS=	${PREFIX}/Acrobat4/Resource/CMap/H:${PORTSDIR}/print/acroread-commfont
 #
 .if ${DISTNAME} == "jpnfont"
-RESTRICTED=     "Be required to register with Adobe before downloading the Japanese font pack."
-IS_INTERACTIVE= "You should manual-fetch Japanese pack of \"Asian Font Packs\" from http://www.adobe.com/prodindex/acrobat/readstep.html"
+RESTRICTED=	"Be required to register with Adobe before downloading the Japanese font pack."
+IS_INTERACTIVE=	"You should manual-fetch Japanese pack of \"Asian Font Packs\" from http://www.adobe.com/prodindex/acrobat/readstep.html"
 .if !exists(${DISTDIR}/jpnfont.tar.gz)
 IGNORE=		": ${RESTRICTED} ${IS_INTERACTIVE}"
 .endif

@@ -2,12 +2,12 @@
 # Date created:         9 June 2000
 # Whom:                 James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/mips-rtems-binutils/Makefile,v 1.6 2000/12/18 14:27:14 jeh Exp $
+# $FreeBSD: ports/devel/mips-rtems-binutils/Makefile,v 1.7 2000/12/18 15:47:48 jeh Exp $
 #
 
-PORTNAME=       binutils
+PORTNAME=	binutils
 
-MAINTAINER=     jeh@FreeBSD.org
+MAINTAINER=	jeh@FreeBSD.org
 
-LCLTARGET=      mips-rtems
+LCLTARGET=	mips-rtems
 .include "${.CURDIR}/../i386-rtems-binutils/Makefile"

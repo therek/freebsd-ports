@@ -2,7 +2,7 @@
 # Date created:				September 10 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.3 2000/10/24 18:52:01 jeh Exp $
+# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.4 2000/10/25 18:05:33 jeh Exp $
 #
 
 PORTNAME=	apache-contrib
@@ -32,7 +32,7 @@ RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 APXS=		${LOCALBASE}/sbin/apxs
 
-AP_PORT?=       apache13
+AP_PORT?=	apache13
 .if exists(${APXS})
 APXS_WORKS!=	${APXS} -q TARGET 2>/dev/null || echo no
 .endif
@@ -42,10 +42,10 @@ AP_SYSCONF!=	${APXS} -q SYSCONFDIR
 AP_INCLUDE!=	${APXS} -q INCLUDEDIR
 AP_LIBEXEC!=	${APXS} -q LIBEXECDIR
 .else
-AP_TARGET?=     httpd
-AP_SYSCONF?=    ${PREFIX}/etc/apache
-AP_INCLUDE?=    ${PREFIX}/include/apache
-AP_LIBEXEC?=    ${PREFIX}/libexec/apache
+AP_TARGET?=	httpd
+AP_SYSCONF?=	${PREFIX}/etc/apache
+AP_INCLUDE?=	${PREFIX}/include/apache
+AP_LIBEXEC?=	${PREFIX}/libexec/apache
 .endif
 
 ALL_TARGET=	APXS=${APXS} all

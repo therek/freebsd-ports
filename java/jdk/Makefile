@@ -2,7 +2,7 @@
 # Date created:		Feb, 8, 1998
 # Whom:			Nate Williams <nate@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk/Makefile,v 1.32 2000/06/12 12:55:45 sobomax Exp $
+# $FreeBSD: ports/java/jdk/Makefile,v 1.33 2000/07/24 08:05:48 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -22,7 +22,7 @@ JDK_VERSION=	1.1.8
 PLIST_SUB+=	JDK_VERSION=${JDK_VERSION}
 
 WRKSRC=		${WRKDIR}/jdk${JDK_VERSION}
-NO_BUILD=       yes
+NO_BUILD=	yes
 
 .include <bsd.port.pre.mk>
 

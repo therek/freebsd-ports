@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/security/kssh/Makefile,v 1.9 2000/11/19 15:09:18 kevlo Exp $
+# $FreeBSD: ports/security/kssh/Makefile,v 1.10 2000/11/19 15:13:27 kevlo Exp $
 #
 
 PORTNAME=	kssh
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
 USE_QT2=	yes
-MOC?=           ${X11BASE}/bin/moc2
+MOC?=		${X11BASE}/bin/moc2
 USE_GMAKE=	yes
 CONFIGURE_ARGS+=--prefix="${PREFIX}" \
 		--with-qt-includes=${X11BASE}/include/qt2 \

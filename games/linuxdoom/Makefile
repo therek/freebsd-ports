@@ -2,7 +2,7 @@
 # Date created:         Mon Dec  9 09:42:37 CST 1996
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.16 2000/09/22 11:07:01 kris Exp $
+# $FreeBSD: ports/games/linuxdoom/Makefile,v 1.17 2000/10/08 01:22:51 asami Exp $
 #
 
 PORTNAME=	linuxdoom
@@ -18,7 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 BROKEN=		"Linux dynamic linker problems"
 
 BUILD_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
-RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes

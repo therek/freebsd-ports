@@ -2,7 +2,7 @@
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD: ports/audio/krio/Makefile,v 1.4 2000/04/08 21:23:50 mharo Exp $
+# $FreeBSD: ports/audio/krio/Makefile,v 1.5 2000/11/11 11:48:18 sobomax Exp $
 #
 
 PORTNAME=	krio
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.1
 PORTEPOCH=	1
 CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-MASTER_SITE_SUBDIR=     ${PORTNAME}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ak@freenet.co.uk
 

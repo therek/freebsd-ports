@@ -2,12 +2,12 @@
 # Date created:		30 June 1996
 # Whom:			gena
 #
-# $FreeBSD: ports/mail/xfmail/Makefile,v 1.24 2000/04/13 20:01:01 cpiazza Exp $
+# $FreeBSD: ports/mail/xfmail/Makefile,v 1.25 2000/08/03 09:25:30 asami Exp $
 #
 
 PORTNAME=	xfmail
-PORTVERSION= 	1.4.0
-CATEGORIES=     mail
+PORTVERSION=	1.4.0
+CATEGORIES=	mail
 MASTER_SITES=	ftp://xfmail.ufies.org/pub/xfmail/release/1.4.0/
 
 MAINTAINER=	gena@NetVision.net.il

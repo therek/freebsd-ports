@@ -2,19 +2,19 @@
 # Date created:		13 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.25 2000/04/10 19:49:39 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.26 2000/08/03 09:27:50 asami Exp $
 #
 
 PORTNAME=	ctwm
-PORTVERSION= 	3.5.2b
+PORTVERSION=	3.5.2b
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://slhp1.epfl.ch/pub/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ctwm-images${EXTRACT_SUFX}
 
 MAINTAINER=	torstenb@FreeBSD.org
 
-BUILD_DEPENDS=  gm4:${PORTSDIR}/devel/m4
-RUN_DEPENDS=    gm4:${PORTSDIR}/devel/m4
+BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
+RUN_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
 MAKE_ENV=	LOCALBASE=${LOCALBASE}
 

@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.2 2000/10/26 18:56:09 markm Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.3 2000/11/29 20:30:54 markm Exp $
 #
 
 PORTNAME=	HLDS
@@ -17,7 +17,7 @@ MAINTAINER=	markm@FreeBSD.org
 #FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 BUILD_DEPENDS=	/compat/linux/lib/ld.so:${PORTSDIR}/emulators/linux_base
-RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 NO_CDROM=	"Size; the data set is much too big"
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:			Oct 27 1998
 # Whom:				Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/replay/Makefile,v 1.18 2000/04/17 00:17:05 reg Exp $
+# $FreeBSD: ports/audio/replay/Makefile,v 1.19 2000/10/05 06:35:55 reg Exp $
 #
 
 PORTNAME=	replay
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .if defined(WITH_I18N)
-CONFIGURE_ARGS+=       --enable-i18n=JAPANESE
+CONFIGURE_ARGS+=	--enable-i18n=JAPANESE
 .endif
 
 pre-configure:

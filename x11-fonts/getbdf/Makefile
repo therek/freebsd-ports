@@ -2,21 +2,21 @@
 # Date created:         30 August 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/x11-fonts/getbdf/Makefile,v 1.7 1999/08/31 02:58:30 peter Exp $
+# $FreeBSD: ports/x11-fonts/getbdf/Makefile,v 1.8 2000/04/10 00:44:36 cpiazza Exp $
 #
 
 PORTNAME=	getbdf
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11-fonts
-MASTER_SITES=   ftp://ftp.ipa.fhg.de/pub/X/
+MASTER_SITES=	ftp://ftp.ipa.fhg.de/pub/X/
 DISTNAME=	${PORTNAME}
-EXTRACT_SUFX=   .tar.Z
+EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
-USE_X_PREFIX=   yes
-NO_WRKSUBDIR=   yes
-ALL_TARGET=     getbdf
+USE_X_PREFIX=	yes
+NO_WRKSUBDIR=	yes
+ALL_TARGET=	getbdf
 
 do-install:
 	cd ${WRKSRC}; \

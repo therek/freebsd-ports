@@ -2,11 +2,11 @@
 # Date created:                                2000-07-09
 # Whom:                                        Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/security/p5-GnuPG-Interface/Makefile,v 1.3 2000/09/23 18:28:12 nbm Exp $
+# $FreeBSD: ports/security/p5-GnuPG-Interface/Makefile,v 1.4 2000/10/02 05:39:33 trevor Exp $
 #
 
 PORTNAME=	GnuPG-Interface
-PORTVERSION=    0.11
+PORTVERSION=	0.11
 CATEGORIES=	security perl5
 MASTER_SITES=	http://download.sourceforge.net/${PORTNAME}/ \
 		ftp://download.sourceforge.net/pub/sourceforge/${PORTNAME}/ \

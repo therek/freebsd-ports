@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.13 2000/08/20 03:15:36 will Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.14 2000/12/11 02:15:58 steve Exp $
 #
 
 PORTNAME=	xmame
@@ -14,7 +14,7 @@ MASTER_SITES=	http://x.mame.net/download/ \
 		http://www.ozemail.com.au/~knebauer/xmame/files/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=     c9710216@studentmail.newcastle.edu.au
+MAINTAINER=	c9710216@studentmail.newcastle.edu.au
 
 USE_XPM=	yes
 USE_X_PREFIX=	yes

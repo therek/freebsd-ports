@@ -3,19 +3,19 @@
 # Date created:		25 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/textproc/glimpse/Makefile,v 1.19 2000/04/09 21:52:35 cpiazza Exp $
+# $FreeBSD: ports/textproc/glimpse/Makefile,v 1.20 2000/05/06 01:53:28 ache Exp $
 #
 
 PORTNAME=	glimpse
-PORTVERSION=    4.12.6
+PORTVERSION=	4.12.6
 CATEGORIES=	textproc databases
-MASTER_SITES=   ftp://ftp.polito.it/pub/tools/unix/harvest/
+MASTER_SITES=	ftp://ftp.polito.it/pub/tools/unix/harvest/
 
 MAINTAINER=	chuckr@freebsd.org
 
 NO_CDROM=	"Restrictive copyright (don't sell for profit)"
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=  CFLAGS="${CFLAGS} -DISO_CHAR_SET=1"
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} -DISO_CHAR_SET=1"
 MAN1=		glimpse.1 glimpseindex.1 glimpseserver.1 agrep.1
 
 pre-configure:

@@ -4,7 +4,7 @@
 #
 # Heavy input from eivind@freebsd.org
 #
-# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.3 2000/06/17 02:36:30 will Exp $
+# $FreeBSD: ports/databases/p5-GDBM/Makefile,v 1.4 2000/11/16 17:41:46 nsayer Exp $
 #
 
 PORTNAME=	p5-GDBM
@@ -20,9 +20,9 @@ LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 USE_PERL5=	yes
 
-WRKSRC=         ${WRKDIR}/${DISTNAME}/ext/GDBM_File
+WRKSRC=		${WRKDIR}/${DISTNAME}/ext/GDBM_File
 
-MAN3=           GDBM_File.3
+MAN3=		GDBM_File.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:

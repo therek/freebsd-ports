@@ -2,7 +2,7 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.41 2000/06/29 07:02:20 obrien Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.42 2000/07/04 07:13:35 sobomax Exp $
 #
 
 PORTNAME=	xv
@@ -20,12 +20,12 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 DIST_SUBDIR=	${PORTNAME}
 EXTRACT_ONLY=	${DISTFILES:N*patch}
 
-PATCH_SITES=    ftp://ftp.cis.upenn.edu/pub/xv/
-PATCHFILES=     ${DISTNAME}.JPEG-patch ${DISTNAME}.TIFF-patch
+PATCH_SITES=	ftp://ftp.cis.upenn.edu/pub/xv/
+PATCHFILES=	${DISTNAME}.JPEG-patch ${DISTNAME}.TIFF-patch
 
 MAINTAINER?=	shige@FreeBSD.org
 
-LIB_DEPENDS=    jpeg.9:${PORTSDIR}/graphics/jpeg \
+LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		png.4:${PORTSDIR}/graphics/png
 

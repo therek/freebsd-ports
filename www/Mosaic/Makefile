@@ -2,12 +2,12 @@
 # Date created:         7 August 1995
 # Whom:                 torstenb
 #
-# $FreeBSD: ports/www/Mosaic/Makefile,v 1.28 2000/11/07 23:28:16 asami Exp $
+# $FreeBSD: ports/www/Mosaic/Makefile,v 1.29 2000/12/31 07:01:45 trevor Exp $
 #
 
 PORTNAME=	mosaic
-PORTVERSION= 	2.7b5
-CATEGORIES=     www
+PORTVERSION=	2.7b5
+CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.ncsa.uiuc.edu/Web/Mosaic/Unix/source/
 DISTNAME=	Mosaic-src-2.7b5
 

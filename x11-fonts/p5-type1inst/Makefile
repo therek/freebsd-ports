@@ -2,7 +2,7 @@
 # Date created:		7 Jan 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/x11-fonts/p5-type1inst/Makefile,v 1.4 2000/04/10 00:44:39 cpiazza Exp $
+# $FreeBSD: ports/x11-fonts/p5-type1inst/Makefile,v 1.5 2000/06/17 02:36:56 will Exp $
 #
 
 PORTNAME=	type1inst
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=X11/xutils
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=     giffunip@asme.org
+MAINTAINER=	giffunip@asme.org
 
 USE_PERL5=	yes
 USE_XLIB=	yes

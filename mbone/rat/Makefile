@@ -2,7 +2,7 @@
 # Date created:			      3 July 1999
 # Whom:				      O.Hodson@cs.ucl.ac.uk (Orion Hodson)
 #
-# $FreeBSD: ports/mbone/rat/Makefile,v 1.11 2000/09/21 18:23:43 sumikawa Exp $
+# $FreeBSD: ports/mbone/rat/Makefile,v 1.12 2000/09/21 21:08:23 sumikawa Exp $
 #
 
 PORTNAME=	rat
@@ -29,7 +29,7 @@ RAT_BUILD_DIRS=	common rat
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400014
-ENABLE_IPv6=      --enable-ipv6
+ENABLE_IPv6=	--enable-ipv6
 .endif
 
 do-install:

@@ -2,22 +2,22 @@
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/klondike/Makefile,v 1.9 1999/11/05 17:32:15 jseger Exp $
+# $FreeBSD: ports/games/klondike/Makefile,v 1.10 2000/04/14 06:53:22 mharo Exp $
 #
 
 PORTNAME=	klondike
 PORTVERSION=	1.9
-CATEGORIES=     games tk82
-MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
+CATEGORIES=	games tk82
+MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 
-MAINTAINER=     faber@isi.edu
+MAINTAINER=	faber@isi.edu
 
-RUN_DEPENDS=    wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
-GNU_CONFIGURE=  Yes
-CONFIGURE_ARGS= --bindir=${PREFIX}/bin --datadir=${PREFIX}/share/games \
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--bindir=${PREFIX}/bin --datadir=${PREFIX}/share/games \
 		--mandir=${PREFIX}/man
-CONFIGURE_ENV=  WISHX=${PREFIX}/bin/wish8.2
-MAN6=           klondike.6
+CONFIGURE_ENV=	WISHX=${PREFIX}/bin/wish8.2
+MAN6=		klondike.6
 
 .include <bsd.port.mk>

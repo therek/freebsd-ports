@@ -2,22 +2,22 @@
 # Date created:        21 July 2000
 # Whom:                Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/www/web2ldap/Makefile,v 1.6 2000/11/14 00:42:05 asami Exp $
+# $FreeBSD: ports/www/web2ldap/Makefile,v 1.7 2001/01/12 16:43:12 kevlo Exp $
 #
 
-PORTNAME=      web2ldap
-PORTVERSION=   0.8.1
-CATEGORIES=    www
-MASTER_SITES=  http://www.web2ldap.de/download/ \
-               http://www.tricknolgy.org/ports/
+PORTNAME=	web2ldap
+PORTVERSION=	0.8.1
+CATEGORIES=	www
+MASTER_SITES=	http://www.web2ldap.de/download/ \
+		http://www.tricknolgy.org/ports/
 
-MAINTAINER=    oddbjorn@tricknology.org
+MAINTAINER=	oddbjorn@tricknology.org
 
-RUN_DEPENDS=   ${PYTHON_SITELIBDIR}/_ldapmodule.so:${PORTSDIR}/net/ldapmodule
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_ldapmodule.so:${PORTSDIR}/net/ldapmodule
 
-NO_BUILD=      yes
-USE_PYTHON=    yes
-PYTHON_VERSION= python2.0
+NO_BUILD=	yes
+USE_PYTHON=	yes
+PYTHON_VERSION=	python2.0
 
 do-install:
 	@${MKDIR} ${PREFIX}/${PORTNAME}

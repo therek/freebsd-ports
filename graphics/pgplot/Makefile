@@ -2,14 +2,14 @@
 # Date created:		21 December 1996
 # Whom:			jmz
 #
-# $FreeBSD: ports/graphics/pgplot/Makefile,v 1.15 2000/06/16 21:50:50 asami Exp $
+# $FreeBSD: ports/graphics/pgplot/Makefile,v 1.16 2000/10/21 21:50:02 jmz Exp $
 #
 
-PORTNAME=       pgplot
+PORTNAME=	pgplot
 PORTVERSION=	5.2
-CATEGORIES=     graphics
-MASTER_SITES=   ftp://ftp.astro.caltech.edu/pub/pgplot/
-DISTNAME=       ${PORTNAME}${PORTVERSION}
+CATEGORIES=	graphics
+MASTER_SITES=	ftp://ftp.astro.caltech.edu/pub/pgplot/
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 

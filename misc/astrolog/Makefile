@@ -6,28 +6,28 @@
 # Date created:         31 July 1995
 # Whom:                 faulkner@cactus.org
 #
-# $FreeBSD: ports/misc/astrolog/Makefile,v 1.19 1999/08/31 06:48:13 mharo Exp $
+# $FreeBSD: ports/misc/astrolog/Makefile,v 1.20 2000/04/14 08:45:20 asami Exp $
 #
 
-PORTNAME=       astrolog
+PORTNAME=	astrolog
 PORTVERSION=	5.40
-CATEGORIES=     misc
-MASTER_SITES=   http://www.astrolog.org/ftp/ephem/ \
+CATEGORIES=	misc
+MASTER_SITES=	http://www.astrolog.org/ftp/ephem/ \
 		http://www.astrolog.org/ftp/ \
 		ftp://ftp.kiarchive.ru/pub/unix/magick/astrology/astrolog/
-EXTRACT_ONLY=   ast54unx.shr
-EPHEM=          LRZ5_24 CHI_24 CPJV_24
-DISTFILES=      ${EXTRACT_ONLY} ${EPHEM}
+EXTRACT_ONLY=	ast54unx.shr
+EPHEM=		LRZ5_24 CHI_24 CPJV_24
+DISTFILES=	${EXTRACT_ONLY} ${EPHEM}
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
 USE_XLIB=	yes
-EXTRACT_CMD=    ${SH}
+EXTRACT_CMD=	${SH}
 EXTRACT_BEFORE_ARGS=	# empty
 EXTRACT_AFTER_ARGS=	# empty
-DIST_SUBDIR=    astrolog
-ALL_TARGET=     astrolog
-NO_WRKSUBDIR=   Yes
+DIST_SUBDIR=	astrolog
+ALL_TARGET=	astrolog
+NO_WRKSUBDIR=	yes
 
 do-install:
 	-@${MKDIR} ${PREFIX}/lib/astrolog

@@ -2,7 +2,7 @@
 # Date created:         Oct, 8, 1998
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/graphics/linux_glide/Makefile,v 1.7 2000/02/23 00:51:08 asami Exp $
+# $FreeBSD: ports/graphics/linux_glide/Makefile,v 1.8 2000/04/14 10:46:37 asami Exp $
 #
 #
 
@@ -13,9 +13,9 @@ MASTER_SITES=	ftp://ftp.3dfx.com/pub/glide/
 PKGNAMEPREFIX=	linux_
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}_2_4
 
-MAINTAINER= 	cracauer@cons.org
+MAINTAINER=	cracauer@cons.org
 
-RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	i386
 

@@ -2,21 +2,21 @@
 # Date created:         Wed Apr 19 21:54:51 PDT 2000
 # Whom:                 Matthew Jacob <mjacob@freebsd.org>
 #
-# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.4 2000/10/26 17:10:22 mjacob Exp $
+# $FreeBSD: ports/sysutils/nwclient/Makefile,v 1.5 2000/12/07 18:44:03 mjacob Exp $
 #
 
 PORTNAME=	nwclient
 PORTVERSION=	5.5.2
-CATEGORIES=     sysutils
-MASTER_SITES=   ftp://ftp.feral.com/pub/networker/freebsd/freebsd_40/ \
+CATEGORIES=	sysutils
+MASTER_SITES=	ftp://ftp.feral.com/pub/networker/freebsd/freebsd_40/ \
 		ftp://gw.feral.com/pub/networker/freebsd/freebsd_40/
 ARCH!=		uname -m
 DISTNAME=	nwclient-${PORTVERSION}-freebsd-${ARCH}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=     mjacob@freebsd.org
+MAINTAINER=	mjacob@freebsd.org
 
-NO_BUILD  = yes
+NO_BUILD=	yes
 
 post-patch:
 	@sed -e "s,^ROOTDIR.*$$,ROOTDIR=${PREFIX}," ${WRKSRC}/networker.sh >\

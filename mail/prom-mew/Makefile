@@ -2,15 +2,15 @@
 # Date created:		28 Jun 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/prom-mew/Makefile,v 1.2 1999/09/09 02:36:37 taoka Exp $
+# $FreeBSD: ports/mail/prom-mew/Makefile,v 1.3 2000/04/13 20:00:36 cpiazza Exp $
 #
 
 PORTNAME=	prom-mew
-PORTVERSION= 	1.93.4
+PORTVERSION=	1.93.4
 CATEGORIES=	mail elisp
 MASTER_SITES=	http://www02.so-net.ne.jp/~murata/software/pub/
 
-MAINTAINER=     kiri@pis.toba-cmt.ac.jp
+MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 # This port requires Mew. But we can't decide which mew to depends, there is
 # NO RUN_DEPNDS mail/mew*.

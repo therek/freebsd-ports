@@ -2,11 +2,11 @@
 # Date created:			So   2 M-Aär 1997 18:10:49 MET$)B
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/wwwstat/Makefile,v 1.18 2000/04/10 00:07:27 cpiazza Exp $
+# $FreeBSD: ports/www/wwwstat/Makefile,v 1.19 2000/11/13 12:45:32 demon Exp $
 #
 
 PORTNAME=	wwwstat
-PORTVERSION= 	2.01
+PORTVERSION=	2.01
 CATEGORIES=	www
 MASTER_SITES=	ftp://www.ics.uci.edu/pub/websoft/wwwstat/ \
 		ftp://ftp.gwdg.de/pub/misc/www-stat/websoft/wwwstat/
@@ -17,7 +17,7 @@ PATCHFILES=	patch-2.01.txt
 
 MAINTAINER=	demon@FreeBSD.org
 
-RUN_DEPENDS=    ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
+RUN_DEPENDS=	${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
 
 USE_PERL5=	yes
 MAKE_ENV+=	PERL5=${PERL5}

@@ -2,7 +2,7 @@
 # Date created:		18 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cidr/Makefile,v 1.1 2000/07/19 10:48:41 alex Exp $
 
 PORTNAME=	cidr
 PORTVERSION=	2.3
@@ -12,7 +12,8 @@ DISTNAME=	cidr-current
 
 MAINTAINER=	midom@dammit.lt
 
-WRKSRC=         ${WRKDIR}/${PORTNAME}-${PORTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+
 ALL_TARGET=	cidr
 
 do-install:

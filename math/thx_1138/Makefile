@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/thx_1138/Makefile,v 1.2 2000/10/03 05:00:30 lioux Exp $
+# $FreeBSD: ports/math/thx_1138/Makefile,v 1.3 2000/10/03 05:12:36 lioux Exp $
 #
 
 PORTNAME=	thx_1138
@@ -41,8 +41,8 @@ INSTALL_DATA_DIR=	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 755
 # program files
 PROGRAMFILES=		thx-1138/thx-1138
 # documents
-DOCFILES=       LICENSE README.binary
-DOCDIR_PREFIX=  ${PREFIX}/share/doc/${PORTNAME:S,_,-,}
+DOCFILES=	LICENSE README.binary
+DOCDIR_PREFIX=	${PREFIX}/share/doc/${PORTNAME:S,_,-,}
 # additional configuration and header files
 EXTRALIB_PREFIX=	${X11BASE}/lib/jx
 EXTRALIBFILES_MAKE_WRKSRC=	include/make

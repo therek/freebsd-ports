@@ -2,7 +2,7 @@
 # Date created:				8 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jre/Makefile,v 1.8 2000/09/12 07:11:27 sobomax Exp $
+# $FreeBSD: ports/java/jre/Makefile,v 1.9 2000/11/01 15:51:06 sobomax Exp $
 #
 
 PORTNAME=	jre
@@ -42,7 +42,7 @@ STRIPFILES=	bin/i386/green_threads/jre \
 .if ${PORTOBJFORMAT} == "aout"
 DISTFILES=	jre${JRE_VERSION}i_AOUT.V1999-11-9.tar.gz
 .else
-DISTFILES=      jre${JRE_VERSION}i_ELF.V1999-11-9.tar.gz
+DISTFILES=	jre${JRE_VERSION}i_ELF.V1999-11-9.tar.gz
 .endif
 
 pre-extract:

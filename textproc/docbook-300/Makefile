@@ -4,11 +4,11 @@
 #
 # Based heavily on work by jfieber
 #
-# $FreeBSD: ports/textproc/docbook-300/Makefile,v 1.7 2000/04/09 21:52:22 cpiazza Exp $
+# $FreeBSD: ports/textproc/docbook-300/Makefile,v 1.8 2000/10/27 15:27:51 shige Exp $
 #
 
 PORTNAME=	docbook
-PORTVERSION= 	3.0
+PORTVERSION=	3.0
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.ora.com/pub/davenport/
 DISTFILES=	docbk30.tar.Z
@@ -18,9 +18,9 @@ MAINTAINER=	nik@FreeBSD.org
 RUN_DEPENDS=	${ISOCAT}:${PORTSDIR}/textproc/iso8879 \
 		${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
-NO_MTREE=       yes
+NO_MTREE=	yes
 EXTRACT_ONLY=	# empty
-NO_BUILD=       yes
+NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 PLIST_SUB=	DTD_NAME=${PORTNAME} DTD_VERSION=${PORTVERSION} \
 		MKCATALOG=${MKCATALOG}

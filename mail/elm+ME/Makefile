@@ -2,11 +2,11 @@
 # Date created:         26 June 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.61 2000/08/14 13:26:59 ache Exp $
+# $FreeBSD: ports/mail/elm+ME/Makefile,v 1.62 2001/01/10 07:59:15 ache Exp $
 #
 
 PORTNAME=	elm
-PORTVERSION=    2.4ME+82
+PORTVERSION=	2.4ME+82
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ozone.fmi.fi/KEH/ \
 		ftp://ftp.funet.fi/pub/unix/mail/elm/elm-2.4ME+/ \
@@ -20,8 +20,8 @@ MAN1=		answer.1 checkalias.1 elm.1 elmalias.1 fastmail.1 \
 		printmail.1 readmsg.1 elmcharset.1 elmterminal.1
 MLINKS=		frm.1 nfrm.1	newmail.1 wnewmail.1
 
-HAS_CONFIGURE=	Yes
-CONFIGURE_SCRIPT= Configure
+HAS_CONFIGURE=	yes
+CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ENV=	PREFIX="${PREFIX}"
 CONFIGURE_ARGS=	-S -d
 

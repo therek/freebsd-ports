@@ -2,17 +2,17 @@
 # Date created:        30 December 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/diffconvert/Makefile,v 1.1 2000/12/30 16:43:40 alex Exp $
 #
 
-PORTNAME=       	diffconvert
-PORTVERSION=		1.2
-CATEGORIES=     	devel
-MASTER_SITES=   	ftp://ftp.ilog.fr/pub/Users/haible/gnu/
+PORTNAME=	diffconvert
+PORTVERSION=	1.2
+CATEGORIES=	devel
+MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/
 
-MAINTAINER=		greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@ukug.uk.freebsd.org
 
-PROGRAMS=		cd2ud cdiffreverse ud2cd udiffreverse
+PROGRAMS=	cd2ud cdiffreverse ud2cd udiffreverse
 
 do-build:
 .for P in ${PROGRAMS}

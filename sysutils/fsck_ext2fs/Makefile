@@ -2,12 +2,12 @@
 # Date Created:				16 Jul 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fsck_ext2fs/Makefile,v 1.1 2000/12/06 22:48:44 alex Exp $
 #
 
 PORTNAME=	fsck_ext2fs
 PORTVERSION=	2.8
-CATEGORIES=     sysutils
+CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	alex
 

@@ -2,12 +2,12 @@
 # Date Created:				8 Jun 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/gq/Makefile,v 1.2 2000/10/01 14:49:34 kevlo Exp $
+# $FreeBSD: ports/net/gq/Makefile,v 1.3 2000/10/05 06:42:16 reg Exp $
 #
 
 PORTNAME=	gq
 PORTVERSION=	0.3.0
-CATEGORIES=     net
+CATEGORIES=	net
 MASTER_SITES=	http://biot.com/gq/download/
 
 MAINTAINER=	roman@xpert.com

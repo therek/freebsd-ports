@@ -2,16 +2,16 @@
 # Date created:         17 Aug 1998
 # Whom:                 gsm@infosite.ru
 #
-# $FreeBSD: ports/russian/gd/Makefile,v 1.6 2000/05/28 03:52:36 steve Exp $
+# $FreeBSD: ports/russian/gd/Makefile,v 1.7 2000/07/30 18:03:09 steve Exp $
 #
 
 PORTNAME=	gd
 PORTVERSION=	1.8.2
 CATEGORIES=	russian graphics
-MASTER_SITES=   http://www.boutell.com/gd/http/ \
+MASTER_SITES=	http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
 
-MAINTAINER=     gsm@infosite.ru
+MAINTAINER=	gsm@infosite.ru
 
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg

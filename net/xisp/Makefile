@@ -2,7 +2,7 @@
 # Date created:		June 24, 1999
 # Whom:			morishim@cig.mot.com
 #
-# $FreeBSD: ports/net/xisp/Makefile,v 1.4 2000/04/17 00:18:35 reg Exp $
+# $FreeBSD: ports/net/xisp/Makefile,v 1.5 2000/08/03 09:25:56 asami Exp $
 #
 
 PORTNAME=	xisp
@@ -17,7 +17,7 @@ MAINTAINER=	morishim@cig.mot.com
 LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms
 
 USE_XPM=	yes
-WRKSRC=         ${WRKDIR}/xisp-2.6
+WRKSRC=		${WRKDIR}/xisp-2.6
 MAN1=		xisp.1
 HAS_CONFIGURE=	yes
 .if defined(WITH_DES)

@@ -2,7 +2,7 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/audio/xcd/Makefile,v 1.27 2000/06/11 17:20:38 jmz Exp $
+# $FreeBSD: ports/audio/xcd/Makefile,v 1.28 2000/06/29 02:31:26 asami Exp $
 #
 
 PORTNAME=	xcd
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	jmz
 
 MAINTAINER=	jmz@FreeBSD.org
 
-RUN_DEPENDS=    wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/xcd
 MAN1=		xcd.1

@@ -2,7 +2,7 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD: ports/games/xmine/Makefile,v 1.21 2000/06/09 21:58:54 asami Exp $
+# $FreeBSD: ports/games/xmine/Makefile,v 1.22 2000/09/05 18:34:49 asami Exp $
 #
 
 PORTNAME=	xmine
@@ -15,9 +15,9 @@ DISTNAME=	${PKGNAME}-Xaw
 
 MAINTAINER=	joerg@FreeBSD.org
 
-LIB_DEPENDS=    Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
+LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 MAN6=		xmine.6
 MANCOMPRESSED=	no
 

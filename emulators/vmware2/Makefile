@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.30 2000/12/24 05:20:51 nsayer Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.31 2000/12/28 21:39:24 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -59,7 +59,7 @@ BROKEN=		"This software absolutely requires Linux procfs support"
 .endif
 
 .if !exists(/sys/Makefile)
-BROKEN=         "Kernel source files required"
+BROKEN=		"Kernel source files required"
 .endif
 
 .if exists(${WRKDIRPREFIX}${.CURDIR}/work/Makefile.inc.net)

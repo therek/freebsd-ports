@@ -2,7 +2,7 @@
 # Date created:		15 Jul 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/jwhois/Makefile,v 1.1 2000/07/27 05:40:54 kuriyama Exp $
 #
 
 PORTNAME=	jwhois
@@ -13,12 +13,12 @@ MASTER_SITE_SUBDIR=	jwhois
 
 MAINTAINER=	matusita@jp.FreeBSD.org
 
-LIB_DEPENDS=    intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS+= --localstatedir=${PREFIX}/var/jwhois
+CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/var/jwhois
 USE_GMAKE=	yes
-CONFIGURE_ENV=  CPPFLAGS="-I${PREFIX}/include" LDFLAGS="-L${PREFIX}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${PREFIX}/include" LDFLAGS="-L${PREFIX}/lib"
 
 INSTALL_TARGET=	install-strip
 

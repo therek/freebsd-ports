@@ -2,10 +2,10 @@
 # Date created:         20 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xbomb/Makefile,v 1.8 2000/04/14 12:27:07 asami Exp $
+# $FreeBSD: ports/games/xbomb/Makefile,v 1.9 2000/08/16 06:06:40 kris Exp $
 #
 
-PORTNAME=       xbomb
+PORTNAME=	xbomb
 PORTVERSION=	2.1a
 CATEGORIES=	games
 MASTER_SITES=	http://www.gedanken.demon.co.uk/download-xbomb/

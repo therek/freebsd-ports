@@ -2,7 +2,7 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.21 2000/11/17 15:06:21 kevlo Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.22 2001/01/01 10:15:09 will Exp $
 #
 
 PORTNAME=	cyrus-sasl
@@ -55,13 +55,13 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 # ENABLE_* variables can be used by depending ports to enable options.
 
 # JavaSASL needs someone to look at to get it to build
-#JAVADIR=        jdk1.1.8
-#JAVALIBDIR=     ${PREFIX}/${JAVADIR}/lib/i386/green_threads/
+#JAVADIR=	jdk1.1.8
+#JAVALIBDIR=	${PREFIX}/${JAVADIR}/lib/i386/green_threads/
 
 #.if defined(USE_JAVA) || exists(${LOCALBASE}/${JAVADIR}/bin/java)
-#BUILD_DEPENDS=  ${LOCALBASE}/${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
-#CONFIGURE_ARGS+= --with-java \
-#		 --with-javabase=${LOCALBASE}/include
+#BUILD_DEPENDS=	${LOCALBASE}/${JAVADIR}/bin/java:${PORTSDIR}/java/jdk
+#CONFIGURE_ARGS+=	--with-java \
+#			--with-javabase=${LOCALBASE}/include
 #
 #CONFIGURE_ENV=	JAVAC="${LOCALBASE}/${JAVADIR}/bin/javac" \
 #		JAVAH="${LOCALBASE}/${JAVADIR}/bin/javah" \

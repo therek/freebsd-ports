@@ -5,22 +5,22 @@
 # ATTENTION: It not work in > 256 colors modes, please fix it
 # if you can.
 #
-# $FreeBSD: ports/x11/xfedor/Makefile,v 1.12 2000/04/13 19:10:31 cpiazza Exp $
+# $FreeBSD: ports/x11/xfedor/Makefile,v 1.13 2000/08/03 09:28:51 asami Exp $
 #
 
 PORTNAME=	xfedor
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
-MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/x11/util/
+MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/x11/util/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 USE_XPM=	yes
 
-XFHELP= ${X11BASE}/lib/X11/xfedor # See patches too
-XCAT1= ${X11BASE}/man/cat1
+XFHELP=		${X11BASE}/lib/X11/xfedor # See patches too
+XCAT1=		${X11BASE}/man/cat1
 
 do-install:
 	cd ${WRKSRC}; \

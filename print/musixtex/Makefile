@@ -2,14 +2,14 @@
 # Date created:         9 july 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/musixtex/Makefile,v 1.26 2000/04/09 17:40:50 cpiazza Exp $
+# $FreeBSD: ports/print/musixtex/Makefile,v 1.27 2000/04/09 17:50:17 cpiazza Exp $
 #
 
 PORTNAME=	musixtex
 PORTVERSION=	T98
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.tex.ac.uk/tex-archive/macros/musixtex/taupin/
-DISTFILES=      musixtex-T98.tar.gz musixexa-T90.tar.gz
+DISTFILES=	musixtex-T98.tar.gz musixexa-T90.tar.gz
 
 MAINTAINER=	jmz@FreeBSD.org
 

@@ -2,23 +2,23 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.8 2001/01/03 08:24:51 brian Exp $
+# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.9 2001/01/03 09:53:23 brian Exp $
 #
 
-PORTNAME=       uk-postcodes
+PORTNAME=	uk-postcodes
 PORTVERSION=	2.0
 CATEGORIES=	misc
-MASTER_SITES=   ftp://ftp.Awfulhak.org/pub/uk-postcodes/ \
+MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-postcodes/ \
 		http://people.FreeBSD.org/~brian/uk-postcodes/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=     brian@FreeBSD.org
+MAINTAINER=	brian@FreeBSD.org
 
-NO_WRKSUBDIR=	YES
+NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}
 EXTRACT_BEFORE_ARGS=	# None
 EXTRACT_AFTER_ARGS=	> ${WRKSRC}/uk.postcodes
-NO_BUILD=	YES
+NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/uk.postcodes ${PREFIX}/share/misc

@@ -2,23 +2,23 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.10 2001/01/03 08:35:23 brian Exp $
+# $FreeBSD: ports/misc/uk-phone/Makefile,v 1.11 2001/01/03 09:50:03 brian Exp $
 #
 
-PORTNAME=       uk-phone
+PORTNAME=	uk-phone
 PORTVERSION=	2.2
 CATEGORIES=	misc
-MASTER_SITES=   ftp://ftp.Awfulhak.org/pub/uk-phone/ \
+MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-phone/ \
 		http://people.FreeBSD.org/~brian/uk-phone/
 EXTRACT_SUFX=	.gz
 
-MAINTAINER=     brian@FreeBSD.org
+MAINTAINER=	brian@FreeBSD.org
 
-NO_WRKSUBDIR=	YES
+NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${GZCAT}
 EXTRACT_BEFORE_ARGS=	# None
 EXTRACT_AFTER_ARGS=	> ${WRKSRC}/uk.phone
-NO_BUILD=	YES
+NO_BUILD=	yes
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/uk.phone ${PREFIX}/share/misc

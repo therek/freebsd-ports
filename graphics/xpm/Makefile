@@ -2,10 +2,10 @@
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/xpm/Makefile,v 1.29 2000/06/16 08:19:51 sobomax Exp $
+# $FreeBSD: ports/graphics/xpm/Makefile,v 1.30 2000/06/16 21:50:54 asami Exp $
 #
 
-PORTNAME=       xpm
+PORTNAME=	xpm
 PORTVERSION=	3.4k
 CATEGORIES=	graphics x11
 MASTER_SITES=	ftp://avahi.inria.fr/pub/xpm/

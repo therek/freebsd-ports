@@ -2,22 +2,22 @@
 # Date created:         15 Oct 1996
 # Whom:                 dk
 #
-# $FreeBSD: ports/emulators/fmsx/Makefile,v 1.8 2000/04/12 04:55:22 mharo Exp $
+# $FreeBSD: ports/emulators/fmsx/Makefile,v 1.9 2000/08/16 16:52:38 ru Exp $
 #
 
 PORTNAME=	fmsx
 PORTVERSION=	2.2
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.komkon.org/fms/fMSX/
-DISTNAME=       fMSX22
-EXTRACT_SUFX=   .tar.Z
+DISTNAME=	fMSX22
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dk@farm.org
 
 USE_XLIB=	yes
 NO_PACKAGE=	${RESTRICTED}
 RESTRICTED=	Legal status of distributed ROM images unclear
-WRKSRC=         ${WRKDIR}/MSX
+WRKSRC=		${WRKDIR}/MSX
 
 do-install:
 	${INSTALL_SCRIPT} ${FILESDIR}/fmsx ${PREFIX}/bin

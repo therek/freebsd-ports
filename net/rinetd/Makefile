@@ -2,20 +2,20 @@
 # Date created:				23 Dec 1997
 # Whom:					alexp
 #
-# $FreeBSD: ports/net/rinetd/Makefile,v 1.2 1999/08/30 14:24:00 peter Exp $
+# $FreeBSD: ports/net/rinetd/Makefile,v 1.3 2000/04/09 18:13:22 cpiazza Exp $
 #
 
 PORTNAME=	rinetd
 PORTVERSION=	0.61
-CATEGORIES=     net
-MASTER_SITES=   ftp://ftp.boutell.com/pub/boutell/rinetd/
+CATEGORIES=	net
+MASTER_SITES=	ftp://ftp.boutell.com/pub/boutell/rinetd/
 DISTNAME=	rinetd
 
-MAINTAINER=     veers@disturbed.net
+MAINTAINER=	veers@disturbed.net
 
 WRKSRC=		${WRKDIR}/rinetd/
 
-MAN8=           rinetd.8
+MAN8=		rinetd.8
 
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/rinetd

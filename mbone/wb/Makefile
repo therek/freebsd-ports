@@ -2,14 +2,14 @@
 # Date created:		2 Novermber 1996
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/wb/Makefile,v 1.9 2000/04/14 08:49:30 asami Exp $
+# $FreeBSD: ports/mbone/wb/Makefile,v 1.10 2000/11/25 10:31:07 asami Exp $
 #
 
-PORTNAME=       wb
+PORTNAME=	wb
 PORTVERSION=	1.59
 CATEGORIES=	mbone
-MASTER_SITES=   ftp://ftp.ee.lbl.gov/conferencing/wb/
-DISTFILES=      i386-wb-1.59.tar.Z
+MASTER_SITES=	ftp://ftp.ee.lbl.gov/conferencing/wb/
+DISTFILES=	i386-wb-1.59.tar.Z
 
 MAINTAINER=	fenner@FreeBSD.org
 

@@ -2,18 +2,18 @@
 # Date created:        21 September 1999
 # Whom:                mike
 #
-# $FreeBSD: ports/textproc/xp/Makefile,v 1.1.1.1 1999/10/05 23:15:23 cpiazza Exp $
+# $FreeBSD: ports/textproc/xp/Makefile,v 1.2 2000/04/09 21:53:22 cpiazza Exp $
 #
 
 PORTNAME=	xp
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	textproc java
 MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=     mike@vee.net
+MAINTAINER=	mike@vee.net
 
-RUN_DEPENDS=    ${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/java:${PORTSDIR}/java/jdk
 
 PLIST_SUB+=	XP_VERSION=${PORTVERSION}
 

@@ -2,7 +2,7 @@
 # Date created:				8 March 2000
 # Whom:					jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/devel/tmake/Makefile,v 1.7 2000/10/29 18:02:10 will Exp $
+# $FreeBSD: ports/devel/tmake/Makefile,v 1.8 2001/01/16 13:26:39 kevlo Exp $
 #
 
 PORTNAME=	tmake
@@ -14,7 +14,7 @@ MAINTAINER=	jesse@cs.uni-magdeburg.de
 
 USE_PERL5=	yes
 USE_QT2=	yes
-NO_BUILD=       yes
+NO_BUILD=	yes
 TMAKE_BIN=	progen tmake
 
 do-install:

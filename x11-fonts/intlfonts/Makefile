@@ -2,11 +2,11 @@
 # Date created:		99/10/26
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.3 2000/04/10 00:44:37 cpiazza Exp $
+# $FreeBSD: ports/x11-fonts/intlfonts/Makefile,v 1.4 2000/10/08 10:23:23 asami Exp $
 #
 
 PORTNAME=	intlfonts
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	intlfonts
@@ -35,8 +35,8 @@ SCALABLE_FONTS=	TrueType \
 FONTSDIR=	lib/X11/fonts/local
 T1_FONTSDIR=	lib/X11/fonts/Type1
 TT_FONTSDIR=	lib/X11/fonts/TrueType
-PKGINSTALL=     ${WRKDIR}/INSTALL
-PKGDEINSTALL=   ${WRKDIR}/DEINSTALL
+PKGINSTALL=	${WRKDIR}/INSTALL
+PKGDEINSTALL=	${WRKDIR}/DEINSTALL
 DOCDIR=		share/doc/${DISTNAME}
 
 do-build:

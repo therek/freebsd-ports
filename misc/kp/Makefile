@@ -2,10 +2,10 @@
 # Date created:         8 May 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/misc/kp/Makefile,v 1.17 2000/11/02 11:26:52 asami Exp $
+# $FreeBSD: ports/misc/kp/Makefile,v 1.18 2000/11/07 23:28:13 asami Exp $
 #
 
-PORTNAME=       kp
+PORTNAME=	kp
 PORTVERSION=	1.00
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_LOCAL}

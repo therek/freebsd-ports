@@ -2,11 +2,11 @@
 # Date created:         		22 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.8 2000/10/08 10:23:03 asami Exp $
+# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.9 2000/11/07 23:28:16 asami Exp $
 #
 
 PORTNAME=	mgdiff
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	andreas@marvin.robin.de
 
 USE_MOTIF=	yes
-USE_IMAKE=      yes
+USE_IMAKE=	yes
 MAN1=		mgdiff.1
 
 post-install:

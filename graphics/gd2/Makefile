@@ -2,13 +2,13 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.28 2000/08/03 09:24:39 asami Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.29 2000/11/12 02:40:52 vanilla Exp $
 #
 
-PORTNAME=       gd
+PORTNAME=	gd
 PORTVERSION=	1.8.3
 CATEGORIES=	graphics
-MASTER_SITES=   http://www.boutell.com/gd/http/ \
+MASTER_SITES=	http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
 
 MAINTAINER=	billf@FreeBSD.org

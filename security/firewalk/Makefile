@@ -2,7 +2,7 @@
 # Date created:		Sun May 3, 1999
 # Whom:			shipley@dis.org
 #
-# $FreeBSD: ports/security/firewalk/Makefile,v 1.7 2000/12/21 17:52:34 roam Exp $
+# $FreeBSD: ports/security/firewalk/Makefile,v 1.8 2000/12/22 17:38:50 roam Exp $
 #
 
 PORTNAME=	firewalk
@@ -16,11 +16,11 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
 MAN1=		firewalk.1
 
-GNU_CONFIGURE=	YES
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV+=	LDFLAGS="-L${PREFIX}/lib"
 CONFIGURE_ARGS=	--with-gtk=no
 
-WRKSRC=         ${WRKDIR}/Firewalk-${PORTVERSION}
+WRKSRC=		${WRKDIR}/Firewalk-${PORTVERSION}
 
 .include <bsd.port.pre.mk>
 

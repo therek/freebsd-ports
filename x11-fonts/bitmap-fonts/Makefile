@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.14 2000/09/10 15:51:09 shige Exp $
+# $FreeBSD: ports/x11-fonts/bitmap-fonts/Makefile,v 1.15 2000/10/08 10:23:22 asami Exp $
 #
 
 PORTNAME=	bitmap-fonts
@@ -19,12 +19,12 @@ BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
 # distfile version
 BITMAP_FONTS_VER=	1.0
 BITMAP_FONTS_PREVER=	pre
-BITMAP_FONTS=		etl6x12-bitmap etl7x14-bitmap etl8x16-bitmap \
-			etl10x20-bitmap etl12x24-bitmap
-FONTSDIR=		lib/X11/fonts/local
-PKGINSTALL=     	${WRKDIR}/INSTALL
-PKGDEINSTALL=   	${WRKDIR}/DEINSTALL
-WRKSRC=			${WRKDIR}
+BITMAP_FONTS=	etl6x12-bitmap etl7x14-bitmap etl8x16-bitmap \
+		etl10x20-bitmap etl12x24-bitmap
+FONTSDIR=	lib/X11/fonts/local
+PKGINSTALL=	${WRKDIR}/INSTALL
+PKGDEINSTALL=	${WRKDIR}/DEINSTALL
+WRKSRC=		${WRKDIR}
 
 USE_X_PREFIX=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.7 2000/09/22 11:08:22 knu Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.8 2000/09/22 17:22:22 knu Exp $
 #
 
 PORTNAME=	rtc
@@ -29,11 +29,11 @@ SRC_BASE?=	/usr/src
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 400013
-BROKEN=         "Systems prior to 400013 is out of support"
+BROKEN=		"Systems prior to 400013 is out of support"
 .endif
 
 .if !exists(${SRC_BASE}/sys/Makefile)
-BROKEN=         "Kernel source files required"
+BROKEN=		"Kernel source files required"
 .endif
 
 do-fetch:

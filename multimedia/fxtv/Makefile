@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.31 2000/09/05 18:34:49 asami Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.32 2000/11/22 09:35:41 roger Exp $
 #
 
 PORTNAME=	fxtv
@@ -27,7 +27,7 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-USE_GMAKE=      yes
+USE_GMAKE=	yes
 MAKE_FLAGS=	-e
 MAN1=		fxtv.1
 

@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codemedic/Makefile,v 1.3 2000/10/03 05:12:21 lioux Exp $
+# $FreeBSD: ports/devel/codemedic/Makefile,v 1.4 2000/11/28 23:39:36 lioux Exp $
 #
 
 PORTNAME=	code_medic
@@ -45,8 +45,8 @@ INSTALL_DATA_DIR=	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP} -m 755
 # program files
 PROGRAMFILES=		code_medic/medic
 # documents
-DOCFILES=       LICENSE README.binary
-DOCDIR_PREFIX=  ${PREFIX}/share/doc/${PORTNAME}
+DOCFILES=	LICENSE README.binary
+DOCDIR_PREFIX=	${PREFIX}/share/doc/${PORTNAME}
 # additional configuration and header files
 EXTRALIB_PREFIX=	${X11BASE}/lib/jx
 EXTRALIBFILES_MAKE_WRKSRC=	include/make

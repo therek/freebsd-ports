@@ -2,15 +2,15 @@
 # Date created:         10 September 1995
 # Whom:                 joerg
 #
-# $FreeBSD: ports/sysutils/manck/Makefile,v 1.13 2000/04/09 19:08:01 cpiazza Exp $
+# $FreeBSD: ports/sysutils/manck/Makefile,v 1.14 2000/04/22 10:12:40 mharo Exp $
 #
 
 PORTNAME=	manck
 PORTVERSION=	1.2
 CATEGORIES=	sysutils
-MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
+MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
-MAINTAINER=     wosch@FreeBSD.org
+MAINTAINER=	wosch@FreeBSD.org
 
 MAN1=		manck.1
 MANCOMPRESSED=	yes

@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.11 2000/05/29 01:46:31 will Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.12 2001/01/09 00:06:18 will Exp $
 #
 
 PORTNAME=	kdevelop
@@ -41,7 +41,7 @@ CONFIGURE_ARGS=	--with-qtdoc-dir=${X11BASE}/share/doc/qt/html \
 		--with-extra-includes=${LOCALBASE}/include \
 		--with-extra-libs=${LOCALBASE}/lib
 MAKE_ENV=	CXX="${CXX}" SOMAJOR="${SOMAJOR}"
-SOMAJOR=        1
+SOMAJOR=	1
 
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
 

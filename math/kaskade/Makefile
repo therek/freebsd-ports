@@ -2,7 +2,7 @@
 # Date created:		19 Sept. 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/kaskade/Makefile,v 1.12 2000/03/20 21:33:24 jedgar Exp $
+# $FreeBSD: ports/cad/kaskade/Makefile,v 1.13 2000/04/08 23:20:01 mharo Exp $
 #
 
 PORTNAME=	kaskade
@@ -22,7 +22,7 @@ MAKE_ENV+=	HAVE_G2C=yes
 .endif
 
 DIST_SUBDIR=	kaskade
-WRKSRC=         ${WRKDIR}/3.1
+WRKSRC=		${WRKDIR}/3.1
 MAKEFILE=	makefile
 ALL_TARGET=	k6
 

@@ -1,9 +1,8 @@
-# ex:ts=8
 # Ports collection makefile for:  nemesis
 # Date created:			  Fri July 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/nemesis/Makefile,v 1.3 2000/07/10 01:40:05 steve Exp $
+# $FreeBSD: ports/net/nemesis/Makefile,v 1.4 2000/12/22 22:45:18 obrien Exp $
 #
 
 PORTNAME=	nemesis
@@ -13,7 +12,7 @@ MASTER_SITES=	http://celerity.bartoli.org/nemesis/  \
 		http://www.packetfactory.net/Projects/nemesis/  \
 		http://www.nol.net/~halogen/
 
-MAINTAINER=     ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 

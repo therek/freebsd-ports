@@ -2,13 +2,13 @@
 # Date created:		27 May 2000
 # Whom:			Kazumasa Nishizawa <k_nishizawa@anet.ne.jp>
 #
-# $FreeBSD: ports/audio/rio500/Makefile,v 1.2 2000/07/15 17:24:35 will Exp $
+# $FreeBSD: ports/audio/rio500/Makefile,v 1.3 2000/10/05 06:22:51 reg Exp $
 #
 
-PORTNAME=       rio500
+PORTNAME=	rio500
 PORTVERSION=	0.7
-CATEGORIES=     audio
-MASTER_SITES=   http://download.sourceforge.net/rio500/
+CATEGORIES=	audio
+MASTER_SITES=	http://download.sourceforge.net/rio500/
 
 MAINTAINER=	k_nishizawa@anet.ne.jp
 

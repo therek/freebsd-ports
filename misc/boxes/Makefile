@@ -2,7 +2,7 @@
 # Date created:				3 March 2000
 # Whom:					Patrick Seal (patseal@hyperhost.net)
 #
-# $FreeBSD: ports/misc/boxes/Makefile,v 1.4 2000/05/16 03:13:40 hoek Exp $
+# $FreeBSD: ports/misc/boxes/Makefile,v 1.5 2000/05/17 20:20:50 hoek Exp $
 #
 
 PORTNAME=	boxes
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.1
 CATEGORIES=	misc
 MASTER_SITES=	http://www6.informatik.uni-erlangen.de/~tsjensen/software/boxes/download/ \
 		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=    utils/text
+MASTER_SITE_SUBDIR=	utils/text
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	patseal@hyperhost.net

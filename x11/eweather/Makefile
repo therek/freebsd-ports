@@ -2,18 +2,18 @@
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/eweather/Makefile,v 1.1.1.1 2000/03/31 18:31:32 jhb Exp $
+# $FreeBSD: ports/x11/eweather/Makefile,v 1.2 2000/04/13 19:09:22 cpiazza Exp $
 #
 
 PORTNAME=	E-Weather
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	x11
-MASTER_SITES= 	http://pfnet.org/~cy/
+MASTER_SITES=	http://pfnet.org/~cy/
 
 MAINTAINER=	jhb@FreeBSD.org
 
 RUN_DEPENDS=	GrabWeather:${PORTSDIR}/misc/wmweather
-LIB_DEPENDS=    epplet.1:${PORTSDIR}/x11-wm/epplets
+LIB_DEPENDS=	epplet.1:${PORTSDIR}/x11-wm/epplets
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

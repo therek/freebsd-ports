@@ -2,11 +2,11 @@
 # Date created:		13 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11/emu/Makefile,v 1.16 1999/08/31 02:50:15 peter Exp $
+# $FreeBSD: ports/x11/emu/Makefile,v 1.17 2000/04/13 19:09:19 cpiazza Exp $
 #
 
 PORTNAME=	emu
-PORTVERSION= 	1.31
+PORTVERSION=	1.31
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	applications
 MAINTAINER=	me@FreeBSD.org
 
 .if !defined(DISPLAY) || ${DISPLAY} == ""
-BROKEN=         "Requires an active X session (and DISPLAY variable) to run xrdb.  Please compile this while running X."
+BROKEN=		"Requires an active X session (and DISPLAY variable) to run xrdb.  Please compile this while running X."
 .endif
 
 USE_IMAKE=	yes

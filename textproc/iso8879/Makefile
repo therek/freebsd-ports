@@ -2,11 +2,11 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.14 2000/10/26 06:15:04 kuriyama Exp $
+# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.15 2000/10/27 08:14:08 shige Exp $
 #
 
 PORTNAME=	iso8879
-PORTVERSION= 	1986
+PORTVERSION=	1986
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 DISTNAME=	isoENTS
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 RUN_DEPENDS=	${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
 EXTRACT_ONLY=	# empty
-NO_BUILD=       yes
+NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 PLIST_SUB=	DTD_NAME=${PORTNAME} MKCATALOG=${MKCATALOG}
 

@@ -3,25 +3,25 @@
 # Date created:                         2 Nov 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/webglimpse/Makefile,v 1.12 2000/04/10 00:07:16 cpiazza Exp $
+# $FreeBSD: ports/www/webglimpse/Makefile,v 1.13 2000/05/06 01:54:58 ache Exp $
 #
 
 PORTNAME=	webglimpse
-PORTVERSION= 	1.6
-CATEGORIES=     www textproc
-MASTER_SITES=   ftp://ftp.deva.net/pub/sources/ir/glimpse/
+PORTVERSION=	1.6
+CATEGORIES=	www textproc
+MASTER_SITES=	ftp://ftp.deva.net/pub/sources/ir/glimpse/
 DISTNAME=	${PKGNAME}.src
 
-MAINTAINER=     ache@freebsd.org
+MAINTAINER=	ache@freebsd.org
 
-RUN_DEPENDS+=   ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
-RUN_DEPENDS+=   glimpse:${PORTSDIR}/textproc/glimpse
+RUN_DEPENDS+=	${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
+RUN_DEPENDS+=	glimpse:${PORTSDIR}/textproc/glimpse
 
-WRKSRC=         ${WRKDIR}/webglimpse-1.6.edu
+WRKSRC=		${WRKDIR}/webglimpse-1.6.edu
 
 NO_CDROM=	depends on glimpse
-USE_PERL5=      YES
-NO_BUILD=       YES
+USE_PERL5=	yes
+NO_BUILD=	yes
 
 pre-configure:
 .for i in wginstall wginstall.pl

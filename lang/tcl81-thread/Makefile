@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.13 2000/10/08 03:00:47 asami Exp $
+# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.14 2001/01/01 10:15:04 will Exp $
 #
 
 PORTNAME=	tcl-thread
@@ -20,8 +20,8 @@ INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-threads
-CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
-PKGINSTALL=     ${PORTSDIR}/lang/tcl82/pkg/pkg-install.tclsh
+CONFIGURE_ENV=	PORTSDIR=${PORTSDIR}
+PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/pkg-install.tclsh
 PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/pkg-deinstall.tclsh
 
 MAN1=	tclsh.1

@@ -2,13 +2,13 @@
 # Date created:			24 Jul, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/print/enscript-letter/Makefile,v 1.10 2000/04/09 17:40:03 cpiazza Exp $
+# $FreeBSD: ports/print/enscript-letter/Makefile,v 1.11 2000/04/09 17:49:35 cpiazza Exp $
 #
 
 PORTNAME=	enscript-${PAPERSIZE}
 PORTVERSION=	1.6.1
 CATEGORIES=	print
-MASTER_SITES=   ${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	enscript
 DISTNAME=	enscript-${PORTVERSION}
 
@@ -17,7 +17,7 @@ MAINTAINER=	kline@thought.org
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--disable-nls --with-media=${PS}
-MAKE_FLAGS=     WIDTH=${WIDTH} HEIGHT=${HEIGHT} A4_PAPERSIZE=${A4_PAPERSIZE} -f
+MAKE_FLAGS=	WIDTH=${WIDTH} HEIGHT=${HEIGHT} A4_PAPERSIZE=${A4_PAPERSIZE} -f
 
 MAN1=		diffpp.1 enscript.1 sliceprint.1 states.1
 STRIP=

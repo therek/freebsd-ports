@@ -2,7 +2,7 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.4 2000/07/18 16:07:29 kevlo Exp $
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.5 2000/12/15 08:01:52 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -24,7 +24,7 @@ ONLY_FOR_ARCHS=	i386
 
 USE_BZIP2=	YES
 WRKSRC=		${WRKDIR}/jdk1.2.2
-NO_BUILD=       yes
+NO_BUILD=	yes
 
 do-install:
 	${MKDIR} ${PREFIX}/linux-jdk1.2.2

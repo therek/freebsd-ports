@@ -2,11 +2,11 @@
 # Date created:		Sept 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/html/Makefile,v 1.9 2000/10/11 09:12:38 kuriyama Exp $
+# $FreeBSD: ports/textproc/html/Makefile,v 1.10 2000/10/27 15:32:58 shige Exp $
 #
 
 PORTNAME=	html
-PORTVERSION= 	4.01
+PORTVERSION=	4.01
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	kuriyama
@@ -16,8 +16,8 @@ MAINTAINER=	kuriyama@FreeBSD.org
 
 RUN_DEPENDS=	${MKCATALOG}:${PORTSDIR}/textproc/mkcatalog
 
-NO_MTREE=       yes
-NO_BUILD=       yes
+NO_MTREE=	yes
+NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
 PLIST_SUB=	DTD_NAME=${PORTNAME} MKCATALOG=${MKCATALOG}
 

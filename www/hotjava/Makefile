@@ -2,11 +2,11 @@
 # Date created:		1999/07/03
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/www/hotjava/Makefile,v 1.5 2000/04/10 00:05:20 cpiazza Exp $
+# $FreeBSD: ports/www/hotjava/Makefile,v 1.6 2000/04/14 18:40:29 knu Exp $
 #
 
 PORTNAME=	hotjava
-PORTVERSION= 	3.0
+PORTVERSION=	3.0
 CATEGORIES=	www java
 MASTER_SITES=
 DISTNAME=	hjb3_0-linux.sfx
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
 EXTRACT_ONLY=
 
 NO_WRKSUBDIR=	yes
-JDK_VERSION=    1.1.8
+JDK_VERSION=	1.1.8
 NO_BUILD=	yes
 NO_CDROM=	"See the licence"
 RESTRICTED=	"Licenced for individual non-commercial use only"

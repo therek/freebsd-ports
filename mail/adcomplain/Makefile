@@ -2,25 +2,25 @@
 # Date created: 13 Sep 1997
 # Whom:         ache@FreeBSD.org
 #
-# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.30 1999/08/27 20:16:57 mharo Exp $
+# $FreeBSD: ports/mail/adcomplain/Makefile,v 1.31 2000/04/13 19:59:20 cpiazza Exp $
 #
 
 PORTNAME=	adcomplain
-PORTVERSION= 	3.52
-CATEGORIES=     mail news
-MASTER_SITES=   http://www.rdrop.com/users/billmc/
+PORTVERSION=	3.52
+CATEGORIES=	mail news
+MASTER_SITES=	http://www.rdrop.com/users/billmc/
 DISTNAME=	${PORTNAME}.pl
 EXTRACT_SUFX=	.uu
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
-USE_PERL5=      yes
+USE_PERL5=	yes
 
-EXTRACT_CMD=    /usr/bin/uudecode
-EXTRACT_BEFORE_ARGS=    <
+EXTRACT_CMD=	/usr/bin/uudecode
+EXTRACT_BEFORE_ARGS=	<
 EXTRACT_AFTER_ARGS=	# empty
-NO_WRKSUBDIR=	YES
-NO_BUILD=       YES
+NO_WRKSUBDIR=	yes
+NO_BUILD=	yes
 
 post-patch:
 	cd ${WRKSRC}; \

@@ -2,14 +2,14 @@
 # Date created:         30 October 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/gadfly/Makefile,v 1.5 2000/09/08 12:23:48 tg Exp $
+# $FreeBSD: ports/databases/gadfly/Makefile,v 1.6 2000/09/14 12:05:41 tg Exp $
 #
 
 PORTNAME=	gadfly
 PORTVERSION=	1.0
 CATEGORIES=	databases
 MASTER_SITES=	http://www.chordate.com/kwParsing/
-DISTNAME=       kwP
+DISTNAME=	kwP
 
 MAINTAINER=	ports@FreeBSD.org
 

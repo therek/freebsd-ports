@@ -2,7 +2,7 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.44 2001/01/11 21:45:04 andreas Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.45 2001/01/12 18:29:07 andreas Exp $
 #
 
 PORTNAME=	zebra
@@ -34,7 +34,7 @@ post-clean:
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400014
-PLIST:=         ${WRKDIR}/PLIST
+PLIST:=		${WRKDIR}/PLIST
 pre-install:
 	@${CAT} ${PKGDIR}/pkg-plist.v6 ${PKGDIR}/pkg-plist > ${PLIST}
 .else

@@ -2,7 +2,7 @@
 # Date created:         14 Jul 2000
 # Whom:                 JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.4 2000/09/05 09:04:27 steve Exp $
+# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.5 2000/12/24 14:35:58 cjh Exp $
 #
 
 PORTNAME=	mod_fastcgi
@@ -13,8 +13,8 @@ DISTNAME=	mod_fastcgi_${PORTVERSION}
 
 MAINTAINER=	hollywar@mail.holywar.net
 
-BUILD_DEPENDS=  ${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
-RUN_DEPENDS=    ${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 do-patch:
 	cd ${WRKSRC} ; ${MV} Makefile.tmpl Makefile ;

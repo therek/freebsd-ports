@@ -2,7 +2,7 @@
 # Date created:			Sun Feb 3, 1999
 # Whom:				shipley@dis.org
 #
-# $FreeBSD: ports/net/libnet/Makefile,v 1.7 2000/04/20 20:06:47 mharo Exp $
+# $FreeBSD: ports/net/libnet/Makefile,v 1.8 2000/06/02 22:51:19 kris Exp $
 #
 
 PORTNAME=	libnet
@@ -16,7 +16,7 @@ MAN3=		libnet.3
 
 GNU_CONFIGURE=	yes
 
-WRKSRC=         ${WRKDIR}/Libnet-${PORTVERSION}
+WRKSRC=		${WRKDIR}/Libnet-${PORTVERSION}
 MAN3=		libnet.3
 
 post-install:

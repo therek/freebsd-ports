@@ -2,10 +2,10 @@
 # Date created:         07 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xsok/Makefile,v 1.11 2000/08/13 19:46:38 alex Exp $
+# $FreeBSD: ports/games/xsok/Makefile,v 1.12 2000/09/16 17:55:13 ade Exp $
 #
 
-PORTNAME=       xsok
+PORTNAME=	xsok
 PORTVERSION=	1.02
 CATEGORIES=	games
 MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin.X11/ \

@@ -2,11 +2,11 @@
 # Date created:		5 March 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.13 2000/06/16 08:19:08 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.14 2000/06/16 21:52:22 asami Exp $
 #
 
 PORTNAME=	slingshot
-PORTVERSION= 	2.1
+PORTVERSION=	2.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}/sspkg2.1
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
-MAKE_ENV=       OPENWINHOME=${X11BASE}
+MAKE_ENV=	OPENWINHOME=${X11BASE}
 
 pre-patch:
 	${CP} ${WRKSRC}/config.sunos4x ${WRKSRC}/config.fbsd

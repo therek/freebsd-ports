@@ -2,14 +2,14 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.41 2000/10/08 10:23:11 asami Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.42 2001/01/01 10:15:16 will Exp $
 #
 
 PORTNAME?=	netscape
-PORTVERSION?= 	3.04
+PORTVERSION?=	3.04
 CATEGORIES=	www
 MASTER_SITES?=	ftp://archive:oldies@archive.netscape.com/archive/navigator/3.04/shipping/english/unix/bsdi11/navigator_complete/
-DISTFILES=      netscape-v304-export.x86-unknown-bsd.tar.gz
+DISTFILES=	netscape-v304-export.x86-unknown-bsd.tar.gz
 
 MAINTAINER=	sada@FreeBSD.org
 
@@ -26,7 +26,7 @@ PKGREQ=		${PORTSDIR}/www/netscape4-communicator/pkg-req.aout
 MASTER_SITES+=	ftp://ftp.fortify.net/pub/Fortify/ \
 		ftp://ftp.za.freebsd.org/pub/Fortify/
 DISTFILES+=	${FORTIFY}.tar.gz
-RESTRICTED=     "Contains strong cryptography"
+RESTRICTED=	"Contains strong cryptography"
 .endif
 
 FORTIFY=	Fortify-1.4.6-unix-x86

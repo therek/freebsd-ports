@@ -2,15 +2,15 @@
 # Date created:         Oct, 8 1998
 # Whom:                 cracauer
 #
-# $FreeBSD: ports/graphics/linux_mesa/Makefile,v 1.8 2000/02/23 00:51:07 asami Exp $
+# $FreeBSD: ports/graphics/linux_mesa/Makefile,v 1.9 2000/04/14 10:46:38 asami Exp $
 #
 
 PORTNAME=	mesa
 PORTVERSION=	2.6
 CATEGORIES=	graphics linux
-MASTER_SITES= 	ftp://iris.ssec.wisc.edu/pub/Mesa/old-versions/
+MASTER_SITES=	ftp://iris.ssec.wisc.edu/pub/Mesa/old-versions/
 PKGNAMEPREFIX=	linux_
-DISTNAME=       MesaLib-${PORTVERSION}
+DISTNAME=	MesaLib-${PORTVERSION}
 
 MAINTAINER=	cracauer@cons.org
 

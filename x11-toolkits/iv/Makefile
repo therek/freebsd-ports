@@ -2,11 +2,11 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.26 2000/06/16 21:52:17 asami Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.27 2000/08/11 06:34:43 asami Exp $
 #
 
 PORTNAME=	iv
-PORTVERSION= 	3.2a
+PORTVERSION=	3.2a
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://sgi.com/graphics/interviews/
 DISTNAME=	${PORTVERSION}
@@ -68,9 +68,9 @@ MANN=		Adjuster.n Banner.n BasicDialog.n Border.n \
 .include <bsd.port.pre.mk>
 
 .if ${PORTOBJFORMAT} == "elf"
-IV_LIB_VER=     3
+IV_LIB_VER=	3
 .else
-IV_LIB_VER=     3.2
+IV_LIB_VER=	3.2
 .endif
 
 .if ${OSVERSION} >= 400002

@@ -2,15 +2,15 @@
 # Date created:         22 September 1998
 # Whom:                 Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/net/ttt/Makefile,v 1.18 2000/06/09 08:39:09 kjc Exp $
+# $FreeBSD: ports/net/ttt/Makefile,v 1.19 2000/12/21 12:01:40 kjc Exp $
 #
 
 PORTNAME=	ttt
 PORTVERSION=	1.6
 CATEGORIES=	net tk83 ipv6
-MASTER_SITES=   ftp://ftp.csl.sony.co.jp/pub/kjc/
+MASTER_SITES=	ftp://ftp.csl.sony.co.jp/pub/kjc/
 
-MAINTAINER=     kjc@csl.sony.co.jp
+MAINTAINER=	kjc@csl.sony.co.jp
 
 # the tcl/tk LIB_DEPENDS has to match that of ports/x11-toolkits/blt.
 LIB_DEPENDS=	BLT24.2:${PORTSDIR}/x11-toolkits/blt \

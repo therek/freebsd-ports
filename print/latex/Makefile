@@ -2,13 +2,13 @@
 # Date created:         29 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/latex/Makefile,v 1.44 2000/04/09 17:40:32 cpiazza Exp $
+# $FreeBSD: ports/print/latex/Makefile,v 1.45 2000/04/09 17:50:02 cpiazza Exp $
 #
 
 PORTNAME=	latex2e
 PORTVERSION=	99.12
-CATEGORIES=     print
-MASTER_SITES=   ftp://ftp.freesoftware.com/pub/tex/package/
+CATEGORIES=	print
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/tex/package/
 DISTFILES=	latex_mf-${PORTVERSION}.tar.gz latex_tfm-${PORTVERSION}.tar.gz \
 		latex_base-${PORTVERSION}.tar.gz latex_tools-${PORTVERSION}.tar.gz \
 		latex_graphics-${PORTVERSION}.tar.gz latex_psnfss-${PORTVERSION}.tar.gz
