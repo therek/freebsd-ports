@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.243 1999/12/29 09:09:07 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.244 1999/12/30 12:38:53 jedgar Exp $
 #
 
     SUBDIR += ElectricFence
@@ -43,6 +43,7 @@
     SUBDIR += elftoaout
     SUBDIR += f77flow
     SUBDIR += fastcrc
+    SUBDIR += fhist
     SUBDIR += flick
     SUBDIR += fortran-utils
     SUBDIR += fpp
