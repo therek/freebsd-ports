@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.43 2002/07/05 09:14:53 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.44 2002/09/03 09:08:28 joe Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -96,9 +96,15 @@ TARGETS+=	tags
 
 .for __target in ${TARGETS}
 .if !target(${__target})
+.if defined(SUBDIR) && !empty(SUBDIR)
 ${__target}: ${SUBDIR:S/$/.${__target}/}
+.else
+${__target}:
+.endif
 .endif
 .endfor
+
+.if defined(SUBDIR) && !empty(SUBDIR)
 
 .for __target in ${TARGETS} checksubdirs readmes
 ${SUBDIR:S/$/.${__target}/}: _SUBDIRUSE
@@ -128,6 +134,8 @@ _SUBDIRUSE: .USE
 	fi
 
 ${SUBDIR}:: ${SUBDIR:S/$/.all/}
+
+.endif
 
 .if !target(install)
 .if !target(beforeinstall)
