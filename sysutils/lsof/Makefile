@@ -3,7 +3,7 @@
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.72 2000/11/06 19:28:33 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.73 2000/11/08 16:18:59 obrien Exp $
 #
 
 PORTNAME=	lsof
@@ -27,7 +27,7 @@ WRKSRC=		${WRKDIR}/${SRCBALL_NAME}
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	Configure
 CONFIGURE_ARGS=	-n freebsd
-CONFIGURE_ENV=	LSOF_CC=${CC}
+CONFIGURE_ENV=	LSOF_CC="${CC}"
 MAN8=		lsof.8
 
 .if defined(PACKAGE_BUILDING)
