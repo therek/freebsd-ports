@@ -2,7 +2,7 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.17 2003/11/03 16:50:03 fjoe Exp $
+# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.18 2004/03/13 21:29:24 silby Exp $
 
 vmware_config_file=@@PREFIX@@/etc/vmware/config
 
