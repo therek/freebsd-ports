@@ -2,7 +2,7 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.14 2000/10/12 07:39:45 reg Exp $
+# $FreeBSD: ports/audio/lame/Makefile,v 1.15 2000/10/29 13:30:39 lioux Exp $
 #
 
 PORTNAME=	lame
@@ -16,7 +16,6 @@ MAINTAINER=	yoshiaki@kt.rim.or.jp
 USE_GMAKE=	yes
 WANT_GTK=	yes
 ALL_TARGET=	lame
-RESTRICTED=	Condition is not clear
 
 MAN1=		lame.1
 
