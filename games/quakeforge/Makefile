@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/games/quakeforge/Makefile,v 1.6 2000/05/18 09:27:12 sobomax Exp $
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.7 2000/05/18 15:14:00 sobomax Exp $
 #
 
 PORTNAME=	QuakeForge
@@ -36,7 +36,7 @@ CONFIGURE_ENV=	"SDL_LIBS=`sdl-config --libs`" \
 		"SDL_CFLAGS=`sdl-config --cflags`"
 
 .if defined(USE_GLX)
-GL_DEPENDS=	GL.1:${PORTSDIR}/graphics/glx
+GL_DEPENDS=	GL.1:${PORTSDIR}/graphics/utah-glx
 BINARIES+=      quake-gl qw-client-gl
 .else
 GL_DEPENDS=
