@@ -2,14 +2,13 @@
 # Date created:		30 Sep 1999
 # Whom:			Andrew Stevenson <andrew@ugh.net.au>
 #
-# $FreeBSD: ports/mail/newmail/Makefile,v 1.2 2000/04/13 20:00:15 cpiazza Exp $
+# $FreeBSD: ports/mail/newmail/Makefile,v 1.3 2001/02/05 15:10:57 olgeni Exp $
 #
 
 PORTNAME=	newmail
 PORTVERSION=	1.0.1
 CATEGORIES=	mail
-MASTER_SITES=	ftp://ftp.ugh.net.au/pub/unix/newmail/ \
-		ftp://css.tuu.utas.edu.au/pub/unix/newmail/
+MASTER_SITES=	ftp://ftp.ugh.net.au/pub/unix/newmail/
 
 MAINTAINER=	andrew@ugh.net.au
 
