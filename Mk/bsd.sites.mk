@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.235 2004/05/22 13:14:53 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.236 2004/05/23 17:26:42 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -771,7 +771,7 @@ MASTER_SITE_SOURCEWARE+= \
 	ftp://ftp1.sinica.edu.tw/pub3/GNU/CYGNUS/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/sources.redhat.com/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/gnu/sourceware/%SUBDIR%/ \
-	ftp://ftp.unina.it/pub/Unix/cygnus/%SUBDIR%/
+	http://sourceware.urc.bl.ac.yu/%SUBDIR%/
 
 MASTER_SITE_SUNSITE+=	\
 	http://www.ibiblio.org/pub/Linux/%SUBDIR%/ \
