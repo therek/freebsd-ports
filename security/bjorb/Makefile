@@ -3,7 +3,7 @@
 # Date created:		May 16, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/security/bjorb/Makefile,v 1.8 1999/08/31 06:50:02 mharo Exp $
+# $FreeBSD: ports/security/bjorb/Makefile,v 1.9 1999/11/07 22:25:33 dirk Exp $
 #
 
 DISTNAME=	bjorb-0.5.5p1
@@ -35,9 +35,9 @@ RESTRICTED=	"Cryptography"
 INSTALL_TARGET=		install certificate
 .endif
 
-HAS_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 CFLAGS+=	-I${PREFIX}/include/openssl
-CONFIGURE_ARGS=	--with-ssltop=${PREFIX}
+CONFIGURE_ARGS=	--with-ssltop=${PREFIX} --with-ssllib=${PREFIX}/lib
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 DOCSRC=		${WRKDIR}/${DISTNAME}
 DOCS=		ChangeLog \
