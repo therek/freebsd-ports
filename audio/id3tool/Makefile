@@ -2,13 +2,13 @@
 # Date created:				Apr 1, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/audio/id3tool/Makefile,v 1.1 2001/04/07 06:09:14 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id3tool
-PORTVERSION=	1.1f
+PORTVERSION=	1.2
 CATEGORIES=	audio
-MASTER_SITES=	http://kitsumi.xware.cx/id3tool/
+MASTER_SITES=	http://nekohako.xware.cx/id3tool/
 
 MAINTAINER=	markp@FreeBSD.org
 
