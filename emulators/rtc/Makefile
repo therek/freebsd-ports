@@ -2,11 +2,11 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.3 2000/04/14 20:13:54 knu Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.4 2000/05/06 12:49:51 knu Exp $
 #
 
 PORTNAME=	rtc
-PORTVERSION=	2000.05.05
+PORTVERSION=	2000.08.24
 CATEGORIES=	emulators linux
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -43,6 +43,12 @@ do-extract:
 	@${SED}	-e 's,@@PREFIX@@,${PREFIX},' \
 		${FILESDIR}/${STARTUP} > ${WRKDIR}/${STARTUP}
 	@cd ${FILESDIR} && ${CP} Makefile *.[ch] ${WRKSRC}/
+
+post-patch:
+.if !exists(/sys/compat/linux/linux_ioctl.h)
+	${PERL} -i -pe 's,compat(/linux/linux_ioctl\.h),i386$$1,' \
+		${WRKSRC}/rtc_linux.c
+.endif
 
 pre-install:
 	${MKDIR} ${KMODDIR}
