@@ -3,7 +3,7 @@
 # Date created:		20 December 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/palm/isilo/Makefile,v 1.2 1999/12/27 15:30:34 billf Exp $
+# $FreeBSD: ports/palm/isilo/Makefile,v 1.3 2000/01/26 07:16:18 sumikawa Exp $
 #
 
 DISTNAME=	iSilo386
@@ -16,6 +16,7 @@ MAINTAINER=	nik@FreeBSD.org
 USE_ZIP=	yes
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
+ONLY_FOR_ARCHS=	i386
 
 MAN1=		iSilo386.1
 MANCOMPRESSED=	no
