@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  5 10:54:25 CDT 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/audio/xmmix/Makefile,v 1.10 2000/04/23 22:59:15 kris Exp $
+# $FreeBSD: ports/audio/xmmix/Makefile,v 1.11 2000/11/07 23:27:54 asami Exp $
 #
 
 PORTNAME=	xmmix
@@ -17,5 +17,8 @@ USE_IMAKE=	yes
 USE_MOTIF=	yes
 
 MAN1=		xmmix.1
+
+post-patch:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/XMmix.ad
 
 .include <bsd.port.mk>
