@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.45 2001/04/10 04:38:14 trevor Exp $
+# $FreeBSD$
 #
 
 # Where to put distfiles that don't have any other master site
@@ -208,6 +208,7 @@ MASTER_SITE_SOURCEWARE+= \
 
 MASTER_SITE_SOURCEFORGE+= \
 	ftp://ftp2.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://prdownloads.sourceforge.net/%SUBDIR%/ \
 	http://ftp2.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp3.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
 	http://ftp3.sourceforge.net/%SUBDIR%/ \
