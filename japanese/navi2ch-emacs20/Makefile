@@ -2,11 +2,12 @@
 # Date created:		13 May 2001
 # Whom:			FUJISHIMA Satsuki <sf@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/navi2ch-emacs20/Makefile,v 1.16 2001/08/31 22:47:41 sf Exp $
+# $FreeBSD: ports/japanese/navi2ch-emacs20/Makefile,v 1.17 2001/09/09 20:52:27 sf Exp $
 #
 
 PORTNAME=	navi2ch
 PORTVERSION=	010909
+PORTREVISION=	1
 CATEGORIES=	japanese www elisp
 MASTER_SITES=	http://www.geocities.co.jp/SiliconValley-Oakland/7673/lisp/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
