@@ -2,7 +2,7 @@
 # Date created:		8 March 2000
 # Whom:			Tatsuya Kudoh (CDR/TK)
 #
-# $FreeBSD: ports/japanese/xmsgsaver/Makefile,v 1.1 2000/05/01 02:54:03 steve Exp $
+# $FreeBSD: ports/japanese/xmsgsaver/Makefile,v 1.2 2001/09/25 09:34:41 sf Exp $
 #
 
 PORTNAME=	xmsgsaver
