@@ -2,18 +2,20 @@
 # Date created:        16 April 1999
 # Whom:                Doug Ambrisko <ambrisko@whistle.com>
 #
-# $FreeBSD: ports/net/etherboot/Makefile,v 1.13 2000/10/08 10:22:29 asami Exp $
+# $FreeBSD: ports/net/etherboot/Makefile,v 1.14 2000/12/11 02:22:33 steve Exp $
 #
 
 PORTNAME=	etherboot
-PORTVERSION=	4.6.10
+PORTVERSION=	4.7.21
+CATEGORIES=	net
+#MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+#use development sources for now instead of standard ftp site.
+MASTER_SITES=	http://etherboot.sourceforge.net/
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ambrisko@whistle.com
-
-BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 NO_PACKAGE=	lots of configuration necessary
 USE_GMAKE=1
