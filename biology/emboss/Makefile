@@ -2,11 +2,11 @@
 # Date created:		31 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/emboss/Makefile,v 1.1 2000/07/31 19:13:53 nbm Exp $
 #
 
 PORTNAME=	emboss
-PORTVERSION=	1.0.0
+PORTVERSION=	1.1.0
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.uk.embnet.org/pub/EMBOSS/
 DISTNAME=	EMBOSS-${PORTVERSION}
@@ -22,5 +22,21 @@ USE_LIBTOOL=	yes
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/gd" \
 		LIBS="-L${LOCALBASE}/lib"
+
+post-install:
+	@ ${INSTALL_DATA} ${WRKSRC}/emboss/acd/emboss.default \
+	  ${PREFIX}/etc/emboss.default.sample
+.if !defined(BATCH)
+	@ ${CAT} ${PKGMESSAGE}
+.endif
+
+DOC_DIRS= doc/manuals doc/tutorials doc/programs/text doc/programs/html
+
+post-patch:
+.for DIR in ${DOC_DIRS}
+	@perl -pi.orig -e \
+		"s#share/\\$$\(PACKAGE\)/doc#share/doc/\\$$\(PACKAGE\)#" \
+		${WRKSRC}/${DIR}/Makefile.in
+.endfor
 
 .include <bsd.port.mk>
