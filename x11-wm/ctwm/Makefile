@@ -2,13 +2,13 @@
 # Date created:		13 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/x11-wm/ctwm/Makefile,v 1.28 2001/09/17 17:40:31 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ctwm
 PORTVERSION=	3.5.2c
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://slhp1.epfl.ch/public/ctwm/
+MASTER_SITES=	http://slpc1.epfl.ch/public/software/ctwm/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ctwm-images${EXTRACT_SUFX}
 
 MAINTAINER=	ports@FreeBSD.org
