@@ -2,7 +2,7 @@
 # Date created:				21 February 2000
 # Whom:	      				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/graphics/p5-GD-TextUtil/Makefile,v 1.3 2000/11/12 02:39:40 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-GD-TextUtil/Makefile,v 1.4 2000/11/13 12:43:49 demon Exp $
 #
 
 PORTNAME=	GD-TextUtil
@@ -17,12 +17,9 @@ MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		GD::Text.3 GD::Text::Wrap.3 GD::Text::Align.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.6 2000/12/21 09:38:54 will Exp $
+# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.7 2001/02/05 15:33:41 olgeni Exp $
 #
 
 PORTNAME=	HTML-Embperl
@@ -16,14 +16,10 @@ MAINTAINER=	kapr@crosswinds.net
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/p5-Apache
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 IS_INTERACTIVE=	yes
 
 MAN3=		HTML::Embperl.3 HTML::EmbperlD.3 HTML::EmbperlObject.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			${LOCALBASE}/sbin CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:37:55 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/p5-Convert-Morse/Makefile,v 1.1 2001/01/03 23:25:14 will Exp $
 #
 
 PORTNAME=	Convert-Morse
@@ -22,7 +22,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 NO_WRKSUBDIR=	yes
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:		February 7, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.5 2000/04/21 07:51:51 mharo Exp $
+# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.6 2000/05/21 11:52:05 knu Exp $
 #
 
 PORTNAME=	News-Newsrc
@@ -16,12 +16,9 @@ MAINTAINER=	croyle@gelemna.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Set/IntSpan.pm:${PORTSDIR}/math/p5-Set-IntSpan
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		News::Newsrc.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

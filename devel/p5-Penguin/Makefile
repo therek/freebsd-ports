@@ -2,7 +2,7 @@
 # Date created:				May 28th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Penguin/Makefile,v 1.6 2000/04/11 21:29:46 mharo Exp $
+# $FreeBSD: ports/devel/p5-Penguin/Makefile,v 1.7 2000/10/23 21:02:54 will Exp $
 #
 
 PORTNAME=	Penguin
@@ -16,10 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 
-USE_PERL5=	YES
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+PERL_CONFIGURE=	YES
 
 post-install:
 		${MKDIR} ${PREFIX}/lib/perl5/site_perl/Penguin/bin ${PREFIX}/lib/perl5/site_perl/Penguin/misc ${PREFIX}/lib/perl5/site_perl/Penguin/doc

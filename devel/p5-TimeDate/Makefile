@@ -2,7 +2,7 @@
 # Date created:			Mon Sep  1 17:03:41 CEST 1997
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.12 2000/10/14 12:27:12 kuriyama Exp $
+# $FreeBSD: ports/devel/p5-TimeDate/Makefile,v 1.13 2000/11/13 12:43:40 demon Exp $
 #
 
 PORTNAME=	TimeDate
@@ -14,15 +14,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Date::Format.3 \
 		Date::Parse.3 \
 		Time::Zone.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

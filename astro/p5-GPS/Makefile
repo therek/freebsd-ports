@@ -2,7 +2,7 @@
 # Date created:			5 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/p5-GPS/Makefile,v 1.1 2000/12/06 05:43:03 will Exp $
 
 PORTNAME=	GPS
 PORTVERSION=	0.12
@@ -14,14 +14,11 @@ DISTNAME=	perl-GPS-${PORTVERSION}
 
 MAINTAINER=	jeremy@external.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		GPS::Garmin.3 \
 		GPS::Serial.3 \
 		GPS::Garmin::Handler.3
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

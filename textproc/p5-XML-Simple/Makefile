@@ -2,7 +2,7 @@
 # Date created:				October 10th 2000
 # Whom:	      				Andrew <andrew@ugh.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-XML-Simple/Makefile,v 1.1 2000/10/20 23:11:48 ade Exp $
 #
 
 PORTNAME=	XML-Simple
@@ -16,12 +16,9 @@ MAINTAINER=	andrew@ugh.net.au
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		XML::Simple.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

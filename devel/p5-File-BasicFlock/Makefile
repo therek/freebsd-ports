@@ -2,7 +2,7 @@
 # Date created:				1996/10/24
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.14 2000/04/22 22:25:10 vanilla Exp $
+# $FreeBSD: ports/devel/p5-File-BasicFlock/Makefile,v 1.15 2000/10/23 21:02:47 will Exp $
 #
 
 PORTNAME=	File-BasicFlock
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		File::BasicFlock.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

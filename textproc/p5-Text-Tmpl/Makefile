@@ -2,7 +2,7 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-Text-Tmpl/Makefile,v 1.1 2000/12/31 05:45:45 will Exp $
 #
 
 PORTNAME=	Text-Tmpl
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		template_syntax.3 Text::Tmpl.3 template_extend.3

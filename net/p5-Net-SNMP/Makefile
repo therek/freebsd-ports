@@ -2,7 +2,7 @@
 # Date created:				30 June 2000
 # Whom:					Christopher N. Harrell <cnh@ivmg.net>
 #
-# $FreeBSD: ports/net/p5-Net-SNMP/Makefile,v 1.1 2000/07/06 20:55:28 will Exp $
+# $FreeBSD: ports/net/p5-Net-SNMP/Makefile,v 1.2 2001/02/26 13:03:49 kevlo Exp $
 #
 
 PORTNAME=	Net-SNMP
@@ -16,7 +16,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-3.6
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Net::SNMP.3

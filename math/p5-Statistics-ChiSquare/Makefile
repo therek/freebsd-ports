@@ -2,7 +2,7 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-Statistics-ChiSquare/Makefile,v 1.1 2001/01/03 09:35:25 nbm Exp $
 #
 
 PORTNAME=	Statistics-ChiSquare
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/Statistics/ChiSquare

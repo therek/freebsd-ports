@@ -2,7 +2,7 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-GdkImlib/Makefile,v 1.3 2000/12/09 02:52:21 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/p5-GdkImlib/Makefile,v 1.4 2001/02/05 16:49:05 olgeni Exp $
 #
 
 PORTNAME=	GdkImlib
@@ -17,12 +17,8 @@ MAINTAINER=	vanilla@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
 
-USE_PERL5=	yes
 USE_IMLIB=	yes
+PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-	CC="${CC}" CCFLAGS="${CFLAGS} -L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

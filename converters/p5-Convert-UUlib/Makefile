@@ -2,7 +2,7 @@
 # Date created:				November 19th 2000
 # Whom:					Blaz Zupan <blaz@amis.net>
 #
-# $FreeBSD: ports/converters/p5-Convert-UUlib/Makefile,v 1.1 2000/12/19 10:39:57 will Exp $
+# $FreeBSD: ports/converters/p5-Convert-UUlib/Makefile,v 1.2 2001/02/05 14:30:41 olgeni Exp $
 #
 
 PORTNAME=	Convert-UUlib
@@ -15,14 +15,10 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	blaz@amis.net
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Convert::UUlib.3
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

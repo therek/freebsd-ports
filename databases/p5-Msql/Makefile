@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.24 2000/04/08 22:48:43 mharo Exp $
+# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.25 2000/10/23 21:02:43 will Exp $
 #
 
 PORTNAME=	p5-Msql-modules
@@ -18,17 +18,13 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/libmsql.a:${PORTSDIR}/databases/msql \
 		${LOCALBASE}/lib/perl5/site_perl/Data/ShowTable.pm:${PORTSDIR}/devel/p5-Data-ShowTable \
 		${LOCALBASE}/lib/perl5/site_perl/DBI.pm:${PORTSDIR}/databases/p5-DBI
 
-CONFIGURE_ENV+=	PREFIX=${PREFIX} MSQL_HOME=${PREFIX}
+BROKEN=		DEPENDS on databases/msql which is currently BROKEN, also perl5 upgrade
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
+CONFIGURE_ENV+=	PREFIX=${PREFIX} MSQL_HOME=${PREFIX}
 
 MAN1=		pmsql.1 dbimon.1
 MAN3=		Msql.3 DBD::mSQL.3
 MAN3PREFIX=	${PREFIX}/lib/perl5
-
-BROKEN=		DEPENDS on databases/msql which is currently BROKEN, also perl5 upgrade
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

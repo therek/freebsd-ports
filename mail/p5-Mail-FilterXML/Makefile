@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 14:28:38 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-FilterXML/Makefile,v 1.1 2001/01/03 23:36:10 will Exp $
 #
 
 PORTNAME=	Mail-FilterXML
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Mail/Audit.pm:${PORTSDIR}/mail/p5-Mail-Audit \
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

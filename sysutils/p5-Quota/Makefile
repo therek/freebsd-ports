@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 09:06:26 2001
 # Whom:					will
 #
-# $FreeBSD: ports/sysutils/p5-Quota/Makefile,v 1.1 2001/01/03 23:54:10 will Exp $
+# $FreeBSD: ports/sysutils/p5-Quota/Makefile,v 1.2 2001/02/26 15:30:57 kevlo Exp $
 #
 
 PORTNAME=	Quota
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				10th September 2000
 # Whom:					Ilia Chipitsine <ilia@jane.cgu.chel.su>
 #
-# $FreeBSD: ports/converters/p5-Unicode-String/Makefile,v 1.1 2000/09/19 16:56:31 ade Exp $
+# $FreeBSD: ports/converters/p5-Unicode-String/Makefile,v 1.2 2000/09/20 19:07:00 will Exp $
 #
 
 PORTNAME=	Unicode-String
@@ -16,14 +16,9 @@ MAINTAINER=	ilia@cgu.chel.su
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Unicode::CharName.3 Unicode::String.3
-
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

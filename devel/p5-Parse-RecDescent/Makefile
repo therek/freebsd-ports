@@ -2,7 +2,7 @@
 # Date created:				July 9th 1999
 # Whom:	      				Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.7 2000/09/23 18:47:27 will Exp $
+# $FreeBSD: ports/devel/p5-Parse-RecDescent/Makefile,v 1.8 2000/12/15 03:07:25 vanilla Exp $
 #
 
 PORTNAME=	Parse-RecDescent
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	gehicks@cisco.com
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Parse::RecDescent.3 Text::Balanced.3
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

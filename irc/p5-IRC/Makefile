@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.9 2000/06/17 02:36:32 will Exp $
+# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.10 2000/07/22 10:44:47 vanilla Exp $
 #
 
 PORTNAME=	Net-IRC
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jedgar@fxp.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		\
@@ -22,8 +22,5 @@ MAN3=		\
 		Net::DCC.3 \
 		Net::Event.3 \
 		Net::IRC.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

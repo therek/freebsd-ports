@@ -2,7 +2,7 @@
 # Date created:				13th September 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-DateConvert/Makefile,v 1.1 2000/09/13 15:56:39 ade Exp $
+# $FreeBSD: ports/devel/p5-DateConvert/Makefile,v 1.2 2000/11/03 16:19:28 ade Exp $
 #
 
 PORTNAME=	DateConvert
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Date::Convert.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

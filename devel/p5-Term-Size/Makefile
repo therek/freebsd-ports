@@ -2,7 +2,7 @@
 # Date created:				6 December 2000
 # Whom:	      				Brad Jones <brad@kazrak.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Term-Size/Makefile,v 1.1 2000/12/19 12:22:58 will Exp $
 #
 
 PORTNAME=	Term-Size
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	brad@kazrak.com
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Term::Size.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

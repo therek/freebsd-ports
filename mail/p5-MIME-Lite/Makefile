@@ -2,7 +2,7 @@
 # Date created:				August 3, 1999
 # Whom:	      				Alex Perel <veers@disturbed.net>
 #
-# $FreeBSD: ports/mail/p5-MIME-Lite/Makefile,v 1.6 2000/07/22 10:44:48 vanilla Exp $
+# $FreeBSD: ports/mail/p5-MIME-Lite/Makefile,v 1.7 2000/11/12 02:45:43 vanilla Exp $
 #
 
 PORTNAME=	MIME-Lite
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	veers@disturbed.net
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		MIME::Lite.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			10 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/p5-Xmms/Makefile,v 1.1 2000/12/19 09:41:17 will Exp $
 
 PORTNAME=	Xmms
 PORTVERSION=	0.10
@@ -21,16 +21,12 @@ BUILD_DEPENDS=	xmms:${PORTSDIR}/audio/xmms \
 
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Xmms::Remote.3 \
 		Xmms::SongChange.3 \
 		Xmms.3 \
 		Bundle::Xmms.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

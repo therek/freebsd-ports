@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 10:32:39 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Proc-Background/Makefile,v 1.1 2001/01/03 23:42:00 will Exp $
 #
 
 PORTNAME=	Proc-Background
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN1PREFIX=	${PREFIX}

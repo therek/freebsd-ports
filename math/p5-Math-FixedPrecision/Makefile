@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 11:03:30 2001
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-Math-FixedPrecision/Makefile,v 1.1 2001/01/03 23:40:09 will Exp $
+# $FreeBSD: ports/math/p5-Math-FixedPrecision/Makefile,v 1.2 2001/01/22 16:35:42 kevlo Exp $
 #
 
 PORTNAME=	Math-FixedPrecision
@@ -20,8 +20,7 @@ MAINTAINER=	ports@FreeBSD.org
 BROKEN=		"Needs Perl 5.6.0 for Math::BigFloat"
 .endif
 
-USE_PERL5=	yes
-PERL_CONFIGURE= yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Math::FixedPrecision.3

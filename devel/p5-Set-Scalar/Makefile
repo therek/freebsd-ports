@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Set-Scalar/Makefile,v 1.1 2001/01/04 00:08:13 will Exp $
+# $FreeBSD: ports/devel/p5-Set-Scalar/Makefile,v 1.2 2001/02/26 03:19:40 steve Exp $
 #
 
 PORTNAME=	Set-Scalar
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Set::Scalar.3 Set::Scalar::Real.3 Set::Scalar::Virtual.3 \

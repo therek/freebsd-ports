@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.4 2000/06/17 02:37:15 will Exp $
+# $FreeBSD: ports/www/p5-libapreq/Makefile,v 1.5 2001/01/16 17:33:04 sobomax Exp $
 #
 
 PORTNAME=	libapreq
@@ -15,17 +15,15 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	frank@exit.com
 
 BUILD_DEPENDS=	${LOCALBASE}/include/apache/httpd.h:${PORTSDIR}/www/apache13 \
-		${LOCALBASE}/include/apache/modules/perl/mod_perl.h:${PORTSDIR}/www/p5-Apache
+		${LOCALBASE}/include/apache/modules/perl/mod_perl.h:${PORTSDIR}/www/mod_perl
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
+INSTALLS_SHLIB=	yes
 
 MAN3=		Apache::Request.3 Apache::Cookie.3 libapreq.3 Apache::libapreq.3
-
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
+post-configure:
 	@${PERL} -i -p \
 		-e 's/^(CC = ).*/$$1 ${CC}/;' \
 		-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' \
@@ -34,6 +32,5 @@ do-configure:
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/blib/arch/auto/libapreq/libapreq.so \
 		${PREFIX}/lib
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

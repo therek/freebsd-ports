@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 10:06:12 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/p5-Astro-SunTime/Makefile,v 1.1 2001/01/03 23:22:39 will Exp $
 #
 
 PORTNAME=	Astro-SunTime
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Time/ParseDate.pm:${PORTSDIR}/devel/p5-Time
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 .include <bsd.port.mk>

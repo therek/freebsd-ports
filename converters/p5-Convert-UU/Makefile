@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/p5-Convert-UU/Makefile,v 1.25 2000/10/24 22:39:49 will Exp $
+# $FreeBSD: ports/converters/p5-Convert-UU/Makefile,v 1.26 2000/11/13 12:43:03 demon Exp $
 #
 
 PORTNAME=	Convert-UU
@@ -14,14 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN1=		puuencode.1 puudecode.1
 MAN3=		Convert::UU.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

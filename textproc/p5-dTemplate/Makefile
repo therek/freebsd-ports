@@ -2,7 +2,7 @@
 # Date created:			9 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-dTemplate/Makefile,v 1.1 2000/12/19 09:44:43 will Exp $
 
 PORTNAME=	dTemplate
 PORTVERSION=	1.0
@@ -13,10 +13,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jeremy@external.org
 
+PERL_CONFIGURE=	yes
+
 MAN3=		dTemplate.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

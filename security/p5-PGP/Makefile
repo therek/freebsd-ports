@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.18 2000/06/17 02:36:49 will Exp $
+# $FreeBSD: ports/security/p5-PGP/Makefile,v 1.19 2000/10/23 21:03:06 will Exp $
 #
 
 PORTNAME=	PGP
@@ -16,15 +16,12 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	pgp:${PORTSDIR}/security/pgp
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		PGP::Pipe.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 pre-configure:
 		@${CP} ${WRKSRC}/PGP/Pipe.pm ${WRKSRC}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Nov 14 2000
 # Whom:	      				Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/archivers/p5-Archive-Tar/Makefile,v 1.1 2000/12/19 09:48:13 will Exp $
+# $FreeBSD: ports/archivers/p5-Archive-Tar/Makefile,v 1.2 2001/01/01 13:53:11 will Exp $
 #
 
 PORTNAME=	Archive-Tar
@@ -16,7 +16,6 @@ MAINTAINER=	roman@xpert.com
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib
 
-USE_PERL5=	YES
 PERL_CONFIGURE=	YES
 
 MAN3=		Archive::Tar.3

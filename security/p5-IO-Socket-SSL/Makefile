@@ -2,7 +2,7 @@
 # Date created:				October 27th 2000
 # Whom:	      				Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-IO-Socket-SSL/Makefile,v 1.1 2000/10/28 00:23:12 scrappy Exp $
 #
 
 PORTNAME=	IO-Socket-SSL
@@ -18,12 +18,9 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/SSL
 
 RESTRICTED=	"Crypto; export-controlled"
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 $MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 $MAN3=		IO::Socket::SSL.3
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

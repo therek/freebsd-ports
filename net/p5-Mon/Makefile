@@ -2,7 +2,7 @@
 # Date created:			October 30th, 2000
 # Whom:	      			Nicholas Esborn <nick@netdot.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Mon/Makefile,v 1.1 2000/10/31 18:37:15 jim Exp $
 #
 
 PORTNAME=	Mon
@@ -15,15 +15,11 @@ DISTNAME=	Mon-${PORTVERSION}
 
 MAINTAINER=	nick@netdot.net
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Mon::SNMP.3 \
 		Mon::Client.3 \
 		Mon::Protocol.3
-
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

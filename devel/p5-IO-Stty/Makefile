@@ -2,7 +2,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-IO-Stty/Makefile,v 1.5 2000/06/17 02:37:02 will Exp $
+# $FreeBSD: ports/devel/p5-IO-Stty/Makefile,v 1.6 2000/06/22 05:51:54 will Exp $
 #
 
 PORTNAME=	IO-Stty
@@ -15,9 +15,6 @@ DISTNAME=	${PORTNAME}-.${PORTVERSION:E}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+PERL_CONFIGURE=	yes
 
 .include <bsd.port.mk>

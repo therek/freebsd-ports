@@ -2,7 +2,7 @@
 # Date created:				25 February 2000
 # Whom:	      				Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/devel/p5-Date-Calc/Makefile,v 1.2 2000/04/11 21:29:24 mharo Exp $
+# $FreeBSD: ports/devel/p5-Date-Calc/Makefile,v 1.3 2000/06/17 02:36:58 will Exp $
 #
 
 PORTNAME=	Date-Calc
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bradh@uunet.co.za
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Date::Calc.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

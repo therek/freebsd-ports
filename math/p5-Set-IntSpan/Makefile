@@ -2,7 +2,7 @@
 # Date created:		February 7, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/math/p5-Set-IntSpan/Makefile,v 1.4 2000/04/14 07:20:25 asami Exp $
+# $FreeBSD: ports/math/p5-Set-IntSpan/Makefile,v 1.5 2000/05/21 11:52:05 knu Exp $
 #
 
 PORTNAME=	Set-IntSpan
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	croyle@gelemna.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Set::IntSpan.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			March 13, 2000
 # Whom:				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Locale-Maketext/Makefile,v 1.1 2000/05/01 02:48:54 steve Exp $
 #
 
 PORTNAME=	Locale-Maketext
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	frank@exit.com
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Locale::Maketext.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 12:02:56 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-HTML-Navigation/Makefile,v 1.1 2001/01/03 23:30:19 will Exp $
 #
 
 PORTNAME=	HTML-Navigation
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/CGI/Base.pm:${PORTSDIR}/www/p5-CGI \
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

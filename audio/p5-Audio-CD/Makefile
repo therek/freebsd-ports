@@ -2,7 +2,7 @@
 # Date created:				22 Oct 2000
 # Whom:	      				Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/p5-Audio-CD/Makefile,v 1.1 2000/10/28 05:59:03 will Exp $
 #
 
 PORTNAME=	Audio-CD
@@ -16,13 +16,9 @@ MAINTAINER=	roman@xpert.com
 
 LIB_DEPENDS=	cdaudio.1:${PORTSDIR}/audio/libcdaudio
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Audio::CD.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 04:09:18 2001
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-Icon/Makefile,v 1.2 2001/01/01 11:06:11 will Exp $
+# $FreeBSD: ports/www/p5-Apache-Icon/Makefile,v 1.3 2001/01/08 06:12:48 kuriyama Exp $
 #
 
 PORTNAME=	Apache-Icon
@@ -14,9 +14,8 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/src.pm:${PORTSDIR}/www/p5-Apache
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Apache/src.pm:${PORTSDIR}/www/mod_perl
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

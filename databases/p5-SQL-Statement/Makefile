@@ -2,7 +2,7 @@
 # Date created:				August 8th, 1999
 # Whom:	      				wolman@cs.washington.edu
 #
-# $FreeBSD: ports/databases/p5-SQL-Statement/Makefile,v 1.3 2000/04/08 22:48:48 mharo Exp $
+# $FreeBSD: ports/databases/p5-SQL-Statement/Makefile,v 1.4 2000/06/17 02:36:31 will Exp $
 #
 
 PORTNAME=	SQL-Statement
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	wolman@cs.washington.edu
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		SQL::Eval.3 SQL::Statement.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

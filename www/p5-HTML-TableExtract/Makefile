@@ -2,7 +2,7 @@
 # Date created:				October 21th 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-TableExtract/Makefile,v 1.2 2001/01/11 16:12:29 kevlo Exp $
+# $FreeBSD: ports/www/p5-HTML-TableExtract/Makefile,v 1.3 2001/02/05 15:33:43 olgeni Exp $
 #
 
 PORTNAME=	HTML-TableExtract
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ozz@FreeBSD.org.ru
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		HTML::TableExtract.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

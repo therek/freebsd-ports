@@ -2,7 +2,7 @@
 # Date created:				25 March 2000
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.1 2000/04/24 02:05:53 will Exp $
+# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.2 2000/06/17 02:36:38 will Exp $
 #
 
 PORTNAME=	Net-ext
@@ -14,9 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	igor@zynaps.ru
 
-USE_PERL5=	yes
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+PERL_CONFIGURE=	yes
 
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Net::Gen.3 \
 		Net::Inet.3 \
 		Net::TCP.3 \
@@ -24,9 +24,5 @@ MAN3=		Net::Gen.3 \
 		Net::UDP.3 \
 		Net::UNIX.3 \
 		Net::UNIX::Server.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

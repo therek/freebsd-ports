@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:					Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.5 2000/11/12 02:36:35 vanilla Exp $
+# $FreeBSD: ports/www/p5-Apache-Session/Makefile,v 1.6 2001/02/05 15:33:38 olgeni Exp $
 #
 
 PORTNAME=	Apache-Session
@@ -17,7 +17,7 @@ MAINTAINER=	frank@exit.com
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Storable.pm:${PORTSDIR}/devel/p5-Storable
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Apache::Session.3 \
@@ -43,8 +43,5 @@ MAN3=		Apache::Session.3 \
 		Apache::Session::Store::Postgres.3 \
 		Apache::Session::Store::Sybase.3 \
 		Apache::Session::Sybase.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

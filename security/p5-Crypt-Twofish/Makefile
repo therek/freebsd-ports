@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:29:03 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-Crypt-Twofish/Makefile,v 1.1 2001/01/03 23:27:24 will Exp $
 #
 
 PORTNAME=	Twofish
@@ -15,7 +15,6 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/Crypt/Twofish
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

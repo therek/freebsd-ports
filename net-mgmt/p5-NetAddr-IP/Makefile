@@ -2,7 +2,7 @@
 # Date created:				12 July 2000
 # Whom:					Christopher N. Harrell <cnh@ivmg.net>
 #
-# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.1 2000/07/27 15:31:58 kevlo Exp $
+# $FreeBSD: ports/net/p5-NetAddr-IP/Makefile,v 1.2 2001/01/16 17:31:54 sobomax Exp $
 #
 
 PORTNAME=	NetAddr-IP
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@freebsd.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
+
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		NetAddr::IP.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

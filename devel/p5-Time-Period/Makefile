@@ -2,7 +2,7 @@
 # Date created:			October 30th, 2000
 # Whom:	      			Nicholas Esborn <nick@netdot.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Time-Period/Makefile,v 1.1 2000/10/31 18:39:27 jim Exp $
 #
 
 PORTNAME=	Time-Period
@@ -15,13 +15,9 @@ DISTNAME=	Period-${PORTVERSION}
 
 MAINTAINER=	nick@netdot.net
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Time::Period.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

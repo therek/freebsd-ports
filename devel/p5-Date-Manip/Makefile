@@ -2,7 +2,7 @@
 # Date created:				April 28th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Date-Manip/Makefile,v 1.16 2000/10/23 21:02:46 will Exp $
+# $FreeBSD: ports/devel/p5-Date-Manip/Makefile,v 1.17 2000/12/20 10:10:04 roam Exp $
 #
 
 PORTNAME=	Date-Manip
@@ -15,12 +15,9 @@ DISTNAME=	DateManip-${PORTVERSION}
 
 MAINTAINER=	kapr@crosswinds.net
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Date::Manip.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

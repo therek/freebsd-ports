@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:57:53 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-AuthTicket/Makefile,v 1.1 2001/01/03 23:19:33 will Exp $
 #
 
 PORTNAME=	Apache-AuthTicket
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				3 January 2001
 # Whom:					T. William Wells <bill@twwells.com>
 #
-# $FreeBSD: ports/databases/p5-BerkeleyDB/Makefile,v 1.1 2001/01/07 07:23:10 will Exp $
+# $FreeBSD: ports/databases/p5-BerkeleyDB/Makefile,v 1.2 2001/01/16 17:30:10 sobomax Exp $
 #
 
 PORTNAME=	BerkeleyDB
@@ -18,7 +18,6 @@ LIB_DEPENDS=	db3.1:${PORTSDIR}/databases/db3
 
 PERL_CONFIGURE=	yes
 ALL_TARGET=	all test
-USE_PERL5=	yes
 
 post-patch:
 	${PERL} -pi -e 's|^(INCLUDE\s+= )./libraries/.*$$|$$1\$(PREFIX)/include/db3|g; \

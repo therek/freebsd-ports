@@ -2,7 +2,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-POP3Client/Makefile,v 1.19 2000/11/13 12:43:55 demon Exp $
+# $FreeBSD: ports/mail/p5-Mail-POP3Client/Makefile,v 1.20 2000/11/15 11:42:10 demon Exp $
 #
 
 PORTNAME=	Mail-POP3Client
@@ -15,12 +15,9 @@ DISTNAME=	POP3Client-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Mail::POP3Client.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				20 Sep 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/p5-Math-Logic/Makefile,v 1.1 2000/09/20 18:47:36 will Exp $
+# $FreeBSD: ports/math/p5-Math-Logic/Makefile,v 1.2 2000/10/03 05:12:32 lioux Exp $
 #
 
 PORTNAME=	Math-Logic
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	lioux@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Math::Logic.3

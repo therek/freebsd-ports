@@ -2,7 +2,7 @@
 # Date created:				April 17th 2000
 # Whom:	      				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.8 2001/01/03 22:21:03 andreas Exp $
+# $FreeBSD: ports/security/p5-Net-SSLeay/Makefile,v 1.9 2001/01/03 22:23:28 andreas Exp $
 #
 
 PORTNAME=	Net-SSLeay
@@ -16,14 +16,10 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ports@FreeBSD.ORG
 
 RESTRICTED=	"Cryptography"
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 USE_OPENSSL=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Net::SSLeay.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			${OPENSSLBASE} CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

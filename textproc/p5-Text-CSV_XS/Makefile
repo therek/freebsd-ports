@@ -2,7 +2,7 @@
 # Date created:         Fri Nov 19 03:11:08 MSK 1999
 # Whom:                 Ache
 #
-# $FreeBSD: ports/textproc/p5-Text-CSV_XS/Makefile,v 1.3 2000/06/17 02:36:50 will Exp $
+# $FreeBSD: ports/textproc/p5-Text-CSV_XS/Makefile,v 1.4 2001/01/16 17:32:48 sobomax Exp $
 #
 
 PORTNAME=	Text-CSV_XS
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ache@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Text::CSV_XS.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			13 June 1999
 # Whom:				Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/devel/p5-Time-HiRes/Makefile,v 1.4 2000/04/11 21:29:57 mharo Exp $
+# $FreeBSD: ports/devel/p5-Time-HiRes/Makefile,v 1.5 2000/06/17 02:37:05 will Exp $
 #
 
 PORTNAME=	Time-HiRes
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Time::HiRes.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

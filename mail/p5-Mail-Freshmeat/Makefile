@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 14:42:56 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Freshmeat/Makefile,v 1.1 2001/01/03 23:36:42 will Exp $
 #
 
 PORTNAME=	Mail-Freshmeat
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Mail/Internet.pm:${PORTSDIR}/mail/p5-Mail-Tools
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Server-FastPL/Makefile,v 1.1 2001/01/04 00:09:56 will Exp $
 #
 
 PORTNAME=	Server-FastPL
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Server::FastPL.3 Server::FastPL::Client.3 \

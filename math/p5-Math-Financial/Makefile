@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 11:00:59 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-Math-Financial/Makefile,v 1.1 2001/01/03 23:39:37 will Exp $
 #
 
 PORTNAME=	Math-Financial
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

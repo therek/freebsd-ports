@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.42 2001/01/16 17:33:04 sobomax Exp $
+# $FreeBSD: ports/www/p5-libwww/Makefile,v 1.43 2001/01/25 22:03:15 vanilla Exp $
 #
 
 PORTNAME=	p5-libwww
@@ -20,7 +20,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest.
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64 \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/HTML/Parser.pm:${PORTSDIR}/www/p5-HTML-Parser
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN1=		lwp-download.1 \
 		lwp-mirror.1 \
@@ -53,11 +53,5 @@ MAN3=		Bundle::LWP.3 \
 		lwpcook.3
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${PERL} Makefile.PL PREFIX=${PREFIX} \
-		INSTALLMAN1DIR=${PREFIX}/man/man1 \
-		INSTALLSCRIPT=${PREFIX}/bin
 
 .include <bsd.port.mk>

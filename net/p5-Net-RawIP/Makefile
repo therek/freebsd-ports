@@ -2,7 +2,7 @@
 # Date created:				18 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.7 2000/11/13 12:44:36 demon Exp $
+# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.8 2000/11/14 20:53:03 demon Exp $
 #
 
 PORTNAME=	Net-RawIP
@@ -16,12 +16,8 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 MAN3=		Net::RawIP.3 Net::RawIP::libpcap.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

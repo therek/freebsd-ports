@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Algorithm-Permute/Makefile,v 1.1 2001/01/03 23:16:16 will Exp $
 #
 
 PORTNAME=	Algorithm-Permute
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

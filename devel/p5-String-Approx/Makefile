@@ -2,7 +2,7 @@
 # Date created:				April 15th 2000
 # Whom:	      				Ilia Chipitsine <ilia@cgu.chel.su>
 #
-# $FreeBSD: ports/devel/p5-String-Approx/Makefile,v 1.1 2000/05/07 15:00:22 jseger Exp $
+# $FreeBSD: ports/devel/p5-String-Approx/Makefile,v 1.2 2000/09/17 13:13:16 jedgar Exp $
 #
 
 PORTNAME=	String-Approx
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ilia@cgu.chel.su
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		String::Approx.3
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

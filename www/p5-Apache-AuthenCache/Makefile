@@ -2,7 +2,7 @@
 # Date created:				Sun Dec 31 19:59:31 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/p5-Apache-AuthenCache/Makefile,v 1.1 2001/01/03 23:20:28 will Exp $
+# $FreeBSD: ports/www/p5-Apache-AuthenCache/Makefile,v 1.2 2001/01/09 13:36:30 roam Exp $
 #
 
 PORTNAME=	Apache-AuthenCache
@@ -17,7 +17,6 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${SITE_PERL}/Tie/IxHash.pm:${PORTSDIR}/devel/p5-Tie-IxHash
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

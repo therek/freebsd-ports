@@ -2,7 +2,7 @@
 # Date created:				January 2nd 2000
 # Whom:	      				Gerhard Gonter <g.gonter@ieee.org>
 #
-# $FreeBSD: ports/databases/p5-hp200lx-db/Makefile,v 1.2 2000/04/08 22:48:50 mharo Exp $
+# $FreeBSD: ports/databases/p5-hp200lx-db/Makefile,v 1.3 2000/06/17 02:36:32 will Exp $
 #
 
 PORTNAME=	hp200lx-db
@@ -14,12 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	g.gonter@ieee.org
 
-USE_PERL5=	yes
-
-# MAN3=		HP200LX::DB.3
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+PERL_CONFIGURE=	yes
 
 .include <bsd.port.mk>

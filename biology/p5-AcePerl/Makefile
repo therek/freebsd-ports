@@ -2,7 +2,7 @@
 # Date created:		26 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/p5-AcePerl/Makefile,v 1.1 2000/07/28 13:16:10 nbm Exp $
+# $FreeBSD: ports/biology/p5-AcePerl/Makefile,v 1.2 2000/10/10 04:03:16 kevlo Exp $
 #
 
 PORTNAME=	AcePerl
@@ -15,7 +15,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bio@freebsd.net
 
-USE_PERL5=	YES
 PERL_CONFIGURE=	YES
 
 MAN3=		Ace::Sequence::Feature.3 \

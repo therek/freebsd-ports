@@ -2,7 +2,7 @@
 # Date created:				03 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/p5-Schedule-Cron/Makefile,v 1.1 2001/01/03 09:17:30 nbm Exp $
 #
 
 PORTNAME=	Schedule-Cron
@@ -17,7 +17,6 @@ MAINTAINER=	tobez@tobez.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Time/ParseDate.pm:${PORTSDIR}/devel/p5-Time
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Time/ParseDate.pm:${PORTSDIR}/devel/p5-Time
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Schedule::Cron.3

@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.18 2000/10/24 22:39:49 will Exp $
+# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.19 2000/11/13 12:43:10 demon Exp $
 #
 
 PORTNAME=	Curses
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Curses.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
@@ -22,9 +22,5 @@ MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 pre-configure:
 		@${LN} -s ${WRKSRC}/hints/c-freebsd.ncurses.h \
 			${WRKSRC}/c-config.h
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

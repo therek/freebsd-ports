@@ -2,7 +2,7 @@
 # Date created:		Sun Sep 26 09:25:38 EEST 1999
 # Whom:	      		Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.8 2000/10/15 08:23:04 kevlo Exp $
+# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.9 2001/01/30 08:55:21 kevlo Exp $
 #
 
 PORTNAME=	IMAP-Admin
@@ -14,13 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	martti.kuparinen@iki.fi
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		IMAP::Admin.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/p5-IMAP-Admin

@@ -2,7 +2,7 @@
 # Date created:		24-May-2000
 # Whom:	      		Peter van Heusden <pvh@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/p5-Error/Makefile,v 1.1.1.1 2000/06/22 11:07:21 nbm Exp $
 #
 
 PORTNAME=	Error
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	pvh@egenetics.com
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Error.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

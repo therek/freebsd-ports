@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:48:35 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-File-Binary/Makefile,v 1.1 2001/01/03 23:49:29 will Exp $
 #
 
 PORTNAME=	File-Binary
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

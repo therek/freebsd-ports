@@ -2,7 +2,7 @@
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-FreezeThaw/Makefile,v 1.7 2000/04/11 21:29:37 mharo Exp $
+# $FreeBSD: ports/devel/p5-FreezeThaw/Makefile,v 1.8 2000/10/23 21:02:51 will Exp $
 #
 
 PORTNAME=	FreezeThaw
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		FreezeThaw.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				13 June 1999
 # Whom:					Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/net/p5-SNMP_Session/Makefile,v 1.8 2000/06/17 02:36:40 will Exp $
+# $FreeBSD: ports/net/p5-SNMP_Session/Makefile,v 1.9 2001/01/08 23:47:49 kuriyama Exp $
 #
 
 PORTNAME=	SNMP_Session
@@ -13,7 +13,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 pre-install:

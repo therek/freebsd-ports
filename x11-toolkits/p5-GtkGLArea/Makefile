@@ -2,7 +2,7 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-GtkGLArea/Makefile,v 1.3 2000/12/09 02:52:22 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/p5-GtkGLArea/Makefile,v 1.4 2001/02/05 16:49:06 olgeni Exp $
 #
 
 PORTNAME=	GtkGLArea
@@ -20,13 +20,9 @@ LIB_DEPENDS=	gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea
 
 BROKEN=		"It need p5-OpenGL, I will commit p5-OpenGl soon!"
 
-USE_PERL5=	yes
 USE_MESA=	yes
 USE_GTK=	yes
+PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-	CC="${CC}" CCFLAGS="${CFLAGS} -L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:06:35 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-WWW-Robot/Makefile,v 1.1 2001/01/03 23:55:36 will Exp $
 #
 
 PORTNAME=	WWW-Robot
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/HTML/Element.pm:${PORTSDIR}/www/p5-HTML-Tree \
 		${SITE_PERL}/HTML/Tagset.pm:${PORTSDIR}/www/p5-HTML-Tagset
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				July 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.26 2001/01/08 22:23:27 vanilla Exp $
+# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.27 2001/02/19 03:04:56 kevlo Exp $
 #
 
 PORTNAME=	Storable
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 .include <bsd.port.mk>

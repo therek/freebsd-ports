@@ -2,7 +2,7 @@
 # Date created:				October 27, 2000
 # Whom:	      				Marc Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/p5-Convert-ASN1/Makefile,v 1.1 2000/10/28 01:16:38 scrappy Exp $
 #
 
 PORTNAME=	Convert-ASN1
@@ -14,13 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	scrappy@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Convert::ASN1.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

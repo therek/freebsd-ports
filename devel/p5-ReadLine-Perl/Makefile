@@ -2,7 +2,7 @@
 # Date created:				20 February 1998
 # Whom:	      				Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/devel/p5-ReadLine-Perl/Makefile,v 1.7 2000/04/15 01:36:24 asami Exp $
+# $FreeBSD: ports/devel/p5-ReadLine-Perl/Makefile,v 1.8 2000/08/11 10:34:03 will Exp $
 #
 
 PORTNAME=	ReadLine-Perl
@@ -13,11 +13,8 @@ MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
 DISTNAME=	Term-ReadLine-Perl-${PORTVERSION}
 
-MAINTAINER=	mph@freebsd.org
+MAINTAINER=	mph@FreeBSD.org
 
-USE_PERL5=	YES
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+PERL_CONFIGURE=	YES
 
 .include <bsd.port.mk>

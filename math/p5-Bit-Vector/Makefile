@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 10:37:30 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-Bit-Vector/Makefile,v 1.1 2001/01/03 23:23:33 will Exp $
 #
 
 PORTNAME=	Bit-Vector
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

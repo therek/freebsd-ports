@@ -2,7 +2,7 @@
 # Date created:		Thu Oct 28 01:58:13 EDT 1999
 # Whom:			Bill "I hate Perl" Fumerola
 #
-# $FreeBSD: ports/textproc/p5-Text-Template/Makefile,v 1.3 2000/04/23 12:25:02 vanilla Exp $
+# $FreeBSD: ports/textproc/p5-Text-Template/Makefile,v 1.4 2001/02/05 16:35:00 olgeni Exp $
 #
 
 PORTNAME=	Text-Template
@@ -15,12 +15,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Text::Template.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

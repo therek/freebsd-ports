@@ -2,7 +2,7 @@
 # Date created:				2000/09/18
 # Whom:					patrick@mindstep.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-Crypt-Blowfish/Makefile,v 1.1 2000/09/19 16:10:52 ade Exp $
 #
 
 PORTNAME=	Crypt-Blowfish
@@ -14,14 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	patrick@mindstep.com
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Crypt::Blowfish.3
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

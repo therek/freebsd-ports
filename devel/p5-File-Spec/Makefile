@@ -2,7 +2,7 @@
 # Date created:				November 22, 2000
 # Whom:	      				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-File-Spec/Makefile,v 1.1 2000/11/23 05:02:14 dburr Exp $
 #
 
 PORTNAME=	File-Spec
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		File::Spec.3 \
 		File::Spec::Functions.3 \
@@ -24,9 +24,5 @@ MAN3=		File::Spec.3 \
 		File::Spec::VMS.3 \
 		File::Spec::Win32.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			PREFIX="${PREFIX}" CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

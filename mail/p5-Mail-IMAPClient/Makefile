@@ -2,7 +2,7 @@
 # Date created:		14 Nov 2000
 # Whom:			TAKAHASHI Kaoru <kaoru@kaisei.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.4 2001/02/25 15:46:36 kevlo Exp $
+# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.5 2001/02/26 12:10:25 kevlo Exp $
 #
 
 PORTNAME=	Mail-IMAPClient
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 INSTALL_TARGET=	pure_site_install

@@ -2,7 +2,7 @@
 # Date created:				November 19th 2000
 # Whom:					Blaz Zupan <blaz@amis.net>
 #
-# $FreeBSD: ports/sysutils/p5-Unix-Syslog/Makefile,v 1.1 2000/12/19 10:45:03 will Exp $
+# $FreeBSD: ports/sysutils/p5-Unix-Syslog/Makefile,v 1.2 2001/02/05 16:04:23 olgeni Exp $
 #
 
 PORTNAME=	Unix-Syslog
@@ -15,14 +15,9 @@ DISTNAME=	Syslog-${PORTVERSION}
 
 MAINTAINER=	blaz@amis.net
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Unix::Syslog.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

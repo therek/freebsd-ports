@@ -2,7 +2,7 @@
 # Date created:			19 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-File-Tail/Makefile,v 1.1 2000/12/21 10:30:25 will Exp $
 
 PORTNAME=	File-Tail
 PORTVERSION=	0.97
@@ -17,7 +17,6 @@ BUILD_DEPENDS=	${site_perl}/Time/HiRes.pm:${PORTSDIR}/devel/p5-Time-HiRes
 
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}
 
-USE_PERL5=	YES
 PERL_CONFIGURE=	YES
 
 MAN3=		File::Tail.3

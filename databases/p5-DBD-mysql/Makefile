@@ -2,7 +2,7 @@
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.32 2001/01/01 10:14:58 will Exp $
+# $FreeBSD: ports/databases/p5-Mysql/Makefile,v 1.33 2001/01/21 15:40:35 dirk Exp $
 #
 
 PORTNAME=	Mysql-modules
@@ -20,10 +20,10 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Data/ShowTable.pm:${
 RUN_DEPENDS=	${BUILD_DEPENDS}
 LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
+PERL_CONFIGURE=	yes
 CONFIGURE_ARGS=	PREFIX=${PREFIX} CC="${CC}" CCFLAGS="${CFLAGS}" \
 		--noprompt --mysql-install --nomsql-install
 CONFIGURE_ENV=	MYSQL_HOME=${PREFIX} IN_MYSQL_DISTRIBUTION=1
-USE_PERL5=	yes
 
 MAN1=		dbimon.1
 MAN3=		Bundle::DBD::mysql.3 \
@@ -31,8 +31,7 @@ MAN3=		Bundle::DBD::mysql.3 \
 		Mysql.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-do-configure:
+pre-configure:
 		@${PERL} -i -e 's| -lgz||' ${WRKSRC}/lib/DBD/mysql/Install.pm
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL ${CONFIGURE_ARGS}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.31 2001/01/03 03:47:32 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.32 2001/02/05 16:49:09 olgeni Exp $
 #
 
 PORTNAME=	Tk
@@ -16,7 +16,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN1=	ptked.1 \
 	ptksh.1 \
@@ -124,9 +124,7 @@ MAN3=	Tk.3 \
 	Tk::widgets.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		PREFIX=${PREFIX} CC="${CC}" CCFLAGS="${CFLAGS}"
+post-configure:
 	@${PERL} -i -p \
 		-e 's/^(CC = ).*/$$1 ${CC}/;' \
 		-e 's/^(CCFLAGS = ).*/$$1 ${CFLAGS}/' \

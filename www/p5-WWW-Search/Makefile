@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.19 2000/10/23 21:03:10 will Exp $
+# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.20 2001/02/05 15:33:44 olgeni Exp $
 #
 
 PORTNAME=	WWW-Search
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/TreeBuilder.pm:${PORTSDIR}/www/p5-HTML-Tree
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN1=		AutoSearch.1 \
 		WebSearch.1
@@ -73,9 +73,5 @@ MAN3=		WWW::Search.3 \
 		WWW::Search::Yahoo::Classifieds::Employment.3 \
 		WWW::Search::ZDNet.3 \
 		WWW::SearchResult.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			PREFIX="${PREFIX}"
 
 .include <bsd.port.mk>

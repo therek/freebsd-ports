@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Tools/Makefile,v 1.13 2000/10/24 22:39:51 will Exp $
+# $FreeBSD: ports/devel/p5-File-Tools/Makefile,v 1.14 2000/11/13 12:43:21 demon Exp $
 #
 
 PORTNAME=	File-Tools
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		File::Tools.3 File::Recurse.3 File::Copy.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

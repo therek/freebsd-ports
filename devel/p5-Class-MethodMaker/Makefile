@@ -2,7 +2,7 @@
 # Date created:				2000-07-09
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.2 2000/10/02 05:39:31 trevor Exp $
+# $FreeBSD: ports/devel/p5-Class-MethodMaker/Makefile,v 1.3 2000/10/16 03:25:12 trevor Exp $
 #
 
 PORTNAME=		Class-MethodMaker
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=		p5-
 
 MAINTAINER=		trevor@FreeBSD.org
 
-USE_PERL5=		yes
+PERL_CONFIGURE=		yes
 
 MAN3=			Class::MethodMaker.3
 MANPREFIX=		${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

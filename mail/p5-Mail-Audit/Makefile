@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 12:31:10 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.2 2001/02/26 12:22:28 kevlo Exp $
+# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.3 2001/02/26 12:27:37 kevlo Exp $
 #
 
 PORTNAME=	Mail-Audit
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Net/Config.pm:${PORTSDIR}/net/p5-Net \
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

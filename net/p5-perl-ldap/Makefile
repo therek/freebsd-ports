@@ -2,7 +2,7 @@
 # Date created:	October 27th 2000
 # Whom:		scrappy@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-perl-ldap/Makefile,v 1.1 2000/10/28 01:58:21 scrappy Exp $
 #
 
 PORTNAME=	perl-ldap
@@ -18,6 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Convert/ASN1.pm:${PO
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/URI/ldap.pm:${PORTSDIR}/net/p5-URI \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/MD5.pm:${PORTSDIR}/security/p5-Digest-MD5 \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/IO/Socket/SSL.pm:${PORTSDIR}/security/p5-IO-Socket-SSL
+
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Net::LDAP::Control::VLVResponse.3 \
@@ -43,8 +45,5 @@ MAN3=		Net::LDAP::Control::VLVResponse.3 \
 		Net::LDAP::Constant.3 \
 		Net::LDAP::Reference.3 \
 		Net::LDAP::RFC.3
-
-do-configure:
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

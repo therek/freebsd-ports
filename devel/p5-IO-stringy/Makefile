@@ -2,7 +2,7 @@
 # Date created:				April 27 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.13 2001/01/12 00:14:36 kuriyama Exp $
+# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.14 2001/01/21 04:26:24 ijliao Exp $
 #
 
 PORTNAME=	IO-stringy
@@ -14,13 +14,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ijliao@FreeBSD.org
 
-USE_PERL5=	YES
 PERL_CONFIGURE=	YES
 
 MAN3=		IO::AtomicFile.3 IO::InnerFile.3 IO::Lines.3 IO::Scalar.3 \
 		IO::ScalarArray.3 IO::Stringy.3 \
 		IO::Wrap.3 IO::WrapTie.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 14:54:51 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-LockFile-Simple/Makefile,v 1.1 2001/01/03 23:31:56 will Exp $
 #
 
 PORTNAME=	LockFile-Simple
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

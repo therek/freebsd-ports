@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:41:22 2001
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/p5-Mac-Macbinary/Makefile,v 1.1 2001/01/03 23:33:32 will Exp $
+# $FreeBSD: ports/archivers/p5-Mac-Macbinary/Makefile,v 1.2 2001/02/26 15:45:48 kevlo Exp $
 #
 
 PORTNAME=	Mac-Macbinary
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD: ports/math/p5-AI-Perceptron/Makefile,v 1.1 2001/01/01 08:16:56 will Exp $
+# $FreeBSD: ports/math/p5-AI-Perceptron/Makefile,v 1.2 2001/01/01 11:06:02 will Exp $
 #
 
 PORTNAME=	AI-Perceptron
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

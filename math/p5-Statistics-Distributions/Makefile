@@ -2,7 +2,7 @@
 # Date created:				01 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-Statistics-Distributions/Makefile,v 1.1 2001/01/04 00:01:32 will Exp $
 #
 
 PORTNAME=	Statistics-Distributions
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Statistics::Distributions.3

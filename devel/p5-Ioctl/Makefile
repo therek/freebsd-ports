@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 08:31:51 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Ioctl/Makefile,v 1.10 2001/01/03 23:31:24 will Exp $
 #
 
 PORTNAME=	Ioctl
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

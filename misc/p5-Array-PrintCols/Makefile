@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-Array-PrintCols/Makefile,v 1.16 2000/10/23 21:03:01 will Exp $
+# $FreeBSD: ports/misc/p5-Array-PrintCols/Makefile,v 1.17 2001/02/26 12:48:37 kevlo Exp $
 #
 
 PORTNAME=	Array-PrintCols
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Array::PrintCols.3

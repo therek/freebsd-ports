@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 04:34:25 2001
 # Whom:					will
 #
-# $FreeBSD: ports/security/p5-Authen-TacacsPlus/Makefile,v 1.1 2001/01/01 09:39:52 will Exp $
+# $FreeBSD: ports/security/p5-Authen-TacacsPlus/Makefile,v 1.2 2001/01/01 11:06:17 will Exp $
 #
 
 PORTNAME=	TacacsPlus
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 MAKE_ENV+=	CCFLAGS="${CFLAGS}"
 

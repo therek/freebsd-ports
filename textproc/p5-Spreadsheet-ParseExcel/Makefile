@@ -2,7 +2,7 @@
 # Date created:		25 Dec 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-Spreadsheet-ParseExcel/Makefile,v 1.1 2000/12/26 05:55:19 will Exp $
+# $FreeBSD: ports/textproc/p5-Spreadsheet-ParseExcel/Makefile,v 1.2 2001/02/05 16:34:59 olgeni Exp $
 #
 
 PORTNAME=	Spreadsheet-ParseExcel
@@ -14,14 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	skv@protey.ru
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Spreadsheet::ParseExcel.3
-
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

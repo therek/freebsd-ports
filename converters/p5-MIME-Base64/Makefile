@@ -2,7 +2,7 @@
 # Date created:                         June 21th 1997
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/converters/p5-MIME-Base64/Makefile,v 1.15 2000/06/09 20:57:24 will Exp $
+# $FreeBSD: ports/converters/p5-MIME-Base64/Makefile,v 1.16 2000/06/09 23:59:28 will Exp $
 #
 
 PORTNAME=	MIME-Base64
@@ -14,14 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		MIME::Base64.3 \
 		MIME::QuotedPrint.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 03:55:39 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-Authen-Ticket/Makefile,v 1.1 2001/01/01 09:02:18 will Exp $
 #
 
 PORTNAME=	Authen-Ticket
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

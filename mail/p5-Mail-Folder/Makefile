@@ -2,7 +2,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Folder/Makefile,v 1.20 2000/10/23 21:03:00 will Exp $
+# $FreeBSD: ports/mail/p5-Mail-Folder/Makefile,v 1.21 2001/02/05 15:10:59 olgeni Exp $
 #
 
 PORTNAME=	Mail-Folder
@@ -23,13 +23,10 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Mail/Internet.pm:${POR
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/File/Sync.pm:${PORTSDIR}/devel/p5-File-Sync \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/MIME/Head.pm:${PORTSDIR}/mail/p5-MIME-Tools
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Mail::Folder.3 Mail::Folder::Emaul.3 Mail::Folder::Mbox.3 \
 		Mail::Folder::NNTP.3 Mail::Folder::Maildir.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

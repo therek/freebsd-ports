@@ -2,7 +2,7 @@
 # Date created:				29 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-Text-Filter-Chain/Makefile,v 1.1 2000/12/31 05:25:53 will Exp $
 #
 
 PORTNAME=	Text-Filter-Chain
@@ -16,7 +16,6 @@ MAINTAINER=	tobez@tobez.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Text/Filter.pm:${PORTSDIR}/textproc/p5-Text-Filter
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Text::Filter::Chain.3

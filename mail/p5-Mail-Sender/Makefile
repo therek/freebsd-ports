@@ -2,7 +2,7 @@
 # Date created:				July 27th 2000
 # Whom:	      				Ben Smithurst <ben@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.2 2000/11/01 20:36:59 will Exp $
+# $FreeBSD: ports/mail/p5-Mail-Sender/Makefile,v 1.3 2001/02/26 12:41:06 kevlo Exp $
 #
 
 PORTNAME=	Mail-Sender
@@ -17,9 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
-
 IS_INTERACTIVE=	yes
 
 MAN3=		Mail::Sender.3

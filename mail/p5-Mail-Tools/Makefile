@@ -2,7 +2,7 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Tools/Makefile,v 1.21 2001/01/08 06:39:45 kuriyama Exp $
+# $FreeBSD: ports/mail/p5-Mail-Tools/Makefile,v 1.22 2001/02/05 15:11:00 olgeni Exp $
 #
 
 PORTNAME=	Mail-Tools
@@ -10,8 +10,8 @@ PORTVERSION=	1.15
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
-DISTNAME=	MailTools-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
+DISTNAME=	MailTools-${PORTVERSION}
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
@@ -22,6 +22,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/SMTP.pm:${PORTSDIR
 
 PERL_CONFIGURE=	yes
 
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Mail::Address.3 \
 		Mail::Cap.3 \
 		Mail::Field.3 \
@@ -32,7 +33,5 @@ MAN3=		Mail::Address.3 \
 		Mail::Mailer.3 \
 		Mail::Send.3 \
 		Mail::Util.3
-
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		11 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-XPath/Makefile,v 1.2 2001/01/25 23:20:31 vanilla Exp $
+# $FreeBSD: ports/textproc/p5-XML-XPath/Makefile,v 1.3 2001/02/05 16:35:04 olgeni Exp $
 #
 
 PORTNAME=	XML-XPath
@@ -17,7 +17,7 @@ MAINTAINER=	skv@protey.ru
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		XML::XPath.3 XML::XPath::Boolean.3 XML::XPath::Builder.3 \
 		XML::XPath::Literal.3 XML::XPath::Node.3 \
@@ -28,10 +28,5 @@ MAN3=		XML::XPath.3 XML::XPath::Boolean.3 XML::XPath::Builder.3 \
 		XML::XPath::PerlSAX.3 XML::XPath::XMLParser.3
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; \
-	${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL PREFIX=${PREFIX} \
-					INSTALLSCRIPT=${PREFIX}/bin
 
 .include <bsd.port.mk>

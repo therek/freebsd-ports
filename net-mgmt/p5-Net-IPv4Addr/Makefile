@@ -2,7 +2,7 @@
 # Date created:				25 February 2000
 # Whom:                			Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.2 2000/04/09 18:12:52 cpiazza Exp $
+# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.3 2000/06/17 02:36:36 will Exp $
 #
 
 PORTNAME=	Net-IPv4Addr
@@ -14,14 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bradh@uunet.co.za
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
+
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN1=		ipv4calc.1
 MAN3=		Net::IPv4Addr.3
-
-do-configure:
-
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			PREFIX=${PREFIX}
 
 .include <bsd.port.mk>

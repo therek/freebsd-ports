@@ -2,7 +2,7 @@
 # Date created:				26 February 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/p5-Filesys-DiskSpace/Makefile,v 1.1 2001/02/27 23:21:22 will Exp $
 #
 
 PORTNAME=	Filesys-DiskSpace
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Filesys::DiskSpace.3

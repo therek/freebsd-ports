@@ -2,7 +2,7 @@
 # Date created:				27 Feb 2000
 # Whom:	      				Vanilla I. Shu <vanilla@FreeBSD.ORG>
 #
-# $FreeBSD: ports/net/p5-Net-Daemon/Makefile,v 1.5 2000/12/15 03:06:44 vanilla Exp $
+# $FreeBSD: ports/net/p5-Net-Daemon/Makefile,v 1.6 2001/01/08 22:23:26 vanilla Exp $
 #
 
 PORTNAME=	Net-Daemon
@@ -14,15 +14,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	vanilla@FreeBSD.ORG
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
+MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Net::Daemon.3 \
 		Net::Daemon::Log.3 \
 		Net::Daemon::Test.3
-
-MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

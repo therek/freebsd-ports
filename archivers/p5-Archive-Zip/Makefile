@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 09:33:13 2001
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/p5-Archive-Zip/Makefile,v 1.1 2001/01/03 23:21:27 will Exp $
+# $FreeBSD: ports/archivers/p5-Archive-Zip/Makefile,v 1.2 2001/02/26 15:43:14 kevlo Exp $
 #
 
 PORTNAME=	Archive-Zip
@@ -16,7 +16,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_ZIP=	yes
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 16:15:20 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/p5-Crypt-Rijndael/Makefile,v 1.1 2001/01/03 23:26:25 will Exp $
 #
 
 PORTNAME=	Crypt-Rijndael
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				02 January 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Set-NestedGroups/Makefile,v 1.1 2001/01/04 00:05:58 will Exp $
 #
 
 PORTNAME=	Set-NestedGroups
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	tobez@tobez.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Set::NestedGroups.3 Set::NestedGroups::Member.3

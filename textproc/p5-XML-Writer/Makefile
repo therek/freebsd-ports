@@ -2,7 +2,7 @@
 # Date created:				24 December 2000
 # Whom:					Adam Herzog <adam@herzogdesigns.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-XML-Writer/Makefile,v 1.1 2000/12/26 04:16:04 will Exp $
 #
 
 PORTNAME=	XML-Writer
@@ -14,10 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
+PERL_CONFIGURE=	yes
+
 MAN3=		XML::Writer.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

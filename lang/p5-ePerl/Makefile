@@ -2,7 +2,7 @@
 # Date created:		03-Sep-1997
 # Whom:	      		Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/lang/p5-ePerl/Makefile,v 1.19 2000/04/12 06:19:48 obrien Exp $
+# $FreeBSD: ports/lang/p5-ePerl/Makefile,v 1.20 2000/06/17 02:36:34 will Exp $
 #
 
 PORTNAME=	eperl
@@ -17,13 +17,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	rse@engelschall.com
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MAN3=		Parse::ePerl.3 Apache::ePerl.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-		CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 11:03:15 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-String-Checker/Makefile,v 1.1 2001/01/03 23:43:47 will Exp $
 #
 
 PORTNAME=	String-Checker
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Date/Manip.pm:${PORTSDIR}/devel/p5-Date-Manip
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

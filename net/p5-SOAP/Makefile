@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 10:01:46 2001
 # Whom:					will
 #
-# $FreeBSD: ports/net/p5-SOAP/Makefile,v 1.1 2001/01/03 23:43:25 will Exp $
+# $FreeBSD: ports/net/p5-SOAP/Makefile,v 1.2 2001/01/06 19:32:35 asami Exp $
 #
 
 PORTNAME=	SOAP
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-X
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

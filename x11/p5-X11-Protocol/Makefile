@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 21:49:44 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/p5-X11-Protocol/Makefile,v 1.1 2001/01/03 23:47:57 will Exp $
 #
 
 PORTNAME=	X11-Protocol
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

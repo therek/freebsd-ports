@@ -2,7 +2,7 @@
 # Date created:				Jan 28 2000
 # Whom:					Wei-chun Chao
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/p5-File-CounterFile/Makefile,v 1.1 2000/06/30 01:05:40 will Exp $
 #
 
 PORTNAME=	File-CounterFile
@@ -14,12 +14,9 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	wchao@isi.edu
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		File::CounterFile.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

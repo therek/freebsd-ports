@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.23 2000/12/11 02:03:43 steve Exp $
+# $FreeBSD: ports/graphics/p5-Image-Size/Makefile,v 1.24 2001/01/25 23:20:04 vanilla Exp $
 #
 
 PORTNAME=	Image-Size
@@ -14,14 +14,11 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 CONFIGURE_ARGS=	PREFIX=${PREFIX}
 
 MAN1=		imgsize.1
 MAN3=		Image::Size.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL ${CONFIGURE_ARGS}
 
 .include <bsd.port.mk>

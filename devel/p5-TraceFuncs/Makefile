@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.8 2000/04/15 01:36:28 asami Exp $
+# $FreeBSD: ports/devel/p5-TraceFuncs/Makefile,v 1.9 2000/10/23 21:02:58 will Exp $
 #
 
 PORTNAME=	TraceFuncs
@@ -15,12 +15,9 @@ DISTNAME=	traceFunc-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Devel::TraceFuncs.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

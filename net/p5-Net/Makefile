@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net/Makefile,v 1.29 2000/11/13 12:44:30 demon Exp $
+# $FreeBSD: ports/net/p5-Net/Makefile,v 1.30 2001/01/16 17:31:54 sobomax Exp $
 #
 
 PORTNAME=	p5-Net
@@ -14,7 +14,7 @@ DISTNAME=	libnet-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	yes
+PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		\
@@ -30,8 +30,5 @@ MAN3=		\
 		Net::SNPP.3 \
 		Net::Time.3 \
 		Net::libnetFAQ.3
-
-do-configure:
-	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

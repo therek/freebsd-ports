@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 09:43:27 2001
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/p5-Unix-ConfigFile/Makefile,v 1.1 2001/01/03 23:45:02 will Exp $
 #
 
 PORTNAME=	Unix-ConfigFile
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

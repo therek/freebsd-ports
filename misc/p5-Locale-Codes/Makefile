@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-Locale-Codes/Makefile,v 1.10 2000/10/24 22:39:53 will Exp $
+# $FreeBSD: ports/misc/p5-Locale-Codes/Makefile,v 1.11 2000/11/13 12:44:13 demon Exp $
 #
 
 PORTNAME=	Locale-Codes
@@ -14,13 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
 
-USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Locale::Country.3 \
 		Locale::Language.3
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL
 
 .include <bsd.port.mk>

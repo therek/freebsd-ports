@@ -2,7 +2,7 @@
 # Date created:				04 Nov 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Agent/Makefile,v 1.1 2001/01/03 23:14:15 will Exp $
 #
 
 PORTNAME=	Agent
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Class/Tom.pm:${PORTSDIR}/devel/p5-Class-Tom
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
