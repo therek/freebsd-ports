@@ -2,21 +2,20 @@
 # Date created:		00/04/24
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mypaedia-fpw-package/Makefile,v 1.1.1.1 2000/06/23 19:10:12 taoka Exp $
+# $FreeBSD: ports/japanese/mypaedia-fpw-package/Makefile,v 1.2 2000/06/23 19:31:44 taoka Exp $
 #
 
 PORTNAME=	mypaedia-fpw-package
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	japanese elisp
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/mypaedia-fpw/
-DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
 
 RUN_DEPENDS=	sox:${PORTSDIR}/audio/sox \
 		timidity:${PORTSDIR}/audio/timidity++ \
 		xanim:${PORTSDIR}/graphics/xanim
-# This suhould depend on the next port, but it depends on non-japanized GS :-<
+# This suhould build-depend on the next port, but it depends on non-japanized GS :-<
 #		display:${PORTSDIR}/graphics/ImageMagick
 
 NO_BUILD=	yes
@@ -28,7 +27,7 @@ PORT_DOCDIR=	${PREFIX}/share/doc/${PKGNAME}
 do-install:
 	${MKDIR} ${PKG_DIR}
 	${INSTALL_DATA} ${WRKSRC}/mypaedia-fpw.el ${PKG_DIR}
-	${INSTALL_SCRIPT} ${WRKSRC}/extract.pl ${PKG_DIR}/mypaedia-fpw.pl
+	${INSTALL_SCRIPT} ${WRKSRC}/extract-mypaedia.pl ${PKG_DIR}
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PORT_DOCDIR}
 .for file in ChangeLog README.TXT
