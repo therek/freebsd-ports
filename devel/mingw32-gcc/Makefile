@@ -2,14 +2,21 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.2 2000/07/11 15:03:44 knu Exp $
+# $FreeBSD: ports/devel/mingw-gcc/Makefile,v 1.3 2000/08/24 14:07:20 knu Exp $
 #
 
 PORTNAME=	gcc
 PORTVERSION=	2.95.2
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR= gcc
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR= gcc/releases/${DISTNAME}
+DISTFILES=	gcc-core-${PORTVERSION}${EXTRACT_SUFX} \
+		gcc-chill-${PORTVERSION}${EXTRACT_SUFX} \
+		gcc-g++-${PORTVERSION}${EXTRACT_SUFX} \
+		gcc-g77-${PORTVERSION}${EXTRACT_SUFX} \
+		gcc-java-${PORTVERSION}${EXTRACT_SUFX} \
+		gcc-objc-${PORTVERSION}${EXTRACT_SUFX}
+
 PKGNAMEPREFIX=	mingw-
 
 PATCH_SITES=	http://www.ab.wakwak.com/~tino/windows/
@@ -24,6 +31,7 @@ BUILD_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
 RUN_DEPENDS=	i386-mingw32msvc-as:${PORTSDIR}/devel/mingw-binutils \
 		mingwm10.dll:${PORTSDIR}/devel/mingw-bin-msvcrt
 
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=i386-mingw32msvc \

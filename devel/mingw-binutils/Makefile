@@ -2,18 +2,19 @@
 # Date created:		6 June 2000
 # Whom:			Toshihiro Inoue <tino@pa2.so-net.ne.jp>
 #
-# $FreeBSD: ports/devel/mingw-binutils/Makefile,v 1.1 2000/06/26 19:19:07 knu Exp $
+# $FreeBSD: ports/devel/mingw-binutils/Makefile,v 1.2 2000/07/08 07:32:12 knu Exp $
 #
 
 PORTNAME=	binutils
 PORTVERSION=	2.9.1
 CATEGORIES=	devel
-MASTER_SITES=	${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR= binutils
+MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
+MASTER_SITE_SUBDIR= binutils/old-releases
 PKGNAMEPREFIX=	mingw-
 
 MAINTAINER=	tino@pa2.so-net.ne.jp
 
+USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--target=i386-mingw32msvc
