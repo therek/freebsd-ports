@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.146 2000/12/31 05:45:45 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.147 2001/01/01 01:31:47 grog Exp $
 #
 
     SUBDIR += agrep
@@ -73,6 +73,7 @@
     SUBDIR += p5-DelimMatch
     SUBDIR += p5-Spreadsheet-ParseExcel
     SUBDIR += p5-Spreadsheet-WriteExcel
+    SUBDIR += p5-String-Strip
     SUBDIR += p5-Text-Autoformat
     SUBDIR += p5-Text-Bind
     SUBDIR += p5-Text-CSV_XS
