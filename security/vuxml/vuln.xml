@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.139 2004/07/02 09:13:07 des Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.140 2004/07/02 13:31:44 eik Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -3716,7 +3716,7 @@ misc.c:
     <affects>
       <package>
         <name>gnats</name>
-        <range><le>3.113.1_7</le></range>
+        <range><le>3.113.1_9</le></range>
       </package>
     </affects>
     <description>
