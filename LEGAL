@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.392 2005/03/11 15:20:54 danfe Exp $
+# $FreeBSD: ports/LEGAL,v 1.393 2005/03/15 20:41:10 thierry Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -549,6 +549,7 @@ Tripwire-*-1.tar.gz	security/tripwire-131	Cannot be redistributed
 tripwire-*.tar.gz	security/tripwire12	Cannot be redistributed for
 						more than the cost of
 						duplication
+ttf30.exe		japanese/epson-ttfonts	Cannot be redistributed
 tuc-*			converters/tuc		Author does not allow
 						CD-ROM distribution
 tutorial.zip		java/java-tutorial	This software is under license
