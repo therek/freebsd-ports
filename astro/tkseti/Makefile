@@ -3,10 +3,10 @@
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.4 1999/09/08 23:41:50 cpiazza Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.5 1999/09/09 03:03:15 cpiazza Exp $
 #
 
-DISTNAME=	tkseti-1.42
+DISTNAME=	tkseti-1.46
 CATEGORIES=	astro tk80
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 
