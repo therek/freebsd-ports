@@ -3,7 +3,7 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.60 2000/02/16 00:56:04 ade Exp $
+# $FreeBSD: ports/graphics/imlib/Makefile,v 1.61 2000/02/27 04:46:32 vanilla Exp $
 #
 
 DISTNAME=	imlib-1.9.8
@@ -29,5 +29,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/imlib \
 		--disable-gtktest
+
+pre-configure:
+	${PERL} -pi -e "s^%%LOCALBASE%%^${LOCALBASE}^" ${WRKSRC}/imlib-config.in
 
 .include <bsd.port.mk>
