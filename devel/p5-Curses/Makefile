@@ -2,17 +2,18 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.19 2000/11/13 12:43:10 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Curses
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Curses
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	demon@FreeBSD.org
+COMMENT=	Perl5 module for terminal screen handling and optimization
 
 PERL_CONFIGURE=	yes
 
