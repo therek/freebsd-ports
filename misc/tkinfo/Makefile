@@ -2,17 +2,17 @@
 # Date created:         16 Jan 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/tkinfo/Makefile,v 1.22 1999/11/28 18:32:10 steve Exp $
+# $FreeBSD: ports/misc/tkinfo/Makefile,v 1.23 2000/04/14 08:46:50 asami Exp $
 #
 
 PORTNAME=	tkinfo
-PORTVERSION=	2.4
-CATEGORIES=	misc tk82
+PORTVERSION=	2.5
+CATEGORIES=	misc tk83
 MASTER_SITES=	http://math-www.uni-paderborn.de/~axel/tkinfo/
 
-MAINTAINER=	tg@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
 NO_BUILD=	yes
 MAN1=		tkinfo.1
