@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.218 2001/08/11 12:00:19 markm Exp $
+# $FreeBSD: ports/security/Makefile,v 1.219 2001/08/16 11:40:29 knu Exp $
 #
 
     SUBDIR += aafid2
@@ -140,6 +140,7 @@
     SUBDIR += pktsuckers
     SUBDIR += portscanner
     SUBDIR += portsentry
+    SUBDIR += ppgen
     SUBDIR += pscan
     SUBDIR += py-amkCrypto
     SUBDIR += py-fchksum
