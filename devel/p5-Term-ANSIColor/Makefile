@@ -2,7 +2,7 @@
 # Date created:				1 December 1999
 # Whom:	      				Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/devel/p5-Term-ANSIColor/Makefile,v 1.3 2000/04/16 23:12:33 mharo Exp $
+# $FreeBSD: ports/devel/p5-Term-ANSIColor/Makefile,v 1.4 2000/08/11 10:30:24 will Exp $
 #
 
 PORTNAME=	Term-ANSIColor
@@ -16,12 +16,9 @@ DISTNAME=	ANSIColor-${PORTVERSION}
 MAINTAINER=	dsh@vlink.ru
 
 USE_PERL5=	YES
-CONFIGURE_ARGS=	PREFIX=${PREFIX}
+PERL_CONFIGURE=	YES
 
 MAN3=		Term::ANSIColor.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-
-do-configure:
-		@ cd ${WRKSRC}; ${SETENV} ${CONFIGURE_ENV} ${PERL5} Makefile.PL ${CONFIGURE_ARGS}
 
 .include <bsd.port.mk>
