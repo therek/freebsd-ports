@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.22 2001/08/16 13:13:49 sobomax Exp $
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -43,5 +43,8 @@ FIXME=		find ${WRKSRC} -name GNUmakefile.in | xargs ${PERL} -pi -e \
 pre-configure:
 	@cd ${WRKSRC} && ${TOUCH} NEWS README AUTHORS ChangeLog
 	@cd ${WRKSRC}/ac-helpers && ${RM} -f install-sh mkinstalldirs missing
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
