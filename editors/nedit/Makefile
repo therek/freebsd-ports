@@ -2,7 +2,7 @@
 # Date created:				7 April 1996
 # Whom:	Daniel Eischen <deischen@freebsd.org>
 #
-# $FreeBSD: ports/editors/nedit/Makefile,v 1.18 2000/03/27 03:50:28 deischen Exp $
+# $FreeBSD: ports/editors/nedit/Makefile,v 1.19 2000/04/14 00:25:38 mharo Exp $
 #
 
 PORTNAME=	nedit
@@ -19,7 +19,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 REQUIRES_MOTIF=	yes
 USE_X_PREFIX=	yes
 EXTRACT_ONLY=	nedit-5.1.1-src.tar.gz
-MAN1=		nedit.1 nc.1
+MAN1=		nclient.1 nedit.1
 ALL_TARGET=	freebsd
 
 post-extract:
