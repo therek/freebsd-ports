@@ -1,7 +1,8 @@
-# $FreeBSD: ports/net/Makefile,v 1.387 2000/07/29 10:36:43 sada Exp $
+# $FreeBSD: ports/net/Makefile,v 1.388 2000/07/31 14:23:34 nbm Exp $
 #
 
     SUBDIR += SSLtelnet
+    SUBDIR += adasockets
     SUBDIR += adns
     SUBDIR += amcl
     SUBDIR += archie
