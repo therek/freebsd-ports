@@ -2,7 +2,7 @@
 # Date created:         4 June 2001
 # Whom:                 Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gdchart/Makefile,v 1.2 2001/06/18 07:02:59 mharo Exp $
+# $FreeBSD: ports/graphics/gdchart/Makefile,v 1.3 2001/07/17 06:58:11 knu Exp $
 #
 
 PORTNAME=	gdchart
@@ -19,6 +19,9 @@ LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/${DISTNAME}
+
+post-patch:
+	${PERL} -i -pe 's/^#ifdef HAVE_JPEG/#ifndef NO_JPEG/' ${WRKSRC}/*.[ch]
 
 do-install:
 	${INSTALL_DATA}	${WRKSRC}/libgdchart.a ${PREFIX}/lib
