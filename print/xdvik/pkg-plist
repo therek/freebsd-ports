@@ -1,12 +1,13 @@
-@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.6 2004/06/18 15:29:43 hrs Exp $
+@comment $FreeBSD: ports/print/xdvik/pkg-plist,v 1.7 2004/12/21 19:42:33 hrs Exp $
 bin/xdvi
 bin/xdvi-motif.bin
 bin/xdvizilla
-%%TEXMF%%/xdvi/XDvi.xdvik-tetex
-%%TEXMF%%/xdvi/xdvi.cfg
-%%TEXMF%%/xdvi/pixmaps/toolbar.xpm
-%%TEXMF%%/xdvi/pixmaps/toolbar2.xpm
-@dirrm %%TEXMF%%/xdvi/pixmaps
+%%TEXMFDIR%%/xdvi/XDvi
+%%TEXMFDIR%%/xdvi/xdvi.cfg
+%%TEXMFDIR%%/xdvi/pixmaps/toolbar.xpm
+%%TEXMFDIR%%/xdvi/pixmaps/toolbar2.xpm
+@dirrm %%TEXMFDIR%%/xdvi/pixmaps
+%%TEXMFCONFIGDIR%%/xdvi/XDvi
 %%PORTDOCS%%%%DOCSDIR%%/BUGS
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
