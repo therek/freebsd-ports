@@ -2,26 +2,26 @@
 # Date created:				24 August 1999
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.2 2000/01/22 09:22:51 mharo Exp $
+# $FreeBSD: ports/databases/tcl-Mysql/Makefile,v 1.3 2000/04/08 22:49:00 mharo Exp $
 #
 
 PORTNAME=	tcl-sql
 PORTVERSION=	20000114
-CATEGORIES=	databases tcl80
+CATEGORIES=	databases tcl82
 MASTER_SITES=	http://www.binevolve.com/~tdarugar/tcl-sql/download/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	mi@aldan.algebra.com
 
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
-RUN_DEPENDS=	tclsh8.0:${PORTSDIR}/lang/tcl80
+RUN_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
 
 WRKSRC=		${WRKDIR}/tcl-sql/
 
 do-build:
 	cd ${WRKSRC} && ${MAKE} PREFIX="${PREFIX}" -f ${FILESDIR}/Makefile.bsd
 
-SQL_DIR=	${PREFIX}/lib/tcl8.0/sql1.0
+SQL_DIR=	${PREFIX}/lib/tcl8.2/sql1.0
 
 do-install:
 	${MKDIR} ${SQL_DIR}
