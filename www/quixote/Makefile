@@ -2,11 +2,11 @@
 # Date created:		18 September 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quixote/Makefile,v 1.2 2001/09/18 13:27:46 wjv Exp $
+# $FreeBSD: ports/www/quixote/Makefile,v 1.3 2001/10/08 15:44:09 wjv Exp $
 #
 
 PORTNAME=	quixote
-PORTVERSION=	0.4
+PORTVERSION=	0.4.1
 CATEGORIES=	www python
 MASTER_SITES=	http://www.mems-exchange.org/software/files/quixote/
 DISTNAME=	Quixote-${PORTVERSION}
@@ -32,7 +32,7 @@ do-install:
 post-install:
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${DOCSDIR}
-.for docfile in CHANGES LICENSE README TODO doc/ACKS doc/*.txt
+.for docfile in ACKS CHANGES LICENSE README TODO doc/*.txt
 	@ ${INSTALL_DATA} ${WRKSRC}/${docfile} ${DOCSDIR}
 .endfor
 .endif
