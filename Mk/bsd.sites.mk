@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.66 2001/07/23 09:17:42 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.67 2001/08/08 08:24:32 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -151,7 +151,7 @@ MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.is.co.za/programming/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/lang/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,lang/perl/CPAN/modules/by-module/&,} \
-	ftp://ftp.mirror.ac.uk/sites/ftp.cpan.org/CPAN/modules/by-module/%SUBDIR%/ \
+	ftp://ftp.mirror.ac.uk/sites/ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://sunsite.org.uk/packages/perl/CPAN/modules/by-module/%SUBDIR%/
 
 #
