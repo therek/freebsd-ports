@@ -4,13 +4,14 @@
 # Date created:         29 Sept 1996
 # Whom:                 David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/comms/lrzsz/Makefile,v 1.11 1999/08/25 05:12:36 obrien Exp $
+# $FreeBSD: ports/comms/lrzsz/Makefile,v 1.12 1999/09/19 04:26:31 obrien Exp $
 
 DISTNAME=	lrzsz-0.12.20
 CATEGORIES=	comms
 MASTER_SITES=	ftp://tirka.ohse.de/uwe/releases/  \
 		ftp://ftp.netsw.org/netsw/Network/Modem/Protocols/ZModem/lrzsz/  \
 		http://www.nrw.net/uwe/archive/  \
+		http://194.245.36.15/uwe/archive/  \
 		ftp://ftp.ihg.uni-duisburg.de/uwe/  \
 		ftp://ftp.kddlabs.co.jp/pub/Linux/packages/stampedelinux/stampedelinux/unstable/pre-0.90/source/comm/lrzsz/source/
 
