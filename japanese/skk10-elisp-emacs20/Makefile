@@ -2,7 +2,7 @@
 # Date created:		21 September 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.8 2000/05/07 14:38:09 shige Exp $
+# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.9 2000/07/19 05:53:02 shige Exp $
 #
 
 PORTNAME=	skk-elisp
@@ -14,7 +14,7 @@ DISTNAME=	skk${SKK10_VER}
 
 MAINTAINER?=	shige@FreeBSD.org
 
-SKK10_VER=	10.59
+SKK10_VER=	10.62a
 
 # This port is a master port.
 PORT_CLASS?=	master
@@ -63,7 +63,6 @@ EXPERIMENTAL_LISPS=	experimental/skk-abbrev.el \
 			experimental/skk-dcomp.el \
 			experimental/skk-hankaku-mode.el \
 			experimental/skk-jisx0201.el \
-			experimental/skk-lookup.el \
 			experimental/tut-code/skk-def.el \
 			experimental/tut-code/skk-tutcdef.el \
 			experimental/tut-code/skk-tutcode.el
