@@ -3,7 +3,7 @@
 # Date created:		22 January 1999
 # Whom:			Kazutoki TAKAMUNE <takamune@avrl.mei.co.jp>
 #
-# $FreeBSD: ports/japanese/epwutil/Makefile,v 1.3 1999/09/06 18:20:36 taoka Exp $
+# $FreeBSD: ports/japanese/epwutil/Makefile,v 1.4 1999/10/27 08:46:03 mharo Exp $
 #
 
 DISTNAME=	epwutil-1.0
@@ -27,7 +27,7 @@ do-install:
 	cd ${WRKSRC};\
 	${INSTALL_MAN} ${file}.man ${MANPREFIX}/man/${MANLANG}/cat1/${file}.1
 .if !defined(NOMANCOMPRESS)
-	${GZIP_CMD} -9nf ${MANPREFIX}/man/${MANLANG}/cat1/${file}.1
+	${GZIP_CMD} ${MANPREFIX}/man/${MANLANG}/cat1/${file}.1
 .endif
 .endfor
 	@${MKDIR} ${EPWDOCDIR}
