@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.257 2000/01/29 05:21:22 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.258 2000/02/02 17:11:25 flathill Exp $
 #
 
     SUBDIR += Canna
@@ -32,6 +32,7 @@
     SUBDIR += eblook
     SUBDIR += ebw3
     SUBDIR += edict
+    SUBDIR += edict-fpw
     SUBDIR += edict-sdic
     SUBDIR += ee
     SUBDIR += elisa10x8
