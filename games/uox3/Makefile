@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.8 1999/09/11 01:00:29 dburr Exp $
+# $FreeBSD: ports/games/uox3/Makefile,v 1.9 1999/10/07 04:29:15 dburr Exp $
 #
 
 DISTNAME=	uox3v6902-linux
@@ -27,7 +27,7 @@ do-build:
 	cd ${WRKSRC}/dev && ${GMAKE} -f ${MAKEFILE} CFLAGS="${CFLAGS}" ${ALL_TARGET}
 
 do-install:
-	${RM} ${WRKDIR}/uox/uox3.ini.orig
+	-${RM} ${WRKDIR}/uox/uox3.ini.orig
 	${MKDIR} ${PREFIX}/uox3
 	for FILE in ${WRKDIR}/uox/* ; do \
 		${INSTALL_DATA} $${FILE} ${PREFIX}/uox3 ;\
