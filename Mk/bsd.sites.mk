@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.280 2005/01/29 18:04:14 tobez Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.281 2005/02/03 12:45:07 tobez Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -889,6 +889,16 @@ MASTER_SITE_PYTHON+= \
 	http://python.mirrors.pair.com/%SUBDIR%/ \
 	http://mirrors.ccs.neu.edu/Python/pub/www.python.org/%SUBDIR%/ \
 	http://shattered.teched.net/www.python.org/%SUBDIR%/
+
+MASTER_SITE_QT+= \
+	ftp://sunsite.rediris.es/mirror/Qt/source/%SUBDIR%/ \
+	ftp://ftp.iasi.roedu.net/mirrors/ftp.trolltech.com/qt/sources/%SUBDIR%/ \
+	ftp://ftp.ntua.gr/pub/X11/Qt/qt/source/%SUBDIR%/ \
+	ftp://ftp.tu-chemnitz.de/pub/Qt/source/%SUBDIR%/ \
+	ftp://ftp.silug.org/mirrors/ftp.trolltech.com/qt/source/%SUBDIR%/ \
+	ftp://ftp.planetmirror.com.au/pub/trolltech/qt/source/%SUBDIR%/ \
+	ftp://ftp.fu-berlin.de/unix/X11/gui/Qt/source/%SUBDIR%/ \
+	ftp://ftp.trolltech.com/qt/source/%SUBDIR%/
 
 MASTER_SITE_REDHAT_LINUX+= \
 	http://mirrors.usc.edu/pub/linux/distributions/redhat/redhat/linux/%SUBDIR%/ \
