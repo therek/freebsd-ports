@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.8 2000/01/30 16:23:51 imura Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.9 2000/02/03 03:28:22 obrien Exp $
 #
 
 DISTNAME=	w3m-${W3M_VER}
@@ -15,10 +15,6 @@ MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/dev/ \
 		http://grilli.net/mirrors/w3m/download/dev/
 
 MAINTAINER=	nobutaka@nobutaka.com
-
-.if defined(USE_SSL)
-RESTRICTED=     "Contains cryptography"
-.endif
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgc.a:${PORTSDIR}/devel/boehm-gc
 
@@ -47,21 +43,16 @@ DOCS_JP=	${DOCS} HISTORY HISTORY.kokb README.keymap README.kokb \
 		README.menu
 .endif
 
-.if defined(USE_SSL)
-LIB_DEPENDS+=	crypto.1:${PORTSDIR}/security/openssl \
-		ssl.1:${PORTSDIR}/security/openssl
-
-SSL_CFLAGS=	-I${LOCALBASE}/include/openssl
-SSL_LIBS=	-lssl -lcrypto
-.if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
-EXTRA_SSL_LIBS=	-lRSAglue -lrsaref
-.endif
+.if defined(USE_OPENSSL)
+SSL_CFLAGS=	-I${OPENSSLINC}/openssl -I${OPENSSLINC}
+SSL_LIBS=	-L${OPENSSLLIB} -lssl -lcrypto
 
 SED_CMD+=	-e "s,undef USE_SSL,define USE_SSL,g"
 .endif
 
-MAKE_FLAGS+=	DEFS="-I${LOCALBASE}/include ${SSL_CFLAGS}" \
-		LIBS="-L${LOCALBASE}/lib ${SSL_LIBS} ${EXTRA_SSL_LIBS}"
+EXTRA_SSL_LIBS=	-lRSAglue -lrsaref -L${LOCALBASE}/lib 
+MAKE_FLAGS+=	DEFS="${SSL_CFLAGS} -I${LOCALBASE}/include" \
+		LIBS="${SSL_LIBS} ${EXTRA_SSL_LIBS}"
 
 post-configure:
 	@${CP} ${TARGET} ${TARGET}.in
