@@ -2,11 +2,12 @@
 # Date created:        18 November 2000
 # Whom:                Jason R. Mastaler <jason@mastaler.com>
 #
-# $FreeBSD: ports/audio/mad/Makefile,v 1.3 2001/04/12 16:24:23 sobomax Exp $
+# $FreeBSD: ports/audio/mad/Makefile,v 1.4 2001/05/22 16:57:53 ijliao Exp $
 #
 
 PORTNAME=	mad
 PORTVERSION=	0.13.0b
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.mars.org/pub/mpeg/
@@ -16,10 +17,16 @@ MAINTAINER=	jason@mastaler.com
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
+PLIST_SUB+=     PORTVERSION="${PORTVERSION}"
+
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALLS_SHLIB= yes
 LIBTOOLFILES=	configure libmad/configure
-CONFIGURE_ARGS=	--disable-debugging --enable-sso --enable-accuracy
+CONFIGURE_ARGS=	--enable-shared \
+		--disable-debugging \
+		--enable-sso \
+		--enable-accuracy
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
