@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.346 2004/04/12 13:13:17 netchild Exp $
+# $FreeBSD: ports/LEGAL,v 1.347 2004/05/22 19:21:37 clement Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -150,7 +150,7 @@ ffj30_ce_ml.class	ports/java/forte	Restrictive copyright.
 fp-freebsd-ws-*		ports/security/f-prot	Free for personal use only
 freenet6-client-*	ports/net/freenet6	Must agree to License Agreement before downloading.
 ftree-*			ports/misc/ftree	Can't distribute commercially.
-fwtk-*			ports/security/fwtk	No redistribution allowed
+fwtk/*			ports/security/fwtk	No redistribution allowed
 Frisk-*			ports/games/xfrisk	Copyright/trademark violation?
 gap/*			ports/math/gap		Don't sell for profit
 gentium			ports/x11-fonts/gentium	License forbids commercial distribution
