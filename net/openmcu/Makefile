@@ -2,7 +2,7 @@
 # Date created:		Wed Nov 22 08:57:55 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openmcu/Makefile,v 1.7 2001/08/11 15:27:43 roger Exp $
+# $FreeBSD: ports/net/openmcu/Makefile,v 1.8 2001/10/08 05:11:30 roger Exp $
 #
 
 PORTNAME=	openmcu

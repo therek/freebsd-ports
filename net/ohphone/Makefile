@@ -2,7 +2,7 @@
 # Date created:		Fri Aug 18 19:29:00 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ohphone/Makefile,v 1.8 2001/08/17 16:16:23 roger Exp $
+# $FreeBSD: ports/net/ohphone/Makefile,v 1.9 2001/10/08 05:11:30 roger Exp $
 #
 
 PORTNAME=	ohphone

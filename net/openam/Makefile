@@ -2,7 +2,7 @@
 # Date created:		Tue May  2 15:43:02 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openam/Makefile,v 1.12 2001/08/17 16:25:14 roger Exp $
+# $FreeBSD: ports/net/openam/Makefile,v 1.13 2001/10/08 05:11:30 roger Exp $
 #
 
 PORTNAME=	openam

@@ -2,7 +2,7 @@
 # Date created:		Wed Apr 15 15:41:00 GMT 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.19 2001/08/10 16:03:02 roger Exp $
+# $FreeBSD: ports/net/gatekeeper/Makefile,v 1.20 2001/10/08 05:11:30 roger Exp $
 #
 
 PORTNAME=	gatekeeper

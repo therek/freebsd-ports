@@ -2,7 +2,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.23 2001/08/11 15:19:26 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.24 2001/10/08 05:11:30 roger Exp $
 #
 
 PORTNAME=	openh323
