@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.99 2001/03/02 10:09:40 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.100 2001/03/06 23:55:37 obrien Exp $
 #
 
 SNAPDATE=	2001-03-05
@@ -47,7 +47,7 @@ CONFIGURE_TARGET=	${ARCH}-portbld-freebsdaout${OSREL}
 ##BUILD_WRKSRC=		${WRKDIR}/build
 ##INSTALL_WRKSRC=		${WRKDIR}/build
 ##CONFIGURE_SCRIPT=	${WRKSRC}/configure
-EGCS_REV=	2.97
+EGCS_REV=	3.0
 SRCDIR=		${WRKDIR}/gcc-${SNAPVER}
 WRKSRC=		${WRKDIR}/build
 TARGLIB=	${PREFIX}/lib/gcc-lib/${CONFIGURE_TARGET}/${EGCS_REV}
