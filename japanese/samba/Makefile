@@ -2,7 +2,7 @@
 # Date created:				27 Dec 1999
 # Whom:					Shinya Sasaki <pcmaster@osk3.3web.ne.jp>
 #
-# $FreeBSD: ports/japanese/samba/Makefile,v 1.8 2000/09/25 07:34:24 knu Exp $
+# $FreeBSD: ports/japanese/samba/Makefile,v 1.9 2000/12/07 06:54:23 knu Exp $
 #
 
 PORTNAME=	samba
@@ -24,7 +24,7 @@ BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 Y2K=		http://us1.samba.org/samba/docs/sambay2k.html
 
 SAMBA_VERSION=		2.0.7
-SAMBA_JA_VERSION=	2.1
+SAMBA_JA_VERSION=	2.2
 
 # directories
 VARDIR=		/var
@@ -44,7 +44,8 @@ CONFIGURE_ARGS=	--with-i18n-swat --with-included-gettext \
 		--localstatedir=${VARDIR} --with-swatdir=${PREFIX}/share/swat \
 		--with-sambabook=${PREFIX}/share/swat/using_samba \
 		--with-lockdir=${VARDIR}/spool/lock \
-		--with-privatedir=${SAMBA_PRIVATE}
+		--with-privatedir=${SAMBA_PRIVATE} \
+		--prefix=${PREFIX}
 
 .if defined(KRB5_HOME) && exists(${KRB5_HOME})
 CONFIGURE_ARGS+=--with-krb5=${KRB5_HOME}
