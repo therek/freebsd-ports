@@ -3,11 +3,11 @@
 # Date created:			May 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/devel/log4cpp/Makefile,v 1.1 2001/05/01 17:30:29 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	log4cpp
-PORTVERSION=	0.2.5
+PORTVERSION=	0.2.7
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
