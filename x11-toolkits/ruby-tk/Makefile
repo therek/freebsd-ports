@@ -2,15 +2,15 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.19 2000/09/28 19:33:39 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.20 2000/10/08 10:31:13 asami Exp $
 #
 
 PORTNAME=	tk
-PORTVERSION=	${RUBY_VERSION}
+PORTVERSION=	${RUBY_PORTVERSION}
 CATEGORIES+=	x11-toolkits ruby tk${TK_VERSION}
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
-DISTNAME=	ruby-${PORTVERSION}
+DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER?=	knu@FreeBSD.org
@@ -22,7 +22,7 @@ USE_RUBY_EXTCONF=	yes
 
 MD5_FILE=	${PORTSDIR}/lang/ruby/distinfo
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/ext/tk
+WRKSRC=		${RUBY_WRKSRC}/ext/tk
 
 TK_VERSION?=	82
 .if defined(WITH_TCLTK_JP)
