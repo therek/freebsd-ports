@@ -4,7 +4,7 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.3 2000/02/07 23:42:16 obrien Exp $
+# $FreeBSD: ports/emulators/osf1_base/Makefile,v 1.4 2000/02/13 03:24:05 obrien Exp $
 #
 
 DISTNAME=	netscape-4.7-1.alpha
@@ -42,14 +42,11 @@ do-install:
 	fi
 	@${MKDIR} ${PREFIX}/usr/lib
 	@${LN} -sf ${X11BASE}/lib/X11 ${PREFIX}/usr/lib
-	@${TAR} --exclude usr/local/* -xpzf \
-		${WRKSRC}/usr/local/netscape/netscape-all-4.7.tar.gz \
-		-C ${PREFIX}
+	@(cd ${WRKSRC} && ${TAR} -cf - etc sbin usr/shlib) | \
+		${TAR} -xpf - -C ${PREFIX}
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libc_r.so
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libpthread.so
 	@cd ${PREFIX}/usr/shlib ; ${LN} -sf libc.so libpthreads.so
 	@touch ${PREFIX}/etc/sia/siainitgood
-	@${RM} ${PREFIX}/usr/bin/netscape
-	@${RMDIR} ${PREFIX}/usr/bin
 
 .include <bsd.port.mk>
