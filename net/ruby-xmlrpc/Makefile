@@ -2,13 +2,13 @@
 # Date created:		9 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.3 2001/03/23 22:41:22 knu Exp $
+# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.4 2001/04/20 18:44:53 knu Exp $
 #
 
 PORTNAME=	xmlrpc
-PORTVERSION=	1.6.1
+PORTVERSION=	1.6.2
 CATEGORIES=	net ruby
-MASTER_SITES=	http://www.s-direktnet.de/homepages/neumann/xmlrpc4r/
+MASTER_SITES=	http://www.fantasy-coders.de/ruby/xmlrpc4r/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}4r-${PORTVERSION:S/./_/g}
 DIST_SUBDIR=	ruby
