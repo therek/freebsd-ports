@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.137 2001/09/21 05:43:55 knu Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.138 2001/10/04 08:51:43 wjv Exp $
 #
 
     SUBDIR += adodb
@@ -61,6 +61,7 @@
     SUBDIR += p5-DBIx-XML_RDB
     SUBDIR += p5-DBZ_File
     SUBDIR += p5-GDBM
+    SUBDIR += p5-GraphViz-DBI
     SUBDIR += p5-MLDBM
     SUBDIR += p5-Msql
     SUBDIR += p5-MyObject
