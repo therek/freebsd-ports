@@ -1,7 +1,7 @@
-# -*- mode: Fundamental; tab-width: 4; -*-
+# -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.14 2001/08/03 11:20:33 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.15 2002/01/07 13:26:45 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -150,7 +150,8 @@ PYTHON_WRKSRC=		${WRKDIR}/Python-1.5.2
 	@${ECHO} "  python1.5"
 	@${ECHO} "  python1.6"
 	@${ECHO} "  python2.0"
-	@${ECHO} "  python2.1 (default)."
+	@${ECHO} "  python2.1"
+	@${ECHO} "  python2.2 (default)."
 	@${FALSE}
 .endif
 
