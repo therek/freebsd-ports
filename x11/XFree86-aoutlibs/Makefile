@@ -3,7 +3,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.1.1.1 2000/03/07 06:40:22 reg Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.2 2000/03/07 09:58:57 reg Exp $
 #
 
 DISTNAME=	Xbin
@@ -23,7 +23,7 @@ PORTOBJFORMAT=	aout
 USE_X_PREFIX=	yes
 
 pre-configure:
-	@${SETENV} ${SCRIPTS_ENV} ARCH=${ARCH} ${SH} \
+	@${SETENV} ${SCRIPTS_ENV} ${SH} \
 		${PKGDIR}/REQ ${PKGNAME} INSTALL
 
 do-install:
