@@ -2,7 +2,7 @@
 # Date created:				16 August 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/db3/Makefile,v 1.30 2001/06/22 20:03:03 olgeni Exp $
+# $FreeBSD: ports/databases/db3/Makefile,v 1.31 2001/07/24 16:13:21 knu Exp $
 #
 
 PORTNAME=	db3
@@ -11,6 +11,7 @@ PORTREVISION=	2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.sleepycat.com/update/${PORTVERSION}/
 DISTNAME=	db-${PORTVERSION}
+DIST_SUBDIR=	bdb
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	patch.3.2.9.1 patch.3.2.9.2
@@ -29,7 +30,7 @@ CONFIGURE_ARGS=		--enable-compat185 \
 			--enable-dynamic \
 			--prefix=${PREFIX} \
 			--includedir=${PREFIX}/include/db3 \
-			--target=$(ARCH)-unknown-freebsd$(OSREL)
+			--target=${ARCH}-unknown-freebsd${OSREL}
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/${CONFIGURE_SCRIPT}
