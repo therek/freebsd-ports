@@ -2,7 +2,7 @@
 # Date created:				Wed Dec 22 18:20:05 CET 1999
 # Whom:					berend@pobox.com
 #
-# $FreeBSD: ports/lang/smalleiffel-devel/Makefile,v 1.4 2000/10/08 10:21:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smalleiffel
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	sada
 MAINTAINER=	berend@pobox.com
 
 WRKSRC=		${WRKDIR}/SmallEiffel
+
+NO_LATEST_LINK=	yes
 
 # SmallEiffel needs this to find system.se
 MAKE_ENV+=	SmallEiffel=${WRKSRC}/sys/system.se
