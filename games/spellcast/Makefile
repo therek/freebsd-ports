@@ -2,15 +2,15 @@
 # Date created:				28 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/spellcast/Makefile,v 1.6 2000/04/02 00:59:06 mharo Exp $
+# $FreeBSD: ports/games/spellcast/Makefile,v 1.7 2000/04/14 12:26:36 asami Exp $
 #
 
 PORTNAME=	spellcast
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	games
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://www.macula.net/lightside/
-MASTER_SITE_SUBDIR=	games/multiplayer
+MASTER_SITES=	http://www.eblong.com/zarf/ftp/
+DISTNAME=	${PORTNAME}
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -22,7 +22,7 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/spellcast.6 ${PREFIX}/man/man6
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/spellcast
-.for file in README.1 README.2 spelllist.ps
+.for file in README spelllist.ps
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/spellcast
 .endfor
 .endif
