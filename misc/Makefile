@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.351 2001/05/31 13:14:34 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.352 2001/06/11 03:48:32 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -145,6 +145,7 @@
     SUBDIR += seizedesktop
     SUBDIR += sh-utils
     SUBDIR += shc
+    SUBDIR += shuffle
     SUBDIR += sloccount
     SUBDIR += sls
     SUBDIR += smssend
