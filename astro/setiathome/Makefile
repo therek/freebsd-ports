@@ -1,9 +1,8 @@
 # Ports collection makefile for:    setiathome
-# Version required:     1.2
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.15 2000/02/08 09:25:46 peter Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.16 2000/04/13 06:22:01 asami Exp $
 #
 
 PORTNAME=	setiathome
@@ -26,9 +25,9 @@ MAN1=		setiathome.1
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400000
+PORTVERSION=	1.1
 DISTFILES=      setiathome-1.1.i386-unknown-freebsd4.0.tar
 WRKSRC=         setiathome-1.1.i386-unknown-freebsd4.0
-PKGNAME=	setiathome-1.1
 .elif ${OSVERSION} >= 320000
 DISTFILES=      setiathome-1.2.i386-unknown-freebsd3.2.tar
 WRKSRC=         setiathome-1.2.i386-unknown-freebsd3.2
