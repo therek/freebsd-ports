@@ -2,7 +2,7 @@
 # Date created:				28 May 1999
 # Whom:					Jeffery Hansen <hansen@cmu.edu>
 #
-# $FreeBSD: ports/cad/tkgate/Makefile,v 1.5 2000/03/24 00:29:25 mharo Exp $
+# $FreeBSD: ports/cad/tkgate/Makefile,v 1.6 2000/04/08 23:20:08 mharo Exp $
 #
 
 PORTNAME=		tkgate
@@ -18,5 +18,6 @@ RUN_DEPENDS=		tclsh8.0:${PORTSDIR}/lang/tcl80/
 
 USE_IMAKE=		yes
 USE_BISON=		yes
+MAN1=			gmac.1 tkgate.1
 
 .include <bsd.port.mk>
