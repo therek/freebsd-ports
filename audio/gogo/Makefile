@@ -2,7 +2,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.20 2000/07/05 07:52:09 nakai Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.21 2000/07/19 05:48:10 nakai Exp $
 #
 
 PORTNAME=	gogo
@@ -32,7 +32,7 @@ pre-fetch:
 	@${ECHO_MSG} "set WITH_THREADS to compile with linuxthreads."
 	@${ECHO_MSG} "It would increase performance in SMP environment."
 .else
-MAKE_ENV+=	"WITH_THREADS=yes"
+MAKE_ENV+=	"USE_MT=yes"
 LIB_DEPENDS=	lthread.2:${PORTSDIR}/devel/linuxthreads
 .endif
 
