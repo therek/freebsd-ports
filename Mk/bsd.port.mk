@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.481 2004/01/23 16:22:26 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.482 2004/01/23 22:31:36 deischen Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1848,8 +1848,8 @@ MAKE_ENV+=		PREFIX=${PREFIX} LOCALBASE=${LOCALBASE} X11BASE=${X11BASE} MOTIFLIB=
 PTHREAD_CFLAGS=	-D_THREAD_SAFE
 PTHREAD_LIBS=		-pthread
 .else
-PTHREAD_CFLAGS?=
-PTHREAD_LIBS?=		-lc_r
+PTHREAD_CFLAGS=	-D_THREAD_SAFE
+PTHREAD_LIBS=		-lc_r
 .endif
 
 .if exists(/usr/bin/fetch)
