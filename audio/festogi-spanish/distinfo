@@ -1,2 +1,3 @@
-$FreeBSD: ports/audio/festogi-spanish/distinfo,v 1.3 2003/11/21 04:21:35 trevor Exp $
+$FreeBSD: ports/audio/festogi-spanish/distinfo,v 1.4 2004/02/06 19:36:19 trevor Exp $
 MD5 (festival/OGIspanish-2.0.1.tar.gz) = 0c0d9f60344a7b5a7677df43b1ffb330
+SIZE (festival/OGIspanish-2.0.1.tar.gz) = 15783
