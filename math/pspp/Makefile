@@ -2,7 +2,7 @@
 # Date created:                        22 Apr 2000
 # Whom:                                Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/pspp/Makefile,v 1.1 2000/05/13 14:15:13 hoek Exp $
+# $FreeBSD: ports/math/pspp/Makefile,v 1.2 2001/01/06 20:24:31 demon Exp $
 #
 
 PORTNAME=	pspp
@@ -11,7 +11,7 @@ CATEGORIES=	math
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/pspp/ \
 		ftp://pspp.stat.wisc.edu/pub/PSPP/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	john@coastalgeology.org
 
 GNU_CONFIGURE=	yes
 
