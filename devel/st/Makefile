@@ -2,11 +2,11 @@
 # Date created:         Sun Feb 18 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD: ports/devel/st/Makefile,v 1.1 2001/03/17 06:48:17 dinoex Exp $
+# $FreeBSD: ports/devel/st/Makefile,v 1.2 2001/06/12 19:24:45 tobez Exp $
 #
 
 PORTNAME=	st
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	devel
 MASTER_SITES=	http://oss.sgi.com/projects/state-threads/download/ \
 		ftp://oss.sgi.com/www/projects/state-threads/download/ \
