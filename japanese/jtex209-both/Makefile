@@ -2,7 +2,7 @@
 # Date created:		4 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.12 2000/04/11 14:14:02 knu Exp $
+# $FreeBSD: ports/japanese/jtex209-both/Makefile,v 1.13 2000/04/15 04:22:34 asami Exp $
 #
 
 PORTNAME=	jlatex209
@@ -22,7 +22,7 @@ MAINTAINER=	mita@jp.FreeBSD.org
 ASCII_VERSION=	1.7
 NTT_VERSION=	1.52
 
-MANUAL_PACKAGE_BUILD=	incompatible with other versions of jtex-*
+#MANUAL_PACKAGE_BUILD=	incompatible with other versions of jtex-*
 USE_GMAKE=	yes
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	jtex-${NTT_VERSION}.tar.gz
