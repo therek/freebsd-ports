@@ -2,7 +2,7 @@
 # Date created:		13 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/biology/p5-bioperl-devel/Makefile,v 1.1 2001/08/14 09:36:33 wjv Exp $
+# $FreeBSD: ports/biology/p5-bioperl-devel/Makefile,v 1.2 2001/08/20 12:41:08 wjv Exp $
 #
 
 PORTNAME=	bioperl
@@ -32,6 +32,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Ace.pm:
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	YES
+NO_LATEST_LINK=	"Unstable development version."
 
 .if defined(WITH_CORBA)
 WITH_CORBA_CLIENT=	YES
