@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.35 2001/07/07 14:27:00 ijliao Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.36 2001/08/25 09:55:43 kris Exp $
 #
 
     SUBDIR += SETIsupport
@@ -23,6 +23,7 @@
     SUBDIR += sattrack
     SUBDIR += seti_applet
     SUBDIR += setiathome
+    SUBDIR += spacechart
     SUBDIR += sscalc
     SUBDIR += stars
     SUBDIR += sunclock
