@@ -3,7 +3,7 @@
 # Date created:        27 November 1998
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wmmon/Makefile,v 1.10 1999/08/31 02:00:23 peter Exp $
 #
 
 DISTNAME=	wmmon-1.0b2
@@ -23,6 +23,10 @@ USE_X_PREFIX=   yes
 WRKSRC=		${WRKDIR}/wmmon.app/wmmon
 
 .include <bsd.port.pre.mk>
+
+.if $(OSVERSION) < 400000
+BROKEN=		'cannot compile with 3-stable'
+.endif
 
 .if !defined(NOPORTDOCS)
 post-install:
