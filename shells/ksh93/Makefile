@@ -2,7 +2,7 @@
 # Date created:		1999-10-24
 # Whom:			Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/shells/ksh93/Makefile,v 1.5 2000/04/24 01:40:31 will Exp $
+# $FreeBSD: ports/shells/ksh93/Makefile,v 1.6 2000/04/30 18:36:50 knu Exp $
 #
 # ast-base-99 is linked dynamically for BSD/OS and will not work
 
@@ -10,6 +10,8 @@ PORTNAME=		ksh
 PORTVERSION=		19931228
 CATEGORIES=		shells
 # Users must register with AT&T before downloading tarball.
+# You can use the following URL to register/download:
+# http://www.research.att.com/cgi-bin/access.cgi/as/vt/ext-software/www-ne-license.cgi?form.reuse.binary
 #MASTER_SITES=		http://www.research.att.com/sw/tools/reuse/
 DISTNAME=		ast-base-98.bsd.i386
 EXTRACT_SUFX=		.tgz
@@ -18,7 +20,6 @@ MAINTAINER=		naddy@mips.inka.de
 
 ONLY_FOR_ARCHS=		i386
 RESTRICTED=		"Requires user to register with AT&T."
-BROKEN=			"Binary distribution no longer available"
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
