@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/mail/exmh2/scripts/install,v 1.5 1999/10/11 14:21:04 markm Exp $
+# $FreeBSD: ports/mail/exmh2/scripts/install,v 1.6 2001/01/22 20:06:10 bmah Exp $
 #
 
 VERSION="`sed -ne 's/^set vers \(.*\)/\1/p' ${WRKSRC}/exmh.install`"
@@ -12,7 +12,7 @@ do
 	install -c -o bin -g bin -m 444 $i.l ${PREFIX}/man/man1/$i.1
 done
 
-BINS="exmh-async exmh-bg exmh ftp.expect inc.expect"
+BINS="exmh-async exmh-bg exmh-strip exmh ftp.expect inc.expect"
 
 echo "install -c -o bin -g bin -m 755 ${BINS} ${PREFIX}/bin"
 install -c -o bin -g bin -m 755 ${BINS} ${PREFIX}/bin
