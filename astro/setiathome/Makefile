@@ -2,11 +2,11 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.23 2001/01/27 04:40:32 kris Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.24 2001/01/28 08:54:41 kris Exp $
 
 PORTNAME=	setiathome
 PORTVERSION=	3.03
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	astro
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/setiathome/ \
 		ftp://alien.ssl.berkeley.edu/pub/ \
@@ -36,7 +36,7 @@ NO_CDROM=	"interactive install"
 BROKEN=		"currently supports only FreeBSD 2.2.6 and above"
 .endif
 
-EXTRACT_CMD=	cat
+EXTRACT_CMD=	${CAT}
 EXTRACT_BEFORE_ARGS=
 STRIP=		# aout is already stripped
 SCRIPTS_ENV+=	PKG_PREFIX=${PREFIX}
@@ -74,18 +74,11 @@ MAN1+=		x${PORTNAME}.1
 .endif
 
 #
-# Post-extract
-#
-
-post-extract:
-	@${CP} ${FILESDIR}/${SCRIPT} ${WRKSRC}
-
-#
 # Post-configure
 #
 
 post-configure:
-	@${PERL} -pi.fbsd -e 's.!!BINDIR!!.${SBINSUBDIR}.g' ${WRKSRC}/${SCRIPT}
+	@${SED} -e 's.!!SUBDIR!!.${SBINSUBDIR}.g' ${FILESDIR}/${SCRIPT} > ${WRKSRC}/${SCRIPT}
 
 #
 # Install
