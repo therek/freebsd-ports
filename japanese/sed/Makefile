@@ -3,7 +3,7 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/sed/Makefile,v 1.9 1999/08/31 06:46:19 mharo Exp $
+# $FreeBSD: ports/japanese/sed/Makefile,v 1.10 1999/09/07 02:40:00 taoka Exp $
 #
 
 DISTNAME=	sed-3.02
@@ -21,5 +21,7 @@ PATCH_SITES=	http://member.nifty.ne.jp/wills/program/
 PATCHFILES=	sedmb108.diff.gz
 PATCH_DIST_STRIP=	-p1
 FETCH_BEFORE_ARGS=	-b
+
+MAN1=		sed.1
 
 .include <bsd.port.mk>
