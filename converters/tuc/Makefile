@@ -2,7 +2,7 @@
 # Date created:				30 March 1999
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/converters/tuc/Makefile,v 1.3 1999/08/25 05:16:30 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tuc
@@ -11,6 +11,7 @@ CATEGORIES=	converters
 MASTER_SITES=	http://www.whizkidtech.net/fports/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Text to Unix Conversion
 
 MAN1=		tuc.1
 

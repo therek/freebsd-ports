@@ -2,7 +2,7 @@
 # Date created:		6 May 1999
 # Whom:			G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/chinese/muni/Makefile,v 1.2 1999/08/25 04:57:54 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	muni
@@ -11,6 +11,7 @@ CATEGORIES=	chinese
 MASTER_SITES=	http://www.whizkidtech.net/i18n/muni/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Find Unicode values for Chinese characters
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/muni ${PREFIX}/bin

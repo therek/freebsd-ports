@@ -2,7 +2,7 @@
 # Date created:		2 June 1996
 # Whom:			ABURAYER Rewsirow <pcs51674@asciinet.or.jp>
 #
-# $FreeBSD: ports/converters/uudx/Makefile,v 1.10 2000/02/21 17:06:41 taoka Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	uudx
@@ -13,6 +13,7 @@ DISTNAME=	uudx_299
 EXTRACT_SUFX=	.lzh
 
 MAINTAINER=	rewsirow@ff.iij4u.or.jp
+COMMENT=	Extractor from uuencoded files
 
 BUILD_DEPENDS=	lha:${PORTSDIR}/archivers/lha \
 		nkf:${PORTSDIR}/japanese/nkf

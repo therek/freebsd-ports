@@ -2,7 +2,7 @@
 # Date created:         10 October 1997
 # Whom:                 volf@oasis.IAEhv.nl
 #
-# $FreeBSD: ports/cad/sis/Makefile,v 1.11 2001/01/12 17:15:14 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		sis
@@ -17,6 +17,7 @@ PATCHFILES=		sis-1.2.patch1.Z
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		volf@oasis.IAEhv.nl
+COMMENT=	Synthesis program for the synthesis of sequential circuits
 
 USE_XLIB=		yes
 MAKEFILE=		Makefile.FreeBSD

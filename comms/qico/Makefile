@@ -2,7 +2,7 @@
 # Date created:		13 Jan 2000
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/comms/qico/Makefile,v 1.10 2001/04/05 10:09:24 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qico
@@ -11,6 +11,7 @@ CATEGORIES=	comms
 MASTER_SITES=	http://lev.serebryakov.spb.ru/download/0.48/
 
 MAINTAINER=	dsh@vlink.ru
+COMMENT=	An FidoNet Technology Network (FTN) compatible mailer for Unix systems
 
 USE_GMAKE=	yes
 MAKE_ENV+=	SH=${SH} AWK=${AWK} MORDA="${MORDA}" DEFS="${DEFS}"

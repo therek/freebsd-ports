@@ -2,7 +2,7 @@
 # Date created:		26 Oct 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/chinese/autoconvert/Makefile,v 1.8 2001/05/10 19:41:41 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	autoconvert
@@ -11,6 +11,7 @@ CATEGORIES=	chinese
 MASTER_SITES=	http://people.debian.org/~ygh/
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
+COMMENT=	Intelligent Chinese encoding converter
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

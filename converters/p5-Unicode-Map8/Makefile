@@ -2,7 +2,7 @@
 # Date created:				20 September 2000
 # Whom:					Ilia Chipitsine <ilia@jane.cgu.chel.su>
 #
-# $FreeBSD: ports/converters/p5-Unicode-Map8/Makefile,v 1.2 2001/03/01 06:39:04 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	Unicode-Map8
 PORTVERSION=	0.10
@@ -12,6 +12,7 @@ MASTER_SITE_SUBDIR=	Unicode
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ilia@cgu.chel.su
+COMMENT=	Perl class that implement efficient mapping tables between 8-bit charsets and Unicode
 
 BUILD_DEPENDS=	${SITE_PERL}/Unicode/String.pm:${PORTSDIR}/converters/p5-Unicode-String
 

@@ -2,7 +2,7 @@
 # Date Created:				5 Dec 1997
 # Whom:					Ming-I Hseh <PA@FreeBSD.Ntu.edu.TW>
 #
-# $FreeBSD: ports/chinese/kcfonts/Makefile,v 1.11 2000/06/27 13:39:07 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kcfonts
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/distfiles/ \
 		ftp://wm28.csie.ncu.edu.tw/pub/distfiles/
 
 MAINTAINER=	PA@FreeBSD.ee.Ntu.edu.TW
+COMMENT=	Kuo Chauo Chinese Fonts collection
 
 USE_X_PREFIX=	yes
 

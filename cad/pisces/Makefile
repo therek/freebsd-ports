@@ -2,7 +2,7 @@
 # Date created:         11-1-1999
 # Whom:                 Gianlorenzo Masini <masini@uniroma3.it>
 #
-# $FreeBSD: ports/cad/pisces/Makefile,v 1.2 2000/08/11 06:34:46 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	piscesIIB
@@ -13,6 +13,7 @@ DISTNAME=	relB.9009
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	masini@uniroma3.it
+COMMENT=	A 2-d electronic device simulator
 
 BUILD_DEPENDS=	f2c:${PORTSDIR}/lang/f2c
 

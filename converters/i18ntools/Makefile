@@ -2,7 +2,7 @@
 # Date created:				17 April 1999
 # Whom:					G. Adam Stanislav
 #
-# $FreeBSD: ports/converters/i18ntools/Makefile,v 1.3 1999/08/25 05:16:19 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	i18ntools
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.whizkidtech.net/unix/ \
 		http://www.whizkidtech.net/fports/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	Tools for the conversion to and from UTF-8 Unicode encoding
 
 LIB_DEPENDS=	utf-8:${PORTSDIR}/converters/libutf-8
 RUN_DEPENDS=	tuc:${PORTSDIR}/converters/tuc

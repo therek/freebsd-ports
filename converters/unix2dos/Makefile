@@ -2,7 +2,7 @@
 # Date created:		1 February 1999
 # Whom:			obonilla@fisicc-ufm.edu
 #
-# $FreeBSD: ports/converters/unix2dos/Makefile,v 1.5 2000/07/04 10:31:42 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unix2dos
@@ -11,6 +11,7 @@ CATEGORIES=	converters
 MASTER_SITES=	ftp://ftp.guug.org/pub/
 
 MAINTAINER=	obonilla@galileo.edu
+COMMENT=	Translate ASCII files from DOS (cr/lf) to UNIX (lf)
 
 MAN1=		unix2dos.1 dos2unix.1
 NO_WRKSUBDIR=	yes

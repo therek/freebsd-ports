@@ -2,7 +2,7 @@
 # Date created:				10th September 2000
 # Whom:					Ilia Chipitsine <ilia@jane.cgu.chel.su>
 #
-# $FreeBSD: ports/converters/p5-Unicode-String/Makefile,v 1.2 2000/09/20 19:07:00 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Unicode-String
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Unicode
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ilia@cgu.chel.su
+COMMENT=	These are experimental Perl5 modules to handle various Unicode issues
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64
 

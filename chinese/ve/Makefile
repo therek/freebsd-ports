@@ -2,7 +2,7 @@
 # Date created:		25 Aug 1999
 # Whom:			Ching-Hong Wu <woju@freebsd.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/ve/Makefile,v 1.2 2000/04/13 08:28:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ve
@@ -13,5 +13,6 @@ MASTER_SITES=	ftp://freebsd.ntu.edu.tw/FreeBSD/woju/source/ \
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	woju@freebsd.ntu.edu.tw
+COMMENT=	NTHU-CS Maple BBS 2.36 BBS-like editor
 
 .include <bsd.port.mk>

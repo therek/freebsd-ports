@@ -3,7 +3,7 @@
 # Whom:                                 Peng HaiJie   (phj@cn.FreeBSD.org)
 #                                       (phj@transfar.com)
 #
-# $FreeBSD: ports/chinese/stardict/Makefile,v 1.6 2000/09/19 14:55:34 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stardict
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	zh-
 DISTNAME=	${PKGNAME}
 
 MAINTAINER=	phj@cn.FreeBSD.org
+COMMENT=	English-Chinese dictionary
 
 USE_MOTIF=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		1999-12-12
 # Whom:			AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/cad/cider/Makefile,v 1.6 2001/07/04 16:01:19 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cider
@@ -14,6 +14,7 @@ DISTNAME=	cider1b1
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	amakawa@jp.FreeBSD.org
+COMMENT=	A mixed-level circuit and device simulator (includes SPICE3)
 
 WRKSRC=		${WRKDIR}/sim
 USE_XLIB=	yes

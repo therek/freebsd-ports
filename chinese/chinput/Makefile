@@ -3,7 +3,7 @@
 # Date created:                          09/07/2000
 # Whom:                                  Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD: ports/chinese/chinput/Makefile,v 1.6 2000/11/16 15:36:06 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	chinput
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.cn.freebsd.org/pub/ported/
 DISTNAME=	zh-chinput-2.1
 
 MAINTAINER=	phj@cn.FreeBSD.org
+COMMENT=	Chinese GB2312,BIG5,Japanese code input server
 
 USE_XLIB=	yes
 

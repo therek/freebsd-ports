@@ -2,7 +2,7 @@
 # Date created:        27 March 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/comms/pr/Makefile,v 1.1 2001/03/31 01:36:29 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pr
@@ -12,6 +12,7 @@ MASTER_SITES=	http://rnoc.urc.ac.ru/~anton/projects/files/
 DISTNAME=	pr-${PORTVERSION}
 
 MAINTAINER=	anton@urc.ac.ru
+COMMENT=	A daemon that connects local terminal device to a terminal server
 
 WRKSRC=		${WRKDIR}/pr
 
