@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: $
+# $FreeBSD$
 
 cd @PREFIX@/lib/mozilla
 exec ./mozilla $*
