@@ -2,7 +2,7 @@
 # Date created:				23 Dec 1997
 # Whom:					mjhsieh
 #
-# $FreeBSD: ports/www/hypermail/Makefile,v 1.10 2001/05/26 10:50:58 greid Exp $
+# $FreeBSD: ports/www/hypermail/Makefile,v 1.11 2001/06/11 02:08:02 steve Exp $
 #
 
 PORTNAME=	hypermail
