@@ -1,20 +1,20 @@
 # New ports collection makefile for:	acroread
-# Version required:	4.0
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.21 2000/02/28 08:33:56 asami Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.22 2000/03/10 08:26:54 obrien Exp $
 #
 .include <bsd.port.pre.mk>
 
+PORTNAME=	acroread 
+PORTVERSION=	4.05 
+CATEGORIES=	print linux
+MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 .if ${ARCH} == "i386"
 DISTNAME=	linux-ar-405
 .elif ${ARCH} == "alpha"
 DISTNAME=	fdec-rs-405
 .endif
-PKGNAME=	acroread-4.05
-CATEGORIES=	print linux
-MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 
 MAINTAINER=	dima@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	 asmail
-# Version required:	1.0
 # Date created:		16 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/print/asprint/Makefile,v 1.6 1999/08/31 01:44:30 peter Exp $
+# $FreeBSD: ports/print/asprint/Makefile,v 1.7 1999/09/09 03:03:18 cpiazza Exp $
 #
 
-DISTNAME=	asprint
-PKGNAME=	asprint-1.0
+PORTNAME=	asprint 
+PORTVERSION=	1.0 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.afterstep.org/apps/asprint/
+DISTNAME=	asprint
 
 MAINTAINER=	brett@peloton.runet.edu
 

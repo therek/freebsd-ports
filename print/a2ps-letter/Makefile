@@ -1,17 +1,16 @@
 # New ports collection makefile for:    a2ps (letter)
-# Version required:     4.10.3
 # Date created:         15 July 1998
 # Whom:                 Chuck Robey (chuckr@freebsd.org)
 #
-# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.29 2000/01/10 20:58:52 chuckr Exp $
+# $FreeBSD: ports/print/a2ps-letter/Makefile,v 1.30 2000/02/08 09:28:30 peter Exp $
 #
 
-DISTNAME=	a2ps-4.12
-PKGNAME=	a2ps-${PAPERSIZE}-4.12
+PORTNAME=	a2ps-${PAPERSIZE} 
+PORTVERSION=	4.12 
 CATEGORIES=	print
 MASTER_SITES=	http://people.FreeBSD.org/~chuckr/ \
 		ftp://ftp.enst.fr/pub/unix/a2ps/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} sheets.map
+DISTFILES=	a2ps-${PORTVERSION}${EXTRACT_SUFX} sheets.map
 
 MAINTAINER=	chuckr@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ifhp
-# Version required:	3.3.10
 # Date created:		27 August 1999
 # Whom:			papowell@astart.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ifhp/Makefile,v 1.1.1.1 1999/11/01 04:07:46 steve Exp $
 #
 
-DISTNAME=	ifhp-3.3.10
+PORTNAME=	ifhp 
+PORTVERSION=	3.3.10 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.astart.com/pub/LPRng/FILTERS/
 EXTRACT_SUFX=	.tgz

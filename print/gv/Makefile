@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  gv
-# Version required: 0.0
 # Date created:			  16 Apr 1996
 # Whom:				  tg@freebsd.org
 #
-# $FreeBSD: ports/print/gv/Makefile,v 1.24 2000/03/20 02:36:30 obrien Exp $
+# $FreeBSD: ports/print/gv/Makefile,v 1.25 2000/03/22 00:26:57 obrien Exp $
 #
 
-DISTNAME=	gv-3.5.8
+PORTNAME=	gv 
+PORTVERSION=	3.5.8 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftpthep.physik.uni-mainz.de/pub/gv/unix/  \
 		${MASTER_SITE_TEX_CTAN}

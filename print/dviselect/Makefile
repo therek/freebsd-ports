@@ -1,15 +1,15 @@
 # New ports collection makefile for:    dviselect
-# Version required:     ?
 # Date created:         12 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/dviselect/Makefile,v 1.14 1999/08/31 01:44:41 peter Exp $
 #
 
-DISTNAME=	dviselect
-PKGNAME=	dviselect-1.3
+PORTNAME=	dviselect 
+PORTVERSION=	1.3 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.ee.duke.edu/archives/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jmz@FreeBSD.org
 

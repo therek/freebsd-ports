@@ -1,14 +1,15 @@
 # New ports collection makefile for:   xtem
-# Version required:     7.00
 # Date created:         01 June 1997
 # Whom:                 Peter Cornelius <pc@inr.fzk.de>
 #
-# $FreeBSD: ports/print/xtem/Makefile,v 1.9 1999/08/31 06:05:29 mharo Exp $
+# $FreeBSD: ports/print/xtem/Makefile,v 1.10 1999/09/03 10:40:32 tg Exp $
+#
 
-DISTNAME=	xtem_texmenu.7.00
-PKGNAME=	xtem-7.00
+PORTNAME=	xtem 
+PORTVERSION=	7.00 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.iwd.uni-bremen.de/pub/tex/xtem.v7/
+DISTNAME=	xtem_texmenu.7.00
 
 MAINTAINER=     ports@FreeBSD.org
 

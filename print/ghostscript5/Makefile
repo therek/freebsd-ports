@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ghostscript
-# Version required:	5.10
 # Date created:		11 December 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.36 1999/10/25 21:54:16 mharo Exp $
+# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.37 1999/11/25 16:13:16 steve Exp $
 #
 
-DISTNAME=	ghostscript-5.10
+PORTNAME=	ghostscript 
+PORTVERSION=	5.10 
 CATEGORIES=	print
 MASTER_SITES= ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/ \
 		${MASTER_SITE_GNU} \

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	freetype
-# Version required:	1.3
 # Date created:		January 24, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/print/freetype/Makefile,v 1.12 1999/08/31 01:44:45 peter Exp $
+# $FreeBSD: ports/print/freetype/Makefile,v 1.13 1999/11/25 03:38:34 jseger Exp $
 #
 
-DISTNAME=	freetype-1.3
+PORTNAME=	freetype 
+PORTVERSION=	1.3 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.tux.org/pub/devel/freetype/ \
 		ftp://ftp.lerc.nasa.gov/ImageMagick/delegates/ \

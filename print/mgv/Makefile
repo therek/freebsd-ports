@@ -1,12 +1,12 @@
 # New ports collection makefile for:	mgv
-# Version required:	mgv-3.1.5
 # Date created:		4 Mar 1998
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/mgv/Makefile,v 1.14 1999/08/31 01:45:03 peter Exp $
 #
 
-DISTNAME=	mgv-3.1.5
+PORTNAME=	mgv 
+PORTVERSION=	3.1.5 
 CATEGORIES=	print
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
 

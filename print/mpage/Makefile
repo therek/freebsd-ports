@@ -1,11 +1,12 @@
 # New ports collection makefile for:	mpage
-# Version required:	2.5
 # Date created:		19 February 1998
 # Whom:			Kapil Chowksey
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/mpage/Makefile,v 1.2 1999/08/31 01:45:07 peter Exp $
+#
 
-DISTNAME=	mpage-2.5
+PORTNAME=	mpage 
+PORTVERSION=	2.5 
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.mesa.nl/pub/mpage/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	nenscript
-# Version required:	1.13.3
 # Date created:		10 November 1999
 # Whom:			cjm2
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/nenscript/Makefile,v 1.1.1.1 1999/11/14 03:50:27 steve Exp $
 #
 
-DISTNAME=	nenscript-1.13.3
+PORTNAME=	nenscript 
+PORTVERSION=	1.13.3 
 CATEGORIES=	print
 MASTER_SITES=	http://www.im.lcs.mit.edu/~magnus/nenscript/
 

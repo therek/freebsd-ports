@@ -1,12 +1,12 @@
 # New ports collection makefile for: YaTeX
-# Version required:	1.67
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex-mule/Makefile,v 1.9 1999/09/30 07:02:25 taoka Exp $
+# $FreeBSD: ports/print/yatex-mule/Makefile,v 1.10 1999/10/07 15:50:09 taoka Exp $
 #
 
-PKGNAME=	yatex-mule-1.67
+PORTNAME=	yatex-mule 
+PORTVERSION=	1.67 
 CATEGORIES=	print elisp
 
 MULE=		yes

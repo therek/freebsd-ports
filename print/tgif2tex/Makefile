@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tgif2tex
-# Version required:	1.46
 # Date created:		12 Mar 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/tgif2tex/Makefile,v 1.3 1999/08/31 01:45:23 peter Exp $
 #
 
-DISTNAME=	tgif2tex
-PKGNAME?=	tgif2tex-1.46
+PORTNAME=	tgif2tex 
+PORTVERSION=	1.46 
 CATEGORIES=	print
 MASTER_SITES=	http://camphor.elcom.nitech.ac.jp/~nakano/tgif2tex/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	taoka@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	magicfilter
-# Version required:     magicfilter-1.2
 # Date created:		24 Mar 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/magicfilter/Makefile,v 1.2 1999/08/31 01:45:01 peter Exp $
 #
 
-DISTNAME=	magicfilter-1.2
+PORTNAME=	magicfilter 
+PORTVERSION=	1.2 
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= system/printing

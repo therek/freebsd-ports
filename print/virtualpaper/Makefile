@@ -1,12 +1,12 @@
 # New ports collection makefile for:	virtualpaper
-# Version required:	1.4
 # Date created:		13 June 1996
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/virtualpaper/Makefile,v 1.13 1999/08/31 01:45:26 peter Exp $
 #
 
-DISTNAME=	virtualpaper-1.4
+PORTNAME=	virtualpaper 
+PORTVERSION=	1.4 
 CATEGORIES=	print
 MASTER_SITES=	http://www.research.digital.com:80/SRC/virtualpaper/cgi-bin/nph-download.tcl/sources.tar.Z?object=Virtual+Paper/
 DISTFILES=	sources.tar.Z

@@ -1,16 +1,16 @@
 # New ports collection makefile for:    hp2xx
-# Version required:     3.20
 # Date created:         17 Jan 1999
 # Whom:                 Lars Koeller
 #
-# $FreeBSD: ports/print/hp2xx/Makefile,v 1.3 1999/08/31 01:44:52 peter Exp $
+# $FreeBSD: ports/print/hp2xx/Makefile,v 1.4 1999/12/22 14:33:19 jedgar Exp $
 #
 
-DISTNAME=	hp2xx-3.20-png
-PKGNAME=	hp2xx-3.20
+PORTNAME=	hp2xx 
+PORTVERSION=	3.20 
 CATEGORIES=	print x11
 MASTER_SITES=	ftp://ftp.rz.uni-duesseldorf.de/pub/graphics/ \
 		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/
+DISTNAME=	hp2xx-3.20-png
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 

@@ -1,17 +1,17 @@
 # New ports collection makefile for:	transfig
-# Version required:	3.2.3
 # Date created:		9 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/print/transfig/Makefile,v 1.24 1999/08/31 01:45:25 peter Exp $
+# $FreeBSD: ports/print/transfig/Makefile,v 1.25 2000/01/27 02:58:53 taoka Exp $
 #
 
-DISTNAME=	transfig.3.2.3
-PKGNAME=	transfig-3.2.3
+PORTNAME=	transfig 
+PORTVERSION=	3.2.3 
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		ftp://www-epb.lbl.gov/xfig/
 MASTER_SITE_SUBDIR=	applications/drawing_tools/transfig
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	chuckr@freebsd.org
 

@@ -1,17 +1,16 @@
 # New ports collection makefile for:    dvi2xx
-# Version required:     0.51alpha9
 # Date created:         14 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.15 1999/08/31 01:44:38 peter Exp $
+# $FreeBSD: ports/print/dvi2xx/Makefile,v 1.16 1999/08/31 06:49:47 mharo Exp $
 #
 
-DISTNAME=	dvi2xx
-PKGNAME=	dvi2xx-0.51a9
-DISTFILES=	dvi2xx.tar.gz
+PORTNAME=	dvi2xx 
+PORTVERSION=	0.51.a9 
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR=	dviware
+DISTNAME=	dvi2xx
 
 MAINTAINER=	jmz@FreeBSD.org
 

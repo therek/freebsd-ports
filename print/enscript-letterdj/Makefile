@@ -1,9 +1,8 @@
 # New ports collection makefile for:	enscript (letterdj)
-# Version required:     	1.6.1
 # Date created:			24 Jul, 1997
 # Whom:				kline
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/enscript-letterdj/Makefile,v 1.2 1999/08/31 01:44:44 peter Exp $
 #
 
 PAPERSIZE=	letterdj

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	enscriptfonts
-# Version required:     	0.75
 # Date created:			15 June, 1998
 # Whom:				kline
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/enscriptfonts/Makefile,v 1.4 1999/08/31 01:44:45 peter Exp $
 #
 
-DISTNAME=	enscript_fonts-0.75
-PKGNAME=	enscriptfonts-0.75
+PORTNAME=	enscriptfonts 
+PORTVERSION=	0.75 
 CATEGORIES=	print
 MASTER_SITES=	ftp://magnesium.net/pub/FreeBSD/xenscript/
+DISTNAME=	enscript_fonts-0.75
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kline@thought.org

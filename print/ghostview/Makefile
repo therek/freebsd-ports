@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ghostview
-# Version required:	1.5
 # Date created:		21 October 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostview/Makefile,v 1.13 1999/08/31 01:44:48 peter Exp $
 #
 
-DISTNAME=	ghostview-1.5
+PORTNAME=	ghostview 
+PORTVERSION=	1.5 
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	ghostview

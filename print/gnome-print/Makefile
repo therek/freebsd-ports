@@ -1,16 +1,16 @@
 # New ports collection makefile for:	gnomeprint
-# Version required:			0.16
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.14 2000/02/23 00:07:15 ade Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.15 2000/03/28 02:53:35 ade Exp $
 #
 
-DISTNAME=	gnome-print-0.16
-PKGNAME=	gnomeprint-0.16
+PORTNAME=	gnomeprint 
+PORTVERSION=	0.16 
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-print
+DISTNAME=	gnome-print-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 

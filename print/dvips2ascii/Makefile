@@ -1,12 +1,12 @@
 # New ports collection makefile for:    dvips2ascii
-# Version required:     1.0
 # Date created:         7 Aug 1997
 # Whom:                 eserte@cs.tu-berlin.de
 #
-# $FreeBSD: ports/print/dvips2ascii/Makefile,v 1.3 1999/08/31 01:44:40 peter Exp $
+# $FreeBSD: ports/print/dvips2ascii/Makefile,v 1.4 1999/09/18 17:51:54 steve Exp $
 #
 
-DISTNAME= 	dvips2ascii-1.3
+PORTNAME=	dvips2ascii 
+PORTVERSION=	1.3 
 CATEGORIES=	print
 MASTER_SITES=	http://www.de.freebsd.org/~eserte/distfiles/
 

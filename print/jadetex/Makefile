@@ -1,9 +1,8 @@
 # New ports collection makefile for:    jadetex
-# Version required:     2.3
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@plutotech.com>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.6 2000/02/08 09:28:28 peter Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.7 2000/03/21 08:22:22 mharo Exp $
 #
 # When jadetex-2.3 goes mainstream, it will replace jadetex-2.1
 # currently in the Comprehensive TeX Archive Network (CTAN).  When
@@ -12,11 +11,10 @@
 # EXTRACT_SUFX, EXTRACT_AFTER_ARGS, and NO_WRKSUBDIR.
 #
 
-DISTNAME=		jadetex
-PKGNAME=		${DISTNAME}-${VERSION}
+PORTNAME=		jadetex 
+PORTVERSION=		2.3 
 CATEGORIES=		print
 MASTER_SITES=		http://people.FreeBSD.org/~nik/distfiles/jadetex/
-EXTRACT_SUFX=
 DISTFILES=		Makefile.jadetex jadetex.dtx jadetex.ini jadetex.ins \
 			pdfjadetex.ini
 
@@ -25,7 +23,6 @@ MAINTAINER=		kelly@plutotech.com
 BUILD_DEPENDS=		tex:${PORTSDIR}/print/teTeX
 RUN_DEPENDS=		tex:${PORTSDIR}/print/teTeX
 
-VERSION=		2.3
 DIST_SUBDIR=		jadetex
 NO_WRKSUBDIR=   	yes
 EXTRACT_CMD=		${CP}

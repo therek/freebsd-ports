@@ -1,12 +1,12 @@
 # New ports collection makefile for:   klyx
-# Version required:    0.10.0
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/print/klyx/Makefile,v 1.12 1999/08/31 01:44:55 peter Exp $
+# $FreeBSD: ports/print/klyx/Makefile,v 1.13 2000/02/24 07:01:08 asami Exp $
 #
 
-DISTNAME=	klyx-0.10.0
+PORTNAME=	klyx 
+PORTVERSION=	0.10.0 
 CATEGORIES=	print kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR= unstable/apps/office

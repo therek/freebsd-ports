@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ggv
-# Version required:			0.82
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.15 1999/12/24 10:44:00 nakai Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.16 2000/01/07 02:06:29 nakai Exp $
 #
 
-DISTNAME=	ggv-0.82
+PORTNAME=	ggv 
+PORTVERSION=	0.82 
 CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ggv
