@@ -2,11 +2,11 @@
 # Date created:        1 March 2001
 # Whom:                Edwin Groothuis (edwin@mavetju.org)
 #
-# $FreeBSD: ports/net/dhcpdump/Makefile,v 1.3 2001/04/20 15:57:58 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dhcpdump
-PORTVERSION=	1.3
+PORTVERSION=	1.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.mavetju.org/download/
 
@@ -14,9 +14,6 @@ MAINTAINER=	edwin@mavetju.org
 
 MAN1=		dhcpdump.1
 
-pre-build:
-	${PERL} -pi -e "s@gcc@${CC}@g; \
-			s@-Wall -g@-Wall ${CFLAGS}@g; \
-			s@/usr/local@${PREFIX}@g" ${WRKSRC}/Makefile
+GNU_CONFIGURE=	yes
 
 .include <bsd.port.mk>
