@@ -2,12 +2,11 @@
 # Date created:		26 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-pgplot/Makefile,v 1.1 2001/06/27 02:06:57 knu Exp $
+# $FreeBSD: ports/graphics/ruby-pgplot/Makefile,v 1.2 2001/09/17 17:54:17 knu Exp $
 #
 
 PORTNAME=	pgplot
-PORTVERSION=	0.1.1
-PORTREVISION=	1
+PORTVERSION=	0.1.2
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://www.ir.isas.ac.jp/~masa/ruby/dist/
 MASTER_SITE_SUBDIR=	knu
