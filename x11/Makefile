@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.325 2001/05/27 19:03:49 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.326 2001/05/30 15:47:53 knu Exp $
 #
 
     SUBDIR += 9term
@@ -55,6 +55,7 @@
     SUBDIR += libsx
     SUBDIR += login.app
     SUBDIR += lupe
+    SUBDIR += mgapdesk
     SUBDIR += offix-clipboard
     SUBDIR += offix-execute
     SUBDIR += p5-X11-Protocol
