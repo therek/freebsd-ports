@@ -3,7 +3,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.13 1999/10/07 17:36:44 fenner Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.14 1999/11/01 01:00:54 steve Exp $
 #
 
 DISTNAME=       gd-1.7.3
@@ -13,7 +13,11 @@ MASTER_SITES=   http://www.boutell.com/gd/http/ \
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+		ttf.4:${PORTSDIR}/print/freetype \
+		Xpm.4:${PORTSDIR}/graphics/xpm
+
+USE_XLIB=	YES
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/gd
