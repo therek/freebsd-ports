@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libmalloc/pkg-plist,v 1.11 2000/11/22 00:21:50 obrien Exp $
 lib/libmalloc.a
 lib/libmalloc_d.a
 include/malloc.h
@@ -7,3 +7,4 @@ lib/libmalloc_d.so
 lib/libmalloc_d.so.1.18
 share/doc/libmalloc/malloc.doc
 share/doc/libmalloc/NOTE
+@dirrm share/doc/libmalloc
