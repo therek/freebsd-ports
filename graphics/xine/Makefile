@@ -2,11 +2,12 @@
 # Date created:         14 Oct 2000
 # Whom:                 alex
 #
-# $FreeBSD: ports/graphics/xine/Makefile,v 1.8 2001/01/19 22:21:09 alex Exp $
+# $FreeBSD: ports/graphics/xine/Makefile,v 1.9 2001/01/23 07:36:26 kevlo Exp $
 #
 
 PORTNAME=		xine
 PORTVERSION=		0.3.6
+PORTREVISION=		1
 CATEGORIES=		graphics
 MASTER_SITES=		http://xine.sourceforge.net/files/
 DISTNAME=		${PORTNAME}_${PORTVERSION}
@@ -16,6 +17,7 @@ MAINTAINER=		roman@xpert.com
 USE_LIBTOOL=		yes
 USE_X_PREFIX=		yes
 USE_IMLIB=		yes
+CONFIGURE_ARGS+=	--with-w32-path=${LOCALBASE}/lib/w32
 
 WRKSRC=			${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
