@@ -2,10 +2,9 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.76 2000/04/13 06:40:05 asami Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.77 2000/04/14 17:43:43 knu Exp $
 #
 
-MASTERPORTNAME=	mysql-server
 PORTNAME?=	${MASTERPORTNAME}
 PORTVERSION=	3.22.32
 CATEGORIES=	databases
@@ -19,6 +18,8 @@ MAINTAINER=	dirk@FreeBSD.org
 
 Y2K=		http://www.tcx.se/Manual_chapter/manual_Introduction.html#Year_2000_compliance
 
+SLAVEDIRS=	databases/mysql322-client
+MASTERPORTNAME=	mysql-server
 DB_DIR?=	/var/db/mysql
 USE_PERL5=	yes
 USE_LIBTOOL=	yes
