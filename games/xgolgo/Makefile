@@ -3,22 +3,21 @@
 # Date created:        1 July 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xgolgo/Makefile,v 1.5 1999/08/25 06:05:16 obrien Exp $
+# $FreeBSD: ports/games/xgolgo/Makefile,v 1.6 2000/01/07 02:26:20 nakai Exp $
 #
 
 DISTNAME=	xeyes-g
 PKGNAME=	xgolgo-1.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.netlab.is.tsukuba.ac.jp/pub/X/our_collections/misc/
+MASTER_SITES=	ftp://ftp.nemoto.ecei.tohoku.ac.jp/pub/X11/misc/
 
 MAINTAINER=	nakai@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xeyes
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES=	yes
 MAN1=		xgolgo.1
 
-post-install:
-	${INSTALL_MAN} ${WRKSRC}/xeyes.man ${PREFIX}/man/man1/xgolgo.1
+post-patch:
+	@${CP} ${WRKSRC}/xeyes.man ${WRKSRC}/xgolgo.man
 
 .include <bsd.port.mk>

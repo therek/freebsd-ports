@@ -3,13 +3,14 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xeyesplus/Makefile,v 1.10 1999/08/25 06:05:09 obrien Exp $
+# $FreeBSD: ports/games/xeyesplus/Makefile,v 1.11 2000/01/07 02:26:17 nakai Exp $
 #
 
 DISTNAME=	xeyes+2.01
 PKGNAME=	xeyes+-2.01
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.eos.hokudai.ac.jp/pub/X11/contrib/misc/
+MASTER_SITES=	http://yindy1.aist-nara.ac.jp/~tetu-s/sofken/software/
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	nakai@FreeBSD.org
 

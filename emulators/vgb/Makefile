@@ -3,7 +3,7 @@
 # Date created:        31 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/vgb/Makefile,v 1.8 1999/08/25 05:49:43 obrien Exp $
+# $FreeBSD: ports/emulators/vgb/Makefile,v 1.9 1999/12/01 09:46:21 nakai Exp $
 #
 
 DISTNAME=	VGB
@@ -17,13 +17,16 @@ MAINTAINER=	nakai@FreeBSD.org
 WRKSRC=		${WRKDIR}/GB
 
 USE_X_PREFIX=	yes
-CONFIGURE_ENV=  X11BASE=${X11BASE}
+
+do-configure:
+	@${SED} -e 's:%%PREFIX%%:${PREFIX}:g' ${FILESDIR}/vgb.sh \
+		> ${WRKSRC}/vgb.sh
 
 do-install:
-	@${INSTALL_PROGRAM} ${WRKSRC}/gblist ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/gblist ${PREFIX}/bin
 	@${MKDIR} ${PREFIX}/libexec/VGB ${PREFIX}/share/VGB
-	@${INSTALL_PROGRAM} ${WRKSRC}/vgb ${PREFIX}/libexec/VGB
-	@${INSTALL_DATA} ${WRKSRC}/CART.GB ${PREFIX}/share/VGB
-	@${INSTALL_SCRIPT} ${WRKSRC}/vgb.sh ${PREFIX}/bin/vgb
+	${INSTALL_PROGRAM} ${WRKSRC}/vgb ${PREFIX}/libexec/VGB
+	${INSTALL_DATA} ${WRKSRC}/CART.GB ${PREFIX}/share/VGB
+	${INSTALL_SCRIPT} ${WRKSRC}/vgb.sh ${PREFIX}/bin/vgb
 
 .include <bsd.port.mk>
