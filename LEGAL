@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.155 1999/12/31 20:23:01 steve Exp $
+# $FreeBSD: ports/LEGAL,v 1.156 2000/01/23 00:59:59 mharo Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -71,6 +71,7 @@ fmsx-*			ports/emulators/fmsx	Unclear legal status of
 fwtk-*			ports/security/fwtk	No redistribution allowed
 Frisk-*			ports/games/xfrisk	Copyright/trademark violation?
 glimpse-*		ports/textproc/glimpse	Don't sell for profit
+giflib-*		ports/graphics/giflib	LZW patent issue
 giftool-*		ports/graphics/giftool	Don't redistribute for profit
 GimpUserManual-*-ps.gz	ports/graphics/gimp-manual-ps	too big
 gnupg-*			ports/security/gnupg	Crypto; export-controlled
