@@ -2,7 +2,7 @@
 # Date created:         07 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xsok/Makefile,v 1.10 2000/08/13 16:35:16 alex Exp $
+# $FreeBSD: ports/games/xsok/Makefile,v 1.11 2000/08/13 19:46:38 alex Exp $
 #
 
 PORTNAME=       xsok
@@ -15,10 +15,12 @@ EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_X_PREFIX=	yes
-USE_XPM=	yes
 USE_IMAKE=	yes
-MAN6=		xsok.6x
+USE_XPM=	yes
+MAN6=		xsok.6
+
+do-configure:
+	cd ${WRKSRC}/src && ${XMKMF}
 
 post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/xsok.tex ${PREFIX}/share/doc/xsok
