@@ -2,7 +2,7 @@
 # Date created:		December 3, 1997
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/lang/o2c/Makefile,v 1.9 2001/03/31 11:15:56 obrien Exp $
+# $FreeBSD: ports/lang/o2c/Makefile,v 1.10 2001/05/28 19:45:43 fenner Exp $
 
 PORTNAME=	o2c
 PORTVERSION=	1.16
@@ -10,7 +10,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.uni-kl.de/pub/informatik/software/ \
 		ftp://ftp.archive.de.uu.net/pub/programming/languages/oberon/www.uni-kl.de/OOC/files/misc/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ob@breuninger.org
 
 # does not support 64-bit platforms
 ONLY_FOR_ARCHS=	i386
