@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.42 2000/07/18 05:37:48 kbyanc Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.43 2000/07/19 13:18:15 alex Exp $
 #
 
     SUBDIR += 9menu
@@ -9,6 +9,7 @@
     SUBDIR += amaterus
     SUBDIR += amiwm
     SUBDIR += bbkeys
+    SUBDIR += bbpager
     SUBDIR += blackbox
     SUBDIR += ctwm
     SUBDIR += enlightenment
