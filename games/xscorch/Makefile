@@ -2,11 +2,11 @@
 # Date created:				19 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/games/xscorch/Makefile,v 1.7 2001/09/06 17:58:13 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xscorch
-PORTVERSION=	0.1.13a
+PORTVERSION=	0.1.14
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xscorch/ \
 		http://mirror.dok.org/xscorch/
@@ -15,7 +15,6 @@ MAINTAINER=	petef@FreeBSD.org
 
 LIB_DEPENDS=	mikmod.2:${PORTSDIR}/audio/libmikmod
 
-WRKSRC=	${WRKDIR}/xscorch-0.1.13
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_GMAKE=	yes
@@ -33,5 +32,10 @@ USE_GNOME=	yes
 .else
 CONFIGURE_ARGS+=	--without-gnome
 .endif
+
+post-patch:
+	@${PERL} -pi -e 's,MSG_NOSIGNAL,0,' \
+		${WRKSRC}/snet/tcpnet/tn_internal.c \
+		${WRKSRC}/snet/tcpnet/tn_read.c
 
 .include <bsd.port.post.mk>
