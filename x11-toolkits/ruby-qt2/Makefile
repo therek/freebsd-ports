@@ -2,7 +2,7 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.28 2001/04/06 09:22:08 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.29 2001/04/06 10:08:14 knu Exp $
 #
 
 PORTNAME=	qt2
@@ -38,9 +38,12 @@ post-install:
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${CP} -R ${WRKSRC}/examples/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
-	${CP} -R ${WRKSRC}/tutorial ${RUBY_DOCDIR}/${PORTNAME}/
-	${INSTALL_DATA} ${WRKSRC}/README.txt ${RUBY_DOCDIR}/${PORTNAME}/
-	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/${PORTNAME}/ja/
+	${CP} -R ${WRKSRC}/tutorial ${WRKSRC}/util \
+		${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/CHANGES.txt ${WRKSRC}/README.txt \
+		${RUBY_DOCDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/CHANGES.jp ${WRKSRC}/README.jp \
+		${RUBY_DOCDIR}/${PORTNAME}/ja/
 .endif
 
 .include "${.CURDIR}/Makefile.common"
