@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.24 2000/10/09 21:10:22 asami Exp $
+# $FreeBSD: ports/japanese/netscape47-communicator/Makefile,v 1.25 2000/10/29 17:43:36 sada Exp $
 #
 
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
@@ -17,7 +17,7 @@ PKGDIR=		${SUBMASTERDIR}
 MD5_FILE=	${SUBMASTERDIR}/distinfo
 
 BROWSER_VER=	47
-BROWSER_VERSION=	4.76
+BROWSER_VERSION?=	4.76
 NETHELP=	nethelp-v47
 
 .include "${MASTERDIR}/Makefile"
