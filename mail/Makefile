@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.217 2001/04/17 18:17:23 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.218 2001/05/02 05:53:59 dburr Exp $
 #
 
     SUBDIR += abook
@@ -129,6 +129,7 @@
     SUBDIR += procmail
     SUBDIR += prom-mew
     SUBDIR += prom-wl
+    SUBDIR += pronto
     SUBDIR += pygmy
     SUBDIR += qmail
     SUBDIR += qmail-contrib
