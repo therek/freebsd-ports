@@ -4,11 +4,10 @@
 # Date created:			  Sun Aug 08, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/benchmarks/rawio/Makefile,v 1.2 1999/08/25 04:45:48 obrien Exp $
 #
 
-DISTNAME=	rawio
-PKGNAME=	rawio-1.0
+DISTNAME=	rawio-1.1
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.lemis.com/pub/
 
