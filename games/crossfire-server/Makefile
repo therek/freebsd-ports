@@ -2,7 +2,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.36 2000/08/03 09:23:25 asami Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.37 2000/09/12 13:03:43 asami Exp $
 #
 
 PORTNAME=	crossfire
@@ -87,4 +87,4 @@ post-install:
 	${ECHO} "Note: don't forget to update ${PREFIX}/etc/rplay.conf"
 	${ECHO} "	with new sounds in ${CFDIR}/sounds"
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
