@@ -2,12 +2,11 @@
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.11 2001/05/04 21:51:01 ade Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.12 2001/05/11 16:36:25 ade Exp $
 #
 
 PORTNAME=	dia
-PORTVERSION=	0.86
-PORTREVISION=	1
+PORTVERSION=	0.88
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/dia
@@ -20,7 +19,7 @@ USE_IMLIB=	yes
 WANT_GNOME=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib -lintl"
 
 MAN1=		dia.1
 
