@@ -2,7 +2,7 @@
 # Date created:		December 10, 1996
 # Whom:			1wardd@airmail.net
 #
-# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.45 2000/07/26 01:34:45 kevlo Exp $
+# $FreeBSD: ports/x11-toolkits/lesstif/Makefile,v 1.46 2000/09/01 09:18:59 sobomax Exp $
 #
 
 PORTNAME=	lesstif
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.lesstif.org/pub/hungry/lesstif/srcdist/  \
 		ftp://ftp.fu-berlin.de/unix/X11/gui/lesstif/srcdist/ \
 		ftp://ftp.win.or.jp/pub/X11/misc/lesstif/srcdist/
 
-MAINTAINER=	kargl@troutmask.apl.washington.edu
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/automake:${PORTSDIR}/devel/automake
 
