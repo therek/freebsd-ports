@@ -2,7 +2,7 @@
 # Date created:		17 November 1999
 # Whom:			ajk@waterspout.com
 #
-# $FreeBSD: ports/devel/mkcmd/Makefile,v 1.4 2000/08/11 00:12:28 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mkcmd
@@ -17,12 +17,14 @@ BUILD_DEPENDS=	makeme:${PORTSDIR}/devel/msrc0
 
 MAKE_FLAGS=
 MAKEFILE=
+USE_REINPLACE=	yes
+
 MAN1=		mkcmd.1
 MAN5=		mkcmd.5
 
 post-patch:
 .for f in bin/mkcmd/machine.h bin/mkcmd/mkcmd.man lib/mkcmd/mkcmd.man
-	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${f}
+	@${REINPLACE_CMD} -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/${f}
 .endfor
 
 do-build:
