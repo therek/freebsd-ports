@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.248 2003/11/02 23:26:47 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.249 2003/11/05 14:29:51 trevor Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -650,3 +650,4 @@ devel/amulet||2003-11-03|Development stopped in 1998; see OpenAmulet instead
 german/cheapcall||2003-11-03|Mastersite disappeared, author no longer available
 news/pan|news/pan2|2003-11-03|Stable release can be found in news/pan2
 misc/solfege|audio/solfege|2003-11-05|better category
+print/pktrace|print/mftrace|2003-11-05|program renamed
