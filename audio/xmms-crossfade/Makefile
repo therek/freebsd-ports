@@ -2,11 +2,11 @@
 # Date created:			21 September 2000
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms-crossfade/Makefile,v 1.2 2001/01/12 15:49:18 kevlo Exp $
+# $FreeBSD: ports/audio/xmms-crossfade/Makefile,v 1.3 2001/03/23 00:39:24 jeh Exp $
 #
 
 PORTNAME=	xmms-crossfade
-PORTVERSION=	0.2.5
+PORTVERSION=	0.2.6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.netcologne.de/~nc-eisenlpe2/xmms-crossfade/ \
 		ftp://ftp.falsehope.com/pub/xmms-crossfade/
