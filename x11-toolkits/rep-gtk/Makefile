@@ -2,11 +2,11 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.16 2000/07/11 22:02:21 ade Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.17 2000/07/17 16:43:53 sobomax Exp $
 #
 
 PORTNAME=	rep-gtk
-PORTVERSION=	0.13a
+PORTVERSION=	0.14
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		rep.9:${PORTSDIR}/lang/librep
+		rep.10:${PORTSDIR}/lang/librep
 .if !defined(WITHOUT_GNOME)
 LIB_DEPENDS+=	glade.4:${PORTSDIR}/devel/libglade \
 		gnome.4:${PORTSDIR}/x11/gnomelibs \
