@@ -3,7 +3,7 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gkrellweather/Makefile,v 1.1 2001/07/02 22:56:48 lioux Exp $
 #
 
 PORTNAME=	gkrellweather
@@ -18,6 +18,7 @@ RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_IMLIB=	yes
 MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
 		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"

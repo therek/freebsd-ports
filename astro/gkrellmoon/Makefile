@@ -2,7 +2,7 @@
 # Date Created:				Tue Jun 26 18:04:37 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/gkrellmoon/Makefile,v 1.1 2001/06/28 02:55:40 lioux Exp $
 #
 
 PORTNAME=	gkrellmoon
@@ -17,9 +17,10 @@ BUILD_DEPENDS=	${X11BASE}/include/gkrellm/gkrellm.h:${PORTSDIR}/sysutils/gkrellm
 RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_IMLIB=	yes
 MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
-		THREAD_CFLAGS="${PTHREAD_CFLAGS}"
+		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 ALL_TARGET=	${PORTNAME}.so
 
 post-install:

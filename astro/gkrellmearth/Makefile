@@ -3,7 +3,7 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/gkrellmearth/Makefile,v 1.1 2001/07/02 23:23:12 lioux Exp $
 #
 
 PORTNAME=	earth
@@ -20,6 +20,7 @@ RUN_DEPENDS=	gkrellm:${PORTSDIR}/sysutils/gkrellm
 
 WRKSRC=		${WRKDIR}/${PORTNAME}_anim
 USE_X_PREFIX=	yes
+USE_GTK=	yes
 USE_IMLIB=	yes
 MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
 		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
