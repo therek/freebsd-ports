@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.318 2004/01/26 04:13:21 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.319 2004/01/26 22:51:52 sergei Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -786,3 +786,4 @@ misc/xquote|finance/xquote|2004-01-22|moved to finance category
 java/xalan-j|textproc/xalan-j|2004-01-22|moved to textproc category
 x11-toolkits/render|x11/render|2004-01-24|moved to x11 category
 x11-toolkits/xrender|x11/libXrender|2004-01-24|moved to x11 category
+net/py-rrdtool||2004-01-28|mastersite disappeared and functionality exists in net/py-rrdtool_lgpl
