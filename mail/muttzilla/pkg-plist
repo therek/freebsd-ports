@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/muttzilla/pkg/PLIST,v 1.1.1.1 2000/02/05 00:01:06 obrien Exp $
 bin/mzmail.sh
 bin/mzmail.py
 bin/mznews.sh
@@ -12,3 +12,4 @@ lib/muttzilla/tin
 etc/muttzilla.conf
 share/doc/muttzilla/INSTALL
 @dirrm lib/muttzilla
+@dirrm share/doc/muttzilla
