@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.34 2000/07/17 15:47:12 sobomax Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.35 2000/08/08 19:16:26 knu Exp $
 #
 
     SUBDIR += aish
@@ -30,5 +30,6 @@
     SUBDIR += uudx
     SUBDIR += uulib
     SUBDIR += xdeview
+    SUBDIR += xunicode
 
 .include <bsd.port.subdir.mk>
