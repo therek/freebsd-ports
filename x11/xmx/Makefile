@@ -2,7 +2,7 @@
 # Date created:		February 23, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/x11/xmx/Makefile,v 1.5 2001/05/28 19:45:48 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmx
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.brown.edu/pub/xmx/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ob@breuninger.org
+COMMENT=	An X protocol multiplexor
 
 USE_X_PREFIX=	yes
 

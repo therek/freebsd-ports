@@ -2,7 +2,7 @@
 # Date created:        24th April 1997
 # Whom:                jacs
 #
-# $FreeBSD: ports/x11/xfishtank/Makefile,v 1.5 2000/12/30 18:45:24 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xfishtank
@@ -11,6 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.uni-koeln.de/windows/xcontrib/
 
 MAINTAINER=	jacs@gnome.co.uk
+COMMENT=	Make fish swim in the background of your screen
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xfishtank2.0

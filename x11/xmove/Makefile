@@ -2,7 +2,7 @@
 # Date created:        16 Jan 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11/xmove/Makefile,v 1.7 2001/03/13 16:06:46 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmove
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.columbia.edu/pub/xmove/
 DISTNAME=	${PORTNAME}.${PORTVERSION:S/b/beta/}
 
 MAINTAINER=	sec@42.org
+COMMENT=	Pseudoserver to support mobile X11 clients
 
 WRKSRC=		${WRKDIR}/xmove
 

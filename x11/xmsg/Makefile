@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                jsellens
 #
-# $FreeBSD: ports/x11/xmsg/Makefile,v 1.2 2000/04/13 19:10:52 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmsg
@@ -11,6 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 
 MAINTAINER=	jsellens@generalconcepts.com
+COMMENT=	The X11R4 version of xmessage updated for X11R5 and renamed
 
 MAN1=		xmsg.1
 MANCOMPRESSED=	yes

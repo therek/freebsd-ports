@@ -2,7 +2,7 @@
 # Date created:        20 Sep 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11/xaniroc/Makefile,v 1.6 2000/04/15 12:57:36 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xaniroc
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.src.tar.Z
 
 MAINTAINER=	sec@42.org
+COMMENT=	Animate your root-cursor
 
 USE_IMAKE=	yes
 MAN1=		xaniroc.1

@@ -2,7 +2,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/x11/offix-clipboard/Makefile,v 1.5 2000/04/13 19:09:55 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	offix-clipboard
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	desktop_managers/OffiX
 DISTNAME=	Clipboard-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
+COMMENT=	X clipboard with support of DND protocol
 
 LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 

@@ -2,7 +2,7 @@
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/x11/x3270/Makefile,v 1.14 2000/09/12 13:03:58 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	x3270
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	volf@oasis.IAEhv.nl
+COMMENT=	3270 Terminal emulator
 
 USE_IMAKE=	yes
 

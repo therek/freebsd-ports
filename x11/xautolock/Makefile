@@ -2,7 +2,7 @@
 # Date created:		20 Jul 1996
 # Whom:			Eric Blood <eblood@cs.unr.edu>
 #
-# $FreeBSD: ports/x11/xautolock/Makefile,v 1.11 2000/04/13 19:10:16 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xautolock
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}-pl15
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	eblood@cs.unr.edu
+COMMENT=	Used to activate xlock after a user defined time of inactivity
 
 USE_IMAKE=	yes
 MAN1=		xautolock.1

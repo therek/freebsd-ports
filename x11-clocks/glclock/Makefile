@@ -2,7 +2,7 @@
 # Date created:		20 September 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/x11-clocks/glclock/Makefile,v 1.4 2001/02/05 17:05:22 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glclock
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.daionet.gr.jp/~masa/archives/ \
 		http://www.demonews.com/hosted/masa/archives/
 
 MAINTAINER=	aa8vb@ipass.net
+COMMENT=	OpenGL Spinning pocketwatch demo and benchmark utility
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes

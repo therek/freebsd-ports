@@ -2,7 +2,7 @@
 # Date created:		4 February 1998
 # Whom:			FURUSAWA,Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/x11/lupe/Makefile,v 1.10 2000/04/13 19:09:54 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lupe
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/
 DISTNAME=	lupe008	
 
 MAINTAINER=	kazu@jp.freebsd.org
+COMMENT=	Real-time magnifying glass for X11
 
 WRKSRC=		${WRKDIR}/lupe
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:                8 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11/libdnd/Makefile,v 1.10 2000/06/16 21:52:12 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libdnd
@@ -13,6 +13,7 @@ DISTNAME=	dnd.${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	lukin@okbmei.msk.su
+COMMENT=	Drag and drop library
 
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/x11-clocks/tclock/Makefile,v 1.4 2000/04/10 00:32:52 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclock
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.uni-potsdam.de/pub/X11/tools/clocks/		\
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
+COMMENT=	Transparent analog clock for x11
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes

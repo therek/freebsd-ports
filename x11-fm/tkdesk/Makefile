@@ -2,7 +2,7 @@
 # Date created:         30 Jul 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD: ports/x11-fm/tkdesk/Makefile,v 1.17 2001/02/05 21:00:53 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkdesk
@@ -14,6 +14,7 @@ MASTER_SITES=	http://tkdesk.sourceforge.net/dist/ \
 MASTER_SITE_SUBDIR= X11/desktop
 
 MAINTAINER=	spadger@best.com
+COMMENT=	A graphical, highly configurable and powerful file manager
 
 LIB_DEPENDS=	itcl32:${PORTSDIR}/lang/itcl \
 		BLT24.2:${PORTSDIR}/x11-toolkits/blt

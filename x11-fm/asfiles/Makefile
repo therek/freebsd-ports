@@ -2,7 +2,7 @@
 # Date created:                17 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.15 2000/10/07 22:48:42 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asfiles
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	apps/ASFiles
 DISTNAME=	ASFiles-${PORTVERSION}
 
 MAINTAINER=	lukin@okbmei.msk.su
+COMMENT=	X11 file manager. Dockable in WindowMaker
 
 LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 

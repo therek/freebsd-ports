@@ -2,7 +2,7 @@
 # Date created:				06 May 2001
 # Whom:					Per Otterstr=F6m <pelle@fukt.bth.se>
 #
-# $FreeBSD: ports/x11/temperature.app/Makefile,v 1.1 2001/05/27 19:03:50 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	temperature.app
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.fukt.bth.se/~per/temperature/
 DISTNAME=	Temperature.app-${PORTVERSION}
 
 MAINTAINER=	pelle@fukt.bth.se
+COMMENT=	A dockable WindowMaker applet which displays the local temperature
 
 RUN_DEPENDS=	wget:${PORTSDIR}/ftp/wget
 
