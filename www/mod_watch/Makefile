@@ -2,15 +2,15 @@
 # Date created:			18 August 2001
 # Whom:				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_watch/Makefile,v 1.1 2001/09/03 18:27:28 knu Exp $
 #
 
 PORTNAME=	mod_watch
-PORTVERSION=	2.1
+PORTVERSION=	2.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.snert.com/Software/mod_watch/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/
-DISTNAME=	${PORTNAME}201
+DISTNAME=	${PORTNAME}203
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	anders@fix.no
