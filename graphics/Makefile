@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.167 1999/12/31 21:55:46 jedgar Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.168 2000/01/05 19:56:52 ade Exp $
 #
 
     SUBDIR += 4va
@@ -138,6 +138,7 @@
     SUBDIR += togl
     SUBDIR += txtmerge
     SUBDIR += urt
+    SUBDIR += vcdgear
     SUBDIR += vcg
     SUBDIR += whirlgif
     SUBDIR += wmgrabimage
