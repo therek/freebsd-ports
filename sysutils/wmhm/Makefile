@@ -2,12 +2,11 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.19 2001/01/16 17:32:40 sobomax Exp $
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.20 2001/04/22 16:55:23 fenner Exp $
 #
 
 PORTNAME=	wmhm
-PORTVERSION=	1.45
-PORTREVISION=	1
+PORTVERSION=	1.46
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
@@ -21,5 +20,8 @@ WRKSRC=		${WRKDIR}/wmhm/wmhm
 GNU_CONFIGURE=	yes
 MAN8=		wmhm.8
 MANCOMPRESSED=	yes
+
+post-install:
+	strip ${PREFIX}/bin/wmhm
 
 .include <bsd.port.mk>
