@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/scripts/options.sh,v 1.1 2004/07/17 14:24:59 eik Exp $
 #
 # MAINTAINER=	eik@FreeBSD.org
 #
@@ -152,6 +152,12 @@ do_delete()
 do_edit()
 {
   local rc
+
+  OPTIONS_DIR="${OPTIONS_FILE%/*}"
+  if [ ! -d "$OPTIONS_DIR" ] && ! $MKDIR "$OPTIONS_DIR"; then
+    echo ">> config: Can't create $OPTIONS_DIR." 2>&1
+    return 1
+  fi
 
   if [ -n "$OPTIONS_OVERRIDE" ]; then
     OVERRIDE="$OPTIONS_DEFAULT"
