@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.194 2001/04/07 08:01:39 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.195 2001/04/09 12:09:35 tg Exp $
 #
 
     SUBDIR += agrep
@@ -146,6 +146,7 @@
     SUBDIR += rxp
     SUBDIR += sablotron
     SUBDIR += sarep
+    SUBDIR += scrollkeeper
     SUBDIR += sdf
     SUBDIR += sdocbook-xml
     SUBDIR += se-ispell
