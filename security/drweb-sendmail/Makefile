@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.2 2001/08/24 19:40:59 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.3 2001/08/24 19:45:41 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
@@ -15,8 +15,6 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	anton@urc.ac.ru
 
 RUN_DEPENDS=	${LOCALBASE}/drweb/drwebd:${PORTSDIR}/security/drweb
-
-IS_INTERACTIVE= yes     # require sendmail rebuilding
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/clients/drwebdc
 MAKEFILE=	Makefile.unix
@@ -49,9 +47,6 @@ post-extract:
 	cd ${WRKDIR}/${DISTNAME} && ${TAR} -xzf ${WRKDIR}/${DISTNAME}/${DISTNAME}.tar.gz clients/drwebdc clients/sendmail
 
 pre-build:
-	@${CAT} pkg-message
-	@echo
-	@read -p "Press Enter to continue or ^C to abort: " x
 	${MKDIR} ${WRKSRC}/libmilter
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/libmilter
 .if ${SENDMAIL_VERSION} == "8.11.1"
@@ -73,7 +68,8 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/drweb-smf ${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/../sendmail/readme.sendmail ${DOC_DIR}
 	${INSTALL_DATA} ${WRKSRC}/../sendmail/readme.sendmail.rus ${DOC_DIR}
-	${SED} 's#!!PREFIX!!#${PREFIX}#' < ${FILESDIR}/drweb-smf.sh >${WRKSRC}/drweb-smf.sh
+	${SED} 's#!!PREFIX!!#${PREFIX}#' < ${FILESDIR}/drweb-smf.sh >${WRKSRC}/drwebsmf.sh
 	${INSTALL_SCRIPT} ${WRKSRC}/drweb-smf.sh ${PREFIX}/etc/rc.d
+	@${CAT} pkg-message
 
 .include <bsd.port.post.mk>
