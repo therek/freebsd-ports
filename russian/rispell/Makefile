@@ -2,24 +2,32 @@
 # Date created:         16 Dec 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/rispell/Makefile,v 1.12 2001/01/16 17:32:14 sobomax Exp $
+# $FreeBSD: ports/russian/rispell/Makefile,v 1.13 2001/01/29 19:09:11 ache Exp $
 #
 
 PORTNAME=	ispell
 PORTVERSION=	1.0
+PORTREVISION=   1
 CATEGORIES=	russian textproc
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 DISTNAME=	rispell
 
 MAINTAINER=	ports@FreeBSD.org
 
+# Very dirty implementation, use rus-ispell port instead
+NO_LATEST_LINK= yes
+
 BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 WRKSRC=		${WRKDIR}/russian-ispell
 
+post-build:
+	cd ${WRKSRC} && LANG=ru_RU.KOI8-R sort russian.sml > russian.dict
+
 do-install:
 	cd ${WRKSRC} && \
-	${INSTALL_DATA} russian.hash russian.aff ${PREFIX}/share/ispell
+		${INSTALL_DATA} russian.hash russian.aff russian.dict \
+		${PREFIX}/share/ispell
 	${INSTALL_SCRIPT} ${FILESDIR}/rispell.sh ${PREFIX}/bin/rispell
 
 .include <bsd.port.mk>
