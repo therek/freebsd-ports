@@ -2,11 +2,11 @@
 # Date created:				28 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/astro/fooseti/Makefile,v 1.2 2001/08/22 22:55:02 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fooseti
-PORTVERSION=	0.6.5
+PORTVERSION=	0.6.6
 PORTREVISION=	1
 CATEGORIES=	astro
 MASTER_SITES=	http://www-personal.engin.umich.edu/~agorski/fooseti/
