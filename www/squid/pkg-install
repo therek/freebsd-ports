@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/pkg-install,v 1.13 2004/04/09 18:54:12 krion Exp $
+# $FreeBSD: ports/www/squid/pkg-install,v 1.14 2004/04/18 17:04:26 krion Exp $
 #
 
 PATH=/bin:/usr/bin:/usr/sbin
@@ -12,8 +12,8 @@ if [ -x /usr/sbin/nologin ]; then
 else
 	nologin=/sbin/nologin
 fi
-: ${squid_user:=squid}
-: ${squid_group:=squid}
+squid_user=${squid_user:-squid}
+squid_group=${squid_group:-squid}
 squid_gid=100
 squid_uid=100
 # Try to catch the case where the $squid_user might have been created with an
