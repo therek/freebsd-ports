@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.590 2004/12/19 11:26:59 maho Exp $
+# $FreeBSD: ports/MOVED,v 1.591 2004/12/19 16:51:36 hrs Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1360,3 +1360,4 @@ dns/dnssecwalker|dns/walker|2004-12-13|duplicate ports
 lang/gcc34|lang/gcc-ooo|2004-12-15|finished repocopy and required by OOo port
 print/pxfonts||2004-12-19|already included in the teTeX distribution
 print/txfonts||2004-12-19|already included in the teTeX distribution
+audio/juk|multimedia/kdemultimedia3|2004-12-22|juk has been integrated into kdemultimedia3
