@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.74 2000/06/20 02:37:00 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.75 2000/06/28 17:56:13 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -53,6 +53,8 @@ MAKE_FLAGS:=	X_LIBS=-lxpg4 CONF_OPT_MAX="--enable-max-features" ${MAKE_FLAGS}
 
 .if defined(HAVE_GTK)
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+CONFIGURE=	GTK_CONFIG="${GTK_CONFIG}"
 MAKE_FLAGS:=	CONF_OPT_GUI="--enable-gui=gtk --with-gtk-prefix=${X11BASE} --enable-multibyte --enable-fontset --enable-multibyte --enable-xim" ${MAKE_FLAGS}
 .elif defined(HAVE_MOTIF)
 REQUIRES_MOTIF=	yes

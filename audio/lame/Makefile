@@ -2,7 +2,7 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.10 2000/04/17 00:17:03 reg Exp $
+# $FreeBSD: ports/audio/lame/Makefile,v 1.11 2000/04/29 20:44:47 cpiazza Exp $
 #
 
 PORTNAME=	lame
@@ -27,6 +27,11 @@ USE_GMAKE=	YES
 MAKE_ENV=	WITHOUT_X11=${WITHOUT_X11}
 ALL_TARGET=	lame
 RESTRICTED=	Condition is not clear
+
+.if !defined(WITHOUT_X11)
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+MAKE_ENV+=	GTK_CONFIG="${GTK_CONFIG}"
+.endif
 
 MAN1=		lame.1
 

@@ -2,7 +2,7 @@
 # Date created:					8 Aug 1998
 # Whom:						rom
 #
-# $FreeBSD: ports/math/geg/Makefile,v 1.14 2000/04/14 07:20:04 asami Exp $
+# $FreeBSD: ports/math/geg/Makefile,v 1.15 2000/04/27 11:52:10 knu Exp $
 #
 
 PORTNAME=	geg
@@ -16,12 +16,17 @@ MAINTAINER=	domi@saargate.de
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
+USE_AUTOMAKE=	yes
+AUTOMAKE=	automake -a -i
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		GTK_CONFIG="${GTK_CONFIG}" \
+		LIBS="-L${LOCALBASE}/lib"
+MAN1=		geg.1
 
-CONFIGURE_ENV=	LIBS="-L${X11BASE}/lib -L${LOCALBASE}/lib"
-
-do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/src/geg ${PREFIX}/bin
+pre-configure:
+	@cd ${WRKSRC}; aclocal -I ${X11BASE}/share/aclocal
 
 .include <bsd.port.mk>

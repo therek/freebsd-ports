@@ -2,7 +2,7 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/x11/gmessage/Makefile,v 1.1.1.1 1999/09/09 02:22:48 taoka Exp $
+# $FreeBSD: ports/x11/gmessage/Makefile,v 1.2 2000/04/13 19:09:25 cpiazza Exp $
 #
 
 PORTNAME=	gmessage
@@ -14,6 +14,9 @@ MAINTAINER=	domi@saargate.de
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
 USE_X_PREFIX=	yes
+MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>
