@@ -2,11 +2,11 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.17 2001/06/27 10:14:58 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		xml
-PORTVERSION=		0.6.6
+PORTVERSION=		0.7
 CATEGORIES=		textproc python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pyxml
@@ -28,7 +28,7 @@ USE_PYTHON=		yes
 CPIO=			cpio --quiet -pdum -R
 DOCSDIR=		${PREFIX}/share/doc/py-xml
 EXAMPLESDIR=		${PREFIX}/share/examples/py-xml
-.if ${PYTHON_VERSION} == "python1.5"
+.if ${PYTHON_REL} < 200
 PLIST_SUB+=		PACKAGE_DIR=xml
 .else
 PLIST_SUB+=		PACKAGE_DIR=_xmlplus
