@@ -2,7 +2,7 @@
 # Date created:				29 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/security/ssh-multiadd/Makefile,v 1.1 2001/05/20 02:40:30 will Exp $
+# $FreeBSD: ports/security/ssh-multiadd/Makefile,v 1.2 2001/06/02 15:39:30 kevlo Exp $
 #
 
 PORTNAME=	ssh-multiadd
@@ -10,7 +10,7 @@ PORTVERSION=	1.3.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.azstarnet.com/~donut/programs/ssh-multiadd/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 USE_PYTHON=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:				1999/04/07
 # Whom:					ache
 #
-# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.14 2001/06/11 15:20:04 kevlo Exp $
+# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.15 2001/07/23 14:27:26 vanilla Exp $
 #
 
 PORTNAME=	Digest-MD5
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Digest
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

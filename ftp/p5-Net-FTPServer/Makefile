@@ -3,7 +3,7 @@
 # Date created:			Jul 30, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.3 2001/08/13 12:33:40 kevlo Exp $
+# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.4 2001/08/15 17:45:22 tobez Exp $
 #
 
 PORTNAME=	Net-FTPServer
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Authen/PAM.pm:${PORTSDIR}/security/p5-Authen-PAM \
 		${SITE_PERL}/${PERL_ARCH}/BSD/Resource.pm:${PORTSDIR}/devel/p5-BSD-Resource \

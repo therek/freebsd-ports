@@ -2,7 +2,7 @@
 # Date created:				Wed Jan  3 12:31:10 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.5 2001/05/10 01:20:49 vanilla Exp $
+# $FreeBSD: ports/mail/p5-Mail-Audit/Makefile,v 1.6 2001/08/03 04:51:53 lioux Exp $
 #
 
 PORTNAME=	Mail-Audit
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/Net/Config.pm:${PORTSDIR}/net/p5-Net \
 		${SITE_PERL}/Mail/Internet.pm:${PORTSDIR}/mail/p5-Mail-Tools

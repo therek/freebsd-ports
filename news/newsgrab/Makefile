@@ -2,7 +2,7 @@
 # Date Created:				11 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/newsgrab/Makefile,v 1.1 2001/07/06 17:29:37 ijliao Exp $
 #
 
 PORTNAME=	newsgrab
@@ -10,7 +10,7 @@ PORTVERSION=	0.1.1
 CATEGORIES=	news
 MASTER_SITES=	http://phunkbros.dk/newsgrab/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/News/NNTPClient.pm:${PORTSDIR}/news/p5-NNTPClient
 

@@ -2,7 +2,7 @@
 # Date created:        20 January 2001
 # Whom:                petef@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ascii2pdf/Makefile,v 1.2 2001/03/13 15:05:22 sobomax Exp $
 #
 
 PORTNAME=	ascii2pdf
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://bulldog.tzo.org/ascii2pdf/
 DISTNAME=	${PORTNAME}-0.9.1
 
-MAINTAINER=     petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/PDF/Create.pm:${PORTSDIR}/textproc/p5-PDF-Create
 

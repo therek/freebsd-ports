@@ -2,7 +2,7 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.14 2001/07/04 06:35:56 dwcjr Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.15 2001/07/22 05:00:08 dwcjr Exp $
 #
 
 PORTNAME=	maildrop
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 # Maildrop is usually installed with gdbm extensions. If you do not
 # want these extensions installed, define WITHOUT_GDBM.

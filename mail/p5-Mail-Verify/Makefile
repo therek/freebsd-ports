@@ -2,7 +2,7 @@
 # Date created:				2 August 2001
 # Whom:					Pete Fritchman <petef@databits.net >
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Verify/Makefile,v 1.1 2001/08/05 03:40:37 lioux Exp $
 #
 
 PORTNAME=	Mail-Verify
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS
 RUN_DEPENDS=	${BUILD_DEPENDS}

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	qtools
 # Date created:				3 July 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qtools/Makefile,v 1.1 2001/07/13 15:05:20 roam Exp $
 #
 
 PORTNAME=	qtools
@@ -10,7 +10,7 @@ PORTVERSION=	0.55
 CATEGORIES=	mail
 MASTER_SITES=	http://www.superscript.com/qtools/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
 

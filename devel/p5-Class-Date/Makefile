@@ -2,7 +2,7 @@
 # Date Created:				28 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/p5-Class-Date/Makefile,v 1.2 2001/07/14 16:49:45 kevlo Exp $
+# $FreeBSD: ports/devel/p5-Class-Date/Makefile,v 1.3 2001/07/22 04:42:55 dwcjr Exp $
 #
 
 PORTNAME=	Class-Date
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Class
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

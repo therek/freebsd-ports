@@ -2,7 +2,7 @@
 # Date created:				13th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/pspell/Makefile,v 1.12 2001/02/18 15:49:05 kevlo Exp $
+# $FreeBSD: ports/textproc/pspell/Makefile,v 1.13 2001/04/24 14:07:48 kevlo Exp $
 #
 
 PORTNAME=	pspell
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/^0//}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 LIB_DEPENDS=	ltdl.1:${PORTSDIR}/devel/libtool
 

@@ -2,7 +2,7 @@
 # Date created:		24 October 1997
 # Whom:			Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/mail/tkrat/Makefile,v 1.23 2001/02/05 15:11:18 olgeni Exp $
+# $FreeBSD: ports/mail/tkrat/Makefile,v 1.24 2001/02/14 22:22:26 sf Exp $
 #
 
 PORTNAME=	tkrat
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.karen.hik.se/pub2/unix/mail/ratatosk/ \
 		ftp://ftp.riken.go.jp/pub/net/mail/tkrat/ \
 		ftp://ftp.uni-koeln.de/windows/xcontrib/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 BUILD_DEPENDS=	tclsh8.2:${PORTSDIR}/lang/tcl82
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \

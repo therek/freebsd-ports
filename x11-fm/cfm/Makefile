@@ -1,8 +1,8 @@
 # New ports collection makefile for:	cfm
 # Date created:				23 June 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/x11-fm/cfm/Makefile,v 1.1 2001/06/23 06:53:28 markp Exp $
+# $FreeBSD: ports/x11-fm/cfm/Makefile,v 1.2 2001/06/27 06:03:30 dwcjr Exp $
 #
 
 PORTNAME=	cfm
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.rpi.edu/~mullr/cfm/dist/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Tk.pm:${PORTSDIR}/x11-toolkits/p5-Tk
 

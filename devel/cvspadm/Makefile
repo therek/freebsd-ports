@@ -2,7 +2,7 @@
 # Date Created:				17 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/cvspadm/Makefile,v 1.1 2001/07/07 03:19:56 ijliao Exp $
+# $FreeBSD: ports/devel/cvspadm/Makefile,v 1.2 2001/07/22 04:16:54 dwcjr Exp $
 #
 
 PORTNAME=	cvspadm
@@ -10,7 +10,7 @@ PORTVERSION=	0.1.1
 CATEGORIES=	devel
 MASTER_SITES=	http://hackfoo.net/projs/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

@@ -2,7 +2,7 @@
 # Date Created:				1 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-Graphics-ColorNames/Makefile,v 1.1 2001/07/08 07:05:23 ijliao Exp $
 #
 
 PORTNAME=	Graphics-ColorNames
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Graphics
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

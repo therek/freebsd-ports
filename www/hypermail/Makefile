@@ -2,7 +2,7 @@
 # Date created:				23 Dec 1997
 # Whom:					mjhsieh
 #
-# $FreeBSD: ports/www/hypermail/Makefile,v 1.11 2001/06/11 02:08:02 steve Exp $
+# $FreeBSD: ports/www/hypermail/Makefile,v 1.12 2001/06/11 02:10:24 steve Exp $
 #
 
 PORTNAME=	hypermail
@@ -10,7 +10,7 @@ PORTVERSION=	2.1.2
 CATEGORIES=	www mail
 MASTER_SITES=	http://www.landfield.com/hypermail/dist/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-htmldir=${PREFIX}/share/doc/hypermail

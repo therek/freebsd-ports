@@ -2,7 +2,7 @@
 # Date created:				21 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/regm/Makefile,v 1.1 2001/07/22 07:52:00 markp Exp $
 #
 
 PORTNAME=	regm
@@ -10,7 +10,7 @@ PORTVERSION=	1.0
 CATEGORIES=	mail python
 MASTER_SITES=	http://perso.linuxfr.org/jdumont/regm/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 NO_BUILD=	yes
 USE_PYTHON=	yes

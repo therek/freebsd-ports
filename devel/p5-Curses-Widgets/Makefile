@@ -1,8 +1,8 @@
 # New ports collection makefile for:	p5-Curses-Widgets
 # Date created:				5 July 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Curses-Widgets/Makefile,v 1.1 2001/07/08 15:50:14 kevlo Exp $
 #
 
 PORTNAME=	Curses-Widgets
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Curses
 PKGNAMEPREFIX=	p5-
 DISTNAME=	curses_widgets_${PORTVERSION:S/./_/}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Curses.pm:${PORTSDIR}/devel/p5-Curses
 RUN_DEPENDS=	${BUILD_DEPENDS}

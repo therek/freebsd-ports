@@ -2,7 +2,7 @@
 # Date created:		10 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/scrollz/Makefile,v 1.12 2001/07/08 15:31:51 dwcjr Exp $
+# $FreeBSD: ports/irc/scrollz/Makefile,v 1.13 2001/07/09 23:09:04 dwcjr Exp $
 #
 
 PORTNAME=	scrollz
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.scrollz.com/pub/ScrollZ/source/ \
 		ftp://ftp.du.se/pub/mirrors/ScrollZ/source/
 DISTNAME=	ScrollZ-${PORTVERSION}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 IS_INTERACTIVE=	yes
 GNU_CONFIGURE=	yes

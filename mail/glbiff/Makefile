@@ -2,7 +2,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/glbiff/Makefile,v 1.15 2000/08/03 09:25:23 asami Exp $
+# $FreeBSD: ports/mail/glbiff/Makefile,v 1.16 2001/06/11 15:16:09 kevlo Exp $
 #
 
 PORTNAME=	glbiff
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.dgp.utoronto.ca/~mac/projects/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes

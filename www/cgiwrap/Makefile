@@ -2,7 +2,7 @@
 # Date created:         30 July 1998
 # Whom:                 Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.11 2001/06/10 15:40:48 kevlo Exp $
+# $FreeBSD: ports/www/cgiwrap/Makefile,v 1.12 2001/07/26 12:28:24 markp Exp $
 #
 
 PORTNAME=	cgiwrap
@@ -11,7 +11,7 @@ CATEGORIES=	www security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-httpd-user=${HTTPDUSER} \

@@ -2,7 +2,7 @@
 # Date created:			Di  13 Mär 2001 19:37:25 CET
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Table/Makefile,v 1.2 2001/06/12 16:18:00 kevlo Exp $
+# $FreeBSD: ports/www/p5-HTML-Table/Makefile,v 1.3 2001/08/13 12:39:35 kevlo Exp $
 #
 
 PORTNAME=	HTML-Table
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 PERL_CONFIGURE=	yes
 

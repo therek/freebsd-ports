@@ -1,8 +1,8 @@
 # New ports collection makefile for:	mdw
 # Date created:				5 July 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mdw/Makefile,v 1.1 2001/07/08 07:07:41 markp Exp $
 #
 
 PORTNAME=	mdw
@@ -10,7 +10,7 @@ PORTVERSION=	1.0
 CATEGORIES=	www
 MASTER_SITES=	http://redbrick.dcu.ie/~colmmacc/mdw/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

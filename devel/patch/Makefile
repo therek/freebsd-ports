@@ -2,7 +2,7 @@
 # Date created:         21 Jan 1998
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/patch/Makefile,v 1.7 2001/01/11 01:22:11 trevor Exp $
+# $FreeBSD: ports/devel/patch/Makefile,v 1.8 2001/07/23 03:36:31 dwcjr Exp $
 #
 
 PORTNAME=	patch
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	patch
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g

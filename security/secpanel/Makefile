@@ -2,7 +2,7 @@
 # Date created:				11 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/secpanel/Makefile,v 1.1 2001/06/26 03:28:12 dwcjr Exp $
 #
 
 PORTNAME=	secpanel
@@ -10,7 +10,7 @@ PORTVERSION=	0.31
 CATEGORIES=	security
 MASTER_SITES=	http://www2.wiwi.uni-marburg.de/~leich/soft/secpanel/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83 \
 		ssh-askpass:${PORTSDIR}/security/openssh-askpass

@@ -2,7 +2,7 @@
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/bftpd/Makefile,v 1.2 2001/04/15 02:06:52 steve Exp $
+# $FreeBSD: ports/ftp/bftpd/Makefile,v 1.3 2001/07/07 05:32:43 dwcjr Exp $
 #
 
 PORTNAME=	bftpd
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.21
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.bftpd.f2s.com/downloads/src/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--enable-pam

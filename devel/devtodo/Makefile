@@ -2,7 +2,7 @@
 # Date Created:				26 May 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/devtodo/Makefile,v 1.2 2001/07/04 16:11:25 dannyboy Exp $
+# $FreeBSD: ports/devel/devtodo/Makefile,v 1.3 2001/07/12 14:07:06 kevlo Exp $
 #
 
 PORTNAME=	devtodo
@@ -10,7 +10,7 @@ PORTVERSION=	0.1.11
 CATEGORIES=	devel
 MASTER_SITES=	http://activelysecure.net/~alec/development/devtodo/download.php?filename=${PORTVERSION}/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	Yes
 

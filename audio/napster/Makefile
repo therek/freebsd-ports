@@ -2,7 +2,7 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.14 2001/07/22 04:10:37 dwcjr Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.15 2001/08/03 02:54:15 lioux Exp $
 #
 
 PORTNAME=	nap
@@ -11,7 +11,7 @@ CATEGORIES=	audio net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	nap
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

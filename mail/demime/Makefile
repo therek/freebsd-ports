@@ -2,7 +2,7 @@
 # Date Created:				25 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/mail/demime/Makefile,v 1.1 2001/05/24 13:35:57 ijliao Exp $
+# $FreeBSD: ports/mail/demime/Makefile,v 1.2 2001/06/03 06:10:13 kevlo Exp $
 #
 
 PORTNAME=	demime
@@ -11,7 +11,7 @@ CATEGORIES=	mail textproc
 MASTER_SITES=	http://scifi.squawk.com/
 DISTFILES=	${PORTNAME}.stable demime_junkmail.cf
 
-MAINTAINER=     petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/MIME/Base64.pm:${PORTSDIR}/converters/p5-MIME-Base64 \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Bundle/LWP.pm:${PORTSDIR}/www/p5-libwww \

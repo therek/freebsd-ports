@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/audio/mp3info/Makefile,v 1.8 2000/04/29 20:47:04 cpiazza Exp $
+# $FreeBSD: ports/audio/mp3info/Makefile,v 1.9 2001/07/22 03:34:50 dwcjr Exp $
 #
 
 PORTNAME=	mp3info
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/mp3-utils/mp3info
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 WANT_GTK=	yes
 

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	service-config
 # Date created:				2 July 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/service-config/Makefile,v 1.1 2001/07/06 15:34:54 roam Exp $
 #
 
 PORTNAME=	service-config
@@ -10,7 +10,7 @@ PORTVERSION=	0.51
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.superscript.com/service-config/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	supervise:${PORTSDIR}/sysutils/daemontools
 

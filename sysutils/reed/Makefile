@@ -2,7 +2,7 @@
 # Date created:				7 August 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/reed/Makefile,v 1.1 2001/08/08 06:52:42 lioux Exp $
 #
 
 PORTNAME=	reed
@@ -10,7 +10,7 @@ PORTVERSION=	4.6
 CATEGORIES=	misc
 MASTER_SITES=	http://www.sacredchao.net/software/reed/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 

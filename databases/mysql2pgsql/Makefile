@@ -2,7 +2,7 @@
 # Date Created:				27 May 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/databases/mysql2pgsql/Makefile,v 1.1 2001/06/23 02:36:54 jeh Exp $
+# $FreeBSD: ports/databases/mysql2pgsql/Makefile,v 1.2 2001/06/23 16:30:21 roberto Exp $
 #
 
 PORTNAME=	mysql2pgsql
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 EXTRACT_ONLY=	${PORTNAME}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBD/Pg.pm:${PORTSDIR}/databases/p5-DBD-Pg

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	peps
 # Date created:				5 July 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/peps/Makefile,v 1.1 2001/07/07 03:52:10 markp Exp $
 #
 
 PORTNAME=	peps
@@ -10,7 +10,7 @@ PORTVERSION=	1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.whizkidtech.net/peps/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6 \
 		pnmtopng:${PORTSDIR}/graphics/netpbm

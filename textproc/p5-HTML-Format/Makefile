@@ -2,7 +2,7 @@
 # Date created:				25 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/textproc/p5-HTML-Format/Makefile,v 1.1 2001/05/24 13:32:17 ijliao Exp $
+# $FreeBSD: ports/textproc/p5-HTML-Format/Makefile,v 1.2 2001/05/25 15:50:32 roam Exp $
 #
 
 PORTNAME=	HTML-Format
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=     petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Element.pm:${PORTSDIR}/www/p5-HTML-Tree \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Font/AFM.pm:${PORTSDIR}/x11-fonts/p5-Font-AFM

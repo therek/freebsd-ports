@@ -2,7 +2,7 @@
 # Date created:				20 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libevent/Makefile,v 1.1 2001/06/23 15:56:03 dwcjr Exp $
 #
 
 PORTNAME=	libevent
@@ -10,7 +10,7 @@ PORTVERSION=	0.3d
 CATEGORIES=	devel
 MASTER_SITES=	http://www.monkey.org/~provos/
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

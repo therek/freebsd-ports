@@ -1,8 +1,8 @@
 # New ports collection makefile for:	p5-File-Rsync
 # Date created:				20 May 2001
-# Whom:					petef@databits.net
+# Whom:					petef@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-File-Rsync/Makefile,v 1.1 2001/05/27 05:37:11 vanilla Exp $
 #
 
 PORTNAME=	File-Rsync
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	rsync:${PORTSDIR}/net/rsync
 

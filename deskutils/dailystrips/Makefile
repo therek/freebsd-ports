@@ -2,7 +2,7 @@
 # Date created:				13 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/deskutils/dailystrips/Makefile,v 1.2 2001/07/31 16:44:25 lioux Exp $
+# $FreeBSD: ports/deskutils/dailystrips/Makefile,v 1.3 2001/08/19 09:30:15 olgeni Exp $
 #
 
 PORTNAME=	dailystrips
@@ -11,7 +11,7 @@ CATEGORIES=	deskutils www
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	petef@databits.net
+MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Date/Parse.pm:${PORTSDIR}/devel/p5-TimeDate
