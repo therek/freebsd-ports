@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.11 2000/04/17 04:23:22 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.12 2000/04/25 14:23:36 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -62,6 +62,7 @@ MAKE_ARGS=	KMODDIR="${VMDIR}/lib/modules"
 post-patch:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}
 	${CP} ${FILESDIR}/Makefile.vmmon ${WRKSRC}/vmmon-only/Makefile
+	${RM} -rf ${WRKSRC}/vmmon-only/linux/
 
 setoptions:
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
