@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.272 2000/12/03 21:01:57 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.273 2000/12/04 20:49:26 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -19,6 +19,7 @@
     SUBDIR += asp2php
     SUBDIR += aswedit
     SUBDIR += bacon
+    SUBDIR += bk2site
     SUBDIR += bkmrkconv
     SUBDIR += bluefish
     SUBDIR += bsdi-netscape47-communicator
