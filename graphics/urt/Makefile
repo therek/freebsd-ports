@@ -2,7 +2,7 @@
 # Date created:		Jan 5 1997
 # Whom:			cfs@ing.puc.cl (original)
 #
-# $FreeBSD: ports/graphics/urt/Makefile,v 1.23 2000/06/16 08:19:39 sobomax Exp $
+# $FreeBSD: ports/graphics/urt/Makefile,v 1.24 2000/06/16 21:50:53 asami Exp $
 #
 
 PORTNAME=	urt
@@ -70,8 +70,8 @@ post-install:
 	cd ${PREFIX}/share/examples/urt; \
 	${TAR} xf $(DISTDIR)/urt-img.tar; \
 	${CHOWN} -R root:wheel . ; \
-	find . -type d -exec ${CHMOD} 775 '{}' \; ; \
-	find . -type f -exec ${CHMOD} 664 '{}' \;
+	find . -type d -exec ${CHMOD} 755 '{}' \; ; \
+	find . -type f -exec ${CHMOD} 644 '{}' \;
 .endif
 
 .include <bsd.port.mk>
