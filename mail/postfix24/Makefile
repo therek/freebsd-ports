@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.36 2001/04/02 06:50:26 mharo Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.37 2001/05/21 06:52:08 kuriyama Exp $
 #
 
 PORTNAME=	postfix
@@ -18,7 +18,7 @@ MASTER_SITE_SUBDIR= . old related/postfix
 DISTNAME=	postfix-20010228-pl02
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	blaz@si.FreeBSD.org
+MAINTAINER=	dwcjr@FreeBSD.org
 
 MAN1=	mailq.1 newaliases.1 postalias.1 postcat.1 postconf.1 postdrop.1 \
 	postfix.1 postkick.1 postlock.1 postlog.1 postmap.1 postsuper.1 \
