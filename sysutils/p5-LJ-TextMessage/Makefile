@@ -2,7 +2,7 @@
 # Date created:				25 Mar 2001
 # Whom:					Michael Johnson <ahze@ahze.net>
 #
-# $FreeBSD: ports/sysutils/p5-LJ-TextMessage/Makefile,v 1.3 2001/05/11 16:34:25 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	LJ-TextMessage
 PORTVERSION=	1.4.1
@@ -11,7 +11,7 @@ MASTER_SITES=	http://livejournal.com/files/code/textmessage/ \
 		ftp://ftp.livejournal.com/code/textmessage/
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ahze@ahze.net
+MAINTAINER=	ahze@rgv.net
 
 PERL_CONFIGURE=	yes
 
