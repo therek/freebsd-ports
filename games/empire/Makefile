@@ -2,14 +2,14 @@
 # Date created:				13 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/empire/Makefile,v 1.9 2000/08/14 03:20:39 steve Exp $
+# $FreeBSD: ports/games/empire/Makefile,v 1.10 2001/02/03 15:02:58 kevlo Exp $
 #
 
 PORTNAME=	empire
 PORTVERSION=	1.2
 CATEGORIES=	games
-MASTER_SITES=	http://www.tuxedo.org/~esr/
-DISTNAME=	vms-${PORTNAME}-${PORTVERSION}
+MASTER_SITES=	http://www.tuxedo.org/~esr/vms-empire/
+DISTNAME=	vms-empire-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
