@@ -2,14 +2,15 @@
 # Date created:					8 Aug 1998
 # Whom:						rom
 #
-# $FreeBSD: ports/math/geg/Makefile,v 1.13 1999/11/01 01:02:35 steve Exp $
+# $FreeBSD: ports/math/geg/Makefile,v 1.14 2000/04/14 07:20:04 asami Exp $
 #
 
 PORTNAME=	geg
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	math
-MASTER_SITES=	http://www.infolaunch.com/~daveb/ \
-		ftp://metalab.unc.edu/pub/Linux/science/visualization/plotting/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		http://www.infolaunch.com/~daveb/
+MASTER_SITE_SUBDIR=	science/visualization/plotting
 
 MAINTAINER=	domi@saargate.de
 
