@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.1 2002/08/13 22:05:04 naddy Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.2 2002/08/28 19:29:05 obraun Exp $
 #
 # set -x
 
@@ -117,6 +117,7 @@ echo "share/doc/mutt/ChangeLog.nntp" >> $tmp_first
 fi
 if [ "$MUTT_SGML" = "yes" ]; then
 echo "share/doc/mutt/manual.latin1" >> $tmp_first
+echo "share/doc/mutt/manual.ps" >> $tmp_first
 fi
 
 if [ "$MUTT_HTML" = "yes" ]; then
