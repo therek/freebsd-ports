@@ -3,7 +3,7 @@
 # Date created:         11 Jul 1996
 # Whom:                 alexis
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/upsd/Makefile,v 1.4 1999/08/31 02:00:15 peter Exp $
 #
 
 DISTNAME=	upsd-2.0.1.6
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://www.ww.net/pub/wildwind/upsd/ \
 		http://www.cre8tivegroup.com/ \
 		ftp://ftp.sw.ru/pub/unix/upsd/
 
-MAINTAINER=	alexis@ww.net
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/upsd-2.0
 
