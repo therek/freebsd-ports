@@ -2,7 +2,7 @@
 # Date created:				29 August 2000
 # Whom:					David Gilbert <dgilbert@velocet.ca>
 #
-# $FreeBSD: ports/graphics/gle/Makefile,v 1.1 2000/09/02 15:10:03 sobomax Exp $
+# $FreeBSD: ports/graphics/gle/Makefile,v 1.2 2001/05/23 05:16:02 ijliao Exp $
 #
 
 PORTNAME=	gle
@@ -20,7 +20,7 @@ USE_X_PREFIX=	yes
 USE_MESA=	yes
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	"LIBS=-L${X11BASE}/lib -lXext"
+CONFIGURE_ENV=	"LIBS=-L${X11BASE}/lib -lXext ${PTHREAD_LIBS}"
 
 MAN3=		gle.3gle gleExtrusion.3gle gleHelicoid.3gle gleLathe.3gle \
 		glePolyCone.3gle glePolyCylinder.3gle gleScrew.3gle \
