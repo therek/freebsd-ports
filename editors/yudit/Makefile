@@ -2,7 +2,7 @@
 # Date created:		October 3, 1998
 # Whom:			rch@richard.eu.org
 #
-# $FreeBSD: ports/editors/yudit/Makefile,v 1.13 2000/05/28 03:38:33 steve Exp $
+# $FreeBSD: ports/editors/yudit/Makefile,v 1.14 2000/08/03 09:23:08 asami Exp $
 #
 
 PORTNAME=	yudit
@@ -22,6 +22,7 @@ MAINTAINER=	rch@WriteMe.Com
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 
 USE_FREETYPE=	YES
+USE_XLIB=	YES
 CONFIGURE_ENV=	LC_ALL=
 GNU_CONFIGURE=	YES
 MAKE_ENV=	LC_ALL=
