@@ -3,7 +3,7 @@
 #       python setup.py install
 #
 
-__version__ = "$FreeBSD$"
+__version__ = "$FreeBSD: ports/x11-toolkits/py-tkinter/files/setup.py,v 1.1 2001/03/01 12:24:24 tg Exp $"
 
 import os, string
 
@@ -15,7 +15,7 @@ try:
 except:
     raise SystemExit, "Distutils problem"
 
-tkversion = "8.3"
+tkversion = "8.4"
 prefix = sysconfig.PREFIX
 # Python 1.5 doesn't have os.getenv()?
 x11base = os.environ['X11BASE'] or '/usr/X11R6'
