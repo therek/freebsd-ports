@@ -2,12 +2,12 @@
 # Date Created:		9 Mar 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/liece-emacs20/Makefile,v 1.1 2001/04/10 09:19:55 knu Exp $
+# $FreeBSD: ports/irc/liece-emacs20/Makefile,v 1.2 2001/04/10 18:36:23 knu Exp $
 #
 
 PORTNAME=	liece
 PORTVERSION=	1.4.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	irc elisp
 MASTER_SITES=	http://www.unixuser.org/~ueno/liece/dist/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
@@ -16,7 +16,8 @@ MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
 
 BUILD_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim-${EMACS_PORT_NAME}-current \
 		${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
-RUN_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim-${EMACS_PORT_NAME}-current
+RUN_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim-${EMACS_PORT_NAME}-current \
+		${LOCALBASE}/bin/ldcc:${PORTSDIR}/irc/liece-dcc
 
 EMACS_PORT_NAME?=	emacs20
 LISPDIR?=		${EMACS_LIBDIR}/site-lisp/${PORTNAME}
