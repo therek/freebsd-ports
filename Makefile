@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.60 2000/09/27 02:08:53 asami Exp $
+# $FreeBSD: ports/Makefile,v 1.61 2000/10/31 21:00:02 jeh Exp $
 #
 
 SUBDIR += archivers
@@ -35,10 +35,12 @@ SUBDIR += news
 SUBDIR += palm
 SUBDIR += print
 SUBDIR += russian
+SUBDIR += science
 SUBDIR += security
 SUBDIR += shells
 SUBDIR += sysutils
 SUBDIR += textproc
+SUBDIR += ukrainian
 SUBDIR += vietnamese
 SUBDIR += www
 SUBDIR += x11
