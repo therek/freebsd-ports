@@ -2,11 +2,12 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.19 2000/04/09 18:30:27 cpiazza Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.20 2000/07/18 00:35:34 archie Exp $
 #
 
 PORTNAME=		skip
 PORTVERSION=		1.0
+PORTREVISION=		1
 CATEGORIES=		security
 # Note: the original source comes from Sun, via this web page:
 #    http://skip.incog.com/src-form.html
@@ -25,8 +26,8 @@ LIB_DEPENDS=	xview.3:${PORTSDIR}/x11-toolkits/xview
 # The SKIP code is restricted from export from the United States and Canada.
 # See the file doc/00README for legal details.
 RESTRICTED=		Contains strong crypto; no export from U.S./Canada
-NO_PACKAGE=		${RESTRICTED}
-NO_CDROM=		${RESTRICTED}
+#NO_PACKAGE=		${RESTRICTED}
+#NO_CDROM=		${RESTRICTED}
 
 IS_INTERACTIVE=		yes
 NO_WRKSUBDIR=		defined
