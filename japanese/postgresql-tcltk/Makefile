@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.21 2001/01/09 06:46:03 ume Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.22 2001/01/11 00:56:26 trevor Exp $
 #
 
 PORTNAME=	postgresql
@@ -239,7 +239,6 @@ post-install:
 	@ ${ECHO_MSG} "---------------------------------------------------------"
 	@ ${ECHO_MSG} "Putting jdbc examples into ${PREFIX}/share/examples/pgsql"
 	@ ${ECHO_MSG} "---------------------------------------------------------"
-	@ ${CAT} ${PKGDIR}/pkg-plist.doc >> ${TMPPLIST}
 .endif
 .endif
 .if !defined(NOPORTDOCS)
@@ -249,6 +248,7 @@ post-install:
 	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/doc/README* ${PREFIX}/share/doc/pgsql
 	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/doc/TODO ${PREFIX}/share/doc/pgsql
 #	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/doc/*ps ${PREFIX}/share/doc/pgsql
+	@ ${CAT} ${PKGDIR}/pkg-plist.doc >> ${TMPPLIST}
 .endif
 .if !defined(BATCH)
 	@ more -e ${FILESDIR}/post-install-notes
