@@ -2,7 +2,7 @@
 # Date created:		20 November 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.49 2000/06/16 21:51:18 asami Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.50 2000/08/12 11:33:14 jedgar Exp $
 
 PORTNAME=	expect
 PORTVERSION=	5.32.1
@@ -30,6 +30,6 @@ MAN3=		libexpect.3
 .endif
 
 post-install:
-	${LN} -sf libexpect532.so.2 ${PREFIX}/lib/libexpect532.so
+	${LN} -sf libexpect532.so.1 ${PREFIX}/lib/libexpect532.so
 
 .include <bsd.port.mk>
