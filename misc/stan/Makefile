@@ -3,15 +3,15 @@
 # Date created:			May 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/stan/Makefile,v 1.1 2001/05/01 17:31:38 ijliao Exp $
 #
 
 PORTNAME=	stan
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.r0q.cx/stan/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
