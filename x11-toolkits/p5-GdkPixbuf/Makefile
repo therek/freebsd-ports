@@ -2,7 +2,7 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/p5-GdkPixbuf/Makefile,v 1.1 2000/10/29 21:31:46 vanilla Exp $
 #
 
 PORTNAME=	GdkPixbuf
@@ -15,7 +15,7 @@ DISTNAME=	Gtk-Perl-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/mach/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
 LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_PERL5=	yes
