@@ -2,7 +2,7 @@
 # Date created: 10th February, 2001
 # Whom:		Thierry Thomas <tthomas@mail.dotcom.fr>
 #
-# $FreeBSD: ports/news/newsx/Makefile,v 1.1 2001/04/08 10:51:40 dinoex Exp $
+# $FreeBSD: ports/news/newsx/Makefile,v 1.2 2001/04/08 18:51:32 dinoex Exp $
 #
 
 PORTNAME=	newsx
@@ -10,11 +10,13 @@ PORTVERSION=	1.4
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.kvaleberg.com/pub/
 
-MAINTAINER=	tthomas@mail.dotcom.fr
+MAINTAINER=	thierry@thomas.as
 
-BUILD_DEPENDS=	${LOCALBASE}/news/lib/libinn.a:${PORTSDIR}/news/inn:${hdr_dir}
+BUILD_DEPENDS=	${LOCALBASE}/news/lib/libinn.a:${PORTSDIR}/news/inn
 
 hdr_dir=	${LOCALBASE}/news/include
+
+DOCS=		AUTHORS COPYING ChangeLog FAQ INSTALL NEWS README TODO
 
 post-extract:
 	@${ECHO} "*********************************************************"
@@ -41,6 +43,15 @@ pre-configure:
 post-configure:
 	@${PERL} -pi -e "s:^LIBS = :LIBS = -L${LOCALBASE}/news/lib -linn:g" \
 	${WRKSRC}/test/Makefile
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+.for FILE in ${DOCS}
+	@${INSTALL_DATA} ${WRKSRC}/${FILE} ${DOCSDIR}
+.endfor
+	@${ECHO} "Documentation installed in ${DOCSDIR}."
+.endif
 
 #GNU_CONFIGURE=	yes
 USE_AUTOCONF= yes
