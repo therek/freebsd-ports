@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.54 2004/08/07 06:36:56 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.55 2004/09/03 17:12:28 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -263,7 +263,7 @@ PYTHON_INCLUDEDIR=		${PYTHONBASE}/include/${PYTHON_VERSION}
 PYTHON_LIBDIR=			${PYTHONBASE}/lib/${PYTHON_VERSION}
 PYTHON_PKGNAMEPREFIX=	py${PYTHON_SUFFIX}-
 PYTHON_PKGNAMESUFFIX=	-py${PYTHON_SUFFIX}
-PYTHON_PLATFORM!=		${EXPR} ${OPSYS:L}${OSREL} : '\(.*\)\.'
+PYTHON_PLATFORM!=		${EXPR} ${OPSYS:L}${OSREL} : '\([a-z]*[0-9]*\)\.'
 PYTHON_SITELIBDIR=		${PYTHON_LIBDIR}/site-packages
 
 PYTHONPREFIX_INCLUDEDIR=	${PYTHON_INCLUDEDIR:S;${PYTHONBASE};${PREFIX};}
