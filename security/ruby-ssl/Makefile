@@ -2,7 +2,7 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-ssl/Makefile,v 1.7 2001/07/20 19:37:06 knu Exp $
+# $FreeBSD: ports/security/ruby-ssl/Makefile,v 1.8 2001/08/18 12:52:48 knu Exp $
 #
 
 PORTNAME=	ssl
@@ -16,6 +16,9 @@ MAINTAINER=	knu@FreeBSD.org
 
 USE_OPENSSL=	yes
 USE_RUBY=	yes
+.if !defined(NOPORTDOCS)
+USE_RUBY_RD=	yes
+.endif
 USE_RUBY_EXTCONF=	yes
 
 CONFIGURE_ARGS=	--with-openssl-include="${OPENSSLBASE}/include/openssl" \
