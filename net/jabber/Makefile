@@ -2,7 +2,7 @@
 # Date created:			5 February 2001
 # Whom:				joe
 #
-# $FreeBSD: ports/net/jabber/Makefile,v 1.9 2001/06/18 12:31:55 joe Exp $
+# $FreeBSD: ports/net/jabber/Makefile,v 1.10 2001/09/11 14:51:14 sf Exp $
 #
 
 PORTNAME=	jabber
@@ -25,6 +25,9 @@ LIB_DEPENDS=	pth:${PORTSDIR}/devel/pth
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+USE_OPENSSL=	yes
+
+CONFIGURE_ARGS+=	--enable-ssl
 
 rc=${PREFIX}/etc/rc.d
 
