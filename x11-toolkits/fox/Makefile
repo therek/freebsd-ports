@@ -2,11 +2,11 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.20 2001/04/30 16:39:02 knu Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.21 2001/05/11 20:39:46 knu Exp $
 #
 
 PORTNAME=	fox
-PORTVERSION?=	0.99.172
+PORTVERSION?=	0.99.174
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
 		ftp://SunSITE.Informatik.RWTH-Aachen.DE/pub/Linux/fox/
@@ -50,6 +50,12 @@ CONFIGURE_ARGS+=--enable-release
 .endif
 .if defined(WANT_PROFILE)
 CONFIGURE_ARGS+=--with-profiling=gprof
+.endif
+MAKE_ARGS+=	-j3
+.if defined(NOPORTDOCS)
+MAKE_ARGS+=	DOC=
+.else
+MAKE_ARGS+=	DOC=doc
 .endif
 USE_LIBTOOL=	yes
 SHLIB_MAJ=	1
