@@ -2,21 +2,29 @@
 # Date created:		2 August 2001
 # Whom:			marck@rinet.ru
 #
-# $FreeBSD: ports/net/ehnt/Makefile,v 1.2 2001/09/08 09:04:07 yar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ehnt
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
-		${PORTNAME}_data-${PORTVERSION}${EXTRACT_SUFX}
+DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
+.if !defined(NO_ASN_DATA)
+DISTFILES+=	${PORTNAME}_data-${PORTVERSION}${EXTRACT_SUFX}
+.endif
 
 MAINTAINER=	marck@rinet.ru
 
 MAN1=		ehnt.1
 MAN8=		ehntserv.8
+
+.if defined(NO_ASN_DATA)
+post-extract:
+	${TOUCH} ${WRKSRC}/asnc.txt
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ehnt ${PREFIX}/bin/
