@@ -2,13 +2,14 @@
 # Date created:        22 November 1999
 # Whom:                jmrobins
 #
-# $FreeBSD: ports/mail/mailfilter/Makefile,v 1.2 2000/04/13 19:59:53 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mailfilter
 PORTVERSION=	1.0b
 CATEGORIES=	mail
-MASTER_SITES=	ftp://samurai.ruin.org/pub/All/
+MASTER_SITES=	http://galileo.spaceports.com/~jharris/distfiles/ \
+		ftp://samurai.ruin.org/pub/All/
 
 MAINTAINER=	jmrobins@samurai.ruin.org
 
