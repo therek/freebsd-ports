@@ -3,7 +3,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/astro/xephem/Makefile,v 1.14 1999/08/30 11:09:15 asami Exp $
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.15 2000/01/19 17:38:37 mph Exp $
 #
 
 DISTNAME=	xephem-3.2.3
@@ -30,8 +30,8 @@ AUXIL=		README jupiter.9910 logo.gif mars.9910 mars_db marsmap.fts \
 		moon.fts moon_db saturne.9910 uranus.9910 xephem.hlp \
 		xephem_sites
 
-CATALOGS=	Abell.edb IC.edb ISS.edb Messier.edb NGC.edb README SAC.edb \
-		UGC.edb YBS.edb asteroids.edb comets.edb hickson.edb tycho.xe
+CATALOGS=	ISS.edb Messier.edb NGC.edb README SAC.edb \
+		YBS.edb asteroids.edb comets.edb hickson.edb
 
 TOOLS=		README extract.awk astorb2edb.pl jost2edb.awk mpcorb2edb.pl \
 		tle2edb.pl
