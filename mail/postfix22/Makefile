@@ -2,11 +2,11 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.37 2001/05/21 06:52:08 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.38 2001/06/17 21:49:56 dwcjr Exp $
 #
 
 PORTNAME=	postfix
-PORTVERSION=	20010228.2
+PORTVERSION=	20010228.3
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/official/ \
 		ftp://ftp.samurai.com/pub/postfix/official/ \
 		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/mail/postfix/official/&,}
 MASTER_SITE_SUBDIR= . old related/postfix
-DISTNAME=	postfix-20010228-pl02
+DISTNAME=	postfix-20010228-pl03
 DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	dwcjr@FreeBSD.org
