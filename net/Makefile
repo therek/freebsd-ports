@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.397 2000/08/23 07:37:02 jasone Exp $
+# $FreeBSD: ports/net/Makefile,v 1.398 2000/08/31 18:09:35 knu Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -46,6 +46,7 @@
     SUBDIR += datapipe
     SUBDIR += ddup
     SUBDIR += delegate
+    SUBDIR += despoof
     SUBDIR += dgd
     SUBDIR += dgd-lpmud
     SUBDIR += dgd-net
