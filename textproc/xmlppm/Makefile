@@ -3,11 +3,12 @@
 # Date created:			May 15, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/textproc/xmlppm/Makefile,v 1.1 2001/05/15 04:09:08 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmlppm
 PORTVERSION=	0.96
+PORTREVISION=	1
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.cs.cornell.edu/People/jcheney/xmlppm/
@@ -16,7 +17,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	expat.2:${PORTSDIR}/textproc/expat2
+LIB_DEPENDS=	expat.3:${PORTSDIR}/textproc/expat2
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 USE_GMAKE=	yes
