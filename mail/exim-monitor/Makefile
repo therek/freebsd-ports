@@ -1,8 +1,8 @@
-# New ports collection makefile for:	exim-minitor
+# New ports collection makefile for:	exim-monitor
 # Date created:		27 August 2001
 # Whom:			sheldonh@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim-monitor/Makefile,v 1.1 2001/08/27 13:19:10 sheldonh Exp $
+# $FreeBSD: ports/mail/exim-monitor/Makefile,v 1.2 2001/09/05 11:46:17 sheldonh Exp $
 #
 
 PORTNAME=	exim-monitor
