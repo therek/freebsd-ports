@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.73 2000/02/22 07:26:35 kris Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.74 2000/02/25 23:29:53 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -47,7 +47,7 @@ case $retval in
 		;;
 esac
 
-${MKDIR} -p ${WRKDIRPREFIX}${CURDIR}
+${MKDIR} ${WRKDIRPREFIX}${CURDIR}
 exec > ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
 
 while [ "$1" ]; do
