@@ -3,11 +3,11 @@
 # Date created:		Mar 11, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/autogen/Makefile,v 1.2 2001/05/01 13:27:09 ijliao Exp $
+# $FreeBSD: ports/devel/autogen/Makefile,v 1.3 2001/05/26 06:08:49 ijliao Exp $
 #
 
 PORTNAME=	autogen
-PORTVERSION=	5.2.1
+PORTVERSION=	5.2.3
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
