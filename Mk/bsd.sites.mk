@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.150 2003/05/14 17:21:35 arved Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.151 2003/05/22 13:35:07 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -305,7 +305,6 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.plig.net/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
-	ftp://ftp.bme.hu/OS/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.unina.it/pub/Unix/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.uninett.no/bsd/unix/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://sunsite.uio.no/bsd/unix/NetBSD/packages/distfiles/%SUBDIR%/ \
@@ -319,8 +318,7 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.sra.co.jp/pub/os/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.iij.ad.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
 	ftp://ftp.itjit.ne.jp/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
-	ftp://melanoma.cs.rmit.edu.au/pub/NetBSD/packages/distfiles/%SUBDIR%/ \
-	ftp://ftp.nectec.or.th/pub/bsd-distributions/NetBSD/packages/distfiles/%SUBDIR%/
+	ftp://melanoma.cs.rmit.edu.au/pub/NetBSD/packages/distfiles/%SUBDIR%/
 
 MASTER_SITE_NETSCAPE+= \
 	ftp://ftp.ciril.fr/pub2/netscape/%SUBDIR%/ \
