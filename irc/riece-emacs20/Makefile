@@ -2,7 +2,7 @@
 # Date Created:		9 Mar 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/irc/liece-emacs20/Makefile,v 1.2 2001/04/10 18:36:23 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	liece
@@ -14,9 +14,9 @@ PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
 MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
 
-BUILD_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim-${EMACS_PORT_NAME}-current \
+BUILD_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim${FLIM_BRANCH:S/.//}-${EMACS_PORT_NAME} \
 		${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
-RUN_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim-${EMACS_PORT_NAME}-current \
+RUN_DEPENDS+=	${LOCALBASE}/share/flim/${FLIM_COOKIE}:${PORTSDIR}/editors/flim${FLIM_BRANCH:S/.//}-${EMACS_PORT_NAME} \
 		${LOCALBASE}/bin/ldcc:${PORTSDIR}/irc/liece-dcc
 
 EMACS_PORT_NAME?=	emacs20
@@ -40,12 +40,13 @@ PLIST_SUB=	EMACS_NAME=${EMACS_NAME} \
 		ETCDIR=${ETCDIR} \
 		EMACS_INFODIR=${EMACS_INFODIR} \
 		PKGINFODIR=${PKGINFODIR} \
-		DIRSECTION=${DIRSECTION}
+		DIRSECTION=${DIRSECTION} \
+		INFOENTRY=${INFOENTRY}
 
 DOCS=		AUTHORS lisp/ChangeLog
 
-FLIM_VER=	1.13.2
-FLIM_COOKIE=	flim-${EMACS_PORT_NAME}-${FLIM_VER}.FreeBSD-packages
+FLIM_BRANCH=	1.13
+FLIM_COOKIE=	flim-${EMACS_PORT_NAME}-${FLIM_BRANCH}.FreeBSD-packages
 
 .include <bsd.port.pre.mk>
 
