@@ -2,11 +2,11 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.76 2001/03/29 16:34:10 sobomax Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.77 2001/05/02 11:25:01 tg Exp $
 #
 
 PORTNAME=	python
-PORTVERSION=	2.1
+PORTVERSION=	2.1.1
 CATEGORIES=	lang python
 MASTER_SITES=	http://www.python.org/ftp/python/${PORTVERSION}/ \
 		http://SunSITE.Informatik.RWTH-Aachen.DE/python/ftp/python/${PORTVERSION}/
