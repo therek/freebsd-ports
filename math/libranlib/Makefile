@@ -2,7 +2,7 @@
 # Date created:		06 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/libranlib/Makefile,v 1.7 1999/08/31 06:47:46 mharo Exp $
+# $FreeBSD: ports/math/libranlib/Makefile,v 1.8 2000/04/14 07:20:13 asami Exp $
 #
 
 PORTNAME=	ranlib
@@ -13,6 +13,7 @@ DISTNAME=	ranlib.c
 
 MAINTAINER=	tg@FreeBSD.org
 
+MAKE_ENV=	NOPROFILE=true
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 .include <bsd.port.pre.mk>
