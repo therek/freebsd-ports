@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.267 2003/11/12 01:56:45 kris Exp $
+# $FreeBSD: ports/MOVED,v 1.268 2003/11/13 17:29:29 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -703,3 +703,4 @@ security/pgp5||2003-11-08|Software is outdated
 x11-toolkits/wxgtk-devel|x11-toolkits/wxgtk|2003-11-10|renamed
 net/lmule||2003-11-10|project has been abadoned in favor of net/xmule
 net/kxicq-devel||2003-11-13|unmaintained, better KDE ICQ clients available
+editors/ghex|editors/ghex2|2003-11-15|ghex2 holds the latest stable version
