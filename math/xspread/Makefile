@@ -2,13 +2,13 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/math/xspread/Makefile,v 1.8 1999/10/31 23:54:30 steve Exp $
+# $FreeBSD: ports/math/xspread/Makefile,v 1.9 2000/04/14 07:20:57 asami Exp $
 #
 
 PORTNAME=	xspread
 PORTVERSION=	3.1.1c
 CATEGORIES=	math
-MASTER_SITES=	http://www.linuxberg.com/files/x11/office/
+MASTER_SITES=	http://linux.tucows.com/files/x11/office/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
