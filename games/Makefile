@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.237 1999/12/10 19:32:05 flathill Exp $
+# $FreeBSD: ports/games/Makefile,v 1.238 1999/12/23 19:46:06 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -50,6 +50,7 @@
     SUBDIR += galaxis
     SUBDIR += garith
     SUBDIR += gemdropx
+    SUBDIR += glasteroids
     SUBDIR += gleyes
     SUBDIR += gltron
     SUBDIR += gma
