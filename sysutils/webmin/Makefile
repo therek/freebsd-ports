@@ -2,15 +2,15 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.30 2001/02/06 11:28:29 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.31 2001/02/11 17:55:00 olgeni Exp $
 #
 
 PORTNAME=	webmin
 PORTVERSION=	0.84
 PORTREVISION=	2
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.webmin.com/webmin/updates/ \
-		http://www.webmin.com/webmin/download/
+MASTER_SITES=	http://webadmin.sourceforge.net/webmin/updates/ \
+		http://webadmin.sourceforge.net/webmin/download/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${WEBMIN_MODULES}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 IGNOREFILES=	${WEBMIN_MODULES}
