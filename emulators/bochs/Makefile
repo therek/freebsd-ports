@@ -4,7 +4,7 @@
 # Date created:        16 December 1997
 # Whom:                alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.20 1999/11/23 01:38:17 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.21 1999/11/23 01:55:03 obrien Exp $
 #
 
 VGABIOS=	VGABIOS-elpin-2.20
@@ -21,6 +21,10 @@ USE_XLIB=	yes
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--enable-cpu-level=4 --enable-vga \
 		--with-x11 --prefix=${PREFIX}
+
+.ifdef(WANT_DEBUGGER)
+CONFIGURE_ARGS+= --enable-debugger --enable-disasm
+.endif
 
 WRKSRC=		${WRKDIR}/bochs-${DATE}a
 
