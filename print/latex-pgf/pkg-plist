@@ -1,19 +1,19 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/print/latex-pgf/pkg-plist,v 1.1 2004/01/24 09:48:54 krion Exp $
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/FILES
 %%PORTDOCS%%%%DOCSDIR%%/INSTALL
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/TODO
-%%PORTDOCS%%%%DOCSDIR%%/apple.jpg
-%%PORTDOCS%%%%DOCSDIR%%/apple.mask.jpg
+%%PORTDOCS%%%%DOCSDIR%%/pgf-apple.jpg
+%%PORTDOCS%%%%DOCSDIR%%/pgf-apple.mask.jpg
 %%PORTDOCS%%%%DOCSDIR%%/pgfuserguide.pdf
 %%PORTDOCS%%%%DOCSDIR%%/pgfuserguide.tex
-%%PORTDOCS%%%%DOCSDIR%%/tu-logo.25.eps
-%%PORTDOCS%%%%DOCSDIR%%/tu-logo.25.jpg
-%%PORTDOCS%%%%DOCSDIR%%/tu-logo.eps
-%%PORTDOCS%%%%DOCSDIR%%/tu-logo.jpg
-%%PORTDOCS%%%%DOCSDIR%%/tu-logo.mask.jpg
+%%PORTDOCS%%%%DOCSDIR%%/pgf-tu-logo.25.eps
+%%PORTDOCS%%%%DOCSDIR%%/pgf-tu-logo.25.jpg
+%%PORTDOCS%%%%DOCSDIR%%/pgf-tu-logo.eps
+%%PORTDOCS%%%%DOCSDIR%%/pgf-tu-logo.jpg
+%%PORTDOCS%%%%DOCSDIR%%/pgf-tu-logo.mask.jpg
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%CLASSDIR%%/pgf.sty
 %%CLASSDIR%%/pgfarrows.sty
