@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.189 2000/12/19 10:23:06 will Exp $
+# $FreeBSD: ports/LEGAL,v 1.190 2000/12/19 14:29:25 lioux Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -80,6 +80,7 @@ dnews3			ports/news/dnews	Only free for schools and
 						free trial for everybody.
 						We currently ask for permission
 						to put a package on the CD-ROM.
+eijiro*.txt		ports/japanes/eijiro-fpw The original dictionary is not free
 fmsx-*			ports/emulators/fmsx	Unclear legal status of
 						distributed ROMs.
 fnorb-*			ports/devel/fnorb	Cannot use commercially
