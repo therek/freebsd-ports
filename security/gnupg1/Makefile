@@ -1,9 +1,10 @@
 # New ports collection makefile for:	gnupg
+# http://www.gnupg.org/
 # Version required:	1.0.0
 # Date created:		Sep 30, 1998
 # Whom:			kuriyama@FreeBSD.org
 #
-# $FreeBSD: ports/security/gnupg/Makefile,v 1.17 1999/08/31 06:50:07 mharo Exp $
+# $FreeBSD: ports/security/gnupg/Makefile,v 1.18 1999/09/09 22:56:20 kuriyama Exp $
 #
 
 DISTNAME=	gnupg-1.0.0
