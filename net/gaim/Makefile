@@ -2,11 +2,11 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.23 2000/06/10 17:57:49 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.24 2000/06/14 13:21:29 sobomax Exp $
 #
 
 PORTNAME=	gaim
-PORTVERSION=	0.9.19
+PORTVERSION=	0.9.20
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.marko.net/pub/gaim/
