@@ -2,10 +2,10 @@
 # Date created:		18 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/www/zope-ptk/Makefile,v 1.2 2000/10/27 20:34:25 nbm Exp $
+# $FreeBSD: ports/www/zope-cmf/Makefile,v 1.3 2001/08/08 14:39:25 wjv Exp $
 #
 
-PORTNAME=	zope-ptk
+PORTNAME=	zope-cmf
 PORTVERSION=	1.1
 CATEGORIES=	www zope
 MASTER_SITES=	http://cmf.zope.org/download/CMF-${PORTVERSION}/
