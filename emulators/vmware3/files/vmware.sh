@@ -2,7 +2,7 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.15 2003/04/13 03:15:23 mbr Exp $
+# $FreeBSD: ports/emulators/vmware3/files/vmware.sh,v 1.16 2003/10/21 15:46:37 fjoe Exp $
 
 vmware_config_file=@@PREFIX@@/etc/vmware/config
 
@@ -45,8 +45,8 @@ exec >/dev/null
 
 case $1 in
 start)
-    kldstat -v | grep vmmon >/dev/null || kldload ${vmware_libdir}/lib/modules/vmmon_${suffix}.ko
-    kldstat -v | grep vmnet >/dev/null || kldload ${vmware_libdir}/lib/modules/vmnet.ko
+    kldstat -v | grep vmmon >/dev/null || kldload ${vmware_libdir}/modules/vmmon_${suffix}.ko
+    kldstat -v | grep vmnet >/dev/null || kldload ${vmware_libdir}/modules/vmnet.ko
     if [ $networking -eq 1 ]; then
 	kldstat -v | grep if_tap >/dev/null || kldload if_tap.ko
 	if [ ! -e $dev_vmnet1 ]; then
