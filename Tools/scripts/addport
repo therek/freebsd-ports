@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.39 2004/01/23 07:28:54 ale Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.40 2004/03/20 18:52:33 mat Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -234,8 +234,8 @@ foreach my $thisdir (@dirs) {
 		# Read COMMENT for part of the commit message.
 		chomp($pkgcomment = `$make $passenv -V COMMENT`);
 		# Change the first character to lowercase to make it fit with the
-		# rest of the commit message.
-		$pkgcomment =~ s/(^.)/\l$1/;
+		# rest of the commit message, only if the second is not upper case.
+		$pkgcomment =~ s/(^.)(?![A-Z])/\l$1/;
 		# Read Makefile to find necessary variables.
 		open(MAKEFILE, "Makefile") or die("Can't open Makefile for reading: $!");
 		while(<MAKEFILE>) {
