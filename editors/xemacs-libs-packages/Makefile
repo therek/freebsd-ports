@@ -2,21 +2,21 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-libs-packages/Makefile,v 1.19 2000/11/30 11:30:33 kiri Exp $
+# $FreeBSD: ports/editors/xemacs-libs-packages/Makefile,v 1.20 2000/12/01 12:55:26 kiri Exp $
 #
 
 PORTNAME=	xemacs-libs-packages
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	editors elisp
 MASTER_SITES=	${MASTER_SITE_XEMACS} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
-		Sun-1.12-pkg.tar.gz \
-		edebug-1.11-pkg.tar.gz \
-		sounds-au-1.09-pkg.tar.gz \
-		sounds-wav-1.09-pkg.tar.gz \
-		tooltalk-1.12-pkg.tar.gz
+		Sun-1.13-pkg.tar.gz \
+		edebug-1.13-pkg.tar.gz \
+		sounds-au-1.10-pkg.tar.gz \
+		sounds-wav-1.10-pkg.tar.gz \
+		tooltalk-1.13-pkg.tar.gz
 DIST_SUBDIR=	xemacs
 
 MAINTAINER=	kiri@FreeBSD.org
