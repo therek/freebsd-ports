@@ -2,14 +2,13 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.28 2000/04/10 01:10:39 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.29 2000/06/17 02:36:56 will Exp $
 #
 
 PORTNAME=	Gtk
-PORTVERSION= 	0.7000
+PORTVERSION= 	0.7003
 CATEGORIES=	x11-toolkits lang perl5
-MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/perl/ \
-		${MASTER_SITE_PERL_CPAN}
+MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
 DISTNAME=	${PORTNAME}-Perl-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
