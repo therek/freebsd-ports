@@ -3,7 +3,7 @@
 # Date created:        2 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.1.1.1 1999/10/02 16:15:34 dan Exp $
+# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.2 2000/02/29 23:05:37 sada Exp $
 #
 
 DISTNAME=	flash-0.4.3
@@ -21,9 +21,9 @@ MAINTAINER=	knu@idaemons.org
 USE_X_PREFIX=	yes
 
 do-build:
-       cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} swfplayer
+	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} swfplayer
 
 do-install:
-       cd ${WRKSRC} && ${INSTALL_PROGRAM} swfplayer ${X11BASE}/bin
+	cd ${WRKSRC} && ${INSTALL_PROGRAM} swfplayer ${X11BASE}/bin
 
 .include <bsd.port.mk>
