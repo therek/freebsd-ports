@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.230 2004/03/24 23:37:33 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.231 2004/03/31 07:33:05 marcus Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -429,7 +429,6 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.u-aizu.ac.jp/pub/net/isc/%SUBDIR%/ \
 	ftp://ftp.linux.lv/pub/software/isc/%SUBDIR%/ \
 	ftp://ftp.task.gda.pl/mirror/ftp.isc.org/isc/%SUBDIR%/ \
-	ftp://ftp.si.uniovi.es/mirror/isc/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/network/isc/%SUBDIR%/ \
 	ftp://ftp.mirror.ac.uk/sites/ftp.isc.org/isc/%SUBDIR%/ \
 	ftp://ftp.epix.net/pub/isc/%SUBDIR%/ \
