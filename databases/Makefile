@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.79 2000/10/19 09:18:59 dirk Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.80 2000/10/20 09:11:37 tg Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -16,6 +16,7 @@
     SUBDIR += grass
     SUBDIR += gtksql
     SUBDIR += interbase4
+    SUBDIR += jdbc-oracle816
     SUBDIR += libiodbc
     SUBDIR += metakit
     SUBDIR += msql
