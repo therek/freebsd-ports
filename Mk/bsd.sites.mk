@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.243 2004/05/29 07:15:15 krion Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.244 2004/05/29 17:03:01 krion Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -655,7 +655,6 @@ MASTER_SITE_PYTHON+= \
 	http://www.python.org/%SUBDIR%/ \
 	http://python.planetmirror.com/%SUBDIR%/ \
 	http://python.ilisys.com.au/%SUBDIR%/ \
-	http://gd.tuwien.ac.at/www.python.org/%SUBDIR%/ \
 	http://ftp.easynet.be/python/%SUBDIR%/ \
 	http://www.linux.org.hk/mirror/python/%SUBDIR%/ \
 	http://mirrors.sunsite.dk/pythonwww/%SUBDIR%/ \
