@@ -2,13 +2,13 @@
 # Date created:				11 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.8 2000/06/16 08:47:48 sobomax Exp $
+# $FreeBSD: ports/devel/libshhopt/Makefile,v 1.9 2000/06/16 21:50:06 asami Exp $
 #
 
 PORTNAME=		libshhopt
 PORTVERSION=		1.1.6
 CATEGORIES=		devel
-MASTER_SITES=		http://home.sol.no/~sverrehu/pub-unix/files/
+MASTER_SITES=		http://shh.thathost.com/pub-unix/files/
 DISTNAME=		shhopt-${PORTVERSION}
 
 MAINTAINER=		obrien@FreeBSD.org
