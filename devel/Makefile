@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.445 2001/02/27 01:13:41 bsd Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.446 2001/02/27 07:10:43 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -351,6 +351,7 @@
     SUBDIR += ruby-amstd
     SUBDIR += ruby-byaccr
     SUBDIR += ruby-date2
+    SUBDIR += ruby-dialogs
     SUBDIR += ruby-filelock
     SUBDIR += ruby-gemfinder
     SUBDIR += ruby-intl
