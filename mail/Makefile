@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.188 2001/01/03 23:36:42 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.189 2001/01/03 23:37:01 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -121,7 +121,6 @@
     SUBDIR += qmailanalog
     SUBDIR += qpopper
     SUBDIR += rblcheck
-    SUBDIR += rblsmtpd
     SUBDIR += rftp
     SUBDIR += rlytest
     SUBDIR += ruby-tmail
