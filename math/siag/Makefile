@@ -2,7 +2,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD: ports/math/siag/Makefile,v 1.30 2000/09/05 18:34:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	siag
@@ -40,7 +40,7 @@ CONFIGURE_ENV+= LOCALBASE=${LOCALBASE} \
 MAKE_ARGS=	"-j 2"
 
 .if defined(WITH_GUILE) || defined(GUILE)
-LIB_DEPENDS+=	guile.9:${PORTSDIR}/lang/guile
+LIB_DEPENDS+=	guile.10:${PORTSDIR}/lang/guile
 .endif
 
 USE_X_PREFIX=	yes
