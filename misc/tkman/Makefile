@@ -2,18 +2,18 @@
 # Date created:         27 Dec 1994
 # Whom:                 Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/misc/tkman/Makefile,v 1.37 1999/11/29 03:55:30 steve Exp $
+# $FreeBSD: ports/misc/tkman/Makefile,v 1.38 2000/04/14 08:46:51 asami Exp $
 #
 
 PORTNAME=	tkman
-PORTVERSION=	2.1b2
-CATEGORIES=	misc tk82
+PORTVERSION=	2.1b4
+CATEGORIES=	misc tk83
 MASTER_SITES=	ftp://ftp.cs.berkeley.edu/ucb/people/phelps/tcltk/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tg@freebsd.org
 
-LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
+LIB_DEPENDS=	tk83.1:${PORTSDIR}/x11-toolkits/tk83
 RUN_DEPENDS=	rman:${PORTSDIR}/textproc/rman \
 		glimpse:${PORTSDIR}/textproc/glimpse
 
