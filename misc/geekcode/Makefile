@@ -1,12 +1,12 @@
 # New ports collection makefile for:	geekcode generator
-# Version required:	1.4
+# Version required:	1.5
 # Date created:		30 Aug 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/geekcode/Makefile,v 1.2 1999/09/04 19:47:59 cpiazza Exp $
+# $FreeBSD: ports/misc/geekcode/Makefile,v 1.3 1999/09/18 19:45:10 cpiazza Exp $
 #
 
-DISTNAME=	geekcode-1.4
+DISTNAME=	geekcode-1.5
 CATEGORIES= 	misc
 MASTER_SITES=	http://seymour.napalm.net/
 
