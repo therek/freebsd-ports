@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.1 2003/04/13 06:53:03 dinoex Exp $
+# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.2 2003/04/13 11:38:10 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -64,11 +64,27 @@ PLIST_SUB+=	MAJORVERSION=${PORTVERSION:C/([0-9]).*/\1/1}
 
 SYSTEMDIR=	${PREFIX}/System
 SYSMAKEDIR=	${SYSTEMDIR}/Makefiles
-SYSLIBDIR=	${SYSTEMDIR}/Libraries/${GNU_ARCH}/${OPSYS:L}
-COMBOLIBDIR=	${SYSTEMDIR}/Libraries/${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu
-BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
 COMBOPATH=	${GNU_ARCH}/${OPSYS:L}/gnu-gnu-gnu
+.if defined(WITH_GNUSTEP_DEVEL)
+SYSLIBDIR=	${SYSTEMDIR}/Library/Libraries/${GNU_ARCH}/${OPSYS:L}
+COMBOLIBDIR=	${SYSTEMDIR}/Library/Libraries/${COMBOPATH}
+LOCALLIBDIR=	${PREFIX}/Local/Library/Libraries/${COMBOPATH}
+PLIST_SUB+=	SYSTEMLIBRARY="System/Library"
+PLIST_SUB+=	LOCALLIBRARY="Local/Library"
+PLIST_SUB+=	GNUSTEP_DEVEL=""
+PLIST_SUB+=	GNUSTEP_STABLE="@comment "
+PKGNAMESUFFIX?=	-devel
+.else
+SYSLIBDIR=	${SYSTEMDIR}/Libraries/${GNU_ARCH}/${OPSYS:L}
+COMBOLIBDIR=	${SYSTEMDIR}/Libraries/${COMBOPATH}
 LOCALLIBDIR=	${PREFIX}/Local/Libraries/${COMBOPATH}
+PLIST_SUB+=	SYSTEMLIBRARY="System"
+PLIST_SUB+=	LOCALLIBRARY="Local"
+PLIST_SUB+=	GNUSTEP_DEVEL="@comment "
+PLIST_SUB+=	GNUSTEP_STABLE=""
+.else
+.endif
+BUNDLEDIR=	${SYSTEMDIR}/Library/Bundles
 CC=		gcc32
 CXX=		g++32
 
