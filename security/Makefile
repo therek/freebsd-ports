@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.173 2001/03/20 01:57:19 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.174 2001/03/21 05:44:42 wes Exp $
 #
 
     SUBDIR += aafid2
@@ -31,6 +31,7 @@
     SUBDIR += firewalk
     SUBDIR += fragrouter
     SUBDIR += fuzz
+    SUBDIR += fwbuilder
     SUBDIR += fwtk
     SUBDIR += gag
     SUBDIR += gnupg
