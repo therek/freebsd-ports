@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.105 2001/02/07 23:02:26 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.106 2001/02/14 09:20:08 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -33,6 +33,9 @@ CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
 		--with-low-memory
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=--enable-assembler
+.endif
+.if ${MACHINE_ARCH} == "alpha"
+CONFIGURE_ARGS+=--without-berkeley-db
 .endif
 .if defined(WITH_CHARSET) && ${WITH_CHARSET} != ""
 CONFIGURE_ARGS+=--with-charset=${WITH_CHARSET}
