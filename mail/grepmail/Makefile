@@ -2,7 +2,7 @@
 # Date created:				20 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/mail/grepmail/Makefile,v 1.9 2000/05/03 11:33:06 jedgar Exp $
+# $FreeBSD: ports/mail/grepmail/Makefile,v 1.10 2000/05/16 14:09:28 jedgar Exp $
 #
 
 PORTNAME=	grepmail
@@ -20,6 +20,7 @@ USE_PERL5=	yes
 MAN1=		grepmail.1
 
 do-configure:
+		@${PERL} -pi.orig -e 's|_PERL_|${PERL}|' ${WRKSRC}/grepmail
 		@cd ${WRKSRC} && ${PERL} Makefile.PL
 
 do-install:
