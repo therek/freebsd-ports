@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.658 2005/03/17 09:22:25 mezz Exp $
+# $FreeBSD: ports/MOVED,v 1.659 2005/03/20 18:17:20 lofi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1436,3 +1436,4 @@ databases/py-PySQLite|databases/py-PySQLite10|2005-03-14|renamed
 mail/sylpheed-gtk2|mail/sylpheed2|2005-03-16|obsoleted by official gtk2 version
 x11-toolkits/bakery_gnomeui||2005-03-17|obsolete/no port need this
 www/konqueror-nsplugins|x11/kdebase3|2005-03-20|moved back into kdebase3
+science/mxp|graphics/mxp|2005-03-25|fix category
