@@ -2,14 +2,14 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/rasmol/Makefile,v 1.8 2000/04/08 22:04:52 mharo Exp $
+# $FreeBSD: ports/biology/rasmol/Makefile,v 1.9 2001/03/12 19:16:15 sf Exp $
 #
 
 PORTNAME=	rasmol
 PORTVERSION=	2.7.2
 CATEGORIES=	biology
-MASTER_SITES=	ftp://ftp.bernstein-plus-sons.com/software/
-DISTNAME=	RasMol_2.7.2
+MASTER_SITES=	ftp://ftp.bernstein-plus-sons.com/software/RasMol_2.7.2/
+DISTNAME=	RasMol
 
 MAINTAINER=	ports@FreeBSD.org
 
