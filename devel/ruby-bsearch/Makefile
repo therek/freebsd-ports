@@ -2,13 +2,14 @@
 # Date created:			13 July 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/ruby-bsearch/Makefile,v 1.1 2001/07/13 04:17:52 knu Exp $
 #
 
 PORTNAME=	bsearch
 PORTVERSION=	1.2
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://namazu.org/~satoru/ruby-bsearch/
+PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
