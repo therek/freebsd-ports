@@ -2,11 +2,11 @@
 # Date created:			Jun 2, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/benchmarks/siege/Makefile,v 1.3 2001/07/13 04:26:43 markp Exp $
+# $FreeBSD: ports/benchmarks/siege/Makefile,v 1.4 2001/08/29 09:27:49 markp Exp $
 #
 
 PORTNAME=	siege
-PORTVERSION=	2.06
+PORTVERSION=	2.09
 CATEGORIES=	benchmarks
 MASTER_SITES=	ftp://ftp.armstrong.com/pub/siege/ \
 		http://nerf-herder.net/siege/
