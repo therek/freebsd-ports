@@ -2,7 +2,7 @@
 # Date created:		26 June 1998
 # Whom:			Horance C.H Chou <horance@freedom.ie.cycu.edu.tw>
 #
-# $FreeBSD: ports/devel/swarm/Makefile,v 1.12 2000/07/04 07:13:20 sobomax Exp $
+# $FreeBSD: ports/devel/swarm/Makefile,v 1.13 2000/08/03 09:22:57 asami Exp $
 #
 
 PORTNAME=	swarm
@@ -21,9 +21,9 @@ USE_XPM=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-defaultdir=${PREFIX} \
-		--with-tclincludedir=${PREFIX}/include/tcl8.2 \
-		--with-tkincludedir=${PREFIX}/include/tk8.2 \
-		--with-tclscriptdir=${PREFIX}/lib/tcl8.2 \
-		--with-tkscriptdir=${PREFIX}/lib/tk8.2
+		--with-tclincludedir=${PREFIX}/include/tcl8.3 \
+		--with-tkincludedir=${PREFIX}/include/tk8.3 \
+		--with-tclscriptdir=${PREFIX}/lib/tcl8.3 \
+		--with-tkscriptdir=${PREFIX}/lib/tk8.3
 
 .include <bsd.port.mk>
