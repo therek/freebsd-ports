@@ -2,11 +2,11 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.26 2001/03/14 23:34:30 olgeni Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.27 2001/05/24 11:08:03 olgeni Exp $
 #
 
 PORTNAME=	nessus
-PORTVERSION=	1.0.8
+PORTVERSION=	1.0.9
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${PORTVERSION}/src/ \
@@ -34,7 +34,7 @@ WANT_GTK=	yes
 .if defined(HAVE_GTK)
 USE_GTK=	yes
 .else
-CONFIGURE_ARGS+=	--disable-gtk
+CONFIGURE_ARGS+=--disable-gtk
 .endif
 
 MAN1=		nessus.1
