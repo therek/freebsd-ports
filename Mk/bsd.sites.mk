@@ -1,5 +1,7 @@
 # bsd.sites.mk - Popular master sites.
 #
+# Sites_MAINTAINER=		ports@FreeBSD.org
+#
 # This file does not have any designated maintainer, so feel free to
 # commit to it yourself.  However, it is generally a good idea to
 # notify the principal maintainer in case you have a change to one of
@@ -10,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.186 2003/10/21 07:53:54 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.187 2003/10/21 14:37:20 obrien Exp $
 #
 
 # Where to put distfiles that don't have any other master site
