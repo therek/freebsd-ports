@@ -2,11 +2,11 @@
 # Date created:		14-Aug-2000
 # Whom:			Leo Kim <leo@florida.sarang.net>
 #
-# $FreeBSD: ports/audio/p5-MP3-Info/Makefile,v 1.2 2001/02/15 01:34:35 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	MP3-Info
-PORTVERSION=	0.91
+PORTVERSION=	1.01
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=MP3
