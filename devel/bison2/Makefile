@@ -3,7 +3,7 @@
 # Date created:		27 Mar 1999
 # Whom:			Jerry Hicks
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/bison/Makefile,v 1.6 2000/01/17 11:31:29 obrien Exp $
 #
 
 DISTNAME=		bison-1.28
@@ -12,7 +12,7 @@ MASTER_SITES=		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	bison
 
 MAINTAINER=		wghicks@bellsouth.net
-MAINTAINER+=	obrien@NUXI.com
+#MAINTAINER+=	obrien@NUXI.com
 
 Y2K=			http://www.gnu.org/software/year2000.html
 
