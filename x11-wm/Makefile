@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.21 1999/09/08 23:17:36 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.22 1999/09/09 01:01:05 taoka Exp $
 #
 
     SUBDIR += 9menu
@@ -37,6 +37,7 @@
     SUBDIR += wm2
     SUBDIR += wmakerconf
     SUBDIR += wmg
+    SUBDIR += wmthemeinstall
     SUBDIR += wmx
     SUBDIR += xfce
 
