@@ -3,7 +3,7 @@
 # Date created:		24 December 1996
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/lang/ocaml/Makefile,v 1.10 1999/08/25 06:35:06 obrien Exp $
+# $FreeBSD: ports/lang/ocaml/Makefile,v 1.11 2000/02/28 15:44:19 imura Exp $
 #
 
 DISTNAME=	ocaml-2.04
@@ -35,6 +35,8 @@ DOCFILES=	${DISTNAME}-refman.html.tar.gz ${DISTNAME}-refman.ps.gz
 .endif
 
 post-install:
+	@${MKDIR} ${PREFIX}/share/doc/ocaml
+	${INSTALL_DATA} ${WRKSRC}/LICENSE ${PREFIX}/share/doc/ocaml/
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ocaml/html
 	@cd ${WRKDIR}/htmlman; ${INSTALL_DATA} * ${PREFIX}/share/doc/ocaml/html
