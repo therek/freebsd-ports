@@ -2,11 +2,11 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.24 2000/07/06 14:58:12 sada Exp $
 #
 
 PORTNAME=	fvwm
-PORTVERSION=	2.3.8
+PORTVERSION=	2.3.19
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://ftp.fvwm.org/pub/fvwm/version-2/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
