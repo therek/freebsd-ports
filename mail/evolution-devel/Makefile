@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.12 2000/10/05 07:17:00 reg Exp $
+# $FreeBSD: ports/mail/evolution/Makefile,v 1.13 2000/10/10 17:26:11 ade Exp $
 #
 
 PORTNAME=	evolution
@@ -22,7 +22,7 @@ LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs \
 		unicode.0:${PORTSDIR}/devel/libunicode \
-		gtkhtml.4:${PORTSDIR}/www/gtkhtml \
+		gtkhtml.5:${PORTSDIR}/www/gtkhtml \
 		ldap.1:${PORTSDIR}/net/openldap \
 		gpilotd.0:${PORTSDIR}/palm/gnomepilot
 
