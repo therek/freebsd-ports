@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/MailScanner/pkg-plist,v 1.5 2003/12/24 16:03:38 sergei Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.6 2004/01/09 17:45:42 sergei Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
