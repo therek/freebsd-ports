@@ -2,7 +2,7 @@
 # Date created:				07 Mar 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.1 2001/04/16 03:16:14 will Exp $
+# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.2 2001/05/01 17:20:53 lioux Exp $
 #
 
 PORTNAME=	yawmppp
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 USE_GTK=	yes
+USE_XPM=	yes
 CONFIGURE_ENV=	GTKCONFIG="${GTK_CONFIG}" CFLAGS="${CFLAGS} -I${X11BASE}/include"
 CONFIGURE_ARGS=	--x-includes="${X11BASE}/include" \
 		--x-libraries="${X11BASE}/lib"
