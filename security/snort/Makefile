@@ -2,12 +2,12 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.9 2000/04/09 18:30:32 cpiazza Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.10 2000/04/21 08:19:01 mharo Exp $
 #
 
 PORTNAME=	snort
 PORTVERSION=	1.6
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	http://www.clark.net/~roesch/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 

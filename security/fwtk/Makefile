@@ -3,12 +3,12 @@
 # Date created:			  15th June 1996
 # Whom:				  gpalmer
 #
-# $FreeBSD: ports/security/fwtk/Makefile,v 1.19 2000/04/17 00:18:37 reg Exp $
+# $FreeBSD: ports/security/fwtk/Makefile,v 1.20 2000/04/21 08:18:22 mharo Exp $
 #
 
 PORTNAME=	fwtk
 PORTVERSION=	2.1
-CATEGORIES=	security net
+CATEGORIES=	security
 DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 DISTFILES=	fwtk2.1${EXTRACT_SUFX} fwtk-doc-only${EXTRACT_SUFX}

@@ -3,12 +3,12 @@
 # Date created:			  Fri Sep 10, 1999
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/security/kmap/Makefile,v 1.9 2000/04/09 18:29:48 cpiazza Exp $
+# $FreeBSD: ports/security/kmap/Makefile,v 1.10 2000/04/21 08:18:29 mharo Exp $
 #
 
 PORTNAME=	kmap
 PORTVERSION=	0.7.1
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	http://www.islc.net/~icszepp/downloads/
 
 MAINTAINER=	obrien@FreeBSD.org

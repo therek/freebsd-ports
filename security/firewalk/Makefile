@@ -2,12 +2,12 @@
 # Date created:		Sun May 3, 1999
 # Whom:			shipley@dis.org
 #
-# $FreeBSD: ports/security/firewalk/Makefile,v 1.4 2000/04/09 18:29:36 cpiazza Exp $
+# $FreeBSD: ports/security/firewalk/Makefile,v 1.5 2000/04/21 08:18:20 mharo Exp $
 #
 
 PORTNAME=	firewalk
 PORTVERSION=	0.9.9b
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	http://www.packetfactory.net/firewalk/
 DISTNAME=	firewalk-0.99beta
 

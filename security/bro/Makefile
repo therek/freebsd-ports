@@ -3,12 +3,12 @@
 # Date created:			  Sat Feb 28, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/security/bro/Makefile,v 1.15 2000/04/09 18:29:25 cpiazza Exp $
+# $FreeBSD: ports/security/bro/Makefile,v 1.16 2000/04/21 08:18:10 mharo Exp $
 #
 
 PORTNAME=	bro
 PORTVERSION=	0.5a
-CATEGORIES=	security net
+CATEGORIES=	security
 #MASTER_SITES=	ftp://ee.lbl.gov/
 #see http://www-nrg.ee.lbl.gov/bro-info.html
 DISTNAME=	vp-bro-0.5-alpha

@@ -3,12 +3,12 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmapfe/Makefile,v 1.26 2000/03/22 00:27:30 obrien Exp $
+# $FreeBSD: ports/security/nmapfe/Makefile,v 1.27 2000/04/09 18:30:05 cpiazza Exp $
 #
 
 PORTNAME=	nmapfe
 PORTVERSION=	0.9.5
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	http://codebox.net/download/  \
 		http://www.insecure.org/nmap/dist/
 EXTRACT_SUFX=	.tgz

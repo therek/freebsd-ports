@@ -2,12 +2,12 @@
 # Date created:		9 October 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/libident/Makefile,v 1.10 2000/04/09 18:29:52 cpiazza Exp $
+# $FreeBSD: ports/security/libident/Makefile,v 1.11 2000/04/21 08:18:33 mharo Exp $
 #
 
 PORTNAME=	libident
 PORTVERSION=	0.22
-CATEGORIES=	devel net security
+CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/libs/
 
 MAINTAINER=	torstenb@FreeBSD.org

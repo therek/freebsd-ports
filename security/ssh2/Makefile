@@ -2,12 +2,12 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.97 2000/04/21 08:19:04 mharo Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.98 2000/05/29 03:16:37 steve Exp $
 #
 
 PORTNAME=	ssh2
 PORTVERSION=	2.1.0p2
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/ \
 		ftp://sunsite.unc.edu/pub/packages/security/ssh/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/security/ssh/

@@ -2,18 +2,18 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.31 2000/04/17 00:18:41 reg Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.32 2000/04/21 08:18:47 mharo Exp $
 #
 
 PORTNAME=	pidentd
-PORTVERSION=	2.8.5
-CATEGORIES=	security net ipv6
+PORTVERSION= 	3.0.10
+CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/servers/ \
 		ftp://ftp.fu-berlin.de/unix/security/ident/servers/
 
-PATCH_SITES=	http://www.imasy.or.jp/~ume/ipv6/
-PATCHFILES=	pidentd-2.8.5-ipv6-1.5.diff.gz
-PATCH_DIST_STRIP=	-p2
+#PATCH_SITES=	http://www.imasy.or.jp/~ume/ipv6/
+#PATCHFILES=	pidentd-2.8.5-ipv6-1.5.diff.gz
+#PATCH_DIST_STRIP=	-p2
 
 MAINTAINER=	torstenb@FreeBSD.org
 

@@ -2,12 +2,12 @@
 # Date created:		31 Mar 1997
 # Whom:			Joe Greco <jgreco@ns.sol.net>
 #
-# $FreeBSD: ports/security/tripwire/Makefile,v 1.9 2000/05/19 06:06:43 cpiazza Exp $
+# $FreeBSD: ports/security/tripwire/Makefile,v 1.10 2000/05/29 02:27:40 steve Exp $
 #
 
 PORTNAME=	tripwire
 PORTVERSION=	1.2
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.fu-berlin.de/unix/security/tripwire/
 EXTRACT_SUFX=	.tar.Z
 

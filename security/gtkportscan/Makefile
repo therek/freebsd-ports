@@ -2,12 +2,12 @@
 # Date created:		11 March 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.7 2000/02/08 09:28:43 peter Exp $
+# $FreeBSD: ports/security/gtkportscan/Makefile,v 1.8 2000/04/09 18:29:41 cpiazza Exp $
 #
 
 PORTNAME=	gtkportscan
 PORTVERSION=	1.2
-CATEGORIES=	security net
+CATEGORIES=	security
 #MASTER_SITES=	http://armageddon.splorg.org/gtkportscan/
 MASTER_SITES=	http://people.FreeBSD.org/~cpiazza/distfiles/
 

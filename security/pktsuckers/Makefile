@@ -2,12 +2,12 @@
 # Date created:		31 May 1999
 # Whom:			Warren Toomey <wkt@cs.adfa.edu.au>
 #
-# $FreeBSD: ports/security/pktsuckers/Makefile,v 1.3 2000/04/09 18:30:20 cpiazza Exp $
+# $FreeBSD: ports/security/pktsuckers/Makefile,v 1.4 2000/04/21 08:18:48 mharo Exp $
 #
 
 PORTNAME=	pktsuckers
 PORTVERSION=	1.2
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	ftp://minnie.cs.adfa.edu.au/pub/NetSecurity/
 DISTNAME=	${PORTNAME}1_2
 

@@ -2,12 +2,12 @@
 # Date created:		May 16, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/security/bjorb/Makefile,v 1.11 2000/02/06 21:38:28 kris Exp $
+# $FreeBSD: ports/security/bjorb/Makefile,v 1.12 2000/04/09 18:29:23 cpiazza Exp $
 #
 
 PORTNAME=	bjorb
 PORTVERSION=	0.5.5p1
-CATEGORIES=	net security
+CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.hitachi-ms.co.jp/pub/bjorb/
 
 MAINTAINER=	issei@jp.FreeBSD.org

@@ -2,12 +2,12 @@
 # Date created:		21 April 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/radiusniff/Makefile,v 1.1 2000/04/22 10:42:44 kris Exp $
 #
 
 PORTNAME=	radiusniff
 PORTVERSION=	0.2
-CATEGORIES=	security net
+CATEGORIES=	security
 MASTER_SITES=	http://adm.freelsd.net/ADM/
 EXTRACT_SUFX=	.tgz
 

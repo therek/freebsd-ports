@@ -2,12 +2,12 @@
 # Date created:				September 11th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Authen-Radius/Makefile,v 1.8 2000/04/09 18:30:10 cpiazza Exp $
+# $FreeBSD: ports/security/p5-Authen-Radius/Makefile,v 1.9 2000/04/21 08:18:38 mharo Exp $
 #
 
 PORTNAME=	p5-Authen-Radius
 PORTVERSION=	0.05
-CATEGORIES=	security net perl5
+CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Authen
 DISTNAME=	RadiusPerl-0.05
