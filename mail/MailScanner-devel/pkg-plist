@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/MailScanner-devel/pkg-plist,v 1.4 2003/12/05 15:34:38 sergei Exp $
+@comment $FreeBSD: ports/mail/MailScanner-devel/pkg-plist,v 1.5 2003/12/24 15:50:13 sergei Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -380,6 +380,7 @@ libexec/MailScanner/update_virus_scanners
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/README.FreeBSD.port
 %%PORTDOCS%%%%DOCSDIR%%/README.sql-logging
+%%PORTDOCS%%%%DOCSDIR%%/Sophos.install.freebsd
 %%PORTDOCS%%%%DOCSDIR%%/building.txt
 %%PORTDOCS%%%%DOCSDIR%%/donations.shtml
 %%PORTDOCS%%%%DOCSDIR%%/downloadgraphs.shtml
@@ -410,8 +411,10 @@ libexec/MailScanner/update_virus_scanners
 %%PORTDOCS%%%%DOCSDIR%%/install/mcafee.shtml
 %%PORTDOCS%%%%DOCSDIR%%/install/mcp/Conf.pm.patch.2.55
 %%PORTDOCS%%%%DOCSDIR%%/install/mcp/Conf.pm.patch.2.60
+%%PORTDOCS%%%%DOCSDIR%%/install/mcp/Conf.pm.patch.2.61
 %%PORTDOCS%%%%DOCSDIR%%/install/mcp/PerMsgStatus.pm.patch.2.55
 %%PORTDOCS%%%%DOCSDIR%%/install/mcp/PerMsgStatus.pm.patch.2.60
+%%PORTDOCS%%%%DOCSDIR%%/install/mcp/PerMsgStatus.pm.patch.2.61
 %%PORTDOCS%%%%DOCSDIR%%/install/mcp/index.html
 %%PORTDOCS%%%%DOCSDIR%%/install/mime-tools-patch.txt
 %%PORTDOCS%%%%DOCSDIR%%/install/mime-tools-patch2.txt
