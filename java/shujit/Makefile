@@ -2,7 +2,7 @@
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.17 2000/08/29 15:24:08 sobomax Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.18 2000/09/11 07:46:55 sobomax Exp $
 #
 
 PORTNAME=	shujit
@@ -28,6 +28,9 @@ JAVADIR=	${LOCALBASE}/jdk1.1.8
 JAVALIBDIR=	${PREFIX}/lib/${PORTNAME}
 CONFIGURE_ARGS+=	--with-jdk="${JAVADIR}"
 
+post-configure:
+	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/README
+
 do-install:
 	@${MKDIR} ${JAVALIBDIR}
 	@${INSTALL_PROGRAM} ${WRKSRC}/libshujit.so ${JAVALIBDIR}
@@ -36,7 +39,7 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/shujit
 	@${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/shujit
 	@${ECHO_MSG} ""
-	@${ECHO_MSG} "See ${PREFIX}/shujit/README for usage instructions."
+	@${ECHO_MSG} "See ${PREFIX}/share/shujit/README for usage instructions."
 	@${ECHO_MSG} ""
 
 .include <bsd.port.mk>
