@@ -2,10 +2,10 @@
 # Date created:		03 March 2001
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/adzap/Makefile,v 1.1 2001/03/04 05:07:22 kris Exp $
+# $FreeBSD: ports/www/adzap/Makefile,v 1.2 2001/04/17 16:11:09 kris Exp $
 
 PORTNAME=	adzap
-PORTVERSION=	20010417
+PORTVERSION=	20010504
 CATEGORIES=	www perl5
 MASTER_SITES=	http://www.zip.com.au/~cs/adzap/
 
@@ -31,7 +31,7 @@ do-install:
 	${MKDIR} ${PREFIX}/share/examples/adzap
 .for FILE in adzap.conf proxy-cisra.pac proxy-home.pac proxy-zip.pac \
 	closepopup-clear.html no-op-clear.html closepopup.html no-op.html \
-	no-op-clear.js no-op.js ad-clear.gif ad.gif
+	no-op-clear.js no-op.js ad-clear.gif ad-clear.mp3 ad-clear.swf ad.gif
 	${INSTALL_DATA} ${WRKSRC}/${FILE} ${PREFIX}/share/examples/adzap
 .endfor
 
