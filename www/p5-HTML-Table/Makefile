@@ -2,11 +2,11 @@
 # Date created:			Di  13 Mär 2001 19:37:25 CET
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Table/Makefile,v 1.3 2001/08/13 12:39:35 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	HTML-Table
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
