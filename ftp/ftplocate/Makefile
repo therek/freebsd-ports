@@ -3,7 +3,7 @@
 # Date created:				7 December 1999
 # Whom:					tung@turtle.ee.ncku.edu.tw
 #
-# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.5 2000/02/23 23:19:53 jedgar Exp $
+# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.6 2000/02/26 19:36:03 steve Exp $
 #
 
 DISTNAME=	ftplocate-2.01
@@ -30,6 +30,6 @@ post-extract:
 .endfor
 
 do-install:
-	cd ${WRKSRC}; ${PERL} install.pl -y
+	cd ${WRKSRC}; ${PERL} install.pl -y -c -bsdport
 
 .include <bsd.port.mk>
