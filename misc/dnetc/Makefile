@@ -2,11 +2,12 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.23 2001/01/22 18:13:07 kris Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.24 2001/03/21 18:52:31 dbaker Exp $
 #
 
 PORTNAME=	dnetc
 PORTVERSION=	2.8010.462
+PORTEPOCH=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/%SUBDIR%/ \
 		http://http.distributed.net/pub/dcti/%SUBDIR%/
