@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.320 1999/09/22 01:04:30 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.321 1999/10/01 09:28:32 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -663,7 +663,7 @@ LIB_DEPENDS+=	qt.2:${PORTSDIR}/x11-toolkits/qt142
 .endif
 
 .if defined(USE_QT2)
-LIB_DEPENDS+=	qt2.2:${PORTSDIR}/x11-toolkits/qt201
+LIB_DEPENDS+=	qt2.2:${PORTSDIR}/x11-toolkits/qt20
 USE_NEWGCC=	yes
 .endif
 
