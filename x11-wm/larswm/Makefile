@@ -2,7 +2,7 @@
 # Date created: Sat Oct  7 21:25:11 EDT 2000
 # Whom: lab@fnurt.net
 #
-# $FreeBSD: ports/x11-wm/larswm/Makefile,v 1.1 2001/01/03 12:54:27 nbm Exp $
+# $FreeBSD: ports/x11-wm/larswm/Makefile,v 1.2 2001/02/05 21:05:39 olgeni Exp $
 #
 
 PORTNAME=	larswm
@@ -16,6 +16,8 @@ MAN1=		larswm.1
 USE_IMAKE=	yes
 
 XFREE86_HTML_MAN=	no
+
+MAN1=		larsclock.1 larsremote.1 larswm.1
 
 post-install:
 .if !defined(NOPORTDOCS)
