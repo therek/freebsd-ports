@@ -2,14 +2,15 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.20 2000/10/31 08:55:22 kuriyama Exp $
+# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.21 2000/11/30 11:35:54 kiri Exp $
 #
 
 PORTNAME=	xemacs-prog-packages
 PORTVERSION=	2.3
 CATEGORIES=	editors elisp
-MASTER_SITES=	${MASTER_SITE_XEMACS}
-MASTER_SITE_SUBDIR=	packages
+MASTER_SITES=	${MASTER_SITE_XEMACS} \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		ada-1.09-pkg.tar.gz \
 		ediff-1.27-pkg.tar.gz \

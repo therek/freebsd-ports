@@ -2,14 +2,15 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.18 2000/10/24 12:09:14 knu Exp $
+# $FreeBSD: ports/editors/xemacs-packages/Makefile,v 1.19 2000/11/30 11:34:36 kiri Exp $
 #
 
 PORTNAME=	xemacs-packages
 PORTVERSION=	1.7
 CATEGORIES=	editors elisp
-MASTER_SITES=	${MASTER_SITE_XEMACS}
-MASTER_SITE_SUBDIR=	packages
+MASTER_SITES=	${MASTER_SITE_XEMACS} \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		apel-1.19-pkg.tar.gz \
 		auctex-1.22-pkg.tar.gz \

@@ -2,14 +2,15 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-comm-packages/Makefile,v 1.19 2000/10/24 12:09:09 knu Exp $
+# $FreeBSD: ports/editors/xemacs-comm-packages/Makefile,v 1.20 2000/11/30 11:27:24 kiri Exp $
 #
 
 PORTNAME=	xemacs-comm-packages
 PORTVERSION=	2.2
 CATEGORIES=	editors elisp
-MASTER_SITES=	${MASTER_SITE_XEMACS}
-MASTER_SITE_SUBDIR=	packages
+MASTER_SITES=	${MASTER_SITE_XEMACS} \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		bbdb-1.10-pkg.tar.gz \
 		eicq-1.02-pkg.tar.gz \

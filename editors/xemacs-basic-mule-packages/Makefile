@@ -2,14 +2,15 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-basic-mule-packages/Makefile,v 1.10 2000/10/24 12:09:09 knu Exp $
+# $FreeBSD: ports/editors/xemacs-basic-mule-packages/Makefile,v 1.11 2000/11/30 11:25:37 kiri Exp $
 #
 
 PORTNAME=	xemacs-basic-mule-packages
 PORTVERSION=	1.2
 CATEGORIES=	editors elisp
-MASTER_SITES=	${MASTER_SITE_XEMACS}
-MASTER_SITE_SUBDIR=	packages
+MASTER_SITES=	${MASTER_SITE_XEMACS} \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
 		egg-its-1.23-pkg.tar.gz \
 		elib-1.07-pkg.tar.gz \
