@@ -2,13 +2,15 @@
 # Date created:				17 November 1999
 # Whom:					perlguy@perlguy.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/infobot/Makefile,v 1.1 2000/05/19 22:14:21 will Exp $
 #
 
 PORTNAME=	infobot
-PORTVERSION=	0.44.3
+PORTVERSION=	0.44.5
 CATEGORIES=	irc
-MASTER_SITES=	http://www.infobot.org/src/
+MASTER_SITES=	http://www.infobot.org/src/ \
+		http://www.infobot.org/src/prior/
+
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	perlguy@perlguy.com
