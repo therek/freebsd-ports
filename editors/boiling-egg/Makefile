@@ -2,31 +2,28 @@
 # Date created:		9 January 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/editors/boiling-egg/Makefile,v 1.2 2001/04/14 07:57:39 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	boiling-egg
 PORTVERSION=	0.02
+PORTREVISION=	1
 CATEGORIES=	editors elisp
 MASTER_SITES=	http://www.gcd.org/sengoku/boiling-egg/
 DISTNAME=	${PORTNAME}.el
 EXTRACT_SUFX=	# empty
 EXTRACT_ONLY=	# empty
 
-MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
-
-RUN_DEPENDS=	${ELISPDIR}/egg/egg.el:${PORTSDIR}/editors/tamago
-
-EMACS_PORT_NAME?=	emacs20
+MAINTAINER=	yoichi@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
-ELISPDIR=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp
-PLIST_SUB=	ELISPDIR="${EMACS_LIBDIR_WITH_VER}/site-lisp"
+ELISPDIR=	share/emacs/site-lisp
+PLIST_SUB+=	ELISPDIR=${ELISPDIR}
 
 do-install:
-	${MKDIR} ${ELISPDIR}
-	${INSTALL_DATA} ${_DISTDIR}/${DISTNAME} ${ELISPDIR}
+	${MKDIR} ${PREFIX}/${ELISPDIR}
+	${INSTALL_DATA} ${_DISTDIR}/${DISTNAME} ${PREFIX}/${ELISPDIR}
 
 .include <bsd.port.mk>
