@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.231 1999/10/10 23:55:15 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.232 1999/11/01 04:11:06 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -197,6 +197,7 @@
     SUBDIR += xpyraminx
     SUBDIR += xqf
     SUBDIR += xquarto
+    SUBDIR += xracer
     SUBDIR += xripple
     SUBDIR += xrisk
     SUBDIR += xroach
