@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.355 2000/10/21 14:40:55 des Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.356 2000/10/23 15:24:14 imura Exp $
 #
 
     SUBDIR += ElectricFence
@@ -79,6 +79,7 @@
     SUBDIR += gcc-m68k
     SUBDIR += gconf
     SUBDIR += gdb-m68k
+    SUBDIR += gengetopt
     SUBDIR += gettext
     SUBDIR += gide
     SUBDIR += gindent
