@@ -2,20 +2,21 @@
 # Date created:		2 Oct 1999
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm-i18n/Makefile,v 1.2 2000/06/14 13:21:01 sobomax Exp $
+# $FreeBSD: ports/x11-wm/icewm-i18n/Makefile,v 1.3 2000/06/19 11:52:42 nakai Exp $
 #
 
-PORTNAME=	icewm-i18n
+PORTNAME=	icewm
 PORTVERSION=	1.0.4
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/icewm/
 MASTER_SITE_SUBDIR=	icewm
+PKGNAMESUFFIX=	-i18n
 DISTNAME=	icewm-${PORTVERSION}
 EXTRACT_SUFX=	.src.tar.gz
 
 PATCH_SITES=	http://www.gnome.gr.jp/~yatt/dist/
-PATCHFILES=	icewm-1.0.4-nls.patch.gz
+PATCHFILES=	icewm-1.0.4-nls.patch4.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	yatt@msc.biglobe.ne.jp
@@ -40,6 +41,12 @@ INSTALL_TARGET=	install install-po
 CONFIGURE_ARGS+=	--with-imlib --with-gnome-menus
 .else
 CONFIGURE_ARGS+=	--without-imlib --without-gnome-menus
+.endif
+
+.SILENT:
+.if !defined(WITH_GNOME)
+pre-extract:
+	${ECHO} "You can add hooks for Gnome by defining WITH_GNOME"
 .endif
 
 post-install:
