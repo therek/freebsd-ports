@@ -2,11 +2,11 @@
 # Date created:		99/09/29
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/nexfontsel/Makefile,v 1.1.1.1 1999/09/29 14:56:07 taoka Exp $
+# $FreeBSD: ports/x11-fonts/nexfontsel/Makefile,v 1.2 2000/04/10 00:44:38 cpiazza Exp $
 #
 
 PORTNAME=	nexfontsel
-PORTVERSION= 	2.0
+PORTVERSION= 	2.0.2
 CATEGORIES=	x11-fonts
 MASTER_SITES=	http://www.netlab.is.tsukuba.ac.jp/~yokota/archive/
 DISTNAME=	NeXFontSel-${PORTVERSION}
