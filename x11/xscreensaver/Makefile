@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xscreensaver
-# Version required:     3.19
+# Version required:     3.21
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.25 1999/11/02 16:15:03 jseger Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.26 1999/11/08 15:57:21 jseger Exp $
 #
 
-DISTNAME=	xscreensaver-3.19
+DISTNAME=	xscreensaver-3.21
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 
