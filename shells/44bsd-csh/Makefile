@@ -3,7 +3,7 @@
 # Date created:			  23 January 2000
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.1.1.1 2000/04/15 04:26:42 obrien Exp $
 #
 
 PORTNAME=	44bsd-csh
@@ -35,8 +35,8 @@ do-install:
 .endif
 	@${ECHO} "Updating /etc/shells"
 	@${CP} /etc/shells /etc/shells.bak
-	@(${GREP} -v ${PREFIX}/bin/tcsh /etc/shells.bak; \
-		${ECHO} ${PREFIX}/bin/tcsh) > /etc/shells
+	@(${GREP} -v ${PREFIX}/bin/44bsd-csh /etc/shells.bak; \
+		${ECHO} ${PREFIX}/bin/44bsd-csh) > /etc/shells
 	@${RM} /etc/shells.bak
 
 tarup:
