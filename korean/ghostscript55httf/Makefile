@@ -2,7 +2,7 @@
 # Date created:		3 Jul 2000
 # Whom:			CHOI Junho <cjh@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.18 2000/07/19 17:05:43 asami Exp $
+# $FreeBSD: ports/korean/ghostscript55httf/Makefile,v 1.19 2000/08/03 09:25:18 asami Exp $
 #
 
 PORTNAME=	ghostscript
@@ -16,7 +16,7 @@ DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${HP850_DRV} ${DECRYPT_PDF}
 
 PATCH_SITES=	ftp://ftp.kr.FreeBSD.org/pub/users/cjh/gs-ko/
-PATCHFILES=	gs5.50-httf-19990114.diff
+PATCHFILES=	gs5.50-httf-19990114_1.diff.gz
 PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	cjh@FreeBSD.org
