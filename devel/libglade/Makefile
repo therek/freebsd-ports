@@ -2,12 +2,12 @@
 # Date created:				18 August 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/libglade/Makefile,v 1.27 2001/09/15 21:34:50 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libglade
 PORTVERSION=	0.17
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libglade
@@ -26,11 +26,5 @@ CONFIGURE_ARGS=	--enable-bonobo --enable-gnomedb
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-unknown-freebsd${OSREL}
-
-post-install:
-	@if [ -L ${PREFIX}/include/glade ]; then \
-		${RM} -f ${PREFIX}/include/glade; \
-	fi
-	@${LN} -sf ${PREFIX}/include/libglade-1.0/glade ${PREFIX}/include/glade
 
 .include <bsd.port.mk>
