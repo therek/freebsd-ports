@@ -3,16 +3,16 @@
 # Date created:		Mar 11, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/autogen/Makefile,v 1.1 2001/03/13 05:52:30 ijliao Exp $
+# $FreeBSD: ports/devel/autogen/Makefile,v 1.2 2001/05/01 13:27:09 ijliao Exp $
 #
 
 PORTNAME=	autogen
-PORTVERSION=	5.2
+PORTVERSION=	5.2.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
