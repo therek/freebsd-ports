@@ -2,11 +2,11 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.27 2000/04/08 22:48:40 mharo Exp $
+# $FreeBSD: ports/databases/p5-DBI/Makefile,v 1.28 2000/06/17 02:36:29 will Exp $
 #
 
 PORTNAME=	DBI
-PORTVERSION=	1.13
+PORTVERSION=	1.14
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBI
@@ -22,6 +22,7 @@ MAN1=		dbiproxy.1 \
 		dbish.1
 MAN3=		Bundle::DBI.3 \
 		DBD::ADO.3 \
+		DBD::Multiplex.3 \
 		DBD::Proxy.3 \
 		DBI.3 \
 		DBI::DBD.3 \

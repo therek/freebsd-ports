@@ -3,11 +3,11 @@
 # Date created:                         Sep 8 1998
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.16 2000/04/23 15:18:38 ache Exp $
+# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.17 2000/06/17 02:37:14 will Exp $
 #
 
 PORTNAME=	ParallelUA
-PORTVERSION= 	2.48
+PORTVERSION= 	2.49
 CATEGORIES=     www perl5 devel
 MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     LWP
