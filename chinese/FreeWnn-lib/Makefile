@@ -1,17 +1,14 @@
-# New ports collection makefile for:	Wnn for Chinese
-# Date created:		20 July 1997
-# Whom:			Satoshi Taoka <taoka@FreeBSD.org>
+# New ports collection makefile for:	libraries of FreeWnn
+# Date created:		00/08/25
+# Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/Wnn/Makefile,v 1.8 1999/08/25 04:57:35 obrien Exp $
+# $FreeBSD: ports/chinese/FreeWnn-lib/Makefile,v 1.9 2000/04/12 14:46:52 knu Exp $
 #
 
+PKGNAMESUFFIX=	-lib
 CATEGORIES=	chinese
-
-## COMMENT, DESCR, PLIST is used in a local 'pkg' directory
-COMMENT=	${.CURDIR}/pkg/COMMENT
-DESCR=		${.CURDIR}/pkg/DESCR
-PLIST=		${.CURDIR}/pkg/PLIST
-
-MASTERDIR=	${.CURDIR}/../../japanese/Wnn
+MASTERDIR=	${.CURDIR}/../../japanese/FreeWnn-lib
+PKGDIR=		${.CURDIR}/pkg
+WNN=		cWnn
 
 .include "${MASTERDIR}/Makefile"
