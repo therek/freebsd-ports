@@ -1,8 +1,9 @@
-# $FreeBSD: ports/security/Makefile,v 1.142 2000/11/06 06:42:00 knu Exp $
+# $FreeBSD: ports/security/Makefile,v 1.143 2000/11/06 19:01:33 nectar Exp $
 #
 
     SUBDIR += aafid2
     SUBDIR += acid
+    SUBDIR += aescrypt
     SUBDIR += aide
     SUBDIR += bjorb
     SUBDIR += bro
