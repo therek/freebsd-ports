@@ -2,11 +2,11 @@
 # Date created:			29 February 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/corewars/Makefile,v 1.10 2000/04/01 00:47:41 jim Exp $
+# $FreeBSD: ports/games/corewars/Makefile,v 1.11 2000/04/14 00:45:41 mharo Exp $
 #
 
 PORTNAME=	corewars
-PORTVERSION=	0.9.10
+PORTVERSION=	0.9.11
 CATEGORIES=	games
 MASTER_SITES=	http://download.sourceforge.net/corewars/
 
