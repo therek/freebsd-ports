@@ -3,7 +3,7 @@
 # Date created:				January 9, 1999
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_dtcl/Makefile,v 1.1 2000/01/29 05:51:42 steve Exp $
 #
 
 DISTNAME=	libapache-mod-dtcl_0.6.4-2
@@ -13,7 +13,7 @@ MASTER_SITES=	http://master.debian.org/~davidw/mod_dtcl/
 
 MAINTAINER=	mi@aldan.algebra.com
 
-BUILD_DEPENDS=	${PREFIX}/sbin/apxs:${PORTSDIR}/www/apache13
+BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 LIB_DEPENDS=	tcl82:${PORTSDIR}/lang/tcl82
 
 WRKSRC=		${WRKDIR}/mod_dtcl
