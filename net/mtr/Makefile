@@ -1,9 +1,9 @@
 # New ports collection makefile for:   mtr
-# Version required:    0.28
+# Version required:    0.41
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.12 1999/08/30 14:23:21 peter Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.13 1999/09/10 16:29:31 fenner Exp $
 #
 
 DISTNAME=	mtr-0.41
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
 
 MAINTAINER=	billf@FreeBSD.org
+
+BROKEN=		'this port does wierd things and rarely works'
 
 HAS_CONFIGURE=	yes
 
