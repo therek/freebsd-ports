@@ -3,7 +3,7 @@
 # Date created:		11 December 1998
 # Whom:			giffunip
 #
-# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.35 1999/09/27 02:31:16 steve Exp $
+# $FreeBSD: ports/print/ghostscript5/Makefile,v 1.36 1999/10/25 21:54:16 mharo Exp $
 #
 
 DISTNAME=	ghostscript-5.10
@@ -36,7 +36,7 @@ PCL3_DRV=	hpdj-2.6.tar.gz
 
 post-extract:
 	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/jpeg/work/jpeg-6b ${WRKSRC}/jpeg
-	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng-1.0.3 ${WRKSRC}/libpng
+	${LN} -s ${WRKDIRPREFIX}${.CURDIR}/../../graphics/png/work/libpng-1.0.5 ${WRKSRC}/libpng
 	# additional PCL3  driver
 	@${TAR} -xf ${WRKDIR}/hpdj-2.6/hpdj.tar -C ${WRKSRC}
 	@${CAT} ${WRKSRC}/devs.mak-5.10.add >> ${WRKSRC}/devs.mak
