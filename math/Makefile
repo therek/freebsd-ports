@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.131 2001/06/13 21:45:07 ijliao Exp $
+# $FreeBSD: ports/math/Makefile,v 1.132 2001/06/21 16:57:52 ijliao Exp $
 #
     SUBDIR += yacas
 
@@ -102,6 +102,7 @@
     SUBDIR += simpack
     SUBDIR += slsc
     SUBDIR += snns
+    SUBDIR += solitaire
     SUBDIR += spar
     SUBDIR += spin
     SUBDIR += ss
