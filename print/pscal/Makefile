@@ -2,11 +2,11 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/print/pscal/Makefile,v 1.1 2001/04/16 14:06:13 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pscal
-PORTVERSION=	1.13
+PORTVERSION=	1.14
 CATEGORIES=	print
 MASTER_SITES=	http://www.panix.com/~mbh/pscal/
 
