@@ -2,7 +2,7 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/titano/Makefile,v 1.1 2000/09/25 12:28:40 sobomax Exp $
+# $FreeBSD: ports/devel/titano/Makefile,v 1.2 2000/09/25 13:58:23 sobomax Exp $
 #
 
 PORTNAME=	titano
@@ -14,7 +14,8 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
+		gtkeditor.0:${PORTSDIR}/x11-toolkits/libgtkeditor
 
 WRKSRC=		${WRKDIR}/${DISTNAME:S/b//}
 
