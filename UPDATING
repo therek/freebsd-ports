@@ -68,6 +68,8 @@ Option "XkbRules" "xfree86"
   If you have a previous php.ini configuration file, be sure to comment out
   the extension_dir parameter, since the correct path is statically compiled
   into the PHP binary.
+  For an overview of the modules used with the old PHP binary, use
+  the command "php -m".
 
 20040717:
   AFFECTS: users of net/openldap2[12]{,-sasl}-client
@@ -532,4 +534,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.51 2004/07/26 18:46:12 glewis Exp $
+$FreeBSD: ports/UPDATING,v 1.52 2004/07/27 23:59:37 ale Exp $
