@@ -2,21 +2,21 @@
 # Date created:        29 May 2000
 # Whom:                Makoto YAMAKURA <makoto@pinpott.spnet.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/zangband/Makefile,v 1.1 2000/08/09 17:34:15 cpiazza Exp $
 #
 
 PORTNAME=	zangband
-PORTVERSION=	2.2.8${JP_VERSION}
+PORTVERSION=	2.4.0${JP_VERSION}
 CATEGORIES+=	games
 MASTER_SITES=	ftp://export.andrew.cmu.edu/angband/Variant/ \
 		ftp://ftp.sunet.se/pub/games/Angband/Variant/ \
 		http://www.geocities.co.jp/SiliconValley-SanJose/9606/zg/
-DISTFILES=	zangband-${E_VERSION:S/./-/g}-src.zip
+DISTFILES=	zangband-${E_VERSION:S/.//g}-src.zip
 .if defined(JAPANESE)
 DISTFILES+=	zj${E_VERSION:S/.//g}ux-${PATCH_VERSION}.tgz
 .endif
 DIST_SUBDIR=	zangband
-EXTRACT_ONLY=	zangband-${E_VERSION:S/./-/g}-src.zip
+EXTRACT_ONLY=	zangband-${E_VERSION:S/.//g}-src.zip
 
 MAINTAINER=	makoto@pinpott.spnet.ne.jp
 
@@ -49,10 +49,10 @@ ANGBANDBIN?=	bin/jzangband
 
 E_VERSION=	${PORTVERSION:S/${JP_VERSION}//}
 .if defined(JAPANESE)
-PATCH_VERSION=	000714
+PATCH_VERSION=	000822
 JP_VERSION=	.j${PATCH_VERSION}
 PLIST_ADD=	${PKGDIR}/PLIST.ja
-MAKE_ARGS+=	JAPANESE_CFLAGS="-DJP -DEUC -DJP_ARTDESC"
+MAKE_ARGS+=	JAPANESE_CFLAGS="-DJP -DEUC"
 .endif
 
 pre-patch:
