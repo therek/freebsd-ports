@@ -2,13 +2,15 @@
 # Date created:         12 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/dviselect/Makefile,v 1.17 2000/06/21 17:41:32 jmz Exp $
+# $FreeBSD: ports/print/dviselect/Makefile,v 1.18 2000/07/02 22:45:46 jmz Exp $
 #
 
 PORTNAME=	dviselect
 PORTVERSION=	1.3
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.kobe-u.ac.jp/pub/TeX/dvi-tools/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jmz
+
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jmz@FreeBSD.org
