@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD$
+# $FreeBSD: ports/MOVED,v 1.184 2003/08/05 10:50:44 perky Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -428,3 +428,4 @@ devel/gnome-devel||2003-07-30|no longer needed after GNOME 1.4 removal
 devel/gnome2-devel||2003-07-30|no longer needed after GNOME 1.4 removal
 x11-toolkits/Motif-dummy||2003-07-31|dummy port is no longer used
 korean/netdic||2003-08-05|not functional and not maintained anymore
+misc/gnomeutils2|deskutils/gnomeutils2|2003-08-06|repo move to a better category
