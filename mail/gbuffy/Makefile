@@ -2,7 +2,7 @@
 # Date created:		2 October 1999
 # Whom:			kaj@Raditex.se
 #
-# $FreeBSD: ports/mail/gbuffy/Makefile,v 1.3 2000/04/13 19:59:40 cpiazza Exp $
+# $FreeBSD: ports/mail/gbuffy/Makefile,v 1.4 2000/06/01 16:25:17 ade Exp $
 #
 
 PORTNAME=	gbuffy
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.fiction.net/blong/programs/gbuffy/
 MAINTAINER=	kaj@Raditex.se
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		PropList.2:${PORTSDIR}/devel/libPropList
+		PropList.2:${PORTSDIR}/devel/libPropList \
+		compface.1:${PORTSDIR}/mail/faces
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
