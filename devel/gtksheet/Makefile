@@ -3,10 +3,10 @@
 # Date created:			Jun 22 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gtksheet/Makefile,v 1.4 1999/08/25 05:48:10 obrien Exp $
 #
 
-DISTNAME=	gtksheet-7.6
+DISTNAME=	gtksheet-7.10
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ripley.ifir.edu.ar/pub/gtk/gtksheet/
 
