@@ -2,14 +2,14 @@
 # Date created:				26 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/encompass/Makefile,v 1.17 2001/06/06 10:41:40 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	encompass
-PORTVERSION=	0.4.2
-PORTREVISION=	1
+PORTVERSION=	0.4.4
 CATEGORIES=	www gnome
-MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=	http://encompass.sourceforge.net/ \
+		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
