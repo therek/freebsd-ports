@@ -2,7 +2,7 @@
 # Date Created:				5 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/hping/Makefile,v 1.2 2001/06/04 13:48:49 roam Exp $
 #
 
 PORTNAME=	hping
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.kyuzz.org/antirez/hping2-src/
 DISTNAME=	hping2-beta54
 
 MAINTAINER=	roman@xpert.com
+
+BROKEN=		See PR 28974
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--force-libpcap
