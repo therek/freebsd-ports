@@ -3,14 +3,10 @@
 # Date created:		27 December 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.3 1999/08/25 05:43:33 obrien Exp $
+# $FreeBSD: ports/editors/custom-mule/Makefile,v 1.4 1999/08/31 06:42:54 mharo Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
-
-PATCHFILES=	custom-1.9962.patch
-PATCH_SITES=	ftp://ftp.jpl.org/pub/elisp/semi-gnus-mule23@1934/
-PATCH_DIST_STRIP= -p1
 
 # This is a slave port.
 PORTCLASS=	slave
@@ -26,6 +22,7 @@ HAVE_COMMON_PORT= YES
 
 # pkg/* files but PLIST are used in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
+PATCHDIR=	${.CURDIR}/patches
 PLIST=		${MASTERDIR}/pkg/PLIST
 
 .include <${MASTERDIR}/Makefile>
