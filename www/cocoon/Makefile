@@ -3,7 +3,7 @@
 # Date created:		27 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.5 1999/11/06 01:13:45 kuriyama Exp $
+# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.6 1999/11/07 04:25:41 kuriyama Exp $
 #
 
 DISTNAME=	Cocoon_1.5
@@ -14,9 +14,9 @@ EXTRACT_SUFX=	.jar
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/libexec/apache/mod_jserv.so:${PORTSDIR}/www/apache-jserv
-#		${PREFIX}/share/java/classes/lotusxsl.jar:${PORTSDIR}/textproc/lotusxsl
-#		${PREFIX}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j
+RUN_DEPENDS=	${LOCALBASE}/libexec/apache/mod_jserv.so:${PORTSDIR}/www/apache-jserv
+#		${LOCALBASE}/share/java/classes/lotusxsl.jar:${PORTSDIR}/textproc/lotusxsl
+#		${LOCALBASE}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j
 
 EXTRACT_CMD=	${PREFIX}/${JAVASUBDIR}/bin/jar
 EXTRACT_BEFORE_ARGS=	xf
