@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.538 2005/02/02 15:46:17 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.539 2005/02/02 17:38:44 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -53,6 +53,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	    when the full pathname of the script being executed is
 	    very long. <em>(CAN-2005-0156)</em>.</li>
 	</ul>
+	<p><strong>Note:</strong> By default, no set-user-ID perl
+	  binary is installed.  An administrator must enable it
+	  manually at build time with the <code>ENABLE_SUIDPERL</code>
+	  port flag.</p>
       </body>
     </description>
     <references>
