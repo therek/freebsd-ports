@@ -2,7 +2,7 @@
 # Date created:				May 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.15 2001/02/26 13:25:07 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SNMP
@@ -14,7 +14,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS= 	snmp.4:${PORTSDIR}/net/net-snmp
+LIB_DEPENDS= 	snmp.4:${PORTSDIR}/net/net-snmp4
 
 PERL_CONFIGURE=	yes
 
