@@ -2,7 +2,7 @@
 # Date created:		07 September 2001
 # Whom:			mb@imp.ch
 #
-# $FreeBSD: $
+# $FreeBSD$
 #
 
 PORTNAME=	jpgtn
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= apps/graphics/misc
 
-MAINTAINER=	mb@imp.ch
+MAINTAINER=	mbr@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
