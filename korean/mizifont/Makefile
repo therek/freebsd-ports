@@ -3,13 +3,13 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/mizifont/Makefile,v 1.11 1999/08/30 12:09:02 peter Exp $
 #
 
 DISTNAME=	xfntmizi-1.1-2.noarch
 PKGNAME=	ko-mizifonts-1.1
 CATEGORIES=	korean x11-fonts
-MASTER_SITES=	http://www.mizi.co.kr/packages/hanIM/
+MASTER_SITES=	ftp://ftp.mizi.co.kr/pub/hanIM/
 EXTRACT_SUFX=	.rpm
 
 MAINTAINER=	cjh@kr.freebsd.org
