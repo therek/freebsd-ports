@@ -2,11 +2,11 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.35 2001/08/20 12:43:02 olgeni Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.36 2001/09/01 19:18:05 lioux Exp $
 #
 
 PORTNAME?=	xmame
-PORTVERSION?=	0.54.1
+PORTVERSION?=	0.55.1
 CATEGORIES=	emulators
 MASTER_SITES=	http://x.mame.net/download/ \
 		ftp://ftp.kaupp.cx/pub/xmame/ \
@@ -88,6 +88,8 @@ ALLDOCS=	${GENERALDOCS} ${PINMAMEDOCS}
 .endif
 
 # CPS-2 patches - this enables extra games in MAME.
+# Disabled 2001/09/18 - all CPS2shock releases are in xmame right now.
+.if 0
 .if ${MAMEMESS} == "mame"
 .if defined(WITH_CPS2) && ${WITH_CPS2} == "yes"
 CPS2VERSION=	20010711
@@ -97,6 +99,7 @@ PATCHFILES+=	${DISTNAME}-cps2-${CPS2VERSION}.patch.gz
 .else
 pre-everything::
 	@${ECHO_MSG} "===> If you want to compile MAME with CPS-2 support, use \"make WITH_CPS2=yes\""
+.endif
 .endif
 .endif
 
