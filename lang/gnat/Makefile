@@ -4,7 +4,7 @@
 # Porter (original):	nils@guru.ims.uni-stuttgart.de
 # Porter (version 3):	maurice@serc.rmit.edu.au
 #
-# $FreeBSD: ports/lang/gnat/Makefile,v 1.24 2000/11/01 18:56:57 deischen Exp $
+# $FreeBSD: ports/lang/gnat/Makefile,v 1.25 2000/11/03 10:03:09 asami Exp $
 #
 # Note:
 # - FreeBSD tasking libraries created by Dan Eischen have been incorporated
@@ -59,8 +59,8 @@ have_boot!=	if [ -x ${PREFIX}/bin/adagcc -a -x ${PREFIX}/bin/gnatbind ]; then \
 have_boot=
 .endif
 .if empty(have_boot)
-have_boot!=	if [ -x {LOCALBASE}/bin/adagcc -a -x {LOCALBASE}/bin/gnatbind ]; then \
-			${ECHO} "{LOCALBASE}/bin"; \
+have_boot!=	if [ -x ${LOCALBASE}/bin/adagcc -a -x ${LOCALBASE}/bin/gnatbind ]; then \
+			${ECHO} "${LOCALBASE}/bin"; \
 		else \
 			${ECHO} ""; \
 		fi
