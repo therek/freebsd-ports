@@ -2,11 +2,11 @@
 # Date created:				1999/04/07
 # Whom:					ache
 #
-# $FreeBSD: ports/net/p5-URI/Makefile,v 1.10 2000/04/22 22:25:28 vanilla Exp $
+# $FreeBSD: ports/net/p5-URI/Makefile,v 1.11 2000/07/22 10:44:52 vanilla Exp $
 #
 
 PORTNAME=	URI
-PORTVERSION=	1.07
+PORTVERSION=    1.09
 CATEGORIES=     net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=     URI
