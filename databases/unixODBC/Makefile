@@ -2,11 +2,11 @@
 # Date created:         May 11, 2000
 # Whom:                 Nick Sayer <nsayer@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.11 2000/11/28 15:07:18 kevlo Exp $
+# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.12 2001/01/06 16:10:36 kevlo Exp $
 #
 
 PORTNAME=	unixODBC
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.2
 CATEGORIES=	databases
 MASTER_SITES=	http://www.unixodbc.org/
 
