@@ -2,21 +2,21 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-wp-packages/Makefile,v 1.19 2000/11/30 11:37:16 kiri Exp $
+# $FreeBSD: ports/editors/xemacs-wp-packages/Makefile,v 1.20 2000/12/01 12:55:27 kiri Exp $
 #
 
 PORTNAME=	xemacs-wp-packages
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	editors elisp
 MASTER_SITES=	${MASTER_SITE_XEMACS} \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	packages kiri
 DISTFILES=	\
-		crisp-1.11-pkg.tar.gz \
-		edt-1.10-pkg.tar.gz \
-		reftex-1.21-pkg.tar.gz \
-		textools-1.11-pkg.tar.gz \
-		tpu-1.11-pkg.tar.gz
+		crisp-1.12-pkg.tar.gz \
+		edt-1.11-pkg.tar.gz \
+		reftex-1.22-pkg.tar.gz \
+		textools-1.12-pkg.tar.gz \
+		tpu-1.12-pkg.tar.gz
 DIST_SUBDIR=	xemacs
 
 MAINTAINER=	kiri@FreeBSD.org
