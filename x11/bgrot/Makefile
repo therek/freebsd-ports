@@ -2,7 +2,7 @@
 # Date created:			12 January 1999
 # Whom:				Matthew Fuller <fullermd@futuresouth.com>
 #
-# $FreeBSD: ports/x11/bgrot/Makefile,v 1.5 2000/06/27 12:23:15 alex Exp $
+# $FreeBSD: ports/x11/bgrot/Makefile,v 1.6 2001/02/05 16:17:56 olgeni Exp $
 #
 
 PORTNAME=	bgrot
@@ -19,5 +19,8 @@ USE_PERL5=	yes
 
 MAN1=		bgrot.1
 MANCOMPRESSED=	yes
+
+post-install:
+	@${INSTALL_DATA} ${WRKSRC}/bgrot.conf.skel ${PREFIX}/etc
 
 .include <bsd.port.mk>
