@@ -2,7 +2,7 @@
 # Date created:        16 April 2000
 # Whom:                Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD: ports/misc/biblereader/Makefile,v 1.4 2000/10/04 06:40:00 sobomax Exp $
+# $FreeBSD: ports/misc/biblereader/Makefile,v 1.5 2000/10/05 06:42:12 reg Exp $
 #
 
 PORTNAME=	biblereader
@@ -24,14 +24,14 @@ USE_GTK=	yes
 PLIST=		${WRKDIR}/PLIST
 
 DATAFILES=	${WRKDIR}/kjv/kjv
-PLISTS=		${PKGDIR}/PLIST
+PLISTS=		${PKGDIR}/pkg-plist
 .if defined(WITH_TRANSLATIONS)
 DATAFILES+= 	${WRKDIR}/asv/asv ${WRKDIR}/darby/darby
-PLISTS+= 	${PKGDIR}/PLIST.translations
+PLISTS+= 	${PKGDIR}/pkg-plist.translations
 .endif
 .if defined(WITH_SUPPLEMENTS)
 DATAFILES+= 	${WRKDIR}/easton/easton.dict ${WRKDIR}/mhc/mhc
-PLISTS+= 	${PKGDIR}/PLIST.supplements
+PLISTS+= 	${PKGDIR}/pkg-plist.supplements
 .endif
 
 .if !defined(WITH_TRANSLATIONS)
