@@ -2,11 +2,11 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.3 2000/03/22 01:59:06 will Exp $
+# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.4 2000/04/14 06:43:02 mharo Exp $
 #
 
 PORTNAME=	gno3dtet
-PORTVERSION=	1.0.0
+PORTVERSION=	1.6.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://webdat.com/pub/seb/gno3dtet/
 EXTRACT_SUFX=	.tgz
