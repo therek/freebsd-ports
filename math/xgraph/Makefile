@@ -2,7 +2,7 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/math/xgraph/Makefile,v 1.16 2000/04/14 07:20:52 asami Exp $
+# $FreeBSD: ports/math/xgraph/Makefile,v 1.17 2000/08/03 14:28:31 sanpei Exp $
 #
 
 PORTNAME=	xgraph
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	sanpei@FreeBSD.org
 
 USE_IMAKE=	yes
+WRKSRC=		${WRKDIR}/${PORTNAME}
 MAN1=		xgraph.1
 
 post-install:
