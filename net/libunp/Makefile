@@ -3,12 +3,12 @@
 # Date created:			Sept 28, 1999
 # Whom:				james@targetnet.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/libunp/Makefile,v 1.1.1.1 1999/10/02 19:13:05 dan Exp $
 #
 
 DISTNAME=	unpv12e
 PKGNAME=	libunp-1.0
-CATEGORIES=     net
+CATEGORIES=     net ipv6
 MASTER_SITES=	ftp://ftp.kohala.com/pub/rstevens/ \
 		http://www.cs.columbia.edu/networks98/stevens/
 
