@@ -3,11 +3,12 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.6 2001/08/25 00:03:13 dwcjr Exp $
 #
 
 PORTNAME=	fcron
 PORTVERSION=	1.1.1
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://fcron.free.fr/
@@ -16,7 +17,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}" \
 		--with-rootname=root --with-rootgroup=wheel \
 		--with-answer-all=yes
