@@ -2,12 +2,12 @@
 # Date created:				22 December 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/math/guppi/Makefile,v 1.1 2001/05/21 12:41:59 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	guppi
 PORTVERSION=	0.35.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/Guppi
@@ -23,6 +23,7 @@ USE_GNOME=	yes
 USE_LIBTOOL=	yes
 USE_PYTHON=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ARGS=	--enable-explicit-python-linking
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -pthread"
 PLIST_SUB=	VERSION="${PORTVERSION}"
