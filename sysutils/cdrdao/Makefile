@@ -3,12 +3,12 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.11 1999/10/25 07:37:06 asami Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.12 1999/11/01 02:04:24 steve Exp $
 #
-# If You don't want to use Joerg Schilling's SCSI library,
+# If you don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
-# If You don't want to use pthreads, set DONT_USE_PTHREADS = yes
-# If You want the graphical X toc file editor, set XCDRDAO = yes
+# If you don't want to use pthreads, set DONT_USE_PTHREADS = yes
+# If you want the graphical X toc file editor, set XCDRDAO = yes
 
 DISTNAME=		cdrdao-1.1.3.src
 PKGNAME=		cdrdao-1.1.3
