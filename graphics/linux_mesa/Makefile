@@ -3,17 +3,17 @@
 # Date created:         Oct, 8 1998
 # Whom:                 cracauer
 #
-# $FreeBSD: ports/emulators/linux_mesa/Makefile,v 1.6 1999/08/25 05:49:25 obrien Exp $
+# $FreeBSD: ports/graphics/linux_mesa/Makefile,v 1.7 1999/11/03 15:29:26 cracauer Exp $
 #
 
 DISTNAME=       MesaLib-2.6
 PKGNAME=	linux_mesa-2.6
-CATEGORIES=	emulators
+CATEGORIES=	graphics linux
 MASTER_SITES= 	ftp://iris.ssec.wisc.edu/pub/Mesa/old-versions/
 
 MAINTAINER=	cracauer@cons.org
 
-BUILD_DEPENDS=	/compat/linux/usr/lib/libglide2x.so:${PORTSDIR}/emulators/linux_glide \
+BUILD_DEPENDS=	/compat/linux/usr/lib/libglide2x.so:${PORTSDIR}/graphics/linux_glide \
 		/compat/linux/usr/bin/gcc:${PORTSDIR}/devel/linux_devtools
 
 BROKEN=		linux crosscompilation needs to be fixed first

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.180 2000/02/22 22:03:45 jedgar Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.181 2000/02/23 00:29:45 asami Exp $
 #
 
     SUBDIR += 4va
@@ -87,7 +87,9 @@
     SUBDIR += libimg
     SUBDIR += libungif
     SUBDIR += libwmf
+    SUBDIR += linux_glide
     SUBDIR += linux_glx
+    SUBDIR += linux_mesa
     SUBDIR += mpeg-lib
     SUBDIR += mpeg2codec
     SUBDIR += mpeg2play
