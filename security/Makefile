@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.117 2000/07/16 20:06:14 steve Exp $
+# $FreeBSD: ports/security/Makefile,v 1.118 2000/08/02 01:15:56 jedgar Exp $
 #
 
     SUBDIR += aafid2
@@ -82,6 +82,7 @@
     SUBDIR += radiusniff
     SUBDIR += rid
     SUBDIR += rsaref
+    SUBDIR += ruby-libwrap
     SUBDIR += saint
     SUBDIR += seahorse
     SUBDIR += siphon
