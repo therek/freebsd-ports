@@ -2,12 +2,12 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/popper/Makefile,v 1.38 2001/08/12 20:11:38 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qpopper
 PORTVERSION=	2.53
-PORTREVISION=   3
+PORTREVISION=   4
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/old/
 DISTNAME=	${PORTNAME}${PORTVERSION}
@@ -53,6 +53,9 @@ MAN8=	popauth.8 popper.8
 post-patch:
 	$(RM) ${WRKSRC}/md5.h
 	$(CP) ${FILESDIR}/sendto.c ${WRKSRC}
+
+pre-install:
+	PKG_PREFIX=${PREFIX} ./pkg-install ${PKGNAME} PRE-INSTALL
 
 do-install:
 	cd ${WRKSRC} && \
