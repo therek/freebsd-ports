@@ -2,7 +2,7 @@
 # Date created:		22 Aug 1996
 # Whom:			pst@freebsd.org
 #
-# $FreeBSD: ports/devel/id-utils/Makefile,v 1.12 2000/04/11 21:28:13 mharo Exp $
+# $FreeBSD: ports/devel/id-utils/Makefile,v 1.13 2001/01/01 10:15:00 will Exp $
 #
 
 PORTNAME=	id-utils
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	id-utils
 
-MAINTAINER=	pst@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # need to byte-compile a .el file
 BUILD_DEPENDS=	emacs:${PORTSDIR}/editors/emacs20
