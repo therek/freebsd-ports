@@ -1,9 +1,10 @@
-# $FreeBSD: ports/astro/Makefile,v 1.27 2001/01/03 23:22:12 will Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.28 2001/01/03 23:22:38 will Exp $
 #
 
     SUBDIR += dgpsip
     SUBDIR += ephem
     SUBDIR += glunarclock
+    SUBDIR += jday
     SUBDIR += luna
     SUBDIR += openuniverse
     SUBDIR += p5-Astro-MoonPhase
