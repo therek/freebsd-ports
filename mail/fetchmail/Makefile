@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.96 2000/05/29 02:39:17 steve Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.97 2000/06/01 17:59:22 will Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
@@ -34,7 +34,7 @@ CONFIGURE_ARGS+=--enable-inet6
 .if exists(/usr/lib/libssl.a) && exists(/usr/lib/libcrypto.a)
 CONFIGURE_ARGS+=--with-ssl=/usr
 .endif
-.else if exists(${LOCALBASE}/lib/libssl.a) && exists(${LOCALBASE}/lib/libcrypto.a)
+.elif exists(${LOCALBASE}/lib/libssl.a) && exists(${LOCALBASE}/lib/libcrypto.a)
 CONFIGURE_ARGS+=-with-includes=${LOCALBASE}/include/openssl --with-ssl=${LOCALBASE}
 .endif
 
