@@ -2,11 +2,12 @@
 # Date created:		01 Jan 1999
 # Whom:			Oliver Fromme <oliver.fromme@heim3.tu-clausthal.de>
 #
-# $FreeBSD: ports/audio/tosha/Makefile,v 1.4 1999/08/25 04:36:14 obrien Exp $
+# $FreeBSD: ports/audio/tosha/Makefile,v 1.5 2000/04/08 21:24:39 mharo Exp $
 #
 
 PORTNAME=	tosha
 PORTVERSION=	0.6
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/audio/
 
