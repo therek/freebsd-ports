@@ -2,7 +2,7 @@
 # Date created:			19 February 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.1 2001/02/19 15:55:35 knu Exp $
+# $FreeBSD: ports/lang/ruby_static/Makefile,v 1.2 2001/04/01 18:14:49 knu Exp $
 #
 
 PORTNAME=	ruby_static
@@ -19,7 +19,8 @@ USE_RUBY=	yes
 
 USE_AUTOCONF=	yes
 
-# Beware, we can't statically link the gdbm module because gdbm is GPL'ed.
+# Beware, you can't statically link Ruby with GPL'ed libraries,
+# which means you can't link such modules as ruby-gdbm within.
 EXT_PORTS=	archivers/ruby-zlib \
 		devel/ruby-strscan \
 		sysutils/ruby-syslog
@@ -63,7 +64,7 @@ do-extract:
 	for x in *; do [ -d $$x ] && echo $$x >> Setup; done)
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/${RUBY_NAME} ${RUBY}${_RUBY_SUFFIX}_s
-	${LN} -fs ${RUBY}${_RUBY_SUFFIX}_s ${RUBY}_s
+	${INSTALL_PROGRAM} ${WRKSRC}/${RUBY_NAME} ${RUBY_WITH_SUFFIX}_s
+	${LN} -fs ${RUBY_WITH_SUFFIX}_s ${RUBY_WITHOUT_SUFFIX}_s
 
 .include <bsd.port.post.mk>
