@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.6 2001/03/12 16:53:12 sf Exp $
+# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.7 2001/03/23 22:21:38 trevor Exp $
 #
 
 PORTNAME=	libvorbis
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.vorbis.com/files/beta4/unix/ \
 		http://home.student.utwente.nl/t.vanklaveren/distfiles/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/b/beta/}
 
-MAINTAINER=	Christian Weisgerber <naddy@mips.inka.de>
+MAINTAINER=	naddy@mips.inka.de
 
 LIB_DEPENDS=	ogg.1:${PORTSDIR}/audio/libogg
 

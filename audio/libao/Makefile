@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libao/Makefile,v 1.6 2001/03/03 17:11:42 sf Exp $
+# $FreeBSD: ports/audio/libao/Makefile,v 1.7 2001/03/23 22:21:33 trevor Exp $
 #
 
 PORTNAME=	libao
@@ -12,7 +12,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.vorbis.com/files/beta4/unix/ \
 		http://home.student.utwente.nl/t.vanklaveren/distfiles/
 
-MAINTAINER=	Christian Weisgerber <naddy@mips.inka.de>
+MAINTAINER=	naddy@mips.inka.de
 
 WANT_ESOUND=	yes
 
