@@ -2,15 +2,16 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.18 2000/04/09 18:11:26 cpiazza Exp $
+# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.19 2000/04/15 12:57:10 imura Exp $
 #
 
 PORTNAME=		gnomeicu
-PORTVERSION=		0.90.b
+PORTVERSION=		0.93
 CATEGORIES=		net gnome
-MASTER_SITES=		ftp://gnomeicu.gdev.net/pub/gnomeicu/          \
-			http://www.nectar.cc/distfiles/
-DISTNAME=		${PORTNAME}-0.90b
+MASTER_SITES=		ftp://gnomeicu.gdev.net/pub/gnomeicu/ \
+			ftp://ftp.vision.net.au/ftp7/linuxberg/files/gnome/com/ \
+			ftp://ftp.datacomm.ch/.3/linuxberg/files/gnome/com/ \
+			ftp://ftp.proxad.net/mirrors/ftp.linuxberg.com/files/gnome/com/
 
 MAINTAINER=		nectar@FreeBSD.org
 
