@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.14 2000/07/05 12:36:44 tg Exp $
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.15 2000/07/15 16:14:00 andreas Exp $
 #
 
 PORTNAME=	tac_plus
@@ -20,7 +20,7 @@ MAN1=		tac_plus.1
 # To change the text displayed when users are prompted to enter
 # a username, set appropriately TAC_CHANGE_PROMPT variable.
 .if defined(TAC_CHANGE_PROMPT) && ${TAC_CHANGE_PROMPT} == YES
-EXTRA_PATCHES=	${FILESDIR}/patch-ba
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-ba
 .endif
 
 do-install:

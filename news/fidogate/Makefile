@@ -2,7 +2,7 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/fidogate/Makefile,v 1.11 2000/04/09 17:32:51 cpiazza Exp $
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.12 2000/04/17 23:47:42 mharo Exp $
 #
 
 PORTNAME=	fidogate
@@ -29,7 +29,7 @@ USE_PERL5=	yes
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 300000
-EXTRA_PATCHES+=	${FILESDIR}/patch-perl
+EXTRA_PATCHES+=	${PATCHDIR}/patch-perl
 .endif
 
 pre-configure:
