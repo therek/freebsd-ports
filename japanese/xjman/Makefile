@@ -4,7 +4,7 @@
 #			japanese/man-doc
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xjman/Makefile,v 1.12 2000/04/13 08:34:06 knu Exp $
+# $FreeBSD: ports/japanese/xjman/Makefile,v 1.13 2000/10/08 10:21:37 asami Exp $
 #
 
 PORTNAME=	xjman
@@ -27,6 +27,11 @@ post-extract:
 .for i in Makefile Makefile.inc
 	@${CP} ${FILESDIR}/$i ${WRKSRC}
 .endfor
+.for sec in ${MANSECS}
+	(cd ${WRKSRC}/man${sec}; \
+	for f in *.${sec}x; do ${CP} $$f $${f%x}; done; \
+	${PERL} -pi -e 's/^(\.so .*)x$$/$$1/' *.${sec})
+.endfor
 
 post-build:
 	@${RM} -f ${PLIST}
@@ -34,7 +39,7 @@ post-build:
 	if [ -d ${WRKSRC}/man$${sec} ]; then \
 		cd ${WRKSRC}/man$${sec}; \
 		list=`${MAKE} pages-list`; \
-		set `${ECHO} $$list " "|${SED} 's/\.\([0-9]\)x /.\1x \1 /g'`; \
+		set `${ECHO} $$list " "|${SED} 's/\.\([0-9]\) /.\1 \1 /g'`; \
 		while : ; do \
 			case $$# in \
 				0) break;; \
