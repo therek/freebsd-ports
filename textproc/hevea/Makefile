@@ -1,9 +1,9 @@
 # New ports collection makefile for:	hevea
 # Version required:	1.0.4
-# Date created:		Novemeber 28 1999
+# Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.1 1999/12/25 16:17:03 steve Exp $
 #
 
 DISTNAME=		hevea-1.04
@@ -20,13 +20,6 @@ TEXHASH=		${PREFIX}/bin/texhash
 post-install:
 	strip ${PREFIX}/bin/hevea
 	strip ${PREFIX}/bin/hacha
-# This is a hack to get hevea.sty put in a place where latex
-# will find it.  If you have a better way to do this, please
-# tell me about it.
-	${MKDIR} ${TEX_DIR}/hevea
-	${CP} ${PREFIX}/lib/hevea/hevea.sty ${TEX_DIR}/hevea/hevea.sty
-.if exists(${TEXHASH})
-	${TEXHASH}
-.endif
+	${CAT} ${MASTERDIR}/pkg/MESSAGE
 
 .include <bsd.port.mk>
