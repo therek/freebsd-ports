@@ -3,7 +3,7 @@
 # Date created:        28 August 1997
 # Whom:                Kapil Chowksey <kchowksey@hss.hns.com>
 #
-# $FreeBSD: ports/devel/gindent/Makefile,v 1.8 1999/08/25 05:48:03 obrien Exp $
+# $FreeBSD: ports/devel/gindent/Makefile,v 1.9 1999/10/01 01:50:34 cpiazza Exp $
 #
 
 DISTNAME=	indent-2.2.2
@@ -24,9 +24,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/indent.1 ${PREFIX}/man/man1
 
 post-install:
-	@if [ ! -f ${PREFIX}/info/dir ]; then \
-	    ${SED} -ne '1,/Menu:/p' /usr/share/info/dir > ${PREFIX}/info/dir; \
-	fi
 	@install-info ${PREFIX}/info/indent.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
