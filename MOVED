@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.59 2003/02/05 18:51:46 nectar Exp $
+# $FreeBSD: ports/MOVED,v 1.60 2003/02/06 03:20:55 marcus Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -163,3 +163,4 @@ devel/ossp-mm||2003-02-01|accidental dupe of devel/mm
 archivers/linux_rar||2003-02-03|FreeBSD/i386 binary is available
 security/pam_krb5||2003-02-05|deleted: functionality in base system
 deskutils/gnucash|finance/gnucash|2003-02-05|new category
+x11-toolkits/crux||2003-02-07|deleted: added to GNOME 2.2 desktop
