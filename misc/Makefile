@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.310 2000/12/12 11:12:50 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.311 2000/12/17 02:42:45 obrien Exp $
 #
 
     SUBDIR += 221upgrade
@@ -57,6 +57,7 @@
     SUBDIR += findutils
     SUBDIR += fortuneit
     SUBDIR += freedialog
+    SUBDIR += ftree
     SUBDIR += geekcode
     SUBDIR += git
     SUBDIR += gnomepm
