@@ -2,21 +2,19 @@
 # Date created:				29 Dec 1999
 # Whom:					will
 #
-# $FreeBSD: ports/mail/listmanager/Makefile,v 1.6 2001/03/10 03:48:08 gshapiro Exp $
+# $FreeBSD: ports/mail/listmanager/Makefile,v 1.7 2001/04/17 16:20:20 gshapiro Exp $
 #
 
 PORTNAME=	listmanager
-PORTVERSION=	2.107
-PORTREVISION=	1
+PORTVERSION=	2.108
 CATEGORIES=	mail
 MASTER_SITES=	http://www.listmanager.org/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.freebsd35
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} help.tar.gz listmanager.8 ack
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} INSTALL help.tar.gz listmanager.8 ack
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	gshapiro@FreeBSD.org
-
-FORBIDDEN=	"Security problem.  New version due shortly."
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=
@@ -37,8 +35,15 @@ do-install:
 	@${MKDIR} ${PREFIX}/share/listmanager/synchfiles
 	${TOUCH} ${PREFIX}/etc/listmanager.cf
 	${INSTALL_DATA} ${WRKSRC}/help/* ${PREFIX}/share/listmanager/help
+	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/listmanager
 	${INSTALL_MAN} ${WRKSRC}/listmanager.8 ${PREFIX}/man/man8
 	${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME}${EXTRACT_SUFX} ${PREFIX}/sbin/listmanager
 	${CHMOD} 4510 ${PREFIX}/sbin/listmanager
 
+post-install:
+	@${ECHO} "************************************************************"
+	@${ECHO} "*  Please read ${PREFIX}/share/listmanager/INSTALL for      "
+	@${ECHO} "*  information on installing listmanager without using a    "
+	@${ECHO} "*  set-user-id root binary.                                 "
+	@${ECHO} "************************************************************"
 .include <bsd.port.mk>
