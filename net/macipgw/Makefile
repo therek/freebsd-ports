@@ -2,7 +2,7 @@
 # Date created:         25 Nov 1997
 # Whom:                 stb
 #
-# $FreeBSD: ports/net/macipgw/Makefile,v 1.8 2000/04/20 20:14:20 mharo Exp $
+# $FreeBSD: ports/net/macipgw/Makefile,v 1.9 2000/06/29 07:02:36 obrien Exp $
 #
 
 PORTNAME=	macipgw
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.hanse.de/sites/transit/netatalk/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	stb/netatalk
 
-MAINTAINER=	stb@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libatalk.a:${PORTSDIR}/net/netatalk \
 		${LOCALBASE}/include/atalk/ddp.h:${PORTSDIR}/net/netatalk

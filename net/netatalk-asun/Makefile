@@ -2,7 +2,7 @@
 # Date created:         07 Sep 1998
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.18 2000/10/08 10:22:34 asami Exp $
+# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.19 2000/12/23 05:08:32 kuriyama Exp $
 #
 
 PORTNAME=	netatalk
@@ -14,7 +14,7 @@ MASTER_SITES=   ftp://ftp.u.washington.edu/public/asun/ \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.u.washington.edu/public/asun/
 MASTER_SITE_SUBDIR=	stb/mirror/ftp.u.washington.edu/public/asun
 
-MAINTAINER=	stb@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 .if !exists(/usr/include/tcpd.h)
 LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
