@@ -3,7 +3,7 @@
 # Date created:        01 July 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/audio/gogo/Makefile,v 1.2 1999/08/25 04:35:30 obrien Exp $
+# $FreeBSD: ports/audio/gogo/Makefile,v 1.3 1999/10/01 08:45:56 nakai Exp $
 #
 
 DISTNAME=	gogo210
