@@ -2,12 +2,12 @@
 # Date created:		12 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/lpe/Makefile,v 1.15 2001/04/09 07:44:17 sobomax Exp $
+# $FreeBSD: ports/editors/lpe/Makefile,v 1.16 2001/04/20 14:04:15 olgeni Exp $
 #
 
 PORTNAME=	lpe
 PORTVERSION=	1.2.5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://cdsmith.twu.net/opensource/lpe/
