@@ -2,11 +2,11 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/p5-bioperl/Makefile,v 1.2 2000/10/13 12:43:24 jeh Exp $
+# $FreeBSD: ports/biology/p5-bioperl/Makefile,v 1.3 2001/06/26 15:09:39 wjv Exp $
 #
 
 PORTNAME=	bioperl
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.1
 CATEGORIES=	biology perl5
 MASTER_SITES=	ftp://bioperl.org/pub/DIST/ \
 		http://bioperl.org/Core/Latest/ \
@@ -139,6 +139,12 @@ MAN3+=		Bio::CorbaServer::BioEnv.3 Bio::CorbaServer::AnonymousSeq.3 \
 MAN3+=		Bio::Tk::HitDisplay.3 Bio::Tk::SeqCanvas.3
 .endif
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+
+pre-fetch:
+.if !defined(BATCH) && (!defined(WITH_CORBA_CLIENT) || \
+    !defined(WITH_CORBA_SERVER) || !defined(WITH_GUI))
+	@ ${CAT} ${FILESDIR}/ext.msg
+.endif
 
 post-configure:
 	@ cd ${EXT_WRKSRC} && \
