@@ -2,7 +2,7 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xmj/Makefile,v 1.10 2000/04/14 12:27:46 asami Exp $
+# $FreeBSD: ports/games/xmj/Makefile,v 1.11 2000/04/15 12:58:16 imura Exp $
 #
 
 PORTNAME=	xmj
@@ -14,6 +14,5 @@ DISTNAME=       ${PORTNAME}
 MAINTAINER=	swallace@FreeBSD.org
 
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGES= yes
 
 .include <bsd.port.mk>
