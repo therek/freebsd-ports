@@ -2,13 +2,14 @@
 # Date created:		23 November 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/mail/mbx2mbox/Makefile,v 1.8 2000/04/13 19:59:56 cpiazza Exp $
+# $FreeBSD: ports/mail/mbx2mbox/Makefile,v 1.9 2000/05/02 13:56:01 jedgar Exp $
 #
 
 PORTNAME=	mbx2mbox
 PORTVERSION= 	0.33
 CATEGORIES=	mail
-MASTER_SITES=	http://download.sourceforge.net/mbx2mbox/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

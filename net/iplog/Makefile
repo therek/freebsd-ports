@@ -2,14 +2,15 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.5 2000/03/04 14:06:35 jedgar Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.6 2000/04/09 18:11:45 cpiazza Exp $
 #
 
 PORTNAME=	iplog
 PORTVERSION=	2.1.1
 CATEGORIES=	security
-MASTER_SITES=	http://download.sourceforge.net/ojnk/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.karlsbakk.net/pub/ojnk/iplog/
+MASTER_SITE_SUBDIR=	ojnk
 
 PATCH_SITES=	http://ojnk.sourceforge.net/stuff/ \
 		ftp://ftp.karlsbakk.net/pub/ojnk/iplog/

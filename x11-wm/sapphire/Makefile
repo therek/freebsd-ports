@@ -2,14 +2,15 @@
 # Date created:		26 Jan 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.3 2000/04/10 19:50:11 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/sapphire/Makefile,v 1.4 2000/04/30 21:21:45 steve Exp $
 #
 
 PORTNAME=	sapphire
 PORTVERSION=	0.14.2
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://download.sourceforge.net/sapphire/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://sapphire.sourceforge.net/themes/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${THEMES_SRC}
 
 MAINTAINER=	trevor@jpj.net

@@ -2,13 +2,14 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/games/quakeforge/Makefile,v 1.8 2000/05/22 11:55:45 sobomax Exp $
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.9 2000/06/02 08:30:11 sobomax Exp $
 #
 
 PORTNAME=	QuakeForge
 PORTVERSION=	0.1.1
 CATEGORIES=	games
-MASTER_SITES=	http://download.sourceforge.net/quake/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	quake
 DISTNAME=	quakeforge-${PORTVERSION}
 .if !defined(NO_WAD)
 MASTER_SITES+=	http://www.devolution.com/~slouken/SDL/projects/quake/data/

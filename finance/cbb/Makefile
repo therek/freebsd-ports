@@ -2,13 +2,14 @@
 # Date created:			24 September, 1998
 # Whom:				kline
 #
-# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.16 2000/01/31 23:04:13 jedgar Exp $
+# $FreeBSD: ports/deskutils/cbb/Makefile,v 1.17 2000/04/08 22:03:24 mharo Exp $
 #
 
 PORTNAME=	cbb
 PORTVERSION=	0.8.1
 CATEGORIES=	deskutils
-MASTER_SITES=	http://download.sourceforge.net/cbb/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	kline@thought.org
 

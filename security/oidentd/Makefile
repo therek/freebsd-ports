@@ -2,14 +2,15 @@
 # Date created:		29 Mar 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/security/oidentd/Makefile,v 1.3 2000/04/09 18:30:05 cpiazza Exp $
+# $FreeBSD: ports/security/oidentd/Makefile,v 1.4 2000/05/21 12:32:02 knu Exp $
 #
 
 PORTNAME=	oidentd
 PORTVERSION=	1.6.4
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/ojnk/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.numb.org/~odin/stuff/
+MASTER_SITE_SUBDIR=	ojnk
 
 MAINTAINER=	trevor@jpj.net
 

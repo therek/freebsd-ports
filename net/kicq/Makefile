@@ -2,13 +2,14 @@
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/kicq/Makefile,v 1.5 2000/02/24 07:01:06 asami Exp $
+# $FreeBSD: ports/net/kicq/Makefile,v 1.6 2000/04/09 18:11:55 cpiazza Exp $
 #
 
 PORTNAME=	kicq
 PORTVERSION=	0.3.0
 CATEGORIES=	net kde
-MASTER_SITES=	http://download.sourceforge.net/kicq/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	paxvel@iname.com
 

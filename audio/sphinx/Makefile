@@ -2,13 +2,14 @@
 # Date created:				30 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD: ports/audio/sphinx/Makefile,v 1.1 2000/05/30 02:59:38 will Exp $
+# $FreeBSD: ports/audio/sphinx/Makefile,v 1.2 2000/06/08 14:58:04 will Exp $
 #
 
 PORTNAME=	sphinx
 PORTVERSION=	2.0.2
 CATEGORIES=	audio
-MASTER_SITES=	http://download.sourceforge.net/cmusphinx/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	cmusphinx
 DISTNAME=	sphinx2-0.2
 
 MAINTAINER=	trevor@jpj.net

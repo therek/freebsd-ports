@@ -2,17 +2,17 @@
 # Date created:         19 April 1996
 # Whom:                 jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.23 2000/05/28 03:49:34 steve Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.24 2000/06/02 19:28:06 will Exp $
 #
 
 PORTNAME=	swig
 PORTVERSION=	1.3a2
 CATEGORIES=	devel python tcl82
-MASTER_SITES=   ftp://ftp.sourceforge.net/pub/sourceforge/swig/ \
-		http://download.sourceforge.net/swig/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.rge.com/pub/languages/swig/ \
 		ftp://ftp.python.org/pub/python/contrib/System/ \
 		ftp://ftp.mcc.ac.uk/pub/mvc/swig/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:				5 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/kcd/Makefile,v 1.3 2000/04/14 08:46:03 asami Exp $
+# $FreeBSD: ports/misc/kcd/Makefile,v 1.4 2000/05/07 21:41:50 jedgar Exp $
 #
 
 PORTNAME=	kcd
 PORTVERSION=	4.11.2
 CATEGORIES=	misc
-MASTER_SITES=	http://download.sourceforge.net/kcd/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -2,14 +2,14 @@
 # Date created:				8 May 2000
 # Whom:					gelf
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/fte/Makefile,v 1.1 2000/06/09 02:27:48 will Exp $
 #
 
 PORTNAME=		fte
 PORTVERSION=		46.5
 CATEGORIES=		editors
-MASTER_SITES=		ftp://ftp.sourceforge.net/pub/sourceforge/fte/ \
-			http://download.sourceforge.net/fte/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=		${PORTNAME}s${PORTVERSION:S/./b/}
 EXTRACT_SUFX=		.zip
 

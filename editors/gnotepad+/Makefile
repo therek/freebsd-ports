@@ -2,13 +2,14 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.8 2000/05/17 19:53:20 ade Exp $
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.9 2000/06/01 16:25:36 ade Exp $
 #
 
 PORTNAME=	gnotepad+
 PORTVERSION=	1.3.0
 CATEGORIES=	editors www gnome
-MASTER_SITES=	http://download.sourceforge.net/gnotepad/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	gnotepad
 .if !defined(NOPORTDOCS)
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} \
 		${PORTNAME}-help-${DOCVERSION}${EXTRACT_SUFX}

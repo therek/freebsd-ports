@@ -2,14 +2,15 @@
 # Date created:		05 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/screem/Makefile,v 1.4 2000/04/10 00:06:47 cpiazza Exp $
+# $FreeBSD: ports/www/screem/Makefile,v 1.5 2000/04/29 22:49:12 kris Exp $
 #
 
 PORTNAME=	screem
 PORTVERSION= 	0.2.1
 CATEGORIES=	www
-MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/screem/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.screem.org/src/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 

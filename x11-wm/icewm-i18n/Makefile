@@ -2,14 +2,15 @@
 # Date created:		2 Oct 1999
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/icewm-i18n/Makefile,v 1.1.1.1 2000/06/06 06:07:13 nakai Exp $
 #
 
 PORTNAME=	icewm-i18n
 PORTVERSION=	1.0.3
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://download.sourceforge.net/icewm/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/icewm/
+MASTER_SITE_SUBDIR=	icewm
 DISTNAME=	icewm-${PORTVERSION}
 EXTRACT_SUFX=	.src.tar.gz
 

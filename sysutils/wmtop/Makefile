@@ -2,12 +2,13 @@
 # Date created:		07 May 2000
 # Whom:			Dan Piponi <wmtop@tanelorn.demon.co.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wmtop/Makefile,v 1.1 2000/05/07 21:06:08 jedgar Exp $
 
 PORTNAME=	wmtop
 PORTVERSION=	0.81
 CATEGORIES=	sysutils
-MASTER_SITES=	http://wmtop.sourceforge.net/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	wmtop@tanelorn.demon.co.uk
 

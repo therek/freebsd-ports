@@ -2,13 +2,14 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.30 2000/06/04 22:36:26 will Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.31 2000/06/09 23:49:42 will Exp $
 #
 
 PORTNAME=	netpbm
 PORTVERSION=	9.4
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.sourceforge.net/netpbm/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org

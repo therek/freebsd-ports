@@ -2,12 +2,13 @@
 # Date created:        10 March 2000
 # Whom:                Andrey Novikov <andrey@novikov.com>
 #
-# $FreeBSD: ports/net/kxicq/Makefile,v 1.1 2000/04/23 06:08:24 will Exp $
+# $FreeBSD: ports/net/kxicq/Makefile,v 1.2 2000/04/30 20:55:38 steve Exp $
 
 PORTNAME=	kxicq
 PORTVERSION=	0.3.97b
 CATEGORIES=	net kde
-MASTER_SITES=	http://download.sourceforge.net/kxicq/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-03132000
 
 MAINTAINER=	andrey@novikov.com

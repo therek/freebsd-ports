@@ -2,14 +2,14 @@
 # Date created:				Sun Apr 16 14:19:19 PDT 2000
 # Whom:					adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/news/krn/Makefile,v 1.1 2000/06/09 17:38:56 will Exp $
+# $FreeBSD: ports/news/krn/Makefile,v 1.2 2000/06/10 17:08:23 alex Exp $
 #
 
 PORTNAME=	krn
 PORTVERSION=	0.6.11
 CATEGORIES=	news kde
-MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/krn/ \
-		http://download.sourceforge.net/krn/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	adsharma@sharmas.dhs.org
 

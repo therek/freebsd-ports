@@ -2,15 +2,16 @@
 # Date created:        16 April 1999
 # Whom:                Doug Ambrisko <ambrisko@whistle.com>
 #
-# $FreeBSD: ports/net/etherboot/Makefile,v 1.10 2000/04/09 18:11:10 cpiazza Exp $
+# $FreeBSD: ports/net/etherboot/Makefile,v 1.11 2000/05/29 03:18:36 steve Exp $
 #
 
 PORTNAME=	etherboot
 PORTVERSION=	4.6.1
 CATEGORIES=	net
-MASTER_SITES=	http://etherboot.sourceforge.net/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.us.kernel.org/pub/linux/devel/gcc/ \
 		http://www.ambrisko.com/doug/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${DISTNAME}.tar.gz ${BINUTILS_VER}.tar.gz
 
 MAINTAINER=	ambrisko@whistle.com

@@ -2,13 +2,14 @@
 # Date created:				17 April 2000
 # Whom:					Maxim Sobolev
 #
-# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.1.1.1 2000/06/07 16:14:46 sobomax Exp $
+# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.2 2000/06/08 11:09:07 sobomax Exp $
 #
 
 PORTNAME=		basiliskII
 PORTVERSION=		0.8.1
 CATEGORIES=		emulators
-MASTER_SITES=		http://download.sourceforge.net/basilisk/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	basilisk
 DISTNAME=		BasiliskII_src_30012000
 
 MAINTAINER=		sobomax@FreeBSD.org

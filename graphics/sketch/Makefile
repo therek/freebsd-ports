@@ -2,13 +2,14 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.19 2000/04/28 09:36:00 tg Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.20 2000/05/11 09:31:43 tg Exp $
 #
 
 PORTNAME=	sketch
 PORTVERSION=	0.6.7
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.sourceforge.net/sketch/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -2,13 +2,13 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.6 2000/04/11 21:27:19 mharo Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.7 2000/05/19 23:50:15 will Exp $
 
 PORTNAME=	cervisia
 PORTVERSION=	0.6.0
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/cervisia/ \
-		http://download.sourceforge.net/cervisia/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 

@@ -2,13 +2,14 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.1.1.1 2000/05/23 09:47:27 sobomax Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.2 2000/05/29 07:11:59 sobomax Exp $
 #
 
 PORTNAME=		extace
 PORTVERSION=		1.2.23
 CATEGORIES=		audio
-MASTER_SITES=		http://download.sourceforge.net/eXtace/
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	eXtace
 
 MAINTAINER=		sobomax@FreeBSD.org
 

@@ -2,14 +2,15 @@
 # Date created:				01 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/textproc/code2html/Makefile,v 1.9 2000/04/01 12:32:06 jedgar Exp $
+# $FreeBSD: ports/textproc/code2html/Makefile,v 1.10 2000/04/09 21:52:15 cpiazza Exp $
 #
 
 PORTNAME=	code2html
 PORTVERSION= 	0.8.9a
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://code2html.sourceforge.net/pub/code2html/all/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.cosy.sbg.ac.at/~ppalfrad/code2html/all/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	jedgar@FreeBSD.org
 

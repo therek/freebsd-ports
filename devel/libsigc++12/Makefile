@@ -2,13 +2,14 @@
 # Date created:        27 January 2000
 # Whom:                Joe Lu <JoeLu@JoeLu.m8.ntu.edu.tw>
 #
-# $FreeBSD: ports/devel/libsigc++/Makefile,v 1.2 2000/04/11 21:28:47 mharo Exp $
+# $FreeBSD: ports/devel/libsigc++/Makefile,v 1.3 2000/04/29 23:36:47 steve Exp $
 #
 
 PORTNAME=	libsigc++
 PORTVERSION=	1.0.0
 CATEGORIES=	devel
-MASTER_SITES=	http://download.sourceforge.net/libsigc/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	libsigc
 
 MAINTAINER=	JoeLu@JoeLu.m8.ntu.edu.tw
 

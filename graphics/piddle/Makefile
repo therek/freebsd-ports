@@ -2,13 +2,14 @@
 # Date created:				29 Feb 2000
 # Whom:					dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.2 2000/04/14 10:47:00 asami Exp $
+# $FreeBSD: ports/graphics/piddle/Makefile,v 1.3 2000/05/22 10:26:31 will Exp $
 #
 
 PORTNAME=	piddle
 PORTVERSION=	1.0b1
 CATEGORIES=	graphics python
-MASTER_SITES=	http://download.sourceforge.net/piddle/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-${PORTVERSION}-5
 EXTRACT_SUFX=	.tgz
 

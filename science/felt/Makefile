@@ -2,15 +2,16 @@
 # Date created:		19 October 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/felt/Makefile,v 1.16 2000/04/08 23:19:58 mharo Exp $
+# $FreeBSD: ports/cad/felt/Makefile,v 1.17 2000/05/29 03:06:22 steve Exp $
 #
 
 PORTNAME=	felt
 PORTVERSION=	3.05
 CATEGORIES=	cad
-MASTER_SITES=	ftp://felt.sourceforge.net/pub/FElt/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://symphony.clarku.edu/atkinson/felt/Binaries/ \
 		ftp://ftp.isd.uni-stuttgart.de/pub/src/FEM/FElt/
+MASTER_SITE_SUBDIR=	FElt
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	giffunip@asme.org

@@ -2,13 +2,14 @@
 # Date created:				20 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/mail/grepmail/Makefile,v 1.10 2000/05/16 14:09:28 jedgar Exp $
+# $FreeBSD: ports/mail/grepmail/Makefile,v 1.11 2000/05/30 13:53:44 jedgar Exp $
 #
 
 PORTNAME=	grepmail
 PORTVERSION= 	4.40
 CATEGORIES=	mail
-MASTER_SITES=	http://download.sourceforge.net/grepmail/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Date/Parse.pm:${PORTSDIR}/devel/p5-TimeDate
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Date/Parse.pm:${PORTSDIR}/devel/p5-TimeDate

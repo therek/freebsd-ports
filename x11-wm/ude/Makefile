@@ -2,14 +2,15 @@
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.3 2000/03/25 18:56:40 will Exp $
+# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.4 2000/04/10 19:50:25 cpiazza Exp $
 #
 
 PORTNAME=	ude
 PORTVERSION= 	0.2.7.1
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/udeproject/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ude.the-coffeeshop.dk/pub/UDE/
+MASTER_SITE_SUBDIR=	udeproject
 DISTNAME=	${PORTNAME}-0.2.7-BETA
 
 MAINTAINER=	will@FreeBSD.org

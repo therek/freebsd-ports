@@ -2,17 +2,16 @@
 # Date created:				15 Apr 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/amcl/Makefile,v 1.1 2000/04/16 04:16:46 will Exp $
 #
 
 PORTNAME=		amcl
 PORTVERSION=		0.7.0
 CATEGORIES=		net
-MASTER_SITES=		ftp://ftp.sourceforge.net/pub/sourceforge/amcl/ \
+MASTER_SITES=		${MASTER_SITE_SOURCEFORGE} \
 			http://www.localhost.nu/apps/amcl/tars/ \
-			http://amcl.alliances.org/tars/ \
-			${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	games/muds
+			http://amcl.alliances.org/tars/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=		${PORTNAME}-${PORTVERSION}pl1
 
 MAINTAINER=		will@FreeBSD.org

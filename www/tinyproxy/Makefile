@@ -2,13 +2,14 @@
 # Date created:		01 Jul 1999
 # Whom:			Mitsuru Yoshida <mitsuru@riken.go.jp>
 #
-# $FreeBSD: ports/www/tinyproxy/Makefile,v 1.5 2000/04/10 00:07:00 cpiazza Exp $
+# $FreeBSD: ports/www/tinyproxy/Makefile,v 1.6 2000/04/25 04:48:49 will Exp $
 #
 
 PORTNAME=	tinyproxy
 PORTVERSION=	1.3.3
 CATEGORIES=	www
-MASTER_SITES=	http://download.sourceforge.net/tinyproxy/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	mitsuru@riken.go.jp
 

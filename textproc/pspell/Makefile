@@ -2,13 +2,14 @@
 # Date created:				13th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/pspell/Makefile,v 1.1 2000/06/13 23:01:16 ade Exp $
 #
 
 PORTNAME=	pspell
 PORTVERSION= 	0.11.0.1
 CATEGORIES=	textproc
-MASTER_SITES=	http://download.sourceforge.net/pspell/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-.11.0.1
 
 MAINTAINER=	ade@FreeBSD.org

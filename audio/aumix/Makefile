@@ -2,18 +2,16 @@
 # Date created:        21 May 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aumix/Makefile,v 1.21 2000/04/17 00:17:01 reg Exp $
+# $FreeBSD: ports/audio/aumix/Makefile,v 1.22 2000/04/19 03:25:22 cpiazza Exp $
 #
 
 PORTNAME=	aumix
 PORTVERSION=	2.6
 CATEGORIES=	audio
-MASTER_SITES=	http://jpj.net/~trevor/aumix/ \
-		http://download.sourceforge.net/aumix/ \
-		http://jpj.net/~trevor/aumix/old/ \
-		ftp://aumix.sourceforge.net/pub/aumix/stable/ \
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	apps/sound/mixers
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		http://jpj.net/~trevor/aumix/ \
+		http://jpj.net/~trevor/aumix/old/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	cpiazza@FreeBSD.org
 

@@ -2,14 +2,15 @@
 # Date created:		28 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.7 2000/04/08 06:01:51 itojun Exp $
+# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.8 2000/04/13 20:00:41 cpiazza Exp $
 #
 
 PORTNAME=	rblcheck
 PORTVERSION= 	1.4
 CATEGORIES=	mail
-MASTER_SITES=	http://download.sourceforge.net/rblcheck/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.xnet.com/%7Eemarshal/rblcheck/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	itojun@itojun.org
 HOMEPAGE=	http://rblcheck.sourceforge.net/

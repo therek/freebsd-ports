@@ -2,13 +2,14 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.10 2000/05/17 16:30:49 ade Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.11 2000/06/01 16:25:44 ade Exp $
 #
 
 PORTNAME=	sodipodi
 PORTVERSION=	0.18
 CATEGORIES=	graphics gnome
-MASTER_SITES=	http://download.sourceforge.net/sodipodi/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 

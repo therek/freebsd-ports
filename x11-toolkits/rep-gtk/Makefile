@@ -2,13 +2,14 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.11 2000/05/17 16:36:15 ade Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.12 2000/06/01 16:25:44 ade Exp $
 #
 
 PORTNAME=	rep-gtk
 PORTVERSION=	0.10
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://rep-gtk.sourceforge.net/pub/rep-gtk/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 

@@ -2,13 +2,14 @@
 # Date created:				18th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/glife/Makefile,v 1.1 2000/05/18 15:19:42 ade Exp $
+# $FreeBSD: ports/games/glife/Makefile,v 1.2 2000/06/01 16:25:20 ade Exp $
 #
 
 PORTNAME=	glife
 PORTVERSION=	0.2.1
 CATEGORIES=	games gnome
-MASTER_SITES=	http://download.sourceforge.net/glife/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	gLife-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org

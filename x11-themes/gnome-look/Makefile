@@ -2,13 +2,14 @@
 # Date Created:				10 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/x11-toolkits/gnome-look/Makefile,v 1.1.1.1 2000/06/13 14:03:40 sobomax Exp $
 #
 
 PORTNAME=	gnome-look
 PORTVERSION=	0.1.3
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://download.sourceforge.net/gnome-look/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 

@@ -2,13 +2,14 @@
 # Date created:		25 December 1999
 # Whom:			Russell L. Carter <rcarter@pinyon.org>
 #
-# $FreeBSD: ports/databases/metakit/Makefile,v 1.1.1.1 2000/01/05 03:41:18 jedgar Exp $
+# $FreeBSD: ports/databases/metakit/Makefile,v 1.2 2000/04/08 22:48:33 mharo Exp $
 #
 
 PORTNAME=	metakit
 PORTVERSION=	2.0
 CATEGORIES=	databases
-MASTER_SITES=	http://download.sourceforge.net/metakit/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	rcarter@pinyon.org
 

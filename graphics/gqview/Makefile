@@ -2,13 +2,14 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.21 2000/04/18 00:24:27 mharo Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.22 2000/04/22 03:38:45 will Exp $
 #
 
 PORTNAME=	gqview
 PORTVERSION=	0.8.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://download.sourceforge.net/gqview/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
 

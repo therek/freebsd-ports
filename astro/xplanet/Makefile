@@ -2,14 +2,15 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.7 2000/05/19 23:04:34 will Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.8 2000/05/28 03:42:48 steve Exp $
 #
 
 PORTNAME=	xplanet
 PORTVERSION=	0.60
 CATEGORIES=	astro x11
-MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/xplanet/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.radcyberzine.com/xglobe/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} depths_800.jpg
 
 MAINTAINER=	will@FreeBSD.org
