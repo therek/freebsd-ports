@@ -3,7 +3,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.4 1999/08/26 00:58:00 cpiazza Exp $
+# $FreeBSD: ports/editors/fine/Makefile,v 1.5 1999/09/06 05:22:40 cpiazza Exp $
 #
 
 DISTNAME=	fine
@@ -18,7 +18,11 @@ USE_GMAKE=	yes
 USE_QT=		yes
 WRKSRC=		${WRKDIR}/fine
 
-MAKE_ENV=	CXX="${CXX}" CC="${CC}"
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400004
+BROKEN=		'This program needs NEWGCC but links with QT, which is built with an old version.'
+.endif
 
 do-install:
 	@${MKDIR} ${PREFIX}/share/fine
@@ -28,4 +32,4 @@ do-install:
 .endfor
 	${INSTALL_PROGRAM} ${WRKSRC}/fine ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
