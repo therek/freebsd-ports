@@ -2,12 +2,11 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/www/mod_python/Makefile,v 1.7 2001/03/23 00:27:40 jeh Exp $
+# $FreeBSD: ports/www/mod_python/Makefile,v 1.8 2001/05/11 12:38:46 jeh Exp $
 #
 
 PORTNAME=	mod_python
-PORTVERSION=	2.7.2
-PORTREVISION=	2
+PORTVERSION=	2.7.3
 CATEGORIES=	www python
 MASTER_SITES=	http://www.python.org/ftp/python/${PYTHON_VERSION:S/python//g}/ \
 		http://www.modpython.org/dist/ \
