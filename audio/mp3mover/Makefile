@@ -3,11 +3,11 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mp3mover/Makefile,v 1.1 2001/04/18 11:52:37 ijliao Exp $
 #
 
 PORTNAME=	mp3mover
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	audio perl5
 MASTER_SITES=	http://www.doc.ic.ac.uk/~jsm00/scripts/
 
