@@ -2,13 +2,13 @@
 # Date created:		29 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/punkbuster-data/Makefile,v 1.3 2001/09/06 04:00:24 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	punkbuster
 PORTVERSION=	0.1157.0
 CATEGORIES=	net linux
-MASTER_SITES=	http://www.punkbuster.com/downloads/
+MASTER_SITES=	http://www.evenbalance.com/downloads/
 PKGNAMESUFFIX=	-data
 EXTRACT_SUFX=
 DISTFILES=	cvar.cfg pbclhl.dat pbclhl_

@@ -2,13 +2,13 @@
 # Date created:		29 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/punkbuster/Makefile,v 1.2 2001/09/01 21:53:47 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	punkbuster
 PORTVERSION=	0.0.956
 CATEGORIES=	net linux
-MASTER_SITES=	http://www.punkbuster.com/downloads/
+MASTER_SITES=	http://www.evenbalance.com/downloads/
 DISTNAME=	pbsv${PORTVERSION:E}
 DIST_SUBDIR=	punkbuster
 
