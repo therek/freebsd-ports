@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/net/zebra/scripts/configure,v 1.4 2004/02/01 23:27:20 sumikawa Exp $
+# $FreeBSD: ports/net/zebra/scripts/configure,v 1.5 2004/03/04 19:52:20 pav Exp $
 
 # configure - zebra compile time option configurator
 # by Andreas Klemm <andreas@FreeBSD.org>
@@ -37,8 +37,8 @@ case $retval in
 		;;
 esac
 
-/bin/mkdir -p ${WRKDIRPREFIX}${CURDIR}
-exec > ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
+/bin/mkdir -p ${WRKDIR}
+exec > ${WRKDIR}/Makefile.inc
 
 while [ "$1" ]; do
     case $1 in
