@@ -2,11 +2,11 @@
 # Date created:			  31 March 2001
 # Whom:				  Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/ftp/oftpd/Makefile,v 1.2 2001/04/10 22:16:56 dirk Exp $
+# $FreeBSD: ports/ftp/oftpd/Makefile,v 1.3 2001/04/24 13:12:30 kevlo Exp $
 #
 
 PORTNAME=	oftpd
-PORTVERSION=	0.3.5
+PORTVERSION=	0.3.6
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.time-travellers.org/oftpd/ \
 		http://www.freenix.no/~anders/
