@@ -2,7 +2,7 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.21 2000/06/14 13:21:22 sobomax Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.22 2000/08/18 11:55:50 tg Exp $
 #
 
 PORTNAME=	sketch
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
 RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter \
 		${LOCALBASE}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging \
+		${LOCALBASE}/lib/python1.5/site-packages/reportlab/__init__.py:${PORTSDIR}/print/py-reportlab \
 		${LOCALBASE}/lib/python1.5/site-packages/xml/__init__.py:${PORTSDIR}/textproc/py-xml
 
 SKETCHDIR=	${PREFIX}/share/sketch
