@@ -2,21 +2,21 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.10 2000/04/14 18:40:21 knu Exp $
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.11 2000/08/03 09:25:15 asami Exp $
 #
 
 PORTNAME=	xklock
 PORTVERSION=	2.7.1
 CATEGORIES=	japanese x11
-MASTER_SITES=	ftp://ftp.tk.mesh.ad.jp/pub/Linux/JE-sources/X/  \
-		ftp://ftp.biol.tsukuba.ac.jp/pub/X/clients/  \
-		ftp://ftp.kagoshima-u.ac.jp/pub1/PC/linux-j/JE-sources/X/  \
-		ftp://ftp.hitachi.co.jp/pub/linux/colias/pub/linux/JE-0.9.6/sources/X/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	trevor
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	${DISTNAME}+lx.diff.gz
 PATCH_DIST_STRIP=	-p1
+
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
