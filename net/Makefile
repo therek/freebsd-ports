@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.618 2001/09/21 05:56:36 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.619 2001/09/22 15:58:10 tobez Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -96,6 +96,7 @@
     SUBDIR += firetalk
     SUBDIR += flow-tools
     SUBDIR += flowscan
+    SUBDIR += forg
     SUBDIR += fping
     SUBDIR += freebsd-uucp
     SUBDIR += freeradius-devel
