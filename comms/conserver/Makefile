@@ -3,7 +3,7 @@
 # Date created:         22 November 1997
 # Whom:                 Peter Wemm <peter@netplex.com.au>
 #
-# $FreeBSD: ports/comms/conserver/Makefile,v 1.17 2001/02/12 21:11:09 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	conserver
@@ -15,7 +15,9 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	obrien@FreeBSD.org
 
 BUILD_DEPENDS=	makeme:${PORTSDIR}/devel/msrc0 \
-		mkcmd:${PORTSDIR}/devel/mkcmd
+		mkcmd:${PORTSDIR}/devel/mkcmd \
+		perl:${PORTSDIR}/lang/perl5
+
 
 MAN5=		conserver.cf.5
 MAN8=		autologin.8 console.8 conserver.8

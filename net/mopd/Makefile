@@ -3,7 +3,7 @@
 # Date created:			  Sun Nov 14, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/mopd/Makefile,v 1.5 2000/03/22 00:27:12 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mopd
@@ -19,6 +19,8 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 .endif
 
 MAINTAINER=	obrien@FreeBSD.org
+
+BUILD_DEPENDS=	perl:${PORTSDIR}/lang/perl5
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 #	MANDIR is concetenated to DESTDIR which all forms the man install dir...
