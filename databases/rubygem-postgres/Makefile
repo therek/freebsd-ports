@@ -2,13 +2,13 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.9 2000/09/26 08:02:00 knu Exp $
+# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.10 2001/02/07 07:34:05 knu Exp $
 #
 
 PORTNAME=	postgres
 PORTVERSION=	0.6.2
 CATEGORIES=	databases ruby
-MASTER_SITES=	http://www.jp.postgresql.org/interfaces/ruby/archive/
+MASTER_SITES=	http://webclub.kcom.ne.jp/mb/noborus/ruby/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
