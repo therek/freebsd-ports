@@ -2,14 +2,14 @@
 # Date created:			14 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/eruby/Makefile,v 1.6 2000/10/09 10:33:40 knu Exp $
+# $FreeBSD: ports/textproc/eruby/Makefile,v 1.7 2000/10/20 20:20:54 knu Exp $
 #
 
 PORTNAME=	eruby
 PORTVERSION=	${VERSION}
 PORTREVISION=	1
 CATEGORIES=	textproc www ruby
-MASTER_SITES=	http://www.ruby-lang.org/~shugo/eruby/
+MASTER_SITES=	http://www.modruby.net/archive/
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
