@@ -2,7 +2,7 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.32 2000/06/16 21:50:04 asami Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.33 2000/07/19 14:22:18 taoka Exp $
 #
 
 PORTNAME=	libgtop
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	stable/sources/libgtop
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		guile.6:${PORTSDIR}/lang/guile
+		guile.9:${PORTSDIR}/lang/guile
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
@@ -26,6 +26,13 @@ INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+post-extract:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 post-install:
 	install-info --section="Programming \& development tools" \

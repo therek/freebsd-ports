@@ -2,7 +2,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.20 2000/07/11 22:02:20 ade Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.21 2000/07/11 22:03:49 ade Exp $
 #
 
 PORTNAME=	gnomeutils
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
 		gtop.1:${PORTSDIR}/devel/libgtop \
-		guile.6:${PORTSDIR}/lang/guile \
+		guile.9:${PORTSDIR}/lang/guile \
 		glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
@@ -30,5 +30,12 @@ CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+post-extract:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>

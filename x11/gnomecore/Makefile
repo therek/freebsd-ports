@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.41 2000/06/16 10:37:56 sobomax Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.42 2000/06/16 21:52:11 asami Exp $
 #
 
 PORTNAME=	gnomecore
@@ -16,7 +16,8 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
-		xml.5:${PORTSDIR}/textproc/libxml
+		xml.5:${PORTSDIR}/textproc/libxml \
+		bz2.1:${PORTSDIR}/archivers/bzip2
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
@@ -33,5 +34,12 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		gnome-session.1 gnome-wm.1 save-session.1
 MAN5=		default.session.5
+
+post-extract:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
