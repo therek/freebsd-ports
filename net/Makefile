@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.459 2001/02/12 11:02:47 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.460 2001/02/12 19:44:36 joe Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -128,7 +128,6 @@
     SUBDIR += lambdamoo
     SUBDIR += ldapmodule
     SUBDIR += ldapsdk
-    SUBDIR += libetherx
     SUBDIR += libicq
     SUBDIR += libjabber
     SUBDIR += libnet
