@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/print/preview-latex/pkg-plist,v 1.10 2004/07/25 14:47:53 hrs Exp $
+@comment $FreeBSD: ports/print/preview-latex/pkg-plist,v 1.11 2004/12/28 18:20:01 hrs Exp $
 %%TEXMFLOCAL%%/tex/latex/preview/prauctex.cfg
 %%TEXMFLOCAL%%/tex/latex/preview/prauctex.def
 %%TEXMFLOCAL%%/tex/latex/preview/prcounters.def
@@ -9,7 +9,6 @@
 %%TEXMFLOCAL%%/tex/latex/preview/prshowlabels.def
 %%TEXMFLOCAL%%/tex/latex/preview/prtightpage.def
 %%TEXMFLOCAL%%/tex/latex/preview/prtracingall.def
-@dirrm %%TEXMFLOCAL%%/tex/latex/preview
 %%TEXMFLOCAL%%/doc/latex/styles/preview.dvi
 @dirrm %%TEXMFLOCAL%%/doc/latex/styles
 @exec %%MKTEXLSR%%
