@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.122 2001/05/08 11:13:59 knu Exp $
+# $FreeBSD: ports/math/Makefile,v 1.123 2001/05/08 11:23:35 knu Exp $
 #
 
     SUBDIR += GiNaC
@@ -33,6 +33,7 @@
     SUBDIR += gri
     SUBDIR += grpn
     SUBDIR += gsl
+    SUBDIR += guppi
     SUBDIR += hexcalc
     SUBDIR += lapack
     SUBDIR += libneural
