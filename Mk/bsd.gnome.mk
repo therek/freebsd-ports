@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.69 2004/05/22 21:09:11 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.70 2004/06/07 20:42:02 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -578,10 +578,12 @@ GNOME_PRE_PATCH+=	; ${${component}_PRE_PATCH}
 . endfor
 .endif
 
-.if defined(GNOME_PRE_PATCH) && !target(pre-patch)
+.if defined(GNOME_PRE_PATCH)
 USE_REINPLACE=	yes
 
-pre-patch:
+pre-patch: gnome-pre-patch
+
+gnome-pre-patch:
 	@${GNOME_PRE_PATCH:C/^;//1}
 .endif
 
