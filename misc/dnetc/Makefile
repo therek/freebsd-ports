@@ -3,7 +3,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.2 2000/01/04 22:05:07 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.3 2000/01/07 16:40:06 asami Exp $
 #
 
 DISTNAME=       dnetc
@@ -57,7 +57,7 @@ do-install:
 	${INSTALL} -c -m ${SBINMODE} -o ${CLIENTUID} -g ${CLIENTGID} ${WRKSRC}/dnetc ${BINDIR}
 
 	${SED} s#CHANGETHIS#${BINDIR}# < ${FILESDIR}/dnetc.sh > ${WRKSRC}/dnetc.sh.pathnames
-	${INSTALL_PROGRAM} ${WRKSRC}/dnetc.sh.pathnames ${LIBDIR}/dnetc.sh
+	${INSTALL} -c -m ${SBINMODE} ${WRKSRC}/dnetc.sh.pathnames ${LIBDIR}/dnetc.sh
 
 	${INSTALL_DATA} ${FILESDIR}/INFO ${BINDIR}
 
