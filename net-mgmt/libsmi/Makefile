@@ -2,11 +2,11 @@
 # Date created:			Tue Jan 27 2000
 # Whom:				Marcin Cieslak <saper@system.pl>
 #
-# $FreeBSD: ports/net/libsmi/Makefile,v 1.4 2000/06/16 21:51:47 asami Exp $
+# $FreeBSD: ports/net/libsmi/Makefile,v 1.5 2000/11/03 17:03:42 fenner Exp $
 #
 
 PORTNAME=	libsmi
-PORTVERSION=	0.2.6
+PORTVERSION=	0.2.13
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/libsmi/
 
@@ -16,7 +16,7 @@ MAINTAINER=	saper@system.pl
 
 #USE_X_PREFIX=	yes
 
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 MIBDIR=		${PREFIX}/share/smi/mibs
