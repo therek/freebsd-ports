@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.24 1999/08/25 05:16:15 obrien Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.25 1999/10/01 17:54:52 cpiazza Exp $
 #
 
     SUBDIR += aish
@@ -15,6 +15,7 @@
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
     SUBDIR += recode
+    SUBDIR += tcs
     SUBDIR += trans
     SUBDIR += tuc
     SUBDIR += unix2dos
