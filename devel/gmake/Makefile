@@ -2,11 +2,11 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.26 1999/12/01 14:17:06 jseger Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.27 2000/04/11 21:28:08 mharo Exp $
 #
 
 PORTNAME=	gmake
-PORTVERSION=	3.78.1
+PORTVERSION=	3.79
 CATEGORIES=	devel
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	make
