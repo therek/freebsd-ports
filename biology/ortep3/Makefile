@@ -2,7 +2,7 @@
 # Date created:		1999-05-08
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/biology/ortep3/Makefile,v 1.5 2000/06/11 15:13:49 alex Exp $
+# $FreeBSD: ports/biology/ortep3/Makefile,v 1.6 2000/06/20 10:04:12 alex Exp $
 #
 
 PORTNAME=	ortep3
@@ -14,19 +14,13 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=alex
 DISTFILES=	ortep-1.0.3.tar.Z ortep-1.0.3.f
 DISTNAME=	ortep
-EXTRACT_ONLY=	ortep.tar.Z
+EXTRACT_ONLY=	ortep-1.0.3.tar.Z
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
 
 LIB_DEPENDS=	pgplot.5:${PORTSDIR}/graphics/pgplot
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
-
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} >= 400002 && ${OSVERSION} < 400018
-BROKEN=	doesn\'t build with new f77 compiler
-.endif
 
 post-extract:
 	${MV} ${WRKSRC}/ortep.f ${WRKSRC}/ortep.f-1.0
@@ -56,4 +50,4 @@ do-install:
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README.1st \
 	      ${PREFIX}/share/doc/ortep3
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
