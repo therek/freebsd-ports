@@ -2,7 +2,7 @@
 # Date created:		6 October 1997
 # Whom:			WATANABE junya <junya-w@remus.dti.ne.jp>
 #
-# $FreeBSD: ports/japanese/mtools/Makefile,v 1.5 2000/04/11 14:15:12 knu Exp $
+# $FreeBSD: ports/japanese/mtools/Makefile,v 1.6 2000/04/30 19:15:28 steve Exp $
 #
 
 PORTNAME=	mtools
@@ -10,7 +10,7 @@ PORTVERSION=	3.9.6
 CATEGORIES=	japanese emulators
 MASTER_SITES=	ftp://ftp.tux.org/pub/knaff/mtools/  \
 		http://mtools.linux.lu/  \
-		http://people.freebsd.org/~steve/distfiles/ \
+		${MASTER_SITE_LOCAL:S^%SUBDIR%^steve^} \
 		${MASTER_SITE_PORTS_JP}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${DISTNAME}.PC98.patch.gz

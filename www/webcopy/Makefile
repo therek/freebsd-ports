@@ -2,13 +2,13 @@
 # Date created:         14 Sep 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/webcopy/Makefile,v 1.12 2000/04/10 00:07:14 cpiazza Exp $
+# $FreeBSD: ports/www/webcopy/Makefile,v 1.13 2000/04/29 23:31:51 steve Exp $
 #
 
 PORTNAME=	webcopy
 PORTVERSION=	0.98b7
 CATEGORIES=	www
-MASTER_SITES=	http://people.freebsd.org/~steve/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL:S^%SUBDIR%^steve^}
 
 MAINTAINER=	ports@FreeBSD.org
 
