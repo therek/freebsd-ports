@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.160 2001/07/19 15:55:17 markp Exp $
+# $FreeBSD: ports/print/Makefile,v 1.161 2001/07/20 09:36:50 ijliao Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -54,6 +54,7 @@
     SUBDIR += gnomeprint
     SUBDIR += gp
     SUBDIR += gsfonts
+    SUBDIR += guitartex
     SUBDIR += gv
     SUBDIR += hp2xx
     SUBDIR += html2latex
