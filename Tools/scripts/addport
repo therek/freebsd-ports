@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.25 2002/10/14 08:45:57 will Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.26 2002/11/13 15:00:00 petef Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -289,6 +289,7 @@ foreach my $thisdir (@dirs) {
 		print "\nRemember, you asked to use a commit file to read for the commit log.\n";
 		print "This means you'll get a message saying the log message was unchanged or\n";
 		print "not specified.  Just tell it to continue and it will be committed.\n\n";
+		$commitfile = "-F $tmpdir/commitfile";
 	}
 
 	print "We're ready to commit.\n";
@@ -339,7 +340,7 @@ foreach my $thisdir (@dirs) {
 
 	# commit the actual port.
 	chdir "$tmpdir/$category" or err(1, "$tmpdir/$category");
-	system("$cvs $n ci -F $tmpdir/commitfile Makefile $portname") && errx(1, "cvs commit failed, aborting.");
+	system("$cvs $n ci $commitfile Makefile $portname") && errx(1, "cvs commit failed, aborting.");
 	if (!$nomodules && ($n ne "-n")) {
 		system("$sshmod env CVSROOT=$repo $perl /usr/local/bin/modulesupdate $module ports/$category/$portname") && errx(1, "adding port to modules failed, aborting.");
 	}
