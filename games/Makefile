@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.305 2000/10/06 09:09:32 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.306 2000/10/10 03:44:26 jeh Exp $
 #
 
     SUBDIR += 3dc
@@ -91,6 +91,7 @@
     SUBDIR += heroes
     SUBDIR += hex
     SUBDIR += icbm3d
+    SUBDIR += icebreaker
     SUBDIR += ifm
     SUBDIR += imaze
     SUBDIR += inform
