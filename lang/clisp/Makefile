@@ -2,7 +2,7 @@
 # Date created:         Feb  5 2000
 # Whom:                 Jeff Brown <jabrown@caida.org>
 #
-# $FreeBSD: ports/lang/clisp/Makefile,v 1.6 2001/06/01 06:04:57 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clisp
@@ -30,7 +30,7 @@ BUILD_DIRNAME=${CONFIGURE_TARGET}
 
 # These came from clisp-2.27's "configure" on my 4.1.1-R system.
 MAKEMAKE_ARGS=--prefix=${PREFIX} --with-readline --with-gettext \
-	--with-dynamic-ffi
+	--with-dynamic-ffi --with-module=regexp --with-export-syscalls
 
 # The post-install target uses these to fix permissions.
 DATA_PATHS=${PREFIX}/lib/clisp ${PREFIX}/share/doc/clisp \
