@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.62 2001/07/03 11:54:13 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.63 2001/07/05 15:34:18 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -65,7 +65,7 @@ MASTER_SITE_GNOME+=	\
 
 MASTER_SITE_GNU+=	\
 	ftp://ftp.gnu.org/gnu/%SUBDIR%/ \
-	ftp://ftp.digital.com/pub/GNU/%SUBDIR%/ \
+	ftp://gatekeeper.dec.com/pub/GNU/%SUBDIR%/ \
 	ftp://ftp.uu.net/archive/systems/gnu/%SUBDIR%/ \
 	ftp://ftp.de.uu.net/pub/gnu/%SUBDIR%/ \
 	ftp://ftp.sourceforge.net/pub/mirrors/gnu/%SUBDIR%/ \
@@ -133,7 +133,7 @@ MASTER_SITE_NETBSD+=	\
 	ftp://ftp.chg.ru/pub/NetBSD/packages/distfiles/%SUBDIR%/
 
 MASTER_SITE_PERL_CPAN+=	\
-	ftp://ftp.digital.com/pub/plan/perl/CPAN/modules/by-module/%SUBDIR%/ \
+	ftp://gatekeeper.dec.com/pub/plan/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.sourceforge.net/pub/mirrors/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
