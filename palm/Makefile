@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.22 2000/06/14 06:18:02 knu Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.23 2000/10/12 12:18:58 jeh Exp $
 #
 
     SUBDIR += coldsync
@@ -23,6 +23,7 @@
     SUBDIR += prc-tools-binutils
     SUBDIR += prc-tools-gcc
     SUBDIR += syncal
+    SUBDIR += txt2pdbdoc
     SUBDIR += xcopilot
 
 .include <bsd.port.subdir.mk>
