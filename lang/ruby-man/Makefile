@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 17 17:10:02 CEST 2000
 # Whom:				olgeni@uli.it
 #
-# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.2 2000/09/05 01:50:35 steve Exp $
+# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.3 2000/09/05 12:44:12 knu Exp $
 #
 
 PORTNAME=	ruby-man
@@ -16,17 +16,18 @@ MAINTAINER=	olgeni@uli.it
 
 DIST_SUBDIR=	ruby
 
-PLIST_SUB=	RUBY_VER="${RUBY_VER}" LANGSUFFIX="${LANGSUFFIX}"
+PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
-RUBY_VER?=	1.4
-WRKSRC=		${WRKDIR}/${PORTNAME}-${RUBY_VER}${LANGSUFFIX}
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}${LANGSUFFIX}
 
 NO_BUILD=	yes
 
-DOCDIR=		${PREFIX}/share/doc/ruby/ruby-man-${RUBY_VER}${LANGSUFFIX}
+DOCDIR=		${RUBY_DOCDIR}/ruby-man${LANGSUFFIX}
 
 do-install:
 	${MKDIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/*.html ${DOCDIR}
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.ruby.mk"
+.include <bsd.port.post.mk>
