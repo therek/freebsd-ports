@@ -2,7 +2,7 @@
 # Date created:				22 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.13 2000/06/16 08:47:07 sobomax Exp $
+# $FreeBSD: ports/audio/libaudiofile/Makefile,v 1.14 2000/06/16 21:50:20 asami Exp $
 #
 
 PORTNAME=	libaudiofile
@@ -16,7 +16,5 @@ MAINTAINER=	vanilla@FreeBSD.org
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-
-MAKE_ARGS=	"-E CFLAGS"
 
 .include <bsd.port.mk>
