@@ -2,12 +2,11 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fox/Makefile,v 1.8 2001/09/11 03:32:41 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fox
 PORTVERSION=	${FXRUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	fxruby
@@ -22,7 +21,7 @@ LIB_DEPENDS=	FOX.1:${PORTSDIR}/x11-toolkits/fox \
 		png.5:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
-FOX_VERSION=	0.99.174
+FOX_VERSION=	0.99.189
 #FXRUBY_REVISION=	
 .if defined(FXRUBY_REVISION) && !empty(FXRUBY_REVISION)
 FXRUBY_PORTVERSION=	${FOX_VERSION}.${FXRUBY_REVISION}
@@ -34,6 +33,7 @@ FXRUBY_DISTNAME=	FXRuby-${FOX_VERSION}
 
 USE_RUBY=	yes
 USE_RUBY_SETUP=	yes
+RUBY_SETUP=	install.rb
 
 USE_XLIB=	yes
 USE_MESA=	yes
