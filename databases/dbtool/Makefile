@@ -3,16 +3,16 @@
 # Date created:			Apr 29, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/databases/dbtool/Makefile,v 1.2 2001/07/25 15:05:08 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dbtool
-PORTVERSION=	1.3
-PORTREVISION=	2
+PORTVERSION=	1.4
+PORTREVISION=	0
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.daemon.de/scip/Apps/dbtool/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre
 
@@ -41,7 +41,7 @@ post-extract:
 .endif
 
 post-patch:
-.for file in dbtool.h engine.cc main.cc
+.for file in dbtool.cc engine.cc engine.h
 	@${PERL} -pi -e "s,stdin,input,g" ${WRKSRC}/${file}
 .endfor
 	@${PERL} -pi -e "s,==,=,g" ${WRKSRC}/configure
