@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.3 2000/08/04 01:34:26 ade Exp $
+# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.4 2000/08/04 16:11:19 ade Exp $
 #
 
 PORTNAME=	gnomedebug
@@ -18,6 +18,8 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		oaf.0:${PORTSDIR}/devel/oaf \
 		bonobo.2:${PORTSDIR}/devel/bonobo
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+
+BROKEN=		"Uses internals from devel/bonobo that are no longer present"
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
