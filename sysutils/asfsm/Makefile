@@ -2,12 +2,12 @@
 # Date created:		4 June 1999
 # Whom:				jack
 #
-# $FreeBSD: ports/sysutils/asfsm/Makefile,v 1.4 2000/04/09 19:07:08 cpiazza Exp $
+# $FreeBSD: ports/sysutils/asfsm/Makefile,v 1.5 2000/08/03 09:26:18 asami Exp $
 
 PORTNAME=	asfsm
 PORTVERSION=	1.0.p15
 CATEGORIES=	sysutils afterstep
-MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/asfsm/
+MASTER_SITES=	http://www.tigr.net/afterstep/download/asfsm/
 DISTNAME=	asfsm-1.0pre15
 
 MAINTAINER=	jack@germanium.xtalwind.net
