@@ -2,11 +2,11 @@
 # Date created:				10th Jan 2001
 # Whom:					kuriyama
 #
-# $FreeBSD: ports/sysutils/p5-Schedule-At/Makefile,v 1.1 2001/01/10 03:04:45 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Schedule-At
-PORTVERSION=	1.02
+PORTVERSION=	1.03
 CATEGORIES=	sysutils perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Schedule
