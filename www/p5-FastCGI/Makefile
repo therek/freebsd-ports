@@ -3,7 +3,7 @@
 # Date created:				October 27th 1999
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-FastCGI/Makefile,v 1.1.1.1 1999/11/26 19:36:09 steve Exp $
 #
 
 DISTNAME=	FCGI-0.48
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	FCGI
 
 MAINTAINER=	kbyanc@posi.net
 
-BUILD_DEPENDS=	${PREFIX}/lib/libfcgi.a:${PORTSDIR}/www/fcgi
+BUILD_DEPENDS=	${LOCALBASE}/lib/libfcgi.a:${PORTSDIR}/www/fcgi
 
 USE_PERL5=	YES
 

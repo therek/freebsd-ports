@@ -3,7 +3,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.13 1999/08/31 06:52:13 mharo Exp $
+# $FreeBSD: ports/www/p5-WWW-Search/Makefile,v 1.14 2000/02/27 15:27:46 steve Exp $
 #
 
 DISTNAME=	WWW-Search-2.10
@@ -14,8 +14,8 @@ MASTER_SITE_SUBDIR=	WWW
 
 MAINTAINER=	jfitz@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww \
-		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/HTML/TreeBuilder.pm:${PORTSDIR}/www/p5-HTML-Tree
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/TreeBuilder.pm:${PORTSDIR}/www/p5-HTML-Tree
 
 USE_PERL5=	YES
 
