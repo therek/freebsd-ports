@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.80 2000/08/27 23:32:00 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.81 2000/08/29 12:43:06 sobomax Exp $
 #
 
     SUBDIR += PDL
@@ -68,6 +68,7 @@
     SUBDIR += umfpack
     SUBDIR += vtk
     SUBDIR += wingz
+    SUBDIR += wingz3
     SUBDIR += wmcalc
     SUBDIR += xgfe
     SUBDIR += xgraph
