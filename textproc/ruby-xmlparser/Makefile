@@ -2,16 +2,14 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.8 2000/10/15 20:44:40 knu Exp $
+# $FreeBSD: ports/textproc/ruby-xmlparser/Makefile,v 1.9 2000/10/26 12:19:14 knu Exp $
 #
 
 PORTNAME=	xmlparser
 PORTVERSION=	0.6.1
 PORTREVISION=	1
 CATEGORIES=	textproc ruby
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www.bekkoame.ne.jp/~yoshidam/
-MASTER_SITE_SUBDIR=	knu
+MASTER_SITES=	http://www.yoshidam.net/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 
