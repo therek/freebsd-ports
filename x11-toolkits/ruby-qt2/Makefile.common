@@ -1,7 +1,7 @@
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.4 2001/03/28 12:33:16 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile.common,v 1.5 2001/04/01 18:07:11 knu Exp $
 
 RUBY_QT2_VERSION=	0.12
-RUBY_QT2_PORTVERSION=	${RUBY_QT2_VERSION}a.1
+RUBY_QT2_PORTVERSION=	${RUBY_QT2_VERSION}a.2
 RUBY_QT2_MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 RUBY_QT2_DISTNAME=	ruby-qt2-${RUBY_QT2_VERSION}
 
@@ -15,3 +15,8 @@ RUBY_QT2_CONFIGURE_ARGS= \
 			--with-qt2=qtgl
 
 MD5_FILE=		${RUBY_QT2_PORTDIR}/distinfo
+
+pre-build: pre-pre-build
+
+pre-pre-build:
+	${RUBY} -i -pe 'sub /-lc\b/, "-pthread"' ${WRKSRC}/Makefile
