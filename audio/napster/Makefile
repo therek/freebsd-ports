@@ -2,32 +2,24 @@
 # Date created:         Thu Nov 18 01:07:00 PST 1999
 # Whom:                 dburr@FreeBSD.org
 #
-# $FreeBSD: ports/audio/napster/Makefile,v 1.12 2001/03/29 21:55:27 mharo Exp $
+# $FreeBSD: ports/audio/napster/Makefile,v 1.13 2001/03/29 23:29:04 mharo Exp $
 #
 
-PORTNAME=	napster
-PORTVERSION=	1.4.4
+PORTNAME=	nap
+PORTVERSION=	1.4.5
 CATEGORIES=	audio net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	nap
-DISTNAME=	nap-${PORTVERSION}
 
-MAINTAINER=	dburr@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 GNU_CONFIGURE=	yes
 
-pre-install:
-	${MKDIR} ${PREFIX}/share/nap
-	${INSTALL_DATA} ${WRKSRC}/nap.conf.dist ${PREFIX}/share/nap
-
-.if (!defined(NOPORTDOCS))
-	@${ECHO_MSG} "===>  Installing NEWS + README in ${PREFIX}/share/doc/nap"
-	${MKDIR} ${PREFIX}/share/doc/nap
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/nap
 	${INSTALL_DATA} ${WRKSRC}/NEWS ${PREFIX}/share/doc/nap
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/nap
 .endif
-
-post-install:
-	@${CAT} ${PKGMESSAGE} | ${SED} 's:@PREFIX@:${PREFIX}:g'
 
 .include <bsd.port.mk>
