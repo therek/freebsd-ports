@@ -2,7 +2,7 @@
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.3 2000/04/09 21:52:38 cpiazza Exp $
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.4 2000/04/15 01:53:02 asami Exp $
 #
 
 PORTNAME=		hevea
@@ -20,6 +20,6 @@ TEXHASH=		${PREFIX}/bin/texhash
 post-install:
 	strip ${PREFIX}/bin/hevea
 	strip ${PREFIX}/bin/hacha
-	${CAT} ${MASTERDIR}/pkg/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
