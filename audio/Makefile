@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.172 2000/10/08 18:53:41 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.173 2000/10/11 23:30:00 trevor Exp $
 #
 
     SUBDIR += afsp
@@ -18,6 +18,7 @@
     SUBDIR += cdplayer.app
     SUBDIR += cdrdao
     SUBDIR += cmp3
+    SUBDIR += csound
     SUBDIR += dagrab
     SUBDIR += dap
     SUBDIR += esound
