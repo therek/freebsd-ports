@@ -2,12 +2,12 @@
 # Date created:		12 Septermber 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/devel/fnorb/Makefile,v 1.2 2000/10/03 15:34:53 kevlo Exp $
+# $FreeBSD: ports/devel/fnorb/Makefile,v 1.3 2000/11/01 11:53:01 jeh Exp $
 #
 
 PORTNAME=	fnorb
 PORTVERSION=	1.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel python
 MASTER_SITES=	http://www.fnorb.org/download/ \
 		ftp://ftp.dstc.edu.au/DSTC/fnorb/
