@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.82 2004/11/16 07:34:57 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.83 2004/11/20 22:35:32 pav Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -635,18 +635,16 @@ PLIST_SUB+=	GNOMEDESKTOP:="@comment " NOGNOMEDESKTOP:=""
 CONFIGURE_FAIL_MESSAGE=	"Please direct the output of the failure of the make command to a file, and then feed that file to the gnomelogalyzer, available from "http://www.freebsd.org/gnome/gnomelogalyzer.sh", which will diagnose the problem and suggest a solution.  If - and only if - the gnomelogalyzer cannot solve the problem, report the problem to the FreeBSD GNOME team at ${MAINTAINER}, and attach \"${CONFIGURE_WRKSRC}/${CONFIGURE_LOG}\" and the output of the failure of the make command.  Also, it might be a good idea to provide an overview of all packages installed on your system (e.g. an \`ls ${PKG_DBDIR}\`)."
 .endif
 
-.if defined(_USE_GNOME)
-.  if ${_USE_GNOME:Mgconf}!="" || ${_USE_GNOME:Mgconf2}!=""
-pre-install: gnome-pre-install
-
-gnome-pre-install:
-	@${MKDIR} ${PREFIX}/etc/gconf/gconf.xml.defaults/
-
-.  endif
-.endif
-
 .if defined(GCONF_SCHEMAS) || defined(INSTALLS_OMF)
+pre-su-install: gnome-pre-su-install
 post-install: gnome-post-install
+
+gnome-pre-su-install:
+.if defined(GCONF_SCHEMAS)
+	@${MKDIR} ${PREFIX}/etc/gconf/gconf.xml.defaults/
+.else
+	@${DO_NADA}
+.endif
 
 gnome-post-install:
 .  if defined(GCONF_SCHEMAS)
