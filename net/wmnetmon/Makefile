@@ -2,13 +2,16 @@
 # Date created:		1 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/wmnetmon/Makefile,v 1.1 2001/04/07 06:16:10 will Exp $
 #
 
 PORTNAME=	wmnetmon
 PORTVERSION=	0.2p5
 CATEGORIES=	net windowmaker
-MASTER_SITES=	ftp://neubula.utad.pt/pub/wmnetmon/
+# Master site is MIA for weeks now...
+#MASTER_SITES=	ftp://neubula.utad.pt/pub/wmnetmon/
+MASTER_SITES=	http://avdira.cc.duth.gr/~kkonstan/stuff/software/
+
 
 MAINTAINER=	kkonstan@daemon.gr
 
