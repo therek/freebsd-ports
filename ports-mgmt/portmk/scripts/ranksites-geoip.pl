@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/scripts/ranksites-geoip.pl,v 1.1 2004/07/06 12:41:03 eik Exp $
 #
 # MAINTAINER=   eik@FreeBSD.org
 #
@@ -125,19 +125,22 @@ if (%newdistance && $hostcount > 1) {
     foreach (keys %newdistance) {
         my $dist;
         my $cc = lc $gi->country_code_by_name($_);
-        my ($lat_cc, $lon_cc) = getlatlon($cc)
-            if defined $cc;
 
-        # Find the deltas
-        my $delta_lat = $lat_cc - $lat_home;
-        my $delta_lon = $lon_cc - $lon_home;
+        if ($cc) {
+            my ($lat_cc, $lon_cc) = getlatlon($cc)
+                if defined $cc;
 
-        # Find the Great Circle distance
-        my $temp = sin($delta_lat/2.0)**2 + cos($lat_home) * cos($lat_cc) * sin($delta_lon/2.0)**2;
-        $dist = atan2(sqrt($temp),sqrt(1-$temp));
+            # Find the deltas
+            my $delta_lat = $lat_cc - $lat_home;
+            my $delta_lon = $lon_cc - $lon_home;
 
-        $distance{$_} = [$dist, $expgood]
-            if defined $dist;
+            # Find the Great Circle distance
+            my $temp = sin($delta_lat/2.0)**2 + cos($lat_home) * cos($lat_cc) * sin($delta_lon/2.0)**2;
+            $dist = atan2(sqrt($temp),sqrt(1-$temp));
+
+            $distance{$_} = [$dist, $expgood]
+                if defined $dist;
+        }
     }
 
     open RANKS, ">$rankfile";
