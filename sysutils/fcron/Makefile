@@ -3,7 +3,7 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.3 2001/06/17 01:08:13 ijliao Exp $
+# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.4 2001/07/20 06:47:56 ijliao Exp $
 #
 
 PORTNAME=	fcron
@@ -32,6 +32,9 @@ MAN1=	fcrontab.1
 MAN3=	bitstring.3
 MAN5=	fcrontab.5 fcron.conf.5
 MAN8=	fcron.8
+
+pre-configure:
+	@${MKDIR} -p ${PREFIX}/etc
 
 post-install:
 	@${CP} ${WRKSRC}/files/fcron.allow ${PREFIX}/etc/fcron.allow.dist
