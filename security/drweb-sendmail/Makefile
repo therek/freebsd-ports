@@ -2,12 +2,12 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.11 2001/08/25 15:20:52 ache Exp $
+# $FreeBSD: ports/security/drweb-sendmail/Makefile,v 1.12 2001/08/29 20:30:38 ache Exp $
 #
 
 PORTNAME=	drweb_sendmail
 PORTVERSION=	4.25
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	security mail
 MASTER_SITES=	http://www.drweb.ru/ftp/web_pub/
 DISTNAME=	drwebd-${PORTVERSION}-freebsd4
