@@ -2,14 +2,13 @@
 # Date created:         Feb 18, 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/comms/ecu/Makefile,v 1.21 1999/08/31 06:40:54 mharo Exp $
+# $FreeBSD: ports/comms/ecu/Makefile,v 1.22 2000/04/08 23:22:29 mharo Exp $
 #
 
 PORTNAME=	ecu
-PORTVERSION=	4.08
+PORTVERSION=    4.30
 CATEGORIES=	comms
-MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/comm/
-#MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin/Communications/
+MASTER_SITES=  ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin/Communications/
 
 MAINTAINER=	ache@FreeBSD.org
 
