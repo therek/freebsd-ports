@@ -2,7 +2,7 @@
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/m68knewlib/Makefile,v 1.7 2000/01/23 01:36:50 imura Exp $
+# $FreeBSD: ports/devel/newlib-m68k/Makefile,v 1.8 2000/04/11 21:29:01 mharo Exp $
 #
 
 PORTNAME=	newlib
@@ -13,7 +13,7 @@ PKGNAMEPREFIX=	m68k
 
 MAINTAINER=	ports@FreeBSD.org
 
-BUILD_DEPENDS=	m68k-coff-gcc:${PORTSDIR}/devel/m68kgcc
+BUILD_DEPENDS=	m68k-coff-gcc:${PORTSDIR}/devel/gcc-m68k
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/m68kgcc/Makefile,v 1.8 1999/08/25 05:48:37 obrien Exp $
+# $FreeBSD: ports/devel/gcc-m68k/Makefile,v 1.9 2000/04/11 21:28:58 mharo Exp $
 #
 
 PORTNAME=	gcc
@@ -14,10 +14,10 @@ PKGNAMEPREFIX=	m68k
 
 MAINTAINER=	Jerry.Hicks@Glenayre.com
 
-BUILD_DEPENDS=	m68k-coff-as:${PORTSDIR}/devel/m68kbinutils \
-		m68k-coff-ld:${PORTSDIR}/devel/m68kbinutils
-RUN_DEPENDS=	m68k-coff-as:${PORTSDIR}/devel/m68kbinutils \
-		m68k-coff-ld:${PORTSDIR}/devel/m68kbinutils
+BUILD_DEPENDS=	m68k-coff-as:${PORTSDIR}/devel/binutils-m68k \
+		m68k-coff-ld:${PORTSDIR}/devel/binutils-m68k
+RUN_DEPENDS=	m68k-coff-as:${PORTSDIR}/devel/binutils-m68k \
+		m68k-coff-ld:${PORTSDIR}/devel/binutils-m68k
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
