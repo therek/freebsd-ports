@@ -2,11 +2,12 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.8 2001/03/24 20:30:44 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.9 2001/04/08 14:05:37 lioux Exp $
 #
 
 PORTNAME=	hlds
 PORTVERSION=	3.1.0.6
+PORTREVISION=	1
 CATEGORIES=	games linux
 MASTER_SITES=	http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/official/ \
 		http://www.jetstreamgames.co.nz/files/pub/gamespyftp1/fpnew/action/half-life/official/ \
