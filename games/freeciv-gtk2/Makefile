@@ -2,11 +2,11 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.37 2000/10/10 17:12:22 reg Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.38 2001/03/29 16:33:43 sobomax Exp $
 #
 
 PORTNAME=	freeciv
-PORTVERSION=	1.11.4
+PORTVERSION=	1.12.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/stable/ \
 		ftp://ftp.netc.pt/pub/freeciv/stable/ \
@@ -18,23 +18,16 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_XPM=	yes
 USE_BZIP2=	yes
-WANT_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.pre.mk>
 
-.if defined(HAVE_GTK)
+.if defined(WITH_GTK)
 USE_IMLIB=	yes
 .else
 CONFIGURE_ARGS=	--disable-gtktest
 .endif
-
-pre-patch:
-	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
-		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
-		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
-		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 
 .include <bsd.port.post.mk>
