@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.217 1999/09/02 16:19:31 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.218 1999/09/05 20:12:00 sada Exp $
 #
 
     SUBDIR += Canna
@@ -109,6 +109,9 @@
     SUBDIR += libjcode
     SUBDIR += libslang
     SUBDIR += lipsf
+    SUBDIR += lookup-emacs20
+    SUBDIR += lookup-mule
+    SUBDIR += lookup-xemacs
     SUBDIR += lynx
     SUBDIR += lynx-current
     SUBDIR += lyx
