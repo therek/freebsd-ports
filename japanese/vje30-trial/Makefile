@@ -2,17 +2,18 @@
 # Date created:		14 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.9 2000/07/05 17:09:23 knu Exp $
+# $FreeBSD: ports/japanese/vje30-trial/Makefile,v 1.10 2000/10/08 10:21:29 asami Exp $
 #
 
 PORTNAME=	vje
 PORTVERSION=	3.0
-PKGNAMESUFFIX=	-trial
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.vacs.co.jp/pub/unix/vje30/FreeBSD/	\
 		http://www.green.machida.ne.jp/vacs/unix/FreeBSD/
-EXTRACT_SUFX=	.tgz
+PKGNAMESUFFIX=	-trial
 DISTNAME=	${PORTNAME}-delta-${PORTVERSION}t-${DISTOBJFORMAT}
+EXTRACT_SUFX=	.tgz
+DIST_SUBDIR=	vje30
 
 MAINTAINER=	knu@FreeBSD.org
 
