@@ -2,11 +2,11 @@
 # Date created:				Fri Jul 13 22:59:59 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/misc/menushki/Makefile,v 1.3 2001/09/08 18:35:07 petef Exp $
+# $FreeBSD: ports/misc/menushki/Makefile,v 1.4 2001/09/12 22:20:05 lioux Exp $
 #
 
 PORTNAME=	menushki
-PORTVERSION=	0.8
+PORTVERSION=	0.9
 CATEGORIES=	misc x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
