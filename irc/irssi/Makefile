@@ -2,11 +2,11 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.34 2000/07/07 21:21:15 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.35 2000/07/10 06:11:17 jim Exp $
 #
 
 PORTNAME=	irssi
-PORTVERSION=	0.7.93
+PORTVERSION=	0.7.94
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://irssi.org/files/
 
