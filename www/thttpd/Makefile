@@ -2,11 +2,11 @@
 # Date created:		24 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/thttpd/Makefile,v 1.12 2000/04/10 00:06:57 cpiazza Exp $
+# $FreeBSD: ports/www/thttpd/Makefile,v 1.13 2000/07/05 12:37:05 tg Exp $
 #
 
 PORTNAME=	thttpd
-PORTVERSION= 	2.16
+PORTVERSION= 	2.19
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.acme.com/software/thttpd/ \
 		http://www.freenix.no/~anders/
@@ -24,6 +24,8 @@ do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/thttpd ${PREFIX}/sbin/
 	@${INSTALL_MAN} ${WRKSRC}/thttpd.8 ${PREFIX}/man/man8
 	@${INSTALL} -d -o root -g wheel -m 0775 ${PREFIX}/www
+	@${INSTALL} -d -o root -g wheel -m 0775 ${PREFIX}/www/data
+	@${INSTALL} -d -o root -g wheel -m 0775 ${PREFIX}/www/logs
 	@${INSTALL} -d -o root -g wheel -m 0755 ${PREFIX}/www/cgi-bin
 	@${INSTALL_PROGRAM} ${WRKSRC}/cgi-src/redirect ${PREFIX}/www/cgi-bin/
 	@${INSTALL_PROGRAM} ${WRKSRC}/cgi-src/ssi ${PREFIX}/www/cgi-bin/
