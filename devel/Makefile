@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.567 2001/06/18 05:31:07 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.568 2001/06/21 14:51:28 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -361,6 +361,7 @@
     SUBDIR += p5-String-Checker
     SUBDIR += p5-String-Random
     SUBDIR += p5-String-RexxParse
+    SUBDIR += p5-String-Similarity
     SUBDIR += p5-Term-ANSIColor
     SUBDIR += p5-Term-Prompt
     SUBDIR += p5-Term-Query
