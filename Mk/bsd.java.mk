@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.56 2004/09/09 20:31:48 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.57 2004/11/07 00:51:53 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -471,6 +471,9 @@ RUN_DEPENDS+=		${DEPEND_JAVA}
 .		if defined(USE_ANT)
 ANT?=				${LOCALBASE}/bin/ant
 MAKE_ENV+=			JAVA_HOME=${JAVA_HOME}
+.			if defined(HAVE_JIKES)
+MAKE_ARGS+=			-Dbuild.compiler=jikes
+.			endif
 BUILD_DEPENDS+=		${ANT}:${PORTSDIR}/devel/apache-ant
 ALL_TARGET?=
 .			if !target(do-build)
