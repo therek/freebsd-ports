@@ -2,11 +2,11 @@
 # Date created:		21 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/quirc/Makefile,v 1.10 2000/08/23 08:01:12 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	quirc
-PORTVERSION=	0.9.81
+PORTVERSION=	0.9.82
 CATEGORIES=	irc tk83
 MASTER_SITES=	http://quirc.org/
 
@@ -27,7 +27,8 @@ CONFIGURE_ARGS=	--with-wish=${PREFIX}/bin/wish8.3 \
 		--with-tcl-version=8.3
 
 PORTDOCS=	AUTHORS ChangeLog FAQ NEWS README doc/color.txt \
-		doc/nickcomp.txt doc/quedit.txt doc/rfc1459.txt
+		doc/dccresum.txt doc/links.txt doc/nickcomp.txt \
+		doc/quedit.txt doc/rfc1459.txt doc/tdcc.txt
 
 post-install:
 .if !defined(NOPORTDOCS)
