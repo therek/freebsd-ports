@@ -2,11 +2,12 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.74 2001/03/15 19:26:26 clive Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.75 2001/04/21 11:34:32 vanilla Exp $
 #
 
 PORTNAME=	postgresql
 PORTVERSION=	7.1
+PORTREVISION=	1
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.iodynamics.com/pub/mirror/postgresql/%SUBDIR%/ \
 		ftp://ftp.postgresql.org/pub/%SUBDIR%/ \
@@ -149,7 +150,7 @@ post-install:
 .endif
 .if defined(WITH_JDBC)
 	@ ${MKDIR} -m 0555 ${PREFIX}/share/java/classes
-	@ ${LN} -sf ${PREFIX}/share/postgresql/postgresql.jar \
+	@ ${INSTALL_DATA} ${WRKSRC}/src/interfaces/jdbc/jars/postgresql.jar \
 			  ${PREFIX}/share/java/classes/postgresql.jar
 	@ ${ECHO_MSG} "---------------------------------------------------------"
 	@ ${ECHO_MSG} "Putting postgresql.jar in"
