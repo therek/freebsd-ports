@@ -2,14 +2,14 @@
 # Date created:		16 Jan 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/lang/pike/Makefile,v 1.4 2000/02/13 01:04:21 reg Exp $
+# $FreeBSD: ports/lang/pike/Makefile,v 1.5 2000/04/12 06:19:54 obrien Exp $
 #
 
 PORTNAME=	pike
-PORTVERSION=	0.6
+PORTVERSION=	7.0.78
 CATEGORIES=	lang
-MASTER_SITES=	http://pike.idonex.se/download/
-DISTNAME=	Pike-v0.6.110
+MASTER_SITES=	ftp://ftp.roxen.com/pub/pike/all/${PORTVERSION}/
+DISTNAME=	Pike-v${PORTVERSION}
 
 MAINTAINER=	vns@delta.odessa.ua
 
@@ -17,6 +17,9 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src/
 
 IS_INTERACTIVE=	yes
 GNU_CONFIGURE=  yes
+.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
+.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
+.else
 CONFIGURE_ARGS?= \
 	--without-ttflib \
 	--without-gdbm \
@@ -24,6 +27,8 @@ CONFIGURE_ARGS?= \
 	--without-postgresql \
 	--without-msql \
 	--without-jpeg
+.endif
+CONFIGURE_ARGS+= --with-poll
 
 pre-fetch:
 .if !defined(BATCH)
@@ -36,7 +41,10 @@ pre-configure:
 pre-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
-.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
-.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
-.endif
+post-install:
+	${INSTALL_PROGRAM} ${WRKSRC}pike ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}hilfe ${PREFIX}/bin
+	${CHOWN} ${SHAREOWN}:${SHAREGRP} ${PREFIX}/include/pike/*.h
+	${CHMOD} ${SHAREMODE} ${PREFIX}/include/pike/*.h
+
 .include <bsd.port.mk>
