@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmmand/Makefile,v 1.5 2000/06/20 21:45:55 cpiazza Exp $
+# $FreeBSD: ports/misc/wmmand/Makefile,v 1.6 2000/08/03 09:25:47 asami Exp $
 
 PORTNAME=	wmmand
 PORTVERSION=	1.0
@@ -14,15 +14,10 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/wmMand
 
-USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 ALL_TARGET=	clean all
 
 MAN1=		wmMand.1
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/wmMand ${PREFIX}/bin/
-	${INSTALL_MAN} ${WRKSRC}/wmMand.1 ${PREFIX}/man/man1/
 
 .include <bsd.port.mk>
