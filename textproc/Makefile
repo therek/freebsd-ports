@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.239 2001/09/12 13:40:20 roam Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.240 2001/09/12 18:54:14 nik Exp $
 #
 
     SUBDIR += agrep
@@ -93,6 +93,7 @@
     SUBDIR += openjade
     SUBDIR += opensched
     SUBDIR += p5-DelimMatch
+    SUBDIR += p5-FreeBSD-Ports
     SUBDIR += p5-HTML-Format
     SUBDIR += p5-LJ-SpellCheck
     SUBDIR += p5-Lingua-Ispell
