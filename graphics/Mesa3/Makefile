@@ -2,12 +2,12 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.49 2001/05/19 14:03:21 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mesa
 PORTVERSION=	3.4.2
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://iris.ssec.wisc.edu/pub/Mesa/ \
@@ -29,7 +29,8 @@ GLUTVER=	3
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV+=	GLVER="${GLVER}" GLUTVER="${GLUTVER}"
+CONFIGURE_ENV+=	GLVER="${GLVER}" GLUTVER="${GLUTVER}" \
+		LIBS="-lm"
 PLIST_SUB=	GLVER="${GLVER}" GLUTVER="${GLUTVER}"
 
 .include <bsd.port.pre.mk>
