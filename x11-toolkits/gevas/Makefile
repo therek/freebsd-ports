@@ -2,7 +2,7 @@
 # Date created:				19 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gevas/Makefile,v 1.1 2001/03/19 16:22:34 vanilla Exp $
 #
 
 PORTNAME=	gevas
@@ -21,6 +21,7 @@ USE_AUTOMAKE=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
+INSTALLS_SHLIB=	yes
 
 post-extract:
 .for a in install-sh missing mkinstalldirs
