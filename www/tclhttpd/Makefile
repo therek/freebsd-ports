@@ -2,7 +2,7 @@
 # Date created:		27 Apr 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/tclhttpd/Makefile,v 1.2 2001/02/05 15:33:50 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tclhttpd
@@ -19,20 +19,21 @@ LIB_DEPENDS=	tcl${TCL_VER}:${PORTSDIR}/lang/tcl${TCL_VER}
 
 TCL_DVER?=	8.3
 TCL_VER=	${TCL_DVER:S/.//}
+
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl="${LOCALBASE}/lib/tcl${TCL_DVER}" \
 		--with-tclinclude="${LOCALBASE}/include/tcl${TCL_DVER}"
 
-RCD=	${LOCALBASE}/etc/rc.d/tclhttpd.sh
-
-.include <bsd.port.pre.mk>
-SHLIB_NAME!=	${MAKE} -f "${FILESDIR}/Makefile.lib" ech
+MAKEFILE=	${FILESDIR}/Makefile.lib
+MAKE_ENV=	TCL_DVER="${TCL_DVER}" FILESDIR="${FILESDIR}"
+MAKE_ARGS=	-j2
 PLIST_SUB+=	TCL_VER=${TCL_VER} PORTVERSION=${PORTVERSION} \
 		SHLIB_NAME=${SHLIB_NAME}
 
-do-build:
-	cd ${WRKSRC} && ${MAKE} -j 2 TCL_DVER="${TCL_DVER}" \
-		FILESDIR="${FILESDIR}" -f "${FILESDIR}/Makefile.lib"
+RCD=		${LOCALBASE}/etc/rc.d/tclhttpd.sh
+
+.include <bsd.port.pre.mk>
+SHLIB_NAME!=	${MAKE} -f ${MAKEFILE} ech
 
 pre-install:
 	${MKDIR} ${LOCALBASE}/tclhttpd/custom
