@@ -2,7 +2,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.35 2000/03/21 00:57:06 jedgar Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.36 2000/04/13 19:59:46 cpiazza Exp $
 #
 
 PORTNAME=	imap-uw
@@ -39,6 +39,11 @@ PLIST_SUB=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 
 .if ${PORTOBJFORMAT} == "aout"
 SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}.0
+.endif
+
+pre-extract:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	@${SH} ${PKGDIR}/INSTALL foo PRE-INSTALL || ${FALSE}
 .endif
 
 post-configure:
