@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.253 2001/09/28 05:15:46 alfred Exp $
+# $FreeBSD$
 #
 
     SUBDIR += Maaate
@@ -94,6 +94,7 @@
     SUBDIR += koog
     SUBDIR += krio
     SUBDIR += lame
+    SUBDIR += liba52
     SUBDIR += libao
     SUBDIR += libaudiofile
     SUBDIR += libcdaudio
