@@ -2,7 +2,7 @@
 # Date created:		March 16, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.11 2000/04/25 20:57:36 jseger Exp $
+# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.12 2000/09/01 16:41:41 fenner Exp $
 #
 
 PORTNAME=	cfengine
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.iu.hioslo.no/pub/cfengine/ \
 MASTER_SITE_SUBDIR=	cfengine
 
 MAINTAINER=	jseger@FreeBSD.org
+
+FORBIDDEN=	"Remote root vulnerability"
 
 .if defined(PACKAGE_BUILDING) && !exists(/usr/include/tcpd.h)
 LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
