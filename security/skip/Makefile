@@ -2,7 +2,7 @@
 # Date created:         		26 November 1997
 # Whom:                 		Archie L. Cobbs <archie@whistle.com>
 #
-# $FreeBSD: ports/security/skip/Makefile,v 1.18 2000/02/03 23:13:12 archie Exp $
+# $FreeBSD: ports/security/skip/Makefile,v 1.19 2000/04/09 18:30:27 cpiazza Exp $
 #
 
 PORTNAME=		skip
@@ -11,7 +11,7 @@ CATEGORIES=		security
 # Note: the original source comes from Sun, via this web page:
 #    http://skip.incog.com/src-form.html
 # The site below is outside of the U.S.
-MASTER_SITES=		ftp://ftp.replaytv.com/pub/replay/crypto/APPS/skip/ \
+MASTER_SITES=		ftp://ftp.zedz.net/pub/crypto/programs/skip/ \
 			ftp://ftp.internat.freebsd.org/pub/FreeBSD/distfiles/
 DISTNAME=		skipsrc-1.0
 EXTRACT_SUFX=		.tar.Z
