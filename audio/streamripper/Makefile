@@ -2,11 +2,11 @@
 # Date created:		6 Apr 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/streamripper/Makefile,v 1.3 2000/10/15 23:40:28 trevor Exp $
+# $FreeBSD: ports/audio/streamripper/Makefile,v 1.4 2000/11/07 19:23:18 trevor Exp $
 #
 
 PORTNAME=	streamripper
-PORTVERSION=	0.7.0b
+PORTVERSION=	1.0.2
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
