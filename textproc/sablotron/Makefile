@@ -2,7 +2,7 @@
 # Date created:		13 Nov 2000
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/sablotron/Makefile,v 1.1 2000/12/19 13:14:43 will Exp $
 #
 
 PORTNAME=	Sablot
@@ -16,7 +16,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	skv@protey.ru
 
-LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv \
+LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv \
 		expat.2:${PORTSDIR}/textproc/expat2
 
 INSTALLS_SHLIB=	yes
