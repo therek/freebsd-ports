@@ -2,11 +2,11 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib12/Makefile,v 1.31 2000/06/16 10:37:53 sobomax Exp $
+# $FreeBSD: ports/devel/glib12/Makefile,v 1.32 2000/06/16 21:49:55 asami Exp $
 #
 
 PORTNAME=	glib
-PORTVERSION=	1.2.8
+PORTVERSION=	1.2.9
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.2/ \
 		ftp://ftp.cs.umn.edu/pub/gimp/gtk/v1.2/ \
