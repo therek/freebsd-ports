@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb/Makefile,v 1.1 2001/08/24 15:42:40 ache Exp $
+# $FreeBSD: ports/security/drweb/Makefile,v 1.2 2001/08/24 19:46:27 ache Exp $
 #
 
 PORTNAME=	drweb
@@ -16,6 +16,8 @@ MAINTAINER=	anton@urc.ac.ru
 
 NO_BUILD=	YES
 
+RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/mach/String/CRC32.pm:${PORTSDIR}/devel/p5-String-CRC32
+
 DRWEB_PREFIX=	${PREFIX}/${PORTNAME}
 
 do-install:
@@ -23,6 +25,7 @@ do-install:
 	${TAR} -xzf ${WRKSRC}/${DISTNAME}.tar.gz -C ${DRWEB_PREFIX} --exclude *.ini
 	${TAR} -xzOf ${WRKSRC}/${DISTNAME}.tar.gz drweb32.ini >${DRWEB_PREFIX}/drweb32.ini.sample
 	${SED} 's#!!PREFIX!!#${DRWEB_PREFIX}#' < ${FILESDIR}/drwebd.sh >${WRKSRC}/drwebd.sh
+	cd ${DRWEB_PREFIX}/update; patch < ${FILESDIR}/update-patch
 	${INSTALL_SCRIPT} ${WRKSRC}/drwebd.sh ${PREFIX}/etc/rc.d
 
 .include <bsd.port.mk>
