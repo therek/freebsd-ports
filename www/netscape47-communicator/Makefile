@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.73 2000/09/03 06:54:03 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.74 2000/09/03 07:24:25 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -47,7 +47,7 @@ WRKSRC=		${WRKDIR}/${BROWSER}-v475.${NETSCAPE_DIST_TAG}
 ONLY_FOR_ARCHS?=	i386 alpha
 
 .if ${ARCH} == "alpha" && !defined(BROWSER)
-PLIST=		${PKGDIR}/PLIST.alpha
+PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
 .if ${ARCH} == "alpha"
