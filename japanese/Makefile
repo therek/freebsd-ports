@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.335 2000/12/11 02:08:22 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.336 2000/12/21 06:27:30 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -287,6 +287,7 @@
     SUBDIR += skkfep
     SUBDIR += skkinput
     SUBDIR += skkserv
+    SUBDIR += slirc
     SUBDIR += slrn
     SUBDIR += srd-fpw
     SUBDIR += srd-fpw-package
