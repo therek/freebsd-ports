@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.64 2001/02/28 06:51:00 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.65 2001/03/20 08:08:19 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -87,7 +87,7 @@ HPDJ_MAN1=	gs-hpdj.1
 # additional driver for HP PCL3 Printers, by Martin Lottermoser
 # http://home.t-online.de/home/Martin.Lottermoser/pcl3.html
 PCL3=		pcl3
-PCL3_VERS=	3.0.2
+PCL3_VERS=	3.2
 PCL3_NAME=	${PCL3}-${PCL3_VERS}
 PCL3_SRC=	${PCL3_NAME}.tar.gz
 PCL3_MAN1=	gs-pcl3.1 pcl3opts.1
@@ -242,7 +242,7 @@ post-install:
 	@${ECHO} ">>>   creating ${PCL3} destdir ..."
 	@${MKDIR} ${PREFIX}/share/ghostscript/${PORTVERSION}/pcl3
 	@${ECHO} ">>>   installing files in ${PCL3} destdir ..."
-.for i in BETA BUGS README lib/example.mcf lib/if-pcl3 ps/calign.ps \
+.for i in NEWS BUGS README lib/example.mcf lib/if-pcl3 ps/calign.ps \
 	ps/dumppdd.ps ps/levels-test.ps ps/margins-A4.ps \
 	ps/margins-A4Rotated.ps ps/margins-Env10Rotated.ps \
 	ps/margins-EnvDLRotated.ps ps/margins-Letter.ps \
