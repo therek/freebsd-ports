@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.216 2001/03/22 13:33:59 tg Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ETHOberonV4
@@ -135,6 +135,7 @@
     SUBDIR += snobol
     SUBDIR += squeak2
     SUBDIR += sr
+    SUBDIR += stackless_python
     SUBDIR += starlogo
     SUBDIR += swi-pl
     SUBDIR += sxm
