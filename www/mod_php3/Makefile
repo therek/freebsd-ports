@@ -2,12 +2,12 @@
 # Date created:		Wed Feb 23 11:28:12 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php3/Makefile,v 1.123 2001/03/04 18:27:56 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/Makefile,v 1.124 2001/04/21 11:43:05 vanilla Exp $
 #
 
 PORTNAME?=	mod_php3
 PORTVERSION=	3.0.18
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES?=	www
 MASTER_SITES=	ftp://ftp.php.net/pub/${PHP_DISTDIR}/ \
 		http://us.php.net/${PHP_DISTDIR}/ \
@@ -55,9 +55,7 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 
 AP_LIBEXEC=	${PREFIX}/libexec/apache
 
-PHPDOCDIR=	${PREFIX}/share/doc/php3
-PLIST_SUB=	PHPDOCDIR=${PHPDOCDIR:S/^${PREFIX}\///} \
-		AP_LIBEXEC=${AP_LIBEXEC:S/^${PREFIX}\///}
+PLIST_SUB=	AP_LIBEXEC=${AP_LIBEXEC:S/^${PREFIX}\///}
 
 pre-fetch:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.php
@@ -70,13 +68,6 @@ post-install:
 .else
 	@${MKDIR} ${PREFIX}/etc/php.standalone
 	@${INSTALL_DATA} ${WRKSRC}/php3.ini-dist ${PREFIX}/etc/php.standalone
-.endif
-
-.if !defined(NOPORTDOCS)
-	@${MKDIR} ${PHPDOCDIR}
-.for i in CODING_STANDARDS LICENSE
-	@${INSTALL_DATA} ${WRKSRC}/$i ${PHPDOCDIR}
-.endfor
 .endif
 
 .if !defined(STANDALONE)
