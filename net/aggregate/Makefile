@@ -2,13 +2,14 @@
 # Date created:        16 Feb 2001
 # Whom:                jabley
 #
-# $FreeBSD: ports/net/aggregate/Makefile,v 1.2 2001/05/27 16:33:59 ijliao Exp $
+# $FreeBSD: ports/net/aggregate/Makefile,v 1.3 2001/06/25 03:35:38 dwcjr Exp $
 #
 
 PORTNAME=	aggregate
 PORTVERSION=	1.3
 CATEGORIES=	net
-MASTER_SITES=	http://www.automagic.org/~jabley/
+MASTER_SITES=	http://buffoon.automagic.org/dist/ \
+		http://maggie.automagic.org/dist/
 
 MAINTAINER=	jabley@automagic.org
 
