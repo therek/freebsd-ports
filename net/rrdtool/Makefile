@@ -3,7 +3,7 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.3 1999/09/07 06:47:41 fenner Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.4 1999/09/08 22:38:54 fenner Exp $
 #
 
 DISTNAME=	rrdtool-1.0.7
@@ -27,9 +27,9 @@ do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/src/rrdtool ${PREFIX}/bin
 		${INSTALL_PROGRAM} ${WRKSRC}/src/rrdcgi ${PREFIX}/bin
 		${INSTALL_SCRIPT} ${WRKSRC}/contrib/log2rrd/log2rrd.pl ${PREFIX}/bin
-		${MKDIR} -m 755 ${PREFIX}/share/rrdtool/examples
-		${INSTALL_SCRIPT} ${WRKSRC}/examples/*.pl ${PREFIX}/share/rrdtool/examples
-		${INSTALL_SCRIPT} ${WRKSRC}/examples/*.cgi ${PREFIX}/share/rrdtool/examples
+		${MKDIR} -m 755 ${PREFIX}/share/examples/rrdtool
+		${INSTALL_SCRIPT} ${WRKSRC}/examples/*.pl ${PREFIX}/share/examples/rrdtool
+		${INSTALL_SCRIPT} ${WRKSRC}/examples/*.cgi ${PREFIX}/share/examples/rrdtool
 		${INSTALL_MAN} ${WRKSRC}/doc/*.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
 		${MKDIR} -m 755 ${PREFIX}/share/doc/rrdtool
@@ -45,7 +45,7 @@ post-install:
 .if !defined(BATCH)
 	@${ECHO} ""
 	@${ECHO} "############################################################################"
-	@${ECHO} "# See ${PREFIX}/share/rrdtool/examples for some demonstration code        #"
+	@${ECHO} "# See ${PREFIX}/share/examples/rrdtool for some demonstration code        #"
 	@${ECHO} "############################################################################"
 .endif
 
