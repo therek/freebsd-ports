@@ -2,18 +2,16 @@
 # Date created:				Wed May  9 17:55:21 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmmemmon/Makefile,v 1.2 2001/05/22 17:18:49 ijliao Exp $
+# $FreeBSD: ports/sysutils/wmmemmon/Makefile,v 1.3 2001/07/29 23:13:29 lioux Exp $
 #
 
 PORTNAME=	wmmemmon
-PORTVERSION=	0.3.1
+PORTVERSION=	0.5.0
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://www.sh.rim.or.jp/~ssato/src/
 DISTNAME=	WMMemMon-${PORTVERSION}
 
 MAINTAINER=	pat@databits.net
-
-LIB_DEPENDS=	dockapp.1:${PORTSDIR}/x11-wm/libdockapp
 
 ONLY_FOR_ARCHS=	i386
 WRKSRC=		${WRKDIR}/${DISTNAME}
