@@ -2,11 +2,11 @@
 # Date created:        17 November 1999
 # Whom:                ajk@waterspout.com
 #
-# $FreeBSD: ports/devel/mkcmd/Makefile,v 1.2 2000/01/22 02:09:56 cpiazza Exp $
+# $FreeBSD: ports/devel/mkcmd/Makefile,v 1.3 2000/04/11 21:29:05 mharo Exp $
 #
 
 PORTNAME=	mkcmd
-PORTVERSION=	8.13d
+PORTVERSION=	8.14
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.physics.purdue.edu/pub/pundits/
 EXTRACT_SUFX=	.tgz
