@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.117 2001/03/31 01:33:37 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.118 2001/04/04 14:37:46 sf Exp $
 #
 
     SUBDIR += GiNaC
@@ -81,6 +81,7 @@
     SUBDIR += py-gnuplot
     SUBDIR += py-scientific
     SUBDIR += pygist
+    SUBDIR += rascal
     SUBDIR += rcalc
     SUBDIR += rpc
     SUBDIR += ruby-bigfloat
