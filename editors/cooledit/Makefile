@@ -3,10 +3,10 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/cooledit/Makefile,v 1.18 1999/09/09 03:03:17 cpiazza Exp $
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.19 2000/01/29 06:56:26 cpiazza Exp $
 #
 
-DISTNAME=	cooledit-3.12.0
+DISTNAME=	cooledit-3.13.2
 CATEGORIES=	editors
 MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://www.netins.net/showcase/Comput-IT/cooledit/src/
