@@ -4,10 +4,10 @@
 # Date created:			  Fri Jan 24, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/xwpe/Makefile,v 1.10 1999/08/25 05:50:31 obrien Exp $
 #
 
-DISTNAME=	xwpe-1.5.18a
+DISTNAME=	xwpe-1.5.19a
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://www.rpi.edu/~payned/xwpe/ \
