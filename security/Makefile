@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.138 2000/10/28 01:57:12 jeh Exp $
+# $FreeBSD: ports/security/Makefile,v 1.139 2000/10/28 06:14:37 will Exp $
 #
 
     SUBDIR += aafid2
@@ -12,6 +12,7 @@
     SUBDIR += cfs
     SUBDIR += checkpassword
     SUBDIR += chrootuid
+    SUBDIR += cksfv
     SUBDIR += cops
     SUBDIR += crack
     SUBDIR += cyrus-sasl
