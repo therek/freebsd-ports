@@ -3,16 +3,16 @@
 # Date created:         1 Apr 1997
 # Whom:                 junker@jazz.snu.ac.kr
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/splay/Makefile,v 1.8 1999/08/25 04:36:12 obrien Exp $
 #
 # pthread library can be used, but sound quality is buggy
 #
 
 DISTNAME=		splay-0.8.2
 CATEGORIES=		audio
-MASTER_SITES=		http://cain.kaist.ac.kr/~jwj95/
+MASTER_SITES=		ftp://ftp.kr.FreeBSD.org/pub/FreeBSD-kr/distfiles/
 
-MAINTAINER=		junker@jazz.snu.ac.kr
+MAINTAINER=		cjh@kr.freebsd.org
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ARGS=		--without-xsplay --without-pthread
