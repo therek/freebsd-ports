@@ -2,11 +2,11 @@
 # Date created:		30 Jan 2000
 # Whom:			kris
 #
-# $FreeBSD: ports/graphics/mtv/Makefile,v 1.7 2000/07/07 04:02:59 billf Exp $
+# $FreeBSD: ports/graphics/mtv/Makefile,v 1.8 2000/07/17 23:38:08 joe Exp $
 #
 
 PORTNAME=	mtv
-PORTVERSION=	1.1.4
+PORTVERSION=	1.2.1
 CATEGORIES=	graphics linux
 MASTER_SITES=	ftp://ftp.mpegtv.com/pub/mpeg/mpegtv/player/x86-unknown-linux-glibc/packages/TGZ/
 DISTFILES=	${PORTNAME}-${PORTVERSION}.tar.gz libSDLx11.so.tar.gz
