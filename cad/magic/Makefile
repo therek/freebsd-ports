@@ -2,7 +2,7 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/magic/Makefile,v 1.17 2000/04/08 23:20:02 mharo Exp $
+# $FreeBSD: ports/cad/magic/Makefile,v 1.18 2000/06/07 08:00:18 asami Exp $
 #
 
 PORTNAME=	magic
@@ -11,7 +11,7 @@ CATEGORIES=	cad
 MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/WRL/projects/magic/6.5/
 DISTFILES=	magic-6_5_tar.Z
 
-MAINTAINER=	swallace@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 USE_GMAKE=	yes

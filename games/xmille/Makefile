@@ -2,7 +2,7 @@
 # Date created:         30 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xmille/Makefile,v 1.12 2000/04/14 12:27:42 asami Exp $
+# $FreeBSD: ports/games/xmille/Makefile,v 1.13 2001/01/16 17:30:42 sobomax Exp $
 #
 
 PORTNAME=	xmille
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
 MASTER_SITE_SUBDIR=	games
 DISTFILES=	xmille.tar.Z
 
-MAINTAINER=	swallace@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 NO_WRKSUBDIR=	yes
