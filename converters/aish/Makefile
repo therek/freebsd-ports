@@ -3,7 +3,7 @@
 # Date created:		01 Aug 1998
 # Whom:			Masanori Kiriake <seiken@nbs.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/aish/Makefile,v 1.2 1999/08/25 05:16:16 obrien Exp $
 #
 
 DISTNAME=	aish112
@@ -11,8 +11,6 @@ PKGNAME=	aish-1.12
 CATEGORIES=	converters
 MASTER_SITES=	ftp://ftp.tohoku.ac.jp/pub/unix/aish/
 DISTFILES=	aish112u.tar.gz aish112man.tar.gz
-
-MAINTAINER=	seiken@nbs.co.jp
 
 MANLANG=	ja
 MAN1=		aish.1 autodecode.1
