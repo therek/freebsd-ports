@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.182 2001/01/01 22:24:50 demon Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.183 2001/01/02 10:42:00 eivind Exp $
 #
 
     SUBDIR += adcomplain
@@ -81,6 +81,7 @@
     SUBDIR += p5-IMAP-Admin
     SUBDIR += p5-MIME-Lite
     SUBDIR += p5-MIME-Tools
+    SUBDIR += p5-Mail-Audit
     SUBDIR += p5-Mail-CClient
     SUBDIR += p5-Mail-Ezmlm
     SUBDIR += p5-Mail-Folder
