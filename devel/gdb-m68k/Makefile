@@ -2,7 +2,7 @@
 # Date created:         7 Jul 98
 # Whom:                 Jerry Hicks <Jerry.Hicks@Glenayre.com>
 #
-# $FreeBSD: ports/devel/m68kgdb/Makefile,v 1.9 1999/08/25 05:48:38 obrien Exp $
+# $FreeBSD: ports/devel/gdb-m68k/Makefile,v 1.10 2000/04/11 21:28:59 mharo Exp $
 #
 
 PORTNAME=	gdb
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gdb
 PKGNAMEPREFIX=	m68k
 
-MAINTAINER=	Jerry.Hicks@Glenayre.com
+MAINTAINER=	gehicks@cisco.com
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:         28 Jun 1999
 # Whom:                 wghicks@bellsouth.net
 #
-# $FreeBSD: ports/devel/tkcon/Makefile,v 1.5 2000/02/21 19:46:16 green Exp $
+# $FreeBSD: ports/devel/tkcon/Makefile,v 1.6 2000/04/14 05:44:34 asami Exp $
 #
 
 PORTNAME=	tkcon
@@ -10,7 +10,7 @@ PORTVERSION=	1.6
 CATEGORIES=	devel tk82
 MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/sorted/packages-8.0/devel/
 
-MAINTAINER=	jhix@mindspring.com
+MAINTAINER=	gehicks@cisco.com
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

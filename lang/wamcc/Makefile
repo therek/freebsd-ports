@@ -2,7 +2,7 @@
 # Date created:		14 September 1999
 # Whom:			Jerry Hicks <wghicks@bellsouth.net>
 #
-# $FreeBSD: ports/lang/wamcc/Makefile,v 1.3 2000/02/21 19:46:19 green Exp $
+# $FreeBSD: ports/lang/wamcc/Makefile,v 1.4 2000/04/12 06:21:11 obrien Exp $
 #
 
 PORTNAME=	wamcc
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/loco/wamcc/
 DISTFILES=	wamcc2.22.tar.Z prg.tar.Z
 
-MAINTAINER=	jhix@mindspring.com
+MAINTAINER=	gehicks@cisco.com
 
 DIST_SUBDIR=	wamcc
 NO_WRKSUBDIR=	yes

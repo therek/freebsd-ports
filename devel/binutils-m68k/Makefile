@@ -2,7 +2,7 @@
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/m68kbinutils/Makefile,v 1.6 1999/08/25 05:48:36 obrien Exp $
+# $FreeBSD: ports/devel/binutils-m68k/Makefile,v 1.7 2000/04/11 21:28:57 mharo Exp $
 #
 
 PORTNAME=	binutils
@@ -12,7 +12,7 @@ MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	binutils
 PKGNAMEPREFIX=	m68k
 
-MAINTAINER=	Jerry.Hicks@Glenayre.com
+MAINTAINER=	gehicks@cisco.com
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
