@@ -1,10 +1,11 @@
-# $FreeBSD: ports/mail/Makefile,v 1.105 1999/10/02 23:56:52 cpiazza Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.106 1999/10/03 21:49:32 dan Exp $
 #
 
     SUBDIR += adcomplain
     SUBDIR += asmail
     SUBDIR += balsa
     SUBDIR += bbmail
+    SUBDIR += biffer
     SUBDIR += bulk_mailer
     SUBDIR += cmail
     SUBDIR += coolmail
@@ -44,10 +45,12 @@
     SUBDIR += mew-xemacs20
     SUBDIR += mew-xemacs21
     SUBDIR += mh
+    SUBDIR += minimalist
     SUBDIR += ml
     SUBDIR += mmr
     SUBDIR += movemail
     SUBDIR += mutt
+    SUBDIR += newmail
     SUBDIR += nmh
     SUBDIR += p5-IMAP-Admin
     SUBDIR += p5-MIME-Lite
