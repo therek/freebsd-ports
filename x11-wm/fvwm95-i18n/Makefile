@@ -3,7 +3,7 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.27 1999/09/05 21:39:45 sada Exp $
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.28 1999/12/24 18:39:48 mharo Exp $
 #
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf
@@ -25,6 +25,7 @@ MAINTAINER=	ryo2@on.rim.or.jp
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=	${LOCALBASE}/lib/librplay.a:${PORTSDIR}/audio/rplay
+RUN_DEPENDS=	${X11BASE}/icons/chuck.xpm:${PORTSDIR}/x11/fbsd-icons
 
 EXTRACT_ONLY=	${DISTNAME}.tgz ${PKGNAME}-portKit-19981123.tgz
 USE_X_PREFIX=	yes
