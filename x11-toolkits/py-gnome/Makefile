@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.37 2000/06/01 16:10:38 ade Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.38 2000/06/07 18:06:19 ade Exp $
 #
 
 PORTNAME=	py-gnome
@@ -16,7 +16,8 @@ MAINTAINER=	nectar@FreeBSD.org
 
 BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python ${PYGTK_DEP}
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12                  \
-		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter
+		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter       \
+		panel_applet.4:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	python1.5:${PORTSDIR}/lang/python ${PYGTK_DEP}
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
