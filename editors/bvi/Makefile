@@ -2,11 +2,11 @@
 # Date created:				05 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/editors/bvi/Makefile,v 1.5 2000/10/25 11:58:44 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bvi
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR= bvi
