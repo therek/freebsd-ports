@@ -3,11 +3,11 @@
 # Date created:			Jul 6, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/lfhex/Makefile,v 1.1 2001/07/06 02:54:38 ijliao Exp $
 #
 
 PORTNAME=	lfhex
-PORTVERSION=	0.3
+PORTVERSION=	0.3.2
 CATEGORIES=	editors
 MASTER_SITES=	ftp://typedef.dnsalias.org/pub/lfhex/
 
