@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.231 2000/10/16 09:38:25 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.232 2000/10/16 10:42:35 knu Exp $
 #
 
     SUBDIR += 4va
@@ -57,6 +57,7 @@
     SUBDIR += gltk
     SUBDIR += gnofract4d
     SUBDIR += gnomeiconedit
+    SUBDIR += gpaint
     SUBDIR += gphoto
     SUBDIR += gplot
     SUBDIR += gqview
