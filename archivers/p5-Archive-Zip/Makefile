@@ -2,7 +2,7 @@
 # Date created:				Mon Jan  1 09:33:13 2001
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/p5-Archive-Zip/Makefile,v 1.2 2001/02/26 15:43:14 kevlo Exp $
+# $FreeBSD: ports/archivers/p5-Archive-Zip/Makefile,v 1.3 2001/03/01 06:36:57 vanilla Exp $
 #
 
 PORTNAME=	Archive-Zip
@@ -14,8 +14,10 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_ZIP=	yes
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/Zlib.pm:${PORTSDIR}/archivers/p5-Compress-Zlib
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
+USE_ZIP=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
