@@ -2,11 +2,11 @@
 # Date created:                         02 September 1999
 # Whom:                                 se
 #
-# $FreeBSD: ports/security/keynote/Makefile,v 1.6 2000/04/30 08:13:56 kris Exp $
+# $FreeBSD: ports/security/keynote/Makefile,v 1.7 2000/09/22 01:59:00 kris Exp $
 #
 
 PORTNAME=	keynote
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	security
 MASTER_SITES=	http://www.cis.upenn.edu/~angelos/Code/
 
