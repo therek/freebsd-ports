@@ -2,10 +2,11 @@
 # Date created:        27 March 2001
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/deskutils/phpgroupware/Makefile,v 1.3 2001/03/29 21:40:58 olgeni Exp $
+# $FreeBSD: ports/deskutils/phpgroupware/Makefile,v 1.4 2001/03/30 21:15:41 olgeni Exp $
 
 PORTNAME=	phpgroupware
 PORTVERSION=	0.9.9p1
+PORTREVISION=	1
 CATEGORIES=	deskutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	phpgroupware
