@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.221 2004/02/24 16:57:04 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.222 2004/02/29 23:25:35 clement Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -728,11 +728,11 @@ MASTER_SITE_SAVANNAH+= \
 	ftp://ftp.gnu.org/pub/savannah/files/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE+= \
-	http://us.dl.sourceforge.net/%SUBDIR%/ \
 	http://eu.dl.sourceforge.net/%SUBDIR%/ \
-	ftp://us.dl.sourceforge.net/pub/sourceforge/%SUBDIR%/ \
+	http://us.dl.sourceforge.net/%SUBDIR%/ \
 	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
-	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/
+	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/ \
+	ftp://us.dl.sourceforge.net/pub/sourceforge/%SUBDIR%/
 
 MASTER_SITE_SOURCEFORGE_JP+= \
 	http://osdn.dl.sourceforge.jp/%SUBDIR%/ \
