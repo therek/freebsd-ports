@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.110 2001/02/12 14:55:30 ijliao Exp $
+# $FreeBSD: ports/math/Makefile,v 1.111 2001/03/07 07:08:59 ijliao Exp $
 #
 
     SUBDIR += GiNaC
@@ -39,6 +39,7 @@
     SUBDIR += linalg
     SUBDIR += linpack
     SUBDIR += metis
+    SUBDIR += mtrxmath
     SUBDIR += netcdf
     SUBDIR += ngraph
     SUBDIR += ntl
