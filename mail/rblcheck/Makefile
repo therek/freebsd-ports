@@ -2,7 +2,7 @@
 # Date created:		28 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.12 2001/03/04 16:56:32 roam Exp $
+# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.13 2001/08/18 06:04:35 ijliao Exp $
 #
 
 PORTNAME=	rblcheck
@@ -25,7 +25,7 @@ post-configure:
 	@${ECHO} "             SITE(\"another.rbl.site\")"
 .endif
 
-pre-build
+pre-build:
 .if exists(${WRKDIRPREFIX}${.CURDIR}/local.sites)
 	${CAT} ${WRKDIRPREFIX}${.CURDIR}/local.sites >> ${WRKSRC}/rblsites.h
 .endif
