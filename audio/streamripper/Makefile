@@ -2,13 +2,15 @@
 # Date created:		6 Apr 2000
 # Whom:			trevor@jpj.net
 #
-# $FreeBSD: ports/audio/streamripper/Makefile,v 1.1 2000/06/04 22:42:14 will Exp $
+# $FreeBSD: ports/audio/streamripper/Makefile,v 1.2 2000/10/02 05:39:30 trevor Exp $
 #
 
 PORTNAME=	streamripper
 PORTVERSION=	0.7.0b
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.bigfreakinserver.com/pub/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		ftp://ftp.bigfreakinserver.com/pub/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	trevor@FreeBSD.org
 
