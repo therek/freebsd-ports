@@ -3,7 +3,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86/Makefile,v 1.71 2000/01/12 03:44:15 jmz Exp $
+# $FreeBSD: ports/x11/XFree86/Makefile,v 1.72 2000/01/13 14:14:01 jmz Exp $
 #
 
 DISTNAME=	xc
@@ -15,6 +15,13 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
 		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/3.3.6/source/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/source/
 DISTFILES=	X336src-1.tgz X336src-2.tgz
+
+PATCH_SITES=	ftp://ftp.xfree.org/pub/XFree86/3.3.6/fixes/ \
+		ftp://xfree86.cdrom.com/pub/XFree86/3.3.6/fixes/ \
+		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-3.3.6/fixes/ \
+		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/3.3.6/fixes/ \
+		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/fixes/
+PATCHFILES= 	fix-01-r128	
 
 MAINTAINER=	jmz@FreeBSD.org
 
