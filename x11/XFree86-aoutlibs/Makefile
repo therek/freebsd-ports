@@ -2,7 +2,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.14 2001/02/05 20:58:33 olgeni Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.15 2001/05/22 20:15:49 ade Exp $
 #
 
 PORTNAME=	XFree86-aoutlibs
@@ -11,7 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	ade
 
-MAINTAINER=	reg@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 
