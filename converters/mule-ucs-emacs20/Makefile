@@ -1,12 +1,10 @@
 # New ports collection makefile for:	Mule-UCS for GNU Emacs 20
-# Version required:	0.74
 # Date created:		14 January 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/mule-ucs-emacs20/Makefile,v 1.1.1.1 2000/04/04 18:11:29 knu Exp $
 #
 
-DISTNAME=	Mule-UCS-0.74
 PORTNAME=	mule-ucs-${EMACS_PORT}
 PORTVERSION=	0.74
 CATEGORIES=	converters elisp
@@ -16,6 +14,7 @@ MASTER_SITES=	ftp://ftp.kddlabs.co.jp/Japan/m17n.org/mule/Mule-UCS/ \
 		ftp://ftp.center.osaka-u.ac.jp/mule/Mule-UCS/ \
 		ftp://ftp.kreonet.re.kr/pub/tools/emacs/mule/Mule-UCS/ \
 		ftp://ftp.m17n.org/pub/mule/Mule-UCS/
+DISTNAME=	Mule-UCS-${PORTVERSION}
 
 MAINTAINER=	okazaki@be.to
 
