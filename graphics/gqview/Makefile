@@ -2,7 +2,7 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.27 2000/10/17 10:30:06 nakai Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.28 2001/03/14 23:36:05 vanilla Exp $
 #
 
 PORTNAME=	gqview
@@ -18,6 +18,8 @@ USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+MAN1=		gqview.1
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
