@@ -3,7 +3,7 @@
 # Date created:		22 Aug 2000
 # Whom:			Paul Becke <pbecke@javagear.com>
 #
-# $FreeBSD: ports/devel/arm-aout-gcc295/Makefile,v 1.3 2001/04/17 09:03:02 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -17,6 +17,8 @@ DISTFILES=	gcc-core-${PORTVERSION}${EXTRACT_SUFX} \
 		gcc-g++-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	pbecke@javagear.com
+
+BROKEN=		"Does not build"
 
 GCC_REV=	${DISTNAME:S/gcc-//g}
 PLIST_SUB+=	GCC_REV=${GCC_REV}

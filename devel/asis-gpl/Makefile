@@ -2,7 +2,7 @@
 # Date created:				11 Jul 2000
 # Whom:					Thomas Quinot <thomas@cuivre.fr.eu.org>
 #
-# $FreeBSD: ports/devel/asis/Makefile,v 1.2 2000/08/25 16:23:00 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asis
@@ -14,6 +14,8 @@ MASTER_SITES=	\
 DISTNAME=	asis-${PORTVERSION}-src
 
 MAINTAINER=	thomas@cuivre.fr.eu.org
+
+BROKEN=		"Does not build"
 
 BUILD_DEPENDS=	adagcc:${PORTSDIR}/lang/gnat
 
