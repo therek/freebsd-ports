@@ -2,11 +2,11 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.51 2001/07/30 13:37:16 sobomax Exp $
+# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.52 2001/08/26 00:55:06 mi Exp $
 #
 
 PORTNAME=	libxml2
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.3
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libxml
@@ -40,5 +40,10 @@ post-patch:
 	@${PERL} -pi -e 's/([^g])iconv.h/\1giconv.h/g;' \
 		-e 's/-liconv/-lgiconv/g' ${WRKSRC}/${CONFIGURE_SCRIPT} \
 		${WRKSRC}/include/libxml/encoding.h
+
+# If someone knows a better way to avoid this from even creeping into
+# lib/ -- please, tell me...	$Author$
+post-install:
+	${RM} ${PREFIX}/lib/libxml2.la
 
 .include <bsd.port.mk>
