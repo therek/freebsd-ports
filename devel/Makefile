@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.224 1999/10/14 05:04:28 nakai Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.225 1999/10/22 05:48:26 nakai Exp $
 #
 
     SUBDIR += ElectricFence
@@ -42,7 +42,6 @@
     SUBDIR += doc++
     SUBDIR += doxygen
     SUBDIR += elftoaout
-    SUBDIR += epplets
     SUBDIR += f77flow
     SUBDIR += fastcrc
     SUBDIR += flick
