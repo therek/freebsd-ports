@@ -2,7 +2,7 @@
 # Date created:		6 March 2000
 # Whom:			tetsushi NAKAI <nakai@tsl.pe.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/editors/tamago/Makefile,v 1.1 2000/05/01 03:14:54 steve Exp $
+# $FreeBSD: ports/editors/tamago/Makefile,v 1.2 2000/07/10 01:11:47 steve Exp $
 #
 
 PORTNAME=	tamago
@@ -19,11 +19,13 @@ RUN_DEPENDS=	emacs-${EMACS_VER}:${PORTSDIR}/editors/emacs20
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
-EMACS_VER=	20.7
-PLIST_SUB=	EMACS_VER=${EMACS_VER}
+EMACS_PORT_NAME?=	emacs20
+
+ELISPDIR=	${PREFIX}/${EMACS_LIBDIR_WITH_VER}/site-lisp
+PLIST_SUB=	ELISPDIR="${EMACS_LIBDIR_WITH_VER}/site-lisp"
 
 pre-configure:
-	@${PERL} -pi -e 's|emacs/site-lisp|emacs/${EMACS_VER}/site-lisp|g' \
+	@${PERL} -pi -e 's|emacs/site-lisp|${EMACS_NAME}/${EMACS_VER}/site-lisp|g' \
 	    ${WRKSRC}/configure
 
 .include <bsd.port.mk>
