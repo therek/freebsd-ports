@@ -2,11 +2,11 @@
 # Date created:        31 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/audio/normalize/Makefile,v 1.2 2001/02/04 21:12:52 olgeni Exp $
+# $FreeBSD: ports/audio/normalize/Makefile,v 1.3 2001/02/20 13:59:56 sf Exp $
 #
 
 PORTNAME=	normalize
-PORTVERSION=	0.4
+PORTVERSION=	0.5.2
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cs.columbia.edu/~cvaill/normalize/
 
