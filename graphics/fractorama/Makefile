@@ -3,11 +3,11 @@
 # Date created:			Apr 15, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/fractorama/Makefile,v 1.1 2001/04/15 11:15:26 ijliao Exp $
 #
 
 PORTNAME=	fractorama
-PORTVERSION=	1.5.1E
+PORTVERSION=	1.5.8
 CATEGORIES=	graphics
 MASTER_SITES=	http://fractorama.com/
 DISTNAME=	${PORTNAME}
