@@ -3,7 +3,7 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.47 1999/11/09 09:54:05 nakai Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.48 1999/11/20 11:33:31 nakai Exp $
 #
 
 DISTNAME=	gnome-libs-1.0.54
@@ -30,7 +30,7 @@ LIBTOOLFILES=	configure libart_lgpl/configure
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--disable-test-gnome
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
