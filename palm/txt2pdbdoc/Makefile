@@ -2,11 +2,11 @@
 # Date created:         Mon Jan 8 2001
 # Whom:                 keichii@iteration.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/palm/txt2pdbdoc/Makefile,v 1.1 2001/01/08 19:04:06 clive Exp $
 #
 
 PORTNAME=	txt2pdbdoc
-PORTVERSION=	1.2.1
+PORTVERSION=	1.3
 CATEGORIES=	palm converters
 MASTER_SITES=	http://homepage.mac.com/pauljlucas/software/
 
