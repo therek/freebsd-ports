@@ -2,11 +2,10 @@
 # Date created:        29 November 2003
 # Whom:                Autrijus Tang <autrijus@autrijus.org>
 #
-# $FreeBSD: ports/mail/sympa-elixus/Makefile,v 1.4 2004/03/17 07:09:53 demon Exp $
+# $FreeBSD$
 #
 
-PORTVERSION=	10527
-PORTREVISION=	0
+PORTVERSION=	20041024
 MASTER_SITES=	http://p4.elixus.org/hist/
 PKGNAMESUFFIX=	-elixus
 
@@ -20,8 +19,5 @@ MD5_FILE=	${.CURDIR}/distinfo
 PATCHDIR=	${.CURDIR}/files
 DESCR=		${.CURDIR}/pkg-descr
 PLIST=		${.CURDIR}/pkg-plist
-PKGINSTALL=	${MASTERDIR}/pkg-install
-PKGDEINSTALL=	${MASTERDIR}/pkg-deinstall
-WRKSRC=		${WRKDIR}/sympa
 
 .include "${MASTERDIR}/Makefile"
