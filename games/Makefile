@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.257 2000/02/22 22:18:52 jedgar Exp $
+# $FreeBSD: ports/games/Makefile,v 1.258 2000/02/23 00:56:56 jedgar Exp $
 #
 
     SUBDIR += 3dc
@@ -48,6 +48,7 @@
     SUBDIR += flightgear
     SUBDIR += flying
     SUBDIR += freeciv
+    SUBDIR += freeciv-gtk
     SUBDIR += freesweep
     SUBDIR += frotz
     SUBDIR += galaxis
