@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.161 2001/01/15 04:40:10 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.162 2001/01/20 00:13:11 roam Exp $
 #
 
     SUBDIR += aafid2
@@ -78,6 +78,7 @@
     SUBDIR += p5-Crypt-Blowfish
     SUBDIR += p5-Crypt-CBC
     SUBDIR += p5-Crypt-CipherSaber
+    SUBDIR += p5-Crypt-Cracklib
     SUBDIR += p5-Crypt-DES
     SUBDIR += p5-Crypt-ECB
     SUBDIR += p5-Crypt-IDEA
