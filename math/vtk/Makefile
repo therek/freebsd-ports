@@ -2,7 +2,7 @@
 # Date created:         24 Nov 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/vtk/Makefile,v 1.11 2000/06/16 21:51:38 asami Exp $
+# $FreeBSD: ports/math/vtk/Makefile,v 1.12 2000/08/03 09:25:43 asami Exp $
 #
 
 PORTNAME=	vtk
@@ -31,7 +31,7 @@ RUN_DEPENDS+=	python:${PORTSDIR}/lang/python
 
 .if defined(WITH_PATENTED)
 CONFIGURE_ARGS+=	--with-patented
-PLIST=		${PKGDIR}/PLIST.with_patented
+PLIST=		${PKGDIR}/pkg-plist.with_patented
 .endif
 
 post-install:
