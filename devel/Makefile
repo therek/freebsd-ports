@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.306 2000/06/30 15:15:42 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.307 2000/07/02 23:36:23 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -248,6 +248,7 @@
     SUBDIR += tvision
     SUBDIR += uclmmbase
     SUBDIR += ups-debug
+    SUBDIR += viewcvs
     SUBDIR += vtcl
     SUBDIR += xmake
     SUBDIR += xwpe
