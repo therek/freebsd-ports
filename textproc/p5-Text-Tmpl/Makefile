@@ -2,11 +2,11 @@
 # Date created:				31 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-Tmpl/Makefile,v 1.2 2001/03/01 06:39:00 vanilla Exp $
+# $FreeBSD: ports/textproc/p5-Text-Tmpl/Makefile,v 1.3 2001/06/12 19:25:38 tobez Exp $
 #
 
 PORTNAME=	Text-Tmpl
-PORTVERSION=	0.23
+PORTVERSION=	0.24
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text

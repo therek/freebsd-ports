@@ -2,11 +2,11 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/print/p5-Text-PDF/Makefile,v 1.4 2001/05/19 19:49:33 ijliao Exp $
+# $FreeBSD: ports/print/p5-Text-PDF/Makefile,v 1.5 2001/06/12 19:25:14 tobez Exp $
 #
 
 PORTNAME=	Text-PDF
-PORTVERSION=	0.14
+PORTVERSION=	0.15
 CATEGORIES=	print perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Text
