@@ -2,7 +2,7 @@
 # Date created:		1 October 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.2 2000/10/23 11:39:17 jeh Exp $
+# $FreeBSD: ports/chinese/xemacs21/Makefile,v 1.3 2000/11/06 18:15:21 keith Exp $
 #
 
 CATEGORIES=	chinese editors
@@ -16,7 +16,7 @@ WITH_XIM=	xlib
 BUILD_INPUT_METHOD=	xcin2.5:${PORTSDIR}/chinese/xcin25
 
 # xemacs21-mule-common needs this.
-WRKDIR=		${.CURDIR}/../../editors/xemacs21-mule/work
+WRKDIR=		${WRKDIRPREFIX}${.CURDIR}/../../editors/xemacs21-mule/work
 
 # Fix mule-init.el
 post-patch::
