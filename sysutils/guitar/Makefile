@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 14 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.3 2000/04/09 19:07:46 cpiazza Exp $
+# $FreeBSD: ports/sysutils/guitar/Makefile,v 1.4 2000/04/22 10:12:31 mharo Exp $
 #
 
 PORTNAME=	guiTAR
@@ -25,7 +25,7 @@ CONFIGURE_ENV=  GTK_CONFIG="${GTK_CONFIG}"
 .if defined(NO_GNOME)
 CONFIGURE_ARGS	+=	--disable-gnome
 .else
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 do-install:

@@ -2,7 +2,7 @@
 # Date created:                         03/09/2000
 # Whom:                                 smoberly@xavier.dyndns.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.1 2000/05/01 03:06:14 steve Exp $
 #
 
 PORTNAME=	bulb
@@ -12,8 +12,7 @@ MASTER_SITES=	http://www.idiap.ch/~gobry/bulb/
 
 MAINTAINER=	smoberly@xavier.dyndns.org
 
-LIB_DEPENDS=	panel_applet.2:${PORTSDIR}/x11/gnomecore \
-		intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

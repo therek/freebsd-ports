@@ -2,19 +2,19 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.3 2000/02/18 02:22:56 nakai Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.4 2000/04/14 00:25:23 mharo Exp $
 #
 
 PORTNAME=	dedit
 PORTVERSION=	0.5.6
-CATEGORIES=	editors
+CATEGORIES=	editors gnome
 MASTER_SITES=	ftp://ftp.debian.org/debian/dists/unstable/main/source/editors/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	iconv.0:${PORTSDIR}/converters/iconv \
-		gnome.3:${PORTSDIR}/x11/gnomelibs
+		gnome.4:${PORTSDIR}/x11/gnomelibs
 BUILD_DEPENDS=	automake:${PORTSDIR}/devel/automake
 
 WRKSRC=		${WRKDIR}/dedit-0.5.6
@@ -25,8 +25,7 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASSE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib -liconv"

@@ -2,19 +2,19 @@
 # Date created:		26 Jan 1998
 # Whom:			griffin
 #
-# $FreeBSD: ports/irc/bitchx/Makefile,v 1.13 2000/04/12 06:28:05 obrien Exp $
+# $FreeBSD: ports/irc/bitchx/Makefile,v 1.14 2000/04/17 00:17:50 reg Exp $
 #
 
 PORTNAME=	BitchX
 PORTVERSION=	1.0c16
-CATEGORIES=	irc
+CATEGORIES=	irc gnome
 MASTER_SITES=	ftp://ftp.bitchx.com/pub/BitchX/source/ \
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
 
 MAINTAINER=	calle.madestrand@norrgarden.se
 
 .if defined(WITH_GNOME)
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

@@ -2,7 +2,7 @@
 # Date created:		30 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/glacier/Makefile,v 1.3 2000/03/24 00:44:31 mharo Exp $
+# $FreeBSD: ports/mail/glacier/Makefile,v 1.4 2000/04/13 19:59:42 cpiazza Exp $
 #
 
 PORTNAME=	glacier
@@ -12,7 +12,7 @@ MASTER_SITES=	http://glacier.linuxave.net/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes

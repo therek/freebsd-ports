@@ -2,7 +2,7 @@
 # Date created:			9 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/audio/yamt/Makefile,v 1.3 2000/04/08 21:25:03 mharo Exp $
+# $FreeBSD: ports/audio/yamt/Makefile,v 1.4 2000/04/20 00:36:21 mharo Exp $
 #
 
 PORTNAME=	yamt
@@ -13,8 +13,7 @@ MASTER_SITES=	http://download.sourceforge.net/yamt/ \
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gnomeui.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -2,12 +2,12 @@
 # Date created:         Mon Nov 18 21:28:43 CST 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.71 2000/05/30 06:47:14 sobomax Exp $
+# $FreeBSD: ports/graphics/gimp1/Makefile,v 1.72 2000/06/01 16:11:58 sobomax Exp $
 #
 
 PORTNAME=	gimp
 PORTVERSION=	1.1.23
-CATEGORIES=	graphics
+CATEGORIES=	graphics gnome
 MASTER_SITES=	ftp://ftp.gimp.org/pub/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.insync.net/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
 		ftp://ftp.ameth.org/pub/mirrors/ftp.gimp.org/gimp/unstable/v${PORTVERSION}/ \
@@ -66,7 +66,7 @@ pre-fetch:
 
 .if defined(WITH_GNOME) || (exists(${X11BASE}/bin/gnome-config) \
     && !defined(WITHOUT_GNOME))
-LIB_DEPENDS+=	gtkxmhtml.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS+=	gtkxmhtml.4:${PORTSDIR}/x11/gnomelibs
 pre-install:
 	@${CAT} ${PLISTORIG} > ${PLIST}
 .else

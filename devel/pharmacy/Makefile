@@ -2,7 +2,7 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.4 2000/02/19 14:46:44 jedgar Exp $
+# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.5 2000/04/11 21:30:06 mharo Exp $
 #
 
 PORTNAME=	pharmacy
@@ -12,7 +12,7 @@ MASTER_SITES=	http://home.earthlink.net/~nawalker/pharmacy/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

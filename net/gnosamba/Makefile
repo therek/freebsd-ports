@@ -2,17 +2,17 @@
 # Date created:				4 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/gtksamba/Makefile,v 1.13 2000/04/15 12:57:13 imura Exp $
+# $FreeBSD: ports/net/gnosamba/Makefile,v 1.14 2000/04/30 19:34:20 steve Exp $
 #
 
 PORTNAME=	gnosamba
 PORTVERSION=	0.3.3
-CATEGORIES=	net
+CATEGORIES=	net gnome
 MASTER_SITES=	http://www.open-systems.com/gnosamba/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

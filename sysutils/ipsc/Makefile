@@ -2,7 +2,7 @@
 # Date created:		31 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.7 2000/04/22 10:12:34 mharo Exp $
+# $FreeBSD: ports/sysutils/ipsc/Makefile,v 1.8 2000/04/27 05:01:53 will Exp $
 #
 
 PORTNAME=	ipsc
@@ -15,8 +15,7 @@ MAINTAINER=	jeremy@external.org
 
 BUILD_DEPENDS=	${WRKDIRPREFIX}${PORTSDIR}/sysutils/prips/work/prips/prips.o:${PORTSDIR}/sysutils/prips:build
 .if defined(WITH_GNOME)
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 .if defined(WITH_GNOME)

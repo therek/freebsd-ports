@@ -2,19 +2,19 @@
 # Date created:			8 August 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gaddr/Makefile,v 1.6 2000/04/08 22:03:26 mharo Exp $
+# $FreeBSD: ports/deskutils/gaddr/Makefile,v 1.7 2000/04/17 00:17:17 reg Exp $
 #
 
 PORTNAME=	gaddr
 PORTVERSION=	1.1.4
-CATEGORIES=	deskutils
+CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://www.cse.unl.edu/~cluening/gaddr/
 
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 .if defined(WITH_GNOME)
-LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.21 2000/05/02 13:42:35 jedgar Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.22 2000/05/18 15:16:21 ade Exp $
 #
 
 PORTNAME=	pan
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://source.rebelbase.com/pub/pan/${PORTVERSION}/
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

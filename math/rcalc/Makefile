@@ -2,7 +2,7 @@
 # Date created:				28 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/math/rcalc/Makefile,v 1.2 2000/04/14 07:20:32 asami Exp $
+# $FreeBSD: ports/math/rcalc/Makefile,v 1.3 2000/04/20 22:39:53 jedgar Exp $
 #
 
 PORTNAME=	rcalc
@@ -13,7 +13,7 @@ DISTNAME=	rCalc-${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

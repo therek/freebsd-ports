@@ -3,22 +3,19 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.13 2000/03/28 18:30:14 obrien Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.14 2000/04/08 22:03:34 mharo Exp $
 #
 
 PORTNAME=	gnucash
 PORTVERSION=	1.3.4
-CATEGORIES=	deskutils
+CATEGORIES=	deskutils gnome
 MASTER_SITES=	ftp://www.gnucash.org/pub/gnucash/gnucash/sources/unstable/1.3.x/
 
 MAINTAINER=     obrien@FreeBSD.org
 
 BUILD_DEPENDS=	swig:${PORTSDIR}/devel/SWIG \
 		eperl:${PORTSDIR}/lang/eperl
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		glib12.3:${PORTSDIR}/devel/glib12 \
-		gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		guile.6:${PORTSDIR}/lang/guile
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 RUN_DEPENDS=	slib48:${PORTSDIR}/lang/slib  \

@@ -2,7 +2,7 @@
 # Date created:			10 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/gnomba/Makefile,v 1.1 2000/01/14 20:17:06 cpiazza Exp $
+# $FreeBSD: ports/net/gnomba/Makefile,v 1.2 2000/04/09 18:11:25 cpiazza Exp $
 #
 
 PORTNAME=	gnomba
@@ -13,8 +13,7 @@ MASTER_SITES=	http://gnomba.darkcorner.net/tars/ \
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		gnomeui.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -2,12 +2,12 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.53 2000/05/25 19:02:05 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.54 2000/05/25 22:48:24 jim Exp $
 #
 
 PORTNAME=		xchat
 PORTVERSION=		1.5.2
-CATEGORIES=		irc
+CATEGORIES=		irc gnome
 MASTER_SITES=		http://xchat.org/files/source/1.5/ \
 			http://xchat.linuxpower.org/files/source/1.5/
 
@@ -19,7 +19,7 @@ BUILD_DEPENDS+=		${LOCALBASE}/lib/libsocks5.a:${PORTSDIR}/net/socks5
 LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 			Imlib.5:${PORTSDIR}/graphics/imlib
 .if defined(WITH_GNOME)
-LIB_DEPENDS+=		gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS+=		gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 GTK_CONFIG?=		${X11BASE}/bin/gtk12-config

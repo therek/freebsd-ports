@@ -2,7 +2,7 @@
 # Date created:				17th February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.2 2000/04/09 21:52:33 cpiazza Exp $
+# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.3 2000/04/21 17:07:40 ade Exp $
 #
 
 PORTNAME=	gaspell
@@ -13,8 +13,8 @@ DISTNAME=	${PORTNAME}-.29.1
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	${LOCALBASE}/bin/aspell:${PORTSDIR}/textproc/aspell
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+RUN_DEPENDS=	aspell:${PORTSDIR}/textproc/aspell
 
 USE_NEWGCC=	yes
 ALL_TARGET=	gaspell

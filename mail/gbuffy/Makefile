@@ -2,12 +2,12 @@
 # Date created:		2 October 1999
 # Whom:			kaj@Raditex.se
 #
-# $FreeBSD: ports/mail/gbuffy/Makefile,v 1.2 1999/10/07 03:58:26 cpiazza Exp $
+# $FreeBSD: ports/mail/gbuffy/Makefile,v 1.3 2000/04/13 19:59:40 cpiazza Exp $
 #
 
 PORTNAME=	gbuffy
 PORTVERSION= 	0.2.2
-CATEGORIES=	mail gnome
+CATEGORIES=	mail
 MASTER_SITES=	http://www.fiction.net/blong/programs/gbuffy/
 
 MAINTAINER=	kaj@Raditex.se

@@ -2,7 +2,7 @@
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/genius/Makefile,v 1.6 2000/04/06 17:49:57 ade Exp $
+# $FreeBSD: ports/deskutils/genius/Makefile,v 1.7 2000/04/08 22:03:29 mharo Exp $
 #
 
 PORTNAME=	genius
@@ -22,8 +22,7 @@ USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		GTK_CONFIG="${GTK_CONFIG}" \

@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.10 2000/04/21 16:09:33 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.11 2000/05/17 16:32:30 ade Exp $
 #
 
 PORTNAME=	bonobo
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	unstable/sources/bonobo
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 

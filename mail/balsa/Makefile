@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.16 2000/05/26 13:54:45 sobomax Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.17 2000/05/29 14:33:54 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.newton.cx/pub/balsa/ \
 MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		PropList.2:${PORTSDIR}/devel/libPropList
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:        			21st April 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.1 2000/05/18 16:08:01 ade Exp $
 #
 
 PORTNAME=	junglemonkey
@@ -13,7 +13,7 @@ DISTNAME=	jm-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnet.0:${PORTSDIR}/net/gnet \
 		popt.0:${PORTSDIR}/devel/popt \
 		glade.3:${PORTSDIR}/devel/libglade

@@ -2,7 +2,7 @@
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.7 2000/04/21 16:53:17 ade Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.8 2000/05/17 16:35:01 ade Exp $
 #
 
 PORTNAME=	gnomepilot
@@ -15,7 +15,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	gob:${PORTSDIR}/x11-toolkits/gob
 LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
-		capplet.1:${PORTSDIR}/sysutils/gnomecontrolcenter
+		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
