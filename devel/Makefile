@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.231 1999/11/23 03:46:08 jkoshy Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.232 1999/11/26 20:15:50 steve Exp $
 #
 
     SUBDIR += ElectricFence
@@ -79,6 +79,7 @@
     SUBDIR += libslang
     SUBDIR += libtool
     SUBDIR += libxalloc
+    SUBDIR += linuxthreads
     SUBDIR += linux_devtools
     SUBDIR += linux_kdump
     SUBDIR += m4
