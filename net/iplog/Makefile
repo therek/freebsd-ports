@@ -1,14 +1,21 @@
 # New ports collection makefile for:        iplog
-# Version required:	2.0-1017
+# Version required:	2.1.2
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.1.1.1 1999/10/09 16:40:11 dan Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.2 1999/10/26 03:28:28 mharo Exp $
 #
 
-DISTNAME=	iplog-2.0-1017
+DISTNAME=	iplog-2.1.0
+PKGNAME= 	iplog-2.1.2
 CATEGORIES=	security
-MASTER_SITES=	http://www.numb.org/~odin/stuff/
+MASTER_SITES=	http://download.sourceforge.net/ojnk/ \
+		ftp://ftp.karlsbakk.net/pub/ojnk/iplog/
+
+PATCH_SITES=	http://ojnk.sourceforge.net/stuff/ \
+		ftp://ftp.karlsbakk.net/pub/ojnk/iplog/
+PATCHFILES=	iplog-2.1.0-2.diff
+PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	dr@domix.de
 
@@ -16,11 +23,16 @@ GNU_CONFIGURE=	yes
 MAKE_FLAGS=	CONF_ARGS="--prefix=${PREFIX}"
 USE_GMAKE=	yes
 
+MAN5=	iplog.rules.5
 MAN8=	iplog.8
+
+.include <bsd.port.pre.mk>
 
 post-install:
 	strip ${PREFIX}/sbin/iplog
-	${CP} ${WRKSRC}/example-iplog.rules ${PREFIX}/etc/iplog.rules.sample
+.if !exists(${PREFIX}/etc/iplog.rules)
 	${CP} ${WRKSRC}/example-iplog.rules ${PREFIX}/etc/iplog.rules
+.endif
+	${CP} ${WRKSRC}/example-iplog.rules ${PREFIX}/etc/iplog.rules.sample
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
