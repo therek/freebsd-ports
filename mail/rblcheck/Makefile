@@ -2,12 +2,12 @@
 # Date created:		28 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.14 2001/08/18 08:24:28 knu Exp $
+# $FreeBSD: ports/mail/rblcheck/Makefile,v 1.15 2001/08/24 02:39:02 dwcjr Exp $
 #
 
 PORTNAME=	rblcheck
 PORTVERSION=	1.4
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
