@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.147 2000/12/19 19:10:06 obrien Exp $
+# $FreeBSD: ports/security/Makefile,v 1.148 2000/12/31 10:37:42 will Exp $
 #
 
     SUBDIR += aafid2
@@ -67,6 +67,7 @@
     SUBDIR += openssh
     SUBDIR += openssh-askpass
     SUBDIR += openssl
+    SUBDIR += outguess
     SUBDIR += p5-Authen-PAM
     SUBDIR += p5-Authen-Radius
     SUBDIR += p5-Crypt-Blowfish
