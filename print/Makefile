@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.132 2001/01/09 01:55:03 taoka Exp $
+# $FreeBSD: ports/print/Makefile,v 1.133 2001/01/09 01:56:33 taoka Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -75,6 +75,7 @@
     SUBDIR += pdflib3
     SUBDIR += pdq
     SUBDIR += perlftlib
+    SUBDIR += pic2fig
     SUBDIR += pips-sc680_777
     SUBDIR += pips2200
     SUBDIR += pips3000
