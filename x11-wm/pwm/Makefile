@@ -2,7 +2,7 @@
 # Date created:		02 Oct 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/pwm/Makefile,v 1.1 2000/10/01 22:28:51 nbm Exp $
 #
 
 PORTNAME=	pwm
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.students.tut.fi/~tuomov/dl/
 
 MAINTAINER=	nbm@FreeBSD.org
 
+USE_XLIB=	YES
 USE_GMAKE=	YES
 
 MAN1=		pwm.1x
