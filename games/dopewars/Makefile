@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dopewars
-# Version required:		1.4.4
+# Version required:		1.4.5
 # Date created:			16 May 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/dopewars/Makefile,v 1.4 1999/08/25 06:03:17 obrien Exp $
+# $FreeBSD: ports/games/dopewars/Makefile,v 1.5 1999/09/19 03:46:46 jim Exp $
 #
 
-DISTNAME=	dopewars-1.4.4
+DISTNAME=	dopewars-1.4.5
 CATEGORIES=	games
 MASTER_SITES=	http://bellatrix.pcl.ox.ac.uk/~ben/dopewars/
 
