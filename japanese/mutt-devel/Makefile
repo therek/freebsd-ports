@@ -2,7 +2,7 @@
 # Date created:		4 Sep 2000
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.19 2001/02/14 22:21:32 sf Exp $
+# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.20 2001/03/09 20:21:16 sf Exp $
 #
 
 PORTNAME=	mutt
@@ -29,7 +29,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 .endif
 RUN_DEPENDS=	urlview:${PORTSDIR}/textproc/urlview
 
-VERSION=	1.3.16
+VERSION=	1.3.17
 JP_VERSION=	0
 
 DIST_SUBDIR=	mutt
@@ -49,8 +49,16 @@ CONFIGURE_ARGS=	--with-slang --enable-locales-fix \
 .if defined(WITH_GETTEXT)
 CONFIGURE_ARGS+=	--with-included-gettext
 .endif
+
 MAN1=		flea.1 mutt.1 muttbug.1 mutt_dotlock.1
 MAN5=		muttrc.5 mbox.5
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+USE_OPENSSL=	yes
+CONFIGURE_ARGS+=	--with-ssl
+.endif
 
 DIFFDIR=	${WRKDIR}/${DISTNAME}-ja${JP_VERSION}
 DIFFNAME=	${DISTNAME}-ja${JP_VERSION}.diff
@@ -74,4 +82,4 @@ post-install:
 	${INSTALL_DATA} ${SRCDOCDIR}/manual_ja.html ${DOCDIR}
 	${INSTALL_DATA} ${SRCDOCDIR}/manual_ja.sgml ${DOCDIR}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
