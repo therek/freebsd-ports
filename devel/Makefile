@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.227 1999/10/27 09:10:16 asami Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.228 1999/10/27 09:17:36 asami Exp $
 #
 
     SUBDIR += ElectricFence
@@ -137,6 +137,7 @@
     SUBDIR += pccts
     SUBDIR += pcre
     SUBDIR += pharmacy
+    SUBDIR += picprog
     SUBDIR += pmake
     SUBDIR += portcheckout
     SUBDIR += portlint
