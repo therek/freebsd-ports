@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.375 2001/06/27 01:50:38 jeh Exp $
+# $FreeBSD: ports/www/Makefile,v 1.376 2001/07/03 08:44:23 roam Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -85,6 +85,7 @@
     SUBDIR += hypermail
     SUBDIR += indexme
     SUBDIR += jakarta-tomcat
+    SUBDIR += jdresolve
     SUBDIR += jesred
     SUBDIR += jetty
     SUBDIR += junkbuster
