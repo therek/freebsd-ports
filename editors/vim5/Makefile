@@ -4,7 +4,7 @@
 # Date created:         Sat June 29, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.53 1999/10/25 06:02:01 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.54 1999/10/25 23:15:19 obrien Exp $
 #
 
 DISTNAME=	vim-5.5
@@ -63,7 +63,6 @@ MAKE_FLAGS:=	CONF_OPT_PERL="--enable-perlinterp --enable-tclinterp --enable-csco
 
 .else	# LITE
 PLIST=		${WRKDIR}/PLIST.nogui
-MAKE_FLAGS:=	CONF_OPT_MAX="--enable-min-features" ${MAKE_FLAGS}
 MAKE_FLAGS:=	CONF_OPT_GUI="--enable-gui=no --without-x" ${MAKE_FLAGS}
 MAKE_FLAGS:=	CONF_OPT_PERL="--disable-perlinterp --disable-tclinterp" ${MAKE_FLAGS}
 .endif	# LITE
