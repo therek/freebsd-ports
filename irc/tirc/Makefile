@@ -2,13 +2,13 @@
 # Date created:		14 August 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/irc/tirc/Makefile,v 1.5 2000/04/12 06:28:29 obrien Exp $
+# $FreeBSD: ports/irc/tirc/Makefile,v 1.6 2000/11/05 18:47:50 dougb Exp $
 #
 
 PORTNAME=	tirc
 PORTVERSION=	1.2
 CATEGORIES=	irc
-MASTER_SITES=	ftp://ftp.mayn.de/pub/unix/Network/Irc/tirc/
+MASTER_SITES=	ftp://ftp.mayn.de/pub/unix/network/irc/tirc/
 
 MAINTAINER=	dr@astorit.com
 
