@@ -2,11 +2,12 @@
 # Date created:		28 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/panda/Makefile,v 1.1 2001/03/28 09:33:32 knu Exp $
 #
 
 PORTNAME=	panda
 PORTVERSION=	0.4.p1
+PORTREVISION=	1
 CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	panda
