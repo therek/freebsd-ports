@@ -1,9 +1,9 @@
 # New ports collection makefile for:	Apache + mod_ssl
-# Version required:	1.3.11 + 2.5.0
+# Version required:	1.3.12 + 2.6.0
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.60 2000/02/24 12:15:23 rse Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.61 2000/02/25 23:29:52 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -48,8 +48,8 @@ USE_OPENSSL=	RSA
 BUILD_DEPENDS=	mm-config:${PORTSDIR}/devel/mm \
 		${PREFIX}/lib/libmm.a:${PORTSDIR}/devel/mm
 
-VERSION_APACHE=	1.3.11
-VERSION_MODSSL=	2.5.0
+VERSION_APACHE=	1.3.12
+VERSION_MODSSL=	2.6.0
 
 Y2K=		http://www.modssl.org/docs/2.5/ssl_faq.html#y2k
 
