@@ -2,11 +2,11 @@
 # Date created:		6 August 1999
 # Whom:			arensb@ooblick.com
 #
-# $FreeBSD: ports/mail/gensig/Makefile,v 1.1.1.1 1999/10/02 23:56:21 cpiazza Exp $
+# $FreeBSD: ports/mail/gensig/Makefile,v 1.2 2000/04/13 19:59:41 cpiazza Exp $
 #
 
 PORTNAME=	gensig
-PORTVERSION= 	2.2
+PORTVERSION=	2.2
 CATEGORIES=	mail
 MASTER_SITES=	http://www.geeks.com/~robf/ware/gensig/ \
 		http://www.ooblick.com/software/gensig/
