@@ -2,7 +2,7 @@
 # Date created:		11-Oct-99
 # Whom:			johnh@isi.edu
 #
-# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.9 2001/01/19 22:16:40 roam Exp $
+# $FreeBSD: ports/sysutils/lavaps/Makefile,v 1.10 2001/01/19 23:56:11 roam Exp $
 #
 
 PORTNAME=	lavaps
