@@ -2,13 +2,14 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/fhttpd/Makefile,v 1.6 2001/01/07 17:49:51 will Exp $
+# $FreeBSD: ports/www/fhttpd/Makefile,v 1.7 2001/02/05 15:33:21 olgeni Exp $
 #
 
 PORTNAME=	fhttpd
 PORTVERSION=	0.4.2
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.fhttpd.org/
+MASTER_SITES=	http://www.fhttpd.org/ \
+		ftp://ftp.fhttpd.org/
 
 MAINTAINER=	ports@FreeBSD.org
 
