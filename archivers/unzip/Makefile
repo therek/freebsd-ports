@@ -2,13 +2,14 @@
 # Date created:		17 October 1994
 # Whom:			jmz
 #
-# $FreeBSD: ports/archivers/unzip/Makefile,v 1.33 2001/02/07 18:48:58 ache Exp $
+# $FreeBSD: ports/archivers/unzip/Makefile,v 1.34 2001/02/14 05:41:49 lioux Exp $
 #
 
 PORTNAME=	unzip
 PORTVERSION=	5.42
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/infozip/src/
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/infozip/src/ \
+		${MASTER_SITE_TEX_CTAN:S,%SUBDIR%,tools/zip/info-zip/src/,}
 DISTNAME=	${PORTNAME}542
 
 MAINTAINER=	ache@FreeBSD.org
