@@ -2,18 +2,15 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.24 2000/06/26 16:14:26 ade Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.25 2000/10/05 07:10:30 reg Exp $
 #
 
 PORTNAME=	glade
-PORTVERSION=	0.5.9
+PORTVERSION=	0.5.11
 CATEGORIES=	devel gnome
-MASTER_SITES=   ${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	stable/sources/glade
+MASTER_SITES=   http://glade.pn.org/
 
 MAINTAINER=     ade@FreeBSD.org
-
-FETCH_BEFORE_ARGS=	-b
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
@@ -28,7 +25,6 @@ pre-patch:
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
-		 s|\$\(datadir\)/\@PACKAGE\@|\$\(prefix\)/share/\@PACKAGE\@|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
