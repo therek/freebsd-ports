@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.322 2001/02/12 22:30:45 jeh Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.323 2001/02/13 15:42:06 ijliao Exp $
 #
 
     SUBDIR += 221upgrade
@@ -153,6 +153,7 @@
     SUBDIR += tkman
     SUBDIR += tkregexp
     SUBDIR += tkrunit
+    SUBDIR += ttyrec
     SUBDIR += tvguide
     SUBDIR += uk-phone
     SUBDIR += uk-postcodes
