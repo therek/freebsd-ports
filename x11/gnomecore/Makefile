@@ -2,7 +2,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.48 2000/10/24 16:42:40 ade Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.49 2000/11/06 22:31:59 ade Exp $
 #
 
 PORTNAME=	gnomecore
@@ -16,7 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml \
 		bz2.1:${PORTSDIR}/archivers/bzip2
-RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio \
+RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
