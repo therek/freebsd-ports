@@ -2,11 +2,11 @@
 # Date created:		15 May 2001
 # Whom:			jasone
 #
-# $FreeBSD: ports/lang/onyx/Makefile,v 1.1 2001/07/18 09:12:42 jasone Exp $
+# $FreeBSD: ports/lang/onyx/Makefile,v 1.2 2001/07/18 14:58:32 jasone Exp $
 #
 
 PORTNAME=	onyx
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.0
 CATEGORIES=	lang
 MASTER_SITES=	http://www.canonware.com/download/onyx/
 
