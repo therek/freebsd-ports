@@ -2,50 +2,33 @@
 # Date created:		19 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/migemo-emacs20/Makefile,v 1.3 2001/05/24 02:16:33 knu Exp $
+# $FreeBSD: ports/japanese/migemo/Makefile,v 1.4 2001/07/23 03:55:42 knu Exp $
 #
 
 PORTNAME=	migemo
-PORTVERSION=	0.3
+PORTVERSION=	0.32
 PORTEPOCH=	1
 CATEGORIES=	japanese elisp
 MASTER_SITES=   http://migemo.namazu.org/stable/
-PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 
 MAINTAINER=	nobutaka@nobutaka.com
 
-EMACS_PORT_NAME?=	emacs20
-
-.if (${EMACS_PORT_NAME} == "xemacs21-mule")
-EMACS_PACKAGESDIR=	lib/xemacs/site-packages
-
-BUILD_DEPENDS=	${LOCALBASE}/${EMACS_PACKAGESDIR}/lisp/apel/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
-RUN_DEPENDS=	${LOCALBASE}/${EMACS_PACKAGESDIR}/lisp/apel/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
-.else
-BUILD_DEPENDS=	${LOCALBASE}/${EMACS_LIBDIR_WITH_VER}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
-RUN_DEPENDS=	${LOCALBASE}/${EMACS_LIBDIR_WITH_VER}/site-lisp/emu/emu.el:${PORTSDIR}/editors/apel-${EMACS_PORT_NAME}
+.if !defined(EMACS_PORT_NAME)
+USE_AUTOMAKE=	yes
+EXTRA_PATCHES=	${FILESDIR}/extra-patch-Makefile.am ${FILESDIR}/extra-patch-configure.in
+PLIST_SUB=	MIGEMO="" ELISP="@comment "
 .endif
 
-USE_AUTOMAKE=	yes
 USE_RUBY=	yes
 BUILD_DEPENDS+=	${RUBY_SITELIBDIR}/romkan.rb:${PORTSDIR}/japanese/ruby-romkan \
 		${RUBY_SITELIBDIR}/bsearch.rb:${PORTSDIR}/devel/ruby-bsearch
 RUN_DEPENDS+=	${RUBY_SITELIBDIR}/romkan.rb:${PORTSDIR}/japanese/ruby-romkan \
 		${RUBY_SITELIBDIR}/bsearch.rb:${PORTSDIR}/devel/ruby-bsearch
 
-CONFIGURE_ARGS=		--with-rubydir=${RUBY_SITELIBDIR} --with-emacs=${EMACS_CMD}
-.if (${EMACS_PORT_NAME} == "xemacs21-mule")
-CONFIGURE_ARGS+=	--with-lispdir=${PREFIX}/${EMACS_LIBDIR}/site-lisp
-.endif
-
-.include <bsd.port.pre.mk>
-
-post-configure:
-	${RUBY} -i -pe 'sub /@list=/, "list="' ${WRKSRC}/${MAKEFILE}
+CONFIGURE_ARGS+=--with-rubydir=${RUBY_SITELIBDIR}
 
 post-install:
-	@${MKDIR} ${PREFIX}/share/doc/migemo
-	@${MV} ${PREFIX}/share/migemo/migemo.ja.html ${PREFIX}/share/doc/migemo
-	@${CAT} ${PKGMESSAGE}
+	@${MKDIR} -p ${DOCSDIR}
+	@${MV} ${PREFIX}/share/migemo/migemo.ja.html ${DOCSDIR}
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
