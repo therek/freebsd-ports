@@ -2,11 +2,11 @@
 # Date created:                 15 June 2000
 # Whom:                         shigeri <shigeri@m10.alpha-net.ne.jp>
 #
-# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.2 2000/06/06 08:03:45 nakai Exp $
+# $FreeBSD: ports/mail/sylpheed/Makefile,v 1.3 2000/06/16 07:20:36 nakai Exp $
 #
 
 PORTNAME=	sylpheed
-PORTVERSION=	0.3.17
+PORTVERSION=	0.3.18
 CATEGORIES=	mail
 MASTER_SITES=	http://www.kcn.ne.jp/~hiro-y/sylpheed/
 
