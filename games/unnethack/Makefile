@@ -2,11 +2,11 @@
 # Date created:	15th April 2001
 # Whom:	Adam Kranzel (adam@alameda.edu)
 #
-# $FreeBSD: ports/games/slashem-tty/Makefile,v 1.2 2001/06/26 20:28:23 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slashem
-PORTVERSION=	0.0.6E.4F.5
+PORTVERSION=	0.0.6E.4F.6
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
