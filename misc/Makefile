@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.234 1999/09/09 15:11:05 taoka Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.235 1999/09/17 15:00:53 jseger Exp $
 #
 
     SUBDIR += 221upgrade
@@ -85,6 +85,7 @@
     SUBDIR += sls
     SUBDIR += sma
     SUBDIR += splitvt
+    SUBDIR += sshbuddy
     SUBDIR += tcb
     SUBDIR += team
     SUBDIR += tet
