@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.239 1999/11/27 03:05:31 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.240 1999/11/27 21:31:30 steve Exp $
 #
 
     SUBDIR += Canna
@@ -259,7 +259,6 @@
     SUBDIR += weblint97
     SUBDIR += wine
     SUBDIR += word
-    SUBDIR += xemacs
     SUBDIR += xemacs-canna
     SUBDIR += xemacs-canna+wnn4
     SUBDIR += xemacs-canna+wnn6
