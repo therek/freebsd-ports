@@ -3,7 +3,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.15 1999/10/16 06:53:28 vanilla Exp $
+# $FreeBSD: ports/net/gnome-icu/Makefile,v 1.16 2000/01/16 06:19:36 vanilla Exp $
 #
 
 DISTNAME=		gnomeicu-0.90b
@@ -20,7 +20,9 @@ GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=		YES
 USE_BZIP2=		YES
 GNU_CONFIGURE=		YES
-CONFIGURE_ENV=		GTK_CONFIG="${GTK_CONFIG}"
+CONFIGURE_ENV=		GTK_CONFIG="${GTK_CONFIG}" \
+			CPPFLAGS="-I${LOCALBASE}/include" \
+			LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=		--datadir=${PREFIX}/share/gnome
 
 .include <bsd.port.mk>
