@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.249 2001/08/29 16:24:18 lioux Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.250 2001/08/29 19:45:07 lioux Exp $
 #
 
     SUBDIR += Maaate
@@ -85,6 +85,7 @@
     SUBDIR += id3tool
     SUBDIR += juke
     SUBDIR += kdemultimedia2
+    SUBDIR += khordpro
     SUBDIR += kmikmod
     SUBDIR += kmp3
     SUBDIR += kmpg
