@@ -3,7 +3,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.27 1999/10/14 03:42:36 nakai Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.28 1999/11/08 04:54:07 nakai Exp $
 #
 
 DISTNAME=	gnome-core-1.0.54
@@ -26,7 +26,8 @@ USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--with-gnome=${PREFIX} \
+		--with-kde-datadir=${LOCALBASE}/share
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
