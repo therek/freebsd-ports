@@ -2,11 +2,11 @@
 # Date created:		10 July 2000
 # Whom:			Daichi T.GOTO
 #
-# $FreeBSD: ports/japanese/tkhonyaku/Makefile,v 1.3 2000/08/28 18:45:28 knu Exp $
+# $FreeBSD: ports/japanese/tkhonyaku/Makefile,v 1.4 2001/04/16 17:53:24 sada Exp $
 #
 
 PORTNAME=	tkhonyaku
-PORTVERSION=	1.6
+PORTVERSION=	1.7
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.yk.rim.or.jp/~kawagisi/
 
