@@ -2,13 +2,13 @@
 # Date created:				6 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/blue/Makefile,v 1.6 2000/04/14 00:45:34 mharo Exp $
+# $FreeBSD: ports/games/blue/Makefile,v 1.7 2001/02/03 14:57:59 kevlo Exp $
 #
 
 PORTNAME=	blue
 PORTVERSION=	2.4
 CATEGORIES=	games
-MASTER_SITES=	http://www.tuxedo.org/~esr/
+MASTER_SITES=	http://www.tuxedo.org/~esr/blue/
 
 MAINTAINER=	ports@FreeBSD.org
 
