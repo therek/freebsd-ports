@@ -2,7 +2,7 @@
 # Date created:				2000-10-11
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/csound/Makefile,v 1.7 2001/04/10 06:25:00 trevor Exp $
+# $FreeBSD: ports/audio/csound/Makefile,v 1.8 2001/06/04 13:28:34 trevor Exp $
 #
 
 PORTNAME=	csound
@@ -15,6 +15,7 @@ EXTRACT_ONLY=	Csound${PORTVERSION}.tar.gz
 
 MAINTAINER=	trevor@FreeBSD.org
 
+BROKEN=		"distfile was overwritten"
 LIB_DEPENDS=	tcl83:${PORTSDIR}/lang/tcl83 \
 		tk83:${PORTSDIR}/x11-toolkits/tk83
 
