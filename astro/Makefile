@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.22 2000/08/26 01:48:50 will Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.23 2000/10/31 15:47:33 sobomax Exp $
 #
 
     SUBDIR += dgpsip
@@ -6,6 +6,7 @@
     SUBDIR += glunarclock
     SUBDIR += luna
     SUBDIR += openuniverse
+    SUBDIR += p5-GPS
     SUBDIR += pyweather
     SUBDIR += rmap
     SUBDIR += saoimage
