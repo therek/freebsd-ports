@@ -1,17 +1,17 @@
 # New ports collection makefile for:	pine4-ssl
-# Version required:     1.3
+# Version required:     1.4
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.10 1999/12/30 00:07:53 nsayer Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.11 2000/01/15 01:51:13 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
 # Good luck to you. :-P
 
-PKGNAME=        pine4-ssl-4.21.1.3
+PKGNAME=        pine4-ssl-4.21.1.4
 
-DISTNAME=	pine4+ssl-1.3
+DISTNAME=	pine4+ssl-1.4
 
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		pine4.21${EXTRACT_SUFX}
@@ -23,7 +23,6 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
 
 MAINTAINER=	nsayer@freebsd.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/librsaref.a:${PORTSDIR}/security/rsaref
 LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
 		ssl.1:${PORTSDIR}/security/openssl
 
@@ -43,6 +42,10 @@ post-extract:
 	( cd ${WRKSRC} ; tar xfz ${DISTDIR}/${DISTNAME}${EXTRACT_SUFX} )
 
 do-build:
+.if exists(${PREFIX}/lib/librsaref.a)
+	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl RSAREF=yes)
+.else
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl)
+.endif
 
 .include "${MASTERDIR}/Makefile"
