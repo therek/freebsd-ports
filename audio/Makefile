@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.174 2000/10/12 01:57:56 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.175 2000/10/12 02:00:58 trevor Exp $
 #
 
     SUBDIR += afsp
@@ -95,6 +95,7 @@
     SUBDIR += mxv
     SUBDIR += napster
     SUBDIR += nas
+    SUBDIR += nosefart
     SUBDIR += nspmod
     SUBDIR += openal
     SUBDIR += opennap
