@@ -2,11 +2,11 @@
 # Date created:				September 10th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-FreezeThaw/Makefile,v 1.9 2001/03/01 06:37:41 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	FreezeThaw
-PORTVERSION=	0.41
+PORTVERSION=	0.43
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	FreezeThaw
