@@ -2,7 +2,7 @@
 # Date created:		26 Aug 2004
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.17 2004/08/29 12:31:43 ume Exp $
+# $FreeBSD: ports/print/pips800/Makefile.pips,v 1.18 2004/08/30 15:06:31 ume Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
@@ -138,7 +138,7 @@ EXTRA_PATCHES+=	${FILESDIR}/extra-patch-2.6.2-common \
 .if ${PRTYPE} != g900 && ${PRTYPE} != -spr800
 EXTRA_PATCHES+=	${FILESDIR}/extra-patch-2.6.2-ekpstm::main.c
 .endif
-BUILD_DEPEND+=	${LOCALBASE}/bin/autoconf253:${PORTSDIR}/devel/autoconf253
+BUILD_DEPENDS+=	${LOCALBASE}/bin/autoconf253:${PORTSDIR}/devel/autoconf253
 LIB_DEPENDS+=	cups.2:${PORTSDIR}/print/cups-base \
 		iconv.3:${PORTSDIR}/converters/libiconv
 .endif
