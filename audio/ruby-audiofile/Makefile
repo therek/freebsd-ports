@@ -2,7 +2,7 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/audio/ruby-audiofile/Makefile,v 1.2 2001/07/21 07:42:48 knu Exp $
+# $FreeBSD: ports/audio/ruby-audiofile/Makefile,v 1.3 2001/07/26 05:17:02 knu Exp $
 #
 
 PORTNAME=	audiofile
@@ -25,7 +25,7 @@ USE_RUBY_EXTCONF=	yes
 
 CDDB_DISTNAME=	cddb-0.2
 CDDB_WRKSRC=	${WRKDIR}/example
-NO_BUILD=	yes
+
 INSTALL_TARGET=	site-install
 
 DOCS=		audiofile.html audiofile.rd
