@@ -3,16 +3,17 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/devel/ups-debug/Makefile,v 1.18 2000/04/14 05:44:39 asami Exp $
+# $FreeBSD: ports/devel/ups-debug/Makefile,v 1.19 2000/08/27 03:38:48 obrien Exp $
 #
 
 PORTNAME=	ups
-PORTVERSION=	3.34
+PORTVERSION=	3.35.b13
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}  \
-		http://www.concerto.demon.co.uk/UPS/  \
+		http://www.concerto.demon.co.uk/UPS/src/  \
 		ftp://unix.hensa.ac.uk/pub/misc/unix/ups/
 MASTER_SITE_SUBDIR= utilities
+DISTNAME=	ups-3.35-beta13
 
 MAINTAINER=	obrien@FreeBSD.org
 
