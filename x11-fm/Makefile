@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fm/Makefile,v 1.12 2000/02/12 17:19:28 nakai Exp $
+# $FreeBSD: ports/x11-fm/Makefile,v 1.13 2000/05/29 06:57:29 sobomax Exp $
 #
 
     SUBDIR += asfiles
@@ -12,7 +12,6 @@
     SUBDIR += jafm
     SUBDIR += mfm
     SUBDIR += offix-files
-    SUBDIR += q3dmenu
     SUBDIR += tkdesk
     SUBDIR += workplace
     SUBDIR += x-files
