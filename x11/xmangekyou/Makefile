@@ -2,15 +2,15 @@
 # Date created:		30 October 1998
 # Whom:			Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/x11/xmangekyou/Makefile,v 1.5 2000/08/03 09:28:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmangekyou
 PORTVERSION=	2.0.1
 CATEGORIES=	x11
-MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/myfreesoft/
+MASTER_SITES=	http://www.seki.ee.kagu.tus.ac.jp/~sakai/myfreesoft/
 
-MAINTAINER=	sakai@seki.ee.kagu.sut.ac.jp
+MAINTAINER=	sakai@seki.ee.kagu.tus.ac.jp
 
 ALL_TARGET=	xmangekyou
 

@@ -2,15 +2,15 @@
 # Date created:        3 March 1999
 # Whom:                Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/x11/xballoon/Makefile,v 1.4 2000/08/03 09:28:47 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xballoon
 PORTVERSION=	1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://wwwmiya.ee.kagu.sut.ac.jp/~sakai/
+MASTER_SITES=	http://wwwmiya.ee.kagu.tus.ac.jp/~sakai/
 
-MAINTAINER=	sakai@miya.ee.kagu.sut.ac.jp
+MAINTAINER=	sakai@miya.ee.kagu.tus.ac.jp
 
 ALL_TARGET=	xballoon
 

@@ -2,15 +2,15 @@
 # Date created:        11 January 1999
 # Whom:                Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/japanese/xshodou/Makefile,v 1.3 2000/04/13 08:34:09 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xshodou
 PORTVERSION=	1.11
 CATEGORIES=	japanese tk80
-MASTER_SITES=	http://wwwmiya.ee.kagu.sut.ac.jp/~sakai/
+MASTER_SITES=	http://wwwmiya.ee.kagu.tus.ac.jp/~sakai/
 
-MAINTAINER=	sakai@miya.ee.kagu.sut.ac.jp
+MAINTAINER=	sakai@miya.ee.kagu.tus.ac.jp
 
 RUN_DEPENDS=    wish8.0:${PORTSDIR}/x11-toolkits/tk80
 
