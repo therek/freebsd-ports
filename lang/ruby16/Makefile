@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.39 2000/10/20 19:56:03 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.40 2001/01/18 19:53:38 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -89,6 +89,6 @@ post-install:
 	@${CAT} ${PKGMESSAGE}
 
 test:
-	@(cd ${WRKSRC}; make test)
+	@(cd ${WRKSRC}; ${MAKE} test)
 
 .include <bsd.port.post.mk>
