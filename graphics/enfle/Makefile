@@ -3,7 +3,7 @@
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuuki SAWADA <mami@whale.cc.muroran-it.ac.jp>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.1.1.1 1999/09/27 17:39:02 sumikawa Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.2 1999/09/29 23:08:11 cpiazza Exp $
 #
 
 DISTNAME=	enfle-19990929
@@ -12,13 +12,14 @@ MASTER_SITES=	http://enfle.fennel.org/
 
 MAINTAINER=	mami@whale.cc.muroran-it.ac.jp
 
+BUILD_DEPENDS=	bzip2:${PORTSDIR}/archivers/bzip2
 LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-all-plugins \
+CONFIGURE_ARGS=	--enable-all-plugins --disable-static \
 		--enable-plugins-dir
 
 .include <bsd.port.mk>
