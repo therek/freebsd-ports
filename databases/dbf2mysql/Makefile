@@ -2,26 +2,18 @@
 # Date created:				02 October 1999
 # Whom:					jedgar@fxp.org
 #
-# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.3 2000/07/07 20:46:05 jedgar Exp $
+# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.4 2001/01/21 15:40:31 dirk Exp $
 #
 
 PORTNAME=	dbf2mysql
-PORTVERSION=	1.13
+PORTVERSION=	1.14
 CATEGORIES=	databases
-MASTER_SITES=	http://www.mysql.net/Downloads/Contrib/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	http://download.sourceforge.net/pub/mirrors/mysql/Downloads/Contrib/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
-NO_WRKSUBDIR=	yes
-
-do-configure:
-	@${MV} ${WRKDIR}/Makefile ${WRKDIR}/Makefile.orig
-	@${SED} -e 's|/usr/local/mysql/include|${PREFIX}/include/mysql|' \
-		-e 's|/usr/local/mysql/lib|${PREFIX}/lib/mysql|' \
-		< ${WRKDIR}/Makefile.orig > ${WRKDIR}/Makefile
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/dbf2mysql ${PREFIX}/bin
 	${INSTALL_SCRIPT} ${WRKDIR}/mysql2dbf ${PREFIX}/bin
