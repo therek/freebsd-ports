@@ -2,11 +2,12 @@
 # Date created:		12 February 2001
 # Whom:			grog
 #
-# $FreeBSD: ports/misc/instant-workstation/Makefile,v 1.5 2001/08/02 09:14:27 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	instant-workstation
 PORTVERSION=	1.0
+PORTVERSION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.lemis.com/pub/
 
@@ -30,7 +31,6 @@ RUN_DEPENDS=	acroread:${PORTSDIR}/print/acroread4 \
 		mutt:${PORTSDIR}/mail/mutt \
 		netscape:${PORTSDIR}/www/netscape47-communicator \
 		/usr/local/sbin/postfix:${PORTSDIR}/mail/postfix \
-		xamp:${PORTSDIR}/audio/xamp \
 		xtset:${PORTSDIR}/x11/xtset \
 		xmms:${PORTSDIR}/audio/xmms \
 		xv:${PORTSDIR}/graphics/xv
