@@ -3,7 +3,7 @@
 # Date created:         22 November 1997
 # Whom:                 Peter Wemm <peter@netplex.com.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/conserver/Makefile,v 1.10 1999/08/25 05:12:33 obrien Exp $
 #
 
 DISTNAME=	conserver-5.21-Beta
@@ -38,7 +38,7 @@ post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/conserver.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/conserver.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/conserver.sh; \
-		${ECHO} "if [ -x ${PREFIX}/sbin/conserver -a -f ${PREFiX}/etc/conserver.cf ]; then" >> ${PREFIX}/etc/rc.d/conserver.sh; \
+		${ECHO} "if [ -x ${PREFIX}/sbin/conserver -a -f ${PREFIX}/etc/conserver.cf ]; then" >> ${PREFIX}/etc/rc.d/conserver.sh; \
 		${ECHO} "	${PREFIX}/sbin/conserver -d -n ; ${ECHO} -n ' conserver'" >> ${PREFIX}/etc/rc.d/conserver.sh; \
 		${ECHO} "fi" >> ${PREFIX}/etc/rc.d/conserver.sh; \
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/conserver.sh; \
