@@ -2,7 +2,7 @@
 # Date created:		5 December 1996
 # Whom:			Bernd Rosauer <br@netland.inka.de>
 #
-# $FreeBSD: ports/print/teTeX/Makefile,v 1.43 2000/07/13 12:53:25 tg Exp $
+# $FreeBSD: ports/print/teTeX/Makefile,v 1.44 2001/01/16 17:32:11 sobomax Exp $
 #
 
 PORTNAME=	teTeX
@@ -19,7 +19,6 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		wwwcore.1:${PORTSDIR}/www/libwww
 
 USE_XLIB=	yes
-MANUAL_PACKAGE_BUILD=	can only build with empty /usr/local
 DIST_SUBDIR=	teTeX
 WRKSRC=		${WRKDIR}/teTeX-1.0
 EXTRACT_ONLY=	${TETEX_SRC}
