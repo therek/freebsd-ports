@@ -1,5 +1,5 @@
-@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.9 2004/02/01 16:01:29 sergei Exp $
-etc/dovecot-example.conf
+@comment $FreeBSD: ports/mail/dovecot/pkg-plist,v 1.10 2004/06/21 18:56:28 pav Exp $
+etc/dovecot.conf.sample
 etc/rc.d/dovecot.sh
 libexec/dovecot/dovecot-auth
 libexec/dovecot/imap
@@ -8,18 +8,17 @@ libexec/dovecot/pop3
 libexec/dovecot/pop3-login
 @dirrm libexec/dovecot
 sbin/dovecot
-%%PORTDOCS%%%%DOCSDIR%%/README.FreeBSD
 %%PORTDOCS%%%%DOCSDIR%%/auth.txt
 %%PORTDOCS%%%%DOCSDIR%%/configuration.txt
 %%PORTDOCS%%%%DOCSDIR%%/design.txt
-%%PORTDOCS%%%%DOCSDIR%%/dovecot-ldap.conf
-%%PORTDOCS%%%%DOCSDIR%%/dovecot-openssl.cnf
-%%PORTDOCS%%%%DOCSDIR%%/dovecot-pgsql.conf
-%%PORTDOCS%%%%DOCSDIR%%/dovecot-mysql.conf
 %%PORTDOCS%%%%DOCSDIR%%/index.txt
 %%PORTDOCS%%%%DOCSDIR%%/mail-storages.txt
 %%PORTDOCS%%%%DOCSDIR%%/mkcert.sh
 %%PORTDOCS%%%%DOCSDIR%%/multiaccess.txt
 %%PORTDOCS%%%%DOCSDIR%%/nfs.txt
 %%PORTDOCS%%%%DOCSDIR%%/securecoding.txt
+%%PORTDOCS%%%%DOCSDIR%%/dovecot-ldap.conf
+%%PORTDOCS%%%%DOCSDIR%%/dovecot-openssl.cnf
+%%PORTDOCS%%%%DOCSDIR%%/dovecot-pgsql.conf
+%%PORTDOCS%%%%DOCSDIR%%/dovecot-mysql.conf
 %%PORTDOCS%%@dirrm %%DOCSDIR%%

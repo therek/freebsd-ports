@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/dovecot/files/dovecot.sh,v 1.1 2004/02/01 16:01:30 sergei Exp $
 #
 
 # PROVIDE: dovecot
@@ -12,7 +12,7 @@
 #
 #dovecot_enable="YES"
 #
-dovecot_enable="NO"
+dovecot_enable=${dovecot_enable-"NO"}
 
 . %%RC_SUBR%%
 
