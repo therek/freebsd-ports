@@ -3,13 +3,14 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/xgas/Makefile,v 1.5 1999/08/25 07:23:13 obrien Exp $
 #
 
 DISTNAME=	xgas
 PKGNAME=	xgas-1.0
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.tut.ac.jp/.h3/X11/X11R6/contrib/programs/
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	X11/demos
 
 MAINTAINER=	nacai@iname.com
 
