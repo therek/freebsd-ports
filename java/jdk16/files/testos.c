@@ -24,14 +24,14 @@
  * SUCH DAMAGE.
  *
  * Test pthreads primitives for required functionality in order to run
- * native FreeBSD JDK1.4.1 port.
+ * native FreeBSD JDK1.4.2 port.
  *
  * Returns:
  *    0 - test passed
  *    1 - general failure
  *  200 - tests failed
  *
- * $FreeBSD$
+ * $FreeBSD: ports/java/jdk14/files/testos.c,v 1.1 2003/03/13 21:43:36 phantom Exp $
  */
 
 #include <stdio.h>
