@@ -1,8 +1,9 @@
 # New ports collection makefile for:    p5-Parallel-UA
+# http://www.cs.washington.edu/homes/marclang/ParallelUA/
 # Date created:                         Sep 8 1998
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.14 2000/04/10 00:06:37 cpiazza Exp $
+# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.15 2000/04/23 12:34:38 vanilla Exp $
 #
 
 PORTNAME=	p5-ParallelUA
