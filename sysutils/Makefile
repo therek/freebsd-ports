@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.87 1999/11/03 20:34:59 billf Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.88 1999/11/04 09:02:27 asami Exp $
 #
 
     SUBDIR += LPRng
@@ -21,6 +21,7 @@
     SUBDIR += cpbk
     SUBDIR += cpdup
     SUBDIR += daemontools
+    SUBDIR += diskusage
     SUBDIR += doconfig
     SUBDIR += ffsrecov
     SUBDIR += flexbackup
@@ -32,6 +33,7 @@
     SUBDIR += gtar
     SUBDIR += gtop
     SUBDIR += guitar
+    SUBDIR += healthd
     SUBDIR += idled
     SUBDIR += ipsc
     SUBDIR += lavaps
