@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.286 2000/07/24 15:48:22 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.287 2000/07/25 10:08:16 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -104,6 +104,7 @@
     SUBDIR += mangband
     SUBDIR += merlin
     SUBDIR += mindfocus
+    SUBDIR += mindguard
     SUBDIR += mirrormagic
     SUBDIR += miscom
     SUBDIR += nethack
