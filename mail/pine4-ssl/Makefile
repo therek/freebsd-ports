@@ -2,7 +2,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.20 2000/10/30 03:47:10 kris Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.21 2000/11/01 09:35:51 kris Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -23,6 +23,8 @@ PATCH_SITES=	http://www.kfu.com/~nsayer/encryption/software/
 PATCHFILES=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	nsayer@freebsd.org
+
+BROKEN=		"The c-client library is no longer built in the pine port, and that's where the SSL hacking needs to happen"
 
 EXTRACT_ONLY=	pine4.21${EXTRACT_SUFX}
 
