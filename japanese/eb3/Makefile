@@ -3,7 +3,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.12 2000/02/13 17:03:35 steve Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.13 2000/03/30 08:43:58 knu Exp $
 #
 
 DISTNAME=	eb-2.3.7
