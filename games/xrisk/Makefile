@@ -2,14 +2,15 @@
 # Date created:         4 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xrisk/Makefile,v 1.13 1999/08/25 06:06:01 obrien Exp $
+# $FreeBSD: ports/games/xrisk/Makefile,v 1.14 2000/04/14 12:28:09 asami Exp $
 #
 
-PORTNAME=       xrisk
+PORTNAME=	xrisk
 PORTVERSION=	2.13
 CATEGORIES=	games
-MASTER_SITES=   ftp://geocub.greco-prog.fr/pub/Games/
-EXTRACT_SUFX=   .tar.Z
+MASTER_SITES=	http://people.freebsd.org/~steve/distfiles/ \
+		ftp://geocub.greco-prog.fr/pub/Games/
+EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	swallace@FreeBSD.org
 
