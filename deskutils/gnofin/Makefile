@@ -3,7 +3,7 @@
 # Date created:				Sun Jul 18 1999
 # Whom:					domi@saargate.de
 #
-# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.1.1.1 1999/12/23 20:42:33 jedgar Exp $
+# $FreeBSD: ports/deskutils/gnofin/Makefile,v 1.2 2000/01/25 21:41:22 jedgar Exp $
 #
 
 DISTNAME=	gnofin-0.7.1
@@ -12,7 +12,8 @@ MASTER_SITES=	http://download.sourceforge.net/gnofin/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GTK_CONFIG?=    ${X11BASE}/bin/gtk12-config
 
