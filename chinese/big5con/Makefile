@@ -2,15 +2,13 @@
 # Date created:		07 Jan 1997
 # Whom:			Hung-Chi Chu <hcchu@r350.ee.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/big5con/Makefile,v 1.12 1999/08/27 21:13:38 mharo Exp $
+# $FreeBSD: ports/chinese/big5con/Makefile,v 1.13 2000/04/13 08:27:57 asami Exp $
 #
 
 PORTNAME=	big5con
 PORTVERSION=	0.92e
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://freebsd.ntu.edu.tw/freebsd/woju/source/ \
-		ftp://freebsd.ntu.edu.tw/freebsd/woju/binary/ \
-		ftp://bsd.sinica.edu.tw/pub/FreeBSD/taiwan/users/woju/source/ \
+MASTER_SITES=	ftp://bsd.sinica.edu.tw/pub/FreeBSD/taiwan/users/woju/source/ \
 		ftp://bsd.sinica.edu.tw/pub/FreeBSD/taiwan/users/woju/binary/ \
 		ftp://freebsd.csie.nctu.edu.tw/pub/taiwan/NTU/woju/source/ \
 		ftp://freebsd.csie.nctu.edu.tw/pub/taiwan/NTU/woju/binary/
