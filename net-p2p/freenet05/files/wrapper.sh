@@ -1,10 +1,13 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.3 2003/07/29 13:58:16 maho Exp $
+# $FreeBSD: ports/net/freenet/files/wrapper.sh,v 1.4 2004/03/12 01:02:48 lioux Exp $
+
+export JAVA_VERSION
 
 PREFIX="%%PREFIX%%"
 # java
+JAVA_VERSION="%%JAVA_VERSION%%"
 JAVAVM_CALL="%%JAVAVM%%"
 JAR_DIR="%%JAR_DIR%%"
 JAR_FILES="%%JAR_FILES%%"
