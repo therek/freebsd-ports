@@ -2,13 +2,12 @@
 # Date created:				22 Sep 2000
 # Whom:					alex@FreeBSD.org
 #
-# $FreeBSD: ports/security/mindterm-binary/Makefile,v 1.2 2000/09/22 17:10:42 alex Exp $
+# $FreeBSD$
 
 PORTNAME=	mindterm-binary
 PORTVERSION=	1.2.1
 CATEGORIES=	security
-MASTER_SITES=	http://www.mindbright.se/download/ \
-		${MASTER_SITE_LOCAL}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	alex
 DISTNAME=	mindtermbin-v121
 DISTFILES=	mindterm-ssh.html ${EXTRACT_ONLY}
