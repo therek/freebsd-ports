@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.15 2001/03/20 20:28:09 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nautilus
@@ -13,7 +13,8 @@ MASTER_SITE_SUBDIR=	unstable/sources/nautilus
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
+BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm \
+		freetype-config:${PORTSDIR}/print/freetype2	# XXX
 LIB_DEPENDS=	medusa.0:${PORTSDIR}/sysutils/medusa \
 		gtkhtml.8:${PORTSDIR}/www/gtkhtml \
 		ghttp.1:${PORTSDIR}/www/libghttp \

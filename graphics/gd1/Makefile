@@ -2,7 +2,7 @@
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.33 2001/02/12 19:02:11 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gd
@@ -16,6 +16,7 @@ MASTER_SITE_SUBDIR=	graphics/gd
 
 MAINTAINER?=	billf@FreeBSD.org
 
+BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		freetype.6:${PORTSDIR}/print/freetype2

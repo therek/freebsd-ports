@@ -2,7 +2,7 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.5 2001/02/12 10:48:29 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GD
@@ -17,6 +17,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
+BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
 
 USE_RUBY=	yes

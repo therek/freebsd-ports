@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.102 2001/03/09 19:51:23 mi Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ImageMagick
@@ -20,6 +20,7 @@ MASTER_SITE_SUBDIR=	graphics/ImageMagick
 
 MAINTAINER=	ports@FreeBSD.org
 
+BUILD_DEPENDS=	freetype-config:${PORTSDIR}/print/freetype2	# XXX
 LIB_DEPENDS=	bz2.1:${PORTSDIR}/archivers/bzip2 \
 		fpx.1:${PORTSDIR}/graphics/libfpx \
 		df.1:${PORTSDIR}/graphics/hdf \
