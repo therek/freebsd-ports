@@ -2,14 +2,14 @@
 # Date created:		22 Jul 1998
 # Whom:			Yusuke Nawano <azuki@azkey.org>
 #
-# $FreeBSD: ports/japanese/skkfep/Makefile,v 1.7 2001/03/21 20:26:02 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	skkfep
 PORTVERSION=	0.86c
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/skkfep/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+MASTER_SITES=	ftp://ftp.debian.org/debian/pool/main/s/skkfep/
+DISTNAME=	${PORTNAME}_${PORTVERSION}.orig
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -21,6 +21,6 @@ MAN1=		skkfep.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/skkfep ${PREFIX}/bin
-	${INSTALL_MAN} ${WRKSRC}/skkfep.1 ${PREFIX}/man/man1
+	${INSTALL_MAN} ${WRKSRC}/skkfep.1 ${MANPREFIX}/man/man1
 
 .include <bsd.port.mk>
