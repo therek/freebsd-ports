@@ -2,7 +2,7 @@
 # Date created:				May 17 2000
 # Whom:					careilly
 #
-# $FreeBSD: ports/x11-fm/vide/Makefile,v 1.3 2000/10/05 06:42:35 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vide
@@ -16,7 +16,8 @@ RUN_DEPENDS=    vim:${PORTSDIR}/editors/vim5
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GNOMELIBS=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomelibs
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-DHAVE_SYS_PARAM_H"
 
