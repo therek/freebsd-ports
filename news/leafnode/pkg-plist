@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/news/leafnode/pkg-plist,v 1.16 2003/11/01 14:16:33 sergei Exp $
+@comment $FreeBSD: ports/news/leafnode/pkg-plist,v 1.17 2004/01/07 08:50:56 krion Exp $
 bin/leafnode-version
 bin/newsq
 etc/leafnode/config.example
@@ -14,7 +14,6 @@ sbin/texpire
 sbin/checkgroups
 sbin/applyfilter
 sbin/setup-daemontools.sh
-sbin/quickmkdir
 %%PORTDOCS%%%%DOCSDIR%%/ADD-ONS
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog
 %%PORTDOCS%%%%DOCSDIR%%/ChangeLog.old
