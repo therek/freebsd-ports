@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.313 2000/12/17 09:52:07 trevor Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.314 2001/01/03 23:47:54 will Exp $
 #
 
     SUBDIR += 9term
@@ -85,6 +85,7 @@
     SUBDIR += xcolors
     SUBDIR += xcolorsel
     SUBDIR += xcut
+    SUBDIR += xdialog
     SUBDIR += xdtm
     SUBDIR += xfedor
     SUBDIR += xfishtank
