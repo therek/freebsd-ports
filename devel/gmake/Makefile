@@ -2,7 +2,7 @@
 # Date created:		11 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/gmake/Makefile,v 1.28 2000/04/25 21:42:38 jseger Exp $
+# $FreeBSD: ports/devel/gmake/Makefile,v 1.29 2000/05/29 06:24:51 sobomax Exp $
 #
 
 PORTNAME=	gmake
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	make
 DISTNAME=       make-${PORTVERSION}
 
 MAINTAINER=	jseger@FreeBSD.org
+
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 Y2K=		http://www.gnu.org/software/year2000.html
 
