@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.399 2001/07/21 22:27:53 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.400 2001/07/22 02:18:57 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -190,6 +190,7 @@
     SUBDIR += pythoong
     SUBDIR += q3server
     SUBDIR += q3server-excessive
+    SUBDIR += q3server-freezetag
     SUBDIR += q3server-ra3
     SUBDIR += qcc
     SUBDIR += qix
