@@ -2,11 +2,12 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.6 2001/03/03 18:30:27 sf Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.7 2001/04/08 06:09:49 sf Exp $
 #
 
 PORTNAME=	mozilla
 PORTVERSION=	0.8.1
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	japanese www
 MASTER_SITES=	http://www.mozilla.gr.jp/tools/search/ \
@@ -29,6 +30,9 @@ USE_X_PREFIX=	yes
 USE_ZIP=	yes
 EXTRACT_BEFORE_ARGS=	-qo
 
+# forcing define this until www/mozilla would be catched up.
+MOZILLA_IPV6=	yes
+
 .if defined(MOZILLA_IPV6)
 MOZILLA_PORT=	${PORTSDIR}/www/mozilla+ipv6
 .else
@@ -44,13 +48,12 @@ MOZILLA_SH=	mozilla.noxpg4
 MOZILLA_SH=	mozilla.xpg4
 .endif
 
-# forcing define this until www/mozilla comes up to date.
-MOZILLA_IPV6=	yes
-
-#pre-fetch:
-#	@${ECHO} ""
-#	@${ECHO} "If you need IPv6 compliant mozilla, define \"MOZILLA_IPV6\"."
-#	@${ECHO} ""
+.if !defined(MOZILLA_IPV6)
+pre-fetch:
+	@${ECHO} ""
+	@${ECHO} "If you need IPv6 compliant mozilla, define \"MOZILLA_IPV6\"."
+	@${ECHO} ""
+.endif
 
 post-extract:
 	${MKDIR} ${WRKSRC}/defaults/pref
@@ -82,6 +85,8 @@ do-install:
 	${MV} -f ${PREFIX}/bin/mozilla ${PREFIX}/bin/mozilla.orig
 	${INSTALL_SCRIPT} ${WRKDIR}/mozilla ${PREFIX}/bin
 	(cd ${WRKDIR}/sp; ${TAR} -cf - *) | \
+	${TAR} -xf - -C ${PREFIX}/lib/mozilla/searchplugins
+	(cd ${WRKDIR}/sp_nomac; ${TAR} -cf - *) | \
 	${TAR} -xf - -C ${PREFIX}/lib/mozilla/searchplugins
 	(cd ${WRKSRC}; ${TAR} -cf - chrome defaults) | \
 	${TAR} -xf - -C ${PREFIX}/lib/mozilla
