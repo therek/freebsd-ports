@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.357 2001/04/22 05:22:44 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.358 2001/05/01 09:41:04 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -198,6 +198,7 @@
     SUBDIR += mypaedia-fpw-package
     SUBDIR += namazu
     SUBDIR += namazu2
+    SUBDIR += navi2ch-emacs20
     SUBDIR += ndtpd
     SUBDIR += ne
     SUBDIR += nethack
