@@ -2,7 +2,7 @@
 # Date created:				8 March 2000
 # Whom:					jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/devel/tmake/Makefile,v 1.4 2000/08/11 00:23:55 will Exp $
+# $FreeBSD: ports/devel/tmake/Makefile,v 1.5 2000/09/02 13:32:27 sobomax Exp $
 #
 
 PORTNAME=	tmake
