@@ -3,7 +3,7 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.46 1999/12/27 06:45:45 nakai Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.47 1999/12/28 01:43:49 nakai Exp $
 #
 
 DISTNAME=	icewm-1.0.0
@@ -22,10 +22,7 @@ LIB_DEPENDS+=	Xpm.4:${PORTSDIR}/graphics/xpm
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-
-.if defined(USE_I18N)
 CONFIGURE_ARGS+=	--enable-i18n
-.endif
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/bsd-daemon.xpm ${PREFIX}/share/icewm/taskbar
