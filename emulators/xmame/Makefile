@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.23 2001/04/03 13:04:05 nsayer Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.24 2001/04/05 13:10:00 nsayer Exp $
 #
 
 PORTNAME?=	xmame
@@ -149,7 +149,7 @@ ASM_COMMENT=\#
 # Heavy optimization - enabled by default because it doesn't seem
 # to break things, and enables considerable speedup.
 .if !defined(WITH_OPTIMIZATION) || ${WITH_OPTIMIZATION} != "no"
-CFLAGS+=	-O3 -march=i686 -Wall -Wno-unused -funroll-loops \
+CFLAGS+=	-O3 -Wall -Wno-unused -funroll-loops \
 		-fstrength-reduce -fomit-frame-pointer -ffast-math \
 		-malign-functions=4 -malign-jumps=4 -malign-loops=4
 .endif
