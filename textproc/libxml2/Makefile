@@ -2,18 +2,20 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.44 2001/04/02 09:55:51 sobomax Exp $
+# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.45 2001/04/23 11:51:19 sobomax Exp $
 #
 
 PORTNAME=	libxml2
-PORTVERSION=	2.3.7
+PORTVERSION=	2.3.8
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libxml
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv
+RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
@@ -26,5 +28,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		xml2-config.1 xmllint.1
 MAN4=		libxml.4
+
+pre-patch:
+	@find ${WRKSRC} -name Makefile.in | xargs ${PERL} -pi -e \
+		's|\$\(libdir\)/pkgconfig|\$\(prefix\)/libdata/pkgconfig|g'
 
 .include <bsd.port.mk>
