@@ -2,7 +2,7 @@
 # Date created:				17 January 1998
 # Whom:					Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/net/dnswalk/Makefile,v 1.6 2000/03/22 17:24:18 mph Exp $
+# $FreeBSD: ports/net/dnswalk/Makefile,v 1.7 2000/04/09 18:11:05 cpiazza Exp $
 #
 
 PORTNAME=	dnswalk
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.visi.com/~barr/dnswalk/
 
 MAINTAINER=	mph@freebsd.org
 
-RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/DNS.pm:${PORTSDIR}/net/p5-Net-DNS
 
 NO_WRKSUBDIR=	YES
 NO_BUILD=	YES
