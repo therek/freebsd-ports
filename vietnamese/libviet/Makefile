@@ -3,7 +3,7 @@
 # Date created:         Fri Feb 09, 2001
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/vietnamese/libviet/Makefile,v 1.1 2001/02/10 08:22:39 obrien Exp $
 #
 
 PORTNAME=	libviet
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	obrien
 
 MAINTAINER=	obrien@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}/lib
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/lib
 
 do-install:
 	@${INSTALL_DATA} ${WRKSRC}/libvntype.a ${WRKSRC}/libviqr.a  \
