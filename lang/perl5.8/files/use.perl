@@ -1,5 +1,5 @@
 #! %%PREFIX%%/bin/perl -w
-# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.6 2002/07/21 17:09:12 tobez Exp $
+# $FreeBSD: ports/lang/perl5.8/files/use.perl,v 1.7 2004/01/20 02:28:15 kuriyama Exp $
 use strict;
 
 # XXX what to do with perldoc, pelbug, perlcc ??
@@ -69,6 +69,7 @@ EOF
 	while (<MPOLD>) {
 		next if m|use.perl generated line|;
 		next if m|^\s*OPTIONAL_MANPATH\s+\S+/lib/perl5/%%PERL_VERSION%%/man\s*$|;
+		next if m|^\s*OPTIONAL_MANPATH\s+\S+/lib/perl5/%%PERL_VERSION%%/perl/man\s*$|;
 		print MPNEW;
 	}
 	close MPNEW;
@@ -112,6 +113,7 @@ EOF
 	my $perl_port_manpath = <<EOF;
 # -- use.perl generated line -- #
 OPTIONAL_MANPATH	%%PREFIX%%/lib/perl5/%%PERL_VERSION%%/man
+OPTIONAL_MANPATH	%%PREFIX%%/lib/perl5/%%PERL_VERSION%%/perl/man
 EOF
 
 	open MPOLD, "< /etc/manpath.config" or die "/etc/manpath.config: $!";
