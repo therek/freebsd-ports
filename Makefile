@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.57 2000/07/31 00:09:41 asami Exp $
+# $FreeBSD: ports/Makefile,v 1.58 2000/08/13 12:38:41 joe Exp $
 #
 
 SUBDIR += archivers
@@ -15,6 +15,7 @@ SUBDIR += deskutils
 SUBDIR += devel
 SUBDIR += editors
 SUBDIR += emulators
+SUBDIR += french
 SUBDIR += ftp
 SUBDIR += games
 SUBDIR += german
