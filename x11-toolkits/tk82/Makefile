@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.40 2001/01/16 17:33:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tk
@@ -16,6 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
+NO_LATEST_LINK=	yes
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
