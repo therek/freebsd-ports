@@ -2,28 +2,25 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.18 2000/10/05 06:36:12 reg Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.19 2000/11/02 21:38:52 lioux Exp $
 #
 
 PORTNAME=	downloader
-PORTVERSION=	1.20.p
+PORTVERSION=	1.20
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/files/ \
 		ftp://ftp.server51.freshmeat.net/pub/d4x/ \
 		ftp://ftp.chg.ru/pub/X11/applications/Xdownloader/
-DISTNAME=	nt-1.20pre
+DISTNAME=	nt-1.20
 
-MAINTAINER=	andrew@chg.ru
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
-MSGFMT_CMD=	${LOCALBASE}/bin/msgfmt
-
-WRKSRC=		${WRKDIR}/${DISTNAME}/main
-
 USE_GTK=	yes
-MAKE_ENV=	MSGFMT_CMD="${MSGFMT_CMD}"
-
+USE_GMAKE=	yes
+WRKSRC=		${WRKDIR}/${DISTNAME}/main
+MAKE_ENV=	MSGFMT_CMD="${LOCALBASE}/bin/msgfmt"
 MAN1=		nt.1
 
 D4X_DOC=	ChangeLog FAQ FAQ.de FAQ.es FAQ.fr FAQ.gr LICENSE     \
