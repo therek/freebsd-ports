@@ -2,7 +2,7 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.54 2001/03/11 02:04:58 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.55 2001/03/11 05:02:04 steve Exp $
 #
 
 PORTNAME?=	ispell
@@ -146,7 +146,7 @@ post-patch:
 	@cd ${WRKDIR} && ${PATCH} < ${FILESDIR}/SE.patch 2>/dev/null
 .endif
 .if defined(ISPELL_NO)
-	cd ${WRKDIR} && ${PATCH} < ${FILESDIR}/NO.patch 2>/dev/null
+	@cd ${WRKDIR}/norsk && ${PATCH} < ${FILESDIR}/NO.patch 2>/dev/null
 .endif
 .if defined(ISPELL_NL)
 	@cd ${WRKDIR} && ${PATCH} < ${FILESDIR}/NL.patch 2>/dev/null
