@@ -2,7 +2,7 @@
 # Date created:		20 November 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.50 2000/08/12 11:33:14 jedgar Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.51 2000/08/12 22:57:57 jedgar Exp $
 
 PORTNAME=	expect
 PORTVERSION=	5.32.1
@@ -10,7 +10,7 @@ CATEGORIES=	lang tcl82 tk82
 MASTER_SITES=	http://expect.nist.gov/
 DISTNAME=	expect
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	john@coastalgeology.org
 
 LIB_DEPENDS?=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
