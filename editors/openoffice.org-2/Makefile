@@ -3,7 +3,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/openoffice/Makefile,v 1.21 2000/10/08 10:19:53 asami Exp $
+# $FreeBSD: ports/editors/openoffice/Makefile,v 1.22 2000/10/16 19:23:33 obrien Exp $
 #
 
 PORTNAME=	openoffice
@@ -13,6 +13,8 @@ MASTER_SITES=	http://a1376.g.akamai.net/7/1376/2064/OpenOffice605/anoncvs.openof
 DISTNAME=	oo_605_src
 
 MAINTAINER=	obrien@FreeBSD.org
+
+BROKEN=	'work in progress -- does not work yet'
 
 CONFIGURE_WRKSRC=	${WRKSRC}/config_office
 
