@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libunicode/Makefile,v 1.3 2000/09/22 14:30:43 ade Exp $
+# $FreeBSD: ports/devel/libunicode/Makefile,v 1.4 2001/05/11 16:36:22 ade Exp $
 #
 
 PORTNAME=	libunicode
@@ -19,7 +19,7 @@ MAINTAINER=	gnome@FreeBSD.org
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \

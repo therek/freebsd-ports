@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.18 2001/05/10 19:33:59 ade Exp $
+# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.19 2001/05/11 16:36:20 ade Exp $
 #
 
 PORTNAME=	gnomevfs
@@ -21,7 +21,7 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_GNOMELIBS=	yes
 USE_LIBTOOL=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.16 2001/05/14 21:58:05 ade Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.17 2001/05/23 00:48:58 ade Exp $
 #
 
 PORTNAME=	gconf
@@ -22,7 +22,7 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 USE_GNOMELIBS=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

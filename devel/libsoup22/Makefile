@@ -2,7 +2,7 @@
 # Date created:				29 May 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/soup/Makefile,v 1.1 2001/05/28 14:54:40 sobomax Exp $
 #
 
 PORTNAME=	soup
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/${DISTNAME}.1
 
 USE_LIBTOOL=	yes
 USE_GLIB=	yes
-INSTALL_SHLIBS=	yes
+INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--with-html-dir=${PREFIX}/share/doc
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
