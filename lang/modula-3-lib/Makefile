@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.24 2000/06/09 21:59:02 asami Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.25 2000/07/05 12:36:37 tg Exp $
 #
 
 PORTNAME=	modula-3-lib
@@ -50,11 +50,11 @@ DISTFILES+=	m3-fbsd-boot-3.6.tar.gz
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400011
-EXTRA_PATCHES=	${FILESDIR}/patch-new-sigset-aa \
-		${FILESDIR}/patch-new-sigset-ab \
-		${FILESDIR}/patch-new-sigset-ac
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-new-sigset-aa \
+		${PATCHDIR}/extra-patch-new-sigset-ab \
+		${PATCHDIR}/extra-patch-new-sigset-ac
 .else
-EXTRA_PATCHES=	${FILESDIR}/patch-old-sigset-aa
+EXTRA_PATCHES=	${PATCHDIR}/extra-patch-old-sigset-aa
 .endif
 
 # Startup script, run at boot time
