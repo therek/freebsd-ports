@@ -1,11 +1,10 @@
 # New ports collection makefile for: linux-gtk
-# Version required:     1.2.x
 # Date created:         8 April 2000
 # Whom:                 sada@FreeBSD.org
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.3 2000/11/01 09:55:05 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.4 2000/11/22 18:52:16 gallatin Exp $
 #
 
 PORTNAME?=	gtk

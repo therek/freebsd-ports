@@ -1,9 +1,8 @@
 # New ports collection makefile for:    unixODBC
-# Version Required:	1.8.8
 # Date created:         May 11, 2000
 # Whom:                 Nick Sayer <nsayer@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.8 2000/09/14 14:27:23 nsayer Exp $
+# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.9 2000/11/16 17:44:40 nsayer Exp $
 #
 
 PORTNAME=	unixODBC

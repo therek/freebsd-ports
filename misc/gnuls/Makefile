@@ -1,9 +1,8 @@
 # New ports collection makefile for:	GNU colorized `ls'
-# Version required:			4.0 (GNU fileutils 4.0)
 # Date created:				06 January 1996
 # Whom:					bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/misc/gnuls/Makefile,v 1.12 2000/04/14 17:43:58 knu Exp $
+# $FreeBSD: ports/misc/gnuls/Makefile,v 1.13 2000/04/15 15:13:50 knu Exp $
 #
 
 PORTNAME=	gnuls

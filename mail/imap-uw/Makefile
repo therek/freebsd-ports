@@ -1,9 +1,8 @@
 # New ports collection makefile for:	imap-uw
-# Version required:	4.7c2
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.43 2000/09/05 02:03:50 steve Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.44 2000/10/08 10:21:58 asami Exp $
 #
 
 PORTNAME=	imap-uw

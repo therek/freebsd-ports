@@ -1,9 +1,8 @@
 # New ports collection makefile for:	colorls
-# Version required:	FreeBSD-3-stable (around June 2000)
 # Date created:		8 March 1995
 # Whom:			Satoshi Asami
 #
-# $FreeBSD: ports/misc/colorls/Makefile,v 1.24 2000/06/16 19:16:27 asami Exp $
+# $FreeBSD: ports/misc/colorls/Makefile,v 1.25 2000/07/04 23:54:24 asami Exp $
 #
 
 PORTNAME=	colorls

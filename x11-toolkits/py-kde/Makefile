@@ -1,9 +1,8 @@
 # New ports collection makefile for:	PyKDE
-# Version required:	0.9
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.2 2000/07/10 01:52:35 steve Exp $
+# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.3 2000/08/21 10:07:33 sobomax Exp $
 #
 
 PORTNAME=	py-kde

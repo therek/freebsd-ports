@@ -1,9 +1,8 @@
 # New ports collection makefile for: linux-jpeg
-# Version required:     6b-9
 # Date created:         9 April 2000
 # Whom:                 sada@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/linux-jpeg/Makefile,v 1.1.1.1 2000/04/15 17:23:49 sada Exp $
 #
 
 PORTNAME=	jpeg

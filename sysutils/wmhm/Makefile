@@ -1,9 +1,8 @@
 # New ports collection makefile for:   wmhm
-# Version required:    1.45
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.15 2000/07/12 01:58:59 kevlo Exp $
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.16 2000/08/03 09:26:31 asami Exp $
 #
 
 PORTNAME=	wmhm

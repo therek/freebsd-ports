@@ -1,9 +1,8 @@
 # New ports collection makefile for:	hpscan
-# Version required:	<own lineage>
 # Date created:		12 January 1996
 # Whom:			nate
 #
-# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.21 2000/04/15 15:13:43 knu Exp $
+# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.22 2000/06/09 21:58:56 asami Exp $
 #
 
 PORTNAME=	hpscan

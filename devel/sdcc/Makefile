@@ -1,9 +1,8 @@
 # New ports collection makefile for:	bcc
-# Version required:	"1995 Mar 12 10:29 UTC"
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/devel/sdcc/Makefile,v 1.4 2000/04/14 17:43:45 knu Exp $
+# $FreeBSD: ports/devel/sdcc/Makefile,v 1.5 2000/04/15 15:13:38 knu Exp $
 #
 
 PORTNAME=	sdcc

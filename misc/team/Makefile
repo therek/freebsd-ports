@@ -1,9 +1,8 @@
 # New ports collection makefile for:	team
-# Version required:	3.1 (From the RCS Id line of team.c)
 # Date created:		1 July 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/misc/team/Makefile,v 1.11 2000/04/15 15:13:52 knu Exp $
+# $FreeBSD: ports/misc/team/Makefile,v 1.12 2000/06/09 21:59:05 asami Exp $
 #
 
 PORTNAME=	team

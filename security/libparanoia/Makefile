@@ -1,9 +1,8 @@
 # New ports collection makefile for:	libparanoia
-# Version required:			1.4
 # Date created:				1 Jan 1999
 # Whom:					Alexandre Snarskii <snar@paranoia.ru>
 #
-# $FreeBSD: ports/security/libparanoia/Makefile,v 1.6 2000/06/16 08:47:42 sobomax Exp $
+# $FreeBSD: ports/security/libparanoia/Makefile,v 1.7 2000/06/16 21:51:54 asami Exp $
 
 PORTNAME=	libparanoia
 PORTVERSION=	1.4

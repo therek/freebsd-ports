@@ -1,9 +1,8 @@
 # New ports collection makefile for:	XEmacs additional packages except for mule
-# Version required:	1.0
 # Date created:		14 Feb 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-additional-packages/Makefile,v 1.1.1.1 2000/07/12 07:30:30 taoka Exp $
+# $FreeBSD: ports/editors/xemacs-additional-packages/Makefile,v 1.2 2000/07/19 17:09:24 asami Exp $
 #
 
 PORTNAME=	xemacs-additional-packages

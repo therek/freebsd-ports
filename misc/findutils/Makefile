@@ -1,9 +1,8 @@
 # New ports collection makefile for:	findutils
-# Version required:			4.1
 # Date created:				29 March 2000
 # Whom:					Robert Withrow <witr@rwwa.com>
 #
-# $FreeBSD: ports/misc/findutils/Makefile,v 1.3 2000/06/05 15:22:16 hoek Exp $
+# $FreeBSD: ports/misc/findutils/Makefile,v 1.4 2000/06/05 17:39:52 hoek Exp $
 #
 
 PORTNAME=	findutils
