@@ -2,7 +2,7 @@
 # Date created:			19 April 1996
 # Whom:				jkh
 #
-# $FreeBSD: ports/devel/SWIG/Makefile,v 1.37 2001/05/26 12:05:30 knu Exp $
+# $FreeBSD: ports/devel/SWIG/Makefile,v 1.38 2001/06/09 03:04:02 knu Exp $
 #
 
 PORTNAME=	swig
@@ -24,9 +24,10 @@ VER=		1.1
 
 USE_PERL5=	yes
 USE_PYTHON=	yes
+PYTHON_NO_DEPENDS=	yes
 INSTALLS_SHLIB=	yes
 
-WRKSRC=		${WRKDIR}/SWIG${PORTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME:U}${PORTVERSION}
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="${CFLAGS} -fpic -DPIC"
 CONFIGURE_ARGS=	--with-tclincl=${LOCALBASE}/include/tcl8.3/ \
