@@ -3,23 +3,19 @@
 # Date created:         3 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/calc/Makefile,v 1.13 1999/08/25 07:07:20 obrien Exp $
 #
 
-DISTNAME=	calc-2.9.3t6
-PKGNAME=	calc-2.9.3
+DISTNAME=	calc-2.11.1t3.0
+PKGNAME=	calc-2.11.1
 CATEGORIES=	math
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/contrib/
-EXTRACT_SUFX=	.tar
+MASTER_SITES=	ftp://reality.sgi.com/users/chongo/src/calc/		\
+		http://reality.sgi.com/chongo/src/calc/			\
+		ftp://ftp.uu.net/pub/calc/
 
 MAINTAINER=	jmz@FreeBSD.org
 
-EXTRACT_CMD=		${TAR}
-EXTRACT_BEFORE_ARGS=	-xf
-EXTRACT_AFTER_ARGS=	# empty
-
 MAN1=		calc.1
-IGNOREFILES=	${DISTFILES}	# "on-the-fly" creation of tarball
 
 pre-install:
 	@${MKDIR} ${PREFIX}/lib/calc/help
