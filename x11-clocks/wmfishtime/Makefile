@@ -2,13 +2,13 @@
 # Date created:				31 March 2001
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/wmfishtime/Makefile,v 1.1 2001/04/07 05:14:11 will Exp $
 #
 
 PORTNAME=	wmfishtime
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	x11-clocks windowmaker
-MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/ \
+MASTER_SITES=	http://www.ne.jp/asahi/linux/timecop/software/ \
 		http://www.freenix.no/~anders/
 
 MAINTAINER=	anders@fix.no
