@@ -3,7 +3,7 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.1 2000/02/13 02:06:50 imura Exp $
 #
 
 DISTNAME=	xmovie-i586-1.3.1
@@ -25,6 +25,7 @@ ONLY_FOR_ARCHS=	i386
 DOC_DIR=	${PREFIX}/share/doc/xmovie
 NO_BUILD=	yes
 USE_X_PREFIX=	yes
+WRKSRC=		${WRKDIR}/xmovie-i586
 
 RPM_MIRRORS=            \
 	ftp://ftp.cdrom.com/pub/linux/redhat/__DIR__/ \
