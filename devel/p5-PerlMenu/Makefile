@@ -2,7 +2,7 @@
 # Date created:				August 14, 2000
 # Whom:	      				John Baldwin <jhb@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-PerlMenu/Makefile,v 1.1 2000/08/14 21:23:13 will Exp $
 #
 
 PORTNAME=	PerlMenu
@@ -15,7 +15,7 @@ DISTNAME=	perlmenu.v4.0
 
 MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${MACHINE_ARCH}-freebsd/Curses.pm:${PORTSDIR}/devel/p5-Curses
+RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Curses.pm:${PORTSDIR}/devel/p5-Curses
 
 USE_PERL5=	yes
 NO_BUILD=	yes
