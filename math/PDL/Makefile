@@ -3,7 +3,7 @@
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/PDL/Makefile,v 1.3 1999/08/25 07:04:08 obrien Exp $
 #
 
 DISTNAME=	PDL-2.0
@@ -16,7 +16,7 @@ MAINTAINER=	tobez@plab.ku.dk
 
 BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/PGPLOT.pm:${PORTSDIR}/graphics/pgperl
 RUN_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/PGPLOT.pm:${PORTSDIR}/graphics/pgperl
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 USE_PERL5=	yes
 SCRIPTS_ENV=	PERL=${PERL}

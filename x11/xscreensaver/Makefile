@@ -3,7 +3,7 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.26 1999/11/08 15:57:21 jseger Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.27 1999/11/25 06:19:05 jseger Exp $
 #
 
 DISTNAME=	xscreensaver-3.21
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.jwz.org/xscreensaver/
 MAINTAINER=	jseger@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3
+		GL.14:${PORTSDIR}/graphics/Mesa3
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-pam --with-gl --with-gle --with-xpm

@@ -3,7 +3,7 @@
 # Date created:				5 November 1996
 # Whom:					fenner
 #
-# $FreeBSD: ports/graphics/geomview/Makefile,v 1.19 1999/11/28 18:31:02 steve Exp $
+# $FreeBSD: ports/graphics/geomview/Makefile,v 1.20 2000/01/26 06:01:49 fenner Exp $
 #
 
 DISTNAME=	geomview-1.6.1
@@ -15,7 +15,7 @@ DISTFILES=	geomview-1.6.1-src.tar.gz
 MAINTAINER=	fenner@freebsd.org
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
+		GL.14:${PORTSDIR}/graphics/Mesa3 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/Geomview

@@ -3,7 +3,7 @@
 # Date created:         4 Mar 1998
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/tank/Makefile,v 1.10 1999/08/25 06:04:30 obrien Exp $
+# $FreeBSD: ports/games/tank/Makefile,v 1.11 1999/08/31 06:44:27 mharo Exp $
 #
 
 DISTNAME=	tank-0.4a-src
@@ -13,7 +13,7 @@ MASTER_SITES=	http://step.polymtl.ca/~coyote/tank/
 
 MAINTAINER=	dburr@FreeBSD.org
 
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 BROKEN=	can\'t find glaux.h
 

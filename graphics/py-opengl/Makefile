@@ -3,7 +3,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.1.1.1 1999/11/07 16:59:54 steve Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.2 1999/11/28 18:31:36 steve Exp $
 #
 
 DISTNAME=	PyOpenGL-1.5.5
@@ -17,7 +17,7 @@ BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 ALL_TARGET=	default
 

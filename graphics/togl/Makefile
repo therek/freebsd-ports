@@ -3,7 +3,7 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/togl/Makefile,v 1.1.1.1 1999/09/24 16:01:30 taoka Exp $
+# $FreeBSD: ports/graphics/togl/Makefile,v 1.2 1999/11/28 18:32:22 steve Exp $
 #
 
 DISTNAME=	Togl-1.5
@@ -16,7 +16,7 @@ MAINTAINER=	aa8vb@ipass.net
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 		tcl82.1:${PORTSDIR}/lang/tcl82 \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3
+		GL.14:${PORTSDIR}/graphics/Mesa3
 
 ALL_TARGET=	default
 

@@ -3,7 +3,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.41 2000/03/03 18:54:52 asami Exp $
+# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.42 2000/03/06 18:23:59 imura Exp $
 #
 
 DISTNAME=	qt-x11-2.1.0-beta2
@@ -15,7 +15,7 @@ MAINTAINER=	imura@FreeBSD.org
 
 LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3
+		GL.14:${PORTSDIR}/graphics/Mesa3
 
 NO_LATEST_LINK=	yes
 USE_GMAKE=	yes

@@ -3,7 +3,7 @@
 # Date Created:		28 November 1999
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/truereality/Makefile,v 1.1 1999/12/25 15:50:03 steve Exp $
 #
 
 DISTNAME=	TrueReality-${DATE}
@@ -14,8 +14,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	lioux@linf.unb.br
 
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
-		MesaGLU.14:${PORTSDIR}/graphics/Mesa3 \
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
+		GLU.14:${PORTSDIR}/graphics/Mesa3 \
 		X11.6:${PORTSDIR}/x11/XFree86 \
 		Xext.6:${PORTSDIR}/x11/XFree86
 

@@ -3,7 +3,7 @@
 # Date created:				18 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/glbiff/Makefile,v 1.10 1999/08/25 06:50:12 obrien Exp $
 #
 
 DISTNAME=	glbiff-0.2.11
@@ -13,8 +13,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	MesaGL:${PORTSDIR}/graphics/Mesa3 \
-		MesaGLU:${PORTSDIR}/graphics/Mesa3 \
+LIB_DEPENDS=	GL:${PORTSDIR}/graphics/Mesa3 \
+		GLU:${PORTSDIR}/graphics/Mesa3 \
 		glut:${PORTSDIR}/graphics/Mesa3
 
 GNU_CONFIGURE=	yes

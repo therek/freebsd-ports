@@ -3,7 +3,7 @@
 # Date created:			04 Dec 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/glload/Makefile,v 1.8 1999/08/31 06:50:48 mharo Exp $
+# $FreeBSD: ports/sysutils/glload/Makefile,v 1.9 2000/02/08 09:29:01 peter Exp $
 #
 
 DISTNAME=	glload-0.4.0
@@ -13,7 +13,7 @@ MASTER_SITES=	http://glload.netpedia.net/source/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 USE_X_PREFIX=	yes
 MAKEFILE=	Makefile.FreeBSD

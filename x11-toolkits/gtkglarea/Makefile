@@ -3,7 +3,7 @@
 # Date created:        1 August 1999
 # Whom:                Michael Sardo <jaeger16@yahoo.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gtkglarea/Makefile,v 1.2 1999/08/31 02:59:18 peter Exp $
 #
 
 DISTNAME=	gtkglarea-1.2.1
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.student.oulu.fi/~jlof/gtkglarea/download/
 MAINTAINER=	jaeger16@yahoo.com
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3
+		GL.14:${PORTSDIR}/graphics/Mesa3
 
 FETCH_BEFORE_ARGS=	-b
 USE_LIBTOOL=	yes

@@ -3,7 +3,7 @@
 # Date created:				17 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/battalion/Makefile,v 1.7 1999/08/25 06:02:54 obrien Exp $
 #
 
 DISTNAME=	battalion-1.4
@@ -13,8 +13,8 @@ DISTFILES=	battalionSource1.4.tar.Z battalionSUN4.tar.gz
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
-		MesaGLU.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3 \
+		GLU.14:${PORTSDIR}/graphics/Mesa3
 
 ALL_TARGET=
 USE_X_PREFIX=	yes

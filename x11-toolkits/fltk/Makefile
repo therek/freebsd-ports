@@ -3,7 +3,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.10 1999/08/31 02:59:11 peter Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.11 2000/01/28 00:31:00 jedgar Exp $
 #
 
 DISTNAME=	fltk-1.0.7-source
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.fltk.org/pub/fltk/${VERSION}/ \
 
 MAINTAINER=	dima@chg.ru
 
-LIB_DEPENDS=	MesaGL.14:${PORTSDIR}/graphics/Mesa3
+LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
 VERSION=	1.0.7
 USE_BZIP2=	yes

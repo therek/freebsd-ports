@@ -3,7 +3,7 @@
 # Date created:        17 February 2000
 # Whom:                Maxim Sobolev <sobomax@altavista.net>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.1.1.1 2000/02/18 03:22:46 nakai Exp $
 #
 
 DISTNAME=	xtraceroute-0.8.14
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 MAINTAINER=	sobomax@altavista.net
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
+		GL.14:${PORTSDIR}/graphics/Mesa3 \
 		gtkgl.4:${PORTSDIR}/x11-toolkits/gtkglarea \
 		tiff.4:${PORTSDIR}/graphics/tiff
 
