@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.272 2001/02/28 17:03:39 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.273 2001/03/02 18:05:13 mi Exp $
 #
 
     SUBDIR += 4va
@@ -217,6 +217,7 @@
     SUBDIR += vid
     SUBDIR += view3ds
     SUBDIR += whirlgif
+    SUBDIR += win32-codecs
     SUBDIR += wmgrabimage
     SUBDIR += wmicons
     SUBDIR += xanim
