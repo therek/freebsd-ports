@@ -2,11 +2,11 @@
 # Date created: 	16 September 2000
 # Whom: 		Holger Lamm
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/avifile/Makefile,v 1.12 2001/02/16 19:48:09 sobomax Exp $
 #
 
 PORTNAME=	avifile
-PORTVERSION=	0.53.4
+PORTVERSION=	0.53.5
 CATEGORIES=	graphics
 MASTER_SITES=	http://ernie.eit.uni-kl.de/avifile/ \
 		http://divx.euro.ru/ \
