@@ -2,15 +2,14 @@
 # Date created:		15 Jan 1999
 # Whom:			john@nlc.net.au
 #
-# $FreeBSD: ports/net/radiusd-cistron/Makefile,v 1.11 2000/04/09 18:13:17 cpiazza Exp $
+# $FreeBSD: ports/net/radiusd-cistron/Makefile,v 1.12 2000/05/03 23:04:45 billf Exp $
 #
 
 PORTNAME=	radiusd-cistron
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/ \
 		ftp://ftp.freeradius.org/pub/radius/
-DISTNAME=	radiusd-cistron-1.6.3-stable
 
 MAINTAINER=	john@nlc.net.au
 
