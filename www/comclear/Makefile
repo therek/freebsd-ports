@@ -2,7 +2,7 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/www/comclear/Makefile,v 1.5 2001/05/04 21:41:23 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	comclear
@@ -13,14 +13,16 @@ MASTER_SITES=	http://www.neuro-tech.net/files/
 
 MAINTAINER=	roam@FreeBSD.org
 
-WANT_GTK=	yes
+USE_GNOMENG=	yes
+WANT_GNOME=	yes
 USE_GMAKE=	yes
 USE_AUTOMAKE=	yes
 
 .include <bsd.port.pre.mk>
 
-.if defined(HAVE_GTK)
-USE_GTK=	yes
+.if ${HAVE_GNOME:Mgtk12}!=""
+USE_GNOME+=	gtk12
+PKGNAMESUFFIX=	-gtk
 .endif
 
 # Do not install docs by default, see the ifdef'd post-install below.

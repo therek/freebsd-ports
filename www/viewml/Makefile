@@ -2,7 +2,7 @@
 # Date created:				Black Friday (13 April 2001)
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/viewml/Makefile,v 1.2 2001/04/17 07:13:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	viewml
@@ -21,7 +21,8 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/src
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_IMLIB=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	imlib
 USE_BISON=	yes
 CFLAGS+=	-fpermissive -include /usr/include/sys/types.h \
 		-DPREFIX=\\\"${PREFIX}\\\"

@@ -2,7 +2,7 @@
 # Date created:		04 March 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/nscache/Makefile,v 1.5 2001/02/05 15:33:36 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nscache
@@ -16,18 +16,19 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	kris@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
 WANT_GNOME=	yes
 USE_AUTOMAKE=	yes
 AUTOMAKE_ARGS=	--include-deps
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--with-gtk-config=${GTK_CONFIG}
-  
+
 .include <bsd.port.pre.mk>
-  
+
 .if defined(HAVE_GNOME)
-USE_GNOME=	yes
+USE_GNOME+=	gtk12
+PKGNAMESUFFIX=	-gtk
 .else
 CONFIGURE_ARGS+=	--disable-gnome
 .endif

@@ -2,7 +2,7 @@
 # Date created:			31 July 1999
 # Whom:				Jim Mock <jimFreeBSD.org>
 #
-# $FreeBSD: ports/www/erwn/Makefile,v 1.6 2000/10/05 06:42:29 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	erwn
@@ -15,7 +15,8 @@ MAINTAINER=	jim@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 post-install:
 .if !defined(NOPORTDOCS)
