@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.367 2000/06/14 16:23:17 obrien Exp $
+# $FreeBSD: ports/net/Makefile,v 1.368 2000/06/28 00:31:45 archie Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -155,6 +155,7 @@
     SUBDIR += p5-Net-DNS
     SUBDIR += p5-Net-Daemon
     SUBDIR += p5-Net-IPv4Addr
+    SUBDIR += p5-Net-Netmask
     SUBDIR += p5-Net-RawIP
     SUBDIR += p5-Net-Telnet
     SUBDIR += p5-Net-Whois
