@@ -2,7 +2,7 @@
 # Date Created:				13 Aug 2001
 # Whom:					Shell Hung <shell@shellhung.org>
 #
-# $FreeBSD: ports/devel/p5-Test-Harness/Makefile,v 1.1 2001/08/14 15:05:03 kevlo Exp $
+# $FreeBSD: ports/devel/p5-Test-Harness/Makefile,v 1.2 2001/10/02 18:13:46 tobez Exp $
 #
 
 PORTNAME=	Test-Harness
@@ -16,11 +16,10 @@ MAINTAINER=	shell@shellhung.org
 
 PERL_CONFIGURE=	yes
 
-MODULE_PREFIX=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}
-CONFIGURE_ARGS+= INSTALLPRIVLIB=${MODULE_PREFIX} \
-		 INSTALLARCHLIB=${MODULE_PREFIX}/${PERL_ARCH}
-
 MAN3=		Test::Harness.3
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+
+post-patch:
+	${PERL} -pi -e 'm.INSTALLDIRS.&&s,.,,sg' ${WRKSRC}/Makefile.PL
 
 .include <bsd.port.mk>
