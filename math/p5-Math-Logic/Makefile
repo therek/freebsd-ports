@@ -2,7 +2,7 @@
 # Date created:				20 Sep 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/p5-Math-Logic/Makefile,v 1.1 2000/09/20 18:47:36 will Exp $
 #
 
 PORTNAME=	Math-Logic
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Math
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 USE_PERL5=	yes
 PERL_CONFIGURE=	yes

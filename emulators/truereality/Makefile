@@ -2,7 +2,7 @@
 # Date Created:		28 November 1999
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/truereality/Makefile,v 1.4 2000/05/22 07:18:03 will Exp $
+# $FreeBSD: ports/emulators/truereality/Makefile,v 1.5 2000/08/23 07:47:09 kevlo Exp $
 #
 
 PORTNAME=	truereality
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.emuhq.com/emulators/ \
 		ftp://ftp.mayn.de/pub/unix/emulators/console/
 DISTNAME=	TrueReality-${PORTVERSION}
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_XLIB=	yes

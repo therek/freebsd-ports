@@ -2,7 +2,7 @@
 # Date created:         11 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/ftp/caitoo/Makefile,v 1.1 2000/07/10 03:29:15 steve Exp $
+# $FreeBSD: ports/ftp/caitoo/Makefile,v 1.2 2000/08/21 10:07:18 sobomax Exp $
 #
 
 PORTNAME=	caitoo
@@ -12,7 +12,7 @@ MASTER_SITES=	http://devel-home.kde.org/~caitoo/src/ \
 		${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	unstable/apps/network
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.3:${PORTSDIR}/x11/kdelibs11 \

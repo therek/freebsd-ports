@@ -2,7 +2,7 @@
 # Date created:				14 June 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.1 2000/07/10 04:08:46 steve Exp $
+# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.2 2000/10/03 05:00:31 lioux Exp $
 #
 
 PORTNAME=	libjparser
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/glove/source/ \
 		ftp://ftp.newplanetsoftware.com/pub/thx/source/
 DISTNAME=	JParser_source-${PORTVERSION}
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 		makemake:${JXPORT}

@@ -2,7 +2,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.20 2000/08/23 07:39:57 kevlo Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.21 2000/09/28 20:56:02 nbm Exp $
 #
 
 PORTNAME=	qmail
@@ -23,7 +23,7 @@ PATCH_SITES?=	http://www.ckdhr.com/ckd/
 PATCHFILES?=	qmail-103.patch
 PATCH_DIST_STRIP+=	-p1
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 # A normal qmail installation puts everything into /var/qmail/.
 # If you want to install to /usr/local/, then "/usr/local/qmail" is

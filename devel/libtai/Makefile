@@ -2,7 +2,7 @@
 # Date created:		15 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libtai/Makefile,v 1.1 2000/07/07 14:02:30 sobomax Exp $
 #
 
 PORTNAME=	libtai
@@ -10,7 +10,7 @@ PORTVERSION=	0.60
 CATEGORIES=	devel
 MASTER_SITES=	http://cr.yp.to/libtai/
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 ALL_TARGET=	it
 INSTALLS_SHLIB= yes

@@ -2,7 +2,7 @@
 # Date created:                         16 March 1999
 # Whom:                                 Pavel Andreev
 #
-# $FreeBSD: ports/net/kicq/Makefile,v 1.8 2000/09/19 15:25:43 sobomax Exp $
+# $FreeBSD: ports/net/kicq/Makefile,v 1.9 2000/09/23 04:32:13 dannyboy Exp $
 #
 
 PORTNAME=	kicq
@@ -11,7 +11,7 @@ CATEGORIES=	net kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS=	icq.1:${PORTSDIR}/net/icqlib \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11

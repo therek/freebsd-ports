@@ -2,7 +2,7 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.1 2000/09/19 15:46:56 sobomax Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.2 2000/09/28 20:56:03 nbm Exp $
 #
 
 PORTNAME=	qmail
@@ -13,7 +13,7 @@ PKGNAMESUFFIX=	-ldap
 PATCH_SITES=	http://www.nrg4u.com/qmail/
 PATCHFILES=	qmail-ldap-1.03-${LDAP_PATCH_DATE}.patch.gz
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS+=	ldap.1:${PORTSDIR}/net/openldap
 

@@ -2,7 +2,7 @@
 # Date created:		16 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.1 2000/07/07 14:30:01 sobomax Exp $
 #
 
 PORTNAME=	clockspeed
@@ -10,7 +10,7 @@ PORTVERSION=	0.62
 CATEGORIES=	sysutils
 MASTER_SITES=	http://cr.yp.to/clockspeed/
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS=	tai.1:${PORTSDIR}/devel/libtai
 

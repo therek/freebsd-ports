@@ -2,7 +2,7 @@
 # Date created:         11 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/www/kwebwatch/Makefile,v 1.1 2000/07/10 03:56:14 steve Exp $
+# $FreeBSD: ports/www/kwebwatch/Makefile,v 1.2 2000/08/23 07:41:42 kevlo Exp $
 #
 
 PORTNAME=	kwebwatch
@@ -12,7 +12,7 @@ MASTER_SITES=	http://linuxberg.uol.com.br/files/kde/network/ \
 		ftp://ftp.bmtmicro.com/tucows/mirror/files/kde/network/ \
 		ftp://ftp.bitcon.no/.4/kde/network/
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.3:${PORTSDIR}/x11/kdelibs11 \

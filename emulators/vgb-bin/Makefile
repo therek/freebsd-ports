@@ -2,7 +2,7 @@
 # Date created:		04 Aug 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.1 2000/08/11 04:21:12 will Exp $
 #
 
 PORTNAME=	vgb
@@ -13,7 +13,7 @@ PKGNAMESUFFIX= -bin
 DISTNAME=	VGB${PORTVERSION}-FreeBSD-80x86-bin
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 USE_X_PREFIX=	yes

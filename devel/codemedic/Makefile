@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codemedic/Makefile,v 1.1 2000/09/18 00:37:21 steve Exp $
+# $FreeBSD: ports/devel/codemedic/Makefile,v 1.2 2000/10/03 05:00:28 lioux Exp $
 #
 
 PORTNAME=	code_medic
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://people.FreeBSD.org/~sobomax/distfiles/
 DISTNAME=	Code_Medic_source-${PORTVERSION}
 
-MAINTAINER=	lioux@linf.unb.br
+MAINTAINER=	lioux@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 		makemake:${JXPORT}
