@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.67 2000/07/27 21:48:38 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.68 2000/07/28 23:12:47 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -29,7 +29,7 @@ NETSCAPE_DIST_ARCH=	supported/dec_unix40
 NETSCAPE_DIST_TAG=	alpha-dec-osf4.0
 .endif
 
-.if defined(BROWSER) && ${BROWSER} == 'navigator'
+.if defined(BROWSER) && ${BROWSER} == "navigator"
 NETSCAPE_DIST_GRADE=	navigator_standalone
 .endif
 
