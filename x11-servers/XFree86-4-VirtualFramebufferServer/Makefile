@@ -2,16 +2,20 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/XFree86-4-VirtualFramebufferServer/Makefile,v 1.4 2000/09/21 08:46:01 sobomax Exp $
+# $FreeBSD: ports/x11-servers/XFree86-4-VirtualFramebufferServer/Makefile,v 1.5 2000/10/08 07:21:02 asami Exp $
 #
 
 PORTNAME=	VirtualFramebufferServer
-PORTVERSION=	4.0.1
+PORTVERSION=	4.0.3
 CATEGORIES=	x11-servers
 MASTER_SITES=	${MASTER_SITE_XFREE}
 MASTER_SITE_SUBDIR=	${PORTVERSION}
 PKGNAMEPREFIX=	XFree86-
-DISTFILES=	X401src-1.tgz
+DISTFILES=	X402src-1.tgz
+
+PATCH_SITES=	${MASTER_SITE_XFREE:S,%SUBDIR%/source,4.0.3/patches,g}
+PATCHFILES=	4.0.2-4.0.3.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
@@ -19,14 +23,10 @@ XFREE86_VERSION=	4
 USE_IMAKE=		YES
 DIST_SUBDIR=		xc
 WRKSRC=			${WRKDIR}/xc
-PATCHDIR=		${PORTSDIR}/x11/XFree86-4-libraries/files
-SCRIPTS_ENV+=		PREFIX=${PREFIX} \
-			X11BASE=${X11BASE} \
-			WRKDIR=${WRKDIR} \
-			DISTDIR=${DISTDIR}
+PATCHDIR=		${.CURDIR}/../../x11/XFree86-4-libraries/files
 ALL_TARGET=		FreeBSDPortsBuild
-INSTALL_TARGET= 	installXvfb installXvfb.man
-MANCOMPRESSED=		yes
+INSTALL_TARGET= 	installXvfb installXserver.man
+MAKE_ENV=		MAN_INSTALL_TARGET=installXvfb.man
 MAN1=			Xserver.1 Xvfb.1
 
 do-configure:

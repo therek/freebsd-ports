@@ -2,19 +2,15 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-fonts/XFree86-4-fontEncodings/Makefile,v 1.1 2000/06/08 10:41:44 asami Exp $
+# $FreeBSD: ports/x11-fonts/XFree86-4-fontEncodings/Makefile,v 1.2 2000/08/25 10:33:26 asami Exp $
 #
 
 PORTNAME=	fontEncodings
-PORTVERSION=	4.0.1
+PORTVERSION=	4.0.3
 CATEGORIES=	x11-fonts
-MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/${PORTVERSION}/source/ \
-		ftp://ftp.freesoftware.com/pub/XFree86/${PORTVERSION}/source/ \
-		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-${PORTVERSION}/source/ \
-		ftp://ftp.cs.tu-berlin.de/pub/X/XFree86/${PORTVERSION}/source/ \
-		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/${PORTVERSION}/source/
+MASTER_SITES=	${MASTER_SITE_XFREE}
 PKGNAMEPREFIX=	XFree86-
-DISTFILES=	X401src-2.tgz
+DISTFILES=	X402src-2.tgz
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
