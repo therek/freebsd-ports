@@ -3,10 +3,8 @@
 # Date created:		5 Dec 1997
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xemacs-canna+wnn6/Makefile,v 1.5 1999/08/25 05:27:53 obrien Exp $
 #
-
-PKGNAME=	ja-xemacs-canna+wnn6-20.4
 
 CANNA=		yes
 WNN6=		yes
