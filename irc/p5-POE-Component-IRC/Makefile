@@ -3,7 +3,7 @@
 # Date created:		Aug 19, 2001
 # Whom:			ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/p5-POE-Component-IRC/Makefile,v 1.1 2001/08/18 23:07:01 ijliao Exp $
 #
 
 PORTNAME=	POE-Component-IRC
@@ -18,7 +18,6 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/POE.pm:${PORTSDIR}/devel/p5-POE
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

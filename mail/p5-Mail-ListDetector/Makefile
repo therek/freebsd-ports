@@ -2,7 +2,7 @@
 # Date created:				13 August 2001
 # Whom:					petef
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-ListDetector/Makefile,v 1.1 2001/08/23 15:41:27 petef Exp $
 #
 
 PORTNAME=	Mail-ListDetector
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${SITE_PERL}/Email/Valid.pm:${PORTSDIR}/mail/p5-Email-Valid \
 		${SITE_PERL}/URI.pm:${PORTSDIR}/net/p5-URI
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 

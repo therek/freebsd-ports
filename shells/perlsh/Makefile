@@ -2,7 +2,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/perlsh/Makefile,v 1.7 2001/04/15 01:05:42 steve Exp $
+# $FreeBSD: ports/shells/perlsh/Makefile,v 1.8 2001/06/07 11:09:45 jeh Exp $
 #
 
 PORTNAME=	perlsh
@@ -14,7 +14,6 @@ DISTNAME=	psh-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -3,7 +3,7 @@
 # Date created:			Feb 26, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/shells/vshnu/Makefile,v 1.1 2001/02/25 19:35:33 ijliao Exp $
+# $FreeBSD: ports/shells/vshnu/Makefile,v 1.2 2001/06/13 15:00:08 ijliao Exp $
 #
 
 PORTNAME=	vshnu
@@ -24,7 +24,6 @@ BUILD_DEPENDS+=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Term/ANSIColor.pm:$
 
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 .include <bsd.port.post.mk>

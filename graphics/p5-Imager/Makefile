@@ -3,7 +3,7 @@
 # Date created:			Jul 24, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/graphics/p5-Imager/Makefile,v 1.1 2001/07/24 13:14:22 ijliao Exp $
+# $FreeBSD: ports/graphics/p5-Imager/Makefile,v 1.2 2001/08/03 18:28:52 ijliao Exp $
 #
 
 PORTNAME=	Imager
@@ -23,7 +23,6 @@ LIB_DEPENDS=	t1:${PORTSDIR}/devel/t1lib \
 		jpeg:${PORTSDIR}/graphics/jpeg
 
 USE_FREETYPE=	yes
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 CONFIGURE_ENV=	IM_LIBPATH="${LOCALBASE}/lib"
 USE_GMAKE=	yes

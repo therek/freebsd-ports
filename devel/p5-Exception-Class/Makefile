@@ -3,7 +3,7 @@
 # Date created:			Jul 28, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Exception-Class/Makefile,v 1.1 2001/07/28 05:32:04 ijliao Exp $
 #
 
 PORTNAME=	Exception-Class
@@ -18,7 +18,6 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Devel/StackTrace.pm:${PORTSDIR}/devel/p5-Devel-StackTrace
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

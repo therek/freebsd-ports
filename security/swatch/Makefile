@@ -2,7 +2,7 @@
 # Date created:					May 2 97
 # Whom:						jfitz
 #
-# $FreeBSD: ports/security/swatch/Makefile,v 1.8 2000/12/29 15:42:30 kevlo Exp $
+# $FreeBSD: ports/security/swatch/Makefile,v 1.9 2001/08/24 00:23:31 petef Exp $
 #
 
 PORTNAME=	swatch
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	${site_perl}/Date/Format.pm:${PORTSDIR}/devel/p5-TimeDate \
 
 site_perl=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 CONFIGURE_ARGS+=	INSTALLMAN1DIR=${PREFIX}/man/man1
 

@@ -3,7 +3,7 @@
 # Date created:			Jul 28, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-Devel-StackTrace/Makefile,v 1.1 2001/07/28 05:18:51 ijliao Exp $
 #
 
 PORTNAME=	Devel-StackTrace
@@ -15,7 +15,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				30 December 2000
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/textproc/p5-Text-FixedLength-Extra/Makefile,v 1.1 2001/05/11 16:11:50 vanilla Exp $
+# $FreeBSD: ports/textproc/p5-Text-FixedLength-Extra/Makefile,v 1.2 2001/06/12 19:25:34 tobez Exp $
 #
 
 PORTNAME=	Text-FixedLength-Extra
@@ -23,7 +23,6 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 BROKEN="Requires perl that has 'our' keyword"
 .endif
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Text::FixedLength::Extra.3

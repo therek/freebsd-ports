@@ -3,7 +3,7 @@
 # Date created:			Mar 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Frontier-RPC/Makefile,v 1.1 2001/03/08 13:49:38 ijliao Exp $
 #
 
 PORTNAME=	Frontier-RPC
@@ -19,7 +19,6 @@ MAINTAINER=	ijliao@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

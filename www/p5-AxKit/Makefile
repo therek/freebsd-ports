@@ -2,7 +2,7 @@
 # Date created:					17 Jan 2001
 # Whom:						dom@happygiraffe.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-AxKit/Makefile,v 1.1 2001/08/12 14:59:11 ijliao Exp $
 #
 
 PORTNAME=	AxKit
@@ -28,7 +28,6 @@ BUILD_DEPENDS=	\
 		${SITE_PERL}/XML/XPath.pm:${PORTSDIR}/textproc/p5-XML-XPath
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 
 MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

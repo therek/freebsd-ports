@@ -2,7 +2,7 @@
 # Date created:				10th Jan 2001
 # Whom:					kuriyama
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/p5-Schedule-At/Makefile,v 1.1 2001/01/10 03:04:45 kuriyama Exp $
 #
 
 PORTNAME=	Schedule-At
@@ -14,7 +14,6 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MAN3=		Schedule::At.3

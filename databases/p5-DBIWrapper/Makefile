@@ -2,7 +2,7 @@
 # Date Created:				30 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/databases/p5-DBIWrapper/Makefile,v 1.3 2001/07/27 12:25:36 tobez Exp $
+# $FreeBSD: ports/databases/p5-DBIWrapper/Makefile,v 1.4 2001/08/22 23:05:13 petef Exp $
 #
 
 PORTNAME=	DBIWrapper
@@ -19,8 +19,6 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
-
-USE_PERL5=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=	DBIWrapper.3

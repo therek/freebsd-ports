@@ -3,7 +3,7 @@
 # Date created:			Jul 30, 2001
 # Whom:	      			ijliao
 #
-# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.5 2001/08/22 23:05:43 petef Exp $
+# $FreeBSD: ports/ftp/p5-Net-FTPServer/Makefile,v 1.6 2001/08/24 21:01:57 petef Exp $
 #
 
 PORTNAME=	Net-FTPServer
@@ -24,7 +24,6 @@ BUILD_DEPENDS=	${SITE_PERL}/${PERL_ARCH}/Authen/PAM.pm:${PORTSDIR}/security/p5-A
 		${SITE_PERL}/IO/Scalar.pm:${PORTSDIR}/devel/p5-IO-stringy
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gnome/Makefile,v 1.6 2001/03/13 12:56:53 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gnome/Makefile,v 1.7 2001/05/27 21:00:29 vanilla Exp $
 #
 
 PORTNAME=	Gnome
@@ -19,7 +19,6 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk/Gdk
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gtk.pm:${PORTSDIR}/x11-toolkits/p5-Gtk
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 USE_GNOME=	yes
 PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}

@@ -3,7 +3,7 @@
 # Date created:			Jul 28, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-libservlet/Makefile,v 1.1 2001/07/28 06:28:47 ijliao Exp $
 #
 
 PORTNAME=	libservlet
@@ -18,7 +18,6 @@ MAINTAINER=	ijliao@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Exception/Class.pm:${PORTSDIR}/devel/p5-Exception-Class
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_PERL5=	yes
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}

@@ -2,7 +2,7 @@
 # Date created:				2 August 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/misc/p5-Geo-Weather/Makefile,v 1.1 2001/08/05 04:18:19 lioux Exp $
+# $FreeBSD: ports/misc/p5-Geo-Weather/Makefile,v 1.2 2001/08/22 23:06:24 petef Exp $
 #
 
 PORTNAME=	Geo-Weather
@@ -16,8 +16,6 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	petef@FreeBSD.org
 
 RUN_DEPENDS=	${SITE_PERL}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
-
-USE_PERL5=	yes
 
 SITE_PERL=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}
 PERL_CONFIGURE=	yes
