@@ -3,17 +3,17 @@
 # Date created:		29 Oct 1997
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.10 1999/08/25 06:13:45 obrien Exp $
+# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.11 1999/08/31 06:44:54 mharo Exp $
 #
 
 DISTNAME=	cqcam-0.45a
-CATEGORIES=	graphics tk80
+CATEGORIES=	graphics tk82
 MASTER_SITES=	http://www.cs.virginia.edu/~patrick/cqcam/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80 \
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 ONLY_FOR_ARCHS=	i386
