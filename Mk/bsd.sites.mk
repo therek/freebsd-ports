@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.132 2003/02/15 13:31:58 arved Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.133 2003/02/15 13:39:04 arved Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -367,6 +367,19 @@ MASTER_SITE_NETSCAPE+= \
 	ftp://ftp.skynet.be/mirror2/netscape/%SUBDIR%/ \
 	ftp://ftp.uni-bremen.de/pub/mirrors/ftp.netscape.com/pub/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/
+
+MASTER_SITE_PACKETSTORM+= \
+	http://packetstorm.linuxsecurity.com/%SUBDIR%/ \
+	http://packetstorm.dnsi.info/%SUBDIR%/ \
+	http://packetstorm.decepticons.org/%SUBDIR%/ \
+	http://packetstormsecurity.nl/%SUBDIR%/ \
+	http://packetstorm.acm.miami.edu/%SUBDIR%/ \
+	http://packetstormsecurity.org.pk/%SUBDIR%/ \
+	http://packetstorm.security-guide.de/%SUBDIR%/ \
+	http://packetstorm.globalhostnet.com/%SUBDIR%/ \
+	http://packetstormsecurity.com.ar/%SUBDIR%/ \
+	http://packetstorm.nulldetector.com/%SUBDIR%/ \
+	http://packetstormsecurity.packetstorm.org/%SUBDIR%/
 
 MASTER_SITE_PERL_CPAN+=	\
 	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
