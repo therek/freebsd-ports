@@ -2,13 +2,14 @@
 # Date created:			31 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gyroscope/Makefile,v 1.2 1999/08/31 02:50:21 peter Exp $
+# $FreeBSD: ports/x11/gyroscope/Makefile,v 1.3 2000/04/13 19:09:33 cpiazza Exp $
 #
 
 PORTNAME=	gyroscope
 PORTVERSION= 	1.0
 CATEGORIES=	x11
-MASTER_SITES=	http://www.millar.u-net.com/
+MASTER_SITES=	http://www.millar.u-net.com/ \
+		http://soupnazi.org/~jim/FreeBSD/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
