@@ -2,16 +2,16 @@
 # Date created:        23 February 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/www/dillo/Makefile,v 1.2 2001/03/04 15:35:40 kevlo Exp $
+# $FreeBSD: ports/www/dillo/Makefile,v 1.3 2001/03/11 05:51:25 kevlo Exp $
 #
 
 PORTNAME=       dillo
-PORTVERSION=	0.4.0
+PORTVERSION=	0.5.0
 CATEGORIES=     www
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	greid@ukug.uk.freebsd.org
+MAINTAINER=	greid@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
