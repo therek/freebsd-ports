@@ -2,7 +2,7 @@
 # Date created:         22 June 1999
 # Whom:                 Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/gma/Makefile,v 1.4 1999/08/29 11:21:01 peter Exp $
+# $FreeBSD: ports/games/gma/Makefile,v 1.5 2000/04/14 06:43:01 mharo Exp $
 #
 
 PORTNAME=	gma
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.student.nada.kth.se/~d92-jwa/code/gma/
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
+
+BROKEN=		"Compiler errors"
 
 GNU_CONFIGURE= yes
 
