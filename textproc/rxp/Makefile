@@ -2,12 +2,11 @@
 # Date created:		12 Jan 2001
 # Whom:			jkoshy
 #
-# $FreeBSD: ports/textproc/rxp/Makefile,v 1.1 2001/01/17 09:11:36 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rxp
-PORTVERSION=	1.2.3
-PORTREVISION=	1
+PORTVERSION=	1.2.5
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cogsci.ed.ac.uk/pub/richard/
 
