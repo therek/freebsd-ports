@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.90 2000/08/19 16:49:19 dannyboy Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.91 2000/08/21 22:51:45 dannyboy Exp $
 #
 
 PORTNAME=	wine
@@ -101,7 +101,6 @@ do-install:
 		${PREFIX}/lib/wine/reg
 	${INSTALL_DATA} ${FILESDIR}/README.patch \
 		${FILESDIR}/patch-3.3-sys-sigtrap \
-		${FILESDIR}/patch-3.3-sys-fsgs \
 		${PREFIX}/lib/wine
 	${INSTALL_DATA} ${WRKSRC}/winedefault.reg ${PREFIX}/lib/wine
 	${ECHO}
