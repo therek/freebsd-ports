@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.405 2001/07/29 23:33:19 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.406 2001/08/08 04:21:13 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -172,6 +172,7 @@
     SUBDIR += netrek-BRMH-bin
     SUBDIR += netrek-COW3-bin
     SUBDIR += netris
+    SUBDIR += newvox
     SUBDIR += oneko
     SUBDIR += oneko-sakura
     SUBDIR += oonsoo
