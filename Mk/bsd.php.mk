@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.5 2004/07/19 12:23:13 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.6 2004/07/19 15:34:18 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -17,6 +17,8 @@
 #
 # The port can set these options in its Makefile before bsd.ports.pre.mk:
 #
+# DEFAULT_PHP_VER=N - Use PHP version N if PHP is not yet installed.
+# BROKEN_WITH_PHP=N - The port doesn't work with PHP version N.
 # USE_PHPIZE=yes    - Use to build a PHP extension.
 # USE_PHPEXT=yes    - Use to build, install and register a PHP extension.
 # USE_PHP_BUILD=yes - Set PHP also as a build dependency.
@@ -37,9 +39,15 @@ PHP_Include_MAINTAINER=	ale@FreeBSD.org
 .include "${LOCALBASE}/etc/php.conf"
 .endif
 
-PHP_VER?=	4
+DEFAULT_PHP_VER?=	4
+
+PHP_VER?=	${DEFAULT_PHP_VER}
 .if !defined(PHP_EXT_DIR)
+.if ${PHP_VER} == 4
 PHP_EXT_DIR=	20020429
+.else
+PHP_EXT_DIR=	20040412
+.endif
 .if exists(${LOCALBASE}/include/apache2/httpd.h)
 APACHE_MPM!=	${APXS} -q MPM_NAME
 .if ${APACHE_MPM} == "worker"
