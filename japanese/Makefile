@@ -1,8 +1,7 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.243 1999/12/27 01:15:26 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.244 1999/12/27 01:24:28 steve Exp $
 #
 
     SUBDIR += Canna
-    SUBDIR += FAQ
     SUBDIR += VTPSfont
     SUBDIR += Wnn
     SUBDIR += Wnn6
