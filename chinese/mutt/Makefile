@@ -3,15 +3,15 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/chinese/mutt/Makefile,v 1.1.1.1 2000/08/26 09:02:47 vanilla Exp $
+# $FreeBSD: ports/chinese/mutt/Makefile,v 1.2 2000/08/30 05:31:57 obrien Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../mail/mutt
 
 MAINTAINER=	ycheng@sinica.edu.tw
 
-EXTRA_PATCHES=	${.CURDIR}/patches/patch-0a  \
-		${.CURDIR}/patches/patch-init.h  \
+EXTRA_PATCHES=	${.CURDIR}/patches/patch-init.h  \
+		${.CURDIR}/patches/patch-parse.c  \
 		${.CURDIR}/patches/patch-pgp.c  \
 		${.CURDIR}/patches/patch-sendlib.c 
 
