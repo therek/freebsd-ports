@@ -2,20 +2,20 @@
 # Date created:         12 May 1999
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.7 2000/04/12 06:20:10 obrien Exp $
+# $FreeBSD: ports/lang/python-doc-html/Makefile,v 1.8 2000/10/08 02:51:49 asami Exp $
 #
 
 PORTNAME=	python-doc-${DOCFORMAT}
-PORTVERSION=	1.5.2p2
+PORTVERSION=	2.0
 CATEGORIES=	lang python
-MASTER_SITES=	http://www.python.org/ftp/python/doc/ \
-		http://SunSITE.Informatik.RWTH-Aachen.DE/python/ftp/python/doc/1.5.2p2/
+MASTER_SITES=	http://www.python.org/ftp/python/doc/${PORTVERSION}/ \
+		http://SunSITE.Informatik.RWTH-Aachen.DE/python/ftp/python/doc/${PORTVERSION}/
 DISTNAME=	${DOCFORMAT}-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tg@FreeBSD.org
 
 DIST_SUBDIR=	python
+USE_BZIP2=	yes
 NO_BUILD=	yes
 PLIST=		${PKGDIR}/pkg-plist_${DOCFORMAT}
 
