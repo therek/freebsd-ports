@@ -2,7 +2,7 @@
 # Date created:         March 24 1997
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/net/arpwatch/Makefile,v 1.19 2001/04/07 01:51:52 brian Exp $
+# $FreeBSD: ports/net/arpwatch/Makefile,v 1.20 2001/05/21 09:47:12 brian Exp $
 #
 
 PORTNAME=	arpwatch
@@ -24,7 +24,7 @@ post-install:
 	if [ ! -d ${PREFIX}/arpwatch ]; then				\
 		${MKDIR} ${PREFIX}/arpwatch;				\
 		${CHMOD} 775 ${PREFIX}/arpwatch;			\
-		${CHOWN} root.operator ${PREFIX}/arpwatch;		\
+		${CHOWN} root:operator ${PREFIX}/arpwatch;		\
 	fi
 	${TOUCH} ${PREFIX}/arpwatch/arp.dat
 	${CHMOD} 644 ${PREFIX}/arpwatch/arp.dat

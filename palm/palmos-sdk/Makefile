@@ -2,7 +2,7 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.4 2000/08/01 09:39:00 kuriyama Exp $
+# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.5 2001/01/26 02:16:09 kuriyama Exp $
 #
 
 PORTNAME=	palmos-sdk
@@ -31,6 +31,6 @@ do-install:
 	${MKDIR} ${INCDIR} ${LIBDIR}
 	${CP} -Rp ${WRKSRC}/Incs/* ${INCDIR}
 	${CP} -Rp ${WRKSRC}/GCC\ Libraries/* ${LIBDIR}
-	${CHOWN} -R root.wheel ${INCDIR} ${LIBDIR}
+	${CHOWN} -R root:wheel ${INCDIR} ${LIBDIR}
 
 .include <bsd.port.post.mk>

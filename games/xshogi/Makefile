@@ -2,7 +2,7 @@
 # Date created:        20 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/xshogi/Makefile,v 1.9 2000/01/07 02:26:35 nakai Exp $
+# $FreeBSD: ports/games/xshogi/Makefile,v 1.10 2000/04/14 12:28:18 asami Exp $
 #
 
 PORTNAME=	xshogi
@@ -27,7 +27,7 @@ post-configure:
 post-install:
 	@strip ${PREFIX}/bin/xshogi
 	@${CHMOD} 755 ${PREFIX}/bin/xshogi
-	@${CHOWN} ${BINOWN}.${BINGRP} ${PREFIX}/bin/xshogi
+	@${CHOWN} ${BINOWN}:${BINGRP} ${PREFIX}/bin/xshogi
 	${INSTALL_MAN} ${WRKSRC}/xshogi.man ${PREFIX}/man/man6/xshogi.6
 
 .include <bsd.port.mk>

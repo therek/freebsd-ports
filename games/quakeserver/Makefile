@@ -2,7 +2,7 @@
 # Date created:				October 26th 1996
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/games/quakeserver/Makefile,v 1.24 2000/10/23 21:02:58 will Exp $
+# $FreeBSD: ports/games/quakeserver/Makefile,v 1.25 2000/11/01 15:02:24 kevlo Exp $
 #
 
 PORTNAME=	quakeserver
@@ -51,7 +51,7 @@ do-install:
 		/usr/bin/mkfifo ${PREFIX}/quakeserver/quakeserver.in
 		${TOUCH} ${PREFIX}/quakeserver/quakeserver.log
 		@ ${CHMOD} 700 ${PREFIX}/quakeserver/quakeserver.in ${PREFIX}/quakeserver/quakeserver.log
-		@ ${CHOWN} -R nobody.nobody ${PREFIX}/quakeserver
+		@ ${CHOWN} -R nobody:nobody ${PREFIX}/quakeserver
 .if !defined(BATCH)
 		@ /usr/bin/more -e ${PREFIX}/quakeserver/readme.port
 .endif

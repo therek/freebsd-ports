@@ -2,7 +2,7 @@
 # Date created:         18 Dec 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/cad/magic/Makefile,v 1.19 2001/01/27 05:40:08 will Exp $
+# $FreeBSD: ports/cad/magic/Makefile,v 1.20 2001/02/13 13:25:25 jeh Exp $
 #
 
 PORTNAME=	magic
@@ -27,32 +27,32 @@ MAN8=	prleak.8
 
 post-install:
 	@${CHMOD} ${BINMODE} ${PREFIX}/bin/spice2sim
-	@${CHOWN} ${BINOWN}.${BINGRP} ${PREFIX}/bin/spice2sim
+	@${CHOWN} ${BINOWN}:${BINGRP} ${PREFIX}/bin/spice2sim
 .for f in ${BINS}
 	@${CHMOD} ${BINMODE} ${PREFIX}/bin/$f
-	@${CHOWN} ${BINOWN}.${BINGRP} ${PREFIX}/bin/$f
+	@${CHOWN} ${BINOWN}:${BINGRP} ${PREFIX}/bin/$f
 	@strip ${PREFIX}/bin/$f
 .endfor
 .for f in ${MAN1}
 	@${CHMOD} ${MANMODE} ${PREFIX}/man/man1/$f
-	@${CHOWN} ${MANOWN}.${MANGRP} ${PREFIX}/man/man1/$f
+	@${CHOWN} ${MANOWN}:${MANGRP} ${PREFIX}/man/man1/$f
 .endfor
 .for f in ${MAN3}
 	@${CHMOD} ${MANMODE} ${PREFIX}/man/man3/$f
-	@${CHOWN} ${MANOWN}.${MANGRP} ${PREFIX}/man/man3/$f
+	@${CHOWN} ${MANOWN}:${MANGRP} ${PREFIX}/man/man3/$f
 .endfor
 .for f in ${MAN5}
 	@${CHMOD} ${MANMODE} ${PREFIX}/man/man5/$f
-	@${CHOWN} ${MANOWN}.${MANGRP} ${PREFIX}/man/man5/$f
+	@${CHOWN} ${MANOWN}:${MANGRP} ${PREFIX}/man/man5/$f
 .endfor
 .for f in ${MAN8}
 	@${CHMOD} ${MANMODE} ${PREFIX}/man/man8/$f
-	@${CHOWN} ${MANOWN}.${MANGRP} ${PREFIX}/man/man8/$f
+	@${CHOWN} ${MANOWN}:${MANGRP} ${PREFIX}/man/man8/$f
 .endfor
 	@${CHMOD} -R a+rX,go-w ${PREFIX}/lib/magic
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${PREFIX}/lib/magic
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/magic
 	@${CHMOD} ${SHAREMODE} ${PREFIX}/lib/mpack.h ${PREFIX}/lib/libmpack.a
-	@${CHOWN} ${SHAREOWN}.${SHAREGRP} ${PREFIX}/lib/mpack.h		\
+	@${CHOWN} ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/mpack.h		\
 	  ${PREFIX}/lib/libmpack.a
 
 .include <bsd.port.mk>

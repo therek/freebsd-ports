@@ -2,7 +2,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba-devel/Makefile,v 1.58 2001/04/24 22:46:53 jedgar Exp $
+# $FreeBSD: ports/net/samba-devel/Makefile,v 1.59 2001/04/24 22:48:10 jedgar Exp $
 #
 
 PORTNAME=	samba
@@ -81,7 +81,7 @@ post-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME}/source/script/mksmbpasswd.sh ${PREFIX}/bin/make_smbpasswd
 	if [ ! -d ${SAMBA_PRIVATE} ] ; then				\
 		${MKDIR} ${SAMBA_PRIVATE} ;				\
-		${CHOWN} root.wheel ${SAMBA_PRIVATE} ;			\
+		${CHOWN} root:wheel ${SAMBA_PRIVATE} ;			\
 	fi
 	${CHMOD} 700 ${SAMBA_PRIVATE}
 	if [ ! -f ${SAMBA_PRIVATE}/smbpasswd ] ; then			\
@@ -89,7 +89,7 @@ post-install:
 		${CHMOD} 600 ${SAMBA_PRIVATE}/smbpasswd ;			\
 	fi
 	${CHMOD} 500 ${SAMBA_PRIVATE}
-	${CHOWN} root.wheel ${PREFIX}/bin/smbpasswd
+	${CHOWN} root:wheel ${PREFIX}/bin/smbpasswd
 	${CHMOD} 111 ${PREFIX}/bin/smbpasswd
 .if defined(PACKAGE_BUILDING)
 	${ECHO} "private/smbpasswd" >> ${TMPPLIST}

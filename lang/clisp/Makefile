@@ -2,7 +2,7 @@
 # Date created:         Feb  5 2000
 # Whom:                 Jeff Brown <jabrown@caida.org>
 #
-# $FreeBSD: ports/lang/clisp/Makefile,v 1.4 2000/05/14 05:40:46 billf Exp $
+# $FreeBSD: ports/lang/clisp/Makefile,v 1.5 2001/05/19 19:03:34 ijliao Exp $
 #
 
 PORTNAME=	clisp
@@ -57,11 +57,11 @@ post-configure:
 	make config.lisp
 
 post-install:
-	${CHOWN} -R ${BINOWN}.${BINGRP} ${PROG_PATHS}
+	${CHOWN} -R ${BINOWN}:${BINGRP} ${PROG_PATHS}
 	${CHMOD} -R ugo+rX,ugo-w ${PROG_PATHS}
-	${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${DATA_PATHS}
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${DATA_PATHS}
 	${CHMOD} -R ugo+rX,ugo-w ${DATA_PATHS}
-	${CHOWN} -R ${MANOWN}.${MANGRP} ${MAN_PATHS}
+	${CHOWN} -R ${MANOWN}:${MANGRP} ${MAN_PATHS}
 	${CHMOD} -R ugo+rX,ugo-w ${MAN_PATHS}
 
 MAN1=	clisp.1

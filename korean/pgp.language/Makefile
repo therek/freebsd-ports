@@ -2,7 +2,7 @@
 # Date created:         22 Jul 1998
 # Whom:                 CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.8 2000/04/13 09:17:22 asami Exp $
+# $FreeBSD: ports/korean/pgp.language/Makefile,v 1.9 2000/10/08 10:21:48 asami Exp $
 #
 # This is based on ja-pgp.
 #
@@ -35,7 +35,7 @@ OBJS=		language.txt ${PGP_LANG}.hlp README.${PGP_LANG} \
 do-install:
 	-[ -d ${PGPLIB} ] || { \
 		${MKDIR} ${PGPLIB} ; \
-		${CHOWN} bin.bin ${PGPLIB} ; \
+		${CHOWN} bin:bin ${PGPLIB} ; \
 		${CHMOD} 555 ${PGPLIB} ; }
 	-[ -f ${PGPLIB}/language.txt ] && \
 		${MV} ${PGPLIB}/language.txt ${PGPLIB}/language.txt.bak

@@ -2,7 +2,7 @@
 # Date created:		So   6 Apr 1997 04:25:57 MET DST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/nethack-qt/Makefile,v 1.32 2001/04/03 08:14:12 will Exp $
 #
 
 PORTNAME=	qt-nethack
@@ -57,7 +57,7 @@ post-install:
 	${CP} ${WRKSRC}/doc/Guidebook.txt ${PREFIX}/share/doc/nethack
 .endif
 	@ cd ${PREFIX}/lib/nethackdir; tar xzf ${DISTDIR}/${QT_SOUND}
-	@ cd ${PREFIX}/lib/nethackdir; ${CHOWN} root.games *.au .nethackrc
+	@ cd ${PREFIX}/lib/nethackdir; ${CHOWN} root:games *.au .nethackrc
 	@ cd ${PREFIX}/lib/nethackdir; ${CHMOD} 444 *.au .nethackrc
 	@ ${ECHO}  "-----------------------"
 	@ ${ECHO}  "post-installation hints

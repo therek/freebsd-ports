@@ -2,7 +2,7 @@
 # Date created:		15 Jan 1999
 # Whom:			john@nlc.net.au
 #
-# $FreeBSD: ports/net/radiusd-cistron/Makefile,v 1.12 2000/05/03 23:04:45 billf Exp $
+# $FreeBSD: ports/net/radiusd-cistron/Makefile,v 1.13 2001/01/11 07:59:54 billf Exp $
 #
 
 PORTNAME=	radiusd-cistron
@@ -53,6 +53,6 @@ post-install:
 	@${SED} -e "s=!!PREFIX!!=${PREFIX}=g" ${FILESDIR}/radiusd.sh.tmpl \
 		> ${PREFIX}/etc/rc.d/radiusd.sh
 	@${CHMOD} 555 ${PREFIX}/etc/rc.d/radiusd.sh
-	@${CHOWN} root.wheel ${PREFIX}/etc/rc.d/radiusd.sh
+	@${CHOWN} root:wheel ${PREFIX}/etc/rc.d/radiusd.sh
 
 .include <bsd.port.mk>

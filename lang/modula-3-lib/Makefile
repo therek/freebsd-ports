@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.28 2000/10/08 10:21:51 asami Exp $
+# $FreeBSD: ports/lang/modula-3-lib/Makefile,v 1.29 2000/10/28 19:58:02 jdp Exp $
 #
 
 PORTNAME=	modula-3-lib
@@ -141,7 +141,7 @@ do-install:
 		cpio -dump -R ${BINOWN}.${BINGRP} ${PREFIX}
 	@cd ${PREFIX}; \
 	    ${GREP} '^lib/m3/' ${PLIST}.real | xargs ${CHMOD} go=u-w; \
-	    find -X lib/m3 -type d | xargs ${CHOWN} ${BINOWN}.${BINGRP}; \
+	    find -X lib/m3 -type d | xargs ${CHOWN} ${BINOWN}:${BINGRP}; \
 	    find -X lib/m3 -type d | xargs ${CHMOD} 755
 	@${ECHO_MSG} "Installing copyright notice"
 	@if [ ! -d ${PREFIX}/share/modula-3-lib ]; then \

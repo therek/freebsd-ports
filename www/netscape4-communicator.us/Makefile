@@ -3,7 +3,7 @@
 # Date created:			  14 Feb 1998
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.22 2000/10/08 10:23:12 asami Exp $
+# $FreeBSD: ports/www/netscape4-communicator.us/Makefile,v 1.23 2000/12/21 20:16:06 obrien Exp $
 #
 
 PORTNAME=	netscape-communicator
@@ -67,7 +67,7 @@ do-install:
 	${RM} -rf ${NDIR}/netscape-dynMotif
 	${RM} -rf ${NDIR}/libnullplugin-dynMotif.so
 	${RM} -rf ${NDIR}/movemail-src
-	${CHOWN} -R ${BINOWN}.${BINGRP} ${NDIR}
+	${CHOWN} -R ${BINOWN}:${BINGRP} ${NDIR}
 
 post-install:
 	@${CAT} ${DESCR}

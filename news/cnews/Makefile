@@ -2,7 +2,7 @@
 # Date created:		28 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/news/cnews/Makefile,v 1.40 2001/05/20 04:22:36 dinoex Exp $
+# $FreeBSD: ports/news/cnews/Makefile,v 1.41 2001/05/26 16:50:06 dinoex Exp $
 #
 
 PORTNAME=	cnews
@@ -92,16 +92,16 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/libdbz/dbz.h ${PREFIX}/include
 	${INSTALL_DATA} ${WRKSRC}/libcnews.a ${PREFIX}/lib
 	${MKDIR} ${NEWSARTS} ${NEWSOV} ${NEWSBIN} ${NEWSCTL}
-	${CHOWN} ${BINOWN}.${BINGRP} ${NEWSBIN}
+	${CHOWN} ${BINOWN}:${BINGRP} ${NEWSBIN}
 	${INSTALL_SCRIPT} ${WRKSRC}/${PGPVERIFY} ${NEWSBIN}/pgpverify
 	cd ${WRKSRC}; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} install
 	cd ${WRKSRC}; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} setup
 	cd ${WRKSRC}; ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ui readpostcheck
 .for f in checknews cnewsdo inews injnews postnews readnews
-	${CHOWN} ${BINOWN}.${BINGRP} ${PREFIX}/bin/$f
+	${CHOWN} ${BINOWN}:${BINGRP} ${PREFIX}/bin/$f
 .endfor
-	${CHOWN} -R news.news ${NEWSARTS} ${NEWSOV} ${NEWSCTL}
-	${CHOWN} news.news ${NEWSBIN}/input/newsspool
+	${CHOWN} -R news:news ${NEWSARTS} ${NEWSOV} ${NEWSCTL}
+	${CHOWN} news:news ${NEWSBIN}/input/newsspool
 	${CHMOD} 6555 ${NEWSBIN}/input/newsspool
 .for i in ${MAN1}
 	${INSTALL_MAN} ${WRKSRC}/man/${i} ${PREFIX}/man/man1

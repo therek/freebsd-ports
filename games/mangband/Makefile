@@ -1,7 +1,7 @@
 # New ports collection makefile for:   mangband
 # Date created:        30 Dec 1998
 #
-# $FreeBSD: ports/games/mangband/Makefile,v 1.9 2001/01/12 20:42:47 mharo Exp $
+# $FreeBSD: ports/games/mangband/Makefile,v 1.10 2001/01/16 15:27:53 kevlo Exp $
 #
 
 PORTNAME=	mangband
@@ -30,7 +30,7 @@ do-install:
 	cd ${WRKSRC}/../lib && pax -rw * ${MALIB}
 	${CHMOD} 750 ${MALIB}/*
 	${CHMOD} 755 ${MALIB}/user
-	${CHOWN} -R root.games ${MALIB}/*
+	${CHOWN} -R root:games ${MALIB}/*
 	${CHOWN} ${SHAREOWN}:${SHAREGRP} ${MALIB}
 
 .include <bsd.port.mk>

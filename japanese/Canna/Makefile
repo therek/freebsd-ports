@@ -3,7 +3,7 @@
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD: ports/japanese/Canna/Makefile,v 1.33 2000/06/16 21:51:11 asami Exp $
+# $FreeBSD: ports/japanese/Canna/Makefile,v 1.34 2000/10/08 10:20:26 asami Exp $
 #
 
 PORTNAME=	Canna
@@ -47,7 +47,7 @@ do-configure:
 
 pre-install:
 	${MKDIR} /var/run/canna
-	${CHOWN} bin.bin /var/run/canna
+	${CHOWN} bin:bin /var/run/canna
 
 post-install:
 .if ${PORTOBJFORMAT} == "aout"

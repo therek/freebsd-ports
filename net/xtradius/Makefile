@@ -2,7 +2,7 @@
 # Date created:        06 September 2000
 # Whom:                pal@paladin7.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/xtradius/Makefile,v 1.1 2000/10/23 02:44:37 jeh Exp $
 #
 
 PORTNAME=	xtradius
@@ -56,10 +56,10 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/contrib/pg_xtradius/pg_auth.pl ${PREFIX}/etc/raddb
 	${INSTALL_DATA} ${WRKSRC}/contrib/pg_xtradius/pg_acct.pl ${PREFIX}/etc/raddb
 	@${CHMOD} 555 ${PREFIX}/etc/raddb/pg_acct.pl ${PREFIX}/etc/raddb/pg_auth.pl
-	@${CHOWN} root.wheel ${PREFIX}/etc/raddb/pg_acct.pl
-	@${CHOWN} root.wheel ${PREFIX}/etc/raddb/pg_auth.pl
+	@${CHOWN} root:wheel ${PREFIX}/etc/raddb/pg_acct.pl
+	@${CHOWN} root:wheel ${PREFIX}/etc/raddb/pg_auth.pl
 	@${SED} -e "s=!!PREFIX!!=${PREFIX}=g" ${FILESDIR}/radiusd.sh.tmpl \
 		> ${PREFIX}/etc/rc.d/radiusd.sh
 	@${CHMOD} 555 ${PREFIX}/etc/rc.d/radiusd.sh
-	@${CHOWN} root.wheel ${PREFIX}/etc/rc.d/radiusd.sh
+	@${CHOWN} root:wheel ${PREFIX}/etc/rc.d/radiusd.sh
 .include <bsd.port.mk>

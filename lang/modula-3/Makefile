@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3/Makefile,v 1.38 2000/10/08 02:10:22 asami Exp $
+# $FreeBSD: ports/lang/modula-3/Makefile,v 1.39 2000/10/28 19:57:58 jdp Exp $
 #
 
 PORTNAME=	modula-3
@@ -101,10 +101,10 @@ do-install:
 	@${ECHO_MSG} "Fixing file permissions"
 	@cd ${PREFIX}; \
 	    ${SED} -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
-		xargs ${CHOWN} ${BINOWN}.${BINGRP}; \
+		xargs ${CHOWN} ${BINOWN}:${BINGRP}; \
 	    ${SED} -e "/^@/d" -e "s/\.gz$$//" ${PLIST}.real |\
 		xargs ${CHMOD} go=u-w; \
-	    find -X lib/m3 -type d | xargs ${CHOWN} ${BINOWN}.${BINGRP}; \
+	    find -X lib/m3 -type d | xargs ${CHOWN} ${BINOWN}:${BINGRP}; \
 	    find -X lib/m3 -type d | xargs ${CHMOD} 755
 	@${ECHO_MSG} "Running ldconfig"
 	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib/m3/FreeBSD2

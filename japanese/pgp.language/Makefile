@@ -2,7 +2,7 @@
 # Date created:         9 May 1997
 # Whom:                 Hironori Ikura <hikura@kaisei.org>
 #
-# $FreeBSD: ports/japanese/pgp.language/Makefile,v 1.9 2000/04/12 14:36:43 knu Exp $
+# $FreeBSD: ports/japanese/pgp.language/Makefile,v 1.10 2000/10/08 10:21:14 asami Exp $
 #
 
 PORTNAME=	pgp
@@ -32,7 +32,7 @@ OBJS=		language.txt ${PGP_LANG}.hlp README.${PGP_LANG}
 do-install:
 	-[ -d ${PGPLIB} ] || { \
 		${MKDIR} ${PGPLIB} ; \
-		${CHOWN} bin.bin ${PGPLIB} ; \
+		${CHOWN} bin:bin ${PGPLIB} ; \
 		${CHMOD} 555 ${PGPLIB} ; }
 	-[ -f ${PGPLIB}/language.txt ] && \
 		${MV} ${PGPLIB}/language.txt ${PGPLIB}/language.txt.bak

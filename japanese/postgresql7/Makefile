@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.24 2001/05/08 12:35:59 knu Exp $
+# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.25 2001/05/19 18:54:59 ijliao Exp $
 #
 
 PORTNAME=	postgresql
@@ -143,7 +143,7 @@ post-install:
 		< ${FILESDIR}/pgsql.sh.tmpl \
 		> ${PREFIX}/etc/rc.d/010.pgsql.sh
 	@ ${CHMOD} 554 ${PREFIX}/etc/rc.d/010.pgsql.sh
-	@ ${CHOWN} root.pgsql ${PREFIX}/etc/rc.d/010.pgsql.sh
+	@ ${CHOWN} root:pgsql ${PREFIX}/etc/rc.d/010.pgsql.sh
 .if defined(WITH_TCL)
 # Preparing a loadable TCL-package (pkgIndex.tcl)
 	@${MKDIR} ${PREFIX}/lib/tcl${WITH_TCL}/Pgtcl1.3

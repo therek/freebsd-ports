@@ -1,7 +1,7 @@
 # New ports collection Makefile for: nab
 # Date created:         Sept. 10, 2000
 # Whom:                 M. L. Dodson <bdodson@scms.utmb.edu>
-# $FreeBSD: ports/biology/nab/Makefile,v 1.1 2000/10/10 02:57:20 jeh Exp $
+# $FreeBSD: ports/biology/nab/Makefile,v 1.2 2001/05/27 13:49:52 ijliao Exp $
 
 PORTNAME=	nab
 PORTVERSION=	4.3.2
@@ -43,7 +43,7 @@ do-install:
 .endif
 	@cd ${WRKSRC} && (tar cf - dgdb reslib fd_data | \
 		(cd ${PREFIX}/share/nab; tar xf -))
-	@(cd ${PREFIX}/share; ${CHOWN} -R ${SHAREOWN}.${SHAREGRP} nab; \
+	@(cd ${PREFIX}/share; ${CHOWN} -R ${SHAREOWN}:${SHAREGRP} nab; \
 		${CHMOD} -R ugo+rX-w nab)
 	@-(cd ${PREFIX}/share/nab && ${LN} -sf ../NDB coords)
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/*     ${PREFIX}/bin

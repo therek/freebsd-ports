@@ -2,7 +2,7 @@
 # Date created:				Apr 2, 2001
 # Whom:					Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/games/xrot/Makefile,v 1.1 2001/04/07 05:51:42 will Exp $
+# $FreeBSD: ports/games/xrot/Makefile,v 1.2 2001/04/15 04:03:31 steve Exp $
 #
 
 PORTNAME=	xrot
@@ -24,7 +24,7 @@ post-configure:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xrot ${PREFIX}/bin
-	${CHOWN} root.games ${PREFIX}/bin/xrot
+	${CHOWN} root:games ${PREFIX}/bin/xrot
 	${CHMOD} g+s ${PREFIX}/bin/xrot
 	${SH} pkg-install ${PKGNAME} POST-INSTALL
 

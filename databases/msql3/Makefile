@@ -2,7 +2,7 @@
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/databases/msql/Makefile,v 1.42 2001/01/28 08:10:42 ache Exp $
+# $FreeBSD: ports/databases/msql/Makefile,v 1.43 2001/02/05 14:31:42 olgeni Exp $
 #
 
 PORTNAME=	msql
@@ -48,7 +48,7 @@ post-install:
 			${INSTALL_DATA} ${WRKSRC}/$$file ${PREFIX}/share/doc/msql; \
 		done
 		@${CHMOD} 751 ${PREFIX}/etc/msql2/
-		@${CHOWN} -R msql.msql ${PREFIX}/etc/msql2/
+		@${CHOWN} -R msql:msql ${PREFIX}/etc/msql2/
 		@${MKDIR} ${PREFIX}/etc/rc.d
 		@if [ ! -f ${PREFIX}/etc/rc.d/msql2.sh ]; then \
 			${ECHO} "Installing ${PREFIX}/etc/rc.d/msql2.sh startup file."; \

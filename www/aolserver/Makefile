@@ -2,7 +2,7 @@
 # Date created:		13 January 2000
 # Whom:			Matthew Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/www/aolserver/Makefile,v 1.8 2000/10/22 13:40:54 jeh Exp $
+# $FreeBSD: ports/www/aolserver/Makefile,v 1.9 2000/10/27 16:11:21 kevlo Exp $
 #
 
 PORTNAME=	aolserver
@@ -35,8 +35,8 @@ post-install:
 	 ${TAR} -C ${WRKSRC}/doc -c -f - . | ${TAR} -C ${PREFIX}/share/doc/aolserver -x -f -
 
 # Permissions
-	${CHOWN} nobody.nogroup ${PREFIX}/aolserver/servers/server1/modules/nslog
-	${CHOWN} nobody.nogroup ${PREFIX}/aolserver/log
+	${CHOWN} nobody:nogroup ${PREFIX}/aolserver/servers/server1/modules/nslog
+	${CHOWN} nobody:nogroup ${PREFIX}/aolserver/log
 
 # Startup file
 	@if [ ! -f ${PREFIX}/etc/rc.d/aolserver.sh ]; then \

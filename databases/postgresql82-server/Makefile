@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.82 2001/05/27 12:10:49 ijliao Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.83 2001/05/27 14:31:05 sf Exp $
 #
 
 PORTNAME=	postgresql
@@ -142,7 +142,7 @@ post-install:
 		< ${FILESDIR}/pgsql.sh.tmpl \
 		> ${PREFIX}/etc/rc.d/010.pgsql.sh
 	@ ${CHMOD} 554 ${PREFIX}/etc/rc.d/010.pgsql.sh
-	@ ${CHOWN} root.pgsql ${PREFIX}/etc/rc.d/010.pgsql.sh
+	@ ${CHOWN} root:pgsql ${PREFIX}/etc/rc.d/010.pgsql.sh
 .if defined(WITH_TCL)
 # Preparing a loadable TCL-package (pkgIndex.tcl)
 	@${MKDIR} ${PREFIX}/lib/tcl${WITH_TCL}/Pgtcl1.3

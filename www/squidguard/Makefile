@@ -2,7 +2,7 @@
 # Date created:        5 June 2000
 # Whom:                dl@tyfon.net
 #
-# $FreeBSD: ports/www/squidguard/Makefile,v 1.1 2000/07/10 03:58:34 steve Exp $
+# $FreeBSD: ports/www/squidguard/Makefile,v 1.2 2001/01/16 17:33:05 sobomax Exp $
 #
 
 PORTNAME=	squidGuard
@@ -73,12 +73,12 @@ post-install:
 			${DATADIR}/hacking ${DATADIR}/porn ; do \
 		cd $$d ; \
 		${RM} -f newdomains.* newurls.* ; \
-		${CHOWN} root.nobody * ; \
+		${CHOWN} root:nobody * ; \
 		${CHMOD} 640 * ; \
 		cd ${DATADIR} ; \
 	done
 	@${RM} -rf ${DATADIR}/blacklists*
-	@${CHOWN} root.nobody ${DATADIR}/* ${DATADIR}
+	@${CHOWN} root:nobody ${DATADIR}/* ${DATADIR}
 	@${CHMOD} 750 ${DATADIR}/* ${DATADIR}
 	@${ECHO_MSG} "       -> Blacklists installed in: ${DATADIR}"
 .else
@@ -92,7 +92,7 @@ post-install:
 		${SED} -e 's!%%DATADIR%%!${DATADIR}!' -e 's!%%LOGDIR%%!${LOGDIR}!' \
 			${WRKSRC}/samples/sample.conf > \
 			${PREFIX}/etc/squid/squidguard.conf.sample ; \
-		${CHOWN} root.nobody ${PREFIX}/etc/squid/squidguard.conf.sample ; \
+		${CHOWN} root:nobody ${PREFIX}/etc/squid/squidguard.conf.sample ; \
 		${CHMOD} 640 ${PREFIX}/etc/squid/squidguard.conf.sample ; \
 		${ECHO_MSG} "       -> Sample configuration file installed in: ${PREFIX}/etc/squid" ; \
 	else \

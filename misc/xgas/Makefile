@@ -2,7 +2,7 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/misc/xgas/Makefile,v 1.7 2000/01/08 11:23:53 nakai Exp $
+# $FreeBSD: ports/misc/xgas/Makefile,v 1.8 2000/04/14 08:47:08 asami Exp $
 #
 
 PORTNAME=	xgas
@@ -19,6 +19,6 @@ MAN1=		xgas.1
 
 post-install:
 	@${CHMOD} 755 ${PREFIX}/bin/xgas
-	@${CHOWN} bin.bin ${PREFIX}/bin/xgas
+	@${CHOWN} bin:bin ${PREFIX}/bin/xgas
 
 .include <bsd.port.mk>

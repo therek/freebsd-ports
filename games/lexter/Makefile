@@ -2,7 +2,7 @@
 # Date created:			Feb 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/games/lexter/Makefile,v 1.2 2001/02/20 14:49:22 ijliao Exp $
+# $FreeBSD: ports/games/lexter/Makefile,v 1.3 2001/03/29 20:03:13 mharo Exp $
 #
 
 PORTNAME=	lexter
@@ -23,7 +23,7 @@ CONFIGURE_ARGS+=	--localstatedir=/var/games
 MAN6=	lexter.6
 
 post-install:
-	@${CHOWN} root.games ${PREFIX}/bin/lexter
+	@${CHOWN} root:games ${PREFIX}/bin/lexter
 	@${CHMOD} g+s ${PREFIX}/bin/lexter
 	@${SH} pkg-install ${PKGNAME} POST-INSTALL
 

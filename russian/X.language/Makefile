@@ -2,7 +2,7 @@
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/X.language/Makefile,v 1.31 2000/10/08 10:22:50 asami Exp $
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.32 2001/01/16 17:32:12 sobomax Exp $
 #
 
 PORTNAME=	X11
@@ -46,7 +46,7 @@ do-install:
 #       ${INSTALL_DATA} ${FILESDIR}/xmodmap ${XLIB}/xinit/.Xmodmap
 	if [ ! -d ${XLIB}/nls ] ; then \
 		${MKDIR} ${XLIB}/nls; \
-		${CHOWN} ${BINOWN}.${BINGRP} ${XLIB}/nls; \
+		${CHOWN} ${BINOWN}:${BINGRP} ${XLIB}/nls; \
 		${CHMOD} 755 ${XLIB}/nls; \
 	fi
 	if [ ! -f ${XLIB}/nls/ru_SU.KOI8-R ] ; then \

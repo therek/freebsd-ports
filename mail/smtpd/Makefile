@@ -2,7 +2,7 @@
 # Date created:			06 Feb 1998
 # Whom:				Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/mail/smtpd/Makefile,v 1.8 2000/10/08 10:22:05 asami Exp $
+# $FreeBSD: ports/mail/smtpd/Makefile,v 1.9 2001/01/16 17:31:25 sobomax Exp $
 #
 
 PORTNAME=	smtpd
@@ -30,15 +30,15 @@ post-install:
 
 	@${ECHO} "Creating spool directories..."
 	@${MKDIR} ${SPOOLBASE}
-	@${CHOWN} root.uucp ${SPOOLBASE}
+	@${CHOWN} root:uucp ${SPOOLBASE}
 	@${CHMOD} 0710 ${SPOOLBASE}
 
 	@${MKDIR} ${SPOOLBASE}/mqueue
-	@${CHOWN} uucp.uucp ${SPOOLBASE}/mqueue
+	@${CHOWN} uucp:uucp ${SPOOLBASE}/mqueue
 	@${CHMOD} 0700 ${SPOOLBASE}/mqueue
 
 	@${MKDIR} ${SPOOLBASE}/etc
-	@${CHOWN} root.uucp ${SPOOLBASE}/etc
+	@${CHOWN} root:uucp ${SPOOLBASE}/etc
 	@${CHMOD} 0710 ${SPOOLBASE}/etc
 .if !defined(BATCH)
 	@${CP} -p /etc/resolv.conf ${SPOOLBASE}/etc
@@ -61,7 +61,7 @@ post-install:
 		< ${FILESDIR}/smtpd.sh		\
 		> ${PREFIX}/etc/rc.d/smtpd.sh
 	@${CHMOD} 0700 ${PREFIX}/etc/rc.d/smtpd.sh
-	@${CHOWN} 0.0 ${PREFIX}/etc/rc.d/smtpd.sh
+	@${CHOWN} 0:0 ${PREFIX}/etc/rc.d/smtpd.sh
 
 	@${ECHO} "Done!"
 

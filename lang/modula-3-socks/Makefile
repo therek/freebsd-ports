@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.6 1999/08/27 22:42:04 mharo Exp $
+# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.7 2000/04/12 06:19:30 obrien Exp $
 #
 
 PORTNAME=	modula-3-socks
@@ -42,7 +42,7 @@ pre-install:
 	@cd ${PREFIX}/lib; \
 	    test -d m3/FreeBSD2 || { \
 		${MKDIR} m3/FreeBSD2; \
-		${CHOWN} ${BINOWN}.${BINGRP} m3 m3/FreeBSD2; \
+		${CHOWN} ${BINOWN}:${BINGRP} m3 m3/FreeBSD2; \
 	    }
 
 post-install:

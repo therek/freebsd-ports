@@ -2,7 +2,7 @@
 # Date created:		18 August 1997
 # Whom:			Jonathan Hanna
 #
-# $FreeBSD: ports/japanese/edict/Makefile,v 1.13 2000/09/05 01:49:21 steve Exp $
+# $FreeBSD: ports/japanese/edict/Makefile,v 1.14 2001/05/22 17:16:21 ijliao Exp $
 #
 
 PORTNAME=	edict
@@ -110,7 +110,7 @@ do-install:
 			cd ${DATADIR} ; \
 			${ECHO} ${PREFIX}/bin/xjdxgen $$instfile ; \
 			${PREFIX}/bin/xjdxgen $$instfile ; \
-			${CHOWN} ${SHAREOWN}.${SHAREGRP} $$instfile $$instfile.xjdx; \
+			${CHOWN} ${SHAREOWN}:${SHAREGRP} $$instfile $$instfile.xjdx; \
 			${CHMOD} ${SHAREMODE} $$instfile $$instfile.xjdx ; \
 		) ; \
 	done
@@ -141,7 +141,7 @@ do-install:
 	@${ECHO} dicfile 4jwords >> ${DATADIR}/.xjdicrc
 	# @${ECHO} dicfile concrete.doc >> ${DATADIR}/.xjdicrc
 	# @${ECHO} dicfile lingdic >> ${DATADIR}/.xjdicrc
-	@${CHOWN} ${SHAREOWN}.${SHAREGRP} ${DATADIR}/.xjdicrc
+	@${CHOWN} ${SHAREOWN}:${SHAREGRP} ${DATADIR}/.xjdicrc
 	@${CHMOD} ${SHAREMODE} ${DATADIR}/.xjdicrc
 	${INSTALL_MAN} ${WRKSRC}/xjdic.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)

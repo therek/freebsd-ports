@@ -5,7 +5,7 @@
 # ATTENTION: It not work in > 256 colors modes, please fix it
 # if you can.
 #
-# $FreeBSD: ports/x11/xfedor/Makefile,v 1.13 2000/08/03 09:28:51 asami Exp $
+# $FreeBSD: ports/x11/xfedor/Makefile,v 1.14 2001/01/16 17:33:12 sobomax Exp $
 #
 
 PORTNAME=	xfedor
@@ -26,7 +26,7 @@ do-install:
 	cd ${WRKSRC}; \
 	${INSTALL_PROGRAM} xfedor ${PREFIX}/bin
 	-${MKDIR} ${XFHELP}
-	${CHOWN} ${SHAREOWN}.${SHAREGRP} ${XFHELP}
+	${CHOWN} ${SHAREOWN}:${SHAREGRP} ${XFHELP}
 	${CHMOD} 755 ${XFHELP}
 	cd ${WRKSRC}/help; \
 	${INSTALL_DATA} * ${XFHELP}

@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.16 2001/02/05 15:33:28 olgeni Exp $
+# $FreeBSD: ports/www/linux-netscape4/Makefile,v 1.17 2001/04/12 18:56:15 tom Exp $
 #
 
 PORTNAME=	linux-netscape
@@ -34,7 +34,7 @@ do-install:
 	    ${INSTALL_DATA} ${FILESDIR}/mailcap ${NDIR}; \
 	fi
 	${RM} -rf ${NDIR}/nls ${NDIR}/movemail-src ${NDIR}/XKeysymDB
-	${CHOWN} -R ${BINOWN}.${BINGRP} ${NDIR}
+	${CHOWN} -R ${BINOWN}:${BINGRP} ${NDIR}
 
 post-install:
 	@${CAT} ${DESCR}

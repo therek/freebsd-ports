@@ -2,7 +2,7 @@
 # Date created:         So  27 Okt 1996 12:25:55 MET
 # Whom:                 Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/games/crossfire/Makefile,v 1.39 2000/10/26 01:16:29 jeh Exp $
+# $FreeBSD: ports/games/crossfire/Makefile,v 1.40 2000/12/02 16:03:27 kevlo Exp $
 #
 
 PORTNAME=	crossfire
@@ -80,9 +80,9 @@ post-install:
 	@${CHMOD} 664 ${CFDIR}/lib/forbid
 	@${TOUCH} ${CFDIR}/lib/players/.keep_me
 	@${TOUCH} ${CFDIR}/lib/unique-items/.keep_me
-	@${CHOWN} -R root.games ${CFDIR}
+	@${CHOWN} -R root:games ${CFDIR}
 	@${CHMOD} 0664 ${CFDIR}/lib/highscore
-	@${CHOWN} root.games ${PREFIX}/bin/crossfire
+	@${CHOWN} root:games ${PREFIX}/bin/crossfire
 	@${CHMOD} 2555 ${PREFIX}/bin/crossfire
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/crossfire
