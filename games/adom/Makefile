@@ -3,7 +3,7 @@
 # Date created:		22 July 1999
 # Whom:			Oleg V. Volkov <rover@lglobus.ru>
 #
-# $FreeBSD: ports/games/adom/Makefile,v 1.3 1999/12/25 18:53:45 steve Exp $
+# $FreeBSD: ports/games/adom/Makefile,v 1.4 2000/01/22 09:16:22 mharo Exp $
 #
 
 DISTNAME=	adom-099g15-elf
@@ -18,7 +18,7 @@ RUN_DEPENDS=	/compat/linux/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 WRKSRC=		${WRKDIR}/adom
 
 ONLY_FOR_ARCHS=	i386
-NO_PACKAGE=     Only unmodified original package can be distributed
+NO_CDROM=     Copy of CD must be sent to author
 
 NO_WRKSUBDIR=   yes
 STRIP=			# empty: do not strip linux binary!

@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.154 1999/12/28 01:30:22 steve Exp $
+# $FreeBSD: ports/LEGAL,v 1.155 1999/12/31 20:23:01 steve Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -17,6 +17,8 @@ Dist			Port			Why
 ------------------------------------------------------------------------------
 actx-*			ports/games/actx	contains commercial
 						character data
+adom-*			ports/games/adom	Copy of CD must be sent to
+						author
 aswedit-*		ports/www/aswedit	Commercial software.
 atari800-*		ports/emulators/atari800 xf25 contains copyright ROMs
 						and cannot be distributed.
