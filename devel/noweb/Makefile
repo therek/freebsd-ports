@@ -2,14 +2,14 @@
 # Date created:		29 July 1995
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/devel/noweb/Makefile,v 1.17 2000/06/07 08:22:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	noweb
-PORTVERSION=	2.9a
+PORTVERSION=	2.10a
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.cs.virginia.edu/pub/nr/
-EXTRACT_SUFX=	.tgz
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tg
 
 MAINTAINER=	tg@FreeBSD.org
 
@@ -23,6 +23,6 @@ MAN7=		nowebfilters.7 nowebstyle.7
 MLINKS=		notangle.1 noweave.1	notangle.1 nountangle.1
 
 post-build:
-	@(cd ${WRKSRC} && ${WRKSRC}/awkname awk)
+	@(cd ${WRKSRC} && ${SH} ${WRKSRC}/awkname awk)
 
 .include <bsd.port.mk>
