@@ -3,7 +3,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex-xemacs-mule/Makefile,v 1.14 1999/10/07 15:50:11 taoka Exp $
+# $FreeBSD: ports/print/yatex-xemacs-mule/Makefile,v 1.15 1999/10/25 23:39:38 asami Exp $
 #
 
 PKGNAME=	yatex-xemacs-mule-1.67
@@ -12,9 +12,5 @@ XEMACS-MULE=	yes
 
 MASTERDIR=	${.CURDIR}/../yatex
 COMMENT=	${.CURDIR}/pkg/COMMENT
-
-.if defined(PARALLEL_PACKAGE_BUILD)
-FORBIDDEN=	hang
-.endif
 
 .include	"${MASTERDIR}/Makefile"
