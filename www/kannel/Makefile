@@ -2,7 +2,7 @@
 # Date created:		19 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/www/kannel/Makefile,v 1.1 2000/07/19 14:23:19 alex Exp $
+# $FreeBSD: ports/www/kannel/Makefile,v 1.2 2000/07/20 07:32:24 alex Exp $
 
 PORTNAME=	kannel
 PORTVERSION=	0.10.2
@@ -18,14 +18,15 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 WRKSRC=         ${WRKDIR}/gateway-0.10.2/
 CFLAGS+=	-pthread
+CONFIGURE_ARGS += --with-malloc=native
 
 do-install:
 .if !defined(NOPORTDOCS)
 	@cd ${WRKSRC} && make install-docs
 .endif
 	@cd ${WRKSRC} && make install
-	${INSTALL_DATA} ${WRKSRC}/debian/kannel.conf ${PREFIX}/etc/
-	${INSTALL_DATA} ${WRKSRC}/debian/kannel.wapconf ${PREFIX}/etc/
+	${INSTALL_DATA} ${WRKSRC}/gw/wapkannel.conf ${PREFIX}/etc/
+	${INSTALL_DATA} ${WRKSRC}/gw/smskannel.conf ${PREFIX}/etc/
 
 .if !defined(NOPORTDOCS)
 post-install:
