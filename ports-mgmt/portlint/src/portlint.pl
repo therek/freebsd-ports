@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.29 2002/09/14 18:57:41 mharo Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.30 2002/11/18 02:37:30 anders Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -67,9 +67,12 @@ my %lang_pref = qw(
 	french		fr
 	german		de
 	hebrew		iw
+	hungarian	hu
 	japanese	ja
 	korean		ko
+	portuguese	pt
 	russian		ru
+	ukrainian	uk
 	vietnamese	vi
 );
 my @lang_cat = keys %lang_pref;
