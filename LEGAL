@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.250 2002/06/18 10:57:42 jkoshy Exp $
+# $FreeBSD: ports/LEGAL,v 1.251 2002/06/27 11:22:10 will Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -137,6 +137,7 @@ JRE-*			ports/java/jre		Put copyright on packaging!
 kaffe-*			ports/java/kaffe	Restrictive copyright
 ksh93			ports/shells/ksh93	User must agree to "regularly monitor the Website".
 l_cc_pu_6.0.149.tar	ports/lang/icc		No redistribution allowed
+l_fc_p_6.0.140.tar	ports/lang/ifc		No redistribution allowed
 lgrind			ports/print/lgrind	Contains non-free code written by Van Jacobson
 linux-netscape6		ports/www/linux-netscape6	Java plugin is from Sun.
 linuxq3ademo-*		ports/games/linux-q3ademo	Restrictive license by Loki Software
