@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.279 2000/07/18 05:09:42 nakai Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.280 2000/07/18 17:47:17 sada Exp $
 #
 
     SUBDIR += Canna
@@ -210,6 +210,7 @@
     SUBDIR += platex209-jis
     SUBDIR += platex209-sjis
     SUBDIR += postgresql
+    SUBDIR += postgresql7
     SUBDIR += ppxp
     SUBDIR += prn
     SUBDIR += ptex-common
