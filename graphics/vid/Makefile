@@ -1,8 +1,8 @@
 # New ports collection makefile for:	vid
 # Date created:		Tue Dec  5 13:32:13 GMT 2000
-# Whom:			Roger Hardiman <roger@freebsd.org?
+# Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/graphics/vid/Makefile,v 1.3 2001/01/16 17:31:01 sobomax Exp $
+# $FreeBSD: ports/graphics/vid/Makefile,v 1.4 2001/02/01 19:10:38 roger Exp $
 #
 
 PORTNAME=	vid
@@ -12,6 +12,13 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://members.home.com/housel/
 
 MAINTAINER=	roger@freebsd.org
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
+BROKEN=		requires FreeBSD 4.0 or later
+.endif
+
 
 LIB_DEPENDS=	pbm:${PORTSDIR}/graphics/netpbm
 
@@ -23,4 +30,5 @@ ALL_TARGET=
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/vid ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
+
