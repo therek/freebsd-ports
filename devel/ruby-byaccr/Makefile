@@ -2,12 +2,11 @@
 # Date created:		2 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-byaccr/Makefile,v 1.2 2000/11/03 15:49:06 knu Exp $
+# $FreeBSD: ports/devel/ruby-byaccr/Makefile,v 1.3 2001/03/22 06:31:14 knu Exp $
 #
 
 PORTNAME=	byaccr
-PORTVERSION=	0.0
-PORTREVISION=	1
+PORTVERSION=	0.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -19,7 +18,7 @@ USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
 RUBY_NO_RUN_DEPENDS=	yes
 
-EXAMPLES=	Parser.rb	Test.rb		cal.y
+DOCS=		README		README.html
 
 post-patch:
 	${PERL} -i.orig -pe 's,^#include <malloc\.h>,#include <stdlib.h>,' ${WRKSRC}/*.[ch]
@@ -29,9 +28,11 @@ pre-build:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/byaccr
-.for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${RUBY_EXAMPLESDIR}/byaccr/
+	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
+.for f in ${DOCS}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
 .endfor
 .endif
 
