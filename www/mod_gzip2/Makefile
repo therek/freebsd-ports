@@ -2,7 +2,7 @@
 # Date created:		Dec 13 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.1 2000/12/13 21:44:33 jeh Exp $
+# $FreeBSD: ports/www/mod_gzip/Makefile,v 1.2 2001/01/16 19:08:36 will Exp $
 #
 
 PORTNAME=	mod_gzip
@@ -16,6 +16,10 @@ MAINTAINER=	mi@aldan.algebra.com
 
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+
+.if !defined(NOPORTDOCS)
+DISTFILES+=	readme.txt
+.endif
 
 NO_WRKSUBDIR=	YES
 
