@@ -7,7 +7,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.php.mk,v 1.6 2004/07/19 15:34:18 ale Exp $
+# $FreeBSD: ports/Mk/bsd.php.mk,v 1.7 2004/07/19 23:25:21 ale Exp $
 #
 # Adding 'USE_PHP=yes' to a port includes this Makefile after bsd.ports.pre.mk.
 # If the port requires a predefined set of PHP extensions, they can be
@@ -249,7 +249,7 @@ _USE_PHP_ALL=	bcmath bz2 calendar crack ctype curl dba dbase dbx dio \
 		ming mnogosearch mssql mysql mysqli ncurses odbc \
 		openssl oracle overload panda pcntl pcre pdf pgsql posix \
 		pspell readline recode session shmop simplexml snmp soap \
-		sockets sqlite sybase sybase_ct sysvmsg sysvsem sysvshm \
+		sockets sqlite sybase_ct sysvmsg sysvsem sysvshm \
 		tidy tokenizer wddx xml xmlrpc xsl xslt yaz yp zip zlib
 
 bcmath_DEPENDS=	math/php${PHP_VER}-bcmath
@@ -307,7 +307,6 @@ snmp_DEPENDS=	net-mgmt/php${PHP_VER}-snmp
 soap_DEPENDS=	net/php${PHP_VER}-soap
 sockets_DEPENDS=net/php${PHP_VER}-sockets
 sqlite_DEPENDS=	databases/php${PHP_VER}-sqlite
-sybase_DEPENDS=	databases/php${PHP_VER}-sybase
 sybase_ct_DEPENDS=	databases/php${PHP_VER}-sybase_ct
 sysvmsg_DEPENDS=devel/php${PHP_VER}-sysvmsg
 sysvsem_DEPENDS=devel/php${PHP_VER}-sysvsem
