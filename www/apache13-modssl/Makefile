@@ -2,12 +2,12 @@
 # Date created:		Sat Aug 22 12:00:00 CDT 1998
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.73 2000/09/16 12:27:22 jedgar Exp $
+# $FreeBSD: ports/www/apache13-modssl/Makefile,v 1.74 2000/09/22 01:59:05 kris Exp $
 #
 
 PORTNAME=	apache+mod_ssl
-PORTVERSION= 	${VERSION_APACHE}+${VERSION_MODSSL}	
-PORTREVISION=	1
+PORTVERSION= 	${VERSION_APACHE}+${VERSION_MODSSL}
+PORTREVISION=	0
 CATEGORIES=	www security
 MASTER_SITES=	http://www.apache.org/dist/ \
 		http://www.modssl.org/source/ \
@@ -36,7 +36,7 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.mtnranch.net/pub/apache/dist/ \
 		ftp://ftp.iodynamics.com/pub/mirror/apache/dist/ \
 		ftp://apache.nextpath.com/pub/apache/dist/
-DISTNAME=	apache_1.3.12
+DISTNAME=	apache_${VERSION_APACHE}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		mod_ssl-${VERSION_MODSSL}-${VERSION_APACHE}${EXTRACT_SUFX}
 
@@ -48,10 +48,10 @@ USE_OPENSSL=	YES
 
 LIB_DEPENDS=	mm.11:${PORTSDIR}/devel/mm
 
-VERSION_APACHE=	1.3.12
-VERSION_MODSSL=	2.6.6
+VERSION_APACHE=	1.3.14
+VERSION_MODSSL=	2.7.1
 
-Y2K=		http://www.modssl.org/docs/2.6/ssl_faq.html#y2k
+Y2K=		http://www.modssl.org/docs/2.7/ssl_faq.html#y2k
 
 USE_PERL5=	yes
 HAS_CONFIGURE=	yes
