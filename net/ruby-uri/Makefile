@@ -2,7 +2,7 @@
 # Date created:		14 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-uri/Makefile,v 1.1 2000/08/14 07:09:56 knu Exp $
 #
 
 PORTNAME=	uri
@@ -32,7 +32,7 @@ EXAMPLES=	in-uri.txt test-uri.rb
 
 do-install:
 .for f in ${MODULES}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/lib/ruby/site_ruby/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/lib/ruby/site_ruby/${RUBY_VER}/
 .endfor
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/examples/ruby/uri
