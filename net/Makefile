@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.563 2001/06/21 12:46:12 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 44bsd-rdist
@@ -129,6 +129,7 @@
     SUBDIR += h2n
     SUBDIR += hagelslag
     SUBDIR += hesiod
+    SUBDIR += host
     SUBDIR += hx
     SUBDIR += icb
     SUBDIR += icmpinfo
