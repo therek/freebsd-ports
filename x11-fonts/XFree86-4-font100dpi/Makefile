@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-fonts/XFree86-4-font100dpi/Makefile,v 1.1 2000/06/08 10:41:34 asami Exp $
+# $FreeBSD: ports/x11-fonts/XFree86-4-font100dpi/Makefile,v 1.2 2000/08/25 10:33:00 asami Exp $
 #
 
 PORTNAME=	font100dpi
@@ -19,7 +19,7 @@ DISTFILES=	X401src-2.tgz
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
 BUILD_DEPENDS=	mkfontdir:${PORTSDIR}/x11/XFree86-4-clients
-RUN_DEPENDS=	${X11_BASE}/lib/X11/fonts/encodings/encodings.dir:${PORTSDIR}/x11-fonts/XFree86-4-fontEncodings
+RUN_DEPENDS=	${X11BASE}/lib/X11/fonts/encodings/encodings.dir:${PORTSDIR}/x11-fonts/XFree86-4-fontEncodings
 
 XFREE86_VERSION=	4
 USE_IMAKE=		YES
