@@ -2,7 +2,7 @@
 # Date created:		22 August 2000
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.23 2000/12/24 14:21:47 alex Exp $
+# $FreeBSD: ports/editors/staroffice52/Makefile,v 1.24 2000/12/24 14:28:59 alex Exp $
 #
 
 PORTNAME=	staroffice
@@ -120,7 +120,7 @@ do-install:
 	@ ${LN} -fs ${LINUXBASE}/${PREFIX}/office52 ${PREFIX}/office52
 .endif
 	@${CAT} ${PKGMESSAGE}
-	@-SAL_IGNOREXERRORS=1 TEMP=${TMPDIR} LD_LIBRARY_PATH=${LD_PATH} ${LINUXBASE}/bin/sh -c '${WRKSRC}/setup /net'
+	@-SAL_IGNOREXERRORS=1 PATH="/bin:${PATH}" TEMP=${TMPDIR} LD_LIBRARY_PATH=${LD_PATH} ${LINUXBASE}/bin/sh -c '${WRKSRC}/setup /net'
 	@if [ -f ${PREFIX}/office52/program/setup ]; then \
 		${ECHO} ; \
 		${ECHO} Ignore the error-message. StarOffice5.2 has been installed ; \
