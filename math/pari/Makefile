@@ -2,11 +2,11 @@
 # Date created:		19 January 1999
 # Whom:	Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
 #
-# $FreeBSD: ports/math/pari/Makefile,v 1.21 2001/01/16 17:31:30 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pari
-PORTVERSION=	2.1.1
+PORTVERSION=	2.1.3
 CATEGORIES=	math
 MASTER_SITES=	ftp://www.gn-50uma.de/gn/gn-50uma.de/pari-2.1/ \
 		http://www.gn-50uma.de/ftp/pari-2.1/
