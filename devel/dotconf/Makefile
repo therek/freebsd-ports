@@ -3,11 +3,11 @@
 # Date created:                Jan 28, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dotconf/Makefile,v 1.6 2001/08/31 14:20:18 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dotconf
-PORTVERSION=	1.0.6
+PORTVERSION=	1.0.7
 CATEGORIES=	devel
 MASTER_SITES=	http://www.azzit.de/dotconf/download/
 
