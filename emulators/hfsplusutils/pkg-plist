@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/emulators/hfsplusutils/pkg-plist,v 1.1 2003/11/15 21:51:46 sergei Exp $
 bin/hpcd
 bin/hpcopy
 bin/hpfsck
@@ -9,7 +9,6 @@ bin/hppwd
 bin/hprm
 bin/hpumount
 lib/libhfsp.a
-lib/libhfsp.la
 lib/libhfsp.so
 lib/libhfsp.so.0
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
