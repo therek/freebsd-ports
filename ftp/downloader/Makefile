@@ -1,16 +1,15 @@
 # New ports collection makefile for:	downloader
-# Version required:	0.98
+# Version required:	1.0b2	
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.5 1999/08/25 05:55:05 obrien Exp $
 #
 
-DISTNAME=	nt-0.98
-PKGNAME=	downloader-0.98
-CATEGORIES=	ftp www
-MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/ \
-		ftp://linux.ru.net/pub/chuchelo/
+DISTNAME=	nt-1.0-BETA2
+PKGNAME=	downloader-1.0b2
+CATEGORIES=	ftp
+MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/
 
 MAINTAINER=	ijliao@csie.nctu.edu.tw
 
