@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.559 2005/02/14 00:10:36 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.560 2005/02/14 15:44:07 nobutaka Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -1661,12 +1661,15 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </description>
     <references>
       <bid>12270</bid>
+      <cvename>CAN-2005-0116</cvename>
+      <certvu>272296</certvu>
       <mlist msgid="FB24803D1DF2A34FA59FC157B77C970503C8B20C@idserv04.idef.com">http://marc.theaimsgroup.com/?l=full-disclosure&amp;m=110600949323439</mlist>
       <url>http://awstats.sourceforge.net/docs/awstats_changelog.txt</url>
     </references>
     <dates>
       <discovery>2004-10-21</discovery>
       <entry>2005-01-18</entry>
+      <modified>2005-02-15</modified>
     </dates>
   </vuln>
 
