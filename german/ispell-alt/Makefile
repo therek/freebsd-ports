@@ -2,14 +2,15 @@
 # Date created:                         10 February 2000
 # Whom:                                 Alexander Langer <alex@big.endian.de>
 #
-# $FreeBSD: ports/textproc/dealt-ispell/Makefile,v 1.1.1.1 2000/02/11 20:57:33 jmz Exp $
+# $FreeBSD: ports/textproc/dealt-ispell/Makefile,v 1.2 2000/04/09 21:52:17 cpiazza Exp $
 #
 
 MAINTAINER=     alex@big.endian.de
 
 ISPELL_DEALT=	yes
-PORTNAME=	dealt-ispell
+PORTNAME=	ispell
 PORTVERSION= 	19991219
+PKGNAMEPREFIX=	dealt-
 MASTERDIR=      ${.CURDIR}/../ispell
 
 .include        "${MASTERDIR}/Makefile"
