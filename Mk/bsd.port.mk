@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.388 2001/11/13 13:12:11 tg Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.389 2001/11/17 19:56:29 knu Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -440,6 +440,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  ${LOCALBASE} and %%X11BASE%% for ${X11BASE}.
 # DOCSDIR		- Name of the directory to install the packages docs in
 #				  (default: ${PREFIX}/share/doc/${PORTNAME}).
+# EXAMPLESDIR		- Name of the directory to install the packages examples in
+#				  (default: ${PREFIX}/share/examples/${PORTNAME}).
 # DATADIR		- Name of the directory to install the packages shared data
 #				  in (default: ${PREFIX}/share/${PORTNAME}).
 # 
@@ -1397,6 +1399,7 @@ LDCONFIG_RUNLIST!=	${ECHO} ${LDCONFIG_PLIST} | ${SED} -e "s!%D!${PREFIX}!g"
 .endif
 
 DOCSDIR?=	${PREFIX}/share/doc/${PORTNAME}
+EXAMPLESDIR?=	${PREFIX}/share/examples/${PORTNAME}
 DATADIR?=	${PREFIX}/share/${PORTNAME}
 
 .MAIN: all
