@@ -2,11 +2,12 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.62 2001/08/01 11:56:18 knu Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.63 2001/08/30 01:03:05 dwcjr Exp $
 #
 
 PORTNAME=	postfix
 PORTVERSION=	20010808
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
@@ -60,10 +61,8 @@ MAKEFILEFLAGS+=	DEBUG=
 MAKEFILEFLAGS+=	OPT="${CFLAGS}"
 
 SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
-		PREFIX="${PREFIX}" \
 		TOUCH="${TOUCH}" \
 		MKDIR="${MKDIR}" \
-		PREFIX="${PREFIX}"
 
 pre-fetch:
 	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.postfix
