@@ -3,27 +3,37 @@
 # Date created:                Jan 28, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/dotconf/Makefile,v 1.6 2001/08/31 14:20:18 sobomax Exp $
 #
 
 PORTNAME=	dotconf
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.6
 CATEGORIES=	devel
 MASTER_SITES=	http://www.azzit.de/dotconf/download/
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_LIBTOOL=	yes
 USE_GMAKE=	yes
+USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
+EXAMPLESDIR=	${PREFIX}/share/examples/${PORTNAME}
+
+pre-patch:
+	@${PERL} -pi -e 's|-Wall -g||' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-release $(LT_RELEASE)||' ${WRKSRC}/src/Makefile.in
+
+pre-build:
+	@${LN} -sf ${LOCALBASE}/bin/libtool ${WRKSRC}/libtool
+
 post-install:
-	${MKDIR} ${DATADIR}
 .if !defined(NOPORTDOCS)
-.for f in dotconf-api.txt dotconf-features.txt
-	@${INSTALL_DATA} ${WRKSRC}/doc/$f ${DATADIR}
-.endfor
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/doc/*.txt ${DOCSDIR}
+	@${MKDIR} ${EXAMPLESDIR}
+	${TAR} -C ${WRKSRC}/examples  -cf - . | \
+		${TAR} -C ${EXAMPLESDIR} --unlink -xf -
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${EXAMPLESDIR}
 .endif
-	${CP} -R ${WRKSRC}/examples ${DATADIR}
 
 .include <bsd.port.mk>
