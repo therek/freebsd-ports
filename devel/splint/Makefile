@@ -2,16 +2,13 @@
 # Date created: 	9 September 1996
 # Whom:			moeding
 #
-# $FreeBSD: ports/devel/lclint/Makefile,v 1.7 1999/08/25 05:48:15 obrien Exp $
+# $FreeBSD: ports/devel/lclint/Makefile,v 1.8 2000/04/11 21:28:27 mharo Exp $
 #
 
 PORTNAME=	lclint
-PORTVERSION=	2.4b
+PORTVERSION=	2.5q
 CATEGORIES=	devel
-MASTER_SITES= 	http://www.sds.lcs.mit.edu/lclint/ftp/lclint/ \
-		ftp://ftp.deva.net/pub/sources/programming/linting/ \
-		ftp://ftp.netsw.org/netsw/SoftEng/Lang/C/Tools/lclint/ \
-		ftp://ftp.uni-bielefeld.de/pub/programming/tools/lclint/
+MASTER_SITES=	http://lclint.cs.virginia.edu/
 EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	s.moeding@ndh.net
