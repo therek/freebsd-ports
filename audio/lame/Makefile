@@ -2,7 +2,7 @@
 # Date created:        11 January 1998
 # Whom:                yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/lame/Makefile,v 1.12 2000/07/07 19:59:12 steve Exp $
+# $FreeBSD: ports/audio/lame/Makefile,v 1.13 2000/10/05 06:47:31 reg Exp $
 #
 
 PORTNAME=	lame
@@ -18,7 +18,7 @@ MAINTAINER=	yoshiaki@kt.rim.or.jp
 
 PATCH_DIST_STRIP = -p1
 
-WRKSRC= 	${WRKDIR}/dist10/lsf/encoder/
+WRKSRC= 	${WRKDIR}/dist10/lsf/encoder
 USE_GMAKE=	yes
 WANT_GTK=	yes
 ALL_TARGET=	lame
@@ -32,7 +32,9 @@ MAN1=		lame.1
 USE_GTK=	yes
 .endif
 
-post-install:
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/lame ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/doc/man/lame.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/lame
 	${INSTALL_DATA} ${WRKSRC}/doc/html/*.html \
