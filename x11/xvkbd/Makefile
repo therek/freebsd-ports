@@ -2,15 +2,17 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/x11/xvkbd/Makefile,v 1.3 2000/12/23 16:58:17 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xvkbd
-PORTVERSION=	1.2
+PORTVERSION=	2.1
 CATEGORIES=	x11
 MASTER_SITES=	http://member.nifty.ne.jp/tsato/xvkbd/
 
 MAINTAINER=	roam@FreeBSD.org
+
+MAN1=		xvkbd.1
 
 .if	defined(WITH_ALL)
 WITH_XAW3D=	yes
