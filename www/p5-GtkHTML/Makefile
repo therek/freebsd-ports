@@ -2,7 +2,7 @@
 # Date created:				11 March 2001
 # Whom:					vanilla
 #
-# $FreeBSD: ports/www/p5-GtkHTML/Makefile,v 1.3 2001/05/27 21:00:31 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GtkHTML
@@ -19,7 +19,8 @@ MAINTAINER=	vanilla@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gnome.pm:${PORTSDIR}/x11-toolkits/p5-Gnome
 RUN_DEPENDS=	${BUILD_DEPENDS}
 
-USE_GNOME=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gnomeprefix gtkhtml
 PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
 
