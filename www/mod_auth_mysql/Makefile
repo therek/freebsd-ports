@@ -2,12 +2,13 @@
 # Date created:		2000/05/19
 # Whom:			jim@thehouselys.net
 #
-# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.3 2000/08/30 23:09:34 fenner Exp $
+# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.4 2000/10/02 03:10:28 jeh Exp $
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	2.20
 CATEGORIES=	www
 MASTER_SITES=	http://bourbon.netvision.net.il/mysql/mod_auth_mysql/ \
+		http://download.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
 		http://web.mysql.com/Contrib/
 
 MAINTAINER=	jeh@FreeBSD.org
