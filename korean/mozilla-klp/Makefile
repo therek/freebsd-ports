@@ -2,7 +2,7 @@
 # Date created:		24 Mar 2001
 # Whom:			cjh
 #
-# $FreeBSD$
+# $FreeBSD: ports/korean/mozilla-klp/Makefile,v 1.1 2001/03/23 16:19:32 cjh Exp $
 #
 
 PORTNAME=	mozilla
@@ -15,6 +15,8 @@ EXTRACT_SUFX=	.xpi
 EXTRACT_ONLY=	${KLP_SRC}${EXTRACT_SUFX}
 
 MAINTAINER=	cjh@FreeBSD.org
+
+BROKEN=		"out of sync with mozilla"
 
 BUILD_DEPENDS=	${X11BASE}/lib/mozilla/regxpcom:${PORTSDIR}/www/mozilla
 RUN_DEPENDS=	mozilla:${PORTSDIR}/www/mozilla \
