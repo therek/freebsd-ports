@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.1 2000/11/02 21:15:11 trevor Exp $
+# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.2 2000/11/13 23:12:49 asami Exp $
 #
 
 PORTNAME=	libvorbis
@@ -24,7 +24,8 @@ WRKSRC=		${WRKDIR}/vorbis
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
 AUTOHEADER?=	${LOCALBASE}/bin/autoheader
 CFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ARGS+=	--with-ogg=${LOCALBASE}
+CONFIGURE_ARGS=	--with-ogg=${LOCALBASE}
+AUTOMAKE_ARGS=	--add-missing
 
 post-patch:
 	cd ${WRKSRC} && ${ACLOCAL}

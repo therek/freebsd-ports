@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libogg/Makefile,v 1.1 2000/11/02 21:11:45 trevor Exp $
+# $FreeBSD: ports/audio/libogg/Makefile,v 1.2 2000/11/13 10:22:54 asami Exp $
 #
 
 PORTNAME=	libogg
@@ -21,6 +21,7 @@ WRKSRC=		${WRKDIR}/ogg
 
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
 AUTOHEADER?=	${LOCALBASE}/bin/autoheader
+AUTOMAKE_ARGS=	--add-missing
 
 post-patch:
 	cd ${WRKSRC} && ${ACLOCAL}

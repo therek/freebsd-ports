@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/vorbis-tools/Makefile,v 1.2 2000/11/13 19:14:04 roger Exp $
+# $FreeBSD: ports/audio/vorbis-tools/Makefile,v 1.3 2000/11/14 08:10:01 roger Exp $
 #
 
 PORTNAME=	vorbis-tools
@@ -25,8 +25,9 @@ WRKSRC=		${WRKDIR}/vorbis-tools
 ACLOCAL?=	${LOCALBASE}/bin/aclocal
 AUTOHEADER?=	${LOCALBASE}/bin/autoheader
 CFLAGS+=	-I${LOCALBASE}/include
-CONFIGURE_ARGS+=	--with-ogg=${LOCALBASE} \
-			--with-ao=${LOCALBASE}
+CONFIGURE_ARGS=	--with-ogg=${LOCALBASE} \
+		--with-ao=${LOCALBASE}
+AUTOMAKE_ARGS=	--add-missing
 
 MAN1=		ogg123.1
 
