@@ -2,7 +2,7 @@
 # Date created:        2 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.4 2000/04/13 06:28:23 obrien Exp $
+# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.5 2000/04/24 15:51:10 knu Exp $
 #
 
 PORTNAME=	flashplayer
@@ -13,17 +13,15 @@ MASTER_SITES=	http://www.geocities.com/TimesSquare/Labyrinth/5084/flash/Linux/ \
 DISTNAME=	flash-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-PATCH_SITES=   http://leed.t.u-tokyo.ac.jp/~yamagata/flash/
-PATCHFILES=    flash-0.4.3-fbsd-19990512.patch
+PATCH_SITES=	http://leed.t.u-tokyo.ac.jp/~yamagata/flash/
+PATCHFILES=	flash-0.4.3-fbsd-19990512.patch
 
 MAINTAINER=	knu@FreeBSD.org
 
 USE_X_PREFIX=	yes
-
-do-build:
-	cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${MAKE} swfplayer
+ALL_TARGET=	swfplayer
 
 do-install:
-	cd ${WRKSRC} && ${INSTALL_PROGRAM} swfplayer ${X11BASE}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/swfplayer ${PREFIX}/bin
 
 .include <bsd.port.mk>
