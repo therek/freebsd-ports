@@ -2,20 +2,18 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.18 2001/06/11 15:59:09 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wterm
-PORTVERSION=	6.2.8a2
+PORTVERSION=	6.2.9
 CATEGORIES=	x11
-MASTER_SITES= 	${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	markp
+MASTER_SITES= 	http://largo.windowmaker.org/files/
 
-MAINTAINER=	treif@mayn.de
+MAINTAINER=	adam-ports@blacktabby.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/libWINGs.a:${PORTSDIR}/x11-wm/windowmaker
 
-WRKSRC=		${WRKDIR}/wterm-6.2.8
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 GNU_CONFIGURE=	yes
