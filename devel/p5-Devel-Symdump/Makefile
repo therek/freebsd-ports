@@ -2,17 +2,17 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-Symdump/Makefile,v 1.10 2000/10/23 21:02:46 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Devel-Symdump
-PORTVERSION=	2.01
+PORTVERSION=	2.03
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	erwin@lansing.dk
 
 PERL_CONFIGURE=	YES
 
