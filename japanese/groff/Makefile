@@ -2,7 +2,7 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/groff/Makefile,v 1.20 2000/04/11 14:13:48 knu Exp $
+# $FreeBSD: ports/japanese/groff/Makefile,v 1.21 2000/05/19 07:36:34 cpiazza Exp $
 #
 
 PORTNAME=	groff
@@ -12,11 +12,12 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	groff
 DISTNAME=	${PORTNAME}-1.15
 
-PATCH_SITES=	http://w3.mtci.ne.jp/~refactor/GNU/
+PATCH_SITES=	${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR= okazaki
 PATCHFILES=	${DISTNAME}-jgroff-${PORTVERSION}-pl1.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	okazaki@be.to
+MAINTAINER=	okazaki@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
