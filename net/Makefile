@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.422 2000/10/31 11:42:16 knu Exp $
+# $FreeBSD: ports/net/Makefile,v 1.423 2000/10/31 12:41:14 sobomax Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -173,6 +173,7 @@
     SUBDIR += openldap2
     SUBDIR += p0f
     SUBDIR += p5-Archie
+    SUBDIR += p5-Mon
     SUBDIR += p5-Net
     SUBDIR += p5-Net-DNS
     SUBDIR += p5-Net-Daemon
