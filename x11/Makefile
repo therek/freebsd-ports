@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.285 2000/05/17 23:39:56 will Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.286 2000/06/01 16:03:48 ade Exp $
 #
 
     SUBDIR += 9term
@@ -44,6 +44,7 @@
     SUBDIR += lupe
     SUBDIR += offix-clipboard
     SUBDIR += offix-execute
+    SUBDIR += powershell
     SUBDIR += props
     SUBDIR += qrash
     SUBDIR += rxvt
