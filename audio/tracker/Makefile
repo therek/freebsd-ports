@@ -2,13 +2,13 @@
 # Date created:		2 Oct 1994
 # Whom:			swallace
 #
-# $FreeBSD: ports/audio/tracker/Makefile,v 1.36 1999/12/29 21:23:23 steve Exp $
+# $FreeBSD: ports/audio/tracker/Makefile,v 1.37 2000/04/08 21:24:40 mharo Exp $
 #
 
 PORTNAME=	tracker
 PORTVERSION=	5.3
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.uni-trier.de/pub/unix/audio/tracker/
+MASTER_SITES=	${MASTER_SITE_NETBSD}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
