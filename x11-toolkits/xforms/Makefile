@@ -2,8 +2,13 @@
 # Date created:		28 March 1997
 # Whom:			gena
 #
-# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.27 2000/02/08 09:29:42 peter Exp $
+# $FreeBSD: ports/x11-toolkits/xforms/Makefile,v 1.28 2000/04/10 01:11:19 cpiazza Exp $
 #
+
+PORTNAME=	xforms
+PORTVERSION= 	0.88.1
+CATEGORIES=	graphics x11-toolkits
+EXTRACT_SUFX=	.tgz
 
 USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
@@ -23,10 +28,6 @@ MASTER_SITES=	ftp://bragg.phys.uwm.edu/pub/xforms/freeBSD/ \
 		ftp://ftp.via.ecp.fr/pub2/xforms/freeBSD/ \
 		ftp://ftp.st.ryukoku.ac.jp/pub/X11/xforms/freeBSD/
 .endif
-PORTNAME=	xforms
-PORTVERSION= 	0.88.1
-CATEGORIES=	graphics x11-toolkits
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	gena@NetVision.net.il
 
