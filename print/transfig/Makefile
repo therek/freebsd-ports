@@ -2,21 +2,20 @@
 # Date created:		9 August 1996
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/print/transfig/Makefile,v 1.30 2001/07/09 23:55:59 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	transfig
-PORTVERSION=	3.2.3d
+PORTVERSION=	3.2.4
 CATEGORIES=	print
 MASTER_SITES=	http://www.xfig.org/xfigdist/ \
-		ftp://www-epb.lbl.gov/xfig/
-MASTER_SITE_SUBDIR=	applications/drawing_tools/transfig
+		ftp://www-epb.lbl.gov/xfig/%SUBDIR%/
+MASTER_SITE_SUBDIR=	. previous_versions
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		png.5:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 RUN_DEPENDS=	ppmtogif:${PORTSDIR}/graphics/netpbm
 
 USE_IMAKE=	yes
