@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.245 2001/08/18 07:48:48 ijliao Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.246 2001/08/18 08:42:12 ijliao Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -64,6 +64,7 @@
     SUBDIR += itcl
     SUBDIR += jgnat
     SUBDIR += jython
+    SUBDIR += klone
     SUBDIR += lcc
     SUBDIR += libobjects
     SUBDIR += librep
