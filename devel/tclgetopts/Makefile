@@ -3,14 +3,14 @@
 # Date created:				Mar 18, 1999
 # Whom:					mi
 #
-# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.4 1999/11/02 03:46:18 jseger Exp $
+# $FreeBSD: ports/devel/tclgetopts/Makefile,v 1.5 1999/11/10 04:44:48 jkoshy Exp $
 #
 
 DISTNAME=	tclGetOpts
 PKGNAME=	tclGetOpts-1.0
 CATEGORIES=	devel tcl76 tcl80 tcl82
-MASTER_SITES= ftp://ftp.neosoft.com/languages/tcl/sorted/packages-7.6/devel/ \
-	      http://www.neosoft.com/tcl/ftparchive/sorted/packages-7.6/devel/
+MASTER_SITES=	ftp://ftp.neosoft.com/languages/tcl/alcatel/code/ \
+		http://www.neosoft.com/tcl/ftparchive/alcatel/code/
 
 MAINTAINER=	mi@aldan.algebra.com
 
