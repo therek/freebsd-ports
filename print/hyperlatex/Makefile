@@ -2,11 +2,11 @@
 # Date created:				2 August 1994
 # Whom:					Robert Withrow <witr@rwwa.com>
 #
-# $FreeBSD: ports/print/hyperlatex/Makefile,v 1.2 2000/04/09 17:40:26 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Hyperlatex
-PORTVERSION=	2.3.1
+PORTVERSION=	2.5
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.cs.uni-magdeburg.de/pub/ipe/
 
