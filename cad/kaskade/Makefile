@@ -3,7 +3,7 @@
 # Date created:		19 Sept. 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/cad/kaskade/Makefile,v 1.10 1999/09/09 10:40:13 asami Exp $
+# $FreeBSD: ports/cad/kaskade/Makefile,v 1.11 2000/02/08 16:42:07 imura Exp $
 #
 
 DISTNAME=	3.1.1
@@ -27,11 +27,11 @@ MAKEFILE=	makefile
 ALL_TARGET=	k6
 
 do-install:
-	$(INSTALL_PROGRAM) $(WRKSRC)/k6 $(PREFIX)/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/k6 ${PREFIX}/bin
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/examples/kaskade
+	@${MKDIR} ${PREFIX}/share/examples/kaskade
 	${INSTALL_DATA} ${WRKSRC}/*.cmd ${PREFIX}/share/examples/kaskade
 	${INSTALL_DATA} ${WRKSRC}/*.geo ${PREFIX}/share/examples/kaskade
 	${INSTALL_DATA} ${WRKSRC}/*.mat ${PREFIX}/share/examples/kaskade
