@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.68 2000/09/08 11:41:41 tg Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.69 2000/09/28 11:28:11 tg Exp $
 #
 
 PORTNAME=	python
@@ -53,7 +53,7 @@ SETUP_LOCAL+=	Setup.OpenSSL
 #
 .if exists(/usr/src/contrib/libgmp/gmp-impl.h)
 SETUP_LOCAL+=	Setup.gmp
-PLIST_GMP=	${PKGDIR}/PLIST.gmp
+PLIST_GMP=	${PKGDIR}/pkg-plist.gmp
 .endif
 
 #
@@ -62,7 +62,7 @@ PLIST_GMP=	${PKGDIR}/PLIST.gmp
 # while extending or managing Python.
 #
 .if !defined(WITHOUT_TOOLS)
-PLIST_TOOLS=	${PKGDIR}/PLIST.Tools
+PLIST_TOOLS=	${PKGDIR}/pkg-plist.Tools
 .endif
 
 post-extract:
@@ -100,7 +100,7 @@ pre-install:
 	${INSTALL_DATA} ${WRKSRC}/Lib/${platform}/*                    \
 		${PREFIX}/lib/${PYTHON_VERSION}/${platform}/
 .endfor
-	@sort -r -o ${PLIST} ${PLIST_GMP} ${PLIST_TOOLS} ${PKGDIR}/PLIST
+	@sort -r -o ${PLIST} ${PLIST_GMP} ${PLIST_TOOLS} ${PKGDIR}/pkg-plist
 
 post-install:
 	strip ${PREFIX}/bin/python
