@@ -2,7 +2,7 @@
 # Date created:				28 April 2001
 # Whom:					Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/mail/perdition/Makefile,v 1.2 2001/05/25 15:48:15 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	perdition
@@ -29,7 +29,6 @@ MAN5=		perditiondb.5
 MAN8=		perdition.8
 
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 INSTALLS_SHLIB=	yes

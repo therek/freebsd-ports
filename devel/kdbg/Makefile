@@ -2,7 +2,7 @@
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.17 2001/05/31 22:44:38 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdbg
@@ -15,7 +15,6 @@ MAINTAINER=	jedgar@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_KDEBASE_VER=2
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-kde-version=2
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:        22 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/archivers/sectar/Makefile,v 1.2 2001/02/03 17:15:03 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		sectar
@@ -15,7 +15,6 @@ MAINTAINER=		greid@ukug.uk.freebsd.org
 
 LIB_DEPENDS=		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
-GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
 			LIBS="-L${LOCALBASE}/lib -lgnugetopt"
 USE_LIBTOOL=		yes

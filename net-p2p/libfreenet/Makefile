@@ -3,7 +3,7 @@
 # Date created:			Mar 31, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/libfreenet/Makefile,v 1.1 2001/03/31 07:32:19 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libfreenet
@@ -15,7 +15,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_OPENSSL=	yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/libfreenet
 
 USE_GMAKE=	yes

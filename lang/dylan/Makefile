@@ -2,7 +2,7 @@
 # Date created:         23 Jan 1998
 # Whom:                 housel@acm.org
 #
-# $FreeBSD: ports/lang/dylan/Makefile,v 1.13 2000/12/02 15:32:55 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dylan
@@ -29,7 +29,6 @@ RUN_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 WRKSRC=		${WRKDIR}/gd-${PORTVERSION}
 
 USE_GMAKE=	yes
-GNU_CONFIGURE=  yes
 CONFIGURE_ARGS= --srcdir=$(WRKSRC)
 CONFIGURE_ENV=	D2C="$(WRKDIR)/d2c -p$(WRKSRC)/d2c/compiler/platforms.descr"
 

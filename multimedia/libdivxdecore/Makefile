@@ -2,7 +2,7 @@
 # Date created:		03 Feb 2001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libdivxdecore/Makefile,v 1.1 2001/02/12 21:16:50 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libdivxdecore
@@ -12,7 +12,6 @@ MASTER_SITES=	http://download.projectmayo.com/dnload/divx4linux/xmps/
 
 MAINTAINER=	lioux@FreeBSD.org
 
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

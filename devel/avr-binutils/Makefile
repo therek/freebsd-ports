@@ -2,7 +2,7 @@
 # Date created:		30 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-binutils/Makefile,v 1.4 2001/04/15 00:55:52 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	binutils
@@ -18,7 +18,6 @@ WRKSRC=		${WRKDIR}/binutils-${PORTVERSION}
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=avr
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure bfd/configure binutils/configure etc/configure \

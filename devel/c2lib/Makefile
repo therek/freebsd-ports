@@ -3,7 +3,7 @@
 # Date created:			Feb 16, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/c2lib/Makefile,v 1.5 2001/06/16 16:32:44 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	c2lib
@@ -13,7 +13,6 @@ MASTER_SITES=	http://www.annexia.org/freeware/c2lib/
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes

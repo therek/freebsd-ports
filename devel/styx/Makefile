@@ -3,7 +3,7 @@
 # Date created:			Apr 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/styx/Makefile,v 1.1 2001/04/16 19:40:58 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	styx
@@ -17,7 +17,6 @@ MAINTAINER=	ijliao@FreeBSD.org
 LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS} -I${PREFIX}/include" \
 		LIBS="-L${PREFIX}/lib -lgiconv"
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/styx \

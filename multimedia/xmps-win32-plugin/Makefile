@@ -2,7 +2,7 @@
 # Date created:		03 Feb 20001
 # Whom:			Mario S F Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps-win32-plugin/Makefile,v 1.2 2001/02/13 05:15:43 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmps-win32-plugin
@@ -16,7 +16,6 @@ LIB_DEPENDS=	xmps.0:${PORTSDIR}/graphics/xmps \
 		intl.1:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	${CODEC_DETECTION_FILE}:${CODEC_PORT}
 
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_GTK=	yes

@@ -2,7 +2,7 @@
 # Date created:		28 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/devel/libvanessa_adt/Makefile,v 1.1 2001/05/20 03:59:29 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libvanessa_adt
@@ -23,7 +23,6 @@ LIB_DEPENDS=	vanessa_logger.0:${PORTSDIR}/devel/libvanessa_logger
 INSTALLS_SHLIB=	YES
 
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 WRKSRC=		${WRKDIR}/vanessa_adt-${PORTVERSION}

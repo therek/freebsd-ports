@@ -3,7 +3,7 @@
 # Date created:		3 November 2000
 # Whom:			Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/devel/arm-elf-binutils/Makefile,v 1.2 2001/04/09 00:01:05 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	binutils
@@ -17,7 +17,6 @@ MAINTAINER=	esk@ira.uka.de
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=arm-elf
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure bfd/configure binutils/configure etc/configure \

@@ -2,7 +2,7 @@
 # Date created:			7 Apr 2001
 # Whom:				Bas Kruit <baskruit@bsltwr.dnsalias.org>
 #
-# $FreeBSD: ports/mail/gmime/Makefile,v 1.2 2001/04/07 23:28:19 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmime
@@ -17,7 +17,6 @@ USE_X_PREFIX=	YES
 USE_GMAKE=	YES
 USE_GTK=	YES
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
 
 INSTALLS_SHLIB=	YES
 

@@ -3,7 +3,7 @@
 # Date created:		Mar 18, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/flac/Makefile,v 1.7 2001/06/10 14:03:00 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flac
@@ -28,7 +28,6 @@ BUILD_DEPENDS+=	nasm:${PORTSDIR}/devel/nasm
 .endif
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

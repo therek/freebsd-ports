@@ -3,7 +3,7 @@
 # Date created:		Mar 11, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/autogen/Makefile,v 1.3 2001/05/26 06:08:49 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	autogen
@@ -18,7 +18,6 @@ BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 
 USE_GMAKE=	yes
 

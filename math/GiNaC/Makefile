@@ -3,7 +3,7 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/GiNaC/Makefile,v 1.5 2001/06/08 17:15:05 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	GiNaC
@@ -18,7 +18,6 @@ USE_BZIP2=	yes
 LIB_DEPENDS=	cln:${PORTSDIR}/math/cln
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 
 USE_GMAKE=	yes
 USE_NEWGCC=	yes

@@ -3,7 +3,7 @@
 # Date created:			13, May, 1999
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/devel/t1lib/Makefile,v 1.16 2001/07/11 19:25:04 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	t1lib
@@ -15,7 +15,6 @@ MASTER_SITE_SUBDIR=	libs/graphics
 MAINTAINER=	ijliao@FreeBSD.org
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 
 .if !defined(WITHOUT_X11)
 USE_XLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:			14 Apr 2001
 # Whom:				Bas Kruit <baskruit@bsltwr.dnsalias.org>
 #
-# $FreeBSD: ports/mail/gmail/Makefile,v 1.1 2001/04/17 18:17:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gmail
@@ -19,6 +19,5 @@ USE_X_PREFIX=	YES
 USE_GMAKE=	YES
 USE_GNOME=	YES
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		28 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/devel/libvanessa_socket/Makefile,v 1.2 2001/06/15 13:22:38 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libvanessa_socket
@@ -26,7 +26,6 @@ MAN1=		vanessa_socket_pipe.1
 INSTALLS_SHLIB=	YES
 
 USE_LIBTOOL=	YES
-GNU_CONFIGURE=	YES
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 WRKSRC=		${WRKDIR}/vanessa_socket-${PORTVERSION}

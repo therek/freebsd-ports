@@ -3,7 +3,7 @@
 # Date created:                Fab 11, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/cln/Makefile,v 1.1 2001/02/12 14:55:37 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cln
@@ -16,7 +16,6 @@ MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/ \
 MAINTAINER=	ijliao@FreeBSD.org
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/cln --infodir=${PREFIX}/info \
 		--mandir=${PREFIX}/man
 

@@ -3,7 +3,7 @@
 # Date created:			Mar 2, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/regexx/Makefile,v 1.2 2001/03/15 06:52:26 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	regexx
@@ -19,7 +19,6 @@ LIB_DEPENDS=	pcre.0:${PORTSDIR}/devel/pcre
 USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
 USE_AUTOCONF=	yes
-GNU_CONFIGURE=	yes
 
 USE_GMAKE=	yes
 

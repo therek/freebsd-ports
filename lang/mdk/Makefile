@@ -3,7 +3,7 @@
 # Date created:			Apr 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/mdk/Makefile,v 1.5 2001/07/02 02:13:51 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mdk
@@ -20,7 +20,6 @@ LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt \
 
 USE_GNOME=	yes
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -lgnugetopt"
 

@@ -3,7 +3,7 @@
 # Date created:			Mar 13, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/net/librsync/Makefile,v 1.2 2001/03/19 17:25:46 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	librsync
@@ -20,7 +20,6 @@ LIB_DEPENDS+=	bz2.1:${PORTSDIR}/archivers/bzip2
 .endif
 
 USE_LIBTOOL=	yes
-GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib" \
 		CPPFLAGS="${CFLAGS} -I${LOCALBASE}/include"
 CONFIGURE_ARGS=	--enable-shared --disable-trace
