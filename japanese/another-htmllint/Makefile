@@ -2,13 +2,14 @@
 # Date created:		29 Sep 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/another-htmllint/Makefile,v 1.1 2000/10/02 05:18:59 kuriyama Exp $
+# $FreeBSD: ports/japanese/another-htmllint/Makefile,v 1.2 2000/10/08 10:20:28 asami Exp $
 #
 
 PORTNAME=	another-htmllint
-PORTVERSION=	20000926
+PORTVERSION=	20010911
 CATEGORIES=	japanese www
-MASTER_SITES=	${MASTER_SITE_PORTS_JP}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kuriyama
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
