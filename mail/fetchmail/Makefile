@@ -3,7 +3,7 @@
 # Date created:		26 Oct 1996
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.87 2000/01/14 04:17:21 sumikawa Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.88 2000/01/18 12:34:33 sumikawa Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, found in the Ports
@@ -20,11 +20,14 @@ MAINTAINER=	ve@sci.fi
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS
 CONFIGURE_ENV=  LDFLAGS="${CFLAGS}"
-.if defined(USE_INET6)
-CONFIGURE_ARGS+=--enable-inet6
-.endif
 MAN1=		fetchmail.1
 MLINKS=		fetchmail.1 fetchmailconf.1
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+CONFIGURE_ARGS+=--enable-inet6
+.endif
 
 .if exists(/usr/lib/libkrb.a) && defined(MAKE_KERBEROS4)
 CONFIGURE_ARGS += --with-kerberos=/usr/include
@@ -50,4 +53,4 @@ post-install:
 	${MV} ${PREFIX}/bin/fetchmailconf ${PREFIX}/libexec/fetchmailconf.bin
 	${INSTALL_SCRIPT} ${WRKDIR}/fetchmailconf ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
