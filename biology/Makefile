@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.13 1999/09/06 20:09:12 taoka Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.14 2000/07/10 03:26:57 steve Exp $
 #
 
     SUBDIR += babel
@@ -19,6 +19,7 @@
     SUBDIR += rasmol
     SUBDIR += seaview
     SUBDIR += tinker
+    SUBDIR += xdrawchem
     SUBDIR += xmolwt
 
 .include <bsd.port.subdir.mk>
