@@ -2,12 +2,11 @@
 # Date created:		2 February 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/mail/lbdb/Makefile,v 1.9 2001/02/11 21:39:52 mharo Exp $
+# $FreeBSD: ports/mail/lbdb/Makefile,v 1.10 2001/02/26 04:54:23 steve Exp $
 #
 
 PORTNAME=	lbdb
-PORTVERSION=	0.24
-PORTREVISION=	1
+PORTVERSION=	0.25
 CATEGORIES=	mail
 MASTER_SITES=	http://www.spinnaker.de/debian/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -24,6 +23,7 @@ GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=	--libdir=${PREFIX}/libexec --enable-lbdb-dotlock
 USE_GMAKE=	YES
 
-MAN1=		nodelist2lbdb.1 lbdbq.1 lbdb-fetchaddr.1 lbdb_dotlock.1
+MAN1=		nodelist2lbdb.1 lbdbq.1 lbdb-fetchaddr.1 lbdb_dotlock.1 \
+		mutt_ldap_query.1
 
 .include <bsd.port.mk>
