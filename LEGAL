@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.162 2000/06/23 19:16:30 taoka Exp $
+# $FreeBSD: ports/LEGAL,v 1.163 2000/06/26 12:57:56 tg Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -127,7 +127,7 @@ rkive3.1.tar.gz		ports/news/rkive	Restrictive copyright
 rman-2.4.tar.Z		ports/misc/rman		Restrictive copyright
 rman-3.*		ports/textproc/rman	Don't sell for profit
 rsaref*			ports/security/{rsaref,ssh} Crypto; export-controlled
-rv50_linux20.tar.gz	ports/audio/linux-realplayer	Redistribution not allowed.
+rp7_linux20_libc6_i386_b2_rpm	ports/audio/linux-realplayer	Redistribution not allowed.
 rzsz3_36.zip		ports/comms/rzsz	Restrictive copyright
 Scilab-*		ports/math/Scilab	Don't sell for profit.
 sdr-2.7*		ports/mbone/sdr{,-current}	Crypto; export-controlled
