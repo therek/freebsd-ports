@@ -3,14 +3,14 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.15 1999/10/14 09:13:47 nakai Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.16 1999/12/24 07:10:27 nakai Exp $
 #
 
 DISTNAME=	glade-0.5.5
 CATEGORIES=	devel
 MASTER_SITES=   http://glade.pn.org/
 
-MAINTAINER=     ade@lovett.com
+MAINTAINER=     ade@FreeBSD.org
 
 .if defined(USE_GNOME)
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs

@@ -3,7 +3,7 @@
 # Date created:		10 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/x11/xcolors/Makefile,v 1.12 1999/08/31 06:53:23 mharo Exp $
+# $FreeBSD: ports/x11/xcolors/Makefile,v 1.13 1999/10/10 23:21:34 steve Exp $
 #
 
 DISTNAME=	xcolors
@@ -11,7 +11,7 @@ PKGNAME=	xcolors-1.3
 CATEGORIES=	x11
 MASTER_SITES=	http://www.lovett.com/~ade/FreeBSD/
 
-MAINTAINER=	ade@lovett.com
+MAINTAINER=	ade@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xcolors
 USE_IMAKE=	yes
