@@ -2,7 +2,7 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD: ports/graphics/sane/Makefile,v 1.28 2000/10/05 06:36:19 reg Exp $
+# $FreeBSD: ports/graphics/sane/Makefile,v 1.29 2000/11/18 03:56:50 ade Exp $
 #
 
 PORTNAME=	sane
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.mostang.com/pub/sane/
 MASTER_SITE_SUBDIR=	apps/graphics/capture
 
-MAINTAINER= 	ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 

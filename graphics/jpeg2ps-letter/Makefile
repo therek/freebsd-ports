@@ -2,14 +2,14 @@
 # Date created:		30 December 2000
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/jpeg2ps-letter/Makefile,v 1.1 2000/12/30 14:14:57 lkoeller Exp $
 #
 
 PORTNAME=	jpeg2ps
-PORTVERSION= 	1.8
+PORTVERSION=	1.8
 CATEGORIES=	graphics converters
 MASTER_SITES=	http://www.pdflib.com/jpeg2ps/
-PKGNAMESUFFIX=  -${PAPERSIZE}
+PKGNAMESUFFIX=	-${PAPERSIZE}
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.de
 

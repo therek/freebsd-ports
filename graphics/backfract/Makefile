@@ -2,11 +2,11 @@
 # Date created:		8 August 2000
 # Whom:			Patrick Gardella <patrick@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/backfract/Makefile,v 1.1 2000/08/11 21:36:25 will Exp $
 #
 
 PORTNAME=	backfract
-PORTVERSION= 	1.1.2
+PORTVERSION=	1.1.2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.inetarena.com/~wms/comp/backfract/
 

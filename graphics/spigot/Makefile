@@ -2,13 +2,13 @@
 # Date Created:		Fri Sep 15 10:04:46 CDT 1995
 # Whom:			james@cs.uwm.edu
 #
-# $FreeBSD: ports/graphics/spigot/Makefile,v 1.10 2000/04/14 10:47:23 asami Exp $
+# $FreeBSD: ports/graphics/spigot/Makefile,v 1.11 2000/06/22 19:15:31 fenner Exp $
 #
 
-PORTNAME= 	spigot
+PORTNAME=	spigot
 PORTVERSION=	1.7
 CATEGORIES=	graphics
-MASTER_SITES=		${MASTER_SITE_LOCAL}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	fenner
 DISTFILES=	spigot.1.7.tar.gz
 

@@ -2,12 +2,12 @@
 # Date created:	 	06 January 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.5 2001/01/05 05:29:30 cpiazza Exp $
+# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.6 2001/01/22 23:51:32 cpiazza Exp $
 #
 
 PORTNAME=	vcdgear
 PORTVERSION=	1.6d
-CATEGORIES= 	graphics
+CATEGORIES=	graphics
 MASTER_SITES=	http://www.vcdgear.org/files/
 
 MAINTAINER=	cpiazza@FreeBSD.org

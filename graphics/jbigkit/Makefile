@@ -2,7 +2,7 @@
 # Date created:		19 November 1996
 # Whom:			mi
 #
-# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.14 2000/06/16 08:46:40 sobomax Exp $
+# $FreeBSD: ports/graphics/jbigkit/Makefile,v 1.15 2000/06/16 21:50:46 asami Exp $
 #
 
 PORTNAME=	jbigkit
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.informatik.uni-erlangen.de/pub/doc/ISO/JBIG/
 
 MAINTAINER=	mi@aldan.algebra.com
 
-WRKSRC= ${WRKDIR}/${PORTNAME}
+WRKSRC=	${WRKDIR}/${PORTNAME}
 
 INSTALLS_SHLIB=	yes
 

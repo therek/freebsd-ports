@@ -2,11 +2,11 @@
 # Date created:				18 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gpaint/Makefile,v 1.2 2000/10/24 15:03:34 sobomax Exp $
+# $FreeBSD: ports/graphics/gpaint/Makefile,v 1.3 2000/11/21 08:45:13 sobomax Exp $
 #
 
 PORTNAME=	gpaint
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
