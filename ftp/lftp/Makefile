@@ -2,17 +2,17 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.51 2001/08/14 21:57:39 olgeni Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.52 2001/09/02 15:18:10 kevlo Exp $
 #
 
 PORTNAME=	lftp
-PORTVERSION=	2.4.2
+PORTVERSION=	2.4.4
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/net/ftp/client/lftp/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/network/file-transfer
 
-MAINTAINER=	carl_johan@gmx.net
+MAINTAINER=	fm@astral.ntu-kpi.kiev.ua
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
