@@ -2,13 +2,13 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.45 2000/06/06 17:54:20 shige Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.46 2000/06/08 14:34:59 shige Exp $
 #
 
 PORTNAME=	zsh
 PORTVERSION=	3.1.9
 CATEGORIES=	shells
-MASTER_SITES=	http://people.FreeBSD.org/~knu/ports/distfiles/ \
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/ \
 		ftp://ftp.zsh.org/%SUBDIR%/ \
 		ftp://ftp.sterling.com/%SUBDIR%/ \
 		ftp://ftp.rge.com/pub/%SUBDIR%/ \
