@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.54 2001/07/23 08:16:52 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 9e
@@ -24,6 +24,7 @@
     SUBDIR += macutils
     SUBDIR += makeself
     SUBDIR += mscompress
+    SUBDIR += nomarch
     SUBDIR += nulib
     SUBDIR += p5-Archive-Tar
     SUBDIR += p5-Archive-Zip
