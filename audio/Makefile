@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.116 1999/12/25 02:31:32 cpiazza Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.117 1999/12/25 15:32:12 steve Exp $
 #
 
     SUBDIR += amp
@@ -66,6 +66,7 @@
     SUBDIR += shorten
     SUBDIR += sidplay
     SUBDIR += snowstar
+    SUBDIR += soundtracker
     SUBDIR += sox
     SUBDIR += splay
     SUBDIR += splaytk
