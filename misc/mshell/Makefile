@@ -3,13 +3,13 @@
 # Date created:         24 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/misc/mshell/Makefile,v 1.14 2000/04/14 17:43:59 knu Exp $
+# $FreeBSD: ports/misc/mshell/Makefile,v 1.15 2000/04/15 15:13:51 knu Exp $
 #
 
 PORTNAME=	mshell
 PORTVERSION=	1.0
 CATEGORIES=	misc
-MASTER_SITES=	ftp://src.doc.ic.ac.uk/usenet/alt.sources/articles/07000-07999/
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
 DISTFILES=	7432.Z
 
 MAINTAINER=	jmz@FreeBSD.org

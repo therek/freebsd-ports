@@ -2,13 +2,13 @@
 # Date created:         17 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/tkhfs/Makefile,v 1.19 1999/09/08 00:17:04 jmz Exp $
+# $FreeBSD: ports/emulators/tkhfs/Makefile,v 1.20 2000/04/12 04:55:53 mharo Exp $
 #
 
 PORTNAME=	tkhfs
 PORTVERSION=	1.27
 CATEGORIES=	emulators tk82
-MASTER_SITES=	ftp://ftp.obs-besancon.fr/pub/outgoing/
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jmz@FreeBSD.org

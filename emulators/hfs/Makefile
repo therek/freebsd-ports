@@ -2,13 +2,13 @@
 # Date created:         17 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/emulators/hfs/Makefile,v 1.10 1999/08/25 05:49:17 obrien Exp $
+# $FreeBSD: ports/emulators/hfs/Makefile,v 1.11 2000/04/12 04:55:24 mharo Exp $
 #
 
 PORTNAME=	hfs
 PORTVERSION=	0.37
 CATEGORIES=	emulators
-MASTER_SITES=	ftp://ftp.obs-besancon.fr/pub/outgoing/
+MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jmz/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/./_/}
 
 MAINTAINER=	jmz@FreeBSD.org
