@@ -2,7 +2,7 @@
 # Date created:         01.May 1999
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: $
+# $FreeBSD: ports/german/unix-connect/Makefile,v 1.1 2001/08/18 20:57:05 dinoex Exp $
 
 PORTNAME=	unix-connect
 PORTVERSION=	0.92
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=     dinoex@freebsd.org
 
-WRKSRC=		${WRKDIR}/${PKGNAME}
+WRKSRC=		${WRKDIR}/${DISTNAME}
 #USE_GMAKE=     yes
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS+=--with-user=news
