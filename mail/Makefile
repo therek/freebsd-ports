@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.202 2001/03/10 07:18:47 dinoex Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.203 2001/03/10 12:46:06 trevor Exp $
 #
 
     SUBDIR += abook
@@ -33,6 +33,7 @@
     SUBDIR += ezmlm-web
     SUBDIR += faces
     SUBDIR += fetchmail
+    SUBDIR += ftrack
     SUBDIR += gbuffy
     SUBDIR += gensig
     SUBDIR += gkrellmmailwatch
