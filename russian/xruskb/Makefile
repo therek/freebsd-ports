@@ -2,11 +2,11 @@
 # Date created:		14 Jan 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/russian/xruskb/Makefile,v 1.7 2000/04/21 07:52:25 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xruskb
-PORTVERSION=	1.13.0
+PORTVERSION=	1.15.2
 CATEGORIES=	russian x11
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/
 
