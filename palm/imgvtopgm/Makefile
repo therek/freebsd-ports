@@ -2,7 +2,7 @@
 # Date created:         Wed Jun 16 04:42:22 JST 1999
 # Whom:                 sumikawa@ebina.hitachi.co.jp
 #
-# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.6 2000/04/21 07:51:59 mharo Exp $
+# $FreeBSD: ports/palm/imgvtopgm/Makefile,v 1.7 2000/04/29 21:18:39 kris Exp $
 #
 
 PORTNAME=	imgvtopgm
@@ -10,7 +10,7 @@ PORTVERSION=	2.0
 CATEGORIES=	palm graphics
 MASTER_SITES=	http://www.trends.net/~mu/srcs/
 
-MAINTAINER=	sumikawa@kame.net
+MAINTAINER=	sumikawa@FreeBSD.org
 
 LIB_DEPENDS=	pbm.1:${PORTSDIR}/graphics/netpbm
 
@@ -18,7 +18,5 @@ GNU_CONFIGURE=	yes
 
 MAN1=		imgvinfo.1 imgvtopnm.1 imgvview.1 pbmtoimgv.1 \
 		pgmtoimgv.1 ppmimgvquant.1
-
-BROKEN=		"Looks for netpbm in the wrong place"
 
 .include <bsd.port.mk>
