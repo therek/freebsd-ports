@@ -3,7 +3,7 @@
 # Date created:		Sat Aug 21 06:13:59 EDT 1999
 # Whom:			Oryx Gazella <oryx@ungulate.net>
 #
-# $FreeBSD: ports/net/dhid/Makefile,v 1.2 1999/11/25 16:10:35 steve Exp $
+# $FreeBSD: ports/net/dhid/Makefile,v 1.3 2000/02/05 22:07:49 kris Exp $
 #
 
 DISTNAME=		dhid-3.1
@@ -27,8 +27,13 @@ post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/dhid.sh ]; then \
 		${ECHO} "===>   Installing ${PREFIX}/etc/rc.d/dhid.sh startup file."; \
 		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/dhid.sh; \
-		${ECHO} "[ -x ${PREFIX}/bin/dtool ] && ${PREFIX}/bin/dtool -s > /dev/null && echo -n ' dhid'" >> ${PREFIX}/etc/rc.d/dhid.sh; \
+		${ECHO} "[ -x \"${PREFIX}/sbin/dhid\" -a -f \"${PREFIX}/etc/dhid.conf\" ] && ${PREFIX}/sbin/dhid > /dev/null && echo -n ' dhid'" >> ${PREFIX}/etc/rc.d/dhid.sh; \
 		chmod 751 ${PREFIX}/etc/rc.d/dhid.sh; \
-	fi
+	fi;
+	@${ECHO} "--------------------------------------------------------------------------"
+	@${ECHO} "Before dhid can run, you will need to register with a DHIS provider."
+	@${ECHO} "See http://www.dhis.org/dhis/services/ for a list of providers."
+	@${ECHO} "Enter the DHIS account information into the ${PREFIX}/etc/dhid.conf file."
+	@${ECHO} "--------------------------------------------------------------------------"
 
 .include <bsd.port.mk>
