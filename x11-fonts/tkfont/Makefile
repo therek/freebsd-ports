@@ -2,24 +2,25 @@
 # Date created:		11 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-fonts/tkfont/Makefile,v 1.11 2001/02/05 21:02:10 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkfont
 PORTVERSION=	1.1
-CATEGORIES=	x11-fonts tk82
+PORTREVISION=	1
+CATEGORIES=	x11-fonts tk83
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	billf
 
 MAINTAINER=	brett@peloton.runet.edu
 
-RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
 NO_BUILD=	yes
 
 post-patch:
 	${SED} -e "s,/usr/local,${LOCALBASE}," \
-		-e "s,#!/usr/X11/bin/wish,#!$(LOCALBASE)/bin/wish8.2," \
+		-e "s,#!/usr/X11/bin/wish,#!$(LOCALBASE)/bin/wish8.3," \
 		 < ${WRKSRC}/tkfont > ${WRKSRC}/tkfont.new
 	${MV} ${WRKSRC}/tkfont.new ${WRKSRC}/tkfont
 
