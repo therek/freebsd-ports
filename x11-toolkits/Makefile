@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.130 2001/03/25 02:29:18 will Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.131 2001/03/27 21:22:16 steve Exp $
 #
 
     SUBDIR += FWF
@@ -66,6 +66,7 @@
     SUBDIR += p5-Tcl-Tk
     SUBDIR += p5-Tk
     SUBDIR += pango
+    SUBDIR += paragui
     SUBDIR += pike-gtk
     SUBDIR += plib
     SUBDIR += pmw
