@@ -2,11 +2,11 @@
 # Date created:		15 March 2001
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.8 2001/09/06 14:57:41 wjv Exp $
+# $FreeBSD: ports/lang/diveintopython/Makefile,v 1.9 2001/09/07 09:03:09 wjv Exp $
 #
 
 PORTNAME=	diveintopython
-PORTVERSION=	3.6.4
+PORTVERSION=	3.7.1
 CATEGORIES=	lang python
 MASTER_SITES=	http://diveintopython.org/download/
 DISTNAME=	${PORTNAME}
@@ -30,7 +30,7 @@ VERSIONSTR=	${PORTVERSION:C|\.([^.]*)$|-\1|}
 post-patch:
 	@ ${PERL} -pi.orig -e \
 	  's#<tr[^>]*>(.(?!<tr[^>]*>))*(Microsoft|Windows)(.(?!</tr>))*.</tr>##g; \
-	   s#<td>(.(?!<td>))*/(cn/|fr/[^"]|kr/)(.(?!</td>))*.</td>##g' \
+	   s#<td>(.(?!<td>))*/(cn/|(es|fr)/[^"]|kr/)(.(?!</td>))*.</td>##g' \
 	   ${WRKSRC}/index.html
 	@ ${PERL} -pi -e \
 	  's#http[^>]*(download/${PORTNAME}-examples-${VERSIONSTR}.zip)#$$1#' \
