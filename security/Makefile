@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.144 2000/12/12 17:12:32 roam Exp $
+# $FreeBSD: ports/security/Makefile,v 1.145 2000/12/16 01:50:49 alfred Exp $
 #
 
     SUBDIR += aafid2
@@ -16,6 +16,7 @@
     SUBDIR += cksfv
     SUBDIR += cops
     SUBDIR += crack
+    SUBDIR += cracklib
     SUBDIR += cyrus-sasl
     SUBDIR += ddos_scan
     SUBDIR += donkey
