@@ -2,7 +2,7 @@
 # Date created:		24 Jan 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dnscache/Makefile,v 1.1.1.1 2000/04/26 19:12:06 nbm Exp $
 #
 
 PORTNAME=	dnscache
@@ -11,6 +11,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://cr.yp.to/dnscache/
 
 MAINTAINER=	nbm@FreeBSD.org
+
+RUN_DEPENDS=	setuidgid:${PORTSDIR}/sysutils/daemontools
 
 ALL_TARGET=	it
 INSTALL_TARGET=	setup check
