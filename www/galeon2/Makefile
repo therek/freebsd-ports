@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.16 2001/01/17 13:08:10 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	galeon
@@ -18,33 +18,30 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	${X11BASE}/include/mozilla/gtkmozembed.h:${PORTSDIR}/www/mozilla-headers \
+		${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
 LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
 
-WITH_FULL_MOZILLA=	"I donno why, but it doesn't work with M18-embedded"
+WITH_FULL_MOZILLA=	"I donno why, but it doesn't work with 0.7-embedded"
 
 .if !defined(WITH_FULL_MOZILLA)
 MOZILLA=	mozilla-embedded
-BUILD_DEPENDS+=	${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
-MOZHEADERS=	${X11BASE}/include/${MOZILLA}
-MOZLIBS=	${X11BASE}/lib/${MOZILLA}
 .else
 MOZILLA=	mozilla
-BUILD_DEPENDS+=	/nonexistent:${PORTSDIR}/www/${MOZILLA}:build
-MOZHEADERS=	${WRKDIRPREFIX}${.CURDIR}/../../www/mozilla/work/mozilla/dist/include
-MOZLIBS=	${WRKDIRPREFIX}${.CURDIR}/../../www/mozilla/work/mozilla/dist/lib
 .endif
 
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-mozilla-includes="${MOZHEADERS}" \
-		--with-mozilla-libs="${MOZLIBS}"
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ARGS=	--with-mozilla-includes="${X11BASE}/include/mozilla" \
+		--with-mozilla-libs="${X11BASE}/lib/${MOZILLA}"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include \
+			  -D_REENTRANT -D_THREAD_SAFE -fno-rtti" \
 		LIBS="-L${LOCALBASE}/lib -L${WRKSRC} -pthread -lgcc_r"
 
-CFLAGS+=	-D_REENTRANT -D_THREAD_SAFE -fno-rtti
+#CFLAGS+=	-D_REENTRANT -D_THREAD_SAFE -fno-rtti
 
 
 post-extract:
