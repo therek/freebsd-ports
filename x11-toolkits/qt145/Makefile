@@ -2,13 +2,13 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.39 2000/03/22 01:59:38 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.40 2000/04/10 01:10:54 cpiazza Exp $
 #
 
 PORTNAME=	qt
 PORTVERSION=	1.45
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.troll.no/qt/source/
+MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 
 MAINTAINER=	will@FreeBSD.org
 
