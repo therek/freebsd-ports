@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.556 2001/06/05 17:39:11 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.557 2001/06/07 21:42:08 dwcjr Exp $
 #
 
     SUBDIR += ElectricFence
@@ -443,6 +443,7 @@
     SUBDIR += ruby-strscan
     SUBDIR += ruby-sysvipc
     SUBDIR += ruby-textbuf
+    SUBDIR += ruby-tzfile
     SUBDIR += ruby-unit
     SUBDIR += rvm
     SUBDIR += scandoc
