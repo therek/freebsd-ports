@@ -28,12 +28,12 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.269 2004/10/04 14:01:45 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.270 2004/10/04 17:09:55 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="67710833-1626-11d9-bc4a-000c41e2cdad">
-    <topic></topic>
+    <topic>Boundary checking errors in syscons</topic>
     <affects>
       <system>
 	<name>FreeBSD</name>
