@@ -2,7 +2,7 @@
 # Date created:				25 May 2001
 # Whom:					Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD: ports/java/linux-jdk14/Makefile,v 1.2 2001/05/29 12:33:01 sobomax Exp $
+# $FreeBSD: ports/java/linux-jdk14/Makefile,v 1.3 2001/06/17 18:08:03 steve Exp $
 #
 
 PORTNAME=	jdk
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.bin
 
 MAINTAINER=	ernst@jollem.com
 
+BUILD_DEPENDS=  ${LINUXBASE}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper
 
 NO_CDROM=	"License doesn\'t allow distribution with fee"
