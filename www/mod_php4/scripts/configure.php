@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.186 2003/03/23 08:23:10 mbr Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.187 2003/04/12 21:08:33 arved Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -147,7 +147,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-mhash=\${LOCALBASE}"
 			;;
 		\"pdflib\")
-			echo "LIB_DEPENDS+=	pdf.4:\${PORTSDIR}/print/pdflib"
+			echo "LIB_DEPENDS+=	pdf.5:\${PORTSDIR}/print/pdflib"
 			echo "LIB_DEPENDS+=	jpeg.9:\${PORTSDIR}/graphics/jpeg"
 			echo "LIB_DEPENDS+=	png.5:\${PORTSDIR}/graphics/png"
 			echo "LIB_DEPENDS+=	tiff.4:\${PORTSDIR}/graphics/tiff"
