@@ -2,16 +2,16 @@
 # Date created:		09 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.2 1999/12/29 21:17:14 steve Exp $
+# $FreeBSD: ports/x11-wm/wmthemeinstall/Makefile,v 1.3 2000/04/10 19:50:41 cpiazza Exp $
 #
 
 PORTNAME=	wmthemeinstall
 PORTVERSION= 	0.62
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://www.lovett.com/FreeBSD/ \
-		ftp://ftp.cronyx.ru/.w3/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	will
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
