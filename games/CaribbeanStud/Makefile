@@ -2,7 +2,7 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.4 2000/04/14 12:25:48 asami Exp $
+# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.5 2000/07/02 21:56:53 kris Exp $
 #
 
 PORTNAME=		CaribbeanStud
@@ -17,8 +17,7 @@ MAINTAINER=		ports@FreeBSD.org
 MAKEFILE=		Xmakefile
 REQUIRES_MOTIF=		yes
 USE_X_PREFIX=		yes
-
-BROKEN=			"Bad C++"
+CFLAGS=			-pedantic
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/CaribbeanStud ${PREFIX}/bin
