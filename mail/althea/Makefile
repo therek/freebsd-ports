@@ -2,11 +2,11 @@
 # Date created:		Feb 26, 2001
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/mail/althea/Makefile,v 1.2 2001/02/28 15:50:57 kevlo Exp $
+# $FreeBSD: ports/mail/althea/Makefile,v 1.3 2001/03/31 16:17:05 kevlo Exp $
 #
 
 PORTNAME=	althea
-PORTVERSION=	0.4.1
+PORTVERSION=	0.5.2
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 USE_GTK=	yes
+USE_OPENSSL=	yes
 MAKE_ENV=	MKDIR="${MKDIR}"
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 
