@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.136 2000/12/16 20:33:10 dannyboy Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.137 2000/12/19 10:45:03 will Exp $
 #
     SUBDIR += yawho
 
@@ -51,6 +51,7 @@
     SUBDIR += healthd
     SUBDIR += heat
     SUBDIR += idled
+    SUBDIR += ipa
     SUBDIR += ipsc
     SUBDIR += lavaps
     SUBDIR += libretto-config
