@@ -2,11 +2,11 @@
 # Date created:         19990304
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/misc/cstream/Makefile,v 1.11 2001/01/16 17:31:39 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cstream
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	misc
 MASTER_SITES=	http://www.cons.org/cracauer/download/ \
 		http://www2.cons.org/cracauer/download/ \
