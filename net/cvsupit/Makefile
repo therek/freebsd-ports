@@ -2,7 +2,7 @@
 # Date created:		8 May 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/net/cvsupit/Makefile,v 1.4 2000/08/23 00:17:57 jkh Exp $
+# $FreeBSD: ports/net/cvsupit/Makefile,v 1.5 2000/10/08 10:22:26 asami Exp $
 #
 
 PORTNAME=	cvsupit
@@ -11,6 +11,8 @@ CATEGORIES=	net
 DISTFILES=	#empty
 
 MAINTAINER=	jkh@FreeBSD.org
+
+IS_INTERACTIVE= 'Must configure cvsup server information'
 
 RUN_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup-bin
 
