@@ -2,11 +2,11 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/rocksndiamonds/Makefile,v 1.10 2001/02/05 14:51:43 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rocksndiamonds
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	games
 MASTER_SITES=	http://www.artsoft.org/RELEASES/unix/rocksndiamonds/ \
 		http://homepages.compuserve.de/rocksndiamonds/
