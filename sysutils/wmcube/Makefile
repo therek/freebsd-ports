@@ -2,7 +2,7 @@
 # Date created:				Mon May 28 02:14:47 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.1 2001/05/30 03:11:45 lioux Exp $
+# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.2 2001/06/02 04:12:13 lioux Exp $
 #
 
 PORTNAME=	wmcube
@@ -39,6 +39,6 @@ post-install:
 	@${INSTALL_DATA} ${WRKSRC}/../${file} ${PREFIX}/share/doc/${PORTNAME}
 .endfor
 .endif # !NOPORTDOCS
-	${SED} -e "s|/usr/X11R6/|${PREFIX}|" ${PKGMESSAGE}
+	@${SED} -e "s|/usr/X11R6|${PREFIX}|" ${PKGMESSAGE}
 
 .include <bsd.port.mk>
