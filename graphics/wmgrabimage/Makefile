@@ -2,7 +2,7 @@
 # Date created:		4th November 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/graphics/wmgrabimage/Makefile,v 1.4 2000/08/12 10:56:25 alex Exp $
+# $FreeBSD: ports/graphics/wmgrabimage/Makefile,v 1.5 2001/07/27 20:09:58 lioux Exp $
 #
 
 PORTNAME=	wmGrabImage
