@@ -2,7 +2,7 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.6 2000/05/07 21:24:31 jedgar Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.7 2000/06/28 12:19:50 alex Exp $
 #
 
 PORTNAME=	saint
@@ -12,12 +12,11 @@ MASTER_SITES=	ftp://ftp.wwdsi.com/pub/saint/			\
 		http://www.wwdsi.com/saint/downloads/		\
 		ftp://ukug.uk.freebsd.org/pub/lord_cj/
 
-MAINTAINER=	calle.madestrand@norrgarden.se
+MAINTAINER=	cj@vallcom.net
 
 RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_PERL5=	yes
-WRKSRC=		${WRKDIR}/saint-2.1
 MAKE_ENV=	XFLAGS="DAUTH_GID_T=int -DSYS_ERRLIST_DECLARED -DFDSETSIZE=2048"
 ALL_TARGET=	freebsd
 INSTALL_TARGET=	all
