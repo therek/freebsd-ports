@@ -2,7 +2,7 @@
 # Date created:        22 July 2000
 # Whom:                Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/pwgen/Makefile,v 1.1 2000/07/22 16:37:29 alex Exp $
 #
 
 PORTNAME=      pwgen
