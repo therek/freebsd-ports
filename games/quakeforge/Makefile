@@ -3,7 +3,7 @@
 # Date created:		4 January 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/quakeforge/Makefile,v 1.1.1.1 2000/01/12 05:47:13 green Exp $
 #
 
 DISTNAME=	quakeforge
@@ -140,4 +140,4 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/targets/${binary} ${PREFIX}/bin/
 .endfor
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
