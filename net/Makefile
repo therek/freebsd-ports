@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.342 2000/03/05 09:38:47 kris Exp $
+# $FreeBSD: ports/net/Makefile,v 1.343 2000/03/11 15:06:20 jedgar Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -81,6 +81,7 @@
     SUBDIR += icmpquery
     SUBDIR += icqlib
     SUBDIR += icqnix
+    SUBDIR += ipfm
     SUBDIR += iplog
     SUBDIR += ipw
     SUBDIR += isc-dhcp2
