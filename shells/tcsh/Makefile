@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.29 2000/04/20 09:20:13 ache Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.30 2000/04/21 08:19:31 mharo Exp $
 #
 
 PORTNAME=	tcsh
@@ -14,7 +14,7 @@ DISTNAME=	tcsh-6.09
 MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} >= 500001
+.if ${OSVERSION} >= 400021
 FORBIDDEN=	"tcsh is already in the base system"
 .endif
 
