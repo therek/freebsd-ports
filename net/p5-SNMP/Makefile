@@ -2,11 +2,11 @@
 # Date created:				May 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.11 2000/06/17 02:36:40 will Exp $
+# $FreeBSD: ports/net/p5-SNMP/Makefile,v 1.12 2000/10/23 21:03:04 will Exp $
 #
 
 PORTNAME=	SNMP
-PORTVERSION=	1.8.1
+PORTVERSION=	3.1.0
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SNMP
@@ -16,11 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS= 	snmp.4:${PORTSDIR}/net/ucd-snmp
 
-USE_PERL5=	yes
-
-do-configure:
-		@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-			CC="${CC}" CCFLAGS="${CFLAGS}"
+PERL_CONFIGURE=	yes
 
 post-install:
 		@${INSTALL_DATA} ${WRKSRC}/README \
