@@ -2,7 +2,7 @@
 # Date created:         29 October 1994
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.24 2000/10/03 05:39:04 lioux Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.25 2000/10/06 17:12:20 lioux Exp $
 #
 
 PORTNAME=	xearth
@@ -19,23 +19,11 @@ USE_IMAKE=	yes
 
 MAN1=		xearth.1
 
-# Always prep the joint marker list for every new install
-pre-install:
-	@${ECHO} "# All of FreeBSD's committers, including core :)" > \
-		${WRKDIR}/freebsd.core_and_committers.markers
-	@${GREP} -hv '^[[:space:]]*#' ${FILESDIR}/freebsd.core.markers \
-	    ${FILESDIR}/freebsd.committers.markers >> \
-		${WRKDIR}/freebsd.core_and_committers.markers
-
-# Copy the list of FreeBSD sites
+# Copy the list of FreeBSD sites & committers locations
 post-install:
 	@${MKDIR} ${PREFIX}/lib/X11/xearth
-.for file in freebsd.core.markers freebsd.committers.markers \
-	freebsd.ftp.markers
+.for file in freebsd.committers.markers freebsd.ftp.markers
 	@${INSTALL_DATA} ${FILESDIR}/${file} ${PREFIX}/lib/X11/xearth
 .endfor
-	@${INSTALL_DATA} \
-		${WRKDIR}/freebsd.core_and_committers.markers \
-			${PREFIX}/lib/X11/xearth
 
 .include <bsd.port.mk>
