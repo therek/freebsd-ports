@@ -2,23 +2,24 @@
 # Date created:				4 July 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/agm/Makefile,v 1.5 2000/03/29 07:16:59 kris Exp $
+# $FreeBSD: ports/games/agm/Makefile,v 1.6 2000/04/14 00:45:22 mharo Exp $
 #
 
-PORTNAME=		agm
-PORTVERSION=		1.4
-CATEGORIES=		games
-MASTER_SITES=		${MASTER_SITE_SUNSITE} \
-			http://users.gtn.net/fraserm/
-MASTER_SITE_SUBDIR=	games/amusements
+PORTNAME=	agm
+PORTVERSION=	1.4
+CATEGORIES=	games
+MASTER_SITES=	http://users.gtn.net/fraserm/
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-MAN6=			agm.6
+MAN6=		agm.6
+
+post-patch:
+	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/xagm
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/agm ${PREFIX}/bin
-	@ ${INSTALL_SCRIPT} ${WRKSRC}/xagm ${PREFIX}/bin
-	@ ${INSTALL_MAN} ${WRKSRC}/agm.6 ${PREFIX}/man/man6
+	${INSTALL_PROGRAM} ${WRKSRC}/agm ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/xagm ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/agm.6 ${PREFIX}/man/man6
 
 .include <bsd.port.mk>
