@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.47 2003/01/01 11:45:25 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.48 2003/02/10 07:59:22 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -32,7 +32,8 @@
 #	clean-for-cdrom-list, clean-restricted-list,
 #	configure, deinstall,
 #	depend, depends, describe, extract, fetch, fetch-list, ignorelist,
-#	install, makesum, package, readmes, realinstall, reinstall, tags
+#	install, maintainer, makesum, package, readmes, realinstall, reinstall,
+#	tags
 #
 #	search:
 #		Search for ports using either 'make search key=<keyword>'
@@ -89,6 +90,7 @@ TARGETS+=	fetch
 TARGETS+=	fetch-list
 TARGETS+=	ignorelist
 TARGETS+=	makesum
+TARGETS+=	maintainer
 TARGETS+=	package
 TARGETS+=	realinstall
 TARGETS+=	reinstall
@@ -133,7 +135,9 @@ _SUBDIRUSE: .USE
 			DIRPRFX=${DIRPRFX}$$edir/; \
 	fi
 
-${SUBDIR}:: ${SUBDIR:S/$/.all/}
+.for _subdir in ${SUBDIR}
+${_subdir}::   ${_subdir:S/$/.all/}
+.endfor
 
 .endif
 
