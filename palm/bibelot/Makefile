@@ -3,7 +3,7 @@
 # Date created:		Jan 8, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/bibelot/Makefile,v 1.4 2001/03/03 13:09:12 ijliao Exp $
+# $FreeBSD: ports/palm/bibelot/Makefile,v 1.5 2001/04/03 04:59:46 ijliao Exp $
 #
 
 PORTNAME=	bibelot
@@ -20,6 +20,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	yes
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.pl ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/${PORTNAME}.pl ${PREFIX}/bin/${PORTNAME}
 
 .include <bsd.port.mk>
