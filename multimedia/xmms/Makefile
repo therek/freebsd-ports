@@ -2,11 +2,12 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.20 2000/08/11 13:09:07 sobomax Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.21 2000/09/22 06:21:48 sobomax Exp $
 #
 
 PORTNAME=	xmms
 PORTVERSION=	1.2.3
+PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.xmms.org/xmms/1.2.x/ \
 		ftp://ftp.uk.xmms.org/xmms/1.2.x/ \
