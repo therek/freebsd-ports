@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-racc/Makefile,v 1.26 2001/08/12 05:45:22 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	racc
-PORTVERSION=	1.3.11
+PORTVERSION=	1.3.12
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.loveruby.net/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
