@@ -2,11 +2,11 @@
 # Date created:		28 May 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/p5-XML-LibXML/Makefile,v 1.1 2001/05/29 10:40:48 ijliao Exp $
 #
 
 PORTNAME=	XML-LibXML
-PORTVERSION=	0.91
+PORTVERSION=	0.92
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
