@@ -2,7 +2,7 @@
 # Date created:				23 February 2000
 # Whom:					rbt
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.1 2000/06/09 05:40:08 will Exp $
+# $FreeBSD: ports/audio/pimp3/Makefile,v 1.2 2000/09/07 23:10:12 fenner Exp $
 #
 
 PORTNAME=	pimp3
@@ -12,12 +12,12 @@ MASTER_SITES=	ftp://pimp3.sourceforge.net/pub/pimp3/
 
 MAINTAINER=	rbt@zort.on.ca
 
-BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 
 WRKSRC=		${WRKDIR}/pimp3
 
 NO_BUILD=	yes
+USE_PYTHON=	yes
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/*.py ${PREFIX}/bin/
