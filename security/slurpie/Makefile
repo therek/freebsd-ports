@@ -3,7 +3,7 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/slurpie/Makefile,v 1.2 2000/04/09 18:30:28 cpiazza Exp $
+# $FreeBSD: ports/security/slurpie/Makefile,v 1.3 2000/04/21 08:18:57 mharo Exp $
 #
 
 PORTNAME=	slurpie
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
 
-NO_PACKAGE=	"links against crypt() [thus is crypto in package form]"
+NO_PACKAGE=	"links against crypt\(\) [thus is crypto in package form]"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/slurp ${PREFIX}/sbin
