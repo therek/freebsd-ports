@@ -2,7 +2,7 @@
 # Date created:                      4 Apr 1996
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/converters/btoa/Makefile,v 1.9 2000/06/09 21:58:51 asami Exp $
+# $FreeBSD: ports/converters/btoa/Makefile,v 1.10 2001/02/14 05:42:04 lioux Exp $
 #
 
 PORTNAME=	btoa
@@ -14,8 +14,6 @@ DISTNAME=	btoa-5.2
 
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	btoa-5.2-patch1.gz
-
-MAINTAINER=	bjn@visi.com
 
 MAKE_FLAGS=	DESTDIR=${PREFIX} -f
 MAKEFILE=	Makefile.sun
