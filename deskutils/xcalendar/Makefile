@@ -2,11 +2,11 @@
 # Date created:		25 June 1996
 # Whom:			MITA Yoshio <mita@iis.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/deskutils/xcalendar/Makefile,v 1.1 2001/03/16 02:37:16 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcalendar
-PORTVERSION=	4.0
+PORTVERSION=	4.0.2002
 CATEGORIES=	deskutils
 MASTER_SITES=	ftp://daemon.jp.FreeBSD.org/pub/FreeBSD-jp/ports-jp/LOCAL_PORTS/
 DISTNAME=	${PORTNAME}-${PORTVERSION}+i18n
