@@ -2,11 +2,11 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.17 2000/11/23 13:49:51 cjh Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.18 2001/01/20 15:06:14 cjh Exp $
 #
 
 PORTNAME=	ami
-PORTVERSION=	1.0.8
+PORTVERSION=	1.0.9
 #PORTREVISION=	1
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/ \
