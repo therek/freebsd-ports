@@ -2,11 +2,12 @@
 # Date created:		9 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-sablot/Makefile,v 1.1 2001/03/09 16:08:48 knu Exp $
+# $FreeBSD: ports/textproc/ruby-sablot/Makefile,v 1.2 2001/03/12 13:03:29 knu Exp $
 #
 
 PORTNAME=	sablot
 PORTVERSION=	0.4.0
+PORTREVISION=	1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.inac.co.jp/~maki/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -14,7 +15,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	sablot.51:${PORTSDIR}/textproc/sablotron
+LIB_DEPENDS=	sablot.52:${PORTSDIR}/textproc/sablotron
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
