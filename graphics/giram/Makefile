@@ -2,11 +2,11 @@
 # Date created:        17 June 1999
 # Whom:                Brandon Fosdick <bfoz@glue.umd.edu>
 #
-# $FreeBSD: ports/graphics/giram/Makefile,v 1.3 2000/03/04 13:34:29 jedgar Exp $
+# $FreeBSD: ports/graphics/giram/Makefile,v 1.4 2000/04/14 10:46:01 asami Exp $
 #
 
 PORTNAME=	giram
-PORTVERSION=	0.1.5
+PORTVERSION=	0.1.6
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.giram.org/pub/
 DISTNAME=	Giram-${PORTVERSION}
