@@ -2,7 +2,7 @@
 # Date created:		09 Feb 1995
 # Whom:			gpalmer
 #
-# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.28 2001/02/20 16:50:53 vanilla Exp $
+# $FreeBSD: ports/lang/smalltalk/Makefile,v 1.29 2001/03/07 22:42:42 olgeni Exp $
 #
 
 PORTNAME=	smalltalk
@@ -34,6 +34,6 @@ pre-patch:
 		 s|\@MAKEINFO\@|\@MAKEINFO\@ --no-split|g'
 
 post-install:
-	${INSTALL_DATA} ${WRKSRC}/libgst/libgst.a ${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/libgst/.libs/libgst.a ${PREFIX}/lib
 
 .include <bsd.port.mk>
