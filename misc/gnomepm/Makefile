@@ -2,11 +2,11 @@
 # Date created:				16 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/gnomepm/Makefile,v 1.2 2000/09/19 06:59:28 sobomax Exp $
+# $FreeBSD: ports/misc/gnomepm/Makefile,v 1.3 2000/10/05 07:17:05 reg Exp $
 #
 
 PORTNAME=	gnomepm
-PORTVERSION=	0.9.1
+PORTVERSION=	0.9.2
 CATEGORIES=	misc gnome
 MASTER_SITES=	http://www.geocities.com/lordzephyroth/
 DISTNAME=	${PORTNAME:S/gnome/gnome-/}-${PORTVERSION}
