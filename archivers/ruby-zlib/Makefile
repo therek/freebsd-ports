@@ -2,7 +2,7 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.7 2000/09/26 22:01:12 knu Exp $
+# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.8 2001/05/06 14:05:06 knu Exp $
 #
 
 PORTNAME=	zlib
@@ -24,7 +24,10 @@ DOCS_EN=	ChangeLog zlib.en.html
 DOCS_JA=	zlib.ja.html
 
 post-patch:
-	${RUBY} -i -pe 'sub /\bNORETURN\b/, ""' ${WRKSRC}/zlib.c
+	${RUBY} -i -p \
+		-e 'gsub /\bNORETURN\b/, ""' \
+		-e 'gsub /\bstr2cstr\b/, "rb_str2cstr"' \
+		 ${WRKSRC}/zlib.c
 
 post-install:
 .if !defined(NOPORTDOCS)
