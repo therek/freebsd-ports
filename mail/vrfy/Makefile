@@ -2,7 +2,7 @@
 # Date created:				2000/09/09
 # Whom:					kaz
 #
-# $FreeBSD: ports/mail/vrfy/Makefile,v 1.1 2000/09/17 22:45:01 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vrfy
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	kaz@kobe1995.net
+COMMENT=	Verify mail address
 
 WRKSRC=		${WRKDIR}
 MAN1=		vrfy.1

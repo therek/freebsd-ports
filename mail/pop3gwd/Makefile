@@ -3,7 +3,7 @@
 # Whom:					jonny@jonny.eng.br
 #
 # $OpenBSD: Makefile,v 1.9 2000/10/23 16:08:13 espie Exp $
-# $FreeBSD: ports/mail/pop3gwd/Makefile,v 1.1 2000/10/28 03:06:48 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pop3gwd
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.go.dlr.de/linux/src/			\
 		ftp://ftp.win.ne.jp/pub/network/mail/pop/
 
 MAINTAINER=	jonny@jonny.eng.br
+COMMENT=	App-level proxy for Mail retrieval behind Firewalls
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 

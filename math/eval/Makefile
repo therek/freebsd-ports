@@ -2,7 +2,7 @@
 # Date created:         24 Sep 1997
 # Whom:                 eserte
 #
-# $FreeBSD: ports/math/eval/Makefile,v 1.5 1999/08/28 01:57:37 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	eval
@@ -14,6 +14,7 @@ DISTNAME=	Eval${PORTVERSION}
 EXTRACT_SUFX=	.lha
 
 MAINTAINER=	eserte@cs.tu-berlin.de
+COMMENT=	A full featured floating point expression evaluator
 
 BUILD_DEPENDS=	lha:${PORTSDIR}/archivers/lha
 

@@ -2,7 +2,7 @@
 # Date Created:				Aug 14 1997
 # Whom:					Sander Vesik <sander@haldjas.folklore.ee>
 #
-# $FreeBSD: ports/math/p5-MatrixReal/Makefile,v 1.7 2000/04/23 12:24:49 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	MatrixReal
 PORTVERSION=	1.3a5
@@ -13,6 +13,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Math-${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	sander@haldjas.folklore.ee
+COMMENT=	A perl module implementing a Matrix of Reals
 
 PERL_CONFIGURE=	YES
 

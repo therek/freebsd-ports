@@ -2,7 +2,7 @@
 # Date created:		6 August 1999
 # Whom:			arensb@ooblick.com
 #
-# $FreeBSD: ports/mail/gensig/Makefile,v 1.3 2000/04/21 07:15:20 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gensig
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.geekthing.com/~robf/ware/gensig/ \
 		http://www.ooblick.com/software/gensig/
 
 MAINTAINER=	arensb+freebsd-ports@ooblick.com
+COMMENT=	A random .signature generator
 
 GNU_CONFIGURE=	yes
 

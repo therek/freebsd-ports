@@ -2,7 +2,7 @@
 # Date created:		February 7, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/math/p5-Set-IntSpan/Makefile,v 1.5 2000/05/21 11:52:05 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Set-IntSpan
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Set
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	croyle@gelemna.org
+COMMENT=	Manages sets of integers
 
 PERL_CONFIGURE=	yes
 

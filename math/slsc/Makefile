@@ -2,7 +2,7 @@
 # Date created:			6 January 2000
 # Whom:				Jonathan McDowell <noodles@earth.li>
 #
-# $FreeBSD: ports/math/slsc/Makefile,v 1.1 2000/01/29 06:23:20 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slsc
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://space.mit.edu/pub/davis/slsc/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	noodles@earth.li
+COMMENT=	A enhanced slang-based version of the sc spreadsheet program
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 

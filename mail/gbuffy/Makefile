@@ -2,7 +2,7 @@
 # Date created:		2 October 1999
 # Whom:			rasmus@kaj.se
 #
-# $FreeBSD: ports/mail/gbuffy/Makefile,v 1.7 2001/02/05 15:10:36 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gbuffy
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.fiction.net/blong/programs/gbuffy/
 
 MAINTAINER=	rasmus@kaj.se
+COMMENT=	A GTK+ multiple mailbox "biff" program
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		compface.1:${PORTSDIR}/mail/faces

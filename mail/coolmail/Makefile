@@ -2,7 +2,7 @@
 # Date created:			Mon  6 Jul 12:00:06 CEST 1998
 # Whom:				Udo Schweigert <ust@cert.siemens.de>
 #
-# $FreeBSD: ports/mail/coolmail/Makefile,v 1.7 2000/04/13 19:59:27 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coolmail
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=system/mail/biffs
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ust@cert.siemens.de
+COMMENT=	A Xbiff like mail tool with animated 3D graphics
 
 USE_XLIB=	yes
 PATCH_STRIP=	-p1

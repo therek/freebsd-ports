@@ -2,7 +2,7 @@
 # Date created:                         15 March 2001
 # Whom:                                 -
 #
-# $FreeBSD: ports/mail/p5-MIME-Types/Makefile,v 1.1 2001/05/02 05:54:04 dburr Exp $
+# $FreeBSD$
 
 PORTNAME=		MIME-Types
 PORTVERSION=		0.04
@@ -12,6 +12,7 @@ MASTER_SITE_SUBDIR=	MIME
 PKGNAMEPREFIX=		p5-
 
 MAINTAINER=		killer@prosalg.no
+COMMENT=	MIME-Types is a Perl extension for determining MIME types
 
 NO_WRKSUBDIR=		YES
 PERL_CONFIGURE=		YES

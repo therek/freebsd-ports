@@ -2,7 +2,7 @@
 # Date Created: 			18 May 2000
 # Whom: 				Guy Antony Halse <guy@rucus.ru.za.za>
 #
-# $FreeBSD: ports/mail/p5-Mail-Ezmlm/Makefile,v 1.2 2001/02/05 15:10:58 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mail-Ezmlm
@@ -15,6 +15,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Ezmlm-${PORTVERSION}
 
 MAINTAINER=	guy-ezmlm@rucus.ru.ac.za
+COMMENT=	Perl module to allow object methods for ezmlm-idx mailing lists
 
 BUILD_DEPENDS=	${EZMLM_DIR}/bin/ezmlm-idx:${PORTSDIR}/mail/ezmlm-idx
 

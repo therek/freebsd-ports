@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1998
 # Whom:			Marijn Meijles <marijn@stack.nl>
 #
-# $FreeBSD: ports/mail/sigrot/Makefile,v 1.3 2000/04/13 20:00:47 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sigrot
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	system/mail/misc
 DISTNAME=	${PORTNAME}_v${PORTVERSION}
 
 MAINTAINER=	marijn@stack.nl
+COMMENT=	Util to rotate your mail/news signature
 
 MAN1=		sigrot.1
 

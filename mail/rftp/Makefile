@@ -2,7 +2,7 @@
 # Date created:			13 Dec, 1997
 # Whom:				kline
 #
-# $FreeBSD: ports/mail/rftp/Makefile,v 1.6 2001/02/05 15:11:08 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rftp
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://muuz.deadbbs.com/FreeBSD/rftp/
 
 MAINTAINER=	kline@thought.org
+COMMENT=	Automatically reconstruct ftpmail- or bitftp-retrieved files
 
 MAN1=		rftp.1 uucat.1
 

@@ -2,7 +2,7 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/math/fftw/Makefile,v 1.10 2000/06/16 10:37:36 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fftw
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.fftw.org/pub/fftw/ \
 		ftp://pm.cse.rmit.edu.au/pub/dsp/fftw/
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
+COMMENT=	Fast C routines to compute the Discrete Fourier Transform
 
 .include <bsd.port.pre.mk>
 

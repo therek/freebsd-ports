@@ -2,7 +2,7 @@
 # Date created:        21 September 1999
 # Whom:                jsellens
 #
-# $FreeBSD: ports/mail/biffer/Makefile,v 1.3 2000/10/08 10:21:56 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	biffer
@@ -11,6 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 
 MAINTAINER=	jsellens@generalconcepts.com
+COMMENT=	A better mail notification server
 
 RUN_DEPENDS=	xmsg:${PORTSDIR}/x11/xmsg
 
