@@ -1,12 +1,12 @@
 # New ports collection makefile for:	KMud
-# Version required:	0.3
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kmud/Makefile,v 1.1.1.1 2000/03/23 03:32:48 will Exp $
 #
 
-DISTNAME=	kmud-0.3
+PORTNAME=	kmud
+PORTVERSION=	0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.kmud.de/pub/kmud/
 

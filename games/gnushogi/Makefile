@@ -1,16 +1,16 @@
 # New ports collection makefile for:   gnushogi
-# Version required:    1.2p03
 # Date created:        9 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/games/gnushogi/Makefile,v 1.6 1999/08/27 21:13:54 mharo Exp $
+# $FreeBSD: ports/games/gnushogi/Makefile,v 1.7 2000/01/07 02:25:56 nakai Exp $
 #
 
-DISTNAME=	gnushogi-1.2p03
-PKGNAME=	gnushogi-1.2.3
+PORTNAME=	gnushogi
+PORTVERSION=	1.2.3
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gnushogi
+DISTNAME=	gnushogi-1.2p03
 
 MAINTAINER=	nakai@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    klondike
-# Version required:     1.8
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/klondike/Makefile,v 1.8 1999/08/25 06:03:52 obrien Exp $
+# $FreeBSD: ports/games/klondike/Makefile,v 1.9 1999/11/05 17:32:15 jseger Exp $
 #
 
-DISTNAME=       klondike-1.9
+PORTNAME=	klondike
+PORTVERSION=	1.9
 CATEGORIES=     games tk82
 MASTER_SITES=   http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	krubik
-# Version required:			1.06
 # Date created:				23 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/games/krubik/Makefile,v 1.2 1999/12/10 20:56:51 imura Exp $
+# $FreeBSD: ports/games/krubik/Makefile,v 1.3 2000/02/24 07:00:54 asami Exp $
 #
 
-DISTNAME=	krubik-1.06
+PORTNAME=	krubik
+PORTVERSION=	1.06
 CATEGORIES=	games kde
 MASTER_SITES=	http://www.phys.uu.nl/~eendebak/kde/
 

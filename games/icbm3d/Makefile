@@ -1,15 +1,15 @@
 # New ports collection makefile for:	icbm3d
-# Version required:			0.4
 # Date created:				20 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/icbm3d/Makefile,v 1.6 2000/03/29 07:17:18 kris Exp $
+# $FreeBSD: ports/games/icbm3d/Makefile,v 1.7 2000/04/02 00:58:37 mharo Exp $
 #
 
-DISTNAME=	icbm3d.0.4
-PKGNAME=	icbm3d-0.4
+PORTNAME=	icbm3d
+PORTVERSION=	0.4
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/icbm3d/
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   gtkabale
-# Version required:    0.3
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gtkabale/Makefile,v 1.1.1.1 2000/01/31 04:09:08 nakai Exp $
+# $FreeBSD: ports/games/gtkabale/Makefile,v 1.2 2000/02/12 15:20:36 nakai Exp $
 #
 
-DISTNAME=	gtkabale-0.3
+PORTNAME=	gtkabale
+PORTVERSION=	0.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.seindal.dk/pub/rene/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtkballs
-# Version required:			1.04
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gtkballs/Makefile,v 1.7 2000/03/29 07:18:03 kris Exp $
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.8 2000/04/02 00:58:30 mharo Exp $
 #
 
-DISTNAME=	gtkballs-1.04
+PORTNAME=	gtkballs
+PORTVERSION=	1.04
 CATEGORIES=	games
 MASTER_SITES=	ftp://lucifer.dorms.spbu.ru/pub/Linux/games/ \
 		http://lucifer.dorms.spbu.ru/gtkballs/ \

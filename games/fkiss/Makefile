@@ -2,14 +2,14 @@
 # Date created:		31 Oct 1998
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/games/fkiss/Makefile,v 1.8 1999/08/31 06:44:14 mharo Exp $
+# $FreeBSD: ports/games/fkiss/Makefile,v 1.9 2000/04/14 06:42:51 mharo Exp $
 #
 
 PORTNAME=	fkiss
 PORTVERSION=	0.28
 CATEGORIES=	games
 MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/fkiss/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 
 MAINTAINER=	flathill@FreeBSD.org
 

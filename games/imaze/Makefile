@@ -1,13 +1,12 @@
 # New ports collection makefile for:    imaze
-# Version required:	1.3
 # Date created:         27. April 1996
 # Whom:                 Ronald Kuehn <kuehn@rz.tu-clausthal.de>
 #
-# $FreeBSD: ports/games/imaze/Makefile,v 1.16 1999/08/25 06:03:45 obrien Exp $
+# $FreeBSD: ports/games/imaze/Makefile,v 1.17 1999/08/27 21:13:55 mharo Exp $
 #
 
-DISTNAME=       imaze
-PKGNAME=	imaze-1.3
+PKGNAME=	imaze
+PORTVERSION=	1.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.tu-clausthal.de/pub/unix/games/imaze/ \
 		ftp://ftp.tu-clausthal.de/pub/unix/games/imaze/sounds/

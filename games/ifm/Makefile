@@ -1,13 +1,12 @@
 # New ports collection makefile for:	ifm
-# Version required:			3.0
 # Date created:				Mon Oct 12 12:32:07 EDT 1998
 # Whom:					Dave Chapeskie <dchapes@ddm.on.ca>
 #
-# $FreeBSD: ports/games/ifm/Makefile,v 1.3 1999/08/25 06:03:44 obrien Exp $
+# $FreeBSD: ports/games/ifm/Makefile,v 1.4 1999/11/28 18:31:08 steve Exp $
 #
 
-DISTNAME=	ifm41
-PKGNAME=	ifm-4.1
+PKGNAME=	ifm
+PORTVERSION=	4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.gmd.de/if-archive/mapping-tools/
 MASTER_SITES=	ftp://ftp.gmd.de/if-archive/mapping-tools/ \
@@ -16,6 +15,7 @@ MASTER_SITES=	ftp://ftp.gmd.de/if-archive/mapping-tools/ \
 		ftp://ftp.funet.fi/pub/misc/if-archive/mapping-tools/ \
 		ftp://mirror.aarnet.edu.au/pub/if-archive/mapping-tools/ \
 		ftp://ftp.nodomainname.net/pub/mirrors/if-archive/mapping-tools/
+DISTNAME=	ifm41
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dchapes@ddm.on.ca

@@ -1,11 +1,11 @@
 # New ports collection makefile for:	gtetrinet
-# Version required:			0.4
 # Date created:				27 Feb 2000
 # Whom:					Dan Papasian <bugg@bugg.strangled.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/gtetrinet/Makefile,v 1.1 2000/03/06 23:31:20 cpiazza Exp $
 
-DISTNAME=	gtetrinet-0.4
+PORTNAME=	gtetrinet
+PORTVERSION=	0.4
 CATEGORIES=	games
 MASTER_SITES=	http://gtetrinet.netpedia.net/cgi-bin/download.cgi/
 

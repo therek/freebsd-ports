@@ -1,15 +1,15 @@
 # New ports collection makefile for:    golddig
-# Version required:     2
 # Date created:         20 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/golddig/Makefile,v 1.10 1999/08/25 06:03:40 obrien Exp $
+# $FreeBSD: ports/games/golddig/Makefile,v 1.11 1999/08/28 02:41:47 mharo Exp $
 #
 
-DISTNAME=	golddig2
-PKGNAME=	golddig-2.0
+PORTNAME=	golddig
+PORTVERSION=	2.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://qiclab.scn.rain.com/pub/games/
+DISTNAME=	golddig2
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org

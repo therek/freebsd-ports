@@ -1,16 +1,16 @@
 # New ports collection makefile for:	gnomegames
-# Version required:			1.0.51
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/games/gnomegames/Makefile,v 1.20 1999/12/04 19:07:53 steve Exp $
+# $FreeBSD: ports/games/gnomegames/Makefile,v 1.21 2000/01/07 02:05:56 nakai Exp $
 #
 
-DISTNAME=	gnome-games-1.0.51
-PKGNAME=	gnomegames-1.0.51
+PORTNAME=	gnomegames
+PORTVERSION=	1.0.51
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-games
+DISTNAME=	gnome-games-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
