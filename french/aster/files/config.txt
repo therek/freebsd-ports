@@ -1,5 +1,5 @@
 # Configuration file
-# $FreeBSD$
+# $FreeBSD: ports/french/aster/files/config.txt,v 1.1 2003/07/25 17:27:33 oliver Exp $
 #
 # Fields are separated by a "|" (the space is significative)
 #
@@ -49,7 +49,7 @@ OPTC_O | cc   | ?   | -c CFLAGS -DP_LINUX
 F77 | f77 | ? | %%F77%%
 #
 OPTF_D | f90  | ?   | -c -g
-OPTF_O | f90  | ?   | -c -O2
+OPTF_O | f90  | ?   | -c FFLAGS
 #
 G77_AGLA | g77  | ?   | %%F77%%
 #
