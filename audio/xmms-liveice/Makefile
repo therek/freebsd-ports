@@ -2,7 +2,7 @@
 # Date created:			5 Febrary 2000
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms-liveice/Makefile,v 1.2 2000/02/10 06:41:05 cpiazza Exp $
+# $FreeBSD: ports/audio/xmms-liveice/Makefile,v 1.3 2000/04/08 21:24:57 mharo Exp $
 #
 
 PORTNAME=	xmms-liveice
