@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.59 2000/09/20 17:05:54 sobomax Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.60 2000/10/10 23:53:53 obrien Exp $
 #
 
     SUBDIR += aftp
@@ -44,6 +44,7 @@
     SUBDIR += vgb-bin
     SUBDIR += vice
     SUBDIR += vMac
+    SUBDIR += visualos
     SUBDIR += vmsbackup
     SUBDIR += vmware
     SUBDIR += vmware-tools
