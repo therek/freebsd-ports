@@ -4,7 +4,7 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:59 wiz Exp $
-# $FreeBSD: ports/audio/festogi-spanish/Makefile,v 1.1 2000/09/16 08:39:43 will Exp $
+# $FreeBSD: ports/audio/festogi-spanish/Makefile,v 1.2 2000/10/02 05:38:44 trevor Exp $
 #
 
 PORTNAME=	festogi-spanish
@@ -16,7 +16,7 @@ DIST_SUBDIR=	festival
 
 MAINTAINER=	trevor@FreeBSD.org
 
-RUN_DEPENDS=	festival:../festival
+RUN_DEPENDS=	festival:${.CURDIR}/../festival
 
 RESTRICTED=	no-commercial-use
 
