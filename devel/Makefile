@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.391 2001/01/03 23:15:07 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.392 2001/01/03 23:15:44 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -213,6 +213,7 @@
     SUBDIR += p5-Algorithm-Diff
     SUBDIR += p5-Algorithm-MDiff
     SUBDIR += p5-Algorithm-MarkovChain
+    SUBDIR += p5-Algorithm-Permute
     SUBDIR += p5-Alias
     SUBDIR += p5-AppConfig
     SUBDIR += p5-B-Graph
