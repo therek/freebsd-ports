@@ -2,12 +2,11 @@
 # Date created:				17 April 2001
 # Whom:					ianf@za.uu.net
 #
-# $FreeBSD: ports/mail/popd/Makefile,v 1.2 2001/05/25 08:32:22 markm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	popd
-PORTVERSION=	1.03
-PORTREVISION=	1
+PORTVERSION=	2.0
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp3.za.freebsd.org/pub/popd/
 
@@ -15,10 +14,10 @@ MAINTAINER=	ianf@za.uu.net
 
 MAN8=   popd.8
 
-do-build:
-	cd ${WRKSRC}; make -DNOMANCOMPRESS
+INSTALLS_SHLIB=	yes
+NOMANCOMPRESS=	yes
 
-do-install:
-	cd ${WRKSRC}; make -DNOMANCOMPRESS BINDIR=${PREFIX}/libexec MANDIR=${PREFIX}/man/man install
+post-extract:
+	${MV} ${WRKSRC}/src/popd.8 ${WRKSRC}/src/popd.mdoc
 
 .include <bsd.port.mk>
