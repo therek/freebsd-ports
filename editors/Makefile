@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.141 2001/03/17 16:33:25 vanilla Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.142 2001/03/27 15:45:12 ijliao Exp $
 #
 
     SUBDIR += AbiWord
@@ -15,6 +15,7 @@
     SUBDIR += biew
     SUBDIR += bitmap-emacs20
     SUBDIR += bitmap-mule
+    SUBDIR += boiling-egg
     SUBDIR += bpatch
     SUBDIR += bvi
     SUBDIR += chexedit
