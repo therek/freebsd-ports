@@ -2,27 +2,21 @@
 # Date created:				Jan 8, 2001
 # Whom:					Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11/xdialog/Makefile,v 1.1 2001/01/08 23:26:48 vanilla Exp $
+# $FreeBSD: ports/x11/xdialog/Makefile,v 1.2 2001/01/09 20:41:40 vanilla Exp $
 #
 
 PORTNAME=	xdialog
-PORTVERSION=	1.5.0
+PORTVERSION=	1.5.1
 CATEGORIES=	x11
 MASTER_SITES=	http://xdialog.free.fr/
 DISTNAME=	${PORTNAME:S/x/X/}-${PORTVERSION}
 
-MAINTAINER=	ijliao@csie.nctu.edu.tw
+MAINTAINER=	ijliao@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-
-.if defined(NOPORTDOCS)
-NODOCS=	"@comment "
-.endif
-
-PLIST_SUB=	NOPORTDOCS=${NODOCS}
 
 .if !defined(NOPORTDOCS)
 post-install:
