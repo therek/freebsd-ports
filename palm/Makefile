@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.17 2000/03/31 05:17:35 kuriyama Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.18 2000/05/06 18:54:24 dirk Exp $
 #
 
     SUBDIR += coldsync
@@ -6,6 +6,7 @@
     SUBDIR += gnomepilot-conduits
     SUBDIR += imgvtopgm
     SUBDIR += isilo
+    SUBDIR += jconv
     SUBDIR += jpilot
     SUBDIR += kpilot
     SUBDIR += malsync
