@@ -2,12 +2,12 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.13 2000/05/26 05:42:51 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.14 2000/06/03 07:27:10 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
-#PORTVERSION=	2.0.1.546	# 2.0.1 beta
+#PORTVERSION=	2.0.1.559	# 2.0.1 RC2
 PORTVERSION=	2.0.476
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
@@ -19,9 +19,11 @@ MASTER_SITES=	http://www4.vmware.com/software/ \
 		ftp://mirror.aarnet.edu.au/pub/vmware/software/
 DISTNAME=	VMware-${PORTVERSION:R}-${PORTVERSION:E}
 
-PATCH_SITES=	http://www.mindspring.com/~vsilyaev/vmware/files/ \
+PATCH_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/knu/ \
+		http://www.mindspring.com/~vsilyaev/vmware/files/ \
 		ftp://mirror.aarnet.edu.au/pub/vmware/freebsd/ \
 		http://mirror.aarnet.edu.au/pub/vmware/freebsd/
+#PATCHFILES=	vmmon-freebsd-0.95.1.tar.gz \
 PATCHFILES=	vmmon-freebsd-0.95.tar.gz \
 		vmnet-freebsd-0.11.tar.gz
 

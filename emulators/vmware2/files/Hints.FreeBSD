@@ -1,4 +1,4 @@
-$FreeBSD: ports/emulators/vmware2/files/Hints.FreeBSD,v 1.4 2000/04/17 04:23:23 knu Exp $
+$FreeBSD: ports/emulators/vmware2/files/Hints.FreeBSD,v 1.5 2000/06/08 20:09:52 knu Exp $
 
 Here is a list of some useful hints on using VMware on FreeBSD.
 
@@ -7,6 +7,10 @@ Here is a list of some useful hints on using VMware on FreeBSD.
 - Full screen graphics mode will work, but you have to be careful e.g.
 when running a DOS prompt on MS Windows.  Hitting Alt+Enter will crash
 VMware before you can say "Chuck!"
+
+- Running VMware as root is NOT the right way to do it.  Edit
+/etc/fbtab to obtain the proper permission for the device files that
+you are going to access, then run VMware as a normal user.
 
 - Raw disk may not work.  Use virtual or plain disk instead.
 
