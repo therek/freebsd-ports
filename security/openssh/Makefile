@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.22 1999/11/23 03:04:05 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.23 1999/11/24 03:36:14 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -22,7 +22,6 @@ RESTRICTED=	"Links with cryptographic code."
 CAT?=		/bin/cat
 DISTFILES!=	${CAT} ${FILESDIR}/distfiles
 
-CFLAGS+=	-DHAVE_OPENPTY -I${PREFIX}/include
 CVS_CMD?=	cvs -z3
 CVS_DATE=	Tue Nov 23 18:52:21 EST 1999
 SED?=		/usr/bin/sed
