@@ -3,15 +3,14 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.26 1999/08/31 03:00:07 peter Exp $
 #
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf
 PKGNAME=	fvwm95-i18n-2.0.43a
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/ \
+MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/ \
 		ftp://ftp.plig.org/pub/fvwm95/ \
-		ftp://ftp.terraware.net/pub/Mirrors/FVWM95/ \
 		ftp://ftp.freebsd.org/pub/FreeBSD/distfiles/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/CFAN/misc/fvwm95/ \
 		${MASTER_SITE_PORTS_JP} \
