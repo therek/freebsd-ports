@@ -3,7 +3,7 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.4 1999/08/31 02:42:43 peter Exp $
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.5 1999/11/29 21:03:26 jim Exp $
 #
 
 DISTNAME=	bluefish-0.3.4
@@ -14,7 +14,9 @@ MASTER_SITES=	http://bluefish.linuxbox.com/download/ \
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+RUN_DEPENDS=	weblint:${PORTSDIR}/www/weblint
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
+		gdk_imlib.5:${PORTSDIR}/graphics/imlib
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
