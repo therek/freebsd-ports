@@ -1,13 +1,13 @@
 # New ports collection makefile for:	nqc
-# Version required:    2.0.1
+# Version required:    2.0.2
 # Date created:        11 Aug 1999
 # Whom:                kbyanc
 #
-# $FreeBSD: ports/lang/nqc/Makefile,v 1.2 1999/08/25 06:35:03 obrien Exp $
+# $FreeBSD: ports/lang/nqc/Makefile,v 1.3 1999/10/10 23:30:18 steve Exp $
 #
 
-DISTNAME=	nqc_src_2_0_1
-PKGNAME=	nqc-2.0.1
+DISTNAME=	nqc_src_2_0_2
+PKGNAME=	nqc-2.0.2
 CATEGORIES=	lang
 MASTER_SITES=	http://www.enteract.com/~dbaum/nqc/release/
 
