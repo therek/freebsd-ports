@@ -1,10 +1,12 @@
-# $FreeBSD$
+# $FreeBSD: ports/graphics/hdf/files/hdf/src/Makefile,v 1.1 1999/11/14 02:32:05 steve Exp $
 
 LIB=df
 
 # uncomment the line below to avoid building static libraries
 #INTERNALLIB=YES
 LIBDIR=${PREFIX}/lib
+# comment out the line below to build the profile libs
+NOPROFILE=yes
 
 SHLIB_MAJOR=1
 SHLIB_MINOR=0
