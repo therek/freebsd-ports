@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.24 2000/10/29 13:56:21 jeh Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.25 2001/02/10 19:38:17 sf Exp $
 #
 
     SUBDIR += babel
@@ -7,6 +7,7 @@
     SUBDIR += clustalw
     SUBDIR += deft
     SUBDIR += emboss
+    SUBDIR += fasta
     SUBDIR += fastdnaml
     SUBDIR += gaussian98
     SUBDIR += gperiodic
