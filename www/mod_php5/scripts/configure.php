@@ -1,9 +1,11 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.122 2001/03/25 22:14:06 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.123 2001/04/11 22:49:42 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
 fi
+
+tempfile=`/usr/bin/mktemp -t checklist`
 
 if [ "${BATCH}" ]; then
 	set \"zlib\" \"MySQL\"
@@ -39,14 +41,14 @@ sockets		"sockets support" OFF \
 sysvsem		"System V semaphore support" OFF \
 sysvshm		"System V shared memory support" OFF \
 transsid	"Transparent session id" OFF \
-2> /tmp/checklist.tmp.$$
+2> $tempfile
 
 	retval=$?
 
-	if [ -s /tmp/checklist.tmp.$$ ]; then
-		set `cat /tmp/checklist.tmp.$$`
+	if [ -s $tempfile ]; then
+		set `cat $tempfile`
 	fi
-	rm -f /tmp/checklist.tmp.$$
+	rm -f $tempfile
 
 	case $retval in
 		0)	if [ -z "$*" ]; then
