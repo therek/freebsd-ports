@@ -2,21 +2,24 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.25 2000/10/08 04:00:10 asami Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.26 2000/11/02 14:46:14 taoka Exp $
 #
 
 PORTNAME=	yatex
-PORTVERSION=	${VERSION}
+PORTVERSION=	1.69.e
 CATEGORIES?=	print elisp
-MASTER_SITES=	http://www.yatex.org/
-DISTNAME=	${PORTNAME}${PORTVERSION}
+MASTER_SITES=	http://www.yatex.org/ \
+		http://www.gentei.org/~yuuji/tmp/
+DISTNAME=	${PORTNAME}${VERSION}
+#DISTNAME=	${PORTNAME}${PORTVERSION}
+WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
 
 PKGINSTALL=	${WRKDIR}/INSTALL
 PKGDEINSTALL=	${WRKDIR}/DEINSTALL
 PKGMESSAGE=	${WRKDIR}/MESSAGE
-VERSION=	1.67
+VERSION=	10103091216
 TARGETNAME=	YaTeX
 DIRSECTION=	The Emacs editor and associated tools
 EMACS_PORT_NAME?=emacs20
