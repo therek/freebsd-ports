@@ -3,7 +3,7 @@
 # Date created:			  10 Dec 1998
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/pgcc/Makefile,v 1.29 2000/11/11 05:43:58 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgcc
@@ -34,7 +34,7 @@ USE_BZIP2=	yes
 
 .include <bsd.port.pre.mk>
 
-GCC_REV=	p${DISTNAME}
+GCC_REV=	${PKGNAME}
 LIBSTDCPP_REV=	4
 
 .if ${PORTOBJFORMAT} == "elf"
@@ -62,17 +62,17 @@ MAN1=		cccp.1 pg++.1 pg77.1 pgcc.1
 pre-patch:
 	@${MV} ${WRKSRC}/gcc/config/i386/freebsd.h ${WRKSRC}/gcc/config/i386/freebsd-aout.h
 	@${MV} ${WRKSRC}/gcc/config/i386/freebsd-elf.h ${WRKSRC}/gcc/config/i386/freebsd.h
+	cd ${WRKSRC}/gcc; ${RM} -f gcc.info* cpp.info* f/g77.info*
 
 pre-configure:
 	@(MAJ=`sysctl -n kern.osreldate | ${SED} -e '/.....$$/s///'` ; \
 	${SED} -e "s:__FreeBSD__[0-9=]*:__FreeBSD__=$${MAJ}:" ${FILESDIR}/freebsd.h \
 		>${WRKSRC}/gcc/config/freebsd.h )
+
+pre-install:
 .if ${PORTOBJFORMAT} == "elf" && ${MACHINE_ARCH} == "i386"
 	@${SED} -e 's/^@comment ELF-only://' ${PKGDIR}/pkg-plist >${PLIST}
 .endif
-
-pre-install:
-	${MKDIR} ${PREFIX}/info
 
 post-install:
 	@${RM} -f ${PREFIX}/bin/c++
