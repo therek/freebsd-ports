@@ -3,13 +3,13 @@
 # Date created:        23 August 1999
 # Whom:                Alex Varju <varju@webct.com>
 #
-# $FreeBSD: ports/palm/jpilot/Makefile,v 1.7 1999/12/25 15:45:40 sumikawa Exp $
+# $FreeBSD: ports/palm/jpilot/Makefile,v 1.8 2000/03/05 13:57:18 sumikawa Exp $
 #
 # "?=" and "+=" are for including this Makefile from japanese/jpilot
 
 DISTNAME=	jpilot-0.98
 CATEGORIES=	palm comms
-MASTER_SITES=	http://jpilot.linuxbox.com/
+MASTER_SITES=	http://jpilot.linuxave.net/
 
 MAINTAINER?=	varju@webct.com
 
