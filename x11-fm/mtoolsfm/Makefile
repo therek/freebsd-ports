@@ -2,14 +2,14 @@
 # Date created:				12 Jan 2000
 # Whom:					Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/x11-fm/mtoolsfm/Makefile,v 1.9 2001/02/05 21:00:52 olgeni Exp $
+# $FreeBSD: ports/x11-fm/mtoolsfm/Makefile,v 1.10 2001/04/15 15:49:05 kevlo Exp $
 #
 
 PORTNAME=	mtoolsfm
-PORTVERSION=	1.8
+PORTVERSION=	1.9.2
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.core-coutainville.org/MToolsFM/archive/SOURCES/
-DISTNAME=	MToolsFM-${PORTVERSION}
+DISTNAME=	MToolsFM-${PORTVERSION:R}-${PORTVERSION:E}
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -21,7 +21,6 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--with-conffile="${PREFIX}/etc/mtoolsfm.conf" \
-		--with-mtoolsdir="${LOCALBASE}/bin" \
 		--disable-gtktest
 
 MAN1=		mtoolsfm.1
