@@ -2,7 +2,7 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.18 2000/06/09 22:14:41 will Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.19 2000/06/27 14:03:18 alex Exp $
 #
 
 PORTNAME=		vnc
@@ -13,7 +13,7 @@ DISTFILES=		vnc-3.3.3r1_unixsrc.tgz \
 			vnc-latest_doc.tgz
 EXTRACT_ONLY=		vnc-3.3.3r1_unixsrc.tgz
 
-MAINTAINER=	 	bmah@acm.org
+MAINTAINER=	 	bmah@freebsd.org
 
 USE_PERL5=		YES
 IGNOREFILES=		vnc-latest_doc.tgz
