@@ -2,11 +2,13 @@
 # Date created:				16 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.3 2000/10/27 09:24:08 sobomax Exp $
+# $FreeBSD: ports/www/mozilla-embedded/Makefile,v 1.4 2000/11/23 09:01:10 sobomax Exp $
 #
 
 PORTNAME=	mozilla-embedded
 PORTVERSION=	${MAKE} -V PORTVERSION -f ${MAINDIR}/${MAKEFILE}
+PORTREVISION=	${MAKE} -V PORTREVISION -f ${MAINDIR}/${MAKEFILE}
+PORTEPOCH=	${MAKE} -V PORTEPOCH -f ${MAINDIR}/${MAKEFILE}
 CATEGORIES=	www
 DISTFILES=
 
@@ -20,6 +22,8 @@ USE_X_PREFIX=	yes
 
 MAINDIR=	${.CURDIR}/../mozilla
 PORTVERSION!=	${PORTVERSION}
+PORTREVISION!=	${PORTREVISION}
+PORTEPOCH!=	${PORTEPOCH}
 RUN_DEPENDS!=	${RUN_DEPENDS}
 LIB_DEPENDS!=	${LIB_DEPENDS}
 WRKSRC=		${WRKDIRPREFIX}${MAINDIR}/work/mozilla
