@@ -2,7 +2,7 @@
 # Date created:         3 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/calc/Makefile,v 1.17 2001/02/07 23:34:14 jmz Exp $
+# $FreeBSD: ports/math/calc/Makefile,v 1.18 2001/07/08 02:11:42 jmz Exp $
 #
 
 PORTNAME=	calc
@@ -16,8 +16,5 @@ DISTNAME=	calc-2.11.5t4.4
 MAINTAINER=	jmz@FreeBSD.org
 
 MAN1=		calc.1
-
-pre-install:
-	@${MKDIR} ${PREFIX}/lib/calc/help
 
 .include <bsd.port.mk>
