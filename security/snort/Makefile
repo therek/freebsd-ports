@@ -3,7 +3,7 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.5 1999/12/22 10:56:28 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.6 2000/01/29 13:15:24 dirk Exp $
 #
 
 DISTNAME=	snort-1.5.1
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.clark.net/~roesch/ \
 MAINTAINER=	dirk@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+MAN8=		snort.8
 
 post-install:
 	${MKDIR} ${PREFIX}/share/snort
@@ -21,5 +22,6 @@ post-install:
           scan-lib snort-lib web-lib
 	${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/snort
 .endfor
+	${INSTALL_MAN} ${WRKSRC}/${MAN8} ${PREFIX}/man/man8
 
 .include <bsd.port.mk>
