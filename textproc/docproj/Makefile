@@ -2,7 +2,7 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.29 2001/07/13 12:09:12 nik Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.30 2001/07/13 16:39:11 nik Exp $
 #
 
 PORTNAME=	docproj
@@ -12,6 +12,9 @@ MASTER_SITES=	# empty
 DISTFILES=	# empty
 
 MAINTAINER=	nik@freebsd.org
+
+# This dependency list should be kept in sync with the list of
+# required ports in src/release/Makefile.inc.docports.
 
 RUN_DEPENDS=	instant:${PORTSDIR}/textproc/sgmlformat \
 		tidy:${PORTSDIR}/www/tidy \
