@@ -2,12 +2,12 @@
 # Date created:		02 Apr 2001
 # Whom:			olgeni@FreeBSD.org
 #
-# $FreeBSD: ports/devel/wedit/Makefile,v 1.1 2001/04/02 13:29:03 olgeni Exp $
+# $FreeBSD: ports/devel/wedit/Makefile,v 1.2 2001/04/14 19:47:41 olgeni Exp $
 #
 
 PORTNAME=	wedit
 PORTVERSION=	0.9.8
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	devel editors
 MASTER_SITES=	http://www.q-software-solutions.com/download/weditpub/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-libc6-src
