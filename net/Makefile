@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.525 2001/04/17 18:10:47 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.526 2001/04/19 10:58:05 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -259,6 +259,7 @@
     SUBDIR += pcnfsd
     SUBDIR += pdnsd
     SUBDIR += perldap
+    SUBDIR += pfinger
     SUBDIR += pipsecd
     SUBDIR += pmf
     SUBDIR += poptop
