@@ -3,7 +3,7 @@
 # Date created:			8 August 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gaddr/Makefile,v 1.3 1999/08/29 04:31:03 jim Exp $
+# $FreeBSD: ports/deskutils/gaddr/Makefile,v 1.4 1999/10/17 17:27:13 jim Exp $
 #
 
 DISTNAME=	gaddr-1.1.4
@@ -13,6 +13,9 @@ MASTER_SITES=	http://www.cse.unl.edu/~cluening/gaddr/
 MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+.if defined(USE_GNOME)
+LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
+.endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
