@@ -2,7 +2,7 @@
 # Date created:		28 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/devel/libvanessa_socket/Makefile,v 1.1 2001/05/20 03:58:49 will Exp $
+# $FreeBSD: ports/devel/libvanessa_socket/Makefile,v 1.2 2001/06/15 13:22:38 kevlo Exp $
 #
 
 PORTNAME=	libvanessa_socket
@@ -18,7 +18,8 @@ DISTNAME=	vanessa_socket-${PORTVERSION}
 
 MAINTAINER=	kkonstan@daemon.gr
 
-LIB_DEPENDS=	vanessa_logger.0:${PORTSDIR}/devel/libvanessa_logger
+LIB_DEPENDS=	vanessa_logger.0:${PORTSDIR}/devel/libvanessa_logger \
+		popt.0:${PORTSDIR}/devel/popt
 
 MAN1=		vanessa_socket_pipe.1
 
