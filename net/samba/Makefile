@@ -3,7 +3,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.42 1999/08/30 14:24:07 peter Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.43 1999/11/17 15:52:11 hosokawa Exp $
 #
 
 DISTNAME=	samba-2.0.6
@@ -31,7 +31,7 @@ STARTUP_SCRIPT=	${PREFIX}/etc/rc.d/samba.sh.sample
 SAMPLE_CONFIG=	${SAMBA_CONFDIR}/smb.conf.default
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=${PREFIX} --libdir=${SAMBA_CONFDIR} \
+CONFIGURE_ARGS=	 --libdir=${SAMBA_CONFDIR} \
 		--localstatedir=${VARDIR} --with-swatdir=${PREFIX}/share/swat \
 		--with-lockdir=${VARDIR}/spool/lock --with-privatedir=${SAMBA_PRIVATE}
 

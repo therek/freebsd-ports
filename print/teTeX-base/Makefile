@@ -3,7 +3,7 @@
 # Date created:		5 December 1996
 # Whom:			Bernd Rosauer <br@netland.inka.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/teTeX/Makefile,v 1.34 1999/08/31 01:45:21 peter Exp $
 #
 
 DISTNAME=	teTeX-1.0.6
@@ -25,7 +25,7 @@ WRKSRC=		${WRKDIR}/teTeX-1.0
 EXTRACT_ONLY=	${TETEX_SRC}
 USE_GMAKE=	yes
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS= --prefix=${PREFIX} --disable-multiplatform \
+CONFIGURE_ARGS= --disable-multiplatform \
 		--without-texinfo --without-dialog \
 		--with-system-ncurses --with-system-zlib \
 		--with-system-wwwlib --with-libwww-libdir=${LIBWWW_PREFIX}/lib \

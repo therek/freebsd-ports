@@ -3,7 +3,7 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.88 1999/11/25 21:26:03 cpiazza Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.89 1999/11/25 21:26:38 cpiazza Exp $
 #
 # Maximal ssh2 package requires YES values for
 # USE_SSH1, USE_TCPWRAP
@@ -24,7 +24,7 @@ RESTRICTED=	"Crypto; export-controlled"
 
 GNU_CONFIGURE=	YES
 
-CONFIGURE_ARGS= --prefix=${PREFIX} --with-etcdir=${PREFIX}/etc --enable-debug
+CONFIGURE_ARGS= --with-etcdir=${PREFIX}/etc --enable-debug
 #Uncomment if all your users are in their own group and their homedir
 #is writeable by that group.  Beware the security implications!
 #CONFIGURE_ARGS+= --enable-group-writeability

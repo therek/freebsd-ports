@@ -3,7 +3,7 @@
 # Date created:			4 Aug 1998
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.12 1999/10/27 08:46:46 mharo Exp $
+# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.13 1999/11/27 06:17:48 sumikawa Exp $
 #
 
 DISTNAME=	ndtpd-2.3.5
@@ -19,8 +19,6 @@ USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--localstatedir=${VARDIR} --with-eb --with-zlib \
 		--with-eb-includes=${PREFIX}/include \
 		--with-eb-libraries=${PREFIX}/lib
-CONFIGURE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-		INSTALL_DATA="${INSTALL_DATA}"
 
 .if !defined(PACKAGE_BUILDING)
 IS_INTERACTIVE=	Maybe_interactive_at_install_stage

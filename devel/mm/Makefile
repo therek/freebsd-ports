@@ -3,7 +3,7 @@
 # Date Created:			14 March 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/mm/Makefile,v 1.14 1999/09/06 12:43:35 rse Exp $
+# $FreeBSD: ports/devel/mm/Makefile,v 1.15 1999/09/28 12:48:33 rse Exp $
 #
 
 DISTNAME=	mm-1.0.12
@@ -14,7 +14,6 @@ MASTER_SITES=	http://www.engelschall.com/sw/mm/ \
 MAINTAINER=	rse@engelschall.com
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 MAN1=		mm-config.1
 MAN3=		mm.3

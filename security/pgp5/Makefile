@@ -5,7 +5,7 @@
 # Date created:         10 Feb 1998
 # Whom:                 markm
 #
-# $FreeBSD: ports/security/pgp5/Makefile,v 1.30 1999/08/31 01:51:33 peter Exp $
+# $FreeBSD: ports/security/pgp5/Makefile,v 1.31 1999/08/31 06:50:18 mharo Exp $
 #
 
 DISTNAME=	pgp50i
@@ -20,8 +20,7 @@ MAINTAINER=	markm@FreeBSD.org
 Y2K=		http://www.pgpi.com/faq/pgpi.shtml#Year2000
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS= --prefix=${PREFIX}
+GNU_CONFIGURE=	yes
 RESTRICTED=     "Crypto"
 MAN1=		pgp5.1 pgpe.1 pgpk.1 pgps.1 pgpv.1
 MAN5=		pgp.cfg.5

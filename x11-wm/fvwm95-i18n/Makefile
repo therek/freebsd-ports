@@ -3,7 +3,7 @@
 # Date created:		23 Nov 1998
 # Whom:			Yoshishige Arai <ryo2@on.rim.or.jp>
 #
-# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.26 1999/08/31 03:00:07 peter Exp $
+# $FreeBSD: ports/x11-wm/fvwm95-i18n/Makefile,v 1.27 1999/09/05 21:39:45 sada Exp $
 #
 
 DISTNAME=	fvwm95-2.0.43a-Autoconf
@@ -29,7 +29,7 @@ BUILD_DEPENDS=	${LOCALBASE}/lib/librplay.a:${PORTSDIR}/audio/rplay
 EXTRACT_ONLY=	${DISTNAME}.tgz ${PKGNAME}-portKit-19981123.tgz
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=${PREFIX} --x-includes=${X11BASE}/include \
+CONFIGURE_ARGS=	--x-includes=${X11BASE}/include \
 		--mandir=${MANPREFIX}/man \
 		--includedir=${LOCALBASE}/include --libdir=${LOCALBASE}/lib
 CONFIGURE_ENV=	INSTALL_MAN="${INSTALL_MAN}"

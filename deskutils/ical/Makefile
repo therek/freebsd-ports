@@ -3,7 +3,7 @@
 # Date created:         Mon Aug 28 13:35:31 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/deskutils/ical/Makefile,v 1.23 1999/08/31 06:41:29 mharo Exp $
+# $FreeBSD: ports/deskutils/ical/Makefile,v 1.24 1999/11/29 03:44:29 steve Exp $
 #
 
 DISTNAME=	ical-2.2
@@ -15,8 +15,7 @@ MAINTAINER=	erich@FreeBSD.org
 LIB_DEPENDS=    tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=${PREFIX} \
-		--with-tclconfig=${PREFIX}/lib/tcl8.2 \
+CONFIGURE_ARGS=	--with-tclconfig=${PREFIX}/lib/tcl8.2 \
 		--with-tclhdir=${PREFIX}/include/tcl8.2 \
 		--with-tclsh=${PREFIX}/bin/tclsh8.2 \
 		--with-tkconfig=${PREFIX}/lib/tk8.2 \

@@ -3,7 +3,7 @@
 # Date created:		10 April 1996
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/leafnode/Makefile,v 1.8 1999/08/30 14:31:39 peter Exp $
 #
 
 DISTNAME=	leafnode-1.9.2
@@ -14,8 +14,8 @@ MASTER_SITE_SUBDIR=	system/news/transport
 
 MAINTAINER=	brian@Awfulhak.org
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--quiet --prefix=${PREFIX}
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--quiet
 MAKE_ARGS=	LOCKFILE=/var/spool/lock/news/fetch.lck \
 		LIBDIR=${PREFIX}/lib/leafnode
 MAN1=		newsq.1

@@ -3,7 +3,7 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.4 1999/08/25 06:50:16 obrien Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.5 1999/11/23 08:41:05 kris Exp $
 #
 
 DISTNAME=	maildrop-0.64
@@ -37,9 +37,8 @@ CONFIGURE_ARGS=	--enable-syslog=1 \
 		--with-etcdir="${PREFIX}/etc" \
 		--enable-maildrop-uid="${MAILDROP_SUID}" \
 		--enable-maildrop-gid="${MAILDROP_SGID}"
-CONFIGURE_ENV=	CXX="${CXX}" \
-		CXXFLAGS="${CXXFLAGS} -I${PREFIX}/include" \
-		LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
+CONFIGURE_ENV=	CPPFLAGS="-I${PREFIX}/include" \
+		LIBS="-L${PREFIX}/lib"
 GNU_CONFIGURE=	yes
 
 .if defined(NOPORTDOCS)

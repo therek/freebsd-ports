@@ -3,7 +3,7 @@
 # Date created:         25 Aug 1997
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/lang/scheme48/Makefile,v 1.11 1999/08/25 06:35:21 obrien Exp $
+# $FreeBSD: ports/lang/scheme48/Makefile,v 1.12 1999/08/31 06:47:02 mharo Exp $
 #
 
 DISTNAME=	scheme48-0.46
@@ -14,9 +14,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER= 	jmacd@FreeBSD.org
 
 GNU_CONFIGURE=  yes
-CONFIGURE_ARGS= --prefix=${PREFIX}
 ALL_TARGET = 	enough
-#NO_WRKSUBDIR=	yes
 STRIP=
 MAN1=		scheme48.1
 
