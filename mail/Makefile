@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.224 2001/05/24 13:35:54 ijliao Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.225 2001/06/03 08:12:55 ijliao Exp $
 #
 
     SUBDIR += abook
@@ -87,6 +87,7 @@
     SUBDIR += movemail
     SUBDIR += mreport
     SUBDIR += mutt
+    SUBDIR += mutt-devel
     SUBDIR += muttzilla
     SUBDIR += nail
     SUBDIR += namg
