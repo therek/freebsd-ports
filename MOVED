@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.270 2003/11/15 18:33:11 eik Exp $
+# $FreeBSD: ports/MOVED,v 1.271 2003/11/16 02:36:26 will Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -710,3 +710,4 @@ x11-fonts/khotot|arabic/khotot|2003-11-15|Moved to new arabic category
 x11-fonts/kacst_fonts|arabic/kacst_fonts|2003-11-15|Moved to new arabic category
 misc/kde3-i18n-ar|arabic/kde3-i18n|2003-11-15|Moved to new arabic category
 misc/koffice-i18n-ar|arabic/koffice-i18n|2003-11-15|Moved to new arabic category
+net/geta|dns/geta|2003-11-16|moved to new dns category
