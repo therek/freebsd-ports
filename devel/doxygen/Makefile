@@ -3,7 +3,7 @@
 # Date created:        20 March 1998
 # Whom:                Joep Grooten <joep@di.nl>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/doxygen/Makefile,v 1.2 1999/08/25 05:47:51 obrien Exp $
 #
 
 DISTNAME=	doxygen-0.4.src
@@ -15,10 +15,14 @@ MAINTAINER=	joep@di.nl
 
 WRKSRC=		${WRKDIR}/doxygen-0.4
 
-USE_QT=		YES
-
-USE_PERL5=	YES
+USE_QT=		yes
+USE_PERL5=	yes
 MAKE_ARGS=	freebsd-g++
+MAKE_ENV+=	CC="${CC}" CXX="${CXX}"
+
+pre-configure:
+	${PERL} -pi -e "s:gcc:${CC}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
+	${PERL} -pi -e "s:g\+\+:\${CXX}:g" ${WRKSRC}/tmake/lib/freebsd-g++/tmake.conf
 
 do-configure:
 	cd ${WRKSRC}/src; \
