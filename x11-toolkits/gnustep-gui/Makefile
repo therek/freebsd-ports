@@ -2,11 +2,11 @@
 # Date created:         19 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.19 2001/07/02 11:50:37 tg Exp $
+# $FreeBSD: ports/x11-toolkits/gnustep-gui/Makefile,v 1.20 2001/07/07 04:42:33 okazaki Exp $
 #
 
 PORTNAME=	gnustep-gui
-PORTVERSION=	0.6.9
+PORTVERSION=	0.7.0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.gnustep.org/pub/gnustep/core/ \
 		http://ftp.codefactory.se/pub/gnu/gstep/ \
