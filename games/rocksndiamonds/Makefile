@@ -2,15 +2,19 @@
 # Date created:		27 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/rocksndiamonds/Makefile,v 1.7 2000/01/06 19:58:57 jedgar Exp $
+# $FreeBSD: ports/games/rocksndiamonds/Makefile,v 1.8 2000/04/14 12:26:27 asami Exp $
 #
 
 PORTNAME=	rocksndiamonds
 PORTVERSION=	1.4.0
+PORTREVISION= 	1
 CATEGORIES=	games
 MASTER_SITES=	http://www.artsoft.org/rocksndiamonds/RELEASES/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games
+
+PATCH_SITES=	http://www.artsoft.org/RELEASES/
+PATCHFILES=	rocksndiamonds-1.4.0pl1.diff
 
 MAINTAINER=	mwest@uct.ac.za
 
