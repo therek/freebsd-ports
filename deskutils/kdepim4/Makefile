@@ -2,7 +2,7 @@
 # Date created:				2 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/kdepim/Makefile,v 1.4 2001/08/15 12:43:03 will Exp $
+# $FreeBSD: ports/deskutils/kdepim/Makefile,v 1.5 2001/08/15 16:25:09 will Exp $
 #
 
 PORTNAME=	kdepim
@@ -11,7 +11,7 @@ CATEGORIES=	deskutils kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 
 USE_KDELIBS_VER=2
 USE_BISON=	yes

@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.28 2001/08/15 16:25:09 will Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.29 2001/08/30 18:56:49 knu Exp $
 #
 
 PORTNAME=	kdevelop
@@ -11,7 +11,7 @@ CATEGORIES?=	devel kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/2.2/src
 
-MAINTAINER?=	demon@FreeBSD.org
+MAINTAINER?=	kde@FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake

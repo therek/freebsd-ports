@@ -2,7 +2,7 @@
 # Date created:				2 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/kdesdk/Makefile,v 1.5 2001/08/21 08:23:03 demon Exp $
+# $FreeBSD: ports/devel/kdesdk/Makefile,v 1.6 2001/08/24 12:38:16 demon Exp $
 #
 
 PORTNAME=	kdesdk
@@ -11,7 +11,7 @@ CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	demon@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 
 LIB_DEPENDS=	db2.0:${PORTSDIR}/databases/db
 
