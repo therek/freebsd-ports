@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.44 2000/06/16 21:50:08 asami Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.45 2000/10/05 06:36:07 reg Exp $
 #
 
 PORTNAME=	mico
@@ -19,12 +19,12 @@ WRKSRC=		${WRKDIR}/mico
 MICOVER=	`${ECHO} ${DISTNAME} | ${SED} 's/mico-//'`
 
 .if defined(QT2)
-USE_QT2=	yes
+USE_QT_VER=	2
 MAKE_ENV=	QT_INCLUDES="${X11BASE}/include/qt2" \
 		QTVER="2"
 CONFIGURE_ENV=	QTVER="2"
 .else
-USE_QT=		yes
+USE_QT_VER=	1
 MAKE_ENV=	QT_INCLUDES="${X11BASE}/include/X11/qt" \
 		QTVER=""
 CONFIGURE_ENV=	QTVER=""
