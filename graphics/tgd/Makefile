@@ -3,18 +3,20 @@
 # Date created:				22 February 1999
 # Whom:	      				mharo@area51.fremont.ca.us
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/tgd/Makefile,v 1.4 1999/08/25 06:15:01 obrien Exp $
 #
 
 DISTNAME=	tgd1.2c
 PKGNAME=	tgd-1.2c
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://dendrome.ucdavis.edu/pub/tgd/ \
-		ftp://probe.nalusda.gov/pub/treegenes/
+MASTER_SITES=	ftp://probe.nalusda.gov/pub/treegenes/ \
+		ftp://dendrome.ucdavis.edu/pub/tgd/
 
 MAINTAINER=	mharo@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
+
+BROKEN=	gd changes
 
 ALL_TARGET=	tgd
 DOCS=		README arc.gif cap.gif char.gif fill.gif fontdemo \
