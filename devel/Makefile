@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.428 2001/02/07 20:00:56 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.429 2001/02/09 23:18:12 ade Exp $
 #
     SUBDIR += zziplib
 
@@ -358,10 +358,10 @@
     SUBDIR += ruby-racc
     SUBDIR += ruby-racc-runtime
     SUBDIR += ruby-rbison
-    SUBDIR += ruby-runit
     SUBDIR += ruby-slang
     SUBDIR += ruby-strscan
     SUBDIR += ruby-textbuf
+    SUBDIR += ruby-unit
     SUBDIR += rvm
     SUBDIR += sdcc
     SUBDIR += sdl
