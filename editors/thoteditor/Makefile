@@ -3,7 +3,7 @@
 # Date created:		1 Aug 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.10 1999/08/25 05:44:29 obrien Exp $
 #
 
 DISTNAME=	thoteditor
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.inrialpes.fr/pub/opera/sources/thot/ \
 MASTER_SITE_SUBDIR=	apps/editors/X/thot
 DISTFILES=	${THOT_SRC} ${EDITOR_SRC}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	chuckr@FreeBSD.org
 
 BROKEN= 'FUBARed'
 
