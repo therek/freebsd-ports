@@ -2,14 +2,13 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.33 2000/07/01 19:25:35 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.34 2000/07/07 21:21:15 jim Exp $
 #
 
 PORTNAME=	irssi
-PORTVERSION=	0.7.92.3
+PORTVERSION=	0.7.93
 CATEGORIES=	irc ipv6
 MASTER_SITES=	http://irssi.org/files/
-DISTNAME=	${PORTNAME}-0.7.92-3
 
 MAINTAINER=	jim@FreeBSD.org
 
@@ -18,7 +17,6 @@ LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-0.7.92
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_PERL5=	yes
