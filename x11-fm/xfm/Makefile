@@ -2,21 +2,17 @@
 # Date created:		28 December 1994
 # Whom:			jc@irbs.com John Capo
 #
-# $FreeBSD: ports/x11-fm/xfm/Makefile,v 1.19 2000/09/16 19:31:05 ade Exp $
+# $FreeBSD: ports/x11-fm/xfm/Makefile,v 1.20 2001/02/05 21:00:55 olgeni Exp $
 #
 
 PORTNAME=	xfm
-PORTVERSION=	1.4.2.4
+PORTVERSION=	1.4.3
 CATEGORIES=	x11-fm
 MASTER_SITES=	http://www.musikwissenschaft.uni-mainz.de/~ag/xfm/
-MASTER_SITE_SUBDIR=	applications
-DISTNAME=	${PORTNAME}-1.4.2p4
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
-
-WRKSRC=		${WRKDIR}/${PORTNAME}-1.4.2
 
 USE_IMAKE=	yes
 USE_XPM=	yes
