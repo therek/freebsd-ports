@@ -2,7 +2,7 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml/Makefile,v 1.26 2000/07/09 19:21:24 ade Exp $
+# $FreeBSD: ports/textproc/libxml/Makefile,v 1.27 2000/09/07 15:01:19 ade Exp $
 #
 
 PORTNAME=	libxml
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	stable/sources/libxml
 
 MAINTAINER=	ade@FreeBSD.org
 
+USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 
