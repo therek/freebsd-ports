@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/galeon/Makefile,v 1.1 2000/08/01 09:05:57 sobomax Exp $
 #
 
 PORTNAME=	galeon
@@ -20,6 +20,7 @@ RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		mozilla:${PORTSDIR}/www/mozilla
 
 USE_X_PREFIX=	yes
+USE_NEWGCC=	yes
 GNU_CONFIGURE=	yes
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
