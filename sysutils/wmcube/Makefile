@@ -2,11 +2,12 @@
 # Date created:				Mon May 28 02:14:47 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.3 2001/06/04 02:34:08 dougb Exp $
+# $FreeBSD: ports/sysutils/wmcube/Makefile,v 1.4 2001/08/18 23:22:12 ijliao Exp $
 #
 
 PORTNAME=	wmcube
 PORTVERSION=	0.98
+PORTREVISION=	1
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://boombox.campus.luth.se/files/
 
