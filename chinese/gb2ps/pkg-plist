@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/chinese/gb2ps/pkg-plist,v 1.2 2000/11/22 02:22:18 obrien Exp $
+@comment $FreeBSD$
 bin/gb2ps
 share/chinese/cover.ps
 share/chinese/gb/csong24.ccf
@@ -6,7 +6,7 @@ share/chinese/gb/ckai24.ccf
 share/chinese/gb/cfang24.ccf
 share/chinese/gb/chei24.ccf
 share/chinese/gb/cfan24.ccf
-share/doc/gb2ps/gb2ps.help
-@dirrm share/doc/gb2ps
+%%PORTDOCS%%share/doc/gb2ps/gb2ps.help
+%%PORTDOCS%%@dirrm share/doc/gb2ps
 @unexec rmdir %D/share/chinese/gb 2>/dev/null || true
 @unexec rmdir %D/share/chinese 2>/dev/null || true

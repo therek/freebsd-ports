@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/gb2ps/Makefile,v 1.10 2000/03/22 00:28:23 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gb2ps
@@ -34,7 +34,7 @@ do-install:
 .endfor
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/gb2ps
-	${INSTALL_MAN} ${WRKSRC}/gb2ps.help ${PREFIX}/share/doc/gb2ps
+	${INSTALL_DATA} ${WRKSRC}/gb2ps.help ${PREFIX}/share/doc/gb2ps
 .endif
 
 .include <bsd.port.mk>
