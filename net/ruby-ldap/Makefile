@@ -2,11 +2,11 @@
 # Date created:		25 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.1 2000/09/24 19:40:37 knu Exp $
+# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.2 2000/09/28 18:44:13 knu Exp $
 #
 
 PORTNAME=	ldap
-PORTVERSION=	0.2
+PORTVERSION=	0.2.1
 CATEGORIES=	net ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp:8000/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -21,6 +21,8 @@ LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+
+WRKSRC=	${WRKDIR}/ruby-${PORTNAME}
 
 # Configure options:
 #   --with-ldap		specify the ldap directory
