@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.38 2001/08/30 04:50:13 trevor Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.39 2001/09/21 05:43:55 knu Exp $
 #
 
     SUBDIR += SETIsupport
@@ -10,6 +10,7 @@
     SUBDIR += glunarclock
     SUBDIR += jday
     SUBDIR += ksetiwatch
+    SUBDIR += kstars
     SUBDIR += luna
     SUBDIR += openuniverse
     SUBDIR += p5-Astro-MoonPhase
