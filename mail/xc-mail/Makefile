@@ -2,16 +2,16 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.5 2001/02/15 22:31:42 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xc-mail
-PORTVERSION=	1.3
+PORTVERSION=	2.2
+PORTREVISION=	0
 PORTEPOCH=	1
 CATEGORIES=	mail
-MASTER_SITES=	http://js.zet.net/XCmail/download/ \
-		ftp://trier.linux.de/pub/XCmail/ \
-		ftp://ftp.myth.co.uk/pub/mirrors/xcmail/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	xcmail
 
 MAINTAINER=	trevor@FreeBSD.org
 
@@ -32,5 +32,9 @@ CONFIGURE_ARGS=	\
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
 		LDFLAGS="-L${X11BASE}/lib" \
 		LIBS="-L${X11BASE}/lib"
+
+post-install:
+		chown ${BINOWN}:mail ${PREFIX}/bin/xc-mail
+		chmod g+s ${PREFIX}/bin/xc-mail
 
 .include <bsd.port.mk>
