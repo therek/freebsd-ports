@@ -2,7 +2,7 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.12 2003/02/11 21:10:04 alex Exp $
+# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.13 2003/02/12 17:11:09 alex Exp $
 
 vmware_config_file=@@PREFIX@@/etc/vmware/config
 
@@ -53,6 +53,8 @@ start)
 		echo "Your VMware installation seems broken.  Please reinstall VMware port." >&2
 		exit 255
 	fi
+	(echo -n > $dev_vmnet1) 2>/dev/null || \
+	    echo -n > /dev/vmnet1 2>&1
     	echo -n > /dev/vmnet1 2>&1 || true
 	echo -n > $dev_vmnet1 2>&1
 	ifconfig vmnet1 $host_ip netmask $netmask
