@@ -1,4 +1,4 @@
-#     $FreeBSD: ports/x11/kdelibs11-i18n/files/kde.dist,v 1.1 2000/02/05 13:52:35 imura Exp $
+#     $FreeBSD: ports/x11/kdelibs11/files/kde.dist,v 1.1 2000/03/25 16:14:43 imura Exp $
 #
 
 /set type=dir uname=root gname=wheel mode=0755
@@ -16,6 +16,8 @@
             Internet
             ..
             Multimedia
+            ..
+            Network
             ..
             Settings
             ..
