@@ -2,13 +2,14 @@
 # Date created:                14 September 2001
 # Whom:                        arved@arved.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/scdp/Makefile,v 1.1 2001/10/05 20:15:44 petef Exp $
 
 PORTNAME=	scdp
 PORTVERSION=	1.0.b
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	scdp
+DISTNAME=	scdp-${PORTVERSION:S/.b/b/}
 
 MAINTAINER=	freebsdports@arved.de
 
