@@ -2,14 +2,14 @@
 # Date created:				Wed May	2 23:25:19 BRT 2001
 # Whom:		Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/games/hlserver-heroes/Makefile,v 1.2 2001/05/08 20:26:58 lioux Exp $
+# $FreeBSD: ports/games/hlserver-heroes/Makefile,v 1.3 2001/05/10 01:44:15 lioux Exp $
 #
 
 PORTNAME=	heroes
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 MASTER_SITES=	http://mapage.noos.fr/ambrelune/ \
 		http://perso.libertysurf.fr/ambrelune/
-DISTFILES=	hero10.zip
+DISTFILES=	hero10.zip HLH101.zip
 
 MAINTAINER=	lioux@FreeBSD.org
 
