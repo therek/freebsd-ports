@@ -2,7 +2,7 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fop/Makefile,v 1.2 2001/03/24 12:29:03 kiri Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fop
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME:S/fop/Fop/}-${PORTVERSION}
 MAINTAINER=	kiri@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/jdk${JDKVERSION}/bin/java:${PORTSDIR}/java/jdk \
-		${LOCALBASE}/share/java/classes/xerces.jar:${PORTSDIR}/textproc/xerces
+		${LOCALBASE}/share/java/classes/xerces.jar:${PORTSDIR}/textproc/xerces-j
 
 WRKSRC=		${WRKDIR}/xml-fop
 NO_BUILD=	yes
