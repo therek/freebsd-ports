@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.234 2000/07/29 12:22:38 alex Exp $
+# $FreeBSD: ports/www/Makefile,v 1.235 2000/07/31 20:22:57 nbm Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -48,6 +48,7 @@
     SUBDIR += flashplugin
     SUBDIR += fxhtml
     SUBDIR += g-gcl
+    SUBDIR += galeon
     SUBDIR += glibwww2
     SUBDIR += gn
     SUBDIR += gnuinfo
