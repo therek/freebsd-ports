@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gugod-clean
 # Date Created:                         21 Jun 2001
 # Whom:                                 Kang-min Liu <gugod@gugod.org>
-# $FreeBSD: ports/chinese/gugod-clean/Makefile,v 1.2 2001/06/23 16:43:03 clive Exp $
+# $FreeBSD: ports/chinese/gugod-clean/Makefile,v 1.3 2001/07/26 02:12:12 clive Exp $
 
 PORTNAME=	gugod-clean
 PORTVERSION=	1.1
 CATEGORIES=	chinese x11-fonts
-MASTER_SITES=	ftp://gugod.org/pub/X/
+MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/clive/
 
 MAINTAINER=	gugod@gugod.org
 
