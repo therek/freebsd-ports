@@ -2,17 +2,19 @@
 # Date created:		22 April 2000
 # Whom:			Vince Valenti <vince@blue-box.net>
 #
-# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.5 2000/10/03 15:21:26 kevlo Exp $
+# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.6 2000/10/08 10:23:00 asami Exp $
 #
 
 PORTNAME=	syslog-ng
-PORTVERSION=	1.4.7
+PORTVERSION=	1.4.9
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.balabit.hu/downloads/syslog-ng/1.4/
 
 MAINTAINER=	vince@blue-box.net
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libol.a:${PORTSDIR}/devel/libol
+
+WRKSRC=		${WRKDIR}/syslog-ng-1.4.9a
 
 MAN5=		syslog-ng.conf.5
 MAN8=		syslog-ng.8
