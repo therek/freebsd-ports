@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.74 2003/02/24 12:54:54 nobutaka Exp $
+# $FreeBSD: ports/MOVED,v 1.75 2003/02/24 15:56:32 nectar Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -181,3 +181,4 @@ graphics/libdvdnav|multimedia/libdvdnav|2003-02-24|new category
 graphics/libxine|multimedia/libxine|2003-02-24|new category
 graphics/xine|multimedia/xine|2003-02-24|new category
 net/rdesktop-devel|net/rdesktop|2003-02-24|obsolete beta version
+java/jikes-devel|java/jikes|2002-02-24|stable version caught up with development version
