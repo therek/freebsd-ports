@@ -2,16 +2,15 @@
 # Date created:				26 May 2001
 # Whom:	      				Joe Clarke <marcus@marcuscom.com>
 #
-# $FreeBSD: ports/security/pam_ldap/Makefile,v 1.1 2001/06/08 19:00:18 dwcjr Exp $
+# $FreeBSD: ports/security/pam_ldap/Makefile,v 1.2 2001/06/11 20:11:24 dwcjr Exp $
 #
 
 PORTNAME=	pam_ldap
-PORTVERSION=	1.1.3
+PORTVERSION=	1.1.8
 CATEGORIES=	security net
 MASTER_SITES=	http://www.padl.com/download/ \
 		ftp://ftp.padl.com/pub/
-DISTNAME=	pam_ldap
-EXTRACT_SUFX=	.tgz
+DISTNAME=      	pam_ldap-${PORTVERSION:S/.//g}
 
 MAINTAINER=	marcus@marcuscom.com
 
