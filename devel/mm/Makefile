@@ -2,11 +2,11 @@
 # Date Created:			14 March 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/mm/Makefile,v 1.16 1999/12/24 18:39:25 mharo Exp $
+# $FreeBSD: ports/devel/mm/Makefile,v 1.17 2000/04/11 21:29:08 mharo Exp $
 #
 
 PORTNAME=	mm
-PORTVERSION=	1.0.12
+PORTVERSION=	1.1.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.engelschall.com/sw/mm/ \
 		ftp://ftp.engelschall.com/sw/mm/
