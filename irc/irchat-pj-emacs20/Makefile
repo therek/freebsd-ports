@@ -2,7 +2,7 @@
 # Date Created:		2 May 2001
 # Whom:			Yoichi NAKAYAMA <yoichi@eken.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/irchat-pj-emacs20/Makefile,v 1.1 2001/05/06 10:43:22 knu Exp $
 #
 
 PORTNAME=	irchat-pj
@@ -15,7 +15,8 @@ DISTNAME=	irchat-pj-${PORTVERSION}p
 MAINTAINER=	yoichi@eken.phys.nagoya-u.ac.jp
 
 BUILD_DEPENDS=	${LOCALBASE}/${LISPDIR:S,/${PORTNAME}$,/pure,}/pure-make.el:${PORTSDIR}/irc/pure-${EMACS_PORT_NAME}
-RUN_DEPENDS=	${LOCALBASE}/bin/dcc:${PORTSDIR}/irc/dcc
+RUN_DEPENDS=	${LOCALBASE}/${LISPDIR:S,/${PORTNAME}$,/pure,}/pure-make.el:${PORTSDIR}/irc/pure-${EMACS_PORT_NAME} \
+		${LOCALBASE}/bin/dcc:${PORTSDIR}/irc/dcc
 
 EMACS_PORT_NAME?=	emacs20
 LISPDIR?=	${EMACS_LIBDIR}/site-lisp/${PORTNAME}
