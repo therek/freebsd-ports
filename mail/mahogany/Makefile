@@ -2,11 +2,11 @@
 # Date created:		11 November 2000
 # Whom:			Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mahogany/Makefile,v 1.1 2000/11/17 20:43:33 ade Exp $
 #
 
 PORTNAME=		mahogany
-PORTVERSION= 		0.60
+PORTVERSION=		0.60
 CATEGORIES=		mail python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	mahogany

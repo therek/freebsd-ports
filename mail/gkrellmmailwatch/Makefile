@@ -2,11 +2,11 @@
 # Date Created:		22.08.2000
 # Whom:			Tobias Reifenberger <treif@mayn.de>
 #
-# $FreeBSD: ports/mail/gkrellmmailwatch/Makefile,v 1.1 2000/09/14 17:27:55 ume Exp $
+# $FreeBSD: ports/mail/gkrellmmailwatch/Makefile,v 1.2 2000/10/05 06:57:42 reg Exp $
 #
 
 PORTNAME=	gkrellmmailwatch
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	mail
 MASTER_SITES=	http://gkrellm.luon.net/files/
 DISTNAME=	mailwatch-${PORTVERSION}

@@ -2,11 +2,11 @@
 # Date created:		21 April 1998
 # Whom:			Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/mail/emil/Makefile,v 1.5 2000/02/05 10:55:42 dirk Exp $
+# $FreeBSD: ports/mail/emil/Makefile,v 1.6 2000/04/13 19:59:34 cpiazza Exp $
 #
 
 PORTNAME=	emil
-PORTVERSION= 	2.1b9
+PORTVERSION=	2.1b9
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.uu.se/pub/unix/networking/mail/emil/ \
 		ftp://ftp.gwdg.de/pub/misc/emil/ \

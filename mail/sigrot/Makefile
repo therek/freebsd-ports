@@ -2,11 +2,11 @@
 # Date created:		4 Mar 1998
 # Whom:			Marijn Meijles <marijn@stack.nl>
 #
-# $FreeBSD: ports/mail/sigrot/Makefile,v 1.2 1999/08/25 06:50:51 obrien Exp $
+# $FreeBSD: ports/mail/sigrot/Makefile,v 1.3 2000/04/13 20:00:47 cpiazza Exp $
 #
 
 PORTNAME=	sigrot
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/mail/misc

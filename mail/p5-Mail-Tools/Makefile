@@ -2,11 +2,11 @@
 # Date created:				October 24th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-Tools/Makefile,v 1.20 2000/10/16 14:24:38 kuriyama Exp $
+# $FreeBSD: ports/mail/p5-Mail-Tools/Makefile,v 1.21 2001/01/08 06:39:45 kuriyama Exp $
 #
 
 PORTNAME=	Mail-Tools
-PORTVERSION= 	1.15
+PORTVERSION=	1.15
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail

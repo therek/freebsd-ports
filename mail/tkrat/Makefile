@@ -2,11 +2,11 @@
 # Date created:		24 October 1997
 # Whom:			Bruce Gingery <bgingery@gtcs.com>
 #
-# $FreeBSD: ports/mail/tkrat/Makefile,v 1.21 2000/04/13 20:00:51 cpiazza Exp $
+# $FreeBSD: ports/mail/tkrat/Makefile,v 1.22 2000/09/22 23:10:10 kris Exp $
 #
 
 PORTNAME=	tkrat
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	mail tk82
 MASTER_SITES=	ftp://ftp.karen.hik.se/pub2/unix/mail/ratatosk/ \
 		ftp://ftp.mc.hik.se/pub/unix/mail/ratatosk/ \

@@ -2,11 +2,11 @@
 # Date created:		So  14 Jun 1998 13:09:18 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/mail/kbiff/Makefile,v 1.16 2000/04/13 19:59:47 cpiazza Exp $
+# $FreeBSD: ports/mail/kbiff/Makefile,v 1.17 2000/09/21 23:47:17 kris Exp $
 #
 
 PORTNAME=	kbiff
-PORTVERSION= 	2.3.12
+PORTVERSION=	2.3.12
 CATEGORIES=	mail kde
 MASTER_SITES=	http://granroth.kde.org/kbiff/
 

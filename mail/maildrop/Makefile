@@ -2,11 +2,11 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.8 2000/04/13 19:59:52 cpiazza Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.9 2000/10/08 02:24:42 asami Exp $
 #
 
 PORTNAME=	maildrop
-PORTVERSION= 	0.64
+PORTVERSION=	0.64
 CATEGORIES=	mail
 MASTER_SITES=	http://www.flounder.net/~mrsam/maildrop/ \
 		${MASTER_SITE_SUNSITE}

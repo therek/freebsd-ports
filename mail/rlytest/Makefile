@@ -2,11 +2,11 @@
 # Date created:		16 January 1999
 # Whom:			Paul Chvostek <paul@it.ca>
 #
-# $FreeBSD: ports/mail/rlytest/Makefile,v 1.5 2000/09/28 22:16:38 nbm Exp $
+# $FreeBSD: ports/mail/rlytest/Makefile,v 1.6 2000/10/08 10:22:04 asami Exp $
 #
 
 PORTNAME=	rlytest
-PORTVERSION= 	1.20
+PORTVERSION=	1.20
 CATEGORIES=	mail security
 MASTER_SITES=	http://www.unicom.com/sw/rlytest/
 DISTNAME=	${PORTNAME}

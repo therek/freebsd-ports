@@ -2,11 +2,11 @@
 # Date created:		23 October 1996
 # Whom:			jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/majordomo/Makefile,v 1.24 2000/10/23 21:03:00 will Exp $
+# $FreeBSD: ports/mail/majordomo/Makefile,v 1.25 2001/01/01 10:15:06 will Exp $
 #
 
 PORTNAME=	majordomo
-PORTVERSION= 	1.94.5
+PORTVERSION=	1.94.5
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.greatcircle.com/pub/majordomo/1.94.5/ \
 		ftp://ftp.sgi.com/other/majordomo/1.94.5/

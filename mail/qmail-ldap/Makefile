@@ -2,11 +2,11 @@
 # Date created:				21 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.6 2000/12/11 14:55:48 lioux Exp $
+# $FreeBSD: ports/mail/qmail-ldap/Makefile,v 1.7 2000/12/19 14:29:27 lioux Exp $
 #
 
 PORTNAME=	qmail
-PORTVERSION= 	${QMAIL_VERSION}.${LDAP_PATCH_DATE}
+PORTVERSION=	${QMAIL_VERSION}.${LDAP_PATCH_DATE}
 PORTREVISION=	1
 CATEGORIES=	mail
 PKGNAMESUFFIX=	-ldap

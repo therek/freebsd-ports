@@ -2,13 +2,13 @@
 # Date created:         7 April 1997
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/mail/xpbiff-youbin/Makefile,v 1.7 2000/08/03 14:28:31 sanpei Exp $
+# $FreeBSD: ports/mail/xpbiff-youbin/Makefile,v 1.8 2000/10/08 10:22:08 asami Exp $
 #
 
 # can't use PORTSDIR here, since we haven't included bsd.port.mk
 
 PORTNAME=	xpbiff-youbin
-PORTVERSION= 	1.27	
+PORTVERSION=	1.27	
 
 MAINTAINER=	sanpei@FreeBSD.org
 

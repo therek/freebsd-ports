@@ -2,11 +2,11 @@
 # Date created:			Mon  6 Jul 12:00:06 CEST 1998
 # Whom:				Udo Schweigert <ust@cert.siemens.de>
 #
-# $FreeBSD: ports/mail/coolmail/Makefile,v 1.6 1999/08/25 06:50:05 obrien Exp $
+# $FreeBSD: ports/mail/coolmail/Makefile,v 1.7 2000/04/13 19:59:27 cpiazza Exp $
 #
 
 PORTNAME=	coolmail
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=system/mail/biffs

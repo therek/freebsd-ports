@@ -2,11 +2,11 @@
 # Date created:		Oct 4, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/mh/Makefile,v 1.21 2000/06/16 08:48:07 sobomax Exp $
+# $FreeBSD: ports/mail/mh/Makefile,v 1.22 2000/06/16 21:51:31 asami Exp $
 #
 
 PORTNAME=	mh
-PORTVERSION= 	6.8.4
+PORTVERSION=	6.8.4
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ics.uci.edu/pub/mh/tar/
 DISTNAME=	${PORTNAME}-6.8.3

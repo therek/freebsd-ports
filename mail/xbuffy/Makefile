@@ -2,11 +2,11 @@
 # Date created:		18 June 1995
 # Whom:			dchapes@zeus.leitch.com
 #
-# $FreeBSD: ports/mail/xbuffy/Makefile,v 1.6 1999/08/25 06:51:06 obrien Exp $
+# $FreeBSD: ports/mail/xbuffy/Makefile,v 1.7 2000/04/13 20:00:59 cpiazza Exp $
 #
 
 PORTNAME=	xbuffy
-PORTVERSION= 	3.3
+PORTVERSION=	3.3
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

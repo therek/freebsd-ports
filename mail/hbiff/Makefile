@@ -3,11 +3,11 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/hbiff/Makefile,v 1.10 2000/06/07 17:44:35 obrien Exp $
+# $FreeBSD: ports/mail/hbiff/Makefile,v 1.11 2000/06/29 02:31:31 asami Exp $
 #
 
 PORTNAME=	hbiff
-PORTVERSION= 	1.2
+PORTVERSION=	1.2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/misc/  \
 		${MASTER_SITE_LOCAL}

@@ -2,11 +2,11 @@
 # Date created:				01 July 2000
 # Whom:	      				Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-CClient/Makefile,v 1.1.1.1 2000/07/14 09:39:55 kbyanc Exp $
 #
 
 PORTNAME=		CClient
-PORTVERSION= 		1.0
+PORTVERSION=		1.0
 CATEGORIES=		mail perl5
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail

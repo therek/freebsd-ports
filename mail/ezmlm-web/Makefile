@@ -2,11 +2,11 @@
 # Date Created: 			18 May 2000
 # Whom: 				Guy Antony Halse <guy@rucus.ru.za.za>
 #
-# $FreeBSD: ports/mail/ezmlm-web/Makefile,v 1.2 2000/10/08 10:21:58 asami Exp $
+# $FreeBSD: ports/mail/ezmlm-web/Makefile,v 1.3 2000/11/28 15:54:23 kevlo Exp $
 #
 
 PORTNAME=	ezmlm-web
-PORTVERSION= 	2.1
+PORTVERSION=	2.1
 CATEGORIES=	mail www
 MASTER_SITES=	ftp://rucus.ru.ac.za/pub/mail/ezmlm/
 

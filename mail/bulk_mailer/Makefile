@@ -2,18 +2,18 @@
 # Date created:	20 March 1997
 # Whom:		dlowe
 #
-# $FreeBSD: ports/mail/bulk_mailer/Makefile,v 1.9 2000/04/13 19:59:25 cpiazza Exp $
+# $FreeBSD: ports/mail/bulk_mailer/Makefile,v 1.10 2000/06/08 10:00:39 sobomax Exp $
 #
 
 PORTNAME=	bulk_mailer
-PORTVERSION= 	1.13
+PORTVERSION=	1.13
 CATEGORIES=	mail
 MASTER_SITES=	ftp://cs.utk.edu/pub/moore/bulk_mailer/
 
 MAINTAINER=	dlowe@saturn5.com
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=--cache-file=/dev/null
+CONFIGURE_ARGS=	--cache-file=/dev/null
 
 ALL_TARGET=	bulk_mailer
 

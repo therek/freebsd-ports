@@ -2,11 +2,11 @@
 # Date created:		16 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/smail/Makefile,v 1.30 2000/02/27 10:41:56 kris Exp $
+# $FreeBSD: ports/mail/smail/Makefile,v 1.31 2000/04/13 20:00:47 cpiazza Exp $
 #
 
 PORTNAME=	smail
-PORTVERSION= 	3.2.0.111
+PORTVERSION=	3.2.0.111
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.uu.net/networking/mail/smail/ \
 		ftp://ftp.planix.com/pub/Smail/ \

@@ -2,12 +2,12 @@
 # Date created:				31 Jan 1997
 # Whom:					ache
 #
-# $FreeBSD: ports/mail/premail/Makefile,v 1.20 2000/10/04 06:40:00 sobomax Exp $
+# $FreeBSD: ports/mail/premail/Makefile,v 1.21 2000/10/12 00:42:01 ache Exp $
 #
 
 PORTNAME=	premail
 PORTVERSION=	0.46
-PORTREVISION=   1
+PORTREVISION=	1
 CATEGORIES=	mail security
 MASTER_SITES=	ftp://ftp.jpunix.com/pub/remailer-tools/ \
 		ftp://ftp.kiarchive.ru/pub/unix/crypto/

@@ -2,11 +2,11 @@
 # Date created:				April 27th 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.14 2000/11/23 04:02:49 kuriyama Exp $
+# $FreeBSD: ports/mail/p5-MIME-Tools/Makefile,v 1.15 2001/01/08 06:38:46 kuriyama Exp $
 #
 
 PORTNAME=	p5-MIME-Tools
-PORTVERSION= 	5.409
+PORTVERSION=	5.409
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MIME

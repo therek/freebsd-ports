@@ -2,11 +2,11 @@
 # Date created:				23 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/mmr/Makefile,v 1.8 2000/03/31 23:51:45 mharo Exp $
+# $FreeBSD: ports/mail/mmr/Makefile,v 1.9 2000/04/13 20:00:10 cpiazza Exp $
 #
 
 PORTNAME=	mmr
-PORTVERSION= 	1.5.4
+PORTVERSION=	1.5.4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.devolution.com/~slouken/projects/mmr/
 

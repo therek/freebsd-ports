@@ -4,11 +4,11 @@
 # With some
 # modifications from:	Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/xfaces/Makefile,v 1.19 2000/06/09 21:59:03 asami Exp $
+# $FreeBSD: ports/mail/xfaces/Makefile,v 1.20 2000/08/03 09:25:29 asami Exp $
 #
 
 PORTNAME=	xfaces
-PORTVERSION= 	3.3
+PORTVERSION=	3.3
 CATEGORIES=	mail
 # xfaces-sounds.tar.gz only in LOCAL_PORTS
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/xfaces/ \

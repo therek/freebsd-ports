@@ -2,7 +2,7 @@
 # Date created:         2 April 1997
 # Whom:                 Yoshiro MIHIRA <sanpei@yy.cs.keio.ac.jp>
 #
-# $FreeBSD: ports/mail/xpbiff/Makefile,v 1.10 2000/08/03 09:25:34 asami Exp $
+# $FreeBSD: ports/mail/xpbiff/Makefile,v 1.11 2000/08/03 14:28:30 sanpei Exp $
 #
 
 PORTNAME?=	xpbiff
@@ -20,9 +20,9 @@ NO_INSTALL_MANPAGES=	yes
 WRKSRC=		${WRKDIR}/xpbiff
 
 .if defined(PREFIX) && ${PREFIX} != ${LOCALBASE}
-YOUBINBINDIR= ${PREFIX}
+YOUBINBINDIR=	${PREFIX}
 .else
-YOUBINBINDIR= ${LOCALBASE}
+YOUBINBINDIR=	${LOCALBASE}
 .endif
 
 do-extract:

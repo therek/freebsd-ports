@@ -2,11 +2,11 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.12 2000/10/08 10:21:57 asami Exp $
+# $FreeBSD: ports/mail/ezmlm-idx/Makefile,v 1.13 2001/01/21 15:40:41 dirk Exp $
 #
 
 PORTNAME=	ezmlm-idx
-PORTVERSION= 	0.40	
+PORTVERSION=	0.40	
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.ezmlm.org/pub/patches/ \
 		ftp://ftp.rivertown.net/pub/ezmlm/ \

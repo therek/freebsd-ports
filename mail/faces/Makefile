@@ -3,11 +3,11 @@
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #			Andreas Klemm <andreas@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/faces/Makefile,v 1.13 2000/06/16 10:37:30 sobomax Exp $
+# $FreeBSD: ports/mail/faces/Makefile,v 1.14 2000/06/16 21:51:30 asami Exp $
 #
 
 PORTNAME=	faces
-PORTVERSION= 	1.6.1
+PORTVERSION=	1.6.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cs.indiana.edu/pub/faces/faces/
 EXTRACT_SUFX=	.tar.Z

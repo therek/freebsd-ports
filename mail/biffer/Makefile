@@ -2,11 +2,11 @@
 # Date created:        21 September 1999
 # Whom:                jsellens
 #
-# $FreeBSD: ports/mail/biffer/Makefile,v 1.2 2000/04/13 19:59:24 cpiazza Exp $
+# $FreeBSD: ports/mail/biffer/Makefile,v 1.3 2000/10/08 10:21:56 asami Exp $
 #
 
 PORTNAME=	biffer
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	mail
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 

@@ -2,7 +2,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.21 2000/11/01 09:35:51 kris Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.22 2000/11/16 17:43:46 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -11,7 +11,7 @@
 # Good luck to you. :-P
 
 PORTNAME=	pine4-ssl
-PORTVERSION= 	4.21.1.4
+PORTVERSION=	4.21.1.4
 PORTREVISION=	1
 CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \

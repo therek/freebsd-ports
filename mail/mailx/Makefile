@@ -2,11 +2,11 @@
 # Date created:         18 Febrary 1999
 # Whom:                 Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mailx/Makefile,v 1.4 2000/04/13 19:59:54 cpiazza Exp $
+# $FreeBSD: ports/mail/mailx/Makefile,v 1.5 2000/06/09 21:21:52 asami Exp $
 #
 
 PORTNAME=	mailx
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		ftp://ftp.noc.titech.ac.jp/pub/tmp/aki/FreeBSD/mailx/

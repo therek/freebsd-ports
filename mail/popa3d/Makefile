@@ -2,11 +2,11 @@
 # Date created:		Sun Feb  6 12:31:29 MSK 2000
 # Whom:			Sergey Samoyloff <gonza@techline.ru>
 #
-# $FreeBSD: ports/mail/popa3d/Makefile,v 1.3 2000/04/13 20:00:30 cpiazza Exp $
+# $FreeBSD: ports/mail/popa3d/Makefile,v 1.4 2000/10/08 10:22:02 asami Exp $
 #
 
 PORTNAME=	popa3d
-PORTVERSION= 	0.4
+PORTVERSION=	0.4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.openwall.com/popa3d/ \
 		ftp://ftp.openwall.com/popa3d/ \

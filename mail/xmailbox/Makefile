@@ -2,11 +2,11 @@
 # Date created:				23 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.9 2000/04/30 19:35:52 steve Exp $
+# $FreeBSD: ports/mail/xmailbox/Makefile,v 1.10 2000/08/03 09:25:31 asami Exp $
 #
 
 PORTNAME=		xmailbox
-PORTVERSION= 		2.5
+PORTVERSION=		2.5
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

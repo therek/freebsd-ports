@@ -2,11 +2,11 @@
 # Date Created: 			18 May 2000
 # Whom: 				Guy Antony Halse <guy@rucus.ru.za.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/p5-Mail-Ezmlm/Makefile,v 1.1 2000/08/09 19:09:02 will Exp $
 #
 
 PORTNAME=	Mail-Ezmlm
-PORTVERSION= 	0.02.1
+PORTVERSION=	0.02.1
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail

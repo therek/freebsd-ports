@@ -2,11 +2,11 @@
 # Date created:					May 4th 1997
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus/Makefile,v 1.36 2001/01/01 10:15:05 will Exp $
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.37 2001/01/17 17:31:13 sf Exp $
 #
 
 PORTNAME=	cyrus
-PORTVERSION= 	1.6.24
+PORTVERSION=	1.6.24
 PORTREVISION=	1
 CATEGORIES=	mail tcl82
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \

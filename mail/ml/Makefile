@@ -2,19 +2,19 @@
 # Date created:		15 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/mail/ml/Makefile,v 1.6 2000/11/07 23:28:11 asami Exp $
+# $FreeBSD: ports/mail/ml/Makefile,v 1.7 2000/12/30 19:37:18 sf Exp $
 #
 
-PORTNAME=		ml
-PORTVERSION= 		3.4
-CATEGORIES=		mail
-MASTER_SITES=		http://people.netscape.com/max/ml/
+PORTNAME=	ml
+PORTVERSION=	3.4
+CATEGORIES=	mail
+MASTER_SITES=	http://people.netscape.com/max/ml/
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=			${WRKDIR}/${DISTNAME}/src
-USE_IMAKE=		yes
-USE_MOTIF=		yes
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
+USE_IMAKE=	yes
+USE_MOTIF=	yes
 
 pre-configure:
 	@${ECHO_MSG} "===>  Building c-client"

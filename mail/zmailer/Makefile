@@ -2,11 +2,11 @@
 # Date created:		4 January 1999
 # Whom:			Alex Perel <veers@disturbed.net>
 #
-# $FreeBSD: ports/mail/zmailer/Makefile,v 1.6 2000/09/22 01:58:56 kris Exp $
+# $FreeBSD: ports/mail/zmailer/Makefile,v 1.7 2000/10/08 10:22:10 asami Exp $
 #
 
 PORTNAME=	zmailer
-PORTVERSION= 	2.99.51
+PORTVERSION=	2.99.51
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/mail/zmailer/src/
 

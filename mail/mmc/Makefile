@@ -2,11 +2,11 @@
 # Date created:				21 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mmc/Makefile,v 1.3 2000/11/01 15:51:07 sobomax Exp $
+# $FreeBSD: ports/mail/mmc/Makefile,v 1.4 2001/01/25 16:18:16 sobomax Exp $
 #
 
 PORTNAME=	mmc
-PORTVERSION= 	0.5
+PORTVERSION=	0.5
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}

@@ -2,11 +2,11 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.27 2000/12/23 15:08:19 dannyboy Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.28 2001/01/21 15:40:41 dirk Exp $
 #
 
 PORTNAME=	postfix
-PORTVERSION= 	19991231.13
+PORTVERSION=	19991231.13
 PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \

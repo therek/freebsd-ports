@@ -2,11 +2,11 @@
 # Date created:		13 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/im/Makefile,v 1.7 2000/03/07 19:10:05 sada Exp $
+# $FreeBSD: ports/mail/im/Makefile,v 1.8 2000/04/13 19:59:46 cpiazza Exp $
 #
 
 PORTNAME=	im
-PORTVERSION= 	140
+PORTVERSION=	140
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/ \
 		ftp://ftp.kyushu-u.ac.jp/pub/Misc/mew/ \

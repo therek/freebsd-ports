@@ -2,11 +2,11 @@
 # Date created:		1 Oct 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD: ports/mail/distribute/Makefile,v 1.3 1999/08/31 06:47:17 mharo Exp $
+# $FreeBSD: ports/mail/distribute/Makefile,v 1.4 2000/04/13 19:59:31 cpiazza Exp $
 #
 
 PORTNAME=	distribute
-PORTVERSION= 	2.1.24
+PORTVERSION=	2.1.24
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.foretune.co.jp/pub/network/mail/distribute/
 DISTNAME=	${PORTNAME}-2.1-pl19

@@ -2,11 +2,11 @@
 # Date created:		20 February 1999
 # Whom:			Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/postilion/Makefile,v 1.9 2000/05/25 19:43:44 will Exp $
+# $FreeBSD: ports/mail/postilion/Makefile,v 1.10 2000/08/03 09:25:24 asami Exp $
 #
 
 PORTNAME=	postilion
-PORTVERSION= 	0.9.3c
+PORTVERSION=	0.9.3c
 CATEGORIES=	mail tk82
 MASTER_SITES=	http://www.postilion.org/
 
