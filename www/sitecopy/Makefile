@@ -2,7 +2,7 @@
 # Date created:		15 January 1999
 # Whom:			nik
 #
-# $FreeBSD: ports/www/sitecopy/Makefile,v 1.19 2001/01/31 15:22:07 olgeni Exp $
+# $FreeBSD: ports/www/sitecopy/Makefile,v 1.20 2001/02/23 16:26:12 olgeni Exp $
 #
 
 PORTNAME=	sitecopy
@@ -10,7 +10,7 @@ PORTVERSION=	0.10.15
 CATEGORIES=	www
 MASTER_SITES=	http://www.lyra.org/sitecopy/
 
-MAINTAINER=	nik@FreeBSD.org
+MAINTAINER=	olgeni@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		expat.1:${PORTSDIR}/textproc/expat \
