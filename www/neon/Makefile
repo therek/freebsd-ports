@@ -2,15 +2,15 @@
 # Date created:		13 October 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/neon/Makefile,v 1.1 2000/10/26 01:04:53 jeh Exp $
 #
 
 PORTNAME=	neon
-PORTVERSION=	0.7.5
+PORTVERSION=	0.9.1
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/neon/
 
-MAINTAINER=	mi@aldan.algebra.com
+MAINTAINER=	olgeni@FreeBSD.org
 
 LIB_DEPENDS=	expat:${PORTSDIR}/textproc/expat \
 		xml:${PORTSDIR}/textproc/libxml
@@ -23,34 +23,13 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-ssl=${OPENSSLBASE} --with-expat=${PREFIX}/include/xml \
 		--with-extra-libs=${PREFIX}/lib
 
-ALL_TARGET=	all examples
-INSTALL_TARGET=	install install-examples
-
-.ifdef WITH_NBROWSE
-LIB_DEPENDS+=	glade:${PORTSDIR}/devel/libglade
-CONFIGURE_ARGS+=--with-libglade-config=${PREFIX}/bin/libglade-config \
-		--with-gnome=${X11BASE} \
-		--enable-gnome-examples
-CONFIGURE_ENV+=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
-ALL_TARGET+=	nbrowse
-PLIST_SUB+=	GUI=''
-.else
-PLIST_SUB+=	GUI='@comment '
-
-post-extract:
-	# You can also build a GUI-sample application by doing:
-	#	make -DWITH_NBROWSE
-	# It is disabled by default, because the author thinks
-	# it is BUGGY and because it requires libglade and GNOME.
-.endif
+ALL_TARGET=	all
+INSTALL_TARGET=	install
 
 .ifndef NOPORTDOCS
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/neon
 	${INSTALL_DATA} ${WRKSRC}/doc/using-neon.txt ${PREFIX}/share/doc/neon
-PLIST_SUB+=	DOCS=''
-.else
-PLIST_SUB+=	DOCS='@comment '
 .endif
 
 .include <bsd.port.mk>
