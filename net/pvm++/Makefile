@@ -3,11 +3,11 @@
 # Date created:                Jan 29, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pvm++/Makefile,v 1.1 2001/01/29 08:21:36 ijliao Exp $
 #
 
 PORTNAME=	pvm++
-PORTVERSION=	0.5.0
+PORTVERSION=	0.5.1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://pvm-plus-plus.sourceforge.net/pub/%SUBDIR%/ \
