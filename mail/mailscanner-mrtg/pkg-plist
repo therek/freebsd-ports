@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/mail/mailscanner-mrtg/pkg-plist,v 1.1 2004/05/02 19:08:54 pav Exp $
 etc/mailscanner-mrtg/mailscanner-mrtg.cfg.sample
 etc/mailscanner-mrtg/mailscanner-mrtg.conf.sample
 lib/MailScanner-MRTG/MSMRTG/Config.pm
@@ -6,6 +6,7 @@ lib/MailScanner-MRTG/MSMRTG/Data.pm
 lib/MailScanner-MRTG/MSMRTG/Debug.pm
 lib/MailScanner-MRTG/MSMRTG/Scale.pm
 lib/MailScanner-MRTG/MSMRTG/State.pm
+lib/MailScanner-MRTG/MSMRTG/Log.pm
 sbin/mailscanner-mrtg
 %%PORTDOCS%%%%DOCSDIR%%/BUGS
 %%PORTDOCS%%%%DOCSDIR%%/CHANGELOG
