@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.316 2001/02/26 19:24:49 will Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.317 2001/02/28 12:52:22 knu Exp $
 #
 
     SUBDIR += 9term
@@ -41,6 +41,7 @@
     SUBDIR += imwheel
     SUBDIR += kb2mb2
     SUBDIR += kde2
+    SUBDIR += kdebase11
     SUBDIR += kdebase2
     SUBDIR += kdelibs11
     SUBDIR += kdelibs2
