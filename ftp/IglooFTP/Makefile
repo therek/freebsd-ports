@@ -2,7 +2,7 @@
 # Date created:				3 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/IglooFTP/Makefile,v 1.10 2000/10/05 06:36:10 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	IglooFTP
@@ -18,7 +18,8 @@ MAINTAINER=	ports@FreeBSD.org
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}/src
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 
 post-extract:
 	@${RM} ${WRKSRC}/../share/docs/LICENSE~

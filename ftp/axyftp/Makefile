@@ -2,7 +2,7 @@
 # Date created: 		22 October 1998
 # Whom: 			Antti Kaipila <anttik@iki.fi>
 #
-# $FreeBSD: ports/ftp/axyftp/Makefile,v 1.13 2000/06/03 00:15:36 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	axyftp
@@ -16,7 +16,8 @@ MAINTAINER=	kris@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 MAN1=		axyftp.1
