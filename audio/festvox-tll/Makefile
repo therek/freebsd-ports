@@ -4,15 +4,13 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:17 agc Exp $
-# $FreeBSD: ports/audio/festvox-tll/Makefile,v 1.2 2000/09/20 09:09:57 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festvox-tll
 PORTVERSION=	2.0
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.leb.net/pub/blinux/festival/mirror.ogi-synth_home/ \
-		ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.ogi-synth_home/ \
-		ftp://cslu.cse.ogi.edu/pub/tts/
+MASTER_SITES=	${MASTER_SITE_FESTIVAL_OGI}
 DISTNAME=	voice_tll_di-2.0
 DIST_SUBDIR=	festival
 

@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.85 2002/05/18 18:47:39 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.86 2002/05/19 17:43:13 obrien Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -46,6 +46,17 @@ MASTER_SITE_COMP_SOURCES+=	\
 	ftp://ftp.uu.net/usenet/comp.sources.%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/archive/comp.sources.%SUBDIR%/ \
 	ftp://rtfm.mit.edu/pub/usenet/comp.sources.%SUBDIR%/
+
+MASTER_SITE_FESTIVAL= \
+	http://www.speech.cs.cmu.edu/festival/cstr/festival/%SUBDIR%/ \
+	ftp://ftp.leb.net/pub/blinux/festival/mirror.festival_home/%SUBDIR%/ \
+	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.festival_home/%SUBDIR%/ \
+	ftp://ftp.tuwien.ac.at/opsys/linux/blinux/festival/mirror.festival_home/%SUBDIR%/
+
+MASTER_SITE_FESTIVAL_OGI= \
+	ftp://ftp.leb.net/pub/blinux/festival/mirror.ogi-synth_home/ \
+	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.ogi-synth_home/ \
+	ftp://cslu.cse.ogi.edu/pub/tts/
 
 #
 # FreeBSD mirror sites

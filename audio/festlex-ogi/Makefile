@@ -4,14 +4,13 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.8 2000/02/15 09:26:12 agc Exp $
-# $FreeBSD: ports/audio/festlex-ogi/Makefile,v 1.3 2000/10/02 05:38:42 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festlex-ogi
 PORTVERSION=	2.0
 CATEGORIES=	audio
-MASTER_SITES=	ftp://cslu.cse.ogi.edu/pub/tts/ \
-		${MASTER_SITE_NETBSD}
+MASTER_SITES=	${MASTER_SITE_FESTIVAL_OGI}
 DISTNAME=	OGIlexicon-2.0
 DIST_SUBDIR=	festival
 

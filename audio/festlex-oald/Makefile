@@ -4,15 +4,14 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festlex-oald/Makefile,v 1.3 2000/10/02 05:38:40 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festlex-oald
 PORTVERSION=	1.4.1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/ \
-		${MASTER_SITE_NETBSD} \
-		ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/
+MASTER_SITES=	${MASTER_SITE_FESTIVAL}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 DISTNAME=	festlex_OALD
 DIST_SUBDIR=	festival
 

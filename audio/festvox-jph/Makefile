@@ -4,16 +4,13 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.10 2000/02/15 09:26:14 agc Exp $
-# $FreeBSD: ports/audio/festvox-jph/Makefile,v 1.2 2000/09/20 09:09:51 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festvox-jph
 PORTVERSION=	2.0
 CATEGORIES=	audio
-MASTER_SITES=	ftp://ftp.leb.net/pub/blinux/${SUB} \
-		ftp://ftp.mayn.de/pub/linux/BLinux/${SUB} \
-		ftp://cslu.cse.ogi.edu/pub/tts/
-SUB=		festival/mirror.ogi-synth_home/
+MASTER_SITES=	${MASTER_SITE_FESTIVAL_OGI}
 DISTNAME=	voice_jph_di-2.0
 DIST_SUBDIR=	festival
 

@@ -4,15 +4,14 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.12 2000/02/15 09:26:17 agc Exp $
-# $FreeBSD: ports/audio/festvox-rab8/Makefile,v 1.3 2000/10/02 05:39:27 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	festvox-rab8
 PORTVERSION=	1.4.1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/ \
-		${MASTER_SITE_NETBSD} \
-		ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/
+MASTER_SITES=	${MASTER_SITE_FESTIVAL}
+MASTER_SITE_SUBDIR=	${PORTVERSION}
 DISTNAME=	festvox_rablpc8k
 DIST_SUBDIR=	festival
 
