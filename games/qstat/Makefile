@@ -2,12 +2,12 @@
 # Date created:        28 May 1998
 # Whom:                Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD: ports/games/qstat/Makefile,v 1.6 2000/02/22 14:31:51 jedgar Exp $
+# $FreeBSD: ports/games/qstat/Makefile,v 1.7 2000/04/14 12:26:25 asami Exp $
 #
 
 PORTNAME=	qstat
 PORTVERSION=	2.3g
-CATEGORIES=	misc
+CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.activesw.com/pub/quake/
 DISTNAME=	qstat23g
 

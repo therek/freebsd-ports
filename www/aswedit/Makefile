@@ -2,12 +2,12 @@
 # Date created:		25 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/aswedit/Makefile,v 1.8 2000/02/28 08:33:57 asami Exp $
+# $FreeBSD: ports/www/aswedit/Makefile,v 1.9 2000/04/10 00:04:29 cpiazza Exp $
 #
 
 PORTNAME=	asWedit
 PORTVERSION= 	4.0.1
-CATEGORIES=	editors www linux
+CATEGORIES=	www editors linux
 MASTER_SITES=	http://www.advasoft.com/asWedit/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/www/asWedit/ \
 		ftp://sunsite.auc.dk/pub/infosystems/www/asWedit/ \

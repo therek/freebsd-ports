@@ -2,12 +2,12 @@
 # Date created:         Sat Apr 10 22:30:36 EEST 1999
 # Whom:                 vns@delta.odessa.ua
 #
-# $FreeBSD: ports/russian/apache13/Makefile,v 1.13 2000/07/05 12:36:49 tg Exp $
+# $FreeBSD: ports/russian/apache13/Makefile,v 1.14 2000/07/10 02:01:31 steve Exp $
 #
 
 PORTNAME=	apache
 PORTVERSION=	1.3.12
-CATEGORIES=	www russian
+CATEGORIES=	russian www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
 		ftp://ftp.rge.com/pub/infosystems/apache/dist/ \

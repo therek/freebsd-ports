@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.5 2000/04/14 23:11:06 asami Exp $
+# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.6 2000/07/14 13:27:07 alex Exp $
 #
 
 PORTNAME=	deepforest
@@ -23,18 +23,18 @@ USE_X_PREFIX=	yes
 SCRIPTS_ENV=	LANG=C LN=${LN} PERL=${PERL} LANGUAGE=${LANGUAGE} VERSION=${TKSTEPVERSION}
 PLIST_SUB=	PIXMAP_PATH=${PIXMAPPATH:S@^${PREFIX}/@@}
 
-# This port is for both converters/deepforest and japanese/deepforest.
-# But converters/deepforest and japanese/deepforest are mutually exclusive and
+# This port is for both archivers/deepforest and japanese/deepforest.
+# But archivers/deepforest and japanese/deepforest are mutually exclusive and
 # SHOULD NOT BE INSTALLED SIMULTANEOUSLY!
 TKSTEPVERSION=	8.0
 PIXMAPPATH?=	${PREFIX}/share/WindowMaker/Pixmaps
 LANGUAGE?=
 .if (${LANGUAGE} == "Japanese")
-CATEGORY_LIST=	archivers windowmaker tkstep80 japanese
+CATEGORY_LIST=	japanese windowmaker tkstep80 japanese
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0jp/tkstep.tcl:${PORTSDIR}/japanese/tkstep80
 LIB_DEP_LIST=	img.1:${PORTSDIR}/japanese/libimg
 .else
-CATEGORY_LIST=	converters windowmaker tkstep80
+CATEGORY_LIST=	archivers windowmaker tkstep80
 RUN_DEP_LIST=	${LOCALBASE}/lib/tkstep8.0/tkstep.tcl:${PORTSDIR}/x11-toolkits/tkstep80
 LIB_DEP_LIST=	img.1:${PORTSDIR}/graphics/libimg
 .endif

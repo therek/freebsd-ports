@@ -2,12 +2,12 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.39 2000/04/08 21:23:45 mharo Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.40 2000/09/15 21:40:40 will Exp $
 #
 
 PORTNAME=	kdemultimedia
 PORTVERSION=	1.94
-CATEGORIES=	misc kde
+CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
 

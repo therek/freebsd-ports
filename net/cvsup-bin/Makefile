@@ -2,12 +2,12 @@
 # Date created:		12 November 1997
 # Whom:			Sheldon Hearn <axl@iafrica.com>
 #
-# $FreeBSD: ports/net/cvsup-bin/Makefile,v 1.15 1999/12/28 05:35:34 jdp Exp $
+# $FreeBSD: ports/net/cvsup-bin/Makefile,v 1.16 2000/04/09 18:10:45 cpiazza Exp $
 #
 
 PORTNAME=	cvsup-bin
 PORTVERSION=	16.1
-CATEGORIES=	devel net
+CATEGORIES=	net devel
 MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/development/CVSup/binaries/
 
 MAINTAINER=	jdp@freebsd.org

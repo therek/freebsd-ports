@@ -2,12 +2,12 @@
 # Date created:		31 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11-servers/Xatm/Makefile,v 1.2 1999/12/27 05:30:50 taoka Exp $
+# $FreeBSD: ports/x11-servers/Xatm/Makefile,v 1.3 2000/04/10 00:52:41 cpiazza Exp $
 #
 
 PORTNAME=	xfs-atm
 PORTVERSION= 	3.0.1
-CATEGORIES=	x11
+CATEGORIES=	x11-servers
 MASTER_SITES=	http://www.netlab.is.tsukuba.ac.jp/~yokota/archive/
 DISTNAME=	${PORTNAME}+cid-${PORTVERSION}
 

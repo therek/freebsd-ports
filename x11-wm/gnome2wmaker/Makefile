@@ -2,12 +2,12 @@
 # Date Created:				18 September 1999
 # Whom:				 	Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.4 2000/06/01 16:25:30 ade Exp $
+# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.5 2000/08/01 16:26:20 reg Exp $
 #
 
 PORTNAME=	gnome2wmaker
 PORTVERSION= 	1.2
-CATEGORIES=	x11-toolkits gnome
+CATEGORIES=	x11-wm gnome
 MASTER_SITES=	http://ulli.linuxbox.com/gnome2wmaker/
 
 MAINTAINER=     reg@FreeBSD.org

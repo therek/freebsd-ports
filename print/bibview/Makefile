@@ -2,12 +2,12 @@
 # Date created:		21 July 1997
 # Whom:			dbader@eece.unm.edu
 #
-# $FreeBSD: ports/print/bibview/Makefile,v 1.7 2000/04/09 17:39:42 cpiazza Exp $
+# $FreeBSD: ports/print/bibview/Makefile,v 1.8 2000/04/09 17:49:19 cpiazza Exp $
 #
 
 PORTNAME=	bibview
 PORTVERSION=	2.2
-CATEGORIES=	databases print
+CATEGORIES=	print databases
 MASTER_SITES=	${MASTER_SITE_TEX_CTAN}
 MASTER_SITE_SUBDIR= biblio/bibtex/utils/bibview-2.0
 

@@ -2,12 +2,12 @@
 # Date created:				2 April 1999
 # Whom:					Gordon Greeff
 #
-# $FreeBSD: ports/misc/peq/Makefile,v 1.2 1999/08/25 07:22:21 obrien Exp $
+# $FreeBSD: ports/misc/peq/Makefile,v 1.3 2000/04/14 08:46:29 asami Exp $
 #
 
 PORTNAME=	peq
 PORTVERSION=	0.7.1
-CATEGORIES=	games
+CATEGORIES=	misc games
 MASTER_SITES=	http://silverstone.fortunecity.com/jaguar/37/ \
 		ftp://lost.iafrica.com/pub/peq/
 
