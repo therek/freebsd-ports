@@ -2,15 +2,15 @@
 # Date created:		3 Mar 2000
 # Whom:			Jing-Tang Keith Jang <keith@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/moefonts-cid/Makefile,v 1.2 2000/10/08 10:19:19 asami Exp $
+# $FreeBSD: ports/chinese/moefonts-cid/Makefile,v 1.3 2000/11/06 18:14:45 keith Exp $
 #
 
 PORTNAME=	moefonts-cid
 PORTVERSION=	1.0
 CATEGORIES=	chinese print
-MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/moe_cidfonts/ \
-		ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/ \
-		ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/samples/
+MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/moefonts-cid/ \
+				ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/ \
+				ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/samples/
 DISTFILES=	MOEKai-Regular MOESung-Regular ac13.tar.Z ag13.tar.Z
 
 MAINTAINER=	keith@FreeBSD.org
