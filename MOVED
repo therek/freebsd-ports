@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.341 2004/02/18 03:50:34 adamw Exp $
+# $FreeBSD: ports/MOVED,v 1.342 2004/02/22 01:26:46 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -817,3 +817,4 @@ lang/squeak2|lang/squeak3|2004-02-17|Outdated, obsolete and no longer needed
 www/mozilla-gtk2|www/mozilla|2004-02-17|GTK2 mozilla is now the default
 www/mozilla-devel-gtk2|www/mozilla-devel|2004-02-17|GTK2 mozilla is now the default
 games/myth2_demo||2004-02-21|Port broken for >6 months
+ircatlite||2004-02-21|Software has not been developed in >4 years
