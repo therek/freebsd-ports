@@ -3,13 +3,12 @@
 # Date created:         11 September 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/pysol/Makefile,v 1.18 1999/10/13 08:43:59 tg Exp $
+# $FreeBSD: ports/games/pysol/Makefile,v 1.19 1999/11/05 10:15:49 tg Exp $
 #
 
 DISTNAME=       pysol-3.00
 CATEGORIES=	games
-MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/ \
-		http://wildsau.idv.uni-linz.ac.at/mfx/download/beta/
+MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CARDSETS}${EXTRACT_SUFX}
 
 MAINTAINER=	tg@FreeBSD.org
