@@ -2,7 +2,7 @@
 # Date created:        28 October 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/gnomecore/Makefile,v 1.2 2000/11/17 09:38:56 nakai Exp $
+# $FreeBSD$
 #
 
 # This port does not work with another version of master port.
@@ -16,5 +16,7 @@ EXTRA_PATCHES=	${.CURDIR}/files/patch-*
 MAINTAINER=	nakai@FreeBSD.org
 
 BUILD_DEPENDS=	gnome-libs-jp:${PORTSDIR}/japanese/gnomelibs
+
+IGNORE=		"gnomecore 1.4.0.6 has these patches merged - just install x11/gnomecore"
 
 .include "${MASTERDIR}/Makefile"
