@@ -2,7 +2,7 @@
 # Date created:		06 Nov 2000
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/khotkeys/Makefile,v 1.1 2000/11/07 10:37:15 rse Exp $
 #
 
 PORTNAME=	khotkeys
@@ -16,6 +16,7 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
 		kfm.3:${PORTSDIR}/x11/kdelibs11 \
 		kfile.3:${PORTSDIR}/x11/kdelibs11
+RUN_DEPENDS=	kcontrol:${PORTSDIR}/x11/kdebase11
 
 NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
