@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.474 2001/03/09 17:17:51 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 44bsd-rdist
@@ -74,6 +74,7 @@
     SUBDIR += echoping
     SUBDIR += etherboot
     SUBDIR += ethereal
+    SUBDIR += ettercap
     SUBDIR += everybuddy
     SUBDIR += fidelio
     SUBDIR += firetalk
