@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/xvile/Makefile,v 1.25 2000/04/17 00:17:32 reg Exp $
+# $FreeBSD: ports/editors/xvile/Makefile,v 1.26 2000/06/01 13:29:42 gj Exp $
 #
 
 PORTNAME=	xvile
@@ -40,7 +40,7 @@ CONFIGURE_ARGS+= --with-screen=x11
 
 .if defined(WITH_PERL)
 CONFIGURE_ARGS+= --with-perl
-PLIST=		${PKGDIR}/PLIST.perl
+PLIST=		${PKGDIR}/pkg-plist.perl
 USE_PERL5=	yes
 .endif
 
