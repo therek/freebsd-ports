@@ -3,7 +3,7 @@
 # Date created:				22 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/pccts/Makefile,v 1.14 2001/04/02 08:30:41 mharo Exp $
+# $FreeBSD: ports/devel/pccts/Makefile,v 1.15 2001/08/22 17:28:52 obrien Exp $
 #
 
 PORTNAME=		pccts
@@ -18,6 +18,7 @@ USE_ZIP=		yes
 WRKSRC=			${WRKDIR}/pccts
 ALL_TARGET=
 MAKEFILE=		makefile
+MAKE_ENV=		COPT="${CFLAGS}"
 
 MAN1=			antlr.1 dlg.1
 
@@ -49,7 +50,7 @@ do-install:
 post-install:
 .if !defined(NOPORTDOCS)
 	@ ${MKDIR} ${PREFIX}/share/doc/pccts
-.for file in CHANGES_FROM_131.txt CHANGES_FROM_133.txt CHANGES_FROM_133_BEFORE_MR13.txt KNOWN_PROBLEMS.txt README RIGHTS history.ps history.txt old_README
+.for file in CHANGES_FROM_131.txt CHANGES_FROM_133.txt CHANGES_FROM_133_BEFORE_MR13.txt KNOWN_PROBLEMS.txt README RIGHTS history.ps history.txt
 	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/pccts/${file}
 .endfor
 .endif

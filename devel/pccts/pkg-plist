@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/pccts/pkg-plist,v 1.7 2000/11/22 00:26:02 obrien Exp $
+@comment $FreeBSD: ports/devel/pccts/pkg-plist,v 1.8 2001/08/22 17:28:52 obrien Exp $
 bin/antlr
 bin/dlg
 bin/genmk
@@ -52,7 +52,6 @@ share/doc/pccts/README
 share/doc/pccts/RIGHTS
 share/doc/pccts/history.txt
 share/doc/pccts/history.ps
-share/doc/pccts/old_README
 share/examples/pccts/makefile
 share/examples/pccts/1/makefile
 share/examples/pccts/1/test.g
