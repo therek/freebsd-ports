@@ -2,11 +2,11 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.11 2000/10/08 06:13:14 asami Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.12 2000/11/16 14:06:51 tg Exp $
 #
 
 PORTNAME=		xml
-PORTVERSION= 		0.6.2
+PORTVERSION= 		0.6.3
 CATEGORIES=		textproc python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}                     \
 			http://www.python.org/sigs/xml-sig/files/      \
