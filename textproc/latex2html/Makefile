@@ -2,7 +2,7 @@
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.15 2000/11/25 10:31:07 asami Exp $
+# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.16 2000/12/11 16:44:38 roam Exp $
 #
 
 PORTNAME=	latex2html
@@ -22,6 +22,7 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 USE_PERL5=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-perl=${PERL} \
+		--disable-gif \
 		--libdir=${PREFIX}/share/${PORTNAME}
 
 post-install:
