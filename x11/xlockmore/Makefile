@@ -2,7 +2,7 @@
 # Date created:		9 November 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.64 2001/07/18 10:46:13 tg Exp $
+# $FreeBSD: ports/x11/xlockmore/Makefile,v 1.65 2001/09/27 11:44:51 tg Exp $
 #
 
 PORTNAME=	xlockmore
@@ -32,11 +32,11 @@ MAN1=		xlock.1
 
 WITH_MESAGL?=	yes
 .if ${WITH_MESAGL} == yes
-CONFIGURE_ARGS+=	--with-mesagl
+CONFIGURE_ARGS+=	--with-mesa
 MESALIB=	${PTHREAD_LIBS}
 USE_MESA=	yes
 .else
-CONFIGURE_ARGS+=	--without-mesagl --without-opengl
+CONFIGURE_ARGS+=	--without-mesa --without-opengl
 .endif
 CONFIGURE_ENV+=		XLOCKLIBS="${KRB5LIB} ${MESALIB}"
 
