@@ -2,11 +2,11 @@
 # Date created:				April 27 1998
 # Whom:	      				Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.9 2000/04/22 22:25:19 vanilla Exp $
+# $FreeBSD: ports/devel/p5-IO-stringy/Makefile,v 1.10 2000/06/09 20:43:41 will Exp $
 #
 
 PORTNAME=	IO-stringy
-PORTVERSION=	1.212
+PORTVERSION=	1.216
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
