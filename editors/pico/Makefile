@@ -2,7 +2,7 @@
 # Date created:			16 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/editors/pico/Makefile,v 1.4 2001/02/05 14:36:20 olgeni Exp $
+# $FreeBSD: ports/editors/pico/Makefile,v 1.5 2001/02/11 05:58:07 kevlo Exp $
 #
 # All patch files have been taken from mail/pine4
 
@@ -23,7 +23,7 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/ \
 		ftp://ftp.vse.cz/pub/network/mail/pine/ \
 		ftp://sunsite.icm.edu.pl/pub/unix/mail/pine/ \
 		ftp://giswitch.sggw.waw.pl/pub/unix/pine/ \
-		ftp://ftp.ucr.ac.cr/pub/Unix/mail/pine \
+		ftp://ftp.ucr.ac.cr/pub/Unix/mail/pine/ \
 		ftp://ftp.ut.ee/pub/unix/mail/pine/
 DISTNAME=	pine${pineversion}
 
