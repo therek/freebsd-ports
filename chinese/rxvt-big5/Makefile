@@ -2,24 +2,29 @@
 # Date created:                   Thur Nov 2, 2000
 # Whom:                           Michael C . Wu <keichii@iteration.net>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/chinese/rxvt-big5/Makefile,v 1.1 2000/11/02 03:09:17 foxfair Exp $
 #
 
 MASTERDIR=      ${.CURDIR}/../../x11/rxvt
+
+.if !defined(NO_MULTIBYTE_CURSOR)
+EXTRA_PATCHES=	${.CURDIR}/files/patch-multibyte_cursor
+.endif
+PKGMESSAGE=	${.CURDIR}/pkg-message
+
 .include "${MASTERDIR}/Makefile"
 
-PORTNAME= rxvt
-PORTVERSION= 2.6.3
+PORTNAME=	rxvt
+PORTVERSION=	2.6.3
+PORTREVISION=	1
 
 #.include <bsd.port.pre.mk>
 PKGNAMEPREFIX:= ${PKGNAMEPREFIX}tw-
 
-
 MAINTAINER=	keichii@iteration.net
 
 
-CONFIGURE_ARGS+= --enable-xim --enable-big5 \
+CONFIGURE_ARGS+= \
+		--enable-xim --enable-big5 \
 		--enable-next-scroll --with-term=xterm-color
-
-
 
