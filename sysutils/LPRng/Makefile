@@ -2,11 +2,11 @@
 # Date created:		2 Apr 1997
 # Whom:			desmo@bandwidth.org
 #
-# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.13 2000/09/05 02:14:30 steve Exp $
+# $FreeBSD: ports/sysutils/LPRng/Makefile,v 1.14 2000/10/08 10:22:54 asami Exp $
 #
 
 PORTNAME=	LPRng
-PORTVERSION=	3.6.23
+PORTVERSION=	3.6.25
 CATEGORIES=	sysutils print
 MASTER_SITES=	ftp://ftp.astart.com/pub/LPRng/LPRng/
 EXTRACT_SUFX=	.tgz
