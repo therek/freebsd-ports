@@ -1,8 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/x11-toolkits/Xaw3d/pkg-plist,v 1.13 2002/10/06 18:44:12 naddy Exp $
 lib/libXaw3d.a
 lib/libXaw3d.so
 lib/libXaw3d.so.%%XAWVER%%
-%%XAWLINK%%lib/libXaw3d.so.6
 include/X11/Xaw3d/AllWidgets.h
 include/X11/Xaw3d/AsciiSink.h
 include/X11/Xaw3d/AsciiSinkP.h
