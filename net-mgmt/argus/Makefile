@@ -2,11 +2,11 @@
 # Date created:		26 November 1998
 # Whom:			Jonathan Hanna <jhanna@home.com>
 #
-# $FreeBSD: ports/net/argus/Makefile,v 1.10 2001/06/02 11:39:40 se Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	argus
-PORTVERSION=	2.0.2
+PORTVERSION=	2.0.3
 CATEGORIES=	net security
 MASTER_SITES=	http://qosient.com/argus/src/ \
 		ftp://qosient.com/pub/argus/src/
