@@ -2,15 +2,15 @@
 # Date created:		29 April 2001
 # Whom:			Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/japanese/pycodec/Makefile,v 1.1 2001/06/23 18:09:14 knu Exp $
+# $FreeBSD: ports/japanese/pycodec/Makefile,v 1.2 2001/06/23 18:11:52 knu Exp $
 #
 
 PORTNAME=	pycodec
-PORTVERSION=	1.2.2
+PORTVERSION=	1.3
 CATEGORIES=	japanese python converters
 MASTER_SITES=	http://pseudo.grad.sccs.chukyo-u.ac.jp/~kajiyama/python/ \
 		ftp://ftp2.python.or.kr/pub/FreeBSD/ports/distfiles/ \
-		ftp://www3.kr.freebsd.org/~perky/distfiles/
+		http://www3.kr.freebsd.org/~perky/distfiles/
 DISTNAME=	JapaneseCodecs-${PORTVERSION}
 
 MAINTAINER=	perky@python.or.kr
