@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.39 2000/08/03 09:28:41 asami Exp $
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.40 2000/09/19 15:50:14 sobomax Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use

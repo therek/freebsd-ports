@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.302 2000/09/13 15:13:09 nakai Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.303 2000/09/19 15:50:14 sobomax Exp $
 #
 
     SUBDIR += 9term
