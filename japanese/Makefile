@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.353 2001/04/09 09:55:44 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.354 2001/04/11 04:54:03 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -118,6 +118,7 @@
     SUBDIR += kappa20
     SUBDIR += kbanner
     SUBDIR += kcc
+    SUBDIR += kde2-i18n
     SUBDIR += kdrill
     SUBDIR += kebook
     SUBDIR += kinput2-canna
