@@ -3,7 +3,7 @@
 # Date created:		Thu May  1 20:28:44 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/star/Makefile,v 1.22 2000/04/22 10:13:18 mharo Exp $
+# $FreeBSD: ports/sysutils/star/Makefile,v 1.23 2001/02/07 14:51:15 obrien Exp $
 #
 
 PORTNAME=		star
@@ -20,16 +20,16 @@ MAKE_ENV=	MAKEPROG=gmake CCOM=${CC}
 MAN1=		star.1
 MLINKS=		star.1 ustar.1
 
-.if ${MACHINE_ARCH} != "i386"
+.if ${MACHINE_ARCH} != "i386" || ${CC} != "cc"
 post-extract:
 	@${LN} -sf i386-freebsd-cc.rul \
-		${WRKSRC}/RULES/${MACHINE_ARCH}-freebsd-cc.rul
+		${WRKSRC}/RULES/${MACHINE_ARCH}-freebsd-${CC}.rul
 .endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/star/OBJ/${MACHINE_ARCH}-freebsd-cc/star \
 		${PREFIX}/bin
-	(cd ${PREFIX}/bin; ${LN} -f star ustar)
+	cd ${PREFIX}/bin ; ${LN} -f star ustar
 	${INSTALL_MAN} ${WRKSRC}/star/star.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
