@@ -2,11 +2,11 @@
 # Date created:				December-15-2000
 # Whom:	      				Alfred Perlstein <alfred@freebsd.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-SSLeay/Makefile,v 1.3 2001/04/05 06:31:20 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Crypt-SSLeay
-PORTVERSION=	0.25
+PORTVERSION=	0.35
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt
