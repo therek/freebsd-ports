@@ -2,12 +2,11 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-mode.el/Makefile,v 1.3 2001/06/09 02:34:52 knu Exp $
+# $FreeBSD: ports/lang/ruby-mode.el/Makefile,v 1.4 2001/06/16 08:46:34 knu Exp $
 #
 
 PORTNAME=	ruby-mode.el
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES=	lang ruby elisp
 MASTER_SITES=	# none
 DISTFILES=	# none
