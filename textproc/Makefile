@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.180 2001/03/11 15:29:14 joe Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.181 2001/03/12 21:11:07 fenner Exp $
 #
 
     SUBDIR += agrep
@@ -153,6 +153,7 @@
     SUBDIR += tkdiff
     SUBDIR += tth
     SUBDIR += txt2html
+    SUBDIR += ua-ispell
     SUBDIR += unroff
     SUBDIR += urlview
     SUBDIR += wdiff
