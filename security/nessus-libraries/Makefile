@@ -2,7 +2,7 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.12 2000/11/09 13:27:28 des Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.13 2000/11/09 16:39:04 sobomax Exp $
 #
 
 PORTNAME=	nessus-libraries
@@ -25,6 +25,7 @@ WRKSRC=		${WRKDIR}/nessus-libraries
 
 USE_LIBTOOL=	YES
 CONFIGURE_ARGS=	--enable-cipher
+INSTALLS_SHLIB=	YES
 
 MAN1=		nessus-config.1
 
