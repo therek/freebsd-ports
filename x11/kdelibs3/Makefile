@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.47 2000/05/29 01:01:22 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.48 2000/05/29 19:49:45 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} --enable-shared \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 		MOC="${MOC}"
 USE_GMAKE=	yes
-MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}" \
+MAKE_ENV=	SOMAJOR="${SOMAJOR}" SOMINOR="${SOMINOR}"
 PLIST_SUB+=	LIBVER="${SOMAJOR}"
 
 post-install:
