@@ -2,11 +2,12 @@
 # Date created:				8th March 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/libgda/Makefile,v 1.2 2001/05/11 16:36:14 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libgda
 PORTVERSION=	0.2.10
+PORTREVISION=	1
 CATEGORIES=	databases gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-db
@@ -18,11 +19,14 @@ LIB_DEPENDS=	giconv.2:${PORTSDIR}/converters/libiconv \
 
 USE_GNOMECTRL=	yes
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lintl -lgdbm"
+
+MAN3=		Gnome::GDA::Client.3 Gnome::GDA::Common.3
+MAN3PREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
