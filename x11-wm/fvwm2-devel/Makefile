@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.38 2001/06/24 19:49:50 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fvwm
