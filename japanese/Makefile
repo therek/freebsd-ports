@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.287 2000/08/18 18:53:05 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.288 2000/08/18 19:01:29 knu Exp $
 #
 
     SUBDIR += Canna
@@ -225,6 +225,7 @@
     SUBDIR += ptex-pkfonts600
     SUBDIR += ptex-sjis
     SUBDIR += qkc
+    SUBDIR += rbnamazu
     SUBDIR += recjis
     SUBDIR += rogue_s
     SUBDIR += rskkserv
