@@ -2,7 +2,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.34 2000/06/26 02:23:41 jseger Exp $
+# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.35 2000/07/02 23:49:39 jseger Exp $
 #
 
 PORTNAME=	isc-dhcp
@@ -12,6 +12,8 @@ MASTER_SITES=   ftp://ftp.isc.org/isc/dhcp/
 DISTNAME=	dhcp-2.0pl2
 
 MAINTAINER=	jseger@FreeBSD.org
+
+FORBIDDEN=	security hole found
 
 Y2K=		http://www.isc.org/y2k.html
 
