@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/www/dansguardian/files/dansguardian.sh,v 1.1 2004/05/06 20:09:41 pav Exp $
 
 # PROVIDE: dansguardian
 # REQUIRE: DAEMON squid
@@ -13,9 +13,9 @@
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-dansguardian_enable="NO"
-dansguardian_flags=""
-dansguardian_pidfile="/var/run/dansguardian.pid"
+dansguardian_enable=${dansguardian_enable:-"NO"}
+dansguardian_flags=${dansguardian_flags:-""}
+dansguardian_pidfile=${dansguardian_pidfile:-"/var/run/dansguardian.pid"
 
 . %%RC_SUBR%%
 
@@ -28,3 +28,4 @@ load_rc_config $name
 pidfile="${dansguardian_pidfile}"
 
 run_rc_command "$1"
+
