@@ -2,7 +2,7 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.2 2001/05/06 16:48:04 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.3 2001/05/07 19:52:04 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -13,9 +13,9 @@ MASTER_SITE_SUBDIR=	${RUBY_VER}
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
 
-#PATCH_SITES=	http://www.ruby-lang.org/~knu/
-#PATCHFILES=	${RUBY_DISTNAME}-${RUBY_PATCHLEVEL}.patch.gz
-#PATCH_DIST_STRIP=	-p1
+PATCH_SITES=	http://www.ruby-lang.org/~knu/
+PATCHFILES=	${RUBY_PATCHFILES}
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -101,7 +101,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/ext/pty/README* ${RUBY_DOCDIR}/pty
 	${MKDIR} ${RUBY_DOCDIR}/readline
 	${INSTALL_DATA} ${WRKSRC}/ext/readline/README ${RUBY_DOCDIR}/readline
-	${CP} -R ${WRKSRC}/doc/irb ${RUBY_DOCDIR}/
+	${CP} -R ${WRKSRC}/doc/* ${RUBY_DOCDIR}/
 .endif
 	@${CAT} ${PKGMESSAGE}
 
