@@ -3,7 +3,7 @@
 # Date created:        01 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD>org>
 #
-# $FreeBSD: ports/misc/cassowary/Makefile,v 1.1.1.1 1999/10/06 05:38:50 nakai Exp $
+# $FreeBSD: ports/misc/cassowary/Makefile,v 1.2 1999/10/13 07:31:43 nakai Exp $
 #
 
 DISTNAME=	cassowary-0.52
@@ -14,6 +14,8 @@ MAINTAINER=	nakai@FreeBSD.org
 
 BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile
 LIB_DEPENDS=	GTL.3:${PORTSDIR}/misc/gtl
+
+BROKEN=		build
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
