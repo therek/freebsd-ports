@@ -2,7 +2,7 @@
 # Date created:		11 Dez 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/emulators/frodo/Makefile,v 1.8 2000/04/12 04:55:23 mharo Exp $
+# $FreeBSD: ports/emulators/frodo/Makefile,v 1.9 2000/06/23 13:43:57 sobomax Exp $
 #
 
 PORTNAME=	frodo
@@ -39,7 +39,7 @@ do-install:
 	${INSTALL_DATA} "${WRKDIR}/Frodo/Frodo Logo" ${PREFIX}/libexec/frodo
 	${CP} "${WRKDIR}/Frodo/TkGui.tcl" ${PREFIX}/libexec/frodo
 	${MKDIR} ${PREFIX}/libexec/frodo/64prgs
-	@(${TAR} -C ${WRKDIR}/Frodo/64prgs -cf - . | ${TAR} -C ${PREFIX}/libexec/frodo/64prgs -xf -
+	@(${TAR} -C ${WRKDIR}/Frodo/64prgs -cf - . | ${TAR} -C ${PREFIX}/libexec/frodo/64prgs -xf -)
 
 post-install:
 .if !defined(NOPORTDOCS)
