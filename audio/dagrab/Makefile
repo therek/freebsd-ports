@@ -3,17 +3,16 @@
 # Date created:		2nd, Jan 1999
 # Whom:			Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/audio/dagrab/Makefile,v 1.4 1999/08/25 04:35:25 obrien Exp $
+# $FreeBSD: ports/audio/dagrab/Makefile,v 1.5 1999/10/21 18:49:32 cpiazza Exp $
 #
 
-DISTNAME=	dagrab-0.3.2
+DISTNAME=	dagrab-0.3.3
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/sound/cdrom
-EXTRACT_SUFX=	.tgz
 
 PATCH_SITES=	http://www.freebsd.org/~cpiazza/distfiles/
-PATCHFILES=	dagrab-0.3.2-freebsd.patch.gz
+PATCHFILES=	dagrab-0.3.3-freebsd.patch.gz
 
 MAINTAINER=	clkao@CirX.ORG
 
