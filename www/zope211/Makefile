@@ -3,7 +3,7 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.2 1999/11/28 22:34:09 billf Exp $
+# $FreeBSD: ports/www/zope/Makefile,v 1.3 2000/02/13 17:09:11 dirk Exp $
 
 DISTNAME=	Zope-${VERSION}-src
 PKGNAME=	zope-${VERSION}
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	python1.5:${PORTSDIR}/lang/python
-RUN_DEPENDS=	${PREFIX}/sbin/apache:${PORTSDIR}/www/apache13-modssl
+RUN_DEPENDS=	${LOCALBASE}/sbin/apache:${PORTSDIR}/www/apache13-modssl
 
 # Build has to be done in the final location after installing the sources
 # there. It were a major action to fix all paths otherwise.
