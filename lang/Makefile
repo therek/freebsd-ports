@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.190 2000/09/08 10:39:02 asami Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.191 2000/09/08 11:50:42 tg Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -55,7 +55,6 @@
     SUBDIR += mawk
     SUBDIR += mit-scheme
     SUBDIR += mixal
-    SUBDIR += mocka
     SUBDIR += modula-3
     SUBDIR += modula-3-lib
     SUBDIR += modula-3-socks
