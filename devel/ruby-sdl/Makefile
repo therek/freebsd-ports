@@ -2,11 +2,12 @@
 # Date created:		27 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.7 2001/04/09 11:54:49 sobomax Exp $
+# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.8 2001/04/09 13:36:46 knu Exp $
 #
 
 PORTNAME=	sdl
 PORTVERSION=	0.4
+PORTREVISION=	1
 CATEGORIES=	devel graphics audio ruby
 MASTER_SITES=	http://www.kmc.kyoto-u.ac.jp/~ohai/rubysdl/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -34,9 +35,6 @@ RD_DOCS_JA=	rubysdl_doc.rd
 
 DOCS_EN=	README.en ${RD_DOCS_EN} ${RD_DOCS_EN:S/.rd$/.html/}
 DOCS_JA=	README.ja ${RD_DOCS_JA} ${RD_DOCS_JA:S/.rd$/.html/}
-
-post-extract:
-	${RM} ${WRKSRC}/*.o ${WRKSRC}/*.so
 
 post-build:
 .if !defined(NOPORTDOCS)
