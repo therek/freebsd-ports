@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.77 1999/10/05 16:26:25 cpiazza Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.78 1999/10/05 16:32:46 cpiazza Exp $
 #
 
     SUBDIR += LPRng
@@ -22,6 +22,7 @@
     SUBDIR += daemontools
     SUBDIR += doconfig
     SUBDIR += ffsrecov
+    SUBDIR += flexbackup
     SUBDIR += gcombust
     SUBDIR += gnomeadmin
     SUBDIR += gnomecontrolcenter
