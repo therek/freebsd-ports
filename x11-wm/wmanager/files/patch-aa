@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.5 2002/10/27 23:45:47 adamw Exp $
+$FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.6 2003/11/03 21:14:21 krion Exp $
 
 --- Makefile.orig	Mon Nov 15 00:29:24 1999
 +++ Makefile	Sat Oct 26 06:02:46 2002
@@ -27,7 +27,7 @@ $FreeBSD: ports/x11-wm/wmanager/files/patch-aa,v 1.5 2002/10/27 23:45:47 adamw E
 -LDDIRS    = -L/usr/X11R6/lib -L/usr/lib -L/usr/local/lib
 -
 +LD        = $(CXX)
-+LDFLAGS   = -lMesaGL -lfltk -lXext -lX11 -lm $(PTHREAD_LIBS)
++LDFLAGS   = -lGL -lfltk -lXext -lX11 -lm $(PTHREAD_LIBS)
 +LDDIRS    = -L$(x11lib)
  
  # install settings
