@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.355 2001/06/16 18:12:28 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.356 2001/06/18 06:30:08 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -13,6 +13,7 @@
     SUBDIR += amanda
     SUBDIR += amanda24-client
     SUBDIR += amanda24-server
+    SUBDIR += argparse
     SUBDIR += ari-yahoo
     SUBDIR += asbutton
     SUBDIR += astrolog
