@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.68 2000/06/04 16:06:34 will Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.69 2000/06/07 16:51:59 will Exp $
 #
 
     SUBDIR += FWF
@@ -21,6 +21,7 @@
     SUBDIR += jx
     SUBDIR += kde-qt-addon
     SUBDIR += lesstif
+    SUBDIR += libjtree
     SUBDIR += linux-gtk
     SUBDIR += neXtaw
     SUBDIR += open-motif
