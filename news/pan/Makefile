@@ -1,16 +1,16 @@
 # New ports collection makefile for:	pan
-# Version required:			0.6.5
+# Version required:			0.6.7
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.9 1999/11/30 18:48:04 cpiazza Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.10 1999/12/04 23:32:51 cpiazza Exp $
 #
 
-DISTNAME=	pan-0.6.5
+DISTNAME=	pan-0.6.7
 CATEGORIES=	news gnome
 MASTER_SITES=	ftp://source.rebelbase.com/pub/pan/
 
-MAINTAINER=	jedgar@fxp.org
+MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs
 
