@@ -3,11 +3,11 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/rascal/Makefile,v 1.6 2001/05/24 19:01:27 ijliao Exp $
+# $FreeBSD: ports/math/rascal/Makefile,v 1.7 2001/06/25 12:09:28 ijliao Exp $
 #
 
 PORTNAME=	rascal
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.5
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -22,7 +22,12 @@ WRKSRC=		${WRKDIR}/Rascal-${PORTVERSION}
 USE_GMAKE=	yes
 ALL_TARGET=	
 
+MANCOMPRESSED=	yes
+MAN1=	rascal.1
+
 post-patch:
-	@${PERL} -pi -e "s,%%LOCALBASE%%,${LOCALBASE},g" ${WRKSRC}/Makefile
+	@${PERL} -pi -e "s,%%LOCALBASE%%,${LOCALBASE},g ; \
+		s,g\+\+,${CXX},g ; \
+		s,doc/,share/doc/,g" ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>
