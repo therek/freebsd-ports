@@ -3,7 +3,7 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.1.1.1 2000/02/12 21:52:59 jedgar Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.2 2000/02/24 16:06:05 imura Exp $
 
 DISTNAME=	cervisia-0.2.1
 CATEGORIES=	devel
@@ -11,6 +11,7 @@ MASTER_SITES=	ftp://ftp.kde.org/pub/kde/unstable/apps/utils/
 
 MAINTAINER=	andrews@technologist.com
 
+LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kwm:${PORTSDIR}/x11/kdebase11
 
 USE_QT=		yes
