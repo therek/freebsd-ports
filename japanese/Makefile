@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.343 2001/02/21 17:11:42 takawata Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.344 2001/03/02 05:20:55 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -215,6 +215,7 @@
     SUBDIR += onew-wnn6
     SUBDIR += p5-Jcode
     SUBDIR += p5-jcode.pl
+    SUBDIR += p5-Text-ChaSen
     SUBDIR += p5-Text-Kakasi
     SUBDIR += p5-manual
     SUBDIR += p5-mkres
