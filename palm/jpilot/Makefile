@@ -1,13 +1,13 @@
 # New ports collection makefile for:   jpilot
-# Version required:    0.93.1
+# Version required:    0.95
 # Date created:        23 August 1999
 # Whom:                Alex Varju <varju@webct.com>
 #
-# $FreeBSD: ports/palm/jpilot/Makefile,v 1.2 1999/08/31 15:44:35 sumikawa Exp $
+# $FreeBSD: ports/palm/jpilot/Makefile,v 1.3 1999/09/09 15:27:20 sumikawa Exp $
 #
 # "?=" and "+=" are for including this Makefile from japanese/jpilot
 
-DISTNAME=	jpilot-0.93.1
+DISTNAME=	jpilot-0.95
 CATEGORIES=	palm comms
 MASTER_SITES=	http://jpilot.linuxbox.com/
 
