@@ -2,7 +2,7 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xt/Makefile,v 1.11 2000/03/21 07:45:29 mharo Exp $
+# $FreeBSD: ports/textproc/xt/Makefile,v 1.12 2000/04/09 21:53:22 cpiazza Exp $
 #
 
 PORTNAME=	xt
@@ -24,12 +24,14 @@ DIR=		${PREFIX}/share/java
 
 do-build:
 	${SED} -e s,%%PREFIX%%,${PREFIX},g ${FILESDIR}/xt-xml4j.sh > ${WRKSRC}/xt-xml4j
+	${SED} -e s,%%PREFIX%%,${PREFIX},g ${FILESDIR}/xt-xp.sh > ${WRKSRC}/xt-xp
 
 do-install:
 	${MKDIR} ${DIR}/classes ${DIR}/xt
 	(cd ${WRKSRC};\
 	 ${INSTALL_DATA} xt.jar sax.jar ${DIR}/classes; \
 	 ${CP} -R copying.txt demo xt.htm ${DIR}/xt; \
-	 ${INSTALL_SCRIPT} ${WRKSRC}/xt-xml4j ${PREFIX}/bin)
+	 ${INSTALL_SCRIPT} ${WRKSRC}/xt-xml4j ${PREFIX}/bin; \
+	 ${INSTALL_SCRIPT} ${WRKSRC}/xt-xp ${PREFIX}/bin)
 
 .include <bsd.port.mk>
