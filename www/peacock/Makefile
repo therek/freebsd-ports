@@ -2,7 +2,7 @@
 # Date created:				21st April 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/peacock/Makefile,v 1.4 2000/08/04 01:34:38 ade Exp $
+# $FreeBSD: ports/www/peacock/Makefile,v 1.5 2000/08/04 16:11:36 ade Exp $
 #
 
 PORTNAME=	peacock
@@ -12,8 +12,7 @@ MASTER_SITES=	http://peacock.sourceforge.net/sources/
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
