@@ -2,7 +2,7 @@
 # Date created:		9 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.1 2000/01/29 05:46:05 steve Exp $
+# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.2 2000/04/13 19:10:37 cpiazza Exp $
 #
 
 PORTNAME=	xkbctrl
@@ -26,6 +26,6 @@ do-extract:
 		done
 
 do-install:
-		@${INSTALL_PROGRAM} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin
+		@${INSTALL_PROGRAM} ${WRKSRC}/${PORTNAME} ${PREFIX}/bin
 
 .include <bsd.port.mk>

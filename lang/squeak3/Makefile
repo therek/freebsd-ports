@@ -2,7 +2,7 @@
 # Date created:        			4 March 1999
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak2/Makefile,v 1.16 2000/03/30 22:06:08 nectar Exp $
+# $FreeBSD: ports/lang/squeak2/Makefile,v 1.17 2000/04/12 06:20:47 obrien Exp $
 #
 
 PORTNAME=	squeak
@@ -11,7 +11,8 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.inria.fr/INRIA/Projects/SOR/users/piumarta/squeak/ \
 		ftp://ftp.cs.uni-magdeburg.de/pub/Smalltalk/free/squeak/unix/ \
 		http://www.nectar.com/distfiles/squeak/
-DISTFILES=	Squeak2.7-src${EXTRACT_SUFX} ${SQUEAK_SRC}
+DISTNAME=	Squeak${PORTVERSION}-src
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${SQUEAK_SRC}
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 
