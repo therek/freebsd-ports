@@ -2,13 +2,13 @@
 # Date created:         25 December 1998
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/www/calamaris/Makefile,v 1.9 1999/12/29 15:25:11 billf Exp $
+# $FreeBSD: ports/www/calamaris/Makefile,v 1.10 2000/04/10 00:04:37 cpiazza Exp $
 #
 
 PORTNAME=	calamaris
-PORTVERSION= 	2.29
+PORTVERSION= 	2.39
 CATEGORIES=	www textproc
-MASTER_SITES=	http://calamaris.cord.de/ \
+MASTER_SITES=	http://cord.de/tools/squid/calamaris/ \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
 MAINTAINER=	dima@Chg.RU
@@ -18,9 +18,7 @@ NO_BUILD=	yes
 MAN1=		calamaris.1
 
 post-patch:
-	@ ${MV} ${WRKSRC}/calamaris ${WRKSRC}/calamaris.pre_sed
-	@ ${SED} -e 's#/usr/bin/perl#${PERL5}#' ${WRKSRC}/calamaris.pre_sed \
-	> ${WRKSRC}/calamaris
+	@ ${PERL} -pi -e 's#/usr/bin/perl#${PERL5}#' ${WRKSRC}/calamaris
 
 do-install:
 	@ ${INSTALL_MAN} ${WRKSRC}/calamaris.1 ${PREFIX}/man/man1/calamaris.1
