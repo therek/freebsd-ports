@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# $FreeBSD: ports/databases/postgresql80-server/files/pgsql.sh.tmpl,v 1.16 2003/12/04 12:00:49 seanc Exp $
+# $FreeBSD: ports/databases/postgresql80-server/files/pgsql.sh.tmpl,v 1.17 2005/01/31 00:36:16 girgen Exp $
 #
 # PROVIDE: postgresql
 # REQUIRE: LOGIN
@@ -23,6 +23,7 @@ prefix=%%PREFIX%%
 
 . %%RC_SUBR%%
 
+load_rc_config postgresql
 
 # set defaults
 postgresql_enable=${postgresql_enable:-"NO"}
@@ -54,5 +55,4 @@ postgresql_initdb()
     su -l ${postgresql_user} -c "exec ${prefix}/bin/initdb -D ${postgresql_data}"
 }
 
-load_rc_config postgresql
 run_rc_command "$1"
