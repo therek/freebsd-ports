@@ -3,11 +3,11 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/mule/Makefile,v 1.39 1999/08/25 05:44:03 obrien Exp $
 #
 
-DISTNAME=	mule-2.3
-PKGNAME?=	mule-2.3
+PORTNAME=	mule
+PORTVERSION=	2.3
 CATEGORIES?=	editors
 MASTER_SITES=	ftp://etlport.etl.go.jp/pub/mule/ \
 		ftp://ftp.mei.co.jp/archive/free/gnu/emacs/Mule/ \

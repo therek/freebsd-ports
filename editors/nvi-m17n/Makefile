@@ -3,15 +3,16 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.12 1999/08/25 05:44:05 obrien Exp $
+# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.13 2000/02/12 20:31:27 imura Exp $
 #
 
 
-DISTNAME=	nvi-1.79
-PKGNAME?=	nvi-m17n-1.79.19991117
+PORTNAME=	nvi
+PORTVERSION=	1.79.19991117
 CATEGORIES=	editors
 MASTER_SITES=	ftp://sleepy.vwh.net/pub/\
 		ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
+DISTNAME=	nvi-1.79
 
 PATCH_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 PATCHFILES=	nvi-1.79.m17n-19991117.diff.gz
