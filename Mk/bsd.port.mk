@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.468 2003/09/03 19:50:24 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.469 2003/11/07 08:51:46 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
