@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.204 2003/11/12 15:06:22 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.205 2003/11/14 17:45:30 eik Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -461,7 +461,7 @@ MASTER_SITE_MOZILLA+= \
 	http://ftp.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
 	http://www.gtlib.cc.gatech.edu/pub/mozilla.org/%SUBDIR%/ \
 	ftp://ftp.mozilla.org/pub/mozilla.org/%SUBDIR%/ \
-	ftp://sunsite.utk.edu/pub/netscape-source/mozilla.org/%SUBDIR%/ \
+	ftp://sunsite.utk.edu/pub/netscape-source/%SUBDIR%/ \
 	ftp://ftp.informatik.uni-bonn.de/pub/www/mozilla/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.mozilla.org/pub/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.mozilla.org/pub/%SUBDIR%/ \
