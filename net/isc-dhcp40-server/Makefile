@@ -3,11 +3,11 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.59 2001/04/22 11:59:08 roam Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.60 2001/04/25 12:13:34 roam Exp $
 #
 
 PORTNAME=	dhcp
-PORTVERSION=	3.0.r2.1
+PORTVERSION=	3.0.r3
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/dhcp/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. dhcp-3.0-history
