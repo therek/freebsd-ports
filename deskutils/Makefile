@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.50 2001/07/30 14:02:38 tobez Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.51 2001/08/08 13:53:55 olgeni Exp $
 #
 
     SUBDIR += abacus
@@ -31,7 +31,6 @@
     SUBDIR += notebook
     SUBDIR += offix-trash
     SUBDIR += phpgroupware
-    SUBDIR += phpgw_projects
     SUBDIR += plan
     SUBDIR += sliderule
     SUBDIR += teapot
