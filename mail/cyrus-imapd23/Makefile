@@ -2,18 +2,17 @@
 # Date created:					Jan 4th 2001
 # Whom:						ume@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.47 2001/05/05 21:44:40 ume Exp $
+# $FreeBSD: ports/mail/cyrus-imapd/Makefile,v 1.48 2001/05/07 11:11:25 ume Exp $
 #
 
 PORTNAME=	cyrus-imapd
-PORTVERSION= 	2.0.13
-PORTREVISION=	2
+PORTVERSION= 	2.0.14
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/
 
 PATCH_SITES=	http://www.imasy.or.jp/~ume/ipv6/
-PATCHFILES=	${DISTNAME}-ipv6-20010506.diff.gz
+PATCHFILES=	${DISTNAME}-ipv6-20010531.diff.gz
 
 MAINTAINER=	ume@FreeBSD.org
 
