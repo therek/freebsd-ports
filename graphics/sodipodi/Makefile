@@ -3,7 +3,7 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.2 2000/02/18 02:31:37 nakai Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.3 2000/02/23 00:09:38 ade Exp $
 #
 
 DISTNAME=	sodipodi-0.17
@@ -16,6 +16,7 @@ LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \
 		glade.2:${PORTSDIR}/devel/libglade \
 		gnomeprint.5:${PORTSDIR}/print/gnomeprint \
 		gdk_pixbuf.1:${PORTSDIR}/graphics/gdk-pixbuf
+BUILD_DEPENDS=	${LOCALBASE}/share/automake/install-sh:${PORTSDIR}/devel/automake
 
 WRKSRC=		${WRKDIR}/sodipodi
 
