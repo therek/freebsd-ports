@@ -2,7 +2,7 @@
 # Date created:				10 September 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/bayonne/Makefile,v 1.1 2000/11/02 19:43:29 jeh Exp $
 #
 
 PORTNAME=	bayonne
@@ -12,8 +12,8 @@ MASTER_SITES=	ftp://www.voxilla.org/pub/bayonne/
 
 MAINTAINER=	dyfet@gnu.org
 
-LIB_DEPENDS=	ccstd.0:${PORTSDIR}/devel/commoncpp \
-		ccscript.0:${PORTSDIR}/lang/ccscript \
+LIB_DEPENDS=	ccstd-1.4.0:${PORTSDIR}/devel/commoncpp \
+		ccscript-1.4.0:${PORTSDIR}/lang/ccscript \
 		ccaudio.0:${PORTSDIR}/audio/ccaudio \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
