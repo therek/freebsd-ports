@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.499 2001/03/31 03:12:55 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.500 2001/03/31 03:34:45 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -9,6 +9,7 @@
     SUBDIR += adns
     SUBDIR += aggregate
     SUBDIR += aim
+    SUBDIR += aim-transport
     SUBDIR += airport
     SUBDIR += amcl
     SUBDIR += archie
