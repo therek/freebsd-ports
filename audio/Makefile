@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.197 2000/12/20 00:44:07 taoka Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.198 2000/12/23 11:17:42 alex Exp $
 #
 
     SUBDIR += afsp
@@ -180,6 +180,7 @@
     SUBDIR += xmixer
     SUBDIR += xmmix
     SUBDIR += xmms
+    SUBDIR += xmms-crossfade
     SUBDIR += xmms-liveice
     SUBDIR += xmms-quix3dn
     SUBDIR += xmms-shn
