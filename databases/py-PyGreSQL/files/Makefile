@@ -1,5 +1,5 @@
 # grr, commit_prep wants the next line
-# $FreeBSD: ports/databases/py-PyGreSQL/files/Makefile,v 1.4 2001/04/21 11:43:11 vanilla Exp $
+# $FreeBSD$
 .SUFFIXES:  .py .pyc
 
 all: _pgmodule.so pg.pyc pgdb.pyc
@@ -20,7 +20,7 @@ _pgmodule.so: pgmodule.o
 
 pgmodule.o: pgmodule.c
 	${CC} -c -I${PREFIX}/include/${PYTHON_VERSION} \
-	    -I${PREFIX}/include/pgsql -I${PREFIX}/pgsql/include ${.ALLSRC}
+	    -I${PREFIX}/include -I${PREFIX}/pgsql/include ${.ALLSRC}
 
 .py.pyc:
 	${SETENV} PYTHONPATH=${.CURDIR} ${PYTHON} -c 'import ${.IMPSRC:.py=}'
