@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD>org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.2 2000/06/16 08:46:57 sobomax Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.3 2000/06/16 21:50:37 asami Exp $
 #
 
 PORTNAME=	koffice
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

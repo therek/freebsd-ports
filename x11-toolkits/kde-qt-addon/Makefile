@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11-toolkits/kde-qt-addon/Makefile,v 1.2 2000/06/16 08:46:43 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/kde-qt-addon/Makefile,v 1.3 2000/06/16 21:52:33 asami Exp $
 #
 
 PORTNAME=	kde-qt-addon
@@ -12,6 +12,8 @@ MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 
 MAINTAINER=	will@FreeBSD.org
+
+BROKEN=		"Does not compile/run properly"
 
 SOMAJOR=	4
 SOMINOR=	0

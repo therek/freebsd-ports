@@ -2,7 +2,7 @@
 # Date created:				14 May 2000 02:45:53
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-clocks/kdetoys2/Makefile,v 1.10 2000/05/17 11:15:20 will Exp $
 #
 
 PORTNAME=	kdetoys
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_QT2=	yes

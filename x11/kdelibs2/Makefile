@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.51 2000/06/16 21:52:09 asami Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.52 2000/07/04 07:13:08 sobomax Exp $
 #
 
 PORTNAME=	kdelibs
@@ -17,6 +17,8 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		kde-qt-addon.4:${PORTSDIR}/x11-toolkits/kde-qt-addon
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 SOMAJOR=	4

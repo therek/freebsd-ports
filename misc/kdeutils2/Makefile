@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:52:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.40 2000/06/16 08:46:53 sobomax Exp $
+# $FreeBSD: ports/misc/kdeutils2/Makefile,v 1.41 2000/06/16 21:51:42 asami Exp $
 #
 
 PORTNAME=	kdeutils
@@ -15,6 +15,8 @@ MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

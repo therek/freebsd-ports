@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kdegames2/Makefile,v 1.39 2000/05/17 07:28:05 will Exp $
 #
 
 PORTNAME=	kdegames
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.44 2000/06/16 08:46:49 sobomax Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.45 2000/06/16 21:51:50 asami Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -16,6 +16,8 @@ MAINTAINER=	will@FreeBSD.org
 LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2 \
 		QwSpriteField.8:${PORTSDIR}/converters/kdesupport2
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

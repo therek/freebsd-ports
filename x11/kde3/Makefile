@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 00:50:02
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde2/Makefile,v 1.29 2000/05/23 04:38:09 will Exp $
+# $FreeBSD: ports/x11/kde2/Makefile,v 1.30 2000/05/23 21:48:02 will Exp $
 #
 
 PORTNAME=	kde
@@ -19,6 +19,8 @@ LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2 \
 RUN_DEPENDS=	konqueror:${PORTSDIR}/x11/kdebase2 \
 		kdf:${PORTSDIR}/misc/kdeutils2 \
 		kjumpingcube:${PORTSDIR}/games/kdegames2
+
+BROKEN=		"Does not compile/run properly"
 
 NO_BUILD=	yes
 

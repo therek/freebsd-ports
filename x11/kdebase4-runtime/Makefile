@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.49 2000/06/16 08:46:44 sobomax Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.50 2000/06/16 21:52:09 asami Exp $
 #
 
 PORTNAME=	kdebase
@@ -16,6 +16,8 @@ MAINTAINER=	will@FreeBSD.org
 LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2 \
 		Xpm.4:${PORTSDIR}/graphics/xpm \
 		intl.1:${PORTSDIR}/devel/gettext
+
+BROKEN=		"Does not compile/run properly"
 
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes

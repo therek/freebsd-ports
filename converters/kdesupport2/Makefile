@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 01:14:20
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.32 2000/06/16 08:46:52 sobomax Exp $
+# $FreeBSD: ports/converters/kdesupport2/Makefile,v 1.33 2000/06/16 21:50:31 asami Exp $
 #
 
 PORTNAME=	kdesupport
@@ -12,6 +12,8 @@ MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR=	unstable/distribution/tar/src
 
 MAINTAINER=	will@FreeBSD.org
+
+BROKEN=		"Does not compile/run properly"
 
 MOC=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
