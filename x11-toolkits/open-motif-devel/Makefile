@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.7 2000/06/03 18:38:44 obrien Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif-devel/Makefile,v 1.8 2000/06/07 07:08:56 asami Exp $
 #
 
 PORTNAME=	open-motif-devel
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://openmotif.opengroup.org/pub/openmotif/R2.1.30/binaries/metro
 		ftp://ftp.opengroup.org/pub/openmotif/R2.1.30/binaries/metrolink/  \
 		ftp://ftp.isca.uiowa.edu/pub/mirrors/openmotif/binaries/metrolink/  \
 		ftp://ftp.kddlabs.co.jp:/X11/openmotif/binaries/metrolink/
-DISTNAME=	openmotif-${PORTVERSION}-1_MLI
+DISTNAME=	openmotif-devel-${PORTVERSION}-4_MLI
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	obrien@FreeBSD.org
