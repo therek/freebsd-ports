@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.112 2001/04/21 11:43:06 vanilla Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.113 2001/06/29 15:15:58 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -101,8 +101,10 @@ while [ "$1" ]; do
 			fi
 			;;
 		\"SybaseDB\")
-			echo "LIB_DEPENDS+=	sybdb.0:\${PORTSDIR}/databases/freetds"
+			echo "LIB_DEPENDS+=	sybdb.1:\${PORTSDIR}/databases/freetds"
+			echo "LIB_DEPENDS+=	giconv.2:\${PORTSDIR}/converters/libiconv"
 			echo "CONFIGURE_ARGS+=--with-sybase=\${PREFIX}"
+			LIBS="${LIBS} -L\${LOCALBASE}/lib -lgiconv"
 			if [ "$SYBASECT" ]; then
 				echo "SybaseDB and SybaseCT are mutually exclusive." > /dev/stderr
 				rm -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc
@@ -112,7 +114,9 @@ while [ "$1" ]; do
 			;;
 		\"SybaseCT\")
 			echo "LIB_DEPENDS+=	ct.0:\${PORTSDIR}/databases/freetds"
+			echo "LIB_DEPENDS+=	giconv.2:\${PORTSDIR}/converters/libiconv"
 			echo "CONFIGURE_ARGS+=--with-sybase-ct=\${PREFIX}"
+			LIBS="${LIBS} -L\${LOCALBASE}/lib -lgiconv"
 			if [ "$SYBASEDB" ]; then
 				echo "SybaseDB and SybaseCT are mutually exclusive." > /dev/stderr
 				rm -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc
