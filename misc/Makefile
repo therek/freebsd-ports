@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.344 2001/05/04 21:39:38 ade Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.345 2001/05/16 13:01:09 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -178,6 +178,7 @@
     SUBDIR += xenmenu
     SUBDIR += xgas
     SUBDIR += xless
+    SUBDIR += xosd
     SUBDIR += xpns
     SUBDIR += xquote
     SUBDIR += xtail
