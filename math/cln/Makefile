@@ -3,21 +3,26 @@
 # Date created:                Fab 11, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/math/cln/Makefile,v 1.3 2001/08/31 14:20:26 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cln
-PORTVERSION=	1.1.2
+PORTVERSION=	1.1.4
 CATEGORIES=	math devel
 MASTER_SITES=	ftp://ftp.ilog.fr/pub/Users/haible/gnu/ \
 		ftp://ftp.santafe.edu/pub/gnu/ \
 		ftp://ftpthep.physik.uni-mainz.de/pub/gnu/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
+
+LIB_DEPENDS=	gmp.4:${PORTSDIR}/math/libgmp3
 
 USE_LIBTOOL=	yes
+CFLAGS+=	-I${LOCALBASE}/include
+CONFIGURE_ENV=	CPPFLAGS="${CXXFLAGS} -I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share/cln --infodir=${PREFIX}/info \
-		--mandir=${PREFIX}/man
+		--mandir=${PREFIX}/man --with-gmp
 
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
@@ -25,6 +30,6 @@ INSTALLS_SHLIB=	yes
 MAN1=		cln-config.1
 
 pre-build:
-	@(cd ${WRKSRC} ; ${LN} -s ${LOCALBASE}/bin/libtool .)
+	@(cd ${WRKSRC} ; ${LN} -sf ${LOCALBASE}/bin/libtool .)
 
 .include <bsd.port.mk>
