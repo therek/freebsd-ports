@@ -3,7 +3,7 @@
 # Date created:         31 October 1996
 # Whom:			Pedro Giffuni S.
 #
-# $FreeBSD: ports/math/fftpack/Makefile,v 1.10 1999/08/25 07:08:50 obrien Exp $
+# $FreeBSD: ports/math/fftpack/Makefile,v 1.11 1999/09/04 23:39:21 mharo Exp $
 #
 
 DISTNAME=	bihar
@@ -23,7 +23,7 @@ EXTRACT_AFTER_ARGS=	# empty
 .include <bsd.port.pre.mk>
 
 post-extract:
-	${GUNZIP} $(WRKSRC)/*.f.gz
+	${GUNZIP_CMD} $(WRKSRC)/*.f.gz
 
 pre-build:
 	${RM} $(WRKSRC)/.depend

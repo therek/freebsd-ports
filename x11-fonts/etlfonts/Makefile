@@ -3,7 +3,7 @@
 # Date created:		3 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.7 1999/08/31 02:58:29 peter Exp $
+# $FreeBSD: ports/x11-fonts/etlfonts/Makefile,v 1.8 1999/09/04 23:39:22 mharo Exp $
 #
 
 DISTNAME=	non-cjk
@@ -20,7 +20,7 @@ EXTRACT_AFTER_ARGS=	# empty
 USE_X_PREFIX=	yes
 
 post-extract:
-	@${GUNZIP} ${WRKSRC}/*.gz
+	@${GUNZIP_CMD} ${WRKSRC}/*.gz
 
 post-install:
 	@${SH} ${PKGDIR}/REQ ${PKGNAME} INSTALL
