@@ -1,4 +1,4 @@
-%% $FreeBSD: ports/japanese/dvipsk/files/ptex-kanji.map,v 1.1 2004/06/18 15:55:13 hrs Exp $
+%% $FreeBSD: ports/japanese/dvipsk/files/ptex-kanji.map,v 1.2 2004/10/26 09:31:23 hrs Exp $
 %%
 %
 % Japanese (JIS encoding)
@@ -45,3 +45,7 @@ cidmin-h    Ryumin-Light-Identity-H
 cidmin-v    Ryumin-Light-Identity-V
 cidgoth-h   GothicBBB-Medium-Identity-H
 cidgoth-v   GothicBBB-Medium-Identity-V
+%
+% Local variables:
+% page-delimiter: "^% \f"
+% End:
