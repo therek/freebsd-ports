@@ -2,15 +2,17 @@
 # Date created:		22 August 1999
 # Whom:			Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/net/gtic/Makefile,v 1.3 2000/04/09 18:11:32 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtic
 PORTVERSION=	1.3.b
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cracksoft.kiev.ua/pub/linux/gtic/ \
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	system/fido
+		ftp://ftp.kspu.kr.ua/pub/unix/FIDO/gtic/ \
+		ftp://ftp.ns.burnet.ru/pub/fido/gtic/ \
+		ftp://ftp.3logic.net/pub/Linux/fido/ \
+		ftp://ftp.braz.ru/pub/fido/gtic/
 DISTNAME=	${PORTNAME}-1.3b
 
 MAINTAINER=	dsh@vlink.ru
