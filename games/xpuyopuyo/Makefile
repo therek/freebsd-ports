@@ -3,7 +3,7 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.1.1.1 1999/09/28 00:49:14 taoka Exp $
 #
 
 DISTNAME=	xpuyopuyo-0.1.1
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xpuyopuyo/
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
+
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 USE_X_PREFIX=	yes
 
