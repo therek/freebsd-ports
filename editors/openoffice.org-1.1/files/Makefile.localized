@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: ports/editors/openoffice-1.1/files/Makefile.localized,v 1.4 2005/01/11 23:17:42 maho Exp $
 
 ################################################################
 .if defined(LOCALIZED_LANG)
@@ -141,8 +141,8 @@ CATEGORIES=	japanese
 LANG_PKGNAME=   ja
 LANG_EXT=       81
 LANG_CONFIGURE_ARG=     JAPN
-MASTER_SITES+=  ${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/openoffice/stable/&,}
-RUN_DEPENDS+=   ${X11BASE}/lib/X11/fonts/TrueType/kochi-mincho-subst.ttf:${PORTSDIR}/japanese/kochi-ttfonts
+MASTER_SITES+=	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/openoffice/stable/&,}
+RUN_DEPENDS+=	${X11BASE}/lib/X11/fonts/TrueType/sazanami-mincho.ttf:${PORTSDIR}/japanese/sazanami-ttf
 L10NHELP=       helpcontent_${LANG_EXT}_unix.tgz
 .endif
 ################################################################

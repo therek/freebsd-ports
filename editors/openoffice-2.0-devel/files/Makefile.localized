@@ -1,6 +1,6 @@
 # localized makefile
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.localized,v 1.2 2004/08/12 05:46:05 maho Exp $
+# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.localized,v 1.3 2005/01/10 12:28:19 maho Exp $
 ################################################################
 #See solenv/inc/postset.mk for details	
 ################################################################
@@ -89,7 +89,7 @@ LANG_PKGNAME=	${LOCALIZED_LANG}
 .if ${LOCALIZED_LANG} == "ja"
 CATEGORIES=	japanese
 LANG_PKGNAME=	${LOCALIZED_LANG}
-RUN_DEPENDS+=   ${X11BASE}/lib/X11/fonts/TrueType/kochi-mincho-subst.ttf:${PORTSDIR}/japanese/kochi-ttfonts
+RUN_DEPENDS+=   ${X11BASE}/lib/X11/fonts/TrueType/sazanami-mincho.ttf:${PORTSDIR}/japanese/sazanami-ttf
 .endif
 ################################################################
 .if ${LOCALIZED_LANG} == "kn-IN"
