@@ -3,7 +3,7 @@
 # Last updated:		2nd August, 1998
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/emulators/aftp/Makefile,v 1.7 2000/04/12 04:55:08 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aftp
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@freebsd.org
+COMMENT=	A ftp-like shell for accessing Apple II disk images
 
 MAN1=		aftp.1
 

@@ -2,7 +2,7 @@
 # Date created:		18 Feb 1998
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-perl/Makefile,v 1.15 2001/01/09 05:57:02 itojun Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nvi
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://sleepy.vwh.net/pub/ \
 PKGNAMESUFFIX=	-perl
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	A clone of vi/ex, with perl5 linked into
 
 # can't say PATCH_DIST_STRIP=-p1 because contains files outside ${WRKSRC}
 PATCH_DIST_ARGS=-d ${WRKSRC}/.. --forward --quiet -E -p0
