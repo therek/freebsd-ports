@@ -2,11 +2,11 @@
 # Date created:			21 August 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/x11/xtermset/Makefile,v 1.3 2000/04/13 19:11:03 cpiazza Exp $
+# $FreeBSD: ports/x11/xtermset/Makefile,v 1.4 2000/11/05 18:42:19 dougb Exp $
 #
 
 PORTNAME=	xtermset
-PORTVERSION=	0.5
+PORTVERSION=	0.5.1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	clts
@@ -16,6 +16,7 @@ MAINTAINER=	dr@astorit.com
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAN1=		xtermset.1
+MAN5=		terms.5
 
 USE_X_PREFIX=	yes
 MANCOMPRESSED=	no
