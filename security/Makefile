@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.230 2001/09/03 18:14:44 knu Exp $
+# $FreeBSD: ports/security/Makefile,v 1.231 2001/09/03 18:30:56 knu Exp $
 #
 
     SUBDIR += aafid2
@@ -168,6 +168,7 @@
     SUBDIR += ruby-pam
     SUBDIR += ruby-ssl
     SUBDIR += ruby-tcpwrap
+    SUBDIR += saferpay
     SUBDIR += saint
     SUBDIR += scanssh
     SUBDIR += seahorse
