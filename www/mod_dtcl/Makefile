@@ -3,7 +3,7 @@
 # Date created:				January 9, 1999
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_dtcl/Makefile,v 1.2 2000/02/16 00:15:49 mharo Exp $
+# $FreeBSD: ports/www/mod_dtcl/Makefile,v 1.3 2000/02/22 21:31:52 jedgar Exp $
 #
 
 DISTNAME=	libapache-mod-dtcl_0.7.3-1
@@ -26,11 +26,13 @@ MANCOMPRESSED=	no
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libmod_dtcl.so.1* \
 		${PREFIX}/libexec/apache/mod_dtcl.so
+	${PREFIX}/sbin/apxs -e -A -n dtcl ${PREFIX}/libexec/apache/mod_dtcl.so
 	${INSTALL_PROGRAM} ${WRKSRC}/testdtcl ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/testdtcl.1 ${PREFIX}/man/man1/
-	${MKDIR} ${PREFIX}/share/doc/mod_dtcl
-	${INSTALL_DATA} ${WRKSRC}/dtcl.tcl ${PREFIX}/share/doc/mod_dtcl
+	${MKDIR} ${PREFIX}/share/mod_dtcl
+	${INSTALL_DATA} ${WRKSRC}/*.tcl ${PREFIX}/share/mod_dtcl
 .if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/doc/mod_dtcl
 	${INSTALL_DATA} ${WRKSRC}/*.?tml ${WRKSRC}/*.gif \
 		${PREFIX}/share/doc/mod_dtcl
 	${CAT} ${PKGMESSAGE}
@@ -39,7 +41,7 @@ do-install:
 	#	file:/${WRKSRC}/INSTALL.html
 	# for information on how to proceed to enable mod_dtcl.
 	# Note, that the dtcl.tcl mentioned there is installed as
-	#	${PREFIX}/share/doc/mod_dtcl/dtcl.tcl
+	#	${PREFIX}/share/mod_dtcl/dtcl.tcl
 	# but the comment in it suggests it should not be used
 	# in a "production environment"...
 .endif
