@@ -2,19 +2,19 @@
 # Date created:        23 August 1999
 # Whom:                Alex Varju <varju@webct.com>
 #
-# $FreeBSD: ports/palm/jpilot/Makefile,v 1.16 2001/02/11 17:25:55 jeh Exp $
+# $FreeBSD: ports/palm/jpilot/Makefile,v 1.17 2001/03/06 11:17:09 sumikawa Exp $
 #
 # "?=" and "+=" are for including this Makefile from japanese/jpilot
 
 PORTNAME=	jpilot
 PORTVERSION=	0.99
-PORTREVISION?=	2
+PORTREVISION?=	3
 CATEGORIES+=	palm comms
 MASTER_SITES=	http://jpilot.org/
 
 MAINTAINER?=	varju@webct.com
 
-LIB_DEPENDS=	pisock.3:${PORTSDIR}/palm/pilot-link \
+LIB_DEPENDS=	pisock.4:${PORTSDIR}/palm/pilot-link \
 		intl.1:${PORTSDIR}/devel/gettext
 
 PREFIX=		${LOCALBASE}/pilot
