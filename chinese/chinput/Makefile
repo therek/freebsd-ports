@@ -3,10 +3,9 @@
 # Date created:                          09/07/2000
 # Whom:                                  Peng HaiJie   (phj@cn.freebsd.org)
 #
-# $FreeBSD: ports/chinese/chinput/Makefile,v 1.1.1.1 2000/09/12 03:36:31 vanilla Exp $
+# $FreeBSD: ports/chinese/chinput/Makefile,v 1.2 2000/09/12 05:55:09 vanilla Exp $
 #
 
-PKGNAMEPREFIX=	zh-
 PORTNAME=	chinput
 PORTVERSION=	2.1
 CATEGORIES=	chinese x11
