@@ -1,16 +1,18 @@
 # New ports collection makefile for:   mangband
 # Date created:        30 Dec 1998
+# Whom: Adam Kranzel (adam@alameda.edu)
 #
-# $FreeBSD: ports/games/mangband/Makefile,v 1.10 2001/01/16 15:27:53 kevlo Exp $
+# $FreeBSD: ports/games/mangband/Makefile,v 1.11 2001/06/01 06:04:49 obrien Exp $
 #
 
 PORTNAME=	mangband
 PORTVERSION=	0.7.0
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	http://mangband.org/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	adam@alameda.edu
 
 WRKSRC=		${WRKDIR}/${PORTNAME}/src
 
