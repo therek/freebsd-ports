@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/grass-i18n/pkg-deinstall,v 1.1 2003/12/09 01:46:09 linimon Exp $
 #
 # remove lockfile so that deinstallation can complete
 

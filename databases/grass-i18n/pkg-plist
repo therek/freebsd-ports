@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/databases/grass-i18n/pkg-plist,v 1.9 2004/08/20 17:05:02 hrs Exp $
 bin/grass5
 grass5/bin/bmif_to_cell
 grass5/bin/d.3d
