@@ -2,14 +2,15 @@
 # Date created:		12 Mar 1997
 # Whom:			CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/hanterm/Makefile,v 1.20 2001/05/01 14:14:53 cjh Exp $
+# $FreeBSD: ports/korean/hanterm/Makefile,v 1.21 2001/05/29 12:07:17 cjh Exp $
 #
 
 PORTNAME=	hanterm
 PORTVERSION=	3.1.5
 PORTREVISION=	1
 CATEGORIES=	korean x11
-MASTER_SITES=	http://hanterm.org/download/
+MASTER_SITES=	http://hanterm.org/download/ \
+		ftp://ftp.kr.FreeBSD.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	cjh@FreeBSD.org
 
