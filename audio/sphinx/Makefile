@@ -2,7 +2,7 @@
 # Date created:				30 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD: ports/audio/sphinx/Makefile,v 1.6 2000/06/16 21:50:23 asami Exp $
+# $FreeBSD: ports/audio/sphinx/Makefile,v 1.7 2000/10/02 05:39:28 trevor Exp $
 #
 
 PORTNAME=	sphinx
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	cmusphinx
 DISTNAME=	sphinx2-0.2
 
 MAINTAINER=	trevor@FreeBSD.org
+
+BROKEN=		"seems broken for newpcm"
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
