@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.163 2000/09/18 00:40:16 steve Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.164 2000/09/19 15:46:56 sobomax Exp $
 #
 
     SUBDIR += adcomplain
@@ -126,6 +126,7 @@
     SUBDIR += teapop
     SUBDIR += tkrat
     SUBDIR += tkrat2
+    SUBDIR += vpopmail
     SUBDIR += vrfy
     SUBDIR += wanderlust-emacs
     SUBDIR += wanderlust-emacs20
