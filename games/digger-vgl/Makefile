@@ -2,7 +2,7 @@
 # Date created:				14 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/digger-vgl/Makefile,v 1.2 2000/11/01 15:51:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	digger
@@ -17,6 +17,8 @@ MAINTAINER=	sobomax@FreeBSD.org
 LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
 MAKE_ENV=	SOUND=yes
 .endif
+
+ONLY_FOR_ARCHS=	i386	# Alphas don't have libvgl yet...
 
 DIGREL=		20000407
 WRKSRC=		${WRKDIR}/${PORTNAME}-${DIGREL}
