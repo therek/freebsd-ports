@@ -2,7 +2,7 @@
 # Date created: January 2, 1998
 # Whom: Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-Gateway/Makefile,v 1.6 2000/04/21 07:51:49 mharo Exp $
+# $FreeBSD: ports/news/p5-Gateway/Makefile,v 1.7 2000/05/21 11:52:03 knu Exp $
 #
 
 PORTNAME=		Gateway
@@ -24,5 +24,13 @@ MANPREFIX=		${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
 	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+
+post-install:
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/examples/Gateway
+.for file in listgate listgate.m4 listgate.readme raccmod raccpost racrmod
+	${INSTALL_DATA} ${WRKSRC}/examples/${file} ${PREFIX}/share/examples/Gateway
+.endfor
+.endif
 
 .include <bsd.port.mk>
