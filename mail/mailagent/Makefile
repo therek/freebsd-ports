@@ -2,11 +2,11 @@
 # Date created:			23 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mailagent/Makefile,v 1.31 2001/01/12 00:52:21 max Exp $
+# $FreeBSD: ports/mail/mailagent/Makefile,v 1.32 2001/02/05 15:10:48 olgeni Exp $
 #
 
 PORTNAME=		mailagent
-PORTVERSION=		3.0.70
+PORTVERSION=		3.0.73
 CATEGORIES=		mail
 MASTER_SITES=		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/id/RAM
