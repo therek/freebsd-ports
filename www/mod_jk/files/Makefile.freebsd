@@ -3,7 +3,7 @@
 # Customized for the www/mod_jk port on FreeBSD by
 # Ernst de Haan <znerd@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_jk/files/Makefile.freebsd,v 1.1 2002/02/22 10:09:30 znerd Exp $
+# $FreeBSD: ports/www/mod_jk/files/Makefile.freebsd,v 1.2 2002/04/03 21:10:59 znerd Exp $
 #
 
 # Set the operating system
@@ -23,7 +23,7 @@ JAVA_INCL=-I${JAVA_HOME}/include -I${JAVA_HOME}/include/${OS}
 JAVA_LIB=-L${JAVA_HOME}/jre/lib/${ARCH} -L${JAVA_HOME}/lib/${ARCH}/native_threads
 
 # Some more C compiler flags
-CFLAGS=-DHAVE_CONFIG_H -g -fpic -DSHARED_MODULE -O2 -D_REENTRANT -pthread -DLINUX -Wall
+CFLAGS=-DHAVE_CONFIG_H -g -fpic -DSHARED_MODULE -O2 -pthread -DLINUX -Wall
 
 JK=../common/
 SRCS=jk_ajp12_worker.c jk_connect.c jk_msg_buff.c jk_util.c jk_ajp13.c \
