@@ -3,7 +3,7 @@
 # Date created:			Sat Jul 19 16:23:10 MET DST 1997
 # Whom:				gary@hotlava.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/sane/Makefile,v 1.18 1999/08/25 06:14:53 obrien Exp $
 #
 
 DISTNAME=	sane-1.0.1
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.mostang.com/pub/sane/  \
 		ftp://ftp.lahn.de/pub/platforms/linux/libs/
 
-MAINTAINER=	gary@hotlava.com
+MAINTAINER= 	ports@FreeBSD.org	
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
