@@ -2,7 +2,7 @@
 # Date created:         Sat Oct 31 16:30:00 CDT 1997
 # Whom:                 hetzels@westbend.net
 #
-# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.18 2000/03/21 01:19:49 billf Exp $
+# $FreeBSD: ports/www/apache13-fp/Makefile,v 1.19 2000/04/10 00:04:19 cpiazza Exp $
 #
 
 PORTNAME=	apache_fp
@@ -36,7 +36,7 @@ MAINTAINER=	hetzels@westbend.net
 #PATCHFILES=
 
 APACHE=		${DISTNAME}${EXTRACT_SUFX}
-FRONTPAGE=	fp40.bsdi.tar.Z
+FRONTPAGE=	fp40.bsdi.tar.z
 
 EXTRACT_ONLY=	${APACHE}
 
