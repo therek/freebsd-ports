@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/www/webalizer/Makefile,v 1.24 2001/05/18 19:30:26 dinoex Exp $
+# $FreeBSD: ports/www/webalizer/Makefile,v 1.25 2001/05/28 19:57:20 dinoex Exp $
 #
 
 PORTNAME=	webalizer
@@ -15,7 +15,9 @@ DISTNAME=	${PORTNAME}-2.01-06-src
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
+.if !defined(LIB_DEPENDS)
 LIB_DEPENDS=	gd.2:${PORTSDIR}/graphics/gd
+.endif
 
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
