@@ -2,11 +2,11 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/netcdf/Makefile,v 1.7 2000/06/16 21:51:39 asami Exp $
+# $FreeBSD: ports/math/netcdf/Makefile,v 1.8 2000/11/01 14:51:16 kevlo Exp $
 #
 
 PORTNAME=	netcdf
-PORTVERSION=	3.5.b6
+PORTVERSION=	3.5.b8
 CATEGORIES=	math
 MASTER_SITES=	ftp://unidata.ucar.edu/pub/netcdf/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.b/-beta/}
