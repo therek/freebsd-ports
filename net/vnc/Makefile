@@ -3,7 +3,7 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.13 1999/09/10 21:15:35 cpiazza Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.14 2000/02/10 01:41:25 cpiazza Exp $
 #
 
 DISTNAME=       	vnc-3.3.3r1_unixsrc
@@ -18,6 +18,7 @@ MAINTAINER=	 	bmah@ca.sandia.gov
 USE_PERL5=		YES
 
 EXTRACT_ONLY=		vnc-3.3.3r1_unixsrc.tgz
+IGNOREFILES=		vnc-latest_doc.tgz
 
 WRKSRC=			${WRKDIR}/vnc_unixsrc
 
