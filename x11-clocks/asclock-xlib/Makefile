@@ -2,7 +2,7 @@
 # Date created:		24 April 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.8 2000/08/08 08:14:16 kuriyama Exp $
+# $FreeBSD: ports/x11-clocks/asclock-xlib/Makefile,v 1.9 2000/08/14 05:49:49 kuriyama Exp $
 #
 
 PORTNAME=	asclock-xlib
@@ -15,14 +15,14 @@ MAINTAINER=	kuriyama@FreeBSD.org
 WRKSRC=		${WRKDIR}/asclock-xlib
 USE_XPM=	YES
 
-.include <bsd.port.pre.mk>
-
 .if defined(BATCH)
 USE_IMAKE=	YES
 .else
 USE_X_PREFIX=	YES
 HAS_CONFIGURE=	YES
 .endif
+
+.include <bsd.port.pre.mk>
 
 post-patch:
 	@(cd ${WRKSRC}; \
