@@ -2,7 +2,7 @@
 # Date created:		30 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xchat/Makefile,v 1.1 2000/10/01 14:57:25 knu Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../irc/xchat
@@ -16,7 +16,7 @@ MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv
 
-FILESDIR=	${.CURDIR}/files
+MD5_FILE=	${.CURDIR}/distinfo
 
 CONFIGURE_ARGS=	--enable-japanese-conv # --enable-ipv6
 MAKE_ARGS=	CPPFLAGS="-I${LOCALBASE}/include" \
