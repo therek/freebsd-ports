@@ -3,7 +3,7 @@
 # Date created:		23 October 1999
 # Whom:			Yuzo FURUKAWA <hurukawa@kuee.kyoto-u.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/epstool/Makefile,v 1.1.1.1 1999/11/26 20:25:32 steve Exp $
 #
 
 DISTNAME=	epstool-106
@@ -20,8 +20,7 @@ MAKEFILE=	makefile.unx
 WRKSRC=		${WRKDIR}/epstool
 
 post-install:
-	${MKDIR} ${PREFIX}/bin ${PREFIX}/share/doc/epstool
-	${INSTALL_DATA} ${WRKSRC}/epstool.txt \
-		${PREFIX}/share/doc/epstool/epstool.txt
+	@${MKDIR} ${PREFIX}/share/doc/epstool
+	${INSTALL_DATA} ${WRKSRC}/epstool.txt ${PREFIX}/share/doc/epstool
 
 .include <bsd.port.mk>
