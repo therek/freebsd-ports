@@ -2,7 +2,7 @@
 # Date created:         07 Sep 1998
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.17 2000/09/17 12:22:05 kris Exp $
+# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.18 2000/10/08 10:22:34 asami Exp $
 #
 
 PORTNAME=	netatalk
@@ -21,6 +21,10 @@ LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 .endif
 
 MAKE_ARGS=	INSTALL="${INSTALL} ${COPY}"
+
+.if defined(WITHOUT_AFPASP)
+MAKE_ARGS+=	CFLAGS="${CFLAGS} -DNO_AFPASP"
+.endif
 
 .include <bsd.port.pre.mk>
 
