@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.7 2003/03/25 01:26:45 naddy Exp $
+# $FreeBSD: ports/mail/mutt-devel/scripts/generate-plist,v 1.8 2003/03/26 18:22:23 obraun Exp $
 #
 # set -x
 
@@ -28,7 +28,8 @@ bin/muttbug
 bin/pgpewrap
 bin/pgpring
 bin/smime_keys
-etc/Muttrc
+@unexec if cmp -s %D/etc/Muttrc.dist %D/etc/Muttrc; then rm -f %D/etc/Muttrc; fi
+etc/Muttrc.dist
 etc/mime.types
 share/locale/ca/LC_MESSAGES/mutt.mo
 share/locale/cs/LC_MESSAGES/mutt.mo
