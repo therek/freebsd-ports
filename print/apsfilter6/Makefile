@@ -3,7 +3,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.46 2000/04/02 09:00:26 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.47 2000/04/02 15:14:06 andreas Exp $
 #
 
 DISTNAME=	apsfilter-${VERSION}
@@ -25,7 +25,7 @@ RUN_DEPENDS+=	psnup:${PORTSDIR}/print/psutils-letter
 RUN_DEPENDS+=	smbclient:${PORTSDIR}/net/samba
 .endif
 
-VERSION=	5.3.0
+VERSION=	5.3.1
 USE_BZIP2=	yes
 WRKSRC=		${WRKDIR}/apsfilter
 

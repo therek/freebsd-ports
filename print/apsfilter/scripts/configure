@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.8 2000/03/06 22:16:28 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.9 2000/04/02 19:19:16 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -159,5 +159,5 @@ then
  echo "	@\${ECHO} \"    chmod 555 /usr/bin/grog                             \""
  echo "	@\${ECHO} \"--------------------------------------------------------\""
 fi
- echo "	@\${ECHO} \"*** Printer installation ***               \""
+ echo "	@\${ECHO} \"*** Printer installation / apsfilter setup ***          \""
  echo "	@\${ECHO} \"    cd ${PREFIX}/apsfilter; ./SETUP        \""
