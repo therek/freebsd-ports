@@ -2,14 +2,14 @@
 # Date created:		11 Dec 1994
 # Whom:			ats (original)
 #
-# $FreeBSD: ports/net/gopher/Makefile,v 1.12 2000/04/09 18:11:31 cpiazza Exp $
+# $FreeBSD: ports/net/gopher/Makefile,v 1.13 2000/04/30 00:00:52 steve Exp $
 #
 
 PORTNAME=	gopher
-PORTVERSION=	2.3
+PORTVERSION=	2.3.1
 CATEGORIES=	net
 MASTER_SITES=	ftp://boombox.micro.umn.edu/pub/gopher/Unix/
-DISTNAME=	gopher2_3
+DISTNAME=	gopher2_3.1
 
 MAINTAINER=	ports@FreeBSD.org
 
