@@ -1,10 +1,11 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/john/pkg-plist,v 1.5 2000/11/22 00:21:49 obrien Exp $
 bin/john
-bin/xtract
 bin/unshadow
+bin/xtract
 share/john/all.chr
 share/john/alpha.chr
 share/john/digits.chr
+share/john/lanman.chr
 share/john/john.ini
 share/john/password.lst
 share/doc/john/CONFIG
