@@ -3,20 +3,16 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.70 2000/01/12 23:47:46 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.71 2000/01/18 14:24:13 dirk Exp $
 #
 
-DISTNAME=	mysql-3.22.29
+DISTNAME=	mysql-3.22.30
 PKGNAME?=	${DISTNAME:S/-/-server-/}
 CATEGORIES=	databases
 MASTER_SITES=	http://www.fh-wolfenbuettel.de/ftp/pub/database/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.digex.net/pub/packages/database/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.plig.net/pub/mysql/Downloads/MySQL-3.22/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/mysql/Downloads/MySQL-3.22/
-
-PATCH_SITES=	http://www.freebsd.org/~dirk/ports/distfiles/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
-PATCHFILES=	mysql.grant.patch
 
 MAINTAINER=	dirk@FreeBSD.org
 
@@ -98,7 +94,7 @@ pre-fetch:
 	@${ECHO}
 .endif
 
-pre-build:
+post-patch:
 	${MV} ${WRKSRC}/strings/strings-x86.s ${WRKSRC}/strings/strings-x86.S
 	${MV} ${WRKSRC}/strings/longlong2str-x86.s ${WRKSRC}/strings/longlong2str-x86.S
 
