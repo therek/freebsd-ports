@@ -2,7 +2,7 @@
 # Date created:				10 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/KnightCap/Makefile,v 1.11 2000/07/07 18:48:28 steve Exp $
+# $FreeBSD: ports/games/KnightCap/Makefile,v 1.12 2000/08/03 09:23:20 asami Exp $
 #
 
 PORTNAME=	knightcap
@@ -15,15 +15,15 @@ DISTNAME=	KnightCap-${PORTVERSION}
 
 MAINTAINER=	bugg@bugg.strangled.net
 
+WRKSRC=		${WRKDIR}/Export
 USE_MESA=	yes
 ALL_TARGET=	KnightCap
-WRKSRC=		${WRKDIR}/Export
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/KnightCap ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/KnightCap ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/KnightCap
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/KnightCap
+	@${MKDIR} ${PREFIX}/share/doc/KnightCap
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/KnightCap
 .endif
 
 .include <bsd.port.mk>
