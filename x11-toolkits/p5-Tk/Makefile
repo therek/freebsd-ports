@@ -2,11 +2,11 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.29 2000/06/17 02:36:57 will Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Tk/Makefile,v 1.30 2000/10/23 21:03:11 will Exp $
 #
 
 PORTNAME=	Tk
-PORTVERSION= 	800.021
+PORTVERSION= 	800.022
 CATEGORIES=	x11-toolkits tk80 perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Tk
