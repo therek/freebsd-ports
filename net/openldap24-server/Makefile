@@ -2,11 +2,11 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.41 2001/09/09 08:36:59 olgeni Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.42 2001/09/11 09:37:19 olgeni Exp $
 #
 
 PORTNAME=	openldap
-PORTVERSION=	2.0.14
+PORTVERSION=	2.0.15
 CATEGORIES=	net databases
 MASTER_SITES=	ftp://ftp.OpenLDAP.org/pub/OpenLDAP/%SUBDIR%/ \
 		ftp://ftp.net.lut.ac.uk/openldap/%SUBDIR%/ \
