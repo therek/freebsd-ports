@@ -3,11 +3,11 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/stowES/Makefile,v 1.2 2001/07/20 07:03:27 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stowES
-PORTVERSION=	0.4.3
+PORTVERSION=	0.5.2
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.inf.tu-dresden.de/~al10/stowES/download/
 
@@ -18,8 +18,9 @@ RUN_DEPENDS=	stow:${PORTSDIR}/sysutils/stow
 RUN_DEPENDS+=	bzip2:${PORTSDIR}/archivers/bzip2
 .endif
 
-GNU_CONFIGURE=	yes
+USE_PERL5=	yes
 USE_GMAKE=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=	stowES.1
 
