@@ -3,21 +3,21 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.25 2000/06/16 08:18:31 sobomax Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.26 2000/06/16 21:50:51 asami Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # png version number) when updating this port.  Thank you.
 
 PORTNAME=	png
-PORTVERSION=    1.0.6
+PORTVERSION=    1.0.7
 CATEGORIES=     graphics
-MASTER_SITES=   ftp://ftp.libpng.org/pub/png/src/
+MASTER_SITES=   ftp://ftp.libpng.org/pub/png/src/ \
+		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	lib${PORTNAME}
 DISTNAME=       lib${PKGNAME}
 
 PATCH_SITES=    ftp://ftp.libpng.org/pub/png/src/
-PATCHFILES=     libpng-1.0.6-patch-a.txt.gz \
-		libpng-1.0.6-patch-b.txt.gz \
-		libpng-1.0.6-patch-c.txt.gz
+#PATCHFILES=
 
 MAINTAINER=     ache@FreeBSD.org
 
