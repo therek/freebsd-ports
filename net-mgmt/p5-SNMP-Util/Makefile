@@ -2,11 +2,11 @@
 # Date created:				September 7 1999
 # Whom:					Bill Fenner <fenner@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-SNMP-Util/Makefile,v 1.3 2000/06/17 02:36:39 will Exp $
+# $FreeBSD: ports/net/p5-SNMP-Util/Makefile,v 1.4 2001/03/01 06:38:33 vanilla Exp $
 #
 
 PORTNAME=	SNMP-Util
-PORTVERSION=	1.6
+PORTVERSION=	1.8
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	SNMP
