@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.128 2000/12/23 18:59:21 andreas Exp $
+# $FreeBSD: ports/print/Makefile,v 1.129 2000/12/31 05:40:38 will Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -23,6 +23,7 @@
     SUBDIR += cjk-lyx
     SUBDIR += clibpdf
     SUBDIR += cmpsfont
+    SUBDIR += cups
     SUBDIR += detex
     SUBDIR += dvi2tty
     SUBDIR += dvi2xx
