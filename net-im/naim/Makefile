@@ -2,11 +2,11 @@
 # Date created:			02 March 1999
 # Whom:				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/net/naim/Makefile,v 1.16 2000/11/08 04:11:49 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	naim
-PORTVERSION=	0.10.1
+PORTVERSION=	0.10.3
 CATEGORIES=	net
 MASTER_SITES=	http://dev.n.ml.org/ \
 		ftp://ftp.netmug.org/pub/FreeBSD/distfiles/
