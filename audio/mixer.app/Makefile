@@ -2,11 +2,11 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.11 2000/08/03 09:22:29 asami Exp $
+# $FreeBSD: ports/audio/mixer.app/Makefile,v 1.12 2001/05/22 03:26:54 cpiazza Exp $
 #
 
 PORTNAME=	mixer.app
-PORTVERSION=	1.6.0
+PORTVERSION=	1.7.0
 CATEGORIES=	audio
 MASTER_SITES=	http://www.fukt.bth.se/~per/mixer/
 DISTNAME=	Mixer.app-${PORTVERSION}
