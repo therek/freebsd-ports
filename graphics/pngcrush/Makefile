@@ -2,11 +2,11 @@
 # Date created:				07 December 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pngcrush/Makefile,v 1.10 2000/04/14 23:39:34 jedgar Exp $
+# $FreeBSD: ports/graphics/pngcrush/Makefile,v 1.11 2000/04/15 11:35:50 jedgar Exp $
 #
 
 PORTNAME=	pngcrush
-PORTVERSION=	1.4.2
+PORTVERSION=	1.4.3
 CATEGORIES=	graphics
 MASTER_SITES=	http://download.sourceforge.net/pmt/
 
