@@ -2,13 +2,13 @@
 # Date created:				29 August 1996
 # Whom:					oly
 #
-# $FreeBSD: ports/security/cops/Makefile,v 1.8 2000/04/10 04:43:48 cpiazza Exp $
+# $FreeBSD: ports/security/cops/Makefile,v 1.9 2000/04/21 22:07:32 fenner Exp $
 #
 
 PORTNAME=	cops
 PORTVERSION=	1.04
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.cert.org/pub/tools/cops/
+MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/cops/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 WRKSRC=		${WRKDIR}/cops_104
