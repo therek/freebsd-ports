@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.134 2000/10/22 15:36:20 trevor Exp $
+# $FreeBSD: ports/security/Makefile,v 1.135 2000/10/23 21:49:11 will Exp $
 #
 
     SUBDIR += aafid2
@@ -101,6 +101,7 @@
     SUBDIR += smurflog
     SUBDIR += sniff
     SUBDIR += snort
+    SUBDIR += srm
     SUBDIR += ssh
     SUBDIR += ssh2
     SUBDIR += sslproxy
