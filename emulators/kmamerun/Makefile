@@ -3,11 +3,11 @@
 # Date created:		24 Nov 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/kmamerun/Makefile,v 1.1.1.1 1999/11/25 06:44:51 nsayer Exp $
 #
 
-PKGNAME=	kmamerun-0.3.0.1
 DISTNAME=	kmamerun-0.3.0pre1
+PKGNAME=	kmamerun-0.3.0.1
 CATEGORIES=	emulators kde
 MASTER_SITES=	ftp://ftp.sad.it/pub/kde/local/
 
