@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 2000 16:33:15
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/koffice/Makefile,v 1.23 2001/08/15 21:20:53 will Exp $
+# $FreeBSD: ports/editors/koffice/Makefile,v 1.24 2001/08/17 18:49:02 will Exp $
 #
 
 PORTNAME=	koffice
@@ -18,6 +18,8 @@ MAINTAINER=	will@FreeBSD.org
 LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
 
 USE_KDELIBS_VER=2
+USE_PYTHON=	yes
+PYTHON_VERSION=	python2.1
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 USE_AUTOCONF=	yes
