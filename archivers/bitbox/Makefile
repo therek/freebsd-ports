@@ -3,13 +3,15 @@
 # Date created:			Apr 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bitbox/Makefile,v 1.1 2001/04/08 18:00:28 ijliao Exp $
+# $FreeBSD: ports/archivers/bitbox/Makefile,v 1.2 2001/04/10 01:25:35 ijliao Exp $
 #
 
 PORTNAME=	bitbox
 PORTVERSION=	0.3.0
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.gizmodrome.com/
+MASTER_SITES=	http://www.gizmodrome.com/ \
+		ftp://ftp.csua.berkeley.edu/pub/FreeBSD/ports/distfiles/ \
+		ftp://freebsd.csie.nctu.edu.tw/pub/distfiles/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
