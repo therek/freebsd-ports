@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.120 2000/02/06 23:32:49 ade Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.121 2000/02/19 13:25:57 jedgar Exp $
 #
 
     SUBDIR += adcomplain
@@ -67,7 +67,6 @@
     SUBDIR += p5-Mail-Tools
     SUBDIR += pathalias
     SUBDIR += pgpsendmail
-    SUBDIR += pine3
     SUBDIR += pine4
     SUBDIR += pine4-ssl
     SUBDIR += popa3d
