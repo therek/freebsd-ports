@@ -1,9 +1,9 @@
 # New ports collection makefile for:	X98server for NECS3 with X True Type
-# Version required:	1.2.1
+# Version required:	1.3.0
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/XttXF98srv-NECS3/Makefile,v 1.8 1999/08/31 02:58:57 peter Exp $
 #
 
 DISTNAME=	xc
@@ -12,7 +12,7 @@ CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
 
-LIB_DEPENDS=	font.1:${.CURDIR}/../XttXF86srv-common
+RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 
 ONLY_FOR_ARCHS=	i386
 

@@ -1,9 +1,9 @@
 # New ports collection makefile for:	Xserver for W32 with X True Type
-# Version required:	1.2.1
+# Version required:	1.3.0
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/XttXF86srv-W32/Makefile,v 1.10 1999/08/31 02:58:51 peter Exp $
 #
 
 DISTNAME=	xc
@@ -12,7 +12,7 @@ CATEGORIES=	x11-servers
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
-LIB_DEPENDS=	font.1:${.CURDIR}/../XttXF86srv-common
+RUN_DEPENDS=	mkfontdir.pl:${.CURDIR}/../XttXF86srv-common
 
 ONLY_FOR_ARCHS=	i386
 
