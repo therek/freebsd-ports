@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.222 2000/05/30 08:46:10 asami Exp $
+# $FreeBSD: ports/www/Makefile,v 1.223 2000/06/02 01:26:43 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -10,8 +10,6 @@
     SUBDIR += apache13
     SUBDIR += apache13-fp
     SUBDIR += apache13-modssl
-    SUBDIR += apache13-php3
-    SUBDIR += apache13-php4
     SUBDIR += apache13-ssl
     SUBDIR += apache13+ipv6
     SUBDIR += apache-jserv
