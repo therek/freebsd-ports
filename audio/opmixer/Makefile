@@ -2,7 +2,7 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/opmixer/Makefile,v 1.1 2000/12/31 06:48:48 trevor Exp $
 #
 
 PORTNAME=	opmixer
@@ -27,6 +27,11 @@ pre-install:
 .if !defined(NOPORTDOCS)
 	${ECHO} ${DOCDIR}/README >> ${PLIST}
 	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
+.endif
+
+do-patch:
+.if exists(/usr/include/machine/soundcard.h)
+	${PERL} -pi -e "s=sys/soundca=machine/soundca=g" ${WRKSRC}/ossmixer.hh
 .endif
 
 do-install:
