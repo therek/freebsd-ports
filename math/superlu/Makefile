@@ -2,11 +2,12 @@
 # Date created:		31 Oct 97
 # Whom:			Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/superlu/Makefile,v 1.7 1999/12/23 19:30:16 steve Exp $
+# $FreeBSD: ports/math/superlu/Makefile,v 1.8 2000/04/14 07:20:43 asami Exp $
 #
 
 PORTNAME=	superlu
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	math
 MASTER_SITES=	http://www.nersc.gov/~xiaoye/SuperLU/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
