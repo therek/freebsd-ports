@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.172 2002/08/01 20:56:58 ade Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.173 2002/08/11 09:36:47 fjoe Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -323,7 +323,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-hyperwave=yes"
 			;;
 		\"mcve\")
-			echo "LIB_DEPENDS+=	mcve.0:\${PORTSDIR}/devel/libmcve"
+			echo "LIB_DEPENDS+=	mcve.3:\${PORTSDIR}/devel/libmcve"
 			echo "CONFIGURE_ARGS+=--with-mcve=\${LOCALBASE}"
  			;;
 		\"ming\")
