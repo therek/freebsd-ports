@@ -2,7 +2,7 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.20 2000/06/01 19:55:33 obrien Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.21 2000/06/04 05:57:50 vanilla Exp $
 #
 
 PORTNAME=	postfix
@@ -17,7 +17,9 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.postfix.oaktree.co.uk/pub/postfix/official/
 DISTNAME=	${PORTNAME}-19991231-pl08
 
-MAINTAINER=	torstenb@FreeBSD.org
+MAINTAINER=	billf@FreeBSD.org
+
+BROKEN=		"pending update after a repository copy"
 
 # WARNING: this is based on a patch submitted by a user and has not been
 # tested. Use it at your own risk !
