@@ -2,7 +2,7 @@
 # Date created:				09 October 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/cleanfeed/Makefile,v 1.1 2001/03/05 07:16:01 ijliao Exp $
 #
 
 PORTNAME=	cleanfeed
@@ -23,7 +23,6 @@ MAN8=		cleanfeed.8
 do-install:
 	@${PERL} -pi -e "s,%%PREFIX%%,${PREFIX},g" ${WRKSRC}/cleanfeed
 	@${PERL} -pi -e "s,%%LOCALBASE%%,${LOCALBASE},g" ${PKGDEINSTALL}
-	@-${MV} ${LOCALBASE}/news/bin/filter/filter_innd.pl ${LOCALBASE}/news/bin/filter/filter_innd.pl.ORIG
 	@${INSTALL_SCRIPT} ${WRKSRC}/cleanfeed ${LOCALBASE}/news/bin/filter/filter_innd.pl
 	@${INSTALL_DATA} ${WRKSRC}/cleanfeed.conf ${LOCALBASE}/news/bin/filter/cleanfeed.conf
 	@${INSTALL_MAN} ${WRKSRC}/cleanfeed.8 ${LOCALBASE}/man/man8/
