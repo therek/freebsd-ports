@@ -3,7 +3,7 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.16 1999/12/28 04:27:51 nakai Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.17 2000/03/09 05:16:21 green Exp $
 #
 
 DISTNAME=	s9xs129
@@ -17,6 +17,7 @@ MAINTAINER=	nakai@FreeBSD.org
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 .elif ${MACHINE_ARCH} == alpha
 MAKEFILE=	Makefile.alpha
+FORBIDDEN=	currently does not work on alpha
 .endif
 
 USE_GMAKE=	YES
