@@ -3,7 +3,7 @@
 # Date created:         2 Oct 1994
 # Whom:                 swallace
 #
-# $FreeBSD: ports/audio/tracker/Makefile,v 1.33 1999/08/31 06:40:45 mharo Exp $
+# $FreeBSD: ports/audio/tracker/Makefile,v 1.34 1999/09/04 23:39:24 mharo Exp $
 #
 
 DISTNAME=       tracker-5.3
@@ -11,7 +11,7 @@ CATEGORIES=     audio
 MASTER_SITES=   ftp://ftp.uni-trier.de/pub/unix/audio/tracker/
 EXTRACT_SUFX=   .tgz
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
 
 RESTRICTED=     "Non-redistributable beta"
 
