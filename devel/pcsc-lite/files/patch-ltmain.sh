@@ -1,7 +1,7 @@
-$FreeBSD: ports/devel/pcsc-lite/files/patch-ltmain.sh,v 1.2 2003/05/19 01:36:53 petef Exp $
+$FreeBSD: ports/devel/pcsc-lite/files/patch-ltmain.sh,v 1.3 2003/09/26 06:48:08 daichi Exp $
 
---- build/ltmain.sh	2001/08/27 09:51:26	1.1
-+++ build/ltmain.sh	2001/08/27 09:51:42
+--- ltmain.sh	2001/08/27 09:51:26	1.1
++++ ltmain.sh	2001/08/27 09:51:42
 @@ -1278,7 +1278,7 @@
  	  esac
  	elif test "X$arg" = "X-lc_r"; then
