@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.256 2004/08/17 09:55:44 clement Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.257 2004/08/18 13:13:00 vs Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -515,6 +515,11 @@ MASTER_SITE_NETSCAPE+= \
 	ftp://ftp.skynet.be/mirror/netscape/%SUBDIR%/ \
 	ftp://ftp.uni-bremen.de/pub/mirrors/ftp.netscape.com/pub/%SUBDIR%/ \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/
+
+MASTER_SITE_OSSP+= \
+	ftp://ftp.ossp.org/pkg/%SUBDIR%/ \
+	http://public.planetmirror.com/pub/ossp/pkg/%SUBDIR%/ \
+	ftp://ftp.ntua.gr/pub/utils/ossp/%SUBDIR%/
 
 MASTER_SITE_PACKETSTORM+= \
 	http://packetstormsecurity.nl/%SUBDIR%/ \
