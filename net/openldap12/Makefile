@@ -2,7 +2,7 @@
 # Date created:         20 Sep 1998
 # Whom:                 Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.12 2000/04/02 03:27:50 mharo Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.13 2000/04/09 18:12:47 cpiazza Exp $
 #
 
 PORTNAME=	openldap
@@ -19,16 +19,16 @@ MASTER_SITES=	ftp://ftp.OpenLDAP.org/pub/OpenLDAP/openldap-release/ \
 		ftp://ftp.zcu.cz/pub/network/openldap/openldap-release/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=     ulmo@earthling.net
+MAINTAINER=	ulmo@earthling.net
 
 .if defined(WITH_DB2)
-BUILD_DEPENDS=	${PREFIX}/lib/libdb2.a:${PORTSDIR}/databases/db/
-CONFIGURE_ENV=	CPPFLAGS="-I${PREFIX}/include/db2 -D_THREAD_SAFE" \
-		LDFLAGS=-L${PREFIX}/lib
+BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db/
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 -D_THREAD_SAFE" \
+		LDFLAGS=-L${LOCALBASE}/lib
 .endif
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --localstatedir=/var/run --enable-shared --enable-dns
+CONFIGURE_ARGS=	--localstatedir=/var/run --enable-shared --enable-dns
 
 # Include tcp-wrapper support
 .if exists(/usr/include/tcpd.h)
