@@ -2,15 +2,14 @@
 # Date created:			6 July 2001
 # Whom:				dd
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/nvi-devel/Makefile,v 1.1 2001/07/07 23:45:40 dd Exp $
 #
 
 PORTNAME=	nvi
 PORTVERSION=	1.81.4
 CATEGORIES=	editors
 MASTER_SITES=	http://www.kotnet.org/~skimo/nvi/devel/ \
-		${MASTER_SITE_LOCAL} \
-		http://www.unixfreak.org/~dima/distfiles/
+		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	dd
 
 MAINTAINER=	dd@FreeBSD.org
