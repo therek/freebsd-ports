@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.17 2000/12/20 21:14:31 knu Exp $
+# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.18 2001/02/10 13:19:55 knu Exp $
 #
 
 PORTNAME=	namazu2
@@ -31,7 +31,7 @@ MAN1=		namazu.1 mknmz.1
 INSTALLS_SHLIB=	yes
 
 .if defined(WITH_CHASEN)
-DEPEND_WAKATI=	${PM_BASE}/${PERL_ARCH}/Text/ChaSen.pm:${PORTSDIR}/japanese/chasen
+DEPEND_WAKATI=	${PM_BASE}/${PERL_ARCH}/Text/ChaSen.pm:${PORTSDIR}/japanese/p5-Text-ChaSen
 .else
 DEPEND_WAKATI=	${PM_BASE}/${PERL_ARCH}/Text/Kakasi.pm:${PORTSDIR}/japanese/p5-Text-Kakasi
 .endif
