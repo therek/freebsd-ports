@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.143 2001/09/17 21:47:12 tobez Exp $
+# $FreeBSD: ports/math/Makefile,v 1.144 2001/09/21 05:51:47 knu Exp $
 #
 
     SUBDIR += GiNaC
@@ -62,6 +62,7 @@
     SUBDIR += p5-Bit-ShiftReg
     SUBDIR += p5-Bit-Vector
     SUBDIR += p5-Date-Handler
+    SUBDIR += p5-Graph
     SUBDIR += p5-Math-Base85
     SUBDIR += p5-Math-Bezier
     SUBDIR += p5-Math-BigIntFast
