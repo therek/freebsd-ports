@@ -2,7 +2,7 @@
 # Date created:			22 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/net/telnetx/Makefile,v 1.10 2000/04/09 18:13:42 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	telnetx
@@ -21,6 +21,13 @@ RUN_DEPENDS+=	kermit:${PORTSDIR}/comms/kermit
 WRKSRC=		${WRKDIR}/telnetx
 MAN1=		telnetx.1
 ALL_TARGET=	bsdi
+
+.if !exists(/usr/lib/libtelnet.a)
+IGNORE=	"You need to make libtelnet first, which can be done in /usr/src/lib/libtelnet"
+.if !exists(/usr/src/lib/libtelnet)
+IGNORE+=". Oh dear, you don\'t have the sources installed neither"
+.endif
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/telnet/telnet ${PREFIX}/bin/telnetx
