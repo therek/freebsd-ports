@@ -2,7 +2,7 @@
 # Date created:		7 December 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/misc/pybliographer/Makefile,v 1.2 2000/12/07 13:01:34 sobomax Exp $
+# $FreeBSD: ports/misc/pybliographer/Makefile,v 1.3 2001/01/28 07:44:32 kevlo Exp $
 #
 
 PORTNAME=	pybliographer
@@ -29,7 +29,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 CONFIGURE_ARGS=	--with-recode-prefix="${LOCALBASE}"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

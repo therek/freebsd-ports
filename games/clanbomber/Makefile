@@ -2,7 +2,7 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/clanbomber/Makefile,v 1.1 2000/09/25 07:09:10 sobomax Exp $
+# $FreeBSD: ports/games/clanbomber/Makefile,v 1.2 2000/11/01 15:51:05 sobomax Exp $
 #
 
 PORTNAME=	clanbomber
@@ -16,7 +16,7 @@ LIB_DEPENDS=	clanCore.0:${PORTSDIR}/devel/clanlib
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	LIBS="-pthread -L${LOCALBASE}/lib" \
+CONFIGURE_ENV=	LIBS="${PTHREAD_LIBS} -L${LOCALBASE}/lib" \
 		CPPFLAGS="-I${LOCALBASE}/include"
 CFLAGS+=	-fpermissive
 

@@ -2,7 +2,7 @@
 # Date created:        12 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gdm/Makefile,v 1.5 2000/10/08 09:23:53 asami Exp $
+# $FreeBSD: ports/x11/gdm/Makefile,v 1.6 2000/10/17 09:13:37 nakai Exp $
 #
 
 PORTNAME=	gdm
@@ -28,7 +28,7 @@ pre-fetch:
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

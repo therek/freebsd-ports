@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.21 2000/10/30 19:08:35 knu Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.22 2001/02/23 16:52:37 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -37,7 +37,7 @@ CONFIGURE_ARGS+=	--enable-wrappers
 .if defined(WITH_DB2)
 BUILD_DEPENDS=	${LOCALBASE}/lib/libdb2.a:${PORTSDIR}/databases/db/
 
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 -D_THREAD_SAFE" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 ${PTHREAD_CFLAGS}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS+=	--enable-ldbm \
 			--with-ldbm-api=db2

@@ -2,7 +2,7 @@
 # Date created:		Mon Jun 28 17:59:13 PDT 1999
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/security/mhash/Makefile,v 1.13 2000/12/16 14:46:32 roam Exp $
+# $FreeBSD: ports/security/mhash/Makefile,v 1.14 2001/02/23 16:07:16 roam Exp $
 #
 
 PORTNAME=	mhash
@@ -14,7 +14,7 @@ MAINTAINER=	roam@FreeBSD.org
 
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS+=	--with-LDFLAGS="-pthread"
+CONFIGURE_ARGS+=	--with-LDFLAGS="${PTHREAD_LIBS}"
 
 MAN3=		mhash.3
 

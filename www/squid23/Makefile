@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.75 2001/02/05 15:33:48 olgeni Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.76 2001/02/19 13:15:19 olgeni Exp $
 #
 
 PORTNAME=	squid
@@ -98,7 +98,7 @@ MAKEFILE=	makefile
 #CONFIGURE_ARGS+= --enable-heap-replacement
 
 post-extract:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 
 post-install:
 	cd ${WRKSRC}/src; make install-pinger

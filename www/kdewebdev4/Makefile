@@ -2,7 +2,7 @@
 # Date created:				19 May 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quanta/Makefile,v 1.7 2001/02/05 15:33:46 olgeni Exp $
+# $FreeBSD: ports/www/quanta/Makefile,v 1.8 2001/03/18 07:53:02 will Exp $
 #
 
 PORTNAME=	quanta
@@ -39,7 +39,7 @@ CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
 		--disable-closure
 CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-lqt2" LIBQTFILE="libqt2" \
 		CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc -pthread"
+		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lstdc++ -lgcc ${PTHREAD_LIBS}"
 USE_GMAKE=	yes
 
 DOCS=		css html javascript php

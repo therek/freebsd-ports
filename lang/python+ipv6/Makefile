@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.66 2000/10/08 02:42:07 asami Exp $
+# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.67 2000/10/09 23:47:49 asami Exp $
 #
 
 PORTNAME=	python+ipv6
@@ -43,8 +43,8 @@ SETUP_FILE=	Setup
 LIBC_R!=	/sbin/ldconfig -r | grep c_r || true
 .if (${LIBC_R} != "") && !defined(WITHOUT_THREADS)
 CONFIGURE_ARGS+=	--with-thread
-CFLAGS+=		-D_THREAD_SAFE
-CONFIGURE_ENV+=		LDFLAGS="-pthread ${LDFLAGS}"
+CFLAGS+=		${PTHREAD_CFLAGS}
+CONFIGURE_ENV+=		LDFLAGS="${PTHREAD_LIBS} ${LDFLAGS}"
 .endif
 
 #

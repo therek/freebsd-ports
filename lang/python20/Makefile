@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/python/Makefile,v 1.75 2001/03/29 08:13:31 sobomax Exp $
 #
 
 PORTNAME=	python
@@ -39,8 +39,8 @@ SETUP_FILE=	Setup
 LIBC_R!=	/sbin/ldconfig -r | grep c_r || true
 .if (${LIBC_R} != "") && !defined(WITHOUT_THREADS)
 CONFIGURE_ARGS+=	--with-threads
-CFLAGS+=		-D_THREAD_SAFE
-CONFIGURE_ENV+=		LDFLAGS="-pthread ${LDFLAGS}"
+CFLAGS+=		${PTHREAD_CFLAGS}
+CONFIGURE_ENV+=		LDFLAGS="${PTHREAD_LIBS} ${LDFLAGS}"
 .else
 CONFIGURE_ARGS+=	--without-threads
 .endif

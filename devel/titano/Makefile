@@ -2,7 +2,7 @@
 # Date created:				25 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/titano/Makefile,v 1.3 2000/10/02 06:43:50 sobomax Exp $
+# $FreeBSD: ports/devel/titano/Makefile,v 1.4 2001/02/05 14:34:42 olgeni Exp $
 #
 
 PORTNAME=	titano
@@ -34,7 +34,7 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.26 2001/01/16 17:30:12 sobomax Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.27 2001/01/22 19:33:59 ade Exp $
 #
 
 PORTNAME=	gnucash
@@ -41,7 +41,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 MAN1=		gnc-prices.1 gnucash.1
 
 pre-patch:
-	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+	@${PERL} -pi -e 's^-l(pthread|c_r)^${PTHREAD_LIBS}^g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's^\$\{datadir\}/gnome/^\$\(datadir\)/^g ; \

@@ -2,7 +2,7 @@
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.16 2001/01/27 07:53:36 dirk Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.17 2001/01/27 07:55:06 dirk Exp $
 #
 
 PORTNAME=	snort
@@ -34,7 +34,7 @@ CONFIGURE_ARGS+=--with-mysql-includes=${LOCALBASE}/include/mysql \
 LIB_DEPENDS+=	odbc.1:${PORTSDIR}/databases/unixODBC
 CONFIGURE_ARGS+=--with-unixodbc-includes=${LOCALBASE}/include \
 		--with-unixodbc-libraries=${LOCALBASE}/lib
-LDFLAGS+=	-pthread
+LDFLAGS+=	${PTHREAD_LIBS}
 .endif
 
 .if defined(WITH_POSTGRES)

@@ -2,7 +2,7 @@
 # Date created:				10th July 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/games/gnomememoryblocks/Makefile,v 1.5 2000/10/05 07:10:40 reg Exp $
+# $FreeBSD: ports/games/gnomememoryblocks/Makefile,v 1.6 2000/11/03 16:19:26 ade Exp $
 #
 
 PORTNAME=	gnomememoryblocks
@@ -21,7 +21,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

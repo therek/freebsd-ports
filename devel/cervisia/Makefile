@@ -2,7 +2,7 @@
 # Date created:         17 Nov 1999
 # Whom:                 Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/cervisia/Makefile,v 1.13 2001/03/29 00:29:07 asami Exp $
+# $FreeBSD: ports/devel/cervisia/Makefile,v 1.14 2001/03/29 10:59:21 demon Exp $
 
 PORTNAME=	cervisia
 PORTVERSION=	1.3
@@ -46,13 +46,6 @@ KDE_VERSION?=	2
 .if exists(${X11BASE}/lib/libqt2-mt.so)
 .if exists(${X11BASE}/lib/libXThrStub.so)
 QT_ADD=		-mt
-.if ${OSVERSION} >= 500016
-PTHREAD_CFLAGS=
-PTHREAD_LIBS=	-lc_r
-.else
-PTHREAD_CFLAGS=	-D_THREAD_SAFE
-PTHREAD_LIBS=	-pthread
-.endif
 .else
 QT_ADD=		""
 PTHREAD_CFLAGS=

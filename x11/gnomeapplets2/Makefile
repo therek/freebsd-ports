@@ -2,7 +2,7 @@
 # Date created:				26th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnomeapplets/Makefile,v 1.8 2000/11/16 00:19:02 ade Exp $
+# $FreeBSD: ports/x11/gnomeapplets/Makefile,v 1.9 2001/02/05 16:18:00 olgeni Exp $
 #
 
 PORTNAME=	gnomeapplets
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

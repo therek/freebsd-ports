@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.28 2001/02/23 17:04:43 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.29 2001/03/05 22:27:09 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -41,7 +41,7 @@ CONFIGURE_ARGS+=	--enable-wrappers
 .endif
 
 # math.h uses _REENTRANT and stdio.h uses _THREAD_SAFE, so define both.
-CPPFLAGS+=	-D_REENTRANT -D_THREAD_SAFE \
+CPPFLAGS+=	-D_REENTRANT ${PTHREAD_CFLAGS} \
 		-I${LOCALBASE}/include \
 		-I${LOCALBASE}/include/db3
 LDFLAGS+=	-L${LOCALBASE}/lib

@@ -2,7 +2,7 @@
 # Date created:				17 November 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.10 2000/11/01 15:51:10 sobomax Exp $
+# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.11 2001/02/05 16:34:39 olgeni Exp $
 #
 
 PORTNAME=	gtkdiff
@@ -21,7 +21,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		gtkdiff.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \

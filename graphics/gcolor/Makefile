@@ -2,7 +2,7 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.7 2000/06/22 05:52:01 will Exp $
+# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.8 2000/10/05 06:36:17 reg Exp $
 #
 
 PORTNAME=	gcolor
@@ -20,7 +20,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

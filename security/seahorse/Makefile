@@ -2,7 +2,7 @@
 # Date created:		08 March 2000
 # Whom:			Dave McKay <dave@mu.org>
 #
-# $FreeBSD: ports/security/seahorse/Makefile,v 1.8 2000/07/10 21:30:17 will Exp $
+# $FreeBSD: ports/security/seahorse/Makefile,v 1.9 2000/10/05 07:17:17 reg Exp $
 #
 
 PORTNAME=	seahorse
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		seahorse.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|datadir\`/gnome/|datadir\`/|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

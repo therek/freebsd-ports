@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.22 2000/08/04 16:11:12 ade Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.23 2000/10/05 07:17:16 reg Exp $
 #
 
 PORTNAME=	ggv
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

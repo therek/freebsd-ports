@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.80 2001/03/24 22:15:51 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.81 2001/03/27 02:19:55 will Exp $
 #
 
 PORTNAME?=	qt
@@ -91,7 +91,7 @@ do-build:
 	(cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} opengl/qgl.o opengl/qgl_x11.o opengl/moc_qgl.o)
 	${MV} ${WRKSRC}/lib/libqt2.so.4 ${WRKSRC}/lib/libqt2-real.so.4
 	${PERL} -pi.orig -e "s@		xml/qdom.o@xml/qdom.o opengl/qgl.o opengl/qgl_x11.o opengl/moc_qgl.o@g; \
-			     s@SYSCONF_LIBS_OPENGL =@SYSCONF_LIBS_OPENGL= -pthread -lGL -lGLU -lXmu@g" ${WRKSRC}/src/Makefile
+			     s@SYSCONF_LIBS_OPENGL =@SYSCONF_LIBS_OPENGL= ${PTHREAD_LIBS} -lGL -lGLU -lXmu@g" ${WRKSRC}/src/Makefile
 	(cd ${WRKSRC}/src && ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} all)
 	${CP} ${WRKSRC}/lib/libqt2.so.4 ${WRKSRC}/lib/libqtgl.so.4
 	${CP} ${WRKSRC}/lib/libqt2-real.so.4 ${WRKSRC}/lib/libqt2.so.4

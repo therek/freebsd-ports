@@ -2,7 +2,7 @@
 # Date created:				21 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mmc/Makefile,v 1.4 2001/01/25 16:18:16 sobomax Exp $
+# $FreeBSD: ports/mail/mmc/Makefile,v 1.5 2001/02/05 15:10:56 olgeni Exp $
 #
 
 PORTNAME=	mmc
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(gnomedatadir\)/gnome/|\$$\(datadir\)/|g ; \

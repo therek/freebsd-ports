@@ -2,7 +2,7 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.45 2000/09/11 15:45:29 sobomax Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.46 2001/03/20 16:37:50 sobomax Exp $
 #
 
 PORTNAME=	Mesa
@@ -51,7 +51,7 @@ MAKE_ENV+=	SUB_GL=${SUB_GL}		\
 		INCLUDE_GL=${INCLUDE_GL}
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 
 post-configure:
 	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|' ${WRKSRC}/src/config.c

@@ -2,7 +2,7 @@
 # Date created:				15 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.10 2001/02/16 19:48:10 sobomax Exp $
 #
 
 PORTNAME=	xmps
@@ -25,12 +25,12 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e "s|-lpthread|-pthread|g" ${WRKSRC}/configure
+	@${PERL} -pi -e "s|-lpthread|${PTHREAD_LIBS}|g" ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
 		 s|\$$\(datadir\)/aclocal|\$$\(prefix\)/share/aclocal|g ; \
 		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g ; \
-		 s|-lpthread|-pthread|g'
+		 s|-lpthread|${PTHREAD_LIBS}|g'
 
 post-configure:
 	@${PERL} -pi -e 's|^deplibs_check_method=.*|deplibs_check_method=pass_all|' \

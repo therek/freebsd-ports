@@ -2,7 +2,7 @@
 # Date created:		Tue Mar 27 14:56:08 CEST 2001
 # Whom:			Adrian Chadd <adrian@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squid24/Makefile,v 1.77 2001/03/27 12:28:47 adrian Exp $
+# $FreeBSD: ports/www/squid24/Makefile,v 1.78 2001/03/27 12:56:41 adrian Exp $
 #
 
 PORTNAME=	squid
@@ -93,7 +93,7 @@ MAKEFILE=	makefile
 #CONFIGURE_ARGS+= --enable-heap-replacement
 
 post-extract:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 
 post-install:
 #	I don't think many people use the pinger nowadays, and if you

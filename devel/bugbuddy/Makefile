@@ -2,7 +2,7 @@
 # Date created:				23rd February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.12 2000/10/05 22:47:03 ade Exp $
+# $FreeBSD: ports/devel/bugbuddy/Makefile,v 1.13 2000/11/16 00:19:13 ade Exp $
 #
 
 PORTNAME=	bugbuddy
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

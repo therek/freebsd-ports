@@ -2,7 +2,7 @@
 # Date created:				5 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/bitnotes/Makefile,v 1.1 2000/09/05 13:26:57 sobomax Exp $
+# $FreeBSD: ports/deskutils/bitnotes/Makefile,v 1.2 2000/10/05 07:10:25 reg Exp $
 #
 
 PORTNAME=	bitnotes
@@ -26,7 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 AUTOCONF=	autoconf && \
-			${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+			${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 				s|DATADIRNAME=lib|DATADIRNAME=share|g' \
 				${WRKSRC}/configure
 

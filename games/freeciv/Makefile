@@ -2,7 +2,7 @@
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.36 2000/10/05 06:57:34 reg Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.37 2000/10/10 17:12:22 reg Exp $
 #
 
 PORTNAME=	freeciv
@@ -32,7 +32,7 @@ CONFIGURE_ARGS=	--disable-gtktest
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

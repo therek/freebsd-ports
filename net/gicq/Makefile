@@ -2,7 +2,7 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/gicq/Makefile,v 1.16 2000/07/07 19:58:56 steve Exp $
+# $FreeBSD: ports/net/gicq/Makefile,v 1.17 2000/10/05 07:22:46 reg Exp $
 #
 
 PORTNAME=	gicq
@@ -32,7 +32,7 @@ CONFIGURE_ARGS+=--without-gnome
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

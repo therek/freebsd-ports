@@ -2,7 +2,7 @@
 # Date created:				31 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/spat/Makefile,v 1.2 2001/01/04 20:57:31 sobomax Exp $
+# $FreeBSD: ports/net/spat/Makefile,v 1.3 2001/02/05 15:50:40 olgeni Exp $
 #
 
 PORTNAME=	spat
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-lcompat -L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

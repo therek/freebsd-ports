@@ -2,7 +2,7 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.35 2001/03/03 01:49:12 dougb Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.36 2001/03/05 11:23:02 dougb Exp $
 #
 
 PORTNAME=	xscreensaver
@@ -38,7 +38,7 @@ MAN1=		attraction.1 blitspin.1 bouboule.1 braid.1 \
 
 post-patch:
 	@ ${CP} ${WRKSRC}/configure ${WRKSRC}/configure.Patched
-	@ ${SED} -e 's#-lpthread#-pthread#g' \
+	@ ${SED} -e 's#-lpthread#${PTHREAD_LIBS}#g' \
 		${WRKSRC}/configure.Patched > ${WRKSRC}/configure
 
 .include <bsd.port.pre.mk>

@@ -2,7 +2,7 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/lbreakout/Makefile,v 1.4 2001/03/17 08:27:48 sobomax Exp $
 #
 
 PORTNAME=	lbreakout
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	LIBS="-lcompat" \
 		SDL_CONFIG="${SDL_CONFIG}"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 	@find ${WRKSRC} \( -name "*.[ch]" -or -name "*.cpp" \) | \
 		xargs ${PERL} -pi -e 's|"SDL/SDL|"SDL|g ; s|<SDL/SDL|<SDL|g'
 

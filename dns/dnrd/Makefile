@@ -2,7 +2,7 @@
 # Date created:        06 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dnrd/Makefile,v 1.1 2001/03/10 19:33:50 will Exp $
 #
 
 PORTNAME=       	dnrd
@@ -23,6 +23,6 @@ post-patch:
 	@(cd ${WRKSRC} && ${SED} -e 's,%%PREFIX%%,${PREFIX},g' $F > foo && \
 		${MV} foo $F)
 .endfor
-	${PERL} -pi -e "s@cc@${CC}@g; s@-lc_r@-pthread@g" ${WRKSRC}/Makefile
+	${PERL} -pi -e "s@cc@${CC}@g; s@-lc_r@${PTHREAD_LIBS}@g" ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>

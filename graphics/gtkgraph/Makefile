@@ -2,7 +2,7 @@
 # Date created:				12 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.10 2000/10/04 06:39:59 sobomax Exp $
+# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.11 2000/10/05 06:57:38 reg Exp $
 #
 
 PORTNAME=	gtkgraph
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; s|-O2|${CFLAGS}| ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; s|-O2|${CFLAGS}| ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				16 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/asc/Makefile,v 1.1 2001/02/17 21:51:30 sobomax Exp $
+# $FreeBSD: ports/games/asc/Makefile,v 1.2 2001/03/10 15:11:40 sobomax Exp $
 #
 
 PORTNAME=	asc
@@ -35,7 +35,7 @@ CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" \
 DATAFILE=	main.con
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 	@find ${WRKSRC} \( -name "*.cpp" -or -name "*.h" \) | xargs \
 		${PERL} -pi -e 's|malloc\.h|stdlib.h|g'
 

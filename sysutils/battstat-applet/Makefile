@@ -2,7 +2,7 @@
 # Date created:			17 July 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/battstat-applet/Makefile,v 1.3 2000/10/05 07:17:17 reg Exp $
+# $FreeBSD: ports/sysutils/battstat-applet/Makefile,v 1.4 2001/01/16 17:32:26 sobomax Exp $
 #
 
 PORTNAME=	battstat-applet
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:				20 Jun 2000
 # Whom:				Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gabber/Makefile,v 1.11 2001/03/13 15:18:04 sobomax Exp $
 #
 
 PORTNAME=	gabber
@@ -30,7 +30,7 @@ CONFIGURE_ENV+=	GNOME_LIBCONFIG_PATH="${LOCALBASE}/lib:${X11BASE}/lib" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 post-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.31 2001/02/09 21:59:17 ade Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.32 2001/02/15 19:22:14 ade Exp $
 #
 
 PORTNAME=	bonobo
@@ -27,7 +27,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

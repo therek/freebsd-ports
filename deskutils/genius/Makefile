@@ -2,7 +2,7 @@
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/deskutils/genius/Makefile,v 1.11 2000/10/05 07:10:25 reg Exp $
+# $FreeBSD: ports/deskutils/genius/Makefile,v 1.12 2000/11/17 17:00:47 ade Exp $
 #
 
 PORTNAME=	genius
@@ -20,7 +20,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

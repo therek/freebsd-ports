@@ -2,7 +2,7 @@
 # Date created:                         03/09/2000
 # Whom:                                 smoberly@xavier.dyndns.org
 #
-# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.2 2000/06/01 16:25:12 ade Exp $
+# $FreeBSD: ports/deskutils/bulb/Makefile,v 1.3 2000/10/05 07:10:25 reg Exp $
 #
 
 PORTNAME=	bulb
@@ -19,7 +19,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

@@ -2,7 +2,7 @@
 # Date created:				5 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnomeres_applet/Makefile,v 1.1 2000/08/24 12:06:40 sobomax Exp $
+# $FreeBSD: ports/x11/gnomeres_applet/Makefile,v 1.2 2000/10/05 07:17:24 reg Exp $
 #
 
 PORTNAME=	gnomeres_applet
@@ -19,7 +19,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

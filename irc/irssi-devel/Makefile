@@ -2,7 +2,7 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.43 2001/03/10 14:32:47 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.44 2001/03/26 16:23:55 jim Exp $
 #
 
 PORTNAME=	irssi
@@ -32,7 +32,7 @@ CONFIGURE_ARGS+= --disable-ipv6
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

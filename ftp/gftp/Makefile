@@ -2,7 +2,7 @@
 # Date Created:		21 Feb 1999
 # Whom:			Damjan Marion <dmarion@open.hr>
 #
-# $FreeBSD: ports/ftp/gftp/Makefile,v 1.14 2000/08/15 06:10:58 sobomax Exp $
+# $FreeBSD: ports/ftp/gftp/Makefile,v 1.15 2000/10/05 07:22:34 reg Exp $
 #
 
 PORTNAME=	gftp
@@ -29,7 +29,7 @@ USE_GNOME=	yes
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

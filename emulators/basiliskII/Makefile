@@ -2,7 +2,7 @@
 # Date created:				17 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.5 2000/10/05 06:36:09 reg Exp $
+# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.6 2000/11/01 15:51:03 sobomax Exp $
 #
 
 PORTNAME=	basiliskII
@@ -26,7 +26,7 @@ USE_GMAKE=	yes
 CONFIGURE_ARGS=	--disable-fbdev-dga
 CONFIGURE_ENV=	LIBS="-L${LOCALBASE}/lib"
 
-CFLAGS+=	-D_THREAD_SAFE -I${LOCALBASE}/include/pthread/linuxthreads
+CFLAGS+=	${PTHREAD_CFLAGS} -I${LOCALBASE}/include/pthread/linuxthreads
 
 MAN1=		BasiliskII.1
 

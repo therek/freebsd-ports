@@ -2,7 +2,7 @@
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.8 2000/08/21 10:07:19 sobomax Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.9 2000/10/05 07:22:37 reg Exp $
 #
 
 PORTNAME=	dia
@@ -34,7 +34,7 @@ CONFIGURE_ARGS=	--enable-gnome
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:				20 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/news/grn/Makefile,v 1.6 2000/11/01 15:51:08 sobomax Exp $
+# $FreeBSD: ports/news/grn/Makefile,v 1.7 2001/02/05 15:47:59 olgeni Exp $
 #
 
 PORTNAME=	grn
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	glibpath="${GLIB_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

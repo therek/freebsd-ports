@@ -2,7 +2,7 @@
 # Date created:				16 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.6 2001/02/25 21:17:03 sobomax Exp $
 #
 
 PORTNAME=	gtranslator
@@ -31,7 +31,7 @@ MAN1=		gtranslator.1
 MANCOMPRESSED=	yes
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

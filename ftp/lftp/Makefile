@@ -2,7 +2,7 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.44 2001/03/24 10:43:45 olgeni Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.45 2001/03/27 14:20:46 kevlo Exp $
 #
 
 PORTNAME=	lftp
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		lftp.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 post-install:

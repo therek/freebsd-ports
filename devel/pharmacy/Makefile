@@ -2,7 +2,7 @@
 # Date created:				02 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.8 2000/10/21 17:15:05 jedgar Exp $
+# $FreeBSD: ports/devel/pharmacy/Makefile,v 1.9 2000/12/10 23:36:01 jedgar Exp $
 #
 
 PORTNAME=	pharmacy
@@ -21,7 +21,7 @@ CONFIGURE_ENV+=	CPPCFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

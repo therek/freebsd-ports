@@ -2,7 +2,7 @@
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.18 2000/08/04 16:11:24 ade Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.19 2000/10/05 07:17:15 reg Exp $
 #
 
 PORTNAME=	gnomepilot
@@ -29,7 +29,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${LOCALBASE}/pilot/include" \
 		LIBS="-L${LOCALBASE}/lib -L${LOCALBASE}/pilot/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

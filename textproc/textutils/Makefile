@@ -2,7 +2,7 @@
 # Date created:		14 May 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/textproc/textutils/Makefile,v 1.9 2000/10/01 18:35:16 reg Exp $
+# $FreeBSD: ports/textproc/textutils/Makefile,v 1.10 2001/02/05 16:35:16 olgeni Exp $
 #
 
 PORTNAME=	textutils
@@ -28,7 +28,7 @@ MAN1=		gcomm.1 gcsplit.1 gcut.1 gexpand.1 gfmt.1 ghead.1 \
 		gsplit.1 gunexpand.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

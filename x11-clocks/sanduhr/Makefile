@@ -2,7 +2,7 @@
 # Date created:				14 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-clocks/sanduhr/Makefile,v 1.2 2000/10/05 07:17:25 reg Exp $
+# $FreeBSD: ports/x11-clocks/sanduhr/Makefile,v 1.3 2001/02/05 17:05:24 olgeni Exp $
 #
 
 PORTNAME=	sanduhr
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		sanduhr.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:				28 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/yank/Makefile,v 1.11 2001/01/22 12:39:18 jedgar Exp $
+# $FreeBSD: ports/deskutils/yank/Makefile,v 1.12 2001/02/25 19:12:21 jedgar Exp $
 #
 
 PORTNAME=	yank
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+	@${PERL} -pi -e 's^-l(pthread|c_r)^${PTHREAD_LIBS}^g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's^\$\(datadir\)/gnome/^\$\(datadir\)/^g ; \

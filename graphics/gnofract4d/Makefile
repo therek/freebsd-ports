@@ -2,7 +2,7 @@
 # Date created:				30 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.9 2000/10/12 21:31:34 ade Exp $
+# $FreeBSD: ports/graphics/gnofract4d/Makefile,v 1.10 2000/12/22 16:49:45 kevlo Exp $
 #
 
 PORTNAME=	gnofract4d
@@ -21,7 +21,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g'

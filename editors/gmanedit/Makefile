@@ -2,7 +2,7 @@
 # Date created:				12 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.3 2000/11/01 15:51:01 sobomax Exp $
+# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.4 2001/02/05 14:36:19 olgeni Exp $
 #
 
 PORTNAME=	gmanedit
@@ -28,7 +28,7 @@ post-extract:
 	@${RM} -rf ${WRKSRC}/config.cache
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

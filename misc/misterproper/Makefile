@@ -2,7 +2,7 @@
 # Date created:				12 December 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/misterproper/Makefile,v 1.1 2000/12/12 11:12:53 sobomax Exp $
+# $FreeBSD: ports/misc/misterproper/Makefile,v 1.2 2001/02/05 15:47:11 olgeni Exp $
 #
 
 PORTNAME=	misterproper
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:        30 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/games/atomix/Makefile,v 1.5 2000/10/05 07:10:35 reg Exp $
+# $FreeBSD: ports/games/atomix/Makefile,v 1.6 2000/11/01 13:09:00 sobomax Exp $
 #
 
 PORTNAME=	atomix
@@ -19,7 +19,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

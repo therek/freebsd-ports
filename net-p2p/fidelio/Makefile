@@ -2,7 +2,7 @@
 # Date created:				13 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/fidelio/Makefile,v 1.4 2001/02/09 14:13:09 sobomax Exp $
 #
 
 PORTNAME=	fidelio
@@ -28,7 +28,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/libxml2 \
 		XML_CONFIG="${XML_CONFIG}"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

@@ -2,7 +2,7 @@
 # Date created:		4 January 2000
 # Whom:			mwest@uct.ac.za
 #
-# $FreeBSD: ports/devel/libgii/Makefile,v 1.3 2000/06/16 08:47:21 sobomax Exp $
+# $FreeBSD: ports/devel/libgii/Makefile,v 1.4 2000/06/16 21:50:13 asami Exp $
 #
 
 PORTNAME=	libgii
@@ -18,7 +18,7 @@ INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 # NOTE: We can not define USE_LIBTOOL for this port to build.
 #USE_LIBTOOL=	yes
-CFLAGS+=	-pthread
+CFLAGS+=	${PTHREAD_LIBS}
 
 MAN1=		mhub.1
 MAN3=		giiEventPoll.3gii giiInit.3gii giiOpen.3gii \

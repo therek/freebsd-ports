@@ -2,7 +2,7 @@
 # Date created:				20 January 1999
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.13 2000/08/04 16:11:20 ade Exp $
+# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.14 2000/10/05 07:10:23 reg Exp $
 #
 
 PORTNAME=	gnomemedia
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

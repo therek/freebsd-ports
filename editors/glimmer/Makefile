@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/glimmer/Makefile,v 1.16 2001/02/05 11:36:43 sobomax Exp $
+# $FreeBSD: ports/editors/glimmer/Makefile,v 1.17 2001/02/05 14:36:17 olgeni Exp $
 #
 
 PORTNAME=	glimmer
@@ -29,7 +29,7 @@ PYTHON_LIBS=	-lssl -lcrypto
 PYTHON_LIBS+=	-lutil -lreadline -lcrypt -lpython
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|-lpython|${PYTHON_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \

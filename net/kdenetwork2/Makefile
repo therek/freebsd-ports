@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.58 2001/03/24 22:15:40 will Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -30,7 +30,7 @@ CONFIGURE_ENV+=	LIBQT="-lqt2" MOC="${MOC}" \
 USE_GMAKE=	yes
 
 pre-configure:
-	${PERL} -pi -e "s:-lpthread:-pthread:g" ${WRKSRC}/knode/Makefile.in
+	${PERL} -pi -e "s:-lpthread:${PTHREAD_LIBS}:g" ${WRKSRC}/knode/Makefile.in
 	${PERL} -pi -e "s@all_includes=\"@all_includes=\"-I/usr/include @g" ${WRKSRC}/acinclude.m4 ${WRKSRC}/aclocal.m4
 
 .include <bsd.port.mk>

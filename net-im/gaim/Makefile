@@ -2,7 +2,7 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.39 2001/03/21 20:54:57 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.40 2001/03/24 15:56:45 jim Exp $
 #
 
 PORTNAME=		gaim
@@ -42,7 +42,7 @@ CONFIGURE_ARGS+=	--disable-esd
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

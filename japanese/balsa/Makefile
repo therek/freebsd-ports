@@ -2,7 +2,7 @@
 # Date created:				02 Mar 2000
 # Whom:					Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/balsa/Makefile,v 1.2 2000/10/05 07:16:56 reg Exp $
+# $FreeBSD: ports/japanese/balsa/Makefile,v 1.3 2000/10/13 09:34:41 reg Exp $
 #
 
 PORTNAME=	balsa
@@ -29,7 +29,7 @@ CONFIGURE_ENV=	CPPFLAGS='-I${LOCALBASE}/include' \
 MAN1=		balsa.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

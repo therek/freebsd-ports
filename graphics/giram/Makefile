@@ -2,7 +2,7 @@
 # Date created:        17 June 1999
 # Whom:                Brandon Fosdick <bfoz@glue.umd.edu>
 #
-# $FreeBSD: ports/graphics/giram/Makefile,v 1.8 2000/10/05 07:22:38 reg Exp $
+# $FreeBSD: ports/graphics/giram/Makefile,v 1.9 2000/12/06 07:43:26 sobomax Exp $
 #
 
 PORTNAME=	giram
@@ -35,7 +35,7 @@ CONFIGURE_ARGS+=--disable-gnome
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.74 2001/01/11 15:50:04 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.75 2001/02/16 22:51:20 jim Exp $
 #
 
 PORTNAME=		xchat
@@ -47,7 +47,7 @@ CONFIGURE_ARGS+=	--disable-gnome --disable-gdk-pixbuf
 .endif
 
 post-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

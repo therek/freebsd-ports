@@ -2,7 +2,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.23 2000/08/04 16:11:06 ade Exp $
+# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.24 2000/10/05 07:10:44 reg Exp $
 #
 
 PORTNAME=	electriceyes
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

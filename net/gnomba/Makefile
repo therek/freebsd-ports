@@ -2,7 +2,7 @@
 # Date created:			10 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/gnomba/Makefile,v 1.4 2000/10/05 07:17:11 reg Exp $
+# $FreeBSD: ports/net/gnomba/Makefile,v 1.5 2000/11/13 12:44:27 demon Exp $
 #
 
 PORTNAME=	gnomba
@@ -21,7 +21,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \

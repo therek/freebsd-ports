@@ -2,7 +2,7 @@
 # Date created:		29 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/devel/glade/Makefile,v 1.27 2000/11/02 21:21:04 ade Exp $
+# $FreeBSD: ports/devel/glade/Makefile,v 1.28 2001/01/16 17:30:17 sobomax Exp $
 #
 
 PORTNAME=	glade
@@ -20,7 +20,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/libs"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

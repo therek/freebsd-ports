@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.14 2001/02/01 20:16:39 sobomax Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.15 2001/03/20 20:28:09 obrien Exp $
 #
 
 PORTNAME=	nautilus
@@ -33,7 +33,7 @@ USE_GNOME=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -fno-rtti -fno-exceptions" \
-		LIBS="-pthread -L${LOCALBASE}/lib" \
+		LIBS="${PTHREAD_LIBS} -L${LOCALBASE}/lib" \
 		LIBPNG="-L${LOCALBASE}/lib -lpng -lz ${MOZILLA_LIBS}"
 CONFIGURE_ARGS=	--with-freetype2-lib-place=${LOCALBASE}/lib \
 		--with-freetype2-include-place=${LOCALBASE}/include/freetype2
@@ -55,7 +55,7 @@ pre-extract:
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

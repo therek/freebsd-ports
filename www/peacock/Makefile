@@ -2,7 +2,7 @@
 # Date created:				21st April 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/www/peacock/Makefile,v 1.8 2000/10/05 07:17:22 reg Exp $
+# $FreeBSD: ports/www/peacock/Makefile,v 1.9 2000/11/03 16:19:29 ade Exp $
 #
 
 PORTNAME=	peacock
@@ -21,7 +21,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

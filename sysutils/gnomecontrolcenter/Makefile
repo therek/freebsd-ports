@@ -2,7 +2,7 @@
 # Date created:				29 Dec 1998
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.29 2001/03/23 05:34:24 vanilla Exp $
+# $FreeBSD: ports/sysutils/gnomecontrolcenter/Makefile,v 1.30 2001/03/23 05:42:24 ade Exp $
 #
 
 PORTNAME=	gnomecontrolcenter
@@ -26,7 +26,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

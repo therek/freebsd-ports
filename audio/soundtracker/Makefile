@@ -2,7 +2,7 @@
 # Date created:        28 November 1999
 # Whom:                kzentner
 #
-# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.9 2000/10/05 07:22:27 reg Exp $
+# $FreeBSD: ports/audio/soundtracker/Makefile,v 1.10 2001/02/26 05:11:53 steve Exp $
 #
 
 PORTNAME=	soundtracker
@@ -30,7 +30,7 @@ CONFIGURE_ARGS+=--disable-gnome
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+	@${PERL} -pi -e 's^-l(pthread|c_r)^${PTHREAD_LIBS}^g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

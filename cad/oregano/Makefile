@@ -2,7 +2,7 @@
 # Date created:			19 Feb 2001
 # Whom:				Anders Andersson <anders@codefactory.se>
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/oregano/Makefile,v 1.1 2001/03/07 11:00:31 knu Exp $
 #
 
 PORTNAME=	oregano
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

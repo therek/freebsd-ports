@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.42 2000/10/05 07:10:30 reg Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.43 2001/02/05 14:34:38 olgeni Exp $
 #
 
 PORTNAME=	gide
@@ -28,7 +28,7 @@ MAN1=		gide.1 gdbio.1
 PLIST_SUB=	VERSION=${PORTVERSION}
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

@@ -2,7 +2,7 @@
 # Date created:				6 Jul 2000
 # Whom:					Carl Johan Madestrand
 #
-# $FreeBSD: ports/audio/teknap/Makefile,v 1.6 2000/10/08 10:19:16 asami Exp $
+# $FreeBSD: ports/audio/teknap/Makefile,v 1.7 2001/03/27 13:10:14 kevlo Exp $
 #
 
 PORTNAME=	TekNap
@@ -53,7 +53,7 @@ pre-extract:
 	@${ECHO} "WITH_XMMS - Support XMMS"
 
 pre-configure:
-	@${PERL} -pi -e "s:-lc_r:-pthread:g" ${WRKSRC}/configure
+	@${PERL} -pi -e "s:-lc_r:${PTHREAD_LIBS}:g" ${WRKSRC}/configure
 
 post-install:
 .if !defined(NOPORTDOCS)

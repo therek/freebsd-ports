@@ -2,7 +2,7 @@
 # Date created:				2 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/veepee/Makefile,v 1.6 2000/10/31 09:07:24 sobomax Exp $
+# $FreeBSD: ports/devel/veepee/Makefile,v 1.7 2001/02/12 10:01:01 knu Exp $
 #
 
 PORTNAME=	veepee
@@ -20,7 +20,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 USE_XLIB=	yes
 USE_PYTHON=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	LDFLAGS="-pthread ${PYTHON_LIBS}"
+CONFIGURE_ENV=	LDFLAGS="${PTHREAD_LIBS} ${PYTHON_LIBS}"
 CONFIGURE_ARGS=	--with-gd-includes=${LOCALBASE}/include/gd \
 		--disable-kde
 .if exists(/usr/lib/libcrypto.a)
@@ -28,7 +28,7 @@ PYTHON_LIBS+=	-lssl -lcrypto
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' \
 		${WRKSRC}/configure
 
 post-configure:

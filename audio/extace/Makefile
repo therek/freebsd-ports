@@ -2,7 +2,7 @@
 # Date created:				8 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.7 2000/11/01 15:50:54 sobomax Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.8 2001/01/02 19:32:19 sobomax Exp $
 #
 
 PORTNAME=	extace
@@ -31,7 +31,7 @@ USE_GNOME=	yes
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g'

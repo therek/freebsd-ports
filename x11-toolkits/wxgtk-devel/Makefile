@@ -2,7 +2,7 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.18 2001/01/18 13:18:33 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.19 2001/02/05 16:49:13 olgeni Exp $
 #
 
 PORTNAME=	wxgtk
@@ -29,12 +29,12 @@ CONFIGURE_ARGS=	--with-libpng=sys \
 		--with-libjpeg=sys \
 		--with-libtiff=sys \
 		--with-zlib=sys
-CONFIGURE_ENV=	CPPFLAGS="-D_THREAD_SAFE -I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="${PTHREAD_CFLAGS} -I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 AUTOCONF=	autoconf && \
-			${PERL} -pi -e 's|-l\$$THREADS_LIB|-pthread|g ; \
-					s|-l\$$THREADS_LINK|-pthread|g' \
+			${PERL} -pi -e 's|-l\$$THREADS_LIB|${PTHREAD_LIBS}|g ; \
+					s|-l\$$THREADS_LINK|${PTHREAD_LIBS}|g' \
 						${WRKSRC}/configure
 
 post-install:

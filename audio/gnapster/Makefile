@@ -2,7 +2,7 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.22 2001/01/25 01:01:00 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.23 2001/01/25 01:12:56 cpiazza Exp $
 #
 
 PORTNAME=	gnapster
@@ -31,7 +31,7 @@ CONFIGURE_ARGS+=--disable-gnome --disable-gdk-pixbuf
 .endif
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

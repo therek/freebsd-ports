@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.33 2001/02/27 15:00:46 nectar Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.34 2001/03/01 22:46:28 nectar Exp $
 #
 
 PORTNAME=	gnomeicu
@@ -39,7 +39,7 @@ CONFIGURE_ENV=	CPPFLAGS="${SOCKSFLAGS} -I${LOCALBASE}/include" \
 		CFLAGS="${CFLAGS}"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \

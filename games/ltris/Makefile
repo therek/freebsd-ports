@@ -2,7 +2,7 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/ltris/Makefile,v 1.3 2001/03/11 09:42:24 sobomax Exp $
 #
 
 PORTNAME=	ltris
@@ -23,7 +23,7 @@ CONFIGURE_ENV=	CPPFLAGS="`${SDL_CONFIG} --cflags`" \
 		LIBS="`${SDL_CONFIG} --libs` -L${LOCALBASE}/lib -lcompat"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g' ${WRKSRC}/configure
 	@find ${WRKSRC} \( -name "*.[ch]" -or -name "*.cpp" \) | \
 		xargs ${PERL} -pi -e 's|"SDL/SDL|"SDL|g ; s|<SDL/SDL|<SDL|g'
 

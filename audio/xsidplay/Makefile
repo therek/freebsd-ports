@@ -2,7 +2,7 @@
 # Date created:        28 November 1999
 # Whom:                Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.7 2001/03/11 05:01:04 steve Exp $
+# $FreeBSD: ports/audio/xsidplay/Makefile,v 1.8 2001/03/17 14:02:28 dinoex Exp $
 #
 
 PORTNAME=	xsidplay
@@ -29,7 +29,7 @@ CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/qt2 \
 		--with-x-includes=${X11BASE}/include \
 		--with-x-libraries=${X11BASE}/lib
 
-CFLAGS+=	-D_THREAD_SAFE
+CFLAGS+=	${PTHREAD_CFLAGS}
 
 .include <bsd.port.pre.mk>
 

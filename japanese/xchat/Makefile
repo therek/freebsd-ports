@@ -2,7 +2,7 @@
 # Date created:		30 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/xchat/Makefile,v 1.6 2000/12/26 11:15:45 knu Exp $
+# $FreeBSD: ports/japanese/xchat/Makefile,v 1.7 2001/02/25 19:02:30 knu Exp $
 #
 
 PORTNAME=	xchat
@@ -68,7 +68,7 @@ pre-patch:
 
 # begin master part
 post-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

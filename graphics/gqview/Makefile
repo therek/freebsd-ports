@@ -2,7 +2,7 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.28 2001/03/14 23:36:05 vanilla Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.29 2001/03/17 15:24:52 vanilla Exp $
 #
 
 PORTNAME=	gqview
@@ -22,7 +22,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		gqview.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|GNOME_DATADIR\)/gnome/|GNOME_DATADIR\)/|g'

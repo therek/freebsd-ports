@@ -2,7 +2,7 @@
 # Date created:				30 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/smpeg-xmms/Makefile,v 1.1 2000/12/19 17:05:15 sobomax Exp $
+# $FreeBSD: ports/graphics/smpeg-xmms/Makefile,v 1.2 2000/12/27 08:06:22 sobomax Exp $
 #
 
 PORTNAME=	smpeg-xmms
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 post-configure:

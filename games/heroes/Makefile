@@ -2,7 +2,7 @@
 # Date created:				15 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/heroes/Makefile,v 1.7 2001/02/24 21:03:15 sobomax Exp $
 #
 
 PORTNAME=	heroes
@@ -40,7 +40,7 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-sdl_mixer=${LOCALBASE}
 CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" \
-		LIBS="-L${LOCALBASE}/lib -lgnugetopt -pthread -lsmpeg" \
+		LIBS="-L${LOCALBASE}/lib -lgnugetopt ${PTHREAD_LIBS} -lsmpeg" \
 		CPPFLAGS="-I${LOCALBASE}/include"
 CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-unknown-freebsd${OSREL}
 

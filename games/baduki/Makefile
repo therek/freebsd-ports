@@ -2,7 +2,7 @@
 # Date created:        11 December 1999
 # Whom:                spcoltri@unm.edu
 #
-# $FreeBSD: ports/games/baduki/Makefile,v 1.4 2000/10/05 06:36:12 reg Exp $
+# $FreeBSD: ports/games/baduki/Makefile,v 1.5 2000/10/10 04:56:40 kevlo Exp $
 #
 
 PORTNAME=	baduki
@@ -20,7 +20,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure

@@ -2,7 +2,7 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.4 2000/10/05 06:57:42 reg Exp $
+# $FreeBSD: ports/korean/gtkcomm/Makefile,v 1.5 2001/02/22 14:50:39 cjh Exp $
 #
 
 PORTNAME=	gtkcomm
@@ -19,7 +19,7 @@ USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 
 pre-patch:
-	@${PERL} -pi -e 's^-l(pthread|c_r)^-pthread^g ; \
+	@${PERL} -pi -e 's^-l(pthread|c_r)^${PTHREAD_LIBS}^g ; \
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 
 .include <bsd.port.mk>

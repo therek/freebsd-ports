@@ -2,7 +2,7 @@
 # Date created:				25 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.7 2000/11/01 16:28:49 jeh Exp $
+# $FreeBSD: ports/devel/commoncpp/Makefile,v 1.8 2000/11/01 20:28:40 jeh Exp $
 #
 
 PORTNAME=	CommonC++
@@ -21,7 +21,7 @@ INSTALLS_SHLIB=	yes
 pre-patch:
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|-release \$$\(LT_RELEASE\)||g'
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
 		 s|l\$$ost_cv_thread_library|\$$ost_cv_thread_library|g ; \
 		 s|=c_r|=pthread|g' ${WRKSRC}/configure
 

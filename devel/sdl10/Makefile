@@ -2,7 +2,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.19 2000/09/25 07:23:55 sobomax Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.20 2000/10/05 05:19:38 reg Exp $
 #
 
 PORTNAME=	sdl
@@ -26,7 +26,7 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	NASM="${LOCALBASE}/bin/nasm"
 CONFIGURE_ARGS=	--enable-video-svga
 
-CFLAGS+=	-D_THREAD_SAFE
+CFLAGS+=	${PTHREAD_CFLAGS}
 
 post-configure:
 	@${PERL} -pi -e 's|^deplibs_check_method=.*|deplibs_check_method=pass_all|' \
