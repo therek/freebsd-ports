@@ -3,11 +3,11 @@
 # Date created:			Mar 16, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/py-trex/Makefile,v 1.1 2001/03/16 16:24:07 ijliao Exp $
+# $FreeBSD: ports/textproc/py-trex/Makefile,v 1.2 2001/04/02 12:52:14 ijliao Exp $
 #
 
 PORTNAME=	trex
-PORTVERSION=	0.7.1
+PORTVERSION=	0.7.2
 CATEGORIES=	textproc python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pytrex
