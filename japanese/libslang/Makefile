@@ -2,19 +2,18 @@
 # Date created:		3 September 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/libslang/Makefile,v 1.12 2000/06/17 05:33:58 knu Exp $
+# $FreeBSD: ports/japanese/libslang/Makefile,v 1.13 2000/07/19 06:43:36 knu Exp $
 #
 
 PORTNAME=	libslang
 PORTVERSION=	${VERSION}.j${JP_VERSION}
 CATEGORIES=	japanese devel
-MASTER_SITES=	http://www.actweb.ne.jp/k-yosino/ \
-		http://home.sprintmail.com/~kikutani/slang/
+MASTER_SITES=	http://www.actweb.ne.jp/k-yosino/
 DISTNAME=	slang-${VERSION}jp${JP_VERSION}
 
 MAINTAINER=	mega@minz.org
 
-VERSION=	1.4.1
+VERSION=	1.4.2
 JP_VERSION=	0
 
 GNU_CONFIGURE=	yes
