@@ -3,19 +3,18 @@
 # Date created:			  4 Nov 1994
 # Whom:				  ache
 #
-# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.80 2001/02/06 08:45:22 obrien Exp $
+# $FreeBSD: ports/ftp/ncftp3/Makefile,v 1.81 2001/02/14 11:30:56 obrien Exp $
 #
 
 PORTNAME=	ncftp3
 PORTVERSION=	3.0.2
+PORTREVISION=	1
 CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.ncftp.com/ncftp/
 DISTNAME=	ncftp-${PORTVERSION}-src
 
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-.if defined(WANT_IPV6)
-PATCHFILES=	ncftp-302-v6-20001113.diff.gz
-.endif
+PATCHFILES=	ncftp-302-v6-20010302.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
