@@ -2,7 +2,7 @@
 # Date created:		27 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.10 2000/10/08 10:23:02 asami Exp $
+# $FreeBSD: ports/textproc/cocoon/Makefile,v 1.11 2000/11/26 13:10:31 kuriyama Exp $
 #
 
 PORTNAME=	cocoon
@@ -25,11 +25,6 @@ LIBS=		fop_0_13_0.jar xalan_1_2_D02.jar xerces_1_2.jar
 JDIR=		${PREFIX}/share/java/classes
 CDIR=		${PREFIX}/etc/apache/cocoon
 SDIR=		${PREFIX}/share/java/cocoon
-.if defined(NOPORTDOCS)
-PLIST_SUB=	DOC="@comment "
-.else
-PLIST_SUB=	DOC=""
-.endif
 
 pre-build:
 	${CHMOD} a+rx ${WRKSRC}/build.sh

@@ -2,7 +2,7 @@
 # Date created:				04 Jun 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.6 2000/10/03 05:00:31 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.7 2000/10/03 05:12:48 lioux Exp $
 #
 
 PORTNAME=	libjsearch
@@ -78,12 +78,6 @@ LIBNUMBER=	0
 ALL_TARGET=	freebsd2.x
 LIBNUMBER=	0.5
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

@@ -2,7 +2,7 @@
 # Date created:		16 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.3 2000/11/20 14:48:56 lioux Exp $
+# $FreeBSD: ports/sysutils/clockspeed/Makefile,v 1.4 2001/01/16 17:32:26 sobomax Exp $
 #
 
 PORTNAME=	clockspeed
@@ -20,12 +20,6 @@ INSTALL_TARGET=	setup check
 
 MAN1=		clockadd.1 clockspeed.1 clockview.1 sntpclock.1 \
 		taiclock.1 taiclockd.1
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif
 
 do-configure:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/INSTALL

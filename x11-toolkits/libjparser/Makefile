@@ -2,7 +2,7 @@
 # Date created:				14 June 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.2 2000/10/03 05:00:31 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.3 2000/10/03 05:12:47 lioux Exp $
 #
 
 PORTNAME=	libjparser
@@ -71,12 +71,6 @@ LIBNUMBER=	1
 ALL_TARGET=	freebsd2.x
 LIBNUMBER=	1.1
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

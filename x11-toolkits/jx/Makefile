@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.9 2000/10/03 05:12:45 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/jx/Makefile,v 1.10 2000/10/07 22:53:03 asami Exp $
 #
 
 PORTNAME=	JX
@@ -92,12 +92,6 @@ LIBACE=		5.0
 LIBJTOOL=	0.5
 LIBJX=		1.5
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-patch:
 .for i in ${CONFIGURE_PREPROCESSING_FILES}

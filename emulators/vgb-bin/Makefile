@@ -2,7 +2,7 @@
 # Date created:		04 Aug 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.3 2000/11/27 02:10:01 lioux Exp $
+# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.4 2001/01/16 17:30:28 sobomax Exp $
 #
 
 PORTNAME=	vgb
@@ -21,12 +21,6 @@ NO_BUILD=	no
 NO_WRKSUBDIR=	no
 
 INSTALL_DIR=	${INSTALL} -d -o ${SHAREOWN} -g ${SHAREGRP}
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/vgb ${PREFIX}/bin

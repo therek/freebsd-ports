@@ -2,7 +2,7 @@
 # Date created:				11 September 1998
 # Whom:					jabley@clear.co.nz
 #
-# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.9 2000/11/16 08:45:37 sobomax Exp $
+# $FreeBSD: ports/x11-servers/Xfstt/Makefile,v 1.10 2000/11/18 23:45:14 ade Exp $
 #
 
 PORTNAME=	xfstt
@@ -16,12 +16,6 @@ MAINTAINER=	olgeni@uli.it
 
 USE_X_PREFIX=	yes
 MAN1=		xfstt.1
-
-.if defined(NOPORTDOCS)
-NODOCS=	"@comment "
-.endif
-
-PLIST_SUB=	NOPORTDOCS=${NODOCS}
 
 do-install:
 	$(INSTALL_PROGRAM) $(WRKSRC)/xfstt $(PREFIX)/bin

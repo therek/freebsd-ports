@@ -2,7 +2,7 @@
 # Date created:		26 November 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/comclear/Makefile,v 1.1 2000/11/26 14:16:19 roam Exp $
 #
 
 PORTNAME=	comclear
@@ -23,11 +23,6 @@ USE_AUTOMAKE=	yes
 # Do not install docs by default, see the ifdef'd post-install below.
 post-configure:
 		${PERL} -pi.fbsd -e 's/^install-data-am:.*/install-data-am:/' ${WRKSRC}/Makefile
-
-.if		defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
 
 post-install:
 		cd ${WRKSRC} && ${GMAKE} install-docDATA

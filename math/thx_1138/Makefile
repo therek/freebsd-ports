@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/thx_1138/Makefile,v 1.3 2000/10/03 05:12:36 lioux Exp $
+# $FreeBSD: ports/math/thx_1138/Makefile,v 1.4 2001/01/16 17:31:30 sobomax Exp $
 #
 
 PORTNAME=	thx_1138
@@ -62,12 +62,6 @@ ALL_TARGET=	freebsd3.x
 .else
 ALL_TARGET=	freebsd2.x
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

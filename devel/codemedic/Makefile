@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codemedic/Makefile,v 1.4 2000/11/28 23:39:36 lioux Exp $
+# $FreeBSD: ports/devel/codemedic/Makefile,v 1.5 2001/01/16 17:30:15 sobomax Exp $
 #
 
 PORTNAME=	code_medic
@@ -66,12 +66,6 @@ ALL_TARGET=	freebsd3.x
 .else
 ALL_TARGET=	freebsd2.x
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

@@ -2,7 +2,7 @@
 # Date Created:				13 Nov 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/security/amavis-perl/Makefile,v 1.1 2001/01/07 07:38:32 will Exp $
+# $FreeBSD: ports/security/amavis-perl/Makefile,v 1.2 2001/01/16 17:32:15 sobomax Exp $
 #
 
 PORTNAME=	amavis-perl
@@ -33,12 +33,6 @@ RUN_DEPENDS=	${BUILD_DEPENDS}
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--disable-qmail --disable-postfix --disable-exim --with-virusdir=/var/spool/quarantine --enable-relay
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	NOPORTDOCS="@comment "
-.else
-PLIST_SUB+=	NOPORTDOCS=""
-.endif
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/amavis/amavis ${PREFIX}/sbin

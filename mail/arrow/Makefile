@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/arrow/Makefile,v 1.4 2001/01/03 18:54:21 lioux Exp $
+# $FreeBSD: ports/mail/arrow/Makefile,v 1.5 2001/01/16 17:31:17 sobomax Exp $
 #
 
 PORTNAME=	arrow
@@ -64,12 +64,6 @@ ALL_TARGET=	freebsd3.x
 .else
 ALL_TARGET=	freebsd2.x
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

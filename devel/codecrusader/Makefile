@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.14 2000/10/03 05:12:21 lioux Exp $
+# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.15 2001/01/16 17:30:15 sobomax Exp $
 #
 
 PORTNAME=	code_crusader
@@ -74,12 +74,6 @@ ALL_TARGET=	freebsd3.x
 .else
 ALL_TARGET=	freebsd2.x
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

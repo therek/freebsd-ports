@@ -2,7 +2,7 @@
 # Date created:				30 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjtoolbar/Makefile,v 1.5 2000/10/03 05:00:34 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libjtoolbar/Makefile,v 1.6 2000/10/03 05:12:49 lioux Exp $
 #
 
 PORTNAME=	libjtoolbar
@@ -79,12 +79,6 @@ LIBNUMBER=	0
 ALL_TARGET=	freebsd2.x
 LIBNUMBER=	0.5
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}

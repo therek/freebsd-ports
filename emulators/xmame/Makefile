@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.14 2000/12/11 02:15:58 steve Exp $
+# $FreeBSD: ports/emulators/xmame/Makefile,v 1.15 2001/01/16 17:30:30 sobomax Exp $
 #
 
 PORTNAME=	xmame
@@ -29,12 +29,6 @@ XMAMEDOCS=	changes.mame changes.unix gamelist.mame \
 		xmame-doc-3.html xmame-doc-4.html xmame-doc-5.html \
 		xmame-doc-6.html xmame-doc-7.html xmame-doc.html \
 		xmame-doc.lyx xmame-doc.ps xmame-doc.sgml xmame-doc.txt
-
-.if !defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS=""
-.else
-PLIST_SUB+=	PORTDOCS="@comment "
-.endif
 
 # the large number of sed regexes here is intended to make this port a whole
 # lot easier to maintain - please don't convert them into a patch.

@@ -2,7 +2,7 @@
 # Date created:				30 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjtree/Makefile,v 1.5 2000/10/03 05:00:35 lioux Exp $
+# $FreeBSD: ports/x11-toolkits/libjtree/Makefile,v 1.6 2000/10/03 05:12:49 lioux Exp $
 #
 
 PORTNAME=	libjtree
@@ -73,12 +73,6 @@ LIBNUMBER=	1
 ALL_TARGET=	freebsd2.x
 LIBNUMBER=	1.1
 .endif
-
-.if defined(NOPORTDOCS)
-PLIST_SUB+=	PORTDOCS:="@comment "
-.else
-PLIST_SUB+=	PORTDOCS:=
-.endif # !defined(NOPORTDOCS)
 
 post-extract:
 .for i in ${COPY_JXDIRS}
