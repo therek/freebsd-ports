@@ -2,14 +2,14 @@
 # Date created:		2 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-byaccr/Makefile,v 1.1 2000/11/02 03:09:59 knu Exp $
+# $FreeBSD: ports/devel/ruby-byaccr/Makefile,v 1.2 2000/11/03 15:49:06 knu Exp $
 #
 
 PORTNAME=	byaccr
 PORTVERSION=	0.0
 PORTREVISION=	1
 CATEGORIES=	devel ruby
-MASTER_SITES=	http://kt-www.jaist.ac.jp:8000/~ttate/ftp/
+MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
 

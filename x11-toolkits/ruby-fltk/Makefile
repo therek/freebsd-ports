@@ -2,13 +2,13 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.3 2000/09/26 08:01:53 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.4 2001/03/18 15:44:26 knu Exp $
 #
 
 PORTNAME=	fltk
 PORTVERSION=	20000831
 CATEGORIES=	x11-toolkits ruby
-MASTER_SITES=	http://kt-www.jaist.ac.jp:8000/~ttate/ftp/
+MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
