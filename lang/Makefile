@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.175 2000/07/13 20:55:49 ade Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.176 2000/07/28 10:45:42 sobomax Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -35,6 +35,7 @@
     SUBDIR += ghc
     SUBDIR += glibstdc++28
     SUBDIR += gnat
+    SUBDIR += gnat-glade
     SUBDIR += gnomebasic
     SUBDIR += gpc
     SUBDIR += guile
