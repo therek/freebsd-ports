@@ -2,7 +2,7 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/mail/procmail/Makefile,v 1.33 2001/01/16 17:31:22 sobomax Exp $
+# $FreeBSD: ports/mail/procmail/Makefile,v 1.34 2001/02/05 22:58:35 ache Exp $
 #
 
 PORTNAME=	procmail
@@ -15,7 +15,7 @@ MAINTAINER=	ache@FreeBSD.org
 
 INSTALL_TARGET=	install-suid install.man
 
-# It asks for list af directories to do test for file locking
+# It asks for list of directories to do test for file locking
 # (defaults to /tmp and ".", so return should suffice in most cases).
 .if !defined(PACKAGE_BUILDING) # handled in patch-aa
 IS_INTERACTIVE=	yes
