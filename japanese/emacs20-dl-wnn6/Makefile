@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.18 2000/09/17 16:02:26 taoka Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.19 2001/05/31 22:22:47 ade Exp $
 #
 
 PORTNAME=	emacs20-dl-wnn6
@@ -35,8 +35,8 @@ EMACSDL_DIR=	${.CURDIR}/../../editors/emacs20-dl
 EMACSDL_SRCDIR=	${WRKDIRPREFIX}${EMACSDL_DIR}/work/emacs-${EMACS_VER}
 # hack to allow parallel build to work
 .if defined(PARALLEL_PACKAGE_BUILD)
-BUILD_DEPENDS+=	gmake:${PORTSDIR}/devel/gmake \
-		autoconf:${PORTSDIR}/devel/autoconf
+USE_GMAKE=	yes
+BUILD_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf
 .endif
 
 post-install:
