@@ -2,7 +2,7 @@
 # Date created:				4 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.20 2000/06/04 21:45:34 will Exp $
+# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.21 2000/06/09 22:23:34 will Exp $
 #
 
 PORTNAME=	EZWGL
@@ -20,6 +20,8 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+.include <bsd.port.pre.mk>
 
 .include "${FILESDIR}/manpages"
 
@@ -46,4 +48,4 @@ post-install:
 .endif
 	${LDCONFIG} -m ${PREFIX}/lib
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
