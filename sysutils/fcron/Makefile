@@ -3,18 +3,18 @@
 # Date created:			Mar 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.2 2001/04/16 05:57:37 ijliao Exp $
+# $FreeBSD: ports/sysutils/fcron/Makefile,v 1.3 2001/06/17 01:08:13 ijliao Exp $
 #
 
 PORTNAME=	fcron
-PORTVERSION=	1.0.3
+PORTVERSION=	1.1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://fcron.free.fr/
 MASTER_SITE_SUBDIR=	system/daemons/cron
 DISTNAME=	${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --with-cflags="${CFLAGS}" \
@@ -28,10 +28,10 @@ PLIST_SUB=	PORTVERSION=${PORTVERSION}
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
-MAN1=		fcrontab.1
-MAN3=		bitstring.3
-MAN5=		fcrontab.5
-MAN8=		fcron.8
+MAN1=	fcrontab.1
+MAN3=	bitstring.3
+MAN5=	fcrontab.5 fcron.conf.5
+MAN8=	fcron.8
 
 post-install:
 	@${CP} ${WRKSRC}/files/fcron.allow ${PREFIX}/etc/fcron.allow.dist
