@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/security/Makefile,v 1.64 1999/08/31 01:50:53 peter Exp $
 #
 
     SUBDIR += bjorb
@@ -27,6 +27,7 @@
     SUBDIR += nbaudit
     SUBDIR += nessus
     SUBDIR += nmap
+    SUBDIR += nmapfe
     SUBDIR += openssl
     SUBDIR += p5-Authen-Radius
     SUBDIR += p5-Crypt-DES
