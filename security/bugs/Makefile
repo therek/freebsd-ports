@@ -2,19 +2,16 @@
 # Date created:		20 June 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/security/bugs/Makefile,v 1.3 2000/04/09 18:29:25 cpiazza Exp $
+# $FreeBSD: ports/security/bugs/Makefile,v 1.4 2000/05/22 09:53:57 will Exp $
 #
 
 PORTNAME=		bugs
-PORTVERSION=		2.0.1
+PORTVERSION=		3.3.2
 CATEGORIES=		security
-MASTER_SITES=		http://www.asi.fr/~martinez/crypto/ \
-			${MASTER_SITE_SUNSITE}
+MASTER_SITES=		http://www.bcrypt.com/crypto/
 EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		stephane.legrand@bigfoot.com
-
-USE_GMAKE=		yes
 
 # No Manual page
 
@@ -30,16 +27,23 @@ post-configure:
 		-e 's/^install: instchoice all/install: instchoice/' \
 		< ${WRKSRC}/Makefile.pre_sed > ${WRKSRC}/Makefile
 
+pre-install:
+	(cd ${WRKSRC}; ${MAKE} test)
+
 post-install:
 .if !defined(NOPORTDOCS)
 	${CP} -R ${WRKSRC}/doc ${PREFIX}/${DISTNAME}
 .endif
 	${CP} -R ${WRKSRC}/include ${PREFIX}/${DISTNAME}
-	strip ${PREFIX}/${DISTNAME}/bcrypt \
+	strip ${PREFIX}/${DISTNAME}/bchat \
+		${PREFIX}/${DISTNAME}/bcrypt \
 		${PREFIX}/${DISTNAME}/bhide \
 		${PREFIX}/${DISTNAME}/bkey \
+		${PREFIX}/${DISTNAME}/block \
 		${PREFIX}/${DISTNAME}/blogin \
+		${PREFIX}/${DISTNAME}/bmore \
 		${PREFIX}/${DISTNAME}/bpass \
 		${PREFIX}/${DISTNAME}/bpassdel \
+		${PREFIX}/${DISTNAME}/bunlock \
 
 .include <bsd.port.mk>
