@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.27 2000/08/21 10:07:26 sobomax Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.28 2001/01/27 05:26:22 will Exp $
 #
 
 PORTNAME=	jade
@@ -19,7 +19,6 @@ MAINTAINER=	ports@FreeBSD.org
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CFLAGS}"
 CONFIGURE_ARGS=	--enable-default-catalog=${PREFIX}/share/sgml/catalog
 
 post-extract:
