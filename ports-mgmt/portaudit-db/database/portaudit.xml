@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 This file is in the public domain.
-  $FreeBSD$
+  $FreeBSD: ports/security/portaudit-db/database/portaudit.xml,v 1.1 2004/06/12 22:43:44 eik Exp $
 -->
 <!DOCTYPE vuxml PUBLIC "-//vuxml.org//DTD VuXML 1.1//EN" "http://www.vuxml.org/dtd/vuxml-1/vuxml-11.dtd">
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -64,6 +64,10 @@ This file is in the public domain.
       <discovery>2004-03-29</discovery>
       <entry>2004-03-30</entry>
     </dates>
+  </vuln>
+
+  <vuln vid="1ed556e6-734f-11d8-868e-000347dd607f">
+    <cancelled superseded="1a448eb7-6988-11d8-873f-0020ed76ef5a"/>
   </vuln>
 
 </vuxml>
