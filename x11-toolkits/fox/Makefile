@@ -2,16 +2,15 @@
 # Date created:		23 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.1.1.1 2000/03/22 00:34:21 will Exp $
+# $FreeBSD: ports/x11-toolkits/fox/Makefile,v 1.2 2000/04/10 01:10:15 cpiazza Exp $
 #
 
 PORTNAME=	fox
-PORTVERSION= 	0.99.112
+PORTVERSION= 	0.99.122
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.cfdrc.com/pub/FOX/ \
-		ftp://imssun1.epfl.ch/pub/ \
+		ftp://imssun1.epfl.ch/pub/sources/ \
 		ftp://SunSITE.Informatik.RWTH-Aachen.DE/pub/Linux/fox/
-DISTNAME=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -39,14 +38,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 SHLIB_MAJ=	1
 SHLIB_MIN=	0
 MAKE_ENV+=	LT_CURRENT="${SHLIB_MAJ}" LT_REVISION="${SHLIB_MIN}"
+PLIST_SUB+=	LIBVER="${SHLIB_MAJ}"
 MAN1=		reswrap.1
 
-.include <bsd.port.pre.mk>
-
-.if ${PORTOBJFORMAT} == "elf"
-PLIST_SUB+=	LIBVER="${SHLIB_MAJ}"
-.else
-PLIST_SUB+=	LIBVER="${SHLIB_MAJ}.${SHLIB_MIN}"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
