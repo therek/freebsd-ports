@@ -2,7 +2,7 @@
 # Date created:		Di   7 Nov 2000 19:48:50 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/cflowd/Makefile,v 1.7 2001/03/25 13:28:21 andreas Exp $
+# $FreeBSD: ports/net/cflowd/Makefile,v 1.8 2001/03/25 14:24:42 andreas Exp $
 #
 
 PORTNAME=	cflowd
@@ -17,7 +17,7 @@ PATCH_SITES=	http://net.doit.wisc.edu/~plonka/cflowd/
 PATCHFILES=	cflowd-2-1-b1-djp.patch
 .endif
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libArts.a:${PORTSDIR}/net/arts++
 

@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.69 2001/06/05 11:38:34 sobomax Exp $
 #
 
 PORTNAME=	ghostscript
@@ -32,7 +32,7 @@ DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${HP970_DRV} ${GPRINT_SRC}
 EXTRACT_ONLY=	${GS_SOURCES}
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png

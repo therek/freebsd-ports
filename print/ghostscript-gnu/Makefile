@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.46 2000/09/11 19:07:36 andreas Exp $
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.47 2001/06/20 05:11:51 obrien Exp $
 #
 
 PORTNAME=	ghostscript
@@ -18,7 +18,7 @@ DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP850_DRV}
 EXTRACT_ONLY=	${GS_SOURCES}
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${NONEXISTENT}:${PORTSDIR}/graphics/jpeg:extract \
 		unzip:${PORTSDIR}/archivers/unzip
