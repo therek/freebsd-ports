@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.366 2001/07/21 18:23:48 sf Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.367 2001/07/23 09:54:10 kuriyama Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -18,6 +18,7 @@
     SUBDIR += balsa
     SUBDIR += bible_names-fpw
     SUBDIR += binder
+    SUBDIR += bjfilter850
     SUBDIR += bookview
     SUBDIR += cannadic
     SUBDIR += canuum
