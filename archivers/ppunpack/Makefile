@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.1 2000/06/03 04:52:12 will Exp $
+# $FreeBSD: ports/archivers/ppunpack/Makefile,v 1.2 2000/06/22 05:51:50 will Exp $
 #
 
 PORTNAME=	ppunpack
@@ -17,11 +17,12 @@ MAINTAINER=	ports@FreeBSD.org
 
 RESTRICTED=	"No commercial redistribution"
 NO_CDROM=	${RESTRICTED}
+
 WRKSRC=		${WRKDIR}/PPUnpack
-MAKE_FLAGS=	CC="${CC}" COPTS="${CFLAGS}"
+MAKE_ARGS=     	CC="${CC}" COPTS="${CFLAGS}"
 ALL_TARGET=	ppunpack
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/ppunpack ${PREFIX}/bin/
+	${INSTALL_PROGRAM} ${WRKSRC}/ppunpack ${PREFIX}/bin
 
 .include <bsd.port.mk>
