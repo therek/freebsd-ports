@@ -3,7 +3,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.102 2001/01/16 17:31:20 sobomax Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.103 2001/02/07 14:51:14 obrien Exp $
 #
 
 PORTNAME=	mutt
@@ -30,7 +30,7 @@ PATCH_SITES=	http://www.spinnaker.de/mutt/compressed/ \
 PATCHFILES=	patch-${PORTVERSION}.rr.compressed.1.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER?=	obrien@FreeBSD.org
 
 .if defined(PACKAGE_BUILDING)
 WITH_SLANG=	yes
