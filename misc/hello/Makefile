@@ -3,7 +3,7 @@
 # Date created:				Fri Jul 23, 1999
 # Whom:					shipley@dis.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/hello/Makefile,v 1.1 1999/12/29 09:36:14 steve Exp $
 #
 
 DISTNAME=	hello-1.3
@@ -17,5 +17,10 @@ MAINTAINER=	shipley@dis.org
 WRKSRC=		${WRKDIR}/hello-1.3
 
 GNU_CONFIGURE=	YES
+
+post-install:
+	@install-info --dir-file=${PREFIX}/info/dir \
+	    --entry="* Hello: (hello).		Hello Reference Manual." \
+	    ${PREFIX}/info/hello.info
 
 .include <bsd.port.mk>
