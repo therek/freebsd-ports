@@ -3,11 +3,11 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.54 2001/03/15 14:29:14 sf Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.55 2001/03/23 01:33:46 jeh Exp $
 #
 
 PORTNAME=	dhcp
-PORTVERSION=	3.0.b2.22
+PORTVERSION=	3.0.b2.23
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/dhcp/
 PKGNAMEPREFIX=	isc-
@@ -46,6 +46,7 @@ ETC_DIR=	${PREFIX}/etc
 RCD_DIR=	${PREFIX}/etc/rc.d
 DOC_DIR=	${PREFIX}/share/doc/${PKGBASE}
 VARDB_DIR=	/var/db
+VARRUN_DIR=	/var/run
 
 STRIP?=		strip
 
