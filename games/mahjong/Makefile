@@ -3,16 +3,16 @@
 # Date created:                Jan 31, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/games/mahjong/Makefile,v 1.3 2001/04/10 18:03:27 ijliao Exp $
+# $FreeBSD: ports/games/mahjong/Makefile,v 1.4 2001/04/18 07:19:13 ijliao Exp $
 #
 
 PORTNAME=	mahjong
-PORTVERSION=	1.0.4
+PORTVERSION=	1.1
 CATEGORIES=	games net
 MASTER_SITES=	http://www.stevens-bradfield.com/MahJong/Source/
 DISTNAME=	mj-${PORTVERSION}-src
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GTK=	yes
 
