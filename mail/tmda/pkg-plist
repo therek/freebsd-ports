@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.31 2003/09/27 08:36:31 edwin Exp $
+@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.32 2003/09/29 12:55:50 krion Exp $
 bin/tmda-address
 bin/tmda-check-address
 bin/tmda-filter
@@ -110,6 +110,7 @@ bin/tmda-sendmail
 %%PORTDOCS%%%%DOCSDIR%%/index.html
 %%PORTDOCS%%%%DOCSDIR%%/install.html
 %%PORTDOCS%%%%DOCSDIR%%/inuse.html
+%%PORTDOCS%%%%DOCSDIR%%/logos.html
 %%PORTDOCS%%%%DOCSDIR%%/mirrors.html
 %%PORTDOCS%%%%DOCSDIR%%/press.html
 %%PORTDOCS%%%%DOCSDIR%%/requirements.html
