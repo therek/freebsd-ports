@@ -2,11 +2,11 @@
 # Date created:				9th February 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/libxslt/Makefile,v 1.1 2001/02/09 23:19:44 ade Exp $
 #
 
 PORTNAME=	libxslt
-PORTVERSION=	0.1.0
+PORTVERSION=	0.4.0
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/libxslt
@@ -18,9 +18,6 @@ LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-
-pre-patch:
-	@find ${WRKSRC} -type f -name "*.[ch]" | \
-		xargs ${PERL} -pi -e 's|libxml/|libxml2/|'
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
 
 .include <bsd.port.mk>
