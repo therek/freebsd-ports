@@ -3,7 +3,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/librep/Makefile,v 1.1.1.1 1999/11/11 10:15:58 nakai Exp $
 #
 
 DISTNAME=	librep-0.7.1
@@ -23,7 +23,7 @@ TAR_VER=	'\"'`${TAR} --version 2>&1 | ${SED} 's/GNU tar version //'`'\"'
 post-patch:
 		${CAT} ${WRKSRC}/lisp/tar-file-handler.jl | \
 		${SED} '/^(defvar tarfh-gnu-tar-version/s/nil/'${TAR_VER}'/' \
-		> ${FILESDIR}/tmp.work
-		${CP} ${FILESDIR}/tmp.work ${WRKSRC}/lisp/tar-file-handler.jl
+		> ${WRKDIR}/tmp.work
+		${CP} ${WRKDIR}/tmp.work ${WRKSRC}/lisp/tar-file-handler.jl
 
 .include <bsd.port.mk>
