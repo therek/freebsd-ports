@@ -3,7 +3,7 @@
 # Date created:				12 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cccc/Makefile,v 1.8 1999/09/21 09:35:06 asami Exp $
+# $FreeBSD: ports/devel/cccc/Makefile,v 1.9 2000/03/29 07:16:33 kris Exp $
 #
 
 DISTNAME=		cccc-2.1.1.src
@@ -16,8 +16,6 @@ MAINTAINER=		ports@FreeBSD.org
 
 BUILD_DEPENDS=		antlr:${PORTSDIR}/devel/pccts \
 			dlg:${PORTSDIR}/devel/pccts
-
-BROKEN=			pccts upgrade
 
 WRKSRC=			${WRKDIR}/usr/local/src/cccc-2.1.1
 USE_GMAKE=		yes
