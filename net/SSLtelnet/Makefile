@@ -2,7 +2,7 @@
 # Date created:		Mar 29, 1998
 # Whom:			issei@jp.FreeBSD.org
 #
-# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.15 2000/09/22 01:58:57 kris Exp $
+# $FreeBSD: ports/net/SSLtelnet/Makefile,v 1.16 2000/09/22 04:25:06 kris Exp $
 
 PORTNAME=		SSLtelnet
 PORTVERSION=		0.13
@@ -15,9 +15,15 @@ MAINTAINER=		issei@jp.FreeBSD.org
 
 USE_OPENSSL=		YES
 
+PLIST_SUB+=		OPENSSLDIR="${OPENSSLDIR}"
+
 .if !defined(BATCH)
 INSTALL_TARGET=		install certificate
 .endif
+
+# Make sure that whole directory tree exists.
+pre-install:
+	${MKDIR} ${OPENSSLDIR}/certs
 
 post-install:
 	strip $(PREFIX)/bin/telnet
