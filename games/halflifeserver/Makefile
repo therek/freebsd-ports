@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.13 2001/04/17 19:49:07 sf Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.14 2001/04/17 23:07:47 sf Exp $
 #
 
 PORTNAME=	hlds
@@ -24,7 +24,8 @@ USE_LINUX_PREFIX=	yes
 NO_CDROM=	"Size; the data set is much too big"
 NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/hlds_l
-PLIST_SUB=	HLDSDIR="${HLDSDIR:S/^\///}" LDCONFIG="${LDCONFIG_LINUX}"
+PLIST_SUB=	${PLIST_SUB_FOR_THIS_PORT}
+PLIST_SUB_FOR_THIS_PORT=	HLDSDIR="${HLDSDIR:S/^\///}" LDCONFIG="${LDCONFIG_LINUX}"
 
 INSTALL_DIR=	${INSTALL} -d -o ${BINOWN} -g ${BINGRP} -m ${BINMODE}
 LDCONFIG_LINUX=	${LINUXBASE}/sbin/ldconfig
