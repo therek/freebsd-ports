@@ -3,7 +3,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/krogue/Makefile,v 1.1.1.1 2000/02/23 00:55:10 jedgar Exp $
+# $FreeBSD: ports/games/krogue/Makefile,v 1.2 2000/02/25 19:17:57 asami Exp $
 #
 
 DISTNAME=	krogue-0.9.6
@@ -21,10 +21,4 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 MAKE_ENV=	SHELL=${SH} PREFIX=${PREFIX} MAKE=${GMAKE} PCFLAGS="${CFLAGS}"
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} < 400004
-BROKEN=		"obsolete compiler"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
