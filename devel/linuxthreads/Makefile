@@ -2,18 +2,16 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.20 2001/02/20 00:34:56 tegge Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.21 2001/06/14 01:34:18 tegge Exp $
 #
 
 PORTNAME=	linuxthreads
 PORTVERSION=	2.2.3
-PORTREVISION=	0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	glibc
 DISTNAME=	glibc-linuxthreads-${PORTVERSION}
-
-NO_FILTER_SHLIBS = true
 
 MAINTAINER=	tegge@freebsd.org
 
