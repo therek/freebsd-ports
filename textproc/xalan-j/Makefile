@@ -2,18 +2,22 @@
 # Date created:		21 February 2001
 # Whom:			ernst@jollem.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/xalan-j/Makefile,v 1.1 2001/03/16 03:48:25 kuriyama Exp $
 #
 
 PORTNAME=	xalan-j
-PORTVERSION=	2.0.0
+PORTVERSION=	2.0.1
 CATEGORIES=	java textproc
-MASTER_SITES=	http://xml.apache.org/dist/${PORTNAME}/
-DISTNAME=	${PORTNAME}_2_0_0
+MASTER_SITES=	http://xml.apache.org/dist/${PORTNAME}/ \
+		http://xml.apache.org/dist/old/${PORTNAME}/ \
+		http://www.jollem.com/~ernst/
+DISTNAME=	${PORTNAME}_2_0_1
 
 MAINTAINER=	ernst@jollem.com
 
-RUN_DEPENDS=	${LOCALBASE}/linux-jdk1.3.0/bin/java:${PORTSDIR}/java/linux-jdk13
+RUN_DEPENDS=    ${JAVAVM}:${PORTSDIR}/java/javavmwrapper
+
+JAVAVM?=        ${LOCALBASE}/bin/javavm
 
 NO_BUILD=	YES
 PORTDESTDIR=	${PREFIX}/${PORTNAME}${PORTVERSION}
