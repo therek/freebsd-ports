@@ -2,11 +2,12 @@
 # Date created:         28 Dec 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/unarj/Makefile,v 1.14 1999/08/31 06:40:18 mharo Exp $
+# $FreeBSD: ports/archivers/unarj/Makefile,v 1.15 2000/04/08 23:17:53 mharo Exp $
 #
 
 PORTNAME=	unarj
 PORTVERSION=	2.43
+PORTREVISION=	1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/arcers/
 EXTRACT_SUFX=	.tgz
