@@ -2,17 +2,18 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.54 2000/04/17 00:17:15 reg Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.55 2000/04/17 20:56:04 andreas Exp $
 #
 
 PORTNAME=	postgresql
-PORTVERSION=	7.0beta5
+PORTVERSION=	7.0.b5
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.de.postgresql.org/ \
 		ftp://ftp.postgresql.org/pub/ \
 		ftp://ftp.iodynamics.com/pub/mirror/postgresql/ \
 		ftp://ftp.digex.net/pub/packages/database/postgresql/ \
 		ftp://ftp.sunet.se/pub/unix/databases/relational/postgresql/
+DISTNAME=	${PORTNAME}-7.0beta5
 
 MAINTAINER=	andreas@FreeBSD.org
 
@@ -49,7 +50,7 @@ DOCDIR=		${WRKDIR}/${DISTNAME}/doc
 USE_GMAKE=	YES
 MAKEFILE=	GNUmakefile
 HAS_CONFIGURE=	YES
-CONFIGURE_ARGS= --prefix=${PREFIX}/pgsql \
+CONFIGURE_ARGS=	--prefix=${PREFIX}/pgsql \
 		--enable-locale \
 		--with-template=`uname -s | ${TR} '[A-Z]' '[a-z]'` \
 		--with-includes="${PREFIX}/include ${TCL_INCDIR} ${TK_INCDIR}" \
