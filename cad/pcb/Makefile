@@ -3,7 +3,7 @@
 # Date created:		19 October 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/cad/pcb/Makefile,v 1.20 1999/08/25 04:52:34 obrien Exp $
+# $FreeBSD: ports/cad/pcb/Makefile,v 1.21 1999/09/21 02:44:08 asami Exp $
 #
 
 DISTNAME=	pcb-1.6.3
@@ -13,9 +13,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jseger@FreeBSD.org
 
-BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4
-
-BROKEN=		texindex
+BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4 \
+		latex:${PORTSDIR}/print/teTeX
 
 USE_IMAKE=	yes
 MAN1=		pcb.1
