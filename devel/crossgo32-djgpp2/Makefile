@@ -4,7 +4,7 @@
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 # FreeBSD Version:	2.2.1-RELEASE
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/crossgo32-djgpp2/Makefile,v 1.8 1999/08/25 05:47:35 obrien Exp $
 #
 
 DISTNAME=	djcrx201
@@ -12,8 +12,6 @@ PKGNAME=	crossgo32-djgpp2-2.01
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.tas.gov.au/pc/simtelnet/gnu/djgpp/v2/ \
 		ftp://ftp.cdrom.com/pub/simtelnet/gnu/djgpp/v2/
-
-MAINTAINER=	sutton@aardvark.apana.org.au
 
 RUN_DEPENDS=	i386-go32-gcc:${PORTSDIR}/devel/crossgo32
 

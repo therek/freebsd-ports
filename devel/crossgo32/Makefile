@@ -5,7 +5,7 @@
 # Date updated: 	Sun Jun 22 16:11:40 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 #
-# $FreeBSD: ports/devel/crossgo32/Makefile,v 1.6 1999/08/25 05:47:34 obrien Exp $
+# $FreeBSD: ports/devel/crossgo32/Makefile,v 1.7 1999/12/24 18:39:21 mharo Exp $
 #
 
 DISTNAME=	crosstree-1.3
@@ -14,8 +14,6 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.cygnus.com/pub/embedded/crossgcc/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} dosrel-1.0${EXTRACT_SUFX}
-
-MAINTAINER=	sutton@aardvark.apana.org.au
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=${TARGET}

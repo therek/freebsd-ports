@@ -3,7 +3,7 @@
 # Date created:		Sun Jun 22 16:57:39 EST 1997
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au)
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/crossgo32-djgpp2-pdcurses/Makefile,v 1.6 1999/08/25 05:47:36 obrien Exp $
 #
 
 DISTNAME=	pdc22
@@ -11,8 +11,6 @@ PKGNAME=	crossgo32-djgpp2-pdcurses-2.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.tas.gov.au/pc/simtelnet/gnu/djgpp/v2tk/ \
 		ftp://ftp.cdrom.com/pub/simtelnet/gnu/djgpp/v2tk/
-
-MAINTAINER=	sutton@aardvark.apana.org.au
 
 RUN_DEPENDS=	i386-go32-gcc:${PORTSDIR}/devel/crossgo32
 RUN_DEPENDS=	i386-go32-stubify:${PORTSDIR}/devel/crossgo32-djgpp2

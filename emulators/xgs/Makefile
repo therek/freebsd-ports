@@ -4,7 +4,7 @@
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 # FreeBSD Version:	2.1.5-RELEASE
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/xgs/Makefile,v 1.6 1999/08/25 05:49:51 obrien Exp $
 #
 
 # This is the stable release of the xgs emulator. Sound support is
@@ -20,8 +20,6 @@ MASTER_SITES=	ftp://ftp.optera.com/pub/xgs/ \
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} xgs.rom
 
 BROKEN='fetch'
-
-MAINTAINER=	sutton@aardvark.apana.org.au
 
 DIST_SUBDIR=	xgs
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
