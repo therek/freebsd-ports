@@ -2,11 +2,11 @@
 # Date created:				Wed Jan  3 12:54:59 2001
 # Whom:					will
 #
-# $FreeBSD: ports/mail/p5-Mail-Box/Makefile,v 1.4 2001/08/31 12:58:07 tobez Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mail-Box
-PORTVERSION=	1.320
+PORTVERSION=	1.321
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
