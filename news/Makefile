@@ -1,9 +1,10 @@
-# $FreeBSD: ports/news/Makefile,v 1.55 2000/07/24 06:01:00 dburr Exp $
+# $FreeBSD: ports/news/Makefile,v 1.56 2000/07/24 10:04:09 dburr Exp $
 #
 
     SUBDIR += atp
     SUBDIR += aub
     SUBDIR += bgrab
+    SUBDIR += c-nocem
     SUBDIR += cnews
     SUBDIR += dejasearch
     SUBDIR += diablo
