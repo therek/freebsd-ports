@@ -2,7 +2,7 @@
 # Date created:		14 May 1998
 # Whom:			Adrian Wontroba <aw1@stade.co.uk>
 #
-# $FreeBSD: ports/textproc/textutils/Makefile,v 1.7 1999/09/18 17:46:30 steve Exp $
+# $FreeBSD: ports/textproc/textutils/Makefile,v 1.8 2000/04/09 21:53:12 cpiazza Exp $
 #
 
 PORTNAME=	textutils
@@ -13,17 +13,25 @@ MASTER_SITE_SUBDIR=	textutils
 
 MAINTAINER=	aw1@stade.co.uk
 
-GNU_CONFIGURE=	yes
-
-CONFIGURE_ARGS=	--program-prefix=g
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_GMAKE=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--program-prefix=g
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		gcomm.1 gcsplit.1 gcut.1 gexpand.1 gfmt.1 ghead.1 \
 		gjoin.1 gmd5sum.1 gnl.1 gpaste.1 gpr.1 gsort.1 \
 		gptx.1 gsum.1 gtac.1 gtail.1 gtr.1 guniq.1 \
 		gtsort.1 gwc.1 gcat.1 gcksum.1 gfold.1 god.1 \
 		gsplit.1 gunexpand.1
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
+		s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
+		s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
+		s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 
 post-install:
 	install-info ${PREFIX}/info/textutils.info ${PREFIX}/info/dir
