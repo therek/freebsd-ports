@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.301 2000/10/23 15:24:16 imura Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.302 2000/10/28 12:19:45 jeh Exp $
 #
 
     SUBDIR += 221upgrade
@@ -77,6 +77,7 @@
     SUBDIR += kdeutils11
     SUBDIR += kdeutils2
     SUBDIR += kdirstat
+    SUBDIR += khotkeys
     SUBDIR += kp
     SUBDIR += kwatch
     SUBDIR += lc
