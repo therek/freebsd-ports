@@ -1,8 +1,8 @@
-# New ports collection makefile for:	kdetoys-i18n
+# New ports collection makefile for:	kdetoys
 # Date created:		18 may 1999
-# Whom:			imura@cs.titech.ac.jp
+# Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/x11-clocks/kdetoys11-i18n/Makefile,v 1.9 2000/04/14 16:02:43 imura Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys11/Makefile,v 1.10 2000/10/23 15:24:07 imura Exp $
 #
 
 PORTNAME=	kdetoys

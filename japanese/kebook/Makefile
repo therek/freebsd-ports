@@ -2,7 +2,7 @@
 # Date created:        13 Novenver 1999
 # Whom:                SUZUKI, Mitsuhiro <hige@higesoft.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/kebook-i18n/Makefile,v 1.3 2000/08/27 06:13:32 knu Exp $
+# $FreeBSD: ports/japanese/kebook/Makefile,v 1.4 2000/10/23 15:23:36 imura Exp $
 #
 
 PORTNAME=	kebook
@@ -10,7 +10,6 @@ PORTVERSION=	0.3.5
 CATEGORIES=	japanese kde
 MASTER_SITES=	http://www.os.rim.or.jp/~s_mitu/library/kebook/ \
 		ftp://ftp.kde.gr.jp/pub/kde/unstable/contrib/
-PKGNAMESUFFIX=	-i18n
 
 MAINTAINER=	hige@higesoft.os.rim.or.jp
 
