@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.347 2000/09/18 00:37:17 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.348 2000/09/21 14:20:48 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -105,6 +105,7 @@
     SUBDIR += i960-rtems-gcc
     SUBDIR += i960-rtems-gdb
     SUBDIR += id-utils
+    SUBDIR += idle
     SUBDIR += ilu
     SUBDIR += imake
     SUBDIR += imake-4
