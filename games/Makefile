@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.406 2001/08/08 04:21:13 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.407 2001/08/23 12:28:11 kris Exp $
 #
 
     SUBDIR += 0verkill
@@ -67,6 +67,7 @@
     SUBDIR += dungeon
     SUBDIR += eboard
     SUBDIR += empire
+    SUBDIR += falconseye
     SUBDIR += fkiss
     SUBDIR += flightgear
     SUBDIR += flying
