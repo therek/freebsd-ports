@@ -4,11 +4,11 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.35 2000/02/17 05:43:24 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.36 2000/02/17 07:01:20 sumikawa Exp $
 #
 
 DISTNAME=       rsync-2.4.1
-CATEGORIES=     net # ipv6 (disabled until upgraded)
+CATEGORIES=     net ipv6
 MASTER_SITES=	ftp://samba.anu.edu.au/pub/rsync/  \
 		ftp://sunsite.auc.dk/pub/unix/rsync/  \
 		ftp://ftp.sunet.se/pub/unix/admin/rsync/  \
