@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.355 2000/04/28 08:29:22 nbm Exp $
+# $FreeBSD: ports/net/Makefile,v 1.356 2000/05/01 03:26:00 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -73,11 +73,11 @@
     SUBDIR += gnome-icu
     SUBDIR += gnome-vnc
     SUBDIR += gnomenetwork
+    SUBDIR += gnosamba
     SUBDIR += gnu-finger
     SUBDIR += gnut
     SUBDIR += gopher
     SUBDIR += gtic
-    SUBDIR += gtksamba
     SUBDIR += gtkyahoo
     SUBDIR += h2n
     SUBDIR += hesiod
