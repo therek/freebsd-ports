@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.315 2001/05/26 10:48:20 greid Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 4va
@@ -158,6 +158,7 @@
     SUBDIR += opendx
     SUBDIR += opendx-samples
     SUBDIR += opengl-man
+    SUBDIR += osg
     SUBDIR += p5-Chart-PNGgraph
     SUBDIR += p5-GD
     SUBDIR += p5-GD-Barcode
