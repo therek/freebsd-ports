@@ -3,7 +3,7 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/aleph/Makefile,v 1.4 2001/04/22 11:17:40 ijliao Exp $
+# $FreeBSD: ports/lang/aleph/Makefile,v 1.5 2001/06/22 09:27:00 ijliao Exp $
 #
 
 PORTNAME=	aleph
@@ -24,7 +24,7 @@ INSTALLS_SHLIB=	yes
 
 PLIST_SUB=	PORTVER=${PORTVERSION:R}
 
-MAN1=	aleph.1
+MAN1=	aleph.1 axc.1 axl.1
 
 do-configure:
 	@(cd ${WRKSRC}; ./cnf/bin/aleph-setup -o)
