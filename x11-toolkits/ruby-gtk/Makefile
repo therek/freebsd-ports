@@ -2,35 +2,29 @@
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.6 2000/02/23 00:27:22 jedgar Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-gtk/Makefile,v 1.7 2000/04/10 01:10:59 cpiazza Exp $
 #
 
 PORTNAME=	ruby-gtk
 PORTVERSION= 	0.23
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	http://www.ueda.info.waseda.ac.jp/~igarashi/ruby/ \
-		ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \
-		ftp://ftp.TokyoNet.AD.JP/pub/misc/ruby/contrib/ \
-		ftp://ftp.iij.ad.jp/pub/lang/ruby/contrib/ \
-		ftp://blade.nagaokaut.ac.jp/pub/lang/ruby/contrib/ \
-		ftp://ftp.krnet.ne.jp/pub/ruby/contrib/ \
-		ftp://mirror.nucba.ac.jp/mirror/ruby/contrib/
+MASTER_SITES=	http://www.ruby-lang.org/gtk/download/
 
-MAINTAINER=	yasuf@big.or.jp
+MAINTAINER=	yasuf@bsdclub.org
 
 BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_XLIB=	yes
-WRKSRC=		${WRKDIR}/gtk-0.23
-PLIST_SUB+=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
+WRKSRC=		${WRKDIR}/gtk-${PORTVERSION}
+PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
 RUBY=		${LOCALBASE}/bin/ruby
 RUBY_VER=	1.4
 RUBY_ARCH=	${ARCH}-freebsd${OSREL}
 
-.if defined(NO_IMLIB)
+.if defined(WITHOUT_IMLIB)
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 .else
 LIB_DEPENDS+=	Imlib.5:${PORTSDIR}/graphics/imlib
