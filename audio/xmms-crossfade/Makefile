@@ -2,7 +2,7 @@
 # Date created:			21 September 2000
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms-crossfade/Makefile,v 1.3 2001/03/23 00:39:24 jeh Exp $
+# $FreeBSD: ports/audio/xmms-crossfade/Makefile,v 1.4 2001/04/18 04:09:20 lioux Exp $
 #
 
 PORTNAME=	xmms-crossfade
