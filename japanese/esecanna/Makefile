@@ -3,7 +3,7 @@
 # Date created:		29 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-vje30/Makefile,v 1.1.1.1 2000/02/02 17:08:34 flathill Exp $
+# $FreeBSD: ports/japanese/esecanna-vje30/Makefile,v 1.2 2000/02/03 06:09:16 flathill Exp $
 #
 
 DISTNAME=	esecanna-vje30_DR-0.1.1
@@ -38,5 +38,8 @@ do-install:
 	${MKDIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/4DEVELOPERS.jp ${WRKSRC}/README.jp ${DOCDIR}
 .endif
+
+post-install: 
+	@${CAT} ${PKGDIR}/MESSAGE 
 
 .include <bsd.port.mk>
