@@ -2,7 +2,7 @@
 # Date created:        15 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/pmars/Makefile,v 1.5 2000/04/14 12:26:20 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pmars
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.koth.org/pmars/ \
 DISTFILES=	pmars08s.tar.Z
 
 MAINTAINER=	gmarco@giovannelli.it
+COMMENT=	A portable corewar system with ICWS'94 extensions
 
 USE_XLIB=	yes
 NO_WRKSUBDIR=	yes

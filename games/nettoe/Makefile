@@ -2,7 +2,7 @@
 # Date created:		01 July 2001
 # Whom:			Christopher Preston <rbg@gayteenresource.org>
 #
-# $FreeBSD: ports/games/nettoe/Makefile,v 1.1 2001/07/01 22:42:23 greid Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nettoe
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	rbg@gayteenresource.org
+COMMENT=	A tic-tac-toe game playable over the network
 
 MAN6=		nettoe.6
 

@@ -2,7 +2,7 @@
 # Date created:				1 June 1998
 # Whom:					Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD: ports/games/crafty-open-large/Makefile,v 1.4 2000/04/14 00:45:43 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crafty-open-large
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/common/large/
 DISTFILES=	large1.zip large2.zip large3.zip large4.zip
 
 MAINTAINER=	seggers@semyam.dinoco.de
+COMMENT=	The large opening book for crafty
 
 BUILD_DEPENDS=	crafty:${PORTSDIR}/games/crafty
 RUN_DEPENDS=	crafty:${PORTSDIR}/games/crafty

@@ -2,7 +2,7 @@
 # Date created:        22 march 2000
 # Whom:                Edwin Mons
 #
-# $FreeBSD: ports/games/trojka/Makefile,v 1.1 2000/07/18 09:44:33 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trojka
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/games/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	e@ik.nu
+COMMENT=	A game of skill
 
 MAN6=		trojka.6
 

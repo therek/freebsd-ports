@@ -2,7 +2,7 @@
 # Date created:                17 Sep 1999
 # Whom:                        HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/sl/Makefile,v 1.5 2001/03/27 03:52:29 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sl
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	hym@cocoa.freemail.ne.jp
+COMMENT=	A steam locomotive runs across the screen if you type "sl" instead of "ls"
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

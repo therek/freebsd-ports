@@ -2,7 +2,7 @@
 # Date created:        3 June 1998
 # Whom:                Eckart "Isegrim" Hofmann
 #
-# $FreeBSD: ports/games/xteddy/Makefile,v 1.8 2000/04/14 12:28:26 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xteddy
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.leo.org/pub/comp/usenet/comp.sources.x/xteddy/
 
 MAINTAINER=	Isegrim@Wunder-Nett.org
+COMMENT=	A cuddlesome teddy for the X desktop
 
 NO_CDROM=	"Can only be distributed for free"
 

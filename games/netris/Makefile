@@ -2,7 +2,7 @@
 # Date created:	1 August 1996
 # Whom:	desmo
 #
-# $FreeBSD: ports/games/netris/Makefile,v 1.5 2000/02/09 04:17:45 sumikawa Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		netris
@@ -16,6 +16,7 @@ PATCHFILES=		netris-0.5-v6-19991206a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		desmo@bandwidth.org
+COMMENT=	A network head to head version of T*tris
 
 HAS_CONFIGURE=		yes
 CONFIGURE_SCRIPT=	Configure

@@ -2,7 +2,7 @@
 # Date created:         Wed June 24, 1998
 # Whom:                 Steven H. Samorodin (samorodi@NUXI.com)
 #
-# $FreeBSD: ports/games/ishido/Makefile,v 1.4 2000/04/14 06:53:18 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ishido
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/misc/ \
 		ftp://ftp.nuxi.com/pub/misc/
 
 MAINTAINER=	samorodi@NUXI.com
+COMMENT=	Tile placement game
 
 USE_XLIB=	yes
 MAN6=		ishido.6

@@ -2,7 +2,7 @@
 # Date created:				Nov 7th 1999
 # Whom:					troll
 #
-# $FreeBSD: ports/games/xshipwars-client/Makefile,v 1.6 2000/08/03 09:24:25 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xshipwars-client
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://fox.mit.edu/pub/xsw/
 DISTFILES=	xsw1.23.tgz stimages1.3.tgz
 
 MAINTAINER=	troll@digitalspark.net
+COMMENT=	Hardcore Internet space combat/economy game resembling EV on crack!
 
 WRKSRC=		${WRKDIR}/xsw1.23/client
 USE_XLIB=	YES

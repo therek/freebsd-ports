@@ -2,7 +2,7 @@
 # Date created:        23 December 2000
 # Whom:    Göran Runfeldt <goranrunfeldt@home.se>
 #
-# $FreeBSD: ports/games/xtux/Makefile,v 1.7 2001/05/22 16:48:26 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtux
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}-src-${PORTVERSION:S/.//g}
 
 MAINTAINER=	goranrunfeldt@home.se
+COMMENT=	Humorous Arcade game for X
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:        3 December 1998
 # Whom:                Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD: ports/games/mindfocus/Makefile,v 1.7 2001/01/16 17:30:33 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mindfocus
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.toyoshima-house.net/classic/mf/files/
 DISTFILES=	mindfocus-0.88.tar.gz mindfocus-data1.tar.gz
 
 MAINTAINER=	ixtl@utmc.or.jp
+COMMENT=	Lovely characters stay on top of active window
 
 USE_IMAKE=	yes
 USE_XPM=	yes

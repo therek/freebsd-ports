@@ -2,7 +2,7 @@
 # Date created:				1 June 1998
 # Whom:					Stefan Eggers <seggers@semyam.dinoco.de>
 #
-# $FreeBSD: ports/games/crafty-open-medium/Makefile,v 1.4 2000/04/14 00:45:44 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crafty-open-medium
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.cis.uab.edu/pub/hyatt/common/medium/
 DISTNAME=	medium
 
 MAINTAINER=	seggers@semyam.dinoco.de
+COMMENT=	The medium opening book (about 1.9 MByte) for crafty
 
 BUILD_DEPENDS=	crafty:${PORTSDIR}/games/crafty
 RUN_DEPENDS=	crafty:${PORTSDIR}/games/crafty

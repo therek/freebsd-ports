@@ -2,7 +2,7 @@
 # Date created:		31 October 1999
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/games/dungeon/Makefile,v 1.2 2000/04/14 06:42:49 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dungeon
@@ -21,6 +21,7 @@ MASTER_SITES=	ftp://ftp.ifarchive.org/if-archive/games/source/ \
 DISTFILES=	dungn27s.zip dungn32b.zip
 
 MAINTAINER=	rmiya@cc.hirosaki-u.ac.jp
+COMMENT=	Text adventure game of ZORK
 
 EXTRACT_ONLY=	dungn27s.zip
 

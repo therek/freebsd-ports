@@ -2,7 +2,7 @@
 # Date created:				22 march 2000
 # Whom:					Edwin Mons
 #
-# $FreeBSD: ports/games/xtrojka/Makefile,v 1.1 2000/05/29 05:49:37 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtrojka
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/unix/games/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	e@ik.nu
+COMMENT=	Game of skill similar to T*tris
 
 WRKSRC=		${WRKDIR}
 MAN6=		xtrojka.6

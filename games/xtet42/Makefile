@@ -2,7 +2,7 @@
 # Date created:        14 Feb 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/xtet42/Makefile,v 1.7 2001/02/05 14:51:45 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtet42
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.gufi.org/~gmarco/files/distfiles/ \
 		http://www.giovannelli.it/~gmarco/files/
 
 MAINTAINER=	gmarco@giovannelli.it
+COMMENT=	A one or two player t*tris game
 
 USE_X_PREFIX=	yes
 HAS_CONFIGURE=	yes

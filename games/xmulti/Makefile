@@ -2,7 +2,7 @@
 # Date created:        4 Jun 1998
 # Whom:                Toru YANO <toru@s-fine.co.jp>
 #
-# $FreeBSD: ports/games/xmulti/Makefile,v 1.3 1999/08/25 06:05:42 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmulti
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.denpa.org/~go/xmulti/
 DISTFILES=	xmul200b4.tgz
 
 MAINTAINER=	toru@tenchi.ne.jp
+COMMENT=	A X11 mascot based on gal-game "To Heart"
 
 WRKSRC=		${WRKDIR}/xmulti200beta4
 

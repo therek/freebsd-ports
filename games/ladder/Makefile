@@ -2,7 +2,7 @@
 # Date created:        18 Feb 1998
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/games/ladder/Makefile,v 1.4 2000/04/14 12:25:59 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ladder
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.srv.net/~kth/ \
 DISTFILES=	ladder.tar
 
 MAINTAINER=	sec@42.org
+COMMENT=	The old "ladder" game
 
 RESTRICTED=	"possible copyright problems ?"
 

@@ -2,7 +2,7 @@
 # Date created:				17 June 2001
 # Whom:					Jordan DeLong <fracture@allusion.net>
 #
-# $FreeBSD: ports/games/yadex/Makefile,v 1.3 2001/07/07 19:41:27 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yadex
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://www.teaser.fr/~amajorel/yadex/
 
 MAINTAINER=	fracture@allusion.net
+COMMENT=	A WAD-file editor, for games like Doom and Hexen
 
 USE_XLIB=	yes
 USE_GMAKE=	yes

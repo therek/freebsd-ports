@@ -2,7 +2,7 @@
 # Date created:		2 December 1998
 # Whom:			Malte Lance <malte.lance@gmx.net>
 #
-# $FreeBSD: ports/games/gleyes/Makefile,v 1.6 2000/10/13 20:24:35 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gleyes
@@ -16,6 +16,7 @@ MASTER_SITES=	ftp://ftp.riken.go.jp/pub/X11/acontrib/gleyes/ \
 # which is unresponsive since about 21.12.1998
 
 MAINTAINER=	malte.lance@gmx.net
+COMMENT=	GLUT version of Xeyes
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes

@@ -2,7 +2,7 @@
 # Date created:        28 October 1996
 # Whom:                simonm@dcs.gla.ac.uk
 #
-# $FreeBSD: ports/games/cgoban/Makefile,v 1.14 2000/04/14 00:45:39 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cgoban
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.inetarena.com/~wms/comp/cgoban/ \
 		http://www.igoweb.org/~wms/comp/cgoban/
 
 MAINTAINER=	simonm@dcs.gla.ac.uk
+COMMENT=	Internet Go Server client and game editor
 
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes

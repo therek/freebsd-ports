@@ -2,7 +2,7 @@
 # Date created:        18 March 1999
 # Whom:                Zenin <zenin@archive.rhps.org>
 #
-# $FreeBSD: ports/games/wmeyes/Makefile,v 1.5 2000/06/07 09:05:38 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmeyes
@@ -11,6 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://thrush.omix.com/pub/misc/
 
 MAINTAINER=	zenin@archive.rhps.org
+COMMENT=	The world's most useless WindowMaker dock app
 
 USE_IMAKE=	yes
 USE_XPM=	yes

@@ -2,7 +2,7 @@
 # Date created:		10 Aug 1999
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xeji/Makefile,v 1.5 2001/03/27 03:54:36 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xeji
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	hym@cocoa.freemail.ne.jp
+COMMENT=	An old man watching your mouse cursor
 
 USE_IMAKE=	yes
 USE_XPM=	yes

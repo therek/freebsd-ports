@@ -2,7 +2,7 @@
 # Date created:			21 January 2000
 # Whom:				HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/xbaby/Makefile,v 1.4 2001/03/27 03:53:42 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbaby
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.inria.fr/X/contrib-R5/games/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	hym@cocoa.freemail.ne.jp
+COMMENT=	Babies hide under your windows
 
 USE_IMAKE=	yes
 

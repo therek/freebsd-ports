@@ -2,7 +2,7 @@
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/klondike/Makefile,v 1.10 2000/04/14 06:53:22 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	klondike
@@ -11,6 +11,7 @@ CATEGORIES=	games tk82
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 
 MAINTAINER=	faber@isi.edu
+COMMENT=	A solitaire game for X11
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

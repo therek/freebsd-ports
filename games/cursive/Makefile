@@ -2,7 +2,7 @@
 # Date created:		4 December 1999
 # Whom:			James Howard <howardj@wam.umd.edu>
 #
-# $FreeBSD: ports/games/cursive/Makefile,v 1.1 1999/12/25 03:03:37 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cursive
@@ -13,6 +13,7 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=   .tgz
 
 MAINTAINER=	howardjp@wam.umd.edu
+COMMENT=	Create ASCII character cursive handwriting
 
 MAN6=		cursive.6
 

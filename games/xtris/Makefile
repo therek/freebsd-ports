@@ -2,7 +2,7 @@
 # Date created:         24. Sep 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/games/xtris/Makefile,v 1.7 2001/01/16 17:30:52 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtris
@@ -15,6 +15,7 @@ PATCHFILES=	xtris-1.15-v6-19991218.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sec@42.org
+COMMENT=	A multi-player version of a popular game for the X Window system
 
 RESTRICTED=	"Possible trademark infringement"
 WRKSRC=		${WRKDIR}/xtris

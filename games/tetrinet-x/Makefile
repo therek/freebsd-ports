@@ -2,7 +2,7 @@
 # Date created:        11 Apr 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/games/tetrinet-x/Makefile,v 1.4 2000/04/14 12:26:41 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tetrinet-x
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.giovannelli.it/~gmarco/files/ \
 DISTFILES=	${PORTNAME}.${PORTVERSION}.tgz
 
 MAINTAINER=	gmarco@giovannelli.it
+COMMENT=	An addictive 6 player tetr*s game
 
 WRKSRC=		${WRKDIR}/tetrinetx-${PORTVERSION}
 

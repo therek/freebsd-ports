@@ -2,7 +2,7 @@
 # Date created:         26-Apr-97
 # Whom:                 johnh@isi.edu
 #
-# $FreeBSD: ports/games/dontspace/Makefile,v 1.9 2000/04/14 06:42:45 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dontspace
@@ -11,6 +11,7 @@ CATEGORIES=	games tk82
 MASTER_SITES=	http://www.isi.edu/~johnh/SOFTWARE/JACOBY/
 
 MAINTAINER=	johnh@isi.edu
+COMMENT=	A solitaire game for X11 modeled after Free Space
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

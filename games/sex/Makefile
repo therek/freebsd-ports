@@ -2,7 +2,7 @@
 # Date created:				26 April 2001
 # Whom:					Nick Johnson <freebsd@spatula.net>
 #
-# $FreeBSD: ports/games/sex/Makefile,v 1.2 2001/05/29 14:56:42 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sex
@@ -12,6 +12,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://spatula.net/software/sex/
 
 MAINTAINER=	freebsd@spatula.net
+COMMENT=	Spouts silly mad-lib-style porn-like text
 
 MAN6=		sex.6
 MANCOMPRESSED=	yes

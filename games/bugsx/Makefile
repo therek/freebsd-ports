@@ -2,7 +2,7 @@
 # Date created:  7 December 1997
 # Whom:  Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/games/bugsx/Makefile,v 1.5 2000/04/14 00:45:39 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bugsx
@@ -14,6 +14,7 @@ DISTNAME=	bugsx108
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	croyle@gelemna.org
+COMMENT=	Breed bugs using genetic algorithims
 
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/bugsx

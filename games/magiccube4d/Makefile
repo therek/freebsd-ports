@@ -2,7 +2,7 @@
 # Date Created: 			September 25, 2000
 # Whom:					Jeremy <karlj000@unbc.ca>
 #
-# $FreeBSD: ports/games/magiccube4d/Makefile,v 1.2 2000/10/26 10:07:43 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	magiccube4d
@@ -13,6 +13,7 @@ DISTNAME=	mc4d-src-${PORTVERSION:S/./_/}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	karlj000@unbc.ca
+COMMENT=	MagicCube4D is a fully functional four-dimensional analog of Rubik's cube
 
 USE_X_PREFIX=	yes
 
