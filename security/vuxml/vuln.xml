@@ -28,12 +28,12 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.417 2004/12/23 00:39:08 simon Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.418 2004/12/23 00:58:04 simon Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
   <vuln vid="a30e5e44-5440-11d9-9e1e-c296ac722cb3">
-    <topic>squid -- confusing results results on empty acl declarations</topic>
+    <topic>squid -- confusing results on empty acl declarations</topic>
     <affects>
       <package>
 	<name>squid</name>
