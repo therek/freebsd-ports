@@ -2,7 +2,7 @@
 # Date Created:		Fri Sep 15 10:04:46 CDT 1995
 # Whom:			james@cs.uwm.edu
 #
-# $FreeBSD: ports/graphics/spigot/Makefile,v 1.11 2000/06/22 19:15:31 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	spigot
@@ -17,5 +17,6 @@ MAINTAINER=	james@cs.uwm.edu
 # binary package
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
+ONLY_FOR_ARCHS=	i386
 
 .include <bsd.port.mk>
