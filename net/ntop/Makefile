@@ -2,7 +2,7 @@
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ntop/Makefile,v 1.11 2000/04/09 18:12:41 cpiazza Exp $
+# $FreeBSD: ports/net/ntop/Makefile,v 1.12 2000/08/09 01:59:48 kris Exp $
 #
 
 PORTNAME=	ntop
@@ -15,8 +15,6 @@ DISTNAME=	ntop-1.1-src
 
 MAINTAINER=	billf@FreeBSD.org
 
-FORBIDDEN=	"Shocking lack of security leading to multiple local and remote root exploits"
-
 HAS_CONFIGURE=	yes
 ALL_TARGET=
 INSTALL_TARGET=	install install-man
@@ -25,6 +23,7 @@ WRKSRC=		${WRKDIR}/${PKGNAME}
 MAN8=		ntop.8
 
 post-install:
+	${CHMOD} u-s,g-srx ${PREFIX}/sbin/ntop
 	strip ${PREFIX}/sbin/ntop
 
 .include <bsd.port.mk>
