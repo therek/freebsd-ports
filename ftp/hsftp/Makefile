@@ -2,11 +2,11 @@
 # Date created:				Mon 03 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/hsftp/Makefile,v 1.2 2000/08/18 13:12:45 jedgar Exp $
+# $FreeBSD: ports/ftp/hsftp/Makefile,v 1.3 2000/11/13 13:58:48 kevlo Exp $
 #
 
 PORTNAME=	hsftp
-PORTVERSION=	1.10
+PORTVERSION=	1.11
 CATEGORIES=	ftp
 MASTER_SITES=	http://la-samhna.de/hsftp/ \
 		${MASTER_SITE_SUNSITE}
