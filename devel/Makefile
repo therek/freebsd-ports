@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.303 2000/06/28 17:39:55 ade Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.304 2000/06/29 02:08:22 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -67,6 +67,7 @@
     SUBDIR += gaa
     SUBDIR += gcc-6811
     SUBDIR += gcc-m68k
+    SUBDIR += gconf
     SUBDIR += gdb-m68k
     SUBDIR += gettext
     SUBDIR += gide
@@ -76,6 +77,7 @@
     SUBDIR += global
     SUBDIR += gmake
     SUBDIR += gnomedebug
+    SUBDIR += gnomevfs
     SUBDIR += gnustep
     SUBDIR += gperf
     SUBDIR += gtksheet
@@ -115,6 +117,7 @@
     SUBDIR += libsigc++
     SUBDIR += libslang
     SUBDIR += libtool
+    SUBDIR += libunicode
     SUBDIR += libxalloc
     SUBDIR += lincvs
     SUBDIR += linux_devtools
