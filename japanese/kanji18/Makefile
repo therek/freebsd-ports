@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.2 2000/03/06 13:57:39 sada Exp $
+# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.3 2000/04/11 14:14:19 knu Exp $
 #
 
 PORTNAME=	kanji
@@ -11,7 +11,7 @@ PKGNAMESUFFIX?=	18
 CATEGORIES=	japanese x11-fonts
 MASTER_SITES=   ${MASTER_SITE_PORTS_JP}
 MASTER_SITE_SUBDIR=	${DISTNAME}
-DISTNAME=	${PORTNAME}
+DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}
 DISTFILES?=	573.z 574.z 575.z 576.z 577.z 578.z 579.z 580.z 581.z
 
 MAINTAINER=     sanpei@sanpei.org
