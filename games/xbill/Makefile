@@ -3,7 +3,7 @@
 # Date created:			  12 September 1995
 # Whom:				  asami
 #
-# $FreeBSD: ports/games/xbill/Makefile,v 1.15 2000/04/14 12:27:00 asami Exp $
+# $FreeBSD: ports/games/xbill/Makefile,v 1.16 2000/08/03 09:23:59 asami Exp $
 #
 
 PORTNAME=	xbill
@@ -21,5 +21,9 @@ MAN1=		xbill.1
 
 post-install:
 	${CP} ${WRKSRC}/README ${PREFIX}/share/xbill
+	${CHOWN} root:games ${PREFIX}/bin/xbill
+	${CHMOD} 2755 ${PREFIX}/bin/xbill
+	${CHOWN} root:games ${PREFIX}/share/xbill/scores
+	${CHMOD} 664 ${PREFIX}/share/xbill/scores
 
 .include <bsd.port.mk>

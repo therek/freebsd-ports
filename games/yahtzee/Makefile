@@ -3,7 +3,7 @@
 # Whom:			Joel Sutton <sutton@aardvark.apana.org.au>
 # FreeBSD Version:	2.2.1-RELEASE
 #
-# $FreeBSD: ports/games/yahtzee/Makefile,v 1.3 1999/10/27 09:09:10 mharo Exp $
+# $FreeBSD: ports/games/yahtzee/Makefile,v 1.4 2000/04/14 12:28:37 asami Exp $
 #
 
 PORTNAME=		yahtzee
@@ -20,9 +20,9 @@ WRKSRC=		${WRKDIR}/yahtzee
 # Distribution does not include an install target. So here it is.
 #
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/yahtzee ${PREFIX}/bin/
-	${MKDIR} -m 0777 ${PREFIX}/lib/yahtzee/
-	${INSTALL_DATA} -m 0777 /dev/null ${PREFIX}/lib/yahtzee/yahtzee.sco
+	${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/yahtzee ${PREFIX}/bin/
+	${MKDIR} -m 0755 ${PREFIX}/lib/yahtzee/
+	${INSTALL_DATA} -m 0664 -o root -g games /dev/null ${PREFIX}/lib/yahtzee/yahtzee.sco
 
 .include <bsd.port.mk>
 

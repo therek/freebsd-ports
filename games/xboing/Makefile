@@ -2,7 +2,7 @@
 # Date created:		31 January 1995
 # Whom:			janek
 #
-# $FreeBSD: ports/games/xboing/Makefile,v 1.14 2000/04/14 12:27:06 asami Exp $
+# $FreeBSD: ports/games/xboing/Makefile,v 1.15 2000/08/03 09:23:59 asami Exp $
 
 PORTNAME=	xboing
 PORTVERSION=	2.4
@@ -21,5 +21,11 @@ USE_IMAKE=	yes
 USE_XPM=	yes
 WRKSRC= ${WRKDIR}/xboing
 MAN1=		xboing.1
+
+post-install:
+	${CHOWN} root:games ${PREFIX}/bin/xboing
+	${CHMOD} 2755 ${PREFIX}/bin/xboing
+	${CHOWN} root:games ${PREFIX}/lib/X11/xboing/.xboing.scr
+	${CHMOD} 664 ${PREFIX}/lib/X11/xboing/.xboing.scr
 
 .include <bsd.port.mk>

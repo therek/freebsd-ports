@@ -2,7 +2,7 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.5 2000/05/19 23:33:59 will Exp $
+# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.6 2000/06/01 16:25:22 ade Exp $
 #
 
 PORTNAME=	gno3dtet
@@ -24,5 +24,11 @@ USE_GMAKE=	yes
 
 pre-configure:
 	@${RM} -f ${WRKSRC}/config.cache
+
+post-install:
+	${CHOWN} root:games ${PREFIX}/bin/gno3dtet
+	${CHMOD} 2555 ${PREFIX}/bin/gno3dtet
+	${CHOWN} root:games ${PREFIX}/var/games/gno3dtet.hof
+	${CHMOD} 664 ${PREFIX}/var/games/gno3dtet.hof
 
 .include <bsd.port.mk>

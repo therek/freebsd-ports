@@ -2,7 +2,7 @@
 # Date created:		18 Jul 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/games/xkobo/Makefile,v 1.16 2000/03/21 22:46:59 will Exp $
+# $FreeBSD: ports/games/xkobo/Makefile,v 1.17 2000/04/14 12:27:34 asami Exp $
 #
 
 PORTNAME=       xkobo
@@ -17,5 +17,10 @@ MAINTAINER=	will@FreeBSD.org
 USE_IMAKE=	yes
 ALL_TARGET=	xkobo
 MAN1=		xkobo.1
+
+post-install:
+	${CHMOD} u-s,g+s ${PREFIX}/bin/xkobo
+	${CHOWN} root:games ${PREFIX}/bin/xkobo
+	${CHMOD} 775 ${PREFIX}/lib/X11/xkobo-scores
 
 .include <bsd.port.mk>
