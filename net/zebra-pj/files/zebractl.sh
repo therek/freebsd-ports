@@ -1,6 +1,6 @@
 #! /bin/sh
 #
-# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.7 2001/06/21 17:39:10 joe Exp $
+# $FreeBSD: ports/net/zebra/files/zebractl.sh,v 1.8 2002/08/04 20:04:50 sumikawa Exp $
 #
 # zebra start/stop script by "Andreas Klemm <andreas@FreeBSD.ORG>"
 #
