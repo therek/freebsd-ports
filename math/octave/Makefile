@@ -2,15 +2,15 @@
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.26 2000/02/03 03:18:13 chuckr Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.27 2000/04/14 07:20:22 asami Exp $
 #
 
 PORTNAME=	octave
-PORTVERSION=	2.0.16
+PORTVERSION=	2.1.30
 CATEGORIES=	math
-#MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/
-MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/ \
-		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/misc/octave/
+MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/bleeding-edge/ \
+		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/misc/octave/bleeding-edge/
+USE_BZIP2=	yes
 
 MAINTAINER=	chuckr@FreeBSD.org
 
@@ -24,7 +24,7 @@ GNU_HOST=	${ARCH}-portbld-freebsd${OSREL}
 .else
 GNU_HOST=	${ARCH}-portbld-freebsdaout${OSREL}
 .endif
-OCTAVE_VERSION=	2.0.16
+OCTAVE_VERSION=	2.1.30
 PLIST_SUB=	OCTAVE_VERSION=${OCTAVE_VERSION} GNU_HOST=${GNU_HOST}
 
 USE_GMAKE=	yes
