@@ -2,7 +2,7 @@
 # Date created:				16 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.9 2001/05/03 14:15:26 sobomax Exp $
+# $FreeBSD: ports/devel/gtranslator/Makefile,v 1.10 2001/05/04 21:41:08 ade Exp $
 #
 
 PORTNAME=	gtranslator
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gal.6:${PORTSDIR}/x11-toolkits/gal
+LIB_DEPENDS=	gal.7:${PORTSDIR}/x11-toolkits/gal
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
