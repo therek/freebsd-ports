@@ -2,7 +2,7 @@
 # Date created:				4 February 2001
 # Whom:					Patrick Doane <patrick@watson.org>
 #
-# $FreeBSD: ports/devel/ocamlweb/Makefile,v 1.1 2001/04/07 07:57:20 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ocamlweb
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.lri.fr/~filliatr/ftp/ocamlweb/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DOCFILES}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	patrick@watson.org
+MAINTAINER=	ports@FreeBSD.Org
 
 BUILD_DEPENDS=	ocamlc:${PORTSDIR}/lang/ocaml
 
