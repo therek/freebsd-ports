@@ -2,11 +2,12 @@
 # Date created:		7 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/emulators/pcemu/Makefile,v 1.16 2000/04/12 04:55:38 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pcemu
 PORTVERSION=	1.01b
+PORTREVISION=	1
 CATEGORIES=	emulators
 #
 # This could in theory become a chicken-and-egg problem.  Anyway,
