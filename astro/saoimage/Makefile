@@ -3,7 +3,7 @@
 # Date created:		21 Feb 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/astro/saoimage/Makefile,v 1.7 1999/12/25 01:39:41 steve Exp $
+# $FreeBSD: ports/astro/saoimage/Makefile,v 1.8 2000/02/26 19:42:59 steve Exp $
 #
 
 DISTNAME=       saoimage-1.26.10
@@ -13,15 +13,13 @@ MASTER_SITES=	ftp://cfa-ftp.harvard.edu/pub/gsc/SAOimage/
 MAINTAINER=	ports@FreeBSD.org
 
 MAKEFILE=	makefile
-ALL_TARGET=	FreeBSD
-INSTALL_TARGET= -f makefile.$(ALL_TARGET) install_saobin install_saoman
-
-MANL=		saoimage.l
+ALL_TARGET=	${OPSYS}
 USE_X_PREFIX=	yes
+MAN1=		saoimage.1
 
-pre-build:
-	@(cd ${WRKSRC}/btnlib; ${MAKE})
-post-install:
-	strip $(PREFIX)/bin/saoimage
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/saoimage ${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/imtoolrc ${PREFIX}/etc/imtoolrc.sample
+	${INSTALL_MAN} ${WRKSRC}/doc/saoimage.man ${PREFIX}/man/man1/saoimage.1
 
 .include <bsd.port.mk>
