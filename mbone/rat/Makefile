@@ -2,7 +2,7 @@
 # Date created:			      3 July 1999
 # Whom:				      O.Hodson@cs.ucl.ac.uk (Orion Hodson)
 #
-# $FreeBSD: ports/mbone/rat/Makefile,v 1.14 2001/04/02 07:05:32 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rat
@@ -44,7 +44,7 @@ do-build:
 .endfor
 
 do-configure:
-	cd ${WRKSRC}/common && autoconf && ./configure ${CONFIGURE_ARGS} ${ENABLE_IPv6}
-	cd ${WRKSRC}/rat && autoconf && ./configure ${CONFIGURE_ARGS} --with-tcl=${LOCALBASE} --with-tk=${LOCALBASE} ${ENABLE_IPv6}
+	cd ${WRKSRC}/common && ${AUTOCONF} && ./configure ${CONFIGURE_ARGS} ${ENABLE_IPv6}
+	cd ${WRKSRC}/rat && ${AUTOCONF} && ./configure ${CONFIGURE_ARGS} --with-tcl=${LOCALBASE} --with-tk=${LOCALBASE} ${ENABLE_IPv6}
 
 .include "bsd.port.post.mk"
