@@ -2,14 +2,14 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.8 2001/03/24 07:07:57 asami Exp $
+# $FreeBSD: ports/audio/libvorbis/Makefile,v 1.9 2001/07/19 06:29:34 sf Exp $
 #
 
 PORTNAME=	libvorbis
-PORTVERSION=	1.0.r1
+PORTVERSION=	1.0.r2
 PORTEPOCH=	2
 CATEGORIES=	audio
-MASTER_SITES=	http://www.vorbis.com/files/rc1/unix/
+MASTER_SITES=	http://www.vorbis.com/files/rc2/unix/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.r/rc/}
 
 MAINTAINER=	naddy@mips.inka.de
@@ -18,8 +18,6 @@ LIB_DEPENDS=	ogg.2:${PORTSDIR}/audio/libogg
 
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-ogg-prefix=${LOCALBASE}
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib"
 
 .if defined(NOPORTDOCS)
 MAKE_ENV=	DOC=""

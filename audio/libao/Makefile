@@ -2,13 +2,13 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD: ports/audio/libao/Makefile,v 1.8 2001/03/24 07:07:53 asami Exp $
+# $FreeBSD: ports/audio/libao/Makefile,v 1.9 2001/07/19 06:29:33 sf Exp $
 #
 
 PORTNAME=	libao
-PORTVERSION=	0.7.0
+PORTVERSION=	0.8.0
 CATEGORIES=	audio
-MASTER_SITES=	http://www.vorbis.com/files/rc1/unix/
+MASTER_SITES=	http://www.vorbis.com/files/rc2/unix/
 
 MAINTAINER=	naddy@mips.inka.de
 
@@ -22,6 +22,8 @@ MAKE_ENV=	DOC=""
 .else
 MAKE_ENV=	DOC=doc
 .endif
+
+MAN5=		libao.conf.5
 
 .include <bsd.port.pre.mk>
 

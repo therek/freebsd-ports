@@ -2,7 +2,7 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg321/Makefile,v 1.10 2001/08/10 19:43:02 lioux Exp $
+# $FreeBSD: ports/audio/mpg321/Makefile,v 1.11 2001/08/15 14:32:18 trevor Exp $
 #
 
 PORTNAME=	mpg321
@@ -15,6 +15,8 @@ MAINTAINER=	naddy@mips.inka.de
 
 LIB_DEPENDS=	ao.1:${PORTSDIR}/audio/libao
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmad.a:${PORTSDIR}/audio/mad
+
+BROKEN=		"not yet updated for libao.so.2"
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--disable-mpg123-symlink
