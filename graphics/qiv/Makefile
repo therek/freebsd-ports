@@ -2,17 +2,19 @@
 # Date created:		25 December 1998
 # Whom:			Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/graphics/qiv/Makefile,v 1.14 2000/11/02 22:08:29 trevor Exp $
+# $FreeBSD: ports/graphics/qiv/Makefile,v 1.15 2000/11/02 22:11:49 billf Exp $
 #
 
 PORTNAME=	qiv
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.klografx.net/qiv/download/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	trevor@FreeBSD.org
+
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
@@ -30,6 +32,7 @@ do-configure:
 	         -e 's#RANDOM GETOPT_LONG#RANDOM#' \
 	         -e 's#gcc#${CC}#' \
 	         -e 's#-O2#${CFLAGS}#' \
+	         -e 's#libs-gdk`#libs-gdk` -lgnugetopt#' \
 		${WRKSRC}/Makefile.pre_sed > ${WRKSRC}/Makefile
 
 do-install:
