@@ -1,12 +1,12 @@
 # New ports collection makefile for:	R (letter)
-# Date created:			Tue Jun 23 07:36:55 EST 1998
+# Date created:			Fri Aug 11 16:17:34 EST 2000
 # Whom:				Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/math/R-letter/Makefile,v 1.15 2000/04/01 18:45:45 mharo Exp $
+# $FreeBSD: ports/math/R-letter/Makefile,v 1.16 2000/04/14 07:19:42 asami Exp $
 #
 
 PORTNAME=	R
-PORTVERSION=	0.99.0a
+PORTVERSION=	1.1.0
 CATEGORIES=	math
 MASTER_SITES=	http://lib.stat.cmu.edu/R/CRAN/src/base/ \
 		ftp://ftp.biostat.washington.edu/mirrors/R/CRAN/src/base/ \
