@@ -2,11 +2,11 @@
 # Date created:				27 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/pxtools/Makefile,v 1.2 1999/12/29 04:59:54 jedgar Exp $
+# $FreeBSD: ports/databases/pxtools/Makefile,v 1.3 2000/04/08 22:48:54 mharo Exp $
 #
 
 PORTNAME=	pxtools
-PORTVERSION=	0.0.5
+PORTVERSION=	0.0.6
 CATEGORIES=	databases
 MASTER_SITES=	http://www.kneschke.de/projekte/pxtools/download/
 
