@@ -2,18 +2,20 @@
 # Date created:		01 Jul 1999
 # Whom:			Mitsuru Yoshida <mitsuru@riken.go.jp>
 #
-# $FreeBSD: ports/www/tinyproxy/Makefile,v 1.4 1999/08/31 02:43:20 peter Exp $
+# $FreeBSD: ports/www/tinyproxy/Makefile,v 1.5 2000/04/10 00:07:00 cpiazza Exp $
 #
 
 PORTNAME=	tinyproxy
-PORTVERSION= 	1.2.8
+PORTVERSION=	1.3.3
 CATEGORIES=	www
-MASTER_SITES=	http://tinyproxy.attacca.com/ \
-		http://www.flarenet.com/tinyproxy/
+MASTER_SITES=	http://download.sourceforge.net/tinyproxy/
 
 MAINTAINER=	mitsuru@riken.go.jp
 
-WRKSRC=		${WRKDIR}/tinyproxy
+BUILD_DEPENDS=	${LOCALBASE}/lib/libadns.a:${PORTSDIR}/net/adns
+
+GNU_CONFIGURE=  yes
+CONFIGURE_ARGS= --bindir=${PREFIX}/sbin --with-log-file=/var/log/tinyproxy.log   --with-port=8080 --with-user=nobody --with-adns-include=${LOCALBASE}/include --with-adns-lib=${LOCALBASE}/lib
 
 MAN8=		tinyproxy.8
 
