@@ -2,19 +2,18 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/evolution/Makefile,v 1.32 2001/09/11 18:14:12 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	evolution
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	mail gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/evolution
 
 MAINTAINER=	gnome@FreeBSD.org
 
-LIB_DEPENDS=	bonobo_conf.0:${PORTSDIR}/devel/bonobo-conf \
-		gtkhtml.15:${PORTSDIR}/www/gtkhtml
+LIB_DEPENDS=	bonobo_conf.0:${PORTSDIR}/devel/bonobo-conf
 #ldap.1:${PORTSDIR}/net/openldap <- avoid extra dependency until
 #						   it actually works
 
@@ -24,8 +23,7 @@ USE_GMAKE=	yes
 USE_BISON=	yes
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
-USE_LIBTOOL=	yes
-LIBTOOLFILES=	configure libical/configure
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-db3-libs=${LOCALBASE}/lib \
 		--with-html-dir=${PREFIX}/share/gnome/html
 # --with-pisock=${LOCALBASE}/pilot --enable-pilot-conduits=yes
