@@ -2,11 +2,11 @@
 # Date created:		Sun Jun 17 10:28:52 CEST 2001
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/httrack/Makefile,v 1.1 2001/06/17 10:37:28 dirk Exp $
 #
 
 PORTNAME=	httrack
-PORTVERSION=	3.02
+PORTVERSION=	3.04
 CATEGORIES=	www
 MASTER_SITES=	http://www.httrack.com/
 
