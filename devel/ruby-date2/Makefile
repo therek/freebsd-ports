@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.7 2000/09/26 08:01:52 knu Exp $
+# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.8 2000/12/31 11:40:05 knu Exp $
 #
 
 PORTNAME=	date2
-PORTVERSION=	2.2
+PORTVERSION=	2.3
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.kt.rim.or.jp/~tadf/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
