@@ -2,7 +2,7 @@
 # Date created:				29 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xdigger/Makefile,v 1.10 2000/04/14 12:27:16 asami Exp $
+# $FreeBSD: ports/games/xdigger/Makefile,v 1.11 2000/08/17 06:50:45 kris Exp $
 #
 
 PORTNAME=	xdigger
@@ -16,18 +16,13 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN6=		xdigger.6
-MANCOMPRESSED=	no
 
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/configure.h
 
-do-install:
-	${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/xdigger ${PREFIX}/bin
-	${INSTALL_DATA} ${WRKSRC}/xdigger.man ${PREFIX}/man/man6/xdigger.6
-	@${MKDIR} ${PREFIX}/share/xdigger
-	${INSTALL_DATA} ${WRKSRC}/xdigger.level ${PREFIX}/share/xdigger
-	${INSTALL_DATA} ${WRKSRC}/audio/*.au ${PREFIX}/share/xdigger
-	@${TOUCH} ${PREFIX}/share/xdigger/xdigger.hiscore
+post-install:
+	@${CHMOD} 2755 ${PREFIX}/bin/xdigger
+	@${CHOWN} root:games ${PREFIX}/bin/xdigger
 	@${CHMOD} 664 ${PREFIX}/share/xdigger/xdigger.hiscore
 	@${CHOWN} root:games ${PREFIX}/share/xdigger/xdigger.hiscore
 .if !defined(NOPORTDOCS)
