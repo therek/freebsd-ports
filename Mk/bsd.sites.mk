@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.205 2003/11/14 17:45:30 eik Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.206 2003/11/19 01:41:30 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -87,6 +87,7 @@ MASTER_SITE_APACHE_HTTPD+=	\
 
 MASTER_SITE_APACHE_JAKARTA+=	\
 	http://jakarta.apache.org/builds/%SUBDIR%/ \
+	http://archive.apache.org/dist/jakarta/%SUBDIR%/ \
 	${MASTER_SITE_APACHE:S,%SUBDIR%,jakarta/&,}
 
 MASTER_SITE_APACHE_XML+=	\
