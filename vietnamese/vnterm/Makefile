@@ -3,15 +3,15 @@
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.17 2000/03/22 00:28:04 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.18 2000/04/09 21:54:47 cpiazza Exp $
 #
 
-PORTNAME=	vi-vnterm
+PORTNAME=	vnterm
 PORTVERSION= 	3.3
 CATEGORIES=	vietnamese x11
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/
-DISTNAME=	vnterm3.3
+DISTNAME=	${PORTNAME}${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org

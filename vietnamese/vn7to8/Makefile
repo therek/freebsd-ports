@@ -3,11 +3,11 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.10 2000/03/22 00:27:57 obrien Exp $
+# $FreeBSD: ports/vietnamese/vn7to8/Makefile,v 1.11 2000/04/09 21:54:43 cpiazza Exp $
 #
 #	version # is VISCII version supported + .<edit_revision>
 
-PORTNAME=	vi-vn7to8
+PORTNAME=	vn7to8
 PORTVERSION=	1.1.1
 CATEGORIES=	vietnamese
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
