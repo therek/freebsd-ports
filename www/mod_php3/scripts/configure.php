@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.71 2000/01/23 00:02:08 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.72 2000/01/27 13:04:22 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -127,20 +127,20 @@ while [ "$1" ]; do
 PKGNAME=	apache+php+mod_ssl-\${VERSION_APACHE}+\${VERSION_PHP}+\${VERSION_MODSSL}
 DISTFILES+=	mod_ssl-\${VERSION_MODSSL}-\${VERSION_APACHE}\${EXTRACT_SUFX}
 
-BUILD_DEPENDS+=	openssl:\${PORTSDIR}/security/openssl \\
-		mm-config:\${PORTSDIR}/devel/mm \\
+USE_OPENSSL=	RSA
+
+.include <bsd.port.pre.mk>
+
+BUILD_DEPENDS+=	mm-config:\${PORTSDIR}/devel/mm \\
 		\${PREFIX}/lib/libmm.a:\${PORTSDIR}/devel/mm
-LIB_DEPENDS+=	crypto.1:\${PORTSDIR}/security/openssl \\
-		ssl.1:\${PORTSDIR}/security/openssl
-RUN_DEPENDS+=	openssl:\${PORTSDIR}/security/openssl
 
 VERSION_MODSSL=	2.5.0
 
-RESTRICTED=	"Contains cryptography"
-
 CONFIGURE_ARGS+=--enable-module=ssl \\
 		--enable-module=define
-CONFIGURE_ENV+=	SSL_BASE='SYSTEM' EAPI_MM='SYSTEM' PATH="\${PREFIX}/bin:\${PATH}"
+CONFIGURE_ENV+=	SSL_BASE='SYSTEM' RSA_BASE='SYSTEM' EAPI_MM='SYSTEM' PATH="\${PREFIX}/bin:\${PATH}"
+
+EXTRA_PATCHES+=	\${PATCHDIR}/ssl_patch-aa
 
 PLIST=		\${PKGDIR}/PLIST.modssl
 SSL=		ssl
