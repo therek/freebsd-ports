@@ -2,24 +2,26 @@
 # Date created:		9 Jun 2000
 # Whom:			Michael Vasilenko <acid@cn.ua>
 #
-# $FreeBSD: ports/mail/icqmail/Makefile,v 1.4 2000/09/05 01:43:15 steve Exp $
+# $FreeBSD: ports/mail/icqmail/Makefile,v 1.5 2000/11/25 04:49:57 dougb Exp $
 #
 
 PORTNAME=	icqmail
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	never@nevermind.kiev.ua
 
-LIB_DEPENDS=	icq.1:${PORTSDIR}/net/icqlib \
-		mimelib.3:${PORTSDIR}/converters/kdesupport2 \
-		guile.9:${PORTSDIR}/lang/guile
+LIB_DEPENDS=	icq0.1:${PORTSDIR}/net/icqlib0 \
+		guile.9:${PORTSDIR}/lang/guile \
+		mimelib.3:${PORTSDIR}/converters/kdesupport2
 
 USE_NEWGCC=	yes
+USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -L${LOCALBASE}/lib" \
 		LIBS="-L${LOCALBASE}/lib -lguile -lqthreads"
 
 MAN1=		icqmail.1
