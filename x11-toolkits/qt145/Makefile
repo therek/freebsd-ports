@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.54 2001/09/09 05:22:45 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.55 2001/09/10 20:22:27 demon Exp $
 #
 
 PORTNAME=	qt1
@@ -19,6 +19,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	kde@FreeBSD.org
 
+LATEST_LINK=	qt1
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
