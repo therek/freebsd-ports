@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.358 2001/10/01 14:14:49 lioux Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 4va
@@ -30,6 +30,7 @@
     SUBDIR += diacanvas
     SUBDIR += divx4linux
     SUBDIR += dore
+    SUBDIR += drm-kmod
     SUBDIR += dumpmpeg
     SUBDIR += ecg2png
     SUBDIR += electriceyes
