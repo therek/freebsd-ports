@@ -2,12 +2,12 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.36 2001/06/04 22:37:21 roam Exp $
 #
 
 PORTNAME=	openldap
 PORTVERSION=	2.0.11
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	net databases
 MASTER_SITES=	ftp://ftp.OpenLDAP.org/pub/OpenLDAP/%SUBDIR%/ \
 		ftp://ftp.net.lut.ac.uk/openldap/%SUBDIR%/ \
@@ -76,6 +76,10 @@ BINS=		bin/ldapadd \
 
 .include <bsd.port.pre.mk>
 .include "${FILESDIR}/manpages"
+
+post-patch:
+	@${PERL} -pi.fbsd -e 's@pidfile\t\t%LOCALSTATEDIR%/slapd.pid@pidfile\t\t/var/run/slapd.pid@g; \
+		s@argsfile\t%LOCALSTATEDIR%/slapd.args@argsfile\t/var/run/slapd.args@g' ${WRKSRC}/servers/slapd/slapd.conf
 
 post-configure:
 	@cd ${WRKSRC} ; ${PATCH} < ${FILESDIR}/libtool.diff
