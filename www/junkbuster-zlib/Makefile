@@ -2,17 +2,18 @@
 # Date created:		2 May 1998
 # Whom:			Ian Struble <ian@broken.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/junkbuster-zlib/Makefile,v 1.10 2000/11/13 17:27:21 sobomax Exp $
 #
 
 PORTNAME=	junkbuster-zlib
 PORTVERSION= 	1.0
 CATEGORIES=	www
-MASTER_SITES=	http://f2.org/download/
+MASTER_SITES=	http://server44.hypermart.net/f2org/ \
+		http://f2.org/download/
 DISTNAME=	ijb-zlib-${PORTVERSION:S/.//g}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 ALL_TARGET=	# yes, an empty target.
 JDIR=		${PREFIX}/etc/junkbuster-zlib
