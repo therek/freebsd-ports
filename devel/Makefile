@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.516 2001/04/18 12:41:29 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.517 2001/04/18 17:36:03 roam Exp $
 #
 
     SUBDIR += ElectricFence
@@ -93,7 +93,6 @@
     SUBDIR += doc++
     SUBDIR += dotconf
     SUBDIR += doxygen
-    SUBDIR += dryad
     SUBDIR += ecgi
     SUBDIR += elftoaout
     SUBDIR += elib-emacs
@@ -135,7 +134,6 @@
     SUBDIR += global
     SUBDIR += gmake
     SUBDIR += gnomecrash
-    SUBDIR += gnomedebug
     SUBDIR += gnomevfs
     SUBDIR += gnustep
     SUBDIR += gpasm
