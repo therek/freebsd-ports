@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.38 2003/06/02 07:57:27 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.39 2003/06/11 05:00:43 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -356,7 +356,7 @@ libgda2_LIB_DEPENDS=	gda-2.2:${PORTSDIR}/databases/libgda2
 libgda2_DETECT=			${X11BASE}/libdata/pkgconfig/libgda.pc
 libgda2_USE_GNOME_IMPL=	glib20 libxslt
 
-libgnomedb_LIB_DEPENDS=	gnomedb-2.2:${PORTSDIR}/databases/libgnomedb
+libgnomedb_LIB_DEPENDS=	gnomedb-2.3:${PORTSDIR}/databases/libgnomedb
 libgnomedb_DETECT=		${X11BASE}/libdata/pkgconfig/libgnomedb.pc
 libgnomedb_USE_GNOME_IMPL=libgnomeui libgda2
 
