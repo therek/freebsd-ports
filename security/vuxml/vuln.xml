@@ -28,11 +28,11 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.403 2004/12/16 10:51:17 niels Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.404 2004/12/17 09:32:44 sem Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
-  <vuln vid="ad74a1bd-16d2-11d9-bc4a-000c41e2cdad">
+  <vuln vid="d47e9d19-5016-11d9-9b5f-0050569f0001">
     <topic>php -- multiple vulnerabilities</topic>
     <affects>
       <package>
