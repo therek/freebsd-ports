@@ -2,7 +2,7 @@
 # Date created:				25 July 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/fuzz/Makefile,v 1.1 2000/08/02 01:15:32 jedgar Exp $
 #
 
 PORTNAME=	fuzz
@@ -16,5 +16,8 @@ MAINTAINER=	ports@FreeBSD.org
 GNU_CONFIGURE=	yes
 
 MAN1=		fuzz.1
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
