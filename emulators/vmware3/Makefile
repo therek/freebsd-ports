@@ -3,7 +3,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.6 2000/03/29 21:23:03 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.7 2000/03/30 07:54:08 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.9 2000/01/23 22:29:24 vsilyaev Exp $
 #
 
@@ -26,7 +26,8 @@ PATCHFILES=	vmmon-freebsd-0.95.tar.gz \
 
 MAINTAINER=	freebsd-emulation@FreeBSD.org
 
-RUN_DEPENDS=	${LINUX_DIR}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
+RUN_DEPENDS=	${LINUX_DIR}/lib/libc.so.6:${PORTSDIR}/emulators/linux_base \
+		/dev/rtc:${PORTSDIR}/emulators/rtc
 
 RESTRICTED=	"Not sure if we can redistribute it"
 
@@ -113,17 +114,6 @@ pre-install: setoptions
 
 post-install:
 	${LN} -s ${PREFIX}/etc/vmware /etc/vmware
-.if !exists(/dev/rtc) && !exists(${LINUX_DIR}/dev/rtc)
-	@${ECHO} "************************************************************"
-	@${ECHO} "This system doesn't seem to have /dev/rtc device support."
-	@${ECHO} "With it, you can benefit from VMware's rtc support."
-	@${ECHO}
-	@${ECHO} "You may want to grab the unofficial rtc port at:"
-	@${ECHO} "    http://people.FreeBSD.org/~knu/ports/emulators/"
-	@${ECHO}
-	@${ECHO} "Use it at your own risk, thanks."
-	@${ECHO} "************************************************************"
-.endif
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
