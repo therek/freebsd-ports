@@ -2,11 +2,11 @@
 # Date created:		15 July 1998
 # Whom:			Tai-hwa Liang <avatar@www.mmlab.cse.yzu.edu.tw>
 #
-# $FreeBSD: ports/chinese/pine4/Makefile,v 1.21 2001/02/09 16:44:31 keith Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pine
-PORTVERSION=	4.40
+PORTVERSION=	4.43
 PORTREVISION=	0
 CATEGORIES=	chinese mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
