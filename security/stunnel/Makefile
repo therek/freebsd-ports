@@ -2,17 +2,15 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.19 2000/04/09 18:30:37 cpiazza Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.20 2000/04/21 08:19:07 mharo Exp $
 #
 
 PORTNAME=	stunnel
-PORTVERSION=	3.7
+PORTVERSION=	3.8
 CATEGORIES=	security
-MASTER_SITES=	http://opensores.thebunker.net/pub/mirrors/stunnel/ \
+MASTER_SITES=	ftp://opensores.thebunker.net/pub/mirrors/stunnel/ \
 		http://mike.daewoo.com.pl/computer/stunnel/ \
-		ftp://ftp.fu-berlin.de/unix/security/stunnel/ \
-		ftp://ftp.uni-freiburg.de/pub/net/stunnel/ \
-		ftp://ftp.all.de/pub2/unix/security/stunnel/
+		ftp://ftp.cryptoarchive.net/pub/cryptoarchive/mirrors/opensores.thebunker.net/pub/mirrors/stunnel/
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
