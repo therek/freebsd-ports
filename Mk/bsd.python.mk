@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.60 2004/12/19 17:06:16 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.61 2005/01/09 10:12:07 krion Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -203,6 +203,9 @@ _PYTHON_PORTVERSION!=	(${PYTHON_CMD} -c 'import string, sys; \
 .if !defined(PYTHON_NO_DEPENDS) && !empty(_PYTHON_PORTVERSION)
 PYTHON_PORTVERSION=	${_PYTHON_PORTVERSION}
 .endif
+
+# Propagate the chosen python version to submakes.
+.MAKEFLAGS:	PYTHON_VERSION=python${_PYTHON_VERSION}
 
 # Python-2.4
 .if ${PYTHON_VERSION} == "python2.4"
