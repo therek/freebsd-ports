@@ -2,7 +2,7 @@
 # Date created:				20 January 1999
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.9 2000/04/08 21:23:36 mharo Exp $
+# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.10 2000/06/01 16:10:18 ade Exp $
 #
 
 PORTNAME=	gnomemedia
@@ -15,7 +15,8 @@ DISTNAME=	gnome-media-${PORTVERSION}
 MAINTAINER=	reg@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
+RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
+		sox:${PORTSDIR}/audio/sox
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
