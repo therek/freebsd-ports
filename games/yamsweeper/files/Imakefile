@@ -4,7 +4,7 @@
 
 XCOMM Imakefile src for Yamsweeper, created by hirofumi
 XCOMM
-XCOMM $FreeBSD: ports/games/yamsweeper/files/Imakefile,v 1.5 2000/04/27 21:04:41 kris Exp $
+XCOMM $FreeBSD: ports/games/yamsweeper/files/Imakefile,v 1.6 2001/07/25 17:42:32 steve Exp $
 XCOMM
 
 #include "REVISION"
@@ -53,18 +53,18 @@ install::
 #if cppLogUser
 install::
 	MakeDir($(YAMSDIR))
-	chown $(OWNER).$(GROUP) $(YAMSDIR)
+	chown $(OWNER):$(GROUP) $(YAMSDIR)
 	touch $(LOGFILE)
-	chown $(OWNER).$(GROUP) $(LOGFILE)
+	chown $(OWNER):$(GROUP) $(LOGFILE)
 	chmod 664 $(LOGFILE)
 #endif	/* cppLogUser */
 
 #if cppHighScore
 install::
 	MakeDir($(YAMSDIR))
-	chown $(OWNER).$(GROUP) $(YAMSDIR)
+	chown $(OWNER):$(GROUP) $(YAMSDIR)
 	touch $(SCRFILE)
-	chown $(OWNER).$(GROUP) $(SCRFILE)
+	chown $(OWNER):$(GROUP) $(SCRFILE)
 	chmod 664 $(SCRFILE)
 #endif
 
