@@ -4,7 +4,7 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.19 1999/08/31 01:51:19 peter Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.20 1999/09/07 10:48:48 obrien Exp $
 #
 
 DISTNAME=	nmap-2.3BETA5
@@ -16,14 +16,10 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=     obrien@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-
 .include <bsd.port.pre.mk>
 
-USE_XLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --libdir=${PREFIX}/share/misc
-MAKE_ENV=	GTK_CONFIG="${X11BASE}/bin/gtk12-config"
 .if ${OSVERSION} < 300004
 CFLAGS+=	-DDLT_RAW=12 # for obsoleted <net/bpf.h>
 .endif

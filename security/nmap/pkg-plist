@@ -1,6 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/nmap/pkg/PLIST,v 1.6 1999/08/31 01:51:22 peter Exp $
 bin/nmap
-bin/nmapfe
-bin/xnmap
 share/misc/nmap-os-fingerprints
 share/misc/nmap-services
