@@ -2,7 +2,7 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/arrow/Makefile,v 1.6 2001/01/16 19:08:33 will Exp $
+# $FreeBSD: ports/mail/arrow/Makefile,v 1.7 2001/02/22 02:49:45 lioux Exp $
 #
 
 PORTNAME=	arrow
@@ -20,6 +20,7 @@ LIB_DEPENDS=	jx-1_5_3.1:${JXPORT} \
 		jsearch-0_5_6.0:${PORTSDIR}/x11-toolkits/libjsearch \
 		jtoolbar-0_5_4.0:${PORTSDIR}/x11-toolkits/libjtoolbar \
 		jtree-1_1_7.1:${PORTSDIR}/x11-toolkits/libjtree
+RUN_DEPENDS=	procmail:${PORTSDIR}/mail/procmail
 
 WRKSRC=		${WRKDIR}/JX-1.5.3
 
