@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.250 1999/12/10 15:32:42 steve Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.251 1999/12/25 16:05:46 steve Exp $
 #
 
     SUBDIR += 221upgrade
@@ -34,6 +34,7 @@
     SUBDIR += delay
     SUBDIR += diction
     SUBDIR += display
+    SUBDIR += dnetc
     SUBDIR += dotfile
     SUBDIR += estic
     SUBDIR += ewipe
@@ -84,7 +85,6 @@
     SUBDIR += proxyper
     SUBDIR += qclock
     SUBDIR += quotes
-    SUBDIR += rc5des
     SUBDIR += rfc
     SUBDIR += rpm
     SUBDIR += rpm2cpio
