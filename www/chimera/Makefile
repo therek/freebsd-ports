@@ -3,7 +3,7 @@
 # Date created:		26 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/www/chimera/Makefile,v 1.15 1999/08/31 02:42:46 peter Exp $
+# $FreeBSD: ports/www/chimera/Makefile,v 1.16 1999/08/31 06:51:41 mharo Exp $
 #
 
 DISTNAME=	chimera-1.70p0
@@ -12,8 +12,7 @@ MASTER_SITES=	ftp://ftp.cs.unlv.edu/pub/chimera/
 
 MAINTAINER=	jseger@FreeBSD.org
 
-BROKEN=		build
-
+NO_LATEST_LINK=	yes
 USE_IMAKE=	yes
 
 .include <bsd.port.mk>
