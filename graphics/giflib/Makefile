@@ -2,7 +2,7 @@
 # Date created:		03 May 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/libungif/Makefile,v 1.14 2000/06/16 21:50:55 asami Exp $
+# $FreeBSD: ports/graphics/libungif/Makefile,v 1.15 2000/06/20 07:02:12 will Exp $
 #
 
 PORTNAME=	libungif
@@ -12,9 +12,17 @@ MASTER_SITES=	ftp://prtr-13.ucsc.edu/pub/libungif/
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_XLIB=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
+
+.ifdef (NO_X)
+PLIST_SUB+=	X11='@comment '
+CONFIGURE_ARGS+=--with-x=no
+PKGNAMESUFFIX=	-nox11
+.else
+USE_XLIB=	yes
+PLIST_SUB+=	X11=''
+.endif
 
 DOCDIR=		${PREFIX}/share/doc/libungif
 
