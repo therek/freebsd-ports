@@ -1,12 +1,12 @@
 # New ports collection makefile for:   bottlerocket
-# Version required:    0.04b
+# Version required:    0.04c
 # Date created:        15 July 1999
 # Whom:                Mike Smith <msmith@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/bottlerocket/Makefile,v 1.2 1999/08/25 07:21:13 obrien Exp $
 #
 
-DISTNAME=	bottlerocket-0.04b
+DISTNAME=	bottlerocket-0.04c
 CATEGORIES=	misc
 MASTER_SITES=	http://mlug.missouri.edu/~tymm/
 
