@@ -2,7 +2,7 @@
 # Date created:				4 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.19 2000/04/19 19:57:58 mharo Exp $
+# $FreeBSD: ports/graphics/EZWGL/Makefile,v 1.20 2000/06/04 21:45:34 will Exp $
 #
 
 PORTNAME=	EZWGL
@@ -21,7 +21,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
-.include "files/manpages"
+.include "${FILESDIR}/manpages"
 
 post-extract:
 	find ${WRKSRC} -name CVS | xargs ${RM} -rf

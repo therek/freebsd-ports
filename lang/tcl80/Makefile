@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl80/Makefile,v 1.22 2000/04/12 06:20:58 obrien Exp $
+# $FreeBSD: ports/lang/tcl80/Makefile,v 1.23 2000/05/31 18:17:37 hoek Exp $
 #
 
 PORTNAME=	tcl
@@ -28,7 +28,7 @@ SHLIB_MINOR=	5
 MAKEFILE=	makefile
 TCL_LIB=	libtcl80.so
 
-.include "files/manpages"
+.include "${FILESDIR}/manpages"
 
 MANCOMPRESSED=	yes
 
