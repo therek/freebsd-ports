@@ -3,7 +3,7 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.87 2000/07/22 09:47:30 alex Exp $
 #
 
 PORTNAME=	wine
@@ -27,6 +27,7 @@ LDCONFIG_DIRS=	%%PREFIX%%/lib/wine
 MAN1=		wine.1
 MAN5=		wine.conf.5
 ONLY_FOR_ARCHS=	i386
+USE_BISON=	yes
 
 .if !defined(NDEBUG)
 STRIP=
