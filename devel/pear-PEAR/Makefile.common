@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.1 2003/06/07 23:00:39 nork Exp $
 
 # Common code for pear- ports.
 
@@ -7,7 +7,9 @@ PKGNAMEPREFIX=	pear-
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	PEAR
 
+.if !defined(USE_PHPIZE)
 NO_BUILD=	yes
+.endif
 
 .if exists(${LOCALBASE}/bin/php-config)
 PHP_BASE!=	${LOCALBASE}/bin/php-config --prefix
