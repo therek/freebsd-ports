@@ -2,7 +2,7 @@
 # Date created:				7/06/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/smurflog/Makefile,v 1.15 2000/06/20 13:37:38 nectar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smurflog
@@ -10,7 +10,7 @@ PORTVERSION=	2.1
 CATEGORIES=	security
 #MASTER_SITES=  None available anymore, so this is stored locally
 
-MAINTAINER=	nectar@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 
