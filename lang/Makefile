@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.203 2000/12/27 11:28:53 alex Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.204 2001/01/05 17:26:18 alex Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -114,6 +114,7 @@
     SUBDIR += scheme48
     SUBDIR += schemetoc
     SUBDIR += scm
+    SUBDIR += scriba
     SUBDIR += siod
     SUBDIR += slib
     SUBDIR += smalleiffel
