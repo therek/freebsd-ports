@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.186 2000/11/02 21:11:40 trevor Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.187 2000/11/02 21:15:06 trevor Exp $
 #
 
     SUBDIR += afsp
@@ -153,6 +153,7 @@
     SUBDIR += tosha
     SUBDIR += tracker
     SUBDIR += vorbis
+    SUBDIR += vorbis-tools
     SUBDIR += waveplay
     SUBDIR += wavplay
     SUBDIR += wmcdplay
