@@ -2,7 +2,7 @@
 # Date Created:		28 Sep 2000
 # Whom:			Oliver Lehmann <Kai_Allard_Liao@gmx.de>
 #
-# $FreeBSD: ports/sysutils/xcdroast/Makefile,v 1.5 2001/08/21 19:50:01 alex Exp $
+# $FreeBSD: ports/sysutils/xcdroast/Makefile,v 1.6 2001/08/21 20:54:05 alex Exp $
 #
 
 PORTNAME=	xcdroast
@@ -34,16 +34,19 @@ post-patch:
 	done
 
 post-install:
+	@${CAT} ${PKGMESSAGE}
+
+enable-nonroot:
 
 	/usr/sbin/pw groupadd -n cdwrite
 
-#	for i in cdrecord cdda2wav mkisofs readcd; do \
-#	    ${CHOWN} root:cdwrite ${LOCALBASE}/bin/$$i ; \
-#	    ${CHMOD} 4710 ${LOCALBASE}/bin/$$i ; \
-#	done
+	for i in cdrecord cdda2wav mkisofs readcd; do \
+	    ${CHOWN} root:cdwrite ${LOCALBASE}/bin/$$i ; \
+	    ${CHMOD} 4710 ${LOCALBASE}/bin/$$i ; \
+	done
 
-#	${CHOWN} root:cdwrite ${PREFIX}/lib/xcdroast-0.98/bin/xcdrwrap
-#	${CHMOD} 2755 ${PREFIX}/lib/xcdroast-0.98/bin/xcdrwrap
+	${CHOWN} root:cdwrite ${PREFIX}/lib/xcdroast-0.98/bin/xcdrwrap
+	${CHMOD} 2755 ${PREFIX}/lib/xcdroast-0.98/bin/xcdrwrap
 
 	@${ECHO} ""
 	@${ECHO} "***************************************************************"
@@ -52,4 +55,5 @@ post-install:
 	@${ECHO} " this file, a normal user will get an error message."
 	@${ECHO} "***************************************************************"
 	@${ECHO} ""
+
 .include <bsd.port.mk>
