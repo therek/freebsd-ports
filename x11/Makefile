@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.330 2001/08/20 15:58:53 sobomax Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 9term
@@ -29,6 +29,7 @@
     SUBDIR += fbsd-icons
     SUBDIR += finder
     SUBDIR += gbackground
+    SUBDIR += gdkxft
     SUBDIR += gdm
     SUBDIR += gmessage
     SUBDIR += gnome
