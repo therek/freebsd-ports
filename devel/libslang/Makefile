@@ -2,11 +2,11 @@
 # Date created:         11 July 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/devel/libslang/Makefile,v 1.24 2001/01/06 10:48:01 knu Exp $
+# $FreeBSD: ports/devel/libslang/Makefile,v 1.25 2001/02/05 13:19:39 kevlo Exp $
 #
 
 PORTNAME=	libslang
-PORTVERSION=	1.4.3
+PORTVERSION=	1.4.4
 CATEGORIES=	devel
 MASTER_SITES=	ftp://space.mit.edu/pub/davis/slang/v1.4/
 DISTNAME=	slang-${PORTVERSION}
@@ -19,5 +19,10 @@ INSTALLS_SHLIB=	yes
 
 ALL_TARGET=	all elf
 INSTALL_TARGET=	install install-elf
+
+.if		!defined(NOPORTDOCS)
+post-install:
+		cd ${WRKSRC}/src && ${MAKE} install_docs
+.endif
 
 .include <bsd.port.mk>
