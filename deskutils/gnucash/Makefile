@@ -2,11 +2,11 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.27 2001/01/22 19:33:59 ade Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.28 2001/03/29 16:32:54 sobomax Exp $
 #
 
 PORTNAME=	gnucash
-PORTVERSION=	1.4.9
+PORTVERSION=	1.4.11
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	http://www.gnucash.org/pub/gnucash/sources/stable/ \
 		ftp://ftp.gnucash.org/pub/gnucash/sources/stable/ \
