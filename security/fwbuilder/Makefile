@@ -2,7 +2,7 @@
 # Date Created:				3 Feb 2001
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/security/fwbuilder/Makefile,v 1.3 2001/03/28 17:26:27 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fwbuilder
@@ -12,7 +12,7 @@ CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	roman@xpert.com
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gtkmm.2:${PORTSDIR}/x11-toolkits/gtk--
 
