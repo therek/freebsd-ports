@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.306 2000/11/26 14:23:52 roam Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.307 2000/11/26 14:30:52 roam Exp $
 #
 
     SUBDIR += 221upgrade
@@ -91,6 +91,7 @@
     SUBDIR += magicpoint
     SUBDIR += man.el
     SUBDIR += mc
+    SUBDIR += metatheme
     SUBDIR += mgp-mode.el
     SUBDIR += mmv
     SUBDIR += most
