@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.213 2001/04/07 07:42:46 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.214 2001/04/07 22:15:28 will Exp $
 #
 
     SUBDIR += abook
@@ -115,6 +115,7 @@
     SUBDIR += pop3gwd
     SUBDIR += pop3lite
     SUBDIR += popa3d
+    SUBDIR += popd
     SUBDIR += poppassd
     SUBDIR += popper
     SUBDIR += poppwd
