@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.79 2000/04/16 03:30:37 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.80 2000/04/30 08:21:56 kris Exp $
 #
 
 PORTNAME=	XFree86
@@ -16,8 +16,6 @@ MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/4.0/source/ \
 DISTFILES=	X400src-1.tgz X400src-2.tgz
 
 MAINTAINER=	jmz@FreeBSD.org
-
-FORBIDDEN=	"Root hole in X server, XFree86 developers seem to be ignoring us"
 
 WRKSRC=		${WRKDIR}/${DIST_SUBDIR}
 .if (${MACHINE} != "alpha")
@@ -66,9 +64,15 @@ MASTER_SITES+=	ftp://psych.psy.uq.oz.au/pub/X11R5/ \
 EXTRACT_ONLY=	X400src-1.tgz X400src-2.tgz
 DISTFILES+=	Wraphelp.c
 IGNOREFILES=	Wraphelp.c
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} ${PKGDIR}/INSTALL
+.endif
 .endif
 .if ${USA_RESIDENT} == YES
 pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} ${PKGDIR}/INSTALL
+.endif
 	@${ECHO}
 	@${ECHO} Assuming that you have fetched a USA-Legal Wraphelp.c.
 .endif
