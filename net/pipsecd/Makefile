@@ -3,7 +3,7 @@
 # Date created:			16 Aug 1999
 # Whom:				Patrick Bihan-Faou <patrick@mindstep.com>
 #
-# $FreeBSD: ports/net/pipsecd/Makefile,v 1.5 1999/10/20 00:22:24 dan Exp $
+# $FreeBSD: ports/net/pipsecd/Makefile,v 1.6 1999/11/07 22:25:37 dirk Exp $
 #
 
 DISTNAME=	pipsec-19991014
@@ -14,11 +14,9 @@ MASTER_SITES=	http://www.enst.fr/~beyssac/pipsec/ \
 
 MAINTAINER=	patrick@mindstep.com
 
-LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
+USE_OPENSSL=	RSA
 
 ALL_TARGET=	pipsecd
-
-.include <bsd.port.pre.mk>
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/pipsecd ${PREFIX}/sbin
@@ -36,4 +34,4 @@ do-install:
 post-install:
 	strip ${PREFIX}/sbin/pipsecd
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
