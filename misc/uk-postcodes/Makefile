@@ -2,11 +2,11 @@
 # Date created:         1998-01-01
 # Whom:                 wosch
 #
-# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.9 2001/01/03 09:53:23 brian Exp $
+# $FreeBSD: ports/misc/uk-postcodes/Makefile,v 1.10 2001/01/16 17:31:44 sobomax Exp $
 #
 
 PORTNAME=	uk-postcodes
-PORTVERSION=	2.0
+PORTVERSION=	2.1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/uk-postcodes/ \
 		http://people.FreeBSD.org/~brian/uk-postcodes/
