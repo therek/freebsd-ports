@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.47 2000/07/02 00:11:28 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.48 2000/10/23 15:24:20 imura Exp $
 #
 
 PORTNAME=	qt
@@ -65,12 +65,12 @@ do-install:
 	@${MKDIR} ${PREFIX}/include/X11/qt
 	@${MKDIR} ${PREFIX}/share/doc/qt/html
 	@(cd ${WRKSRC} ; \
-	${INSTALL_DATA} ${WRKSRC}/include/*.h ${PREFIX}/include/X11/qt ; \
-	${INSTALL_MAN} ${WRKSRC}/man/man1/* ${PREFIX}/man/man1 ; \
-	${INSTALL_MAN} ${WRKSRC}/man/man3/* ${PREFIX}/man/man3 ; \
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/qt ; \
-	${INSTALL_DATA} ${WRKSRC}/README.QT ${PREFIX}/share/doc/qt ; \
-	${INSTALL_DATA} ${WRKSRC}/html/* ${PREFIX}/share/doc/qt/html )
+	${INSTALL_DATA} include/*.h ${PREFIX}/include/X11/qt ; \
+	${INSTALL_MAN} man/man1/* ${PREFIX}/man/man1 ; \
+	${INSTALL_MAN} man/man3/* ${PREFIX}/man/man3 ; \
+	${INSTALL_DATA} README ${PREFIX}/share/doc/qt ; \
+	${INSTALL_DATA} README.QT ${PREFIX}/share/doc/qt ; \
+	${INSTALL_DATA} html/* ${PREFIX}/share/doc/qt/html )
 
 .if defined(WANT_STATIC)
 post-install:
