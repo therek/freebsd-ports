@@ -2,13 +2,13 @@
 # Date created:		30 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/xchat/Makefile,v 1.4 2000/11/23 19:59:13 knu Exp $
+# $FreeBSD: ports/japanese/xchat/Makefile,v 1.5 2000/11/29 11:46:41 sobomax Exp $
 #
 
 PORTNAME=	xchat
 PORTVERSION=	1.4.3
-PORTREVISION=	1
-CATEGORIES=	japanese irc gnome
+PORTREVISION=	2
+CATEGORIES=	japanese irc gnome ipv6
 MASTER_SITES=	http://xchat.org/files/source/1.4/ \
 		http://xchat.linuxpower.org/files/source/1.4/
 
@@ -19,13 +19,15 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	iconv.2:${PORTSDIR}/converters/iconv
+RUN_DEPENDS=	${LOCALBASE}/libexec/iconv/iso-2022-jp.so:${PORTSDIR}/converters/iconv-extra
 
 MASTERDIR=	${.CURDIR}/../../irc/xchat
 MD5_FILE=	${.CURDIR}/distinfo
+PLIST=		${.CURDIR}/pkg-plist
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--enable-japanese-conv # --enable-ipv6
+CONFIGURE_ARGS=	--enable-japanese-conv --enable-ipv6
 MAKE_ARGS=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -liconv -lintl"
 
