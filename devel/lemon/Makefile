@@ -2,11 +2,12 @@
 # Date created:			  June 4, 2001
 # Whom:				  Mikhail Teterin
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/lemon/Makefile,v 1.1 2001/06/05 03:48:39 mi Exp $
 #
 
 PORTNAME=	lemon
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.hwaci.com/sw/lemon/
 DISTFILES=	lemon.c lempar.c
