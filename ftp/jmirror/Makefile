@@ -2,15 +2,16 @@
 # Date Created:		4 Febuary 1999
 # Whom:			Justin Robinson
 #
-# $FreeBSD: ports/ftp/jmirror/Makefile,v 1.6 2000/04/22 09:57:35 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jmirror
 PORTVERSION=	1.0b
 CATEGORIES=	ftp
-MASTER_SITES=	ftp://ftp.ruin.org/pub/All/
+MASTER_SITES=	http://galileo.spaceports.com/~jharris/distfiles/ \
+		ftp://ftp.ruin.org/pub/All/
 
-MAINTAINER=	ports@FreeBSD.Org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Net/FTP.pm:${PORTSDIR}/net/p5-Net
 
