@@ -2,14 +2,15 @@
 # Date created:         11 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/kwebwatch/Makefile,v 1.1 2000/07/10 03:56:14 steve Exp $
 #
 
 PORTNAME=	kwebwatch
 PORTVERSION=	0.72
 CATEGORIES=	www kde
 MASTER_SITES=	http://linuxberg.uol.com.br/files/kde/network/ \
-		http://www.kde.gr.jp/~hanawa/apps/kwebwatch/
+		ftp://ftp.bmtmicro.com/tucows/mirror/files/kde/network/ \
+		ftp://ftp.bitcon.no/.4/kde/network/
 
 MAINTAINER=	lioux@linf.unb.br
 
