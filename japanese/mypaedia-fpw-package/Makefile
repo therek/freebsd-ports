@@ -2,13 +2,13 @@
 # Date created:		00/04/24
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mypaedia-fpw-package/Makefile,v 1.2 2000/06/23 19:31:44 taoka Exp $
+# $FreeBSD: ports/japanese/mypaedia-fpw-package/Makefile,v 1.3 2000/08/24 15:30:28 taoka Exp $
 #
 
 PORTNAME=	mypaedia-fpw-package
 PORTVERSION=	1.0.3
 CATEGORIES=	japanese elisp
-MASTER_SITES=	http://openlab.ring.gr.jp/edict/mypaedia-fpw/
+MASTER_SITES=	http://openlab.ring.gr.jp/edict/mypaedia-fpw/dist/
 
 MAINTAINER=	taoka@FreeBSD.org
 
