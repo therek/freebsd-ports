@@ -3,14 +3,14 @@
 # Date created:		08-March-1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.4 1999/08/25 05:43:52 obrien Exp $
 #
 
 DISTNAME=	gnotepad+-1.1.4
 CATEGORIES=	editors www
 MASTER_SITES=	http://ack.netpedia.net/gnp/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 LIB_DEPENDS=    Xpm.4:${PORTSDIR}/graphics/xpm \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12

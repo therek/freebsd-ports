@@ -3,14 +3,14 @@
 # Date created:		30 Jun 1999
 # Whom:			Brett Taylor <brett@peloton.physics.montana.edu>
 #
-# $FreeBSD: ports/astro/tkseti/Makefile,v 1.3 1999/08/25 04:22:44 obrien Exp $
+# $FreeBSD: ports/astro/tkseti/Makefile,v 1.4 1999/09/08 23:41:50 cpiazza Exp $
 #
 
 DISTNAME=	tkseti-1.42
 CATEGORIES=	astro tk80
 MASTER_SITES=	http://www.cuug.ab.ca/~macdonal/tkseti/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80 \
 		setiathome:${PORTSDIR}/astro/setiathome

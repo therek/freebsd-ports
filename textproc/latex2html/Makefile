@@ -3,7 +3,7 @@
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.10 1999/08/31 02:09:30 peter Exp $
 #
 
 DISTNAME=	latex2html-98.1p1
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://www-dsed.llnl.gov/files/programs/unix/latex2html/sources/ \
 		ftp://ftp.mpn.com/pub/nikos/latex2html-mirror/sources/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 RUN_DEPENDS=	${PREFIX}/bin/latex:${PORTSDIR}/print/latex \
 		${PREFIX}/bin/dvips:${PORTSDIR}/print/dvips \

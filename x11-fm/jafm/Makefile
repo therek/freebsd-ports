@@ -3,7 +3,7 @@
 # Date created:                31 August 1998
 # Whom:                        brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.6 1999/08/31 02:58:19 peter Exp $
 #
 
 DISTNAME=	jafm-0.5
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www-personal.usyd.edu.au/~rlittlew/jafm/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 USE_QT=		yes
 USE_GMAKE=	yes

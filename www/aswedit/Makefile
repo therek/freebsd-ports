@@ -3,7 +3,7 @@
 # Date created:		25 June 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/aswedit/Makefile,v 1.6 1999/08/31 02:42:42 peter Exp $
 #
 
 DISTNAME=	asWedit-4.0-i386.linux
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.advasoft.com/asWedit/ \
 		ftp://sunsite.auc.dk/pub/infosystems/www/asWedit/ \
 		ftp://sunsite.icm.edu.pl/pub/www/asWedit/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 RUN_DEPENDS=    /compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 

@@ -3,7 +3,7 @@
 # Date created:		12 August 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/qclock/Makefile,v 1.5 1999/08/25 07:22:24 obrien Exp $
 #
 
 DISTNAME=	qclock
@@ -11,7 +11,7 @@ PKGNAME=	qclock-1.0
 CATEGORIES=	misc
 MASTER_SITES=	ftp://peloton.physics.montana.edu/pub/distfiles/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 NO_WRKSUBDIR=	yes
 

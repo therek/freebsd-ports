@@ -3,7 +3,7 @@
 # Date created:		5 June 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gimp-manual-html/Makefile,v 1.11 1999/08/25 06:14:03 obrien Exp $
 #
 
 DISTNAME=	GimpUserManual-1.0.0
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	ftp://manual.gimp.org/pub/manual/ \
 		ftp://peloton.physics.montana.edu/pub/distfiles/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 .if !defined(DOCFORMAT)
 DOCFORMAT=HTML

@@ -3,7 +3,7 @@
 # Date created:		18 November 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/cooledit/Makefile,v 1.17 1999/08/25 05:43:31 obrien Exp $
 #
 
 DISTNAME=	cooledit-3.11.3
@@ -12,7 +12,7 @@ MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
 		http://www.netins.net/showcase/Comput-IT/cooledit/src/
 MASTER_SITE_SUBDIR=	apps/editors/X
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm

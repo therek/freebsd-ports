@@ -3,7 +3,7 @@
 # Date created:		11 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fonts/tkfont/Makefile,v 1.5 1999/08/31 02:58:33 peter Exp $
 #
 
 DISTNAME=	tkfont-1.1
@@ -11,7 +11,7 @@ CATEGORIES=     x11-fonts tk80
 MASTER_SITES=	ftp://ftp.cdrom.com/pub/linux/tsx-11/sources/usr.bin.X11/ \
 		http://www.FreeBSD.org/~billf/
 
-MAINTAINER=     brett@peloton.physics.montana.edu
+MAINTAINER=     brett@peloton.runet.edu
 
 RUN_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80
 

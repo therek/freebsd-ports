@@ -3,7 +3,7 @@
 # Date created:		15 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/asmail/Makefile,v 1.8 1999/08/25 06:50:02 obrien Exp $
 #
 
 DISTNAME=	asmail-0.54
@@ -11,7 +11,7 @@ CATEGORIES=	mail afterstep
 MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/asmail/ \
 		ftp://ftp.afterstep.org/apps/asmail/
 
-MAINTAINER=	brett@peloton.physics.montana.edu
+MAINTAINER=	brett@peloton.runet.edu
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
