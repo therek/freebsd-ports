@@ -2,11 +2,11 @@
 # Date created:		15 Jan 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-Reload/Makefile,v 1.1 2001/03/14 22:54:45 vanilla Exp $
 #
 
 PORTNAME=	Apache-Reload
-PORTVERSION=	0.06
+PORTVERSION=	0.07
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Apache
