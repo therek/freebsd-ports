@@ -2,11 +2,12 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.30 2001/05/04 21:39:46 ade Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.31 2001/05/11 16:36:38 ade Exp $
 #
 
 PORTNAME=	gnome
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
