@@ -2,7 +2,7 @@
 # Date created:		26 March 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/devel/sdcc/Makefile,v 1.8 2001/01/16 17:30:21 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sdcc
@@ -11,7 +11,7 @@ CATEGORIES=	devel lang
 MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Forum/1353/
 DISTNAME=	${PORTNAME}-${PORTVERSION}Ea
 
-MAINTAINER=	ambrisko@ambrisko.com
+MAINTAINER=	ambrisko@freebsd.org
 
 WRKSRC=		${WRKDIR}/sdcc219Ea
 GNU_CONFIGURE=	yes
