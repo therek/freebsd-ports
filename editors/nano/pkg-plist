@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.7 2001/12/19 20:53:38 naddy Exp $
 bin/nano
 @unexec install-info --delete %D/info/nano.info %D/info/dir
 info/nano.info
@@ -16,6 +16,7 @@ share/locale/id/LC_MESSAGES/nano.mo
 share/locale/it/LC_MESSAGES/nano.mo
 share/locale/nl/LC_MESSAGES/nano.mo
 share/locale/no/LC_MESSAGES/nano.mo
+share/locale/pl/LC_MESSAGES/nano.mo
 share/locale/ru/LC_MESSAGES/nano.mo
 share/locale/sv/LC_MESSAGES/nano.mo
 share/locale/uk/LC_MESSAGES/nano.mo
