@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.289 2000/09/04 14:38:50 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.290 2000/09/16 04:16:18 will Exp $
 #
 
     SUBDIR += 221upgrade
@@ -24,6 +24,7 @@
     SUBDIR += bbjd
     SUBDIR += biblereader
     SUBDIR += bidwatcher
+    SUBDIR += bogosort
     SUBDIR += bottlerocket
     SUBDIR += boxes
     SUBDIR += brs
