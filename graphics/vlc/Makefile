@@ -2,7 +2,7 @@
 # Date created:		3rd August 2001
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/graphics/vlc/Makefile,v 1.1 2001/08/04 13:01:02 brian Exp $
+# $FreeBSD: ports/graphics/vlc/Makefile,v 1.2 2001/08/06 23:05:58 brian Exp $
 #
 
 PORTNAME=	vlc
@@ -24,7 +24,6 @@ CONFIGURE_ENV=	PATH_GTKCONFIG="${PREFIX}/bin/gtk12-config" \
 		SDL_CONFIG="${LOCALBASE}/bin/sdl11-config"
 USE_GTK=	yes
 USE_GMAKE=	yes
-USE_X_PREFIX=	yes
 USE_BZIP2=	yes
 
 pre-patch:
