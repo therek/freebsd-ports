@@ -2,11 +2,12 @@
 # Date created:				8 August 2000
 # Whom:					Eric Anholt
 #
-# $FreeBSD: ports/games/tuxracer/Makefile,v 1.1 2001/01/05 13:19:36 nbm Exp $
+# $FreeBSD: ports/games/tuxracer/Makefile,v 1.2 2001/01/14 19:33:01 vanilla Exp $
 #
 
 PORTNAME=	tuxracer
 PORTVERSION=	0.12.1
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=tuxracer
