@@ -2,32 +2,32 @@
 # Date created:         Jan 15 1998
 # Whom:                 brianfeldman@hotmail.com
 #
-# $FreeBSD: ports/irc/tkirc/Makefile,v 1.11 1999/11/28 18:32:12 steve Exp $
+# $FreeBSD: ports/irc/tkirc/Makefile,v 1.12 2000/04/12 06:28:31 obrien Exp $
 #
 
 PORTNAME=	tkirc
-PORTVERSION=	1.202
-CATEGORIES=	irc tk82
-MASTER_SITES=	ftp://ftp.informatik.uni-oldenburg.de/pub/tkirc/
+PORTVERSION=	2.42
+CATEGORIES=	irc tk83
+MASTER_SITES=	ftp://ftp.netsplit.de/pub/tcltk/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	green@FreeBSD.org
 
 RUN_DEPENDS=	irc:${PORTSDIR}/irc/ircII \
-		wish8.2:${PORTSDIR}/x11-toolkits/tk82
+		wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
-WRKSRC=		${WRKDIR}/tkirc
+WRKSRC=		${WRKDIR}/tkirc2
 NO_BUILD=	yes
 
-post-patch:
-	perl -pi.orig -e 's/wish/wish8.2/' ${WRKSRC}/tkirc
-
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/tkirc	  ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/tkirc2 ${PREFIX}/bin
+	${LN} -f ${PREFIX}/bin/tkirc2 ${PREFIX}/bin/tkirc
 	${MKDIR} ${PREFIX}/share/doc/tkirc
-	${INSTALL_DATA} ${WRKSRC}/tkircrc-example ${PREFIX}/share/doc/tkirc
-	${INSTALL_DATA} ${WRKSRC}/README	  ${PREFIX}/share/doc/tkirc
-	${INSTALL_DATA} ${WRKSRC}/CHANGES	  ${PREFIX}/share/doc/tkirc
-	${INSTALL_DATA} ${WRKSRC}/COPYING	  ${PREFIX}/share/doc/tkirc
+	${INSTALL_DATA} ${WRKSRC}/CHANGES ${PREFIX}/share/doc/tkirc
+	${INSTALL_DATA} ${WRKSRC}/COPYING ${PREFIX}/share/doc/tkirc
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/tkirc
+	${MKDIR} ${PREFIX}/share/doc/tkirc/examples
+	${TAR} cf - -C ${WRKSRC} .tkirc2 | \
+	    ${TAR} xf - -C ${PREFIX}/share/doc/tkirc/examples
 
 .include <bsd.port.mk>
