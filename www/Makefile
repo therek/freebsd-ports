@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.232 2000/07/26 12:28:52 sobomax Exp $
+# $FreeBSD: ports/www/Makefile,v 1.233 2000/07/26 12:55:43 sobomax Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -58,6 +58,7 @@
     SUBDIR += hotjava
     SUBDIR += htmlpp
     SUBDIR += http-analyze
+    SUBDIR += http_load
     SUBDIR += httperf
     SUBDIR += httptunnel
     SUBDIR += hypermail
