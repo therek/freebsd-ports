@@ -2,11 +2,11 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.56 2001/04/09 23:29:38 nsayer Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.57 2001/04/16 18:49:37 dirk Exp $
 #
 
 PORTNAME=	imap
-PORTVERSION=	0104101757
+PORTVERSION=	0104241750
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.cac.washington.edu/imap/%SUBDIR%/ \
 		ftp://ftp.nuug.no/pub/anders/distfiles/%SUBDIR%/ \
