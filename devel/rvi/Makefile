@@ -2,13 +2,14 @@
 # Date Created:				2 July 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/rvi/Makefile,v 1.1 2001/07/04 15:56:29 dannyboy Exp $
 #
 
 PORTNAME=	rvi
 PORTVERSION=	1.0.0
 CATEGORIES=	devel
-MASTER_SITES=	http://www.rucus.ru.ac.za/~mtsegaye/rvi/
+MASTER_SITES=	http://www.rucus.ru.ac.za/~mtsegaye/rvi/ \
+		http://www.databits.net/~petef/distfiles/
 DISTNAME=	rvi
 
 MAINTAINER=	petef@databits.net
