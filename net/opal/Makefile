@@ -2,7 +2,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.16 2001/01/03 14:02:21 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.17 2001/01/03 14:02:21 roger Exp $
 #
 
 PORTNAME=	openh323
@@ -20,13 +20,21 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_NEWGCC=	yes
 USE_BISON=	yes
+
+# If the user compiles with make -DNO_XWINDOWS do not include X support
+.if !defined(NO_XWINDOWS)
 USE_XLIB=	yes
+.endif
+
 USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIR}/pwlib \
 		OPENH323DIR=${WRKDIR}/openh323
 THE_MACHTYPE=	${ARCH:S/i386/x86/}
 MAKE_ARGS=	OSTYPE=${OPSYS} MACHTYPE=${THE_MACHTYPE} OSRELEASE=${OSVERSION} CPLUS=${CXX}
+.if defined(NO_XWINDOWS)
+MAKE_ARGS+=	NO_XWINDOWS=1
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/samples/simple/obj_${OPSYS}_${THE_MACHTYPE}_r/simph323 ${PREFIX}/bin
