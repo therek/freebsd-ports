@@ -3,7 +3,7 @@
 # Date created:		9 Jan 1997
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.32 2000/02/14 23:20:12 mharo Exp $
+# $FreeBSD: ports/mail/imap-uw/Makefile,v 1.33 2000/02/14 23:45:52 mharo Exp $
 #
 
 DISTNAME=	imap-4.7a
@@ -40,9 +40,6 @@ PLIST_SUB=	SHLIBNAME=${SHLIBNAME} SHLIBBASE=${SHLIBBASE}
 .if ${PORTOBJFORMAT} == "aout"
 SHLIBNAME=	lib${SHLIBBASE}.so.${SHLIBMAJ}.0
 .endif
-
-post-extract:
-	@${CP} ${FILESDIR}/safegets.[ch] ${WRKSRC}/src/mtest/
 
 post-configure:
 	@${ECHO_MSG} ">> The c-client shared library will be named ${SHLIBNAME}"
