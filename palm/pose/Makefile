@@ -2,7 +2,7 @@
 # Date created:			Sat May  6 14:03:08 CEST 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/pose/Makefile,v 1.2 2000/05/14 19:16:48 dirk Exp $
+# $FreeBSD: ports/palm/pose/Makefile,v 1.3 2000/08/03 09:25:59 asami Exp $
 #
 
 PORTNAME=	pose
@@ -11,7 +11,7 @@ CATEGORIES=	palm emulators
 MASTER_SITES=	http://www.palmos.com/dev/tech/tools/emulator/
 DISTNAME=	emulator_src_30a6
 
-MAINTAINER=	dirk@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 
