@@ -3,14 +3,14 @@
 # Date created:        24 November 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/wmnet/Makefile,v 1.4 1999/08/30 14:24:31 peter Exp $
 #
 
 DISTNAME=	wmnet-1.2
 CATEGORIES=	net windowmaker
-MASTER_SITES=	ftp://ftp.mcs.net/mcsnet.users/rneswold/
+MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 
-MAINTAINER=	rneswold@mcs.net
+MAINTAINER=	rneswold@enteract.com
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
