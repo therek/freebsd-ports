@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.310 2001/03/05 09:18:47 knu Exp $
+# $FreeBSD: ports/www/Makefile,v 1.311 2001/03/08 12:56:42 clive Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -63,6 +63,7 @@
     SUBDIR += gtkhtml
     SUBDIR += harvest
     SUBDIR += hotjava
+    SUBDIR += htdump
     SUBDIR += htmlpp
     SUBDIR += http-analyze
     SUBDIR += http_load
