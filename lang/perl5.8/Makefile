@@ -2,7 +2,7 @@
 # Date created:		16 April 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/lang/perl5/Makefile,v 1.36 2001/03/22 15:17:46 markm Exp $
+# $FreeBSD: ports/lang/perl5/Makefile,v 1.37 2001/04/10 19:57:48 markm Exp $
 #
 
 PORTNAME=	perl
@@ -10,7 +10,7 @@ PORTVERSION=	${PERL_VER}
 CATEGORIES=	lang devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN:S|/modules/by-module|/src|}
 
-MAINTAINER=	markm@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 # This will need to be "fixed" in ../../Mk/bsd.port.mk as well.
 PERL_VER=	5.6.1
