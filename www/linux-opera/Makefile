@@ -2,7 +2,7 @@
 # Date created:					December 6th 2000
 # Whom:						des
 #
-# $FreeBSD: ports/www/linux-opera/Makefile,v 1.5 2001/01/04 14:39:40 des Exp $
+# $FreeBSD: ports/www/linux-opera/Makefile,v 1.6 2001/03/05 16:49:53 des Exp $
 #
 
 PORTNAME=	linux-opera
@@ -14,7 +14,6 @@ DISTNAME=	opera-5.0-b6-20010212.017-static.i386
 MAINTAINER=	des@FreeBSD.org
 
 IS_INTERACTIVE=	YES
-NO_PACKAGE=	"User must agree to license prior to installation."
 
 RUN_DEPENDS=	${LINUXBASE}/lib/ld.so:${PORTSDIR}/emulators/linux_base \
 		${LINUXBASE}/usr/lib/libpng.so.2:${PORTSDIR}/graphics/linux-png \
