@@ -2,7 +2,7 @@
 # Date created:		9 March 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/misc/vera/Makefile,v 1.5 2000/04/14 08:46:58 asami Exp $
+# $FreeBSD: ports/misc/vera/Makefile,v 1.6 2000/07/02 15:23:46 sada Exp $
 #
 
 PORTNAME=	vera
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	vera
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 do-build:
 		@ cd ${WRKSRC} && makeinfo vera.texi

@@ -2,7 +2,7 @@
 # Date created:				April 5th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.16 2000/10/23 21:03:03 will Exp $
+# $FreeBSD: ports/net/p5-Net-DNS/Makefile,v 1.17 2000/10/24 22:39:57 will Exp $
 #
 
 PORTNAME=	Net-DNS
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		Sa   1 Feb 1997 14:46:05 MET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11-wm/fvwm95/Makefile,v 1.26 2000/04/10 19:49:51 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/fvwm95/Makefile,v 1.27 2000/08/03 09:28:01 asami Exp $
 #
 
 PORTNAME=	fvwm95
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://mitac11.uia.ac.be/pub/fvwm95/
 DISTNAME=	${PKGNAME}-Autoconf
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/librplay.a:${PORTSDIR}/audio/rplay
 RUN_DEPENDS=	${X11BASE}/icons/chuck.xpm:${PORTSDIR}/x11/fbsd-icons

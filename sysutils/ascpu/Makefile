@@ -2,7 +2,7 @@
 # Date created:         18 February 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.9 2000/07/04 10:09:51 sobomax Exp $
+# $FreeBSD: ports/sysutils/ascpu/Makefile,v 1.10 2000/08/03 09:26:15 asami Exp $
 #
 
 PORTNAME=	ascpu
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils afterstep
 MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/ascpu/	\
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 

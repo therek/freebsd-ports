@@ -2,7 +2,7 @@
 # Date created:		5 February 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.8 2000/07/19 13:32:01 alex Exp $
+# $FreeBSD: ports/x11-fm/xnc/Makefile,v 1.9 2000/09/25 12:21:42 asami Exp $
 #
 
 PORTNAME=	xnc
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.xnc.dubna.su/src/ \
 MASTER_SITE_SUBDIR=	X11/desktop
 DISTFILES=	${DISTNAME}.src.tar.gz
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 # xnc will use the following programs if you have them installed.
 #RUN_DEPENDS=	zip:${PORTSDIR}/archivers/zip		\

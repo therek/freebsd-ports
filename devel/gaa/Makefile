@@ -2,7 +2,7 @@
 # Date created:		2 February 1999
 # Whom:			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/devel/gaa/Makefile,v 1.3 1999/12/24 04:51:17 steve Exp $
+# $FreeBSD: ports/devel/gaa/Makefile,v 1.4 2000/04/11 21:28:00 mharo Exp $
 #
 
 PORTNAME=	gaa
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

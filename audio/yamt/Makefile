@@ -2,7 +2,7 @@
 # Date created:			9 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/audio/yamt/Makefile,v 1.7 2000/07/03 12:30:01 sobomax Exp $
+# $FreeBSD: ports/audio/yamt/Makefile,v 1.8 2000/10/05 07:10:24 reg Exp $
 #
 
 PORTNAME=	yamt
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				11 February 1999
 # Whom:                			Dima Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.17 2000/08/03 09:27:38 asami Exp $
+# $FreeBSD: ports/x11-toolkits/fltk/Makefile,v 1.18 2000/08/25 18:24:47 knu Exp $
 #
 
 PORTNAME=	fltk
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.fltk.org/pub/fltk/${VERSION}/ \
 		ftp://ftp.kddlabs.co.jp/pub/lang/fltk/${VERSION}/
 DISTNAME=	${PORTNAME}-${VERSION}-source
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 .if defined(WITH_XUNICODE)
 PATCH_VERSION=	20000625

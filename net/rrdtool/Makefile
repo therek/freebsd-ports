@@ -2,7 +2,7 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.15 2000/07/31 16:57:01 sobomax Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.16 2000/10/04 15:03:01 kevlo Exp $
 #
 
 PORTNAME=	rrdtool
@@ -10,7 +10,7 @@ PORTVERSION=	1.0.28
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 MAKE_ENV+=	PERL=${PERL}

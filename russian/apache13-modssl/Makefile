@@ -2,7 +2,7 @@
 # Date created:		7 July 2000 1:05 MSD
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.6 2000/09/16 13:12:33 jedgar Exp $
+# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.7 2000/09/22 01:58:59 kris Exp $
 #
 
 PORTNAME=	apache+mod_ssl
@@ -24,7 +24,7 @@ DISTNAME=	apache_${VERSION_APACHE}rusPL${RA_VERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		mod_ssl-${VERSION_MODSSL}-${VERSION_APACHE}${EXTRACT_SUFX}
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 BUILD_DEPENDS=	mm-config:${PORTSDIR}/devel/mm \
 		${LOCALBASE}/lib/libmm.a:${PORTSDIR}/devel/mm

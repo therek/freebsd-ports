@@ -2,7 +2,7 @@
 # Date created:		18 February 1995
 # Whom:			Gennady Sorokopud <gena@netvisions.net.il>
 #
-# $FreeBSD: ports/net/scotty/Makefile,v 1.42 2000/06/14 18:37:20 will Exp $
+# $FreeBSD: ports/net/scotty/Makefile,v 1.43 2000/08/14 03:54:00 kris Exp $
 #
 
 PORTNAME=	scotty
@@ -10,7 +10,7 @@ PORTVERSION=	2.1.10
 CATEGORIES=	net tk82
 MASTER_SITES=	ftp://ftp.ibr.cs.tu-bs.de/pub/local/tkined/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

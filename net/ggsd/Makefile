@@ -2,7 +2,7 @@
 # Date created:				14 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/ggsd/Makefile,v 1.10 2000/07/07 19:58:55 steve Exp $
+# $FreeBSD: ports/net/ggsd/Makefile,v 1.11 2000/10/05 06:42:15 reg Exp $
 #
 
 PORTNAME=	ggsd
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	billf
 DISTNAME=	ggsd
 EXTRACT_SUFX=	.tar
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 EXTRACT_CMD=	${TAR}
 EXTRACT_BEFORE_ARGS=	-xf

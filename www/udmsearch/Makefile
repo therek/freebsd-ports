@@ -2,7 +2,7 @@
 # Date created:		11/29/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/udmsearch/Makefile,v 1.10 2000/08/26 20:14:13 steve Exp $
+# $FreeBSD: ports/www/udmsearch/Makefile,v 1.11 2000/10/13 20:23:05 ade Exp $
 #
 
 PORTNAME=	udmsearch
@@ -12,7 +12,7 @@ MASTER_SITES=	http://mysearch.udm.net/Download/	\
 		ftp://ftp.izhcom.ru/pub/unix/UdmSearch/	\
 		http://mirror.kuenzler.ch/udmsearch/Download/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 MAN1=		indexer.1
 MAN5=		indexer.conf.5

@@ -2,7 +2,7 @@
 # Date created:		31 January 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/www/webcrawl/Makefile,v 1.3 1999/08/31 02:43:28 peter Exp $
+# $FreeBSD: ports/www/webcrawl/Makefile,v 1.4 2000/04/10 00:07:15 cpiazza Exp $
 #
 
 PORTNAME=	webcrawl
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/mirroring
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 ALL_TARGET=
 

@@ -2,7 +2,7 @@
 # Date created:			3 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.2 2000/04/10 00:06:32 cpiazza Exp $
+# $FreeBSD: ports/www/p5-HTML-Summary/Makefile,v 1.3 2000/06/17 02:37:11 will Exp $
 #
 
 PORTNAME=	HTML-Summary
@@ -12,7 +12,7 @@ MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/TreeBuilder.pm:${PORTSDIR}/www/p5-HTML-Tree
 

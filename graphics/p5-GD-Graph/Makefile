@@ -2,7 +2,7 @@
 # Date created:				21 February 2000
 # Whom:	      				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/graphics/p5-GD-Graph/Makefile,v 1.3 2000/04/23 12:24:29 vanilla Exp $
+# $FreeBSD: ports/graphics/p5-GD-Graph/Makefile,v 1.4 2000/11/12 02:38:20 vanilla Exp $
 #
 
 PORTNAME=	GD-Graph
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	GD
 PKGNAMEPREFIX=	p5-
 DISTNAME=	GDGraph-${PORTVERSION}
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/GD.pm:${PORTSDIR}/graphics/p5-GD \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/GD/Text/Align.pm:${PORTSDIR}/graphics/p5-GD-TextUtil

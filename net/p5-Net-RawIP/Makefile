@@ -2,7 +2,7 @@
 # Date created:				18 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.5 2000/04/09 18:12:52 cpiazza Exp $
+# $FreeBSD: ports/net/p5-Net-RawIP/Makefile,v 1.6 2000/06/17 02:36:37 will Exp $
 #
 
 PORTNAME=	Net-RawIP
@@ -14,7 +14,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN} \
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 MAN3=		Net::RawIP.3 Net::RawIP::libpcap.3

@@ -2,7 +2,7 @@
 # Date created:		21 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD: ports/www/links/Makefile,v 1.4 2000/04/10 00:05:40 cpiazza Exp $
+# $FreeBSD: ports/www/links/Makefile,v 1.5 2000/07/11 14:22:19 kevlo Exp $
 #
 
 PORTNAME=	links
@@ -12,7 +12,7 @@ MASTER_SITES=	http://artax.karlin.mff.cuni.cz/~mikulas/vyplody/links/download/ \
 		http://www.add.com.pl/links/download/ \
 		http://ice.dammit.lt/links/download/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				12 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.9 2000/07/03 12:33:49 sobomax Exp $
+# $FreeBSD: ports/x11-wm/flwm/Makefile,v 1.10 2000/09/20 14:22:05 patrick Exp $
 #
 
 PORTNAME=	flwm
@@ -13,7 +13,7 @@ MASTER_SITES=	http://flwm.sourceforge.net/ \
 		ftp://ftp.sai.msu.su/pub/X11/win_man/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 LIB_DEPENDS=	fltk.1:${PORTSDIR}/x11-toolkits/fltk
 

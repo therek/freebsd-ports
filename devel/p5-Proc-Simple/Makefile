@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Proc-Simple/Makefile,v 1.8 2000/10/23 21:02:55 will Exp $
+# $FreeBSD: ports/devel/p5-Proc-Simple/Makefile,v 1.9 2000/10/24 22:39:51 will Exp $
 #
 
 PORTNAME=	Proc-Simple
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Proc
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	YES
 

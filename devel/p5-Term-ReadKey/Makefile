@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Term-ReadKey/Makefile,v 1.11 2000/10/23 21:02:57 will Exp $
+# $FreeBSD: ports/devel/p5-Term-ReadKey/Makefile,v 1.12 2000/10/24 22:39:52 will Exp $
 #
 
 PORTNAME=	Term-ReadKey
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	Term
 PKGNAMEPREFIX=	p5-
 DISTNAME=	TermReadKey-${PORTVERSION}
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 

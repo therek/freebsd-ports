@@ -2,7 +2,7 @@
 # Date created:         25 December 1998
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/www/calamaris/Makefile,v 1.11 2000/10/13 20:33:11 ade Exp $
+# $FreeBSD: ports/www/calamaris/Makefile,v 1.12 2000/11/07 01:36:34 steve Exp $
 #
 
 PORTNAME=	calamaris
@@ -11,7 +11,7 @@ CATEGORIES=	www textproc
 MASTER_SITES=	http://cord.de/tools/squid/calamaris/ \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:				June 26th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/p5-Locale-Codes/Makefile,v 1.9 2000/10/23 21:03:01 will Exp $
+# $FreeBSD: ports/misc/p5-Locale-Codes/Makefile,v 1.10 2000/10/24 22:39:53 will Exp $
 #
 
 PORTNAME=	Locale-Codes
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Locale
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	YES
 

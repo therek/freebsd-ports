@@ -2,7 +2,7 @@
 # Date created:		20 February 1997
 # Whom:			chris@vader.org
 #
-# $FreeBSD: ports/net/traceroute/Makefile,v 1.8 2000/04/09 18:13:49 cpiazza Exp $
+# $FreeBSD: ports/net/traceroute/Makefile,v 1.9 2000/04/30 00:09:53 steve Exp $
 #
 
 PORTNAME=	traceroute
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.nikhef.nl/pub/network/	\
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 RELEASEDATE=	991603
 NO_WRKSUBDIR=	yes

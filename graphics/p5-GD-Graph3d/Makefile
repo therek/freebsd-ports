@@ -2,7 +2,7 @@
 # Date created:				10 April 2000
 # Whom:	      				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/graphics/p5-GD-Graph3d/Makefile,v 1.2 2000/06/17 02:36:43 will Exp $
+# $FreeBSD: ports/graphics/p5-GD-Graph3d/Makefile,v 1.3 2000/11/12 02:38:55 vanilla Exp $
 #
 
 PORTNAME=	GD-Graph3d
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	GD
 DISTNAME=	GDGraph3d-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/GD/Graph.pm:${PORTSDIR}/graphics/p5-GD-Graph
 

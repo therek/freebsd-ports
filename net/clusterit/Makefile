@@ -2,7 +2,7 @@
 # Date created:			4 February 1999
 # Whom:				Dima Sivachenko
 #
-# $FreeBSD: ports/net/clusterit/Makefile,v 1.3 2000/01/22 21:02:07 mharo Exp $
+# $FreeBSD: ports/net/clusterit/Makefile,v 1.4 2000/04/09 18:10:29 cpiazza Exp $
 #
 
 PORTNAME=	clusterit
@@ -11,7 +11,7 @@ CATEGORIES=	net devel
 MASTER_SITES=	http://www.inficad.com/~garbled/ \
 		ftp://ftp.chg.ru/pub/prog/parallel/tools/clusterit/
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 MAN1=		barrier.1 barrierd.1 dsh.1 run.1 seq.1 dshbak.1 pcp.1 pdf.1\
 		prm.1

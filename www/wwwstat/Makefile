@@ -2,7 +2,7 @@
 # Date created:			So   2 M-Aär 1997 18:10:49 MET$)B
 # Whom:				Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/wwwstat/Makefile,v 1.17 2000/02/21 12:53:07 andreas Exp $
+# $FreeBSD: ports/www/wwwstat/Makefile,v 1.18 2000/04/10 00:07:27 cpiazza Exp $
 #
 
 PORTNAME=	wwwstat
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}-2.0
 PATCH_SITES=	${MASTER_SITES}
 PATCHFILES=	patch-2.01.txt
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=    ${LOCALBASE}/etc/apache/httpd.conf:${PORTSDIR}/www/apache13
 

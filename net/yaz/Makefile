@@ -2,7 +2,7 @@
 # Date created:		16 Sep 2000
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/yaz/Makefile,v 1.3 2000/11/01 23:39:07 jeh Exp $
+# $FreeBSD: ports/net/yaz/Makefile,v 1.4 2000/11/11 13:51:33 jeh Exp $
 #
 
 PORTNAME=	yaz
@@ -12,7 +12,7 @@ MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	jeh
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 

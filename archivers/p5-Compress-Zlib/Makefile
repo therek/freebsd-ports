@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/p5-Compress-Zlib/Makefile,v 1.19 2000/10/23 21:02:41 will Exp $
+# $FreeBSD: ports/archivers/p5-Compress-Zlib/Makefile,v 1.20 2000/10/24 22:39:49 will Exp $
 #
 
 PORTNAME=	Compress-Zlib
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Compress
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	YES
 

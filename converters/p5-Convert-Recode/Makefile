@@ -2,7 +2,7 @@
 # Date created:				17 January 2000
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.3 2000/04/13 06:20:09 asami Exp $
+# $FreeBSD: ports/converters/p5-Convert-Recode/Makefile,v 1.4 2000/06/17 02:36:28 will Exp $
 #
 
 PORTNAME=	Convert-Recode
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 RUN_DEPENDS=	recode:${PORTSDIR}/converters/recode
 

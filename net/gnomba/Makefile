@@ -2,7 +2,7 @@
 # Date created:			10 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/gnomba/Makefile,v 1.3 2000/06/01 16:25:25 ade Exp $
+# $FreeBSD: ports/net/gnomba/Makefile,v 1.4 2000/10/05 07:17:11 reg Exp $
 #
 
 PORTNAME=	gnomba
@@ -11,7 +11,7 @@ CATEGORIES=	net gnome
 MASTER_SITES=	http://gnomba.darkcorner.net/tars/ \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

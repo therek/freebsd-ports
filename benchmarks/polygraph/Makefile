@@ -2,7 +2,7 @@
 # Date created:         3 March 1999
 # Whom:                 Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/benchmarks/polygraph/Makefile,v 1.5 1999/12/30 23:55:53 steve Exp $
+# $FreeBSD: ports/benchmarks/polygraph/Makefile,v 1.6 2000/04/08 22:04:24 mharo Exp $
 #
 
 PORTNAME=	polygraph
@@ -12,7 +12,7 @@ MASTER_SITES=	http://polygraph.ircache.net/sources/tars/ \
 		http://www.chg.ru/~dima/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/polygraph
 

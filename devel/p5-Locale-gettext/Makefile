@@ -2,7 +2,7 @@
 # Date created:			1 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.2 2000/04/11 21:29:43 mharo Exp $
+# $FreeBSD: ports/devel/p5-Locale-gettext/Makefile,v 1.3 2000/06/17 02:37:03 will Exp $
 #
 
 PORTNAME=	gettext
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Locale
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_PERL5=	yes
 

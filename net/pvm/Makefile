@@ -2,7 +2,7 @@
 # Date created:				11 March 1999
 # Whom:					Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/pvm/Makefile,v 1.4 2000/03/29 21:24:05 will Exp $
+# $FreeBSD: ports/net/pvm/Makefile,v 1.5 2000/04/09 18:13:14 cpiazza Exp $
 #
 
 PORTNAME=	pvm
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.netlib.org/pvm3/	\
 DISTNAME=	pvm3.4.3
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 USE_XLIB=	yes
 

@@ -2,7 +2,7 @@
 # Date created:         19 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD: ports/net/xferstats/Makefile,v 1.8 2000/04/09 18:13:59 cpiazza Exp $
+# $FreeBSD: ports/net/xferstats/Makefile,v 1.9 2000/10/05 06:22:59 reg Exp $
 #
 
 PORTNAME=	xferstats
@@ -11,7 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.wu-ftpd.org/pub/support/	\
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
 
-MAINTAINER=	dima@Chg.RU
+MAINTAINER=	demon@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xferstats
 

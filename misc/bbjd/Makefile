@@ -2,7 +2,7 @@
 # Date created:		3 February 1999
 # Whom:			Dima Sivachenko
 #
-# $FreeBSD: ports/misc/bbjd/Makefile,v 1.4 2000/04/14 08:45:22 asami Exp $
+# $FreeBSD: ports/misc/bbjd/Makefile,v 1.5 2000/10/08 10:22:21 asami Exp $
 #
 
 PORTNAME=	bbjd
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=	dima@chg.ru
+MAINTAINER=	demon@FreeBSD.org
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/bbjd
