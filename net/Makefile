@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.483 2001/03/13 10:42:25 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.484 2001/03/13 21:12:14 andreas Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -198,6 +198,7 @@
     SUBDIR += oproute
     SUBDIR += p0f
     SUBDIR += p5-Archie
+    SUBDIR += p5-Cflow
     SUBDIR += p5-Frontier-RPC
     SUBDIR += p5-Mon
     SUBDIR += p5-Net
