@@ -2,15 +2,15 @@
 # Date created:				5 Jan 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/ytree/Makefile,v 1.13 2001/04/02 09:24:27 mharo Exp $
+# $FreeBSD: ports/misc/ytree/Makefile,v 1.14 2001/06/12 08:33:30 markp Exp $
 #
 
 PORTNAME=	ytree
-PORTVERSION=	1.73
+PORTVERSION=	1.74
 CATEGORIES=	misc
 MASTER_SITES=	http://www.han.de/~werner/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	olgeni@FreeBSD.org
 
 ALL_TARGET=	ytree
 MAN1=		ytree.1
@@ -24,6 +24,9 @@ do-install:
 .for file in CHANGES README THANKS
 	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/ytree
 .endfor
+	@if [ ! -e ${PREFIX}/etc/ytree.conf ]; then \
+		${INSTALL_DATA} ${WRKSRC}/ytree.conf ${PREFIX}/etc/ytree.conf; \
+	fi
 .endif
 
 .include <bsd.port.mk>
