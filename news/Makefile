@@ -1,4 +1,4 @@
-# $FreeBSD: ports/news/Makefile,v 1.66 2001/05/24 11:07:10 dinoex Exp $
+# $FreeBSD: ports/news/Makefile,v 1.67 2001/07/06 17:29:30 ijliao Exp $
 #
 
     SUBDIR += atp
@@ -54,6 +54,7 @@
     SUBDIR += ubh
     SUBDIR += unpost
     SUBDIR += xmitbin
+    SUBDIR += xrn
     SUBDIR += xvnews
 
 .include <bsd.port.subdir.mk>
