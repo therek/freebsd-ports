@@ -2,13 +2,14 @@
 # Date created:		09 September 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/scanssh/Makefile,v 1.4 2001/03/10 03:17:11 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scanssh
-PORTVERSION=	1.55
+PORTVERSION=	1.60b
 CATEGORIES=	security net
 MASTER_SITES=	http://www.monkey.org/~provos/
+DISTNAME=	${PORTNAME}-1.6b
 
 MAINTAINER=	kris@FreeBSD.org
 
