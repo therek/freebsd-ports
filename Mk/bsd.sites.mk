@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.266 2004/12/10 12:02:26 sem Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.267 2004/12/20 10:06:34 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -863,7 +863,7 @@ MASTER_SITE_SUSE+= 	\
 	ftp://ftp.unina.it/pub/linux/distributions/SuSE/%SUBDIR%/ \
 	ftp://ftp.uniroma2.it/Linux/suse/pub/suse/%SUBDIR%/ \
 	ftp://ftp.riken.jp/Linux/suse/%SUBDIR%/ \
-	http.riken.jp/Linux/suse/%SUBDIR%/ \
+	http://http.riken.jp/Linux/suse/%SUBDIR%/ \
 	ftp://ftp.kddilabs.jp/Linux/packages/SuSE/%SUBDIR%/ \
 	ftp://ftp.novell.co.jp/pub/suse/suse/%SUBDIR%/ \
 	ftp://ftp.kreonet.re.kr/pub/Linux/suse/%SUBDIR%/ \
