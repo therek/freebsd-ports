@@ -2,7 +2,7 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.20 1999/12/30 22:53:15 nik Exp $
+# $FreeBSD: ports/textproc/docproj/Makefile,v 1.21 2000/04/09 21:52:28 cpiazza Exp $
 #
 
 PORTNAME=	docproj
@@ -14,7 +14,6 @@ DISTFILES=	# empty
 MAINTAINER=	nik@freebsd.org
 
 RUN_DEPENDS=	instant:${PORTSDIR}/textproc/sgmlformat \
-		jade:${PORTSDIR}/textproc/jade \
 		tidy:${PORTSDIR}/www/tidy \
 		w3m:${PORTSDIR}/www/w3m \
 		${PREFIX}/share/sgml/docbook/dsssl/modular:${PORTSDIR}/textproc/dsssl-docbook-modular \
@@ -39,6 +38,16 @@ RUN_DEPENDS+= ${PREFIX}/share/texmf/web2c/jadetex.fmt:${PORTSDIR}/print/jadetex
 
 EXTRACT_ONLY=	# empty
 NO_BUILD=	yes
+
+.if defined(WITH_OPENJADE)
+RUN_DEPENDS+=	openjade:${PORTSDIR}/textproc/openjade
+.else
+RUN_DEPENDS+=	jade:${PORTSDIR}/textproc/jade
+.endif
+
+.if ${MACHINE_ARCH} == "alpha"
+WITH_OPENJADE=	yes
+.endif
 
 do-install:	# empty
 
