@@ -2,11 +2,11 @@
 # Date created:		13 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ruby-urb/Makefile,v 1.1 2001/07/12 19:11:08 knu Exp $
 #
 
 PORTNAME=	urb
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	net ruby
 MASTER_SITES=	http://arika.org/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
