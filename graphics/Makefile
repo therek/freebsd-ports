@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.338 2001/08/18 06:39:41 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.339 2001/08/18 09:07:48 ijliao Exp $
 #
 
     SUBDIR += 4va
@@ -111,7 +111,6 @@
     SUBDIR += juno-2
     SUBDIR += kdc2tiff
     SUBDIR += kdegraphics2
-    SUBDIR += killustrator
     SUBDIR += kisomandel
     SUBDIR += kplot3d
     SUBDIR += kuickshow
