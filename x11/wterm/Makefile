@@ -2,16 +2,14 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.17 2001/03/10 13:01:25 sobomax Exp $
 #
 
 PORTNAME=	wterm
 PORTVERSION=	6.2.8a2
 CATEGORIES=	x11
-MASTER_SITES= 	http://wm.current.nu/files/ \
-		ftp://ftp.sunsite.auc.dk/disk1/linuxberg.com/files/x11/system/ \
-		ftp://ftp.vision.net.au/ftp7/linuxberg/files/x11/system/ \
-		ftp://ftp.cadvision.com/pub/linuxberg/files/x11/system/
+MASTER_SITES= 	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	markp
 
 MAINTAINER=	treif@mayn.de
 
