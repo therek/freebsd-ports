@@ -4,7 +4,7 @@
 # based on the OpenBSD port
 #
 # $OpenBSD: Makefile,v 1.1.1.1 2000/11/27 15:56:03 avsm Exp $
-# $FreeBSD: ports/security/mcrypt/Makefile,v 1.3 2001/04/09 23:43:49 trevor Exp $
+# $FreeBSD: ports/security/mcrypt/Makefile,v 1.4 2001/06/01 15:03:41 trevor Exp $
 #
 
 PORTNAME=	mcrypt
@@ -36,7 +36,7 @@ USE_LIBTOOL=		yes
 pre-install:
 	${ECHO} bin/${PORTNAME} > ${PLIST}
 	${ECHO} bin/mdecrypt >> ${PLIST}
-.for i in cz el pl
+.for i in cs el pl
 	${ECHO} share/locale/${i}/LC_MESSAGES/mcrypt.mo >> ${PLIST}
 .endfor
 .if !defined(NOPORTDOCS)
