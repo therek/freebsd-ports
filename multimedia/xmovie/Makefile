@@ -2,7 +2,7 @@
 # Date created:		20 December 1998
 # Whom:			MIHIRA Sanpei Yoshiro <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.4 2000/04/14 10:47:56 asami Exp $
+# $FreeBSD: ports/graphics/xmovie/Makefile,v 1.5 2000/04/22 20:40:16 will Exp $
 #
 
 PORTNAME=	xmovie
@@ -30,7 +30,7 @@ USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/xmovie-i586
 
 RPM_MIRRORS=            \
-	ftp://ftp.cdrom.com/pub/linux/redhat/__DIR__/ \
+	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
 	ftp://ftp.redhat.com/redhat/__DIR__/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/__DIR__/ \
 	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \

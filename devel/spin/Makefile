@@ -2,7 +2,7 @@
 # Date created:		Oct 23, 1997
 # Whom:			jhanna@home.com
 #
-# $FreeBSD: ports/math/spin/Makefile,v 1.10 2000/02/09 13:49:05 jedgar Exp $
+# $FreeBSD: ports/math/spin/Makefile,v 1.11 2000/04/14 07:20:41 asami Exp $
 #
 
 PORTNAME=	spin
@@ -10,7 +10,7 @@ PORTVERSION=	3.39
 CATEGORIES=	math
 MASTER_SITES=	ftp://netlib.bell-labs.com/netlib/spin/ \
 		ftp://www.netlib.org/spin/ \
-		ftp://wcarchive.cdrom.com/pub/netlib/spin/
+		ftp://ftp.freesoftware.com/pub/netlib/spin/
 DISTFILES=	spin339.tar.gz html.tar.gz
 
 MAINTAINER=	jhanna@home.com

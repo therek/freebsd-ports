@@ -2,13 +2,13 @@
 # Date created:		20 Oct 1996
 # Whom:			Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/txtmerge/Makefile,v 1.8 2000/01/07 02:27:16 nakai Exp $
+# $FreeBSD: ports/graphics/txtmerge/Makefile,v 1.9 2000/04/14 10:47:33 asami Exp $
 #
 
 PORTNAME=	txtmerge
 PORTVERSION=	1.01
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/unixfreeware/graphics/ \
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/unixfreeware/graphics/ \
 		ftp://ftp.math.bme.hu/pub/utils/xanim/ \
 		ftp://ftp.kddlabs.co.jp/pub/graphics/gifanim/
 DISTNAME=	txtmerge101

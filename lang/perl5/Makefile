@@ -2,14 +2,14 @@
 # Date created:		16 April 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/lang/perl5/Makefile,v 1.32 2000/04/12 06:19:51 obrien Exp $
+# $FreeBSD: ports/lang/perl5/Makefile,v 1.33 2000/04/13 18:57:37 asami Exp $
 #
 
 PORTNAME=	perl
 PORTVERSION=	5.00502
 CATEGORIES=	lang devel perl5
 MASTER_SITES=	ftp://ftp.digital.com/pub/plan/perl/CPAN/src/5.0/ \
-		ftp://ftp.cdrom.com/pub/perl/CPAN/src/5.0/
+		ftp://ftp.freesoftware.com/pub/perl/CPAN/src/5.0/
 DISTNAME=	perl5.005_02
 
 MAINTAINER=	markm@FreeBSD.org

@@ -2,13 +2,13 @@
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/games/xneko/Makefile,v 1.11 1999/08/31 06:44:46 mharo Exp $
+# $FreeBSD: ports/games/xneko/Makefile,v 1.12 2000/04/14 12:27:50 asami Exp $
 #
 
 PORTNAME=	xneko
 PORTVERSION=	4.4
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/bsd-sources/4.4BSD-Lite/usr/src/games/
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/4.4BSD-Lite/4.4BSD-Lite/usr/src/games/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	markm@FreeBSD.org

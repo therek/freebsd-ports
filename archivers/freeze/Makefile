@@ -2,13 +2,13 @@
 # Date created:         20 Jul 1996
 # Whom:                 lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/archivers/freeze/Makefile,v 1.5 1999/08/25 04:25:05 obrien Exp $
+# $FreeBSD: ports/archivers/freeze/Makefile,v 1.6 2000/04/08 23:17:43 mharo Exp $
 #
 
 PORTNAME=       freeze
 PORTVERSION=	2.5
 CATEGORIES=	archivers
-MASTER_SITES=	ftp://ftp.cdrom.com/pub/unixfreeware/archive/ \
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/unixfreeware/archive/ \
 		ftp://ftp.warwick.ac.uk/pub/compression/
 
 MAINTAINER=     lukin@okbmei.msk.su

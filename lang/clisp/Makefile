@@ -2,14 +2,14 @@
 # Date created:         Feb  5 2000
 # Whom:                 Jeff Brown <jabrown@caida.org>
 #
-# $FreeBSD: ports/lang/clisp/Makefile,v 1.2 2000/04/12 06:17:59 obrien Exp $
+# $FreeBSD: ports/lang/clisp/Makefile,v 1.3 2000/05/01 01:44:38 steve Exp $
 #
 
 PORTNAME=	clisp
 PORTVERSION=	2000.03.06
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp2.cons.org/pub/lisp/clisp/source/ \
-		ftp://ftp.cdrom.com/pub/lisp/clisp/source/
+		ftp://ftp.freesoftware.com/pub/lisp/clisp/source/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./-/g}
 
 MAINTAINER=	jabrown@caida.org
