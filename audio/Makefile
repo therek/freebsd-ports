@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.191 2000/11/03 17:08:14 fenner Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.192 2000/12/04 09:52:10 sobomax Exp $
 #
 
     SUBDIR += afsp
@@ -59,6 +59,7 @@
     SUBDIR += gqmpeg
     SUBDIR += gramofile
     SUBDIR += grip
+    SUBDIR += gsi
     SUBDIR += gsm
     SUBDIR += holyshout
     SUBDIR += icecast
