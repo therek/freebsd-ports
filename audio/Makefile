@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.246 2001/08/05 17:04:27 ijliao Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.247 2001/08/23 07:30:32 knu Exp $
 #
 
     SUBDIR += Maaate
@@ -131,6 +131,7 @@
     SUBDIR += musicbrainz
     SUBDIR += mutemix
     SUBDIR += mxv
+    SUBDIR += mziq
     SUBDIR += napster
     SUBDIR += nas
     SUBDIR += normalize
