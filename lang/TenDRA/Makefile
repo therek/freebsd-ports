@@ -1,8 +1,9 @@
+# ex:ts=8
 # New ports collection makefile for:	TenDRA
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.14 2000/07/03 02:52:33 kris Exp $
+# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.15 2000/08/07 18:51:02 rnordier Exp $
 #
 
 PORTNAME=	TenDRA
@@ -12,7 +13,7 @@ MASTER_SITES=	ftp://ftp.uni-trier.de/pub/languages/c/implementation/TenDRA/ \
 		ftp://ftp.fh-wiesbaden.de/pub/Languages/C/TenDRA/ \
 		ftp://ftp.mayn.de/pub/unix/devel/compiler/tendra/
 
-MAINTAINER=	rnordier@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 
