@@ -2,11 +2,11 @@
 # Date created:         14 Jul 2000
 # Whom:                 JunSeon Oh <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.3 2000/09/05 01:26:13 steve Exp $
+# $FreeBSD: ports/www/mod_fastcgi/Makefile,v 1.4 2000/09/05 09:04:27 steve Exp $
 #
 
 PORTNAME=	mod_fastcgi
-PORTVERSION=	2.2.8
+PORTVERSION=	2.2.10
 CATEGORIES=	www
 MASTER_SITES=	http://www.fastcgi.com/dist/
 DISTNAME=	mod_fastcgi_${PORTVERSION}
