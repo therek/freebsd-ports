@@ -3,11 +3,11 @@
 # Date Created:		23 June 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/ftp/downloader/Makefile,v 1.28 2001/06/25 14:27:41 ijliao Exp $
+# $FreeBSD: ports/ftp/downloader/Makefile,v 1.29 2001/07/12 16:08:26 ijliao Exp $
 #
 
 PORTNAME=	downloader
-PORTVERSION=	1.27
+PORTVERSION=	1.29
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.krasu.ru/soft/chuchelo/files/ \
 		ftp://ftp.server51.freshmeat.net/pub/d4x/ \
