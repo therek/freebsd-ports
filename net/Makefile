@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.429 2000/11/11 11:56:47 obrien Exp $
+# $FreeBSD: ports/net/Makefile,v 1.430 2000/11/15 18:26:28 sobomax Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -294,6 +294,7 @@
     SUBDIR += yaz
     SUBDIR += ytalk
     SUBDIR += zebra
+    SUBDIR += zebra-server
     SUBDIR += zephyr
     SUBDIR += ztelnet
 
