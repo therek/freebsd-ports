@@ -2,22 +2,21 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.7 2000/03/23 02:17:31 kris Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.8 2000/04/09 18:11:20 cpiazza Exp $
 #
 # View this file with tabstop=4
 #
 
 PORTNAME=		Generic-NQS
-PORTVERSION=	3.50.6
+PORTVERSION=	3.50.9
 CATEGORIES=		net
 MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
 MAINTAINER=		tony.maher@ebioinformatics.com
 
-FORBIDDEN=		"Local root compromise"
-
 Y2K=			http://www.gnqs.org/Year2000.htm
 
+USE_BZIP2=	yes
 IS_INTERACTIVE=	yes
 NO_PACKAGE=		have to build on site due to the descriptors created in\
 				/var/spool/nqs (default location) and the configuration\
