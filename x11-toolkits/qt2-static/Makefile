@@ -2,13 +2,13 @@
 # Date created:		22 February 2001
 # Whom:			alex
 #
-# $FreeBSD: ports/x11-toolkits/qt2-static/Makefile,v 1.1 2001/02/22 14:18:24 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qt
 PKGNAMESUFFIX=	-static
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	kde@FreeBSD.org
 
 WANT_STATIC=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.55 2001/08/15 16:25:09 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdemultimedia
@@ -11,7 +11,7 @@ CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 
 RUN_DEPENDS=	xanim:${PORTSDIR}/graphics/xanim
 

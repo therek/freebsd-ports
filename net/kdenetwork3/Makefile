@@ -2,7 +2,7 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.62 2001/08/15 16:25:10 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdenetwork
@@ -11,7 +11,7 @@ CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
 
-MAINTAINER=	will@FreeBSD.org
+MAINTAINER=	kde@FreeBSD.org
 
 LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib
 
