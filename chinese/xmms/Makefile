@@ -2,12 +2,12 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/chinese/xmms/Makefile,v 1.5 2000/12/06 13:24:42 clive Exp $
+# $FreeBSD$
 #
 
-CATEGORIES=	chinese
+CATEGORIES=	chinese multimedia
 
-MASTERDIR=	${.CURDIR}/../../audio/xmms
+MASTERDIR=	${.CURDIR}/../../multimedia/xmms
 
 PATCH_SITES=	${MASTER_SITE_LOCAL}
 PATCH_SITE_SUBDIR=	sobomax
