@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.354 2001/06/14 07:51:20 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.355 2001/06/16 18:12:28 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -41,6 +41,7 @@
     SUBDIR += dejagnu
     SUBDIR += delay
     SUBDIR += diction
+    SUBDIR += dirtree
     SUBDIR += display
     SUBDIR += dnetc
     SUBDIR += dog
