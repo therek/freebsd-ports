@@ -2,7 +2,7 @@
 # Date created:				03/20/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.7 2000/06/20 13:37:38 nectar Exp $
+# $FreeBSD: ports/www/py-HTMLgen/Makefile,v 1.8 2000/07/21 20:30:20 nectar Exp $
 #
 
 PORTNAME=		py-HTMLgen
@@ -13,8 +13,7 @@ DISTNAME=		HTMLgen
 
 MAINTAINER=		nectar@FreeBSD.org
 
-BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
-RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+USE_PYTHON=		yes
 
 WRKSRC=			${WRKDIR}/HTMLgen
 PLIST=			${WRKDIR}/PLIST
