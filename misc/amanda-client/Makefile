@@ -2,13 +2,13 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24-client/Makefile,v 1.39 2001/04/25 00:20:05 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	${MASTERPORTNAME:S/-server/-client/g}
-PORTREVISION=	1
+PORTREVISION=	0
 
-MASTERDIR=	${.CURDIR}/../amanda24-server
+MASTERDIR=	${.CURDIR}/../amanda-server
 COMMENT=	${PKGDIR}/pkg-comment.client
 PKGINSTALL=	mustnotexist
 PLIST=		${PKGDIR}/pkg-plist.client
