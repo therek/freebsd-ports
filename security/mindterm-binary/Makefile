@@ -2,7 +2,7 @@
 # Date created:				22 Sep 2000
 # Whom:					alex@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/mindterm-binary/Makefile,v 1.1 2000/09/22 17:06:08 alex Exp $
 
 PORTNAME=	mindterm-binary
 PORTVERSION=	1.2.1
