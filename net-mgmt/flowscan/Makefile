@@ -2,7 +2,7 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.13 2001/03/25 16:56:55 andreas Exp $
+# $FreeBSD: ports/net/flowscan/Makefile,v 1.14 2001/03/25 20:38:28 andreas Exp $
 #
 
 PORTNAME=	flowscan
@@ -21,6 +21,7 @@ BUILD_DEPENDS=	ksh:${PORTSDIR}/shells/pdksh \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/ConfigReader/DirectiveStyle.pm:${PORTSDIR}/devel/p5-ConfigReader \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/HTML/Table.pm:${PORTSDIR}/www/p5-HTML-Table \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Cflow.pm:${PORTSDIR}/net/p5-Cflow
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Net/Patricia.pm:${PORTSDIR}/net/p5-Net-Patricia
 RUN_DEPENDS=	gmake:${PORTSDIR}/devel/gmake
 
 CFLOWD_FLOWSCAN_PATCH=	yes
