@@ -2,7 +2,7 @@
 # Date created:         Wed Dec 23 11:15:30 CET 1998
 # Whom:                 luigi@iet.unipi.it
 #
-# $FreeBSD: ports/audio/cdd/Makefile,v 1.3 1999/08/25 04:35:20 obrien Exp $
+# $FreeBSD: ports/audio/cdd/Makefile,v 1.4 2000/04/08 21:23:21 mharo Exp $
 #
 
 PORTNAME=	cdd
@@ -13,10 +13,16 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	luigi@iet.unipi.it
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 400000
+BROKEN=		pre-CAM SCSI layer
+.endif
+
 post-extract:
 	${CP} ${FILESDIR}/cdd_atapicmds.[ch] ${WRKSRC}
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/cdd ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
