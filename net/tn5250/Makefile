@@ -2,11 +2,11 @@
 # Date created:			20 January 2000
 # Whom:				Elias Mandouvalos <ocean@compulink.gr>
 #
-# $FreeBSD: ports/net/tn5250/Makefile,v 1.8 2000/06/16 21:51:46 asami Exp $
+# $FreeBSD: ports/net/tn5250/Makefile,v 1.9 2000/12/19 08:07:56 sobomax Exp $
 #
 
 PORTNAME=	tn5250
-PORTVERSION=	0.16.0
+PORTVERSION=	0.16.1
 CATEGORIES=	net
 MASTER_SITES=	http://cvs.cleveland.lug.net/downloads/tn5250/
 
