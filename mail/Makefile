@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.152 2000/08/09 19:04:58 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.153 2000/08/09 19:09:00 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -9,6 +9,7 @@
     SUBDIR += biffer
     SUBDIR += bulk_mailer
     SUBDIR += cclient
+    SUBDIR += cclient-maildir
     SUBDIR += cmail
     SUBDIR += coolmail
     SUBDIR += courier-imap
