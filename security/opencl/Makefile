@@ -3,29 +3,29 @@
 # Date created:			Mar 3, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/opencl/Makefile,v 1.1 2001/03/02 19:15:56 ijliao Exp $
 #
 
 PORTNAME=	opencl
-PORTVERSION=	0.7.0
+PORTVERSION=	0.7.3
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	OpenCL-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_NEWGCC=	yes
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=	configure.pl
-CONFIGURE_ARGS=	--nodebug gcc-freebsd-generic
+CONFIGURE_ARGS=	gcc-freebsd-generic
 
 USE_GMAKE=	yes
 
 INSTALLS_SHLIB=	yes
 
-PLIST_SUB=	PORTVERSION=${PORTVERSION}
+PLIST_SUB=	PORTVERSION=0.7.2
 
 .include <bsd.port.mk>
