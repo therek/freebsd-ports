@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.161 2003/07/03 04:58:16 pat Exp $
+# $FreeBSD: ports/MOVED,v 1.162 2003/07/03 10:12:20 trevor Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -383,3 +383,4 @@ www/mozilla-headers-vendor|www/mozilla-headers|2003-07-01|vendor tree in sync wi
 www/skipstone||2003-07-01|port is more than a year old with no update in sight
 graphics/glass||2003-07-03|useless
 www/linux-phoenix|www/linux-mozillafirebird|2003-07-03|legal problem with name
+graphics/kpovmodeler||2003-07-03|now part of kdegraphics
