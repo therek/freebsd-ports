@@ -2,11 +2,11 @@
 # Date created:		28 September 2000
 # Whom:			jasone
 #
-# $FreeBSD: ports/editors/zile/Makefile,v 1.8 2001/07/19 04:54:47 jasone Exp $
+# $FreeBSD: ports/editors/zile/Makefile,v 1.9 2001/08/01 10:21:41 jasone Exp $
 #
 
 PORTNAME=	zile
-PORTVERSION=	1.6
+PORTVERSION=	1.6.1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		http://prdownloads.sourceforge.net/zile/
