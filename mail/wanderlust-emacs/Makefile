@@ -3,7 +3,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.4 1999/08/25 06:50:56 obrien Exp $
 #
 
 DISTNAME=	wl-1.0.3
@@ -26,15 +26,15 @@ EMACS_LIBDIR=	share/emacs
 
 EMACS_CMD=	${PREFIX}/bin/${EMACS_NAME}-${EMACS_VER}
 
+BUILD_DEPENDS= 	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
+
 .if !defined(HAVE_COMMON_PORT)
 HAVE_COMMON_PORT=	no
 .endif
 .if (${HAVE_COMMON_PORT} == "yes")
 # depends on common port
-BUILD_DEPENDS=	${PKG_DBDIR}/${EMACS_PORT}-common-${MULE_VER}:${PORTSDIR}/editors/${EMACS_PORT}-common
 RUN_DEPENDS=	${PKG_DBDIR}/${EMACS_PORT}-common-${MULE_VER}:${PORTSDIR}/editors/${EMACS_PORT}-common
 .else
-BUILD_DEPENDS= 	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 RUN_DEPENDS=	${EMACS_CMD}:${PORTSDIR}/editors/${EMACS_PORT}
 .endif
 # depends on semi
