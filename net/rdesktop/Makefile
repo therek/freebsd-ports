@@ -2,11 +2,12 @@
 # Date created:               13 December 2000
 # Whom:                       mwest@uct.ac.za
 #
-# $FreeBSD: ports/net/rdesktop/Makefile,v 1.3 2001/08/18 23:24:24 ijliao Exp $
+# $FreeBSD: ports/net/rdesktop/Makefile,v 1.4 2001/08/28 13:47:14 assar Exp $
 #
 
 PORTNAME=	rdesktop
 PORTVERSION=	1.0.0.p19.7.2
+PORTREVISION=	1
 CATEGORIES=	net comms
 MASTER_SITES=	http://bibl4.oru.se/projects/rdesktop/dist/releases/
 DISTNAME=	rdesktop-1.0.0
