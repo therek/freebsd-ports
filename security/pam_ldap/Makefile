@@ -2,7 +2,7 @@
 # Date created:				26 May 2001
 # Whom:	      				Joe Clarke <marcus@marcuscom.com>
 #
-# $FreeBSD: ports/security/pam_ldap/Makefile,v 1.2 2001/06/11 20:11:24 dwcjr Exp $
+# $FreeBSD: ports/security/pam_ldap/Makefile,v 1.3 2001/06/20 18:42:25 unfurl Exp $
 #
 
 PORTNAME=	pam_ldap
@@ -10,7 +10,7 @@ PORTVERSION=	1.1.8
 CATEGORIES=	security net
 MASTER_SITES=	http://www.padl.com/download/ \
 		ftp://ftp.padl.com/pub/
-DISTNAME=      	pam_ldap-${PORTVERSION:S/.//g}
+DISTNAME=	pam_ldap-${PORTVERSION:S/.//g}
 
 MAINTAINER=	marcus@marcuscom.com
 
@@ -23,6 +23,7 @@ LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/openldap \
 .endif
 
 USE_AUTOCONF=	yes
+USE_AUTOMAKE=	yes
 CONFIGURE_ARGS=	--with-ldap-lib=openldap \
 		--with-ldap-dir=${LOCALBASE}
 
