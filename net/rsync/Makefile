@@ -4,7 +4,7 @@
 # Date created:         Sat Aug 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.29 2000/01/16 00:26:38 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.30 2000/01/18 12:34:21 sumikawa Exp $
 #
 
 DISTNAME=	rsync-2.3.2
@@ -24,7 +24,10 @@ MAINTAINER=     obrien@FreeBSD.org
 Y2K=		http://rsync.samba.org/rsync/y2k.html
 
 GNU_CONFIGURE=	yes
-.if defined(USE_INET6)
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
 CONFIGURE_ARGS=	--enable-ipv6
 .else
 CONFIGURE_ARGS=	--disable-ipv6
@@ -46,4 +49,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/tech_report.tex ${PREFIX}/share/doc/rsync
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
