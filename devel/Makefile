@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.464 2001/03/12 08:58:24 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.465 2001/03/12 22:08:30 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -22,6 +22,7 @@
     SUBDIR += asmutils
     SUBDIR += astyle
     SUBDIR += autoconf
+    SUBDIR += autogen
     SUBDIR += automake
     SUBDIR += avltree
     SUBDIR += avr-binutils
