@@ -2,7 +2,7 @@
 # Date created:		23 Jul 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.6 2000/04/13 09:16:03 asami Exp $
+# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.7 2000/06/23 12:22:18 cjh Exp $
 #
 
 PORTNAME=	baekmukfonts
@@ -13,8 +13,6 @@ PKGNAMESUFFIX=	-bdf
 DISTNAME=       baekmuk-${PORTVERSION}
 
 MAINTAINER=	cjh@kr.freebsd.org
-
-BUILD_DEPENDS=	bdftopcf:${PORTSDIR}/x11/XFree86
 
 USE_X_PREFIX=	yes
 
