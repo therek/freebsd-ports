@@ -2,7 +2,7 @@
 # Date created:		1999/08/08
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/collections/Makefile,v 1.2 2000/04/12 06:13:38 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	collections
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk11
 
 USE_ZIP=	YES
 

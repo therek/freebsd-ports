@@ -2,7 +2,7 @@
 # Date created:		1999/07/05
 # Whom:			Jose Marques <noway@nohow.demon.co.uk>
 #
-# $FreeBSD: ports/java/cos/Makefile,v 1.6 2001/06/23 14:33:00 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cos
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.servlets.com/cos/
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
+RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk11 \
 		${LOCALBASE}/bin/servletrunner:${PORTSDIR}/java/jsdk
 
 USE_ZIP=	yes

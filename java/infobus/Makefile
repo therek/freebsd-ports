@@ -2,7 +2,7 @@
 # Date created:		1999/08/08
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/infobus/Makefile,v 1.3 2000/04/12 06:13:54 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	infobus
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.zip
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
+RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk11 \
 		${PREFIX}/share/java/classes/collections.jar:${PORTSDIR}/java/collections
 
 USE_ZIP=	YES
