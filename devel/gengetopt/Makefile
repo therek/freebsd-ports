@@ -3,7 +3,7 @@
 # Date created:				12 October 2000
 # Whom:					Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.4 2001/05/04 09:35:53 ijliao Exp $
+# $FreeBSD: ports/devel/gengetopt/Makefile,v 1.5 2001/08/25 16:09:38 ijliao Exp $
 #
 
 PORTNAME=	gengetopt
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= ${PORTNAME}
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	clefevre@citeweb.net
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
