@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.250 2001/08/31 15:21:37 obrien Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.251 2001/09/06 14:15:33 wjv Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -64,6 +64,7 @@
     SUBDIR += intercal
     SUBDIR += itcl
     SUBDIR += jgnat
+    SUBDIR += jruby
     SUBDIR += jython
     SUBDIR += klone
     SUBDIR += lcc
