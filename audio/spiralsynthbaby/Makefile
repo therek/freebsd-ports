@@ -1,13 +1,12 @@
 # New ports collection makefile for:	spiralsynth
 # Date created:				2000-09-05
 # Whom:					Trevor Johnson <trevor@jpj.net>
-# based on the NetBSD port
 #
-# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.1 2000/09/16 19:02:05 will Exp $
+# $FreeBSD: ports/audio/spiralsynth/Makefile,v 1.2 2000/10/02 05:39:29 trevor Exp $
 #
 
 PORTNAME=	spiralsynth
-PORTVERSION=	0.1.5
+PORTVERSION=	0.1.6
 CATEGORIES=	audio
 MASTER_SITES=	http://www.blueammonite.f9.co.uk/SpiralSynth/dload/ \
 		http://jpj.net/~trevor/freebsd/ports/
