@@ -3,7 +3,7 @@
 # Date created:		21 August 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/www/netscape3/Makefile,v 1.33 1999/08/31 02:43:02 peter Exp $
+# $FreeBSD: ports/www/netscape3/Makefile,v 1.34 1999/08/31 06:51:53 mharo Exp $
 #
 
 DISTNAME?=	netscape-3.04
@@ -29,7 +29,7 @@ DISTFILES+=	${FORTIFY}.tar.gz
 RESTRICTED=     "Contains strong cryptography"
 .endif
 
-FORTIFY=	Fortify-1.4.3-unix-x86
+FORTIFY=	Fortify-1.4.5-unix-x86
 
 .if !defined(USE_128BIT)
 pre-extract:
