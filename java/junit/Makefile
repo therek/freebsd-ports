@@ -2,7 +2,7 @@
 # Date created:		Jun 15 1999
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/java/junit/Makefile,v 1.1 2000/11/03 17:49:57 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	junit
@@ -10,8 +10,9 @@ PORTVERSION=	3.7
 CATEGORIES=	java devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-DISTNAME=	${PORTNAME}${PORTVERSION}
-
+DISTNAME=	${PORTNAME}${PORTVERSION} \
+		http://metaverse.euronet.nl/~ernst/ \
+		http://znerd.org/
 MAINTAINER=	okazaki@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/bin/javavm:${PORTSDIR}/java/javavmwrapper
