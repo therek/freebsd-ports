@@ -3,7 +3,7 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.3 1999/09/26 20:37:25 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.4 1999/10/10 10:08:25 asami Exp $
 #
 
 DISTNAME=	wmhm-1.1
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/wmhm/wmhm
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 400000
-BROKEN=		'wmhm requires intpm which is only available in 4.0-CURRENT'
+FORBIDDEN=	'wmhm requires intpm which is only available in 4.0-CURRENT'
 .endif
 
 .include <bsd.port.post.mk>
