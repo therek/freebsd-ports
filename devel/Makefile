@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.349 2000/09/21 16:18:13 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.350 2000/09/22 13:15:19 tg Exp $
 #
 
     SUBDIR += ElectricFence
@@ -33,6 +33,7 @@
     SUBDIR += cdk
     SUBDIR += cervisia
     SUBDIR += cflow
+    SUBDIR += clanlib
     SUBDIR += clig
     SUBDIR += codecrusader
     SUBDIR += codemedic
