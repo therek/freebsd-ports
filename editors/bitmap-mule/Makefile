@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.12 2000/07/17 02:38:58 shige Exp $
+# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.13 2000/07/19 08:34:23 shige Exp $
 #
 
 PORTNAME=	bitmap
@@ -18,7 +18,7 @@ MAINTAINER=	shige@FreeBSD.org
 BITMAP_VER=	8.3
 BITMAPDOCDIR=	share/doc/bitmap
 BITMAP_SETUPEL=	bitmap-setupel.el
-BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/etl8x16-bitmap.pcf.gz
+BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/bitmap16.pcf.gz
 
 # mule-19.34
 EMACS_PORT_NAME=	mule
