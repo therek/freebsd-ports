@@ -2,7 +2,7 @@
 # Date created:		2000/08/12
 # Whom:			makeport.pl
 #
-# $FreeBSD: ports/games/bzflag/Makefile,v 1.2 2000/08/12 01:10:45 nbm Exp $
+# $FreeBSD: ports/games/bzflag/Makefile,v 1.3 2000/08/12 22:01:39 nbm Exp $
 #
 
 PORTNAME=	bzflag
@@ -21,7 +21,7 @@ WRKSRC=		${WRKDIR}/bzflag
 USE_XLIB=	yes
 
 MAKE_ENV=	PORTCFLAGS="${CFLAGS}" PORTCXXFLAGS="${CXXFLAGS}" \
-		PORTPREFIX="${PREFIX}"
+		PORTPREFIX="${PREFIX}" OSVERSION="${OSVERSION}"
 
 MAN6=	bzflag.6 bzfrelay.6 bzfls.6 bzfs.6
 
