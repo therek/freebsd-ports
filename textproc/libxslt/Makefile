@@ -2,11 +2,11 @@
 # Date created:				9th February 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/libxslt/Makefile,v 1.7 2001/05/11 16:36:35 ade Exp $
+# $FreeBSD: ports/textproc/libxslt/Makefile,v 1.8 2001/05/21 19:59:07 ade Exp $
 #
 
 PORTNAME=	libxslt
-PORTVERSION=	0.10.0
+PORTVERSION=	0.11.0
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/libxslt
