@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.369 2001/07/31 01:46:22 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.370 2001/07/31 01:47:54 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -21,6 +21,7 @@
     SUBDIR += bjfilter360
     SUBDIR += bjfilter850
     SUBDIR += bjfilter850ug
+    SUBDIR += bjfilter860
     SUBDIR += bookview
     SUBDIR += cannadic
     SUBDIR += canuum
