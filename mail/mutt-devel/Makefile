@@ -3,11 +3,12 @@
 # Date created:			  6 Jun 2001
 # Whom:				  Udo Schweigert
 #
-# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.123 2001/08/31 19:57:21 dwcjr Exp $
+# $FreeBSD: ports/mail/mutt-devel/Makefile,v 1.124 2001/09/02 17:03:22 dwcjr Exp $
 #
 
 PORTNAME=	mutt-devel
 PORTVERSION=	1.3.22.1
+PORTREVISION=	1
 CATEGORIES+=	mail
 .if defined(WITH_MUTT_NNTP)
 CATEGORIES+=	news
