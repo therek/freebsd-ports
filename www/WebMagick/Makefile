@@ -2,11 +2,12 @@
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/WebMagick/Makefile,v 1.16 2000/04/10 00:04:08 cpiazza Exp $
+# $FreeBSD: ports/www/WebMagick/Makefile,v 1.17 2001/01/16 17:32:52 sobomax Exp $
 #
 
 PORTNAME=	WebMagick
 PORTVERSION=	1.46
+PORTREVISION=   1
 CATEGORIES=	www graphics
 MASTER_SITES=	ftp://ftp.simplesystems.org/pub/WebMagick/
 
