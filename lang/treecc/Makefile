@@ -2,11 +2,11 @@
 # Date created:			  Wed Jul 11 00:45:15 EDT 2001
 # Whom:				  Michael Johnson <ahze@ahze.net>
 #
-# $FreeBSD: ports/lang/treecc/Makefile,v 1.1 2001/08/17 18:04:42 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	treecc
-PORTVERSION=	0.0.1
+PORTVERSION=	0.0.6
 CATEGORIES=	lang
 MASTER_SITES=	http://www.southern-storm.com.au/download/
 
