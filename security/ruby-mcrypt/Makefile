@@ -2,7 +2,7 @@
 # Date created:		20 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-mcrypt/Makefile,v 1.2 2001/06/26 10:48:14 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mcrypt
@@ -19,7 +19,7 @@ DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-LIB_DEPENDS=	mcrypt.6:${PORTSDIR}/security/libmcrypt/
+LIB_DEPENDS=	mcrypt.7:${PORTSDIR}/security/libmcrypt/
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
