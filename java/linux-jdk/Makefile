@@ -2,7 +2,7 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.3 2000/07/15 13:49:46 sada Exp $
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.4 2000/07/18 16:07:29 kevlo Exp $
 #
 
 PORTNAME=	jdk
@@ -28,9 +28,7 @@ NO_BUILD=       yes
 
 do-install:
 	${MKDIR} ${PREFIX}/linux-jdk1.2.2
-	(cd ${WRKSRC} && tar -c -f - .) \
+	(cd ${WRKSRC} && tar --exclude "*.orig" -c -f - .) \
 		| (cd ${PREFIX}/linux-jdk1.2.2 && tar fx -)
-	${RM} ${PREFIX}/linux-jdk1.2.2/bin/.java_wrapper.orig
-	${RM} ${PREFIX}/linux-jdk1.2.2/jre/bin/.java_wrapper.orig
 
 .include <bsd.port.mk>
