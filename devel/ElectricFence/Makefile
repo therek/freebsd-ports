@@ -3,7 +3,7 @@
 # Date created: 	13 November 1997
 # Whom:			jraynard
 #
-# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.12 2000/08/27 01:34:15 obrien Exp $
+# $FreeBSD: ports/devel/ElectricFence/Makefile,v 1.13 2000/09/22 10:30:30 kris Exp $
 #
 
 PORTNAME=	electricfence
@@ -18,11 +18,14 @@ DISTNAME=	ElectricFence-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
+INSTALLS_SHLIB=
 CFLAGS+=	-D__USE_BSD
 MAN3=		efence.3
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/libefence.a ${PREFIX}/lib
+	${INSTALL_DATA} ${WRKSRC}/libefence.so.0.0 ${PREFIX}/lib/libefence.so.0
+	${INSTALL_SCRIPT} ${WRKSRC}/ef.sh ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/efence.3 ${PREFIX}/man/man3
 
 .include <bsd.port.mk>
