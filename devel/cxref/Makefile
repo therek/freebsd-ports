@@ -2,11 +2,11 @@
 # Date created:		23 October 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/devel/cxref/Makefile,v 1.11 1999/10/10 23:34:31 steve Exp $
+# $FreeBSD: ports/devel/cxref/Makefile,v 1.12 2000/04/11 21:27:42 mharo Exp $
 #
 
 PORTNAME=	cxref
-PORTVERSION=	1.5b
+PORTVERSION=	1.5c
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE} \
 		ftp://ftp.demon.co.uk/pub/unix/tools/
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-ALL_TARGET=	cxref-inst cxref-query
+
 MAN1=		cxref.1 cxref-query.1
 
 .include <bsd.port.mk>
