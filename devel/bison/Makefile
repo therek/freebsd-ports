@@ -3,7 +3,7 @@
 # Date created:			  27 Mar 1999
 # Whom:				  Jerry Hicks
 #
-# $FreeBSD: ports/devel/bison/Makefile,v 1.14 2001/07/16 18:04:52 demon Exp $
+# $FreeBSD: ports/devel/bison/Makefile,v 1.15 2001/09/23 00:21:22 obrien Exp $
 #
 
 PORTNAME=		bison
@@ -18,9 +18,13 @@ LIB_DEPENDS=		intl.1:${PORTSDIR}/devel/gettext
 
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
-			LDFLAGS="-L${LOCALBASE}/lib -lintl"
+			LDFLAGS="-L${LOCALBASE}/lib -lintl" \
+			MAKEINFO="makeinfo --no-split"
 
 MAN1=			bison.1
+
+post-extract:
+	${RM} -f ${WRKSRC}/doc/bison.info*
 
 post-install:
 	@if [ ! -f ${PREFIX}/info/dir ]; then \
