@@ -2,18 +2,19 @@
 # Date created:                                Mar 4, 2001
 # Whom:                                        crow
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/bcwipe/Makefile,v 1.1 2001/07/06 17:08:40 ijliao Exp $
 #
 
 PORTNAME=	bcwipe
-PORTVERSION=	0.2.3
+PORTVERSION=	0.2.4
 CATEGORIES=	security
-MASTER_SITES=	http://www.jetico.com/linux/
-DISTNAME=	BCWipe-0.2-3
+MASTER_SITES=	http://www.jetico.com/linux/ \
+		http://www.edunet.hu/~crow/
+DISTNAME=	BCWipe-${PORTVERSION:S/./-/g:S/-/./}
 
 MAINTAINER=	crow@nektor.hu
 
-WRKSRC=		${WRKDIR}/${PORTNAME}-0.2-3
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/./-/g:S/-/./}
 
 MAN1=	bcwipe.1
 
