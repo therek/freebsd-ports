@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.411 2000/10/16 14:27:43 jeh Exp $
+# $FreeBSD: ports/net/Makefile,v 1.412 2000/10/22 16:43:14 trevor Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -275,6 +275,7 @@
     SUBDIR += xipmsg
     SUBDIR += xisp
     SUBDIR += xtraceroute
+    SUBDIR += xtradius
     SUBDIR += xwhois
     SUBDIR += ytalk
     SUBDIR += zebra
