@@ -2,22 +2,22 @@
 # Date created:		12 October 1996
 # Whom:			markm
 #
-# $FreeBSD: ports/misc/dejagnu/Makefile,v 1.11 1999/08/31 06:48:15 mharo Exp $
+# $FreeBSD: ports/misc/dejagnu/Makefile,v 1.12 2000/04/14 08:45:33 asami Exp $
 #
 
 PORTNAME=	dejagnu
-PORTVERSION=	1.3
-CATEGORIES=	misc tk80
+PORTVERSION=	1.4.0
+CATEGORIES=	misc tcl83 tk83
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	dejagnu
 
-MAINTAINER=	markm@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	expect:${PORTSDIR}/lang/expect
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/dejagnu
+USE_GMAKE=	yes
+
+WRKSRC=		${WRKDIR}/dejagnu-1.4
 GNU_CONFIGURE=	yes
-STRIP=
-MAN1=		runtest.1
 
 .include <bsd.port.mk>
