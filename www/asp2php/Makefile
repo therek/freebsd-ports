@@ -2,7 +2,7 @@
 # Date created:				Thu 29 Jun 2000
 # Whom:					will
 #
-# $FreeBSD: ports/www/asp2php/Makefile,v 1.7 2000/12/26 14:58:16 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asp2php
@@ -27,6 +27,10 @@ PLIST_SUB+=	WANT_GTK=""
 .else
 PLIST_SUB+=	WANT_GTK="@comment "
 .endif
+
+post-patch:
+	@${PERL} -pi -e 's,strcasestr,strcasestr_,' ${WRKSRC}/functions.h \
+		${WRKSRC}/general.c
 
 pre-build:
 	${PERL} -pi -e "s:gtk-config:${GTK_CONFIG}:g" ${WRKSRC}/Makefile
