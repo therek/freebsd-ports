@@ -2,7 +2,7 @@
 # Date created:		15 July 1998
 # Whom:			Tai-hwa Liang <avatar@www.mmlab.cse.yzu.edu.tw>
 #
-# $FreeBSD: ports/chinese/pine4/Makefile,v 1.13 1999/12/27 00:58:42 steve Exp $
+# $FreeBSD: ports/chinese/pine4/Makefile,v 1.14 2000/04/13 08:28:14 asami Exp $
 #
 
 PORTNAME=	pine
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME=	pine${PORTVERSION}
 
 MAINTAINER=	avatar@www.mmlab.cse.yzu.edu.tw
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 NO_LATEST_LINK= yes
 

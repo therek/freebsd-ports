@@ -4,7 +4,7 @@
 #
 # k3 means pico hangul patch
 #
-# $FreeBSD: ports/korean/pine/Makefile,v 1.13 2000/04/21 22:03:58 fenner Exp $
+# $FreeBSD: ports/korean/pine/Makefile,v 1.14 2000/07/23 05:06:37 cjh Exp $
 #
 
 PORTNAME=	pine
@@ -20,6 +20,8 @@ PATCH_SITES=	ftp://ftp.kr.freebsd.org/pub/users/cjh/unix-app/misc/
 PATCHFILES=	pico-3.96-hangul.patch
 
 MAINTAINER=	cjh@FreeBSD.org
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 MAKE_ENV=	FILESDIR=${FILESDIR}
 MAN1= 		pine.1 pico.1 pilot.1

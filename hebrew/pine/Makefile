@@ -2,7 +2,7 @@
 # Date created:		Apr 01 2000
 # Whom:			Nadav Eiron <nadav@cs.technion.ac.il>
 #
-# $FreeBSD$
+# $FreeBSD: ports/hebrew/pine/Makefile,v 1.1 2000/08/02 12:01:16 nbm Exp $
 
 PORTNAME=	pine
 PORTVERSION=	4.21.2.9
@@ -11,6 +11,8 @@ MASTER_SITES=	ftp://www8.cc.huji.ac.il/pub/pine/
 DISTNAME=	pine4.21_heb2.09
 
 MAINTAINER?=	nadav@cs.technion.ac.il
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 MAN1=		pine.1 pico.1 pilot.1
 

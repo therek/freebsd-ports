@@ -2,7 +2,7 @@
 # Date created:		01 May 1996
 # Whom:			masafumi
 #
-# $FreeBSD: ports/japanese/pine/Makefile,v 1.22 2000/06/16 10:38:40 sobomax Exp $
+# $FreeBSD: ports/japanese/pine/Makefile,v 1.23 2000/06/16 21:51:13 asami Exp $
 #
 
 PORTNAME=	pine
@@ -18,6 +18,8 @@ PATCHFILES=	${DISTNAME}lj1.1b2-b3.diff.gz
 PATCH_SITES=	${MASTER_SITE_PORTS_JP}
 
 MAINTAINER=	max@FreeBSD.org
+
+FORBIDDEN=	"Remotely exploitable buffer overflows."
 
 BROKEN_ELF=	yes
 
