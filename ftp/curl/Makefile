@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/ftp/curl/Makefile,v 1.15 2000/04/12 05:31:02 mharo Exp $
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.16 2000/04/17 00:17:35 reg Exp $
 #
 
 PORTNAME=	curl
@@ -18,9 +18,9 @@ MASTER_SITES=	http://curl.haxx.nu/stuff/ \
 MAINTAINER=	kris@FreeBSD.org
 
 .if defined(WITH_SSL)
-USE_OPENSSL=   RSA
+USE_OPENSSL=	RSA
 .endif
- 
+
 .include <bsd.port.pre.mk>
 
 .if defined(USE_OPENSSL)
@@ -29,7 +29,7 @@ CONFIGURE_ENV+=	CPPFLAGS='-I${OPENSSLINC} -I${OPENSSLINC}/openssl' \
 .endif
 
 .if defined(OPENSSL_RSAREF)
-CONFIGURE_ENV+= LIBS="-L${OPENSSLLIB} -lcrypto -lRSAglue -L${LOCALBASE}/lib -lrsaref"
+CONFIGURE_ENV+=	LIBS="-L${OPENSSLLIB} -lcrypto -lRSAglue -L${LOCALBASE}/lib -lrsaref"
 .endif
 
 GNU_CONFIGURE=	yes

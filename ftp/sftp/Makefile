@@ -2,7 +2,7 @@
 # Date created:		30 December 1999
 # Whom:			Cy Shubert <Cy.Shubert@uumail.gov.bc.ca>
 #
-# $FreeBSD: ports/ftp/sftp/Makefile,v 1.3 2000/02/08 15:06:05 taoka Exp $
+# $FreeBSD: ports/ftp/sftp/Makefile,v 1.4 2000/04/12 05:31:21 mharo Exp $
 #
 
 PORTNAME=	sftp
@@ -16,7 +16,7 @@ RUN_DEPENDS=	ssh:${PORTSDIR}/security/openssh
 
 RESTRICTED=	"Calls external cryptographic routines."
 
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS+=	--prefix=${PREFIX} \
 			--enable-remotepath=${PREFIX}/libexec
