@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.6 1999/12/28 15:18:32 jasone Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.7 2000/01/04 18:21:16 jasone Exp $
 #
 
 DISTNAME=      glibc-linuxthreads-2.1.2
@@ -15,9 +15,10 @@ ONLY_FOR_ARCHS= i386
 
 MAINTAINER=    jasone@freebsd.org
 
-threads_files := README.FreeBSD clone.S clone.h freebsd-compat.h getgr_r.c \
-	gethostby_r.c getnetby_r.c getprotoby_r.c getpw_r.c getservby_r.c \
-	lclone.c libc_calls.c libc_thread.c sched.c uthread_file.c
+threads_files := _atomic_lock.S README.FreeBSD clone.S clone.h \
+	freebsd-compat.h getgr_r.c gethostby_r.c getnetby_r.c getprotoby_r.c \
+	getpw_r.c getservby_r.c lclone.c libc_calls.c libc_thread.c sched.c \
+	uthread_file.c
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 
