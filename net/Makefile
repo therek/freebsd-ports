@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.423 2000/10/31 12:41:14 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.424 2000/10/31 18:37:08 jim Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -226,6 +226,7 @@
     SUBDIR += rsync
     SUBDIR += rtsp_proxy
     SUBDIR += ruby-drb
+    SUBDIR += ruby-icmp
     SUBDIR += ruby-ldap
     SUBDIR += ruby-snmp
     SUBDIR += ruby-uri
