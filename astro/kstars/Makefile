@@ -2,7 +2,7 @@
 # Date created:				Thu Sep 13 16:00:55 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/astro/kstars/Makefile,v 1.1 2001/09/22 06:42:22 lioux Exp $
+# $FreeBSD: ports/astro/kstars/Makefile,v 1.2 2001/09/24 23:28:19 lioux Exp $
 #
 
 PORTNAME=	kstars
@@ -15,6 +15,11 @@ MAINTAINER=	pat@databits.net
 
 GNU_CONFIGURE=	yes
 USE_KDELIBS_VER=	2
-USE_X_PREFIX=	yes 
+USE_X_PREFIX=	yes
+CONFIGURE_ENV=	KDEDIR="${LOCALBASE}"
+
+pre-patch:
+	@${PERL} -pi.orig -e 's|-ljpeg6b|-ljpeg|; \
+		s|-O2||' ${WRKSRC}/${CONFIGURE_SCRIPT}
 
 .include <bsd.port.mk>
