@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.47 2000/10/27 17:07:40 imura Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.48 2000/10/30 01:28:58 will Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -10,7 +10,7 @@ PORTVERSION=	1.1.2
 PORTREVISION=	2
 CATEGORIES=	net news kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 
 PATCH_SITES=	http://www.kde.gr.jp/~toyohiro/ \
 		http://www.kde.gr.jp/~imura/ko/

@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.50 2000/10/23 16:09:04 imura Exp $
+# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.51 2000/10/30 01:28:57 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -10,7 +10,7 @@ PORTVERSION= 	1.1.2
 PORTREVISION=	1
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 
 PATCH_SITES=	ftp://ftp.kde.gr.jp/pub/kde/stable/latest/distribution/tar/generic/jp-patch/
 PATCHFILES=	kdebase-ja.19990823.diff.gz

@@ -2,14 +2,14 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.40 2000/10/23 16:09:05 imura Exp $
+# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.41 2000/10/30 01:28:59 will Exp $
 #
 
 PORTNAME=	kdemultimedia
 PORTVERSION=	1.1.2
 CATEGORIES=	audio kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	se@freebsd.org
 

@@ -2,14 +2,14 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.36 2000/10/23 16:09:05 imura Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.37 2000/10/30 01:28:58 will Exp $
 #
 
 PORTNAME=	kdegraphics
 PORTVERSION=	1.1.2
 CATEGORIES=	graphics kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	will@FreeBSD.org
 
