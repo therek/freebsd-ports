@@ -2,14 +2,13 @@
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gtkballs/Makefile,v 1.8 2000/04/02 00:58:30 mharo Exp $
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.9 2000/04/14 06:53:12 mharo Exp $
 #
 
 PORTNAME=	gtkballs
 PORTVERSION=	1.04
 CATEGORIES=	games
-MASTER_SITES=	ftp://lucifer.dorms.spbu.ru/pub/Linux/games/ \
-		http://lucifer.dorms.spbu.ru/gtkballs/ \
+MASTER_SITES=	http://gtkballs.antex.ru/dist/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
