@@ -2,7 +2,7 @@
 # Date created:				2000 May 25
 # Whom:					@BABOLO <.@babolo.ru>
 #
-# $FreeBSD: ports/sysutils/deleted/Makefile,v 1.1 2000/06/02 15:33:04 will Exp $
+# $FreeBSD: ports/sysutils/deleted/Makefile,v 1.2 2000/06/07 17:15:42 will Exp $
 #
 
 PORTNAME=	deleted
@@ -16,5 +16,8 @@ MAINTAINER=	.@babolo.ru
 MAN1=		deleted.1
 MANCOMPRESSED=	yes
 BINMODE=	4555
+
+post-install:
+	@${CHMOD} 4555 ${PREFIX}/bin/deleted
 
 .include <bsd.port.mk>
