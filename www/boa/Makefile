@@ -2,17 +2,15 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/boa/Makefile,v 1.6 2000/08/23 08:09:20 kevlo Exp $
+# $FreeBSD: ports/www/boa/Makefile,v 1.7 2000/10/06 21:53:41 jedgar Exp $
 #
 
 PORTNAME=	boa
-PORTVERSION= 	0.94.8.2
+PORTVERSION= 	0.94.8.3
 CATEGORIES=	www
 MASTER_SITES=	http://www.boa.org/
 
 MAINTAINER=	ports@FreeBSD.org
-
-FORBIDDEN=	"Remote users can access files outside the document root"
 
 FETCH_BEFORE_ARGS=	-b
 
