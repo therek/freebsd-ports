@@ -2,15 +2,15 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.1 2000/07/31 12:12:23 nbm Exp $
 #
 
 PORTNAME=	biopython
-PORTVERSION=	0.90.d01
+PORTVERSION=	0.90.d02
 CATEGORIES=	biology python
 MASTER_SITES=	http://www.biopython.org/Download/
 PKGNAMEPREFIX=	py-
-DISTNAME=	biopython-0.90-d01
+DISTNAME=	biopython-0.90-d02
 
 MAINTAINER=	johann@egenetics.com
 
