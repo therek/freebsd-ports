@@ -2,14 +2,17 @@
 # Date created:		2000/05/19
 # Whom:			jim@thehouselys.net
 #
-# $FreeBSD: ports/www/mod_auth_mysql/Makefile,v 1.6 2001/01/16 17:32:57 sobomax Exp $
+# $FreeBSD$
 
 PORTNAME=	mod_auth_mysql
 PORTVERSION=	2.20
 CATEGORIES=	www
-MASTER_SITES=	http://bourbon.netvision.net.il/mysql/mod_auth_mysql/ \
-		http://download.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
-		http://web.mysql.com/Contrib/
+MASTER_SITES=	http://download.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
+		http://east.dl.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
+		http://west.dl.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
+		http://unc.dl.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
+		http://telia.dl.sourceforge.net/mirrors/mysql/Downloads/Contrib/ \
+		http://www.mysql.com/Contrib/
 
 MAINTAINER=	jeh@FreeBSD.org
 
