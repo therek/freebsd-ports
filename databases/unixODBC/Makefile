@@ -3,7 +3,7 @@
 # Date created:         May 11, 2000
 # Whom:                 Nick Sayer <nsayer@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.6 2000/06/16 21:50:36 asami Exp $
+# $FreeBSD: ports/databases/unixODBC/Makefile,v 1.7 2000/07/19 15:40:27 sobomax Exp $
 #
 
 PORTNAME=	unixODBC
@@ -20,7 +20,6 @@ USE_XLIB=	yes
 CONFIGURE_ARGS+=--enable-gui
 .else
 CONFIGURE_ARGS+=--disable-gui
-USE_XLIB=	yes
 .endif
 
 .include <bsd.port.mk>
