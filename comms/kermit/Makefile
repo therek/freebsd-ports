@@ -3,7 +3,7 @@
 # Date created:		Oct 27, 1994
 # Whom:			pst
 #
-# $FreeBSD: ports/comms/kermit/Makefile,v 1.19 1999/12/10 19:04:09 joerg Exp $
+# $FreeBSD: ports/comms/kermit/Makefile,v 1.20 2000/01/30 23:47:02 joerg Exp $
 #
 
 DISTNAME=	cku196
@@ -19,7 +19,31 @@ MANCOMPRESSED=	yes
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/kermit
-	${INSTALL_DATA} ${FILESDIR}/dot.kermrc ${PREFIX}/share/examples/kermit
-	@${CAT} ${PKGDIR}/DESCR
+	@${MKDIR} ${PREFIX}/share/doc/kermit
+	${INSTALL_DATA} ${WRKSRC}/ckaaaa.txt ${PREFIX}/share/doc/kermit/READ.ME
+	@for file in ckuaaa.txt ckermit2.txt ckcbwr.txt ckubwr.txt \
+	  ckuins.txt telnet.txt security.txt iksd.txt ckcplm.txt \
+	  ckccfg.txt ; \
+	do \
+	    echo Installing ${PREFIX}/share/doc/kermit/$${file} ... ; \
+	    ${INSTALL_DATA} ${WRKSRC}/$${file} ${PREFIX}/share/doc/kermit/; \
+	done
+	@set -- \
+		ckermit.ini dot.kermrc \
+		ckermod.ini dot.mykermrc \
+		ckurzsz.ini dot.rzszkermrc \
+		ckermit.kdd dot.kdd \
+		ckermit.knd dot.knd \
+		ckermit.ksd dot.ksd \
+		ckedemo.ksc ckedemo.ksc \
+		ckepage.ksc ckepage.ksc \
+		ckevt.ksc ckevt.ksc \
+		iksdpy iksdpy ; \
+	while [ $$# -gt 1 ] ; \
+	do \
+	    file=$$1; dst=$$2 ; shift ; shift ; \
+	    echo Installing $${file} as ${PREFIX}/share/examples/kermit/$${dst} ... ; \
+	    ${INSTALL_DATA} ${WRKSRC}/$${file} ${PREFIX}/share/examples/kermit/$${dst}; \
+	done
 
 .include <bsd.port.mk>
