@@ -3,7 +3,7 @@
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.39 2000/01/30 02:10:21 scrappy Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.40 2000/01/30 02:11:32 scrappy Exp $
 #
 
 DISTNAME=	mico-2.3.1
@@ -14,6 +14,8 @@ MAINTAINER=	scrappy@freebsd.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		tcl82.1:${PORTSDIR}/lang/tcl82
+
+MICOVER=	`${ECHO} ${DISTNAME} | ${SED} 's/mico-//'`
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
