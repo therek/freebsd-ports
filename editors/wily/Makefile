@@ -3,14 +3,14 @@
 # Date created:   	23 September 1997
 # Whom: 		koshy
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/wily/Makefile,v 1.10 1999/08/25 05:44:47 obrien Exp $
 #
 
 DISTNAME=	wily-0.13.41
 CATEGORIES=	editors plan9
 MASTER_SITES=	ftp://ftp.northsea.com/pub/plan9_unix/wily/src/ \
 		ftp://ftp.cs.york.ac.uk/pub/mhw/wily/src/ \
-		ftp://ftp.cs.su.oz.au/gary/wily/src/
+		ftp://ftp.cs.su.oz.au/gary/wily/src/old/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jkoshy@freebsd.org
