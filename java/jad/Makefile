@@ -2,7 +2,7 @@
 # Date created:				27 September 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/java/jad/Makefile,v 1.1 2001/01/03 19:54:20 patrick Exp $
+# $FreeBSD: ports/java/jad/Makefile,v 1.2 2001/01/09 17:00:58 kevlo Exp $
 #
 
 PORTNAME=	jad
@@ -18,9 +18,17 @@ USE_ZIP=	yes
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/jad ${PREFIX}/bin/
-	${MKDIR} ${PREFIX}/share/doc/jad
-	${INSTALL_DATA} ${WRKSRC}/Readme.txt ${PREFIX}/share/doc/jad/
+.include <bsd.port.pre.mk>
 
-.include <bsd.port.mk>
+.if ${ARCH} == "alpha"
+BROKEN=		Not supported on FreeBSD/Alpha
+.endif
+
+do-install:
+	@${INSTALL_PROGRAM} ${WRKSRC}/jad ${PREFIX}/bin/
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/jad
+	@${INSTALL_DATA} ${WRKSRC}/Readme.txt ${PREFIX}/share/doc/jad/
+.endif
+
+.include <bsd.port.post.mk>
