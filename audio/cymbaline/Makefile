@@ -3,11 +3,11 @@
 # Date created:			Jun 20, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.4 2001/07/20 04:19:43 ijliao Exp $
+# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.5 2001/07/25 04:20:15 ijliao Exp $
 #
 
 PORTNAME=	cymbaline
-PORTVERSION=	0.9b
+PORTVERSION=	0.9d
 CATEGORIES=	audio python
 MASTER_SITES=	http://www.silmarill.org/cymbaline/
 
@@ -22,5 +22,11 @@ NO_BUILD=	yes
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/cymbaline.py ${PREFIX}/bin/cymbaline
 	${INSTALL_DATA} ${WRKSRC}/mp3.py ${PYTHON_SITELIBDIR}
+
+.if !defined(NOPORTDOCS)
+post-install:
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+.endif
 
 .include <bsd.port.mk>
