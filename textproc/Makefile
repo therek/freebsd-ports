@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.98 2000/07/02 09:33:36 ade Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.99 2000/07/06 19:08:21 knu Exp $
 #
 
     SUBDIR += agrep
@@ -50,6 +50,7 @@
     SUBDIR += java2html
     SUBDIR += latte
     SUBDIR += latex2html
+    SUBDIR += libiconv
     SUBDIR += libxml
     SUBDIR += libxml2
     SUBDIR += libxode
