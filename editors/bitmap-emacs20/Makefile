@@ -3,7 +3,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.9 2000/01/08 15:38:37 shige Exp $
+# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.10 2000/02/08 04:33:43 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -21,7 +21,7 @@ BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/etl8x16-bitmap.pcf.gz
 # emacs20
 EMACS_NAME=	emacs
 EMACS_PORT=	emacs20
-EMACS_VER=	20.5
+EMACS_VER=	20.6
 EMACS_LIBDIR=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}
 

@@ -3,7 +3,7 @@
 # Date created:		21 September 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.4 2000/01/15 03:17:02 shige Exp $
+# $FreeBSD: ports/japanese/skk10-elisp-emacs20/Makefile,v 1.5 2000/01/19 13:43:36 shige Exp $
 #
 
 DISTNAME=	skk${SKK10_VER}
@@ -23,7 +23,7 @@ PORT_CLASS?=	master
 EMACS_PORT_NAME=	emacs20
 # emacsen-information
 EMACS_NAME=		emacs
-EMACS_VER=		20.5
+EMACS_VER=		20.6
 EMACS_CMD=		${LOCALBASE}/bin/${EMACS_NAME}-${EMACS_VER}
 EMACS_LIBDIR=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}

@@ -3,7 +3,7 @@
 # Date created:         14 April 1999
 # Whom:                 OKAZAKI Tetsurou
 #
-# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.7 2000/01/08 18:52:29 shige Exp $
+# $FreeBSD: ports/japanese/emacs-manual/Makefile,v 1.8 2000/01/27 21:51:16 asami Exp $
 #
 
 DISTNAME=	emacs-20.5-man-jp
@@ -19,14 +19,14 @@ MAINTAINER=	okazaki@be.to
 BUILD_DEPENDS=	${EMACS}:${PORTSDIR}/editors/emacs20
 
 EXTRACT_ONLY=	${DISTNAME}.tgz
-EMACS_DISTNAME= emacs-20.5
+EMACS_DISTNAME= emacs-20.6
 EMACS_ARC=	${EMACS_DISTNAME}a.tar.gz
 EMACS_SRCDIR=	${WRKDIR}/${EMACS_DISTNAME}
 EXTRACT_FILES=	${EMACS_DISTNAME}/man/ack.texi \
 		${EMACS_DISTNAME}/lisp/textmodes/texinfmt.el
 
 # We use emacs20 to format texinfo files.
-EMACS=		emacs-20.5
+EMACS=		emacs-20.6
 
 MAKE_ENV=	EMACS="${EMACS}"
 

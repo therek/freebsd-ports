@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.12 2000/01/19 15:38:34 shige Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.13 2000/02/25 16:16:06 shige Exp $
 #
 
 DISTNAME=	dl-wnn-0.3.6
@@ -29,7 +29,7 @@ PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${MACHINE_ARCH}--freebsd \
 		DOCDIR=${DOCDIR}
 
 DOCDIR=		share/doc/emacs20-dl-wnn6
-EMACS_VER=	20.5
+EMACS_VER=	20.6
 EMACSDL_DIR=	${.CURDIR}/../../editors/emacs20-dl
 EMACSDL_SRCDIR=	${WRKDIRPREFIX}${EMACSDL_DIR}/work/emacs-${EMACS_VER}
 # hack to allow parallel build to work
