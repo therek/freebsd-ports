@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.378 2001/07/07 02:53:42 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.379 2001/07/07 13:13:46 ijliao Exp $
 #
     SUBDIR += zope-zwiki
 
@@ -114,6 +114,7 @@
     SUBDIR += mapedit
     SUBDIR += marc-search
     SUBDIR += mathopd
+    SUBDIR += mdw
     SUBDIR += mgstat
     SUBDIR += mhonarc
     SUBDIR += mmosaic
