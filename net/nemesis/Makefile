@@ -3,7 +3,7 @@
 # Date created:			  Fri July 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/nemesis/Makefile,v 1.1.1.1 2000/07/08 04:24:21 obrien Exp $
 #
 
 PORTNAME=	nemesis
