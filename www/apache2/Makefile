@@ -2,11 +2,12 @@
 # Date created:         Fri Aug 25 16:42:36 CDT 1995
 # Whom:                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/apache13/Makefile,v 1.81 2000/07/05 12:36:59 tg Exp $
+# $FreeBSD: ports/www/apache13/Makefile,v 1.82 2000/08/22 03:41:03 kuriyama Exp $
 #
 
 PORTNAME=	apache
 PORTVERSION= 	1.3.12
+PORTREVISION=   1
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -41,10 +42,11 @@ CONFIGURE_ARGS=	\
 		--with-layout=${FILESDIR}/FreeBSD.layout:FreeBSD \
 		--suexec-docroot=${PREFIX}/www/data \
 		--without-confadjust \
-		--enable-shared=remain \
 		--enable-module=most \
 		--enable-module=auth_db \
-		--disable-module=auth_dbm
+		--enable-module=mmap_static \
+		--disable-module=auth_dbm \
+		--enable-shared=max
 
 OPTIM=		-DHARD_SERVER_LIMIT=512 \
 		-DDOCUMENT_LOCATION=\\"${PREFIX}/www/data/\\" \
