@@ -3,13 +3,13 @@
 # Date created:         6 Apr 97
 # Whom:                 Pedro Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/xpns/Makefile,v 1.6 1999/08/25 07:23:16 obrien Exp $
 #
 
 DISTNAME=	pns_source
 PKGNAME=	xpns-1.0
 CATEGORIES=	misc cad
-MASTER_SITES=	ftp://ftp.informatik.uni-stuttgart.de/pub/petri-nets/
+MASTER_SITES=	http://www.ee.uwa.edu.au/~braunl/pns/ftp/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	giffunip@asme.org
