@@ -2,13 +2,15 @@
 # Date created:		30 September 1999
 # Whom:			kbyanc
 #
-# $FreeBSD: ports/converters/mmencode/Makefile,v 1.2 1999/10/01 17:56:00 cpiazza Exp $
+# $FreeBSD: ports/converters/mmencode/Makefile,v 1.3 2000/04/08 23:24:33 mharo Exp $
 #
 
 PORTNAME=	mmencode
 PORTVERSION=	2.7
 CATEGORIES=	converters
-MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/
+MASTER_SITES=	ftp://thumper.bellcore.com/pub/nsb/ \
+		http://ftp.dmz.digex.net/pub/packages/mail/metamail/ \
+		ftp://ftp.funet.fi/pub/unix/mail/metamail/
 DISTNAME=	mm${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
