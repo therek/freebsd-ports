@@ -2,7 +2,7 @@
 # Date created:		Tue Nov 12 15:54:21 CST 1996
 # Whom:			erich@FreeBSD.org
 #
-# $FreeBSD: ports/audio/cam/Makefile,v 1.7 2000/04/08 21:23:19 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cam
@@ -15,5 +15,9 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 MAN1=	cam.1
+
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/cam ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/cam.1 ${PREFIX}/man/man1
 
 .include <bsd.port.mk>
