@@ -1,5 +1,6 @@
-# $FreeBSD: ports/www/Makefile,v 1.392 2001/08/12 14:59:07 ijliao Exp $
+# $FreeBSD: ports/www/Makefile,v 1.393 2001/08/13 08:11:48 wjv Exp $
 #
+    SUBDIR += zope-zpt
     SUBDIR += zope-zwiki
 
     SUBDIR += Mosaic         # requires Motif
