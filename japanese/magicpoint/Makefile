@@ -2,7 +2,7 @@
 # Date created:		25 Dec 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.17 2000/04/11 14:14:58 knu Exp $
+# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.18 2000/04/13 03:08:01 asami Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/magicpoint
@@ -12,7 +12,7 @@ LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
 
 CATEGORIES=	japanese
 
-MAINTAINER=	itojun@itojun.org
+MAINTAINER=	mita@jp.FreeBSD.org
 
 # dirty, but this is required for version independent-ness
 CONFIGURE_ARGS=		--with-vfontcap=`ls -1 ${LOCALBASE}/share/VFlib/*/vfontcap | tail -1`
