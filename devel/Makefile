@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.452 2001/03/04 20:33:11 olgeni Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.453 2001/03/06 14:22:38 demon Exp $
 #
     SUBDIR += zziplib
 
@@ -75,6 +75,7 @@
     SUBDIR += cweb
     SUBDIR += cxref
     SUBDIR += ddd
+    SUBDIR += dia2code
     SUBDIR += diffconvert
     SUBDIR += dmake
     SUBDIR += dmalloc
