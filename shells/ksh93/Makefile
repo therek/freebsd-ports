@@ -2,7 +2,7 @@
 # Date created:                2000-12-26
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD: ports/shells/ksh93/Makefile,v 1.9 2001/02/27 18:33:39 steve Exp $
+# $FreeBSD: ports/shells/ksh93/Makefile,v 1.10 2001/08/04 03:51:41 trevor Exp $
 
 PORTNAME=	ksh93
 PORTVERSION=	${VERSION:S/-//g}
@@ -15,7 +15,6 @@ MAINTAINER=	naddy@mips.inka.de
 RESTRICTED=	"Source recipient must acknowledge license"
 DISTNAME=	${PORTNAME}-${VERSION}
 DISTFILES=	INIT.${VERSION}.tgz ast-ksh.${VERSION}.tgz
-DIST_SUBDIR=	${PORTNAME}
 
 NO_WRKSUBDIR=	yes
 MAKE_ARGS=	CC='${CC}' CCFLAGS='${CFLAGS}' SHELL='${SH}'
@@ -27,7 +26,7 @@ MAN1=		ksh93.1
 
 .if defined(ACCEPT_AST_LICENSE)
 post-patch:
-	@touch ${WRKSRC}/lib/package/gen/ast.license.accepted
+	@${TOUCH} ${WRKSRC}/lib/package/gen/ast.license.accepted
 .else
 IS_INTERACTIVE=	yes	# must acknowledge license
 .endif
@@ -40,5 +39,12 @@ do-install:
 	    ${PREFIX}/bin/ksh93
 	${INSTALL_MAN} ${WRKSRC}/arch/freebsd.${ARCH}/man/man1/sh.1 \
 	    ${PREFIX}/man/man1/ksh93.1
+
+post-install:
+	@${ECHO} "updating /etc/shells"
+	@${CP} /etc/shells /etc/shells.bak
+	@(${GREP} -v ${PREFIX}/bin/ksh93 /etc/shells.bak; \
+	  ${ECHO} ${PREFIX}/bin/ksh93) >/etc/shells
+	@${RM} -f /etc/shells.bak
 
 .include <bsd.port.mk>
