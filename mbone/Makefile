@@ -1,7 +1,8 @@
-# $FreeBSD: ports/mbone/Makefile,v 1.17 2001/06/07 02:21:29 kiri Exp $
+# $FreeBSD$
 #
 
     SUBDIR += imm
+    SUBDIR += mcl
     SUBDIR += nte
     SUBDIR += rat
     SUBDIR += rat30
