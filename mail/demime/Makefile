@@ -2,11 +2,11 @@
 # Date Created:				25 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/demime/Makefile,v 1.1 2001/05/24 13:35:57 ijliao Exp $
 #
 
 PORTNAME=	demime
-PORTVERSION= 	0.98b
+PORTVERSION= 	0.98e
 CATEGORIES=	mail textproc
 MASTER_SITES=	http://scifi.squawk.com/
 DISTFILES=	${PORTNAME}.stable demime_junkmail.cf
