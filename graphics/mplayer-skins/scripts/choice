@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/graphics/mplayer-skins/scripts/choice,v 1.1 2002/01/17 19:48:22 lioux Exp $
+# $FreeBSD: ports/graphics/mplayer-skins/scripts/choice,v 1.2 2002/03/26 22:33:01 lioux Exp $
 # based on configure from mplayer-skins by Andreas Klemm <andreas@FreeBSD.org>
 
 if [ "$BATCH" != "yes" ]; then
@@ -20,8 +20,10 @@ only the skins you really want. \n\n\
   "avifile"	"MPlayer skin, with the look of aviplay"	OFF \
   "BlueHeart"	"MPlayer conversion of a BlueHeart XMMS skin"	OFF \
   "CornerMP"	"CornerMP"					OFF \
+  "CornerMP-agua"	"CornerMP agua"				OFF \
   "CubicPlayer"	"CubicPlayer skin"				OFF \
   "Cyrus"	"Cyrus skin from XMMS"				OFF \
+  "hwsw-skin"	"no comment"					OFF \
   "Mentalic"	"Sharp and shiny"				OFF \
   "MidnightLove"	"MPlayer version of WinAMP/XMMS Rei Ayanami's skin"		OFF \
   "Netscape4"	"Netscape \"unatkozok\" skin"			OFF \
