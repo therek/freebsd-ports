@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.358 2001/07/02 22:56:36 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.359 2001/07/03 01:01:42 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -126,6 +126,7 @@
     SUBDIR += p5-LEGO-RCX
     SUBDIR += p5-Locale-Codes
     SUBDIR += peq
+    SUBDIR += patchutils
     SUBDIR += pdmenu
     SUBDIR += pg
     SUBDIR += pinfo
