@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.70 2001/01/30 07:31:10 jkoshy Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.71 2001/02/20 21:45:15 olgeni Exp $
 #
 
 PORTNAME=	postgresql
@@ -124,10 +124,12 @@ post-install:
 #	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/doc/*ps.gz ${PREFIX}/share/doc/pgsql
 	@ ${CAT} ${PKGDIR}/pkg-plist.doc >> ${TMPPLIST}
 .endif
+	@ ${SED} 's|%%PREFIX%%|${PREFIX}|g' \
+		< ${FILESDIR}/dot.profile.in \
+		> ${PREFIX}/pgsql/dot.profile.dist;
 	@ if [ ! -f ${PREFIX}/pgsql/.profile ]; then \
-		${SED} 's|%%PREFIX%%|${PREFIX}|g' \
-			< ${FILESDIR}/dot.profile.in \
-			> ${PREFIX}/pgsql/.profile; \
+		${CP} ${PREFIX}/pgsql/dot.profile.dist \
+			${PREFIX}/pgsql/.profile; \
 	fi
 	@ ${CHOWN} -R pgsql:pgsql ${PREFIX}/pgsql
 	@ ${CHOWN} root:pgsql ${PREFIX}/pgsql/lib
