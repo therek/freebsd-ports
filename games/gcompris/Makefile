@@ -2,7 +2,7 @@
 # Date created:		21 July 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/games/gcompris/Makefile,v 1.1 2000/07/21 16:05:18 sobomax Exp $
+# $FreeBSD: ports/games/gcompris/Makefile,v 1.2 2000/07/24 09:04:44 sobomax Exp $
 #
 
 PORTNAME=	gcompris
@@ -16,6 +16,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/share/automake/install-sh:${PORTSDIR}/devel/automake
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
@@ -32,5 +33,10 @@ CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
 post-extract:
 	@${LN} -sf ${LOCALBASE}/share/automake/install-sh ${WRKSRC}/install-sh
 	@${LN} -sf ${LOCALBASE}/share/automake/mkinstalldirs ${WRKSRC}/mkinstalldirs
+	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$\(datadir\)/pixmaps|\$\(datadir\)/gnome/pixmaps|g ; \
+		 s|\$\(datadir\)/sounds|\$\(datadir\)/gnome/sounds|g ; \
+		 s|\$\(localstatedir\)/games|\$\(datadir\)/gnome/games|g'
 
 .include <bsd.port.mk>
