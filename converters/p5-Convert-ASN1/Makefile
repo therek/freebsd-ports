@@ -2,11 +2,11 @@
 # Date created:				October 27, 2000
 # Whom:	      				Marc Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/p5-Convert-ASN1/Makefile,v 1.3 2001/03/01 12:03:45 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Convert-ASN1
-PORTVERSION=	0.10
+PORTVERSION=	0.11
 CATEGORIES=	converters perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
