@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.352 2004/06/06 04:04:44 nork Exp $
+# $FreeBSD: ports/LEGAL,v 1.353 2004/06/08 08:32:21 vs Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -318,6 +318,7 @@ sharefonts-*		ports/x11-fonts/sharefonts	Shareware.  Cannot be
 						authorization.
 shorten-*		ports/audio/shorten	May not be sold. May not be
 						distributed if modified.
+skype_ver-*		ports/net/skype		Not for redistribution.
 sim*.zip		ports/emulators/sim	No commercial use
 socks5-*		ports/net/socks5	No commercial use
 speedmgmt*		ports/net/pppoa		Not for redistribution - see
