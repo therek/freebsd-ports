@@ -2,12 +2,12 @@
 # Date created:		Tue May 15 22:29:27 MSD 2001
 # Whom:			Alex Semenyaka <alex@rinet.ru>
 #
-# $FreeBSD: ports/devel/strace/Makefile,v 1.3 2001/09/07 12:50:30 yar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	strace
 PORTVERSION=	4.4
-CATEGORIES=	devel
+CATEGORIES=	devel sysutils
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTNAME=	${PORTNAME}_${PORTVERSION}-1
