@@ -3,7 +3,7 @@
 # Date created:		07 Feb 1999
 # Whom:			Scott Blachowicz <Scott.Blachowicz@seaslug.org>
 #
-# $FreeBSD: ports/mail/nmh/Makefile,v 1.16 1999/08/25 06:50:33 obrien Exp $
+# $FreeBSD: ports/mail/nmh/Makefile,v 1.17 1999/12/23 09:15:56 sheldonh Exp $
 #
 # Makefile variables of interest:
 #
@@ -65,11 +65,6 @@ MAN8= ap.8 conflict.8 dp.8 fmtdump.8 install-mh.8 mh-mts.8 post.8
 
 pre-configure:
 	cd ${WRKSRC}; chmod +w configure
-
-# Since we patch the autoconf files as well as their outputs, avoid attempt
-# to regenerate header input files with 'autoheader' by Makefile.
-post-patch:
-	@${TOUCH} ${WRKSRC}/stamp-h.in
 
 post-install:
 	@PKG_PREFIX='${PREFIX}' sh ${PKGDIR}/INSTALL
