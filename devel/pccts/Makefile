@@ -3,7 +3,7 @@
 # Date created:				22 June 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/pccts/Makefile,v 1.6 1999/08/25 05:49:47 obrien Exp $
 #
 
 DISTNAME=		pccts133mr
@@ -12,6 +12,8 @@ CATEGORIES=		devel
 MASTER_SITES=		http://www.polhode.com/
 
 MAINTAINER=		andy@icc.surw.chel.su
+
+FETCH_BEFORE_ARGS=	-b
 
 USE_ZIP=		yes
 WRKSRC=			${WRKDIR}/pccts
