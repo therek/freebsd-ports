@@ -2,7 +2,7 @@
 # Date created:        27 March 2001
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/deskutils/phpgroupware/Makefile,v 1.1 2001/03/27 23:06:00 olgeni Exp $
+# $FreeBSD: ports/deskutils/phpgroupware/Makefile,v 1.2 2001/03/29 21:37:29 olgeni Exp $
 
 PORTNAME=	phpgroupware
 PORTVERSION=	0.9.9p1
@@ -19,6 +19,6 @@ NO_BUILD=	yes
 WRKSRC=		${WRKDIR}/phpgroupware
 
 do-install:
-		@${CP} -r ${WRKDIR}/phpgroupware ${PREFIX}/www/data.default/
+		@${CP} -r ${WRKDIR}/phpgroupware ${PREFIX}/www/data/
 
 .include <bsd.port.mk>
