@@ -1,5 +1,5 @@
-@comment $FreeBSD$
-@comment We just copy the file in the kernel module dir. 
+@comment $FreeBSD: ports/net/nvnet/pkg-plist,v 1.1 2003/12/07 05:34:23 obrien Exp $
+@comment We just copy the file in the kernel module dir.
 %%PORTDOCS%%%%DOCSDIR%%/README
 %%PORTDOCS%%%%DOCSDIR%%/nvidia_pci.c.diff
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
