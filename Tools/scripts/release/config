@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Tools/scripts/release/config,v 1.1 2002/05/20 07:14:42 will Exp $
+# $FreeBSD: ports/Tools/scripts/release/config,v 1.2 2002/10/08 04:08:39 murray Exp $
 #
 # disc information
 #
@@ -7,7 +7,7 @@
 disc1		1		0		435000000
 disc2		1		0		0
 disc3		1		0		650000000
-disc4		1		0		0
+disc4		1		0		650000000
 disc5		1		1		0
 disc6		1		1		0
 disc7		1		1		0
