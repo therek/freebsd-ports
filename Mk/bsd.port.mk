@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.379 2001/09/22 11:42:33 knu Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.380 2001/09/23 00:33:58 obrien Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -133,9 +133,9 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  compression.
 # USE_ZIP		- Says that the port distfile uses zip, not tar w/[bg]zip
 #				  for compression.
-# USE_GCC295	- Says that the port requirest this version of gcc, either in
+# USE_GCC295	- Says that the port requires this version of gcc, either in
 #				  the system or installed from a port.
-# USE_GCC30		- Says that the port requirest this version of gcc, either in
+# USE_GCC30		- Says that the port requires this version of gcc, either in
 #				  the system or installed from a port.
 # USE_GMAKE		- Says that the port uses gmake.
 # GMAKE			- Set to path of GNU make if not in $PATH (default: gmake).
