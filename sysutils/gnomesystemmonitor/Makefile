@@ -2,11 +2,11 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/sysutils/gtop/Makefile,v 1.23 2000/10/05 07:17:19 reg Exp $
+# $FreeBSD: ports/sysutils/gtop/Makefile,v 1.24 2000/11/20 17:29:05 ade Exp $
 #
 
 PORTNAME=	gtop
-PORTVERSION=	1.0.10
+PORTVERSION=	1.0.11
 CATEGORIES=	sysutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gtop
