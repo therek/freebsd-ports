@@ -2,7 +2,7 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.6 2000/07/26 03:40:27 jdp Exp $
+# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.7 2000/09/30 23:47:11 jdp Exp $
 #
 
 PORTNAME=	pm3-base
@@ -55,7 +55,7 @@ BOOTSTRAP=	pm3-${PORTVERSION}-${TARGET}-boot.tar.bz2
 .else
 TARGET=		FreeBSD4
 TARGETDIR=	freebsd-4
-BOOTSTRAP=	pm3-${PORTVERSION}a-${TARGET}-boot.tar.bz2
+BOOTSTRAP=	pm3-${PORTVERSION}-${TARGET}-boot.tar.bz2
 .endif
 WORDSIZE=	32
 .elif ${ARCH} == "alpha"
