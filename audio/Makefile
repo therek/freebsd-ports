@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.148 2000/07/06 03:55:28 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.149 2000/07/10 03:12:34 steve Exp $
 #
 
     SUBDIR += afsp
@@ -64,6 +64,7 @@
     SUBDIR += napster
     SUBDIR += nas
     SUBDIR += nspmod
+    SUBDIR += opennap
     SUBDIR += pimp3
     SUBDIR += play
     SUBDIR += playmidi
