@@ -2,7 +2,7 @@
 # Date created:        28 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.13 2000/07/11 22:02:22 ade Exp $
+# $FreeBSD: ports/graphics/sodipodi/Makefile,v 1.14 2000/07/20 12:19:07 nakai Exp $
 #
 
 PORTNAME=	sodipodi
@@ -26,7 +26,8 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
+		--datadir=${PREFIX}/share/gnome \
+		--without-bonobo
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
