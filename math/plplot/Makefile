@@ -2,18 +2,14 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.17 2000/09/05 01:53:34 steve Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.18 2001/06/13 16:07:08 kevlo Exp $
 #
 
 PORTNAME=	plplot
-PORTVERSION=	5.0.3
+PORTVERSION=	5.0.4
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
-
-PATCH_SITES=	${MASTER_SITES}
-PATCHFILES=	${DISTNAME}.patch1.gz
-PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
 
