@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.354 2001/04/10 11:24:40 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.355 2001/04/10 11:26:15 lioux Exp $
 #
 
     SUBDIR += 3dc
@@ -110,6 +110,7 @@
     SUBDIR += hlserver-dod
     SUBDIR += hlserver-fa
     SUBDIR += hlserver-flf
+    SUBDIR += hlserver-opfor
     SUBDIR += icbm3d
     SUBDIR += icebreaker
     SUBDIR += ifm
