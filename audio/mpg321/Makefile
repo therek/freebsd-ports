@@ -2,11 +2,11 @@
 # Date created:			Mar 17, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg321/Makefile,v 1.9 2001/07/26 06:30:34 ijliao Exp $
+# $FreeBSD: ports/audio/mpg321/Makefile,v 1.10 2001/08/10 19:43:02 lioux Exp $
 #
 
 PORTNAME=	mpg321
-PORTVERSION=	0.1.3
+PORTVERSION=	0.1.5
 CATEGORIES=	audio
 MASTER_SITES=	http://people.debian.org/~drew/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -17,6 +17,7 @@ LIB_DEPENDS=	ao.1:${PORTSDIR}/audio/libao
 BUILD_DEPENDS=	${LOCALBASE}/lib/libmad.a:${PORTSDIR}/audio/mad
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--disable-mpg123-symlink
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
