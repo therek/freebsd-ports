@@ -2,13 +2,14 @@
 # Date created:		05.Jul 2000
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/ldapmodule/Makefile,v 1.7 2001/06/24 04:28:32 dinoex Exp $
+# $FreeBSD: ports/net/ldapmodule/Makefile,v 1.8 2001/09/13 03:47:37 dinoex Exp $
 
 PORTNAME=	ldapmodule
 PORTVERSION=	1.10alpha3
 PORTREVISION=	3
 CATEGORIES=	net
-MASTER_SITES=	ftp://python-ldap.sourceforge.net/pub/python-ldap/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	python-ldap
 DISTNAME=	python-ldap-${PORTVERSION}-src
 
 MAINTAINER=	dinoex@FreeBSD.org
