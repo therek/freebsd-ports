@@ -3,7 +3,7 @@
 # Whom:			Trevor Johnson <trevor@jpj.net>
 # based on work by thepish and girgen@partitur.se
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/bsdi-netscape47-communicator/Makefile,v 1.65 2000/06/06 21:50:47 will Exp $
 #
 
 PORTNAME=	bsdi-netscape-${BROWSER}
@@ -18,6 +18,8 @@ MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/english/4.73/unix/unsuppor
 DISTFILES=	${BROWSER}-v473-export.x86-bsdi-bsd2.tar.gz
 
 MAINTAINER=	trevor@jpj.net
+
+NO_FORTIFY=	"frozen until further notice--http://www.fortify.net/latest_main.html"
 
 RUN_DEPENDS=	netscape:${PORTSDIR}/www/netscape-wrapper
 
