@@ -2,11 +2,11 @@
 # Date created:				Thu Aug 23 09:10:22 EDT 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/glass/Makefile,v 1.1 2001/08/29 11:53:54 ijliao Exp $
 #
 
 PORTNAME=	glass
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	graphics devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
