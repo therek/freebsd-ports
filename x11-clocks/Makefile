@@ -1,6 +1,7 @@
-# $FreeBSD: ports/x11-clocks/Makefile,v 1.16 1999/09/25 22:29:48 cpiazza Exp $
+# $FreeBSD: ports/x11-clocks/Makefile,v 1.17 2000/05/17 23:39:57 will Exp $
 #
 
+    SUBDIR += abclock
     SUBDIR += asclock
     SUBDIR += asclock-gtk
     SUBDIR += asclock-xlib
