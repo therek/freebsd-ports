@@ -3,14 +3,14 @@
 # Date created:         2 November 1997
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/cdrecord/Makefile,v 1.17 1999/08/31 01:59:35 peter Exp $
 #
 
 DISTNAME=	cdrecord-1.8a22
 CATEGORIES=	sysutils audio
 MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/alpha/
 
-MAINTAINER=	jmz@FreeBSD.org
+MAINTAINER=	dirk@FreeBSD.org
 
 WRKSRC=         ${WRKDIR}/cdrecord-1.8
 MAN1=		cdrecord.1 cdda2wav.1
