@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/devel/libtool15/pkg-plist,v 1.8 2003/06/29 14:57:19 ade Exp $
+@comment $FreeBSD: ports/devel/libtool15/pkg-plist,v 1.9 2003/07/02 18:26:53 ade Exp $
 bin/libtool%%BUILD_VERSION%%
 bin/libtoolize%%BUILD_VERSION%%
 libexec/libtool%%BUILD_VERSION%%/libtool
@@ -26,7 +26,6 @@ share/libtool%%BUILD_VERSION%%/libltdl/ltdl.c
 share/libtool%%BUILD_VERSION%%/libltdl/ltdl.h
 share/libtool%%BUILD_VERSION%%/libltdl/ltmain.sh
 share/libtool%%BUILD_VERSION%%/libltdl/missing
-share/libtool%%BUILD_VERSION%%/libltdl/mkinstalldirs
 share/libtool%%BUILD_VERSION%%/ltmain.sh
 @dirrm share/libtool%%BUILD_VERSION%%/libltdl
 @dirrm share/libtool%%BUILD_VERSION%%
