@@ -1,8 +1,8 @@
 # New ports collection makefile for:	understand code browser for c/c++
 # Date created:		01 Mar 2001
-# Whom:			Mario Sergio Fujikawa Ferreira <liouxFreeBSD.org>
+# Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/understand_c/Makefile,v 1.2 2001/03/14 17:02:57 lioux Exp $
+# $FreeBSD: ports/devel/understand_c/Makefile,v 1.3 2001/03/18 03:30:05 lioux Exp $
 #
 
 PORTNAME=	understand_c
@@ -12,7 +12,7 @@ CATEGORIES=	devel linux
 MASTER_SITES=	http://www.scitools.com/ftp/pub/download/understand_c/latest/
 DISTNAME=	und_c-14b105-linux
 
-MAINTAINER=	liouxFreeBSD.org
+MAINTAINER=	lioux@FreeBSD.org
 
 ONLY_FOR_ARCHS=	i386
 USE_LINUX=	yes
