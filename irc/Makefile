@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.29 2001/05/06 10:41:44 knu Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.30 2001/05/06 10:43:22 knu Exp $
 #
 
     SUBDIR += bitchx
@@ -15,6 +15,7 @@
     SUBDIR += ircatlite
     SUBDIR += ircd-hybrid
     SUBDIR += irchat-pj-emacs20
+    SUBDIR += irchat-pj-xemacs21-mule
     SUBDIR += iroffer
     SUBDIR += irssi
     SUBDIR += liece-dcc
