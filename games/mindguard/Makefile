@@ -2,11 +2,11 @@
 # Date created:		27 July 2000
 # Whom:			kris
 #
-# $FreeBSD: ports/games/mindguard/Makefile,v 1.1 2000/07/28 07:13:25 kris Exp $
+# $FreeBSD: ports/games/mindguard/Makefile,v 1.2 2000/10/05 06:36:14 reg Exp $
 #
 
 PORTNAME=	mindguard
-PORTVERSION=	0.0.0.2
+PORTVERSION=	0.0.0.3
 CATEGORIES=	games
 MASTER_SITES=	http://zapatopi.net/mindguard/
 EXTRACT_SUFX=	.tgz
