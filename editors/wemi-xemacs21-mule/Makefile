@@ -3,7 +3,7 @@
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/wemi-xemacs-mule/Makefile,v 1.7 1999/10/16 06:06:29 shige Exp $
+# $FreeBSD: ports/editors/wemi-xemacs-mule/Makefile,v 1.8 1999/10/18 16:21:09 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,7 +16,7 @@ MASTERDIR=	${.CURDIR}/../../editors/wemi-emacs
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs-mule
-EMACS_VER=	21.1.6
+EMACS_VER=	21.1.8
 EMACS_PACKAGESDIR=	lib/${EMACS_NAME}/site-packages
 # packages-subdirectories which this port requires
 EMACS_PACKAGES_SUBDIRS= info lisp man pkginfo
