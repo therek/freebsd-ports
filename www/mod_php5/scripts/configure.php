@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.123 2001/04/11 22:49:42 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.124 2001/04/16 11:50:14 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -36,6 +36,7 @@ gettext		"gettext library support" OFF \
 japanese	"jstring and mbregex module" OFF \
 YP		"YP/NIS support" OFF \
 BCMath		"BCMath support" OFF \
+Hyperwave	"Hyperwave support" OFF \
 ming		"ming library support" OFF \
 sockets		"sockets support" OFF \
 sysvsem		"System V semaphore support" OFF \
@@ -205,6 +206,9 @@ EOF
 			;;
 		\"BCMath\")
 			echo "CONFIGURE_ARGS+=--enable-bcmath"
+			;;
+		\"Hyperwave\")
+			echo "CONFIGURE_ARGS+=--with-hyperwave=yes"
 			;;
 		\"ming\")
 			${CAT} << EOF
