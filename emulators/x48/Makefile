@@ -2,19 +2,25 @@
 # Date created:         Thu Oct 24 13:10:59 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/x48/Makefile,v 1.6 2000/04/12 04:56:10 mharo Exp $
+# $FreeBSD: ports/emulators/x48/Makefile,v 1.7 2000/04/23 22:59:21 kris Exp $
 #
 
 PORTNAME=	x48
-PORTVERSION=	0.4.0
+PORTVERSION=	0.4.1d
 CATEGORIES=	emulators
-MASTER_SITES=	${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=	system/emulators
+MASTER_SITES=	http://home.earthlink.net/~rmmlgetz/
+DISTNAME=	${PORTNAME}_041d
 
 MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
+
+
+WRKSRC=		${WRKDIR}/x48-0.4.1
+
+post-extract:
+	cd ${WRKSRC}/readline && ${RM} *.o
 
 post-install:
 	${MKDIR} ${PREFIX}/share/x48
