@@ -2,11 +2,11 @@
 # Date created:				21 September 1999
 # Whom:			Konstantin Chuguev <Konstantin.Chuguev@dante.org.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/iconv/Makefile,v 1.5 2000/09/12 10:06:46 sobomax Exp $
 #
 
 PORTNAME=	iconv
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	converters
 MASTER_SITES=	http://www.dante.net/staff/konstantin/FreeBSD/iconv/
 
