@@ -3,7 +3,7 @@
 # Date created:		25 December 1994
 # Whom:			joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/cpmtools/Makefile,v 1.17 1999/08/25 05:49:12 obrien Exp $
 #
 
 DISTNAME=	cpm-1.1
@@ -21,6 +21,5 @@ MAN1=		cpm.1
 #
 do-build:
 	@(cd ${WRKSRC}; ${MAKE} PREFIX=${PREFIX} ${MAKE_FLAGS} ${MAKEFILE} all)
-
 
 .include <bsd.port.mk>
