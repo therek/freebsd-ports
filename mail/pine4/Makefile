@@ -2,7 +2,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.52 2001/04/05 03:21:41 nsayer Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.53 2001/05/02 03:40:33 nsayer Exp $
 #
 
 PORTNAME=	pine
@@ -12,7 +12,7 @@ CATEGORIES=	mail news
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER?=	ports@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 MAN1=		pine.1 pico.1 pilot.1
 
