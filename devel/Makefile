@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.613 2001/08/12 14:12:06 ijliao Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -178,6 +178,7 @@
     SUBDIR += icu
     SUBDIR += id-utils
     SUBDIR += idle
+    SUBDIR += idlefork
     SUBDIR += ilu
     SUBDIR += imake
     SUBDIR += imake-4
