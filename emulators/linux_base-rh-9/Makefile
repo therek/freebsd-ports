@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.54 2001/05/24 08:28:41 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		linux_base
@@ -15,7 +15,7 @@ DISTFILES=		${RPM_SET1} ${RPM_LDCONFIG} ${RPM_SET2} \
 PATCH_SITES=		${RPM_MIRRORS:S/__DIR__/${UPDDIR}/g}
 PATCHFILES=		${UPDATES}
 
-MAINTAINER=		marcel@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 BUILD_DEPENDS=		rpm:${PORTSDIR}/archivers/rpm
 
