@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.491 2005/01/19 11:52:27 edwin Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.492 2005/01/19 14:13:08 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -1289,7 +1289,7 @@ http_access deny Gopher</pre>
     <description>
       <body xmlns="http://www.w3.org/1999/xhtml">
 	<p>A Secunia Security Advisory reports that Javier
-	  Fern&#225;ndez-Sanguino Pe&#241;a has found temporary file
+	  Fernández-Sanguino Peña has found temporary file
 	  creation vulnerabilities in the fixps and psmandup scripts
 	  which are part of a2ps.  These vulnerabilities could lead to
 	  an attacker overwriting arbitrary files with the credentials
