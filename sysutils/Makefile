@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.81 1999/10/21 05:38:30 cpiazza Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.82 1999/10/31 16:31:25 dillon Exp $
 #
 
     SUBDIR += LPRng
@@ -25,11 +25,13 @@
     SUBDIR += ffsrecov
     SUBDIR += flexbackup
     SUBDIR += gcombust
+    SUBDIR += glload
     SUBDIR += gnomeadmin
     SUBDIR += gnomecontrolcenter
-    SUBDIR += glload
+    SUBDIR += gpart
     SUBDIR += gtar
     SUBDIR += gtop
+    SUBDIR += guitar
     SUBDIR += idled
     SUBDIR += lavaps
     SUBDIR += libretto-config
