@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.556 2001/06/12 15:14:53 markp Exp $
+# $FreeBSD: ports/net/Makefile,v 1.557 2001/06/15 12:46:38 markp Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -374,6 +374,7 @@
     SUBDIR += traceroute
     SUBDIR += trafd
     SUBDIR += trafshow
+    SUBDIR += tridiavnc
     SUBDIR += ttcp
     SUBDIR += ttt
     SUBDIR += tund
