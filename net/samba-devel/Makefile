@@ -3,7 +3,7 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.43 1999/11/17 15:52:11 hosokawa Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.44 1999/12/24 18:39:40 mharo Exp $
 #
 
 DISTNAME=	samba-2.0.6
@@ -93,7 +93,7 @@ post-install:
 			${WRKDIR}/${DISTNAME}/docs/history ; do		\
 		${INSTALL_DATA} $$i ${PREFIX}/share/doc/samba ;		\
 	done
-	for i in faq htmldocs manpages textdocs yodldocs ; do		\
+	for i in faq htmldocs textdocs yodldocs ; do			\
 		${MKDIR} ${PREFIX}/share/doc/samba/$$i ;		\
 		for j in ${WRKDIR}/${DISTNAME}/docs/$$i/* ; do		\
 			${INSTALL_DATA} $$j ${PREFIX}/share/doc/samba/$$i ;\
