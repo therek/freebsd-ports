@@ -2,7 +2,7 @@
 # Date created:		11 Dez 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/emulators/frodo/Makefile,v 1.13 2001/03/18 07:51:01 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	frodo
@@ -40,15 +40,16 @@ do-install:
 	${INSTALL_DATA} "${WRKDIR}/Frodo/Frodo Logo" ${PREFIX}/libexec/frodo
 	${CP} "${WRKDIR}/Frodo/TkGui.tcl" ${PREFIX}/libexec/frodo
 	${MKDIR} ${PREFIX}/libexec/frodo/64prgs
-	@(${TAR} -C ${WRKDIR}/Frodo/64prgs -cf - . | ${TAR} -C ${PREFIX}/libexec/frodo/64prgs -xf -)
+	@${TAR} -C ${WRKDIR}/Frodo/64prgs -cf - . | \
+		${TAR} -C ${PREFIX}/libexec/frodo/64prgs -xf -
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/frodo
+	${MKDIR} ${DOCSDIR}
 .for i in CHANGES
-	${INSTALL_DATA} ${WRKDIR}/Frodo/${i} ${PREFIX}/share/doc/frodo
+	${INSTALL_DATA} ${WRKDIR}/Frodo/${i} ${DOCSDIR}/
 .endfor
-	@(${TAR} -C ${WRKDIR}/Frodo/Docs -cf - . | ${TAR} -C ${PREFIX}/share/doc/frodo -xf -)
+	@${TAR} -C ${WRKDIR}/Frodo/Docs -cf - . | ${TAR} -C ${DOCSDIR} -xf -
 .endif
 
 .include <bsd.port.mk>
