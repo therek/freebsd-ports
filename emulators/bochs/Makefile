@@ -3,7 +3,7 @@
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.29 2000/04/12 04:55:15 mharo Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.30 2000/07/17 13:40:09 sobomax Exp $
 #
 
 PORTNAME=	bochs
@@ -12,7 +12,7 @@ CATEGORIES= 	emulators
 MASTER_SITES= 	ftp://ftp.bochs.com/pub/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/}a
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 VGABIOS=	VGABIOS-elpin-2.20
 BIOS=		BIOS-bochs-990925a
