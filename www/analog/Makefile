@@ -4,11 +4,11 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/analog/Makefile,v 1.18 1999/08/31 02:42:37 peter Exp $
 #
 
-DISTNAME=       analog3.3
-PKGNAME=        analog-3.3
+DISTNAME=       analog3.32
+PKGNAME=        analog-3.32
 CATEGORIES=	www
 MASTER_SITES=   http://www.statslab.cam.ac.uk/~sret1/analog/ \
 		http://brendanr.simplenet.com/analog/ \
