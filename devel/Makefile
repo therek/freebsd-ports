@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.529 2001/05/08 12:21:52 ijliao Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.530 2001/05/08 12:34:52 ijliao Exp $
 #
 
     SUBDIR += ElectricFence
@@ -113,6 +113,7 @@
     SUBDIR += fpp
     SUBDIR += freelibiberty
     SUBDIR += freescope
+    SUBDIR += frink
     SUBDIR += ftnchek
     SUBDIR += funnelweb
     SUBDIR += g-wrap
