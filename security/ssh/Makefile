@@ -3,7 +3,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.89 2000/02/14 21:52:05 ache Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.90 2000/02/20 17:30:53 sumikawa Exp $
 #
 # Maximal ssh package requires YES values for
 # USE_PERL, USE_TCPWRAP
@@ -108,8 +108,8 @@ post-install:
 	fi
 	@if [ ! -f ${PREFIX}/etc/rc.d/sshd.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/sshd.sh startup file."; \
-		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/sshd.sh; \
-		${ECHO} "[ -x ${PREFIX}/sbin/sshd ] && ${PREFIX}/sbin/sshd && ${ECHO} -n ' sshd'" >> ${PREFIX}/etc/rc.d/sshd.sh; \
+		${SED} -e 's+!!PREFIX!!+${PREFIX}+g' ${FILESDIR}/sshd.sh \
+			> ${PREFIX}/etc/rc.d/sshd.sh \
 		${CHMOD} 751 ${PREFIX}/etc/rc.d/sshd.sh; \
 	fi
 
