@@ -3,7 +3,7 @@
 # Date created:			Jun 14, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/txt2man/Makefile,v 1.1 2001/06/14 06:39:19 ijliao Exp $
 #
 
 PORTNAME=	txt2man
@@ -14,10 +14,8 @@ MASTER_SITES=	http://mvertes.free.fr/download/
 MAINTAINER=	ijliao@FreeBSD.org
 
 ALL_TARGET=	txt2man.1
+INSTALL_TARGET=	install prefix=${PREFIX}
 
 MAN1=	txt2man.1
-
-post-patch:
-	@${PERL} -pi -e "s,/usr/local,${PREFIX},g" ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>
