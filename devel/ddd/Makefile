@@ -3,7 +3,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.28 2000/03/22 00:26:46 obrien Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.29 2000/04/11 21:27:45 mharo Exp $
 #
 
 PORTNAME=	ddd
@@ -22,22 +22,31 @@ CONFIGURE_ARGS=	--with-motif-libraries="${LIBXMDIR}" \
 		--with-readline-libraries=/usr/lib
 USE_GMAKE=	yes
 REQUIRES_MOTIF=	yes
+
 MAN1=		ddd.1
 
 .if defined(MOTIFLIB)
 .if defined(MOTIF_STATIC)
-LIBXMDIR!=	${ECHO} ${MOTIFLIB} | sed -e 's/\/libXm\.a//g' | awk '{print $$1}'
+LIBXMDIR!=	${ECHO} ${MOTIFLIB} | ${SED} -e 's/\/libXm\.a//g' | ${AWK} '{print $$1}'
 .else
-LIBXMDIR!=	${ECHO} ${MOTIFLIB} | sed -e 's/-L//g' | awk '{print $$1}'
+LIBXMDIR!=	${ECHO} ${MOTIFLIB} | ${SED} -e 's/-L//g' | ${AWK} '{print $$1}'
 .endif
 .else
 LIBXMDIR=	${X11BASE}
 .endif
 
+pre-configure:
+	@/usr/bin/find ${WRKSRC} -name configure | /usr/bin/xargs \
+		${PERL} -pi -e "s|-O2|-g|"
+
 post-configure:
 	${ECHO} "LIBXM = ${MOTIFLIB}" >> ${WRKSRC}/ddd/Makefile
 
+pre-build:
+	@${RM} -f ${WRKSRC}/doc/ddd.info*
+
 post-install:
+	/usr/bin/install-info ${PREFIX}/info/ddd.info ${PREFIX}/info/dir
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/PROBLEMS ${PREFIX}/share/doc/ddd
