@@ -4,11 +4,11 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.22 1999/12/23 05:22:50 ache Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.23 2000/02/15 19:51:13 ache Exp $
 #
 
-DISTNAME=       analog4.02
-PKGNAME=        analog-4.02
+DISTNAME=       analog4.03
+PKGNAME=        analog-4.03
 CATEGORIES=	www
 MASTER_SITES=   http://www.statslab.cam.ac.uk/~sret1/analog/ \
 		http://brendanr.simplenet.com/analog/ \
