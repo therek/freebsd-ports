@@ -3,15 +3,15 @@
 # Date created:			  Thur Nov 21, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/netcat/Makefile,v 1.10 2000/04/20 20:19:33 mharo Exp $
+# $FreeBSD: ports/net/netcat/Makefile,v 1.11 2000/11/11 06:03:31 obrien Exp $
 #
 
 PORTNAME=	netcat
 PORTVERSION=	1.10
 CATEGORIES=	net
-MASTER_SITES=	ftp://avian.org/src/hacks/  \
-		http://www.l0pht.com/users/10pht/  \
-		ftp://ftp.rge.com/pub/security/coast/mirrors/avian.org/netcat/
+MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/  \
+		ftp://ftp.cuhk.edu.hk/pub/packages/security/purdue/netutils/netcat/  \
+		http://www.planetmirror.com/pub/lprng/TOOLS/
 DISTNAME=	nc110
 EXTRACT_SUFX=	.tgz
 
