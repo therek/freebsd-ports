@@ -2,15 +2,15 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.18 2000/12/25 13:49:04 jedgar Exp $
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.19 2001/01/16 17:32:40 sobomax Exp $
 #
 
 PORTNAME=	wmhm
 PORTVERSION=	1.45
 PORTREVISION=	1
 CATEGORIES=	sysutils windowmaker
-MASTER_SITES=	ftp://muir.yi.org/pub/wmhm/ \
-		http://www.es.co.nz/~mmuir/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 
 MAINTAINER=	mmuir@cwnet.com
 
