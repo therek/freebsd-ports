@@ -2,7 +2,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/games/gnomegames/Makefile,v 1.22 2000/04/14 06:53:04 mharo Exp $
+# $FreeBSD: ports/games/gnomegames/Makefile,v 1.23 2000/06/01 16:10:10 ade Exp $
 #
 
 PORTNAME=	gnomegames
@@ -14,7 +14,8 @@ DISTNAME=	gnome-games-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
+		guile.6:${PORTSDIR}/lang/guile
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
