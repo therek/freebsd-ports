@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.250 2001/09/22 23:26:29 tobez Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.251 2001/10/02 11:31:52 tobez Exp $
 #
 
     SUBDIR += agrep
@@ -87,7 +87,6 @@
     SUBDIR += minidom
     SUBDIR += mkcatalog
     SUBDIR += modlogan
-    SUBDIR += mswordview
     SUBDIR += nfbtrans
     SUBDIR += nicetext
     SUBDIR += nl-ispell
