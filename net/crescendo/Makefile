@@ -2,7 +2,7 @@
 # Date created:         27.Apr 2000
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/net/crescendo/Makefile,v 1.2 2000/08/06 15:01:39 nbm Exp $
+# $FreeBSD: ports/net/crescendo/Makefile,v 1.3 2000/08/21 10:07:19 sobomax Exp $
 
 PORTNAME=	crescendo
 PORTVERSION=	1.1.6
@@ -11,21 +11,14 @@ MASTER_SITES=	http://crescendo.dpnd.com/files/
 
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 RUN_DEPENDS=	tf:${PORTSDIR}/net/tinyfugue
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS+=	--enable-compile-warnings=yes
-CONFIGURE_ARGS+=	--localstatedir=${PREFIX}/share/gnome \
-			--datadir=${PREFIX}/share/gnome \
-			--with-gnome=${PREFIX}
+CONFIGURE_ARGS=	--enable-compile-warnings=yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 CFLAGS+=	-g
 PLIST_SUB=	DOCDIR=${DOCDIR}

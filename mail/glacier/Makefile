@@ -2,7 +2,7 @@
 # Date created:		30 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/mail/glacier/Makefile,v 1.5 2000/06/01 16:25:19 ade Exp $
+# $FreeBSD: ports/mail/glacier/Makefile,v 1.6 2000/06/22 05:52:04 will Exp $
 #
 
 PORTNAME=	glacier
@@ -12,13 +12,13 @@ MASTER_SITES=	http://glacier.linuxave.net/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 USE_X_PREFIX=	yes
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG=${GTK_CONFIG}
-CONFIGURE_ARGS+=--datadir=${PREFIX}/share
 USE_GMAKE=	yes
+USE_GNOME=	yes
+GNU_CONFIGURE=	yes
+
+pre-patch:
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g'
 
 .include <bsd.port.mk>

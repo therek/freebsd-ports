@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.30 2000/09/28 18:03:34 ade Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.31 2000/10/03 16:31:26 ade Exp $
 #
 
 PORTNAME=	pan
@@ -13,23 +13,16 @@ DISTNAME=	pan-0.8.1beta6
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gnomeprint.12:${PORTSDIR}/print/gnomeprint \
+LIB_DEPENDS=	gnomeprint.12:${PORTSDIR}/print/gnomeprint \
 		uu.1:${PORTSDIR}/converters/uulib \
 		unicode.0:${PORTSDIR}/devel/libunicode
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_GMAKE=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib -luu"
 
 pre-patch:

@@ -2,7 +2,7 @@
 # Date Created:				18 September 1999
 # Whom:				 	Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.5 2000/08/01 16:26:20 reg Exp $
+# $FreeBSD: ports/x11-wm/gnome2wmaker/Makefile,v 1.6 2000/10/04 06:40:08 sobomax Exp $
 #
 
 PORTNAME=	gnome2wmaker
@@ -12,19 +12,11 @@ MASTER_SITES=	http://ulli.linuxbox.com/gnome2wmaker/
 
 MAINTAINER=     reg@FreeBSD.org
 
-BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
-		wmaker:${PORTSDIR}/x11-wm/windowmaker
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
-		wmaker:${PORTSDIR}/x11-wm/windowmaker
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 
 .include <bsd.port.mk>

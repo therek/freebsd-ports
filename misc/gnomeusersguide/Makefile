@@ -2,7 +2,7 @@
 # Date created:        02 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.11 2000/08/04 01:19:17 ade Exp $
+# $FreeBSD: ports/misc/gnomeusersguide/Makefile,v 1.12 2000/08/04 16:11:26 ade Exp $
 #
 
 PORTNAME=	gnomeusersguide
@@ -14,14 +14,10 @@ DISTNAME=	users-guide-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \

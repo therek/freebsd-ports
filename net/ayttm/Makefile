@@ -2,32 +2,23 @@
 # Date created:			1 Mar 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/everybuddy/Makefile,v 1.4 2000/09/05 20:05:46 jim Exp $
+# $FreeBSD: ports/net/everybuddy/Makefile,v 1.5 2000/10/03 17:06:17 jim Exp $
 #
 
 PORTNAME=	everybuddy
-PORTVERSION=	0.1.4-2
+PORTVERSION=	0.1.4.2
 PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	http://www.everybuddy.com/files/
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.2/-2/}
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		esd.2:${PORTSDIR}/audio/esound
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
-
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
-		GLIB_CONFIG="${GLIB_CONFIG}"
+USE_GMAKE=	yes
+USE_GNOME=	yes
+GNU_CONFIGURE=	yes
 
 MAN1=		everybuddy.1
-
-post-patch:
-	@${CP} ${FILESDIR}/config.h ${WRKSRC}/src
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.40 2000/09/08 12:23:55 tg Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.41 2000/09/21 16:00:06 sobomax Exp $
 #
 
 PORTNAME=	py-gnome
@@ -15,30 +15,22 @@ DISTNAME=	gnome-python-${PORTVERSION}
 MAINTAINER=	nectar@FreeBSD.org
 
 BUILD_DEPENDS=	${PYGTK_DEP}
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12			\
-		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter	\
-		panel_applet.4:${PORTSDIR}/x11/gnomecore
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${PYGTK_DEP}
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_GMAKE=	yes
 USE_PYTHON=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure pygnome/configure pygtk/configure
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}"				\
-		GTK_CONFIG="${GTK_CONFIG}"
 CONFIGURE_ARGS=	--with-python=${PYTHON_CMD}				\
 		--with-gnome-config=${X11BASE}/bin/gnome-config
 
 EG_SRC_DIR=	${WRKSRC}/pygnome/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gnome
 PYGTK_DEP=	${PYTHON_LIBDIR}/site-packages/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
-PLIST_COMPLETE= ${PKGDIR}/PLIST
 
 .if !defined(NOPORTDOCS)
-PLIST=		${PLIST_COMPLETE}
 post-install:
 	${MKDIR} ${EG_DST_DIR}
 	${TAR} -C ${EG_SRC_DIR} -cf - . | ${TAR} -C ${EG_DST_DIR} -xvf -
@@ -50,7 +42,7 @@ PLIST=		${WRKDIR}/PLIST.nodocs
 pre-install:
 	${RM} -f ${PLIST}
 	${GREP} -E -v '^(@dirrm )?(share/examples/)|(share/doc/)'       \
-		${PLIST_COMPLETE} > ${PLIST}
+		${PKGDIR}/PLIST > ${PLIST}
 .endif
 
 .include <bsd.port.mk>

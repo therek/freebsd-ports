@@ -2,7 +2,7 @@
 # Date created:				03/16/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.26 2000/08/22 18:40:34 nectar Exp $
+# $FreeBSD: ports/net/gnomeicu/Makefile,v 1.27 2000/10/03 09:28:27 reg Exp $
 #
 
 PORTNAME=	gnomeicu
@@ -15,18 +15,14 @@ MASTER_SITES=	ftp://gnomeicu.gdev.net/pub/gnomeicu/ \
 
 MAINTAINER=	nectar@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore \
-		gdbm.2:${PORTSDIR}/databases/gdbm
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
 
 USE_X_PREFIX=	yes
 USE_BZIP2=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--datadir=${PREFIX}/share/gnome
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \

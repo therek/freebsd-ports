@@ -2,7 +2,7 @@
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.19 2000/06/01 16:10:16 ade Exp $
+# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.20 2000/07/05 22:03:34 ade Exp $
 #
 
 PORTNAME=	gnomemc
@@ -14,19 +14,12 @@ DISTNAME=	mc-${PORTVERSION}
 
 MAINTAINER=	reg@FreeBSD.org
 
-LIB_DEPENDS=	panel_applet.4:${PORTSDIR}/x11/gnomecore
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--without-edit -with-ncurses
+CONFIGURE_ARGS=	--without-edit -with-ncurses
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		MAKE="gmake" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		26 May 2000
 # Whom:			Maxim Sobolev
 #
-# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.10 2000/08/03 09:26:21 asami Exp $
+# $FreeBSD: ports/sysutils/gnomefind/Makefile,v 1.11 2000/08/04 15:29:08 sobomax Exp $
 #
 
 PORTNAME=	gnomefind
@@ -14,23 +14,14 @@ DISTNAME=	gnome-find-${PORTVERSION}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		glade.4:${PORTSDIR}/devel/libglade
-RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
-
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
-CONFIGURE_ENV=	GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-lgnuregex -L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
+LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
+USE_GNOME=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-lgnuregex -L${LOCALBASE}/lib"
 
 MAN1=		gnome-find.1
 

@@ -2,7 +2,7 @@
 # Date created:				17th August 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.1 2000/08/18 15:09:36 ade Exp $
+# $FreeBSD: ports/sysutils/medusa/Makefile,v 1.2 2000/10/03 17:37:50 ade Exp $
 #
 
 PORTNAME=	medusa
@@ -13,23 +13,16 @@ MASTER_SITE_SUBDIR=	unstable/sources/medusa
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=    gnome.4:${PORTSDIR}/x11/gnomelibs \
-		oaf.0:${PORTSDIR}/devel/oaf \
+LIB_DEPENDS=	oaf.0:${PORTSDIR}/devel/oaf \
 		gnomevfs.0:${PORTSDIR}/devel/gnomevfs \
 		gconf-1.1:${PORTSDIR}/devel/gconf
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--enable-shared --enable-static
+CONFIGURE_ARGS=	--enable-shared --enable-static
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:

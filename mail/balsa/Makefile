@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.27 2000/09/28 18:00:48 ade Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.28 2000/10/02 11:01:59 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -14,29 +14,18 @@ MASTER_SITES=	http://www.theochem.kth.se/~pawsa/balsa/ \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		PropList.2:${PORTSDIR}/devel/libPropList \
+LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		pspell.2:${PORTSDIR}/textproc/pspell \
 		gnomeprint.12:${PORTSDIR}/print/gnomeprint
-RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter \
-		${X11BASE}/share/gnome/sounds/login.wav:${PORTSDIR}/audio/gnomeaudio \
-		panel:${PORTSDIR}/x11/gnomecore
-
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure libmutt/configure
-CONFIGURE_ENV=	CPPFLAGS='-I${LOCALBASE}/include' \
-		GTK_CONFIG='${GTK_CONFIG}' \
-		GLIB_CONFIG='${GLIB_CONFIG}' \
-		LIBS='-L${LOCALBASE}/lib'
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX} \
-		--enable-threads \
+CONFIGURE_ARGS=	--enable-threads \
 		--disable-more-warnings
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib"
 
 MAN1=		balsa.1
 

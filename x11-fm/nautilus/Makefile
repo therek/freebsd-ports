@@ -2,7 +2,7 @@
 # Date created:         		28th August 2000
 # Whom:                 		ade, archie
 #
-# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.2 2000/09/17 19:09:28 ade Exp $
+# $FreeBSD: ports/x11-fm/nautilus/Makefile,v 1.3 2000/10/03 17:37:51 ade Exp $
 #
 
 PORTNAME=	nautilus
@@ -25,16 +25,15 @@ MOZILLA=	mozilla-embedded
 BUILD_DEPENDS=	${X11BASE}/lib/${MOZILLA}/libgtkembedmoz.so:${PORTSDIR}/www/${MOZILLA}
 .endif
 
-GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
-GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
+USE_GNOME=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-pthread -L${LOCALBASE}/lib" \
+		LIBPNG="-L${LOCALBASE}/lib -lpng -lz ${MOZILLA_LIBS}"
 
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 .if defined(WITH_MOZILLA)
 CONFIGURE_ARGS+= --with-mozilla-lib-place=${X11BASE}/lib/${MOZILLA} \
 		 --with-mozilla-include-place=${X11BASE}/include/${MOZILLA}
@@ -44,12 +43,6 @@ PLIST_SUB+=	MOZILLA:=""
 MOZILLA_LIBS=	""
 PLIST_SUB+=	MOZILLA:="@comment "
 .endif
-
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		GLIB_CONFIG="${GLIB_CONFIG}" \
-		GTK_CONFIG="${GTK_CONFIG}" \
-		LIBS="-pthread -L${LOCALBASE}/lib" \
-		LIBPNG="-L${LOCALBASE}/lib -lpng -lz ${MOZILLA_LIBS}"
 
 .if !defined(WITH_MOZILLA)
 pre-extract:
