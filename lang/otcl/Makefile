@@ -2,7 +2,7 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/lang/otcl/Makefile,v 1.10 2000/06/16 08:48:20 sobomax Exp $
+# $FreeBSD: ports/lang/otcl/Makefile,v 1.11 2000/06/16 21:51:29 asami Exp $
 #
 
 PORTNAME=	otcl
@@ -18,8 +18,8 @@ INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
 USE_AUTOCONF=	yes
-PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh
-PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/DEINSTALL.tclsh
+PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg-install.tclsh
+PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg-deinstall.tclsh
 
 post-install:
 	${LN} -sf libotcl.so ${PREFIX}/lib/libotcl.so.1

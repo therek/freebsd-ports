@@ -2,7 +2,7 @@
 # Date created:		Aug 17 1996
 # Whom:			chuckr
 #
-# $FreeBSD: ports/lang/itcl/Makefile,v 1.27 2000/06/16 10:38:30 sobomax Exp $
+# $FreeBSD: ports/lang/itcl/Makefile,v 1.28 2000/06/16 21:51:20 asami Exp $
 #
 
 PORTNAME=	itcl
@@ -20,8 +20,8 @@ INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2
 CONFIGURE_ENV=	PORTSDIR=${PORTSDIR} ITCL_LIB_FILE=${ITCL_LIB_FILE}
-PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh
-PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/DEINSTALL.tclsh
+PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg-install.tclsh
+PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg-deinstall.tclsh
 
 SHLIB_MAJOR=	1
 SHLIB_MINOR=	1
