@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.36 2000/01/19 02:53:21 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.37 2000/01/25 22:12:09 sumikawa Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -21,6 +21,8 @@ LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl
 .include <bsd.port.pre.mk>
 CAT?=		/bin/cat
 DISTFILES!=	${CAT} ${FILESDIR}/distfiles
+IGNOREFILES!=	${CAT} ${FILESDIR}/ignorefiles
+DISTFILES+=	${IGNOREFILES}
 
 CVS_CMD?=	cvs -z3
 CVS_DATE=	Fri Jan  7 01:25:49 JST 2000
