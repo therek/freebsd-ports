@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.64 2001/06/23 19:25:32 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += FreeWnn-lib
@@ -15,6 +15,7 @@
     SUBDIR += eterm
     SUBDIR += ftghostscript5
     SUBDIR += gau
+    SUBDIR += ghostscript-gnu-cjk
     SUBDIR += ghostscript55httf
     SUBDIR += gtkcomm
     SUBDIR += h2ps
