@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.153 2003/05/22 15:45:48 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.154 2003/06/01 07:09:06 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -127,6 +127,7 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp.is.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.it.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.jp.debian.org/debian-non-US/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,linux/debian/debian-non-US/&,} \
 	ftp://ftp.nl.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.no.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp.pl.debian.org/debian-non-US/%SUBDIR%/ \
@@ -482,7 +483,8 @@ MASTER_SITE_REDHAT_LINUX+= \
 #	ring.exp.fujixerox.co.jp	ring.hosei.ac.jp
 #	ring.htcn.ne.jp			ring.ip-kyoto.ad.jp
 #	ring.iwate-pu.ac.jp		ring.jah.ne.jp
-#	ring.k-opti.com			ring.nihon-u.ac.jp		
+#	ring.k-opti.com			ring.maffin.ad.jp
+#	ring.nihon-u.ac.jp		
 #	ring.ocn.ad.jp			ring.pwd.ne.jp
 #	ring.qgpop.net			ring.riken.go.jp
 #	ring.sbp-shimane.net		ring.shibaura-it.ac.jp
