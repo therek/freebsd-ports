@@ -2,11 +2,11 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.13 2001/05/23 17:04:49 mi Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.14 2001/07/04 06:35:56 dwcjr Exp $
 #
 
 PORTNAME=	maildrop
-PORTVERSION=	1.3.3
+PORTVERSION=	1.3.4
 CATEGORIES=	mail
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -44,10 +44,10 @@ GNU_CONFIGURE=	yes
 INSTALL_TARGET=	install-maildrop install-man
 .endif
 
-MAN1=		dotlock.1 maildirmake.1 maildrop.1 mailbot.1 makemime.1 \
+MAN1=		dotlock.1 mailbot.1 maildirmake.1 maildrop.1 makemime.1 \
 		reformail.1 reformime.1
 MAN5=		maildropex.5 maildropfilter.5 maildropgdbm.5
-MAN8=		maildirquota.8 deliverquota.8
+MAN8=		deliverquota.8 maildirquota.8
 
 .if defined(WITHOUT_GDBM)
 CONFIGURE_ARGS+=	--without-db
