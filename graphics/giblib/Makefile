@@ -2,11 +2,11 @@
 # Date created:				12 Nov 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/giblib/Makefile,v 1.1 2000/12/19 08:42:44 will Exp $
 #
 
 PORTNAME=	giblib
-PORTVERSION=	1.0.1
+PORTVERSION=	1.1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
