@@ -1,8 +1,8 @@
 # New ports collection makefile for:    jext
 # Date created:		17 Febrary 2000
-# Whom:			Maxim Sobolev <sobomax@altavista.net>
+# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jext/Makefile,v 1.2 2000/05/02 01:51:30 steve Exp $
+# $FreeBSD: ports/editors/jext/Makefile,v 1.3 2000/05/07 15:35:48 steve Exp $
 #
 
 PORTNAME=	jext
@@ -11,7 +11,7 @@ CATEGORIES=	editors java
 MASTER_SITES=	http://members.xoom.com/romainguy/
 DISTFILES=	${PORTNAME}${EXTRACT_SUFX} swingall.jar
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/jdk
 

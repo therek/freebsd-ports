@@ -1,8 +1,8 @@
 # New ports collection makefile for:  squirm
 # Date created:     24 May 1999
-# Whom:             Maxim Sobolev <sobomax@altavista.net>
+# Whom:             Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squirm/Makefile,v 1.6 2000/02/15 23:54:36 mharo Exp $
+# $FreeBSD: ports/www/squirm/Makefile,v 1.7 2000/04/10 00:06:55 cpiazza Exp $
 #
 
 PORTNAME=	squirm
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.senet.com.au/squirm/ \
 		http://www.elab.co.za/squirm/
 DISTNAME=	squirm-1.0betaB
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid22
 

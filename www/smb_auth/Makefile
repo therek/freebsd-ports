@@ -1,8 +1,8 @@
 # New ports collection makefile for:	smb_auth
 # Date created:		13 January 2000
-# Whom:			Maxim Sobolev <sobomax@altavista.net>
+# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/smb_auth/Makefile,v 1.1 2000/01/29 05:56:24 steve Exp $
+# $FreeBSD: ports/www/smb_auth/Makefile,v 1.2 2000/04/10 00:06:49 cpiazza Exp $
 #
 
 PORTNAME=	smb_auth
@@ -10,7 +10,7 @@ PORTVERSION= 	0.05
 CATEGORIES=	www
 MASTER_SITES=	http://www.hacom.nl/~richard/software/
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/squid:${PORTSDIR}/www/squid22 \
 		${LOCALBASE}/sbin/smbd:${PORTSDIR}/net/samba

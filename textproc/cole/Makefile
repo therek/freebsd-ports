@@ -1,8 +1,8 @@
 # New ports collection makefile for:	cole
 # Date created:				4 November 1999
-# Whom:					Maxim Sobolev <sobomax@altavista.net>
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/cole/Makefile,v 1.1 1999/12/27 02:09:58 steve Exp $
+# $FreeBSD: ports/textproc/cole/Makefile,v 1.2 2000/04/09 21:52:16 cpiazza Exp $
 #
 
 PORTNAME=	cole
@@ -11,7 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://arturo.directmail.org/filters/archive/ \
 		http://homepages.go.com/~sobomax/filtersweb/
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 USE_LIBTOOL=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				13 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/maelstrom/Makefile,v 1.15 2000/04/22 21:58:25 vanilla Exp $
+# $FreeBSD: ports/games/maelstrom/Makefile,v 1.16 2000/04/23 06:48:37 vanilla Exp $
 #
 
 PORTNAME=		maelstrom
@@ -11,7 +11,7 @@ CATEGORIES=		games
 MASTER_SITES=		http://www.devolution.com/~slouken/projects/Maelstrom/src/
 DISTNAME=		Maelstrom-${PORTVERSION}
 
-MAINTAINER=		sobomax@altavista.net
+MAINTAINER=		sobomax@FreeBSD.org
 
 LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm \
 			SDL-1.0.2:${PORTSDIR}/devel/sdl

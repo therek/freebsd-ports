@@ -2,7 +2,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.11 2000/04/20 09:24:26 tg Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.12 2000/04/22 21:25:57 vanilla Exp $
 #
 
 PORTNAME=		sdl
@@ -11,7 +11,7 @@ CATEGORIES=		devel
 MASTER_SITES=		http://www.devolution.com/~slouken/SDL/release/
 DISTNAME=		SDL-${PORTVERSION}
 
-MAINTAINER=		sobomax@altavista.net
+MAINTAINER=		sobomax@FreeBSD.org
 
 LIB_DEPENDS=		esd.2:${PORTSDIR}/audio/esound
 BUILD_DEPENDS=		nasm:${PORTSDIR}/devel/nasm

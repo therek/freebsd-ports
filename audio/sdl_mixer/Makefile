@@ -1,8 +1,8 @@
 # New ports collection makefile for:	sdl_mixer
 # Date created:		24 Aprim 2000
-# Whom:			Maxim Sobolev <sobomax@altavista.net>
+# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/sdl_mixer/Makefile,v 1.1 2000/04/25 21:19:13 will Exp $
+# $FreeBSD: ports/audio/sdl_mixer/Makefile,v 1.2 2000/04/25 21:57:20 will Exp $
 #
 
 PORTNAME=	sdl_mixer
@@ -11,7 +11,7 @@ CATEGORIES=	audio
 MASTER_SITES=	http://www.devolution.com/~slouken/SDL/projects/SDL_mixer/src/
 DISTNAME=	SDL_mixer-${PORTVERSION}
 
-MAINTAINER=	sobomax@altavista.net
+MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=  	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel \
 		smpeg.0:${PORTSDIR}/graphics/smpeg \
