@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.111 2000/05/07 21:06:06 jedgar Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.112 2000/05/19 10:44:15 dirk Exp $
 #
 
     SUBDIR += LPRng
@@ -76,6 +76,7 @@
     SUBDIR += stat
     SUBDIR += stmpclean
     SUBDIR += su2
+    SUBDIR += symlinks
     SUBDIR += syslog-ng
     SUBDIR += tcplist
     SUBDIR += tua
