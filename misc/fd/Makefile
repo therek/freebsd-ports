@@ -3,11 +3,11 @@
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/fd/Makefile,v 1.14 1999/08/25 07:21:37 obrien Exp $
 #
 
-DISTNAME=	FD-1.03j
-PKGNAME=	fd-1.03j
+DISTNAME=	FD-1.03k
+PKGNAME=	fd-1.03k
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.ics.es.osaka-u.ac.jp/pub/FDclone/
 
