@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.317 2000/10/31 23:53:13 asami Exp $
+# $FreeBSD: ports/games/Makefile,v 1.318 2000/12/13 14:27:29 roam Exp $
 #
 
     SUBDIR += 3dc
@@ -177,6 +177,7 @@
     SUBDIR += trojka
     SUBDIR += tvp
     SUBDIR += nil
+    SUBDIR += nonsense
     SUBDIR += omega
     SUBDIR += uox3
     SUBDIR += wmeyes
