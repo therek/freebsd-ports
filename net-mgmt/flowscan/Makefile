@@ -2,12 +2,12 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.9 2001/03/25 09:20:58 andreas Exp $
+# $FreeBSD: ports/net/flowscan/Makefile,v 1.10 2001/03/25 11:48:47 andreas Exp $
 #
 
 PORTNAME=	flowscan
 PORTVERSION=    1.006
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	net
 MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/
 DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
@@ -34,7 +34,7 @@ pre-install:
 
 post-install:
 	@ ${INSTALL_SCRIPT} ${FILESDIR}/flowscan.sh \
-		 /usr/local/etc/rc.d/flowscan.sh.sample
+		 /usr/local/etc/rc.d/cflowd-flowscan.sh.sample
 .for i in	CampusIO.cf Napster_subnets.boulder SubNetIO.cf flowscan.cf \
 		local_nets.boulder our_subnets.boulder
 	@ ${INSTALL_DATA} ${WRKSRC}/cf/${i} \
