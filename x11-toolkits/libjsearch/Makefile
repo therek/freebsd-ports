@@ -2,7 +2,7 @@
 # Date created:				04 Jun 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.4 2000/09/10 13:24:08 sada Exp $
+# $FreeBSD: ports/x11-toolkits/libjsearch/Makefile,v 1.5 2000/09/17 21:29:11 steve Exp $
 #
 
 PORTNAME=	libjsearch
@@ -17,7 +17,7 @@ DISTNAME=	JSearch_source-${PORTVERSION}
 
 MAINTAINER=	lioux@linf.unb.br
 
-BUILD_DEPENDS=	nonexistent:${JXPORT}:configure \
+BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 		makemake:${JXPORT}
 LIB_DEPENDS=	jx-1_5_3.1:${JXPORT}
 

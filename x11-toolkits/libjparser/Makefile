@@ -2,7 +2,7 @@
 # Date created:				14 June 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/libjparser/Makefile,v 1.1 2000/07/10 04:08:46 steve Exp $
 #
 
 PORTNAME=	libjparser
@@ -14,13 +14,11 @@ DISTNAME=	JParser_source-${PORTVERSION}
 
 MAINTAINER=	lioux@linf.unb.br
 
-BUILD_DEPENDS=	nonexistent:${JXPORT}:configure \
+BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 		makemake:${JXPORT}
 LIB_DEPENDS=	jx-1_5_3.1:${JXPORT}
 
 WRKSRC=		${WRKDIR}/JX-1.5.3
-
-INSTALLS_SHLIB=	yes
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
@@ -33,6 +31,7 @@ PLIST_SUB=	PORTNAME="${PORTNAME}" \
 		LIBVERSION="${LIBVERSION}" \
 		EXTRALIBFILES_MAKE_FILES="${EXTRALIBFILES_MAKE_FILES}" \
 		INCLUDEDIR="${INCLUDEDIR}"
+INSTALLS_SHLIB=	yes
 
 # Make environment
 PORTINCLUDES=	-I${X11BASE}/include/jcore -I${X11BASE}/include/jx \
@@ -55,14 +54,15 @@ EXTRALIB_PREFIX=		${PREFIX}/lib/jx
 EXTRALIBDIRS=			lib make
 EXTRALIBFILES_MAKE_WRKSRC=	include/make
 EXTRALIBFILES_MAKE_FILES=	jparser_constants
+
+.include <bsd.port.pre.mk>
+
 # main jx distribution port wrksrc
 JXPORT=		${PORTSDIR}/x11-toolkits/jx
-JXPORT_WRKSRC=	${JXPORT}/work/JX-1.5.3
+JXPORT_WRKSRC!=	cd ${JXPORT} && ${MAKE} -V WRKSRC
 # main jx distribution files needed for building
 COPY_JXDIRS=		include
 COPY_JXFILES=		Makefile
-
-.include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 300000
 ALL_TARGET=	freebsd3.x

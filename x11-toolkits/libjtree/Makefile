@@ -2,7 +2,7 @@
 # Date created:				30 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjtree/Makefile,v 1.3 2000/06/16 21:52:35 asami Exp $
+# $FreeBSD: ports/x11-toolkits/libjtree/Makefile,v 1.4 2000/09/17 21:29:14 steve Exp $
 #
 
 PORTNAME=	libjtree
@@ -17,7 +17,7 @@ DISTNAME=	JTree_source-${PORTVERSION}
 
 MAINTAINER=	lioux@linf.unb.br
 
-BUILD_DEPENDS=	nonexistent:${JXPORT}:configure \
+BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 		makemake:${JXPORT}
 LIB_DEPENDS=	jx-1_5_3.1:${JXPORT}
 
@@ -56,14 +56,15 @@ EXTRALIB_PREFIX=		${PREFIX}/lib/jx
 EXTRALIBDIRS=			lib make
 EXTRALIBFILES_MAKE_WRKSRC=	include/make
 EXTRALIBFILES_MAKE_FILES=	jtree_constants
+
+.include <bsd.port.pre.mk>
+
 # main jx distribution port wrksrc
 JXPORT=		${PORTSDIR}/x11-toolkits/jx
-JXPORT_WRKSRC=	${JXPORT}/work/JX-1.5.3
+JXPORT_WRKSRC!=	cd ${JXPORT} && ${MAKE} -V WRKSRC
 # main jx distribution files needed for building
 COPY_JXDIRS=	include
 COPY_JXFILES=	Makefile
-
-.include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 300000
 ALL_TARGET=	freebsd3.x
