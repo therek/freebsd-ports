@@ -2,11 +2,11 @@
 # Date created:		01 Sep 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/uvscan-dat/Makefile,v 1.29 2001/05/09 22:27:56 jeh Exp $
+# $FreeBSD: ports/security/uvscan-dat/Makefile,v 1.30 2001/05/16 20:04:30 jeh Exp $
 #
 
 PORTNAME=	uvscan_dat
-PORTVERSION=	4138
+PORTVERSION=	4139
 CATEGORIES=	security
 MASTER_SITES=	http://download.nai.com/products/datfiles/4.x/nai/
 DISTNAME=	dat-${PORTVERSION}
