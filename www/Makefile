@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.184 2000/01/29 05:54:05 steve Exp $
+# $FreeBSD: ports/www/Makefile,v 1.185 2000/01/29 05:56:19 steve Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -6,6 +6,7 @@
     SUBDIR += adzapper
     SUBDIR += amaya
     SUBDIR += analog
+    SUBDIR += aolserver
     SUBDIR += apache13
     SUBDIR += apache13-fp
     SUBDIR += apache13-modssl
