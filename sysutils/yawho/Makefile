@@ -2,7 +2,7 @@
 # Date created:		16 December 2000
 # Whom:			Daniel Harris <dannyboy@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/yawho/Makefile,v 1.1 2000/12/16 20:33:11 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	yawho
@@ -12,11 +12,13 @@ MASTER_SITES=	http://wizard.ae.krakow.pl/~mike/download/
 
 MAINTAINER=	dannyboy@FreeBSD.org
 
+USE_REINPLACE=	yes
+
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 500014
 pre-patch:
-	@${PERL} -pi -e 's/kp_.?proc\.._/ki_/' ${WRKSRC}/process.c
+	@${REINPLACE_CMD} -E -e 's/kp_.?proc\.._/ki_/' ${WRKSRC}/process.c
 .endif
 
 GNU_CONFIGURE=	yes
