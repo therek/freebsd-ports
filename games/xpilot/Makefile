@@ -2,18 +2,18 @@
 # Date created:         18 July 1995
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/games/xpilot/Makefile,v 1.21 2001/01/16 17:30:50 sobomax Exp $
+# $FreeBSD: ports/games/xpilot/Makefile,v 1.22 2001/04/21 15:05:55 sheldonh Exp $
 #
 
 PORTNAME=	xpilot
-PORTVERSION=	4.3.1
+PORTVERSION=	4.3.2
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/ \
 		ftp://ftp.xpilot.org/pub/xpilot/old/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/multiplayer
 
-MAINTAINER=	sheldonh@FreeBSD.org
+MAINTAINER=	goranrunfeldt@home.se
 
 USE_IMAKE=	yes
 MAN6=		xpilot.6 xpilots.6 xp-replay.6
