@@ -2,11 +2,12 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.10 2001/06/04 14:54:32 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.11 2001/06/09 01:43:01 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
 PORTVERSION=	${RUBY_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	http://www.ruby-lang.org/~knu/	# ${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
@@ -89,6 +90,7 @@ post-install:
 .if !empty(RUBY_R)
 	${LN} -fs ${IRB_WITH_SUFFIX} ${IRB_WITHOUT_SUFFIX}${RUBY_R}
 .endif
+	${LDCONFIG} -m ${LOCALBASE}/lib
 	${RUBY_WITH_SUFFIX} ${RUBY_FLAGS} -i -p \
 		-e 'if $$. == 1; ' \
 		-e ' if /^#!/; ' \
@@ -98,6 +100,8 @@ post-install:
 		-e ' end;' \
 		-e 'end' \
 		${IRB_WITH_SUFFIX}
+	${MKDIR} ${LOCALBASE}/lib/xemacs/site-lisp
+	${MKDIR} ${RUBY_ELISPDIR}
 	${MKDIR} ${RUBY_EXAMPLESDIR}
 	${MKDIR} ${RUBY_DOCDIR}
 .if !defined(NOPORTDOCS)

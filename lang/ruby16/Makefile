@@ -2,11 +2,12 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.64 2001/06/04 14:54:31 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.65 2001/06/09 01:43:01 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
 PORTVERSION=	${RUBY_PORTVERSION}
+PORTREVISION=	1
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
@@ -87,6 +88,7 @@ post-install:
 .if !empty(RUBY_R)
 	${LN} -fs ${IRB_WITH_SUFFIX} ${IRB_WITHOUT_SUFFIX}${RUBY_R}
 .endif
+	${LDCONFIG} -m ${LOCALBASE}/lib
 	${RUBY_WITH_SUFFIX} ${RUBY_FLAGS} -i -p \
 		-e 'if $$. == 1; ' \
 		-e ' if /^#!/; ' \
@@ -96,6 +98,8 @@ post-install:
 		-e ' end;' \
 		-e 'end' \
 		${IRB_WITH_SUFFIX}
+	${MKDIR} ${LOCALBASE}/lib/xemacs/site-lisp
+	${MKDIR} ${RUBY_ELISPDIR}
 	${MKDIR} ${RUBY_EXAMPLESDIR}
 	${MKDIR} ${RUBY_DOCDIR}
 .if !defined(NOPORTDOCS)
