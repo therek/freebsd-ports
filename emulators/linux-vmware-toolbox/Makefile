@@ -2,7 +2,7 @@
 # Date created:		10 Aug 2000
 # Whom:			matusita@jp.FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/linux-vmware-toolbox/Makefile,v 1.1 2000/08/21 07:23:49 knu Exp $
 #
 
 PORTNAME=	vmware-toolbox
@@ -22,6 +22,8 @@ NO_BUILD=	yes
 
 RESTRICTED=	"Not sure if we can redistribute this."
 
+.include <bsd.port.pre.mk>
+
 LINUX_FLP?=	${DISTDIR}/linux.flp
 LINUX_DIR?=	/compat/linux
 MOUNT_PT?=	${WRKDIR}/mnt
@@ -36,8 +38,6 @@ BUILD_VER=	621
 MOUNT=		/sbin/mount
 UMOUNT=		/sbin/umount
 VNCONFIG=	/usr/sbin/vnconfig
-
-.include <bsd.port.pre.mk>
 
 pre-fetch:
 	@${ECHO} "========================================================================"
