@@ -3,7 +3,7 @@
 # Date created:         13 Dec 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/acron/Makefile,v 1.5 1999/08/28 01:57:39 mharo Exp $
+# $FreeBSD: ports/misc/acron/Makefile,v 1.6 1999/08/31 06:48:09 mharo Exp $
 #
 
 DISTNAME=       acron
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 NO_BUILD=	yes
 
 post-patch:
-	@/usr/bin/perl -pi -e "s|\@\@PREFIX\@\@|${PREFIX}|g;" ${WRKSRC}/whats
+	@${PERL} -pi -e "s|\@\@PREFIX\@\@|${PREFIX}|g;" ${WRKSRC}/whats
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/whats ${PREFIX}/bin
