@@ -2,11 +2,13 @@
 # Date created:		24 Mar 2000
 # Whom:			imura@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/linux-netscape47-communicator/Makefile,v 1.1.1.1 2000/03/26 20:07:50 sada Exp $
+# $FreeBSD: ports/japanese/linux-netscape47-communicator/Makefile,v 1.2 2000/04/11 14:14:44 knu Exp $
 #
 
 RUN_DEPENDS=	${PREFIX}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/linux-netscape47-${BROWSER}
 RUN_DEPENDS+=	/compat/linux/usr/share/locale/ja_JP:${PORTSDIR}/japanese/linux_locale
+
+MAINTAINER=	imura@FreeBSD.org
 
 BROWSER_ARC=	${BROWSER}-linux
 MASTERDIR_LINUX= ${.CURDIR}/../linux-netscape47-communicator

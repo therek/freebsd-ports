@@ -2,7 +2,7 @@
 # Date created:		13 Mar 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.29 2000/04/11 14:15:36 knu Exp $
+# $FreeBSD: ports/japanese/netscape4-communicator/Makefile,v 1.30 2000/05/08 19:20:27 knu Exp $
 #
 
 PORTNAME=	netscape-${BROWSER_ARC}
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 		http://www.bres.tsukuba.ac.jp/~yohta/netscape/
 DISTNAME?=	communicator-ja-euc-v407-export.generic-generic-generic
 
-MAINTAINER=	sada@FreeBSD.org
+MAINTAINER?=	sada@FreeBSD.org
 
 # ?= for ports that include this Makefile
 RUN_DEPENDS?=	${PREFIX}/bin/${BROWSER_ARC}-${BROWSER_VERSION}:${PORTSDIR}/www/netscape${BROWSER_VER}-${BROWSER}
