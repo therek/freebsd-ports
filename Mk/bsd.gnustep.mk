@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.9 2004/01/20 09:14:09 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.10 2004/03/26 08:00:35 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -43,10 +43,17 @@
 GNUstep_Include_MAINTAINER=	dinoex@FreeBSD.org
 
 BUILD_DEPENDS+=	${LOCALBASE}/lib/libcallback.a:${PORTSDIR}/devel/ffcall
+.if !defined(GNUSTEP_WITHOUT_LIBOBJC)
 .if !defined(GNUSTEP_WITH_BASE_GCC)
-LIB_DEPENDS+=	objc:${PORTSDIR}/${GNUSTEP_OBJC_PORT}
+BUILD_DEPENDS+=	${TARGLIB}/libobjc.so:${PORTSDIR}/${GNUSTEP_GCC_PORT}
+RUN_DEPENDS+=	${TARGLIB}/libobjc.so:${PORTSDIR}/${GNUSTEP_GCC_PORT}
+.else
+BUILD_DEPENDS+=	${COMBOLIBDIR}/libobjc.so:${PORTSDIR}/${GNUSTEP_OBJC_PORT}
+RUN_DEPENDS+=	${COMBOLIBDIR}/libobjc.so:${PORTSDIR}/${GNUSTEP_OBJC_PORT}
+.endif
 .endif
 
+GNUSTEP_GCC_PORT?=	lang/gcc-objc
 GNUSTEP_MAKE_PORT?=	devel/gnustep-make
 GNUSTEP_OBJC_PORT?=	lang/gnustep-objc
 GNUSTEP_BASE_PORT?=	lang/gnustep-base
@@ -198,6 +205,10 @@ do-install:
 	rm -rf /root/GNUstep
 .endif
 
+.endif
+
+.if !defined(GNUSTEP_WITH_BASE_GCC)
+TARGLIB!=	(cd ${PORTSDIR}/${GNUSTEP_GCC_PORT} && make -V TARGLIB)
 .endif
 
 .endif
