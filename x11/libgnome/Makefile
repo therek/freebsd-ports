@@ -2,7 +2,7 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.73 2000/10/24 16:42:17 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.74 2000/11/01 15:44:50 sobomax Exp $
 #
 
 PORTNAME=	gnomelibs
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
 DISTNAME=	gnome-libs-${PORTVERSION}
 
-MAINTAINER=	ade@FreeBSD.org
+MAINTAINER?=	ade@FreeBSD.org
 
 LIB_DEPENDS=	ORBit.2:${PORTSDIR}/devel/ORBit
 
