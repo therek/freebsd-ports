@@ -2,17 +2,12 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.27 2000/11/02 22:56:44 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.28 2000/11/02 23:01:40 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
 PORTNAME=	vmware2
-.if defined(WANT_BETA)
-PORTVERSION=	2.0.3.786	# 2.0.3 RC1
-.else
-PORTVERSION=	2.0.2.621
-PORTREVISION=	3
-.endif
+PORTVERSION=	2.0.3.799
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		${FREEBSD_MODULE_SITES} \
@@ -80,14 +75,10 @@ post-extract:
 .for m in ${MODULES}
 	${TAR} -xf ${WRKSRC}/lib/modules/source/${m}.tar -C ${WRKSRC}
 .endfor
-.if defined(WANT_BETA)
 	${GUNZIP_CMD} ${WRKSRC}/man/man1/vmware.1.gz
-.endif
 
 pre-patch:
-.if defined(WANT_BETA)
 	${PERL} -i -ne 'if (m{^Index: vmnet-only/userif\.c$$}..m{^Index: vmnet-only/vm_oui\.h$$}) { next unless m{^Index: vmnet-only/vm_oui\.h$$} } print' ${WRKDIR}/vmnet-freebsd.diff
-.endif
 .for m in ${MODULES}
 	${CP} -R ${WRKDIR}/${m}-only ${WRKSRC}/
 	${PATCH} ${PATCH_ARGS} < ${WRKDIR}/${m}-freebsd.diff
