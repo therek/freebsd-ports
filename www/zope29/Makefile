@@ -2,11 +2,11 @@
 # Date created:         Sat 21 Aug 1999
 # Whom:                 Peter Cornelius <pcc@gmx.net>
 #
-# $FreeBSD: ports/www/zope/Makefile,v 1.30 2001/08/04 17:28:59 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zope
-PORTVERSION=	2.4.1
+PORTVERSION=	2.4.2
 PORTREVISION=	0
 CATEGORIES=	www python zope
 MASTER_SITES=	http://www.zope.org/Products/Zope/${PORTVERSION}/
@@ -77,10 +77,12 @@ do-install:
 	@(cd ${ZOPEBASEDIR}/pcgi && ${RM} *.o)
 	@#
 	@${MKDIR} ${CGIBINDIR}
-	@(cd ${ZOPEBASEDIR} ; \
-		${INSTALL} -m 555 Zope.cgi \
+	@(cd ${ZOPEBASEDIR} && \
+		${MV} Zope.cgi \
 			pcgi/pcgi-wrapper \
 			${CGIBINDIR} )
+	@(cd ${CGIBINDIR} && \
+		${CHMOD} 555 Zope.cgi pcgi-wrapper )
 	@#
 	@${ECHO} "===>   Fixing permissions of Zope's own var directory..."
 	@${CHMOD} ugo+rwt ${ZOPEBASEDIR}/var
