@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.32 2003/09/29 12:55:50 krion Exp $
+@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.33 2003/11/13 20:51:18 sergei Exp $
 bin/tmda-address
 bin/tmda-check-address
 bin/tmda-filter
@@ -100,13 +100,20 @@ bin/tmda-sendmail
 %%PORTDOCS%%%%DOCSDIR%%/config-server.html
 %%PORTDOCS%%%%DOCSDIR%%/config-vars.html
 %%PORTDOCS%%%%DOCSDIR%%/config.html
-%%PORTDOCS%%%%DOCSDIR%%/download.html
 %%PORTDOCS%%%%DOCSDIR%%/donations.html
+%%PORTDOCS%%%%DOCSDIR%%/download.html
 %%PORTDOCS%%%%DOCSDIR%%/features.html
 %%PORTDOCS%%%%DOCSDIR%%/filter-sources.html
 %%PORTDOCS%%%%DOCSDIR%%/history.html
 %%PORTDOCS%%%%DOCSDIR%%/howto-template.html
 %%PORTDOCS%%%%DOCSDIR%%/howtos.html
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-186x253.png
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-47x64.png
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-562x765.png
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-70x95.png
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-93x127.png
+%%PORTDOCS%%%%DOCSDIR%%/img/tmda-nt-616x616.png
+%%PORTDOCS%%@dirrm %%DOCSDIR%%/img
 %%PORTDOCS%%%%DOCSDIR%%/index.html
 %%PORTDOCS%%%%DOCSDIR%%/install.html
 %%PORTDOCS%%%%DOCSDIR%%/inuse.html
