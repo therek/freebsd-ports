@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.271 2004/12/21 17:50:02 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.272 2004/12/22 00:06:31 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -282,7 +282,7 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://sunsite.mff.cuni.cz/pub/fedora/%SUBDIR%/ \
 	ftp://ultra.linux.cz/pub/fedora/%SUBDIR%/ \
 	ftp://ftp.fi.muni.cz/pub/linux/fedora/linux/core/%SUBDIR%/ \
-	ftp://ftp6.linux.cz/pub/linux/fedora/linux/core/ (IPv6 only)%SUBDIR%/ \
+	ftp://ftp6.linux.cz/pub/linux/fedora/linux/core/%SUBDIR%/ \
 	ftp://ftp1.skynet.cz/pub/linux/fedora%SUBDIR%/ \
 	ftp://ftp.gin.cz/pub/fedora/core/%SUBDIR%/ \
 	ftp://klid.dk/pub/fedora/linux/core/%SUBDIR%/ \
@@ -417,7 +417,8 @@ MASTER_SITE_FEDORA_LINUX+= \
 	ftp://ftp.netcraft.com.au/pub/fedora/linux/core/%SUBDIR%/ \
 	http://mirror.pacific.net.au/linux/redhat/fedora/%SUBDIR%/ \
 	ftp://mirror.pacific.net.au/linux/redhat/fedora/%SUBDIR%/ \
-	ftp://ftp.wicks.co.nz/pub/linux/dist/fedora/%SUBDIR%/
+	ftp://ftp.wicks.co.nz/pub/linux/dist/fedora/%SUBDIR%/ \
+	http://fedora.quicknet.nl/%SUBDIR%/
 
 MASTER_SITE_FESTIVAL+= \
 	http://www.festvox.org/packed/festival/%SUBDIR%/ \
