@@ -1,15 +1,31 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openldap2/files/slapd.sh,v 1.1 2000/09/25 05:43:46 knu Exp $
 
-slapd=@@PREFIX@@/libexec/slapd
+slapd_program=@@PREFIX@@/libexec/slapd
+
+# Uncommnet one of the following:
+#
+# IPv4 Only
+#slapd_args='-h "ldap://0.0.0.0";'
+#
+# IPv6 and IPv4
+#slapd_ags='-h "ldap://[::] ldap://0.0.0.0";'
+#
+# IPv6 Only
+#slapd_args='-h "ldap://[::];'
+#
+#
+slapd_args=
+
 pidfile=/var/run/slapd.pid
 
 case "$1" in
 start)
     if [ -x $slapd ]; then
 	echo -n ' slapd'
-	$slapd
+	${slapd_program} ${slapd_args}
+
     fi
     ;;
 stop)
