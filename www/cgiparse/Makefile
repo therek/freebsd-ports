@@ -2,7 +2,7 @@
 # Date created:				30 March 1997
 # Whom:					jmg
 #
-# $FreeBSD: ports/www/cgiparse/Makefile,v 1.15 2000/09/24 18:42:04 jmg Exp $
+# $FreeBSD: ports/www/cgiparse/Makefile,v 1.16 2000/10/04 06:40:05 sobomax Exp $
 #
 
 PORTNAME=	cgiparse
@@ -17,5 +17,9 @@ LIB_DEPENDS=	mime.1:${PORTSDIR}/devel/mime:install
 
 GNU_CONFIGURE=	yes
 MAN3=		cgiclose.3 cgigetvalue.3 cginewquerystr.3
+INSTALLS_SHLIB=	yes
+
+post-install:
+	${LN} -sf libcgiparse.so.1 ${PREFIX}/lib/libcgiparse.so
 
 .include <bsd.port.mk>
