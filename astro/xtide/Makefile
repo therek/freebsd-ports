@@ -2,7 +2,7 @@
 # Date created:        30 August 1997
 # Whom:                Brion Moss <brion@queeg.com>
 #
-# $FreeBSD: ports/astro/xtide/Makefile,v 1.19 2001/09/01 17:55:08 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtide
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://bel-marduk.unh.edu/xtide/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} harmonics.txt.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=	patseal@hyperhost.net
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
