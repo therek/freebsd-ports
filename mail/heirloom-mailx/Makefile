@@ -2,11 +2,11 @@
 # Date created:		20 October 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/nail/Makefile,v 1.1 2000/10/20 23:00:58 kris Exp $
+# $FreeBSD: ports/mail/nail/Makefile,v 1.2 2001/01/14 08:02:08 kris Exp $
 #
 
 PORTNAME=	nail
-PORTVERSION=	9.23
+PORTVERSION=	9.25
 CATEGORIES=	mail
 MASTER_SITES=	http://omnibus.ruf.uni-freiburg.de/~gritter/archive/nail/
 
