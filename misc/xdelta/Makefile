@@ -2,11 +2,11 @@
 # Date created:					Sun May  4 21:40:06 CDT 1997
 # Whom:						jmacd
 #
-# $FreeBSD: ports/misc/xdelta/Makefile,v 1.18 2000/03/20 22:10:52 mharo Exp $
+# $FreeBSD: ports/misc/xdelta/Makefile,v 1.19 2000/04/14 08:47:05 asami Exp $
 #
 
 PORTNAME=	xdelta
-PORTVERSION=	1.0.2
+PORTVERSION=	1.1.1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.xcf.berkeley.edu/pub/xdelta/
 
