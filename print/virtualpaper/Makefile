@@ -2,7 +2,7 @@
 # Date created:		13 June 1996
 # Whom:			jkh
 #
-# $FreeBSD: ports/print/virtualpaper/Makefile,v 1.16 2001/06/25 23:13:51 jdp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	virtualpaper
@@ -68,7 +68,7 @@ TARGETDIR=	fbsd-alpha
 WORDSIZE=	64
 .endif
 
-.if empty(TARGET)
+.if !defined(TARGET)
 pre-fetch:
 	@${ECHO_MSG} "Cannot determine M3 target for this architecture"
 	@${FALSE}

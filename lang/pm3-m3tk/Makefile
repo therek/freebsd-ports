@@ -2,7 +2,7 @@
 # Date created:		11 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-m3tk/Makefile,v 1.4 2000/07/26 03:40:44 jdp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pm3-m3tk
@@ -56,7 +56,7 @@ TARGETDIR=	fbsd-alpha
 WORDSIZE=	64
 .endif
 
-.if empty(TARGET)
+.if !defined(TARGET)
 pre-fetch:
 	@${ECHO_MSG} "Cannot determine M3 target for this architecture"
 	@${FALSE}
