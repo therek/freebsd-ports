@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.8 2004/01/20 19:10:17 ume Exp $
+# $FreeBSD: ports/www/zope/files/zope.sh,v 1.1 2004/04/20 14:18:32 perky Exp $
 
 # PROVIDE: zope
 # REQUIRE: DAEMON
@@ -39,7 +39,7 @@ if checkyesno zope_enable; then
 			echo "Restarting Zope"
 		;;
 		*)
-			echo "Unknown aktion \"$1\""
+			echo "Unknown action \"$1\""
 		;;
 	esac
 
