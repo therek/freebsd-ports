@@ -3,7 +3,7 @@
 # Date created:         26 Dec 1999
 # Whom:                 dbaker
 #
-# $FreeBSD: ports/misc/dnetc/Makefile,v 1.1.1.1 1999/12/26 22:52:33 dbaker Exp $
+# $FreeBSD: ports/misc/dnetc/Makefile,v 1.2 2000/01/04 22:05:07 dbaker Exp $
 #
 
 DISTNAME=       dnetc
@@ -88,4 +88,4 @@ do-install:
 	${INSTALL} -c -m 644 -o ${CLIENTUID} -g ${CLIENTGID} ${WRKDIR}/dnetc.ini ${BINDIR}
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

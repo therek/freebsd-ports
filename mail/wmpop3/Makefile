@@ -3,7 +3,7 @@
 # Date created:			28 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/wmpop3/Makefile,v 1.6 1999/08/25 06:51:05 obrien Exp $
 #
 
 DISTNAME=	WMPop3-0.5.6a
@@ -34,4 +34,4 @@ post-install:
 	@${MKDIR} ${PREFIX}/share/doc/wmpop3 && ${CHMOD} a+rx ${PREFIX}/share/doc/wmpop3
 	@${INSTALL_DATA} ${WRKDIR}/${PKGNAME}/README ${PREFIX}/share/doc/wmpop3
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -3,7 +3,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.11 1999/12/22 13:39:50 jedgar Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.12 1999/12/23 01:34:34 jedgar Exp $
 #
 
 DISTNAME=	pan-0.6.7
@@ -37,4 +37,4 @@ pre-fetch:
 	@${ECHO}
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

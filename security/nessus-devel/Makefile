@@ -3,7 +3,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.5 1999/12/01 19:53:56 foxfair Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.6 1999/12/27 21:49:00 steve Exp $
 #
 
 DISTNAME=	nessus-core-0.99.2
@@ -47,4 +47,4 @@ post-install:
 		@${ECHO} "The syntax of nessusd.users and nessusd.rules has changed!"
 		@${ECHO} "=========================================================="
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

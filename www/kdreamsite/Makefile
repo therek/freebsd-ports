@@ -3,7 +3,7 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/kdreamsite/Makefile,v 1.1 2000/01/01 23:07:09 cpiazza Exp $
 #
 
 DISTNAME=	kdreamsite-0.2
@@ -23,4 +23,4 @@ USE_GMAKE=	yes
 BROKEN=		"obsolete compiler"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

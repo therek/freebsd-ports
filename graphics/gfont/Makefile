@@ -3,7 +3,7 @@
 # Date created:			09-Sep-1997
 # Whom:				Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gfont/Makefile,v 1.9 1999/08/25 06:13:57 obrien Exp $
 #
 
 DISTNAME=	gfont-1.0.2
@@ -25,4 +25,4 @@ GNU_CONFIGURE=	yes
 
 MAN1=		gfont.1
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

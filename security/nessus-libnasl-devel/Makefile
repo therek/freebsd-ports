@@ -3,7 +3,7 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.2 1999/12/01 20:01:59 foxfair Exp $
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.3 1999/12/27 21:50:12 steve Exp $
 #
 
 DISTNAME=	libnasl-0.99.2
@@ -36,4 +36,4 @@ GNU_CONFIGURE=	yes
 BROKEN=		"Can't be built successfully in -CURRENT"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

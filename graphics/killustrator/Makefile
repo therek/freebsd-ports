@@ -3,7 +3,7 @@
 # Date created:        07 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.7 1999/08/25 06:14:24 obrien Exp $
+# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.8 2000/01/05 04:50:13 jedgar Exp $
 #
 
 DISTNAME=	killustrator-0.7.1
@@ -27,4 +27,4 @@ CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -L${LOCALBASE}/lib"
 BROKEN=		"Requires NEWGCC-compiled KDE libs"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

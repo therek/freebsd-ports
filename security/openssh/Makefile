@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.30 1999/12/08 04:06:31 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.31 1999/12/23 06:37:20 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -152,4 +152,4 @@ post-install:
 	@${ECHO_MSG} ">> need to update it to work with OpenSSH."
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

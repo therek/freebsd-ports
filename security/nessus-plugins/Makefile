@@ -3,7 +3,7 @@
 # Date created:				16 October 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.3 1999/12/01 19:48:40 foxfair Exp $
+# $FreeBSD: ports/security/nessus-plugins/Makefile,v 1.4 1999/12/27 21:54:00 steve Exp $
 #
 
 DISTNAME=	nessus-plugins-0.99.2
@@ -37,4 +37,4 @@ GNU_CONFIGURE=	yes
 BROKEN=		"Can't be built successfully in -CURRENT"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

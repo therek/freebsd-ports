@@ -3,7 +3,7 @@
 # Date created:				December 7 1999
 # Whom:	      				jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/p5-F77/Makefile,v 1.1.1.1 1999/12/07 21:17:40 jmz Exp $
 #
 
 DISTNAME=	ExtUtils-F77-1.12
@@ -33,4 +33,4 @@ post-patch:
 do-configure:
 		@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

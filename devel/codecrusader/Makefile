@@ -3,7 +3,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.5 1999/08/25 05:47:32 obrien Exp $
+# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.6 1999/12/10 19:40:45 obrien Exp $
 #
 
 DISTNAME=	code_crusader_source-2.1.4
@@ -94,4 +94,4 @@ do-install:
 post-install:
 		@ ${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -3,7 +3,7 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/proxyper/Makefile,v 1.1.1.1 1999/11/14 03:33:21 steve Exp $
 #
 
 DISTNAME=	proxyper308-freebsd3-elf-x86
@@ -48,4 +48,4 @@ do-install:
 	${CHMOD} 755 ${BINDIR}
 	${LN} -s ${BINDIR}proxyper.sh ${LIBDIR}proxyper.sh
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

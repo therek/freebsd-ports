@@ -3,7 +3,7 @@
 # Date created:		Tue June 8 15:11:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/videotext/Makefile,v 1.3 1999/08/25 07:22:59 obrien Exp $
+# $FreeBSD: ports/misc/videotext/Makefile,v 1.4 1999/09/18 03:12:09 steve Exp $
 #
 
 DISTNAME=	videotext-0.6.971023
@@ -31,4 +31,4 @@ pre-install:
 	@${ECHO} "*********************************************************"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -3,7 +3,7 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.2 1999/12/01 19:35:01 foxfair Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.3 1999/12/27 21:51:32 steve Exp $
 #
 
 DISTNAME=	nessus-libraries-0.99.2
@@ -33,4 +33,4 @@ GNU_CONFIGURE=	yes
 BROKEN=		"Can't be built successfully in -CURRENT"
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
