@@ -2,15 +2,17 @@
 # Date created:		1-Aug-1995
 # Whom:			pst
 #
-# $FreeBSD: ports/net/zephyr/Makefile,v 1.10 2000/04/09 18:14:06 cpiazza Exp $
+# $FreeBSD: ports/net/zephyr/Makefile,v 1.11 2001/01/09 01:36:11 trevor Exp $
 #
 
 PORTNAME=	zephyr
-PORTVERSION=	2.0.4
+PORTVERSION=	20000421
 CATEGORIES=	net
-MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/old/
+MASTER_SITES=	ftp://athena-dist.mit.edu/pub/ATHENA/zephyr/
 
 MAINTAINER=	ports@FreeBSD.org
+
+WRKSRC=		${WRKDIR}/zephyr
 
 USE_XLIB=	yes
 .if exists(/usr/lib/libkrb.a) && defined(MAKE_EBONES)
@@ -20,8 +22,7 @@ CONFIGURE_ARGS="--with-krb4"
 HAS_CONFIGURE=	yes
 MAN1=		zephyr.1 xzwrite.1 zaway.1 zctl.1 zleave.1 zlocate.1 \
 		zmailnotify.1 znol.1 zwgc.1 zwrite.1
-MAN8=		syslogd.8 zpopnotify.8 zshutdown_notify.8 zstat.8 \
-		zephyrd.8 zhm.8
+MAN8=		zpopnotify.8 zshutdown_notify.8 zstat.8 zephyrd.8 zhm.8
 
 ZEPHYR_RCDIR=	${PREFIX}/etc/rc.d
 ZEPHYR_DOCDIR=	${PREFIX}/share/doc/zephyr
