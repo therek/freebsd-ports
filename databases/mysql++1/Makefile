@@ -2,14 +2,15 @@
 # Date created:				20th July 2000
 # Whom:					Miklos Niedermayer <mico@bsd.hu>
 #
-# $FreeBSD: ports/databases/mysql++/Makefile,v 1.8 2001/06/01 20:06:06 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mysql++
 PORTVERSION=	1.7.9
 CATEGORIES=	databases devel
-MASTER_SITES=	ftp://mysql.omnipotent.net/mysql++/ \
-		ftp://ftp.u-aizu.ac.jp/ftp/pub/dbms/mysql/mysql.com/mysql++/
+MASTER_SITES=	ftp://ftp.free.fr/pub/MySQL/Downloads/mysql++/ \
+		ftp://gd.tuwien.ac.at/db/mysql/Downloads/mysql++/ \
+		ftp://mirror.sit.wisc.edu/mirrors/mysql/Downloads/mysql++/
 
 MAINTAINER=	mico@bsd.hu
 
