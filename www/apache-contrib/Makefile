@@ -2,7 +2,7 @@
 # Date created:				September 10 2000
 # Whom:	      				Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/www/apache-contrib/Makefile,v 1.6 2001/04/10 22:21:05 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	apache-contrib
@@ -12,7 +12,8 @@ MASTER_SITES=	http://www.apache.org/dist/%SUBDIR%/ \
 		ftp://ftp.rge.com/pub/infosystems/apache/dist/%SUBDIR%/ \
 		ftp://ftp.epix.net/pub/apache/dist/%SUBDIR%/ \
 		ftp://ftp.iodynamics.com/pub/mirror/apache/dist/%SUBDIR%/ \
-		ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/
+		ftp://ftp.sunet.se/pub/www/servers/apache/dist/%SUBDIR%/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/apache/dist/&,}
 MASTER_SITE_SUBDIR=	httpd/contrib/modules/1.3
 
 MAINTAINER=	ports@FreeBSD.org
