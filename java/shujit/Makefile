@@ -1,12 +1,12 @@
 # New ports collection makefile for:	shujit
-# Version required:	0.4.0
+# Version required:	0.4.2
 # Date created:		30 April 1999
 # Whom:			jake@checker.org
 #
-# $FreeBSD: ports/java/shujit/Makefile,v 1.11 1999/11/14 01:52:05 steve Exp $
+# $FreeBSD: ports/java/shujit/Makefile,v 1.12 2000/01/22 13:20:19 mharo Exp $
 #
 
-DISTNAME=	shujit-0.4.0
+DISTNAME=	shujit-0.4.2
 CATEGORIES=	java
 MASTER_SITES=	http://www.shudo.net/jit/dist/
 
