@@ -2,7 +2,7 @@
 # Date created:				13 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/maelstrom/Makefile,v 1.18 2000/05/26 09:03:28 sobomax Exp $
+# $FreeBSD: ports/games/maelstrom/Makefile,v 1.19 2000/08/03 09:23:37 asami Exp $
 #
 
 PORTNAME=		maelstrom
@@ -23,5 +23,11 @@ GNU_CONFIGURE=		yes
 .if !defined(NOPORTDOCS)
 INSTALL_TARGET=		install install_gamedocs
 .endif
+
+post-install:
+	${CHOWN} root:games ${PREFIX}/bin/Maelstrom
+	${CHMOD} 2755 ${PREFIX}/bin/Maelstrom
+	${CHMOD} 664 ${PREFIX}/share/Maelstrom/Maelstrom-Scores
+	${CHOWN} root:games ${PREFIX}/share/Maelstrom/Maelstrom-Scores
 
 .include <bsd.port.mk>
