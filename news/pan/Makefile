@@ -2,11 +2,12 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.28 2000/08/08 22:54:15 ade Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.29 2000/09/15 18:53:27 ade Exp $
 #
 
 PORTNAME=	pan
 PORTVERSION=	0.8.1b5
+PORTREVISION=	1
 CATEGORIES=	news gnome
 MASTER_SITES=	http://download.superpimp.org/pan/${PORTVERSION}/
 DISTNAME=	pan-0.8.1beta5
@@ -14,7 +15,7 @@ DISTNAME=	pan-0.8.1beta5
 MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
+		gnomeprint.12:${PORTSDIR}/print/gnomeprint \
 		uu.1:${PORTSDIR}/converters/uulib \
 		unicode.0:${PORTSDIR}/devel/libunicode
 RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
