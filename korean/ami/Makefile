@@ -2,7 +2,7 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.9 2000/06/23 15:09:31 cjh Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.10 2000/06/23 15:16:55 cjh Exp $
 #
 
 PORTNAME=	ami
@@ -25,7 +25,7 @@ CONFIGURE_ENV=	GLIB_CONFIG=${LOCALBASE}/bin/glib12-config \
 CONFIGURE_ARGS+= --with-hangul-keyboard=2
 
 # gnome panel applet support
-#.if defined(WITH_GNOME_APPLET)
+.if defined(WITH_GNOME_APPLET)
 PKGNAMESUFFIX=	-gnome
 RUN_DEPENDS+=	panel:${PORTSDIR}/x11/gnomecore
 CONFIGURE_ARGS+= --enable-gnome-applet
