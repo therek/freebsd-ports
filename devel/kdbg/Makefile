@@ -2,14 +2,15 @@
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.7 2000/03/23 12:57:57 jedgar Exp $
+# $FreeBSD: ports/devel/kdbg/Makefile,v 1.8 2000/04/11 21:28:19 mharo Exp $
 #
 
 PORTNAME=	kdbg
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	devel kde
-MASTER_SITES=	http://members.telecom.at/~johsixt/ \
-		ftp://ftp.eudaptics.co.at/pub/people/jsixt/
+MASTER_SITES=	http://download.sourceforge.net/kdbg/ \
+		${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=unstable/apps/ide/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
