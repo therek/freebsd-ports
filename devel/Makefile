@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.429 2001/02/09 23:18:12 ade Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.430 2001/02/10 12:24:31 knu Exp $
 #
     SUBDIR += zziplib
 
@@ -45,6 +45,7 @@
     SUBDIR += cflow
     SUBDIR += clanlib
     SUBDIR += clig
+    SUBDIR += cln
     SUBDIR += codecrusader
     SUBDIR += codemedic
     SUBDIR += commoncpp
