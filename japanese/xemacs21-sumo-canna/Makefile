@@ -2,8 +2,10 @@
 # Date created:        19 August 1999
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/xemacs21-sumo-canna/Makefile,v 1.8 2000/01/07 16:19:43 shige Exp $
+# $FreeBSD: ports/japanese/xemacs21-sumo-canna/Makefile,v 1.9 2000/04/13 08:33:46 knu Exp $
 #
+
+CATEGORIES=	japanese
 
 XEMACS_MAJOR_VER=	21
 PKGNAMESUFFIX=		-canna
