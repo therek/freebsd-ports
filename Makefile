@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.56 2000/07/20 03:04:15 asami Exp $
+# $FreeBSD: ports/Makefile,v 1.57 2000/07/31 00:09:41 asami Exp $
 #
 
 SUBDIR += archivers
@@ -83,6 +83,9 @@ parallel: ${.CURDIR}/INDEX
 	@sed -e 's/|/.tgz|/' ${.CURDIR}/INDEX | awk -F '|' '{me=$$1; here=$$2; bdep=$$8; rdep=$$9; split(here, tmp, "/"); if (bdep != "") { gsub("$$", ".tgz", bdep); gsub(" ", ".tgz ", bdep); } if (rdep != "") { gsub("$$", ".tgz", rdep); gsub(" ", ".tgz ", rdep); } print tmp[4] "-all:: " me; print me ": " bdep " " rdep; printf("\t@/a/asami/portbuild/scripts/pdispatch ${branch} /a/asami/portbuild/scripts/portbuild %s %s", me, here); if (bdep != "") printf(" %s", bdep); if (rdep != "") printf(" %s", rdep); printf("\n")}'
 
 CVS?= cvs
+.if defined(SUPHOST)
+SUPFLAGS+=	-h ${SUPHOST}
+.endif
 update:
 .if defined(SUP_UPDATE)
 .if !defined(PORTSSUPFILE)
