@@ -2,13 +2,13 @@
 # Date created:			10 February 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmcp/Makefile,v 1.7 2000/08/03 09:25:46 asami Exp $
+# $FreeBSD: ports/misc/wmcp/Makefile,v 1.8 2000/08/12 08:33:00 kevlo Exp $
 #
 
 PORTNAME=	wmcp
 PORTVERSION=	1.2.8
 CATEGORIES=	misc windowmaker
-MASTER_SITES=	http://users.linuxave.net/~bac/src/wmcp/
+MASTER_SITES=	http://soupnazi.org/FreeBSD/ports/distfiles/
 
 MAINTAINER=	jim@FreeBSD.org
 
