@@ -2,7 +2,7 @@
 # Date created:		25 July 1996
 # Whom:			obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/news/tin/Makefile,v 1.87 2001/05/22 18:16:58 sobomax Exp $
+# $FreeBSD: ports/news/tin/Makefile,v 1.88 2001/08/07 16:43:55 ache Exp $
 #
 
 PORTNAME=	tin
@@ -41,7 +41,7 @@ CONFIGURE_ENV=  CFLAGS='${CFLAGS} -DNNTP_SERVER_FILE="\"${PREFIX}/etc/nntpserver
 ALL_TARGET=	build
 MAN1=		tin.1
 
-.if defined(NNTP_ONLY)
+.if defined(WITH_TIN_NNTP_ONLY)
 CONFIGURE_ARGS+=	--enable-nntp-only
 .endif
 
