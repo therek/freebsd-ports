@@ -2,11 +2,11 @@
 # Date created:		2000/08/12
 # Whom:			Marcin Cieslak
 #
-# $FreeBSD: ports/textproc/xerces/Makefile,v 1.4 2001/03/18 15:40:33 kevlo Exp $
+# $FreeBSD: ports/textproc/xerces/Makefile,v 1.5 2001/05/25 01:54:14 kevlo Exp $
 #
 
 PORTNAME=	xerces
-PORTVERSION=	1.4.0
+PORTVERSION=	1.4.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://xml.apache.org/dist/xerces-j/
 DISTNAME=	Xerces-J-bin.${PORTVERSION}
