@@ -3,13 +3,14 @@
 # Date created:			Mar 27, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/poedit/Makefile,v 1.1 2001/03/27 15:45:18 ijliao Exp $
+# $FreeBSD: ports/editors/poedit/Makefile,v 1.2 2001/04/09 01:34:31 ijliao Exp $
 #
 
 PORTNAME=	poedit
 PORTVERSION=	1.0.3
 CATEGORIES=	editors
-MASTER_SITES=	http://www.volny.cz/v.slavik/poedit/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
