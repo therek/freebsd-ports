@@ -2,13 +2,13 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/nam/Makefile,v 1.7 2000/07/16 19:55:52 steve Exp $
+# $FreeBSD: ports/net/nam/Makefile,v 1.8 2000/09/25 12:21:31 asami Exp $
 #
 
 PORTNAME=	nam
-PORTVERSION=	1.0a8
+PORTVERSION=	1.0a9
 CATEGORIES=	net
-MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
+MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 DISTFILES=	nam-src-${PORTVERSION}.tar.gz
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
