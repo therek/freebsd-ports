@@ -2,11 +2,12 @@
 # Date created:				22 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jedit/Makefile,v 1.7 2000/12/25 13:09:22 sobomax Exp $
+# $FreeBSD: ports/editors/jedit/Makefile,v 1.8 2001/01/23 18:22:20 sobomax Exp $
 #
 
 PORTNAME=	jedit
 PORTVERSION=	3.0.1
+PORTREVISION=	1
 CATEGORIES=	editors java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://members.xoom.com/romainguy/
@@ -30,7 +31,7 @@ do-configure:
 
 do-install:
 	@${SED} "s|%%PREFIX%%|${PREFIX}| ; s|%%WRKDIR%%|${WRKDIR}|" ${FILESDIR}/instscript | \
-		${SETENV} CLASSPATH=${DISTDIR}/${PORTNAME}30install.jar:${DISTDIR}/swingall.jar \
+		${SETENV} CLASSPATH=${DISTDIR}/${PORTNAME}${PORTVERSION:S/.//g}install.jar:${DISTDIR}/swingall.jar \
 		${LOCALBASE}/bin/javavm installer.Install text
 	@${INSTALL_DATA} ${DISTDIR}/swingall.jar ${PREFIX}/share/java/jedit
 	@${INSTALL_SCRIPT} ${WRKDIR}/jedit.sh ${PREFIX}/bin/jedit
