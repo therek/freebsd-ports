@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.352 2000/09/22 07:21:24 asami Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.353 2000/10/01 17:27:36 asami Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -729,6 +729,8 @@ MAKE_ENV+=		OPENSSLLIB=${OPENSSLLIB} OPENSSLINC=${OPENSSLINC} \
 .include "${PORTSDIR}/Mk/bsd.ruby.mk"
 .endif
 
+.include "${PORTSDIR}/Mk/bsd.gnome.mk"
+
 # defaults to 3.3.6; will be changed to 4.0 when it is ready
 XFREE86_VERSION?=	3
 
@@ -793,6 +795,7 @@ BUILD_DEPENDS+=		unzip:${PORTSDIR}/archivers/unzip
 .endif
 .if defined(USE_GMAKE)
 BUILD_DEPENDS+=		gmake:${PORTSDIR}/devel/gmake
+CONFIGURE_ENV+=	MAKE=${GMAKE}
 .endif
 .if defined(USE_AUTOMAKE)
 USE_AUTOCONF=	yes
@@ -917,6 +920,8 @@ LIB_DEPENDS+=	X11.6:${PORTSDIR}/x11/XFree86
 LIB_DEPENDS+=	X11.6:${PORTSDIR}/x11/XFree86-4-libraries
 .endif
 .endif
+
+.include "${PORTSDIR}/Mk/bsd.gnome.mk"
 
 .if exists(${PORTSDIR}/../Makefile.inc)
 .include "${PORTSDIR}/../Makefile.inc"
@@ -2208,6 +2213,15 @@ post-${name}:
 .endif
 
 .endfor
+
+.if defined(GNOME_OPTION_MSG) && (!defined(PACKAGE_BUILDING) || !defined(BATCH))
+pre-everything:: echo-gnome-option-msg
+
+echo-gnome-option-msg:
+	@for m in ${GNOME_OPTION_MSG}; do \
+		${ECHO_MSG} $$m; \
+	done
+.endif
 
 # Patch-libtool
 #
