@@ -2,11 +2,11 @@
 # Date created:         2 May 1999
 # Whom:                 oyvindmo@initio.no
 #
-# $FreeBSD: ports/audio/juke/Makefile,v 1.4 2000/04/08 21:23:44 mharo Exp $
+# $FreeBSD: ports/audio/juke/Makefile,v 1.5 2000/10/08 10:19:13 asami Exp $
 #
 
 PORTNAME=		juke
-PORTVERSION=		0.5
+PORTVERSION=		0.6
 CATEGORIES=		audio
 MASTER_SITES=		http://www.nocrew.org/software/juke/archive/
 
