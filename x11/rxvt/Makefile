@@ -2,7 +2,7 @@
 # Date created:         5th December 1994
 # Whom:                 gpalmer@FreeBSD.org
 #
-# $FreeBSD: ports/x11/rxvt/Makefile,v 1.45 2001/02/14 04:12:46 lioux Exp $
+# $FreeBSD: ports/x11/rxvt/Makefile,v 1.46 2001/04/11 00:17:27 lioux Exp $
 #
 # If possible, please consider updating the simple ports/x11-clocks/rclock
 # (and maybe ports/chinese/rxvt) when you upgrade rxvt.  These ports all use
@@ -10,7 +10,7 @@
 
 PORTNAME=	rxvt
 PORTVERSION=	2.6.3
-CATEGORIES=	x11
+CATEGORIES+=	x11
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/ \
 		ftp://mason.primenet.com.au/pub/rxvt/ \
 		ftp://ftp.ics.es.osaka-u.ac.jp/pub/mirrors/rxvt/ \

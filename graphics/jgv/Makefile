@@ -2,12 +2,12 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/graphics/jgv/Makefile,v 1.4 2000/04/13 09:10:33 knu Exp $
+# $FreeBSD: ports/graphics/jgv/Makefile,v 1.5 2000/11/14 00:46:25 asami Exp $
 #
 
 PORTNAME=	jgv
 PORTVERSION=	0.2a
-CATEGORIES=	${CATEGORY_LIST}
+CATEGORIES+=	${CATEGORY_LIST}
 MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
 DISTNAME=	JGV-${PORTVERSION}
 

@@ -3,12 +3,12 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.103 2001/02/07 14:51:14 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.104 2001/03/11 00:03:01 obrien Exp $
 #
 
 PORTNAME=	mutt
 PORTVERSION=	1.2.5
-CATEGORIES=	mail
+CATEGORIES+=	mail
 MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/ \
 		ftp://ftp.uib.no/pub/mutt/ \
 		ftp://pgp.rasip.fer.hr/pub/mutt/international/ \
