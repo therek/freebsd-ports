@@ -1,11 +1,12 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.1 2004/11/19 18:23:48 hq Exp $
 bin/ogmrip
 @unexec env GCONF_CONFIG_SOURCE=xml::%D/etc/gconf/gconf.xml.defaults gconftool-2 --makefile-uninstall-rule %D/etc/gconf/schemas/ogmrip.schemas >/dev/null || /usr/bin/true
 etc/gconf/schemas/ogmrip.schemas
 @exec env GCONF_CONFIG_SOURCE=xml::%D/etc/gconf/gconf.xml.defaults gconftool-2 --makefile-install-rule %D/etc/gconf/schemas/ogmrip.schemas >/dev/null || /usr/bin/true
 include/ogmdvd.h
-include/ogmrip/ogmrip-ac3.h
+include/ogmrip/ogmrip-acopy.h
 include/ogmrip/ogmrip-audio.h
+include/ogmrip/ogmrip-avi.h
 include/ogmrip/ogmrip-codec.h
 include/ogmrip/ogmrip-lavc.h
 include/ogmrip/ogmrip-merge.h
