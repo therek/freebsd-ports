@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.140 2003/05/22 17:02:18 demon Exp $
+# $FreeBSD: ports/MOVED,v 1.141 2003/05/22 22:58:45 kiri Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -355,3 +355,4 @@ x11-servers/XttXF98srv-TGUI||2003-05-23|obsoleted by x11-servers/XFree86-4-Serve
 x11-servers/XttXF98srv-WABEP||2003-05-23|obsoleted by x11-servers/XFree86-4-Server
 x11-servers/XttXF98srv-WABS||2003-05-23|obsoleted by x11-servers/XFree86-4-Server
 x11-servers/XttXF98srv-WSNA||2003-05-23|obsoleted by x11-servers/XFree86-4-Server
+www/phoenix|www/mozilla-firebird|2003-06-02|project changed names
