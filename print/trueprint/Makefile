@@ -2,7 +2,7 @@
 # Date created:			17 February 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/print/trueprint/Makefile,v 1.3 2000/04/09 17:50:46 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	trueprint
@@ -14,8 +14,12 @@ MASTER_SITE_SUBDIR=	trueprint
 MAINTAINER=	demon@FreeBSD.org
 
 USE_GMAKE=	yes
-
 GNU_CONFIGURE=	yes
+
+# Doesn't configure on bento because of this
+.if !exists(/usr/bin/lpr) || !exists(/usr/bin/lp)
+IGNORE=		"missing /usr/bin/lp or /usr/bin/lpr (hi bento)"
+.endif
 
 MAN1=		trueprint.1
 
