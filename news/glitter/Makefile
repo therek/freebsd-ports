@@ -2,7 +2,7 @@
 # Date Created:		09 Dec 2000
 # Whom:			Greg Greenaae <greg@gregnet.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/glitter/Makefile,v 1.1 2001/01/05 17:39:14 alex Exp $
 #
 
 PORTNAME=	glitter
@@ -17,6 +17,7 @@ MAINTAINER=	greg@gregnet.net
 USE_X_PREFIX=	yes
 USE_GTK=	yes
 WANT_GNOME=	yes
+USE_GNOMELIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
