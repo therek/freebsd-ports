@@ -3,13 +3,13 @@
 # Date created:         Feb 13 1995
 # Whom:                 jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/maplay/Makefile,v 1.9 1999/08/25 04:35:48 obrien Exp $
 #
 
 DISTNAME=       maplay1_2
 PKGNAME=	maplay-1.2
 CATEGORIES=	audio
-MASTER_SITES=   ftp://ftp.iuma.com/audio_utils/mpeg_players/Workstations/
+MASTER_SITES=   http://www.iuma.com/IUMA/ftp/audio_utils/mpeg_players/Workstations/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
@@ -17,11 +17,16 @@ MAINTAINER=	ports@FreeBSD.org
 NO_WRKSUBDIR=	yes
 PATCH_STRIP=	-p2
 
-pre-configure:
+do-build:
 	@(cd ${WRKSRC}; make pre-install)
 
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/maplay ${PREFIX}/bin
+
 post-install:
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/maplay
-	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/maplay
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/maplay
+.endif
 
 .include <bsd.port.mk>
