@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  7 00:53:18 WST 1996
 # Whom:			Peter Wemm <peter@freebsd.org>
 #
-# $FreeBSD: ports/www/squid23/Makefile,v 1.68 2000/05/17 01:18:36 peter Exp $
+# $FreeBSD: ports/www/squid23/Makefile,v 1.69 2000/05/29 23:48:03 steve Exp $
 #
 
 PORTNAME=	squid
@@ -16,8 +16,8 @@ MASTER_SITES=  \
 DISTNAME=	squid-2.3.STABLE3
 EXTRACT_SUFX=	-src.tar.gz
 
-#PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.3/bugs/
-#PATCHFILES=	
+PATCH_SITES=	http://www.squid-cache.org/Versions/v2/2.3/bugs/
+PATCHFILES=	squid-2.3.stable3-storeExpiredReferenceAge.patch
 
 MAINTAINER=	peter@freebsd.org
 
