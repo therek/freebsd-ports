@@ -2,7 +2,7 @@
 # Date created:				1st June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/oaf/Makefile,v 1.1 2000/06/01 20:16:23 ade Exp $
 #
 
 PORTNAME=	oaf
@@ -15,7 +15,8 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		ORBit.2:${PORTSDIR}/devel/ORBit \
-		popt.0:${PORTSDIR}/devel/popt
+		popt.0:${PORTSDIR}/devel/popt \
+		xml.5:${PORTSDIR}/textproc/libxml
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
