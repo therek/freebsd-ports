@@ -3,24 +3,27 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.7 2001/02/11 16:25:17 ijliao Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.8 2001/02/23 01:49:49 ijliao Exp $
 #
 
 PORTNAME=	logtool
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.6
 CATEGORIES=	sysutils
-MASTER_SITES=	http://users.digitex.net/~max/logtool/
+MASTER_SITES=	http://www.xjack.org/logtool/logtool/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--prefix=/usr/local --sysconfdir=/usr/local/etc/logtool
+CONFIGURE_ARGS=	--prefix=${PREFIX} --sysconfdir=${PREFIX}/etc/logtool
 
 ALL_TARGET=	build
 
 MAN1=		logtool.1
+
+post-patch:
+	@${PERL} -pi -e "s,%%CFLAGS%%,${CFLAGS},g" ${WRKSRC}/configure
 
 post-install:
 	${INSTALL_MAN} ${WRKSRC}/doc/logtool.1 ${PREFIX}/man/man1
