@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.238 1999/12/23 19:46:06 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.239 1999/12/23 21:40:18 jedgar Exp $
 #
 
     SUBDIR += 3dc
@@ -190,7 +190,6 @@
     SUBDIR += xnibbles
     SUBDIR += xoct
     SUBDIR += xoids
-    SUBDIR += xoj
     SUBDIR += xonix
     SUBDIR += xosmulti
     SUBDIR += xothello
