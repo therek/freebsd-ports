@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.23 2000/09/15 10:19:46 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.24 2000/09/22 16:55:01 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -60,10 +60,11 @@ BROKEN=         "Kernel source files required"
 .include "${WRKDIRPREFIX}${.CURDIR}/work/Makefile.inc.net"
 .endif
 
-SCRIPTS_ENV+=	LINUX_DIR="${LINUXBASE}" \
+SCRIPTS_ENV+=	LINUXBASE="${LINUXBASE}" \
 		VMNET_HOST_IP="${VMNET_HOST_IP}" \
 		VMNET_NETMASK="${VMNET_NETMASK}"
 MAKE_ARGS=	KMODDIR="${VMDIR}/lib/modules"
+PLIST_SUB=	LINUXBASE="${LINUXBASE}"
 
 post-patch:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}
@@ -81,14 +82,14 @@ setoptions:
 		${FILESDIR}/config > ${WRKDIR}/config
 
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
-		-e 's;@@LINUX_DIR@@;${LINUXBASE};' \
+		-e 's;@@LINUXBASE@@;${LINUXBASE};' \
 		-e 's;@@NETWORKING@@;${VMNET_NETWORKING};' \
 		-e 's;@@HOST_IP@@;${VMNET_HOST_IP};' \
 		-e 's;@@NETMASK@@;${VMNET_NETMASK};' \
 		${FILESDIR}/vmware.sh > ${WRKDIR}/vmware.sh
 
 	${SED} 	-e 's;@@PREFIX@@;${PREFIX};' \
-		-e 's;@@LINUX_DIR@@;${LINUXBASE};' \
+		-e 's;@@LINUXBASE@@;${LINUXBASE};' \
 		${FILESDIR}/vmware > ${WRKDIR}/vmware
 
 pre-install: setoptions

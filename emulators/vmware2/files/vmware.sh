@@ -2,7 +2,7 @@
 #
 # Start or stop vmware
 #
-# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.5 2000/03/29 21:23:05 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/files/vmware.sh,v 1.6 2000/07/31 21:56:37 knu Exp $
 
 vmware_dir=@@PREFIX@@/lib/vmware
 networking=@@NETWORKING@@
@@ -25,7 +25,7 @@ start)
     if [ $networking -eq 1 ]; then
 	sysctl net.link.ether.bridge_refresh && bridge="_bridge"
 	kldload if_tap.ko
-	echo -n >@@LINUX_DIR@@/dev/vmnet1
+	echo -n >@@LINUXBASE@@/dev/vmnet1
 	ifconfig vmnet1 $host_ip netmask $netmask
 	if [ _$bridge != _ ]; then
 	    sysctl -w net.link.ether.bridge_refresh=1

@@ -2,7 +2,7 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.6 2000/09/10 15:06:54 knu Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.7 2000/09/22 11:08:22 knu Exp $
 #
 
 PORTNAME=	rtc
@@ -15,11 +15,10 @@ MAINTAINER=	freebsd-emulation@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/files
 
-LINUX_DIR=	/compat/linux
 KMODDIR=	${PREFIX}/modules
 
 CDEV_MAJOR=	202
-DEVDIR=		${LINUX_DIR}/dev
+DEVDIR=		${LINUXBASE}/dev
 
 STARTUP=	rtc.sh
 MAKE_ARGS=	KMODDIR="${KMODDIR}" CDEV_MAJOR="${CDEV_MAJOR}"
