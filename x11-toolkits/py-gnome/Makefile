@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.49 2001/05/16 13:59:16 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	py-gnome
@@ -28,7 +28,7 @@ CONFIGURE_ARGS=	--with-python=${PYTHON_CMD}				\
 
 EG_SRC_DIR=	${WRKSRC}/pygnome/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gnome
-PYGTK_DEP=	${PYTHON_LIBDIR}/site-packages/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
+PYGTK_DEP=	${PYTHON_SITELIBDIR}/_gtkmodule.so:${PORTSDIR}/x11-toolkits/py-gtk
 
 .if !defined(NOPORTDOCS)
 post-install:

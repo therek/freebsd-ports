@@ -2,7 +2,7 @@
 # Date created:         		13 April 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/idle/Makefile,v 1.7 2000/11/01 15:51:00 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	idle
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-RUN_DEPENDS=	${PYTHON_LIBDIR}/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 USE_PYTHON=	yes
 PYTHON_VERSION=	python1.5
