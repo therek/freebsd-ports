@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.106 2001/04/04 14:35:38 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.107 2001/04/26 15:05:23 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -87,6 +87,10 @@ pre-build:
 
 post-install:
 	[ -e ${PREFIX}/bin/gvim ] || (cd ${PREFIX}/bin ; ${LN} -s vim gvim)
+	#	below needed for `vim-lite' port
+	test -e ${PREFIX}/bin/rgvim  || (cd ${PREFIX}/bin ; ${LN} -s vim rgvim)
+	test -e ${PREFIX}/bin/gview || (cd ${PREFIX}/bin ; ${LN} -s vim gview)
+	test -e ${PREFIX}/bin/rgview || (cd ${PREFIX}/bin ; ${LN} -s vim rgview)
 	@${RM} -f ${PREFIX}/man/man1/etags.1
 	@${MV} ${PREFIX}/man/man1/ctags.1 ${PREFIX}/man/man1/ectags.1
 
