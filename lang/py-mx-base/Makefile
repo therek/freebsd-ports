@@ -2,13 +2,15 @@
 # Date created:		18 March 2001
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.9 2001/02/05 16:35:09 olgeni Exp $
+# $FreeBSD: ports/lang/py-mx-base/Makefile,v 1.10 2001/03/22 13:33:59 tg Exp $
 #
 
 PORTNAME=	mx-base
 PORTVERSION=	2.0.0
 CATEGORIES=	lang python
-MASTER_SITES=	http://www.lemburg.com/python/
+MASTER_SITES=	http://www.lemburg.com/python/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tg
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	egenix-${PORTNAME}-${PORTVERSION}
 
