@@ -2,14 +2,13 @@
 # Date created:				27 October 2000
 # Whom:					roam@orbitel.bg
 #
-# $FreeBSD: ports/sysutils/pslist/Makefile,v 1.1 2000/10/29 01:14:36 will Exp $
+# $FreeBSD: ports/sysutils/pslist/Makefile,v 1.2 2000/11/22 10:20:13 roam Exp $
 #
 
 PORTNAME=	pslist
 PORTVERSION=	1.0
 CATEGORIES=	sysutils
-MASTER_SITES=	http://mail.orbitel.bg/~roam/devel/sysutils/ \
-		http://ringwraith.online.bg/~roam/devel/sysutils/
+MASTER_SITES=	http://ringwraith.online.bg/~roam/devel/sysutils/
 
 MAINTAINER=	roam@FreeBSD.org
 
