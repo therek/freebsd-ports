@@ -2,11 +2,11 @@
 # Date created:		9 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/swigruby/Makefile,v 1.1 2000/08/22 01:59:05 knu Exp $
 #
 
 PORTNAME=	swigruby
-PORTVERSION=	0.4.3
+PORTVERSION=	0.4.4
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.goto.info.waseda.ac.jp/~fukusima/ruby/
 DIST_SUBDIR=	ruby
