@@ -3,7 +3,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/games/gnomegames/Makefile,v 1.19 1999/10/14 09:18:31 nakai Exp $
+# $FreeBSD: ports/games/gnomegames/Makefile,v 1.20 1999/12/04 19:07:53 steve Exp $
 #
 
 DISTNAME=	gnome-games-1.0.51
@@ -12,7 +12,7 @@ CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-games
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

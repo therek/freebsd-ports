@@ -3,7 +3,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.17 1999/10/14 04:44:28 nakai Exp $
+# $FreeBSD: ports/graphics/electriceyes/Makefile,v 1.18 1999/12/04 19:07:54 steve Exp $
 #
 
 DISTNAME=	ee-0.3.11
@@ -12,7 +12,7 @@ CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ee
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

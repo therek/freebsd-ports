@@ -3,7 +3,7 @@
 # Date created:				17 March 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.30 1999/12/04 19:08:09 steve Exp $
+# $FreeBSD: ports/x11/gnomecore/Makefile,v 1.31 1999/12/28 02:50:48 nakai Exp $
 #
 
 DISTNAME=	gnome-core-1.0.55
@@ -12,7 +12,7 @@ CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-core
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 RUN_DEPENDS=	${X11BASE}/share/gnome/sounds/startup.wav:${PORTSDIR}/audio/gnomeaudio
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop \

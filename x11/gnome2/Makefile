@@ -3,7 +3,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.11 1999/10/14 09:42:09 nakai Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.12 1999/10/14 19:35:08 dan Exp $
 #
 
 DISTNAME=	gnome-1.0.53
@@ -11,7 +11,7 @@ CATEGORIES=	x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \

@@ -3,7 +3,7 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.12 1999/10/14 09:22:00 nakai Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.13 1999/12/04 19:08:01 steve Exp $
 #
 
 DISTNAME=	gnome-utils-1.0.50
@@ -12,7 +12,7 @@ CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-utils
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

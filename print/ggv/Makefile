@@ -3,7 +3,7 @@
 # Date created:				21 August 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/print/ggv/Makefile,v 1.14 1999/12/04 19:08:04 steve Exp $
+# $FreeBSD: ports/print/ggv/Makefile,v 1.15 1999/12/24 10:44:00 nakai Exp $
 #
 
 DISTNAME=	ggv-0.82
@@ -11,7 +11,7 @@ CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ggv
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

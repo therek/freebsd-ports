@@ -3,7 +3,7 @@
 # Date created:				17 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.14 1999/10/27 10:25:11 nakai Exp $
+# $FreeBSD: ports/deskutils/gnomepim/Makefile,v 1.15 1999/12/04 19:07:50 steve Exp $
 #
 
 DISTNAME=	gnome-pim-1.0.55
@@ -12,7 +12,7 @@ CATEGORIES=	deskutils gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-pim
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

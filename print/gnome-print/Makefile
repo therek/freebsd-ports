@@ -3,7 +3,7 @@
 # Date created:				15 Jan 1999
 # Whom:					Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.11 1999/10/27 10:26:45 nakai Exp $
+# $FreeBSD: ports/print/gnomeprint/Makefile,v 1.12 1999/12/04 19:08:05 steve Exp $
 #
 
 DISTNAME=	gnome-print-0.10
@@ -12,7 +12,7 @@ CATEGORIES=	print gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-print
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	gs:${PORTSDIR}/print/ghostscript5
 LIB_DEPENDS=	gnome.3:${PORTSDIR}/x11/gnomelibs \

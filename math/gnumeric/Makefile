@@ -3,7 +3,7 @@
 # Date created:				08 October 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/math/gnumeric/Makefile,v 1.20 2000/01/02 10:47:56 vanilla Exp $
+# $FreeBSD: ports/math/gnumeric/Makefile,v 1.21 2000/01/05 20:15:36 ade Exp $
 #
 
 DISTNAME=	gnumeric-0.47
@@ -11,7 +11,7 @@ CATEGORIES=	math gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnumeric
 
-MAINTAINER=	nakai@FreeBSD.org
+MAINTAINER=	ade@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		python:${PORTSDIR}/lang/python
