@@ -3,7 +3,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt20/Makefile,v 1.38 1999/10/02 03:26:00 imura Exp $
+# $FreeBSD: ports/x11-toolkits/qt20/Makefile,v 1.39 1999/10/31 10:12:49 imura Exp $
 #
 
 DISTNAME=	qt-2.0.2
@@ -18,7 +18,8 @@ NO_LATEST_LINK=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	-system-zlib -system-libpng
+CONFIGURE_ARGS=	-system-zlib -system-libpng \
+		-I${LOCALBASE}/include -L${LOCALBASE}/lib -lxpg4
 CONFIGURE_ENV=	QTDIR=${WRKSRC}
 MAKE_ENV+=	QTDIR=${WRKSRC} SYS_CXX=${CXX} SYS_CC=${CC} SYS_CXXFLAGS="${CXXFLAGS}"
 
