@@ -3,7 +3,7 @@
 # Date created:			4 Aug 1998
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.15 2000/01/22 06:40:16 sumikawa Exp $
+# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.16 2000/03/30 08:44:48 knu Exp $
 #
 
 DISTNAME=	ndtpd-2.3.7
