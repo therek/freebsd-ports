@@ -3,7 +3,7 @@
 # Date created:		22 March 2000
 # Whom:			Jason Evans <jasone@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/procmap/Makefile,v 1.1 2000/03/23 03:28:55 jasone Exp $
 #
 
 DISTNAME=	procmap-1.0
@@ -12,15 +12,11 @@ DISTFILES=	#empty
 
 MAINTAINER=	jasone@freebsd.org
 
-NO_CHECKSUM=	yes
-NO_WRKSUBDIR=	yes
-
+# setting MAKEOBJDIR doesn't work for some reason
+MAKE_ENV=	MAKEOBJDIRPREFIX=${WRKDIR}
 WRKSRC=		${.CURDIR}/src
 
-do-fetch:
-	@${DO_NADA}
-
-pre-clean:
-	@$(SH) -ec "cd $(WRKSRC) ; make clean"
+pre-build:
+	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} obj
 
 .include <bsd.port.mk>
