@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.165 2001/03/18 08:04:35 dburr Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.166 2001/03/21 07:26:15 dinoex Exp $
 #
     SUBDIR += yawho
 
@@ -33,6 +33,7 @@
     SUBDIR += diskusage
     SUBDIR += doconfig
     SUBDIR += eject
+    SUBDIR += extipl
     SUBDIR += fcron
     SUBDIR += ffsrecov
     SUBDIR += fileutils
