@@ -1,6 +1,6 @@
 # Makefile.modules.3rd
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.11 2004/09/15 16:54:37 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.12 2004/10/12 08:27:39 clement Exp $
 #
 # Author: Clement Laforet <clement@FreeBSD.org>
 # If you have questions, please contact me.
@@ -225,7 +225,7 @@ STATIC_MODULE_CONFARG=	--enable-module=$${module}
 DSO_MODULE_CONFARG=	--enable-module=$${module} --enable-shared=$${module}
 .   else
 STATIC_MODULE_CONFARG=	--enable-$${module}
-DSO_MODULE_CONFARG=	--enable-$${module}-shared
+DSO_MODULE_CONFARG=	--enable-$${module}=shared
 .endif
 _CONFIGURE_ARGS!=	\
 			for module in ${APACHE_MODULES} ; do \
