@@ -2,7 +2,7 @@
 # Date created:         02 Feb 1996
 # Whom:                 chuckr@glue.umd.edu
 #
-# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.35 2001/08/25 03:33:33 ijliao Exp $
+# $FreeBSD: ports/graphics/xpdf/Makefile,v 1.36 2001/08/31 23:33:37 obrien Exp $
 #
 
 PORTNAME=	xpdf
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.foolabs.com/pub/xpdf/  \
 MASTER_SITE_SUBDIR=	support/xpdf
 EXTRACT_SUFX=	.tgz
 
-PATCH_SITES=	http://vzzbx.xs4all.nl/files/
+PATCH_SITES=	xhttp://vzzbx.xs4all.nl/files/ \
+		http://www.cs.cmu.edu/~dst/Adobe/Gallery/
 PATCHFILES=	xpdf-ro-remove.patch
 PATCH_DIST_STRIP= -p1
 
