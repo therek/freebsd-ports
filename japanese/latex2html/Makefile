@@ -2,7 +2,7 @@
 # Date created:		3 Apr 1999
 # Whom:			Sugimoto Sadahiro <ixtl@utmc.or.jp>
 #
-# $FreeBSD: ports/japanese/latex2html/Makefile,v 1.8 2000/07/03 13:28:04 sada Exp $
+# $FreeBSD: ports/japanese/latex2html/Makefile,v 1.9 2000/07/19 00:23:51 knu Exp $
 #
 # Default image format is PNG.
 # If you prefer GIF to PNG, define WITH_GIF (`make -DWITH_GIF`).
@@ -19,7 +19,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ixtl@utmc.or.jp
 
-RUN_DEPENDS=	platex:${PORTSDIR}/japanese/platex-euc \
+RUN_DEPENDS=	platex:${PORTSDIR}/japanese/ptex-euc \
 		dvips:${PORTSDIR}/japanese/dvipsk-vflib \
 		gs:${PORTSDIR}/japanese/vfghostscript55 \
 		anytopnm:${PORTSDIR}/graphics/netpbm \
