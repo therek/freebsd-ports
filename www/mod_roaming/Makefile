@@ -2,7 +2,7 @@
 # Date created:			11 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_roaming/Makefile,v 1.1 2000/08/11 15:51:03 knu Exp $
 #
 
 PORTNAME=	mod_roaming
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.klomp.org/mod_roaming/
 MAINTAINER=	knu@FreeBSD.org
 
 BUILD_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
+RUN_DEPENDS=	${APXS}:${PORTSDIR}/www/apache13
 
 APXS=		${LOCALBASE}/sbin/apxs
 
