@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.175 2002/09/17 21:02:30 knu Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.176 2002/09/20 14:17:01 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -304,7 +304,7 @@ while [ "$1" ]; do
 			fi
 			;;
 		\"pspell\")
-			echo "LIB_DEPENDS+=	pspell.4:\${PORTSDIR}/textproc/pspell"
+			echo "LIB_DEPENDS+=	aspell.15:\${PORTSDIR}/textproc/aspell"
 			echo "CONFIGURE_ARGS+=--with-pspell=\${LOCALBASE}"
 			;;
 		\"mbregex\")
