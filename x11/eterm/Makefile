@@ -2,11 +2,12 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.33 2001/02/05 16:17:58 olgeni Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.34 2001/02/17 22:28:10 olgeni Exp $
 #
 
 PORTNAME=	eterm
 PORTVERSION=	0.9
+PORTREVISION=	1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	eterm
@@ -22,7 +23,8 @@ USE_IMLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 CONFIGURE_ARGS=	--enable-trans=imlib --enable-utmp \
-		--enable-xim --with-theme-update
+		--enable-xim --with-theme-update \
+		--with-backspace=bs
 CONFIGURE_ENV=	LIBS="-lxpg4"
 
 MAN1=		Eterm.1
