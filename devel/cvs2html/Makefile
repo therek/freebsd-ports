@@ -2,11 +2,11 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.1 2000/07/02 23:36:25 will Exp $
 #
 
 PORTNAME=	cvs2html
-PORTVERSION=	1.65
+PORTVERSION=	1.67
 CATEGORIES=	devel perl5
 MASTER_SITES=	http://www.sslug.dk/cvs2html/utils/
 DISTNAME=	${PORTNAME}
