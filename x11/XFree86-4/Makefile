@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.87 2000/09/25 21:18:26 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.88 2000/09/30 22:13:00 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -41,11 +41,11 @@ IS_INTERACTIVE=	yes	# configure script asks questions
 MTREE_FILE=	/etc/mtree/BSD.x11.dist
 .if (${MACHINE} == "pc98")
 SCRIPTS_ENV+=	MACHINE=pc98
-PLIST=		${PKGDIR}/PLIST.pc98
+PLIST=		${PKGDIR}/pkg-plist.pc98
 .endif
 .if (${MACHINE} == "alpha")
 SCRIPTS_ENV+=	MACHINE=alpha
-PLIST=		${PKGDIR}/PLIST.alpha
+PLIST=		${PKGDIR}/pkg-plist.alpha
 .endif
 
 .if defined(XDM_DES) && (${USA_RESIDENT} != YES && ${USA_RESIDENT} != NO)
