@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.340 2001/04/09 03:44:49 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.341 2001/04/09 11:09:37 eric Exp $
 #
 
     SUBDIR += 40upgrade
@@ -167,6 +167,7 @@
     SUBDIR += whichman
     SUBDIR += wmcp
     SUBDIR += wmmand
+    SUBDIR += wmpal
     SUBDIR += wmstock
     SUBDIR += wmweather
     SUBDIR += wmx10
