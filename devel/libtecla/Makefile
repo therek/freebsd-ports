@@ -3,11 +3,11 @@
 # Date created:		Feb 12, 2001
 # Whom:			Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libtecla/Makefile,v 1.3 2001/03/16 18:25:43 ijliao Exp $
+# $FreeBSD: ports/devel/libtecla/Makefile,v 1.4 2001/05/01 10:51:41 ijliao Exp $
 #
 
 PORTNAME=	libtecla
-PORTVERSION=	1.3.0
+PORTVERSION=	1.3.1
 CATEGORIES=	devel
 MASTER_SITES=	http://www.astro.caltech.edu/~mcs/tecla/
 
