@@ -2,7 +2,7 @@
 # Date created:		14 May 1998
 # Whom:			Eivind Eklund <eivind@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/re2c/Makefile,v 1.5 2001/02/20 22:25:02 eivind Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	re2c
@@ -14,14 +14,15 @@ MASTER_SITES=	http://www.tildeslash.org/re2c/ \
 MAINTAINER=	eivind@FreeBSD.org
 
 USE_GMAKE=	yes
+USE_REINPLACE=	yes
 
 MAN1=		re2c.1
 
 ALL_TARGET=	default
 
 pre-patch:
-	@${PERL} -pi -e 's|^CFLAGS.*$$|CFLAGS+=-Wall -I. -Wno-unused -Wno-parentheses|' ${WRKSRC}/Makefile
-	@${PERL} -pi -e 's|<malloc.h>|<stdlib.h>|' ${WRKSRC}/parser.cc ${WRKSRC}/parser.y
+	@${REINPLACE_CMD} -e 's|^CFLAGS.*$$|CFLAGS+=-Wall -I. -Wno-unused -Wno-parentheses|' ${WRKSRC}/Makefile
+	@${REINPLACE_CMD} -e 's|<malloc.h>|<stdlib.h>|' ${WRKSRC}/parser.cc ${WRKSRC}/parser.y
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/re2c ${PREFIX}/bin

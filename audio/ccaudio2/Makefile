@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/audio/ccaudio/Makefile,v 1.1 2000/07/28 11:05:27 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ccaudio
@@ -15,12 +15,13 @@ MAINTAINER=	dyfet@gnu.org
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_AUTOCONF=	yes
+USE_REINPLACE=	yes
 INSTALLS_SHLIB=	yes
 
 CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include"
 
 post-extract:
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|-release \@LT_RELEASE\@||g'
+	@find ${WRKSRC} -name "Makefile.in" | \
+		xargs ${REINPLACE_CMD} -e 's|-release \@LT_RELEASE\@||g'
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:			30 August 2001
 # Whom:				dd
 #
-# $FreeBSD: ports/security/qident/Makefile,v 1.1 2001/08/30 13:55:37 dd Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qident
@@ -13,6 +13,8 @@ MASTER_SITES=	http://www.netbsd.org/~ad/qident/
 MAINTAINER=	dd@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libident.a:${PORTSDIR}/security/libident
+
+USE_REINPLACE=	yes
 
 MANSECTS=	1
 MAN1=		qident.1
@@ -26,7 +28,7 @@ MANCOMPSUFFIX=
 .endif
 
 post-patch:
-	@${PERL} -pi -e 's/getopt[.]h/unistd.h/g' ${WRKSRC}/*
+	@${REINPLACE_CMD} -e 's/getopt[.]h/unistd.h/g' ${WRKSRC}/*
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/qident ${PREFIX}/bin/qident
