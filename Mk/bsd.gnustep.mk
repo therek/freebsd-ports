@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.10 2004/03/26 08:00:35 dinoex Exp $
+# $FreeBSD: ports/Mk/bsd.gnustep.mk,v 1.11 2004/04/13 11:29:00 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -89,8 +89,13 @@ PLIST_SUB+=	GNUSTEP_DEVEL="@comment "
 PLIST_SUB+=	GNUSTEP_STABLE=""
 .endif
 .if !defined(GNUSTEP_WITH_BASE_GCC)
+.if defined(GNUSTEP_WITH_GCC32)
 CC=		gcc32
 CXX=		g++32
+.else
+CC=		gcc33
+CXX=		g++33
+.endif
 .endif
 
 # ---------------------------------------------------------------------------
