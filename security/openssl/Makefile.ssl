@@ -2,7 +2,7 @@
 # Date created:		31 May 2002
 # Whom:			dinoex
 #
-# $FreeBSD: ports/security/openssl/Makefile.ssl,v 1.8 2003/02/18 07:09:28 dinoex Exp $
+# $FreeBSD: ports/security/openssl/Makefile.ssl,v 1.9 2003/02/19 04:20:00 dinoex Exp $
 #
 # this substitutes USE_OPENSSL=yes
 # just include this makefile after bsd.ports.pre.mk
@@ -26,11 +26,12 @@
 #	but give an installed port preference over it.
 .if	!defined(USE_OPENSSL_BASE) && \
 	!defined(USE_OPENSSL_BETA) && \
-	!defined(USE_OPENSSL_PORT)
-#	4.7-STABLE has 0.9.7 after 2003-02-14
-#	5.0-CURRENT has 0.9.7 after 2003-01-28, 500100 was bumped at 2003-01-23
-.if exists(/usr/lib/libcrypto.so.3) && !exists(${LOCALBASE}/lib/libcrypto.so)
-USE_OPENSSL_BASE=yes
+	!defined(USE_OPENSSL_PORT) && \
+	!exists(${LOCALBASE}/lib/libcrypto.so)
+#	4.7-STABLE has not yet 0.9.7a
+#	5.0-CURRENT has not yet 0.9.7a
+.if exists(/usr/lib/libcrypto.so.3)
+#USE_OPENSSL_BASE=yes
 .endif
 .endif
 
