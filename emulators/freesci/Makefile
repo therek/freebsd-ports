@@ -2,7 +2,7 @@
 # Date created:				17 December 2000
 # Whom:					George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/freesci/Makefile,v 1.1 2000/12/19 12:39:27 will Exp $
 #
 
 PORTNAME=		freesci
@@ -15,9 +15,9 @@ MAINTAINER=		greid@ukug.uk.freebsd.org
 LIB_DEPENDS=		ggi.2:${PORTSDIR}/graphics/libggi \
 			png.4:${PORTSDIR}/graphics/png
 
-HAS_CONFIGURE=		yes
+GNU_CONFIGURE=		yes
 
-CONFIGURE_ENV=		CFLAGS="-I${LOCALBASE}/include" \
+CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			LDFLAGS="-L${LOCALBASE}/lib"
 
 USE_GLIB=		yes
