@@ -2,11 +2,11 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/lbreakout/Makefile,v 1.1 2000/10/20 07:32:36 sobomax Exp $
 #
 
 PORTNAME=	lbreakout
-PORTVERSION=	001018
+PORTVERSION=	001104
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	lgames
