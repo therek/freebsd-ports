@@ -2,11 +2,11 @@
 # Date created:				October 12th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.17 2000/10/23 21:02:57 will Exp $
+# $FreeBSD: ports/devel/p5-Time/Makefile,v 1.18 2001/03/01 06:39:01 vanilla Exp $
 #
 
 PORTNAME=	Time
-PORTVERSION=	100.010301
+PORTVERSION=	101.062101
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Time
