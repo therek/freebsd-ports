@@ -4,7 +4,7 @@
 #     (c) 1998,1999 Dave Cinege, H. Peter Anvin, and Red Hat, Inc.
 #         2000 Akinori MUSHA <knu@FreeBSD.org>, modified for FreeBSD.
 # 
-# $FreeBSD: ports/www/netscape-wrapper/files/netscape.sh,v 1.1.1.1 2000/05/08 19:02:55 knu Exp $
+# $FreeBSD: ports/www/netscape-wrapper/files/netscape.sh,v 1.2 2000/06/27 18:44:45 knu Exp $
 #
 
 prefix='%%PREFIX%%'
@@ -58,7 +58,7 @@ killstale () {
 
 # Try calling existing netscape process with functions, else start one.
 newbrowser () {
-    [ $# -gt 0 ] && url=`echo $@ | sed 's/\ -[^ ]*//g; s/\( |	\)*//'`
+    [ $# -gt 0 ] && url=`echo $@ | sed 's/\ -[^ ]*//g; s/\( |	\)*//; s/,/%2C/g; s/(/%28/g; s/)/%29/g;'`
     if [ -L $lockfile ]; then
 	if [ "$url" = "" ]; then
 	    $netscape_remote $defsrem "xfeDoCommand($b_opt)" "$@" 2>/dev/null || \
