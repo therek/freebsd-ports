@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.55 2000/10/03 15:43:01 kevlo Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.56 2000/10/15 00:20:23 sada Exp $
 #
     SUBDIR += xmms
 
@@ -12,6 +12,7 @@
     SUBDIR += autoconvert
     SUBDIR += bg5ps
     SUBDIR += big5con
+    SUBDIR += big5fs
     SUBDIR += c2t
     SUBDIR += celvis
     SUBDIR += chinput
