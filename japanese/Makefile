@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.288 2000/08/18 19:01:29 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.289 2000/08/22 02:32:58 knu Exp $
 #
 
     SUBDIR += Canna
@@ -231,6 +231,7 @@
     SUBDIR += rskkserv
     SUBDIR += ruby-kakasi
     SUBDIR += ruby-man
+    SUBDIR += ruby-slang
     SUBDIR += ruby-uconv
     SUBDIR += rubytk
     SUBDIR += rxvt
