@@ -3,7 +3,7 @@
 # Date created:			  Fri Dec 01, 1995
 # Whom:				  obrien@cs.ucdavis.edu
 #
-# $FreeBSD: ports/comms/minicom/Makefile,v 1.29 2000/06/01 18:00:34 obrien Exp $
+# $FreeBSD: ports/comms/minicom/Makefile,v 1.30 2000/09/25 12:21:20 asami Exp $
 #
 
 PORTNAME=	minicom
@@ -21,6 +21,7 @@ MAINTAINER=	obrien@FreeBSD.org
 RUN_DEPENDS=	lrz:${PORTSDIR}/comms/lrzsz \
 		lsz:${PORTSDIR}/comms/lrzsz
 
+WRKSRC=		${WRKDIR}/${DISTNAME}/src
 #USE_GMAKE=	"for ``po'' dir stuff"
 MAN1=		minicom.1 runscript.1 ascii-xfr.1
 
