@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.268 2004/12/20 10:14:27 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.269 2004/12/20 18:05:27 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -670,7 +670,6 @@ MASTER_SITE_REDHAT_LINUX+= \
 	ftp://ftp.kddlabs.co.jp/pub/Linux/packages/RedHat/redhat/linux/%SUBDIR%/ \
 	ftp://ftp.cse.cuhk.edu.hk/pub2/redhat/%SUBDIR%/ \
 	ftp://ftp2.compaq.com/pub/linux/RedHat/7.2-alpha/updates/rpms/alpha/ \
-	ftp://alpha.crl.dec.com/pub/linux/redhat/7.2-alpha/updates/rpms/alpha/ \
 	ftp://ftp.rz.uni-karlsruhe.de/pub/mirror/ftp.redhat.de/pub/redhat/updates/7.2/en/os/i386/
 
 #
