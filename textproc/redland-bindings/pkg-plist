@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/textproc/redland-bindings/pkg-plist,v 1.1 2004/12/23 07:49:34 edwin Exp $
 %%WITH_JAVA%%lib/java/librdf-java.a
 @comment %%WITH_JAVA%%lib/java/librdf-java.la
 %%WITH_JAVA%%lib/java/librdf-java.so
@@ -22,8 +22,8 @@
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/RDF/Redland/URI.pm
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/auto/RDF/Redland/CORE.bs
 %%WITH_PERL%%%%SITE_PERL%%/%%PERL_ARCH%%/auto/RDF/Redland/CORE.so
-%%WITH_PHP%%%%PHP_EXT_DIR%%/redland.so
-%%WITH_PHP%%@dirrm %%PHP_EXT_DIR%%
+%%WITH_PHP%%lib/php/%%PHP_EXT_DIR%%/redland.so
+%%WITH_PHP%%@dirrm lib/php/%%PHP_EXT_DIR%%
 %%WITH_PYTHON%%%%PYTHON_SITELIBDIR%%/Redland.so
 %%WITH_PYTHON%%%%PYTHON_SITELIBDIR%%/RDF.py
 %%WITH_PYTHON%%@dirrm %%PYTHON_SITELIBDIR%%
