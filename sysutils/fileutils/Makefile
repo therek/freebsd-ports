@@ -2,7 +2,7 @@
 # Date created:	Mon Jun  5 22:42:27 CEST 2000
 # Whom: ust@cert.siemens.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/fileutils/Makefile,v 1.1.1.1 2000/07/15 18:46:53 sada Exp $
 #
 
 PORTNAME=	fileutils
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=   ${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	fileutils
 
-MAINTAINER=	ust@cert.siemens.de
+MAINTAINER=	Cyrille Lefevre <clefevre@citeweb.net>
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g

@@ -2,7 +2,7 @@
 # Date created:				29 March 2000
 # Whom:					Robert Withrow <witr@rwwa.com>
 #
-# $FreeBSD: ports/misc/findutils/Makefile,v 1.4 2000/06/05 17:39:52 hoek Exp $
+# $FreeBSD: ports/misc/findutils/Makefile,v 1.5 2000/11/23 11:56:08 sobomax Exp $
 #
 
 PORTNAME=	findutils
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR= findutils
 
-MAINTAINER=	ust@cert.siemens.de
+MAINTAINER=	Cyrille Lefevre <clefevre@citeweb.net>
 
 GNU_CONFIGURE=	yes
 
