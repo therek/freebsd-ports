@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.65 2000/11/02 06:59:22 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.66 2000/11/06 14:00:24 keith Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -25,6 +25,8 @@
     SUBDIR += kcfonts
     SUBDIR += libtabe
     SUBDIR += linux-gtk
+    SUBDIR += linux-netscape47-communicator
+    SUBDIR += linux-netscape47-navigator
     SUBDIR += lunar
     SUBDIR += moefonts-cid
     SUBDIR += moettf
