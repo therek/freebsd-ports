@@ -2,7 +2,7 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/net/centericq/Makefile,v 1.12 2001/01/13 11:13:53 alex Exp $
+# $FreeBSD: ports/net/centericq/Makefile,v 1.13 2001/01/21 04:26:07 ijliao Exp $
 #
 
 PORTNAME=	centericq
@@ -12,9 +12,11 @@ MASTER_SITES=	http://download.konst.org.ua/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
+
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
-LIB_DEPENDS=	ncurses.5:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
 CFLAGS+=	-nostdinc -I${LOCALBASE}/include/ncurses \
 		-I${LOCALBASE}/include -I/usr/include
 .endif
