@@ -3,11 +3,11 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.82 2000/10/05 06:47:37 reg Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.83 2000/10/08 10:19:54 asami Exp $
 #
 
 PORTNAME?=	vim
-PORTVERSION=	5.7
+PORTVERSION=	5.7.10
 CATEGORIES?=	editors
 MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
 		ftp://ftp.nuxi.com/pub/vim/unix/ \
@@ -16,13 +16,14 @@ MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
 		ftp://ftp.is.co.za/applications/editors/vim/  \
 		ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unix/  \
 		ftp://ftp.progsoc.uts.edu.au/pub/vim/unix/
-DISTNAME=	vim-${PORTVERSION}
+#DISTNAME=	vim-${PORTVERSION:C/.[0-9]+$//g}
+DISTNAME=	vim-5.7
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX} ${DISTNAME}-rt${EXTRACT_SUFX}
 
-#PATCH_SITES=	${MASTER_SITES:S/unix/patches/}
-#.for p in 01
-#PATCHFILES+=	5.6.0${p}
-#.endfor
+PATCH_SITES=	${MASTER_SITES:S/unix/patches/}
+.for p in 01 02 03 04 05 06 07 08 10 # 11
+PATCHFILES+=	5.7.0${p}
+.endfor
 
 MAINTAINER=	obrien@FreeBSD.org
 
