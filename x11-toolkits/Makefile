@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.67 2000/06/01 08:06:36 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.68 2000/06/04 16:06:34 will Exp $
 #
 
     SUBDIR += FWF
@@ -18,6 +18,7 @@
     SUBDIR += itk
     SUBDIR += iwidgets
     SUBDIR += iv
+    SUBDIR += jx
     SUBDIR += kde-qt-addon
     SUBDIR += lesstif
     SUBDIR += linux-gtk
