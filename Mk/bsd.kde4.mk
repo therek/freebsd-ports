@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.18 2002/09/10 07:46:25 alane Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.19 2002/09/15 21:50:36 seanc Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -66,6 +66,7 @@ USE_KDELIBS_VER=2
 LIB_DEPENDS+=	kdecore:${PORTSDIR}/x11/kdelibs3
 USE_QT_VER=		3
 PREFIX=			${KDE_PREFIX}
+MASTER_SITE_KDE_kde=	${MASTER_SITE_KDE:S@%/@%/:kde@g}
 
 .else
 
@@ -96,7 +97,7 @@ CONFIGURE_ENV+=        MOC="${MOC}" QTDIR="${QTDIR}"
 
 # Yeah, it's namespace pollution, but this is really the best place for this
 # stuff since arts/kdelibs use it.
-KDE_VERSION=	3.0.3
+KDE_VERSION=	3.0.4
 KDE_ORIGVER=	3.0.1
 KDE_PREFIX?=	${LOCALBASE}
 
