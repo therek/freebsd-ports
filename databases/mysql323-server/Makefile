@@ -2,12 +2,11 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.100 2001/01/21 20:09:16 dirk Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.101 2001/01/22 10:09:51 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
-PORTVERSION=	3.23.31
-PORTREVISION?=	0
+PORTVERSION=	3.23.32
 CATEGORIES=	databases
 MASTER_SITES=	http://www.kernelnotes.de/MySQL/Downloads/MySQL-3.23/ \
 		http://www.mysql.net/Downloads/MySQL-3.23/ \
