@@ -2,11 +2,12 @@
 # Date created:		24 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/xli/Makefile,v 1.17 2000/04/17 10:40:23 jkoshy Exp $
+# $FreeBSD: ports/graphics/xli/Makefile,v 1.18 2000/07/04 07:13:33 sobomax Exp $
 #
 
 PORTNAME=	xli
 PORTVERSION=	1.17.0
+PORTREVISION=	1
 CATEGORIES=	graphics x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		http://pantransit.reptiles.org/prog/
@@ -18,7 +19,8 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 USE_IMAKE=	yes
-MAN1=		xli.1 xlito.1
+MANN=		xli.n xlito.n
+MANCOMPRESSED=	no
 
 post-patch:
 	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/Imakefile
