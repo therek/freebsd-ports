@@ -2,7 +2,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.31 2000/11/03 16:01:49 sobomax Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.32 2000/11/13 16:28:23 sobomax Exp $
 #
 
 PORTNAME=	balsa
@@ -36,7 +36,5 @@ pre-patch:
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g ; \
 		 s|\$\(gnomedatadir\)/gnome|\$\(gnomedatadir\)|g'
-	@find ${WRKSRC}/help -name "*.html" | xargs ${PERL} -pi -e \
-		's|\.gif|.png|g'
 
 .include <bsd.port.mk>
