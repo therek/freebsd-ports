@@ -2,13 +2,14 @@
 # Date created:		Sun Apr 11 13:06:01 PDT 1999
 # Whom:			Michael Haro <mharo@area51.fremont.ca.us>
 #
-# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.19 2001/03/29 16:32:47 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libmikmod
 PORTVERSION=	3.1.9
 CATEGORIES=	audio
-MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITES=	http://mikmod.online.fr/libmikmod/ \
+		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sada
 
 MAINTAINER=	ports@FreeBSD.org
