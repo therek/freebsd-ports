@@ -2,7 +2,7 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer2/Makefile,v 1.14 2000/08/10 16:16:30 kevlo Exp $
+# $FreeBSD: ports/german/webalizer2/Makefile,v 1.15 2000/09/05 20:41:43 steve Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	2.0.12
@@ -16,6 +16,8 @@ MAINTAINER=	dirk.meyer@dinoex.sub.org
 LIB_DEPENDS=	gd.1:${PORTSDIR}/graphics/gd
 
 NO_LATEST_LINK=	yes
+
+.include <bsd.port.pre.mk>
 
 WEBALIZER_LANG?=	german
 USE_BZIP2=	yes
@@ -64,4 +66,4 @@ post-install:
 			${PREFIX}/etc/${PKGNAMEPREFIX}webalizer.conf-dist ; \
 	fi
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
