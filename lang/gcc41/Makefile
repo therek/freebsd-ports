@@ -3,10 +3,10 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.96 2000/12/27 02:22:16 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.97 2001/02/14 20:19:39 lioux Exp $
 #
 
-SNAPDATE=	2000-12-25
+SNAPDATE=	2001-02-05
 SNAPVER=	${SNAPDATE:S/-//g}
 
 PORTNAME=	gcc-devel
@@ -57,7 +57,8 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_BISON=	yes
 CONFIGURE_ARGS=	--disable-nls --with-gnu-as --with-gnu-ld \
-		--with-gxx-include-dir=${PREFIX}/lib/gcc-lib/${CONFIGURE_TARGET}/${EGCS_REV}/include/g++
+		--with-gxx-include-dir=${TARGLIB}/include/g++
+#CONFIGURE_ARGS+=	--program-prefix=e
 .if defined(WANT_SHAREDLIBS)
 CONFIGURE_ARGS+= --enable-shared
 .else
@@ -82,7 +83,7 @@ pre-configure:
 	@touch ${SRCDIR}/gcc/configure
 	@touch ${SRCDIR}/gcc/cstamp-h.in
 	@${MKDIR} ${CONFIGURE_WRKSRC}
-	${RM} -rf ${SRCDIR}/libjava
+	#${RM} -rf ${SRCDIR}/libjava
 
 pre-build:
 	cd ${SRCDIR} ; contrib/gcc_update --touch
