@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.437 2001/02/16 11:07:02 ijliao Exp $
+# $FreeBSD$
 #
     SUBDIR += zziplib
 
@@ -213,6 +213,7 @@
     SUBDIR += mm
     SUBDIR += mob
     SUBDIR += moonshine
+    SUBDIR += motor
     SUBDIR += mprof
     SUBDIR += msrc0
     SUBDIR += nana
