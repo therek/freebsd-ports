@@ -1,6 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/editors/jedit/files/jedit.sh,v 1.3 2001/04/05 10:31:58 sobomax Exp $
-CLASSPATH=${CLASSPATH}:%%PREFIX%%/share/java/jedit/swingall.jar:%%PREFIX%%/share/java/jedit/jedit.jar
-export CLASSPATH
+# $FreeBSD: ports/editors/jedit/files/jedit.sh,v 1.4 2001/04/23 10:39:43 sobomax Exp $
 
-exec %%LOCALBASE%%/bin/javavm org.gjt.sp.jedit.jEdit "$@"
+# Java heap size, in megabytes
+JAVA_HEAP_SIZE=32
+
+exec %%LOCALBASE%%/bin/javavm -mx${JAVA_HEAP_SIZE}m ${JEDIT} -jar \
+	"%%PREFIX%%/share/java/jedit/jedit.jar" "$@"
