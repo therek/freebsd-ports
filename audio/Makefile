@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.135 2000/06/02 15:11:13 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.136 2000/06/03 05:29:02 will Exp $
 #
 
     SUBDIR += afsp
@@ -83,6 +83,7 @@
     SUBDIR += sphinx
     SUBDIR += splay
     SUBDIR += splaytk
+    SUBDIR += streamripper
     SUBDIR += tclmidi
     SUBDIR += timidity
     SUBDIR += timidity++
