@@ -2,20 +2,19 @@
 # Date created:		14 Jan 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/russian/xruskb/Makefile,v 1.6 2000/04/13 19:14:16 cpiazza Exp $
+# $FreeBSD: ports/russian/xruskb/Makefile,v 1.7 2000/04/21 07:52:25 mharo Exp $
 #
 
 PORTNAME=	xruskb
-PORTVERSION=	1.9.3
+PORTVERSION=	1.13.0
 CATEGORIES=	russian x11
-MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/xruskb-old/ \
-		# ftp://ftp.kiae.su/pub/x11/cyrillic/
+MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_X_PREFIX=	yes
+USE_X_PREFIX=	YES
 
-GNU_CONFIGURE=	Yes
+GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--datadir=${PREFIX}/share
 
 MAN1=		xrus.1
