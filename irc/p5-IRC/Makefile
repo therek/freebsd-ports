@@ -3,14 +3,13 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.3 1999/09/04 19:44:36 cpiazza Exp $
+# $FreeBSD: ports/irc/p5-IRC/Makefile,v 1.4 1999/09/27 16:58:16 cpiazza Exp $
 #
 
 DISTNAME=       Net-IRC-0.62
 PKGNAME=        p5-IRC-0.62
 CATEGORIES=     irc perl5
-MASTER_SITES=   ${MASTER_SITE_PERL_CPAN} \
-		http://www.funkplanet.com/irc/
+MASTER_SITES=   ${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 
 MAINTAINER=	jedgar@fxp.org
