@@ -2,16 +2,15 @@
 # Date created:                         20 May 1998
 # Whom:                                 ache
 #
-# $FreeBSD: ports/www/WebMagick/Makefile,v 1.21 2001/08/10 04:45:59 ache Exp $
+# $FreeBSD: ports/www/WebMagick/Makefile,v 1.22 2001/08/12 03:48:42 ache Exp $
 #
 
 PORTNAME=	WebMagick
-PORTVERSION=    2.01
-PORTREVISION=	1
+PORTVERSION=    2.02p1
 CATEGORIES=	www graphics
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=     webmagick
-#DISTNAME=       ${PORTNAME}-2.0pre4
+DISTNAME=       ${PORTNAME}-2.02pre1
 
 MAINTAINER=	ache@freebsd.org
 
