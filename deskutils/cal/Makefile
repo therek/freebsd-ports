@@ -2,11 +2,11 @@
 # Date created:				2 April 1997
 # Whom:	Andrey Zakhvatov <andy@icc.surw.chel.su>
 #
-# $FreeBSD: ports/deskutils/cal/Makefile,v 1.9 1999/08/25 05:26:31 obrien Exp $
+# $FreeBSD: ports/deskutils/cal/Makefile,v 1.10 2000/04/08 22:03:23 mharo Exp $
 #
 
 PORTNAME=		cal
-PROTVERSION=		3.5
+PORTVERSION=		3.5
 CATEGORIES=		deskutils
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/shell
