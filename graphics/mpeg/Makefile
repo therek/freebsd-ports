@@ -2,7 +2,7 @@
 # Date created:		Sa  01 May 1999 15:00:00 MET
 # Whom:			Tobias Reifenberger <treif@mayn.de>
 #
-# $FreeBSD: ports/graphics/mpeg/Makefile,v 1.1 2000/03/28 22:39:22 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mpeg
@@ -19,7 +19,8 @@ WRKSRC=		${WRKDIR}/mpegdir
 MAN1=		mpeg.1
 
 pre-build:
-	@${MV} ${WRKSRC}/makefile ${WRKSRC}/Makefile
+	@-${MV} ${WRKSRC}/makefile ${WRKSRC}/Makefile
+	cd ${WRKSRC} && lex -lt lexer.l >lexer.c
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mpeg ${PREFIX}/bin
