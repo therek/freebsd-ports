@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.11 2000/05/12 19:35:18 shige Exp $
+# $FreeBSD: ports/editors/bitmap-mule/Makefile,v 1.12 2000/07/17 02:38:58 shige Exp $
 #
 
 PORTNAME=	bitmap
@@ -28,7 +28,7 @@ EMACS_PORT_NAME=	mule
 ALL_TARGET?=	elc
 
 BUILD_DEPENDS=	uncompface:${PORTSDIR}/mail/faces
-RUN_DEPENDS=	${BITMAP_FONT}:${PORTSDIR}/x11-fonts/bitmap-font
+RUN_DEPENDS=	${BITMAP_FONT}:${PORTSDIR}/x11-fonts/bitmap-fonts
 SCRIPTS_ENV=	TARGETS=${BITMAP_SETUPEL}
 PLIST_SUB=	BITMAP_SETUPEL=${BITMAP_SETUPEL} \
 		BITMAPDOCDIR=${BITMAPDOCDIR}

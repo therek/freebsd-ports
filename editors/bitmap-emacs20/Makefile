@@ -2,7 +2,7 @@
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.14 2000/06/27 01:00:47 jseger Exp $
+# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.15 2000/07/17 02:38:58 shige Exp $
 #
 
 PORTNAME=	bitmap
@@ -26,7 +26,7 @@ EMACS_PORT_NAME=	emacs20
 ALL_TARGET=	elc
 
 BUILD_DEPENDS=	uncompface:${PORTSDIR}/mail/faces
-RUN_DEPENDS=	${BITMAP_FONT}:${PORTSDIR}/x11-fonts/bitmap-font
+RUN_DEPENDS=	${BITMAP_FONT}:${PORTSDIR}/x11-fonts/bitmap-fonts
 PLIST_SUB=	BITMAPDOCDIR=${BITMAPDOCDIR}
 
 .include <bsd.port.pre.mk>
