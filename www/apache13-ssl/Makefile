@@ -5,7 +5,7 @@
 #			and apache-ssl port by Mark Murray <mark@grondar.za>.
 #			Oh, and with a little bit of help from Ben :)
 #
-# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.68 2000/08/22 03:41:05 kuriyama Exp $
+# $FreeBSD: ports/www/apache13-ssl/Makefile,v 1.69 2000/09/22 01:59:05 kris Exp $
 
 PORTNAME=	apache+ssl
 PORTVERSION=	${APACHE_VERSION}.${APACHE_SSL_VERSION}
@@ -96,9 +96,10 @@ post-patch:
 
 certificate:
 	@if [ -f ${OPENSSLDIR}/openssl.cnf ]; then \
-		cd ${WRKSRC}; ${MAKE} ${MAKE_ENV} $@; \
+		cd ${WRKSRC}/src; ${MAKE} ${MAKE_ENV} $@; \
 		${CP} ${WRKSRC}/SSLconf/conf/httpsd.pem ${PREFIX}/certs/cert.pem; \
 	else \
 		${ECHO} "You must create the file ${OPENSSLDIR}/openssl.cnf first."; \
+	fi
 
 .include <bsd.port.post.mk>
