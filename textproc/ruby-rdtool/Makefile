@@ -2,12 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.17 2001/05/11 19:47:48 knu Exp $
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.18 2001/05/12 20:26:16 knu Exp $
 #
 
 PORTNAME=	rdtool
-PORTVERSION=	0.6.8
-PORTREVISION=	1
+PORTVERSION=	0.6.9
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -39,7 +38,6 @@ do-configure:
 
 post-patch:
 	${RUBY} -i -pe 'gsub %r"/usr/local\b", "${PREFIX}"' ${WRKSRC}/utils/rdswap.rb
-	${RUBY} -i -pe 'gsub %r"(\(\(<URL:.*[^)])$$", "\\1>))"' ${WRKSRC}/doc/rd-draft.rd*
 
 pre-build:
 	@cd ${WRKSRC}; \
@@ -58,7 +56,6 @@ post-install:
 	${LN} -sf rmi2html.rb ${PREFIX}/bin/rmi2html
 	${INSTALL_DATA} ${WRKSRC}/rd/rd2rmi-lib.rb ${RUBY_SITELIBDIR}/rd/
 	${INSTALL_SCRIPT} ${WRKSRC}/utils/rdswap.rb ${PREFIX}/bin/rdswap
-	${INSTALL_DATA} ${WRKSRC}/rd/dot.rd2rc ${RUBY_SITELIBDIR}/rd/
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/rd
 	${INSTALL_DATA} ${WRKSRC}/rd/dot.rd2rc ${RUBY_EXAMPLESDIR}/rd/
