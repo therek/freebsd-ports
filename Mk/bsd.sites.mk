@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.251 2004/07/03 13:19:28 eik Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.252 2004/07/13 15:35:58 eik Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -741,7 +741,7 @@ MASTER_SITE_SOURCEFORGE+= \
 
 # official sf.net mirrors that don't mirror all projects, check
 # http://prdownloads.sourceforge.net/%SUBDIR%/
-.for mirror in easynews cesnet switch puzzle
+.for mirror in easynews cesnet switch puzzle ovh # keihanna is mostly unreachable
 MASTER_SITE_SOURCEFORGE_EXTENDED+= \
 	http://${mirror}.dl.sourceforge.net/sourceforge/%SUBDIR%/
 .endfor
