@@ -2,7 +2,7 @@
 # Date created:         Sun Feb 21 2001
 # Whom:                 tobez@tobez.org
 #
-# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.2 2001/06/12 19:24:49 tobez Exp $
+# $FreeBSD: ports/mail/libesmtp/Makefile,v 1.3 2001/07/14 21:38:25 tobez Exp $
 #
 # Modified for 0.8.3 on Fri July 13 2001
 # Whom:			jmcoopr@webmail.bmi.net
