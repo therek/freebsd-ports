@@ -3,18 +3,16 @@
 # Date created:		Oct 27, 1994
 # Whom:			pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/comms/kermit/Makefile,v 1.18 1999/08/25 05:12:36 obrien Exp $
 #
 
-DISTNAME=	cku192src
-PKGNAME=        kermit-6.0.192
+DISTNAME=	cku196
+PKGNAME=        kermit-7.0.196-beta
 CATEGORIES=	comms
-MASTER_SITES=	ftp://kermit.columbia.edu/kermit/archives/ \
-		ftp://ftp.th-darmstadt.de/pub/networking/kermit/
+MASTER_SITES=	ftp://kermit.columbia.edu/kermit/test/tar/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	joerg@FreeBSD.org
 
-RESTRICTED=	"'No redistribution' copyright"
 NO_WRKSUBDIR=	yes
 MAN1=		kermit.1
 MANCOMPRESSED=	yes
