@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/converters/Makefile,v 1.24 1999/08/25 05:16:15 obrien Exp $
 #
 
     SUBDIR += aish
@@ -10,6 +10,7 @@
     SUBDIR += kdesupport11-i18n
     SUBDIR += libutf-8
     SUBDIR += mimepp
+    SUBDIR += mmencode
     SUBDIR += mpack
     SUBDIR += p5-Convert-UU
     SUBDIR += p5-MIME-Base64
