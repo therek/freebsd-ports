@@ -2,7 +2,7 @@
 # Date created:		19 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/irc/ruby-irc/Makefile,v 1.1 2001/01/19 09:00:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	irc
@@ -28,21 +28,21 @@ do-install:
 	${MKDIR} ${RUBY_SITELIBDIR}/irc
 	${INSTALL_DATA} ${WRKSRC}/irc/*.rb ${RUBY_SITELIBDIR}/irc/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_DOCDIR}/irc/ja
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 .for f in ${DOCS_EN}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/irc/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/
 .endfor
 .for f in ${DOCS_JA}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/irc/ja/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODDOCDIR}/ja/
 .endfor
-	${MKDIR} ${RUBY_EXAMPLESDIR}/irc/cpi
-	${MKDIR} ${RUBY_EXAMPLESDIR}/irc/ja/cpi
-	${INSTALL_DATA} ${WRKSRC}/cpi/*.cpi ${RUBY_EXAMPLESDIR}/irc/cpi/
-	${INSTALL_DATA} ${WRKSRC}/cpi.ja/*.cpi ${RUBY_EXAMPLESDIR}/irc/ja/cpi/
-	${INSTALL_DATA} ${WRKSRC}/bot.rb ${RUBY_EXAMPLESDIR}/irc/
-	${INSTALL_DATA} ${WRKSRC}/bot.ja.rb ${RUBY_EXAMPLESDIR}/irc/ja/bot.rb
-	${MKDIR} ${RUBY_EXAMPLESDIR}/irc/log
-	${MKDIR} ${RUBY_EXAMPLESDIR}/irc/ja/log
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}/cpi
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}/ja/cpi
+	${INSTALL_DATA} ${WRKSRC}/cpi/*.cpi ${RUBY_MODEXAMPLESDIR}/cpi/
+	${INSTALL_DATA} ${WRKSRC}/cpi.ja/*.cpi ${RUBY_MODEXAMPLESDIR}/ja/cpi/
+	${INSTALL_DATA} ${WRKSRC}/bot.rb ${RUBY_MODEXAMPLESDIR}/
+	${INSTALL_DATA} ${WRKSRC}/bot.ja.rb ${RUBY_MODEXAMPLESDIR}/ja/bot.rb
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}/log
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}/ja/log
 .endif
 
 .include <bsd.port.mk>
