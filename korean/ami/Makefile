@@ -2,11 +2,11 @@
 # Date created:		05 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/ami/Makefile,v 1.15 2000/11/05 02:30:24 cjh Exp $
+# $FreeBSD: ports/korean/ami/Makefile,v 1.16 2000/11/22 19:04:23 cjh Exp $
 #
 
 PORTNAME=	ami
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.7.1
 #PORTREVISION=	1
 CATEGORIES=	korean x11
 MASTER_SITES=	http://www.kr.freebsd.org/~hwang/ami/ \
@@ -24,6 +24,9 @@ USE_GTK=	yes
 WANT_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-hangul-keyboard=2
+
+# temporary
+WRKSRC=		${WRKDIR}/ami-1.0.7
 
 .include <bsd.port.pre.mk>
 
