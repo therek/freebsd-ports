@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.216 1999/08/31 15:03:32 sumikawa Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.217 1999/09/02 16:19:31 sada Exp $
 #
 
     SUBDIR += Canna
@@ -137,6 +137,7 @@
     SUBDIR += mule-sj3+wnn6
     SUBDIR += mule-wnn4
     SUBDIR += mule-wnn6
+    SUBDIR += mutt
     SUBDIR += namazu
     SUBDIR += ndtpd
     SUBDIR += nethack
