@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.149 2001/01/23 16:47:04 sobomax Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.150 2001/01/27 03:59:41 will Exp $
 #
     SUBDIR += yawho
 
@@ -9,7 +9,6 @@
     SUBDIR += asfsm
     SUBDIR += asmem
     SUBDIR += asmon
-    SUBDIR += asrpages
     SUBDIR += battstat-applet
     SUBDIR += bchunk
     SUBDIR += bkpupsd
