@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.302 2001/01/30 10:48:17 jkoshy Exp $
+# $FreeBSD$
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -118,6 +118,7 @@
     SUBDIR += mozilla
     SUBDIR += mozilla-embedded
     SUBDIR += mozilla+ipv6
+    SUBDIR += mozilla-headers
     SUBDIR += neon
     SUBDIR += netscape-remote
     SUBDIR += netscape-wrapper
