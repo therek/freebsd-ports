@@ -2,7 +2,7 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/news/pan/Makefile,v 1.23 2000/06/01 16:25:42 ade Exp $
+# $FreeBSD: ports/news/pan/Makefile,v 1.24 2000/06/13 22:59:03 ade Exp $
 #
 
 PORTNAME=	pan
@@ -15,6 +15,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		uu.1:${PORTSDIR}/converters/uulib
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

@@ -2,7 +2,7 @@
 # Date created:				29 Jul 1998
 # Whom:					rom
 #
-# $FreeBSD: ports/devel/gide/Makefile,v 1.35 2000/05/17 16:33:54 ade Exp $
+# $FreeBSD: ports/devel/gide/Makefile,v 1.36 2000/06/01 16:25:18 ade Exp $
 #
 
 PORTNAME= 	gide
@@ -16,6 +16,7 @@ MAINTAINER=	ade@FreeBSD.org
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		glade.3:${PORTSDIR}/devel/libglade \
 		guile.6:${PORTSDIR}/lang/guile
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

@@ -2,7 +2,7 @@
 # Date created:				8th October 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/bonobo/Makefile,v 1.15 2000/06/16 08:18:20 sobomax Exp $
+# $FreeBSD: ports/devel/bonobo/Makefile,v 1.16 2000/06/16 21:49:51 asami Exp $
 #
 
 PORTNAME=	bonobo
@@ -17,6 +17,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnomeprint.9:${PORTSDIR}/print/gnomeprint \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
 		oaf.0:${PORTSDIR}/devel/oaf
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

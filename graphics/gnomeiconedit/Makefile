@@ -2,7 +2,7 @@
 # Date created:				28th January 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.5 2000/04/21 16:09:42 ade Exp $
+# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.6 2000/06/01 16:25:31 ade Exp $
 #
 
 PORTNAME=	gnomeiconedit
@@ -15,6 +15,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes

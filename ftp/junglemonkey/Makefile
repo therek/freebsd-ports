@@ -2,7 +2,7 @@
 # Date created:        			21st April 2000
 # Whom:                			Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.1 2000/05/18 16:08:01 ade Exp $
+# $FreeBSD: ports/ftp/junglemonkey/Makefile,v 1.2 2000/06/01 16:25:41 ade Exp $
 #
 
 PORTNAME=	junglemonkey
@@ -17,6 +17,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gnet.0:${PORTSDIR}/net/gnet \
 		popt.0:${PORTSDIR}/devel/popt \
 		glade.3:${PORTSDIR}/devel/libglade
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 

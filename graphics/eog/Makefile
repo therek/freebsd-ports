@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.8 2000/06/01 16:25:15 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.9 2000/06/09 21:43:10 ade Exp $
 #
 
 PORTNAME=	eog
@@ -15,6 +15,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
