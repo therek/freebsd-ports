@@ -2,7 +2,7 @@
 # Date created:		Mi  21 Okt 1998 13:53:18 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/lang/gawk/Makefile,v 1.8 2000/04/12 06:18:30 obrien Exp $
+# $FreeBSD: ports/lang/gawk/Makefile,v 1.9 2000/08/13 02:57:10 kris Exp $
 
 PORTNAME=	gawk
 PORTVERSION=	3.0.6
@@ -10,7 +10,7 @@ CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gawk
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MANUAL_PACKAGE_BUILD=	confuses zsh
 GNU_CONFIGURE=		yes
