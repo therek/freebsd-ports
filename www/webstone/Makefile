@@ -2,7 +2,7 @@
 # Date created:        25 March 1997
 # Whom:                Soren Dossing <sauber@netcom.com>
 #
-# $FreeBSD: ports/www/webstone/Makefile,v 1.4 1999/08/31 02:43:30 peter Exp $
+# $FreeBSD: ports/www/webstone/Makefile,v 1.5 2000/04/10 00:07:19 cpiazza Exp $
 #
 
 PORTNAME=	webstone
@@ -21,6 +21,10 @@ NO_INSTALL_MANPAGES=	yes
 
 post-extract:
 	( cd ${WRKSRC}; make clobber )
+
+# otherwise these files will be installed by do-install target below
+post-patch:
+	find ${WRKSRC}/.. -name '*.orig' | xargs rm -f
 
 do-install:
 	@${MKDIR} ${PREFIX}/webstone/bin
