@@ -3,19 +3,18 @@
 # Date created:			Mar 25, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/grc/Makefile,v 1.1 2001/03/25 13:17:54 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grc
-PORTVERSION=	1.0.1
+PORTVERSION=	1.0.2
 CATEGORIES=	misc
 MASTER_SITES=	http://melkor.dnp.fmph.uniba.sk/~garabik/grc/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PYTHON=	yes
-
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 NO_BUILD=	yes
 
@@ -31,12 +30,11 @@ do-install:
 .for file in grc grcat
 	${INSTALL_SCRIPT} ${WRKSRC}/${file} ${PREFIX}/bin
 .endfor
-
 .for file in ${MAN1}
 	${INSTALL_MAN} ${WRKSRC}/${file} ${MAN1PREFIX}/man/man1
 .endfor
-	${MKDIR} ${PREFIX}/share/grc
-	${CP} ${WRKSRC}/conf.* ${PREFIX}/share/grc
-	${CP} ${WRKSRC}/grc.conf ${PREFIX}/etc/grc.conf
+	@${MKDIR} ${DATADIR}
+	${CP} ${WRKSRC}/conf.* ${DATADIR}
+	${CP} ${WRKSRC}/grc.conf ${PREFIX}/etc
 
 .include <bsd.port.mk>
