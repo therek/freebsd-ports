@@ -2,14 +2,14 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.45 2000/04/10 01:10:57 cpiazza Exp $
+# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.46 2000/04/14 16:04:51 imura Exp $
 #
 
 PORTNAME=	qt
-PORTVERSION=	2.1.0b4
+PORTVERSION=	2.1.0
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
-DISTNAME=	qt-x11-2.1.0-beta4
+DISTNAME=	${PORTNAME}-x11-${PORTVERSION}
 
 MAINTAINER=	imura@FreeBSD.org
 
@@ -27,7 +27,7 @@ CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm \
 CONFIGURE_ENV=	QTDIR=${WRKSRC}
 MAKE_ENV=	QTDIR=${WRKSRC}
 
-WRKSRC=		${WRKDIR}/qt-2.1.0-beta4
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 CONFIG=		${WRKSRC}/configs/freebsd-g++-shared
 
 .if defined(QT_GIF_AVAILABLE)
