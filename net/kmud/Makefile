@@ -2,11 +2,12 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/kmud/Makefile,v 1.2 2000/04/14 06:53:23 mharo Exp $
+# $FreeBSD: ports/net/kmud/Makefile,v 1.3 2000/05/19 19:45:38 will Exp $
 #
 
 PORTNAME=	kmud
 PORTVERSION=	0.4.1
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.kmud.de/pub/kmud/
 
