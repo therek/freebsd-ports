@@ -2,13 +2,13 @@
 # Date created:         8 May 1995
 # Whom:                 asami
 #
-# $FreeBSD: ports/misc/kp/Makefile,v 1.13 1999/08/25 07:21:57 obrien Exp $
+# $FreeBSD: ports/misc/kp/Makefile,v 1.14 2000/04/14 08:46:06 asami Exp $
 #
 
 PORTNAME=       kp
 PORTVERSION=	1.00
 CATEGORIES=	misc
-MASTER_SITES=   ftp://stampede.cs.berkeley.edu/pub/kp/
+MASTER_SITES=   http://people.FreeBSD.org/~asami/distfiles/kp/
 
 MAINTAINER=	asami@FreeBSD.org
 
