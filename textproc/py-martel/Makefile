@@ -2,7 +2,7 @@
 # Date created:		19 October 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.9 2001/01/19 16:47:25 kevlo Exp $
+# $FreeBSD: ports/textproc/py-martel/Makefile,v 1.10 2001/02/11 17:09:06 jeh Exp $
 #
 
 PORTNAME=	martel
@@ -16,8 +16,9 @@ DISTNAME=	Martel-${PORTVERSION}
 
 MAINTAINER=	johann@egenetics.com
 
-RUN_DEPENDS=	${PYTHON_SITELIBDIR}/TextTools/__init__.py:${PORTSDIR}/textproc/py-mxTextTools
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/mx/TextTools/__init__.py:${PORTSDIR}/lang/py-mx-base
 
+USE_PYTHON=	yes
 PYTHON_VERSION=	python2.0
 
 MARTEL_DIR=	${PYTHON_SITELIBDIR}/Martel
