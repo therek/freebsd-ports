@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/linux-mozilla/scripts/configure,v 1.3 2002/05/09 00:03:03 trevor Exp $
+# $FreeBSD: ports/www/linux-mozilla/scripts/configure,v 1.4 2002/06/05 22:24:14 trevor Exp $
 
 echo ${WRKSRC}/components.conf
 if [ -f ${WRKSRC}/components.conf ]; then
@@ -15,7 +15,6 @@ echo "browser langenus regus xpcom" > /tmp/checklist.tmp.$$;
 	--checklist "\n\
 Choose which components of Mozilla to download and install. \n\
 Press the space bar to toggle selections." -1 -1 7 \
-"chatzilla"	"IRC client (104 kB)"					ON \
 "deflenus"	"American English profile defaults (8 kB)"		ON \
 "inspector"	"DOM inspector (240 kB)"				ON \
 "mail"		"Mozilla Mail and News (1856 kB)"			ON \
