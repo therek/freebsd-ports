@@ -2,7 +2,7 @@
 # Date created:         20 May 1997
 # Whom:                 CHOI Junho <junker@jazz.snu.ac.kr>
 #
-# $FreeBSD: ports/korean/h2ps/Makefile,v 1.9 2000/04/21 22:03:42 fenner Exp $
+# $FreeBSD: ports/korean/h2ps/Makefile,v 1.10 2000/07/23 05:06:17 cjh Exp $
 #
 # Thanks to SungGon Yi <skon@stats.snu.ac.kr> for advising 2.06 ports
 #
@@ -10,7 +10,8 @@
 PORTNAME=	h2ps
 PORTVERSION=	2.06
 CATEGORIES=	korean print
-MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/
+MASTER_SITES=	ftp://cglab.snu.ac.kr/pub/hangul/n3f/tar/ \
+		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
 
 MAINTAINER=	cjh@FreeBSD.org
 
