@@ -2,13 +2,15 @@
 # Date created:		12 November 1998
 # Whom:			steve
 #
-# $FreeBSD: ports/devel/pmake/Makefile,v 1.3 2000/04/11 21:30:08 mharo Exp $
+# $FreeBSD: ports/devel/pmake/Makefile,v 1.4 2000/10/08 00:36:41 asami Exp $
 #
 
 PORTNAME=	pmake
 PORTVERSION=	2.1.33
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.icsi.berkeley.edu/pub/ai/stolcke/software/
+MASTER_SITES=	ftp://ftp.icsi.berkeley.edu/pub/ai/stolcke/software/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	steve
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	steve@freebsd.org
