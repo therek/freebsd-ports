@@ -2,23 +2,24 @@
 # Date created:				29 April 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/security/ssh-multiadd/Makefile,v 1.2 2001/06/02 15:39:30 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ssh-multiadd
-PORTVERSION=	1.3.1
+PORTVERSION=	1.3.2
 CATEGORIES=	security
 MASTER_SITES=	http://www.azstarnet.com/~donut/programs/ssh-multiadd/
 
 MAINTAINER=	petef@FreeBSD.org
 
 USE_PYTHON=	yes
+USE_REINPLACE=	yes
 NO_BUILD=	yes
 MAN1=		ssh-multiadd.1
 
 post-patch:
-	@${PERL} -pi -e 's!/usr/bin/python2!${PYTHON_CMD}!; \
-			s!#break!break!' ${WRKSRC}/ssh-multiadd
+	@${REINPLACE_CMD} -e 's!/usr/bin/python2!${PYTHON_CMD}!' \
+			-e 's!#break!break!' ${WRKSRC}/ssh-multiadd
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/ssh-multiadd ${PREFIX}/bin
