@@ -2,7 +2,7 @@
 # Date created:		1 Jun 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.8 2000/04/29 20:33:42 cpiazza Exp $
+# $FreeBSD: ports/www/wwwoffle/Makefile,v 1.9 2000/05/19 08:44:36 sobomax Exp $
 #
 
 PORTNAME=	wwwoffle
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/httpd/ \
 MASTER_SITE_SUBDIR=	apps/www/servers
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	ben@scientia.demon.co.uk
+MAINTAINER=	ben@FreeBSD.org
 
 USE_PERL5=	yes
 

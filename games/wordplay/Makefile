@@ -2,7 +2,7 @@
 # Date created:		24 Jun 2000
 # Whom:			Ben Smithurst <ben@scientia.demon.co.uk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/wordplay/Makefile,v 1.1.1.1 2000/06/30 12:16:18 nbm Exp $
 
 PORTNAME=	wordplay
 PORTVERSION=	7.22
@@ -11,7 +11,7 @@ MASTER_SITES=	http://pokey.itsc.uah.edu/~criswell/
 DISTNAME=	wordplay722
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ben@scientia.demon.co.uk
+MAINTAINER=	ben@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 MAKEFILE=	makefile
