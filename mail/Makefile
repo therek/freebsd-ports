@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.134 2000/06/09 13:20:43 sobomax Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.135 2000/06/29 19:33:20 ade Exp $
 #
 
     SUBDIR += adcomplain
@@ -95,6 +95,7 @@
     SUBDIR += serialmail
     SUBDIR += sigrot
     SUBDIR += smail
+    SUBDIR += smapi
     SUBDIR += smtpd
     SUBDIR += smtpfeed
     SUBDIR += solidpop3d
