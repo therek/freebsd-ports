@@ -3,7 +3,7 @@
 # Date created:			Mar 25, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/grc/Makefile,v 1.1 2001/03/25 13:17:54 ijliao Exp $
 #
 
 PORTNAME=	grc
@@ -28,7 +28,7 @@ post-patch:
 .endfor
 
 do-install:
-.for file in grc grcat ${MAN1}
+.for file in grc grcat
 	${INSTALL_SCRIPT} ${WRKSRC}/${file} ${PREFIX}/bin
 .endfor
 
