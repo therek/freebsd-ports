@@ -1,4 +1,4 @@
-# $FreeBSD: ports/astro/Makefile,v 1.17 1999/08/25 04:22:40 obrien Exp $
+# $FreeBSD: ports/astro/Makefile,v 1.18 2000/01/05 21:18:32 jedgar Exp $
 #
 
     SUBDIR += dgpsip
@@ -21,6 +21,7 @@
     SUBDIR += xephem
     SUBDIR += xglobe
     SUBDIR += xphoon
+    SUBDIR += xplanet
     SUBDIR += xtide
 
 .include <bsd.port.subdir.mk>
