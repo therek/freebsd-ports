@@ -1,12 +1,13 @@
 # New ports collection makefile for: analog
+# http://www.analog.cx/
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.25 2000/03/23 09:35:27 ache Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.26 2000/04/10 00:04:13 cpiazza Exp $
 #
 
 PORTNAME=	analog
-PORTVERSION= 	4.04
+PORTVERSION=    4.1
 CATEGORIES=	www
 MASTER_SITES=   http://www.analog.cx/ \
 		http://brendanr.simplenet.com/analog/ \
