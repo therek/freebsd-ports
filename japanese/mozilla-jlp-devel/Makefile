@@ -2,17 +2,17 @@
 # Date created:		02 Jul 2000
 # Whom:			Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.2 2000/10/30 04:38:42 knu Exp $
+# $FreeBSD: ports/japanese/mozilla-jlp/Makefile,v 1.3 2000/10/30 13:37:11 knu Exp $
 #
 
 PORTNAME=	mozilla
-PORTVERSION=	M18
-PORTREVISION=	1
+PORTVERSION=	0.7
+PORTEPOCH=	1
 CATEGORIES=	japanese www
 MASTER_SITES=	http://www.mozilla.gr.jp/jlp/ \
 		http://mozilla.inmel.net/
 PKGNAMESUFFIX=	-jlp
-DISTNAME=	${PORTVERSION}-langjajp
+DISTNAME=	${PORTNAME}${PORTVERSION}-langjajp
 EXTRACT_SUFX=	.xpi
 
 MAINTAINER=	yatt@msc.biglobe.ne.jp
@@ -36,7 +36,6 @@ MOZILLA_SH=	mozilla.xpg4
 .endif
 
 post-extract:
-	find ${WRKSRC} -type d -exec ${CHMOD} 755 {} \;
 	${MKDIR} ${WRKSRC}/defaults/pref
 	${CP} ${FILESDIR}/all.js ${WRKSRC}/defaults/pref
 	${CP} ${FILESDIR}/unix.js ${WRKSRC}/defaults/pref
@@ -48,7 +47,10 @@ do-build:
 do-install:
 	(cd ${PREFIX}/lib/mozilla/chrome; \
 	${MV} all-locales.rdf all-locales.rdf.orig; \
+	${MV} all-packages.rdf all-packages.rdf.orig; \
+	${MV} all-skins.rdf all-skins.rdf.orig; \
 	${MV} user-locales.rdf user-locales.rdf.orig; \
+	${MV} user-skins.rdf user-skins.rdf.orig; \
 	${MV} installed-chrome.txt installed-chrome.txt.orig)
 	(cd ${PREFIX}/lib/mozilla/defaults/pref; \
 	${MV} all.js all.js.orig; ${MV} unix.js unix.js.orig)
