@@ -3,7 +3,7 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.4 2000/02/25 08:06:46 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.5 2000/02/29 08:41:41 roger Exp $
 #
 
 DISTNAME=	openh323_1.1alpha1
@@ -25,8 +25,11 @@ USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIR}/pwlib \
 		OPENH323DIR=${WRKDIR}/openh323
+THE_MACHTYPE=	${ARCH:S/i386/x86/}
+MAKE_ARGS=	OSTYPE=${OPSYS} MACHTYPE=${THE_MACHTYPE} OSRELEASE=${OSVERSION}
+
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/test/obj_FreeBSD_x86_r/voxilla ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/test/obj_${OPSYS}_${THE_MACHTYPE}_r/voxilla ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/test/voxilla.1 ${PREFIX}/man/man1/voxilla.1
 
 MAN1=		voxilla.1
