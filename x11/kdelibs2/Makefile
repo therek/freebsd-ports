@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.38 2000/03/23 02:54:28 will Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.39 2000/03/23 22:22:23 will Exp $
 #
 
 DISTNAME=	kdelibs-1.1.2
@@ -29,6 +29,10 @@ CONFIGURE_ARGS+="--with-extra-includes=${PREFIX}/include" \
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${PREFIX}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 USE_GMAKE=	yes
+
+# generate KDE style mtree
+MTREE_CMD=	${CAT} ${MTREE_FILE} ${FILESDIR}/kde.dist | /usr/sbin/mtree
+MTREE_ARGS=	-U -d -e -p
 
 .include <bsd.port.pre.mk>
 
