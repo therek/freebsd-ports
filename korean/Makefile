@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.61 2001/03/23 16:19:30 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.62 2001/03/24 03:48:36 cjh Exp $
 #
     SUBDIR += w3m
     SUBDIR += uniksc
@@ -45,6 +45,7 @@
     SUBDIR += htexp
     SUBDIR += johabfonts
     SUBDIR += kaistfonts
+    SUBDIR += kde2-i18n
     SUBDIR += linux-netscape47-communicator
     SUBDIR += linux-netscape47-navigator
     SUBDIR += linuxdoc-sgml
