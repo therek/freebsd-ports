@@ -1,12 +1,12 @@
 # New ports collection makefile for:   ethereal
-# Version required:    0.7.5
+# Version required:    0.7.7
 # Date created:        10 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/ethereal/Makefile,v 1.17 1999/09/01 20:18:58 billf Exp $
+# $FreeBSD: ports/net/ethereal/Makefile,v 1.18 1999/09/24 22:03:35 billf Exp $
 #
 
-DISTNAME=	ethereal-0.7.5
+DISTNAME=	ethereal-0.7.7
 CATEGORIES=	net
 MASTER_SITES=	http://alpha1.linuxberg.com/files/x11/network/ \
 		http://www.linuxberg.com/files/x11/network/ \
