@@ -2,7 +2,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/deskutils/kproject/Makefile,v 1.11 2000/02/24 07:00:45 asami Exp $
+# $FreeBSD: ports/deskutils/kproject/Makefile,v 1.12 2000/04/08 22:03:44 mharo Exp $
 #
 
 PORTNAME=	kproject
@@ -11,8 +11,6 @@ CATEGORIES=	deskutils kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= unstable/apps/office
 EXTRACT_SUFX=	.tgz
-
-MAINTAINER=	hanspb@persbraten.vgs.no
 
 BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \

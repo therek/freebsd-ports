@@ -2,7 +2,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/deskutils/korganizer/Makefile,v 1.18 2000/04/08 22:03:39 mharo Exp $
+# $FreeBSD: ports/deskutils/korganizer/Makefile,v 1.19 2000/07/15 17:27:40 jedgar Exp $
 #
 
 PORTNAME=	korganizer
@@ -10,8 +10,6 @@ PORTVERSION=	1.1.2
 CATEGORIES=	deskutils kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR=	stable/1.1.2/distribution/tar/generic/source/bz2
-
-MAINTAINER=	hanspb@persbraten.vgs.no
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11 \

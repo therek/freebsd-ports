@@ -2,7 +2,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.6 2000/02/24 07:00:49 asami Exp $
+# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.7 2000/04/11 21:28:26 mharo Exp $
 #
 
 PORTNAME=	ktranslator
@@ -10,8 +10,6 @@ PORTVERSION=	0.4.0
 CATEGORIES=	devel kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1/apps/utils
-
-MAINTAINER=	hanspb@persbraten.vgs.no
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \

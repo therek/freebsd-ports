@@ -2,7 +2,7 @@
 # Date created:        18 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/net/ksamba/Makefile,v 1.13 2000/04/09 18:11:56 cpiazza Exp $
+# $FreeBSD: ports/net/ksamba/Makefile,v 1.14 2000/10/04 06:40:03 sobomax Exp $
 #
 
 PORTNAME=	ksamba
@@ -10,8 +10,6 @@ PORTVERSION=	0.3.3
 CATEGORIES=	net kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= unstable/apps/network
-
-MAINTAINER=	hanspb@persbraten.vgs.no
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
