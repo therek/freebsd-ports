@@ -3,7 +3,7 @@
 # Date created:         22 Apr 1999
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/astro/setiathome/Makefile,v 1.12 1999/08/25 04:22:42 obrien Exp $
+# $FreeBSD: ports/astro/setiathome/Makefile,v 1.13 1999/12/27 00:33:35 steve Exp $
 #
 
 PKGNAME=	setiathome-1.2
@@ -47,7 +47,7 @@ WRKSRC=         setiathome-1.2.i386-unknown-freebsd2.2.6
 DISTFILES=
 .endif
 
-.if make(makesum) | defined(FETCH_ALL)
+.if make(makesum) || defined(FETCH_ALL)
 DISTFILES=	setiathome-1.2.i386-unknown-freebsd2.2.6.tar	\
 			setiathome-1.2.i386-unknown-freebsd2.2.7.tar	\
 			setiathome-1.2.i386-unknown-freebsd2.2.8.tar	\
