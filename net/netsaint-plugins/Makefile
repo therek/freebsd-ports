@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.6 2001/03/30 19:08:16 dirk Exp $
+# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.7 2001/04/03 21:43:28 mharo Exp $
 #
 
 PORTNAME=	netsaint-plugins
@@ -57,7 +57,7 @@ PLIST_SUB+=	WANT_RADIUS="@comment "
 .endif
 
 .if defined(WANT_MYSQL)
-LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
+LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 PLIST_SUB+=	WANT_MYSQL=""
 CONFIGURE_ARGS+=--with-mysqllibdir=${LOCALBASE}/lib/mysql
 .else
