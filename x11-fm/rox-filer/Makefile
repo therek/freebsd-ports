@@ -2,10 +2,10 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.6 2001/03/13 18:10:20 sobomax Exp $
+# $FreeBSD: ports/x11-fm/rox-filer/Makefile,v 1.7 2001/03/18 17:41:33 olgeni Exp $
 
 PORTNAME=	rox
-PORTVERSION=	1.1.1
+PORTVERSION=	1.1.2
 CATEGORIES=	x11-fm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	rox
@@ -28,7 +28,7 @@ do-build:
 
 do-install:
 	${MKDIR} ${PREFIX}/apps/ROX-Filer
-	cd ${WRKSRC}/ROX-Filer && ${CP} -r AppIcon.xpm FreeBSD-ix86 Messages AppRun Help pixmaps ${PREFIX}/apps/ROX-Filer
+	cd ${WRKSRC}/ROX-Filer && ${CP} -r Options.xml AppIcon.xpm FreeBSD-ix86 Messages AppRun Help pixmaps ${PREFIX}/apps/ROX-Filer
 	${CAT} ${FILESDIR}/rox | ${SED} -e "s|%%PREFIX%%|${PREFIX}|" > ${PREFIX}/bin/rox
 	${CHMOD} 775 ${PREFIX}/bin/rox
 	${INSTALL_MAN} ${WRKSRC}/rox.1 ${PREFIX}/man/man1
