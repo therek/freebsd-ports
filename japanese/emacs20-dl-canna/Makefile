@@ -2,7 +2,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.16 2000/03/10 21:31:11 asami Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-canna/Makefile,v 1.17 2000/04/11 14:13:24 knu Exp $
 #
 
 PORTNAME=	emacs20-dl-canna
@@ -40,8 +40,8 @@ DOCDIR=		share/doc/emacs20-dl-canna
 DLCANNA_VER=	1.4
 # hack to allow parallel build to work
 .if defined(PARALLEL_PACKAGE_BUILD)
-BUILD_DEPENDS+=	gmake:${PORTSDIR}/devel/gmake \
-		autoconf:${PORTSDIR}/devel/autoconf
+BUILD_DEPENDS+=	${GMAKE}:${PORTSDIR}/devel/gmake \
+		${AUTOCONF}:${PORTSDIR}/devel/autoconf
 .endif
 
 post-install:
