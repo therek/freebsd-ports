@@ -32,7 +32,7 @@
 #
 # Id: addport,v 1.2 2000/04/02 06:21:13 will Exp (original shell script)
 # Id: addport,v 1.5 2000/04/22 22:19:43 mharo Exp (perl conversion)
-# $FreeBSD: ports/Tools/scripts/addport,v 1.28 2003/01/23 07:05:24 lioux Exp $
+# $FreeBSD: ports/Tools/scripts/addport,v 1.29 2003/01/30 17:28:34 will Exp $
 #
 # MAINTAINER=	will@FreeBSD.org
 #
@@ -228,10 +228,7 @@ foreach my $thisdir (@dirs) {
 	} else {
 		## Set up the autofill file.
 		# Read COMMENT for part of the commit message.
-		open(COMMENT, "pkg-comment") or die("Can't open pkg-comment for reading: $!");
-		$pkgcomment = <COMMENT>;
-		close(COMMENT);
-		chomp $pkgcomment;
+		$pkgcomment = `$make $passenv -V COMMENT`;
 		# Change the first character to lowercase to make it fit with the
 		# rest of the commit message.
 		$pkgcomment =~ s/(^.)/\l$1/;
