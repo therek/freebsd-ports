@@ -2,7 +2,7 @@
 # Date created:			29 November 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/ascd/Makefile,v 1.16 2000/08/06 20:27:05 jim Exp $
+# $FreeBSD: ports/audio/ascd/Makefile,v 1.17 2000/09/25 12:21:17 asami Exp $
 #
 
 PORTNAME=	ascd
@@ -11,7 +11,7 @@ CATEGORIES=	audio afterstep windowmaker
 MASTER_SITES=	http://worldserver.oleane.com/rsn/Archives/
 DISTFILES=	${DISTNAME}-src.tgz ${DATAFILES}
 
-MAINTAINER=	jim@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	workman.1:${PORTSDIR}/audio/libworkman
 
