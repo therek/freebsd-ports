@@ -1,16 +1,16 @@
 # ports collection makefile for:	rdb
-# Version required:			2.6d
 # Date created:				2000 Feb. 8
 # Whom:					Abel Chow <abel_chow@yahoo.com>
 #
-# $FreeBSD: ports/databases/rdb/Makefile,v 1.2 2000/03/04 13:19:37 jedgar Exp $
+# $FreeBSD: ports/databases/rdb/Makefile,v 1.3 2000/03/07 20:19:45 jedgar Exp $
 #
 
-DISTNAME=	RDB-2.6d
-PKGNAME=	rdb-2.6d
+PORTNAME=	rdb
+PORTVERSION=	2.6d
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.rand.org/pub/RDB-hobbs/ \
 		ftp://ftp.sunet.se/pub/unix/databases/flat-file/RDB/
+DISTNAME=	RDB-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gnats
-# Version required:     3.112.1
 # Date created:		10 November 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/databases/gnats/Makefile,v 1.27 1999/12/30 22:56:08 asami Exp $
+# $FreeBSD: ports/databases/gnats/Makefile,v 1.28 2000/01/21 14:09:26 asami Exp $
 #
 
-DISTNAME=	gnats-3.112.1
+PORTNAME=	gnats
+PORTVERSION=	3.112.1
 CATEGORIES=	databases elisp
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/gnats/snapshots/
 

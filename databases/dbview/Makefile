@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dbview
-# Version required:			1.0.3
 # Date created:				7 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/dbview/Makefile,v 1.2 1999/08/25 05:21:08 obrien Exp $
+# $FreeBSD: ports/databases/dbview/Makefile,v 1.3 2000/03/29 07:16:52 kris Exp $
 #
 
-DISTNAME=		dbview-1.0.3
+PORTNAME=		dbview
+PORTVERSION=		1.0.3
 CATEGORIES=		databases
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			ftp://ftp.infodrom.north.de/pub/Linux/Devel/dbview/

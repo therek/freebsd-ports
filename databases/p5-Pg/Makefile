@@ -1,16 +1,16 @@
 # New ports collection makefile for:	p5-Pg
-# Version required:			1.6.1
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.19 1999/12/29 08:18:36 steve Exp $
+# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.20 2000/03/21 23:40:34 mharo Exp $
 #
 
-DISTNAME=	pgsql_perl5-1.8.1
-PKGNAME=	p5-Pg-1.8.1
+PORTNAME=	p5-Pg
+PORTVERSION=	1.8.1
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Pg
+DISTNAME=	pgsql_perl5-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

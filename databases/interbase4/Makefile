@@ -1,15 +1,15 @@
 # New ports collection makefile for:	Interbase 4
-# Version required:			4.0
 # Date created:				1998-nov-01
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/databases/interbase4/Makefile,v 1.8 1999/11/23 02:47:43 billf Exp $
+# $FreeBSD: ports/databases/interbase4/Makefile,v 1.9 2000/03/19 01:42:56 jedgar Exp $
 #
 
-DISTNAME=	IB_4.0_FreeBSD
-PKGNAME=	interbase-4.0
+PORTNAME=	interbase
+PORTVERSION=	4.0
 CATEGORIES=	databases
 MASTER_SITES=	# manual fetch
+DISTNAME=	IB_4.0_FreeBSD
 
 MAINTAINER=	berend@pobox.com
 

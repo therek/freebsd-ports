@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gtksql
-# Version required:			0.3
 # Date created:				19 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/databases/gtksql/Makefile,v 1.3 1999/08/25 05:21:14 obrien Exp $
+# $FreeBSD: ports/databases/gtksql/Makefile,v 1.4 1999/09/25 00:54:22 obrien Exp $
 #
 
-DISTNAME=	gtksql-0.3
+PORTNAME=	gtksql
+PORTVERSION=	0.3
 CATEGORIES=	databases
 MASTER_SITES=	http://www.multimania.com/bbrox/GtkSQL/
 

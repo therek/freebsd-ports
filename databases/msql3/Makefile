@@ -1,12 +1,12 @@
 # New ports collection makefile for:	msql2
-# Version required:	2.0.4.1
 # Date created:		December 17th 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/databases/msql/Makefile,v 1.34 1999/08/27 21:13:44 mharo Exp $
+# $FreeBSD: ports/databases/msql/Makefile,v 1.35 1999/08/31 06:41:12 mharo Exp $
 #
 
-DISTNAME=	msql-2.0.4.1
+PORTNAME=	msql
+PORTVERSION=	2.0.4.1
 CATEGORIES=	databases
 
 MAINTAINER=	jfitz@FreeBSD.org

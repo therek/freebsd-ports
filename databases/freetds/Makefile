@@ -1,11 +1,11 @@
 # New ports collection makefile for:   freetds
-# Version required:	0.50
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.2 1999/12/23 16:03:13 steve Exp $
+# $FreeBSD: ports/databases/freetds/Makefile,v 1.3 2000/02/29 20:49:07 dirk Exp $
 
-DISTNAME=	freetds-0.50
+PORTNAME=	freetds
+PORTVERSION=	0.50
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/freetds

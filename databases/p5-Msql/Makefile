@@ -1,16 +1,16 @@
 # New ports collection makefile for:    p5-Msql-modules
-# Version required:			1.1811
 # Date created:				September 29th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.22 1999/08/31 06:41:18 mharo Exp $
+# $FreeBSD: ports/databases/p5-Msql/Makefile,v 1.23 2000/03/21 23:40:31 mharo Exp $
 #
 
-DISTNAME=	Msql-modules-1.1811
-PKGNAME=	p5-Msql-modules-1.1811
+PORTNAME=	p5-Msql-modules
+PORTVERSION=	1.1811
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Msql
+DISTNAME=	Msql-modules-${PORTVERSION}
 
 MAINTAINER=	jfitz@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	pgaccess
-# Version required:	0.96
 # Date created:		Sat Oct  4 20:03:46 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.24 2000/02/13 15:44:53 andreas Exp $
+# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.25 2000/03/21 23:35:19 mharo Exp $
 #
 
-DISTNAME=	pgaccess-0.98.4
+PORTNAME=	pgaccess
+PORTVERSION=	0.98.4
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.flex.ro/pub/pgaccess/
 
