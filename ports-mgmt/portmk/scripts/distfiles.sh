@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/devel/portmk/scripts/distfiles.sh,v 1.2 2004/07/07 14:51:17 eik Exp $
+# $FreeBSD: ports/devel/portmk/scripts/distfiles.sh,v 1.3 2004/07/08 23:30:04 eik Exp $
 #
 # MAINTAINER=	eik@FreeBSD.org
 #
@@ -1066,7 +1066,7 @@ done
 shift $(($OPTIND-1))
 
 $opt_list_master &&
-  { do_list_sites "MASTER" "$list-master" || exit 1; }
+  { do_list_sites "MASTER" "$list_master" || exit 1; }
 
 $opt_list_patch &&
   { do_list_sites "PATCH" "$list_patch" || exit 1; }
