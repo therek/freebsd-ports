@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.409 2002/04/04 10:06:00 sobomax Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.410 2002/04/25 15:28:48 sobomax Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -798,8 +798,8 @@ MAKE_ENV+=		OPENSSLLIB=${OPENSSLLIB} OPENSSLINC=${OPENSSLINC} \
 
 .include "${PORTSDIR}/Mk/bsd.gnome.mk"
 
-# defaults to 4.x for -CURRENT; and 3.3.6 for all other branches
-.if ${OSVERSION} > 500025
+# defaults to 4.x for 5.0-CURRENT and 4.5-STABLE; and 3.3.6 for all other branches
+.if ${OSVERSION} > 500025 || ( ${OSVERSION} >= 450005 && ${OSVERSION} < 500000 )
 XFREE86_VERSION?=	4
 .else
 XFREE86_VERSION?=	3
