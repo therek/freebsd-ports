@@ -1,5 +1,6 @@
-@comment $FreeBSD$
-include/firestring.h
-lib/libfirestring.so
-lib/libfirestring.so.0
+@comment $FreeBSD: ports/misc/firestring/pkg-plist,v 1.2 2002/10/15 14:48:17 naddy Exp $
 lib/libfirestring.a
+lib/libfirestring.so.0.9.6
+lib/libfirestring.so.0.9
+lib/libfirestring.so
+include/firestring.h
