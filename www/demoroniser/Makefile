@@ -2,14 +2,14 @@
 # Date created:				07 August 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/demoroniser/Makefile,v 1.4 2000/02/08 09:29:19 peter Exp $
+# $FreeBSD: ports/www/demoroniser/Makefile,v 1.5 2000/04/10 00:04:56 cpiazza Exp $
 #
 
 PORTNAME=	demoroniser
 PORTVERSION= 	1.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.fourmilab.ch/webtools/demoroniser/ \
-		http://people.FreeBSD.org/~jedgar/distfiles/
+		ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/jedgar/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	jedgar@FreeBSD.org
