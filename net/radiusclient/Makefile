@@ -2,13 +2,13 @@
 # Date created:        Wed Nov  4 08:48:08 EST 1998
 # Whom:                maurice
 #
-# $FreeBSD: ports/net/radiusclient/Makefile,v 1.10 2000/06/16 08:18:39 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	radiusclient
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.hamburg.cityline.net/pub/radiusclient/ \
+MASTER_SITES=	ftp://ftp.cityline.net/pub/radiusclient/ \
 		ftp://ftp.ecrc.net/pub/netsw/Network/IP/Management/RADIUS/
 
 MAINTAINER=	maurice@serc.rmit.edu.au
