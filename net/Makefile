@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.544 2001/05/29 15:54:01 ijliao Exp $
+# $FreeBSD: ports/net/Makefile,v 1.545 2001/05/29 17:02:52 ijliao Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -377,6 +377,7 @@
     SUBDIR += wide-dhcp
     SUBDIR += wmnet
     SUBDIR += wmnetmon
+    SUBDIR += wmqmon
     SUBDIR += xarchie
     SUBDIR += xbone
     SUBDIR += xferstats
