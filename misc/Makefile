@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.362 2001/07/31 09:28:19 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.363 2001/08/05 04:18:15 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -144,6 +144,7 @@
     SUBDIR += qlas
     SUBDIR += quotes
     SUBDIR += quranref
+    SUBDIR += reed
     SUBDIR += rfc
     SUBDIR += rname
     SUBDIR += rtfm
