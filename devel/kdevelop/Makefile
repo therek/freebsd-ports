@@ -2,11 +2,11 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.8 2000/04/11 21:28:23 mharo Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.9 2000/04/17 00:17:19 reg Exp $
 #
 
 PORTNAME=	kdevelop
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://fara.cs.uni-potsdam.de/pub/kdevelop/ \
 		ftp://129.187.206.68/pub/unix/ide/KDevelop/ \
@@ -19,22 +19,23 @@ MASTER_SITES=	ftp://fara.cs.uni-potsdam.de/pub/kdevelop/ \
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
-RUN_DEPENDS=	autoconf:${PORTSDIR}/devel/autoconf
-
+#LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 .if defined(WITH_OPTIONAL_DEPENDS)
-RUN_DEPENDS+=	automake:${PORTSDIR}/devel/automake \
-		kdbg:${PORTSDIR}/devel/kdbg \
+RUN_DEPENDS+=	kdbg:${PORTSDIR}/devel/kdbg \
 		${LOCALBASE}/share/doc/HTML/en/kdelibs/kdecore/index.html:${PORTSDIR}/devel/kdelibdocs \
 		ktranslator:${PORTSDIR}/devel/ktranslator \
 		kiconedit:${PORTSDIR}/graphics/kdegraphics11 \
 		glimpse:${PORTSDIR}/textproc/glimpse \
 		a2ps:${PORTSDIR}/print/a2ps43-letter
+
+USE_AUTOMAKE=	yes
+.else
+USE_AUTOCONF=	yes
 .endif
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
-USE_QT=		yes
+#USE_QT=		yes
 CONFIGURE_ARGS=	--with-qtdoc-dir=${X11BASE}/share/doc/qt/html \
 		--with-qt-includes=${X11BASE}/include/X11/qt \
 		--with-extra-includes=${LOCALBASE}/include \
