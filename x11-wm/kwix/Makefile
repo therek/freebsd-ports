@@ -2,7 +2,7 @@
 # Date created:				30 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/kwix/Makefile,v 1.1 2001/03/30 08:18:57 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kwix
@@ -19,6 +19,7 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 USE_KDEBASE_VER=2
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
+CFLAGS+=	-DHAVE_BOOL
 
 post-patch:
 	@${PERL} -pi -e 's#lqt#lqt2#g' ${WRKSRC}/configure
