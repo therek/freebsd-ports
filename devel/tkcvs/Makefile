@@ -2,11 +2,11 @@
 # Date created:         02 Aug 1996
 # Whom:                 shanee@augusta.de
 #
-# $FreeBSD: ports/devel/tkcvs/Makefile,v 1.18 2000/04/14 05:44:35 asami Exp $
+# $FreeBSD: ports/devel/tkcvs/Makefile,v 1.19 2000/09/13 20:23:51 ade Exp $
 #
 
 PORTNAME=	tkcvs
-PORTVERSION=	6.3
+PORTVERSION=	6.4
 CATEGORIES=	devel tk82
 MASTER_SITES=	http://www.twobarleycorns.net/
 
@@ -23,6 +23,7 @@ TCLSH=		tclsh8\.2
 post-patch:
 	@${PERL} -pi -e 's|wish|${WISH}|g' ${WRKSRC}/tkcvs/tkcvs.blank
 	@${PERL} -pi -e 's|wish|${WISH}|g' ${WRKSRC}/tkdiff/tkdiff
+	@${PERL} -pi -e 's|wish|${WISH}|g' ${WRKSRC}/doinstall.tcl
 
 do-install:
 	(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${TCLSH} doinstall.tcl)
