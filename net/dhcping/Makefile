@@ -2,11 +2,11 @@
 # Date created:        1 March 2001
 # Whom:                Edwin Groothuis (edwin@mavetju.org)
 #
-# $FreeBSD: ports/net/dhcping/Makefile,v 1.2 2001/03/14 02:19:04 will Exp $
+# $FreeBSD: ports/net/dhcping/Makefile,v 1.3 2001/03/14 03:31:38 will Exp $
 #
 
 PORTNAME=      dhcping
-PORTVERSION=   1.0
+PORTVERSION=   1.1
 CATEGORIES=    net
 MASTER_SITES=  http://www.mavetju.org/download/
 
