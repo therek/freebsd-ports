@@ -2,11 +2,11 @@
 # Date Created:			26 Sep 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/libgtop/Makefile,v 1.41 2001/02/15 19:21:51 ade Exp $
+# $FreeBSD: ports/devel/libgtop/Makefile,v 1.42 2001/03/29 16:33:04 sobomax Exp $
 #
 
 PORTNAME=	libgtop
-PORTVERSION=	1.0.11
+PORTVERSION=	1.0.12
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libgtop

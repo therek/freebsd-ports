@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.342 2001/04/20 12:32:56 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.343 2001/05/01 17:31:35 ijliao Exp $
 #
 
     SUBDIR += 40upgrade
@@ -58,7 +58,7 @@
     SUBDIR += git
     SUBDIR += gman
     SUBDIR += gnomepm
-    SUBDIR += gnomeusersguide
+    SUBDIR += gnomeuserdocs
     SUBDIR += gnomeutils
     SUBDIR += gnuls
     SUBDIR += gone

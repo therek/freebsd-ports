@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.320 2001/03/17 16:31:26 vanilla Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.321 2001/04/07 00:34:42 will Exp $
 #
 
     SUBDIR += 9term
@@ -76,6 +76,7 @@
     SUBDIR += wrapper
     SUBDIR += wterm
     SUBDIR += x3270
+    SUBDIR += xalf
     SUBDIR += xaniroc
     SUBDIR += xantfarm
     SUBDIR += xautolock

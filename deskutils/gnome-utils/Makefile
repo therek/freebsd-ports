@@ -2,11 +2,11 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.24 2000/10/05 07:17:06 reg Exp $
+# $FreeBSD: ports/misc/gnomeutils/Makefile,v 1.25 2001/03/29 16:34:17 sobomax Exp $
 #
 
 PORTNAME=	gnomeutils
-PORTVERSION=	1.2.1
+PORTVERSION=	1.4.0
 CATEGORIES=	misc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-utils
@@ -14,9 +14,7 @@ DISTNAME=	gnome-utils-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop \
-		guile.9:${PORTSDIR}/lang/guile \
-		glade.4:${PORTSDIR}/devel/libglade
+LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop
 
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes

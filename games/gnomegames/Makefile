@@ -2,11 +2,11 @@
 # Date created:				03 July 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/games/gnomegames/Makefile,v 1.31 2000/10/05 07:10:38 reg Exp $
+# $FreeBSD: ports/games/gnomegames/Makefile,v 1.32 2001/03/29 16:33:49 sobomax Exp $
 #
 
 PORTNAME=	gnomegames
-PORTVERSION=	1.2.0
+PORTVERSION=	1.4.0.1
 CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-games

@@ -2,11 +2,11 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.15 2001/01/30 04:39:16 ade Exp $
+# $FreeBSD: ports/devel/gnomevfs/Makefile,v 1.16 2001/03/29 16:33:00 sobomax Exp $
 #
 
 PORTNAME=	gnomevfs
-PORTVERSION=	0.5
+PORTVERSION=	1.0
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gnome-vfs
@@ -14,16 +14,14 @@ DISTNAME=	gnome-vfs-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
 
-LIB_DEPENDS=	bonobo.2:${PORTSDIR}/devel/bonobo \
-		gconf-1.1:${PORTSDIR}/devel/gconf \
+LIB_DEPENDS=	gconf-1.1:${PORTSDIR}/devel/gconf \
 		bz2.1:${PORTSDIR}/archivers/bzip2
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_GNOME=	yes
+USE_GNOMELIBS=	yes
 USE_LIBTOOL=	yes
 INSTALL_SHLIBS=	yes
-#CONFIGURE_ARGS=	--disable-gconf
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 

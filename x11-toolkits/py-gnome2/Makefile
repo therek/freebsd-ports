@@ -2,11 +2,11 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.43 2000/10/08 10:23:44 asami Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.44 2001/02/05 16:49:10 olgeni Exp $
 #
 
 PORTNAME=	py-gnome
-PORTVERSION=	1.0.53
+PORTVERSION=	1.4.0
 CATEGORIES=	x11-toolkits python gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-python
@@ -15,7 +15,6 @@ DISTNAME=	gnome-python-${PORTVERSION}
 MAINTAINER=	nectar@FreeBSD.org
 
 BUILD_DEPENDS=	${PYGTK_DEP}
-LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	${PYGTK_DEP}
 
 USE_GMAKE=	yes
