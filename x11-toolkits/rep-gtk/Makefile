@@ -3,7 +3,7 @@
 # Date created:        06 October 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.2 1999/12/02 06:48:19 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/rep-gtk/Makefile,v 1.3 1999/12/24 11:12:12 nakai Exp $
 #
 
 DISTNAME=	rep-gtk-0.7
@@ -13,8 +13,7 @@ MASTER_SITES=	ftp://rep-gtk.sourceforge.net/pub/rep-gtk/
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-BUILD_DEPENDS=	guile:${PORTSDIR}/lang/guile \
-		rep:${PORTSDIR}/lang/librep
+BUILD_DEPENDS=	rep:${PORTSDIR}/lang/librep
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
