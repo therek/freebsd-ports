@@ -2,13 +2,13 @@
 # Date created:				12 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.7 2000/01/19 12:45:42 jedgar Exp $
+# $FreeBSD: ports/graphics/gtkgraph/Makefile,v 1.8 2000/04/14 10:46:12 asami Exp $
 #
 
 PORTNAME=	gtkgraph
 PORTVERSION=	0.6.1
 CATEGORIES=	math
-MASTER_SITES=	http://gtkgraph.linuxbox.com/
+MASTER_SITES=	http://gtkgraph.linuxave.net/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
