@@ -3,7 +3,7 @@
 # Date created:		17 Aug 1998
 # Whom:			Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnome/Makefile,v 1.8 1999/08/31 02:50:18 peter Exp $
+# $FreeBSD: ports/x11/gnome/Makefile,v 1.9 1999/10/08 03:30:27 nakai Exp $
 #
 
 DISTNAME=	gnome-1.0.0
@@ -13,7 +13,7 @@ DISTFILES=	# empty
 
 MAINTAINER=	nacai@iname.com
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12 \
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		ORBit.2:${PORTSDIR}/devel/ORBit \
 		Imlib.5:${PORTSDIR}/graphics/imlib \
