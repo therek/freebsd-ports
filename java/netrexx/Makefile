@@ -3,7 +3,7 @@
 # Date created:		Feb 8, 1999
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/netrexx/Makefile,v 1.1.1.1 1999/11/26 20:46:08 steve Exp $
 #
 
 DISTNAME=	NetRexx
@@ -12,7 +12,7 @@ CATEGORIES=	java lang
 MASTER_SITES=	http://www.ibm.com/technology/NetRexx/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
 

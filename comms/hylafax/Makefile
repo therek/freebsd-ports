@@ -3,7 +3,7 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.30 2000/01/07 13:07:00 asami Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.31 2000/01/29 20:01:36 mharo Exp $
 #
 
 DISTNAME=	hylafax-v4.0pl2
@@ -18,7 +18,7 @@ PATCH_SITES=	http://www.hylafax.org/patches/
 PATCHFILES=	gcc-2.8.x.patch
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash2 \
 		${PREFIX}/lib/afm/Courier:${PORTSDIR}/print/afm

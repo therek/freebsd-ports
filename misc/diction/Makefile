@@ -3,14 +3,14 @@
 # Date created:		2 August 1998
 # Whom:			J Han <hjh@best.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/diction/Makefile,v 1.4 1999/08/25 07:21:31 obrien Exp $
 #
 
 DISTNAME=		diction-0.8
 CATEGORIES=		misc
 MASTER_SITES=		ftp://cantor.informatik.rwth-aachen.de/pub/unix/
 
-MAINTAINER=		ports@freebsd.org
+MAINTAINER=		ports@FreeBSD.org
 
 GNU_CONFIGURE=		yes
 USE_GMAKE=		yes

@@ -3,14 +3,14 @@
 # Whom:			pst
 # Version required:	5.31
 #
-# $FreeBSD: ports/lang/expect/Makefile,v 1.41 1999/11/01 00:37:58 steve Exp $
+# $FreeBSD: ports/lang/expect/Makefile,v 1.42 2000/01/07 00:09:18 jedgar Exp $
 
 DISTNAME=	expect
 PKGNAME=	expect-5.31
 CATEGORIES=	lang tcl82 tk82
 MASTER_SITES=	http://expect.nist.gov/
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS?=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
