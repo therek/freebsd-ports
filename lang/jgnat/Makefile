@@ -2,7 +2,7 @@
 # Date created:         8 Apr 2000
 # Whom:                 Samuel Tardieu <sam@inf.enst.fr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/jgnat/Makefile,v 1.1 2000/12/27 11:28:58 alex Exp $
 #
 
 PORTNAME=	jgnat
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://cs.nyu.edu/pub/gnat/jgnat/jgnat-1.0p/split-1.0p/ \
 		ftp://ftp.lip6.fr/pub/gnat/jgnat/jgnat-1.0p/split-1.0p/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	sam@inf.enst.fr
+MAINTAINER=	jmcoopr@webmail.bmi.net
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/adagcc:${PORTSDIR}/lang/gnat \
 		${LOCALBASE}/jdk1.1.8/bin/javac:${PORTSDIR}/java/jdk
