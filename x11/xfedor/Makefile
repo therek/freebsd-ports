@@ -1,18 +1,18 @@
 # New ports collection makefile for:    xfedor
-# Version required:     1994 year version with Imakefile
 # Date created:         3 Sep 1996
 # Whom:                 ache
 #
 # ATTENTION: It not work in > 256 colors modes, please fix it
 # if you can.
 #
-# $FreeBSD: ports/x11/xfedor/Makefile,v 1.10 1999/08/31 02:50:58 peter Exp $
+# $FreeBSD: ports/x11/xfedor/Makefile,v 1.11 1999/08/31 06:53:25 mharo Exp $
 #
 
-DISTNAME=       xfedor
-PKGNAME=        xfedor-1.0
+PORTNAME=	xfedor
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=   ftp://ftp.kiarchive.ru/pub/x11/util/
+DISTNAME=	${PORTNAME}
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

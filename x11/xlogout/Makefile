@@ -1,12 +1,12 @@
 # New ports collection makefile for:   xlogout
-# Version required:    1.1
 # Date created:                1998-11-06
 # Whom:                        Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xlogout/Makefile,v 1.2 1999/08/31 02:51:06 peter Exp $
 #
 
-DISTNAME=	xlogout-1.1
+PORTNAME=	xlogout
+PORTVERSION= 	1.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.tu-darmstadt.de/pub/X11/other/
 EXTRACT_SUFX=	.tar.Z

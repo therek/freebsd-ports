@@ -1,16 +1,16 @@
 # New ports collection makefile for:    xgrab
-# Version required:     2.41
 # Date created:         27 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xgrab/Makefile,v 1.15 1999/08/31 02:51:00 peter Exp $
 #
 
-DISTNAME=	xgrabsc.2_41
-PKGNAME=	xgrab-2.41
+PORTNAME=	xgrab
+PORTVERSION= 	2.41
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
+DISTNAME=	${PORTNAME}sc.2_41
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	jmz@FreeBSD.org

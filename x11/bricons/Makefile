@@ -1,16 +1,16 @@
 # New ports collection makefile for:	bricons
-# Version required:	3.0 with colour icons
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/x11/bricons/Makefile,v 1.7 1999/08/31 02:50:11 peter Exp $
+# $FreeBSD: ports/x11/bricons/Makefile,v 1.8 2000/04/01 01:45:49 mharo Exp $
 #
 
-DISTNAME=	bricons
-PKGNAME=	bricons-3.0
+PORTNAME=	bricons
+PORTVERSION= 	3.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	-athena-3.0.tar.gz
 
 MAINTAINER=     shanee@augusta.de

@@ -1,18 +1,18 @@
 # New ports collection makefile for:    XFree86-contrib
-# Version required:     3.3.6
 # Date created:         7 November 1996
 # Whom:                 asami
 #
-# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.16 2000/01/12 18:10:53 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-contrib/Makefile,v 1.17 2000/03/13 08:29:50 asami Exp $
 #
 
-DISTNAME=	X336contrib
-PKGNAME=	XFree86-contrib-3.3.6
+PORTNAME=	XFree86-contrib
+PORTVERSION= 	3.3.6
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.6/source/ \
 		ftp://ftp.freesoftware.com/pub/XFree86/3.3.6/source/ \
 		ftp://ftp.lip6.fr/pub/X11/XFree86/XFree86-3.3.6/source/ \
 		ftp://sunsite.doc.ic.ac.uk/packages/XFree86/3.3.6/source/
+DISTNAME=	X336contrib
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jmz@FreeBSD.org

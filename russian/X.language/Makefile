@@ -1,12 +1,12 @@
 # New ports collection makefile for: X.language
-# Version required:     X11R6
 # Date created:         31 Aug 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/X.language/Makefile,v 1.26 1999/08/31 06:49:56 mharo Exp $
+# $FreeBSD: ports/russian/X.language/Makefile,v 1.27 2000/03/01 16:16:28 ache Exp $
 #
 
-DISTNAME=       ru-X11-3.3
+PORTNAME=	X11
+PORTVERSION=	3.3
 CATEGORIES=     russian x11
 MASTER_SITES=   http://nagual.pp.ru/~ache/koi8/dist/ \
 		ftp://ftp.kiarchive.ru/pub/misc/fonts/cyrillic/xwindows/

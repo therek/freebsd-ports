@@ -1,16 +1,16 @@
 # ports collection makefile for: Clipboard
-# Version required:  2.4
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/offix-clipboard/Makefile,v 1.4 1999/08/31 02:50:35 peter Exp $
 #
 
-DISTNAME=	Clipboard-2.4
-PKGNAME=	offix-clipboard-2.4
+PORTNAME=	offix-clipboard
+PORTVERSION= 	2.4
 CATEGORIES=	x11 offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX
+DISTNAME=	Clipboard-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 

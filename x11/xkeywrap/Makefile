@@ -1,12 +1,12 @@
 # New ports collection makefile for:   XKeyWrap
-# Version required:    1.0
 # Date created:        7 January 2000
 # Whom:                Sakai Hiroaki <sakai@seki.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xkeywrap/Makefile,v 1.1.1.1 2000/01/24 04:53:22 taoka Exp $
 #
 
-DISTNAME=	xkeywrap-1.0
+PORTNAME=	xkeywrap
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xdtm
-# Version required:     		2.5.8
 # Date created:         		26th April 1995
 # Whom:                 		gpalmer
 #
-# $FreeBSD: ports/x11/xdtm/Makefile,v 1.8 1999/08/31 02:50:57 peter Exp $
+# $FreeBSD: ports/x11/xdtm/Makefile,v 1.9 1999/08/31 06:53:24 mharo Exp $
 #
 
-DISTNAME=		xdtm-2.5.8
+PORTNAME=		xdtm
+PORTVERSION= 		2.5.8
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

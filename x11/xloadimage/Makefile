@@ -1,16 +1,16 @@
 # New ports collection makefile for:    xloadimage
-# Version required:     4.1
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.16 1999/08/31 02:51:04 peter Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.17 2000/03/03 23:34:11 jmz Exp $
 #
 
-DISTNAME=	xloadimage.4.1
-PKGNAME=	xloadimage-4.1
+PORTNAME=	xloadimage
+PORTVERSION= 	4.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	jmz@FreeBSD.org
 

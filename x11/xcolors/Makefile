@@ -1,15 +1,15 @@
 # New ports collection makefile for:	xcolors
-# Version required:	R6 contrib
 # Date created:		10 May 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/x11/xcolors/Makefile,v 1.13 1999/10/10 23:21:34 steve Exp $
+# $FreeBSD: ports/x11/xcolors/Makefile,v 1.14 2000/02/07 16:57:44 ade Exp $
 #
 
-DISTNAME=	xcolors
-PKGNAME=	xcolors-1.3
+PORTNAME=	xcolors
+PORTVERSION= 	1.3
 CATEGORIES=	x11
 MASTER_SITES=	http://www.lovett.com/~ade/FreeBSD/
+DISTNAME=	${PORTNAME}	
 
 MAINTAINER=	ade@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xtattr
-# Version required:	1.0
 # Date created:		6 August 1997
 # Whom:			jeff@cetlink.net
 #
-# $FreeBSD: ports/x11/xtattr/Makefile,v 1.3 1999/08/31 02:51:18 peter Exp $
+# $FreeBSD: ports/x11/xtattr/Makefile,v 1.4 1999/08/31 06:53:29 mharo Exp $
 #
 
-DISTNAME=	xtattr-1.0
+PORTNAME=	xtattr
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 

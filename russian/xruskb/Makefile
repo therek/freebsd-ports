@@ -1,11 +1,12 @@
 # New ports collection makefile for:	xruskb
-# Version required:	1.9.3
 # Date created:		14 Jan 1998
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/russian/xruskb/Makefile,v 1.4 2000/01/23 01:48:01 imura Exp $
+# $FreeBSD: ports/russian/xruskb/Makefile,v 1.5 2000/02/13 17:09:10 dirk Exp $
+#
 
-DISTNAME=	xruskb-1.9.3
+PORTNAME=	xruskb
+PORTVERSION= 	1.9.3
 CATEGORIES=	russian x11
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/X11/xruskb-old/ \
 		# ftp://ftp.kiae.su/pub/x11/cyrillic/

@@ -1,12 +1,12 @@
 # New ports collection makefile for:		xtermset
-# Version required:		0.4
 # Date created:			21 August 1999
 # Whom:                 Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xtermset/Makefile,v 1.2 1999/08/31 02:51:19 peter Exp $
 #
 
-DISTNAME=	xtermset-0.4
+PORTNAME=	xtermset
+PORTVERSION= 	0.4
 CATEGORIES=	x11
 MASTER_SITES=	http://xtermset.netpedia.net/src/
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for: gd
-# Version required:     1.3
 # Date created:         17 Aug 1998
 # Whom:                 gsm@infosite.ru
 #
-# $FreeBSD$
+# $FreeBSD: ports/russian/gd/Makefile,v 1.3 1999/08/31 01:46:59 peter Exp $
 #
 
-DISTNAME=       gd1.3
-PKGNAME=        ru-gd-1.3
+PORTNAME=	gd
+PORTVERSION= 	1.3
 CATEGORIES=	russian graphics
 MASTER_SITES=   http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
+DISTNAME=	gd${PORTVERSION}
 
 MAINTAINER=     gsm@infosite.ru
 

@@ -1,16 +1,16 @@
 # New ports collection makefile for:   kdelibs
-# Version required:    1.1.2
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.42 2000/04/03 00:37:31 will Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.43 2000/04/03 07:12:36 will Exp $
 #
 
-DISTNAME=	kdelibs-1.1.2
-PKGNAME=	kdelibs-1.1.2.1
+PORTNAME=	kdelibs
+PORTVERSION= 	1.1.2.1
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/1.1.2/distribution/tar/generic/source/bz2
+DISTNAME=	kdelibs-1.1.2
 
 MAINTAINER=	will@FreeBSD.org
 

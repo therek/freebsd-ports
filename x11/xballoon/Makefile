@@ -1,12 +1,12 @@
 # New ports collection makefile for:   XBalloon
-# Version required:    1.0
 # Date created:        3 March 1999
 # Whom:                Sakai Hiroaki <sakai@miya.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xballoon/Makefile,v 1.2 1999/08/31 02:50:49 peter Exp $
 #
 
-DISTNAME=	xballoon-1.0
+PORTNAME=	xballoon
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	http://wwwmiya.ee.kagu.sut.ac.jp/~sakai/
 

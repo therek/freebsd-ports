@@ -1,15 +1,15 @@
 # New ports collection makefile for:	fbsd-icons
-# Version required:	1.0
 # Date created:		Sat Jun 14 09:43:24 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11/fbsd-icons/Makefile,v 1.6 1999/08/31 02:50:17 peter Exp $
+# $FreeBSD: ports/x11/fbsd-icons/Makefile,v 1.7 1999/08/31 06:53:18 mharo Exp $
 #
 
-DISTNAME=	fbsd-icons
-PKGNAME=	fbsd-icons-1.0
+PORTNAME=	fbsd-icons
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	andreas@FreeBSD.org
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for: imwheel-0.9.7
-# Version required:	0.9.7
 # Date created:		18 Feb 2000
 # Whom:			jhb
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/imwheel/Makefile,v 1.1.1.1 2000/02/23 23:30:21 jhb Exp $
 #
 
-DISTNAME=	imwheel-0.9.7.nogpm
-PKGNAME=	imwheel-0.9.7
+PORTNAME=	imwheel
+PORTVERSION= 	0.9.7
 CATEGORIES=	x11
 MASTER_SITES=	http://jcatki.dhs.org/imwheel/files/
+DISTNAME=	${PKGNAME}.nogpm
 
 MAINTAINER=	jhb@FreeBSD.org
 

@@ -1,11 +1,12 @@
 # New ports collection makefile for:	wdm
-# Version required:	1.20
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.34 2000/03/16 08:42:10 asami Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.35 2000/03/19 02:44:09 cpiazza Exp $
+#
 
-DISTNAME=	wdm-1.20
+PORTNAME=	wdm
+PORTVERSION= 	1.20
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://cortex.unice.fr/~jerome/WindowMaker/wdm/ \
 		http://www.de.freebsd.org/de/gif/bsd/

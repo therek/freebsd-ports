@@ -1,16 +1,16 @@
-# ports collection makefile for: Clipboard
-# Version required:  2.4
-# Date created:      28 Jun 1997
-# Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
+# ports collection makefile for:	Execute
+# Date created:		28 Jun 1997
+# Whom:			Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/offix-execute/Makefile,v 1.6 1999/08/31 02:50:36 peter Exp $
 #
 
-DISTNAME=	Execute-2.4
-PKGNAME=	offix-execute-2.4
+PORTNAME=	offix-execute
+PORTVERSION= 	2.4
 CATEGORIES=	x11 offix
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	desktop_managers/OffiX
+DISTNAME=	Execute-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
 

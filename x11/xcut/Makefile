@@ -1,12 +1,12 @@
 # New ports collection makefile for:	xcut
-# Version required:		0.2
 # Date created:			23 September 1999
 # Whom:				Cy Schubert <Cy.Schubert@uumail.gov.bc.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xcut/Makefile,v 1.1.1.1 1999/11/01 03:18:28 steve Exp $
 #
 
-DISTNAME=	xcut-0.2
+PORTNAME=	xcut
+PORTVERSION= 	0.2
 CATEGORIES=	x11
 MASTER_SITES=	http://acsys.anu.edu.au/~tpot/xcut/
 

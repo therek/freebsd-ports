@@ -1,13 +1,12 @@
 # New ports collection makefile for:	emu
-# Version required:	1.31
 # Date created:		13 September 1994
 # Whom:			jkh
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/emu/Makefile,v 1.16 1999/08/31 02:50:15 peter Exp $
 #
 
-DISTNAME=	emu-1.31
-PKGNAME=	emu-1.3.1
+PORTNAME=	emu
+PORTVERSION= 	1.31
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

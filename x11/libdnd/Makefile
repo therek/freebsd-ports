@@ -1,15 +1,15 @@
 # New ports collection makefile for:   libDnd
-# Version required:		1.1
 # Date created:                8 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11/libdnd/Makefile,v 1.6 1999/08/31 02:50:31 peter Exp $
+# $FreeBSD: ports/x11/libdnd/Makefile,v 1.7 2000/01/29 22:46:04 reg Exp $
 #
 
-DISTNAME=	dnd.1.1
-PKGNAME=	libdnd-1.1
+PORTNAME=	libdnd
+PORTVERSION= 	1.1
 CATEGORIES=	x11
 MASTER_SITES=	http://leb.net/OffiX/
+DISTNAME=	dnd.${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	lukin@okbmei.msk.su

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   dgs
-# Version required:    0.5.9
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/dgs/Makefile,v 1.15 1999/11/09 08:50:45 nakai Exp $
+# $FreeBSD: ports/x11/dgs/Makefile,v 1.16 2000/01/14 09:44:11 nakai Exp $
 #
 
-DISTNAME=	dgs-0.5.9
+PORTNAME=	dgs
+PORTVERSION= 	0.5.9
 CATEGORIES=	x11
 #MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/gnustep/

@@ -1,14 +1,15 @@
 # New ports collection makefile for:	wmMatrix
-# Version required:	0.2
 # Date created:		13 October 1999
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.1.1.1 1999/11/03 01:33:51 jim Exp $
+# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.2 1999/12/22 23:00:16 jedgar Exp $
+#
 
-DISTNAME=	wmMatrix-0.2
-PKGNAME=	wmmatrix-0.2
+PORTNAME=	wmmatrix
+PORTVERSION= 	0.2
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
+DISTNAME=	wmMatrix-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xsnow
-# Version required:     1.40
 # Date created:         12 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xsnow/Makefile,v 1.10 1999/08/31 02:51:15 peter Exp $
 #
 
-DISTNAME=	xsnow-1.40
+PORTNAME=	xsnow
+PORTVERSION= 	1.40
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games

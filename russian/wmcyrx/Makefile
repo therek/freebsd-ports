@@ -1,15 +1,15 @@
 # New ports collection makefile for: CyrX-2
-# Version required: 2.1
 # Date created:		04 Janyary 1999
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.2 1999/08/31 01:47:04 peter Exp $
+# $FreeBSD: ports/russian/wmcyrx/Makefile,v 1.3 1999/12/10 00:34:56 imura Exp $
 #
 
-DISTNAME=       cyrx-2.1
-PKGNAME=	ru-wmcyrx-2.1
+PORTNAME=	wmcyrx
+PORTVERSION= 	2.1
 CATEGORIES=     russian windowmaker
 MASTER_SITES=   http://yard.hitech.mipt.ru/~mini/distrib/
+DISTNAME=	cyrx-${PORTVERSION}
 
 MAINTAINER=     ozz@FreeBSD.org.ru
 

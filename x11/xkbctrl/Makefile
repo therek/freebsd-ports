@@ -1,13 +1,12 @@
 # New ports collection makefile for:	xkbctrl
-# Version required:	1.0
 # Date created:		9 January 2000
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xkbctrl/Makefile,v 1.1 2000/01/29 05:46:05 steve Exp $
 #
 
-DISTNAME=	xkbctrl
-PKGNAME=	xkbctrl-1.0
+PORTNAME=	xkbctrl
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://core.ring.gr.jp/pub/X/opengroup/unsupported/test/Xkb/programs/ \
 		ftp://ring.nacsis.ac.jp/pub/X/opengroup/unsupported/test/Xkb/programs/

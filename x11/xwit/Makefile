@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xwit
-# Version required:     1.0
 # Date created:         15 June 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/xwit/Makefile,v 1.4 1999/08/31 06:53:31 mharo Exp $
+# $FreeBSD: ports/x11/xwit/Makefile,v 1.5 2000/02/08 09:29:26 peter Exp $
 #
 
-DISTNAME=       xwit-1.0
+PORTNAME=	xwit
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=   http://people.FreeBSD.org/~tg/
 

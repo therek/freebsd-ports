@@ -1,12 +1,12 @@
 # New ports collection makefile for:	kb2mb2
-# Version required:	1.0
 # Date created:		24 December 1997
 # Whom:			Tatsumi Hosokawa
 #
-# $FreeBSD: ports/x11/kb2mb2/Makefile,v 1.3 1999/08/31 02:50:22 peter Exp $
+# $FreeBSD: ports/x11/kb2mb2/Makefile,v 1.4 1999/08/31 06:53:20 mharo Exp $
 #
 
-DISTNAME=	kb2mb2-1.0
+PORTNAME=	kb2mb2
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_PORTS_JP}
 

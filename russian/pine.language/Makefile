@@ -1,11 +1,11 @@
 # New ports collection makefile for:    ru-pine
-# Date created:         2 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/russian/pine.language/Makefile,v 1.8 1999/08/31 01:47:02 peter Exp $
+# $FreeBSD: ports/russian/pine.language/Makefile,v 1.9 2000/02/16 02:16:11 ache Exp $
 #
 
-PKGNAME=        ru-pine-4.21
+PORTNAME=	pine
+PORTVERSION= 	4.21
 CATEGORIES=     russian mail
 
 MAINTAINER=     ache@FreeBSD.org

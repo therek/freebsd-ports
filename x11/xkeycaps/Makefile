@@ -1,12 +1,12 @@
 # New ports collection makefile for:    xkeycaps
-# Version required:     2.31
 # Date created:         12 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xkeycaps/Makefile,v 1.11 1999/08/31 02:51:01 peter Exp $
+# $FreeBSD: ports/x11/xkeycaps/Makefile,v 1.12 1999/09/27 19:55:54 jmz Exp $
 #
 
-DISTNAME=	xkeycaps-2.45
+PORTNAME=	xkeycaps
+PORTVERSION= 	2.45
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xkeycaps/
 EXTRACT_SUFX=	.tar.Z

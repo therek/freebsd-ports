@@ -1,18 +1,18 @@
 # New ports collection makefile for:	xbanner
-# Version required:	1.31
 # Date created:		13 Jan 1999
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/x11/xbanner/Makefile,v 1.5 1999/08/31 06:53:22 mharo Exp $
+# $FreeBSD: ports/x11/xbanner/Makefile,v 1.6 1999/12/25 01:43:10 steve Exp $
 #
 
-DISTNAME=	XBanner1.31
-PKGNAME=	xbanner-1.31
+PORTNAME=	xbanner
+PORTVERSION= 	1.31
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.digital.com/pub/linux/XBanner/ \
 		ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/xutils
+DISTNAME=	XBanner${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	E-Buttons 0.2
-# Version required:     0.2
 # Date created:		30 March 2000
 # Whom:			jhb
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/ebuttons/Makefile,v 1.1.1.1 2000/03/31 18:23:13 jhb Exp $
+#
 
-DISTNAME=	E-buttons-0.2
-PKGNAME=	E-Buttons-0.2
+PORTNAME=	E-buttons
+PORTVERSION= 	0.2
 CATEGORIES=	x11
 MASTER_SITES= 	http://www.moodfarm.demon.co.uk/download/
 EXTRACT_SUFX=	.tgz

@@ -1,12 +1,12 @@
 # New ports collection makefile for:	props
-# Version required:	1.0
 # Date created:		3 January 1998
 # Whom:			jraynard
 #
-# $FreeBSD: ports/x11/props/Makefile,v 1.8 2000/02/05 10:55:45 dirk Exp $
+# $FreeBSD: ports/x11/props/Makefile,v 1.9 2000/02/08 09:29:22 peter Exp $
 #
 
-DISTNAME=	props-1.0
+PORTNAME=	props
+PORTVERSION= 	1.0
 CATEGORIES=	x11
 MASTER_SITES=	http://people.FreeBSD.org/~fenner/distfiles/
 

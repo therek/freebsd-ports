@@ -1,11 +1,12 @@
 # New ports collection makefile for: koi8rPS
-# Version required:     1.0
 # Date created:         22 July 1999
 # Whom:                 mi@aldan.algebra.com
 #
-# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.5 1999/11/28 17:09:24 steve Exp $
+# $FreeBSD: ports/russian/koi8r-ps/Makefile,v 1.6 1999/11/29 19:00:13 steve Exp $
+#
 
-DISTNAME=	koi8rPS-1.0
+PORTNAME=	koi8rPS
+PORTVERSION= 	1.0
 CATEGORIES=	russian print
 MASTER_SITES=	ftp://ftp.ziplink.net/users/kot/CyrPS/ \
 		ftp://ftp.kapella.gpi.ru/pub/cyrillic/psfonts/
