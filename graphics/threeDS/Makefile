@@ -2,7 +2,7 @@
 # Date created:				5 December 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/threeDS/Makefile,v 1.1 2000/12/05 17:44:36 sobomax Exp $
+# $FreeBSD: ports/graphics/threeDS/Makefile,v 1.2 2001/01/18 19:28:48 sobomax Exp $
 #
 
 PORTNAME=	threeDS
@@ -23,6 +23,7 @@ do-build:
 do-install:
 	${MKDIR} ${PREFIX}/share/threeDS
 	${MKDIR} ${PREFIX}/lib/${PYTHON_VERSION}/site-packages
+	${RM} -f ${WRKSRC}/*.orig
 	${INSTALL_DATA} ${WRKSRC}/threeDS.py* ${PREFIX}/lib/${PYTHON_VERSION}/site-packages
 	${INSTALL_SCRIPT} ${WRKSRC}/view3ds.py* ${PREFIX}/share/threeDS
 	${LN} -sf ${PREFIX}/share/threeDS/view3ds.py ${PREFIX}/bin/view3ds
