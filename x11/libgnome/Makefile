@@ -2,12 +2,11 @@
 # Date created:				17 June 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.68 2000/09/25 21:01:44 ade Exp $
+# $FreeBSD: ports/x11/gnomelibs/Makefile,v 1.69 2000/10/05 06:57:48 reg Exp $
 #
 
 PORTNAME=	gnomelibs
-PORTVERSION= 	1.2.4
-PORTREVISION=	2
+PORTVERSION= 	1.2.5
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-libs
@@ -25,7 +24,7 @@ USE_IMLIB=	yes
 USE_ESOUND=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-LIBTOOLFILES=	configure libart_lgpl/configure
+LIBTOOLFILES=	configure libart_lgpl/configure devel-docs/configure
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
 		--disable-test-gnome
