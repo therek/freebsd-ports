@@ -2,13 +2,14 @@
 # Date created:        28 October 1996
 # Whom:                simonm@dcs.gla.ac.uk
 #
-# $FreeBSD: ports/games/cgoban/Makefile,v 1.13 2000/02/15 02:55:45 mharo Exp $
+# $FreeBSD: ports/games/cgoban/Makefile,v 1.14 2000/04/14 00:45:39 mharo Exp $
 #
 
 PORTNAME=	cgoban
-PORTVERSION=	1.9.10
+PORTVERSION=	1.9.11
 CATEGORIES=	games
-MASTER_SITES=	http://www.inetarena.com/~wms/comp/cgoban/
+MASTER_SITES=	http://www.inetarena.com/~wms/comp/cgoban/ \
+		http://www.igoweb.org/~wms/comp/cgoban/
 
 MAINTAINER=	simonm@dcs.gla.ac.uk
 
