@@ -2,7 +2,7 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.8 2001/05/22 19:51:16 knu Exp $
+# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.9 2001/05/30 15:32:52 knu Exp $
 #
 
 PORTNAME=	GD
@@ -69,7 +69,7 @@ post-install:
 .for f in ${EXAMPLES_EN}
 	${INSTALL_DATA} ${WRKSRC}/sample/${f} ${RUBY_EXAMPLESDIR}/gd/
 .endfor
-	${MKDIR} ${RUBY_DOCDIR}/gd/ja/imgs
+	${MKDIR} ${RUBY_DOCDIR}/gd/ja
 .for f in ${DOCS_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/gd/
 .endfor
