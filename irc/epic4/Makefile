@@ -2,7 +2,7 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.35 2001/04/02 19:34:08 asmodai Exp $
+# $FreeBSD: ports/irc/epic4/Makefile,v 1.36 2001/04/24 18:18:14 asmodai Exp $
 #
 
 PORTNAME=	epic4
@@ -13,7 +13,6 @@ MASTER_SITES=	ftp://ftp.magenet.com/pub/epic/%SUBDIR%/ \
 		ftp://ftp.icm.edu.pl/vol/rzm0/irc/EPIC/%SUBDIR%/ \
 		ftp://ftp.archive.de.uu.net/pub/unix/irc/epic/%SUBDIR%/ \
 		ftp://ftp.nl.uu.net/pub/unix/irc/epic/%SUBDIR%/ \
-		${MASTER_SITE_LOCAL:S,%SUBDIR%,knu,}
 #		ftp://ftp.epicsol.org/pub/epic/%SUBDIR%/ \
 #		ftp://ftp.neato.org/pub/epic/%SUBDIR%/ \
 #		ftp://totem.fix.no/pub/mirrors/epic/%SUBDIR%/ \
