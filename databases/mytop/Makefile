@@ -2,7 +2,7 @@
 # Date created:				28 Augest 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/mytop/Makefile,v 1.1 2000/10/05 01:35:24 jeh Exp $
 #
 
 PORTNAME=	mytop
@@ -34,7 +34,5 @@ do-extract:
 do-install:
 	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}.1 ${PREFIX}/man/man1
-
-NEWLAYOUT=	yes
 
 .include <bsd.port.mk>
