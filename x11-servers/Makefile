@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-servers/Makefile,v 1.5 2000/09/08 10:37:26 asami Exp $
+# $FreeBSD$
 #
 
     SUBDIR += XFree86-4-FontServer
@@ -38,6 +38,7 @@
     SUBDIR += XttXF98srv-WABEP
     SUBDIR += XttXF98srv-WABS
     SUBDIR += XttXF98srv-WSNA
+    SUBDIR += driglide
     SUBDIR += x2vnc
     SUBDIR += x2x
 
