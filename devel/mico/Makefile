@@ -3,11 +3,10 @@
 # Date created:        11 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/devel/mico/Makefile,v 1.38 1999/12/03 21:02:49 steve Exp $
+# $FreeBSD: ports/devel/mico/Makefile,v 1.39 2000/01/30 02:10:21 scrappy Exp $
 #
 
-MICOVER=	2.3.1
-DISTNAME=	mico-${MICOVER}
+DISTNAME=	mico-2.3.1
 CATEGORIES=	devel
 MASTER_SITES=	http://diamant-atm.vsb.cs.uni-frankfurt.de/~mico/
 
