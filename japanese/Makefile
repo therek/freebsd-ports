@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.266 2000/03/04 21:01:14 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.267 2000/03/07 08:38:50 flathill Exp $
 #
 
     SUBDIR += Canna
@@ -44,6 +44,9 @@
     SUBDIR += epwutil
     SUBDIR += escpf
     SUBDIR += esecanna
+    SUBDIR += esecanna-module-vje25
+    SUBDIR += esecanna-module-vje30
+    SUBDIR += esecanna-module-wnn6
     SUBDIR += eterm
     SUBDIR += ewipe
     SUBDIR += exmh2
