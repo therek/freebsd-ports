@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.48 2004/07/01 22:44:00 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.49 2004/07/12 19:43:47 glewis Exp $
 #
 
 .if !defined(Java_Include)
@@ -393,15 +393,15 @@ JAVA_RUN=	jre
 .		endif
 .		if defined(JAVA_EXTRACT)
 EXTRACT_DEPENDS+=	${DEPEND_JAVA}
-.			endif
+.		endif
 .		if defined(JAVA_BUILD)
 .			if defined(NO_BUILD)
 check-makevars::
 	@${ECHO_CMD} "${PKGNAME}: Makefile error: JAVA_BUILD and NO_BUILD cannot be set at the same time.";
 	@${FALSE}
-.				endif
-BUILD_DEPENDS+=		${DEPEND_JAVA}
 .			endif
+BUILD_DEPENDS+=		${DEPEND_JAVA}
+.		endif
 .		if defined(JAVA_RUN)
 RUN_DEPENDS+=		${DEPEND_JAVA}
 .		endif
