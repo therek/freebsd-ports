@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.322 2001/03/21 03:32:59 okazaki Exp $
+# $FreeBSD: ports/www/Makefile,v 1.323 2001/03/26 05:46:06 ijliao Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -208,6 +208,7 @@
     SUBDIR += snarf
     SUBDIR += squid22
     SUBDIR += squid23
+    SUBDIR += squid24
     SUBDIR += squidclients
     SUBDIR += squidguard
     SUBDIR += squidtimes
