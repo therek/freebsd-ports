@@ -2,16 +2,13 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.14 2000/06/29 07:02:50 obrien Exp $
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.15 2000/07/19 14:54:42 alex Exp $
 #
 
 PORTNAME=	scsh
-PORTVERSION=	0.5.1
+PORTVERSION=	0.5.2
 CATEGORIES=	shells lang
-MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/ \
-		http://www2.cons.org:8000/freebsd-distfiles/ \
-		${MASTER_SITE_LOCAL}
-MASTER_SITE_SUBDIR=	cracauer
+MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/
 
 MAINTAINER=	alex@FreeBSD.org
 
@@ -29,11 +26,19 @@ ALL_TARGET=	enough
 MAN1=		scsh.1
 STRIP=
 
+.if !defined(NOPORTDOCS)
+PLIST=		${PKGDIR}/PLIST.doc
+.endif
+
 post-install:
 	@strip ${PREFIX}/bin/scsh
-	(cd ${WRKSRC} ; \
+.if !defined(NOPORTDOCS)
+	@(cd ${WRKSRC} && \
 	 ${INSTALL_DATA} README RELEASE NEWS COPYING ${PREFIX}/lib/scsh/doc)
-	${RM} -f ${PREFIX}/share/doc/scsh
-	${LN} -fs ${PREFIX}/lib/scsh/doc ${PREFIX}/share/doc/scsh
+	@${RM} -f ${PREFIX}/share/doc/scsh
+	@${LN} -fs ${PREFIX}/lib/scsh/doc ${PREFIX}/share/doc/scsh
+.else
+	@${RM} -rf ${PREFIX}/lib/scsh/doc
+.endif
 
 .include <bsd.port.post.mk>
