@@ -2,13 +2,15 @@
 # Date created:         Thu May  8 00:14:31 PDT 1997
 # Whom:                 Steven Wallace <swallace@freebsd.org>
 #
-# $FreeBSD: ports/archivers/nulib/Makefile,v 1.6 2000/02/08 09:25:42 peter Exp $
+# $FreeBSD: ports/archivers/nulib/Makefile,v 1.7 2000/04/08 23:17:49 mharo Exp $
 #
 
 PORTNAME=	nulib
 PORTVERSION=	3.25
 CATEGORIES=	archivers
-MASTER_SITES=	http://people.FreeBSD.org/~jseger/
+
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jseger
 DISTNAME=	nulib325
 EXTRACT_SUFX=	.tar.Z
 

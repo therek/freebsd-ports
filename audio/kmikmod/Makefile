@@ -2,13 +2,14 @@
 # Date created:        1 March 1999
 # Whom:                Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.6 2000/03/24 22:12:25 tom Exp $
+# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.7 2000/04/08 21:23:46 mharo Exp $
 #
 
 PORTNAME=	kmikmod
 PORTVERSION=	2.04
 CATEGORIES=	audio kde
-MASTER_SITES=	http://people.FreeBSD.org/~tom/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tom
 
 MAINTAINER=	tom@FreeBSD.org
 

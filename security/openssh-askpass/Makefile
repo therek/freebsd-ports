@@ -2,14 +2,15 @@
 # Date created:		27 February 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssh-askpass/Makefile,v 1.3 2000/03/21 23:01:16 asami Exp $
+# $FreeBSD: ports/security/openssh-askpass/Makefile,v 1.4 2000/04/09 18:30:07 cpiazza Exp $
 #
 
 PORTNAME=	OpenSSH-askpass
 PORTVERSION=	1.2.2
 CATEGORIES=	security
 # ${MASTER_SITES} is only for if CVS won't work, period.
-MASTER_SITES=	http://people.FreeBSD.org/~kris/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kris
 DISTNAME=	X11/xc/programs/ssh-askpass
 
 MAINTAINER=	kris@FreeBSD.org

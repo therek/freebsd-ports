@@ -2,14 +2,15 @@
 # Date created:         March 20 2000
 # Whom:                 imura@FreeBSD.org
 #
-# $FreeBSD: ports/japanese/linux_locale/Makefile,v 1.2 2000/03/29 15:41:11 imura Exp $
+# $FreeBSD: ports/japanese/linux_locale/Makefile,v 1.3 2000/04/11 14:14:47 knu Exp $
 #
 
 PORTNAME=	linux_locale
 PORTVERSION=	${VERSION}.0
 CATEGORIES=	japanese emulators linux
 MASTER_SITES=	ftp://ftp.debian.org/debian/dists/potato/main/source/admin/ \
-		http://people.FreeBSD.org/~imura/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	imura
 DISTNAME=	locale-ja_${VERSION}
 
 MAINTAINER=	imura@FreeBSD.org

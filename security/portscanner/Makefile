@@ -2,14 +2,15 @@
 # Date created:        11 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/security/portscanner/Makefile,v 1.9 2000/04/21 08:18:50 mharo Exp $
+# $FreeBSD: ports/security/portscanner/Makefile,v 1.10 2000/06/02 03:18:43 will Exp $
 #
 
 PORTNAME=	portscanner
 PORTVERSION=	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://www.ameth.org/~veilleux/ \
-		http://people.FreeBSD.org/~billf/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	billf
 DISTNAME=	PortScanner-1.0
 
 MAINTAINER=	billf@FreeBSD.org

@@ -2,14 +2,15 @@
 # Date created:				14 February 1999
 # Whom:                			Dima Sivachenko <dima@chg.ru>
 #
-# $FreeBSD: ports/net/ggsd/Makefile,v 1.7 2000/02/08 09:28:01 peter Exp $
+# $FreeBSD: ports/net/ggsd/Makefile,v 1.8 2000/04/09 18:11:22 cpiazza Exp $
 #
 
 PORTNAME=	ggsd
 PORTVERSION=	0.1
 CATEGORIES=	net
-MASTER_SITES=	http://people.FreeBSD.org/~billf/distfiles/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.gpad.ac.ru/pub/FreeBSD/distfiles/
+MASTER_SITE_SUBDIR=	billf
 DISTNAME=	ggsd
 EXTRACT_SUFX=	.tar
 

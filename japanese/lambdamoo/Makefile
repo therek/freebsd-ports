@@ -2,7 +2,7 @@
 # Date created:		Jul 3 1999
 # Whom:			Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.3 2000/02/08 09:27:07 peter Exp $
+# $FreeBSD: ports/japanese/lambdamoo/Makefile,v 1.4 2000/04/11 14:14:37 knu Exp $
 #
 
 PORTNAME=	lambdamoo
@@ -14,7 +14,8 @@ DISTNAME=	LambdaMOO-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		mnews122.tar.gz
 
-PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/
+PATCH_SITES=	${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	flathill
 PATCHFILES=	ja-lambdamoo-19990704.patch.gz
 
 MAINTAINER=	flathill@FreeBSD.ORG

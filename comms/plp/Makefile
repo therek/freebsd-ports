@@ -2,14 +2,15 @@
 # Date created:				Tue Nov 30 15:43:27 EST 1999
 # Whom:					Maurice Castro <maurice@serc.rmit.edu.au>
 #
-# $FreeBSD: ports/comms/plp/Makefile,v 1.3 2000/03/21 23:01:14 asami Exp $
+# $FreeBSD: ports/comms/plp/Makefile,v 1.4 2000/04/08 23:22:37 mharo Exp $
 #
 
 PORTNAME=	plp
 PORTVERSION=	1.8
 CATEGORIES=	comms
 MASTER_SITES=	http://www.proudman51.freeserve.co.uk/psion/ \
-		http://people.FreeBSD.org/~kris/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	kris
 DISTNAME=	${PORTNAME}_1_8
 
 MAINTAINER=	maurice@serc.rmit.edu.au

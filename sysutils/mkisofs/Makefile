@@ -2,7 +2,7 @@
 # Date created:		07 Aug 1996
 # Whom:			jhk
 #
-# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.24 2000/04/29 16:01:27 dirk Exp $
+# $FreeBSD: ports/sysutils/mkisofs/Makefile,v 1.25 2000/05/19 10:40:47 dirk Exp $
 #
 
 PORTNAME=	mkisofs
@@ -13,7 +13,8 @@ MASTER_SITES=	ftp://ftp.fokus.gmd.de/pub/unix/cdrecord/ \
 		ftp://ftp.cs.tu-berlin.de/pub/misc/cdrecord/
 DISTNAME=	cdrecord-1.8.1
 
-PATCH_SITES=	http://people.FreeBSD.org/~dirk/ports/distfiles/
+PATCH_SITES=	${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	dirk
 PATCHFILES=	apple_driver.patch
 
 MAINTAINER=	dirk@FreeBSD.org

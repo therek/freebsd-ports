@@ -2,13 +2,14 @@
 # Date created:         09 December 1998
 # Whom:                 Matthew Dillon <dillon@backplane.com>
 #
-# $FreeBSD: ports/java/jikes/Makefile,v 1.17 2000/04/12 06:14:41 obrien Exp $
+# $FreeBSD: ports/java/jikes/Makefile,v 1.18 2000/05/11 03:27:47 archie Exp $
 #
 
 PORTNAME=	jikes
 PORTVERSION=	1.11
 CATEGORIES=	java
-MASTER_SITES=	http://people.FreeBSD.org/~archie/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	archie
 
 MAINTAINER=	archie@whistle.com
 

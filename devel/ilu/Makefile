@@ -2,7 +2,7 @@
 # Date created:         29.9.1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/devel/ilu/Makefile,v 1.24 2000/03/20 23:08:13 jedgar Exp $
+# $FreeBSD: ports/devel/ilu/Makefile,v 1.25 2000/04/11 21:28:14 mharo Exp $
 #
 
 PORTNAME=	ilu
@@ -10,11 +10,13 @@ PORTVERSION=	2.0a13
 CATEGORIES=	devel
 MASTER_SITES=	ftp://parcftp.xerox.com/pub/ilu/2.0a13/ \
 		http://www2.cons.org:8000/freebsd-distfiles/ \
-		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cracauer
 DISTNAME=	${PORTNAME}-2.0alpha13
 
 PATCH_SITES=	http://www2.cons.org:8000/freebsd-distfiles/ \
-		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+		${MASTER_SITE_LOCAL}
+PATCH_SITE_SUBDIR=	cracauer
 PATCHFILES=	${DISTNAME}-patches.html.gz
 
 MAINTAINER=	cracauer@cons.org

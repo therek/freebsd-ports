@@ -2,14 +2,15 @@
 # Date created:			28 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtictactoe/Makefile,v 1.6 2000/02/08 09:26:30 peter Exp $
+# $FreeBSD: ports/games/wmtictactoe/Makefile,v 1.7 2000/04/14 12:26:48 asami Exp $
 #
 
 PORTNAME=	wmtictactoe
 PORTVERSION=	1.1
 CATEGORIES=	games windowmaker afterstep
 MASTER_SITES=	http://atlas.ucpel.tche.br/~acamargo/ \
-		http://people.FreeBSD.org/~jim/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jim
 DISTNAME=	wmtictactoe-1.1-1
 
 MAINTAINER=	jim@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:			  24 May 2000
 # Whom:				  Tim van der Hoek <hoek@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/44bsd-more/Makefile,v 1.1 2000/05/29 19:58:19 hoek Exp $
+# $FreeBSD: ports/misc/44bsd-more/Makefile,v 1.2 2000/05/29 20:04:00 hoek Exp $
 #
 
 PORTNAME=	44bsd-more
 PORTVERSION=	${RELDATE}
 CATEGORIES=	misc
-MASTER_SITES=	http://people.FreeBSD.org/~hoek/dists/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	hoek
 
 MAINTAINER=	hoek@FreeBSD.org
 

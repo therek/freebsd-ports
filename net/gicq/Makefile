@@ -2,14 +2,15 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/gicq/Makefile,v 1.13 2000/02/08 09:27:49 peter Exp $
+# $FreeBSD: ports/net/gicq/Makefile,v 1.14 2000/04/09 18:11:23 cpiazza Exp $
 #
 
 PORTNAME=	gicq
 PORTVERSION=	0.33
 CATEGORIES=	net
-MASTER_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.korsoft.com/pub/gicq/
+MASTER_SITE_SUBDIR=	flathill
 
 MAINTAINER=	flathill@FreeBSD.org
 

@@ -3,13 +3,14 @@
 # Date created:			  23 January 2000
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.2 2000/04/15 08:26:22 obrien Exp $
+# $FreeBSD: ports/shells/44bsd-csh/Makefile,v 1.3 2000/04/17 01:04:02 kris Exp $
 #
 
 PORTNAME=	44bsd-csh
 PORTVERSION=	20000409
 CATEGORIES=	shells
-MASTER_SITES=	http://people.freebsd.org/~obrien/Distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	obrien
 
 MAINTAINER=	obrien@FreeBSD.org
 

@@ -2,14 +2,14 @@
 # Date created:		19 July 1999
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.7 2000/05/01 08:17:43 kris Exp $
+# $FreeBSD: ports/graphics/gridpix/Makefile,v 1.8 2000/05/25 21:40:34 asami Exp $
 #
 
 PORTNAME=	gridpix
 PORTVERSION=	2.1
 CATEGORIES=	graphics
-MASTER_SITES=	http://people.FreeBSD.org/~asami/distfiles/GridPix/
-DISTNAME=	GridPix-${PORTVERSION}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	asami/GridPix
 
 MAINTAINER=	asami@FreeBSD.org
 

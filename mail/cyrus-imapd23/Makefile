@@ -2,15 +2,16 @@
 # Date created:					May 4th 1997
 # Whom:						jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/mail/cyrus/Makefile,v 1.28 2000/05/13 17:18:08 paul Exp $
+# $FreeBSD: ports/mail/cyrus/Makefile,v 1.29 2000/05/13 18:32:38 paul Exp $
 #
 
 PORTNAME=	cyrus
 PORTVERSION= 	1.6.22
 CATEGORIES=	mail tcl82
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
-		http://people.FreeBSD.org/~stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/ \
+		${MASTER_SITE_LOCAL} \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/
+MASTER_SITE_SUBDIR=	stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail
 DISTNAME=	${PORTNAME}-imapd-${PORTVERSION}
 
 MAINTAINER=	stb@FreeBSD.org

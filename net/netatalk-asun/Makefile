@@ -2,15 +2,16 @@
 # Date created:         07 Sep 1998
 # Whom:                 stb@freebsd.org
 #
-# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.14 2000/04/09 18:12:28 cpiazza Exp $
+# $FreeBSD: ports/net/netatalk-asun/Makefile,v 1.15 2000/04/17 00:18:31 reg Exp $
 #
 
 PORTNAME=	netatalk
 PORTVERSION=	1.4b2+asun2.1.3
 CATEGORIES=	net print
 MASTER_SITES=   ftp://ftp.u.washington.edu/public/asun/ \
-		http://people.FreeBSD.org/~stb/mirror/ftp.u.washington.edu/public/asun/ \
+		${MASTER_SITE_LOCAL} \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.u.washington.edu/public/asun/
+MASTER_SITE_SUBDIR=	stb/mirror/ftp.u.washington.edu/public/asun
 
 MAINTAINER=	stb@freebsd.org
 

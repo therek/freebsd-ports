@@ -2,13 +2,14 @@
 # Date created:		21 April 1999
 # Whom:			Chris Costello <chris@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/fconv/Makefile,v 1.7 2000/04/08 23:24:30 mharo Exp $
+# $FreeBSD: ports/converters/fconv/Makefile,v 1.8 2000/04/23 22:45:20 chris Exp $
 #
 
 PORTNAME=	fconv
 PORTVERSION=	0.1
 CATEGORIES=	converters
-MASTER_SITES=	http://people.FreeBSD.org/~chris/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	chris
 
 MAINTAINER=	chris@FreeBSD.org
 

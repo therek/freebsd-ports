@@ -2,7 +2,7 @@
 # Date created:			17 March 1999
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/mhonarc/Makefile,v 1.5 2000/02/08 09:27:05 peter Exp $
+# $FreeBSD: ports/japanese/mhonarc/Makefile,v 1.6 2000/04/11 14:15:06 knu Exp $
 #
 
 PORTNAME=	mhonarc
@@ -14,7 +14,8 @@ MASTER_SITES=	http://www.oac.uci.edu/indiv/ehood/tar/ \
 		ftp://ftp.plig.org/pub/CPAN/authors/id/EHOOD/ \
 		http://www.perl.com/CPAN/authors/id/EHOOD/ \
 		http://www.shiratori.riec.tohoku.ac.jp/~p-katoh/Hack/Docs/mhonarc-jp/ \
-		http://people.FreeBSD.org/~flathill/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	flathill
 DISTNAME=	MHonArc${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		iso2022.pl

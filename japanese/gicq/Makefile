@@ -2,17 +2,19 @@
 # Date Created:			31 Oct 1998
 # Whom:				Seiichirou Hiraoka
 #
-# $FreeBSD: ports/japanese/gicq/Makefile,v 1.12 2000/02/08 09:26:56 peter Exp $
+# $FreeBSD: ports/japanese/gicq/Makefile,v 1.13 2000/04/11 14:13:43 knu Exp $
 #
 
 PORTNAME=	gicq
 PORTVERSION=	0.33
 CATEGORIES=	japanese net
-MASTER_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		ftp://ftp.korsoft.com/pub/gicq/
+MASTER_SITE_SUBDIR=	flathill
 
-PATCH_SITES=	http://people.FreeBSD.org/~flathill/distfiles/ \
+PATCH_SITES=	${MASTER_SITE_LOCAL} \
 		http://www-nagao.kuee.kyoto-u.ac.jp/member/taku/soft/
+PATCH_SITE_SUBDIR=	flathill
 PATCHFILES=	${DISTNAME}ja.patch
 PATCH_DIST_STRIP=	-p1
 

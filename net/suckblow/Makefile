@@ -2,13 +2,14 @@
 # Date created:				26 Jun 2000
 # Whom:					Archie Cobbs
 #
-# $FreeBSD: ports/net/suckblow/Makefile,v 1.1 2000/06/28 00:31:45 archie Exp $
+# $FreeBSD: ports/net/suckblow/Makefile,v 1.2 2000/06/29 00:17:32 archie Exp $
 #
 
 PORTNAME=	suckblow
 PORTVERSION=	1.1
 CATEGORIES=	net misc
-MASTER_SITES=	http://people.FreeBSD.org/~archie/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	archie
 
 MAINTAINER=	archie@freebsd.org
 

@@ -2,14 +2,15 @@
 # Date created:		17 July 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/libdockapp/Makefile,v 1.10 2000/06/16 08:47:15 sobomax Exp $
+# $FreeBSD: ports/x11-wm/libdockapp/Makefile,v 1.11 2000/06/16 21:52:37 asami Exp $
 #
 
 PORTNAME=	libdockapp
 PORTVERSION= 	0.4.0
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://shadowmere.student.utwente.nl/pub/WindowMaker/ \
-		http://people.FreeBSD.org/~jim/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jim
 
 MAINTAINER=	jim@FreeBSD.org
 

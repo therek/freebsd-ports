@@ -2,14 +2,15 @@
 # Date created:         19980128
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/sysutils/rdate/Makefile,v 1.6 2000/04/09 19:08:22 cpiazza Exp $
+# $FreeBSD: ports/sysutils/rdate/Makefile,v 1.7 2000/04/22 10:13:04 mharo Exp $
 #
 
 PORTNAME=	rdate
 PORTVERSION=	1.0
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www2.cons.org:8000/freebsd-distfiles/ \
-		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cracauer
 
 MAINTAINER=	cracauer@cons.org
 

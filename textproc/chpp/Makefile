@@ -2,13 +2,14 @@
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/textproc/chpp/Makefile,v 1.3 2000/03/29 07:16:44 kris Exp $
+# $FreeBSD: ports/textproc/chpp/Makefile,v 1.4 2000/04/09 21:52:13 cpiazza Exp $
 #
 
 PORTNAME=	chpp
 PORTVERSION= 	0.3.5
 CATEGORIES=	textproc
-MASTER_SITES=	http://people.FreeBSD.org/~andy/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	andy
 
 MAINTAINER=	ports@FreeBSD.org
 

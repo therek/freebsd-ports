@@ -2,7 +2,7 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/lang/cmucl/Makefile,v 1.10 2000/02/08 09:27:10 peter Exp $
+# $FreeBSD: ports/lang/cmucl/Makefile,v 1.11 2000/04/12 06:18:01 obrien Exp $
 #
 #
 
@@ -12,7 +12,8 @@ CATEGORIES=	lang
 MASTER_SITES=	http://www2.cons.org:8000/freebsd-distfiles/ \
 		ftp://ftp2.cons.org/pub/languages/lisp/cmucl/release/ \
 		http://www2.cons.org:8000/ftp-area/cmucl/release/ \
-		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cracauer
 DISTNAME=	cmucl-18b.x86.freebsd22
 EXTRACT_SUFX=	.tgz
 

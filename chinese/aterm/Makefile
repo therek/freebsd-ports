@@ -2,7 +2,7 @@
 # Date created:		26 April 1999
 # Whom:			Chia-Hsing Yu <davidyu@ken.csie.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/aterm/Makefile,v 1.6 2000/02/08 09:25:55 peter Exp $
+# $FreeBSD: ports/chinese/aterm/Makefile,v 1.7 2000/04/13 08:27:53 asami Exp $
 #
 
 PORTNAME=	aterm
@@ -10,7 +10,8 @@ PORTVERSION=	0.3.6
 CATEGORIES=	chinese
 MASTER_SITES=	http://members.xoom.com/sashav/aterm/ \
 		http://www.tigr.net/afterstep/as-apps/download/aterm/	\
-		http://people.FreeBSD.org/~foxfair/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	foxfair
 
 MAINTAINER=	davidyu@ken.csie.ntu.edu.tw
 

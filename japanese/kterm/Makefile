@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm/Makefile,v 1.24 2000/04/11 14:14:35 knu Exp $
+# $FreeBSD: ports/japanese/kterm/Makefile,v 1.25 2000/04/17 00:17:55 reg Exp $
 #
 
 PORTNAME=	kterm
@@ -10,8 +10,8 @@ PORTVERSION=	6.2.0
 CATEGORIES=	japanese x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 		${MASTER_SITE_PORTS_JP} \
-		http://people.FreeBSD.org/~shige/ports/kterm/
-MASTER_SITE_SUBDIR=	applications kterm
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	applications kterm shige/kterm
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		README.wallpaper.ja
 

@@ -2,15 +2,15 @@
 # Date created:         19990120
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/graphics/opengl-man/Makefile,v 1.5 2000/02/08 09:26:48 peter Exp $
+# $FreeBSD: ports/graphics/opengl-man/Makefile,v 1.6 2000/04/14 10:46:52 asami Exp $
 #
 
 PORTNAME=	opengl-man
 PORTVERSION=	657
 CATEGORIES=	graphics
-MASTER_SITES=	http://people.FreeBSD.org/~cracauer/freebsd-distfiles/ \
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
 		http://www2.cons.org:8000/freebsd-distfiles/
-
+MASTER_SITE_SUBDIR=	cracauer
 MAINTAINER=	cracauer@cons.org
 
 USE_BZIP2=	yes

@@ -2,13 +2,14 @@
 # Date created:		26 Nov 1999
 # Whom:			imura@FreeBSD.org
 #
-# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.2 2000/02/22 14:19:08 imura Exp $
+# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.3 2000/04/10 19:50:46 cpiazza Exp $
 #
 
 PORTNAME=	xwmm
 PORTVERSION= 	0.7
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://people.FreeBSD.org/~imura/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	imura
 
 MAINTAINER=	imura@FreeBSD.org
 

@@ -2,7 +2,7 @@
 # Date created:		2 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/serialmail/Makefile,v 1.5 2000/02/09 21:12:51 tom Exp $
+# $FreeBSD: ports/mail/serialmail/Makefile,v 1.6 2000/04/13 20:00:46 cpiazza Exp $
 #
 
 PORTNAME=	serialmail
@@ -10,7 +10,8 @@ PORTVERSION= 	0.75
 CATEGORIES=	mail
 MASTER_SITES=	http://cr.yp.to/software/ \
 		ftp://ftp.qmail.org/pub/koobera.math.uic.edu/pub/software/ \
-		http://people.FreeBSD.org/~tom/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tom
 
 MAINTAINER=	tom@FreeBSD.org
 

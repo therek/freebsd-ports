@@ -2,15 +2,16 @@
 # Date created:				Nov 1 1999
 # Whom:					hetzels@westbend.net
 #
-# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.9 2000/06/16 10:37:15 sobomax Exp $
+# $FreeBSD: ports/security/cyrus-sasl/Makefile,v 1.10 2000/06/16 21:52:00 asami Exp $
 #
 
 PORTNAME=	cyrus-sasl
 PORTVERSION=	1.5.21
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/ \
-		http://people.FreeBSD.org/~stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/ \
+		${MASTER_SITE_LOCAL} \
 		ftp://ftp.hanse.de/sites/transit/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail/
+MASTER_SITE_SUBDIR=	stb/mirror/ftp.andrew.cmu.edu/pub/cyrus-mail
 
 MAINTAINER=	hetzels@westbend.net
 

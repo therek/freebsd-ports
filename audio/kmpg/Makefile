@@ -2,13 +2,14 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/audio/kmpg/Makefile,v 1.17 2000/02/24 07:00:40 asami Exp $
+# $FreeBSD: ports/audio/kmpg/Makefile,v 1.18 2000/04/08 21:23:48 mharo Exp $
 #
 
 PORTNAME=	kmpg
 PORTVERSION=	0.4.3a
 CATEGORIES=	audio kde
-MASTER_SITES=	http://people.FreeBSD.org/~tom/distfiles/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	tom
 
 MAINTAINER=	tom@FreeBSD.org
 

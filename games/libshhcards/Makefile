@@ -2,7 +2,7 @@
 # Date created:				12 April 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/libshhcards/Makefile,v 1.12 2000/06/16 08:47:47 sobomax Exp $
+# $FreeBSD: ports/games/libshhcards/Makefile,v 1.13 2000/06/16 21:50:38 asami Exp $
 #
 
 PORTNAME=		libshhcards
@@ -10,8 +10,8 @@ PORTVERSION=		1.0.4
 CATEGORIES=		devel
 MASTER_SITES=		${MASTER_SITE_SUNSITE} \
 			http://home.sol.no/~sverrehu/pub-unix/files/ \
-			http://people.FreeBSD.org/~mph/distfiles/
-MASTER_SITE_SUBDIR=	libs/ui
+			${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	libs/ui mph
 DISTNAME=		shhcards-${PORTVERSION}
 
 MAINTAINER=		ports@FreeBSD.org

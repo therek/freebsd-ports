@@ -2,14 +2,15 @@
 # Date created:			      3 July 1999
 # Whom:				      O.Hodson@cs.ucl.ac.uk (Orion Hodson)
 #
-# $FreeBSD: ports/mbone/rat/Makefile,v 1.7 2000/02/08 09:27:32 peter Exp $
+# $FreeBSD: ports/mbone/rat/Makefile,v 1.8 2000/04/14 08:49:22 asami Exp $
 #
 
 PORTNAME=	rat
 PORTVERSION=	4.0.4
 CATEGORIES=	mbone audio
 MASTER_SITES=	http://www-mice.cs.ucl.ac.uk/multimedia/software/rat/4.0.4/ \
-		http://people.FreeBSD.org/~cpiazza/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cpiazza
 
 MAINTAINER=	O.Hodson@cs.ucl.ac.uk
 

@@ -2,7 +2,7 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.12 2000/04/09 18:34:04 cpiazza Exp $
+# $FreeBSD: ports/shells/scsh/Makefile,v 1.13 2000/04/21 08:19:30 mharo Exp $
 #
 
 PORTNAME=	scsh
@@ -10,7 +10,8 @@ PORTVERSION=	0.5.1
 CATEGORIES=	shells lang
 MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/ \
 		http://www2.cons.org:8000/freebsd-distfiles/ \
-		http://people.FreeBSD.org/~cracauer/freebsd-distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	cracauer
 
 MAINTAINER=	cracauer@cons.org
 

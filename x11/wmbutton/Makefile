@@ -2,14 +2,15 @@
 # Date created:			10 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wmbutton/Makefile,v 1.6 2000/02/17 02:39:54 jim Exp $
+# $FreeBSD: ports/x11/wmbutton/Makefile,v 1.7 2000/04/13 19:10:07 cpiazza Exp $
 #
 
 PORTNAME=	wmbutton
 PORTVERSION= 	0.4
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://www.cs.mun.ca/~gstarkes/wmaker/dockapps/files/ \
-		http://people.FreeBSD.org/~jim/distfiles/
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	jim
 
 MAINTAINER=	jim@FreeBSD.org
 
