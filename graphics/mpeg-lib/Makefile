@@ -3,20 +3,18 @@
 # Date created:		16 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.13 1999/09/18 17:54:57 steve Exp $
+# $FreeBSD: ports/graphics/mpeg-lib/Makefile,v 1.14 1999/11/26 17:28:51 steve Exp $
 #
 
 DISTNAME=	mpeg_lib-1.3.1
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.bic.mni.mcgill.ca/pub/mpeg/
+MASTER_SITES=	ftp://ftp.bic.mni.mcgill.ca/pub/mpeg/ \
+		http://starship.python.net/~gward/mpeglib/
 
 MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	OPTIMIZE="${CFLAGS}"
-
-pre-install:
-	@${MKDIR} ${PREFIX}/bin ${PREFIX}/lib ${PREFIX}/include
 
 post-install:
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
