@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.60 2000/05/25 12:23:47 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.61 2000/05/25 12:45:48 sobomax Exp $
 #
 
 PORTNAME=	gtk
@@ -33,7 +33,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=		gtk12-config.1
 
 pre-build:
-	${PERL} -i -pe 's/\\"$$/\\/' ${WRKSRC}/gtk/gtkrc.*
 	${RM} -rf ${WRKSRC}/docs/gtk.info*
+
+post-install:
+	@${MKDIR} ${PREFIX}/lib/gtk/themes/engines
 
 .include <bsd.port.mk>
