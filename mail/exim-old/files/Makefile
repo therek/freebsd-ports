@@ -1,7 +1,7 @@
 ##################################################
 #          The Exim mail transport agent         #
 ##################################################
-# $FreeBSD: ports/mail/exim/files/Makefile,v 1.14 2000/05/23 09:23:45 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/files/Makefile,v 1.15 2000/12/21 08:56:52 sheldonh Exp $
 
 # This is the template for Exim's main build-time configuration file. It
 # contains settings that are independent of any operating system. It should
@@ -93,8 +93,8 @@
 # appropriate code is included in the binary. You then need to set up the
 # runtime configuration to make use of the mechanism(s) selected.
 
-AUTH_CRAM_MD5=yes
-AUTH_PLAINTEXT=yes
+# AUTH_CRAM_MD5=yes
+# AUTH_PLAINTEXT=yes
 
 
 # The binary directory: This variable defines where the exim binary will be
@@ -514,7 +514,7 @@ SPOOL_DIRECTORY=/var/spool/exim
 # support, which is intended for use in conjunction with the SMTP AUTH
 # facilities, is included only when requested by the following setting:
 
-SUPPORT_PAM=yes
+# SUPPORT_PAM=yes
 
 # You probably need to add -lpam to EXTRALIBS, and in some releases of
 # GNU/Linux -ldl is also needed.
