@@ -3,7 +3,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.32 1999/10/08 03:29:50 nakai Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.33 1999/10/24 19:28:00 jim Exp $
 #
 
 DISTNAME=	xchat-1.3.5
@@ -15,6 +15,9 @@ MAINTAINER=	jim@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		Imlib.5:${PORTSDIR}/graphics/imlib
+.if defined(USE_GNOME)
+LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
+.endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
