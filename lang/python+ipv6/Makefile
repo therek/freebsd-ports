@@ -2,7 +2,7 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.65 2000/05/07 11:16:54 sumikawa Exp $
+# $FreeBSD: ports/lang/python+ipv6/Makefile,v 1.66 2000/10/08 02:42:07 asami Exp $
 #
 
 PORTNAME=	python+ipv6
@@ -99,7 +99,7 @@ pre-install:
 	${INSTALL_DATA} ${WRKSRC}/Lib/${platform}/*                    \
 		${PREFIX}/lib/python1.5/${platform}/
 .endfor
-	@sort -r -o ${PLIST} ${PLIST_TK} ${PLIST_GMP} ${PLIST_TOOLS} ${PLIST_V6} ${PKGDIR}/pkg-plist
+	@sort -r -o ${PLIST} ${PLIST_GMP} ${PLIST_TOOLS} ${PLIST_V6} ${PKGDIR}/pkg-plist
 
 post-install:
 	strip ${PREFIX}/bin/python
