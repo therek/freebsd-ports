@@ -2,7 +2,7 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.7 2000/04/09 21:52:51 cpiazza Exp $
+# $FreeBSD: ports/textproc/lotusxsl/Makefile,v 1.8 2001/02/05 16:34:51 olgeni Exp $
 #
 
 PORTNAME=	lotusxsl
@@ -13,7 +13,7 @@ MASTER_SITES=	http://www.alphaworks.ibm.com/formula/lotusxsl/
 DISTNAME=	${PORTNAME}_0_18_4
 EXTRACT_SUFX=	.zip
 
-MAINTAINER=	kuriyama@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	unzip:${PORTSDIR}/archivers/unzip
 RUN_DEPENDS=	${LOCALBASE}/share/java/classes/xml4j.jar:${PORTSDIR}/textproc/xml4j
