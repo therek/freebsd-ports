@@ -2,7 +2,7 @@
 # Date created:         Dec 5 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/seaview/Makefile,v 1.16 2000/04/08 22:04:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	seaview
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	frankch@waru.life.nthu.edu.tw
+
+BROKEN=		"Checksum is incorrect"
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
 
