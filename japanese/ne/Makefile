@@ -3,12 +3,12 @@
 # Date created:        15 Nov 1999
 # Whom:                SASAKI Shunsuke <ele@pop17.odn.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ne/Makefile,v 1.1.1.1 1999/11/17 22:05:17 sada Exp $
 #
 
 DISTNAME=      ne-3.00pre17
 PKGNAME=       ja-ne-3.00p17
-CATEGORIES=    editors japanese
+CATEGORIES=	japanese editors
 MASTER_SITES= http://www3.justnet.ne.jp/~ele/
 
 MAINTAINER=    ele@pop17.odn.ne.jp
