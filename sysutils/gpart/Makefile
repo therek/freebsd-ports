@@ -2,13 +2,14 @@
 # Date created:		29 Sep 1999
 # Whom:			Andrew Stevenson <andrew@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/gpart/Makefile,v 1.5 2000/09/16 09:15:15 knu Exp $
+# $FreeBSD: ports/sysutils/gpart/Makefile,v 1.6 2000/12/08 15:02:54 kevlo Exp $
 #
 
 PORTNAME=	gpart
-PORTVERSION=	0.1g
+PORTVERSION=	0.1h
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.stud.uni-hannover.de/user/76201/gpart/ \
+MASTER_SITES=	http://home.pages.de/~michab/gpart/ \
+		http://www.stud.uni-hannover.de/user/76201/gpart/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/filesystems
 
