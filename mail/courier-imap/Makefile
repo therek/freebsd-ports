@@ -2,11 +2,12 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.16 2001/01/03 15:44:16 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.17 2001/01/29 12:49:52 nbm Exp $
 #
 
 PORTNAME=	courier-imap
 PORTVERSION=	1.3.2
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -36,6 +37,7 @@ CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
 		--with-userdb=${PREFIX}/etc/userdb \
 		--datadir=${PREFIX}/share/courier-imap \
 		--libexecdir=${PREFIX}/libexec/courier-imap \
+		--enable-workarounds-for-imap-client-bugs \
 		--disable-root-check
 
 MAN1=		maildirmake.1
