@@ -3,12 +3,12 @@
 # Date created:		6 Feb 2000
 # Whom:			John Polstra <jdp@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.1.1.1 2000/02/10 05:46:12 jdp Exp $
+# $FreeBSD: ports/lang/pm3-base/Makefile,v 1.2 2000/02/13 23:16:38 jdp Exp $
 #
 
 DISTNAME=	pm3-base-${VERSION}
 CATEGORIES=	lang
-MASTER_SITES=	http://www.FreeBSD.org/~jdp/distfiles/pm3/
+MASTER_SITES=	http://people.FreeBSD.org/~jdp/distfiles/pm3/
 DISTFILES=	${BOOTSTRAP} \
 		pm3-${VERSION}-src.tar.bz2
 
