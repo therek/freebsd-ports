@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.261 2000/02/23 06:40:29 max Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.262 2000/02/27 15:12:13 steve Exp $
 #
 
     SUBDIR += Canna
@@ -250,7 +250,6 @@
     SUBDIR += timidity++-tcltk
     SUBDIR += tk42
     SUBDIR += tk80
-    SUBDIR += tk82
     SUBDIR += tkdesk
     SUBDIR += tkstep80
     SUBDIR += today
