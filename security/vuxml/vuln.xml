@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.189 2004/08/22 22:56:56 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.190 2004/08/22 22:58:19 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -69,7 +69,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
 	<name>courier-imap</name>
-	<range><le>3.0.7,1</le></range>
+	<range><lt>3.0.7,1</lt></range>
       </package>
     </affects>
     <description>
