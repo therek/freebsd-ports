@@ -2,7 +2,7 @@
 # Date created:				28 Augest 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/net/p5-Net-Jabber/Makefile,v 1.2 2000/12/16 18:28:50 clive Exp $
+# $FreeBSD: ports/net/p5-Net-Jabber/Makefile,v 1.3 2001/02/17 15:47:42 kevlo Exp $
 #
 
 PORTNAME=	Net-Jabber
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 MAINTAINER=	leeym@cae.ce.ntu.edu.tw
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/XML/Stream.pm:${PORTSDIR}/textproc/p5-XML-Stream \
-		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/SHA1.pm:${PORTSDIR}/security/p5-Digest-MD5 \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Digest/SHA1.pm:${PORTSDIR}/security/p5-Digest-SHA1 \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Unicode/String.pm:${PORTSDIR}/converters/p5-Unicode-String \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Time/Timezone.pm:${PORTSDIR}/devel/p5-Time
 
