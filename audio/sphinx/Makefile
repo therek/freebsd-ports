@@ -2,7 +2,7 @@
 # Date created:				30 Mar 2000
 # Whom:					trevor@jpj.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/sphinx/Makefile,v 1.1 2000/05/30 02:59:38 will Exp $
 #
 
 PORTNAME=	sphinx
@@ -15,5 +15,8 @@ MAINTAINER=	trevor@jpj.net
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
+
+# contains i386 sound code
+ONLY_FOR_ARCHS=	i386
 
 .include <bsd.port.mk>
