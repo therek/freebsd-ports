@@ -2,7 +2,7 @@
 # Date created:				Sun Sep 24 21:20:46 CEST 2000
 # Whom:					Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.92 2001/01/01 10:14:58 will Exp $
+# $FreeBSD: ports/databases/mysql323-server/Makefile,v 1.93 2001/01/05 17:13:33 dirk Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -85,7 +85,7 @@ post-install:
 
 # MySQL-Client part
 .else
-MAN1=		isamchk.1 isamlog.1 mysql.1.gz mysql_zap.1 mysqlaccess.1  \
+MAN1=		isamchk.1 isamlog.1 mysql.1 mysql_zap.1 mysqlaccess.1  \
 		mysqladmin.1 mysqld.1 mysqld_multi.1 mysqldump.1 mysqlshow.1 \
 		perror.1 replace.1 safe_mysqld.1
 
