@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.482 2001/03/31 09:04:56 obrien Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.483 2001/03/31 11:41:54 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -12,6 +12,7 @@
     SUBDIR += adabroker
     SUBDIR += allegro
     SUBDIR += amulet
+    SUBDIR += anjuta
     SUBDIR += arm-aout-binutils
     SUBDIR += arm-aout-gcc295
     SUBDIR += arm-elf-binutils
