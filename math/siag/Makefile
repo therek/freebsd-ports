@@ -3,7 +3,7 @@
 # Date created:		27 Jan 1998
 # Whom:			mi@aldan.algebra.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/siag/Makefile,v 1.19 1999/08/25 07:14:34 obrien Exp $
 #
 
 DISTNAME=	siag-3.1.18
@@ -17,7 +17,7 @@ BROKEN='only siag-3.1.19.tar.gz available'
 
 LIB_DEPENDS=	Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d \
 		Xpm.4:${PORTSDIR}/graphics/xpm
-RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot \
+RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot+ \
 		catdoc:${PORTSDIR}/textproc/catdoc
 
 GNU_CONFIGURE=	yes

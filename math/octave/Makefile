@@ -3,7 +3,7 @@
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.20 1999/08/25 07:12:31 obrien Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.21 1999/08/31 06:47:49 mharo Exp $
 #
 
 DISTNAME=	octave-2.0.13
@@ -12,8 +12,8 @@ MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/
 
 MAINTAINER=	chuckr@FreeBSD.org
 
-BUILD_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
-RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
+BUILD_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot+
+RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot+
 
 .include <bsd.port.pre.mk>
 
