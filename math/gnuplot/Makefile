@@ -3,7 +3,7 @@
 # Date created:         19 April 1998
 # Whom:                 chuckr
 #
-# $FreeBSD: ports/math/gnuplot/Makefile,v 1.27 1999/12/27 21:28:22 steve Exp $
+# $FreeBSD$
 #
 
 DISTNAME=	gnuplot-3.7.1
@@ -24,6 +24,11 @@ CONFIGURE_ARGS=	--exec-prefix=${PREFIX} \
 		--with-x --without-linux-vga \
 		--with-gd=${LOCALBASE}/lib \
 		--with-gnu-readline --with-lasergnu --with-png
+
+post-install:
+	${MKDIR} ${PREFIX}/share/doc/gnuplot
+	(cd ${WRKSRC}/demo;for EXAMPLES in ${WRKSRC}/demo/*; do ${INSTALL_DATA} $${EXAMPLES} ${PREFIX}/share/doc/gnuplot;done)
+	${INSTALL_DATA} ${FILESDIR}/README ${PREFIX}/share/doc/gnuplot
 
 MAN1=		gnuplot.1 lasergnu.1
 
