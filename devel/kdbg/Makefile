@@ -1,17 +1,17 @@
 # New ports collection makefile for:	kdbg
-# Version required:			1.0.1
+# Version required:			1.0.2
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.3 1999/11/27 18:01:00 imura Exp $
+# $FreeBSD: ports/devel/kdbg/Makefile,v 1.4 1999/12/10 05:51:21 imura Exp $
 #
 
-DISTNAME=	kdbg-1.0.1
+DISTNAME=	kdbg-1.0.2
 CATEGORIES=	devel kde
 MASTER_SITES=	http://members.telecom.at/~johsixt/ \
 		ftp://ftp.eudaptics.co.at/pub/people/jsixt/
 
-MAINTAINER=	jedgar@fxp.org
+MAINTAINER=	jedgar@FreeBSD.org
 
 BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 LIB_DEPENDS=	kdecore.2:${PORTSDIR}/x11/kdelibs11
