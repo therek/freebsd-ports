@@ -2,7 +2,7 @@
 # Date created:				7/27/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/doconfig/Makefile,v 1.5 2000/04/09 19:07:31 cpiazza Exp $
+# $FreeBSD: ports/sysutils/doconfig/Makefile,v 1.6 2000/04/22 10:12:05 mharo Exp $
 #
 
 PORTNAME=		doconfig
@@ -10,7 +10,7 @@ PORTVERSION=		1.1
 CATEGORIES=		sysutils
 MASTER_SITES=		ftp://ftp.cold.org/pub/brandon/
 
-MAINTAINER=		nectar@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 MAN8=			autokernconf.8 doconfig.8
 
