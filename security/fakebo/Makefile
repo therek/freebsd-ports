@@ -3,7 +3,7 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.5 1999/10/21 19:41:48 kris Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.6 1999/10/21 19:44:32 kris Exp $
 #
 
 DISTNAME=	fakebo-0.4.1
@@ -23,7 +23,7 @@ MAN1=		fakebo.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/fakebo ${PREFIX}/bin/
-	${INSTALL_DATA} ${WRKSRC}/fakebo.conf ${PREFIX}/etc/fakebo.conf.sample
+	${INSTALL_DATA} ${WRKSRC}/fakebo.conf.dist ${PREFIX}/etc/fakebo.conf.sample
 	${INSTALL_MAN} ${WRKSRC}/fakebo.1 ${PREFIX}/man/man1/
 
 .if !defined(NOPORTDOCS)
