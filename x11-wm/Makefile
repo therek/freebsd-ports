@@ -1,10 +1,9 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.33 2000/02/16 13:10:37 tg Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.34 2000/03/11 16:12:43 jedgar Exp $
 #
 
     SUBDIR += 9menu
     SUBDIR += 9wm
     SUBDIR += afterstep
-    SUBDIR += afterstep-devel
     SUBDIR += afterstep-i18n
     SUBDIR += afterstep-stable
     SUBDIR += amaterus
