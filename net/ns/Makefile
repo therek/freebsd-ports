@@ -2,14 +2,14 @@
 # Date created:		26 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/net/ns/Makefile,v 1.5 2000/04/16 10:44:49 asami Exp $
+# $FreeBSD: ports/net/ns/Makefile,v 1.6 2000/04/20 20:26:07 mharo Exp $
 #
 
 PORTNAME=	ns
-PORTVERSION=	2.1.b5
+PORTVERSION=	2.1.b7
 CATEGORIES=	net
-MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/vint/
-DISTNAME=	ns-src-2.1b5
+MASTER_SITES=	http://www.isi.edu/nsnam/dist/
+DISTNAME=	ns-src-2.1b7
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
 
@@ -19,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/bin/tclsh8.2:${PORTSDIR}/lang/tcl82
 MAN1=		ns.1
 MANCOMPRESSED=	no
 
-WRKSRC=		${WRKDIR}/ns-2.1b5
+WRKSRC=		${WRKDIR}/ns-2.1b7
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl-ver=8.2 --with-tk-ver=8.2
