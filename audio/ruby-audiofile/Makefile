@@ -2,11 +2,11 @@
 # Date created:		20 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/ruby-audiofile/Makefile,v 1.1 2001/07/20 11:21:15 knu Exp $
 #
 
 PORTNAME=	audiofile
-PORTVERSION=	0.1
+PORTVERSION=	0.1.1
 CATEGORIES=	audio ruby
 MASTER_SITES=	http://%SUBDIR%.sourceforge.net/download/
 #MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
@@ -34,8 +34,6 @@ DOCS=		audiofile.html audiofile.rd
 post-patch:
 	${RUBY} -i -pe 'gsub %r|/home/jaredj/ruby-lib/cddb\b|, "cddb"' \
 		${CDDB_WRKSRC}/wavcddb.rb
-	${RUBY} -i -pe 'gsub /\(\(<(.*?)(\||>)/, "((<\"\\1\"\\2"' \
-		${WRKSRC}/audiofile.rd
 
 do-build:
 .if !defined(NOPORTDOCS)
