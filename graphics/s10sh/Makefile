@@ -2,18 +2,13 @@
 # Date created:				Tue Feb 27 00:16:34 MST 2001
 # Whom:					John Reynolds <jjreynold@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/s10sh/Makefile,v 1.1 2001/03/02 18:05:19 mi Exp $
 #
 
 PORTNAME=	s10sh
-PORTVERSION=	0.1.91
+PORTVERSION=	0.2.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.kyuzz.org/antirez/s10sh-src/
-
-PATCH_SITES=http://www.reynoldsnet.org/s10sh/ \
-	    http://members.home.net/jjreynold/s10sh/
-PATCHFILES=${PORTNAME}-${PORTVERSION}.patches.gz
-PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	jjreynold@home.com
 
