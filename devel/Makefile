@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.450 2001/03/02 15:43:26 demon Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.451 2001/03/04 12:36:25 ijliao Exp $
 #
     SUBDIR += zziplib
 
@@ -11,6 +11,7 @@
     SUBDIR += SpecTcl
     SUBDIR += a2dev
     SUBDIR += adabroker
+    SUBDIR += allegro
     SUBDIR += amulet
     SUBDIR += arm-aout-binutils
     SUBDIR += arm-aout-gcc295
