@@ -2,16 +2,21 @@
 # Date created:		7 Oct 1996
 # Whom:			pst
 #
-# $FreeBSD: ports/x11/tkgoodstuff/Makefile,v 1.14 1999/08/31 02:50:40 peter Exp $
+# $FreeBSD: ports/x11/tkgoodstuff/Makefile,v 1.15 2000/04/13 19:10:03 cpiazza Exp $
 #
 
 PORTNAME=	tkgoodstuff
 PORTVERSION= 	8.0
 CATEGORIES=	x11 tk80
-MASTER_SITES=	http://www-personal.umich.edu/~markcrim/tkgoodstuff/dists/
+#
+# No longer published by original developer.  This port still works, although
+# there are other (better) applications that do similar things.  For now,
+# use the local FreeBSD.ORG port cache.
+#
+#MASTER_SITES=	http://www-personal.umich.edu/~markcrim/tkgoodstuff/dists/
 DISTNAME=	${PORTNAME}${PORTVERSION}-final
 
-MAINTAINER=	pst@FreeBSD.org
+MAINTAINER=	ports@freebsd.org
 
 RUN_DEPENDS=	fvwm2:${PORTSDIR}/x11-wm/fvwm2
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
