@@ -2,11 +2,11 @@
 # Date created:         30 Jan 1999
 # Whom:                 bmc@WillsCreek.COM
 #
-# $FreeBSD: ports/graphics/tgif/Makefile,v 1.24 2000/02/29 02:46:34 jedgar Exp $
+# $FreeBSD: ports/graphics/tgif/Makefile,v 1.25 2000/04/14 10:47:27 asami Exp $
 #
 
 PORTNAME=	tgif
-PORTVERSION=	4.1.27
+PORTVERSION=	4.1.33
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
 		ftp://ftp.cs.ucla.edu/pub/tgif/
