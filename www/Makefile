@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.403 2001/09/03 18:27:27 knu Exp $
+# $FreeBSD: ports/www/Makefile,v 1.404 2001/09/10 17:19:30 tom Exp $
 #
     SUBDIR += zope-guf
     SUBDIR += zope-zmysqlda
@@ -260,6 +260,7 @@
     SUBDIR += py-HTMLgen
     SUBDIR += qdecoder
     SUBDIR += quanta
+    SUBDIR += quixote
     SUBDIR += reportmagic
     SUBDIR += roxen
     SUBDIR += ruboard
