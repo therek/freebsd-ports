@@ -3,7 +3,7 @@
 # Date created:         1 May 1997
 # Whom:                 jmz
 #
-# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.14 1999/08/31 01:59:34 peter Exp $
+# $FreeBSD: ports/sysutils/cd-write/Makefile,v 1.15 1999/08/31 06:50:41 mharo Exp $
 #
 
 DISTNAME=       cd-write-1.4.1
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www.FreeBSD.org/~jmz/
 
 MAINTAINER=     jmz@FreeBSD.org
 
-LIB_DEPENDS=	tixsam4180.1:${PORTSDIR}/x11-toolkits/tix
+LIB_DEPENDS=	tixsam4182.1:${PORTSDIR}/x11-toolkits/tix
 
 WRKSRC=		${WRKDIR}/cd-write
 
