@@ -2,7 +2,7 @@
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.12 2000/12/26 13:48:48 jedgar Exp $
+# $FreeBSD: ports/devel/kdbg/Makefile,v 1.13 2001/02/27 03:09:10 steve Exp $
 #
 
 PORTNAME=	kdbg
@@ -16,8 +16,6 @@ MAINTAINER=	jedgar@FreeBSD.org
 BUILD_DEPENDS=	libtool:${PORTSDIR}/devel/libtool
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kdehelp:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 GNU_CONFIGURE=	yes
 USE_QT=		yes

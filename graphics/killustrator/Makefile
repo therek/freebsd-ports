@@ -2,7 +2,7 @@
 # Date created:        07 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.13 2000/07/16 14:09:13 jedgar Exp $
+# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.14 2001/02/27 03:09:11 steve Exp $
 #
 
 PORTNAME=	killustrator
@@ -16,8 +16,6 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		intl.1:${PORTSDIR}/devel/gettext \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 RUN_DEPENDS=	${LOCALBASE}/bin/kdehelp:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 USE_QT=		yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:		06 Nov 2000
 # Whom:			rse@engelschall.com
 #
-# $FreeBSD: ports/misc/khotkeys/Makefile,v 1.2 2000/12/02 16:31:58 kevlo Exp $
+# $FreeBSD: ports/misc/khotkeys/Makefile,v 1.3 2001/02/27 03:09:10 steve Exp $
 #
 
 PORTNAME=	khotkeys
@@ -17,8 +17,6 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kfm.3:${PORTSDIR}/x11/kdelibs11 \
 		kfile.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kcontrol:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 NO_LATEST_LINK=	yes
 USE_BZIP2=	yes

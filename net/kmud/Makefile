@@ -2,7 +2,7 @@
 # Date created:		31 Oct 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/net/kmud/Makefile,v 1.6 2001/01/30 14:07:34 sf Exp $
+# $FreeBSD: ports/net/kmud/Makefile,v 1.7 2001/02/27 03:09:11 steve Exp $
 #
 
 PORTNAME=	kmud
@@ -17,8 +17,6 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	gettext:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	kdehelp:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 USE_QT=		yes
 USE_LIBTOOL=	yes

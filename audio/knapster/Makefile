@@ -2,7 +2,7 @@
 # Date created:				06 January 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/knapster/Makefile,v 1.17 2001/01/04 17:09:32 sf Exp $
+# $FreeBSD: ports/audio/knapster/Makefile,v 1.18 2001/02/27 03:09:11 steve Exp $
 #
 
 PORTNAME=	knapster
@@ -16,8 +16,6 @@ MAINTAINER=	jedgar@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kdehelp:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the the ports tree"
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD: ports/audio/krio/Makefile,v 1.6 2001/01/16 17:30:05 sobomax Exp $
+# $FreeBSD: ports/audio/krio/Makefile,v 1.7 2001/02/27 03:09:12 steve Exp $
 #
 
 PORTNAME=	krio
@@ -19,8 +19,6 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		kfm.3:${PORTSDIR}/x11/kdelibs11 \
 		kfile.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	kdehelp:${PORTSDIR}/x11/kdebase11
-
-BROKEN=		"KDE 1.x is no longer in the ports tree"
 
 USE_QT=		yes
 HAS_CONFIGURE=	yes
