@@ -2,11 +2,11 @@
 # Date created:				7 Oct 2000
 # Whom:					Norio Suzuki <nosuzuki@e-mail.ne.jp>
 #
-# $FreeBSD: ports/graphics/xzgv/Makefile,v 1.1 2000/10/19 11:56:48 trevor Exp $
+# $FreeBSD: ports/graphics/xzgv/Makefile,v 1.2 2000/10/28 15:53:18 trevor Exp $
 #
 
 PORTNAME=	xzgv
-PORTVERSION=	0.5
+PORTVERSION=	0.6
 CATEGORIES=	graphics
 MASTER_SITES=	http://xzgv.browser.org/ \
 			${MASTER_SITE_SUNSITE}
@@ -21,11 +21,7 @@ USE_X_PREFIX=	yes
 MAN1=		xzgv.1
 
 post-patch:
-	@${PERL} -pi -e "s:usr/local:${PREFIX}:g" ${WRKSRC}/config.mk
+	@${PERL} -pi -e "s:/usr/local:${PREFIX}:g" ${WRKSRC}/config.mk
 
-post-install:
-	${ECHO} ${PREFIX}
-	strip -s ${PREFIX}/bin/xzgv
-	install-info ${PREFIX}/info/xzgv ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
