@@ -1,8 +1,9 @@
-# $FreeBSD: ports/mail/Makefile,v 1.116 2000/01/29 20:50:26 billf Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.117 2000/01/30 18:23:53 steve Exp $
 #
 
     SUBDIR += adcomplain
     SUBDIR += asmail
+    SUBDIR += autorespond
     SUBDIR += balsa
     SUBDIR += bbmail
     SUBDIR += biffer
@@ -30,6 +31,7 @@
     SUBDIR += imap-uw
     SUBDIR += kbiff
     SUBDIR += knewmail
+    SUBDIR += lbdb
     SUBDIR += mailagent
     SUBDIR += mailcrypt
     SUBDIR += maildrop
