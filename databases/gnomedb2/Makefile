@@ -2,7 +2,7 @@
 # Date created:				19th June 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/gnomedb/Makefile,v 1.1 2001/06/19 08:12:10 ade Exp $
 #
 
 PORTNAME=	gnomedb
@@ -20,7 +20,7 @@ LIB_DEPENDS=	bonobo.2:${PORTSDIR}/devel/bonobo \
 USE_X_PREFIX=	yes
 USE_GNOMECTRL=	yes
 USE_GMAKE=	yes
-USE_LIBTOOL=	yes
+GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
@@ -31,6 +31,8 @@ pre-patch:
 		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
-		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
+		 s|\$\(GNOME_datadir\)/gnome/|\$\(datadir\)/|g ; \
+		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g ; \
+		 s|\$\(GNOME_datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
