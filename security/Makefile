@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.136 2000/10/25 18:55:21 trevor Exp $
+# $FreeBSD: ports/security/Makefile,v 1.137 2000/10/28 00:23:07 scrappy Exp $
 #
 
     SUBDIR += aafid2
@@ -31,6 +31,7 @@
     SUBDIR += gpasman
     SUBDIR += gtkportscan
     SUBDIR += heimdal
+    SUBDIR += hping
     SUBDIR += ident2
     SUBDIR += identify
     SUBDIR += inflex
