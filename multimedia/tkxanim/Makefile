@@ -2,13 +2,13 @@
 # Date created:				24 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/tkxanim/Makefile,v 1.1.1.1 1999/11/26 20:27:43 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkxanim
 PORTVERSION=	0.43
 CATEGORIES=	graphics tk82
-MASTER_SITES=	http://members.yourlink.net/aaron/
+MASTER_SITES=	http://members.yourlink.net/aaron/software/linux/
 
 MAINTAINER=	jedgar@fxp.org
 
