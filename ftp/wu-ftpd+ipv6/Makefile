@@ -3,7 +3,7 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.28 1999/08/25 05:55:25 obrien Exp $
+# $FreeBSD: ports/ftp/wu-ftpd/Makefile,v 1.29 1999/08/30 19:14:03 cpiazza Exp $
 #
 # REMINDER: to use ftpaccess(5) you need to specify -a in command line,
 # it is changed from previous versions
@@ -13,7 +13,12 @@ CATEGORIES=	ftp
 MASTER_SITES=   ftp://ftp.vr.net/pub/wu-ftpd/wu-ftpd/
 
 PATCH_SITES=	ftp://ftp.wu-ftpd.org/pub/wu-ftpd/quickfixes/apply_to_2.5.0/
-PATCHFILES=	mapped.path.overrun.patch
+PATCHFILES=     \
+		data-limit.patch \
+		deny.not.nameserved.patch \
+		mapped.path.overrun.patch \
+		not.in.class.patch \
+		rfc931.timeout.patch
 
 MAINTAINER=     ache@FreeBSD.org
 
