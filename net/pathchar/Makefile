@@ -3,7 +3,7 @@
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.16 2000/06/07 03:09:24 obrien Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.17 2000/06/07 17:44:38 obrien Exp $
 #
 
 PORTNAME=	pathchar
@@ -11,7 +11,6 @@ PORTVERSION=	a1
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/  \
-		http://www.fips.de/Computer/woman/  \
 		http://sitka.triumf.ca/net/  \
 		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
 DISTNAME=	pathchar-a1-freebsd-3.0
