@@ -2,7 +2,7 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.48 2000/10/08 10:22:52 asami Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.49 2001/02/10 01:30:46 alfred Exp $
 #
 
 PORTNAME=	openssl
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.sunet.se/pub/security/tools/net/openssl/source/ \
 		ftp://ftp.cert.dfn.de/pub/tools/net/openssl/source/
 
-MAINTAINER=	dirk@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} >= 400014
