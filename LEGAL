@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.378 2005/01/20 07:56:35 phantom Exp $
+# $FreeBSD: ports/LEGAL,v 1.379 2005/01/20 08:01:35 phantom Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -110,6 +110,7 @@ csound/*		ports/audio/csound	Distribution prohibited; may be
 						music but other commercial use
 						is prohibited.
 csound/*		ports/audio/csound-manual ports/audio/same as csound
+cyberbit/*		ports/x11-fonts/cyberbit-ttfonts Not free for commercial use
 DansGuardian-2.6-*	ports/www/dansguardian	Not free for installation by
 						3rd parties charging for
 						installation or support; not
