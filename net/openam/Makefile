@@ -2,16 +2,16 @@
 # Date created:		Tue May  2 15:43:02 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openam/Makefile,v 1.5 2000/11/12 09:32:36 roger Exp $
+# $FreeBSD: ports/net/openam/Makefile,v 1.6 2001/01/03 14:15:12 roger Exp $
 #
 
 PORTNAME=	openam
-PORTVERSION=	1.0b2
+PORTVERSION=	1.0.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTNAME=	openam_1.0beta2
+DISTNAME=	openam_1.0.4
 
 MAINTAINER=	roger@FreeBSD.org
 
