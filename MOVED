@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.133 2003/05/16 05:22:24 sobomax Exp $
+# $FreeBSD: ports/MOVED,v 1.134 2003/05/19 12:24:17 arved Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -334,3 +334,6 @@ editors/xemacs-wp-packages||2003-05-12|obsolete xemacs package category
 devel/p5-Time||2003-05-13|Use devel/p5-Time-modules port instead
 www/sqmgrlog|www/sarg|2003-05-15|Renamed into sarg
 devel/adabroker||2003-05-19|no longer maintained, does not compile with latest compiler
+chinese/rxvt||2003-05-20|no longer needed
+chinese/rxvt-big5||2003-05-20|no longer needed
+chinese/rxvt-gb||2003-05-20|no longer needed
