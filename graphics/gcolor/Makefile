@@ -3,11 +3,11 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gcolor/Makefile,v 1.1.1.1 2000/02/21 22:47:29 jedgar Exp $
 #
 
 DISTNAME=	gcolor-0.4
-CATEGORIES=	graphics gnome
+CATEGORIES=	graphics gnome x11
 MASTER_SITES=	http://download.sourceforge.net/gcolor/
 
 MAINTAINER=	andrews@technologist.com
