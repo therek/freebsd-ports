@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.532 2001/05/11 16:05:39 vanilla Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.533 2001/05/11 21:27:58 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -426,6 +426,7 @@
     SUBDIR += ruby-sdl
     SUBDIR += ruby-slang
     SUBDIR += ruby-strscan
+    SUBDIR += ruby-sysvipc
     SUBDIR += ruby-textbuf
     SUBDIR += ruby-unit
     SUBDIR += rvm
