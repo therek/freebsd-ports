@@ -2,15 +2,13 @@
 # Date created:		13 May 2001
 # Whom:			FUJISHIMA Satsuki <sf@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/navi2ch-xemacs21-mule/Makefile,v 1.1 2001/05/18 19:09:02 sf Exp $
+# $FreeBSD: ports/japanese/navi2ch-xemacs21-mule/Makefile,v 1.2 2001/06/02 17:41:08 sf Exp $
 #
 
-MASTERDIR=	${.CURDIR}/../navi2ch-emacs20
+MASTERDIR=	${.CURDIR}/../ja-navi2ch-emacs20
 
 EMACS_PORT_NAME=	xemacs21-mule
 
 RUN_DEPENDS=		${X11BASE}/lib/X11/fonts/local/mona12aB.pcf.gz:${PORTSDIR}/japanese/monafonts
-
-PLIST_SUB=	XEMACS=""
 
 .include <${MASTERDIR}/Makefile>
