@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.235 2001/12/19 04:07:00 petef Exp $
+# $FreeBSD: ports/LEGAL,v 1.236 2001/12/27 16:27:15 lioux Exp $
 
 Some of the ports in this directory have restrictive copyrights prohibiting
 their actual redistribution on mass media.  When creating compilations
@@ -145,6 +145,7 @@ mew-*.tar.gz		ports/mail/mew		ITAR export-controlled
 mindfocus-*		ports/games/mindfocus	contains commercial
 						character data
 mindtermbin-*		ports/security/mindterm-binary	Do not sell for profit.
+mingw/opengl95.exe	ports/devel/mingw-opengl-headers	Not sure if we can redistribute it freely
 mmv/*			ports/misc/mmv		Restrictive/unclear copyright
 molden			ports/biology/molden	free for academic,
 						non profit usage
