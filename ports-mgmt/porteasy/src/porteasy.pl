@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.30 2003/01/17 21:55:17 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.31 2003/04/07 13:23:50 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.6";
+my $VERSION	= "2.7.7";
 my $COPYRIGHT	= "Copyright (c) 2000-2003 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -849,16 +849,13 @@ sub cmp_version($$) {
     }
 
     # Compare port epochs
+    my ($inst_epoch, $tree_epoch) = (0, 0);
     $inst =~ s/,(\d+)$//
-	and $a = $1;
+	and $inst_epoch = $1;
     $tree =~ s/,(\d+)$//
-	and $b = $1;
-    if (defined($a) || defined($b)) {
-	$a = int($a || 0);
-	$b = int($b || 0);
-	if ($a != $b) {
-	    return ($a > $b) ? '>' : '<';
-	}
+	and $tree_epoch = $1;
+    if ($inst_epoch != $tree_epoch) {
+	return ($inst_epoch > $tree_epoch) ? '>' : '<';
     }
 
     # Split it into components
