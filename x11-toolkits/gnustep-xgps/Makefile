@@ -2,7 +2,7 @@
 # Date created:         19 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gnustep-xgps/Makefile,v 1.17 2001/04/07 18:03:56 ben Exp $
+# $FreeBSD: ports/x11-toolkits/gnustep-xgps/Makefile,v 1.18 2001/06/26 12:02:36 tg Exp $
 #
 
 PORTNAME=	gnustep-xgps
@@ -64,5 +64,9 @@ do-configure:
 do-build:
 	@(cd ${WRKSRC}; . ${PREFIX}/System/Makefiles/GNUstep.sh; \
 		${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${ALL_TARGET})
+
+do-install:
+	@(cd ${WRKSRC}; . ${PREFIX}/System/Makefiles/GNUstep.sh; \
+		${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${INSTALL_TARGET})
 
 .include <bsd.port.post.mk>
