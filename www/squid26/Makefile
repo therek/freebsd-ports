@@ -2,12 +2,12 @@
 # Date created:		Tue Mar 27 14:56:08 CEST 2001
 # Whom:			Adrian Chadd <adrian@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squid24/Makefile,v 1.83 2001/06/17 22:24:02 adrian Exp $
+# $FreeBSD: ports/www/squid24/Makefile,v 1.84 2001/08/28 16:48:35 adrian Exp $
 #
 
 PORTNAME=	squid
 PORTVERSION=	2.4
-PORTREVISION=	5
+PORTREVISION=	6
 CATEGORIES=	www
 MASTER_SITES=  \
 	ftp://ftp.squid-cache.org/pub/squid-2/STABLE/ \
