@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.19 2000/08/04 15:56:51 green Exp $
+# $FreeBSD: ports/net/licq/Makefile,v 1.20 2000/08/09 20:00:45 green Exp $
 #
 
 PORTNAME=	licq
@@ -27,6 +27,7 @@ USE_NEWGCC=     yes
 USE_OPENSSL=	yes
 USE_PERL5=      yes
 
+CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/qt2
 CONFIGURE_TARGET= $(ARCH)-unknown-freebsdelf$(OSREL)
 DATANAME=       licq-data-1.6
 DATAFILES=	${DATANAME}${EXTRACT_SUFX}
