@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.74 1999/11/26 20:35:28 steve Exp $
+# $FreeBSD: ports/security/Makefile,v 1.75 1999/11/26 23:18:39 steve Exp $
 #
 
     SUBDIR += bjorb
@@ -29,6 +29,9 @@
     SUBDIR += mhash
     SUBDIR += nbaudit
     SUBDIR += nessus
+    SUBDIR += nessus-libraries
+    SUBDIR += nessus-libnasl
+    SUBDIR += nessus-plugins
     SUBDIR += nmap
     SUBDIR += nmapfe
     SUBDIR += openssh
