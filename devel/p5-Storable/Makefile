@@ -2,11 +2,11 @@
 # Date created:				July 7th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.29 2001/04/02 14:27:35 vanilla Exp $
+# $FreeBSD: ports/devel/p5-Storable/Makefile,v 1.30 2001/08/14 15:32:57 tobez Exp $
 #
 
 PORTNAME=	Storable
-PORTVERSION=	1.0.12
+PORTVERSION=	1.0.13
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Storable
