@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.3 2002/05/25 18:39:19 ume Exp $
+#	$FreeBSD: ports/mail/cyrus-imapd/pkg-deinstall,v 1.4 2004/03/30 15:28:06 ume Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -42,7 +42,9 @@ cyrus_conf() {
 modify_cyrus_user() {
 	USER=cyrus
 	PW=/usr/sbin/pw
-	if [ -x /sbin/nologin ]; then
+	if [ -x /usr/sbin/nologin ]; then
+		shell=/usr/sbin/nologin
+	elif [ -x /sbin/nologin ]; then
 		shell=/sbin/nologin
 	else
 		shell=/nonexistent
