@@ -2,11 +2,12 @@
 # Date created:			12 March 1997
 # Whom:		Andrew <andrew@ugh.net.au>, Iain Templeton <iain@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/idled/Makefile,v 1.6 2000/04/09 19:07:50 cpiazza Exp $
+# $FreeBSD: ports/sysutils/idled/Makefile,v 1.7 2000/08/11 01:34:09 will Exp $
 #
 
 PORTNAME=	idled
 PORTVERSION=	1.16
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.darkwing.com/idled/download/	\
 		ftp://ftp.cs.hope.edu/pub/idled/
