@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 26 12:20:25 CET 2001
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/php3/Makefile,v 1.1 2001/03/04 18:32:15 dirk Exp $
 #
 
 PORTNAME=	php3
@@ -14,6 +14,5 @@ PKGMESSAGE=	mustnotexist
 PLIST=		${PKGDIR}/pkg-plist.standalone
 
 STANDALONE=	yes
-NOPORTDOCS=	yes
 
 .include "${MASTERDIR}/Makefile"

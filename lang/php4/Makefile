@@ -2,7 +2,7 @@
 # Date created:		20 February, 2001
 # Whom:			Alastair D'Silva <deece@newmillennium.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/php4/Makefile,v 1.1 2001/02/25 21:25:26 dirk Exp $
 #
 
 PORTNAME=	php4
@@ -14,6 +14,5 @@ PKGMESSAGE=	mustnotexist
 PLIST=		${PKGDIR}/pkg-plist.standalone
 
 STANDALONE=	yes
-NOPORTDOCS=	yes
 
 .include "${MASTERDIR}/Makefile"
