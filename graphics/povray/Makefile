@@ -3,7 +3,7 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray/Makefile,v 1.17 1999/08/25 06:14:42 obrien Exp $
+# $FreeBSD: ports/graphics/povray/Makefile,v 1.18 1999/08/31 06:45:10 mharo Exp $
 #
 
 DISTNAME=	povray3
@@ -23,6 +23,7 @@ DIST_SUBDIR=	povray30
 
 USE_XLIB=	yes
 MAN1=		povray.1
+NO_LATEST_LINK=	yes
 
 POVLIB=		${PREFIX}/lib/povray3
 
