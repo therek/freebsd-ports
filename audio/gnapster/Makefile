@@ -2,7 +2,7 @@
 # Date created:		24 December 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gnapster/Makefile,v 1.19 2000/11/19 19:36:47 cpiazza Exp $
+# $FreeBSD: ports/audio/gnapster/Makefile,v 1.20 2000/11/24 00:01:42 cpiazza Exp $
 #
 
 PORTNAME=	gnapster
@@ -12,10 +12,6 @@ MASTER_SITES=	http://www.faradic.net/~jasta/files/
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
-.if defined(HAVE_GNOME)
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk_pixbuf
-.endif
-
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_IMLIB=	yes
@@ -24,7 +20,12 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
-.if !defined(HAVE_GNOME)
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+.else
 CONFIGURE_ARGS+=--disable-gnome --disable-gdk-pixbuf
 .endif
 
@@ -35,4 +36,4 @@ pre-patch:
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
