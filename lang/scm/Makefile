@@ -2,19 +2,18 @@
 # Date created:		Sat Nov  5 17:11:01 PST 1994
 # Whom:			hsu
 #
-# $FreeBSD: ports/lang/scm/Makefile,v 1.19 2000/09/17 11:15:42 kris Exp $
+# $FreeBSD: ports/lang/scm/Makefile,v 1.20 2000/10/24 15:49:53 kevlo Exp $
 #
 
 PORTNAME=	scm
-PORTVERSION=	5d3
-PORTREVISION=	1
+PORTVERSION=	5d4
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.swiss.ai.mit.edu/pub/scm/
-DISTFILES=	scm5d3.zip slib2c9.zip slib-psd1-3.tar.gz
+DISTFILES=	scm5d4.zip slib2d1.zip slib-psd1-3.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
 
-EXTRACT_ONLY=	scm5d3.zip slib2c9.zip
+EXTRACT_ONLY=	scm5d4.zip slib2d1.zip
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
