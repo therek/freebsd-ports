@@ -2,14 +2,14 @@
 # Date created:		20 Sep 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/graphics/fujiplay/Makefile,v 1.1.1.1 1999/11/01 03:35:50 steve Exp $
+# $FreeBSD: ports/graphics/fujiplay/Makefile,v 1.2 2000/04/13 06:28:27 obrien Exp $
 #
 
 PORTNAME=	fujiplay
 PORTVERSION=	1.33
 CATEGORIES=	graphics
 MASTER_SITES=	http://topo.math.u-psud.fr/~bousch/
-DISTNAME=	${PORTVERSION}
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
