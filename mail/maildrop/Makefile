@@ -2,7 +2,7 @@
 # Date created:		16 November 1998
 # Whom:			Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/mail/maildrop/Makefile,v 1.7 2000/03/30 21:07:58 mharo Exp $
+# $FreeBSD: ports/mail/maildrop/Makefile,v 1.8 2000/04/13 19:59:52 cpiazza Exp $
 #
 
 PORTNAME=	maildrop
@@ -56,12 +56,12 @@ CONFIGURE_ARGS+=	--without-gdbm
 PLIST=	${WRKDIR}/PLIST
 
 post-patch:
-	@${CP} ${PKGDIR}/PLIST ${WRKDIR}
+	@${CP} ${PKGDIR}/pkg-plist ${PLIST}
 .if !defined(NO_GDBM)
-	@${CAT} ${PKGDIR}/PLIST.gdbm >> ${WRKDIR}/PLIST
+	@${CAT} ${PKGDIR}/pkg-plist.gdbm >> ${PLIST}
 .endif
 .if !defined(NOPORTDOCS)
-	@${CAT} ${PKGDIR}/PLIST.docs >> ${WRKDIR}/PLIST
+	@${CAT} ${PKGDIR}/pkg-plist.docs >> ${PLIST}
 .endif
 
 .include <bsd.port.mk>
