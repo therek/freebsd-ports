@@ -1,0 +1,5 @@
+@comment $FreeBSD: ports/print/jadetex/pkg-plist,v 1.4 2001/12/03 20:15:59 nik Exp $
+share/texmf/web2c/xmltex.fmt
+share/texmf/web2c/pdfxmltex.fmt
+@exec %D/bin/mktexlsr
+@unexec %D/bin/mktexlsr
