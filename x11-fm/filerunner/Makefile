@@ -3,18 +3,18 @@
 # Date created:		3 August 1996
 # Whom:			lukin
 #
-# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.19 1999/08/31 02:58:17 peter Exp $
+# $FreeBSD: ports/x11-fm/filerunner/Makefile,v 1.20 1999/08/31 06:52:34 mharo Exp $
 #
 
 DISTNAME=	FileRunner-2.5
 PKGNAME=	filerunner-2.5
-CATEGORIES=	x11-fm tk81
+CATEGORIES=	x11-fm tk82
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/desktop
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-LIB_DEPENDS=	tk81.1:${PORTSDIR}/x11-toolkits/tk81
+LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 MAKEFILE=	Makefile.freebsd_gcc
 MAKE_ENV+=	X11BASE=${X11BASE}
