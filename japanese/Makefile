@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.275 2000/07/07 17:08:05 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.276 2000/07/10 03:34:46 steve Exp $
 #
 
     SUBDIR += Canna
@@ -241,6 +241,7 @@
     SUBDIR += skkserv
     SUBDIR += slrn
     SUBDIR += srd-fpw
+    SUBDIR += srd-fpw-package
     SUBDIR += tcl76
     SUBDIR += tcl80
     SUBDIR += tcsh
