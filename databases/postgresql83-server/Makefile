@@ -2,7 +2,7 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.59 2000/06/04 16:47:24 knu Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.60 2000/06/20 05:08:06 knu Exp $
 #
 
 PORTNAME=	postgresql
@@ -29,7 +29,7 @@ BROKEN=		doesn\'t build on the alpha yet
 Y2K=		http://www.postgresql.org/y2k.html
 
 INSTALLS_SHLIB=	YES
-LDCONFIG_DIRS=	%%PREFIX%%/pgsql
+LDCONFIG_DIRS=	%%PREFIX%%/pgsql/lib
 
 # if you want to use the tcl/tk frontend pgaccess, then you need to build
 # postgresql with tcl support by typing: make -DWITH_TCL
