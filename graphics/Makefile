@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.356 2001/09/25 00:06:29 lioux Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.357 2001/09/25 19:27:06 lioux Exp $
 #
 
     SUBDIR += 4va
@@ -166,7 +166,6 @@
     SUBDIR += mpegedit
     SUBDIR += mpgtx
     SUBDIR += mplayer
-    SUBDIR += mplayer-codecs
     SUBDIR += mplayer-fonts
     SUBDIR += mplex
     SUBDIR += mtv
