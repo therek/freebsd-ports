@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.145 2001/01/06 14:28:05 alex Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.146 2001/01/10 03:04:45 kuriyama Exp $
 #
     SUBDIR += yawho
 
@@ -127,6 +127,7 @@
     SUBDIR += wmtop
     SUBDIR += xbatt
     SUBDIR += xbattbar
+    SUBDIR += xcdroast
     SUBDIR += xcpustate
     SUBDIR += xdu
     SUBDIR += xfsm
