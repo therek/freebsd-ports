@@ -2,11 +2,11 @@
 # Date created:		20 August 1999
 # Whom:			Jose M. Alcaide <jose@we.lc.ehu.es>
 #
-# $FreeBSD: ports/net/tcpflow/Makefile,v 1.5 2000/01/09 03:31:10 kris Exp $
+# $FreeBSD: ports/net/tcpflow/Makefile,v 1.6 2000/04/09 18:13:38 cpiazza Exp $
 #
 
 PORTNAME=	tcpflow
-PORTVERSION=	0.12
+PORTVERSION=	0.20
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.circlemud.org/pub/jelson/tcpflow/
 
