@@ -2,11 +2,11 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.1.1.1 2000/03/11 20:16:31 asami Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.2 2000/04/13 19:59:28 cpiazza Exp $
 #
 
 PORTNAME=	courier-imap
-PORTVERSION=	0.26
+PORTVERSION=	0.32
 CATEGORIES=	mail
 MASTER_SITES=	http://www.inter7.com/courierimap/
 
@@ -19,6 +19,7 @@ CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
 		--without-authpam --without-authshadow \
 		--without-authvchkpw --without-authcram
 
+MAN1=		maildirmake.1
 MAN8=		authlib.8 makeuserdb.8 userdb.8 userdbpw.8 couriertcpd.8 \
 		deliverquota.8 imapd.8
 
