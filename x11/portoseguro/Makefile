@@ -2,7 +2,7 @@
 # Date created:				2000-10-08
 # Whom:					trevor
 #
-# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.1 2000/10/08 21:47:23 trevor Exp $
+# $FreeBSD: ports/x11/portoseguro/Makefile,v 1.2 2000/10/15 14:33:04 trevor Exp $
 #
 
 PORTNAME=	portoseguro
@@ -18,6 +18,7 @@ USE_AUTOCONF=	yes
 GNU_CONFIGURE=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
+USE_XPM=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 do-install:
