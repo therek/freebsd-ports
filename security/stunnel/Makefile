@@ -2,11 +2,11 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.29 2001/02/22 13:39:58 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stunnel
-PORTVERSION=	3.15
+PORTVERSION=	3.16
 CATEGORIES=	security
 MASTER_SITES=	ftp://stunnel.mirt.net/stunnel/ \
 		http://www.stunnel.org/download/stunnel/src/ \
