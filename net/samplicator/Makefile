@@ -2,12 +2,11 @@
 # Date created:        1 June 2001
 # Whom:                Michael Lyngbol <lyngbol@wheel.dk>
 #
-# $FreeBSD: ports/net/samplicator/Makefile,v 1.1 2001/06/10 04:18:32 markp Exp $
+# $FreeBSD: ports/net/samplicator/Makefile,v 1.2 2001/06/28 12:28:03 kevlo Exp $
 #
 
 PORTNAME=	samplicator
-PORTVERSION=	1.2.1
-PORTREVISION=	1
+PORTVERSION=	1.3.1
 CATEGORIES=	net
 MASTER_SITES=	http://www.switch.ch/tf-tant/floma/sw/samplicator/
 
