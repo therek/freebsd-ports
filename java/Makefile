@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/java/Makefile,v 1.29 2001/06/11 09:39:46 roam Exp $
 #
     SUBDIR += xalan-j
 
@@ -12,6 +12,7 @@
     SUBDIR += infobus
     SUBDIR += jad
     SUBDIR += jaf
+    SUBDIR += janosvm
     SUBDIR += java-cup
     SUBDIR += javamail
     SUBDIR += javavmwrapper
