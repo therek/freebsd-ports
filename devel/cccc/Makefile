@@ -3,7 +3,7 @@
 # Date created:				12 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/cccc/Makefile,v 1.12 2000/04/11 21:27:16 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		cccc
@@ -13,7 +13,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	devel/lang/c++
 DISTNAME=		${PORTNAME}-${PORTVERSION}.src
 
-MAINTAINER=		obrien@FreeBSD.org
+MAINTAINER=		ports@FreeBSD.org
 
 BUILD_DEPENDS=		antlr:${PORTSDIR}/devel/pccts \
 			dlg:${PORTSDIR}/devel/pccts

@@ -3,7 +3,7 @@
 # Date created:			  Fri Oct 4, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/misc/splitvt/Makefile,v 1.11 2000/06/20 01:41:26 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	splitvt
@@ -11,7 +11,7 @@ PORTVERSION=	1.6.5
 CATEGORIES=	misc
 MASTER_SITES=	http://www.devolution.com/~slouken/projects/splitvt/
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 HAS_CONFIGURE=		yes
 ALL_TARGET=
