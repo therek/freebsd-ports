@@ -3,7 +3,7 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/babel/Makefile,v 1.4 1999/08/25 04:47:54 obrien Exp $
 #
 
 DISTNAME=	babel-1.6
@@ -14,6 +14,6 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=     frankch@waru.life.nthu.edu.tw
 
 post-install:
-	@ ${CAT} ${PKGDIR}/MESSAGE | ${SED} -e 's:/usr/local:${PREFIX}:'
+	@ ${CAT} ${PKGMESSAGE} | ${SED} -e 's:/usr/local:${PREFIX}:'
 
 .include <bsd.port.mk>

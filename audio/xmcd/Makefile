@@ -3,7 +3,7 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD: ports/audio/xmcd/Makefile,v 1.22 1999/08/25 04:36:24 obrien Exp $
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.23 1999/09/27 01:56:44 steve Exp $
 #
 
 DISTNAME=	xmcd-2.5
@@ -30,7 +30,7 @@ post-patch:
 		> ${WRKSRC}/xmcd_d/XMcd.ad
 
 post-install:
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 	@${CP} ${WRKSRC}/xmcd_d/XMcd.ad ${PREFIX}/lib/X11/app-defaults/XMcd
 
 .include <bsd.port.mk>

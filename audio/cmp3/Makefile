@@ -3,7 +3,7 @@
 # Date created:        10 April 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/cmp3/Makefile,v 1.6 1999/08/25 04:35:24 obrien Exp $
 #
 
 DISTNAME=	cmp3-2.0pre3
@@ -29,9 +29,7 @@ do-install:
 .endif
 
 post-install:
-.if !defined(NOPORTDOCS)
 	@${SED} 's,PREFIX,${PREFIX},' ${PKGDIR}/MESSAGE > ${WRKSRC}/MESSAGE
-	@${CAT} ${WRKSRC}/MESSAGE
-.endif
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

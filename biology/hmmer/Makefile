@@ -3,7 +3,7 @@
 # Date created:		June 29 1998
 # Whom:			barnhart@genetics.wustl.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/hmmer/Makefile,v 1.5 1999/08/25 04:47:57 obrien Exp $
 #
 
 DISTNAME=	hmmer-2.1.1
@@ -32,6 +32,6 @@ post-install:
 	${MKDIR} ${PREFIX}/share/doc/hmmer
 	${INSTALL_MAN} ${WRKSRC}/Userguide/Userguide.ps ${PREFIX}/share/doc/hmmer
 .endif
-	@ ${CAT} ${PKGDIR}/MESSAGE
+	@ ${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

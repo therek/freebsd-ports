@@ -3,7 +3,7 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.29 1999/12/01 19:22:23 kris Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.30 2000/01/07 13:07:00 asami Exp $
 #
 
 DISTNAME=	hylafax-v4.0pl2
@@ -63,6 +63,6 @@ post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/hylafax.sh.sample ]; then	\
 		${CP} ${FILESDIR}/hylafax.sh.sample ${PREFIX}/etc/rc.d;	\
 	fi
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

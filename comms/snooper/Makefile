@@ -3,7 +3,7 @@
 # Date created:		4 May 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/comms/snooper/Makefile,v 1.5 1999/08/25 05:12:39 obrien Exp $
+# $FreeBSD: ports/comms/snooper/Makefile,v 1.6 1999/12/02 03:24:21 itojun Exp $
 #
 
 DISTNAME=	snooper-19991202
@@ -19,6 +19,6 @@ HAS_CONFIGURE=	yes
 post-install:
 	${MKDIR} ${PREFIX}/share/doc/snooper
 	${INSTALL_DATA} ${WRKSRC}/../README ${PREFIX}/share/doc/snooper
-	${CAT} ${PKGDIR}/MESSAGE
+	${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

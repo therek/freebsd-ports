@@ -3,7 +3,7 @@
 # Date created:				16 March 1999
 # Whom:					Rod Taylor <rod@zort.on.ca>
 #
-# $FreeBSD: ports/audio/xhippo/Makefile,v 1.6 1999/11/05 03:42:13 cpiazza Exp $
+# $FreeBSD: ports/audio/xhippo/Makefile,v 1.7 1999/11/05 22:03:06 billf Exp $
 #
 
 DISTNAME=	xhippo-2.0
@@ -28,6 +28,6 @@ post-install:
 	fi
 	${INSTALL_SCRIPT} ${WRKSRC}/xhippo.config \
 		${PREFIX}/etc/xhippo.config.default
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>

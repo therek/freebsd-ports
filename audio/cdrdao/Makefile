@@ -3,7 +3,7 @@
 # Date created:         7 April 1999
 # Whom:                 futatuki
 #
-# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.12 1999/11/01 02:04:24 steve Exp $
+# $FreeBSD: ports/audio/cdrdao/Makefile,v 1.13 2000/01/22 23:43:13 kris Exp $
 #
 # If you don't want to use Joerg Schilling's SCSI library,
 # set DONT_USE_SCGLIB = yes
@@ -77,6 +77,6 @@ post-install:
 	Release-1.1.0 Release-1.1.2 Release-1.1.3
 	@${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/doc/cdrdao/
 .endfor
-	@${CAT} ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
