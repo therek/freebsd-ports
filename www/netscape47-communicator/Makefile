@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.68 2000/07/28 23:12:47 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.69 2000/07/30 01:04:31 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -21,8 +21,12 @@ MASTER_SITES=	ftp://ftp.netscape.com/pub/communicator/english/${NETSCAPE_DIST_SU
 DISTFILES=	${BROWSER}-v474-us.${NETSCAPE_DIST_TAG}.tar.gz
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
-WRKSRC?=	${WRKDIR}/${BROWSER}-v474.${NETSCAPE_DIST_TAG}
+WRKSRC=		${WRKDIR}/${BROWSER}-v474.${NETSCAPE_DIST_TAG}
 ONLY_FOR_ARCHS?=	i386 alpha
+
+.if ${ARCH} == "alpha" && !defined(BROWSER)
+PLIST=		${PKGDIR}/PLIST.alpha
+.endif
 
 .if ${ARCH} == "alpha"
 NETSCAPE_DIST_ARCH=	supported/dec_unix40
