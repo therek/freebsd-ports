@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.565 2001/06/30 12:26:52 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.566 2001/07/03 00:10:12 lioux Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -138,6 +138,7 @@
     SUBDIR += icqlib
     SUBDIR += icqlib0
     SUBDIR += icqnix
+    SUBDIR += icukrell
     SUBDIR += ip-tun
     SUBDIR += ipcad
     SUBDIR += ipcalc
