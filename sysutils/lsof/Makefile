@@ -3,7 +3,7 @@
 # Date created:			  Sat July 20, 1996
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.87 2001/06/15 23:57:14 obrien Exp $
+# $FreeBSD: ports/sysutils/lsof/Makefile,v 1.88 2001/06/16 00:06:56 obrien Exp $
 #
 
 PORTNAME=	lsof
@@ -66,7 +66,7 @@ do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/scripts/* ${PREFIX}/share/lsof
 	@${CHMOD} 0444 ${PREFIX}/share/lsof/00*
 
-if !exists(${FREEBSD_SYS}/miscfs/fdesc/fdesc.h)
+.if !exists(${FREEBSD_SYS}/miscfs/fdesc/fdesc.h)
 post-install:
 	@${ECHO} "************************************************************"
 	@${ECHO} "*                      W a r n i n g                       *"
