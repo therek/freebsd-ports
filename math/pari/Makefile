@@ -2,7 +2,7 @@
 # Date created:		19 January 1999
 # Whom:	Yoshiaki UCHIKAWA <yoshiaki@kt.rim.or.jp>
 #
-# $FreeBSD: ports/math/pari/Makefile,v 1.17 2000/07/16 13:58:34 alex Exp $
+# $FreeBSD: ports/math/pari/Makefile,v 1.18 2000/09/24 03:38:06 kris Exp $
 #
 
 PORTNAME=	pari
@@ -30,7 +30,7 @@ MLINKS=		gp.1 pari.1
 
 HAVE_EMACS!=	which emacs || echo nope
 .if ${HAVE_EMACS} != "nope"
-PLIST=		${PKGDIR}/PLIST.emacs
+PLIST=		${PKGDIR}/pkg-plist.emacs
 .endif
 
 .include <bsd.port.mk>
