@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-fm/nautilus/files/patch-libnautilus-private::nautilus-monitor.c,v 1.1 2001/12/08 00:58:06 sobomax Exp $
 
 --- libnautilus-private/nautilus-monitor.c	2001/12/07 22:54:34	1.1
 +++ libnautilus-private/nautilus-monitor.c	2001/12/07 23:10:06
