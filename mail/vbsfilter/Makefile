@@ -2,7 +2,7 @@
 # Date created:				10.Mar 2001
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/vbsfilter/Makefile,v 1.5 2001/08/01 10:47:45 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vbsfilter
@@ -21,7 +21,14 @@ CTARGETS+=	vbsfilter-${PORTVERSION}
 CFLAGS+=	-Wall -I$(LOCALBASE)/include ${PTHREAD_CFLAGS:S=""==}
 FLAGS+=		${PTHREAD_LIBS}
 LDFLAGS+=	-L$(LOCALBASE)/lib
+
+.include <bsd.port.pre.mk>
+
+.if exists(${LOCALBASE}/include/libmilter/mfdef.h)
+LIBS+=		-lmilter -lsm -lsmutil
+.else
 LIBS+=		-lmilter -lsmutil
+.endif
 
 .if defined(BATCH)
 SENDMAIL_WITH_MILTER=	yes
@@ -60,4 +67,4 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/vbsfilter.sh \
 		${PREFIX}/etc/rc.d/vbsfilter.sh.sample
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
