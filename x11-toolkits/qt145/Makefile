@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.50 2000/10/30 15:15:23 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.51 2001/01/07 17:49:51 will Exp $
 #
 
 PORTNAME=	qt
@@ -21,7 +21,13 @@ NO_LATEST_LINK=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
-MAKE_ENV+=	QTDIR=${WRKSRC} CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" CC="${CC}"
+.if defined(MAKE_JOBS)
+MAKE_ARGS+=	MAKE="${GMAKE} -j${MAKE_JOBS}"
+.else
+MAKE_ARGS+=	MAKE="${GMAKE} -j2"
+.endif
+MAKE_ENV+=	QTDIR=${WRKSRC} CXX="${CXX}" \
+		CXXFLAGS="${CXXFLAGS} -frerun-cse-after-loop" CC="${CC}"
 
 VER_MAJ=	3
 VER_MIN=	0
@@ -50,7 +56,7 @@ post-patch:
 post-configure:
 	@${PERL} -pi -e "s:g\+\+:${CXX}:g ; \
 		s:/usr/X11R6:${PREFIX}:g ; \
-		s:%%CXXFLAGS%%:${CXXFLAGS}:g ; \
+		s:%%CXXFLAGS%%:${CXXFLAGS} -frerun-cse-after-loop:g ; \
 		s:%%VERSION%%:${VERSION}:g" ${WRKSRC}/configs/freebsd-g++-${STATIC}
 	@(cd ${WRKSRC} && ${SETENV} ${MAKE_ENV} ${GMAKE} freebsd-g++-${STATIC})
 
