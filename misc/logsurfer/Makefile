@@ -2,7 +2,7 @@
 # Date created:		28 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/misc/logsurfer/Makefile,v 1.8 2001/08/17 17:58:30 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	logsurfer
@@ -10,6 +10,7 @@ PORTVERSION=	1.5a
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.cert.dfn.de/pub/tools/audit/logsurfer/ \
 		ftp://ftp.tuwien.ac.at/infosys/security/dfn/tools/audit/logsurfer/
+MASTER_SITE_SUBDIR=	. old
 EXTRACT_SUFX=	.tar
 
 MAINTAINER=	shanee@augusta.de
