@@ -2,7 +2,7 @@
 # Date created:				August 25, 1999
 # Whom:					Oleg Kiselyov <oleg@pobox.com>
 #
-# $FreeBSD: ports/math/linalg/Makefile,v 1.2 2000/04/14 07:20:14 asami Exp $
+# $FreeBSD: ports/math/linalg/Makefile,v 1.3 2000/04/29 21:46:08 kris Exp $
 #
 
 PORTNAME=	linalg
@@ -17,7 +17,9 @@ ALL_TARGET=	lib
 INSTALL_TARGET=	lib
 USE_GMAKE=	yes
 
-BROKEN=		"Tries to run eg++"
+post-patch:
+	@( cd ${WRKSRC}; ${SED} -e 's/%%CXXFLAGS%%/${CXXFLAGS}/g' \
+	    -e 's/%%CXX%%/${CXX}/g' c++ > c++.sed; mv c++.sed c++; ${CHMOD} +x c++ )
 
 post-install:
 	$(INSTALL_DATA) ${WRKSRC}/libla.a ${PREFIX}/lib
