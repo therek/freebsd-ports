@@ -3,17 +3,17 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.20 1999/10/06 03:31:05 nakai Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.21 1999/11/16 03:41:41 nakai Exp $
 #
 
 DISTNAME=	xfce-3.2.0
 CATEGORIES=	x11-wm
-MASTER_SITES=	http://www.xfce.org/archive/ \
-		http://www.baysurf.net/linux/xfce/archive/
+MASTER_SITES=	http://www.xfce.org/archive/
 
 MAINTAINER=	nakai@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
+		Imlib.5:${PORTSDIR}/graphics/imlib \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
