@@ -2,7 +2,7 @@
 # Date created:			21 Sept 1996
 # Whom:				Pedro
 #
-# $FreeBSD: ports/textproc/isearch/Makefile,v 1.12 2001/08/06 14:24:26 ijliao Exp $
+# $FreeBSD: ports/textproc/isearch/Makefile,v 1.13 2001/08/23 20:21:52 kris Exp $
 #
 
 PORTNAME=	isearch
@@ -11,7 +11,7 @@ CATEGORIES=	textproc databases
 MASTER_SITES=	http://www.etymon.com/pub/Isearch/
 DISTNAME=	Isearch-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	pmarquis@pobox.com
 
 GNU_CONFIGURE= yes
 
