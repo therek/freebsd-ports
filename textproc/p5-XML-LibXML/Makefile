@@ -2,11 +2,11 @@
 # Date created:		28 May 2001
 # Whom:			Sergey Skvortsov <skv@protey.ru>
 #
-# $FreeBSD: ports/textproc/p5-XML-LibXML/Makefile,v 1.1 2001/05/29 10:40:48 ijliao Exp $
+# $FreeBSD: ports/textproc/p5-XML-LibXML/Makefile,v 1.2 2001/07/10 01:31:59 dwcjr Exp $
 #
 
 PORTNAME=	XML-LibXML
-PORTVERSION=	0.92
+PORTVERSION=	0.97
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
@@ -21,7 +21,9 @@ CONFIGURE_ARGS=	INC='-I${LOCALBASE}/include -I${LOCALBASE}/include/libxml2'
 
 MAN3=		XML::LibXML::Element.3 XML::LibXML::CDATASection.3 \
 		XML::LibXML::Comment.3 XML::LibXML::Text.3 XML::LibXML.3 \
-		XML::LibXML::Node.3 XML::LibXML::Document.3
+		XML::LibXML::Node.3 XML::LibXML::Document.3 \
+		XML::LibXML::Dtd.3 XML::LibXML::Namespace.3 \
+		XML::LibXML::DocumentFragment.3 XML::LibXML::Attr.3
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
