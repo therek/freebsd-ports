@@ -3,12 +3,12 @@
 # Date created:         08 August 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/lang/python/Makefile,v 1.58 2000/01/13 13:28:08 sumikawa Exp $
+# $FreeBSD: ports/lang/python/Makefile,v 1.59 2000/01/18 09:21:18 tg Exp $
 #
 
 DISTNAME=       py152
 PKGNAME=        python-1.5.2
-CATEGORIES=	lang python tk82
+CATEGORIES=	lang python tk82 ipv6
 MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
 		ftp://ftp.cwi.nl/pub/python/src/
 EXTRACT_SUFX=	.tgz

@@ -3,14 +3,14 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.4 1999/12/07 16:41:49 sumikawa Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.5 2000/01/10 14:48:37 sumikawa Exp $
 #
 
 DISTNAME=	w3m-${W3M_DIST_VER}
 PKGNAME?=	w3m-${W3M_VER}
 W3M_DIST_VER=	991203
 W3M_VER=	${W3M_DIST_VER}
-CATEGORIES?=	www
+CATEGORIES?=	www ipv6
 MASTER_SITES=	ftp://ei5nazha.yz.yamagata-u.ac.jp/w3m/ \
 		ftp://ftp.firedrake.org/w3m/ \
 		http://www.instinct.org/~pgl/w3m/ \

@@ -3,12 +3,12 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.11 1999/10/26 13:20:30 shige Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.12 2000/01/04 11:32:18 shige Exp $
 #
 
 DISTNAME=	emacs-20.5a
 PKGNAME=	emacs-dl-20.5a
-CATEGORIES=	editors
+CATEGORIES=	editors ipv6
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 

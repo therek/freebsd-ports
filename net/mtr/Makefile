@@ -3,11 +3,11 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.16 1999/10/28 08:06:00 mharo Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.17 2000/01/13 07:02:21 sumikawa Exp $
 #
 
 DISTNAME=	mtr-0.41
-CATEGORIES=	net
+CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
 

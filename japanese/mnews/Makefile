@@ -3,12 +3,12 @@
 # Date created:			23 Sep 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mnews/Makefile,v 1.18 2000/01/03 19:36:06 sada Exp $
+# $FreeBSD: ports/japanese/mnews/Makefile,v 1.19 2000/01/09 18:00:23 sumikawa Exp $
 #
 
 DISTNAME=	mnews122
 PKGNAME?=	ja-mnews-1.22
-CATEGORIES=	japanese news
+CATEGORIES=	japanese news ipv6
 MASTER_SITES=	ftp://ftp.leo.chubu.ac.jp/pub/network/mnews/
 
 MAINTAINER=	seiken@ARGV.AC

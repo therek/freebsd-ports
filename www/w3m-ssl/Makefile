@@ -3,11 +3,11 @@
 # Date Created:                12 Oct 1999
 # Whom:                        MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/w3m-ssl/Makefile,v 1.1.1.1 1999/11/21 20:54:44 sada Exp $
 #
 
 PKGNAME=       w3m-ssl-${W3M_VER}
-CATEGORIES=    www
+CATEGORIES=    www ipv6
 
 MASTERDIR=     ${.CURDIR}/../../www/w3m
 PKGDIR=        ${.CURDIR}/pkg
