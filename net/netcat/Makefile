@@ -3,19 +3,24 @@
 # Date created:			  Thur Nov 21, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/netcat/Makefile,v 1.11 2000/11/11 06:03:31 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netcat
 PORTVERSION=	1.10
-CATEGORIES=	net
+PORTREVISION=	1
+CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://coast.cs.purdue.edu/pub/tools/unix/netutils/netcat/  \
 		ftp://ftp.cuhk.edu.hk/pub/packages/security/purdue/netutils/netcat/  \
 		http://www.planetmirror.com/pub/lprng/TOOLS/
 DISTNAME=	nc110
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	obrien@FreeBSD.org
+PATCH_SITES=	ftp://sith.mimuw.edu.pl/pub/users/baggins/IPv6/
+PATCHFILES=	nc-v6-20000918.patch.gz
+PATCH_DIST_STRIP=	-p1
+
+MAINTAINER=	sumikawa@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	freebsd
