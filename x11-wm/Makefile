@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.27 1999/12/06 00:51:10 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.28 2000/01/16 15:59:27 vanilla Exp $
 #
 
     SUBDIR += 9menu
@@ -28,6 +28,7 @@
     SUBDIR += olvwm
     SUBDIR += piewm
     SUBDIR += qvwm
+    SUBDIR += sapphire
     SUBDIR += sawmill
     SUBDIR += scwm
     SUBDIR += toolbox
