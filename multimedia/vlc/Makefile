@@ -2,11 +2,11 @@
 # Date created:		3rd August 2001
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/graphics/vlc/Makefile,v 1.5 2001/08/10 11:35:16 brian Exp $
+# $FreeBSD: ports/graphics/vlc/Makefile,v 1.6 2001/08/12 09:44:15 brian Exp $
 #
 
 PORTNAME=	vlc
-PORTVERSION=	0.2.82
+PORTVERSION=	0.2.83
 PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.videolan.org/pub/videolan/vlc/${PORTVERSION}/ \
