@@ -2,7 +2,7 @@
 # Date created:		1999-10-24
 # Whom:			Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/shells/ksh93/Makefile,v 1.4 2000/04/21 08:19:24 mharo Exp $
+# $FreeBSD: ports/shells/ksh93/Makefile,v 1.5 2000/04/24 01:40:31 will Exp $
 #
 # ast-base-99 is linked dynamically for BSD/OS and will not work
 
@@ -14,7 +14,7 @@ CATEGORIES=		shells
 DISTNAME=		ast-base-98.bsd.i386
 EXTRACT_SUFX=		.tgz
 
-MAINTAINER=		naddy@mips.rhein-neckar.de
+MAINTAINER=		naddy@mips.inka.de
 
 ONLY_FOR_ARCHS=		i386
 RESTRICTED=		"Requires user to register with AT&T."

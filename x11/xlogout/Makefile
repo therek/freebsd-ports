@@ -2,7 +2,7 @@
 # Date created:                1998-11-06
 # Whom:                        Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/x11/xlogout/Makefile,v 1.2 1999/08/31 02:51:06 peter Exp $
+# $FreeBSD: ports/x11/xlogout/Makefile,v 1.3 2000/04/13 19:10:44 cpiazza Exp $
 #
 
 PORTNAME=	xlogout
@@ -11,7 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.tu-darmstadt.de/pub/X11/other/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	naddy@mips.rhein-neckar.de
+MAINTAINER=	naddy@mips.inka.de
 
 WRKSRC=		${WRKDIR}/xlogout
 USE_IMAKE=	yes
