@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.549 2004/10/23 10:55:37 clement Exp $
+# $FreeBSD: ports/MOVED,v 1.550 2004/10/24 16:02:51 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1284,7 +1284,6 @@ games/hlserver-snow||2004-10-23|current version does not work with FreeBSD
 games/hlserver-svencoop||2004-10-23|current version does not work with FreeBSD
 games/hlserver-trainhunters||2004-10-23|current version no longer available
 games/utserver-asu||2004-10-23|checksum failure
-graphics/giram||2004-10-23|build failure
 graphics/ruby-gdchart||2004-10-23|build failure
 hebrew/pine||2004-10-23|contained serious vulnerabilities
 mail/cyrus|cyrus-imapd22|2004-10-23|contained serious vulnerabilities
