@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.214 1999/08/26 04:04:43 asami Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.215 1999/08/29 18:23:17 sada Exp $
 #
 
     SUBDIR += Canna
@@ -62,6 +62,7 @@
     SUBDIR += jgv
     SUBDIR += jhd
     SUBDIR += jls
+    SUBDIR += jpilot
     SUBDIR += jtex209-ascii
     SUBDIR += jtex209-both
     SUBDIR += jtex209-ntt
