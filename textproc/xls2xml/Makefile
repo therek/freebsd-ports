@@ -2,7 +2,7 @@
 # Date created:				4 November 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xls2xml/Makefile,v 1.6 2000/06/16 21:52:04 asami Exp $
+# $FreeBSD: ports/textproc/xls2xml/Makefile,v 1.7 2000/10/23 08:38:29 sobomax Exp $
 #
 
 PORTNAME=	xls2xml
@@ -18,6 +18,7 @@ LIB_DEPENDS=	cole.2:${PORTSDIR}/textproc/cole \
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib -lcole"
 
 .include <bsd.port.mk>
