@@ -1,8 +1,9 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.26 2000/07/04 07:56:53 sobomax Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.27 2000/07/29 17:48:17 nbm Exp $
 #
 
     SUBDIR += abacus
     SUBDIR += aspostit
+    SUBDIR += biblereader
     SUBDIR += bulb
     SUBDIR += cal
     SUBDIR += cbb
