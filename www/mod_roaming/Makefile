@@ -2,11 +2,12 @@
 # Date created:			11 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_roaming/Makefile,v 1.1 2000/08/11 15:51:03 knu Exp $
+# $FreeBSD: ports/www/mod_roaming/Makefile,v 1.2 2000/08/11 16:12:27 knu Exp $
 #
 
 PORTNAME=	mod_roaming
 PORTVERSION=	1.0.2
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://www.klomp.org/mod_roaming/
 
@@ -24,13 +25,14 @@ do-build:
 	${APXS} -c mod_roaming.c
 
 do-install:
-	${APXS} -i -A -n roaming ${WRKSRC}/mod_roaming.so
+	${APXS} -i -n roaming ${WRKSRC}/mod_roaming.so
+	${INSTALL_DATA} ${FILESDIR}/httpd.conf.${PORTNAME} ${PREFIX}/etc/apache/
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/mod_roaming
+	${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
 .for f in ${DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/mod_roaming/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${PREFIX}/share/doc/${PORTNAME}/
 .endfor
 .endif
-	${CAT} ${PKGMESSAGE}
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
