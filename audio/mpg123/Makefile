@@ -2,7 +2,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.27 2001/02/13 15:00:41 sobomax Exp $
 #
 
 PORTNAME=	mpg123
@@ -21,7 +21,7 @@ PATCHFILES=	mpg123-059r-v6-20000713b.diff.gz \
 		l3.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	jkoshy@freebsd.org
+MAINTAINER=	sobomax@freebsd.org
 
 WANT_ESOUND=	yes
 
