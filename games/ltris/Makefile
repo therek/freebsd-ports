@@ -2,20 +2,20 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/ltris/Makefile,v 1.1 2000/10/19 16:15:34 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ltris
-PORTVERSION=	001115
+PORTVERSION=	010310
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	lgames
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
 
-SDL_CONFIG?=	${LOCALBASE}/bin/sdl-config
+SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
