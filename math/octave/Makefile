@@ -3,10 +3,10 @@
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.24 1999/12/29 08:54:15 steve Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.25 2000/01/21 21:26:40 chuckr Exp $
 #
 
-DISTNAME=	octave-2.0.15
+DISTNAME=	octave-2.0.16
 CATEGORIES=	math
 #MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/
 MASTER_SITES=	ftp://ftp.che.wisc.edu/pub/octave/ \
@@ -24,7 +24,7 @@ GNU_HOST=	${ARCH}-portbld-freebsd${OSREL}
 .else
 GNU_HOST=	${ARCH}-portbld-freebsdaout${OSREL}
 .endif
-OCTAVE_VERSION=	2.0.15
+OCTAVE_VERSION=	2.0.16
 PLIST_SUB=	OCTAVE_VERSION=${OCTAVE_VERSION} GNU_HOST=${GNU_HOST}
 
 USE_GMAKE=	yes
