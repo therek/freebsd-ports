@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/graphics/feh/pkg-plist,v 1.4 2002/10/06 17:49:58 ijliao Exp $
+@comment $FreeBSD: ports/graphics/feh/pkg-plist,v 1.5 2002/11/06 17:15:31 ijliao Exp $
 bin/cam
-bin/gen_cam_menu.sh
 bin/feh
+bin/gen_cam_menu.sh
 %%PORTDOCS%%share/doc/feh/AUTHORS
 %%PORTDOCS%%share/doc/feh/ChangeLog
 %%PORTDOCS%%share/doc/feh/README
