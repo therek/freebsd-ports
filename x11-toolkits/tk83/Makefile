@@ -2,15 +2,15 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.42 2000/10/08 03:07:41 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tk83/Makefile,v 1.43 2001/01/16 17:33:18 sobomax Exp $
 #
 
 PORTNAME=	tk
-PORTVERSION=	8.3.1
+PORTVERSION=	8.3.2
 CATEGORIES=	x11-toolkits tk83
-MASTER_SITES=	ftp://ftp.neosoft.com/pub/tcl/sorted/packages-8.0/devel/ \
-		http://www.neosoft.com/tcl/ftparchive/sorted/packages-8.0/devel/
-DISTNAME=	${PORTNAME}${PORTVERSION}plus
+MASTER_SITES=	${MASTER_SITE_TCLTK}
+MASTER_SITE_SUBDIR=	tcl8_3
+DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	jseger@FreeBSD.org
 
