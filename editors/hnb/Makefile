@@ -2,11 +2,11 @@
 # Date created:				Fri Jul  6 05:37:14 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/editors/hnb/Makefile,v 1.1 2001/07/06 16:19:07 kevlo Exp $
+# $FreeBSD: ports/editors/hnb/Makefile,v 1.2 2001/09/08 00:10:45 petef Exp $
 #
 
 PORTNAME=	hnb
-PORTVERSION=	1.8.0
+PORTVERSION=	1.8.1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
