@@ -2,7 +2,7 @@
 # Date created:				2000-09-18
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/wrapper/Makefile,v 1.6 2000/11/03 22:03:31 trevor Exp $
+# $FreeBSD: ports/x11/wrapper/Makefile,v 1.7 2001/05/30 15:23:57 sf Exp $
 #
 
 PORTNAME=	wrapper
@@ -20,7 +20,7 @@ USE_X_PREFIX=	yes
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 3
-FORBIDDEN=	This port is for XFree86-4.
+FORBIDDEN=	This port is for XFree86-4
 .endif
 
 do-fetch:
