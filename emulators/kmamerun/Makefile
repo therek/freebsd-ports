@@ -2,7 +2,7 @@
 # Date created:		24 Nov 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/emulators/kmamerun/Makefile,v 1.8 2001/04/03 08:14:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kmamerun
@@ -15,6 +15,8 @@ MAINTAINER=	ports@freebsd.org
 RUN_DEPENDS=	xmame:${PORTSDIR}/emulators/xmame
 
 USE_KDELIBS_VER=1
-USE_AUTOCONF=	yes
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	CPPFLAGS=-I${LOCALBASE}/include \
+		LDFLAGS="-L${LOCALBASE}/lib"
 
 .include <bsd.port.mk>
