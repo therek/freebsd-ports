@@ -2,12 +2,11 @@
 # Date created:		Sun Aug 26 14:45:12 CEST 2001
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ddclient/Makefile,v 1.2 2001/08/26 17:53:53 dirk Exp $
+# $FreeBSD: ports/net/ddclient/Makefile,v 1.3 2001/08/26 22:28:39 dirk Exp $
 #
 
 PORTNAME=	ddclient
-PORTVERSION=	3.5.1
-PORTREVISION=	1
+PORTVERSION=	3.5.4
 CATEGORIES=	net
 MASTER_SITES=	http://burry.ca:4141/ddclient/
 
