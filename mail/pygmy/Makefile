@@ -2,11 +2,11 @@
 # Date created:				15 August 2000
 # Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/pygmy/Makefile,v 1.6 2000/11/10 09:03:17 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pygmy
-PORTVERSION=	0.4.5
+PORTVERSION=	0.5.2
 CATEGORIES=	mail python gnome
 MASTER_SITES=	http://pygmy.sourceforge.net/
 
@@ -27,7 +27,9 @@ do-install:
 	${MKDIR} ${PREFIX}/share/pygmy/icons
 	${INSTALL_DATA} ${WRKSRC}/*.pyo ${WRKSRC}/*.pyc ${PREFIX}/share/pygmy
 	${INSTALL_DATA} ${WRKSRC}/icons/* ${PREFIX}/share/pygmy/icons
-	${INSTALL_SCRIPT} ${WRKSRC}/pygmy ${PREFIX}/share/pygmy
-	${LN} -sf ${PREFIX}/share/pygmy/pygmy ${PREFIX}/bin/pygmy
+	${INSTALL_DATA} ${WRKSRC}/pygmy ${PREFIX}/share/pygmy
+	@printf "#!/bin/sh\n${PYTHON_CMD} ${PREFIX}/share/pygmy/pygmy" > \
+		${WRKDIR}/pygmy.sh
+	${INSTALL_SCRIPT} ${WRKDIR}/pygmy.sh ${PREFIX}/bin/pygmy
 
 .include <bsd.port.mk>
