@@ -2,11 +2,11 @@
 # Date created:				5 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/ftpcopy/Makefile,v 1.4 2000/10/05 08:11:47 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftpcopy
-PORTVERSION=	0.3.3
+PORTVERSION=	0.3.5
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.ohse.de/uwe/ftpcopy/
 
