@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.513 2001/04/07 05:09:04 will Exp $
+# $FreeBSD: ports/net/Makefile,v 1.514 2001/04/07 05:39:16 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -262,6 +262,7 @@
     SUBDIR += ppxp
     SUBDIR += priss
     SUBDIR += proxy
+    SUBDIR += proxy-suite
     SUBDIR += pvm
     SUBDIR += pvm++
     SUBDIR += queso
