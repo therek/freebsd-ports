@@ -2,22 +2,26 @@
 # Date created:		10 Dec 1999
 # Whom:			Peter Jones <p@dancris.com>
 #
-# $FreeBSD: ports/graphics/chbg/Makefile,v 1.2 2000/04/13 06:28:07 obrien Exp $
+# $FreeBSD: ports/graphics/chbg/Makefile,v 1.3 2000/10/05 06:57:36 reg Exp $
 #
 
 PORTNAME=	chbg
-PORTVERSION=	0.8.1
+PORTVERSION=	1.2
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.idata.sk/~ondrej/sw/
-DISTNAME=	${PORTNAME}-0.8pl1
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		http://www.idata.sk/~ondrej/sw/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	p@dancris.com
 
+USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 USE_IMLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+MAN1=		chbg.1
 
 .include <bsd.port.mk>
