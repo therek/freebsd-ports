@@ -2,7 +2,7 @@
 # Date created:		10 August 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.13 2000/02/18 03:36:27 jedgar Exp $
+# $FreeBSD: ports/games/wmtimebomb/Makefile,v 1.14 2000/04/14 12:26:49 asami Exp $
 
 PORTNAME=	wmtimebomb
 PORTVERSION=	0.2.0
@@ -18,9 +18,6 @@ LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 WRKSRC=		${WRKDIR}/wmtimebomb.app
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes
-
-post-patch:
-	@${PERL} -pi -e 's|%%LOCALBASE%%|${LOCALBASE}|g' ${WRKSRC}/Imakefile
 
 post-install:
 	@${MKDIR} ${PREFIX}/lib/X11/wmtimebomb
