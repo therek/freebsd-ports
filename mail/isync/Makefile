@@ -2,12 +2,12 @@
 # Date created:		2000-12-23
 # Whom:			eivind
 #
-# $FreeBSD: ports/mail/isync/Makefile,v 1.1 2001/01/02 10:38:34 eivind Exp $
+# $FreeBSD$
 
 PORTNAME=	isync
-PORTVERSION=	0.5
+PORTVERSION=	0.7
 CATEGORIES=	mail
-MASTER_SITES=	http://www.sigpipe.org/isync/
+MASTER_SITES=	http://www.sigpipe.org:8080/isync/
 
 MAINTAINER=	eivind@FreeBSD.org
 
