@@ -2,7 +2,7 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/smartdoc/Makefile,v 1.1 2001/03/19 10:26:09 kiri Exp $
+# $FreeBSD: ports/textproc/smartdoc/Makefile,v 1.2 2001/03/20 04:55:06 kiri Exp $
 #
 
 PORTNAME=	smartdoc
@@ -15,7 +15,7 @@ DISTNAME=	setup
 EXTRACT_SUFX=	.zip
 DIST_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	kiri@FreeBSD.org
+MAINTAINER=	kunishi@acm.org
 
 BUILD_DEPENDS=	${JDKDIR}/bin/java:${PORTSDIR}/java/jdk12-beta \
 		nkf:${PORTSDIR}/japanese/nkf
