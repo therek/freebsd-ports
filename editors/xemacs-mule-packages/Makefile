@@ -3,7 +3,7 @@
 # Date created:		24 Oct 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/xemacs-mule-packages/Makefile,v 1.1.1.1 1999/11/27 03:28:33 steve Exp $
 #
 
 DISTNAME=	xemacs-mule-packages
@@ -23,12 +23,12 @@ DISTFILES=	\
 		mule-base-1.32-pkg.tar.gz	locale-1.14-pkg.tar.gz \
 		apel-1.15-pkg.tar.gz 		mew-1.08-pkg.tar.gz \
 		skk-1.14-pkg.tar.gz		elib-1.05-pkg.tar.gz \
-		egg-its-1.20-pkg.tar.gz
-#		ps-print-ja-1.01-pkg.tar.gz
+		egg-its-1.20-pkg.tar.gz		ps-print-ja-1.01-pkg.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp
 
 DIST_SUBDIR=	xemacs
+MASTER_SITE_SUBDIR=${DIST_SUBDIR}
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
