@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.48 2001/05/15 17:14:26 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.49 2001/05/16 13:59:16 ade Exp $
 #
 
 PORTNAME=	py-gnome
@@ -24,8 +24,7 @@ USE_GNOME=	yes
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure pygnome/configure pygtk/configure
 CONFIGURE_ARGS=	--with-python=${PYTHON_CMD}				\
-		--with-gnome-config=${X11BASE}/bin/gnome-config		\
-		--without-gtkhtml
+		--with-gnome-config=${X11BASE}/bin/gnome-config
 
 EG_SRC_DIR=	${WRKSRC}/pygnome/examples
 EG_DST_DIR=	${PREFIX}/share/examples/py-gnome
