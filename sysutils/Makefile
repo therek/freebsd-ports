@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.85 1999/11/03 00:59:39 jim Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.86 1999/11/03 20:13:19 jim Exp $
 #
 
     SUBDIR += LPRng
@@ -40,7 +40,6 @@
     SUBDIR += lsof
     SUBDIR += manck
     SUBDIR += mei
-    SUBDIR += mergemaster
     SUBDIR += mkhybrid
     SUBDIR += mkhybrid12
     SUBDIR += mkisofs
