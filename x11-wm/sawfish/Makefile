@@ -3,7 +3,7 @@
 # Date created:        13 September 1999
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.8 2000/02/18 09:14:16 nakai Exp $
+# $FreeBSD: ports/x11-wm/sawmill/Makefile,v 1.9 2000/02/18 13:34:43 nakai Exp $
 #
 
 DISTNAME=	sawmill-0.24
@@ -24,7 +24,7 @@ RUN_DEPENDS=	${LOCALBASE}/libexec/rep/${ARCH}--freebsd${OSREL}/libgtk.so:${PORTS
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
-PLIST_SUB=	GNUHOST=${ARCH}--freebsd${OSREL} ${VERSION}
+PLIST_SUB=	GNUHOST=${ARCH}--freebsd${OSREL} VERSION=${VERSION}
 VERSION=	0.24
 
 USE_X_PREFIX=	yes
