@@ -2,15 +2,15 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.1 2000/07/10 04:32:10 steve Exp $
+# $FreeBSD: ports/devel/i386-rtems-gdb/Makefile,v 1.2 2000/09/18 15:20:51 ade Exp $
 #
 
 PORTNAME=	gdb
 PORTVERSION=	5.0
 PORTREVISION=	2
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
-		http://rtems.thehousleys.net/
+MASTER_SITES=	${MASTER_SITE_GNU}
+MASTER_SITE_SUBDIR=	gdb
 PATCHFILES=	${GDBNAME}-rtems-20000718.diff.gz
 PATCH_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
