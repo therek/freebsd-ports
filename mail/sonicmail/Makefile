@@ -2,7 +2,7 @@
 # Date created:        13 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/sonicmail/Makefile,v 1.1.1.1 2000/09/13 14:56:41 nakai Exp $
+# $FreeBSD: ports/mail/sonicmail/Makefile,v 1.2 2000/10/05 07:17:03 reg Exp $
 #
 
 PORTNAME=	sonicmail
@@ -14,12 +14,5 @@ MAINTAINER=	nakai@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
-
-pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
-		 s|DATADIRNAME=lib|DATADIRNAME=share|g' ${WRKSRC}/configure
-	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
-		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
 .include <bsd.port.mk>
