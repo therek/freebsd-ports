@@ -2,7 +2,7 @@
 # Date created:				Mon Oct 18 12:01:28 EDT 1999
 # Whom:					???#
 #
-# $FreeBSD: ports/net/coda5_server/Makefile,v 1.11 2000/06/29 16:25:06 shafeeq Exp $
+# $FreeBSD: ports/net/coda5_server/Makefile,v 1.12 2000/10/05 22:40:55 shafeeq Exp $
 #
 
 PORTNAME=	coda
@@ -11,14 +11,14 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/coda/src/
 PKGNAMESUFFIX=	-${CODA_SUITE}
 DISTNAME=	coda-${PORTVERSION}
-EXTRACT_SUFX=	.tgz
+EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	coda@cs.cmu.edu
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
 		lwp.2:${PORTSDIR}/devel/lwp \
-		rpc2.2:${PORTSDIR}/devel/rpc2 \
-		rvm.1:${PORTSDIR}/devel/rvm
+		rpc2.4:${PORTSDIR}/devel/rpc2 \
+		rvm.2:${PORTSDIR}/devel/rvm
 
 ALL_TARGET=	coda
 INSTALL_TARGET=	${CODA_SUITE}-install
@@ -28,6 +28,6 @@ USE_GMAKE=	yes
 CONFIGURE_ARGS?=	--sysconfdir=${PREFIX}/etc/rc.d
 
 CODA_SUITE?=	server
-CODA_VERSION?=	5.3.9
+CODA_VERSION?=	5.3.12
 
 .include <bsd.port.mk>

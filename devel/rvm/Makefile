@@ -2,11 +2,11 @@
 # Date created:				Thu Apr  6 21:30:52 EDT 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/rvm/Makefile,v 1.5 2000/06/20 10:02:05 sobomax Exp $
+# $FreeBSD: ports/devel/rvm/Makefile,v 1.6 2000/10/05 22:42:09 shafeeq Exp $
 #
 
 PORTNAME=	rvm
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/rvm/src/
 

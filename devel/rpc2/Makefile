@@ -2,11 +2,11 @@
 # Date created:				Wed Mar 22 19:06:45 EST 2000
 # Whom:					jaharkes
 #
-# $FreeBSD: ports/devel/rpc2/Makefile,v 1.4 2000/06/16 21:50:16 asami Exp $
+# $FreeBSD: ports/devel/rpc2/Makefile,v 1.5 2000/10/05 22:42:09 shafeeq Exp $
 #
 
 PORTNAME=	rpc2
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/
 
