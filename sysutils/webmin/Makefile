@@ -2,7 +2,7 @@
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.57 2001/06/30 08:51:39 olgeni Exp $
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.58 2001/07/22 11:59:16 olgeni Exp $
 #
 
 PORTNAME=	webmin
@@ -29,7 +29,7 @@ post-extract:
 	@if [ "${WEBMIN_MODULES}" != "" ]; then \
 		for webmin_module in ${WEBMIN_MODULES}; do \
 			${ECHO} "===> Unpacking updated module: $${webmin_module}"; \
-			${TAR} xfz ${DISTDIR}/$${webmin_module} -C ${WRKSRC}; \
+			${TAR} --unlink -xzf ${DISTDIR}/$${webmin_module} -C ${WRKSRC}; \
 		done; \
 	fi
 	@find ${WRKSRC} -name "*.bak" | xargs ${RM}
