@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/security/portaudit-db/files/packaudit.sh,v 1.2 2004/06/14 08:04:41 eik Exp $
+# $FreeBSD: ports/security/portaudit-db/files/packaudit.sh,v 1.3 2004/06/14 16:57:08 eik Exp $
 #
 
 AWK=/usr/bin/awk
@@ -104,7 +104,7 @@ cd "$TMPDIR" || exit 1
     }
     {
       if ($4)
-        print $1 FS $2 FS "'"$BASEURL"'" $4 ".html"  FS $4
+        print $1 FS "'"$BASEURL"'" $4 ".html" FS $3 FS $4
       else
         print
     }
