@@ -2,7 +2,7 @@
 # Date created:				18 January 2001
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/view3ds/Makefile,v 1.1 2001/01/18 19:06:25 sobomax Exp $
+# $FreeBSD: ports/graphics/view3ds/Makefile,v 1.2 2001/01/19 08:33:17 sobomax Exp $
 #
 
 PORTNAME=	view3ds
@@ -15,7 +15,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	3ds.0:${PORTSDIR}/graphics/lib3ds
 
-BROKEN=		Currently QT2 port doesn't compile Qgl module :(. Please flame Will Andrews <will@FreeBSD.org>
+BROKEN=		"Currently QT2 port doesn't compile Qgl module :(. Please flame Will Andrews <will@FreeBSD.org>"
 
 USE_X_PREFIX=	yes
 USE_QT2=	yes
