@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.235 1999/12/10 00:08:16 imura Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.236 1999/12/22 15:02:26 kris Exp $
 #
 
     SUBDIR += ElectricFence
@@ -160,6 +160,7 @@
     SUBDIR += qtk
     SUBDIR += re2c
     SUBDIR += rinfo
+    SUBDIR += robodoc
     SUBDIR += scogdb
     SUBDIR += sdcc
     SUBDIR += sdl
