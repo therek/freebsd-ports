@@ -2,7 +2,7 @@
 # Date created:				15 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps/Makefile,v 1.10 2001/02/16 19:48:10 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmps
@@ -24,7 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		SDL_CONFIG="${SDL_CONFIG}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
-pre-patch:
+post-patch:
 	@${PERL} -pi -e "s|-lpthread|${PTHREAD_LIBS}|g" ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
