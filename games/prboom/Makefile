@@ -2,11 +2,11 @@
 # Date created:				10 June 2001
 # Whom:					Jordan DeLong <fracture@allusion.net>
 #
-# $FreeBSD: ports/games/prboom/Makefile,v 1.1 2001/07/10 00:24:46 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	prboom
-PORTVERSION=	2.2.1
+PORTVERSION=	2.2.2
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -23,7 +23,7 @@ SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}" \
-		CFLAGS="-I${LOCALBASE}/include" \
+		CFLAGS+="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 
 MAN5=		boom.cfg.5
