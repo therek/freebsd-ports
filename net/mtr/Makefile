@@ -2,11 +2,12 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.25 2000/07/19 15:05:23 sumikawa Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.26 2000/10/05 06:47:39 reg Exp $
 #
 
 PORTNAME=	mtr
 PORTVERSION=	0.42
+PORTREVISION=	1
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
@@ -35,6 +36,7 @@ CONFIGURE_ARGS+=--disable-ipv6
 USE_XLIB=	yes
 USE_GTK=	yes
 .else
+EXTRA_PATCHES= ${FILESDIR}/kill-gtk
 CONFIGURE_ARGS+=--with-gtk-prefix=/nopath
 .endif
 
