@@ -2,7 +2,7 @@
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.31 2000/10/05 06:57:51 reg Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.32 2000/10/29 17:25:01 vanilla Exp $
 #
 
 PORTNAME=	Gtk
@@ -10,8 +10,8 @@ PORTVERSION= 	0.7004
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
-DISTNAME=	${PORTNAME}-Perl-${PORTVERSION}
 PKGNAMEPREFIX=	p5-
+DISTNAME=	${PORTNAME}-Perl-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
@@ -23,6 +23,6 @@ MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 do-configure:
 	@cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL \
-	--with-gdkimlib --without-gnome CC="${CC}" CCFLAGS="${CFLAGS}"
+	CC="${CC}" CCFLAGS="${CFLAGS}"
 
 .include <bsd.port.mk>
