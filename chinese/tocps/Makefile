@@ -1,14 +1,15 @@
 # Ports collection makefile for:	tocps
-# Version required:	1.0
 # Date created:		Thu Oct 14, 1999
 # Whom:			Peng HaiJie <phj@transfar.com>
 #
-# $FreeBSD: ports/chinese/tocps/Makefile,v 1.1.1.1 1999/11/26 20:38:31 steve Exp $
+# $FreeBSD: ports/chinese/tocps/Makefile,v 1.2 2000/03/19 01:58:47 foxfair Exp $
 #
 
-DISTNAME=	zh-tocps-1.0
+PORTNAME=	tocps
+PORTVERSION=	1.0
 CATEGORIES=	chinese
 MASTER_SITES=	ftp://ftp.cn.FreeBSD.org/pub/ported/
+DISTNAME=	${PKGNAME}
 
 MAINTAINER=	phj@cn.FreeBSD.org
 

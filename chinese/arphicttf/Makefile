@@ -1,14 +1,15 @@
 # New ports collection makefile for:	Arphic Chinese TrueType fonts
-# Version required:	1.0
 # Date created:		13 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.2 1999/11/01 17:53:40 foxfair Exp $
+# $FreeBSD: ports/chinese/arphicttf/Makefile,v 1.3 2000/01/23 14:09:00 foxfair Exp $
 #
 
-DISTNAME=	zh-arphicttf-2.11
+PORTNAME=	arphicttf
+PORTVERSION=	2.11
 CATEGORIES=	chinese x11-fonts
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/
+DISTNAME=	${PKGNAME}
 
 MAINTAINER=	keith@freebsd.sinica.edu.tw
 

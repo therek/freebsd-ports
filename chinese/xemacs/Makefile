@@ -1,13 +1,12 @@
 # New ports collection makefile for:	zh-XEmacs
-# Version required:	20.4
 # Date created:		30 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: outta-port/xemacs20/Makefile,v 1.1 1999/11/01 09:14:51 keith Exp $
+# $FreeBSD: ports/chinese/xemacs/Makefile,v 1.1.1.1 2000/01/04 03:12:23 foxfair Exp $
 #
 
-DISTNAME=	xemacs-20.4
-PKGNAME=	zh-xemacs-20.4
+PORTNAME=	xemacs
+PORTVERSION=	20.4
 CATEGORIES=	chinese editors
 MASTER_SITES=	ftp://ftp.xemacs.org/pub/xemacs/${DISTNAME}/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/${DISTNAME}/ \

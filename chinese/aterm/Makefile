@@ -1,13 +1,12 @@
 # New ports collection makefile for:   zh-aterm
-# Version required:	0.3.6
 # Date created:		26 April 1999
 # Whom:			Chia-Hsing Yu <davidyu@ken.csie.ntu.edu.tw>
 #
-# $FreeBSD: ports/chinese/aterm/Makefile,v 1.5 1999/08/25 04:57:38 obrien Exp $
+# $FreeBSD: ports/chinese/aterm/Makefile,v 1.6 2000/02/08 09:25:55 peter Exp $
 #
 
-DISTNAME=	aterm-0.3.6
-PKGNAME=	zh-aterm-0.3.6
+PORTNAME=	aterm
+PORTVERSION=	0.3.6
 CATEGORIES=	chinese
 MASTER_SITES=	http://members.xoom.com/sashav/aterm/ \
 		http://www.tigr.net/afterstep/as-apps/download/aterm/	\
@@ -30,5 +29,5 @@ post-patch:
 	${CP} ${FILESDIR}/cli_xcin.c ${WRKSRC}/src/
 	${CP} ${FILESDIR}/state.h ${WRKSRC}/src/
 	${CP} ${FILESDIR}/protocol.h ${WRKSRC}/src/
-	
+
 .include <bsd.port.mk>

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	bg5ps
-# Version required:	1.1b2
 # Date created:		17 June 1998
 # Whom:			J.T. Jang (keith@freebsd.sinica.edu.tw)
 #
-# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.3 1999/08/27 21:13:35 mharo Exp $
+# $FreeBSD: ports/chinese/bg5ps/Makefile,v 1.4 1999/12/24 04:10:15 steve Exp $
 #
 
-DISTNAME=	bg5ps-1.1b2
-PKGNAME=	zh-bg5ps-1.1b2
+PORTNAME=	bg5ps
+PORTVERSION=	1.1b2
 CATEGORIES=	chinese print
 MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/keith/ \
 		http://students.washington.edu/~cschin/bg5ps/bg5ps-1.1b2/
