@@ -2,12 +2,12 @@
 # Date created:		19 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/www/kannel/Makefile,v 1.9 2001/03/28 13:09:06 kevlo Exp $
+# $FreeBSD: ports/www/kannel/Makefile,v 1.10 2001/03/29 16:34:51 sobomax Exp $
 
 PORTNAME=	kannel
 PORTVERSION=	1.0.3
 CATEGORIES=	www
-MASTER_SITES=	http://www.kannel.org/download/${PORTVERSION}/
+MASTER_SITES=	http://www.kannel.3glab.org/download/${PORTVERSION}/
 DISTNAME=	gateway-${PORTVERSION}
 
 MAINTAINER=	martti.kuparinen@iki.fi
@@ -16,7 +16,7 @@ LIB_DEPENDS=	xml2:${PORTSDIR}/textproc/libxml2
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
-WRKSRC=		${WRKDIR}/gateway-${PORTVERSION}/
+WRKSRC=		${WRKDIR}/${DISTNAME}/
 CFLAGS+=	${PTHREAD_LIBS}
 CONFIGURE_ARGS+=	--with-malloc=native
 
