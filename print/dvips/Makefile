@@ -3,7 +3,7 @@
 # Date created:         30 September 1994
 # Whom:                 jmz
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/dvips/Makefile,v 1.20 1999/08/31 01:44:39 peter Exp $
 #
 
 DISTNAME=	dvips576
@@ -22,12 +22,13 @@ pre-install:
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/texmf/fonts/vf  ${PREFIX}/share/texmf/fonts/tfm  ${PREFIX}/share/texmf/tex/latex
-	@install -c  -m 644 ${WRKDIR}/dvips576/dvips/*.sty ${PREFIX}/share/texmf/tex/latex
-	@install -c  -m 644 ${WRKDIR}/dvips576/PSlatex/*.sty ${PREFIX}/share/texmf/tex/latex
-	@install -c  -m 644 ${WRKDIR}/dvips576/PStfms/*.tfm ${PREFIX}/share/texmf/fonts/tfm
-	@install -c  -m 644 ${WRKDIR}/dvips576/PSvfs/*.vf ${PREFIX}/share/texmf/fonts/vf
+	@${INSTALL_DATA} ${WRKDIR}/dvips576/dvips/*.sty ${PREFIX}/share/texmf/tex/latex
+	@${INSTALL_DATA} ${WRKDIR}/dvips576/PSlatex/*.sty ${PREFIX}/share/texmf/tex/latex
+	@${INSTALL_DATA} ${WRKDIR}/dvips576/PStfms/*.tfm ${PREFIX}/share/texmf/fonts/tfm
+	@${INSTALL_DATA} ${WRKDIR}/dvips576/PSvfs/*.vf ${PREFIX}/share/texmf/fonts/vf
+	@if [ -f ${WRKDIR}/post-install ]; then ${SH} ${WRKDIR}/post-install; fi
 
 pre-clean:
-	@${RM} -f ${SCRIPTDIR}/post-install
+	@${RM} -f ${WRKDIR}/post-install
 
 .include <bsd.port.mk>
