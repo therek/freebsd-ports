@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.209 2001/02/26 19:24:45 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.210 2001/03/01 09:36:58 sf Exp $
 #
 
     SUBDIR += Maaate
@@ -105,6 +105,7 @@
     SUBDIR += mpg123
     SUBDIR += mpg123.el
     SUBDIR += mpmf20
+    SUBDIR += mq3
     SUBDIR += musicbox
     SUBDIR += musicbrainz
     SUBDIR += mutemix
