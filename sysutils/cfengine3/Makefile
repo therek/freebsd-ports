@@ -2,7 +2,7 @@
 # Date created:		March 16, 1998
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.10 2000/04/22 10:11:45 mharo Exp $
+# $FreeBSD: ports/sysutils/cfengine/Makefile,v 1.11 2000/04/25 20:57:36 jseger Exp $
 #
 
 PORTNAME=	cfengine
@@ -19,7 +19,7 @@ LIB_DEPENDS=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 .endif
 
 CFLAGS+=	-pthread
-GNU_CONFIGURE=yes
+USE_AUTOCONF=yes
 MAKE_ENV=	INSTALL_SCRIPT="${INSTALL_SCRIPT}"
 
 .include <bsd.port.mk>
