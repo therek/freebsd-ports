@@ -2,7 +2,7 @@
 # Date created:         13 Feb 1997
 # Whom:                 Julian Assange
 #
-# $FreeBSD: ports/games/lincity/Makefile,v 1.8 2000/04/14 12:26:01 asami Exp $
+# $FreeBSD: ports/games/lincity/Makefile,v 1.9 2000/08/11 06:34:45 asami Exp $
 #
 
 PORTNAME=       lincity
@@ -17,6 +17,5 @@ BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 USE_XLIB=	yes
 ALL_TARGET=	freebsd
 MAN6=		lincity.6
-MANCOMPRESSED=	no
 
 .include <bsd.port.mk>
