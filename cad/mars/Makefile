@@ -2,7 +2,7 @@
 # Date created:			  Mon Nov 18, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/cad/mars/Makefile,v 1.18 2000/11/07 23:27:56 asami Exp $
+# $FreeBSD: ports/cad/mars/Makefile,v 1.19 2001/01/16 17:30:09 sobomax Exp $
 #
 
 PORTNAME=	mars
@@ -14,7 +14,7 @@ DISTNAME=	MaRS-${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} MaRS-2-doc${EXTRACT_SUFX}
 .endif
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
