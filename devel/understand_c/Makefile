@@ -2,11 +2,11 @@
 # Date created:		01 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/understand_c/Makefile,v 1.10 2001/05/10 03:05:09 lioux Exp $
+# $FreeBSD: ports/devel/understand_c/Makefile,v 1.11 2001/05/19 21:33:07 lioux Exp $
 #
 
 PORTNAME=	understand_c
-PORTVERSION=	1.4.113
+PORTVERSION=	1.4.114
 PORTEPOCH=	1
 CATEGORIES=	devel linux
 MASTER_SITES=	http://www.scitools.com/ftp/pub/download/understand_c/%SUBDIR%/
