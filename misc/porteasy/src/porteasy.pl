@@ -26,7 +26,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.37 2004/03/02 17:00:45 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.38 2004/03/29 15:14:23 des Exp $
 #
 
 use strict;
@@ -337,7 +337,7 @@ sub update_index() {
 	    or bsd::errx(1, "error updating the index file");
     }
     if ($packages && ! -d "$portsdir/packages") {
-	mkdir("$portsdir/packages")
+	mkdir("$portsdir/packages", 0777)
 	    or bsd::errx(1, "error creating the package directory");
     }
     cvs("update", "Mk", "Templates", "Tools")
