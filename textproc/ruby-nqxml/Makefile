@@ -2,11 +2,11 @@
 # Date created:		10 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-nqxml/Makefile,v 1.5 2001/05/17 16:41:51 knu Exp $
+# $FreeBSD: ports/textproc/ruby-nqxml/Makefile,v 1.6 2001/06/19 04:44:35 knu Exp $
 #
 
 PORTNAME=	nqxml
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	textproc ruby
 MASTER_SITES=	http://www.io.com/~jimm/downloads/nqxml/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
