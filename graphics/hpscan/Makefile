@@ -2,7 +2,7 @@
 # Date created:		12 January 1996
 # Whom:			nate
 #
-# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.23 2000/11/23 11:56:06 sobomax Exp $
+# $FreeBSD: ports/graphics/hpscan/Makefile,v 1.24 2001/01/16 17:30:56 sobomax Exp $
 #
 
 PORTNAME=	hpscan
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS
 DISTNAME=	scanner
 
 MAINTAINER=	jkh@FreeBSD.org
+
+BROKEN=		"SCSI low-level interface has changed and this needs re-porting"
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg
 
