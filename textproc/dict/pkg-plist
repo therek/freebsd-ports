@@ -1,3 +1,4 @@
-@comment $FreeBSD: ports/textproc/dict/pkg-plist,v 1.3 2000/11/22 00:17:15 obrien Exp $
+@comment $FreeBSD: ports/textproc/dict/pkg-plist,v 1.4 2003/12/29 10:43:36 dd Exp $
 bin/dict
+bin/dictl
 etc/dict.conf
