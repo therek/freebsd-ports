@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop gkrellmd
-# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.5 2003/08/31 18:48:18 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.6 2003/10/01 18:16:04 ume Exp $
 
 # PROVIDE: gkrellmd
 # REQUIRE: DAEMON
@@ -10,16 +10,16 @@
 #
 # NOTE for FreeBSD 5.0+:
 # If you want this script to start with the base rc scripts
-# move imapd.sh to /etc/rc.d/gkrellmd
+# move gkrellmd.sh to /etc/rc.d/gkrellmd
 
 prefix=%%PREFIX%%
 
-# Define these imapd_* variables in one of these files:
+# Define these gkrellmd_* variables in one of these files:
 #	/etc/rc.conf
 #	/etc/rc.conf.local
 #	/etc/rc.conf.d/gkrellmd
 #
-# DO NOT CHANGE THESE DEFAULT VALUES HERE 
+# DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
 [ -z "$gkrellmd_enable" ] && gkrellmd_enable="NO"	# Enable gkrellmd
 #gkrellmd_program="${prefix}/sbin/gkrellmd"	# Location of gkrellmd
