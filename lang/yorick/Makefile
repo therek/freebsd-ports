@@ -3,7 +3,7 @@
 # Date created:         26 Oct 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/yorick/Makefile,v 1.4 1999/08/25 06:35:40 obrien Exp $
 #
 
 DISTNAME=	yorick-1.4
@@ -18,6 +18,7 @@ PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	giffunip@asme.org
 
+USE_XLIB=	yes
 HAS_CONFIGURE=	yes
 ALL_TARGET=
 MAN1=		yorick.1 gist.1
