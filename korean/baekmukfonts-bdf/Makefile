@@ -2,12 +2,12 @@
 # Date created:		23 Jul 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.12 2000/09/25 12:52:53 cjh Exp $
+# $FreeBSD: ports/korean/baekmukfonts-bdf/Makefile,v 1.13 2000/10/09 15:40:37 cjh Exp $
 #
 
 PORTNAME=	baekmukfonts
 PORTVERSION=	2.0
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	korean x11-fonts
 MASTER_SITES=	ftp://ftp.mizi.com/pub/baekmuk/ \
 		http://zinc.skku.ac.kr/~wkpark/baekmuk/
