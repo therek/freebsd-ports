@@ -2,7 +2,7 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/clanlib/Makefile,v 1.1 2000/09/25 06:58:42 sobomax Exp $
 #
 
 PORTNAME=	clanlib
@@ -35,7 +35,7 @@ ALL_TARGET+=	clanPNG clanGL
 
 .if !defined(WITHOUT_GL)
 pre-install:
-	@cat ${PKGDIR}/PLIST.glx ${PKGDIR}/PLIST > ${PLIST}
+	@cat ${PKGDIR}/pkg-plist.glx ${PKGDIR}/pkg-plist > ${PLIST}
 .endif
 
 .include <bsd.port.mk>
