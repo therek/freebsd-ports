@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-#	$FreeBSD: ports/security/cyrus-sasl/pkg-deinstall,v 1.3 2002/01/17 15:04:35 kevlo Exp $
+#	$FreeBSD: ports/security/cyrus-sasl/pkg-deinstall,v 1.4 2002/05/21 15:08:58 dwcjr Exp $
 #
 # Created by: hetzels@westbend.net
 
@@ -27,6 +27,9 @@ delete_sasldb() {
 delete_user() {
 	if pw usershow cyrus 2>/dev/null 1>&2; then
 		echo "To delete Cyrus user permanently, use 'pw userdel cyrus'"
+	fi
+	if pw groupshow cyrus 2>/dev/null 1>&2; then
+		echo "To delete Cyrus group permanently, use 'pw groupdel cyrus'"
 	fi
 
 }
