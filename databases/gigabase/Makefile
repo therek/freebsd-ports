@@ -2,11 +2,11 @@
 # Date created:			15 August 2000
 # Whom:				Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/gigabase/Makefile,v 1.23 2001/09/23 18:52:03 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gigabase
-PORTVERSION=	2.46
+PORTVERSION=	2.47
 CATEGORIES=	databases
 MASTER_SITES=	http://www.ispras.ru/~knizhnik/
 
