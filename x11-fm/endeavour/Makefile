@@ -2,26 +2,39 @@
 # Date created:		7 Oct 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.8 2001/02/05 21:00:51 olgeni Exp $
+# $FreeBSD: ports/x11-fm/endeavour/Makefile,v 1.9 2001/05/04 21:41:28 ade Exp $
 #
 
 PORTNAME=	endeavour
-PORTVERSION=	1.12
-PORTREVISION=	1
+PORTVERSION=	1.13.0
 CATEGORIES=	x11-fm
-MASTER_SITES=	ftp://fox.mit.edu/pub/xsw/
+MASTER_SITES=	ftp://wolfpack.twu.net/users/wolfpack/
 DISTNAME=	${PORTNAME}${PORTVERSION}
-EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/endeavour
-
-USE_IMLIB=	yes
+USE_BZIP2=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
+USE_IMLIB=	yes
+USE_GMAKE=	yes
+HAS_CONFIGURE=	yes
+CONFIGURE_ARGS=	unix
+MAKE_ARGS=	PREFIX="${PREFIX}" CC="${CC}" CPP="${CXX}" \
+		CFLAGS="${CFLAGS} -D__USE_BSD -DUSE_XSHM -DUSE_IMLIB" \
+		INC_DIRS="`imlib-config --cflags` -I${X11BASE}/include" \
+		LIBS="`imlib-config --libs` -lXpm" \
+		LIB_DIRS="-L${X11BASE}/lib"
+
+pre-patch:
+	@${PERL} -pi -e 's|make |\$$\(MAKE\) |g' ${WRKSRC}/Makefile
+	@find ${WRKSRC}/endeavour -type f | xargs ${PERL} -pi -e \
+		's|#include <malloc.h>||g ; \
+		 s|#include <asm/types.h>||g ; \
+		 s|#include <sys/bitypes.h>||g ; \
+		 s|umode_t|unsigned short|g'
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/endeavour ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/endeavour/endeavour ${PREFIX}/bin
 
 .include <bsd.port.mk>
