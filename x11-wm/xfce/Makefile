@@ -2,11 +2,12 @@
 # Date created:		30 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.46 2001/08/05 19:23:37 nakai Exp $
+# $FreeBSD: ports/x11-wm/xfce/Makefile,v 1.47 2001/08/06 20:52:51 olgeni Exp $
 #
 
 PORTNAME=	xfce
 PORTVERSION=	3.8.6
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.xfce.org/archive/
 
@@ -35,6 +36,8 @@ pre-patch:
 		's|DATADIRNAME=lib|DATADIRNAME=share|g ; \
 		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
+	@${PERL} -pi -e 's|gtk-config|${GTK_CONFIG:T}|g' ${WRKSRC}/xfce/setup.c
+	@${PERL} -pi -e 's|xfplay|internal|g' ${WRKSRC}/other/xfsoundrc.in
 
 pre-build:
 	${LN} -sf ${LOCALBASE}/bin/libtool ${WRKSRC}/libtool
