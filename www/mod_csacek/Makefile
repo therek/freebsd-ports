@@ -2,11 +2,11 @@
 # Date created:				22 Feb 2001
 # Whom:					Milan Salajka <ms@vol.cz>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_csacek/Makefile,v 1.1 2001/03/12 21:53:37 will Exp $
 #
 
 PORTNAME=	mod_csacek
-PORTVERSION=	2.1.5
+PORTVERSION=	2.1.6
 CATEGORIES=	www
 MASTER_SITES=	http://www.csacek.cz/distrib/
 DISTNAME=	${PORTNAME:S/mod_//g}-${PORTVERSION}
@@ -23,7 +23,8 @@ CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--with-target=Apache \
 		--disable-report \
 		--with-templatedir=${PREFIX}/www/data \
-		--disable-compression
+		--disable-compression \
+		--with-apxs=${APXS}
 
 do-install:
 	${APXS} -i -A -n csacek ${WRKSRC}/mod_csacek.so
