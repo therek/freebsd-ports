@@ -2,15 +2,15 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.39 2001/02/14 05:42:00 lioux Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.40 2001/04/17 08:22:45 kris Exp $
 #
 
 PORTNAME=	hylafax
-PORTVERSION=	4.1.b2
-PORTREVISION=	2
+PORTVERSION=	4.1.b3
 CATEGORIES=	comms
 MASTER_SITES=	ftp://ftp.hylafax.org/source/
-DISTNAME=	${PORTNAME}-4.1beta2
+DISTNAME=	${PORTNAME}-4.1beta3
+WRKSRC=		${WRKDIR}/${PORTNAME}-4.1beta2
 
 PATCH_SITES=	http://www.hylafax.org/patches/
 PATCHFILES=	tiff-3.5-interfaces.patch cvtDateTime.patch
