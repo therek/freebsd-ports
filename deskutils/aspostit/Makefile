@@ -2,7 +2,7 @@
 # Date created:        2 January 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/aspostit/Makefile,v 1.1 2000/07/29 17:48:25 nbm Exp $
+# $FreeBSD: ports/deskutils/aspostit/Makefile,v 1.2 2000/08/03 09:22:50 asami Exp $
 #
 
 PORTNAME=	aspostit
@@ -15,7 +15,7 @@ MAINTAINER=	kris@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg/
 
-USE_X_PREFIX=   yes
+USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_GMAKE=	yes
 

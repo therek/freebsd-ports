@@ -2,7 +2,7 @@
 # Date created:		20 Dec 1998
 # Whom:			Ruslan@Shevchenko.Kiev.UA
 #
-# $FreeBSD: ports/devel/doc++/Makefile,v 1.9 2000/07/11 07:59:59 kevlo Exp $
+# $FreeBSD: ports/devel/doc++/Makefile,v 1.10 2000/11/25 10:31:06 asami Exp $
 #
 
 PORTNAME=	doc++
@@ -39,7 +39,7 @@ ADDITIONAL_DOCS=	ClassGraph.class \
 			Intermediate.html \
 			Introduction.html \
 			ManualEntries.html \
-                        ManualEntryFields.html \
+			ManualEntryFields.html \
 			NavigatorButton.class \
 			Quickstart.html \
 			ReferenceManual.html \
@@ -59,7 +59,7 @@ post-install:
 .if !defined(NOPORTSDOCS)
 	${MKDIR} ${PREFIX}/share/doc/doc++
 	for i in $(ADDITIONAL_DOCS); do \
-            ${INSTALL_MAN} ${WRKSRC}/doc/manual/html/$$i ${PREFIX}/share/doc/doc++ ;\
+		${INSTALL_MAN} ${WRKSRC}/doc/manual/html/$$i ${PREFIX}/share/doc/doc++ ;\
 	done
 .endif
 

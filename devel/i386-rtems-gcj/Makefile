@@ -2,14 +2,14 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.7 2000/10/18 21:28:27 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcj/Makefile,v 1.8 2000/12/26 19:29:45 jeh Exp $
 #
 
 PORTNAME=	gcj
 PORTVERSION=	2.95.2
 PORTREVISION=	11
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
+MASTER_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 DISTFILES=	${JAVANAME}.tar.gz ${NEWLIBNAME}.tar.gz
 PATCHFILES=	${JAVANAME}-rtems-20001030.diff.gz \

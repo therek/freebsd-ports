@@ -2,7 +2,7 @@
 # Date created:		29th April, 1997
 # Whom:			Joel Sutton <jsutton@webnet.com.au>
 #
-# $FreeBSD: ports/emulators/atari800/Makefile,v 1.11 2000/10/29 06:31:30 dougb Exp $
+# $FreeBSD: ports/emulators/atari800/Makefile,v 1.12 2000/11/11 06:08:38 kevlo Exp $
 #
 
 PORTNAME=	atari800
@@ -32,7 +32,7 @@ ATARI_XF=	ataribas.rom atariosb.rom atarixl.rom demos1.xfd \
 		demos2.xfd dos25.xfd mydos45d.atr
 ATARI_LIB=	${PREFIX}/share/atari
 SED_CONFIG=	${ATARI_LIB:S/\//\\\//g}
-DOC_FILES= 	BUGS CHANGES CREDITS INSTALL README TODO USAGE
+DOC_FILES=	BUGS CHANGES CREDITS INSTALL README TODO USAGE
 
 MAN1=		atari800.1
 

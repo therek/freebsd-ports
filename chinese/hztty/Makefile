@@ -2,7 +2,7 @@
 # Date created:			  Wed Sep 24, 1997
 # Whom:				  Ada T Lim <ada@not-enough.bandwidth.org>
 #
-# $FreeBSD: ports/chinese/hztty/Makefile,v 1.4 2000/04/13 08:28:04 asami Exp $
+# $FreeBSD: ports/chinese/hztty/Makefile,v 1.5 2001/02/05 14:29:34 olgeni Exp $
 #
 
 PORTNAME=	hztty
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/convert/  \
 
 MAINTAINER=	ada@bsd.org
 
-ALL_TARGET= 	bsd
+ALL_TARGET=	bsd
 MAN1=		hztty.1
 
 do-install:

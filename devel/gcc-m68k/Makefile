@@ -2,13 +2,13 @@
 # Date created:		7 July 1998
 # Whom:			Jerry Hicks <jhicks@glenatl.glenayre.com>
 #
-# $FreeBSD: ports/devel/gcc-m68k/Makefile,v 1.10 2000/06/03 00:41:00 asami Exp $
+# $FreeBSD: ports/devel/gcc-m68k/Makefile,v 1.11 2000/09/23 18:47:28 will Exp $
 #
 
 PORTNAME=	gcc
 PORTVERSION=	2.8.1
 CATEGORIES=	devel
-MASTER_SITES=   ${MASTER_SITE_GNU}
+MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gcc
 PKGNAMEPREFIX=	m68k
 

@@ -2,7 +2,7 @@
 # Date created:                      4 Apr 1996
 # Whom:                              Brent J. Nordquist <bjn@visi.com>
 #
-# $FreeBSD: ports/converters/btoa/Makefile,v 1.8 2000/04/08 23:24:29 mharo Exp $
+# $FreeBSD: ports/converters/btoa/Makefile,v 1.9 2000/06/09 21:58:51 asami Exp $
 #
 
 PORTNAME=	btoa
@@ -22,6 +22,6 @@ MAKEFILE=	Makefile.sun
 MAN1=		btoa.1
 
 # Turn off the default from bsd.port.mk (-p0), which screws things up
-PATCH_DIST_STRIP=  
+PATCH_DIST_STRIP=
 
 .include <bsd.port.mk>

@@ -2,14 +2,14 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-g77/Makefile,v 1.7 2000/10/18 21:34:19 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-g77/Makefile,v 1.8 2000/12/19 16:48:04 jeh Exp $
 #
 
 PORTNAME=	g77
 PORTVERSION=	2.95.2
 PORTREVISION=	11
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
+MASTER_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 DISTFILES=	${F77NAME}.tar.gz ${NEWLIBNAME}.tar.gz
 PATCHFILES=	${F77NAME}-rtems-20001030.diff.gz \

@@ -2,14 +2,14 @@
 # Date created:		22 May 1999
 # Whom:				Nishika <nishika@cheerful.com>
 #
-# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.5 2000/04/17 00:17:34 reg Exp $
+# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.6 2000/10/07 21:49:41 asami Exp $
 #
 
 PORTNAME=	quasi88
 PORTVERSION=	0.3.2
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.117.ne.jp/~show/pc8801/
-EXTRACT_SUFX=   .tgz
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nishika@cheerful.com
 

@@ -2,7 +2,7 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.24 2000/08/26 09:15:05 andreas Exp $
+# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.25 2000/10/23 21:02:43 will Exp $
 #
 
 PORTNAME=	Pg
@@ -15,7 +15,7 @@ PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=   	pq.2:${PORTSDIR}/databases/postgresql7
+LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 USE_PERL5=	yes
 

@@ -2,13 +2,13 @@
 # Date created:		2 May 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.11 2000/09/27 02:54:56 sanpei Exp $
+# $FreeBSD: ports/devel/xxgdb/Makefile,v 1.12 2000/11/22 16:09:07 sada Exp $
 #
 
 PORTNAME=	xxgdb
 PORTVERSION=	1.12
 CATEGORIES=	devel
-MASTER_SITES=   ${MASTER_SITE_XCONTRIB}
+MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 
 MAINTAINER=	ports@FreeBSD.org

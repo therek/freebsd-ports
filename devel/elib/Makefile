@@ -2,7 +2,7 @@
 # Date created:		24 Feb 2000
 # Whom:			OKAZAKI Tetsurou
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/elib-emacs/Makefile,v 1.1 2000/12/10 19:48:21 okazaki Exp $
 #
 
 PORTNAME=	elib
@@ -24,7 +24,7 @@ PORTCLASS?=	master
 
 # emacs port setup
 .if (${PORTCLASS} == "master")
-EMACS_PORT_NAME=  emacs
+EMACS_PORT_NAME=	emacs
 .endif
 
 # target name for make build

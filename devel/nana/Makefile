@@ -2,7 +2,7 @@
 # Date created:         30th May 1999
 # Whom:                 Phil Maker <pjm@gnu.org>
 #
-# $FreeBSD: ports/devel/nana/Makefile,v 1.5 1999/08/25 05:48:48 obrien Exp $
+# $FreeBSD: ports/devel/nana/Makefile,v 1.6 2000/04/11 21:29:12 mharo Exp $
 #
 
 PORTNAME=	nana
@@ -16,6 +16,6 @@ GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
 MAN1=		nana.1 nana-clg.1
-MAN3= 		nana.3 I.3 DI.3 L.3 DL.3 Q.3 Qstl.3
+MAN3=		nana.3 I.3 DI.3 L.3 DL.3 Q.3 Qstl.3
 
 .include <bsd.port.mk>

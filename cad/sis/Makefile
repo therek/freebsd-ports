@@ -2,7 +2,7 @@
 # Date created:         10 October 1997
 # Whom:                 volf@oasis.IAEhv.nl
 #
-# $FreeBSD: ports/cad/sis/Makefile,v 1.10 2000/09/16 18:40:52 ade Exp $
+# $FreeBSD: ports/cad/sis/Makefile,v 1.11 2001/01/12 17:15:14 alex Exp $
 #
 
 PORTNAME=		sis
@@ -10,7 +10,7 @@ PORTVERSION=		1.2.1
 CATEGORIES=		cad
 MASTER_SITES=		ftp://ic.eecs.berkeley.edu/pub/Sis/
 DISTNAME=		${PORTNAME}-1.2
-EXTRACT_SUFX=   	.tar.Z
+EXTRACT_SUFX=		.tar.Z
 
 PATCH_SITES=		ftp://ic.eecs.berkeley.edu/pub/Sis/
 PATCHFILES=		sis-1.2.patch1.Z

@@ -2,14 +2,14 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.6 2000/10/18 21:19:24 jeh Exp $
+# $FreeBSD: ports/devel/i386-rtems-gcc/Makefile,v 1.7 2000/12/18 19:11:41 jeh Exp $
 #
 
 PORTNAME=	gcc
 PORTVERSION=	2.95.2
 PORTREVISION=	11
 CATEGORIES=	devel
-MASTER_SITES=   ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
+MASTER_SITES=	ftp://ftp.oarcorp.com/pub/rtems/snapshots/c_tools/source/ \
 		http://rtems.thehousleys.net/
 DISTFILES=	${GCCNAME}.tar.gz ${NEWLIBNAME}.tar.gz
 PATCHFILES=	${GCCNAME}-rtems-20001030.diff.gz \

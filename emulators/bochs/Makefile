@@ -3,13 +3,13 @@
 # Date created:			  16 December 1997
 # Whom:				  alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.32 2000/12/22 09:56:31 roam Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.33 2001/02/05 14:49:03 olgeni Exp $
 #
 
 PORTNAME=	bochs
 PORTVERSION=	2000.0325
 CATEGORIES=	emulators
-MASTER_SITES= 	ftp://ftp.bochs.com/bochs/
+MASTER_SITES=	ftp://ftp.bochs.com/bochs/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/./_/}a
 
 MAINTAINER=	ports@FreeBSD.org
