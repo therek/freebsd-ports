@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.388 2001/06/18 16:05:28 dwcjr Exp $
+# $FreeBSD: ports/games/Makefile,v 1.389 2001/06/23 06:07:42 markp Exp $
 #
 
     SUBDIR += 0verkill
@@ -103,6 +103,7 @@
     SUBDIR += gracer
     SUBDIR += greed
     SUBDIR += gru
+    SUBDIR += gshisen
     SUBDIR += gtetrinet
     SUBDIR += gtkabale
     SUBDIR += gtkballs
