@@ -2,7 +2,7 @@
 # Date created:                         17 Oct 2000
 # Whom:                                 Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.4 2001/05/22 17:03:10 roam Exp $
+# $FreeBSD: ports/net/gtk+licq/Makefile,v 1.5 2001/08/18 23:38:00 ijliao Exp $
 #
 
 PORTNAME=	gtk+licq
@@ -14,7 +14,7 @@ MAINTAINER=	roman@xpert.com
 
 BUILD_DEPENDS=	${LOCALBASE}/include/licq/licq_icqd.h:${PORTSDIR}/net/licq
 LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell \
-		iconv.2:${PORTSDIR}/converters/libiconv
+		giconv.2:${PORTSDIR}/converters/libiconv
 RUN_DEPENDS=	licq:${PORTSDIR}/net/licq
 
 # It breaks the build for some reason
