@@ -2,11 +2,11 @@
 # Date created:		04 Dec 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.3 2001/03/14 21:33:53 joerg Exp $
+# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.4 2001/04/20 13:54:12 joerg Exp $
 #
 
 PORTNAME=	avr-libc
-PORTVERSION=	20010331
+PORTVERSION=	20010717
 CATEGORIES=	devel
 MASTER_SITES=	http://www.amelek.gda.pl/avr/libc/
 
@@ -28,7 +28,7 @@ MAKE_FLAGS=	prefix=${PREFIX}
 post-install:
 		${MKDIR} ${PREFIX}/share/doc/avr-libc
 		${MKDIR} ${PREFIX}/share/doc/avr-libc/examples
-		${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README \
+		${INSTALL_DATA} \
 			${WRKDIR}/${DISTNAME}/doc/LICENSE \
 			${WRKDIR}/${DISTNAME}/doc/register-usage.txt \
 			${PREFIX}/share/doc/avr-libc
