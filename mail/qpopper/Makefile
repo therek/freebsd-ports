@@ -2,7 +2,7 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.54 2001/05/10 04:30:43 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qpopper
@@ -81,7 +81,7 @@ EPOPPASSD=	"@comment "
 .if exists(/usr/lib/libssl.a) && exists(/usr/lib/libcrypto.a)
 CONFIGURE_ARGS+=	--with-openssl=/usr
 .elif exists(${LOCALBASE}/lib/libssl.a) && exists(${LOCALBASE}/lib/libcrypto.a)
-LIB_DEPENDS+=	ssl.1:${PORTSDIR}/security/openssl
+LIB_DEPENDS+=	ssl.2:${PORTSDIR}/security/openssl
 CONFIGURE_ARGS+=	-with-includes=${LOCALBASE}/include/openssl --with-openssl=${LOCALBASE}
 CONFIGURE_ENV+=	RSAGLUE="${RSAGLUE}"
 .if exists(${LOCALBASE}/lib/librsaref.a)
