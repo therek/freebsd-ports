@@ -2,7 +2,7 @@
 # Date created:				20 Apr 2000
 # Whom:					dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/mail/sendmail/Makefile,v 1.26 2001/10/07 06:51:44 dinoex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sendmail
@@ -126,12 +126,13 @@ post-install:
 .if defined(SENDMAIL_WITH_MILTER)
 	${MKDIR} ${PREFIX}/include/libmilter
 	${INSTALL_DATA} ${WRKSRC}/include/libmilter/mfapi.h \
+		${WRKSRC}/include/libmilter/mfdef.h \
 		${PREFIX}/include/libmilter/
 	${INSTALL_DATA} \
 	 ${WRKSRC}/obj.`${WRKSRC}/devtools/bin/Build -A`/libmilter/libmilter.a \
-	 ${PREFIX}/lib/
-	${INSTALL_DATA} \
+	 ${WRKSRC}/obj.`${WRKSRC}/devtools/bin/Build -A`/libsm/libsm.a \
 	 ${WRKSRC}/obj.`${WRKSRC}/devtools/bin/Build -A`/libsmutil/libsmutil.a \
+	 ${WRKSRC}/obj.`${WRKSRC}/devtools/bin/Build -A`/libsmdb/libsmdb.a \
 	 ${PREFIX}/lib/
 .endif
 	${INSTALL_DATA} ${WRKSRC}/sm-client.sh \
