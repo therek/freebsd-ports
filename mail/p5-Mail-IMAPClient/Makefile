@@ -2,7 +2,7 @@
 # Date created:		14 Nov 2000
 # Whom:			TAKAHASHI Kaoru <kaoru@kaisei.org>
 #
-# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.2 2001/01/03 04:15:50 vanilla Exp $
+# $FreeBSD: ports/mail/p5-Mail-IMAPClient/Makefile,v 1.3 2001/01/24 11:14:04 kevlo Exp $
 #
 
 PORTNAME=	Mail-IMAPClient
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Mail
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	kaoru@kaisei.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_PERL5=	yes
 
