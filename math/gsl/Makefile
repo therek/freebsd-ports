@@ -2,11 +2,11 @@
 # Date created:                        15 Feb 2000
 # Whom:                                Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/gsl/Makefile,v 1.4 2000/06/16 10:38:09 sobomax Exp $
+# $FreeBSD: ports/math/gsl/Makefile,v 1.5 2000/06/16 21:51:39 asami Exp $
 #
 
 PORTNAME=	gsl
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 CATEGORIES=	math
 MASTER_SITES=	ftp://sourceware.cygnus.com/pub/gsl/ \
 		ftp://ftp.freesoftware.com/pub/sourceware/gsl/ \
