@@ -1,7 +1,8 @@
-# $FreeBSD: ports/audio/Makefile,v 1.238 2001/06/08 21:46:56 greid Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.239 2001/06/20 15:02:26 ijliao Exp $
 #
 
     SUBDIR += Maaate
+    SUBDIR += ac3dec
     SUBDIR += afsp
     SUBDIR += agbrowser
     SUBDIR += amp
