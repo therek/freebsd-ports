@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gperiodic
-# Version required:			1.2.1
+# Version required:			1.2.2
 # Date created:				16 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.1.1.1 1999/09/06 20:08:26 taoka Exp $
+# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.2 1999/10/09 18:42:07 vanilla Exp $
 #
 
-DISTNAME=	gperiodic-1.2.1
+DISTNAME=	gperiodic-1.2.2
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/
 
