@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 17 17:10:02 CEST 2000
 # Whom:				olgeni@uli.it
 #
-# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.9 2001/01/24 12:43:14 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ruby-man
@@ -19,14 +19,14 @@ USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
 RUBY_NO_RUN_DEPENDS=	yes
 
+RUBY_MODNAME=	ruby-man${LANGSUFFIX}
+
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:R}${LANGSUFFIX}
 NO_BUILD=	yes
 PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
-DOCDIR=		${RUBY_DOCDIR}/ruby-man${LANGSUFFIX}
-
 do-install:
-	${MKDIR} ${DOCDIR}
-	${INSTALL_DATA} ${WRKSRC}/*.html ${DOCDIR}
+	${MKDIR} ${RUBY_MODDOCDIR}
+	${INSTALL_DATA} ${WRKSRC}/*.html ${RUBY_MODDOCDIR}
 
 .include <bsd.port.mk>

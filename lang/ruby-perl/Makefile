@@ -2,7 +2,7 @@
 # Date created:		11 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.9 2001/02/07 18:09:55 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	perl
@@ -38,12 +38,12 @@ post-install:
 	@cd ${WRKSRC}/Ruby; \
 	${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} install
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/perl
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/samples/${f} ${RUBY_EXAMPLESDIR}/perl/
+	${INSTALL_DATA} ${WRKSRC}/samples/${f} ${RUBY_MODEXAMPLESDIR}/
 .endfor
-	${MKDIR} ${RUBY_DOCDIR}/perl/ja
-	${INSTALL_DATA} ${WRKSRC}/README.ja ${RUBY_DOCDIR}/perl/ja/
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
+	${INSTALL_DATA} ${WRKSRC}/README.ja ${RUBY_MODDOCDIR}/ja/
 .endif
 
 .include <bsd.port.mk>

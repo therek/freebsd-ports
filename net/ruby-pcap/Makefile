@@ -2,7 +2,7 @@
 # Date created:		20 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-pcap/Makefile,v 1.1 2000/11/19 22:06:30 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pcap
@@ -25,13 +25,13 @@ INSTALL_TARGET=	site-install
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/pcap
-	${CP} -R ${WRKSRC}/examples/ ${RUBY_EXAMPLESDIR}/pcap/
-	${MKDIR} ${RUBY_DOCDIR}/pcap/ja
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
+	${CP} -R ${WRKSRC}/examples/ ${RUBY_MODEXAMPLESDIR}/
+	${MKDIR} ${RUBY_MODDOCDIR}/ja
 	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${WRKSRC}/README ${WRKSRC}/doc/* \
-		${RUBY_DOCDIR}/pcap/
+		${RUBY_MODDOCDIR}/
 	${INSTALL_DATA} ${WRKSRC}/README.ja ${WRKSRC}/doc-ja/* \
-		${RUBY_DOCDIR}/pcap/ja/
+		${RUBY_MODDOCDIR}/ja/
 .endif
 
 .include <bsd.port.mk>

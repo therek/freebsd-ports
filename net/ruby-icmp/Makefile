@@ -2,7 +2,7 @@
 # Date created:		1 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-icmp/Makefile,v 1.4 2001/09/17 17:54:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icmp
@@ -23,9 +23,9 @@ EXAMPLES=	sample/*
 
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
+	${MKDIR} ${RUBY_MODEXAMPLESDIR}
 .for f in ${EXAMPLES}
-	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/${PORTNAME}/
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_MODEXAMPLESDIR}/
 .endfor
 .endif
 
