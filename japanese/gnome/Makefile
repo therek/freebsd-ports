@@ -2,11 +2,12 @@
 # Date created:		02 November 2000
 # Whom:			Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/gnome/Makefile,v 1.1 2000/11/02 09:01:20 nakai Exp $
 #
 
 PORTNAME=	gnome
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	japanese x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
@@ -18,7 +19,7 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/japanese/gnomelibs \
 		panel_applet.4:${PORTSDIR}/japanese/gnomecore \
 		gal.1:${PORTSDIR}/japanese/gal
 
-RUN_DEPENDS=	gnumeric:${PORTSDIR}/math/gnumeric \
+RUN_DEPENDS=	gnumeric:${PORTSDIR}/gnumeric/gnumeric \
 
 NO_BUILD=	yes
 
