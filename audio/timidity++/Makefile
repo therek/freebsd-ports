@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++/Makefile,v 1.26 2000/07/08 07:37:17 knu Exp $
+# $FreeBSD: ports/audio/timidity++/Makefile,v 1.27 2000/08/16 15:24:33 kevlo Exp $
 #
 
 PORTNAME=	timidity++
@@ -22,6 +22,7 @@ SLAVEDIRS+=	audio/timidity++-gtk audio/timidity++-motif \
 		audio/timidity++-slang audio/timidity++-tcltk \
 		audio/timidity++-xaw audio/timidity++-xskin
 USE_BZIP2=	yes
+WANT_ESOUND=	yes
 GNU_CONFIGURE=	yes
 .if !defined(WITHOUT_X11)
 USE_XLIB=	yes
@@ -40,13 +41,6 @@ CONFIGURE_ARGS=	--enable-ncurses --enable-vt100 \
 		--enable-network --disable-spectrogram --disable-wrd
 .endif
 
-.if defined(WITH_ESOUND)
-LIB_DEPENDS+=	esd.2:${PORTSDIR}/audio/esound
-CONFIGURE_ARGS+=	--enable-audio=oss,esd
-.else
-CONFIGURE_ARGS+=	--enable-audio=oss
-.endif
-
 MAN1=		timidity.1
 MAN5=		timidity.cfg.5
 
@@ -55,6 +49,13 @@ DOCFILES=	README.dl README.sf
 DOCLANG=	C ja_JP.ujis
 
 .include <bsd.port.pre.mk>
+
+.if defined(HAVE_ESOUND)
+USE_ESOUND=	yes
+CONFIGURE_ARGS+=--enable-audio=oss,esd
+.else
+CONFIGURE_ARGS+=--enable-audio=oss
+.endif
 
 .if ${PORTOBJFORMAT} == "elf"
 CONFIGURE_ENV=	LDFLAGS=-export-dynamic

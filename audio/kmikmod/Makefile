@@ -2,7 +2,7 @@
 # Date created:        1 March 1999
 # Whom:                Tom Hukins <tom@eborcom.com>
 #
-# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.7 2000/04/08 21:23:46 mharo Exp $
+# $FreeBSD: ports/audio/kmikmod/Makefile,v 1.8 2000/06/29 07:02:05 obrien Exp $
 #
 
 PORTNAME=	kmikmod
@@ -20,12 +20,18 @@ LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 USE_BZIP2=	yes
 WRKSRC=		${WRKDIR}/kmikmod
 USE_QT=		yes
-GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-CONFIGURE_ENV=	CXXFLAGS="${CXXFLAGS}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}"
+WANT_ESOUND=	yes
+USE_LIBTOOL=	yes
+LIBTOOLFILES=	configure libmikmod/configure
+
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_ESOUND)
+USE_ESOUND=	yes
+.endif
 
 pre-configure:
 	cd ${WRKSRC}/libmikmod; ${CONFIGURE_ENV} ./${CONFIGURE_SCRIPT} ${CONFIGURE_ARGS}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
