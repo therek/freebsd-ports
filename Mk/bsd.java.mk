@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.58 2004/11/09 02:11:42 hq Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.59 2004/11/29 17:33:41 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -202,10 +202,8 @@ _JAVA_OS_native=	Native
 _JAVA_OS_linux=		Linux
 
 # Enforce preferred Java ports according to OS
-.		if ${OSVERSION} >= 500000
+.		if ${OSVERSION} >= 400000
 _JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_4
-.		elif ${OSVERSION} >= 400000
-_JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_FREEBSD_JDK_1_3
 .		else
 _JAVA_PREFERRED_PORTS+=	JAVA_PORT_NATIVE_BSDJAVA_JDK_1_1
 .		endif
