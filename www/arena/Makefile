@@ -2,7 +2,7 @@
 # Date created:         Dec 1 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/arena/Makefile,v 1.18 1999/08/31 06:51:36 mharo Exp $
+# $FreeBSD: ports/www/arena/Makefile,v 1.19 2000/04/10 00:04:26 cpiazza Exp $
 #
 
 PORTNAME=	arena-i18n
@@ -11,7 +11,7 @@ CATEGORIES=     www
 MASTER_SITES=   ftp://ftp-eu.w3.org/pub/Arena/beta-3/
 DISTNAME=	arena-CJK-beta3a
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
 
 LIB_DEPENDS+=   jpeg.9:${PORTSDIR}/graphics/jpeg
 LIB_DEPENDS+=   png.3:${PORTSDIR}/graphics/png
