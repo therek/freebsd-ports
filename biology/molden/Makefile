@@ -2,12 +2,12 @@
 # Date created:		1998-11-14
 # Whom:			rmiya
 #
-# $FreeBSD: ports/biology/molden/Makefile,v 1.10 2000/10/13 10:59:34 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	molden
 PORTVERSION=	3.6
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp.cmbi.kun.nl/pub/molgraph/molden/
 DISTNAME=	${PORTNAME}${PORTVERSION}
