@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.54 2000/07/29 02:44:46 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.55 2000/07/30 02:00:50 will Exp $
 #
 
 PORTNAME=	qt
@@ -17,6 +17,7 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-copy
+USE_MESA=	yes
 USE_BZIP2=	yes
 NO_LATEST_LINK=	yes
 USE_GMAKE=	yes
