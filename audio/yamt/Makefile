@@ -2,7 +2,7 @@
 # Date created:			9 January 2000
 # Whom:				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/audio/yamt/Makefile,v 1.5 2000/06/01 16:25:45 ade Exp $
+# $FreeBSD: ports/audio/yamt/Makefile,v 1.6 2000/06/14 13:21:06 sobomax Exp $
 #
 
 PORTNAME=	yamt
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	dima@Chg.RU
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+RUN_DEPENDS=	gnomecc:${PORTSDIR}/sysutils/gnomecontrolcenter
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
