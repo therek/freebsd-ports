@@ -3,7 +3,7 @@
 # Date created:			  Fri Mar 18, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/super/Makefile,v 1.18 2000/05/16 16:58:31 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	super
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp.ucolick.org/pub/users/will/  \
 		ftp://ftp.infodrom.north.de/pub/unix/utilities/super/
 
 MAINTAINER=	obrien@FreeBSD.org
+
+FORBIDDEN=	"Local root exploit. http://online.securityfocus.com/archive/1/285241"
 
 .include <bsd.port.pre.mk>
 
