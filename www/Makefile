@@ -1,8 +1,9 @@
-# $FreeBSD: ports/www/Makefile,v 1.164 1999/10/21 19:37:10 cpiazza Exp $
+# $FreeBSD: ports/www/Makefile,v 1.165 1999/10/25 05:54:59 asami Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
     SUBDIR += WebMagick
+    SUBDIR += adzapper
     SUBDIR += amaya
     SUBDIR += analog
     SUBDIR += apache13
@@ -59,6 +60,7 @@
     SUBDIR += mhonarc
     SUBDIR += momspider
     SUBDIR += mozilla
+    SUBDIR += netscape-remote
     SUBDIR += netscape3
     SUBDIR += netscape3-gold
     SUBDIR += netscape4-communicator
@@ -122,5 +124,6 @@
     SUBDIR += wwwoffle
     SUBDIR += wwwstat
     SUBDIR += xitami
+    SUBDIR += zope
 
 .include <bsd.port.subdir.mk>
