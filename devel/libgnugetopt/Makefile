@@ -2,13 +2,13 @@
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.8 2000/03/31 01:37:31 obrien Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.9 2000/04/11 21:28:41 mharo Exp $
 #
 
 PORTNAME=	libgnugetopt
 PORTVERSION=	1.1
 CATEGORIES=	devel
-MASTER_SITES= 	http://people.FreeBSD.org/~andy/distfiles/
+MASTER_SITES= 	ftp://ftp.freebsd.org/pub/FreeBSD/local-distfiles/obrien/
 
 MAINTAINER=	obrien@FreeBSD.org
 

@@ -3,14 +3,14 @@
 # Date created:			  Mon Dec 23, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/bounce/Makefile,v 1.7 2000/03/22 00:26:42 obrien Exp $
+# $FreeBSD: ports/net/bounce/Makefile,v 1.8 2000/04/09 18:10:19 cpiazza Exp $
 #
 
 PORTNAME=	bounce
 PORTVERSION=	1.0
 CATEGORIES=	net security
 MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/  \
-		http://people.FreeBSD.org/~obrien/Distfiles/
+		ftp://ftp.freebsd.org/pub/FreeBSD/local-distfiles/obrien/
 DISTNAME=	bounce
 EXTRACT_SUFX=	.c
 

@@ -3,13 +3,13 @@
 # Date created:			  Tue Nov 04, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/tcpshow/Makefile,v 1.9 2000/03/22 00:27:52 obrien Exp $
+# $FreeBSD: ports/net/tcpshow/Makefile,v 1.10 2000/04/09 18:13:39 cpiazza Exp $
 #
 
 PORTNAME=	tcpshow
 PORTVERSION=	1.74
 CATEGORIES=	net security
-MASTER_SITES=	http://people.FreeBSD.org/~obrien/Distfiles/
+MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/local-distfiles/obrien/
 #		http://www.cs.berkeley.edu/~daw/mike/
 DISTFILES=	tcpshow.c tcpshow.1
 

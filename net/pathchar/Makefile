@@ -3,7 +3,7 @@
 # Date created:			  7 November 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/net/pathchar/Makefile,v 1.14 2000/04/09 18:13:02 cpiazza Exp $
+# $FreeBSD: ports/net/pathchar/Makefile,v 1.15 2000/04/14 10:07:58 asami Exp $
 #
 
 PORTNAME=	pathchar
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.ee.lbl.gov/pathchar/  \
 		http://www.caida.org/Tools/Pathchar/  \
 		http://www.fips.de/Computer/woman/  \
 		http://sitka.triumf.ca/net/  \
-		http://people.FreeBSD.org/~obrien/Distfiles/
+		ftp://ftp.freebsd.org/pub/FreeBSD/local-distfiles/obrien/
 DISTNAME=	pathchar-a1-freebsd-3.0
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} pathcharnotes.html pathchar.8 \
 		pathchar.mantxt
