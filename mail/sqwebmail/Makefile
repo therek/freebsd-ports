@@ -1,8 +1,8 @@
 # New ports collection makefile for: sqwebmail
-# Date created:		21 Sep 2000
-# Whom:			makeport.pl
+# Date created:		23 Sep 2000
+# Whom:			Neil Blakey-Milner
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/sqwebmail/Makefile,v 1.1 2000/09/22 22:24:43 nbm Exp $
 #
 
 PORTNAME=	sqwebmail
