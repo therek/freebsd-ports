@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:   bochs
 # Version required:    990219a
 # Date created:        16 December 1997
 # Whom:                alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.19 1999/10/06 08:23:54 obrien Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.20 1999/11/23 01:38:17 obrien Exp $
 #
 
 VGABIOS=	VGABIOS-elpin-2.20
@@ -25,6 +26,12 @@ WRKSRC=		${WRKDIR}/bochs-${DATE}a
 
 RESTRICTED=	"Commercial software"
 NO_CDROM=	${RESTRICTED}
+
+pre-configure:
+	@${PERL} -pi.fbsd \
+		-e 's|^vgaromimage:\sbios/|vgaromimage: ${PREFIX}/bios/| ;' \
+		-e 's|^romimage:\sfile=bios/|romimage: file=${PREFIX}/bios/|' \
+		${WRKSRC}/.bochsrc
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bochs ${PREFIX}/bin
