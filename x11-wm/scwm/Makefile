@@ -2,11 +2,11 @@
 # Date created:        26 December 1997
 # Whom:                Yukihiro Nakai <nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.13 2000/01/31 06:47:09 nakai Exp $
+# $FreeBSD: ports/x11-wm/scwm/Makefile,v 1.14 2000/04/10 19:50:15 cpiazza Exp $
 #
 
 PORTNAME=	scwm
-PORTVERSION= 	0.99.6.1
+PORTVERSION=	0.99.6.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://scwm.mit.edu/pub/scwm/
 
@@ -23,14 +23,14 @@ GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=	--with-guile-prefix=${LOCALBASE}
-CONFIGURE_ENV+= CPPFLAGS="-I${X11BASE}/include" \
+CONFIGURE_ENV+=	CPPFLAGS="-I${X11BASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
 
 .if defined(MULTIBYTE)
 CONFIGURE_ARGS+=	--enable-multibyte=yes
-CONFIGURE_ENV+= LIBS="-L${X11BASE}/lib -lxpg4"
+CONFIGURE_ENV+=	LIBS="-L${X11BASE}/lib -lxpg4"
 .endif
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
