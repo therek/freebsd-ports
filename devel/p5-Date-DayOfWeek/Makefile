@@ -3,17 +3,17 @@
 # Date created:			Jun 5, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/devel/p5-Date-DayOfWeek/Makefile,v 1.2 2001/07/11 18:50:08 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Date-DayOfWeek
-PORTVERSION=	1.19
+PORTVERSION=	1.20
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	tobez@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/Date/Leapyear.pm:${PORTSDIR}/devel/p5-Date-Leapyear \
 		${SITE_PERL}/Test/More.pm:${PORTSDIR}/devel/p5-Test-Simple
