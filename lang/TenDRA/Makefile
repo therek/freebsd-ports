@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1998
 # Whom:			Robert Nordier <rnordier@iafrica.com>
 #
-# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.12 2000/04/12 06:17:46 obrien Exp $
+# $FreeBSD: ports/lang/TenDRA/Makefile,v 1.13 2000/07/02 22:08:38 kris Exp $
 #
 
 PORTNAME=	TenDRA
@@ -12,7 +12,11 @@ MASTER_SITES=	ftp://alph.dera.gov.uk/pub/TenDRA/
 
 MAINTAINER=	rnordier@FreeBSD.org
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400000
 BROKEN=		"Does not compile."
+.endif
 
 ONLY_FOR_ARCHS=	i386
 OSRELEASE!=	uname -r
@@ -75,4 +79,4 @@ post-install:
 	${CHOWN} ${MANOWN}:${MANGRP} ${MAN5} && \
 	${CHMOD} ${MANMODE} ${MAN5})
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
