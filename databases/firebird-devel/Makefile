@@ -2,7 +2,7 @@
 # Date created:		20 December 2000
 # Whom:			Geoffrey C. Speicher <geoff@sea-incorporated.com>
 #
-# $FreeBSD: ports/databases/firebird/Makefile,v 1.1 2001/03/10 20:32:33 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	firebird
@@ -62,6 +62,8 @@ do-install:
 	${RM} ${PREFIX}/firebird/install;				\
 	${RM} ${PREFIX}/firebird/lib/libgds.so.1.0;			\
 	${LN} -fs gds.so ${PREFIX}/firebird/lib/libgds.so.1;		\
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/firebird/lib	\
+	${CHMOD} -R g-w ${PREFIX}/firebird/lib				\
 	cd ${PREFIX}/firebird/examples;					\
 	tar zxf ${DISTDIR}/interbase0.9-4-v5examples.tar.gz;		\
 	${CP} ${FILESDIR}/RELNOTES ${PREFIX}/firebird/			\
