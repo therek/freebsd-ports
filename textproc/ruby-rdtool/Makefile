@@ -2,7 +2,7 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ruby-rdtool/Makefile,v 1.1 2000/08/07 17:56:46 knu Exp $
 #
 
 PORTNAME=	rdtool
@@ -10,6 +10,7 @@ PORTVERSION=	0.6.5
 CATEGORIES=	textproc	# ruby
 MASTER_SITES=	http://www2.pos.to/~tosh/ruby/rdtool/archive/
 PKGNAMEPREFIX=	ruby-
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 

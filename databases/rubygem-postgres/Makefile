@@ -2,7 +2,7 @@
 # Date created:         19 April 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.2 1999/09/06 14:12:27 taoka Exp $
+# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.3 2000/04/08 22:48:58 mharo Exp $
 #
 
 PORTNAME=	ruby-postgres
@@ -15,6 +15,7 @@ MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/contrib/ \
 		ftp://ftp.krnet.ne.jp/pub/ruby/contrib/ \
 		ftp://mirror.nucba.ac.jp/mirror/ruby/contrib/
 DISTNAME=	postgres-${PORTVERSION}
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	yasuf@big.or.jp
 

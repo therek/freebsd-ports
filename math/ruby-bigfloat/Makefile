@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/math/ruby-bigfloat/Makefile,v 1.1 2000/08/07 06:09:18 knu Exp $
+# $FreeBSD: ports/math/ruby-bigfloat/Makefile,v 1.2 2000/08/07 10:08:40 knu Exp $
 #
 
 PORTNAME=	bigfloat
@@ -10,6 +10,7 @@ PORTVERSION= 	1.1.3
 CATEGORIES=	math	# ruby
 MASTER_SITES=	http://www.tinyforest.gr.jp/ruby/
 PKGNAMEPREFIX=	ruby-
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 

@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.1 2000/08/07 06:09:13 knu Exp $
+# $FreeBSD: ports/devel/ruby-property/Makefile,v 1.2 2000/08/07 10:08:41 knu Exp $
 #
 
 PORTNAME=	property
@@ -11,6 +11,7 @@ CATEGORIES=	devel	# ruby
 MASTER_SITES=	http://www.ueda.info.waseda.ac.jp/~igarashi/ruby/
 PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PKGNAMEPREFIX}${PORTNAME}-${PORTVERSION}
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 

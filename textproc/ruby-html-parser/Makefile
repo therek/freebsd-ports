@@ -2,7 +2,7 @@
 # Date created:         7 Aug 2000
 # Whom:                 Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/ruby-html-parser/Makefile,v 1.1 2000/08/07 08:20:28 knu Exp $
 #
 
 PORTNAME=	html-parser
@@ -11,6 +11,7 @@ CATEGORIES=	textproc	# ruby
 MASTER_SITES=	http://www.jin.gr.jp/~nahi/Ruby/html-parser/
 PKGNAMEPREFIX=	ruby-
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//}
+DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
