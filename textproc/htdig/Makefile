@@ -3,7 +3,7 @@
 # Date created:        18 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/textproc/htdig/Makefile,v 1.10 1999/08/31 02:09:20 peter Exp $
+# $FreeBSD: ports/textproc/htdig/Makefile,v 1.11 1999/10/29 01:19:06 billf Exp $
 #
 
 DISTNAME=	htdig-3.1.3
@@ -22,26 +22,26 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	billf@FreeBSD.org
 
+RUN_DEPENDS=	${PREFIX}/share/apache:${PORTSDIR}/www/apache13
+
 Y2K=		http://www.htdig.org/FAQ.html#q1.7
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --with-cgi-bin-dir=${PREFIX}/www/cgi-bin \
-		--with-image-dir=${PREFIX}/www/icons \
-		--with-search-dir=${PREFIX}/www/data
+CONFIGURE_ARGS= --with-cgi-bin-dir=${PREFIX}/share/apache/cgi-bin \
+		--with-image-dir=${PREFIX}/share/apache/icons \
+		--with-search-dir=${PREFIX}/share/apache/htdocs
 BUILD_TARGET=	depends all
 
 post-patch:
 
 	@ ${MV} ${WRKSRC}/CONFIG.in ${WRKSRC}/CONFIG.in.Dist
-	@ ${SED} -e 's#htdocs#data#g' \
-		-e 's#/conf#/etc#' \
+	@ ${SED} -e 's#/conf#/etc#' \
 		-e 's#/common#/share/htdig#' \
 		-e 's#/db#/share/htdig#' \
 	${WRKSRC}/CONFIG.in.Dist > ${WRKSRC}/CONFIG.in
 
 	@ ${MV} ${WRKSRC}/CONFIG ${WRKSRC}/CONFIG.Dist
-	@ ${SED} -e 's#htdocs#data#g' \
-		-e 's#/conf#/etc#' \
+	@ ${SED} -e 's#/conf#/etc#' \
 		-e 's#/common#/share/htdig#' \
 		-e 's#/db#/share/htdig#' \
 	${WRKSRC}/CONFIG.Dist > ${WRKSRC}/CONFIG
