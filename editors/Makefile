@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.104 2000/01/08 03:50:37 asami Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.105 2000/01/11 14:51:00 shige Exp $
 #
 
     SUBDIR += AbiWord
@@ -83,6 +83,7 @@
     SUBDIR += thoteditor
     SUBDIR += uemacs
     SUBDIR += uzap
+    SUBDIR += vigor
     SUBDIR += vile
     SUBDIR += vilearn
     SUBDIR += vim-lite
