@@ -2,7 +2,7 @@
 # Date created:		10 May 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vflib/Makefile,v 1.23 1999/12/27 00:27:30 steve Exp $
+# $FreeBSD: ports/japanese/vflib/Makefile,v 1.24 2000/04/13 08:33:20 knu Exp $
 #
 
 PORTNAME=	vflib
@@ -17,7 +17,7 @@ MAINTAINER=	mita@jp.FreeBSD.org
 
 LIB_DEPENDS=	ttf.4:${PORTSDIR}/print/freetype
 
-VFLIB_VERSION=	2.24.2
+VFLIB_VERSION=	2.25.1
 PLIST_SUB=	VFLIB_VERSION=${VFLIB_VERSION}
 
 GNU_CONFIGURE=	yes
