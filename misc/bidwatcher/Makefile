@@ -2,15 +2,13 @@
 # Date created:		24 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.8 2000/03/22 01:59:25 will Exp $
+# $FreeBSD: ports/misc/bidwatcher/Makefile,v 1.9 2000/04/14 08:45:22 asami Exp $
 #
 
 PORTNAME=	bidwatcher
-PORTVERSION=	1.0.3b
+PORTVERSION=	1.0.5
 CATEGORIES=	misc
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		http://people.FreeBSD.org/~mph/distfiles/
-MASTER_SITE_SUBDIR=	apps/misc
+MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/bidwatcher/
 
 MAINTAINER=	will@FreeBSD.org
 
