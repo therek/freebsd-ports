@@ -3,19 +3,18 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.9 1999/10/05 17:10:06 cpiazza Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.10 1999/10/27 00:38:37 mharo Exp $
 #
 
 DISTNAME=	xcircuit-2.0a11
 CATEGORIES=	cad
-MASTER_SITES=	${MASTER_SITE_SUNSITE} \
-		ftp://bach.ece.jhu.edu/pub/tim/xcircuit/
-MASTER_SITE_SUBDIR=	apps/circuits
+MASTER_SITES=	ftp://bach.ece.jhu.edu/pub/tim/xcircuit/
 
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
+USE_BZIP2=	yes
 USE_IMAKE=	yes
 XMKMF=		xmkmf
 
