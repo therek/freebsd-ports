@@ -2,13 +2,13 @@
 # Date created:				20 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/dgen-sdl/Makefile,v 1.1 2000/09/20 17:05:54 sobomax Exp $
 #
 
 PORTNAME=	dgen-sdl
 PORTVERSION=	1.20a
 CATEGORIES=	emulators
-MASTER_SITES=	http://www.humboldt1.com/~ognir/
+MASTER_SITES=	http://pknet.com/~joe/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
