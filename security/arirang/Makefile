@@ -2,11 +2,11 @@
 # Date created:			  Jun 4 2001
 # Whom:				  Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/arirang/Makefile,v 1.1 2001/06/10 17:59:33 ijliao Exp $
 #
 
 PORTNAME=	arirang
-PORTVERSION=	1.5
+PORTVERSION=	1.6beta
 CATEGORIES=	security www
 MASTER_SITES=	http://www.monkey.org/~pilot/arirang/
 
