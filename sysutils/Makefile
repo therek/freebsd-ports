@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.191 2001/05/30 03:11:33 lioux Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.192 2001/06/08 23:07:09 roam Exp $
 #
     SUBDIR += yawho
 
@@ -128,6 +128,7 @@
     SUBDIR += setcdboot
     SUBDIR += setquota
     SUBDIR += skill
+    SUBDIR += slay
     SUBDIR += socket
     SUBDIR += star
     SUBDIR += stat
