@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					hmpierce <hmpierce@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_server/Makefile,v 1.5 2000/04/09 18:10:41 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coda-server
@@ -23,5 +23,7 @@ INSTALL_TARGET=	server-install
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
+
+NO_LATEST_LINK=	yes
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					Robert V. Baron <rvb@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_doc/Makefile,v 1.5 2000/04/09 18:10:38 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coda-doc
@@ -95,6 +95,8 @@ MAN8=		au.8 \
 		venus.8 \
 		volutil.8 \
 		vutil.8
+
+NO_LATEST_LINK=	yes
 
 do-build:
 	@${ECHO} "At present, Coda documentation is distributed in html, man, ps, and ppt forms"
