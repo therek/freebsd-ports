@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.5 2001/04/18 03:09:59 lioux Exp $
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.6 2001/04/26 02:34:10 lioux Exp $
 #
 
 PORTNAME?=	cs
@@ -17,7 +17,7 @@ MASTER_SITES?=	ftp://ftp.icrontic.com/pub/ \
 		ftp://ftp.icsmedia.de/pub/games/halflife/counter_strike/linux_server/ \
 		http://ftp1download.gamespy.com/fileplanet/fpnew/action/half-life/modifications/cstrike/ \
 		http://fileplanet.games-world.net/dl/ftp1.gamespy.com/fpnew/action/half-life/modifications/cstrike/ \
-		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/modifications/cstrike/ \
+		ftp://fileplanet.blueyonder.co.uk/ftp1.gamespy.com/fpnew/action/half-life/modifications/cstrike/
 PKGNAMEPREFIX=	hlserver-
 .ifndef(DISTNAME)
 DISTFILES?=	cs_11b_full.tar.gz cs_11c_up.tar.gz
