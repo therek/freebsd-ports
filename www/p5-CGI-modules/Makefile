@@ -2,16 +2,15 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/www/p5-CGI/Makefile,v 1.17 2001/02/05 15:33:39 olgeni Exp $
+# $FreeBSD: ports/www/p5-CGI-modules/Makefile,v 1.18 2001/03/01 06:37:04 vanilla Exp $
 #
 
-PORTNAME=	CGI
+PORTNAME=	CGI-modules
 PORTVERSION=	2.76
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	CGI
 PKGNAMEPREFIX=	p5-
-DISTNAME=	CGI-modules-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
