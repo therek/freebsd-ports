@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.61 2000/07/27 18:31:32 jim Exp $
+# $FreeBSD: ports/irc/xchat-devel/Makefile,v 1.62 2000/08/27 15:32:04 jim Exp $
 #
 
 PORTNAME=		xchat
@@ -49,6 +49,7 @@ CONFIGURE_ARGS+=	--enable-socks
 
 .if defined(WITH_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
+PLIST_SUB+=		GNOME:=""
 .if defined(WITH_PANEL)
 CONFIGURE_ARGS+=	--enable-panel
 .else
@@ -56,6 +57,7 @@ CONFIGURE_ARGS+=	--disable-panel
 .endif
 .else
 CONFIGURE_ARGS+=	--disable-gnome
+PLIST_SUB+=		GNOME:="@comment "
 .endif
 
 .if defined(WITH_GDK_PIXBUF)
@@ -69,10 +71,6 @@ CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			GLIB_CONFIG="${GLIB_CONFIG}" \
 			GDK_PIXBUF_CONFIG="${GDK_PIXBUF_CONFIG}" \
 			LIBS="-L${LOCALBASE}/lib"
-
-.if defined(WITH_GNOME)
-PLIST=			${PKGDIR}/PLIST.gnome
-.endif
 
 post-install:
 	@strip ${PREFIX}/bin/xchat
