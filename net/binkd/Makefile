@@ -3,7 +3,7 @@
 # Date created:				19 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/binkd/Makefile,v 1.6 1999/08/30 14:22:11 peter Exp $
 #
 
 DISTNAME=		binkd092
@@ -13,7 +13,7 @@ MASTER_SITES=		ftp://ftp.sut.ru/pub/FidoNet/BinkD/092/ \
 			ftp://ftp.aanet.ru/pub/Linux/system/Fido/ \
 			http://www.corbina.net/~maloff/binkd/
 
-MAINTAINER=		andy@icc.surw.chel.su
+MAINTAINER=		dsh@vlink.ru
 
 WRKSRC=			${WRKDIR}/${PKGNAME}
 USE_ZIP=		yes
