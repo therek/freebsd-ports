@@ -4,13 +4,14 @@
 # based on the NetBSD port
 #
 # $NetBSD: Makefile,v 1.7 1999/12/28 04:19:58 wiz Exp $
-# $FreeBSD: ports/audio/festlex-cmu/Makefile,v 1.2 2000/09/20 09:09:37 asami Exp $
+# $FreeBSD: ports/audio/festlex-cmu/Makefile,v 1.3 2000/10/02 05:38:38 trevor Exp $
 #
 
 PORTNAME=	festlex-cmu
 PORTVERSION=	1.4.1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.speech.cs.cmu.edu/festival/cstr/festival/1.4.1/ \
+		${MASTER_SITE_NETBSD} \
 		ftp://ftp.cstr.ed.ac.uk/pub/festival/1.4.1/
 DISTNAME=	festlex_CMU
 DIST_SUBDIR=	festival
