@@ -2,7 +2,7 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/astro/seti_applet/Makefile,v 1.8 2001/07/14 05:53:13 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	seti_applet
@@ -18,7 +18,7 @@ MAINTAINER=	clefevre@citeweb.net
 
 LIB_DEPENDS=	gtop.1:${PORTSDIR}/devel/libgtop \
 		intl.1:${PORTSDIR}/devel/gettext
-RUN_DEPENDS=	setiathome:${PORTSDIR}/astro/setiathome
+RUN_DEPENDS=	${LOCALBASE}/sbin/setiathome:${PORTSDIR}/astro/setiathome
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
