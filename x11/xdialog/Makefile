@@ -3,21 +3,24 @@
 # Date created:			Jan 8, 2001
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/x11/xdialog/Makefile,v 1.3 2001/01/21 02:42:28 vanilla Exp $
+# $FreeBSD: ports/x11/xdialog/Makefile,v 1.4 2001/03/19 17:39:55 ijliao Exp $
 #
 
 PORTNAME=	xdialog
-PORTVERSION=	1.5.3
+PORTVERSION=	2.0.0
 CATEGORIES=	x11
 MASTER_SITES=	http://xdialog.free.fr/
 DISTNAME=	${PORTNAME:S/x/X/}-${PORTVERSION}
 
 MAINTAINER=	ijliao@FreeBSD.org
 
+LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
+
 USE_BZIP2=	yes
 USE_GTK=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib -lgnugetopt"
 
 MAN1=	Xdialog.1
 
