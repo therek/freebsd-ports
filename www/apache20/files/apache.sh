@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/apache2/files/apache.sh,v 1.7 2004/06/07 14:56:53 clement Exp $
+# $FreeBSD: ports/www/apache2/files/apache.sh,v 1.8 2004/07/30 17:04:47 clement Exp $
 #
 
 # PROVIDE: apache2
@@ -29,6 +29,8 @@ name="apache2"
 rcvar=`set_rcvar`
 
 start_precmd="apache2_precmd"
+restart_precmd="apache2_checkconfig"
+reload_precmd="apache2_checkconfig"
 command="%%PREFIX%%/sbin/httpd"
 pidfile="/var/run/httpd.pid"
 required_files=%%PREFIX%%/etc/apache2/httpd.conf
@@ -43,6 +45,12 @@ load_rc_config $name
 
 checkyesno apache2ssl_enable && \
 			apache2_flags="-DSSL $apache2_flags"
+
+apache2_checkconfig()
+{
+	echo "Performing sanity check on apache2 configuration:"
+	${command} -t
+}
 
 apache2_precmd() 
 {
