@@ -3,13 +3,13 @@
 # Date created:		29 March 1999
 # Whom:			Clive Lin <clive@CirX.ORG>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/chinese/xa+cv/Makefile,v 1.1.1.1 1999/09/09 10:11:51 foxfair Exp $
 #
 
 DISTNAME=	xa+cv-0.6
 PKGNAME=	zh-xa+cv-0.6
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://linux.tmtc.edu.tw/pub/CLE/devel/source/tarball/
+MASTER_SITES=	ftp://freebsd.sinica.edu.tw/pub/clive/
 
 MAINTAINER=	clive@CirX.ORG
 
