@@ -2,7 +2,7 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.46 2000/05/16 22:18:55 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.47 2000/05/24 00:33:07 will Exp $
 #
 
 PORTNAME=	kdebase
@@ -27,5 +27,7 @@ CONFIGURE_ARGS+="--with-xdmdir=${X11BASE}/lib/X11/xdm" \
 		--with-qt-libraries=${X11BASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}"
 USE_GMAKE=	yes
+
+FORBIDDEN=	"Local buffer overflow yielding gid nogroup"
 
 .include <bsd.port.mk>
