@@ -2,21 +2,20 @@
 # Date created:		09 September 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/scanssh/Makefile,v 1.2 2000/10/14 23:29:00 kris Exp $
+# $FreeBSD: ports/security/scanssh/Makefile,v 1.3 2000/11/03 19:49:36 kris Exp $
 #
 
 PORTNAME=	scanssh
-PORTVERSION=	1.3
-PORTREVISION=	1
+PORTVERSION=	1.5
 CATEGORIES=	security net
 MASTER_SITES=	http://www.monkey.org/~provos/
-DISTNAME=	scanssh
 
 MAINTAINER=	kris@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 
 MAN1=		scanssh.1
+WRKSRC=		${WRKDIR}/scanssh
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/scanssh ${PREFIX}/bin
