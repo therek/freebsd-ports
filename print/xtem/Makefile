@@ -2,7 +2,7 @@
 # Date created:         01 June 1997
 # Whom:                 Peter Cornelius <pc@inr.fzk.de>
 #
-# $FreeBSD: ports/print/xtem/Makefile,v 1.13 2000/09/25 12:21:37 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtem
@@ -23,7 +23,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 MAN1=		hyphen_show.1 xtem.1
 
-pre-everything:
+pre-everything::
 	@${CAT} ${FILESDIR}/makemsg.txt
 
 post-extract:

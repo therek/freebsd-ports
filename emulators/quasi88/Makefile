@@ -2,7 +2,7 @@
 # Date created:		22 May 1999
 # Whom:				Nishika <nishika@cheerful.com>
 #
-# $FreeBSD: ports/emulators/quasi88/Makefile,v 1.7 2001/02/14 05:43:00 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	quasi88
@@ -19,7 +19,7 @@ USE_GMAKE=	yes
 DATAFILES=	FAQ FORMAT GET-IMAGE HISTORY MANUAL QUASI88 _quasi88rc
 
 .if !defined(WITH_SOUND)
-pre-everything:
+pre-everything::
 	@ ${ECHO} "You can make quasi88 use sound by defining WITH_SOUND"
 .else
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-aa

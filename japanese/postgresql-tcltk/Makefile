@@ -2,7 +2,7 @@
 # Date created:		7 Jun 2000
 # Whom:			Tomokatsu Saito <saito@a2z.co.jp>
 #
-# $FreeBSD: ports/japanese/postgresql7/Makefile,v 1.29 2001/09/01 08:23:44 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	postgresql
@@ -99,7 +99,7 @@ LIB_DEPENDS=	tcl80jp:${PORTSDIR}/japanese/tcl80 \
 		tk80jp:${PORTSDIR}/japanese/tk80
 .endif
 
-pre-everything:
+pre-everything::
 	@ ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.postgresql
 
 pre-install:

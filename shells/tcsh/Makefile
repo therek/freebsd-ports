@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.40 2001/09/07 17:36:50 mp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcsh
@@ -28,7 +28,7 @@ BINGRP=		bin
 .endif
 
 .if ${OSVERSION} >= 400021
-pre-everything:
+pre-everything::
 	@${ECHO_MSG} "This port is just for making symlink from /bin/tcsh"
 	@${ECHO_MSG} "to ${PREFIX}/bin/tcsh and updating /etc/shells."
 

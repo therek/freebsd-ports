@@ -2,7 +2,7 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/pruby/Makefile,v 1.3 2001/03/19 07:52:45 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pruby
@@ -32,7 +32,7 @@ MOD_PHP4_WRKSRC_CMD=	cd ${MOD_PHP4_PORTDIR} && ${MAKE} -V WRKSRC
 
 DOCS_EN=	README	contrib/_htaccess
 
-pre-everything:
+pre-everything::
 	dir=`${MOD_PHP4_WRKSRC_CMD}`; \
 	${MKDIR} $${dir}; \
 	${TOUCH} $${dir}/../../Makefile.inc
