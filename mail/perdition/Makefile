@@ -2,11 +2,11 @@
 # Date created:				28 April 2001
 # Whom:					Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD: ports/mail/perdition/Makefile,v 1.1 2001/05/20 03:59:59 will Exp $
+# $FreeBSD: ports/mail/perdition/Makefile,v 1.2 2001/05/25 15:48:15 roam Exp $
 #
 
 PORTNAME=	perdition
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.8
 CATEGORIES=	mail net security
 MASTER_SITES=	ftp://perdition.sourceforge.net/pub/perdition/%SUBDIR%/ \
 		ftp://ftp.au.vergenet.net/pub/perdition/%SUBDIR%/ \
