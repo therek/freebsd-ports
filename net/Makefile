@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.356 2000/05/01 03:26:00 steve Exp $
+# $FreeBSD: ports/net/Makefile,v 1.357 2000/05/01 10:25:48 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -143,6 +143,7 @@
     SUBDIR += ntop
     SUBDIR += ntp
     SUBDIR += nttcp
+    SUBDIR += openam
     SUBDIR += opengatekeeper
     SUBDIR += openh323
     SUBDIR += openldap
