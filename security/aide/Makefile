@@ -2,7 +2,7 @@
 # Date created:				Tue Jan  4 11:45:29 PST 2000
 # Whom:					Cy Schubert (Cy.Schubert@uumail.gov.bc.ca)
 #
-# $FreeBSD: ports/security/aide/Makefile,v 1.2 2000/07/15 16:23:55 will Exp $
+# $FreeBSD: ports/security/aide/Makefile,v 1.3 2001/01/16 17:32:15 sobomax Exp $
 #
 
 PORTNAME=	aide
@@ -27,16 +27,16 @@ MAN1=		aide.1
 MAN5=		aide.conf.5
 
 post-install:
-	${INSTALL_DATA} ${FILESDIR}/aide.conf.freebsd ${PREFIX}/etc/aide.conf.sample
+	@${INSTALL_DATA} ${FILESDIR}/aide.conf.freebsd ${PREFIX}/etc/aide.conf.sample
+	@${MKDIR} /var/adm/aide/databases
+	@if [ ! -f /var/adm/aide/aide.conf ]; then \
+		${CHOWN} root:wheel /var/adm/aide ; \
+		${CHOWN} root:wheel /var/adm/aide/databases ; \
+		${CHMOD} 0700 /var/adm/aide ; \
+		${CHMOD} 0700 /var/adm/aide/databases ; \
+	fi
 	@${ECHO}
-	@${ECHO} "If you want to finish setting up AIDE, don't forget to make"
-	@${ECHO} "a new directory called /var/adm/aide and then create your own"
-	@${ECHO} "aide.conf based on ${PREFIX}/etc/aide.conf.sample and then"
-	@${ECHO} "copy it to that directory.  You will also need to make the"
-	@${ECHO} "databases directory, /var/adm/aide/databases, and run the"
-	@${ECHO} "following command:"
-	@${ECHO}
-	@${ECHO} "	cd /var/adm/aide;aide --init;mv databases/aide.db.new databases/aide.db"
+	@${CAT} ${PKGMESSAGE}
 	@${ECHO}
 .if defined(AIDE_FLOPPY)
 	@disklabel -w -B /dev/rfd0c fd1440
