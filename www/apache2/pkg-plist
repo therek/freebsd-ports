@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.63 2004/06/09 06:16:01 kris Exp $
+@comment $FreeBSD: ports/www/apache2/pkg-plist,v 1.64 2004/07/01 05:54:56 clement Exp $
 @unexec if cmp -s %D/etc/apache2/highperformance.conf %D/etc/apache2/highperformance-std.conf; then rm -f %D/etc/apache2/highperformance.conf; fi
 etc/apache2/highperformance-std.conf
 @exec [ -f %B/highperformance.conf ] || cp %B/%f %B/highperformance.conf
@@ -513,6 +513,7 @@ share/apache2/build/special.mk
 %%ICONS%%www/icons-dist/world2.gif
 %%ICONS%%www/icons-dist/world2.png
 %%PORTDOCS%%%%DOCSDIR%%/LICENSE
+%%PORTDOCS%%%%DOCSDIR%%/NOTICE
 %%PORTDOCS%%%%DOCSDIR%%/bind.html
 %%PORTDOCS%%%%DOCSDIR%%/bind.html.en
 %%PORTDOCS%%%%DOCSDIR%%/bind.html.ja.jis
