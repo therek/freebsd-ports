@@ -2,17 +2,17 @@
 # Date created:				11 June 2001
 # Whom:	      				Danny Howard <dannyman@tellme.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Net-XWhois/Makefile,v 1.1 2001/07/06 17:36:08 ijliao Exp $
 #
 
 PORTNAME=	Net-XWhois
-PORTVERSION=    0.72
+PORTVERSION=    0.82
 CATEGORIES=	net perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	dannyman@tellme.com
+MAINTAINER=	leeym@leeym.com
 
 PERL_CONFIGURE=	YES
 
