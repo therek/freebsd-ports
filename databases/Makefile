@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.57 2000/02/21 23:13:14 jedgar Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.58 2000/04/06 04:07:42 will Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -31,6 +31,7 @@
     SUBDIR += p5-hp200lx-db
     SUBDIR += pgaccess
     SUBDIR += postgresql
+    SUBDIR += postgresql7
     SUBDIR += pxtools
     SUBDIR += py-MySQL
     SUBDIR += py-PyGreSQL
