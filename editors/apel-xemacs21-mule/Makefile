@@ -3,7 +3,7 @@
 # Date created:		13 June 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/apel-xemacs-mule/Makefile,v 1.14 2000/01/06 14:27:00 shige Exp $
+# $FreeBSD: ports/editors/apel-xemacs21-mule/Makefile,v 1.15 2000/01/09 16:30:58 shige Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -16,7 +16,7 @@ MASTERDIR=	${.CURDIR}/../../editors/apel-emacs
 # emacs port setup
 EMACS_NAME=	xemacs
 EMACS_PORT=	xemacs21-mule
-EMACS_VER=	21.1.8
+EMACS_VER=	21.1.9
 EMACS_CMD=	${PREFIX}/bin/${EMACS_PORT}
 EMACS_LIBDIR=	lib/${EMACS_NAME}
 EMACS_PACKAGESDIR=	${EMACS_LIBDIR}/site-packages
