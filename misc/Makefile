@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.333 2001/03/11 04:48:23 grog Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.334 2001/03/20 20:28:12 obrien Exp $
 #
 
     SUBDIR += 40upgrade
@@ -62,6 +62,7 @@
     SUBDIR += gone
     SUBDIR += gplbp
     SUBDIR += granulate
+    SUBDIR += grc
     SUBDIR += grdb
     SUBDIR += grun
     SUBDIR += gtkfind
