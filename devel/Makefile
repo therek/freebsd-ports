@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.570 2001/06/22 22:16:29 dd Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.571 2001/06/23 15:55:59 dwcjr Exp $
 #
 
     SUBDIR += ElectricFence
@@ -9,6 +9,7 @@
     SUBDIR += SWIG-devel
     SUBDIR += SpecTcl
     SUBDIR += a2dev
+    SUBDIR += acpicatools
     SUBDIR += adabroker
     SUBDIR += ald
     SUBDIR += allegro
