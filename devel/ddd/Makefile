@@ -3,7 +3,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.30 2000/06/27 09:38:12 sobomax Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.31 2000/08/03 09:22:54 asami Exp $
 #
 
 PORTNAME=	ddd
@@ -26,9 +26,9 @@ MAN1=		ddd.1
 
 .if defined(MOTIFLIB)
 .if defined(MOTIF_STATIC)
-LIBXMDIR!=	${ECHO} ${MOTIFLIB} | ${SED} -e 's/\/libXm\.a//g' | ${AWK} '{print $$1}'
+LIBXMDIR!=	${ECHO} ${MOTIFLIB} | sed -e 's/\/libXm\.a//g' | awk '{print $$1}'
 .else
-LIBXMDIR!=	${ECHO} ${MOTIFLIB} | ${SED} -e 's/-L//g' | ${AWK} '{print $$1}'
+LIBXMDIR!=	${ECHO} ${MOTIFLIB} | sed -e 's/-L//g' | awk '{print $$1}'
 .endif
 .else
 LIBXMDIR=	${X11BASE}
