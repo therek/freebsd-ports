@@ -2,7 +2,7 @@
 # Date created:         20 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/golddig/Makefile,v 1.11 1999/08/28 02:41:47 mharo Exp $
+# $FreeBSD: ports/games/golddig/Makefile,v 1.12 2000/04/14 06:53:07 mharo Exp $
 #
 
 PORTNAME=	golddig
@@ -23,8 +23,6 @@ pre-patch:
 	  done; ${MV} golddig2/* .)
 
 pre-install:
-	@${MKDIR} ${PREFIX}/bin
 	@${MKDIR} ${PREFIX}/lib/golddig
-	@${MKDIR} ${PREFIX}/man/man6
 
 .include <bsd.port.mk>
