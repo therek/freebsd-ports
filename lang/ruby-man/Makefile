@@ -2,7 +2,7 @@
 # Date created:			Sat Aug 17 17:10:02 CEST 2000
 # Whom:				olgeni@uli.it
 #
-# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.8 2001/01/24 12:05:14 olgeni Exp $
+# $FreeBSD: ports/lang/ruby-man/Makefile,v 1.9 2001/01/24 12:43:14 olgeni Exp $
 #
 
 PORTNAME=	ruby-man
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	doc
 DISTNAME=	${PORTNAME}-${PORTVERSION}${LANGSUFFIX}
 DIST_SUBDIR=	ruby
 
-MAINTAINER?=	olgeni@FreeBSD.org
+MAINTAINER?=	ports@FreeBSD.org
 
 USE_RUBY=	yes
 RUBY_NO_BUILD_DEPENDS=	yes
