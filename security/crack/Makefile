@@ -4,7 +4,7 @@
 # Whom:				  David O'Brien <obrien@FreeBSD.org>
 #				  & Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/security/crack/Makefile,v 1.16 2000/04/17 00:18:36 reg Exp $
+# $FreeBSD: ports/security/crack/Makefile,v 1.17 2000/04/21 08:18:14 mharo Exp $
 #
 
 PORTNAME=	crack
@@ -18,7 +18,6 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 
-RESTRICTED=	"contains crypto (libdes)"
 WRKSRC=		${WRKDIR}/c50a
 
 pre-configure:
