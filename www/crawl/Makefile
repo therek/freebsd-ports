@@ -2,11 +2,11 @@
 # Date created:				20 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/crawl/Makefile,v 1.1 2001/06/23 16:09:49 dwcjr Exp $
 #
 
 PORTNAME=	crawl
-PORTVERSION=	0.1
+PORTVERSION=	0.1b
 CATEGORIES=	www
 MASTER_SITES=	http://www.monkey.org/~provos/
 
