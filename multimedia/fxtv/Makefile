@@ -2,7 +2,7 @@
 # Date created:		Thu Nov  4 19:54:04 EST 1999
 # Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.28 2000/08/01 09:07:51 roger Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.29 2000/08/03 09:24:38 asami Exp $
 #
 
 PORTNAME=	fxtv
@@ -29,6 +29,9 @@ USE_XPM=	yes
 USE_GMAKE=      yes
 MAKE_FLAGS=	-e
 MAN1=		fxtv.1
+
+post-extract:
+	${RM} ${WRKSRC}/videolib/*.o
 
 pre-install:
 	${CP} ${WRKSRC}/fxtv.1 ${WRKSRC}/fxtv.man
