@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.161 2001/02/05 16:48:17 ijliao Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.162 2001/02/09 23:19:42 ade Exp $
 #
 
     SUBDIR += agrep
@@ -61,6 +61,7 @@
     SUBDIR += libxml2
     SUBDIR += libxode
     SUBDIR += libxslt
+    SUBDIR += linux-libxml
     SUBDIR += linuxdoc
     SUBDIR += lotusxsl
     SUBDIR += ltxml
