@@ -1,9 +1,10 @@
+# ex:ts=8
 # New ports collection makefile for:  dict
 # Version required:    1.4.8
 # Date created:        19 February 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/dict/Makefile,v 1.7 1999/08/31 02:09:04 peter Exp $
+# $FreeBSD: ports/textproc/dict/Makefile,v 1.8 1999/10/21 19:02:27 fenner Exp $
 #
 
 DISTNAME=	dictd-1.4.9
@@ -11,6 +12,8 @@ PKGNAME=	dict-1.4.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.unc.edu/pub/users/faith/dict/ \
 		ftp://ftp.dict.org/pub/dict/
+
+MAINTAINER=	obrien@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	"--with-cflags=${CFLAGS}"
