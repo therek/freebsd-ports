@@ -2,7 +2,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.41 2001/02/05 16:18:17 olgeni Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.42 2001/03/27 10:03:22 olgeni Exp $
 #
 
 PORTNAME=	wdm
@@ -56,13 +56,23 @@ pre-install:
 		${MV} ${PREFIX}/lib/X11/wdm/wdm-config \
 			${PREFIX}/lib/X11/wdm/wdm-config.preserve; \
 	fi
+	@if [ -e ${PREFIX}/lib/X11/wdm/Xsetup_0 ]; then \
+		${MV} ${PREFIX}/lib/X11/wdm/Xsetup_0 \
+			${PREFIX}/lib/X11/wdm/Xsetup_0.preserve; \
+	fi
 
 post-install:
 	@${CP} ${PREFIX}/lib/X11/wdm/wdm-config \
-		${PREFIX}/lib/X11/wdm/wdm-config.dist;
+		${PREFIX}/lib/X11/wdm/wdm-config.dist
 	@if [ -e ${PREFIX}/lib/X11/wdm/wdm-config.preserve ]; then \
 		${MV} ${PREFIX}/lib/X11/wdm/wdm-config.preserve \
 			${PREFIX}/lib/X11/wdm/wdm-config; \
+	fi
+	@${CP} ${PREFIX}/lib/X11/wdm/Xsetup_0 \
+		${PREFIX}/lib/X11/wdm/Xsetup_0.dist
+	@if [ -e ${PREFIX}/lib/X11/wdm/Xsetup_0.preserve ]; then \
+		${MV} ${PREFIX}/lib/X11/wdm/Xsetup_0.preserve \
+			${PREFIX}/lib/X11/wdm/Xsetup_0; \
 	fi
 	@${INSTALL_DATA} ${_DISTDIR}/${DAEMONPIC} ${PREFIX}/lib/X11/wdm/pixmaps
 
