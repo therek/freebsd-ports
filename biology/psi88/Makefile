@@ -2,7 +2,7 @@
 # Date created:		1998-11-11
 # Whom:			Ryo MIYAMOTO
 #
-# $FreeBSD: ports/biology/psi88/Makefile,v 1.5 1999/08/28 01:56:56 mharo Exp $
+# $FreeBSD: ports/biology/psi88/Makefile,v 1.6 2000/04/08 22:04:51 mharo Exp $
 #
 
 PORTNAME=	psi88
@@ -29,9 +29,9 @@ post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/psi88
 	${MKDIR} ${PREFIX}/share/doc/psi88/examples
-	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/README ${PREFIX}/share/doc/psi88
-	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/psi88.doc ${PREFIX}/share/doc/psi88
-	${INSTALL_MAN} ${WRKDIR}/${DISTNAME}/examples/* ${PREFIX}/share/doc/psi88/examples
+	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README ${PREFIX}/share/doc/psi88
+	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/psi88.doc ${PREFIX}/share/doc/psi88
+	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/examples/* ${PREFIX}/share/doc/psi88/examples
 .endif
 
 .include <bsd.port.mk>

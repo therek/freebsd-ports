@@ -2,7 +2,7 @@
 # Date created:	15 September 2000
 # Whom:		FreeBSD Bio porters (bio@freebsd.net)
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/biojava/Makefile,v 1.1 2000/10/10 11:14:03 jeh Exp $
 #
 
 PORTNAME=	biojava
@@ -41,7 +41,7 @@ do-install:
 		${CP} -R ${WRKSRC}/demos ${PREFIX}/share/java/${PKGNAME}/;)
 
 .if !defined(NOPORTDOCS)
-	@(${CP} -R ${WRKSRC}/docs ${PREFIX}/share/java/${PKGNAME})
+	@(${CP} -R ${WRKSRC}/docs ${PREFIX}/share/doc/${PKGNAME})
 .endif)
 
 post-install:
