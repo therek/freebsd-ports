@@ -2,13 +2,13 @@
 # Date created:			Apr 13, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/archivers/xdms/Makefile,v 1.2 2001/05/22 17:25:50 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdms
 PORTVERSION=	1.3
 CATEGORIES=	archivers
-MASTER_SITES=	http://www.ee.tut.fi/~orsila/xdms/
+MASTER_SITES=	http://www.ee.tut.fi/~heikki/xdms/
 DISTNAME=	xdms
 
 MAINTAINER=	markp@FreeBSD.org
