@@ -2,7 +2,7 @@
 # Date created:				18th April 2001
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnome-fifth-toe/Makefile,v 1.3 2001/05/18 15:07:45 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnome-fifth-toe
@@ -33,7 +33,7 @@ RUN_DEPENDS=	mozilla:${PORTSDIR}/www/mozilla \
 		gob:${PORTSDIR}/x11-toolkits/gob \
 		gtm:${PORTSDIR}/ftp/gtm \
 		gnucash:${PORTSDIR}/deskutils/gnucash \
-		abiword:${PORTSDIR}/editors/AbiWord \
+		AbiWord:${PORTSDIR}/editors/AbiWord \
 		anjuta:${PORTSDIR}/devel/anjuta \
 		guppi:${PORTSDIR}/math/guppi
 
