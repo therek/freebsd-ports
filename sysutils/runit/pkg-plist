@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/sysutils/runit/pkg-plist,v 1.3 2003/11/20 22:32:50 sergei Exp $
 etc/rc.d/runsvdir.sh.sample
 etc/runit/1.sample
 etc/runit/2.sample
@@ -45,3 +45,5 @@ sbin/utmpset
 %%PORTDOCS%%%%DOCSDIR%%/useinit.html
 %%PORTDOCS%%%%DOCSDIR%%/utmpset.8.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
+@dirrm etc/runit/getty-ttyv4
+@dirrm etc/runit
