@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.100 2001/03/06 17:19:53 sf Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.101 2001/03/08 01:06:35 mi Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -49,8 +49,15 @@ LIBTOOLFLAGS=	# empty
 USE_AUTOCONF=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
-CONFIGURE_ARGS=	--enable-shared --with-modules \
+CONFIGURE_ARGS=	--enable-shared \
 		--with-perl=${PERL5}
+
+.ifdef WITH_MODULES
+CONFIGURE_ARGS+=--with-modules
+PLIST_SUB+=	MODULES=''
+.else
+PLIST_SUB+=	MODULES='@comment '
+.endif
 
 .ifdef NO_X
 CONFIGURE_ARGS+=--without-x
