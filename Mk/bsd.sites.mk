@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.155 2003/06/01 12:21:09 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.156 2003/06/01 19:36:05 naddy Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -576,9 +576,11 @@ MASTER_SITE_TEX_CTAN+=  \
 	ftp://ctan.unsw.edu.au/tex-archive/%SUBDIR%/ \
 	ftp://ftp.tex.ac.uk/tex-archive/%SUBDIR%/  \
 	ftp://ftp.kddlabs.co.jp/CTAN/%SUBDIR%/ \
+	ftp://ftp.meiji.ac.jp/pub/TeX/CTAN/%SUBDIR%/ \
 	ftp://ctan.tug.org/tex-archive/%SUBDIR%/ \
 	ftp://ftp.dante.de/tex-archive/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/publishing/tex/CTAN/%SUBDIR%/ \
+	ftp://ftp.ntnu.no/pub/tex/CTAN/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,text/CTAN/&,} \
 	ftp://ftp.chg.ru/pub/TeX/CTAN/%SUBDIR%/
 
