@@ -2,7 +2,7 @@
 # Date created:		Fri Mar  1 19:43:52 MET 1996
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/www/harvest/Makefile,v 1.13 2001/01/03 22:17:11 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	harvest
@@ -16,6 +16,13 @@ MASTER_SITES=	ftp://ftp.tardis.ed.ac.uk/pub/harvest/ \
 EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/src/configure ${WRKSRC}/src/broker/broker.h \
+		${WRKSRC}/src/gatherer/essence/main.c \
+		${WRKSRC}/src/gatherer/include/essence.h \
+		${WRKSRC}/components/gatherer/standard/dvi2tty/dvi2tty.h
 
 pre-install:
 	${MKDIR} ${PREFIX}/harvest
