@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.468 2001/03/13 21:25:53 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.469 2001/03/14 16:24:34 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -268,6 +268,7 @@
     SUBDIR += p5-Filter
     SUBDIR += p5-FreezeThaw
     SUBDIR += p5-IO
+    SUBDIR += p5-IO-String
     SUBDIR += p5-IO-Stty
     SUBDIR += p5-IO-Tty
     SUBDIR += p5-IO-stringy
