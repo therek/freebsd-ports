@@ -2,7 +2,7 @@
 # Date created:		26 Mar 2000
 # Whom:			will
 #
-# $FreeBSD: ports/net/mudix/Makefile,v 1.1 2000/04/16 04:30:25 will Exp $
+# $FreeBSD: ports/net/mudix/Makefile,v 1.2 2000/05/20 05:54:19 will Exp $
 #
 
 PORTNAME=	mudix
@@ -12,7 +12,7 @@ MASTER_SITES=	http://dwizardry.dhs.org/mudix/
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS+=	ncurses.4:${PORTSDIR}/devel/ncurses
+LIB_DEPENDS+=	ncurses.5:${PORTSDIR}/devel/ncurses
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 ALL_TARGET=	mudix
