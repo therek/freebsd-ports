@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.41 2000/02/08 16:22:11 imura Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.42 2000/03/04 21:01:15 sada Exp $
 #
 
     SUBDIR += Wnn
@@ -20,7 +20,6 @@
     SUBDIR += han
     SUBDIR += hanIM
     SUBDIR += hanemacs
-    SUBDIR += hanmutt
     SUBDIR += hanterm
     SUBDIR += hanterm-xf86
     SUBDIR += hanyangfonts
