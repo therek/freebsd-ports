@@ -2,11 +2,11 @@
 # Date created:		15 July 2001
 # Whom:			Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/kxmleditor/Makefile,v 1.1 2001/07/14 18:01:50 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kxmleditor
-PORTVERSION=	0.5
+PORTVERSION=	0.7.1
 CATEGORIES=	editors
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
