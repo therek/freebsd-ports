@@ -2,7 +2,7 @@
 # Date created:         14 August 1996
 # Whom:                 wosch
 #
-# $FreeBSD: ports/sysutils/socket/Makefile,v 1.10 2000/04/09 19:08:31 cpiazza Exp $
+# $FreeBSD: ports/sysutils/socket/Makefile,v 1.11 2000/04/22 10:13:16 mharo Exp $
 #
 
 PORTNAME=	socket
@@ -13,5 +13,10 @@ MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 MAINTAINER=     wosch@FreeBSD.org
 
 MAN1=		socket.1
+
+post-install:
+
+	@${MKDIR} ${PREFIX}/share/doc/socket
+	@${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/socket
 
 .include <bsd.port.mk>
