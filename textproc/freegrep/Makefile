@@ -3,7 +3,7 @@
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.8 1999/08/31 02:09:15 peter Exp $
+# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.9 1999/09/19 18:36:49 cpiazza Exp $
 #
 
 DISTNAME=	grep-0.12
@@ -16,5 +16,8 @@ MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/grep/ \
 MAINTAINER=	howardjp@wam.umd.edu
 
 MAN1=	grep.1 egrep.1 fgrep.1 zgrep.1
+
+post-extract:
+	@(cd ${WRKSRC}; rm -f .depend)
 
 .include <bsd.port.mk>
