@@ -1,8 +1,8 @@
 # New ports collection makefile for:	TiMidity++
 # Date created:		27 Feb 1999
-# Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
+# Whom:			Yoichi Asai <yatt@luna2.org>
 #
-# $FreeBSD: ports/audio/timidity++-xaw/Makefile,v 1.2 2000/04/06 07:18:16 mharo Exp $
+# $FreeBSD$
 #
 
 INTERFACE=	xaw
