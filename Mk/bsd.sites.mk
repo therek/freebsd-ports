@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.277 2005/01/15 17:28:37 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.278 2005/01/16 17:34:57 pav Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -1222,7 +1222,6 @@ MASTER_SITE_XCONTRIB+=	\
 MASTER_SITE_XEMACS+= \
 	ftp://ftp.xemacs.org/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/%SUBDIR%/ \
-	ftp://ftp.usyd.edu.au/pub/xemacs/%SUBDIR%/ \
 	ftp://ftp.lab.kdd.co.jp/xemacs/%SUBDIR%/ \
 	ftp://ftp.dti.ad.jp/pub/unix/editor/xemacs/%SUBDIR%/ \
 	ftp://ftp.th-darmstadt.de/pub/editors/xemacs/%SUBDIR%/ \
