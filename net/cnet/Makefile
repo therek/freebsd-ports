@@ -2,11 +2,11 @@
 # Date created:         Feb 8th, 1988
 # Whom:                 jkh
 #
-# $FreeBSD: ports/net/cnet/Makefile,v 1.16 2001/03/08 17:15:58 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cnet
-PORTVERSION=	1.7.4
+PORTVERSION=	1.7.5
 CATEGORIES=	net tk83
 MASTER_SITES=	http://www.cs.uwa.edu.au/cnet/
 EXTRACT_SUFX=	.tgz
