@@ -2,11 +2,11 @@
 # Date created:				16th March 2001
 # Whom: 				Justin Stanford <jus@security.za.net>
 #
-# $FreeBSD: ports/mail/ripmime/Makefile,v 1.3 2001/08/05 04:09:41 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ripmime
-PORTVERSION=	1.2.3
+PORTVERSION=	1.2.4
 CATEGORIES=	mail
 MASTER_SITES=	http://www.pldaniels.com/ripmime/
 
