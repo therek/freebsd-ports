@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.38 2000/08/08 14:56:46 roberto Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.39 2000/10/14 11:03:15 asami Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -252,7 +252,7 @@ search: ${PORTSDIR}/INDEX
 	cd ${PORTSDIR}; \
 	top=`pwd`; \
 	there=`echo "$$here/" | sed s%$$top%${PORTSDIR}%`; \
-	if [ $$key ]; then \
+	if [ -n "$$key" ]; then \
 	  grep $$there ${PORTSDIR}/INDEX | grep -i "${key}" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
 	elif [ $$name ]; then \
 	  grep $$there ${PORTSDIR}/INDEX | grep -i "^[^|]*${name}[^|]*|" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
