@@ -2,7 +2,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.60 2001/02/12 08:06:55 kris Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.61 2001/02/21 04:45:25 green Exp $
 #
 
 PORTNAME=	OpenSSH
@@ -19,6 +19,10 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_OPENSSL=	YES
 
+MAN1=		scp.1 slogin.1 ssh-add.1 ssh-agent.1 ssh-keygen.1 ssh.1
+MAN8=		sshd.8
+MANCOMPRESSED=	yes
+ 
 .include <bsd.port.pre.mk>
 
 CRYPTOLIBS=	-L${OPENSSLLIB} -lcrypto
