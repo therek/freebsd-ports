@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.104 1999/09/27 05:14:08 dan Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.105 1999/10/02 23:56:52 cpiazza Exp $
 #
 
     SUBDIR += adcomplain
@@ -20,6 +20,7 @@
     SUBDIR += ezmlm-idx
     SUBDIR += faces
     SUBDIR += fetchmail
+    SUBDIR += gbuffy
     SUBDIR += gensig
     SUBDIR += glbiff
     SUBDIR += hbiff
