@@ -1,6 +1,6 @@
 # Makefile.modules.3rd
 #
-# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.17 2005/01/26 14:06:35 clement Exp $
+# $FreeBSD: ports/www/apache2/Makefile.modules.3rd,v 1.18 2005/02/08 21:40:06 clement Exp $
 #
 # Author: Clement Laforet <clement@FreeBSD.org>
 # If you have questions, please contact me.
@@ -65,7 +65,7 @@ APXS_PREFIX=	${APXS:S/\/sbin\/apxs//}
 .if defined(WITH_APACHE2)
 AP_BUILDEXT=	la
 PLIST_SUB+=	APACHEMODDIR="libexec/apache2"
-APACHE_PORT?=	www/apache2
+APACHE_PORT=	www/apache2
 AP_VER=		2
 .else
 AP_BUILDEXT=	so
