@@ -2,14 +2,13 @@
 # Date created:         27  Dec 1996
 # Whom:                 proff@iq.org
 #
-# $FreeBSD: ports/graphics/sced/Makefile,v 1.8 2000/04/14 10:47:18 asami Exp $
+# $FreeBSD: ports/graphics/sced/Makefile,v 1.9 2001/01/16 17:31:00 sobomax Exp $
 #
 
 PORTNAME=	sced
-PORTVERSION=	1.02
+PORTVERSION=	1.03
 CATEGORIES=	graphics
-MASTER_SITES=	http://www.cs.berkeley.edu/~schenney/sced/src/ \
-		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+MASTER_SITES=	http://www.cs.wisc.edu/~schenney/sced/src/
 
 MAINTAINER=	ports@FreeBSD.org
 
@@ -23,10 +22,10 @@ MAN1=		sced.1
 do-install:
 	${INSTALL_PROGRAM}  ${WRKSRC}/sced ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/docs/man/man1/sced.1 ${PREFIX}/man/man1
-	${MKDIR} ${PREFIX}/lib/sced
-	${INSTALL_DATA} ${WRKSRC}/scenerc ${PREFIX}/lib/sced
+	@${MKDIR} ${PREFIX}/share/sced
+	${INSTALL_DATA} ${WRKSRC}/scenerc ${PREFIX}/share/sced/sample.scenerc
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/sced
+	@${MKDIR} ${PREFIX}/share/doc/sced
 	${INSTALL_DATA} ${WRKSRC}/docs/guide.* ${PREFIX}/share/doc/sced
 .endif
 
