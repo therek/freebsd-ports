@@ -2,10 +2,10 @@
 # Date created:		04 October 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/net/poptop/Makefile,v 1.1.1.1 1999/10/06 02:43:13 nsayer Exp $
+# $FreeBSD: ports/net/poptop/Makefile,v 1.2 2000/04/09 18:13:07 cpiazza Exp $
 #
 
-PORTNAME=	pptpd
+PORTNAME=	poptop
 PORTVERSION=	1.0.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.moretonbay.com/vpn/releases/
