@@ -1,15 +1,15 @@
 # New ports collection makefile for:	tiff
-# Version required:	3.5.3
+# Version required:	3.5.4
 # Date created:		8 October 1996
 # Whom:			Richard Hwang <rhwang@bigpanda.com>
 #			Mikhail Teterin <mi@aldan.algebra.com>
 #			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/graphics/tiff/Makefile,v 1.22 1999/12/04 23:06:44 cpiazza Exp $
+# $FreeBSD: ports/graphics/tiff/Makefile,v 1.23 1999/12/23 19:18:32 steve Exp $
 #
 
-DISTNAME=	tiff-v3.5.3
-PKGNAME=	tiff-3.5.3
+DISTNAME=	tiff-v3.5.4
+PKGNAME=	tiff-3.5.4
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.onshore.com/pub/libtiff/ \
 		http://www.libtiff.org/
