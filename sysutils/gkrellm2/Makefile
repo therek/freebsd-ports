@@ -2,11 +2,11 @@
 # Date Created:		Mar 4 2000
 # Whom:			Hajimu UMEMOTO <ume@FreeBSD.org>
 #
-# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.33 2001/04/17 12:57:18 ume Exp $
+# $FreeBSD: ports/sysutils/gkrellm/Makefile,v 1.34 2001/08/03 20:25:56 ume Exp $
 #
 
 PORTNAME=	gkrellm
-PORTVERSION=	1.2.1
+PORTVERSION=	1.2.2
 CATEGORIES=	sysutils ipv6
 MASTER_SITES=	http://web.wt.net/~billw/gkrellm/ \
 		http://newweb.wt.net/~billw/ \
