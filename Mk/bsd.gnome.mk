@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.22 2003/04/04 08:17:38 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.23 2003/04/04 09:33:10 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -431,13 +431,6 @@ HAVE_GNOME+=	${component}
 
 .if defined(_POSTMKINCLUDED)
 
-# Hack USE_GNOME to the modular nfrastructure for port mataintainers that
-# didn't do so themselves.  This will allow us to get rid of the old
-# GNOME porting infrastructure more quickly.
-.if defined(USE_GNOME)
-. if ${USE_GNOME}=="yes"
-USE_GNOME=gnomeprefix gnomehack gtkhtml libpanel
-. endif
 .if defined(USE_GTK)
 USE_GNOME=	gtk12
 .endif
@@ -453,6 +446,14 @@ USE_GNOME=	glib12
 .if defined(USE_GNOMECTRL)
 USE_GNOME=	gnomeprefix gnomehack libcapplet
 .endif
+
+# Hack USE_GNOME to the modular nfrastructure for port mataintainers that
+# didn't do so themselves.  This will allow us to get rid of the old
+# GNOME porting infrastructure more quickly.
+.if defined(USE_GNOME)
+. if ${USE_GNOME}=="yes"
+USE_GNOME=gnomeprefix gnomehack gtkhtml libpanel
+. endif
 
 # Set a reasonable (overrideable) configure target for GNOME apps.
 CONFIGURE_TARGET?=	--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
