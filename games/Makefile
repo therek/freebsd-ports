@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.301 2000/09/25 07:09:09 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.302 2000/09/28 08:07:18 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -25,6 +25,7 @@
     SUBDIR += blue
     SUBDIR += bnetd
     SUBDIR += bogged
+    SUBDIR += bomberinstinct
     SUBDIR += bombermaze
     SUBDIR += bs
     SUBDIR += bugsx
