@@ -2,15 +2,11 @@
 # Date created:        2000.11.07
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pips2200/Makefile,v 1.1 2000/12/11 02:20:41 taoka Exp $
 #
 
-CATEGORIES=	print linux
 PORTVERSION=	1.3
-MASTER_SITES=	http://www.epkowa.on.arena.ne.jp/pips/data/${PRTYPE}/
 MASTERDIR=	${.CURDIR}/../pips800
-COMMENT=	${.CURDIR}/pkg-comment
-DESCR=		${.CURDIR}/pkg-descr
 PRTYPE=		2200
 
 .include "${MASTERDIR}/Makefile"

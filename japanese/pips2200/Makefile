@@ -2,13 +2,11 @@
 # Date created:        2000.11.07
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/pips2200/Makefile,v 1.1 2000/12/11 02:02:02 taoka Exp $
 #
 
-CATEGORIES?=	japanese print linux
+PORTVERSION=	1.3
 MASTERDIR=	${.CURDIR}/../pips800
-COMMENT=	${.CURDIR}/pkg-comment
-DESCR=		${.CURDIR}/pkg-descr
 PRTYPE=		2200
 
 do-install:     # empty
