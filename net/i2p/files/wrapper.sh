@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Under a BSDL license. Copyright by Mario S F Ferreira <lioux@FreeBSD.org>
-# $FreeBSD$
+# $FreeBSD: ports/net/i2p/files/wrapper.sh,v 1.1 2005/01/11 01:21:19 lioux Exp $
 
 DATADIR="%%DATADIR%%"
 #
@@ -26,7 +26,8 @@ case "$1" in
 			case "$1" in
 				restart|start)
 					echo 'To access i2p:'
-					echo 'Point your browser at http://localhost:7657/'
+					echo 'Point your browser at http://localhost:7657/ to access configuration'
+					echo 'Point your browser proxy at http://localhost:4444/ to access i2p network'
 				;;
 			esac
 			exec sh "${I2P_HOME}/${I2P_RC_SCRIPT}" ${1}
