@@ -2,11 +2,12 @@
 # Date created:         Tue Feb  7 12:02:49  1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.43 2000/09/04 12:24:57 sobomax Exp $
+# $FreeBSD: ports/graphics/Mesa3/Makefile,v 1.44 2000/09/11 12:58:14 sobomax Exp $
 #
 
 PORTNAME=	Mesa
 PORTVERSION=	3.2.1
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		ftp://iris.ssec.wisc.edu/pub/Mesa/ \
