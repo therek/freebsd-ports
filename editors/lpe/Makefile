@@ -2,7 +2,7 @@
 # Date created:		12 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/lpe/Makefile,v 1.12 2000/06/29 17:11:47 alex Exp $
+# $FreeBSD: ports/editors/lpe/Makefile,v 1.13 2001/01/26 19:56:01 sobomax Exp $
 #
 
 PORTNAME=	lpe
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://cdsmith.twu.net/opensource/lpe/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	cj@vallcom.net
+MAINTAINER=	LoRd_CJ@dalusers.com
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang \
 		intl.1:${PORTSDIR}/devel/gettext
