@@ -3,7 +3,7 @@
 # Date created:         7 Jan 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.10 1999/08/25 04:25:08 obrien Exp $
+# $FreeBSD: ports/archivers/hpack.non-usa.only/Makefile,v 1.11 1999/08/31 06:40:12 mharo Exp $
 #
 
 DISTNAME=       hpack79src
@@ -19,5 +19,10 @@ MAKEFILE=       makefile
 ALL_TARGET=     freebsd
 INSTALL_TARGET= freebsd.install
 MAN1=		hpack.1
+
+post-patch:
+.for f in language/language.c cli.c
+	@${PERL} -pi -e 's,%%PREFIX%%,${PREFIX},g' ${WRKSRC}/${f}
+.endfor
 
 .include <bsd.port.mk>
