@@ -4,10 +4,10 @@
 # Date created:         Thur July 25, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.74 1999/10/25 04:40:45 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.75 1999/10/25 06:57:26 obrien Exp $
 
-DISTNAME=	mutt-1.0i
-PKGNAME=	mutt-1.0
+DISTNAME=	mutt-1.0.1i
+PKGNAME=	mutt-1.0.1
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/  \
 		ftp://ftp.uib.no/pub/mutt/  \
