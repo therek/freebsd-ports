@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.19 2002/12/09 05:09:56 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnomeng.mk,v 1.20 2003/01/19 19:12:45 marcus Exp $
 #
 
 .if !defined(_POSTMKINCLUDED)
@@ -26,6 +26,7 @@ _USE_GNOME_ALL=	gnomehack gnomeprefix gnomehier gnomeaudio esound libghttp \
 		gnomeprint bonobo libgda gnomedb libglade gal glibwww gtkhtml \
 		libpanel
 
+SCROLLKEEPER_DIR=	/var/db/scrollkeeper
 gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLACE_CMD} -e \
 				's|[(]GNOME_datadir[)]/gnome/|(datadir)/|g ; \
 				 s|[(]GNOME_datadir[)]/locale|(prefix)/share/locale|g ; \
@@ -35,6 +36,7 @@ gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLA
 				 s|[(]datadir[)]/aclocal|(prefix)/share/aclocal|g ; \
 				 s|[(]datadir[)]/gnome/|(datadir)/|g ; \
 				 s|[(]libdir[)]/pkgconfig|(prefix)/libdata/pkgconfig|g ; \
+				 s|[$$][(]localstatedir[)]/scrollkeeper|${SCROLLKEEPER_DIR}|g ; \
 				 s|[(]libdir[)]/bonobo/servers|(prefix)/libdata/bonobo/servers|g'
 
 gnomehier_RUN_DEPENDS=	${X11BASE}/share/gnome/.keep_me:${PORTSDIR}/misc/gnomehier
