@@ -2,7 +2,7 @@
 # Date created:		29 July 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/py-scientific/Makefile,v 1.6 2001/03/29 12:22:55 tg Exp $
+# $FreeBSD: ports/math/py-scientific/Makefile,v 1.7 2001/04/03 11:35:18 tg Exp $
 #
 
 PORTNAME=	scientific
@@ -37,8 +37,8 @@ post-install:
 	@${MKDIR} ${DOCDIR}
 	${INSTALL_DATA} ${WRKSRC}/COPYRIGHT ${DOCDIR}
 .if !defined(NOPORTDOCS)
-	cd ${WRKDIR}/${DISTNAME}/Doc; tar cf - . | \
-	    (cd ${DOCDIR}; tar xf -)
+	cd ${WRKDIR}/${DISTNAME}/Doc; tar -c --exclude='*~' -f - . | \
+	    (cd ${DOCDIR}; tar -xf -)
 	@${MKDIR} ${EXAMPLEDIR}
 	${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/Examples/* ${EXAMPLEDIR}
 .endif
