@@ -3,7 +3,7 @@
 # Date created:		09/13/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/netscape-remote/Makefile,v 1.1.1.1 1999/11/01 02:35:56 steve Exp $
 #
 
 DISTNAME=	netscape-remote
@@ -14,8 +14,8 @@ DISTFILES=	remote.c vroot.h
 
 MAINTAINER=	kbyanc@posi.net
 
+USE_XLIB=	yes
 FETCH_BEFORE_ARGS=	-b
-
 DIST_SUBDIR=	netscape-remote
 NO_WRKSUBDIR=   yes
 
