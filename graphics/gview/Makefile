@@ -2,7 +2,7 @@
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/gview/Makefile,v 1.12 2000/03/29 07:26:44 cpiazza Exp $
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.13 2000/04/14 10:46:14 asami Exp $
 #
 
 PORTNAME=	gview
@@ -22,7 +22,9 @@ GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LDFLAGS="-L${LOCALBASE}/lib" \
+		GTK_CONFIG="${GTK_CONFIG}"
 
 post-install:
 .if !defined(NOPORTDOCS)
