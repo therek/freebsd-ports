@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.355 2001/04/11 04:59:29 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.356 2001/04/13 19:10:12 knu Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -14,6 +14,7 @@
     SUBDIR += acroread-jpnfont
     SUBDIR += addttfont
     SUBDIR += another-htmllint
+    SUBDIR += aterm
     SUBDIR += balsa
     SUBDIR += bible_names-fpw
     SUBDIR += binder
