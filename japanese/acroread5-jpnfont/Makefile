@@ -2,12 +2,13 @@
 # Date created:		99/06/16
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/acroread-jpnfont/Makefile,v 1.5 2000/04/11 14:12:51 knu Exp $
+# $FreeBSD$
 #
 
 DISTNAME=	jpnfont
+DIST_SUBDIR=	Acrobat5
 CATEGORIES=	japanese
 
-MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
+MASTERDIR=	${.CURDIR}/../../print/acroread5-commfont
 
 .include "${MASTERDIR}/Makefile"

@@ -2,12 +2,13 @@
 # Date created:		99/06/16
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/korean/acroread-korfont/Makefile,v 1.5 2000/04/13 09:15:54 asami Exp $
+# $FreeBSD$
 #
 
 DISTNAME=	korfont
+DIST_SUBDIR=	Acrobat5
 CATEGORIES=	korean
 
-MASTERDIR=	${.CURDIR}/../../print/acroread-commfont
+MASTERDIR=	${.CURDIR}/../../print/acroread5-commfont
 
 .include "${MASTERDIR}/Makefile"
