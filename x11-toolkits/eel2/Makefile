@@ -2,14 +2,14 @@
 # Date created:         		8th May 2001
 # Whom:                 		Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/eel/Makefile,v 1.1 2001/05/08 18:58:19 ade Exp $
+# $FreeBSD: ports/x11-toolkits/eel/Makefile,v 1.2 2001/05/11 16:36:42 ade Exp $
 #
 
 PORTNAME=	eel
 PORTVERSION=	1.0
 CATEGORIES=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	stable/sources/librsvg
+MASTER_SITE_SUBDIR=	stable/sources/eel
 
 MAINTAINER=	gnome@FreeBSD.org
 
