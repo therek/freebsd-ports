@@ -2,14 +2,13 @@
 # Date created:			Apr 16, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/audio/mp3check/Makefile,v 1.3 2001/06/08 05:36:27 markp Exp $
+# $FreeBSD: ports/audio/mp3check/Makefile,v 1.4 2001/07/13 04:08:20 markp Exp $
 #
 
 PORTNAME=	mp3check
-PORTVERSION=	1.2
+PORTVERSION=	1.3
 CATEGORIES=	audio
 MASTER_SITES=	http://www.icculus.org/mp3check/
-DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 
 MAINTAINER=	markp@FreeBSD.org
@@ -25,9 +24,9 @@ EXTRACT_AFTER_ARGS=	${WRKSRC}
 NO_BUILD=	yes
 
 pre-patch:
-	@${PERL} -pi -e "s|^#!.+|#!${PERL}|" ${WRKSRC}/mp3check
+	@${PERL} -pi -e "s|^#!.+|#!${PERL}|" ${WRKSRC}/${DISTNAME}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKSRC}/mp3check ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} ${PREFIX}/bin/mp3check
 
 .include <bsd.port.mk>
