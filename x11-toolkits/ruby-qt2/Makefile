@@ -2,11 +2,12 @@
 # Date created:		9 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.19 2001/01/23 07:20:39 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2/Makefile,v 1.20 2001/02/07 06:21:21 knu Exp $
 #
 
 PORTNAME=	qt2
 PORTVERSION=	0.11
+PORTREVISION=	1
 CATEGORIES=	x11-toolkits ruby
 MASTER_SITES=	http://sfns.u-shizuoka-ken.ac.jp/geneng/horie_hp/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -32,6 +33,9 @@ INSTALL_TARGET=	site-install
 
 post-extract:
 	find ${WRKSRC} '(' -name .cvsignore -o -name a.out ')' -delete
+
+post-patch:
+	${RUBY} -i -pe 'sub %r"/usr/X11\b", "${X11BASE}"' ${WRKSRC}/lib/qt2.rb
 
 post-install:
 .if !defined(NOPORTDOCS)
