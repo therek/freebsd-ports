@@ -2,15 +2,15 @@
 # Date created:				2 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.12 2001/05/16 09:42:55 demon Exp $
+# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.13 2001/06/01 07:55:03 demon Exp $
 #
 
 PORTNAME=	mysql-navigator
-PORTVERSION=	1.2.2
+PORTVERSION=	1.2.4
 CATEGORIES=	databases kde
 MASTER_SITES=	http://sql.kldp.org/snapshots/ \
 		ftp://sise15.mizi.com/pub/
-DISTNAME=	mysql_navigator_${PORTVERSION}
+DISTNAME=	mysqlnavigator-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
