@@ -2,11 +2,11 @@
 # Date created:				5th October 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.5 2000/11/14 14:10:09 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gal/Makefile,v 1.6 2000/12/08 21:10:26 ade Exp $
 #
 
 PORTNAME=	gal
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/gal
