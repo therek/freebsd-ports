@@ -3,7 +3,7 @@
 # Date created:		27 February 1999
 # Whom:			sada
 #
-# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.3 1999/08/29 18:23:35 sada Exp $
+# $FreeBSD: ports/www/libxpg4-ns/Makefile,v 1.4 1999/09/10 23:07:15 sada Exp $
 #
 
 DISTNAME=	libxpg4-3.3
@@ -14,15 +14,14 @@ MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
 
 MAINTAINER=	sada@FreeBSD.ORG
 
-MAKE_ENV+=	OBJFORMAT=aout SHLIB_MAJOR=2 SHLIB_MINOR=0 \
-		LDDESTDIRENV=LIBRARY_PATH=${PREFIX}/lib/aout
+MAKE_ENV+=	OBJFORMAT=aout SHLIB_MAJOR=2 SHLIB_MINOR=0
 PORTOBJFORMAT=	aout
 
 LIBDIR=		${PREFIX}/lib/aout
 SRCDIR=		/usr/src
 
 pre-build:
-.if !exists(/usr/lib/aout/crt0.o)
+.if !exists(/usr/lib/aout/c++rt0.o)
 	@${CAT} ${FILESDIR}/message.nolib
 	@${FALSE}
 .endif
