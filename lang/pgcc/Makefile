@@ -3,11 +3,11 @@
 # Date created:			  10 Dec 1998
 # Whom:				  David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/pgcc/Makefile,v 1.27 2000/04/16 04:14:10 asami Exp $
+# $FreeBSD: ports/lang/pgcc/Makefile,v 1.28 2000/10/08 10:21:52 asami Exp $
 #
 
 PORTNAME=	pgcc
-PORTVERSION=	2.95.1
+PORTVERSION=	2.95.2
 CATEGORIES=	lang
 MASTER_SITES=	ftp://go.cygnus.com/pub/sourceware.cygnus.com/pub/egcs/releases/${DISTNAME}/ \
 		ftp://egcs.cygnus.com/pub/egcs/releases/${DISTNAME}/ \
@@ -27,7 +27,7 @@ PATCH_SITES=	http://www.gcc.ml.org/data/source/  \
 		ftp://ftp.goof.com/pub/pcg/source/  \
 		ftp://ftp.hitachi-sk.co.jp/pub/pentium-gcc/source/  \
 		ftp://ftp.fu-berlin.de/unix/languages/pgcc/source/
-PATCHFILES=	gcc-2.95.1-pgcc-2.95.1.diff.gz
+PATCHFILES=	gcc-2.95.2-pgcc-2.95.3.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
