@@ -2,7 +2,7 @@
 # Date created:				02 October 1999
 # Whom:					jedgar@fxp.org
 #
-# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.4 2001/01/21 15:40:31 dirk Exp $
+# $FreeBSD: ports/databases/dbf2mysql/Makefile,v 1.5 2001/02/07 18:26:09 jedgar Exp $
 #
 
 PORTNAME=	dbf2mysql
@@ -15,7 +15,7 @@ MAINTAINER=	jedgar@FreeBSD.org
 LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/dbf2mysql ${PREFIX}/bin
-	${INSTALL_SCRIPT} ${WRKDIR}/mysql2dbf ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/dbf2mysql ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/mysql2dbf ${PREFIX}/bin
 
 .include <bsd.port.mk>
