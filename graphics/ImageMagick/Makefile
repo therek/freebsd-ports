@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.117 2001/08/15 20:33:15 knu Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.118 2001/08/25 03:18:42 petef Exp $
 #
 
 PORTNAME=	ImageMagick
@@ -34,7 +34,7 @@ LIB_DEPENDS=	fpx.1:${PORTSDIR}/graphics/libfpx \
 		jbig.1:${PORTSDIR}/graphics/jbigkit \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		lcms.1:${PORTSDIR}/graphics/lcms \
-		png.4:${PORTSDIR}/graphics/png \
+		png.5:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		freetype.7:${PORTSDIR}/print/freetype2 \
 		xml2.5:${PORTSDIR}/textproc/libxml2
