@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.85 2000/11/23 04:58:28 dburr Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.86 2000/12/04 09:52:10 sobomax Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -46,6 +46,7 @@
     SUBDIR += p5-Mysql
     SUBDIR += p5-Pg
     SUBDIR += p5-SQL-Statement
+    SUBDIR += p5-Text-Query-SQL
     SUBDIR += p5-hp200lx-db
     SUBDIR += pgaccess
     SUBDIR += postgresql7
