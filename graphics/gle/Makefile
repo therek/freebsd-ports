@@ -2,7 +2,7 @@
 # Date created:				29 August 2000
 # Whom:					David Gilbert <dgilbert@velocet.ca>
 #
-# $FreeBSD: ports/graphics/gle/Makefile,v 1.2 2001/05/23 05:16:02 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gle
@@ -27,5 +27,10 @@ MAN3=		gle.3gle gleExtrusion.3gle gleHelicoid.3gle gleLathe.3gle \
 		gleSetJoinStyle.3gle gleSetNumSides.3gle gleSpiral.3gle \
 		gleSuperExtrusion.3gle gleTextureMode.3gle gleToroid.3gle \
 		gleTwistExtrusion.3gle
+
+post-patch:
+.for file in ex_angle.c ex_cut_round.c ex_raw.c extrude.c round_cap.c segment.c texgen.c
+	@${PERL} -pi -e "s/malloc.h/stdlib.h/g" ${WRKSRC}/src/${file}
+.endfor
 
 .include <bsd.port.mk>
