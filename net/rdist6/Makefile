@@ -2,7 +2,7 @@
 # Date created:		19 August 1995
 # Whom:			peter
 #
-# $FreeBSD: ports/net/rdist6/Makefile,v 1.19 1999/08/30 14:23:58 peter Exp $
+# $FreeBSD: ports/net/rdist6/Makefile,v 1.20 2000/04/09 18:13:20 cpiazza Exp $
 #
 
 PORTNAME=	rdist
@@ -15,6 +15,9 @@ MASTER_SITES=	http://www.magnicomp.com/download/rdist/ \
 MAINTAINER=	peter@FreeBSD.org
 
 .include <bsd.port.pre.mk>
+.if ${OSVERSION} < 400000
+BROKEN=		Not supported for pre-4.0 FreeBSD
+.endif
 
 # To avoid confusion with /usr/bin/rdist, you may prefer otherwise.
 RDIST_NAME?=	rdist6
