@@ -1,5 +1,5 @@
 # portaudit exclude list
-# $FreeBSD: ports/security/portaudit-db/database/portaudit.xlist,v 1.5 2004/08/17 07:56:37 eik Exp $
+# $FreeBSD: ports/security/portaudit-db/database/portaudit.xlist,v 1.6 2004/08/23 23:12:02 eik Exp $
 3362f2c1-8344-11d8-a41f-0020ed76ef5a
 5e7f58c3-b3f8-4258-aeb8-795e5e940ff8
 4aec9d58-ce7b-11d8-858d-000d610a3b12
@@ -22,3 +22,5 @@ a713c0f9-ec54-11d8-9440-000347a4fa7d
 e811aaf1-f015-11d8-876f-00902714cc7c
 ebffe27a-f48c-11d8-9837-000c41e2cdad
 0d3a5148-f512-11d8-9837-000c41e2cdad
+b6cad7f3-fb59-11d8-9837-000c41e2cdad
+d2102505-f03d-11d8-81b0-000347a4fa7d
