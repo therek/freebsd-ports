@@ -2,7 +2,7 @@
 # Date created:		04 October 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/net/poptop/Makefile,v 1.4 2000/10/30 14:07:49 nsayer Exp $
+# $FreeBSD: ports/net/poptop/Makefile,v 1.5 2001/02/24 00:02:47 nsayer Exp $
 #
 
 PORTNAME=	poptop
@@ -12,8 +12,6 @@ MASTER_SITES=	http://poptop.lineo.com/releases/
 DISTNAME=	pptpd-${PORTVERSION}
 
 MAINTAINER=	nsayer@freebsd.org
-
-FORBIDDEN=	"This port is deprecated in favor of ports/net/mpd-netgraph's pptp functionality"
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-bsdppp
