@@ -3,11 +3,11 @@
 # Date created:			Apr 25, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pfinger/Makefile,v 1.1 2001/04/26 17:20:33 ijliao Exp $
 #
 
 PORTNAME=	pfinger
-PORTVERSION=	0.7.6
+PORTVERSION=	0.7.7
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.xelia.ch/pub/unix/ \
 		http://www.xelia.ch/unix/pfinger/
