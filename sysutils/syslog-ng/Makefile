@@ -2,11 +2,11 @@
 # Date created:		22 April 2000
 # Whom:			Vince Valenti <vince@blue-box.net>
 #
-# $FreeBSD: ports/sysutils/syslog-ng/Makefile,v 1.8 2000/12/14 16:03:50 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	syslog-ng
-PORTVERSION=	1.4.11
+PORTVERSION=	1.4.14
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.balabit.hu/downloads/syslog-ng/1.4/
 
