@@ -2,7 +2,7 @@
 # Date created:		26 Aug 1997
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vfghostscript5/Makefile,v 1.38 2000/10/16 22:00:43 ade Exp $
+# $FreeBSD: ports/japanese/vfghostscript5/Makefile,v 1.39 2000/10/26 21:34:22 taoka Exp $
 #
 
 PORTNAME=	vfghostscript
@@ -20,12 +20,11 @@ MASTER_SITES=	${MASTER_SITE_GNU} \
 		http://itohws03.ee.noda.sut.ac.jp/~matsuda/VFlib-FT/ \
 		http://www6.vc-net.ne.jp/~umi/ \
 		http://plaza26.mbn.or.jp/~higamasa/gdevmd2k/ \
-		http://www.aial.hiroshima-u.ac.jp/~sakai/Linux/gs${PORTVERSION}/ \
 		http://www.ceres.dti.ne.jp/~owatanab/gdevnpdl/ \
 		http://www.humblesoft.com/pub/
 # first for ${MASTER_SITE_GNU}, second for ${MASTER_SITE_LOCAL},
 # third for ${MASTER_SITE_PORTS_JP}
-MASTER_SITE_SUBDIR=	ghostscript asami/LOCAL_PORTS .
+MASTER_SITE_SUBDIR=	ghostscript asami/LOCAL_PORTS taoka .
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${GS_DRIVERS}
 EXTRACT_ONLY=	${GS_SOURCES}
