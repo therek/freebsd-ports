@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.49 2000/07/04 17:46:11 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.50 2000/07/04 18:13:10 cjh Exp $
 #
 
     SUBDIR += Wnn
@@ -12,6 +12,7 @@
     SUBDIR += engdic
     SUBDIR += eterm
     SUBDIR += ftghostscript5
+    SUBDIR += ftghostscript55
     SUBDIR += gau
     SUBDIR += gtk10
     SUBDIR += gtkcomm
