@@ -3,7 +3,7 @@
 # Date created:         2 July 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/math/lapack/Makefile,v 1.15 1999/10/06 01:48:54 jmz Exp $
+# $FreeBSD: ports/math/lapack/Makefile,v 1.16 1999/10/09 18:39:30 dan Exp $
 #
 
 DISTNAME=	LAPACK
@@ -202,6 +202,12 @@ MANL=	cbdsqr.l cgbbrd.l cgbcon.l cgbequ.l cgbmv.l cgbrfs.l cgbsv.l cgbsvx.l \
 	zunmr3.l zunmrq.l zunmrz.l zunmtr.l zupgtr.l zupmtr.l
 
 .include <bsd.port.pre.mk>
+
+pre-fetch:
+	@${ECHO} "You can override FC and FFLAGS on the command line."
+.if !defined(ENABLE_TESTING) || ${ENABLE_TESTING} != "YES"
+	@${ECHO} "Set ENABLE_TESTING to YES to enable testing and timing."
+.endif
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/BLAS/SRC/libblas.* ${PREFIX}/lib
