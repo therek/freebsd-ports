@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.240 2001/07/13 15:05:17 roam Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.241 2001/07/22 07:52:00 markp Exp $
 #
 
     SUBDIR += abook
@@ -161,6 +161,7 @@
     SUBDIR += rftp
     SUBDIR += ripmime
     SUBDIR += rlytest
+    SUBDIR += rmime
     SUBDIR += rmoldmail
     SUBDIR += ruby-tmail
     SUBDIR += sendmail
