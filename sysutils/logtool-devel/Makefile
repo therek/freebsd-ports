@@ -3,28 +3,22 @@
 # Date created:			Dec 30, 2000
 # Whom:				Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.3 2001/01/14 19:24:20 clive Exp $
+# $FreeBSD: ports/sysutils/logtool/Makefile,v 1.4 2001/01/21 04:26:21 ijliao Exp $
 #
 
 PORTNAME=	logtool
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	sysutils
-MASTER_SITES=	http://users.digitex.net/~max/
+MASTER_SITES=	http://users.digitex.net/~max/logtool/
 
 MAINTAINER=	ijliao@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS= default
+CONFIGURE_ARGS=	default
 
 ALL_TARGET=	build
-
-.if defined(NOPORTDOCS)
-NODOCS=		"@comment "
-.endif
-
-PLIST_SUB=	NOPORTDOCS=${NODOCS}
 
 post-patch:
 .for file in logtool/Makefile logtail/Makefile
