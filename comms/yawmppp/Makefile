@@ -2,7 +2,7 @@
 # Date created:				07 Mar 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.2 2001/05/01 17:20:53 lioux Exp $
+# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.3 2001/06/10 15:49:47 kevlo Exp $
 #
 
 PORTNAME=	yawmppp
@@ -28,5 +28,9 @@ pre-configure:
 	${PERL} -pi -e "s@-g -O2@${CFLAGS}@g; s@-O2 -Wall@${CFLAGS} -Wall@g; \
 			s@-O2@${CFLAGS}@g" ${WRKSRC}/*/Makefile.in \
 			${WRKSRC}/configure ${WRKSRC}/*/*/Makefile.in
+
+pre-patch:
+	@${PERL} -pi -e "s|\@prefix\@/doc/|\@prefix\@/share/doc/|g" \
+		${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>
