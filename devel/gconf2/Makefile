@@ -2,11 +2,12 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.10 2000/11/29 11:46:39 sobomax Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.11 2001/01/31 15:56:37 ade Exp $
 #
 
 PORTNAME=	gconf
 PORTVERSION=	0.12
+PORTREVISION=	1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/GConf
@@ -16,8 +17,7 @@ MAINTAINER=	ade@FreeBSD.org
 
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt \
 		guile.9:${PORTSDIR}/lang/guile \
-		oaf.0:${PORTSDIR}/devel/oaf \
-		iconv.2:${PORTSDIR}/converters/iconv
+		oaf.0:${PORTSDIR}/devel/oaf
 
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
@@ -25,7 +25,7 @@ USE_LIBTOOL=	yes
 USE_GNOME=	yes
 INSTALL_SHLIBS=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib -liconv"
+		LIBS="-L${LOCALBASE}/lib"
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
