@@ -2,17 +2,18 @@
 # Date created:        15 November 2000
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/ari-yahoo/Makefile,v 1.1 2000/12/17 02:42:48 obrien Exp $
 #
 
 PORTNAME=	ari-yahoo
-PORTVERSION=	1.4.1
+PORTVERSION=	1.9
 CATEGORIES=	misc
-MASTER_SITES=	http://lusis.org/~ari/yahoo/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	greid@ukug.uk.freebsd.org
 
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>
