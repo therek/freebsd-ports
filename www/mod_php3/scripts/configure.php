@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.91 2000/06/01 14:22:25 dirk Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.92 2000/06/06 20:45:50 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc ]; then
 	exit
@@ -28,6 +28,7 @@ OpenLDAP	"OpenLDAP support" OFF \
 SNMP		"SNMP support" OFF \
 XML		"XML support" OFF \
 FTP		"File Transfer Protocol support" OFF \
+gettext		"gettext library support" OFF \
 2> /tmp/checklist.tmp.$$
 
 	retval=$?
@@ -148,6 +149,10 @@ while [ "$1" ]; do
 			;;
 		\"FTP\")
 			echo "CONFIGURE_ARGS+=--with-ftp"
+			;;
+		\"gettext\")
+			echo "LIB_DEPENDS+=	intl.1:${PORTSDIR}/devel/gettext"
+			echo "CONFIGURE_ARGS+=--with-gettext=${PREFIX}"
 			;;
 		*)
 			echo "Invalid option(s): $*" > /dev/stderr
