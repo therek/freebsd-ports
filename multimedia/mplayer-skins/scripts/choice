@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/multimedia/mplayer-skins/scripts/choice,v 1.3 2002/06/11 13:19:22 lioux Exp $
+# $FreeBSD: ports/multimedia/mplayer-skins/scripts/choice,v 1.4 2003/03/05 00:09:14 lioux Exp $
 # based on configure from mplayer-skins by Andreas Klemm <andreas@FreeBSD.org>
 
 if [ "$BATCH" != "yes" ]; then
@@ -36,6 +36,7 @@ only the skins you really want. \n\n\
   "WindowsMediaPlayer6"	"no comment"				OFF \
   "Xanim"	"xanim \"feeling\""					OFF \
   "Xine-LCD"	"MPlayer conversion of Xine's LCD skin"		OFF \
+  "Mini"	"Mplayer-plugin for mozilla"			OFF \
 2> /tmp/mplayer-skins-checklist.$$
 
 retval=$?
