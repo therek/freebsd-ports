@@ -9,7 +9,7 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.62 2005/01/20 08:43:09 phantom Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.63 2005/02/10 01:44:14 hq Exp $
 #
 
 .if !defined(Java_Include)
@@ -46,7 +46,7 @@ Java_Include_MAINTAINER=	glewis@FreeBSD.org hq@FreeBSD.org
 #					considered to be the sub-make command. When no 'do-build'
 #					target is defined by the port, a default one will be set
 #					that simply runs Ant according to MAKE_ENV, MAKE_ARGS and
-#					ALL_TARGETS. Read the documentation in bsd.port.mk for more
+#					ALL_TARGET. Read the documentation in bsd.port.mk for more
 #					information.
 #
 #-------------------------------------------------------------------------------
