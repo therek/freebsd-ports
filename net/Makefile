@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.370 2000/06/30 14:34:11 sobomax Exp $
+# $FreeBSD: ports/net/Makefile,v 1.371 2000/07/02 08:31:20 will Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -158,6 +158,7 @@
     SUBDIR += p5-Net-IPv4Addr
     SUBDIR += p5-Net-Netmask
     SUBDIR += p5-Net-RawIP
+    SUBDIR += p5-Net-SNMP
     SUBDIR += p5-Net-Telnet
     SUBDIR += p5-Net-Whois
     SUBDIR += p5-Net-ext
