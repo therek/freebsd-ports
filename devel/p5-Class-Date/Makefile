@@ -2,11 +2,11 @@
 # Date Created:				28 June 2001
 # Whom:					Pete Fritchman <petef@databits.net>
 #
-# $FreeBSD: ports/devel/p5-Class-Date/Makefile,v 1.3 2001/07/22 04:42:55 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Class-Date
-PORTVERSION=	1.0.5
+PORTVERSION=	1.0.7
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Class
