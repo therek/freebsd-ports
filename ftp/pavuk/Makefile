@@ -3,7 +3,7 @@
 # Date created:				19 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.12 1999/08/25 05:55:21 obrien Exp $
 #
 
 DISTNAME=		pavuk-0.9pl18
@@ -18,10 +18,15 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		andy@icc.surw.chel.su
 
-LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
-
 GNU_CONFIGURE=		yes
+
+.if defined(NO_X11)
+CONFIGURE_ARGS=		--disable-gtk
+.else
 CONFIGURE_ARGS=		--with-xpm-includes=${X11BASE}/include --disable-gtk
+LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
+.endif
+
 USE_GMAKE=		yes
 
 MAN1=			pavuk.1
