@@ -2,16 +2,17 @@
 # Date created:		30 August 1999
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/word/Makefile,v 1.4 2000/04/13 08:33:37 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	word
-PORTVERSION=	0.99.12
+PORTVERSION=	0.99.22
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.linet.gr.jp/~mituiwa/
 
 MAINTAINER=	sada@FreeBSD.ORG
 
+FORBIDDEN=	"distfile is not available"
 USE_GTK=	yes
 
 DOCDIR=		${PREFIX}/share/doc/ja-word
