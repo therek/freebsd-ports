@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.97 2001/09/21 05:43:55 knu Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.98 2001/09/24 05:05:45 ijliao Exp $
 #
 
     SUBDIR += CJK
@@ -8,6 +8,7 @@
     SUBDIR += acroread-chsfont
     SUBDIR += acroread-chtfont
     SUBDIR += arphicttf
+    SUBDIR += aterm
     SUBDIR += auto-tw-l10n
     SUBDIR += autoconvert
     SUBDIR += bg5ps
