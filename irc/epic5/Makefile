@@ -2,11 +2,11 @@
 # Date created:		11 November 1998
 # Whom:			Ben Hutchinson <benhutch@xfiles.org.uk>
 #
-# $FreeBSD: ports/irc/epic4/Makefile,v 1.30 2000/12/22 17:48:10 knu Exp $
+# $FreeBSD: ports/irc/epic4/Makefile,v 1.31 2001/01/04 19:49:00 knu Exp $
 #
 
 PORTNAME=	epic4
-PORTVERSION=	0.9.15
+PORTVERSION=	0.9.16
 # Make CATEGORIES overridable for slave ports
 CATEGORIES?=	irc
 MASTER_SITES=	ftp://ftp.magenet.com/pub/epic/%SUBDIR%/ \
