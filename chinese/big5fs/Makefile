@@ -2,11 +2,11 @@
 # Date created:         Oct 13, 2000
 # Whom:                 keith@FreeBSD.org
 #
-# $FreeBSD: ports/chinese/big5fs/Makefile,v 1.2 2000/11/06 18:14:40 keith Exp $
+# $FreeBSD: ports/chinese/big5fs/Makefile,v 1.3 2001/03/28 17:44:25 keith Exp $
 #
 
 PORTNAME=		big5fs
-PORTVERSION=		2.0
+PORTVERSION=		2.1
 CATEGORIES=		chinese
 MASTER_SITES=		ftp://freebsd.sinica.edu.tw/pub/keith/
 
