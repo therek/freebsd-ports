@@ -2,7 +2,7 @@
 # Date Created:				3 Feb 2001
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/fwbuilder/Makefile,v 1.2 2001/03/21 07:09:44 dinoex Exp $
 #
 
 PORTNAME=	fwbuilder
@@ -32,6 +32,5 @@ post-extract:
 	iptables/Makefile.in
 	@${PERL} -pi -e "s|^CFLAGS\s+=\s+-Wall\s+-g|CFLAGS = \@CFLAGS@ -Wall|" ${WRKSRC}/src/$i
 .endfor
-
 
 .include <bsd.port.mk>
