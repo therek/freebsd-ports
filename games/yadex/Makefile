@@ -2,7 +2,7 @@
 # Date created:				17 June 2001
 # Whom:					Jordan DeLong <fracture@allusion.net>
 #
-# $FreeBSD: ports/games/yadex/Makefile,v 1.1 2001/06/18 16:05:34 dwcjr Exp $
+# $FreeBSD: ports/games/yadex/Makefile,v 1.2 2001/07/07 05:54:56 dwcjr Exp $
 #
 
 PORTNAME=	yadex
@@ -14,10 +14,11 @@ MAINTAINER=	fracture@allusion.net
 
 USE_GMAKE=	yes
 MAKEFILE=	GNUmakefile
+PLIST_SUB+=	PORTVERSION=${PORTVERSION}
 
 MAN6=		yadex.6 ybsp.6
 
 post-install:
-	${CHMOD} 644 ${PREFIX}/etc/yadex/1.5.2/yadex.cfg
+	${CHMOD} 644 ${PREFIX}/etc/yadex/${PORTVERSION}/yadex.cfg
 
 .include <bsd.port.mk>
