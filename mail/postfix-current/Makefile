@@ -2,12 +2,12 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.45 2001/03/02 06:08:05 kuriyama Exp $
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.46 2001/03/05 14:21:35 sf Exp $
 #
 
 PORTNAME=	postfix
 PORTVERSION=	20010228
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.porcupine.org/mirrors/postfix-release/experimental/ \
 		ftp://ftp.aet.tu-cottbus.de/pub/postfix_tls/%SUBDIR%/ \
@@ -42,7 +42,7 @@ CONF2=	sample-aliases.cf sample-canonical.cf sample-debug.cf \
 	sample-smtpd.cf sample-transport.cf sample-virtual.cf
 
 BIN1=	bounce cleanup error flush lmtp local master nqmgr pickup \
-	pipe qmgr showq smtp smtpd spawn trivial-rewrite
+	pipe qmgr showq smtp smtpd spawn trivial-rewrite virtual
 
 BIN2=	postalias postcat postconf postdrop postfix \
 	postkick postlock postlog postmap postsuper sendmail
