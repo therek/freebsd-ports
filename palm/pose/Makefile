@@ -2,7 +2,7 @@
 # Date created:			Sat May  6 14:03:08 CEST 2000
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/pose/Makefile,v 1.4 2001/01/26 12:31:02 dirk Exp $
+# $FreeBSD: ports/palm/pose/Makefile,v 1.5 2001/04/04 09:02:42 mharo Exp $
 #
 
 PORTNAME=	pose
@@ -22,6 +22,8 @@ USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--x-includes=${X11BASE}/include \
 		--x-libraries=${X11BASE}/lib
+CONFIGURE_ENV=	CPPFLAGS="${PTHREAD_CFLAGS}" \
+		LIBS="${PTHREAD_LIBS}"
 
 post-install:
 	${MKDIR} ${PREFIX}/share/pose
