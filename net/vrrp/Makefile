@@ -2,7 +2,7 @@
 # Date created:		18 Feb 2001
 # Whom:			Andy K <minosh@engineer.com>
 #
-# $FreeBSD: ports/net/vrrp/Makefile,v 1.2 2001/03/29 15:40:42 keichii Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vrrpd
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.vrrp.net/pub/vrrpd/ \
 		ftp://ftp.tecc.co.uk/pub/vrrpd/
 
 MAINTAINER=	minosh@engineer.com
+
+BROKEN=		"The maintainer considers this an incomplete implementation of RFC2338"
 
 .if	!defined(NOPORTDOCS)
 post-install:
