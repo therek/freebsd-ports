@@ -2,7 +2,7 @@
 # Date created:			18 May 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/teapop/Makefile,v 1.6 2001/01/21 15:40:43 dirk Exp $
+# $FreeBSD: ports/mail/teapop/Makefile,v 1.7 2001/02/05 15:11:16 olgeni Exp $
 #
 
 PORTNAME=	teapop
@@ -19,6 +19,10 @@ LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 .if defined(WITH_MYSQL)
 LIB_DEPENDS=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
+.endif
+
+.if defined(WITH_DRAC)
+BUILD_DEPENDS=	${PREFIX}/lib/libdrac.a:${PORTSDIR}/mail/drac
 .endif
 
 GNU_CONFIGURE=	yes
@@ -38,6 +42,11 @@ CONFIGURE_ARGS+=	--with-pgsql=${PREFIX}/pgsql
 
 .if defined(WITH_MYSQL)
 CONFIGURE_ARGS+=	--with-mysql=${PREFIX}
+.endif
+
+.if defined(WITH_DRAC)
+CONFIGURE_ARGS+=	--with-drac=${PREFIX}/lib \
+			--with-dracinc=${PREFIX}/include
 .endif
 
 MAN8=		teapop.8
