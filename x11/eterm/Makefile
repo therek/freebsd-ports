@@ -2,7 +2,7 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.30 2001/02/01 19:56:25 olgeni Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.31 2001/02/01 20:11:02 olgeni Exp $
 #
 
 PORTNAME=	eterm
@@ -12,7 +12,7 @@ MASTER_SITES=           ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=     eterm
 DISTNAME=	Eterm-${PORTVERSION}
 
-MAINTAINER=	murray@FreeBSD.org
+MAINTAINER=	olgeni@FreeBSD.org
 
 BUILD_DEPENDS=	man2html:${PORTSDIR}/textproc/man2html
 
