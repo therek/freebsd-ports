@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/ganglia-monitor-core/pkg-plist,v 1.2 2003/06/07 12:59:36 naddy Exp $
+@comment $FreeBSD: ports/sysutils/ganglia-monitor-core/pkg-plist,v 1.3 2003/11/04 20:38:47 linimon Exp $
 bin/gstat
 bin/gmetric
 etc/gmond.conf.sample
@@ -38,4 +38,5 @@ lib/libganglia.a
 %%GMETAD%%sbin/gmetad
 sbin/gmond
 @dirrm include/ganglia
-@unexec rmdir /var/db/ganglia/rrds /var/db/ganglia 2>/dev/null || true
+@unexec rmdir %D/var/db/ganglia/rrds 2>/dev/null || true
+@unexec rmdir %D/var/db/ganglia 2>/dev/null || true
