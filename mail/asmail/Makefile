@@ -2,11 +2,11 @@
 # Date created:		15 August 1997
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/mail/asmail/Makefile,v 1.9 1999/09/09 03:03:18 cpiazza Exp $
+# $FreeBSD: ports/mail/asmail/Makefile,v 1.10 2000/04/13 19:59:21 cpiazza Exp $
 #
 
 PORTNAME=	asmail
-PORTVERSION= 	0.53
+PORTVERSION= 	0.54
 CATEGORIES=	mail afterstep
 MASTER_SITES=	http://www.tigr.net/afterstep/as-apps/download/asmail/ \
 		ftp://ftp.afterstep.org/apps/asmail/
