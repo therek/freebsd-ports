@@ -2,7 +2,7 @@
 # Date created:				02-May-2001
 # Whom:					Dale Weber <netman@dynaplex.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/maint/Makefile,v 1.1 2001/05/25 19:09:53 ijliao Exp $
 #
 
 PORTNAME=	maint
@@ -12,8 +12,8 @@ MASTER_SITES=	http://www.dynaplex.net/opensource/software/
 
 MAINTAINER=	netman@dynaplex.net
 
-BUILD_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup-bin
-RUN_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup-bin
+BUILD_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup
+RUN_DEPENDS=	cvsup:${PORTSDIR}/net/cvsup
 
 USE_PYTHON=	yes
 NO_BUILD=	yes

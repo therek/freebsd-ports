@@ -2,7 +2,7 @@
 # Date created:		01 February 1997
 # Whom:			jdp
 #
-# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.12 2000/07/09 17:57:27 jdp Exp $
+# $FreeBSD: ports/net/cvsup-mirror/Makefile,v 1.13 2000/10/08 10:22:25 asami Exp $
 #
 
 PORTNAME=	cvsup-mirror
@@ -12,8 +12,7 @@ DISTFILES=
 
 MAINTAINER=	jdp@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/bin/cvsup:${PORTSDIR}/net/cvsup-bin \
-		${LOCALBASE}/sbin/cvsupd:${PORTSDIR}/net/cvsupd-bin
+RUN_DEPENDS=	${LOCALBASE}/sbin/cvsupd:${PORTSDIR}/net/cvsup
 
 NO_WRKSUBDIR=	true
 NO_BUILD=	true
