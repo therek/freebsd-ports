@@ -2,19 +2,24 @@
 # Date created:         28 Jan 1999
 # Whom:                 Chip Marshall <chip@eboai.org>
 #
-# $FreeBSD: ports/audio/icecast/Makefile,v 1.13 2000/10/08 10:19:13 asami Exp $
+# $FreeBSD: ports/audio/icecast/Makefile,v 1.14 2001/01/23 01:55:17 jedgar Exp $
 #
 
 PORTNAME=	icecast
 PORTVERSION=	1.3.7
+PORTREVISION=	1
 CATEGORIES=	audio net
 MASTER_SITES=	http://www.icecast.org/releases/
-FORBIDDEN=	"Remotely exploitable buffer overflow"
 
 MAINTAINER=	chip@eboai.org
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=--with-libwrap
+
+pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} pkg-install
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/icecast ${PREFIX}/sbin
