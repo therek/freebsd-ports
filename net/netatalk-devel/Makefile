@@ -2,11 +2,12 @@
 # Date created:         23 Jul 1997
 # Whom:                 stb
 #
-# $FreeBSD: ports/net/netatalk/Makefile,v 1.23 2001/06/08 22:15:44 roam Exp $
+# $FreeBSD: ports/net/netatalk/Makefile,v 1.24 2001/09/04 17:48:21 dwcjr Exp $
 #
 
 PORTNAME=	netatalk
 PORTVERSION=	1.5p7
+PORTREVISION=	1
 CATEGORIES=	net print
 MASTER_SITES=   ${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	netatalk
@@ -78,9 +79,6 @@ post-install:
 .for i in ${LINKS}
 	( cd ${PREFIX}/bin && ${LN} -sf megatron ${i} )
 .endfor
-
-.if defined(WITH_PAM)
 	@${CAT} ${PKGMESSAGE}
-.endif
 
 .include <bsd.port.mk>
