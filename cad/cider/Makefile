@@ -3,7 +3,7 @@
 # Date created:		1999-12-12
 # Whom:			AMAKAWA Shuhei <amakawa@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/cad/cider/Makefile,v 1.1 1999/12/25 15:40:44 steve Exp $
+# $FreeBSD: ports/cad/cider/Makefile,v 1.2 1999/12/29 21:31:59 steve Exp $
 #
 
 DISTNAME=	cider1b1
@@ -25,8 +25,8 @@ pre-patch:
 	@${CP} -f ${WRKSRC}/spice/common/lib/helpdir/spice.txt ${WRKSRC}/cider/common/lib/helpdir/spice.txt
 
 post-patch:
-	@${LN} -fs ${WRKSRC}/spice/common/util/makelib.sh ${WRKSRC}/cider/common/util
-	@${LN} -fs ${WRKSRC}/spice/common/src/lib/sparse/spdefs.h ${WRKSRC}/cider/common/src/include
+	@${LN} -fs ../../../spice/common/util/makelib.sh ${WRKSRC}/cider/common/util
+	@${LN} -fs ../../../../spice/common/src/lib/sparse/spdefs.h ${WRKSRC}/cider/common/src/include
 	@${CP} -f ${FILESDIR}/Makefile.spice ${WRKSRC}/spice/common/Makefile
 	@${CP} -f ${FILESDIR}/Makefile.cider ${WRKSRC}/cider/common/Makefile
 	@${CP} -f ${FILESDIR}/FreeBSD ${WRKSRC}/spice/common/conf
