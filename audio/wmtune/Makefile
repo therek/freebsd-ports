@@ -3,7 +3,7 @@
 # Date created:				28 September 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/audio/wmtune/Makefile,v 1.2 2000/01/21 00:46:22 jedgar Exp $
+# $FreeBSD: ports/audio/wmtune/Makefile,v 1.3 2000/02/05 00:16:57 jedgar Exp $
 #
 
 DISTNAME=	wmtune-1.0
@@ -40,6 +40,9 @@ WMTUNE_DIFF=	wmtune.radiotrack.diff.gz
 
 post-patch:
 	@${GUNZIP_CMD} -c ${DISTDIR}/${WMTUNE_DIFF} | ${PATCH} ${PATCH_ARGS}
+	@${MV} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.orig
+	@${SED} -e 's|-O2|${CFLAGS}|' -e 's|cc|${CC}|' \
+		< ${WRKSRC}/Makefile.orig > ${WRKSRC}/Makefile
 
 do-configure:
 	@${PERL} -pi.orig -e 's|/etc|${PREFIX}/etc|' ${WRKSRC}/src/wmtune.c
