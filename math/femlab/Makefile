@@ -2,7 +2,7 @@
 # Date created:		19 June 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/math/femlab/Makefile,v 1.7 2000/04/20 20:41:11 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	femlab
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.md.chalmers.se/pub/Femlab/	\
 		ftp://ftp.ifs.hr/pub/SciUtil/
 DISTFILES=	femlab-2d-v${PORTVERSION}.tar.gz
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/libsx.a:${PORTSDIR}/x11/libsx
 

@@ -2,7 +2,7 @@
 # Date created:		5 June 1999
 # Whom:			Pedro F. Giffuni
 #
-# $FreeBSD: ports/emulators/twin/Makefile,v 1.6 2000/06/16 08:19:31 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	twin
@@ -11,7 +11,7 @@ CATEGORIES=	emulators devel
 MASTER_SITES=	ftp://ftp.willows.com/pub/development/
 DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
 
-MAINTAINER=	giffunip@asme.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		$(WRKDIR)/twin
 USE_XLIB=	yes
