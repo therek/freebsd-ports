@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.55 2000/09/25 16:06:35 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.56 2000/10/01 13:03:22 cjh Exp $
 #
     SUBDIR += texinfo
 
@@ -17,7 +17,6 @@
     SUBDIR += ftghostscript5
     SUBDIR += gau
     SUBDIR += ghostscript55httf
-    SUBDIR += gtk10
     SUBDIR += gtkcomm
     SUBDIR += h2ps
     SUBDIR += han
