@@ -2,15 +2,14 @@
 # Date created:         07 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xsok/Makefile,v 1.12 2000/09/16 17:55:13 ade Exp $
+# $FreeBSD: ports/games/xsok/Makefile,v 1.13 2001/01/16 17:30:51 sobomax Exp $
 #
 
 PORTNAME=	xsok
 PORTVERSION=	1.02
 CATEGORIES=	games
 MASTER_SITES=	ftp://tsx-11.mit.edu/pub/linux/sources/usr.bin.X11/ \
-		ftp://sunsite.cnlab-switch.ch/mirror/linux/tsx-11/sources/usr.bin.X11/ \
-		ftp://ftp.freesoftware.com/pub/linux/tsx-11/sources/usr.bin.X11/
+		ftp://sunsite.cnlab-switch.ch/mirror/linux/tsx-11/sources/usr.bin.X11/
 EXTRACT_SUFX=	-src.tar.gz
 
 MAINTAINER=	ports@FreeBSD.org

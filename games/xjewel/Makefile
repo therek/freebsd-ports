@@ -2,15 +2,14 @@
 # Date created:         22 November 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/games/xjewel/Makefile,v 1.21 2000/09/12 13:03:59 asami Exp $
+# $FreeBSD: ports/games/xjewel/Makefile,v 1.22 2000/10/08 10:20:16 asami Exp $
 #
 
 PORTNAME=	xjewel
 PORTVERSION=	1.6
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.warwick.ac.uk/pub/x11/ \
-		ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+		ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.tar.z
 
 MAINTAINER=	jmz@FreeBSD.org

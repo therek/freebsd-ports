@@ -4,7 +4,7 @@
 # Based on:		emulators/linux_base by marcel@FreeBSD.org
 #			& graphics/xmovie by sanpei@sanpei.org
 #
-# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.8 2001/03/08 01:01:16 taoka Exp $
+# $FreeBSD: ports/x11-toolkits/linux-gtk/Makefile,v 1.9 2001/03/20 20:28:10 obrien Exp $
 #
 
 PORTNAME?=	gtk
@@ -28,8 +28,7 @@ NO_FILTER_SHLIBS=	yes
 PLIST=		${PKGDIR}/pkg-plist.${MACHINE_ARCH}
 MD5_FILE=	${MASTERDIR}/distinfo.${MACHINE_ARCH}
 
-RPM_MIRRORS=	ftp://ftp.freesoftware.com/pub/linux/redhat/old-releases/__DIR__/ \
-		ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/
+RPM_MIRRORS=	${MASTER_SITE_BACKUP}
 STDDIR=		redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
 UPDDIR=		updates/6.1/${MACHINE_ARCH}
 .if (${MACHINE_ARCH} == "i386")

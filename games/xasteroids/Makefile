@@ -2,14 +2,13 @@
 # Date created:		3 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/games/xasteroids/Makefile,v 1.15 2000/05/29 23:43:27 steve Exp $
+# $FreeBSD: ports/games/xasteroids/Makefile,v 1.16 2001/01/27 05:40:09 will Exp $
 #
 
 PORTNAME=	xasteroids
 PORTVERSION=	5.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/X11/R5contrib/ \
-		ftp://ftp.x.org/pub/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/pub/R5contrib/
 DISTFILES=	xasteroids.sh.Z
 
 MAINTAINER=	ports@FreeBSD.org

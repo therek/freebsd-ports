@@ -2,14 +2,13 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/x11/bricons/Makefile,v 1.11 2001/01/16 17:33:09 sobomax Exp $
+# $FreeBSD: ports/x11/bricons/Makefile,v 1.12 2001/01/28 19:19:14 dannyboy Exp $
 #
 
 PORTNAME=	bricons
 PORTVERSION=	3.0
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	-athena-3.0.tar.Z
 

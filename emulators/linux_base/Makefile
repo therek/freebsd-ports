@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.53 2001/04/25 17:26:30 olgeni Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.54 2001/05/24 08:28:41 olgeni Exp $
 #
 
 PORTNAME=		linux_base
@@ -30,7 +30,6 @@ PLIST=			${PKGDIR}/pkg-plist.${MACHINE_ARCH}
 MD5_FILE=		${MASTERDIR}/distinfo.${MACHINE_ARCH}
 
 RPM_MIRRORS=		\
-	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
 	ftp://ftp.redhat.com/pub/redhat/__DIR__/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/__DIR__/ \
 	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \

@@ -2,14 +2,13 @@
 # Date created:		19 October 1996
 # Whom:			pgs
 #
-# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.11 2000/04/14 10:46:20 asami Exp $
+# $FreeBSD: ports/graphics/hobbes-icons-xpm/Makefile,v 1.12 2001/08/23 20:21:49 kris Exp $
 #
 
 PORTNAME=	hobbes-icons-xpm3
 PORTVERSION=	1.0
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org

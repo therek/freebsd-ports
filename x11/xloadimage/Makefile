@@ -2,7 +2,7 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.24 2001/07/27 02:36:26 jmz Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.25 2001/09/11 02:30:09 ache Exp $
 #
 
 VERSION=	4.1
@@ -12,8 +12,7 @@ PORTREVISION=	0
 PORTNAME=	xloadimage
 PORTVERSION=	${VERSION}.${REVISION}
 CATEGORIES=	x11 graphics
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}.${VERSION}
 PATCH_SITES=	ftp://ftp.debian.org/debian/pool/main/x/xloadimage/ \
 		ftp://ftp.de.debian.org/debian/pool/main/x/xloadimage/

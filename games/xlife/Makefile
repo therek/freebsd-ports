@@ -2,14 +2,13 @@
 # Date created:		15 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/xlife/Makefile,v 1.16 2000/03/05 22:02:49 sada Exp $
+# $FreeBSD: ports/games/xlife/Makefile,v 1.17 2000/04/14 12:27:37 asami Exp $
 #
 
 PORTNAME=	xlife
 PORTVERSION=	3.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	xlife
 EXTRACT_SUFX=	.tar.Z
 

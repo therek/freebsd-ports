@@ -2,7 +2,7 @@
 # Date created:		May 18 2000
 # Whom:			Masahiro TAKEMURA
 #
-# $FreeBSD: ports/graphics/linux_mesa3/Makefile,v 1.11 2001/03/20 20:28:01 obrien Exp $
+# $FreeBSD: ports/graphics/linux_mesa3/Makefile,v 1.12 2001/06/07 23:50:54 dwcjr Exp $
 #
 
 PORTNAME=		mesa
@@ -30,7 +30,6 @@ NO_FILTER_SHLIBS=	yes
 NO_MTREE=		yes
 
 RPM_MIRRORS=		\
-	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
 	ftp://ftp.redhat.com/pub/redhat/__DIR__/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/redhat/__DIR__/ \
 	ftp://ftp.crc.ca/pub/systems/linux/redhat/ftp.redhat.com/__DIR__/ \

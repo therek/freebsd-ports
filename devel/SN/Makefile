@@ -2,14 +2,13 @@
 # Date created:			23 July 2000
 # Whom:				Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/devel/SN/Makefile,v 1.3 2000/10/08 10:19:24 asami Exp $
+# $FreeBSD: ports/devel/SN/Makefile,v 1.4 2000/10/31 14:59:58 trevor Exp $
 #
 
 PORTNAME=	SN
 PORTVERSION=	4.5.2
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/%SUBDIR% \
-	ftp://ftp.unina.it/pub/Unix/cygnus/%SUBDIR% \
+MASTER_SITES=	ftp://ftp.unina.it/pub/Unix/cygnus/%SUBDIR% \
 	ftp://unix.hensa.ac.uk/mirrors/sourceware.cygnus.com/pub/%SUBDIR% \
 	ftp://ftp.funet.fi/pub/mirrors/sourceware.cygnus.com/pub/%SUBDIR% \
 	ftp://gd.tuwien.ac.at/gnu/sourceware/%SUBDIR% \

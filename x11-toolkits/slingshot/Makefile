@@ -2,14 +2,13 @@
 # Date created:		5 March 1997
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.14 2000/06/16 21:52:22 asami Exp $
+# $FreeBSD: ports/x11-toolkits/slingshot/Makefile,v 1.15 2001/01/16 17:33:17 sobomax Exp $
 #
 
 PORTNAME=	slingshot
 PORTVERSION=	2.1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	SlingShot${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 

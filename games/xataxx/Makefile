@@ -2,14 +2,13 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xataxx/Makefile,v 1.7 2000/04/14 12:26:55 asami Exp $
+# $FreeBSD: ports/games/xataxx/Makefile,v 1.8 2000/10/14 19:45:42 ade Exp $
 #
 
 PORTNAME=	xataxx
 PORTVERSION=	1.0
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 

@@ -2,14 +2,13 @@
 # Date created:				21 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvmahjongg/Makefile,v 1.9 2000/04/01 01:00:51 mharo Exp $
+# $FreeBSD: ports/games/xvmahjongg/Makefile,v 1.10 2000/04/14 12:28:33 asami Exp $
 #
 
 PORTNAME=	xvmahjongg
 PORTVERSION=	2.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.x.org/R5contrib/
 DISTFILES=	${PORTNAME}${PORTVERSION}.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

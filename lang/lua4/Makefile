@@ -2,7 +2,7 @@
 # Date created:				27 June 1999
 # Whom:					Richard Kiss <richard@homemail.com>
 #
-# $FreeBSD: ports/lang/lua/Makefile,v 1.10 2001/04/30 06:54:55 kris Exp $
+# $FreeBSD: ports/lang/lua/Makefile,v 1.11 2001/05/14 00:13:15 jeh Exp $
 #
 
 PORTNAME=	lua
@@ -11,7 +11,6 @@ PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.tecgraf.puc-rio.br/pub/lua/ \
 		ftp://csg.uwaterloo.ca/pub/lhf/lua/ \
-		ftp://ftp.freesoftware.com/pub/languages/lua/ \
 		ftp://ftp.ntua.gr/pub/lang/lua/ \
 		ftp://ftp.uni-trier.de/pub/languages/lua/ \
 		ftp://ftp.gwdg.de/pub/languages/lua/

@@ -2,14 +2,13 @@
 # Date created:				5 January 1997
 # Whom:					Pedro Giffuni
 #
-# $FreeBSD: ports/math/ss/Makefile,v 1.8 2000/05/14 05:40:50 billf Exp $
+# $FreeBSD: ports/math/ss/Makefile,v 1.9 2001/08/23 20:21:51 kris Exp $
 #
 
 PORTNAME=	ss
 PORTVERSION=	1.3.3
 CATEGORIES=	math
 MASTER_SITES=	http://www.irus.rri.on.ca/~amulder/ss/ \
-		ftp://ftp.freesoftware.com/pub/unixfreeware/math/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/spreadsheet/ualberta/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 

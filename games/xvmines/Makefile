@@ -2,15 +2,14 @@
 # Date created:				18 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvmines/Makefile,v 1.8 2000/04/01 01:02:30 mharo Exp $
+# $FreeBSD: ports/games/xvmines/Makefile,v 1.9 2000/04/14 12:28:34 asami Exp $
 #
 
 PORTNAME=	xvmines
 PORTVERSION=	1.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.csd.uch.gr/pub/X11/games/ \
-		ftp://ftp.x.org/R5contrib/ \
-		ftp://ftp.freesoftware.com/pub/X11/R5contrib/
+		ftp://ftp.x.org/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org

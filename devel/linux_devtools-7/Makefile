@@ -2,7 +2,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.26 2001/03/20 20:27:58 obrien Exp $
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.27 2001/09/07 18:27:44 marcel Exp $
 #
 
 PORTNAME=		linux_devtools
@@ -38,7 +38,6 @@ NO_MTREE=		yes
 PLIST=			${PKGDIR}/pkg-plist.${MACHINE_ARCH}
 
 RPM_MIRRORS=		\
-	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
 	ftp://ftp.redhat.com/redhat/__DIR__/ \
 	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/__DIR__/ \
 	ftp://ftp.crc.ca/mirrors/by-site/ftp.redhat.com/redhat/__DIR__/ \

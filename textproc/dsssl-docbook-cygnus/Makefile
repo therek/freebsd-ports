@@ -2,14 +2,13 @@
 # Date created:        2 Feb 2000
 # Whom:                KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/textproc/dsssl-docbook-cygnus/Makefile,v 1.1 2000/10/31 06:01:38 kuriyama Exp $
+# $FreeBSD: ports/textproc/dsssl-docbook-cygnus/Makefile,v 1.2 2001/02/03 22:37:05 olgeni Exp $
 #
 
 PORTNAME=	dsssl-docbook-cygnus
 PORTVERSION=	1.44
 CATEGORIES=	textproc
-MASTER_SITES=	ftp://sourceware.cygnus.com/pub/docbook-tools/docware/SOURCES/\
-		ftp://ftp.freesoftware.com/pub/sourceware/docbook-tools/docware/SOURCES/
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/docbook-tools/docware/SOURCES/
 DISTNAME=	stylesheets
 EXTRACT_SUFX=	.tgz
 
