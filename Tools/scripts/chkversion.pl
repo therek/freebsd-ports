@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.4 2004/05/17 00:04:56 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkversion.pl,v 1.5 2004/05/17 17:09:01 eik Exp $
 #
 # MAINTAINER=   eik@FreeBSD.org
 #
@@ -178,7 +178,7 @@ while (<VERSIONS>) {
         $newversion =~ s/^.*-//;
         $oldversion =~ s/^.*-//;
 
-        my $result = readfrom '',
+        my $result = $newversion eq $oldversion ? '=' : readfrom '',
           $pkg_version, '-t', $newversion, $oldversion;
         if ($result eq '<') {
             $backwards{$origin} = "$pkgname{$origin} < $version";
