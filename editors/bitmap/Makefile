@@ -1,9 +1,9 @@
 # New ports collection makefile for:	bitmap for emacs20
-# Version required:	8.0
+# Version required:	8.1
 # Date created:		23 September 1998
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.5 1999/10/22 15:20:02 shige Exp $
+# $FreeBSD: ports/editors/bitmap-emacs20/Makefile,v 1.6 1999/11/05 16:33:46 shige Exp $
 #
 
 DISTNAME=	bitmap-mule-${BITMAP_VER}
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.jpl.org/pub/elisp/bitmap/
 MAINTAINER=	shige@FreeBSD.org
 
 # distfile version
-BITMAP_VER=		8.0
+BITMAP_VER=		8.1
 BITMAP_PKG_VER=		${BITMAP_VER}
 BITMAPDOCDIR=	share/doc/bitmap
 BITMAP_FONT=	${X11BASE}/lib/X11/fonts/local/etl8x16-bitmap.pcf.gz
