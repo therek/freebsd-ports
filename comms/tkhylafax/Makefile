@@ -2,7 +2,7 @@
 # Date created:		Sun Jun  8 11:51:21 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/comms/tkhylafax/Makefile,v 1.12 2000/04/08 23:22:41 mharo Exp $
+# $FreeBSD: ports/comms/tkhylafax/Makefile,v 1.13 2000/11/25 10:31:04 asami Exp $
 #
 
 PORTNAME=	tkhylafax
@@ -14,7 +14,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82 \
 		sendfax:${PORTSDIR}/comms/hylafax \
-		gs:${PORTSDIR}/print/ghostscript55 \
+		gs:${PORTSDIR}/print/ghostscript-gnu \
 		gv:${PORTSDIR}/print/gv
 
 WRKSRC=		${WRKDIR}/tkhylafax-3.0

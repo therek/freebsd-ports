@@ -2,7 +2,7 @@
 # Date created:		18 November 1998
 # Whom:			smace@freebsd.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pnm2ppa/Makefile,v 1.14 2001/03/03 21:19:12 sf Exp $
 #
 
 PORTNAME=	pnm2ppa
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55 \
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript-gnu \
 		enscript:${PORTSDIR}/print/enscript-letter
 
 MAN1=		pnm2ppa.1

@@ -2,7 +2,7 @@
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.14 2000/04/09 17:49:55 cpiazza Exp $
+# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.15 2001/01/04 22:36:05 andreas Exp $
 #
 
 PORTNAME=	html2ps-${PAPERSIZE}
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 BUILD_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick \
 		djpeg:${PORTSDIR}/graphics/jpeg \
 		giftopnm:${PORTSDIR}/graphics/netpbm \
-		gs:${PORTSDIR}/print/ghostscript55 \
+		gs:${PORTSDIR}/print/ghostscript-gnu \
 		tex:${PORTSDIR}/print/teTeX \
 		${site_perl}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		weblint:${PORTSDIR}/www/weblint
