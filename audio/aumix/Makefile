@@ -2,11 +2,11 @@
 # Date created:        21 May 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/aumix/Makefile,v 1.23 2000/06/14 13:21:06 sobomax Exp $
+# $FreeBSD: ports/audio/aumix/Makefile,v 1.24 2000/06/30 10:08:38 sobomax Exp $
 #
 
 PORTNAME=	aumix
-PORTVERSION=	2.6.1
+PORTVERSION=	2.7
 CATEGORIES=	audio
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://jpj.net/~trevor/aumix/ \
@@ -24,7 +24,6 @@ GTK_CONFIG=	${X11BASE}/bin/gtk12-config
 .endif
 
 GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
 CONFIGURE_ARGS=	--includedir="${LOCALBASE}/include" \
 		--enable-own-labels \
 		--libdir="${LOCALBASE}/lib"
