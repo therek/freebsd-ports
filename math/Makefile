@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.72 2000/04/07 01:47:48 will Exp $
+# $FreeBSD: ports/math/Makefile,v 1.73 2000/04/07 12:11:03 tg Exp $
 #
 
     SUBDIR += PDL
@@ -42,6 +42,7 @@
     SUBDIR += pari
     SUBDIR += parmetis
     SUBDIR += plplot
+    SUBDIR += pspp
     SUBDIR += py-scientific
     SUBDIR += pygist
     SUBDIR += rcalc
