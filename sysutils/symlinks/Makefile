@@ -2,7 +2,7 @@
 # Date created:		Sa  27 Mai 2000 00:21:44 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/symlinks/Makefile,v 1.1.1.1 2000/05/27 11:09:47 andreas Exp $
 #
 
 PORTNAME=		symlinks
@@ -11,7 +11,7 @@ CATEGORIES=		sysutils
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	utils/file
 
-MAINTAINER=		andreas@klemm.gtn.com
+MAINTAINER=		andreas@FreeBSD.org
 
 MAN8=			symlinks.8
 
