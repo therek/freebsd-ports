@@ -2,11 +2,11 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.123 2000/12/20 12:15:28 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.124 2001/01/01 10:15:16 will Exp $
 #
 
 PORTNAME=	mod_php
-PORTVERSION= 	4.0.4
+PORTVERSION= 	4.0.4pl1
 CATEGORIES=	www
 MASTER_SITES=	http://us.php.net/${PHP_DISTDIR}/ \
 		http://php.he.net/${PHP_DISTDIR}/ \
