@@ -3,15 +3,13 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-xemacs/Makefile,v 1.2 1999/09/08 15:21:53 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-xemacs/Makefile,v 1.3 1999/09/18 10:04:05 asami Exp $
 #
 
 PKGNAME=	ja-lookup-xemacs-1.0
 
 MASTERDIR=	${.CURDIR}/../lookup-mule
 EMACS=		xemacs
-ELISPDIR=	${PREFIX}/lib/xemacs/site-lisp/lookup
-PORTINFODIR=	${PREFIX}/lib/xemacs/info
 
 .if defined(PARALLEL_PACKAGE_BUILD)
 FORBIDDEN=	hang
