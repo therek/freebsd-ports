@@ -2,14 +2,13 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fop/Makefile,v 1.1 2001/03/19 11:36:36 kiri Exp $
+# $FreeBSD: ports/textproc/fop/Makefile,v 1.2 2001/03/24 12:29:03 kiri Exp $
 #
 
 PORTNAME=	fop
 PORTVERSION=	0.17.0
 CATEGORIES=	textproc java
-MASTER_SITES=	http://xml.apache.org/dist/fop/
-MASTER_SITE_SUBDIR=	recent
+MASTER_SITES=	http://xml.apache.org/dist/fop/recent/
 DISTNAME=	${PORTNAME:S/fop/Fop/}-${PORTVERSION}
 
 MAINTAINER=	kiri@FreeBSD.org
