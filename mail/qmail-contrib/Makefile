@@ -3,7 +3,7 @@
 # Date created:		28 November 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/qmail-contrib/Makefile,v 1.2 1999/08/25 06:50:46 obrien Exp $
 
 DISTNAME=       qmail-contrib-0.1
 CATEGORIES=	mail
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.qmail.org/pub/software/ \
 DISTFILES=	dot-forward-${DF_VER}.tar.gz \
 		fastforward-${FF_VER}.tar.gz
 
-MAINTAINER=	ports@freebsd.org
+MAINTAINER=	nbm@FreeBSD.org
 
 RUN_DEPENDS=	${QMAIL_DIR}/bin/qmail-send:${PORTSDIR}/mail/qmail
 
