@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.82 2000/01/14 20:26:05 cpiazza Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.83 2000/02/11 17:22:02 jmz Exp $
 #
 
     SUBDIR += agrep
@@ -11,6 +11,9 @@
     SUBDIR += cocoon
     SUBDIR += code2html
     SUBDIR += cole
+    SUBDIR += de-ispell
+    SUBDIR += dealt-ispell
+    SUBDIR += deneu-ispell
     SUBDIR += dict
     SUBDIR += diffstat
     SUBDIR += docbook
@@ -22,6 +25,7 @@
     SUBDIR += dsssl-docbook-modular
     SUBDIR += dtd-catalogs
     SUBDIR += expat
+    SUBDIR += fr-ispell
     SUBDIR += freegrep
     SUBDIR += gdict
     SUBDIR += glimpse
@@ -48,6 +52,7 @@
     SUBDIR += mswordview
     SUBDIR += nfbtrans
     SUBDIR += nicetext
+    SUBDIR += no-ispell
     SUBDIR += p5-Text-CSV_XS
     SUBDIR += p5-Text-Template
     SUBDIR += p5-XML-DOM
