@@ -2,11 +2,11 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.30 2001/09/11 21:23:42 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xcircuit
-PORTVERSION=	2.3.3.b15
+PORTVERSION=	2.3.3.b16
 PORTEPOCH=	1
 CATEGORIES=	cad
 MASTER_SITES=	http://xcircuit.ece.jhu.edu/archive/
@@ -25,7 +25,9 @@ XMKMF=		xmkmf
 MAN1=		xcircuit.1
 
 post-patch:
-	@find ${WRKSRC} -type f | xargs ${PERL} -pi -e "s|__DARWIN__|__STDC__|g" 
+	@find ${WRKSRC} -name '*.[ch]' | xargs ${PERL} -pi -e \
+		's|<malloc.h>|<stdlib.h>|g'
+
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/xcircuit
 	${TAR} -C ${WRKSRC}/examples --exclude CVS -cf - . | \
