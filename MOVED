@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.12 2002/11/21 18:29:16 knu Exp $
+# $FreeBSD: ports/MOVED,v 1.13 2002/11/21 19:25:49 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -54,3 +54,4 @@ graphics/linux_mesa||2002-11-17|Port was broken and out of date
 audio/cdrdao|sysutils/cdrdao|2002-11-18|misfiled, burns data CDs too
 sysutils/pkgview|sysutils/gnome-pkgview|2002-11-20|author has changed the binary and package name
 japanese/tvi||2002-11-21|development discontinued and distfile unavailable
+textproc/pt-aspell|portuguese/aspell|2002-11-21|new category
