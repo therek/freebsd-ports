@@ -1,7 +1,10 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/benchmarks/bonnie++/pkg-plist,v 1.3 2003/02/26 07:45:44 obrien Exp $
 bin/bon_csv2html
 bin/bon_csv2txt
+bin/generate_randfile
 sbin/bonnie++
+sbin/getc_putc
+sbin/getc_putc_helper
 sbin/zcav
 share/doc/bonnie++/readme.html
 @dirrm share/doc/bonnie++
