@@ -2,11 +2,11 @@
 # Date created:		3 January 1998
 # Whom:			chris@still.whet.org
 #
-# $FreeBSD: ports/security/portsentry/Makefile,v 1.11 2001/01/07 17:49:50 will Exp $
+# $FreeBSD: ports/security/portsentry/Makefile,v 1.12 2001/05/22 16:55:32 roam Exp $
 #
 
 PORTNAME=	portsentry
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.psionic.com/tools/
 
@@ -19,9 +19,6 @@ post-patch:
 		${WRKSRC}/portsentry.conf ${WRKSRC}/portsentry_config.h
 
 do-install:
-.if !exists($(PREFIX)/etc/portsentry.conf)
-	${INSTALL_DATA} ${WRKSRC}/portsentry.conf ${PREFIX}/etc
-.endif
 	${INSTALL_DATA} ${WRKSRC}/portsentry.conf ${PREFIX}/etc/portsentry.conf.default
 	${INSTALL_DATA} ${WRKSRC}/portsentry.ignore ${PREFIX}/etc
 	${INSTALL_PROGRAM} ${WRKSRC}/portsentry ${PREFIX}/bin
