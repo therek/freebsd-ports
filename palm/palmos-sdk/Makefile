@@ -2,7 +2,7 @@
 # Date created:		Mar 22 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.2 2000/04/13 19:18:58 cpiazza Exp $
+# $FreeBSD: ports/palm/palmos-sdk/Makefile,v 1.3 2000/04/21 07:52:03 mharo Exp $
 #
 
 PORTNAME=	palmos-sdk
@@ -20,10 +20,16 @@ NO_BUILD=	YES
 INCDIR=		${PREFIX}/palmdev/sdk-3.5/include
 LIBDIR=		${PREFIX}/palmdev/sdk-3.5/lib
 
+.include <bsd.port.pre.mk>
+
+.if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
+IGNORE='You must manually fetch tarball from http://www.palmos.com/dev/tech/tools/ and place it in ${DISTDIR} then run make again.'
+.endif
+
 do-install:
 	${MKDIR} ${INCDIR} ${LIBDIR}
 	${CP} -Rp ${WRKSRC}/Incs/* ${INCDIR}
 	${CP} -Rp ${WRKSRC}/GCC\ Libraries/* ${LIBDIR}
 	${CHOWN} -R root.wheel ${INCDIR} ${LIBDIR}
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
