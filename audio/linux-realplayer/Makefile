@@ -2,11 +2,11 @@
 # Date created:        31 January 1999
 # Whom:                Kris Kennaway <kkennawa@physics.adelaide.edu.au>
 #
-# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.18 2001/02/04 21:12:49 olgeni Exp $
+# $FreeBSD: ports/audio/linux-realplayer/Makefile,v 1.19 2001/03/20 20:27:57 obrien Exp $
 #
 
 PORTNAME=	linux-realplayer
-PORTVERSION=	8.cs1
+PORTVERSION=	8.cs2
 CATEGORIES=	audio graphics linux
 MASTER_SITES=	# fetch manually
 DISTNAME=	rp${PORTVERSION:R}_linux20_libc6_i386_${PORTVERSION:E}
@@ -25,7 +25,9 @@ WRKSRC=		${WRKDIR}/usr/lib/RealPlayer${PORTVERSION:R}
 PLUGINSDIR=	${PREFIX}/lib/netscape-linux/plugins
 RABINDIR=	${PREFIX}/bin
 
-STRIP=		# Linux binary should not be stripped by INSTALL_PROGRAM as it uses /usr/bin/strip which then brands the binary as a FreeBSD ELF one.
+# Linux binary should not be stripped by INSTALL_PROGRAM
+# because as a side effect it brands the binary as FreeBSD.
+STRIP=
 
 .include <bsd.port.pre.mk>
 
@@ -33,7 +35,7 @@ STRIP=		# Linux binary should not be stripped by INSTALL_PROGRAM as it uses /usr
 IGNORE=		may not be automatically fetched due to licensing\
 		restrictions.  You MUST manually fetch the Linux RPM version after\
 		reading and agreeing to the license at:\
-		http://www.real.com/player/ \
+		http://www.real.com/ \
 		- once ${DISTFILES} has been downloaded, move it to\
 		${DISTDIR} and then restart this build.
 .endif
