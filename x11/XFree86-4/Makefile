@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.118 2001/04/10 02:34:01 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.119 2001/04/11 01:03:51 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -86,6 +86,7 @@ pre-fetch:
 .endif # ${USA_RESIDENT}
 .endif
 
+.include "Makefile.man"
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} < 410000
