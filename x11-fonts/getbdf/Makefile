@@ -2,7 +2,7 @@
 # Date created:         30 August 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/x11-fonts/getbdf/Makefile,v 1.8 2000/04/10 00:44:36 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	getbdf
@@ -17,6 +17,11 @@ MAINTAINER=	ache@FreeBSD.org
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 ALL_TARGET=	getbdf
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/Xargs.c ${WRKSRC}/getbdf.c
+
 
 do-install:
 	cd ${WRKSRC}; \
