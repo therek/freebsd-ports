@@ -3,7 +3,7 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/egcs/Makefile,v 1.71 2000/10/08 10:21:49 asami Exp $
+# $FreeBSD: ports/lang/gcc295/Makefile,v 1.72 2000/10/10 23:36:13 asami Exp $
 #
 
 PORTNAME=	gcc
@@ -30,18 +30,7 @@ USE_BZIP2=	yes
 GCC_REV=	${DISTNAME:S/gcc-//g}
 LIBSTDCPP_REV=	4
 
-.if ${OSVERSION} < 400000
-PLIST_SUB+=     CURSES:="@comment "
-.else
-PLIST_SUB+=     CURSES:=""
-.endif
-
 .if ${PORTOBJFORMAT} == "elf"
-.if ${MACHINE_ARCH} == "i386"
-PLIST_SUB+=	ELF:=""
-.else
-PLIST_SUB+=	ELF:="@comment "
-.endif
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsd${OSREL}
 .else
 CONFIGURE_TARGET=	${ARCH}-portbld-freebsdaout${OSREL}
@@ -114,5 +103,15 @@ post-install:
 .for info in cpp g77 gcc
 	install-info ${PREFIX}/info/${info}.info ${PREFIX}/info/dir
 .endfor
+	cd ${PREFIX} ;\
+	    find lib/gcc-lib/${CONFIGURE_TARGET}/${EGCS_REV} \
+		-type f -o -type l >${WRKDIR}/PLIST.gcc-lib
+	${ECHO} "r ${TMPPLIST}"			> ${WRKDIR}/ex.script
+	${ECHO} "/Insert PLIST.gcc-lib"		>> ${WRKDIR}/ex.script
+	${ECHO} "d"				>> ${WRKDIR}/ex.script
+	${ECHO} "r ${WRKDIR}/PLIST.gcc-lib"	>> ${WRKDIR}/ex.script
+	${ECHO} "x!"				>> ${WRKDIR}/ex.script
+	${CP} -p ${TMPPLIST} ${TMPPLIST}.pre-gcc-lib
+	cd ${WRKDIR} ; ex < ex.script
 
 .include <bsd.port.post.mk>
