@@ -2,7 +2,7 @@
 # Date created:		20 Jan 1996
 # Whom:			peter
 #
-# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.34 2001/03/13 06:04:22 kuriyama Exp $
+# $FreeBSD: ports/x11-wm/fvwm2-beta/Makefile,v 1.35 2001/04/02 06:43:30 mharo Exp $
 #
 
 PORTNAME=	fvwm
@@ -20,6 +20,7 @@ RUN_DEPENDS=	gm4:${PORTSDIR}/devel/m4
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
+USE_BZIP2=	yes
 WANT_GTK=	yes
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
