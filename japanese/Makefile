@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.233 1999/11/14 03:58:55 steve Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.234 1999/11/17 22:07:52 sada Exp $
 #
 
     SUBDIR += Canna
@@ -121,6 +121,7 @@
     SUBDIR += lyx
     SUBDIR += lyx-doc
     SUBDIR += magicpoint
+    SUBDIR += makejvf
     SUBDIR += man
     SUBDIR += man-doc
     SUBDIR += mendexk-euc
