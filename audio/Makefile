@@ -1,6 +1,7 @@
-# $FreeBSD: ports/audio/Makefile,v 1.131 2000/05/23 09:50:23 sobomax Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.132 2000/05/30 02:59:38 will Exp $
 #
 
+    SUBDIR += afsp
     SUBDIR += amp
     SUBDIR += ascd
     SUBDIR += aumix
