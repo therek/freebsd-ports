@@ -4,10 +4,10 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.11 2000/03/26 13:16:16 obrien Exp $
+# $FreeBSD: ports/deskutils/gnucash/Makefile,v 1.12 2000/03/28 18:03:51 obrien Exp $
 #
 
-DISTNAME=	gnucash-1.3.3
+DISTNAME=	gnucash-1.3.4
 CATEGORIES=	deskutils
 MASTER_SITES=	ftp://www.gnucash.org/pub/gnucash/gnucash/sources/unstable/1.3.x/
 
