@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mutt/pkg-plist,v 1.33 2004/07/08 12:40:50 krion Exp $
+@comment $FreeBSD: ports/mail/mutt/pkg-plist,v 1.34 2005/01/08 18:41:31 krion Exp $
 bin/mutt
 bin/mutt_dotlock
 bin/pgpewrap
@@ -46,7 +46,6 @@ etc/mime.types.dist
 %%EXAMPLESDIR%%/iconv/iconv.solaris-2.6.rc
 %%EXAMPLESDIR%%/iconv/iconv.solaris-2.7.rc
 %%EXAMPLESDIR%%/pgp2.rc
-%%EXAMPLESDIR%%/pgp5.rc
 %%EXAMPLESDIR%%/pgp6.rc
 %%EXAMPLESDIR%%/sample.mailcap
 %%EXAMPLESDIR%%/sample.muttrc
