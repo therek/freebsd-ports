@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.345 2001/05/16 13:01:09 ijliao Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.346 2001/05/20 03:01:53 will Exp $
 #
 
     SUBDIR += 40upgrade
@@ -141,6 +141,7 @@
     SUBDIR += seizedesktop
     SUBDIR += sh-utils
     SUBDIR += shc
+    SUBDIR += sloccount
     SUBDIR += sls
     SUBDIR += smssend
     SUBDIR += snowflake
