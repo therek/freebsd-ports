@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.420 2001/01/19 06:16:45 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.421 2001/01/20 22:28:19 clive Exp $
 #
     SUBDIR += zziplib
 
@@ -114,6 +114,7 @@
     SUBDIR += gtranslator
     SUBDIR += gvd
     SUBDIR += happy
+    SUBDIR += happydoc
     SUBDIR += i386-rtems-binutils
     SUBDIR += i386-rtems-chill
     SUBDIR += i386-rtems-g77
