@@ -3,7 +3,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda/Makefile,v 1.13 1999/11/10 05:46:20 gpalmer Exp $
+# $FreeBSD: ports/misc/amanda/Makefile,v 1.14 1999/12/23 16:18:23 steve Exp $
 #
 
 DISTNAME=	amanda-2.3.0
@@ -45,5 +45,6 @@ post-install:
 .endfor
 	@${MKDIR} ${PREFIX}/share/examples/amanda
 	${INSTALL_DATA} ${WRKSRC}/example/* ${PREFIX}/share/examples/amanda
+	@${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/INSTALL ${PKGNAME} POST-INSTALL
 
 .include <bsd.port.mk>
