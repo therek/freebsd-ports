@@ -2,7 +2,7 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.5 2001/01/25 14:46:05 ijliao Exp $
+# $FreeBSD: ports/audio/musicbrainz/Makefile,v 1.6 2001/05/21 19:53:07 alex Exp $
 #
 
 PORTNAME=	musicbrainz
@@ -14,6 +14,7 @@ MAINTAINER=	roman@xpert.com
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
+USE_BZIP2=	yes
 USE_LIBTOOL=	yes
 USE_NEWGCC=	yes
 INSTALLS_SHLIB=	yes
