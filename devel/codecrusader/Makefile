@@ -3,7 +3,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.6 1999/12/10 19:40:45 obrien Exp $
+# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.7 2000/01/07 16:39:53 asami Exp $
 #
 
 DISTNAME=	code_crusader_source-2.1.4
@@ -17,8 +17,6 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		JToolBar_source-0.5.4.tar.gz
 
 MAINTAINER=	davec@unforgettable.com
-
-#BROKEN=		'installs files during build'
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
