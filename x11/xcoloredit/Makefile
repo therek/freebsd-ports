@@ -2,13 +2,14 @@
 # Date created:		6 Jun 1997
 # Whom:			Satoshi TAOKA
 #
-# $FreeBSD: ports/x11/xcoloredit/Makefile,v 1.3 1999/08/31 02:50:54 peter Exp $
+# $FreeBSD: ports/x11/xcoloredit/Makefile,v 1.4 2000/04/13 19:10:24 cpiazza Exp $
 #
 
 PORTNAME=	xcoloredit
 PORTVERSION= 	1.2
 CATEGORIES=	x11
-MASTER_SITES=	ftp://ftp.eos.hokudai.ac.jp/pub/X11/R5contrib/
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/X11/R5contrib/ \
+		ftp://ftp.x.org/R5contrib/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar.Z
 
