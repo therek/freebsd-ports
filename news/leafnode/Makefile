@@ -1,8 +1,8 @@
 # New ports collection makefile for:	leafnode
 # Date created:		10 April 1996
-# Whom:			Brian Somers <brian@Awfulhak.org>
+# Whom:			Brian Somers <brian@FreeBSD.org>
 #
-# $FreeBSD: ports/news/leafnode/Makefile,v 1.16 2001/05/21 10:07:12 brian Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	leafnode
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://wpxx02.toxi.uni-wuerzburg.de/pub/ \
 		http://www.Awfulhak.org/leafnode/
 MASTER_SITE_SUBDIR=	system/news/transport
 
-MAINTAINER=	brian@Awfulhak.org
+MAINTAINER=	brian@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--quiet
