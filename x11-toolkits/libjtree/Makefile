@@ -2,16 +2,16 @@
 # Date created:				30 May 2000
 # Whom:					Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/x11-toolkits/libjtree/Makefile,v 1.7 2001/01/16 19:08:45 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libjtree
 PORTVERSION=	1.1.7
 PORTREVISION=	1
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.newplanetsoftware.com/pub/jx/source-1.5.3/ \
-		ftp://ftp.cs.itu.edu.tr/pub/linux/x11/jx/ \
-		ftp://gd.tuwien.ac.at/hci/jx/source-1.5.3/
+MASTER_SITES=	ftp://ftp.krasnodar.ru/pub/unix/IDE/CodeCrusader/ \
+		ftp://ftp.uniovi.es/pub/unix/mail/ \
+		ftp://ftp.tuwien.ac.at/z10/hci/jx/source-1.5.3/
 DISTNAME=	JTree_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
