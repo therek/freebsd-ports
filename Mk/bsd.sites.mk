@@ -10,11 +10,11 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.137 2003/02/28 10:14:39 dougb Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.138 2003/02/28 10:49:24 dougb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
-MASTER_SITE_LOCAL?= \
+MASTER_SITE_LOCAL+= \
 	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
 	ftp://ftp.se.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
 	ftp://ftp.uk.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/%SUBDIR%/ \
