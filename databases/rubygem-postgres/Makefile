@@ -2,11 +2,12 @@
 # Date created:		19 April 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.12 2001/03/14 13:59:41 knu Exp $
+# $FreeBSD: ports/databases/ruby-postgres/Makefile,v 1.13 2001/04/18 12:02:57 knu Exp $
 #
 
 PORTNAME=	postgres
 PORTVERSION=	0.6.2
+PORTREVISION=	1
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://webclub.kcom.ne.jp/mb/noborus/ruby/archive/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -20,11 +21,8 @@ LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-CONFIGURE_ARGS=	--with-pgsql-include-dir="${PGDIR}/include" \
-		--with-pgsql-lib-dir="${PGDIR}/lib"
+CONFIGURE_ARGS=	--with-pgsql-include-dir="${LOCALBASE}/include/pgsql"
 INSTALL_TARGET=	site-install
-
-PGDIR?=		${PREFIX}/pgsql
 
 DOCS_EN=	ChangeLog README doc/postgres.html
 DOCS_JA=	README.jp doc/postgres.jp.html

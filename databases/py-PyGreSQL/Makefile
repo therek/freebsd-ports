@@ -2,31 +2,31 @@
 # Date created:				2/22/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.24 2000/10/03 13:52:47 nectar Exp $
+# $FreeBSD: ports/databases/py-PyGreSQL/Makefile,v 1.25 2001/03/22 13:36:50 tg Exp $
 #
 
-PORTNAME=		PyGreSQL
-PORTVERSION=		3.0
-CATEGORIES=		databases python
-MASTER_SITES=		ftp://ftp.druid.net/pub/distrib/
-PKGNAMEPREFIX=		py-
-DISTNAME=		PyGreSQL-${PORTVERSION}
-EXTRACT_SUFX=		.tgz
+PORTNAME=	PyGreSQL
+PORTVERSION=	3.1
+CATEGORIES=	databases python
+MASTER_SITES=	ftp://ftp.druid.net/pub/distrib/
+PKGNAMEPREFIX=	py-
+DISTNAME=	PyGreSQL-${PORTVERSION}
+EXTRACT_SUFX=	.tgz
 
-MAINTAINER=		nectar@FreeBSD.org
+MAINTAINER=	nectar@FreeBSD.org
 
-BUILD_DEPENDS=		${DATETIME_DEP}:${PORTSDIR}/lang/py-mx-base
-RUN_DEPENDS=		${DATETIME_DEP}:${PORTSDIR}/lang/py-mx-base
-LIB_DEPENDS=		pq.2:${PORTSDIR}/databases/postgresql7
+BUILD_DEPENDS=	${DATETIME_DEP}:${PORTSDIR}/lang/py-mx-base
+RUN_DEPENDS=	${DATETIME_DEP}:${PORTSDIR}/lang/py-mx-base
+LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
-USE_PYTHON=		yes
-MAKE_ENV=		PYTHON_VERSION=${PYTHON_VERSION} \
-			PYTHON_LIBDIR=${PYTHON_LIBDIR} \
-			PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR} \
-			PYTHON=${PYTHON_CMD} \
-			LN="${LN}" SETENV="${SETENV}" MKDIR="${MKDIR}"
+USE_PYTHON=	yes
+MAKE_ENV=	PYTHON_VERSION=${PYTHON_VERSION} \
+		PYTHON_LIBDIR=${PYTHON_LIBDIR} \
+		PYTHON_SITELIBDIR=${PYTHON_SITELIBDIR} \
+		PYTHON=${PYTHON_CMD} \
+		LN="${LN}" SETENV="${SETENV}" MKDIR="${MKDIR}"
 
-DATETIME_DEP=		${PYTHON_SITELIBDIR}/mx/DateTime/__init__.py
+DATETIME_DEP=	${PYTHON_SITELIBDIR}/mx/DateTime/__init__.py
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/Makefile

@@ -2,11 +2,12 @@
 # Date created:				Nov 16, 2000
 # Whom:	      				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/security/pam-pgsql/Makefile,v 1.1 2001/02/26 23:09:20 mi Exp $
+# $FreeBSD: ports/security/pam-pgsql/Makefile,v 1.2 2001/03/30 18:20:29 mi Exp $
 #
 
 PORTNAME=	pam-pgsql
 PORTVERSION=	0.3
+PORTREVISION=	1
 CATEGORIES=	security databases
 # When the family of Debian mirrors is added to bsd.port.mk,
 # this will suddenly start making sense:
@@ -18,7 +19,7 @@ DISTFILES=	${PORTNAME}_${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	mi@aldan.algebra.com
 
-LIB_DEPENDS=	pq:${PORTSDIR}/databases/postgresql7
+LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 MAKEFILE=	${FILESDIR}/Makefile.bsd
 MAKE_ARGS+=	-j 2

@@ -2,19 +2,19 @@
 # Date created:		2000/11/10
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mod_auth_pgsql/Makefile,v 1.1 2001/01/13 01:29:38 jeh Exp $
 
 PORTNAME=	mod_auth_pgsql
 PORTVERSION=	0.9.5a
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.eurolink.it/pub/linux/postgreSQL/mod_auth_pgsql/
 
 MAINTAINER=	mi@aldan.algebra.com
 
-BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/${AP_PORT} \
-	${LOCALBASE}/pgsql/lib/libpq.so:${PORTSDIR}/databases/postgresql7
-RUN_DEPENDS=	${LOCALBASE}/sbin/${AP_TARGET}:${PORTSDIR}/www/${AP_PORT} \
-	${LOCALBASE}/pgsql/lib/libpq.so:${PORTSDIR}/databases/postgresql7
+BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/${AP_PORT}
+RUN_DEPENDS=	${LOCALBASE}/sbin/${AP_TARGET}:${PORTSDIR}/www/${AP_PORT}
+LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
 WRKSRC=	${WRKDIR}/${PORTNAME}-${PORTVERSION:S/a//}
 
@@ -46,7 +46,7 @@ PLIST_SUB+=	AUTH_PGSQL_DOCS="${AUTH_PGSQL_DOCS}"
 PKGMESSAGE=	${WRKSRC}/.install_notes
 
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-pgsql=${PREFIX}/pgsql \
+CONFIGURE_ARGS=	--with-pgsql=${PREFIX} \
 		--with-apxs=${APXS}
 
 .if !defined(NOPORTDOCS)
