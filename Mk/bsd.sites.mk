@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.23 2000/12/28 19:47:56 ben Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.24 2000/12/28 22:11:09 ben Exp $
 #
 
 MASTER_SITE_XCONTRIB+=	\
@@ -261,7 +261,8 @@ MASTER_SITE_RUBY+= \
 
 MASTER_SITE_THEMES+= \
 	ftp://ftp.themes.org/pub/themes/%SUBDIR%/ \
-	ftp://ftp.tuwien.ac.at/opsys/linux/themes.org/%SUBDIR%/
+	ftp://ftp.tuwien.ac.at/opsys/linux/themes.org/%SUBDIR%/ \
+	ftp://ftp.chg.ru/pub/X11/themes/%SUBDIR%/
 
 # Where to put distfiles that don't have any other master site
 MASTER_SITE_LOCAL?= \
