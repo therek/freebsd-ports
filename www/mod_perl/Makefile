@@ -2,7 +2,7 @@
 # Date created:				November 5th 1999
 # Whom:	      				Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_perl/Makefile,v 1.14 2001/03/06 17:15:02 sheldonh Exp $
+# $FreeBSD: ports/www/mod_perl/Makefile,v 1.15 2001/03/21 03:07:17 vanilla Exp $
 #
 
 PORTNAME=	mod_perl
@@ -53,5 +53,8 @@ post-install:
 	    ${PREFIX}/include/apache/modules/perl
 	${INSTALL_PROGRAM} ${WRKSRC}/apaci/libperl.so ${PREFIX}/libexec/apache
 	@PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
+
+post-deinstall:
+	@PKG_PREFIX=${PREFIX} ${SH} ${PKGDEINSTALL} ${PKGNAME} POST-DEINSTALL
 
 .include <bsd.port.post.mk>
