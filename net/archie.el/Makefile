@@ -2,7 +2,7 @@
 # Date created:		99/10/6
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/net/archie.el/Makefile,v 1.2 1999/10/16 17:20:46 taoka Exp $
+# $FreeBSD: ports/net/archie.el/Makefile,v 1.3 2000/04/09 18:10:08 cpiazza Exp $
 #
 
 PORTNAME=	archie.el	
@@ -20,7 +20,6 @@ RUN_DEPENDS=	archie:${PORTSDIR}/net/archie
 
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
 
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
 XELISPDIR=	${PREFIX}/lib/xemacs/site-lisp

@@ -2,7 +2,7 @@
 # Date created:				12 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/merlin/Makefile,v 1.4 2000/03/29 07:17:04 kris Exp $
+# $FreeBSD: ports/games/merlin/Makefile,v 1.5 2000/04/14 12:26:04 asami Exp $
 #
 
 PORTNAME=	merlin
@@ -15,9 +15,9 @@ MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
+NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 USE_X_PREFIX=	yes
-WRKSRC=		${WRKDIR}
 
 post-extract:
 	@ ${MV} ${WRKSRC}/merlin.tcl ${WRKSRC}/merlin

@@ -2,7 +2,7 @@
 # Date created:		99/10/6
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/mpg123.el/Makefile,v 1.1.1.1 1999/10/16 07:20:06 taoka Exp $
+# $FreeBSD: ports/audio/mpg123.el/Makefile,v 1.2 2000/04/08 21:24:05 mharo Exp $
 #
 
 PORTNAME=	mpg123.el
@@ -19,7 +19,6 @@ RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 EXTRACT_ONLY=	# empty
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
 
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
 XELISPDIR=	${PREFIX}/lib/xemacs/site-lisp

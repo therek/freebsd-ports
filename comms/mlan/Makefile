@@ -2,7 +2,7 @@
 # Date created:        4 January 2000
 # Whom:                phk
 #
-# $FreeBSD: ports/comms/mlan/Makefile,v 1.2 2000/01/04 22:20:08 phk Exp $
+# $FreeBSD: ports/comms/mlan/Makefile,v 1.3 2000/04/08 23:22:35 mharo Exp $
 #
 
 PORTNAME=	mlan
@@ -13,7 +13,7 @@ DISTNAME=	mlpb103
 
 MAINTAINER=	phk@FreeBSD.org
 
+NO_WRKSUBDIR=	yes
 USE_ZIP=	yes
-WRKSRC=		${WRKDIR}
 
 .include <bsd.port.mk>

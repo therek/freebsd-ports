@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1995
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/tgif/Makefile,v 1.16 1999/09/27 02:44:59 steve Exp $
+# $FreeBSD: ports/japanese/tgif/Makefile,v 1.17 2000/04/12 14:38:02 knu Exp $
 #
 
 PORTNAME=	tgif
@@ -16,7 +16,7 @@ MAINTAINER=	mita@jp.FreeBSD.org
 RUN_DEPENDS=	tgif:${PORTSDIR}/graphics/tgif
 
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 do-install:

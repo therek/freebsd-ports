@@ -2,7 +2,7 @@
 # Date created:			2 December 1998
 # Whom:				Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/antipolix/Makefile,v 1.3 2000/03/29 07:18:01 kris Exp $
+# $FreeBSD: ports/games/antipolix/Makefile,v 1.4 2000/04/14 00:45:24 mharo Exp $
 #
 
 PORTNAME=		antipolix
@@ -14,7 +14,7 @@ DISTNAME=		AntipoliX_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
 
 do-install:

@@ -3,7 +3,7 @@
 # Date created:			  Sat Nov  5 01:16:33 PST 1994
 # Whom:				  hsu
 #
-# $FreeBSD: ports/devel/mprof/Makefile,v 1.14 2000/03/22 00:27:15 obrien Exp $
+# $FreeBSD: ports/devel/mprof/Makefile,v 1.15 2000/04/11 21:29:10 mharo Exp $
 #
 
 PORTNAME=	mprof
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 MAKEFILE=	Makefile.i386
 MAN1=		mprof.1
 

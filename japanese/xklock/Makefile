@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/japanese/xklock/Makefile,v 1.8 2000/03/07 23:38:44 fenner Exp $
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.9 2000/04/13 08:34:07 knu Exp $
 #
 
 PORTNAME=	xklock
@@ -20,7 +20,7 @@ PATCH_DIST_STRIP=	-p1
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
-WRKSRC=	${WRKDIR}
+NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 
 pre-configure:

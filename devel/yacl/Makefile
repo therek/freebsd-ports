@@ -2,7 +2,7 @@
 # Date created:		6 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/devel/yacl/Makefile,v 1.6 2000/02/27 23:20:23 steve Exp $
+# $FreeBSD: ports/devel/yacl/Makefile,v 1.7 2000/04/14 05:44:42 asami Exp $
 #
 
 PORTNAME=		yacl
@@ -13,8 +13,8 @@ DISTNAME=		yacl-0170-beta
 
 MAINTAINER=		albast@xs4all.nl
 
+NO_WRKSUBDIR=		yes
 USE_ZIP=		yes
-WRKSRC=			${WRKDIR}
 MAKE_ENV=		YACLPATH=${WRKDIR}
 
 MAKEFILE=		gnuc.mak

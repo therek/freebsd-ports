@@ -2,7 +2,7 @@
 # Date created:		19 Jun 1995
 # Whom:			joerg
 #
-# $FreeBSD: ports/editors/uzap/Makefile,v 1.7 1999/08/25 05:44:31 obrien Exp $
+# $FreeBSD: ports/editors/uzap/Makefile,v 1.8 2000/04/14 00:25:46 mharo Exp $
 #
 
 PORTNAME=	uzap
@@ -15,7 +15,7 @@ MAINTAINER=	joerg@FreeBSD.org
 
 # restrictive Copyright; the author is no longer reachable, however :-(
 RESTRICTED=	"Restrictive copyright"
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 MAN1=		uzap.1
 
 .include <bsd.port.mk>

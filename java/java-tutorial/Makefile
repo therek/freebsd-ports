@@ -2,7 +2,7 @@
 # Date created:		Tue Mar 23 10:18:20 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.9 1999/09/09 06:45:50 cpiazza Exp $
+# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.10 2000/04/12 06:14:32 obrien Exp $
 #
 
 PORTNAME=	jdk-tutorial
@@ -13,11 +13,10 @@ DISTNAME=	tutorial
 
 MAINTAINER=	martti.kuparinen@ericsson.com
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUNDIR=	yes
 RESTRICTED=	"This software is under license and export control."
 NO_BUILD=	yes
 PLIST_SUB+=	VERSION=${PORTVERSION}
-PKGMESSAGE= ${WRKDIR}/MESSAGE
 
 .include <bsd.port.pre.mk>
 

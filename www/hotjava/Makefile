@@ -2,7 +2,7 @@
 # Date created:		1999/07/03
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/www/hotjava/Makefile,v 1.4 2000/02/16 00:19:45 mharo Exp $
+# $FreeBSD: ports/www/hotjava/Makefile,v 1.5 2000/04/10 00:05:20 cpiazza Exp $
 #
 
 PORTNAME=	hotjava
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
 
 EXTRACT_ONLY=
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 JDK_VERSION=    1.1.8
 NO_BUILD=	yes
 NO_CDROM=	"See the licence"

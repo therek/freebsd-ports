@@ -2,7 +2,7 @@
 # Date created:		28 Nov 1997
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.5 1999/08/30 14:31:50 peter Exp $
+# $FreeBSD: ports/news/pgpmoose/Makefile,v 1.6 2000/04/09 17:33:16 cpiazza Exp $
 #
 
 PORTNAME=	pgpmoose
@@ -20,7 +20,7 @@ MAN1=		pmapp.1 pmcanon.1 pmcheck.1 pmnewsgroups.1 \
 BIN1=		pmapp pmcanon pmcheck pmnewsgroups \
 		pmdaemon pmcancel
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 
 do-install:
 .for i in ${BIN1}

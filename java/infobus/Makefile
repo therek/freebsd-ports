@@ -2,7 +2,7 @@
 # Date created:		1999/08/08
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/infobus/Makefile,v 1.2 1999/11/01 04:27:07 steve Exp $
+# $FreeBSD: ports/java/infobus/Makefile,v 1.3 2000/04/12 06:13:54 obrien Exp $
 #
 
 PORTNAME=	infobus
@@ -18,7 +18,7 @@ RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
 
 USE_ZIP=	YES
 
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 JDK_VERSION=	1.1.8
 NO_BUILD=	yes
 NO_CDROM=	"See the license"

@@ -2,7 +2,7 @@
 # Date created:		10 September 1998
 # Whom:			KIRIYAMA Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/misc/man.el/Makefile,v 1.8 1999/09/06 19:40:53 taoka Exp $
+# $FreeBSD: ports/misc/man.el/Makefile,v 1.9 2000/04/14 08:46:14 asami Exp $
 #
 
 PORTNAME=	i18n-man
@@ -15,8 +15,8 @@ MAINTAINER=	kiri@kiri.toba-cmt.ac.jp
 
 # If you use Japanese manuals, install japanese/man as well.
 
+NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
-WRKSRC=		${WRKDIR}
 
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
 SITEPKGDIR=	${PREFIX}/lib/xemacs/site-packages

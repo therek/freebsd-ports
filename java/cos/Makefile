@@ -2,7 +2,7 @@
 # Date created:		1999/07/05
 # Whom:			Jose Marques <noway@nohow.demon.co.uk>
 #
-# $FreeBSD: ports/java/cos/Makefile,v 1.1 1999/12/31 20:22:08 steve Exp $
+# $FreeBSD: ports/java/cos/Makefile,v 1.2 2000/04/12 06:13:43 obrien Exp $
 #
 
 PORTNAME=	cos
@@ -17,7 +17,7 @@ RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk \
 		${PREFIX}/bin/servletrunner:${PORTSDIR}/java/jsdk
 
 USE_ZIP=	yes
-WRKSRC=		${WRKDIR}
+NO_WRKSUBDIR=	yes
 JDK_VERSION=	1.1.8
 NO_BUILD=	yes
 RESTRICTED=	"Special conditions apply for commercial use, see licence"

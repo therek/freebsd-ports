@@ -2,7 +2,7 @@
 # Date created:		1999/12/05
 # Whom:			HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/yc.el/Makefile,v 1.1.1.1 2000/01/23 14:20:24 taoka Exp $
+# $FreeBSD: ports/japanese/yc.el/Makefile,v 1.2 2000/04/13 08:34:11 knu Exp $
 #
 
 PORTNAME=	yc.el
@@ -16,7 +16,6 @@ MAINTAINER=	honda@kashio.info.mie-u.ac.jp
 
 NO_BUILD=	yes
 NO_WRKSUBDIR=	yes
-WRKSRC=		${WRKDIR}
 
 ELISPDIR=	${PREFIX}/share/emacs/site-lisp
 XELISPDIR=	${PREFIX}/lib/xemacs/site-lisp
