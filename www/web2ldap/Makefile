@@ -2,11 +2,11 @@
 # Date created:        21 July 2000
 # Whom:                Oddbjorn Steffensen <oddbjorn@tricknology.org>
 #
-# $FreeBSD: ports/www/web2ldap/Makefile,v 1.1 2000/08/01 14:48:20 nbm Exp $
+# $FreeBSD: ports/www/web2ldap/Makefile,v 1.2 2000/08/02 08:25:54 kevlo Exp $
 #
 
 PORTNAME=      web2ldap
-PORTVERSION=   0.7.8
+PORTVERSION=   0.7.9
 CATEGORIES=    www
 MASTER_SITES=  http://sites.inka.de/ms/python/web2ldap/download/
 
