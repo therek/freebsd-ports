@@ -2,13 +2,14 @@
 # Date created:		23 August 1994
 # Whom:			adam@veda.is
 #
-# $FreeBSD: ports/net/dgd/Makefile,v 1.85 2000/10/08 10:22:29 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dgd
 PORTVERSION=	1.2
 CATEGORIES=	net lang
 MASTER_SITES=	ftp://ftp.imaginary.com/pub/LPC/servers/DGD/ \
+		ftp://ftp.dworkin.nl/pub/dgd/ \
 		ftp://ftp.lysator.liu.se/pub/lpmud/drivers/dgd/ \
 		ftp://ftp.veda.is/pub/mud/dgd/ \
 		ftp://ftp.dreamlabs.com/pub/mud/dgd/
