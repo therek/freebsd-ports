@@ -2,7 +2,7 @@
 # Date Created:		1 Jul 2000
 # Whom:			HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/astro/SETIsupport/Makefile,v 1.1 2001/04/07 06:38:49 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SETISupport
@@ -17,7 +17,7 @@ MAINTAINER=	hym@cocoa.freemail.ne.jp
 
 RUN_DEPENDS=	javavm:${PORTSDIR}/java/javavmwrapper \
 		${LOCALBASE}/etc/javavms:${PORTSDIR}/java/jre \
-		setiathome:${PORTSDIR}/astro/setiathome
+		${LOCALBASE}/sbin/setiathome:${PORTSDIR}/astro/setiathome
 
 USE_XLIB=	yes
 NO_BUILD=	yes
