@@ -2,41 +2,32 @@
 # Date created:		24 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-gdbm/Makefile,v 1.1 2000/08/23 19:17:20 knu Exp $
+# $FreeBSD: ports/databases/ruby14-gdbm/Makefile,v 1.2 2000/09/05 12:44:13 knu Exp $
 #
 
 PORTNAME=	gdbm
-PORTVERSION=	1.4.6
+PORTVERSION=	${RUBY_VERSION}
 CATEGORIES=	databases ruby
 MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	1.4
-PKGNAMEPREFIX=	ruby-
+MASTER_SITE_SUBDIR=	${RUBY_VER}
+PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm
-RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
+
+RUBY_VER=	1.4
+
+USE_RUBY=	yes
+USE_RUBY_EXTCONF=	yes
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/ext/gdbm
-CONFIGURE_ARGS=	--with-opt-dir="${PREFIX}"
-
-PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
-
-RUBY_VER?=	1.4
-RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
-RUBY?=		${LOCALBASE}/bin/ruby
-
-DOCDIR=		${PREFIX}/share/doc/ruby
-EXAMPLESDIR=	${PREFIX}/share/examples/ruby
-
-do-configure:
-	cd ${WRKSRC}; \
-	${SETENV} ${CONFIGURE_ENV} ${RUBY} extconf.rb ${CONFIGURE_ARGS}
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.ruby.mk"
+.include <bsd.port.post.mk>
