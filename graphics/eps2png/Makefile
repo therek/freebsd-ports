@@ -2,7 +2,7 @@
 # Date created:				12 February 2001
 # Whom:					nik
 #
-# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.1 2001/02/12 18:37:23 nik Exp $
+# $FreeBSD: ports/graphics/eps2png/Makefile,v 1.2 2001/02/24 11:32:59 nik Exp $
 #
 
 PORTNAME=	eps2png
@@ -18,6 +18,8 @@ RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript6
 
 USE_PERL5=	yes
 PERL_CONFIGURE=	yes
+
+MAN1=		eps2png.1
 
 do-install:
 	@cd ${WRKSRC}; ${SETENV} ${INSTALL_ENV} ${MAKE} INSTALLSCRIPT=${PREFIX}/bin install
