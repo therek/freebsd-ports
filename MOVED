@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.490 2004/08/06 22:54:56 marcus Exp $
+# $FreeBSD: ports/MOVED,v 1.491 2004/08/08 08:09:30 kuriyama Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1220,3 +1220,4 @@ devel/autoconf|devel/autoconf253|2004-08-03|autotools cleanup
 devel/automake|devel/automake15|2004-08-03|autotools cleanup
 mail/balsa2|mail/balsa|2004-08-06|Balsa 2.x has been moved to the balsa port
 net/pdtpd|net/squall|2004-08-08|The project has been renamed
+sysutils/fastresolve|dns/fastresolve|2004-08-08|Move to the right category
