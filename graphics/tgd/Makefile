@@ -3,7 +3,7 @@
 # Date created:				22 February 1999
 # Whom:	      				mharo@area51.fremont.ca.us
 #
-# $FreeBSD: ports/graphics/tgd/Makefile,v 1.4 1999/08/25 06:15:01 obrien Exp $
+# $FreeBSD: ports/graphics/tgd/Makefile,v 1.5 1999/09/03 05:07:26 mharo Exp $
 #
 
 DISTNAME=	tgd1.2c
@@ -17,6 +17,7 @@ MAINTAINER=	mharo@FreeBSD.org
 BUILD_DEPENDS=	${PREFIX}/lib/libgd.a:${PORTSDIR}/graphics/gd
 
 BROKEN=	gd changes
+FORBIDDEN=	author hadn't had time to update for gd changes
 
 ALL_TARGET=	tgd
 DOCS=		README arc.gif cap.gif char.gif fill.gif fontdemo \
