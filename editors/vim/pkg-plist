@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.37 2001/02/16 11:39:57 obrien Exp $
+@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.38 2001/03/14 18:54:32 obrien Exp $
 bin/vim
 bin/vimtutor
 bin/xxd
@@ -321,6 +321,7 @@ share/vim/%%VIM_VER%%/syntax/nastran.vim
 share/vim/%%VIM_VER%%/syntax/ncf.vim
 share/vim/%%VIM_VER%%/syntax/nosyntax.vim
 share/vim/%%VIM_VER%%/syntax/nroff.vim
+share/vim/%%VIM_VER%%/syntax/nqc.vim
 share/vim/%%VIM_VER%%/syntax/objc.vim
 share/vim/%%VIM_VER%%/syntax/ocaml.vim
 share/vim/%%VIM_VER%%/syntax/omnimark.vim
@@ -400,6 +401,7 @@ share/vim/%%VIM_VER%%/syntax/squid.vim
 share/vim/%%VIM_VER%%/syntax/st.vim
 share/vim/%%VIM_VER%%/syntax/stp.vim
 share/vim/%%VIM_VER%%/syntax/strace.vim
+share/vim/%%VIM_VER%%/syntax/syncolor.vim
 share/vim/%%VIM_VER%%/syntax/synload.vim
 share/vim/%%VIM_VER%%/syntax/syntax.vim
 share/vim/%%VIM_VER%%/syntax/tads.vim
@@ -465,6 +467,7 @@ share/vim/%%VIM_VER%%/tools/vimspell.sh
 share/vim/%%VIM_VER%%/tools/vimspell.txt
 share/vim/%%VIM_VER%%/tutor/README.txt
 share/vim/%%VIM_VER%%/tutor/tutor
+share/vim/%%VIM_VER%%/tutor/tutor.vim
 share/vim/%%VIM_VER%%/vimrc_example.vim
 @exec mkdir %D/share/vim/%%VIM_VER%%/lang
 @dirrm share/vim/%%VIM_VER%%/doc
