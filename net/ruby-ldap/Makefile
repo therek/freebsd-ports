@@ -2,11 +2,11 @@
 # Date created:		25 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.9 2001/03/22 06:31:14 knu Exp $
+# $FreeBSD: ports/net/ruby-ldap/Makefile,v 1.10 2001/04/22 09:14:03 knu Exp $
 #
 
 PORTNAME=	ldap
-PORTVERSION=	0.3.5
+PORTVERSION=	0.3.6
 CATEGORIES=	net ruby
 MASTER_SITES=	http://kt-www.jaist.ac.jp/~ttate/ftp/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
