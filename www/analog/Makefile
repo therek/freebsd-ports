@@ -2,11 +2,11 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.31 2001/01/01 10:15:11 will Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.32 2001/01/16 17:32:52 sobomax Exp $
 #
 
 PORTNAME=	analog
-PORTVERSION=	4.11
+PORTVERSION=	4.16
 CATEGORIES=	www
 MASTER_SITES=	http://www.analog.cx/ \
 		http://brendanr.simplenet.com/analog/ \
