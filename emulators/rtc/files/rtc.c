@@ -22,7 +22,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.13 2004/03/10 09:02:02 silby Exp $
+ * $FreeBSD: ports/emulators/rtc/files/rtc.c,v 1.14 2004/03/10 09:44:44 silby Exp $
  * $vmFreeBSD: vmware/vmnet-only/freebsd/vmnet.c,v 1.14 2000/01/23 22:29:50 vsilyaev Exp $
  */
 
@@ -96,6 +96,8 @@ static struct cdevsw rtc_cdevsw = {
 #if __FreeBSD_version >= 502103
 	.d_version =    D_VERSION,
 	.d_flags =      D_NEEDGIANT,
+#else 
+	.d_maj =	CDEV_MAJOR,
 #endif
 	.d_open =	rtc_open,
 	.d_close =	rtc_close,
@@ -103,7 +105,6 @@ static struct cdevsw rtc_cdevsw = {
 	.d_poll =	rtc_poll,
 	.d_read =	rtc_read,
 	.d_name =	DEVICE_NAME,
-	.d_maj =	CDEV_MAJOR,
 #else
 	/* open */	rtc_open,
 	/* close */	rtc_close,
