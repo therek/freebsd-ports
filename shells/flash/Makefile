@@ -3,14 +3,14 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.1.1.1 2000/01/08 18:23:33 wes Exp $
+# $FreeBSD: ports/shells/flash/Makefile,v 1.2 2000/01/17 12:22:46 asami Exp $
 #
 
 DISTNAME=	flash-0.9.1
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.netsoc.ucd.ie/pub/computing/flash/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 

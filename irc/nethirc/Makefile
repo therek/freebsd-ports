@@ -3,7 +3,7 @@
 # Date created:		15 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/nethirc/Makefile,v 1.2 2000/01/28 17:24:24 cpiazza Exp $
+# $FreeBSD: ports/irc/nethirc/Makefile,v 1.3 2000/02/08 09:29:29 peter Exp $
 #
 
 DISTNAME=	nethirc-0.04
@@ -12,7 +12,7 @@ CATEGORIES=	irc
 MASTER_SITES=	http://people.FreeBSD.org/~cpiazza/distfiles/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/5.005/Net/IRC.pm:${PORTSDIR}/irc/p5-IRC
 

@@ -3,7 +3,7 @@
 # Date created:		06 Mar 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/ude/Makefile,v 1.1.1.1 2000/03/11 16:11:59 jedgar Exp $
 #
 
 DISTNAME=	ude-0.2.7-BETA
@@ -12,7 +12,7 @@ CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://download.sourceforge.net/pub/sourceforge/udeproject/ \
 		ftp://ude.the-coffeeshop.dk/pub/UDE/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 BUILD_DEPENDS=	${LOCALBASE}/include/libintl.h:${PORTSDIR}/devel/gettext

@@ -3,7 +3,7 @@
 # Date created:         29 October 1995
 # Whom:                 piero
 #
-# $FreeBSD: ports/astro/xearth/Makefile,v 1.17 1999/11/03 01:01:39 green Exp $
+# $FreeBSD: ports/astro/xearth/Makefile,v 1.18 1999/12/22 22:28:10 jedgar Exp $
 #
 
 DISTNAME=	xearth-1.1
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://cag.lcs.mit.edu/pub/tuna/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR= applications
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_IMAKE=	yes
 

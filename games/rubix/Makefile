@@ -3,14 +3,14 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/rubix/Makefile,v 1.1 2000/01/03 20:17:30 cpiazza Exp $
 #
 
 DISTNAME=	rubix-1.0.1
 CATEGORIES=	games
 MASTER_SITES=	http://sed.free.fr/rubix/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_GMAKE=	yes
 MAKE_ENV=	GMAKE=${GMAKE}

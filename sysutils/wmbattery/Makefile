@@ -3,7 +3,7 @@
 # Date created:		18 Sep 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.2 1999/12/04 23:28:43 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmbattery/Makefile,v 1.3 1999/12/10 17:06:13 steve Exp $
 #
 
 DISTNAME=	wmbattery
@@ -11,7 +11,7 @@ PKGNAME=	${DISTNAME}-1.11
 CATEGORIES=	sysutils windowmaker
 MASTER_SITES=	http://kitenet.net/programs/code/wmbattery/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

@@ -3,7 +3,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/p5-IO-Tty/Makefile,v 1.1.1.1 2000/02/19 13:32:22 jedgar Exp $
 #
 
 DISTNAME=	IO-Tty-0.02
@@ -12,7 +12,7 @@ CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IO
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_PERL5=	yes
 IS_INTERACTIVE=	yes

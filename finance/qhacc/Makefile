@@ -3,7 +3,7 @@
 # Date created:		28 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/qhacc/Makefile,v 1.2 2000/02/21 03:48:25 cpiazza Exp $
+# $FreeBSD: ports/misc/qhacc/Makefile,v 1.3 2000/02/29 02:13:58 jedgar Exp $
 #
 
 DISTNAME=	qhacc_0.3.1
@@ -11,7 +11,7 @@ PKGNAME=	qhacc-0.3.1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.ostrich-emulators.cx/qhacc/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_X_PREFIX=	yes
 USE_QT2=	yes

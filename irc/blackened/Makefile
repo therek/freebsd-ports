@@ -3,14 +3,14 @@
 # Date created:		11 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/irc/blackened/Makefile,v 1.6 1999/08/25 06:12:36 obrien Exp $
+# $FreeBSD: ports/irc/blackened/Makefile,v 1.7 1999/09/24 23:34:19 cpiazza Exp $
 #
 
 DISTNAME=	blackened-${VERSION}
 CATEGORIES=	irc
 MASTER_SITES=	ftp://ftp.blackened.com/pub/irc/blackened/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${PKGNAME}

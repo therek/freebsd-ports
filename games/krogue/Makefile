@@ -3,7 +3,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/krogue/Makefile,v 1.3 2000/02/25 22:35:14 jim Exp $
+# $FreeBSD: ports/games/krogue/Makefile,v 1.4 2000/02/27 15:08:56 steve Exp $
 #
 
 DISTNAME=	krogue-0.9.6
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	http://ksi.ii.uj.edu.pl/krogue/dl/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 BUILD_DEPENDS=	xgettext:${PORTSDIR}/devel/gettext

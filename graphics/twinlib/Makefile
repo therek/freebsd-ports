@@ -3,7 +3,7 @@
 # Date created:		04 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/paintlib/Makefile,v 1.1 2000/01/29 05:14:01 steve Exp $
 #
 
 DISTNAME=	paintlib.0.2.1
@@ -12,7 +12,7 @@ CATEGORIES=	graphics devel
 MASTER_SITES=	http://rio.xdev.org/paintlib/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_QT2=	yes
 USE_X_PREFIX=	yes

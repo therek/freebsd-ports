@@ -3,7 +3,7 @@
 # Date created:		27 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/pclprint/Makefile,v 1.1.1.1 1999/09/09 00:33:09 taoka Exp $
 #
 
 DISTNAME=	pclprint-1.0
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://andrsn.stanford.edu/pub/print/ \
 		http://www.psn.net/~andrews/dist/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 NO_BUILD=	YES
 

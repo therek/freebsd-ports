@@ -3,7 +3,7 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/perlsh/Makefile,v 1.1.1.1 2000/01/03 19:33:18 wes Exp $
+# $FreeBSD: ports/shells/perlsh/Makefile,v 1.2 2000/02/29 02:26:59 jedgar Exp $
 #
 
 DISTNAME=	psh-${VERSION}
@@ -11,7 +11,7 @@ PKGNAME=	perlsh-${VERSION}
 CATEGORIES=	shells perl5
 MASTER_SITES=	http://www.focusresearch.com/gregor/psh/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 VERSION=	0.007
 USE_PERL5=	yes

@@ -3,7 +3,7 @@
 # Date created:		14 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/p5-Expect/Makefile,v 1.1.1.1 2000/02/19 13:35:50 jedgar Exp $
+# $FreeBSD: ports/lang/p5-Expect/Makefile,v 1.1.1.1 2000/02/20 22:01:37 jedgar Exp $
 #
 
 DISTNAME=	Expect.pm-1.07
@@ -12,7 +12,7 @@ CATEGORIES=	lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Expect
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 BUILD_DEPENDS=	${SITE_PERL}/IO-Tty.pm:${PORTSDIR}/devel/p5-IO-Tty \
 		${SITE_PERL}/IO-Stty.pm:${PORTSDIR}/devel/p5-IO-Stty

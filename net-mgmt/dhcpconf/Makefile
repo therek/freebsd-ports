@@ -3,7 +3,7 @@
 # Date created:		20 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/dhcpconf/Makefile,v 1.1 2000/02/13 03:52:23 imura Exp $
 #
 
 DISTNAME=	dhcp-conf
@@ -12,7 +12,7 @@ CATEGORIES=	net sysutils
 MASTER_SITES=	http://members.xoom.com/vschade/dhcp-conf/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	gdbm.2:${PORTSDIR}/databases/gdbm \
 		newt.0:${PORTSDIR}/devel/newt

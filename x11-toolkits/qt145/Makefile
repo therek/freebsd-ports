@@ -3,14 +3,14 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.37 2000/02/21 06:45:26 asami Exp $
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.38 2000/03/20 23:25:19 jseger Exp $
 #
 
 DISTNAME=	qt-1.45
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.troll.no/qt/source/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 

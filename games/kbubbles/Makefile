@@ -3,14 +3,14 @@
 # Date created:		15 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/kbubbles/Makefile,v 1.3 2000/02/25 22:30:49 jim Exp $
+# $FreeBSD: ports/games/kbubbles/Makefile,v 1.4 2000/02/27 15:06:54 steve Exp $
 #
 
 DISTNAME=	kbubbles-0.8.6
 CATEGORIES=	games
 MASTER_SITES=	http://hem.passagen.se/tonybj/kbubbles/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	QwSpriteField.7:${PORTSDIR}/converters/kdesupport11 \

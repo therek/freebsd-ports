@@ -3,7 +3,7 @@
 # Date created:		19 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/wmstock/Makefile,v 1.3 1999/08/25 07:23:05 obrien Exp $
 #
 
 DISTNAME=	wmstock-0.06
@@ -11,7 +11,7 @@ CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://mattfischer.com/wmstock/src/ \
 		http://www.psn.net/~andrews/wmstock/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

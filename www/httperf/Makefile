@@ -3,14 +3,14 @@
 # Date created:		28 Jul 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/httperf/Makefile,v 1.3 1999/08/31 02:42:53 peter Exp $
 #
 
 DISTNAME=	httperf-0.6
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.hpl.hp.com/pub/httperf/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PKGNAME}
 USE_GMAKE=	yes

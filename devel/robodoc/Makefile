@@ -3,7 +3,7 @@
 # Date created:				15 Dec 1999
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/robodoc/Makefile,v 1.1.1.1 1999/12/23 14:15:34 jedgar Exp $
 #
 
 DISTNAME=	robodoc
@@ -12,7 +12,7 @@ CATEGORIES=	devel
 MASTER_SITES=	http://www.xs4all.nl/~rfsber/Robo/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 FETCH_BEFORE_ARGS+= -b
 WRKSRC=		${WRKDIR}/Robodoc

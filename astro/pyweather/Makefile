@@ -3,7 +3,7 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/pyweather/Makefile,v 1.1.1.1 2000/01/05 21:16:52 jedgar Exp $
 #
 
 DISTNAME=	pyWeather
@@ -11,7 +11,7 @@ PKGNAME=	pyWeather-0.1b
 CATEGORIES=	astro python
 MASTER_SITES=	http://members.bellatlantic.net/~rasclkng/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 RUN_DEPENDS=	${PYTHON}:${PORTSDIR}/lang/python
 

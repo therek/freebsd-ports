@@ -3,14 +3,14 @@
 # Date created:		04 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libcache/Makefile,v 1.1 2000/02/13 02:00:58 imura Exp $
 #
 
 DISTNAME=	libcache-1.0.0
 CATEGORIES=	devel
 MASTER_SITES=	http://www.afro-productions.com/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--enable-shared

@@ -3,7 +3,7 @@
 # Date created:		21 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.1.1.1 2000/01/02 14:23:41 jedgar Exp $
+# $FreeBSD: ports/games/gno3dtet/Makefile,v 1.2 2000/02/18 19:46:53 cpiazza Exp $
 #
 
 DISTNAME=	gno3dtet-1.0.0
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://webdat.com/pub/seb/gno3dtet/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	gnomeui.3:${PORTSDIR}/x11/gnomelibs
 

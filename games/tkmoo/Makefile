@@ -3,7 +3,7 @@
 # Date created:		20 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/tkmoo/Makefile,v 1.1 2000/02/13 02:03:25 imura Exp $
 #
 
 DISTNAME=	tkMOO-light-0.3.23
@@ -11,7 +11,7 @@ PKGNAME=	tkmoo-0.3.23
 CATEGORIES=	games tk82
 MASTER_SITES=	http://www.awns.com/tkMOO-light/Source/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 RUN_DEPENDS=	${WISH82}:${PORTSDIR}/x11-toolkits/tk82
 

@@ -3,7 +3,7 @@
 # Date created:		08 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/newt/Makefile,v 1.1 2000/02/13 01:57:43 imura Exp $
 #
 
 DISTNAME=	newt-0.50-13
@@ -15,7 +15,7 @@ MASTER_SITES=	\
 	ftp://ftp.infomagic.com/pub/mirrors/linux/RedHat/redhat-6.1/SRPMS/SRPMS/
 EXTRACT_SUFX=	.src.rpm
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm \

@@ -3,7 +3,7 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.1.1.1 2000/02/23 00:42:13 jedgar Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.2 2000/03/02 01:14:03 jedgar Exp $
 #
 
 DISTNAME=	xplanet-0.50
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.alumni.caltech.edu/~hari/xplanet/ \
 		http://www.radcyberzine.com/xglobe/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} photo_1600.jpg
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
 		GL.14:${PORTSDIR}/graphics/Mesa3

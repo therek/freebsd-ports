@@ -3,7 +3,7 @@
 # Date created:		14 February 1995
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/xphoon/Makefile,v 1.12 1999/08/25 04:22:48 obrien Exp $
 #
 
 DISTNAME=	xphoon
@@ -15,7 +15,7 @@ MASTER_SITES=	ftp://ftp.cdrom.com/pub/X11/R5contrib/ \
 		ftp://ftp.is.co.za/pub/x/R5contrib/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_IMAKE=	yes
 

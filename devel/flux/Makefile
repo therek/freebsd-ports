@@ -3,14 +3,14 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/flux/Makefile,v 1.1 2000/01/29 04:54:15 steve Exp $
 #
 
 DISTNAME=	flux-0.3.0
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.styx.net/projects/flux/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes

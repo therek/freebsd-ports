@@ -3,14 +3,14 @@
 # Date created:		23 Jun 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.6 2000/02/23 00:14:06 jedgar Exp $
+# $FreeBSD: ports/astro/wmglobe/Makefile,v 1.7 2000/02/23 04:36:18 taoka Exp $
 #
 
 DISTNAME=	wmglobe-1.0
 CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://perso.linuxfr.org/jdumont/wmg/
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	wraster.3:${PORTSDIR}/x11-wm/windowmaker
 

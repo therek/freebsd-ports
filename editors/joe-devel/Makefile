@@ -3,7 +3,7 @@
 # Date created:		01 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/editors/joe/Makefile,v 1.5 1999/08/25 05:43:56 obrien Exp $
+# $FreeBSD: ports/editors/joe/Makefile,v 1.6 1999/08/31 06:43:11 mharo Exp $
 #
 
 DISTNAME=	joe2.8
@@ -12,7 +12,7 @@ CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.std.com/src/editors/
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	andrews@technologist.com
+MAINTAINER=	will@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/joe
 ALL_TARGET=	joe
