@@ -1,9 +1,9 @@
 # New ports collection makefile for: 	nessus
-# Version required:	0.99.2
+# Version required:	0.99.4
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.8 2000/01/28 17:33:49 steve Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.9 2000/02/01 00:06:22 jedgar Exp $
 #
 
 DISTNAME=	nessus-core-0.99.4
@@ -35,16 +35,10 @@ CONFIGURE_ENV=  GTKCONFIG="${GTK_CONFIG}"
 MAN1=		nessus.1
 MAN8=		nessusd.8
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} >= 400001
-BROKEN=		"Can't be built successfully in -CURRENT"
-.endif
-
 post-install:
 		@${ECHO} "=========================================================="
 		@${ECHO} "Be sure to erase your old ${PREFIX}/etc/nessus!"
 		@${ECHO} "The syntax of nessusd.users and nessusd.rules has changed!"
 		@${ECHO} "=========================================================="
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
