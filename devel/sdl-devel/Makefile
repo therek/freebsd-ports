@@ -2,11 +2,11 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.26 2000/10/05 05:19:38 reg Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.27 2000/10/26 15:44:10 sobomax Exp $
 #
 
 PORTNAME=	sdl-devel
-PORTVERSION=	1.1.6
+PORTVERSION=	1.1.7
 CATEGORIES=	devel
 MASTER_SITES=	http://www.libsdl.org/release/ \
 		http://www.devolution.com/~slouken/SDL/release/
@@ -18,7 +18,6 @@ LIB_DEPENDS=	aa.1:${PORTSDIR}/graphics/aalib \
 		vga.1:${PORTSDIR}/graphics/svgalib
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
-USE_GMAKE=	yes
 USE_XLIB=	yes
 USE_ESOUND=	yes
 INSTALLS_SHLIB=	yes
