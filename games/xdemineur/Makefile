@@ -1,14 +1,16 @@
-# New ports collection makefile for:    xdemineur
-# Date created:         13 Feb 1998
-# Whom:                 Thomas Gellekum <tg@FreeBSD.org>
+# New ports collection makefile for:	xdemineur
+# Date created:		13 Feb 1998
+# Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/xdemineur/Makefile,v 1.7 2000/04/14 12:27:15 asami Exp $
+# $FreeBSD: ports/games/xdemineur/Makefile,v 1.8 2000/08/03 09:24:04 asami Exp $
 #
 
-PORTNAME=       xdemineur
+PORTNAME=	xdemineur
 PORTVERSION=	2.1.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.babafou.eu.org/pub/babafou/
+MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
+		ftp://ftp.babafou.eu.org/pub/babafou/
+MASTER_SITE_SUBDIR=	games
 
 MAINTAINER=	ports@FreeBSD.org
 
