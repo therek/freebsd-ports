@@ -2,11 +2,12 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.55 2000/06/19 11:40:10 nakai Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.56 2000/08/03 09:28:08 asami Exp $
 #
 
 PORTNAME=	icewm
 PORTVERSION=	1.0.4
+PORTREVISION=	1
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
@@ -22,8 +23,8 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
-USE_XPM=	yes
-CONFIGURE_ARGS=	--enable-i18n
+USE_IMLIB=	yes
+CONFIGURE_ARGS=	--enable-i18n --with-imlib
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/bsd-daemon.xpm ${PREFIX}/share/icewm/taskbar
