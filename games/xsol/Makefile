@@ -2,7 +2,7 @@
 # Date created:         2 Jan 1995
 # Whom:                 swallace
 #
-# $FreeBSD: ports/games/xsol/Makefile,v 1.14 2001/01/27 05:40:10 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xsol
@@ -17,6 +17,6 @@ USE_IMAKE=	yes
 MAN6=		xsol.6
 
 post-patch:
-	@${ECHO} "MANSUFFIX=6" >> ${WRKSRC}/Imakefile
+	@${ECHO_CMD} "MANSUFFIX=6" >> ${WRKSRC}/Imakefile
 
 .include <bsd.port.mk>

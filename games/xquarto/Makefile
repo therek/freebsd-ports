@@ -2,7 +2,7 @@
 # Date created:				9 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xquarto/Makefile,v 1.9 2000/04/14 12:28:07 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xquarto
@@ -17,6 +17,6 @@ USE_XPM=	yes
 MAN6=		xquarto.6
 
 pre-configure:
-	@${ECHO} "MANSUFFIX=6" >>${WRKSRC}/src/Imakefile
+	@${ECHO_CMD} "MANSUFFIX=6" >>${WRKSRC}/src/Imakefile
 
 .include <bsd.port.mk>

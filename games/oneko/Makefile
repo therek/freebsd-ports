@@ -2,7 +2,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/games/oneko/Makefile,v 1.15 1999/08/27 21:13:57 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	oneko
@@ -17,6 +17,6 @@ USE_IMAKE=	yes
 MAN6=		oneko.6
 
 pre-configure:
-	@${ECHO} "MANSUFFIX=6" >>${WRKSRC}/Imakefile
+	@${ECHO_CMD} "MANSUFFIX=6" >>${WRKSRC}/Imakefile
 
 .include <bsd.port.mk>

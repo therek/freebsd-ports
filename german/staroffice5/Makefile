@@ -2,7 +2,7 @@
 # Date created:		20 Dezember 1999
 # Whom:                 Martin Blapp
 #
-# $FreeBSD: ports/german/staroffice5/Makefile,v 1.8 2000/10/08 10:20:18 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	staroffice
@@ -71,7 +71,7 @@ do-install:
 	@${LN} -fs /compat/linux/usr/local/Office51 ${PREFIX}/Office51
 .endif
 	@${CP} /compat/linux/etc/ld.so.conf ${WRKDIR}/tmp/ld.so.conf.temp
-	@${ECHO} "${WRKDIR}/tmp" >> ${WRKDIR}/tmp/ld.so.conf.temp
+	@${ECHO_CMD} "${WRKDIR}/tmp" >> ${WRKDIR}/tmp/ld.so.conf.temp
 	@PATH=${PATH}:${WRKDIR}/tmp
 	@LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:${WRKDIR}/tmp:/usr/lib:/lib:/compat/linux/lib
 	@/compat/linux/sbin/ldconfig -f ${WRKDIR}/tmp/ld.so.conf.temp
