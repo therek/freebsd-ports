@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.11 2000/06/17 02:36:59 will Exp $
+# $FreeBSD: ports/devel/p5-File-Lock/Makefile,v 1.12 2000/10/23 21:02:47 will Exp $
 #
 
 PORTNAME=	File-Lock
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 USE_PERL5=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				June 17th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.21 2000/08/26 09:15:04 andreas Exp $
+# $FreeBSD: ports/databases/p5-DBD-Pg/Makefile,v 1.22 2000/10/23 21:02:43 will Exp $
 #
 
 PORTNAME=	DBD-Pg
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/DBI.pm:${PORTSDIR}/databases/p5-DBI
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7

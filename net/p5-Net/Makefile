@@ -2,7 +2,7 @@
 # Date created:				September 30th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/p5-Net/Makefile,v 1.26 2000/04/22 22:25:23 vanilla Exp $
+# $FreeBSD: ports/net/p5-Net/Makefile,v 1.27 2000/10/23 21:03:03 will Exp $
 #
 
 PORTNAME=	p5-Net
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 DISTNAME=	libnet-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 USE_PERL5=	YES
 

@@ -2,7 +2,7 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/p5-Convert-UU/Makefile,v 1.23 2000/06/17 02:36:28 will Exp $
+# $FreeBSD: ports/converters/p5-Convert-UU/Makefile,v 1.24 2000/10/23 21:02:42 will Exp $
 #
 
 PORTNAME=	Convert-UU
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Convert
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 USE_PERL5=	YES
 

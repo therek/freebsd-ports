@@ -2,7 +2,7 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.16 2000/07/31 09:50:51 kevlo Exp $
+# $FreeBSD: ports/devel/p5-Curses/Makefile,v 1.17 2000/10/23 21:02:44 will Exp $
 #
 
 PORTNAME=	Curses
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Curses
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 USE_PERL5=	yes
 

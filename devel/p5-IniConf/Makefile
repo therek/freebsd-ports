@@ -2,7 +2,7 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-IniConf/Makefile,v 1.13 2000/04/16 23:12:32 mharo Exp $
+# $FreeBSD: ports/devel/p5-IniConf/Makefile,v 1.14 2000/10/23 21:02:54 will Exp $
 #
 
 PORTNAME=	IniConf
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	IniConf
 PKGNAMEPREFIX=	p5-
 DISTNAME=	${PORTNAME}.pm-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	dima@chg.ru
 
 USE_PERL5=	YES
 
