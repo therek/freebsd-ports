@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/security/cyrus-sasl2/scripts/configure.sasl,v 1.13 2002/08/08 14:04:44 ume Exp $
+# $FreeBSD: ports/security/cyrus-sasl2/scripts/configure.sasl,v 1.14 2002/08/22 19:13:42 ade Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -97,9 +97,11 @@ done
 
 if [ "$PWCHECK" ]; then
 	echo "PWCHECK_SUB+=	-e \"s;%%ENABLEPWCHECK%%;yes;g\""
+	echo "PWCHECK_METHOD=	saslauthd"
 else
 	echo "PWCHECK_SUB+=	-e \"s;%%PWCHECK%%;saslauthd;g\" \\"
 	echo "			-e \"s;%%ENABLEPWCHECK%%;no;g\""
+	echo "PWCHECK_METHOD=	auxprop"
 fi
 if [ ! "${DBLIB}" ]; then
 	echo "CONFIGURE_ARGS+=	--with-dblib=ndbm"
