@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.307 2000/07/02 23:36:23 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.308 2000/07/03 00:34:19 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -229,7 +229,6 @@
     SUBDIR += sfio
     SUBDIR += shtool
     SUBDIR += sip
-    SUBDIR += smapi
     SUBDIR += stlport
     SUBDIR += str
     SUBDIR += swarm
