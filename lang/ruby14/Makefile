@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.25 2000/08/08 16:08:24 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.26 2000/08/12 20:09:22 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -32,6 +32,11 @@ BRANCH_NAME=	1.4
 DOCDIR=		${PREFIX}/share/doc/ruby
 EXAMPLESDIR=	${PREFIX}/share/examples/ruby
 
+ELISP_FILES=	inf-ruby.el ruby-mode.el rubydb3x.el
+
+EMACSLISPDIR=	${PREFIX}/share/emacs/site-lisp
+XEMACSLISPDIR=	${PREFIX}/lib/xemacs/site-lisp
+
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 400014
@@ -50,6 +55,12 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${EXAMPLESDIR}
 	${MKDIR} ${EXAMPLESDIR}/misc
 	${INSTALL_DATA} ${WRKSRC}/misc/* ${EXAMPLESDIR}/misc
+	${MKDIR} ${EMACSLISPDIR}
+	${MKDIR} ${XEMACSLISPDIR}
+.for f in ${ELISP_FILES}
+	${LN} -sf ${EXAMPLESDIR}/misc/${f} ${EMACSLISPDIR}/
+	${LN} -sf ${EXAMPLESDIR}/misc/${f} ${XEMACSLISPDIR}/
+.endfor
 	${MKDIR} ${EXAMPLESDIR}/curses
 	${INSTALL_DATA} ${WRKSRC}/ext/curses/hello.rb ${WRKSRC}/ext/curses/rain.rb ${WRKSRC}/ext/curses/view.rb ${EXAMPLESDIR}/curses
 	${MKDIR} ${EXAMPLESDIR}/pty
