@@ -3,12 +3,17 @@
 # Date created:	1 August 1996
 # Whom:	desmo
 #
-# $FreeBSD: ports/games/netris/Makefile,v 1.2 1999/08/25 06:04:08 obrien Exp $
+# $FreeBSD: ports/games/netris/Makefile,v 1.3 1999/12/24 04:35:33 steve Exp $
 #
 
 DISTNAME=		netris-0.5
-CATEGORIES=		games
+CATEGORIES=		games ipv6
 MASTER_SITES=		ftp://ftp.netris.org/pub/netris/
+
+PATCH_SITES=		ftp://ftp2.v6.linux.or.jp/pub/Linux/IPv6-2/netris/ \
+			http://ftp2.v6.linux.or.jp/pub/Linux/IPv6-2/netris/
+PATCHFILES=		netris-0.5-v6-19991206a.diff.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		desmo@bandwidth.org
 
