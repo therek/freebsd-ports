@@ -2,7 +2,7 @@
 # Date created:        13 June 2000
 # Whom:                Stijn Hoop <stijn@win.tue.nl>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/grdb/Makefile,v 1.1.1.1 2000/06/16 13:25:32 sobomax Exp $
 #
 
 PORTNAME=	grdb
@@ -17,7 +17,8 @@ LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt \
 		${GNOME_DEPENDS}
 
 .if !defined(WITHOUT_GNOME)
-GNOME_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs
+GNOME_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
+		capplet.4:${PORTSDIR}/sysutils/gnomecontrolcenter
 .endif
 
 USE_X_PREFIX=	yes
