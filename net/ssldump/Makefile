@@ -2,7 +2,7 @@
 # Date created:		10 November 2000
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ssldump/Makefile,v 1.1 2000/11/11 09:22:15 kris Exp $
 #
 
 PORTNAME=	ssldump
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.rtfm.com/ssldump/
 MAINTAINER=	kris@FreeBSD.org
 
 USE_OPENSSL=	YES
+FORBIDDEN=	"Remotely exploitable buffer overflow."
 
 .include <bsd.port.pre.mk>
 
