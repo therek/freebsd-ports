@@ -2,7 +2,7 @@
 # Date created:		Oct 27, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/x11/qrash/Makefile,v 1.6 2001/01/16 17:33:12 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qrash
@@ -27,5 +27,7 @@ ALL_TARGET=	qrash
 post-patch:
 	@${PERL} -pi -e "s=PREFIX=${PREFIX}=g" ${WRKSRC}/resource.cc
 	@${PERL} -pi -e "s=/usr/X11=${PREFIX}=g" ${WRKSRC}/configure
+	${FIND} ${WRKSRC} -type f -exec ${PERL} -pi -e \
+		"s:<malloc.h>:<stdlib.h>:g" {} \;
 
 .include <bsd.port.mk>
