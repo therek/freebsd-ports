@@ -29,7 +29,7 @@
 #
 
 #
-# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.3 2004/02/04 04:27:04 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.sdl.mk,v 1.4 2004/03/16 04:06:47 edwin Exp $
 #
 
 SDL_Include_MAINTAINER=		edwin@FreeBSD.org
@@ -48,7 +48,7 @@ _USE_SDL_ALL=	gfx gui image mixer ldbad mm net sdl sound ttf
 # _REQUIRES_xxx	also needs these SDL libraries
 # 
 
-_VERSION_gfx=	10
+_VERSION_gfx=	11
 _SUBDIR_gfx=	graphics
 _REQUIRES_gfx=	sdl
 
