@@ -1,6 +1,4 @@
-@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.29 2003/06/02 14:04:36 naddy Exp $
-bin/tmda-gui
-bin/tmda-manager
+@comment $FreeBSD: ports/mail/tmda/pkg-plist,v 1.30 2003/06/15 09:55:55 leeym Exp $
 bin/tmda-address
 bin/tmda-check-address
 bin/tmda-filter
@@ -95,6 +93,7 @@ bin/tmda-sendmail
 %%PORTDOCS%%%%DOCSDIR%%/THANKS
 %%PORTDOCS%%%%DOCSDIR%%/UPGRADE
 %%PORTDOCS%%%%DOCSDIR%%/bugs.html
+%%PORTDOCS%%%%DOCSDIR%%/challengeresponse.html
 %%PORTDOCS%%%%DOCSDIR%%/config-client.html
 %%PORTDOCS%%%%DOCSDIR%%/config-filter.html
 %%PORTDOCS%%%%DOCSDIR%%/config-pre.html
@@ -119,6 +118,7 @@ bin/tmda-sendmail
 %%PORTDOCS%%%%DOCSDIR%%/tmda-ofmipd.html
 %%PORTDOCS%%%%DOCSDIR%%/tmda-vdomains.html
 %%PORTDOCS%%%%DOCSDIR%%/trouble.html
+%%PORTDOCS%%%%DOCSDIR%%/upgrade.html
 %%PORTDOCS%%@dirrm %%DOCSDIR%%
 %%EXAMPLESDIR%%/collectaddys
 %%EXAMPLESDIR%%/def2html
