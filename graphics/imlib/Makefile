@@ -2,12 +2,11 @@
 # Date created:		10 June 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/graphics/imlib/Makefile,v 1.74 2001/05/11 16:36:26 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imlib
-PORTVERSION=	1.9.10
-PORTREVISION=	1
+PORTVERSION=	1.9.11
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/imlib
@@ -21,11 +20,13 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_GTK=	yes
-USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc/imlib --disable-modules
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+MAN1=		imlib-config.1 imlib_config.1
 
 pre-configure:
 	${PERL} -pi -e "s^%%LOCALBASE%%^${LOCALBASE}^" ${WRKSRC}/imlib-config.in
