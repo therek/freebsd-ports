@@ -2,11 +2,11 @@
 # Date created:         5 December 1998
 # Whom:                 Sean Kelly <kelly@ad1440.net>
 #
-# $FreeBSD: ports/print/jadetex/Makefile,v 1.12 2000/07/04 07:12:58 sobomax Exp $
+# $FreeBSD: ports/print/jadetex/Makefile,v 1.13 2000/10/08 10:22:43 asami Exp $
 #
 
 PORTNAME=		jadetex
-PORTVERSION=		2.18
+PORTVERSION=		2.20
 CATEGORIES=		print
 MASTER_SITES=		http://www.tug.org/applications/jadetex/
 
@@ -20,6 +20,7 @@ MAKE_ENV=		TEXMFCNF=${FILESDIR}:${PREFIX}/share/texmf/web2c
 USE_ZIP=		yes
 
 NO_WRKSUBDIR=   	yes
+MESSAGE=		${WRKDIR}/pkg-message
 
 post-extract:
 	@${ECHO} all: default > ${WRKSRC}/Makefile.tmp
@@ -31,6 +32,7 @@ do-install:
 
 post-install:
 	${PREFIX}/bin/mktexlsr
-	@${CAT} ${PKGMESSAGE}
+	@${SED} -e 's,/usr/local,${PREFIX},' ${PKGMESSAGE} > ${MESSAGE}
+	@${CAT} ${MESSAGE}
 
 .include <bsd.port.mk>
