@@ -2,11 +2,11 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.16 2000/04/22 02:37:00 will Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.17 2000/08/03 09:22:37 asami Exp $
 #
 
 PORTNAME=	xcircuit
-PORTVERSION=	2.0b4
+PORTVERSION=	2.1b3
 CATEGORIES=	cad
 MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
 
@@ -21,11 +21,9 @@ XMKMF=		xmkmf
 
 MAN1=		xcircuit.1
 
-post-patch:
-	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/Imakefile
-
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/xcircuit
-	${INSTALL_DATA} ${WRKSRC}/examples/* ${PREFIX}/share/examples/xcircuit
+	${TAR} -C ${WRKSRC}/examples --exclude CVS -cf - . | \
+		${TAR} -C ${PREFIX}/share/examples/xcircuit --unlink -xf -
 
 .include <bsd.port.mk>
