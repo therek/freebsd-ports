@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/isc-dhcp3-devel/pkg-plist,v 1.1 2004/01/17 23:41:30 edwin Exp $
+@comment $FreeBSD: ports/net/isc-dhcp3-devel/pkg-plist,v 1.2 2004/03/05 22:03:02 sergei Exp $
 include/dhcpctl.h
 include/isc-dhcp/boolean.h
 include/isc-dhcp/dst.h
@@ -12,6 +12,7 @@ include/omapip/buffer.h
 include/omapip/omapip.h
 lib/libdhcpctl.a
 lib/libomapi.a
+lib/libdst.a
 %%PORTDOCS%%%%DOCSDIR%%/ANONCVS
 %%PORTDOCS%%%%DOCSDIR%%/CHANGES
 %%PORTDOCS%%%%DOCSDIR%%/COPYRIGHT
