@@ -2,21 +2,21 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.17 2001/01/24 12:05:11 olgeni Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.18 2001/01/24 12:43:13 olgeni Exp $
 #
 
 PORTNAME=	nessus-libraries
-PORTVERSION=	1.0.7
+PORTVERSION=	1.0.7a
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/ \
-		ftp://ftp.nessus.org/pub/nessus/nessus-${PORTVERSION}/ \
-		ftp://cvs.nessus.org/pub/nessus/nessus-${PORTVERSION}/ \
-		ftp://ftp.gwdg.de/pub/linux/misc/nessus/nessus-${PORTVERSION}/ \
-		http://ftp.gwdg.de/pub/linux/misc/nessus/nessus-${PORTVERSION}/ \
-		ftp://ftp.esiea.fr/pub/mirrors/nessus/nessus-${PORTVERSION}/ \
-		ftp://sunsite.cnlab-switch.ch/mirror/nessus/nessus-${PORTVERSION}/ \
-		ftp://ftp.chg.ru/pub/security/nessus/nessus-${PORTVERSION}/ \
-		ftp://ftp.sekure.net/pub/nessus/nessus-${PORTVERSION}/
+MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://ftp.nessus.org/pub/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://cvs.nessus.org/pub/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://ftp.gwdg.de/pub/linux/misc/nessus/nessus-${PORTVERSION}/src/ \
+		http://ftp.gwdg.de/pub/linux/misc/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://ftp.esiea.fr/pub/mirrors/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://sunsite.cnlab-switch.ch/mirror/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://ftp.chg.ru/pub/security/nessus/nessus-${PORTVERSION}/src/ \
+		ftp://ftp.sekure.net/pub/nessus/nessus-${PORTVERSION}/src/
 
 MAINTAINER=	olgeni@FreeBSD.org
 
