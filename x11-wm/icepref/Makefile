@@ -2,7 +2,7 @@
 # Date created:		06 June 2000
 # Whom:				Michael Urban <murban@tznet.com>
 #
-# $FreeBSD: ports/x11-wm/icepref/Makefile,v 1.5 2001/01/16 19:08:45 will Exp $
+# $FreeBSD: ports/x11-wm/icepref/Makefile,v 1.6 2001/03/14 19:33:29 vanilla Exp $
 #
 
 PORTNAME=	icepref
@@ -20,7 +20,6 @@ USE_PYTHON=	yes
 USE_GTK=	yes
 NO_BUILD=	yes
 MAN1=		icepref.1
-FETCH_BEFORE_ARGS=	-b
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/icepref ${PREFIX}/bin

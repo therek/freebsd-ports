@@ -2,7 +2,7 @@
 # Date created:		28 June 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/math/xspread/Makefile,v 1.9 2000/04/14 07:20:57 asami Exp $
+# $FreeBSD: ports/math/xspread/Makefile,v 1.10 2000/06/08 15:42:52 sobomax Exp $
 #
 
 PORTNAME=	xspread
@@ -17,8 +17,6 @@ USE_XLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
 		LIBS="-L${X11BASE}/lib"
-
-FETCH_BEFORE_ARGS=	-t
 
 INSTALL_TARGET=	install install.man
 MAN1=		xspread.1 pxspread.1

@@ -2,7 +2,7 @@
 # Date Created:				13 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/buffy/Makefile,v 1.3 2000/10/05 06:42:35 reg Exp $
+# $FreeBSD: ports/x11-toolkits/buffy/Makefile,v 1.4 2001/02/05 16:48:46 olgeni Exp $
 #
 
 PORTNAME=	buffy
@@ -11,8 +11,6 @@ CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://reality.sgi.com/offer/src/buffy/
 
 MAINTAINER=	sobomax@FreeBSD.org
-
-FETCH_BEFORE_ARGS=	-b
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes

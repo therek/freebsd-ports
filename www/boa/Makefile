@@ -2,7 +2,7 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/www/boa/Makefile,v 1.8 2000/10/07 12:18:16 jedgar Exp $
+# $FreeBSD: ports/www/boa/Makefile,v 1.9 2001/02/05 15:33:14 olgeni Exp $
 #
 
 PORTNAME=	boa
@@ -11,8 +11,6 @@ CATEGORIES=	www
 MASTER_SITES=	http://www.boa.org/
 
 MAINTAINER=	ports@FreeBSD.org
-
-FETCH_BEFORE_ARGS=	-b
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				28 June 1996
 # Whom:					markm
 #
-# $FreeBSD: ports/security/xinetd/Makefile,v 1.30 2000/12/10 04:42:41 vanilla Exp $
+# $FreeBSD: ports/security/xinetd/Makefile,v 1.31 2001/02/09 14:28:35 vanilla Exp $
 #
 
 PORTNAME=	xinetd
@@ -13,7 +13,6 @@ MASTER_SITES=	http://www.xinetd.org/ \
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-FETCH_BEFORE_ARGS=	-b
 GNU_CONFIGURE=	yes
 ALL_TARGET=	build
 CONFIGURE_ARGS=	--with-loadavg --with-libwrap

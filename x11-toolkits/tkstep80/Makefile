@@ -2,7 +2,7 @@
 # Date created:		06 November 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.32 2000/10/08 10:07:18 asami Exp $
+# $FreeBSD: ports/x11-toolkits/tkstep80/Makefile,v 1.33 2001/02/05 16:49:12 olgeni Exp $
 #
 
 PORTNAME=	tkstep
@@ -22,7 +22,6 @@ LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80 \
 FILE_DEPENDS=	${PORTSDIR}/x11-toolkits/tk80
 
 USE_XPM=	yes
-FETCH_BEFORE_ARGS=	-b
 PATCH_DIST_ARGS=	-p1 -d ${WRKDIR}/tk8.0.4 -E --quiet
 WRKSRC=		${WRKDIR}/tk8.0.4/unix
 INSTALLS_SHLIB=	yes
