@@ -1,12 +1,12 @@
 # New ports collection makefile for:	irssi
-# Version required:		0.7.15-2
+# Version required:		0.7.15-3
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.10 1999/08/29 00:37:47 jim Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.11 1999/08/31 13:05:09 jim Exp $
 #
 
-DISTNAME=	irssi-0.7.15-2
+DISTNAME=	irssi-0.7.15-3
 PKGNAME=	irssi-0.7.15
 CATEGORIES=	irc
 MASTER_SITES=	http://xlife.dhs.org/irssi/files/
