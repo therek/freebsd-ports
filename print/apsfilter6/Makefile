@@ -2,7 +2,7 @@
 # Date created: 	Tue Nov 14 18:29:48 MET 1995
 # Whom: 		Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/apsfilter/Makefile,v 1.54 2000/04/26 18:57:21 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/Makefile,v 1.55 2000/04/30 16:12:55 andreas Exp $
 #
 
 PORTNAME=	apsfilter
@@ -27,6 +27,7 @@ RUN_DEPENDS+=	smbclient:${PORTSDIR}/net/samba
 
 USE_BZIP2=	yes
 WRKSRC=		${WRKDIR}/apsfilter
+SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}"
 
 # make a2ps port happy in this early stage
 PAPERSIZE?=letter
@@ -35,20 +36,7 @@ PAPERSIZE?=letter
 pre-configure:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
-# This was copied from bsd.port.mk because a missing post-clean target
-# is needed
-clean:
-.if !defined(NOCLEANDEPENDS)
-	@${MAKE} clean-depends
-.endif
-	@${ECHO_MSG} "===>  Cleaning for ${PKGNAME}"
-	@if [ -d ${WRKDIR} ]; then \
-		if [ -w ${WRKDIR} ]; then \
-			${RM} -rf ${WRKDIR}; \
-		else \
-			${ECHO_MSG} "===>   ${WRKDIR} not writable, skipping"; \
-		fi; \
-	fi
+post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 .if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
