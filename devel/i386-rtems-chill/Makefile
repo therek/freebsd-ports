@@ -2,7 +2,7 @@
 # Date created:		9 June 2000
 # Whom:			James Housley <jim@thehousleys.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/i386-rtems-chill/Makefile,v 1.1 2000/07/10 04:32:02 steve Exp $
 #
 
 PORTNAME=	chill
@@ -32,7 +32,7 @@ RUN_DEPENDS=	${LCLTARGET}-gcc:${PORTSDIR}/devel/${LCLTARGET}-gcc
 
 PKGNAMEPREFIX=	${LCLTARGET}-
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 ALL_TARGET=	all info
 
 CONFIGURE_TARGET?=	--target=${LCLTARGET}
