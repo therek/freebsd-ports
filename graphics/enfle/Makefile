@@ -2,11 +2,11 @@
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuki Sawada <samy@goldmoon.org>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.15 2000/06/20 15:28:56 sobomax Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.16 2000/06/21 06:41:17 sobomax Exp $
 #
 
 PORTNAME=	enfle
-PORTVERSION=	20000615
+PORTVERSION=	20000627
 CATEGORIES=	graphics
 MASTER_SITES=	http://enfle.fennel.org/ \
 		http://www3.big.or.jp/~sian/linux/products/enfle/ \
