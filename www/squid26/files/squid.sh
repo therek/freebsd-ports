@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/squid/files/squid.sh,v 1.8 2004/07/28 02:10:54 ijliao Exp $
+# $FreeBSD: ports/www/squid/files/squid.sh,v 1.9 2004/09/02 06:44:14 sem Exp $
 #
 # --begin rcng
 # PROVIDE: squid
@@ -22,20 +22,28 @@ command=%%PREFIX%%/sbin/squid
 # --begin rcng
 extra_commands=reload
 reload_cmd="${command} -k reconfigure"
-restart_cmd=squid_restart
 # --end rcng
-stop_cmd="${command} -k shutdown"
+stop_cmd="squid_stop"
 squid_chdir=${squid_chdir:-%%PREFIX%%/squid/logs}
 squid_enable=${squid_enable:-"NO"}
 squid_flags=${squid_flags-"-D"}
 squid_user=${squid_user:-%%SQUID_UID%%}
 default_config=%%PREFIX%%/etc/squid/squid.conf
 
+# --begin rcold
+squid_stop() {
+	echo -n " ${name}"
+	${command} -k shutdown
+	while ps -xcU ${squid_user} | grep -q squid; do
+		sleep 2
+	done
+}
+
+# --end rcold
 # --begin rcng
-squid_restart() {
-	run_rc_command stop
+squid_stop() {
+	${command} -k shutdown
 	run_rc_command poll
-	run_rc_command start
 }
 
 . %%RC_SUBR%%
@@ -66,14 +74,10 @@ start)
 	;;
 stop)
 	if [ -x "${command}" ]; then
-		echo -n " ${name}"
 		${stop_cmd}
-		while ps -xcU ${squid_user} | grep -q squid; do
-			sleep 2
-		done
 	fi
 	;;
-	*)
+*)
 	echo "usage: ${0##*/} {start|stop}" >&2
 	exit 64
 	;;
