@@ -4,12 +4,13 @@
 # Date created:			  Mon Feb 17, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/misc/jive/Makefile,v 1.6 1999/11/23 03:44:46 billf Exp $
+# $FreeBSD: ports/misc/jive/Makefile,v 1.7 2000/02/13 03:23:32 obrien Exp $
 #
 
 DISTNAME=	jive-1.1
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.nuxi.com/pub/misc/
+MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/misc/  \
+		http://people.FreeBSD.org/~obrien/Distfiles/
 
 MAINTAINER=	obrien@FreeBSD.org
 

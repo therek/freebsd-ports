@@ -4,7 +4,7 @@
 # Date created:			  Thur July 25, 1996
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.76 2000/01/20 03:22:01 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.77 2000/02/13 03:23:51 obrien Exp $
 
 DISTNAME=	mutt-1.0.1i
 PKGNAME=	mutt-1.0.1
@@ -22,7 +22,6 @@ PATCH_SITES=	http://www.frmug.org/mutt/mutt/${PKGNAME:S/^mutt-//}/  \
 		http://www.math.fu-berlin.de/~leitner/mutt/${PKGNAME:S/^mutt-//}/  \
 		http://www.efrei.fr/~parmelan/mutt/${PKGNAME:S/^mutt-//}/  \
 		ftp://www.frmug.org/pub/mutt/mutt/${PKGNAME:S/^mutt-//}/  \
-		ftp://ftp.nuxi.com/pub/mutt/${PKGNAME:S/^mutt-//}/  \
 		ftp://riemann.iam.uni-bonn.de/pub/mutt/
 PATCHFILES=
 PATCH_DIST_STRIP=	-p1
