@@ -1,15 +1,15 @@
 # New ports collection makefile for:	mozilla
-# Version required:	M12
+# Version required:	M13
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD: ports/www/mozilla/Makefile,v 1.37 1999/11/14 02:34:50 cpiazza Exp $
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.38 2000/01/06 03:51:58 reg Exp $
 #
 
-DISTNAME=	mozilla-source-M12
-PKGNAME=	mozilla-M12
+DISTNAME=	mozilla-source-M13
+PKGNAME=	mozilla-M13
 CATEGORIES=	www
-MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m12/src/
+MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m13/src/
 
 MAINTAINER=	reg@FreeBSD.org
 
@@ -52,8 +52,8 @@ MAKE_ENV=	LD_LIBRARY_PATH=${WRKSRC}/dist/bin \
 do-install:
 	${MKDIR} ${PREFIX}/lib/mozilla
 	${CHMOD} 755 ${PREFIX}/lib/mozilla
-	cd ${WRKSRC}/dist/bin && tar -chf - * | \
-		tar -xf - -C ${PREFIX}/lib/mozilla
+	cd ${WRKSRC}/dist/bin && ${TAR} -chf - * | \
+		${TAR} -xf - -C ${PREFIX}/lib/mozilla
 	${INSTALL_SCRIPT} ${WRKSRC}/mozilla ${PREFIX}/bin
 	${TOUCH} ${PREFIX}/lib/mozilla/component.reg
 	${CHMOD} 666 ${PREFIX}/lib/mozilla/component.reg
