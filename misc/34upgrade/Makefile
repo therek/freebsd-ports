@@ -3,10 +3,10 @@
 # Date created:		5 Jan 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.2 2000/01/07 15:58:56 asami Exp $
+# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.3 2000/01/13 02:39:35 asami Exp $
 #
 
-DISTNAME=	34upgrade-2000.01.05
+DISTNAME=	34upgrade-2000.02.02
 CATEGORIES=	misc
 DISTFILES=	# empty
 
