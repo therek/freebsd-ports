@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.164 2000/09/16 17:29:52 ade Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.165 2000/09/16 18:59:13 will Exp $
 #
 
     SUBDIR += afsp
@@ -117,6 +117,7 @@
     SUBDIR += soundtracker
     SUBDIR += sox
     SUBDIR += sphinx
+    SUBDIR += spiralsynth
     SUBDIR += splay
     SUBDIR += splaytk
     SUBDIR += streamripper
