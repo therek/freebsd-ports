@@ -2,12 +2,12 @@
 # Date created:		27 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.3 2001/03/28 09:53:15 knu Exp $
+# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.4 2001/04/01 17:59:39 knu Exp $
 #
 
 PORTNAME=	sdl
 PORTVERSION=	0.3
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	devel graphics audio ruby
 MASTER_SITES=	http://www.kmc.kyoto-u.ac.jp/~ohai/rubysdl/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -23,16 +23,36 @@ LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel \
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+.if !defined(NOPORTDOCS)
+USE_RUBY_RD=	yes
+.endif
 
 CONFIGURE_ARGS=	--with-sdl-config="sdl11-config"
 INSTALL_TARGET=	site-install
+
+RD_DOCS_JA=	rubysdl_doc.rd
+
+DOCS_EN=	rubysdl_const_list.txt
+DOCS_JA=	README ${RD_DOCS_JA} ${RD_DOCS_JA:S/.rd$/.html/}
+
+post-build:
+.if !defined(NOPORTDOCS)
+.for f in ${RD_DOCS_JA}
+	@cd ${WRKSRC} && ${RUBY_RD} ${f} > ${f:S/.rd$/.html/}
+.endfor
+.endif
 
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/sample/* ${RUBY_EXAMPLESDIR}/${PORTNAME}/
 	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
-	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/${PORTNAME}/ja/
+.for f in ${DOCS_EN}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+.endfor
+.for f in ${DOCS_JA}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
+.endfor
 .endif
 
 .include <bsd.port.mk>
