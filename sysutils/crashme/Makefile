@@ -2,13 +2,14 @@
 # Date created:			Apr 1, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/crashme/Makefile,v 1.1 2001/04/07 06:03:49 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	crashme
 PORTVERSION=	2.4
 CATEGORIES=	sysutils
-MASTER_SITES=	http://people.delphi.com/gjc/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=kris
 DISTNAME=	crashme
 EXTRACT_SUFX=	.tgz
 
