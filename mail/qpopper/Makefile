@@ -2,11 +2,12 @@
 # Date created:		1 April 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/mail/qpopper/Makefile,v 1.58 2001/06/02 21:15:12 kris Exp $
+# $FreeBSD: ports/mail/qpopper/Makefile,v 1.59 2001/06/02 23:31:06 lioux Exp $
 #
 
 PORTNAME=	qpopper
 PORTVERSION=	4.0.3
+PORTREVISION=	1
 CATEGORIES=	mail ipv6
 MASTER_SITES=	ftp://ftp.qualcomm.com/eudora/servers/unix/popper/%SUBDIR%/ \
 		ftp://sunsite.doc.ic.ac.uk/Mirrors/ftp.qualcomm.com/eudora/servers/unix/popper/%SUBDIR%/
