@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.192 2001/06/08 23:07:09 roam Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.193 2001/06/10 17:45:19 dwcjr Exp $
 #
     SUBDIR += yawho
 
@@ -19,6 +19,7 @@
     SUBDIR += cfengine
     SUBDIR += checkservice
     SUBDIR += clockspeed
+    SUBDIR += colorize
     SUBDIR += comconsole
     SUBDIR += consolehm 
     SUBDIR += contool
