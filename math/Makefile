@@ -1,4 +1,4 @@
-# $FreeBSD: ports/math/Makefile,v 1.138 2001/08/28 16:31:17 sobomax Exp $
+# $FreeBSD: ports/math/Makefile,v 1.139 2001/08/30 15:50:33 ume Exp $
 #
     SUBDIR += yacas
 
@@ -88,6 +88,7 @@
     SUBDIR += physcalc
     SUBDIR += plplot
     SUBDIR += pspp
+    SUBDIR += py-gato
     SUBDIR += py-gnuplot
     SUBDIR += py-numeric
     SUBDIR += py-numeric17
