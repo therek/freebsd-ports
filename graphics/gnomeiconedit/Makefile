@@ -2,7 +2,7 @@
 # Date created:				28th January 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gnomeiconedit/Makefile,v 1.15 2001/03/29 16:33:58 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gnomeiconedit
@@ -12,8 +12,6 @@ MASTER_SITES=	http://www.webtribe.net/i/iain/
 DISTNAME=	gnome-iconedit-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
-
-BROKEN=		"Uses internals from devel/oaf that are no longer present"
 
 USE_GNOME=	yes
 USE_GMAKE=	yes
