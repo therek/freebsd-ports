@@ -2,11 +2,11 @@
 # Date created:		30 December 2000
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/graphics/jpeg2ps-letter/Makefile,v 1.1 2000/12/30 14:14:57 lkoeller Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jpeg2ps
-PORTVERSION=	1.8
+PORTVERSION=	1.9
 CATEGORIES=	graphics converters
 MASTER_SITES=	http://www.pdflib.com/jpeg2ps/
 PKGNAMESUFFIX=	-${PAPERSIZE}
@@ -20,7 +20,7 @@ INSTALL_TARGET=
 .if ${PAPERSIZE} == a4
 post-patch:
 	${CP} ${WRKSRC}/Makefile ${WRKSRC}/Makefile.input
-	${SED} "s%CCFLAGS= -O -c%CCFLAGS= -O -c -DA4%" ${WRKSRC}/Makefile.input > ${WRKSRC}/Makefile
+	${SED} "s%CCFLAGS=-O -c%CCFLAGS=-O -c -DA4%" ${WRKSRC}/Makefile.input > ${WRKSRC}/Makefile
 	${RM} -f ${WRKSRC}/Makefile.input
 .endif
 
