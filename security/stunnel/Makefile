@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.7 1999/08/31 01:51:51 peter Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.8 1999/09/06 19:29:23 cpiazza Exp $
 #
 
 DISTNAME=	stunnel-3.4a
@@ -23,7 +23,6 @@ RUN_DEPENDS=	openssl:${PORTSDIR}/security/openssl
 
 .if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
 LIB_DEPENDS=	rsaref.2:${PORTSDIR}/security/rsaref
-MAKE_ENV+=	EXTRA_SSL_LIBS="-lRSAglue -lrsaref"
 .endif
 
 GNU_CONFIGURE=	yes
