@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.171 2001/03/31 03:21:48 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.172 2001/04/02 20:38:11 demon Exp $
 #
     SUBDIR += yawho
 
@@ -32,6 +32,7 @@
     SUBDIR += detach
     SUBDIR += diskusage
     SUBDIR += doconfig
+    SUBDIR += dvdtape
     SUBDIR += eject
     SUBDIR += extipl
     SUBDIR += fcron
