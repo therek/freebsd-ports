@@ -2,7 +2,7 @@
 # Date created:        11 July 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/audio/wmmixer/Makefile,v 1.8 1999/08/25 04:36:18 obrien Exp $
+# $FreeBSD: ports/audio/wmmixer/Makefile,v 1.9 2000/04/08 21:24:43 mharo Exp $
 #
 
 PORTNAME=	wmmixer
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Vista/2471/files/
 DISTNAME=	${PORTNAME}-1.0-beta1
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	rneswold@mcs.net
+MAINTAINER=	rneswold@enteract.com
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
