@@ -2,7 +2,7 @@
 # Date created:				08 July 1998
 # Whom:					dom
 #
-# $FreeBSD: ports/devel/pcre/Makefile,v 1.5 2000/03/24 01:57:49 mharo Exp $
+# $FreeBSD: ports/devel/pcre/Makefile,v 1.6 2000/04/11 21:30:05 mharo Exp $
 #
 
 PORTNAME=	pcre
@@ -17,5 +17,10 @@ USE_LIBTOOL=	yes
 
 MAN3=		pcre.3 pcreposix.3
 MAN1=		pgrep.1
+
+# Otherwise we get a broken pgrep shell script installed
+# instead of the binary we really want.
+pre-install:
+	@${LN} -f ${WRKSRC}/.libs/pgrep ${WRKSRC}/pgrep
 
 .include <bsd.port.mk>
