@@ -3,7 +3,7 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.1 1999/12/22 10:40:51 tg Exp $
 #
 
 DISTNAME=	qcad_source
@@ -13,12 +13,10 @@ MASTER_SITES=	http://www2.active.ch/~ribbon/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	qt2.2:${PORTSDIR}/x11-toolkits/qt20
-
 USE_XLIB=	yes
-USE_NEWGCC=	yes
 MAKEFILE=	makefile
 MAKE_ENV=	CC="${CXX}"
+USE_QT2=	yes
 
 QCADDIR=	${PREFIX}/lib/qcad
 QCADDOCDIR=	${PREFIX}/share/doc/qcad
