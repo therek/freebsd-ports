@@ -2,13 +2,15 @@
 # Date created:		2000/02/19
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/java/cryptix-jce/Makefile,v 1.4 2000/04/12 06:13:47 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cryptix-jce
 PORTVERSION=	20000211
 CATEGORIES=	java security
-MASTER_SITES=	http://cvs.cryptix.org/~gelderen/
+MASTER_SITES=	http://www.metaverse.nl/~ernst/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	znerd
 
 MAINTAINER=	greg@greg.rim.or.jp
 
