@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.295 2001/04/07 00:08:18 vanilla Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.296 2001/04/07 03:12:07 will Exp $
 #
 
     SUBDIR += 4va
@@ -90,6 +90,7 @@
     SUBDIR += imlib
     SUBDIR += imlib2
     SUBDIR += ipe
+    SUBDIR += isreal
     SUBDIR += jbigkit
     SUBDIR += jgraph
     SUBDIR += jgv
