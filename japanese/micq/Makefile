@@ -2,7 +2,7 @@
 # Date created:				31 Oct 1998
 # Whom:					flathill
 #
-# $FreeBSD: ports/japanese/micq/Makefile,v 1.8 2000/04/11 14:15:07 knu Exp $
+# $FreeBSD: ports/japanese/micq/Makefile,v 1.9 2000/06/29 07:02:23 obrien Exp $
 #
 
 PORTNAME=	micq
@@ -16,11 +16,13 @@ EXTRACT_SUFX=	.tgz
 PATCH_SITES=	${MASTER_SITE_LOCAL}
 PATCH_SITE_SUBDIR=	flathill
 PATCHFILES=	${DISTNAME}-jp.patch
-PATCH_DIST_STRIP= -p1
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	flathill@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}
+
+FORBIDDEN=	"ftp://ftp.FreeBSD.org/pub/FreeBSD/CERT/advisories/FreeBSD-SA-01:14.micq.asc "
 
 do-install:
 		${INSTALL_PROGRAM} ${WRKSRC}/micq ${PREFIX}/bin
