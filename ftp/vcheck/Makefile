@@ -3,15 +3,15 @@
 # Date created:			Jun 1, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/ftp/vcheck/Makefile,v 1.1 2001/06/01 19:03:15 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vcheck
-PORTVERSION=	1.1.1
+PORTVERSION=	1.2
 CATEGORIES=	ftp
 MASTER_SITES= 	http://www.tu-ilmenau.de/~gomar/stuff/vcheck/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	svenasse@polaris.ca
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP/UserAgent.pm:${PORTSDIR}/www/p5-libwww
 RUN_DEPENDS=	${BUILD_DEPENDS}
