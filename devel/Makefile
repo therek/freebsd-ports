@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/devel/Makefile,v 1.468 2001/03/13 21:25:53 sobomax Exp $
 #
 
     SUBDIR += ElectricFence
@@ -44,6 +44,7 @@
     SUBDIR += cbrowser
     SUBDIR += cc65
     SUBDIR += cccc
+    SUBDIR += ccdoc
     SUBDIR += cdecl
     SUBDIR += cdk
     SUBDIR += cervisia
