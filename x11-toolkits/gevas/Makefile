@@ -2,7 +2,7 @@
 # Date created:				19 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/x11-toolkits/gevas/Makefile,v 1.3 2001/04/03 05:29:01 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gevas
@@ -11,9 +11,9 @@ CATEGORIES=	x11-toolkits graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	ishmael27x@yahoo.com
 
-LIB_DEPENDS=	evas.5:${PORTSDIR}/graphics/evas
+LIB_DEPENDS=	evas.6:${PORTSDIR}/graphics/evas
 
 USE_GTK=	yes
 USE_LIBTOOL=	yes

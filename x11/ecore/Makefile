@@ -2,7 +2,7 @@
 # Date created:				16 March 2001
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/x11/ecore/Makefile,v 1.1 2001/03/17 16:31:30 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ecore
@@ -11,7 +11,7 @@ CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	enlightenment
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	ishmael27x@yahoo.com
 
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
