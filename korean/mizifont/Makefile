@@ -2,7 +2,7 @@
 # Date created:		16 Mar 1998
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/mizifont/Makefile,v 1.12 1999/09/03 18:27:22 sada Exp $
+# $FreeBSD: ports/korean/mizifont/Makefile,v 1.13 2000/04/13 09:16:59 asami Exp $
 #
 
 PORTNAME=	mizifonts
@@ -12,11 +12,9 @@ MASTER_SITES=	ftp://ftp.mizi.co.kr/pub/hanIM/
 DISTNAME=	xfntmizi-1.1-2.noarch
 EXTRACT_SUFX=	.rpm
 
-MAINTAINER=	cjh@kr.freebsd.org
+MAINTAINER=	cjh@FreeBSD.org
 
 BUILD_DEPENDS=	rpm2cpio:${PORTSDIR}/misc/rpm
-
-NO_CDROM=	"Not a free software, but redistributable on FreeBSD mirrors"
 
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
