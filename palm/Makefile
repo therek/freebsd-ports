@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.24 2001/01/08 19:04:00 clive Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.25 2001/01/21 16:36:19 ijliao Exp $
 #
 
     SUBDIR += bibelot
@@ -8,7 +8,7 @@
     SUBDIR += hdconv
     SUBDIR += imgvtopgm
     SUBDIR += isilo
-    SUBDIR += jconv
+    SUBDIR += jfconv
     SUBDIR += jpilot
     SUBDIR += kpilot
     SUBDIR += malsync
