@@ -2,12 +2,11 @@
 # Date created:		18 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/irc/ircII/Makefile,v 1.26 2000/09/25 12:21:34 asami Exp $
+# $FreeBSD: ports/irc/ircII/Makefile,v 1.27 2001/01/04 19:54:13 knu Exp $
 #
 
 PORTNAME=	ircii
-PORTVERSION=	4.4X
-PORTREVISION=	1
+PORTVERSION=	4.4Z
 CATEGORIES=	irc ipv6
 MASTER_SITES=	ftp://ircftp.au.eterna.com.au/pub/ircII/
 
