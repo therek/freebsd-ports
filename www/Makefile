@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.160 1999/10/08 15:40:56 sada Exp $
+# $FreeBSD: ports/www/Makefile,v 1.161 1999/10/10 18:32:59 sada Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -30,6 +30,7 @@
     SUBDIR += erwn
     SUBDIR += evg
     SUBDIR += fcgi
+    SUBDIR += flashplugin
     SUBDIR += fxhtml
     SUBDIR += g-gcl
     SUBDIR += gn
