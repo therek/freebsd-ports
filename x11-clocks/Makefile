@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-clocks/Makefile,v 1.17 2000/05/17 23:39:57 will Exp $
+# $FreeBSD: ports/x11-clocks/Makefile,v 1.18 2000/08/15 16:14:46 jedgar Exp $
 #
 
     SUBDIR += abclock
@@ -18,6 +18,7 @@
     SUBDIR += mouseclock
     SUBDIR += pclock
     SUBDIR += rclock
+    SUBDIR += sanduhr
     SUBDIR += swisswatch
     SUBDIR += t3d
     SUBDIR += tclock
