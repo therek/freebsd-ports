@@ -2,13 +2,14 @@
 # Date created:		14 June 2001
 # Whom:			dwcjr
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tridiavnc/Makefile,v 1.1 2001/06/15 22:35:54 dwcjr Exp $
 #
 
 PORTNAME=	tridiavnc
 PORTVERSION=	1.4
 CATEGORIES=	net
-MASTER_SITES=	http://www.developvnc.org/logged-in/downloadnow/
+MASTER_SITES=	ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/dwcjr/ \
+		http://www.developvnc.org/logged-in/downloadnow/
 DISTNAME=	DevVNC_unix
 EXTRACT_SUFX=	.tgz
 
