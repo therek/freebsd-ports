@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.268 2002/12/26 02:12:35 lioux Exp $
+# $FreeBSD: ports/LEGAL,v 1.269 2003/01/07 09:42:33 olgeni Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -144,7 +144,7 @@ jdk-tutorial-*		ports/java/jdk-tutorial	This software is under license and expor
 JRE-*			ports/java/jre		Put copyright on packaging!
 kaffe-*			ports/java/kaffe	Restrictive copyright
 ksh93			ports/shells/ksh93	User must agree to "regularly monitor the Website".
-l_cc_p*_6.0.*.tar	ports/lang/icc		No redistribution allowed
+l_cc_p*_7.0.*.tar	ports/lang/icc		No redistribution allowed
 l_fc_p*_6.0.*.tar	ports/lang/ifc		No redistribution allowed
 lgrind			ports/print/lgrind	Contains non-free code written by Van Jacobson
 limewire		ports/net/limewire	No redistribution allowed
