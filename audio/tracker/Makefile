@@ -2,7 +2,7 @@
 # Date created:		2 Oct 1994
 # Whom:			swallace
 #
-# $FreeBSD: ports/audio/tracker/Makefile,v 1.37 2000/04/08 21:24:40 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tracker
@@ -17,6 +17,11 @@ RESTRICTED=	"Non-redistributable beta"
 
 WRKSRC=		${WRKDIR}/tracker
 INSTALL_TARGET=	install install.info
+
+post-patch:
+	@${SED} -e 's,machine/soundcard.h,sys/soundcard.h,' < \
+		${WRKSRC}/Arch/PCux/audio.c > ${WRKSRC}/Arch/PCux/audio.c.new
+	@${MV} ${WRKSRC}/Arch/PCux/audio.c.new ${WRKSRC}/Arch/PCux/audio.c
 
 post-install:
 	@install-info ${PREFIX}/info/tracker.info ${PREFIX}/info/dir

@@ -2,7 +2,7 @@
 # Date created:         Feb 13 1995
 # Whom:                 jkh
 #
-# $FreeBSD: ports/audio/maplay/Makefile,v 1.13 2001/01/16 17:30:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	maplay
@@ -15,6 +15,12 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	ports@FreeBSD.org
 
 NO_WRKSUBDIR=	yes
+
+post-patch:
+	@${SED} -e 's,machine/soundcard.h,sys/soundcard.h,' < \
+		${WRKSRC}/configuration.sh > ${WRKSRC}/configuration.sh.new
+	@${MV} ${WRKSRC}/configuration.sh.new ${WRKSRC}/configuration.sh
+	@${CHMOD} a+x ${WRKSRC}/configuration.sh
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/maplay ${PREFIX}/bin

@@ -2,7 +2,7 @@
 # Date created:		Fri Jan 28 18:40:38 CET 2000
 # Whom:			nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/audio/gramofile/Makefile,v 1.1 2000/04/07 10:36:14 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gramofile
@@ -14,6 +14,13 @@ MAINTAINER=	nox@jelal.kn-bremen.de
 
 ALL_TARGET=	gramofile
 USE_GMAKE=	yes
+
+post-patch:
+.for file in bplay.c sndfunc.c
+	@${SED} -e 's,machine/soundcard.h,sys/soundcard.h,' < \
+		${WRKSRC}/bplaysrc/${file} > ${WRKSRC}/bplaysrc/${file}.new
+	@${MV} ${WRKSRC}/bplaysrc/${file}.new ${WRKSRC}/bplaysrc/${file}
+.endfor
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/gramofile ${WRKSRC}/bplay_gramo ${PREFIX}/bin

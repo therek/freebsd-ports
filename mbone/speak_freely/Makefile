@@ -2,7 +2,7 @@
 # Date created:         18 Apr 1996
 # Whom:                 Mister X (to make portlint happy ;)
 #
-# $FreeBSD: ports/mbone/speak_freely/Makefile,v 1.12 2000/04/14 08:49:27 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	speak_freely
@@ -21,6 +21,11 @@ SFLIB=		${PREFIX}/lib/speak_freely
 MAN1=		${UTILS:S/$/.1/} ${DEMNS:S/$/.1/} ${DDEMNS:S/$/.1/}
 
 MAKE_ENV=	"OPTFLAGS=${CFLAGS}"
+
+post-patch:
+	@${SED} -e 's,machine/soundcard.h,sys/soundcard.h,' < \
+		${WRKSRC}/soundbyte.c > ${WRKSRC}/soundbyte.c.new
+	@${MV} ${WRKSRC}/soundbyte.c.new ${WRKSRC}/soundbyte.c
 
 do-install:
 	if [ ! -d ${SFLIB} ]; then \

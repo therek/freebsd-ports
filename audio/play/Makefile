@@ -2,7 +2,7 @@
 # Date created:		20 May 1998
 # Whom:			Masanori Kiriake <seiken@nbs.co.jp>
 #
-# $FreeBSD: ports/audio/play/Makefile,v 1.7 2000/04/08 21:24:11 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	play
@@ -15,4 +15,13 @@ MAINTAINER=	seiken@ARGV.AC
 MANLANG=	ja
 MAN1=		play.1
 MANCOMPRESSED = yes
+
+post-patch:
+.for file in play_audio.c mixer_ctl.c encode_sun.c encode_riff.c speed.c
+	@${CHMOD} u+w ${WRKSRC}/${file}
+	@${SED} 's,machine/soundcard.h,sys/soundcard.h,' < ${WRKSRC}/${file} \
+		> ${WRKSRC}/${file}.new
+	@${MV} ${WRKSRC}/${file}.new ${WRKSRC}/${file}
+.endfor
+
 .include <bsd.port.mk>

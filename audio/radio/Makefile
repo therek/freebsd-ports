@@ -2,7 +2,7 @@
 # Date created:		5 July 1995
 # Whom:			janek@gaja.ipan.lublin.pl
 #
-# $FreeBSD: ports/audio/radio/Makefile,v 1.7 1999/08/25 04:35:59 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	radio
@@ -16,5 +16,10 @@ MAINTAINER=	janek@gaja.ipan.lublin.pl
 NO_WRKSUBDIR=	yes
 MAKE_FLAGS=	FreeBSD -f
 MAN1=		radio.1 broadcast.1
+
+post-patch:
+	@${SED} -e 's,machine/soundcard.h,sys/soundcard.h,' < \
+		${WRKSRC}/radio.c > ${WRKSRC}/radio.c.new
+	@${MV} ${WRKSRC}/radio.c.new ${WRKSRC}/radio.c
 
 .include <bsd.port.mk>
