@@ -2,7 +2,7 @@
 # Date created:				02 September 2000
 # Whom:					Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/despoof/Makefile,v 1.1 2000/09/03 01:54:26 kris Exp $
 #
 
 PORTNAME=	despoof
@@ -11,7 +11,7 @@ CATEGORIES=	net security
 MASTER_SITES=	http://razor.bindview.com/tools/files/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	kris@FreeBSD.org
+MAINTAINER=	roam@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 

@@ -2,7 +2,7 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/net/libnids/Makefile,v 1.6 2000/09/10 11:10:43 kris Exp $
+# $FreeBSD: ports/net/libnids/Makefile,v 1.7 2000/11/19 04:15:05 kris Exp $
 #
 
 PORTNAME=	libnids
@@ -12,7 +12,7 @@ CATEGORIES=	net security
 # The newest version is temporarily available at..
 MASTER_SITES=  http://www.avet.com.pl/libnids/
 
-MAINTAINER=	kris@FreeBSD.org
+MAINTAINER=	roam@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 
