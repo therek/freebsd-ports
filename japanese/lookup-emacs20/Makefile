@@ -3,7 +3,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-emacs20/Makefile,v 1.1.1.1 1999/09/06 12:40:47 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-emacs20/Makefile,v 1.2 1999/09/08 15:21:52 taoka Exp $
 #
 
 DISTNAME=	ja-lookup-emacs20-1.0
@@ -16,9 +16,7 @@ MAINTAINER=	taoka@FreeBSD.org
 RUN_DEPENDS=	${PREFIX}/share/emacs/site-lisp/bitmap/bitmap.el:${PORTSDIR}/editors/bitmap-emacs20 \
 		${PREFIX}/share/emacs/site-lisp/lookup/lookup.el:${PORTSDIR}/japanese/lookup-mule
 
-EXTRACT_ONLY=	# empty
 NO_BUILD=	yes
-NO_CHECKSUM=	yes
 
 do-install:	# empty
 
