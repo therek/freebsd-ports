@@ -2,7 +2,7 @@
 # Date created:        22 Sep 1999
 # Whom:                ak@freenet.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/krio/Makefile,v 1.9 2001/04/03 08:13:55 will Exp $
 #
 
 PORTNAME=	krio
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	ak@freenet.co.uk
 
 USE_KDEBASE_VER=1
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-extra-includes=${LOCALBASE}/include
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:				26 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/moonshine/Makefile,v 1.5 2001/04/03 08:14:03 will Exp $
 #
 
 PORTNAME=	moonshine
@@ -17,6 +17,7 @@ USE_QT_VER=	2
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_XLIB=	yes
 GNU_CONFIGURE=	yes
+QTCPPFLAGS+=	-I${X11BASE}/include
 
 .include <bsd.port.pre.mk>
 
