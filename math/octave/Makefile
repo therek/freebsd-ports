@@ -2,7 +2,7 @@
 # Date created:		8 September 1998
 # Whom:			chuckr@freebsd.org
 #
-# $FreeBSD: ports/math/octave/Makefile,v 1.28 2000/06/23 02:28:16 chuckr Exp $
+# $FreeBSD: ports/math/octave/Makefile,v 1.29 2000/06/23 02:33:11 chuckr Exp $
 #
 
 PORTNAME=	octave
@@ -35,7 +35,7 @@ CONFIGURE_ARGS=	--disable-shared --host=${GNU_HOST}
 CONFIGURE_ARGS+=	--with-f2c
 .endif
 
-MAN1=		octave.1
+MAN1=		octave.1 octave-bug.1
 
 LIBOCTAVE-INFO= liboctave.info liboctave.info-1 liboctave.info-2 liboctave.info-3
 
