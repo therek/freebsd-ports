@@ -2,11 +2,11 @@
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.16 2001/04/25 03:41:28 jkoshy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ctags
-PORTVERSION=	5.0.1
+PORTVERSION=	5.1
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		${MASTER_SITE_LOCAL}
@@ -22,5 +22,8 @@ MAN1=		exctags.1
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ctags ${PREFIX}/bin/exctags
 	${INSTALL_MAN} ${WRKSRC}/ctags.1 ${PREFIX}/man/man1/exctags.1
+	${MKDIR} ${PREFIX}/include/ctags ${PREFIX}/lib/ctags
+	${INSTALL_DATA} ${WRKSRC}/readtags.h ${PREFIX}/include/ctags/
+	${INSTALL_DATA} ${WRKSRC}/readtags.o ${PREFIX}/lib/ctags/
 
 .include <bsd.port.mk>
