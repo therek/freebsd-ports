@@ -2,7 +2,7 @@
 # Date created:				15 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps/Makefile,v 1.4 2000/10/15 12:05:09 sobomax Exp $
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.5 2000/11/01 15:51:06 sobomax Exp $
 #
 
 PORTNAME=	xmps
@@ -12,7 +12,7 @@ MASTER_SITES=	http://xmps.sourceforge.net/sources/
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	smpeg.0:${PORTSDIR}/graphics/smpeg
+LIB_DEPENDS=	smpeg.1:${PORTSDIR}/graphics/smpeg
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config

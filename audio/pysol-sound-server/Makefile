@@ -2,7 +2,7 @@
 # Date created:				7 January 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.11 2000/11/01 15:50:54 sobomax Exp $
+# $FreeBSD: ports/audio/pysol-sound-server/Makefile,v 1.12 2000/11/08 10:24:16 sobomax Exp $
 #
 
 PORTNAME=	pysol-sound-server
@@ -13,7 +13,7 @@ MASTER_SITES=	http://wildsau.idv.uni-linz.ac.at/mfx/download/pysol/pysol-sound-s
 MAINTAINER=	sobomax@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.1.2:${PORTSDIR}/devel/sdl-devel \
-		smpeg.0:${PORTSDIR}/graphics/smpeg \
+		smpeg.1:${PORTSDIR}/graphics/smpeg \
 		SDL_mixer.2:${PORTSDIR}/audio/sdl_mixer
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
