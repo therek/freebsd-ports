@@ -2,13 +2,14 @@
 # Date created:        17 Jan 2000
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/editors/vigor/Makefile,v 1.6 2000/08/07 17:08:31 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vigor
 PORTVERSION=	0.016
 CATEGORIES=	editors tk82 tcl82
-MASTER_SITES=	http://www.red-bean.com/~joelh/vigor/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR= ${PORTNAME}
 
 MAINTAINER=	billf@FreeBSD.org
 
