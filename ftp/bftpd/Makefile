@@ -2,26 +2,34 @@
 # Date created:				7 April 2001
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/bftpd/Makefile,v 1.1 2001/04/07 23:24:24 will Exp $
+# $FreeBSD: ports/ftp/bftpd/Makefile,v 1.2 2001/04/15 02:06:52 steve Exp $
 #
 
 PORTNAME=	bftpd
-PORTVERSION=	1.0.18
-PORTREVISION=	1
+PORTVERSION=	1.0.21
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.bftpd.f2s.com/downloads/src/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS+=	--enable-pam
+
 MAN8=		bftpd.8
 
-pre-configure:
-	${PERL} -pi -e "s@<wait.h>@<sys/wait.h>@g" ${WRKSRC}/commands.c
-	${PERL} -pi -e "s@chmod 644 /var@#chmod 644 /var@g; \
+post-patch:
+	@${PERL} -pi -e "s@<wait.h>@<sys/wait.h>@g" ${WRKSRC}/commands.c
+	@${PERL} -pi -e "s@chmod 644 /var@#chmod 644 /var@g; \
 			s@touch /var@#touch /var@g; \
 			s@DESTDIR\)/etc@prefix\)/etc@g; \
 			s@bftpd.conf @bftpd.conf.sample @g" ${WRKSRC}/Makefile.in
-	${CP} ${WRKSRC}/bftpd.conf ${WRKSRC}/bftpd.conf.sample
+	@${PERL} -pi -e "s@-ldl@@" ${WRKSRC}/configure
+	@${CP} ${WRKSRC}/bftpd.conf ${WRKSRC}/bftpd.conf.sample
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/bftpd
+	${INSTALL_DATA} ${WRKSRC}/doc/bftpddoc.txt ${PREFIX}/share/doc/bftpd
+.endif
 
 .include <bsd.port.mk>
