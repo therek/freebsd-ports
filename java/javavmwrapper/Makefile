@@ -1,8 +1,8 @@
 # New ports collection makefile for:	javavmwrapper
-# Date created:		10 June 2000
-# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				10 June 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/javavmwrapper/Makefile,v 1.1.1.1 2000/06/12 09:42:51 sobomax Exp $
+# $FreeBSD: ports/java/javavmwrapper/Makefile,v 1.2 2000/06/20 07:40:20 sobomax Exp $
 #
 # This port is self contained in the src directory.
 #

@@ -1,8 +1,8 @@
 # New ports collection makefile for:    pvmpov
-# Date created:         22 March 2000
-# Whom:                 Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:         		22 March 2000
+# Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pvmpov/Makefile,v 1.1.1.1 2000/05/29 08:47:48 sobomax Exp $
+# $FreeBSD: ports/graphics/pvmpov/Makefile,v 1.2 2000/06/02 10:42:25 sobomax Exp $
 #
 
 PORTNAME=	pvmpov

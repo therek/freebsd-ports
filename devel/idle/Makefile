@@ -1,8 +1,8 @@
 # New ports collection makefile for:    idle
-# Date created:         13 April 2000
-# Whom:                 Maxim Sobolev <sobomax@altavista.net>
+# Date created:         		13 April 2000
+# Whom:                 		Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/idle/Makefile,v 1.5 2000/09/21 16:18:14 sobomax Exp $
+# $FreeBSD: ports/devel/idle/Makefile,v 1.6 2000/09/22 11:56:23 sobomax Exp $
 #
 
 PORTNAME=       idle

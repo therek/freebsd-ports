@@ -1,8 +1,8 @@
 # New ports collection makefile for:	BasiliskII
 # Date created:				17 April 2000
-# Whom:					Maxim Sobolev
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.4 2000/10/03 02:06:19 reg Exp $
+# $FreeBSD: ports/emulators/basiliskII/Makefile,v 1.5 2000/10/05 06:36:09 reg Exp $
 #
 
 PORTNAME=	basiliskII

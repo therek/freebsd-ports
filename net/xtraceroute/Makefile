@@ -1,8 +1,8 @@
-# New ports collection makefile for:   xtraceroute
-# Date created:        17 February 2000
-# Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
+# New ports collection makefile for:	xtraceroute
+# Date created:				17 February 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.7 2000/08/03 09:25:57 asami Exp $
+# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.8 2000/10/05 06:42:20 reg Exp $
 #
 
 PORTNAME=	xtraceroute

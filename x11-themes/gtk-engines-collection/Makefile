@@ -1,8 +1,8 @@
-# New ports collection makefile for:   gtk-engines-collection
-# Date created:        13 June 2000
-# Whom:                Maxim Sobolev <sobomax@FreeBSD.org>
+# New ports collection makefile for:	gtk-engines-collection
+# Date created:				13 June 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.6 2000/10/26 16:19:10 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk-engines-collection/Makefile,v 1.7 2000/10/31 17:36:30 sobomax Exp $
 #
 
 PORTNAME=	gtk-engines-collection

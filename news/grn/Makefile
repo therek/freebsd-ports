@@ -1,8 +1,8 @@
 # New ports collection makefile for:	grm
-# Date created:		20 July 2000
-# Whom:			Maxim Sobolev
+# Date created:				20 July 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/news/grn/Makefile,v 1.4 2000/10/05 07:17:14 reg Exp $
+# $FreeBSD: ports/news/grn/Makefile,v 1.5 2000/10/23 08:28:40 sobomax Exp $
 #
 
 PORTNAME=	grn

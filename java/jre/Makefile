@@ -1,8 +1,8 @@
 # New ports collection makefile for:	jre
-# Date created:		8 May 2000
-# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				8 May 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jre/Makefile,v 1.8 2000/09/12 07:11:27 sobomax Exp $
 #
 
 PORTNAME=	jre

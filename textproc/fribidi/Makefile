@@ -1,8 +1,8 @@
 # New ports collection makefile for:	fribidi
 # Date created:				17 July 2000
-# Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.2 2000/07/18 08:02:11 sobomax Exp $
+# $FreeBSD: ports/textproc/fribidi/Makefile,v 1.3 2000/07/18 09:15:54 sobomax Exp $
 #
 
 PORTNAME=	fribidi

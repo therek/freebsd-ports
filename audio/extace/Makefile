@@ -1,8 +1,8 @@
 # New ports collection makefile for:	extace
 # Date created:				8 April 2000
-# Whom:					Maxim Sobolev
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/extace/Makefile,v 1.5 2000/08/29 10:45:27 sobomax Exp $
+# $FreeBSD: ports/audio/extace/Makefile,v 1.6 2000/10/05 07:22:21 reg Exp $
 #
 
 PORTNAME=	extace

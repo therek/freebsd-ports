@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gmanedit
-# Date created:		12 July 2000
-# Whom:			Maxim Sobolev
+# Date created:				12 July 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.1 2000/09/02 12:54:03 sobomax Exp $
+# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.2 2000/10/05 07:10:34 reg Exp $
 #
 
 PORTNAME=	gmanedit

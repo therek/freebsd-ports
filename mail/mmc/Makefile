@@ -1,8 +1,8 @@
 # New ports collection makefile for:	mmc
-# Date created:		21 July 2000
-# Whom:			Maxim Sobolev
+# Date created:				21 July 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/mmc/Makefile,v 1.1 2000/07/21 14:06:22 sobomax Exp $
+# $FreeBSD: ports/mail/mmc/Makefile,v 1.2 2000/10/05 07:17:01 reg Exp $
 #
 
 PORTNAME=	mmc

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gtkdiff
-# Date created:		17 November 1999
-# Whom:			Maxim Sobolev
+# Date created:				17 November 1999
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.8 2000/09/13 08:55:57 sobomax Exp $
+# $FreeBSD: ports/textproc/gtkdiff/Makefile,v 1.9 2000/10/05 07:17:20 reg Exp $
 #
 
 PORTNAME=	gtkdiff

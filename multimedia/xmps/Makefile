@@ -1,8 +1,8 @@
 # New ports collection makefile for:	xmps
-# Date created:			15 June 2000
-# Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				15 June 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/xmps/Makefile,v 1.3 2000/10/12 09:10:35 sobomax Exp $
+# $FreeBSD: ports/graphics/xmps/Makefile,v 1.4 2000/10/15 12:05:09 sobomax Exp $
 #
 
 PORTNAME=	xmps

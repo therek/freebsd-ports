@@ -1,8 +1,8 @@
 # New ports collection makefile for:    jext
-# Date created:		17 Febrary 2000
-# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				17 Febrary 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/jext/Makefile,v 1.9 2000/08/22 06:55:36 sobomax Exp $
+# $FreeBSD: ports/editors/jext/Makefile,v 1.10 2000/09/11 16:48:58 sobomax Exp $
 #
 
 PORTNAME=	jext

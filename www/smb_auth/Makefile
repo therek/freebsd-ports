@@ -1,8 +1,8 @@
 # New ports collection makefile for:	smb_auth
-# Date created:		13 January 2000
-# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				13 January 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/smb_auth/Makefile,v 1.2 2000/04/10 00:06:49 cpiazza Exp $
+# $FreeBSD: ports/www/smb_auth/Makefile,v 1.3 2000/05/17 11:18:25 sobomax Exp $
 #
 
 PORTNAME=	smb_auth

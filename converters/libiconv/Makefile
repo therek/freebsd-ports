@@ -1,8 +1,8 @@
 # New ports collection makefile for:	libiconv
 # Date created:				17 July 2000
-# Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/converters/libiconv/Makefile,v 1.1 2000/07/17 15:47:12 sobomax Exp $
+# $FreeBSD: ports/converters/libiconv/Makefile,v 1.2 2000/07/18 06:59:02 sobomax Exp $
 #
 
 PORTNAME=	libiconv

@@ -1,8 +1,8 @@
-# New ports collection makefile for:  squirm
-# Date created:     24 May 1999
-# Whom:             Maxim Sobolev <sobomax@FreeBSD.org>
+# New ports collection makefile for:	squirm
+# Date created:				24 May 1999
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/squirm/Makefile,v 1.8 2000/05/17 11:18:25 sobomax Exp $
+# $FreeBSD: ports/www/squirm/Makefile,v 1.9 2000/06/07 08:00:46 sobomax Exp $
 #
 
 PORTNAME=	squirm

@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gnometelnet
-# Date created:		2 August 2000
-# Whom:			Maxim Sobolev <sobomax@FreeBSD.org>
+# Date created:				2 August 2000
+# Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gnometelnet/Makefile,v 1.3 2000/10/05 07:17:13 reg Exp $
+# $FreeBSD: ports/net/gnometelnet/Makefile,v 1.4 2000/10/25 08:19:55 sobomax Exp $
 #
 
 PORTNAME=	gnometelnet
