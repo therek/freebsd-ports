@@ -2,11 +2,11 @@
 # Date created:				October 10th 2000
 # Whom:	      				Andrew <andrew@ugh.net.au>
 #
-# $FreeBSD: ports/textproc/p5-XML-Simple/Makefile,v 1.1 2000/10/20 23:11:48 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	XML-Simple
-PORTVERSION=	1.05
+PORTVERSION=	1.06
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
