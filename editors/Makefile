@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.153 2001/07/07 23:45:33 dd Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.154 2001/07/14 18:01:47 kevlo Exp $
 #
 
     SUBDIR += AbiWord
@@ -60,6 +60,7 @@
     SUBDIR += hnb
     SUBDIR += hte
     SUBDIR += iiimecf
+    SUBDIR += impress
     SUBDIR += jed
     SUBDIR += jedit
     SUBDIR += jext
