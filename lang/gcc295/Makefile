@@ -3,14 +3,13 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc295/Makefile,v 1.78 2001/02/15 23:14:42 obrien Exp $
+# $FreeBSD: ports/lang/gcc295/Makefile,v 1.79 2001/03/19 01:13:24 obrien Exp $
 #
 
 PORTNAME=	gcc
 PORTVERSION=	2.95.3
 CATEGORIES=	lang java
-MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/%SUBDIR%/  \
-		ftp://egcs.cygnus.com/pub/egcs/releases/${PKGNAME}/  \
+MASTER_SITES=	ftp://egcs.cygnus.com/pub/egcs/releases/%SUBDIR%/  \
 		${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	gcc/releases/${PKGNAME}
 DISTFILES=	gcc-core-${GCC_REV}${EXTRACT_SUFX} \
