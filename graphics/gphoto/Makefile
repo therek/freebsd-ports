@@ -2,7 +2,7 @@
 # Date created:		26 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.7 2000/04/03 08:15:58 asami Exp $
+# $FreeBSD: ports/graphics/gphoto/Makefile,v 1.8 2000/04/14 10:46:05 asami Exp $
 #
 
 PORTNAME=	gphoto
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.mustec.eu.org/~psj/downloads/ \
 		http://www.freenix.no/~anders/
 
-MAINTAINER=	anders@fix.no
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/include/ppm.h:${PORTSDIR}/graphics/netpbm
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
