@@ -3,7 +3,7 @@
 # Date created:			  15th June 1996
 # Whom:				  gpalmer
 #
-# $FreeBSD: ports/security/fwtk/Makefile,v 1.17 2000/03/22 00:26:52 obrien Exp $
+# $FreeBSD: ports/security/fwtk/Makefile,v 1.18 2000/04/09 18:29:37 cpiazza Exp $
 #
 
 PORTNAME=	fwtk
@@ -31,7 +31,7 @@ SBIN_BINS=	authdump authload authmgr
 LIBEXEC_BINS=	authsrv ftp-gw http-gw netacl plug-gw rlogin-gw smap smapd \
 		tn-gw
 
-.if !defined(NO_X11)
+.if !defined(WITHOUT_X11)
 LIBEXEC_BINS+=	x-gw
 MAN8+=		x-gw.8
 .endif

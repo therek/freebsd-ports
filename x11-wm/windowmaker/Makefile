@@ -2,7 +2,7 @@
 # Date created:		August 13, 1997
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.65 2000/04/04 07:46:33 tg Exp $
+# $FreeBSD: ports/x11-wm/windowmaker/Makefile,v 1.66 2000/04/10 19:50:29 cpiazza Exp $
 #
 
 PORTNAME=	windowmaker
@@ -40,23 +40,23 @@ MAN1=	geticonset.1x getstyle.1x seticons.1x setstyle.1x \
 
 DATAFILES=	WindowMaker-extra-0.1.tar.bz2
 
-.if defined(USE_GNOME)
+.if defined(WITH_GNOME)
 CONFIGURE_ARGS+=	--enable-gnome
 .endif
 
-.if defined(USE_KDE)
+.if defined(WITH_KDE)
 CONFIGURE_ARGS+=	--enable-kde
 .endif
 
-.if defined(USE_SINGLE_ICON)
+.if defined(WITH_SINGLE_ICON)
 CONFIGURE_ARGS+=	--enable-single-icon
 .endif
 
 .SILENT:
 
-.if !defined(USE_KDE) && !defined(USE_GNOME)
+.if !defined(WITH_KDE) && !defined(WITH_GNOME)
 pre-extract:
-	${ECHO} "You can add hooks for Gnome and KDE by defining USE_GNOME and/or USE_KDE"
+	${ECHO} "You can add hooks for Gnome and KDE by defining WITH_GNOME and/or WITH_KDE"
 .endif
 
 post-extract:

@@ -4,7 +4,7 @@
 # Whom:				  David O'Brien <obrien@FreeBSD.org>
 #				  & Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/security/crack/Makefile,v 1.14 2000/03/22 00:26:45 obrien Exp $
+# $FreeBSD: ports/security/crack/Makefile,v 1.15 2000/04/09 18:29:29 cpiazza Exp $
 #
 
 PORTNAME=	crack
@@ -22,7 +22,7 @@ RESTRICTED=	"contains crypto (libdes)"
 WRKSRC=		${WRKDIR}/c50a
 
 pre-configure:
-.if !defined(USE_DES)
+.if !defined(WITH_DES)
 	@${MV} -f ${WRKSRC}/src/libdes ${WRKSRC}/src/libdes.notused
 	@${MV} -f ${WRKSRC}/src/util/elcid.c ${WRKSRC}/src/util/elcid.c.orig
 	@${CP} -p ${WRKSRC}/src/util/elcid.c,bsd ${WRKSRC}/src/util/elcid.c
@@ -38,7 +38,7 @@ pre-build:
 do-build:
 	cd ${WRKSRC} ; ./Crack -makeonly
 	cd ${WRKSRC} ; ./Crack -makedict
-.if !defined(USE_DES)
+.if !defined(WITH_DES)
 	@#(cd ${WRKSRC} ; ./Crack -fgnd -fmt bsd ${FILESDIR}/pw-md5.test)
 .endif
 

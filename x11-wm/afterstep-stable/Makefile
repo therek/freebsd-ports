@@ -2,7 +2,7 @@
 # Date created:		1 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.36 2000/02/17 05:54:11 taoka Exp $
+# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.37 2000/04/10 19:49:33 cpiazza Exp $
 #
 
 PORTNAME=	afterstep
@@ -29,15 +29,15 @@ CONFIGURE_ARGS=	--with-png-includes="${LOCALBASE}/include" \
 		--with-jpeg-libs="${LOCALBASE}/lib" \
 		--with-helpcommand="xterm -e man"
 
-.if defined(USE_I18N)
+.if defined(WITH_I18N)
 CONFIGURE_ARGS+=	--enable-i18n
 .endif
 
-.if defined(DIFFERENT_LOOKNFEELS)
+.if defined(WITH_DIFFERENT_LOOKNFEELS)
 CONFIGURE_ARGS+=	--enable-different-looknfeels
 .endif
 
-.if !defined(USE_SAVEWINDOWS)
+.if !defined(WITH_SAVEWINDOWS)
 CONFIGURE_ARGS+=	--disable-savewindows
 .endif
 
@@ -47,7 +47,7 @@ MAN1=	Animate.1x Audio.1x Banner.1x Cascade.1x Clean.1x Form.1x Gnome.1x \
 
 post-install:
 	${INSTALL_DATA} ${FILESDIR}/monitor_bsd.xpm ${PREFIX}/share/afterstep/desktop/icons/common/
-.if defined(DIFFERENT_LOOKNFEELS)
+.if defined(WITH_DIFFERENT_LOOKNFEELS)
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "===>  The WinList module is broken with different-looknfeels.  Don't use it."
 	@${ECHO_MSG} ""

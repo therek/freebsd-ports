@@ -2,7 +2,7 @@
 # Date created:		June 15, 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.30 1999/09/21 02:21:10 cpiazza Exp $
+# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.31 2000/04/10 19:49:37 cpiazza Exp $
 #
 
 PORTNAME=	blackbox
@@ -17,11 +17,11 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 USE_BZIP2=	yes
 
-.if !defined(USE_KDE)
+.if !defined(WITH_KDE)
 pre-configure:
 	@ ${ECHO_MSG}
 	@ ${ECHO_MSG} If you would like build Blackbox with KDE support
-	@ ${ECHO_MSG} you must set the variable USE_KDE
+	@ ${ECHO_MSG} you must set the variable WITH_KDE
 	@ ${ECHO_MSG}
 .else
 pre-configure:

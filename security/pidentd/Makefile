@@ -2,7 +2,7 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.29 2000/02/14 15:12:34 sumikawa Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.30 2000/04/09 18:30:19 cpiazza Exp $
 #
 
 PORTNAME=	pidentd
@@ -30,13 +30,13 @@ ADD_GDEFS+=	-DINET6 -D__ss_family=ss_family -D__ss_len=ss_len
 # Uncomment to activate the use of verifiable "cookies".  The idea is to be
 # able to detect fake "logs" intended to get your innocent users in trouble.
 # Naturally, since it uses libdes, you must have the "secure" dist installed.
-# USE_DES=	true
+#WITH_DES=	yes
 
-.if defined(USE_DES)
+.if defined(WITH_DES)
 ADD_GDEFS+=	-DINCLUDE_CRYPT
 ADD_GLIBS=	-ldes
 .endif
-.if defined(USE_DES) || ${OSVERSION} >= 400014
+.if defined(WITH_DES) || ${OSVERSION} >= 400014
 MAKE_ENV+=	ADD_GDEFS="${ADD_GDEFS}" ADD_GLIBS="${ADD_GLIBS}"
 .endif
 

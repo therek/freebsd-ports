@@ -2,7 +2,7 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.35 2000/03/19 02:44:09 cpiazza Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.36 2000/04/13 19:10:06 cpiazza Exp $
 #
 
 PORTNAME=	wdm
@@ -36,14 +36,14 @@ MAN1=	wdm.1 wdmLogin.1
 
 DAEMONPIC=	daemon1-HQ-1280x960.jpg
 
-.if defined(USE_PAM)
+.if defined(WITH_PAM)
 CONFIGURE_ARGS+=	--enable-pam
 LIBPAM=		-lpam
 .endif
 
 pre-fetch:
-.if !defined(USE_PAM)
-	@${ECHO_MSG} "To build this port with PAM support, define \"USE_PAM\"."
+.if !defined(WITH_PAM)
+	@${ECHO_MSG} "To build this port with PAM support, define \"WITH_PAM\"."
 .endif
 
 post-extract:

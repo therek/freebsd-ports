@@ -2,7 +2,7 @@
 # Date created:		June 24, 1999
 # Whom:			morishim@cig.mot.com
 #
-# $FreeBSD: ports/net/xisp/Makefile,v 1.2 1999/09/29 22:04:43 asami Exp $
+# $FreeBSD: ports/net/xisp/Makefile,v 1.3 2000/04/09 18:14:02 cpiazza Exp $
 #
 
 PORTNAME=	xisp
@@ -20,7 +20,7 @@ LIB_DEPENDS=	xforms:${PORTSDIR}/x11-toolkits/xforms \
 WRKSRC=         ${WRKDIR}/xisp-2.6
 MAN1=		xisp.1
 HAS_CONFIGURE=	yes
-.if defined(USE_DES)
+.if defined(WITH_DES)
 CONFIGURE_ENV=	USE_DESLIB="yes"
 .else
 CONFIGURE_ENV=	USE_DESLIB="no"
