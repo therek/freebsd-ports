@@ -2,18 +2,16 @@
 # Date Created:				27 Oct 1998
 # Whom:					Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/gqview/Makefile,v 1.26 2000/10/05 07:22:39 reg Exp $
+# $FreeBSD: ports/graphics/gqview/Makefile,v 1.27 2000/10/17 10:30:06 nakai Exp $
 #
 
 PORTNAME=	gqview
-PORTVERSION=	0.9.1
+PORTVERSION=	0.10.1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nakai@FreeBSD.org
-
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
