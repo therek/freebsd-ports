@@ -1,20 +1,19 @@
 # New ports collection makefile for:	naga10
-# Version required:	1.0
+# Version required:	1.1
 # Date created:		25 Feb 1998
-# Whom: Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
+# Whom:	Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/k10/Makefile,v 1.6 1999/08/25 05:24:46 obrien Exp $
 #
 
-DISTNAME=	knj10-1.00
-PKGNAME=	ja-naga10-1.0
+DISTNAME=	knj10-1.1
+PKGNAME=	ja-naga10-1.1
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	http://gondow-www.cs.titech.ac.jp/~snagao/fonts/
+MASTER_SITES=	http://hp.vector.co.jp/authors/VA013391/fonts/
 
 MAINTAINER=	usagi@clave.gr.jp
 
 USE_X_PREFIX=	yes
-WRKSRC=         ${WRKDIR}/knj10-1.00
 
 FONTSDIR=	lib/X11/fonts/local
 MAKE_ENV=	FONTSDIR=${FONTSDIR}
