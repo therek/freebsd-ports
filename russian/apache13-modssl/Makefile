@@ -2,7 +2,7 @@
 # Date created:		7 July 2000 1:05 MSD
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.4 2000/08/06 14:09:48 nbm Exp $
+# $FreeBSD: ports/russian/apache13-modssl/Makefile,v 1.5 2000/08/06 14:30:04 nbm Exp $
 #
 
 PORTNAME=	apache+mod_ssl
@@ -34,7 +34,7 @@ USE_OPENSSL=	RSA
 .include <bsd.port.pre.mk>
 
 VERSION_APACHE=	1.3.12
-VERSION_MODSSL=	2.6.5
+VERSION_MODSSL=	2.6.6
 RA_VERSION=	29.7
 
 USE_PERL5=	yes
