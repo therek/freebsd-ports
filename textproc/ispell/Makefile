@@ -2,7 +2,7 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.58 2001/06/22 22:08:47 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.59 2001/07/02 15:14:28 jmz Exp $
 #
 
 PORTNAME?=	ispell
@@ -25,7 +25,7 @@ MAKE_FLAGS=	TMPDIR=${WRKDIR} -f
 ALL_TARGET=
 
 BUILDHASH=	${WRKSRC}/buildhash
-UNSQ=		${WRKSRC}/unsq
+UNSQ?=		${WRKSRC}/unsq
 MUNCHLIST=	${WRKSRC}/munchlist
 DATADIR=	${PREFIX}/share/ispell
 
