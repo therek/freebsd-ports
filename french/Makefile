@@ -1,7 +1,6 @@
-# $FreeBSD$
+# $FreeBSD: ports/french/Makefile,v 1.1 2000/09/22 06:25:45 asami Exp $
 #
 
     SUBDIR += ispell
-    SUBDIR += staroffice52
 
 .include <bsd.port.subdir.mk>
