@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.47 2001/06/20 05:11:51 obrien Exp $
+# $FreeBSD: ports/print/ghostscript55/Makefile,v 1.48 2001/07/06 10:35:13 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -11,7 +11,7 @@ CATEGORIES=	print
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://ftp.cs.wisc.edu/ghost/gnu/gs550/ \
 		ftp://ftp.cs.wisc.edu/ghost/gnu/fonts/ \
-		http://www.ozemail.com.au/~geoffk/pdfencrypt/ \
+		http://members.ozemail.com.au/~geoffk/pdfencrypt/ \
 		http://www.erdw.ethz.ch/~bonk/ftp/gs-driver-distrib/
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
