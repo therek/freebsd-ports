@@ -3,7 +3,7 @@
 # Date created:         19 February 1999
 # Whom:                 Dima Sivachenko
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/xferstats/Makefile,v 1.5 1999/08/30 14:24:33 peter Exp $
 #
 
 DISTNAME=	xferstats-2.14
@@ -14,7 +14,7 @@ MASTER_SITES=	http://xferstats.off.net/download/xferstats-2.00/ \
 
 MAINTAINER=	dima@Chg.RU
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 

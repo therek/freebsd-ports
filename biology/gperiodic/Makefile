@@ -3,7 +3,7 @@
 # Date created:				16 July 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/gperiodic/Makefile,v 1.1.1.1 1999/09/06 20:08:26 taoka Exp $
 #
 
 DISTNAME=	gperiodic-1.2.1
@@ -12,11 +12,7 @@ MASTER_SITES=	ftp://ftp.seul.org/pub/gperiodic/
 
 MAINTAINER=	andy@icc.surw.chel.su
 
-LIB_DEPENDS=	gdk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		glib12.2:${PORTSDIR}/devel/glib12 \
-		gmodule12.2:${PORTSDIR}/devel/glib12 \
-		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/gperiodic

@@ -3,7 +3,7 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gaim/Makefile,v 1.9 1999/08/30 14:22:44 peter Exp $
 #
 
 DISTNAME=	gaim-0.9.7
@@ -12,8 +12,7 @@ MASTER_SITES=	ftp://ftp.marko.net/pub/gaim/
 
 MAINTAINER=	jim@FreeBSD.org
 
-LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
-		glib12.2:${PORTSDIR}/devel/glib12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config

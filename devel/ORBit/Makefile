@@ -3,7 +3,7 @@
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.23 1999/09/29 01:15:22 foxfair Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.24 1999/10/08 05:47:25 nakai Exp $
 #
 
 DISTNAME=	ORBit-0.5.0
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	sources/ORBit
 
 MAINTAINER=	nakai@FreeBSD.org
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12 \
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		intl.1:${PORTSDIR}/devel/gettext
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config

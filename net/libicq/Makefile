@@ -3,7 +3,7 @@
 # Date Created:				31 Oct 1998
 # Whom:					Seiichirou Hiraoka
 #
-# $FreeBSD: ports/net/libicq/Makefile,v 1.6 1999/08/30 14:23:10 peter Exp $
+# $FreeBSD: ports/net/libicq/Makefile,v 1.7 1999/08/31 06:48:55 mharo Exp $
 #
 
 DISTNAME=	libicq-0.33
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.korsoft.com/pub/gicq/                        \
 
 MAINTAINER=	flathill@FreeBSD.org
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12
+LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
 

@@ -3,7 +3,7 @@
 # Date created:		31 Mar 1998
 # Whom:			eivind/dima/jseger
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla/Makefile,v 1.34 1999/08/31 02:43:01 peter Exp $
 #
 
 DISTNAME=	mozilla-source-M8
@@ -13,8 +13,7 @@ MASTER_SITES=	ftp://ftp.mozilla.org/pub/mozilla/releases/m8/src/
 
 MAINTAINER=	reg@shale.csir.co.za
 
-LIB_DEPENDS=	glib12.2:${PORTSDIR}/devel/glib12 \
-		IDL.2:${PORTSDIR}/devel/ORBit \
+LIB_DEPENDS=	IDL.2:${PORTSDIR}/devel/ORBit \
 		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
 GLIB_CONFIG?=	${LOCALBASE}/bin/glib12-config
