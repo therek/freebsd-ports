@@ -4,16 +4,17 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.79 2000/02/14 11:39:30 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.80 2000/03/08 02:20:59 obrien Exp $
 #
 
-SNAPDATE=	2000-02-21
+SNAPDATE=	2000-03-06
 SNAPVER=	${SNAPDATE:S/-//g}
 
 DISTNAME=	gcc-2.96
 PKGNAME=	gcc-devel-${SNAPVER}
 CATEGORIES=	lang java
-MASTER_SITES=	ftp://egcs.cygnus.com/pub/egcs/snapshots/${SNAPDATE}/  \
+MASTER_SITES=	ftp://ftp.freesoftware.com/pub/egcs/snapshots/${SNAPDATE}/  \
+		ftp://egcs.cygnus.com/pub/egcs/snapshots/${SNAPDATE}/  \
 		ftp://ftp.ninemoons.com/pub/mirrors/egcs/snapshots/${SNAPDATE}/ \
 		ftp://ftp.iij.ad.jp/pub/egcs/snapshots/${SNAPDATE}/ \
 		ftp://ftp.yggdrasil.com/mirrors/site/egcs.cygnus.com/pub/egcs/snapshots/${SNAPDATE}/  \
