@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.44 2000/08/15 10:22:36 sheldonh Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.45 2000/09/04 22:28:41 marcel Exp $
 #
 
 PORTNAME=		linux_base
@@ -26,7 +26,7 @@ EXTRACT_ONLY=
 NO_BUILD=		yes
 NO_FILTER_SHLIBS=	yes
 NO_MTREE=		yes
-PLIST=			${PKGDIR}/PLIST.${MACHINE_ARCH}
+PLIST=			${PKGDIR}/pkg-plist.${MACHINE_ARCH}
 
 RPM_MIRRORS=		\
 	ftp://ftp.freesoftware.com/pub/linux/redhat/__DIR__/ \
