@@ -2,12 +2,12 @@
 # Date created:         22 September 1998
 # Whom:                 Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/net/ttt/Makefile,v 1.16 1999/11/28 18:32:25 steve Exp $
+# $FreeBSD: ports/net/ttt/Makefile,v 1.17 2000/04/09 18:13:52 cpiazza Exp $
 #
 
 PORTNAME=	ttt
-PORTVERSION=	1.4
-CATEGORIES=	net tk82
+PORTVERSION=	1.5
+CATEGORIES=	net tk82 ipv6
 MASTER_SITES=   ftp://ftp.csl.sony.co.jp/pub/kjc/
 
 MAINTAINER=     kjc@csl.sony.co.jp
