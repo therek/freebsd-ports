@@ -1,9 +1,9 @@
-# New ports collection makefile for:	flim for xemacs
+# New ports collection makefile for:	flim-current for xemacs
 # Version required:	1.12.5
 # Date created:		25 July 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-xemacs-current/Makefile,v 1.2 1999/08/25 05:43:46 obrien Exp $
+# $FreeBSD: ports/editors/flim-xemacs-current/Makefile,v 1.3 1999/08/31 06:43:05 mharo Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org

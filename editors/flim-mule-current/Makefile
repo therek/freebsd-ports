@@ -1,9 +1,9 @@
-# New ports collection makefile for:	flim for mule
-# Version required:	1.12.5
+# New ports collection makefile for:	flim-current for mule
+# Version required:	1.13.2
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-mule-current/Makefile,v 1.4 1999/08/25 05:43:43 obrien Exp $
+# $FreeBSD: ports/editors/flim-mule-current/Makefile,v 1.5 1999/08/31 06:43:02 mharo Exp $
 #
 
 MAINTAINER=	shige@FreeBSD.org
@@ -20,8 +20,12 @@ EMACS_VER=	19.34
 EMACS_LIBDIR=		share/${EMACS_NAME}
 EMACS_LIBDIR_WITH_VER=	${EMACS_LIBDIR}/${EMACS_VER}
 
-HAVE_COMMON_PORT=	YES
+# whether emacs has a *-common port
+HAS_COMMON_PORT=	YES
+# whether emacs requires *-setupel.el
 REQUIRE_SETUPEL=	YES
+# whether emacs has mule feature
+HAS_MULE=		YES
 
 # use pkg/* files in ${.CURDIR}
 PKGDIR=		${.CURDIR}/pkg
