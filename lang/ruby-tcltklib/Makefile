@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.18 2000/09/26 08:02:09 knu Exp $
+# $FreeBSD: ports/lang/ruby-tcltklib/Makefile,v 1.19 2000/09/28 19:33:38 knu Exp $
 #
 
 PORTNAME=	tcltklib
@@ -22,7 +22,7 @@ USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 USE_XLIB=	yes
 
-MD5_FILE=	${PORTSDIR}/lang/ruby/files/md5
+MD5_FILE=	${PORTSDIR}/lang/ruby/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/ext/tcltklib
 CONFIGURE_ARGS=	--with-tcllib="${TCL_LIB}" --with-tklib="${TK_LIB}" \

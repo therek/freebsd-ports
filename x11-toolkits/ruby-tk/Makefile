@@ -2,7 +2,7 @@
 # Date created:		15 March 1999
 # Whom:			Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.18 2000/09/26 08:02:10 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-tk/Makefile,v 1.19 2000/09/28 19:33:39 knu Exp $
 #
 
 PORTNAME=	tk
@@ -20,7 +20,7 @@ RUN_DEPENDS=	${RUBY_ARCHLIBDIR}/tcltklib.so:${PORTSDIR}/${TCLTKLIB_CATEGORY}/rub
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
-MD5_FILE=	${PORTSDIR}/lang/ruby/files/md5
+MD5_FILE=	${PORTSDIR}/lang/ruby/distinfo
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/ext/tk
 
