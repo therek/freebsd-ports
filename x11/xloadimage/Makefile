@@ -2,7 +2,7 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.22 2001/06/23 00:03:20 jmz Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.23 2001/07/24 01:09:06 jmz Exp $
 #
 
 VERSION=	4.1
@@ -22,6 +22,7 @@ PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	jmz@FreeBSD.org
 
+USE_XLIB=	yes
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff
@@ -44,12 +45,12 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xloadimage ${PREFIX}/bin
 	@cd ${PREFIX}/bin && \
-		ln -sf xloadimage xsetbg && \
-		ln -sf xloadimage xview
+		${LN} -sf xloadimage xsetbg && \
+		${LN} -sf xloadimage xview
 	${INSTALL_PROGRAM} ${WRKSRC}/uufilter ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/xloadimage.man ${PREFIX}/man/man1/xloadimage.1
 	${INSTALL_MAN} ${WRKSRC}/uufilter.man ${PREFIX}/man/man1/uufilter.1
-	mkdir -p ${PREFIX}/share/examples/xloadimage
+	${MKDIR} ${PREFIX}/share/examples/xloadimage
 	${INSTALL_DATA} ${WRKSRC}/xloadimagerc \
 		${PREFIX}/share/examples/xloadimage/xloadimagerc
 
