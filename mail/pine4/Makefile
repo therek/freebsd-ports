@@ -3,7 +3,7 @@
 # Date created:		09 July 1998
 # Whom:			Adrian Penisoara <ady@freebsd.ady.ro>
 #
-# $FreeBSD: ports/mail/pine4/Makefile,v 1.37 1999/11/18 00:43:59 jim Exp $
+# $FreeBSD: ports/mail/pine4/Makefile,v 1.38 1999/12/23 15:35:14 steve Exp $
 #
 # The changes to ?= on some of these lines is required for the
 # pine4-ssl port. Also, please mirror changes to the files/
@@ -77,4 +77,9 @@ post-install:
 	${PREFIX}/bin/pine -P ${PREFIX}/etc/pine.conf -conf >${WRKSRC}/pine.conf
 	${INSTALL_DATA} ${WRKSRC}/pine.conf ${PREFIX}/etc/pine.conf
 
+# hack to allow slave ports to include bsd.port.pre.mk and then this file
+.if defined(PRE_MK_INCLUDED)
+.include <bsd.port.post.mk>
+.else
 .include <bsd.port.mk>
+.endif

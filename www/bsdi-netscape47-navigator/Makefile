@@ -3,7 +3,7 @@
 # Date created:		20 Sept 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.42 1999/10/08 16:15:43 sada Exp $
+# $FreeBSD: ports/www/netscape47-navigator/Makefile,v 1.43 2000/01/07 18:40:49 obrien Exp $
 #
 
 .include <bsd.port.pre.mk>
@@ -21,4 +21,5 @@ ONLY_FOR_ARCHS=	i386 alpha
 BROWSER=	navigator
 INFILE_HEAD=	'Navigator,4.7.0.19990915'
 
+PRE_MK_INCLUDED=	yes
 .include "${.CURDIR}/../netscape47-communicator/Makefile"

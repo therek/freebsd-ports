@@ -3,10 +3,12 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.51 1999/10/08 17:19:20 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.52 2000/01/07 18:40:48 obrien Exp $
 #
 
+.if !defined(PRE_MK_INCLUDED)
 .include <bsd.port.pre.mk>
+.endif
 
 .if ${ARCH} == "i386"
 MASTER_SITES?=	ftp://ftp.netscape.com./pub/communicator/english/4.7/unix/unsupported/freebsd/complete_install/
@@ -30,4 +32,5 @@ BROWSER_VER=	4.7
 INFILE_HEAD?=	'Communicator,4.7.0.19990915'
 NO_AUTOADMIN=	yes
 
+PRE_MK_INCLUDED=	yes
 .include "${MASTERDIR}/Makefile"

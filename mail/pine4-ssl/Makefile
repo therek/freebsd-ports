@@ -3,7 +3,7 @@
 # Date created:		29 Jul 1999
 # Whom:			Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.11 2000/01/15 01:51:13 nsayer Exp $
+# $FreeBSD: ports/mail/pine4-ssl/Makefile,v 1.12 2000/01/15 02:16:49 nsayer Exp $
 #
 # I spent a <strong>very frustrating</strong> half hour with portlint
 # on this one and could never get it to fewer than 8 frigging warnings.
@@ -48,4 +48,5 @@ do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ./build bsf EXTRAAUTHENTICATORS=ssl)
 .endif
 
+PRE_MK_INCLUDED=	yes
 .include "${MASTERDIR}/Makefile"

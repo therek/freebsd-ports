@@ -3,7 +3,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.54 2000/01/03 09:15:07 billf Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.55 2000/01/07 17:17:56 obrien Exp $
 #
 
 DISTNAME?=	netscape-${BROWSER}-${BROWSER_VER}
@@ -96,4 +96,9 @@ do-install:
 post-install:
 	${CAT} ${PKGDIR}/DESCR
 
+# hack to allow slave ports to include bsd.port.pre.mk and then this file
+.if defined(PRE_MK_INCLUDED)
+.include <bsd.port.post.mk>
+.else
 .include <bsd.port.mk>
+.endif
