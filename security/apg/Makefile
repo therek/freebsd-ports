@@ -2,19 +2,19 @@
 # Date created:		1 September 2000
 # Whom:			roam@FreeBSD.org
 #
-# $FreeBSD: ports/security/apg/Makefile,v 1.2 2001/01/22 07:31:15 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	apg
-PORTVERSION=	1.2.13
+PORTVERSION=	2.0.0
 CATEGORIES=	security
 MASTER_SITES=	http://www.adel.nursat.kz/apg/download/
+DISTRELTAG=	final
+DISTNAME=	${PORTNAME}-${PORTVERSION}${DISTRELTAG}
 
 MAINTAINER=	roam@FreeBSD.org
 
-USE_GMAKE=	yes
-
-MAN1=		apg.1
+MAN1=		apg.1 apgbfm.1
 MAN8=		apgd.8
 
 .include <bsd.port.mk>
