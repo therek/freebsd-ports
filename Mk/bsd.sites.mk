@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.231 2004/03/31 07:33:05 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.232 2004/04/04 06:11:04 dougb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -352,6 +352,7 @@ MASTER_SITE_GNOME+=	\
 	http://ftp.linux.org.uk/mirrors/ftp.gnome.org/%SUBDIR%/ \
 	http://www.gtlib.cc.gatech.edu/pub/gnome/%SUBDIR%/ \
 	http://public.planetmirror.com/pub/gnome/%SUBDIR%/ \
+	ftp://ftp.cse.buffalo.edu/pub/Gnome/%SUBDIR%/ \
 	ftp://ftp.dit.upm.es/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.dataplus.se/pub/linux/gnome/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/gnome/%SUBDIR%/ \
