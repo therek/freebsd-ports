@@ -2,11 +2,11 @@
 # Date created:				27 August 2001
 # Whom:					petef
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cvsstat/Makefile,v 1.1 2001/08/29 02:27:31 petef Exp $
 #
 
 PORTNAME=	cvsstat
-PORTVERSION=	2.17
+PORTVERSION=	2.18
 CATEGORIES=	devel
 MASTER_SITES=	http://cvs.sslug.dk/cvs2html/utils/
 DISTNAME=	${PORTNAME}
