@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.139 1999/09/06 23:33:27 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.140 1999/09/07 10:38:43 steve Exp $
 #
 
     SUBDIR += 4va
@@ -14,6 +14,7 @@
     SUBDIR += camediaplay
     SUBDIR += cqcam
     SUBDIR += dc20ctrl
+    SUBDIR += dc20pack
     SUBDIR += dc3play
     SUBDIR += dore
     SUBDIR += electriceyes
