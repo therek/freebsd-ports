@@ -2,7 +2,7 @@
 # Date created:		29 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.10 2001/08/12 20:18:16 joerg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gcc
@@ -35,6 +35,6 @@ CONFIGURE_ARGS=	--target=avr
 
 MAKE_FLAGS=	LANGUAGES="c c++"
 
-MAN1=		cpp.1 avr-gcc.1 gcov.1
+MAN1=		cpp.1 avr-gcc.1 avr-g++.1 gcov.1
 
 .include <bsd.port.mk>
