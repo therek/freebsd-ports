@@ -3,7 +3,7 @@
 # Date created:			7 Feb 1997
 # Whom:				Kiroh HARADA <kiroh@jp.freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/gn-mnews/Makefile,v 1.5 1999/08/25 05:24:12 obrien Exp $
 #
 
 DISTNAME=	mnews120
@@ -17,6 +17,7 @@ RUN_DEPENDS=	gninews:${PORTSDIR}/japanese/gn-gnspool \
 		mnews:${PORTSDIR}/japanese/mnews
 
 NO_PACKAGE=	"Redistribution of binary built from modified source is prohibited"
+BROKEN=		"Couldn't fetch now"
 
 WRKSRC=		${WRKDIR}/mnews-1.20/build
 
