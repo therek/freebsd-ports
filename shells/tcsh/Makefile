@@ -2,7 +2,7 @@
 # Date created:		22 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/shells/tcsh/Makefile,v 1.27 2000/04/09 18:34:05 cpiazza Exp $
+# $FreeBSD: ports/shells/tcsh/Makefile,v 1.28 2000/04/11 21:21:21 cpiazza Exp $
 #
 
 PORTNAME=	tcsh
@@ -11,7 +11,12 @@ CATEGORIES=	shells
 MASTER_SITES=   ftp://ftp.astron.com/pub/tcsh/
 DISTNAME=	tcsh-6.09
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=     ports@FreeBSD.org
+
+.include <bsd.port.pre.mk>
+.if ${OSVERSION} >= 500001
+FORBIDDEN=      "tcsh is already in the base system"
+.endif
 
 Y2K=		ftp://ftp.astron.com/pub/tcsh/Y2K
 
@@ -40,4 +45,4 @@ post-install:
 	  ${ECHO} ${PREFIX}/bin/tcsh) > /etc/shells
 	@${RM} /etc/shells.bak
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
