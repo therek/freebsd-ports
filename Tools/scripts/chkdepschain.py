@@ -9,7 +9,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/chkdepschain.py,v 1.2 2002/01/13 12:07:03 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/chkdepschain.py,v 1.3 2002/01/14 13:07:34 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #                                    highly discouraged!!!
@@ -187,7 +187,7 @@ class PortInfo:
                 topdeps.extend(botdeps)
             self.__bt_deps = tuple(topdeps)
         return self.__bt_deps
-        
+
     def get_rt_deps(self):
         if self.__rt_deps == None:
             topdeps = self.getdeps()

@@ -14,7 +14,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.12 2004/05/27 08:49:29 krion Exp $
+# $FreeBSD: ports/Tools/scripts/patchtool.py,v 1.13 2004/10/14 14:39:44 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org <- any unapproved commits to this file are
 #				     highly discouraged!!!
@@ -231,7 +231,7 @@ def gendiff(path, wrksrc, outfile = ''):
 # Automatically generate a name for a patch based on its path relative to
 # wrksrc. Use simple scheme to ensute 1-to-1 mapping between path and
 # patchname - replace all '_' with '__' and all '/' with '_'.
-# 
+#
 def makepatchname(path, patchdir = ''):
 	SRS = Vars.SLASH_REPL_SYMBOL
 	retval = Vars.PATCH_PREFIX + \

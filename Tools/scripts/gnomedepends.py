@@ -2,7 +2,7 @@
 #
 # gnomedepends
 # Analyse pkg/PLIST and give an advice as to which GNOME
-# ports should be listes in {RUN,LIB}_DEPENDS for this port 
+# ports should be listes in {RUN,LIB}_DEPENDS for this port
 #
 # ----------------------------------------------------------------------------
 # "THE BEER-WARE LICENSE" (Revision 42, (c) Poul-Henning Kamp):
@@ -13,7 +13,7 @@
 # Maxim Sobolev
 # ----------------------------------------------------------------------------
 #
-# $FreeBSD: ports/Tools/scripts/gnomedepends.py,v 1.2 2000/08/02 07:13:11 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/gnomedepends.py,v 1.3 2000/10/21 14:39:20 sobomax Exp $
 #
 # MAINTAINER= sobomax@FreeBSD.org
 #

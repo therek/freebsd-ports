@@ -28,7 +28,7 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.2 2004/05/14 18:03:55 eik Exp $
+# $FreeBSD: ports/Tools/scripts/chkmodules.pl,v 1.3 2004/05/14 21:07:39 eik Exp $
 #
 # MAINTAINER=	eik@FreeBSD.org
 #
@@ -114,7 +114,7 @@ print join("\n ",
 
 print join("\n ",
     "\nModules that are not sorted correctly:",
-    map("$_: $missorted{$_}", sort { $a <=> $b } keys %missorted)), "\n" 
+    map("$_: $missorted{$_}", sort { $a <=> $b } keys %missorted)), "\n"
   if %missorted;
 
 print join("\n ",

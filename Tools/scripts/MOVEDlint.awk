@@ -25,7 +25,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD: ports/Tools/scripts/MOVEDlint.awk,v 1.1 2004/05/08 02:46:29 eik Exp $
+# $FreeBSD: ports/Tools/scripts/MOVEDlint.awk,v 1.2 2004/05/08 11:52:36 eik Exp $
 #
 # MOVEDlint - check MOVED for consistency
 #
@@ -60,7 +60,7 @@ $1 !~ /^[^\/]+\/[^\/]+$/ || $2 !~ /^([^\/]+\/[^\/]+)?$/ {
     error[NR] = 1
     next
 }
- 
+
 $3 !~ /^20[0-3][0-9]-[01][0-9]-[0-3][0-9]$/ {
     printf "%5d: missing YYYY-MM-DD date\n", NR | sort
     error[NR] = 1

@@ -2,10 +2,10 @@
 #
 # MAINTAINER= mharo@FreeBSD.org
 #
-# $FreeBSD: ports/Tools/scripts/getpr,v 1.3 2000/07/04 09:55:31 sobomax Exp $
+# $FreeBSD: ports/Tools/scripts/getpr,v 1.4 2004/07/28 07:17:29 krion Exp $
 #
 
-use strict; 
+use strict;
 
 my $pr = shift;
 my $user = shift;

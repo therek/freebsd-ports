@@ -24,7 +24,7 @@
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 #
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/consistency-check,v 1.1 2000/05/01 19:44:50 mharo Exp $
 #
 
 #my($path) = "/var/qmail";
@@ -98,7 +98,7 @@ foreach (sort keys %files) {
 					"DIFFERENT from fs md5 of $fsmd5tmp!\n";
 			}
 		}
-	} 
+	}
 }
 
 exit;
