@@ -2,11 +2,11 @@
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna-module-vje25/Makefile,v 1.10 2000/06/07 17:24:36 knu Exp $
+# $FreeBSD: ports/japanese/esecanna-module-vje25/Makefile,v 1.11 2000/06/29 02:31:29 asami Exp $
 #
 
 PORTNAME=	esecanna-module-vje25
-PORTVERSION=	0.14.5
+PORTVERSION=	0.14.6
 CATEGORIES=	japanese
 MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 		${MASTER_SITE_LOCAL}
