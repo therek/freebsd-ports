@@ -2,7 +2,7 @@
 # Date created:			12 March 1997
 # Whom:		Andrew <andrew@ugh.net.au>, Iain Templeton <iain@ugh.net.au>
 #
-# $FreeBSD: ports/sysutils/idled/Makefile,v 1.5 1999/11/14 02:13:13 steve Exp $
+# $FreeBSD: ports/sysutils/idled/Makefile,v 1.6 2000/04/09 19:07:50 cpiazza Exp $
 #
 
 PORTNAME=	idled
@@ -23,5 +23,9 @@ post-extract:
 
 post-install:
 	strip ${PREFIX}/libexec/idled
+.if !exists(${PREFIX}/etc/rc.d/idled.sh)
+	@${ECHO} "Installing ${PREFIX}/etc/rc.d/idled.sh startup script."
+	${INSTALL_SCRIPT} -m 751 ${FILESDIR}/idled.sh ${PREFIX}/etc/rc.d/idled.sh
+.endif
 
 .include <bsd.port.mk>
