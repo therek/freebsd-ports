@@ -2,18 +2,21 @@
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack3/Makefile,v 1.25 2000/04/14 12:26:12 asami Exp $
+# $FreeBSD: ports/games/nethack3/Makefile,v 1.26 2000/08/03 09:23:49 asami Exp $
 #
 
 PORTNAME=	nethack
-PORTVERSION=	3.3.0
+PORTVERSION=	3.3.1
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/src/ \
+MASTER_SITES=	ftp://ftp.nethack.org/pub/nethack/nh${PORTVERSION2}/src/ \
 		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	nethack
+DISTNAME=	${PORTNAME}-${PORTVERSION:S/.//g}
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	dscheidt@enteract.com
 
+WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_XPM=	yes
 USE_GMAKE=	yes
 MAN6=		dgn_comp.6 dlb.6 lev_comp.6 nethack.6 recover.6
