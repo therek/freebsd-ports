@@ -2,11 +2,12 @@
 # Date created:         4 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/lang/p2c/Makefile,v 1.13 2000/04/12 06:19:42 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	p2c
 PORTVERSION=	1.21a
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=   ftp://ftp.clara.net/pub/mirrors/gnu/hurd/ \
 		ftp://ftp.u-aizu.ac.jp/pub/lang/netsw/Pascal/ \
