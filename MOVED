@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.633 2005/02/14 19:16:19 skv Exp $
+# $FreeBSD: ports/MOVED,v 1.634 2005/02/19 19:54:53 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1391,3 +1391,4 @@ print/teTeX-latex2e||2005-02-06|obsolete by new teTeX-texmf
 emulators/qcl|science/qcl|2005-02-10|moved to better category
 security/rng_82802||2005-02-14|obsolete
 lang/aleph|lang/afnix|2005-02-19|project renamed
+net/ipw||2005-02-19|abandoned
