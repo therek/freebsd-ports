@@ -9,13 +9,13 @@
 # Please send all suggested changes to the maintainer instead of committing
 # them to CVS yourself.
 #
-# $FreeBSD: ports/Mk/bsd.java.mk,v 1.52 2004/09/02 05:02:58 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.java.mk,v 1.53 2004/09/02 13:18:59 hq Exp $
 #
 
 .if !defined(Java_Include)
 
 Java_Include=				bsd.java.mk
-Java_Include_MAINTAINER=	glewis@FreeBSD.org
+Java_Include_MAINTAINER=	glewis@FreeBSD.org hq@FreeBSD.org
 
 #-------------------------------------------------------------------------------
 # Variables that each port can define:
