@@ -2,7 +2,7 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.9 2000/04/16 09:30:04 kris Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.10 2001/01/01 10:15:07 will Exp $
 #
 # View this file with tabstop=4
 #
@@ -12,7 +12,7 @@ PORTVERSION=	3.50.9
 CATEGORIES=		net
 MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
-MAINTAINER=		tony.maher@ebioinformatics.com
+MAINTAINER=		tonym@angis.org.au
 
 USE_BZIP2=	yes
 IS_INTERACTIVE=	yes
