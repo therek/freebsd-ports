@@ -2,7 +2,7 @@
 # Date created:				23 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/ncurses/Makefile,v 1.23 2000/11/07 09:36:00 trevor Exp $
+# $FreeBSD: ports/devel/ncurses/Makefile,v 1.24 2000/11/10 12:52:47 tg Exp $
 #
 
 PORTNAME=		ncurses
@@ -186,7 +186,6 @@ post-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/test/${file} ${PREFIX}/share/examples/ncurses
 .endfor
 	@ ${INSTALL_SCRIPT} ${WRKSRC}/test/tracemunch ${PREFIX}/share/examples/ncurses
-	@ ${INSTALL_DATA} ${FILESDIR}/Makefile ${PREFIX}/share/examples/ncurses
 	@ ${MKDIR} ${PREFIX}/share/examples/ncurses/c++
 .for file in ${EXAMPLES_CPP}
 	@ ${INSTALL_DATA} ${WRKSRC}/c++/${file} ${PREFIX}/share/examples/ncurses/c++
