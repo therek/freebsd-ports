@@ -1,8 +1,8 @@
-# New ports collection makefile for:	groach
+# New ports collection makefile for:	cvs2html
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.5 2000/11/05 15:08:40 sada Exp $
+# $FreeBSD: ports/devel/cvs2html/Makefile,v 1.6 2000/11/12 12:46:00 sada Exp $
 #
 
 PORTNAME=	cvs2html
