@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.15 2000/10/27 08:14:08 shige Exp $
+# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.16 2001/01/16 17:32:45 sobomax Exp $
 #
 
 PORTNAME=	iso8879
@@ -32,7 +32,7 @@ do-install:
 	@unzip -a -q -o ${DISTDIR}/${DISTFILES} -d ${INSTDIR}
 	@${INSTALL_DATA} ${FILESDIR}/catalog ${INSTDIR}/catalog
 	@${CHMOD} ${SHAREMODE} ${INSTDIR}/*
-	@${CHOWN} -R ${SHAREOWN}.${SHAREGRP} ${INSTDIR}
+	@${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${INSTDIR}
 
 post-install:
 	@${MKCATALOG} -q install ${PORTNAME}
