@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.363 2001/08/05 04:18:15 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.364 2001/08/08 06:52:38 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -50,6 +50,7 @@
     SUBDIR += emma
     SUBDIR += estic
     SUBDIR += ewipe
+    SUBDIR += explosions
     SUBDIR += ezload
     SUBDIR += fd
     SUBDIR += felis
