@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.56 2001/01/08 17:46:07 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.57 2001/01/08 18:20:44 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -55,7 +55,7 @@ HP8XX_DRV=	gdevcd8.tar.gz
 HPDJ_NAME=	hpdj
 HPDJ_VERS=	2.6
 HPDJ_DIR=	${HPDJ_NAME}-${HPDJ_VERS}
-HPDJ_SRC=	hpdj-2.6.tar.gz
+HPDJ_SRC=	${HPDJ_NAME}-${HPDJ_VERS}.tar.gz
 
 # additional driver for HP DeskJet 970, supports duplex printing
 HP970_DRV=	gdevdj9.c.gz
