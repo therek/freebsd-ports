@@ -2,18 +2,16 @@
 # Date created:		02 Nov 1999
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/databases/freetds/Makefile,v 1.7 2000/06/16 21:50:35 asami Exp $
+# $FreeBSD$
 
 PORTNAME=	freetds
-PORTVERSION=	0.50
+PORTVERSION=	0.51
 CATEGORIES=	databases
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	ALPHA/freetds
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
-
-WRKSRC=		${WRKDIR}/freetds
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
