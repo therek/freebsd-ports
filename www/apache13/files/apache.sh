@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.7 2004/07/26 15:24:05 roam Exp $
+# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.8 2004/07/27 11:17:11 ache Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -27,6 +27,6 @@ load_rc_config $name
 
 pidfile="${apache_pidfile}"
 
-start_cmd="echo \"Starting ${name}.\"; /usr/bin/limits -U www ${command} ${rc_flags} ${command_args}"
+start_cmd="echo \"Starting ${name}.\"; /usr/bin/limits -U www ${command} ${apache_flags} ${command_args}"
 
 run_rc_command "$1"
