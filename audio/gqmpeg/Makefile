@@ -2,7 +2,7 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.33 2001/05/04 21:41:06 ade Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.34 2001/05/21 02:01:22 ijliao Exp $
 #
 
 PORTNAME=	gqmpeg
@@ -20,7 +20,14 @@ RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
 USE_X_PREFIX=	yes
 USE_GTK=	yes
 USE_LIBTOOL=	yes
+WANT_GNOME=	yes
 
 MAN1=		gqmpeg.1
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if defined(HAVE_GNOME)
+USE_GNOME=	yes
+.endif
+
+.include <bsd.port.post.mk>
