@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.3 2001/03/26 03:40:24 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.4 2001/04/03 08:14:43 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -34,6 +34,24 @@ pre-everything::
 	@${ECHO} ">>> Warning:  this port needs to be updated as it uses the old-style USE_QT2 variable!"
 .endif
 
+# USE_KDEBASE_VER section
+.if defined(USE_KDEBASE_VER)
+
+# kdebase 1.x common stuff
+.if ${USE_KDEBASE_VER} == 1
+RUN_DEPENDS+=	kcontrol:${PORTSDIR}/x11/kdebase11
+USE_KDELIBS_VER=1
+
+.else
+
+# kdebase 2.x common stuff -- DEFAULT
+LIB_DEPENDS+=	konq.4:${PORTSDIR}/x11/kdebase2
+USE_KDELIBS_VER=2
+
+.endif
+.endif
+# End of USE_KDEBASE_VER
+
 # USE_KDELIBS_VER section
 .if defined(USE_KDELIBS_VER)
 
@@ -51,24 +69,6 @@ USE_QT_VER=		2
 .endif
 .endif
 # End of USE_KDELIBS_VER section
-
-# USE_KDEBASE_VER section
-.if defined(USE_KDEBASE_VER)
-
-# kdebase 1.x common stuff
-.if ${USE_KDEBASE_VER} == 1
-RUN_DEPENDS+=	kcontrol:${PORTSDIR}/x11/kdebase11
-USE_KDELIBS_VER=1
-
-.else
-
-# kdebase 2.x common stuff -- DEFAULT
-LIB_DEPENDS+=	kparts.4:${PORTSDIR}/x11/kdebase2
-USE_KDELIBS_VER=2
-
-.endif
-.endif
-# End of USE_KDEBASE_VER
 
 # USE_QT_VER section
 .if defined(USE_QT_VER)
@@ -88,7 +88,7 @@ CONFIGURE_ENV+=	MOC="${MOC}" QTDIR="${QTDIR}"
 .else
 
 QTCPPFLAGS?=
-QTCFLIBS?=
+QTCGFLIBS?=
 
 # Qt 2.x common stuff -- DEFAULT
 LIB_DEPENDS+=	qt2.4:${PORTSDIR}/x11-toolkits/qt23
