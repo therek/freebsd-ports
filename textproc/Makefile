@@ -1,4 +1,4 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.112 2000/09/22 07:07:05 asami Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.113 2000/10/03 21:35:40 nectar Exp $
 #
 
     SUBDIR += agrep
@@ -67,6 +67,7 @@
     SUBDIR += p5-XML-DOM
     SUBDIR += p5-XML-Parser
     SUBDIR += p5-XML-RSS
+    SUBDIR += p5-XML-Simple
     SUBDIR += par
     SUBDIR += perl2html
     SUBDIR += pspell
