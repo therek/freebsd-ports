@@ -3,11 +3,11 @@
 # Date created:			Mar 30, 3001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/gman/Makefile,v 1.1 2001/03/30 16:49:35 ijliao Exp $
 #
 
 PORTNAME=	gman
-PORTVERSION=	0.9.0
+PORTVERSION=	0.9.2
 CATEGORIES=	misc
 MASTER_SITES=	http://homex.coolconnect.com/user/xkwang/gman/
 
@@ -19,7 +19,8 @@ USE_GTK=	yes
 
 MAN1=	gman.1x
 
-post-patch:
-	@${PERL} -pi -e "s|-lpthread|${PTHREAD_LIBS}|g" ${WRKSRC}/Makefile
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/gman ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/gman.1x ${MANPREFIX}/man/man1
 
 .include <bsd.port.mk>
