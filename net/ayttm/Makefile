@@ -2,11 +2,11 @@
 # Date created:			1 Mar 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/everybuddy/Makefile,v 1.1.1.1 2000/03/02 09:28:23 jim Exp $
+# $FreeBSD: ports/net/everybuddy/Makefile,v 1.2 2000/04/09 18:11:12 cpiazza Exp $
 #
 
 PORTNAME=	everybuddy
-PORTVERSION=	0.1.1
+PORTVERSION=	0.1.3
 CATEGORIES=	net
 MASTER_SITES=	http://www.everybuddy.com/files/
 
