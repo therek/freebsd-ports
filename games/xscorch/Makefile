@@ -2,11 +2,11 @@
 # Date created:				19 Apr 2000
 # Whom:					will
 #
-# $FreeBSD: ports/games/xscorch/Makefile,v 1.1 2000/05/30 19:27:05 will Exp $
+# $FreeBSD: ports/games/xscorch/Makefile,v 1.2 2000/06/06 07:35:19 sobomax Exp $
 #
 
 PORTNAME=	xscorch
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.6
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xscorch/
 
@@ -15,7 +15,7 @@ MAINTAINER=	will@FreeBSD.org
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12 \
 		mikmod.2:${PORTSDIR}/audio/libmikmod
 .if defined(WITH_GNOME)
-LIB_DEPENDS+=	gnome.3:${PORTSDIR}/x11/gnomelibs
+LIB_DEPENDS+=	gnome.4:${PORTSDIR}/x11/gnomelibs
 .endif
 
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
@@ -27,7 +27,7 @@ CONFIGURE_ARGS+=--with-gnome
 .else
 CONFIGURE_ARGS+=--without-gnome
 .endif
-CONFIGURE_ENV+=GTK_CONFIG="${GTK_CONFIG}"
+CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}"
 USE_GMAKE=	yes
 
 MAN6=		xscorch.6
