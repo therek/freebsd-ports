@@ -23,7 +23,7 @@
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
  *
- * $FreeBSD: ports/security/openssh/files/pam_ssh.c,v 1.2 1999/12/28 05:32:54 green Exp $
+ * $FreeBSD: ports/security/openssh/files/pam_ssh.c,v 1.3 2000/05/13 17:11:01 green Exp $
  *
  */
 
@@ -443,7 +443,7 @@ pam_sm_open_session(
 		env_destroy(ssh_env);
 		return PAM_SESSION_ERR;
 	}
-	retval = ssh_add_identity(ac, key.rsa, comment);
+	retval = ssh_add_identity(ac, &key, comment);
 	ssh_close_authentication_connection(ac);
 	env_swap(ssh_env, 0);
 	return retval ? PAM_SUCCESS : PAM_SESSION_ERR;
