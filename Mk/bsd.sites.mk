@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.168 2003/08/14 06:48:38 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.169 2003/08/18 08:00:37 kuriyama Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -460,7 +460,6 @@ MASTER_SITE_PGSQL+= \
 	ftp://ftp.de.postgresql.org/mirror/postgresql/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/databases/postgresql/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/unix/databases/relational/postgresql/%SUBDIR%/ \
-	ftp://ftp.sra.co.jp/pub/cmd/postgres/%SUBDIR%/ \
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,misc/db/postgresql/&,} \
 	ftp://ftp.us.postgresql.org/%SUBDIR%/ \
 	ftp://ftp.au.postgresql.org/pub/postgresql/%SUBDIR%/ \
