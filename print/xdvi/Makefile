@@ -2,7 +2,7 @@
 # Date created:         1 October 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/xdvi/Makefile,v 1.27 2000/04/09 17:41:31 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdvi
@@ -26,6 +26,18 @@ IS_INTERACTIVE=	yes
 .endif
 
 MAN1=		xdvi.1
+
+post-configure:
+	@${PERL} -pi -e "s=distclean::=distclean:=g" ${WRKSRC}/Makefile
+
+pre-install:
+	@if ls /var/db/pkg/ | grep -qi ^tetex; then\
+	${ECHO_MSG} "*** WARNING ***";\
+	${ECHO_MSG} "This port conflicts with teTeX!  If you have already installed";\
+	${ECHO_MSG} "teTeX, you may want to backup the xdvi and MakeTeXPK commands.";\
+	${ECHO};\
+	${ECHO_MSG} "To cancel or suspend installation, press control-C or control-Z.";\
+        for i in 1 2 3 4 5; do ${ECHO} -n ; sleep 1; done; fi
 
 do-install:
 	@${MKDIR} ${PREFIX}/man/man1
