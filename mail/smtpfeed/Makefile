@@ -1,12 +1,12 @@
 # New ports collection makefile for:	smtpfeed
-# Version required:	1.00
+# Version required:	1.04
 # Date created:		17 January 1998
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/smtpfeed/Makefile,v 1.28 1999/08/25 06:50:53 obrien Exp $
 #
 
-DISTNAME=	smtpfeed-1.00
+DISTNAME=	smtpfeed-1.04
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.kyoto.wide.ad.jp/pub/mail/smtpfeed/ \
 		ftp://ftp.kyoto.wide.ad.jp/pub/mail/sendmail/ \
