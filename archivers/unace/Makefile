@@ -3,24 +3,19 @@
 # Date created:         23 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/archivers/unace/Makefile,v 1.3 1999/08/25 04:25:16 obrien Exp $
+# $FreeBSD: ports/archivers/unace/Makefile,v 1.4 2000/04/08 23:17:52 mharo Exp $
 #
 
 PORTNAME=	unace
 PORTVERSION=	1.2b
 CATEGORIES=	archivers
-MASTER_SITES=	http://members.aol.com/mlemke6413/
-DISTNAME=	unacepub
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	utils/compress
 
 MAINTAINER=	jonny@jonny.eng.br
 
-FETCH_BEFORE_ARGS=	-t
-
-USE_ZIP=	yes
 USE_GMAKE=	yes
-ALL_TARGET=	unace
-MAKEFILE=	unix/makefile
-NO_WRKSUBDIR=	yes
+ALL_TARGET=	clean unace
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/unace ${PREFIX}/bin
