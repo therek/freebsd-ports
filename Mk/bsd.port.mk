@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.440 2003/02/16 21:22:15 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.441 2003/03/02 02:06:56 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1284,10 +1284,8 @@ XAWVER=					6
 PKG_IGNORE_DEPENDS?=	'^XFree86-3\.'
 .else
 .if defined(USE_IMAKE)
-BUILD_DEPENDS+=			imake:${PORTSDIR}/devel/imake-4
-.if ${XFREE86_VERSION} == 4
+BUILD_DEPENDS+=			${X11BASE}/lib/X11/config/date.def:${PORTSDIR}/devel/imake-4
 RUN_DEPENDS+=			mkhtmlindex:${PORTSDIR}/devel/imake-4
-.endif
 .endif
 .if defined(USE_XPM) || defined(USE_DGS)
 USE_XLIB=				yes
