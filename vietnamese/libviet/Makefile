@@ -3,11 +3,11 @@
 # Date created:         Fri Feb 09, 2001
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/vietnamese/libviet/Makefile,v 1.1 2001/02/10 08:22:39 obrien Exp $
+# $FreeBSD: ports/vietnamese/libviet/Makefile,v 1.2 2001/02/11 23:11:33 obrien Exp $
 #
 
 PORTNAME=	libviet
-PORTVERSION=	19930831
+PORTVERSION=	20010210
 CATEGORIES=	vietnamese devel
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	obrien
