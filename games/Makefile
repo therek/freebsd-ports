@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.307 2000/10/19 13:17:30 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.308 2000/10/19 16:15:34 sobomax Exp $
 #
 
     SUBDIR += 3dc
@@ -107,6 +107,7 @@
     SUBDIR += krubik
     SUBDIR += ktamaga
     SUBDIR += ladder
+    SUBDIR += lbreakout
     SUBDIR += libshhcards
     SUBDIR += lincity
     SUBDIR += linuxdoom
