@@ -2,11 +2,11 @@
 # Date created:							07/25/2001
 # Whom:									nectar@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/srp/Makefile,v 1.1 2001/07/25 20:54:32 nectar Exp $
 #
 
 PORTNAME=		srp
-PORTVERSION=	1.7.3
+PORTVERSION=	1.7.4
 CATEGORIES=		security net
 MASTER_SITES=	http://www-cs-students.stanford.edu/~tjw/srp/source/
 
