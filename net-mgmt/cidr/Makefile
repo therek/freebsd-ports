@@ -2,10 +2,10 @@
 # Date created:		18 Jun 2000
 # Whom:			Domas Mituzas <midom@dammit.lt>
 #
-# $FreeBSD: ports/net/cidr/Makefile,v 1.1 2000/07/19 10:48:41 alex Exp $
+# $FreeBSD: ports/net/cidr/Makefile,v 1.2 2001/01/16 17:31:46 sobomax Exp $
 
 PORTNAME=	cidr
-PORTVERSION=	2.3
+PORTVERSION=	2.3.1
 CATEGORIES=	net
 MASTER_SITES=	http://home.netcom.com/~naym/cidr/
 DISTNAME=	cidr-current
