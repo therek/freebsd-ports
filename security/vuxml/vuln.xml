@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.133 2004/06/28 21:20:00 trhodes Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.134 2004/06/28 21:27:16 eik Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -37,7 +37,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <affects>
       <package>
         <name>xorg-clients</name>
-        <range><ge>6.7.0</ge></range>
+        <range><eq>6.7.0</eq></range>
       </package>
     </affects>
     <description>
@@ -57,6 +57,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-05-19</discovery>
       <entry>2004-06-28</entry>
+      <modified>2004-06-28</modified>
     </dates>
   </vuln>
 
