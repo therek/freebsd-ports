@@ -3,7 +3,7 @@
 # Date created:        21 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.2 1999/09/25 03:03:56 cpiazza Exp $
+# $FreeBSD: ports/sysutils/wmhm/Makefile,v 1.3 1999/09/26 20:37:25 cpiazza Exp $
 #
 
 DISTNAME=	wmhm-1.1
@@ -12,6 +12,8 @@ MASTER_SITES= 	ftp://mongol.dhis.org/pub/wmhm/ \
 		http://www.es.co.nz/~mmuir/
 
 MAINTAINER=	mmuir@es.co.nz
+
+LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 WRKSRC=		${WRKDIR}/wmhm/wmhm
 
