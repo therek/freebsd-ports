@@ -3,7 +3,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.16 2000/01/05 23:31:56 marcel Exp $
 #
 
 DISTNAME=		linux_devtools
@@ -120,7 +120,7 @@ do-install:
 #
 	@for R in ${DISTFILES}; do \
 		${ECHO} $$R; \
-		rpm -i ${RPMFLAGS} ${RPMDIR}/$$R; \
+		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 #
 # Install updates

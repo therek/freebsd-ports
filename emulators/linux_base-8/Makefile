@@ -3,7 +3,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.35 2000/01/06 10:47:13 marcel Exp $
 #
 
 DISTNAME=		linux_base
@@ -156,23 +156,23 @@ do-install:
 #
 	@for R in ${RPM_SET1}; do \
 		${ECHO} $$R; \
-		rpm -i ${RPMFLAGS} ${RPMDIR}/$$R; \
+		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 	@${ECHO} ${RPM_LDCONFIG}
-	@rpm -i ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_LDCONFIG}
+	@rpm -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_LDCONFIG}
 	@brandelf -t Linux ${PREFIX}/sbin/ldconfig
 	@${PREFIX}/sbin/ldconfig
 	@${TOUCH} ${PREFIX}/etc/ld.so.conf
 	@for R in ${RPM_SET2}; do \
 		${ECHO} $$R; \
-		rpm -i ${RPMFLAGS} ${RPMDIR}/$$R; \
+		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 	@${ECHO} ${RPM_RPM}
-	@rpm -i ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_RPM}
+	@rpm -U ${RPMFLAGS} --noscripts ${RPMDIR}/${RPM_RPM}
 	@brandelf -t Linux ${PREFIX}/bin/rpm
 	@for R in ${RPM_SET3}; do \
 		${ECHO} $$R; \
-		rpm -i ${RPMFLAGS} ${RPMDIR}/$$R; \
+		rpm -U ${RPMFLAGS} ${RPMDIR}/$$R; \
 	done
 #
 # Install updates
