@@ -2,7 +2,7 @@
 # Date created:		24 February 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/pruby/Makefile,v 1.1 2001/03/03 08:58:07 knu Exp $
 #
 
 PORTNAME=	pruby
@@ -24,19 +24,21 @@ USE_RUBY=	yes
 
 PHP4_PORTDIR=		${.CURDIR}/../../lang/php4
 MOD_PHP4_PORTDIR=	${.CURDIR}/../mod_php4
-MOD_PHP4_WRKSRC!=	cd ${MOD_PHP4_PORTDIR} && ${MAKE} -V WRKSRC
+MOD_PHP4_WRKSRC_CMD=	cd ${MOD_PHP4_PORTDIR} && ${MAKE} -V WRKSRC
 
 DOCS_EN=	README	contrib/_htaccess
 
 pre-everything:
-	${MKDIR} ${MOD_PHP4_WRKSRC}
-	${TOUCH} ${MOD_PHP4_WRKSRC}/../../Makefile.inc
+	dir=`${MOD_PHP4_WRKSRC_CMD}`; \
+	${MKDIR} $${dir}; \
+	${TOUCH} $${dir}/../../Makefile.inc
 
 do-configure:
 	cd ${WRKSRC} && ( \
+		dir=`${MOD_PHP4_WRKSRC_CMD}`; \
 		php contrib/phpinfo.php > phpinfo.out; \
 		( \
-		${ECHO} "PHP4_SRC=${MOD_PHP4_WRKSRC}"; \
+		${ECHO} "PHP4_SRC=$${dir}"; \
 		${ECHO} "PHP4_CONFIGURED=yes"; \
 		${ECHO} "RUBY_SRC="; \
 		${ECHO} "RUBY=${RUBY}"; \
