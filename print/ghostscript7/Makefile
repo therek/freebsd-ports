@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.53 2001/09/11 20:22:01 knu Exp $
+# $FreeBSD: ports/print/ghostscript-gnu/Makefile,v 1.54 2001/09/12 17:05:47 knu Exp $
 #
 
 PORTNAME=	ghostscript
@@ -17,10 +17,11 @@ MASTER_SITES=	${MASTER_SITE_GNU} \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/gs651/ \
 		ftp://mirror.cs.wisc.edu/pub/mirrors/ghost/gnu/fonts/
 MASTER_SITE_SUBDIR=	${PORTNAME} gimp-print hpinkjet
-
+PKGNAMESUFFIX=	-gnu
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_SRC} ${PCL3_SRC} \
 		${HP970_DRV} ${GPRINT_SRC} ${HPIJS_SRC}
+DIST_SUBDIR=	ghostscript
 EXTRACT_ONLY=	${GS_SOURCES}
 
 MAINTAINER=	ports@FreeBSD.org
@@ -51,10 +52,9 @@ MAKE_ENV=	A4="${A4}"
 .endif
 
 .if !defined(WITHOUT_X11)
-PKGNAMESUFFIX=	-gnu
 USE_XLIB=	yes
 .else
-PKGNAMESUFFIX=	-gnu-nox11
+PKGNAMESUFFIX:=	${PKGNAMESUFFIX}-nox11
 MAKE_ENV+=	WITHOUT_X11=${WITHOUT_X11}
 .endif
 
