@@ -2,7 +2,7 @@
 # Date created:         01 Mar 2000
 # Whom:                 max
 #
-# $FreeBSD: ports/devel/imake-4/Makefile,v 1.6 2000/06/08 03:25:53 asami Exp $
+# $FreeBSD: ports/devel/imake-4/Makefile,v 1.7 2000/08/25 10:32:51 asami Exp $
 #
 
 PORTNAME= 	imake
@@ -28,7 +28,6 @@ EXTRACT_AFTER_ARGS=	| ${TAR} -xf - xc/Imakefile \
 			xc/config \
 			xc/include \
 			xc/extras
-.if !defined(NO_INSTALL_MANPAGES)
 MAN1=		imake.1 \
 		lndir.1 \
 		makedepend.1 \
@@ -41,9 +40,6 @@ MAN1=		imake.1 \
 		xmkmf.1
 MANCOMPRESSED=	yes
 INSTALL_TARGET=	install install.man
-.else
-INSTALL_TARGET=	install
-.endif
 # Followings are configration variables for XFree86 Systems.
 HasSecureRPC?=	YES
 HasXdmAuth?=	YES
