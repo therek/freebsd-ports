@@ -1,12 +1,12 @@
 # New ports collection makefile for:   orbit
-# Version required:		0.5.0
+# Version required:		0.5.1
 # Date Created:			16 Aug 1998
 # Whom:				Chia-liang Kao <clkao@CirX.ORG>
 #
-# $FreeBSD: ports/devel/ORBit/Makefile,v 1.26 1999/12/04 19:07:50 steve Exp $
+# $FreeBSD: ports/devel/ORBit/Makefile,v 1.27 2000/01/07 02:05:36 nakai Exp $
 #
 
-DISTNAME=	ORBit-0.5.0
+DISTNAME=	ORBit-0.5.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/ORBit
