@@ -2,11 +2,12 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/sed/Makefile,v 1.12 1999/09/20 05:01:02 taoka Exp $
+# $FreeBSD: ports/japanese/sed/Makefile,v 1.13 2000/04/12 14:37:33 knu Exp $
 #
 
 PORTNAME=	sed
 PORTVERSION=	3.02
+PORTREVISION=	1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -16,11 +17,17 @@ MAINTAINER=	ports@FreeBSD.org
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 
-PATCH_SITES=	http://member.nifty.ne.jp/wills/program/
-PATCHFILES=	${PORTNAME}mb108.diff.gz
+PATCH_SITES=	http://www.hinadori.dyn.to/~wills/program/
+PATCHFILES=	${PORTNAME}mb109.diff.gz
 PATCH_DIST_STRIP=	-p1
-FETCH_BEFORE_ARGS=	-b
 
 MAN1=		sed.1
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/OREADME.MB ${PREFIX}/share/doc/${PKGBASE}
+	${INSTALL_DATA} ${WRKSRC}/README.MB ${PREFIX}/share/doc/${PKGBASE}
+.endif
 
 .include <bsd.port.mk>
