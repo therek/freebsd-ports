@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.136 2003/02/18 05:27:47 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.137 2003/02/28 10:14:39 dougb Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -301,7 +301,6 @@ MASTER_SITE_MOZILLA+= \
 	ftp://sunsite.utk.edu/pub/netscape-source/%SUBDIR%/ \
 	ftp://ftp.informatik.uni-bonn.de/pub/www/mozilla/%SUBDIR%/ \
 	ftp://ftp-stud.fht-esslingen.de/pub/Mirrors/ftp.mozilla.org/pub/%SUBDIR%/ \
-	ftp://sunsite.auc.dk/pub/mozilla/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/mirrors/ftp.mozilla.org/pub/%SUBDIR%/ \
 	ftp://ftp.sunsite.kth.se/archive/www/ftp.mozilla.org/%SUBDIR%/ \
 	ftp://ftp2.sinica.edu.tw/pub3/www/mozilla/%SUBDIR%/ \
@@ -513,14 +512,10 @@ MASTER_SITE_TCLTK+= \
 	ftp://sunsite.org.uk/Mirrors/ftp.scriptics.com/pub/tcl/%SUBDIR%/
 
 MASTER_SITE_TEX_CTAN+=  \
-	ftp://wuarchive.wustl.edu/packages/TeX/%SUBDIR%/  \
 	ftp://ftp.funet.fi/pub/TeX/CTAN/%SUBDIR%/  \
 	ftp://ctan.unsw.edu.au/tex-archive/%SUBDIR%/ \
-	ftp://ftp.cise.ufl.edu/tex-archive/%SUBDIR%/ \
 	ftp://ftp.tex.ac.uk/tex-archive/%SUBDIR%/  \
 	ftp://ftp.kddlabs.co.jp/CTAN/%SUBDIR%/ \
-	ftp://ftp.dti.ad.jp/pub/lang/CTAN/%SUBDIR%/ \
-	ftp://sunsite.auc.dk/pub/tex/ctan/%SUBDIR%/ \
 	ftp://ctan.tug.org/tex-archive/%SUBDIR%/ \
 	ftp://ftp.dante.de/tex-archive/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/publishing/tex/CTAN/%SUBDIR%/ \
