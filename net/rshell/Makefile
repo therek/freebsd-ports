@@ -3,12 +3,12 @@
 # Date created:        1997/06/09
 # Whom:                wosch
 #
-# $FreeBSD: ports/net/rshell/Makefile,v 1.8 1999/08/30 14:24:03 peter Exp $
+# $FreeBSD: ports/net/rshell/Makefile,v 1.9 1999/08/31 06:49:15 mharo Exp $
 #
 
 DISTNAME=	rshell-1.0
 CATEGORIES=	net
-MASTER_SITES=	http://www.freebsd.org/~wosch/src/
+MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=	wosch@FreeBSD.org
 

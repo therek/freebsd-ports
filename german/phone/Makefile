@@ -3,13 +3,13 @@
 # Date created:         1997-12-30
 # Whom:                 wosch
 #
-# $FreeBSD$
+# $FreeBSD: ports/german/phone/Makefile,v 1.7 1999/08/25 05:57:27 obrien Exp $
 #
 
 DISTNAME=	avon-1996
 PKGNAME=	de-phone-1.0
 CATEGORIES=	german misc
-MASTER_SITES=	http://www.freebsd.org/~wosch/src/
+MASTER_SITES=	http://www.de.freebsd.org/~wosch/src/
 EXTRACT_SUFX=	.gz
 
 MAINTAINER=     wosch@FreeBSD.org

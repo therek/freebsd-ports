@@ -3,12 +3,12 @@
 # Date created:         1 November 1998
 # Whom:                 wosch
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portcheckout/Makefile,v 1.5 1999/08/25 05:49:51 obrien Exp $
 #
 
 DISTNAME=       portcheckout-1.0
 CATEGORIES=	devel
-MASTER_SITES=   http://www.freebsd.org/~wosch/src/
+MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=     wosch@FreeBSD.org
 

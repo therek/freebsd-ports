@@ -3,12 +3,12 @@
 # Date created:         10 September 1995
 # Whom:                 joerg
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/manck/Makefile,v 1.11 1999/08/31 01:59:51 peter Exp $
 #
 
 DISTNAME=       manck-1.2
 CATEGORIES=	sysutils
-MASTER_SITES=   http://www.freebsd.org/~wosch/src/
+MASTER_SITES=   http://www.de.freebsd.org/~wosch/src/
 
 MAINTAINER=     wosch@FreeBSD.org
 
