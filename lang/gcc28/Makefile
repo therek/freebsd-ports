@@ -3,7 +3,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc28/Makefile,v 1.30 2000/04/12 06:18:35 obrien Exp $
+# $FreeBSD: ports/lang/gcc28/Makefile,v 1.31 2000/11/10 17:37:13 obrien Exp $
 #
 
 PORTNAME=	gcc
@@ -73,5 +73,8 @@ post-install:
 	@${MV} ${PREFIX}/man/man1/cccp.1 ${PREFIX}/man/man1/cccp28.1
 	@${MV} ${PREFIX}/man/man1/g++.1 ${PREFIX}/man/man1/g++28.1
 	@${MV} ${PREFIX}/man/man1/gcc.1 ${PREFIX}/man/man1/gcc28.1
+.for info in cpp gcc
+	install-info ${PREFIX}/info/${info}.info ${PREFIX}/info/dir
+.endfor
 
 .include <bsd.port.post.mk>
