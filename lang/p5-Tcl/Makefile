@@ -2,7 +2,7 @@
 # Date created:				June 15th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/p5-Tcl/Makefile,v 1.15 2000/10/23 21:02:59 will Exp $
+# $FreeBSD: ports/lang/p5-Tcl/Makefile,v 1.16 2001/03/01 06:38:50 vanilla Exp $
 #
 
 PORTNAME=	Tcl
@@ -17,6 +17,8 @@ MAINTAINER=	ports@FreeBSD.org
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 PERL_CONFIGURE=	yes
+CONFIGURE_ARGS+=	POLLUTE=1
+CONFIGURE_ENV+=	PREFIX=${PREFIX}
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
