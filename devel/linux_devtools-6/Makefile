@@ -2,7 +2,7 @@
 # Date created:         Jul 9, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.21 2000/05/14 05:40:48 billf Exp $
+# $FreeBSD: ports/devel/linux_devtools/Makefile,v 1.22 2000/08/15 10:22:35 sheldonh Exp $
 #
 
 PORTNAME=		linux_devtools
@@ -47,7 +47,7 @@ RPM_MIRRORS=		\
 	ftp://ftp.is.co.za/linux/distributions/redhat/__DIR__/ \
 	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/
 
-STDDIR=			redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
+STDDIR=			old-releases/redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
 UPDDIR=			updates/6.1/${MACHINE_ARCH}
 
 .include <bsd.port.pre.mk>
