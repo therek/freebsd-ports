@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.90 2001/04/17 09:10:43 demon Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.91 2001/04/27 19:18:26 vanilla Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
@@ -30,6 +30,7 @@
     SUBDIR += gbscript
     SUBDIR += ghostscript6
     SUBDIR += gnumeric
+    SUBDIR += gugod-clean
     SUBDIR += hc
     SUBDIR += hztty
     SUBDIR += irssi
