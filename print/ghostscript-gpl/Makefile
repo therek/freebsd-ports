@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.59 2001/01/16 22:57:23 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.60 2001/01/17 20:19:02 andreas Exp $
 #
 
 PORTNAME=	ghostscript
@@ -28,7 +28,7 @@ MASTER_SITES=	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/gs650/ \
 	ftp://sunsite.cnlab-switch.ch/mirror/ghost/aladdin/fonts/
 # note: russian mirror isn't up to date
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
-		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_DRV} ${PCL3_SRC} \
+		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_SRC} ${PCL3_SRC} \
 		${HP970_DRV} ${GPRINT_SRC}
 EXTRACT_ONLY=	${GS_SOURCES}
 
