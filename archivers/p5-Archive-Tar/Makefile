@@ -2,15 +2,16 @@
 # Date created:				Nov 14 2000
 # Whom:	      				Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/archivers/p5-Archive-Tar/Makefile,v 1.2 2001/01/01 13:53:11 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Archive-Tar
-PORTVERSION=	0.22
+PORTVERSION=	0.23
 CATEGORIES=	archivers perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Archive
 PKGNAMEPREFIX=	p5-
+EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	roman@xpert.com
 
@@ -18,7 +19,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Compress/
 
 PERL_CONFIGURE=	YES
 
-MAN3=		Archive::Tar.3
+MAN3=		Archive::Tar.3 Archive::Tar::Win32.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
 .include <bsd.port.mk>
