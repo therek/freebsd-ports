@@ -2,13 +2,13 @@
 # Date created:         03 April 2000
 # Whom:                 tonym
 #
-# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.1 2000/10/29 13:56:23 jeh Exp $
+# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.2 2000/11/02 11:25:41 jeh Exp $
 #
 
 PORTNAME=	ncbi.toolkit
 PORTVERSION=	2000.10.31
 CATEGORIES=	biology
-MASTER_SITES=	ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/
+MASTER_SITES=	ftp://ftp.ncbi.nlm.nih.gov/toolbox/ncbi_tools/old/${PORTVERSION:S/.//g}/
 DISTNAME=	ncbi
 DIST_SUBDIR=	ncbi
 
