@@ -7,6 +7,13 @@ time you update your ports collection, before attempting any port
 upgrades.
 
 20041024:
+  AFFECTS: users of databases/mysql50-server
+  AUTHOR: ale@FreeBSD.org
+
+  The MySQL Daemon must now be enabled / disabled in rc.conf.
+  See the script for details.
+
+20041024:
   AFFECTS: users of mail/popfile
   AUTHOR: matusita@FreeBSD.org
 
@@ -966,4 +973,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.83 2004/10/24 00:23:04 seanc Exp $
+$FreeBSD: ports/UPDATING,v 1.84 2004/10/24 03:55:10 matusita Exp $
