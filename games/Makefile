@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.266 2000/04/07 03:31:17 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.267 2000/04/16 04:28:02 will Exp $
 #
 
     SUBDIR += 3dc
@@ -83,6 +83,7 @@
     SUBDIR += jzip
     SUBDIR += kdegames11
     SUBDIR += kdegames11-i18n
+    SUBDIR += kdegames2
     SUBDIR += klondike
     SUBDIR += kmud
     SUBDIR += krogue
