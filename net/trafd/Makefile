@@ -3,7 +3,7 @@
 # Date created:		22 January 2000
 # Whom:			Michael Vasilenko <acid@stu.cn.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/trafd/Makefile,v 1.1 2000/01/29 05:37:36 steve Exp $
 #
 
 DISTNAME=	trafd-3.0
@@ -13,10 +13,22 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
+do-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/trafd/trafd ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/trafd/trafstart ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/trafd/trafstop ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/trafd/trafsave ${PREFIX}/bin
+	${INSTALL_SCRIPT} ${WRKSRC}/trafd/trafdump ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/trafstat/trafstat ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/trafstatd/trafstatd ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/traflog/traflog ${PREFIX}/bin
+	${INSTALL_DATA} ${WRKSRC}/traflog/traflog.format ${PREFIX}/etc
+
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/bpft
 	${INSTALL_MAN} ${WRKSRC}/README ${PREFIX}/share/doc/bpft/README
 .endif
-
+	${MKDIR} ${PREFIX}/var/trafd
+	${MKDIR} ${PREFIX}/var/log
 .include <bsd.port.mk>
