@@ -2,16 +2,15 @@
 # Date created:		25 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.5 2001/03/22 06:31:14 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-fltk/Makefile,v 1.6 2001/09/03 09:08:38 knu Exp $
 #
 
 PORTNAME=	fltk
-PORTVERSION=	0.1
+PORTVERSION=	0.2
 PORTEPOCH=	1
 CATEGORIES=	x11-toolkits ruby
-MASTER_SITES=	http://ruby-fltk.sourceforge.net/archive/
-#MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
-#MASTER_SITE_SUBDIR=	ruby-${PORTNAME}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	ruby-${PORTNAME}
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
 DIST_SUBDIR=	ruby
@@ -29,12 +28,20 @@ INSTALL_TARGET=	site-install
 CONFIGURE_ARGS=	--with-fltk-dir="${X11BASE}" --with-gl-dir="${X11BASE}"
 MAKE_ARGS=	LOCAL_LIBS="-lgcc"
 
+DOCS_EN=	Changes doc/en/*.txt
+DOCS_JA=	doc/ja/*.txt
+
 post-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/${PORTNAME}
 	${INSTALL_DATA} ${WRKSRC}/samples/*.rb ${RUBY_EXAMPLESDIR}/${PORTNAME}/
-	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}
-	${INSTALL_DATA} ${WRKSRC}/doc/en/guide.txt ${RUBY_DOCDIR}/${PORTNAME}/
+	${MKDIR} ${RUBY_DOCDIR}/${PORTNAME}/ja
+.for f in ${DOCS_EN}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/
+.endfor
+.for f in ${DOCS_JA}
+	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_DOCDIR}/${PORTNAME}/ja/
+.endfor
 .endif
 
 .include <bsd.port.mk>
