@@ -2,7 +2,7 @@
 # Date created:				2000-10-19
 # Whom:					trevor
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/mutemix/Makefile,v 1.1 2000/10/23 15:03:49 trevor Exp $
 #
 
 PORTNAME=	mutemix
@@ -14,8 +14,9 @@ EXTRACT_SUFX=	.py
 MAINTAINER=	trevor@FreeBSD.org
 
 RUN_DEPENDS=	aumix:${PORTSDIR}/audio/aumix \
-		${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+		${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
+USE_PYTHON=	yes
 NO_BUILD=	yes
 PLIST=		${WRKDIR}/pkg-plist
 WRKSRC=		${WRKDIR}
