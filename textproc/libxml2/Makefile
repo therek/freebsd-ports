@@ -2,20 +2,26 @@
 # Date created:				28 September 1998
 # Whom:					Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.28 2000/08/17 16:40:43 ade Exp $
+# $FreeBSD: ports/textproc/libxml2/Makefile,v 1.29 2000/09/19 19:13:23 ade Exp $
 #
 
 PORTNAME=	libxml2
-PORTVERSION= 	2.2.3
+PORTVERSION= 	2.2.4
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libxml
 
 MAINTAINER=	ade@FreeBSD.org
 
+LIB_DEPENDS=	iconv.1:${PORTSDIR}/converters/iconv
+
+USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ARGS=	--without-iconv
 INSTALLS_SHLIB=	yes
+
+CONFIGURE_ARGS=	--with-iconv
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
+		LIBS="-L${LOCALBASE}/lib -liconv"
 
 MAN1=		xmllint.1
 MAN4=		libxml.4
