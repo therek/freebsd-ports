@@ -2,11 +2,11 @@
 # Date created:			24 Nov 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/geda/Makefile,v 1.21 2000/10/05 06:36:02 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	geda
-PORTVERSION=	20010304
+PORTVERSION=	20020209
 CATEGORIES=	cad
 MASTER_SITES=	# empty
 DISTFILES=	# none
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	gesym-config:${PORTSDIR}/cad/geda-symbols \
 		gschem:${PORTSDIR}/cad/gschem \
 		gnetlist:${PORTSDIR}/cad/gnetlist
 LIB_DEPENDS=	guile.9:${PORTSDIR}/lang/guile \
-		geda.12:${PORTSDIR}/cad/libgeda
+		geda.15:${PORTSDIR}/cad/libgeda
 
 NO_BUILD=	yes
 
