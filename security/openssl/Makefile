@@ -3,11 +3,11 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.35 1999/08/31 01:51:23 peter Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.36 1999/09/17 19:16:58 dirk Exp $
 #
 
 DISTNAME=	openssl-0.9.4
-CATEGORIES=	security devel 
+CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.openssl.org/source/ \
 		ftp://ftp.sunet.se/pub/security/tools/net/openssl/source/ \
@@ -17,6 +17,9 @@ MAINTAINER=	dirk@FreeBSD.org
 
 RESTRICTED=	"Cryptography"
 USE_PERL5=	yes
+ALL_TARGET=	freebsd-shared all
+SHLIBVER=	1
+MAKE_ENV+=	SHLIBVER=${SHLIBVER}
 
 .if !defined(USA_RESIDENT) || ${USA_RESIDENT} != YES && ${USA_RESIDENT} != NO
 pre-fetch:
@@ -39,6 +42,11 @@ do-configure:
 	   ${RSAREF} -L${PREFIX}/lib
 
 post-install:
+.for i in libcrypto libssl
+	@${INSTALL_DATA} ${WRKSRC}/$i.so.${SHLIBVER} ${PREFIX}/lib
+	@${LN} -s $i.so.${SHLIBVER} ${PREFIX}/lib/$i.so
+.endfor
+	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/openssl
 	@${INSTALL_DATA} ${WRKSRC}/doc/* ${PREFIX}/share/doc/openssl
