@@ -3,13 +3,13 @@
 # Date created:                 Sun Aug  9 18:05:29 KST 1998
 # Whom:                         CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/hlatexpsfonts-wansungstd/Makefile,v 1.5 1999/09/03 18:01:24 sada Exp $
+# $FreeBSD: ports/korean/hlatexpsfonts-wansungstd/Makefile,v 1.6 1999/09/05 17:03:40 steve Exp $
 #
 
 DISTNAME=               HLaTeXpsfonts-wansung-0.98
 PKGNAME=                ko-HLaTeXpsfonts-${HLATEX_ENCODING}std-0.98
 CATEGORIES=             korean print
-MASTER_SITES=           ftp://ftp.linguistik.uni-erlangen.de/pub/HLaTeX/${HLATEX_ENCODING}/
+MASTER_SITES=		ftp://ftp.linguistik.uni-erlangen.de/pub/hangul/HLaTeX/packed/unsupported/
 DISTFILES=              ${HLATEX_PSFONTS_BASE}
 
 MAINTAINER=             cjh@kr.freebsd.org
