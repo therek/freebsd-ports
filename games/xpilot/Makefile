@@ -2,11 +2,11 @@
 # Date created:         18 July 1995
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/games/xpilot/Makefile,v 1.25 2001/07/19 13:21:52 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpilot
-PORTVERSION=	4.4.2
+PORTVERSION=	4.4.3
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/ \
 		ftp://ftp.xpilot.org/pub/xpilot/old/ \
