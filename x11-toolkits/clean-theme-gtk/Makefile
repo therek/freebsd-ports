@@ -2,11 +2,11 @@
 # Date Created:				1 June 2000
 # Whom:				 	Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: Exp $
+# $FreeBSD: ports/x11-toolkits/clean-theme-gtk/Makefile,v 1.1.1.1 2000/06/13 08:53:14 sobomax Exp $
 #
 
 PORTNAME=	clean-theme-gtk
-PORTVERSION= 	0.2
+PORTVERSION= 	0.3
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://progen.dynodns.net/dengen/cleantheme/
 
