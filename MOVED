@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.154 2003/06/15 19:45:08 lioux Exp $
+# $FreeBSD: ports/MOVED,v 1.155 2003/06/18 08:13:08 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -375,3 +375,4 @@ textproc/gnomespell-devel|textproc/gnomespell|2003-06-11|rolled into gnomespell
 mail/evolution-devel|mail/evolution|2003-06-11|rolled into evolution
 misc/wmessage|x11/wmessage|2003-06-12|accurate category
 net/mldonkey-src|net/mldonkey|2003-06-15|no londer needed
+news/straw||2003-06-20|port was broken with no sign of a fix
