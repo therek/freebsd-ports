@@ -2,21 +2,20 @@
 # Date created:				23 August 1998
 # Whom:					yoshiaki Uchikawa
 #
-# $FreeBSD: ports/audio/dap/Makefile,v 1.8 1999/08/25 04:35:26 obrien Exp $
+# $FreeBSD: ports/audio/dap/Makefile,v 1.9 2000/04/08 21:23:26 mharo Exp $
 #
 
 PORTNAME=	dap
-PORTVERSION=	2.0.2
+PORTVERSION=	2.1.1
 CATEGORIES=	audio
 MASTER_SITES=	http://www.cee.hw.ac.uk/~richardk/
-DISTNAME=	DAPSource
+EXTRACT_SUFX=.tgz
 
 MAINTAINER=	yoshiaki@kt.rim.or.jp
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 		Xpm.4:${PORTSDIR}/graphics/xpm
 
-WRKSRC=		${WRKDIR}/dap
 USE_X_PREFIX=	yes
 
 do-install:
