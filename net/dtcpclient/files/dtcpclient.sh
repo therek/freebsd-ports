@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh,v 1.2 2003/10/01 18:13:28 ume Exp $
+# $FreeBSD: ports/net/dtcpclient/files/dtcpclient.sh,v 1.3 2003/12/30 18:51:41 ume Exp $
 #
 
 # PROVIDE: dtcpclient
@@ -21,11 +21,11 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-[ -z "$dtcpclient_enable" ] && dtcpclient_enable="NO"	# Enable dtcpclient
+dtcpclient_enable=${dtcpclient_enable:-"NO"}	# Enable dtcpclient
 #dtcpclient_program="${prefix}/sbin/dtcpclient"	# Location of dtcpclient
-[ -z "$dtcpclient_server" ] && dtcpclient_server=""	# DTCP server name
-[ -z "$dtcpclient_username" ] && dtcpclient_username=""	# DTCP user name
-[ -z "$dtcpclient_flags" ] && dtcpclient_flags="-t network -Dl"	# Flags to dtcpclient program
+dtcpclient_server=${dtcpclient_server:-""}	# DTCP server name
+dtcpclient_username=${dtcpclient_username:-""}	# DTCP user name
+dtcpclient_flags=${dtcpclient_flags:-"-t network -Dl"}	# Flags to dtcpclient program
 
 . %%RC_SUBR%%
 
