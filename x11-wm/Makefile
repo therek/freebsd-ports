@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/Makefile,v 1.62 2001/08/06 15:11:00 sobomax Exp $
 #
 
     SUBDIR += 9menu
@@ -26,6 +26,7 @@
     SUBDIR += fvwm95
     SUBDIR += fvwm95-i18n
     SUBDIR += gnome2wmaker
+    SUBDIR += golem
     SUBDIR += gwm
     SUBDIR += icepref
     SUBDIR += icewm
