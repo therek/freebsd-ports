@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.305 2000/10/29 14:19:37 knu Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.306 2000/10/30 13:55:25 nakai Exp $
 #
 
     SUBDIR += Canna
@@ -61,6 +61,7 @@
     SUBDIR += gicq
     SUBDIR += gn-gnspool
     SUBDIR += gn-mnews
+    SUBDIR += gnomecore
     SUBDIR += gnomeicu
     SUBDIR += gnomelibs
     SUBDIR += gp
