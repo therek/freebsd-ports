@@ -2,11 +2,11 @@
 # Date created:        4 June 1996
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/devel/ctags/Makefile,v 1.11 2000/06/09 20:35:48 will Exp $
+# $FreeBSD: ports/devel/ctags/Makefile,v 1.12 2000/06/29 07:02:11 obrien Exp $
 #
 
 PORTNAME=	ctags
-PORTVERSION=	3.5.2
+PORTVERSION=	4.0.2
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SUNSITE}\
 		http://fly.hiwaay.net/~darren/archives/ \
