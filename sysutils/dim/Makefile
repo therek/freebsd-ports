@@ -2,11 +2,11 @@
 # Date created:			Apr 13, 2001
 # Whom:				Mark Pulford <mark@kyne.com.au>
 #
-# $FreeBSD: ports/sysutils/dim/Makefile,v 1.1 2001/04/17 18:17:50 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dim
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.theory.org/~matt/dim/
 DISTNAME=	dim
