@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.86 2002/05/19 17:43:13 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.87 2002/05/23 04:35:33 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -48,6 +48,7 @@ MASTER_SITE_COMP_SOURCES+=	\
 	ftp://rtfm.mit.edu/pub/usenet/comp.sources.%SUBDIR%/
 
 MASTER_SITE_FESTIVAL= \
+	http://www.festvox.org/packed/festival/%SUBDIR%/ \
 	http://www.speech.cs.cmu.edu/festival/cstr/festival/%SUBDIR%/ \
 	ftp://ftp.leb.net/pub/blinux/festival/mirror.festival_home/%SUBDIR%/ \
 	ftp://ftp.mayn.de/pub/linux/BLinux/festival/mirror.festival_home/%SUBDIR%/ \
