@@ -2,7 +2,7 @@
 # Date created: 18 Aug 1999
 # Whom: Mitsuru Yoshida <mitsuru@riken.go.jp>
 #
-# $FreeBSD: ports/japanese/texinfo/Makefile,v 1.2 1999/12/10 05:48:20 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	texinfo
@@ -17,6 +17,7 @@ PATCHFILES=	${DISTNAME}-j.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	mitsuru@riken.go.jp
+COMMENT=	Typeset Texinfo files for printing. Uses TeX
 
 RUN_DEPENDS=    ptex:${PORTSDIR}/japanese/ptex-euc
 

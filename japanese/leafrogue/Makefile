@@ -2,7 +2,7 @@
 # Date created:				2 Oct 2000
 # Whom:					TAKAHASHI Kaoru
 #
-# $FreeBSD: ports/japanese/leafrogue/Makefile,v 1.1 2000/11/03 17:31:18 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	leafrogue
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.lab3.kuis.kyoto-u.ac.jp/~roguelike/leaf/dl/
 DISTNAME=	lfrog${PORTVERSION:S/.//}
 
 MAINTAINER=	kaoru@kaisei.org
+COMMENT=	LeafRogue for message separated version of Rogue-clone
 
 RUN_DEPENDS=	rogue_s:${PORTSDIR}/japanese/rogue_s
 

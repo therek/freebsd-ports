@@ -2,7 +2,7 @@
 # Date created:         11 May 1999
 # Whom:                 HONDA Yasuhiro <honda@kashio.info.mie-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/rxvt/Makefile,v 1.14 2000/04/12 14:37:31 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rxvt
@@ -11,6 +11,7 @@ CATEGORIES=	japanese x11
 MASTER_SITES=	ftp://ftp.rxvt.org/pub/rxvt/
 
 MAINTAINER=	honda@kashio.info.mie-u.ac.jp
+COMMENT=	An xterm replacement that supports pixmap background and Japanese
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes

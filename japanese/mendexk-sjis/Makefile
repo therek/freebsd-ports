@@ -2,7 +2,7 @@
 # Date created:         1 Dec 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/mendexk-sjis/Makefile,v 1.5 2000/04/01 20:30:54 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mendexk
@@ -16,6 +16,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${KPATHSEA_PARENT}${EXTRACT_SUFX}
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
+COMMENT=	Index formatter for Japanese (SJIS)
 
 BUILD_DEPENDS=	nkf:${PORTSDIR}/japanese/nkf
 

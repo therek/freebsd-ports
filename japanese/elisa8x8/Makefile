@@ -2,7 +2,7 @@
 # Date created:		17 Aug. 1998
 # Whom: Toshihiko SHIMOKAWA <toshi@tea.forus.or.jp> & ELISA Font Project
 #
-# $FreeBSD: ports/japanese/elisa8x8/Makefile,v 1.5 2000/09/12 11:08:00 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elisa8x8
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.tea.forus.or.jp/toshi/exhibition/
 DISTNAME=	elisat10
 
 MAINTAINER=	toshi@tea.forus.or.jp
+COMMENT=	X11 8-dot kanji font 'elisa font'
 
 USE_X_PREFIX=	yes
 

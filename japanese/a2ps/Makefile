@@ -2,7 +2,7 @@
 # Date created:		16 Nov 1996
 # Whom:			SAITO Itsuro <saito@miv.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/japanese/a2ps/Makefile,v 1.7 2000/04/11 14:12:49 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	a2ps
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}.pl-${PORTVERSION}
 EXTRACT_SUFX=
 
 MAINTAINER=	saito@miv.t.u-tokyo.ac.jp
+COMMENT=	Text file to postscript converter (with Japanese support)
 
 EXTRACT_CMD=	${CP}
 EXTRACT_BEFORE_ARGS=

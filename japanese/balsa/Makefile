@@ -2,7 +2,7 @@
 # Date created:				02 Mar 2000
 # Whom:					Yoichi ASAI <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/japanese/balsa/Makefile,v 1.3 2000/10/13 09:34:41 reg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	balsa
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.critical.ne.jp/pub/balsa-ja/
 DISTNAME=	balsa-0.8.0-ja
 
 MAINTAINER=	yatt@msc.biglobe.ne.jp
+COMMENT=	A mail reader for the gnome interface (Japanized)
 
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList
 

@@ -2,7 +2,7 @@
 # Date created:		6 Sept 1999
 # Whom:			Takashi Mega <mega@minz.org>
 #
-# $FreeBSD: ports/japanese/slrn/Makefile,v 1.15 2001/02/06 13:21:58 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slrn
@@ -18,6 +18,7 @@ PATCHFILES=	${PORTNAME}-${PORTVERSION}jp0.pat.gz
 PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	ukatsuta@mud.biglobe.ne.jp
+COMMENT=	A newsreader based by S-Lang
 
 LIB_DEPENDS=	slang.2:${PORTSDIR}/japanese/libslang
 

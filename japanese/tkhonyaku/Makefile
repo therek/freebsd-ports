@@ -2,7 +2,7 @@
 # Date created:		10 July 2000
 # Whom:			Daichi T.GOTO
 #
-# $FreeBSD: ports/japanese/tkhonyaku/Makefile,v 1.4 2001/04/16 17:53:24 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkhonyaku
@@ -11,6 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://www.yk.rim.or.jp/~kawagisi/
 
 MAINTAINER=	daichi@ongs.gr.jp
+COMMENT=	Yet another Honyaku-Damashii client with rich functionality
 
 RUN_DEPENDS=	${LOCALBASE}/bin/wish8.0jp:${PORTSDIR}/japanese/tk80
 

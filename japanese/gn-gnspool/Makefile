@@ -2,7 +2,7 @@
 # Date created:				14 Feb. 1997
 # Whom:					Kiroh HARADA <kiroh@kh.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/gn-gnspool/Makefile,v 1.13 2000/04/11 14:13:44 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gn-gnspool
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.omronsoft.co.jp/pub/misc/gn/
 DISTNAME=	gn-${PORTVERSION}
 
 MAINTAINER=	seiken@ARGV.AC
+COMMENT=	Simple Japanese Newsreader with Local Spool Support
 
 # The program ``configure'' sometimes issue questions and
 # batch-mode build would fail.

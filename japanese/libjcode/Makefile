@@ -2,7 +2,7 @@
 # Date created:		8 MAY 1999
 # Whom:			Shuichi Tanaka
 #
-# $FreeBSD: ports/japanese/libjcode/Makefile,v 1.5 2000/06/16 21:51:17 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libjcode
@@ -12,6 +12,7 @@ MASTER_SITES=	http://keemun.soraneko.com/gtkicq/archives/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	stanaka@bb.mbn.or.jp
+COMMENT=	Japanese charset conversion library
 
 WRKSRC=		${WRKDIR}/${DISTNAME}-${PORTVERSION}
 

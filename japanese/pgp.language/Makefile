@@ -2,7 +2,7 @@
 # Date created:         9 May 1997
 # Whom:                 Hironori Ikura <hikura@kaisei.org>
 #
-# $FreeBSD: ports/japanese/pgp.language/Makefile,v 1.10 2000/10/08 10:21:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pgp
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.win.or.jp/pub/network/pgp/2.x/lang/ \
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//g}i-japanese
 
 MAINTAINER=	hikura@kaisei.org
+COMMENT=	Japanese language module for PGP
 
 RESTRICTED=	"Crypto"
 

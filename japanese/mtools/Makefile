@@ -2,7 +2,7 @@
 # Date created:		6 October 1997
 # Whom:			WATANABE junya <junya-w@remus.dti.ne.jp>
 #
-# $FreeBSD: ports/japanese/mtools/Makefile,v 1.8 2000/07/07 18:44:45 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mtools
@@ -18,6 +18,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	junya-w@remus.dti.ne.jp
+COMMENT=	Tools for manipulating MSDOS files + support 1232KB , Unicode LFN
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-xdf

@@ -2,7 +2,7 @@
 # Date created:         23 Jun 1997
 # Whom:                 Hironori Ikura <hikura@kaisei.org>
 #
-# $FreeBSD: ports/japanese/ebw3/Makefile,v 1.3 1999/08/25 05:23:50 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ebw3
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.imasy.or.jp/pub/unix/net/www/ebw3/
 DISTNAME=	${PORTNAME}-${VERSION}
 
 MAINTAINER=	hikura@kaisei.org
+COMMENT=	Access to Japanese EPWING or Electric-Book based CD-ROM via HTTP
 
 VERSION=	0.2-b4
 

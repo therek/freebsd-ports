@@ -2,7 +2,7 @@
 # Date created:		21 Jul 1998
 # Whom:			Masanori Kiriake <seiken@nbs.co.jp>
 #
-# $FreeBSD: ports/japanese/ack/Makefile,v 1.4 2000/04/11 14:12:50 knu Exp $
+# $FreeBSD$
 
 PORTNAME=	ack
 PORTVERSION=	1.39
@@ -12,6 +12,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	seiken@ARGV.AC
+COMMENT=	Kanji code converter
 
 ALL_TARGET=	ack
 

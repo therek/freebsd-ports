@@ -2,7 +2,7 @@
 # Date created:		17 Oct 1997
 # Whom:			taguchi
 #
-# $FreeBSD: ports/japanese/expect/Makefile,v 1.17 2000/04/11 14:13:39 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	expect
@@ -11,6 +11,7 @@ CATEGORIES=	japanese lang tk80
 MASTER_SITES=	ftp://ftp.nist.gov/mel/div826/subject/expect/old/
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
+COMMENT=	A sophisticated scripter based on Japanized tcl/tk
 
 LIB_DEPENDS=	tk80jp.1:${PORTSDIR}/japanese/tk80
 

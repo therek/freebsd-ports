@@ -2,7 +2,7 @@
 # Date created:         25 Dec 1997
 # Whom:                 Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/dvi2dvi/Makefile,v 1.3 1999/12/10 06:14:24 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dvi2dvi
@@ -14,6 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		web2c-7.2a.tar.gz
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
+COMMENT=	A DVI to DVI transformer
 
 RUN_DEPENDS=	${PREFIX}/share/fonts/vf-n2a:${PORTSDIR}/japanese/vftool
 

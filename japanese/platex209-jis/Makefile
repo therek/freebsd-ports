@@ -2,7 +2,7 @@
 # Date created:		01 Jan 1998
 # Whom:			Makoto WATANABE <watanabe@zlab.phys.nagoya-u.ac.jp>
 #
-# $FreeBSD: ports/japanese/platex209-jis/Makefile,v 1.3 1999/08/28 01:57:20 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	platex209
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.ascii.co.jp/pub/TeX/ascii-ptex/platex/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	watanabe@zlab.phys.nagoya-u.ac.jp
+COMMENT=	ASCII Japanese pLaTeX 2.09 with JIS code support
 
 BUILD_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex${PKGNAMESUFFIX}
 RUN_DEPENDS=	ptex:${PORTSDIR}/japanese/ptex${PKGNAMESUFFIX}

@@ -2,7 +2,7 @@
 # Date created:		26 Sep 1997
 # Whom: Dai ISHIJIMA & ELISA Font Project <ishijima@tri.pref.osaka.jp>
 #
-# $FreeBSD: ports/japanese/elisa10x8/Makefile,v 1.8 2000/09/12 11:07:58 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	elisa10x8
@@ -17,6 +17,7 @@ DISTFILES=	elisau10.tgz \
 EXTRACT_ONLY=	elisau10.tgz
 
 MAINTAINER=	ishijima@tri.pref.osaka.jp
+COMMENT=	X11 8-dot kanji font 'elisa font'
 
 USE_X_PREFIX=	yes
 

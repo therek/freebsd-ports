@@ -2,7 +2,7 @@
 # Date created:		3 December 1998
 # Whom:			Yoshihiko Sarumaru <mistral@imasy.or.jp>
 #
-# $FreeBSD: ports/japanese/rogue_s/Makefile,v 1.2 2000/07/18 17:45:38 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rogue_s
@@ -21,6 +21,7 @@ PATCH_SITE_SUBDIR=	knu
 PATCHFILES=	rogue_s.patch04
 
 MAINTAINER=	mistral@imasy.or.jp
+COMMENT=	Japanized and message separated version of Rogue-clone: Version II
 
 BUILD_DEPENDS=  nkf:${PORTSDIR}/japanese/nkf
 
