@@ -2,7 +2,7 @@
 # Date created:				29 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xdigger/Makefile,v 1.9 2000/04/02 00:59:34 mharo Exp $
+# $FreeBSD: ports/games/xdigger/Makefile,v 1.10 2000/04/14 12:27:16 asami Exp $
 #
 
 PORTNAME=	xdigger
@@ -22,13 +22,14 @@ post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/configure.h
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/xdigger ${PREFIX}/bin
+	${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/xdigger ${PREFIX}/bin
 	${INSTALL_DATA} ${WRKSRC}/xdigger.man ${PREFIX}/man/man6/xdigger.6
 	@${MKDIR} ${PREFIX}/share/xdigger
 	${INSTALL_DATA} ${WRKSRC}/xdigger.level ${PREFIX}/share/xdigger
 	${INSTALL_DATA} ${WRKSRC}/audio/*.au ${PREFIX}/share/xdigger
 	@${TOUCH} ${PREFIX}/share/xdigger/xdigger.hiscore
-	@${CHMOD} a+rw ${PREFIX}/share/xdigger/xdigger.hiscore
+	@${CHMOD} 664 ${PREFIX}/share/xdigger/xdigger.hiscore
+	@${CHOWN} root:games ${PREFIX}/share/xdigger/xdigger.hiscore
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/xdigger
 	${INSTALL_DATA} ${WRKSRC}/ChangeLog ${PREFIX}/share/doc/xdigger
