@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.137 2000/12/19 10:45:03 will Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.138 2000/12/19 11:12:03 will Exp $
 #
     SUBDIR += yawho
 
@@ -84,6 +84,7 @@
     SUBDIR += rtty
     SUBDIR += roottail
     SUBDIR += ruby-syslog
+    SUBDIR += safecat
     SUBDIR += sarah
     SUBDIR += sdd
     SUBDIR += setcdboot
