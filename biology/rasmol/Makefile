@@ -3,7 +3,7 @@
 # Date created:         Dec 4 1997
 # Whom:                 frankch@waru.life.nthu.edu.tw
 #
-# $FreeBSD: ports/biology/rasmol/Makefile,v 1.5 1999/08/25 04:48:06 obrien Exp $
+# $FreeBSD: ports/biology/rasmol/Makefile,v 1.6 1999/08/25 05:17:56 taoka Exp $
 #
 
 DISTNAME=       RasMol_2.7.1
@@ -17,5 +17,12 @@ WRKSRC=		$(WRKDIR)/RasMol_2.7.1/src/
 USE_IMAKE=	yes
 
 MAN1=		rasmol.1
+
+pre-extract:
+	@${ECHO} ""
+	@${ECHO} You can set the color depth to match your X server in
+	@${ECHO} ${WRKSRC}Imakefile
+	@${ECHO} before building.
+	@${ECHO} ""
 
 .include <bsd.port.mk>
