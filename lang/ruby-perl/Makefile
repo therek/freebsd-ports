@@ -2,11 +2,11 @@
 # Date created:		11 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.4 2000/08/16 12:21:18 knu Exp $
+# $FreeBSD: ports/lang/ruby-perl/Makefile,v 1.5 2000/09/07 14:39:32 knu Exp $
 #
 
 PORTNAME=	perl
-PORTVERSION=	0.2.5
+PORTVERSION=	0.2.6
 CATEGORIES=	lang ruby perl5
 MASTER_SITES=	http://www.bekkoame.ne.jp/~yoshidam/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -19,6 +19,7 @@ USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
+CONFIGURE_ARGS=	--with-libperl=/usr/lib/libperl.so
 INSTALL_TARGET=	site-install
 
 EXAMPLES=	htmlparse.rb	http.rb		perllib.rb	ping.rb \
