@@ -2,18 +2,19 @@
 # Date created:				5 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gswitchit_applet/Makefile,v 1.2 2000/08/04 16:11:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gswitchit_applet
-PORTVERSION=	0.61
+PORTVERSION=	0.70
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gswitchit
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+LIB_DEPENDS=	gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf \
+		gconf-1.1:${PORTSDIR}/devel/gconf
 
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
