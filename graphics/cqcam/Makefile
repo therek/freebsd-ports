@@ -2,11 +2,12 @@
 # Date created:		29 Oct 1997
 # Whom:			Kensaku Masuda <greg@greg.rim.or.jp>
 #
-# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.18 2000/10/12 21:33:37 ade Exp $
+# $FreeBSD: ports/graphics/cqcam/Makefile,v 1.19 2001/08/05 18:37:59 lioux Exp $
 #
 
 PORTNAME=	cqcam
 PORTVERSION=	0.91
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.cs.duke.edu/~reynolds/cqcam/
 
