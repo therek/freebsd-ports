@@ -1,4 +1,4 @@
-# $FreeBSD: ports/palm/Makefile,v 1.13 2000/02/22 20:28:59 dirk Exp $
+# $FreeBSD: ports/palm/Makefile,v 1.14 2000/03/21 17:59:42 ade Exp $
 #
 
     SUBDIR += coldsync
@@ -9,6 +9,7 @@
     SUBDIR += jpilot
     SUBDIR += kpilot
     SUBDIR += malsync
+    SUBDIR += palmos-sdk
     SUBDIR += pilot-link
     SUBDIR += pilot_makedoc
     SUBDIR += syncal
