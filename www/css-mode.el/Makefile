@@ -3,7 +3,7 @@
 # Date created:		21 October 1999
 # Whom:			Shigeyuki Fukushima <shige@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/css-mode.el/Makefile,v 1.1.1.1 1999/10/22 16:09:11 shige Exp $
 #
 
 DISTNAME=	css-mode.el
@@ -33,10 +33,10 @@ PLIST_SUB=	ELISP_SUBDIR=${ELISP_SUBDIR} XELISP_SUBDIR=${XELISP_SUBDIR} \
 		CSSMODE_DOCDIR=${CSSMODE_DOCDIR}
 
 do-install:
-	${MKDIR} ${PREFIX}/${ELISPDIR}
+	${MKDIR} ${PREFIX}/${ELISP_SUBDIR}
 	${INSTALL_DATA} ${_DISTDIR}/${DISTNAME} ${PREFIX}/${ELISP_SUBDIR}/
 # For XEmacs
-	${MKDIR} ${PREFIX}/${XELISPDIR}
+	${MKDIR} ${PREFIX}/${XELISP_SUBDIR}
 	${INSTALL_DATA} ${_DISTDIR}/${DISTNAME} ${PREFIX}/${XELISP_SUBDIR}/
 
 post-install:
