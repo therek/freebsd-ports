@@ -2,12 +2,12 @@
 # Date created:		21 November 1997
 # Whom:			Kiriyama Kazuhiko <kiri@kiri.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/mail/mew/Makefile,v 1.29 2001/08/17 11:59:28 kiri Exp $
+# $FreeBSD: ports/mail/mew/Makefile,v 1.30 2001/08/25 06:53:26 kiri Exp $
 #
 
 PORTNAME=	mew
 PORTVERSION=	${MEW_VER}
-CATEGORIES=	editors elisp
+CATEGORIES=	mail elisp
 MASTER_SITES=	ftp://ftp.mew.org/pub/Mew/old/ \
 		ftp://ftp.kyushu-u.ac.jp/pub/Misc/mew/old/ \
 		${MASTER_SITE_PORTS_JP}
