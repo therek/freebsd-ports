@@ -3,7 +3,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/sip/Makefile,v 1.1 2000/04/22 21:27:54 will Exp $
 #
 
 PORTNAME=	sip
@@ -12,6 +12,8 @@ CATEGORIES=	devel python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 
 MAINTAINER=	adsharma@home.com
+
+BUILD_DEPENDS=	${LOCALBASE}/include/python1.5/Python.h:${PORTSDIR}/lang/python
 
 USE_LIBTOOL=	yes
 USE_QT=		yes
