@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.380 2001/06/09 19:52:50 lioux Exp $
+# $FreeBSD: ports/games/Makefile,v 1.381 2001/06/10 02:41:42 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -46,6 +46,7 @@
     SUBDIR += clanbomber
     SUBDIR += columns
     SUBDIR += connect4
+    SUBDIR += conquest
     SUBDIR += corewars
     SUBDIR += cosmo
     SUBDIR += cowsay
