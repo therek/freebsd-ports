@@ -1,15 +1,17 @@
 
-$FreeBSD: ports/audio/aureal-kmod/files/patch-Makefile.inc,v 1.1 2001/01/15 17:42:46 sobomax Exp $
+$FreeBSD$
 
---- Makefile.inc.orig	Mon Jan 15 18:44:49 2001
-+++ Makefile.inc	Mon Jan 15 18:44:49 2001
-@@ -0,0 +1,9 @@
+--- Makefile.inc.orig	Tue Jan 16 20:33:37 2001
++++ Makefile.inc	Tue Jan 16 20:35:06 2001
+@@ -0,0 +1,11 @@
 +.PATH:	 /sys/dev/sound/pci ${WRKSRC}
 +
 +KMODDIR	 = ${PREFIX}/lib/au88x0
-+SRCS	+= device_if.h bus_if.h isa_if.h pci_if.h
++KMOD	 = snd_au88${MODEL}
 +SRCS	+= au88x0.c
++SRCS	+= device_if.h bus_if.h isa_if.h pci_if.h
 +.if ${OSVERSION} > 500000
 +SRCS	+= ac97_if.h channel_if.h feeder_if.h mixer_if.h
 +.endif
++OBJS	 = ${WRKSRC}/asp${MODEL}.o
 +CFLAGS	+= -I${WRKSRC}
