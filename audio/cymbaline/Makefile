@@ -3,15 +3,15 @@
 # Date created:			Jun 20, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.6 2001/07/27 07:05:16 ijliao Exp $
+# $FreeBSD: ports/audio/cymbaline/Makefile,v 1.7 2001/08/06 11:04:00 ijliao Exp $
 #
 
 PORTNAME=	cymbaline
-PORTVERSION=	0.9f
+PORTVERSION=	0.9g
 CATEGORIES=	audio python
 MASTER_SITES=	http://www.silmarill.org/cymbaline/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123 \
 		aumix:${PORTSDIR}/audio/aumix
