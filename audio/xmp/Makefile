@@ -2,11 +2,11 @@
 # Date created:		18 September 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/audio/xmp/Makefile,v 1.6 2000/09/16 18:38:52 ade Exp $
+# $FreeBSD: ports/audio/xmp/Makefile,v 1.7 2001/01/02 15:50:05 kevlo Exp $
 #
 
 PORTNAME=	xmp
-PORTVERSION=	2.0.3
+PORTVERSION=	2.0.4
 CATEGORIES=	audio
 MASTER_SITES=	http://xmp.helllabs.org/pkg/%SUBDIR%/ \
 		http://xmp.linuxave.net/pkg/%SUBDIR%/
