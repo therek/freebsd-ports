@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.206 2003/11/19 01:41:30 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.207 2003/11/20 22:09:37 glewis Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -789,7 +789,7 @@ MASTER_SITE_TEX_CTAN+=  \
 
 MASTER_SITE_THEMES+= \
 	http://download.freshmeat.net/themes/%SUBDIR%/ \
-	fttp://gd.tuwien.ac.at/opsys/linux/freshmeat/themes/%SUBDIR%/
+	ftp://gd.tuwien.ac.at/opsys/linux/freshmeat/themes/%SUBDIR%/
 
 MASTER_SITE_VIM+= \
 	ftp://ftp.vim.org/pub/vim/unix/  \
