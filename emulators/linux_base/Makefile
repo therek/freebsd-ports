@@ -3,7 +3,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.35 2000/01/06 10:47:13 marcel Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.36 2000/01/10 13:03:07 marcel Exp $
 #
 
 DISTNAME=		linux_base
@@ -22,7 +22,7 @@ RUN_DEPENDS=		rpm:${PORTSDIR}/misc/rpm
 
 ONLY_FOR_ARCHS=		alpha i386
 DIST_SUBDIR=		rpm
-PREFIX=			/compat/linux
+PREFIX=			/usr/compat/linux
 EXTRACT_ONLY=
 NO_BUILD=		yes
 NO_FILTER_SHLIBS=	yes
