@@ -2,11 +2,11 @@
 # Date created:		24 May 2001
 # Whom:			Joe Clarke <marcus@marcuscom.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/confregdecode/Makefile,v 1.1 2001/05/29 17:02:57 ijliao Exp $
 #
 
 PORTNAME=	confregdecode
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	net java
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	cosi-nms
