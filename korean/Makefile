@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.43 2000/04/05 01:19:56 asami Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.44 2000/05/01 02:56:05 steve Exp $
 #
 
     SUBDIR += Wnn
@@ -33,6 +33,8 @@
     SUBDIR += hpscat
     SUBDIR += johabfonts
     SUBDIR += kaistfonts
+    SUBDIR += linux-netscape47-communicator
+    SUBDIR += linux-netscape47-navigator
     SUBDIR += linuxdoc-sgml
     SUBDIR += linux_locale
     SUBDIR += mizifont
