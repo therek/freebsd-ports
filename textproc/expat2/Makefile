@@ -1,16 +1,16 @@
 # New ports collection makefile for:	expat
-# Version required:	1.1
 # Date created:		Thu Aug 26 14:38:07 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/expat/Makefile,v 1.2 1999/08/31 02:09:14 peter Exp $
 #
 
-DISTNAME=	expat
-PKGNAME=	expat-1.1
+PORTNAME=	expat
+PORTVERSION= 	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	dirk@FreeBSD.org
 

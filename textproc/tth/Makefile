@@ -1,16 +1,16 @@
 # New ports collection makefile for:    tth
-# Version required:     2.22
 # Date created:         19 Feb 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/tth/Makefile,v 1.13 1999/08/31 06:51:30 mharo Exp $
+# $FreeBSD: ports/textproc/tth/Makefile,v 1.14 2000/02/08 09:29:05 peter Exp $
 #
 
-DISTNAME=       tth_C
-PKGNAME=	tth-2.22
+PORTNAME=	tth
+PORTVERSION= 	2.22
 CATEGORIES=	textproc
 MASTER_SITES=	http://people.FreeBSD.org/~tg/ \
 		http://hutchinson.belmont.ma.us/tth/tth-noncom/
+DISTNAME=	tth_C
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org

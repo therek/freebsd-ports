@@ -1,15 +1,15 @@
 # New ports collection makefile for:	nfbtrans
-# Version required:		7.55
 # Date created:			30 Aug 1998
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/nfbtrans/Makefile,v 1.6 1999/09/07 21:33:37 max Exp $
+# $FreeBSD: ports/textproc/nfbtrans/Makefile,v 1.7 2000/02/18 06:53:06 max Exp $
 #
 
-DISTNAME=	nfbtr755
-PKGNAME=	nfbtrans-7.55
+PORTNAME=	nfbtrans
+PORTVERSION= 	7.55
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://nfb.org/braille/nfbtrans/
+DISTNAME=	nfbtr755
 EXTRACT_SUFX=	.exe
 
 MAINTAINER=	max@FreeBSD.org

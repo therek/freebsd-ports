@@ -1,12 +1,12 @@
 # New ports collection makefile for:	 latex2html
-# Version required:	98.1
 # Date created:		3 May 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.10 1999/08/31 02:09:30 peter Exp $
+# $FreeBSD: ports/textproc/latex2html/Makefile,v 1.11 1999/09/09 03:03:19 cpiazza Exp $
 #
 
-DISTNAME=	latex2html-98.1p1
+PORTNAME=	latex2html
+PORTVERSION= 	98.1p1
 CATEGORIES=	textproc
 MASTER_SITES=	http://www-dsed.llnl.gov/files/programs/unix/latex2html/sources/ \
 		ftp://ftp.mpn.com/pub/nikos/latex2html-mirror/sources/

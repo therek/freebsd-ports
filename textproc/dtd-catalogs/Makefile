@@ -1,12 +1,12 @@
 # New ports collection makefile for:	dtd-catalogs
-# Version required:	1.0
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/textproc/dtd-catalogs/Makefile,v 1.4 1999/08/31 02:09:12 peter Exp $
+# $FreeBSD: ports/textproc/dtd-catalogs/Makefile,v 1.5 1999/08/31 06:51:13 mharo Exp $
 #
 
-DISTNAME=	dtd-catalogs-1.0
+PORTNAME=	dtd-catalogs
+PORTVERSION=	1.0
 CATEGORIES=	textproc
 MASTER_SITES=	# empty
 DISTFILES=	# empty

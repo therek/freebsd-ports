@@ -1,12 +1,12 @@
 # New ports collection makefile for:	chpp
-# Version required:			0.3.5
 # Date created:				4 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/textproc/chpp/Makefile,v 1.2 2000/02/08 09:29:15 peter Exp $
+# $FreeBSD: ports/textproc/chpp/Makefile,v 1.3 2000/03/29 07:16:44 kris Exp $
 #
 
-DISTNAME=	chpp-0.3.5
+PORTNAME=	chpp
+PORTVERSION= 	0.3.5
 CATEGORIES=	textproc
 MASTER_SITES=	http://people.FreeBSD.org/~andy/distfiles/
 

@@ -1,16 +1,15 @@
 # New ports collection makefile for: br-ispell
-# URL: http://www.ime.usp.br/~ueda/br.ispell/
-# Version required:     2.4
 # Date created:         5 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/textproc/br-ispell/Makefile,v 1.3 1999/08/31 02:08:58 peter Exp $
+# $FreeBSD: ports/textproc/br-ispell/Makefile,v 1.4 1999/11/14 01:57:11 steve Exp $
 #
 
-DISTNAME=	br.ispell-2.4
-PKGNAME=	br-ispell-2.4
+PORTNAME=	br-ispell
+PORTVERSION= 	2.4
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.ime.usp.br/pub/ueda/br.ispell/
+DISTNAME=	br.ispell-2.4
 
 MAINTAINER=	jonny@jonny.eng.br
 

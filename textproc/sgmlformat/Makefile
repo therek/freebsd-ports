@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sgmlformat
-# Version required:	1.7
 # Date created:		July 16, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.14 1999/08/31 02:09:44 peter Exp $
+# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.15 1999/08/31 06:51:28 mharo Exp $
 #
 
-DISTNAME=	sgmlformat-1.7
+PORTNAME=	sgmlformat
+PORTVERSION= 	1.7
 CATEGORIES=	textproc print
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 

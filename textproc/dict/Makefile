@@ -1,17 +1,19 @@
 # ex:ts=8
 # Ports collection makefile for:  dict
-# Version required: 0.0
 # Date created:			  19 February 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/dict/Makefile,v 1.11 2000/03/20 02:36:17 obrien Exp $
+# $FreeBSD: ports/textproc/dict/Makefile,v 1.12 2000/03/22 00:26:48 obrien Exp $
 #
 
+PORTNAME=	dict
+PORTVERSION= 	1.4.9
 DISTNAME=	dictd-1.4.9
 PKGNAME=	dict-1.4.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.cs.unc.edu/pub/users/faith/dict/ \
 		ftp://ftp.dict.org/pub/dict/
+DISTNAME=	${PORTNAME}d-${PORTVERSION}
 
 MAINTAINER=	obrien@FreeBSD.org
 

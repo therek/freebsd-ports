@@ -1,12 +1,12 @@
 # New ports collection makefile for:	sp
-# Version required:	1.3
 # Date created:		April 26, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sp/Makefile,v 1.13 1999/12/29 08:22:48 steve Exp $
+# $FreeBSD: ports/textproc/sp/Makefile,v 1.14 2000/01/15 06:07:22 chuckr Exp $
 #
 
-DISTNAME=	sp-1.3.4
+PORTNAME=	sp
+PORTVERSION= 	1.3.4
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.jclark.com/pub/sp/
 

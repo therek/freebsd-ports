@@ -1,13 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  urlview
-# Version required: 0.0
 # Date created:			  21 April 1998
 # Whom:				  Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/urlview/Makefile,v 1.8 2000/03/20 02:37:26 obrien Exp $
+# $FreeBSD: ports/textproc/urlview/Makefile,v 1.9 2000/03/22 00:27:56 obrien Exp $
 #
 
-DISTNAME=	urlview-0.7
+PORTNAME=	urlview
+PORTVERSION= 	0.7
 CATEGORIES=	textproc www
 MASTER_SITES=	ftp://ftp.cs.hmc.edu/pub/me/ \
 		ftp://ftp.cs.tu-berlin.de/pub/net/mail/mutt/ \

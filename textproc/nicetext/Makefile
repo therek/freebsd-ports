@@ -1,11 +1,11 @@
 # New ports collection makefile for:	nicetext
-# Version required:	0.9
 # Date created:		20 February 1998
 # Whom:			Mark Chapman <markc@ctgi.net>
 #
-# $FreeBSD: ports/textproc/nicetext/Makefile,v 1.5 2000/01/31 05:12:22 cpiazza Exp $
+# $FreeBSD: ports/textproc/nicetext/Makefile,v 1.6 2000/01/31 05:15:05 cpiazza Exp $
 
-DISTNAME=	nicetext-0.9
+PORTNAME=	nicetext
+PORTVERSION= 	0.9
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ctgi.net/pub/ctgi/nicetext/src/ \
 		ftp://nicetext.com/pub/nicetext/src/

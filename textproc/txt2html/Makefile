@@ -1,12 +1,12 @@
 # New ports collection makefile for:    txt2html
-# Version required:     1.27
 # Date created:         29 Jun 1998
 # Whom:                 Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.2 1999/08/31 02:09:50 peter Exp $
+# $FreeBSD: ports/textproc/txt2html/Makefile,v 1.3 2000/04/01 20:13:38 mharo Exp $
 #
 
-DISTNAME=	txt2html-1.27
+PORTNAME=	txt2html
+PORTVERSION= 	1.27
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.aigeek.com/txt2html/
 

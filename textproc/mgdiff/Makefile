@@ -1,16 +1,16 @@
 # New ports collection makefile for:    mgdiff
-# Version required:     		1.0
 # Date created:         		22 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.6 1999/08/31 02:09:34 peter Exp $
 #
 
-DISTNAME=	mgdiff
-PKGNAME=	mgdiff-1.0
+PORTNAME=	mgdiff
+PORTVERSION= 	1.0
 CATEGORIES=	textproc
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	andreas@marvin.robin.de
 

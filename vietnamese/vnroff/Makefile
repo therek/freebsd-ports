@@ -1,14 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  vnTeX
-# Version required: 0.0
 # Date created:		Monday, Dec 9, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.9 2000/03/20 02:37:32 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.10 2000/03/22 00:28:03 obrien Exp $
 #
 
-DISTNAME=	vnroff
-PKGNAME=	vi-vnroff-2.0
+PORTNAME=	vi-vnroff
+PORTVERSION= 	2.0
 CATEGORIES=	vietnamese print
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Troff/
 DISTFILES=	vnroff.c.Z vnroff.1.Z

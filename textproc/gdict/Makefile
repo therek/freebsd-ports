@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gdict
-# Version required:		0.7
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/textproc/gdict/Makefile,v 1.5 1999/12/10 19:42:26 kris Exp $
+# $FreeBSD: ports/textproc/gdict/Makefile,v 1.6 2000/01/09 09:38:45 cpiazza Exp $
 #
 
-DISTNAME=	gdict-0.7
+PORTNAME=	gdict
+PORTVERSION= 	0.7
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.psilord.com/code/gdict/
 

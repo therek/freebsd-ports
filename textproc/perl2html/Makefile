@@ -1,12 +1,12 @@
 # New ports collection makefile for:	perl2html
-# Version required:			0.7.2
 # Date created:				27 May 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/perl2html/Makefile,v 1.3 1999/09/28 01:30:21 dan Exp $
+# $FreeBSD: ports/textproc/perl2html/Makefile,v 1.4 1999/12/25 01:37:56 steve Exp $
 #
 
-DISTNAME=		perl2html-0.7.2
+PORTNAME=		perl2html
+PORTVERSION= 		0.7.2
 CATEGORIES=		textproc www
 MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters

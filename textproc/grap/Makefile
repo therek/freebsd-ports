@@ -1,12 +1,12 @@
 # New ports collection makefile for:   grap
-# Version required:    1.02
 # Date created:        4 February 2000
 # Whom:                faber@lunabase.org
 #
-# $FreeBSD: ports/textproc/grap/Makefile,v 1.6 2000/02/22 14:17:01 imura Exp $
+# $FreeBSD: ports/textproc/grap/Makefile,v 1.7 2000/03/11 14:20:07 jedgar Exp $
 #
 
-DISTNAME=	grap-1.02
+PORTNAME=	grap
+PORTVERSION= 	1.02
 CATEGORIES=	textproc graphics
 MASTER_SITES=	http://www.lunabase.org/~faber/Vault/software/grap/
 

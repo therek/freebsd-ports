@@ -1,12 +1,12 @@
 # New ports collection makefile for:	hevea
-# Version required:	1.0.4
 # Date created:		November 28 1999
 # Whom:			Stephen Montgomery-Smith <stephen@math.missouri.edu>
 #
-# $FreeBSD: ports/textproc/hevea/Makefile,v 1.1 1999/12/25 16:17:03 steve Exp $
+# $FreeBSD: ports/textproc/hevea/Makefile,v 1.2 2000/01/24 06:14:41 steve Exp $
 #
 
-DISTNAME=		hevea-1.04
+PORTNAME=		heavea
+PORTVERSION= 		1.04
 CATEGORIES=		textproc
 MASTER_SITES=		ftp://ftp.inria.fr/INRIA/Projects/para/hevea/
 

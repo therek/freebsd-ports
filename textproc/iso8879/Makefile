@@ -1,15 +1,15 @@
 # New ports collection makefile for:	iso8879
-# Version required:	1986
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.11 1999/08/31 02:09:25 peter Exp $
+# $FreeBSD: ports/textproc/iso8879/Makefile,v 1.12 1999/08/31 06:51:17 mharo Exp $
 #
 
-DISTNAME=	isoENTS
-PKGNAME=	iso8879-1986
+PORTNAME=	iso8879
+PORTVERSION= 	1986
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
+DISTNAME=	isoENTS
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	jfieber@FreeBSD.org

@@ -1,12 +1,12 @@
 # New ports collection makefile for:   htdig
-# Version required:    3.1.5
 # Date created:        18 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/textproc/htdig/Makefile,v 1.14 2000/02/28 19:05:37 billf Exp $
+# $FreeBSD: ports/textproc/htdig/Makefile,v 1.15 2000/03/04 08:24:21 kris Exp $
 #
 
-DISTNAME=	htdig-3.1.5
+PORTNAME=	htdig
+PORTVERSION= 	3.1.5
 CATEGORIES=	textproc www
 MASTER_SITES=	http://www.htdig.org/files/ \
 		${MASTER_SITE_SUNSITE} \

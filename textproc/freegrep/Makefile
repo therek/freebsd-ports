@@ -1,17 +1,17 @@
 # New ports collection makefile for:	grep
-# Version required:	0.15
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.13 1999/11/05 17:53:51 cpiazza Exp $
+# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.14 2000/01/08 03:51:11 cpiazza Exp $
 #
 
-DISTNAME=	grep-0.15
-PKGNAME=	freegrep-0.15
+PORTNAME=	freegrep
+PORTVERSION= 	0.15
 CATEGORIES=	textproc
 MASTER_SITES=	ftp://ftp.wam.umd.edu/pub/howardjp/software/grep/ \
 		http://www.wam.umd.edu/~howardjp/software/grep/ \
 		ftp://dragon.ham.muohio.edu/pub/howardjp/software/grep/
+DISTNAME=	grep-${PORTVERSION}
 
 MAINTAINER=	howardjp@wam.umd.edu
 

@@ -1,15 +1,15 @@
 # New ports collection makefile for:	gaspell
-# Version required:			0.29.1
 # Date created:				17th February 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/gaspell/Makefile,v 1.1 2000/02/18 02:18:31 ade Exp $
 #
 
-DISTNAME=	gaspell-.29.1
-PKGNAME=	gaspell-0.29.1
+PORTNAME=	gaspell
+PORTVERSION= 	0.29.1
 CATEGORIES=	textproc gnome
 MASTER_SITES=	http://aspell.sourceforge.net/
+DISTNAME=	${PORTNAME}-.29.1
 
 MAINTAINER=	ade@FreeBSD.org
 

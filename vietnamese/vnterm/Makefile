@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:    vnterm
-# Version required: 0.0
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.16 2000/03/20 02:37:33 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.17 2000/03/22 00:28:04 obrien Exp $
 #
 
-DISTNAME=	vnterm3.3
-PKGNAME=	vi-vnterm-3.3
+PORTNAME=	vi-vnterm
+PORTVERSION= 	3.3
 CATEGORIES=	vietnamese x11
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/
+DISTNAME=	vnterm3.3
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org

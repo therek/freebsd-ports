@@ -1,17 +1,17 @@
 # ex:ts=8
 # Ports collection makefile for:    vnpstext
-# Version required: 0.0
 # Date created:         Sat Dec 7, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.11 2000/03/20 02:37:31 obrien Exp $
+# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.12 2000/03/22 00:28:02 obrien Exp $
 #
 
-DISTNAME=	vnpstext
-PKGNAME=	vi-vnpstext-1.1
+PORTNAME=	vi-vnpstext
+PORTVERSION= 	1.1
 CATEGORIES=	vietnamese print
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/
+DISTNAME=	vnpstext
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	obrien@FreeBSD.org

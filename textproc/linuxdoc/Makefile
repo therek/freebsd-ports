@@ -1,12 +1,12 @@
 # New ports collection makefile for:	linuxdoc
-# Version required:	1.1
 # Date created:		July 8, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.8 1999/08/31 02:09:31 peter Exp $
+# $FreeBSD: ports/textproc/linuxdoc/Makefile,v 1.9 1999/08/31 06:51:20 mharo Exp $
 #
 
-DISTNAME=	linuxdoc-1.1
+PORTNAME=	linuxdoc
+PORTVERSION= 	1.1
 CATEGORIES=	textproc
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 

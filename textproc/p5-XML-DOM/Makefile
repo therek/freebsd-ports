@@ -1,16 +1,16 @@
 # New ports collection makefile for:	XML::DOM
-# Version required:	1.25
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.1.1.1 1999/11/07 11:06:43 kuriyama Exp $
+# $FreeBSD: ports/textproc/p5-XML-DOM/Makefile,v 1.2 1999/11/10 12:46:37 kuriyama Exp $
 #
 
-DISTNAME=	XML-DOM-1.25
-PKGNAME=	p5-XML-DOM-1.25
+PORTNAME=	p5-XML-DOM
+PORTVERSION= 	1.25
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/id/E/EN/ENNO
+DISTNAME=	XML-DOM-1.25
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
