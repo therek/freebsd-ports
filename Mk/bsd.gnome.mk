@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.43 2003/06/16 21:09:18 adamw Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.44 2003/06/16 22:35:59 adamw Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -365,7 +365,7 @@ libgnomedb_USE_GNOME_IMPL=libgnomeui libgda2
 
 gtksourceview_LIB_DEPENDS=	gtksourceview-1.0.0:${PORTSDIR}/x11-toolkits/gtksourceview
 gtksourceview_DETECT=	${X11BASE}/libdata/pkgconfig/gtksourceview-1.0.pc
-gtksourceview_USE_GNOME_IMPL=libgnome
+gtksourceview_USE_GNOME_IMPL=libgnome libgnomeprintui
 
 pkgconfig_BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 pkgconfig_DETECT=			${LOCALBASE}/bin/pkg-config
