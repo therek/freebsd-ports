@@ -2,11 +2,11 @@
 # Date created:				13 June 1999
 # Whom:					Stephen J. Roznowski <sjr@home.net>
 #
-# $FreeBSD: ports/net/p5-SNMP_Session/Makefile,v 1.14 2001/08/22 23:06:40 petef Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	SNMP_Session
-PORTVERSION=	0.89
+PORTVERSION=	0.90
 CATEGORIES=	net perl5
 MASTER_SITES=	ftp://ftp.switch.ch/software/sources/network/snmp/perl/%SUBDIR%/
 MASTER_SITE_SUBDIR=	. old
