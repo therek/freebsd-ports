@@ -2,7 +2,7 @@
 # Date created:				10 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/java/jdk12-beta/Makefile,v 1.1 2000/10/13 12:41:25 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -34,6 +34,7 @@ JDK11DIR?=	${LOCALBASE}/jdk1.1.8
 JFC11DIR?=	${WRKDIRPREFIX}${.CURDIR}/../../java/jfc/work/swing-1.1.1fcs
 JDK12DIR?=	${LOCALBASE}/linux-jdk${JDK_VERSION}
 
+ONLY_FOR_ARCHS=	i386
 USE_GMAKE=	yes
 RESTRICTED=	"Redistribution of pre-compiled binaries isn't permitted"
 MAKEFILE=	GNUmakefile
