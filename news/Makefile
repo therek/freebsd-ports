@@ -1,10 +1,11 @@
-# $FreeBSD: ports/news/Makefile,v 1.62 2001/02/01 14:25:13 clive Exp $
+# $FreeBSD: ports/news/Makefile,v 1.63 2001/02/17 16:35:06 ijliao Exp $
 #
 
     SUBDIR += atp
     SUBDIR += aub
     SUBDIR += bgrab
     SUBDIR += c-nocem
+    SUBDIR += cleanfeed
     SUBDIR += cnews
     SUBDIR += dejasearch
     SUBDIR += diablo
