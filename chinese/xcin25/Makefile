@@ -2,12 +2,12 @@
 # Date created:		18 Oct 1999
 # Whom:			Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.23 2000/09/19 15:02:57 ade Exp $
+# $FreeBSD: ports/chinese/xcin25/Makefile,v 1.24 2000/09/19 15:03:33 ade Exp $
 #
 
 PORTNAME=	xcin
 PORTVERSION=	2.5.2p5
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	chinese x11
 MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/xcin/devel/
 DISTNAME=	xcin-2.5.2-pre5
