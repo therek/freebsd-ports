@@ -3,14 +3,15 @@
 # Date created:         Wed Nov  3 17:58:26 MST 1999
 # Whom:                 John Reynolds <jjreynold@home.com>
 #
-# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.4 1999/12/22 19:20:51 jedgar Exp $
+# $FreeBSD: ports/sysutils/flexbackup/Makefile,v 1.5 1999/12/23 21:17:18 steve Exp $
 #
 
 DISTNAME=	flexbackup-0.9.8
 CATEGORIES=	sysutils
 MASTER_SITES=	http://www.bluecherry.net/~edwinh/flexbackup/tarball/ \
 		http://members.home.com/flexbackup/tarball/ \
-		http://metalab.unc.edu/pub/linux/system/backup/
+		${MASTER_SITE_SUNSITE}
+MASTER_SITE_SUBDIR=	system/backup
 
 MAINTAINER=     jjreynold@home.com
 
@@ -21,16 +22,16 @@ NO_BUILD  = yes
 USE_PERL5 = yes
 
 post-configure:
-	@cp ${WRKSRC}/flexbackup.conf ${WRKSRC}/flexbackup.conf.sample
-	@cp ${WRKSRC}/README ${WRKSRC}/flexbackup.README
+	@${CP} ${WRKSRC}/flexbackup.conf ${WRKSRC}/flexbackup.conf.sample
+	@${CP} ${WRKSRC}/README ${WRKSRC}/flexbackup.README
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/flexbackup ${PREFIX}/bin
-	${MKDIR} ${PREFIX}/share/flexbackup
-	${INSTALL_DATA} ${WRKSRC}/flexbackup.conf.sample ${PREFIX}/share/flexbackup
-	${INSTALL_DATA} ${WRKSRC}/flexbackup.README ${PREFIX}/share/flexbackup
+	${MKDIR} ${PREFIX}/share/doc/flexbackup
+	${INSTALL_DATA} ${WRKSRC}/flexbackup.conf.sample ${PREFIX}/share/doc/flexbackup
+	${INSTALL_DATA} ${WRKSRC}/flexbackup.README ${PREFIX}/share/doc/flexbackup
 
 post-install:
-	@cat ${PKGDIR}/MESSAGE
+	@${CAT} ${PKGDIR}/MESSAGE | ${SED} -e 's:%%PREFIX%%:${PREFIX}:g'
 
 .include <bsd.port.mk>
