@@ -2,7 +2,7 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib13/Makefile,v 1.32 2000/06/16 21:49:55 asami Exp $
+# $FreeBSD: ports/devel/glib13/Makefile,v 1.33 2000/07/18 07:19:51 sobomax Exp $
 #
 
 PORTNAME=	glib
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.gimp.org/pub/gtk/v1.3/ \
 		http://www.ameth.org/gimp/gtk/v1.3/
 
 MAINTAINER=	vanilla@FreeBSD.org
+
+NO_LATEST_LINK=	"Unstable, development version."
 
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
