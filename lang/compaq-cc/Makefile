@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.2 2000/12/08 13:27:29 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.3 2000/12/08 13:54:04 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -39,7 +39,7 @@ do-install:
 	@if [ -z "`kldstat -v | ${GREP} -E 'linux'`" ]; then \
 		${ECHO} 'AlphaLinux  mode is not enabled.\
 			Loading AlphaLinux kernel module...' | fmt; \
-		lkdload linux || { \
+		kldload linux || { \
 		${ECHO} 'The AlphaLinux kernel module could not be loaded.\
 			Please manually load the module and retry.\
 			See "man linux" for details.' | fmt; \
