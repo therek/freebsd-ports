@@ -3,7 +3,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.19 1999/08/25 05:25:07 obrien Exp $
 #
 
 DISTNAME=	kterm-6.2.0
@@ -66,7 +66,7 @@ post-patch:
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/kterm ${PREFIX}/bin/kterm16c
-	@${INSTALL_DATA} ${WRKSRC}/KTerm.ad ${PREFIX}/lib/X11/app-defaults/KTerm.16-colors
+	@${INSTALL_DATA} ${WRKSRC}/KTerm.ad ${PREFIX}/lib/X11/app-defaults/KTerm
 	@${INSTALL_DATA} ${WRKDIR}/pcemu1.01alpha/vga.pcf.gz \
 		${PREFIX}/lib/X11/fonts/misc
 	@mkfontdir ${PREFIX}/lib/X11/fonts/misc
