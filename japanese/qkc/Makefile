@@ -2,14 +2,13 @@
 # Date created:			03 May 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/qkc/Makefile,v 1.13 1999/08/31 06:46:18 mharo Exp $
+# $FreeBSD: ports/japanese/qkc/Makefile,v 1.14 2000/04/12 14:37:26 knu Exp $
 #
 
 PORTNAME=	qkc
 PORTVERSION=	1.0
 CATEGORIES=	japanese
-MASTER_SITES=	ftp://ftp.lab.kdd.co.jp/Usenet/fj.sources/1995/oct/ \
-		ftp://ftp.iis.u-tokyo.ac.jp/pub1/unix/Kanji/
+MASTER_SITES=	http://hp.vector.co.jp/authors/VA000501/
 DISTNAME=	${PORTNAME}c100
 
 MAINTAINER=	max@FreeBSD.org
