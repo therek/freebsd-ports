@@ -2,11 +2,11 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.41 2000/10/08 10:09:39 asami Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.42 2000/12/08 20:08:59 jmz Exp $
 #
 
 PORTNAME?=	ispell
-PORTVERSION?= 	3.1.20c
+PORTVERSION?=	3.1.20c
 CATEGORIES+=	textproc elisp
 MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/ \
 		ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
@@ -78,10 +78,10 @@ EXTRA_DICT+=	${DEALTDISTFILE}
 MASTER_SITES+=	ftp://ftp.informatik.uni-kiel.de/pub/kiel/dicts/
 .endif
 .if defined(ISPELL_NO)
-NODISTFILE=    ispell-norsk-1.1a.tar.gz
-MASTER_SITES+= http://www.uio.no/~runekl/
-EXTRA_DICT+=   ${NODISTFILE}
-MASKBITS?=     64
+NODISTFILE=	ispell-norsk-1.1a.tar.gz
+MASTER_SITES+=	http://www.uio.no/~runekl/
+EXTRA_DICT+=	${NODISTFILE}
+MASKBITS?=	64
 .endif
 
 DISTFILES+=	${EXTRA_DICT}
