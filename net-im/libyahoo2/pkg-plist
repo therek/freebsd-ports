@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/libyahoo2/pkg-plist,v 1.3 2003/06/10 16:24:30 naddy Exp $
+@comment $FreeBSD: ports/net/libyahoo2/pkg-plist,v 1.4 2003/10/01 10:36:35 krion Exp $
 include/libyahoo2/yahoo2.h
 include/libyahoo2/yahoo2_callbacks.h
 include/libyahoo2/yahoo2_types.h
@@ -6,6 +6,6 @@ include/libyahoo2/yahoo_httplib.h
 include/libyahoo2/yahoo_list.h
 lib/libyahoo2.a
 lib/libyahoo2.so
-lib/libyahoo2.so.5
+lib/libyahoo2.so.7
 libdata/pkgconfig/libyahoo2.pc
 @dirrm include/libyahoo2
