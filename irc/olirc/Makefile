@@ -1,14 +1,14 @@
 # New ports collection makefile for:	olirc
-# Version required:	0.0.35
+# Version required:	0.0.37
 # Date created:		Sat Jul 24 03:04:46 MET DST 1999
 # Whom:			Juergen Lock <nox@jelal.kn-bremen.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/irc/olirc/Makefile,v 1.2 1999/08/25 06:12:51 obrien Exp $
 #
 
-DISTNAME=	olirc-0.0.35
+DISTNAME=	olirc-0.0.37
 CATEGORIES=	irc
-MASTER_SITES=	http://altern.org/olirc/sources/
+MASTER_SITES=	http://olirc.hexanet.fr/
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
