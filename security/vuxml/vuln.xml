@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.154 2004/07/22 23:30:11 eik Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.155 2004/07/27 11:45:05 des Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -90,7 +90,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </description>
     <references>
       <cvename>CAN-2004-0640</cvename>
-      <url>http://www.idefense.com/application/poi/display?id=114&type=vulnerabilities</url>
+      <url>http://www.idefense.com/application/poi/display?id=114&amp;type=vulnerabilities</url>
     </references>
     <dates>
       <discovery>2003-04-03</discovery>
