@@ -3,13 +3,15 @@
 # Date created:				16 October 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/le/Makefile,v 1.14 2000/12/29 15:50:39 kevlo Exp $
+# $FreeBSD: ports/editors/le/Makefile,v 1.15 2001/02/14 14:29:37 kevlo Exp $
 #
 
 PORTNAME=	le
-PORTVERSION=	1.6.3
+PORTVERSION=	1.7.1
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/util/texteditors/
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		ftp://ftp.yars.free.net/pub/software/unix/util/texteditors/
+MASTER_SITE_SUBDIR=	pub/Linux/apps/editors/terminal
 
 MAINTAINER=	ports@FreeBSD.org
 
