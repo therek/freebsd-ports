@@ -2,7 +2,7 @@
 # Date created:				23 February 2000
 # Whom:					rbt@zort.on.ca
 #
-# $FreeBSD: ports/audio/pimp3/Makefile,v 1.6 2001/04/03 03:59:57 lioux Exp $
+# $FreeBSD: ports/audio/pimp3/Makefile,v 1.7 2001/04/03 04:32:14 lioux Exp $
 #
 
 PORTNAME=	pimp3
@@ -13,6 +13,9 @@ MASTER_SITES=	ftp://pimp3.sourceforge.net/pub/pimp3/
 MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	mpg123:${PORTSDIR}/audio/mpg123
+
+BROKEN=		Requires gdbm support which is not built\
+		by default by python
 
 WRKSRC=		${WRKDIR}/pimp3
 
