@@ -1,5 +1,5 @@
 
-$FreeBSD: ports/converters/libiconv/files/patch-configure,v 1.1 2002/04/30 08:07:33 sobomax Exp $
+$FreeBSD: ports/converters/libiconv/files/patch-configure,v 1.2 2003/06/11 17:48:42 marcus Exp $
 
 --- configure.orig	Fri May 23 05:19:20 2003
 +++ configure	Fri May 30 11:22:14 2003
@@ -11,11 +11,3 @@ $FreeBSD: ports/converters/libiconv/files/patch-configure,v 1.1 2002/04/30 08:07
  
  
  ac_ext=c
-@@ -19236,6 +19235,7 @@
- 
- # This can be used to rebuild libtool when needed
- LIBTOOL_DEPS="$ac_aux_dir/ltmain.sh"
-+$ac_aux_dir/ltconfig $LIBTOOL_DEPS
- 
- # Always use our own libtool.
- LIBTOOL='$(SHELL) $(top_builddir)/libtool'
