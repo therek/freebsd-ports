@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.429 2004/05/09 09:49:03 hrs Exp $
+# $FreeBSD: ports/MOVED,v 1.430 2004/05/11 22:38:15 linimon Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1079,4 +1079,5 @@ net/hawk||2004-05-07|Removed broken port
 japanese/tgif2tex|print/tgif2tex|2004-05-09|renamed
 www/caudium-devel|www/caudium12|2004-05-11|development version temporarily retired
 lang/pike74|lang/pike76|2004-05-11|replaced by newer development version
+russian/xxkb|x11/xxkb|2004-05-12|better category
 
