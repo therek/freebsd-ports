@@ -2,11 +2,11 @@
 # Date created:				20 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sdl_image/Makefile,v 1.1 2000/09/20 07:16:52 sobomax Exp $
+# $FreeBSD: ports/graphics/sdl_image/Makefile,v 1.2 2000/09/28 12:08:38 sobomax Exp $
 #
 
 PORTNAME=	sdl_image
-PORTVERSION=	1.0.10
+PORTVERSION=	1.1.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libsdl.org/projects/SDL_image/src/
 DISTNAME=	SDL_image-${PORTVERSION}
