@@ -2,7 +2,7 @@
 # Date created:				16 November 2000
 # Whom:					eric
 #
-# $FreeBSD: ports/www/skipstone/Makefile,v 1.5 2001/06/21 21:24:38 eric Exp $
+# $FreeBSD: ports/www/skipstone/Makefile,v 1.6 2001/07/25 22:51:24 eric Exp $
 #
 
 PORTNAME=	skipstone
@@ -14,7 +14,8 @@ MAINTAINER=	eric@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/include/mozilla/gtkmozembed.h:${PORTSDIR}/www/mozilla-headers \
 		${X11BASE}/lib/mozilla-embedded/libgtkembedmoz.so:${PORTSDIR}/www/mozilla-embedded
-RUN_DEPENDS=	${X11BASE}/lib/mozilla-embedded/libgtkembedmoz.so:${PORTSDIR}/www/mozilla-embedded
+RUN_DEPENDS=	${X11BASE}/lib/mozilla-embedded/libgtkembedmoz.so:${PORTSDIR}/www/mozilla-embedded \
+		wget:${PORTSDIR}/ftp/wget
 
 USE_GTK=	yes
 USE_GMAKE=	yes
