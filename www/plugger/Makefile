@@ -3,7 +3,7 @@
 # Date created:		11 Februrary 1999
 # Whom:			Jay Sachs <sachs@cs.williams.edu>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/plugger/Makefile,v 1.2 1999/08/31 02:43:12 peter Exp $
 #
 
 DISTNAME=	plugger-3.0
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} unix-sdk-3.0b5.tar.Z
 
 MAINTAINER=	sachs@cs.williams.edu
 
-RUN_DEPENDS=	${LOCALBASE}/lib/netscape/plugins:${PORTSDIR}/www/netscape46-navigator
+RUN_DEPENDS=	${LOCALBASE}/lib/netscape/plugins:${PORTSDIR}/www/netscape47-navigator
 
 MAN7=		plugger.7
 MANCOMPRESSED=	no
