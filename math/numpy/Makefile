@@ -2,7 +2,7 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.19 2000/04/14 07:20:21 asami Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.20 2000/04/19 10:41:02 tg Exp $
 #
 
 PORTNAME=	numeric
@@ -14,7 +14,7 @@ DISTNAME=	Numerical-${PORTVERSION}
 
 MAINTAINER=	tg@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
+BUILD_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/distutils/core.py:${PORTSDIR}/misc/py-distutils
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 
 DOCDIR=		${PREFIX}/share/doc/py-numeric

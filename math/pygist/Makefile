@@ -2,7 +2,7 @@
 # Date created:		30 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/pygist/Makefile,v 1.12 1999/08/31 06:47:52 mharo Exp $
+# $FreeBSD: ports/math/pygist/Makefile,v 1.13 2000/04/14 07:20:31 asami Exp $
 #
 
 PORTNAME=	gist
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	tg@FreeBSD.org
 
 BUILD_DEPENDS=	python:${PORTSDIR}/lang/python \
-		${PREFIX}/lib/yorick/1.4/lib/libgist.a:${PORTSDIR}/lang/yorick \
+		${LOCALBASE}/lib/yorick/1.4/lib/libgist.a:${PORTSDIR}/lang/yorick \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
 		${RNGDIR}/Ranf.py:${PORTSDIR}/math/rng
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
