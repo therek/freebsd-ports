@@ -2,7 +2,7 @@
 # Date created:        22 December 2000
 # Whom:                Ernst de Haan <ernst@jollem.com>
 #
-# $FreeBSD: ports/java/orion/Makefile,v 1.5 2001/05/18 16:24:32 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	orion
@@ -10,8 +10,10 @@ PORTVERSION=	1.4.5
 PORTREVISION=	3
 CATEGORIES=	java www
 MASTER_SITES=	ftp://ftp.sunet.se/pub/database/utils/orionserver/ \
+		${MASTER_SITE_LOCAL} \
 		http://www.jollem.com/ \
 		http://www.sebster.com/~elvis/
+MASTER_SITE_SUBDIR=	sobomax
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ernst@jollem.com
