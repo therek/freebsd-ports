@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.106 1999/10/03 21:49:32 dan Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.107 1999/11/01 03:27:45 steve Exp $
 #
 
     SUBDIR += adcomplain
@@ -90,6 +90,7 @@
     SUBDIR += wanderlust-mule
     SUBDIR += wanderlust-xemacs-mule
     SUBDIR += wanderlust-xemacs20
+    SUBDIR += wmbiff
     SUBDIR += wmmail
     SUBDIR += wmpop3
     SUBDIR += xbuffy
