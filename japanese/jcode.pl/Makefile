@@ -2,7 +2,7 @@
 # Date created:		20 February 1998
 # Whom:			sada
 #
-# $FreeBSD: ports/japanese/jcode.pl/Makefile,v 1.3 1999/08/25 05:24:25 obrien Exp $
+# $FreeBSD: ports/japanese/jcode.pl/Makefile,v 1.4 2000/04/11 14:13:55 knu Exp $
 #
 
 PORTNAME=	jcode.pl
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://ftp.iij.ad.jp/pub/IIJ/dist/utashiro/perl/ \
 		ftp://ftp.sra.co.jp/pub/lang/perl/sra-scripts/
 EXTRACT_SUFX=	# none
 
-MAINTAINER=	sada@e-mail.ne.jp
+MAINTAINER=	sada@FreeBSD.org
 
 NO_WRKSUBDIR=		yes
 NO_BUILD=		yes
