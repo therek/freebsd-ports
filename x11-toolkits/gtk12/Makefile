@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.66 2001/02/09 22:30:23 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/gtk12/Makefile,v 1.67 2001/03/06 12:30:48 vanilla Exp $
 #
 
 PORTNAME=	gtk
@@ -24,7 +24,7 @@ USE_GLIB=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
 LIBTOOLFLAGS=	--disable-ltlibs --release-suffix
-CONFIGURE_ARGS=	--includedir=${PREFIX}/include/gtk12
+CONFIGURE_ARGS=	--includedir=${PREFIX}/include/gtk12 --with-native-locale
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		X_CFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
