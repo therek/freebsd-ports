@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/radiusd-cistron/files/radiusd-cistron.sh,v 1.1 2003/07/26 18:34:55 dinoex Exp $
 #
 case "$1" in
 start)
@@ -16,8 +16,7 @@ stop)
 	fi
 	;;
 *)
-	echo ""
-	echo "Usage: $0 { start | stop }"
-	echo ""
+	echo "Usage: ${0##*/} { start | stop }" >&2
+	exit 64
 	;;
 esac

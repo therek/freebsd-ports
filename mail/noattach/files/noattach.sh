@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.5 2003/09/26 07:17:47 dinoex Exp $
+# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.6 2003/10/12 10:58:50 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/noattach
 then
@@ -30,7 +30,7 @@ reload)
 	fi
 	;;
 *)
-	echo "Usage: ${0##*/}: { start | stop | reload }" 2>&1
-	exit 65
+	echo "Usage: ${0##*/}: { start | stop | reload }" >&2
+	exit 64
 	;;
 esac

@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/sendmail/files/sendmail.sh,v 1.1 2002/04/06 08:17:34 dinoex Exp $
+# $FreeBSD: ports/mail/sendmail/files/sendmail.sh,v 1.2 2002/04/08 02:48:26 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/sbin/sendmail
 then
@@ -52,7 +52,7 @@ restart)
 	fi
 	;;
 *)
-	echo "Usage: ${0##*/}: { start | stop | restart }" 2>&1
-	exit 65
+	echo "Usage: ${0##*/}: { start | stop | restart }" >&2
+	exit 64
 	;;
 esac
