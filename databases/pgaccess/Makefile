@@ -2,7 +2,7 @@
 # Date created:		Sat Oct  4 20:03:46 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.28 2000/08/26 09:15:05 andreas Exp $
+# $FreeBSD: ports/databases/pgaccess/Makefile,v 1.29 2000/10/06 05:31:48 andreas Exp $
 #
 
 PORTNAME=	pgaccess
@@ -10,7 +10,7 @@ PORTVERSION=	0.98.6
 CATEGORIES=	databases
 MASTER_SITES=	ftp://speedy.flex.ro/pub/pgaccess/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/pgsql/bin/postmaster:${PORTSDIR}/databases/postgresql7\
 		wish8.3:${PORTSDIR}/x11-toolkits/tk83
