@@ -2,11 +2,11 @@
 # Date created:        16 April 2000
 # Whom:                Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD: ports/misc/biblereader/Makefile,v 1.1.1.1 2000/08/02 18:03:08 sada Exp $
+# $FreeBSD: ports/misc/biblereader/Makefile,v 1.2 2000/08/06 15:29:02 nbm Exp $
 #
 
 PORTNAME=	biblereader
-PORTVERSION=	0.3.1
+PORTVERSION=	0.3.2
 CATEGORIES=	deskutils
 MASTER_SITES=	ftp://ftp.whitevine.com/biblereader/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} kjv.tar.gz
