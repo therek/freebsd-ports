@@ -2,7 +2,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.53 2000/11/26 21:57:21 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.54 2001/01/01 10:15:08 will Exp $
 #
 
 PORTNAME=	ghostscript
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs601/ \
 		ftp://ftp.cs.wisc.edu/ghost/aladdin/fonts/ \
 		http://www.ozemail.com.au/~geoffk/pdfencrypt/ \
 		http://www.proaxis.com/~mgelhaus/linux/software/hp880c/1.31/ \
-		ftp://ftp.sbs.de/pub/graphics/ghostscript/pcl3/ \
+		http://home.t-online.de/home/Martin.Lottermoser/pcl3dist/ \
 		http://www.harsch.net/Download/
 DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP8XX_DRV} ${HPDJ_DRV} ${HP970_DRV}
