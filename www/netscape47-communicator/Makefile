@@ -2,11 +2,11 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.61 2000/04/15 01:21:45 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.62 2000/04/15 01:27:23 sada Exp $
 #
 
-PORTNAME=	netscape-${BROWSER_ARC}
-PORTVERSION=	${BROWSER_VER}
+PORTNAME?=	netscape-${BROWSER_ARC}
+PORTVERSION?=	${BROWSER_VER}
 
 .if !defined(PRE_MK_INCLUDED)
 .include <bsd.port.pre.mk>
