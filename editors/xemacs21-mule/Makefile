@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.29 2000/07/13 09:53:06 taoka Exp $
+# $FreeBSD: ports/editors/xemacs21-mule/Makefile,v 1.30 2000/08/01 09:18:25 shige Exp $
 #
 
 # This is the MASTER port of XEmacs Mule slave ports(japanese/xemacs${XEMACS_MAJOR_VER}-*)
@@ -17,6 +17,7 @@
 #	WITH_INPUT_METHOD : input methods(configure arguments)
 #	LIB_INPUT_METHOD  : LIB_DEPENDS list of Input Methods
 #	BUILD_INPUT_METHOD: BUILD_DEPENDS list of Input Methods
+#	WITH_XIM          : X Input Method(configure arguments)
 
 .if !defined(MULE_SLAVE) && !defined(MULE_COMMON)
 MULE_SLAVE=	yes
@@ -38,7 +39,7 @@ LIB_DEPENDS=	compface.1:${PORTSDIR}/mail/faces \
 CONFIGURE_ARGS?=${XEMACS_ARCH} \
 		--prefix=${PREFIX} \
 		--with-x11 \
-		--with-xim=no \
+		--with-xim=${WITH_XIM} \
 		--with-mule \
 		--x-includes=${X11BASE}/include \
 		--x-libraries=${X11BASE}/lib \
@@ -82,6 +83,7 @@ SITE_INCLUDES+=		${PREFIX}/include
 SITE_LIBRARIES+=	${PREFIX}/lib
 WITH_INPUT_METHOD?=	--with-canna=no --with-wnn=no --with-wnn6=no
 .endif
+WITH_XIM?=	no
 
 .if defined(MULE_SLAVE)
 pre-build:
