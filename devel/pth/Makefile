@@ -2,7 +2,7 @@
 # Date Created:			23 May 1999
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/pth/Makefile,v 1.46 2000/04/16 11:33:08 rse Exp $
+# $FreeBSD: ports/devel/pth/Makefile,v 1.47 2000/04/17 16:19:06 rse Exp $
 #
 
 PORTNAME=	pth
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	pth
 
 MAINTAINER=	rse@engelschall.com
 
+INSTALL_SHLIBS=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX} \
 		--enable-pthread \
@@ -29,8 +30,5 @@ post-build:
 
 test:
 	@cd ${WRKSRC} && ${MAKE} test
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.22 2000/04/23 17:30:22 ache Exp $
+# $FreeBSD: ports/graphics/png/Makefile,v 1.23 2000/05/19 07:05:29 cpiazza Exp $
 #
 # PLEASE update print/ghostscript5 (there's a symlink that uses a hardwired
 # png version number) when updating this port.  Thank you.
@@ -21,13 +21,12 @@ PATCHFILES=     libpng-1.0.6-patch-a.txt.gz \
 
 MAINTAINER=     ache@FreeBSD.org
 
+INSTALL_SHLIBS=	yes
+
 MAN3=           libpng.3 libpngpf.3
 MAN5=           png.5
 
 do-configure:
 	cd ${WRKSRC} && ${CP} scripts/makefile.std Makefile
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

@@ -2,7 +2,7 @@
 # Date created:		28 Dec 1994
 # Whom:			jmacd@uclink.berkeley.edu
 #
-# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.15 2000/03/01 09:56:48 tg Exp $
+# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.16 2000/04/12 06:20:28 obrien Exp $
 #
 
 PORTNAME= 	schemetoc
@@ -15,6 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 MAINTAINER=	jmacd@FreeBSD.org
 
 USE_XLIB=	yes
+INSTALL_SHLIBS=	yes
 NO_WRKSUBDIR=	yes
 MAN1=		scc.1 sci.1
 
@@ -31,8 +32,5 @@ post-extract:
 post-patch:
 	@${PERL} -pi -e 's|%%PREFIX%%|${PREFIX}|g' ${WRKSRC}/scsc/*.sc
 	@${PERL} -pi -e 's|%%X11BASE%%|${X11BASE}|g' ${WRKSRC}/scsc/*.sc
-
-post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

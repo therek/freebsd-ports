@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl83/Makefile,v 1.31 2000/05/10 21:26:49 jseger Exp $
+# $FreeBSD: ports/lang/tcl83/Makefile,v 1.32 2000/05/31 18:17:38 hoek Exp $
 #
 
 PORTNAME=	tcl
@@ -22,6 +22,7 @@ Y2K=            http://www.scriptics.com/Y2K.html
 
 PATCH_DIST_ARGS= -d ${WRKDIR}/${DISTNAME} -E ${PATCH_DIST_STRIP}
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
@@ -420,7 +421,6 @@ MLINKS=	Access.3 Tcl_Access.3 \
 .include <bsd.port.pre.mk>
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if exists(${PKGINSTALL})
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif

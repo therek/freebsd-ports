@@ -2,7 +2,7 @@
 # Date created:         03 Oct 1997
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/plplot/Makefile,v 1.12 2000/02/02 21:23:24 jedgar Exp $
+# $FreeBSD: ports/math/plplot/Makefile,v 1.13 2000/04/14 07:20:28 asami Exp $
 #
 
 PORTNAME=	plplot
@@ -17,6 +17,7 @@ DISTNAME=       plplot4p99j
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --with-gcc=yes --with-double=yes
 
@@ -31,6 +32,5 @@ post-install:
 .else
 	${LN} -sf libplplotdX.so.4.99 ${PREFIX}/lib/libplplotdX.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.post.mk>

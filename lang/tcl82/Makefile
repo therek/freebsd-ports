@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl82/Makefile,v 1.27 2000/04/12 06:21:02 obrien Exp $
+# $FreeBSD: ports/lang/tcl82/Makefile,v 1.28 2000/05/31 20:48:00 asami Exp $
 #
 
 PORTNAME=	tcl
@@ -16,6 +16,7 @@ MAINTAINER=	jseger@FreeBSD.org
 Y2K=            http://www.scriptics.com/Y2K.html
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
+INSTALL_SHLIBS=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR}
@@ -371,7 +372,6 @@ post-extract:
 	${MV} ${WRKDIR}/${DISTNAME}/doc/InitStubs.3 \
 	      ${WRKDIR}/${DISTNAME}/doc/Tcl_InitStubs.3
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if exists(${PKGINSTALL})
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif

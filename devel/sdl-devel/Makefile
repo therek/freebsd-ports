@@ -2,7 +2,7 @@
 # Date created:				1 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.16 2000/06/06 08:05:50 sobomax Exp $
+# $FreeBSD: ports/devel/sdl-devel/Makefile,v 1.17 2000/06/06 09:36:35 sobomax Exp $
 #
 
 PORTNAME=		sdl-devel
@@ -21,6 +21,7 @@ BUILD_DEPENDS=		nasm:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=		yes
 USE_XLIB=		yes
+INSTALL_SHLIBS=		yes
 GNU_CONFIGURE=		yes
 
 CONFIGURE_ENV=		NASM="${LOCALBASE}/bin/nasm" \

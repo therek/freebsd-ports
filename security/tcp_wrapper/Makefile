@@ -2,7 +2,7 @@
 # Date created:		27 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.24 2000/04/09 18:30:41 cpiazza Exp $
+# $FreeBSD: ports/security/tcp_wrapper/Makefile,v 1.25 2000/06/02 03:18:52 will Exp $
 #
 
 PORTNAME=	tcp_wrappers
@@ -17,13 +17,14 @@ MAINTAINER=	torstenb@FreeBSD.org
 FORBIDDEN=	tcp_wrappers is in the base system
 .endif
 
+INSTALL_SHLIBS=	yes
+
 ALL_TARGET=	freebsd
 MAN3=		hosts_access.3
 MAN5=		hosts_access.5 hosts_options.5
 MAN8=		tcpd.8 tcpdchk.8 tcpdmatch.8
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@${INSTALL_DATA} ${FILESDIR}/inetd.conf.wrapped.sample ${PREFIX}/etc
 
 update:

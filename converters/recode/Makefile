@@ -2,7 +2,7 @@
 # Date created:		14 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/converters/recode/Makefile,v 1.8 1999/12/29 08:12:57 steve Exp $
+# $FreeBSD: ports/converters/recode/Makefile,v 1.9 2000/04/08 23:24:36 mharo Exp $
 #
 
 PORTNAME=	recode
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	recode
 MAINTAINER=	torstenb@FreeBSD.org
 
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 
 MAN1=		recode.1
 

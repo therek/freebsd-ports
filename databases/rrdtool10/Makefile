@@ -2,7 +2,7 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.9 2000/02/15 14:18:53 jedgar Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.10 2000/04/09 18:13:25 cpiazza Exp $
 #
 
 PORTNAME=	rrdtool
@@ -16,6 +16,7 @@ USE_PERL5=	yes
 MAKE_ENV+=	PERL=${PERL}
 
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ARGS=	--enable-shared=yes
 CONFIGURE_ENV=	PERL=${PERL}
 

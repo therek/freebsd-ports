@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.8 2000/04/12 06:21:00 obrien Exp $
+# $FreeBSD: ports/lang/tcl81-thread/Makefile,v 1.9 2000/05/31 18:17:39 hoek Exp $
 #
 
 PORTNAME=	tcl-thread
@@ -18,6 +18,7 @@ Y2K=            http://www.scriptics.com/Y2K.html
 FILE_DEPENDS=	${PORTSDIR}/lang/tcl80
 
 NO_LATEST_LINK=	yes
+INSTALL_SHLIBS=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/unix
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --enable-threads
@@ -59,7 +60,6 @@ MANCOMPRESSED=	yes
 .include <bsd.port.pre.mk>
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if exists(${PKGINSTALL})
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL}
 .endif

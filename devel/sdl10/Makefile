@@ -2,7 +2,7 @@
 # Date created:				8 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/sdl/Makefile,v 1.13 2000/05/17 11:18:27 sobomax Exp $
+# $FreeBSD: ports/devel/sdl/Makefile,v 1.14 2000/06/06 08:05:50 sobomax Exp $
 #
 
 PORTNAME=		sdl
@@ -19,6 +19,7 @@ BUILD_DEPENDS=		nasm:${PORTSDIR}/devel/nasm
 
 USE_GMAKE=		yes
 USE_XLIB=		yes
+INSTALL_SHLIBS=		yes
 GNU_CONFIGURE=		yes
 CONFIGURE_ENV=		NASM="${LOCALBASE}/bin/nasm" \
 			LOCALBASE="${LOCALBASE}"

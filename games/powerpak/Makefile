@@ -2,7 +2,7 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.13 2000/04/22 21:58:26 vanilla Exp $
+# $FreeBSD: ports/games/powerpak/Makefile,v 1.14 2000/04/23 06:48:37 vanilla Exp $
 #
 
 PORTNAME=	powerpak
@@ -17,6 +17,8 @@ LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl \
 		ttf.4:${PORTSDIR}/print/freetype
 
 MAKEFILE=	Makefile.FreeBSD
+
+INSTALL_SHLIBS=	yes
 
 post-extract:
 	@ /usr/bin/find ${WRKSRC} -type f | xargs ${PERL} -pi -e 's/\r//g'
@@ -41,8 +43,5 @@ do-install:
 .for file in ex1.c ex2.c ex3.c ex4.c ex5.c sprite.pcx
 	@ ${INSTALL_DATA} ${WRKSRC}/PowerInput/examples/${file} ${PREFIX}/share/examples/PowerPak/PowerInput
 .endfor
-
-post-install:
-	@ ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

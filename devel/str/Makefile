@@ -2,7 +2,7 @@
 # Date Created:			09 Jan 2000
 # Whom:				Ralf S. Engelschall
 #
-# $FreeBSD: ports/devel/str/Makefile,v 1.3 2000/02/21 13:14:29 rse Exp $
+# $FreeBSD: ports/devel/str/Makefile,v 1.4 2000/04/14 05:44:28 asami Exp $
 #
 
 PORTNAME=	str
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/str/ \
 MAINTAINER=	rse@engelschall.com
 
 HAS_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ARGS=	--prefix=${PREFIX}
 
 MAN1=		str-config.1
@@ -24,8 +25,5 @@ post-build:
 
 test:
 	@cd ${WRKSRC} && ${MAKE} test
-
-post-install:
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

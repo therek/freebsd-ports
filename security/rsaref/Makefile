@@ -2,7 +2,7 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD: ports/security/rsaref/Makefile,v 1.17 2000/04/21 08:18:55 mharo Exp $
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.18 2000/04/24 08:00:49 kris Exp $
 #
 
 PORTNAME=	rsaref
@@ -22,6 +22,8 @@ MAINTAINER=	kris@FreeBSD.ORG
 
 WRKSRC=		${WRKDIR}/source
 RESTRICTED=	"Contains cryptography"
+
+INSTALL_SHLIBS=	yes
 
 pre-extract:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
@@ -43,7 +45,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/librsaref.a ${WRKSRC}/librsaref.so.2 \
 		${PREFIX}/lib
 	${LN} -sf librsaref.so.2 ${PREFIX}/lib/librsaref.so
-	${LDCONFIG} -m ${PREFIX}/lib
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/rsaref
 .for file in info.txt rsaref.txt

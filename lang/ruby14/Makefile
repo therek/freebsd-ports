@@ -2,7 +2,7 @@
 # Date created:         04 September 1997
 # Whom:                 Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.19 2000/04/12 06:20:25 obrien Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.20 2000/04/25 04:34:14 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -18,6 +18,7 @@ MASTER_SITES=	ftp://ftp.netlab.co.jp/pub/lang/ruby/${BRANCH_NAME}/ \
 MAINTAINER=	yasuf@bsdclub.org
 
 GNU_CONFIGURE=	yes
+INSTALL_SHLIBS=	yes
 CONFIGURE_ARGS=	--enable-shared
 MAN1=		ruby.1
 PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
@@ -63,7 +64,6 @@ post-install:
 	${MKDIR} ${DOCDIR}/readline
 	${INSTALL_DATA} ${WRKSRC}/ext/readline/README ${DOCDIR}/readline
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	@${CAT} ${PKGMESSAGE}
 
 test:

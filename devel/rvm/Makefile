@@ -2,7 +2,7 @@
 # Date created:				Thu Apr  6 21:30:52 EDT 2000
 # Whom:					jaharkes
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/rvm/Makefile,v 1.1 2000/05/29 04:17:23 steve Exp $
 #
 
 PORTNAME=	rvm
@@ -16,5 +16,6 @@ LIB_DEPENDS=	lwp.1:${PORTSDIR}/devel/lwp
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
+INSTALL_SHLIBS=	yes
 
 .include <bsd.port.mk>
