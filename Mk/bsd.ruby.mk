@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.114 2003/03/11 07:16:24 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.115 2003/04/19 15:57:36 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -367,6 +367,8 @@ LIB_DEPENDS+=		${DEPEND_LIBRUBY}
 
 .if defined(USE_RUBY)
 .if !defined(RUBY_NO_BUILD_DEPENDS)
+EXTRACT_DEPENDS+=	${DEPEND_RUBY}
+PATCH_DEPENDS+=		${DEPEND_RUBY}
 BUILD_DEPENDS+=		${DEPEND_RUBY}
 .endif
 .if !defined(RUBY_NO_RUN_DEPENDS)
