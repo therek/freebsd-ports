@@ -2,14 +2,14 @@
 # Date created:		14 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/math/thx_1138/Makefile,v 1.6 2001/02/22 02:49:46 lioux Exp $
+# $FreeBSD: ports/math/thx_1138/Makefile,v 1.7 2001/06/22 18:39:39 lioux Exp $
 #
 
 PORTNAME=	thx_1138
 PORTVERSION=	1.0.5
 CATEGORIES=	math
-MASTER_SITES=	${MASTER_SITE_THX}
-MASTER_SITE_SUBDIR=	files/x11/scientific
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	lioux
 DISTNAME=	${PORTNAME:S,_,-,}_source-${PORTVERSION}
 
 MAINTAINER=	lioux@FreeBSD.org
@@ -19,19 +19,6 @@ BUILD_DEPENDS=	${NONEXISTENT}:${JXPORT}:configure \
 LIB_DEPENDS=	jx-1_5_3.1:${JXPORT} \
 		j2dplot-0_6_5.0:${PORTSDIR}/x11-toolkits/libj2dplot \
 		jparser-1_1_8.1:${PORTSDIR}/x11-toolkits/libjparser
-
-MASTER_SITE_THX+= \
-	ftp://ftp.cadvision.com/pub/linuxberg/%SUBDIR%/ \
-	ftp://ftp.bitcon.no/.2/linuxberg/%SUBDIR%/ \
-	ftp://ftp.fct.unl.pt/.2/linuxberg/%SUBDIR%/ \
-	ftp://ftp.datacomm.ch/.3/linuxberg/%SUBDIR%/ \
-	ftp://ftp.chemo.tuniv.szczecin.pl/dsk2/www.linuxberg.com/%SUBDIR%/ \
-	ftp://ftp.flashnet.it/mirror/8/linuxberg/%SUBDIR%/ \
-	ftp://ftp.proxad.net/mirrors/ftp.linuxberg.com/%SUBDIR%/ \
-	ftp://ftp.darenet.dk/mirrors/mirror.linuxberg.com/%SUBDIR%/ \
-	ftp://ftp.sektornet.dk/mirrors/mirror.linuxberg.com/%SUBDIR%/ \
-	ftp://ftp.uni-c.dk/mirrors/mirror.linuxberg.com/%SUBDIR%/ \
-	ftp://ftp.is.co.za/packages/linuxberg/%SUBDIR%/
 
 WRKSRC=		${WRKDIR}/JX-1.5.3
 
