@@ -1,14 +1,15 @@
 # New ports collection makefile for:	enfle
-# Version required:	19991011
+# Version required:	19991020
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuuki SAWADA <mami@whale.cc.muroran-it.ac.jp>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.4 1999/10/05 16:18:09 cpiazza Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.5 1999/10/16 19:56:51 cpiazza Exp $
 #
 
-DISTNAME=	enfle-19991011
+DISTNAME=	enfle-19991020
 CATEGORIES=	graphics
-MASTER_SITES=	http://enfle.fennel.org/
+MASTER_SITES=	http://enfle.fennel.org/ \
+		ftp://ftp.goldmoon.org:1200/pub/FreeBSD/distfiles/
 
 MAINTAINER=	mami@whale.cc.muroran-it.ac.jp
 
