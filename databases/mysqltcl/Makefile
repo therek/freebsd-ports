@@ -2,13 +2,13 @@
 # Date created:				August 31, 1999
 # Whom:					Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/databases/mysqltcl/Makefile,v 1.3 2000/07/16 19:56:56 steve Exp $
+# $FreeBSD: ports/databases/mysqltcl/Makefile,v 1.4 2001/01/21 15:40:35 dirk Exp $
 #
 
 PORTNAME=	mysqltcl
 PORTVERSION=	1.53
 CATEGORIES=	databases tcl83
-MASTER_SITES=	http://www.mysql.com/Downloads/Contrib/
+MASTER_SITES=	http://download.sourceforge.net/pub/mirrors/mysql/Downloads/Contrib/
 
 MAINTAINER=	mi@aldan.algebra.com
 
