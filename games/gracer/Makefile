@@ -2,13 +2,14 @@
 # Date created:        Fri Jul 30 20:50:16 MET DST 1999
 # Whom:                nox@jelal.kn-bremen.de
 #
-# $FreeBSD: ports/games/gracer/Makefile,v 1.10 2000/08/03 09:23:35 asami Exp $
+# $FreeBSD: ports/games/gracer/Makefile,v 1.11 2000/11/13 23:58:11 asami Exp $
 #
 
 PORTNAME= 	gracer
 PORTVERSION= 	0.1.4
 CATEGORIES=	games
-MASTER_SITES=	http://arch.comp.kyutech.ac.jp/~matsu/my_products/gtk/race/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	nox@jelal.kn-bremen.de
 
