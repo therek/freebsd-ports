@@ -3,7 +3,7 @@
 # Date created:         Thu Aug  1 10:50:57 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.10 1999/08/25 06:14:31 obrien Exp $
+# $FreeBSD: ports/graphics/mpegedit/Makefile,v 1.11 1999/09/21 01:55:37 asami Exp $
 #
 
 DISTNAME=	mpegedit_v2.2
@@ -16,7 +16,7 @@ MAINTAINER=	erich@FreeBSD.org
 BUILD_DEPENDS=	${X11BASE}/include/pbmplus.h:${PORTSDIR}/graphics/netpbm
 
 .include <bsd.port.pre.mk>
-.if ${OSVERSION} > 400002
+.if ${OSVERSION} > 400002 && ${OSVERSION} < 400012
 BROKEN=		won\'t build with egcs compiler
 .endif
 
