@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.579 2001/06/30 11:47:27 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.580 2001/06/30 11:50:33 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -258,6 +258,7 @@
     SUBDIR += mips-rtems-gcj
     SUBDIR += mips-rtems-objc
     SUBDIR += mipsel-linux-binutils
+    SUBDIR += mipsel-linux-egcs
     SUBDIR += mipsel-linux-kernel-headers
     SUBDIR += mkcmd
     SUBDIR += mkmf
