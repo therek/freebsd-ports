@@ -2,7 +2,7 @@
 # Date created:		11 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11/xmold/Makefile,v 1.7 2000/01/22 11:46:40 nakai Exp $
+# $FreeBSD: ports/x11/xmold/Makefile,v 1.8 2000/04/13 19:10:49 cpiazza Exp $
 #
 
 PORTNAME=	xmold
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}
 MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
-NO_INSTALL_MANPAGE=	yes
+NO_INSTALL_MANPAGES=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xmold ${PREFIX}/bin
