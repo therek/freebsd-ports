@@ -2,7 +2,7 @@
 # Date created:        27 September 1999
 # Whom:                Mike Muir <mmuir@es.co.nz>
 #
-# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.4 2000/04/22 10:11:48 mharo Exp $
+# $FreeBSD: ports/sysutils/consolehm/Makefile,v 1.5 2000/05/22 00:50:07 will Exp $
 #
 
 PORTNAME=	consolehm
@@ -15,5 +15,7 @@ MAINTAINER=	mmuir@es.co.nz
 
 WRKSRC=		${WRKDIR}/consolehm/consolehm
 GNU_CONFIGURE=	yes
+MAN8=		chm.8
+MANCOMPRESSED=	maybe
 
 .include <bsd.port.mk>
