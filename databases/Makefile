@@ -1,10 +1,11 @@
-# $FreeBSD: ports/databases/Makefile,v 1.130 2001/07/16 07:22:47 vanilla Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.131 2001/07/22 04:24:56 dwcjr Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += adodb
     SUBDIR += cdb
     SUBDIR += db
     SUBDIR += db3
+    SUBDIR += dbconnect
     SUBDIR += dbf2mysql
     SUBDIR += dbmetrix
     SUBDIR += dbtool
