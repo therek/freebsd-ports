@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.75 1999/09/26 22:34:49 dan Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.76 1999/09/27 17:20:16 cpiazza Exp $
 #
 
     SUBDIR += LPRng
@@ -44,6 +44,7 @@
     SUBDIR += psmisc
     SUBDIR += rdate
     SUBDIR += rtty
+    SUBDIR += roottail
     SUBDIR += sdd
     SUBDIR += setquota
     SUBDIR += skill
