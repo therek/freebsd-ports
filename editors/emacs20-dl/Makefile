@@ -3,7 +3,7 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.9 1999/08/25 05:43:36 obrien Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.10 1999/08/31 06:42:57 mharo Exp $
 #
 
 DISTNAME=	emacs-20.4
@@ -13,7 +13,7 @@ MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 
 PATCH_SITES=	http://www.etl.go.jp/~tomo/comp/emacsen/
-PATCHFILES=	emacs-20.4-dl.diff.gz
+PATCHFILES=	emacs-20.4-dl3.diff.gz
 PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	shige@FreeBSD.org
@@ -32,7 +32,13 @@ USE_XLIB=       yes
 CONFIGURE_ARGS= --with-x=no --with-pop
 .endif
 
-PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${CONFIGURE_TARGET}
+DOC_FILE=	DOC-DL-${EMACS_VER}.1
+
+PLIST_SUB=	EMACS_VER=${EMACS_VER} EMACS_ARCH=${CONFIGURE_TARGET} \
+		DOC_FILE=${DOC_FILE}
+
+SCRIPTS_ENV=	SED=${SED} MV=${MV} \
+		DOC_FILE=${DOC_FILE}
 
 .if defined(USE_XPG4)
 .if (${USE_XPG4} == "YES" || ${USE_XPG4} == "yes")
@@ -42,8 +48,10 @@ CONFIGURE_ARGS+=	--with-xpg4
 
 pre-build:
 	@${RM} -rf ${WRKSRC}/info/*
+	@${LN} -sf DOC ${WRKSRC}/etc/${DOC_FILE}
 
 do-install:
 	@${INSTALL} -c -s -m 555 -o root -g wheel ${WRKSRC}/src/emacs ${PREFIX}/bin/emacs-dl-${EMACS_VER}
+	@${INSTALL_DATA} ${WRKSRC}/etc/DOC ${PREFIX}/share/emacs/${EMACS_VER}/etc/${DOC_FILE}
 
 .include <bsd.port.mk>
