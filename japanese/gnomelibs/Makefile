@@ -2,11 +2,11 @@
 # Date created:        28 October 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/gnomelibs/Makefile,v 1.3 2001/06/23 23:41:52 nakai Exp $
+# $FreeBSD$
 #
 
 # This port does not work with another version of master port.
-#PORTVERSION=	1.4.1.1
+#PORTVERSION=	1.4.1.3
 CATEGORIES=	japanese x11 gnome
 
 MASTERDIR=	${.CURDIR}/../../x11/gnomelibs
