@@ -2,11 +2,11 @@
 # Date created:				2 June 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.9 2001/04/02 11:01:09 demon Exp $
+# $FreeBSD: ports/databases/mysql-navigator/Makefile,v 1.10 2001/04/13 08:54:52 demon Exp $
 #
 
 PORTNAME=	mysql-navigator
-PORTVERSION=	0.7.5
+PORTVERSION=	0.9.5.1
 CATEGORIES=	databases kde
 MASTER_SITES=	http://sql.kldp.org/snapshots/ \
 		ftp://sise15.mizi.com/pub/
@@ -21,6 +21,6 @@ INSTALLS_SHLIB=	yes
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/mysql_navigator ${PREFIX}/bin/
-	${INSTALL_DATA} ${WRKSRC}/lib/libmysqlnavigator.* ${PREFIX}/lib/
+	${INSTALL_DATA} ${WRKSRC}/lib/libmysqlui.* ${PREFIX}/lib/
 
 .include <bsd.port.mk>
