@@ -2,10 +2,9 @@
 # Date created:        2000.12.09
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/pips670/Makefile,v 1.1 2000/12/11 02:39:32 taoka Exp $
+# $FreeBSD$
 #
 
-PORTVERSION=	1.3
 MASTERDIR=	${.CURDIR}/../pips800
 PRTYPE=		670
 
