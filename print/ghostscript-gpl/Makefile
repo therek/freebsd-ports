@@ -2,12 +2,12 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.61 2001/01/18 07:14:11 andreas Exp $
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.62 2001/01/19 19:01:31 andreas Exp $
 #
 
 PORTNAME=	ghostscript
 PORTVERSION=	6.50
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	print
 MASTER_SITES=	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/gs650/ \
 	ftp://ftp.fh-koblenz.de/pub/Ghostscript/aladdin/fonts/ \
@@ -39,7 +39,16 @@ LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png
 
 WRKSRC=		${WRKDIR}/gs${PORTVERSION}
 ALL_TARGET=	all pcl3opts escputil
+
+.if !defined(NO_X)
 USE_XLIB=	yes
+.else
+# XXX Hack.  If you've done something like "-DNO_X" on the command line
+# (instead of NO_X=true, or similar) gmake won't pick it up.  So make sure
+# that NO_X is defined *and* has a value.
+MAKE_ENV+=	NO_X=true
+.endif
+
 USE_GMAKE=	yes
 MAKEFILE=	src/unix-gcc.mak
 PLIST_SUB=	GS_VERSION=${PORTVERSION}
