@@ -2,11 +2,12 @@
 # Date created:		14 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/groff/Makefile,v 1.27 2001/06/12 07:45:37 okazaki Exp $
+# $FreeBSD: ports/japanese/groff/Makefile,v 1.28 2001/08/04 02:15:11 horikawa Exp $
 #
 
 PORTNAME=	groff
 PORTVERSION=	1.17
+PORTREVISION=	1
 CATEGORIES=	japanese print
 MASTER_SITES=	${MASTER_SITE_LOCAL:S,%SUBDIR%,okazaki/&,} \
 		${MASTER_SITE_GNU}
@@ -27,11 +28,7 @@ USE_GMAKE=	yes
 USE_AUTOCONF=	yes
 
 CONFIGURE_ARGS=	--program-prefix=g --enable-nippon
-CONFIGURE_ENV=	INSTALL="${INSTALL}" \
-		INSTALL_PROGRAM="${INSTALL_PROGRAM}" \
-		INSTALL_SCRIPT="${INSTALL_SCRIPT}" \
-		INSTALL_DATA="${INSTALL_DATA}" \
-		INSTALL_MAN="${INSTALL_MAN}"
+CONFIGURE_ENV=	INSTALL_MAN="${INSTALL_MAN}"
 
 TMACBASE=	${WRKDIR}/tmac
 TMACDIR=	share/groff/${PORTVERSION}/tmac
