@@ -3,20 +3,20 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.73 2000/05/14 18:39:07 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.74 2000/06/20 02:37:00 obrien Exp $
 #
 
 PORTNAME?=	vim
-PORTVERSION=	5.7a
+PORTVERSION=	5.7
 CATEGORIES=	editors
-MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unreleased/unix/ \
-		ftp://ftp.nuxi.com/pub/vim/unreleased/unix/ \
-		ftp://ftp.freesoftware.com/pub/vim/unreleased/unix/ \
-		ftp://ftp.vim.org/pub/vim/unreleased/unix/  \
-		ftp://ftp.is.co.za/applications/editors/unreleased/vim/  \
-		ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unreleased/unix/  \
-		ftp://ftp.progsoc.uts.edu.au/pub/unreleased/vim/
-DISTNAME=	vim-5.7a
+MASTER_SITES=	ftp://nuxi.ucdavis.edu/pub/vim/unix/ \
+		ftp://ftp.nuxi.com/pub/vim/unix/ \
+		ftp://ftp.freesoftware.com/pub/vim/unix/ \
+		ftp://ftp.vim.org/pub/vim/unix/  \
+		ftp://ftp.is.co.za/applications/editors/vim/  \
+		ftp://ftp.prz.tu-berlin.de/pub/unix/editors/vim/unix/  \
+		ftp://ftp.progsoc.uts.edu.au/pub/vim/
+DISTNAME=	vim-5.7
 DISTFILES=	${DISTNAME}-src${EXTRACT_SUFX} ${DISTNAME}-rt${EXTRACT_SUFX}
 
 #PATCH_SITES=	${MASTER_SITES:S/unix/patches/}
