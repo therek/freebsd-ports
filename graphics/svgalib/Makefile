@@ -2,7 +2,7 @@
 # Date created:				24 August 2000
 # Whom:					sobomax@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/svgalib/Makefile,v 1.1 2000/08/25 09:08:00 sobomax Exp $
 #
 
 PORTNAME=	svgalib
@@ -14,8 +14,9 @@ MAINTAINER=	sobomax@freebsd.org
 
 USE_GMAKE=	yes
 INSTALLS_SHLIB=	yes
+CFLAGS+=	-DDEBUG
 
-ALL_TARGET=	shared
+ALL_TARGET=	shared static
 
 MAN1=		convfont.1 dumpreg.1 fix132x43.1 restorefont.1 		\
 		restorepalette.1 restoretextmode.1 runx.1 		\
@@ -107,5 +108,11 @@ MAN8=		mode3.8
 
 pre-patch:
 	${PERL} -pi -e 's.\x0D..' ${WRKSRC}/utils/gtf/*
+	${MKDIR} ${WRKSRC}/include/linux
+
+post-install:
+	${MKDIR} ${PREFIX}/include/linux
+	cd ${WRKSRC}/include/linux && \
+		${INSTALL_DATA} keyboard.h kd.h ${PREFIX}/include/linux
 
 .include <bsd.port.mk>
