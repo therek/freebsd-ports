@@ -2,13 +2,13 @@
 # Date created:				20 July 1999
 # Whom:					Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/net/rrdtool/Makefile,v 1.19 2001/03/26 10:55:29 kuriyama Exp $
+# $FreeBSD: ports/net/rrdtool/Makefile,v 1.20 2001/03/28 13:22:15 demon Exp $
 #
 
 PORTNAME=	rrdtool
-PORTVERSION=	1.0.32
+PORTVERSION=	1.0.33
 CATEGORIES=	net
-MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/rrdtool/pub/
+MASTER_SITES=	http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/
 
 MAINTAINER=	demon@FreeBSD.org
 
