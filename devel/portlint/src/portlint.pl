@@ -16,7 +16,7 @@
 # This code now mainly supports FreeBSD, but patches to update support for
 # OpenBSD and NetBSD will be accepted.
 #
-# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.33 2003/02/02 21:17:40 gerald Exp $
+# $FreeBSD: ports/devel/portlint/src/portlint.pl,v 1.34 2003/02/10 08:58:30 kris Exp $
 # $Id: portlint.pl,v 1.28.2.1 2000/04/24 02:12:36 mharo Exp $
 #
 
@@ -629,7 +629,8 @@ sub checkpatch {
 	}
 	if ($committer && $whole =~ /\$([A-Za-z0-9]+)[:\$]/) {
 		&perror("WARN: $file includes possible RCS tag \"\$$1\$\". ".
-			"use binary mode (-ko) on commit/import.");
+			"use binary mode (-ko) on commit/import.") unless
+			$1 eq $rcsidstr;
 	}
 
 	close(IN);
@@ -1525,6 +1526,11 @@ LIB_DEPENDS BUILD_DEPENDS RUN_DEPENDS FETCH_DEPENDS DEPENDS DEPENDS_TARGET
 	if ($tmp =~ /\n(fetch|extract|patch|configure|build|install):/) {
 		&perror("FATAL: direct redefinition of make target \"$1\" ".
 			"discouraged. redefine \"do-$1\" instead.");
+	}
+
+	# check for incorrect use of the pre-everything target.
+	if ($tmp =~ /\npre-everything:[^:]/) {
+		&perror("FATAL: use pre-everything:: instead of pre-everything:");
 	}
 
 	1;
