@@ -2,7 +2,7 @@
 # Date created:         9 july 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/print/musixtex/Makefile,v 1.27 2000/04/09 17:50:17 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	musixtex
@@ -20,5 +20,8 @@ NO_WRKSUBDIR=	yes
 
 pre-install:
 	${MKDIR} ${PREFIX}/share/texmf/documentation
+
+post-install:
+	@${LOCALBASE}/bin/texhash
 
 .include <bsd.port.mk>
