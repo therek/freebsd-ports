@@ -2,25 +2,26 @@
 # Date created:		8 Jan 2000
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/sysutils/pkg_remove/Makefile,v 1.2 2000/04/09 19:08:16 cpiazza Exp $
+# $FreeBSD: ports/sysutils/pkg_remove/Makefile,v 1.3 2000/04/22 10:12:59 mharo Exp $
 #
 
 PORTNAME=	pkg_remove
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.rr.iij4u.or.jp/~sada/scripts/
-DISTNAME=	pkg_remove
-EXTRACT_SUFX=	.txt
+MASTER_SITES=	# none
+DISTFILES=	# none
 
-MAINTAINER=	nakaji@tutrp.tut.ac.jp
+MAINTAINER=	nakaji@jp.freebsd.org
 
-EXTRACT_CMD=	${CP}
-EXTRACT_BEFORE_ARGS=
-EXTRACT_AFTER_ARGS=	.
-NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
+NO_WRKSUBDIR=	yes
+
+SRC=		${.CURDIR}/src
+
+do-fetch:
+	@${DO_NADA}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/pkg_remove.txt ${PREFIX}/bin/pkg_remove
+	${INSTALL_SCRIPT} ${SRC}/pkg_remove.txt ${PREFIX}/bin/pkg_remove
 
 .include <bsd.port.mk>
