@@ -2,7 +2,7 @@
 # Date created:		14 June 1997
 # Whom:			Dmitrij Tejblum <dima@tejblum.dnttm.rssi.ru>
 #
-# $FreeBSD: ports/net/sharity-light/Makefile,v 1.14 2000/04/09 18:13:33 cpiazza Exp $
+# $FreeBSD: ports/net/sharity-light/Makefile,v 1.15 2000/06/29 07:02:40 obrien Exp $
 #
 
 PORTNAME=	sharity-light
@@ -14,7 +14,7 @@ MASTER_SITES=	ftp://ftp.obdev.at/pub/Products/Sharity-Light/	\
 MASTER_SITE_SUBDIR=	dt
 DISTNAME=	Sharity-Light.1.2
 
-MAINTAINER=	dt@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 MAN8=		smbmount.8
 
