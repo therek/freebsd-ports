@@ -2,11 +2,11 @@
 # Date created:         14 Jun 1999
 # Whom:                 Oh Junseon <hollywar@mail.holywar.net>
 #
-# $FreeBSD: ports/devel/templ/Makefile,v 1.2 1999/08/25 05:50:22 obrien Exp $
+# $FreeBSD: ports/devel/templ/Makefile,v 1.3 2000/04/14 05:44:33 asami Exp $
 #
 
 PORTNAME= 	templ
-PORTVERSION=	0.2
+PORTVERSION=	0.3
 CATEGORIES= 	devel
 MASTER_SITES= 	ftp://ftp.holywar.net/pub/templ/ \
 		ftp://ftp.kr.freebsd.org/pub/FreeBSD-kr/distfiles/
