@@ -2,11 +2,11 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.9 2000/06/22 05:51:52 will Exp $
+# $FreeBSD: ports/cad/qcad/Makefile,v 1.10 2000/10/13 20:19:08 ade Exp $
 #
 
 PORTNAME=	qcad
-PORTVERSION=	1.4.4
+PORTVERSION=	1.4.6
 CATEGORIES=	cad
 MASTER_SITES=	http://www.qcad.org/archives/
 DISTNAME=	${PORTNAME}-${PORTVERSION}-src
@@ -23,14 +23,14 @@ post-patch:
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qcad ${PREFIX}/bin
 	@${MKDIR} ${PREFIX}/share/qcad
-.for dir in cur fonts hatches messages xpm
+.for dir in cur fonts hatches libraries messages xpm
 	${TAR} -C ${WRKSRC} -cf - ${dir} | \
 		${TAR} -C ${PREFIX}/share/qcad --unlink -xf -
 .endfor
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/examples/qcad
 	${TAR} -C ${WRKSRC}/examples -cf - . | \
 		${TAR} -C ${PREFIX}/share/examples/qcad --unlink -xf -
-.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/qcad
 	${TAR} -C ${WRKSRC}/doc -cf - . | \
 		${TAR} -C ${PREFIX}/share/doc/qcad --unlink -xf -
