@@ -2,7 +2,7 @@
 # Date created:		20 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/net/archie/Makefile,v 1.10 2000/04/09 18:10:08 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	archie
@@ -13,6 +13,7 @@ DISTNAME=	c-archie-1.4.1-FIXED
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
+COMMENT=	Prospero client for the archie service
 
 WRKSRC=		${WRKDIR}/archie-1.4.1-FIX
 MAN1=		archie.1
