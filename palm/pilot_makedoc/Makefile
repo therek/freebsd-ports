@@ -2,11 +2,12 @@
 # Date created:				May 10th 1997
 # Whom:					jfitz@FreeBSD.org
 #
-# $FreeBSD: ports/palm/pilot_makedoc/Makefile,v 1.12 2000/04/21 07:52:05 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pilot_makedoc
 PORTVERSION=	0.7a
+PORTREVISION=	1
 CATEGORIES=	palm textproc
 MASTER_SITES=	ftp://ftp.forth.org/pub/PalmOS/ \
 		ftp://ftp.cs.tu-berlin.de/pub/palmtops/pilot/ \
@@ -14,7 +15,7 @@ MASTER_SITES=	ftp://ftp.forth.org/pub/PalmOS/ \
 DISTNAME=	makedoc7
 EXTRACT_SUFX=	.cpp
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	simond@irrelevant.org
 
 NO_WRKSUBDIR=	YES
 ALL_TARGET=	pilot_makedoc
