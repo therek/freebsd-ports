@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.391 2001/11/17 21:05:50 knu Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.392 2001/11/17 21:23:09 knu Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -243,7 +243,7 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 # NO_WRKSUBDIR	- Assume port unpacks directly into ${WRKDIR}.
 # PATCHDIR 		- A directory containing any additional patches you made
 #				  to port this software to FreeBSD (default:
-#				  ${MASTERDIR}/patches)
+#				  ${MASTERDIR}/files)
 # SCRIPTDIR 	- A directory containing any auxiliary scripts
 #				  (default: ${MASTERDIR}/scripts)
 # FILESDIR 		- A directory containing any miscellaneous additional files.
