@@ -3,14 +3,14 @@
 # Date created:         01 May 1998
 # Whom:                 tonym
 #
-# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.4 1999/12/27 00:45:55 steve Exp $
+# $FreeBSD: ports/net/generic-nqs/Makefile,v 1.5 1999/12/27 15:47:27 steve Exp $
 #
 # View this file with tabstop=4
 #
 
 DISTNAME=		Generic-NQS-3.50.6
 CATEGORIES=		net
-MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/v3.50/
+MASTER_SITES=	http://ftp.gnqs.org/pub/gnqs/source/by-version-number/v3.50/
 
 MAINTAINER=		tony.maher@ebioinformatics.com
 
