@@ -2,18 +2,18 @@
 # Date created:				12 Jun 1999
 # Whom:					alexp
 #
-# $FreeBSD: ports/net/domtools/Makefile,v 1.3 1999/08/30 14:22:38 peter Exp $
+# $FreeBSD: ports/net/domtools/Makefile,v 1.4 2000/04/09 18:11:06 cpiazza Exp $
 #
 
 PORTNAME=	domtools
 PORTVERSION=	1.4.0
-CATEGORIES=     net
-MASTER_SITES=   http://www.domtools.com/pub/
+CATEGORIES=	net
+MASTER_SITES=	http://www.domtools.com/pub/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=     veers@disturbed.net
+MAINTAINER=	veers@disturbed.net
 
-USE_PERL5= 	YES
+USE_PERL5=	YES
 
 NO_BUILD=	YES
 WRKSRC=		${WRKDIR}/domtools${PORTVERSION}/
