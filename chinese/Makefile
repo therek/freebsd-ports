@@ -1,9 +1,8 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.91 2001/04/27 19:18:26 vanilla Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.92 2001/06/21 19:10:19 keichii Exp $
 #
     SUBDIR += CJK
     SUBDIR += FreeWnn-lib
     SUBDIR += FreeWnn-server
-    SUBDIR += XFree86-aoutlibs
     SUBDIR += abiword
     SUBDIR += acroread-chsfont
     SUBDIR += acroread-chtfont
