@@ -2,11 +2,12 @@
 # Date created:				12 Jul 1996
 # Whom:					searle
 #
-# $FreeBSD: ports/games/flying/Makefile,v 1.5 1999/08/25 06:03:23 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flying
 PORTVERSION=	6.20
+PORTREVISION=	1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/arcade
