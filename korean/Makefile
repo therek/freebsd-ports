@@ -1,5 +1,6 @@
-# $FreeBSD: ports/korean/Makefile,v 1.58 2000/10/29 12:26:46 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.59 2001/03/23 06:53:59 cjh Exp $
 #
+    SUBDIR += w3m
     SUBDIR += uniksc
     SUBDIR += texinfo
 
