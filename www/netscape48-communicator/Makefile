@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.71 2000/10/08 06:34:00 asami Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.72 2000/10/08 10:23:13 asami Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -14,6 +14,9 @@ DISTFILES?=	communicator-v408-export.x86-unknown-freebsd.tar.gz
 MAINTAINER?=	sada@FreeBSD.org
 
 RUN_DEPENDS+=	netscape:${PORTSDIR}/www/netscape-wrapper
+.if ${ARCH} == "alpha"
+RUN_DEPENDS+=	/compat/osf1/usr/shlib/libc.so:${PORTSDIR}/emulators/osf1_base
+.endif
 
 Y2K=		http://home.netscape.com/products/year2000/faq/client.html
 
