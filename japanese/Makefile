@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.241 1999/11/30 08:36:20 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.242 1999/12/07 21:59:21 kuriyama Exp $
 #
 
     SUBDIR += Canna
@@ -193,6 +193,12 @@
     SUBDIR += ptex-common
     SUBDIR += ptex-euc
     SUBDIR += ptex-jis
+    SUBDIR += ptex-pkfonts118
+    SUBDIR += ptex-pkfonts240
+    SUBDIR += ptex-pkfonts300
+    SUBDIR += ptex-pkfonts360
+    SUBDIR += ptex-pkfonts400
+    SUBDIR += ptex-pkfonts600
     SUBDIR += ptex-sjis
     SUBDIR += qkc
     SUBDIR += recjis
