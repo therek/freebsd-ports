@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.159 2003/06/19 20:57:59 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.160 2003/07/04 11:44:42 perky Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -139,6 +139,32 @@ MASTER_SITE_DEBIAN_NON_US+=	\
 	ftp://ftp.wa.au.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp2.de.debian.org/debian-non-US/%SUBDIR%/ \
 	ftp://ftp2.it.debian.org/debian-non-US/%SUBDIR%/
+
+MASTER_SITE_ECLIPSE+= \
+	ftp://download.eclipse.org/%SUBDIR%/ \
+	http://download.eclipse.org/downloads/drops/%SUBDIR%/ \
+	ftp://sunsite.informatik.rwth-aachen.de/pub/mirror/eclipse/%SUBDIR%/ \
+	http://sunsite.informatik.rwth-aachen.de/eclipse/downloads/drops/%SUBDIR%/ \
+	ftp://ftp.tu-clausthal.de/pub/eclipse/downloads/drops/%SUBDIR%/ \
+	http://ftp-stud.fht-esslingen.de/pub/Mirrors/eclipse/%SUBDIR%/ \
+	ftp://ftp.unixag-zw.fh-kl.de/pub/mirrors/eclipse/%SUBDIR%/ \
+	http://eclipse.teccomm.les.inf.puc-rio.br/downloads/drops/%SUBDIR%/ \
+	http://www.dawnspill.hu/mirror/eclipse/downloads/drops/%SUBDIR%/ \
+	http://eclipse.ftp.heanet.ie/downloads/drops/%SUBDIR%/ \
+	ftp://ftp.ibiblio.org/pub/packages/development/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
+	http://www.ibiblio.org/pub/packages/development/eclipse/eclipse/downloads/drops/%SUBDIR%/ \
+	http://mirror.ini2.net/eclipse/%SUBDIR%/ \
+	http://www.eclipse.ps.pl/downloads/drops/%SUBDIR%/ \
+	http://eclipse.planetmirror.com/downloads/drops/%SUBDIR%/ \
+	ftp://gd.tuwien.ac.at/softeng/eclipse/%SUBDIR%/ \
+	http://gd.tuwien.ac.at/softeng/eclipse/%SUBDIR%/ \
+	ftp://ftp.ring.gr.jp/pub/misc/eclipse/downloads/drops/%SUBDIR%/ \
+	http://mirror.island.liu.se/eclipse/downloads/drops/%SUBDIR%/ \
+	ftp://sunsite.cnlab-switch.ch/mirror/eclipse/downloads/drops/%SUBDIR%/ \
+	ftp://eclipse.cis.sinica.edu.tw/eclipse.org/%SUBDIR%/ \
+	http://eclipse.cis.sinica.edu.tw/downloads/drops/%SUBDIR%/ \
+	http://www.binarycode.org/eclipse/%SUBDIR%/ \
+	http://eclipse.get-software.com/%SUBDIR%/
 
 MASTER_SITE_FESTIVAL+= \
 	http://www.festvox.org/packed/festival/%SUBDIR%/ \
