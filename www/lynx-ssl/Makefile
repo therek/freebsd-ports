@@ -3,7 +3,7 @@
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.7 1999/11/07 22:25:35 dirk Exp $
+# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.8 2000/02/06 22:25:14 kris Exp $
 #
 
 DISTNAME=       lynx2.8.2rel.1
@@ -12,6 +12,7 @@ CATEGORIES=	www
 MASTER_SITES=   http://sol.slcc.edu/lynx/current/
 
 USE_OPENSSL=	RSA
+FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user"
 
 .include <bsd.port.pre.mk>
 
