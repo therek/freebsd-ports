@@ -2,13 +2,14 @@
 # Date created:				10 May 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/clanbomber/Makefile,v 1.2 2000/11/01 15:51:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clanbomber
-PORTVERSION=	1.01
+PORTVERSION=	1.01a
 CATEGORIES=	games
-MASTER_SITES=	http://www.clanbomber.de/files/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
