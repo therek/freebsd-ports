@@ -2,13 +2,14 @@
 # Date created:		11 May 2001
 # Whom:			Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/zope-zwiki/Makefile,v 1.1 2001/06/18 14:11:33 wjv Exp $
 #
 
 PORTNAME=	zwiki
-PORTVERSION=	0.8.1
+PORTVERSION=	0.9.4
 CATEGORIES=	www zope
-MASTER_SITES=	http://www.zope.org/Members/simon/ZWiki/
+MASTER_SITES=	http://www.zope.org/Members/simon/ZWiki/ \
+		http://zwiki.org/zwikidir/releases/
 PKGNAMEPREFIX=	zope-
 DISTNAME=	ZWiki-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
