@@ -3,11 +3,11 @@
 # Date created:			Apr 23, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/kimwitu++/Makefile,v 1.1 2001/04/23 16:02:11 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kimwitu++
-PORTVERSION=	2.0.3
+PORTVERSION=	2.1.3
 CATEGORIES=	devel
 MASTER_SITES=	http://site.informatik.hu-berlin.de/kimwitu++/
 
