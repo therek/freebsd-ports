@@ -2,7 +2,7 @@
 # Date created:		9 Jun 2000
 # Whom:			Michael Vasilenko <acid@cn.ua>
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/icqmail/Makefile,v 1.1 2000/07/10 15:45:33 steve Exp $
 #
 
 PORTNAME=	icqmail
@@ -21,5 +21,7 @@ USE_NEW_GCC=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=  CFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -lguile -lqthreads"
+
+MAN1=		icqmail.1
 
 .include <bsd.port.mk>
