@@ -2,16 +2,15 @@
 # Date created:		31 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/ftp/ruby-curl/Makefile,v 1.2 2001/04/06 10:26:21 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	curl
-PORTVERSION=	0.0.1
-PORTREVISION=	2
+PORTVERSION=	0.0.2.a0
 CATEGORIES=	ftp www ruby
 MASTER_SITES=	http://www.d1.dion.ne.jp/~matuyuki/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	rbCurl
+DISTNAME=	rbCurl-${PORTVERSION:S/.a/a/}
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	ruby
 
@@ -22,9 +21,10 @@ LIB_DEPENDS=	curl.2:${PORTSDIR}/ftp/curl
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
+WRKSRC=		${WRKDIR}/${DISTNAME:C/a.*//}
 INSTALL_TARGET=	site-install
 
-DOCS_EN=	DONE README
+DOCS_EN=	README TODO
 EXAMPLES_EN=	example.rb
 
 post-install:
