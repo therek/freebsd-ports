@@ -2,7 +2,7 @@
 # Date created:				18th July 1998
 # Whom:					Gary Palmer <gpalmer@freebsd.org>
 #
-# $FreeBSD: ports/databases/cdb/Makefile,v 1.10 2000/04/08 22:48:18 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cdb
@@ -16,11 +16,11 @@ ALL_TARGET=	it
 
 do-configure:
 	@${MV} ${WRKSRC}/conf-home ${WRKSRC}/conf-home.orig
-	${ECHO} ${PREFIX} > ${WRKSRC}/conf-home
+	${ECHO_CMD} ${PREFIX} > ${WRKSRC}/conf-home
 	@${MV} ${WRKSRC}/conf-cc ${WRKSRC}/conf-cc.orig
-	${ECHO} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
+	${ECHO_CMD} ${CC} ${CFLAGS} > ${WRKSRC}/conf-cc
 	@${MV} ${WRKSRC}/conf-ld ${WRKSRC}/conf-ld.orig
-	${ECHO} ${CC} -s > ${WRKSRC}/conf-ld
+	${ECHO_CMD} ${CC} -s > ${WRKSRC}/conf-ld
 
 do-install:
 .for file in cdbdump cdbget cdbmake cdbstats cdbtest

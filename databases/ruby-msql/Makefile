@@ -2,7 +2,7 @@
 # Date created:		9 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-msql/Makefile,v 1.1 2001/06/09 15:48:26 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	msql
@@ -30,7 +30,7 @@ DOCS_EN=	readme.en.txt doc/en/*
 DOCS_JA=	readme.ja.txt
 
 post-configure:
-	${ECHO} '#define INST_DIR "${LOCALBASE}"' >> ${WRKSRC}/site.h
+	${ECHO_CMD} '#define INST_DIR "${LOCALBASE}"' >> ${WRKSRC}/site.h
 
 post-install:
 .if !defined(NOPORTDOCS)

@@ -2,7 +2,7 @@
 # Date created:		07 Sep 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/databases/zpygresqlda/Makefile,v 1.4 2001/04/21 11:43:12 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zpygresqlda
@@ -32,9 +32,9 @@ WRKSRC=		${WRKDIR}/${ZOPEPRODUCTDIR}/${ZOPEPRODUCTNAME}
 PLIST_SUB=	ZOPEBASEDIR=${SZOPEBASEDIR}
 
 do-build:
-	@${ECHO} '*shared*' > ${WRKSRC}/src/Setup
-	@${ECHO} '' >> ${WRKSRC}/src/Setup
-	@${ECHO} '_pg   pgmodule.c ' \
+	@${ECHO_CMD} '*shared*' > ${WRKSRC}/src/Setup
+	@${ECHO_CMD} '' >> ${WRKSRC}/src/Setup
+	@${ECHO_CMD} '_pg   pgmodule.c ' \
 		'-I${LOCALBASE}/include/pgsql ' \
 		'-L${LOCALBASE}/lib ' \
 		'-lpq -lcrypt' >> ${WRKSRC}/src/Setup
