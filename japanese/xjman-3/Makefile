@@ -2,10 +2,12 @@
 # Date created:		8 Aug 2001
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xjman-3/Makefile,v 1.14 2001/08/06 14:07:47 sada Exp $
+# $FreeBSD: ports/japanese/xjman-3/Makefile,v 1.15 2001/08/08 06:38:03 sada Exp $
 #
 
 PORTVERSION=	0.5
+MASTER_SITES= 	${MASTER_SITE_PORTS_JP} \
+		http://xjman.dsl.gr.jp/
 
 MAINTAINER=	sada@FreeBSD.org
 

@@ -4,14 +4,14 @@
 #			japanese/man-doc
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/xjman/Makefile,v 1.14 2001/08/06 14:07:47 sada Exp $
+# $FreeBSD: ports/japanese/xjman/Makefile,v 1.15 2001/08/08 06:38:03 sada Exp $
 #
 
 PORTNAME=	xjman
 PORTVERSION?=	0.6
 CATEGORIES=	japanese
-MASTER_SITES=	${MASTER_SITE_PORTS_JP} \
-		http://xjman.dsl.gr.jp/
+MASTER_SITES?=	${MASTER_SITE_PORTS_JP} \
+		http://xjman.dsl.gr.jp/dist/
 
 MAINTAINER?=	sada@FreeBSD.org
 
