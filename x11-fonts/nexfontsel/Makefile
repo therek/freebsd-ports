@@ -2,7 +2,7 @@
 # Date created:		99/09/29
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/nexfontsel/Makefile,v 1.6 2000/11/03 08:09:48 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nexfontsel
@@ -19,7 +19,7 @@ USE_IMAKE=	yes
 MAN1=		nexfontsel.1
 
 post-install:
-	${MKDIR} ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults
-	${INSTALL_DATA} ${WRKSRC}/NeXFontSel-ja.ad ${PREFIX}/lib/X11/ja_JP.EUC/app-defaults/NeXFontSel
+	${MKDIR} ${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults
+	${INSTALL_DATA} ${WRKSRC}/NeXFontSel-ja.ad ${PREFIX}/lib/X11/ja_JP.eucJP/app-defaults/NeXFontSel
 
 .include <bsd.port.mk>
