@@ -2,7 +2,7 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.1 2000/08/01 09:05:57 sobomax Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.2 2000/08/03 06:20:44 sobomax Exp $
 #
 
 PORTNAME=	galeon
@@ -18,6 +18,8 @@ LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		glade.4:${PORTSDIR}/devel/libglade
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \
 		mozilla:${PORTSDIR}/www/mozilla
+
+BROKEN=		"Jeremy should update Mozilla port to M16"
 
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
