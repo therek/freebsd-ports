@@ -1,12 +1,12 @@
 # New ports collection makefile for:	pngcrush
-# Version required:			1.3.3
+# Version required:			1.3.4
 # Date created:				07 December 1999
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pngcrush/Makefile,v 1.3 1999/12/29 23:05:53 jedgar Exp $
+# $FreeBSD: ports/graphics/pngcrush/Makefile,v 1.4 2000/01/13 12:55:11 jedgar Exp $
 #
 
-DISTNAME=	pngcrush-1.3.3
+DISTNAME=	pngcrush-1.3.4
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.xnot.com/pmt/pub/pngcrush/src/
 
