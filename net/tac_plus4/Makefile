@@ -3,7 +3,7 @@
 # Date created:		4 Mar 1997
 # Whom:			Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/tac_plus4/Makefile,v 1.11 1999/11/10 07:37:17 andreas Exp $
 #
 
 DISTNAME=	tac_plus.F4.0.3.alpha
@@ -16,13 +16,11 @@ MAINTAINER=	tasic@lucky.net
 
 ALL_TARGET=	tac_plus
 MAN1=		tac_plus.1
-EXTRA_PATCH=	patch-ba
 
 # To change the text displayed when users are prompted to enter
 # a username, set appropriately TAC_CHANGE_PROMPT variable.
 .if defined(TAC_CHANGE_PROMPT) && ${TAC_CHANGE_PROMPT} == YES
-pre-patch:
-	@${CP} ${FILESDIR}/${EXTRA_PATCH} ${PATCHDIR}
+EXTRA_PATCHES=	${FILESDIR}/patch-ba
 .endif
 
 do-install:
@@ -43,8 +41,5 @@ do-install:
 
 post-install:
 	strip ${PREFIX}/sbin/tac_plus
-
-pre-clean:
-	@${RM} -f ${PATCHDIR}/${EXTRA_PATCH}
 
 .include <bsd.port.mk>

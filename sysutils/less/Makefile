@@ -4,7 +4,7 @@
 # Date created:         8 Nov 1994
 # Whom:                 ache
 #
-# $FreeBSD: ports/misc/less/Makefile,v 1.24 1999/12/23 03:21:56 ache Exp $
+# $FreeBSD: ports/misc/less/Makefile,v 1.25 2000/02/14 23:25:26 ache Exp $
 #
 
 DISTNAME=       less-346
@@ -18,15 +18,10 @@ MAINTAINER=	ache@FreeBSD.org
 GNU_CONFIGURE=	yes
 MAN1=		less.1 lesskey.1
 
-EXTRA_PATCH=	patch-ab
-
-pre-clean:
-	@${RM} -f ${PATCHDIR}/${EXTRA_PATCH}
-
 .if defined(COLOUR_LESS) || defined(COLOR_LESS)
 pre-patch:
 	@${ECHO_MSG} "Making a colour version of less."
-	@${CP} ${FILESDIR}/${EXTRA_PATCH} ${PATCHDIR}
+EXTRA_PATCHES=	${FILESDIR}/patch-ab
 .endif
 
 .include <bsd.port.mk>
