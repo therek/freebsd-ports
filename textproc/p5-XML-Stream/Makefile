@@ -2,23 +2,27 @@
 # Date created:				28 Augest 2000
 # Whom:	      				Yen-Ming Lee <leeym@cae.ce.ntu.edu.tw>
 #
-# $FreeBSD: ports/textproc/p5-XML-Stream/Makefile,v 1.1 2000/12/12 15:34:16 clive Exp $
+# $FreeBSD: ports/textproc/p5-XML-Stream/Makefile,v 1.2 2001/02/17 15:31:17 kevlo Exp $
 #
 
 PORTNAME=	XML-Stream
-PORTVERSION=	1.11
+PORTVERSION=	1.12
 CATEGORIES=	textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	XML
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	leeym@cae.ce.ntu.edu.tw
+MAINTAINER=	ports@FreeBSD.org
 
-RUN_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser
+BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/XML/Parser.pm:${PORTSDIR}/textproc/p5-XML-Parser \
+		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Unicode/String.pm:${PORTSDIR}/converters/p5-Unicode-String
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
-MAN3=		XML::Stream.3 XML::Stream::Namespace.3 XML::Stream::Parser.3 XML::Stream::Parser::DTD.3
+MAN3=		XML::Stream.3 XML::Stream::Hash.3 XML::Stream::Namespace.3 \
+		XML::Stream::Parser.3 XML::Stream::Parser::DTD.3 \
+		XML::Stream::Tree.3
 
 .include <bsd.port.mk>
