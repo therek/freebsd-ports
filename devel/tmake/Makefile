@@ -2,13 +2,13 @@
 # Date created:				8 March 2000
 # Whom:					jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/devel/tmake/Makefile,v 1.2 2000/04/14 05:44:36 asami Exp $
+# $FreeBSD: ports/devel/tmake/Makefile,v 1.3 2000/05/20 17:16:12 will Exp $
 #
 
 PORTNAME=	tmake
-PORTVERSION=	1.4
+PORTVERSION=	1.5
 CATEGORIES=	devel perl5
-MASTER_SITES=	ftp://ftp.troll.no/freebies/tmake/
+MASTER_SITES=	ftp://ftp.trolltech.com/freebies/tmake/
 
 MAINTAINER=	jesse@cs.uni-magdeburg.de
 
