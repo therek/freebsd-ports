@@ -1,4 +1,4 @@
-# $FreeBSD: ports/biology/Makefile,v 1.34 2001/08/06 14:45:31 wjv Exp $
+# $FreeBSD: ports/biology/Makefile,v 1.35 2001/08/06 14:49:26 wjv Exp $
 #
 
     SUBDIR += babel
@@ -18,6 +18,7 @@
     SUBDIR += grappa
     SUBDIR += hmmer
     SUBDIR += kinemage
+    SUBDIR += lamarc
     SUBDIR += migrate
     SUBDIR += molden
     SUBDIR += mopac
