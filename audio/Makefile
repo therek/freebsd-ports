@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.147 2000/06/29 15:26:45 sobomax Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.148 2000/07/06 03:55:28 will Exp $
 #
 
     SUBDIR += afsp
@@ -27,6 +27,7 @@
     SUBDIR += gogo
     SUBDIR += gqmpeg
     SUBDIR += gramofile
+    SUBDIR += grip
     SUBDIR += gsm
     SUBDIR += icecast
     SUBDIR += id3ed
@@ -71,6 +72,7 @@
     SUBDIR += raproxy
     SUBDIR += replay
     SUBDIR += rio
+    SUBDIR += rio500
     SUBDIR += ripenc
     SUBDIR += ripit
     SUBDIR += ripit-atapi
