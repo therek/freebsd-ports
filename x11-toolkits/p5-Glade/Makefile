@@ -2,12 +2,11 @@
 # Date created:				30 Oct 2000
 # Whom:					vanilla
 #
-# $FreeBSD: ports/x11-toolkits/p5-Glade/Makefile,v 1.6 2001/03/12 08:47:08 vanilla Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Glade/Makefile,v 1.7 2001/05/04 21:41:30 ade Exp $
 #
 
 PORTNAME=	Glade
-PORTVERSION=	0.7005
-PORTREVISION=	1
+PORTVERSION=	0.7006
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Gtk
@@ -17,9 +16,13 @@ DISTNAME=	Gtk-Perl-${PORTVERSION}
 MAINTAINER=	vanilla@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gnome.pm:${PORTSDIR}/x11-toolkits/p5-Gnome
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 USE_GNOME=	yes
 PERL_CONFIGURE=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/${PORTNAME}
+
+MAN3PREFIX=     ${LOCALBASE}/lib/perl5/${PERL_VERSION}
+MAN3=		Gtk::GladeXML::reference.3pm
 
 .include <bsd.port.mk>
