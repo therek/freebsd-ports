@@ -1,15 +1,14 @@
 # New ports collection makefile for:    vile
-# Version required:     9.0
+# Version required:     9.1
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.19 1999/08/27 21:13:49 mharo Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.20 1999/12/25 11:44:02 gj Exp $
 #
 
-DISTNAME=	vile-9.0
+DISTNAME=	vile-9.1
 CATEGORIES=	editors
-MASTER_SITES=   ftp://ftp.clark.net/pub/dickey/vile/ \
-		ftp://ftp.phred.org/pub/vile/ \
+MASTER_SITES=   ftp://ftp.phred.org/pub/vile/ \
 		ftp://id.wing.net/pub/pgf/vile/
 EXTRACT_SUFX=	.tgz
 
