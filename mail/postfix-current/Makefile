@@ -2,7 +2,7 @@
 # Date created: 	18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/postfix-current/Makefile,v 1.23 2000/09/13 20:50:41 billf Exp $
 #
 
 PORTNAME=	postfix
@@ -76,7 +76,7 @@ post-patch:
 	${ECHO} "all: default" >> Makefile)
 
 pre-install:
-	@${PKGDIR}/INSTALL Postfix PRE-INSTALL
+	@${SH} @${PKGDIR}/INSTALL Postfix PRE-INSTALL
 
 do-install:
 	@${MKDIR} -m 755 ${PREFIX}/etc/postfix
