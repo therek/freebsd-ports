@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-freewnn/Makefile,v 1.9 2001/08/27 01:20:23 taoka Exp $
+# $FreeBSD: ports/japanese/onew-freewnn/Makefile,v 1.10 2001/08/27 01:48:41 taoka Exp $
 #
 
 PORTNAME=	onew
