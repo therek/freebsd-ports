@@ -2,7 +2,7 @@
 # Date created:		21 April 1998
 # Whom:			J Han <hjh@photino.com>
 #
-# $FreeBSD: ports/devel/libcii/Makefile,v 1.2 1999/08/25 05:48:18 obrien Exp $
+# $FreeBSD: ports/devel/libcii/Makefile,v 1.3 2000/04/11 21:28:33 mharo Exp $
 #
 
 PORTNAME=	libcii
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.cs.princeton.edu/pub/packages/cii/
 DISTNAME=	cii11
 
-MAINTAINER=	hjh@photino.com
+MAINTAINER=	ports@FreeBSD.org
 
 NO_INSTALL_MANPAGES=	yes
 NO_WRKSUBDIR=	yes
