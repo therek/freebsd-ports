@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.42 2000/10/23 15:24:13 imura Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.43 2000/10/28 00:03:46 scrappy Exp $
 #
 
     SUBDIR += aish
@@ -18,6 +18,7 @@
     SUBDIR += mmencode
     SUBDIR += mpack
     SUBDIR += mule-ucs-emacs20
+    SUBDIR += p5-Convert-ASN1
     SUBDIR += p5-Convert-BER
     SUBDIR += p5-Convert-Recode
     SUBDIR += p5-Convert-UU
