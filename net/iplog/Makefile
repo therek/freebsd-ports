@@ -2,7 +2,7 @@
 # Date created:		4 Oct 1999
 # Whom:			Dominik Rothert <dr@domix.de>
 #
-# $FreeBSD: ports/net/iplog/Makefile,v 1.12 2001/01/04 15:03:10 kevlo Exp $
+# $FreeBSD: ports/net/iplog/Makefile,v 1.13 2001/01/07 18:57:24 mharo Exp $
 #
 
 PORTNAME=	iplog
@@ -43,6 +43,12 @@ post-install:
 	@${CAT} ${FILESDIR}/iplog.sh.tmpl | \
 		${SED} -e 's;PREFIX;${PREFIX};' \
 		> ${PREFIX}/etc/rc.d/iplog.sh.sample
+	@${CHMOD} 555 ${PREFIX}/etc/rc.d/iplog.sh.sample
+	@${ECHO_MSG} "----------------------------------------------------------------------------"
+	@${ECHO_MSG} "If you want iplog to be run as a daemon then do:"
+	@${ECHO_MSG} "cp -p ${PREFIX}/etc/rc.d/iplog.sh.sample ${PREFIX}/etc/rc.d/iplog.sh"
+	@${ECHO_MSG} "----------------------------------------------------------------------------"
+	@${ECHO_MSG}
 .endif
 
 .include <bsd.port.post.mk>
