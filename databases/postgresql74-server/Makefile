@@ -2,11 +2,11 @@
 # Date created:		November 13, 1998
 # Whom:			Marc G. Fournier <scrappy@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.80 2001/05/09 06:00:36 vanilla Exp $
+# $FreeBSD: ports/databases/postgresql7/Makefile,v 1.81 2001/05/24 13:26:47 alex Exp $
 #
 
 PORTNAME=	postgresql
-PORTVERSION=	7.1.1
+PORTVERSION=	7.1.2
 CATEGORIES=	databases
 MASTER_SITES=	ftp://ftp.iodynamics.com/pub/mirror/postgresql/%SUBDIR%/ \
 		ftp://ftp.postgresql.org/pub/%SUBDIR%/ \
@@ -87,8 +87,14 @@ SCRIPTS_ENV=	WRKDIRPREFIX="${WRKDIRPREFIX}" \
 		NO_OPENSSL="${NO_OPENSSL}" \
 		DISTNAME="${DISTNAME}"
 
-pre-fetch:
+pre-extract:
 	@ ${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/configure.postgresql
+
+# We must .include here because we need the Makefile.inc @ pre-install,
+# but it is created @ pre-extract
+.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
+.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
+.endif
 
 pre-install:
 	@ ${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGDIR}/pkg-install ${PORTNAME} PRE-INSTALL
@@ -185,9 +191,5 @@ post-clean:
 	@ ${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
 
 post-extract: ${POSTEXTRACT}
-
-.if exists(${WRKDIRPREFIX}${.CURDIR}/Makefile.inc)
-.include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
-.endif
 
 .include <bsd.port.mk>
