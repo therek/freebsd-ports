@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.185 2001/01/03 23:35:10 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.186 2001/01/03 23:35:47 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -86,6 +86,7 @@
     SUBDIR += p5-Mail-Bulkmail
     SUBDIR += p5-Mail-CClient
     SUBDIR += p5-Mail-Ezmlm
+    SUBDIR += p5-Mail-FilterXML
     SUBDIR += p5-Mail-Folder
     SUBDIR += p5-Mail-IMAPClient
     SUBDIR += p5-Mail-POP3Client
