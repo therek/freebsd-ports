@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.196 2003/10/31 07:38:24 ijliao Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.197 2003/11/02 00:30:15 linimon Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -538,9 +538,7 @@ MASTER_SITE_NETSCAPE+= \
 
 MASTER_SITE_PACKETSTORM+= \
 	http://packetstormsecurity.nl/%SUBDIR%/ \
-	http://packetstorm.blackroute.net/%SUBDIR%/ \
 	http://packetstorm.troop218.org/%SUBDIR%/ \
-	http://packetstormsecurity.packetstorm.org/%SUBDIR%/ \
 	http://packetstorm.linuxsecurity.com/%SUBDIR%/ \
 	http://packetstorm.touchpointmedia.com/%SUBDIR%/ \
 	http://packetstorm.digital-network.net/%SUBDIR%/ \
