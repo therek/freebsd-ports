@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.2 2002/03/17 18:00:07 dinoex Exp $
+# $FreeBSD: ports/mail/noattach/files/noattach.sh,v 1.3 2002/03/28 04:43:59 dinoex Exp $
 # 
 if ! test -x %%PREFIX%%/libexec/noattach
 then
@@ -20,6 +20,14 @@ stop)
 		echo " noattach: not running" 2>&1
 	fi
 	rm -f /var/run/noattach.pid
+	;;
+reload)
+	if test -r /var/run/noattach.pid
+	then
+		kill `head -SIGUSR1 /var/run/noattach.pid`
+	else
+		echo " noattach: not running" 2>&1
+	fi
 	;;
 *)
 	echo "Usage: ${0##*/}: { start | stop }" 2>&1
