@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.142 2003/03/28 22:55:35 edwin Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.143 2003/04/06 20:23:14 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -360,17 +360,20 @@ MASTER_SITE_NETSCAPE+= \
 	ftp://ftp.informatik.rwth-aachen.de/pub/mirror/ftp.netscape.com/pub/%SUBDIR%/
 
 MASTER_SITE_PACKETSTORM+= \
+	http://packetstorm.blackroute.net/%SUBDIR%/ \
+	http://packetstorm.troop218.org/%SUBDIR%/ \
+	http://packetstormsecurity.packetstorm.org/%SUBDIR%/ \
 	http://packetstorm.linuxsecurity.com/%SUBDIR%/ \
-	http://packetstorm.dnsi.info/%SUBDIR%/ \
-	http://packetstorm.decepticons.org/%SUBDIR%/ \
-	http://packetstormsecurity.nl/%SUBDIR%/ \
 	http://packetstorm.acm.miami.edu/%SUBDIR%/ \
-	http://packetstormsecurity.org.pk/%SUBDIR%/ \
+	http://packetstorm.digital-network.net/%SUBDIR%/ \
+	http://packetstorm.icx.fr/%SUBDIR%/ \
 	http://packetstorm.security-guide.de/%SUBDIR%/ \
-	http://packetstorm.globalhostnet.com/%SUBDIR%/ \
+	http://packetstorm.trustica.cz/%SUBDIR%/ \
+	http://packetstorm.dyn.org/%SUBDIR%/ \
+	http://packetstormsecurity.nl/%SUBDIR%/ \
 	http://packetstormsecurity.com.ar/%SUBDIR%/ \
-	http://packetstorm.nulldetector.com/%SUBDIR%/ \
-	http://packetstormsecurity.packetstorm.org/%SUBDIR%/
+	http://packetstorm.digitallinx.com/%SUBDIR%/ \
+	http://packetstormsecurity.org.pk/%SUBDIR%/
 
 MASTER_SITE_PERL_CPAN+=	\
 	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
