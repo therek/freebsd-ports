@@ -2,11 +2,11 @@
 # Date created:			2 Oct 1997
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/bookview/Makefile,v 1.12 2000/05/19 07:20:26 cpiazza Exp $
+# $FreeBSD: ports/japanese/bookview/Makefile,v 1.13 2000/07/04 16:24:49 knu Exp $
 #
 
 PORTNAME=	bookview
-PORTVERSION=	2.4.8
+PORTVERSION=	3.0.1
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/bookview/
 
