@@ -2,14 +2,13 @@
 # Date created:        16 March 1999
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/fakebo/Makefile,v 1.10 2000/09/21 23:43:44 kris Exp $
+# $FreeBSD: ports/security/fakebo/Makefile,v 1.11 2000/09/25 12:21:38 asami Exp $
 #
 
 PORTNAME=	fakebo
 PORTVERSION=	0.4.1
 CATEGORIES=	security
-MASTER_SITES=	ftp://ftp.deva.net/pub/sources/networking/ids/ \
-		ftp://the.ausmac.net/wd2a/security/port-loggers/ \
+MASTER_SITES=	ftp://the.ausmac.net/wd2a/security/port-loggers/ \
 		ftp://ftp.mayn.de/pub/unix/security/network/ \
 		ftp://ftp.cps.unizar.es/pub/unix/security/ \
 		ftp://ftp.linux.hr/pub/fakebo/
