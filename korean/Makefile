@@ -1,9 +1,8 @@
-# $FreeBSD: ports/korean/Makefile,v 1.45 2000/06/25 13:19:57 cjh Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.46 2000/06/25 14:16:34 cjh Exp $
 #
 
     SUBDIR += Wnn
     SUBDIR += acroread-korfont
-    SUBDIR += afterstep
     SUBDIR += ami
     SUBDIR += baekmukfonts-bdf
     SUBDIR += baekmukfonts-ttf
@@ -13,7 +12,6 @@
     SUBDIR += engdic
     SUBDIR += eterm
     SUBDIR += ftghostscript5
-    SUBDIR += fvwm95
     SUBDIR += gau
     SUBDIR += gtk10
     SUBDIR += gtkcomm
@@ -54,6 +52,5 @@
     SUBDIR += pgp.language
     SUBDIR += pine
     SUBDIR += pinetreefonts
-    SUBDIR += vim
 
 .include <bsd.port.subdir.mk>
