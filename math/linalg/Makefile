@@ -2,7 +2,7 @@
 # Date created:				August 25, 1999
 # Whom:					Oleg Kiselyov <oleg@pobox.com>
 #
-# $FreeBSD: ports/math/linalg/Makefile,v 1.5 2000/06/07 17:31:47 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	linalg
@@ -19,8 +19,8 @@ INSTALL_TARGET=	lib
 USE_GMAKE=	yes
 
 post-patch:
-	@( cd ${WRKSRC}; ${SED} -e 's/%%CXXFLAGS%%/${CXXFLAGS}/g' \
-	    -e 's/%%CXX%%/${CXX}/g' c++ > c++.sed; mv c++.sed c++; ${CHMOD} +x c++ )
+	@( cd ${WRKSRC}; ${SED} -e 's|%%CXXFLAGS%%|${CXXFLAGS}|g' \
+	    -e 's|%%CXX%%|${CXX}|g' c++ > c++.sed; mv c++.sed c++; ${CHMOD} +x c++ )
 
 post-install:
 	$(INSTALL_DATA) ${WRKSRC}/libla.a ${PREFIX}/lib

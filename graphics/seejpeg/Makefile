@@ -2,7 +2,7 @@
 # Date created:		2000 Oct 19
 #
 # Whom:			Donn Miller <dmmiller@cvzoom.net>
-# $FreeBSD: ports/graphics/seejpeg/Makefile,v 1.2 2000/10/25 16:32:56 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	seejpeg
@@ -29,6 +29,6 @@ post-extract:
 
 post-patch:
 	${MV}	${WRKSRC}/Makefile ${WRKSRC}/Makefile.prev
-	${SED}	"s/-O3/${CFLAGS}/g" ${WRKSRC}/Makefile.prev >  ${WRKSRC}/Makefile
+	${SED}	"s|-O3|${CFLAGS}|g" ${WRKSRC}/Makefile.prev >  ${WRKSRC}/Makefile
 
 .include <bsd.port.mk>
