@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.348 2004/05/22 19:46:02 clement Exp $
+# $FreeBSD: ports/LEGAL,v 1.349 2004/05/22 20:00:07 clement Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -195,6 +195,8 @@ lame*			ports/audio/lame	may be patented
 lgrind/*		ports/print/lgrind	Contains non-free code written by Van Jacobson
 libidea-*		ports/security/libidea	Crypto; export-controlled
 libots-*.alpha.rpm	ports/lang/compaq-cc	Distribution not allowed
+libsnert-*		ports/mail/milter-sender Non-commercial distribution
+						of the original files only
 f6kuzzzz.taz		ports/databases/libudbc		Downloading and redistribution
 						terms are unclear.
 LimeWireLinux.tgz	ports/net/limewire	No redistribution allowed
@@ -220,6 +222,8 @@ mbrola-freebsd/*	ports/audio/mbrola	No commercial, military use
 mew-*.tar.gz		ports/mail/mew		ITAR export-controlled
 						(hooks to pgp)
 mikachan-ttfonts/ver*.*	ports/japanese/mikachan-ttfonts	Do not sell distfile
+milter-sender-*		ports/mail/milter-sender Non-commercial distribution
+						of the original files only
 mindfocus-*		ports/games/mindfocus	contains commercial
 						character data
 mindterm-*		ports/security/mindterm-binary	Do not sell for profit.
