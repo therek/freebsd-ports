@@ -2,7 +2,7 @@
 # Date created:				26 July 2000
 # Whom:					David Sugar <dyfet@gnu.org>
 #
-# $FreeBSD: ports/lang/ccscript/Makefile,v 1.3 2000/09/17 13:23:11 jedgar Exp $
+# $FreeBSD: ports/lang/ccscript/Makefile,v 1.4 2000/09/18 12:55:32 jedgar Exp $
 #
 
 PORTNAME=	ccscript
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://www.voxilla.org/pub/ccscript/
 
 MAINTAINER=	dyfet@gnu.org
 
-LIB_DEPENDS=	ccio-1.2.0:${PORTSDIR}/devel/commoncpp
+LIB_DEPENDS=	ccio.0:${PORTSDIR}/devel/commoncpp
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
