@@ -2,12 +2,11 @@
 # Date created:				31 May 2000
 # Whom:					Denis Shaposhnikov <dsh@vlink.ru>
 #
-# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.6 2000/12/18 09:03:06 demon Exp $
+# $FreeBSD: ports/www/p5-HTML-Mason/Makefile,v 1.7 2001/01/09 16:51:01 kevlo Exp $
 #
 
 PORTNAME=	HTML-Mason
-PORTVERSION=	0.89.6
-DISTNAME=	${PORTNAME}-0.896
+PORTVERSION=	1.0
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
