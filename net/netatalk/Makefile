@@ -2,7 +2,7 @@
 # Date created:         23 Jul 1997
 # Whom:                 stb
 #
-# $FreeBSD: ports/net/netatalk/Makefile,v 1.18 2001/05/08 20:47:56 dinoex Exp $
+# $FreeBSD: ports/net/netatalk/Makefile,v 1.19 2001/05/18 20:00:25 dinoex Exp $
 #
 
 PORTNAME=	netatalk
@@ -50,7 +50,7 @@ post-extract:
 		> ${WRKSRC}/netatalk.sh
 
 post-install:
-	@${RM} -f ${PREFIX}/bin/nu ${PREFIX}/bin/lp2pap
+	@${RM} -f ${PREFIX}/bin/nu ${PREFIX}/bin/lp2pap.sh
 	${INSTALL_SCRIPT} ${WRKSRC}/netatalk.sh ${PREFIX}/etc/rc.d/netatalk.sh
 	${INSTALL_SCRIPT} ${WRKSRC}/contrib/macusers/macusers \
 		${PREFIX}/bin/macusers
