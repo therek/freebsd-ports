@@ -1,6 +1,6 @@
 # Makefile for knobs
 # Whom:         Maho Nakata <maho@FreeBSD.org>
-# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.8 2005/02/07 10:31:07 maho Exp $
+# $FreeBSD: ports/editors/openoffice-2.0-devel/files/Makefile.knobs,v 1.9 2005/02/09 08:22:56 maho Exp $
 
 .if defined(WITHOUT_JAVA)
 CONFIGURE_ARGS+=	--without-java
@@ -18,6 +18,8 @@ CONFIGURE_ARGS+=	--enable-kde
 
 .if defined(WITHOUT_MOZILLA)
 CONFIGURE_ARGS+=	--disable-mozilla
+.else
+CONFIGURE_ARGS+=	--enable-build-mozilla
 .endif
 
 .if defined(WITH_CUPS)
@@ -44,7 +46,7 @@ pre-fetch:
 	@${ECHO}
 	@${ECHO} "WARNING"
 	@${ECHO} "Your rtld seems to be old."
-	@${ECHO} "Please remake your rtld by:
+	@${ECHO} "Please remake your rtld by:"
 	@${ECHO} "[1] if you use 4-series:"
 	@${ECHO} "# fetch http://people.freebsd.org/~maho/ooo/patch-rtld.c-releng4"
 	@${ECHO} "# cd /usr/src/libexec/rtld-elf ; patch < patch-rtld.c-releng4"
