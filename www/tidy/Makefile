@@ -3,11 +3,11 @@
 # Date created:		27 Oct 1998
 # Whom:			Abel Chow <achow@transoft.net>
 #
-# $FreeBSD$
+# $FreeBSD: Makefile,v 1.11 1999/07/11 02:28:34 cpiazza Exp $
 #
 
-DISTNAME=	tidy7jul99
-PKGNAME=	tidy-0.7.99.2
+DISTNAME=	tidy27sep99
+PKGNAME=	tidy-0.9.99.1
 CATEGORIES=	www
 MASTER_SITES=	http://www.w3.org/People/Raggett/
 EXTRACT_SUFX=	.tgz
