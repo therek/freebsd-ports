@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.84 2004/11/29 23:23:18 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.85 2004/12/07 03:01:33 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -432,7 +432,7 @@ intlhack_PRE_PATCH=		${FIND} ${WRKSRC} -name "intltool-merge.in" | ${XARGS} ${RE
 				 s|unpack *[(]'"'"'U\*'"'"'|unpack ('"'"'C*'"'"'|'
 intlhack_USE_GNOME_IMPL=intltool
 
-gtkhtml3_LIB_DEPENDS=	gtkhtml-3.1.11:${PORTSDIR}/www/gtkhtml3
+gtkhtml3_LIB_DEPENDS=	gtkhtml-3.1.12:${PORTSDIR}/www/gtkhtml3
 gtkhtml3_DETECT=		${X11BASE}/libdata/pkgconfig/libgtkhtml-3.1.pc
 gtkhtml3_USE_GNOME_IMPL=gail libgnomeui libgnomeprintui
 
