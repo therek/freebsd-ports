@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.96 2001/09/08 16:37:49 clive Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.97 2001/09/21 05:43:55 knu Exp $
 #
 
     SUBDIR += CJK
@@ -32,6 +32,7 @@
     SUBDIR += ghostscript6
     SUBDIR += gnumeric
     SUBDIR += gugod-clean
+    SUBDIR += hanzim
     SUBDIR += hc
     SUBDIR += hztty
     SUBDIR += irssi
