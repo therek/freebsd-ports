@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.23 1999/11/24 03:36:14 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.24 1999/11/28 21:39:57 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -23,7 +23,7 @@ CAT?=		/bin/cat
 DISTFILES!=	${CAT} ${FILESDIR}/distfiles
 
 CVS_CMD?=	cvs -z3
-CVS_DATE=	Tue Nov 23 18:52:21 EST 1999
+CVS_DATE=	Sun Nov 28 16:31:22 EST 1999
 SED?=		/usr/bin/sed
 CVS_DATE_!=	${ECHO} -n ${CVS_DATE} | ${SED} 's/[ \t:]/_/g'
 CVS_SITES=	anoncvs@anoncvs1.ca.openbsd.org:/cvs \
