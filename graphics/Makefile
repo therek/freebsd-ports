@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.259 2001/01/18 19:03:51 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.260 2001/01/18 19:06:25 sobomax Exp $
 #
 
     SUBDIR += 4va
@@ -167,6 +167,7 @@
     SUBDIR += py-ming
     SUBDIR += py-opengl
     SUBDIR += qcread
+    SUBDIR += qdraw
     SUBDIR += qiv
     SUBDIR += quickpics
     SUBDIR += qvplay
