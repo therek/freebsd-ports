@@ -3,7 +3,7 @@
 # Date created:         02 Dez 1997
 # Whom:                 dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/fidogate/Makefile,v 1.6 1999/08/30 14:31:35 peter Exp $
 #
 
 DISTNAME=	fidogate-4.2.9
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	system/fido
 MAINTAINER=	dirk.meyer@dinoex.sub.org
 
 # you may commet out this line if you have another transfer-agent
-RUN_DEPENDS=	${PREFIX}/libexec/ifmail/ifcico:${PORTSDIR}/news/ifmail
+RUN_DEPENDS=	${LOCALBASE}/libexec/ifmail/ifcico:${PORTSDIR}/news/ifmail
 
 .if defined(PARALLEL_PACKAGE_BUILD)
 FORBIDDEN=	indefinite hang
