@@ -2,7 +2,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.41 2000/04/12 04:55:31 mharo Exp $
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.42 2000/05/14 05:40:48 billf Exp $
 #
 
 PORTNAME=		linux_base
@@ -38,7 +38,7 @@ RPM_MIRRORS=		\
 	ftp://ftp.is.co.za/linux/distributions/redhat/__DIR__/ \
 	ftp://mirror.aarnet.edu.au/pub/linux/redhat/__DIR__/
 
-STDDIR=			redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
+STDDIR=			old-releases/redhat-6.1/${MACHINE_ARCH}/RedHat/RPMS
 UPDDIR=			updates/6.1/${MACHINE_ARCH}
 
 .include <bsd.port.pre.mk>
