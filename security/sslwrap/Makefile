@@ -3,7 +3,7 @@
 # Date created:		1999 november 7.
 # Whom:			Zahemszky, Gabor <ZGabor at CoDe dot HU>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/sslwrap/Makefile,v 1.1 1999/12/27 01:56:08 steve Exp $
 #
 
 DISTNAME=	sslwrap
@@ -13,7 +13,8 @@ MASTER_SITES=	http://www.rickk.com/sslwrap/
 
 MAINTAINER=	ZGabor@CoDe.HU
 
-RUN_DEPENDS=	${PREFIX}/lib/libssl.a:${PORTSDIR}/security/openssl
+LIB_DEPENDS=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 BUILD_DEPENDS=	${PREFIX}/include/openssl/ssl.h:${PORTSDIR}/security/openssl
 
 .if defined(USA_RESIDENT) && ${USA_RESIDENT} == YES
