@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.190 2004/08/22 22:58:19 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.191 2004/08/22 23:14:53 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -96,6 +96,10 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
       <package>
 	<name>fidogate</name>
 	<range><lt>4.4.9_3</lt></range>
+      </package>
+      <package>
+	<name>fidogate-ds</name>
+	<range><lt>5.1.1_1</lt></range>
       </package>
     </affects>
     <description>
