@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.104 2000/03/19 14:59:36 ume Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.105 2000/03/23 03:41:26 jasone Exp $
 #
 
     SUBDIR += LPRng
@@ -54,6 +54,7 @@
     SUBDIR += no-login
     SUBDIR += npadmin
     SUBDIR += nut
+    SUBDIR += nwclient
     SUBDIR += obliterate
     SUBDIR += p5-SyslogScan
     SUBDIR += pib
