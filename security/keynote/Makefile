@@ -2,7 +2,7 @@
 # Date created:                         02 September 1999
 # Whom:                                 se
 #
-# $FreeBSD: ports/security/keynote/Makefile,v 1.7 2000/09/22 01:59:00 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	keynote
@@ -22,14 +22,14 @@ CONFIGURE_ENV+=	SSLEAY="${OPENSSLBASE}/bin" OPENSSLLIB="${OPENSSLLIB}" \
 
 MAN1=		keynote.1
 MAN3=		keynote.3
-MAN4=		keynote.4
+MAN5=		keynote.5
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/keynote ${PREFIX}/bin/
 	${INSTALL_DATA} ${WRKSRC}/libkeynote.a ${PREFIX}/lib/
 	${INSTALL_DATA} ${WRKSRC}/man/keynote.1 ${PREFIX}/man/man1/
 	${INSTALL_DATA} ${WRKSRC}/man/keynote.3 ${PREFIX}/man/man3/
-	${INSTALL_DATA} ${WRKSRC}/man/keynote.4 ${PREFIX}/man/man4/
+	${INSTALL_DATA} ${WRKSRC}/man/keynote.4 ${PREFIX}/man/man5/keynote.5
 	${MKDIR} ${PREFIX}/share/doc/keynote/
 	${INSTALL_DATA} ${WRKSRC}/doc/rfc2704.txt ${PREFIX}/share/doc/keynote/
 
