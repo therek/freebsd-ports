@@ -2,7 +2,7 @@
 # Date created:				2000-09-23
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-fm/xdiskusage/Makefile,v 1.1 2000/10/04 05:15:34 trevor Exp $
 #
 
 PORTNAME=	xdiskusage
@@ -21,11 +21,13 @@ USE_X_PREFIX=	yes
 
 do-build:
 .for i in panels xdiskusage
-	${CXX} ${CXXFLAGS} -I${X11BASE}/include -c ${WRKSRC}/${i}.C \
-		-o ${WRKSRC}/${i}.o
+	${CXX} ${CXXFLAGS} ${PTHREAD_CFLAGS} -I${X11BASE}/include -c \
+		${WRKSRC}/${i}.C -o ${WRKSRC}/${i}.o
 .endfor
-	${CXX} ${CXXFLAGS} -L${X11BASE}/lib -o ${WRKSRC}/xdiskusage \
-		${WRKSRC}/panels.o ${WRKSRC}/xdiskusage.o -lfltk  -lm -lMesaGL
+	${CXX} ${CXXFLAGS} ${PTHREAD_CFLAGS} -L${X11BASE}/lib -o \
+		${WRKSRC}/xdiskusage ${WRKSRC}/panels.o \
+		${WRKSRC}/xdiskusage.o -lfltk  -lm -lMesaGL \
+		${PTHREAD_LIBS} -lXext -lX11
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/xdiskusage ${PREFIX}/bin
