@@ -1,4 +1,4 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.28 2000/04/21 15:01:36 ache Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.29 2000/05/07 13:20:51 jedgar Exp $
 #
 
     SUBDIR += arc
@@ -11,6 +11,7 @@
     SUBDIR += ha
     SUBDIR += hpack.non-usa.only
     SUBDIR += lha
+    SUBDIR += liblzo
     SUBDIR += linux_rar
     SUBDIR += lzo
     SUBDIR += makeself
