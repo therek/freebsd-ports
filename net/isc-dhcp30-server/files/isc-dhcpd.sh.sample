@@ -1,9 +1,9 @@
 #! /bin/sh
 
-# $FreeBSD: ports/net/isc-dhcp3/files/isc-dhcpd.sh.sample,v 1.1 2000/12/13 08:26:16 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/files/isc-dhcpd.sh.sample,v 1.2 2001/02/17 14:17:30 roam Exp $
 
 OPTIONS=""
-IFACES="SET_THIS"
+IFACES=""
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/$(basename $0)\$"); then
 	echo "$0: Cannot determine the PREFIX" >&2
@@ -12,7 +12,8 @@ fi
 
 case "$1" in
 start)
-	${PREFIX}/sbin/dhcpd $OPTIONS $IFACES
+	${PREFIX}/sbin/dhcpd $OPTIONS $IFACES > /dev/null 2>&1
+	echo -n ' dhcpd'
 	;;
 stop)
 	killall dhcpd
