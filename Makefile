@@ -1,4 +1,4 @@
-# $FreeBSD: ports/Makefile,v 1.61 2000/10/31 21:00:02 jeh Exp $
+# $FreeBSD: ports/Makefile,v 1.62 2001/03/24 21:40:14 asami Exp $
 #
 
 SUBDIR += archivers
@@ -81,9 +81,9 @@ parallel: ${.CURDIR}/INDEX
 	@false
 .endif
 .for dir in ${SUBDIR}
-	@echo "all:: ${dir}-all"
+	@echo "all: ${dir}-all"
 .endfor
-	@cat ${.CURDIR}/INDEX | awk -F '|' '{me=$$1; here=$$2; bdep=$$8; rdep=$$9; split(here, tmp, "/"); if (bdep != "") { gsub("$$", ".tgz", bdep); gsub(" ", ".tgz ", bdep); } if (rdep != "") { gsub("$$", ".tgz", rdep); gsub(" ", ".tgz ", rdep); } print tmp[4] "-all:: " me ".tgz"; print me ": " me ".tgz"; print me ".tgz: " bdep " " rdep; printf("\t@/var/portbuild/scripts/pdispatch ${branch} /var/portbuild/scripts/portbuild %s.tgz %s", me, here); if (bdep != "") printf(" %s", bdep); if (rdep != "") printf(" %s", rdep); printf("\n")}'
+	@cat ${.CURDIR}/INDEX | awk -F '|' '{me=$$1; here=$$2; bdep=$$8; rdep=$$9; split(here, tmp, "/"); if (bdep != "") { gsub("$$", ".tgz", bdep); gsub(" ", ".tgz ", bdep); } if (rdep != "") { gsub("$$", ".tgz", rdep); gsub(" ", ".tgz ", rdep); } print tmp[4] "-all: " me ".tgz"; print me ": " me ".tgz"; print me ".tgz: " bdep " " rdep; printf("\t@/var/portbuild/scripts/pdispatch ${branch} /var/portbuild/scripts/portbuild %s.tgz %s", me, here); if (bdep != "") printf(" %s", bdep); if (rdep != "") printf(" %s", rdep); printf("\n")}'
 
 CVS?= cvs
 .if defined(SUPHOST)
