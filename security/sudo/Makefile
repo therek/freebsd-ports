@@ -2,13 +2,14 @@
 # Date created:         Sun Aug 13 12:36:14 CDT 1995
 # Whom:                 erich@rrnet.com
 #
-# $FreeBSD: ports/security/sudo/Makefile,v 1.32 2000/04/09 18:30:39 cpiazza Exp $
+# $FreeBSD: ports/security/sudo/Makefile,v 1.33 2000/04/17 23:08:29 mharo Exp $
 #
 
 PORTNAME=	sudo
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.3.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cs.colorado.edu/pub/sysadmin/sudo/
+DISTNAME=	${PORTNAME}-1.6.3p4
 
 MAINTAINER=	mharo@FreeBSD.org
 
