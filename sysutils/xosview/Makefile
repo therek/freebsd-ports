@@ -4,10 +4,10 @@
 # Date created:		19 Nov 1997
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.17 1999/08/31 02:00:35 peter Exp $
+# $FreeBSD: ports/sysutils/xosview/Makefile,v 1.18 1999/11/09 18:35:33 obrien Exp $
 #
 
-DISTNAME=	xosview-1.7.2
+DISTNAME=	xosview-1.7.3
 CATEGORIES=	sysutils
 MASTER_SITES=	http://lore.ece.utexas.edu/~bgrayson/xosview/ \
 		${MASTER_SITE_SUNSITE}
