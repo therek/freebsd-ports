@@ -3,14 +3,13 @@
 # Date created:			25 July 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/www/bluefish/Makefile,v 1.6 1999/12/09 20:45:34 jim Exp $
+# $FreeBSD: ports/www/bluefish/Makefile,v 1.7 2000/01/15 02:38:00 jim Exp $
 #
 
 DISTNAME=	bluefish-0.3.5
 CATEGORIES=	www editors
 MASTER_SITES=	http://bluefish.linuxbox.com/download/ \
-		http://student.wau.nl/~olivier/bluefish/download/ \
-		http://ha-pc.cheque.uq.edu.au/download/
+		http://student.wau.nl/~olivier/bluefish/download/
 
 MAINTAINER=	jim@FreeBSD.org
 
