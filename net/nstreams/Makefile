@@ -2,16 +2,15 @@
 # Date created:		22 September 1999
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/net/nstreams/Makefile,v 1.5 2001/01/05 22:37:24 ben Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nstreams
-PORTVERSION=	1.0.0
-PORTREVISION=	1
+PORTVERSION=	1.0.3
 CATEGORIES=	net
-MASTER_SITES=	http://www.hsc.fr/ressources/outils/nstreams/download/
+MASTER_SITES=	ftp://ftp.nessus.org/pub/nstreams/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	Nicolas.Jombart@hsc-labs.com
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
@@ -22,8 +21,8 @@ MAN1=		nstreams.1
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/nstreams ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/docs/nstreams.1 ${MANPREFIX}/man/man1
-.for file in nstreams-networks nstreams-services
-	${INSTALL_DATA} ${WRKSRC}/docs/${file} ${PREFIX}/etc/${file}.sample
-.endfor
+	${INSTALL_DATA} ${WRKSRC}/docs/nstreams-networks \
+	${PREFIX}/etc/nstreams-networks.sample
+	${INSTALL_DATA} ${WRKSRC}/docs/nstreams-services ${PREFIX}/etc/nstreams-services
 
 .include <bsd.port.mk>
