@@ -2,13 +2,14 @@
 # Date created:			14 Apr 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/irssi/Makefile,v 1.28 2000/05/23 21:55:21 will Exp $
+# $FreeBSD: ports/irc/irssi/Makefile,v 1.29 2000/06/01 16:25:41 ade Exp $
 #
 
 PORTNAME=	irssi
-PORTVERSION=	0.7.28-3
+PORTVERSION=	0.7.28.3
 CATEGORIES=	irc ipv6 gnome
 MASTER_SITES=	http://xlife.dhs.org/irssi/files/
+DISTNAME=	irssi-0.7.28-3
 
 MAINTAINER=	jim@FreeBSD.org
 
