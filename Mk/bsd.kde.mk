@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.46 2004/12/13 20:11:44 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -63,7 +63,8 @@ CONFIGURE_ENV+= PTHREAD_LIBS="${PTHREAD_LIBS}"
 .if !defined(_NO_KDE_CONFTARGET_HACK)
 CONFIGURE_TARGET=
 CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL} \
-		--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include
+		--x-libraries=${X11BASE}/lib --x-includes=${X11BASE}/include \
+		--disable-as-needed
 .endif
 
 .if ${USE_KDELIBS_VER} == CVS
