@@ -1,6 +1,6 @@
-# $FreeBSD$
+# $FreeBSD: src/usr.sbin/diskcheckd/Makefile,v 1.1 2001/06/03 20:02:03 phk Exp $
 
-CFLAGS+= -W -Wall -g -O0
+CFLAGS+= -W -Wall
 
 PROG=	diskcheckd
 MAN8=	diskcheckd.8
