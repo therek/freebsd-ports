@@ -2,7 +2,7 @@
 # Date created:		4 Sep 2000
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.22 2001/05/22 16:53:17 ijliao Exp $
+# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.23 2001/06/25 02:00:44 dwcjr Exp $
 #
 
 PORTNAME=	mutt
@@ -10,7 +10,7 @@ PORTVERSION=	${VERSION}.j${JP_VERSION}
 CATEGORIES=	japanese mail
 MASTER_SITES=	http://www.emaillab.org/mutt/1.3/ \
 		http://ha4.seikyou.ne.jp/home/Kohtaro.Hitomi/mutt/ \
-		http://www5.xdsl.ne.jp/~shuna/distfiles/mutt/ \
+		http://www5.xdsl.ne.jp/~shuna/mutt/distfiles/ \
 		ftp://ftp.mutt.org/pub/mutt/devel/
 DISTNAME=	${PORTNAME}-${VERSION}i
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
@@ -29,7 +29,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 .endif
 RUN_DEPENDS=	urlview:${PORTSDIR}/textproc/urlview
 
-VERSION=	1.3.19
+VERSION=	1.3.20
 JP_VERSION=	0
 
 DIST_SUBDIR=	mutt
