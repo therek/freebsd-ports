@@ -4,7 +4,7 @@
 # Whom:				Dirk Froemberg <dirk@FreeBSD.org>
 # Based on work by:		girgen@partitur.se
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linux-netscape47-navigator/Makefile,v 1.19 2000/03/08 11:15:05 dirk Exp $
 #
 
 DISTNAME=	linux-netscape-navigator-${BROWSER_VER}
@@ -24,8 +24,7 @@ BROWSER=	navigator-linux
 
 WRKSRC=		${WRKDIR}/navigator-v472.x86-unknown-linux2.0
 
-# use fake shell REQ script, since we don't require X aout libs.
-PKGREQ=		${.CURDIR}/pkg/REQ
+USE_LINUX_LIB=	yes
 
 MAILCAP=	${.CURDIR}/files/mailcap
 NSUBDIR=	lib/netscape-linux
