@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.45 2002/11/20 04:11:09 knu Exp $
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.46 2002/12/04 17:17:48 kris Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -262,15 +262,15 @@ README.html:
 
 
 
-search: ${PORTSDIR}/INDEX
+search: ${PORTSDIR}/${INDEXFILE}
 	@here=`pwd`; \
 	cd ${PORTSDIR}; \
 	top=`pwd -P`; \
 	there=`echo "$$here/" | sed s%$$top%${PORTSDIR}%`; \
 	if [ -n "$$key" ]; then \
-	  grep $$there ${PORTSDIR}/INDEX | grep -i "${key}" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
+	  grep $$there ${PORTSDIR}/${INDEXFILE} | grep -i "${key}" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
 	elif [ $$name ]; then \
-	  grep $$there ${PORTSDIR}/INDEX | grep -i "^[^|]*${name}[^|]*|" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
+	  grep $$there ${PORTSDIR}/${INDEXFILE} | grep -i "^[^|]*${name}[^|]*|" | awk -F\| '{ printf("Port:\t%s\nPath:\t%s\nInfo:\t%s\nMaint:\t%s\nIndex:\t%s\nB-deps:\t%s\nR-deps:\t%s\n\n", $$1, $$2, $$4, $$6, $$7, $$8, $$9); }'; \
 	else \
 	  echo "The search target requires a keyword parameter or name parameter,"; \
 	  echo "e.g.: \"make search key=somekeyword\""; \
