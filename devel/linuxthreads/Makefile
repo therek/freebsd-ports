@@ -3,7 +3,7 @@
 # Date created:		14 Jan 1999
 # Whom:			Richard Seaman, Jr. <dick@tar.com>
 #
-# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.9 2000/01/29 03:15:21 jasone Exp $
+# $FreeBSD: ports/devel/linuxthreads/Makefile,v 1.10 2000/01/29 11:13:43 jasone Exp $
 #
 
 DISTNAME=      glibc-linuxthreads-2.1.2
@@ -20,7 +20,7 @@ MAINTAINER=    jasone@freebsd.org
 # This port only works on i386 right now.
 ONLY_FOR_ARCHS=i386
 
-.if ${OSVERSION} < 400000
+.if ${OSVERSION} < 400015
 BROKEN="Requires FreeBSD 4.0 or newer"
 .endif
 
