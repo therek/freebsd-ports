@@ -2,7 +2,7 @@
 # Date created:		25 October 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/devel/m4/Makefile,v 1.14 2000/04/11 21:28:56 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	m4
@@ -13,8 +13,8 @@ MASTER_SITE_SUBDIR=	m4
 
 MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE=yes
-CONFIGURE_ARGS= --program-prefix=g
+GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--program-prefix=g
 
 post-install:
 	@${MKDIR} ${PREFIX}/share/examples/gm4
