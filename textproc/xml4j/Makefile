@@ -3,19 +3,19 @@
 # Date created:		21 Feb 2000
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.12 1999/10/16 02:42:16 kuriyama Exp $
+# $FreeBSD: ports/textproc/xml4j/Makefile,v 1.13 2000/02/22 14:46:28 kuriyama Exp $
 #
 
 DISTNAME=	xml4J_3_0_0EA3
 PKGNAME=	xml4j-3.0.0e3
-WRKSRC=		${WRKDIR}/XML4J_3_0_0EA3
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.alphaworks.ibm.com/tech/xml4j/
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
+RUN_DEPENDS=	${LOCALBASE}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
 
+WRKSRC=		${WRKDIR}/XML4J_3_0_0EA3
 RESTRICTED=	"License prohibites distribute."
 NO_BUILD=	YES
 
