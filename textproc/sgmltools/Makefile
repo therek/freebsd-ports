@@ -2,7 +2,7 @@
 # Date created:				7 Apr 2000
 # Whom:					Benno Rice <benno@netizen.com.au>
 #
-# $FreeBSD: ports/textproc/sgmltools/Makefile,v 1.1 2000/05/27 14:44:11 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sgmltools
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.us.sgmltools.org/pub/SGMLtools/v2.0/source/ \
 DISTFILES=	${DISTNAME}.base.tar.bz2
 
 MAINTAINER=	benno@netizen.com.au
+COMMENT=	Generates various output formats from DocBook SGML documents
 
 BUILD_DEPENDS+=	python:${PORTSDIR}/lang/python \
 		jade:${PORTSDIR}/textproc/jade \

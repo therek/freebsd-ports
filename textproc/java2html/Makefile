@@ -2,7 +2,7 @@
 # Date created:				21 March 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/java2html/Makefile,v 1.9 2000/05/28 04:11:33 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		java2html
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
 
 MAINTAINER=		mkamm@gmx.net
+COMMENT=	Java sources to HTML converter
 
 USE_AUTOCONF=		yes
 

@@ -2,7 +2,7 @@
 # Date created:         		22 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.9 2000/11/07 23:28:16 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mgdiff
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	applications
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	andreas@marvin.robin.de
+COMMENT=	A graphical front end to the Unix diff command
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

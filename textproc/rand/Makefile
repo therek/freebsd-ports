@@ -2,7 +2,7 @@
 # Date created:			Mon Jul 26 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/textproc/rand/Makefile,v 1.7 2001/02/05 16:35:10 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rand
@@ -11,6 +11,7 @@ CATEGORIES=	textproc
 MASTER_SITES=	http://math.smsu.edu/~erik/files/
 
 MAINTAINER=	domi@saargate.de
+COMMENT=	Utility to display files or streams in random order
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:				18 May 2001
 # Whom:					Seamus Venasse <svenasse@polaris.ca>
 #
-# $FreeBSD: ports/textproc/p5-Tree-Nary/Makefile,v 1.1 2001/05/27 05:42:57 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		Tree-Nary
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Tree
 PKGNAMEPREFIX=		p5-
 
 MAINTAINER=		svenasse@polaris.ca
+COMMENT=	Perl implementation of N-ary search trees
 
 PERL_CONFIGURE=		yes
 

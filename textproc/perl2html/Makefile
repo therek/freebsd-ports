@@ -2,7 +2,7 @@
 # Date created:				27 May 1999
 # Whom:					Martin Kammerhofer
 #
-# $FreeBSD: ports/textproc/perl2html/Makefile,v 1.7 2000/05/28 04:11:34 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		perl2html
@@ -12,6 +12,7 @@ MASTER_SITES=		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	apps/www/converters
 
 MAINTAINER=		mkamm@gmx.net
+COMMENT=	Perl sources to HTML converter
 
 USE_AUTOCONF=		yes
 

@@ -2,7 +2,7 @@
 # Date created:			9 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/textproc/p5-dTemplate/Makefile,v 1.2 2001/03/01 06:39:13 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	dTemplate
 PORTVERSION=	2.0
@@ -12,6 +12,7 @@ MASTER_SITE_SUBDIR=	dTemplate
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	A powerful template handling logic with advanced features
 
 PERL_CONFIGURE=	yes
 
