@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.36 2001/02/01 01:20:10 jeh Exp $
+# $FreeBSD: ports/misc/amanda24-server/Makefile,v 1.37 2001/02/01 12:59:55 jeh Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -43,8 +43,8 @@ pre-fetch:
 	@${ECHO} "        The default is user"
 	@${ECHO} ""
 
-RUN_DEPENDS=	amrecover:${PORTSDIR}/misc/amanda24-client
-BUILD_DEPENDS=	amrecover:${PORTSDIR}/misc/amanda24-client
+RUN_DEPENDS=	${PREFIX}/sbin/amrecover:${PORTSDIR}/misc/amanda24-client
+BUILD_DEPENDS=	${PREFIX}/sbin/amrecover:${PORTSDIR}/misc/amanda24-client
 
 CONFIGURE_ARGS=	--libexecdir=${PREFIX}/libexec/amanda \
 		--with-amandahosts --with-fqdn \
