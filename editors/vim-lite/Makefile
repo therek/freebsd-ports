@@ -4,10 +4,10 @@
 # Date created:			  Fri Jun 25, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/editors/vim-lite/Makefile,v 1.5 1999/08/25 05:44:35 obrien Exp $
+# $FreeBSD: ports/editors/vim-lite/Makefile,v 1.6 2000/01/07 16:40:01 asami Exp $
 #
 
-PKGNAME=	vim-lite-5.3
+PKGNAME=	vim-lite-${PKGVER}
 
 LITE=		yes
 
