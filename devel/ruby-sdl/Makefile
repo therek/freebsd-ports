@@ -2,7 +2,7 @@
 # Date created:		27 Mar 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.1 2001/03/26 16:47:07 knu Exp $
+# $FreeBSD: ports/devel/ruby-sdl/Makefile,v 1.2 2001/03/26 18:05:55 knu Exp $
 #
 
 PORTNAME=	sdl
@@ -25,8 +25,8 @@ USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
 
 CONFIGURE_ARGS=	--with-sdl-config="sdl11-config" \
-		--with-cflags="-pthread" \
-		--with-ldflags="-lc_r"
+		--with-cflags="${PTHREAD_CFLAGS}" \
+		--with-ldflags="${PTHREAD_LIBS}"
 INSTALL_TARGET=	site-install
 
 .include <bsd.port.pre.mk>
