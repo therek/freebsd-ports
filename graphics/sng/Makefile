@@ -3,31 +3,31 @@
 # Date created:			Mar 20, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sng/Makefile,v 1.2 2001/04/14 10:21:19 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sng
-PORTVERSION=	0.9.4
+PORTVERSION=	1.0.1
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${X11BASE}/lib/X11/rgb.txt:${PORTSDIR}/x11/XFree86-4-clients
 RUN_DEPENDS=	${BUILD_DEPENDS}
 LIB_DEPENDS=	png.5:${PORTSDIR}/graphics/png
 
+USE_REINPLACE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDFLAGS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--with-png-inc=${LOCALBASE}/include \
 		--with-rgbtxt=${X11BASE}/lib/X11/rgb.txt
-
 USE_GMAKE=	yes
 
 MAN1=	sng.1
 
 pre-patch:
-	@${PERL} -pi -e 's|-static||g' ${WRKSRC}/Makefile.in
+	@${REINPLACE_CMD} -e 's|-static||g' ${WRKSRC}/Makefile.in
 
 .include <bsd.port.mk>
