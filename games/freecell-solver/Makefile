@@ -3,11 +3,11 @@
 # Date created:                Fab 9, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/games/freecell-solver/Makefile,v 1.2 2001/03/26 15:21:27 ijliao Exp $
+# $FreeBSD: ports/games/freecell-solver/Makefile,v 1.3 2001/04/15 06:10:51 ijliao Exp $
 #
 
 PORTNAME=	freecell-solver
-PORTVERSION=	1.6.3
+PORTVERSION=	1.6.4
 CATEGORIES=	games
 MASTER_SITES=	http://vipe.technion.ac.il/~shlomif/freecell-solver/ \
 		http://fc-solve.berlios.de/
