@@ -2,11 +2,11 @@
 # Date created:         Jul, 15, 1997
 # Whom:                 cracauer@cons.org "Martin Cracauer"
 #
-# $FreeBSD: ports/shells/scsh/Makefile,v 1.17 2000/10/08 06:04:55 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scsh
-PORTVERSION=	0.5.3
+PORTVERSION=	0.6.0
 CATEGORIES=	shells lang
 MASTER_SITES=	ftp://ftp-swiss.ai.mit.edu/pub/su/scsh/
 
@@ -26,15 +26,11 @@ ALL_TARGET=	enough
 MAN1=		scsh.1
 STRIP=
 
-.if !defined(NOPORTDOCS)
-PLIST=		${PKGDIR}/pkg-plist.doc
-.endif
-
 post-install:
 	@strip ${PREFIX}/bin/scsh
 .if !defined(NOPORTDOCS)
 	@(cd ${WRKSRC} && \
-	 ${INSTALL_DATA} README RELEASE NEWS COPYING ${PREFIX}/lib/scsh/doc)
+	 ${INSTALL_DATA} README RELEASE COPYING ${PREFIX}/lib/scsh/doc)
 	@${RM} -f ${PREFIX}/share/doc/scsh
 	@${LN} -fs ${PREFIX}/lib/scsh/doc ${PREFIX}/share/doc/scsh
 .else
