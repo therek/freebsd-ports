@@ -2,7 +2,7 @@
 # Date created:		22 December 1995
 # Whom:			markm
 #
-# $FreeBSD: ports/games/xneko/Makefile,v 1.13 2000/05/14 05:40:52 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xneko
@@ -14,6 +14,8 @@ MASTER_SITE_SUBDIR=	../R5contrib
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	markm@FreeBSD.org
+
+BROKEN=		"Checksum fails"
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=	yes
