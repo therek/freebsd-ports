@@ -2,11 +2,11 @@
 # Date created:			1 May 2001
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/ruby-romkan/Makefile,v 1.2 2001/07/09 17:55:19 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	romkan
-PORTVERSION=	0.3
+PORTVERSION=	0.4
 CATEGORIES=	japanese converters ruby
 MASTER_SITES=	http://namazu.org/~satoru/ruby-romkan/
 DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
