@@ -1,5 +1,6 @@
-# $FreeBSD$
+# $FreeBSD: ports/japanese/libjconv/files/Makefile.prog,v 1.1 2001/01/16 18:27:26 knu Exp $
 
+PREFIX?=	/usr/local
 LOCALBASE?=	/usr/local
 
 PROG=		jconv
@@ -7,6 +8,6 @@ SRCS=		jconv.c
 CFLAGS+=        -I${LOCALBASE}/include
 LDADD=          -L${.CURDIR} -ljconv
 NOMAN=          YES
-BINDIR=         ${LOCALBASE}/bin
+BINDIR=         ${PREFIX}/bin
 
 .include <bsd.prog.mk>
