@@ -2,7 +2,7 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/devel/popt/Makefile,v 1.3 2000/04/21 22:07:26 fenner Exp $
+# $FreeBSD: ports/devel/popt/Makefile,v 1.4 2000/04/21 22:29:16 fenner Exp $
 #
 
 PORTNAME=	popt
@@ -18,7 +18,8 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/rpm2cpio:${PORTSDIR}/misc/rpm
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
 USE_GMAKE=	yes
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	yes
+CONFIGURE_ARGS=	--enable-shared
 
 MAN3=		popt.3
 MANCOMPRESSED=	no
