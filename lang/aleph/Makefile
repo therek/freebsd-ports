@@ -3,11 +3,11 @@
 # Date created:			Mar 7, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/aleph/Makefile,v 1.3 2001/04/14 11:01:16 ijliao Exp $
+# $FreeBSD: ports/lang/aleph/Makefile,v 1.4 2001/04/22 11:17:40 ijliao Exp $
 #
 
 PORTNAME=	aleph
-PORTVERSION=	0.7.3
+PORTVERSION=	0.8.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.aleph-lang.org/pub/%SUBDIR%/
 MASTER_SITE_SUBDIR=	${PORTNAME}-${PORTVERSION:S,.,-,g}
