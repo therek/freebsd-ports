@@ -2,7 +2,7 @@
 # Date created:         28 February 1999
 # Whom:                 Joao Carlos Mendes Luis <jonny@jonny.eng.br>
 #
-# $FreeBSD: ports/audio/id3ren/Makefile,v 1.5 2000/04/08 21:23:43 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	id3ren
@@ -16,5 +16,9 @@ MAINTAINER=	jonny@jonny.eng.br
 
 USE_ZIP=	yes
 WRKSRC=		${WRKDIR}/id3ren/src
+
+pre-patch:
+	@${PERL} -pi -e 's,<malloc.h>,<stdlib.h>,' \
+		${WRKSRC}/id3ren.c ${WRKSRC}/misc.c
 
 .include <bsd.port.mk>
