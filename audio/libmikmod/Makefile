@@ -2,7 +2,7 @@
 # Date created:        Sun Apr 11 13:06:01 PDT 1999
 # Whom:                Michael Haro <mharo@area51.fremont.ca.us>
 #
-# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.13 2000/06/16 08:47:41 sobomax Exp $
+# $FreeBSD: ports/audio/libmikmod/Makefile,v 1.14 2000/06/16 21:50:21 asami Exp $
 #
 
 PORTNAME=	libmikmod
@@ -19,6 +19,9 @@ INSTALLS_SHLIB=	yes
 USE_GMAKE=	yes
 
 MAN1=	libmikmod-config.1
+
+pre-patch:
+	@${PERL} -pi -e 's|-lpthread|-pthread|g' ${WRKSRC}/configure
 
 pre-build:
 	${RM} -rf ${WRKSRC}/docs/mikmod.info-*
