@@ -2,7 +2,7 @@
 # Date created:		15 Jan 2001
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/pks/Makefile,v 1.1 2001/01/15 04:40:10 kris Exp $
 #
 
 PORTNAME=	pks
@@ -25,7 +25,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS= --datadir=${PREFIX}/share/pks --localstatedir=/var/pks \
 		--sysconfdir=${PREFIX}/share/examples \
 		--libdir=${LOCALBASE}/lib
-CONFIGURE_ENV=	LDFLAGS=-L${LOCALBASE}/lib
+MAKE_ENV+=	LDFLAGS=-L${LOCALBASE}/lib
 
 MAN5=	pksd.conf.5
 MAN8=	pks-intro.8 pksclient.8 pksd.8 pksdctl.8
