@@ -2,7 +2,7 @@
 # Date created:		12 June 2000
 # Whom:			Daniel Harris <dannyboy@subdimension.com>
 #
-# $FreeBSD: ports/sysutils/whowatch/Makefile,v 1.2 2000/07/19 15:41:50 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	whowatch
@@ -12,12 +12,14 @@ MASTER_SITES=	http://wizard.ae.krakow.pl/~mike/download/
 
 MAINTAINER=	dannyboy@FreeBSD.org
 
+USE_REINPLACE=	yes
+
 .include <bsd.port.pre.mk>
 
 .if ${OSVERSION} >= 500014
 pre-patch:
-	@${PERL} -pi -e 's/kp_.?proc\.._/ki_/ ; \
-		s/pcred\.p_//' ${WRKSRC}/proc????.c
+	@find ${WRKSRC} -name 'proc????.c' | xargs ${REINPLACE_CMD} -E -e \
+		's/kp_.?proc\.._/ki_/ ; s/pcred\.p_//'
 .endif
 
 GNU_CONFIGURE=	yes
