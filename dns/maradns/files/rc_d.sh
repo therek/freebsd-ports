@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/maradns/files/rc_d.sh,v 1.1 2004/04/18 15:31:18 clement Exp $
 #
 
 # PROVIDE: %%SERVICE%%
@@ -21,8 +21,8 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-%%SERVICE%%_enable=${%%SERVICE%%_enable:-"NO"}
-%%SERVICE%%_flags=${%%SERVICE%%_flags:-""}	# Can be "-f /path/alternate_rc"
+%%SERVICE%%_enable=${%%SERVICE%%_enable-"NO"}
+# %%SERVICE%%_flags can be something like "-f /path/alternate_rc"
 
 . %%RC_SUBR%%
 
