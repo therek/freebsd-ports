@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.100 1999/11/14 03:50:58 steve Exp $
+# $FreeBSD: ports/print/Makefile,v 1.101 1999/12/29 07:21:31 steve Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -72,6 +72,7 @@
     SUBDIR += pkfonts360
     SUBDIR += pkfonts400
     SUBDIR += pkfonts600
+    SUBDIR += pstotext
     SUBDIR += psutils-a4
     SUBDIR += psutils-letter
     SUBDIR += rlpr
