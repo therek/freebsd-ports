@@ -2,11 +2,11 @@
 # Date created:		16 Aug 1996
 # Whom:			joerg@freebsd.org
 #
-# $FreeBSD: ports/games/xmahjongg/Makefile,v 1.8 2000/02/19 19:28:59 joerg Exp $
+# $FreeBSD: ports/games/xmahjongg/Makefile,v 1.9 2000/04/14 12:27:39 asami Exp $
 #
 
 PORTNAME=	xmahjongg
-PORTVERSION=	3.2
+PORTVERSION=	3.3
 CATEGORIES=	games
 MASTER_SITES=	http://www.lcdf.org/xmahjongg/
 
