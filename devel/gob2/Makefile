@@ -1,12 +1,12 @@
 # New ports collection makefile for:   GTK+ Object Builder
-# Version required:    0.92.3
+# Version required:    0.92.4
 # Date created:        25 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/gob/Makefile,v 1.1.1.1 2000/01/25 11:13:56 nakai Exp $
+# $FreeBSD: ports/x11-toolkits/gob/Makefile,v 1.2 2000/02/08 04:26:26 nakai Exp $
 #
 
-DISTNAME=	gob-0.92.3
+DISTNAME=	gob-0.92.4
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	http://ftp.5z.com/pub/gob/
 
