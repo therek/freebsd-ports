@@ -3,11 +3,11 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/net/centericq/Makefile,v 1.14 2001/02/02 16:48:32 ijliao Exp $
+# $FreeBSD: ports/net/centericq/Makefile,v 1.15 2001/02/21 14:59:32 ijliao Exp $
 #
 
 PORTNAME=	centericq
-PORTVERSION=	3.20.5
+PORTVERSION=	3.22.8
 CATEGORIES=	net
 MASTER_SITES=	http://download.konst.org.ua/
 
@@ -23,6 +23,6 @@ CFLAGS+=	-nostdinc -I${LOCALBASE}/include/ncurses \
 .endif
 
 USE_GMAKE=	yes
-HAS_CONFIGURE=	yes
+GNU_CONFIGURE=	yes
 
 .include <bsd.port.post.mk>
