@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.52 2003/09/18 06:58:18 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -240,7 +240,7 @@ libxml2_LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 libxml2_DETECT=		${LOCALBASE}/libdata/pkgconfig/libxml-2.0.pc
 libxml2_USE_GNOME_IMPL=	pkgconfig
 
-libxslt_LIB_DEPENDS=	xslt.1:${PORTSDIR}/textproc/libxslt
+libxslt_LIB_DEPENDS=	xslt.2:${PORTSDIR}/textproc/libxslt
 libxslt_DETECT=		${LOCALBASE}/libdata/pkgconfig/libxslt.pc
 libxslt_USE_GNOME_IMPL=	libxml2
 
