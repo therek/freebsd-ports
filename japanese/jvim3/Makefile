@@ -3,13 +3,13 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.12 1999/08/25 05:24:39 obrien Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.13 1999/09/27 15:17:35 taoka Exp $
 #
 
 DISTNAME=	vim
 PKGNAME?=	ja-jvim${INPUT_METHOD}-3.0.1.7j
 CATEGORIES=	japanese editors
-MASTER_SITES=	ftp://dutepp0.et.tudelft.nl/pub/Unix/Editors/ \
+MASTER_SITES=	ftp://ftp.vim.org/pub/vim/unix/ \
 		http://hp.vector.co.jp/authors/VA003457/vim/vim3/1.7/
 DISTFILES=	vim-3.0.tar.gz ${JPATCH}
 
