@@ -2,14 +2,13 @@
 # Date created:				05 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/rfc/Makefile,v 1.10 2000/11/02 19:38:47 jedgar Exp $
+# $FreeBSD: ports/misc/rfc/Makefile,v 1.11 2001/01/07 17:49:47 will Exp $
 #
 
 PORTNAME=	rfc
-PORTVERSION=	3.0
+PORTVERSION=	3.2
 CATEGORIES=	misc
 MASTER_SITES=	http://www.dewn.com/rfc/
-DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=
 
 MAINTAINER=	jedgar@FreeBSD.org
@@ -29,6 +28,6 @@ do-configure:
 		s|lynx|w3m|' ${WRKDIR}/${DISTNAME}
 
 do-install:
-	${INSTALL_SCRIPT} ${WRKDIR}/rfc ${PREFIX}/bin/rfc
+	${INSTALL_SCRIPT} ${WRKDIR}/${DISTNAME} ${PREFIX}/bin/${DISTNAME:S/-${PORTVERSION}//}
 
 .include <bsd.port.mk>
