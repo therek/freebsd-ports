@@ -3,21 +3,19 @@
 # Date created:                Jan 28, 2001
 # Whom:                        Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/dotconf/Makefile,v 1.2 2001/03/08 02:21:13 ijliao Exp $
+# $FreeBSD: ports/devel/dotconf/Makefile,v 1.3 2001/04/09 17:30:53 ijliao Exp $
 #
 
 PORTNAME=	dotconf
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.azzit.de/dotconf/download/
 
-MAINTAINER=	ijliao@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 USE_LIBTOOL=	yes
-
 USE_GMAKE=	yes
-
 INSTALLS_SHLIB=	yes
 
 post-install:
