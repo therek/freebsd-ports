@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/games/kdegames11/Makefile,v 1.40 2000/10/23 15:23:49 imura Exp $
+# $FreeBSD: ports/games/kdegames11/Makefile,v 1.41 2000/10/23 16:09:04 imura Exp $
 #
 
 PORTNAME=	kdegames
@@ -18,6 +18,7 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		QwSpriteField.7:${PORTSDIR}/converters/kdesupport11
 
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.49 2000/10/23 15:23:39 imura Exp $
+# $FreeBSD: ports/x11/kdebase11/Makefile,v 1.50 2000/10/23 16:09:04 imura Exp $
 #
 
 PORTNAME=	kdebase
@@ -22,6 +22,7 @@ BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		intl.1:${PORTSDIR}/devel/gettext
 
+NO_LATEST_LINK=	yes
 USE_XLIB=	yes
 USE_XPM=	yes
 USE_BZIP2=	yes

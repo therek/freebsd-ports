@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.46 2000/10/27 16:45:09 imura Exp $
+# $FreeBSD: ports/net/kdenetwork11/Makefile,v 1.47 2000/10/27 17:07:40 imura Exp $
 #
 
 PORTNAME=	kdenetwork
@@ -26,6 +26,7 @@ LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
 		QwSpriteField.7:${PORTSDIR}/converters/kdesupport11
 		
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes

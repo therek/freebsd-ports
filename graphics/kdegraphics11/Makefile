@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.35 2000/05/17 11:37:39 will Exp $
+# $FreeBSD: ports/graphics/kdegraphics11/Makefile,v 1.36 2000/10/23 16:09:05 imura Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -17,6 +17,7 @@ LIB_DEPENDS=	ungif.5:${PORTSDIR}/graphics/libungif \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 HAS_CONFIGURE=	yes

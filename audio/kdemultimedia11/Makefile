@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.39 2000/04/08 21:23:45 mharo Exp $
+# $FreeBSD: ports/audio/kdemultimedia11/Makefile,v 1.40 2000/10/23 16:09:05 imura Exp $
 #
 
 PORTNAME=	kdemultimedia
@@ -16,6 +16,7 @@ MAINTAINER=	se@freebsd.org
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 HAS_CONFIGURE=	yes

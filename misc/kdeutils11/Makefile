@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.40 2000/10/23 15:24:07 imura Exp $
+# $FreeBSD: ports/misc/kdeutils11/Makefile,v 1.41 2000/10/23 16:09:07 imura Exp $
 #
 
 PORTNAME=	kdeutils
@@ -20,6 +20,7 @@ MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_QT=		yes
 GNU_CONFIGURE=	yes

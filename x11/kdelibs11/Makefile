@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.48 2000/10/23 15:23:59 imura Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.49 2000/10/23 16:09:05 imura Exp $
 #
 
 PORTNAME=	kdelibs
@@ -26,7 +26,7 @@ LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 LIBVER=		3
 PLIST_SUB+=	LIBVER="${LIBVER}"
 MAKE_ENV+=	SOMAJOR="${LIBVER}" SOMINOR="0"
-
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_QT=		yes
