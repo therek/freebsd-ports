@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/openldap12/files/slapd.sh,v 1.1 2000/09/25 05:43:46 knu Exp $
 
 slapd=@@PREFIX@@/libexec/slapd
 pidfile=/var/run/slapd.pid
@@ -23,7 +23,7 @@ stop)
     fi
     ;;
 *)
-    echo "Usage: `basename $0` {start|stop}" >&2
+    echo "Usage: ${0##*/} {start|stop}" >&2
     exit 64
     ;;
 esac
