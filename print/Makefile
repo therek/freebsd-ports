@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.170 2001/09/24 08:47:13 knu Exp $
+# $FreeBSD: ports/print/Makefile,v 1.171 2001/09/24 08:50:49 knu Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -144,6 +144,7 @@
     SUBDIR += xdvi
     SUBDIR += xdvik
     SUBDIR += xmbibtex
+    SUBDIR += xpp
     SUBDIR += xtem
     SUBDIR += yatex
     SUBDIR += yatex-mule
