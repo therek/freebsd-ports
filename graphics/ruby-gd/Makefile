@@ -2,12 +2,11 @@
 # Date created:		27 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.2 2000/10/04 04:44:45 asami Exp $
+# $FreeBSD: ports/graphics/ruby-gd/Makefile,v 1.3 2000/10/09 10:58:02 knu Exp $
 #
 
 PORTNAME=	GD
-PORTVERSION=	0.7.0
-PORTREVISION=	1
+PORTVERSION=	0.7.1
 CATEGORIES=	graphics ruby
 MASTER_SITES=	http://kirara.prec.kyoto-u.ac.jp/~tam/GD/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -48,15 +47,20 @@ EXAMPLES_EN=	example.rb	\
 		gdtestttf.png	\
 		gdtestttf.rb	\
 		webpng.rb
-DOCS_EN=	readme.en	\
+DOCS_EN=	Changes		\
+		TODO		\
+		readme.en	\
 		doc/INSTALL.en	\
+		doc/manual.css	\
 		doc/manual.html	\
-		doc/manual.rd
+		doc/manual.rd	\
+		doc/manual_index.html
 DOCS_JA=	readme.ja	\
 		doc/INSTALL.ja
 TUTORIAL_JA=	gd_intro-ja.html	\
 		imgs/0.png		\
 		imgs/1.png		\
+		imgs/256.png		\
 		imgs/arc.png		\
 		imgs/brush1.png		\
 		imgs/brush2.png		\
@@ -68,6 +72,7 @@ TUTORIAL_JA=	gd_intro-ja.html	\
 		imgs/poly.png		\
 		imgs/poly_setPt.png	\
 		imgs/rectangle.png	\
+		imgs/resolve.png	\
 		imgs/string.png		\
 		imgs/string2.png	\
 		imgs/stringttf1.png	\
