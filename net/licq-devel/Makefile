@@ -3,7 +3,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/licq/Makefile,v 1.9 1999/08/30 14:23:12 peter Exp $
 #
 
 DISTNAME=	licq-0.61
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.wibble.net/pub/licq/srcs/ \
 		ftp://ftp.fanfic.org/pub/licq/srcs/ \
 		ftp://ftp.inter-i.uni-mainz.de/pub/licq/srcs/
 
-MAINTAINER=	green@unixhelp.org
+MAINTAINER=	green@FreeBSD.org
 
 USE_QT=		yes
 WRKSRC=		${WRKDIR}/${DISTNAME}
