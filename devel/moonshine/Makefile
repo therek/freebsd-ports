@@ -2,7 +2,7 @@
 # Date created:				26 April 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/moonshine/Makefile,v 1.2 2000/07/24 17:05:24 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	moonshine
@@ -21,11 +21,17 @@ CPPFLAGS+=	-I${X11BASE}/include
 
 CONFIGURE_ENV+=	CPPFLAGS="${CPPFLAGS}"
 
-pre-configure:
-		@ find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
-			's|\$$\{prefix\}/moonshine|\$$\{prefix\}/share/moonshine| ; \
-			 s|\@INSTBIN\@|${PREFIX}/bin| ; s|moc -o|\$$\(MOC\) -o|'
-		@ ${PERL} -pi -e 's|/usr/share/moonshine|${PREFIX}/share/moonshine|' \
-			${WRKSRC}/include/tags.h
+.include <bsd.port.pre.mk>
 
-.include <bsd.port.mk>
+.if ${MACHINE_ARCH} == "alpha"
+CFLAGS+=	-O0
+.endif
+
+pre-configure:
+	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
+		's|\$$\{prefix\}/moonshine|\$$\{prefix\}/share/moonshine| ; \
+		 s|\@INSTBIN\@|${PREFIX}/bin| ; s|moc -o|\$$\(MOC\) -o|'
+	@${PERL} -pi -e 's|/usr/share/moonshine|${PREFIX}/share/moonshine|' \
+		${WRKSRC}/include/tags.h
+
+.include <bsd.port.post.mk>
