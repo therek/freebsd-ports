@@ -2,11 +2,11 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.46 2001/07/24 14:07:58 roam Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.47 2001/09/04 23:49:26 lioux Exp $
 #
 
 PORTNAME=	netpbm
-PORTVERSION=	9.17
+PORTVERSION=	9.18
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
