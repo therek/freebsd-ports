@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.375 2000/07/10 08:39:09 kuriyama Exp $
+# $FreeBSD: ports/net/Makefile,v 1.376 2000/07/10 15:45:37 steve Exp $
 #
 
     SUBDIR += SSLtelnet
@@ -56,7 +56,6 @@
     SUBDIR += doc
     SUBDIR += domtools
     SUBDIR += echoping
-    SUBDIR += elsa
     SUBDIR += etherboot
     SUBDIR += ethereal
     SUBDIR += everybuddy
@@ -220,6 +219,7 @@
     SUBDIR += tcpflow
     SUBDIR += tcpshow
     SUBDIR += tcptrace
+    SUBDIR += tcserver
     SUBDIR += tdetect
     SUBDIR += telnetx
     SUBDIR += telserv
