@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/sysutils/daemontools/files/svscan.sh.sample,v 1.5 2004/06/28 23:56:18 roam Exp $
+# $FreeBSD: ports/sysutils/daemontools/files/svscan.sh.sample,v 1.6 2004/07/25 08:52:51 nork Exp $
 #
 
 # PROVIDE: svscan
@@ -67,6 +67,7 @@ svscan_start () {
 }
 
 svscan_stop_post () {
+	echo "Stopping svscan."
 	%%PREFIX%%/bin/svc -dx `/bin/ls -d $svscan_servicedir/* $svscan_servicedir/*/log 2>/dev/null`
 }
 
