@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.79 2000/06/20 20:14:43 will Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.80 2000/07/06 11:29:22 sobomax Exp $
 #
 
     SUBDIR += FWF
@@ -13,6 +13,7 @@
     SUBDIR += gnome-look
     SUBDIR += gob
     SUBDIR += gtk--
+    SUBDIR += gtk-Mac2-theme
     SUBDIR += gtk-engines
     SUBDIR += gtk-engines-collection
     SUBDIR += gtk10
