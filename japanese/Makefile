@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.371 2001/07/31 01:48:50 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.372 2001/07/31 01:49:55 taoka Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -388,6 +388,7 @@
     SUBDIR += xemacs21-sumo-wnn6
     SUBDIR += xemacs21-wnn6
     SUBDIR += xjman
+    SUBDIR += xjman-3
     SUBDIR += xjtext
     SUBDIR += xklock
     SUBDIR += xmsgsaver
