@@ -3,7 +3,7 @@
 # Date created:		28 Feburary 2000
 # Whom:			Jeremy Lea <reg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.2 2000/03/07 09:58:57 reg Exp $
+# $FreeBSD: ports/x11/XFree86-aoutlibs/Makefile,v 1.3 2000/03/11 17:52:07 sada Exp $
 #
 
 DISTNAME=	Xbin
@@ -27,6 +27,7 @@ pre-configure:
 		${PKGDIR}/REQ ${PKGNAME} INSTALL
 
 do-install:
+	@${MKDIR} -p ${PREFIX}/lib/aout
 	cd ${WRKSRC}; \
 	for l in $$(ls lib*); do \
 		${SETENV} OBJFORMAT=${PORTOBJFORMAT} \
