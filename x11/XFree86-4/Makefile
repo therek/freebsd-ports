@@ -2,7 +2,7 @@
 # Date created:         5 January 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.104 2000/12/21 21:03:31 jmz Exp $
+# $FreeBSD: ports/x11/XFree86-4/Makefile,v 1.105 2000/12/22 23:07:25 jmz Exp $
 #
 
 PORTNAME=	XFree86
@@ -39,7 +39,7 @@ PREFIX=		${X11BASE}
 .else
 IS_INTERACTIVE=	yes	# configure script asks questions
 .endif
-MTREE_FILE=	/etc/mtree/BSD.x11.dist
+MTREE_FILE=	/etc/mtree/BSD.x11-4.dist
 .if (${MACHINE} == "pc98")
 SCRIPTS_ENV+=	MACHINE=pc98
 PLIST=		${PKGDIR}/pkg-plist.pc98
