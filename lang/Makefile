@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/lang/Makefile,v 1.218 2001/03/29 13:18:52 sobomax Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -61,6 +61,7 @@
     SUBDIR += lua
     SUBDIR += m3gdb
     SUBDIR += mawk
+    SUBDIR += mdk
     SUBDIR += mit-scheme
     SUBDIR += mixal
     SUBDIR += mmix
