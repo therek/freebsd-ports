@@ -2,7 +2,7 @@
 # Date created:				28 September 2001
 # Whom:					Alexey Zelkin <phantom@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/bugzilla/Makefile,v 1.1 2001/10/01 13:18:55 phantom Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bugzilla
@@ -52,6 +52,7 @@ post-patch:
 	@find -d ${WRKSRC} -name CVS -type d -exec ${RM} -rf {} \;
 	@find -d ${WRKSRC} -name sgml -type d -exec ${RM} -rf {} \;
 	@find ${WRKSRC} -name .cvsignore -type f -exec ${RM} -f {} \;
+	@find ${WRKSRC} -name README.docs -type f -exec ${RM} -f {} \;
 .for i in ${BONSAIPERLWC}
 	@${PERL} -pi -e 's@#!/usr/bonsaitools/bin/perl@#!/usr/bin/perl@' \
 		${WRKSRC}/$i
@@ -65,10 +66,13 @@ pre-install:
 do-install:
 	${MKDIR} ${BUGZILLADIR}
 	find ${WRKSRC} \! -type d -maxdepth 1 \! -name UPGRADING* -exec \
-		${INSTALL_DATA} {} ${BUGZILLADIR} \;
+		${INSTALL} ${COPY} -m 700 {} ${BUGZILLADIR} \;
 .if !defined(NOPORTSDOCS)
 	${MKDIR} ${DOCSDIR}
 	${TAR} -C ${WRKSRC}/docs -cf - . | ${TAR} --unlink -C ${DOCSDIR} -xf -
 .endif
+
+post-install:
+	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
