@@ -3,7 +3,7 @@
 # Date created:         11 September 1998
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/games/pysol/Makefile,v 1.23 2000/02/07 14:33:19 tg Exp $
+# $FreeBSD: ports/games/pysol/Makefile,v 1.24 2000/02/15 12:46:33 tg Exp $
 #
 
 DISTNAME=       pysol-3.40
@@ -13,7 +13,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${CARDSETS}${EXTRACT_SUFX}
 
 MAINTAINER=	tg@FreeBSD.org
 
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
+RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
 
 NO_BUILD=	yes
 
