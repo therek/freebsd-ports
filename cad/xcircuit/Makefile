@@ -2,14 +2,14 @@
 # Date created:		3 Apr 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.29 2001/09/01 16:04:37 sf Exp $
+# $FreeBSD: ports/cad/xcircuit/Makefile,v 1.30 2001/09/11 21:23:42 knu Exp $
 #
 
 PORTNAME=	xcircuit
-PORTVERSION=	2.3.3.b9
+PORTVERSION=	2.3.3.b15
 PORTEPOCH=	1
 CATEGORIES=	cad
-MASTER_SITES=	http://bach.ece.jhu.edu/~tim/programs/xcircuit/archive/
+MASTER_SITES=	http://xcircuit.ece.jhu.edu/archive/
 DISTNAME=	${PORTNAME}-${PORTVERSION:R}
 
 MAINTAINER=	ports@FreeBSD.org
