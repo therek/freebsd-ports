@@ -2,11 +2,12 @@
 # Date created:         30 Oct 1997
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/net/sendfile/Makefile,v 1.15 2000/09/25 12:21:30 asami Exp $
+# $FreeBSD: ports/net/sendfile/Makefile,v 1.16 2001/03/06 17:24:22 sf Exp $
 #
 
 PORTNAME=	sendfile
 PORTVERSION=	2.1a
+PORTREVISION=	1
 CATEGORIES=	net
 MASTER_SITES=   ftp://ftp.belwue.de/pub/unix/sendfile/current/
 DISTFILES=	sendfile-20010216.tar.gz
