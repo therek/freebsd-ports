@@ -2,7 +2,7 @@
 # Date Created:				30 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/libcabinet/Makefile,v 1.1 2000/11/30 16:29:46 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libcabinet
@@ -17,6 +17,12 @@ INSTALLS_SHLIB=	yes
 SRCFILE=	${WRKSRC}/listcab.cpp
 PROGFILE=	${SRCFILE:S/.cpp$//}
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 500035
+BROKEN=		"Does not compile on 5.0"
+.endif
+
 post-build:
 	${CXX} ${CXXFLAGS} -o ${PROGFILE} ${SRCFILE} -L${WRKSRC} -lcabinet
 
@@ -26,4 +32,4 @@ pre-install:
 post-install:
 	${INSTALL_PROGRAM} ${PROGFILE} ${PREFIX}/bin
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:		19 November 1996
 # Whom:			Pedro Giffuni
 #
-# $FreeBSD: ports/net/freewais-sf/Makefile,v 1.16 2000/07/22 06:57:40 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	freewais-sf
@@ -25,6 +25,12 @@ MAN1=	catalog.1 dictionary.1 inverted_file.1 mkfmt.1 waisindex.1 \
 	waisq.1 waissearch.1 waisserver.1 xwais.1 xwaisq.1
 MAN3=	ftw.3 regexp.3 scandir.3
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 500035
+BROKEN=		"Does not compile on 5.0"
+.endif
+
 post-extract:
 	${CP} ${FILESDIR}/freebsd.sh ${WRKSRC}/hints
 
@@ -34,4 +40,4 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/SF/fwsf.ps ${PREFIX}/share/doc/SF
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

@@ -2,7 +2,7 @@
 # Date created:                        22 Apr 2000
 # Whom:                                Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/pspp/Makefile,v 1.2 2001/01/06 20:24:31 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pspp
@@ -15,4 +15,10 @@ MAINTAINER=	john@coastalgeology.org
 
 GNU_CONFIGURE=	yes
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 500035
+BROKEN=		"Does not compile on 5.0"
+.endif
+
+.include <bsd.port.post.mk>
