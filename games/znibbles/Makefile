@@ -3,12 +3,12 @@
 # Date created:		21 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/znibbles/Makefile,v 1.1.1.1 1999/11/01 04:10:49 steve Exp $
+# $FreeBSD: ports/games/znibbles/Makefile,v 1.2 1999/11/14 02:41:52 steve Exp $
 #
 
 DISTNAME=	znibbles-0.0.7
 CATEGORIES=	games
-MASTER_SITES=	http://www.stud.enst.fr/~vmallet/archives/
+MASTER_SITES=	ftp://koala.inria.fr/pub/games/znibbles/
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
