@@ -2,11 +2,12 @@
 # Date created:		11 November 2000
 # Whom:			Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD: ports/mail/mahogany/Makefile,v 1.1 2000/11/17 20:43:33 ade Exp $
+# $FreeBSD: ports/mail/mahogany/Makefile,v 1.2 2001/02/05 15:10:43 olgeni Exp $
 #
 
 PORTNAME=		mahogany
 PORTVERSION=		0.60
+PORTREVISION=		1
 CATEGORIES=		mail python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	mahogany
@@ -22,6 +23,7 @@ BUILD_DEPENDS+=		latex2html:${PORTSDIR}/textproc/latex2html
 PYTHON_VERSION=		python1.5
 USE_AUTOCONF=		yes
 USE_GMAKE=		yes
+CONFIGURE_ENV+=		OSTYPE=${OPSYS}
 
 INSTALL_TARGET=		install_bin install_locale
 .if !defined(NOPORTDOCS)
