@@ -2,7 +2,7 @@
 # Date created:         20 Dec 97
 # Whom:                 Pedro Giffuni <giffunip@asme.org>
 #
-# $FreeBSD: ports/math/xldlas/Makefile,v 1.10 2000/04/14 07:20:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xldlas
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	-source.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms
+LIB_DEPENDS=	forms.0:${PORTSDIR}/x11-toolkits/xforms
 
 WRKSRC=		${WRKDIR}/xldlas
 
