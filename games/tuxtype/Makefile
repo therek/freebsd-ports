@@ -2,11 +2,11 @@
 # Date created:				Mon Aug  6 21:53:03 EDT 2001
 # Whom:					Patrick Li <pat@databits.net>
 #
-# $FreeBSD: ports/games/tuxtype/Makefile,v 1.1 2001/08/08 04:21:17 lioux Exp $
+# $FreeBSD: ports/games/tuxtype/Makefile,v 1.2 2001/08/10 04:17:26 lioux Exp $
 #
 
 PORTNAME=	tuxtype
-PORTVERSION=	1.0
+PORTVERSION=	1.0.1
 CATEGORIES=	games
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -24,13 +24,19 @@ SDL_CONFIG=	${LOCALBASE}/bin/sdl11-config
 CONFIGURE_ENV=	SDL_CONFIG="${SDL_CONFIG}"
 
 pre-patch:
-.for dirs in data images sounds docs/en ..
-	@${PERL} -pi.orig -e 's|${LOCALBASE}/share/tuxtype|${DATADIR}|; \
-		s|/usr/doc/tuxtype|${DOCSDIR}|' \
+.for dirs in data images sounds
+	@${PERL} -pi.orig -e \
+		's|\$$\(prefix\)/tuxtype/README_IMAGES.TXT|${DOCSDIR}/README_IMAGES.TXT|; \
+		s|\$$\(prefix\)/tuxtype/README_SOUNDS.TXT|${DOCSDIR}/README_SOUNDS.TXT|; \
+		s|\$$\(prefix\)/tuxtype|${DATADIR}|' \
 		${WRKSRC}/tuxtype/${dirs}/Makefile.am
 .endfor
+.for docs in docs/en ..
+	@${PERL} -pi.orig -e 's|\$$\(prefix\)/tuxtype|${DOCSDIR}|' \
+		${WRKSRC}/tuxtype/${docs}/Makefile.am
+.endfor
 .for files in graphics playgame
-	@${PERL} -pi.orig -e 's|${LOCALBASE}/share/tuxtype|${DATADIR}|' \
+	@${PERL} -pi.orig -e 's|/usr/local/share/tuxtype|${DATADIR}|' \
 		${WRKSRC}/tuxtype/${files}.h
 .endfor
 
