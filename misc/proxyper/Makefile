@@ -2,11 +2,12 @@
 # Date created:         31 Oct 1999
 # Whom:                 globalpanic@gmx.net
 #
-# $FreeBSD: ports/misc/proxyper/Makefile,v 1.10 2001/03/02 01:05:45 will Exp $
+# $FreeBSD: ports/misc/proxyper/Makefile,v 1.11 2001/03/21 19:03:33 dbaker Exp $
 #
 
 PORTNAME=	proxyper-freebsd3-elf-x86
 PORTVERSION=	319c
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.distributed.net/pub/dcti/proxyper-rc5des/ \
 		http://http.distributed.net/pub/dcti/proxyper-rc5des/
