@@ -3,11 +3,11 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/editors/hexedit/Makefile,v 1.9 2000/04/14 00:25:31 mharo Exp $
+# $FreeBSD: ports/editors/hexedit/Makefile,v 1.10 2001/02/07 14:51:13 obrien Exp $
 #
 
 PORTNAME=		hexedit
-PORTVERSION=		1.1.0
+PORTVERSION=		1.2.1
 CATEGORIES=		editors
 MASTER_SITES=		http://www.chez.com/prigaux/ \
 			${MASTER_SITE_SUNSITE}
@@ -16,7 +16,7 @@ EXTRACT_SUFX=		.src.tgz
 
 MAINTAINER=		obrien@FreeBSD.org
 
-USE_AUTOCONF=		yes
+GNU_CONFIGURE=		yes
 
 ALL_TARGET=
 WRKSRC=			${WRKDIR}/hexedit
