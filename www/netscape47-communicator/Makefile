@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.63 2000/04/15 05:20:48 asami Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.64 2000/05/13 14:31:28 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -20,7 +20,7 @@ MASTER_SITES?=	ftp://ftp.netscape.com./pub/communicator/english/4.73/unix/suppor
 DISTFILES?=	communicator-v473-export.alpha-dec-osf4.0.tar.gz
 .endif
 
-ONLY_FOR_ARCHS=	i386 alpha
+ONLY_FOR_ARCHS?=	i386 alpha
 
 MASTERDIR=	${.CURDIR}/../netscape4-communicator
 .if ${ARCH} == "i386"
