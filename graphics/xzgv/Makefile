@@ -2,7 +2,7 @@
 # Date created:				7 Oct 2000
 # Whom:					Norio Suzuki <nosuzuki@e-mail.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/xzgv/Makefile,v 1.1 2000/10/19 11:56:48 trevor Exp $
 #
 
 PORTNAME=	xzgv
@@ -16,11 +16,16 @@ MAINTAINER=	nosuzuki@e-mail.ne.jp
 
 USE_GMAKE=	yes
 USE_IMLIB=	yes
+USE_X_PREFIX=	yes
 
 MAN1=		xzgv.1
 
+post-patch:
+	@${PERL} -pi -e "s:usr/local:${PREFIX}:g" ${WRKSRC}/config.mk
+
 post-install:
-	strip ${PREFIX}/bin/xzgv
+	${ECHO} ${PREFIX}
+	strip -s ${PREFIX}/bin/xzgv
 	install-info ${PREFIX}/info/xzgv ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
