@@ -1,7 +1,7 @@
 # -*- mode: Makefile; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.62 2005/01/29 01:47:40 perky Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.63 2005/01/29 05:01:01 perky Exp $
 #
 
 .if !defined(_POSTMKINCLUDED) && !defined(Python_Pre_Include)
@@ -223,9 +223,9 @@ PYTHON_SUFFIX=		24
 
 # Python-2.3
 .elif ${PYTHON_VERSION} == "python2.3"
-PYTHON_PORTVERSION?=2.3.4
+PYTHON_PORTVERSION?=2.3.5
 PYTHON_PORTSDIR=	${PORTSDIR}/lang/python23
-PYTHON_REL=			234
+PYTHON_REL=			235
 PYTHON_SUFFIX=		23
 
 # Python-2.2
