@@ -3,7 +3,7 @@
 # Date created:        			20 December 1998
 # Whom:                			jesse@cs.uni-magdeburg.de
 #
-# $FreeBSD: ports/lang/squeak1/Makefile,v 1.8 1999/10/01 09:31:22 asami Exp $
+# $FreeBSD: ports/lang/squeak1/Makefile,v 1.9 2000/02/20 21:02:00 steve Exp $
 #
 
 DISTNAME=	1.31
@@ -44,7 +44,7 @@ do-install:
 .for f in Squeak1.31.changes Squeak1.31.image
 	(cd ${WRKSRC}/image && ${INSTALL_DATA} $f ${PREFIX}/share/squeak/$f)
 .endfor
-	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/image/${SQUEAK_SRC} \
+	${INSTALL_DATA} ${DISTDIR}/${DIST_SUBDIR}/${SQUEAK_SRC} \
 		${PREFIX}/share/squeak/${SQUEAK_SRC}
 
 .include <bsd.port.mk>
