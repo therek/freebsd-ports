@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.72 2001/08/26 04:14:17 kuriyama Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.73 2001/12/12 07:54:15 sobomax Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -236,7 +236,8 @@ MASTER_SITE_SOURCEFORGE+= \
 	http://ftp2.sourceforge.net/%SUBDIR%/ \
 	ftp://prdownload.sourceforge.net/pub/%SUBDIR%/ \
 	ftp://projects.sourceforge.net/pub/%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/
+	ftp://ftp.kddlabs.co.jp/sourceforge/%SUBDIR%/ \
+	ftp://ftp.chg.ru/pub/sourceforge/%SUBDIR%/
 
 MASTER_SITE_SUNSITE+=	\
 	ftp://metalab.unc.edu/pub/Linux/%SUBDIR%/ \
