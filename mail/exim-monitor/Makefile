@@ -2,15 +2,16 @@
 # Date created:		27 August 2001
 # Whom:			sheldonh@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/exim-monitor/Makefile,v 1.1 2001/08/27 13:19:10 sheldonh Exp $
 #
 
-PORTNAME=	exim
+PORTNAME=	exim-monitor
 PORTVERSION=	3.33
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/email/exim/ \
 		http://www.exim.org/ftp/ \
 		ftp://ftp.is.co.za/networking/mail/transport/exim/
+DISTNAME=	exim-${PORTVERSION}
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
