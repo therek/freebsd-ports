@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.71 1999/12/28 10:17:34 dirk Exp $
+# $FreeBSD: ports/www/apache13-php4/scripts/configure.php,v 1.72 2000/01/02 17:17:29 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -143,7 +143,7 @@ LIB_DEPENDS+=	crypto.1:\${PORTSDIR}/security/openssl \\
 		ssl.1:\${PORTSDIR}/security/openssl
 RUN_DEPENDS+=	openssl:\${PORTSDIR}/security/openssl
 
-VERSION_MODSSL=	2.4.9
+VERSION_MODSSL=	2.4.10
 
 RESTRICTED=	"Contains cryptography"
 
