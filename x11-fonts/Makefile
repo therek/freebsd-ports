@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-fonts/Makefile,v 1.19 2001/05/02 20:40:37 mi Exp $
+# $FreeBSD: ports/x11-fonts/Makefile,v 1.20 2001/05/11 15:58:01 vanilla Exp $
 #
 
     SUBDIR += XFree86-4-font100dpi
@@ -6,7 +6,6 @@
     SUBDIR += XFree86-4-fontCyrillic
     SUBDIR += XFree86-4-fontDefaultBitmaps
     SUBDIR += XFree86-4-fontEncodings
-    SUBDIR += XFree86-4-fontLatin2
     SUBDIR += XFree86-4-fontScalable
     SUBDIR += Xg
     SUBDIR += bdfresize
