@@ -1,12 +1,12 @@
 # New ports collection makefile for:	lpe
-# Version required:	1.2.2
+# Version required:	1.2.3
 # Date created:		12 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/lpe/Makefile,v 1.6 1999/08/25 05:44:00 obrien Exp $
+# $FreeBSD: ports/editors/lpe/Makefile,v 1.7 1999/09/17 18:21:29 cpiazza Exp $
 #
 
-DISTNAME=     	lpe-1.2.2
+DISTNAME=     	lpe-1.2.3
 CATEGORIES=	editors
 MASTER_SITES=	http://cdsmith.twu.net/lpe/
 
