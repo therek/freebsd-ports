@@ -3,7 +3,7 @@
 # Date created:        19 Januruary 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.15 1999/08/31 03:00:12 peter Exp $
+# $FreeBSD: ports/x11-wm/mlvwm/Makefile,v 1.16 1999/10/05 03:16:32 nakai Exp $
 #
 
 DISTNAME=	mlvwm090
@@ -22,6 +22,9 @@ MAN1=		mlvwm.1
 
 MLVWMLIBDIR=	${PREFIX}/lib/X11/mlvwm
 
+post-extract:
+	@${TAR} -C ${WRKSRC}/pixmap -xzf ${DISTDIR}/mini-icons.tar.gz
+
 post-patch:
 	@${PERL} -pi -e "s|%%PREFIX%%|${PREFIX}|g" ${WRKSRC}/sample_rc/Mlvwmrc*
 
@@ -30,6 +33,5 @@ post-install:
 	@${MKDIR} ${MLVWMLIBDIR}/pixmap
 	${INSTALL_DATA} ${WRKSRC}/pixmap/*.xpm ${MLVWMLIBDIR}/pixmap
 	${INSTALL_DATA} ${WRKSRC}/sample_rc/Mlvwmrc* ${MLVWMLIBDIR}
-	(cd ${MLVWMLIBDIR}/pixmap; ${TAR} xzf ${DISTDIR}/mini-icons.tar.gz)
 
 .include <bsd.port.mk>
