@@ -2,7 +2,7 @@
 # Date created:         8 Jul 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/security/pgp/Makefile,v 1.34 2000/04/09 18:30:17 cpiazza Exp $
+# $FreeBSD: ports/security/pgp/Makefile,v 1.35 2000/04/21 08:18:45 mharo Exp $
 #
 
 # Pick an initial default, else it doesn't get set in the INDEX.
@@ -44,8 +44,7 @@ pre-fetch:
 .if ${USA_RESIDENT} == YES
 PORTNAME=	pgp
 PORTVERSION=	2.6.2
-MASTER_SITES=	ftp://utopia.hacktic.nl/pub/replay/pub/pgp/unix/ \
-		ftp://sable.ox.ac.uk/pub/crypto/pgp/unix/
+MASTER_SITES=   ftp://utopia.hacktic.nl/pub/crypto/pgp/unix/
 DISTNAME=	pgp262s
 
 WRKSRC=		${WRKDIR}/src
