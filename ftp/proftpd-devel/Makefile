@@ -3,7 +3,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.18 1999/09/28 07:30:13 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.19 1999/10/10 06:40:17 mharo Exp $
 #
 
 DISTNAME=	proftpd-1.2.0pre8
@@ -39,20 +39,22 @@ post-configure:
 	@${SED}	-e 's:/usr/bin:${PREFIX}/bin:' \
 		< ${WRKSRC}/src/ftpcount.1.pre_sed > ${WRKSRC}/src/ftpcount.1
 
-STRIP=
+#STRIP=
 do-install:
+	@${MKDIR} /var/run/proftpd
 	@${INSTALL_PROGRAM} ${WRKSRC}/ftpcount ${PREFIX}/bin/ftpcount
 	@${INSTALL_PROGRAM} ${WRKSRC}/proftpd ${PREFIX}/libexec/proftpd
 	@${INSTALL_PROGRAM} ${WRKSRC}/ftpshut ${PREFIX}/sbin/ftpshut
 	@${INSTALL_MAN} ${WRKSRC}/src/ftpcount.1 ${PREFIX}/man/man1/ftpcount.1
 	@${INSTALL_MAN} ${WRKSRC}/src/ftpshut.8 ${PREFIX}/man/man8/ftpshut.8
 	@${INSTALL_MAN} ${WRKSRC}/src/proftpd.8 ${PREFIX}/man/man8/proftpd.8
-	@${INSTALL_SCRIPT} \
+	@${INSTALL_DATA} \
 		${WRKSRC}/sample-configurations/basic.conf ${PREFIX}/etc/proftpd.conf.default
 	@if [ ! -f ${PREFIX}/etc/proftpd.conf ]; then \
-		${INSTALL_SCRIPT} \
+		${INSTALL_DATA} \
 		${WRKSRC}/sample-configurations/basic.conf ${PREFIX}/etc/proftpd.conf; \
 	fi
+	@${SED} -e 's,/usr/local,${PREFIX},g' ${FILESDIR}/proftpd.sh.sample > ${PREFIX}/etc/rc.d/proftpd.sh.sample
 
 	@${CAT} ${PKGMESSAGE}
 
