@@ -2,11 +2,11 @@
 # Date created:         29 Feb 2000
 # Whom:                 sheldonh
 #
-# $FreeBSD: ports/games/freeciv-gtk/Makefile,v 1.1 2000/02/29 15:25:59 sheldonh Exp $
+# $FreeBSD: ports/games/freeciv-gtk/Makefile,v 1.2 2000/04/14 06:42:54 mharo Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../freeciv
 
-USE_GTK=	yes
+WITH_GTK=	yes
 
 .include "${MASTERDIR}/Makefile"
