@@ -2,7 +2,7 @@
 # Date created:				28 August 2000
 # Whom:					Hye-Shik Chang <perky@python.or.kr>
 #
-# $FreeBSD: ports/www/mod_python/Makefile,v 1.8 2001/05/11 12:38:46 jeh Exp $
+# $FreeBSD: ports/www/mod_python/Makefile,v 1.9 2001/05/19 19:08:26 ijliao Exp $
 #
 
 PORTNAME=	mod_python
@@ -48,10 +48,10 @@ pre-fetch:
 
 pre-patch:
 .if !defined(WITH_OPENPTY)
-	${PATCH} -s < ${PATCHDIR}/optpatch-WITHOUT_OPENPTY
+	cd ${PYTHON_WRKSRC} && ${PATCH} -s < ${PATCHDIR}/optpatch-WITHOUT_OPENPTY
 .endif
 .if defined(WANT_EAPI)
-	${PATCH} -s < ${PATCHDIR}/optpatch-WANT_EAPI
+	cd ${WRKSRC} && ${PATCH} -p2 -s < ${PATCHDIR}/optpatch-WANT_EAPI
 .endif
 
 pre-configure:
