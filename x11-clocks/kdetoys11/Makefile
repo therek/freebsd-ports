@@ -2,20 +2,21 @@
 # Date created:		18 may 1999
 # Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/x11-clocks/kdetoys11/Makefile,v 1.11 2000/10/24 14:08:05 imura Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys11/Makefile,v 1.12 2000/10/28 08:37:17 imura Exp $
 #
 
 PORTNAME=	kdetoys
 PORTVERSION=	1.1.2
 CATEGORIES=	x11-clocks kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/source/bz2
+MASTER_SITE_SUBDIR=	Attic/old/1.1.2/distribution/tar/generic/source/bz2
 
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
 LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
+NO_LATEST_LINK=	yes
 USE_BZIP2=	yes
 USE_GMAKE=	yes
 USE_NEWGCC=	yes
