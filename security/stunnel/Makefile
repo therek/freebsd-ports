@@ -2,11 +2,11 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.34 2001/08/10 14:21:32 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	stunnel
-PORTVERSION=	3.20
+PORTVERSION=	3.21
 CATEGORIES=	security
 MASTER_SITES=	http://www.stunnel.org/download/stunnel/src/ \
 		ftp://stunnel.mirt.net/stunnel/ \
@@ -18,7 +18,7 @@ MAINTAINER=	martti.kuparinen@iki.fi
 USE_OPENSSL=	YES
 IS_INTERACTIVE=	YES	# prompts for information while generating certificate
 
-USE_AUTOCONF=	yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--localstatedir=/var/run
 
 MAN8=		stunnel.8
