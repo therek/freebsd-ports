@@ -2,7 +2,7 @@
 # Date created:				07 April 2001
 # Whom:					Kai Voigt (k@123.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/roxen/Makefile,v 1.10 2001/05/19 13:47:36 ijliao Exp $
 #
 
 PORTNAME=	roxen
@@ -15,7 +15,7 @@ WRKSRC=		${WRKDIR}/roxen-${PORTVERSION}-src
 MAINTAINER=	k@123.org
 HAS_CONFIGURE=	yes
 PKGMESSAGE=     ${WRKSRC}/MESSAGE
-STARTUP_SCRIPT= ${PREFIX}/etc/rc.d/roxen.sh
+STARTUP_SCRIPT= ${PREFIX}/etc/rc.d/roxen.sh.sample
 
 post-patch:
 	@${SED} -e "s|%%PREFIX%%|${PREFIX}|g" ${FILESDIR}/roxen.sh.in > \
