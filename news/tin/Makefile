@@ -4,11 +4,11 @@
 # Date created:		25 July 1996
 # Whom:			obrien@cs.ucdavis.edu
 #
-# $FreeBSD$
+# $FreeBSD: ports/news/tin/Makefile,v 1.74 1999/08/30 14:31:57 peter Exp $
 #
 
-DISTNAME=       tinpre-1.4-19990805
-PKGNAME=        tinpre-1.4.19990805
+DISTNAME=       tinpre-1.4-19990927
+PKGNAME=        tinpre-1.4.19990927
 CATEGORIES=	news
 MASTER_SITES=   ftp://ftp.tin.org/pub/news/clients/tin/current/ \
 		ftp://nuxi.ucdavis.edu/pub/tin/current/ \
