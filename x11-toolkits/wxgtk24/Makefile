@@ -2,13 +2,20 @@
 # Date created:         		September 18, 1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.8 2000/04/21 07:02:43 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/wxgtk/Makefile,v 1.9 2000/05/20 13:34:22 nectar Exp $
 #
 
 PORTNAME=	wxgtk
 PORTVERSION= 	2.1.15
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/
+MASTER_SITES=	ftp://wesley.informatik.uni-freiburg.de/pub/linux/wxxt/source/ \
+		http://netfx-2000.linux.tucows.com/files/x11/dev/ \
+		http://linuxberg.is.co.za/files/x11/dev/ \
+		http://cyberec.linux.tucows.com/files/x11/dev/ \
+		http://gil.linux.tucows.com/files/x11/dev/ \
+		http://cyberbeach.linux.tucows.com/files/x11/dev/ \
+		http://bonn.linux.tucows.com/files/x11/dev/ \
+		http://matrix.linux.tucows.com/files/x11/dev/
 DISTNAME=	wxGTK-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
