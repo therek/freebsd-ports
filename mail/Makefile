@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.141 2000/07/14 09:44:18 kbyanc Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.142 2000/07/16 17:35:42 asami Exp $
 #
 
     SUBDIR += adcomplain
@@ -44,6 +44,7 @@
     SUBDIR += mailcrypt
     SUBDIR += maildrop
     SUBDIR += mailfilter
+    SUBDIR += mailman
     SUBDIR += mailx
     SUBDIR += majorcool
     SUBDIR += majordomo
