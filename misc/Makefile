@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.274 2000/06/02 05:35:49 hoek Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.275 2000/06/06 14:15:16 sobomax Exp $
 #
 
     SUBDIR += 221upgrade
@@ -38,6 +38,7 @@
     SUBDIR += diction
     SUBDIR += display
     SUBDIR += dnetc
+    SUBDIR += dog
     SUBDIR += dotfile
     SUBDIR += estic
     SUBDIR += ewipe
