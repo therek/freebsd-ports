@@ -2,11 +2,11 @@
 # Date created:         Fri Feb 18 03:04:36 JST 2000
 # Whom:                 sumikawa
 #
-# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.3 2000/04/10 00:04:18 cpiazza Exp $
+# $FreeBSD: ports/www/apache13+ipv6/Makefile,v 1.4 2000/07/05 12:36:59 tg Exp $
 #
 
 PORTNAME=	apache+ipv6
-PORTVERSION=	1.3.11
+PORTVERSION= 	1.3.12
 CATEGORIES=	www ipv6
 MASTER_SITES=   http://www.apache.org/dist/ \
 		ftp://ftp.ccs.neu.edu/net/mirrors/ftp.apache.org/apache/dist/ \
@@ -23,16 +23,14 @@ MASTER_SITES=   http://www.apache.org/dist/ \
 		ftp://ftp.mtnranch.net/pub/apache/dist/ \
 		ftp://ftp.iodynamics.com/pub/mirror/apache/dist/ \
 		ftp://apache.nextpath.com/pub/apache/dist/
-DISTNAME=	apache_1.3.11
+DISTNAME=	apache_${PORTVERSION}
 
-#put the below patch as patch-am
-#PATCH_SITES=    http://www.apache.org/info/css-security/
-#PATCHFILES=     apache_1.3.11_css_patch.txt
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=	apache-1.3.11-v6-20000220a.diff.gz
+PATCHFILES=	apache-1.3.12-v6-20000524a.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	sumikawa@FreeBSD.org
+
 Y2K=		http://www.apache.org/docs/misc/FAQ.html#year2000
 
 #
@@ -79,6 +77,9 @@ pre-configure:
 post-install:
 	@if [ ! -f ${PREFIX}/etc/rc.d/apache.sh ]; then \
 		${ECHO} "Installing ${PREFIX}/etc/rc.d/apache.sh startup file."; \
-		${INSTALL_SCRIPT} -m 751 ${FILESDIR}/apache.sh ${PREFIX}/etc/rc.d/apache.sh; \
+		${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/apache.sh; \
+		${ECHO} "[ -x ${PREFIX}/sbin/apachectl ] && ${PREFIX}/sbin/apachectl start > /dev/null && ${ECHO} -n ' apache'" >> ${PREFIX}/etc/rc.d/apache.sh; \
+		${CHMOD} 751 ${PREFIX}/etc/rc.d/apache.sh; \
 	fi
+
 .include <bsd.port.post.mk>
