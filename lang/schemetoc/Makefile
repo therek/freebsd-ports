@@ -2,7 +2,7 @@
 # Date created:		28 Dec 1994
 # Whom:			jmacd@uclink.berkeley.edu
 #
-# $FreeBSD: ports/lang/schemetoc/Makefile,v 1.19 2000/06/16 21:51:23 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	schemetoc
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://gatekeeper.dec.com/pub/DEC/Scheme-to-C/
 DISTNAME=	15mar93
 EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=	jmacd@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes
