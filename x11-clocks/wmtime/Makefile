@@ -2,15 +2,15 @@
 # Date created:        1 July 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/x11-clocks/wmtime/Makefile,v 1.9 1999/08/31 02:58:06 peter Exp $
+# $FreeBSD: ports/x11-clocks/wmtime/Makefile,v 1.10 2000/04/10 00:32:59 cpiazza Exp $
 #
 
 PORTNAME=	wmtime
 PORTVERSION= 	1.0b2
 CATEGORIES=	x11-clocks windowmaker
-MASTER_SITES=	ftp://ftp.mezaway.org/pub/DockApps/
+MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 
-MAINTAINER=	rneswold@mcs.net
+MAINTAINER=	rneswold@enteract.com
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
