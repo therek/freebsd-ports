@@ -3,7 +3,7 @@
 # Date created:				29 March 2000
 # Whom:					Robert Withrow <witr@rwwa.com>
 #
-# $FreeBSD: ports/misc/findutils/Makefile,v 1.2 2000/06/02 05:37:27 hoek Exp $
+# $FreeBSD: ports/misc/findutils/Makefile,v 1.3 2000/06/05 15:22:16 hoek Exp $
 #
 
 PORTNAME=	findutils
@@ -26,10 +26,10 @@ MAN5=		glocatedb.5
 
 post-install:
 	install-info ${PREFIX}/info/find.info ${PREFIX}/info/dir
-	${RM} -f ${PREFIX}/cat1/gfind.1
-	${RM} -f ${PREFIX}/cat1/gxargs.1
-	${RM} -f ${PREFIX}/cat1/glocate.1
-	${RM} -f ${PREFIX}/cat1/gupdatedb.1
-	${RM} -f ${PREFIX}/cat5/glocatedb.5
+	${RM} -f ${PREFIX}/man/cat1/gfind.1
+	${RM} -f ${PREFIX}/man/cat1/gxargs.1
+	${RM} -f ${PREFIX}/man/cat1/glocate.1
+	${RM} -f ${PREFIX}/man/cat1/gupdatedb.1
+	${RM} -f ${PREFIX}/man/cat5/glocatedb.5
 
 .include <bsd.port.mk>
