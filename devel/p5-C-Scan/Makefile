@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-C-Scan/Makefile,v 1.16 2000/04/11 21:29:20 mharo Exp $
+# $FreeBSD: ports/devel/p5-C-Scan/Makefile,v 1.17 2000/10/23 21:02:44 will Exp $
 #
 
 PORTNAME=	C-Scan
-PORTVERSION=	0.5
+PORTVERSION=	0.74
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	C
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS= 	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Data/Flow.pm:${PORTSDIR}/devel/p5-Data-Flow
 
-USE_PERL5=	YES
+USE_PERL5=	yes
 
 MAN3=		C::Scan.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
