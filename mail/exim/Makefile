@@ -2,12 +2,12 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.97 2001/09/12 23:46:55 sheldonh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	exim
 PORTVERSION=	3.33
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.csx.cam.ac.uk/pub/software/email/exim/ \
 		http://www.exim.org/ftp/ \
