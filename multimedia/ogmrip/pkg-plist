@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.2 2004/11/23 00:41:00 hq Exp $
+@comment $FreeBSD: ports/multimedia/ogmrip/pkg-plist,v 1.3 2004/11/24 13:23:52 hq Exp $
 bin/ogmrip
 include/ogmdvd.h
 include/ogmrip/ogmrip-acopy.h
@@ -43,6 +43,4 @@ share/applications/ogmrip.desktop
 share/pixmaps/ogmrip.png
 @dirrm include/ogmrip
 @dirrm include/ogmspawn
-@dirrm share/applications
-@dirrm share/ogmrip
-@dirrm share/pixmaps
+@dirrm %%DATADIR%%
