@@ -2,7 +2,7 @@
 # Date created:        14 August 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD: ports/security/drweb/Makefile,v 1.5 2001/08/25 14:46:35 ache Exp $
+# $FreeBSD: ports/security/drweb/Makefile,v 1.6 2001/08/25 16:31:39 ache Exp $
 #
 
 PORTNAME=	drweb
@@ -17,7 +17,7 @@ MAINTAINER=	anton@urc.ac.ru
 NO_BUILD=	YES
 
 # Needed for update.pl
-RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/mach/String/CRC32.pm:${PORTSDIR}/devel/p5-String-CRC32
+RUN_DEPENDS=    ${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/String/CRC32.pm:${PORTSDIR}/devel/p5-String-CRC32
 
 DRWEB_PREFIX=	${PREFIX}/${PORTNAME}
 
