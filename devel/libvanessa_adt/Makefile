@@ -2,11 +2,11 @@
 # Date created:		28 April 2001
 # Whom:			Konstantinos Konstantinidis <kkonstan@daemon.gr>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libvanessa_adt/Makefile,v 1.1 2001/05/20 03:59:29 will Exp $
 #
 
 PORTNAME=	libvanessa_adt
-PORTVERSION=	0.0.1
+PORTVERSION=	0.0.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://vanessa.sourceforge.net/pub/vanessa/%SUBDIR%/ \
 		ftp://ftp.au.vergenet.net/pub/vanessa/%SUBDIR%/ \
