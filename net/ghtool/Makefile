@@ -2,7 +2,7 @@
 # Date created:		19 September 2000
 # Whom:			roam@orbitel.bg
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/ghtool/Makefile,v 1.1 2000/10/23 10:50:06 jeh Exp $
 #
 
 PORTNAME=	ghtool
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=gh-tool
 DISTNAME=	ghmain.c
 EXTRACT_SUFX=
 
-MAINTAINER=	roam@orbitel.bg
+MAINTAINER=	roam@FreeBSD.org
 
 WRKSRC=		${WRKDIR}
 

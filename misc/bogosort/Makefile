@@ -2,7 +2,7 @@
 # Date created:		15 September 2000
 # Whom:			roam@orbitel.bg
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/bogosort/Makefile,v 1.1 2000/09/16 05:15:35 will Exp $
 #
 
 PORTNAME=	bogosort
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.lysator.liu.se/~qha/bogosort/ \
 		ftp://l82.ryd.student.liu.se/pub/unix/bogosort/
 DISTNAME=	${PORTNAME}
 
-MAINTAINER=	roam@orbitel.bg
+MAINTAINER=	roam@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 

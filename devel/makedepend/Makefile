@@ -2,7 +2,7 @@
 # Date created:				August 15th 1997
 # Whom:					Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/devel/makedepend/Makefile,v 1.5 2000/04/11 21:29:03 mharo Exp $
+# $FreeBSD: ports/devel/makedepend/Makefile,v 1.6 2000/09/28 22:25:04 nbm Exp $
 #
 
 PORTNAME=	makedepend
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.andrew.cmu.edu/pub/cyrus-mail/
 DISTNAME=	cyrus-imapd-2.0.7
 
-MAINTAINER=	roam@orbitel.bg
+MAINTAINER=	roam@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/makedepend
 GNU_CONFIGURE=	YES

@@ -2,7 +2,7 @@
 # Date created:				5 Nov 1997
 # Whom:					Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/textproc/texi2html/Makefile,v 1.7 2000/04/15 10:03:23 asami Exp $
+# $FreeBSD: ports/textproc/texi2html/Makefile,v 1.8 2000/09/28 22:25:05 nbm Exp $
 #
 
 PORTNAME=	texi2html
@@ -10,7 +10,7 @@ PORTVERSION= 	1.64
 CATEGORIES=	textproc
 MASTER_SITES=	http://www.mathematik.uni-kl.de/~obachman/Texi2html/Distrib/
 
-MAINTAINER=	roam@orbitel.bg
+MAINTAINER=	roam@FreeBSD.org
 
 USE_AUTOMAKE=	yes
 USE_AUTOCONF=	yes

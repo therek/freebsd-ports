@@ -2,7 +2,7 @@
 # Date created:		27 March 1995
 # Whom:			asami
 #
-# $FreeBSD: ports/games/nethack/Makefile,v 1.25 2000/08/03 09:23:48 asami Exp $
+# $FreeBSD: ports/games/nethack/Makefile,v 1.26 2000/09/16 20:21:18 ade Exp $
 #
 
 PORTNAME=	nethack
@@ -17,7 +17,7 @@ DISTNAME=	nethack-3.2.2
 PATCH_SITES=	ftp://ftp.nethack.org/pub/nethack/nh323/src/
 PATCHFILES=	nh-3.2.2-3.2.3.diff
 
-MAINTAINER=	roam@orbitel.bg
+MAINTAINER=	roam@FreeBSD.org
 
 USE_XPM=	yes
 USE_GMAKE=	yes
