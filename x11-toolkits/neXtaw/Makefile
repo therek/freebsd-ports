@@ -3,7 +3,7 @@
 # Date created:		16 January 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.14 1999/08/31 06:52:47 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/neXtaw/Makefile,v 1.15 2000/02/08 09:29:40 peter Exp $
 #
 
 DISTNAME=	neXtaw-0.5.1
@@ -12,10 +12,6 @@ MASTER_SITES=	http://people.FreeBSD.org/~tg/
 EXTRACT_SUFX=	.tar.gz.bin
 
 MAINTAINER=	tg@FreeBSD.org
-
-.if ${MACHINE_ARCH} == "alpha"
-BROKEN=		compiler error in funtion fixup_memory_subreg
-.endif
 
 USE_IMAKE=	yes
 
