@@ -1,16 +1,15 @@
 # New ports collection makefile for:	Blackbox
-# Version required:	0.51.2
+# Version required:	0.51.3.1
 # Date created:		June 15, 1998
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.27 1999/08/31 02:59:56 peter Exp $
+# $FreeBSD: ports/x11-wm/blackbox/Makefile,v 1.28 1999/09/04 20:40:51 cpiazza Exp $
 #
 
-DISTNAME=	blackbox-0.51.2
+DISTNAME=	blackbox-0.51.3.1
 CATEGORIES=	x11-wm
 MASTER_SITES=	ftp://portal.alug.org/pub/blackbox/0.5x.x/ \
-		ftp://ftp.digex.net/pub/X11/window-managers/blackbox/ \
-	 	ftp://ftp.dti.ad.jp/pub/X/blackbox/
+	 	ftp://ftp.dti.ad.jp/pub/X/blackbox/0.5x.x
 
 MAINTAINER=	cpiazza@FreeBSD.org
 
