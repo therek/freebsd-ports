@@ -2,13 +2,13 @@
 # Date created:                17 Sep 1999
 # Whom:                        HIYAMA Takeshi <th@cis.ibaraki.ac.jp>
 #
-# $FreeBSD: ports/games/sl/Makefile,v 1.1.1.1 1999/09/24 17:36:48 taoka Exp $
+# $FreeBSD: ports/games/sl/Makefile,v 1.2 2000/04/14 12:26:33 asami Exp $
 #
 
 PORTNAME=	sl
 PORTVERSION=	3.03
 CATEGORIES=	games
-MASTER_SITES=	http://www.is.titech.ac.jp/~toyoda/sl/
+MASTER_SITES=	http://www.tkl.iis.u-tokyo.ac.jp/~toyoda/sl/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.tar
 
