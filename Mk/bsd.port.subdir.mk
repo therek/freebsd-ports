@@ -1,5 +1,5 @@
 #	from: @(#)bsd.subdir.mk	5.9 (Berkeley) 2/1/91
-# $FreeBSD$
+# $FreeBSD: ports/Mk/bsd.port.subdir.mk,v 1.33 1999/08/25 04:40:22 obrien Exp $
 #
 # The include file <bsd.port.subdir.mk> contains the default targets
 # for building ports subdirectories. 
@@ -193,6 +193,9 @@ README=	${TEMPLATES}/README.category
 .endif
 
 HTMLIFY=	sed -e 's/&/\&amp;/g' -e 's/>/\&gt;/g' -e 's/</\&lt;/g'
+
+package-name:
+	@echo ${.CURDIR} | sed -e 's^.*/^^'
 
 README.html:
 	@echo "===>  Creating README.html"
