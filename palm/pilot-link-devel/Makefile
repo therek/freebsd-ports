@@ -2,13 +2,14 @@
 # Date created:         November, 1997
 # Whom:                 Paul Traina <pst@freebsd.org>
 #
-# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.32 2000/04/13 19:18:59 cpiazza Exp $
+# $FreeBSD: ports/palm/pilot-link/Makefile,v 1.33 2000/04/21 07:52:04 mharo Exp $
 #
 
 PORTNAME=	pilot-link
 PORTVERSION=	0.9.3
 CATEGORIES=	palm comms tk82
-MASTER_SITES=	ftp://ryeham.ee.ryerson.ca/pub/PalmOS/
+MASTER_SITES=	ftp://ryeham.ee.ryerson.ca/pub/PalmOS/ \
+		ftp://ftp.forth.org/pub/PalmOS/ryerson/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
 MAINTAINER=	dima@freebsd.org
