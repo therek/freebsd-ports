@@ -3,7 +3,7 @@
 # Date created:         Jul 7, 1999
 # Whom:                 marcel@FreeBSD.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/emulators/linux_base/Makefile,v 1.31 1999/08/25 05:49:21 obrien Exp $
 #
 
 DISTNAME=		linux_base
@@ -127,6 +127,7 @@ do-install:
 	@${CHMOD} 666 ${PREFIX}/dev/null
 .if defined(NEEDLOADLINK)
 	@${MKDIR} ${PREFIX}/compat
+	@${RM} -f ${PREFIX}/compat/linux
 	@${LN} -s / ${PREFIX}/compat/linux
 .endif
 #
