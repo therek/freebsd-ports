@@ -2,11 +2,11 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/perldap/Makefile,v 1.7 2000/07/14 19:28:57 paul Exp $
+# $FreeBSD: ports/net/perldap/Makefile,v 1.8 2000/10/24 12:36:32 knu Exp $
 #
 
 PORTNAME=	perldap
-PORTVERSION=	1.4
+PORTVERSION=	1.4.1
 CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_MOZILLA}
 MASTER_SITE_SUBDIR=	directory/perldap
@@ -16,7 +16,7 @@ MAINTAINER=	paul@FreeBSD.org
 
 LIB_DEPENDS=	ldap.1:${PORTSDIR}/net/ldapsdk
 
-WRKSRC=		${WRKDIR}/perldap-1.4
+WRKSRC=		${WRKDIR}/$(PORTNAME)-$(PORTVERSION)
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		Mozilla::LDAP::Conn.3 \
 			Mozilla::LDAP::LDIF.3 \
