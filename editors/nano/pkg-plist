@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.12 2003/10/04 23:07:39 naddy Exp $
+@comment $FreeBSD: ports/editors/nano/pkg-plist,v 1.13 2003/10/04 23:15:35 naddy Exp $
 bin/nano
 share/locale/ca/LC_MESSAGES/nano.mo
 share/locale/cs/LC_MESSAGES/nano.mo
@@ -20,6 +20,7 @@ share/locale/pl/LC_MESSAGES/nano.mo
 share/locale/pt_BR/LC_MESSAGES/nano.mo
 share/locale/ro/LC_MESSAGES/nano.mo
 share/locale/ru/LC_MESSAGES/nano.mo
+share/locale/sr/LC_MESSAGES/nano.mo
 share/locale/sv/LC_MESSAGES/nano.mo
 share/locale/tr/LC_MESSAGES/nano.mo
 share/locale/uk/LC_MESSAGES/nano.mo
