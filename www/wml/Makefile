@@ -2,16 +2,14 @@
 # Date created:		09-Sep-1997
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/www/wml/Makefile,v 1.31 2000/04/10 00:07:20 cpiazza Exp $
+# $FreeBSD: ports/www/wml/Makefile,v 1.32 2000/04/28 21:19:21 rse Exp $
 #
 
 PORTNAME=	wml
-PORTVERSION= 	1.99.8
+PORTVERSION= 	2.0.1
 CATEGORIES=	www lang
 MASTER_SITES=	http://www.engelschall.com/sw/wml/distrib/ \
-		ftp://ftp.ch.engelschall.com/sw/wml/ \
-		ftp://ftp.de.engelschall.com/sw/wml/ \
-		ftp://ftp.hyperreal.org/software/engelschall/wml/
+		ftp://ftp.engelschall.com/sw/wml/
 
 MAINTAINER=	rse@engelschall.com
 
@@ -62,5 +60,11 @@ post-install:
 	@${GZIP_CMD} ${PREFIX}/man/cat7/${page}
 .endfor
 .endif
+
+post-build:
+	@${ECHO_MSG} "===>  Use 'make test' to run a quick test suite."
+
+test:
+	@cd ${WRKSRC} && ${MAKE} test
 
 .include <bsd.port.mk>
