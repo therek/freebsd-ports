@@ -2,7 +2,7 @@
 # Date created:				13 April 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.7 2001/02/19 15:53:34 trevor Exp $
+# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.8 2001/02/19 23:32:42 trevor Exp $
 #
 
 PORTNAME=	xdrawchem
@@ -21,6 +21,12 @@ USE_QT2=	yes
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/a//}
 
+.include <bsd.port.pre.mk>
+
+.if ${MACHINE_ARCH} == "alpha"
+CFLAGS+=	-O0
+.endif
+
 pre-install:
 	${ECHO} bin/xdrawchem > ${PLIST}
 	cd ${WRKSRC}/ring && find -s . -type f | \
@@ -32,4 +38,4 @@ do-install:
 	@${MKDIR} ${PREFIX}/share/xdrawchem
 	${INSTALL_DATA} ${WRKSRC}/ring/* ${PREFIX}/share/xdrawchem
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
