@@ -2,14 +2,14 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.60 2000/06/27 21:21:05 jim Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.61 2000/07/27 18:31:32 jim Exp $
 #
 
 PORTNAME=		xchat
-PORTVERSION=		1.5.6
+PORTVERSION=		1.4.2
 CATEGORIES=		irc gnome
-MASTER_SITES=		http://xchat.org/files/source/1.5/ \
-			http://xchat.linuxpower.org/files/source/1.5/
+MASTER_SITES=		http://xchat.org/files/source/1.4/ \
+			http://xchat.linuxpower.org/files/source/1.4/
 
 MAINTAINER=		jim@FreeBSD.org
 
@@ -28,13 +28,9 @@ WITH_PANEL=		YES
 LIB_DEPENDS+=		panel_applet.4:${PORTSDIR}/x11/gnomecore
 .endif
 
-.if defined(WITH_GDK_PIXBUF)
-LIB_DEPENDS+=		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
-.endif
 
 GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
 GLIB_CONFIG?=		${LOCALBASE}/bin/glib12-config
-GDK_PIXBUF_CONFIG?=	${X11BASE}/bin/gdk-pixbuf-config
 
 USE_X_PREFIX=		yes
 USE_BZIP2=		yes
@@ -58,16 +54,9 @@ CONFIGURE_ARGS+=	--disable-panel
 CONFIGURE_ARGS+=	--disable-gnome
 .endif
 
-.if defined(WITH_GDK_PIXBUF)
-CONFIGURE_ARGS+=	--enable-gdk-pixbuf
-.else
-CONFIGURE_ARGS+=	--disable-gdk-pixbuf
-.endif
-
 CONFIGURE_ENV=		CPPFLAGS="-I${LOCALBASE}/include" \
 			GTK_CONFIG="${GTK_CONFIG}" \
 			GLIB_CONFIG="${GLIB_CONFIG}" \
-			GDK_PIXBUF_CONFIG="${GDK_PIXBUF_CONFIG}" \
 			LIBS="-L${LOCALBASE}/lib"
 
 .if defined(WITH_GNOME)
