@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.312 2001/05/20 20:31:19 nik Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.313 2001/05/21 02:29:49 ade Exp $
 #
 
     SUBDIR += 4va
@@ -216,7 +216,6 @@
     SUBDIR += sdl_image
     SUBDIR += sdl_ttf
     SUBDIR += seejpeg
-    SUBDIR += shot2png
     SUBDIR += sketch
     SUBDIR += smpeg
     SUBDIR += smpeg-xmms
