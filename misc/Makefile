@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.294 2000/09/17 22:30:35 will Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.295 2000/09/19 19:25:03 des Exp $
 #
 
     SUBDIR += 221upgrade
@@ -68,6 +68,7 @@
     SUBDIR += gtkfind
     SUBDIR += gtl
     SUBDIR += gweather
+    SUBDIR += gwhich
     SUBDIR += gyvescm
     SUBDIR += hello
     SUBDIR += heyu
