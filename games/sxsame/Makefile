@@ -2,7 +2,7 @@
 # Date created:         11 December 1999
 # Whom:                 Yuichi Narahara
 #
-# $FreeBSD: ports/games/sxsame/Makefile,v 1.2 2000/04/14 12:26:40 asami Exp $
+# $FreeBSD: ports/games/sxsame/Makefile,v 1.3 2000/05/01 04:50:40 kris Exp $
 #
 
 PORTNAME=	sxsame
@@ -25,12 +25,12 @@ BINGRP=		games
 BINMODE=	2755
 MAKE_ENV+=	BINOWN=${BINOWN} BINGRP=${BINGRP} BINMODE=${BINMODE}
 
-WRKSRC=         ${WRKDIR}/sxsame-3.02
-
 post-install:
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/sxsame
 .for i in INSTALL.jp README.jp
-	@${INSTALL_DATA} ${WRKSRC}/$i ${PREFIX}/share/doc/sxsame
+	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/share/doc/sxsame
 .endfor
+.endif
 
 .include <bsd.port.mk>
