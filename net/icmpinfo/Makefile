@@ -3,7 +3,7 @@
 # Date created:			  Mon June 23, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/net/icmpinfo/Makefile,v 1.10 2000/03/22 00:26:59 obrien Exp $
+# $FreeBSD: ports/net/icmpinfo/Makefile,v 1.11 2000/04/09 18:11:40 cpiazza Exp $
 #
 
 PORTNAME=	icmpinfo
@@ -27,6 +27,5 @@ do-install:
 	@${MKDIR} ${PREFIX}/share/doc/icmpinfo
 	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/icmpinfo
 .endif
-
 
 .include <bsd.port.mk>
