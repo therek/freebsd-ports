@@ -3,7 +3,7 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.15 1999/11/20 03:05:26 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.16 1999/11/20 03:41:59 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
@@ -94,7 +94,7 @@ post-install:
 	fi
 .if !exists(${PREFIX}/etc/rc.d/sshd.sh)
 	@${ECHO} "#!/bin/sh" > ${PREFIX}/etc/rc.d/sshd.sh
-	@${ECHO} "[ -x ${PREFIX}/sbin/sshd ] && exec ${PREFIX}/sbin/sshd" >> ${PREFIX}/etc/rc.d/sshd.sh
+	@${ECHO} "[ -x ${PREFIX}/sbin/sshd ] && ${PREFIX}/sbin/sshd && echo -n ' sshd'" >> ${PREFIX}/etc/rc.d/sshd.sh
 	@${CHMOD} 0555 ${PREFIX}/etc/rc.d/sshd.sh
 .endif
 
