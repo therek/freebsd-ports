@@ -3,11 +3,11 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.53 2001/03/13 22:07:58 sf Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.54 2001/03/15 14:29:14 sf Exp $
 #
 
 PORTNAME=	dhcp
-PORTVERSION=	3.0.b2.18
+PORTVERSION=	3.0.b2.22
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.isc.org/isc/dhcp/
 PKGNAMEPREFIX=	isc-
@@ -32,7 +32,7 @@ MAN8=		dhclient.8 dhclient-script.8 dhcpd.8 dhcrelay.8
 # Local variables
 #
 
-PATCH_SUBDIRS=	client common dhcpctl dst minires omapip relay server
+PATCH_SUBDIRS=	common minires dst omapip server client relay dhcpctl
 
 BIN_FILES=	dhclient dhcpd dhcrelay
 SAMP_FILES=	client/dhclient.conf server/dhcpd.conf
@@ -53,16 +53,19 @@ STRIP?=		strip
 # Post-patch
 #
 
-post-patch: patch-scripts patch-makefiles
+post-patch: patch-scripts patch-makefile-conf patch-makefiles-dist
 
 patch-scripts:
 	@${PERL} -pi.fbsd -e 's.!!PREFIX!!.${PREFIX}.g' \
 		${WRKSRC}/client/scripts/freebsd
 
-patch-makefiles:
+patch-makefile-conf:
+	@${PERL} -pi.fbsd -e 's|^DEBUG[ 	]*=|# DEBUG ?=|g' \
+		${WRKSRC}/Makefile.conf
+
+patch-makefiles-dist:
 .for subdir in ${PATCH_SUBDIRS}
-	@${PERL} -pi.fbsd -e \
-	    's|^DEBUG[	 ]*=|DEBUG ?=|g;s|^CFLAGS[	 ]*=|CFLAGS +=|g' \
+	@${PERL} -pi.fbsd -e 's|^CFLAGS[ 	]*=|CFLAGS +=|g' \
 		${WRKSRC}/${subdir}/Makefile.dist
 .endfor
 
