@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.33 2000/06/14 16:21:20 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.34 2000/06/25 21:08:07 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -21,7 +21,8 @@ Y2K=		http://www.isc.org/y2k.html
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-nsupdate
 
-MAN5=		dhclient.conf.5 dhclient.leases.5 dhcp-options.5 dhcpd.conf.5 \
+MAN5=		dhclient.conf.5 dhclient.leases.5 dhcp-contrib.5 \
+		dhcp-eval.5 dhcp-options.5 dhcpd.conf.5 \
 		dhcpd.leases.5
 MAN8=		dhclient.8 dhclient-script.8 dhcpd.8 dhcrelay.8
 
