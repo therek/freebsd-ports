@@ -1,4 +1,4 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.39 1999/09/06 06:49:29 foxfair Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.40 1999/09/07 11:28:45 foxfair Exp $
 #
 
     SUBDIR += CJK
@@ -37,6 +37,5 @@
     SUBDIR += ve
     SUBDIR += xcin
     SUBDIR += xcin25
-    SUBDIR += xphotohunter
 
 .include <bsd.port.subdir.mk>
