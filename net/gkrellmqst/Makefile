@@ -3,11 +3,11 @@
 # Whom:					Patrick Li <pat@databits.net>
 # With help from:	Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gkrellmqst/Makefile,v 1.1 2001/07/03 00:10:17 lioux Exp $
+# $FreeBSD: ports/net/gkrellmqst/Makefile,v 1.2 2001/07/03 18:00:01 lioux Exp $
 #
 
 PORTNAME=	gkrellmqst
-PORTVERSION=	0.3.p5
+PORTVERSION=	0.3
 CATEGORIES=	net games
 MASTER_SITES=	http://tadpol.org/unxware/
 DISTNAME=	gkrellm_qst-${PORTVERSION:S/.p/pre_/}
@@ -25,12 +25,5 @@ USE_IMLIB=	yes
 MAKE_ENV=	PTHREAD_LIBS="${PTHREAD_LIBS}" \
 		PTHREAD_CFLAGS="${PTHREAD_CFLAGS}"
 ALL_TARGET=	qst.so
-EXTRA_PATCHES=	${WRKDIR}/patch-qst.c
-
-pre-patch:
-	@${SED} -e "s!%%LOCALBASE%%!${LOCALBASE}!" \
-		-e "s!%%X11BASE%%!${X11BASE}!" \
-		${FILESDIR}/template-patch-qst.c > \
-		${WRKDIR}/patch-qst.c
 
 .include <bsd.port.mk>
