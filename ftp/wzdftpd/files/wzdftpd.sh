@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop wzdftpd
-# $FreeBSD$
+# $FreeBSD: ports/ftp/wzdftpd/files/wzdftpd.sh,v 1.1 2004/06/22 19:18:41 pav Exp $
 
 # PROVIDE: wzdftpd
 # REQUIRE: DAEMON
@@ -13,7 +13,7 @@ prefix=%%PREFIX%%
 
 wzdftpd_enable=${wzdftpd_enable:-"NO"}		# Enable wzdftpd
 wzdftpd_program="${prefix}/sbin/wzdftpd"	# Location of wzdftpd
-wzdftpd_flags=${gkrellmd_flags:-""}		# Flags to wzdftpd
+wzdftpd_flags=${wzdftpd_flags:-""}		# Flags to wzdftpd
 
 . %%RC_SUBR%%
 
