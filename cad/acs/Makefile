@@ -2,11 +2,11 @@
 # Date created:		01 January 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/acs/Makefile,v 1.12 1999/11/16 10:40:03 tg Exp $
+# $FreeBSD: ports/cad/acs/Makefile,v 1.13 2000/04/08 23:19:55 mharo Exp $
 #
 
 PORTNAME=	acs
-PORTVERSION=	0.25
+PORTVERSION=	0.26
 CATEGORIES=	cad
 MASTER_SITES=	http://www.geda.seul.org/dist/ \
 		http://www.geda.coelacanth.com/dist/ \
