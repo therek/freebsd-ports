@@ -3,10 +3,12 @@
 # Date created:         Sa   9 Nov 1996 00:52:22 MET
 # Whom:			se
 #
-# $FreeBSD: ports/emulators/wine/Makefile,v 1.83 2000/06/16 08:19:45 sobomax Exp $
+# $FreeBSD: ports/emulators/wine/Makefile,v 1.84 2000/06/16 21:50:37 asami Exp $
 #
 
 PORTNAME=	wine
+# We will skip the 2000.06.14 snapshot of Wine as this proved to be
+# somewhat unstable (also on other platforms).
 PORTVERSION=	2000.05.26
 CATEGORIES=	emulators
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
