@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.81 2001/03/27 02:19:55 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt23/Makefile,v 1.82 2001/03/29 16:35:17 sobomax Exp $
 #
 
 PORTNAME?=	qt
@@ -26,6 +26,11 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
 		-system-libmng -thread -no-opengl \
 		-I${LOCALBASE}/include -L${LOCALBASE}/lib
+
+.if defined(QT_DEBUG)
+CONFIGURE_ARGS+= -debug
+.endif
+
 CONFIGURE_ENV=	${ECHO} yes | QTDIR=${WRKSRC}
 .if defined(MAKE_JOBS)
 MAKE_ARGS+=	MAKE="${GMAKE} -j${MAKE_JOBS}"
