@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.8 2001/11/05 21:29:59 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.9 2001/11/13 06:35:28 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -111,7 +111,8 @@ QTCGFLIBS?=
 # Qt 3.x common stuff
 QT_PREFIX?=		${X11BASE}/qt
 MOC?=			${QT_PREFIX}/bin/moc
-LIB_DEPENDS+=	qt:${PORTSDIR}/x11-toolkits/qt-copy
+BUILD_DEPENDS+=	${X11BASE}/qt/bin/moc:${PORTSDIR}/x11-toolkits/qt-copy
+RUN_DEPENDS+=	${X11BASE}/qt/bin/moc:${PORTSDIR}/x11-toolkits/qt-copy
 USE_NEWGCC=		yes
 QTCPPFLAGS+=	-I/usr/include -I${LOCALBASE}/include -I${PREFIX}/include \
 				-I${QT_PREFIX}/include/qt
@@ -119,7 +120,7 @@ QTCFGLIBS+=		-Wl,-export-dynamic -L${LOCALBASE}/lib -L${X11BASE}/lib -ljpeg \
 				-L${QT_PREFIX}/lib
 .if !defined(QT_NONSTANDARD)
 CONFIGURE_ARGS+=--with-qt-includes=${QT_PREFIX}/include \
-				--with-qt-libraries=${X11BASE}/lib \
+				--with-qt-libraries=${QT_PREFIX}/lib \
 				--with-extra-libs=${LOCALBASE}/lib
 CONFIGURE_ENV+=	MOC="${MOC}" CPPFLAGS="${QTCPPFLAGS}" LIBS="${QTCFGLIBS}"
 .endif
