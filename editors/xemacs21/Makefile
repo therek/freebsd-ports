@@ -2,7 +2,7 @@
 # Date created:		24 Apr 1999
 # Whom:			Michael Elbel (me@FreeBSD.org)
 #
-# $FreeBSD: ports/editors/xemacs21/Makefile,v 1.57 2001/09/11 03:05:10 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xemacs
@@ -83,8 +83,8 @@ WITH_OFFIX?=	--with-offix=no
 # fix .so references in a few man pages
 pre-configure::
 .for file in etc/ctags.1 etc/gnuattach.1 etc/gnuclient.1 etc/gnudoit.1
-	@${SED} -e 's/\.1/&.gz/' ${WRKSRC}/${file} > tmp_zot
-	@${MV} tmp_zot ${WRKSRC}/${file}
+	@${SED} -e 's/\.1/&.gz/' ${WRKSRC}/${file} > /tmp/tmp_zot
+	@${MV} /tmp/tmp_zot ${WRKSRC}/${file}
 .endfor
 
 post-install::
