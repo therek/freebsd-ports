@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.341 2001/04/09 11:09:37 eric Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.342 2001/04/20 12:32:56 sobomax Exp $
 #
 
     SUBDIR += 40upgrade
@@ -145,6 +145,7 @@
     SUBDIR += snowflake
     SUBDIR += splitvt
     SUBDIR += sshbuddy
+    SUBDIR += stan
     SUBDIR += tcb
     SUBDIR += team
     SUBDIR += tet
