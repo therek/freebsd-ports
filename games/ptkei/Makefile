@@ -2,13 +2,14 @@
 # Date created:                         26 October 1999
 # Whom:                                 Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/ptkei/Makefile,v 1.3 2000/10/09 08:04:16 sobomax Exp $
 #
 
 PORTNAME=	ptkei
-PORTVERSION=	1.12
+PORTVERSION=	000906
 CATEGORIES=	games
-MASTER_SITES=	ftp://www.empire.cx/pub/empire/clients/
+MASTER_SITES=	ftp://www.empire.cx/pub/empire/clients/ \
+		http://empire.idlpaper.com/~kevin/ptkei/download/
 
 MAINTAINER=	darius@dons.net.au
 
