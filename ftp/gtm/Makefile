@@ -2,11 +2,11 @@
 # Date created:				05/28/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/ftp/gtm/Makefile,v 1.17 2000/10/05 07:10:34 reg Exp $
+# $FreeBSD: ports/ftp/gtm/Makefile,v 1.18 2001/03/29 16:33:34 sobomax Exp $
 #
 
 PORTNAME=	gtm
-PORTVERSION=	0.4.5
+PORTVERSION=	0.4.9
 CATEGORIES=	ftp gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -22,6 +22,8 @@ USE_GNOME=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
+
+MAN1=		gtm.1 gtm_applet.1
 
 pre-patch:
 	@${PERL} -pi -e 's|-lpthread|${PTHREAD_LIBS}|g ; \
