@@ -2,14 +2,13 @@
 # Date created:		16 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-o_dbm/Makefile,v 1.1 2001/03/16 09:34:28 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	o_dbm
-PORTVERSION=	0.3.1
+PORTVERSION=	0.5.1
 CATEGORIES=	databases ruby
-MASTER_SITES=	${MASTER_SITE_RUBY}
-MASTER_SITE_SUBDIR=	contrib in.coming
+MASTER_SITES=	http://www.ruby-lang.org/~keiju/src/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 EXTRACT_SUFX=	.tgz
 DIST_SUBDIR=	ruby
