@@ -2,24 +2,23 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.49 2000/08/30 03:50:04 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.50 2000/09/15 21:40:42 will Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	1.94
+PORTVERSION=	2.0
 CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
-		qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
+USE_QT2=	yes
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
-USE_NEWGCC=	yes
 INSTALLS_SHLIB=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS+=--with-qt-dir=${X11BASE} \
