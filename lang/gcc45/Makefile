@@ -4,10 +4,10 @@
 # Date created:				9 Jan 1998
 # Whom:					John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.80 2000/03/08 02:20:59 obrien Exp $
+# $FreeBSD: ports/lang/gcc-devel/Makefile,v 1.81 2000/03/08 19:01:14 obrien Exp $
 #
 
-SNAPDATE=	2000-03-06
+SNAPDATE=	2000-03-13
 SNAPVER=	${SNAPDATE:S/-//g}
 
 DISTNAME=	gcc-2.96
