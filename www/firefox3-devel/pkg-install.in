@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/firefox/pkg-install.in,v 1.2 2004/06/16 06:58:10 marcus Exp $
+# $FreeBSD: ports/www/firefox/pkg-install.in,v 1.3 2004/06/19 00:51:16 marcus Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -27,8 +27,10 @@ cd ${MOZDIR} || exit 1
 ./run-mozilla.sh ${REGXPCOM} || true
 ./run-mozilla.sh ${REGCHROME} || true
 mkdir -p ${MOZDIR}/extensions
-cp -p ${MOZDIR}/defaults/profile/extensions/Extensions.rdf ${MOZDIR}/extensions
-cp -p ${MOZDIR}/defaults/profile/extensions/installed-extensions.txt \
+cp -rp ${MOZDIR}/defaults/profile/extensions/* ${MOZDIR}/extensions
+mv -f ${MOZDIR}/extensions/installed-extensions.txt \
 	${MOZDIR}/extensions/installed-extensions-processed.txt
+cp -p ${MOZDIR}/extensions.port/Extensions.rdf \
+	${MOZDIR}/extensions
 
 exit 0
