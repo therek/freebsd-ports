@@ -1,9 +1,9 @@
 # New ports collection makefile for:    rubytk
-# Version required:     1.4.2
+# Version required:     1.4.3
 # Date created:         15 March 1999
 # Whom:                 Yasuhiro Fukuma <yasuf@big.or.jp>
 #
-# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.4 1999/11/14 01:38:53 steve Exp $
+# $FreeBSD: ports/x11-toolkits/rubytk/Makefile,v 1.5 1999/11/28 18:31:47 steve Exp $
 #
 
 DISTNAME=	ruby-${VERSION}
@@ -33,7 +33,7 @@ CONFIGURE_ARGS+= --with-tcllib="${TCL_LIB}" --with-tklib="${TK_LIB}" \
 		--with-X11-dir="${X11BASE}"
 PLIST_SUB+=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
 
-VERSION=	1.4.2
+VERSION=	1.4.3
 BRANCH_NAME=	1.4
 
 RUBY_VER=	1.4
