@@ -3,10 +3,10 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD: ports/audio/xmcd/Makefile,v 1.23 1999/09/27 01:56:44 steve Exp $
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.24 2000/01/29 20:01:30 mharo Exp $
 #
 
-DISTNAME=	xmcd-2.5
+DISTNAME=	xmcd-2.6
 CATEGORIES=	audio
 MASTER_SITES=	http://metalab.unc.edu/tkan/download/xmcd/src/
 
@@ -14,7 +14,7 @@ MAINTAINER=	eischen@vigrid.com
 
 REQUIRES_MOTIF=	yes
 USE_IMAKE=	yes
-PLIST_SUB+=	ARCH=${ARCH}
+PLIST_SUB+=	RELEASE=${OSREL:R} ARCH=${ARCH}
 
 MAN1=		cda.1 cddbcmd.1 dp2xmcd.1 wm2xmcd.1 xmcd.1
 MANCOMPRESSED=	no
