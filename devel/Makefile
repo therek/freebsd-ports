@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.376 2000/12/18 17:02:08 sobomax Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.377 2000/12/19 12:22:58 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -220,6 +220,7 @@
     SUBDIR += p5-File-Slurp
     SUBDIR += p5-File-Spec
     SUBDIR += p5-File-Sync
+    SUBDIR += p5-File-Tail
     SUBDIR += p5-File-Tools
     SUBDIR += p5-Filter
     SUBDIR += p5-FreezeThaw
