@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.275 2000/06/06 14:15:16 sobomax Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.276 2000/06/10 05:45:33 will Exp $
 #
 
     SUBDIR += 221upgrade
@@ -56,6 +56,7 @@
     SUBDIR += gnuls
     SUBDIR += gone
     SUBDIR += gplbp
+    SUBDIR += grdb
     SUBDIR += grun
     SUBDIR += gtkfind
     SUBDIR += gtl
