@@ -2,14 +2,13 @@
 # Date created:		22 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.13 2001/03/20 08:51:04 knu Exp $
+# $FreeBSD: ports/mail/ruby-tmail/Makefile,v 1.14 2001/06/11 03:14:03 knu Exp $
 #
 
 PORTNAME=	tmail
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.6
 CATEGORIES=	mail ruby
-MASTER_SITES=	${MASTER_SITE_LOCAL} \
-		http://www.xdsl.ne.jp/Cd/aamine/soft/
+MASTER_SITES=	http://www.loveruby.net/archive/
 MASTER_SITE_SUBDIR=	knu
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DIST_SUBDIR=	ruby
@@ -23,7 +22,7 @@ USE_RUBY=	yes
 USE_RUBY_AMSTD=	yes
 USE_RUBY_SETUP=	yes
 
-CONFIGURE_ARGS=	--with=ext/mails,lib/tmail
+CONFIGURE_ARGS=	--with=ext/b64,ext/mails,lib/tmail
 
 do-install:
 .if !defined(NOPORTDOCS)
