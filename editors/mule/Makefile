@@ -2,7 +2,7 @@
 # Date created:		6 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule/Makefile,v 1.40 2000/04/13 08:17:29 asami Exp $
+# $FreeBSD: ports/editors/mule/Makefile,v 1.41 2000/04/14 16:47:38 knu Exp $
 #
 
 PORTNAME=	mule
@@ -27,6 +27,8 @@ BUILD_DEPENDS=	${BUILD_INPUT_METHOD}
 
 MULE_VERSION=	2.3
 EMACS_VERSION=	19.34
+
+SLAVEDIRS=	chinese/mule-wnn4
 
 USE_XLIB=	yes
 EXTRACT_ONLY=	emacs-${EMACS_VERSION}b${EXTRACT_SUFX}
