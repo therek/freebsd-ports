@@ -3,11 +3,11 @@
 # Date created:			Apr 18, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/crank/Makefile,v 1.1 2001/04/18 19:43:17 ijliao Exp $
 #
 
 PORTNAME=	crank
-PORTVERSION=	0.1.2
+PORTVERSION=	0.1.3
 CATEGORIES=	security
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
