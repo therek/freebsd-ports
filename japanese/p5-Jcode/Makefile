@@ -2,7 +2,7 @@
 # Date created:		7 Nov 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.5 2000/06/13 02:44:14 kuriyama Exp $
+# $FreeBSD: ports/japanese/p5-Jcode/Makefile,v 1.6 2000/06/17 02:36:42 will Exp $
 #
 
 PORTNAME=	Jcode
@@ -32,7 +32,7 @@ do-configure:
 		CC="${CC}" CCFLAGS="${CFLAGS}"
 .for DIR in Unicode Jcode
 	${PERL} -pi -e "s:CCFLAGS = :CCFLAGS = ${CFLAGS}:g" ${WRKSRC}/${DIR}/Makefile
-	${PERL} -pi -e "s:CC = cc:CC = ${CC}:g" ${WRSRC}/${DIR}/Makefile
+	${PERL} -pi -e "s:CC = cc:CC = ${CC}:g" ${WRKSRC}/${DIR}/Makefile
 .endfor
 
 .include <bsd.port.post.mk>
