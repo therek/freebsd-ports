@@ -2,20 +2,22 @@
 # Date created:		26 Mar 2000
 # Whom:			will
 #
-# $FreeBSD: ports/net/mudix/Makefile,v 1.3 2000/11/14 01:13:31 asami Exp $
+# $FreeBSD: ports/net/mudix/Makefile,v 1.4 2000/12/26 07:03:27 will Exp $
 #
 
 PORTNAME=	mudix
-PORTVERSION=	3.5
+PORTVERSION=	4.0
 CATEGORIES=	net
 MASTER_SITES=	http://dwizardry.dhs.org/mudix/
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/${DISTNAME}/src
+GNU_CONFIGURE=	yes
+ALL_TARGET=	# none
 
-MAKE_ARGS=	CC="${CC}" O_FLAGS="${CFLAGS}"
-ALL_TARGET=	mudix
+pre-patch:
+	@${PERL} -pi -e 's|-O -g|\@CFLAGS\@|g ; \
+		 s|mudix.h conf.h||g' ${WRKSRC}/src/Makefile.in
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/mudix ${PREFIX}/bin
