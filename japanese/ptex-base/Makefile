@@ -2,7 +2,7 @@
 # Date created:		05 Oct 1997
 # Whom:			max
 #
-# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.35 2001/01/30 16:26:34 max Exp $
+# $FreeBSD: ports/japanese/ptex-common/Makefile,v 1.36 2001/06/29 03:13:30 max Exp $
 #
 
 PORTNAME=	ptex
@@ -70,6 +70,12 @@ pre-install:
 	@${MKDIR} ${TEXMF_TREE}
 	@tar zxf ${_DISTDIR}/${TETEX_TEXMF} -C ${TEXMF_TREE}
 	@tar zxf ${_DISTDIR}/${PTEX_TEXMF} -C ${TEXMF_TREE}
+# Following two commands are intended to be temporary until 
+# the original distribution is updated.
+	${MV} -f ${PREFIX}/share/texmf/tex/latex/base/latex.ltx ${WRKDIR}
+	${SED} -e 's/\\ifnum\\count@>17/\\ifnum\\count@>57/' \
+		${WRKDIR}/latex.ltx \
+		> ${PREFIX}/share/texmf/tex/latex/base/latex.ltx
 
 post-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/texinfo/util/texi2dvi ${PREFIX}/bin
