@@ -2,18 +2,17 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.17 2000/02/12 20:31:32 imura Exp $
+# $FreeBSD: ports/chinese/nvi-euc-cn/Makefile,v 1.18 2000/04/13 08:28:11 asami Exp $
 #
 
+CATEGORIES=	chinese editors
 PKGNAMESUFFIX=	-euccn
+
+MAINTAINER=	itojun@itojun.org
+
+CONFIGURE_ARGS+=	--enable-multibyte=euc-cn --program-prefix=n
 
 MASTERDIR=	${.CURDIR}/../../editors/nvi-m17n
 COMMENT=	${.CURDIR}/pkg/COMMENT
 
 .include "${MASTERDIR}/Makefile"
-
-CATEGORIES=	chinese editors
-
-MAINTAINER=	itojun@itojun.org
-
-CONFIGURE_ARGS+=	--enable-multibyte=euc-cn --program-prefix=n
