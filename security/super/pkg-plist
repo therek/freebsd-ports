@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/security/super/pkg-plist,v 1.3 2000/11/22 00:57:31 obrien Exp $
 bin/super
 bin/setuid
-share/examples/sample.tab
-share/examples/sample.cdmount
-share/doc/super/README
-@dirrm share/doc/super
+%%PORTDOCS%%share/examples/super/sample.tab
+%%PORTDOCS%%share/examples/super/sample.cdmount
+%%PORTDOCS%%share/doc/super/README
+%%PORTDOCS%%@dirrm share/examples/super
+%%PORTDOCS%%@dirrm share/doc/super
