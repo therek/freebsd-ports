@@ -2,11 +2,11 @@
 # Date created:				October 21st 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-Config-IniFiles/Makefile,v 1.18 2000/12/24 06:03:13 kevlo Exp $
+# $FreeBSD: ports/devel/p5-Config-IniFiles/Makefile,v 1.19 2001/01/11 15:57:37 kevlo Exp $
 #
 
 PORTNAME=	Config-IniFiles
-PORTVERSION=	2.14
+PORTVERSION=	2.19
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Config
@@ -16,7 +16,7 @@ MAINTAINER=	jeremy@external.org
 
 PERL_CONFIGURE=	YES
 
-MAN3=		Config::IniFiles.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+MAN3=		Config::IniFiles.3
 
 .include <bsd.port.mk>

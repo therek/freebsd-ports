@@ -3,11 +3,11 @@
 # Date created:                         Sep 8 1998
 # Whom:                                 ache@freebsd.org
 #
-# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.19 2001/01/16 17:33:03 sobomax Exp $
+# $FreeBSD: ports/www/p5-ParallelUA/Makefile,v 1.20 2001/03/01 06:38:28 vanilla Exp $
 #
 
 PORTNAME=	ParallelUA
-PORTVERSION=	2.49
+PORTVERSION=	2.50
 CATEGORIES=	www perl5 devel
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	LWP
@@ -19,6 +19,7 @@ MAINTAINER=	ache@FreeBSD.org
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/LWP.pm:${PORTSDIR}/www/p5-libwww \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/URI.pm:${PORTSDIR}/net/p5-URI \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/HTML/HeadParser.pm:${PORTSDIR}/www/p5-HTML-Parser
+RUN_DEPENDS=	${BUILD_DEPENDS}
 
 PERL_CONFIGURE=	yes
 

@@ -2,10 +2,10 @@
 # Date created:			19 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/devel/p5-File-Tail/Makefile,v 1.1 2000/12/21 10:30:25 will Exp $
+# $FreeBSD: ports/devel/p5-File-Tail/Makefile,v 1.2 2001/03/01 06:37:35 vanilla Exp $
 
 PORTNAME=	File-Tail
-PORTVERSION=	0.97
+PORTVERSION=	0.98
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
