@@ -2,11 +2,11 @@
 # Date created:		9 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.11 2001/07/20 07:59:52 knu Exp $
+# $FreeBSD: ports/net/ruby-xmlrpc/Makefile,v 1.12 2001/07/29 11:50:52 knu Exp $
 #
 
 PORTNAME=	xmlrpc
-PORTVERSION=	1.7.1
+PORTVERSION=	1.7.2
 CATEGORIES=	net ruby
 MASTER_SITES=	http://www.fantasy-coders.de/ruby/xmlrpc4r/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -24,7 +24,7 @@ USE_RUBY=	yes
 
 NO_BUILD=	yes
 
-DOCS_EN=	ChangeLog README ToDo doc/*
+DOCS_EN=	ChangeLog README ToDo doc/*.css doc/*.html doc/*.rd
 
 post-extract:
 	${RM} -rf ${WRKSRC}/samples/monitor
