@@ -3,7 +3,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.34 2000/11/07 23:28:00 asami Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.35 2001/03/09 13:10:09 obrien Exp $
 #
 
 PORTNAME=	ddd
@@ -35,6 +35,10 @@ LIBXMDIR!=	${ECHO} ${MOTIFLIB} | sed -e 's/-L//g' | awk '{print $$1}'
 LIBXMDIR=	${X11BASE}
 .endif
 
+pre-patch:
+	${RM} -fv ${WRKSRC}/ddd/ddd.info*
+	${RM} -fv ${WRKSRC}/ddd/ddd-themes.info*
+
 pre-configure:
 	@/usr/bin/find ${WRKSRC} -name configure | /usr/bin/xargs \
 		${PERL} -pi -e "s|-O2|-g|"
@@ -42,11 +46,8 @@ pre-configure:
 post-configure:
 	${ECHO} "LIBXM = ${MOTIFLIB}" >> ${WRKSRC}/ddd/Makefile
 
-pre-build:
-	@${RM} -f ${WRKSRC}/doc/ddd.info*
-
 post-install:
-	/usr/bin/install-info ${PREFIX}/info/ddd.info ${PREFIX}/info/dir
+	@${RM} ${PREFIX}/lib/libiberty.a
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ddd
 	${INSTALL_DATA} ${WRKSRC}/PROBLEMS ${PREFIX}/share/doc/ddd
