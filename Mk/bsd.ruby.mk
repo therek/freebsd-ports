@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.56 2001/09/03 13:00:00 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.57 2001/09/11 10:29:07 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -127,7 +127,7 @@ RUBY_DISTNAME?=		ruby-${RUBY_DISTVERSION}
 
 RUBY_WRKSRC?=		${WRKDIR}/${RUBY_DISTNAME}
 
-RUBY_ARCH?=		${ARCH}-freebsd${OSREL}${RUBY_R}
+RUBY_ARCH?=		${ARCH}-freebsd${OSREL:C/\..*//}${RUBY_R}
 RUBY_NAME?=		ruby${RUBY_SUFFIX}
 
 _RUBY_SYSLIBDIR?=	${LOCALBASE}/lib
