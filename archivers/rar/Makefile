@@ -1,9 +1,8 @@
 # New ports collection makefile for:    rar
-# http://www.rarsoft.com/
 # Date created:         15 May 1996
 # Whom:                 ache
 #
-# $FreeBSD: ports/archivers/rar/Makefile,v 1.20 1999/10/30 18:03:37 mharo Exp $
+# $FreeBSD: ports/archivers/rar/Makefile,v 1.21 2000/04/08 23:17:51 mharo Exp $
 #
 
 PORTNAME=	rar
