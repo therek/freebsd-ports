@@ -2,7 +2,7 @@
 # Date created:		5 Sep 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt/Makefile,v 1.13 2000/12/16 19:58:42 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mutt
@@ -55,7 +55,7 @@ MAN1=		mutt.1 mutt_dotlock.1
 MAN5=		muttrc.5
 
 pre-configure:
-	(cd ${WRKSRC}; aclocal -I m4)
+	(cd ${WRKSRC}; ${ACLOCAL} -I m4)
 
 post-install:
 	${INSTALL_DATA} ${WRKDIR}/manual_ja.txt ${PREFIX}/share/doc/mutt
