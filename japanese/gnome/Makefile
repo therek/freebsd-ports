@@ -2,12 +2,11 @@
 # Date created:		02 November 2000
 # Whom:			Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/gnome/Makefile,v 1.6 2001/01/26 23:52:00 nakai Exp $
+# $FreeBSD: ports/japanese/gnome/Makefile,v 1.7 2001/02/09 22:01:58 ade Exp $
 #
 
 PORTNAME=	gnome
-PORTVERSION=	1.2
-PORTREVISION=	3
+PORTVERSION=	1.4.1b2
 CATEGORIES=	japanese x11 gnome
 MASTER_SITES=	# empty
 DISTFILES=	# empty
