@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/nvi-sjis/Makefile,v 1.20 2000/10/08 10:21:11 asami Exp $
+# $FreeBSD: ports/japanese/nvi-sjis/Makefile,v 1.21 2001/01/09 05:57:03 itojun Exp $
 #
 
 PKGNAMESUFFIX=	-sjis
@@ -12,10 +12,10 @@ COMMENT=	${.CURDIR}/pkg-comment
 
 LIB_DEPENDS=	canna.1:${PORTSDIR}/japanese/Canna
 
-.include	"${MASTERDIR}/Makefile"
-
 CATEGORIES=	japanese editors
 
 MAINTAINER=	ports@freebsd.org
 
-CONFIGURE_ARGS+=	--enable-multibyte=sjis --program-prefix=n --enable-canna
+CONFIGURE_ARGS=        --enable-multibyte=sjis --program-prefix=n --enable-canna
+
+.include       "${MASTERDIR}/Makefile"

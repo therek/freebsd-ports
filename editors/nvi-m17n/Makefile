@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.20 2001/01/23 07:59:44 kevlo Exp $
+# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.21 2001/02/08 12:35:28 kevlo Exp $
 #
 
 PORTNAME=	nvi
@@ -17,14 +17,14 @@ DISTNAME=	nvi-1.79
 PATCH_SITES=	ftp://ftp.foretune.co.jp/pub/tools/nvi-m17n/
 PATCHFILES=	nvi-1.79.m17n-19991117.diff.gz
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER?=   ports@FreeBSD.org
 
 PATCH_DIST_ARGS=-d ${WRKSRC}/.. --forward --quiet -E -p1 -f
 WRKSRC=		${WRKDIR}/${DISTNAME}/build
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	OPTFLAG='-D_PATH_SYSEXRC=\"${PREFIX}/etc/vi.exrc\"'
-CONFIGURE_ARGS=	--enable-multibyte --program-prefix=n
+CONFIGURE_ARGS?=       --enable-multibyte --program-prefix=n
 
 MAN1=		nvi.1
 MLINKS=		nvi.1 nex.1  nvi.1 nview.1
