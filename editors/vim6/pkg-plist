@@ -1,8 +1,6 @@
-@comment $FreeBSD: ports/editors/vim6/pkg/PLIST,v 1.27 2000/07/31 19:28:41 asami Exp $
+@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.28 2000/08/24 20:36:46 obrien Exp $
 bin/vim
 bin/vimtutor
-bin/ctags
-bin/etags
 bin/xxd
 @comment bin/ex
 @comment bin/gex
