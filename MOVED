@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.7 2002/11/18 10:56:25 netchild Exp $
+# $FreeBSD: ports/MOVED,v 1.8 2002/11/18 19:47:22 knu Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -24,7 +24,7 @@ chinese/netscape47-communicator||2002-11-17|security vulnerability
 chinese/netscape47-navigator||2002-11-17|security vulnerability
 japanese/linux-netscape47-communicator||2002-11-17|security vulnerability
 japanese/linux-netscape47-navigator||2002-11-17|security vulnerability
-japanese/netscape-fonts||2002-11-17|obsoleted by alias-fonts
+japanese/netscape-fonts|japanese/alias-fonts|2002-11-17|obsoleted by alias-fonts
 japanese/netscape3.language||2002-11-17|security vulnerability
 japanese/netscape4-communicator|japanese/netscape48-communicator|2002-11-17|security vulnerability
 japanese/netscape4-navigator|japanese/netscape48-navigator|2002-11-17|security vulnerability
