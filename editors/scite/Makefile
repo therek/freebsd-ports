@@ -2,11 +2,11 @@
 # Date created:				27 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/scite/Makefile,v 1.1 2000/11/27 13:54:38 sobomax Exp $
+# $FreeBSD: ports/editors/scite/Makefile,v 1.2 2001/01/10 13:24:32 sobomax Exp $
 #
 
 PORTNAME=	scite
-PORTVERSION= 	1.34
+PORTVERSION= 	1.35
 CATEGORIES=	editors gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.scintilla.org/
