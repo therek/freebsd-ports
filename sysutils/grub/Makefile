@@ -2,11 +2,11 @@
 # Whom:					rjoseph@mammalia.org
 # Date created:				24 July 2000
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/grub/Makefile,v 1.1 2000/08/02 08:30:06 nbm Exp $
 #
 
 PORTNAME=	grub
-PORTVERSION=	0.5.95
+PORTVERSION=	0.5.96
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/grub/
 
