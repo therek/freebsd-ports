@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.162 2002/04/12 17:10:09 ade Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.163 2002/04/16 10:50:03 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
