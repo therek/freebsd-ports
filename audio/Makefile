@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.113 1999/11/14 03:17:52 cpiazza Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.114 1999/11/18 09:20:02 dburr Exp $
 #
 
     SUBDIR += amp
@@ -82,6 +82,7 @@
     SUBDIR += waveplay
     SUBDIR += wmcdplay
     SUBDIR += wmmixer
+    SUBDIR += wmmp3
     SUBDIR += wmsound
     SUBDIR += wmtune
     SUBDIR += workman
