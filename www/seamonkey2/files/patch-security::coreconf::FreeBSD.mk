@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/www/mozilla/files/patch-security::coreconf::FreeBSD.mk,v 1.6 2003/04/04 07:04:20 marcus Exp $
 
 --- security/coreconf/FreeBSD.mk.orig	Sat Mar  9 00:17:36 2002
 +++ security/coreconf/FreeBSD.mk	Tue Mar 12 17:19:15 2002
