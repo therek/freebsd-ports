@@ -2,12 +2,11 @@
 # Date created:		16 August 2001
 # Whom:	      		Johann Visagie <wjv@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.2 2001/08/17 14:50:14 wjv Exp $
+# $FreeBSD: ports/devel/py-twisted/Makefile,v 1.3 2001/08/17 15:18:14 wjv Exp $
 #
 
 PORTNAME=	twisted
-PORTVERSION=	0.9.5
-PORTREVISION=	1
+PORTVERSION=	0.10.0
 CATEGORIES=	devel net python
 MASTER_SITES=	http://twistedmatrix.com/downloads/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
@@ -22,7 +21,7 @@ USE_PYTHON=	yes
 
 EXAMPLESDIR=	${PREFIX}/share/examples/twisted
 
-MAN1=		faucet.1 gnusto.1 im.1 mktap.1 twistd.1
+MAN1=		faucet.1 gnusto.1 im.1 manhole.1 mktap.1 tap2deb.1 twistd.1
 
 post-patch:
 	@ ${PERL} -pi.orig -e 's/from pyunit import/import/g' \
