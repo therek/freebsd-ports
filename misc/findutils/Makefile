@@ -3,7 +3,7 @@
 # Date created:				29 March 2000
 # Whom:					Robert Withrow <witr@rwwa.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/findutils/Makefile,v 1.1 2000/06/02 05:35:49 hoek Exp $
 #
 
 PORTNAME=	findutils
