@@ -2,7 +2,7 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.1 2000/07/18 08:46:03 sobomax Exp $
 #
 
 PORTNAME=	pango
@@ -19,6 +19,7 @@ LIB_DEPENDS=	glib-1.3.1:${PORTSDIR}/devel/glib13 \
 USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes
+CONFIGURE_ARGS=	--with-qt=no
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include -I${X11BASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -L${X11BASE}/lib"
 
