@@ -2,23 +2,19 @@
 # Date created:		10 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/yafc/Makefile,v 1.17 2000/10/23 19:52:46 jeh Exp $
+# $FreeBSD: ports/ftp/yafc/Makefile,v 1.18 2001/02/28 14:26:12 kevlo Exp $
 #
 
 PORTNAME=	yafc
-PORTVERSION=	0.6.6
+PORTVERSION=	0.7.1
 CATEGORIES=	ftp
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
-
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LDFLAGS="-L${LOCALBASE}/lib -lintl"
 
 MAN1=		yafc.1
 
