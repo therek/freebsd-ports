@@ -2,11 +2,11 @@
 # Date created:		Tue Sep 28 02:25:17 JST 1999
 # Whom:			Yuki Sawada <samy@goldmoon.org>
 #
-# $FreeBSD: ports/graphics/enfle/Makefile,v 1.20 2000/09/05 01:57:30 steve Exp $
+# $FreeBSD: ports/graphics/enfle/Makefile,v 1.21 2000/12/11 03:08:18 steve Exp $
 #
 
 PORTNAME=	enfle
-PORTVERSION=	20001011
+PORTVERSION=	20010130
 CATEGORIES=	graphics
 MASTER_SITES=	http://enfle.fennel.org/ \
 		http://www3.big.or.jp/~sian/linux/products/enfle/ \
@@ -16,6 +16,9 @@ MAINTAINER=	samy@goldmoon.org
 
 LIB_DEPENDS=	png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
+		mng.0:${PORTSDIR}/graphics/libmng \
+		ungif.5:${PORTSDIR}/graphics/libungif \
+		arc.1:${PORTSDIR}/archivers/libarc \
 		bz2.1:${PORTSDIR}/archivers/bzip2
 
 USE_BZIP2=	yes
@@ -23,6 +26,7 @@ USE_X_PREFIX=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--enable-all-plugins \
 		--enable-plugins-dir \
+		--enable-loader=ungif \
 		--disable-static
 
 MAN1=		enfle.1
