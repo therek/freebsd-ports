@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.171 2001/03/09 21:24:45 trevor Exp $
+# $FreeBSD: ports/security/Makefile,v 1.172 2001/03/11 01:44:55 will Exp $
 #
 
     SUBDIR += aafid2
@@ -138,6 +138,7 @@
     SUBDIR += sslproxy
     SUBDIR += sslwrap
     SUBDIR += sst
+    SUBDIR += steghide
     SUBDIR += strobe
     SUBDIR += stunnel
     SUBDIR += sudo
