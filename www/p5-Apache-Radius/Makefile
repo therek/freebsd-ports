@@ -3,7 +3,7 @@
 # Date created:				Mon 20 Sep 19:46:21 SAST 1999
 # Whom:					Sheldon Hearn <sheldonh@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Apache-Radius/Makefile,v 1.1.1.1 1999/09/20 18:28:17 sheldonh Exp $
 #
 
 DISTNAME=	Apache-AuthenRadius-0.3
@@ -14,7 +14,8 @@ MASTER_SITE_SUBDIR=	Apache
 
 MAINTAINER=	sheldonh@FreeBSD.org
 
-BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Authen/Radius.pm:${PORTSDIR}/security/p5-Authen-Radius
+BUILD_DEPENDS=	${PREFIX}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/mod_perl.pm:${PORTSDIR}/www/mod_perl \
+		${PREFIX}/lib/perl5/site_perl/${PERL_VER}/Authen/Radius.pm:${PORTSDIR}/security/p5-Authen-Radius
 
 USE_PERL5=	YES
 
