@@ -2,7 +2,7 @@
 # Date created:		September 08, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-fonts/ttmkfdir/Makefile,v 1.11 2001/01/09 19:13:17 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ttmkfdir
@@ -18,7 +18,7 @@ USE_X_PREFIX=	yes
 USE_FREETYPE=	yes
 
 do-build:
-	cd ${WRKSRC}; ${CC} ${CFLAGS} -I${LOCALBASE}/include/freetype \
+	cd ${WRKSRC}; ${CC} ${CFLAGS} -I${LOCALBASE}/include/freetype1/freetype \
 		ttmkfdir.c -o ttmkfdir -L${LOCALBASE}/lib -lttf
 
 do-install:
