@@ -1,4 +1,4 @@
-# $FreeBSD: ports/russian/Makefile,v 1.26 2000/06/04 23:08:17 will Exp $
+# $FreeBSD: ports/russian/Makefile,v 1.27 2000/07/16 20:09:42 steve Exp $
 #
 
     SUBDIR += X.language
@@ -10,7 +10,7 @@
     SUBDIR += gd
     SUBDIR += koi8r-ps
     SUBDIR += messarge
-    SUBDIR += netscape3.language
+    SUBDIR += netscape4.language
     SUBDIR += pgp.language
     SUBDIR += pine.language
     SUBDIR += rispell
