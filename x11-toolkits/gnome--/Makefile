@@ -2,7 +2,7 @@
 # Date created:         18 Jun 2000
 # Whom:                 Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/gnome--/Makefile,v 1.1 2000/06/20 20:14:43 will Exp $
 #
 
 PORTNAME=      gnomemm
@@ -13,7 +13,7 @@ MASTER_SITES=  http://download.sourceforge.net/gtkmm/
 MAINTAINER=    erich@tacni.net
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
-		gtkmm-1.2:${PORTSDIR}/x11-toolkits/gtk--
+		gtkmm-1.2.1:${PORTSDIR}/x11-toolkits/gtk--
 BUILD_DEPENDS=	m4:${PORTSDIR}/devel/m4
 
 GTK_CONFIG?=    ${X11BASE}/bin/gtk12-config
