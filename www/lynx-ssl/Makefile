@@ -2,26 +2,21 @@
 # Date created:         15 Dec 1994
 # Whom:                 Stefan `Sec` Zehl <sec@42.org>
 #
-# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.9 2000/03/13 03:03:29 asami Exp $
+# $FreeBSD: ports/www/lynx-ssl/Makefile,v 1.10 2000/04/10 00:05:48 cpiazza Exp $
 #
 
 PORTNAME=	lynx-ssl
-PORTVERSION= 	2.8.2.1
+PORTVERSION= 	2.8.3.1
 CATEGORIES=	www
-MASTER_SITES=   http://sol.slcc.edu/lynx/current/
-DISTNAME=	lynx2.8.2rel.1
+MASTER_SITES=   ftp://lynx.isc.org/current/
+DISTNAME=	lynx2.8.3rel.1
 
 USE_OPENSSL=	RSA
-FORBIDDEN=	"Riddled with buffer overflows exploitable by a malicious server to execute code as the local user"
 
 .include <bsd.port.pre.mk>
 
-.if defined(OPENSSL_RSAREF)
 PATCH_SITES=	http://www.moxienet.com/lynx/
-.else
-PATCH_SITES=	ftp://ftp.musin.de/unix/
-.endif
-PATCHFILES=	lynx-282-ssl.patch.gz
+PATCHFILES=	lynx-283-ssl.patch.gz
 PATCH_DIST_STRIP= -p1
 
 MAINTAINER=	sec@42.org
@@ -31,13 +26,14 @@ CFLAGS+=	-I${OPENSSLINC}/openssl
 CONFIGURE_ARGS= --with-screen=ncurses --with-zlib --libdir="${PREFIX}/etc" \
 		--enable-nsl-fork
 MAKEFILE=       makefile
-INSTALL_TARGET= install install-help
+INSTALL_TARGET= install-full
 MAN1=		lynx.1
 
-WRKSRC=		${WRKDIR}/lynx2-8-2
+WRKSRC=		${WRKDIR}/lynx2-8-3
 
 post-install:
-	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/lib/lynx_help
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/lynx_help
+	${CHOWN} -R ${SHAREOWN}:${SHAREGRP} ${PREFIX}/share/doc/lynx
 	${CHOWN} ${SHAREOWN}:${SHAREGRP} ${PREFIX}/etc/lynx.cfg
 
 .include <bsd.port.post.mk>
