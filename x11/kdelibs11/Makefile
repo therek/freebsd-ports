@@ -3,7 +3,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.37 2000/02/24 06:54:50 asami Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.38 2000/03/23 02:54:28 will Exp $
 #
 
 DISTNAME=	kdelibs-1.1.2
@@ -43,6 +43,7 @@ PLIST_SUB=	LIBVER=${LIBVER}
 MAKE_ENV=	SOMAJOR=${LIBMAJOR} SOMINOR=${LIBMINOR}
 
 post-install:
+	@${TOUCH} ${PREFIX}/lib/libkdecore.la
 .for LIB in jscript kab kdecore kdeui kfile kfm khtmlw kimgio kspell mediatool
 	@${LN} -sf ${PREFIX}/lib/lib${LIB}.so.${LIBVER} ${PREFIX}/lib/lib${LIB}.so
 .if ${PORTOBJFORMAT} == "aout"
