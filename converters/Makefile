@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.55 2001/03/10 18:13:41 will Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.56 2001/03/13 21:10:20 andreas Exp $
 #
 
     SUBDIR += aish
@@ -37,6 +37,7 @@
     SUBDIR += recode
     SUBDIR += ruby-iconv
     SUBDIR += ruby-sha1
+    SUBDIR += siconv
     SUBDIR += tcs
     SUBDIR += tnef
     SUBDIR += trans
