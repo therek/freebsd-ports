@@ -2,7 +2,7 @@
 # Date created:			17 Nov 1998
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/xchat/Makefile,v 1.55 2000/06/01 16:25:44 ade Exp $
+# $FreeBSD: ports/irc/xchat/Makefile,v 1.56 2000/06/05 19:04:16 jim Exp $
 #
 
 PORTNAME=		xchat
@@ -24,6 +24,10 @@ LIB_DEPENDS+=		gnome.4:${PORTSDIR}/x11/gnomelibs
 
 .if defined(WITH_GDK_PIXBUF)
 LIB_DEPENDS+=		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+.endif
+
+.if exists(${X11BASE}/bin/panel) && defined(WITH_GNOME)
+WITH_GDK_PIXBUF=	YES
 .endif
 
 GTK_CONFIG?=		${X11BASE}/bin/gtk12-config
