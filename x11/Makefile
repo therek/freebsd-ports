@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.270 1999/11/01 03:21:43 steve Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.271 1999/11/03 01:34:54 jim Exp $
 #
 
     SUBDIR += 9term
@@ -8,7 +8,6 @@
     SUBDIR += bgrot
     SUBDIR += blast
     SUBDIR += bricons
-    SUBDIR += camltk41
     SUBDIR += dgs
     SUBDIR += dxpc
     SUBDIR += emu

@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.236 1999/11/21 20:59:26 sada Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.237 1999/11/22 11:22:42 itojun Exp $
 #
 
     SUBDIR += Canna
@@ -13,7 +13,6 @@
     SUBDIR += addttfont
     SUBDIR += binder
     SUBDIR += bookview
-    SUBDIR += camltk41
     SUBDIR += canuum
     SUBDIR += cdrom2
     SUBDIR += chasen
