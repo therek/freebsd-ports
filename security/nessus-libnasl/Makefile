@@ -2,11 +2,11 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.17 2001/01/24 12:43:12 olgeni Exp $
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.18 2001/02/05 23:42:42 olgeni Exp $
 #
 
 PORTNAME=	libnasl
-PORTVERSION=	1.0.7a
+PORTVERSION=	1.0.8
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${PORTVERSION}/src/ \

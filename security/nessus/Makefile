@@ -2,11 +2,11 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.25 2001/03/11 13:46:15 olgeni Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.26 2001/03/14 23:34:30 olgeni Exp $
 #
 
 PORTNAME=	nessus
-PORTVERSION=	1.0.7a
+PORTVERSION=	1.0.8
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${PORTVERSION}/src/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${PORTVERSION}/src/ \
