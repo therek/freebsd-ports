@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.18 2000/07/13 20:20:21 jim Exp $
+# $FreeBSD: ports/audio/xmms/Makefile,v 1.19 2000/07/31 07:56:09 sobomax Exp $
 #
 
 PORTNAME=	xmms
@@ -18,7 +18,6 @@ MASTER_SITES=	ftp://ftp.xmms.org/xmms/1.2.x/ \
 
 PATCH_SITES=	${MASTER_SITE_LOCAL}
 PATCH_SITE_SUBDIR=	sobomax
-PATCHFILES=	xmms-1.2.1-3dnow-20000620.patch.gz
 
 MAINTAINER=	esk@ira.uka.de
 
@@ -72,6 +71,7 @@ CONFIGURE_ENV+=	GTK_CONFIG="${GTK_CONFIG}" \
 .include <bsd.port.pre.mk>
 
 .if !defined(WITHOUT_3DNOW) && ${OSVERSION} >= 400021
+PATCHFILES=	xmms-1.2.1-3dnow-20000620.patch.gz
 CONFIGURE_ARGS+=	--enable-3dnow
 .endif
 
