@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.105 2000/05/29 06:22:54 will Exp $
+# $FreeBSD: ports/security/Makefile,v 1.106 2000/06/02 02:56:28 will Exp $
 #
 
     SUBDIR += bjorb
@@ -96,6 +96,7 @@
     SUBDIR += tcp_wrapper
     SUBDIR += trinokiller
     SUBDIR += tripwire
+    SUBDIR += tripwire131
     SUBDIR += vscan
     SUBDIR += whisker
     SUBDIR += xinetd
