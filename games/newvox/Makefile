@@ -2,7 +2,7 @@
 # Date created:			  23 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/newvox/Makefile,v 1.1 2001/08/23 12:28:12 kris Exp $
 #
 
 PORTNAME=	newvox
@@ -16,7 +16,7 @@ LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	SDL_CONFIG="${PREFIX}/bin/sdl11-config"
+CONFIGURE_ENV=	SDL_CONFIG="${LOCALBASE}/bin/sdl11-config"
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/newvox ${PREFIX}/bin
