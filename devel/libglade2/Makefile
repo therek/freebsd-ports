@@ -2,11 +2,11 @@
 # Date created:				18 August 1999
 # Whom:					Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/devel/libglade/Makefile,v 1.14 2000/06/16 08:47:21 sobomax Exp $
+# $FreeBSD: ports/devel/libglade/Makefile,v 1.15 2000/06/16 21:50:04 asami Exp $
 #
 
 PORTNAME=	libglade
-PORTVERSION=	0.13
+PORTVERSION=	0.14
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/libglade
