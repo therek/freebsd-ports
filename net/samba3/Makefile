@@ -3,11 +3,11 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/samba/Makefile,v 1.42 1999/08/30 14:24:07 peter Exp $
 #
 
-DISTNAME=	samba-2.0.5a
-PKGNAME=	samba-2.0.5
+DISTNAME=	samba-2.0.6
+#PKGNAME=	samba-2.0.5
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.samba.org/pub/samba/ \
 		ftp://ring.asahi-net.or.jp/pub/net/samba/ \
