@@ -2,11 +2,12 @@
 # Date created:		3rd August 2001
 # Whom:			Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/graphics/vlc/Makefile,v 1.4 2001/08/08 22:33:03 brian Exp $
+# $FreeBSD: ports/graphics/vlc/Makefile,v 1.5 2001/08/10 11:35:16 brian Exp $
 #
 
 PORTNAME=	vlc
 PORTVERSION=	0.2.82
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.videolan.org/pub/videolan/vlc/${PORTVERSION}/ \
 		ftp://ftp.Awfulhak.org/pub/vlc/ \
@@ -16,12 +17,23 @@ MAINTAINER=	brian@Awfulhak.org
 
 LIB_DEPENDS=	SDL-1.1:${PORTSDIR}/devel/sdl12
 
-HAS_CONFIGURE=	yes
-CONFIGURE_ENV=	PATH_GTKCONFIG="${PREFIX}/bin/gtk12-config" \
-		CPPFLAGS="-I${LOCALBASE}/include" \
+GNU_CONFIGURE=	yes
+CONFIGURE_ENV=	PATH_GTKCONFIG="${GTK_CONFIG}" \
+		CPPFLAGS="-I${LOCALBASE}/include ${PTHREAD_CFLAGS}" \
 		LDFLAGS="-L${LOCALBASE}/lib"
 USE_GTK=	yes
 USE_GMAKE=	yes
 USE_BZIP2=	yes
 
-.include <bsd.port.mk>
+post-patch:
+	${PERL} -pi.orig -e 's,-lpthread,${PTHREAD_LIBS},g' ${WRKSRC}/configure
+
+.include <bsd.port.pre.mk>
+
+.if ${XFREE86_VERSION} == 4
+PLIST_SUB=	XF4=""
+.else
+PLIST_SUB=	XF4="@comment "
+.endif
+
+.include <bsd.port.post.mk>
