@@ -2,7 +2,7 @@
 # Date created:         3 Mar 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/AbiWord/Makefile,v 1.25 2001/09/11 03:05:05 ache Exp $
+# $FreeBSD$
 #
 
 # Note: this port cannot be built when the textproc/mswordview port is
@@ -32,19 +32,16 @@ WRKSRC=		${WRKDIR}/${DISTNAME}/abi
 USE_GMAKE=	yes
 USE_GTK=	yes
 USE_AUTOMAKE=	yes
-AUTOMAKE=	${WRKSRC}/autogen.sh && ${FIXME}
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib -lgiconv"
 MAKEFILE=	GNUmakefile
-
-FIXME=		find ${WRKSRC} -name GNUmakefile.in | xargs ${PERL} -pi -e \
-		    's|\$$\(libdir\)/\@PACKAGE\@|\$$\(datadir\)/\@PACKAGE\@|g ; \
-		     s|\@DEFS\@|-I${WRKSRC}/../libiconv/include \@DEFS\@|g'
 
 pre-configure:
 	@cd ${WRKSRC} && ${TOUCH} NEWS README AUTHORS ChangeLog
 	@cd ${WRKSRC}/ac-helpers && ${RM} -f install-sh mkinstalldirs missing
 	@${RM} -f ${WRKSRC}/configure.ac
+	@cd ${WRKSRC} ; ${WRKSRC}/autogen.sh
+	@cd ${WRKSRC} ; ${FIXME}
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
