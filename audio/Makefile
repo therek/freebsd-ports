@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.138 2000/06/07 16:20:02 sobomax Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.139 2000/06/07 17:15:02 will Exp $
 #
 
     SUBDIR += afsp
@@ -61,6 +61,7 @@
     SUBDIR += napster
     SUBDIR += nas
     SUBDIR += nspmod
+    SUBDIR += pimp3
     SUBDIR += play
     SUBDIR += playmidi
     SUBDIR += pysol-sound-server
