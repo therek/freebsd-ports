@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/sysutils/ldap-account-manager/pkg-plist,v 1.6 2004/03/01 14:29:36 clement Exp $
+@comment $FreeBSD: ports/sysutils/ldap-account-manager/pkg-plist,v 1.7 2004/03/21 22:57:27 clement Exp $
 %%WWWROOT%%/config/.htaccess
 @unexec if cmp -s %D/%%WWWROOT%%/config/config.cfg %D/%%WWWROOT%%/config/config.cfg_sample; then rm -f %D/%%WWWROOT%%/config/config.cfg ; fi
 %%WWWROOT%%/config/config.cfg_sample
@@ -101,6 +101,7 @@
 @dirrm %%WWWROOT%%/graphics
 @dirrm %%WWWROOT%%/config
 @dirrm %%WWWROOT%%/help
+@dirrm %%WWWROOT%%/lib/font/makefont
 @dirrm %%WWWROOT%%/lib/font
 @dirrm %%WWWROOT%%/lib
 @dirrm %%WWWROOT%%/locale/de_DE/LC_MESSAGES
