@@ -2,12 +2,11 @@
 # Date created:		17 January 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/aterm/Makefile,v 1.15 2001/04/22 05:10:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aterm
-PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTVERSION=	0.4.2
 CATEGORIES+=	x11	# `+=' is for slave ports
 MASTER_SITES=	http://download.sourceforge.net/aterm/
 
