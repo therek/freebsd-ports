@@ -2,16 +2,15 @@
 # Date created:                        	25 December 1999
 # Whom:                                 Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/net/centericq/Makefile,v 1.7 2000/06/20 21:45:51 cpiazza Exp $
+# $FreeBSD: ports/net/centericq/Makefile,v 1.8 2000/11/16 13:14:22 tg Exp $
 #
 
 PORTNAME=	centericq
-PORTVERSION=	2.0.0
+PORTVERSION=	3.7.3
 CATEGORIES=	net
-MASTER_SITES=	http://konst.org.ua/download/
-DISTNAME=	center-${PORTVERSION}
+MASTER_SITES=	http://download.konst.org.ua/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	ijliao@csie.nctu.edu.tw
 
 .include <bsd.port.pre.mk>
 .if ${OSVERSION} < 400010
@@ -20,18 +19,7 @@ CFLAGS+=	-nostdinc -I${LOCALBASE}/include/ncurses -I${LOCALBASE}/include\
 		-I/usr/include
 .endif
 
-WRKSRC=		${WRKDIR}/center
 USE_GMAKE=	yes
-
-post-patch:
-	@${PERL} -pi -e 's:__PREFIX__:${PREFIX}:' ${WRKSRC}/centerICQ.cc
-
-pre-build:
-	@(cd ${WRKDIR}/ktools/src; ${SETENV} CFLAGS="${CFLAGS}" CXXFLAGS="${CXXFLAGS}" ${GMAKE} ${MAKE_ARGS} )
-
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/center ${PREFIX}/bin
-	@${MKDIR} ${PREFIX}/share/center
-	${INSTALL_DATA} ${WRKSRC}/sound/* ${PREFIX}/share/center
+HAS_CONFIGURE=	yes
 
 .include <bsd.port.post.mk>
