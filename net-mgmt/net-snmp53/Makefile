@@ -3,7 +3,7 @@
 # Date created:				26 June 1996
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.34 1999/09/04 23:30:46 billf Exp $
+# $FreeBSD: ports/net/ucd-snmp/Makefile,v 1.35 1999/11/15 18:27:37 jmb Exp $
 #
 
 DISTNAME=	ucd-snmp-4.0.1
@@ -45,9 +45,9 @@ STARTUP_FILE=	${PREFIX}/etc/rc.d/snmpd.sh.sample
 .if ${PORTOBJFORMAT} == "aout"
 BROKEN=		"aout build breaks: ld: internal error: RRS relocs exceed allocation 343"
 .endif
-#.if ${OSVERSION} >= 400000
-#BROKEN=		"Uses the old VM system interfaces"
-#.endif
+.if ${OSVERSION} >= 400000
+BROKEN=		"Uses the old VM system interfaces"
+.endif
 
 SHLIB_VERSION=4
 PLIST_SUB= shlib=${SHLIB_VERSION}
@@ -58,9 +58,7 @@ post-patch:
 post-install:
 	@( cd ${PREFIX}/bin && strip ${BIN} )
 	@( cd ${PREFIX}/sbin && strip ${SBIN} )
-	echo "got to here BEFORE real to post switch"
-	( cd ${PREFIX}/include/ucd-snmp && ${CHMOD} 644 * )
-	echo "got to here AFTER real to post switch"
+	@( cd ${PREFIX}/include/ucd-snmp && ${CHMOD} 644 * )
 	@( cd ${PREFIX}/share/snmp/mibs && ${CHMOD} 644 * )
 	@( cd ${PREFIX}/lib && ${LN} -f libsnmp.so.${SHLIB_VERSION} libsnmp.so )
 	@${MKDIR} ${PREFIX}/share/examples/ucd-snmp
