@@ -3,10 +3,10 @@
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.2 1999/12/23 01:53:12 jedgar Exp $
+# $FreeBSD: ports/graphics/dia/Makefile,v 1.3 2000/02/12 14:56:56 nakai Exp $
 #
 
-DISTNAME=	dia-0.83
+DISTNAME=	dia-0.84
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/dia
@@ -23,8 +23,6 @@ USE_X_PREFIX=   yes
 USE_LIBTOOL=	yes
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
-		--datadir=${PREFIX}/share/gnome
 CONFIGURE_ENV=  CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
