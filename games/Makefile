@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.249 2000/01/24 03:35:53 jedgar Exp $
+# $FreeBSD: ports/games/Makefile,v 1.250 2000/01/24 05:40:37 steve Exp $
 #
 
     SUBDIR += 3dc
@@ -181,6 +181,7 @@
     SUBDIR += xkoules
     SUBDIR += xlaby
     SUBDIR += xlife
+    SUBDIR += xlifegame
     SUBDIR += xlines
     SUBDIR += xmahjongg
     SUBDIR += xmastermind
