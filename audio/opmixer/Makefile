@@ -2,13 +2,15 @@
 # Date created:				2000-12-29
 # Whom:					trevor
 #
-# $FreeBSD: ports/audio/opmixer/Makefile,v 1.3 2000/12/31 16:35:44 trevor Exp $
+# $FreeBSD: ports/audio/opmixer/Makefile,v 1.4 2000/12/31 16:39:46 trevor Exp $
 #
 
 PORTNAME=	opmixer
-PORTVERSION=	0.5
+PORTVERSION=	0.55
 CATEGORIES=	audio
-MASTER_SITES=	http://optronic.linuxave.net/wizborn/projects/opmixer/
+MASTER_SITES=	${MASTER_SITE_LOCAL} \
+		http://optronic.linuxave.net/wizborn/projects/opmixer/
+MASTER_SITE_SUBDIR=	trevor
 
 MAINTAINER=	trevor@FreeBSD.org
 
