@@ -3,13 +3,12 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.73 1999/09/07 10:45:18 steve Exp $
+# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.74 1999/10/12 21:25:58 jseger Exp $
 #
 
 DISTNAME=       ImageMagick-4.2.9
 CATEGORIES=	graphics perl5
 MASTER_SITES=	ftp://ftp.wizards.dupont.com/pub/ImageMagick/ \
-		ftp://ftp.cci.fr/pub/unix/gfx/ImageMagick/ \
 		ftp://ftp.u-aizu.ac.jp/pub/graphics/image/ImageMagick/ \
 		ftp://ftp.fifi.org/pub/ImageMagick/ \
 		ftp://gd.tuwien.ac.at/pub/graphics/ImageMagick/ \
