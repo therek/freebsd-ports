@@ -1,19 +1,20 @@
 # New ports collection makefile for: gd
-# Version required:     1.7.3
+# Version required:     1.8
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.17 2000/01/28 04:01:59 billf Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.18 2000/02/03 03:06:37 billf Exp $
 #
 
-DISTNAME=       gd-1.7.3
+DISTNAME=       gd-1.8
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
 
 MAINTAINER=	billf@FreeBSD.org
 
-LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png \
+		jpeg.9:${PORTSDIR}/graphics/jpeg
 .if defined(WANT_X11)
 LIB_DEPENDS+=	ttf.4:${PORTSDIR}/print/freetype \
 		Xpm.4:${PORTSDIR}/graphics/xpm
