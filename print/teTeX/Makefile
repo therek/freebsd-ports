@@ -2,7 +2,7 @@
 # Date created:		5 December 1996
 # Whom:			Bernd Rosauer <br@netland.inka.de>
 #
-# $FreeBSD: ports/print/teTeX/Makefile,v 1.41 2000/04/29 16:47:02 jseger Exp $
+# $FreeBSD: ports/print/teTeX/Makefile,v 1.42 2000/07/04 07:13:21 sobomax Exp $
 #
 
 PORTNAME=	teTeX
@@ -65,6 +65,7 @@ pre-install:
 	@cd ${TEXMF_TREE}; tar xfz ${_DISTDIR}/${TETEX_TEXMF}
 
 post-install:
+	@${INSTALL_SCRIPT} ${WRKSRC}/texinfo/util/texi2dvi ${PREFIX}/bin
 	@${SED} -e "s|^TEXMFMAIN = .*|TEXMFMAIN = ${TEXMF_TREE}|g" \
 		< ${WRKSRC}/texk/kpathsea/texmf.cnf \
 		> ${TEXMF_TREE}/web2c/texmf.cnf
