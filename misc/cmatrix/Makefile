@@ -2,15 +2,16 @@
 # Date created:				1 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/misc/cmatrix/Makefile,v 1.7 2000/04/18 00:18:50 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cmatrix
-PORTVERSION=	1.1b
+PORTVERSION=	1.2a
 CATEGORIES=	misc
-MASTER_SITES=	http://www.asty.org/cmatrix/dist/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	leeym@cae.ce.ntu.edu.tw
+MAINTAINER=	leeym@leeym.com
 
 MAN1=		cmatrix.1
 
@@ -21,9 +22,9 @@ do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cmatrix ${PREFIX}/bin
 	${INSTALL_MAN} ${WRKSRC}/cmatrix.1 ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/cmatrix
+	@${MKDIR} ${DOCSDIR}
 .for file in ChangeLog README TODO
-	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/cmatrix
+	${INSTALL_DATA} ${WRKSRC}/${file} ${DOCSDIR}
 .endfor
 .endif
 
