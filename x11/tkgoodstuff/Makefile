@@ -2,7 +2,7 @@
 # Date created:		7 Oct 1996
 # Whom:			pst
 #
-# $FreeBSD: ports/x11/tkgoodstuff/Makefile,v 1.16 2000/08/08 00:10:04 pst Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkgoodstuff
@@ -17,6 +17,7 @@ CATEGORIES=	x11 tk80
 DISTNAME=	${PORTNAME}${PORTVERSION}-final
 
 MAINTAINER=	ports@freebsd.org
+COMMENT=	TkGoodstuff module for fvwm2 window manager - requires XPM and fvwm2
 
 RUN_DEPENDS=	fvwm2:${PORTSDIR}/x11-wm/fvwm2
 LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
