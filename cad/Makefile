@@ -1,9 +1,10 @@
-# $FreeBSD: ports/cad/Makefile,v 1.16 1999/12/25 15:40:41 steve Exp $
+# $FreeBSD: ports/cad/Makefile,v 1.17 2000/05/03 14:59:41 ade Exp $
 #
 
     SUBDIR += acs
     SUBDIR += chipmunk
     SUBDIR += cider
+    SUBDIR += electric
     SUBDIR += felt
     SUBDIR += geda
     SUBDIR += irsim
