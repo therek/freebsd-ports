@@ -2,7 +2,7 @@
 # Date created:				2 Dec 1996
 # Whom:					nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/math/calctool/Makefile,v 1.6 2000/04/14 07:19:52 asami Exp $
+# $FreeBSD: ports/math/calctool/Makefile,v 1.7 2000/08/08 17:14:00 nsayer Exp $
 #
 
 PORTNAME=       calctool
@@ -12,7 +12,7 @@ MASTER_SITES=   ${MASTER_SITE_LOCAL}
 DISTNAME=       calctool-2.4pl13
 MASTER_SITE_SUBDIR=	nsayer
 
-MAINTAINER=     nsayer@quack.kfu.com
+MAINTAINER=     nsayer@freebsd.org
 
 USE_X_PREFIX=		yes
 MAN1=		calctool.1

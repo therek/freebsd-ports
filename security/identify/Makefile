@@ -2,7 +2,7 @@
 # Date created:		13 March 1999
 # Whom:			nsayer@quack.kfu.com
 #
-# $FreeBSD: ports/security/identify/Makefile,v 1.7 2000/04/09 18:29:44 cpiazza Exp $
+# $FreeBSD: ports/security/identify/Makefile,v 1.8 2000/06/02 03:18:39 will Exp $
 #
 
 PORTNAME=	identify
@@ -10,7 +10,7 @@ PORTVERSION=	0.7
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/tools/
 
-MAINTAINER=	nsayer@quack.kfu.com
+MAINTAINER=	nsayer@freebsd.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libident.a:${PORTSDIR}/security/libident
 
