@@ -2,7 +2,7 @@
 # Date created:		24 Feb 1997
 # Whom:			thepish
 #
-# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.78 2000/10/31 15:24:23 sada Exp $
+# $FreeBSD: ports/www/netscape47-communicator/Makefile,v 1.79 2001/04/08 20:41:16 sada Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -12,7 +12,7 @@ PORTVERSION?=	${DEFAULT_PORTVERSION}
 .include <bsd.port.pre.mk>
 .endif
 .if ${ARCH} == "alpha"
-DEFAULT_PORTVERSION?=	4.77
+DEFAULT_PORTVERSION?=	4.78
 .else
 DEFAULT_PORTVERSION?=	4.76
 .endif
