@@ -2,7 +2,7 @@
 # Date created:		13 March 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/x11-toolkits/ruby-qt2iconview/Makefile,v 1.3 2001/03/28 12:18:47 knu Exp $
+# $FreeBSD: ports/x11-toolkits/ruby-qt2iconview/Makefile,v 1.4 2001/03/28 12:33:17 knu Exp $
 #
 
 PORTNAME=	qt2iconview
@@ -20,6 +20,7 @@ RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
 
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+RUBY_WITH_PTHREAD=	yes
 
 USE_GMAKE=	yes
 
