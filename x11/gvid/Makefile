@@ -2,13 +2,13 @@
 # Date created:				5 June 2000
 # Whom:			Scott A. Moberly <smoberly@xavier.dyndns.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/gvid/Makefile,v 1.1 2000/07/04 08:11:53 sobomax Exp $
 #
 
 PORTNAME=	gvid
 PORTVERSION=	0.2
 CATEGORIES=	x11 gnome
-MASTER_SITES=	http://kvand.mit.edu/gVid/ \
+MASTER_SITES=	http://kvand.mit.edu/kvand/gVid/ \
 		ftp://ftp.proxad.net/mirrors/ftp.linuxberg.com/files/gnome/xwin/ \
 		ftp://ftp.sunsite.auc.dk/disk1/linuxberg.com/files/gnome/xwin/ \
 		ftp://ftp.infomagic.com/pub/mirrors/tucows/mlinux/files/gnome/xwin/ \
