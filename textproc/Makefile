@@ -1,8 +1,9 @@
-# $FreeBSD: ports/textproc/Makefile,v 1.176 2001/03/10 17:47:32 will Exp $
+# $FreeBSD: ports/textproc/Makefile,v 1.177 2001/03/10 20:51:43 will Exp $
 #
 
     SUBDIR += agrep
     SUBDIR += antiword
+    SUBDIR += ascii2pdf
     SUBDIR += aspell
     SUBDIR += br-ispell
     SUBDIR += british-ispell
