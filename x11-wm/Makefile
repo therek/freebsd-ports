@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-wm/Makefile,v 1.44 2000/08/12 12:04:39 alex Exp $
+# $FreeBSD: ports/x11-wm/Makefile,v 1.45 2000/09/19 18:09:50 ade Exp $
 #
 
     SUBDIR += 9menu
@@ -32,6 +32,7 @@
     SUBDIR += mlvwm
     SUBDIR += olvwm
     SUBDIR += piewm
+    SUBDIR += pwm
     SUBDIR += qvwm
     SUBDIR += sapphire
     SUBDIR += sapphire-themes
