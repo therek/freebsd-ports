@@ -2,13 +2,14 @@
 # Date created:		So   7 Feb 1999 20:50:43 MET
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/palm/syncal/Makefile,v 1.6 2000/04/13 19:19:04 cpiazza Exp $
+# $FreeBSD: ports/palm/syncal/Makefile,v 1.7 2000/04/21 07:52:10 mharo Exp $
 #
 
 PORTNAME=	syncal
 PORTVERSION=	0.8.3
 CATEGORIES=	palm comms deskutils
-MASTER_SITES=	http://hopf.math.nwu.edu/syncal/
+MASTER_SITES=	http://hopf.math.nwu.edu/syncal/ \
+		ftp://ftp.Uni-Bielefeld.DE/pub/systems/FreeBSD/lkoeller/
 
 MAINTAINER=	Lars.Koeller@Uni-Bielefeld.DE
 
