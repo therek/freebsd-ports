@@ -2,7 +2,7 @@
 # Date created:		04 Jan 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.8 2000/06/22 05:52:02 will Exp $
+# $FreeBSD: ports/graphics/twinlib/Makefile,v 1.9 2000/07/19 15:24:51 dannyboy Exp $
 #
 
 PORTNAME=	twinlib
@@ -13,6 +13,8 @@ DISTNAME=	${PORTNAME}.${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	ports@FreeBSD.org
+
+BROKEN=		"Missing qt headers"
 
 BUILD_DEPENDS=	${LOCALBASE}/bin/tmake:${PORTSDIR}/devel/tmake
 
