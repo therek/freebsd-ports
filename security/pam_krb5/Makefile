@@ -2,13 +2,13 @@
 # Date created:				11/03/2000
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.6 2001/06/11 18:44:05 nectar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		pam_krb5
-PORTVERSION=		1.0.1
+PORTVERSION=		1.0.3
 CATEGORIES=		security
-MASTER_SITES=		http://www.nectar.com/distfiles/
+MASTER_SITES=		http://www.nectar.cc/distfiles/
 
 MAINTAINER=		nectar@FreeBSD.org
 
