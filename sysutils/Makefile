@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.209 2001/08/23 08:54:19 kris Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.210 2001/08/24 14:33:02 dwcjr Exp $
 #
     SUBDIR += yawho
 
@@ -56,6 +56,7 @@
     SUBDIR += fsck_ext2fs
     SUBDIR += ftrace
     SUBDIR += gcombust
+    SUBDIR += gkrellflynn
     SUBDIR += gkrellm
     SUBDIR += glload
     SUBDIR += gnomecontrolcenter
