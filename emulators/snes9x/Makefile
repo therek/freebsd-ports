@@ -3,11 +3,11 @@
 # Date created:         20 July 1997
 # Whom:                 Yukihiro Nakai<Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.15 1999/09/22 04:06:50 green Exp $
+# $FreeBSD: ports/emulators/snes9x/Makefile,v 1.16 1999/12/28 04:27:51 nakai Exp $
 #
 
-DISTNAME=	s9xs126
-PKGNAME=	snes9x-1.26
+DISTNAME=	s9xs129
+PKGNAME=	snes9x-1.29
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.snes9x.com/zips/
 
@@ -27,6 +27,17 @@ USE_ZIP=	YES
 WRKSRC=		${WRKDIR}/release
 
 ONLY_FOR_ARCHS=	i386 alpha
+
+.if ${MACHINE_ARCH} == alpha
+post-patch:
+	@${SED} -e '/^ZSNESFX/d' \
+	    -e '/^ASMCPU/d' \
+	    -e '/^OPTIMISE/s/-mpentium //' \
+	    -e '/^-Ii386/d' \
+	    -e '/offsets >/s:i386/::' \
+	    < ${WRKSRC}/Makefile \
+	    > ${WRKSRC}/Makefile.alpha
+.endif
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/snes9x ${PREFIX}/bin
