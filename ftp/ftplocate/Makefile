@@ -2,7 +2,7 @@
 # Date created:				7 December 1999
 # Whom:					tung@turtle.ee.ncku.edu.tw
 #
-# $FreeBSD: ports/ftp/ftplocate/Makefile,v 1.9 2001/08/23 19:26:56 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftplocate
@@ -12,6 +12,8 @@ CATEGORIES=	ftp www
 MASTER_SITES=	ftp://ftp.ee.ncku.edu.tw/pub/ftplocate/
 
 MAINTAINER=	tung@turtle.ee.ncku.edu.tw
+
+BROKEN=		"Incorrect pkg-plist"
 
 BUILD_DEPENDS=  ${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	glimpse:${PORTSDIR}/textproc/glimpse \
