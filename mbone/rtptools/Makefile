@@ -3,7 +3,7 @@
 # Date created:		5 January 1998
 # Whom:			fenner
 #
-# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.3 1999/08/31 06:48:02 mharo Exp $
+# $FreeBSD: ports/mbone/rtptools/Makefile,v 1.4 2000/01/19 02:53:37 fenner Exp $
 #
 
 DISTNAME=	rtptools-1.14
@@ -14,7 +14,7 @@ MAINTAINER=	fenner@FreeBSD.org
 
 GNU_CONFIGURE=	yes
 
-DOCFILES=	README CHANGES.html rtptools.html
+DOCFILES=	README ChangeLog.html rtptools.html
 
 post-install:
 .if !defined(NOPORTDOCS)
