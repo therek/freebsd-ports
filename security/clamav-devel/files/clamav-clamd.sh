@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/security/clamav-devel/files/clamav-clamd.sh,v 1.2 2003/10/03 13:31:26 dinoex Exp $
 #
 
 # PROVIDE: clamd
@@ -25,16 +25,6 @@ command=%%PREFIX%%/sbin/clamd
 pidfile=/var/run/clamav/clamd.pid
 required_dirs=%%DATADIR%%
 required_files=%%PREFIX%%/etc/clamav.conf
-
-start_precmd=start_precmd
-
-start_precmd()
-{
-	if [ -S "$clamd_socket" ]; then
-		warn "Stale socket $clamd_socket removed."
-		rm "$clamd_socket"
-	fi
-}
 
 stop_postcmd=stop_postcmd
 
