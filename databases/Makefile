@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/databases/Makefile,v 1.40 1999/08/25 05:21:03 obrien Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -23,6 +23,7 @@
     SUBDIR += pgaccess
     SUBDIR += postgresql
     SUBDIR += py-PyGreSQL
+    SUBDIR += ruby-postgres
     SUBDIR += tkgnats
     SUBDIR += typhoon
     SUBDIR += xmbase-grok
