@@ -2,12 +2,12 @@
 # Date created:				11/03/2000
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.4 2001/02/05 16:20:31 nectar Exp $
+# $FreeBSD: ports/security/pam_krb5/Makefile,v 1.5 2001/06/11 18:38:46 nectar Exp $
 #
 
 PORTNAME=		pam_krb5
 PORTVERSION=		1.0
-PORTREVISION=		1
+PORTREVISION=		2
 CATEGORIES=		security
 MASTER_SITES=		http://www.fcusack.com/soft/
 
