@@ -1,8 +1,9 @@
-# $FreeBSD: ports/games/Makefile,v 1.332 2001/03/01 18:01:22 clive Exp $
+# $FreeBSD: ports/games/Makefile,v 1.333 2001/03/05 13:57:14 roam Exp $
 #
 
     SUBDIR += 3dc
     SUBDIR += 3dpong
+    SUBDIR += HeroesOfMightAndMagic
     SUBDIR += KnightCap
     SUBDIR += acm
     SUBDIR += actx
