@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.262 2001/02/07 06:37:00 knu Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.263 2001/02/12 16:41:11 taoka Exp $
 #
 
     SUBDIR += 4va
@@ -29,6 +29,7 @@
     SUBDIR += electriceyes
     SUBDIR += enfle
     SUBDIR += eog
+    SUBDIR += eps2png
     SUBDIR += epstool
     SUBDIR += eterm-bg
     SUBDIR += evas
