@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					t.vanklaveren@student.utwente.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/vorbis-tools/Makefile,v 1.1 2000/11/02 21:17:27 trevor Exp $
 #
 
 PORTNAME=	vorbis-tools
@@ -32,7 +32,7 @@ MAN1=		ogg123.1
 post-build:
 # This is probably evil, and should be in a Makefile.
 	cd ${WRKSRC}/oggenc && ${CC} ${CFLAGS} -c getopt1.c
-	cd ${WRKSRC}/ogg123 && ${CC} ${CFLAGS} -c ogg123.c -I${LOCALBASE}/include 
+	cd ${WRKSRC}/ogg123 && ${CC} ${CFLAGS} -c ogg123.c -I../oggenc -I${LOCALBASE}/include 
 	cd ${WRKSRC}/ogg123 && ${CC} ${LDFLAGS} -o ogg123 ogg123.o ../oggenc/getopt.o ../oggenc/getopt1.o -L${LOCALBASE}/lib -logg -lvorbis -lao -lvorbisfile
 
 post-install:
