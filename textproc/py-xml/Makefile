@@ -2,11 +2,11 @@
 # Date created:				04/17/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.16 2001/03/23 00:47:52 jeh Exp $
+# $FreeBSD: ports/textproc/py-xml/Makefile,v 1.17 2001/06/27 10:14:58 wjv Exp $
 #
 
 PORTNAME=		xml
-PORTVERSION=		0.6.5
+PORTVERSION=		0.6.6
 CATEGORIES=		textproc python
 MASTER_SITES=		${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	pyxml
@@ -26,8 +26,8 @@ USE_PYTHON=		yes
 .include <bsd.port.pre.mk>
 
 CPIO=			cpio --quiet -pdum -R
-DOCDIR=			${PREFIX}/share/doc/py-xml
-EGDIR=			${PREFIX}/share/examples/py-xml
+DOCSDIR=		${PREFIX}/share/doc/py-xml
+EXAMPLESDIR=		${PREFIX}/share/examples/py-xml
 .if ${PYTHON_VERSION} == "python1.5"
 PLIST_SUB+=		PACKAGE_DIR=xml
 .else
@@ -43,15 +43,15 @@ do-install:
 
 post-install:
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${DOCDIR}
+	@ ${MKDIR} ${DOCSDIR}
 .for docfile in ANNOUNCE CREDITS LICENCE README* TODO
-	@ ${INSTALL_MAN} ${WRKSRC}/${docfile} ${DOCDIR}
+	@ ${INSTALL_MAN} ${WRKSRC}/${docfile} ${DOCSDIR}
 .endfor
 	@ cd ${WRKSRC}/doc && find * \
-	  | ${CPIO} ${MANOWN}:${MANGRP} ${DOCDIR}
-	@ ${MKDIR} ${EGDIR}
+	  | ${CPIO} ${MANOWN}:${MANGRP} ${DOCSDIR}
+	@ ${MKDIR} ${EXAMPLESDIR}
 	@ cd ${WRKSRC} && find demo test \
-	  | ${CPIO} ${SHAREOWN}:${SHAREGRP} ${EGDIR}
+	  | ${CPIO} ${SHAREOWN}:${SHAREGRP} ${EXAMPLESDIR}
 .endif
 
 .include <bsd.port.post.mk>
