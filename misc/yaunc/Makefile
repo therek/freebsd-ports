@@ -2,11 +2,12 @@
 # Date created:		5 March 2000
 # Whom:			nsayer@freebsd.org
 #
-# $FreeBSD: ports/misc/yaunc/Makefile,v 1.4 2000/12/19 08:14:00 sobomax Exp $
+# $FreeBSD: ports/misc/yaunc/Makefile,v 1.5 2000/12/26 15:20:35 kevlo Exp $
 #
 
 PORTNAME=	yaunc
 PORTVERSION=	0.06
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://www.redterror.net/code/yaunc/
 
