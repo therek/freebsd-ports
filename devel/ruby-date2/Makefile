@@ -2,11 +2,11 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.4 2000/08/16 12:21:10 knu Exp $
+# $FreeBSD: ports/devel/ruby-date2/Makefile,v 1.5 2000/09/07 07:29:06 knu Exp $
 #
 
 PORTNAME=	date2
-PORTVERSION=	2
+PORTVERSION=	2.1
 CATEGORIES=	devel ruby
 MASTER_SITES=	http://www.kt.rim.or.jp/~tadf/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
@@ -22,7 +22,7 @@ MODULES=	date2.rb date3.rb holiday.rb odate.rb \
 		parsedate2.rb parsedate2.ry parsedate3.rb \
 		qholiday.rb strftime.rb strptime.rb
 
-DOCS_EN=	CHANGES.en MANUAL.en README.en
+DOCS_EN=	MANUAL.en README.en
 DOCS_JA=	MANUAL README
 EXAMPLES_EN=	cal.rb daylight.rb goodfriday.rb
 EXAMPLES_JA=	ncal.rb
