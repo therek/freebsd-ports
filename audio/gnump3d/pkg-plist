@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.6 2002/08/14 21:42:10 naddy Exp $
+@comment $FreeBSD: ports/audio/gnump3d/pkg-plist,v 1.7 2002/08/20 19:26:02 naddy Exp $
 bin/gnump3d
 bin/gnump3d-top
 etc/gnump3d/default/error.html
@@ -47,3 +47,8 @@ lib/gnump3d/version.so
 @dirrm lib/gnump3d
 @exec mkdir -p /var/log/gnump3d
 @unexec rmdir /var/log/gnump3d 2>/dev/null || true
+@dirrm etc/gnump3d/split
+@dirrm etc/gnump3d/simple
+@dirrm etc/gnump3d/nausicaa
+@dirrm etc/gnump3d/default
+@dirrm etc/gnump3d
