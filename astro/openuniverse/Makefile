@@ -3,7 +3,7 @@
 # Date created:				4 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/astro/ssystem/Makefile,v 1.8 1999/08/25 04:22:43 obrien Exp $
 #
 
 DISTNAME=		ssystem-1.6
@@ -12,6 +12,8 @@ MASTER_SITES=		http://www.geocities.com/SiliconValley/Station/6492/ \
 			http://www.msu.edu/user/kamelkev/
 
 MAINTAINER=		andy@icc.surw.chel.su
+
+BUILD_DEPENDS=		bison:${PORTSDIR}/devel/bison
 
 LIB_DEPENDS=		jpeg.9:${PORTSDIR}/graphics/jpeg \
 			MesaGL.14:${PORTSDIR}/graphics/Mesa3 \
