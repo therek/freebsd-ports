@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.50 2003/12/04 16:20:50 gerald Exp $
+@comment $FreeBSD: ports/lang/gcc34/pkg-plist,v 1.51 2003/12/14 02:35:52 gerald Exp $
 bin/cpp34
 bin/g++34
 bin/g77-34
@@ -9,7 +9,7 @@ bin/%%GNU_HOST%%-gcc34
 bin/%%GNU_HOST%%-g++34
 bin/%%GNU_HOST%%-gcj
 bin/%%GNU_HOST%%-gcjh
-bin/gccbug-%%GCC_VER%%
+bin/gccbug34
 bin/gcj34
 bin/gcjh34
 bin/gij34
