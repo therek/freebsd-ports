@@ -2,11 +2,11 @@
 # Date created:				06 January 2000
 # Whom:					Chris D. Faulhaber <jedgar@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/knapster/Makefile,v 1.14 2000/06/24 11:04:08 jedgar Exp $
+# $FreeBSD: ports/audio/knapster/Makefile,v 1.15 2000/07/16 13:30:55 jedgar Exp $
 #
 
 PORTNAME=	knapster
-PORTVERSION=	0.12
+PORTVERSION=	0.13
 CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
