@@ -2,11 +2,11 @@
 # Date created:				20th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/libole2/Makefile,v 1.1 2000/06/20 17:21:39 ade Exp $
 #
 
 PORTNAME=	libole2
-PORTVERSION=	0.1.4
+PORTVERSION=	0.1.5
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/libole2
