@@ -2,15 +2,15 @@
 # Date created:				16 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD: ports/graphics/feh/Makefile,v 1.4 2001/08/18 23:30:02 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	feh
-PORTVERSION=	1.1.0
+PORTVERSION=	1.1.1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
-MAINTAINER=	ishmael27@home.com
+MAINTAINER=	ishmael27x@yahoo.com
 
 LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2
 
@@ -19,6 +19,11 @@ USE_PERL5=	yes
 USE_X_PREFIX=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${X11BASE}/include" \
 		LIBS="-L${X11BASE}/lib"
+CONFIGURE_TARGET=	--target=${MACHINE_ARCH}-portbld-freebsd${OSREL}
+
+.if defined(NOPORTDOCS)
+MAKE_ENV=	NO_DOC=yes
+.endif
 
 MAN1=		feh.1
 
