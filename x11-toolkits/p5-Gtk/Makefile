@@ -1,13 +1,13 @@
 # New ports collection makefile for:	p5-Gtk
-# Version required:	0.5121
+# Version required:	0.7000
 # Date created:		28 Oct 1997
 # Whom:	      		Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.25 1999/08/31 06:52:48 mharo Exp $
+# $FreeBSD: ports/x11-toolkits/p5-Gtk/Makefile,v 1.26 1999/10/08 03:30:03 nakai Exp $
 #
 
-DISTNAME=	Gtk-Perl-0.5121
-PKGNAME=	p5-Gtk-0.5121
+DISTNAME=	Gtk-Perl-0.7000
+PKGNAME=	p5-Gtk-0.7000
 CATEGORIES=	x11-toolkits lang perl5
 MASTER_SITES=	ftp://ftp.gtk.org/pub/gtk/perl/ \
 		${MASTER_SITE_PERL_CPAN}
