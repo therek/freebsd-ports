@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.447 2003/04/19 22:35:28 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.448 2003/05/06 05:15:18 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -4041,7 +4041,7 @@ generate-plist:
 	@for i in $$(${ECHO} ${__MANPAGES} ${_TMLINKS:M${_PREFIX}*:S,^${_PREFIX}/,,:S,//,/,g} ' ' | ${SED} -E -e 's,man([1-9ln])/([^/ ]+) ,cat\1/\2 ,g'); do \
 		${ECHO} "@unexec rm -f %D/$${i%.gz} %D/$${i%.gz}.gz" >> ${TMPPLIST}; \
 	done
-.if ${XFREE86_HTML_MAN} == "yes"
+.if ${XFREE86_HTML_MAN:L} == "yes"
 .for mansect in 1 2 3 4 5 6 7 8 9 L N
 .for man in ${MAN${mansect}}
 	@echo lib/X11/doc/html/${man}.html >> ${TMPPLIST}
