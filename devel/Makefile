@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.543 2001/05/20 03:41:13 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.544 2001/05/20 03:58:49 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -209,6 +209,7 @@
     SUBDIR += libunicode
     SUBDIR += libusb
     SUBDIR += libuta
+    SUBDIR += libvanessa_adt
     SUBDIR += libvanessa_logger
     SUBDIR += libvanessa_socket
     SUBDIR += libxalloc
