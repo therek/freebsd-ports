@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.81 2004/11/09 10:10:54 pav Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.82 2004/11/16 07:34:57 mezz Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -30,7 +30,7 @@ Gnome_Pre_Include=			bsd.gnome.mk
 #					  that your port installs. These schema files and
 #					  %gconf.xml files will be automatically added to
 #					  ${PLIST}. For example, if your port has
-#					  "etc/gconf/schemas/(foo.schemas and bar.schemas)", add
+#					  "etc/gconf/schemas/(foo.schemas and bar.schemas)",
 #					  add the following to your Makefile:
 #					  "GCONF_SCHEMAS=foo.schemas bar.schemas".
 #
