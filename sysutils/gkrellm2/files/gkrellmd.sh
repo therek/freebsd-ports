@@ -1,15 +1,15 @@
 #!/bin/sh
 
 # Start or stop gkrellmd
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/gkrellm2/files/gkrellmd.sh,v 1.1 2002/09/02 18:22:56 ume Exp $
 
 PREFIX=%%PREFIX%%
 
 case "$1" in
 start)
-	if [ -x ${PREFIX}/sbin/gkrellmd -a \
+	if [ -x ${PREFIX}/bin/gkrellmd -a \
 	     -f ${PREFIX}/etc/gkrellmd.conf ]; then
-		${PREFIX}/sbin/gkrellmd &
+		${PREFIX}/bin/gkrellmd &
 		echo -n ' gkrellmd'
 	fi
 	;;
