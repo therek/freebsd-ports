@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.107 2001/02/09 04:58:24 kris Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.108 2001/02/09 22:55:47 kris Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -10,7 +10,7 @@
 
 PORTNAME=	ssh
 PORTVERSION=	1.2.27 # Note, 1.2.30 is under a more restrictive license
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	security ipv6
 MASTER_SITES=	ftp://ftp.cs.engr.uky.edu/cs/software/ \
 		ftp://ftp.cs.umn.edu/dept/users/rybski/ \
