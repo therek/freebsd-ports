@@ -2,7 +2,7 @@
 # Date created:		25 Feb 2000
 # Whom:			Ville Eerola <ve@sci.fi>
 #
-# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.115 2001/02/13 10:36:36 roam Exp $
+# $FreeBSD: ports/mail/fetchmail/Makefile,v 1.116 2001/02/23 08:30:39 roam Exp $
 #
 # NOTE:  The fetchmailconf program (an interactive program for
 # writing .fetchmailrc files) requires Python, Tk, X11, etc..
@@ -10,7 +10,7 @@
 # want fetchmailconf to work, define WITH_X11
 
 PORTNAME=	fetchmail
-PORTVERSION=	5.6.8
+PORTVERSION=	5.7.2
 CATEGORIES=	mail ipv6
 MASTER_SITES=	http://www.tuxedo.org/~esr/fetchmail/ \
 		ftp://ftp.ccil.org/pub/esr/fetchmail/
@@ -23,7 +23,7 @@ RUN_DEPENDS=	${LOCALBASE}/lib/python2.0/site-packages/_tkinter.so:${PORTSDIR}/x1
 .endif
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--enable-OPIE --enable-RPA --enable-POP2 --enable-SDPS \
+CONFIGURE_ARGS=	--enable-opie --enable-RPA --enable-POP2 --enable-SDPS \
 		--enable-nls --with-hesiod=no
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LDFLAGS="-L${LOCALBASE}/lib" \
@@ -62,11 +62,13 @@ pre-patch:
 	@${SED} -e "s|@PREFIX@|${PREFIX}|" ${FILESDIR}/fetchmailconf > ${WRKDIR}/fetchmailconf
 
 post-install:
+.if !defined(NOPORTDOCS)
 	${INSTALL} -d -m 555 -o ${DOCOWN} -g ${DOCGRP} ${FDOC}
 	cd ${WRKSRC} && ${INSTALL_DATA} \
 	   FAQ NOTES FEATURES README COPYING \
 	   fetchmail-FAQ.html fetchmail-features.html \
 	   design-notes.html ${FDOC}
+.endif
 	${MV} ${PREFIX}/bin/fetchmailconf ${PREFIX}/libexec/fetchmailconf.bin
 	${INSTALL_SCRIPT} ${WRKDIR}/fetchmailconf ${PREFIX}/bin
 
