@@ -3,7 +3,7 @@
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.5 1999/10/28 02:53:54 nakai Exp $
+# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.6 1999/12/02 06:49:21 nakai Exp $
 #
 
 DISTNAME=	wmG-0.15.0
