@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.109 2000/07/05 14:58:09 cjh Exp $
+# $FreeBSD: ports/print/Makefile,v 1.110 2000/07/16 17:35:42 asami Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -99,5 +99,6 @@
     SUBDIR += yatex
     SUBDIR += yatex-mule
     SUBDIR += yatex-xemacs
+    SUBDIR += yatex-xemacs-mule
 
 .include <bsd.port.subdir.mk>
