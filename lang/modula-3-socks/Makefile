@@ -3,18 +3,21 @@
 # Date created:		31 Oct 1996
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.4 1999/08/25 06:35:00 obrien Exp $
+# $FreeBSD: ports/lang/modula-3-socks/Makefile,v 1.5 1999/08/27 22:29:37 mharo Exp $
 #
 
-DISTNAME=	modula-3-socks
+DISTNAME=	socks
 PKGNAME=	modula-3-socks-1.0
 CATEGORIES=	lang
 MASTER_SITES=	ftp://ftp.cup.hp.com/dist/socks/A.B9.06/
-DISTFILES=	socks.tar.gz
 
 MAINTAINER=	jdp@polstra.com
 
 NO_WRKSUBDIR=	yes
+
+MANCOMPRESSED=	yes
+MAN1=		m3socks.1
+MAN5=		m3socks.conf.5
 
 libm3socks_files=	accept.c bind.c close.c connect.c dup.c dup2.c \
 			gethostbyaddr.c gethostbyname.c getpeername.c \
