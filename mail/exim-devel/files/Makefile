@@ -1,7 +1,7 @@
 ##################################################
 #          The Exim mail transport agent         #
 ##################################################
-# $FreeBSD$
+# $FreeBSD: ports/mail/exim/files/Makefile,v 1.12 2000/01/28 15:57:46 sheldonh Exp $
 
 # This is the template for Exim's main build-time configuration file. It
 # contains settings that are independent of any operating system. It should
@@ -321,8 +321,8 @@ LOOKUP_LSEARCH=yes
 
 # LOOKUP_INCLUDE=-I /usr/local/ldap/include -I /usr/local/mysql/include
 # LOOKUP_LIBS=-L/usr/local/lib -lldap -llber -lmysqlclient
-LOOKUP_INCLUDE=XX_LDAP_INCLUDE_XX XX_MYSQL_INCLUDE_XX
-LOOKUP_LIBS=XX_LDAP_LIBS_XX XX_MYSQL_LIBS_XX
+LOOKUP_INCLUDE=XX_MYSQL_INCLUDE_XX
+LOOKUP_LIBS=XX_MYSQL_LIBS_XX
 
 # If you have set LDAP=yes, you should set LDAP_LIB_TYPE to indicate which LDAP
 # library you have. Unfortunately, though most of their functions are the
@@ -334,7 +334,7 @@ LOOKUP_LIBS=XX_LDAP_LIBS_XX XX_MYSQL_LIBS_XX
 # LDAP_LIB_TYPE=UMICHIGAN
 # LDAP_LIB_TYPE=NETSCAPE
 # LDAP_LIB_TYPE=SOLARIS7
-LDAP_LIB_TYPE=XX_LDAP_TYPE_XX
+#LDAP_LIB_TYPE=XX_LDAP_TYPE_XX
 
 # If you don't set any of these, Exim applies a heuristic to distinguish the
 # University of Michigan library, but it cannot distinguish between the other
