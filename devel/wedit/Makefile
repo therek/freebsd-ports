@@ -2,7 +2,7 @@
 # Date created:		02 Apr 2001
 # Whom:			olgeni@FreeBSD.org
 #
-# $FreeBSD: ports/devel/wedit/Makefile,v 1.2 2001/04/14 19:47:41 olgeni Exp $
+# $FreeBSD: ports/devel/wedit/Makefile,v 1.3 2001/04/25 21:08:45 olgeni Exp $
 #
 
 PORTNAME=	wedit
@@ -15,6 +15,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-libc6-src
 MAINTAINER=	olgeni@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
+BROKEN=		"Source code no longer available (licensing change)"
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
