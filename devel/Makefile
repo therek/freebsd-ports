@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.285 2000/05/29 04:23:18 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.286 2000/05/30 04:54:27 jake Exp $
 #
 
     SUBDIR += ElectricFence
@@ -14,6 +14,7 @@
     SUBDIR += automake
     SUBDIR += avltree
     SUBDIR += bcc
+    SUBDIR += binutils-m68k
     SUBDIR += bison
     SUBDIR += boehm-gc
     SUBDIR += bonobo
@@ -62,6 +63,7 @@
     SUBDIR += ftnchek
     SUBDIR += gaa
     SUBDIR += gcc-6811
+    SUBDIR += gcc-m68k
     SUBDIR += gettext
     SUBDIR += gide
     SUBDIR += gindent
