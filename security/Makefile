@@ -1,4 +1,4 @@
-# $FreeBSD: ports/security/Makefile,v 1.215 2001/07/30 00:24:02 kris Exp $
+# $FreeBSD: ports/security/Makefile,v 1.216 2001/07/30 00:56:47 lioux Exp $
 #
 
     SUBDIR += aafid2
@@ -147,6 +147,7 @@
     SUBDIR += py-rijndael
     SUBDIR += racoon
     SUBDIR += radiusniff
+    SUBDIR += rain
     SUBDIR += rid
     SUBDIR += rsaref
     SUBDIR += ruby-acl
