@@ -2,11 +2,11 @@
 # Date Created:				8 Jun 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/gq/Makefile,v 1.1 2000/07/10 03:46:32 steve Exp $
 #
 
 PORTNAME=	gq
-PORTVERSION=	0.2.3
+PORTVERSION=	0.3.0
 CATEGORIES=     net
 MASTER_SITES=	http://biot.com/gq/download/
 
@@ -20,6 +20,6 @@ USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
 CONFIGURE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
-CONFIGURE_ARGS=	--datadir=${PREFIX}/share --with-ldap=${LOCALBASE}
+CONFIGURE_ARGS=	--with-ldap=${LOCALBASE}
 
 .include <bsd.port.mk>
