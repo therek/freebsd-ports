@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.151 1999/11/02 04:03:19 jseger Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.152 1999/11/10 17:25:54 nectar Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -43,6 +43,7 @@
     SUBDIR += itcl
     SUBDIR += lcc
     SUBDIR += libobjects
+    SUBDIR += librep
     SUBDIR += logo
     SUBDIR += lua
     SUBDIR += m3gdb
