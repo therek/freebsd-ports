@@ -2,7 +2,7 @@
 # Date created:		27 Jan 2000
 # Whom:			Carl Johan Madestrand <calle.madestrand@norrgarden.se>
 #
-# $FreeBSD: ports/security/saint/Makefile,v 1.11 2000/09/09 08:22:10 kevlo Exp $
+# $FreeBSD: ports/security/saint/Makefile,v 1.12 2000/09/30 15:14:21 kevlo Exp $
 #
 
 PORTNAME=	saint
@@ -13,7 +13,6 @@ MASTER_SITES=	ftp://ftp.wwdsi.com/pub/saint/			\
 
 MAINTAINER=	cj@vallcom.net
 
-DISTNAME=	${PKGNAME}.beta1
 BUILD_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
 USE_PERL5=	yes
