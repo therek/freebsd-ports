@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/www/mozilla-devel/files/patch-modules::libpref::src::unix::unix.js,v 1.2 2003/07/23 05:40:41 marcus Exp $
 
 --- modules/libpref/src/unix/unix.js	2002/03/14 15:04:20	1.1
 +++ modules/libpref/src/unix/unix.js	2002/03/14 15:04:38
