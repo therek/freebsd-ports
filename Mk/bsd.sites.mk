@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.242 2004/05/25 20:47:10 knu Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.243 2004/05/29 07:15:15 krion Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -866,7 +866,7 @@ MASTER_SITE_XCONTRIB+=	\
 	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,X/opengroup/contrib/&,} \
 	ftp://ftp.mirror.ac.uk/sites/ftp.x.org/contrib/%SUBDIR%/ \
 	ftp://ftp.dl.ac.uk/src/X/contrib/%SUBDIR%/ \
-	ftp://sunsite.org.uk/Mirrors/ftp.x.org/contrib/%SUBDIR%/ \
+	ftp://sunsite.org.uk/sites/ftp.x.org/contrib/%SUBDIR%/ \
 	ftp://ftp.chg.ru/pub/X11/contrib/%SUBDIR%/
 
 MASTER_SITE_XEMACS+= \
