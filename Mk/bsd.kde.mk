@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.34 2004/03/09 19:40:42 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.35 2004/04/20 09:07:43 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -60,6 +60,7 @@ USE_KDELIBS_VER=2
 
 # USE_KDELIBS_VER section
 .if defined(USE_KDELIBS_VER)
+CONFIGURE_ENV+= PTHREAD_LIBS="${PTHREAD_LIBS}"
 .if ${USE_KDELIBS_VER} == CVS
 LIB_DEPENDS+=	kwalletbackend:${PORTSDIR}/x11/kdelibs
 USE_QT_VER=		CVS

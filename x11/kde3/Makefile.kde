@@ -4,7 +4,7 @@
 # very likely to apply outside of KDE core modules.  Nonetheless, also
 # provide variables to remove one or more of these.
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kde3/Makefile.kde,v 1.22 2004/04/20 09:08:06 lofi Exp $
 
 CONFIGURE_ARGS?=
 
@@ -36,8 +36,6 @@ post-extract:
 
 # Unfortunately, this feature doesn't work right now due to binary files.
 _NO_KDE_PATCHUP=yes
-
-CONFIGURE_ENV+=	PTHREAD_LIBS="${PTHREAD_LIBS}"
 
 # Start options here.
 .if !defined(_NO_KDE_PATCHUP)
