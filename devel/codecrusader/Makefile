@@ -2,7 +2,7 @@
 # Date created:		30 July 1999
 # Whom:			Davec <davec@unforgettable.com>
 #
-# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.8 2000/04/04 10:02:36 obrien Exp $
+# $FreeBSD: ports/devel/codecrusader/Makefile,v 1.9 2000/04/11 21:27:23 mharo Exp $
 #
 
 PORTNAME=	code_crusader
@@ -28,6 +28,7 @@ PLIST_SUB+=	"LIBACE=${LIBACE}" \
 		"LIBJTREE=${LIBJTREE}" \
 		"LIBJX=${LIBJX}"
 USE_GMAKE=	yes
+USE_BISON=	yes
 MAKE_ENV=	JX_INSTALL_ROOT=${PREFIX}/bin \
 		JX_LIB_ROOT=${PREFIX}/lib
 
