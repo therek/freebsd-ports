@@ -3,7 +3,7 @@
 # Date created:			Jul 24, 2001
 # Whom:				ijliao
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/p5-Imager/Makefile,v 1.1 2001/07/24 13:14:22 ijliao Exp $
 #
 
 PORTNAME=	Imager
@@ -30,6 +30,6 @@ USE_GMAKE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=	Imager.3 Imager::Color.3 Imager::Expr.3 Imager::Expr::Assem.3 \
-	Imager::Font.3 Imager::Regops.3 Imager::regmach.3
+	Imager::Font.3 Imager::Regops.3 Imager::Transform.3 Imager::regmach.3
 
 .include <bsd.port.mk>
