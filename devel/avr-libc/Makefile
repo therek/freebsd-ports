@@ -2,16 +2,13 @@
 # Date created:		04 Dec 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.6 2001/09/17 09:36:06 joerg Exp $
+# $FreeBSD: ports/devel/avr-libc/Makefile,v 1.7 2001/10/03 15:17:13 joerg Exp $
 #
 
 PORTNAME=	avr-libc
-PORTVERSION=	20010821
+PORTVERSION=	20011007
 CATEGORIES=	devel
 MASTER_SITES=	http://www.amelek.gda.pl/avr/libc/
-DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
-		avr-libc-reference.html
-EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	joerg@freebsd.org
 
@@ -34,6 +31,7 @@ post-install:
 		${INSTALL_DATA} \
 			${WRKDIR}/${DISTNAME}/doc/LICENSE \
 			${WRKDIR}/${DISTNAME}/doc/register-usage.txt \
+			${WRKDIR}/${DISTNAME}/doc/avr-libc-reference.html \
 			${PREFIX}/share/doc/avr-libc
 		@for f in avr-recv.c io.c prg printf.h progmem.c \
 			send_byte.s signal.c;\
@@ -42,6 +40,5 @@ post-install:
 				${PREFIX}/share/doc/avr-libc/examples; \
 		done
 		${INSTALL_DATA} ${FILESDIR}/avr-lib.pdf ${PREFIX}/share/doc/avr-libc
-		${INSTALL_DATA} ${DISTDIR}/avr-libc-reference.html ${PREFIX}/share/doc/avr-libc
 
 .include <bsd.port.mk>
