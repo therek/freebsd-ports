@@ -3,7 +3,7 @@
 # Date created:		2 june 2000
 # Whom:			Paul Becke <pbecke@javagear.com>
 #
-# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.2 2001/01/10 14:01:56 sf Exp $
+# $FreeBSD: ports/devel/arm-aout-binutils/Makefile,v 1.3 2001/04/09 00:10:20 obrien Exp $
 #
 
 PORTNAME=	binutils
@@ -19,6 +19,10 @@ USE_BZIP2=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--target=arm-aout
+USE_LIBTOOL=	yes
+LIBTOOLFILES=	configure bfd/configure binutils/configure etc/configure \
+		gas/configure gprof/configure intl/configure ld/configure \
+		libiberty/configure opcodes/configure
 MAN1=	arm-aout-addr2line.1 arm-aout-ar.1 arm-aout-as.1	\
 	arm-aout-c++filt.1 arm-aout-ld.1 arm-aout-nlmconv.1	\
 	arm-aout-nm.1 arm-aout-objcopy.1 arm-aout-objdump.1	\
