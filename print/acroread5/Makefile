@@ -3,7 +3,7 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread4/Makefile,v 1.18 1999/08/31 06:49:45 mharo Exp $
+# $FreeBSD: ports/print/acroread4/Makefile,v 1.19 1999/09/04 20:08:01 cpiazza Exp $
 #
 
 DISTNAME=	linux-ar-40
@@ -14,6 +14,8 @@ MASTER_SITES=	ftp://ftp-pac.adobe.com/pub/adobe/acrobatreader/unix/4.x/
 MAINTAINER=	dima@FreeBSD.org
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
+
+NO_LATEST_LINK=	yes
 
 ONLY_FOR_ARCHS=	i386
 
