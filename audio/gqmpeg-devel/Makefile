@@ -2,14 +2,14 @@
 # Date Created:		28 Oct 1998
 # Whom:			Vanilla Pooh Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.26 2000/12/24 04:11:44 nakai Exp $
+# $FreeBSD: ports/audio/gqmpeg/Makefile,v 1.27 2000/12/24 04:16:41 nakai Exp $
 #
 
 PORTNAME=	gqmpeg
 PORTVERSION=	0.8.1
 CATEGORIES=	audio
-MASTER_SITES=	http://www.netpedia.net/hosting/gqview/packages/ \
-		http://www.geocities.com/SiliconValley/Haven/5235/packages/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	lyngbol@candid.dk
 
