@@ -3,29 +3,23 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmapfe/Makefile,v 1.28 2000/06/02 03:18:41 will Exp $
+# $FreeBSD: ports/security/nmapfe/Makefile,v 1.29 2000/10/05 06:42:25 reg Exp $
 #
 
-PORTNAME=	nmapfe
-PORTVERSION=	0.9.5
-CATEGORIES=	security
-MASTER_SITES=	http://codebox.net/download/  \
-		http://www.insecure.org/nmap/dist/
-EXTRACT_SUFX=	.tgz
+MASTERDIR=	${.CURDIR}/../nmap
+PKGDIR=		${.CURDIR}
 
-MAINTAINER=	obrien@FreeBSD.org
+PORTNAME=	nmapfe
 
 RUN_DEPENDS=	nmap:${PORTSDIR}/security/nmap
 
-.include <bsd.port.pre.mk>
-
-USE_XLIB=	yes
 USE_GTK=	yes
-GNU_CONFIGURE=	yes
-WRKSRC:=	${WRKDIR}/nmapfe
+#WRKSRC:=	${WRKSRC}/nmapfe
+INSTALL_TARGET=	install-nmapfe
+MAN1=		nmapfe.1 xnmap.1
 
-do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/nmapfe ${PREFIX}/bin
-	cd ${PREFIX}/bin && ${LN} -f nmapfe xnmap
+after-install:
+	test -e ${PREFIX}/bin/nmapfe \
+	    || (cd ${PREFIX}/bin ; ${LN} -f nmapfe xnmap)
 
-.include <bsd.port.post.mk>
+.include "${MASTERDIR}/Makefile"
