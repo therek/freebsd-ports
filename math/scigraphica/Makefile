@@ -2,7 +2,7 @@
 # Date created:				29 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/math/scigraphica/Makefile,v 1.13 2001/05/03 09:02:06 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scigraphica
@@ -18,7 +18,7 @@ DISTNAME=	sg-${PORTVERSION}
 MAINTAINER=	sobomax@FreeBSD.org
 
 BUILD_DEPENDS=	${PYNUMERIC}
-LIB_DEPENDS=	gtkextra.14:${PORTSDIR}/x11-toolkits/gtkextra
+LIB_DEPENDS=	gtkextra.15:${PORTSDIR}/x11-toolkits/gtkextra
 RUN_DEPENDS=	${PYNUMERIC}
 
 USE_X_PREFIX=	yes
