@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.320 2000/08/01 10:00:30 nbm Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.321 2000/08/01 11:58:28 nbm Exp $
 #
 
     SUBDIR += ElectricFence
@@ -178,6 +178,7 @@
     SUBDIR += oaf
     SUBDIR += omniORB
     SUBDIR += p5-AppConfig
+    SUBDIR += p5-B-Graph
     SUBDIR += p5-BSD-Resource
     SUBDIR += p5-C-Scan
     SUBDIR += p5-Class-MethodMaker
