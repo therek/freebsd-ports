@@ -4,7 +4,7 @@
 # Whom:                 vns@delta.odessa.ua
 #
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.8 1999/12/17 00:38:27 vsilyaev Exp $
-# $FreeBSD$
+# $FreeBSD: ports/emulators/vmware/Makefile,v 1.2 2000/01/28 06:22:50 obrien Exp $
 #
 
 DISTNAME=       VMware-1.1.2-364
@@ -117,6 +117,19 @@ pre-install: setoptions
 .endif
 
 post-install:
-	${LN} -s ${PREFIX}/etc/vmware /etc/vmware
+	@${LN} -s ${PREFIX}/etc/vmware /etc/vmware
+.if !defined(BATCH)
+	@${ECHO} "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" 
+	@${ECHO} "Before launch vmware, execute the next command"
+	@${ECHO} ${PREFIX}/etc/rc.d/vmware.sh start
+	@${ECHO} 
+	@${ECHO} "to load required kernel modules"
+	@${ECHO} "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-" 
+.endif
+
+	
+pre-clean:
+	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc.linproc \
+		  ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc.net
 
 .include <bsd.port.post.mk>
