@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.293 2001/01/03 23:24:48 will Exp $
+# $FreeBSD: ports/www/Makefile,v 1.294 2001/01/03 23:30:18 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -156,6 +156,7 @@
     SUBDIR += p5-HTML-Embperl
     SUBDIR += p5-HTML-Mason
     SUBDIR += p5-HTML-Navigation
+    SUBDIR += p5-HTML-Pager
     SUBDIR += p5-HTML-Parser
     SUBDIR += p5-HTML-QuickCheck
     SUBDIR += p5-HTML-Stream
