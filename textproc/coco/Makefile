@@ -2,7 +2,7 @@
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/mule-common/Makefile,v 1.48 2000/06/23 15:37:57 taoka Exp $
+# $FreeBSD: ports/editors/mule-common/Makefile,v 1.49 2000/07/05 12:36:27 tg Exp $
 #
 
 PORTNAME=	mule-common
@@ -152,7 +152,7 @@ post-install:
 	@${TOUCH} ${TOUCH_FLAGS} ${INSTALL_COOKIE}
 	if [ ! -f ${STARTUP_SCRIPT} ]; then \
 		${ECHO} "Installing ${STARTUP_SCRIPT} startup file."; \
-		${INSTALL_SCRIPT} ${FILESDIR}/mule.sh ${STARTUPSCRIPT}; \
+		${INSTALL_SCRIPT} ${FILESDIR}/mule.sh ${STARTUP_SCRIPT}; \
 	fi
 
 post-package:
