@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.87 2004/12/21 00:23:16 mezz Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.88 2004/12/29 02:23:30 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -362,7 +362,7 @@ librsvg2_LIB_DEPENDS=	rsvg-2.10:${PORTSDIR}/graphics/librsvg2
 librsvg2_DETECT=	${X11BASE}/libdata/pkgconfig/librsvg-2.0.pc
 librsvg2_USE_GNOME_IMPL=libartlgpl2 libgsf gnomevfs2
 
-eel2_LIB_DEPENDS=	eel-2.10:${PORTSDIR}/x11-toolkits/eel2
+eel2_LIB_DEPENDS=	eel-2.10:${PORTSDIR}/x11-toolkits/eel
 eel2_DETECT=		${X11BASE}/libdata/pkgconfig/eel-2.0.pc
 eel2_USE_GNOME_IMPL=	gnomevfs2 libgnomeui gail
 
