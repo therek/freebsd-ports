@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.250 2000/12/05 17:44:35 sobomax Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.251 2000/12/19 08:42:44 will Exp $
 #
 
     SUBDIR += 4va
@@ -62,6 +62,7 @@
     SUBDIR += gltk
     SUBDIR += gnofract4d
     SUBDIR += gnomeiconedit
+    SUBDIR += gom
     SUBDIR += gpaint
     SUBDIR += gphoto
     SUBDIR += gplot
