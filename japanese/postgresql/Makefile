@@ -2,7 +2,7 @@
 # Date created:		09 Nov 1999
 # Whom:			Ichiro Fukuhara <ichiro@ichiro.org>
 #
-# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.15 2000/07/13 06:42:22 kuriyama Exp $
+# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.16 2000/10/08 01:40:32 asami Exp $
 #
 
 PORTNAME=	postgresql
@@ -110,7 +110,7 @@ post-build:
 	@ ${ECHO} "Detailed instructions, see INSTALL file under ${WRKDIR}...  "
 	@ ${ECHO} "------------------------------------------------------------"
 	@${RM} -f ${WRKDIR}/PLIST
-.for i in ${PLISTS} PLIST
+.for i in ${PLISTS} pkg-plist
 	${CAT} ${PKGDIR}/${i} >> ${WRKDIR}/PLIST
 .endfor
 .if defined(WITH_TCL)
