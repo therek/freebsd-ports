@@ -2,7 +2,7 @@
 # Date created:		4 February 1998
 # Whom:			FURUSAWA,Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/sysutils/xloadface/Makefile,v 1.5 2000/04/09 19:09:03 cpiazza Exp $
+# $FreeBSD: ports/sysutils/xloadface/Makefile,v 1.6 2000/04/22 10:13:58 mharo Exp $
 #
 
 PORTNAME=	xloadface
@@ -19,9 +19,12 @@ USE_IMAKE=	yes
 XLOADFACEDIR=	$(X11BASE)/lib/X11/xloadface
 
 MAN1=		xloadface.1
+MANLANG=	ja
+
+pre-build:
+	${LOCALBASE}/bin/nkf -e ${WRKSRC}/xloadface.1 > ${WRKSRC}/xloadface.man
 
 pre-install:
-	@nkf -e ${WRKSRC}/xloadface.1 > ${WRKSRC}/xloadface.man
 	${MKDIR} $(XLOADFACEDIR)
 	${INSTALL_DATA} ${WRKSRC}/README $(XLOADFACEDIR)
 	${INSTALL_DATA} ${WRKSRC}/host_org.sample $(XLOADFACEDIR)
