@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/le/pkg-plist,v 1.7 2000/12/29 15:50:39 kevlo Exp $
+@comment $FreeBSD: ports/editors/le/pkg-plist,v 1.8 2001/02/14 14:29:37 kevlo Exp $
 bin/le
 %%PORTDOCS%%share/doc/le/FEATURES
 %%PORTDOCS%%share/doc/le/HISTORY
@@ -10,6 +10,7 @@ share/le/colors-blue
 share/le/colors-defbg
 share/le/colors-green
 share/le/colors-white
+share/le/keymap-emacs
 share/le/le.hlp
 share/le/mainmenu
 share/le/syntax
