@@ -2,13 +2,13 @@
 # Date Created:				25 Aug 2001
 # Whom:					Shell Hung <shell@shellhung.org>
 #
-# $FreeBSD: ports/math/p5-Date-Handler/Makefile,v 1.2 2001/08/30 03:39:20 petef Exp $
+# $FreeBSD$
 #
 # Considering this module for calculating date, so
 # I putted it into 'math' and not 'devel' or other
 
 PORTNAME=	Date-Handler
-PORTVERSION=	0.10
+PORTVERSION=	0.11
 CATEGORIES=	math perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Date
