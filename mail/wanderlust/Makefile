@@ -2,16 +2,17 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.15 2000/12/13 09:52:42 shige Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.16 2001/02/14 20:19:40 lioux Exp $
 #
 
 PORTNAME=	wanderlust
-PORTVERSION=	2.4.0
+PORTVERSION=	2.4.1
 CATEGORIES=	mail elisp
 MASTER_SITES=	ftp://ftp.gohome.org/wl/stable/ \
-		ftp://ftp.ring.gr.jp/pub/text/elisp/wl/stable/ \
+		${MASTER_SITE_RINGSERVER:S,%SUBDIR%,text/elisp/wl/stable/&,} \
 		ftp://ftp.jaist.ac.jp/pub/GNU/elisp/ftp.gohome.org/wl/stable/ \
-		ftp://daidai.kuis.kyoto-u.ac.jp/pub/mirror/ftp.gohome.org/pub/elisp/wl/stable/
+		http://www.jpl.org/elips/wl/
+
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
 DISTNAME=	wl-${PORTVERSION}
 
@@ -28,7 +29,7 @@ EMACS_PORT_NAME=	emacs
 .endif
 
 .if (${EMACS_PORT_NAME} == "emacs20" || ${EMACS_PORT_NAME} == "mule" || \
-	${EMACS_PORT_NAME} == "xemacs21-mule")
+     ${EMACS_PORT_NAME} == "xemacs21-mule")
 WITH_MULE=yes
 .else
 WITHOUT_MULE=yes
