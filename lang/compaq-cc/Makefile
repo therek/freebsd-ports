@@ -3,7 +3,7 @@
 # Date created:			  Thur Dec 07, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.13 2001/03/21 00:41:03 obrien Exp $
+# $FreeBSD: ports/lang/compaq-cc/Makefile,v 1.14 2001/08/20 22:10:50 obrien Exp $
 #
 
 PORTNAME=	compaq-cc
@@ -23,6 +23,7 @@ MAINTAINER=	obrien@FreeBSD.org
 RESTRICTED=	"Distribution not allowed"
 
 BUILD_DEPENDS=	rpm:${PORTSDIR}/archivers/rpm
+RUN_DEPENDS=	${LINUXBASE}/lib/ld-linux.so.2:${PORTSDIR}/emulators/linux_base
 
 ONLY_FOR_ARCHS=	alpha
 
