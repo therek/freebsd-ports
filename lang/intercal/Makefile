@@ -2,13 +2,13 @@
 # Date created:        20 March 1998
 # Whom:                Matthew Hunt <mph@freebsd.org>
 #
-# $FreeBSD: ports/lang/intercal/Makefile,v 1.5 2000/04/12 06:19:02 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	intercal
 PORTVERSION=	0.20
 CATEGORIES=	lang
-MASTER_SITES=	http://www.tuxedo.org/~esr/intercal/
+MASTER_SITES=	http://www.catb.org/~esr/intercal/
 
 MAINTAINER=	mph@freebsd.org
 
