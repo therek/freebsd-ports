@@ -2,11 +2,11 @@
 # Date created:         27 February 1995
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xgrab/Makefile,v 1.15 1999/08/31 02:51:00 peter Exp $
+# $FreeBSD: ports/x11/xgrab/Makefile,v 1.16 2000/04/13 19:10:35 cpiazza Exp $
 #
 
 PORTNAME=	xgrab
-PORTVERSION= 	2.41
+PORTVERSION=	2.41
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

@@ -2,11 +2,11 @@
 # Date created:        24th April 1997
 # Whom:                jacs
 #
-# $FreeBSD: ports/x11/xfishtank/Makefile,v 1.4 2000/04/13 19:10:34 cpiazza Exp $
+# $FreeBSD: ports/x11/xfishtank/Makefile,v 1.5 2000/12/30 18:45:24 sf Exp $
 #
 
 PORTNAME=	xfishtank
-PORTVERSION= 	2.2
+PORTVERSION=	2.2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.uni-koeln.de/windows/xcontrib/
 

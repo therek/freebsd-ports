@@ -2,11 +2,11 @@
 # Date created:         25 July 1996
 # Whom:                 matt@bdd.net
 #
-# $FreeBSD: ports/x11/xtacy/Makefile,v 1.8 2000/04/13 19:11:01 cpiazza Exp $
+# $FreeBSD: ports/x11/xtacy/Makefile,v 1.9 2000/04/15 12:57:39 imura Exp $
 #
 
 PORTNAME=	xtacy
-PORTVERSION= 	1.14
+PORTVERSION=	1.14
 CATEGORIES=	x11
 MASTER_SITES=	http://www.ultranet.com/~jjohnson/ \
 		${MASTER_SITE_SUNSITE}

@@ -2,11 +2,11 @@
 # Date created:		11 December 96
 # Whom:			Lars Koeller <Lars_Koeller@odie.physik2.uni-rostock.de>
 #
-# $FreeBSD: ports/x11/libhelp/Makefile,v 1.5 2000/04/13 19:09:49 cpiazza Exp $
+# $FreeBSD: ports/x11/libhelp/Makefile,v 1.6 2000/11/07 23:28:20 asami Exp $
 #
 
 PORTNAME=	libhelp
-PORTVERSION= 	1.8.1
+PORTVERSION=	1.8.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.informatik.uni-stuttgart.de/pub/libhelp/
 

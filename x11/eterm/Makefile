@@ -2,13 +2,13 @@
 # Date created:        24 November 1997
 # Whom:                Murray Stokely <murray@freebsd.org>
 #
-# $FreeBSD: ports/x11/eterm/Makefile,v 1.31 2001/02/01 20:11:02 olgeni Exp $
+# $FreeBSD: ports/x11/eterm/Makefile,v 1.32 2001/02/01 23:19:05 olgeni Exp $
 #
 
 PORTNAME=	eterm
-PORTVERSION= 	0.8.10
+PORTVERSION=	0.8.10
 CATEGORIES=	x11
-MASTER_SITES=           ${MASTER_SITE_SOURCEFORGE}
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=     eterm
 DISTNAME=	Eterm-${PORTVERSION}
 

@@ -2,11 +2,11 @@
 # Date created:		February 23, 1999
 # Whom:			Oliver Breuninger <ob@seicom.NET>
 #
-# $FreeBSD: ports/x11/xmx/Makefile,v 1.2 1999/08/31 02:51:11 peter Exp $
+# $FreeBSD: ports/x11/xmx/Makefile,v 1.3 2000/04/13 19:10:53 cpiazza Exp $
 #
 
 PORTNAME=	xmx
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.brown.edu/pub/xmx/
 EXTRACT_SUFX=	.tar.Z

@@ -2,11 +2,11 @@
 # Date created:		13 October 1999
 # Whom:			Brian Handy <handy@physics.montana.edu>
 #
-# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.3 2000/04/13 19:10:09 cpiazza Exp $
+# $FreeBSD: ports/x11/wmmatrix/Makefile,v 1.4 2000/08/03 09:28:45 asami Exp $
 #
 
 PORTNAME=	wmmatrix
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmMatrix-${PORTVERSION}

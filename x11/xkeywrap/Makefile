@@ -2,11 +2,11 @@
 # Date created:        7 January 2000
 # Whom:                Sakai Hiroaki <sakai@seki.ee.kagu.sut.ac.jp>
 #
-# $FreeBSD: ports/x11/xkeywrap/Makefile,v 1.1.1.1 2000/01/24 04:53:22 taoka Exp $
+# $FreeBSD: ports/x11/xkeywrap/Makefile,v 1.2 2000/04/13 19:10:40 cpiazza Exp $
 #
 
 PORTNAME=	xkeywrap
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	http://www.seki.ee.kagu.sut.ac.jp/~sakai/
 

@@ -2,11 +2,11 @@
 # Date created:			5 December 1996
 # Whom:				Pedro Giffuni
 #
-# $FreeBSD: ports/x11/libsx/Makefile,v 1.10 2000/04/13 19:09:51 cpiazza Exp $
+# $FreeBSD: ports/x11/libsx/Makefile,v 1.11 2000/09/05 18:34:51 asami Exp $
 #
 
 PORTNAME=	libsx
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	libraries

@@ -2,11 +2,11 @@
 # Date created:		13 February 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11/xantfarm/Makefile,v 1.6 2000/01/22 11:46:32 nakai Exp $
+# $FreeBSD: ports/x11/xantfarm/Makefile,v 1.7 2000/04/13 19:10:14 cpiazza Exp $
 #
 
 PORTNAME=	xantfarm
-PORTVERSION= 	1.16
+PORTVERSION=	1.16
 CATEGORIES=	x11
 MASTER_SITES=	http://www.acme.com/software/xantfarm/
 DISTNAME=	${PORTNAME}_23oct91

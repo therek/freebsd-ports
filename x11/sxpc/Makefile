@@ -2,11 +2,11 @@
 # Date created:		22nd March 1995
 # Whom:			jkh@FreeBSD.org
 #
-# $FreeBSD: ports/x11/sxpc/Makefile,v 1.9 1999/12/24 04:15:40 jedgar Exp $
+# $FreeBSD: ports/x11/sxpc/Makefile,v 1.10 2000/04/13 19:10:02 cpiazza Exp $
 #
 
 PORTNAME=	sxpc
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

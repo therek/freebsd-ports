@@ -2,11 +2,11 @@
 # Date created:         		26th April 1995
 # Whom:                 		gpalmer
 #
-# $FreeBSD: ports/x11/xdtm/Makefile,v 1.10 2000/04/13 19:10:30 cpiazza Exp $
+# $FreeBSD: ports/x11/xdtm/Makefile,v 1.11 2000/08/03 09:28:50 asami Exp $
 #
 
 PORTNAME=		xdtm
-PORTVERSION= 		2.5.8
+PORTVERSION=		2.5.8
 CATEGORIES=		x11
 MASTER_SITES=		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	applications

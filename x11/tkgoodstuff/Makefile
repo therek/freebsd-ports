@@ -2,11 +2,11 @@
 # Date created:		7 Oct 1996
 # Whom:			pst
 #
-# $FreeBSD: ports/x11/tkgoodstuff/Makefile,v 1.15 2000/04/13 19:10:03 cpiazza Exp $
+# $FreeBSD: ports/x11/tkgoodstuff/Makefile,v 1.16 2000/08/08 00:10:04 pst Exp $
 #
 
 PORTNAME=	tkgoodstuff
-PORTVERSION= 	8.0
+PORTVERSION=	8.0
 CATEGORIES=	x11 tk80
 #
 # No longer published by original developer.  This port still works, although

@@ -2,11 +2,11 @@
 # Date created:		17 January 1999
 # Whom:			Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/aterm/Makefile,v 1.11 2000/07/04 07:12:43 sobomax Exp $
+# $FreeBSD: ports/x11/aterm/Makefile,v 1.12 2000/08/03 09:28:26 asami Exp $
 #
 
 PORTNAME=	aterm
-PORTVERSION= 	0.4.0
+PORTVERSION=	0.4.0
 CATEGORIES=	x11
 MASTER_SITES=	http://download.sourceforge.net/aterm/
 

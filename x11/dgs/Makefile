@@ -2,11 +2,11 @@
 # Date created:        22 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/x11/dgs/Makefile,v 1.22 2000/10/13 09:37:22 reg Exp $
+# $FreeBSD: ports/x11/dgs/Makefile,v 1.23 2001/01/28 19:05:27 dannyboy Exp $
 #
 
 PORTNAME=	dgs
-PORTVERSION= 	0.5.9
+PORTVERSION=	0.5.9
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	dgs

@@ -2,11 +2,11 @@
 # Date created:        15 November 1998
 # Whom:                Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.7 2000/02/24 07:01:13 asami Exp $
+# $FreeBSD: ports/x11/kvidtune/Makefile,v 1.8 2000/04/13 19:09:45 cpiazza Exp $
 #
 
 PORTNAME=	kvidtune
-PORTVERSION= 	0.4.1
+PORTVERSION=	0.4.1
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= unstable/apps/admin

@@ -2,11 +2,11 @@
 # Date created:		6 Jun 1997
 # Whom:			Satoshi TAOKA
 #
-# $FreeBSD: ports/x11/xco/Makefile,v 1.4 2000/03/21 08:37:15 mharo Exp $
+# $FreeBSD: ports/x11/xco/Makefile,v 1.5 2000/04/13 19:10:23 cpiazza Exp $
 #
 
 PORTNAME=	xco
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.purdue.edu/pub/bingle/
 DISTNAME=	${PORTNAME}

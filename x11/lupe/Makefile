@@ -2,11 +2,11 @@
 # Date created:		4 February 1998
 # Whom:			FURUSAWA,Kazuhisa <kazu@jp.freebsd.org>
 #
-# $FreeBSD: ports/x11/lupe/Makefile,v 1.9 1999/08/31 02:50:34 peter Exp $
+# $FreeBSD: ports/x11/lupe/Makefile,v 1.10 2000/04/13 19:09:54 cpiazza Exp $
 #
 
 PORTNAME=	lupe
-PORTVERSION= 	0.08
+PORTVERSION=	0.08
 CATEGORIES=	x11
 MASTER_SITES=	http://www.oersted.co.jp/~yav/soft/
 DISTNAME=	lupe008	

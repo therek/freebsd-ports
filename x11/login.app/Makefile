@@ -2,11 +2,11 @@
 # Date created:				17 January 1999
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/login.app/Makefile,v 1.6 2000/12/14 09:01:21 sobomax Exp $
+# $FreeBSD: ports/x11/login.app/Makefile,v 1.7 2000/12/14 09:27:27 sobomax Exp $
 #
 
 PORTNAME=	login.app
-PORTVERSION= 	2.0.0.a7
+PORTVERSION=	2.0.0.a7
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://wm.current.nu/files/Login.app/ \
 		http://wm.current.nu/files/Login.app/Themes/

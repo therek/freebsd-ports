@@ -2,11 +2,11 @@
 # Date created:		31 May 1997
 # Whom:			jonny
 #
-# $FreeBSD: ports/x11/xtoolwait/Makefile,v 1.3 1999/08/31 02:51:21 peter Exp $
+# $FreeBSD: ports/x11/xtoolwait/Makefile,v 1.4 2000/04/13 19:11:08 cpiazza Exp $
 #
 
 PORTNAME=	xtoolwait
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities

@@ -2,11 +2,11 @@
 # Date created:				26th May 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gnomeapplets/Makefile,v 1.7 2000/10/24 16:43:02 ade Exp $
+# $FreeBSD: ports/x11/gnomeapplets/Makefile,v 1.8 2000/11/16 00:19:02 ade Exp $
 #
 
 PORTNAME=	gnomeapplets
-PORTVERSION= 	1.2.4
+PORTVERSION=	1.2.4
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-applets

@@ -2,11 +2,11 @@
 # Date created:        16 Jan 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11/xmove/Makefile,v 1.4 1999/08/31 02:51:10 peter Exp $
+# $FreeBSD: ports/x11/xmove/Makefile,v 1.5 2000/04/13 19:10:51 cpiazza Exp $
 #
 
 PORTNAME=	xmove
-PORTVERSION= 	2.0b2
+PORTVERSION=	2.0b2
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.cs.columbia.edu/pub/xmove/
 DISTNAME=	${PORTNAME}.2.0beta2

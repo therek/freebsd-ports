@@ -2,11 +2,11 @@
 # Date created:         10 July 1995
 # Whom:                 dom@myrddin.demon.co.uk
 #
-# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.32 2000/10/05 06:47:41 reg Exp $
+# $FreeBSD: ports/x11/xscreensaver/Makefile,v 1.33 2000/11/12 03:52:12 vanilla Exp $
 #
 
 PORTNAME=	xscreensaver
-PORTVERSION= 	3.26
+PORTVERSION=	3.26
 CATEGORIES=	x11
 MASTER_SITES=	http://www.jwz.org/xscreensaver/
 

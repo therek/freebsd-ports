@@ -2,11 +2,11 @@
 # Date created:		17 Apr 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/x11/xlupe/Makefile,v 1.4 2000/08/03 09:28:52 asami Exp $
+# $FreeBSD: ports/x11/xlupe/Makefile,v 1.5 2000/11/07 23:28:20 asami Exp $
 #
 
 PORTNAME=	xlupe
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	http://www.rostock.zgdv.de/~runge/xlupe/
 

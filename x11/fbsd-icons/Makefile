@@ -2,11 +2,11 @@
 # Date created:		Sat Jun 14 09:43:24 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/x11/fbsd-icons/Makefile,v 1.9 2000/06/09 21:59:15 asami Exp $
+# $FreeBSD: ports/x11/fbsd-icons/Makefile,v 1.10 2001/01/03 22:25:24 andreas Exp $
 #
 
 PORTNAME=	fbsd-icons
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	asami/LOCAL_PORTS

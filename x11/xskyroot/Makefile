@@ -2,11 +2,11 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD: ports/x11/xskyroot/Makefile,v 1.5 2000/04/13 19:10:57 cpiazza Exp $
+# $FreeBSD: ports/x11/xskyroot/Makefile,v 1.6 2000/09/09 09:14:29 kevlo Exp $
 #
 
 PORTNAME=	xskyroot
-PORTVERSION= 	920428
+PORTVERSION=	920428
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/news/fj.sources/V10/
 DISTFILES=	1079.gz

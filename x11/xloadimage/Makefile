@@ -2,11 +2,11 @@
 # Date created:         9 January 1994
 # Whom:                 jmz
 #
-# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.18 2000/04/13 19:10:41 cpiazza Exp $
+# $FreeBSD: ports/x11/xloadimage/Makefile,v 1.19 2000/07/03 08:25:52 sobomax Exp $
 #
 
 PORTNAME=	xloadimage
-PORTVERSION= 	4.1
+PORTVERSION=	4.1
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.x.org/R5contrib/ \
 		ftp://ftp.freesoftware.com/pub/X11/R5contrib/

@@ -2,11 +2,11 @@
 # Date created:         9 Jul 1996
 # Whom:            searle
 #
-# $FreeBSD: ports/x11/blast/Makefile,v 1.10 2000/04/13 19:09:11 cpiazza Exp $
+# $FreeBSD: ports/x11/blast/Makefile,v 1.11 2000/12/11 03:00:45 steve Exp $
 #
 
 PORTNAME=	blast
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://hpux.csc.liv.ac.uk/hpux/X11/Demos/blast-1.0/ \
 		ftp://ftp.univie.ac.at/systems/hpux/hpux/X11/Demos/blast-1.0/ \

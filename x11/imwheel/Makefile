@@ -2,11 +2,11 @@
 # Date created:		18 Feb 2000
 # Whom:			jhb
 #
-# $FreeBSD: ports/x11/imwheel/Makefile,v 1.2 2000/04/13 19:09:34 cpiazza Exp $
+# $FreeBSD: ports/x11/imwheel/Makefile,v 1.3 2000/10/08 06:38:42 asami Exp $
 #
 
 PORTNAME=	imwheel
-PORTVERSION= 	0.9.7
+PORTVERSION=	0.9.7
 CATEGORIES=	x11
 MASTER_SITES=	http://jcatki.dhs.org/imwheel/files/
 DISTNAME=	${PKGNAME}.nogpm

@@ -2,11 +2,11 @@
 # Date created:				4 September 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/finder/Makefile,v 1.3 2000/12/04 08:29:55 sobomax Exp $
+# $FreeBSD: ports/x11/finder/Makefile,v 1.4 2000/12/07 15:10:16 sobomax Exp $
 #
 
 PORTNAME=	finder
-PORTVERSION= 	0.80.4
+PORTVERSION=	0.80.4
 CATEGORIES=	x11 gnome
 MASTER_SITES=	http://lfh.hkcampus.net/~lfh-lck/programs/finder/
 

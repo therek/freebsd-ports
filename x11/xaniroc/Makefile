@@ -2,11 +2,11 @@
 # Date created:        20 Sep 1997
 # Whom:                Stefan Zehl <sec@42.org>
 #
-# $FreeBSD: ports/x11/xaniroc/Makefile,v 1.5 2000/04/13 19:10:13 cpiazza Exp $
+# $FreeBSD: ports/x11/xaniroc/Makefile,v 1.6 2000/04/15 12:57:36 imura Exp $
 #
 
 PORTNAME=	xaniroc
-PORTVERSION= 	1.02
+PORTVERSION=	1.02
 CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.freebird.org/unixware/freebird/x11/utils/ \
 		ftp://netlab1.usu.edu/pub/mirror/freebird/x11/utils/

@@ -2,11 +2,11 @@
 # Date created:		August 31, 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wdm/Makefile,v 1.39 2000/06/20 07:38:54 will Exp $
+# $FreeBSD: ports/x11/wdm/Makefile,v 1.40 2001/01/12 20:29:10 sobomax Exp $
 #
 
 PORTNAME=	wdm
-PORTVERSION= 	1.20
+PORTVERSION=	1.20
 CATEGORIES=	x11 windowmaker
 MASTER_SITES=	http://www.tcscs.com/wdm/wdm/ \
 		http://www.de.freebsd.org/de/gif/bsd/

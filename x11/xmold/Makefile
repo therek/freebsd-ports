@@ -2,11 +2,11 @@
 # Date created:		11 October 1996
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11/xmold/Makefile,v 1.8 2000/04/13 19:10:49 cpiazza Exp $
+# $FreeBSD: ports/x11/xmold/Makefile,v 1.9 2000/10/06 21:00:01 trevor Exp $
 #
 
 PORTNAME=	xmold
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://cclub.tutcc.tut.ac.jp/pub/xwin/
 DISTNAME=	${PORTNAME}

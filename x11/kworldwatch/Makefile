@@ -2,11 +2,11 @@
 # Date created:        12 July 1998
 # Whom:                Marc G. Fournier <scrappy@freebsd.org>
 #
-# $FreeBSD: ports/x11/kworldwatch/Makefile,v 1.17 2000/02/24 07:01:14 asami Exp $
+# $FreeBSD: ports/x11/kworldwatch/Makefile,v 1.18 2000/04/13 19:09:47 cpiazza Exp $
 #
 
 PORTNAME=	kworldwatch
-PORTVERSION= 	0.6
+PORTVERSION=	0.6
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= stable/latest/apps/utils

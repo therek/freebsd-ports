@@ -2,11 +2,11 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.50 2000/10/30 01:28:56 will Exp $
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.51 2000/10/30 01:33:52 will Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION= 	1.1.2
+PORTVERSION=	1.1.2
 PORTREVISION=	2
 CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
