@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.76 2000/07/07 19:59:20 steve Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.77 2000/07/16 19:40:15 steve Exp $
 #
 
 PORTNAME?=	vim
@@ -30,10 +30,8 @@ Y2K=		http://www.vim.org/y2k.html
 SLAVEDIRS=	editors/vim-lite
 
 .if defined(PACKAGE_BUILDING) && !defined(LITE)
-BUILD_DEPENDS=	tclsh8.0:${PORTSDIR}/lang/tcl80 \
-		python:${PORTSDIR}/lang/python
+BUILD_DEPENDS=	tclsh8.0:${PORTSDIR}/lang/tcl80
 LIB_DEPENDS=	tcl80.1:${PORTSDIR}/lang/tcl80
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
 USE_PERL5=	yes
 .endif
 
