@@ -2,12 +2,11 @@
 # Date created:         		13 September 1999
 # Whom:                 		Marc E E van Woerkom  <van.woerkom@netcologne.de>
 #
-# $FreeBSD: ports/graphics/utah-glx/Makefile,v 1.16 2000/11/06 08:18:46 sobomax Exp $
+# $FreeBSD: ports/graphics/utah-glx/Makefile,v 1.17 2000/11/08 11:19:39 sobomax Exp $
 #
 
 PORTNAME=	utah-glx
-PORTVERSION=	0.9.20000824
-PORTREVISION=	1
+PORTVERSION=	0.9.20001128
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	sobomax
