@@ -4,7 +4,7 @@
 # Date created:			  Fri Oct 02, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/misc/Howto/Makefile,v 1.2 1999/08/25 07:21:02 obrien Exp $
+# $FreeBSD: ports/misc/Howto/Makefile,v 1.3 1999/11/20 22:52:13 cpiazza Exp $
 #
 
 DISTNAME=	Howto-1.0
