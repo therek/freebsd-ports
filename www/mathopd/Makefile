@@ -3,7 +3,7 @@
 # Date created:         Sun Oct 31 1999
 # Whom:                 tobez@plab.ku.dk
 #
-# $FreeBSD: ports/www/mathopd/Makefile,v 1.2 1999/12/22 21:32:43 steve Exp $
+# $FreeBSD: ports/www/mathopd/Makefile,v 1.3 2000/02/22 21:51:58 jedgar Exp $
 #
 
 DISTNAME=	mathopd-1.3pl4
@@ -26,18 +26,6 @@ post-install:
 		${ECHO} "[ -x ${PREFIX}/sbin/mathopd ] && ${PREFIX}/sbin/mathopd < ${PREFIX}/etc/mathopd.conf && ${ECHO} -n ' mathopd'" >> ${PREFIX}/etc/rc.d/mathopd.sh; \
 		${CHMOD} 440 ${PREFIX}/etc/rc.d/mathopd.sh; \
 	fi
-	@${ECHO} "====================================================================="
-	@${ECHO} ""
-	@${ECHO} "Before you start the server you must create a config file."
-	@${ECHO} "The easiest way to do it is to copy ${PREFIX}/etc/mathopd.conf.sample"
-	@${ECHO} "to ${PREFIX}/etc/mathopd.conf and edit this file to your taste."
-	@${ECHO} ""
-	@${ECHO} "After you've done with that, chmod 540 ${PREFIX}/etc/rc.d/mathopd.sh"
-	@${ECHO} "and run it."
-	@${ECHO} ""
-	@${ECHO} "Also do not forget to create your web hierarchy and to set its"
-	@${ECHO} "permissions to something secure."
-	@${ECHO} ""
-	@${ECHO} "====================================================================="
+	@${SED} -e 's,/usr/local,${PREFIX},g' ${PKGMESSAGE}
 
 .include <bsd.port.mk>
