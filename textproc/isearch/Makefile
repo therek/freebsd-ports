@@ -3,17 +3,17 @@
 # Date created:			21 Sept 1996
 # Whom:				Pedro
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/isearch/Makefile,v 1.6 1999/08/31 02:09:23 peter Exp $
 #
 
 DISTNAME=	Isearch-1.14
-PKGNAME=	isearch-1.14	
+PKGNAME=	isearch-1.14
 CATEGORIES=	textproc databases
 MASTER_SITES=	ftp://ftp.cnidr.org/pub/NIDR.tools/Isearch/
 
 MAINTAINER=	giffunip@asme.org
 
-GNU_CONFIGURE= yes 
+GNU_CONFIGURE= yes
 
 post-install:
 	strip ${PREFIX}/bin/Isearch
