@@ -2,7 +2,7 @@
 # Date created:		13 May 2001
 # Whom:			FUJISHIMA Satsuki <sf@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/navi2ch-emacs20/Makefile,v 1.1 2001/05/18 19:06:13 sf Exp $
+# $FreeBSD: ports/japanese/navi2ch-emacs20/Makefile,v 1.2 2001/06/02 17:36:53 sf Exp $
 #
 
 PORTNAME=	navi2ch
@@ -19,6 +19,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-lispdir=${PREFIX}/${EMACS_LIBDIR}/site-lisp/navi2ch
 
 DOCDIR=		share/doc/ja/navi2ch
+PLIST_SUB?=	XEMACS="@comment "
 
 post-install:
 .if !defined(NOPORTDOCS)
