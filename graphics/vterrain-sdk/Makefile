@@ -2,7 +2,7 @@
 # Date created:				27 Apr 2001
 # Whom:					Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vterrain-sdk/Makefile,v 1.1 2001/06/11 03:29:55 will Exp $
 #
 
 PORTNAME=	vterrain-sdk
@@ -32,7 +32,7 @@ INSTALLS_SHLIB=	yes
 
 post-extract:
 	cd ${WRKSRC}/vtdata && \
-		${UNZIP} -aj ${DISTDIR}/dir_it.zip boost/directory.h src/directory.cpp
+		unzip -aj ${DISTDIR}/dir_it.zip boost/directory.h src/directory.cpp
 
 do-install:
 	${INSTALL_DATA} ${WRKSRC}/vtdata/libvtdata.so ${PREFIX}/lib/libvtdata.so.1
