@@ -2,7 +2,7 @@
 # Date created:                17 August 1997
 # Whom:                        lukin@okbmei.msk.su
 #
-# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.13 2000/06/23 13:14:36 sobomax Exp $
+# $FreeBSD: ports/x11-fm/asfiles/Makefile,v 1.14 2000/08/03 09:27:11 asami Exp $
 #
 
 PORTNAME=	asfiles
@@ -23,7 +23,7 @@ MAN1=	files.1
 MAN3=	regexp.3
 
 post-install:
-	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/patch-aa
+	${PATCH} ${PATCH_ARGS} < ${FILESDIR}/last-patch-aa
 	${INSTALL_DATA} ${WRKSRC}/src/Files.ad ${PREFIX}/lib/X11/app-defaults/
 	${SETENV} PKG_PREFIX=${PREFIX} ${SH} ${PKGINSTALL} ${PKGNAME} POST-INSTALL
 	${MV} ${WRKSRC}/src/Files.ad.orig ${WRKSRC}/src/Files.ad
