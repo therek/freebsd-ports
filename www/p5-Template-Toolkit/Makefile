@@ -2,12 +2,12 @@
 # Date Created:				3 Mar, 2001
 # Whom:					clive
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/p5-Template-Toolkit/Makefile,v 1.1 2001/03/08 12:56:44 clive Exp $
 #
 
 PORTNAME=	Template-Toolkit
 PORTVERSION=	2.00
-CATEGORIES=	www perl5
+CATEGORIES=	www textproc perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Template
 PKGNAMEPREFIX=	p5-
