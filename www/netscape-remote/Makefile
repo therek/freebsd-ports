@@ -2,11 +2,12 @@
 # Date created:		09/13/1999
 # Whom:			Kelly Yancey <kbyanc@posi.net>
 #
-# $FreeBSD: ports/www/netscape-remote/Makefile,v 1.4 2001/02/05 15:33:33 olgeni Exp $
+# $FreeBSD: ports/www/netscape-remote/Makefile,v 1.5 2001/02/26 05:02:29 steve Exp $
 #
 
 PORTNAME=	netscape-remote
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://home.netscape.com/newsref/std/
 DISTFILES=	remote.c vroot.h
