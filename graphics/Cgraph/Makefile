@@ -3,13 +3,13 @@
 # Date created:		25 September 1998
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/Cgraph/Makefile,v 1.2 1999/08/25 06:13:35 obrien Exp $
 #
 
 DISTNAME=	Cgraph2.04
 PKGNAME=	Cgraph-2.04
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://pinoko.berkeley.edu/pub/software/
+MASTER_SITES=	http://totoro.berkeley.edu/software/
 
 MAINTAINER=	tobez@plab.ku.dk
 
