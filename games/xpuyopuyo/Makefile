@@ -2,11 +2,11 @@
 # Date created:		19 Sep 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.15 2000/08/03 09:24:18 asami Exp $
+# $FreeBSD: ports/games/xpuyopuyo/Makefile,v 1.16 2000/10/05 07:22:35 reg Exp $
 #
 
 PORTNAME=	xpuyopuyo
-PORTVERSION=	0.4.2
+PORTVERSION=	0.9.3
 CATEGORIES=	games
 MASTER_SITES=	http://chaos2.org/xpuyopuyo/ \
 		http://lenin.dabney.caltech.edu/~justins/xpuyopuyo/
@@ -17,7 +17,6 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_GTK=	yes
-WANT_GNOME=	yes
 USE_AUTOCONF=	yes
 MAN6=		xpuyopuyo.6
 
@@ -31,6 +30,7 @@ CONFIGURE_ARGS+=--with-libmikmod-prefix=${LOCALBASE}
 
 .if defined(HAVE_GNOME)
 USE_GNOME=	yes
+WANT_GNOME=	yes
 .else
 CONFIGURE_ARGS+=--without-gnome
 .endif
