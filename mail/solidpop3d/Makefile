@@ -2,7 +2,7 @@
 # Date created:		22 May 2000
 # Whom:			Marco Rodrigues <drkangel@drkangel.org>
 #
-# $FreeBSD: ports/mail/solidpop3d/Makefile,v 1.1 2000/06/09 13:18:15 sobomax Exp $
+# $FreeBSD: ports/mail/solidpop3d/Makefile,v 1.2 2000/06/09 13:28:52 sobomax Exp $
 #
 
 PORTNAME=	solidpop3d
@@ -15,7 +15,15 @@ DISTNAME=	solid-pop3d-${PORTVERSION}
 MAINTAINER=	drkangel@drkangel.org
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--enable-pam --enable-apop --enable-bulletins \
+		--enable-last --enable-mapping --enable-nonip --enable-connect
 CONFIGURE_ENV=	LDFLAGS="-lmd"
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400014
+CONFIGURE_ARGS+=	--enable-ipv6
+.endif
 
 MAN1=		pop_auth.1
 MAN5=		spop3d.conf.5 dot-spop3d.5
@@ -31,5 +39,6 @@ do-install:
 	${INSTALL_MAN} ${WRKSRC}/man/dot-spop3d.5 ${PREFIX}/man/man5
 	${INSTALL_MAN} ${WRKSRC}/man/spop3d.8 ${PREFIX}/man/man8
 	${INSTALL_DATA} ${WRKSRC}/doc/config.example ${PREFIX}/etc/spop3d.conf.sample
+	${MKDIR} /var/spool/spop3d
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
