@@ -2,7 +2,7 @@
 # Date created:         24 Feb 1997
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.69 2000/06/07 19:57:17 obrien Exp $
+# $FreeBSD: ports/www/netscape4-communicator/Makefile,v 1.70 2000/06/18 10:00:07 asami Exp $
 #
 
 PORTNAME?=	netscape-${BROWSER_ARC}
@@ -61,7 +61,7 @@ RESTRICTED=     "Contains strong cryptography"
 
 .if (${ARCH} == "i386") && !defined(USE_LINUX_LIB) && !defined(WITHOUT_AOUT)
 USE_AOUT_LIB=	yes
-PKGREQ=		${MASTERDIR}/pkg/REQ.aout
+PKGREQ=		${MASTERDIR}/pkg-req.aout
 RUN_DEPENDS+=	${X11BASE}/lib/aout/libX11.so.6.1:${PORTSDIR}/x11/XFree86-aoutlibs
 .endif
 
