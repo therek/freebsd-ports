@@ -2,7 +2,7 @@
 # Date created:				05/23/2000
 # Whom:					dwhite@FreeBSD.org
 #
-# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.1 2000/05/24 04:34:15 dwhite Exp $
+# $FreeBSD: ports/devel/py-kqueue/Makefile,v 1.2 2000/06/01 06:06:30 dwhite Exp $
 #
 
 PORTNAME=		kqueue
@@ -16,6 +16,12 @@ MAINTAINER=		dwhite@FreeBSD.org
 
 BUILD_DEPENDS=		python:${PORTSDIR}/lang/python
 RUN_DEPENDS=		python:${PORTSDIR}/lang/python
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} < 400018
+FORBIDDEN= requires kqueue (added post-4.0-RELEASE)
+.endif
 
 # NO_WRKSUBDIR=		yes
 # MAKEFILE=		makefile
@@ -34,4 +40,4 @@ do-install:
 # 	${INSTALL_DATA} ${WRKSRC}/kjbuckets.html ${PREFIX}/share/doc/
 # .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
