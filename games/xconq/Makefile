@@ -2,35 +2,43 @@
 # Date created:         2 Jun 1998
 # Whom:                 Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/games/xconq/Makefile,v 1.11 2000/04/14 12:27:12 asami Exp $
+# $FreeBSD: ports/games/xconq/Makefile,v 1.12 2000/05/21 11:52:06 knu Exp $
 #
 
 PORTNAME=	xconq
-PORTVERSION=	7.2.2
+PORTVERSION=	7.3.3
 CATEGORIES=	games
-MASTER_SITES=	ftp://sourceware.cygnus.com/pub/xconq/
+MASTER_SITES=	ftp://sourceware.cygnus.com/pub/xconq/ \
+		ftp://ftp.freesoftware.com/pub/sourceware/xconq/ \
+		ftp://unix.hensa.ac.uk/mirrors/sourceware.cygnus.com/pub/xconq/
 
 MAINTAINER=	croyle@gelemna.org
 
-LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
+LIB_DEPENDS=	tk80.1:${PORTSDIR}/x11-toolkits/tk80
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS=	--with-xpm
+CONFIGURE_ARGS=	--with-tclconfig=${PREFIX}/lib/tcl8.0 \
+		--with-tkconfig=${PREFIX}/lib/tk8.0 \
+		--enable-alternate-scoresdir=${SCOREDIR}
 
-USE_X_PREFIX=	yes
+USE_XLIB=	yes
+USE_GMAKE=	yes
 
-MAN6=		xconq.6 cconq.6
+CFLAGS+=	-I ${PREFIX}/include/tcl8.0 \
+		-I ${PREFIX}/include/tk8.0
 
-post-build:
-	cd ${WRKSRC}/doc && make info
+MAN6=		xconq.6
+
+SCOREDIR?=	/var/games/xconq
+PLIST_SUB=	SCOREDIR=${SCOREDIR}
 
 post-install:
-.for file in xconq cconq imf2x x2imf xshowimf
+.for file in xconq imf2x x2imf ximfapp
 	strip ${PREFIX}/bin/${file}
 .endfor
-	cd ${WRKSRC}/doc && make install-info
-.for info in xconq xcdesign
-	install-info ${PREFIX}/info/${info}.info ${PREFIX}/info/dir
-.endfor
+.if !defined(NOPORTDOCS)
+	${MKDIR} ${PREFIX}/share/xconq/doc
+	${INSTALL_DATA} ${WRKSRC}/doc-html/* ${PREFIX}/share/xconq/doc/
+.endif
 
 .include <bsd.port.mk>
