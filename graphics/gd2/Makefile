@@ -1,12 +1,12 @@
 # New ports collection makefile for: gd
-# Version required:     1.8
+# Version required:     1.8.1
 # Date created:         27 Mar 1998
 # Whom:                 jeff@cetlink.net
 #
-# $FreeBSD: ports/graphics/gd/Makefile,v 1.18 2000/02/03 03:06:37 billf Exp $
+# $FreeBSD: ports/graphics/gd/Makefile,v 1.19 2000/03/11 02:30:41 billf Exp $
 #
 
-DISTNAME=       gd-1.8
+DISTNAME=       gd-1.8.1
 CATEGORIES=	graphics
 MASTER_SITES=   http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
