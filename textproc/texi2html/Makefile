@@ -2,14 +2,14 @@
 # Date created:				5 Nov 1997
 # Whom:					Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/textproc/texi2html/Makefile,v 1.5 1999/08/31 02:09:47 peter Exp $
+# $FreeBSD: ports/textproc/texi2html/Makefile,v 1.6 2000/04/09 21:53:11 cpiazza Exp $
 #
 
 PORTNAME=	texi2html
 PORTVERSION= 	1.52
 CATEGORIES=	textproc
 MASTER_SITES=	http://wwwcn.cern.ch/dci/texi2html/
-DISTNAMe=	${PORTNAME}
+DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	.shar.Z
 
 MAINTAINER=	i.vaudrey@bigfoot.com
