@@ -3,7 +3,7 @@
 # Date created:		Mon Jan 11 11:53:54 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/security/stunnel/Makefile,v 1.14 2000/02/12 10:37:38 kris Exp $
+# $FreeBSD: ports/security/stunnel/Makefile,v 1.15 2000/02/15 07:09:47 kris Exp $
 #
 
 DISTNAME=	stunnel-3.7
@@ -19,6 +19,8 @@ MAINTAINER=	martti.kuparinen@ericsson.com
 USE_OPENSSL=	RSA
 
 GNU_CONFIGURE=	yes
+CONFIGURE_ARGS=	--localstatedir=/var/run
+
 MAN8=		stunnel.8
 
 cert:
