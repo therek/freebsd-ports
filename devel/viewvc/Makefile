@@ -2,11 +2,11 @@
 # Date created:				Sun 02 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.2 2001/02/18 08:01:32 will Exp $
+# $FreeBSD: ports/devel/viewcvs/Makefile,v 1.3 2001/05/27 14:03:13 ijliao Exp $
 #
 
 PORTNAME=	viewcvs
-PORTVERSION=	0.6
+PORTVERSION=	0.7
 CATEGORIES=	devel python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
