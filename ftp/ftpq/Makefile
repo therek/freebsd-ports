@@ -2,7 +2,7 @@
 # Date created:				Mon 03 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/ftpq/Makefile,v 1.9 2001/09/05 13:21:35 wjv Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftpq
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.tranchant.freeserve.co.uk/software/
 
 MAINTAINER=	ports@FreeBSD.org
 
+USE_REINPLACE=	yes
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 MAN1=		ftpq.1
@@ -23,7 +24,7 @@ PLIST_SUB+=	SPOOLDIR=${SPOOLDIR}
 SPOOLDIR?=	/var/spool/ftpq
 
 post-patch:
-	@ ${PERL} -pi -e 's#%%SPOOLDIR%%#${SPOOLDIR}#' \
+	@ ${REINPLACE_CMD} -e 's#%%SPOOLDIR%%#${SPOOLDIR}#' \
 	  ${WRKSRC}/Makefile.in ${WRKSRC}/src/ftpq.h
 
 post-install:
