@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.75 2000/09/19 17:05:57 ade Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.76 2000/09/19 18:19:16 ade Exp $
 #
     SUBDIR += zpygresqlda
     SUBDIR += cdb
@@ -46,6 +46,7 @@
     SUBDIR += py-MySQL
     SUBDIR += py-MySQLdb
     SUBDIR += py-PyGreSQL
+    SUBDIR += py-SQLDict
     SUBDIR += rdb
     SUBDIR += ruby-gdbm
     SUBDIR += ruby14-gdbm
