@@ -3,7 +3,7 @@
 # Date created:		20 Oct 1994 (1.4), 18 Dec 1996 (1.5.1), 14 Feb 1999 (2.2)
 # Whom:			torstenb
 #
-# $FreeBSD: ports/news/inn/Makefile,v 1.35 1999/08/31 06:49:33 mharo Exp $
+# $FreeBSD: ports/news/inn/Makefile,v 1.36 1999/09/10 08:44:39 torstenb Exp $
 #
 
 DISTNAME=	inn-2.2.1
@@ -57,6 +57,9 @@ MAN8=	actived.8 actsync.8 actsyncd.8 archive.8 batcher.8 buffchan.8 \
 	news2mail.8 newslog.8 newsrequeue.8 nnrpd.8 nntpsend.8 overchan.8 \
 	pgpverify.8 prunehistory.8 pullnews.8 scanlogs.8 send-uucp.8 sm.8 \
 	tally.control.8 tally.unwanted.8 writelog.8
+
+pre-install:
+	${MKDIR} /var/spool/news
 
 post-install:
 	${SED} <${FILESDIR}/innd.sh >${PREFIX}/etc/rc.d/innd.sh \
