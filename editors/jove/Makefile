@@ -2,17 +2,18 @@
 # Date created:		21 August 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/editors/jove/Makefile,v 1.19 2000/04/23 22:59:25 kris Exp $
+# $FreeBSD: ports/editors/jove/Makefile,v 1.20 2000/05/02 13:47:44 jedgar Exp $
 #
 
 PORTNAME=	jove
 PORTVERSION=	4.16
+PORTREVISION=	1
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cs.toronto.edu/pub/moraes/jove/
 
 MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=		${WRKDIR}/jove
-MAN1=		jove.1 teachjove.1 xjove.1 jovetool.1
+WRKSRC=		${WRKDIR}/${PORTNAME}
+MAN1=		jove.1 teachjove.1
 
 .include <bsd.port.mk>
