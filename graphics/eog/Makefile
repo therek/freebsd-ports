@@ -2,7 +2,7 @@
 # Date created:		5th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/graphics/eog/Makefile,v 1.16 2000/10/03 17:37:49 ade Exp $
+# $FreeBSD: ports/graphics/eog/Makefile,v 1.17 2000/10/05 07:10:45 reg Exp $
 #
 
 PORTNAME=	eog
@@ -13,6 +13,8 @@ MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	unstable/sources/eog
 
 MAINTAINER=	ade@FreeBSD.org
+
+BROKEN=		"Fails with new devel/bonobo"
 
 LIB_DEPENDS=	glade.4:${PORTSDIR}/devel/libglade \
 		bonobo.2:${PORTSDIR}/devel/bonobo \
