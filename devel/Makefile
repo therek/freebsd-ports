@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.221 1999/10/03 21:58:31 dan Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.222 1999/10/06 08:13:07 obrien Exp $
 #
 
     SUBDIR += ElectricFence
@@ -52,8 +52,6 @@
     SUBDIR += gide
     SUBDIR += gindent
     SUBDIR += glade
-    SUBDIR += glib11
-    SUBDIR += glib11-devel
     SUBDIR += glib12
     SUBDIR += gmake
     SUBDIR += gnustep
