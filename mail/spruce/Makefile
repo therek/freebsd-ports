@@ -2,7 +2,7 @@
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/mail/spruce/Makefile,v 1.11 2000/04/13 20:00:50 cpiazza Exp $
+# $FreeBSD: ports/mail/spruce/Makefile,v 1.12 2000/05/21 21:45:01 cpiazza Exp $
 #
 
 PORTNAME=	spruce
@@ -11,7 +11,7 @@ CATEGORIES=	mail
 MASTER_SITES=	http://www.xtorshun.org/spruce/v0.6/ \
 		http://fundy.linuxberg.com/files/x11/network/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

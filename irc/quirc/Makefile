@@ -2,7 +2,7 @@
 # Date created:		21 May 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/quirc/Makefile,v 1.7 2000/02/03 21:14:02 cpiazza Exp $
+# $FreeBSD: ports/irc/quirc/Makefile,v 1.8 2000/04/12 06:28:24 obrien Exp $
 #
 
 PORTNAME=	quirc
@@ -10,7 +10,7 @@ PORTVERSION=	0.9.79
 CATEGORIES=	irc tk82
 MASTER_SITES=	http://patearl.powersurfr.com/quirc/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 

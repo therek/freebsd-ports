@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/wmmand/Makefile,v 1.3 1999/08/25 07:23:04 obrien Exp $
+# $FreeBSD: ports/misc/wmmand/Makefile,v 1.4 2000/04/14 08:47:02 asami Exp $
 
 PORTNAME=	wmmand
 PORTVERSION=	1.0
@@ -10,7 +10,7 @@ CATEGORIES=	misc windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmMand-${PORTVERSION}
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

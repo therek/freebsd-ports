@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.3 1999/08/25 04:22:45 obrien Exp $
+# $FreeBSD: ports/astro/wmspaceweather/Makefile,v 1.4 2000/04/08 22:02:00 mharo Exp $
 
 PORTNAME=	wmspaceweather
 PORTVERSION=	1.04
@@ -10,7 +10,7 @@ CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmSpaceWeather-1.04
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

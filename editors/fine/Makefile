@@ -2,7 +2,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.9 2000/04/22 23:57:47 cpiazza Exp $
+# $FreeBSD: ports/editors/fine/Makefile,v 1.10 2000/05/21 23:57:07 cpiazza Exp $
 #
 
 PORTNAME=	fine
@@ -12,7 +12,7 @@ CATEGORIES=	editors
 MASTER_SITES=	http://dccnet.linux.tucows.com/files/x11/office/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_NEWGCC=	yes
 USE_GMAKE=	yes

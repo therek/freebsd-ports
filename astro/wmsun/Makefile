@@ -2,7 +2,7 @@
 # Date created:		16 April 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/wmsun/Makefile,v 1.3 1999/08/25 04:22:46 obrien Exp $
+# $FreeBSD: ports/astro/wmsun/Makefile,v 1.4 2000/04/08 22:02:02 mharo Exp $
 
 PORTNAME=	wmsun
 PORTVERSION=	1.03
@@ -10,7 +10,7 @@ CATEGORIES=	astro windowmaker
 MASTER_SITES=	http://nis-www.lanl.gov/~mgh/WindowMaker/
 DISTNAME=	wmSun-1.03
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 

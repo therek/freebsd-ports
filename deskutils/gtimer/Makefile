@@ -2,7 +2,7 @@
 # Date created:        25 February 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gtimer/Makefile,v 1.8 2000/04/08 22:03:36 mharo Exp $
+# $FreeBSD: ports/deskutils/gtimer/Makefile,v 1.9 2000/04/29 21:36:55 kris Exp $
 #
 
 PORTNAME=	gtimer
@@ -10,7 +10,7 @@ PORTVERSION=	1.1.5
 CATEGORIES=	deskutils
 MASTER_SITES=	http://www.radix.net/~cknudsen/gtimer/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 

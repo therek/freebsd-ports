@@ -2,7 +2,7 @@
 # Date created:	 	19 February 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/irc/ezbounce/Makefile,v 1.11 2000/04/12 06:28:09 obrien Exp $
+# $FreeBSD: ports/irc/ezbounce/Makefile,v 1.12 2000/05/06 20:47:37 cpiazza Exp $
 #
 
 PORTNAME=	ezbounce
@@ -10,7 +10,7 @@ PORTVERSION=	0.99.6
 CATEGORIES=	irc
 MASTER_SITES=  	http://druglord.freelsd.org/ezbounce/
 
-MAINTAINER=	cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE= 	yes
 

@@ -2,7 +2,7 @@
 # Date created:                25 February 1999
 # Whom:                        Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/colortail/Makefile,v 1.7 2000/06/07 08:41:40 cpiazza Exp $
+# $FreeBSD: ports/misc/colortail/Makefile,v 1.8 2000/06/07 18:14:45 cpiazza Exp $
 #
 
 PORTNAME=	colortail
@@ -12,9 +12,9 @@ MASTER_SITES=	ftp://ftp.FreeBSD.org/pub/FreeBSD/ports/local-distfiles/cpiazza/
 # commented out until I upgrade to 0.3.0
 # MASTER_SITES=	http://www.student.hk-r.se/~pt98jan/
 
-MAINTAINER=    cpiazza@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-GNU_CONFIGURE= YES
+GNU_CONFIGURE=	yes
 
 MAN1=		colortail.1
 
