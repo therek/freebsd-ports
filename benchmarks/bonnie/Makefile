@@ -2,15 +2,15 @@
 # Date created:         26 September 1994
 # Whom:                 se
 #
-# $FreeBSD: ports/benchmarks/bonnie/Makefile,v 1.7 1999/12/30 17:18:13 se Exp $
+# $FreeBSD: ports/benchmarks/bonnie/Makefile,v 1.8 2000/04/08 22:04:04 mharo Exp $
 #
 
 PORTNAME=	bonnie
 PORTVERSION=	1.0
 CATEGORIES=	benchmarks
 MASTER_SITES=   ftp://ftp.sunet.se/pub/benchmark/Bonnie/
-EXTRACT_SUFX=   .tar.Z
 DISTNAME=       Bonnie
+EXTRACT_SUFX=   .tar.Z
 
 MAINTAINER=	se@FreeBSD.org
 
