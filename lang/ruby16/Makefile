@@ -2,7 +2,7 @@
 # Date created:		04 September 1997
 # Whom:			Eiji-usagi-MATSUmoto <usagi@ruby.club.or.jp>
 #
-# $FreeBSD: ports/lang/ruby/Makefile,v 1.38 2000/09/28 19:33:36 knu Exp $
+# $FreeBSD: ports/lang/ruby/Makefile,v 1.39 2000/10/20 19:56:03 knu Exp $
 #
 
 PORTNAME=	ruby
@@ -12,6 +12,10 @@ MASTER_SITES=	${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
 DISTNAME=	${RUBY_DISTNAME}
 DIST_SUBDIR=	ruby
+
+PATCH_SITES=	http://www.ruby-lang.org/~knu/
+PATCHFILES=	ruby-${RUBY_VERSION}-${RUBY_SNAPSHOTDATE}.patch.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	knu@FreeBSD.org
 
@@ -42,6 +46,7 @@ CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
 post-patch:
+	find ${WRKSRC} -name '*.orig' -delete
 	${RM} -f ${WRKSRC}/ext/gdbm/MANIFEST
 	${RM} -f ${WRKSRC}/ext/tcltklib/MANIFEST
 	${RM} -f ${WRKSRC}/ext/tk/MANIFEST
