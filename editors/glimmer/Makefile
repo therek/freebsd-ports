@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/latte/Makefile,v 1.2 2000/08/04 16:11:05 ade Exp $
+# $FreeBSD: ports/editors/latte/Makefile,v 1.3 2000/08/21 07:55:31 sobomax Exp $
 #
 
 PORTNAME=	latte-editor
-PORTVERSION= 	0.9.11
+PORTVERSION= 	0.9.12
 CATEGORIES=	editors gnome python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME:S/-editor//}
