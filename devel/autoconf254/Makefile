@@ -2,8 +2,12 @@
 # Date created:		7 October 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/devel/autoconf/Makefile,v 1.21 2000/04/11 21:27:06 mharo Exp $
+# $FreeBSD: ports/devel/autoconf/Makefile,v 1.22 2001/05/31 22:14:37 ade Exp $
 #
+
+# Upgrading this port is not possible at this time because it has
+# extensive implications for the entire ports system. It will be
+# upgraded as soon as possible. Thanks.
 
 PORTNAME=	autoconf
 PORTVERSION=	2.13
