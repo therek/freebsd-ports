@@ -1,4 +1,4 @@
-# $FreeBSD: ports/databases/Makefile,v 1.59 2000/04/19 17:26:30 asami Exp $
+# $FreeBSD: ports/databases/Makefile,v 1.60 2000/05/01 02:44:47 steve Exp $
 #
     SUBDIR += cdb
     SUBDIR += db
@@ -42,6 +42,7 @@
     SUBDIR += tcl-Mysql
     SUBDIR += tkgnats
     SUBDIR += typhoon
+    SUBDIR += unixODBC
     SUBDIR += xmbase-grok
     SUBDIR += xmysql
     SUBDIR += xmysqladmin
