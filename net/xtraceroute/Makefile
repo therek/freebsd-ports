@@ -2,19 +2,21 @@
 # Date created:				17 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/net/xtraceroute/Makefile,v 1.9 2000/11/01 15:51:08 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtraceroute
-PORTVERSION=	0.8.14
+PORTVERSION=	0.9.0
 CATEGORIES=	net
 MASTER_SITES=	http://www.dtek.chalmers.se/~d3august/xt/dl/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DATAFILES}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
+BUILD_DEPENDS=	host:${PORTSDIR}/net/host
 LIB_DEPENDS=	gtkgl.5:${PORTSDIR}/x11-toolkits/gtkglarea \
-		tiff.4:${PORTSDIR}/graphics/tiff
+		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+RUN_DEPENDS=	host:${PORTSDIR}/net/host
 
 USE_X_PREFIX=	yes
 USE_MESA=	yes
