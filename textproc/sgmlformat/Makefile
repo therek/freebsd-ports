@@ -2,7 +2,7 @@
 # Date created:		July 16, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.20 2001/01/29 03:45:45 kuriyama Exp $
+# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.21 2001/02/05 16:35:13 olgeni Exp $
 #
 
 PORTNAME=	sgmlformat
@@ -18,20 +18,17 @@ MAINTAINER=	kuriyama@FreeBSD.org
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 220000
-RUN_DEPENDS=	nsgmls:${PORTSDIR}/textproc/sp
-.else
-RUN_DEPENDS=	nsgmls:${PORTSDIR}/textproc/jade
-.endif
-
-.if defined(WITH_OPENJADE)
-RUN_DEPENDS=	onsgmls:${PORTSDIR}/textproc/openjade
-.endif
-
 .if ${MACHINE_ARCH} == "alpha"
 WITH_OPENJADE=	yes
 .endif
 
+.if ${OSVERSION} < 220000
+RUN_DEPENDS=	nsgmls:${PORTSDIR}/textproc/sp
+.elif defined(WITH_OPENJADE)
+RUN_DEPENDS=	onsgmls:${PORTSDIR}/textproc/openjade
+.else
+RUN_DEPENDS=	nsgmls:${PORTSDIR}/textproc/jade
+.endif
 RUN_DEPENDS+=	${PREFIX}/share/sgml/linuxdoc:${PORTSDIR}/textproc/linuxdoc \
 		${PREFIX}/share/sgml/docbook:${PORTSDIR}/textproc/docbook
 
