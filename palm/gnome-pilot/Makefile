@@ -2,13 +2,14 @@
 # Date created:		28th October 1999
 # Whom:			Ade Lovett <ade@lovett.com>
 #
-# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.14 2000/06/16 21:52:39 asami Exp $
+# $FreeBSD: ports/palm/gnomepilot/Makefile,v 1.15 2000/07/11 22:02:20 ade Exp $
 #
 
 PORTNAME=	gnomepilot
 PORTVERSION=	0.1.52
 CATEGORIES=	palm comms gnome
-MASTER_SITES=	http://www.gnome.org/gnome-pilot/download/
+MASTER_SITES=	${MASTER_SITE_GNOME}
+MASTER_SITE_SUBDIR=	unstable/sources/gnome-pilot
 DISTNAME=	gnome-pilot-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
