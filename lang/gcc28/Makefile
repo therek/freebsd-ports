@@ -3,7 +3,7 @@
 # Date created:				17 Jan 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/gcc28/Makefile,v 1.29 2000/03/22 00:26:55 obrien Exp $
+# $FreeBSD: ports/lang/gcc28/Makefile,v 1.30 2000/04/12 06:18:35 obrien Exp $
 #
 
 PORTNAME=	gcc
@@ -11,6 +11,11 @@ PORTVERSION=	2.8.1
 CATEGORIES=	lang
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	gcc
+
+.if defined(WANT_BOUNDS_CHECKING)
+PATCH_SITES=	http://web.inter.nl.net/hcc/Haj.Ten.Brugge/
+PATCHFILES=	bounds-checking-2.8.1-1.01.tar.gz
+.endif
 
 MAINTAINER=	obrien@FreeBSD.org
 
