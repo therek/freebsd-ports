@@ -3,14 +3,16 @@
 # Date created:			  11 July 1996
 # Whom:				  David O'Brien <obrien@cs.ucdavis.edu>
 #
-# $FreeBSD: ports/print/mp-letter/Makefile,v 1.15 2000/04/09 17:40:47 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mp-${PAPERSIZE}
 PORTVERSION=	3.0.1
 CATEGORIES=	print
-MASTER_SITES=	ftp://ftp.NUXI.com/pub/misc/ \
-		ftp://ftp.win.tue.nl/pub/mail/
+MASTER_SITES=	ftp://relay.NUXI.org/pub/misc/ \
+		ftp://ftp.netsw.org/system/tools/print/ \
+#		ftp://ftp.fu-berlin.de/unix/tools/mp/
+#		ftp://ftp.inria.fr/system/user/
 DISTNAME=	mp-3.0.1
 
 MAINTAINER=	obrien@FreeBSD.org
