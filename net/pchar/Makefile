@@ -3,11 +3,11 @@
 # Date created:			  Wed Nov 03, 1999
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/pchar/Makefile,v 1.12 2001/02/06 17:47:13 bmah Exp $
+# $FreeBSD: ports/net/pchar/Makefile,v 1.13 2001/04/09 21:48:51 bmah Exp $
 #
 
 PORTNAME=	pchar
-PORTVERSION=	1.3.2
+PORTVERSION=	1.4
 CATEGORIES=	net ipv6
 MASTER_SITES=	http://www.employees.org/~bmah/Software/pchar/
 
@@ -18,9 +18,7 @@ MAN8=		pchar.8
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} >= 400014
-CONFIGURE_ARGS= --with-ipv6
-.endif
+CONFIGURE_ARGS= --with-pcap
 
 .if !defined(NOPORTDOCS)
 post-install:
