@@ -1,5 +1,5 @@
 #
-# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.2 2003/04/13 11:38:10 dinoex Exp $
+# $FreeBSD: ports/devel/gnustep/bsd.gnustep.mk,v 1.3 2003/06/01 03:12:41 dinoex Exp $
 #
 # This file contains some variable definitions that are supposed to
 # make your life easier when dealing with ports related to the GNUstep.
@@ -193,6 +193,9 @@ RUN_DEPENDS+=	${SYSMAKEDIR}/GNUstep.sh:${PORTSDIR}/${GNUSTEP_MAKE_PORT}
 do-install:
 	@(cd ${WRKSRC}; . ${SYSMAKEDIR}/GNUstep.sh; \
 		${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${INSTALL_TARGET})
+.if defined(PARALLEL_PACKAGE_BUILD) || defined(BATCH) || defined(CLEAN_ROOT)
+	rm -rf /root/GNUstep
+.endif
 
 .endif
 
