@@ -2,10 +2,10 @@
 # Date created:				10th September 2000
 # Whom:					Ilia Chipitsine <ilia@jane.cgu.chel.su>
 #
-# $FreeBSD: ports/databases/p5-DBD-XBase/Makefile,v 1.2 2001/03/01 06:37:17 vanilla Exp $
+# $FreeBSD$
 
 PORTNAME=	DBD-XBase
-PORTVERSION=	0.173
+PORTVERSION=	0.210
 CATEGORIES=	databases perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	DBD
