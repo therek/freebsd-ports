@@ -2,7 +2,7 @@
 # Date created:				07-Jun-2001
 # Whom:					marcus
 #
-# $FreeBSD: ports/devel/p5-Glade-Perl/Makefile,v 1.1 2001/06/07 21:43:19 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Glade-Perl
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Glade
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	marcus@marcuscom.com
+MAINTAINER=	marcus@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Gnome.pm:${PORTSDIR}/x11-toolkits/p5-Gnome \
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Unicode/String.pm:${PORTSDIR}/converters/p5-Unicode-String

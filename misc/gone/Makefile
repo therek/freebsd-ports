@@ -2,7 +2,7 @@
 # Date created:        19 April 1998
 # Whom:                marcus
 #
-# $FreeBSD: ports/misc/gone/Makefile,v 1.11 2001/06/08 16:36:00 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gone
@@ -10,7 +10,7 @@ PORTVERSION=	1.3.4
 CATEGORIES=	misc
 MASTER_SITES=	http://jaguar.ir.miami.edu/~marcus/
 
-MAINTAINER=	marcus@marcuscom.com
+MAINTAINER=	marcus@FreeBSD.org
 
 MAN1=		gone.1
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:        28 June 1998
 # Whom:                marcus
 #
-# $FreeBSD: ports/games/xbomber/Makefile,v 1.6 2000/10/13 20:25:16 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xbomber
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.sonic.net/pub/users/nbs/unix/x/xbomber/
 DISTNAME=	${PORTNAME}.${PORTVERSION}
 
-MAINTAINER=	marcus@marcuscom.com
+MAINTAINER=	marcus@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
