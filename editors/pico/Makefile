@@ -2,13 +2,13 @@
 # Date created:			16 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/pico/Makefile,v 1.1 2001/01/02 09:04:10 will Exp $
 #
 # This port tracks Pine4
 # All patch files have been taken from mail/pine4
 
 PORTNAME=	pico
-PORTVERSION= 	3.7
+PORTVERSION= 	3.9
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME=	pine${pineversion}
@@ -18,7 +18,7 @@ MAINTAINER=	jeremy@external.org
 WRKSRC=		${WRKDIR}/pine${pineversion}/pico
 PATCH_WRKSRC=	${WRKSRC}/..
 
-pineversion=	4.21
+pineversion=	4.31
 
 MAKEFILE=	makefile.bsf
 ALL_TARGET=	pico
