@@ -2,7 +2,7 @@
 # Date created:		2000-10-01
 # Whom:			Trevor Johnson <trevor@freebsd.org>
 #
-# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.4 2000/12/17 14:28:29 trevor Exp $
+# $FreeBSD: ports/mail/xc-mail/Makefile,v 1.5 2001/02/15 22:31:42 trevor Exp $
 #
 
 PORTNAME=	xc-mail
@@ -19,6 +19,7 @@ LIB_DEPENDS=	Xclasses.1:${PORTSDIR}/x11-toolkits/xclasses
 RUN_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
 
 GNU_CONFIGURE=	yes
+ONLY_FOR_ARCHS=	arm i386
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 
