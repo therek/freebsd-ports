@@ -1,10 +1,11 @@
-# $FreeBSD: ports/german/Makefile,v 1.17 2001/04/29 13:45:02 dirk Exp $
+# $FreeBSD: ports/german/Makefile,v 1.18 2001/05/09 04:41:07 dinoex Exp $
 #
 
     SUBDIR += BBBike
     SUBDIR += cheapcall
     SUBDIR += citrix_ica
     SUBDIR += dict
+    SUBDIR += ding
     SUBDIR += ispell
     SUBDIR += ispell-alt
     SUBDIR += ispell-neu
