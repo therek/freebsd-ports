@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.76 2004/08/11 01:39:29 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.77 2004/08/11 05:06:30 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -43,7 +43,7 @@ _USE_GNOME_ALL+=glib20 atk pango gtk20 linc libidl orbit2 \
 		libgtkhtml gnomedesktop libwnck vte libzvt librsvg2 eel2 \
 		gnomepanel nautilus2 metacity gal2 gnomecontrolcenter2 libgda2 \
 		libgnomedb gtksourceview libgsf libgsf_gnome pygtk2 pygnome2 \
-		gstreamerplugins gtkhtml3 gnomespeech
+		gstreamerplugins gtkhtml3 gnomespeech desktopfileutils
 
 SCROLLKEEPER_DIR=	/var/db/scrollkeeper
 gnomehack_PRE_PATCH=	${FIND} ${WRKSRC} -name "Makefile.in*" | ${XARGS} ${REINPLACE_CMD} -e \
@@ -420,6 +420,10 @@ gtkhtml3_USE_GNOME_IMPL=gal2 gail
 gnomespeech_LIB_DEPENDS=gnomespeech.7:${PORTSDIR}/accessibility/gnomespeech
 gnomespeech_DETECT=		${LOCALBASE}/libdata/pkgconfig/gnome-speech-1.0.pc
 gnomespeech_USE_GNOME_IMPL=libbonobo
+
+desktopfileutils_RUN_DEPENDS=update-desktop-database:${PORTSDIR}/devel/desktop-file-utils
+desktopfileutils_DETECT=	${X11BASE}/bin/update-desktop-database
+desktopfileutils_USE_GNOME_IMPL=glib20
 
 # End component definition section
 
