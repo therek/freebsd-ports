@@ -2,11 +2,12 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.20 2001/03/11 16:56:47 demon Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.21 2001/03/12 11:29:00 demon Exp $
 #
 
 PORTNAME=	kdevelop
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	devel kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/2.1/distribution/tar/generic/src
