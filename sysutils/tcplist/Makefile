@@ -4,7 +4,7 @@
 # Date created:			  Mon Apr 14, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/tcplist/Makefile,v 1.6 1999/08/31 02:00:11 peter Exp $
 #
 
 DISTNAME=	tcplist-2.2
@@ -16,7 +16,7 @@ MAINTAINER=     obrien@NUXI.com
 
 RUN_DEPENDS=	lsof:${PORTSDIR}/sysutils/lsof
 
-EXTRACT_CMD=	cat
+EXTRACT_CMD=	${CAT}
 EXTRACT_BEFORE_ARGS=
 EXTRACT_AFTER_ARGS=	|sh
 NO_WRKSUBDIR=	yes

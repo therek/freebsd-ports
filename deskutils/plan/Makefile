@@ -3,10 +3,9 @@
 # Date created:				14 April 1996
 # Whom:	Daniel Eischen <deischen@iworks.InterWorks.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/deskutils/plan/Makefile,v 1.17 1999/08/25 05:26:47 obrien Exp $
 #
-
-#Also update	ports/japanese/plan/ (ja-plan) when this port is updated
+# Also update	ports/japanese/plan/ (ja-plan) when this port is updated
 
 DISTNAME=	plan-1.8.2
 CATEGORIES=	deskutils

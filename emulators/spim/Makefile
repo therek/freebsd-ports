@@ -4,7 +4,7 @@
 # Date created:         Mon Oct 28, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/emulators/spim/Makefile,v 1.8 1999/08/28 01:57:12 mharo Exp $
+# $FreeBSD: ports/emulators/spim/Makefile,v 1.9 1999/09/04 23:39:26 mharo Exp $
 #
 
 DISTNAME=	spim5.9
@@ -22,10 +22,9 @@ USE_IMAKE=	yes
 XMKMF=		xmkmf
 ALL_TARGET=	y.tab.c depend cl-spim cl-xspim
 
-
 pre-configure:
 	@${RM} -f ${WRKSRC}/y.tab.*
-	
+
 pre-install:
 	@${MKDIR} ${PREFIX}/share/spim && ${CHMOD} a+rx ${PREFIX}/share/spim
 
