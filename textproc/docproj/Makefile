@@ -2,7 +2,7 @@
 # Date created:        27 June 1998
 # Whom:                Nik Clayton <nik@freebsd.org>
 #
-# $FreeBSD: ports/textproc/docproj/Makefile,v 1.34 2001/09/04 16:21:21 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	docproj
@@ -44,12 +44,12 @@ JADETEX?=
 
 .if empty(JADETEX) && (make(build) || make(install))
 .BEGIN:
-	@${CAT} files/JADETEX
+	@${CAT} ${FILESDIR}/JADETEX
 	@${FALSE}
 .endif
 
 .if ${JADETEX} == yes
-RUN_DEPENDS+= ${PREFIX}/share/texmf/web2c/jadetex.fmt:${PORTSDIR}/print/jadetex
+RUN_DEPENDS+= `kpsewhich -expand-var '$$TEXMFMAIN'`/web2c/jadetex.fmt:${PORTSDIR}/print/jadetex
 .endif
 
 EXTRACT_ONLY=	# empty
