@@ -2,7 +2,7 @@
 # Date created:						10/23/1999
 # Whom:								nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.29 2001/01/23 21:50:13 nectar Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.30 2001/02/05 15:50:25 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -91,6 +91,9 @@ pre-install:
 .endif
 .if !defined(OPENSSL_IN_BASE)
 	@${CAT} ${PKGDIR}/pkg-plist.des >> ${PLIST}
+.endif
+.if !exists(/usr/include/ifaddrs.h)
+	@${ECHO} include/ifaddrs.h >> ${PLIST}
 .endif
 
 # awful hack to avoid running automake after patching configure
