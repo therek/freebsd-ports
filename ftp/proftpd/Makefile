@@ -2,11 +2,12 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.30 2000/11/24 22:29:11 mharo Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.31 2000/11/24 22:40:01 mharo Exp $
 #
 
 PORTNAME=	proftpd
 PORTVERSION=	1.2.0rc2
+PORTREVISION=	1
 CATEGORIES=	ftp
 MASTER_SITES=	ftp://ftp.tos.net/pub/proftpd/ \
 		ftp://ftp.stikman.com/pub/proftpd/ \
