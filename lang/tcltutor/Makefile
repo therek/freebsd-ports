@@ -1,8 +1,8 @@
 # New ports collection makefile for:	tcltutor
 # Date created:		11 November 2000
-# Whom:			Edwin Groothuis (mavetju@chello.nl)
+# Whom:			Edwin Groothuis (edwin@mavetju.org)
 #
-# $FreeBSD$
+# $FreeBSD: ports/lang/tcltutor/Makefile,v 1.1 2001/01/05 17:26:18 alex Exp $
 #
 
 PORTNAME=	tcltutor
@@ -11,7 +11,7 @@ CATEGORIES=	lang tk82 tcl82
 MASTER_SITES=	http://www.msen.com/~clif/
 DISTNAME=	Tutor2b4
 
-MAINTAINER=	mavetju@chello.nl
+MAINTAINER=	edwin@mavetju.org
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 
