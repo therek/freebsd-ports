@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.191 2003/08/08 01:48:38 cy Exp $
+# $FreeBSD: ports/MOVED,v 1.192 2003/08/08 04:47:42 kris Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -484,3 +484,4 @@ x11/wscan||2003-08-07|port was marked broken for 3 months with no fix submitted
 x11-toolkits/ruby-fltk||2003-08-07|port was marked broken for 3 months with no fix submitted
 x11-wm/scwm||2003-08-07|port was marked broken for 3 months with no fix submitted
 chinese/cce||2003-08-07|port contains a security vulnerability and is no longer developed
+net/ruby-romp||2003-08-08|discontinued
