@@ -2,7 +2,7 @@
 # Date created:		29 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/punkbuster-data/Makefile,v 1.1 2001/09/01 18:47:57 lioux Exp $
+# $FreeBSD: ports/net/punkbuster-data/Makefile,v 1.2 2001/09/01 18:50:04 lioux Exp $
 #
 
 PORTNAME=	punkbuster
@@ -31,7 +31,7 @@ DESCR=		${PUNKBUSTER_PORT}/pkg-descr
 PKGMESSAGE=		${PUNKBUSTER_PORT}/pkg-message
 
 USE_LINUX_PREFIX=	yes
-PUNKBUSTER_PORT=   ../punkbuster
+PUNKBUSTER_PORT=   ${.CURDIR}/../punkbuster
 # the later is not working, hummm. Help?
 #PUNKBUSTER_DIR!=	cd ${PUNKBUSTER_PORT} && ${MAKE} -V PUNKBUSTER_DIR
 PUNKBUSTER_DIR=	/usr/games/punkbuster

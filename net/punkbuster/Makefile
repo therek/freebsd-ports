@@ -2,7 +2,7 @@
 # Date created:		29 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/net/punkbuster/Makefile,v 1.1 2001/09/01 18:52:47 lioux Exp $
+# $FreeBSD: ports/net/punkbuster/Makefile,v 1.2 2001/09/01 21:53:47 lioux Exp $
 #
 
 PORTNAME=	punkbuster
@@ -31,7 +31,7 @@ STRIP_LINUX=	${LINUXBASE}/usr/bin/strip
 
 PUNKBUSTER_DIR=	/usr/games/punkbuster/
 PUNKBUSTER_PROGRAM=	pb
-PUNKBUSTER_DATA_PORT=	../punkbuster-data
+PUNKBUSTER_DATA_PORT=	${.CURDIR}/../punkbuster-data
 PUNKBUSTER_DATA!=	cd ${PUNKBUSTER_DATA_PORT} && ${MAKE} -V PUNKBUSTER_DATA
 PUNKBUSTER_DATA_DISTFILES!=	cd ${PUNKBUSTER_DATA_PORT} && ${MAKE} -V DISTFILES
 PUNKBUSTER_DOC_DIR=	usr/doc/${PKGNAME}/
