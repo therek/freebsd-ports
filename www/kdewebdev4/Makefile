@@ -2,7 +2,7 @@
 # Date created:				19 May 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/www/quanta/Makefile,v 1.10 2001/04/03 08:14:31 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	quanta
@@ -31,6 +31,9 @@ USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+= --with-extra-includes=${LOCALBASE}/include \
 		--disable-closure
+.if defined(PARALLEL_PACKAGE_BUILD) || defined(WANT_KDE_NDEBUG)
+CONFIGURE_ARGS+=--disable-debug
+.endif
 USE_GMAKE=	yes
 
 DOCS=		css html javascript php
