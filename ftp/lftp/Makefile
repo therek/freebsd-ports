@@ -3,11 +3,11 @@
 # Date created:				11 September 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/lftp/Makefile,v 1.18 1999/09/06 23:20:06 steve Exp $
+# $FreeBSD: ports/ftp/lftp/Makefile,v 1.19 1999/10/25 19:24:43 mharo Exp $
 #
 
 DISTNAME=	lftp-2.1.4
-CATEGORIES=	ftp
+CATEGORIES=	ftp ipv6
 MASTER_SITES=	ftp://ftp.yars.free.net/pub/software/unix/net/ftp/client/lftp/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	system/network/file-transfer

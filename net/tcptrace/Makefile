@@ -3,12 +3,12 @@
 # Date created:		3 March 1997
 # Whom:			fenner
 #
-# $FreeBSD: ports/net/tcptrace/Makefile,v 1.8 1999/08/31 06:49:19 mharo Exp $
+# $FreeBSD: ports/net/tcptrace/Makefile,v 1.9 1999/09/09 19:22:25 fenner Exp $
 #
 
 DISTNAME=	tcptrace.5.2.0
 PKGNAME=	tcptrace-5.2.0
-CATEGORIES=	net
+CATEGORIES=	net ipv6
 MASTER_SITES=	http://jarok.cs.ohiou.edu/software/tcptrace/files/5.2.0/
 
 MAINTAINER=	fenner@FreeBSD.org
