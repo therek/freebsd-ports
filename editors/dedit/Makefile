@@ -2,11 +2,11 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/dedit/Makefile,v 1.9 2000/10/05 06:12:31 reg Exp $
+# $FreeBSD: ports/editors/dedit/Makefile,v 1.10 2000/10/05 07:10:33 reg Exp $
 #
 
 PORTNAME=	dedit
-PORTVERSION=	0.5.11
+PORTVERSION=	0.6.2
 CATEGORIES=	editors gnome
 MASTER_SITES=	ftp://ftp.debian.org/debian/dists/unstable/main/source/editors/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -20,7 +20,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_X_PREFIX=	yes
 USE_GNOME=	yes
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASSE}/include" \
+CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib -liconv"
 
 MAN1=		dedit.1
