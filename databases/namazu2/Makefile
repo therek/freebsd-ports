@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.12 2000/04/11 14:15:28 knu Exp $
+# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.13 2000/04/20 18:24:22 knu Exp $
 #
 
 PORTNAME=	namazu2
@@ -11,7 +11,7 @@ CATEGORIES=	japanese textproc
 MASTER_SITES=	http://www.namazu.org/stable/
 DISTNAME=	namazu-${PORTVERSION}
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 BUILD_DEPENDS=	${PM_BASE}/File/MMagic.pm:${PORTSDIR}/devel/p5-File-MMagic \

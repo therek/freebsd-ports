@@ -2,7 +2,7 @@
 # Date created:		18 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/fastjar/Makefile,v 1.2 2000/04/04 19:03:21 knu Exp $
+# $FreeBSD: ports/archivers/fastjar/Makefile,v 1.3 2000/04/08 23:17:42 mharo Exp $
 #
 
 PORTNAME=	fastjar
@@ -11,7 +11,7 @@ CATEGORIES=	archivers java
 MASTER_SITES=	http://download.sourceforge.net/fastjar/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 GNU_CONFIGURE=	YES
 

@@ -2,7 +2,7 @@
 # Date created:		24 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/esecanna/Makefile,v 1.11 2000/04/04 13:36:28 knu Exp $
+# $FreeBSD: ports/japanese/esecanna/Makefile,v 1.12 2000/04/11 14:13:29 knu Exp $
 #
 
 PORTNAME=	esecanna
@@ -12,7 +12,7 @@ MASTER_SITES=	http://esecanna.netfort.gr.jp/ \
 		http://people.FreeBSD.org/~knu/ports/distfiles/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes

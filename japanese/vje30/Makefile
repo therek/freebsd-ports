@@ -2,7 +2,7 @@
 # Date created:		29 January 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/vje30/Makefile,v 1.6 2000/02/12 16:31:42 flathill Exp $
+# $FreeBSD: ports/japanese/vje30/Makefile,v 1.7 2000/04/13 08:33:28 knu Exp $
 #
 
 PORTNAME=	vje
@@ -12,7 +12,7 @@ MASTER_SITES=	file:${MOUNT_PT}/freebsd/
 EXTRACT_SUFX=	.tgz
 DISTNAME=	${PORTNAME}-delta-${PORTVERSION}-${DISTOBJFORMAT}
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 #RUN_DEPENDS=	${LOCALBASE}/share/java/classes/jfc-1.1.1/swing.jar:${PORTSDIR}/java/jfc
 

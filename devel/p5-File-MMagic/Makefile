@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:	      		Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/devel/p5-File-MMagic/Makefile,v 1.4 2000/04/06 17:07:46 mharo Exp $
+# $FreeBSD: ports/devel/p5-File-MMagic/Makefile,v 1.5 2000/04/11 21:29:31 mharo Exp $
 #
 
 PORTNAME=	File-MMagic
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	../../authors/id/K/KN/KNOK
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 USE_PERL5=	YES
 

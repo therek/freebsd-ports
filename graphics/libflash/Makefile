@@ -2,7 +2,7 @@
 # Date created:        2 October 1999
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.3 2000/03/01 02:53:01 asami Exp $
+# $FreeBSD: ports/graphics/flashplayer/Makefile,v 1.4 2000/04/13 06:28:23 obrien Exp $
 #
 
 PORTNAME=	flashplayer
@@ -16,7 +16,7 @@ EXTRACT_SUFX=	.tgz
 PATCH_SITES=   http://leed.t.u-tokyo.ac.jp/~yamagata/flash/
 PATCHFILES=    flash-0.4.3-fbsd-19990512.patch
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 USE_X_PREFIX=	yes
 
