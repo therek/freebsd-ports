@@ -3,7 +3,7 @@
 # Date created:		5 Dec 1997
 # Whom:			Kazuyuki IENAGA <ienaga@jsys.co.jp>
 #
-# $FreeBSD: ports/editors/xemacs-mule/Makefile,v 1.18 1999/09/10 02:29:20 asami Exp $
+# $FreeBSD: ports/editors/xemacs-mule/Makefile,v 1.19 1999/10/16 08:51:36 taoka Exp $
 #
 
 DISTNAME=	xemacs-${VERSION}
@@ -21,16 +21,14 @@ DIST_SUBDIR=	xemacs
 
 MAINTAINER?=	kiri@kiri.toba-cmt.ac.jp
 
-BUILD_DEPENDS=	${PREFIX}/lib/xemacs/mule-packages/lisp/mule-base/japan-util.el:${PORTSDIR}/editors/xemacs-mule-base-packages \
-		${BUILD_DEP_LIST}
+BUILD_DEPENDS=	${BUILD_DEP_LIST}
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.3:${PORTSDIR}/graphics/png \
 		compface.1:${PORTSDIR}/mail/faces \
 		tiff.4:${PORTSDIR}/graphics/tiff \
 		${LIB_INPUT_METHOD}
-RUN_DEPENDS=	${PREFIX}/lib/xemacs/mule-packages/lisp/mule-base/japan-util.el:${PORTSDIR}/editors/xemacs-mule-base-packages \
-		${RUN_DEP_LIST}
+RUN_DEPENDS=	${RUN_DEP_LIST}
 
 EXTRACT_ONLY=	xemacs-${VERSION}.tar.gz xemacs-${VERSION}-elc.tar.gz \
 		xemacs-${VERSION}-info.tar.gz
