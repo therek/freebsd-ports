@@ -1,4 +1,4 @@
-# $FreeBSD: ports/korean/Makefile,v 1.57 2000/10/06 15:06:15 ade Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.58 2000/10/29 12:26:46 cjh Exp $
 #
     SUBDIR += uniksc
     SUBDIR += texinfo
@@ -49,6 +49,7 @@
     SUBDIR += linuxdoc-sgml
     SUBDIR += linux_locale
     SUBDIR += mizifont
+    SUBDIR += mkisofs
     SUBDIR += mule-freewnn
     SUBDIR += munhwafonts-cid
     SUBDIR += netscape3
