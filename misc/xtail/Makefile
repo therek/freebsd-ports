@@ -2,18 +2,20 @@
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/xtail/Makefile,v 1.3 1999/11/12 21:04:55 jim Exp $
+# $FreeBSD: ports/misc/xtail/Makefile,v 1.4 2000/04/14 08:47:16 asami Exp $
 #
 
 PORTNAME=	xtail
-PORTVERSION=	0.1
+PORTVERSION=	2.1
 CATEGORIES=	misc
-MASTER_SITES=	http://www.giovannelli.it/~gmarco/files/
-DISTNAME=	${PORTNAME}
+MASTER_SITES=	http://www.unicom.com/sw/xtail/ \
+ 		http://www.giovannelli.it/~gmarco/files/
+DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	gmarco@giovannelli.it
 
-NO_WRKSUBDIR=	yes
+PATCHDIR=
+HAS_CONFIGURE=	yes
 
 MAN1=	xtail.1
 
