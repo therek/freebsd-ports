@@ -1,27 +1,25 @@
 # New ports collection makefile for:	dclock
-# Version required:	pl4
+# Version required:	pl6
 # Date created:		15 Aug 1996
 # Whom:			David Leonard <leonard@dstc.edu.au>
 #
-# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.8 1999/08/31 02:57:57 peter Exp $
+# $FreeBSD: ports/x11-clocks/dclock/Makefile,v 1.9 1999/08/31 06:52:30 mharo Exp $
 #
 
-DISTNAME=	dclock
-PKGNAME=	dclock-pl4
+DISTNAME=	Dclock
+PKGNAME=	dclock-pl6
 CATEGORIES=	x11-clocks
-MASTER_SITES=	ftp://ftp.x.org/R5contrib/
-EXTRACT_SUFX=	.shar.Z
+MASTER_SITES=	ftp://ftp.demon.co.uk/pub/graphics/systems/X11.old/pub/R6untarred/contrib/programs/
+
+PATCH_SITES=	${MASTER_SITE_XCONTRIB}
+PATCH_SITE_SUBDIR=	R6contrib-fixes
+PATCHFILES=	Dclock-pl6.patch.gz
+PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_XLIB=	yes
+IGNOREFILES=	${DISTFILES}
+USE_IMAKE=	yes
 MAN1=		dclock.1
-MANCOMPRESSED=	yes
-
-EXTRACT_CMD=		${GZIP_CMD}
-EXTRACT_BEFORE_ARGS=	-dc
-EXTRACT_AFTER_ARGS=	|sh -
-NO_WRKSUBDIR=		yes
-ALL_TARGET=		dclock
 
 .include <bsd.port.mk>
