@@ -2,11 +2,11 @@
 # Date created:				25 April 2001
 # Whom:					Anton Berezin <tobez@tobez.org>
 #
-# $FreeBSD: ports/devel/p5-Devel-Modlist/Makefile,v 1.1 2001/04/26 18:01:53 joe Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Devel-Modlist
-PORTVERSION=	0.4
+PORTVERSION=	0.5
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Devel
