@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.102 1999/09/09 00:15:17 taoka Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.103 1999/09/09 08:08:58 taoka Exp $
 #
 
     SUBDIR += adcomplain
@@ -47,6 +47,7 @@
     SUBDIR += movemail
     SUBDIR += mutt
     SUBDIR += nmh
+    SUBDIR += p5-IMAP-Admin
     SUBDIR += p5-MIME-Lite
     SUBDIR += p5-MIME-Tools
     SUBDIR += p5-Mail-Folder
