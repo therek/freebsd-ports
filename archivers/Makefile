@@ -1,6 +1,7 @@
-# $FreeBSD: ports/archivers/Makefile,v 1.37 2000/06/10 02:15:50 will Exp $
+# $FreeBSD: ports/archivers/Makefile,v 1.38 2000/06/20 15:04:28 sobomax Exp $
 #
 
+    SUBDIR += 9e
     SUBDIR += arc
     SUBDIR += bzip
     SUBDIR += bzip2
