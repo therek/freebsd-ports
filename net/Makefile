@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.441 2000/12/17 02:40:27 obrien Exp $
+# $FreeBSD: ports/net/Makefile,v 1.442 2000/12/19 10:29:23 will Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -247,6 +247,7 @@
     SUBDIR += scotty3
     SUBDIR += sdl_net
     SUBDIR += sendfile
+    SUBDIR += sendip
     SUBDIR += sharity-light
     SUBDIR += sing
     SUBDIR += slirp
