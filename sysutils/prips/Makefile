@@ -2,13 +2,13 @@
 # Date created:		29 October 1999
 # Whom:			Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/sysutils/prips/Makefile,v 1.4 2000/04/09 19:08:18 cpiazza Exp $
+# $FreeBSD: ports/sysutils/prips/Makefile,v 1.5 2000/04/22 10:13:01 mharo Exp $
 #
 
 PORTNAME=	prips
 PORTVERSION=	0.9.4
 CATEGORIES=	sysutils
-MASTER_SITES=	http://www.interloper.net/~dan/software/dist/prips/
+MASTER_SITES=	http://ipsc.sourceforge.net/dist/prips/
 DISTNAME=	${PKGNAME}-src
 
 MAINTAINER=	jeremy@external.org
