@@ -2,7 +2,7 @@
 # Date created:		18 November 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.21 2000/04/11 14:14:36 knu Exp $
+# $FreeBSD: ports/japanese/kterm16c/Makefile,v 1.22 2000/04/17 00:17:56 reg Exp $
 #
 
 PORTNAME=	kterm16c
@@ -25,7 +25,7 @@ LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 DIST_SUBDIR=	kterm
 PATCH_SITES=	ftp://ftp.sra.co.jp/pub/x11/kterm/ \
-		http://karin.ip.titech.ac.jp/~takagi/kterm/
+		http://www.asahi-net.or.jp/~hc3j-tkg/kterm/
 PATCHFILES=	${DISTNAME}.NFS-xauth.patch \
 		${DISTNAME}-wpr1.patch.gz
 PATCH_DIST_STRIP= -p1
