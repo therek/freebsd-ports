@@ -4,10 +4,10 @@
 # Date created:         Thur July 25, 1996
 # Whom:                 David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/mail/mutt/Makefile,v 1.70 1999/08/29 10:53:22 obrien Exp $
+# $FreeBSD: ports/mail/mutt/Makefile,v 1.71 1999/09/07 06:14:00 obrien Exp $
 
-DISTNAME=	mutt-1.0pre2i
-PKGNAME=	mutt-1.0b2
+DISTNAME=	mutt-1.0pre3i
+PKGNAME=	mutt-1.0b3
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.guug.de/pub/mutt/  \
 		ftp://ftp.uib.no/pub/mutt/  \
@@ -31,7 +31,8 @@ MAINTAINER=     obrien@FreeBSD.org
 
 .if defined(BATCH)
 LIB_DEPENDS=	slang.1:${PORTSDIR}/devel/libslang
-BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell
+BUILD_DEPENDS=	ispell:${PORTSDIR}/textproc/ispell \
+		msgfmt:${PORTSDIR}/devel/gettext
 .if ${MACHINE_ARCH} != "alpha"
 #  coredump in sgmls
 BUILD_DEPENDS+=	sgmlfmt:${PORTSDIR}/textproc/sgmlformat
