@@ -2,13 +2,14 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.9 2000/04/23 04:06:56 cpiazza Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.10 2000/08/03 09:28:46 asami Exp $
 #
 
 PORTNAME=	wterm
 PORTVERSION= 	6.2.6
 CATEGORIES=	x11
-MASTER_SITES= 	ftp://ftp.kddlabs.co.jp/.10/X11/acontrib/wterm/ \
+MASTER_SITES= 	http://wm.current.nu/files/ \
+		ftp://ftp.kddlabs.co.jp/pub/X11/acontrib/wterm/ \
 		ftp://ftp.riken.go.jp/pub/X11/acontrib/wterm/
 
 MAINTAINER=	cpiazza@FreeBSD.org
