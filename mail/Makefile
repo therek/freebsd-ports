@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.180 2000/12/31 05:10:09 will Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.181 2000/12/31 05:13:23 will Exp $
 #
 
     SUBDIR += adcomplain
@@ -95,6 +95,7 @@
     SUBDIR += pine4-ssl
     SUBDIR += pmail
     SUBDIR += pop3gwd
+    SUBDIR += pop3lite
     SUBDIR += popa3d
     SUBDIR += poppassd
     SUBDIR += popper
