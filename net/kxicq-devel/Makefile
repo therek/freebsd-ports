@@ -2,7 +2,7 @@
 # Date created:        10 March 2000
 # Whom:                Andrey Novikov <andrey@novikov.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/kxicq/Makefile,v 1.1 2000/04/23 06:08:24 will Exp $
 
 PORTNAME=	kxicq
 PORTVERSION=	0.3.97b
@@ -19,11 +19,13 @@ USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 USE_QT=		yes
 
-.if defined(ADDITIONAL_SKINS)
 DIST_SUBDIR=	kxicq
+
+.if defined(ADDITIONAL_SKINS)
 SKINS=		GoldBlue blueplanet ciasa_boark_inc cyrus
 PLIST=		${WRKDIR}/PLIST
-DISTFILES+=	GoldBlue.tar.gz blueplanet-0.1.tar.gz cyrustheme.tar.gz \
+DISTFILES=	${DISTNAME}${EXTRACT_SUFX} GoldBlue.tar.gz \
+		blueplanet-0.1.tar.gz cyrustheme.tar.gz \
 		ciasa_boark_inc-0.4.tar.gz
 .endif
 
