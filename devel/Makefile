@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.280 2000/05/01 02:48:50 steve Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.281 2000/05/07 15:00:21 jseger Exp $
 #
 
     SUBDIR += ElectricFence
@@ -71,6 +71,7 @@
     SUBDIR += gperf
     SUBDIR += gtksheet
     SUBDIR += id-utils
+    SUBDIR += idle
     SUBDIR += ilu
     SUBDIR += imake
     SUBDIR += jam
