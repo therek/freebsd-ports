@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.32 2000/01/05 07:12:09 jseger Exp $
+# $FreeBSD: ports/x11-toolkits/tk82/Makefile,v 1.33 2000/04/10 01:11:07 cpiazza Exp $
 #
 
 PORTNAME=	tk
@@ -21,6 +21,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl8.2
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=libtk82.so.1
 PKGINSTALL=     ${PKGDIR}/INSTALL.wish
+PKGDEINSTALL=	${PKGDIR}/DEINSTALL.wish
 
 PLIST_SUB=	TK_VER=8.2 SHORT_TK_VER=82
 

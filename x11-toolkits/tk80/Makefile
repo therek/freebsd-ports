@@ -2,7 +2,7 @@
 # Date created:		19 August 1997
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.21 1999/08/31 02:59:39 peter Exp $
+# $FreeBSD: ports/x11-toolkits/tk80/Makefile,v 1.22 2000/04/10 01:11:06 cpiazza Exp $
 #
 
 PORTNAME=	tk
@@ -22,6 +22,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--enable-shared
 CONFIGURE_ENV=  PORTSDIR=${PORTSDIR} TK_LIB_FILE=${TK_LIB_FILE}
 PKGINSTALL=	${PKGDIR}/INSTALL.wish
+PKGDEINSTALL=	${PKGDIR}/DEINSTALL.wish
 
 SHLIB_MAJOR=    1
 SHLIB_MINOR=    4
