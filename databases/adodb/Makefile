@@ -2,7 +2,7 @@
 # Date created:		4 May 2001
 # Whom:			abgoeree@uwnet.nl
 #
-# $FreeBSD: ports/databases/adodb/Makefile,v 1.2 2001/06/20 03:44:33 dwcjr Exp $
+# $FreeBSD: ports/databases/adodb/Makefile,v 1.3 2001/06/28 12:33:45 kevlo Exp $
 #
 
 PORTNAME=	adodb
@@ -21,6 +21,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 NO_BUILD=	YES
 
 do-install:
+	${RM} -f ${WRKSRC}/*.orig
 	${MKDIR} ${PREFIX}/share/doc/apache/php/adodb
 	${INSTALL_DATA} ${WRKSRC}/* ${PREFIX}/share/doc/apache/php/adodb
 
