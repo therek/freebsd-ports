@@ -1,7 +1,8 @@
-# $FreeBSD: ports/editors/Makefile,v 1.88 1999/09/09 01:06:03 taoka Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.89 1999/09/09 23:27:45 asami Exp $
 #
 
     SUBDIR += AbiWord
+    SUBDIR += aee
     SUBDIR += apel-emacs
     SUBDIR += apel-emacs20
     SUBDIR += apel-mule
