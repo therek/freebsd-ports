@@ -2,14 +2,15 @@
 # Date Created:				29 Dec 1999
 # Whom:					Yuan-Chen Cheng <ycheng@sinica.edu.tw>
 #
-# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.5 2000/05/14 05:40:48 billf Exp $
+# $FreeBSD: ports/sysutils/logrotate/Makefile,v 1.6 2000/10/13 20:28:29 ade Exp $
 #
 
 PORTNAME=	logrotate
-PORTVERSION=	3.3
+PORTVERSION=	3.5.2
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/current/SRPMS/SRPMS/ \
-		ftp://ftp.freesoftware.com/pub/linux/redhat/current/SRPMS/SRPMS/
+MASTER_SITES=	ftp://ftp.redhat.com/pub/redhat/current/SRPMS/i386/SRPMS/ \
+		ftp://ftp.freesoftware.com/pub/linux/redhat/current/SRPMS/i386/SRPMS/
+
 EXTRACT_SUFX=	-1.src.rpm
 
 MAINTAINER=	ycheng@sinica.edu.tw
