@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/www/linux-mozilla-devel/scripts/configure,v 1.7 2002/10/21 00:43:59 trevor Exp $
+# $FreeBSD: ports/www/linux-mozilla-devel/scripts/configure,v 1.8 2003/06/03 01:55:38 trevor Exp $
 
 echo ${WRKSRC}/components.conf
 if [ -f ${WRKSRC}/components.conf ]; then
@@ -42,3 +42,7 @@ echo "$choice" \
 	| sed -e "s/$/.xpi/g" \
 	| perl -pi -e "s/ /\n/g" \
 	> ${WRKSRC}/components.conf
+
+echo "* Your choices are saved.  You must run the \"make\" command again to"
+echo "* complete the build.  Ignore the \"Error code 1\" below."
+exit 1
