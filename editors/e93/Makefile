@@ -3,7 +3,7 @@
 # Date created:		21 June 1995
 # Whom:			Satoshi Asami (asami)
 #
-# $FreeBSD: ports/editors/e93/Makefile,v 1.23 1999/08/31 06:42:55 mharo Exp $
+# $FreeBSD: ports/editors/e93/Makefile,v 1.24 1999/11/28 18:30:55 steve Exp $
 #
 
 DISTNAME=	e93-1.2r7X
@@ -18,6 +18,8 @@ LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 
 MAKEFILE=	makefile
 USE_X_PREFIX=	yes
+
+NO_CDROM=	"Asks a question about reading the license on install"
 
 .if !defined(PACKAGE_BUILDING)
 IS_INTERACTIVE=	yes	# asks "ok?" about license
