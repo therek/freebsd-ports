@@ -2,13 +2,14 @@
 # Date created:			  22 Aug 2001
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/nbtscan/Makefile,v 1.1 2001/08/23 07:30:43 kris Exp $
 #
 
 PORTNAME=	nbtscan
 PORTVERSION=	1.0.2
 CATEGORIES=	net
-MASTER_SITES=	http://www.abb.aha.ru/software/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=kris
 
 MAINTAINER=	kris@FreeBSD.org
 
