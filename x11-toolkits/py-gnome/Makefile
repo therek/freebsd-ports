@@ -2,7 +2,7 @@
 # Date created:				3/14/1999
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.46 2001/05/11 16:36:49 ade Exp $
+# $FreeBSD: ports/x11-toolkits/py-gnome/Makefile,v 1.47 2001/05/15 13:30:35 sobomax Exp $
 #
 
 PORTNAME=	py-gnome
@@ -16,7 +16,7 @@ DISTNAME=	gnome-python-${PORTVERSION}
 MAINTAINER=	gnome@FreeBSD.org
 
 BUILD_DEPENDS=	${PYGTK_DEP}
-LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
+#LIB_DEPENDS=	gtkhtml.10:${PORTSDIR}/www/gtkhtml
 RUN_DEPENDS=	${PYGTK_DEP}
 
 USE_GMAKE=	yes
