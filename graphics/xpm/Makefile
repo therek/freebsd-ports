@@ -2,7 +2,7 @@
 # Date created:		14 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/graphics/xpm/Makefile,v 1.32 2001/08/30 14:11:22 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xpm
@@ -17,6 +17,10 @@ USE_IMAKE=	yes
 INSTALLS_SHLIB=	yes
 
 MAN1=		cxpm.1 sxpm.1
+
+.ifdef USE_XPM
+.error You have `USE_XPM' variable defined either in environment or in make(1) arguments. Please undefine and try again.
+.endif
 
 post-install:
 	@ranlib ${PREFIX}/lib/libXpm.a
