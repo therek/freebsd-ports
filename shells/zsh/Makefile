@@ -2,19 +2,21 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.43 2000/04/21 08:19:32 mharo Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.44 2000/05/19 19:03:06 will Exp $
 #
 
 PORTNAME=	zsh
 PORTVERSION=	3.0.7
 CATEGORIES=	shells
-MASTER_SITES=	ftp://ftp.sterling.com/zsh/ \
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
+		ftp://ftp.sterling.com/zsh/ \
 		ftp://ftp.rge.com/pub/shells/zsh/ \
 		ftp://ftp.cenatls.cena.dgac.fr/pub/shells/zsh/ \
 		ftp://mrrl.lut.ac.uk/zsh/ \
 		ftp://ftp.fu-berlin.de/pub/unix/shells/zsh/ \
 		ftp://ftp.ips.oz.au/pub/packages/zsh/ \
 		ftp://ftp.uit.no/pub/unix/shells/zsh/
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	will@FreeBSD.org
 
