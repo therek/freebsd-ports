@@ -2,7 +2,7 @@
 # Date Created:			28 Sep 1997
 # Whom:				Vanilla I. Shu <vanilla@MinJe.com.TW>
 #
-# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.67 2000/08/29 11:30:56 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/gtk13/Makefile,v 1.68 2000/11/20 18:06:10 sobomax Exp $
 #
 
 PORTNAME=	gtk
@@ -15,8 +15,6 @@ DISTNAME=	gtk+-${PORTVERSION}
 
 MAINTAINER=	vanilla@FreeBSD.org
 
-NO_LATEST_LINK=	"Unstable, development version."
-
 LIB_DEPENDS=	glib-1.3.2:${PORTSDIR}/devel/glib13 \
 		pango.0:${PORTSDIR}/x11-toolkits/pango \
 		png.4:${PORTSDIR}/graphics/png \
@@ -24,6 +22,7 @@ LIB_DEPENDS=	glib-1.3.2:${PORTSDIR}/devel/glib13 \
 		jpeg.9:${PORTSDIR}/graphics/jpeg \
 		intl.1:${PORTSDIR}/devel/gettext
 
+NO_LATEST_LINK=	"Unstable, development version."
 USE_X_PREFIX=	yes
 USE_XPM=	yes
 USE_PERL5=	yes
