@@ -2,7 +2,7 @@
 # Date created:				9 Dec 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/graphics/aalib/Makefile,v 1.20 2001/03/03 00:45:13 kris Exp $
+# $FreeBSD: ports/graphics/aalib/Makefile,v 1.21 2001/08/29 11:39:05 markp Exp $
 #
 
 PORTNAME=	aalib
@@ -26,6 +26,7 @@ CONFIGURE_ARGS=	--with-x=no
 .endif
 
 post-patch:
+	@${RM} -f ${WRKSRC}/config.cache
 	@${PERL} -pi -e 's|/usr/local|${LOCALBASE}|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name '*.[ch]' | xargs ${PERL} -pi -e \
 		's|<malloc.h>|<stdlib.h>|g'
