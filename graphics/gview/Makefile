@@ -1,12 +1,12 @@
 # New ports collection makefile for:	gview
-# Version required:			0.1.9
+# Version required:			0.1.10
 # Date created:				30 April 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gview/Makefile,v 1.5 1999/08/25 06:14:12 obrien Exp $
 #
 
-DISTNAME=	gview-0.1.9
+DISTNAME=	gview-0.1.10
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
 
