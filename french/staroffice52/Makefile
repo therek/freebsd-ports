@@ -3,12 +3,12 @@
 # Whom:                 Martin Blapp
 # Translation:		Eric Masson
 #
-# $FreeBSD$
+# $FreeBSD: ports/french/staroffice52/Makefile,v 1.1 2000/09/22 07:19:39 asami Exp $
 #
 
 PORTNAME=	staroffice
 PORTVERSION=	5.2
-CATEGORIES=	editors linux
+CATEGORIES=	french editors linux
 MASTER_SITES=	ftp://ftp.unilim.fr/pub/unix/bureautique/ \
 		ftp://ftp.math.u-bordeaux.fr/pub/StarOffice/Linux-Intel/ \
 		ftp://sunsite.cnlab-switch.ch/mirror/staroffice/francais/ \

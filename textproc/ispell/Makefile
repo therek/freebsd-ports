@@ -2,12 +2,12 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.37 2000/04/09 21:52:44 cpiazza Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.38 2000/04/15 10:35:24 asami Exp $
 #
 
 PORTNAME?=	ispell
 PORTVERSION?= 	3.1.20c
-CATEGORIES=	textproc elisp
+CATEGORIES+=	textproc elisp
 MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/ \
 		ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
 DISTNAME=	ispell-3.1
