@@ -2,7 +2,7 @@
 # Date created:				29 July 1997
 # Whom:					Issei Suzuki <issei@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/math/topaz/Makefile,v 1.3 2000/04/14 07:20:44 asami Exp $
+# $FreeBSD: ports/math/topaz/Makefile,v 1.4 2000/09/25 12:21:29 asami Exp $
 #
 
 PORTNAME=	topaz
@@ -14,7 +14,7 @@ DISTFILES=	topaz-3_25-src.tar.gz
 MAINTAINER=	issei@jp.FreeBSD.ORG
 
 LIB_DEPENDS=	gnugetopt.1:${PORTSDIR}/devel/libgnugetopt \
-		ncurses.4:${PORTSDIR}/devel/ncurses
+		ncurses.5:${PORTSDIR}/devel/ncurses
 
 CXX?=		c++
 MAKEFILE=	Makefile.freebsd

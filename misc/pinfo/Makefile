@@ -2,7 +2,7 @@
 # Date created:		19 May 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/pinfo/Makefile,v 1.6 1999/11/14 02:38:30 steve Exp $
+# $FreeBSD: ports/misc/pinfo/Makefile,v 1.7 2000/04/14 08:46:30 asami Exp $
 #
 
 PORTNAME=	pinfo
@@ -13,7 +13,7 @@ MASTER_SITES=	http://zeus.polsl.gliwice.pl/~pborys/stable-version/
 MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
-		ncurses.4:${PORTSDIR}/devel/ncurses
+		ncurses.5:${PORTSDIR}/devel/ncurses
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-included-gettext --with-readline \
