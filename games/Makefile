@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.228 1999/09/28 01:51:09 taoka Exp $
+# $FreeBSD: ports/games/Makefile,v 1.229 1999/09/28 02:58:09 taoka Exp $
 #
 
     SUBDIR += 3dc
@@ -115,6 +115,7 @@
     SUBDIR += omega
     SUBDIR += uox3
     SUBDIR += wmeyes
+    SUBDIR += wmminichess
     SUBDIR += wmtictactoe
     SUBDIR += wmtimebomb
     SUBDIR += xabacus
