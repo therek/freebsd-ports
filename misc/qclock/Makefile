@@ -3,7 +3,7 @@
 # Date created:		12 August 1998
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/misc/qclock/Makefile,v 1.7 1999/09/24 04:32:50 cpiazza Exp $
+# $FreeBSD: ports/misc/qclock/Makefile,v 1.8 2000/01/26 23:41:41 mph Exp $
 #
 
 DISTNAME=	qclock
@@ -15,9 +15,10 @@ MAINTAINER=	brett@peloton.runet.edu
 
 NO_WRKSUBDIR=	yes
 
-ALL_TARGET=	qclock
+do-build:
+	cd ${WRKSRC}; ${CC} ${CFLAGS} qclock.c -o qclock
 
 do-install:
-	${CP} ${WRKDIR}/qclock ${PREFIX}/bin/qclock
+	${INSTALL_PROGRAM} ${WRKDIR}/qclock ${PREFIX}/bin
 
 .include <bsd.port.mk>
