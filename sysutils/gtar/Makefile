@@ -2,12 +2,11 @@
 # Date created:		Sa   6 Jun 1998 10:24:51 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/sysutils/gtar/Makefile,v 1.16 2001/01/03 22:16:32 andreas Exp $
+# $FreeBSD: ports/sysutils/gtar/Makefile,v 1.17 2001/01/04 13:37:52 andreas Exp $
 #
 
 PORTNAME=	tar
-PORTVERSION=	1.13.18
-PORTREVISION=	3
+PORTVERSION=	1.13.19
 PKGNAMEPREFIX=	g
 CATEGORIES=	sysutils archivers
 MASTER_SITES=	ftp://alpha.gnu.org/gnu/tar/ \
@@ -21,10 +20,12 @@ LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--program-prefix=g
 CONFIGURE_ENV=	CPPFLAGS='-I${LOCALBASE}/include' \
-		LDFLAGS='-L${LOCALBASE}/lib' \
-		DEFAULT_ARCHIVE='/dev/rsa0'
+		DEFAULT_ARCHIVE='/dev/sa0'
 
-post-extract:
-	@rm -f ${WRKSRC}/doc/tar.info*
+.if defined(WANT_STATIC)
+CONFIGURE_ENV+=	LDFLAGS='-L${LOCALBASE}/lib -static'
+.else
+CONFIGURE_ENV+=	LDFLAGS='-L${LOCALBASE}/lib'
+.endif
 
 .include <bsd.port.mk>
