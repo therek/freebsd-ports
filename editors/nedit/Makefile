@@ -3,16 +3,16 @@
 # Date created:				7 April 1996
 # Whom:	Daniel Eischen <deischen@iworks.InterWorks.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/nedit/Makefile,v 1.16 1999/08/25 05:44:04 obrien Exp $
 #
 
 DISTNAME=	nedit-5.0.2
 CATEGORIES=	editors
-MASTER_SITES=	ftp://ftp.fnal.gov/KITS/pub/nedit/v5_0_2/ \
-		ftp://ftp.fnal.gov/KITS/pub/nedit/v5_0_2/contrib/
+MASTER_SITES=	ftp://ftp.nedit.org/pub/v5_0_2/ \
+		ftp://ftp.nedit.org/pub/v5_0_2/contrib/
 DISTFILES=	nedit_source.tar.gz nedit.app-defaults
 
-MAINTAINER=	deischen@iworks.InterWorks.org
+MAINTAINER=	deischen@freebsd.org
 
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
