@@ -2,7 +2,7 @@
 # Date created:				Sat 3 June 2000
 # Whom:					will
 #
-# $FreeBSD: ports/audio/gdcd/Makefile,v 1.4 2000/07/07 21:59:38 dannyboy Exp $
+# $FreeBSD: ports/audio/gdcd/Makefile,v 1.5 2000/10/05 06:35:48 reg Exp $
 #
 
 PORTNAME=	gdcd
@@ -12,11 +12,10 @@ MASTER_SITES=	http://cdcd.undergrid.net/gdcd/source_archive/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	cdaudio.1:${PORTSDIR}/audio/libcdaudio \
-		gdk_pixbuf.2:${PORTSDIR}/graphics/gdk-pixbuf
+LIB_DEPENDS=	cdaudio.1:${PORTSDIR}/audio/libcdaudio
 
 USE_X_PREFIX=	yes
-USE_GTK=	yes
+USE_GNOME=	yes
 USE_AUTOMAKE=	yes
 AUTOMAKE=	automake -a -i
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
