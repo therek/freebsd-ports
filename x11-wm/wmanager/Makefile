@@ -2,7 +2,7 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/x11-wm/wmanager/Makefile,v 1.6 2000/10/28 16:03:14 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmanager
@@ -19,7 +19,7 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
-USE_QT=		yes
+USE_QT_VER=	1
 USE_GMAKE=	yes
 MAKE_ENV=	prefix=${PREFIX}
 

@@ -2,7 +2,7 @@
 # Date created:			31 August 1998
 # Whom:				brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/x11-fm/jafm/Makefile,v 1.9 2000/04/10 00:39:24 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	jafm
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	X11/desktop
 
 MAINTAINER=	brett@peloton.runet.edu
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_BISON=	yes
 MAKE_ENV=	Cxx="${CXX}" CxxFLAGS="${CXXFLAGS}"
 ALL_TARGET=	jafm

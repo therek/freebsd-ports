@@ -2,7 +2,7 @@
 # Date created:				23 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/games/krubik/Makefile,v 1.3 2000/02/24 07:00:54 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	krubik
@@ -13,9 +13,8 @@ MASTER_SITES=	http://www.phys.uu.nl/~eendebak/kde/
 MAINTAINER=	jedgar@fxp.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
 
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
-USE_QT=		yes
 
 .include <bsd.port.mk>

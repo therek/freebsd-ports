@@ -2,7 +2,7 @@
 # Date created:        20 January 1998
 # Whom:                Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/astro/xglobe/Makefile,v 1.6 2000/04/08 22:02:08 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xglobe
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.uni-karlsruhe.de/~uddn/xglobe/
 
 MAINTAINER=	kris@FreeBSD.org
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 

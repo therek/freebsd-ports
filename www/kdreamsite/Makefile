@@ -2,7 +2,7 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/www/kdreamsite/Makefile,v 1.7 2000/06/22 05:52:08 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdreamsite
@@ -12,9 +12,7 @@ MASTER_SITES=	http://neptune.spaceports.com/%7Eatnet/files/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11/
-
-USE_QT=		yes
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 

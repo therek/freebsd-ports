@@ -2,7 +2,7 @@
 # Date created:			17 August 1999
 # Whom:				Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/fine/Makefile,v 1.11 2000/06/20 21:45:53 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fine
@@ -14,9 +14,8 @@ DISTNAME=	${PORTNAME}${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_NEWGCC=	yes
 USE_GMAKE=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 WRKSRC=		${WRKDIR}/fine
 
 .include <bsd.port.pre.mk>

@@ -2,13 +2,19 @@
 # Date created:				Sat Feb  3 23:04:41 EST 2001
 # Whom:					will
 #
-# $FreeBSD: ports/devel/qt-designer/Makefile,v 1.2 2001/03/11 01:14:38 will Exp $
+# $FreeBSD: ports/devel/qt-designer/Makefile,v 1.3 2001/03/24 22:15:55 will Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../x11-toolkits/qt23
 
 PORTNAME=	qt-designer
 CATEGORIES=	devel
+
+post-patch:
+	${PERL} -pi -e "s@-fno-exceptions@-fno-exceptions -I${X11BASE}/include/qt2@g" ${CONFIG}
+
+do-build:
+	(cd ${BUILD_WRKSRC}; ${SETENV} ${MAKE_ENV} ${GMAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${ALL_TARGET})
 
 .include "${MASTERDIR}/Makefile"
 

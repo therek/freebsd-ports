@@ -2,7 +2,7 @@
 # Date created:         11 June 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/ftp/caitoo/Makefile,v 1.2 2000/08/21 10:07:18 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	caitoo
@@ -14,14 +14,8 @@ MASTER_SITE_SUBDIR=	unstable/apps/network
 
 MAINTAINER=	lioux@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
-		kfile.3:${PORTSDIR}/x11/kdelibs11 \
-		kfm.3:${PORTSDIR}/x11/kdelibs11 \
-		mediatool.3:${PORTSDIR}/x11/kdelibs11
-
+USE_KDELIBS_VER=1
 USE_XLIB=	yes
-USE_QT=		yes
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 INSTALLS_SHLIB=	yes

@@ -2,7 +2,7 @@
 # Date created:        30 January 1998
 # Whom:                Sean Cole <scole@aracnet.com>
 #
-# $FreeBSD: ports/net/pppload/Makefile,v 1.12 1999/08/31 06:49:10 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pppload
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=		system/network/serial/ppp
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_GMAKE=	yes
 
 MAN1=		pppload.1

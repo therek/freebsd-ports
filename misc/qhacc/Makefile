@@ -2,7 +2,7 @@
 # Date created:		28 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/misc/qhacc/Makefile,v 1.16 2001/01/28 04:11:11 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qhacc
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	QTDIR="${X11BASE}"

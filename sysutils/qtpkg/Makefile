@@ -2,7 +2,7 @@
 # Date created:				Wed Jan 3 2001
 # Whom:					Trenton Schulz <twschulz@cord.edu>
 #
-# $FreeBSD: ports/sysutils/qtpkg/Makefile,v 1.1 2001/01/23 16:47:05 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qtpkg
@@ -13,7 +13,7 @@ DISTNAME=	qtpkg
 
 MAINTAINER=	twschulz@gloria.cord.edu
 
-USE_QT2=	yes
+USE_QT_VER=	2
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/qtpkg ${PREFIX}/sbin

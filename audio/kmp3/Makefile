@@ -2,7 +2,7 @@
 # Date created:        24 May 1999
 # Whom:                Oscar Bonilla <obonilla@fisicc-ufm.edu>
 #
-# $FreeBSD: ports/audio/kmp3/Makefile,v 1.6 2000/04/08 21:23:47 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kmp3
@@ -12,10 +12,7 @@ MASTER_SITES=	http://www.kmp3.org/tarballs/
 
 MAINTAINER=	mb@imp.ch
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		QwSpriteField.7:${PORTSDIR}/converters/kdesupport11
-
-USE_QT=		yes
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/kmp3

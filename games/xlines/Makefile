@@ -2,7 +2,7 @@
 # Date created:				11 February 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xlines/Makefile,v 1.13 2000/07/17 01:18:02 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xlines
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_X_PREFIX=	yes
 NO_WRKSUBDIR=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		12 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/emulators/ksnes9x/Makefile,v 1.9 2000/06/30 21:05:39 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ksnes9x
@@ -13,11 +13,10 @@ MASTER_SITE_SUBDIR=	ksnes9x
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 RUN_DEPENDS=	snes9x:${PORTSDIR}/emulators/snes9x
 
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-USE_QT=		yes
 
 .include <bsd.port.mk>

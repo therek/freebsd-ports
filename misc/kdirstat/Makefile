@@ -2,7 +2,7 @@
 # Date created:        22 April 2000
 # Whom:                Andrey Novikov <andrey@novikov.com>
 #
-# $FreeBSD: ports/misc/kdirstat/Makefile,v 1.1 2000/09/04 04:18:06 sada Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdirstat
@@ -15,10 +15,8 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	andrey@novikov.com
 
-LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
-
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-USE_QT=		yes
 
 .include <bsd.port.mk>

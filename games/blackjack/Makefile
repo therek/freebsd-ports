@@ -2,7 +2,7 @@
 # Date created:		23 February 1998
 # Whom:			Peter Mutsaers
 #
-# $FreeBSD: ports/games/blackjack/Makefile,v 1.8 2000/04/21 22:09:51 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	blackjack
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
-USE_QT=		yes
+USE_QT_VER=	1
 
 MAN1=		blackjack.1
 

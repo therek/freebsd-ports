@@ -2,7 +2,7 @@
 # Date created:				13 April 2000
 # Whom:					Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/biology/xdrawchem/Makefile,v 1.9 2001/03/12 08:33:42 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xdrawchem
@@ -16,8 +16,7 @@ MAINTAINER=	trevor@FreeBSD.org
 MAKE_ENV=	CXX="${CXX}" CXXFLAGS="${CXXFLAGS}" QTDIR="${X11BASE}"
 PLIST=		${WRKDIR}/pkg-plist
 USE_GMAKE=	yes
-USE_NEWGCC=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_X_PREFIX=	yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION:S/a//}
 

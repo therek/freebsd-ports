@@ -2,7 +2,7 @@
 # Date created:        23 May 1998
 # Whom:                Hans Petter Bieker <zerium@webindex.no>
 #
-# $FreeBSD: ports/misc/kwatch/Makefile,v 1.15 2000/10/12 19:20:46 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kwatch
@@ -13,10 +13,7 @@ MASTER_SITE_SUBDIR=	system/admin/frontends
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.3:${PORTSDIR}/x11/kdelibs11
-
-USE_QT=		yes
+USE_KDELIBS_VER=1
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 

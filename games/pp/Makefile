@@ -2,7 +2,7 @@
 # Date created:				21 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/pp/Makefile,v 1.10 2000/06/20 13:37:35 nectar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pp
@@ -14,7 +14,7 @@ DISTFILES=	ppinst-0.01.tar.gz ppsrc-0.01.tar.gz
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/ppsrc
-USE_QT=		yes
+USE_QT_VER=	1
 USE_X_PREFIX=	yes
 
 do-install:

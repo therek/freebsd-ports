@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.30 2001/02/01 20:22:52 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	licq
@@ -19,14 +19,12 @@ MAINTAINER=	green@FreeBSD.org
 
 BUILD_DEPENDS=	aclocal:${PORTSDIR}/devel/automake
 
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_GMAKE=	yes
 USE_AUTOCONF=	yes
-USE_NEWGCC=	yes
 USE_OPENSSL=	yes
 USE_PERL5=	yes
 
-CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/qt2
 CONFIGURE_TARGET=	$(ARCH)-unknown-freebsdelf$(OSREL)
 
 post-patch:

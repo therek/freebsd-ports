@@ -2,7 +2,7 @@
 # Date created:        13 November 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD: ports/games/ktamaga/Makefile,v 1.13 2000/02/24 07:00:55 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ktamaga
@@ -13,10 +13,8 @@ MASTER_SITES=	ftp://ftp.net.lut.ac.uk/kde/unstable/apps/games/ \
 
 MAINTAINER=	se@freebsd.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
+USE_KDELIBS_VER=1
 MAKE_ENV=	DEBUG_FL="$(CFLAGS)"
-
-USE_QT=		yes
 WRKSRC=		${WRKDIR}/tamaga-0.2
 
 .include <bsd.port.mk>

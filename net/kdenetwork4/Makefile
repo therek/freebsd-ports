@@ -2,31 +2,23 @@
 # Date created:				Sun May 14 00:55:45
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.58 2001/03/24 22:15:40 will Exp $
+# $FreeBSD: ports/net/kdenetwork2/Makefile,v 1.59 2001/03/29 16:34:24 sobomax Exp $
 #
 
 PORTNAME=	kdenetwork
-PORTVERSION=	2.1
+PORTVERSION=	2.1.1
 CATEGORIES=	net news kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2
+LIB_DEPENDS=	uu.1:${PORTSDIR}/converters/uulib
 
-USE_QT2=	yes
-MOC?=		${X11BASE}/bin/moc2
+USE_KDELIBS_VER=2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 USE_AUTOCONF=	yes
-CONFIGURE_ARGS+=--with-qt-includes=${X11BASE}/include/qt2 \
-		--with-qt-libraries=${X11BASE}/lib \
-		--with-extra-libs=${LOCALBASE}/lib
-CONFIGURE_ENV+=	LIBQT="-lqt2" MOC="${MOC}" \
-		CPPFLAGS="-I/usr/include -D_PTH_H_ -D_PTH_PTHREAD_H_ -D_GETOPT_H -D_XOPEN_UNIX -I${LOCALBASE}/include" \
-		LIBS="-Wl,-export-dynamic -L${LOCALBASE}/lib -ljpeg -lgcc -lstdc++"
 USE_GMAKE=	yes
 
 pre-configure:

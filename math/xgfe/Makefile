@@ -2,7 +2,7 @@
 # Date created:        24 March 1998
 # Whom:                Matthew Hunt <mph@pobox.com>
 #
-# $FreeBSD: ports/math/xgfe/Makefile,v 1.15 2000/04/14 07:20:50 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xgfe
@@ -15,7 +15,7 @@ MAINTAINER=	mph@freebsd.org
 
 RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_X_PREFIX=	yes
 
 MAKE_ENV=	X11BASE=$(X11BASE) PREFIX=$(PREFIX)

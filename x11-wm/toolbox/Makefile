@@ -2,7 +2,7 @@
 # Date created:		05 June 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/toolbox/Makefile,v 1.12 2000/06/18 01:42:14 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	toolbox
@@ -12,8 +12,7 @@ MASTER_SITES=	http://www2.bc.edu/~kelleyry/toolbox/
 
 MAINTAINER=	patseal@hyperhost.net
 
-USE_QT2=	yes
-USE_NEWGCC=	yes
+USE_QT_VER=	2
 USE_X_PREFIX=	yes
 
 MAKE_ENV=	CXX="${CXX}" CC="${CC}"

@@ -2,7 +2,7 @@
 # Date created:		27 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/net/icqnix/Makefile,v 1.5 2000/05/28 03:29:00 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	icqnix
@@ -17,7 +17,7 @@ RUN_DEPENDS=	esdplay:${PORTSDIR}/audio/esound
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
-USE_QT=		yes
+USE_QT_VER=	1
 
 post-install:
 	@strip ${PREFIX}/bin/icqnix

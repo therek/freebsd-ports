@@ -2,7 +2,7 @@
 # Date created:        17 June 2000
 # Whom:                Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD: ports/x11-wm/bbkeys/Makefile,v 1.2 2000/07/20 13:52:36 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	bbkeys
@@ -16,7 +16,7 @@ RUN_DEPENDS=	blackbox:${PORTSDIR}/x11-wm/blackbox
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
-USE_QT2=yes
+USE_QT_VER=	2
 
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${MAKE} ${MAKE_FLAGS} ${MAKEFILE} ${MAKE_ARGS} ${ALL_TARGET})

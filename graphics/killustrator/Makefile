@@ -2,7 +2,7 @@
 # Date created:        07 May 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/graphics/killustrator/Makefile,v 1.14 2001/02/27 03:09:11 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	killustrator
@@ -12,12 +12,10 @@ MASTER_SITES=	http://wwwiti.cs.uni-magdeburg.de/~sattler/pub/killustrator/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		intl.1:${PORTSDIR}/devel/gettext \
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext \
 		gnugetopt.1:${PORTSDIR}/devel/libgnugetopt
-RUN_DEPENDS=	${LOCALBASE}/bin/kdehelp:${PORTSDIR}/x11/kdebase11
 
-USE_QT=		yes
+USE_KDEBASE_VER=1
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
 CONFIGURE_ENV+=	CFLAGS="${CFLAGS} -I${LOCALBASE}/include -L${LOCALBASE}/lib"

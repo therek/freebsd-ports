@@ -2,7 +2,7 @@
 # Date created:        20 March 1998
 # Whom:                Joep Grooten <joep@di.nl>
 #
-# $FreeBSD: ports/devel/doxygen/Makefile,v 1.9 2001/03/13 06:38:14 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	doxygen
@@ -13,7 +13,7 @@ EXTRACT_SUFX=	.src.tar.gz
 
 MAINTAINER=	joep@di.nl
 
-USE_QT=		yes
+USE_QT_VER=	1
 USE_PERL5=	yes
 MAKE_ENV+=	QTDIR="${X11BASE}" PCFLAGS="${CFLAGS}" PCXXFLAGS="${CXXFLAGS}"
 HAS_CONFIGURE=	yes

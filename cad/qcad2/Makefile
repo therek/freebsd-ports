@@ -2,7 +2,7 @@
 # Date created:		10 Dec 1999
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/cad/qcad/Makefile,v 1.11 2001/02/28 14:20:01 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qcad
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-src
 MAINTAINER=	ports@FreeBSD.org
 
 USE_XLIB=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 MAKE_ENV=	QTDIR="${X11BASE}"
 
 .include <bsd.port.pre.mk>

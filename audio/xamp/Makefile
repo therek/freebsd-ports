@@ -2,7 +2,7 @@
 # Date created:			29 July 1998
 # Whom:				Joe Jih-Shian Lu <jslu@dns.ntu.edu.tw>
 #
-# $FreeBSD: ports/audio/xamp/Makefile,v 1.9 2000/05/29 22:07:03 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xamp
@@ -17,7 +17,7 @@ MAINTAINER=	ports@FreeBSD.org
 USE_GMAKE=	YES
 WRKSRC=		${WRKDIR}/${PORTNAME}-0.8/${PORTNAME}-0.8g/
 DIST_SUBDIR=	xamp
-USE_QT=		yes
+USE_QT_VER=	1
 USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

@@ -2,7 +2,7 @@
 # Date created:		18 March 2000
 # Whom:			Cliff Rowley <dozprompt@onsea.com>
 #
-# $FreeBSD: ports/graphics/imanager/Makefile,v 1.3 2000/12/22 17:01:40 fenner Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	imanager
@@ -13,10 +13,9 @@ DISTNAME=	imanager-${PORTVERSION}.final.imlib
 
 MAINTAINER=	ports@freebsd.org
 
-LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib \
-		kdecore.3:${PORTSDIR}/x11/kdelibs11
+LIB_DEPENDS=	Imlib.5:${PORTSDIR}/graphics/imlib
 
-USE_QT=		yes
+USE_KDELIBS_VER=1
 HAS_CONFIGURE=	yes
 USE_GMAKE=	yes
 

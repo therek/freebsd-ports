@@ -2,7 +2,7 @@
 # Date created:		So  14 Jun 1998 13:09:18 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/mail/kbiff/Makefile,v 1.17 2000/09/21 23:47:17 kris Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kbiff
@@ -12,10 +12,9 @@ MASTER_SITES=	http://granroth.kde.org/kbiff/
 
 MAINTAINER=	kris@FreeBSD.org
 
-LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11 \
-		intl.1:${PORTSDIR}/devel/gettext
+LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 
-USE_QT=		yes
+USE_KDELIBS_VER=1
 USE_BZIP2=	yes
 GNU_CONFIGURE=	yes
 

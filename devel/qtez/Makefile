@@ -2,7 +2,7 @@
 # Date created:				14 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/qtez/Makefile,v 1.20 2001/03/11 05:00:13 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qtez
@@ -16,12 +16,11 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_X_PREFIX=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_AUTOMAKE=	yes
 AUTOMAKE=	automake -a -i && ${PERL} automoc
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	QTDIR="${X11BASE}" MOC="${X11BASE}/bin/moc2" \
-		QTEZ="${PREFIX}/share/qtez"
+CONFIGURE_ENV=	QTDIR="${X11BASE}" QTEZ="${PREFIX}/share/qtez"
 MAKE_ENV=	QTEZ="${PREFIX}/share/qtez"
 INSTALLS_SHLIB=	yes
 

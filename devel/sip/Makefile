@@ -2,7 +2,7 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@home.com
 #
-# $FreeBSD: ports/devel/sip/Makefile,v 1.9 2000/11/21 11:31:01 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sip
@@ -15,9 +15,9 @@ MAINTAINER=	adsharma@sharmas.dhs.org
 USE_PYTHON=	yes
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 INSTALLS_SHLIB=	yes
-CONFIGURE_ARGS=	--enable-qt --with-qt-includes=${X11BASE}/include/qt2
+CONFIGURE_ARGS=	--enable-qt
 CONFIGURE_ENV=	LDFLAGS=-lgcc
 
 .include <bsd.port.mk>

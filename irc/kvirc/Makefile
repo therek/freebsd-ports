@@ -2,7 +2,7 @@
 # Date created:		Mon Feb 15 02:53:29 CET 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/irc/kvirc/Makefile,v 1.19 2001/02/02 11:39:53 trevor Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kvirc
@@ -22,8 +22,7 @@ MAN1=		kvirc.1
 USE_LIBTOOL=	yes
 USE_AUTOMAKE=	yes
 USE_AUTOCONF=	yes
-USE_NEWGCC=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 CONFIGURE_ARGS=	--x-includes=$(X11BASE)/include \

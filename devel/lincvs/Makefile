@@ -2,7 +2,7 @@
 # Date created:				03 December 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/lincvs/Makefile,v 1.2 1999/12/29 04:50:12 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lincvs
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-USE_QT2=	yes
+USE_QT_VER=	2
 WRKSRC=		${WRKDIR}/LinCVS-0.2.3
 
 do-configure:

@@ -2,7 +2,7 @@
 # Date created:				2 April 1999
 # Whom:					Gordon Greeff
 #
-# $FreeBSD: ports/misc/peq/Makefile,v 1.4 2000/10/04 06:40:01 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	peq
@@ -13,7 +13,7 @@ MASTER_SITES=	http://silverstone.fortunecity.com/jaguar/37/ \
 
 MAINTAINER=	gvg@uunet.co.za
 
-USE_QT=		yes
+USE_QT_VER=	1
 
 post-install:
 	strip ${PREFIX}/bin/peq

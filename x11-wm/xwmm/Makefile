@@ -2,7 +2,7 @@
 # Date created:		26 Nov 1999
 # Whom:			imura@af.airnet.ne.jp
 #
-# $FreeBSD: ports/x11-wm/xwmm/Makefile,v 1.5 2000/10/28 08:37:18 imura Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xwmm
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	asami
 MAINTAINER=	ports@FreeBSD.org
 
 USE_X_PREFIX=	yes
-USE_QT2=	yes
+USE_QT_VER=	2
 USE_GMAKE=	yes
 MAKE_ENV=	QTDIR=$(X11BASE)
 ALL_TARGET=	# empty

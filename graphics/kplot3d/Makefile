@@ -2,7 +2,7 @@
 # Date created:				30 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/graphics/kplot3d/Makefile,v 1.6 2000/04/14 10:46:31 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kplot3d
@@ -12,9 +12,7 @@ MASTER_SITES=	http://members.nbci.com/kplot3d/
 
 MAINTAINER=	jedgar@FreeBSD.org
 
-LIB_DEPENDS=	kdecore.3:${PORTSDIR}/x11/kdelibs11
-
-USE_QT=		yes
+USE_KDELIBS_VER=1
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes
 
