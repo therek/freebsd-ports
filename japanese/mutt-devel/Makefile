@@ -2,7 +2,7 @@
 # Date created:		4 Sep 2000
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.17 2000/11/13 19:21:18 knu Exp $
+# $FreeBSD: ports/japanese/mutt-devel/Makefile,v 1.18 2001/01/29 14:19:59 sf Exp $
 #
 
 PORTNAME=	mutt
@@ -30,7 +30,7 @@ BUILD_DEPENDS=	${LOCALBASE}/bin/msgfmt:${PORTSDIR}/devel/gettext
 RUN_DEPENDS=	urlview:${PORTSDIR}/textproc/urlview
 
 PRE_VERSION=	1.2
-VERSION=	1.3.13
+VERSION=	1.3.14
 JP_VERSION=	0
 
 DIST_SUBDIR=	mutt
