@@ -2,11 +2,12 @@
 # Date created:		03 Apr 2001
 # Whom:			brian
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/dvdtape/Makefile,v 1.1 2001/04/03 21:34:23 brian Exp $
 #
 
 PORTNAME=	dvdtape
 PORTVERSION=	1.4
+PORTREVISION=	1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.Awfulhak.org/pub/dvdtape/ \
 		http://people.FreeBSD.org/~brian/dvdtape/ \
