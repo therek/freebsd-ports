@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11/Makefile,v 1.303 2000/09/19 15:50:14 sobomax Exp $
+# $FreeBSD: ports/x11/Makefile,v 1.304 2000/09/19 16:10:04 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -71,6 +71,7 @@
     SUBDIR += wdm
     SUBDIR += wmbutton
     SUBDIR += wmmatrix
+    SUBDIR += wrapper
     SUBDIR += wterm
     SUBDIR += x3270
     SUBDIR += xaniroc
