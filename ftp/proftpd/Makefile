@@ -2,7 +2,7 @@
 # Date created:		26 January 1998
 # Whom:			Stephane Legrand
 #
-# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.27 2000/07/07 09:35:20 kris Exp $
+# $FreeBSD: ports/ftp/proftpd/Makefile,v 1.28 2000/07/28 18:00:59 mharo Exp $
 #
 
 PORTNAME=	proftpd
@@ -69,6 +69,11 @@ do-install:
 		${WRKSRC}/sample-configurations/basic.conf ${PREFIX}/etc/proftpd.conf; \
 	fi
 	@${SED} -e 's,/usr/local,${PREFIX},g' ${FILESDIR}/proftpd.sh.sample > ${PREFIX}/etc/rc.d/proftpd.sh.sample
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/proftpd
+	@${INSTALL_DATA} ${WRKSRC}/doc/Configuration.html ${PREFIX}/share/doc/proftpd
+	@${INSTALL_DATA} ${WRKSRC}/doc/FAQ-config.html ${PREFIX}/share/doc/proftpd
+.endif
 
 	@${CAT} ${PKGMESSAGE}
 
