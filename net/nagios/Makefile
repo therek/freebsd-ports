@@ -2,17 +2,15 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint/Makefile,v 1.12 2001/09/23 02:06:41 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netsaint
-PORTVERSION=	0.0.7b6
-PORTREVISION=	1
+PORTVERSION=	0.0.7b8
 CATEGORIES=	net
 MASTER_SITES=	http://netsaint.sourceforge.net/download/ \
 		${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=dwcjr
-
 DISTFILES=	${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX} netsaint-graphics.tar.gz
 
 MAINTAINER=	blaz@si.FreeBSD.org
@@ -45,14 +43,9 @@ pre-install:
 
 BSDIMAGES=	bsd_logofullsize.gif bsd_sblogo.gif
 
-post-patch:
-	cd ${WRKSRC} && tar zxf ${DISTDIR}/netsaint-graphics.tar.gz
-
-
 post-install:
 .for i in ${BSDIMAGES}
-	${INSTALL_DATA} ${WRKSRC}/html/images/$i ${PREFIX}/share/${PORTNAME}/images/
+	${INSTALL_DATA} ${WRKDIR}/netsaint-0.0.7b6/html/images/$i ${PREFIX}/share/${PORTNAME}/images/
 .endfor
-
 
 .include <bsd.port.mk>

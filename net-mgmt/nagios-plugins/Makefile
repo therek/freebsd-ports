@@ -2,7 +2,7 @@
 # Date created:				Wed 12 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/net/netsaint-plugins/Makefile,v 1.10 2001/04/16 11:42:06 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	netsaint-plugins
@@ -32,5 +32,5 @@ pre-fetch:
 
 post-clean:
 	@${RM} -f ${WRKDIRPREFIX}${.CURDIR}/Makefile.inc
-	
+
 .include <bsd.port.mk>
