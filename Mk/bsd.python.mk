@@ -1,7 +1,7 @@
 # -*- mode: Fundamental; tab-width: 4; -*-
 # ex: ts=4
 #
-# $FreeBSD: ports/Mk/bsd.python.mk,v 1.7 2000/11/20 12:30:14 tg Exp $
+# $FreeBSD: ports/Mk/bsd.python.mk,v 1.8 2001/03/01 12:17:41 tg Exp $
 #
 
 .if !defined(Python_Include)
@@ -26,7 +26,6 @@ Python_Include_MAINTAINER=	tg@FreeBSD.org
 #					are built from sources contained in the Python
 #					distribution.
 #
-#
 # PYTHON_INCLUDEDIR:	Location of the Python include files.
 #						default: ${LOCALBASE}/include/${PYTHON_VERSION}
 #
@@ -36,6 +35,8 @@ Python_Include_MAINTAINER=	tg@FreeBSD.org
 # PYTHON_PKGNAMEPREFIX:	Use this as a ${PKGNAMEPREFIX} to distinguish
 #						packages for different Python versions.
 #						default: py${PYTHON_SUFFIX}-
+#
+# PYTHON_PLATFORM:	Python's idea of the OS release.
 #
 # PYTHON_PORTSDIR:	The source of your binary's port. Needed for the
 #					RUN_DEPENDS.
@@ -127,6 +128,7 @@ PYTHON_CMD=				${LOCALBASE}/bin/${PYTHON_VERSION}
 PYTHON_INCLUDEDIR=		${LOCALBASE}/include/${PYTHON_VERSION}
 PYTHON_LIBDIR=			${LOCALBASE}/lib/${PYTHON_VERSION}
 PYTHON_PKGNAMEPREFIX=	py${PYTHON_SUFFIX}-
+PYTHON_PLATFORM!=		${PYTHON_CMD} -c 'import sys; print sys.platform'
 PYTHON_SITELIBDIR=		${PYTHON_LIBDIR}/site-packages
 
 # dependencies
@@ -138,7 +140,8 @@ RUN_DEPENDS+=	${PYTHON_CMD}:${PYTHON_PORTSDIR}
 .endif
 
 # pkg/PLIST substrings
-PLIST_SUB+=		PYTHON_VERSION=${PYTHON_VERSION}
+PLIST_SUB+=		PYTHON_VERSION=${PYTHON_VERSION} \
+				PYTHON_PLATFORM=${PYTHON_PLATFORM}
 
 # XXX Hm, should I export some of the variables above to *_ENV?
 
