@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.464 2003/08/27 04:42:45 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.465 2003/08/28 03:58:01 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -421,9 +421,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #			  	routines found in etc/rc.subr and may need to
 #				depend on the sysutils/rc_subr port.
 #
-# RC_SUBR		- Set to path of rc.subr, defaults to /etc/rc.subr on
-#				5.x and to ${PREFIX}/etc/rc.subr on non-rcNG
-#				systems.
+# RC_SUBR		- Set to path of rc.subr, defaults to ${LOCALBASE}/etc/rc.subr.
+#				
 #
 #
 # Dependency checking.  Use these if your port requires another port
