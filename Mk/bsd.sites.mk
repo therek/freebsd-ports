@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.135 2003/02/15 15:12:21 arved Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.136 2003/02/18 05:27:47 edwin Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -265,7 +265,6 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.u-aizu.ac.jp/pub/net/isc/%SUBDIR%/ \
 	ftp://ftp.linux.lv/pub/software/isc/%SUBDIR%/ \
 	ftp://ftp.task.gda.pl/mirror/ftp.isc.org/isc/%SUBDIR%/ \
-	ftp://ftp.cdu.elektra.ru/pub/unix/isc/%SUBDIR%/ \
 	ftp://ftp.si.uniovi.es/mirror/isc/%SUBDIR%/ \
 	ftp://ftp.sunet.se/pub/network/isc/%SUBDIR%/ \
 	ftp://ftp.chl.chalmers.se/pub/unix/network/isc/%SUBDIR%/ \
@@ -277,7 +276,6 @@ MASTER_SITE_ISC+=	\
 	ftp://ftp.nl.uu.net/pub/mirrors/ftp.isc.org/%SUBDIR%/ \
 	ftp://ftp.pop-mg.com.br/pub/isc/%SUBDIR%/ \
 	ftp://ftp.ntua.gr/pub/net/isc/isc/%SUBDIR%/ \
-	ftp://ftp.ulak.net.tr/pub/networking/isc/%SUBDIR%/ \
 	ftp://ftp.metu.edu.tr/pub/mirrors/ftp.isc.org/%SUBDIR%/
 
 MASTER_SITE_KDE+=	\
