@@ -2,11 +2,11 @@
 # Date Created:				26 Oct 2000
 # Whom:					Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/audio/freeamp/Makefile,v 1.1 2000/10/28 07:34:09 will Exp $
+# $FreeBSD: ports/audio/freeamp/Makefile,v 1.2 2000/11/13 17:45:26 roger Exp $
 #
 
 PORTNAME=	freeamp
-PORTVERSION=	2.1.rc4
+PORTVERSION=	2.1.rc5
 CATEGORIES=	audio
 MASTER_SITES=	http://www.freeamp.org/download/src/
 
