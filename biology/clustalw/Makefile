@@ -2,18 +2,17 @@
 # Date created:				6 July 2000
 # Whom:					dbader@eece.unm.edu
 #
-# $FreeBSD: ports/biology/clustalw/Makefile,v 1.1 2000/07/10 03:17:36 steve Exp $
+# $FreeBSD: ports/biology/clustalw/Makefile,v 1.2 2000/10/03 01:10:19 jeh Exp $
 #
 
 PORTNAME=	clustalw
-PORTVERSION=	1.81
+PORTVERSION=	1.82
 CATEGORIES=	biology
 MASTER_SITES=	ftp://ftp-igbmc.u-strasbg.fr/pub/ClustalW/
 DISTNAME=	${PORTNAME}${PORTVERSION}.UNIX
 
 MAINTAINER=	dbader@eece.unm.edu
 
-PORTREVISION=	1
 WRKSRC=		${WRKDIR}/${PORTNAME}${PORTVERSION}
 
 MAKEFILE=	makefile
