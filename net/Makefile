@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.458 2001/02/01 23:31:22 dannyboy Exp $
+# $FreeBSD: ports/net/Makefile,v 1.459 2001/02/12 11:02:47 sobomax Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -116,7 +116,7 @@
     SUBDIR += isc-dhcp2
     SUBDIR += isc-dhcp3
     SUBDIR += isic
-    SUBDIR += jabber-transport
+    SUBDIR += jabber
     SUBDIR += jwhois
     SUBDIR += kdenetwork11
     SUBDIR += kdenetwork2
