@@ -3,7 +3,7 @@
 # Date created:   Aug 2000
 # Whom:           peterho@ned.dem.csiro.au
 #
-# $FreeBSD: ports/x11-toolkits/viewkit/Makefile,v 1.1 2001/04/07 04:19:54 will Exp $
+# $FreeBSD$
 #
 #
 #
@@ -11,7 +11,9 @@
 PORTNAME=       viewkit
 PORTVERSION=    0.00
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://ftp.hungry.com/pub/hungry/viewkit/
+MASTER_SITES=	ftp://ftp.hungry.com/pub/hungry/viewkit/ \
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	fenner
 DISTNAME=       libvk-Apr19-2243
 
 MAINTAINER=	peterho@ned.dem.csiro.au
