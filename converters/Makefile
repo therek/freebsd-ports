@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.35 2000/08/08 19:16:26 knu Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.36 2000/08/25 16:13:19 knu Exp $
 #
 
     SUBDIR += aish
@@ -7,6 +7,7 @@
     SUBDIR += fconv
     SUBDIR += i18ntools
     SUBDIR += iconv
+    SUBDIR += iconv-rfc1345
     SUBDIR += ish
     SUBDIR += kdesupport11
     SUBDIR += kdesupport11-i18n
