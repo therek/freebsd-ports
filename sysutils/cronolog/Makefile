@@ -3,7 +3,7 @@
 # Date created:        20 January 2000
 # Whom:                Mark Blackman <tmb_ports@maddog.u-net.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/cronolog/Makefile,v 1.1.1.1 2000/01/22 03:10:03 jedgar Exp $
 #
 
 DISTNAME=      cronolog-1.6.1
@@ -17,6 +17,6 @@ MAN1=          cronolog.1m cronosplit.1m
 GNU_CONFIGURE= yes
 
 post-install:
-	${STRIP} ${PREFIX}/sbin/cronolog ${PREFIX}/sbin/cronolog
+	${STRIP} ${PREFIX}/sbin/cronolog
 
 .include <bsd.port.mk>
