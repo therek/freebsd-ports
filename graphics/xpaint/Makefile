@@ -2,7 +2,7 @@
 # Date created:		2 Jan 1995
 # Whom:			swallace
 #
-# $FreeBSD: ports/graphics/xpaint/Makefile,v 1.41 2000/12/11 02:50:24 steve Exp $
+# $FreeBSD: ports/graphics/xpaint/Makefile,v 1.42 2001/03/08 19:39:07 sf Exp $
 #
 
 PORTNAME=	xpaint
@@ -12,7 +12,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://home.worldonline.dk/~torsten/xpaint/ \
 		ftp://ftp.win.ne.jp/pub/graphics/
 
-MAINTAINER=	jseger@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		png.4:${PORTSDIR}/graphics/png
