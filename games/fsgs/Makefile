@@ -2,7 +2,7 @@
 # Date created:		16 July 2001
 # Whom:			Donald Burr <dburr@FreeBSD.ORG>
 #
-# $FreeBSD: ports/games/fsgs/Makefile,v 1.2 2001/07/25 17:53:58 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fsgs
@@ -13,9 +13,9 @@ DISTFILES=	fsgs07126bsd.tgz fsgs0721lx.tgz
 
 MAINTAINER=	dburr@FreeBSD.ORG
 
-FORBIDDEN=	"Some data files probably need to be made group-writable"
-
 NO_BUILD=	yes
+
+IGNORE=		"Disabled for legal reasons"
 
 do-install:
 	${CP} -Rp ${WRKDIR}/opt/fsgs ${PREFIX}/fsgs
