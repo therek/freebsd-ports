@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.4 2004/04/30 21:44:50 nork Exp $
+# $FreeBSD: ports/www/apache13/files/apache.sh,v 1.5 2004/05/01 18:44:59 ache Exp $
 
 # PROVIDE: apache
 # REQUIRE: DAEMON
@@ -26,5 +26,7 @@ command="%%PREFIX%%/sbin/httpd"
 load_rc_config $name
 
 pidfile="${apache_pidfile}"
+
+start_precmd="`/usr/bin/limits -e -U www`"
 
 run_rc_command "$1"
