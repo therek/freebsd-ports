@@ -2,11 +2,11 @@
 # Date created:		13 October 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/neon/Makefile,v 1.3 2001/02/23 16:23:17 olgeni Exp $
+# $FreeBSD: ports/www/neon/Makefile,v 1.4 2001/03/17 09:35:54 olgeni Exp $
 #
 
 PORTNAME=	neon
-PORTVERSION=	0.12.0
+PORTVERSION=	0.15.0
 CATEGORIES=	www
 MASTER_SITES=	http://www.webdav.org/neon/
 
@@ -20,7 +20,9 @@ USE_OPENSSL=	yes
 
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS=	--with-ssl=${OPENSSLBASE} \
-		--enable-xml
+		--enable-xml \
+		--enable-shared \
+		--with-libxml1
 
 .ifndef NOPORTDOCS
 post-install:
