@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.152 2001/07/06 16:19:04 kevlo Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.153 2001/07/07 23:45:33 dd Exp $
 #
 
     SUBDIR += AbiWord
@@ -67,6 +67,7 @@
     SUBDIR += joe-devel
     SUBDIR += jove
     SUBDIR += koffice
+    SUBDIR += kxmleditor
     SUBDIR += le
     SUBDIR += led
     SUBDIR += leim20
