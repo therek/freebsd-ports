@@ -1,6 +1,7 @@
-@comment $FreeBSD: ports/security/nmap/pkg/PLIST,v 1.9 2000/02/27 08:56:19 reg Exp $
+@comment $FreeBSD: ports/security/nmap/pkg-plist,v 1.10 2000/04/30 09:46:47 obrien Exp $
 bin/nmap
 share/nmap/nmap-os-fingerprints
+share/nmap/nmap-protocols
 share/nmap/nmap-services
 share/nmap/nmap-rpc
 @dirrm share/nmap
