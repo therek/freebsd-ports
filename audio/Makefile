@@ -1,4 +1,4 @@
-# $FreeBSD: ports/audio/Makefile,v 1.224 2001/04/07 05:04:42 will Exp $
+# $FreeBSD: ports/audio/Makefile,v 1.225 2001/04/07 06:09:12 will Exp $
 #
 
     SUBDIR += Maaate
@@ -53,6 +53,7 @@
     SUBDIR += flac
     SUBDIR += fmio
     SUBDIR += freeamp
+    SUBDIR += funktrackergold
     SUBDIR += gdcd
     SUBDIR += gdrdao
     SUBDIR += gkrellmms
