@@ -2,7 +2,7 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.42 2000/12/08 20:08:59 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.43 2001/01/07 21:28:10 asmodai Exp $
 #
 
 PORTNAME?=	ispell
@@ -31,7 +31,7 @@ ALL_TARGET=
 BUILDHASH=	${WRKSRC}/buildhash
 DATADIR=	${PREFIX}/share/ispell
 
-.if (!defined(ISPELL_FR) && !defined (ISPELL_SE) && !defined(ISPELL_BR) && !defined(ISPELL_DENEU) && !defined(ISPELL_DEALT) && !defined(ISPELL_BRITISH) && !defined(ISPELL_NO))
+.if (!defined(ISPELL_FR) && !defined(ISPELL_SE) && !defined(ISPELL_BR) && !defined(ISPELL_DENEU) && !defined(ISPELL_DEALT) && !defined(ISPELL_BRITISH) && !defined(ISPELL_NO))
 pre-everything:
 	@${ECHO_MSG} '*********************************************************'
 	@${ECHO_MSG} '* You can add further dictionaries:                     *'
