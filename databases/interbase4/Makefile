@@ -3,13 +3,13 @@
 # Date created:				1998-nov-01
 # Whom:					Berend de Boer <berend@pobox.com>
 #
-# $FreeBSD: ports/databases/interbase4/Makefile,v 1.6 1999/08/28 01:57:00 mharo Exp $
+# $FreeBSD: ports/databases/interbase4/Makefile,v 1.7 1999/09/30 03:52:22 cpiazza Exp $
 #
 
 DISTNAME=	IB_4.0_FreeBSD
 PKGNAME=	interbase-4.0
 CATEGORIES=	databases
-MASTER_SITES=	http://iblinux.rios.co.jp/intl/dloadfb/
+MASTER_SITES=	# manual fetch
 
 MAINTAINER=	berend@pobox.com
 
