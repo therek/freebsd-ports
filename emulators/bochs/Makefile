@@ -3,25 +3,25 @@
 # Date created:        16 December 1997
 # Whom:                alex
 #
-# $FreeBSD: ports/emulators/bochs/Makefile,v 1.17 1999/08/31 06:43:51 mharo Exp $
+# $FreeBSD: ports/emulators/bochs/Makefile,v 1.18 1999/09/19 04:22:54 obrien Exp $
 #
 
 VGABIOS=	VGABIOS-elpin-2.20
-BIOS=		BIOS-bochs-990907a
-DATE= 		990907
+BIOS=		BIOS-bochs-990925a
+DATE= 		991004
 
-DISTNAME=	bochs-${DATE}b
+DISTNAME=	bochs-${DATE}a
 CATEGORIES= 	emulators
 MASTER_SITES= 	ftp://ftp.bochs.com/pub/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	obrien@FreeBSD.org
 
 USE_XLIB=	yes
 GNU_CONFIGURE=	YES
 CONFIGURE_ARGS=	--enable-cpu-level=4 --enable-vga \
 		--with-x11 --prefix=${PREFIX}
 
-WRKSRC=		${WRKDIR}/bochs-${DATE}b
+WRKSRC=		${WRKDIR}/bochs-${DATE}a
 
 RESTRICTED=	"Commercial software"
 NO_CDROM=	${RESTRICTED}
