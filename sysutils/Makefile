@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.130 2000/08/15 02:28:39 knu Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.131 2000/08/18 15:09:33 ade Exp $
 #
 
     SUBDIR += LPRng
@@ -43,6 +43,7 @@
     SUBDIR += gpart
     SUBDIR += grub
     SUBDIR += gtar
+    SUBDIR += gtoaster
     SUBDIR += gtop
     SUBDIR += guitar
     SUBDIR += healthd
