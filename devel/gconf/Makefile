@@ -2,14 +2,14 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gconf/Makefile,v 1.14 2001/05/04 21:39:31 ade Exp $
+# $FreeBSD: ports/devel/gconf/Makefile,v 1.15 2001/05/11 16:36:18 ade Exp $
 #
 
 PORTNAME=	gconf
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	devel gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
-MASTER_SITE_SUBDIR=	unstable/sources/GConf
+MASTER_SITE_SUBDIR=	stable/sources/GConf
 DISTNAME=	GConf-${PORTVERSION}
 
 MAINTAINER=	gnome@FreeBSD.org
