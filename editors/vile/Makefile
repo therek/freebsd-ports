@@ -2,7 +2,7 @@
 # Date created:         Wed Nov 26, 1996
 # Whom:                 pgf
 #
-# $FreeBSD: ports/editors/vile/Makefile,v 1.26 2001/03/23 21:01:52 gj Exp $
+# $FreeBSD: ports/editors/vile/Makefile,v 1.27 2001/03/25 11:58:48 gj Exp $
 #
 
 PORTNAME=	vile
@@ -11,7 +11,7 @@ DISTNAME=	vile-9.2
 CATEGORIES=	editors
 MASTER_SITES=   ftp://ftp.phred.org/pub/vile/ \
 		ftp://dickey.his.com/vile/
-PATCH_SITES=	${MASTER_SITES:S,vile/,vile/patches,g}
+PATCH_SITES=	${MASTER_SITES:S,vile/,vile/patches/,g}
 PATCHFILES=	vile-9.2a.patch.gz \
 		vile-9.2b.patch.gz \
 		vile-9.2c.patch.gz \
