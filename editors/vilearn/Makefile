@@ -2,7 +2,7 @@
 # Date created:		12 Dec 1997
 # Whom:			Ian Vaudrey <i.vaudrey@bigfoot.com>
 #
-# $FreeBSD: ports/editors/vilearn/Makefile,v 1.4 2000/04/14 00:25:50 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	vilearn
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/Linux/util/networking/util-swan/pub/misc/ \
 DISTFILES=	${PORTNAME}.Z
 
 MAINTAINER=	i.vaudrey@bigfoot.com
+COMMENT=	An interactive tutorial for the vi editor
 
 EXTRACT_CMD=	uncompress
 EXTRACT_BEFORE_ARGS=	-c

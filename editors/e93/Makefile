@@ -2,7 +2,7 @@
 # Date created:		21 June 1995
 # Whom:			Satoshi Asami (asami)
 #
-# $FreeBSD: ports/editors/e93/Makefile,v 1.26 2000/04/14 00:25:24 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	e93
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}-1.3r2X
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jeremy@external.org
+COMMENT=	A nifty editor based on Tcl/Tk
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82 \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82

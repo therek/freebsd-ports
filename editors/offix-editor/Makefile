@@ -2,7 +2,7 @@
 # Date created:      28 Jun 1997
 # Whom:              Ruslan Shevchenko <ruslan@shevchenko.kiev.ua>
 #
-# $FreeBSD: ports/editors/offix-editor/Makefile,v 1.8 2000/04/14 06:20:34 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	offix-editor
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	desktop_managers/OffiX
 DISTNAME=	Editor-${PORTVERSION}
 
 MAINTAINER=	ruslan@shevchenko.kiev.ua
+COMMENT=	Editor from OffiX
 
 LIB_DEPENDS=	Dnd.1:${PORTSDIR}/x11/libdnd
 

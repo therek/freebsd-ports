@@ -3,7 +3,7 @@
 #
 # Whom:	Andreas Kohout <shanee@augusta.de>
 #
-# $FreeBSD: ports/editors/asedit/Makefile,v 1.9 2000/11/07 23:28:01 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asedit
@@ -15,6 +15,7 @@ MASTER_SITE_SUBDIR=	editors
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
+COMMENT=	Text editor for X/Motif
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes
