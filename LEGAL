@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.304 2003/10/22 03:14:42 foxfair Exp $
+# $FreeBSD: ports/LEGAL,v 1.305 2003/10/22 07:59:47 foxfair Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -228,6 +228,7 @@ pgp*			ports/security/pgp*	Various locality restrictions
 pklin*			ports/archivers/pkzip	Shareware
 platon-*		ports/biology/platon	US$ 5000 for commercial users,
 						(free for academic)
+ppunpack-*		ports/archivers/ppunpack	No commercial redistribution
 prodosemu.*		ports/emulators/prodosemu	Restrictive copyright on the ROM image
 punkbuster*		ports/net/punkbuster*	Restricted binary distribution
 qkmj-*			ports/games/qkmj	Do not sell for profit
