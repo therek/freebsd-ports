@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.266 2000/02/24 15:41:25 ade Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.267 2000/03/09 18:06:36 nsayer Exp $
 #
 
     SUBDIR += 221upgrade
@@ -91,6 +91,7 @@
     SUBDIR += pdmenu
     SUBDIR += pinfo
     SUBDIR += proxyper
+    SUBDIR += py-distutils
     SUBDIR += qclock
     SUBDIR += qhacc
     SUBDIR += quotes
