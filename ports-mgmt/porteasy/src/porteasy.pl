@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.16 2002/01/21 00:21:41 des Exp $
+#      $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.17 2002/01/24 10:11:43 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.6.3";
+my $VERSION	= "2.6.4";
 my $COPYRIGHT	= "Copyright (c) 2000 Dag-Erling Smørgrav. All rights reserved.";
 
 # Constants
@@ -479,7 +479,7 @@ sub find_master($) {
 	} elsif (/^\.?include \"([^\"]+)\/Makefile(?:[^\/\"]*)\"\s*$/) {
 	    $master = $1;
 	}
-	if (defined($master)) {
+	if (defined($master) && $master !~ m/WRKDIRPREFIX/) {
 	    $master =~ s/^\$\{.CURDIR\}//;
 	    $master = "/$port/$master";
 	    $master =~ s|/+|/|g;
@@ -904,7 +904,7 @@ sub build_port($) {
     my @makeargs;		# Arguments to make()
 
     if ($packages) {
-	push(@makeargs, "package", "DEPENDS_TARGET=package");
+	push(@makeargs, "package", "DEPENDS_TARGET=package clean", "-DNOCLEANDEPENDS");
     } else {
 	push(@makeargs, "install");
     }
