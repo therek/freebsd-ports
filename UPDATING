@@ -6,6 +6,22 @@ You should get into the habit of checking this file for changes each
 time you update your ports collection, before attempting any port
 upgrades.
 
+20041121:
+  AFFECTS: users of news/rawdog
+  AUTHOR: tim@bishnet.net
+
+  Rawdog 2.x changes the format of the state file used in 1.x. To
+  upgrade from 1.x to 2.x the rawdog author recommends the following:
+
+    cp -R ~/.rawdog ~/.rawdog-old
+    rm ~/.rawdog/state
+    rawdog -u
+    rawdog --upgrade ~/.rawdog-old ~/.rawdog
+    rawdog -w
+
+  Once you're happy with the new version:
+    rm -r ~/.rawdog-old
+
 20041118:
   AFFECTS: users of sysutils/portupgrade
   AUTHOR: lofi@freebsd.org
@@ -1143,4 +1159,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.103 2004/11/20 15:47:02 matusita Exp $
+$FreeBSD: ports/UPDATING,v 1.104 2004/11/21 03:57:35 pav Exp $
