@@ -2,7 +2,7 @@
 # Date created:                         Tue Jun 26 12:46:19 EDT 2001
 # Whom:                                 Michael Johnson <ahze@ahze.net>
 #
-# $FreeBSD: ports/devel/p5-Proc-ProcessTable/Makefile,v 1.1 2001/07/07 13:21:56 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Proc-ProcessTable
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Proc
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ahze@ahze.net
+MAINTAINER=	ahze@rgv.net
 
 PERL_CONFIGURE=	YES
 
