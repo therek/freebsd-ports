@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.580 2001/06/30 11:50:33 dinoex Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.581 2001/06/30 11:53:08 dinoex Exp $
 #
 
     SUBDIR += ElectricFence
@@ -293,6 +293,7 @@
     SUBDIR += p5-Class-Singleton
     SUBDIR += p5-Class-Tom
     SUBDIR += p5-Config-IniFiles
+    SUBDIR += p5-Config-Setting
     SUBDIR += p5-ConfigReader
     SUBDIR += p5-Curses
     SUBDIR += p5-Data-Compare
