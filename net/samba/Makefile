@@ -2,9 +2,9 @@
 # Date created:				11th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/net/samba/Makefile,v 1.61 2001/07/10 01:23:26 dwcjr Exp $
+# $FreeBSD: ports/net/samba/Makefile,v 1.62 2001/08/09 18:14:46 dwcjr Exp $
 #
-n
+
 PORTNAME=	samba
 PORTVERSION=	2.0.10
 CATEGORIES=	net
