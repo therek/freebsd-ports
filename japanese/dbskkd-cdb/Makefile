@@ -2,13 +2,13 @@
 # Date created:		17 Jun 1999
 # Whom:			Makoto Matsushita <matusita@jp.FreeBSD.ORG>
 #
-# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.4 2000/04/17 00:17:53 reg Exp $
+# $FreeBSD: ports/japanese/dbskkd-cdb/Makefile,v 1.5 2000/04/25 04:06:13 knu Exp $
 #
 
 PORTNAME=	dbskkd-cdb
 PORTVERSION=	1.01
 CATEGORIES=	japanese
-MASTER_SITES=	http://www.k2r.org/kenji/software/
+MASTER_SITES=	http://www.ne.jp/asahi/bdx/info/software/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${CDB_DISTNAME}${EXTRACT_SUFX}
 
