@@ -2,7 +2,7 @@
 # Date created:				19 Apr 2000
 # Whom:					will
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/xscorch/Makefile,v 1.1 2000/05/30 19:27:05 will Exp $
 #
 
 PORTNAME=	xscorch
@@ -29,5 +29,7 @@ CONFIGURE_ARGS+=--without-gnome
 .endif
 CONFIGURE_ENV+=GTK_CONFIG="${GTK_CONFIG}"
 USE_GMAKE=	yes
+
+MAN6=		xscorch.6
 
 .include <bsd.port.mk>
