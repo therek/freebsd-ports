@@ -2,12 +2,12 @@
 # Date created:		30 Jun 1999
 # Whom:			CHOI Junho <cjh@kr.freebsd.org>
 #
-# $FreeBSD: ports/korean/munhwafonts-cid/Makefile,v 1.4 2000/07/15 13:21:44 cjh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	munhwafonts-cid
 PORTVERSION=	1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	korean print
 MASTER_SITES=	ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/ \
 		ftp://ftp.ora.com/pub/examples/nutshell/cjkv/adobe/samples/
