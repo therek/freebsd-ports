@@ -1,8 +1,8 @@
 # New ports collection makefile for:	fxtv
 # Date created:		Thu Nov  4 19:54:04 EST 1999
-# Whom:			Randall Hopper <aa8vb@ipass.net>
+# Whom:			Randall Hopper <aa8vb@nc.rr.com>
 #
-# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.25 2000/04/13 06:28:28 obrien Exp $
+# $FreeBSD: ports/graphics/fxtv/Makefile,v 1.26 2000/04/15 08:27:56 roger Exp $
 #
 
 PORTNAME=	fxtv
@@ -11,7 +11,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	http://www.ipass.net/~dbhopper/aa8vb/fxtv/
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	aa8vb@ipass.net
+MAINTAINER=	aa8vb@nc.rr.com
 
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		Xaw3d.6:${PORTSDIR}/x11-toolkits/Xaw3d    \
