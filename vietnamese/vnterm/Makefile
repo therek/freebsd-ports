@@ -3,7 +3,7 @@
 # Date created:         Sat July 20, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.23 2000/10/08 10:23:06 asami Exp $
+# $FreeBSD: ports/vietnamese/vnterm/Makefile,v 1.24 2001/02/10 23:56:37 obrien Exp $
 #
 
 PORTNAME=	vnterm
@@ -35,7 +35,7 @@ post-patch:
 
 pre-build:
 	${LN} -f ${WRKSRC}/XTerm.ad ${WRKSRC}/VNTerm.ad
-	${LN} -f ${FILESDIR}/vnterm.1V ${WRKSRC}/vnterm.man
+	${CP} -p ${FILESDIR}/vnterm.1V ${WRKSRC}/vnterm.man
 
 post-install:
 	@${INSTALL_SCRIPT} ${WRKDIR}/VNterm.sh ${PREFIX}/bin/VNterm
