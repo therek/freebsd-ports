@@ -3,15 +3,14 @@
 # Date created:				7/06/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/smurflog/Makefile,v 1.9 1999/08/31 06:50:23 mharo Exp $
+# $FreeBSD: ports/security/smurflog/Makefile,v 1.10 1999/09/09 19:52:17 nectar Exp $
 #
 
 DISTNAME=	smurflog-2.1
 CATEGORIES=	net security
-MASTER_SITES=	ftp://ftp.uni-klu.ac.at/.disk2/mirrors/internet/bitchx/files/ \
-		ftp://ftp.bitchx.org/pub/misc/                          \
+MASTER_SITES=	ftp://ftp.bitchx.org/pub/misc/                          \
 		ftp://ftp.plur.net/pub/software/bitchx/files/           \
-		http://www.nectar.cc/distfiles/
+		http://www.nectar.com/distfiles/
 
 MAINTAINER=	nectar@FreeBSD.org
 
