@@ -3,7 +3,7 @@
 # Date created:        99/06/12
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/eterm-bg/Makefile,v 1.3 2000/02/13 18:54:34 taoka Exp $
+# $FreeBSD: ports/graphics/eterm-bg/Makefile,v 1.4 2000/02/21 15:22:01 taoka Exp $
 #
 
 DISTNAME=	Eterm-bg-0.9
@@ -16,7 +16,6 @@ MASTER_SITES=	ftp://ftp.enlightenment.org/pub/enlightenment/Eterm/ \
 
 MAINTAINER=	taoka@FreeBSD.org
 
-USE_BZIP2=	yes
 NO_WRKSUBDIR=	yes
 NO_BUILD=	yes
 USE_X_PREFIX=	yes
