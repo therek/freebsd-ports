@@ -1,7 +1,8 @@
-# $FreeBSD: ports/benchmarks/Makefile,v 1.15 2000/06/05 13:25:36 will Exp $
+# $FreeBSD: ports/benchmarks/Makefile,v 1.16 2000/06/06 13:38:50 sobomax Exp $
 #
 
     SUBDIR += bonnie
+    SUBDIR += bonnie++
     SUBDIR += bytebench
     SUBDIR += dbs
     SUBDIR += iozone
