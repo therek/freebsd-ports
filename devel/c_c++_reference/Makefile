@@ -2,20 +2,20 @@
 # Date created:        8 March 2000
 # Whom:                imura@FreeBSD.org
 #
-# $FreeBSD: ports/devel/c_c++_reference/Makefile,v 1.1 2000/03/07 16:34:28 imura Exp $
+# $FreeBSD: ports/devel/c_c++_reference/Makefile,v 1.2 2000/04/11 21:27:15 mharo Exp $
 #
 
-PORTNAME=	c_c++_reference${QTTYPE}
+PORTNAME=	c_c++_reference
 PORTVERSION=	1.08
 CATEGORIES=	devel
 MASTER_SITES=	ftp://129.187.206.68/pub/unix/ide/KDevelop/documentation/ \
 		ftp://gd.tuwien.ac.at/hci/KDevelop/documentation/ \
 		ftp://fara.cs.uni-potsdam.de/pub/kdevelop/documentation/
-DISTNAME=	c_c++_reference
+DISTNAME=	${PORTNAME}
 
 MAINTAINER=	imura@FreeBSD.org
 
-RUN_DEPENDS=	kdevelop:${PORTSDIR}/devel/kdevelop${QTTYPE}
+RUN_DEPENDS=	kdevelop:${PORTSDIR}/devel/kdevelop${PKGNAMESUFFIX}
 
 EXTRACT_ONLY=	# none
 NO_BUILD=	yes

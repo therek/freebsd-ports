@@ -2,18 +2,16 @@
 # Date created:		18 may 1999
 # Whom:			imura@cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-clocks/kdetoys11-i18n/Makefile,v 1.7 1999/09/17 12:47:51 imura Exp $
+# $FreeBSD: ports/x11-clocks/kdetoys11-i18n/Makefile,v 1.8 2000/04/10 00:32:39 cpiazza Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../audio/kdemultimedia11-i18n
-
+PORTNAME=	kdetoys
 CATEGORIES=	x11-clocks kde
 
-MAINTAINER=	imura@kde.gr.jp
+MAINTAINER=	imura@FreeBSD.org
 
 BUILD_DEPENDS=	convert:${PORTSDIR}/graphics/ImageMagick
-
-KDE_NAME=	kdetoys
 
 .include "${MASTERDIR}/Makefile"
 
