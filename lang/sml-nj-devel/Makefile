@@ -2,7 +2,7 @@
 # Date created:        7 July 1998
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/lang/sml-nj/Makefile,v 1.9 1999/08/25 06:35:27 obrien Exp $
+# $FreeBSD: ports/lang/sml-nj-devel/Makefile,v 1.10 2000/04/12 06:20:41 obrien Exp $
 #
 
 PORTNAME=	smlnj
@@ -31,6 +31,8 @@ DIST_SUBDIR=	sml-nj
 NO_WRKSUBDIR=	yes
 EXTRACT_ONLY=	110.9.1-config.tar.Z
 USE_GMAKE=	yes
+
+NO_LATEST_LINK=	yes
 
 SML_BASE=	${PREFIX}/lib/sml-nj
 SML_LIBDIR=	${SML_BASE}/lib
