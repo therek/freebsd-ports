@@ -2,7 +2,7 @@
 # Date created:				31 May 2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/audio/grip/Makefile,v 1.3 2000/10/05 06:35:54 reg Exp $
+# $FreeBSD: ports/audio/grip/Makefile,v 1.4 2000/10/23 19:51:17 jeh Exp $
 #
 
 PORTNAME=	grip
@@ -15,11 +15,11 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_GTK=	yes
-
 ALL_TARGET=	gripnopar gcd
-
 MAN1=		grip.1
 MLINKS=		grip.1 gcd.1
+MAKE_ENV+=	PTHREAD_CFLAGS="${PTHREAD_CFLAGS}" \
+		PTHREAD_LIBS="${PTHREAD_LIBS}"
 
 post-patch:
 	@${PERL} -pi -e "s|%%LOCALBASE%%|${LOCALBASE}|g" ${WRKSRC}/*.c
