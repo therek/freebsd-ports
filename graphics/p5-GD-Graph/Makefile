@@ -2,11 +2,11 @@
 # Date created:				21 February 2000
 # Whom:	      				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/graphics/p5-GD-Graph/Makefile,v 1.2 2000/04/14 10:46:54 asami Exp $
+# $FreeBSD: ports/graphics/p5-GD-Graph/Makefile,v 1.3 2000/04/23 12:24:29 vanilla Exp $
 #
 
 PORTNAME=	GD-Graph
-PORTVERSION=	1.30
+PORTVERSION=	1.33
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	GD
@@ -24,6 +24,7 @@ MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		GD::Graph.3 \
 		GD::Graph::Data.3 \
 		GD::Graph::Error.3 \
+		GD::Graph::FAQ.3 \
 		GD::Graph::colour.3
 
 do-configure:
