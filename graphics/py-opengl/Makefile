@@ -2,13 +2,14 @@
 # Date created:		Wed Aug 18 18:49:17 EDT 1999
 # Whom:			Randall Hopper <aa8vb@ipass.net>
 #
-# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.5 2000/04/17 00:17:49 reg Exp $
+# $FreeBSD: ports/graphics/py-opengl/Makefile,v 1.6 2000/04/30 00:39:01 kris Exp $
 #
 
 PORTNAME=	opengl
 PORTVERSION=	1.5.5
 CATEGORIES=	graphics python
-MASTER_SITES=	http://starship.python.net/crew/da/
+MASTER_SITES=	http://www.ipass.net/~dbhopper/aa8vb/TMP/ \
+		http://starship.python.net/crew/da/
 PKGNAMEPREFIX=	py-
 DISTNAME=	PyOpenGL-${PORTVERSION}
 
@@ -20,8 +21,6 @@ RUN_DEPENDS=	python:${PORTSDIR}/lang/python \
 		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy
 LIB_DEPENDS=	GL.14:${PORTSDIR}/graphics/Mesa3
 
-BROKEN=		"Does not compile"
-
 ALL_TARGET=	default
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
@@ -32,7 +31,7 @@ PLIST_SUB+=	OSMAJOR=${OSMAJOR}
 #
 # Support for Numeric is compiled in by default.
 #
-NUMPYDIR=	${LOCALBASE}/lib/python1.5/site-packages/numerical
+NUMPYDIR=	${LOCALBASE}/lib/python1.5/site-packages/Numeric
 
 #
 # The standard setup file
