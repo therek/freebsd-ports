@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.5 2002/08/14 18:39:46 knu Exp $
+# $FreeBSD: ports/security/cyrus-sasl/files/pwcheck.sh,v 1.6 2003/02/26 11:25:55 edwin Exp $
 #
 
 # PROVIDE: cyrus_pwcheck
@@ -61,8 +61,8 @@ else
 		fi
 	fi
 
-	if [ -f ${prefix}/etc/rc.conf.d/cyrus_pwcheck" ]; then
-		. ${prefix}/etc/rc.conf.d/cyrus_pwcheck}"
+	if [ -f "${prefix}/etc/rc.conf.d/cyrus_pwcheck" ]; then
+		. ${prefix}/etc/rc.conf.d/cyrus_pwcheck
 	fi
 
 	if [ -z "${cyrus_pwcheck_enable}" ] ; then
