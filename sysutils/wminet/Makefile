@@ -3,12 +3,12 @@
 # Date created:        23 May 1999
 # Whom:                Stephen Kiernan <sk-ports@vegamuse.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/wminet/Makefile,v 1.2 1999/08/31 02:00:22 peter Exp $
 #
 
 DISTNAME=	wminet-2.0.2
 CATEGORIES=	sysutils windowmaker
-MASTER_SITES=	ftp://ftp.mezaway.org/pub/DockApps/
+MASTER_SITES=	http://www.neotokyo.org/illusion/
 
 MAINTAINER=	sk-ports@vegamuse.org
 
