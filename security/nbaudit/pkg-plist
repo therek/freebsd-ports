@@ -1,3 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/security/nbaudit/pkg-plist,v 1.4 2000/11/22 00:23:39 obrien Exp $
 bin/nat
 bin/nbaudit
+bin/nbaudition.pl
