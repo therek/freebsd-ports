@@ -1,4 +1,4 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/irc/riece/pkg-plist,v 1.9 2004/10/31 13:46:22 hrs Exp $
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-000.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-200.el
@@ -105,6 +105,8 @@
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-version.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-xface.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-xface.elc
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-yank.el
+%%EMACS_VERSION_SITE_LISPDIR%%/riece/riece-yank.elc
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece.el
 %%EMACS_VERSION_SITE_LISPDIR%%/riece/riece.elc
 @dirrm %%EMACS_VERSION_SITE_LISPDIR%%/riece
