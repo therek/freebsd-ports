@@ -2,11 +2,11 @@
 # Date created:		16 December 2000
 # Whom:			Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/math/glpk/Makefile,v 1.5 2001/03/30 12:22:46 demon Exp $
+# $FreeBSD: ports/math/glpk/Makefile,v 1.6 2001/07/15 08:21:17 demon Exp $
 #
 
 PORTNAME=	glpk
-PORTVERSION=	2.2
+PORTVERSION=	3.0
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		http://people.freebsd.org/~demon/distfiles/
