@@ -1,4 +1,4 @@
-# $FreeBSD: ports/irc/Makefile,v 1.23 2001/03/31 03:48:30 will Exp $
+# $FreeBSD: ports/irc/Makefile,v 1.24 2001/04/10 09:19:48 knu Exp $
 #
 
     SUBDIR += bitchx
@@ -36,6 +36,7 @@
     SUBDIR += tircproxy
     SUBDIR += tkirc
     SUBDIR += trickyirc
+    SUBDIR += xaric
     SUBDIR += xchat
     SUBDIR += xchat-devel
     SUBDIR += yagirc
