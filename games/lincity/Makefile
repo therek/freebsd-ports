@@ -2,7 +2,7 @@
 # Date created:         13 Feb 1997
 # Whom:                 Julian Assange
 #
-# $FreeBSD: ports/games/lincity/Makefile,v 1.7 1999/09/28 02:22:32 steve Exp $
+# $FreeBSD: ports/games/lincity/Makefile,v 1.8 2000/04/14 12:26:01 asami Exp $
 #
 
 PORTNAME=       lincity
@@ -11,6 +11,8 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/unix/linux/games/
 
 MAINTAINER=	ports@FreeBSD.org
+
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
 USE_XLIB=	yes
 ALL_TARGET=	freebsd

@@ -2,7 +2,7 @@
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.13 2000/06/16 08:18:55 sobomax Exp $
+# $FreeBSD: ports/math/simpack/Makefile,v 1.14 2000/06/16 21:51:36 asami Exp $
 #
 
 PORTNAME=	simpack
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.cis.ufl.edu/pub/simdigest/tools/
 DISTFILES=	SimPack3.tar.Z
 
 MAINTAINER=	rssh@cki.ipri.kiev.ua
+
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes

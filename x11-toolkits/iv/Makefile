@@ -2,7 +2,7 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.25 2000/06/16 10:38:31 sobomax Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.26 2000/06/16 21:52:17 asami Exp $
 #
 
 PORTNAME=	iv
@@ -13,6 +13,8 @@ DISTNAME=	${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	tanimura@FreeBSD.org
+
+BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
 
 USE_XLIB=	yes
 INSTALLS_SHLIB=	yes
