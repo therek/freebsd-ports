@@ -3,14 +3,14 @@
 # Date created:		7 October 1999
 # Whom:			green
 #
-# $FreeBSD: ports/security/openssh/Makefile,v 1.18 1999/11/20 22:54:06 green Exp $
+# $FreeBSD: ports/security/openssh/Makefile,v 1.19 1999/11/21 16:42:39 green Exp $
 #
 
 DISTNAME=	src/usr.bin/ssh
 PKGNAME=	OpenSSH-1.2
 CATEGORIES=	security net
 # ${MASTER_SITES} is only for if CVS won't work, period.
-MASTER_SITES=	ftp://internat.FreeBSD.org/pub/Crypto/misc/
+MASTER_SITES=	ftp://internat.FreeBSD.org/pub/Crypto/OpenSSH/
 
 MAINTAINER=	green@FreeBSD.org
 
