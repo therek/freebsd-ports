@@ -3,7 +3,7 @@
 # Date created:		98/11/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.4 1999/09/27 13:42:04 taoka Exp $
+# $FreeBSD: ports/japanese/lookup-mule/Makefile,v 1.5 1999/09/29 07:32:29 taoka Exp $
 #
 
 DISTNAME=	lookup-1.0
@@ -57,7 +57,9 @@ do-install:
 	${RM} ${ELISPDIR}/lookup-compile.el
 	${SED} -e 's,@VERSION@,1.0,' -e 's,@pkgemacsdir@,${ELISPDIR},' \
 		${WRKSRC}/lisp/lookup-vars.el.in > ${ELISPDIR}/lookup-vars.el
+.if (${EMACS} != "xemacs")
 	install-info ${PORTINFODIR}/lookup.info ${PORTINFODIR}/dir
+.endif
 	${SED} -e 's,%%ELISPDIR%%,${ELISPDIR},' ${FILESDIR}/lookup-startup.el.tmpl > ${ELISPDIR}/../lookup-startup.el
 
 .if (${EMACS} == "xemacs")
