@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.255 2004/09/28 14:28:03 nectar Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.256 2004/09/28 14:31:41 nectar Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -2856,7 +2856,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <topic>Several vulnerabilities found in PHPNuke</topic>
     <affects>
       <package>
-	<name>PHPNuke</name>
+	<name>phpnuke</name>
 	<range><lt>7.3</lt></range>
       </package>
     </affects>
@@ -2880,6 +2880,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <dates>
       <discovery>2004-05-05</discovery>
       <entry>2004-07-03</entry>
+      <modified>2004-09-28</modified>
     </dates>
   </vuln>
 
