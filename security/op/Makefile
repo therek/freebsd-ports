@@ -2,7 +2,7 @@
 # Date created:         Monday 29 January 2001
 # Whom:                 Cyrille Lefevre <clefevre@citeweb.net>
 #
-# $FreeBSD: ports/security/op/Makefile,v 1.3 2001/06/09 12:59:34 roam Exp $
+# $FreeBSD: ports/security/op/Makefile,v 1.4 2001/08/21 15:29:13 brian Exp $
 #
 
 PORTNAME=	op
