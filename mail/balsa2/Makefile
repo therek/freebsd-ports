@@ -3,7 +3,7 @@
 # Date created:				02 December 1998
 # Whom:					Glenn Johnson <gljohns@bellsouth.net>
 #
-# $FreeBSD: ports/mail/balsa/Makefile,v 1.12 1999/12/04 23:26:11 cpiazza Exp $
+# $FreeBSD: ports/mail/balsa/Makefile,v 1.13 1999/12/25 01:34:52 steve Exp $
 #
 
 DISTNAME=	balsa-0.6.0
@@ -28,7 +28,8 @@ CONFIGURE_ENV=	CPPFLAGS='-I${LOCALBASE}/include' \
 		LIBS='-L${LOCALBASE}/lib'
 CONFIGURE_ARGS=	--localstatedir=${PREFIX}/share/gnome \
 		--datadir=${PREFIX}/share/gnome \
-		--with-gnome=${PREFIX}
+		--with-gnome=${PREFIX} \
+		--enable-system-install
 
 MAN1=		balsa.1
 
