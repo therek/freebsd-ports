@@ -3,7 +3,7 @@
 # Date created:		2 November 1997
 # Whom:			jseger@FreeBSD.org
 #
-# $FreeBSD: ports/lang/guile/Makefile,v 1.19 1999/12/01 05:21:28 jseger Exp $
+# $FreeBSD: ports/lang/guile/Makefile,v 1.20 2000/03/08 14:34:16 jseger Exp $
 #
 
 DISTNAME=	guile-1.3.4
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	guile
 MAINTAINER=	jseger@FreeBSD.org
 
 GNU_CONFIGURE=	YES
-CONFIGURE_ARGS=	--with-threads
+#CONFIGURE_ARGS=	--with-threads
 
 USE_LIBTOOL=	yes
 LIBTOOLFILES=	configure guile-readline/configure
