@@ -2,21 +2,22 @@
 # Date created:		14 February 2001
 # Whom:			MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/japanese/monafonts/Makefile,v 1.1 2001/02/21 17:11:52 takawata Exp $
+# $FreeBSD: ports/japanese/monafonts/Makefile,v 1.2 2001/03/31 01:31:41 jeh Exp $
 #
 
 PORTNAME=	monafonts
-PORTVERSION=	20010323
+PORTVERSION=	2.0
+PORTEPOCH=	1
 CATEGORIES=	japanese x11-fonts
-MASTER_SITES=	http://members.tripod.co.jp/s42335/mona/
-DISTNAME=	mona-${PORTVERSION}
+MASTER_SITES=	http://members.tripod.co.jp/s42335/mona/dist/
+EXTRACT_SUFX=	.tar.bz2.bin
 
 MAINTAINER=	nobutaka@nobutaka.com
 
 FONTSDIR=	lib/X11/fonts/local
+USE_BZIP2=	yes
 USE_X_PREFIX=	yes
-USE_GMAKE=	yes
-ALL_TARGET=	fonts
+ALL_TARGET=	bdf
 .include <bsd.port.pre.mk>
 
 .if ${XFREE86_VERSION} == 4
