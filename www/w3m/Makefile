@@ -3,7 +3,7 @@
 # Date Created:			7 Oct 1999
 # Whom:				MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/www/w3m/Makefile,v 1.1.1.1 1999/10/08 15:32:47 sada Exp $
+# $FreeBSD: ports/www/w3m/Makefile,v 1.2 1999/11/14 02:01:51 steve Exp $
 #
 
 DISTNAME=	w3m-${W3M_DIST_VER}
@@ -42,8 +42,8 @@ DOCS_JP=	${DOCS} HISTORY HISTORY.kokb README.keymap README.kokb \
 .endif
 
 .if defined(USE_SSL)
-BUILD_DEPENDS+=  ${LOCALBASE}/lib/libcrypto.a:${PORTSDIR}/security/openssl \
-		${LOCALBASE}/lib/libssl.a:${PORTSDIR}/security/openssl
+LIB_DEPENDS+=	crypto.1:${PORTSDIR}/security/openssl \
+		ssl.1:${PORTSDIR}/security/openssl
 
 SSL_CFLAGS=	-I${LOCALBASE}/include/openssl
 SSL_LIBS=	-lssl -lcrypto
