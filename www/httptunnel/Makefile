@@ -2,7 +2,7 @@
 # Date created:         March 20 2000
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/www/httptunnel/Makefile,v 1.1 2000/03/21 01:17:48 brian Exp $
+# $FreeBSD: ports/www/httptunnel/Makefile,v 1.2 2000/04/10 00:05:25 cpiazza Exp $
 #
 
 PORTNAME=	httptunnel
@@ -16,6 +16,9 @@ MAINTAINER=	brian@Awfulhak.org
 
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--quiet
+.if defined(ENABLE_DEBUG)
+CONFIGURE_ARGS+=--enable-debug
+.endif
 MAN1=		hts.1 htc.1
 
 post-install:
