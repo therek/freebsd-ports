@@ -2,14 +2,14 @@
 # Date created:		26 September 1999
 # Whom:			Dan Moschuk <dan@freebsd.org>
 #
-# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.4 2000/04/14 08:46:46 asami Exp $
+# $FreeBSD: ports/misc/sshbuddy/Makefile,v 1.5 2000/12/19 18:54:20 dan Exp $
 #
 
 PORTNAME=	sshbuddy
 PORTVERSION=	1.05
 CATEGORIES=	misc
-MASTER_SITES=	ftp://ftp.sundilla.net/pub/linux/apps/sshbuddy/beta1.05/
-DISTFILES=	${PORTNAME}${PORTVERSION}.tar
+MASTER_SITES=	http://topcu.linux.tucows.com/files/x11/network/
+DISTFILES=	${PORTNAME}${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	ports@freebsd.org
 
