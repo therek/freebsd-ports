@@ -2,7 +2,7 @@
 # Date created:				Sat Jul 15 14:27:16 SAST 2000
 # Whom:					markm@FreeBSD.org
 #
-# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.11 2001/04/10 15:33:52 lioux Exp $
+# $FreeBSD: ports/games/halflifeserver/Makefile,v 1.12 2001/04/10 15:49:55 lioux Exp $
 #
 
 PORTNAME=	hlds
@@ -19,6 +19,7 @@ DISTNAME=	hlds_l3106
 
 MAINTAINER=	pat@databits.net
 
+ONLY_FOR_ARCHS=	i386
 USE_LINUX_PREFIX=	yes
 NO_CDROM=	"Size; the data set is much too big"
 NO_BUILD=	yes

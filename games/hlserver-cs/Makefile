@@ -2,7 +2,7 @@
 # Date created:				Sat Mar 10 16:40:06 EST 2001
 # Whom:					pat@databits.net
 #
-# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.2 2001/03/24 20:30:46 lioux Exp $
+# $FreeBSD: ports/games/hlserver-cs/Makefile,v 1.3 2001/04/10 11:13:01 lioux Exp $
 #
 
 PORTNAME?=	cs
@@ -17,6 +17,7 @@ MAINTAINER?=	pat@databits.net
 
 RUN_DEPENDS=	${LINUXBASE}${HLDSDIR}${HL_PROGRAM}:${HALFLIFESERVER_PORT}
 
+ONLY_FOR_ARCHS=	i386
 USE_LINUX_PREFIX=	yes
 NO_CDROM=	"Size; the data set is much too big"
 NO_BUILD=	yes
