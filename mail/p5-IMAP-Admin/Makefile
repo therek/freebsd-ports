@@ -2,11 +2,11 @@
 # Date created:		Sun Sep 26 09:25:38 EEST 1999
 # Whom:	      		Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.6 2000/04/23 12:24:33 vanilla Exp $
+# $FreeBSD: ports/mail/p5-IMAP-Admin/Makefile,v 1.7 2000/07/07 19:25:15 steve Exp $
 #
 
 PORTNAME=	IMAP-Admin
-PORTVERSION=	1.2.5
+PORTVERSION=	1.3.7
 CATEGORIES=	mail perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	IMAP
