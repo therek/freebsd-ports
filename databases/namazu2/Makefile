@@ -2,12 +2,12 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.20 2001/09/12 10:54:22 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	namazu
 PORTVERSION=	2.0.7
-CATEGORIES=	japanese textproc databases
+CATEGORIES=	japanese databases www textproc
 MASTER_SITES=	http://www.namazu.org/stable/
 PKGNAMESUFFIX=	2
 
