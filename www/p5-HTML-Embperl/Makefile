@@ -2,7 +2,7 @@
 # Date created:				March 13, 2000
 # Whom:	      				Frank Mayhar <frank@exit.com>
 #
-# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.1.1.1 2000/03/19 05:47:29 vanilla Exp $
+# $FreeBSD: ports/www/p5-HTML-Embperl/Makefile,v 1.2 2000/04/10 00:06:27 cpiazza Exp $
 #
 
 PORTNAME=	p5-HTML-Embperl
@@ -10,7 +10,7 @@ PORTVERSION= 	1.3b2
 CATEGORIES=	www perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	HTML
-DISTNAME=	p5-HTML-Embperl-1.3b2
+DISTNAME=	HTML-Embperl-1.3b2
 
 MAINTAINER=	ports@FreeBSD.org
 
