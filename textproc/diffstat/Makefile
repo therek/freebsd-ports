@@ -2,7 +2,7 @@
 # Date created:		Oct 23, 1999
 # Whom:			Trevor Johnson <trevor@jpj.net>
 #
-# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.5 2000/10/02 05:39:33 trevor Exp $
+# $FreeBSD: ports/textproc/diffstat/Makefile,v 1.6 2001/02/05 16:34:32 olgeni Exp $
 #
 
 PORTNAME=	diffstat
@@ -18,8 +18,5 @@ MAKEFILE=	makefile
 GNU_CONFIGURE=	yes
 
 MAN1=		diffstat.1
-
-post-install:
-	strip -s ${PREFIX}/bin/diffstat
 
 .include <bsd.port.mk>
