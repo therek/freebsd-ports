@@ -2,11 +2,11 @@
 # Date created:		11-Mar-2001
 # Whom:			Yar Tikhiy <yar@comp.chem.msu.su>
 #
-# $FreeBSD: ports/audio/p5-CDDB/Makefile,v 1.1 2001/03/14 23:02:26 vanilla Exp $
+# $FreeBSD: ports/audio/p5-CDDB/Makefile,v 1.2 2001/04/20 14:23:39 olgeni Exp $
 #
 
 PORTNAME=	CDDB
-PORTVERSION=	1.04
+PORTVERSION=	1.05
 CATEGORIES=	audio perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=../by-authors/id/R/RC/RCAPUTO
