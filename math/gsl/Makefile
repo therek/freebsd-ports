@@ -2,11 +2,11 @@
 # Date created:				15 Feb 2000
 # Whom:					Andrew L. Neporada <andrew@chg.ru>
 #
-# $FreeBSD: ports/math/gsl/Makefile,v 1.10 2001/07/06 07:19:50 demon Exp $
+# $FreeBSD: ports/math/gsl/Makefile,v 1.11 2001/08/03 19:23:05 ijliao Exp $
 #
 
 PORTNAME=	gsl
-PORTVERSION=	0.9
+PORTVERSION=	0.9.2
 CATEGORIES=	math
 MASTER_SITES=	${MASTER_SITE_SOURCEWARE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -20,10 +20,11 @@ MAINTAINER=	ports@FreeBSD.org
 GNU_CONFIGURE=	yes
 INSTALLS_SHLIB=	yes
 
-MAN1=		gsl-config.1
+MAN1=		gsl-config.1 gsl-randist.1 gsl-histogram.1
 MAN3=		gsl.3
 
 GSLREF=		gsl-ref.ps.gz
+IGNOREFILES=	${GSLREF}
 
 post-install:
 .if !defined(NOPORTDOCS)
