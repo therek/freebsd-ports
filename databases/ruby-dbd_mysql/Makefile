@@ -2,7 +2,7 @@
 # Date created:		3 June 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/ruby-dbd_mysql/Makefile,v 1.1 2001/06/02 16:58:41 knu Exp $
 #
 
 PORTNAME=	dbd_mysql
@@ -29,8 +29,8 @@ EXAMPLES_EN=	../../examples/test1.rb
 DOCS_EN=	doc/*
 
 do-install:
-.if !defined(NOPORTDOCS)
 	${INSTALL_DATA} ${WRKSRC}/*.rb ${RUBY_SITELIBDIR}/dbi/
+.if !defined(NOPORTDOCS)
 	${MKDIR} ${RUBY_EXAMPLESDIR}/dbi/${PORTNAME}
 .for f in ${EXAMPLES_EN}
 	${INSTALL_DATA} ${WRKSRC}/${f} ${RUBY_EXAMPLESDIR}/dbi/${PORTNAME}/
