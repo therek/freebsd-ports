@@ -2,16 +2,17 @@
 # Date created:		24 February 1998
 # Whom:			msmith
 #
-# $FreeBSD: ports/net/vnc/Makefile,v 1.19 2000/06/27 14:03:18 alex Exp $
+# $FreeBSD: ports/net/vnc/Makefile,v 1.20 2000/08/23 20:07:00 bmah Exp $
 #
 
 PORTNAME=		vnc
-PORTVERSION=		3.3.3.1
+PORTVERSION=		3.3.3.2
 CATEGORIES=		net
-MASTER_SITES=   	http://www.uk.research.att.com/vnc/dist/
-DISTFILES=		vnc-3.3.3r1_unixsrc.tgz \
+MASTER_SITES=   	http://www.uk.research.att.com/vnc/dist/ \
+			ftp://ftp.uk.research.att.com/pub/vnc/dist/
+DISTFILES=		vnc-3.3.3r2_unixsrc.tgz \
 			vnc-latest_doc.tgz
-EXTRACT_ONLY=		vnc-3.3.3r1_unixsrc.tgz
+EXTRACT_ONLY=		vnc-3.3.3r2_unixsrc.tgz
 
 MAINTAINER=	 	bmah@freebsd.org
 
@@ -28,6 +29,7 @@ post-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/Xvnc/programs/Xserver/Xvnc ${PREFIX}/bin/Xvnc
 	${INSTALL_PROGRAM} ${WRKSRC}/vncviewer/vncviewer ${PREFIX}/bin/vncviewer
 	${INSTALL_PROGRAM} ${WRKSRC}/vncpasswd/vncpasswd ${PREFIX}/bin/vncpasswd
+	${INSTALL_PROGRAM} ${WRKSRC}/vncconnect/vncconnect ${PREFIX}/bin/vncconnect
 	${SED}  -e s%/usr/local/vnc/classes%${PREFIX}/share/vnc/classes% \
 		-e s%^\#!/usr/bin/perl%\#!${PERL}% \
 		< ${WRKSRC}/vncserver \
