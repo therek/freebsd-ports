@@ -2,7 +2,7 @@
 # Date created:        21 December 1999
 # Whom:                saper@system.pl
 #
-# $FreeBSD: ports/graphics/dia/Makefile,v 1.14 2001/05/21 02:35:26 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dia
@@ -11,7 +11,7 @@ CATEGORIES+=	graphics gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/dia
 
-MAINTAINER=	gnome@FreeBSD.org
+MAINTAINER?=	gnome@FreeBSD.org
 
 LIB_DEPENDS=	popt.0:${PORTSDIR}/devel/popt
 
