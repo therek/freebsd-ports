@@ -1,7 +1,8 @@
-@comment $FreeBSD: ports/lang/gcc295/pkg-plist,v 1.33 2002/12/31 23:00:02 arved Exp $
+@comment $FreeBSD: ports/lang/gcc295/pkg-plist,v 1.34 2004/03/15 21:48:02 trevor Exp $
 bin/g++295
 bin/g++filt295
 bin/gcc295
+bin/gcov
 bin/%%GNU_HOST%%-gcc
 bin/protoize295
 bin/unprotoize295
