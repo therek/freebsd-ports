@@ -2,19 +2,22 @@
 # Date created:		27 Jun 1999
 # Whom:			SADA Kenji <sada@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.19 2000/07/18 20:56:08 knu Exp $
+# $FreeBSD: ports/devel/cvsweb/Makefile,v 1.20 2000/07/18 23:47:01 knu Exp $
 #
 
 PORTNAME=	cvsweb
-PORTVERSION=	1.90
+PORTVERSION=	${REV_ZELLER}.${REV_KNU}
 CATEGORIES=	devel www
-MASTER_SITES=	http://stud.fh-heilbronn.de/~zeller/download/ \
-		${MASTER_SITE_LOCAL}
+MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	knu
 
 MAINTAINER=	knu@FreeBSD.org
 
 NO_BUILD=	yes
+
+# This version of cvsweb is Zeller's version + knu's enhancements.
+REV_ZELLER=	1.93
+REV_KNU=	1.9
 
 # Specify where your repository belongs.
 # (You can reconfigure it after installation anyway)
@@ -35,9 +38,9 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 
 do-configure:
 	cd ${WRKSRC} && ${PERL} -i -pe "\
-		s;!!PREFIX!!;${PREFIX};g; \
-		s;!!CVSROOT!!;${CVSROOT};g; \
-		s;!!TITLE!!;${TITLE};g; \
+		s;/usr/local;${PREFIX};g; \
+		s;/home/cvs;${CVSROOT};g; \
+		s;'Local Repository';'${TITLE}';g; \
 		" cvsweb.cgi cvsweb.conf
 
 do-install:
@@ -48,7 +51,7 @@ do-install:
 	cd ${WRKSRC}/icons && ${INSTALL_DATA} * ${PREFIX}/${ICONSDIR}/cvsweb/
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/cvsweb
-	cd ${WRKSRC} && ${INSTALL_DATA} INSTALL README TODO ${PREFIX}/share/doc/cvsweb/
+	cd ${WRKSRC} && ${INSTALL_DATA} INSTALL README README.knu TODO ${PREFIX}/share/doc/cvsweb/
 .endif
 
 post-install:
