@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/mozilla-devel/pkg-install.in,v 1.1 2004/07/06 23:11:56 adamw Exp $
 #
 # Date created:			Mon Nov 29, 2003
 # Whom:				Thierry Thomas (<thierry@pompo.net>)
@@ -25,5 +25,9 @@ rm -f ${MOZDIR}/component.reg
 cd ${MOZDIR} || exit 1
 ./run-mozilla.sh ${REGXPCOM} || true
 ./run-mozilla.sh ${REGCHROME} || true
+
+if [ ! -d %%PREFIX%%/lib/browser_plugins ]; then
+    mkdir -p %%PREFIX%%/lib/browser_plugins
+fi
 
 exit 0
