@@ -2,7 +2,7 @@
 # Date created:		1 May 1998
 # Whom:			Brett Taylor
 #
-# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.41 2000/11/14 19:36:26 demon Exp $
+# $FreeBSD: ports/x11-wm/afterstep-stable/Makefile,v 1.42 2000/12/31 14:07:01 demon Exp $
 #
 
 PORTNAME=	afterstep
@@ -46,7 +46,7 @@ MAN1=	Animate.1x Audio.1x Banner.1x Cascade.1x Clean.1x Form.1x Gnome.1x \
 	WinList.1x Zharf.1x afterstep.1x asetroot.1x
 
 post-install:
-	${INSTALL_DATA} ${FILESDIR}/monitor_bsd.xpm ${PREFIX}/share/afterstep/desktop/icons/common/
+	@${INSTALL_DATA} ${FILESDIR}/monitor_bsd.xpm ${PREFIX}/share/afterstep/desktop/icons/common/
 .if defined(WITH_DIFFERENT_LOOKNFEELS)
 	@${ECHO_MSG} ""
 	@${ECHO_MSG} "===>  The WinList module is broken with different-looknfeels.  Don't use it."
