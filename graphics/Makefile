@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.185 2000/02/24 17:20:33 ade Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.186 2000/02/25 09:39:13 reg Exp $
 #
 
     SUBDIR += 4va
@@ -72,6 +72,7 @@
     SUBDIR += hppsmtools
     SUBDIR += hpscan
     SUBDIR += icod
+    SUBDIR += imanager
     SUBDIR += imlib
     SUBDIR += jbigkit
     SUBDIR += jgraph
