@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.308 2001/03/03 08:58:04 knu Exp $
+# $FreeBSD: ports/www/Makefile,v 1.309 2001/03/04 05:07:21 kris Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -240,6 +240,7 @@
     SUBDIR += wwwcount
     SUBDIR += wwwoffle
     SUBDIR += wwwstat
+    SUBDIR += wyvern
     SUBDIR += xitami
     SUBDIR += xswallow
     SUBDIR += znavigator
