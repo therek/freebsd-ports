@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2004 Roman Bogorodskiy <bogorodskiy@inbox.ru>
  *
- * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.2 2004/07/31 09:46:36 sem Exp $
+ * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.3 2004/08/06 18:00:53 glewis Exp $
  */
 
 #include "torsmo.h"
@@ -11,13 +11,13 @@
 #include <stdlib.h>
 #include <string.h>
 #include <kvm.h>
-#include <sys/dkstat.h>
 #include <sys/param.h>
 #include <sys/types.h>
 #include <sys/time.h>
 #include <sys/resource.h>
 #include <sys/sysctl.h>
 #include <sys/vmmeter.h>
+#include <sys/dkstat.h>
 #include <unistd.h>
 #include <sys/user.h>
 #include <sys/socket.h>
@@ -25,8 +25,6 @@
 #include <net/if_mib.h>
 #include <sys/socket.h>
 #include <ifaddrs.h>
-
-void net_init();
 
 #define GETSYSCTL(name, var) getsysctl(name, &(var), sizeof(var))
 #define KELVTOC(x)      ((x - 2732) / 10.0)
