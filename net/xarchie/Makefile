@@ -2,7 +2,7 @@
 # Date created:		24 September 1994
 # Whom:			jkh
 #
-# $FreeBSD: ports/net/xarchie/Makefile,v 1.15 1999/08/30 14:24:32 peter Exp $
+# $FreeBSD: ports/net/xarchie/Makefile,v 1.16 2000/04/09 18:13:58 cpiazza Exp $
 #
 
 PORTNAME=	xarchie
@@ -15,5 +15,6 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_IMAKE=	yes
 USE_GMAKE=	yes
+MAN1=		xarchie.1
 
 .include <bsd.port.mk>
