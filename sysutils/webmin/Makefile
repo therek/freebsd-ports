@@ -1,9 +1,9 @@
 # New ports collection makefile for:	webmin
-# Version required:	0.76
+# Version required:	0.77
 # Date created:		Do  19 Nov 1998 21:13:55 CET
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/webmin/Makefile,v 1.14 2000/01/08 13:50:03 andreas Exp $
 #
 
 DISTNAME=	webmin-${VERSION}
@@ -12,7 +12,7 @@ MASTER_SITES=	http://www.webmin.com/webmin/download/
 
 MAINTAINER=	andreas@FreeBSD.org
 
-VERSION=	0.76
+VERSION=	0.77
 NO_BUILD=	yes
 IS_INTERACTIVE=	yes
 USE_PERL5=	yes
