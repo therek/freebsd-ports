@@ -2,7 +2,7 @@
 # Date created:		7 Dec 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/xyaku/Makefile,v 1.1 2000/12/06 22:10:07 knu Exp $
+# $FreeBSD: ports/japanese/xyaku/Makefile,v 1.2 2000/12/06 22:53:32 knu Exp $
 #
 
 PORTNAME=	xyaku
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	http://www.ainet.or.jp/~inoue/software/xyaku/
 
-MAINTAINER=	knu@idaemons.org
+MAINTAINER=	knu@FreeBSD.org
 
 RUN_DEPENDS=	${EDICT_FILE}:${PORTSDIR}/japanese/edict \
 		${RUBY_SITEARCHLIBDIR}/eb.so:${PORTSDIR}/japanese/ruby-eb
