@@ -2,16 +2,15 @@
 # Date created:		12 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/archivers/ruby-zlib/Makefile,v 1.9 2001/05/06 14:23:53 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	zlib
-PORTVERSION=	0.4.0
-PORTREVISION=	1
+PORTVERSION=	0.5.0.p3
 CATEGORIES=	archivers ruby
 MASTER_SITES=	http://www.blue.sky.or.jp/atelier/ruby/
 PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
-DISTNAME=	ruby-${PORTNAME}-${PORTVERSION}
+DISTNAME=	ruby-${PORTNAME}-${PORTVERSION:S/.p/-pre/}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
@@ -21,14 +20,8 @@ USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
-DOCS_EN=	ChangeLog zlib.en.html
-DOCS_JA=	zlib.ja.html
-
-post-patch:
-	${RUBY} -i -p \
-		-e 'gsub /\bNORETURN\b/, ""' \
-		-e 'gsub /\bstr2cstr\b/, "rb_str2cstr"' \
-		 ${WRKSRC}/zlib.c
+DOCS_EN=	ChangeLog zlib.rd.en zlib.en.html
+DOCS_JA=	zlib.rd.ja zlib.ja.html
 
 post-install:
 .if !defined(NOPORTDOCS)
