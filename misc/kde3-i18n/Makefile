@@ -2,7 +2,7 @@
 # Date created:				1 March 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/misc/kde2-i18n/Makefile,v 1.5 2001/04/09 21:04:10 demon Exp $
+# $FreeBSD: ports/misc/kde2-i18n/Makefile,v 1.6 2001/08/16 15:00:00 demon Exp $
 #
 
 PORTNAME=	kde-i18n
@@ -25,6 +25,6 @@ PLIST=		${WRKDIR}/PLIST
 SCRIPTS_ENV+=	PLIST=${PLIST}
 
 pre-configure:
-#	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/Configure
+	@${SETENV} ${SCRIPTS_ENV} ${SH} ${SCRIPTDIR}/Configure
 
 .include <bsd.port.mk>
