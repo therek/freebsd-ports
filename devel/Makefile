@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.228 1999/10/27 09:17:36 asami Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.229 1999/11/01 04:04:08 steve Exp $
 #
 
     SUBDIR += ElectricFence
@@ -46,6 +46,7 @@
     SUBDIR += fastcrc
     SUBDIR += flick
     SUBDIR += fpp
+    SUBDIR += freelibiberty
     SUBDIR += ftnchek
     SUBDIR += gaa
     SUBDIR += gcc11
