@@ -9,7 +9,7 @@
 #	gsed 's/^\(.*\)mod\(.*\)\.so/%%\MOD\U\2%%\L\1mod\2\.so/' pkg-plist > tmp
 #	mv tmp pkg-plist
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/apache21/Makefile.modules,v 1.3 2004/12/11 18:06:04 clement Exp $
 #
 
 # MPM section:
@@ -24,19 +24,22 @@ WITH_THREADS=		yes
 WITH_THREADS_MODULES=	yes
 WITHOUT_MODULES+=	cgi
 .      if ${WITH_MPM:L} == "worker"
-PLIST_SUB+=	PREFORK="@comment " WORKER="" THREADPOOL="@comment "
+PLIST_SUB+=	PREFORK="@comment " WORKER="" THREADPOOL="@comment " EVENT="@comment "
 .      elif  ${WITH_MPM:L} == "perchild"
-PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment "
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT="@comment "
 .      elif  ${WITH_MPM:L} == "threadpool"
-PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL=""
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="" EVENT="@comment "
+.      elif  ${WITH_MPM:L} == "event"
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT=""
+EXTRA_PATCHES+=	${FILESDIR}/exp-event-mpm-apr-backport.patch
 .      else
 IGNORE=		"Unknown MPM: ${WITH_MPM}"
 .      endif
 .   else
-PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment "
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT="@comment "
 .   endif
 .else
-PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment "
+PLIST_SUB+=	PREFORK="@comment " WORKER="@comment " THREADPOOL="@comment " EVENT="@comment "
 .endif
 
 # xDBM section
