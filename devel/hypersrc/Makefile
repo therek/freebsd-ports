@@ -3,11 +3,11 @@
 # Date created:			Apr 9, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/hypersrc/Makefile,v 1.2 2001/06/04 04:32:05 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hypersrc
-PORTVERSION=	4.4.15
+PORTVERSION=	4.4.21
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp.jimbrooks.org/hypersrc/%SUBDIR%/
 MASTER_SITE_SUBDIR=	latest old
