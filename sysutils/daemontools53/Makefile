@@ -2,17 +2,18 @@
 # Date created:		09 June 1998
 # Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
 #
-# $FreeBSD: ports/sysutils/daemontools/Makefile,v 1.4 2000/04/22 10:11:59 mharo Exp $
+# $FreeBSD: ports/sysutils/daemontools53/Makefile,v 1.1.1.1 2000/04/27 21:25:35 nbm Exp $
 #
 
 PORTNAME=	daemontools
 PORTVERSION=	0.53
 CATEGORIES=	sysutils
-MASTER_SITES=	ftp://koobera.math.uic.edu/www/software/
+MASTER_SITES=	http://cr.yp.to/daemontools/ \
+		ftp://cr.yp.to/daemontools/
 
 MAINTAINER=	dom@myrddin.demon.co.uk
 
-NO_PACKAGE=	Unsure of djb's license
+NO_PACKAGE=	Unsure of djb\'s license
 
 ALL_TARGET=	it man
 INSTALL_TARGET=	setup
