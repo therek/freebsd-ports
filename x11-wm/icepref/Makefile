@@ -2,7 +2,7 @@
 # Date created:		06 June 2000
 # Whom:				Michael Urban <murban@tznet.com>
 #
-# $FreeBSD: ports/x11-wm/icepref/Makefile,v 1.2 2000/10/09 20:49:15 asami Exp $
+# $FreeBSD: ports/x11-wm/icepref/Makefile,v 1.3 2000/11/14 00:09:12 asami Exp $
 #
 
 PORTNAME=	icepref
@@ -13,11 +13,11 @@ MASTER_SITES=	http://209.132.18.205/downloads/portfiles/
 MAINTAINER=	murban@tznet.com
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
-RUN_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	${LOCALBASE}/lib/python2.0/site-packages/GTK.py:${PORTSDIR}/x11-toolkits/py-gtk
+RUN_DEPENDS=	${PYTHON_SITELIBDIR}/GTK.py:${PORTSDIR}/x11-toolkits/py-gtk
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_X_PREFIX=	yes
+USE_PYTHON=	yes
 NO_BUILD=	yes
 MAN1=		icepref.1
 FETCH_BEFORE_ARGS=	-b
