@@ -2,7 +2,7 @@
 # Date created:		21 February 2001
 # Whom:			ernst@jollem.com
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/jakarta-ant/Makefile,v 1.1 2001/04/03 03:19:50 okazaki Exp $
 #
 
 PORTNAME=	jakarta-ant
@@ -17,7 +17,7 @@ EXTRACT_ONLY=	${DISTNAME}-bin${EXTRACT_SUFX}
 MAINTAINER=	ernst@jollem.com
 
 RUN_DEPENDS=	${JAVAVM}:${PORTSDIR}/java/javavmwrapper \
-		${LOCALBASE}/share/java/classes/jaxp.jar:${PORTSDIR}/textproc/crimson
+		${LOCALBASE}/share/java/classes/crimson.jar:${PORTSDIR}/textproc/crimson
 
 JAVAVM?=	${LOCALBASE}/bin/javavm
 FIND?=		/usr/bin/find
