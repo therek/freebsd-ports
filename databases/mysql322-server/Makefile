@@ -2,7 +2,7 @@
 # Date created:				26 Jan 1998
 # Whom:					Josh Tiefenbach <josh@ican.net>
 #
-# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.86 2000/12/04 15:13:35 dirk Exp $
+# $FreeBSD: ports/databases/mysql322-server/Makefile,v 1.87 2001/01/01 10:14:58 will Exp $
 #
 
 PORTNAME?=	${MASTERPORTNAME}
@@ -25,7 +25,8 @@ CONFIGURE_ARGS=	--localstatedir=${DB_DIR} \
 		--without-perl \
 		--without-debug \
 		--without-readline \
-		--without-bench
+		--without-bench \
+		--with-low-memory
 .if ${MACHINE_ARCH} == "i386"
 CONFIGURE_ARGS+=--enable-assembler
 .endif
