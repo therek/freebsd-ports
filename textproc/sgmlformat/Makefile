@@ -2,7 +2,7 @@
 # Date created:		July 16, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.17 2000/10/08 10:23:04 asami Exp $
+# $FreeBSD: ports/textproc/sgmlformat/Makefile,v 1.18 2000/10/16 21:33:01 jim Exp $
 #
 
 PORTNAME=	sgmlformat
@@ -10,7 +10,7 @@ PORTVERSION= 	1.7
 CATEGORIES=	textproc print
 MASTER_SITES=	http://fallout.campusview.indiana.edu/ports/distfiles/
 
-MAINTAINER=	jfieber@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # There are two ports that satisfy the nsgmls requirement.
 # Jade is preferred, but it currently doesn't compile on 2.1.x

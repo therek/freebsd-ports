@@ -2,7 +2,7 @@
 # Date created:		June 19, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/textproc/jade/Makefile,v 1.26 2000/07/24 20:34:13 obrien Exp $
+# $FreeBSD: ports/textproc/jade/Makefile,v 1.27 2000/08/21 10:07:26 sobomax Exp $
 #
 
 PORTNAME=	jade
@@ -14,7 +14,7 @@ PATCH_SITES=	http://ftp.debian.org/debian/dists/unstable/main/source/text/
 PATCHFILES=	jade_1.2.1-13.diff.gz
 PATCH_DIST_STRIP=	-p1
 
-MAINTAINER=	jfieber@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_GMAKE=	yes
 USE_LIBTOOL=	yes
