@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.347 2001/08/29 11:53:46 ijliao Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.348 2001/08/29 16:16:53 lioux Exp $
 #
 
     SUBDIR += 4va
@@ -250,6 +250,7 @@
     SUBDIR += spigot
     SUBDIR += splitmpg
     SUBDIR += stamp
+    SUBDIR += svg2swf
     SUBDIR += svgalib
     SUBDIR += synaesthesia
     SUBDIR += tcm
