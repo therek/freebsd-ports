@@ -2,7 +2,7 @@
 # Date created:				06/22/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/py-coro/Makefile,v 1.1 2000/07/07 13:27:22 sobomax Exp $
 #
 
 PORTNAME=		coro
@@ -47,7 +47,7 @@ do-install:
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/py-coro
 .for i in ${CORO_DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/share/doc/py-coro
+	${INSTALL_MAN} ${WRKSRC}/${i} ${PREFIX}/share/doc/py-coro
 .endfor
 .endif
 
