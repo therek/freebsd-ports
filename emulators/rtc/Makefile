@@ -2,11 +2,11 @@
 # Date created:		28 March 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/emulators/rtc/Makefile,v 1.9 2001/01/16 17:30:28 sobomax Exp $
+# $FreeBSD: ports/emulators/rtc/Makefile,v 1.10 2001/03/14 11:03:40 knu Exp $
 #
 
 PORTNAME=	rtc
-PORTVERSION=	2000.09.22
+PORTVERSION=	2001.09.16
 CATEGORIES=	emulators linux
 MASTER_SITES=	# none
 DISTFILES=	# none
@@ -46,17 +46,6 @@ do-extract:
 	@${SED}	-e 's,@@PREFIX@@,${PREFIX},' \
 		${FILESDIR}/${STARTUP} > ${WRKDIR}/${STARTUP}
 	@cd ${FILESDIR} && ${CP} Makefile *.[ch] ${WRKSRC}/
-
-post-patch:
-.if !exists(${SRC_BASE}/sys/compat/linux/linux_ioctl.h)
-	${PERL} -i -pe 's,compat(/linux/linux_ioctl\.h),i386$$1,' \
-		${WRKSRC}/rtc_linux.c
-.endif
-	@if ! grep -w dev2unit ${SRC_BASE}/sys/kern/kern_conf.c >/dev/null; \
-	then \
-		${ECHO} "dev2unit() not found in sys/kern/kern_conf.c.  Using lminor() instead."; \
-		${PERL} -i -pe 's,dev2unit,lminor,' ${WRKSRC}/rtc.c; \
-	fi
 
 pre-install:
 	${MKDIR} ${KMODDIR}
