@@ -2,13 +2,14 @@
 # Date created:		16 Sep 2000
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/yaz/Makefile,v 1.1 2000/10/24 02:18:59 jeh Exp $
 #
 
 PORTNAME=	yaz
 PORTVERSION=	1.6
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.indexdata.dk/pub/yaz/
+MASTER_SITES=	ftp://ftp.indexdata.dk/pub/yaz/ \
+		http://people.FreeBSD.org/~jeh/
 
 MAINTAINER=	dima@Chg.RU
 
