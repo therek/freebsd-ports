@@ -3,7 +3,7 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.7 1999/03/18 08:41:40 taoka Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.8 1999/09/10 21:16:45 peter Exp $
 #
 
 DISTNAME=	grace-5.0.3gamma
@@ -29,7 +29,8 @@ LIB_DEPENDS=	Xbae.7:${PORTSDIR}/x11-toolkits/xbae 	\
 		pdf.2:${PORTSDIR}/print/pdflib		\
 		tiff.4:${PORTSDIR}/graphics/tiff	\
 		jpeg.9:${PORTSDIR}/graphics/jpeg	\
-		png.3:${PORTSDIR}/graphics/png
+		png.3:${PORTSDIR}/graphics/png		\
+		t1.1:${PORTSDIR}/devel/t1lib
 
 MAN1=		grace.1 xmgrace.1 gracebat.1 grconvert.1
 
