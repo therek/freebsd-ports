@@ -3,13 +3,13 @@
 # Date created:         24 Feb 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/games/uox3/Makefile,v 1.7 1999/08/31 06:44:30 mharo Exp $
+# $FreeBSD: ports/games/uox3/Makefile,v 1.8 1999/09/11 01:00:29 dburr Exp $
 #
 
 DISTNAME=	uox3v6902-linux
 PKGNAME=	uox3-0.69.02
 CATEGORIES=	games
-MASTER_SITES=	ftp://ftp.Powered-By.AC/pub/uox3/
+MASTER_SITES=	ftp://ftp.borg-cube.com/pub/uox3/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} tqpsworld${EXTRACT_SUFX}
 
 MAINTAINER=	dburr@FreeBSD.org
