@@ -2,19 +2,18 @@
 # Date created:				18 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/battleball/Makefile,v 1.4 2000/03/29 09:02:03 will Exp $
+# $FreeBSD: ports/games/battleball/Makefile,v 1.5 2000/04/14 00:45:28 mharo Exp $
 #
 
 PORTNAME=	battleball
-PORTVERSION=	2.0
+PORTVERSION=	2.1
 CATEGORIES=	games
-MASTER_SITES=	http://www.cs.utexas.edu/users/pahardin/
+MASTER_SITES=	http://fundy.linux.tucows.com/files/x11/entertain/
 DISTNAME=	${PORTNAME}.${PORTVERSION:S/.//}.src
 
 MAINTAINER=	will@FreeBSD.org
 
-USE_IMAKE=	yes
-WRKSRC=		${WRKDIR}/bb-2.0
+WRKSRC=		${WRKDIR}/battleball-2.1-src
 
 do-install:
 	@ ${INSTALL_PROGRAM} ${WRKSRC}/battleball ${PREFIX}/bin
