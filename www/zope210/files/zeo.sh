@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD$
+# $FreeBSD: ports/www/zope/files/zeo.sh,v 1.1 2004/11/16 00:02:25 pav Exp $
 
 # PROVIDE: zeo
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-zeo_enable=${zeo_enable:-"NO"}        # Enable gkrellmd
+zeo_enable=${zeo_enable:-"NO"}        # Enable zeo server
 zeo_instances=${zeo_instances:-""}    # List of instancehome dirs
 
 . %%RC_SUBR%%

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Start or stop zope
-# $FreeBSD: ports/www/zope/files/zope.sh,v 1.3 2004/07/02 20:41:00 thierry Exp $
+# $FreeBSD: ports/www/zope/files/zope.sh,v 1.4 2004/11/16 00:02:25 pav Exp $
 
 # PROVIDE: zope
 # REQUIRE: DAEMON
@@ -17,7 +17,7 @@ prefix=%%PREFIX%%
 #
 # DO NOT CHANGE THESE DEFAULT VALUES HERE
 #
-zope_enable=${zope_enable:-"NO"}        # Enable gkrellmd
+zope_enable=${zope_enable:-"NO"}        # Enable zope
 zope_instances=${zope_instances:-""}    # List of instancehome dirs
 
 . %%RC_SUBR%%
