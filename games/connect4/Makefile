@@ -2,7 +2,7 @@
 # Date created:		Thu May  8 16:41:01 EST 1997
 # Whom:			Joel Sutton <jsutton@bbcon.com.au>
 #
-# $FreeBSD: ports/games/connect4/Makefile,v 1.5 2000/03/20 22:44:29 mharo Exp $
+# $FreeBSD: ports/games/connect4/Makefile,v 1.6 2000/04/14 00:45:41 mharo Exp $
 #
 
 PORTNAME=	connect4
@@ -27,9 +27,9 @@ MANDIR=		${PREFIX}/man/man
 LIBDIR=		${PREFIX}/lib
 
 do-install:
-		${INSTALL_PROGRAM} ${WRKSRC}/c4 ${PREFIX}/bin/connect4
+		${INSTALL_PROGRAM} -m 2755 -o root -g games ${WRKSRC}/c4 ${PREFIX}/bin/connect4
 		${MKDIR} ${LIBDIR}/connect4
-		${INSTALL_DATA} -m 666 /dev/null ${LIBDIR}/connect4/scores
+		${INSTALL_DATA} -m 664 -o root -g games /dev/null ${LIBDIR}/connect4/scores
 		${INSTALL_MAN} ${FILESDIR}/connect4.6 ${MANDIR}6/
 
 .include <bsd.port.mk>
