@@ -2,10 +2,10 @@
 # Date created:		03 March 2001
 # Whom:			Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/adzap/Makefile,v 1.12 2001/09/01 22:38:55 kris Exp $
+# $FreeBSD$
 
 PORTNAME=	adzap
-PORTVERSION=	20010921
+PORTVERSION=	20011013
 CATEGORIES=	www perl5
 MASTER_SITES=	http://www.zip.com.au/~cs/adzap/ \
 		${MASTER_SITE_LOCAL}
