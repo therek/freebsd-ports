@@ -3,7 +3,7 @@
 # Date created:         May 18, 1999
 # Whom:                 NAKAJI Hiroyuki
 #
-# $FreeBSD$
+# $FreeBSD: ports/math/gnuplot+/Makefile,v 1.3 1999/08/25 07:10:21 obrien Exp $
 #
 
 DISTNAME=	gnuplot37+-1.1.8
@@ -17,6 +17,8 @@ LIB_DEPENDS=    png.3:${PORTSDIR}/graphics/png \
 		VFlib2.24:${PORTSDIR}/japanese/vflib
 BUILD_DEPENDS=	${LOCALBASE}/lib/libgd.a:${PORTSDIR}/graphics/gd \
 		${LOCALBASE}/lib/libttf.a:${PORTSDIR}/print/freetype
+
+BROKEN=		gd upgrade
 
 EXTRACT_ONLY=	gnuplot-3.7.tar.gz
 
