@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.217 2001/09/16 17:04:57 kevlo Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.218 2001/09/21 05:56:37 knu Exp $
 #
 
     SUBDIR += LPRng
@@ -184,6 +184,7 @@
     SUBDIR += wmmount
     SUBDIR += wmpccard
     SUBDIR += wmtop
+    SUBDIR += wmzazof
     SUBDIR += xbatt
     SUBDIR += xbattbar
     SUBDIR += xcdroast
