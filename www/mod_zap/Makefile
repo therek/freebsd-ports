@@ -2,21 +2,20 @@
 # Date created:		20 Sep 2000
 # Whom:			Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/www/mod_zap/Makefile,v 1.6 2000/11/13 12:45:11 demon Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_zap
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	www
-MASTER_SITES=	http://ftp.indexdata.dk/pub/yaz/
+MASTER_SITES=	http://ftp.indexdata.dk/pub/zap/
 DISTNAME=	zap-${PORTVERSION}
 
 MAINTAINER=	demon@FreeBSD.org
 
-BUILD_DEPENDS=	${LOCALBASE}/bin/yaz-config:${PORTSDIR}/net/yaz \
-		${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
-RUN_DEPENDS=	${LOCALBASE}/bin/yaz-config:${PORTSDIR}/net/yaz \
-		${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+LIB_DEPENDS=	yaz.1:${PORTSDIR}/net/yaz
+RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-yazconfig=${LOCALBASE}/bin \
