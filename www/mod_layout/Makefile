@@ -2,11 +2,11 @@
 # Date created:		Dec 18 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_layout/Makefile,v 1.4 2001/08/03 04:04:48 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mod_layout
-PORTVERSION=	3.0
+PORTVERSION=	3.0.3
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tangent.org/pub/apache/ \
 		http://software.tangent.org/download/
