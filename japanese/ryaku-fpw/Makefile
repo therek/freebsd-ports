@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ryaku-fpw/Makefile,v 1.1 2000/12/06 15:20:35 taoka Exp $
 #
 
 PORTNAME=	ryaku-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/Ryaku/
 DISTNAME=	Ryaku-${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

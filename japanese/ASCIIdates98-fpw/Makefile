@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/ASCIIdates98-fpw/Makefile,v 1.1 2000/11/30 15:02:59 taoka Exp $
+# $FreeBSD: ports/japanese/ASCIIdates98-fpw/Makefile,v 1.2 2000/12/04 18:23:40 taoka Exp $
 #
 
 PORTNAME=	ASCIIdates98-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/ASCIIdates98/
 DISTNAME=	${PORTNAME:S/-fpw//}-${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

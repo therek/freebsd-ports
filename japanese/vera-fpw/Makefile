@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vera-fpw/Makefile,v 1.2 2000/06/29 15:13:02 taoka Exp $
+# $FreeBSD: ports/japanese/vera-fpw/Makefile,v 1.3 2000/11/02 18:58:11 taoka Exp $
 #
 
 PORTNAME=	vera-fpw
@@ -16,7 +16,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		vera-${VERA_VER}.tar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil

@@ -2,7 +2,7 @@
 # Date created:		23 November 1999
 # Whom:			Yoshiro MIHIRA <sanpei@sanpei.org>
 #
-# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.8 2000/09/12 13:03:52 asami Exp $
+# $FreeBSD: ports/japanese/kanji18/Makefile,v 1.9 2000/10/08 10:20:47 asami Exp $
 #
 
 PORTNAME=	kanji
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${DISTNAME}
 DISTNAME=	${PORTNAME}${PKGNAMESUFFIX}
 DISTFILES?=	573.z 574.z 575.z 576.z 577.z 578.z 579.z 580.z 581.z
 
-MAINTAINER=     sanpei@FreeBSD.org
+MAINTAINER=	sanpei@FreeBSD.org
 
 BUILD_DEPENDS=	gunshar:${PORTSDIR}/archivers/gshar+gunshar
 

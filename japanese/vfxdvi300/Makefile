@@ -2,7 +2,7 @@
 # Date created:		8 Nov 1996
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/vfxdvi300/Makefile,v 1.22 2000/04/14 18:40:20 knu Exp $
+# $FreeBSD: ports/japanese/vfxdvi300/Makefile,v 1.23 2001/01/04 04:15:46 mita Exp $
 #
 
 PORTNAME=	vfxdvi
@@ -29,13 +29,13 @@ RUN_DEPENDS=	${LOCALBASE}/lib/fonts/pk${RESOLUTION}:${PORTSDIR}/print/pkfonts${R
 
 NO_WRKSUBDIR=	yes
 USE_IMAKE=      yes
-XMKMF=          xmkmf
+XMKMF=	xmkmf
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAN1=		xdvi.1
 
 .if !defined(RESOLUTION)
-RESOLUTION=     300
+RESOLUTION=	300
 .else
 .if ${RESOLUTION} != 118 && ${RESOLUTION} != 240 && \
 	${RESOLUTION} != 300 && ${RESOLUTION} != 360 && \

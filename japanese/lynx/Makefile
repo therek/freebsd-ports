@@ -2,7 +2,7 @@
 # Date created:         10 August 1998
 # Whom:                 Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/lynx/Makefile,v 1.10 2000/04/11 14:14:54 knu Exp $
+# $FreeBSD: ports/japanese/lynx/Makefile,v 1.11 2000/07/13 09:38:56 shige Exp $
 #
 
 PORTNAME=	lynx
@@ -25,7 +25,7 @@ CONFIGURE_ARGS= --with-screen=ncurses --with-zlib \
 		--enable-nsl-fork --enable-defaults-colors --enable-prettysrc \
 		--enable-persistent-cookies --enable-gzip-help \
 		 --enable-cjk
-MAKEFILE=       makefile
+MAKEFILE=	makefile
 MAKE_ARGS=	DOCDIR=${PREFIX}/${L_DOCDIR} HELPDIR=${PREFIX}/${L_HELPDIR}
 PLIST_SUB=	DOCDIR=${L_DOCDIR} HELPDIR=${L_HELPDIR} \
 		HELPFILE_SUFFIX=${HELPFILE_SUFFIX}

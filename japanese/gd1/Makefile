@@ -2,7 +2,7 @@
 # Date created:				19 Aug 1998
 # Whom:					ichiro@ichiro.org
 #
-# $FreeBSD: ports/japanese/gd/Makefile,v 1.12 2000/06/17 05:33:53 knu Exp $
+# $FreeBSD: ports/japanese/gd/Makefile,v 1.13 2000/07/30 18:03:06 steve Exp $
 #
 
 PORTNAME=	gd
@@ -12,7 +12,7 @@ MASTER_SITES=   http://www.boutell.com/gd/http/ \
 		ftp://ftp.boutell.com/pub/boutell/gd/
 
 PATCH_SITES=    ftp://ftp.ipc.chiba-u.ac.jp/pub/pub.yamaga/gd/${PORTVERSION}/
-PATCHFILES=     ${DISTNAME}.ttf-kanji.patch.990731
+PATCHFILES=	${DISTNAME}.ttf-kanji.patch.990731
 
 MAINTAINER=	ichiro@ichiro.org
 

@@ -2,7 +2,7 @@
 # Date created:     20 July 1997
 # Whom:         Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/FreeWnn-lib/Makefile,v 1.33 2000/09/12 17:08:26 taoka Exp $
+# $FreeBSD: ports/japanese/FreeWnn-lib/Makefile,v 1.34 2000/11/16 15:36:15 asami Exp $
 #
 
 PORTNAME=	FreeWnn
@@ -13,9 +13,9 @@ MASTER_SITES=   ftp://ftp.freewnn.org/pub/FreeWnn/ \
 PKGNAMESUFFIX?=	-lib
 DISTNAME=	${PORTNAME}-${WMMVERSION}
 
-MAINTAINER=     taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
-WRKSRC=         ${WRKDIR}/${DISTNAME}/Xsi
+WRKSRC=	${WRKDIR}/${DISTNAME}/Xsi
 ALL_TARGET=	includes all
 INSTALL_TARGET=	install install.man
 GNU_CONFIGURE=  yes
@@ -36,7 +36,7 @@ CONFIGURE_ARGS=	--enable-libraries=no
 
 .if (${WNN} == Wnn)
 CONFIGURE_ARGS+= --enable-cWnn=no --enable-kWnn=no
-MANLANG=        ja
+MANLANG=	ja
 CONFIGURE_ARGS+= --mandir=${PREFIX}/man/ja
 .if (${PKGNAMESUFFIX} == -lib)
 MAN3= jl_bun_suu.3 jl_c_zenkouho.3 jl_close.3 jl_connect.3 jl_connect_lang.3 \

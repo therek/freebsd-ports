@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/CGdic-fpw/Makefile,v 1.1 2000/11/30 15:05:19 taoka Exp $
 #
 
 PORTNAME=	CGdic-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/CGdic1.5h/
 DISTNAME=	CGdic1.5h-${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

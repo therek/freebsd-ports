@@ -2,7 +2,7 @@
 # Date created:        	09 Sep 1999
 # Whom:			Kazumasa Nishizawa <kazumasa@selab.tutkie.tut.ac.jp>
 #
-# $FreeBSD: ports/japanese/sdic/Makefile,v 1.2 2000/01/25 13:27:58 taoka Exp $
+# $FreeBSD: ports/japanese/sdic/Makefile,v 1.3 2000/04/12 14:37:33 knu Exp $
 #
 
 PORTNAME=	sdic
@@ -10,7 +10,7 @@ PORTVERSION=	2.1.2
 CATEGORIES=	japanese elisp
 MASTER_SITES=	ftp://pine.kuee.kyoto-u.ac.jp/pub/tsuchiya/sdic/
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/share/dict/jedict.sdic:${PORTSDIR}/japanese/edict-sdic
 

@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/wwasw-fpw/Makefile,v 1.1 2000/11/30 15:11:59 taoka Exp $
 #
 
 PORTNAME=	wwasw-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/wwasw/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

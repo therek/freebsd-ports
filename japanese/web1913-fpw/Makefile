@@ -2,7 +2,7 @@
 # Date created:        	00/06/19
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/web1913-fpw/Makefile,v 1.2 2000/06/29 15:13:02 taoka Exp $
+# $FreeBSD: ports/japanese/web1913-fpw/Makefile,v 1.3 2000/11/02 18:58:11 taoka Exp $
 #
 
 PORTNAME=	web1913-fpw
@@ -15,7 +15,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		dict-web1913-${WEB_VER}-pre.tar.gz
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil

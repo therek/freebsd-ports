@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/eijiro-fpw/Makefile,v 1.1 2000/12/21 06:27:31 taoka Exp $
 #
 
 PORTNAME=	eijiro-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/eijiro/
 DISTNAME=	${PORTNAME}${PORTVERSION}-src
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/share/doc/freepwing/fpwutils.mk:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil \

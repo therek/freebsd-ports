@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/roget-fpw/Makefile,v 1.1 2000/11/30 15:10:37 taoka Exp $
 #
 
 PORTNAME=	roget-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/roget/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

@@ -2,7 +2,7 @@
 # Date created:        	00/06/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/srd-fpw/Makefile,v 1.4 2000/11/02 14:07:32 taoka Exp $
+# $FreeBSD: ports/japanese/srd-fpw/Makefile,v 1.5 2001/01/23 16:05:28 sf Exp $
 #
 
 PORTNAME=	srd-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/srd/
 DISTNAME=	srd-fpw${PORTVERSION}-src
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil \

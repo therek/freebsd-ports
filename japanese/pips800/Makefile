@@ -2,14 +2,14 @@
 # Date created:        00/04/18
 # Whom:                Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/pips800/Makefile,v 1.2 2000/12/14 14:46:14 taoka Exp $
+# $FreeBSD: ports/japanese/pips800/Makefile,v 1.3 2001/01/09 01:45:33 taoka Exp $
 #
 
 PORTNAME=	pips${PRTYPE}
 PORTVERSION?=	1.2
 CATEGORIES=	japanese print linux
 MASTER_SITES=	# empty
-DISTFILES=      # empty
+DISTFILES=	# empty
 
 MAINTAINER=	taoka@FreeBSD.org
 

@@ -2,7 +2,7 @@
 # Date created:        	00/02/09
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/lsd-fpw/Makefile,v 1.1 2000/11/30 15:09:15 taoka Exp $
 #
 
 PORTNAME=	lsd-fpw
@@ -11,7 +11,7 @@ CATEGORIES=	japanese
 MASTER_SITES=	http://openlab.ring.gr.jp/edict/fpw/dist/lsd/
 DISTNAME=	${PORTNAME}${PORTVERSION}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 USE_ZIP=	yes
 NO_BUILD=	yes

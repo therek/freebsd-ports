@@ -2,7 +2,7 @@
 # Date created:        	2000.07.12
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.5 2000/11/14 06:46:44 taoka Exp $
+# $FreeBSD: ports/japanese/wdic-fpw/Makefile,v 1.6 2000/11/30 14:25:28 taoka Exp $
 #
 
 PORTNAME=	wdic-fpw
@@ -15,7 +15,7 @@ DISTNAME=	${PORTNAME}${PORTVERSION}-src
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${DICTFILES}
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/share/doc/freepwing/fpwutils.mk:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil \

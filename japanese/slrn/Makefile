@@ -2,7 +2,7 @@
 # Date created:		6 Sept 1999
 # Whom:			Takashi Mega <mega@minz.org>
 #
-# $FreeBSD: ports/japanese/slrn/Makefile,v 1.13 2000/04/12 14:37:47 knu Exp $
+# $FreeBSD: ports/japanese/slrn/Makefile,v 1.14 2000/06/09 21:21:51 asami Exp $
 #
 
 PORTNAME=	slrn
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${PORTNAME}-doc-j0.9.5.6-0.tar.gz
 
 PATCH_SITES=	${MASTER_SITE_PORTS_JP}
-PATCHFILES= 	${PORTNAME}-${PORTVERSION}jp0.pat.gz
+PATCHFILES=	${PORTNAME}-${PORTVERSION}jp0.pat.gz
 PATCH_DIST_STRIP=-p1
 
 MAINTAINER=	ukatsuta@mud.biglobe.ne.jp

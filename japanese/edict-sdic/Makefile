@@ -2,7 +2,7 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-sdic/Makefile,v 1.3 2000/04/11 14:13:14 knu Exp $
+# $FreeBSD: ports/japanese/edict-sdic/Makefile,v 1.4 2000/08/24 13:36:19 taoka Exp $
 #
 
 PORTNAME=	edict-sdic
@@ -19,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		edict_doc.txt
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 ALL_TARGET=	jedict.sdic eedict.sdic
 GNU_CONFIGURE=	yes

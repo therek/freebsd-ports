@@ -2,12 +2,12 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-canna/Makefile,v 1.7 2000/09/08 04:34:19 taoka Exp $
+# $FreeBSD: ports/japanese/onew-canna/Makefile,v 1.8 2000/10/08 10:21:13 asami Exp $
 #
 
 CANNA=		yes
 
 MASTERDIR=	${.CURDIR}/../onew-freewnn
-PKGDIR=         ${.CURDIR}
+PKGDIR=		${.CURDIR}
 
 .include	"${MASTERDIR}/Makefile"

@@ -2,7 +2,7 @@
 # Date created:        	00/01/14
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.3 2000/08/24 13:42:09 taoka Exp $
+# $FreeBSD: ports/japanese/edict-fpw/Makefile,v 1.4 2000/11/30 14:24:31 taoka Exp $
 #
 
 PORTNAME=	edict-fpw
@@ -19,7 +19,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		edict_doc.txt
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
-MAINTAINER=    	taoka@FreeBSD.org
+MAINTAINER=	taoka@FreeBSD.org
 
 BUILD_DEPENDS=	fpwmake:${PORTSDIR}/japanese/freepwing \
 		catdump:${PORTSDIR}/japanese/epwutil \
