@@ -2,15 +2,15 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-freewnn/Makefile,v 1.10 2000/10/08 10:20:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kinput2
-PORTVERSION=	3.0
+PORTVERSION=	3.1.b2
 PKGNAMESUFFIX=	${INPUT_METHOD}
 CATEGORIES=	japanese x11
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/x11/kinput2/ 
-DISTNAME=	kinput2-v3
+DISTNAME=	kinput2-v3.1-beta2
 
 MAINTAINER=	taoka@FreeBSD.org
 
