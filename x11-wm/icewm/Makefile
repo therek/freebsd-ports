@@ -2,11 +2,11 @@
 # Date created:		10 August 1997
 # Whom:			Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.53 2000/06/02 16:33:48 ade Exp $
+# $FreeBSD: ports/x11-wm/icewm/Makefile,v 1.54 2000/06/14 13:21:00 sobomax Exp $
 #
 
 PORTNAME=	icewm
-PORTVERSION=	1.0.3
+PORTVERSION=	1.0.4
 CATEGORIES=	x11-wm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
