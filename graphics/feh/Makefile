@@ -2,7 +2,7 @@
 # Date created:				16 Oct 2000
 # Whom:					Jeremy Norris <ishmael27@home.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/feh/Makefile,v 1.1 2000/11/03 08:21:35 nakai Exp $
 #
 
 PORTNAME=	feh
@@ -10,7 +10,7 @@ PORTVERSION=	0.9.9
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.linuxbrit.co.uk/downloads/
 
-MAINTAINER=	ports@FreeBSD.ORG
+MAINTAINER=	ishmael27@home.com
 
 LIB_DEPENDS=	Imlib2.1:${PORTSDIR}/graphics/imlib2-tmp
 
