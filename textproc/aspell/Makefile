@@ -2,7 +2,7 @@
 # Date created:				7 December 1998
 # Whom:					Josh Gilliam <josh@quick.net>
 #
-# $FreeBSD: ports/textproc/aspell/Makefile,v 1.30 2001/08/08 17:16:55 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	aspell
@@ -16,17 +16,11 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	pspell.4:${PORTSDIR}/textproc/pspell
 
-USE_NEWGCC=	yes
-USE_GMAKE=	yes
 USE_LIBTOOL=	yes
-CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
 CONFIGURE_ARGS=	--enable-dict-dir=${DATADIR} \
 		--enable-doc-dir=${DOCSDIR}
+USE_GMAKE=	yes
 MAKE_ARGS=	NOPORTDOCS=${NOPORTDOCS}
 INSTALLS_SHLIB=	yes
-
-pre-build:
-	@${LN} -sf ${LOCALBASE}/bin/libtool ${WRKSRC}/libtool
 
 .include <bsd.port.mk>
