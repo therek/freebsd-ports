@@ -1,5 +1,5 @@
 
-$FreeBSD$
+$FreeBSD: ports/x11-toolkits/gtkextra/files/patch-ac,v 1.2 2001/03/11 11:29:56 sobomax Exp $
 
 --- Makefile.in.orig	Fri Mar  9 17:19:15 2001
 +++ Makefile.in	Sun Mar 11 12:36:59 2001
