@@ -2,10 +2,10 @@
 # Date created:        13 November 2000
 # Whom:                Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/x11-fm/rox-base/Makefile,v 1.3 2001/01/24 12:05:12 olgeni Exp $
+# $FreeBSD: ports/x11-fm/rox-base/Makefile,v 1.4 2001/01/24 12:43:13 olgeni Exp $
 
 PORTNAME=	rox-base
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	x11-fm
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	rox
