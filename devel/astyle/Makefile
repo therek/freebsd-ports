@@ -1,13 +1,13 @@
 # New ports collection makefile for:	astyle
-# Version required:	1.11.1
+# Version required:	1.11.4
 # Date created:		31 Jan 1999
 # Whom:			Don Croyle <croyle@gelemna.ft-wayne.in.us>
 #
-# $FreeBSD: ports/devel/astyle/Makefile,v 1.4 1999/08/25 05:47:22 obrien Exp $
+# $FreeBSD: ports/devel/astyle/Makefile,v 1.5 1999/09/04 20:45:35 cpiazza Exp $
 #
 
-DISTNAME=	astyle_1.11.1_src
-PKGNAME=	astyle-1.11.1
+DISTNAME=	astyle_1.11.4_src
+PKGNAME=	astyle-1.11.4
 CATEGORIES= 	devel textproc
 MASTER_SITES=	http://gene.md.huji.ac.il/~tald/astyle/stable/src/ \
 		http://www.infonex.com/~dacroyle/freebsd/
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	croyle@gelemna.ft-wayne.in.us
 
-WRKSRC=		${WRKDIR}/astyle_1.11.1
+WRKSRC=		${WRKDIR}/astyle_1.11.4
 
 post-extract:
 	perl -pi -e 's/\r//' ${WRKSRC}/*
