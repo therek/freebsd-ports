@@ -187,7 +187,7 @@ upgrades.
   AFFECTS: users of mail/popfile
   AUTHOR: matusita@FreeBSD.org
 
-  Since there is a known problem that popfile doesn't work with SQLite 1.x
+  Since there is a known problem that popfile doesn't work with DBD::SQLite 1.x
   at this time, you'll be in trouble after upgrading databases/p5-DBD-SQLite
   to the latest one.  A workaround is commited to 0.22.0_1 which uses
   databases/p5-DBD-SQLite2 by default.  However, if already installed popfile,
@@ -1143,4 +1143,4 @@ Option "XkbRules" "xfree86"
   2) Update all p5-* modules.
 	portupgrade -f p5-\*
 
-$FreeBSD: ports/UPDATING,v 1.101 2004/11/18 09:39:29 kuriyama Exp $
+$FreeBSD: ports/UPDATING,v 1.102 2004/11/18 16:22:25 lofi Exp $
