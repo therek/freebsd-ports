@@ -2,7 +2,7 @@
 # Date created:				31 Mar 2001
 # Whom:					Nick Sayer <nsayer@freebsd.org>
 #
-# $FreeBSD: ports/graphics/glide3/Makefile,v 1.1 2001/04/01 03:38:40 nsayer Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Glide3-64Bit
@@ -24,7 +24,7 @@ WRKSRC=		${WRKDIR}/Glide3
 USE_X_PREFIX=	yes
 INSTALLS_SHLIB=	yes
 USE_LIBTOOL=	yes
-USE_AUTOMAKE=	yes
+USE_AUTOMAKE_VER=	15
 MAKEFILE=	makefile.autoconf
 USE_GMAKE=	yes
 
