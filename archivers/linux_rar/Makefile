@@ -3,17 +3,15 @@
 # Date created:		30 April 1999
 # Whom:			FUJISHIMA Satsuki <k5@respo.or.jp>
 #
-# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.13 2000/04/17 00:16:50 reg Exp $
+# $FreeBSD: ports/archivers/linux_rar/Makefile,v 1.14 2000/05/29 03:57:08 steve Exp $
 #
 
 PORTNAME=	linux_rar
-PORTVERSION=	2.70
+PORTVERSION=	2.71
 CATEGORIES=	archivers linux
 MASTER_SITES=	ftp://ftp.netlab.sk/public/rarsoft/rar/ \
-		ftp://ftp.elf.stuba.sk/pub/pack/ \
-		ftp://ftp.cs.tu-berlin.de/pub/msdos/mirrors/stuba/pc/pack/ \
 		ftp://rarsoft.ti.sk/pub/rar/
-DISTNAME=	rarlnx27
+DISTNAME=	rarlnx271
 EXTRACT_SUFX=	.sfx
 
 MAINTAINER=	k5@cheerful.com
