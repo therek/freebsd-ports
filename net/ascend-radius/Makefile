@@ -2,7 +2,7 @@
 # Date created:				August 28th 96
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ascend-radius/Makefile,v 1.15 2000/10/23 21:03:02 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ascend-radius
@@ -18,6 +18,8 @@ DISTFILES=	radius-980618.tar.gz \
 		980618.ps \
 		980618.pdf
 EXTRACT_ONLY=	radius-980618.tar.gz
+
+FORBIDDEN=	"Remotely exploitable buffer overflow"
 
 MAINTAINER=	ports@FreeBSD.org
 

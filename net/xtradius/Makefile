@@ -2,7 +2,7 @@
 # Date created:        06 September 2000
 # Whom:                pal@paladin7.net
 #
-# $FreeBSD: ports/net/xtradius/Makefile,v 1.2 2001/06/01 06:05:12 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtradius
@@ -11,6 +11,8 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.xtradius.com/files/stable/
 DISTNAME=	xtradius-1.0beta3
 EXTRACT_SUFX=	.tgz
+
+FORBIDDEN=	"Remotely exploitable buffer overflow"
 
 MAINTAINER=	pal@paladin7.net
 

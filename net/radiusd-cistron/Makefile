@@ -2,7 +2,7 @@
 # Date created:		15 Jan 1999
 # Whom:			john@nlc.net.au
 #
-# $FreeBSD: ports/net/radiusd-cistron/Makefile,v 1.13 2001/01/11 07:59:54 billf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	radiusd-cistron
@@ -10,6 +10,8 @@ PORTVERSION=	1.6.4
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.cistron.nl/pub/people/miquels/radius/ \
 		ftp://ftp.freeradius.org/pub/radius/
+
+FORBIDDEN=	"Remotely exploitable buffer overflow"
 
 MAINTAINER=	john@nlc.net.au
 
