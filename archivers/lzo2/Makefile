@@ -3,27 +3,23 @@
 # Date created:				21 Feb 1998
 # Whom:					giffunip@asme.org
 #
-# $FreeBSD: ports/archivers/lzo/Makefile,v 1.6 1999/08/25 04:25:11 obrien Exp $
+# $FreeBSD: ports/archivers/lzo/Makefile,v 1.7 1999/08/31 06:40:15 mharo Exp $
 #
 
-DISTNAME=       lzo-1.04
+DISTNAME=	lzo-1.04
 CATEGORIES=	archivers devel
-MASTER_SITES= 	ftp://ftp.uni-koeln.de/util/arc/ \
-		ftp://ftp.rhrz.uni-bonn.de/pub-koeln/util/arc/ \
-		ftp://ftp.all.de/pub/unix/tools/archivers/lzo/ \
-		ftp://ftp.fu-berlin.de/pub/unix/tools/archivers/lzo/ \
-		${MASTER_SITE_SUNSITE}
-MASTER_SITE_SUBDIR=libs/compression
+MASTER_SITES= 	${MASTER_SITE_SUNSITE} \
+		ftp://wildsau.idv.uni-linz.ac.at/pub/mfx/lzo/
+MASTER_SITE_SUBDIR=	libs/compression
 
-MAINTAINER=     ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 USE_LIBTOOL=	yes
 CONFIGURE_ARGS+= 	--enable-shared=yes \
   			--enable-asm=yes
 post-install:
-
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/lzo
+	@${MKDIR} ${PREFIX}/share/doc/lzo
 	${INSTALL_DATA}	${WRKSRC}/doc/* ${PREFIX}/share/doc/lzo
 .endif
 
