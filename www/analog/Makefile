@@ -4,7 +4,7 @@
 # Date created:		October 21st 1996
 # Whom:			jfitz
 #
-# $FreeBSD: ports/www/analog/Makefile,v 1.18 1999/08/31 02:42:37 peter Exp $
+# $FreeBSD: ports/www/analog/Makefile,v 1.19 1999/09/09 21:29:42 ache Exp $
 #
 
 DISTNAME=       analog3.32
@@ -41,11 +41,10 @@ do-install:
 		${INSTALL_PROGRAM} analog ${PREFIX}/bin
 	cd ${WRKSRC} && \
 	for file in analog.cfg ; do \
-	    if [ -f ${PREFIX}/etc/$$file ] ; then \
-		${INSTALL_DATA} -m 644 $$file ${PREFIX}/etc/$$file-dist ; \
-	    else \
+	    if [ ! -f ${PREFIX}/etc/$$file ] ; then \
 		${INSTALL_DATA} -m 644 $$file ${PREFIX}/etc/$$file ; \
 	    fi ; \
+	${INSTALL_DATA} -m 644 $$file ${PREFIX}/etc/$$file-dist ; \
 	done
 .if !defined(NOPORTDOCS)
 	cd ${WRKSRC}/docs && \
