@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.8 2003/07/17 02:29:15 nork Exp $
+# $FreeBSD: ports/lang/php5/scripts/configure.php,v 1.9 2003/07/17 08:52:24 nork Exp $
 
 if [ -f ${WRKDIR}/Makefile.inc ]; then
 	exit
@@ -25,6 +25,7 @@ CDB		"cdb database support (dba)" ${WITH_CDB:-OFF} \
 CRACK		"crack support" ${WITH_CRACK:-OFF} \
 CTYPE		"ctype functions" ${WITH_CTYPE:-OFF} \
 CURL		"CURL support" ${WITH_CURL:-OFF} \
+DB4		"Berkeley DB4 support" ${WITH_DB4:-OFF} \
 DBASE		"dBase library support" ${WITH_DBASE:-OFF} \
 DBX		"dbx support" ${WITH_DBX:-OFF} \
 DOM		"DOM support" ${WITH_DOM:-OFF} \
@@ -41,7 +42,7 @@ INIFILE		"INI file support (dba)" ${WITH_INIFILE:-OFF} \
 INTERBASE	"Interbase 6 database support (Firebird)" ${WITH_INTERBASE:-OFF} \
 MBSTRING	"multibyte string support" ${WITH_MBSTRING:-OFF} \
 MCAL		"Modular Calendar Access Library support" ${WITH_MCAL:-OFF} \
-MCVE		"MCVE support" ${WITH_MCVE:-OFF} \
+MCVE		"MCVE support (implies OPENSSL)" ${WITH_MCVE:-OFF} \
 MCRYPT		"Encryption support" ${WITH_MCRYPT:-OFF} \
 MHASH		"Crypto-hashing support" ${WITH_MHASH:-OFF} \
 MIME		"mime_magic support" ${WITH_MIME:-OFF} \
