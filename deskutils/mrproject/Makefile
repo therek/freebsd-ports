@@ -2,11 +2,11 @@
 # Date created:				15 July 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/mrproject/Makefile,v 1.1 2001/07/15 08:43:17 demon Exp $
+# $FreeBSD: ports/deskutils/mrproject/Makefile,v 1.2 2001/07/15 14:06:08 demon Exp $
 #
 
 PORTNAME=	mrproject
-PORTVERSION=	0.3.2
+PORTVERSION=	0.4.0
 CATEGORIES=	deskutils gnome
 MASTER_SITES=	ftp://ftp.codefactory.se/pub/software/mrproject/source/
 
@@ -19,6 +19,8 @@ USE_GNOME=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 INSTALLS_SHLIB=	yes
+
+MAN1=		mrproject.1 run-mrproject.1 mrproject-engine.1
 
 pre-patch:
 	@${PERL} -pi -e 's#-lpthread#-pthread#g ; \
