@@ -2,11 +2,11 @@
 # Date created:		12 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/ftp/curl/Makefile,v 1.27 2001/01/05 08:10:03 roam Exp $
+# $FreeBSD: ports/ftp/curl/Makefile,v 1.28 2001/01/31 11:16:30 roam Exp $
 #
 
 PORTNAME=	curl
-PORTVERSION=	7.6
+PORTVERSION=	7.6.1
 CATEGORIES=	ftp www
 MASTER_SITES=	http://curl.haxx.se/download/ \
 		http://download.sourceforge.net/curl/ \
