@@ -2,11 +2,12 @@
 # Date created:		20 April 1997
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/numpy/Makefile,v 1.26 2000/09/08 11:58:49 tg Exp $
+# $FreeBSD: ports/math/numpy/Makefile,v 1.27 2000/09/14 12:04:45 tg Exp $
 #
 
 PORTNAME=	numeric
 PORTVERSION=	16.1
+PORTREVISION=	1
 CATEGORIES=	math python
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	numpy
