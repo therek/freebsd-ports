@@ -3,14 +3,14 @@
 # Date created:		14 December 1998
 # Whom:			Neil Blakey-Milner <nbm@rucus.ru.ac.za>
 #
-# $FreeBSD: ports/misc/pdmenu/Makefile,v 1.4 1999/09/10 11:31:30 tg Exp $
+# $FreeBSD: ports/misc/pdmenu/Makefile,v 1.5 1999/11/14 02:46:46 steve Exp $
 
-DISTNAME=       pdmenu_1.2.50
-PKGNAME=	pdmenu-1.2.50
+DISTNAME=       pdmenu_1.2.58
+PKGNAME=	pdmenu-1.2.58
 CATEGORIES=	misc
 MASTER_SITES=	http://kitenet.net/programs/code/pdmenu/
 
-MAINTAINER=	nbm@rucus.ru.ac.za
+MAINTAINER=	nbm@FreeBSD.org
 
 LIB_DEPENDS=    slang.1:${PORTSDIR}/devel/libslang
 
