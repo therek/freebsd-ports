@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.62 2000/10/29 05:38:04 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.63 2000/10/30 15:32:57 will Exp $
 #
 
 PORTNAME=	qt
@@ -22,17 +22,12 @@ USE_GMAKE=	yes
 USE_X_PREFIX=	yes
 USE_NEWGCC=	yes
 HAS_CONFIGURE=	yes
-CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm \
+CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
 		-I${LOCALBASE}/include -L${LOCALBASE}/lib
 CONFIGURE_ENV=	QTDIR=${WRKSRC}
 MAKE_ENV=	QTDIR=${WRKSRC} LD_LIBRARY_PATH=${WRKSRC}/lib
 
 CONFIG=		${WRKSRC}/configs/freebsd-g++-${STATIC}
-
-.if defined(QT_GIF_AVAILABLE) || defined(HAVE_UNISYS_LICENSE)
-CONFIGURE_ARGS+=-gif
-RESTRICTED=	"Requires a license from UNISYS"
-.endif
 
 .if !defined(NOPORTDOCS)
 .include "${.CURDIR}/files/manpages"
