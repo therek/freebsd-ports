@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/openldap22-server/pkg-plist,v 1.23 2003/08/30 09:11:51 edwin Exp $
+@comment $FreeBSD: ports/net/openldap22-server/pkg-plist,v 1.24 2003/11/14 03:57:13 eik Exp $
 @unexec %%RC_DIR%%/slapd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 @unexec %%RC_DIR%%/slurpd%%RC_SUFX%% stop 2>&1 >/dev/null || true
 etc/openldap/schema/README
@@ -7,7 +7,7 @@ etc/openldap/slapd.conf.default
 @exec [ -f %B/slapd.conf ] || cp %B/%f %B/slapd.conf
 %%SLAPI%%lib/libslapi.a
 %%SLAPI%%lib/libslapi.so
-%%SLAPI%%lib/libslapi.so.2
+%%SLAPI%%lib/libslapi.so.202
 libexec/slapd
 libexec/slurpd
 sbin/slapadd
