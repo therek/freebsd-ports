@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.363 2001/05/16 18:55:22 dinoex Exp $
+# $FreeBSD: ports/www/Makefile,v 1.364 2001/05/20 03:16:06 will Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -130,6 +130,7 @@
     SUBDIR += mod_gzip
     SUBDIR += mod_hosts_access
     SUBDIR += mod_index_rss
+    SUBDIR += mod_jk
     SUBDIR += mod_layout
     SUBDIR += mod_mp3
     SUBDIR += mod_perl
