@@ -2,11 +2,11 @@
 # Date created:				April 18th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mrtg/Makefile,v 1.33 2001/02/17 20:51:12 demon Exp $
+# $FreeBSD: ports/net/mrtg/Makefile,v 1.34 2001/02/22 09:51:33 demon Exp $
 #
 
 PORTNAME=	mrtg
-PORTVERSION=	2.9.10
+PORTVERSION=	2.9.11
 CATEGORIES=	net
 MASTER_SITES=	http://ee-staff.ethz.ch/~oetiker/webtools/mrtg/pub/ \
 		${MASTER_SITE_RINGSERVER}
@@ -27,8 +27,8 @@ CONFIGURE_ARGS=	--with-gd-lib=${LOCALBASE}/lib \
 CONFIGURE_ENV=	PERL=${PERL}
 
 MAN1=		cfgmaker.1 contrib.1 faq.1 forum.1 indexmaker.1 logfile.1 \
-		mibhelp.1 mrtg-rrd.1 nt-guide.1 reference.1 squid.1 \
-		unix-guide.1 webserver.1 mrtg.1
+		mibhelp.1 mrtg.1 mrtg-rrd.1 mrtglib.1 nt-guide.1 reference.1 \
+		squid.1 unix-guide.1 webserver.1
 
 do-install:
 		${MKDIR} -m 755 ${PREFIX}/etc/mrtg
