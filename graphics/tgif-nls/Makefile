@@ -2,14 +2,15 @@
 # Date created:         3 May 1999
 # Whom:                 one@netlab.is.tsukuba.ac.jp
 #
-# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.9 2000/05/29 03:43:56 steve Exp $
+# $FreeBSD: ports/graphics/tgif-nls/Makefile,v 1.10 2000/07/10 01:35:52 steve Exp $
 #
 
 PORTNAME=	tgif
-PORTVERSION=	4.1.34
+PORTVERSION=	4.1.38
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://bourbon.cs.umd.edu/pub/tgif/ \
-		ftp://ftp.cs.ucla.edu/pub/tgif/
+		ftp://ftp.cs.ucla.edu/pub/tgif/ \
+		ftp://download.sourceforge.net/tgif/
 PKGNAMESUFFIX=	-nls
 
 MAINTAINER=	one@netlab.is.tsukuba.ac.jp
@@ -28,6 +29,11 @@ TGIFDEMO=	${PREFIX}/share/examples/tgif
 DEMO_FILES=	an-sr-flip-flop.obj launch-demo-1.obj \
 		fonts.obj launch-demo.obj keys.obj slide-demo.obj example.tex
 READMES=	Copyright HISTORY README
+SPICE_FILES=	README BZ.mod DN.mod DN.sym MN.mod MN.sym MP.mod MP.sym \
+		SN.mod SN.sym SP.mod SP.sym capacitor.sym connection.sym \
+		demo.obj gauge.sym ground.sym in.sym out.sym port.sym \
+		resistor.0tc.sym resistor.2tc.sym resistor.h.2tc.sym \
+		resistor.h.sym resistor.sym
 .endif
 
 post-extract:
@@ -49,6 +55,10 @@ post-install:
 		(cd ${WRKSRC} ;\
 		  ${INSTALL_DATA} ${DEMO_FILES} ${TGIFDEMO} ;\
 		  ${INSTALL_DATA} ${READMES} ${TGIFDOC} ;\
+		)
+		${MKDIR} ${TGIFDEMO}/spice
+		(cd ${WRKSRC}/spice ;\
+		  ${INSTALL_DATA} ${SPICE_FILES} ${TGIFDEMO}/spice \
 		)
 .endif
 		${LN} -fs tgif ${PREFIX}/bin/tgif-nls
