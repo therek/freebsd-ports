@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/math/Makefile,v 1.64 1999/08/30 11:53:38 peter Exp $
 #
 
     SUBDIR += PDL
@@ -30,6 +30,7 @@
     SUBDIR += linpack
     SUBDIR += metis
     SUBDIR += netcdf
+    SUBDIR += ngraph
     SUBDIR += numpy
     SUBDIR += octave
     SUBDIR += oleo
