@@ -2,20 +2,21 @@
 # Date created:		26 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/biology/p5-AcePerl/Makefile,v 1.1 2000/07/28 13:16:10 nbm Exp $
 #
 
 PORTNAME=	AcePerl
-PORTVERSION=	1.62
+PORTVERSION=	1.67
 CATEGORIES=	biology databases perl5
 MASTER_SITES=	http://stein.cshl.org/AcePerl/archive/ \
 		${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=Ace
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	johann@egenetics.com
+MAINTAINER=	bio@freebsd.net
 
 USE_PERL5=	YES
+PERL_CONFIGURE=	YES
 
 MAN3=		Ace::Sequence::Feature.3 \
 		Ace::Sequence.3 \
@@ -30,8 +31,8 @@ MAN3=		Ace::Sequence::Feature.3 \
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 
-do-configure:
-	${CP} ${FILESDIR}/FREEBSD_DEF ${WRKSRC}/ace/wmake/
-	@ cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PERL5} Makefile.PL
+post-patch:
+	@ ${SED} -e 's/XX__CC__XX/${CC}/' < ${FILESDIR}/FREEBSD_DEF \
+	  > ${WRKSRC}/ace/wmake/FREEBSD_DEF
 
 .include <bsd.port.mk>
