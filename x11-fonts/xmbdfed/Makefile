@@ -2,17 +2,13 @@
 # Date created:		June 20, 1997
 # Whom:			jfieber
 #
-# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.16 2000/02/28 20:00:44 ache Exp $
+# $FreeBSD: ports/x11-fonts/xmbdfed/Makefile,v 1.17 2000/04/10 00:44:43 cpiazza Exp $
 #
 
 PORTNAME=	xmbdfed
-PORTVERSION= 	4.3.3
+PORTVERSION= 	4.4
 CATEGORIES=	x11-fonts
 MASTER_SITES=	ftp://crl.nmsu.edu/CLR/multiling/General/
-DISTNAME=	${PORTNAME}-4.3
-
-PATCH_SITES=	${MASTER_SITES}
-PATCHFILES=	${DISTNAME}.patch1 ${DISTNAME}.patch2 ${DISTNAME}.patch3
 
 MAINTAINER=	ports@FreeBSD.org
 
