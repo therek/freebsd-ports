@@ -2,17 +2,17 @@
 # Date created:         Mar 15 1999
 # Whom:                 rox@fearme.com
 #
-# $FreeBSD: ports/irc/roxirc/Makefile,v 1.9 2000/04/12 06:28:25 obrien Exp $
+# $FreeBSD: ports/irc/roxirc/Makefile,v 1.10 2001/01/07 17:49:46 will Exp $
 #
 
 PORTNAME=	roxirc
-PORTVERSION=	1.5
-CATEGORIES=	irc tk82
+PORTVERSION=	1.72
+CATEGORIES=	irc tk83
 MASTER_SITES=	http://roxirc.lighter.net/download/
 
 MAINTAINER=	rox@fearme.com
 
-RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
+RUN_DEPENDS=	wish8.3:${PORTSDIR}/x11-toolkits/tk83
 
 NO_BUILD=	yes
 
@@ -21,11 +21,9 @@ do-install:
 	${MKDIR} ${PREFIX}/share/doc/roxirc
 	${INSTALL_DATA} ${WRKSRC}/config ${PREFIX}/share/doc/roxirc/config-example
 	${INSTALL_DATA} ${WRKSRC}/menus ${PREFIX}/share/doc/roxirc/menus-example
+	${INSTALL_DATA} ${WRKSRC}/bindings ${PREFIX}/share/doc/roxirc/bindings-example
 	${INSTALL_DATA} ${WRKSRC}/prefs ${PREFIX}/share/doc/roxirc/prefs-initial
+	${INSTALL_DATA} ${WRKSRC}/startup ${PREFIX}/share/doc/roxirc/startup-example
 	${INSTALL_DATA} ${WRKSRC}/help ${PREFIX}/share/doc/roxirc/help
-
-post-patch:
-	@${PERL} -pi -e 's,/usr/local,${PREFIX},g ; \
-		s,wish8.0,wish8.2,g' ${WRKSRC}/roxirc
 
 .include <bsd.port.mk>
