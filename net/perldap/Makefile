@@ -2,13 +2,14 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/perldap/Makefile,v 1.6 2000/04/09 18:13:05 cpiazza Exp $
+# $FreeBSD: ports/net/perldap/Makefile,v 1.7 2000/07/14 19:28:57 paul Exp $
 #
 
 PORTNAME=	perldap
 PORTVERSION=	1.4
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.mozilla.org/pub/directory/perldap/
+MASTER_SITES=	${MASTER_SITE_MOZILLA}
+MASTER_SITE_SUBDIR=	directory/perldap
 EXTRACT_SUFX=	.tar.gz
 
 MAINTAINER=	paul@FreeBSD.org

@@ -2,13 +2,14 @@
 # Date created:	17 May 1999
 # Whom:		paul@freebsd.org
 #
-# $FreeBSD: ports/net/ldapsdk/Makefile,v 1.6 1999/08/31 06:48:54 mharo Exp $
+# $FreeBSD: ports/net/ldapsdk/Makefile,v 1.7 2000/04/09 18:11:59 cpiazza Exp $
 #
 
 PORTNAME=	ldapsdk
 PORTVERSION=	1998.12.31
 CATEGORIES=	net
-MASTER_SITES=	ftp://ftp.mozilla.org/pub/directory/c-sdk/ldap/
+MASTER_SITES=	${MASTER_SITE_MOZILLA}
+MASTER_SITE_SUBDIR=	directory/c-sdk/ldap
 DISTNAME=	ldapsdk_12311998
 
 MAINTAINER=	paul@FreeBSD.org
