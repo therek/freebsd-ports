@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.281 2000/07/10 03:31:30 steve Exp $
+# $FreeBSD: ports/games/Makefile,v 1.282 2000/07/10 15:55:29 ade Exp $
 #
 
     SUBDIR += 3dc
@@ -76,6 +76,7 @@
     SUBDIR += gtetrinet
     SUBDIR += gtkabale
     SUBDIR += gtkballs
+    SUBDIR += halflifeserver
     SUBDIR += heretic
     SUBDIR += hex
     SUBDIR += icbm3d
