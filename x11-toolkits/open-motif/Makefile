@@ -3,7 +3,7 @@
 # Date created:		5 December 1994
 # Whom:			asami
 #
-# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.14 2000/09/15 23:18:47 asami Exp $
+# $FreeBSD: ports/x11-toolkits/open-motif/Makefile,v 1.15 2000/09/18 06:22:46 steve Exp $
 #
 
 PORTNAME=	open-motif
@@ -660,6 +660,9 @@ pre-install:
 
 post-install: share-doc share-guides share-examples
 	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
+.for dir in Mrm Xm
+	cd ${WRKSRC}/lib/${dir} && ${INSTALL_DATA} *I.h ${PREFIX}/include/${dir}
+.endfor
 
 share-doc:
 	@${MKDIR} ${PREFIX}/share/doc/openmotif/
