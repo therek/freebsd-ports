@@ -3,7 +3,7 @@
 # Date created:        12 August 1998
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/net/mtr/Makefile,v 1.13 1999/09/10 16:29:31 fenner Exp $
+# $FreeBSD: ports/net/mtr/Makefile,v 1.14 1999/10/12 18:27:31 billf Exp $
 #
 
 DISTNAME=	mtr-0.41
@@ -12,8 +12,6 @@ MASTER_SITES=	ftp://ftp.bitwizard.nl/mtr/ \
 		http://www.giovannelli.it/~gmarco/files/
 
 MAINTAINER=	billf@FreeBSD.org
-
-BROKEN=		'this port does wierd things and rarely works'
 
 HAS_CONFIGURE=	yes
 
