@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.313 2000/12/23 17:11:44 okazaki Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.314 2000/12/31 05:48:35 will Exp $
 #
 
     SUBDIR += 221upgrade
@@ -115,6 +115,7 @@
     SUBDIR += p5-Locale-Codes
     SUBDIR += peq
     SUBDIR += pdmenu
+    SUBDIR += pg
     SUBDIR += pinfo
     SUBDIR += pkg_tarup
     SUBDIR += porteasy
