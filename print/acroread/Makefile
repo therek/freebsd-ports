@@ -3,7 +3,7 @@
 # Date created:		16 November 1996
 # Whom:			Thomas Gellekum <tg@freebsd.org>
 #
-# $FreeBSD: ports/print/acroread/Makefile,v 1.16 2000/02/28 08:33:53 asami Exp $
+# $FreeBSD: ports/print/acroread/Makefile,v 1.17 2000/03/09 18:15:06 obrien Exp $
 #
 .include <bsd.port.pre.mk>
 
@@ -32,8 +32,10 @@ NO_FILTER_SHLIBS=	yes
 
 .if ${ARCH} == "i386"
 WRKSRC=		${WRKDIR}/ILINXR.install
+PLIST_SUB=	"ARCHDIR=intellinux"
 .elif ${ARCH} == "alpha"
 WRKSRC=		${WRKDIR}/AOSFR.install
+PLIST_SUB=	"ARCHDIR=alphaosf"
 .endif
 
 pre-configure:
