@@ -3,7 +3,7 @@
 # Date created:         9 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/comline/Makefile,v 1.10 1999/08/31 02:42:47 peter Exp $
 #
 
 DISTNAME=	WWW
@@ -17,8 +17,6 @@ DISTFILES=      w3c-libwww-4.0D.tar.gz \
 		w3c_4.0D_src.tar.gz
 
 MAINTAINER=     ache@freebsd.org
-
-BROKEN_ELF=	-lwww
 
 do-build:
 	cd ${WRKSRC}; ./BUILD comline

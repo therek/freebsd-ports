@@ -3,7 +3,7 @@
 # Date created:         24 Sep 1994
 # Whom:                 adam
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/pmf/Makefile,v 1.14 1999/08/30 14:23:49 peter Exp $
 #
 
 DISTNAME=       pmf-1.13.1
@@ -12,7 +12,6 @@ MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/lpmud/clients/pmf/
 
 MAINTAINER=	ports@freebsd.org
 
-BROKEN_ELF=	cc: c_packages/libc_packs.a: No such file or directory
 WRKSRC=		${WRKDIR}/pmfdir/src
 
 pre-install:

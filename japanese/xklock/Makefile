@@ -3,7 +3,7 @@
 # Date created:		20 April 1997
 # Whom:			nkazushi@highway.or.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/xklock/Makefile,v 1.6 1999/08/25 05:27:56 obrien Exp $
 #
 
 DISTNAME=	xklock-2.7
@@ -21,8 +21,6 @@ PATCH_DIST_STRIP=	-p1
 LIB_DEPENDS=	Xpm.4:${PORTSDIR}/graphics/xpm
 
 MAINTAINER=	nkazushi@highway.or.jp
-
-BROKEN_ELF=	yes
 
 WRKSRC=	${WRKDIR}
 USE_X_PREFIX=	yes

@@ -3,7 +3,7 @@
 # Date created:		17 April 1995
 # Whom:			NIIMI Satoshi <sa2c@and.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/linemode/Makefile,v 1.16 1999/08/31 02:42:55 peter Exp $
 #
 
 DISTNAME=	WWW
@@ -17,8 +17,6 @@ DISTFILES=      w3c-libwww-4.0D.tar.gz \
 		www_4.0D_src.tar.gz
 
 MAINTAINER=	sa2c@and.or.jp
-
-BROKEN_ELF=	yes
 
 do-build:
 	cd ${WRKSRC}; ./BUILD linemode

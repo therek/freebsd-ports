@@ -3,7 +3,7 @@
 # Date created:         17 Sep 96 
 # Whom:                 jmacd@cs.berkeley.edu
 #
-# $FreeBSD: ports/lang/STk/Makefile,v 1.18 1999/08/25 06:34:12 obrien Exp $
+# $FreeBSD: ports/lang/STk/Makefile,v 1.19 1999/08/31 06:46:40 mharo Exp $
 #
 
 DISTNAME=       STk-3.1.1
@@ -11,8 +11,6 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://kaolin.unice.fr/pub/
 
 MAINTAINER=	jmacd@FreeBSD.org
-
-BROKEN_ELF=	yes
 
 USE_XLIB=	yes
 PATCH_STRIP=      -p1
