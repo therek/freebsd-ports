@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.35 2001/02/15 10:20:08 obrien Exp $
+@comment $FreeBSD: ports/editors/vim6/pkg-plist,v 1.36 2001/02/16 07:02:13 obrien Exp $
 bin/vim
 bin/vimtutor
 bin/xxd
@@ -121,9 +121,11 @@ share/vim/%%VIM_VER%%/indent/config.vim
 share/vim/%%VIM_VER%%/indent/fortran.vim
 share/vim/%%VIM_VER%%/indent/html.vim
 share/vim/%%VIM_VER%%/indent/make.vim
+share/vim/%%VIM_VER%%/indent/matlab.vim
 share/vim/%%VIM_VER%%/indent/perl.vim
 share/vim/%%VIM_VER%%/indent/python.vim
 share/vim/%%VIM_VER%%/indent/sh.vim
+share/vim/%%VIM_VER%%/indent/tcl.vim
 share/vim/%%VIM_VER%%/indent/verilog.vim
 share/vim/%%VIM_VER%%/indent/vim.vim
 share/vim/%%VIM_VER%%/indent/xml.vim
