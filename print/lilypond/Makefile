@@ -4,13 +4,14 @@
 # based on NetBSD pkgsrc/print/lilypond
 #
 # $NetBSD: Makefile,v 1.1.1.1 2000/10/15 17:32:11 rh Exp $
-# $FreeBSD: ports/print/lilypond/Makefile,v 1.2 2001/02/28 09:31:04 trevor Exp $
+# $FreeBSD: ports/print/lilypond/Makefile,v 1.3 2001/05/31 22:48:50 ade Exp $
 #
 
 PORTNAME=	lilypond
 PORTVERSION=	1.3.131
 CATEGORIES=	print audio
-MASTER_SITES=	ftp://ftp.cs.uu.nl/pub/GNU/LilyPond/development/
+MASTER_SITES=	ftp://ftp.cs.uu.nl/pub/GNU/LilyPond/v1.3/ \
+		ftp://sca.uwaterloo.ca/pub/lilypond/v1.3/
 
 MAINTAINER=	trevor@FreeBSD.org
 
