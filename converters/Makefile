@@ -1,4 +1,4 @@
-# $FreeBSD: ports/converters/Makefile,v 1.61 2001/08/21 13:49:50 sobomax Exp $
+# $FreeBSD: ports/converters/Makefile,v 1.62 2001/08/29 11:24:18 ijliao Exp $
 #
 
     SUBDIR += aish
@@ -8,6 +8,7 @@
     SUBDIR += dumpasn1
     SUBDIR += fconv
     SUBDIR += gb2jis
+    SUBDIR += gbase
     SUBDIR += i18ntools
     SUBDIR += iconv
     SUBDIR += iconv-extra
