@@ -2,11 +2,11 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.7 2000/11/16 13:14:22 tg Exp $
+# $FreeBSD: ports/shells/flash/Makefile,v 1.8 2001/01/06 16:40:13 kevlo Exp $
 #
 
 PORTNAME=	flash
-PORTVERSION=	0.9.3
+PORTVERSION=	0.9.4
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.netsoc.ucd.ie/pub/computing/flash/
 
@@ -24,12 +24,12 @@ GNU_CONFIGURE=	yes
 
 MAN1=		flash.1
 
-PROGRAM=	background countdown
+PROGRAM=	alarms background countdown
 SCRIPT=		mailshell system.menu system.menu.9798 system.menu.oldlast \
 		system.menu.old
-DATA=		checkflash system.bg.Netsoc.3 system.bg.Netsoc.4 \
-		system.flashlogin system.maillogin system.module \
-		system.module.9798 system.rc system.rc.mailshell
+DATA=		system.bg.Netsoc.3 system.bg.Netsoc.4 system.flashlogin \
+		system.maillogin system.module system.module.9798 system.rc \
+		system.rc.mailshell
 
 .if ${OSVERSION} < 400000
 CONFIGURE_ENV+=	CPPFLAGS="-I${LOCALBASE}/include -DHAVE_NCURSES_NCURSES_H" \
