@@ -2,11 +2,11 @@
 # Date created:		16 Feb 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/graphics/gltk/Makefile,v 1.2 2000/04/14 10:46:02 asami Exp $
+# $FreeBSD: ports/graphics/gltk/Makefile,v 1.3 2000/08/03 09:24:47 asami Exp $
 #
 
 PORTNAME=	gltk
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.sgi.com/opengl/contrib/ \
 		ftp://ftp.u-aizu.ac.jp/pub/os/sgi/misc/ftp.sgi.com/pub/opengl/contrib/
