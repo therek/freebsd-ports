@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/net/mopd/pkg/PLIST,v 1.1.1.1 1999/11/14 20:20:10 obrien Exp $
+@comment $FreeBSD: ports/net/mopd/pkg/PLIST,v 1.2 2000/03/05 17:50:20 obrien Exp $
 sbin/mopd
 sbin/mopprobe
 sbin/moptrace
@@ -6,3 +6,4 @@ sbin/mopchk
 sbin/mopa.out
 share/doc/mopd/VAX-netboot-HOWTO 
 share/doc/mopd/VS3100-console-cmds.txt
+@dirrm share/doc/mopd
