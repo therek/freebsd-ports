@@ -2,16 +2,15 @@
 # Date created:		29 Jun 1998
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/p5-mkres/Makefile,v 1.6 2000/04/12 14:36:40 knu Exp $
+# $FreeBSD: ports/japanese/p5-mkres/Makefile,v 1.7 2000/08/27 06:13:34 knu Exp $
 #
 
 PORTNAME=	mkres
 PORTVERSION=	1.4
 CATEGORIES=	japanese perl5
 MASTER_SITES=	http://ftp.infonets.hiroshima-u.ac.jp/~taoka/FreeBSD/tt/
-PKGNAMEPREFIX=	p5-
-DISTNAME=	${PORTNAME}.pl-${PORTVERSION}
 EXTRACT_SUFX=	# none
+DISTNAME=	${PORTNAME}.pl-${PORTVERSION}
 
 MAINTAINER=	taoka@FreeBSD.org
 
@@ -19,6 +18,10 @@ RUN_DEPENDS=	mkttfdir:${PORTSDIR}/print/perlftlib
 
 USE_PERL5=	yes
 NO_WRKSUBDIR=	yes
+
+.include <bsd.port.pre.mk>
+
+PKGNAMEPREFIX:=	${PKGNAMEPREFIX}p5-
 
 do-extract:
 		@${RM} -rf ${WRKDIR}
@@ -36,4 +39,4 @@ do-install:
 		${INSTALL_SCRIPT} ${WRKSRC}/${DISTNAME} \
 			${PREFIX}/bin/mkres.pl
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
