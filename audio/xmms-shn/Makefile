@@ -2,11 +2,11 @@
 # Date created:        2 November 2000
 # Whom:                Bill Fenner <fenner@FreeBSD.Org>
 #
-# $FreeBSD: ports/audio/xmms-shn/Makefile,v 1.5 2001/04/22 05:10:39 fenner Exp $
+# $FreeBSD: ports/audio/xmms-shn/Makefile,v 1.6 2001/06/04 15:46:35 fenner Exp $
 #
 
 PORTNAME=	xmms-shn
-PORTVERSION=	2.2.3
+PORTVERSION=	2.2.4
 CATEGORIES=	audio
 MASTER_SITES=	http://shnutils.freeshell.org/xmms-shn/source/ \
 		${MASTER_SITE_LOCAL}
@@ -21,5 +21,11 @@ USE_X_PREFIX=	yes
 USE_GTK=	yes
 USE_AUTOCONF=	yes
 USE_GMAKE=	yes
+
+post-install:
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${DOCSDIR}
+	@${INSTALL_DATA} ${WRKSRC}/README ${DOCSDIR}
+.endif #NOPORTDOCS
 
 .include <bsd.port.mk>
