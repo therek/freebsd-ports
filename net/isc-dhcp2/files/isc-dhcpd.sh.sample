@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/net/isc-dhcp2/files/isc-dhcpd.sh.sample,v 1.1 2001/04/20 18:31:53 shige Exp $
 # startup scripts for ISC DHCPD.
 
 if ! PREFIX=$(expr $0 : "\(/.*\)/etc/rc\.d/$(basename $0)\$"); then
@@ -37,7 +37,7 @@ stop)
 		kill -KILL $PID
 	fi
 	;;
-retstart)
+restart)
 	$0 stop && $0 start;
 	;;
 *)
