@@ -3,7 +3,7 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.35 1999/10/09 18:50:34 vanilla Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.36 1999/12/04 19:08:02 steve Exp $
 #
 
 DISTNAME=	mc-4.5.40
@@ -32,5 +32,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 
 MAN1=		midc.1
 MAN8=		mcserv.8
+
+post-patch:
+	${PERL} -i -p -e 's,%%PREFIX%%,${PREFIX},g' ${WRKSRC}/vfs/extfs/uzip.in
 
 .include <bsd.port.mk>
