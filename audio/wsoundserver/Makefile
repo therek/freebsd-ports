@@ -2,7 +2,7 @@
 # Date created:		9 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.11 2000/05/23 06:33:51 sobomax Exp $
+# $FreeBSD: ports/audio/wsoundserver/Makefile,v 1.12 2000/05/25 07:52:12 sobomax Exp $
 #
 
 PORTNAME=	wsoundserver
@@ -18,6 +18,7 @@ LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		audiofile.0:${PORTSDIR}/audio/libaudiofile \
 		dockapp.1:${PORTSDIR}/x11-wm/libdockapp \
 		${ESD_DEPENDS}
+RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes

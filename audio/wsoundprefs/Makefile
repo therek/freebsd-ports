@@ -2,7 +2,7 @@
 # Date created:		12 December 1998
 # Whom:			gljohns@bellsouth.net
 #
-# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.11 2000/05/22 19:16:11 sobomax Exp $
+# $FreeBSD: ports/audio/wsoundprefs/Makefile,v 1.12 2000/05/23 06:53:14 sobomax Exp $
 #
 
 PORTNAME=	wsoundprefs
@@ -16,6 +16,7 @@ MAINTAINER=	sobomax@FreeBSD.org
 BUILD_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 LIB_DEPENDS=	PropList.2:${PORTSDIR}/devel/libPropList \
 		wsound.1:${PORTSDIR}/audio/wsoundserver
+RUN_DEPENDS=	wmaker:${PORTSDIR}/x11-wm/windowmaker
 
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=yes
