@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.399 2002/02/22 18:53:28 obrien Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.400 2002/02/24 16:54:34 ache Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -968,6 +968,11 @@ BUILD_DEPENDS+=	bison:${PORTSDIR}/devel/bison
 .endif
 .endif
 
+.if ${OSVERSION} >= 500032
+PERL_VERSION?=	5.6.1
+PERL_VER?=		5.6.1
+PERL_ARCH?=		mach
+.else
 .if ${OSVERSION} >= 500007
 PERL_VERSION?=	5.6.0
 PERL_VER?=		5.6.0
@@ -980,6 +985,7 @@ PERL_VERSION?=	5.00502
 .endif
 PERL_VER?=		5.005
 PERL_ARCH?=		${ARCH}-freebsd
+.endif
 .endif
 PLIST_SUB+=		PERL_VERSION=${PERL_VERSION} \
 				PERL_VER=${PERL_VER} \
