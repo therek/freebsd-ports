@@ -1,4 +1,4 @@
-# $FreeBSD: ports/net/Makefile,v 1.601 2001/08/26 16:06:39 dirk Exp $
+# $FreeBSD: ports/net/Makefile,v 1.602 2001/08/27 15:06:39 petef Exp $
 #
 
     SUBDIR += 44bsd-rdist
@@ -229,6 +229,7 @@
     SUBDIR += nslint
     SUBDIR += nsping
     SUBDIR += nstreams
+    SUBDIR += ntalk
     SUBDIR += ntimelord
     SUBDIR += ntop
     SUBDIR += ntp
