@@ -2,21 +2,21 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.40 2000/09/15 21:40:40 will Exp $
+# $FreeBSD: ports/audio/kdemultimedia2/Makefile,v 1.41 2000/10/04 06:39:58 sobomax Exp $
 #
 
 PORTNAME=	kdemultimedia
-PORTVERSION=	1.94
+PORTVERSION=	2.0
 CATEGORIES=	audio kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2 \
-		qt2.4:${PORTSDIR}/x11-toolkits/qt22
+		kdecore.4:${PORTSDIR}/x11/kdelibs2
 
+USE_QT2=	yes
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes

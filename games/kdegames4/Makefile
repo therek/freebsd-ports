@@ -2,20 +2,20 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/games/kdegames2/Makefile,v 1.42 2000/08/29 23:44:24 will Exp $
+# $FreeBSD: ports/games/kdegames2/Makefile,v 1.43 2000/09/15 21:40:37 will Exp $
 #
 
 PORTNAME=	kdegames
-PORTVERSION=	1.94
+PORTVERSION=	2.0
 CATEGORIES=	games kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
-		kdecore.4:${PORTSDIR}/x11/kdelibs2
+LIB_DEPENDS=	kdecore.4:${PORTSDIR}/x11/kdelibs2
 
+USE_QT2=	yes
 MOC?=		${X11BASE}/bin/moc2
 USE_BZIP2=	yes
 USE_NEWGCC=	yes

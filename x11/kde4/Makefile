@@ -2,11 +2,11 @@
 # Date created:				Sun May 14 2000 00:50:02
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/kde2/Makefile,v 1.36 2000/08/30 21:06:09 will Exp $
+# $FreeBSD: ports/x11/kde2/Makefile,v 1.37 2000/09/15 21:40:47 will Exp $
 #
 
 PORTNAME=	kde
-PORTVERSION=	1.94
+PORTVERSION=	2.0
 CATEGORIES=	x11 kde
 MASTER_SITES=	# empty
 DISTFILES=	# none

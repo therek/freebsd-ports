@@ -2,21 +2,21 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.54 2000/08/29 23:44:23 will Exp $
+# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.55 2000/09/15 21:40:35 will Exp $
 #
 
 PORTNAME=	kdebase
-PORTVERSION= 	1.94
+PORTVERSION= 	2.0
 CATEGORIES=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
-LIB_DEPENDS=	qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
-		kdeui.4:${PORTSDIR}/x11/kdelibs2 \
+LIB_DEPENDS=	kdeui.4:${PORTSDIR}/x11/kdelibs2 \
 		intl.1:${PORTSDIR}/devel/gettext
 
+USE_QT2=	yes
 SOMAJOR=	4
 SOMINOR=	0
 MOC?=		${X11BASE}/bin/moc2

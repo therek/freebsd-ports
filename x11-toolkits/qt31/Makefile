@@ -2,15 +2,14 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.58 2000/09/12 07:50:44 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.59 2000/09/17 01:57:06 will Exp $
 #
 
 PORTNAME=	qt
-PORTVERSION=	2.2.0
-PORTREVISION=	1
+PORTVERSION=	2.2.1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
-DISTNAME=	qt-x11-2.2.0
+DISTNAME=	qt-x11-${PORTVERSION}
 
 MAINTAINER=	will@FreeBSD.org
 
@@ -55,7 +54,7 @@ pre-fetch:
 	@${ECHO} "that installation, deinstall it and then install this port."
 	@${ECHO} "Note that this port contains beta-quality source code and"
 	@${ECHO} "must be used only wherever absolutely needed, such as for"
-	@${ECHO} "KDE2 snapshot 20000829A and later."
+	@${ECHO} "KDE 2.0 and later."
 	@${FALSE}
 .endif
 .endif

@@ -2,24 +2,24 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.58 2000/09/15 21:40:39 will Exp $
+# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.59 2000/10/04 06:40:06 sobomax Exp $
 #
 
 PORTNAME=	kdelibs
-PORTVERSION=	1.94
+PORTVERSION=	2.0
 CATEGORIES=	x11 x11-toolkits
 MASTER_SITES=	${MASTER_SITE_KDE}
-MASTER_SITE_SUBDIR=	unstable/distribution/2.0Beta5/tar/src
+MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/distribution/tar/generic/src
 
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		qt2.4:${PORTSDIR}/x11-toolkits/qt22 \
 		audiofile.0:${PORTSDIR}/audio/libaudiofile \
 		mimelib.3:${PORTSDIR}/converters/kdesupport2
 
+USE_QT2=	yes
 MOC?=		${X11BASE}/bin/moc2
 SOMAJOR=	4
 SOMINOR=	0
