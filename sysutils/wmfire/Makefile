@@ -3,12 +3,12 @@
 # Date created:				21 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/misc/wmfire/Makefile,v 1.1.1.1 1999/11/03 01:18:35 jim Exp $
+# $FreeBSD: ports/sysutils/wmfire/Makefile,v 1.1.1.1 1999/11/03 20:11:02 jim Exp $
 #
 
 DISTNAME=	wmfire-0.0.3.9pre4
 PKGNAME=	wmfire-0.0.3.9
-CATEGORIES=	misc
+CATEGORIES=	sysutils
 MASTER_SITES=	http://www.zebra.net/~dm/wmfire/
 
 MAINTAINER=	jedgar@fxp.org
