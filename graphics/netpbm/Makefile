@@ -2,11 +2,11 @@
 # Date created:		?
 # Whom:			jmz (original)
 #
-# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.33 2000/06/16 08:48:15 sobomax Exp $
+# $FreeBSD: ports/graphics/netpbm/Makefile,v 1.34 2000/06/16 21:50:50 asami Exp $
 #
 
 PORTNAME=	netpbm
-PORTVERSION=	9.4
+PORTVERSION=	9.5
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
@@ -19,10 +19,10 @@ LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		png.3:${PORTSDIR}/graphics/png
 
 USE_GMAKE=	yes
-INSTALLS_SHLIB=	yes
 MAKEFILE=	GNUmakefile
 ALL_TARGET=	merge
 INSTALL_TARGET=	install-merge install-dev
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 
