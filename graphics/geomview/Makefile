@@ -2,7 +2,7 @@
 # Date created:				5 November 1996
 # Whom:					fenner
 #
-# $FreeBSD: ports/graphics/geomview/Makefile,v 1.25 2000/11/07 23:28:09 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	geomview
@@ -13,6 +13,8 @@ MASTER_SITES=	ftp://ftp.geom.umn.edu/pub/software/geomview/	\
 DISTFILES=	geomview-1.6.1-src.tar.gz
 
 MAINTAINER=	fenner@freebsd.org
+
+BROKEN=		"Does not build"
 
 LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
