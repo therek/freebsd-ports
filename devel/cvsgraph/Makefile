@@ -2,7 +2,7 @@
 # Date created:				2001-02-21
 # Whom:					trevor
 #
-# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.5 2001/03/27 10:40:35 trevor Exp $
+# $FreeBSD: ports/devel/cvsgraph/Makefile,v 1.6 2001/05/31 22:48:46 ade Exp $
 #
 
 PORTNAME=	cvsgraph
@@ -56,7 +56,7 @@ pre-install:
 	${ECHO} ${DOCDIR}/${i} >> ${PLIST}
 .endfor
 .for i in ${EXAMPLES}
-	${ECHO} ${PREFIX}/share/examples/${PORTNAME}/${i} >> ${PLIST}
+	${ECHO} share/examples/${PORTNAME}/${i} >> ${PLIST}
 .endfor
 	${ECHO} @dirrm share/examples/${PORTNAME} >> ${PLIST}
 	${ECHO} @dirrm ${DOCDIR} >> ${PLIST}
