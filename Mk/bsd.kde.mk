@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.14 2002/06/16 20:27:51 will Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.15 2002/07/04 19:35:43 will Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -98,7 +98,7 @@ CONFIGURE_ENV+=        MOC="${MOC}" QTDIR="${QTDIR}"
 
 # Yeah, it's namespace pollution, but this is really the best place for this
 # stuff since arts/kdelibs use it.
-KDE_VERSION=	3.0.2
+KDE_VERSION=	3.0.3
 KDE_ORIGVER=	3.0.1
 KDE_PREFIX?=	${LOCALBASE}
 
