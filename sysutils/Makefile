@@ -1,4 +1,4 @@
-# $FreeBSD: ports/sysutils/Makefile,v 1.159 2001/03/05 12:10:41 demon Exp $
+# $FreeBSD: ports/sysutils/Makefile,v 1.160 2001/03/10 19:24:43 will Exp $
 #
     SUBDIR += yawho
 
@@ -50,6 +50,7 @@
     SUBDIR += gtoaster
     SUBDIR += gtop
     SUBDIR += guitar
+    SUBDIR += gupsc
     SUBDIR += healthd
     SUBDIR += heat
     SUBDIR += idled
