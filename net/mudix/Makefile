@@ -2,7 +2,7 @@
 # Date created:		26 Mar 2000
 # Whom:			will
 #
-# $FreeBSD: ports/net/mudix/Makefile,v 1.4 2000/12/26 07:03:27 will Exp $
+# $FreeBSD: ports/net/mudix/Makefile,v 1.5 2001/04/15 15:44:12 kevlo Exp $
 #
 
 PORTNAME=	mudix
@@ -10,7 +10,7 @@ PORTVERSION=	4.0
 CATEGORIES=	net
 MASTER_SITES=	http://dwizardry.dhs.org/mudix/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	scorpio@drkshdw.org
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	# none
