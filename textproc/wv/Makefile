@@ -2,7 +2,7 @@
 # Date created:         Fri Nov  6 09:06:33 PST 1998
 # Whom:                 sumikawa@kame.net
 #
-# $FreeBSD: ports/textproc/mswordview/Makefile,v 1.8 1999/10/31 02:08:14 cpiazza Exp $
+# $FreeBSD: ports/textproc/mswordview/Makefile,v 1.9 2000/04/09 21:52:53 cpiazza Exp $
 #
 
 PORTNAME=	mswordview
@@ -13,7 +13,7 @@ DISTNAME=	${PORTNAME}-0.5.14-bw6
 
 MAINTAINER=	sumikawa@kame.net
 
-BUILD_DEPENDS=	${LOCALBASE}/lib/libwmf.a:${PORTSDIR}/graphics/libwmf
+LIB_DEPENDS=	wmf.1:${PORTSDIR}/gaphics/libwmf
 
 WRKSRC=		${WRKDIR}/mswordview
 GNU_CONFIGURE=	yes
