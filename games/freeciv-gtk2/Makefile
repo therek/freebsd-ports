@@ -1,9 +1,9 @@
 # New ports collection makefile for:	freeciv
-# Version required:	1.8.1
+# Version required:	1.8.3
 # Date created:		Jun 20 1997
 # Whom:			ada@bsd.org
 #
-# $FreeBSD: ports/games/freeciv/Makefile,v 1.25 1999/09/28 17:23:28 sheldonh Exp $
+# $FreeBSD: ports/games/freeciv/Makefile,v 1.26 1999/09/28 22:47:13 cpiazza Exp $
 #
 
 DISTNAME=	freeciv-1.8.3
@@ -11,7 +11,7 @@ CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.freeciv.org/pub/freeciv/beta_version/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
 
-MAINTAINER=	ada@bsd.org
+MAINTAINER=	sheldonh@freebsd.org
 
 # If USE_GTK is defined, freeciv will be built with a prettier look and
 # feel:
