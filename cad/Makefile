@@ -1,4 +1,4 @@
-# $FreeBSD: ports/cad/Makefile,v 1.21 2001/03/07 11:00:30 knu Exp $
+# $FreeBSD: ports/cad/Makefile,v 1.22 2001/04/03 05:30:47 ijliao Exp $
 #
 
     SUBDIR += acs
@@ -10,6 +10,7 @@
     SUBDIR += irsim
     SUBDIR += iverilog
     SUBDIR += kaskade
+    SUBDIR += libgeda
     SUBDIR += magic
     SUBDIR += mars
     SUBDIR += oregano
