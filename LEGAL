@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.365 2004/10/15 22:21:27 edwin Exp $
+# $FreeBSD: ports/LEGAL,v 1.366 2004/11/10 09:05:29 ahze Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -61,6 +61,7 @@ BCWipe-*		ports/security/bcwipe	Non-Commercial Distribution and
 						Use Only
 bicom*			ports/archivers/bicom	Contact author personally
 						regarding commercial use
+blast-freebsd*		ports/biology/blast	Must be downloaded from vendor site
 bnetd			ports/games/bnetd	has been disabled for legal issue
 bomb.tar.gz		ports/games/bomb	mixture of GPL and X license
 boodler-*		ports/audio/boodler	not for commercial use
