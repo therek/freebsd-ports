@@ -2,7 +2,7 @@
 # Date created:		16 October 1995
 # Whom:			pst
 #
-# $FreeBSD: ports/www/ashe/Makefile,v 1.9 1999/08/31 06:51:37 mharo Exp $
+# $FreeBSD: ports/www/ashe/Makefile,v 1.10 2000/04/10 00:04:28 cpiazza Exp $
 #
 
 PORTNAME=	ashe
@@ -18,7 +18,7 @@ MAINTAINER=	ports@FreeBSD.org
 MAN1=		xhtml.1
 MANCOMPRESSED=	yes
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 NO_WRKSUBDIR=	yes
 USE_X_PREFIX=	yes
 

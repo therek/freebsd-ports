@@ -2,7 +2,7 @@
 # Date created:		27 Feb 1999
 # Whom:			Yoichi Asai <yatt@msc.biglobe.ne.jp>
 #
-# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.12 2000/10/08 08:10:21 asami Exp $
+# $FreeBSD: ports/audio/timidity++-emacs/Makefile,v 1.13 2000/10/19 14:46:52 kevlo Exp $
 #
 
 PORTNAME=	timidity++
@@ -47,7 +47,7 @@ USE_GTK=	yes
 CONFIGURE_ENV=	SHLD="gcc -shared"
 .elif ${INTERFACE} == "motif"
 LINK=		xmmidi
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 CONFIGURE_ENV=	MOTIFLIB="${MOTIFLIB}"
 .elif ${INTERFACE} == "slang"
 .if defined(JAPANESE)

@@ -2,7 +2,7 @@
 # Date created:		21 Aug 1999
 # Whom:			Yin-Jieh Chen <yinjieh@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/znibbles/Makefile,v 1.5 2000/04/14 12:28:39 asami Exp $
+# $FreeBSD: ports/games/znibbles/Makefile,v 1.6 2000/10/05 06:36:16 reg Exp $
 #
 
 PORTNAME=	znibbles
@@ -12,7 +12,7 @@ MASTER_SITES=	ftp://koala.inria.fr/pub/games/znibbles/
 
 MAINTAINER=	yinjieh@csie.nctu.edu.tw
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_GTK=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--without-motif \

@@ -2,7 +2,7 @@
 # Date created:         03 April 2000
 # Whom:                 tonym
 #
-# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.2 2000/11/02 11:25:41 jeh Exp $
+# $FreeBSD: ports/biology/ncbi-toolkit/Makefile,v 1.3 2000/11/03 13:23:15 jeh Exp $
 #
 
 PORTNAME=	ncbi.toolkit
@@ -14,7 +14,7 @@ DIST_SUBDIR=	ncbi
 
 MAINTAINER=	tony.maher@ebioinformatics.com
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 
 #
 # In the files directory we have:

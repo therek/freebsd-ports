@@ -3,7 +3,7 @@
 #
 # Whom:	Andreas Kohout <shanee@augusta.de>
 #
-# $FreeBSD: ports/editors/asedit/Makefile,v 1.7 1999/08/25 05:43:25 obrien Exp $
+# $FreeBSD: ports/editors/asedit/Makefile,v 1.8 2000/04/14 00:25:17 mharo Exp $
 #
 
 PORTNAME=	asedit
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 XMKMF=		xmkmf
 

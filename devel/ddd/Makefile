@@ -3,7 +3,7 @@
 # Date created:			  Tue Jan 28, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/devel/ddd/Makefile,v 1.32 2000/08/26 23:27:52 obrien Exp $
+# $FreeBSD: ports/devel/ddd/Makefile,v 1.33 2000/09/25 19:48:22 kris Exp $
 #
 
 PORTNAME=	ddd
@@ -21,7 +21,7 @@ CONFIGURE_ARGS=	--with-motif-libraries="${LIBXMDIR}" \
 		--with-readline-libraries=/usr/lib
 USE_GMAKE=	yes
 USE_XPM=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 
 MAN1=		ddd.1
 

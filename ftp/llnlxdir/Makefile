@@ -2,7 +2,7 @@
 # Date created:				9 November 1997
 # Whom: Dima Ruban <dima@FreeBSD.org>
 #
-# $FreeBSD: ports/ftp/llnlxdir/Makefile,v 1.9 2000/04/12 05:31:13 mharo Exp $
+# $FreeBSD: ports/ftp/llnlxdir/Makefile,v 1.10 2000/06/07 18:00:05 dima Exp $
 #
 
 PORTNAME=	llnlxdir
@@ -17,7 +17,7 @@ MAINTAINER=	dima@FreeBSD.org
 MAN1=	xdir.1
 
 WRKSRC=		${WRKDIR}/llnlxdir2_1_2/sources
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 
 .include <bsd.port.mk>

@@ -3,7 +3,7 @@
 # Whom:                                 Peng HaiJie   (phj@cn.FreeBSD.org)
 #                                       (phj@transfar.com)
 #
-# $FreeBSD: ports/chinese/stardict/Makefile,v 1.5 2000/04/13 08:27:59 asami Exp $
+# $FreeBSD: ports/chinese/stardict/Makefile,v 1.6 2000/09/19 14:55:34 ade Exp $
 #
 
 PORTNAME=	stardict
@@ -15,13 +15,11 @@ DISTNAME=	${PKGNAME}
 
 MAINTAINER=	phj@cn.FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 
 GNU_CONFIGURE=	yes
-USE_GMAKE    =  yes
-USE_XLIB=	yes
-
-PREFIX=		${X11BASE}
+USE_GMAKE=	yes
+USE_X_PREFIX=	yes
 
 port-install:
 	strip	$(PREFIX)/bin/${PORTNAME}

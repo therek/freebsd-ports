@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/misc/xtar/Makefile,v 1.5 1999/08/25 07:23:19 obrien Exp $
+# $FreeBSD: ports/misc/xtar/Makefile,v 1.6 2000/04/14 08:47:19 asami Exp $
 #
 
 PORTNAME=	xtar
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	utilities
 
 MAINTAINER=	shanee@augusta.de
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 MAN1=		xtar.1
 

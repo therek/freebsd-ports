@@ -2,7 +2,7 @@
 # Date created:		1 Aug 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.17 1999/10/04 04:06:20 chuckr Exp $
+# $FreeBSD: ports/editors/thoteditor/Makefile,v 1.18 2000/04/14 00:25:44 mharo Exp $
 #
 
 PORTNAME=	thoteditor
@@ -20,9 +20,8 @@ DISTNAME=	${PORTNAME}-src-${PORTVERSION}
 MAINTAINER=	chuckr@FreeBSD.org
 
 THOT_SUBDIR=	Target
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 WRKSRC=		$(WRKDIR)/Thot/$(THOT_SUBDIR)
-REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-thot --enable-plugin --without-insure --without-amaya --disable-java --disable-intr --disable-jit --disable-math --disable-ilu
 USE_GMAKE=	yes

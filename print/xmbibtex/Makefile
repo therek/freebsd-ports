@@ -2,7 +2,7 @@
 # Date created:				06 Nov 1997
 # Whom:					Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/xmbibtex/Makefile,v 1.9 2000/04/09 17:41:33 cpiazza Exp $
+# $FreeBSD: ports/print/xmbibtex/Makefile,v 1.10 2000/04/09 17:50:51 cpiazza Exp $
 #
 
 PORTNAME=	xmbibtex
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	apps/tex
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 WRKSRC=		${WRKDIR}/${DISTNAME}/src
 USE_IMAKE=	yes
 NO_INSTALL_MANPAGES=	yes

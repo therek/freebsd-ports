@@ -2,7 +2,7 @@
 # Date created:		4 May 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/cad/electric/Makefile,v 1.2 2000/10/03 05:12:16 lioux Exp $
+# $FreeBSD: ports/cad/electric/Makefile,v 1.3 2000/10/07 21:32:51 asami Exp $
 #
 
 PORTNAME=	electric
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	${PORTNAME}
 MAINTAINER=	lioux@FreeBSD.org
 
 USE_XLIB=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 EXTRA_PATCHES=	${WRKDIR}/patch-prefix
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

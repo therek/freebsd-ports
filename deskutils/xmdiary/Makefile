@@ -2,7 +2,7 @@
 # Date created:		29 Sep 1997
 # Whom:			mi@aldan.ziplink.net
 #
-# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.7 1999/10/26 21:18:41 fenner Exp $
+# $FreeBSD: ports/deskutils/xmdiary/Makefile,v 1.8 2000/04/08 22:04:03 mharo Exp $
 #
 
 PORTNAME=	xmdiary
@@ -16,7 +16,7 @@ MAINTAINER=	mi@aldan.algebra.com
 
 NO_CDROM=	"Don't sell for profit"
 EXTRACT_ONLY=	${DISTNAME}.tar.gz
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 MAN1=		xdaclunix.1 xdalarm.1 xdcustom.1 xddump.1 xdiary.1 xdinitdb.1 \
 		xdlight.1 xdnotify.1 xdprformat.1 xdremind.1 xdremove.1 \

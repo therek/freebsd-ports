@@ -2,7 +2,7 @@
 # Date created:         18 Aug 1999
 # Whom:                 nobu@rd.isac.co.jp
 #
-# $FreeBSD: ports/math/ngraph/Makefile,v 1.6 2000/08/03 14:28:31 sanpei Exp $
+# $FreeBSD: ports/math/ngraph/Makefile,v 1.7 2000/10/25 04:16:41 sanpei Exp $
 #
 
 PORTNAME=       ngraph
@@ -14,7 +14,7 @@ DISTNAME=       Ngraph-${PORTVERSION}-src
 
 MAINTAINER=     sanpei@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_GMAKE=	yes
 
 .include <bsd.port.mk>

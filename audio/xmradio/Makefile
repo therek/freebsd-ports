@@ -2,7 +2,7 @@
 # Date created:		1 Oct 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/audio/xmradio/Makefile,v 1.9 2000/11/01 13:31:02 jeh Exp $
+# $FreeBSD: ports/audio/xmradio/Makefile,v 1.10 2000/11/01 13:33:25 jeh Exp $
 #
 
 PORTNAME=	xmradio
@@ -18,7 +18,7 @@ MAINTAINER=	runge@rostock.zgdv.de
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 
 #post-install:
 #              strip ${PREFIX}/bin/xmradio

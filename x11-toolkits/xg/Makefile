@@ -2,7 +2,7 @@
 # Date created:				3 December 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.3 2000/03/29 07:16:54 kris Exp $
+# $FreeBSD: ports/x11-toolkits/xg/Makefile,v 1.4 2000/04/10 01:11:20 cpiazza Exp $
 #
 
 PORTNAME=	xg
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 MAKEFILE=	makefile
 WRKSRC=		${WRKDIR}/Xg-1.0

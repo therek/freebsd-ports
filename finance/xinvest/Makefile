@@ -2,7 +2,7 @@
 # Date created:		1 Ag 1997
 # Whom:			Pedro Giffuni (orig)
 #
-# $FreeBSD: ports/deskutils/xinvest/Makefile,v 1.6 2000/04/08 22:03:58 mharo Exp $
+# $FreeBSD: ports/deskutils/xinvest/Makefile,v 1.7 2000/08/03 09:22:53 asami Exp $
 #
 
 PORTNAME=	xinvest
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR= applications
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 USE_XPM=	yes
 NO_INSTALL_MANPAGES=	yes

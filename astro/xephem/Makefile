@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/astro/xephem/Makefile,v 1.20 2000/08/03 09:22:21 asami Exp $
+# $FreeBSD: ports/astro/xephem/Makefile,v 1.21 2000/10/28 14:55:37 kevlo Exp $
 #
 
 PORTNAME=	xephem
@@ -16,7 +16,7 @@ MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/GUI/xephem
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_XPM=	yes
 USE_IMAKE=	yes
 MAN1=		xephem.1

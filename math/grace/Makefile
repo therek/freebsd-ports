@@ -2,7 +2,7 @@
 # Date created:		Dec 28 1998
 # Whom:			Lars Koeller <lkoeller@cc.fh-lippe.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.12 2000/07/04 07:12:54 sobomax Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.13 2000/08/03 09:25:37 asami Exp $
 #
 
 PORTNAME=	grace
@@ -36,7 +36,7 @@ MAN1=		grace.1 xmgrace.1 gracebat.1 grconvert.1
 USE_X_PREFIX=	YES
 USE_XPM=	yes
 USE_GMAKE=	YES
-REQUIRES_MOTIF=	YES
+USE_MOTIF=	YES
 HAS_CONFIGURE=	YES
 CONFIGURE_ARGS=	-prefix=${X11BASE} \
 	--enable-extra-incpath=${X11BASE}/include/X11:${LOCALBASE}/include:${LOCALBASE}/include/gd \

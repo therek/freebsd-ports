@@ -2,7 +2,7 @@
 # Date created:		26 Dec 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/www/amaya/Makefile,v 1.12 2000/07/09 18:41:38 dannyboy Exp $
+# $FreeBSD: ports/www/amaya/Makefile,v 1.13 2000/07/13 22:49:00 dannyboy Exp $
 #
 
 PORTNAME=	amaya
@@ -15,7 +15,7 @@ EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	croyle@gelemna.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_XLIB=	yes
 USE_GMAKE=	yes
 DIST_SUBDIR=	amaya

@@ -2,7 +2,7 @@
 # Date created:		17 Apr 1999
 # Whom:			runge@rostock.zgdv.de
 #
-# $FreeBSD: ports/x11/xlupe/Makefile,v 1.3 2000/04/13 19:10:45 cpiazza Exp $
+# $FreeBSD: ports/x11/xlupe/Makefile,v 1.4 2000/08/03 09:28:52 asami Exp $
 #
 
 PORTNAME=	xlupe
@@ -14,10 +14,7 @@ MAINTAINER=	runge@rostock.zgdv.de
 
 USE_IMAKE=	yes
 USE_XPM=	yes
-REQUIRES_MOTIF=	no
-
-# you can build it with a motif interface as well!
-# REQUIRES_MOTIF=	no
+USE_MOTIF=	yes
 
 #post-install:
 #		strip ${PREFIX}/bin/xlupe

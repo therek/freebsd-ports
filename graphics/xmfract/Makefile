@@ -2,7 +2,7 @@
 # Date created:         Thu Aug  1 09:10:22 CDT 1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/graphics/xmfract/Makefile,v 1.7 2000/04/14 10:47:51 asami Exp $
+# $FreeBSD: ports/graphics/xmfract/Makefile,v 1.8 2000/04/23 22:59:38 kris Exp $
 #
 
 PORTNAME=	xmfract
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}_${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 

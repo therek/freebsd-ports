@@ -2,7 +2,7 @@
 # Date created:         		22 October 1996
 # Whom:                 		andreas@marvin.robin.de
 #
-# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.7 2000/04/09 21:52:52 cpiazza Exp $
+# $FreeBSD: ports/textproc/mgdiff/Makefile,v 1.8 2000/10/08 10:23:03 asami Exp $
 #
 
 PORTNAME=	mgdiff
@@ -14,7 +14,7 @@ DISTNAME=	${PORTNAME}
 
 MAINTAINER=	andreas@marvin.robin.de
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=      yes
 MAN1=		mgdiff.1
 

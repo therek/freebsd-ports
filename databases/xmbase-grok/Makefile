@@ -2,7 +2,7 @@
 # Date created:		Sat Aug 30 13:29:42 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.11 2000/04/08 22:49:04 mharo Exp $
+# $FreeBSD: ports/databases/xmbase-grok/Makefile,v 1.12 2000/04/29 21:14:35 cpiazza Exp $
 #
 
 PORTNAME=	xmbase-grok
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 
 GLOK_DATADIR=	${PREFIX}/lib/X11/xmbase-grok

@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/deskutils/xmaddressbook/Makefile,v 1.6 1999/08/25 05:26:56 obrien Exp $
+# $FreeBSD: ports/deskutils/xmaddressbook/Makefile,v 1.7 2000/04/08 22:04:00 mharo Exp $
 #
 
 PORTNAME=	xmaddressbook
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 WRKSRC=		${WRKDIR}/xmaddressbook
 MAN1=		xmaddressbook.1

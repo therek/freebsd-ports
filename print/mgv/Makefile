@@ -2,7 +2,7 @@
 # Date created:		4 Mar 1998
 # Whom:			handy@physics.montana.edu
 #
-# $FreeBSD: ports/print/mgv/Makefile,v 1.17 2000/08/03 09:26:05 asami Exp $
+# $FreeBSD: ports/print/mgv/Makefile,v 1.18 2000/10/08 10:22:44 asami Exp $
 #
 
 PORTNAME=	mgv
@@ -14,7 +14,7 @@ MAINTAINER=	handy@physics.montana.edu
 
 USE_X_PREFIX=	yes
 USE_XPM=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	X11BASE=${X11BASE}
 CONFIGURE_ARGS=	--enable-optimize \

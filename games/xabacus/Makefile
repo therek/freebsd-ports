@@ -2,7 +2,7 @@
 # Date created:				3 May 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xabacus/Makefile,v 1.6 2000/03/30 03:42:44 jedgar Exp $
+# $FreeBSD: ports/games/xabacus/Makefile,v 1.7 2000/04/14 12:26:53 asami Exp $
 #
 
 PORTNAME=	xabacus
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	applications
 MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/xabacus
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 GNU_CONFIGURE=	yes
 

@@ -2,7 +2,7 @@
 # Date created:		19 December 1994
 # Whom:			janek
 #
-# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.26 1999/08/31 06:44:04 mharo Exp $
+# $FreeBSD: ports/ftp/moxftp/Makefile,v 1.27 2000/04/12 05:31:16 mharo Exp $
 #
 
 PORTNAME=	moxftp
@@ -15,20 +15,14 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
 GNU_CONFIGURE=	yes
 USE_X_PREFIX=	yes
 MAN1=		${PROGRAM_NAME}.1
 PLIST_SUB=	PROGRAM_NAME=${PROGRAM_NAME} RESOURCE_NAME=${RESOURCE_NAME}
 STRIP=
 
-# CONFIGURE_ARGS set to :
-#	motif - for motif version, (not tested!!!)
-#	athena - for athena version,
-#	athena3d - for athena 3 d version, (you should have installed Xaw3d!!!)
-#	openlook - for open look version - (not tested!!!)
-# If you use athena3d uncomment LIB_DEPENDS !!!
-.if defined(HAVE_MOTIF)
+.if !defined(WANT_ATHENA_VERSION)
+USE_MOTIF=	yes
 CONFIGURE_ARGS=	motif
 PROGRAM_NAME=mftp
 RESOURCE_NAME=Mftp

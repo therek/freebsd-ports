@@ -2,7 +2,7 @@
 # Date created:				5 November 1996
 # Whom:					fenner
 #
-# $FreeBSD: ports/graphics/geomview/Makefile,v 1.23 2000/08/03 09:24:45 asami Exp $
+# $FreeBSD: ports/graphics/geomview/Makefile,v 1.24 2000/08/15 20:57:43 kris Exp $
 #
 
 PORTNAME=	geomview
@@ -18,7 +18,7 @@ LIB_DEPENDS=	xforms.0:${PORTSDIR}/x11-toolkits/xforms \
 		tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
 WRKSRC=		${WRKDIR}/Geomview
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_X_PREFIX=	yes
 USE_MESA=	yes
 

@@ -2,7 +2,7 @@
 # Date created:				14 April 1996
 # Whom:	Daniel Eischen <deischen@iworks.InterWorks.org>
 #
-# $FreeBSD: ports/deskutils/plan/Makefile,v 1.19 2000/04/08 22:03:48 mharo Exp $
+# $FreeBSD: ports/deskutils/plan/Makefile,v 1.20 2000/04/14 17:10:34 knu Exp $
 #
 # Also update	ports/japanese/plan/ (ja-plan) when this port is updated
 
@@ -15,7 +15,7 @@ MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	deischen@iworks.InterWorks.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 WRKSRC=		${WRKDIR}/plan-1.8.2/src
 ALL_TARGET=	freebsd
 MAN1=		netplan.1 plan.1

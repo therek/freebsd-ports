@@ -2,7 +2,7 @@
 # Date created:         8/16/1996
 # Whom:                 erich@FreeBSD.org
 #
-# $FreeBSD: ports/games/xblackjack/Makefile,v 1.10 2000/04/14 12:27:01 asami Exp $
+# $FreeBSD: ports/games/xblackjack/Makefile,v 1.11 2000/04/23 22:59:23 kris Exp $
 #
 
 PORTNAME=	xblackjack
@@ -14,7 +14,7 @@ EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	ports@FreeBSD.org
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 MAN1=		xblackjack.1
 

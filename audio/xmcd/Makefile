@@ -2,7 +2,7 @@
 # Date created:		16 Februar 1995
 # Whom:			Gennady Sorokopud <gena@NetVision.net.il>
 #
-# $FreeBSD: ports/audio/xmcd/Makefile,v 1.25 2000/02/23 03:40:29 deischen Exp $
+# $FreeBSD: ports/audio/xmcd/Makefile,v 1.26 2000/04/08 21:24:53 mharo Exp $
 #
 
 PORTNAME=	xmcd
@@ -12,7 +12,7 @@ MASTER_SITES=	http://metalab.unc.edu/tkan/download/xmcd/src/
 
 MAINTAINER=	eischen@vigrid.com
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 PLIST_SUB+=	RELEASE=${OSREL:R} ARCH=${ARCH}
 

@@ -2,7 +2,7 @@
 # Date created:		14 July 1995
 # Whom:			jkh
 #
-# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.22 2000/08/03 09:27:31 asami Exp $
+# $FreeBSD: ports/x11-toolkits/FWF/Makefile,v 1.23 2000/08/13 13:10:36 jseger Exp $
 #
 
 PORTNAME=	fwf
@@ -17,7 +17,7 @@ MAINTAINER=	jseger@FreeBSD.org
 BROKEN=		../../lib/libfwf.a: cannot read symbols
 .endif
 
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 USE_IMAKE=	yes
 USE_XPM=	yes
 WRKSRC=		${WRKDIR}/FWF

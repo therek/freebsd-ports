@@ -2,7 +2,7 @@
 # Date created:		15 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/mail/ml/Makefile,v 1.4 1999/08/27 22:29:43 mharo Exp $
+# $FreeBSD: ports/mail/ml/Makefile,v 1.5 2000/04/13 20:00:09 cpiazza Exp $
 #
 
 PORTNAME=		ml
@@ -14,7 +14,7 @@ MAINTAINER=		albast@xs4all.nl
 
 WRKSRC=			${WRKDIR}/${DISTNAME}/src
 USE_IMAKE=		yes
-REQUIRES_MOTIF=		yes
+USE_MOTIF=		yes
 NO_INSTALL_MANPAGES=	yes
 
 pre-configure:

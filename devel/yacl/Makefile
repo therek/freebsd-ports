@@ -2,7 +2,7 @@
 # Date created:		6 March 1998
 # Whom:			Jeroen Hogeveen <albast@xs4all.nl>
 #
-# $FreeBSD: ports/devel/yacl/Makefile,v 1.7 2000/04/14 05:44:42 asami Exp $
+# $FreeBSD: ports/devel/yacl/Makefile,v 1.8 2000/04/14 18:40:15 knu Exp $
 #
 
 PORTNAME=		yacl
@@ -20,7 +20,7 @@ MAKE_ENV=		YACLPATH=${WRKDIR}
 MAKEFILE=		gnuc.mak
 ALL_TARGET=		yacl
 
-REQUIRES_MOTIF=		true
+USE_MOTIF=		true
 
 post-build:
 	@(cd ${WRKSRC}/apps/bmpview; ${MAKE} ${MAKE_ENV} -f gnuc.mak)

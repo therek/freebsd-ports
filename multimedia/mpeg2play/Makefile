@@ -2,7 +2,7 @@
 # Date created:		June 21, 1996
 # Whom:			"Philippe Charnier" <charnier@lirmm.fr>
 #
-# $FreeBSD: ports/graphics/mpeg2play/Makefile,v 1.6 2000/03/31 03:23:30 mharo Exp $
+# $FreeBSD: ports/graphics/mpeg2play/Makefile,v 1.7 2000/04/14 10:46:42 asami Exp $
 #
 
 PORTNAME=	mpeg2play
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.funet.fi/pub/graphics/packages/mpeg/mpeg2play/
 MAINTAINER=	charnier@lirmm.fr
 
 USE_IMAKE=	yes
-REQUIRES_MOTIF=	yes
+USE_MOTIF=	yes
 ALL_TARGET=	mpeg2play
 
 do-install:

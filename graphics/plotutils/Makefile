@@ -2,7 +2,7 @@
 # Date created:		19 June 1998
 # Whom:			Chuck Robey (chuckr)
 #
-# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.15 2000/06/16 21:50:51 asami Exp $
+# $FreeBSD: ports/graphics/plotutils/Makefile,v 1.16 2000/08/21 10:07:32 sobomax Exp $
 #
 
 PORTNAME=	plotutils
@@ -20,11 +20,8 @@ USE_NEWGCC=	yes
 CONFIGURE_ARGS=	--enable-libplotter --enable-libxmi
 MAN1=		ode.1 plot.1 spline.1 tek2plot.1
 
-.ifdef HAVE_MOTIF
+USE_MOTIF=	yes
 CONFIGURE_ARGS+=	--with-motif
 CONFIGURE_ENV=	MOTIFLIB="${MOTIFLIB}"
-# to ensure dependency info is generated properly
-REQUIRES_MOTIF=	yes
-.endif
 
 .include <bsd.port.mk>

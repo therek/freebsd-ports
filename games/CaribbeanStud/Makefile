@@ -2,7 +2,7 @@
 # Date created:				4 July 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.5 2000/07/02 21:56:53 kris Exp $
+# $FreeBSD: ports/games/CaribbeanStud/Makefile,v 1.6 2000/07/14 09:51:12 alex Exp $
 #
 
 PORTNAME=		CaribbeanStud
@@ -15,7 +15,7 @@ DISTNAME=		CS
 MAINTAINER=		ports@FreeBSD.org
 
 MAKEFILE=		Xmakefile
-REQUIRES_MOTIF=		yes
+USE_MOTIF=		yes
 USE_X_PREFIX=		yes
 CFLAGS=			-pedantic
 
