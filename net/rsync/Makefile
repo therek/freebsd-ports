@@ -3,21 +3,16 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.40 2000/04/09 18:13:27 cpiazza Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.41 2000/04/17 00:18:34 reg Exp $
 #
 
 PORTNAME=	rsync
-PORTVERSION=	2.4.1
+PORTVERSION=	2.4.3
 CATEGORIES=     net ipv6
 MASTER_SITES=	ftp://samba.anu.edu.au/pub/rsync/  \
 		ftp://sunsite.auc.dk/pub/unix/rsync/  \
 		ftp://ftp.sunet.se/pub/unix/admin/rsync/  \
 		ftp://ftp.fu-berlin.de/pub/unix/network/rsync/
-
-PATCH_SITES=    ftp://ftp.kame.net/pub/kame/misc/ \
-                ftp://ftp.pasta.cs.uit.no/pub/IPv6/misc/
-PATCHFILES=     rsync-241-v6-20000217.diff.gz
-PATCH_DIST_STRIP=       -p1
 
 MAINTAINER=	obrien@FreeBSD.org
 
