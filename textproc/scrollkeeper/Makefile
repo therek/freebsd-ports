@@ -2,12 +2,12 @@
 # Date created:				6 April 2001
 # Whom:					Rene Hexel <rh@netbsd.org>
 #
-# $FreeBSD: ports/textproc/scrollkeeper/Makefile,v 1.3 2001/04/23 17:06:31 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scrollkeeper
 PORTVERSION=	0.2
-PORTREVISION=	2
+PORTREVISION=	3
 CATEGORIES=	textproc gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		${MASTER_SITE_GNOME:S,%SUBDIR%,stable/sources/scrollkeeper,}
