@@ -2,7 +2,7 @@
 # Date created:			30 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.1 2000/08/30 09:33:03 knu Exp $
+# $FreeBSD: ports/lang/ruby-usersguide/Makefile,v 1.2 2000/09/04 08:53:45 knu Exp $
 #
 
 PORTNAME=	ruby-usersguide
@@ -17,13 +17,13 @@ MAINTAINER=	knu@FreeBSD.org
 SHORTNAME=	${PORTNAME:S/usersguide/uguide/}
 VERSION?=	20000904
 
-PLIST_SUB=	RUBY_VER="${RUBY_VER}" LANGSUFFIX="${LANGSUFFIX}"
+PLIST_SUB=	LANGSUFFIX="${LANGSUFFIX}"
 
 WRKSRC=		${WRKDIR}/${SHORTNAME}
 
 NO_BUILD=	yes
 
-DOCDIR=		${PREFIX}/share/doc/ruby/${PORTNAME}${LANGSUFFIX}
+DOCDIR=		${RUBY_DOCDIR}/${PORTNAME}${LANGSUFFIX}
 
 post-extract:
 	if [ -f ${WRKSRC}/ansi.com ]; then ${RM} ${WRKSRC}/ansi.com; fi
@@ -33,4 +33,6 @@ do-install:
 	${INSTALL_DATA} ${WRKSRC}/* ${DOCDIR}
 	${LN} -fs uguide00.html ${DOCDIR}/index.html
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.ruby.mk"
+.include <bsd.port.post.mk>

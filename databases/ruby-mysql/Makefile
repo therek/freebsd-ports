@@ -2,40 +2,33 @@
 # Date created:		7 Aug 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.3 2000/08/12 20:09:30 knu Exp $
+# $FreeBSD: ports/databases/ruby-mysql/Makefile,v 1.4 2000/08/16 12:21:17 knu Exp $
 #
 
 PORTNAME=	mysql
 PORTVERSION=	2.3.0
 CATEGORIES=	databases ruby
 MASTER_SITES=	http://www.tmtm.org/mysql/ruby/
-PKGNAMEPREFIX=	ruby-
+PKGNAMEPREFIX=	${RUBY_PKGNAMEPREFIX}
 DISTNAME=	${PORTNAME}-ruby-${PORTVERSION}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
 
-BUILD_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
 LIB_DEPENDS=	mysqlclient.6:${PORTSDIR}/databases/mysql322-client
-RUN_DEPENDS=	ruby:${PORTSDIR}/lang/ruby
+
+USE_RUBY=	yes
+USE_RUBY_EXTCONF=	yes
 
 INSTALL_TARGET=	site-install
 
-PLIST_SUB=	RUBY_VER="${RUBY_VER}" RUBY_ARCH="${RUBY_ARCH}"
-
-RUBY?=		${LOCALBASE}/bin/ruby
-RUBY_VER?=	1.4
-RUBY_ARCH?=	${ARCH}-freebsd${OSREL}
-
-do-configure:
-	@cd ${WRKSRC}; \
-	${SETENV} ${CONFIGURE_ENV} ${RUBY} extconf.rb
-
 post-install:
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/ruby/mysql/ja
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/ruby/mysql/
-	${INSTALL_DATA} ${WRKSRC}/README.jp ${PREFIX}/share/doc/ruby/mysql/ja
+	${MKDIR} ${RUBY_DOCDIR}/mysql/ja
+	${INSTALL_DATA} ${WRKSRC}/README ${RUBY_DOCDIR}/mysql/
+	${INSTALL_DATA} ${WRKSRC}/README.jp ${RUBY_DOCDIR}/mysql/ja
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.pre.mk>
+.include "${PORTSDIR}/Mk/bsd.ruby.mk"
+.include <bsd.port.post.mk>
