@@ -3,7 +3,7 @@
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.10 2000/01/22 06:40:14 sumikawa Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.11 2000/02/07 14:26:24 taoka Exp $
 #
 
 DISTNAME=	eb-2.3.7
@@ -15,31 +15,30 @@ DISTFILES=	${EBFILES} ${APPENDIXFILES}
 MAINTAINER=	takamune@avrl.mei.co.jp
 
 EBFILES=	${DISTNAME}.tar.gz
-APPENDIXFILES=	cencro-1.0.tar.gz \
-		chujiten-2.3.tar.gz \
-		chujiten2-2.0.tar.gz \
-		chujiten6-2.3.tar.gz \
-		colloc-2.0.tar.gz \
-		crownfj-2.0.tar.gz \
-		daihyakka-1.0.tar.gz \
-		daijirin-2.0.tar.gz \
-		dd75-2.0.tar.gz \
-		genius-1.0.tar.gz \
-		global-2.0.tar.gz \
-		heritage-2.2.tar.gz \
-		izumi-2.0.tar.gz \
-		jitenban-2.4.tar.gz \
-		jitenban97-2.1.tar.gz \
-		kanjigen-2.0.tar.gz \
-		kanjigen2-2.0.tar.gz \
-		kojien-2.3.tar.gz \
-		kojien2-2.0.tar.gz \
-		kojien4-2.2.tar.gz \
-		oxford-2.0.tar.gz \
-		plus-2.0.tar.gz \
-		readers-2.2.tar.gz \
-		readers2-2.0.tar.gz
-APPENDIXFILES:=	${APPENDIXFILES:S,^,appendix/,}
+APPENDIXFILES=	appendix/cencro-1.0.tar.gz \
+		appendix/chujiten-2.3.tar.gz \
+		appendix/chujiten2-2.0.tar.gz \
+		appendix/chujiten6-2.3.tar.gz \
+		appendix/colloc-2.0.tar.gz \
+		appendix/crownfj-2.0.tar.gz \
+		appendix/daihyakka-1.0.tar.gz \
+		appendix/daijirin-2.0.tar.gz \
+		appendix/dd75-2.0.tar.gz \
+		appendix/genius-1.0.tar.gz \
+		appendix/global-2.0.tar.gz \
+		appendix/heritage-2.2.tar.gz \
+		appendix/izumi-2.0.tar.gz \
+		appendix/jitenban-2.4.tar.gz \
+		appendix/jitenban97-2.1.tar.gz \
+		appendix/kanjigen-2.0.tar.gz \
+		appendix/kanjigen2-2.0.tar.gz \
+		appendix/kojien-2.3.tar.gz \
+		appendix/kojien2-2.0.tar.gz \
+		appendix/kojien4-2.2.tar.gz \
+		appendix/oxford-2.0.tar.gz \
+		appendix/plus-2.0.tar.gz \
+		appendix/readers-2.2.tar.gz \
+		appendix/readers2-2.0.tar.gz
 LISTFILES=	LIST LIST-ja
 
 EXTRACT_ONLY=	${EBFILES}
