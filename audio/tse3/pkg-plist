@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/audio/tse3 $
+@comment $FreeBSD: ports/audio/tse3/pkg-plist,v 1.1 2004/07/26 16:03:11 lofi Exp $
 bin/tse3play
 doc/tse3-0.2.7/AUTHORS
 doc/tse3-0.2.7/About.html
@@ -146,6 +146,8 @@ include/tse3/util/PowerQuantise.h
 include/tse3/util/Snap.h
 include/tse3/util/Song.h
 include/tse3/util/Track.h
+lib/libtse3.a
+lib/libtse3.la
 lib/libtse3.so
 lib/libtse3.so.0
 @dirrm include/tse3/util
