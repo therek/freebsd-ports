@@ -3,7 +3,7 @@
 # Date created:		8 June 1999
 # Whom:			Sheldon Hearn <sheldonh@freebsd.org>
 #
-# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.11 1999/10/16 03:32:10 cpiazza Exp $
+# $FreeBSD: ports/textproc/freegrep/Makefile,v 1.12 1999/11/05 17:49:43 cpiazza Exp $
 #
 
 DISTNAME=	grep-0.14
@@ -17,7 +17,7 @@ MAINTAINER=	howardjp@wam.umd.edu
 
 MAN1=	grep.1 egrep.1 fgrep.1 zgrep.1
 
-BUILD_DEPENDS=  ${PREFIX}/lib/libiberty.so:${PORTSDIR}/devel/freelibiberty
+LIB_DEPENDS=	iberty.1:${PORTSDIR}/devel/freelibiberty
 
 post-extract:
 	@(cd ${WRKSRC}; rm -f .depend)
