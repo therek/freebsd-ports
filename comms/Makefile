@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.38 1999/08/25 05:12:32 obrien Exp $
+# $FreeBSD: ports/comms/Makefile,v 1.39 1999/12/27 01:36:38 steve Exp $
 #
 
     SUBDIR += asmodem
@@ -11,6 +11,7 @@
     SUBDIR += lrzsz
     SUBDIR += mgetty+sendfax
     SUBDIR += minicom
+    SUBDIR += mlan
     SUBDIR += mserver
     SUBDIR += qpage
     SUBDIR += rzsz
