@@ -2,15 +2,15 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.21 2001/04/27 15:16:58 shige Exp $
+# $FreeBSD: ports/editors/emacs20-dl/Makefile,v 1.22 2001/05/09 16:18:26 shige Exp $
 #
 
 PORTNAME=	emacs-dl
 PORTVERSION=	${EMACS_VER}
 PORTREVISION=	1
 CATEGORIES=	editors ipv6
-MASTER_SITES=	${MASTER_SITE_GNU} \
-		http://www.ainet.or.jp/~inoue/software/emacs-xim/
+MASTER_SITES=	http://www.ainet.or.jp/~inoue/software/emacs-xim/ \
+		${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	emacs
 DISTNAME=	emacs-${EMACS_VER}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
