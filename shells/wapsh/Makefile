@@ -2,11 +2,12 @@
 # Date created:        13 January 2001
 # Whom:                George Reid <greid@ukug.uk.freebsd.org>
 #
-# $FreeBSD: ports/shells/wapsh/Makefile,v 1.2 2001/03/29 22:48:09 mharo Exp $
+# $FreeBSD: ports/shells/wapsh/Makefile,v 1.3 2001/05/19 10:21:51 greid Exp $
 #
 
 PORTNAME=       	wapsh
 PORTVERSION=		1.0
+PORTREVISION=		1
 CATEGORIES=     	shells
 MASTER_SITES=   	http://www.exolution.de/wapsh/
 DISTNAME=		${PORTNAME}_${PORTVERSION}
@@ -46,7 +47,7 @@ post-patch:
 
 do-build:
 	(cd ${WRKSRC}/htshd && ${CC} ${CFLAGS} -o htshd htshd.c -lcrypt \
-		-lutil -DUSE_DEV_RANDOM=1)
+		-lutil -DUSE_DEV_RANDOM=1 -DHAVE_SETENV)
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/htshd/htshd ${PREFIX}/sbin
