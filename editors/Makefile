@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.126 2000/09/02 12:54:03 sobomax Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.127 2000/09/08 06:48:20 sobomax Exp $
 #
 
     SUBDIR += AbiWord
@@ -85,6 +85,7 @@
     SUBDIR += semi-xemacs20
     SUBDIR += semi-xemacs20-current
     SUBDIR += staroffice5
+    SUBDIR += staroffice52
     SUBDIR += sted
     SUBDIR += tamago
     SUBDIR += textedit
