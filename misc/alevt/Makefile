@@ -3,7 +3,7 @@
 # Date created:		Wed Aug 18 13:23:00 BST 1999
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/misc/alevt/Makefile,v 1.2 1999/08/25 07:21:04 obrien Exp $
+# $FreeBSD: ports/misc/alevt/Makefile,v 1.3 1999/10/12 10:31:32 roger Exp $
 #
 
 DISTNAME=	alevt-1.5.0
@@ -13,10 +13,10 @@ MASTER_SITES=	http://user.exit.de/froese/alevt/  \
 
 MAINTAINER=	roger@freebsd.org
 
+LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
+
 USE_X_PREFIX=	yes
 USE_GMAKE=	yes
 MAN1=		alevt.1x alevt-date.1 alevt-cap.1
-
-.include <bsd.port.pre.mk>
 
 .include <bsd.port.mk>
