@@ -2,11 +2,11 @@
 # Date created:		9 March 1999
 # Whom:			Dima Sivachenko	<dima@chg.ru>
 #
-# $FreeBSD: ports/misc/vera/Makefile,v 1.4 1999/08/25 07:22:58 obrien Exp $
+# $FreeBSD: ports/misc/vera/Makefile,v 1.5 2000/04/14 08:46:58 asami Exp $
 #
 
 PORTNAME=	vera
-PORTVERSION=	1.5
+PORTVERSION=	1.6
 CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	vera
