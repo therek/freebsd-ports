@@ -2,11 +2,11 @@
 # Date created:				1 August 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/www/galeon/Makefile,v 1.12 2000/11/01 11:32:23 sobomax Exp $
+# $FreeBSD: ports/www/galeon/Makefile,v 1.13 2000/11/28 13:20:32 sobomax Exp $
 #
 
 PORTNAME=	galeon
-PORTVERSION=	0.8
+PORTVERSION=	0.8.3
 CATEGORIES=	www gnome
 MASTER_SITES=	${MASTER_SITE_LOCAL:S/%SUBDIR%/sobomax/} \
 		${MASTER_SITE_SOURCEFORGE}
@@ -38,7 +38,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-mozilla-includes="${MOZHEADERS}" \
 		--with-mozilla-libs="${MOZLIBS}"
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib -pthread -lgcc_r"
 
 CFLAGS+=	-D_REENTRANT -D_THREAD_SAFE -fno-rtti
 
