@@ -2,7 +2,7 @@
 # Date created:				27 December 1999
 # Whom:					freebsd@spatula.net
 #
-# $FreeBSD: ports/sysutils/muse/Makefile,v 1.2 2000/04/09 19:08:08 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	muse
@@ -14,5 +14,9 @@ MAINTAINER=	freebsd@spatula.net
 
 MAN1=		muse.1
 MANCOMPRESSED=	yes
+
+pre-patch:
+	${RM} -f ${WRKSRC}/Makefile
+	${CP} ${FILESDIR}/Makefile ${WRKSRC}
 
 .include <bsd.port.mk>
