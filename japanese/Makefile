@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.274 2000/06/23 19:15:16 taoka Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.275 2000/07/07 17:08:05 sada Exp $
 #
 
     SUBDIR += Canna
@@ -99,6 +99,7 @@
     SUBDIR += kappa20
     SUBDIR += kbanner
     SUBDIR += kcc
+    SUBDIR += kebook-i18n
     SUBDIR += kinput2-canna
     SUBDIR += kinput2-canna+sj3
     SUBDIR += kinput2-canna+sj3+wnn4
