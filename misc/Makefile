@@ -1,4 +1,4 @@
-# $FreeBSD: ports/misc/Makefile,v 1.364 2001/08/08 06:52:38 lioux Exp $
+# $FreeBSD: ports/misc/Makefile,v 1.365 2001/08/08 17:56:04 lioux Exp $
 #
 
     SUBDIR += 40upgrade
@@ -56,6 +56,7 @@
     SUBDIR += felis
     SUBDIR += fep
     SUBDIR += figlet
+    SUBDIR += figlet-fonts
     SUBDIR += findutils
     SUBDIR += fortuneit
     SUBDIR += freedialog
