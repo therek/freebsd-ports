@@ -1,7 +1,7 @@
 #-*- mode: Makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.36 2004/05/21 22:47:45 lofi Exp $
+# $FreeBSD: ports/Mk/bsd.kde.mk,v 1.37 2004/05/22 11:08:35 lofi Exp $
 #
 # Please view me with 4 column tabs!
 
@@ -60,7 +60,18 @@ USE_KDELIBS_VER=2
 
 # USE_KDELIBS_VER section
 .if defined(USE_KDELIBS_VER)
+
+## This is needed for configure scripts to figure out
+## which threads lib to use
+
 CONFIGURE_ENV+= PTHREAD_LIBS="${PTHREAD_LIBS}"
+
+##  XXX - This really belongs into bsd.port.mk
+.if !defined(_NO_KDE_CONFTARGET_HACK)
+CONFIGURE_TARGET=
+CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
+.endif
+
 .if ${USE_KDELIBS_VER} == CVS
 LIB_DEPENDS+=	kwalletbackend:${PORTSDIR}/x11/kdelibs
 USE_QT_VER=		CVS
@@ -163,12 +174,6 @@ CONFIGURE_ENV+=	MOC="${MOC}" LIBQT="-l${QTNAME}" \
 .endif # defined(USE_QT_VER)
 
 # End of USE_QT_VER section
-
-# XXX - This really belongs into bsd.port.mk
-.if !defined(_NO_KDE_CONFTARGET_HACK)
-CONFIGURE_TARGET=
-CONFIGURE_ARGS+=--build=${MACHINE_ARCH}-portbld-freebsd${OSREL}
-.endif
 
 # Assemble plist from parts
 # <alane@freebsd.org> 2002-12-06
