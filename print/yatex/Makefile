@@ -2,7 +2,7 @@
 # Date created:		98/11/17
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/print/yatex/Makefile,v 1.20 2000/04/09 17:50:54 cpiazza Exp $
+# $FreeBSD: ports/print/yatex/Makefile,v 1.21 2000/04/13 11:22:33 knu Exp $
 #
 
 PORTNAME=	yatex
@@ -15,7 +15,7 @@ MAINTAINER=	taoka@FreeBSD.org
 
 .if defined(XEMACS-MULE)
 BUILD_DEPENDS=	xemacs:${PORTSDIR}/japanese/xemacs21-canna \
-		${LOCALBASE}/lib/xemacs/xemacs-packages/pkginfo/MANIFEST.zenirc:${PORTSDIR}/editors/xemacs-sumo-packages \
+		{LOCALBASE}/${EMACS_PACKAGESDIR}/../xemacs-packages/lisp/texinfo/texinfo.el:${PORTSDIR}/editors/xemacs-packages \
 		nkf:${PORTSDIR}/japanese/nkf
 .endif
 PKGINSTALL=	${WRKDIR}/INSTALL
