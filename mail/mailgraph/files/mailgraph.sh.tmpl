@@ -1,6 +1,6 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/mail/mailgraph/files/mailgraph.sh.tmpl,v 1.1 2004/05/12 11:59:07 vs Exp $
 #
 # PROVIDE: mailgraph
 # REQUIRE: DAEMON
@@ -28,7 +28,8 @@ stop_postcmd()
 mailgraph_enable=${mailgraph_enable:-"NO"}
 mailgraph_pidfile=${mailgraph_pidfile:-"%%DATADIR%%/mailgraph.pid"}
 mailgraph_flags=${mailgraph_flags:-"--logfile /var/log/maillog --daemon-rrd=%%DATADIR%% --ignore-localhost --daemon --daemon-pid=${mailgraph_pidfile}"}
-mailgraph_user=${mailgraph_user:-"www"}
+mailgraph_user=${mailgraph_user:-"%%MAILGRAPH_USER%%"}
+mailgraph_group=${mailgraph_group:-"%%MAILGRAPH_GROUP%%"}
 mailgraph_chdir=${mailgraph_chdir:-"%%DATADIR%%"}
 
 load_rc_config $name
