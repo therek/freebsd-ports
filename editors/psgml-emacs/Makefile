@@ -2,11 +2,12 @@
 # Date created:		23 January 1999
 # Whom:			shige
 #
-# $FreeBSD: ports/editors/psgml-emacs/Makefile,v 1.12 2000/10/27 16:12:56 shige Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	psgml
 PORTVERSION=	${PSGML_VER}
+PORTREVISION=	1
 CATEGORIES=	editors elisp
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/sgml/
 PKGNAMESUFFIX=	-${EMACS_PORT_NAME}
