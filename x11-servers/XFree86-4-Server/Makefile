@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-servers/XFree86-4-Server/Makefile,v 1.81 2000/06/08 10:41:59 asami Exp $
 #
 
 PORTNAME=	Server
@@ -56,5 +56,10 @@ MAN5= 		XF86Config.5
 # If you want to disabe Extended input devices (such as wacom tablets),
 # Set following as NO. or type make ExtendefInputDevices=NO
 ExtendedInputDevices?=	YES
+
+.pre-fetch:
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+	${SH} ${PKGDIR}/INSTALL
+.endif
 
 .include <bsd.port.mk>
