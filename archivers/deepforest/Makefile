@@ -2,13 +2,15 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.7 2000/10/04 06:39:58 sobomax Exp $
+# $FreeBSD: ports/archivers/deepforest/Makefile,v 1.8 2000/11/14 00:39:18 asami Exp $
 #
 
 PORTNAME=	deepforest
 PORTVERSION=	1.0a
 CATEGORIES=	${CATEGORY_LIST}
-MASTER_SITES=	http://www.aaa-int.or.jp/~jfactory/JDE/dist/
+MASTER_SITES=	${MASTER_SITE_LOCAL}
+# http://www.aaa-int.or.jp/~jfactory/JDE/dist/
+MASTER_SITE_SUBDIR=	trevor
 DISTNAME=	DeepForest-${PORTVERSION}
 EXTRACT_ONLY=	# extracted directly in install target
 
