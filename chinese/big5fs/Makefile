@@ -2,11 +2,12 @@
 # Date created:         Oct 13, 2000
 # Whom:                 keith@FreeBSD.org
 #
-# $FreeBSD: ports/chinese/big5fs/Makefile,v 1.3 2001/03/28 17:44:25 keith Exp $
+# $FreeBSD: ports/chinese/big5fs/Makefile,v 1.4 2001/04/12 16:43:06 keith Exp $
 #
 
 PORTNAME=		big5fs
 PORTVERSION=		2.1
+PORTREVISION=		1
 CATEGORIES=		chinese
 MASTER_SITES=		ftp://freebsd.sinica.edu.tw/pub/keith/
 
@@ -16,6 +17,21 @@ NO_PACKAGE=		"Different versions definitely cause crash"
 
 SYSDIR=			/usr/src/sys
 KMODDIR=		${PREFIX}/modules
+PLIST_SUB=		MSDOSFSKO=${MSDOSFSKO}
+
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} > 500018
+MSDOSFSDIR=		${SYSDIR}/fs/msdosfs
+MSDOSFSKO=		msdosfs.ko
+MSDOSFSKODIR=	${SYSDIR}/modules/msdosfs
+NTFSDIR=		${SYSDIR}/fs/ntfs
+.else
+MSDOSFSDIR=		${SYSDIR}/msdosfs
+MSDOSFSKO=		msdos.ko
+MSDOSFSKODIR=	${SYSDIR}/modules/msdos
+NTFSDIR=		${SYSDIR}/ntfs
+.endif
 
 pre-extract:
 	@if [ ! -d /sys -o ! -d /usr/src/sys ]; then \
@@ -28,11 +44,11 @@ pre-extract:
 
 do-extract:
 	@${MKDIR} ${WRKDIR}/msdos ${WRKDIR}/cd9660 ${WRKDIR}/ntfs
-	@${CP} -R ${SYSDIR}/msdosfs/*.[ch] ${WRKDIR}/msdos
-	@${CP} ${SYSDIR}/modules/msdos/Makefile ${WRKDIR}/msdos/Makefile.orig
+	@${CP} -R ${MSDOSFSDIR}/*.[ch] ${WRKDIR}/msdos
+	@${CP} ${MSDOSFSKODIR}/Makefile ${WRKDIR}/msdos/Makefile.orig
 	@${CP} -R ${SYSDIR}/isofs/cd9660/*.[ch] ${WRKDIR}/cd9660
 	@${CP} ${SYSDIR}/modules/cd9660/Makefile ${WRKDIR}/cd9660/Makefile.orig
-	@${CP} -R ${SYSDIR}/ntfs/*.[ch] ${WRKDIR}/ntfs
+	@${CP} -R ${NTFSDIR}/*.[ch] ${WRKDIR}/ntfs
 	@${CP} ${SYSDIR}/modules/ntfs/Makefile ${WRKDIR}/ntfs/Makefile.orig
 	@(cd ${WRKDIR}; ${TAR} xzf ${DISTDIR}/${DISTFILES} )
 	@${SED} -e 's,@@PREFIX@@,${PREFIX},' ${FILESDIR}/big5fs.sh > ${WRKDIR}/big5fs.sh
@@ -55,8 +71,8 @@ pre-install:
 
 do-install:
 	@${INSTALL_SCRIPT} ${WRKDIR}/big5fs.sh ${PREFIX}/etc/rc.d
-	@${INSTALL_SCRIPT} ${WRKDIR}/msdos/msdos.ko ${KMODDIR}/big5msdos.ko
-	@${INSTALL_SCRIPT} ${WRKDIR}/cd9660/cd9660.ko ${KMODDIR}/big5cd9660.ko
-	@${INSTALL_SCRIPT} ${WRKDIR}/ntfs/ntfs.ko ${KMODDIR}/big5ntfs.ko
+	@${INSTALL_SCRIPT} ${WRKDIR}/msdos/${MSDOSFSKO} ${KMODDIR}/${MSDOSFSKO}
+	@${INSTALL_SCRIPT} ${WRKDIR}/cd9660/cd9660.ko ${KMODDIR}/cd9660.ko
+	@${INSTALL_SCRIPT} ${WRKDIR}/ntfs/ntfs.ko ${KMODDIR}/ntfs.ko
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
