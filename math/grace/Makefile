@@ -1,8 +1,8 @@
 # New ports collection makefile for: grace
 # Date created:		Dec 28 1998
-# Whom:			Lars Koeller <Lars.Köller@Uni-Bielefeld.de>
+# Whom:			Lars Köller <Lars.Koeller@Uni-Bielefeld.de>
 #
-# $FreeBSD: ports/math/grace/Makefile,v 1.14 2000/11/07 23:28:12 asami Exp $
+# $FreeBSD: ports/math/grace/Makefile,v 1.15 2000/12/29 16:22:01 lkoeller Exp $
 #
 
 PORTNAME=	grace
