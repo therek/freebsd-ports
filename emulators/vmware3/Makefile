@@ -2,7 +2,7 @@
 # Date created:		Fri 26 Nov 19:16:47 EST 1999
 # Whom:			vns@delta.odessa.ua
 #
-# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.26 2000/11/02 12:20:25 knu Exp $
+# $FreeBSD: ports/emulators/vmware2/Makefile,v 1.27 2000/11/02 22:56:44 knu Exp $
 # $vmFreeBSD: vmware/vmmon-only/freebsd/port/Makefile,v 1.15 2000/07/31 00:54:32 vsilyaev Exp $
 #
 
@@ -16,7 +16,7 @@ PORTREVISION=	3
 CATEGORIES=	emulators linux
 MASTER_SITES=	http://www4.vmware.com/software/ \
 		${FREEBSD_MODULE_SITES} \
-		${VMARE_MIRROR_SITES}
+		${VMWARE_MIRROR_SITES}
 DISTFILES=	VMware-${PORTVERSION:R}-${PORTVERSION:E}${EXTRACT_SUFX} \
 		vmmon-freebsd-0.98${EXTRACT_SUFX} \
 		vmnet-freebsd-0.21${EXTRACT_SUFX}
@@ -29,7 +29,7 @@ RUN_DEPENDS=	${LINUXBASE}/dev/rtc:${PORTSDIR}/emulators/rtc
 
 RESTRICTED=	"Not sure if we can redistribute it"
 
-VMARE_MIRROR_SITES=	\
+VMWARE_MIRROR_SITES=	\
 		http://vmware-svca.www.conxion.com/software/ \
 		http://vmware-chil.www.conxion.com/software/ \
 		http://vmware-heva.www.conxion.com/software/ \
