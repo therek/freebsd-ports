@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.152 1999/11/10 17:25:54 nectar Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.153 1999/11/11 10:19:54 nakai Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -62,6 +62,7 @@
     SUBDIR += ocaml
     SUBDIR += otcl
     SUBDIR += p2c
+    SUBDIR += p5-F77
     SUBDIR += p5-Tcl
     SUBDIR += p5-ePerl
     SUBDIR += pbasic
