@@ -2,11 +2,11 @@
 # Date created:				16 August 2000
 # Whom:					Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/databases/db3/Makefile,v 1.25 2001/01/01 10:14:57 will Exp $
+# $FreeBSD: ports/databases/db3/Makefile,v 1.26 2001/01/03 19:55:30 sf Exp $
 #
 
 PORTNAME=	db3
-PORTVERSION=	3.1.17
+PORTVERSION=	3.2.9
 CATEGORIES=	databases
 MASTER_SITES=	http://www.sleepycat.com/update/${PORTVERSION}/
 DISTNAME=	db-${PORTVERSION}
