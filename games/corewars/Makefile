@@ -1,12 +1,12 @@
 # New ports collection makefile for:	corewars
-# Version required:		0.9.1
+# Version required:		0.9.2
 # Date created:			29 February 2000
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/games/corewars/Makefile,v 1.1.1.1 2000/03/01 03:03:33 jim Exp $
+# $FreeBSD: ports/games/corewars/Makefile,v 1.2 2000/03/02 19:59:27 jim Exp $
 #
 
-DISTNAME=	corewars-0.9.1
+DISTNAME=	corewars-0.9.2
 CATEGORIES=	games
 MASTER_SITES=	http://download.sourceforge.net/corewars/
 
