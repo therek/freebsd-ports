@@ -2,7 +2,7 @@
 # Date created:         17 April 2001
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnustep-make/Makefile,v 1.17 2001/04/07 18:03:56 ben Exp $
+# $FreeBSD: ports/devel/gnustep-make/Makefile,v 1.18 2001/06/26 11:52:53 tg Exp $
 #
 
 PORTNAME=	gnustep-make
@@ -46,6 +46,5 @@ post-install:
 	${SED} -e "s/\(objc_threaded:=\)/\1 ${PTHREAD_LIBS}/" \
 		< ${WRKSRC}/config.make \
 		> ${PREFIX}/System/Makefiles/${GNU_ARCH}/${OPSYS:L}/config.make
-	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.post.mk>
