@@ -3,10 +3,11 @@
 # Date created:		18 Mar 1999
 # Whom:			torstenb
 #
-# $FreeBSD: ports/mail/postfix/Makefile,v 1.10 1999/12/30 20:54:22 joe Exp $
+# $FreeBSD: ports/mail/postfix/Makefile,v 1.11 2000/01/02 14:00:03 vanilla Exp $
 #
 
-DISTNAME=	postfix-19991231
+DISTNAME=	postfix-19991231-pl03
+PKGNAME=	postfix-19991231.03
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 		ftp://ftp.snoopy.net/pub/mirrors/postfix/official/ \
@@ -19,6 +20,22 @@ MASTER_SITES=	ftp://ftp.merit.edu/postfix/official/ \
 MAINTAINER=	torstenb@FreeBSD.org
 
 ALL_TARGET=	default
+
+# WARNING: this is based on a patch submitted by a user and has not been
+# tested. Use it at your own risk !
+.if defined(USE_MYSQL) && ${USE_MYSQL} == YES
+BUILD_DEPENDS+=		${PREFIX}/lib/mysql/libmysqlclient.a:${PORTSDIR}/databases/mysql322-client
+POSTFIX_CCARGS+=	-DHAS_MYSQL -I${PREFIX}/include/mysql
+POSTFIX_AUXLIBS+=	${PREFIX}/lib/mysql/libmysqlclient.a -lm
+.endif
+
+# WARNING: this is based on a patch submitted by a user and has not been
+# tested. Use it at your own risk !
+.if defined(USE_LDAP) && ${USE_LDAP} == YES
+BUILD_DEPENDS+=		${PREFIX}/lib/libldap.a:${PORTSDIR}/net/openldap
+POSTFIX_CCARGS+=	-DHAS_LDAP -I${PREFIX}/include
+POSTFIX_AUXLIBS+=	${PREFIX}/lib/libldap.a ${PREFIX}/lib/liblber.a
+.endif
 
 SCRIPTS_ENV+=	MAN1="${MAN1}" MAN5="${MAN5}" MAN8="${MAN8}"
 MAKE_ENV+=	"OPT=${CFLAGS}"
