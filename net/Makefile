@@ -1,9 +1,8 @@
-# $FreeBSD: ports/net/Makefile,v 1.485 2001/03/13 22:51:59 andreas Exp $
+# $FreeBSD$
 #
 
     SUBDIR += 44bsd-rdist
     SUBDIR += 6tunnel
-    SUBDIR += FlowScan
     SUBDIR += NeTraMet
     SUBDIR += SSLtelnet
     SUBDIR += adasockets
@@ -84,6 +83,7 @@
     SUBDIR += fidelio
     SUBDIR += firetalk
     SUBDIR += flow-tools
+    SUBDIR += flowscan
     SUBDIR += fping
     SUBDIR += freewais-sf
     SUBDIR += fspclient
