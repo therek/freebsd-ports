@@ -2,7 +2,7 @@
 # Date created:		May 19, 2000
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/openjade/Makefile,v 1.27 2001/02/05 16:34:58 olgeni Exp $
+# $FreeBSD: ports/textproc/openjade/Makefile,v 1.28 2001/02/27 23:03:36 lioux Exp $
 #
 
 PORTNAME=	openjade
@@ -30,7 +30,7 @@ post-install:
 
 .include <bsd.port.pre.mk>
 
-# This port is cannot be CFLAGS safe, using optimizations such as
+# This port cannot be CFLAGS safe, using optimizations such as
 # 'march=-mpentium -Os' produces core dumps with certain input files
 # Therefore, we'd better remove all machine optimizations and any -O
 # other than -O{0,1,}. Idea taken from palm/prc-tools-gcc.
