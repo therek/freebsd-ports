@@ -2,7 +2,7 @@
 # Date created:				May 4th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ratoolset/Makefile,v 1.15 2000/04/09 18:13:19 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ratoolset
@@ -11,7 +11,7 @@ CATEGORIES=	net tk82
 MASTER_SITES=	ftp://ftp.isi.edu/ra/RAToolSet/
 DISTNAME=	RAToolSet-3.5.8
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	oberman@es.net
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
