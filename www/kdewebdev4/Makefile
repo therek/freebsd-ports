@@ -2,7 +2,7 @@
 # Date created:				19 May 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/quanta/Makefile,v 1.1 2000/05/20 03:54:46 will Exp $
 #
 
 PORTNAME=	quanta
@@ -14,6 +14,7 @@ MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/quanta/ \
 MAINTAINER=	will@FreeBSD.org
 
 LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11/
+BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext/
 
 USE_BZIP2=	yes
 USE_QT=		yes
