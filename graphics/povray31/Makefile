@@ -3,11 +3,11 @@
 # Date created:         3 Dec 1996
 # Whom:                 paulo@isr.uc.pt
 #
-# $FreeBSD: ports/graphics/povray31/Makefile,v 1.6 1999/08/25 06:14:43 obrien Exp $
+# $FreeBSD: ports/graphics/povray31/Makefile,v 1.7 2000/03/31 22:11:50 jmz Exp $
 #
 
 DISTNAME=	povray31
-PKGNAME=	povray-3.1e
+PKGNAME=	povray-3.1g
 CATEGORIES=	graphics
 MASTER_SITES=	ftp://ftp.povray.org/pub/povray/Official/Unix/ \
 		ftp://www.hensa.ac.uk/mirrors/povray/Old-Versions/Official-3.0/Unix/ \
