@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.331 2001/03/31 11:04:29 nakai Exp $
+# $FreeBSD: ports/www/Makefile,v 1.332 2001/03/31 12:02:46 knu Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -49,6 +49,7 @@
     SUBDIR += dillo
     SUBDIR += djvuplugin
     SUBDIR += eddie
+    SUBDIR += emacs-w3m-emacs20
     SUBDIR += encompass
     SUBDIR += erwn
     SUBDIR += evg
