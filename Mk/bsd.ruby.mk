@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.117 2003/06/23 10:16:13 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.118 2003/06/26 03:25:13 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -130,10 +130,10 @@ RUBY?=			${LOCALBASE}/bin/${RUBY_NAME}
 .if defined(RUBY_VER) && ${RUBY_VER} == 1.8
 RUBY_VERSION?=		1.8.0
 RUBY_PORT?=		lang/ruby${RUBY_R}-devel
-RUBY_DISTVERSION?=	${RUBY_VERSION}-preview3
-RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-2003.06.25.diff.bz2
-RUBY_PORTVERSION?=	${RUBY_VERSION}.p3.2003.06.25
-RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
+#RUBY_DISTVERSION?=	${RUBY_VERSION}
+#RUBY_PATCHFILES?=	ruby-${RUBY_DISTVERSION}-yyyy.mm.dd.diff.bz2
+#RUBY_PORTVERSION?=	${RUBY_VERSION}
+#RUBY_WRKSRC=		${WRKDIR}/ruby-${RUBY_VERSION}
 #MASTER_SITE_SUBDIR_RUBY=	snapshots
 .elif defined(RUBY_VER) && ${RUBY_VER} == 1.7
 .error "Ruby 1.7 is obsolete; set RUBY_VER to 1.8 instead."
