@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.455 2003/07/06 23:54:33 kris Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.456 2003/07/11 06:30:43 kris Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -1494,7 +1494,7 @@ USE_SUBMAKE=	yes
 .if defined(USE_REINPLACE)
 REINPLACE_ARGS?=	-i.bak
 .if ${OSVERSION} < 460101 || ( ${OSVERSION} >= 500000 && ${OSVERSION} < 500036 )
-BUILD_DEPENDS+=	${LOCALBASE}/bin/sed_inplace:${PORTSDIR}/textproc/sed_inplace
+PATCH_DEPENDS+=	${LOCALBASE}/bin/sed_inplace:${PORTSDIR}/textproc/sed_inplace
 REINPLACE_CMD?=	${LOCALBASE}/bin/sed_inplace ${REINPLACE_ARGS}
 .else
 REINPLACE_CMD?=	${SED} ${REINPLACE_ARGS}
