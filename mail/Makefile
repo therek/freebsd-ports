@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.259 2001/10/01 11:44:04 tg Exp $
+# $FreeBSD$
 #
 
     SUBDIR += abook
@@ -176,6 +176,7 @@
     SUBDIR += ruby-tmail
     SUBDIR += sendmail
     SUBDIR += sendmail-ldap
+    SUBDIR += sendmail-old
     SUBDIR += sendmail-sasl
     SUBDIR += serialmail
     SUBDIR += sigit
