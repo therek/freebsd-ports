@@ -1,4 +1,4 @@
-# $FreeBSD: ports/print/Makefile,v 1.112 2000/08/18 05:44:21 andreas Exp $
+# $FreeBSD: ports/print/Makefile,v 1.113 2000/08/22 11:45:39 tg Exp $
 #
 
     SUBDIR += a2ps-a4
@@ -22,6 +22,7 @@
     SUBDIR += c2ps-letter
     SUBDIR += cdlabelgen
     SUBDIR += cjk-lyx
+    SUBDIR += clibpdf
     SUBDIR += cmpsfont
     SUBDIR += detex
     SUBDIR += dvi2tty
