@@ -2,14 +2,14 @@
 # Date created:         03 October 2000
 # Whom:                 Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.2 2001/02/05 14:31:42 olgeni Exp $
+# $FreeBSD: ports/databases/py-gdbm/Makefile,v 1.3 2001/03/01 12:24:17 tg Exp $
 #
 
 PORTNAME=	gdbm
 PORTVERSION=	${PYTHON_PORTVERSION}
 CATEGORIES=	databases python
-MASTER_SITES=	ftp://www.python.org/pub/python/src/ \
-		ftp://ftp.cwi.nl/pub/python/src/
+MASTER_SITES=	http://www.python.org/ftp/python/${PORTVERSION}/ \
+		http://SunSITE.Informatik.RWTH-Aachen.DE/python/ftp/python/${PORTVERSION}/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTFILES=	${PYTHON_DISTFILE}
 
