@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/irc/pisg/pkg-plist,v 1.12 2003/11/21 15:11:23 mich Exp $
+@comment $FreeBSD: ports/irc/pisg/pkg-plist,v 1.13 2004/04/29 09:17:11 mich Exp $
 bin/pisg
 etc/pisg/pisg.cfg.sample
 %%SITE_PERL%%/Pisg.pm
@@ -40,6 +40,8 @@ etc/pisg/pisg.cfg.sample
 %%SITE_PERL%%/Pisg/Parser/Format/muh2.pm
 %%SITE_PERL%%/Pisg/Parser/Format/Vision.pm
 %%SITE_PERL%%/Pisg/Parser/Format/supy.pm
+%%SITE_PERL%%/Pisg/Parser/Format/javabot.pm
+%%SITE_PERL%%/Pisg/Parser/Format/rbot.pm
 %%SITE_PERL%%/Pisg/Parser/Logfile.pm
 %%DATADIR%%/layout/justgrey.css
 %%DATADIR%%/layout/darkgalaxy.css
@@ -48,6 +50,7 @@ etc/pisg/pisg.cfg.sample
 %%DATADIR%%/layout/ocean.css
 %%DATADIR%%/layout/darkred.css
 %%DATADIR%%/layout/orange_grey.css
+%%DATADIR%%/layout/pisg.css
 %%DATADIR%%/gfx/blue-h.png
 %%DATADIR%%/gfx/blue-v.png
 %%DATADIR%%/gfx/green-h.png
