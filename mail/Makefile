@@ -1,4 +1,4 @@
-# $FreeBSD: ports/mail/Makefile,v 1.212 2001/04/04 21:53:43 nsayer Exp $
+# $FreeBSD: ports/mail/Makefile,v 1.213 2001/04/07 07:42:46 will Exp $
 #
 
     SUBDIR += abook
@@ -41,6 +41,7 @@
     SUBDIR += gkrellmmailwatch
     SUBDIR += glacier
     SUBDIR += glbiff
+    SUBDIR += gmime
     SUBDIR += grepmail
     SUBDIR += hbiff
     SUBDIR += icqmail
