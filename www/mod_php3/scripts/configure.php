@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.79 2000/02/29 15:25:19 dirk Exp $
+# $FreeBSD: ports/www/apache13-php3/scripts/configure.php,v 1.80 2000/02/29 21:46:06 dirk Exp $
 
 if [ "${BATCH}" ]; then
 	${MKDIR} ${WRKDIRPREFIX}${CURDIR}
@@ -25,7 +25,8 @@ IMAP		"PHP:    IMAP support" OFF \
 MySQL		"PHP:    MySQL database support" ON \
 PostgreSQL	"PHP:    PostgreSQL database support" OFF \
 mSQL		"PHP:    mSQL database support" OFF \
-Sybase		"PHP:    Sybase/MS-SQL database support" OFF \
+SybaseDB	"PHP:    Sybase/MS-SQL database support (DB-lib)" OFF \
+SybaseCT	"PHP:    Sybase/MS-SQL database support (CT-lib)" OFF \
 dBase		"PHP:    dBase database support" OFF \
 OpenLDAP	"PHP:    OpenLDAP support" OFF \
 SNMP		"PHP:    SNMP support" OFF \
@@ -111,11 +112,25 @@ while [ "$1" ]; do
 			echo "BUILD_DEPENDS+=	msql:\${PORTSDIR}/databases/msql"
 			echo "PHP_CONF_ARGS+=	--with-msql=\${PREFIX}"
 			;;
-		\"Sybase\")
+		\"SybaseDB\")
 			echo "LIB_DEPENDS+=	sybdb.0:\${PORTSDIR}/databases/freetds"
-			echo "LIB_DEPENDS+=	ct.0:\${PORTSDIR}/databases/freetds"
 			echo "PHP_CONF_ARGS+=	--with-sybase=\${PREFIX}"
+			if [ "$SYBASECT" ]; then
+				echo "SybaseDB and SybaseCT are mutually exclusive." > /dev/stderr
+				rm -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
+				exit 1
+			fi
+			SYBASEDB=1
+			;;
+		\"SybaseCT\")
+			echo "LIB_DEPENDS+=	ct.0:\${PORTSDIR}/databases/freetds"
 			echo "PHP_CONF_ARGS+=	--with-sybase-ct=\${PREFIX}"
+			if [ "$SYBASEDB" ]; then
+				echo "SybaseDB and SybaseCT are mutually exclusive." > /dev/stderr
+				rm -f ${WRKDIRPREFIX}${CURDIR}/Makefile.inc
+				exit 1
+			fi
+			SYBASECT=1
 			;;
 		\"dBase\")
 			echo "PHP_CONF_ARGS+=	--with-dbase"
