@@ -3,7 +3,7 @@
 # Date created:		26 Aug 1997
 # Whom:			Mita Yoshio <mita@jp.FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/vfghostscript55/Makefile,v 1.35 1999/08/25 05:27:37 obrien Exp $
 #
 
 DISTNAME=	ghostscript-5.50
@@ -18,7 +18,7 @@ MASTER_SITES=	ftp://ftp.cs.wisc.edu/ghost/aladdin/gs550/ \
 		${MASTER_SITE_LOCAL} \
 		${MASTER_SITE_PORTS_JP} \
 		http://www.ldl.jaist.ac.jp/~akr/nonresearch/free-software/ghostscript/ \
-		http://www.jaist.ac.jp/~daisuke/Linux/gs/gs5/Original-sources/OLD/ \
+		http://www.flatout.org/~daisuke/Linux/gs/gs5/Original-sources/OLD/ \
 		http://www.rd.nacsis.ac.jp/~katayama/homepage/ghostscript/jpdf/ \
 		http://itohws03.ee.noda.sut.ac.jp/~matsuda/VFlib-FT/ \
 		http://www.ceres.dti.ne.jp/~owatanab/gdevnpdl/ \
