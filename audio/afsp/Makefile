@@ -2,14 +2,14 @@
 # Date created:				30 May 2000
 # Whom:					Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/audio/afsp/Makefile,v 1.1 2000/06/02 02:16:32 will Exp $
 #
 
 PORTNAME=	afsp
-PORTVERSION=	4.3
+PORTVERSION=	5.0
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.tsp.ece.mcgill.ca/pub/AFsp/
-DISTNAME=	AFsp-v4r3
+DISTNAME=	AFsp-v5r0
 
 MAINTAINER=	ginga@athena.club.ne.jp
 
