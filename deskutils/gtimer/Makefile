@@ -2,7 +2,7 @@
 # Date created:        25 February 1999
 # Whom:                Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/deskutils/gtimer/Makefile,v 1.10 2000/06/20 21:45:53 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gtimer
@@ -14,7 +14,8 @@ MAINTAINER=	ports@FreeBSD.org
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
 GNU_CONFIGURE=	yes
 
 MAN1=		gtimer.1

@@ -2,7 +2,7 @@
 # Date created:				21 October 2000
 # Whom:					ryan
 #
-# $FreeBSD: ports/deskutils/loserjabber/Makefile,v 1.4 2001/02/17 18:58:14 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	loserjabber
@@ -14,7 +14,9 @@ MASTER_SITE_SUBDIR=	loserjabber
 MAINTAINER=	ryan@manunkind.org
 
 GNU_CONFIGURE=	yes
-USE_GTK=	yes
+USE_GNOMENG=	yes
+USE_GNOME=	gtk12
+
 MAN1=		loserjabber.1
 MANCOMPRESSED=	no
 
