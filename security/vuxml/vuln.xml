@@ -28,7 +28,7 @@ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE
 OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS DOCUMENTATION,
 EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.328 2004/10/27 21:11:09 josef Exp $
+  $FreeBSD: ports/security/vuxml/vuln.xml,v 1.329 2004/11/01 21:24:39 mezz Exp $
 
 -->
 <vuxml xmlns="http://www.vuxml.org/apps/vuxml-1">
@@ -94,7 +94,7 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 	<name>bogofilter-qdbm</name>
 	<name>bogofilter-tdb</name>
 	<name>ru-bogofilter</name>
-	<range><gt>0.16.4</gt><lt>0.92.8</lt></range>
+	<range><ge>0.17.4</ge><lt>0.92.8</lt></range>
       </package>
     </affects>
     <description>
@@ -109,13 +109,16 @@ EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     </description>
     <references>
       <freebsdpr>73144</freebsdpr>
+      <cvename>CAN-2004-1007</cvename>
       <mlist msgid="20041008143604.GA14934@scowler.net">http://article.gmane.org/gmane.mail.bogofilter.devel/3308</mlist>
       <mlist msgid="m3r7o892vj.fsf@merlin.emma.line.org">http://article.gmane.org/gmane.mail.bogofilter.devel/3317</mlist>
       <url>http://bugs.debian.org/275373</url>
+      <url>http://bogofilter.sourceforge.net/security/bogofilter-SA-2004-01</url>
     </references>
     <dates>
       <discovery>2004-10-09</discovery>
       <entry>2004-10-26</entry>
+      <modified>2004-11-03</modified>
     </dates>
   </vuln>
 
