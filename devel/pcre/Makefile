@@ -2,7 +2,7 @@
 # Date created:				08 July 1998
 # Whom:					dom
 #
-# $FreeBSD: ports/devel/pcre/Makefile,v 1.8 2001/01/24 02:09:03 kuriyama Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pcre
@@ -11,7 +11,7 @@ CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
-MAINTAINER=	dom@myrddin.demon.co.uk
+MAINTAINER=	dom@happygiraffe.net
 
 USE_LIBTOOL=	yes
 

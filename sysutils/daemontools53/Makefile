@@ -1,8 +1,8 @@
 # New ports collection makefile for:	daemontools
 # Date created:		09 June 1998
-# Whom:			Dom Mitchell <dom@myrddin.demon.co.uk>
+# Whom:			Dom Mitchell <dom@happygiraffe.net>
 #
-# $FreeBSD: ports/sysutils/daemontools53/Makefile,v 1.2 2000/07/29 16:32:34 nbm Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	daemontools
@@ -11,7 +11,7 @@ CATEGORIES=	sysutils
 MASTER_SITES=	http://cr.yp.to/daemontools/ \
 		ftp://cr.yp.to/daemontools/
 
-MAINTAINER=	dom@myrddin.demon.co.uk
+MAINTAINER=	dom@happygiraffe.net
 
 NO_PACKAGE=	"Unsure of djb\'s license"
 

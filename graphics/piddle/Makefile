@@ -1,8 +1,8 @@
 # Ports collection makefile for:	piddle
 # Date created:				29 Feb 2000
-# Whom:					dom@myrddin.demon.co.uk
+# Whom:					dom@happygiraffe.net
 #
-# $FreeBSD: ports/graphics/piddle/Makefile,v 1.7 2000/09/25 12:30:48 tg Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	piddle
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 DISTFILES=	${DISTNAME}-5.tgz
 
-MAINTAINER=	dom@myrddin.demon.co.uk
+MAINTAINER=	dom@happygiraffe.net
 
 USE_PYTHON=	yes
 NO_BUILD=	yes

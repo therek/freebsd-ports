@@ -1,8 +1,8 @@
 # New ports collection makefile for:	gxedit
 # Date created:				01 Jul 1998
-# Whom:					Dom Mitchell <dom@myrddin.demon.co.uk>
+# Whom:					Dom Mitchell <dom@happygiraffe.net>
 #
-# $FreeBSD: ports/editors/gxedit/Makefile,v 1.25 2000/07/07 19:59:01 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gxedit
@@ -12,7 +12,7 @@ MASTER_SITES=	http://mirrors.darkelf.net/GXedit/ \
 		http://www.linuxbox.com/~drow/GXedit/
 DISTNAME=	GXedit${PORTVERSION}
 
-MAINTAINER=	dom@myrddin.demon.co.uk
+MAINTAINER=	dom@happygiraffe.net
 
 USE_X_PREFIX=	yes
 USE_GTK=	yes
