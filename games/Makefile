@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.412 2001/09/11 14:05:00 sobomax Exp $
+# $FreeBSD: ports/games/Makefile,v 1.413 2001/09/15 23:08:17 will Exp $
 #
 
     SUBDIR += 0verkill
@@ -121,6 +121,7 @@
     SUBDIR += hlserver-admin
     SUBDIR += hlserver-cs
     SUBDIR += hlserver-dod
+    SUBDIR += hlserver-existence
     SUBDIR += hlserver-fa
     SUBDIR += hlserver-flf
     SUBDIR += hlserver-glbwar
