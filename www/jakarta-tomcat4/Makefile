@@ -2,7 +2,7 @@
 # Date created:		20 Oct 2000
 # Whom:			des
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/jakarta-tomcat/Makefile,v 1.1 2000/10/21 14:44:26 des Exp $
 #
 
 PORTNAME=	jakarta-tomcat
@@ -15,7 +15,7 @@ DIST_SUBDIR=	jakarta/tomcat/${PORTVERSION}
 MAINTAINER=	des@FreeBSD.org
 
 BUILD_DEPENDS=	pinstall:${PORTSDIR}/devel/pinstall
-RUN_DEPENDS=	javac:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk1.1.8/bin/javac:${PORTSDIR}/java/jdk
 
 NO_BUILD=	yes
 
