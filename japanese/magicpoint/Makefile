@@ -3,7 +3,7 @@
 # Date created:		25 Dec 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.11 1999/08/27 22:29:26 mharo Exp $
+# $FreeBSD: ports/japanese/magicpoint/Makefile,v 1.12 1999/09/10 06:54:16 sumikawa Exp $
 #
 
 MASTERDIR=	${.CURDIR}/../../misc/magicpoint
@@ -15,6 +15,8 @@ PKGNAME=	ja-magicpoint-1.05a
 CATEGORIES=	japanese
 
 MAINTAINER=	itojun@itojun.org
+
+BROKEN=		"Security hole (buffer overflow yielding setgid uucp)"
 
 # dirty, but this is required for version independent-ness
 CONFIGURE_ARGS=		--with-vfontcap=`${ECHO} ${LOCALBASE}/share/VFlib/*/vfontcap | tail -1`
