@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.246 2000/01/03 20:17:23 cpiazza Exp $
+# $FreeBSD: ports/games/Makefile,v 1.247 2000/01/12 05:49:38 green Exp $
 #
 
     SUBDIR += 3dc
@@ -170,6 +170,7 @@
     SUBDIR += xhime
     SUBDIR += xinfocom
     SUBDIR += xinvaders
+    SUBDIR += xinvaders3d
     SUBDIR += xisola
     SUBDIR += xjewel
     SUBDIR += xjig
