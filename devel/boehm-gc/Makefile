@@ -3,11 +3,11 @@
 # Date created:		15 November 1996
 # Whom:			Mike McGaughey <mmcg@cs.monash.edu.au>
 #
-# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.7 1999/08/25 05:47:27 obrien Exp $
+# $FreeBSD: ports/devel/boehm-gc/Makefile,v 1.8 1999/11/01 00:42:52 steve Exp $
 #
 
-DISTNAME=	gc5.0alpha3
-PKGNAME=	boehm-gc-5.0a3
+DISTNAME=	gc5.0alpha4
+PKGNAME=	boehm-gc-5.0a4
 CATEGORIES=	devel
 MASTER_SITES=	http://www.hpl.hp.com/personal/Hans_Boehm/gc/gc_source/	\
 		http://reality.sgi.com/boehm_mti/gc_source/
