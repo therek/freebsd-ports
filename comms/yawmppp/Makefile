@@ -2,7 +2,7 @@
 # Date created:				07 Mar 2000
 # Whom:					Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.5 2001/07/29 23:05:45 lioux Exp $
+# $FreeBSD: ports/comms/yawmppp/Makefile,v 1.6 2001/08/03 18:05:51 lioux Exp $
 #
 
 PORTNAME=	yawmppp
@@ -36,8 +36,8 @@ pre-patch:
 
 do-install:
 .for file in dockapp/yagetmodemspeed dockapp/${PORTNAME} gtklog/${PORTNAME}.log \
-	${PORTNAME}.pref ${PORTNAME}.thin 
-	@${INSTALL_PROGRAM} ${WRKSRC}/${file} ${PREFIX}/bin
+	gtksetup/${PORTNAME}.pref thinppp/${PORTNAME}.thin 
+	@${INSTALL_PROGRAM} ${WRKSRC}/src/${file} ${PREFIX}/bin
 .endfor
 	@${INSTALL_MAN} ${WRKSRC}/src/${PORTNAME}.1x ${PREFIX}/man/man1
 .if !defined(NOPORTDOCS)
