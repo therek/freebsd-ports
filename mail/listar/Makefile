@@ -2,7 +2,7 @@
 # Date created:		09 Apr 2000
 # Whom:			Peter Losher <plosher@wwiv.com>
 #
-# $FreeBSD: ports/mail/listar/Makefile,v 1.3 2001/06/17 20:40:10 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	listar
@@ -12,6 +12,8 @@ MASTER_SITES=	ftp://ftp.listar.org/pub/listar/snapshots/tar/
 DISTFILES=	listar-1.0.0-snap20010225${EXTRACT_SUFX}
 
 MAINTAINER=	plosher@wwiv.com
+
+FORBIDDEN=	"Remotely exploitable buffer overflow by submitted mail"
 
 USE_GMAKE=	yes
 
