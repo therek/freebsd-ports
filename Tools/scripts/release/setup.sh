@@ -1,7 +1,11 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/Tools/scripts/release/setup.sh,v 1.1 2002/03/27 00:45:47 will Exp $
 
-dir="/var/portbuild/4/bak"
+dir=$@
+if [ ! -d $dir ]; then
+	echo "Directory not found.  Aborting."
+	exit 1
+fi
 
 tar xzvf $dir/ports.tar.gz
 cd ports
