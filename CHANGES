@@ -517,7 +517,7 @@ AUTHOR:	portmgr@FreeBSD.org
 	omit SIZE attributes for specific distfiles in the future.
 
 20040129:
-AUTHOR:	erwin@FreeBSD.org
+AUTHOR:	trevor@FreeBSD.org
 	SIZE lines in distinfo files:  if you set USE_SIZE when you do "make
 	makesum", the byte sizes of the distfiles will be listed in the
 	distinfo file. Then, if a distfile is replaced on its master site with
@@ -562,4 +562,4 @@ author a beer.
 Contact Erwin Lansing if you have any questions about your use of
 this document.
 
-$FreeBSD: ports/CHANGES,v 1.19 2004/06/10 07:38:42 kris Exp $
+$FreeBSD: ports/CHANGES,v 1.20 2004/07/05 20:47:32 krion Exp $
