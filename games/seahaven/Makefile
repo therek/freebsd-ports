@@ -2,13 +2,15 @@
 # Date created:         23 Dec 1998
 # Whom:                 imp
 #
-# $FreeBSD: ports/games/seahaven/Makefile,v 1.7 1999/08/31 06:44:25 mharo Exp $
+# $FreeBSD: ports/games/seahaven/Makefile,v 1.8 2000/04/14 12:26:31 asami Exp $
 #
 
 PORTNAME=	seahaven
 PORTVERSION=	1.41
 CATEGORIES=	games
-MASTER_SITES=	http://www.cinenet.net/users/spitzak/seahaven/
+MASTER_SITES=	http://seahaven.sourceforge.net/ \
+		${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=${PORTNAME}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	imp@FreeBSD.org
