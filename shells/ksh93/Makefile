@@ -2,7 +2,7 @@
 # Date created:                2000-12-26
 # Whom:                        Christian Weisgerber <naddy@mips.inka.de>
 #
-# $FreeBSD$
+# $FreeBSD: ports/shells/ksh93/Makefile,v 1.8 2001/02/26 05:14:14 steve Exp $
 
 PORTNAME=	ksh93
 PORTVERSION= 	${VERSION:S/-//g}
@@ -17,20 +17,17 @@ IS_INTERACTIVE=	yes	# must acknowledge license
 
 DISTNAME=	${PORTNAME}-${VERSION}
 DISTFILES=	INIT.${VERSION}.tgz ast-ksh.${VERSION}.tgz
-EXTRACT_ONLY=	INIT.${VERSION}.tgz
 
 NO_WRKSUBDIR=	yes
+MAKE_ARGS=	CC='${CC}' CCFLAGS='${CFLAGS}' SHELL='${SH}'
+.if defined(WANT_STATIC)
+MAKE_ARGS+=	LDFLAGS=-static
+.endif
 
 MAN1=		ksh93.1
 
-post-extract:
-	@${MKDIR} ${WRKSRC}/lib/package/tgz
-	@${LN} -s ${DISTDIR}/ast-ksh.${VERSION}.tgz ${WRKSRC}/lib/package/tgz/
-	@cd ${WRKSRC}; bin/package read
-
 do-build:
-	@cd ${WRKSRC}; bin/package make \
-	    CC='${CC}' CCFLAGS='${CFLAGS}' LDFLAGS=-static
+	@cd ${WRKSRC}; bin/package make ${MAKE_ARGS}
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/arch/freebsd.${ARCH}/bin/ksh \
