@@ -3,7 +3,7 @@
 # Date created:	 	06 January 1999
 # Whom:			Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/vcdgear/Makefile,v 1.1 2000/01/06 08:46:03 cpiazza Exp $
 #
 
 DISTNAME=	vcdgear_FreeBSD
@@ -19,6 +19,7 @@ MAINTAINER=	cpiazza@FreeBSD.org
 BROKEN=	'Only an ELF binary is distributed'
 .endif
 
+ONLY_FOR_ARCHS=	i386
 NO_BUILD=	true
 WRKSRC=		${WRKDIR}
 EXTRACT_AFTER_ARGS=	> ${WRKSRC}/vcdgear
