@@ -2,7 +2,7 @@
 # Date created:		2 July 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/databases/sqlrelay/Makefile,v 1.1 2001/07/06 10:24:49 knu Exp $
+# $FreeBSD: ports/databases/sqlrelay/Makefile,v 1.2 2001/07/23 04:46:32 knu Exp $
 #
 
 PORTNAME=	${SQLRELAY_PORTNAME}
@@ -122,7 +122,6 @@ PLIST_SUB=	IF_SQLITE=${IF_SQLITE} \
 #  --with-db2-prefix             Location of DB2
 
 post-extract:
-	${RM} -rf ${WRKSRC}/src/api/perl/*/blib
 	${MKDIR} ${WRKDIR}/prefixes/libxml
 	${LN} -s ${LOCALBASE}/include/libxml2 ${WRKDIR}/prefixes/libxml/include
 	${LN} -s ${LOCALBASE}/lib ${WRKDIR}/prefixes/libxml/lib
