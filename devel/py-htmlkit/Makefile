@@ -2,7 +2,7 @@
 # Date created:				06/08/2000
 # Whom:					kbyanc@posi.net
 #
-# $FreeBSD: ports/devel/py-htmlkit/Makefile,v 1.1 2000/06/09 22:01:55 will Exp $
+# $FreeBSD: ports/devel/py-htmlkit/Makefile,v 1.2 2000/09/08 12:23:57 tg Exp $
 #
 
 PORTNAME=		HtmlKit
@@ -11,7 +11,6 @@ CATEGORIES=		devel python www
 MASTER_SITES=		http://www.dekorte.com/Software/Python/HtmlKit/Download/
 PKGNAMEPREFIX=		py-
 DISTNAME=		HtmlKit
-EXTRACT_SUFX=		.tar
 
 MAINTAINER=		kbyanc@posi.net
 
