@@ -2,15 +2,15 @@
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.12 2000/04/09 18:12:42 cpiazza Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.13 2000/04/29 23:55:35 steve Exp $
 #
 
 PORTNAME=	ntp
-PORTVERSION=	4.0.99i
+PORTVERSION=	4.0.99k
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/ntp4/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	pat@databits.net_
 
 # ntp's configure script created by autoconf 2.14.1 doesn't work
 # if GNU_CONFIGURE is defined
