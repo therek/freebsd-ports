@@ -1,4 +1,4 @@
-# $FreeBSD: ports/comms/Makefile,v 1.54 2001/08/30 07:26:32 knu Exp $
+# $FreeBSD$
 #
 
     SUBDIR += asmodem
@@ -13,6 +13,7 @@
     SUBDIR += hylafax
     SUBDIR += kermit
     SUBDIR += lrzsz
+    SUBDIR += ltmdm
     SUBDIR += mgetty+sendfax
     SUBDIR += minicom
     SUBDIR += mlan
