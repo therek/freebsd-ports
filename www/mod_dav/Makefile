@@ -3,7 +3,7 @@
 # Date created:		Sun Oct 17, 1999
 # Whom:			patrick@mindstep.com
 #
-# $FreeBSD: ports/www/mod_dav/Makefile,v 1.1.1.1 1999/11/26 19:32:18 steve Exp $
+# $FreeBSD: ports/www/mod_dav/Makefile,v 1.2 1999/12/24 13:52:53 jedgar Exp $
 #
 
 DISTNAME=	mod_dav-${DAV_VERSION}-${APACHE_VERSION}
@@ -13,8 +13,8 @@ MASTER_SITES=	http://www.webdav.org/mod_dav/
 
 MAINTAINER=	patrick@mindstep.com
 
-BUILD_DEPENDS=	${PREFIX}/sbin/apxs:${PORTSDIR}/www/apache13
-RUN_DEPENDS=	${PREFIX}/sbin/apxs:${PORTSDIR}/www/apache13
+BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
+RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
 # This port will work with the following version of Apache and anything newer.
 APACHE_VERSION=	1.3.6
