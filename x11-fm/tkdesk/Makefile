@@ -2,7 +2,7 @@
 # Date created:         30 Jul 1996
 # Whom:                 shanee@rabbit.augusta.de
 #
-# $FreeBSD: ports/x11-fm/tkdesk/Makefile,v 1.14 2000/04/10 00:39:30 cpiazza Exp $
+# $FreeBSD: ports/x11-fm/tkdesk/Makefile,v 1.15 2000/05/01 17:58:33 jseger Exp $
 #
 
 PORTNAME=	tkdesk
@@ -12,9 +12,9 @@ MASTER_SITES=	http://sd.znet.com/~jchris/tkdesk/ \
 		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR= X11/desktop
 
-MAINTAINER=	dmlb@ragnet.demon.co.uk
+MAINTAINER=	andy@geek4food.org
 
-LIB_DEPENDS=	itk30.1:${PORTSDIR}/x11-toolkits/itk \
+LIB_DEPENDS=	itcl30.1:${PORTSDIR}/lang/itcl \
 		BLT24.2:${PORTSDIR}/x11-toolkits/blt
 
 USE_GMAKE=	YES
@@ -25,6 +25,9 @@ CONFIGURE_ARGS+= --with-itcl=${LOCALBASE}/lib/itcl3.0
 CONFIGURE_ARGS+= --with-blt=${LOCALBASE}/lib
 
 MAN1=		tkdesk.1 cd-tkdesk.1 ed-tkdesk.1 od-tkdesk.1
+
+pre-install:
+	@find ${WRKSRC} -type f -name '*.orig' -exec ${RM} -f {} ';'
 
 post-install:
 	strip ${PREFIX}/bin/tkdesksh
