@@ -2,17 +2,14 @@
 # Date created:         18 November 1998
 # Whom:                 Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD: ports/japanese/ng/Makefile,v 1.6 2000/09/17 18:47:40 ade Exp $
+# $FreeBSD: ports/japanese/ng/Makefile,v 1.7 2000/12/11 03:13:29 steve Exp $
 #
 
 PORTNAME=	ng
-PORTVERSION=	1.4.2.1
+PORTVERSION=	1.4.3
 CATEGORIES=	japanese editors
 MASTER_SITES=	http://ha3.seikyou.ne.jp/home/amura/archives/ng/
-DISTNAME=	${PORTNAME}-${PORTVERSION:R}
-
-PATCH_SITES=	${MASTER_SITES}
-PATCHFILES=	${PORTNAME}-${PORTVERSION:R}-line.patch
+DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	ginga@athena.club.ne.jp
 
