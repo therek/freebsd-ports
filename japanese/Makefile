@@ -1,4 +1,4 @@
-# $FreeBSD: ports/japanese/Makefile,v 1.360 2001/05/18 19:09:01 sf Exp $
+# $FreeBSD: ports/japanese/Makefile,v 1.361 2001/06/01 14:10:55 sf Exp $
 #
 
     SUBDIR += ASCIIdates98-fpw
@@ -92,6 +92,7 @@
     SUBDIR += jed
     SUBDIR += jgv
     SUBDIR += jhd
+    SUBDIR += jisx0213-fonts
     SUBDIR += jls
     SUBDIR += jpilot
     SUBDIR += jtex209-ascii
