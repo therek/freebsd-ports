@@ -2,13 +2,13 @@
 # Date created:         25 Aug 1997
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/lang/scheme48/Makefile,v 1.17 2001/02/05 15:04:12 olgeni Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scheme48
-PORTVERSION=	0.56
+PORTVERSION=	0.57
 CATEGORIES=	lang
-MASTER_SITES=	http://s48.org/0.56/
+MASTER_SITES=	http://s48.org/0.57/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	nectar@FreeBSD.org
