@@ -2,12 +2,11 @@
 # Date created:		6 May 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.13 2001/06/11 09:32:02 knu Exp $
+# $FreeBSD: ports/lang/ruby-devel/Makefile,v 1.14 2001/06/16 08:46:33 knu Exp $
 #
 
 PORTNAME=	ruby${RUBY_R}
 PORTVERSION=	${RUBY_PORTVERSION}
-PORTREVISION=	1
 CATEGORIES=	lang ruby ipv6
 MASTER_SITES=	http://www.ruby-lang.org/~knu/	# ${MASTER_SITE_RUBY}
 MASTER_SITE_SUBDIR=	${RUBY_VER}
