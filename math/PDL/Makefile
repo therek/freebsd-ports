@@ -2,7 +2,7 @@
 # Date created:		08 February 1999
 # Whom:			Anton Berezin <tobez@plab.ku.dk>
 #
-# $FreeBSD: ports/math/PDL/Makefile,v 1.6 2000/04/14 07:19:39 asami Exp $
+# $FreeBSD: ports/math/PDL/Makefile,v 1.7 2000/04/30 19:54:26 steve Exp $
 #
 
 PORTNAME=	PDL
