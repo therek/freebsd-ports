@@ -3,15 +3,15 @@
 # Date created:		9 May 1999
 # Whom:			Shigeyuki FUKUSHIMA <shige@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.9 1999/09/10 19:07:05 shige Exp $
+# $FreeBSD: ports/editors/flim-emacs-current/Makefile,v 1.10 1999/10/11 06:15:13 shige Exp $
 #
 
 DISTNAME=	flim-${FLIM_VER}
 CATEGORIES=	editors elisp
-MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/flim/flim-1.12/ \
-		ftp://ftp.media.kyoto-u.ac.jp/pub/mule/flim/flim-1.12/ \
-		ftp://ftp.win.or.jp/pub/word/mule/flim/flim-1.12/ \
-		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/emacs/mule/flim/flim-1.12/
+MASTER_SITES=	ftp://ftp.etl.go.jp/pub/mule/flim/flim-1.13/ \
+		ftp://ftp.media.kyoto-u.ac.jp/pub/mule/flim/flim-1.13/ \
+		ftp://ftp.win.or.jp/pub/word/mule/flim/flim-1.13/ \
+		ftp://ftp.eos.hokudai.ac.jp/pub/GNU/emacs/mule/flim/flim-1.13/
 MAINTAINER?=	shige@FreeBSD.org
 
 PORTCLASS?=	master
