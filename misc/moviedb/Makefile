@@ -2,7 +2,7 @@
 # Date created:				13 August 2000
 # Whom:					Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/misc/moviedb/Makefile,v 1.1 2000/09/16 19:40:58 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	moviedb
@@ -17,6 +17,7 @@ DIST_SUBDIR=	moviedb
 EXTRACT_ONLY=	tools/${PORTNAME}-${PORTVERSION}${EXTRACT_SUFX}
 
 MAINTAINER=	user@unknown.nu
+COMMENT=	The Internet Movie Database package
 
 IGNOREFILES=	actors.list.gz actresses.list.gz aka-names.list.gz \
 	aka-titles.list.gz alternate-versions.list.gz biographies.list.gz \

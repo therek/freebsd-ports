@@ -2,7 +2,7 @@
 # Date created:				2000/09/09
 # Whom:					kaz
 #
-# $FreeBSD: ports/misc/nsf/Makefile,v 1.1 2000/09/17 22:30:36 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nsf
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL}
 MASTER_SITE_SUBDIR=	will
 
 MAINTAINER=	kaz@kobe1995.net
+COMMENT=	NAKAMURA's Shell Form input
 
 WRKSRC=		${WRKDIR}
 MAN1=		nsf.1

@@ -2,7 +2,7 @@
 # Date created:				18 October 2000
 # Whom:					mwm@mired.org
 #
-# $FreeBSD: ports/misc/cuecat/Makefile,v 1.3 2001/04/29 08:23:30 roam Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	cuecat
@@ -11,6 +11,7 @@ CATEGORIES=	misc python
 MASTER_SITES=	http://www.mired.org/downloads/
 
 MAINTAINER=	mwm@mired.org
+COMMENT=	Tools for decoding and using the output of a :Cue:Cat(TM) wand scanner
 
 .if !defined(WITHOUT_X11)
 RUN_DEPENDS=	${PYTHON_SITELIBDIR}/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter \

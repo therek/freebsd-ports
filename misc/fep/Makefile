@@ -2,7 +2,7 @@
 # Date created:         20 Feb 1996
 # Whom:                 Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/misc/fep/Makefile,v 1.6 2000/04/14 08:45:42 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fep
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.sra.co.jp/pub/cmd/fep/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	nobu@psrc.isac.co.jp
+COMMENT=	A general purpose front end for command line editing
 
 MAN1=		fep.1
 MANCOMPRESSED=	yes

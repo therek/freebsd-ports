@@ -2,7 +2,7 @@
 # Date created:				Fri Jul 23, 1999
 # Whom:					shipley@dis.org
 #
-# $FreeBSD: ports/misc/hello/Makefile,v 1.2 1999/12/30 04:04:06 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	hello
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	hello
 DISTNAME=	hello-1.3
 
 MAINTAINER=	shipley@dis.org
+COMMENT=	A utility for saying hello to the world and read email
 
 WRKSRC=		${WRKDIR}/hello-1.3
 

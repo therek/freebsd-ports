@@ -2,7 +2,7 @@
 # Date created:        13 November 1999
 # Whom:                jsellens
 #
-# $FreeBSD: ports/misc/lc/Makefile,v 1.1 1999/12/27 01:49:01 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lc
@@ -11,6 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://www.generalconcepts.com/resources/software/
 
 MAINTAINER=	jsellens@generalconcepts.com
+COMMENT=	An alternative to ls(1)
 
 MAN1=		lc.1
 

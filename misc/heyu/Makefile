@@ -2,7 +2,7 @@
 # Date created:		27 December 1999
 # Whom:			plambert@plambert.net
 #
-# $FreeBSD: ports/misc/heyu/Makefile,v 1.7 2001/06/18 16:09:50 dwcjr Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	heyu
@@ -13,6 +13,7 @@ DISTNAME=	x10_heyu
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	plambert@plambert.net
+COMMENT=	Control a CM11A interface from the command line
 
 IS_INTERACTIVE=	yes
 ALL_TARGET=	heyu

@@ -2,7 +2,7 @@
 # Date created:		23 December 1996
 # Whom:			Conrad Sabatier <conrads@home.com>
 #
-# $FreeBSD: ports/misc/xless/Makefile,v 1.9 2000/04/14 08:47:08 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xless
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB} \
 MASTER_SITE_SUBDIR=	applications
 
 MAINTAINER=	conrads@home.com
+COMMENT=	An X11 viewer for text files.  Useful as an add-on tool for other apps
 
 USE_IMAKE=	yes
 MAN1=		xless.1

@@ -2,7 +2,7 @@
 # Date created:        25-01-1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/fortuneit/Makefile,v 1.6 2000/04/14 08:45:44 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	fortuneit
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.giovannelli.it/~gmarco/files/
 DISTNAME=	fortune.it-${PORTVERSION}
 
 MAINTAINER=	gmarco@giovannelli.it
+COMMENT=	A very funny fortune file in Italian
 
 NO_BUILD=	yes
 

@@ -2,7 +2,7 @@
 # Date created:        20 January 1999
 # Whom:                gmarco@giovannelli.it
 #
-# $FreeBSD: ports/misc/xtail/Makefile,v 1.6 2000/10/08 07:14:07 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtail
@@ -13,6 +13,7 @@ MASTER_SITES=	http://www.unicom.com/sw/xtail/ \
 DISTNAME=	${PORTNAME}-${PORTVERSION}
 
 MAINTAINER=	gmarco@giovannelli.it
+COMMENT=	Watches the growth of files or directories
 
 HAS_CONFIGURE=	yes
 

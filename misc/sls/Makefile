@@ -2,7 +2,7 @@
 # Date created:         16. Dec 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/misc/sls/Makefile,v 1.4 2000/12/29 20:19:06 dannyboy Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sls
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	dannyboy
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	sec@42.org
+COMMENT=	List information about file(s) and directories
 
 WRKSRC=		${WRKDIR}/sls
 

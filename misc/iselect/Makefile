@@ -2,7 +2,7 @@
 # Date created:		03-Jan-1998
 # Whom:			Ralf S. Engelschall <rse@engelschall.com>
 #
-# $FreeBSD: ports/misc/iselect/Makefile,v 1.3 1999/08/25 07:21:50 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	iselect
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.engelschall.com/sw/iselect/distrib/ \
 		ftp://ftp.engelschall.com/sw/iselect/
 
 MAINTAINER=	rse@engelschall.com
+COMMENT=	Interactive Selection Tool
 
 HAS_CONFIGURE=	yes
 

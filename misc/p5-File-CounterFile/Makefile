@@ -2,7 +2,7 @@
 # Date created:				Jan 28 2000
 # Whom:					Wei-chun Chao
 #
-# $FreeBSD: ports/misc/p5-File-CounterFile/Makefile,v 1.1 2000/06/30 01:05:40 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-CounterFile
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	File
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	wchao@isi.edu
+COMMENT=	Perl module for persistent counter class
 
 PERL_CONFIGURE=	yes
 

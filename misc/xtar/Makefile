@@ -2,7 +2,7 @@
 # Date created:		31 Jul 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/misc/xtar/Makefile,v 1.6 2000/04/14 08:47:19 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xtar
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	utilities
 
 MAINTAINER=	shanee@augusta.de
+COMMENT=	View and manipulate contents of a tar file
 
 USE_MOTIF=	yes
 USE_IMAKE=	yes

@@ -2,7 +2,7 @@
 # Date created:			6 February, 1999
 # Whom:				Stephen Farrell <steve@farrell.org>
 #
-# $FreeBSD: ports/misc/tkrunit/Makefile,v 1.4 1999/11/28 18:32:15 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tkRunIt
@@ -12,6 +12,7 @@ MASTER_SITES=   http://www.cs.columbia.edu/~etgold/software/tkRunIt/
 DISTNAME=	tkRunIt-0941
 
 MAINTAINER=	steve@farrell.org
+COMMENT=	GUI app launcher with completion and history
 
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82
 

@@ -2,7 +2,7 @@
 # Date created:				20 November 2000
 # Whom:					Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/misc/ftree/Makefile,v 1.1 2000/12/19 10:20:36 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ftree
@@ -14,6 +14,7 @@ DISTNAME=	${PORTNAME}-${PORTVERSION}-static
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	user@unknown.nu
+COMMENT=	An X11 genealogy program
 
 RUN_DEPENDS=	/compat/linux/lib/libc.so.6:${PORTSDIR}/emulators/linux_base
 

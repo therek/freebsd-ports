@@ -2,7 +2,7 @@
 # Date created:				10 July 2000
 # Whom:					Kim Scarborough <user@unknown.nu>
 #
-# $FreeBSD: ports/misc/brs/Makefile,v 1.3 2000/07/14 09:15:27 alex Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	brs
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	apps/religion
 DISTNAME=	brs.4.00.l1
 
 MAINTAINER=	user@unknown.nu
+COMMENT=	An interactive King James Bible
 
 WRKSRC=	       ${WRKDIR}/bible
 ALL_TARGET=

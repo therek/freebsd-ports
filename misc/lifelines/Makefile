@@ -2,7 +2,7 @@
 # Date created:		10 August 2000
 # Whom:			Matt Emmerton <matt@gsicomp.on.ca>
 #
-# $FreeBSD: ports/misc/lifelines/Makefile,v 1.1 2000/09/04 14:38:51 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lifelines
@@ -12,6 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	matt@gsicomp.on.ca
+COMMENT=	An advanced genealogical system
 
 GNU_CONFIGURE=	yes
 USE_BISON=	yes

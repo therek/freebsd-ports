@@ -2,7 +2,7 @@
 # Date created:			  21 March 2000
 # Whom:				  kline@thought.org
 #
-# $FreeBSD: ports/misc/muuz/Makefile,v 1.4 2001/01/16 17:31:41 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	muuz
@@ -11,6 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	http://muuz.deadbbs.com/FreeBSD/muuz/
 
 MAINTAINER=	kline@thought.org
+COMMENT=	X11 and sound tool that promotes relaxation, meditation, fun, more
 
 LIB_DEPENDS=	Xaw3d.${XAWVER}:${PORTSDIR}/x11-toolkits/Xaw3d
 

@@ -2,7 +2,7 @@
 # Date created:		03 Aug 1996
 # Whom:			shanee@augusta.de
 #
-# $FreeBSD: ports/misc/unclutter/Makefile,v 1.8 1999/08/25 07:22:53 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	unclutter
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	utilities
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	shanee@augusta.de
+COMMENT=	Remove idle cursor image from screen
 
 WRKSRC=		$(WRKDIR)/unclutter
 USE_IMAKE=	yes
