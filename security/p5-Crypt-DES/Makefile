@@ -2,11 +2,11 @@
 # Date created:				October 20th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/security/p5-Crypt-DES/Makefile,v 1.12 1999/08/31 06:50:11 mharo Exp $
+# $FreeBSD: ports/security/p5-Crypt-DES/Makefile,v 1.13 2000/04/09 18:30:12 cpiazza Exp $
 #
 
 PORTNAME=	p5-Crypt-DES
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Crypt

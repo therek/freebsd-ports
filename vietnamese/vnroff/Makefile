@@ -3,11 +3,11 @@
 # Date created:		Monday, Dec 9, 1996
 # Whom:			David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.11 2000/04/09 21:54:47 cpiazza Exp $
+# $FreeBSD: ports/vietnamese/vnroff/Makefile,v 1.12 2000/04/15 01:56:17 asami Exp $
 #
 
 PORTNAME=	vnroff
-PORTVERSION= 	2.0
+PORTVERSION=	2.0
 CATEGORIES=	vietnamese print
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Troff/
 DISTFILES=	vnroff.c.Z vnroff.1.Z

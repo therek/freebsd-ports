@@ -2,7 +2,7 @@
 # Date created:				10/23/1999
 # Whom:					nectar@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/heimdal/Makefile,v 1.14 2000/04/17 00:18:39 reg Exp $
+# $FreeBSD: ports/security/heimdal/Makefile,v 1.15 2000/04/18 02:17:19 nectar Exp $
 #
 
 PORTNAME=		heimdal
@@ -15,7 +15,7 @@ MASTER_SITES=		ftp://ftp.pdc.kth.se/pub/heimdal/src/ \
 
 MAINTAINER=		nectar@FreeBSD.ORG
 
-RESTRICTED=             "Crypto; export-controlled"
+RESTRICTED=		"Crypto; export-controlled"
 
 MAN1=			ftp.1 kdestroy.1 kgetcred.1 kinit.1 klist.1 kpasswd.1 \
 			telnet.1 kx.1 rxtelnet.1 rxterm.1 tenletxr.1 pfrom.1
@@ -33,7 +33,7 @@ USE_LIBTOOL=		YES
 CONFIGURE_ARGS=		--prefix=${PREFIX} --enable-shared
 
 .if defined(HEIMDAL_HOME)
-PREFIX=                        ${HEIMDAL_HOME}
+PREFIX=			${HEIMDAL_HOME}
 .endif
 
 .if exists(${X11BASE}/lib/libX11.a) && !defined(WITHOUT_X11)

@@ -2,11 +2,11 @@
 # Date created:		19 Oct 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/security/pidentd/Makefile,v 1.30 2000/04/09 18:30:19 cpiazza Exp $
+# $FreeBSD: ports/security/pidentd/Makefile,v 1.31 2000/04/17 00:18:41 reg Exp $
 #
 
 PORTNAME=	pidentd
-PORTVERSION= 	2.8.5
+PORTVERSION=	2.8.5
 CATEGORIES=	security net ipv6
 MASTER_SITES=	ftp://ftp.lysator.liu.se/pub/ident/servers/ \
 		ftp://ftp.fu-berlin.de/unix/security/ident/servers/
@@ -17,7 +17,7 @@ PATCH_DIST_STRIP=	-p2
 
 MAINTAINER=	torstenb@FreeBSD.org
 
-ALL_TARGET=     freebsd
+ALL_TARGET=	freebsd
 MAKE_ENV=	REALPREFIX=${PREFIX}
 MAN8=		identd.8 idecrypt.8
 

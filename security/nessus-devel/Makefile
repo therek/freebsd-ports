@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.11 2000/03/19 04:00:50 foxfair Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.12 2000/04/09 18:30:00 cpiazza Exp $
 #
 
 PORTNAME=	nessus
@@ -31,7 +31,7 @@ DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-core
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ENV=  GTKCONFIG="${GTK_CONFIG}"
+CONFIGURE_ENV=	GTKCONFIG="${GTK_CONFIG}"
 MAN1=		nessus.1
 MAN8=		nessusd.8
 

@@ -2,11 +2,11 @@
 # Date created:		11 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/shells/flash/Makefile,v 1.3 2000/03/22 01:59:29 will Exp $
+# $FreeBSD: ports/shells/flash/Makefile,v 1.4 2000/04/09 18:33:55 cpiazza Exp $
 #
 
 PORTNAME=	flash
-PORTVERSION= 	0.9.1
+PORTVERSION=	0.9.1
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.netsoc.ucd.ie/pub/computing/flash/
 

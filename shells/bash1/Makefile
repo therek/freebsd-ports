@@ -3,11 +3,11 @@
 # Date created:			  21 August 1994
 # Whom:				  jkh
 #
-# $FreeBSD: ports/shells/bash1/Makefile,v 1.35 2000/03/22 00:26:34 obrien Exp $
+# $FreeBSD: ports/shells/bash1/Makefile,v 1.36 2000/04/09 18:33:52 cpiazza Exp $
 #
 
 PORTNAME=	bash
-PORTVERSION= 	1.14.7
+PORTVERSION=	1.14.7
 CATEGORIES=	shells
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	bash

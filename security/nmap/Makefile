@@ -3,7 +3,7 @@
 # Date created:			  Tue Aug 04, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/nmap/Makefile,v 1.33 2000/04/09 18:30:04 cpiazza Exp $
+# $FreeBSD: ports/security/nmap/Makefile,v 1.34 2000/04/18 18:58:19 obrien Exp $
 #
 
 PORTNAME=	nmap
@@ -22,7 +22,7 @@ MAINTAINER=	obrien@FreeBSD.org
 .include <bsd.port.pre.mk>
 
 GNU_CONFIGURE=	yes
-CONFIGURE_ARGS= --libdir=${PREFIX}/share/misc
+CONFIGURE_ARGS=	--libdir=${PREFIX}/share/misc
 .if ${OSVERSION} < 300004
 CFLAGS+=	-DDLT_RAW=12 # for obsoleted <net/bpf.h>
 .endif

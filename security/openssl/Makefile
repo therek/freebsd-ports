@@ -2,11 +2,11 @@
 # Date created:		Sun Jan  3 19:36:27 CET 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/openssl/Makefile,v 1.40 2000/04/09 18:30:08 cpiazza Exp $
+# $FreeBSD: ports/security/openssl/Makefile,v 1.41 2000/04/16 12:24:41 dirk Exp $
 #
 
 PORTNAME=	openssl
-PORTVERSION= 	0.9.5a
+PORTVERSION=	0.9.5a
 CATEGORIES=	security devel
 MASTER_SITES=	http://www.openssl.org/source/ \
 		ftp://ftp.openssl.org/source/ \

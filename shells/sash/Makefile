@@ -2,11 +2,11 @@
 # Date created:		Jan 22, 2000
 # Whom:			Patrick Gardella <patrick@freebsd.org>
 #
-# $FreeBSD: ports/shells/sash/Makefile,v 1.2 2000/02/08 09:28:51 peter Exp $
+# $FreeBSD: ports/shells/sash/Makefile,v 1.3 2000/04/09 18:34:03 cpiazza Exp $
 #
 
 PORTNAME=	sash
-PORTVERSION= 	3.4
+PORTVERSION=	3.4
 CATEGORIES=	shells
 MASTER_SITES=	http://www.pcug.org.au/~dbell/programs/ \
 		http://people.FreeBSD.org/~patrick/

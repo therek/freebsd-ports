@@ -2,11 +2,11 @@
 # Date created:		23 May 1995
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/shells/pdksh/Makefile,v 1.21 1999/12/29 10:27:18 tg Exp $
+# $FreeBSD: ports/shells/pdksh/Makefile,v 1.22 2000/04/09 18:33:57 cpiazza Exp $
 #
 
 PORTNAME=	pdksh
-PORTVERSION= 	5.2.14
+PORTVERSION=	5.2.14
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.cs.mun.ca/pub/pdksh/ \
 		http://gd.tuwien.ac.at/utils/shells/pdksh/ \
@@ -16,7 +16,7 @@ MASTER_SITES=	ftp://ftp.cs.mun.ca/pub/pdksh/ \
 
 MAINTAINER=	tg@FreeBSD.org
 
-GNU_CONFIGURE=  yes
+GNU_CONFIGURE=	yes
 CONFIGURE_ENV=	LDSTATIC=-static
 MAN1=		ksh.1
 

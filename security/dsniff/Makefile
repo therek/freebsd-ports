@@ -2,11 +2,11 @@
 # Date created:		08 Jan 2000
 # Whom:			kris@FreeBSD.org
 #
-# $FreeBSD: ports/security/dsniff/Makefile,v 1.5 2000/03/30 06:27:25 kris Exp $
+# $FreeBSD: ports/security/dsniff/Makefile,v 1.6 2000/04/09 18:29:33 cpiazza Exp $
 #
 
 PORTNAME=	dsniff
-PORTVERSION= 	1.7
+PORTVERSION=	1.7
 CATEGORIES=	security
 MASTER_SITES=	http://naughty.monkey.org/~dugsong/dsniff/
 

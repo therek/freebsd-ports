@@ -3,7 +3,7 @@
 # Date created:			  Sat Feb 28, 1998
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/security/bro/Makefile,v 1.14 2000/03/22 00:26:42 obrien Exp $
+# $FreeBSD: ports/security/bro/Makefile,v 1.15 2000/04/09 18:29:25 cpiazza Exp $
 #
 
 PORTNAME=	bro
@@ -25,7 +25,7 @@ IGNORE=is still in alpha test.  Please contact Vern Paxson <vern@ee.lbl.gov> to 
 
 IS_INTERACTIVE=	"manual fetch"
 WRKSRC=		${WRKDIR}/bro-pub-0.5a1
-CONFIGURE_ARGS= --libdir=${PREFIX}/share
+CONFIGURE_ARGS=	--libdir=${PREFIX}/share
 GNU_CONFIGURE=	yes
 
 post-patch:

@@ -3,11 +3,11 @@
 # Date created:			  Sun Feb 12, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/find_ddos/Makefile,v 1.3 2000/03/22 00:26:51 obrien Exp $
+# $FreeBSD: ports/security/find_ddos/Makefile,v 1.4 2000/04/09 18:29:35 cpiazza Exp $
 #
 
 PORTNAME=	find_ddos
-PORTVERSION= 	3.1
+PORTVERSION=	3.1
 CATEGORIES=	security
 MASTER_SITES=	http://www.fbi.gov/nipc/
 DISTNAME=	find_ddos_v31_linux

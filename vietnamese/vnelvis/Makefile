@@ -3,11 +3,11 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnelvis/Makefile,v 1.13 2000/04/09 21:54:44 cpiazza Exp $
+# $FreeBSD: ports/vietnamese/vnelvis/Makefile,v 1.14 2000/04/15 01:56:12 asami Exp $
 #
 
 PORTNAME=	vnelvis
-PORTVERSION= 	1.4
+PORTVERSION=	1.4
 CATEGORIES=	vietnamese editors
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/

@@ -2,13 +2,13 @@
 # Date created:		5 Oct 1998
 # Whom:			Issei Suzuki <issei@jp.FreeBSD.org>
 #
-# $FreeBSD: ports/security/ssh2/Makefile,v 1.95 2000/04/14 15:04:29 will Exp $
+# $FreeBSD: ports/security/ssh2/Makefile,v 1.96 2000/04/17 00:18:43 reg Exp $
 #
 # Maximal ssh2 package requires YES values for
 # WITH_SSH1, WITH_TCPWRAP
 
 PORTNAME=	ssh2
-PORTVERSION= 	2.0.13
+PORTVERSION=	2.0.13
 CATEGORIES=	security net
 MASTER_SITES=	ftp://ftp.cs.hut.fi/pub/ssh/ \
 		ftp://sunsite.unc.edu/pub/packages/security/ssh/ \
@@ -25,7 +25,7 @@ RESTRICTED=	"Crypto; export-controlled"
 
 GNU_CONFIGURE=	YES
 
-CONFIGURE_ARGS= --with-etcdir=${PREFIX}/etc --enable-debug
+CONFIGURE_ARGS=	--with-etcdir=${PREFIX}/etc --enable-debug
 #Uncomment if all your users are in their own group and their homedir
 #is writeable by that group.  Beware the security implications!
 #CONFIGURE_ARGS+= --enable-group-writeability
@@ -57,7 +57,7 @@ CONFIGURE_ARGS+= --with-tis
 CONFIGURE_ARGS+= --with-libwrap
 .elif defined(WITH_TCPWRAP)
 CONFIGURE_ARGS+= --with-libwrap="-L ${PREFIX}/lib -lwrap"
-LIB_DEPENDS+=   wrap.7:${PORTSDIR}/security/tcp_wrapper
+LIB_DEPENDS+=	wrap.7:${PORTSDIR}/security/tcp_wrapper
 .endif
 
 MAN1=	ssh2.1 ssh-keygen2.1 ssh-add2.1 ssh-agent2.1 \

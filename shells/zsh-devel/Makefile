@@ -2,11 +2,11 @@
 # Date created:			31 October 1998
 # Whom:				shige
 #
-# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.36 2000/02/22 06:15:53 asami Exp $
+# $FreeBSD: ports/shells/zsh-devel/Makefile,v 1.37 2000/04/09 18:34:06 cpiazza Exp $
 #
 
 PORTNAME=	zsh
-PORTVERSION= 	3.1.6
+PORTVERSION=	3.1.6
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.zsh.org/zsh/ \
 		ftp://ftp.sterling.com/zsh/ \

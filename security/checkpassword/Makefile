@@ -2,11 +2,11 @@
 # Date created:		05 August 1998
 # Whom:			sada@FreeBSD.org
 #
-# $FreeBSD: ports/security/checkpassword/Makefile,v 1.8 2000/02/08 09:28:38 peter Exp $
+# $FreeBSD: ports/security/checkpassword/Makefile,v 1.9 2000/04/09 18:29:27 cpiazza Exp $
 #
 
 PORTNAME=	checkpassword
-PORTVERSION= 	0.81
+PORTVERSION=	0.81
 CATEGORIES=	security
 MASTER_SITES=	http://cr.yp.to/software/ \
 		http://people.FreeBSD.org/~sada/distfiles/ \

@@ -2,13 +2,13 @@
 # Date created:		30 Jul 1997
 # Whom:			John Polstra <jdp@polstra.com>
 #
-# $FreeBSD: ports/security/cfs/Makefile,v 1.6 2000/02/16 15:51:53 ache Exp $
+# $FreeBSD: ports/security/cfs/Makefile,v 1.7 2000/04/09 18:29:26 cpiazza Exp $
 #
 
 PORTNAME=	cfs
-PORTVERSION= 	1.3.3.1
+PORTVERSION=	1.3.3.1
 CATEGORIES=	security
-MASTER_SITES=   ftp://ftp.hacktic.nl/pub/crypto/disk/ \
+MASTER_SITES=	ftp://ftp.hacktic.nl/pub/crypto/disk/ \
 		ftp://ftp.uni-bielefeld.de/pub/crypto/replay/disk/
 DISTNAME=	cfs-1.3.3bf
 

@@ -2,7 +2,7 @@
 # Date created:                         02 September 1999
 # Whom:                                 se
 #
-# $FreeBSD: ports/security/keynote/Makefile,v 1.3 2000/02/06 21:48:31 kris Exp $
+# $FreeBSD: ports/security/keynote/Makefile,v 1.4 2000/04/09 18:29:47 cpiazza Exp $
 #
 
 PORTNAME=	keynote
@@ -13,7 +13,7 @@ DISTNAME=	keynote-2-beta4
 
 MAINTAINER=	se@FreeBSD.org
 
-USE_OPENSSL=   RSA
+USE_OPENSSL=	RSA
 
 WRKSRC=		${WRKDIR}/KeyNote-2-beta4
 

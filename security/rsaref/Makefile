@@ -2,11 +2,11 @@
 # Date created:		2 Feb 1997
 # Whom:			ache
 #
-# $FreeBSD: ports/security/rsaref/Makefile,v 1.15 2000/02/27 06:46:04 kris Exp $
+# $FreeBSD: ports/security/rsaref/Makefile,v 1.16 2000/04/09 18:30:24 cpiazza Exp $
 #
 
 PORTNAME=	rsaref
-PORTVERSION= 	2.0
+PORTVERSION=	2.0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.deva.net/pub/sources/crypto/ \
 		ftp://ftp.kddlabs.co.jp/.7/inet/caida/bmwt/ \

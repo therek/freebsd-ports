@@ -2,11 +2,11 @@
 # Date created:		Sat May 29 02:05:00 PDT 1999
 # Whom:			mharo@FreeBSD.org
 #
-# $FreeBSD: ports/security/keyprint/Makefile,v 1.4 2000/04/09 18:29:47 cpiazza Exp $
+# $FreeBSD: ports/security/keyprint/Makefile,v 1.5 2000/04/11 21:18:25 cpiazza Exp $
 #
 
 PORTNAME=	keyprint
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://people.FreeBSD.org/~mharo/distfiles/
 

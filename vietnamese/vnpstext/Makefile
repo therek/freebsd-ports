@@ -3,11 +3,11 @@
 # Date created:         Sat Dec 7, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.13 2000/04/09 21:54:46 cpiazza Exp $
+# $FreeBSD: ports/vietnamese/vnpstext/Makefile,v 1.14 2000/04/15 01:56:16 asami Exp $
 #
 
 PORTNAME=	vnpstext
-PORTVERSION= 	1.1
+PORTVERSION=	1.1
 CATEGORIES=	vietnamese print
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/

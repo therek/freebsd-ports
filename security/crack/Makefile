@@ -4,11 +4,11 @@
 # Whom:				  David O'Brien <obrien@FreeBSD.org>
 #				  & Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/security/crack/Makefile,v 1.15 2000/04/09 18:29:29 cpiazza Exp $
+# $FreeBSD: ports/security/crack/Makefile,v 1.16 2000/04/17 00:18:36 reg Exp $
 #
 
 PORTNAME=	crack
-PORTVERSION= 	5.0
+PORTVERSION=	5.0
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.win.tue.nl/pub/security/  \
 		ftp://ftp.ox.ac.uk/pub/comp/security/software/crackers/  \

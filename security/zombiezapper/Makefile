@@ -2,11 +2,11 @@
 # Date created:			  19 Feb 2000
 # Whom:				  Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/security/zombiezapper/Makefile,v 1.1 2000/02/20 10:29:09 kris Exp $
+# $FreeBSD: ports/security/zombiezapper/Makefile,v 1.2 2000/04/09 18:30:47 cpiazza Exp $
 #
 
 PORTNAME=	zombiezapper
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	security
 MASTER_SITES=	http://razor.bindview.com/tools/files/
 DISTNAME=	zombie

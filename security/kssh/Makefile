@@ -2,11 +2,11 @@
 # Date created:		19 Nov 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/security/kssh/Makefile,v 1.1.1.1 2000/03/23 04:37:54 will Exp $
+# $FreeBSD: ports/security/kssh/Makefile,v 1.2 2000/04/09 18:29:50 cpiazza Exp $
 #
 
 PORTNAME=	kssh
-PORTVERSION= 	0.2
+PORTVERSION=	0.2
 CATEGORIES=	security
 MASTER_SITES=	http://people.FreeBSD.org/~will/distfiles/
 

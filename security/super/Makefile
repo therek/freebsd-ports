@@ -3,11 +3,11 @@
 # Date created:			  Fri Mar 18, 1997
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/security/super/Makefile,v 1.15 2000/03/22 00:27:49 obrien Exp $
+# $FreeBSD: ports/security/super/Makefile,v 1.16 2000/04/09 18:30:39 cpiazza Exp $
 #
 
 PORTNAME=	super
-PORTVERSION= 	3.12.1
+PORTVERSION=	3.12.1
 CATEGORIES=	security sysutils
 MASTER_SITES=	ftp://phobos.caltech.edu/users/will/  \
 		ftp://ftp.ucolick.org/pub/users/will/  \

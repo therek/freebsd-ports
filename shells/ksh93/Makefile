@@ -2,13 +2,13 @@
 # Date created:		1999-10-24
 # Whom:			Christian Weisgerber <naddy@mips.rhein-neckar.de>
 #
-# $FreeBSD: ports/shells/ksh93/Makefile,v 1.2 1999/12/31 02:10:47 steve Exp $
+# $FreeBSD: ports/shells/ksh93/Makefile,v 1.3 2000/04/09 18:33:56 cpiazza Exp $
 #
 # ast-base-99 is linked dynamically for BSD/OS and will not work
 
 PORTNAME=		ksh
 PORTVERSION=		19931228
-CATEGORIES=     	shells
+CATEGORIES=		shells
 # Users must register with AT&T before downloading tarball.
 #MASTER_SITES=		http://www.research.att.com/sw/tools/reuse/
 DISTNAME=		ast-base-98.bsd.i386

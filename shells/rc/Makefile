@@ -2,11 +2,11 @@
 # Date created:		Sun Aug 13 12:36:14 CDT 1995
 # Whom:			erich@rrnet.com
 #
-# $FreeBSD: ports/shells/rc/Makefile,v 1.9 1999/08/31 01:53:19 peter Exp $
+# $FreeBSD: ports/shells/rc/Makefile,v 1.10 2000/04/09 18:34:01 cpiazza Exp $
 #
 
 PORTNAME=	rc
-PORTVERSION= 	1.6
+PORTVERSION=	1.6
 CATEGORIES=	shells plan9
 MASTER_SITES=	http://www.star.le.ac.uk/~tjg/rc/release/ \
 		ftp://ftp.sys.utoronto.ca/pub/rc/

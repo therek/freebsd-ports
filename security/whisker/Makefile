@@ -2,11 +2,11 @@
 # Date created:		7 Jan 2000
 # Whom:			kris@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/whisker/Makefile,v 1.1 2000/01/08 09:55:16 kris Exp $
+# $FreeBSD: ports/security/whisker/Makefile,v 1.2 2000/04/09 18:30:45 cpiazza Exp $
 #
 
 PORTNAME=	whisker
-PORTVERSION= 	1.3
+PORTVERSION=	1.3
 CATEGORIES=	security
 MASTER_SITES=	http://www.wiretrip.net/rfp/bins/whisker/
 DISTNAME=	${PORTNAME}

@@ -2,11 +2,11 @@
 # Date created:			11 Feb. 1995
 # Whom:				torstenb
 #
-# $FreeBSD: ports/shells/zsh/Makefile,v 1.41 2000/02/22 06:15:57 asami Exp $
+# $FreeBSD: ports/shells/zsh/Makefile,v 1.42 2000/04/09 18:34:05 cpiazza Exp $
 #
 
 PORTNAME=	zsh
-PORTVERSION= 	3.0.7
+PORTVERSION=	3.0.7
 CATEGORIES=	shells
 MASTER_SITES=	ftp://ftp.sterling.com/zsh/ \
 		ftp://ftp.rge.com/pub/shells/zsh/ \

@@ -2,22 +2,21 @@
 # Date created:				1999/04/07
 # Whom:					ache
 #
-# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.6 1999/11/16 19:39:20 ache Exp $
+# $FreeBSD: ports/security/p5-Digest-MD5/Makefile,v 1.7 2000/04/09 18:30:14 cpiazza Exp $
 #
 
 PORTNAME=	p5-Digest-MD5
-PORTVERSION= 	2.09
+PORTVERSION=	2.09
 CATEGORIES=	security perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	MD5
 DISTNAME=	Digest-MD5-2.09
 
-MAINTAINER=     ache@FreeBSD.org
+MAINTAINER=	ache@FreeBSD.org
 
 USE_PERL5=	YES
 
-MAN3=   \
-	Digest::MD2.3 \
+MAN3=	Digest::MD2.3 \
 	Digest::SHA1.3 \
 	SHA.3 \
 	Digest::HMAC.3 \

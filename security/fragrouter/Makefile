@@ -2,11 +2,11 @@
 # Date created:         7 Jan 2000
 # Whom:                 kris@FreeBSD.ORG
 #
-# $FreeBSD: ports/security/fragrouter/Makefile,v 1.1 2000/01/08 09:24:19 kris Exp $
+# $FreeBSD: ports/security/fragrouter/Makefile,v 1.2 2000/04/09 18:29:36 cpiazza Exp $
 #
 
 PORTNAME=	fragrouter
-PORTVERSION= 	1.6
+PORTVERSION=	1.6
 CATEGORIES=	security
 MASTER_SITES=	http://www.anzen.com/research/nidsbench/
 

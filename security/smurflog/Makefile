@@ -2,11 +2,11 @@
 # Date created:				7/06/1998
 # Whom:					nectar@FreeBSD.org
 #
-# $FreeBSD: ports/security/smurflog/Makefile,v 1.11 2000/01/16 19:12:05 nectar Exp $
+# $FreeBSD: ports/security/smurflog/Makefile,v 1.12 2000/04/09 18:30:30 cpiazza Exp $
 #
 
 PORTNAME=	smurflog
-PORTVERSION= 	2.1
+PORTVERSION=	2.1
 CATEGORIES=	net security
 MASTER_SITES=	ftp://ftp.bitchx.org/pub/misc/                          \
 		ftp://ftp.plur.net/pub/software/bitchx/files/           \

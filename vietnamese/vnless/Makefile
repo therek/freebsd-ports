@@ -3,11 +3,11 @@
 # Date created:         Tue Dec 3, 1996
 # Whom:                 David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/vietnamese/vnless/Makefile,v 1.10 2000/04/09 21:54:44 cpiazza Exp $
+# $FreeBSD: ports/vietnamese/vnless/Makefile,v 1.11 2000/04/15 01:56:14 asami Exp $
 #
 
 PORTNAME=	vnless
-PORTVERSION= 	1.0
+PORTVERSION=	1.0
 CATEGORIES=	vietnamese
 MASTER_SITES=	ftp://ftp.media.mit.edu/pub/Vietnet/Viscii/Unix/  \
 		ftp://ftp.monash.edu.au/pub/vietnam/unix/

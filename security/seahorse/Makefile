@@ -2,7 +2,7 @@
 # Date created:		08 March 2000
 # Whom:			Dave McKay <dave@mu.org>
 #
-# $FreeBSD: ports/security/seahorse/Makefile,v 1.1.1.1 2000/03/10 01:22:53 wes Exp $
+# $FreeBSD: ports/security/seahorse/Makefile,v 1.2 2000/04/09 18:30:26 cpiazza Exp $
 #
 
 PORTNAME=	seahorse
@@ -12,12 +12,11 @@ MASTER_SITES=	http://www.mu.org/~dave/
 
 MAINTAINER=	dave@mu.org
 
-GNU_CONFIGURE=  yes
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	gnupg-1.0.1:${PORTSDIR}/security/gnupg
-MAN1=           seahorse.1
 
-WRKSRC=		${WRKDIR}/seahorse-0.3.6
+GNU_CONFIGURE=	yes
+MAN1=		seahorse.1
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/src/seahorse ${PREFIX}/bin/
