@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/Makefile,v 1.174 2001/04/05 09:37:43 sobomax Exp $
 #
     SUBDIR += yawho
 
@@ -24,6 +24,7 @@
     SUBDIR += copytape
     SUBDIR += cpbk
     SUBDIR += cpdup
+    SUBDIR += crashme
     SUBDIR += cronolog
     SUBDIR += cvsweb-converters
     SUBDIR += daemontools
