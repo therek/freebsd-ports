@@ -2,7 +2,7 @@
 # Date created:				28th June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.7 2000/09/01 18:22:00 ade Exp $
+# $FreeBSD: ports/devel/gnomedebug/Makefile,v 1.8 2000/09/09 21:50:01 ade Exp $
 #
 
 PORTNAME=	gnomedebug
@@ -13,6 +13,8 @@ MASTER_SITE_SUBDIR=	unstable/sources/gnome-debug
 DISTNAME=	gnome-debug-${PORTVERSION}
 
 MAINTAINER=	ade@FreeBSD.org
+
+BROKEN=		"Fails with new devel/bonobo"
 
 LIB_DEPENDS=	gnome.4:${PORTSDIR}/x11/gnomelibs \
 		oaf.0:${PORTSDIR}/devel/oaf \
