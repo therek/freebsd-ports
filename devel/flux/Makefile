@@ -2,13 +2,14 @@
 # Date created:		18 Dec 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/flux/Makefile,v 1.6 2000/06/22 05:51:53 will Exp $
+# $FreeBSD: ports/devel/flux/Makefile,v 1.7 2000/07/22 06:39:52 kevlo Exp $
 #
 
 PORTNAME=	flux
 PORTVERSION=	0.4.1
 CATEGORIES=	devel
-MASTER_SITES=	ftp://ftp.styx.net/projects/flux/
+MASTER_SITES=	ftp://ftp.copyleft.no/projects/flux/ \
+		ftp://ftp.styx.net/projects/flux/
 
 MAINTAINER=	ports@FreeBSD.org
 
