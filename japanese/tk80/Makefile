@@ -2,7 +2,7 @@
 # Date created:		26 Dec 1997
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tk80/Makefile,v 1.17 1999/12/23 18:30:16 steve Exp $
+# $FreeBSD: ports/japanese/tk80/Makefile,v 1.18 2000/04/12 14:38:07 knu Exp $
 #
 
 PORTNAME=	tk
@@ -31,6 +31,7 @@ USE_XLIB=	yes
 CONFIGURE_ARGS=	--enable-shared --with-tcl=${PREFIX}/lib/tcl${VERSION}jp \
 	--enable-xlibHack --enable-onTheSpot
 RANLIB=		ranlib
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 
@@ -52,7 +53,6 @@ post-install:
 		Incompat80jp ${PREFIX}/share/doc/tk${VERSION}jp; \
 	 )
 .endif
-	@${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libtk80jp.so.1.5 ${PREFIX}/lib/libtk80jp.so
 	${RANLIB} ${PREFIX}/lib/libtk80jp.so

@@ -2,7 +2,7 @@
 # Date created:		25 February 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.13 2000/04/20 18:24:22 knu Exp $
+# $FreeBSD: ports/japanese/namazu2/Makefile,v 1.14 2000/04/24 15:51:17 knu Exp $
 #
 
 PORTNAME=	namazu2
@@ -28,9 +28,9 @@ USE_PERL5=	yes
 GNU_CONFIGURE=	yes
 
 MAN1=		namazu.1 mknmz.1
+INSTALLS_SHLIB=	yes
 
 post-install:
 	${LN} -sf ${PREFIX}/lib/libnmz.so.3 ${PREFIX}/lib/libnmz.so
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 
 .include <bsd.port.mk>

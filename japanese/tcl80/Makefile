@@ -2,7 +2,7 @@
 # Date created:		23 Jan 1998
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.13 2000/04/12 14:37:48 knu Exp $
+# $FreeBSD: ports/japanese/tcl80/Makefile,v 1.14 2000/05/31 18:17:39 hoek Exp $
 #
 
 PORTNAME=	tcl
@@ -30,6 +30,7 @@ CONFIGURE_ARGS=	--enable-shared
 RANLIB=		ranlib
 PKGINSTALL=	${PORTSDIR}/lang/tcl82/pkg/INSTALL.tclsh
 PKGDEINSTALL=	${PORTSDIR}/lang/tcl82/pkg/DEINSTALL.tclsh
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 

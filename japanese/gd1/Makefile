@@ -2,7 +2,7 @@
 # Date created:				19 Aug 1998
 # Whom:					ichiro@ichiro.org
 #
-# $FreeBSD: ports/japanese/gd/Makefile,v 1.10 1999/09/08 16:58:12 taoka Exp $
+# $FreeBSD: ports/japanese/gd/Makefile,v 1.11 2000/04/11 14:13:42 knu Exp $
 #
 
 PORTNAME=	gd
@@ -20,11 +20,11 @@ LIB_DEPENDS=	png.3:${PORTSDIR}/graphics/png
 
 FETCH_BEFORE_ARGS=	-b
 USE_LIBTOOL=		yes
+CFLAGS+=	-DJISX0208
 CONFIGURE_ENV+=		CFLAGS="${CFLAGS} -I${LOCALBASE}/include"
 CONFIGURE_ARGS+=	--includedir=${PREFIX}/include/gd \
 			--libdir=${PREFIX}/lib
-
-CFLAGS=		-DJISX0208
+INSTALLS_SHLIB=	yes
 
 pre-install:
 	${MKDIR} ${PREFIX}/include/gd

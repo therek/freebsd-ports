@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/libimg/Makefile,v 1.4 1999/08/25 05:25:13 obrien Exp $
+# $FreeBSD: ports/japanese/libimg/Makefile,v 1.5 2000/04/11 14:14:41 knu Exp $
 #
 
 PORTNAME=	libimg
@@ -22,6 +22,8 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--with-tcl=${PREFIX}/lib/tcl${TCLVERSION}jp \
 		--with-tk=${PREFIX}/lib/tk${TKVERSION}jp \
 		--disable-stubs
+INSTALLS_SHLIB=	yes
+LDCONFIG_DIRS=	${PREFIX}/lib/Img1.2
 
 TCLVERSION=	8.0
 TKVERSION=	8.0
@@ -42,6 +44,5 @@ post-install:
 .else
 	${LN} -sf libimg12.so.1 ${PREFIX}/lib/Img1.2/libimg12.so
 .endif
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib/Img1.2
 
 .include <bsd.port.post.mk>

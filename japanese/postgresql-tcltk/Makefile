@@ -2,7 +2,7 @@
 # Date created:		09 Nov 1999
 # Whom:			Ichiro Fukuhara <ichiro@ichiro.org>
 #
-# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.12 2000/04/12 14:37:12 knu Exp $
+# $FreeBSD: ports/japanese/postgresql/Makefile,v 1.13 2000/04/17 00:17:59 reg Exp $
 #
 
 PORTNAME=	postgresql
@@ -74,6 +74,8 @@ MANL=		abort.l alter_table.l alter_user.l begin.l close.l cluster.l \
 		select.l set.l show.l sql.l update.l vacuum.l
 
 MANPREFIX=	${PREFIX}/${INSTALL_DIR}
+INSTALLS_SHLIB=	yes
+LDCONFIG_DIRS=	${PREFIX}/${INSTALL_DIR}/lib
 
 PLIST_SUB=	INSTALL_DIR=${INSTALL_DIR}
 PLIST=		${WRKDIR}/PLIST

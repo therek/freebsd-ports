@@ -2,7 +2,7 @@
 # Date created:		3 September 1999
 # Whom:			IWASHITA Yoji <shuna@pop16.odn.ne.jp>
 #
-# $FreeBSD: ports/japanese/libslang/Makefile,v 1.10 2000/02/09 15:17:59 taoka Exp $
+# $FreeBSD: ports/japanese/libslang/Makefile,v 1.11 2000/04/11 14:14:43 knu Exp $
 #
 
 PORTNAME=	libslang
@@ -27,9 +27,9 @@ WRKSRC=		${WRKDIR}/slang-${PREV_VERSION}
 CONFIGURE_ARGS=	--includedir=${PREFIX}/include/slang
 ALL_TARGET=	all elf
 INSTALL_TARGET=	install-elf
+INSTALLS_SHLIB=	yes
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 	${CP} ${WRKSRC}/slang-j.doc ${PREFIX}/share/doc/slang
 
 .include <bsd.port.mk>

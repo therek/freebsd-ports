@@ -2,7 +2,7 @@
 # Date created:			26 Mar. 1996
 # Whom:				Masafumi NAKANE <max@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.18 1999/12/23 16:19:35 max Exp $
+# $FreeBSD: ports/japanese/kakasi/Makefile,v 1.19 2000/04/11 14:14:18 knu Exp $
 #
 
 PORTNAME=	kakasi
@@ -16,9 +16,9 @@ GNU_CONFIGURE=	yes
 
 MANLANG=		ja
 MAN1=			kakasi.1
+INSTALLS_SHLIB=	yes
 
 post-install:
-	@${LDCONFIG} -m ${PREFIX}/lib
 	${INSTALL_MAN} ${WRKSRC}/doc/kakasi.1 ${PREFIX}/man/${MANLANG}/man1
 .if !defined(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/kakasi

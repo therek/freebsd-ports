@@ -2,7 +2,7 @@
 # Date created:		17 Oct 1997
 # Whom:			taguchi
 #
-# $FreeBSD: ports/japanese/expect/Makefile,v 1.16 1999/12/23 18:46:34 steve Exp $
+# $FreeBSD: ports/japanese/expect/Makefile,v 1.17 2000/04/11 14:13:39 knu Exp $
 #
 
 PORTNAME=	expect
@@ -22,11 +22,11 @@ CONFIGURE_ARGS=	--enable-shared --with-tclconfig=${PREFIX}/lib/tcl8.0jp \
 		--with-tkinclude=${PREFIX}/include/tk8.0jp
 
 NO_MAN_INSTALL=	yes
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.pre.mk>
 
 post-install:
-	${SETENV} OBJFORMAT=${PORTOBJFORMAT} ${LDCONFIG} -m ${PREFIX}/lib
 .if ${PORTOBJFORMAT} == "aout"
 	${LN} -sf libexpect530jp.so.1.2 ${PREFIX}/lib/libexpect530jp.so
 .endif

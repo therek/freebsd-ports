@@ -2,7 +2,7 @@
 # Date created:		25 March 1999
 # Whom:			KIRIYAMA Kazuhiko <kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/japanese/tkstep80/Makefile,v 1.4 2000/04/12 14:38:09 knu Exp $
+# $FreeBSD: ports/japanese/tkstep80/Makefile,v 1.5 2000/06/02 07:29:17 hoek Exp $
 #
 
 PORTNAME=	tkstep
@@ -33,6 +33,7 @@ PATCH_DIST_ARGS=-d ${TOPDIR} --forward --quiet -E ${PATCH_DIST_STRIP}
 .endif
 PKGINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg/INSTALL.wish
 PKGDEINSTALL=	${PORTSDIR}/x11-toolkits/tk82/pkg/DEINSTALL.wish
+INSTALLS_SHLIB=	yes
 
 TCLVERSION=	8.0
 TOPDIR=		${WRKDIR}/${DISTNAME}

@@ -2,7 +2,7 @@
 # Date created:		28 March 1995
 # Whom:			Akito FUJITA <fujita@zoo.ncl.omron.co.jp>
 #
-# $FreeBSD: ports/japanese/mh/Makefile,v 1.18 2000/03/11 00:43:34 motoyuki Exp $
+# $FreeBSD: ports/japanese/mh/Makefile,v 1.19 2000/04/11 14:15:04 knu Exp $
 #
 
 PORTNAME=	mh
@@ -34,8 +34,6 @@ MAN5=	mh-alias.5 mh-format.5 mh-mail.5 mh-profile.5 mh-sequence.5 mh-tailor.5
 MAN8=	ap.8 conflict.8 dp.8 fmtdump.8 install-mh.8 post.8
 MANLANG=	"" ja
 MANCOMPRESSED=	yes
-
-post-install:
-	${LDCONFIG} -m ${PREFIX}/lib
+INSTALLS_SHLIB=	yes
 
 .include <bsd.port.mk>
