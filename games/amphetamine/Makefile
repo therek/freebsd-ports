@@ -2,7 +2,7 @@
 # Date created:				6 March 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/amphetamine/Makefile,v 1.4 2000/11/01 15:51:04 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	amphetamine
@@ -14,7 +14,7 @@ DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=  	SDL-1.0.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=  	SDL-1.0.2:${PORTSDIR}/devel/sdl10
 
 DATAVERSION=	0.8.6
 

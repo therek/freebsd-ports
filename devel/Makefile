@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.498 2001/04/07 22:59:53 will Exp $
+# $FreeBSD$
 #
 
     SUBDIR += ElectricFence
@@ -408,8 +408,8 @@
     SUBDIR += ruby-unit
     SUBDIR += rvm
     SUBDIR += sdcc
-    SUBDIR += sdl
-    SUBDIR += sdl-devel
+    SUBDIR += sdl10
+    SUBDIR += sdl12
     SUBDIR += sdts++
     SUBDIR += sfio
     SUBDIR += sh-rtems-binutils

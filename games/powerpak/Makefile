@@ -2,7 +2,7 @@
 # Date created:				19 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/powerpak/Makefile,v 1.19 2000/10/01 15:29:02 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	powerpak
@@ -13,7 +13,7 @@ DISTNAME=	PowerPak
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl10
 
 USE_FREETYPE=	yes
 MAKEFILE=	Makefile.FreeBSD

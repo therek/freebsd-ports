@@ -2,7 +2,7 @@
 # Date created:				16 February 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/asc/Makefile,v 1.2 2001/03/10 15:11:40 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	asc
@@ -18,7 +18,7 @@ EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel \
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12 \
 		SDL_image.10:${PORTSDIR}/graphics/sdl_image \
 		bz2.1:${PORTSDIR}/archivers/bzip2
 

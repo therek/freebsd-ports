@@ -2,7 +2,7 @@
 # Date created:				19 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/games/lbreakout/Makefile,v 1.4 2001/03/17 08:27:48 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	lbreakout
@@ -13,7 +13,7 @@ MASTER_SITE_SUBDIR=	lgames
 
 MAINTAINER=	sobomax@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
+LIB_DEPENDS=	SDL-1.1.3:${PORTSDIR}/devel/sdl12
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 

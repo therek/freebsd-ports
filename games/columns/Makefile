@@ -2,7 +2,7 @@
 # Date created:				26 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/columns/Makefile,v 1.6 2000/04/14 00:45:40 mharo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	columns
@@ -13,7 +13,7 @@ DISTNAME=	Columns-${PORTVERSION}
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
+LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl10
 
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl-config
 

@@ -2,7 +2,7 @@
 # Date created:         4 Sep 1999
 # Whom:                 Donald Burr <dburr@FreeBSD.org>
 #
-# $FreeBSD: ports/emulators/xmame/Makefile,v 1.24 2001/04/05 13:10:00 nsayer Exp $
+# $FreeBSD$
 #
 
 PORTNAME?=	xmame
@@ -172,7 +172,7 @@ PLIST_SUB+=	OPENGL=""
 .else
 PLIST_SUB+=	OPENGL="@comment "
 .if !defined(WITH_SDL) || ${WITH_SDL} != "no"
-LIB_DEPENDS=    SDL-1.1.3:${PORTSDIR}/devel/sdl-devel
+LIB_DEPENDS=    SDL-1.1.3:${PORTSDIR}/devel/sdl12
 SDL_CONFIG?=	${LOCALBASE}/bin/sdl11-config
 MAKE_ENV+=	SDL_CONFIG=${SDL_CONFIG}
 DISPLAY_METHOD=	SDL
