@@ -2,7 +2,7 @@
 # Date created:		28 July 2000
 # Whom:	      		Johann Visagie <johann@egenetics.com>
 #
-# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.3 2000/09/08 12:23:53 tg Exp $
+# $FreeBSD: ports/biology/py-biopython/Makefile,v 1.4 2000/09/11 14:56:36 nbm Exp $
 #
 
 PORTNAME=	biopython
@@ -17,7 +17,7 @@ MAINTAINER=	johann@egenetics.com
 USE_PYTHON=	yes
 
 BUILD_DEPENDS=	${PYDISTUTILS} \
-		${PYTHON_SITELIBDIR}/Numeric/Numeric.py:${PORTSDIR}/math/numpy
+		${PYTHON_SITELIBDIR}/Numeric/Numeric.py:${PORTSDIR}/math/py-numeric
 
 do-build:
 	@(cd ${WRKSRC}; ${SETENV} ${MAKE_ENV} ${PYTHON_CMD} setup.py build)
