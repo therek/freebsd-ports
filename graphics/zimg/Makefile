@@ -2,11 +2,11 @@
 # Date created:		20 Feb 2000
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/graphics/zimg/Makefile,v 1.6 2000/06/22 05:52:03 will Exp $
+# $FreeBSD: ports/graphics/zimg/Makefile,v 1.7 2000/09/23 21:25:23 will Exp $
 #
 
 PORTNAME=	zimg
-PORTVERSION=	4.2.2
+PORTVERSION=	4.4.0
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.zellner.org/zimg/download/
 
