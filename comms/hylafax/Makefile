@@ -3,7 +3,7 @@
 # Date created:		19 Apr 1997
 # Whom:			ports@freebsd.org
 #
-# $FreeBSD: ports/comms/hylafax/Makefile,v 1.27 1999/08/25 05:12:35 obrien Exp $
+# $FreeBSD: ports/comms/hylafax/Makefile,v 1.28 1999/09/07 10:45:24 steve Exp $
 #
 
 DISTNAME=	hylafax-v4.0pl2
@@ -27,6 +27,8 @@ BUILD_DEPENDS=	bash:${PORTSDIR}/shells/bash2 \
 RUN_DEPENDS=	bash:${PORTSDIR}/shells/bash2
 LIB_DEPENDS=	tiff.4:${PORTSDIR}/graphics/tiff \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
+
+BROKEN=		"Security hole (buffer overflow yielding setuid uucp)"
 
 DIST_SUBDIR=	hylafax
 
