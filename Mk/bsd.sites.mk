@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.218 2004/02/09 03:05:28 bland Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.219 2004/02/17 20:50:22 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -800,7 +800,6 @@ MASTER_SITE_VIM+= \
 
 MASTER_SITE_WINDOWMAKER+= \
 	ftp://ftp.windowmaker.org/pub/%SUBDIR%/ \
-	ftp://ftp.kddlabs.co.jp/X11/window_managers/windowmaker/%SUBDIR%/ \
 	ftp://ftp.minet.net/pub/windowmaker/%SUBDIR%/ \
 	ftp://gd.tuwien.ac.at/hci/windowmaker/%SUBDIR%/ \
 	ftp://ftp.zcu.cz/pub/X11/windowmaker/%SUBDIR%/ \
