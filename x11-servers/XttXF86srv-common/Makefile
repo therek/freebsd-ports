@@ -1,13 +1,12 @@
 # New ports collection makefile for:	Common Files for Xservers with Xtt
-# Version required:	1.3.0
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.22 1999/11/25 03:41:55 jseger Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-common/Makefile,v 1.23 1999/12/10 07:19:17 imura Exp $
 #
 
-DISTNAME=	xc
-PKGNAME?=	xtt-common-${VERSION}.${PATCHLEVEL}
+PORTNAME?=	xtt-common
+PORTVERSION=	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 MASTER_SITES=	ftp://ftp.xfree86.org/pub/XFree86/3.3.5/source/ \
 		ftp://xfree86.cdrom.com/pub/XFree86/3.3.5/source/ \

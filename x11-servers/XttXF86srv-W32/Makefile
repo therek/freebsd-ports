@@ -1,13 +1,12 @@
 # New ports collection makefile for:	Xserver for W32 with X True Type
-# Version required:	1.3.0
 # Date created:		15 April 1998
 # Whom:			Taguchi Takeshi <taguchi@tohoku.iij.ad.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF86srv-W32/Makefile,v 1.10 1999/08/31 02:58:51 peter Exp $
+# $FreeBSD: ports/x11-servers/XttXF86srv-W32/Makefile,v 1.11 1999/12/10 07:19:16 imura Exp $
 #
 
-DISTNAME=	xc
-PKGNAME=	xtt-W32-${VERSION}.${PATCHLEVEL}
+PORTNAME=	xtt-W32
+PORTVERSION= 	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	taguchi@tohoku.iij.ad.jp

@@ -1,13 +1,12 @@
 # New ports collection makefile for:	X98server for EGC with X True Type
-# Version required:	1.3.0
 # Date created:		25 October 1998
 # Whom:			NAKAJI Hiroyuki <nakaji@tutrp.tut.ac.jp>
 #
-# $FreeBSD: ports/x11-servers/XttXF98srv-EGC/Makefile,v 1.8 1999/08/31 02:58:53 peter Exp $
+# $FreeBSD: ports/x11-servers/XttXF98srv-EGC/Makefile,v 1.9 1999/12/10 07:19:26 imura Exp $
 #
 
-DISTNAME=	xc
-PKGNAME=	xtt-98EGC-${VERSION}.${PATCHLEVEL}
+PORTNAME=	xtt-98EGC
+PORTVERSION= 	${VERSION}.${PATCHLEVEL}
 CATEGORIES=	x11-servers
 
 MAINTAINER=	nakaji@tutrp.tut.ac.jp
