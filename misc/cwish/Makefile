@@ -1,14 +1,13 @@
 # ex:ts=8
 # Ports collection makefile for:  cwish
-# Version required:     	  3.37
+# Version required:     	  3.52
 # Date created:			  Thur Sept 25, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/cwish/Makefile,v 1.4 1999/08/25 07:21:26 obrien Exp $
 #
 
-DISTNAME=	cwish
-PKGNAME=	cwish-3.37
+DISTNAME=	cwish-3.52
 CATEGORIES=	misc
 MASTER_SITES=	http://www.hcs.de/users/hm/packages/
 
@@ -19,7 +18,7 @@ ALL_TARGET=	cwish
 MAN1=		cwish.1
 
 pre-configure:
-	${CP} ${WRKSRC}/Makefile.freebsd ${WRKSRC}/Makefile
+	${CP} ${WRKSRC}/Makefile.FreeBSD ${WRKSRC}/Makefile
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/cwish ${PREFIX}/bin
