@@ -1,4 +1,4 @@
-# $FreeBSD: ports/deskutils/Makefile,v 1.48 2001/05/24 14:17:16 ijliao Exp $
+# $FreeBSD: ports/deskutils/Makefile,v 1.49 2001/07/15 08:43:17 demon Exp $
 #
 
     SUBDIR += abacus
@@ -8,6 +8,7 @@
     SUBDIR += bulb
     SUBDIR += cal
     SUBDIR += cbb
+    SUBDIR += dailystrips
     SUBDIR += gaddr
     SUBDIR += gcal
     SUBDIR += gemcal
