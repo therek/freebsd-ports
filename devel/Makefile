@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.630 2001/09/01 18:39:08 knu Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.631 2001/09/01 21:37:18 knu Exp $
 #
 
     SUBDIR += ElectricFence
@@ -53,6 +53,7 @@
     SUBDIR += bonobo-conf
     SUBDIR += bugbuddy
     SUBDIR += c2lib
+    SUBDIR += c4
     SUBDIR += c_c++_reference
     SUBDIR += camlp4
     SUBDIR += cbrowser
