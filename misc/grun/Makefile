@@ -2,13 +2,13 @@
 # Date created:			Sun Jul 18 1999
 # Whom:				domi@saargate.de
 #
-# $FreeBSD: ports/misc/grun/Makefile,v 1.3 2000/04/14 08:45:53 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	grun
 PORTVERSION=	0.8.1
 CATEGORIES=	misc
-MASTER_SITES=	http://www.geocities.com/ResearchTriangle/Facility/1468/sg/
+MASTER_SITES=	http://www.brettnacher.org/users/dominik/FreeBSD/
 
 MAINTAINER=	domi@saargate.de
 
