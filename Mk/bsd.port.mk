@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.port.mk,v 1.471 2003/11/07 16:56:47 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.port.mk,v 1.472 2003/11/07 17:55:41 marcus Exp $
 #	$NetBSD: $
 #
 #	bsd.port.mk - 940820 Jordan K. Hubbard.
@@ -583,6 +583,16 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #
 # INFO			- A list of .info files (omitting the trailing ".info");
 #				  only one entry per document!
+#
+# Set the following to specify all documentation your port installs into 
+# ${DOCSDIR}
+#
+# PORTDOCS		- A list of files and directories relative to DOCSDIR.
+# 				  Shell glob patterns can be used, directories include
+# 				  the entire subtree of contained files and directories.
+# 				  Should not be set when no documentation files are
+# 				  installed (for example because NOPORTDOCS is defined).
+# 				  Useful for dynamically generated documentation.
 #
 # Default targets and their behaviors:
 #
