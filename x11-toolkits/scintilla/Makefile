@@ -2,11 +2,11 @@
 # Date created:				27 November 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/scintilla/Makefile,v 1.7 2001/04/17 11:26:58 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	scintilla
-PORTVERSION=	1.37
+PORTVERSION=	1.38
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
 		http://www.scintilla.org/
