@@ -1,4 +1,4 @@
-# $FreeBSD: ports/russian/Makefile,v 1.36 2001/09/17 19:38:26 sada Exp $
+# $FreeBSD$
 #
 
     SUBDIR += X.language
@@ -13,6 +13,7 @@
     SUBDIR += messarge
     SUBDIR += netscape4.language
     SUBDIR += p5-Lingua-RU-Charset
+    SUBDIR += p5-XML-Parser-encodings
     SUBDIR += pgp.language
     SUBDIR += pine.language
     SUBDIR += pscyr
