@@ -2,11 +2,11 @@
 # Date created:		3 Nov 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/security/ruby-sha1/Makefile,v 1.2 2000/11/03 18:14:37 knu Exp $
+# $FreeBSD: ports/security/ruby-sha1/Makefile,v 1.3 2001/04/07 10:47:35 knu Exp $
 #
 
 PORTNAME=	sha1
-PORTVERSION=	1.1
+PORTVERSION=	1.2
 PORTEPOCH=	1
 CATEGORIES=	security ruby
 MASTER_SITES=	http://www.omcl.org/~spcoltri/ruby/
