@@ -1,12 +1,12 @@
 # New ports collection makefile for:	ewipe
-# Version required:	1.1.0
 # Date created:		17 October 1997
 # Whom:			itojun@itojun.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/ewipe/Makefile,v 1.17 1999/08/25 07:21:36 obrien Exp $
 #
 
-DISTNAME=	ewipe-1.1.0
+PORTNAME=	ewipe
+PORTVERSION=	1.1.0
 CATEGORIES=	misc tk42
 MASTER_SITES=	http://www.jnet-jp.to/~sekisita/ewipe/ \
 		http://freefall.freebsd.org/~itojun/distfiles/
