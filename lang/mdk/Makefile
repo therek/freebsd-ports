@@ -3,11 +3,11 @@
 # Date created:			Apr 1, 2001
 # Whom:				Ying-Chieh Liao <ijliao@FreeBSD.org>
 #
-# $FreeBSD: ports/lang/mdk/Makefile,v 1.3 2001/05/04 21:41:14 ade Exp $
+# $FreeBSD: ports/lang/mdk/Makefile,v 1.4 2001/05/28 02:43:49 ijliao Exp $
 #
 
 PORTNAME=	mdk
-PORTVERSION=	0.3.2
+PORTVERSION=	0.3.5
 CATEGORIES=	lang gnome
 MASTER_SITES=	${MASTER_SITE_GNU} \
 		${MASTER_SITE_SOURCEFORGE}
