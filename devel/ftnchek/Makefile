@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ftnchek
-# Version required:	2.10.1
+# Version required:	2.11.0
 # Date created:		4 May 1998
 # Whom:			kargl@apl.washington.edu
 #
-# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.5 1999/08/25 05:47:57 obrien Exp $
+# $FreeBSD: ports/devel/ftnchek/Makefile,v 1.6 1999/09/30 03:37:31 cpiazza Exp $
 
 DISTNAME=	ftnchek
 PKGNAME=	ftnchek-2.11.0
