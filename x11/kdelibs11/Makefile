@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/kdelibs11/Makefile,v 1.55 2001/08/28 23:08:12 will Exp $
 #
 
 PORTNAME=	kdelibs
@@ -12,6 +12,7 @@ CATEGORIES=	x11 kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 DISTNAME=	kdelibs-1.1.2
+DIST_SUBDIR=	KDE
 
 PATCH_SITES=	ftp://ftp.kde.gr.jp/pub/kde/stable/latest/distribution/tar/generic/jp-patch/
 PATCHFILES=	kdelibs-ja.19990903.diff.gz

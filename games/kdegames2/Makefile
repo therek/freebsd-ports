@@ -2,7 +2,7 @@
 # Date created:				Sun 14 May 2000 02:47:57
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/games/kdegames2/Makefile,v 1.55 2001/08/25 02:17:56 will Exp $
 #
 
 PORTNAME=	kdegames
@@ -10,6 +10,7 @@ PORTVERSION=	2.2
 CATEGORIES=	games kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
+DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 

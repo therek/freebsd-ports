@@ -2,7 +2,7 @@
 # Date created:        28 October 1997
 # Whom:                Stefan Eßer <se@freebsd.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/converters/kdesupport11/Makefile,v 1.36 2001/08/25 02:17:55 will Exp $
 #
 
 PORTNAME=	kdesupport
@@ -12,6 +12,7 @@ CATEGORIES=	converters kde
 MASTER_SITES=	$(MASTER_SITE_KDE)
 MASTER_SITE_SUBDIR= Attic/old/1.1.2/distribution/tar/generic/source/bz2
 DISTNAME=	kdesupport-1.1.2
+DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 

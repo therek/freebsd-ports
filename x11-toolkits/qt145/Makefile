@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1996
 # Whom:			searle@longacre.demon.co.uk
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/qt145/Makefile,v 1.54 2001/09/09 05:22:45 will Exp $
 #
 
 PORTNAME=	qt1
@@ -11,6 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	x11-toolkits
 MASTER_SITES=	ftp://ftp.trolltech.com/qt/source/
 DISTNAME=	${PORTNAME:S/1//}-${PORTVERSION}
+DIST_SUBDIR=	KDE
 
 PATCH_SITES=	ftp://ftp.kde.gr.jp/pub/qt/patch/
 PATCHFILES=	qt-1.45-i18n-20000531.diff.gz

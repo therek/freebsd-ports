@@ -2,7 +2,7 @@
 # Date created:				Saturday 2 September 2000
 # Whom:					Will Andrews <will@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.50 2001/08/25 02:17:56 will Exp $
+# $FreeBSD: ports/graphics/kdegraphics2/Makefile,v 1.51 2001/08/31 10:32:41 olgeni Exp $
 #
 
 PORTNAME=	kdegraphics
@@ -10,6 +10,7 @@ PORTVERSION=	2.2
 CATEGORIES=	graphics kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
+DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 

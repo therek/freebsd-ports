@@ -2,7 +2,7 @@
 # Date created:				20 August 2001
 # Whom:					Dmitry Sivachenko <demon@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/kdeartwork/Makefile,v 1.1 2001/08/20 15:21:09 demon Exp $
+# $FreeBSD: ports/x11-wm/kdeartwork/Makefile,v 1.2 2001/09/01 08:35:18 demon Exp $
 #
 
 PORTNAME=	kdeartwork
@@ -10,6 +10,7 @@ PORTVERSION=	2.2
 CATEGORIES=	x11-wm kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
+DIST_SUBDIR=	KDE
 
 MAINTAINER=	kde@FreeBSD.org
 
