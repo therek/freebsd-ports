@@ -2,7 +2,7 @@
 # Date created:				1st June 2000
 # Whom:					Ade Lovett <ade@FreeBSD.org>
 #
-# $FreeBSD: ports/news/p5-NNTPClient/Makefile,v 1.4 2001/03/01 06:38:20 vanilla Exp $
+# $FreeBSD: ports/news/p5-NNTPClient/Makefile,v 1.5 2001/05/10 01:20:52 vanilla Exp $
 #
 
 PORTNAME=	NNTPClient
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	News
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	petef@databits.net
 
 PERL_CONFIGURE=	yes
 
