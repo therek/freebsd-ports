@@ -2,11 +2,12 @@
 # Date created:		25 Jun 1997
 # Whom:			jmz
 #
-# $FreeBSD: ports/misc/lile/Makefile,v 1.5 1999/08/25 07:22:01 obrien Exp $
+# $FreeBSD: ports/misc/lile/Makefile,v 1.6 2000/04/14 08:46:10 asami Exp $
 #
 
 PORTNAME=	ile
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.inria.fr/system/user/
 DISTNAME=	lile-2.0
