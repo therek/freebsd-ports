@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.124 2004/03/29 16:54:42 dinoex Exp $
+# $FreeBSD: ports/www/mod_php3/scripts/configure.php,v 1.125 2004/04/10 17:26:50 trevor Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -90,7 +90,7 @@ while [ "$1" ]; do
 			echo "CONFIGURE_ARGS+=--with-imap=\${PREFIX}"
 			;;
 		\"MySQL\")
-			echo "LIB_DEPENDS+=	mysqlclient.10:\${PORTSDIR}/databases/mysql323-client"
+			echo "USE_MYSQL=	yes"
 			echo "CONFIGURE_ARGS+=--with-mysql=\${PREFIX}"
 			MYSQL=1
 			;;
