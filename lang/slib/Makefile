@@ -2,11 +2,12 @@
 # Date created:        01 April 1998
 # Whom:                Yukihiro Nakai <Nakai@technologist.com>
 #
-# $FreeBSD: ports/lang/slib/Makefile,v 1.11 2001/03/20 13:38:47 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slib
 PORTVERSION=	2d1
+PORTREVISION=	1
 CATEGORIES=	lang
 MASTER_SITES=	http://swissnet.ai.mit.edu/ftpdir/scm/
 DISTNAME=	slib2d1
@@ -21,5 +22,8 @@ NO_BUILD=	yes
 do-install:
 	${MKDIR} ${PREFIX}/share/slib
 	${INSTALL_DATA} ${WRKSRC}/*.scm ${PREFIX}/share/slib
+	${LN} -shf ${PREFIX}/share/slib ${LOCALBASE}/share/guile/slib
+	${LOCALBASE}/bin/guile -c \
+		"(use-modules (ice-9 slib)) (require 'new-catalog)"
 
 .include <bsd.port.mk>
