@@ -2,16 +2,16 @@
 # Date created:		Tue May  2 15:43:02 BST 2000
 # Whom:			Roger Hardiman <roger@FreeBSD.org>
 #
-# $FreeBSD: ports/net/openam/Makefile,v 1.7 2001/05/03 01:59:25 roger Exp $
+# $FreeBSD: ports/net/openam/Makefile,v 1.8 2001/05/31 22:22:54 ade Exp $
 #
 
 PORTNAME=	openam
-PORTVERSION=	1.0.4
+PORTVERSION=	1.0.5
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTNAME=	openam_1.0.4
+DISTNAME=	openam_1.0.5
 
 MAINTAINER=	roger@FreeBSD.org
 
@@ -22,7 +22,6 @@ WRKSRC=		${WRKDIR}/${PORTNAME}
 NOCLEANDEPENDS=	yes
 
 USE_NEWGCC=	yes
-USE_BISON=	yes
 USE_GMAKE=	yes
 ALL_TARGET=	opt
 MAKE_ENV=	PWLIBDIR=${WRKDIRPREFIX}${.CURDIR}/../openh323/work/pwlib \

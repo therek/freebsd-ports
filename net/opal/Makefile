@@ -2,17 +2,17 @@
 # Date created:		Thu Feb 17 15:00:48 GMT 2000
 # Whom:			Roger Hardiman <roger@freebsd.org>
 #
-# $FreeBSD: ports/net/openh323/Makefile,v 1.18 2001/03/15 11:25:10 roger Exp $
+# $FreeBSD: ports/net/openh323/Makefile,v 1.19 2001/05/03 01:37:35 roger Exp $
 #
 
 PORTNAME=	openh323
-PORTVERSION=	1.2.12
+PORTVERSION=	1.5.4
 CATEGORIES=	net
 MASTER_SITES=	http://www.openh323.org/bin/ \
 		http://www.de.openh323.org/bin/ \
 		http://www.ru.openh323.org/bin/
-DISTFILES=	openh323_1.2.12.tar.gz \
-		pwlib_1.1.27.tar.gz
+DISTFILES=	openh323_1.5.4.tar.gz \
+		pwlib_1.1.32.tar.gz
 
 MAINTAINER=	roger@freebsd.org
 
