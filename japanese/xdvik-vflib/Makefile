@@ -2,7 +2,7 @@
 # Date created:        15 Jun 1998
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.14 2000/06/09 21:59:00 asami Exp $
+# $FreeBSD: ports/japanese/xdvik-vflib/Makefile,v 1.15 2000/12/07 15:59:27 shige Exp $
 #
 
 PORTNAME=	xdvik-vflib
@@ -31,7 +31,7 @@ PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	inagaki@tg.rim.or.jp
 
-LIB_DEPENDS=	VFlib2.24:${PORTSDIR}/japanese/vflib
+LIB_DEPENDS=	VFlib2:${PORTSDIR}/japanese/vflib
 RUN_DEPENDS+=	makejvf:${PORTSDIR}/japanese/makejvf
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
@@ -107,7 +107,7 @@ BDPI?=		300
 DVIPS?=		dvips
 
 .if ${FONTTYPE} == metafont
-RUN_DEPENDS+=    ptex-common:${PORTSDIR}/japanese/ptex-common
+RUN_DEPENDS+=	mktexpk:${PORTSDIR}/japanese/ptex-common
 MF_MODE=	${MAKETEX_MODE}
 .else
 MF_MODE=	${USEPK_MODE}
