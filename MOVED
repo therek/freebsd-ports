@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.505 2004/08/20 15:24:19 pav Exp $
+# $FreeBSD: ports/MOVED,v 1.506 2004/08/20 15:37:49 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1243,3 +1243,4 @@ x11-toolkits/notif2|x11-themes/notif2|2004-08-20|Better category
 www/apache13-fp||2004-08-20|Obsolete and unfixed security vulnerabilities
 www/mod_csacek||2004-08-20|Obsolete and broken
 archivers/linux-unace||2004-08-20|Segfaults on startup
+misc/cheatah||2004-08-20|Abandoned by the upstream authors
