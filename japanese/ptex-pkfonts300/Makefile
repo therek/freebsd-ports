@@ -3,7 +3,7 @@
 # Date created:        24 Dec 1999
 # Whom:                Kentaro Inagaki <inagaki@tg.rim.or.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/japanese/ptex-pkfonts300/Makefile,v 1.1 1999/12/27 01:15:33 steve Exp $
 #
 
 DISTNAME=	ptex-pkfonts
@@ -14,8 +14,6 @@ DISTFILES=	#null
 MAINTAINER=	inagaki@tg.rim.or.jp
 
 RUN_DEPENDS=	${LOCALBASE}/lib/fonts/pk${RESOLUTION}:${PORTSDIR}/print/pkfonts${RESOLUTION}
-
-.include <bsd.port.pre.mk>
 
 NO_BUILD=	yes
 PKGREQ=		${WRKDIR}/REQ
@@ -54,4 +52,4 @@ do-install:
 	@${SETENV} PKG_PREFIX=${PREFIX} \
 		${SH} ${WRKDIR}/REQ ${PKGNAME} INSTALL
 
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
