@@ -2,11 +2,12 @@
 # Date created:         27.01.2001
 # Whom:                 ache
 #
-# $FreeBSD: ports/www/mnoGoSearch-current/Makefile,v 1.16 2001/03/13 15:49:30 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mnogosearch
 PORTVERSION=    3.1.12
+PORTREVISION=   1
 CATEGORIES=	www databases
 MASTER_SITES=	http://search.mnogo.ru/Download/
 
@@ -65,6 +66,7 @@ post-install:
 	${CHMOD} 700 /var/mnogosearch/cache
 	${CHOWN} -R nobody.nogroup /var/mnogosearch/
 	${INSTALL_DATA} ${WRKSRC}/INSTALL ${PREFIX}/share/doc/mnogosearch
+	${INSTALL_DATA} ${FILESDIR}/spelld.sh-dist ${PREFIX}/etc/rc.d/
 	@${ECHO}
 	@${CAT} ${PKGMESSAGE}
 
