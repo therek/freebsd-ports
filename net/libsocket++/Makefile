@@ -4,7 +4,7 @@
 # Whom:				  Narvi <narvi@haldjas.folklore.ee>
 #				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/net/libsocket++/Makefile,v 1.8 2000/04/09 18:12:06 cpiazza Exp $
+# $FreeBSD: ports/net/libsocket++/Makefile,v 1.9 2000/04/29 21:53:59 kris Exp $
 #
 
 PORTNAME=	libsocket++
@@ -18,9 +18,7 @@ DISTNAME=	socket++-1.10
 MAINTAINER=	narvi@haldjas.folklore.ee
 
 GNU_CONFIGURE=	yes
-#NOPROFILE=	true
-
-BROKEN=		"Compiler error"
+NOPROFILE=	true
 
 post-configure:
 	@${CP} ${FILESDIR}/Makefile.lib ${WRKSRC}/Makefile
