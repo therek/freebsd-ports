@@ -1,9 +1,9 @@
 # Ports collection makefile for:	nessus-libnasl
-# Version required:			0.99.2
+# Version required:			0.99.4
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.5 2000/01/28 17:34:07 steve Exp $
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.6 2000/02/01 00:06:51 jedgar Exp $
 #
 
 DISTNAME=	libnasl-0.99.4
@@ -28,14 +28,8 @@ NESSUS_REV=	${DISTNAME:S/libnasl-//g}
 DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/libnasl
 
-GNU_CONFIGURE=	yes
+USE_LIBTOOL=	YES
 
 MAN1=		nasl-config.1
 
-.include <bsd.port.pre.mk>
-
-.if ${OSVERSION} >= 400001
-BROKEN=		"Can't be built successfully in -CURRENT"
-.endif
-
-.include <bsd.port.post.mk>
+.include <bsd.port.mk>
