@@ -3,7 +3,7 @@
 # Date created:		So  21 Jun 1998 16:09:39 CEST
 # Whom:			Stefan Herrmann <stefan@asterix.webaffairs.net>
 #
-# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.94 1999/08/31 02:42:41 peter Exp $
+# $FreeBSD: ports/www/apache13-php4/Makefile,v 1.95 1999/09/06 09:35:02 dirk Exp $
 #
 
 DISTNAME=	apache_${VERSION_APACHE}
@@ -11,7 +11,6 @@ PKGNAME=	apache+php-${VERSION_APACHE}+${VERSION_PHP}
 CATEGORIES=	www
 MASTER_SITES=	http://www.apache.org/dist/ \
 		http://www.rge.com/pub/infosystems/apache/dist/ \
-		http://www.php.net/${PHP_DISTDIR}/ \
 		http://us.php.net/${PHP_DISTDIR}/ \
 		http://www.modssl.org/source/ \
 		ftp://ftp.modssl.org/source/ \
@@ -40,6 +39,9 @@ MASTER_SITES=	http://www.apache.org/dist/ \
 		ftp://ftp.blatzheim.com/pub/mod_ssl/ \
 		ftp://ftp.fu-berlin.de/unix/security/mod_ssl/
 DISTFILES=	apache_${VERSION_APACHE}.tar.gz php-${VERSION_PHP}.tar.gz
+
+PATCH_SITES=	http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
+PATCHFILES=	php4_snmp.c.diff
 
 MAINTAINER=	dirk@FreeBSD.org
 
