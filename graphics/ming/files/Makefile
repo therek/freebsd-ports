@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.4 2001/03/20 09:32:54 knu Exp $
+# $FreeBSD: ports/graphics/ming/files/Makefile,v 1.5 2001/04/12 16:43:45 knu Exp $
 
 LIB=		ming
 SHLIB_MAJOR?=	2
@@ -50,6 +50,7 @@ INCS=		blocklist.h \
 		fill.h \
 		libming.h \
 		ming.h \
+		mingpp.h \
 		movie.h \
 		movieclip.h \
 		position.h \
@@ -80,7 +81,7 @@ beforeinstall: _includeinstall
 _includeinstall: pre-_includeinstall
 
 pre-_includeinstall:
-	mkdir -p ${DESTDIR}${INCDIR}/blocks ${DESTDIR}${INCDIR}/c++
+	mkdir -p ${DESTDIR}${INCDIR}/blocks
 
 beforeinstall:
 	${INSTALL} -C -o ${INCOWN} -g ${INCGRP} -m ${INCMODE} \
@@ -91,5 +92,3 @@ beforeinstall:
 		${.CURDIR}/blocks/character.h ${.CURDIR}/blocks/libswf.h \
 		${.CURDIR}/blocks/method.h ${.CURDIR}/blocks/output.h \
 		${.CURDIR}/blocks/rect.h  ${INCDIR}/blocks/
-	${INSTALL} -C -o ${INCOWN} -g ${INCGRP} -m ${INCMODE} \
-		${.CURDIR}/c++/ming.h ${INCDIR}/c++/

@@ -2,12 +2,12 @@
 # Date created:		14 October 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ming/Makefile,v 1.6 2001/03/20 09:32:54 knu Exp $
+# $FreeBSD: ports/graphics/ming/Makefile,v 1.7 2001/04/12 16:43:45 knu Exp $
 #
 
 PORTNAME=	ming
 PORTVERSION=	0.1.0
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.opaque.net/ming/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} ${PORTNAME}-examples${EXTRACT_SUFX}
@@ -38,18 +38,10 @@ DOCS_UTIL=	README \
 
 post-extract:
 	${LN} -s ${WRKDIR}/${PORTNAME}-examples ${WRKSRC}/../examples
-	${MKDIR} ${WRKSRC}/c++
-	${CP} ${WRKSRC}/../c++_ext/ming.h ${WRKSRC}/c++/
+	${SED} -e 's:"\.\./\.\./ming\.h":<ming.h>:g' \
+		${WRKSRC}/../c++_ext/ming.h > ${WRKSRC}/mingpp.h
 	cd ${WRKSRC}/../util && \
 	${RM} bindump.c hexdump.c listmp3.c
-
-post-patch:
-	${PERL} -i -p \
-		-e 's:"\.\./\.\./c\+\+_ext/ming\.h":<c++/ming.h>:g;' \
-		-e 's:"\.\./\.\./ming\.h":<ming.h>:g;' \
-		${WRKSRC}/../examples/c/* \
-		${WRKSRC}/../examples/c++/* \
-		${WRKSRC}/c++/ming.h
 
 pre-build:
 	${CP} ${FILESDIR}/Makefile ${WRKSRC}/
