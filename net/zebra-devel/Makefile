@@ -2,14 +2,13 @@
 # Date created:		So  31 Mai 1998 11:00:30 CEST
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD: ports/net/zebra/Makefile,v 1.46 2001/01/16 17:32:02 sobomax Exp $
+# $FreeBSD: ports/net/zebra/Makefile,v 1.47 2001/01/22 21:52:50 andreas Exp $
 #
 
 PORTNAME=	zebra
-PORTVERSION=	0.90.a
+PORTVERSION=	0.90a
 CATEGORIES=	net ipv6
 MASTER_SITES=	ftp://ftp.zebra.org/pub/zebra/
-DISTFILES=	zebra-0.90a.tar.gz
 
 MAINTAINER=	andreas@FreeBSD.org
 
