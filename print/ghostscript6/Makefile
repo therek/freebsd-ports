@@ -3,7 +3,7 @@
 # Date created:		Tue Jun 10 21:58:54 CEST 1997
 # Whom:			Andreas Klemm <andreas@klemm.gtn.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/print/ghostscript6/Makefile,v 1.41 2000/03/25 12:27:13 andreas Exp $
 #
 
 DISTNAME=	ghostscript-${GS_VERSION}
@@ -16,6 +16,8 @@ DISTFILES=	${GS_SOURCES} ${GS_FONTS_STD} ${GS_FONTS_OTHER} \
 		${DECRYPT_PDF} ${HP880_DRV}
 
 MAINTAINER=	andreas@FreeBSD.org
+
+BROKEN=		"needs more work, does not built cleanly"
 
 Y2K=		http://www.cs.wisc.edu/~ghost/aladdin/y2k.html
 
