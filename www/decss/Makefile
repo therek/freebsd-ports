@@ -2,7 +2,7 @@
 # Date Created:			20 Feb 2000
 # Whom:				Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/decss/Makefile,v 1.4 2000/05/14 05:18:39 billf Exp $
+# $FreeBSD: ports/www/decss/Makefile,v 1.5 2001/02/05 15:33:18 olgeni Exp $
 #
 
 PORTNAME=	decss
@@ -20,5 +20,9 @@ USE_PERL5=	YES
 
 do-install:
 	${INSTALL_SCRIPT} ${WRKSRC}/DeCSS ${PREFIX}/bin/decss
+	${MKDIR} ${PREFIX}/share/doc/decss
+.for i in FAQ README decss-now.png decss_mirror.html original_pigdog_article.txt
+	${INSTALL_DATA} ${WRKSRC}/${i} ${PREFIX}/share/doc/decss
+.endfor
 
 .include <bsd.port.mk>
