@@ -2,7 +2,7 @@
 # Date created:		February 7, 1998
 # Whom:			Don Croyle <croyle@gelemna.org>
 #
-# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.7 2001/03/01 06:38:26 vanilla Exp $
+# $FreeBSD: ports/news/p5-News-Newsrc/Makefile,v 1.8 2001/06/20 06:12:04 vanilla Exp $
 #
 
 PORTNAME=	News-Newsrc
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	News
 PKGNAMEPREFIX=	p5-
 
-MAINTAINER=	croyle@gelemna.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/Set/IntSpan.pm:${PORTSDIR}/math/p5-Set-IntSpan
 RUN_DEPENDS=	${BUILD_DEPENDS}
@@ -21,5 +21,8 @@ PERL_CONFIGURE=	yes
 
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
 MAN3=		News::Newsrc.3
+
+pre-patch:
+	@${PERL} -pi -e '$$_ = "" if /^use 5.6/' ${WRKSRC}/Newsrc.pm
 
 .include <bsd.port.mk>
