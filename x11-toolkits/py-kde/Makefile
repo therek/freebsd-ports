@@ -3,11 +3,11 @@
 # Date created:		Sun Oct 17 00:24:28 PDT 1999
 # Whom:			adsharma@sharmas.dhs.org
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-toolkits/py-kde/Makefile,v 1.1 2000/04/23 05:11:50 will Exp $
 #
 
 PORTNAME=	py-kde
-PORTVERSION=	0.11.1
+PORTVERSION=	0.12
 CATEGORIES=	x11-toolkits kde python
 MASTER_SITES=	http://www.river-bank.demon.co.uk/software/
 DISTNAME=	PyKDE-${PORTVERSION}
