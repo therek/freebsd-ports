@@ -2,7 +2,7 @@
 # Date created:		7 Apr 1999
 # Whom: 		MANTANI Nobutaka <nobutaka@nobutaka.com>
 #
-# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.12 2000/04/19 06:52:28 knu Exp $
+# $FreeBSD: ports/mail/wanderlust-emacs/Makefile,v 1.13 2000/07/10 02:03:25 steve Exp $
 #
 
 PORTNAME=	wanderlust
@@ -69,7 +69,7 @@ PLIST_SUB=	EMACS_LIBDIR=${EMACS_LIBDIR} \
 		EMACS_PACKAGESDIR=${EMACS_PACKAGESDIR} \
 		DIRSECTION=${DIRSECTION}
 
-PLIST=		${PKGDIR}/PLIST.${EMACS_PORT_NAME}
+PLIST=		${PKGDIR}/pkg-plist.${EMACS_PORT_NAME}
 MAKE_ARGS+=	EMACS=${EMACS_CMD} XEMACS=${EMACS_CMD} \
 		LISPDIR=${PREFIX}/${EMACS_SITE_LISPDIR} \
 		FLAGS="-batch -q -no-site-file -l ${WRKDIR}/wanderlust-startup.el"
@@ -159,7 +159,7 @@ install-utils:
 	@${INSTALL_DATA} ${WRKDIR}/wanderlust-startup.el ${PREFIX}/${STARTUPDIR}
 
 install-manifest:
-	@${CAT} ${PKGDIR}/PLIST.${EMACS_PORT_NAME} | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
+	@${CAT} ${PKGDIR}/pkg-plist.${EMACS_PORT_NAME} | ${GREP} -e "^%%EMACS_PACKAGESDIR%%" | \
 		${SED} -e "s!^%%EMACS_PACKAGESDIR%%!!" > ${WRKDIR}/${MANIFEST}
 	@${INSTALL_DATA} ${WRKDIR}/${MANIFEST} ${PREFIX}/${EMACS_PACKAGESDIR}/pkginfo/
 	@${INSTALL_DATA} ${FILESDIR}/_pkg.el ${PREFIX}/${EMACS_PACKAGESDIR}/lisp/wl
