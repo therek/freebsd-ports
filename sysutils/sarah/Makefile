@@ -2,11 +2,11 @@
 # Date created:		10 Jan 2000
 # Whom:			Matthew Pounsett <mattp@conundrum.com>
 #
-# $FreeBSD: ports/sysutils/sarah/Makefile,v 1.5 2001/02/26 04:12:30 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sarah
-PORTVERSION=	0.7b
+PORTVERSION=	0.8b
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.conundrum.com/pub/sarah/
 
