@@ -2,7 +2,7 @@
 # Date created:			16 June 2001
 # Whom:				dd
 #
-# $FreeBSD$
+# $FreeBSD: ports/sysutils/readlink/Makefile,v 1.1 2001/06/24 23:46:25 dd Exp $
 #
 
 PORTNAME=	readlink
@@ -14,6 +14,7 @@ MASTER_SITE_SUBDIR=	dd
 
 MAINTAINER=	dd@FreeBSD.org
 
+MANSECTS=	1
 MAN1=		readlink.1
 MANCOMPRESSED=	maybe
 
