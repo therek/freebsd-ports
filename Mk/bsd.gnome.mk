@@ -1,7 +1,7 @@
 #-*- mode: Fundamental; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.30 2003/04/12 01:12:57 marcus Exp $
+# $FreeBSD: ports/Mk/bsd.gnome.mk,v 1.31 2003/04/13 19:49:40 marcus Exp $
 #	$NetBSD: $
 #
 # Please view me with 4 column tabs!
@@ -292,7 +292,7 @@ atspi_LIB_DEPENDS=	spi.8:${PORTSDIR}/x11-toolkits/at-spi
 atspi_DETECT=		${X11BASE}/libdata/pkgconfig/cspi-1.0.pc
 atspi_USE_GNOME_IMPL=gail libbonobo
 
-libgailgnome_RUN_DEPENDS=	${X11BASE}/lib/gtk-2.0/modules/libgail-gnome.so
+libgailgnome_RUN_DEPENDS=	${X11BASE}/lib/gtk-2.0/modules/libgail-gnome.so:${PORTSDIR}/x11-toolkits/libgail-gnome
 libgailgnome_DETECT=		${X11BASE}/libdata/pkgconfig/libgail-gnome.pc
 libgailgnome_USE_GNOME_IMPL=	libgnomeui atspi
 
