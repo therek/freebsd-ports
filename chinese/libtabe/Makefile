@@ -2,13 +2,13 @@
 # Date created:				2 Nov 1999
 # Whom:					Keith Jang <keith@freebsd.sinica.edu.tw>
 #
-# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.15 2000/08/12 07:33:58 vanilla Exp $
+# $FreeBSD: ports/chinese/libtabe/Makefile,v 1.16 2000/10/10 05:32:47 kevlo Exp $
 #
 
 PORTNAME=	libtabe
-PORTVERSION=	0.1.7
+PORTVERSION=	0.1.8
 CATEGORIES=	chinese
-MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/devel/
+MASTER_SITES=	ftp://xcin.linux.org.tw/pub/xcin/libtabe/
 
 MAINTAINER=	keith@freebsd.sinica.edu.tw
 
@@ -37,7 +37,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/doc/${DOC} ${PREFIX}/share/doc/tabe
 .endfor
 .endif
-	${TOUCH} ${PREFIX}/share/tabe/libtabe-0.1.7
+	${TOUCH} ${PREFIX}/share/tabe/libtabe-0.1.8
 .if ${PORTOBJFORMAT} == "elf"
 	${RM} -f ${PREFIX}/lib/libbims.so ${PREFIX}/lib/libbims.so.0
 	${MV} ${PREFIX}/lib/libbims.so.0.1 ${PREFIX}/lib/libbims.so.0
