@@ -2,11 +2,12 @@
 # Date created:		Dec 18 2000
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_layout/Makefile,v 1.1 2000/12/19 12:45:30 will Exp $
+# $FreeBSD: ports/www/mod_layout/Makefile,v 1.2 2001/06/17 18:36:35 steve Exp $
 #
 
 PORTNAME=	mod_layout
 PORTVERSION=	2.10.6
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	ftp://ftp.tangent.org/pub/apache/ \
 		http://www.tangent.org/mod_layout/
@@ -16,8 +17,11 @@ MAINTAINER=	petef@databits.net
 BUILD_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 RUN_DEPENDS=	${LOCALBASE}/sbin/apxs:${PORTSDIR}/www/apache13
 
+MAKE_ENV=	APXS=${LOCALBASE}/sbin/apxs
+
 post-patch:
-	@${PERL} -pi -e 's!-i -a -n!-i -A -n!' ${WRKSRC}/Makefile
+	@${PERL} -pi -e 's!-i -a -n!-i -A -n!; s!APXS=apxs!APXS?=apxs!' \
+		${WRKSRC}/Makefile
 
 post-install:
 .if !defined(NOPORTDOCS)
