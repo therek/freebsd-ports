@@ -2,17 +2,17 @@
 # Date created:		07 July 2001
 # Whom:			HIRATA Yasuyuki <yasu@asuka.net>
 #
-# $FreeBSD: ports/japanese/dvipdfm/Makefile,v 1.1 2001/09/03 17:50:54 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=		dvipdfm
 PORTVERSION=		0.13.2c
+PORTREVISION=		1
 CATEGORIES=		japanese print
 MASTER_SITES=		http://gaspra.kettering.edu/dvipdfm/
 
 PATCH_SITES=		http://hamilcar.phys.kyushu-u.ac.jp/~hirata/dvipdfm/distfiles/
-PATCHFILES=		${DISTNAME}-jpatch-p1.diff.gz
-
+PATCHFILES=		${DISTNAME}-jpatch-p1c.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=		yasu@asuka.net
