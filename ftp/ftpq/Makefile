@@ -2,11 +2,12 @@
 # Date created:				Mon 03 Jul 2000
 # Whom:					will
 #
-# $FreeBSD: ports/ftp/ftpq/Makefile,v 1.8 2001/08/08 05:52:16 lioux Exp $
+# $FreeBSD: ports/ftp/ftpq/Makefile,v 1.9 2001/09/05 13:21:35 wjv Exp $
 #
 
 PORTNAME=	ftpq
 PORTVERSION=	1.05
+PORTREVISION=	1
 PORTEPOCH=	1
 CATEGORIES=	ftp
 MASTER_SITES=	http://www.tranchant.freeserve.co.uk/software/
@@ -16,8 +17,10 @@ MAINTAINER=	ports@FreeBSD.org
 USE_GMAKE=	yes
 GNU_CONFIGURE=	yes
 MAN1=		ftpq.1
-SPOOLDIR?=	/var/spool/ftpq
 PLIST_SUB+=	SPOOLDIR=${SPOOLDIR}
+
+# This may be set interactively at install-time:
+SPOOLDIR?=	/var/spool/ftpq
 
 post-patch:
 	@ ${PERL} -pi -e 's#%%SPOOLDIR%%#${SPOOLDIR}#' \
@@ -25,5 +28,11 @@ post-patch:
 
 post-install:
 	@ ${MKDIR} ${SPOOLDIR} && ${CHMOD} 777 ${SPOOLDIR}
+.if !defined(NOPORTDOCS)
+	@ ${MKDIR} ${DOCSDIR}
+.for docfile in CHANGELOG README TODO
+	@ ${INSTALL_DATA} ${WRKSRC}/${docfile} ${DOCSDIR}
+.endfor
+.endif
 
 .include <bsd.port.mk>
