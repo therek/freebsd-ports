@@ -3,7 +3,7 @@
 # Date created:		03 July 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.9 1999/08/31 06:45:11 mharo Exp $
+# $FreeBSD: ports/graphics/pstoedit/Makefile,v 1.10 2000/03/09 10:02:43 tg Exp $
 #
 
 DISTNAME=	pstoedit_3_17
@@ -13,10 +13,9 @@ MASTER_SITES=	http://www.geocities.com/SiliconValley/Network/1958/pstoedit/
 
 MAINTAINER=	jseger@FreeBSD.org
 
+RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 LIB_DEPENDS=	plot.3:${PORTSDIR}/graphics/plotutils \
 		plotter.3:${PORTSDIR}/graphics/plotutils
-
-RUN_DEPENDS=	gs:${PORTSDIR}/print/ghostscript55
 
 FETCH_BEFORE_ARGS=	-t
 USE_ZIP=		yes
