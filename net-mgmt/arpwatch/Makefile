@@ -2,7 +2,7 @@
 # Date created:         March 24 1997
 # Whom:                 Brian Somers <brian@Awfulhak.org>
 #
-# $FreeBSD: ports/net/arpwatch/Makefile,v 1.17 2000/11/21 22:11:43 brian Exp $
+# $FreeBSD: ports/net/arpwatch/Makefile,v 1.18 2001/02/22 22:56:36 brian Exp $
 #
 
 PORTNAME=	arpwatch
@@ -15,6 +15,7 @@ DISTNAME=	arpwatch-2.1a10
 
 MAINTAINER=	brian@Awfulhak.org
 
+GNU_CONFIGURE=	yes
 HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	--quiet
 INSTALL_TARGET=	install install-man
