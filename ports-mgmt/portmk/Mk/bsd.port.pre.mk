@@ -1,7 +1,7 @@
 #-*- mode: makefile; tab-width: 4; -*-
 # ex:ts=4
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/portmk/Mk/bsd.port.pre.mk,v 1.1 2004/07/06 12:41:03 eik Exp $
 #
 
 PORTMK_VERSION=	20040705
@@ -56,6 +56,7 @@ LDCONFIG?=	/sbin/ldconfig
 LN?=		/bin/ln
 LS?=		/bin/ls
 MKDIR?=		/bin/mkdir -p
+MKTEMP?=	/usr/bin/mktemp
 MV?=		/bin/mv
 OBJCOPY?=	/usr/bin/objcopy
 OBJDUMP?=	/usr/bin/objdump
