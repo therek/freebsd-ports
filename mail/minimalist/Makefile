@@ -2,13 +2,13 @@
 # Date created:        15 September 1999
 # Whom:                gmarco@scotty.masternet.it
 #
-# $FreeBSD: ports/mail/minimalist/Makefile,v 1.2 1999/11/14 01:52:31 cpiazza Exp $
+# $FreeBSD: ports/mail/minimalist/Makefile,v 1.3 2000/04/13 20:00:08 cpiazza Exp $
 #
 
 PORTNAME=	minimalist
 PORTVERSION= 	2.0.2
 CATEGORIES=	mail
-MASTER_SITES=	http://www.webest.com/minimalist/ \
+MASTER_SITES=	ftp://ftp.mml.org.ua/pub/minimalist/ \
 		http://www.giovannelli.it/~gmarco/files/
 
 MAINTAINER=	gmarco@giovannelli.it
