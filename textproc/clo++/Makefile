@@ -2,11 +2,11 @@
 # Date created:				30 January 2001
 # Whom:					Kevin Lo <kevlo@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/clo++/Makefile,v 1.1 2001/01/30 10:21:23 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	clo++
-PORTVERSION=	0.3.0
+PORTVERSION=	0.5.0
 CATEGORIES=	textproc
 MASTER_SITES=	http://pmade.org/~pjones/software/clo++/download/
 
@@ -14,11 +14,18 @@ MAINTAINER=	kevlo@FreeBSD.org
 
 LIB_DEPENDS=	xml2.5:${PORTSDIR}/textproc/libxml2
 
-GNU_CONFIGURE=	yes
-CONFIGURE_ENV= CXXFLAGS="-I${LOCALBASE}/include"
+USE_GCC30=	yes
+CONFGARGS=	--prefix ${PREFIX}
+CONFGARGS+=	--xml2-config ${PREFIX}/bin/xml2-config
+
+pre-configure:
+	@(cd ${WRKSRC} && ${ENV} CXX=${CXX} ${PERL5} configure.pl ${CONFGARGS})
 
 post-install:
+	@${STRIP_CMD} ${PREFIX}/bin/clo++
+.if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/clo++
-	${INSTALL_DATA} ${WRKSRC}/doc/handbook.html ${PREFIX}/share/doc/clo++
+	@${INSTALL_DATA} ${WRKSRC}/docs/manual.txt ${PREFIX}/share/doc/clo++
+.endif
 
 .include <bsd.port.mk>
