@@ -2,16 +2,17 @@
 # Date created:		Sat Nov 22 12:54:50 CET 1997
 # Whom:			andreas
 #
-# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.13 2000/04/09 17:40:25 cpiazza Exp $
+# $FreeBSD: ports/print/html2ps-letter/Makefile,v 1.14 2000/04/09 17:49:55 cpiazza Exp $
 #
 
 PORTNAME=	html2ps-${PAPERSIZE}
 PORTVERSION=	1.0
+PORTREVISION=	1
 CATEGORIES=	print www perl5
 MASTER_SITES=	http://www.tdb.uu.se/~jan/
-DISTNAME=	html2ps-1.0b1
+DISTNAME=	html2ps-1.0b3
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	mogrify:${PORTSDIR}/graphics/ImageMagick \
 		djpeg:${PORTSDIR}/graphics/jpeg \
