@@ -1,13 +1,13 @@
 #!/bin/sh
-# $FreeBSD$
+# $FreeBSD: ports/security/clamav/pkg-deinstall,v 1.1 2004/02/03 06:43:06 glewis Exp $
 
 if [ "$2" != "POST-DEINSTALL" ]; then
 	exit 0
 fi
 
-USER=clamav
+CLAMAVUSER=%%CLAMAVUSER%%
 
-if pw usershow "${USER}" 2>/dev/null 1>&2; then
-	echo "To delete ${USER} user permanently, use 'pw userdel \"${USER}\"'"
+if pw usershow "${CLAMAVUSER}" 2>/dev/null 1>&2; then
+	echo "To delete ${CLAMAVUSER} user permanently, use 'pw userdel \"${CLAMAVUSER}\"'"
 fi
 exit 0
