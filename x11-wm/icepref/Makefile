@@ -2,7 +2,7 @@
 # Date created:		06 June 2000
 # Whom:				Michael Urban <murban@tznet.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/icepref/Makefile,v 1.1 2000/06/12 23:36:23 will Exp $
 #
 
 PORTNAME=	icepref
@@ -14,7 +14,7 @@ MAINTAINER=	murban@tznet.com
 
 LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 RUN_DEPENDS=	python:${PORTSDIR}/lang/python
-RUN_DEPENDS=	${LOCALBASE}/lib/python1.5/site-packages/GTK.py:${PORTSDIR}/x11-toolkits/py-gtk
+RUN_DEPENDS=	${LOCALBASE}/lib/python1.6/site-packages/GTK.py:${PORTSDIR}/x11-toolkits/py-gtk
 
 WRKSRC=		${WRKDIR}/${PORTNAME}
 USE_X_PREFIX=	yes
