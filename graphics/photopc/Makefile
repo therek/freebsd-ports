@@ -2,13 +2,14 @@
 # Date created:		11 October 1997
 # Whom:			Douglas Carmichael <dcarmich@mcs.com>
 #
-# $FreeBSD: ports/graphics/photopc/Makefile,v 1.4 2000/05/29 21:57:17 will Exp $
+# $FreeBSD: ports/graphics/photopc/Makefile,v 1.5 2001/02/14 14:37:23 kevlo Exp $
 #
 
 PORTNAME=	photopc
 PORTVERSION=	3.05
 CATEGORIES=	graphics
-MASTER_SITES=	ftp://ftp.average.org/pub/photopc/
+MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
+MASTER_SITE_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
 
