@@ -2,7 +2,7 @@
 # Date created:		Nov 3 1999
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.1.1.1 2000/05/16 01:46:26 chuckr Exp $
+# $FreeBSD: ports/java/linux-jdk/Makefile,v 1.2 2000/07/15 13:37:15 sada Exp $
 #
 
 PORTNAME=	jdk
@@ -17,8 +17,8 @@ MAINTAINER=	K.J.Koster@kpn.com
 
 RUN_DEPENDS=	/compat/linux/usr/i486-linux-libc5/lib/libc.so.5:${PORTSDIR}/emulators/linux_base
 
-NO_CDROM=	"License doesn't allow distribution with fee"
-NO_PACKAGE=	"License doesn't allow binary distributions"
+NO_CDROM=	"License doesn\'t allow distribution with fee"
+NO_PACKAGE=	"License doesn\'t allow binary distributions"
 
 ONLY_FOR_ARCHS=	i386
 
