@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim6/Makefile,v 1.102 2001/02/06 08:41:32 obrien Exp $
+# $FreeBSD: ports/editors/vim6/Makefile,v 1.103 2001/02/15 11:29:23 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -67,18 +67,14 @@ MAKE_ARGS+=	CONF_OPT_PERL="--enable-perlinterp --enable-pythoninterp --enable-tc
 .endif
 
 .else	# LITE
-PLIST=		${WRKDIR}/PLIST.nogui
 MAKE_ARGS+=	CONF_OPT_GUI="--enable-gui=no --without-x"
 MAKE_ARGS+=	CONF_OPT_PERL="--disable-perlinterp --disable-pythoninterp --disable-tclinterp"
 .endif	# LITE
 
 pre-build:
 	@(cd ${WRKSRC}; ${MAKE} distclean)
-	@${SED} -e '/gvi/d' ${PKGDIR}/pkg-plist > ${WRKDIR}/PLIST.nogui
 
 post-install:
-.if !defined(LITE)
-	[ -e ${PREFIX}/bin/gvim ] || ${LN} -s ${PREFIX}/bin/vim ${PREFIX}/bin/gvim
-.endif
+	[ -e ${PREFIX}/bin/gvim ] || (cd ${PREFIX}/bin ; ${LN} -s vim gvim)
 
 .include <bsd.port.post.mk>
