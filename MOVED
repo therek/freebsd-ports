@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.602 2004/12/28 23:43:10 se Exp $
+# $FreeBSD: ports/MOVED,v 1.603 2004/12/30 17:46:16 lofi Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1368,4 +1368,4 @@ multimedia/gstreamer-player||2004-12-26|Unmaintained by developers
 www/horde2|www/horde|2004-12-26|Resurrect www/horde
 mail/imp3|mail/imp|2004-12-26|Resurrect mail/imp
 games/xblast-beta|games/xblast|2004-12-28|xblast is newest version now
-emulators/linux-zsnes||2004-30-12|feature-complete native version available
+emulators/linux-zsnes||2004-12-30|feature-complete native version available
