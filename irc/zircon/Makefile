@@ -3,13 +3,13 @@
 # Date created:		19 Aug 1995
 # Whom:			jkh / pst
 #
-# $FreeBSD: ports/irc/zircon/Makefile,v 1.42 1999/10/29 17:03:27 jseger Exp $
+# $FreeBSD: ports/irc/zircon/Makefile,v 1.43 1999/11/01 15:51:53 jseger Exp $
 #
 
 DISTNAME=	zircon-1.18.227
 CATEGORIES=	irc tk82
 MASTER_SITES=	ftp://catless.ncl.ac.uk/pub/ \
-		ftp://ftp.dinoex.sub.org/pub/approved/
+		ftp://ftp.lan-ks.de/pub/approved/
 
 MAINTAINER=	jseger@FreeBSD.org
 
