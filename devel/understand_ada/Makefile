@@ -2,7 +2,7 @@
 # Date created:		01 Mar 2001
 # Whom:			Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/understand_ada/Makefile,v 1.4 2001/09/12 16:22:05 lioux Exp $
+# $FreeBSD: ports/devel/understand_ada/Makefile,v 1.5 2001/09/17 14:51:55 lioux Exp $
 #
 
 PORTNAME=	understand_ada
@@ -21,6 +21,7 @@ NO_BUILD=	yes
 
 PREFIX_LINUX?=	${LINUXBASE}
 STRIP=		${LINUXBASE}/usr/bin/strip
+BRANDELF?=	/usr/bin/brandelf
 FMT?=		/usr/bin/fmt
 INSTALL_DATA_DIR?=	${INSTALL} -d -o ${SHAREOWN} \
 			-g ${SHAREGRP} -m 755
@@ -103,6 +104,7 @@ do-install:
 	@${INSTALL_SCRIPT} ${WRKSRC}/bin/pc-linux_elf/${file} \
 		${PREFIX}/lib/${PORTNAME}/bin/pc-linux_elf
 	@${STRIP} ${PREFIX}/lib/${PORTNAME}/bin/pc-linux_elf/${file}
+	@${BRANDELF} -t Linux ${PREFIX}/lib/${PORTNAME}/bin/pc-linux_elf/${file}
 	@if [ ! -f ${PREFIX}/bin/${file} ]; \
 	then \
 		${LN} -sf ${PORTNAME} ${PREFIX}/bin/${file} ; \
