@@ -1,8 +1,9 @@
 #!/bin/sh
 #
-# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.3 2000/07/05 15:57:49 knu Exp $
+# $FreeBSD: ports/japanese/esecanna/files/esecanna.sh,v 1.4 2003/03/09 07:34:04 knu Exp $
 
 esecannaserver="!!PREFIX!!/sbin/esecannaserver"
+piddir="/var/run/esecanna"
 
 case "$1" in
 start)
@@ -18,11 +19,12 @@ start)
 	if [ -x $esecannaserver ]; then
 	    rm -f /tmp/.iroha_unix/IROHA
 	    echo -n ' esecanna: '
+	    cd $piddir
 	    nohup $esecannaserver
 	fi
 	;;
 stop)
-	pidfile="/var/run/esecanna.pid"
+	pidfile=$piddir/esecanna.pid
 	if [ -f $pidfile ]; then
 	    kill `cat $pidfile` && echo -n ' esecanna'
 	    rm $pidfile
