@@ -2,7 +2,7 @@
 # Date created:		29 Nov 2000
 # Whom:			Joerg Wunsch <joerg@freebsd.org>
 #
-# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.5 2001/04/20 13:52:23 joerg Exp $
+# $FreeBSD: ports/devel/avr-gcc/Makefile,v 1.6 2001/04/20 20:40:14 joerg Exp $
 #
 
 SNAPDATE=	2001-03-20
@@ -36,6 +36,7 @@ WRKSRC=		${WRKDIR}/gcc-${PORTVERSION}
 # the original master site still uses .gz.
 #USE_BZIP2=	yes
 USE_GMAKE=	yes
+USE_BISON=	yes
 GNU_CONFIGURE=	yes
 
 CONFIGURE_ARGS=	--target=avr
