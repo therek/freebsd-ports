@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.47 2000/04/14 16:07:56 imura Exp $
+# $FreeBSD: ports/x11-toolkits/qt21/Makefile,v 1.48 2000/05/30 15:31:05 imura Exp $
 #
 
 PORTNAME=	qt
@@ -30,7 +30,7 @@ MAKE_ENV=	QTDIR=${WRKSRC}
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 CONFIG=		${WRKSRC}/configs/freebsd-g++-shared
 
-.if defined(QT_GIF_AVAILABLE)
+.if defined(QT_GIF_AVAILABLE) || defined(HAVE_UNISYS_LICENSE)
 CONFIGURE_ARGS+=-gif
 RESTRICTED=	'Requires a license from UNISYS'
 .endif
