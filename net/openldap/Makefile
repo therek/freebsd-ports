@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap/Makefile,v 1.20 2000/10/30 18:53:28 knu Exp $
+# $FreeBSD: ports/net/openldap/Makefile,v 1.21 2000/10/30 19:08:35 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -42,6 +42,8 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include/db2 -D_THREAD_SAFE" \
 CONFIGURE_ARGS+=	--enable-ldbm \
 			--with-ldbm-api=db2
 .endif
+
+INSTALLS_SHLIB=	yes
 
 BINS=		bin/ldapadd \
 		bin/ldapdelete \

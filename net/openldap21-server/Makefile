@@ -2,7 +2,7 @@
 # Date created:		20 Sep 1998
 # Whom:			Lachlan O'Dea
 #
-# $FreeBSD: ports/net/openldap2/Makefile,v 1.25 2000/11/08 07:48:20 knu Exp $
+# $FreeBSD: ports/net/openldap2/Makefile,v 1.26 2001/01/21 06:21:46 knu Exp $
 #
 
 PORTNAME=	openldap
@@ -55,6 +55,8 @@ CPPFLAGS+=	-I${LOCALBASE}/include/sasl
 CONFIGURE_ENV=	CPPFLAGS="${CPPFLAGS}" \
 		LDFLAGS="${LDFLAGS}"
 
+INSTALLS_SHLIB=	yes
+ 
 BINS=		bin/ldapadd \
 		bin/ldapdelete \
 		bin/ldapmodify \
