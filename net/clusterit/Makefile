@@ -1,12 +1,12 @@
 # New ports collection makefile for:	clusterit
-# Version required:	1.2
-# Date created:		4 February 1999
-# Whom:			Dima Sivachenko
+# Version required:		1.3
+# Date created:			4 February 1999
+# Whom:				Dima Sivachenko
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/clusterit/Makefile,v 1.2 1999/08/30 14:22:19 peter Exp $
 #
 
-DISTNAME=	clusterit-1.2
+DISTNAME=	clusterit-1.3
 CATEGORIES=	net devel
 MASTER_SITES=	http://www.inficad.com/~garbled/ \
 		ftp://ftp.chg.ru/pub/prog/parallel/tools/clusterit/
