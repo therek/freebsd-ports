@@ -2,13 +2,13 @@
 # Date created:			7 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD: ports/net/jabber-transport/Makefile,v 1.1 2000/05/01 03:25:13 steve Exp $
+# $FreeBSD: ports/net/jabber-transport/Makefile,v 1.2 2000/05/16 14:18:37 nbm Exp $
 #
 
 PORTNAME=	jabber-transport
 PORTVERSION=	1.0
 CATEGORIES=	net
-MASTER_SITES=	http://download.jabber.org/dists/1.0/
+MASTER_SITES=	http://download.jabber.org/dists/1.0/final/
 
 MAINTAINER=	lukin@okbmei.msk.su
 
