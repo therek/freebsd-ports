@@ -2,7 +2,7 @@
 # Date created:		25 February 1999
 # Whom:		 	Chris Piazza <cpiazza@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/wterm/Makefile,v 1.17 2001/03/10 13:01:25 sobomax Exp $
+# $FreeBSD: ports/x11/wterm/Makefile,v 1.18 2001/06/11 15:59:09 markp Exp $
 #
 
 PORTNAME=	wterm
@@ -29,6 +29,7 @@ MAN1=		wterm.1
 
 post-extract:
 	${RM} -f ${WRKSRC}/config.cache
+	${RM} -f ${WRKSRC}/src/*.o
 
 post-install:
 	@${CHMOD} 4711 ${PREFIX}/bin/wterm
