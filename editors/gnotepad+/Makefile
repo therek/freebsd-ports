@@ -2,7 +2,7 @@
 # Date created:		08 March 1999
 # Whom:			brett@peloton.physics.montana.edu
 #
-# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.12 2000/10/05 07:22:33 reg Exp $
+# $FreeBSD: ports/editors/gnotepad+/Makefile,v 1.13 2001/02/23 15:47:02 kevlo Exp $
 #
 
 PORTNAME=	gnotepad+
@@ -30,6 +30,9 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 MAN1=	gnp.1
 
 .include <bsd.port.pre.mk>
+
+post-patch:
+	@${PERL} -pi.fbsd -e 's|use_gtkhtml=yes|use_gtkhtml=no|g' ${WRKSRC}/configure.in
 
 .if !defined(NOPORTDOCS)
 post-extract:
