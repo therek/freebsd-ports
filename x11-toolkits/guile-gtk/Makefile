@@ -2,7 +2,7 @@
 # Date created:        1 January 2000
 # Whom:                Matt Braithwaite <mab@red-bean.com>
 #
-# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.2 2000/02/18 02:08:09 ade Exp $
+# $FreeBSD: ports/x11-toolkits/guile-gtk/Makefile,v 1.3 2000/04/10 01:10:29 cpiazza Exp $
 #
 
 PORTNAME=	guile-gtk
@@ -24,5 +24,7 @@ CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		GTK_CONFIG="${GTK_CONFIG}" \
 		GLIB_CONFIG="${GLIB_CONFIG}" \
 		LIBS="-L${LOCALBASE}/lib"
+
+BROKEN=		"Build dies with \"guile-gtk.h:235: conflicting types for \`gdk_color_copy'\""
 
 .include <bsd.port.mk>
