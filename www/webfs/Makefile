@@ -2,11 +2,11 @@
 # Date created:				18 October 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/www/webfs/Makefile,v 1.10 2001/05/08 22:34:19 jedgar Exp $
+# $FreeBSD: ports/www/webfs/Makefile,v 1.11 2001/06/03 12:27:51 jedgar Exp $
 #
 
 PORTNAME=	webfs
-PORTVERSION=	1.12
+PORTVERSION=	1.13
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://bytesex.org/misc/
 DISTNAME=	${PORTNAME}_${PORTVERSION}
@@ -25,8 +25,6 @@ BROKEN=		"Requires FreeBSD 4.x or greater due to ipv6 support"
 
 do-configure:
 	@${PERL} -pi.orig -e 's|/etc/mime.types|${MIMEFILE}|' ${WRKSRC}/Makefile
-# author forgot to bump the revision number
-	@${PERL} -pi.orig -e 's|1.9|1.10|' ${WRKSRC}/main.c
 
 do-install:
 	@${INSTALL_PROGRAM} ${WRKSRC}/webfsd ${PREFIX}/sbin
