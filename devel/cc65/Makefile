@@ -2,7 +2,7 @@
 # Date created:			8 May 2000
 # Whom:				Tim Vanderhoek <hoek@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/devel/cc65/Makefile,v 1.1 2000/05/09 18:31:46 hoek Exp $
 #
 
 PORTNAME=	cc65
@@ -17,6 +17,7 @@ DISTNAME=	cc65-sources-2.4.1
 
 MAINTAINER=	hoek@FreeBSD.org
 
+USE_GMAKE=	yes
 CFLAGS+=	-DCC65_INC=\\\"${PREFIX}/lib/cc65/include\\\" \
 		-DCC65_LIB=\\\"${PREFIX}/lib/cc65/lib\\\"
 
