@@ -2,7 +2,7 @@
 # Date created:		5 Jan 2000
 # Whom:			asami
 #
-# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.4 2000/02/24 22:32:15 asami Exp $
+# $FreeBSD: ports/misc/34upgrade/Makefile,v 1.5 2000/04/14 08:45:13 asami Exp $
 #
 
 PORTNAME=	34upgrade
@@ -24,9 +24,10 @@ NO_MTREE=	yes
 PREFIX=		/
 NO_BUILD=	yes
 PKGINSTALL=	${WRKDIR}/INSTALL
+DATE!=		cat /var/db/port.mkversion
 
 do-install:
-	${SED} -e "s/%%VERSION%%/${BSDPORTMKVERSION}/" ${PKGDIR}/INSTALL \
+	${SED} -e "s/%%VERSION%%/${DATE}/" ${PKGDIR}/INSTALL \
 		> ${PKGINSTALL}
 
 deinstall:
