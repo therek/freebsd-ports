@@ -2,7 +2,7 @@
 # Date created:		18 Aug 1998
 # Whom:			Hidekazu Kuroki <hidekazu@cs.titech.ac.jp>
 #
-# $FreeBSD: ports/japanese/sj3/Makefile,v 1.13 2000/07/05 12:36:36 tg Exp $
+# $FreeBSD: ports/japanese/sj3/Makefile,v 1.14 2000/07/19 15:16:34 knu Exp $
 #
 
 PORTNAME=	sj3
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.sony.co.jp/pub/unsupported/src/ \
 
 MAINTAINER=	hidekazu@cs.titech.ac.jp
 
-BUILD_DEPENDS=	xmkmf:${PORTSDIR}/x11/XFree86
+BUILD_DEPENDS=	xmkmf:${PORTSDIR}/devel/imake-4
 
 MAN1=		sj3.1 sj3dic.1 sj3mkdic.1 sj3serv.1
 MANLANG=	ja
