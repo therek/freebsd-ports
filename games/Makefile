@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.395 2001/07/10 00:24:39 dwcjr Exp $
+# $FreeBSD: ports/games/Makefile,v 1.396 2001/07/14 15:44:35 lioux Exp $
 #
 
     SUBDIR += 0verkill
@@ -75,6 +75,7 @@
     SUBDIR += freeciv-gtk
     SUBDIR += freesweep
     SUBDIR += frotz
+    SUBDIR += fsgs
     SUBDIR += galaxis
     SUBDIR += garith
     SUBDIR += gcompris
