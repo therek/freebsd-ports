@@ -10,7 +10,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.87 2002/05/23 04:35:33 trevor Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.88 2002/05/23 04:38:46 trevor Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -158,7 +158,6 @@ MASTER_SITE_NETBSD+=	\
 
 MASTER_SITE_PERL_CPAN+=	\
 	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%SUBDIR%/ \
-	ftp://gatekeeper.dec.com/pub/plan/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	http://www.cpan.dk/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://ftp.funet.fi/pub/languages/perl/CPAN/modules/by-module/%SUBDIR%/ \
 	ftp://uiarchive.uiuc.edu/pub/ftp/ftp.cpan.org/pub/CPAN/modules/by-module/%SUBDIR%/ \
