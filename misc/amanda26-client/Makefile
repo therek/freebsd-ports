@@ -2,7 +2,7 @@
 # Date created:				28th Feb 1995
 # Whom:					gpalmer
 #
-# $FreeBSD: ports/misc/amanda24/Makefile,v 1.32 2001/01/27 17:18:36 cwt Exp $
+# $FreeBSD: ports/misc/amanda24/Makefile,v 1.33 2001/01/29 12:42:06 jeh Exp $
 #
 
 PORTNAME=	amanda
@@ -10,7 +10,7 @@ PORTVERSION=	2.4.2
 CATEGORIES=	misc
 MASTER_SITES=	ftp://ftp.amanda.org/pub/amanda/
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	jeh@FreeBSD.org
 
 BUILD_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
 RUN_DEPENDS=	gnuplot:${PORTSDIR}/math/gnuplot
