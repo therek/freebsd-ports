@@ -1,10 +1,7 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/converters/recode/pkg-plist,v 1.8 2002/04/17 07:16:33 demon Exp $
 bin/recode
 include/recode.h
 include/recodext.h
-@unexec install-info --delete %D/info/recode.info %D/info/dir
-info/recode.info
-@exec install-info %D/info/recode.info %D/info/dir
 lib/librecode.a
 lib/librecode.so
 lib/librecode.so.3
