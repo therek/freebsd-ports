@@ -2,14 +2,14 @@
 # Date created:		4 May 2001
 # Whom:			abgoeree@uwnet.nl
 #
-# $FreeBSD$
+# $FreeBSD: ports/databases/adodb/Makefile,v 1.1 2001/06/19 11:53:47 jeh Exp $
 #
 
 PORTNAME=	adodb
-PORTVERSION=	1.10
+PORTVERSION=	1.12
 CATEGORIES=	databases www
 MASTER_SITES=	http://phplens.com/lens/dl/
-DISTNAME=	${PORTNAME}110
+DISTNAME=	${PORTNAME}112
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	abgoeree@uwnet.nl
