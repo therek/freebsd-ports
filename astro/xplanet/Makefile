@@ -2,13 +2,13 @@
 # Date created:		22 Feb 2000
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/astro/xplanet/Makefile,v 1.4 2000/04/08 22:02:12 mharo Exp $
+# $FreeBSD: ports/astro/xplanet/Makefile,v 1.5 2000/04/17 00:17:00 reg Exp $
 #
 
 PORTNAME=	xplanet
-PORTVERSION=	0.50
+PORTVERSION=	0.60
 CATEGORIES=	astro x11
-MASTER_SITES=	http://www.alumni.caltech.edu/~hari/xplanet/ \
+MASTER_SITES=	ftp://ftp.sourceforge.net/pub/sourceforge/xplanet/ \
 		http://www.radcyberzine.com/xglobe/
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} photo_1600.jpg
 
