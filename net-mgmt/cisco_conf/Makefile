@@ -2,11 +2,11 @@
 # Date created:        27 March 2001
 # Whom:                Anton Voronin <anton@urc.ac.ru>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/cisco_conf/Makefile,v 1.1 2001/03/31 01:30:17 will Exp $
 #
 
 PORTNAME=	cisco_conf
-PORTVERSION=	1.0
+PORTVERSION=	1.1
 CATEGORIES=	net
 MASTER_SITES=	http://rnoc.urc.ac.ru/~anton/projects/files/
 DISTNAME=	ciscoconf-${PORTVERSION}
