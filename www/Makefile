@@ -1,4 +1,4 @@
-# $FreeBSD: ports/www/Makefile,v 1.359 2001/04/16 18:58:31 kris Exp $
+# $FreeBSD: ports/www/Makefile,v 1.360 2001/04/28 13:53:34 joe Exp $
 #
 
     SUBDIR += Mosaic         # requires Motif
@@ -40,6 +40,7 @@
     SUBDIR += cgiparse
     SUBDIR += cgiwrap
     SUBDIR += checkbot
+    SUBDIR += cheetah
     SUBDIR += chimera
     SUBDIR += chimera2
     SUBDIR += comclear
