@@ -2,11 +2,11 @@
 # Date created:			Fri Apr  8 00:18:29 MET DST 1999
 # Whom:				Dominik Brettnacher <domi@saargate.de>
 #
-# $FreeBSD: ports/graphics/xsane/Makefile,v 1.19 2000/09/16 18:10:54 ade Exp $
+# $FreeBSD: ports/graphics/xsane/Makefile,v 1.20 2000/10/05 06:36:20 reg Exp $
 #
 
 PORTNAME=	xsane
-PORTVERSION=	0.61
+PORTVERSION=	0.70
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.wolfsburg.de/~rauch/sane/ \
 		http://gd.tuwien.ac.at/hci/sane/xsane/ \
@@ -26,15 +26,9 @@ USE_GTK=	yes
 USE_AUTOCONF=	yes
 CONFIGURE_ARGS=	--enable-intl-patch
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
-		LIBS="-L${LOCALBASE}/lib"
+		LIBS="-L${LOCALBASE}/lib -lintl"
 
 MAN1=		xsane.1
-
-pre-patch:
-	@${PERL} -pi -e 's|-lpthread|-pthread|g ; \
-		 s|DATADIRNAME=lib|DATADIRNAME=share|g ; \
-		 s|USE_INCLUDED_LIBINTL=yes|#USE_INCLUDED_LIBINTL=yes|g ; \
-		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/aclocal.m4
 
 post-install:
 	@${CAT} ${PKGMESSAGE}
