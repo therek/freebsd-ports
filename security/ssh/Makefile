@@ -2,7 +2,7 @@
 # Date created:		30 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/security/ssh/Makefile,v 1.104 2000/10/08 06:03:48 asami Exp $
+# $FreeBSD: ports/security/ssh/Makefile,v 1.105 2001/02/06 01:22:25 kris Exp $
 #
 # Maximal ssh package requires YES values for
 # WITH_PERL, WITH_TCPWRAP
@@ -69,7 +69,7 @@ CONFIGURE_ARGS+= --without-idea
 .include <bsd.port.pre.mk>
 
 .if (${OSVERSION} >= 400016 && !defined(REALLY_WANT_SSH))
-BROKEN=		"OpenSSH is a superior version of SSH which has been included in the FreeBSD base system since 4.0-RELEASE. This port is now deprecated and will be removed at some point in the future. To override this warning set the REALLY_WANT_SSH environment variable and rebuild."
+FORBIDDEN=		"OpenSSH is a superior version of SSH which has been included in the FreeBSD base system since 4.0-RELEASE. This port is now deprecated and will be removed at some point in the future. To override this warning set the REALLY_WANT_SSH environment variable and rebuild."
 .endif
 
 MAN1=		scp1.1 ssh-add1.1 ssh-agent1.1 ssh-keygen1.1 ssh1.1 \
