@@ -2,7 +2,7 @@
 # Date created:		7 Feb 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/graphics/ruby-qt2gl/Makefile,v 1.9 2001/08/24 06:05:57 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qt2gl
@@ -23,6 +23,7 @@ RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR} \
 USE_MESA=	yes
 USE_RUBY=	yes
 USE_RUBY_EXTCONF=	yes
+RUBY_WITH_PTHREAD=	yes
 
 USE_GMAKE=	yes
 
