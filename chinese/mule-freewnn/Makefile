@@ -2,14 +2,15 @@
 # Date created:		20 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/chinese/mule-wnn4/Makefile,v 1.8 2000/04/13 08:28:09 asami Exp $
+# $FreeBSD: ports/chinese/mule-wnn4/Makefile,v 1.9 2000/04/14 16:47:37 knu Exp $
 #
 
-PKGNAMESUFFIX=	-wnn4
 CATEGORIES=	chinese
-CWNN4=		yes
+PKGNAMESUFFIX=	-wnn4
 
 MASTERDIR=	${.CURDIR}/../../editors/mule
 PKGDIR=		${.CURDIR}/pkg
+
+CWNN4=		yes
 
 .include "${MASTERDIR}/Makefile"
