@@ -3,7 +3,7 @@
 # Date created:			  Tue Oct 10, 2000
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/emulators/ia64sim/Makefile,v 1.2 2001/01/16 17:30:27 sobomax Exp $
+# $FreeBSD: ports/emulators/ia64sim/Makefile,v 1.3 2001/05/06 18:58:13 obrien Exp $
 #
 
 PORTNAME=	ia64sim
@@ -27,10 +27,10 @@ pre-build:
 	rm -f ${WRKSRC}/ia64sim
 
 do-install:
-	${INSTALL_PROGRAM} ${WRKSRC}/ia64sim ${LOCALBASE}/bin/ia64sim
+	${INSTALL_PROGRAM} ${WRKSRC}/ia64sim ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@${MKDIR} ${PREFIX}/share/doc/ia64sim
-	${INSTALL_DATA} ${WRKDIR}/ia64.doc ${PREFIX}/share/doc/ia64sim
+	@${MKDIR} ${DOCSDIR}
+	${INSTALL_DATA} ${WRKDIR}/doc/ia64user.txt ${WRKSRC}/readme ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>

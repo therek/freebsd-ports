@@ -1,4 +1,5 @@
-@comment $FreeBSD: ports/emulators/ia64sim/pkg-plist,v 1.1.1.1 2000/10/10 23:53:19 obrien Exp $
+@comment $FreeBSD: ports/emulators/ia64sim/pkg-plist,v 1.2 2001/03/11 00:41:17 kris Exp $
 bin/ia64sim
-share/doc/ia64sim/ia64.doc
+%%PORTDOCS%%share/doc/ia64sim/ia64user.txt
+%%PORTDOCS%%share/doc/ia64sim/readme
 @dirrm share/doc/ia64sim
