@@ -3,7 +3,7 @@
 # Date created:		04 November 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/graphics/sketch/Makefile,v 1.15 2000/02/11 13:39:51 tg Exp $
+# $FreeBSD: ports/graphics/sketch/Makefile,v 1.16 2000/04/04 09:53:12 tg Exp $
 #
 
 DISTNAME=	sketch-0.6.5
@@ -13,7 +13,7 @@ MASTER_SITES=	http://download.sourceforge.net/sketch/
 MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	${PREFIX}/include/python1.5/Imaging.h:${PORTSDIR}/graphics/py-imaging
-RUN_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter
+RUN_DEPENDS=	${PREFIX}/lib/python1.5/site-packages/_tkinter.so:${PORTSDIR}/x11-toolkits/py-tkinter \
 		${PREFIX}/lib/python1.5/site-packages/_imaging.so:${PORTSDIR}/graphics/py-imaging \
 		${PREFIX}/lib/python1.5/site-packages/xml/__init__.py:${PORTSDIR}/textproc/py-xml
 
