@@ -1,12 +1,12 @@
 # New ports collection makefile for:	bnetd
-# Version required:	0.4.11
+# Version required:	0.4.19
 # Date created:		24 April 1999
 # Whom:			Ying-Chieh Liao <ijliao@csie.nctu.edu.tw>
 #
-# $FreeBSD: ports/games/bnetd/Makefile,v 1.9 1999/08/25 06:03:01 obrien Exp $
+# $FreeBSD: ports/games/bnetd/Makefile,v 1.10 1999/10/16 03:41:32 cpiazza Exp $
 #
 
-DISTNAME=	bnetd-0.4.18
+DISTNAME=	bnetd-0.4.19
 CATEGORIES=	games net
 MASTER_SITES=	http://www.bnetd.org/files/
 
