@@ -2,14 +2,15 @@
 # Date created:         18 July 1995
 # Whom:                 jmacd
 #
-# $FreeBSD: ports/games/xpilot/Makefile,v 1.23 2001/05/07 07:32:51 sheldonh Exp $
+# $FreeBSD: ports/games/xpilot/Makefile,v 1.24 2001/06/15 05:01:58 markp Exp $
 #
 
 PORTNAME=	xpilot
-PORTVERSION=	4.4.0
+PORTVERSION=	4.4.1
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.xpilot.org/pub/xpilot/ \
 		ftp://ftp.xpilot.org/pub/xpilot/old/ \
+		ftp://xpilot.doit.org/pub/xpilot-sounds/ \
 		${MASTER_SITE_XCONTRIB}
 MASTER_SITE_SUBDIR=	games/multiplayer
 
