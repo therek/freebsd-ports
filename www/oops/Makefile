@@ -2,11 +2,11 @@
 # Date created:		15 August 2000
 # Whom:			Sergey Osokin aka oZZ <ozz@FreeBSD.org.ru>
 #
-# $FreeBSD: ports/www/oops/Makefile,v 1.6 2000/12/23 20:20:22 demon Exp $
+# $FreeBSD: ports/www/oops/Makefile,v 1.7 2001/01/03 15:44:16 kevlo Exp $
 #
 
 PORTNAME=	oops
-PORTVERSION=	1.5.6
+PORTVERSION=	1.5.17
 CATEGORIES=	www
 MASTER_SITES=	http://zipper.paco.net/~igor/oops/
 
@@ -19,7 +19,8 @@ CONFIGURE_ARGS=	--sbindir=${PREFIX}/sbin \
 		--sysconfdir=${PREFIX}/etc/oops \
 		--localstatedir=/var/run \
 		--libdir=${PREFIX}/libexec/oops \
-		--enable-oops-user=oops
+		--enable-oops-user=oops \
+		--without-DB
 
 MAN8=		oops.8 oopsctl.8
 
