@@ -2,7 +2,7 @@
 # Date created:		17 Jul 1999
 # Whom:			imura@kml.cs.titech.ac.jp
 #
-# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.74 2001/02/04 04:43:13 will Exp $
+# $FreeBSD: ports/x11-toolkits/qt22/Makefile,v 1.75 2001/02/22 14:15:37 alex Exp $
 #
 
 PORTNAME?=	qt
@@ -17,7 +17,6 @@ LIB_DEPENDS=	mng.0:${PORTSDIR}/graphics/libmng \
 		png.4:${PORTSDIR}/graphics/png \
 		jpeg.9:${PORTSDIR}/graphics/jpeg
 
-YES?=		/usr/bin/yes
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_MESA=	yes
 USE_GMAKE=	yes
@@ -27,7 +26,7 @@ HAS_CONFIGURE=	yes
 CONFIGURE_ARGS=	-system-zlib -system-libpng -system-jpeg -sm -gif \
 		-system-libmng -thread \
 		-I${LOCALBASE}/include -L${LOCALBASE}/lib
-CONFIGURE_ENV=	${YES} yes | QTDIR=${WRKSRC}
+CONFIGURE_ENV=	${ECHO} yes | QTDIR=${WRKSRC}
 .if defined(MAKE_JOBS)
 MAKE_ARGS+=	MAKE="${GMAKE} -j${MAKE_JOBS}"
 .endif
