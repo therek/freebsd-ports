@@ -2,13 +2,13 @@
 # Date created:		23.sept.1994
 # Whom:			adam
 #
-# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.27 2000/08/11 06:34:43 asami Exp $
+# $FreeBSD: ports/x11-toolkits/iv/Makefile,v 1.28 2001/01/16 17:33:16 sobomax Exp $
 #
 
 PORTNAME=	iv
 PORTVERSION=	3.2a
 CATEGORIES=	x11-toolkits
-MASTER_SITES=	ftp://sgi.com/graphics/interviews/
+MASTER_SITES=	ftp://ftp.sgi.com/graphics/interviews/
 DISTNAME=	${PORTVERSION}
 EXTRACT_SUFX=	.tar.Z
 
