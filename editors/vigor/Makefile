@@ -2,7 +2,7 @@
 # Date created:        17 Jan 2000
 # Whom:                Bill Fumerola <billf@chc-chimes.com>
 #
-# $FreeBSD: ports/editors/vigor/Makefile,v 1.5 2000/07/04 00:02:49 billf Exp $
+# $FreeBSD: ports/editors/vigor/Makefile,v 1.6 2000/08/07 17:08:31 billf Exp $
 #
 
 PORTNAME=	vigor
@@ -19,7 +19,7 @@ GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--program-transform-name="s,0,1,"
 CONFIGURE_ENV+=	LDFLAGS="-L${LOCALBASE}/lib"
 
-WRKSRC= 	${WRKDIR}/${DISTNAME}/build
+WRKSRC=	${WRKDIR}/${DISTNAME}/build
 CFLAGS+= 	-I${LOCALBASE}/include/tcl8.2 -I${LOCALBASE}/include/tk8.2
 
 # Uglyness. So is "-ltcl -ltk -ltcl", so I don't feel bad.

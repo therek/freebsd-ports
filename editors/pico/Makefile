@@ -2,13 +2,13 @@
 # Date created:			16 December 2000
 # Whom:				Jeremy Shaffner <jeremy@external.org>
 #
-# $FreeBSD: ports/editors/pico/Makefile,v 1.2 2001/01/04 10:44:12 nbm Exp $
+# $FreeBSD: ports/editors/pico/Makefile,v 1.3 2001/01/22 14:33:39 kevlo Exp $
 #
 # This port tracks Pine4
 # All patch files have been taken from mail/pine4
 
 PORTNAME=	pico
-PORTVERSION= 	4.0
+PORTVERSION=	4.0
 CATEGORIES=	editors
 MASTER_SITES=	ftp://ftp.cac.washington.edu/pine/
 DISTNAME=	pine${pineversion}

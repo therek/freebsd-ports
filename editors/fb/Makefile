@@ -2,12 +2,12 @@
 # Date created:				Oct 15, 1999
 # Whom:					Mikhail Teterin
 #
-# $FreeBSD: ports/editors/fb/Makefile,v 1.1.1.1 1999/11/14 02:48:04 cpiazza Exp $
+# $FreeBSD: ports/editors/fb/Makefile,v 1.2 2000/04/14 00:25:28 mharo Exp $
 #
 
 PORTNAME=	fb
 PORTVERSION=	1.5
-CATEGORIES= 	editors
+CATEGORIES=	editors
 MASTER_SITES=	http://home.MHO.net/JSwaby/
 DISTNAME=	${PORTNAME}
 EXTRACT_SUFX=	_tar.gz

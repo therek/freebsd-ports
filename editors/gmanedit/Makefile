@@ -2,11 +2,11 @@
 # Date created:				12 July 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.2 2000/10/05 07:10:34 reg Exp $
+# $FreeBSD: ports/editors/gmanedit/Makefile,v 1.3 2000/11/01 15:51:01 sobomax Exp $
 #
 
 PORTNAME=	gmanedit
-PORTVERSION= 	0.3.1
+PORTVERSION=	0.3.1
 CATEGORIES=	editors gnome
 MASTER_SITES=	http://gmanedit.sourceforge.net/files/ \
 		${MASTER_SITE_SOURCEFORGE}
