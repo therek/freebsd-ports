@@ -3,7 +3,7 @@
 # Date created:		23 June 1999
 # Whom:			Jun Kuriyama <kuriyama@FreeBSD.org>
 #
-# $FreeBSD: ports/textproc/xt/Makefile,v 1.9 1999/11/02 16:48:52 kuriyama Exp $
+# $FreeBSD: ports/textproc/xt/Makefile,v 1.10 1999/11/10 14:34:25 kuriyama Exp $
 #
 
 DISTNAME=	xt
@@ -13,7 +13,7 @@ MASTER_SITES=	ftp://ftp.jclark.com/pub/xml/
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
-RUN_DEPENDS=	${PREFIX}/${JAVASUBDIR}/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/${JAVASUBDIR}/bin/java:${PORTSDIR}/java/jdk
 
 USE_ZIP=	YES
 NO_WRKSUBDIR=	YES
