@@ -2,13 +2,13 @@
 # Date created:        17 June 2000
 # Whom:                Patrick Seal <patseal@hyperhost.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11-wm/bbkeys/Makefile,v 1.1 2000/07/19 13:18:16 alex Exp $
 #
 
 PORTNAME=	bbkeys
 PORTVERSION=	0.3.3
 CATEGORIES=	x11-wm
-MASTER_SITES=	ftp://ftp.cs.uct.ac.za/pub/FreeBSD/distfiles/
+MASTER_SITES=	http://movingparts.thelinuxcommunity.org/bbkeys/
 
 MAINTAINER=	patseal@hyperhost.net
 
