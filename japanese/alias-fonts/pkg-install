@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-# $FreeBSD: ports/japanese/alias-fonts/pkg-install,v 1.4 2002/04/09 09:05:22 sada Exp $
+# $FreeBSD: ports/japanese/alias-fonts/pkg-install,v 1.5 2002/04/09 09:20:56 sada Exp $
 
 $prefix = $ENV{'PKG_PREFIX'};
 $dir = "$prefix/lib/X11/fonts/local";
@@ -24,7 +24,7 @@ while (<IN>) {
 	}
 }
 for (split(/\n/, <<"END"))
-alias-fixed-medium-r-normal--24-234-75-75-c-120-iso8859-1 -sony-fixed-medium-r-normal--24-230-75-75-c-120-iso8859-1
+-alias-fixed-medium-r-normal--24-234-75-75-c-120-iso8859-1 -sony-fixed-medium-r-normal--24-230-75-75-c-120-iso8859-1
 -alias-fixed-medium-r-normal--20-190-75-75-c-200-iso8859-1 -kappa-fixed-medium-r-normal--20-190-75-75-c-100-iso8859-1
 -alias-fixed-medium-i-normal--20-190-75-75-c-200-iso8859-1 -kappa-fixed-medium-i-normal--20-190-75-75-c-100-iso8859-1
 -alias-fixed-bold-r-normal--20-190-75-75-c-200-iso8859-1 -kappa-fixed-bold-r-normal--20-190-75-75-c-100-iso8859-1
