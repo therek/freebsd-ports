@@ -3,13 +3,14 @@
 # Date created:         18 Aug 1999
 # Whom:                 nobu@rd.isac.co.jp
 #
-# $FreeBSD: ports/math/ngraph/Makefile,v 1.1.1.1 1999/09/09 00:52:53 taoka Exp $
+# $FreeBSD: ports/math/ngraph/Makefile,v 1.2 1999/11/14 02:50:40 steve Exp $
 #
 
-DISTNAME=       Ngraph-6.3.05-src
-PKGNAME=        ngraph-6.3.05
+DISTNAME=       Ngraph-6.3.06-src
+PKGNAME=        ngraph-6.3.06
 CATEGORIES=	math
-MASTER_SITES=   ${MASTER_SITE_PORTS_JP}
+MASTER_SITES=   http://www2e.biglobe.ne.jp/~isizaka/bin/ \
+		${MASTER_SITE_PORTS_JP}
 
 MAINTAINER=     sanpei@jp.FreeBSD.org
 
