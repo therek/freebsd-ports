@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.379 2000/12/26 05:25:48 will Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.380 2000/12/26 05:36:51 will Exp $
 #
 
     SUBDIR += ElectricFence
@@ -63,6 +63,7 @@
     SUBDIR += cweb
     SUBDIR += cxref
     SUBDIR += ddd
+    SUBDIR += diffconvert
     SUBDIR += dmake
     SUBDIR += dmalloc
     SUBDIR += doc++
