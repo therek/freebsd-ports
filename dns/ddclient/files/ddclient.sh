@@ -1,14 +1,14 @@
 #!/bin/sh
 #
-# $FreeBSD$
+# $FreeBSD: ports/dns/ddclient/files/ddclient.sh,v 1.1 2004/10/28 00:04:57 pav Exp $
 #
 
 # PROVIDE: ddclient
 # REQUIRE: LOGIN
-# KEYWORD: FreeBSD shutdown
+# KEYWORD: shutdown
 
 #
-# Add the following lines to /etc/rc.conf to enable ddclient:
+# Add the following line to /etc/rc.conf to enable ddclient:
 #
 #ddclient_enable="YES"
 #
