@@ -3,7 +3,7 @@
 # Date created:			Jul 11, 2001
 # Whom:				ijliao
 #
-# $FreeBSD: ports/security/py-gnupg/Makefile,v 1.1 2001/07/11 15:59:59 ijliao Exp $
+# $FreeBSD: ports/security/py-gnupg/Makefile,v 1.2 2001/08/22 10:31:54 ijliao Exp $
 #
 
 PORTNAME=	gnupg
@@ -14,7 +14,7 @@ MASTER_SITE_SUBDIR=	py-gnupg
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	GnuPGInterface-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	shell@shellhung.org
 
 USE_PYTHON=	yes
 
