@@ -2,11 +2,11 @@
 # Date created:				21 February 2000
 # Whom:	      				Dmitry Sivachenko <dima@Chg.RU>
 #
-# $FreeBSD: ports/graphics/p5-GD-TextUtil/Makefile,v 1.1 2000/02/24 17:18:03 ade Exp $
+# $FreeBSD: ports/graphics/p5-GD-TextUtil/Makefile,v 1.2 2000/04/14 10:46:55 asami Exp $
 #
 
 PORTNAME=	GD-TextUtil
-PORTVERSION=	0.70
+PORTVERSION=	0.80
 CATEGORIES=	graphics perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	GD
