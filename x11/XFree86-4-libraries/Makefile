@@ -2,7 +2,7 @@
 # Date created:		10 Oct 1999
 # Whom:			taguchi@tohoku.iij.ad.jp
 #
-# $FreeBSD: ports/x11/XFree86-4-libraries/Makefile,v 1.95 2001/03/29 12:04:21 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libraries
@@ -16,7 +16,7 @@ DISTFILES=	X410src-1.tgz
 MAINTAINER=	taguchi@tohoku.iij.ad.jp
 
 BUILD_DEPENDS=	imake:${PORTSDIR}/devel/imake-4
-LIB_DEPENDS=	freetype.6:${PORTSDIR}/print/freetype2
+LIB_DEPENDS=	freetype.7:${PORTSDIR}/print/freetype2
 RUN_DEPENDS=	mkhtmlindex:${PORTSDIR}/devel/imake-4
 
 XFREE86_VERSION=	4

@@ -2,7 +2,7 @@
 # Date created:		12 April 2001
 # Whom:			KANOU Hiroki <kanou@mil.allnet.ne.jp>
 #
-# $FreeBSD: ports/print/ft2demos/Makefile,v 1.1 2001/05/19 15:06:01 ijliao Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ft2demos
@@ -20,7 +20,7 @@ MASTER_SITE_SUBDIR=	freetype2
 MAINTAINER=	kanou@mil.allnet.ne.jp
 
 BUILD_DEPENDS+=	${PORTSDIR}/print/freetype2/work/freetype-${PORTVERSION}/config.mk:${PORTSDIR}/print/freetype2:build
-LIB_DEPENDS=	freetype.6:${PORTSDIR}/print/freetype2
+LIB_DEPENDS=	freetype.7:${PORTSDIR}/print/freetype2
 
 USE_BZIP2=	yes
 USE_GMAKE=	yes

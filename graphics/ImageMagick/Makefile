@@ -2,7 +2,7 @@
 # Date created:		15 November 1994
 # Whom:			torstenb
 #
-# $FreeBSD: ports/graphics/ImageMagick/Makefile,v 1.109 2001/06/24 19:03:18 lioux Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ImageMagick
@@ -37,7 +37,7 @@ LIB_DEPENDS=	bz2.1:${PORTSDIR}/archivers/bzip2 \
 		lcms.1:${PORTSDIR}/graphics/lcms \
 		png.4:${PORTSDIR}/graphics/png \
 		tiff.4:${PORTSDIR}/graphics/tiff \
-		freetype.6:${PORTSDIR}/print/freetype2 \
+		freetype.7:${PORTSDIR}/print/freetype2 \
 		xml2.5:${PORTSDIR}/textproc/libxml2
 
 USE_PERL5=	yes

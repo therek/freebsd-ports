@@ -2,7 +2,7 @@
 # Date Created:			18 July 2000
 # Whom:				Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-toolkits/pango/Makefile,v 1.7 2001/05/21 09:22:42 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	pango
@@ -18,7 +18,7 @@ MAINTAINER=	gnome@FreeBSD.org
 BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig \
 		freetype-config:${PORTSDIR}/print/freetype2	# XXX
 LIB_DEPENDS=	glib-1.3.5:${PORTSDIR}/devel/glib13 \
-		freetype.6:${PORTSDIR}/print/freetype2
+		freetype.7:${PORTSDIR}/print/freetype2
 RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 USE_X_PREFIX=	yes
