@@ -2,7 +2,7 @@
 # Date created:		23 June 1996
 # Whom:			markm@FreeBSD.org
 #
-# $FreeBSD: ports/mail/exim/Makefile,v 1.64 2001/06/10 13:17:09 sheldonh Exp $
+# $FreeBSD: ports/mail/exim/Makefile,v 1.65 2001/06/10 13:43:49 sheldonh Exp $
 #
 
 PORTNAME=	exim
@@ -30,7 +30,6 @@ MAKE_ENV+=	OSTYPE=${OPSYS} ARCHTYPE=${MACHINE_ARCH}
 
 # Uncomment the WITH_LDAP, WITH_MYSQL, and WITH_PGSQL definitions
 # to link against libmysqlclient and libpq respectively.
-# The libpam linkage is required for SMTP AUTH support.
 #WITH_LDAP=	yes
 #WITH_MYSQL=	yes
 #WITH_PGSQL=	yes
