@@ -2,12 +2,12 @@
 # Date created:        3 March 2001
 # Whom:                Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/wyvern/Makefile,v 1.1 2001/03/05 09:18:47 knu Exp $
+# $FreeBSD: ports/www/wyvern/Makefile,v 1.2 2001/03/05 09:59:38 knu Exp $
 #
 
 PORTNAME=	wyvern
 PORTVERSION=	1.0.3
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	www ipv6
 MASTER_SITES=	http://www.MysticWALL.com/software/src/
 
@@ -25,7 +25,7 @@ MAKE_ARGS=	rcdir="${LOCALBASE}/etc/rc.d"
 
 .include <bsd.port.pre.mk>
 
-.if ${OSVERSION} < 400014
+.if ${OSVERSION} >= 400014
 CONFIGURE_ARGS+=	--enable-ipv6
 .endif
 
