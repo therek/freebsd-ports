@@ -2,13 +2,13 @@
 # Date created:                         26 October 1999
 # Whom:                                 Daniel O'Connor <darius@dons.net.au>
 #
-# $FreeBSD: ports/games/wolfpack/Makefile,v 1.3 2000/06/22 14:38:46 jedgar Exp $
+# $FreeBSD: ports/games/wolfpack/Makefile,v 1.4 2000/12/19 01:17:35 jedgar Exp $
 #
 
 PORTNAME=	wolfpack
 PORTVERSION=	4.2.8
 CATEGORIES=	games
-MASTER_SITES=	ftp://empire.idlpaper.com/pub/empire/server/
+MASTER_SITES=	ftp://ftp.empire.cx/pub/empire/server/oldversions/
 DISTNAME=	empire${PORTVERSION}
 
 MAINTAINER=	darius@dons.net.au
