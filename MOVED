@@ -1,7 +1,7 @@
 #
 # MOVED - a list of (recently) moved or removed ports
 #
-# $FreeBSD: ports/MOVED,v 1.414 2004/04/29 22:32:59 bsd Exp $
+# $FreeBSD: ports/MOVED,v 1.415 2004/04/30 08:17:35 pav Exp $
 #
 # Each entry consists of a single line containing the following four
 # fields in the order named, separated with the pipe (`|') character:
@@ -1051,3 +1051,4 @@ irc/pure-xemacs-devel-mule|irc/pure-xemacs21-mule|2004-04-29|was for xemacs-21.4
 irc/irchat-pj-xemacs-devel-mule|irc/irchat-pj-xemacs21-mule|2004-04-29|was for xemacs-21.4
 devel/avrprog|devel/avrdude|2004-04-29|obsoleted by devel/avrdude
 math/R-project|math/R|2004-04-30|port renamed to match project name
+print/pfaedit|print/fontforge|2004-05-01|renamed by upgrading
