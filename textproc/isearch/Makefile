@@ -2,13 +2,13 @@
 # Date created:			21 Sept 1996
 # Whom:				Pedro
 #
-# $FreeBSD: ports/textproc/isearch/Makefile,v 1.10 2001/02/05 16:34:41 olgeni Exp $
+# $FreeBSD: ports/textproc/isearch/Makefile,v 1.11 2001/04/02 06:31:58 mharo Exp $
 #
 
 PORTNAME=	isearch
-PORTVERSION=	1.14
+PORTVERSION=	1.47d
 CATEGORIES=	textproc databases
-MASTER_SITES=	ftp://ftp.cnidr.org/pub/software/Isearch/
+MASTER_SITES=	http://www.etymon.com/pub/Isearch/
 DISTNAME=	Isearch-${PORTVERSION}
 
 MAINTAINER=	giffunip@asme.org
@@ -20,8 +20,8 @@ post-install:
 	strip ${PREFIX}/bin/Iindex
 	strip ${PREFIX}/bin/Iutil
 .if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/Isearch
-	${INSTALL_MAN} ${WRKSRC}/html/*.html ${PREFIX}/share/doc/Isearch
+	${MKDIR} ${DOCSDIR}
+	${INSTALL_MAN} ${WRKSRC}/html/*.html ${DOCSDIR}
 .endif
 
 .include <bsd.port.mk>
