@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.229 1999/09/28 02:58:09 taoka Exp $
+# $FreeBSD: ports/games/Makefile,v 1.230 1999/09/30 03:19:17 cpiazza Exp $
 #
 
     SUBDIR += 3dc
@@ -143,6 +143,7 @@
     SUBDIR += xdemineur
     SUBDIR += xdigger
     SUBDIR += xdino
+    SUBDIR += xeji
     SUBDIR += xemeraldia
     SUBDIR += xevil
     SUBDIR += xeyesplus
