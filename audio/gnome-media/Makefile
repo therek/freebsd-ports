@@ -3,7 +3,7 @@
 # Date created:				20 January 1999
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.6 1999/10/14 09:06:50 nakai Exp $
+# $FreeBSD: ports/audio/gnomemedia/Makefile,v 1.7 1999/12/04 19:07:48 steve Exp $
 #
 
 DISTNAME=	gnome-media-1.0.51
@@ -12,7 +12,7 @@ CATEGORIES=	audio gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-media
 
-MAINTAINER=	reg@shale.csir.co.za
+MAINTAINER=	reg@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore

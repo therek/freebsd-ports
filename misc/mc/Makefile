@@ -3,7 +3,7 @@
 # Date created:		15 Jul 1995
 # Whom:			torstenb@FreeBSD.org
 #
-# $FreeBSD: ports/misc/mc/Makefile,v 1.37 1999/12/23 18:37:44 steve Exp $
+# $FreeBSD: ports/misc/mc/Makefile,v 1.38 1999/12/24 10:42:58 nakai Exp $
 #
 
 DISTNAME=	mc-4.5.42
@@ -11,7 +11,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
 
-MAINTAINER=	reg@shale.csir.co.za
+MAINTAINER=	reg@FreeBSD.org
 
 LIB_DEPENDS=	glib12.3:${PORTSDIR}/devel/glib12 \
 		intl.1:${PORTSDIR}/devel/gettext

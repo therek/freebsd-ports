@@ -3,7 +3,7 @@
 # Date created:		15 January 2000
 # Whom:			reg
 #
-# $FreeBSD: ports/databases/grass/Makefile,v 1.1.1.1 2000/01/29 07:18:54 reg Exp $
+# $FreeBSD: ports/databases/grass/Makefile,v 1.2 2000/01/29 21:28:02 reg Exp $
 #
 
 DISTNAME=	grass5.0beta5
@@ -12,7 +12,7 @@ CATEGORIES=	databases
 MASTER_SITES=	ftp://grass.baylor.edu/pub/grass/grass5.0beta/source/ \
 		http://www.geog.uni-hannover.de/grass/grass5/source/
 
-MAINTAINER=	reg@freebsd.org
+MAINTAINER=	reg@FreeBSD.org
 
 LIB_DEPENDS=    tiff.4:${PORTSDIR}/graphics/tiff
 BUILD_DEPENDS=	wish8.0:${PORTSDIR}/x11-toolkits/tk80

@@ -3,7 +3,7 @@
 # Date created:				29 January 2000
 # Whom:					Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: $
+# $FreeBSD: ports/games/gnomechess/Makefile,v 1.1.1.1 2000/01/29 10:15:08 reg Exp $
 #
 
 DISTNAME=	gnome-chess-0.2.4
@@ -12,7 +12,7 @@ CATEGORIES=	games gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/gnome-chess
 
-MAINTAINER=	reg@freebsd.org
+MAINTAINER=	reg@FreeBSD.org
 
 LIB_DEPENDS=	intl.1:${PORTSDIR}/devel/gettext
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore \

@@ -3,7 +3,7 @@
 # Date created:		26 January 1999
 # Whom:			Jeremy Lea <reg@shale.csir.co.za>
 #
-# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.11 1999/12/04 19:08:11 steve Exp $
+# $FreeBSD: ports/x11-fm/gnomemc/Makefile,v 1.12 1999/12/24 10:46:01 nakai Exp $
 #
 
 DISTNAME=	mc-4.5.42
@@ -12,7 +12,7 @@ CATEGORIES=	x11-fm gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/mc
 
-MAINTAINER=	reg@shale.csir.co.za
+MAINTAINER=	reg@FreeBSD.org
 
 BUILD_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
 RUN_DEPENDS=	panel:${PORTSDIR}/x11/gnomecore
