@@ -1,4 +1,4 @@
-# $FreeBSD: ports/editors/Makefile,v 1.98 1999/12/09 17:14:15 obrien Exp $
+# $FreeBSD: ports/editors/Makefile,v 1.99 1999/12/25 15:46:38 steve Exp $
 #
 
     SUBDIR += AbiWord
@@ -10,7 +10,6 @@
     SUBDIR += apel-xemacs-mule
     SUBDIR += apel-xemacs20
     SUBDIR += asedit
-    SUBDIR += auctex
     SUBDIR += axe
     SUBDIR += beav
     SUBDIR += bitmap-emacs20
