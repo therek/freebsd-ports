@@ -2,7 +2,7 @@
 # Date created:        	2000.11.28
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/eijiro-fpw/Makefile,v 1.1 2000/12/21 06:27:31 taoka Exp $
+# $FreeBSD: ports/japanese/eijiro-fpw/Makefile,v 1.2 2001/02/06 13:21:51 olgeni Exp $
 #
 
 PORTNAME=	eijiro-fpw
@@ -19,6 +19,7 @@ BUILD_DEPENDS=	${LOCALBASE}/share/doc/freepwing/fpwutils.mk:${PORTSDIR}/japanese
 		${LOCALBASE}/lib/perl5/site_perl/${PERL_VER}/${PERL_ARCH}/Jcode.pm:${PORTSDIR}/japanese/p5-Jcode
 
 RESTRICTED=	"The original dictionary is not free"
+NO_PACKAGE=	"The original dictionary is not free"
 USE_GMAKE=	yes
 WRKSRC=		${WRKDIR}/eijiro-fpw${PORTVERSION}
 DICT_PATH?=	/cdrom
