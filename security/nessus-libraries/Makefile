@@ -3,10 +3,10 @@
 # Date created:				07 Noevmber 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.4 2000/01/07 16:40:10 asami Exp $
+# $FreeBSD: ports/security/nessus-libraries/Makefile,v 1.5 2000/01/28 17:34:08 steve Exp $
 #
 
-DISTNAME=	nessus-libraries-0.99.3
+DISTNAME=	nessus-libraries-0.99.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \

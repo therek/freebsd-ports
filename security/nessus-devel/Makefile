@@ -3,11 +3,11 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.7 2000/01/07 16:40:12 asami Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.8 2000/01/28 17:33:49 steve Exp $
 #
 
-DISTNAME=	nessus-core-0.99.3
-PKGNAME=	nessus-0.99.3
+DISTNAME=	nessus-core-0.99.4
+PKGNAME=	nessus-0.99.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \

@@ -3,11 +3,11 @@
 # Date created:				07 November 1999
 # Whom:					Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.4 2000/01/07 16:40:09 asami Exp $
+# $FreeBSD: ports/security/nessus-libnasl/Makefile,v 1.5 2000/01/28 17:34:07 steve Exp $
 #
 
-DISTNAME=	libnasl-0.99.3
-PKGNAME=	nessus-libnasl-0.99.3
+DISTNAME=	libnasl-0.99.4
+PKGNAME=	nessus-libnasl-0.99.4
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.cis.fed.gov/pub/nessus/nessus-${NESSUS_REV}/ \
 		ftp://ftp.nessus.org/pub/nessus/nessus-${NESSUS_REV}/ \
