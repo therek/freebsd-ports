@@ -2,27 +2,36 @@
 # Date created:				October 19th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/databases/p5-Pg/Makefile,v 1.29 2001/04/21 11:43:08 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Pg
-PORTVERSION=	1.9.0
-PORTREVISION=	1
+POSTVERSION=	7.2
 CATEGORIES=	databases perl5
-MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
-MASTER_SITE_SUBDIR=	Pg
 PKGNAMEPREFIX=	p5-
-DISTNAME=	pgsql_perl5-${PORTVERSION}
 
-MAINTAINER=	ports@FreeBSD.org
+MAINTAINER=	girgen@partitur.se
+
+POSTGRESQL_SUBPORT=YES
+.include <${.CURDIR}/../postgresql7/Makefile>
 
 LIB_DEPENDS=	pq.2:${PORTSDIR}/databases/postgresql7
 
-PERL_CONFIGURE=	yes
-CONFIGURE_ENV=	POSTGRES_INCLUDE="${LOCALBASE}/include/pgsql -I${LOCALBASE}/pgsql/include" \
-		POSTGRES_LIB="${LOCALBASE}/lib -L${LOCALBASE}/pgsql/lib"
+USE_PERL5=	yes
+
+CONFIGURE_ARGS=	--with-perl
 
 MAN3=		Pg.3
 MANPREFIX=	${PREFIX}/lib/perl5/${PERL_VERSION}
+
+MAKE_ARGS+=	-C src/interfaces/perl5
+MAKEFILE=	GNUmakefile
+
+post-patch:
+	cd ${WRKSRC}/src/interfaces/perl5 ;\
+	cp GNUmakefile GNUmakefile.old ;\
+	${SED} -e 's,\$$\$$abs_libpq_builddir,${LOCALBASE}/lib,; \
+		   s,Makefile\ libpq-all,Makefile,' \
+		 < GNUmakefile.old > GNUmakefile
 
 .include <bsd.port.mk>
