@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.207 2003/11/20 22:09:37 glewis Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.208 2003/11/28 01:46:52 kevlo Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -198,6 +198,16 @@ MASTER_SITE_EXIM+=	\
 	http://www.us.exim.org/ftp/%SUBDIR%/ \
 	http://exim.stanford.edu/ftp/pub/exim/%SUBDIR%/ \
 	ftp://ftp.fsckit.net/pub/exim/%SUBDIR%/
+
+MASTER_SITE_FEDORA_LINUX+= \
+	http://download.fedora.us/%SUBDIR%/ \
+	http://fedora.multikabel.nl/%SUBDIR%/ \
+	ftp://ftp-stud.fht-esslingen.de/fedora/%SUBDIR%/ \
+	http://mirrors.usc.edu/pub/linux/fedora/%SUBDIR%/ \
+	http://mirrors.kernel.org/fedora.us/%SUBDIR%/ \
+	http://sunsite.informatik.rwth-aachen.de/ftp/pub/Linux/%SUBDIR%/ \
+	http://wftp.tu-chemnitz.de/pub/linux/%SUBDIR%/ \
+	ftp://ftp.g-int.net/Mirrors/download.fedora.us/pub/%SUBDIR%/
 
 MASTER_SITE_FESTIVAL+= \
 	http://www.festvox.org/packed/festival/%SUBDIR%/ \
