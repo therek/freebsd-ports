@@ -2,14 +2,14 @@
 # Date created:		28 March 1999
 # Whom:			kuriyama
 #
-# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.10 2000/05/26 07:48:12 kuriyama Exp $
+# $FreeBSD: ports/textproc/docbook-xml/Makefile,v 1.11 2000/09/07 19:36:11 nik Exp $
 #
 
 PORTNAME=	docbook-xml
-PORTVERSION= 	4.0
+PORTVERSION= 	4.1.2
 CATEGORIES=	textproc
-MASTER_SITES=	http://www.docbook.org/xml/4.0/
-DISTNAME=	docbkx40
+MASTER_SITES=	http://www.docbook.org/xml/4.1.2/
+DISTNAME=	docbkx412
 
 MAINTAINER=	kuriyama@FreeBSD.org
 
@@ -22,7 +22,7 @@ INSTDIR=	${PREFIX}/share/xml
 DTDDIR=		${INSTDIR}/dtd/docbook
 ENTDIR=		${INSTDIR}/entity
 MISCDIR=	${INSTDIR}/misc/docbook
-DTDFILES=	calstblx.dtd dbcentx.mod dbgenent.ent dbhierx.mod \
+DTDFILES=	calstblx.dtd dbcentx.mod dbgenent.mod dbhierx.mod \
 		dbnotnx.mod dbpoolx.mod docbookx.dtd soextblx.dtd
 MISCFILES=	40chg.txt readme.txt
 
