@@ -2,13 +2,13 @@
 # Date created:		17 Febrary 2000
 # Whom:			Maxim Sobolev <sobomax@altavista.net>
 #
-# $FreeBSD$
+# $FreeBSD: ports/editors/jext/Makefile,v 1.1 2000/05/01 03:12:19 steve Exp $
 #
 
 PORTNAME=	jext
 PORTVERSION=	2.7.0.6
 CATEGORIES=	editors java
-MASTER_SITES=	http://members.xoom.com/romainguy/jext/
+MASTER_SITES=	http://members.xoom.com/romainguy/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	sobomax@altavista.net
