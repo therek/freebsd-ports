@@ -1,5 +1,5 @@
 # Creator:  Jordan Hubbard
-# $FreeBSD: ports/LEGAL,v 1.335 2004/02/27 22:38:11 pav Exp $
+# $FreeBSD: ports/LEGAL,v 1.336 2004/02/28 08:27:02 eik Exp $
 
    **********************************************************************
    ***                      NOTE TO COMMITTERS                        ***
@@ -162,6 +162,7 @@ homard-*		ports/french/homard	Only free for use in conjunction with
 						french/aster. For any other purpose,
 						you have to acquire a license
 hptools*		ports/devel/hptools	Not made or distributed for resale
+ICON-*			ports/x11-themes/gnome-icons-*	Author rights unclear
 install_flash_player_6_linux*	ports/www/linux-flashplugin6	License forbids redistribution
 invitation-to-ruby	ports/devel/invitation_to_ruby	no commercial use
 j2sdkee-*		ports/java/j2sdkee	For development and testing use
