@@ -12,7 +12,7 @@
 # be punished accordingly.  DO NOT COMMIT SOMETHING YOU HAVEN'T TESTED.
 # You have been warned. :)
 #
-# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.238 2004/05/23 20:30:12 pav Exp $
+# $FreeBSD: ports/Mk/bsd.sites.mk,v 1.239 2004/05/24 09:43:04 knu Exp $
 #
 
 # Where to put distfiles that don't have any other master site
@@ -634,6 +634,22 @@ MASTER_SITE_PGSQL+= \
 	ftp://ftp3.tw.postgresql.org/pub/postgresql/%SUBDIR%/ \
 	ftp://ftp.tr.postgresql.org/pub/SQL/postgresql/%SUBDIR%/ \
 	ftp://ftp.postgresql.org/pub/%SUBDIR%/
+
+MASTER_SITE_PHP+= \
+	http://www.php.net/%SUBDIR%/ \
+	http://at.php.net/%SUBDIR%/ \
+	http://au.php.net/%SUBDIR%/ \
+	http://br.php.net/%SUBDIR%/ \
+	http://de.php.net/%SUBDIR%/ \
+	http://es.php.net/%SUBDIR%/ \
+	http://fi.php.net/%SUBDIR%/ \
+	http://fr.php.net/%SUBDIR%/ \
+	http://gr.php.net/%SUBDIR%/ \
+	http://it.php.net/%SUBDIR%/ \
+	http://jp.php.net/%SUBDIR%/ \
+	http://se.php.net/%SUBDIR%/ \
+	http://uk.php.net/%SUBDIR%/ \
+	${MASTER_SITE_RINGSERVER:S,%SUBDIR%,net/www/php/&,}
 
 MASTER_SITE_PYTHON+= \
 	http://www.python.org/%SUBDIR%/ \
