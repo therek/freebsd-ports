@@ -2,7 +2,7 @@
 # Date created:			12 Aug 2000
 # Whom:				Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.8 2000/10/20 20:21:26 knu Exp $
+# $FreeBSD: ports/www/mod_ruby/Makefile,v 1.9 2000/12/11 19:54:50 knu Exp $
 #
 
 PORTNAME=	mod_ruby
@@ -23,7 +23,7 @@ RUBY_REQUIRE=	160 <= Ruby
 .include <bsd.port.pre.mk>
 
 .if defined(RUBY_PROVIDED)
-VERSION=	0.2.1
+VERSION=	0.2.2
 .else
 VERSION=	0.2.0
 .endif
