@@ -2,11 +2,11 @@
 # Date created:        27 August 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.7 1999/12/02 06:50:37 nakai Exp $
+# $FreeBSD: ports/x11-wm/wmg/Makefile,v 1.8 2000/04/10 19:50:40 cpiazza Exp $
 #
 
 PORTNAME=	wmg
-PORTVERSION= 	0.15.0
+PORTVERSION=	0.15.0
 CATEGORIES=	x11-wm gnome
 MASTER_SITES=	http://ductape.net/~reeve/downloads/ \
 		http://www.geocities.com/SiliconValley/Screen/4079/downloads/
