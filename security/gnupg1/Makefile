@@ -2,11 +2,11 @@
 # Date created:		Sep 30, 1998
 # Whom:			kuriyama@FreeBSD.org
 #
-# $FreeBSD: ports/security/gnupg/Makefile,v 1.22 2000/05/09 01:44:40 kuriyama Exp $
+# $FreeBSD: ports/security/gnupg/Makefile,v 1.23 2000/07/13 10:57:15 kuriyama Exp $
 #
 
 PORTNAME=	gnupg
-PORTVERSION=	1.0.2
+PORTVERSION=	1.0.3
 CATEGORIES=	security
 MASTER_SITES=	ftp://ftp.gnupg.org/pub/gcrypt/gnupg/ \
 		ftp://pgp.iijlab.net/pub/gnupg/ \
