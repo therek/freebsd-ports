@@ -2,11 +2,12 @@
 # Date created:		30 Jun 1996
 # Whom:			jraynard
 #
-# $FreeBSD: ports/news/slurp/Makefile,v 1.9 2000/02/05 10:55:46 dirk Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	slurp
 PORTVERSION=	1.10
+PORTREVISION=	1
 CATEGORIES=	news
 MASTER_SITES=	ftp://ftp.demon.co.uk/pub/news/slurp/
 EXTRACT_SUFX=	.tar.Z
