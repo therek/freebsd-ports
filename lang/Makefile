@@ -1,4 +1,4 @@
-# $FreeBSD: ports/lang/Makefile,v 1.176 2000/07/28 10:45:42 sobomax Exp $
+# $FreeBSD: ports/lang/Makefile,v 1.177 2000/07/31 15:01:34 nbm Exp $
 #
 
     SUBDIR += ETHOberonV4
@@ -101,6 +101,7 @@
     SUBDIR += siod
     SUBDIR += slib
     SUBDIR += smalleiffel
+    SUBDIR += smalleiffel-devel
     SUBDIR += smalltalk
     SUBDIR += sml-mode.el
     SUBDIR += sml-nj
