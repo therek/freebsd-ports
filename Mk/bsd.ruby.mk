@@ -3,7 +3,7 @@
 #
 # Created by: Akinori MUSHA <knu@FreeBSD.org>
 #
-# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.135 2004/04/17 19:17:35 knu Exp $
+# $FreeBSD: ports/Mk/bsd.ruby.mk,v 1.136 2004/05/02 20:30:10 knu Exp $
 #
 
 .if !defined(Ruby_Include)
@@ -200,6 +200,8 @@ RUBY_R=			_r
 RUBY_CONFIGURE_ARGS+=	--with-libc_r=no
 RUBY_R=			# none
 .endif
+
+DEPENDS_ARGS+=		RUBY_VER="${RUBY_VER}" RUBY_R="${RUBY_R}"
 
 RUBY_CONFIGURE_ARGS+=	--program-suffix="${RUBY_SUFFIX}"
 
