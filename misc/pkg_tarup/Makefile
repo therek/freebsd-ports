@@ -2,11 +2,12 @@
 # Date created:		21 Sep 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/misc/pkg_tarup/Makefile,v 1.1 2000/10/21 20:40:56 knu Exp $
 #
 
 PORTNAME=	pkg_tarup
 PORTVERSION=	1.2
+PORTREVISION=	1
 CATEGORIES=	misc
 MASTER_SITES=	http://cvsweb.netbsd.org/bsdweb.cgi/~checkout~/pkgsrc/pkgtools/pkg_tarup/files/
 DISTNAME=	${PORTNAME}\?rev=${PORTVERSION}\&content-type=text%2fplain
