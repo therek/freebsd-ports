@@ -2,7 +2,7 @@
 # Date created:		19 October 1994
 # Whom:			mr
 #
-# $FreeBSD: ports/cad/pcb/Makefile,v 1.25 2000/05/14 16:56:53 jseger Exp $
+# $FreeBSD: ports/cad/pcb/Makefile,v 1.26 2001/09/17 17:40:04 dwcjr Exp $
 #
 
 PORTNAME=	pcb
@@ -17,10 +17,17 @@ BUILD_DEPENDS=	gm4:${PORTSDIR}/devel/m4 \
 		latex:${PORTSDIR}/print/teTeX
 
 USE_IMAKE=	yes
-MAN1=		pcb.1
-MANCOMPRESSED=	yes
+MANN=		pcb.n
+MANCOMPRESSED=	no
 
 pre-install:
-	@${CP} ${WRKSRC}/doc/pcb.man ${WRKSRC}/src
+	-${MKDIR} ${DOCSDIR}
+	cd ${WRKSRC}/doc && ${SETENV} PREFIX=${PREFIX} make install.info &&\
+	${INSTALL_DATA} index.html pcb.html pcb.ps refcard.ps ${DOCSDIR}
+
+post-install:
+	install-info --section="Utilities" \
+	--entry="* PCB: (pcb).	Interactive printed circuit board layout system for X11" \
+	${PREFIX}/info/pcb.info ${PREFIX}/info/dir
 
 .include <bsd.port.mk>
