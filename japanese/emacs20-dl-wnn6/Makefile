@@ -3,13 +3,13 @@
 # Date created:		10 October 1998
 # Whom:			shige
 #
-# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.11 2000/01/14 14:59:42 shige Exp $
+# $FreeBSD: ports/japanese/emacs20-dl-wnn6/Makefile,v 1.12 2000/01/19 15:38:34 shige Exp $
 #
 
 DISTNAME=	dl-wnn-0.3.6
 PKGNAME=	ja-emacs20-dl-wnn6-0.3.6
 CATEGORIES=	japanese editors
-MASTER_SITES=	http://tt-www.cs.titech.ac.jp/~katsuya/emacs/
+MASTER_SITES=	http://tokuda-www.cs.titech.ac.jp/~katsuya/emacs/
 
 MAINTAINER=	shige@FreeBSD.org
 
