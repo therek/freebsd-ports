@@ -2,14 +2,14 @@
 # Date created:				29 August 2000
 # Whom:					David Gilbert <dgilbert@velocet.ca>
 #
-# $FreeBSD$
+# $FreeBSD: ports/graphics/gle/Makefile,v 1.1 2000/09/02 15:10:03 sobomax Exp $
 #
 
 PORTNAME=	gle
-PORTVERSION=	3.0.1
+PORTVERSION=	3.0.3
 CATEGORIES=	graphics
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE} \
-		http://linas.org/gle/ \
+		http://linas.org/gle/pub/ \
 		http://metalab.unc.edu/pub/Linux/libs/X/ \
 		ftp://tsx-11.mit.edu/pub/linux/sources/libs/
 MASTER_SITE_SUBDIR=	${PORTNAME}
