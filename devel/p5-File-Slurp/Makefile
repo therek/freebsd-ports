@@ -2,11 +2,11 @@
 # Date created:				October 17th 1996
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/p5-File-Slurp/Makefile,v 1.13 2000/10/23 21:02:48 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	File-Slurp
-PORTVERSION=	98.071901
+PORTVERSION=	2002.0305
 CATEGORIES=	devel perl5
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	File
