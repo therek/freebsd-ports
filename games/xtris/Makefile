@@ -2,7 +2,7 @@
 # Date created:         24. Sep 97
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/games/xtris/Makefile,v 1.6 2000/04/14 12:28:30 asami Exp $
+# $FreeBSD: ports/games/xtris/Makefile,v 1.7 2001/01/16 17:30:52 sobomax Exp $
 #
 
 PORTNAME=	xtris
@@ -10,8 +10,7 @@ PORTVERSION=	1.15
 CATEGORIES=	games ipv6
 MASTER_SITES=	http://www.iagora.com/~espel/xtris/
 
-PATCH_SITES=	ftp://ftp2.v6.linux.or.jp/pub/Linux/IPv6-2/xtris/ \
-		http://ftp2.v6.linux.or.jp/pub/Linux/IPv6-2/xtris/
+PATCH_SITES=	ftp://ftp.42.org/pub/orphan/	
 PATCHFILES=	xtris-1.15-v6-19991218.diff.gz
 PATCH_DIST_STRIP=	-p1
 
