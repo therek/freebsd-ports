@@ -2,7 +2,7 @@
 # Date created:		8 Dec 1999
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.20 2000/08/12 07:33:35 asami Exp $
+# $FreeBSD: ports/editors/xemacs21-mule-common/Makefile,v 1.21 2000/09/07 08:01:29 knu Exp $
 #
 
 # This is the COMMON port of XEmacs Mule slave
@@ -25,9 +25,9 @@ XEMACS_MAJOR_VER=	21
 .for dir in \
 	editors/xemacs${XEMACS_MAJOR_VER}-mule \
 	japanese/xemacs${XEMACS_MAJOR_VER}-canna \
-	japanese/xemacs${XEMACS_MAJOR_VER}-canna+wnn4 \
+	japanese/xemacs${XEMACS_MAJOR_VER}-canna+freewnn \
 	japanese/xemacs${XEMACS_MAJOR_VER}-canna+wnn6 \
-	japanese/xemacs${XEMACS_MAJOR_VER}-wnn4 \
+	japanese/xemacs${XEMACS_MAJOR_VER}-freewnn \
 	japanese/xemacs${XEMACS_MAJOR_VER}-wnn6
 .if exists(${WRKDIRPREFIX}${.CURDIR}/../../${dir}/work/.install_done)
 WRKDIR=	${WRKDIRPREFIX}${.CURDIR}/../../${dir}/work

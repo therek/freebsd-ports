@@ -2,12 +2,12 @@
 # Date created:		5 Sep 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/onew-wnn6/Makefile,v 1.5 1999/08/25 05:26:07 obrien Exp $
+# $FreeBSD: ports/japanese/onew-wnn6/Makefile,v 1.6 2000/04/12 14:36:31 knu Exp $
 #
 
 WNN6=		yes
 
-MASTERDIR=	${.CURDIR}/../onew-wnn4
+MASTERDIR=	${.CURDIR}/../onew-freewnn
 PKGDIR=		${.CURDIR}/pkg
 
 .include	"${MASTERDIR}/Makefile"

@@ -2,7 +2,7 @@
 # Date created:         98/11/17
 # Whom:                 Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.16 2000/04/11 14:14:10 knu Exp $
+# $FreeBSD: ports/japanese/jvim3/Makefile,v 1.17 2000/08/25 02:12:50 taoka Exp $
 #
 
 PORTNAME=	jvim
@@ -26,6 +26,8 @@ EXTRACT_ONLY=	vim-3.0.tar.gz
 WRKSRC=		${WRKDIR}/vim
 MAKEFILE=	makjunix.mak
 MAN1=		jvim3.1
+
+.include <bsd.port.pre.mk>
 
 JPATCH=		jvim.2.1beta.tar.gz
 PLIST_SUB=	VERSION=${PORTVERSION}
@@ -55,16 +57,15 @@ INPUT_METHOD+=	canna
 LIB_DEPENDS+=	canna.1:${PORTSDIR}/japanese/Canna
 FEPLIBS+=	-lcanna
 .endif
-.if defined(WNN4)
-INPUT_METHOD+=	wnn4
-BUILD_DEPENDS+=	${X11BASE}/lib/libjd.a:${PORTSDIR}/japanese/Wnn
-RUN_DEPENDS+=	${LOCALBASE}/lib/wnn/ja_JP/rk/2B_ROMKANA:${PORTSDIR}/japanese/Wnn
-FEPLIBS+=	-L${X11BASE}/lib -ljd -lcrypt
+.if defined(FREEWNN)
+INPUT_METHOD+=	freewnn
+LIB_DEPENDS+=	jd.0:${PORTSDIR}/japanese/FreeWnn-lib
+FEPLIBS+=	-L${LOCALBASE}/lib -ljd -lcrypt
 .elif defined(WNN6)
 INPUT_METHOD+=	wnn6
-BUILD_DEPENDS+=	${X11BASE}/lib/libjd.a:${PORTSDIR}/japanese/Wnn
+LIB_DEPENDS+=	jd.0:${PORTSDIR}/japanese/FreeWnn-lib
 RUN_DEPENDS+=	${LOCALBASE}/lib/wnn/ja_JP/rk.wnn6/2B_ROMKANA:${PORTSDIR}/japanese/onew${INPUT_METHOD}
-FEPLIBS+=	-L${X11BASE}/lib -ljd -lcrypt
+FEPLIBS+=	-L${LOCALBASE}/lib -ljd -lcrypt
 .endif
 .endif # DIRECT_CANNA
 #
@@ -117,4 +118,4 @@ do-install:
 .endif
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>

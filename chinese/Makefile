@@ -1,9 +1,10 @@
-# $FreeBSD: ports/chinese/Makefile,v 1.49 2000/08/24 12:09:23 kevlo Exp $
+# $FreeBSD: ports/chinese/Makefile,v 1.50 2000/08/26 09:03:32 vanilla Exp $
 #
     SUBDIR += xmms
 
     SUBDIR += CJK
-    SUBDIR += Wnn
+    SUBDIR += FreeWnn-lib
+    SUBDIR += FreeWnn-server
     SUBDIR += acroread-chsfont
     SUBDIR += acroread-chtfont
     SUBDIR += arphicttf
@@ -24,7 +25,7 @@
     SUBDIR += libtabe
     SUBDIR += lunar
     SUBDIR += moettf
-    SUBDIR += mule-wnn4
+    SUBDIR += mule-freewnn
     SUBDIR += muni
     SUBDIR += mutt
     SUBDIR += nvi-big5

@@ -1,7 +1,8 @@
-# $FreeBSD: ports/korean/Makefile,v 1.52 2000/07/19 17:05:40 asami Exp $
+# $FreeBSD: ports/korean/Makefile,v 1.53 2000/07/19 23:51:43 cjh Exp $
 #
 
-    SUBDIR += Wnn
+    SUBDIR += FreeWnn-lib
+    SUBDIR += FreeWnn-server
     SUBDIR += acroread-korfont
     SUBDIR += ami
     SUBDIR += baekmukfonts-bdf
@@ -46,7 +47,7 @@
     SUBDIR += linuxdoc-sgml
     SUBDIR += linux_locale
     SUBDIR += mizifont
-    SUBDIR += mule-wnn4
+    SUBDIR += mule-freewnn
     SUBDIR += munhwafonts-cid
     SUBDIR += netscape3
     SUBDIR += netscape4-communicator

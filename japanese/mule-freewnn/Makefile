@@ -1,14 +1,14 @@
-# New ports collection makefile for:	mule 2.3@19.34 with Wnn4
+# New ports collection makefile for:	mule with FreeWnn
 # Date created:		7 July 1997
 # Whom:			Satoshi Taoka <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/mule-wnn4/Makefile,v 1.36 2000/04/11 14:15:24 knu Exp $
+# $FreeBSD: ports/japanese/mule-freewnn/Makefile,v 1.37 2000/04/14 16:47:47 knu Exp $
 #
 
-PKGNAMESUFFIX=	-wnn4
+PKGNAMESUFFIX=	-freewnn
 CATEGORIES=	japanese
 
-WNN4=		yes
+FREEWNN=	yes
 
 MASTERDIR=	${.CURDIR}/../../editors/mule
 PKGDIR=		${.CURDIR}/pkg

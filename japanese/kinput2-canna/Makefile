@@ -2,12 +2,12 @@
 # Date created:		19 Dec 1997
 # Whom:			Satoshi TAOKA <taoka@FreeBSD.org>
 #
-# $FreeBSD: ports/japanese/kinput2-canna/Makefile,v 1.10 1999/08/25 05:24:54 obrien Exp $
+# $FreeBSD: ports/japanese/kinput2-canna/Makefile,v 1.11 2000/04/11 14:14:23 knu Exp $
 #
 
 CANNA=		yes
 
-MASTERDIR=	${.CURDIR}/../kinput2-wnn4/
+MASTERDIR=	${.CURDIR}/../kinput2-freewnn/
 PKGDIR=		${.CURDIR}/pkg
 
 .include "${MASTERDIR}/Makefile"
