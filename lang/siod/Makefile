@@ -3,14 +3,15 @@
 # Date created:        28 April 1999
 # Whom:                jkoshy
 #
-# $FreeBSD: ports/lang/siod/Makefile,v 1.3 1999/08/25 06:35:24 obrien Exp $
+# $FreeBSD: ports/lang/siod/Makefile,v 1.4 1999/08/31 06:47:04 mharo Exp $
 #
 
 DISTNAME=	siod
 PKGNAME=	siod-3.4
 CATEGORIES=	lang
 MASTER_SITES=	http://people.delphi.com/gjc/\
-		ftp://ftp.std.com/pub/gjc/
+		ftp://ftp.std.com/pub/gjc/ \
+		http://freefall.freebsd.org/~jkoshy/PORTS/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	jkoshy@FreeBSD.org
