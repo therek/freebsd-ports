@@ -1,16 +1,16 @@
 # New ports collection makefile for:	eb
-# Version required:		2.3.3
+# Version required:		2.3.5
 # Date created:			20 Jan 1999
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/eb/Makefile,v 1.7 1999/09/20 07:22:39 taoka Exp $
+# $FreeBSD: ports/japanese/eb/Makefile,v 1.8 1999/10/27 08:45:29 mharo Exp $
 #
 
-DISTNAME=	eb-2.3.3
-PKGNAME=	ja-eb-2.3.3
+DISTNAME=	eb-2.3.5
+PKGNAME=	ja-eb-2.3.5
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/misc/eb/
-DISTFILES=	${EBFILES} ${APPENDIXFILES:S,^,appendix/,}
+DISTFILES=	${EBFILES} ${APPENDIXFILES}
 
 MAINTAINER=	takamune@avrl.mei.co.jp
 
@@ -39,6 +39,7 @@ APPENDIXFILES=	cencro-1.0.tar.gz \
 		plus-2.0.tar.gz \
 		readers-2.2.tar.gz \
 		readers2-2.0.tar.gz
+APPENDIXFILES:=	${APPENDIXFILES:S,^,appendix/,}
 LISTFILES=	LIST LIST-ja
 
 EXTRACT_ONLY=	${EBFILES}
