@@ -2,7 +2,7 @@
 # Date created:		1 May 1999
 # Whom:			Anders Nordby <anders@fix.no>
 #
-# $FreeBSD: ports/security/nessus/Makefile,v 1.18 2000/11/09 16:39:03 sobomax Exp $
+# $FreeBSD: ports/security/nessus/Makefile,v 1.19 2000/11/26 02:30:07 dougb Exp $
 #
 
 PORTNAME=	nessus
@@ -27,9 +27,13 @@ LIB_DEPENDS=	nasl.1:${PORTSDIR}/security/nessus-libnasl
 DIST_SUBDIR=	nessus
 WRKSRC=		${WRKDIR}/nessus-core
 
+.if defined(WITHOUT_GTK)
+CONFIGURE_ARGS+=	--disable-gtk
+.else
 USE_GTK=	yes
-USE_LIBTOOL=	yes
 CONFIGURE_ENV=	GTKCONFIG="${GTK_CONFIG}"
+.endif
+USE_LIBTOOL=	yes
 
 MAN1=		nessus.1
 MAN8=		nessusd.8 nessus-adduser.8
