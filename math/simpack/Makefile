@@ -1,8 +1,8 @@
-# new ports collection Makefile for: SimPack
+# New Ports Collection Makefile For: SimPack
 # Date created:        5 June 1997
 # Whom:                Ruslan Shevchenko <rssh@cki.ipri.kiev.ua>
 #
-# $FreeBSD: ports/math/simpack/Makefile,v 1.9 2000/03/09 20:43:23 asami Exp $
+# $FreeBSD: ports/math/simpack/Makefile,v 1.10 2000/04/14 07:20:37 asami Exp $
 #
 
 PORTNAME=	simpack
@@ -15,7 +15,7 @@ MAINTAINER=	rssh@cki.ipri.kiev.ua
 
 USE_XLIB=	yes
 
-WRKSRC=	${WRKDIR}/simpack
+WRKSRC=		${WRKDIR}/simpack
 
 .include <bsd.port.pre.mk>
 
@@ -92,8 +92,8 @@ create-lib-sim++:
 	@(cd ${WRKDIR}/temp;                                   \
 	for i in `${CAT} ${FILESDIR}/FILES-SRC-SIMPP` ; do        \
 	  gcc -fpic -DPIC -I${WRKSRC}/func/event/include -c -O \
-		 -o `${BASENAME} $$i cpp`.so                      \
-                 ${WRKSRC}/func/event/src/$$i ;                \
+		-o `${BASENAME} $$i cpp`.so                      \
+		${WRKSRC}/func/event/src/$$i ;                \
 	done;                                   \
 	if [ "${PORTOBJFORMAT}" = "elf" ]; then \
 		${LD} -shared -x -soname libsim++.so.${VERSION} -o \
@@ -115,7 +115,7 @@ create-lib-queuing:
 	@(cd ${WRKDIR}/temp;                           \
 	gcc -fpic -DPIC -I${WRKSRC}/func/queuing -c -O \
 		 -o queuing.so                         \
-                 ${WRKSRC}/func/queuing/queuing.c ;    \
+		${WRKSRC}/func/queuing/queuing.c ;    \
 	if [ "${PORTOBJFORMAT}" = "elf" ]; then \
 		${LD} -shared -x -soname libqueuing.so.${VERSION} -o \
 		  libqueuing.so.${VERSION} `lorder *.so | tsort -q ` ; \
@@ -129,16 +129,16 @@ create-scripts: create-sdsmt-alias create-deq-alias
 
 create-sdsmt-alias:
 	@${ECHO} SDSMTLIB=${PREFIX}/lib/SimPack/func/slice/sdsmt \
-                              >  ${WRKDIR}/temp/sdsmt.alias
+				>  ${WRKDIR}/temp/sdsmt.alias
 	@${ECHO} export SDSMTLIB >> ${WRKDIR}/temp/sdsmt.alias
 	@${ECHO} wish4.1 ${PREFIX}/lib/SimPack/func/slice/sdsmt/sdsmt \
-		              >> ${WRKDIR}/temp/sdsmt.alias
+				>> ${WRKDIR}/temp/sdsmt.alias
 
 create-deq-alias:
 	@${ECHO} PATCH=${PREFIX}/lib/SimPack/constraint/differential:$$PATCH \
-		           >  ${WRKDIR}/temp/deq.alias
+				>  ${WRKDIR}/temp/deq.alias
 	@${ECHO} export PATCH >> ${WRKDIR}/temp/deq.alias
 	@${ECHO} ${PREFIX}/lib/SimPack/constraint/differential/deq $$*       \
-			   >> ${WRKDIR}/temp/deq.alias
+				>> ${WRKDIR}/temp/deq.alias
 
 .include <bsd.port.post.mk>
