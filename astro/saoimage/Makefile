@@ -2,19 +2,21 @@
 # Date created:		21 Feb 1998
 # Whom:			giffunip@asme.org
 #
-# $FreeBSD: ports/astro/saoimage/Makefile,v 1.9 2000/02/29 03:23:15 jedgar Exp $
+# $FreeBSD: ports/astro/saoimage/Makefile,v 1.10 2000/04/08 22:01:46 mharo Exp $
 #
 
 PORTNAME=	saoimage
-PORTVERSION=	1.26.10
+PORTVERSION=	1.27.2
 CATEGORIES=	astro
 MASTER_SITES=	ftp://cfa-ftp.harvard.edu/pub/gsc/SAOimage/
 
 MAINTAINER=	ports@FreeBSD.org
 
-MAKEFILE=	makefile
-ALL_TARGET=	${OPSYS}
 USE_X_PREFIX=	yes
+MAKEFILE=	makefile
+MAKE_ENV=	OFLAGS="${CFLAGS}"
+ALL_TARGET=	${OPSYS}
+
 MAN1=		saoimage.1
 
 do-install:
