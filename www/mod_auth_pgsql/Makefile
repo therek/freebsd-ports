@@ -2,10 +2,10 @@
 # Date created:		2000/11/10
 # Whom:			Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/www/mod_auth_pgsql/Makefile,v 1.3 2001/10/02 11:33:49 mi Exp $
+# $FreeBSD$
 
 PORTNAME=	mod_auth_pgsql
-PORTVERSION=	0.9.9
+PORTVERSION=	0.9.11
 CATEGORIES=	www
 MASTER_SITES=	http://www.giuseppetanzilli.it/mod_auth_pgsql/dist/
 
