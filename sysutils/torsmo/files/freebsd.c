@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2004 Roman Bogorodskiy <bogorodskiy@inbox.ru>
  *
- * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.4 2004/08/27 13:47:47 krion Exp $
+ * $FreeBSD: ports/sysutils/torsmo/files/freebsd.c,v 1.5 2004/10/13 15:02:22 krion Exp $
  */
 
 #include "torsmo.h"
@@ -295,8 +295,8 @@ void get_load_average(double v[3]) {
 }
 
 double get_acpi_temperature(int fd) {
-	double temp;
-	
+	int temp;
+		
 	if (GETSYSCTL("hw.acpi.thermal.tz0.temperature", temp)) {
 		 (void)fprintf(stderr, "Cannot read sysctl \"hw.acpi.thermal.tz0.temperature\"\n");
 		 temp = -1.0;
