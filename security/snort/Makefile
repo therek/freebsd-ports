@@ -1,12 +1,12 @@
 # New ports collection makefile for:	snort
-# Version required:	1.3
+# Version required:	1.5
 # Date created:		Mon Aug  2 12:04:08 CEST 1999
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/security/snort/Makefile,v 1.3 1999/08/31 01:51:46 peter Exp $
+# $FreeBSD: ports/security/snort/Makefile,v 1.4 1999/09/28 19:32:03 dirk Exp $
 #
 
-DISTNAME=	snort-1.3
+DISTNAME=	snort-1.5
 CATEGORIES=	security net
 MASTER_SITES=	http://www.clark.net/~roesch/ \
 		http://www.physik.TU-Berlin.DE/~ibex/ports/distfiles/
