@@ -2,11 +2,11 @@
 # Date created:		23. Oct 1998
 # Whom:			Lars Koeller <Lars.Koeller@Uni-Bielefeld.DE>
 #
-# $FreeBSD: ports/sysutils/xperfmon3/Makefile,v 1.25 2000/04/09 19:09:07 cpiazza Exp $
+# $FreeBSD: ports/sysutils/xperfmon3/Makefile,v 1.26 2000/04/22 10:14:06 mharo Exp $
 #
 
 PORTNAME=	xperfmon++
-PORTVERSION=	3.0
+PORTVERSION=	3.1
 CATEGORIES=	sysutils
 MASTER_SITES=	ftp://ftp.uni-bielefeld.de/pub/systems/FreeBSD/lkoeller/ \
 		ftp://ftp.u-aizu.ac.jp/pub/misc/tools/xperfmon/		 \
