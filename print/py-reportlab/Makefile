@@ -2,11 +2,11 @@
 # Date created:		17 August 2000
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/print/py-reportlab/Makefile,v 1.4 2000/12/22 12:49:54 tg Exp $
+# $FreeBSD: ports/print/py-reportlab/Makefile,v 1.5 2001/05/17 11:31:20 tg Exp $
 #
 
 PORTNAME=	reportlab
-PORTVERSION=	1.07
+PORTVERSION=	1.09
 CATEGORIES=	print python
 MASTER_SITES=	ftp://ftp.reportlab.com/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
