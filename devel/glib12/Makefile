@@ -2,19 +2,18 @@
 # Date Created:			28 July 1998
 # Whom:				Vanilla I. Shu <vanilla@FreeBSD.org>
 #
-# $FreeBSD: ports/devel/glib12/Makefile,v 1.43 2001/05/24 01:48:29 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	glib
 PORTVERSION=	1.2.10
-PORTREVISION=	3
+PORTREVISION=	4
 CATEGORIES=	devel
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=	stable/sources/glib
 
-# This creates a circular dependency, but technically correct
-#
-#RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
+BUILD_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
+RUN_DEPENDS=	pkg-config:${PORTSDIR}/devel/pkgconfig
 
 MAINTAINER=	gnome@FreeBSD.org
 
