@@ -2,7 +2,7 @@
 # Date created:		30 October 1994
 # Whom:			smace
 #
-# $FreeBSD: ports/graphics/xv/Makefile,v 1.49 2001/06/14 15:53:52 shige Exp $
+# $FreeBSD: ports/graphics/xv/Makefile,v 1.50 2001/09/11 02:22:51 ache Exp $
 #
 
 PORTNAME=	xv
@@ -62,6 +62,9 @@ post-patch:
 .for i in ${MAN1}
 	@${CP} ${WRKSRC}/docs/${i:R}.man ${WRKSRC}
 .endfor
+.if defined(NOMAN)
+	${PERL} -pi.orig -e 's,^InstallManPage.*$$,/\* $$& \*/,' ${WRKSRC}/Imakefile
+.endif
 
 
 post-install:
