@@ -2,12 +2,12 @@
 # Date created:		24 Jun 2000
 # Whom:			Ben Smithurst <ben@scientia.demon.co.uk>
 #
-# $FreeBSD: ports/games/wordplay/Makefile,v 1.4 2001/03/31 15:56:38 kevlo Exp $
+# $FreeBSD: ports/games/wordplay/Makefile,v 1.5 2001/04/03 09:24:09 mharo Exp $
 
 PORTNAME=	wordplay
 PORTVERSION=	7.22
 CATEGORIES=	games
-MASTER_SITES= 	http://www.itsc.uah.edu/~criswell/wordplay/
+MASTER_SITES= 	http://home.hiwaay.net/~criswell/wordplay/
 DISTNAME=	${PORTNAME}${PORTVERSION:S/.//}
 EXTRACT_SUFX=	.tar.Z
 
