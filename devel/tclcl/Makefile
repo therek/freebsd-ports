@@ -2,13 +2,13 @@
 # Date created:		23 April 1999
 # Whom:			obonilla
 #
-# $FreeBSD: ports/devel/tclcl/Makefile,v 1.6 2000/04/14 05:44:31 asami Exp $
+# $FreeBSD: ports/devel/tclcl/Makefile,v 1.7 2000/09/25 12:21:14 asami Exp $
 #
 
 PORTNAME=	tclcl
-PORTVERSION=	1.0b9
+PORTVERSION=	1.0b10
 CATEGORIES=	devel
-MASTER_SITES=	http://www-mash.cs.berkeley.edu/dist/
+MASTER_SITES=	http://www.isi.edu/nsnam/dist/
 DISTFILES=	tclcl-src-${PORTVERSION}.tar.gz
 
 MAINTAINER=	obonilla@fisicc-ufm.edu
