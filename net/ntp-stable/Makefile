@@ -3,14 +3,14 @@
 # Date created:		Di   5 Mai 1998 21:31:03 CEST
 # Whom:			andreas
 #
-# $FreeBSD: ports/net/ntp/Makefile,v 1.8 1999/08/30 14:23:33 peter Exp $
+# $FreeBSD: ports/net/ntp/Makefile,v 1.9 1999/08/31 06:48:57 mharo Exp $
 #
 
 DISTNAME=	ntp-4.0.93a
 CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.udel.edu/pub/ntp/testing/
 
-MAINTAINER=	andreas@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 # ntp's configure script created by autoconf 2.14.1 doesn't work
 # our autoconf version 2.13 produces better results
