@@ -2,11 +2,11 @@
 # Date created:		24 September 1994
 # Whom:			adam
 #
-# $FreeBSD: ports/mail/procmail/Makefile,v 1.37 2001/06/15 07:25:51 ijliao Exp $
+# $FreeBSD: ports/mail/procmail/Makefile,v 1.38 2001/06/29 06:46:38 ache Exp $
 #
 
 PORTNAME=	procmail
-PORTVERSION=    3.20
+PORTVERSION=    3.21
 CATEGORIES=	mail
 MASTER_SITES=	ftp://ftp.procmail.org/pub/procmail/ \
 		ftp://ftp.informatik.rwth-aachen.de/pub/packages/procmail/
