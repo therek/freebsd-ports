@@ -2,7 +2,7 @@
 # Date created:		8 Oct 1998
 # Whom: Kawaguti Ginga <ginga@athena.club.ne.jp>
 #
-# $FreeBSD: ports/japanese/kappa20/Makefile,v 1.11 2000/10/08 10:20:48 asami Exp $
+# $FreeBSD: ports/japanese/kappa20/Makefile,v 1.12 2001/09/01 04:10:29 knu Exp $
 #
 
 PORTNAME=	kappa20
@@ -35,8 +35,8 @@ post-install:
 	@(cd ${PREFIX}/${FONTSDIR} ; mkfontdir)
 .if !defined(NOPORTDOCS)
 	@${MKDIR} ${PREFIX}/share/doc/ja/${PORTNAME}
-	@${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
 	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/README ${PREFIX}/share/doc/ja/${PORTNAME}/README.euc-jp
+#	@${MKDIR} ${PREFIX}/share/doc/${PORTNAME}
 #	@${INSTALL_DATA} ${WRKDIR}/${DISTNAME}/pcf/fonts.alias.kappa ${PREFIX}/share/doc/${PORTNAME}/
 .endif
 
