@@ -2,7 +2,7 @@
 # Date created:			May 22, 2000
 # Whom:				Mikhail Teterin <mi@aldan.algebra.com>
 #
-# $FreeBSD: ports/devel/tcl-memchan/Makefile,v 1.1 2000/07/31 15:36:08 nbm Exp $
+# $FreeBSD: ports/devel/tcl-memchan/Makefile,v 1.2 2000/10/25 11:57:17 jeh Exp $
 #
 
 PORTNAME=	memchan
@@ -40,10 +40,15 @@ DDIR=		${PREFIX}/lib/tcl${TCLV}/Trf
 do-install:
 	${MKDIR} ${PREFIX}/lib/tcl${TCLV}/memchan
 	${INSTALL_DATA} ${WRKSRC}/libmemchan.so.1 ${PREFIX}/lib/
-	${INSTALL_DATA} ${WRKSRC}/pkgIndex.tcl ${PREFIX}/lib/tcl${TCLV}/memchan
+	${SED} 's@%%PREFIX%%@${PREFIX}@g' < ${FILESDIR}/pkgIndex.tcl \
+		> ${PREFIX}/lib/tcl${TCLV}/memchan/pkgIndex.tcl
 .ifndef(NOPORTDOCS)
 	${MKDIR} ${PREFIX}/share/doc/memchan
 	${CP} -pR ${WRKSRC}/../doc/html/* ${PREFIX}/share/doc/memchan/
+
+PLIST_SUB+=	DOC=''
+.else
+PLIST_SUB+=	DOC='@comment '
 .endif
 
 .include <bsd.port.mk>
