@@ -2,14 +2,14 @@
 # Date created:			29 July 1998
 # Whom:				Joe Jih-Shian Lu <jslu@dns.ntu.edu.tw>
 #
-# $FreeBSD: ports/audio/xamp/Makefile,v 1.6 2000/01/27 11:06:52 reg Exp $
+# $FreeBSD: ports/audio/xamp/Makefile,v 1.7 2000/04/08 21:24:49 mharo Exp $
 #
 
 PORTNAME=	xamp
-PORTVERSION=	0.8-7
+PORTVERSION=	0.8.7
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.simcb.ru/pub/unix/x11/
-EXTRACT_SUFX=	.tgz
+DISTFILES=	xamp-0.8-7.tgz
 
 MAINTAINER=	ports@FreeBSD.org
 
