@@ -2,13 +2,13 @@
 # Date Created:			20 Feb 2000
 # Whom:				Kris Kennaway <kris@FreeBSD.org>
 #
-# $FreeBSD: ports/www/decss/Makefile,v 1.2 2000/02/22 07:55:08 kris Exp $
+# $FreeBSD: ports/www/decss/Makefile,v 1.3 2000/04/10 00:04:53 cpiazza Exp $
 #
 
 PORTNAME=	decss
 PORTVERSION= 	1.0
 CATEGORIES=	www perl5
-MASTER_SITES=	http://www.totse.com/DeCSS/
+MASTER_SITES=	http://www.pigdog.org/decss/
 DISTNAME=	${PORTNAME}
 
 MAINTAINER=	ports@FreeBSD.org
