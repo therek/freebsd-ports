@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.57 2000/08/21 07:23:48 knu Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.58 2000/09/06 15:08:32 sada Exp $
 #
 
     SUBDIR += aftp
@@ -9,6 +9,7 @@
     SUBDIR += bsvc
     SUBDIR += cpmemu
     SUBDIR += cpmtools
+    SUBDIR += dgen-sdl
     SUBDIR += dlx
     SUBDIR += fmsx
     SUBDIR += frodo
