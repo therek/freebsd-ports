@@ -3,7 +3,7 @@
 # Date created:				2 May 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.16 2001/02/14 05:42:43 lioux Exp $
+# $FreeBSD: ports/devel/libgnugetopt/Makefile,v 1.17 2001/02/19 07:24:23 obrien Exp $
 #
 
 #	Note that GCC contains the master copy of GNU's getopt in libiberty/
@@ -23,6 +23,7 @@ INSTALLS_SHLIB=	yes
 
 do-install:
 	@ ${INSTALL_DATA} ${WRKSRC}/getopt.h ${PREFIX}/include
+	@ ${INSTALL_DATA} ${WRKSRC}/libgnugetopt.a ${PREFIX}/lib
 	@ ${INSTALL_DATA} ${WRKSRC}/libgnugetopt.so.1 ${PREFIX}/lib
 	@ ${LN} -s ${PREFIX}/lib/libgnugetopt.so.1 ${PREFIX}/lib/libgnugetopt.so
 

@@ -1,4 +1,5 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/devel/libgnugetopt/pkg-plist,v 1.4 2000/11/22 00:21:50 obrien Exp $
 include/getopt.h
+lib/libgnugetopt.a
 lib/libgnugetopt.so
 lib/libgnugetopt.so.1
