@@ -2,7 +2,7 @@
 # Date created:				5 July 2001
 # Whom:					petef@FreeBSD.org
 #
-# $FreeBSD: ports/www/mdw/Makefile,v 1.1 2001/07/08 07:07:41 markp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mdw
@@ -12,7 +12,7 @@ MASTER_SITES=	http://redbrick.dcu.ie/~colmmacc/mdw/
 
 MAINTAINER=	petef@FreeBSD.org
 
-GNU_CONFIGURE=	yes
+USE_AUTOCONF=	yes
 
 MAN1=	mdw.1
 
