@@ -1,7 +1,7 @@
-@comment $FreeBSD: ports/security/opencdk/pkg-plist,v 1.3 2003/02/27 20:32:12 naddy Exp $
+@comment $FreeBSD: ports/security/opencdk/pkg-plist,v 1.5 2003/09/26 11:20:29 krion Exp $
 bin/opencdk-config
 include/opencdk.h
-lib/libopencdk.so.6
+lib/libopencdk.so.8
 lib/libopencdk.so
 lib/libopencdk.a
 %%PORTDOCS%%%%DOCSDIR%%/AUTHORS
