@@ -2,28 +2,22 @@
 # Date created:				6 November 1994
 # Whom:					jmz
 #
-# $FreeBSD: ports/textproc/ispell/Makefile,v 1.56 2001/04/30 21:06:56 jmz Exp $
+# $FreeBSD: ports/textproc/ispell/Makefile,v 1.57 2001/05/29 06:30:42 kris Exp $
 #
 
 PORTNAME?=	ispell
-PORTVERSION?=	3.1.20c
-PORTREVISION=	3
-CATEGORIES+=	textproc elisp
-MASTER_SITES=	ftp://ftp.cs.ucla.edu/pub/ispell-3.1/ \
-		ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
-DISTNAME=	ispell-3.1
+PORTVERSION?=	3.2.04
+PORTREVISION=	0
+CATEGORIES+=	textproc
+MASTER_SITES=	http://fmg-www.cs.ucla.edu/geoff/tars/
 
 MAINTAINER?=	jmz@FreeBSD.org
-PATCH_SITES=	ftp://ftp.kiarchive.ru/pub/unix/text/ispell/
-ISPELL_FILES=	ispell-3.1.20.tar.gz
-HTML_PATCH=	ispell-html-mode.patch
-DISTFILES=	${ISPELL_FILES}
-PATCHFILES=	${HTML_PATCH}
+ISPELL_FILES= 	ispell-3.2.04.tar.gz
 
-MAN1=		ispell.1 sq.1
+MAN1=		ispell.1
 MAN4=		ispell.4 english.4
 MLINKS=		ispell.1 buildhash.1 ispell.1 findaffix.1 ispell.1 \
-		munchlist.1 ispell.1 tryaffix.1 sq.1 unsq.1
+		munchlist.1 ispell.1 tryaffix.1
 
 EXTRACT_ONLY=	${ISPELL_FILES}
 EXTRA_DICT=
