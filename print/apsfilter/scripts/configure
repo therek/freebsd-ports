@@ -1,6 +1,6 @@
 #! /bin/sh
 
-# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.7 2000/03/02 17:40:14 andreas Exp $
+# $FreeBSD: ports/print/apsfilter/scripts/configure,v 1.8 2000/03/06 22:16:28 andreas Exp $
 
 if [ "$BATCH" != "yes" ]; then
 
@@ -64,7 +64,7 @@ while [ "$1" ]; do
 		echo "PAPERSIZE=a4"
 		;;
 	\"PS\")
-		echo RUN_DEPENDS+=gs:${PORTSDIR}/print/ghostscript55
+		echo RUN_DEPENDS+=gs:${PORTSDIR}/print/ghostscript6
 		;;
 	\"SAMBA\")
 		echo RUN_DEPENDS+=smbclient:${PORTSDIR}/net/samba
