@@ -3,7 +3,7 @@
 # Date created:			25 June 1997
 # Whom:				Carey Jones <mcj@acquiesce.org>
 #
-# $FreeBSD: ports/audio/mpg123/Makefile,v 1.20 2000/01/26 07:37:46 sumikawa Exp $
+# $FreeBSD: ports/audio/mpg123/Makefile,v 1.21 2000/01/28 07:49:36 green Exp $
 #
 
 DISTNAME=	mpg123-0.59r
@@ -14,7 +14,7 @@ MASTER_SITES=	http://www.mpg123.de/mpg123/ \
 		http://ftp.tu-clausthal.de/pub/unix/audio/mpg123/
 
 PATCH_SITES=	ftp://ftp.kame.net/pub/kame/misc/
-PATCHFILES=	mpg123-059r-v6-20000111.diff.gz
+PATCHFILES=	mpg123-059r-v6-20000217.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	jkoshy@freebsd.org
