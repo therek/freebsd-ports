@@ -2,7 +2,7 @@
 # Date created:				24 Mar 2000
 # Whom:					erikhb@bgnett.no
 #
-# $FreeBSD: ports/databases/libiodbc/Makefile,v 1.1 2000/05/29 08:23:01 will Exp $
+# $FreeBSD$
 #
 # Note:  The location of ${INIDIR} and the installed name of the "odbctest"
 #        binary were chosen such that this port does not conflict with
@@ -13,7 +13,7 @@ PORTVERSION=	3.0.5
 CATEGORIES=	databases
 MASTER_SITES=	http://www.iodbc.org/dist/
 
-MAINTAINER=	erikhb@bgnett.no
+MAINTAINER=	ebakke@trolltech.com
 
 USE_LIBTOOL=	yes
 USE_GMAKE=	yes
