@@ -2,7 +2,7 @@
 # Date created:			3 July 1999
 # Whom:				Espen Skoglund <esk@ira.uka.de>
 #
-# $FreeBSD: ports/audio/xmms/Makefile,v 1.28 2001/01/04 20:43:26 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	xmms
@@ -11,7 +11,7 @@ PORTREVISION=	1
 CATEGORIES=	audio
 MASTER_SITES=	ftp://ftp.xmms.org/xmms/1.2.x/ 
 
-MAINTAINER=	esk@ira.uka.de
+MAINTAINER?=	esk@ira.uka.de
 
 LIB_DEPENDS=	xml.5:${PORTSDIR}/textproc/libxml
 
