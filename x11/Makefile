@@ -1,4 +1,4 @@
-# $FreeBSD$
+# $FreeBSD: ports/x11/Makefile,v 1.330 2001/08/20 15:58:53 sobomax Exp $
 #
 
     SUBDIR += 9term
@@ -111,6 +111,7 @@
     SUBDIR += xmangekyou
     SUBDIR += xmascot
     SUBDIR += xmold
+    SUBDIR += xmotd
     SUBDIR += xmove
     SUBDIR += xmsg
     SUBDIR += xmx
