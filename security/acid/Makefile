@@ -2,20 +2,20 @@
 # Date created:		Mon Sep 25 16:05:01 CST 2000
 # Whom:			Foxfair Hu <foxfair@FreeBSD.org>
 #
-# $FreeBSD: ports/security/acid/Makefile,v 1.1 2000/09/26 02:57:57 foxfair Exp $
+# $FreeBSD: ports/security/acid/Makefile,v 1.2 2001/01/21 15:40:44 dirk Exp $
 #
 
 PORTNAME=	acid
-PORTVERSION=	0.9.4
+PORTVERSION=	0.9.6b1
 CATEGORIES=	security
-MASTER_SITES=	http://www.cert.org/kb/acid/
-DISTFILES=	acid.0.9.4.tar.gz
+MASTER_SITES=	http://www.andrew.cmu.edu/~rdanyliw/snort/
+DISTFILES=	acid-0.9.6b1.tar.gz
 WRKSRC=		${WRKDIR}/${PORTNAME}
 
 MAINTAINER=	foxfair@FreeBSD.org
 
 RUN_DEPENDS=	${LOCALBASE}/sbin/httpd:${PORTSDIR}/www/apache13 \
-		${LOCALBASE}/libexec/apache/libphp3.so:${PORTSDIR}/www/mod_php3 \
+		${LOCALBASE}/libexec/apache/libphp4.so:${PORTSDIR}/www/mod_php4 \
 		${LOCALBASE}/libexec/mysqld:${PORTSDIR}/databases/mysql323-server \
 		${LOCALBASE}/bin/snort:${PORTSDIR}/security/snort
 
