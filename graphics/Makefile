@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.304 2001/04/17 18:07:30 will Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.305 2001/04/24 17:13:18 takawata Exp $
 #
 
     SUBDIR += 4va
@@ -123,6 +123,7 @@
     SUBDIR += liblug
     SUBDIR += libmng
     SUBDIR += libmorph
+    SUBDIR += librsvg
     SUBDIR += libungif
     SUBDIR += libwmf
     SUBDIR += linplasma
