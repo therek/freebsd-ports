@@ -3,7 +3,7 @@
 # Date created:				19 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.12 1999/08/25 05:55:21 obrien Exp $
+# $FreeBSD: ports/ftp/pavuk/Makefile,v 1.13 2000/01/11 00:20:07 cpiazza Exp $
 #
 
 DISTNAME=		pavuk-0.9pl18
@@ -18,7 +18,7 @@ EXTRACT_SUFX=		.tgz
 
 MAINTAINER=		andy@icc.surw.chel.su
 
-GNU_CONFIGURE=		yes
+USE_AUTOCONF=		yes
 
 .if defined(NO_X11)
 CONFIGURE_ARGS=		--disable-gtk
@@ -28,6 +28,19 @@ LIB_DEPENDS=		Xpm.4:${PORTSDIR}/graphics/xpm
 .endif
 
 USE_GMAKE=		yes
+
+.if defined(USE_SSL)
+USE_OPENSSL=	RSA
+.else
+CONFIGURE_ARGS+=	--disable-ssl
+.endif
+
+.include <bsd.port.pre.mk>
+
+.if defined(OPENSSL_RSAREF)
+CONFIGURE_ENV+=		EXTRA_SSL_LIBS="-L${OPENSSLLIB} -lRSAglue -L${LOCALBASE}/lib -lrsaref" \
+			OPENSSLLIB=${OPENSSLLIB}
+.endif
 
 MAN1=			pavuk.1
 
@@ -51,4 +64,4 @@ do-install:
 .endfor
 .endif
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
