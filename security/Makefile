@@ -1,7 +1,8 @@
-# $FreeBSD: ports/security/Makefile,v 1.112 2000/07/13 01:15:50 asami Exp $
+# $FreeBSD: ports/security/Makefile,v 1.113 2000/07/13 15:12:25 kevlo Exp $
 #
 
     SUBDIR += aafid2
+    SUBDIR += aide
     SUBDIR += bjorb
     SUBDIR += bro
     SUBDIR += bugs
