@@ -3,7 +3,7 @@
 # Date created:		25 May 1998
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/mail/qmail/Makefile,v 1.13 2000/01/28 00:34:08 jedgar Exp $
+# $FreeBSD: ports/mail/qmail/Makefile,v 1.14 2000/02/25 22:14:27 cpiazza Exp $
 #
 
 DISTNAME=	qmail-1.03
@@ -78,9 +78,9 @@ BOOTFILES=	${WRKSRC}/home ${WRKSRC}/home+df ${WRKSRC}/proc \
 # Supplied by Stuart Henderson <stuart@internationalschool.co.uk>
 BOOTFILES+=	${FILESDIR}/maildir
 
-CONFIGUREFILES=	${WRKSRC}/install ${WRKSRC}/dnsfq ${WRKSRC}/hostname \
-		${WRKSRC}/dnsip ${WRKSRC}/ipmeprint ${WRKSRC}/dnsptr \
-		${WRKSRC}/config-fast
+CONFIGUREPROGS=	${WRKSRC}/install ${WRKSRC}/dnsfq ${WRKSRC}/hostname \
+		${WRKSRC}/dnsip ${WRKSRC}/ipmeprint ${WRKSRC}/dnsptr
+CONFIGUREFILES=	${WRKSRC}/config ${WRKSRC}/config-fast
 
 .if (${PREFIX} == "/usr/local")
 DOCDIR=	share/doc/qmail
@@ -106,17 +106,17 @@ do-install:
 	@PKG_PREFIX=${PREFIX} ${PERL5} ${PKGDIR}/INSTALL
 	@${MKDIR} ${PREFIX}/${DOCDIR} ${PREFIX}/configure
 	@cd ${WRKSRC} ; ./install
-	@${INSTALL_PROGRAM} ${CONFIGUREFILES} ${PREFIX}/configure
-	@${INSTALL_SCRIPT} ${WRKSRC}/config ${PREFIX}/configure
-	@${INSTALL_SCRIPT} ${BOOTFILES} ${PREFIX}/boot
+	${INSTALL_PROGRAM} ${CONFIGUREPROGS} ${PREFIX}/configure
+	${INSTALL_SCRIPT} ${CONFIGUREFILES} ${PREFIX}/configure
+	${INSTALL_SCRIPT} ${BOOTFILES} ${PREFIX}/boot
 .for i in 1 5 7 8
 	@${MKDIR} ${PREFIX}/man/man$i
 .for j in ${MAN${i}}
-	@${INSTALL_MAN} ${WRKSRC}/$j ${PREFIX}/man/man${i}
+	${INSTALL_MAN} ${WRKSRC}/$j ${PREFIX}/man/man${i}
 .endfor
 .endfor
 .if !defined(NOPORTDOCS)
-	@${INSTALL_DATA} ${DOCFILES} ${PREFIX}/${DOCDIR}
+	${INSTALL_DATA} ${DOCFILES} ${PREFIX}/${DOCDIR}
 .endif
 .if defined(PACKAGE_BUILDING)
 	@${ECHO} "FreeBSD Binary package QMail installation" \
@@ -129,7 +129,7 @@ do-install:
 	@${TOUCH} ${PREFIX}/alias/.qmail-${i}
 .endfor
 	@# This is not part of qmail proper, hence the 2nd class citizenship
-	@${INSTALL_SCRIPT} ${FILESDIR}/mkaliasdir ${PREFIX}/${DOCDIR}
+	${INSTALL_SCRIPT} ${FILESDIR}/mkaliasdir ${PREFIX}/${DOCDIR}
 	@cd ${PREFIX}/configure ; ./config
 	@${MKDIR} /usr/local/etc/rc.d
 	@${LN} -sf ${PREFIX}/rc /usr/local/etc/rc.d/qmail.sh
