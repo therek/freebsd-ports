@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.1 2003/06/07 23:00:39 nork Exp $
+# $FreeBSD: ports/devel/pear-PEAR/Makefile.common,v 1.2 2003/08/25 01:12:22 edwin Exp $
 
 # Common code for pear- ports.
 
@@ -21,8 +21,8 @@ PEARDIR=	${PHP_BASE}/${LPEARDIR}
 LPKGREGDIR=	${LPEARDIR}/packages/${PKGNAME}
 PKGREGDIR=	${PHP_BASE}/${LPKGREGDIR}
 PLIST_SUB=	PEARDIR=${LPEARDIR} PKGREGDIR=${LPKGREGDIR}
-PKGINSTALL=	${.CURDIR}/../../devel/pear-PEAR/pkg-install
-PKGDEINSTALL=	${.CURDIR}/../../devel/pear-PEAR/pkg-deinstall
+PKGINSTALL=	${PORTSDIR}/devel/pear-PEAR/pkg-install
+PKGDEINSTALL=	${PORTSDIR}/devel/pear-PEAR/pkg-deinstall
 
 DOCSDIR=	${PEARDIR}/docs/${PORTNAME}
 
