@@ -2,7 +2,7 @@
 # Date created:		12 Aug 1999
 # Whom:			Will Andrews <andrews@technologist.com>
 #
-# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.13 2001/01/16 17:30:20 sobomax Exp $
+# $FreeBSD: ports/devel/kdevelop/Makefile,v 1.14 2001/01/28 03:56:11 ijliao Exp $
 #
 
 PORTNAME=	kdevelop
@@ -18,7 +18,7 @@ BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	kdeui.3:${PORTSDIR}/x11/kdelibs11
 .if defined(WITH_OPTIONAL_DEPENDS)
 RUN_DEPENDS+=	autoconf:${PORTSDIR}/devel/autoconf \
-		automake:${PORTSDIR}/deve/automake \
+		automake:${PORTSDIR}/devel/automake \
 		kdbg:${PORTSDIR}/devel/kdbg \
 		${LOCALBASE}/share/doc/HTML/en/kdelibs/kdecore/index.html:${PORTSDIR}/devel/kdelibdocs \
 		ktranslator:${PORTSDIR}/devel/ktranslator \
