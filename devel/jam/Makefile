@@ -2,7 +2,7 @@
 # Date created:		10 July 1998
 # Whom:			Jeffrey Hsu <hsu@freebsd.org>
 #
-# $FreeBSD: ports/devel/jam/Makefile,v 1.4 1999/10/25 20:48:17 mharo Exp $
+# $FreeBSD: ports/devel/jam/Makefile,v 1.5 2000/04/11 21:28:18 mharo Exp $
 #
 
 PORTNAME=	jam
@@ -10,7 +10,7 @@ PORTVERSION=	2.2
 CATEGORIES=	devel
 MASTER_SITES=	ftp://ftp1.perforce.com/pub/jam/
 
-MAINTAINER=	hsu@freebsd.org
+MAINTAINER=	ports@freebsd.org
 
 HTML_DOCS_DIR=	${PREFIX}/share/doc/jam
 HTML_DOCS=	Jam.html Jambase.html Jamfile.html Jamlang.html

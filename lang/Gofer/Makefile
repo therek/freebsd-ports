@@ -2,7 +2,7 @@
 # Date created:         Wed Feb  1 01:51:59 PST 1995
 # Whom:                 hsu
 #
-# $FreeBSD: ports/lang/Gofer/Makefile,v 1.11 1999/08/25 06:34:11 obrien Exp $
+# $FreeBSD: ports/lang/Gofer/Makefile,v 1.12 2000/04/12 06:17:40 obrien Exp $
 #
 
 PORTNAME=	gofer
@@ -11,7 +11,7 @@ CATEGORIES=	lang
 MASTER_SITES=	ftp://cs.nott.ac.uk/nott-fp/languages/haskell/gofer/
 DISTNAME=	gofer230a
 
-MAINTAINER=	hsu@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 WRKSRC=		${WRKDIR}/src
 LIBDIR=		${PREFIX}/lib/Gofer
