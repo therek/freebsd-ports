@@ -2,14 +2,15 @@
 # Date created:         5 Jan 1997
 # Whom:                 xaa@stack.nl
 #
-# $FreeBSD: ports/games/xboard/Makefile,v 1.23 2000/04/14 12:27:05 asami Exp $
+# $FreeBSD: ports/games/xboard/Makefile,v 1.24 2000/10/01 15:16:23 kevlo Exp $
 #
 
 PORTNAME=       xboard
-PORTVERSION=	4.1.0
+PORTVERSION=	4.2.0
 CATEGORIES=	games
 MASTER_SITES=	ftp://ftp.gnu.org/gnu/xboard/ \
 		http://www.research.compaq.com/SRC/personal/Tim_Mann/xboard/
+DISTNAME=	xboard-4.2.0beta
 
 MAINTAINER=	xaa+ports@madison-gurkha.com
 
