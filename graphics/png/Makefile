@@ -2,11 +2,12 @@
 # Date created:         5 Dec 1995
 # Whom:                 ache
 #
-# $FreeBSD: ports/graphics/png/Makefile,v 1.43 2001/08/08 18:23:36 ache Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	png
 PORTVERSION=	1.2.0
+PORTREVISION=	1
 CATEGORIES=	graphics
 MASTER_SITES=	http://www.libpng.org/pub/png/src/ \
 		ftp://swrinde.nde.swri.edu/pub/png/src/ \
