@@ -2,7 +2,7 @@
 # Date created:		6 Mar 1997
 # Whom:			Jun-ichiro itojun Itoh <itojun@itojun.org>
 #
-# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.15 2000/04/14 06:20:32 asami Exp $
+# $FreeBSD: ports/editors/nvi-m17n/Makefile,v 1.16 2000/04/20 10:39:59 mharo Exp $
 #
 
 PORTNAME=	nvi
@@ -27,10 +27,17 @@ PATCH_DIST_ARGS=-d ${WRKSRC}/.. --forward --quiet -E -p1 -f
 CONFIGURE_ENV=	OPTFLAG='-D_PATH_SYSEXRC=\"${PREFIX}/etc/vi.exrc\"'
 CONFIGURE_ARGS=	--enable-multibyte --program-prefix=n
 
+.include <bsd.port.pre.mk>
+
+.if ${OSVERSION} >= 400000
+post-extract:
+	${RM} -f ${WRKSRC}/../include/sys/queue.h
+.endif
+
 post-install:
 	@${CP} ${WRKSRC}/../docs.m17n/README.english \
 		${PREFIX}/share/vi/
 	@${CP} ${WRKSRC}/../docs.m17n/README.japanese \
 		${PREFIX}/share/vi/
 
-.include <bsd.port.mk>
+.include <bsd.port.post.mk>
