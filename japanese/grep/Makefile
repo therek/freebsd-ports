@@ -2,11 +2,12 @@
 # Date created:		2 April 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/grep/Makefile,v 1.14 2000/01/29 21:36:31 steve Exp $
+# $FreeBSD: ports/japanese/grep/Makefile,v 1.15 2000/04/11 14:13:47 knu Exp $
 #
 
 PORTNAME=	grep
 PORTVERSION=	2.0
+PORTREVISION=	1
 CATEGORIES=	japanese textproc
 MASTER_SITES=	${MASTER_SITE_GNU}
 MASTER_SITE_SUBDIR=	grep
@@ -18,8 +19,9 @@ PATCH_DIST_STRIP=	-p1
 MAINTAINER=	ports@FreeBSD.org
 
 GNU_CONFIGURE=	yes
+MAKE_ARGS=	binprefix=j
 
-MAN1=		grep.1
+MAN1=		jgrep.1
 
 post-install:
 .if !defined(NOPORTDOCS)
