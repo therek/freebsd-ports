@@ -2,11 +2,11 @@
 # Date created:        26 January 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.10 2000/09/16 13:33:58 nakai Exp $
+# $FreeBSD: ports/x11-wm/amaterus/Makefile,v 1.11 2000/10/05 06:42:56 reg Exp $
 #
 
 PORTNAME=	amaterus
-PORTVERSION= 	0.32.9
+PORTVERSION= 	0.33.2
 CATEGORIES=	x11-wm
 MASTER_SITES=	http://www.taiyaki.org/src/
 
