@@ -2,11 +2,11 @@
 # Date created:        12 September 2000
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/x11/gdm/Makefile,v 1.11 2001/06/05 05:00:50 ade Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gdm
-PORTVERSION=	2.2.3.2
+PORTVERSION=	2.2.4.1
 CATEGORIES=	x11 gnome
 MASTER_SITES=	${MASTER_SITE_GNOME}
 MASTER_SITE_SUBDIR=		stable/sources/gdm
@@ -20,6 +20,8 @@ USE_LIBTOOL=	yes
 CONFIGURE_ENV=	CPPFLAGS="-I${LOCALBASE}/include" \
 		LIBS="-L${LOCALBASE}/lib"
 
+GDMDIR?=	${PREFIX}/etc/gdm
+
 pre-fetch:
 .if !defined(BATCH) && !defined(PACKAGE_BUILDING)
 	${SH} ${PKGINSTALL} ${PKGNAME} PRE-INSTALL
@@ -32,8 +34,14 @@ pre-patch:
 		's|\$\(datadir\)/gnome/|\$\(datadir\)/|g ; \
 		 s|\$\(datadir\)/locale|\$\(prefix\)/share/locale|g'
 
+.if !defined(BATCH) && !defined(PACKAGE_BUILDING)
+pre-install:
+	@${SH} ${PKGREQ} ${PKGNAME} INSTALL
+.endif
+
 post-install:
-	@${INSTALL_SCRIPT} ${WRKSRC}/config/gnomerc ${PREFIX}/etc/gdm/
+	@${INSTALL_SCRIPT} ${WRKSRC}/config/gnomerc ${PREFIX}/etc/gdm
+	@${CHOWN} -R 91:91 ${PREFIX}/share/gnome/gdm ${PREFIX}/etc/gdm
 	@${CAT} ${PKGMESSAGE}
 
 .include <bsd.port.mk>
