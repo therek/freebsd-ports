@@ -2,11 +2,11 @@
 # Date created:			4 Aug 1998
 # Whom:				Motoyuki Kasahara <m-kasahr@sra.co.jp>
 #
-# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.17 2000/03/30 08:56:42 knu Exp $
+# $FreeBSD: ports/japanese/ndtpd/Makefile,v 1.18 2000/04/11 14:15:29 knu Exp $
 #
 
 PORTNAME=	ndtpd
-PORTVERSION=	2.3.7
+PORTVERSION=	2.3.8
 CATEGORIES=	japanese
 MASTER_SITES=	ftp://ftp.sra.co.jp/pub/net/ndtp/ndtpd/
 
