@@ -2,15 +2,16 @@
 # Date created:		04 Aug 2000
 # Whom:			Mario S F Ferreira <lioux@linf.unb.br> et al.
 #
-# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.4 2001/01/16 17:30:28 sobomax Exp $
+# $FreeBSD: ports/emulators/vgb-bin/Makefile,v 1.5 2001/01/16 19:08:33 will Exp $
 #
 
 PORTNAME=	vgb
-PORTVERSION=	20
+PORTVERSION=	2.1
+PORTEPOCH=	1
 CATEGORIES=	emulators
 MASTER_SITES=	http://www.komkon.org/fms/VGB/
 PKGNAMESUFFIX=	-bin
-DISTNAME=	VGB${PORTVERSION}-FreeBSD-80x86-bin
+DISTNAME=	VGB${PORTVERSION:S/.//}-FreeBSD-80x86-bin
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	lioux@FreeBSD.org
