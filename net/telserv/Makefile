@@ -3,14 +3,14 @@
 # Date created:			  Mon Feb 03, 1998
 # Whom:				  David O'Brien (obrien@NUXI.com)
 #
-# $FreeBSD: ports/net/telserv/Makefile,v 1.8 2000/04/09 18:13:43 cpiazza Exp $
+# $FreeBSD: ports/net/telserv/Makefile,v 1.9 2000/06/07 03:09:25 obrien Exp $
 #
 
 PORTNAME=	telserv
 PORTVERSION=	1.0
 CATEGORIES=	net security
 MASTER_SITES=	http://www.eleves.ens.fr:8080/home/espel/  \
-		ftp://ftp.freebsd.org/pub/FreeBSD/local-distfiles/obrien/
+		ftp://ftp.freebsd.org/pub/FreeBSD/ports/local-distfiles/obrien/
 DISTNAME=	telserv
 EXTRACT_SUFX=	.c
 
