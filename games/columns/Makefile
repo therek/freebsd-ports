@@ -3,7 +3,7 @@
 # Date created:				26 August 1999
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/columns/Makefile,v 1.3 2000/02/03 04:54:20 cpiazza Exp $
+# $FreeBSD: ports/games/columns/Makefile,v 1.4 2000/03/29 07:18:21 kris Exp $
 #
 
 DISTNAME=	columns-1.1
@@ -14,21 +14,19 @@ MAINTAINER=	ports@FreeBSD.org
 
 LIB_DEPENDS=	SDL-1.0.2:${PORTSDIR}/devel/sdl
 
-ALL_TARGET=
+ALL_TARGET=	# empty
 
 USE_X_PREFIX=	yes
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/columns ${PREFIX}/bin
-	@ ${MKDIR} ${PREFIX}/share/columns
-	@ ${INSTALL_DATA} ${WRKSRC}/*.bmp ${PREFIX}/share/columns
-	@ ${INSTALL_DATA} ${WRKSRC}/*.ofn ${PREFIX}/share/columns
-	@ ${INSTALL_DATA} ${WRKSRC}/*.wav ${PREFIX}/share/columns
-
-post-install:
+	${INSTALL_PROGRAM} ${WRKSRC}/columns ${PREFIX}/bin
+	@${MKDIR} ${PREFIX}/share/columns
+	${INSTALL_DATA} ${WRKSRC}/*.bmp ${PREFIX}/share/columns
+	${INSTALL_DATA} ${WRKSRC}/*.ofn ${PREFIX}/share/columns
+	${INSTALL_DATA} ${WRKSRC}/*.wav ${PREFIX}/share/columns
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/columns
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/columns
+	@${MKDIR} ${PREFIX}/share/doc/columns
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/columns
 .endif
 
 .include <bsd.port.mk>

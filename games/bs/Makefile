@@ -3,20 +3,20 @@
 # Date created:				11 May 1997
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/bs/Makefile,v 1.3 1999/12/24 04:57:49 steve Exp $
+# $FreeBSD: ports/games/bs/Makefile,v 1.4 2000/03/29 07:17:01 kris Exp $
 #
 
-DISTNAME=		bs-2.2
-CATEGORIES=		games
-MASTER_SITES=		ftp://locke.ccil.org/pub/esr/
+DISTNAME=	bs-2.2
+CATEGORIES=	games
+MASTER_SITES=	ftp://locke.ccil.org/pub/esr/
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-ALL_TARGET=
-MAN6=			bs.6
+ALL_TARGET=	# empty
+MAN6=		bs.6
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/bs ${PREFIX}/bin/bs
-	@ ${INSTALL_MAN} ${WRKSRC}/bs.6 ${PREFIX}/man/man6
+	${INSTALL_PROGRAM} ${WRKSRC}/bs ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/bs.6 ${PREFIX}/man/man6
 
 .include <bsd.port.mk>

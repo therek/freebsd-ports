@@ -3,28 +3,30 @@
 # Date created:				17 March 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/xvier/Makefile,v 1.3 1999/08/25 06:06:26 obrien Exp $
+# $FreeBSD: ports/games/xvier/Makefile,v 1.4 2000/03/29 07:17:16 kris Exp $
 #
 
-DISTNAME=		xvier
-PKGNAME=		xvier-1.0
-CATEGORIES=		games
-MASTER_SITES=		${MASTER_SITE_SUNSITE}
+DISTNAME=	xvier
+PKGNAME=	xvier-1.0
+CATEGORIES=	games
+MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
-EXTRACT_SUFX=		.tar.Z
+EXTRACT_SUFX=	.tar.Z
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-WRKSRC=			${WRKDIR}/${PKGNAME}
-USE_IMAKE=		yes
-MAN6=			xvier.6
-MANCOMPRESSED=		no
+WRKSRC=		${WRKDIR}/${PKGNAME}
+USE_IMAKE=	yes
+MAN6=		xvier.6
+MANCOMPRESSED=	no
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/xvier ${PREFIX}/bin
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/xvier_prog ${PREFIX}/libexec
-	@ ${INSTALL_DATA} ${WRKSRC}/xvier.man ${PREFIX}/man/man6/xvier.6
-	@ ${MKDIR} ${PREFIX}/share/doc/xvier
-	@ ${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xvier
+	${INSTALL_PROGRAM} ${WRKSRC}/xvier ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/xvier_prog ${PREFIX}/libexec
+	${INSTALL_MAN} ${WRKSRC}/xvier.man ${PREFIX}/man/man6/xvier.6
+.if !defined(NOPORTDOCS)
+	@${MKDIR} ${PREFIX}/share/doc/xvier
+	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/xvier
+.endif
 
 .include <bsd.port.mk>

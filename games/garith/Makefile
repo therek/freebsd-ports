@@ -3,7 +3,7 @@
 # Date created:				5 August 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/garith/Makefile,v 1.3 1999/08/25 06:03:28 obrien Exp $
+# $FreeBSD: ports/games/garith/Makefile,v 1.4 2000/03/29 07:18:08 kris Exp $
 #
 
 DISTNAME=	garith-2.1
@@ -12,18 +12,21 @@ MASTER_SITES=	http://www.cnm-vra.com/micah/garith/
 
 MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=	gdk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-ALL_TARGET=
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
+ALL_TARGET=	# empty
 USE_X_PREFIX=	yes
+MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
 WRKSRC=		${WRKDIR}/garith
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/garith ${PREFIX}/bin
+	${INSTALL_PROGRAM} ${WRKSRC}/garith ${PREFIX}/bin
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/garith
+	@${MKDIR} ${PREFIX}/share/doc/garith
 .for file in BUGS COPYING HISTORY README TODO
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/garith
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/garith
 .endfor
 .endif
 

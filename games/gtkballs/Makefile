@@ -3,33 +3,36 @@
 # Date created:				11 November 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/gtkballs/Makefile,v 1.6 1999/08/25 06:03:41 obrien Exp $
+# $FreeBSD: ports/games/gtkballs/Makefile,v 1.7 2000/03/29 07:18:03 kris Exp $
 #
 
-DISTNAME=		gtkballs-1.04
-CATEGORIES=		games
-MASTER_SITES=		ftp://lucifer.dorms.spbu.ru/pub/Linux/games/ \
-			http://lucifer.dorms.spbu.ru/gtkballs/ \
-			${MASTER_SITE_SUNSITE}
+DISTNAME=	gtkballs-1.04
+CATEGORIES=	games
+MASTER_SITES=	ftp://lucifer.dorms.spbu.ru/pub/Linux/games/ \
+		http://lucifer.dorms.spbu.ru/gtkballs/ \
+		${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	games/strategy
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-LIB_DEPENDS=		gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
+LIB_DEPENDS=	gtk12.2:${PORTSDIR}/x11-toolkits/gtk12
 
-MAN6=			gtkballs.6
+GTK_CONFIG?=	${X11BASE}/bin/gtk12-config
+
+MAKE_ENV=	GTK_CONFIG="${GTK_CONFIG}"
+MAN6=		gtkballs.6
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/gtkballs ${PREFIX}/bin
-	@ ${INSTALL_MAN} ${WRKSRC}/gtkballs.6 ${PREFIX}/man/man6
-	@ ${MKDIR} ${PREFIX}/share/gtkballs
-	@ ${INSTALL_DATA} ${WRKSRC}/gtkballs-data/*.xpm ${PREFIX}/share/gtkballs
-	@ ${INSTALL_DATA} ${WRKSRC}/score ${PREFIX}/share/gtkballs/score
-	@ ${CHMOD} a+rw ${PREFIX}/share/gtkballs/score
+	${INSTALL_PROGRAM} ${WRKSRC}/gtkballs ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/gtkballs.6 ${PREFIX}/man/man6
+	@${MKDIR} ${PREFIX}/share/gtkballs
+	${INSTALL_DATA} ${WRKSRC}/gtkballs-data/*.xpm ${PREFIX}/share/gtkballs
+	${INSTALL_DATA} ${WRKSRC}/score ${PREFIX}/share/gtkballs/score
+	@${CHMOD} a+rw ${PREFIX}/share/gtkballs/score
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/gtkballs
-.for file in COPYING README README.russian TODO
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gtkballs
+	@${MKDIR} ${PREFIX}/share/doc/gtkballs
+.for file in README README.russian TODO
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/gtkballs
 .endfor
 .endif
 

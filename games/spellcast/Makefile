@@ -3,27 +3,27 @@
 # Date created:				28 June 1998
 # Whom:					Andrey Zakhvatov
 #
-# $FreeBSD: ports/games/spellcast/Makefile,v 1.4 1999/08/25 06:04:27 obrien Exp $
+# $FreeBSD: ports/games/spellcast/Makefile,v 1.5 2000/03/29 07:17:59 kris Exp $
 #
 
-DISTNAME=		spellcast-1.1
-CATEGORIES=		games
-MASTER_SITES=		http://www.redestb.es/personal/ragnar/ \
-			${MASTER_SITE_SUNSITE}
+DISTNAME=	spellcast-1.1
+CATEGORIES=	games
+MASTER_SITES=	${MASTER_SITE_SUNSITE} \
+		http://www.macula.net/lightside/
 MASTER_SITE_SUBDIR=	games/multiplayer
 
-MAINTAINER=		ports@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
-USE_X_PREFIX=		yes
-MAN6=			spellcast.6
+USE_X_PREFIX=	yes
+MAN6=		spellcast.6
 
 do-install:
-	@ ${INSTALL_PROGRAM} ${WRKSRC}/spellcast ${PREFIX}/bin
-	@ ${INSTALL_MAN} ${WRKSRC}/spellcast.6 ${PREFIX}/man/man6
+	${INSTALL_PROGRAM} ${WRKSRC}/spellcast ${PREFIX}/bin
+	${INSTALL_MAN} ${WRKSRC}/spellcast.6 ${PREFIX}/man/man6
 .if !defined(NOPORTDOCS)
-	@ ${MKDIR} ${PREFIX}/share/doc/spellcast
-.for file in License README.1 README.2 spelllist.ps
-	@ ${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/spellcast
+	@${MKDIR} ${PREFIX}/share/doc/spellcast
+.for file in README.1 README.2 spelllist.ps
+	${INSTALL_DATA} ${WRKSRC}/${file} ${PREFIX}/share/doc/spellcast
 .endfor
 .endif
 
