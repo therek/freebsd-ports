@@ -1,4 +1,4 @@
-# $FreeBSD: ports/x11-toolkits/Makefile,v 1.122 2001/02/23 18:54:51 knu Exp $
+# $FreeBSD: ports/x11-toolkits/Makefile,v 1.123 2001/03/06 14:13:50 knu Exp $
 #
 
     SUBDIR += FWF
@@ -58,6 +58,7 @@
     SUBDIR += p5-GdkPixbuf
     SUBDIR += p5-Glade
     SUBDIR += p5-Gnome
+    SUBDIR += p5-GnomeApplet
     SUBDIR += p5-Gtk
     SUBDIR += p5-GtkGLArea
     SUBDIR += p5-GtkXmHTML
