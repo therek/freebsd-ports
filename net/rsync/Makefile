@@ -3,7 +3,7 @@
 # Date created:			  Sat Aug 3, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/net/rsync/Makefile,v 1.48 2000/09/08 20:15:03 obrien Exp $
+# $FreeBSD: ports/net/rsync/Makefile,v 1.49 2000/09/13 20:02:10 sumikawa Exp $
 #
 
 PORTNAME=	rsync
@@ -20,8 +20,6 @@ PATCHFILES=	rsync-246-v6-20000907.diff.gz
 PATCH_DIST_STRIP=	-p1
 
 MAINTAINER=	obrien@FreeBSD.org
-
-Y2K=		http://rsync.samba.org/rsync/y2k.html
 
 GNU_CONFIGURE=	yes
 

@@ -3,7 +3,7 @@
 # Date created:				03 Mar 1998
 # Whom:					David O'Brien <obrien@NUXI.com>
 #
-# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.23 2000/03/22 00:26:56 obrien Exp $
+# $FreeBSD: ports/lang/glibstdc++28/Makefile,v 1.24 2000/04/12 06:18:43 obrien Exp $
 #
 
 PORTNAME=	glibstdc++
@@ -21,8 +21,6 @@ RUN_DEPENDS=	gcc28:${PORTSDIR}/lang/gcc28 \
 		g++28:${PORTSDIR}/lang/gcc28
 
 NO_CDROM=	'old version, not worth the cost in real estate'
-
-Y2K=		http://www.gnu.org/software/year2000.html
 
 .include <bsd.port.pre.mk>
 

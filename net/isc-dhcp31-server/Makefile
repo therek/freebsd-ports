@@ -3,7 +3,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.45 2000/12/02 08:49:48 obrien Exp $
+# $FreeBSD: ports/net/isc-dhcp3/Makefile,v 1.46 2000/12/13 08:26:15 obrien Exp $
 #
 
 PORTNAME=	isc-dhcp3
@@ -20,7 +20,6 @@ USE_FACILITY=	${_USE_FACILITY}
 .else
 USE_FACILITY=	DAEMON
 .endif
-Y2K=		http://www.isc.org/y2k.html
 
 HAS_CONFIGURE=	yes
 

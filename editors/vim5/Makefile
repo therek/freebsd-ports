@@ -3,7 +3,7 @@
 # Date created:			  Sat June 29, 1996
 # Whom:				  David O'Brien (obrien@cs.ucdavis.edu)
 #
-# $FreeBSD: ports/editors/vim5/Makefile,v 1.92 2000/11/29 16:58:21 obrien Exp $
+# $FreeBSD: ports/editors/vim5/Makefile,v 1.93 2000/12/05 17:25:44 obrien Exp $
 #
 
 PORTNAME?=	vim
@@ -27,7 +27,6 @@ PATCHFILES+=	5.7.0${p}
 
 MAINTAINER=	obrien@FreeBSD.org
 
-Y2K=		http://www.vim.org/y2k.html
 SLAVEDIRS=	editors/vim-lite
 
 .if defined(PACKAGE_BUILDING) && !defined(LITE)
