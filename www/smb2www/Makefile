@@ -2,11 +2,12 @@
 # Date created:			  Mar 25 2001
 # Whom:				  Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/www/smb2www/Makefile,v 1.1 2001/04/07 06:29:19 will Exp $
 #
 
 PORTNAME=	smb2www
 PORTVERSION=	0.0.980804
+PORTREVISION=	1
 CATEGORIES=	www
 MASTER_SITES=	http://us1.samba.org/samba/smb2www/ \
 		http://us2.samba.org/samba/smb2www/ \
