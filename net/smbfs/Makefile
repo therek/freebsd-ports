@@ -2,7 +2,7 @@
 # Date created:				2th Dec 2000
 # Whom:					Jaedoc Lee <tokky@fdns.org>
 #
-# $FreeBSD: ports/net/smbfs/Makefile,v 1.6 2001/04/17 01:43:51 bp Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	smbfs
@@ -28,6 +28,10 @@ BROKEN=		"OS versions prior to 400000 is not supported"
 PLIST_SUB=	KMODDIR=${KMODDIR}
 .else
 PLIST_SUB=	KMODDIR="@comment "
+.endif
+
+.if ${OSVERSION} > 500027
+BROKEN=		"OS versions subsequent to 500027 include smbfs"
 .endif
 
 .if defined(SMP_SUPPORT)
