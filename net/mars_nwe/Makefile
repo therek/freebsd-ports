@@ -2,7 +2,7 @@
 # Date created:		29 Dec 1998
 # Whom:			Boris Popov <bp@FreeBSD.org>
 #
-# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.10 2000/05/16 07:45:35 bp Exp $
+# $FreeBSD: ports/net/mars_nwe/Makefile,v 1.11 2000/07/05 08:06:37 bp Exp $
 #
 
 PORTNAME=	mars_nwe
@@ -31,9 +31,9 @@ do-install:
 	@${ECHO} "Please read details in ${WORKDIR}/mars_nwe/doc directory."
 
 pre-install:
-	@cp ${PKGDIR}/PLIST ${WRKDIR}/PLIST.DYN
+	@cp ${PKGDIR}/pkg-plist ${WRKDIR}/PLIST.DYN
 .if !defined(NOPORSDOCS)
-	@cat ${PKGDIR}/PLIST.DOC >> ${WRKDIR}/PLIST.DYN
+	@cat ${PKGDIR}/pkg-plist.DOC >> ${WRKDIR}/PLIST.DYN
 .endif
 
 post-install:
