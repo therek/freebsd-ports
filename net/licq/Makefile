@@ -2,7 +2,7 @@
 # Date created:                         2 July 1998
 # Whom:                                 Brian Feldman & Matt Heckaman
 #
-# $FreeBSD: ports/net/licq/Makefile,v 1.32 2001/04/03 08:14:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	base
@@ -12,7 +12,7 @@ CATEGORIES=	net
 PKGNAMESUFFIX=	-socks
 .endif
 
-MAINTAINER=	green@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 .if defined(WITH_SOCKS)
 BUILD_DEPENDS=	${LOCALBASE}/lib/libsocks5.a:${PORTSDIR}/net/socks5
