@@ -2,7 +2,7 @@
 # Date created:		5 Dec 2000
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/japanese/wxg/Makefile,v 1.3 2000/12/07 08:43:18 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wxg
@@ -17,6 +17,8 @@ MAINTAINER=	knu@FreeBSD.org
 # We need Canna libraries to use WXG anyway, and some Canna utilities
 # are useful for WXG too.
 RUN_DEPENDS=	cannakill:${PORTSDIR}/japanese/Canna
+
+BROKEN=		"This software has been discontinued"
 
 RESTRICTED=	"You must not copy or redistribute the distfile or the package."
 NO_CDROM=	${RESTRICTED}
