@@ -1,4 +1,4 @@
-# $FreeBSD: ports/graphics/Makefile,v 1.197 2000/05/01 02:51:50 steve Exp $
+# $FreeBSD: ports/graphics/Makefile,v 1.198 2000/05/07 14:31:26 sada Exp $
 #
 
     SUBDIR += 4va
@@ -49,7 +49,6 @@
     SUBDIR += gimp1
     SUBDIR += giram
     SUBDIR += gltk
-    SUBDIR += glx
     SUBDIR += gnofract4d
     SUBDIR += gnomeiconedit
     SUBDIR += gphoto
@@ -158,6 +157,7 @@
     SUBDIR += twinlib
     SUBDIR += txtmerge
     SUBDIR += urt
+    SUBDIR += utah-glx
     SUBDIR += vcdgear
     SUBDIR += vcg
     SUBDIR += whirlgif
