@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.226 1999/10/25 03:26:42 nakai Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.227 1999/10/27 09:10:16 asami Exp $
 #
 
     SUBDIR += ElectricFence
@@ -72,7 +72,6 @@
     SUBDIR += libglade
     SUBDIR += libgnugetopt
     SUBDIR += libgtop
-    SUBDIR += libgtop-devel
     SUBDIR += libmalloc
     SUBDIR += libshhmsg
     SUBDIR += libshhopt
