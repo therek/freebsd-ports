@@ -26,14 +26,14 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
 # THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
-# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.41 2004/04/05 13:27:21 des Exp $
+# $FreeBSD: ports/misc/porteasy/src/porteasy.pl,v 1.42 2004/04/11 21:54:48 des Exp $
 #
 
 use strict;
 use Fcntl;
 use Getopt::Long;
 
-my $VERSION	= "2.7.13";
+my $VERSION	= "2.7.14";
 my $COPYRIGHT	= "Copyright (c) 2000-2004 Dag-Erling Smørgrav. " .
 		  "All rights reserved.";
 
@@ -991,7 +991,7 @@ sub fetch_port($) {
     my $port = shift;		# Port to fetch
 
     setproctitle("fetching $port");
-    make($port, "fetch")
+    make($port, "checksum")
 	or bsd::errx(1, "failed to fetch %s", $port);
     setproctitle();
 }
