@@ -2,7 +2,7 @@
 # Date created:		23 Jan 2001
 # Whom:			Akinori MUSHA aka knu <knu@idaemons.org>
 #
-# $FreeBSD: ports/textproc/ruby-qt2xml/Makefile,v 1.8 2001/08/23 06:46:34 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	qt2xml
@@ -15,6 +15,7 @@ DISTNAME=	${RUBY_QT2_DISTNAME}
 DIST_SUBDIR=	ruby
 
 MAINTAINER=	knu@FreeBSD.org
+COMMENT=	Qt2 xml extension for Ruby
 
 BUILD_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
 RUN_DEPENDS=	${RUBY_SITEARCHLIBDIR}/qt2.so:${RUBY_QT2_PORTDIR}
