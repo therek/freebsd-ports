@@ -2,11 +2,11 @@
 # Date created:         14 November 2000
 # Whom:                 Jimmy Olgeni <olgeni@uli.it>
 #
-# $FreeBSD: ports/graphics/blender/Makefile,v 1.8 2001/03/08 17:57:50 sf Exp $
+# $FreeBSD: ports/graphics/blender/Makefile,v 1.9 2001/08/09 18:35:17 olgeni Exp $
 #
 
 PORTNAME=	blender
-PORTVERSION=	2.14
+PORTVERSION=	2.20
 CATEGORIES=	graphics games
 MASTER_SITES=	ftp://ftp.blender.nl/pub/
 DISTNAME=	blender${PORTVERSION}-freebsd-4.2-i386
