@@ -1,8 +1,8 @@
 #!/bin/sh
-# $FreeBSD: ports/net/mDNSResponder/files/mdnsd.sh.in,v 1.1 2005/03/25 17:24:13 brooks Exp $
+# $FreeBSD: ports/net/mDNSResponder/files/mdnsd.sh.in,v 1.2 2005/03/26 07:21:13 krion Exp $
 
 # PROVIDE: mdnsd
-# REQIURE: DAEMON
+# REQUIRE: DAEMON
 # KEYWORD: FreeBSD shutdown
 
 mdnsd_enable="NO"
