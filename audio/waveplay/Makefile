@@ -2,23 +2,23 @@
 # Date created:         23 Jan 1999
 # Whom:                 Yoshihide SONODA <ysonoda@dontaku.csce.kyushu-u.ac.jp>
 #
-# $FreeBSD: ports/audio/waveplay/Makefile,v 1.3 1999/12/27 21:47:09 steve Exp $
+# $FreeBSD: ports/audio/waveplay/Makefile,v 1.4 2000/04/08 21:24:41 mharo Exp $
 #
 
 PORTNAME=		waveplay
-PORTVERSION=		1999.01.23
+PORTVERSION=		2000.12.10
 CATEGORIES=		audio
-MASTER_SITES=		http://dontaku.csce.kyushu-u.ac.jp/~ysonoda/archives/program/FreeBSD/
-DISTNAME=		waveplay-19990123
+MASTER_SITES=		http://sore.totto.to/~ysonoda/FreeBSD/ports/
+DISTNAME=		waveplay-20001210
 
-MAINTAINER=		ysonoda@dontaku.csce.kyushu-u.ac.jp
+MAINTAINER=		yshd@na.rim.or.jp
+
+MAN1=			waveplay.1
+MANLANG=		"" ja
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/waveplay ${PREFIX}/bin/waveplay
-.if !defined(NOPORTDOCS)
-	${MKDIR} ${PREFIX}/share/doc/waveplay
-	${INSTALL_DATA} ${WRKSRC}/README ${PREFIX}/share/doc/waveplay/
-	${INSTALL_DATA} ${WRKSRC}/README.jp ${PREFIX}/share/doc/waveplay/
-.endif
+	${INSTALL_MAN} ${WRKSRC}/waveplay.1 ${PREFIX}/man/man1/waveplay.1
+	${INSTALL_MAN} ${WRKSRC}/waveplay.ja.1 ${PREFIX}/man/ja/man1/waveplay.1
 
 .include <bsd.port.mk>
