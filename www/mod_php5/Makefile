@@ -2,7 +2,7 @@
 # Date created:		Sun May 28 11:31:54 CEST 2000
 # Whom:			Dirk Froemberg <dirk@FreeBSD.org>
 #
-# $FreeBSD: ports/www/mod_php4/Makefile,v 1.131 2001/03/04 20:34:10 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/Makefile,v 1.132 2001/03/04 22:41:12 dirk Exp $
 #
 
 PORTNAME?=	mod_php4
@@ -101,12 +101,6 @@ post-clean:
 .include "${WRKDIRPREFIX}${.CURDIR}/Makefile.inc"
 .endif
 
-post-extract:
-.if target(post-extract-jstring)
-	${MAKE} post-extract-jstring
-.endif
-.if target(post-extract-ming)
-	${MAKE} post-extract-ming
-.endif
+post-extract: ${POSTEXTRACT}
 
 .include <bsd.port.mk>

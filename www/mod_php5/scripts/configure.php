@@ -1,5 +1,5 @@
 #!/bin/sh
-# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.113 2001/03/10 13:06:31 dirk Exp $
+# $FreeBSD: ports/www/mod_php4/scripts/configure.php,v 1.114 2001/03/10 13:19:22 dirk Exp $
 
 if [ -f ${WRKDIRPREFIX}${REALCURDIR}/Makefile.inc ]; then
 	exit
@@ -170,6 +170,7 @@ DISTFILES=	\${DISTNAME}\${EXTRACT_SUFX} php-4.0RC2_jstring-1.0.tar.gz
 CONFIGURE_ARGS+=--enable-jstring
 BUILD_DEPENDS+=	automake:\${PORTSDIR}/devel/automake
 BUILD_DEPENDS+=	autoconf:\${PORTSDIR}/devel/autoconf
+POSTEXTRACT+=	post-extract-jstring
 
 post-extract-jstring:
 	[ -d \${WRKDIR}/jstring ] && \\
@@ -193,6 +194,7 @@ BUILD_DEPENDS+=	/nonexistent:\${PORTSDIR}/graphics/ming:extract
 BUILD_DEPENDS+=	automake:\${PORTSDIR}/devel/automake
 BUILD_DEPENDS+=	autoconf:\${PORTSDIR}/devel/autoconf
 LIB_DEPENDS+=	ming.2:\${PORTSDIR}/graphics/ming
+POSTEXTRACT+=	post-extract-ming
 
 post-extract-ming:
 	[ -d \${PORTSDIR}/graphics/ming/work ] && \\
