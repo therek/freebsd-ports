@@ -2,7 +2,7 @@
 # Date created:         7 Mar 1996
 # Whom:                 se
 #
-# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.31 1999/08/30 14:23:01 peter Exp $
+# $FreeBSD: ports/net/isc-dhcp2/Makefile,v 1.32 2000/04/09 18:11:48 cpiazza Exp $
 #
 
 PORTNAME=	isc-dhcp
@@ -20,6 +20,9 @@ HAS_CONFIGURE=	yes
 MAN5=		dhclient.conf.5 dhclient.leases.5 dhcp-options.5 dhcpd.conf.5 \
 		dhcpd.leases.5
 MAN8=		dhclient.8 dhclient-script.8 dhcpd.8 dhcrelay.8
+
+post-patch:
+	@${PERL} -pi.fbsd -e 's.!!PREFIX!!.${PREFIX}.g' ${WRKSRC}/includes/dhcpd.h
 
 post-install:
 	${TOUCH} /var/db/dhcpd.leases
