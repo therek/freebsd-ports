@@ -2,17 +2,17 @@
 # Date created:			4 April 2000
 # Whom:				Kostya Lukin <lukin@okbmei.msk.su>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/libetherx/Makefile,v 1.1 2000/05/01 03:22:22 steve Exp $
 #
 
 PORTNAME=	libetherx
-PORTVERSION=	0.9
+PORTVERSION=	1.0
 CATEGORIES=     net
-MASTER_SITES=	http://download.jabber.org/dists/0.9/final/
+MASTER_SITES=	http://download.jabber.org/dists/1.0/
 
 MAINTAINER=	lukin@okbmei.msk.su
 
-LIB_DEPENDS=	jabber.0:${PORTSDIR}/net/libjabber \
+LIB_DEPENDS=	jabber.1:${PORTSDIR}/net/libjabber \
 		pth.13:${PORTSDIR}/devel/pth \
 		adns.0:${PORTSDIR}/net/adns
 
