@@ -2,7 +2,7 @@
 # Date created:		19 December 2000
 # Whom:			KIRIYAMA Kazuhiko <kiri@FreeBSD.org>
 #
-# $FreeBSD$
+# $FreeBSD: ports/textproc/smartdoc/Makefile,v 1.1 2001/03/19 10:26:09 kiri Exp $
 #
 
 PORTNAME=	smartdoc
@@ -13,6 +13,7 @@ MASTER_SITES=	${MASTER_SITE_LOCAL} \
 MASTER_SITE_SUBDIR=	kiri
 DISTNAME=	setup
 EXTRACT_SUFX=	.zip
+DIST_SUBDIR=	${PORTNAME}
 
 MAINTAINER=	kiri@FreeBSD.org
 
