@@ -2,11 +2,11 @@
 # Date created:         18 Jun 2000
 # Whom:                 Erich Zigler <erich@tacni.net>
 #
-# $FreeBSD: ports/x11-toolkits/gnome--/Makefile,v 1.8 2001/05/04 21:39:52 ade Exp $
+# $FreeBSD: ports/x11-toolkits/gnome--/Makefile,v 1.9 2001/05/11 16:36:43 ade Exp $
 #
 
 PORTNAME=	gnomemm
-PORTVERSION=	1.1.17
+PORTVERSION=	1.2.1
 CATEGORIES=	x11-toolkits gnome
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	gtkmm
