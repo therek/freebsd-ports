@@ -2,7 +2,7 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.21 2001/08/23 11:46:17 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.22 2001/08/27 12:54:57 nbm Exp $
 #
 
 PORTNAME=	courier-imap
@@ -47,7 +47,7 @@ PLIST_SUB+=	VPOPMAILFLAG=""
 
 .if !defined(WITH_MYSQL)
 CONFIGURE_ARGS+=	\
-		--without-authmysql \
+		--without-authmysql
 PLIST_SUB+=	MYSQLFLAG="@comment "
 .else
 LIB_DEPENDS+=	mysqlclient.10:${PORTSDIR}/databases/mysql323-client
