@@ -3,13 +3,13 @@
 # Date created:				02 November 1999
 # Whom:					Chris D. Faulhaber <jedgar@fxp.org>
 #
-# $FreeBSD: ports/devel/kdbg/Makefile,v 1.2 1999/11/27 01:04:04 steve Exp $
+# $FreeBSD: ports/devel/kdbg/Makefile,v 1.3 1999/11/27 18:01:00 imura Exp $
 #
 
 DISTNAME=	kdbg-1.0.1
 CATEGORIES=	devel kde
 MASTER_SITES=	http://members.telecom.at/~johsixt/ \
-		ftp://eudaptics.co.at/pub/people/jsixt/
+		ftp://ftp.eudaptics.co.at/pub/people/jsixt/
 
 MAINTAINER=	jedgar@fxp.org
 
