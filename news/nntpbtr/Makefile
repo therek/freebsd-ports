@@ -2,7 +2,7 @@
 # Date created:         1 July 1996
 # Whom:                 dk
 #
-# $FreeBSD: ports/news/nntpbtr/Makefile,v 1.8 2000/04/09 17:33:08 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nntpbtr
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.kiarchive.ru/pub/unix/news/
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	dk@farm.org
+COMMENT=	NNTP bulk transfer
 
 MAN1=		nntpbtr.1
 

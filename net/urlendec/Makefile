@@ -2,7 +2,7 @@
 # Date created:				25 October 2000
 # Whom:					G. Adam Stanislav <adam@whizkidtech.net>
 #
-# $FreeBSD: ports/net/urlendec/Makefile,v 1.2 2001/04/15 01:02:43 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	urlendec
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.whizkidtech.net/fports/
 
 MAINTAINER=	adam@whizkidtech.net
+COMMENT=	URL encoder and decoder
 
 BUILD_DEPENDS=	nasm:${PORTSDIR}/devel/nasm
 

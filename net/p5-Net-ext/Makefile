@@ -2,7 +2,7 @@
 # Date created:				25 March 2000
 # Whom:					Igor Vinokurov <igor@zynaps.ru>
 #
-# $FreeBSD: ports/net/p5-Net-ext/Makefile,v 1.3 2001/03/01 06:38:25 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-ext
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	igor@zynaps.ru
+COMMENT=	Perl modules for using sockets
 
 PERL_CONFIGURE=	yes
 

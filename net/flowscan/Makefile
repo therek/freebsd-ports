@@ -2,7 +2,7 @@
 # Date created:         Di  13 Mär 2001 08:23:55 CET
 # Whom:                 andreas@freebsd.org
 #
-# $FreeBSD: ports/net/flowscan/Makefile,v 1.17 2001/07/06 10:32:56 andreas Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	flowscan
@@ -13,6 +13,7 @@ MASTER_SITES=	http://net.doit.wisc.edu/~plonka/FlowScan/
 DISTFILES=	FlowScan-${PORTVERSION}.tar.gz
 
 MAINTAINER=	lyngbol@wheel.dk
+COMMENT=	Processes IP flows recorded in cflowd-format raw flow files
 
 BUILD_DEPENDS=	ksh:${PORTSDIR}/shells/pdksh \
 		rrdtool:${PORTSDIR}/net/rrdtool \

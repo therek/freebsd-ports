@@ -2,7 +2,7 @@
 # Date created:				25 February 2000
 # Whom:                			Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/net/p5-Net-IPv4Addr/Makefile,v 1.4 2001/03/01 06:38:22 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Net-IPv4Addr
@@ -13,6 +13,7 @@ MASTER_SITE_SUBDIR=	Net
 PKGNAMEPREFIX=	p5-
 
 MAINTAINER=	bradh@uunet.co.za
+COMMENT=	Perl extension for manipulating IPv4 addresses
 
 PERL_CONFIGURE=	yes
 

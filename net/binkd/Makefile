@@ -2,7 +2,7 @@
 # Date created:		19 August 1998
 # Whom:			Andrey Zakhvatov
 #
-# $FreeBSD: ports/net/binkd/Makefile,v 1.12 2000/08/01 23:57:30 jedgar Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	binkd
@@ -12,6 +12,7 @@ MASTER_SITES=	http://2f.ru/binkd/
 DISTNAME=	binkd094
 
 MAINTAINER=	dsh@vlink.ru
+COMMENT=	Fidonet TCP/IP mailer
 
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 USE_ZIP=	yes

@@ -2,7 +2,7 @@
 # Date created:                21 Nov 1998
 # Whom:                        bradh
 #
-# $FreeBSD: ports/net/nocol/Makefile,v 1.7 2001/01/10 14:02:29 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nocol
@@ -12,6 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.netplex-tech.com/software/nocol/downloads/
 
 MAINTAINER=	bradh@uunet.co.za
+COMMENT=	Network/Service monitoring software
 
 MANPREFIX=	${PREFIX}/nocol/
 MAN1=		netconsole.1

@@ -2,7 +2,7 @@
 # Date created:			  Nov 05, 1998
 # Whom:				  Karl Dietz (Karl.Dietz@frankfurt.netsurf.de)
 #
-# $FreeBSD: ports/net/dnsutl/Makefile,v 1.5 2000/04/09 18:11:03 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	dnsutl
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.canb.auug.org.au/~millerp/dnsutl/ \
 		ftp://ftp.agso.gov.au/pub/Aegis/dnsutl/
 
 MAINTAINER=	Karl.Dietz@frankfurt.netsurf.de
+COMMENT=	Programs to make using DNS easier
 
 GNU_CONFIGURE=	yes
 ALL_TARGET=	all sure

@@ -2,7 +2,7 @@
 # Date created:         25 Jun 1999
 # Whom:                 m.butkus@tu-bs.de
 #
-# $FreeBSD: ports/net/rboot/Makefile,v 1.2 2000/04/09 18:13:20 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	rboot
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.bs.ni.schule.de/support/rboot/download/
 
 MAINTAINER=	m.butkus@tu-bs.de
+COMMENT=	A remote-boot solution for M$$ operating systems
 
 NO_PACKAGE=	"this port creates devices"
 

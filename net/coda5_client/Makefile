@@ -2,11 +2,14 @@
 # Date created:				Mon Oct  18 12:01:27 EDT 1999
 # Whom:					???
 #
-# $FreeBSD: ports/net/coda5_client/Makefile,v 1.10 2000/05/29 04:31:35 steve Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coda
 PORTVERSION=	${CODA_VERSION}
+
+MAINTAINER=	coda@cs.cmu.edu
+COMMENT=	Client programs for a replicated high-performance network file system
 
 CONFIGURE_ARGS=	--sysconfdir=${PREFIX}/etc
 

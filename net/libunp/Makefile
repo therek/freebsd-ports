@@ -2,7 +2,7 @@
 # Date created:			Sept 28, 1999
 # Whom:				james@targetnet.com
 #
-# $FreeBSD: ports/net/libunp/Makefile,v 1.3 2000/04/09 18:12:07 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libunp
@@ -13,6 +13,7 @@ MASTER_SITES=	ftp://ftp.kohala.com/pub/rstevens/ \
 DISTNAME=	unpv12e
 
 MAINTAINER=	james@targetnet.com
+COMMENT=	The networking library used in UNIX Network Programming Volume 1 2e
 
 GNU_CONFIGURE=	yes
 USE_GMAKE=	yes

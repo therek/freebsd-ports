@@ -2,7 +2,7 @@
 # Date created:         22 September 1998
 # Whom:                 Kenjiro Cho <kjc@csl.sony.co.jp>
 #
-# $FreeBSD: ports/net/ttt/Makefile,v 1.19 2000/12/21 12:01:40 kjc Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ttt
@@ -11,6 +11,7 @@ CATEGORIES=	net tk83 ipv6
 MASTER_SITES=	ftp://ftp.csl.sony.co.jp/pub/kjc/
 
 MAINTAINER=	kjc@csl.sony.co.jp
+COMMENT=	Tele Traffic Tapper, a network traffic monitoring tool
 
 # the tcl/tk LIB_DEPENDS has to match that of ports/x11-toolkits/blt.
 LIB_DEPENDS=	BLT24.2:${PORTSDIR}/x11-toolkits/blt \

@@ -2,7 +2,7 @@
 # Date created:         Mon Oct 20 14:30:06 CDT 1997
 # Whom:                 proot@iaces.com
 #
-# $FreeBSD: ports/net/nettest/Makefile,v 1.3 1999/08/30 14:23:28 peter Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	nettest
@@ -13,6 +13,7 @@ DISTNAME=	nettest.92.11.09
 EXTRACT_SUFX=	.tar.Z
 
 MAINTAINER=	proot@iaces.com
+COMMENT=	Performs client and server functions for timing data throughput
 
 NO_WRKSUBDIR=	yes
 MAN8=		nettest.8

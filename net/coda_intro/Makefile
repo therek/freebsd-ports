@@ -2,7 +2,7 @@
 # Date created:				19 June 1998
 # Whom:					Robert V. Baron <rvb@cs.cmu.edu>
 #
-# $FreeBSD: ports/net/coda_intro/Makefile,v 1.5 2000/04/09 18:10:39 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	coda-intro
@@ -13,6 +13,7 @@ DISTNAME=	coda-intro-4.6.6
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	rvb@cs.cmu.edu
+COMMENT=	An experimental, replicated, high-performance network file system
 
 do-build:
 	@${ECHO} "These are simple text files.

@@ -2,7 +2,7 @@
 # Date created:			Sun Feb 3, 1999
 # Whom:				shipley@dis.org
 #
-# $FreeBSD: ports/net/libnet/Makefile,v 1.9 2001/01/16 17:31:52 sobomax Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	libnet
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://www.packetfactory.net/libnet/dist/
 
 MAINTAINER=	shipley@dis.org
+COMMENT=	A C library for creating IP packets
 
 MAN3=		libnet.3
 

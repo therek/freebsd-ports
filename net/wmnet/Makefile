@@ -2,7 +2,7 @@
 # Date created:        24 November 1998
 # Whom:                Rich Neswold <rneswold@mcs.net>
 #
-# $FreeBSD: ports/net/wmnet/Makefile,v 1.6 2000/04/09 18:13:57 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	wmnet
@@ -11,6 +11,7 @@ CATEGORIES=	net windowmaker
 MASTER_SITES=	ftp://ftp.enteract.com/users/rneswold/
 
 MAINTAINER=	rneswold@enteract.com
+COMMENT=	A network bandwidth monitor intended for the WindowMaker dock
 
 USE_XPM=	yes
 MAN1=		wmnet.1

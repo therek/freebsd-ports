@@ -2,7 +2,7 @@
 # Date created:			  Oct 6 2000
 # Whom:				  Roman Shterenzon <roman@xpert.com>
 #
-# $FreeBSD: ports/net/sing/Makefile,v 1.1 2000/10/16 02:28:01 jeh Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sing
@@ -14,6 +14,7 @@ DISTNAME=	SING-${PORTVERSION}
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	roman@xpert.com
+COMMENT=	Tool for sending customized ICMP packets
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet \
 

@@ -2,7 +2,7 @@
 # Date created:         30 Oct 1997
 # Whom:                 sec@42.org
 #
-# $FreeBSD: ports/net/sendfile/Makefile,v 1.16 2001/03/06 17:24:22 sf Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	sendfile
@@ -13,6 +13,7 @@ MASTER_SITES=   ftp://ftp.belwue.de/pub/unix/sendfile/current/
 DISTFILES=	sendfile-20010216.tar.gz
 
 MAINTAINER=	sec@42.org
+COMMENT=	Simple Asynchronous File Transfer Reference Implementation
 
 HAS_CONFIGURE=	yes
 CONFIGURE_SCRIPT=makeconfig

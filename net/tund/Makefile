@@ -2,7 +2,7 @@
 # Date created:        20 July 1999
 # Whom:                Sergey Kosyakov <ks@itp.ac.ru>
 #
-# $FreeBSD: ports/net/tund/Makefile,v 1.5 2000/04/09 18:13:53 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tund
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	ftp://ftp.chg.ru/pub/networking/freebsd/
 
 MAINTAINER=	ks@itp.ac.ru
+COMMENT=	IP over UDP tunnel with encryption
 
 USE_OPENSSL=	YES
 

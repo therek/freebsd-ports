@@ -2,7 +2,7 @@
 # Date created:		14 April 2000
 # Whom:			nishida@csl.sony.co.jp
 #
-# $FreeBSD: ports/net/tcpillust/Makefile,v 1.2 2000/11/07 23:28:14 asami Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	tcpillust
@@ -11,6 +11,7 @@ CATEGORIES=	net tk82 tcl82
 MASTER_SITES=	ftp://ftp.csl.sony.co.jp/CSL/nishida/
 
 MAINTAINER=	nishida@csl.sony.co.jp
+COMMENT=	A graphical TCP connection analysis tool
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82 \
 				tcl82.1:${PORTSDIR}/lang/tcl82

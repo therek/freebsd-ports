@@ -2,7 +2,7 @@
 # Date created:		9 February 2000
 # Whom:			diskiller@cnbinc.com
 #
-# $FreeBSD: ports/net/ppptraf/Makefile,v 1.2 2000/04/09 18:13:10 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	ppptraf
@@ -12,6 +12,7 @@ MASTER_SITES=	ftp://ftp.borg-cube.com/users/diskiller/distfiles/ \
 		http://people.FreeBSD.org/~dburr/distfiles/
 
 MAINTAINER=	diskiller@cnbinc.com
+COMMENT=	A ncurses based PPP Traffic (bytes in/out) monitoring program
 
 #MAN1=		ppptraf.1
 

@@ -2,7 +2,7 @@
 # Date created:                25 February 2000
 # Whom:                        Brad Hendrickse <bradh@uunet.co.za>
 #
-# $FreeBSD: ports/net/isic/Makefile,v 1.2 2000/04/09 18:11:49 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	isic
@@ -12,6 +12,7 @@ MASTER_SITES=	http://www.packetfactory.net/Projects/ISIC/
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	bradh@uunet.co.za
+COMMENT=	IP Stack Integrity Checker
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/libnet.a:${PORTSDIR}/net/libnet
 

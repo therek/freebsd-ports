@@ -2,7 +2,7 @@
 # Date created:				28 July 2000
 # Whom:					Matt Heckaman <matt@LUCIDA.QC.CA>
 #
-# $FreeBSD: ports/net/mmucl/Makefile,v 1.2 2000/09/19 04:55:24 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	mmucl
@@ -11,6 +11,7 @@ CATEGORIES=	net
 MASTER_SITES=	http://download.sourceforge.net/mmucl/
 
 MAINTAINER=	matt@LUCIDA.CA
+COMMENT=	Powerful GUI MUD client written in TCL
 
 LIB_DEPENDS=	tcl82.1:${PORTSDIR}/lang/tcl82
 RUN_DEPENDS=	wish8.2:${PORTSDIR}/x11-toolkits/tk82

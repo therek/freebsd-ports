@@ -2,7 +2,7 @@
 # Date created:		17 January 1999
 # Whom:			asaddi@philosophysw.com
 #
-# $FreeBSD: ports/news/newsfish/Makefile,v 1.8 2001/05/27 15:23:17 kevlo Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	newsfish
@@ -12,6 +12,7 @@ MASTER_SITES=	http://download.sourceforge.net/newsfish/ \
 		ftp://ftp.philosophysw.com/pub/software/
 
 MAINTAINER=	asaddi@philosophysw.com
+COMMENT=	Batch USENET news reader with filter capabilities
 
 USE_AUTOMAKE=	yes
 USE_GMAKE=	yes

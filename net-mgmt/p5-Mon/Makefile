@@ -2,7 +2,7 @@
 # Date created:			October 30th, 2000
 # Whom:	      			Nicholas Esborn <nick@netdot.net>
 #
-# $FreeBSD: ports/net/p5-Mon/Makefile,v 1.2 2001/03/01 06:38:19 vanilla Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	Mon
@@ -14,6 +14,7 @@ PKGNAMEPREFIX=	p5-
 DISTNAME=	Mon-${PORTVERSION}
 
 MAINTAINER=	nick@netdot.net
+COMMENT=	A perl module that supports mon, a network and system monitoring daemon
 
 PERL_CONFIGURE=	YES
 

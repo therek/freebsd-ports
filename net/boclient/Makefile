@@ -2,7 +2,7 @@
 # Date created:		12 August 1998
 # Whom:			darius@dons.net.au
 #
-# $FreeBSD: ports/net/boclient/Makefile,v 1.3 2000/04/09 18:10:18 cpiazza Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	boclient
@@ -14,6 +14,7 @@ MASTER_SITES=	http://www.ennui.net/~crioux/ \
 DISTNAME=	bo121unix
 
 MAINTAINER=	darius@dons.net.au
+COMMENT=	Client program for the Back Orifice Windows program
 
 WRKSRC=		${WRKDIR}/bo
 GNU_CONFIGURE=	yes
