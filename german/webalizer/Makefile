@@ -2,13 +2,13 @@
 # Date created:		02.Jun 1998
 # Whom:			dirk.meyer@dinoex.sub.org
 #
-# $FreeBSD: ports/german/webalizer/Makefile,v 1.12 2000/08/08 03:53:29 kevlo Exp $
+# $FreeBSD: ports/german/webalizer/Makefile,v 1.13 2000/08/10 16:16:24 kevlo Exp $
 
 PORTNAME=	webalizer
 PORTVERSION=	1.30.4
 CATEGORIES=	german www
 MASTER_SITES=	ftp://ftp.mrunix.net/pub/webalizer/ \
-		ftp://ftp.lan-ks.de/pub/FreeBSD/distfiles
+		ftp://ftp.lan-ks.de/pub/FreeBSD/distfiles/
 DISTNAME=	${PORTNAME}-1.30-04-src
 EXTRACT_SUFX=	.tgz
 
