@@ -1,9 +1,9 @@
 # New ports collection makefile for:	ja-slrn
-# Version required:   0.9.6.2.jp1
+# Version required:	0.9.6.2jp0
 # Date created:		6 Sept 1999
 # Whom:			Takashi Mega <mega@minz.org>
 #
-# $FreeBSD: ports/japanese/slrn/Makefile,v 1.10 1999/12/08 21:35:36 sada Exp $
+# $FreeBSD: ports/japanese/slrn/Makefile,v 1.11 2000/02/09 06:53:03 taoka Exp $
 #
 
 DISTNAME=	slrn-0.9.6.2
