@@ -2,15 +2,15 @@
 # Date created:		7 March 1995
 # Whom:			Nobuhiro Yasutomi <nobu@psrc.isac.co.jp>
 #
-# $FreeBSD: ports/japanese/less/Makefile,v 1.21 2000/12/30 21:58:37 sf Exp $
+# $FreeBSD: ports/japanese/less/Makefile,v 1.22 2000/12/30 22:01:56 sf Exp $
 #
 
 PORTNAME=	less+iso
 PORTVERSION=	358.254
 CATEGORIES=	japanese
 MASTER_SITES=	http://www.io.com/~kazushi/less/ \
-		${MASTER_SITE_GNU}
-MASTER_SITE_SUBDIR=	less
+		${MASTER_SITE_LOCAL}
+MASTER_SITE_SUBDIR=	sf
 DISTNAME=	less-${PORTVERSION:R}
 DISTFILES=	${DISTNAME}${EXTRACT_SUFX} \
 		${XGTAGS}${EXTRACT_SUFX} \
