@@ -3,7 +3,7 @@
 # Date created:			  Mon Feb 03, 1997
 # Whom:				  David O'Brien (obrien@FreeBSD.org)
 #
-# $FreeBSD: ports/chinese/gbscript/Makefile,v 1.8 2000/03/22 00:26:53 obrien Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	gbscript
@@ -17,7 +17,7 @@ MASTER_SITES=	ftp://ftp.ifcss.org/pub/software/unix/print/  \
 		ftp://ftp.cuhk.hk/pub/chinese/ifcss/software/fonts/gb/misc/
 DISTFILES=	gbscript-1.11.tar.gz cclib.24
 
-MAINTAINER=	obrien@FreeBSD.org
+MAINTAINER=	ports@FreeBSD.org
 
 EXTRACT_ONLY=	${DISTNAME}${EXTRACT_SUFX}
 MAKEFILE=	makefile
