@@ -3,7 +3,7 @@
 # Date created:				May 4th 1997
 # Whom:	      				James FitzGibbon <jfitz@FreeBSD.org>
 #
-# $FreeBSD: ports/net/ratoolset/Makefile,v 1.12 1999/12/10 15:52:15 steve Exp $
+# $FreeBSD: ports/net/ratoolset/Makefile,v 1.13 1999/12/10 21:22:21 steve Exp $
 #
 
 DISTNAME=	RAToolSet-3.5.8
@@ -15,6 +15,7 @@ MAINTAINER=	jfitz@FreeBSD.org
 
 LIB_DEPENDS=	tk82.1:${PORTSDIR}/x11-toolkits/tk82
 
+USE_BISON=	yes
 GNU_CONFIGURE=	Yes
 CONFIGURE_ENV=	TCL_TK_INCLUDE_DIR="${PREFIX}/include/tcl8.2:${PREFIX}/include/tk8.2" \
 		TCL_TK_LIBRARY_DIR=${PREFIX}/lib \
