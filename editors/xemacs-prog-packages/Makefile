@@ -2,12 +2,12 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.15 2000/07/13 09:31:35 taoka Exp $
+# $FreeBSD: ports/editors/xemacs-prog-packages/Makefile,v 1.16 2000/07/15 20:34:21 taoka Exp $
 #
 
 PORTNAME=	xemacs-prog-packages
-PORTVERSION=	1.0
-CATEGORIES=	editors
+PORTVERSION=	1.1
+CATEGORIES=	editors elisp
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/packages/ \
@@ -17,12 +17,12 @@ MASTER_SITES=	\
 
 DISTFILES=	\
 		ada-1.08-pkg.tar.gz \
-		ediff-1.25-pkg.tar.gz \
+		ediff-1.26-pkg.tar.gz \
 		emerge-1.07-pkg.tar.gz \
 		idlwave-1.2-pkg.tar.gz \
 		jde-1.17-pkg.tar.gz \
 		scheme-1.10-pkg.tar.gz \
-		vc-cc-1.13-pkg.tar.gz \
+		vc-cc-1.14-pkg.tar.gz \
 		vhdl-1.10-pkg.tar.gz
 
 MAINTAINER=	kiri@pis.toba-cmt.ac.jp

@@ -2,12 +2,12 @@
 # Date created:		03 June 2000
 # Whom:			KIRIYAMA Kazuhiko<kiri@pis.toba-cmt.ac.jp>
 #
-# $FreeBSD: ports/editors/xemacs-comm-packages/Makefile,v 1.15 2000/07/13 09:31:28 taoka Exp $
+# $FreeBSD: ports/editors/xemacs-comm-packages/Makefile,v 1.16 2000/07/15 20:34:18 taoka Exp $
 #
 
 PORTNAME=	xemacs-comm-packages
-PORTVERSION=	1.0
-CATEGORIES=	editors
+PORTVERSION=	1.1
+CATEGORIES=	editors elisp
 MASTER_SITES=	\
 		ftp://ftp.xemacs.org/pub/xemacs/packages/ \
 		ftp://ftp.mpi-sb.mpg.de/pub/gnu/mirror/ftp.xemacs.org/xemacs/packages/ \
@@ -25,7 +25,7 @@ DISTFILES=	\
 		mh-e-1.12-pkg.tar.gz \
 		rmail-1.11-pkg.tar.gz \
 		supercite-1.14-pkg.tar.gz \
-		tm-1.22-pkg.tar.gz \
+		tm-1.23-pkg.tar.gz \
 		vm-1.22-pkg.tar.gz \
 		zenirc-1.07-pkg.tar.gz
 
