@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.15 2004/10/15 15:44:30 sergei Exp $
+@comment $FreeBSD: ports/mail/mailscanner/pkg-plist,v 1.16 2004/11/01 20:10:10 sem Exp $
 etc/MailScanner/MailScanner.conf.sample
 etc/MailScanner/filename.rules.conf.sample
 etc/MailScanner/filetype.rules.conf.sample
@@ -80,6 +80,7 @@ libexec/MailScanner/nod32-wrapper.sample
 libexec/MailScanner/norman-autoupdate.sample
 libexec/MailScanner/norman-wrapper.sample
 libexec/MailScanner/panda-wrapper.sample
+libexec/MailScanner/panda-autoupdate.sample
 libexec/MailScanner/rav-autoupdate.sample
 libexec/MailScanner/rav-wrapper.sample
 libexec/MailScanner/sophos-autoupdate.sample
@@ -524,6 +525,7 @@ libexec/MailScanner/vexira-wrapper.sample
 %%PORTDOCS%%%%DOCSDIR%%/poweredby.transtec.gif
 %%PORTDOCS%%%%DOCSDIR%%/phishing.html
 %%PORTDOCS%%%%DOCSDIR%%/phishing.jpg
+%%PORTDOCS%%%%DOCSDIR%%/phishing2.jpg
 %%PORTDOCS%%%%DOCSDIR%%/pressreleases.html
 %%PORTDOCS%%%%DOCSDIR%%/presentations.html
 %%PORTDOCS%%%%DOCSDIR%%/press.html
