@@ -3,11 +3,11 @@
 # Date created:			  19 Nov 1997
 # Whom:				  Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.29 2000/06/16 08:18:20 sobomax Exp $
+# $FreeBSD: ports/archivers/bzip2/Makefile,v 1.30 2000/06/16 21:50:18 asami Exp $
 #
 
 PORTNAME=	bzip2
-PORTVERSION=	1.0.0
+PORTVERSION=	1.0.1
 CATEGORIES=	archivers
 MASTER_SITES=	ftp://ftp.freesoftware.com/pub/sourceware/bzip2/v100/ \
 		ftp://sourceware.cygnus.com/pub/bzip2/v100/ \
