@@ -1,4 +1,4 @@
-# $FreeBSD: ports/devel/Makefile,v 1.286 2000/05/30 04:54:27 jake Exp $
+# $FreeBSD: ports/devel/Makefile,v 1.287 2000/05/30 09:32:49 kris Exp $
 #
 
     SUBDIR += ElectricFence
@@ -64,6 +64,7 @@
     SUBDIR += gaa
     SUBDIR += gcc-6811
     SUBDIR += gcc-m68k
+    SUBDIR += gdb-m68k
     SUBDIR += gettext
     SUBDIR += gide
     SUBDIR += gindent
@@ -113,10 +114,6 @@
     SUBDIR += linuxthreads
     SUBDIR += lwp
     SUBDIR += m4
-    SUBDIR += m68kbinutils
-    SUBDIR += m68kgcc
-    SUBDIR += m68kgdb
-    SUBDIR += m68knewlib
     SUBDIR += makedepend
     SUBDIR += mico
     SUBDIR += mkcmd
@@ -127,6 +124,7 @@
     SUBDIR += nana
     SUBDIR += nasm
     SUBDIR += ncurses
+    SUBDIR += newlib-m68k
     SUBDIR += newt
     SUBDIR += noweb
     SUBDIR += omniORB
