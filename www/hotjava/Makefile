@@ -3,7 +3,7 @@
 # Date created:		1999/07/03
 # Whom:			Jose Marques
 #
-# $FreeBSD: ports/www/hotjava/Makefile,v 1.2 1999/08/31 02:42:51 peter Exp $
+# $FreeBSD: ports/www/hotjava/Makefile,v 1.3 1999/11/25 21:40:53 sada Exp $
 #
 
 DISTNAME=	hjb3_0-linux.sfx
@@ -14,7 +14,7 @@ EXTRACT_SUFX=
 
 MAINTAINER=	noway@nohow.demon.co.uk
 
-RUN_DEPENDS=	${PREFIX}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
+RUN_DEPENDS=	${LOCALBASE}/jdk${JDK_VERSION}/bin/java:${PORTSDIR}/java/jdk
 
 EXTRACT_ONLY=
 
