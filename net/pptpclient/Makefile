@@ -2,13 +2,13 @@
 # Date created:		19 June 1999
 # Whom:			John Polstra <jdp@freebsd.org>
 #
-# $FreeBSD: ports/net/pptpclient/Makefile,v 1.3 2000/04/09 18:13:11 cpiazza Exp $
+# $FreeBSD: ports/net/pptpclient/Makefile,v 1.4 2001/05/12 22:29:15 jdp Exp $
 #
 
 PORTNAME=	pptpclient
 PORTVERSION=	1.0.3
 CATEGORIES=	net
-MASTER_SITES=	http://www.linuxalpha.compaq.com/pptpclient/files/
+MASTER_SITES=	http://prdownloads.sourceforge.net/pptpclient/
 DISTNAME=	pptp-linux-1.0.3
 DISTFILES=	pptp-linux-1.0.3-1.tar.gz
 
