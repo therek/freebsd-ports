@@ -2,7 +2,7 @@
 # Date created:		Mon Mar  8 10:10:42 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-doc/Makefile,v 1.12 2000/04/12 06:14:29 obrien Exp $
+# $FreeBSD: ports/java/jdk-doc/Makefile,v 1.13 2000/04/19 09:06:25 knu Exp $
 #
 
 PORTNAME=	jdk-doc
@@ -10,7 +10,7 @@ PORTVERSION=	1.1.8
 CATEGORIES=	java
 DISTNAME=	jdk-1_1_8_003-doc
 
-MAINTAINER=	martti.kuparinen@ericsson.com
+MAINTAINER=	martti.kuparinen@iki.fi
 
 RESTRICTED=	"This software is under license and export control."
 IS_INTERACTIVE=	"Requires manual fetch"

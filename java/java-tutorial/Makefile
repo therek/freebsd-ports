@@ -2,7 +2,7 @@
 # Date created:		Tue Mar 23 10:18:20 EET 1999
 # Whom:			Martti Kuparinen <martti.kuparinen@ericsson.com>
 #
-# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.12 2000/05/28 03:32:38 steve Exp $
+# $FreeBSD: ports/java/jdk-tutorial/Makefile,v 1.13 2000/10/08 10:21:41 asami Exp $
 #
 
 PORTNAME=	jdk-tutorial
@@ -11,7 +11,7 @@ CATEGORIES=	java
 MASTER_SITES=	ftp://ftp.javasoft.com/docs/
 DISTNAME=	tutorial
 
-MAINTAINER=	martti.kuparinen@ericsson.com
+MAINTAINER=	martti.kuparinen@iki.fi
 
 NO_WRKSUBDIR=	yes
 RESTRICTED=	"This software is under license and export control."
