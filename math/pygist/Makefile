@@ -2,24 +2,24 @@
 # Date created:		30 May 1998
 # Whom:			Thomas Gellekum <tg@FreeBSD.org>
 #
-# $FreeBSD: ports/math/pygist/Makefile,v 1.16 2000/09/06 12:19:39 tg Exp $
+# $FreeBSD: ports/math/pygist/Makefile,v 1.17 2000/09/08 11:58:52 tg Exp $
 #
 
 PORTNAME=	gist
 PORTVERSION=	1.5
 CATEGORIES=	math python
-MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/python/
-PKGNAMEPREFIX=	py-
+MASTER_SITES=	ftp://ftp-icf.llnl.gov/pub/python/OLD/
+PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 DISTNAME=	LLNLDistribution11
 EXTRACT_SUFX=	.tgz
 
 MAINTAINER=	tg@FreeBSD.org
 
 BUILD_DEPENDS=	${LOCALBASE}/lib/yorick/1.4/lib/libgist.a:${PORTSDIR}/lang/yorick \
-		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
-		${RNGDIR}/RNG.so:${PORTSDIR}/math/numpy
-RUN_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/numpy \
-		${RNGDIR}/RNG.so:${PORTSDIR}/math/numpy
+		${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/py-numeric \
+		${RNGDIR}/RNG.so:${PORTSDIR}/math/py-numeric
+RUN_DEPENDS=	${NUMPYDIR}/Numeric.py:${PORTSDIR}/math/py-numeric \
+		${RNGDIR}/RNG.so:${PORTSDIR}/math/py-numeric
 
 WRKSRC=		${WRKDIR}/${DISTNAME}/Graphics
 USE_PYTHON=	yes
