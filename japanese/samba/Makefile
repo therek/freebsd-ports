@@ -2,7 +2,7 @@
 # Date created:				27 Dec 1999
 # Whom:					Shinya Sasaki <pcmaster@osk3.3web.ne.jp>
 #
-# $FreeBSD: ports/japanese/samba/Makefile,v 1.5 2000/08/29 20:03:41 knu Exp $
+# $FreeBSD: ports/japanese/samba/Makefile,v 1.6 2000/08/30 04:47:06 knu Exp $
 #
 
 PORTNAME=	samba
@@ -24,7 +24,7 @@ BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 Y2K=		http://us1.samba.org/samba/docs/sambay2k.html
 
 SAMBA_VERSION=		2.0.7
-SAMBA_JA_VERSION=	1.2
+SAMBA_JA_VERSION=	1.2a
 
 # directories
 VARDIR=		/var
