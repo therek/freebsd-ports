@@ -2,11 +2,11 @@
 # Date created:        16 June 2001
 # Whom:                Yukihiro Nakai <nakai@FreeBSD.org>
 #
-# $FreeBSD: ports/games/kxl/Makefile,v 1.1 2001/06/16 10:33:57 nakai Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kxl
-PORTVERSION=	0.5.6
+PORTVERSION=	1.1.5
 CATEGORIES=	games
 MASTER_SITES=	http://www2.mwnet.or.jp/~fc3srx7/download/
 DISTNAME=	KXL-${PORTVERSION}
