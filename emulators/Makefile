@@ -1,4 +1,4 @@
-# $FreeBSD: ports/emulators/Makefile,v 1.37 1999/08/29 05:52:05 dburr Exp $
+# $FreeBSD: ports/emulators/Makefile,v 1.38 1999/11/25 06:46:40 nsayer Exp $
 #
 
     SUBDIR += aftp
@@ -39,6 +39,7 @@
     SUBDIR += x48
     SUBDIR += xgs
     SUBDIR += xmame
+    SUBDIR += xmess
     SUBDIR += xsystem35
     SUBDIR += xzx
 
