@@ -2,7 +2,7 @@
 # Date created:				24 Apr 1996
 # Whom:					pst
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/socks5/Makefile,v 1.36 2001/03/19 19:14:32 sobomax Exp $
 #
 
 PORTNAME=	socks5
@@ -37,7 +37,7 @@ MAN5=		libsocks5.conf.5 socks5.conf.5
 CONFIGURE_ENV=  LIBS=-lcrypt
 
 .if !exists(${DISTDIR}/${DISTNAME}${EXTRACT_SUFX})
-IGNORE="NEC requires that you grab the dist files from their web site at http://www.socks.nec.com.  Please make sure you have ${DISTNAME}${EXTRACT_SUFX} in ${DISTDIR} and run make again."
+IGNORE="NEC requires that you grab the dist files from their web site at http://www.socks.nec.com/cgi-bin/download.pl .  Please make sure you have ${DISTNAME}${EXTRACT_SUFX} in ${DISTDIR} and run make again."
 .endif
 
 .include <bsd.port.mk>
