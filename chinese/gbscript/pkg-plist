@@ -1,4 +1,6 @@
-@comment $FreeBSD$
+@comment $FreeBSD: ports/chinese/gbscript/pkg-plist,v 1.2 2000/11/22 00:21:46 obrien Exp $
 bin/gbscript
 share/chinese/gb/gbscript.pro
 share/chinese/gb/cclib.24 
+@unexec rmdir %D/share/chinese/gb 2>/dev/null || true
+@unexec rmdir %D/share/chinese 2>/dev/null || true
