@@ -2,12 +2,11 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdebase2/Makefile,v 1.78 2001/09/03 17:48:23 will Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdebase
-PORTVERSION=	2.2
-PORTREVISION=	2
+PORTVERSION=	2.2.1
 CATEGORIES?=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src

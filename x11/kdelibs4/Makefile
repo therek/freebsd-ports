@@ -2,12 +2,11 @@
 # Date created:				Fri Apr 14 2000 15:05:00 EDT
 # Whom:					will
 #
-# $FreeBSD: ports/x11/kdelibs2/Makefile,v 1.87 2001/08/30 18:56:50 knu Exp $
+# $FreeBSD$
 #
 
 PORTNAME=	kdelibs
-PORTVERSION=	2.2
-PORTREVISION=	3
+PORTVERSION=	2.2.1
 CATEGORIES?=	x11 kde
 MASTER_SITES=	${MASTER_SITE_KDE}
 MASTER_SITE_SUBDIR=	stable/${PORTVERSION}/src
@@ -33,7 +32,7 @@ USE_BZIP2=	yes
 INSTALLS_SHLIB=	yes
 GNU_CONFIGURE=	yes
 CONFIGURE_ARGS+=--enable-cups --disable-ltdl-install \
-		--enable-debug --disable-final
+		--disable-final
 
 .if ${MACHINE_ARCH} == "alpha"
 CFLAGS=		-O0 ${KDE_CFLAGS}
