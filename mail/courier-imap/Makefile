@@ -2,12 +2,12 @@
 # Date created:		19 Feb 2000
 # Whom:			Neil Blakey-Milner
 #
-# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.18 2001/03/18 16:08:42 nbm Exp $
+# $FreeBSD: ports/mail/courier-imap/Makefile,v 1.19 2001/03/31 13:10:26 nbm Exp $
 #
 
 PORTNAME=	courier-imap
-PORTVERSION=	1.3.5
-PORTREVISION=	1
+PORTVERSION=	1.3.8.1
+PORTREVISION=	0
 CATEGORIES=	mail ipv6
 MASTER_SITES=	${MASTER_SITE_SOURCEFORGE}
 MASTER_SITE_SUBDIR=	courier
@@ -25,13 +25,13 @@ PLIST_SUB=	OPENSSLFLAG=
 PLIST_SUB=	OPENSSLFLAG="@comment "
 .endif
 
-.if !exists(/usr/include/openssl/idea.h)
-CFLAGS+=	-DNO_IDEA
-.endif
+#.if !exists(/usr/include/openssl/idea.h)
+#CFLAGS+=	-DNO_IDEA
+#.endif
 
 CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
 		--without-authpam --without-authshadow \
-		--without-authvchkpw --without-authcram \
+		--without-authcram \
 		--without-authmysql \
 		--sysconfdir=${PREFIX}/etc/courier-imap \
 		--with-userdb=${PREFIX}/etc/userdb \
@@ -39,6 +39,14 @@ CONFIGURE_ARGS=	--without-authldap --with-authldaprc=filename \
 		--libexecdir=${PREFIX}/libexec/courier-imap \
 		--enable-workarounds-for-imap-client-bugs \
 		--disable-root-check
+
+.if !defined(WITH_VPOPMAIL)
+CONFIGURE_ARGS+=	\
+		--without-authvchkpw
+PLIST_SUB+=	VPOPMAILFLAG="@comment "
+.else
+PLIST_SUB+=	VPOPMAILFLAG=""
+.endif
 
 MAN1=		maildirmake.1
 MAN8=		authlib.8 makeuserdb.8 userdb.8 userdbpw.8 couriertcpd.8 \
