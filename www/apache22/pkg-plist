@@ -1,4 +1,4 @@
-@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.60 2004/12/13 10:26:52 clement Exp $
+@comment $FreeBSD: ports/www/apache21/pkg-plist,v 1.61 2004/12/13 18:48:02 clement Exp $
 @exec mkdir -p %D/etc/apache21 2> /dev/null
 @unexec if cmp -s %D/etc/apache21/httpd.conf %D/%%EXAMPLESDIR%%/httpd-std.conf; then rm -f %D/etc/apache21/httpd.conf; fi
 %%EXAMPLESDIR%%/httpd-std.conf
@@ -500,6 +500,8 @@ share/apache21/build/special.mk
 @dirrm %%EXAMPLESDIR%%
 @dirrm share/apache21/build
 @dirrm share/apache21
+%%APR_PORTS%%@dirrm include/apr-1
+%%APR_PORTS%%@dirrm build-1
 @unexec rmdir %D/libexec/apache21 2> /dev/null || true
 @dirrm include/apache21
 @exec mkdir -p %D/etc/apache21/Includes 2> /dev/null || true
