@@ -3,7 +3,7 @@
 # Date created:         20 Oct 1996
 # Whom:                 Yukihiro Nakai <nakai@mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD: ports/misc/xgas/Makefile,v 1.5 1999/08/25 07:23:13 obrien Exp $
+# $FreeBSD: ports/misc/xgas/Makefile,v 1.6 1999/10/30 18:06:55 mharo Exp $
 #
 
 DISTNAME=	xgas
@@ -12,7 +12,7 @@ CATEGORIES=	misc
 MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	X11/demos
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xgas.1

@@ -3,7 +3,7 @@
 # Date created:        30 June 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xzoom/Makefile,v 1.4 1999/08/31 02:51:23 peter Exp $
 #
 
 DISTNAME=	xzoom-0.3
@@ -12,7 +12,7 @@ MASTER_SITES=	${MASTER_SITE_SUNSITE}
 MASTER_SITE_SUBDIR=	libs/X
 EXTRACT_SUFX=	.tgz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xzoom.1

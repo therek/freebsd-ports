@@ -3,7 +3,7 @@
 # Date created:        22 January 1999
 # Whom:                Yukihiro Nakai <Nacai@iname.com>
 #
-# $FreeBSD$
+# $FreeBSD: ports/net/p5-Socks/Makefile,v 1.2 1999/08/30 14:23:43 peter Exp $
 #
 
 DISTNAME=	SOCKS-0.03
@@ -12,7 +12,7 @@ CATEGORIES=	net
 MASTER_SITES=	${MASTER_SITE_PERL_CPAN}
 MASTER_SITE_SUBDIR=	Net
 
-MAINTAINER=	Nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_PERL5=	YES
 

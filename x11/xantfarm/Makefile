@@ -3,7 +3,7 @@
 # Date created:        13 February 1997
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xantfarm/Makefile,v 1.4 1999/08/31 02:50:47 peter Exp $
 #
 
 DISTNAME=	xantfarm
@@ -12,7 +12,7 @@ CATEGORIES=	x11
 MASTER_SITES=	ftp://ftp.kuis.kyoto-u.ac.jp/Linux/JG/other-sources/
 DISTFILES=	xantfarm23oct91.tar.gz
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 MAN1=		xantfarm.1

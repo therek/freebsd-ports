@@ -3,7 +3,7 @@
 # Date created:        11 October 1996
 # Whom:                Yukihiro Nakai <Nakai@Mlab.t.u-tokyo.ac.jp>
 #
-# $FreeBSD$
+# $FreeBSD: ports/x11/xmold/Makefile,v 1.5 1999/08/31 02:51:09 peter Exp $
 #
 
 DISTNAME=	xmold
@@ -11,7 +11,7 @@ PKGNAME=	xmold-1.0
 CATEGORIES=	x11
 MASTER_SITES=	ftp://cclub.tutcc.tut.ac.jp/pub/xwin/
 
-MAINTAINER=	nacai@iname.com
+MAINTAINER=	nakai@FreeBSD.org
 
 USE_IMAKE=	yes
 
