@@ -1,30 +1,31 @@
-# New ports collection makefile for:   ktranslator
-# Date created:        23 May 1998
-# Whom:                Hans Petter Bieker <hanspb@persbraten.vgs.no>
+# New ports collection makefile for:	ktranslator
+# Date created:		23 May 1998
+# Whom:			Hans Petter Bieker <hanspb@persbraten.vgs.no>
 #
-# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.7 2000/04/11 21:28:26 mharo Exp $
+# $FreeBSD: ports/devel/ktranslator/Makefile,v 1.8 2001/01/22 05:49:31 fenner Exp $
 #
 
 PORTNAME=	ktranslator
-PORTVERSION=	0.4.0
+PORTVERSION=	0.6.1
 CATEGORIES=	devel kde
-MASTER_SITES=	$(MASTER_SITE_KDE)
-MASTER_SITE_SUBDIR= stable/1.1/apps/utils
+MASTER_SITES=	${MASTER_SITE_KDE}
+MASTER_SITE_SUBDIR=	Attic/old/1.1.2/apps/utils
+
+MAINTAINER=	ports@FreeBSD.org
 
 BUILD_DEPENDS=	msgfmt:${PORTSDIR}/devel/gettext
 LIB_DEPENDS=	jpeg.9:${PORTSDIR}/graphics/jpeg \
-		kdecore.3:${PORTSDIR}/x11/kdelibs11 \
-		kdeui.3:${PORTSDIR}/x11/kdelibs11 \
-		kfm.3:${PORTSDIR}/x11/kdelibs11
+		kdecore.3:${PORTSDIR}/x11/kdelibs11
 
-GNU_CONFIGURE=	yes
-USE_GMAKE=	yes
 USE_QT=		yes
+USE_GMAKE=	yes
+USE_AUTOMAKE=	yes
+CONFIGURE_ENV=	QTDIR="${X11BASE}" KDEDIR="${LOCALBASE}"
+CONFIGURE_ARGS=	--with-qt-includes=${X11BASE}/include/X11/qt \
+		--with-extra-includes=${LOCALBASE}/include \
+		--with-extra-libs=${LOCALBASE}/lib
 
-CONFIGURE_ENV=	CXXFLAGS="$(CFLAGS)" \
-		INSTALL_SCRIPT="install -c -m 555"
-
-pre-configure:
-		${RM} -rf -- $(WRKSRC)/.deps $(WRKSRC)/config.cache
+post-patch:
+	@cd ${WRKSRC} && aclocal
 
 .include <bsd.port.mk>
