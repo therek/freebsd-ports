@@ -2,11 +2,11 @@
 # Date created:			26 Mar 1999
 # Whom:				Jim Mock <jim@FreeBSD.org>
 #
-# $FreeBSD: ports/net/gaim/Makefile,v 1.42 2001/04/16 18:21:53 jim Exp $
+# $FreeBSD: ports/net/gaim/Makefile,v 1.43 2001/05/24 17:18:13 jim Exp $
 #
 
 PORTNAME=		gaim
-PORTVERSION=		0.11.0pre11
+PORTVERSION=		0.11.0pre14
 CATEGORIES=		net
 MASTER_SITES=		ftp://ftp.marko.net/pub/gaim/ \
 			${MASTER_SITE_SOURCEFORGE}
@@ -48,6 +48,7 @@ pre-patch:
 		 s|\$$\(top_builddir\)/intl/libintl.a|-lintl|g' ${WRKSRC}/configure
 	@find ${WRKSRC} -name "Makefile.in" | xargs ${PERL} -pi -e \
 		's|\$$\(datadir\)/gnome/|\$$\(datadir\)/|g ; \
-		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g'
+		 s|\$$\(datadir\)/locale|\$$\(prefix\)/share/locale|g ; \
+		 s|\@LIBTOOL\@|\${LOCALBASE}/bin/libtool|g'
 
 .include <bsd.port.post.mk>
