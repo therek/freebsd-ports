@@ -1,4 +1,4 @@
-# $FreeBSD: ports/games/Makefile,v 1.320 2000/12/26 05:31:25 will Exp $
+# $FreeBSD: ports/games/Makefile,v 1.321 2000/12/26 15:16:31 trevor Exp $
 #
 
     SUBDIR += 3dc
@@ -176,6 +176,7 @@
     SUBDIR += tkmoo
     SUBDIR += tksol
     SUBDIR += trojka
+    SUBDIR += tuxracer
     SUBDIR += tvp
     SUBDIR += nil
     SUBDIR += nonsense
