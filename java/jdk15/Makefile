@@ -2,7 +2,7 @@
 # Date created:				10 October 2000
 # Whom:					Maxim Sobolev <sobomax@FreeBSD.org>
 #
-# $FreeBSD: ports/java/jdk12-beta/Makefile,v 1.1 2000/10/13 12:41:25 sobomax Exp $
+# $FreeBSD: ports/java/jdk12-beta/Makefile,v 1.2 2000/10/14 11:58:04 sobomax Exp $
 #
 
 PORTNAME=	jdk
@@ -44,7 +44,9 @@ MAKE_ENV=	HAVE_DPS="no" \
 		ALT_MOTIF_DIR="${X11BASE}" \
 		OPENWINHOME="${X11BASE}" \
 		_JDK11DIR="${JDK11DIR}" \
-		SYS_CFLAGS="${CFLAGS}"
+		SYS_CFLAGS="${CFLAGS}" \
+		CLASSPATH="" \
+		JAVA_COMPILER=""
 ALL_TARGET=	release-images
 PATCH_CMD=	${PATCH} -p1 -s <
 PLIST_SUB+=	JDK_VERSION=${JDK_VERSION}
